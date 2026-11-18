@@ -7,204 +7,204 @@ func _run():
 	if(state == ""):
 		addCharacter("nura")
 		playAnimation(StageScene.Duo, "stand", {npc="nura"})
-		saynn("You approach Nur-A. She seems to be in her stand-by mode, literally just standing still.")
+		saynn("Вы подходите к Нур-А. Кажется, она находится в режиме ожидания — просто стоит неподвижно.")
 
-		saynn("[say=nura]Hello, I am Nur-A. How may I assist you?[/say]")
+		saynn("[say=nura]Здравствуйте, я — Нур-А. Чем я могу вам помочь?[/say]")
 
-		addButton("Memory?", "Ask if she remembers anything", "talk_memory")
-		addButton("Heal me", "Ask Nur-A to heal your wounds", "healcheck")
-		addButton("Emotional help", "Ask how can Nur-A help you emotionally", "emo_help")
+		addButton("Память?", "Спросить, помнит ли она что-нибудь", "talk_memory")
+		addButton("Исцели меня", "Попросить Нур-А залечить ваши раны", "healcheck")
+		addButton("Эмоциональная поддержка", "Спросить, как Нур-А может помочь вам эмоционально", "emo_help")
 		if (!getFlag("CellblockModule.NuraGaveTool")):
 			if (!getFlag("CellblockModule.NuraFoundTool")):
-				addDisabledButton("Give tool", "You're missing the tool to give to Nur-A")
+				addDisabledButton("Отдать инструмент", "У вас нет инструмента, чтобы отдать его Нур-А")
 			else:
-				addButton("Give tool", "Give Nur-A the giant syringe that you found", "give_syringe")
-		addButton("Leave", "Time to go", "endthescene")
+				addButton("Отдать инструмент", "Отдать Нур-А гигантский шприц, который вы нашли", "give_syringe")
+		addButton("Уйти", "Пора идти", "endthescene")
 	if(state == "give_syringe"):
-		saynn("You present Nur-A giant syringe that you have found.")
+		saynn("Вы протягиваете Нур-А найденный гигантский шприц.")
 
-		saynn("[say=pc]Here, I think this is compatible with you.[/say]")
+		saynn("[say=pc]Вот, мне кажется, он тебе подходит.[/say]")
 
-		saynn("Nur-A grabs the syringe and then transforms her hand before inserting the syringe into the empty opening. The syringe almost instantly gets filled with some kind of drug before Nur-A transforms her hand back.")
+		saynn("Нур-А хватает шприц, её рука трансформируется, чтобы ввести иглу в пустое отверстие. Шприц почти мгновенно наполняется каким-то препаратом, после чего рука Нур-А принимает прежний вид.")
 
-		saynn("[say=nura]Nur-A appreciates it. I am now capable of serving my purpose.[/say]")
+		saynn("[say=nura]Нур-А признательна. Теперь я способна выполнять свое предназначение.[/say]")
 
-		saynn("[say=pc]Maybe there are other tools designed for you?[/say]")
+		saynn("[say=pc]Может, существуют и другие инструменты, созданные специально для тебя?[/say]")
 
-		saynn("[say=nura]I am lacking that information.[/say]")
+		saynn("[say=nura]Мне не хватает этой информации.[/say]")
 
-		saynn("Fair, she was abandoned here for a reason probably.")
+		saynn("Справедливо, её здесь бросили не просто так.")
 
-		addButton("Continue", "Ask something else", "")
+		addButton("Продолжить", "Спросить о чем-то другом", "")
 	if(state == "talk_memory"):
-		saynn("[say=pc]Do you remember anything? Why are you here?[/say]")
+		saynn("[say=pc]Ты что-нибудь помнишь? Почему ты здесь?[/say]")
 
-		saynn("Nur-A clearly hears you but then stays quiet for a few seconds.")
+		saynn("Нур-А явно слышит вас, но замирает в молчании на несколько секунд.")
 
-		saynn("[say=nura]I am Nur-A. I am a nurse android. My purpose is to provide medical assistance and emotional support to those in need.[/say]")
+		saynn("[say=nura]Я — Нур-А. Я андроид-медсестра. Моя цель — оказывать медицинскую помощь и эмоциональную поддержку тем, кто в ней нуждается.[/say]")
 
-		saynn("You sigh.")
+		saynn("Ты вздыхаешь.")
 
-		saynn("[say=pc]Anything else?[/say]")
+		saynn("[say=pc]Что-нибудь еще?[/say]")
 
-		saynn("[say=nura]My programming doesn't include any other purposes. My main and only goal is to assist you and fulfill my duties as a nurse android.[/say]")
+		saynn("[say=nura]Мое программирование не предусматривает иных целей. Моя главная и единственная задача — помогать вам и исполнять свои обязанности медсестры.[/say]")
 
-		saynn("Right.")
+		saynn("Ясно.")
 
-		addButton("Continue", "Ask something else", "")
+		addButton("Продолжить", "Спросить о чем-то другом", "")
 	if(state == "heal_success"):
-		saynn("[say=pc]Alright. I need some medical help.[/say]")
+		saynn("[say=pc]Ладно. Мне нужна медицинская помощь.[/say]")
 
-		saynn("Android's lifeless eyes scan you out.")
+		saynn("Безжизненные глаза андроида сканируют вас.")
 
-		saynn("[say=nura]Please remain still while I administer pain relief.[/say]")
+		saynn("[say=nura]Пожалуйста, не двигайтесь, пока я ввожу обезболивающее.[/say]")
 
-		saynn("She then brings her hand to your shoulder. Her whole wrist transforms, revealing an industrial syringe filled with some kind of drug. The sharp needle pierces your shoulder with ease before injecting you with painkillers. You already feel much better.")
+		saynn("Затем она кладет руку вам на плечо. Ее запястье трансформируется, превращаясь в промышленный шприц, наполненный каким-то препаратом. Острая игла с легкостью вонзается в ваше плечо и впрыскивает обезболивающее. Вы уже чувствуете себя гораздо лучше.")
 
-		saynn("[say=nura]Painkiller administered.[/say]")
+		saynn("[say=nura]Обезболивающее введено.[/say]")
 
-		saynn("[say=pc]Thank you.[/say]")
+		saynn("[say=pc]Спасибо.[/say]")
 
-		saynn("She transforms her hand back and stares at you.")
+		saynn("Она возвращает руке прежний вид и пристально смотрит на вас.")
 
-		saynn("[say=nura]Anything else I can help you with?[/say]")
+		saynn("[say=nura]Могу ли я еще чем-нибудь вам помочь?[/say]")
 
-		addButton("Continue", "Ask something else", "")
+		addButton("Продолжить", "Спросить о чем-то другом", "")
 	if(state == "heal_fail"):
-		saynn("[say=pc]Alright. I need some medical help.[/say]")
+		saynn("[say=pc]Ладно. Мне нужна медицинская помощь.[/say]")
 
-		saynn("Android's lifeless eyes scan you out.")
+		saynn("Безжизненные глаза андроида сканируют вас.")
 
-		saynn("[say=nura]Please remain still while I administer pain relief.[/say]")
+		saynn("[say=nura]Пожалуйста, не двигайтесь, пока я ввожу обезболивающее.[/say]")
 
-		saynn("She then brings her hand to your shoulder. Her whole wrist transforms, revealing.. nothing. It looks like there is a spot for some kind of tool. But that tool is clearly missing.")
+		saynn("Затем она кладет руку вам на плечо. Ее запястье полностью трансформируется, обнажая... пустоту. Похоже, там должно быть гнездо для какого-то инструмента. Но самого инструмента явно не хватает.")
 
-		saynn("[say=nura]Error. Unable to complete the task due to missing equipment. Nur-A is very sorry.[/say]")
+		saynn("[say=nura]Ошибка. Не удалось выполнить задачу из-за отсутствия оборудования. Нур-А очень сожалеет.[/say]")
 
-		saynn("She transforms her hand back and stares at you.")
+		saynn("Она возвращает руке прежний вид и пристально смотрит на вас.")
 
-		saynn("[say=nura]Anything else I can help you with?[/say]")
+		saynn("[say=nura]Могу ли я еще чем-нибудь вам помочь?[/say]")
 
-		saynn("[say=pc]Probably not.[/say]")
+		saynn("[say=pc]Скорее всего, нет.[/say]")
 
-		addButton("Continue", "Ask something else", "")
+		addButton("Продолжить", "Спросить о чем-то другом", "")
 	if(state == "emo_help"):
-		saynn("[say=pc]What do you mean by emotional help, Nur-A?[/say]")
+		saynn("[say=pc]Что ты имеешь в виду под эмоциональной помощью, Нур-А?[/say]")
 
-		saynn("The android stares at you.")
+		saynn("Андроид пристально смотрит на вас.")
 
-		saynn("[say=nura]Nur-A is capable of administering hugs.[/say]")
+		saynn("[say=nura]Нур-А способна осуществлять объятия.[/say]")
 
-		saynn("[say=pc]Just hugs?[/say]")
+		saynn("[say=pc]Только объятия?[/say]")
 
-		saynn("[say=nura]I am lacking in ability to relieve emotional tension any other way.[/say]")
+		saynn("[say=nura]Мне не хватает способностей, чтобы снять эмоциональное напряжение каким-либо иным способом.[/say]")
 
-		saynn("Fair enough. You take a quick look at her body and realize that she lacks any kind of.. private bits. Her breasts seem to be on the small side, quite firm-looking and also lacking nipples. Even her mouth is nothing but a speaker inside a non-moving mouth. Someone really cheaped out on the production of this android.")
+		saynn("Справедливо. Ты быстро осматриваешь её тело и понимаешь, что у неё напрочь отсутствуют какие-либо... интимные места. Грудь кажется маленькой, довольно упругой, но на ней нет даже сосков. Даже её рот — это просто динамик внутри неподвижной челюсти. На производстве этого андроида явно решили жестко сэкономить.")
 
-		addButton("Hug me", "Ask Nur-A to hug you", "get_hugged")
-		addButton("Sex?", "Maybe there is a way", "ask_sex")
-		addButton("Never mind", "Ask something else", "")
+		addButton("Обними меня", "Попросить Нур-А обнять тебя", "get_hugged")
+		addButton("Секс?", "Возможно, способ есть", "ask_sex")
+		addButton("Проехали", "Спросить о чем-то другом", "")
 	if(state == "get_hugged"):
 		playAnimation(StageScene.Hug, "hug", {npc="nura"})
-		saynn("[say=pc]Hug me, Nur-A.[/say]")
+		saynn("[say=pc]Обними меня, Нур-А.[/say]")
 
-		saynn("The android spreads her arms and wraps them around you before pulling you closer. You feel how cold her frame is. Her chest is not soft at all, just like you thought. Although the gesture is nice.")
+		saynn("Андроид разводит руки и обхватывает тебя, притягивая ближе. Ты чувствуешь, насколько холодный её корпус. Её грудь совсем не мягкая, как ты и думал. Впрочем, сам жест довольно приятный.")
 
-		saynn("After exactly 5 seconds, Nur-A pulls away from the hug.")
+		saynn("Ровно через 5 секунд Нур-А отстраняется от объятий.")
 
-		saynn("[say=nura]Hug administered. I hope you feel better.[/say]")
+		saynn("[say=nura]Объятия завершены. Надеюсь, тебе стало лучше.[/say]")
 
-		saynn("[say=pc]I do, slightly.[/say]")
+		saynn("[say=pc]Стало, немного.[/say]")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "ask_sex"):
-		saynn("[say=pc]Maybe you can help me fulfill.. other kinds of needs?[/say]")
+		saynn("[say=pc]Может, ты поможешь мне удовлетворить... другие потребности?[/say]")
 
-		saynn("Nur-A scans you with her android eyes.")
+		saynn("Нур-А сканирует тебя своими андроидскими глазами.")
 
-		saynn("[say=nura]I am sorry but I lack any kind of tools for that.[/say]")
+		saynn("[say=nura]Прости, но у меня нет подходящих инструментов для этого.[/say]")
 
-		saynn("[say=pc]I understand that. But maybe we can still try?[/say]")
+		saynn("[say=pc]Я понимаю. Но, может, мы всё равно попробуем?[/say]")
 
-		saynn("[say=nura]Nur-A is happy to help.[/say]")
+		saynn("[say=nura]Нур-А рада помочь.[/say]")
 
-		addButton("Never mind", "Ask something else", "")
-		addButtonWithChecks("Scissoring", "Rub pussies with her", "do_fake_scissoring", [], [ButtonChecks.HasReachableVagina])
-		addButtonWithChecks("Vaginal?", "Try to fuck her", "do_fake_vaginal", [], [ButtonChecks.HasReachablePenis])
+		addButton("Проехали", "Спросить о чем-то другом", "")
+		addButtonWithChecks("Сквиз (ножницы)", "Тереться кисками друг о друга", "do_fake_scissoring", [], [ButtonChecks.HasReachableVagina])
+		addButtonWithChecks("Вагинальный секс?", "Попробовать трахнуть её", "do_fake_vaginal", [], [ButtonChecks.HasReachablePenis])
 	if(state == "do_fake_scissoring"):
 		playAnimation(StageScene.SexTribadism, "tease", {npc="nura", pc="pc"})
-		saynn("You find an empty workplace table and quickly clear it of all the trash that it had on it. Then you grab the android's hand and bring her to it before helping her climb it. You climb on it too and position Nur-A on her back.")
+		saynn("Ты находишь пустой рабочий стол и быстро сгребаешь с него весь мусор. Затем ты берешь андроида за руку и подводишь к столу, помогая ей забраться на него. Ты тоже запрыгиваешь на стол и укладываешь Нур-А на спину.")
 
-		saynn("[say=pc]Spread your legs slightly.[/say]")
+		saynn("[say=pc]Слегка разведи ноги.[/say]")
 
-		saynn("Nur-A spreads her legs for you. Her crotch is perfectly flat, not even a hint of a pussy anywhere.")
+		saynn("Нур-А раздвигает ноги перед тобой. Её промежность идеально плоская, ни намека на киску.")
 
-		saynn("[say=nura]Task completed.[/say]")
+		saynn("[say=nura]Задание выполнено.[/say]")
 
-		saynn("But what can you do, you lie down opposite of her and intertwine your legs with hers, such that your crotches are pressed against each other's.")
+		saynn("Но что поделаешь — ты ложишься напротив неё и переплетаешь свои ноги с её ногами так, чтобы ваши промежности плотно прижались друг к другу.")
 
-		addButton("Rub", "Do the thing", "start_fake_pussyrubbing")
+		addButton("Тереть", "Сделать это", "start_fake_pussyrubbing")
 	if(state == "start_fake_pussyrubbing"):
 		playAnimation(StageScene.SexTribadism, "sex", {npc="nura", pc="pc", pcCum=true})
-		saynn("You begin rubbing pussies with her. Well, with her imaginary pussy. Nur-A supports her with her hands while looking at you before proceeding to help you, moving her hips in the opposite way.")
+		saynn("Вы начинаете тереться друг о друга кисками. Ну, точнее, её воображаемой киской. Нур-А придерживает её руками, глядя на тебя, а затем начинает помогать, двигая бедрами в противоход.")
 
-		saynn("It feels.. strange. The flat metal panel that she has there is quite cold and rigid. But still, there is some pleasurable friction in there. Your {pc.pussyStretch} slowly gets wet, you spread your juices all over her crotch, making it shine.")
+		saynn("Ощущения... странные. Плоская металлическая панель там, где у неё должно быть лоно, довольно холодная и жесткая. Но всё же, это вызывает приятное трение. Твоя {pc.pussyStretch} постепенно намокает, и ты размазываешь соки по её промежности, заставляя её блестеть.")
 
-		saynn("[say=nura]Does this feel good, patient?[/say]")
+		saynn("[say=nura]Приятно, пациент?[/say]")
 
-		saynn("[say=pc]Yes, continue.[/say]")
+		saynn("[say=pc]Да, продолжай.[/say]")
 
-		saynn("Nur-A listens to you and picks up the pace, rubbing her metal crotch against your slit. Very soon you begin to moan quietly. Quietly enough to not get spotted.")
+		saynn("Нур-А прислушивается к тебе и ускоряется, притирая свою металлическую промежность к твоей щели. Вскоре ты начинаешь тихо стонать. Достаточно тихо, чтобы тебя не заметили.")
 
-		saynn("Seems like the android lacks any sensors down there and just goes off of the visual and audio feed. But that's enough to get you off anyway. You part your lips more and produce a louder moan as your whole body starts to squirm and shake. Nur-A detects that and stops her motions too, letting you ride your orgasm waves in peace.")
+		saynn("Похоже, у этого андроида внизу совсем нет датчиков, и она ориентируется только на визуальный и аудиоряд. Но этого вполне достаточно, чтобы довести тебя до пика. Ты сильнее раздвигаешь губы и издаешь громкий стон, пока всё твоё тело начинает корчиться и дрожать. Нур-А замечает это и тоже замирает, позволяя тебе в спокойствии пережить волны оргазма.")
 
-		saynn("[say=nura]Nur-A is glad to be of service.[/say]")
+		saynn("[say=nura]Нур-А рада быть полезной.[/say]")
 
-		saynn("[say=pc]Thank you..[/say]")
+		saynn("[say=pc]Спасибо...[/say]")
 
-		saynn("You rest for a few minutes before climbing off the table and helping Nur-A to do the same.")
+		saynn("Ты отдыхаешь несколько минут, прежде чем слезть со стола и помочь Нур-А сделать то же самое.")
 
-		addButton("Continue", "That was nice", "")
+		addButton("Продолжить", "Это было приятно", "")
 	if(state == "do_fake_vaginal"):
 		playAnimation(StageScene.SexStanding, "tease", {npc="nura", pc="pc", bodyState={exposedCrotch=true,hard=true}})
-		saynn("You approach Nur-A and then expose your {pc.penis} before presenting it to her.")
+		saynn("Ты подходишь к Нур-А и обнажаешь свой {pc.penis}, прежде чем поднести его к ней.")
 
-		saynn("[say=pc]I know you don't have a pussy or anything. Just stand still for me?[/say]")
+		saynn("[say=pc]Я знаю, что у тебя нет киски или чего-то подобного. Просто постой смирно для меня, ладно?[/say]")
 
-		saynn("The android nods at you.")
+		saynn("Андроид кивает тебе.")
 
-		saynn("[say=nura]Nur-A will do that.[/say]")
+		saynn("[say=nura]Нур-А сделает это.[/say]")
 
-		saynn("You put one of your hands on her shoulder. Cold still shoulder. Nur-A seems to be quite a good support for you. You walk around her, your other hand swiftly gets your member hard before guiding it between her metal thighs. Luckily there is nothing there to get your skin pinched on so you can freely press it against her featureless crotch.")
+		saynn("Ты кладешь одну руку ей на плечо. Плечо всё еще холодное. Нур-А кажется отличной опорой. Ты обходишь её, и твоя вторая рука ловко приводит член в состояние эрекции, после чего ты направляешь его между её металлических бедер. К счастью, там нет ничего, что могло бы защемить кожу, так что ты можешь свободно прижиматься к её гладкому паху.")
 
-		saynn("[say=pc]Can you.. close your legs a little more? But not too much.[/say]")
+		saynn("[say=pc]Можешь... свести ноги чуть плотнее? Но не слишком сильно.[/say]")
 
-		saynn("Nur-A listens and does as you ask, trapping your cock between her cold thighs. It's kinda kinky..")
+		saynn("Нур-А слушает и делает всё, что ты просишь, зажимая твой член между своих холодных бёдер. В этом есть какая-то извращенная прелесть...")
 
-		addButton("Fuck her thighs", "Start moving your hips", "do_fake_humps")
+		addButton("Трахнуть её бёдра", "Начать двигать бёдрами", "do_fake_humps")
 	if(state == "do_fake_humps"):
 		playAnimation(StageScene.SexStanding, "sex", {npc="nura", pc="pc", pcCum=true, bodyState={exposedCrotch=true,hard=true}})
-		saynn("You begin moving your hips back and forth, letting your {pc.cock} rub against the android's thighs while you gradually pick up the pace. Even though there is nothing there on her crotch, the friction is enough to make your shaft start leaking precum.")
+		saynn("Ты начинаешь двигать бёдрами вперёд-назад, позволяя своему {pc.cock} тереться о бёдра андроида, постепенно наращивая темп. И хотя в её промежности ничего нет, трения достаточно, чтобы из твоего ствола начала сочиться предэякуляционная смазка.")
 
-		saynn("Your hand slips down from her shoulder onto her breasts. They're very firm and not jiggly at all. But they're enough to hold onto while you thrust your dick between her legs.")
+		saynn("Твоя рука соскальзывает с её плеча на грудь. Она очень упругая и совсем не колышется. Но за неё вполне удобно держаться, пока ты вколачиваешь свой член между её ног.")
 
-		saynn("Very soon you find yourself panting and breathing warmly into the back of her neck. The android seems happy to meet your motions with a set of her own, squeezing your member slightly before and moving her hips a bit too.")
+		saynn("Вскоре ты ловишь себя на том, что тяжело дышишь ей в затылок горячим дыханием. Кажется, андроид рада отвечать на твои движения своими: она слегка сжимает твой член, а затем тоже начинает двигать бёдрами.")
 
-		saynn("You hump her thighs for about a minute before you feel the orgasm drawing very close.")
+		saynn("Ты трахаешь её бёдра около минуты, прежде чем чувствуешь, что оргазм уже совсем близко.")
 
-		saynn("[say=pc]Gonna..[/say]")
+		saynn("[say=pc]Сейчас..[/say]")
 
-		saynn("[say=nura]Feel free to release all your stored up tension, patient.[/say]")
+		saynn("[say=nura]Не сдерживайся, выпускай всё накопившееся напряжение, пациент.[/say]")
 
-		saynn("You let out a passionate grunt before cumming, your {pc.cock} starts throbbing and pulsating as it shoots out wave after wave of hot sticky {pc.cum} between the android's thighs, creating quite a mess on the floor. It feels good. Nur-A seems to have detected that and stopped her motions, not overstimulating you any further.")
+		saynn("Ты издаёшь страстный стон перед тем, как кончить; твой {pc.cock} начинает пульсировать и содрогаться, выбрасывая волну за волной горячей липкой {pc.cum} между бёдер андроида, создавая на полу изрядную лужу. Это чертовски приятно. Похоже, Нур-А это почувствовала и замерла, чтобы не перестимулировать тебя слишком сильно.")
 
-		saynn("[say=pc]Wow. Thank you, Nur-A.[/say]")
+		saynn("[say=pc]Ого. Спасибо тебе, Нур-А.[/say]")
 
-		saynn("[say=nura]Nur-A is glad to be of service.[/say]")
+		saynn("[say=nura]Нур-А рада быть полезной.[/say]")
 
-		saynn("You land your chin on her cold shoulder and rest like that for a bit more, slowly catching your breath back.")
+		saynn("Ты кладешь подбородок ей на холодное плечо и замираешь так на какое-то время, медленно восстанавливая дыхание.")
 
-		addButton("Continue", "That was nice", "")
+		addButton("Продолжить", "Это было приятно", "")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

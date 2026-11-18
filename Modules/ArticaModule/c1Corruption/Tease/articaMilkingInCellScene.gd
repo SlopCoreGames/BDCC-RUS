@@ -34,48 +34,48 @@ func _run():
 		isVerySlut = getModule("ArticaModule").isVerySlut()
 		isLusty = getModule("ArticaModule").isLusty()
 		nakedAndShy = (isNaked && !isSlut)
-		saynn("How do you want to milk Artica?")
+		saynn("Как именно ты хочешь подоить Артику?")
 
 		if (breastPumpID != "" && penisPumpID != ""):
-			saynn("You will use a breast pump and a penis pump on her at the same time!")
+			saynn("Ты будешь использовать одновременно и молокоотсос, и пенис-памп!")
 
 		elif (breastPumpID != ""):
-			saynn("You will use a breast pump on her!")
+			saynn("Ты будешь использовать молокоотсос!")
 
 		elif (penisPumpID != ""):
-			saynn("You will use a penis pump on her!")
+			saynn("Ты будешь использовать пенис-памп!")
 
 		if (sybian):
-			saynn("Artica will ride a sybian while being milked!")
+			saynn("Артика будет скакать на сибиане во время дойки!")
 
 		if (breastPumpID != "" || penisPumpID != ""):
-			addButton("Start", "Commence milking", "prepare_milking")
+			addButton("Старт", "Начать дойку", "prepare_milking")
 		else:
-			addDisabledButton("Start", "You need to select a breast pump or a penis pump")
-		addButton("CANCEL", "You changed your mind", "endthescene")
-		addButtonWithChecks("Breast pump", "Select which breast pump you want to use on Artica", "pick_breastpump", [], [[ButtonChecks.HasBreastPump]])
+			addDisabledButton("Старт", "Нужно выбрать либо молокоотсос, либо пенис-памп")
+		addButton("CANCEL", "Вы передумали", "endthescene")
+		addButtonWithChecks("Молокоотсос", "Выберите, какой молокоотсос использовать на Артике", "pick_breastpump", [], [[ButtonChecks.HasBreastPump]])
 		if (!isCaged):
-			addButtonWithChecks("Penis pump", "Select which penis pump you want to use on Artica", "pick_penispump", [], [[ButtonChecks.HasPenisPump]])
+			addButtonWithChecks("Помпа для пениса", "Выберите, какой пенис-памп использовать на Артике", "pick_penispump", [], [[ButtonChecks.HasPenisPump]])
 		else:
-			addDisabledButton("Penis pump", "Can't make Artica wear a penis pump when her cock is caged!")
+			addDisabledButton("Помпа для пениса", "Нельзя надеть на Артику пенис-помпу, если её член в клетке!")
 		if (getFlag("NpcSlaveryModule.hasSybian")):
-			addButton("Sybian", "Toggle the usage of the sybian machine in the scene", "toggle_sybian")
+			addButton("Сибиан", "Включить/выключить использование сибиан-машины в сцене", "toggle_sybian")
 		else:
-			addDisabledButton("Sybian", "You don't have a sybian machine installed in your cell")
+			addDisabledButton("Сибиан", "В вашей камере не установлена сибиан-машина")
 	if(state == "pick_breastpump"):
-		saynn("Pick which breast pump is gonna be used during the scene.")
+		saynn("Выберите, какой молокоотсос будет использоваться во время сцены.")
 
-		addButton("None", "No pump is gonna be used", "do_pick_nobreastpump")
+		addButton("Нет", "Никакой молокоотсос использоваться не будет", "do_pick_nobreastpump")
 		addPumpButtons("do_pick_breastpump")
 		if (false):
-			addButton("Nope", "You shouldn't see this", "do_pick_breastpump")
+			addButton("Неа", "Тебе не стоит этого видеть", "do_pick_breastpump")
 	if(state == "pick_penispump"):
-		saynn("Pick which penis pump is gonna be used during the scene.")
+		saynn("Выберите, какая пенис-помпа будет использоваться во время сцены.")
 
-		addButton("None", "No pump is gonna be used", "do_pick_nopenispump")
+		addButton("Нет", "Никакая помпа использоваться не будет", "do_pick_nopenispump")
 		addPenisPumpButtons("do_pick_penispump")
 		if (false):
-			addButton("Nope", "You shouldn't see this", "do_pick_penispump")
+			addButton("Неа", "Тебе не стоит этого видеть", "do_pick_penispump")
 	if(state == "prepare_milking"):
 		addCharacter("artica", ["naked"])
 		playAnimation(StageScene.BreastGroping, "tease", {pc="pc", npc="artica", npcBodyState={naked=true, hard=true}})
@@ -83,84 +83,84 @@ func _run():
 		penisMilking = (penisPumpID != "")
 		isLact = (getCharacter("artica").isLactating())
 		if (breastMilking && penisMilking):
-			saynn("Constantly watching Artica's "+str("swollen" if isLact else "non-lactating")+" tits.. and her hard cock.. makes you want to see how much milk and seed you will be able to.. extract.. out of her.")
+			saynn("Постоянно наблюдать за "+str("swollen" if isLact else "non-lactating")+" сиськи.. и её стояк.. так и хочется посмотреть, сколько молока и спермы ты сможешь из неё.. выжать..")
 
 		elif (breastMilking):
-			saynn("Constantly watching Artica's "+str("swollen" if isLact else "non-lactating")+" tits.. makes you want to see how much milk you will be able to.. extract.. out of them.")
+			saynn("Постоянно наблюдать за "+str("swollen" if isLact else "non-lactating")+" сиськи.. так и хочется посмотреть, сколько молока ты сможешь из них.. выжать..")
 
 		else:
-			saynn("Constantly watching Artica's hard cock.. makes you want to see how much seed you will be able to.. extract.. out of it.")
+			saynn("Постоянные взгляды на стояк Артики.. заставляют желать узнать, сколько семени ты сможешь из него.. выжать..")
 
 		if (!isNaked):
-			saynn("[say=pc]I wanna do something with you, Artica..[/say]")
+			saynn("[say=pc]Артика, я хочу кое-что с тобой сделать..[/say]")
 
-			saynn("Her ears perks.")
+			saynn("Её ушки навострились.")
 
-			saynn("[say=artica]Oh?[/say]")
+			saynn("[say=artica]О?[/say]")
 
-			saynn("[say=pc]..but we will need to get those clothes removed first.[/say]")
+			saynn("[say=pc]..но для начала нам нужно снять эту одежду.[/say]")
 
 			if (isVerySlut):
-				saynn("[say=artica]Sure.. not even sure why I'm still wearing them.. haha..[/say]")
+				saynn("[say=artica]Конечно.. сама не знаю, зачем я до сих пор в ней.. ха-ха..[/say]")
 
 			elif (isSlut):
-				saynn("[say=artica]Sure.. I don't mind being naked near you.. haha..[/say]")
+				saynn("[say=artica]Конечно.. я не против постоять перед тобой голой.. ха-ха..[/say]")
 
 			else:
-				saynn("[say=artica]Oh.. umm.. I guess no one but us here.. okay..[/say]")
+				saynn("[say=artica]О.. мм.. кажется, здесь только мы двое.. ладно..[/say]")
 
-			saynn("You help Artica to remove her lilac shirt and shorts, uncovering her {artica.breasts}, {artica.penis} and a cute little cyan slit that is hiding behind her balls.")
+			saynn("Ты помогаешь Артике снять её сиреневую рубашку и шорты, обнажая её {artica.breasts}, {artica.penis} и милый маленький голубой разрез, спрятанный за её яичками.")
 
-			saynn("After that, you help her to sit on the floor.. where it would be easier for you to put the pump"+str("s" if breastMilking else "")+" on her.")
+			saynn("После этого ты помогаешь ей сесть на пол... там тебе будет удобнее закрепить насос"+str("s" if breastMilking else "")+" на ней.")
 
 		else:
-			saynn("[say=pc]I wanna do something with you, Artica..[/say]")
+			saynn("[say=pc]Артика, я хочу кое-что с тобой сделать..[/say]")
 
-			saynn("Her ears perks.")
+			saynn("Её ушки навострились.")
 
-			saynn("[say=artica]Oh?[/say]")
+			saynn("[say=artica]О?[/say]")
 
-			saynn("[say=pc]Yeah.. and it's perfect that you're naked already. Let me..[/say]")
+			saynn("[say=pc]Да.. и это просто идеально, что ты уже голая. Дай-ка мне..[/say]")
 
-			saynn("Artica doesn't resist as you help her to land on the floor.. where it would be easier for you to put the pump"+str("s" if breastMilking else "")+" on her.")
+			saynn("Артика не сопротивляется, когда ты помогаешь ей опуститься на пол... там тебе будет удобнее закрепить насос"+str("s" if breastMilking else "")+" на ней.")
 
 		if (breastMilking):
-			addButton("Pumps", "Start securing them", "secure_pumps")
+			addButton("Помпы", "Начать закрепление", "secure_pumps")
 		else:
-			addButton("Penis pump", "Start securing it on her cock", "secure_pumps")
+			addButton("Помпа для пениса", "Начать закрепление на её члене", "secure_pumps")
 	if(state == "secure_pumps"):
 		if (sybian):
 			playAnimation(StageScene.SybianOral, "idle", {pc="artica", npc="pc", chained=true, bodyState={naked=true, hard=true}})
-			saynn("[say=pc]Oh yeah.. almost forgot.[/say]")
+			saynn("[say=pc]О да.. чуть не забыла.[/say]")
 
-			saynn("You point at the small device in the corner of your cell.")
+			saynn("Ты указываешь на небольшое устройство в углу вашей камеры.")
 
-			saynn("[say=pc]Sit on that.[/say]")
+			saynn("[say=pc]Садись на это.[/say]")
 
-			saynn("Artica's eyes go wider.")
+			saynn("Глаза Артики округляются.")
 
 			if (isVerySlut):
-				saynn("[say=artica]Mmm.. of course..[/say]")
+				saynn("[say=artica]Ммм.. конечно..[/say]")
 
 			elif (isSlut):
-				saynn("[say=artica]Mmm.. why not.. I know better than to say no..[/say]")
+				saynn("[say=artica]Ммм.. почему бы и нет.. я слишком умна, чтобы отказываться..[/say]")
 
 			else:
-				saynn("[say=artica]Mmm.. okay.. this is probably required.. I know better than to say no..[/say]")
+				saynn("[say=artica]Ммм.. ладно.. это, наверное, необходимо.. я слишком умна, чтобы отказываться..[/say]")
 
-			saynn("Artica takes a spot on the sybian machine, letting a small rubber dildo penetrate her slit while her clit and balls rest on a small ridged platform.")
+			saynn("Артика занимает место на сибианском тренажере, позволяя маленькому резиновому дилдо проникнуть в её щель, пока её клитор и яички покоятся на небольшой ребристой платформе.")
 
-			saynn("Her eyes watch with great interest.. as you grab a small leash and chain the fluff to the machine.. without questioning it much.")
+			saynn("Она с огромным интересом наблюдает, как ты берешь короткий поводок и приковываешь пушистую задницу к машине.. почти не задавая вопросов.")
 
 		else:
 			playAnimation(StageScene.BreastGroping, "tease", {pc="pc", npc="artica", npcBodyState={naked=true, hard=true}})
 		if (breastMilking):
-			saynn("You carefully position the breast pumps over Artica's"+str(" milky" if isLact else "")+" breasts, the soft suction cups creating a tight seal around her tender nipples.")
+			saynn("Ты осторожно располагаешь молокоотсосы на груди Артики,"+str(" milky" if isLact else "")+"мягкие присоски плотно обхватывают её нежные соски.")
 
 		if (penisMilking):
-			saynn(""+str("After that, you" if breastMilking else "You")+" reach out for the penis pump before positioning it over Artica's canine cock. You slide it on without much hassle, the pleasure ring is now hugging that cyan shaft tightly.")
+			saynn(""+str("After that, you" if breastMilking else "You")+"ты тянешься за пенисным насосом, прежде чем надеть его на собачий член Артики. Ты надеваешь его без особых хлопот, и кольцо удовольствия теперь плотно обхватывает этот голубой ствол.")
 
-		addButton("Start", "Turn on the pumps", "start_pumps")
+		addButton("Старт", "Включить насосы", "start_pumps")
 	if(state == "start_pumps"):
 		showFightUI = true
 		if (sybian):
@@ -168,17 +168,17 @@ func _run():
 		else:
 			playAnimation(StageScene.BreastGroping, "tease", {pc="pc", npc="artica", npcBodyState={naked=true, hard=true}})
 		if (breastMilking):
-			saynn("With a soft click, you activate each of the breast pumps. Gentle whirring sound is filling the room as they began trying to draw out Artica's sweet milk.."+str(" really trying.." if !isLact else " without much problem it seems, the girl's breasts are lactating quite nicely.")+"")
+			saynn("С мягким щелчком ты активируешь каждый из молокоотсосов. Комнату наполняет нежное жужжание — они начинают вытягивать сладкое молоко Артики..."+str(" really trying.." if !isLact else " without much problem it seems, the girl's breasts are lactating quite nicely.")+"")
 
 			if (penisMilking):
-				saynn("You weren't done yet. With a grin shining on your face, you reach for the penis pump and press a button that makes it spring to life! The pleasure ring begins to travel along Artica's cyan shaft, trying to milk her balls while the other pumps are milking the breasts already.")
+				saynn("Но ты еще не закончил. С сияющей на лице ухмылкой ты тянешься к пенис-насосу и нажимаешь кнопку, заставляя его ожить! Кольцо удовольствия начинает скользить по голубому стволу Артики, пытаясь выжать всё из её яичек, пока остальные насосы вовсю доят её грудь.")
 
-				saynn("Artica is being milked with two types of pumps at once! Here is hoping she doesn't break..")
+				saynn("Артику доят сразу двумя типами насосов! Остается надеяться, что она не сломается...")
 
 		else:
-			saynn("With a soft click, you activate the penis pump. The pleasure ring begins to travel along Artica's cyan shaft, trying to milk her balls for all the seed that they contain. Gentle whirring sound is filling the room.. as well as a sound of stroking..")
+			saynn("С мягким щелчком ты активируешь пенис-насос. Кольцо удовольствия начинает двигаться вдоль голубого ствола Артики, пытаясь выжать из её яичек всё семя до последней капли. Комнату наполняет нежное жужжание... а также звук ритмичных фрикций...")
 
-		addButton("Continue", "See what happens next", "next_milk_cycle")
+		addButton("Продолжить", "Смотреть, что будет дальше", "next_milk_cycle")
 	if(state == "next_milk_cycle"):
 		var isArticaClose = (getCharacter("artica").getArousal() > 0.6)
 		var isCumming = (getCharacter("artica").getArousal() >= 1.0)
@@ -200,146 +200,146 @@ func _run():
 				else:
 					playAnimation(StageScene.BreastGroping, "stroke", {pc="pc", npc="artica", npcBodyState={naked=true, hard=true}})
 		if (sybian):
-			saynn("The sybian buzzes underneath Artica, stimulating her clit and pussy. The chain is keeping her from squirming too much.")
+			saynn("Под Артикой вибрирует сибиан, стимулируя её клитор и киску. Цепь не дает ей слишком сильно извиваться.")
 
 		else:
-			saynn("Your warm embrace keeps Artica's from squirming too much.")
+			saynn("Твои теплые объятия не дают Артике слишком сильно ерзать.")
 
 		if (beganLactating && !announcedLact):
 			announcedLact = true
-			saynn("Artica's breasts suddenly [b]began lactating[/b]! She lets out a passionate moan as milk begins to freely flow her perky cyan nipples. She blushes as her breasts finally respond to the stimulation.")
+			saynn("Грудь Артики внезапно [b]начала выделять молоко[/b]! Она издает страстный стон, когда молоко начинает свободно течь из её упругих голубых сосков. Она краснеет от того, что её грудь наконец отозвалась на стимуляцию.")
 
 		if (breastMilking):
 			if (milkCollected >= 1.0):
 				if (RNG.chance(100.0/5.0)):
-					saynn("Artica's nipples throb from the milking, milk squirting into the awaiting pumps with each pull who work relentlessly.")
+					saynn("Соски Артики пульсируют от дойки; молоко брызжет в ожидающие насосы, которые неустанно работают, делая каждый рывок.")
 
 				elif (RNG.chance(100.0/4.0)):
-					saynn("Milk flows from Artica's engorged dark-cyan nipples, the breast pumps rhythmically coaxing out every drop.")
+					saynn("Молоко течет из налитых темно-голубых сосков Артики, а молокоотсосы ритмично выжимают каждую каплю.")
 
 				elif (RNG.chance(33)):
-					saynn("Milk flows as Artica moans, succumbing to the pumps' relentless pull on her dark nips.")
+					saynn("Молоко течет струей, пока Артика стонет, поддаваясь неумолимому тягу насосов, терзающих её темные соски.")
 
 				elif (RNG.chance(50)):
-					saynn("Artica's body quivers as her breast milk gets drawn out by the pumps, her nipples getting tugged on at a steady rate.")
+					saynn("Тело Артики дрожит, пока насосы вытягивают грудное молоко, мерно и настойчиво потягивая её соски.")
 
 				else:
-					saynn("With each suction, Artica's nipples yield creamy milk, her breasts swelling with pleasure.")
+					saynn("С каждым всасыванием соски Артики отдают кремовое молоко, а её грудь раздувается от удовольствия.")
 
-				saynn("The breast pumps managed to collect "+str(str(Util.roundF(milkCollected, 1)))+" ml of milk!")
+				saynn("Грудным насосам удалось собрать "+str(str(Util.roundF(milkCollected, 1)))+" мл молока!")
 
 			else:
-				saynn("The breast pumps tease Artica's nipples, her breasts responding eagerly to their tugging.")
+				saynn("Грудные насосы дразнят соски Артики, и её грудь охотно отзывается на их тягу.")
 
 				if (RNG.chance(100.0/5)):
-					saynn("Pleasure courses through Artica's body as the pump works its magic on her sensitive nipples.")
+					saynn("Удовольствие пронзает тело Артики, пока насос творит свою магию с её чувствительными сосками.")
 
 				elif (RNG.chance(100.0/4)):
-					saynn("The pump teases Artica's sensitive nipples, drawing out delicate moans of pleasure from her.")
+					saynn("Насос дразнит чувствительные соски Артики, вырывая у неё нежные стоны наслаждения.")
 
 				elif (RNG.chance(33)):
-					saynn("The pumps tease Artica's nipples, not drawing much milk from them but sending pleasurable twinges throughout her full body.")
+					saynn("Насосы дразнят соски Артики; молока они выкачивают немного, но посылают волны приятной дрожи по всему её телу.")
 
 				elif (RNG.chance(50)):
-					saynn("The breast pumps didn't collect any milk, pumping Artica's breasts fruitlessly.")
+					saynn("Грудные насосы не собрали ни капли молока, тщетно качая грудь Артики.")
 
 		if (penisMilking):
 			if (RNG.chance(100.0/5)):
-				saynn("Each stroke of the pump elicits a shiver from Artica, pre dripping from her cock.")
+				saynn("Каждый ход насоса заставляет Артику вздрагивать, а из её члена уже начинает сочиться предэякулят.")
 
 			elif (RNG.chance(100.0/4)):
-				saynn("Artica's cock pulses, the pump's movements sending waves of pleasure coursing through her.")
+				saynn("Член Артики пульсирует, а движения насоса посылают волны удовольствия по всему её телу.")
 
 			elif (RNG.chance(100.0/3)):
-				saynn("With each pump's stroke, Artica's knot swells slightly more, pre flowing freely from the tip of her cock.")
+				saynn("С каждым движением насоса узел Артики раздувается всё сильнее, а из кончика члена начинает свободно течь смазка.")
 
 			elif (RNG.chance(100.0/2)):
-				saynn("Artica's cock twitches, the pump's relentless rhythm making her moan passionately.")
+				saynn("Член Артики подергивается, а неумолимый ритм насоса заставляет её страстно стонать.")
 
 			else:
-				saynn("Artica's cock twitches as the pump's ring slides along its length, her balls tensing.")
+				saynn("Член Артики вздрагивает, когда кольцо насоса скользит вдоль его длины, а её яички напрягаются.")
 
 		if (RNG.chance(30) && getCharacter("artica").getArousal() > 0.7):
 			if (RNG.chance(25)):
-				saynn("Artica's cute noises fill the air, her body shaking with pleasure as she approaches orgasm.")
+				saynn("Воздух наполняется милыми звуками, которые издает Артика; её тело дрожит от удовольствия, когда она приближается к оргазму.")
 
 			elif (RNG.chance(33)):
-				saynn("Artica's hips buck with excitement, her breath coming in short gasps as she nears climax.")
+				saynn("Бёдра Артики выгибаются от возбуждения, а дыхание становится прерывистым и тяжёлым по мере приближения к климаксу.")
 
 			elif (RNG.chance(50)):
-				saynn("Artica is getting very close, her panting is hypnotizing, her heart pounding hard..")
+				saynn("Артика уже совсем близко; её частое дыхание гипнотизирует, а сердце бешено колотится...")
 
 			else:
-				saynn("Her body is shivering, toes curling, tail swishing wildly. She is about to cum..")
+				saynn("Её тело дрожит, пальцы ног поджимаются, а хвост дико мечет из стороны в сторону. Она вот-вот кончит...")
 
 		if (isCumming):
-			saynn("Artica is about to cum..")
+			saynn("Артика вот-вот кончит...")
 
-			addButton("Orgasm", "See what happens next", "artica_orgasm")
+			addButton("Оргазм", "Смотреть, что будет дальше", "artica_orgasm")
 		else:
-			addButton("Continue", "Milk Artica more", "next_milk_cycle")
-			addButton("Enough", "Stop milking Artica for now", "enough_milking")
+			addButton("Продолжить", "Доить Артику сильнее", "next_milk_cycle")
+			addButton("Хватит", "Пока хватит доить Артику", "enough_milking")
 	if(state == "artica_orgasm"):
 		showFightUI = true
-		saynn("A powerful orgasm rocks Artica's body. She arches her body and shivers as her muscles tense up uncontrollably.")
+		saynn("Мощный оргазм сотрясает тело Артики. Она выгибается и дрожит, пока её мышцы непроизвольно напрягаются.")
 
 		saynn("[say=artica]"+str(RNG.pick(["AhHh-h!..", "Ah-h..ah..ahh..", "t-too much.. ahh-h.. ahh.. nnyah..", "G-gods.. ahh-h.."]))+"[/say]")
 
 		if (breastMilking && milkCollected > 1.0):
-			saynn("Her tits are squirting milk into the breast pumps during this climax.")
+			saynn("Во время этого пика из её груди в молокоотсосы брызжет молоко.")
 
-			saynn("The breast pumps managed to collect "+str(str(Util.roundF(milkCollected, 1)))+" ml of milk!")
+			saynn("Грудным насосам удалось собрать "+str(str(Util.roundF(milkCollected, 1)))+" мл молока!")
 
 		if (penisMilking):
 			if (RNG.chance(25)):
-				saynn("Artica's cock pulses eagerly as the pump drains her balls dry, her cries of pleasure echoing in the cell.")
+				saynn("Кок Артики жадно пульсирует, пока насос высасывает из её яичек всё до капли, а её стоны наслаждения эхом разносятся по камере.")
 
 			elif (RNG.chance(33)):
-				saynn("Artica's cock spasms and jerks, filling the pump with spurts of seed.")
+				saynn("Кок Артики спазмирует и дергается, наполняя насос порциями спермы.")
 
 			elif (RNG.chance(50)):
-				saynn("The penis pump is working overtime to collect every drop of her cum that's erupting from her throbbing canine cock.")
+				saynn("Насос для пениса работает на пределе, чтобы собрать каждую каплю её кончи, извергающейся из пульсирующего собачьего кока.")
 
 			else:
-				saynn("Her cock releases a torrent of hot, sticky seed. The pump eagerly is collecting every drop as she rides the wave of ecstasy.")
+				saynn("Её кок выпускает поток горячей, липкой спермы. Насос жадно собирает каждую каплю, пока она оседлала волну экстаза.")
 
-			saynn("The penis pump managed to collect "+str(str(Util.roundF(seedCollected, 1)))+" ml of seed!")
+			saynn("Насосу удалось собрать "+str(str(Util.roundF(seedCollected, 1)))+" мл спермы!")
 
-		addButton("Milk more", "Milk the fluff more", "next_milk_cycle")
-		addButton("Enough", "Stop milking Artica for now", "enough_milking")
+		addButton("Доить больше", "Доить пушистику сильнее", "next_milk_cycle")
+		addButton("Хватит", "Пока хватит доить Артику", "enough_milking")
 	if(state == "enough_milking"):
-		saynn("You remove the pumps from Artica and let her recover.")
+		saynn("Вы снимаете насосы с Артики, давая ей прийти в себя.")
 
 		if (hadOrgasm):
-			saynn("[say=artica]Ah.. ah-.. ahh-h.. g-gods.. ah..[/say]")
+			saynn("[say=artica]Ах.. ах.. ааах.. б-боги.. ах..[/say]")
 
 		else:
-			saynn("[say=artica]T-that f-felt good..[/say]")
+			saynn("[say=artica]Э-это б-было так приятно..[/say]")
 
-		saynn("In the end, you managed to milk Artica for.. "+str(str(Util.roundF(milkTotal, 1))+" ml of milk" if breastMilking else "")+""+str(" and " if (breastMilking && penisMilking) else "")+""+str(str(Util.roundF(seedTotal, 1))+" ml of seed" if penisMilking else "")+"")
+		saynn("В итоге вам удалось подоить Артику на.. "+str(str(Util.roundF(milkTotal, 1))+" ml of milk" if breastMilking else "")+""+str(" and " if (breastMilking && penisMilking) else "")+""+str(str(Util.roundF(seedTotal, 1))+" ml of seed" if penisMilking else "")+"")
 
 		var totalSmart = milkTotal + seedTotal
 		if (totalSmart >= 800.0):
-			saynn("Wow.. that seems like a really good yield!")
+			saynn("Ого.. кажется, урожай просто отличный!")
 
 		elif (totalSmart >= 500.0):
-			saynn("That seems like a pretty good yield!")
+			saynn("Довольно неплохой урожай!")
 
 		elif (totalSmart >= 300.0):
-			saynn("Not bad of a yield.. even though you feel like Artica is capable of more.")
+			saynn("Неплохо.. хотя кажется, что Артика способна на большее.")
 
 		elif (totalSmart >= 100.0):
-			saynn("A little on the small side.. but still.. Better than nothing!")
+			saynn("Маловато.. но всё же.. Лучше, чем ничего!")
 
 		elif (totalSmart >= 1.0):
-			saynn("That wasn't much at all.. Maybe you should let Artica rest more.")
+			saynn("Это было совсем не то.. Может, стоит дать Артике еще отдохнуть.")
 
 		else:
-			saynn("You didn't manage to get anything this time.. Maybe next time!")
+			saynn("В этот раз тебе ничего не удалось.. Может, в следующий раз получится!")
 
-		saynn("You bring her back into the main hall.")
+		saynn("Ты возвращаешь её в главный зал.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 func addPumpButtons(go_id):
 	var pumps = GM.pc.getInventory().getItemsWithTag(ItemTag.BreastPump)
 	for pump in pumps:

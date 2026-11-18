@@ -23,184 +23,184 @@ func _run():
 		nakedAndShy = (isNaked && !isSlut)
 		playAnimation(StageScene.Solo, "walk", {pc="artica"})
 		aimCameraAndSetLocName("yard_neargym")
-		saynn("This time Artica is heading to the yard area. Is she eager to breathe some fresh air?")
+		saynn("На этот раз Артика направляется во внутренний двор. Неужели она так жаждет глотка свежего воздуха?")
 
-		saynn("Doesn't look like.. After putting her hind paws on the stone tiles, she actually makes her way to the gym instead.. and then just peeks her head inside"+str(", obviously quite aware of her lack of clothes" if nakedAndShy else "")+".")
+		saynn("Похоже, нет... Поставив задние лапы на каменную плитку, она вместо этого направляется к спортзалу... а затем просто заглядывает внутрь."+str(", obviously quite aware of her lack of clothes" if nakedAndShy else "")+".")
 
-		saynn("And luckily for her, the gym was mostly empty. The fluff takes a deep breath.. and walks in, quickly picking one of the yoga mats and sitting on it..")
+		saynn("И, к счастью для неё, в зале почти никого не было. Пушистая делает глубокий вдох... заходит внутрь, быстро подхватывает один из ковриков для йоги и усаживается на него...")
 
-		saynn("She doesn't seem to be doing anything interesting.. so you might as well join her.")
+		saynn("Она не делает ничего особенного... так что ты вполне можешь к ней присоединиться.")
 
-		addButton("Continue", "See what happens next", "pc_joins")
+		addButton("Продолжить", "Смотреть, что будет дальше", "pc_joins")
 	if(state == "pc_joins"):
 		playAnimation(StageScene.Yoga, "cobra", {pc="artica", bodyState={hard=true}})
-		saynn("Artica begins to do simple stretches, laying flat on the yoga mat before arching her back as much as her spine allows.. which doesn't seem to be that much.. but she is clearly trying.")
+		saynn("Артика начинает делать простую растяжку: она ложится плашмя на коврик, а затем прогибает спину настолько, насколько позволяет позвоночник... кажется, не очень сильно... но она явно старается.")
 
-		saynn("You take an empty yoga mat nearby and start doing some simple yoga exercises as well.")
+		saynn("Ты берешь пустой коврик неподалеку и тоже начинаешь выполнять простые упражнения из йоги.")
 
-		saynn("[say=pc]Hey.[/say]")
+		saynn("[say=pc]Эй.[/say]")
 
-		saynn("The"+str(" naked" if isNaked else "")+" fluff jumps and gasps when she hears your voice.")
+		saynn("Пушистая"+str(" naked" if isNaked else "")+"вздрагивает и ахает, услышав твой голос.")
 
-		saynn("[say=artica]Eek.. oh.. h-heya..[/say]")
+		saynn("[say=artica]Ой!.. о... п-привет...[/say]")
 
-		saynn("[say=pc]Yoga is cool, doing it for the mind?[/say]")
+		saynn("[say=pc]Йога — это круто, для разгрузки мозга?[/say]")
 
-		saynn("Artica tilts her head at you.")
+		saynn("Артика слегка наклоняет голову, глядя на тебя.")
 
-		saynn("[say=artica]I'm just.. trying to get more agile.. and flexible, I guess..[/say]")
+		saynn("[say=artica]Я просто... пытаюсь стать более ловкой... и гибкой, наверное...[/say]")
 
-		saynn("She blushes softly as she continues her exercises. And so you continue yours..")
+		saynn("Она слегка краснеет, продолжая свои упражнения. И ты продолжаешь свои...")
 
-		addButton("Continue", "See what happens next", "second_exercise")
+		addButton("Продолжить", "Смотреть, что будет дальше", "second_exercise")
 	if(state == "second_exercise"):
 		playAnimation(StageScene.Yoga, "catcow", {pc="artica", bodyState={hard=true}})
-		saynn("Artica gets up on all fours.. and begins doing the cat-cow exercises, arching her body down and up, huffing softly already.."+str(" You notice her {artica.penis} swaying between her legs.. She obviously sees it too each time she bends her spine.." if isNaked else " You notice her shorts bulging in the crotch region..")+"")
+		saynn("Артика встает на четвереньки... и начинает делать упражнение «кошка-корова», прогибая спину вверх и вниз, уже тихонько сопя..."+str(" You notice her {artica.penis} swaying between her legs.. She obviously sees it too each time she bends her spine.." if isNaked else " You notice her shorts bulging in the crotch region..")+"")
 
-		saynn("[say=pc]You wanna be more agile, huh?[/say]")
+		saynn("[say=pc]Хочешь стать более ловкой, да?[/say]")
 
-		saynn("She nods nervously.")
+		saynn("Она нервно кивает.")
 
-		saynn("[say=artica]Y-yeah.. I just want to be better.. at c-certain things..[/say]")
+		saynn("[say=artica]Д-да... Я просто хочу стать лучше... в о-определенных вещах...[/say]")
 
-		saynn("Interesting.")
+		saynn("Интересно.")
 
-		saynn("[say=pc]I'm curious. What things?[/say]")
+		saynn("[say=pc]Любопытно. В каких именно?[/say]")
 
-		saynn("[say=artica]Uh.. just taking care of myself and my body.. I've been avoiding e-exercises for a long time..[/say]")
+		saynn("[say=artica]Э-э... ну, просто ухаживать за собой и своим телом... Я долгое время избегала ф-физических нагрузок...[/say]")
 
-		saynn("Exercising is not the worst idea in this prison.")
+		saynn("Заниматься спортом в этой тюрьме — не самая худшая идея.")
 
-		saynn("[say=pc]Hope you reach your goals then.[/say]")
+		saynn("[say=pc]Надеюсь, тогда ты достигнешь своих целей.[/say]")
 
-		saynn("Her cheeks blush slightly more, the girl is panting a lot by now, each simple bend is becoming harder and harder for her to do.")
+		saynn("Её щеки краснеют всё сильнее, девушка уже вовсю тяжело дышит; каждое простое наклонение дается ей всё труднее и труднее.")
 
-		saynn("[say=artica]T-t.. t-thanks.. ah..[/say]")
+		saynn("[say=artica]С-с.. с-спасибо.. ах..[/say]")
 
-		saynn("It's only been a few minutes though..")
+		saynn("Хотя прошло всего несколько минут..")
 
-		saynn("[say=artica]W-why is it so hard..[/say]")
+		saynn("[say=artica]П-почему это так тяжело..[/say]")
 
-		saynn("[say=pc]It gets easier the more you do it.[/say]")
+		saynn("[say=pc]Чем больше делаешь, тем легче становится.[/say]")
 
-		saynn("[say=artica]Oh.. yeah.. y-yeah, it does.. hah.. ah..[/say]")
+		saynn("[say=artica]Ох.. да.. д-да, так и есть.. хах.. ах..[/say]")
 
-		addButton("Continue", "See what happens next", "situps_artica")
+		addButton("Продолжить", "Смотреть, что будет дальше", "situps_artica")
 	if(state == "situps_artica"):
 		playAnimation(StageScene.GivingBirth, "idle", {pc="artica", bodyState={hard=true}})
-		saynn("The fluff eventually gives up on that exercise. She flops onto the mat and starts panting heavily.")
+		saynn("В конце концов, пушистая бедняжка сдается. Она плюхается на мат и начинает тяжело дышать.")
 
-		saynn("[say=pc]Take a rest.[/say]")
+		saynn("[say=pc]Отдохни.[/say]")
 
-		saynn("[say=artica]Yeah.. uh.. s-soon..[/say]")
+		saynn("[say=artica]Да.. эх.. с-скоро..[/say]")
 
-		saynn("The girl starts doing simple crunches, bending forward and trying to reach her knees with her elbows.")
+		saynn("Девушка начинает делать простые скручивания, наклоняясь вперед и пытаясь дотянуться локтями до колен.")
 
-		saynn("Artica might not be the most agile girl in the world.. but she is motivated, you will give her that.")
+		saynn("Артика, возможно, не самая ловкая девчонка в мире... но она чертовски мотивирована, это стоит признать.")
 
-		saynn("Eventually, though, her body gives up. The fluff hits the mat and stops pushing herself, instead just focussing on her breathing.")
+		saynn("В конце концов, тело берет свое. Эта пушистая булочка плюхается на мат и перестает насиловать себя упражнениями, просто сосредоточившись на дыхании.")
 
-		saynn("[say=artica]G-gonna go now.. I will s-see you later..[/say]")
+		saynn("[say=artica]Я... я пойду.. Увидимся... позже..[/say]")
 
-		saynn("[say=pc]Sure.[/say]")
+		saynn("[say=pc]Конечно.[/say]")
 
-		saynn("Not even a few minutes later, Artica gets up.. and starts heading somewhere.")
+		saynn("Не прошло и пары минут, как Артика встает... и куда-то направляется.")
 
-		saynn("She doesn't seem to be going towards the bathroom.. which is quite curious.")
+		saynn("Похоже, она идет не в сторону туалета... что довольно любопытно.")
 
-		addButton("Follow", "See where Artica is heading", "artica_needy_in_cell")
+		addButton("Следовать", "Посмотреть, куда идет Артика", "artica_needy_in_cell")
 	if(state == "artica_needy_in_cell"):
 		addCharacter("artica", ["naked"])
 		aimCameraAndSetLocName("cellblock_lilac_nearcell")
 		GM.pc.setLocation("cellblock_lilac_nearcell")
 		playAnimation(StageScene.Solo, "stand", {pc="artica", bodyState={naked=true,hard=true}})
-		saynn("You follow her, curious if she is heading back to her spot.. but she is not. Artica is going down to the lilac cell block and heads straight for her cell.")
+		saynn("Ты идешь за ней, гадая, не возвращается ли она на свое место... но нет. Артика спускается в сиреневый блок и направляется прямиком к своей камере.")
 
 		if (!isNaked):
-			saynn("In there, she slowly begins to undress, dropping her shirt and exposing her {artica.breasts}, her nipples already hard from the cool air. Her paws tremble slightly as she pulls down her shorts too, exposing her "+str("locked drippy member" if isCaged else "hard drippy member")+" and the moist source of heat that's hiding behind her balls..")
+			saynn("Там она медленно начинает раздеваться, стягивая футболку и обнажая свою {artica.breasts}, соски которой уже затвердели от прохладного воздуха. Ее лапки слегка дрожат, когда она стягивает и шорты, обнажая "+str("locked drippy member" if isCaged else "hard drippy member")+" и влажный источник тепла, скрывающийся за ее яйцами...")
 
 		else:
-			saynn("In there, she slowly begins to admire herself, staring down at her exposed {artica.breasts}, seeing her nipples getting hard from the cool air. Her paws tremble slightly as she caresses the inner sides of her thighs, outlining her "+str("locked drippy member" if isCaged else "hard drippy member")+" and the moist source of heat that's hiding behind her balls..")
+			saynn("Там она медленно начинает любоваться собой, глядя вниз на свою обнаженную {artica.breasts} и видя, как её соски твердеют от прохладного воздуха. Её лапы слегка дрожат, когда она ласкает внутреннюю сторону бёдер, очерчивая свой "+str("locked drippy member" if isCaged else "hard drippy member")+" и влажный источник тепла, скрывающийся за ее яйцами...")
 
-		saynn("[say=artica]W-why so hard..[/say]")
+		saynn("[say=artica]П-почему он такой твердый..[/say]")
 
-		saynn("You peek your head inside and just watch what she is gonna do next. Because she certainly will..")
+		saynn("Ты заглядываешь внутрь и просто наблюдаешь за тем, что она сделает дальше. Потому что она определенно что-то предпримет..")
 
-		addButton("Continue", "See what happens next", "artica_tries_selfsuck")
+		addButton("Продолжить", "Смотреть, что будет дальше", "artica_tries_selfsuck")
 	if(state == "artica_tries_selfsuck"):
 		playAnimation(StageScene.SelfSuck, "tease", {pc="artica", bodyState={naked=true, hard=true}})
-		saynn("Naked Artica gets up onto her bed and puts her hands onto her back, trying to support herself in this awkward balancing position where her ass is above her chest, her head resting on a pillow.")
+		saynn("Обнаженная Артика забирается на кровать и заводит руки за спину, пытаясь удержать это неудобное положение, в котором её задница находится выше груди, а голова покоится на подушке.")
 
 		if (isCaged):
-			saynn("In this position, her chastity cage is not that far away.. from her lips. And so she is trying, trying to bend herself a little more.. trying to reach her locked cock with her lips.")
+			saynn("В такой позе её девственная клетка находится совсем недалеко.. от её губ. И поэтому она пытается, пытается согнуться еще сильнее.. пытаясь достать своим ртом свой запертый член.")
 
-			saynn("[say=artica]Nhh-hhh..[/say]")
+			saynn("[say=artica]Нхх-ххх..[/say]")
 
-			saynn("But even when sticking her long canine tongue, she can barely just lick the metal tip of the cage.. licking off the salty pre that has collected there..")
+			saynn("Но даже высунув свой длинный волчий язык, она едва может лишь лизнуть металлический наконечник клетки.. слизывая скопившуюся там соленую смазку..")
 
 		else:
-			saynn("In this position, her canine cock is not that far away.. from her lips. And so she is trying, trying to bend herself a little more.. trying to reach her cyan pulsing shaft with her lips.")
+			saynn("В такой позе её волчий член находится совсем недалеко.. от её губ. И поэтому она пытается, пытается согнуться еще сильнее.. пытаясь достать своим ртом свой пульсирующий голубой ствол.")
 
-			saynn("[say=artica]Nhh-hhh..[/say]")
+			saynn("[say=artica]Нхх-ххх..[/say]")
 
-			saynn("But even when sticking her long canine tongue, she can barely just lick the tip of the member.. licking off the salty pre that has collected there..")
+			saynn("Но даже высунув свой длинный волчий язык, она едва может лишь лизнуть кончик члена.. слизывая скопившуюся там соленую смазку..")
 
-		saynn("Her breath hitches as she strains her body.. her untrained muscles and bones protesting against the unfamiliar movement. She manages to get close, licking more of her pre.. but she can't quite reach far enough.")
+		saynn("Её дыхание сбивается, пока она напрягает всё тело... её нетренированные мышцы и кости протестуют против непривычных движений. Ей удаётся подобраться ближе, слизывая всё больше своей пред.. , но она всё равно не может дотянуться как следует.")
 
-		saynn("[say=artica]Hh.. P-please.. I n-need it..[/say]")
+		saynn("[say=artica]Ах.. П-пожалуйста.. мне н-нужно это..[/say]")
 
-		saynn("Frustration begins to build as she tries different angles, each attempt leaving her just shy of her goal. Her muscles are tensing up painful, making the girl whimper desperately..")
+		saynn("Нарастает разочарование: она пробует разные углы, но каждая попытка оставляет её всего в паре сантиметров от цели. Мышцы сводит от боли, заставляя девушку отчаянно скулить...")
 
-		saynn("With a defeated sigh, Artica lays back on the bed, her "+str("cock still hard and dripping" if !isCaged else "cock still dripping in its small cage")+", her mind corrupted with desire..")
+		saynn("С побеждённым вздохом Артика откидывается на кровать, её "+str("cock still hard and dripping" if !isCaged else "cock still dripping in its small cage")+", её разум затуманен похотью...")
 
-		addButton("Continue", "See what happens next", "artica_gives_up_cums")
+		addButton("Продолжить", "Смотреть, что будет дальше", "artica_gives_up_cums")
 	if(state == "artica_gives_up_cums"):
-		saynn("She couldn't achieve her goal.. but her need for a release didn't go anywhere.")
+		saynn("Ей не удалось достичь цели... но потребность в разрядке никуда не делась.")
 
-		saynn("[say=artica]I c-can't.. anymore..[/say]")
+		saynn("[say=artica]Я б-больше не могу..[/say]")
 
 		if (isCaged):
 			playAnimation(StageScene.Zonked, "rubcum", {pc="artica", bodyState={naked=true, hard=true}})
-			saynn("She gives in to the urge.. her cock is locked so she reaches digits to her dripping needy pussy before proceeding to rub her clit.")
+			saynn("Она поддаётся позыву... её член зафиксирован, поэтому она запускает пальцы в свою влажную, жаждущую киску, прежде чем приняться тереть клитор.")
 
-			saynn("The sensation sends shivers through her body, Artica closes her eyes and keeps pleasuring herself while licking her lips, probably imagining what it would feel like to have her mouth around her cock, to be able to taste it herself..")
+			saynn("Это ощущение прошибает её тело дрожью; Артика закрывает глаза и продолжает ласкать себя, облизывая губы и, вероятно, представляя, каково было бы обхватить ртом собственный член, почувствовать его вкус...")
 
-			saynn("[say=artica]Mmm.. hh..[/say]")
+			saynn("[say=artica]Ммм.. ах..[/say]")
 
-			saynn("Her digits part her pussy lips and delve in to finger the entrance, her breathing becoming deep and fast, her toes curling up as she was getting closer.. The cock trapped inside her sheath and pulsing hard..")
+			saynn("Её пальцы раздвигают половые губы и проникают внутрь, прощупывая вход; её дыхание становится глубоким и частым, а пальцы ног поджимаются всё ближе к развязке... Член, зажатый внутри её влагалища, пульсирует от напряжения..")
 
-			saynn("[say=artica]Ah![/say]")
+			saynn("[say=artica]Ах![/say]")
 
-			saynn("And, soon enough, she cums, her locked cock shooting thick ropes of cum out with some of them landing on her tits.. but the rest was quickly aimed towards her mouth, her tongue darting out to catch every drop possible, the fluff eagerly swallowing her own seed..")
+			saynn("И вскоре она кончает; её зажатый член извергает густые струи спермы, часть которых попадает ей на грудь... но остальные быстро направляются ей в рот, её язык вылетает, чтобы поймать каждую каплю, а пушистая плоть жадно глотает собственное семя..")
 
-			saynn("Her orgasm was quick but intense, her body shaking as wave after wave of pleasure washed over her.")
+			saynn("Оргазм был быстрым, но интенсивным; её тело содрогалось, когда волна за волной наслаждения накрывала её.")
 
 		else:
 			playAnimation(StageScene.Zonked, "strokecum", {pc="artica", bodyState={naked=true, hard=true}})
-			saynn("She gives in to the urge, wrapping her digits around her hard, dripping canine cock, spreading her pre along the length before proceeding to stroke it.")
+			saynn("Она поддается порыву, обхватывая пальцами свой твердый, сочащийся смазкой звериный член, размазывая предэякулят по всей длине, прежде чем начать ритмично ласкать его.")
 
-			saynn("The sensation sends shivers through her body, Artica closes her eyes and keeps stroking herself while licking her lips, probably imagining what it would feel like to have her mouth around her cock, to be able to taste it herself..")
+			saynn("Это ощущение прогоняет дрожь по всему её телу; Артика закрывает глаза и продолжает теребить себя, облизывая губы и, вероятно, представляя, каково это — обхватить свой член ртом, почувствовать его вкус самой..")
 
-			saynn("[say=artica]Mmm.. hh..[/say]")
+			saynn("[say=artica]Ммм.. ах..[/say]")
 
-			saynn("Her strokes became faster, more urgent, her breathing deep and fast, her toes curling up as she was getting closer.. The knot at the base of her member inflating into a fat pulsing orb..")
+			saynn("Её движения становятся быстрее, настойчивее, дыхание — глубоким и прерывистым, а пальцы ног поджимаются всё сильнее по мере приближения к пику... Узел у основания её члена раздувается в жирный пульсирующий шар..")
 
-			saynn("[say=artica]Ah![/say]")
+			saynn("[say=artica]Ах![/say]")
 
-			saynn("And, soon enough, she cums, her cock shooting thick ropes of cum out with some of them landing on her tits.. but the rest was quickly aimed towards her mouth, her tongue darting out to catch every drop possible, the fluff eagerly swallowing her own seed..")
+			saynn("И вскоре она кончает; её член извергает густые струи спермы, часть которых попадает ей на грудь... но остальные быстро направляются ей в рот, её язык вылетает, чтобы поймать каждую каплю, а пушистая плоть жадно глотает собственное семя..")
 
-			saynn("Her orgasm was quick but intense, her body shaking as wave after wave of pleasure washed over her.")
+			saynn("Оргазм был быстрым, но интенсивным; её тело содрогалось, когда волна за волной наслаждения накрывала её.")
 
-		addButton("Continue", "See what happens next", "artica_aftermatch")
+		addButton("Продолжить", "Смотреть, что будет дальше", "artica_aftermatch")
 	if(state == "artica_aftermatch"):
 		playAnimation(StageScene.Zonked, "tease", {pc="artica", bodyState={naked=true, hard=true}})
-		saynn("When it was finally over, Artica just laid on her bed, her chest rising and falling as she was panting. Her body was still tingling from the afterglow, her sore, tired muscles adding in some pain to the mix..")
+		saynn("Когда всё наконец закончилось, Артика просто растянулась на кровати, тяжело и прерывисто дыша. Её тело всё ещё покалывало от послевкусия оргазма, а ноющие, уставшие мышцы добавляли к этому ощущению лёгкую боль...")
 
-		saynn("[say=artica]One day..[/say]")
+		saynn("[say=artica]Однажды..[/say]")
 
-		saynn("You chuckle softly and then quickly leave after seeing her ears perk in your direction..")
+		saynn("Ты тихо посмеиваешься и поспешно уходишь, заметив, как её ушки навострились в твою сторону...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

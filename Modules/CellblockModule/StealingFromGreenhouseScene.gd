@@ -5,28 +5,28 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("You approach the greenhouses, each one looks like a huge long tent with lots of artificial lights inside. You have to sneak around cause at any moment you can spotted by the workers or some guard.")
+		saynn("Вы подходите к теплицам; каждая из них похожа на огромный длинный шатёр, внутри которого горит множество искусственных ламп. Вам нужно пробираться осторожно, потому что в любой момент рабочие или охрана могут вас заметить.")
 		
-		saynn("The station seems to be growing quite a variety of fruits and vegetables but you also notice some mushrooms and different types of alien plants and herbs, most of which are unknown to you.")
+		saynn("Похоже, на станции выращивают самые разные фрукты и овощи, но вы также замечаете грибы и различные виды инопланетных растений и трав, большинство из которых вам совершенно незнакомы.")
 
-		saynn("You decide that it's too dangerous to try and sneak inside one but you notice a few wooden crates left out in the open. You guess that it wouldn't be too hard to open one but you might be caught during it.")
+		saynn("Вы решаете, что пробираться внутрь одной из теплиц слишком опасно, но замечаете несколько деревянных ящиков, оставленных прямо на виду. Вы предполагаете, что вскрыть один из них будет несложно, но в процессе вас могут поймать.")
 		
-		saynn("What do you wanna do?")
+		saynn("Что будете делать?")
 
-		addButton("Steal an apple", "Try and open the apple crate", "apple")
-		addButton("Don't steal", "Too dangerous", "endthescene")
+		addButton("Стибрить яблоко", "Попробовать вскрыть ящик с яблоками", "apple")
+		addButton("Ничего не красть", "Слишком опасно", "endthescene")
 
 			
 	if(state == "apple"):
-		saynn("You manage to pry open one of the crates and steal a few apples. Time to make escape.")
+		saynn("Вам удается поддеть один из ящиков и стащить несколько яблок. Пора делать ноги.")
 		
-		addButton("Continue", "Try to escape without being seen", "caughtcheck")
+		addButton("Продолжить", "Попытаться сбежать незамеченным", "caughtcheck")
 
 	if(state == "canTryAgain"):
-		saynn("Seems you got away with it. But you think you can try and steal some more.")
+		saynn("Похоже, вам это удалось. Но вы думаете, что можно попробовать стащить еще немного.")
 		
-		addButton("Steal more", "Try to escape without being seen", "caughtcheck2")
-		addButton("Don't steal", "Too dangerous", "endthescene")
+		addButton("Украсть ещё больше", "Попытаться сбежать незамеченным", "caughtcheck2")
+		addButton("Ничего не красть", "Слишком опасно", "endthescene")
 		GM.ES.triggerRun(Trigger.CaughtStealingInGreenhouse)
 
 func _react(_action: String, _args):

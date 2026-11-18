@@ -11,68 +11,68 @@ func _run():
 	if(state == "" && !getModuleFlag("CellblockModule", "Cellblock_CheckpointVisited", false)):
 		setModuleFlag("CellblockModule", "Cellblock_CheckpointVisited", true)
 		
-		saynn("To get to the elevator you first need to get through the checkpoint. It looks like a short corridor that’s protected by a security camera and a guard. The guard is clearly a guy, medium build, blue uniform, light armor, a belt with a few things like a stunstick and a remote.")
+		saynn("Чтобы добраться до лифта, сначала нужно пройти через контрольно-пропускной пункт. Это короткий коридор под прицелом камеры наблюдения и охраняемый охранником. Охранник — явно мужик среднего телосложения, в синей униформе и легкой броне, с ремнем, на котором висят всякие штуки вроде электрошокера и пульта.")
 
-		saynn("When you approach the guard he gives you a stop sign.")
+		saynn("Когда ты подходишь к охраннику, он жестом велит тебе остановиться.")
 
-		saynn("[say=cp_guard]Name.[/say]")
+		saynn("[say=cp_guard]Имя.[/say]")
 
-		saynn("[say=pc]It’s {pc.name}[/say]")
+		saynn("[say=pc]Это {pc.name}[/say]")
 
-		saynn("He chuckles.")
+		saynn("Он усмехается.")
 
-		saynn("[say=cp_guard]Don’t give a fuck about that one. Your real name, inmate.[/say]")
+		saynn("[say=cp_guard]Да не еби ты мозг этой херней. Твое настоящее имя, зэк.[/say]")
 
-		saynn("That’s kinda annoying, you sigh while the guy slowly eyes out your {pc.feminine} body.")
+		saynn("Это немного раздражает; ты вздыхаешь, пока парень медленно разглядывает твое {pc.feminine} тело.")
 
-		saynn("[say=pc]Inmate number {pc.inmateNumber}. Can I go now?[/say]")
+		saynn("[say=pc]Номер заключенного {pc.inmateNumber}. Теперь можно идти?[/say]")
 
-		saynn("[say=cp_guard]Have to frisk you. Stand against a wall.[/say]")
+		saynn("[say=cp_guard]Надо тебя обыскать. Встань к стене.[/say]")
 
 		# (if not naked)
 		if(!GM.pc.isFullyNaked()):
-			saynn("[say=pc]Why?[/say]")
+			saynn("[say=pc]Почему?[/say]")
 
-			saynn("[say=cp_guard]To make sure you don’t have anything illegal.[/say]")
+			saynn("[say=cp_guard]Чтобы убедиться, что у тебя нет ничего запрещенного.[/say]")
 
-			saynn("[say=pc]And what is illegal?[/say]")
+			saynn("[say=pc]И что считается запрещенным?[/say]")
 
-			saynn("[say=cp_guard]Any weapons, any contraband. I don’t have all day, inmate.[/say]")
+			saynn("[say=cp_guard]Любое оружие, любой контрабандный товар. У меня нет на тебя уйму времени, зэчка.[/say]")
 		# (if naked)
 		else:
-			saynn("[say=pc]Can’t you see that I don’t have anything, I’m naked.[/say]")
+			saynn("[say=pc]Разве не видно, что у меня ничего нет? Я же голая![/say]")
 
-			saynn("[say=cp_guard]Oh yeah? You can’t imagine where inmates hide contraband. Don’t waste my time, slut.[/say]")
+			saynn("[say=cp_guard]Да неужели? Ты и представить не можешь, где заключенные прячут шмотки. Не трать мое время, сучка.[/say]")
 
-		saynn("The guard will check you every time you try to walk past here. What do you wanna do?")
+		saynn("Охранник будет обыскивать тебя каждый раз, когда ты попытаешься пройти здесь. Что будешь делать?")
 	elif(state == "" && GM.main.isVeryLate()):
-		saynn("The canine guard stops you at the checkpoint.")
+		saynn("Охранник с собакой останавливает тебя на контрольно-пропускном пункте.")
 		
-		saynn("[say=cp_guard]You can't use the elevator at this time, go back to your cell, inmate.[/say]")
+		saynn("[say=cp_guard]Сейчас лифт не работает, возвращайся в камеру, зэчка.[/say]")
 	elif(state == ""):
-		saynn("The canine guard stops you at the checkpoint.")
+		saynn("Охранник с собакой останавливает тебя на контрольно-пропускном пункте.")
 
-		saynn("[say=cp_guard]Gonna frisk you for anything illegal. Stand against a wall.[/say]")
+		saynn("[say=cp_guard]Сейчас прощупаю тебя на предмет запрещенки. Прижмись к стене.[/say]")
 
-		saynn("What do you wanna do?")
+		saynn("Что будете делать?")
 	if(state == ""):
 		addButtonUnlessLate("Get frisked", "Let him frisk you", "get_frisked")
-		addButtonWithChecks("Offer handjob", "Maybe he will let you through if you let his cock out", "offer_handjob", [], [
+		addButtonWithChecks("Предложить рукоблудие", "Может, он пропустит тебя, если ты дашь ему выпустить член?", "offer_handjob", [], [
 			ButtonChecks.NotHandsBlocked,
 			ButtonChecks.NotLate,
 			[ButtonChecks.SkillCheck, Skill.SexSlave, 1],
 			])
-		addButton("Intimidate", "Try to scare him off. Might work if you have the right reputation", "intimidate")
-		addButton("Leave", "You don’t wanna get frisked", "leave")
+		addButton("Запугивание", "Попробуй его напугать. Может сработать, если у тебя подходящая репутация", "intimidate")
+		addButton("Уйти", "Тебе явно не хочется, чтобы тебя обыскивали", "leave")
 
 	if(state == "leave"):
-		saynn("[say=pc]Oh, didn’t mean to go here.[/say]")
+		saynn("[say=pc]Ой, не хотел сюда забредать.[/say]")
 
-		saynn("The guard squints at you.")
+		saynn("Охранник прищуривается, глядя на тебя.")
 
-		saynn("[say=cp_guard]Fuck off then.[/say]")
+		saynn("[say=cp_guard]Ну и вали отсюда тогда.[/say]")
 
-		addButton("Continue", "Oh well", "leaveandendthescene")
+		addButton("Продолжить", "Ну и ладно", "leaveandendthescene")
 
 	if(state == "get_frisked"):
 		playAnimation(StageScene.Search, "search", {
@@ -81,28 +81,28 @@ func _run():
 			npcBodyState={},
 		})
 		
-		saynn("You stand against a wall and wait for the guy. He stands behind you and makes you spread your feet more.")
+		saynn("Ты прислоняешься к стене и ждешь парня. Он встает позади тебя и заставляет тебя расставить ноги пошире.")
 
-		saynn("He then crouches and starts going from bottom to the top, his hands slide along the curves of your {pc.thick} body, searching for anything unusual. He checks any pockets too.")
+		saynn("Затем он приседает и начинает прощупывать тебя снизу вверх; его руки скользят по изгибам твоего {pc.thick} тела, выискивая что-нибудь необычное. Он также проверяет все карманы.")
 
-		saynn("Then he pulls out some kind of scanner and uses it on you. He probably could have just done that from the start.")
+		saynn("Затем он достает какой-то сканер и использует его на тебе. Наверное, он мог бы просто сделать это с самого начала.")
 
 		# (if has something)
 		if(GM.pc.hasIllegalItems()):
-			saynn("[say=cp_guard]That’s contraband. Where did you find that, inmate?[/say]")
+			saynn("[say=cp_guard]Это контрабанда. Где ты это нашел, зек?[/say]")
 
-			saynn("[say=pc]On the floor?[/say]")
+			saynn("[say=pc]На полу?[/say]")
 
-			saynn("[say=cp_guard]Yeah, sure. I will be taking that away.[/say]")
+			saynn("[say=cp_guard]Да, конечно. Я это заберу.[/say]")
 
-			saynn("Well, what can you do. You roll your eyes and walk away.")
+			saynn("Ну, что поделаешь. Ты закатываешь глаза и уходишь.")
 		else:
 		# (if clear)
-			saynn("[say=cp_guard]Alright, you’re clear.[/say]")
+			saynn("[say=cp_guard]Ладно, ты свободна.[/say]")
 
-			saynn("You continue on your way.")
+			saynn("Ты продолжаешь свой путь.")
 		
-		addButton("Continue", "Time to go", "friskAndEndthescene")
+		addButton("Продолжить", "Пора идти", "friskAndEndthescene")
 		
 
 	if(state == "offer_handjob"):
@@ -112,41 +112,41 @@ func _run():
 			npcBodyState={},
 		})
 
-		saynn("Instead of doing as told you walk up closer to the guard and boldly put a hand on his crotch, giving it a slight squeeze. The guy hums and smirks.")
+		saynn("Вместо того чтобы делать, как велели, ты подходишь ближе к охраннику и смело кладешь руку ему на пах, слегка сжимая его. Парень хмыкает и ухмыляется.")
 
-		saynn("[say=pc]How about I offer you something else~[/say]")
+		saynn("[say=pc]Как насчет того, чтобы я предложила тебе кое-что другое~[/say]")
 
-		saynn("[say=cp_guard]I guess you can try, inmate. No funny business.[/say]")
+		saynn("[say=cp_guard]Думаю, ты можешь попробовать, заключенная. Только без фокусов.[/say]")
 
-		saynn("Your second hand tickles his chin while the first one slowly unzips the bulging pants.")
+		saynn("Твоя вторая рука щекочет его подбородок, пока первая медленно расстегивает распирающие штаны.")
 
-		saynn("[say=pc]Serious package calls for serious business~[/say]")
+		saynn("[say=pc]Такой серьезный агрегат требует серьезного подхода~[/say]")
 
-		saynn("You get on your knees before him and pull his half-erected cock out. The shape follows that of any canine, pointy tip, blood-red veiny shaft with a knot on the end. You give the head a smooch and wrap your digits around the thick meat, slightly stroking it to help him get hard. He leans his back against a wall and watches you work.")
+		saynn("Ты опускаешься перед ним на колени и вытягиваешь его полуэрегированный член. По форме он напоминает собачий: заостренный кончик, кроваво-красный венозный ствол с узлом на конце. Ты чмокаешь головку и обхватываешь пальцами толстую плоть, слегка поглаживая её, чтобы помочь ему встать колом. Он прислоняется спиной к стене и наблюдает за твоей работой.")
 
 		# (if red)
 		if(GM.pc.getInmateType() == InmateType.HighSec):
-			saynn("[say=cp_guard]You’re awfully slutty for a red. Don’t you dare use your claws, whore.[/say]")
+			saynn("[say=cp_guard]Для «красной» ты чертовски похотливая. И не вздумай выпускать когти, шлюха.[/say]")
 
 		# (if general)
 		if(GM.pc.getInmateType() == InmateType.General):
-			saynn("[say=cp_guard]Such a slut, you should be in the lilac block, I wouldn’t mind fucking you every once in a while.[/say]")
+			saynn("[say=cp_guard]Такая сучка... тебе самое место в сиреневом блоке. Я бы не прочь трахать тебя время от времени.[/say]")
 
 		# (if pink)
 		if(GM.pc.getInmateType() == InmateType.SexDeviant):
-			saynn("[say=cp_guard]Glad the sextoys know their place. Keep working.[/say]")
+			saynn("[say=cp_guard]Приятно видеть, что секс-игрушки знают своё место. Продолжай работать.[/say]")
 
-		saynn("His member slowly reaches the maximum length of {cp_guard.penisSizeStr}, very hefty. On its tip you see some precum beginning to gather, you catch it with your hand and spread it along the length down. Your free hand slips into his unzipped pants and gives his balls a small massage. His breathing becomes deeper while you stroke his canine cock, slowly picking up the pace.")
+		saynn("Его член медленно достигает своего максимума, {cp_guard.penisSizeStr}, очень внушительный. На кончике ты замечаешь капли предэякулята; ты подхватываешь их рукой и размазываешь по всей длине вниз. Твоя свободная рука ныряет в расстегнутые штаны, слегка массируя его яйца. Его дыхание становится глубже, пока ты ласкаешь его собачий член, постепенно ускоряя темп.")
 
-		saynn("It all happens in a public place but you don’t care, you look up at the guy and teasingly lick his cock once, getting some of his pre, you hand slides back and forth at a steady pace, you notice his knot inflating, his shaft throbbing.")
+		saynn("Всё это происходит на людях, но тебе плевать. Ты смотришь на парня и дразняще слизываешь предэякулят с его члена. Твоя рука ходит вверх-вниз в размеренном темпе; ты замечаешь, как раздувается его узел, а сам ствол пульсирует.")
 
-		saynn("[say=cp_guard]I wouldn’t mind cumming down your throat, slut.[/say]")
+		saynn("[say=cp_guard]Я бы не отказался кончить тебе прямо в глотку, шлюшка.[/say]")
 
-		saynn("You chuckle softly and push him towards the peak faster, both your hands slide along the twitching length, his panting and a big knot shows that he is close.")
+		saynn("Ты тихо посмеиваешься и подгоняешь его к пику, обе руки скользят по подергивающемуся члену. Его тяжелое дыхание и раздувающийся узел говорят о том, что он уже на пределе.")
 
-		addButton("Outside", "Do the required minimum and avoid getting any mess on you", "outside")
-		addButton("Facial", "Let him cum on your face", "facial")
-		addButtonWithChecks("Mouth", "Why should you waste all that jizz, open your mouth and catch it", "mouth", [], [ButtonChecks.NotOralBlocked])
+		addButton("Снаружи", "Сделай необходимый минимум и постарайся не испачкаться", "outside")
+		addButton("Фейшал", "Дай ему кончить тебе на лицо", "facial")
+		addButtonWithChecks("Рот", "Зачем тебе тратить столько спермы? Открой рот и поймай её.", "mouth", [], [ButtonChecks.NotOralBlocked])
 		
 	if(state == "outside"):
 		playAnimation(StageScene.SexHandjob, "tease", {
@@ -155,18 +155,18 @@ func _run():
 			npcBodyState={},
 		})
 		
-		saynn("His cock throbs more, the knot is so fat you can’t wrap your digits around it. Only a few seconds pass before the guy starts grunting while his cock shoots spurts of cum, one after another. You sit slightly to the side and avoid all of the mess, watching the guy paint the opposite wall with thick jizz.")
+		saynn("Его член пульсирует всё сильнее, узел такой толстый, что пальцами его не обхватить. Проходит всего пара секунд, и парень начинает хрипеть, пока его член извергает струи кончи, одну за другой. Ты сидишь чуть в стороне, стараясь не испачкаться, и наблюдаешь, как он размазывает густую сперму по противоположной стене.")
 
-		saynn("[say=cp_guard]Nghr, fuck.. I should make you use that tongue to clean it.[/say]")
+		saynn("[say=cp_guard]Нгх, блядь... Надо было заставить тебя вылизать всё этим языком.[/say]")
 
-		saynn("You chuckle and sneakily clean your fingers using his pants. His cock slowly deflates and he hides it away.")
+		saynn("Ты посмеиваешься и украдкой вытираешь пальцы о его штаны. Его член медленно опадает, и он прячет его обратно.")
 
-		saynn("[say=cp_guard]Fine, I won’t frisk you today anymore, you’re free to pass.[/say]")
+		saynn("[say=cp_guard]Ладно, сегодня больше обыскивать тебя не буду, проходи свободно.[/say]")
 
 		# (scene ends)
 
 		
-		addButton("Continue", "That went well", "allowFullAndendthescene")
+		addButton("Продолжить", "Всё прошло успешно", "allowFullAndendthescene")
 	if(state == "facial"):
 		playAnimation(StageScene.SexHandjob, "fast", {
 			npc="pc", pc="cp_guard", 
@@ -174,15 +174,15 @@ func _run():
 			npcBodyState={},
 		})
 		
-		saynn("You close your eyes and put yourself right under that cock, your hands finally manage to push him over the edge. The guy grunts while his animal cock starts shooting hot cum onto your face, many waves of it. You quickly become messy, your hair, face, ears, shoulders, get covered in the sticky stuff. You sit still like a good cum rag and just take it all, your hands not moving but aiming his dick right down at you.")
+		saynn("Ты закрываешь глаза и подставляешься прямо под этот член; твоим рукам наконец удается довести его до края. Парень хрипит, когда его животный член начинает заливать твоё лицо горячей спермой, волна за волной. Ты мгновенно становишься грязной: волосы, лицо, уши, плечи — всё покрывается этой липкой дрянью. Ты сидишь смирно, как послушная тряпка для спермы, и просто принимаешь всё на себя, не двигая руками, лишь направляя его член прямо на себя.")
 
-		saynn("Eventually he comes down from it, his cock slowly goes down and starts to deflate. Though he does take the liberty of wiping its tip against your clothes. You can only freely open one eye and opening the mouth would mean getting a taste of his seed.")
+		saynn("В конце концов его отпускает, член медленно опадает и начинает уменьшаться. Однако он позволяет себе провести кончиком по твоей одежде. Ты можешь лишь приоткрыть один глаз, а если откроешь рот — то наверняка почувствуешь вкус его семени.")
 
-		saynn("[say=cp_guard]That was great, you look like a proper cum slut. You’re free to go, won’t frisk you today anymore, whore.[/say]")
+		saynn("[say=cp_guard]Это было круто, выглядишь как настоящая спермостручка. Свободна, сегодня больше обыскивать тебя не буду, шлюха.[/say]")
 
 		# (scene ends)
 
-		addButton("Continue", "That went well", "allowFullAndendthescene")
+		addButton("Продолжить", "Всё прошло успешно", "allowFullAndendthescene")
 	if(state == "mouth"):
 		playAnimation(StageScene.SexOral, "fast", {
 			npc="pc", pc="cp_guard", 
@@ -190,53 +190,53 @@ func _run():
 			npcBodyState={},
 		})
 		
-		saynn("You get into the position and open your mouth wide, your tongue is out, the cock that you are stroking is resting on it. Your hands swiftly work that cock while you gaze up at the guard with your eyes, hungry for cum. Eventually he starts grunting and jerking his hips back and forth, his cock exploding with wave after wave of hot semen, most of which hits directly the back of your throat with some landing on the tongue. You do it like a proper slut, giving the guy a show while also not letting a single drop of his cum go to waste, you quickly swallow and let him stuff your mouth more, your hands milking his shaft and draining his balls until there is nothing left.")
+		saynn("Ты принимаешь нужную позу и широко открываешь рот, высунув язык; член, который ты ласкаешь, покоится на нем. Твои руки быстро работают над ним, пока ты жадно смотришь на охранника, предвкушая сперму. В конце концов он начинает кряхтеть и дергать бедрами вперед-назад, и его член взрывается волна за волной горячей семенной жидкости; большая часть попадает прямо тебе в глотку, а часть — на язык. Ты делаешь это как настоящая шлюха: устраиваешь парню шоу и при этом не даешь пропасть ни единой капле его спермы — ты быстро глотаешь и позволяешь ему набивать тебе рот еще и еще, пока твои руки доят его ствол и выжимают последние соки из яичек, пока там не остается совсем ничего.")
 
-		saynn("Eventually his bliss state ends, you pull back and show him your mouth full of cum. Then you close it and raise your chin high, showing him the exact moment when you swallow that sticky mess completely. You then lick and suck on your every finger and swallow that too before showing the guard your empty mouth.")
+		saynn("Наконец его экстаз проходит, ты отстраняешься и показываешь ему свой рот, полный спермы. Затем ты закрываешь рот и высоко задираешь подбородок, демонстрируя ему тот самый момент, когда ты полностью проглатываешь эту липкую жижу. После этого ты слизываешь и посасываешь каждый свой палец, тоже всё проглатывая, прежде чем показать охраннику свой пустой рот.")
 
-		saynn("[say=cp_guard]Oh f-fuck, that was something else, you’re such a good whore. You’re free to pass for today but I wouldn’t mind using you more.[/say]")
+		saynn("[say=cp_guard]Ох, блядь, это было нечто, ты такая хорошая шлюшка. На сегодня ты свободна, но я бы не отказался использовать тебя почаще.[/say]")
 
 		# (scene ends)
-		addButton("Continue", "That went well", "allowFullAndendthescene")
+		addButton("Продолжить", "Всё прошло успешно", "allowFullAndendthescene")
 
 		
 	if(state == "intimidate"):
-		saynn("[say=pc]How about you let me through peacefully.[/say]")
+		saynn("[say=pc]Как насчет того, чтобы пропустить меня спокойно?[/say]")
 
-		saynn("The guard straightens his posture and grabs his weapon.")
+		saynn("Охранник выпрямляется и хватает свое оружие.")
 
 		# (if red)
 		if(GM.pc.getInmateType() == InmateType.HighSec):
-			saynn("[say=cp_guard]Don’t think so, red. I’m not afraid of you.[/say]")
+			saynn("[say=cp_guard]Не думаю, рыжий. Я тебя не боюсь.[/say]")
 
 		# (if general)
 		if(GM.pc.getInmateType() == InmateType.General):
-			saynn("[say=cp_guard]Disobeying inmate, huh. Time to teach you a lesson.[/say]")
+			saynn("[say=cp_guard]Непослушная заключенная, значит? Пора преподать тебе урок.[/say]")
 
 		# (if pink)
 		if(GM.pc.getInmateType() == InmateType.SexDeviant):
-			saynn("[say=cp_guard]This slut has teeth? I will have so much fun with you.[/say]")
+			saynn("[say=cp_guard]У этой шлюхи есть зубки? С тобой будет очень весело.[/say]")
 
-		saynn("Seems like it’s a fight.")
+		saynn("Похоже, назревает драка.")
 		
-		addButton("Fight", "Start the fight", "fight")
+		addButton("Драться", "Начать бой", "fight")
 
 	if(state == "lost_fight"):
-		saynn("[say=cp_guard]You better start behaving now, inmate.[/say]")
+		saynn("[say=cp_guard]Тебе лучше начать вести себя прилично, зэк.[/say]")
 
-		saynn("He pins you to the ground, you can’t really resist much.")
+		saynn("Он прижимает тебя к земле, и ты почти не можешь сопротивляться.")
 
 		# (scene ends)
-		addButton("Continue", "Oh well", "leaveandendthescene")
+		addButton("Продолжить", "Ну и ладно", "leaveandendthescene")
 
 	if(state == "won_fight"):
-		saynn("The defeated guard sits on the floor, unable to continue fighting.")
+		saynn("Побежденный охранник сидит на полу, не в силах продолжать бой.")
 
-		saynn("[say=cp_guard]You got lucky today, inmate. But don’t think other guards won’t stop you.[/say]")
+		saynn("[say=cp_guard]Сегодня тебе повезло, зэк. Но не думай, что другие охранники тебя не остановят.[/say]")
 
 		# (if pink)
 		if(GM.pc.getInmateType() == InmateType.SexDeviant):
-			saynn("[say=cp_guard]Defeated by some sextoy, fuck me.[/say]")
+			saynn("[say=cp_guard]Поражен секс-игрушкой, блять...[/say]")
 		
 		addWonButton()
 		
@@ -247,98 +247,98 @@ func _run():
 			npcBodyState={exposedCrotch=true,hard=true},
 		})
 		
-		saynn("You straddle the guy and unzip his pants, he seems more intrigued than scared, watching you. You of course made sure he can’t reach his weapons or the shock remote, rendering him helpless.")
+		saynn("Ты садишься верхом на парня и расстегиваешь его ширинку; кажется, он скорее заинтригован, чем напуган, и внимательно наблюдает за тобой. Разумеется, ты позаботилась о том, чтобы он не мог дотянуться ни до оружия, ни до пульта шокера, оставив его совершенно беспомощным.")
 
-		saynn("[say=cp_guard]You could have asked, you know.[/say]")
+		saynn("[say=cp_guard]Вообще-то, можно было и спросить.[/say]")
 
-		saynn("[say=pc]I like getting things the hard way.[/say]")
+		saynn("[say=pc]Мне нравится получать всё трудным путем.[/say]")
 
-		saynn("[say=cp_guard]Oh yeah? I like the sound of that.[/say]")
+		saynn("[say=cp_guard]Да неужели? Мне это нравится.[/say]")
 
-		saynn("Your hand pulls out his cock and keeps stroking it until he becomes hard. His member has a pointy canine shape with a fat knot at the end and is pretty long, about {cp_guard.penisSizeStr}. The guy smirks and tries to get a hold of your {pc.breasts} but you smack his hand away.")
+		saynn("Твоя рука вытягивает его член и продолжает ласкать его, пока он не встает колом. Его хозяйство имеет заостренную форму, похожую на клык, с жирным узлом на конце и довольно длинное, около {cp_guard.penisSizeStr}. Парень ухмыляется и пытается схватить тебя за {pc.breasts}, но ты отбиваешь его руку.")
 
 		# (if canUndress)
 		if(GM.pc.canUndress()):
-			saynn("You then {pc.undressMessage}. You leave your clothes nearby.")
+			saynn("Затем ты {pc.undressMessage}. Одежду ты оставляешь неподалеку.")
 
-		saynn("You catch some of his precum with a few digits, then move them to your butt and rub it into your backdoor. Then you grab his cock and guide it towards your rear while slowly lowering yourself onto him. His cock slowly starts to prod and stretch your ring open. A few more attempts and you manage to do it, the tip of his cock is inside you.")
+		saynn("Ты собираешь немного его предэякулята пальцами, затем подносишь их к заднице и втираешь его в анус. Затем ты берешь его член и направляешь его к своему отверстию, медленно опускаясь на него. Его член начинает медленно прощупывать и растягивать твое кольцо. После нескольких попыток тебе это удается — кончик его члена оказывается внутри тебя.")
 
 		# (if has cock)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("Your own {pc.cock} tries to get hard too without you even touching it but your chastity cage prevents a full blown erection. A lonely drop of pre can be seen shining on on the tip of the cage.")
+			saynn("Твой собственный {pc.cock} тоже пытается встать, хотя ты его даже не трогаешь, но клетка целомудрия мешает полноценной эрекции. На кончике клетки видна одинокая блестящая капля предэякулята.")
 		elif(GM.pc.hasPenis()):
-			saynn("Your own {pc.cock} gets hard too without you even touching it, a lonely drop of pre can be seen shining on its end.")
+			saynn("Твой собственный {pc.cock} тоже твердеет без твоего прикосновения, на самом кончике видна одинокая блестящая капля предэякулята.")
 
 		# (if has vagina)
 		if(GM.pc.hasVagina()):
-			saynn("Your slit doesn’t get any attention but it becomes wet just from you feeling so aroused.")
+			saynn("Твоя щель пока остается без внимания, но она становится влажной просто от того, насколько сильно ты возбуждена.")
 
-		saynn("[say=cp_guard]Don’t stop now, slut.[/say]")
+		saynn("[say=cp_guard]Не останавливайся сейчас, сучка![/say]")
 
-		saynn("He puts his hands on your {pc.feminine} hips and pushes you down, helping his cock to slide deeper into you. You let out a cute noise and bite your lips as your ring gets stretched enough to fit about half of his length.")
+		saynn("Он кладет руки на твои {pc.feminine} бедра и прижимает тебя ниже, помогая своему члену скользнуть глубже в тебя. Ты издаешь милый звук и закусываешь губы, когда твое кольцо растягивается достаточно, чтобы пропустить около половины его длины.")
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
-			saynn("You can feel how it rubs against something very sensitive inside you, any motion causes your cock to leak with some transparent fluid.")
+			saynn("Ты чувствуешь, как он трется о что-то очень чувствительное внутри тебя; от любого движения твой член начинает подтекать прозрачной жидкостью.")
 
 		# (if has vagina)
 		if(GM.pc.hasVagina()):
-			saynn("The cock is so filling that you feel it pushing on your g-spot through the wall that divides your pussy and anus.")
+			saynn("Член настолько наполняет тебя, что ты чувствуешь, как он давит на твою точку G через стенку, разделяющую влагалище и анус.")
 
-		saynn("You don’t stop, you slowly start riding him, moving your {pc.thick} {pc.feminine} body up down his cock, each time trying to stretch yourself out more, his precum works as a lube and makes riding the guard easier. It feels very pleasurable, you open your mouth and start moaning, your hands land on your chest and start playing with your sensitive nips.")
+		saynn("Ты не останавливаешься, а медленно начинаешь садиться на него, двигая своим {pc.thick} {pc.feminine} телом вверх-вниз по его члену, каждый раз стараясь растянуться еще сильнее; его предэякулят служит смазкой и облегчает процесс. Это приносит невероятное удовольствие, ты приоткрываешь рот и начинаешь стонать, а твои руки ложатся на грудь и начинают ласкать чувствительные соски.")
 
 		# (if has cock)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("Your own caged up {pc.cockDesc} cock bobs up and down, your little prostate is being massaged so much, you can’t stop leaking.")
+			saynn("Твой собственный запертый в клетку {pc.cockDesc} член ходит вверх-вниз, твою маленькую простату так сильно массирует, что ты не можешь перестать течь.")
 		elif(GM.pc.hasPenis()):
-			saynn("Your own {pc.cockDesc} cock bobs up and down, your little prostate is being massaged so much, you can’t stop leaking.")
+			saynn("Твой собственный {pc.cockDesc} член ходит вверх-вниз, твою маленькую простату так сильно массирует, что ты не можешь перестать течь.")
 
 		# (if has vagina)
 		if(GM.pc.hasVagina()):
-			saynn("Your pussy drips with female juices, it’s not being directly stimulated but it feels so good anyways.")
+			saynn("Твоя киска сочит женскими соками; хоть её и не стимулируют напрямую, ощущения всё равно чертовски приятные.")
 
-		saynn("You push yourself further, getting almost his full size! Your ring got stretched enough and all the precum that he has been pumping into you allows you to start bouncing on his cock faster. You drool and pant, your digits pinch your sensitive nips while you ride him completely hands-free, it feels so great. The guy pants too, his hands pull you up and down, making your motions stronger.")
+		saynn("Ты насаживаешься еще глубже, принимая почти всю его длину! Твое кольцо достаточно растянулось, а вся та смазка, которую он в тебя вкачивает, позволяет тебе начать скакать на его члене быстрее. Ты пускаешь слюни и тяжело дышишь, твои пальцы сжимают чувствительные соски, пока ты скачешь на нем, совершенно не заняв руки — это охренительно. Парень тоже тяжело дышит, его руки тянут тебя вверх и вниз, делая твои движения более мощными.")
 
-		saynn("[say=pc]Fuck me, you’re a good fill.[/say]")
+		saynn("[say=pc]Твою мать, как же хорошо ты меня наполняешь![/say]")
 
-		saynn("[say=cp_guard]And you’re not getting off without me stuffing you.[/say]")
+		saynn("[say=cp_guard]И ты не кончишь, пока я тебя не набью до краев![/say]")
 
 		# (if has cock)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("Your {pc.cockSize} toy throbs and becomes rock-hard, putting a serious amount of pressure on your cage. The guard’s cock has been pounding on your prostate so much that you feel like you’re about to go over the edge at any moment.")
+			saynn("Твоя {pc.cockSize} игрушка пульсирует и становится твердой как камень, оказывая сильное давление на твою клетку. Член охранника так сильно долбит в твою простату, что кажется, будто ты вот-вот сорвешься в оргазм в любую секунду.")
 		elif(GM.pc.hasPenis()):
-			saynn("Your {pc.cockSize} toy throbs and becomes rock-hard, the guard’s cock has been pounding on your prostate so much that you feel like you’re about to go over the edge at any moment.")
+			saynn("Твоя {pc.cockSize} игрушка пульсирует и становится каменной; охранник так неистово долбит тебя в простату, что кажется, будто ты вот-вот сорвешься в оргазм в любую секунду.")
 
-		saynn("You’re close. And so is he. You feel his canine member becoming bigger inside your rectum, his knot inflates with blood and stretches you out even more but doesn’t quite fit. Your moans and pants don’t stop coming out, you press your hands into the guard’s chest and start bringing yourself down onto his cock with extra strength, your anal ring letting more and more of his knot in each time. With one last push you manage to finally squeeze it in, the full size of his fat orb slides inside you, locking you two together. That is what pushes you both over the edge, the guy grunts as his cock starts shooting hot sticky cum inside you, stuffing you. You moan and shiver, your legs shake, your hands hold tightly onto him.")
+		saynn("Ты уже близко. И он тоже. Ты чувствуешь, как его звериный член раздувается внутри твоей кишки; его узел наполняется кровью и растягивает тебя еще сильнее, но всё еще не влезает целиком. Твои стоны и тяжелое дыхание не прекращаются; ты упираешься руками в грудь охранника и начинаешь с удвоенной силой насаживаться на его член, при каждом движении позволяя анальному кольцу пропускать всё больше и больше его узла. Одним последним мощным толчком тебе удается наконец втиснуть его — вся эта жирная шишка проскальзывает внутрь, намертво сцепляя вас двоих. Именно это заставляет вас обоих сорваться: парень хрипит, когда его член начинает извергать горячую липкую сперму прямо в тебя, заполняя тебя до краев. Ты стонешь и дрожишь, твои ноги подкашиваются, а руки мертвой хваткой вцепляются в него.")
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
-			saynn("Your little p-spot is smashed, the pressure is enough to make your {pc.cockDesc} cock pulsate and shoot cum too. Not as much but it’s almost a constant stream. You’re riding your own hands-free orgasm and it feels great.")
+			saynn("Твою маленькую точку P буквально разминают, давления достаточно, чтобы твой {pc.cockDesc} член тоже запульсировал и начал извергать сперму. Не так много, но это почти непрерывный поток. Ты ловишь волну собственного оргазма без помощи рук, и это чертовски приятно.")
 
 		# (if has vagina)
 		if(GM.pc.hasVagina()):
-			saynn("Your g-spot was rubbed so much through the flesh wall that your pussy starts squirting from over-stimulation. Wow, you managed to get a vaginal orgasm from anal.")
+			saynn("Твою точку G так сильно терли через стенку кишки, что из-за гиперстимуляции у тебя начинается вагинальный сквирт. Ого, тебе удалось получить вагинальный оргазм через анал.")
 
-		saynn("You both pant heavily as you come down from your peaks. You look down at your belly and see a bulge on your belly. You try to stand up but realize that you can’t.")
+		saynn("Вы оба тяжело дышите, приходя в себя после пика удовольствия. Ты смотришь вниз на свой живот и видишь на нем отчетливый бугорок. Ты пытаешься встать, но понимаешь, что не можешь.")
 
-		saynn("[say=cp_guard]Wow, you’re such a buttslut. And now you’re stuck on my cock. Works better than any handcuffs.[/say]")
+		saynn("[say=cp_guard]Ох, ну ты и жопошлёпка. И теперь ты насажена на мой член. Работает получше любых наручников.[/say]")
 
-		saynn("[say=pc]Oh yeah? I can keep going until you give up then.[/say]")
+		saynn("[say=pc]Да неужели? Ну тогда я буду трахать тебя до тех пор, пока ты не сдашься.[/say]")
 
-		saynn("[say=cp_guard]You lucky slut.[/say]")
+		saynn("[say=cp_guard]Везучая ты шлюшка.[/say]")
 
-		saynn("You’re stuck together for about 30 minutes. In public. You do get many eyes from other inmates but for them it's almost a normal sight. Eventually the knot deflates enough to let you get up, your used butthole looks stretched and is leaking cum. Time to run before someone makes you clean the mess you made.")
+		saynn("Вы застряли друг в друге примерно на 30 минут. На виду у всех. На вас пялятся другие заключенные, но для них это почти обычное зрелище. В конце концов узел спадает, позволяя вам подняться; твой использованный анус выглядит растянутым и сочит сперму. Пора сваливать, пока кто-нибудь не заставил тебя вылизывать то, что ты наделала.")
 		
-		addButton("Walk away", "Yay", "allowFullAndendthescene")
+		addButton("Уйти", "Ура", "allowFullAndendthescene")
 
 func addWonButton():
-	addButton("Walk away", "You got your pass, you can just go", "allowFullAndendthescene")
-	addButtonWithChecks("Catch anal", "Use the guy’s dick for your pleasure", "catch_anal", [], [ButtonChecks.NotHandsBlocked])
-	addButtonWithChecks("Sex!", "Time to fuck them!", "startsexasdom", [], [ButtonChecks.CanStartSex])
-	addButton("Submit to", "Let them have it their way with you", "startsexsubby")
-	addButton("Inventory", "Look at your inventory", "openinventory")
+	addButton("Уйти", "Ты получила пропуск, можешь просто идти", "allowFullAndendthescene")
+	addButtonWithChecks("Принять в анус", "Использовать член парня для своего удовольствия", "catch_anal", [], [ButtonChecks.NotHandsBlocked])
+	addButtonWithChecks("Секс!", "Пора их оттрахать!", "startsexasdom", [], [ButtonChecks.CanStartSex])
+	addButton("Подчиниться", "Позволить им делать с тобой всё, что захотят", "startsexsubby")
+	addButton("Инвентарь", "Посмотреть инвентарь", "openinventory")
 	if(GM.pc.getInventory().hasRemovableRestraints()):
-		addButton("Struggle", "Struggle out of your restraints", "strugglemenu")
+		addButton("Сопротивление", "Вырваться из оков", "strugglemenu")
 
 func _react(_action: String, _args):
 	if(_action == "get_frisked"):

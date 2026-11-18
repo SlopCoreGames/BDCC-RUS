@@ -10,16 +10,16 @@ func run(_triggerID, _args):
 	if(!getFlag("ArticaModule.corruptionBegan", false)):
 		return
 	if(getFlag("ArticaModule.lastQuestStarted") && !getFlag("ArticaModule.LQArticaGotDreamCatcher") && !getFlag("ArticaModule.LQArticaGotBrainwashed")):
-		addDisabledButton("Artica", "Artica is in her cell")
+		addDisabledButton("Артика", "Артика в своей камере")
 		return
 	
 	if(checkCharacterBusy("ArticaBusy", "Seems like the fluff is not here", "Artica")):
 		return
 	
 	if(GM.main.getDays() < getFlag("ArticaModule.busyUntilDay", -1)):
-		saynn("Seems like the fluff is not here")
+		saynn("Похоже, пушистика здесь нет")
 		
-		addDisabledButton("Artica", "She is not here today")
+		addDisabledButton("Артика", "Сегодня её здесь нет")
 		return
 	
 	addButtonUnlessLate("Artica", "Talk with the herm fluff", "talk")

@@ -8,7 +8,7 @@ func registerTriggers(es):
 
 func run(_triggerID, _args):
 	if(getModule("ElizaModule") != null && getModule("ElizaModule").canStartDrugDenRun()):
-		addButton("Drug Den", "Begin your adventure", "start")
+		addButton("Притон", "Начни свое приключение", "start")
 	
 func getPriority():
 	return 0

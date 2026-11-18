@@ -4,7 +4,7 @@ func _init():
 	id = "ArticaLastQuest"
 
 func getVisibleName():
-	return "Catching Dreams"
+	return "Ловля снов"
 
 func getProgress():
 	var result = []

@@ -9,7 +9,7 @@ func registerTriggers(es):
 	es.addTrigger(self, Trigger.EnteringRoom, "fight_wall_east")
 
 func run(_triggerID, _args):
-	saynn("This seems like a spot where all the sluts hang out..")
+	saynn("Похоже, это место, где тусуются все шлюхи..")
 	addButtonUnlessLate("Prostitution", "Try to offer your body and earn some credits..", "start")
 
 func getPriority():

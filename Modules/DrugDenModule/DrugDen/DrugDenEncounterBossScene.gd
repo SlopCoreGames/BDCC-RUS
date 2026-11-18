@@ -18,13 +18,13 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
 		
-		saynn("You push deeper into the tunnels, the air thick with the stench of sweat, chemicals, and something rancid. You have stumbled upon one of the drug labs.")
+		saynn("Ты пробираешься всё глубже в туннели, где воздух пропитан вонью пота, химикатов и чем-то тухлым. Похоже, ты наткнулся на одну из нарколабораторий.")
 		
-		saynn("And you're not alone..")
+		saynn("И ты здесь не один...")
 		
-		saynn("A filthy, twitching mess of a junkie stands between you and the lab, {npc.his} pupils blown wide. {npc.His} whole body is jittering like {npc.he} {npc.isAre} barely holding it together.")
+		saynn("Грязное, дергающееся месиво из торчка преграждает путь к лаборатории, {npc.his} его зрачки расширены до предела. {npc.His} всё его тело колотит, будто {npc.he} {npc.isAre} едва держится в сознании.")
 		
-		saynn("Around {npc.him}, the floor is littered with half-conscious bodies of other junkies, moaning and lost in their own highs.")
+		saynn("Вокруг {npc.him} пол усеян полубессознательными телами других торчков, которые стонут, улетев в свои кайфы.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"You lost, dipshit? This is MY fucking lab. Crawl back to whatever pisshole you came from.",
@@ -36,31 +36,31 @@ func _run():
 			"YOU WANT TO STEAL MY HIT FROM ME? YOU FUCKER, NO ONE STEALS MY HIT FROM ME!",
 		])+"[/say]")
 		
-		saynn("Looks like you will have to fight {npc.him}..")
+		saynn("Похоже, придется сразиться с {npc.him}...")
 		
-		addButton("Fight", "Start the fight", "startFight")
+		addButton("Драться", "Начать бой", "startFight")
 	
 	if(state == "wonFight"):			
 		removeCharacter(npcID)
 		playAnimation(StageScene.Solo, "stand")
 		
-		saynn("You won. With the junkies boss defeated, the lab is yours to inspect.")
+		saynn("Ты победил. Босс-торчок повержен, и теперь лаборатория в твоем распоряжении.")
 		
-		saynn("You step over the mess of shattered glass and spilled fluids, eyeing the setup. The place is filthy as fuck.. greasy counters, rusted burners, and beakers filled with ominous, bubbling sludge. Despite how shitty it all looks, there’s some real chemistry going on here.")
+		saynn("Ты перешагиваешь через груду битого стекла и разлитых жидкостей, разглядывая оборудование. Место — просто пиздец какой грязное: засаленные столы, ржавые горелки и колбы, наполненные зловещей бурлящей жижей. Несмотря на весь этот дерьмовый вид, здесь явно идет серьезная химическая работа.")
 		
-		saynn("There is a few options available to you. You could take a closer look at this setup and try to understand how these junkies manage to cook up their drugs with such limited resources. Might be useful for upgrading your own lab.")
+		saynn("У тебя есть несколько вариантов. Ты можешь получше изучить это место и попытаться понять, как этим торчкам удается варить дурь при таком скудном оснащении. Это может пригодиться для апгрейда твоей собственной лаборатории.")
 		
-		saynn("Or maybe you could use the equipment yourself. There is already something brewing in here.. and also some notes that you can follow.. so why not finish the job? This will probably result in one of those strange pills..")
+		saynn("Или, может, стоит самому воспользоваться оборудованием? Тут уже что-то варится... к тому же есть записи, которыми можно воспользоваться... так почему бы не закончить начатое? Скорее всего, получится одна из тех странных таблеток...")
 		
-		saynn("Alternatively, you can play it safe and just create some painkillers or anaphrodisiacs.")
+		saynn("Как вариант, можно не рисковать и просто наварить обезболивающих или анафродизиаков.")
 		
-		saynn("You can always just smash this lab into pieces and be done with it.")
+		saynn("Можно просто разнести эту лабораторию в щепки и покончить с этим.")
 		
-		addButton("Make strange pill", "Use this lab setup to create a strange pill. This one is guaranteed to be one of the ones that you haven't discovered yet (unless you have discovered them all already).", "make_strange_pill")
-		addButton("Science points", "Closely examine the lab setup to understand how it functions. This will give you some science points.", "do_science")
-		addButton("Painkillers", "Use the lab to create 1 painkillers pill", "make_painkillers")
-		addButton("Anaphrodisiac", "Use the lab to create 2 anaphrodisiac pills", "make_anaphrodisiac")
-		addButton("Just destroy", "Just destroy the lab and move on", "just_destroy_lab")
+		addButton("Сварить странную таблетку", "Использовать лабораторную установку, чтобы создать странную таблетку. Гарантировано получится одна из тех, что вы еще не открыли (если только вы не открыли их все).", "make_strange_pill")
+		addButton("Очки науки", "Внимательно изучить лабораторную установку, чтобы понять принцип её работы. Это даст вам немного очков науки.", "do_science")
+		addButton("Обезболивающее", "Использовать лабораторию, чтобы создать 1 таблетку обезболивающего", "make_painkillers")
+		addButton("Анафродизиак", "Использовать лабораторию, чтобы создать 2 таблетки анафродизиака", "make_anaphrodisiac")
+		addButton("Просто уничтожить", "Просто разнести лабораторию и идти дальше", "just_destroy_lab")
 	
 		if(getFlag("DrugDenModule.Kidlat2Hap", false) && !getFlag("DrugDenModule.Kidlat3Hap", false)):
 			var drugDen:DrugDen = GM.main.DrugDenRun
@@ -72,36 +72,36 @@ func _run():
 					
 					addMessage("One of the half-conscious junkies mentions that Kidlat's uniform might somewhere on Drug Den level "+str(drugDen.getFlag("kidlatUniformFloor", 0)))
 				if(uniformLevel == drugDen.level):
-					saynn("[b]You notice someone's uniform here.[/b]")
+					saynn("[b]Вы замечаете здесь чью-то униформу.[/b]")
 					
-					addButton("Uniform", "This looks like Kidlat's uniform!", "take_kidlat_uniform")
+					addButton("Униформа", "Похоже, это форма Кидлата!", "take_kidlat_uniform")
 	
 	if(state == "make_strange_pill"):
-		saynn("You haphazardly mix questionable fluids, guided by the provided notes, your gut instinct and a bit of luck. The result is a strange, weird pill. Who knows what it will do, even its color is unsettling. You pocket it, hoping it won’t kill you later. Time to move on.")
+		saynn("Ориентируясь на записи, интуицию и капельку везения, вы наспех смешиваете сомнительные жидкости. Результат — странная, причудливая таблетка. Кто знает, что она сделает, даже её цвет внушает тревогу. Вы убираете её в карман, надеясь, что она не прикончит вас позже. Пора двигаться дальше.")
 		
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 	
 	if(state == "do_science"):
-		saynn("You take your time analyzing the junkies’ setup.. crude, filthy, but surprisingly effective. There’s something to learn from their recklessness. You note a few interesting things before stepping away, satisfied. No reason to linger.")
+		saynn("Вы не спеша изучаете оборудование торчков... грубое, грязное, но на удивление эффективное. В их безрассудстве есть чему поучиться. Заметив несколько интересных деталей, вы с удовлетворением отходите в сторону. Нет смысла задерживаться.")
 		
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 	
 	if(state == "make_painkillers"):
-		saynn("You sift through the chemicals, carefully isolating what you need. A few shaky minutes later, you’ve managed to synthesize a single, reliable painkiller pill. It’s not much, but it could save your ass later. You move on, ready for whatever’s next.")
+		saynn("Вы перебираете химикаты, осторожно отбирая нужное. Спустя несколько минут дрожащих рук вам удается синтезировать одну надежную обезболивающую таблетку. Немного, но это может спасти вашу задницу позже. Вы идете дальше, готовые ко всему, что ждет впереди.")
 		
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 	
 	if(state == "make_anaphrodisiac"):
-		saynn("You scrape together the right compounds, distilling them into two bitter-looking pills. Good enough to dull the heat if things get.. overwhelming. You stash them away, kick a loose vial aside, and continue your exploration.")
+		saynn("Вы наскребаете нужные соединения, дистиллируя их в две горькие на вид таблетки. Сойдет, чтобы притупить жар, если всё станет... чересчур. Вы прячете их, отпихиваете ногой пустую колбу и продолжаете исследование.")
 		
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 	
 	if(state == "just_destroy_lab"):
 		playAnimation(StageScene.Solo, "shove")
 		
-		saynn("Enough of this filth. You sweep your arm across the counter, shattering glass and sending half-mixed sludge splattering across the walls. A few well-placed stomps wreck the burners. Satisfied, you turn away, leaving only ruins behind as you push forward.")
+		saynn("Хватит этой грязи. Вы проводите рукой по столу, разбивая стекло и разбрызгивая полусмешанную жижу по стенам. Несколько точных ударов ногами — и горелки разнесены в щепки. Довольный собой, вы отворачиваетесь, оставляя после себя лишь руины, и толкаетесь вперед.")
 		
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 		
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

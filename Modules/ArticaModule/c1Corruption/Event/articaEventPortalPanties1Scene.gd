@@ -24,230 +24,230 @@ func _run():
 		nakedAndShy = (isNaked && !isSlut)
 		playAnimation(StageScene.Solo, "walk", {pc="artica"})
 		aimCameraAndSetLocName("hall_mainentrance")
-		saynn("Artica heads towards the main elevator, seemingly just exploring the station.."+str(" She keeps covering her private bits though.. which doesn't help much because she has quite a lot that she needs to cover.." if nakedAndShy else "")+"")
+		saynn("Артика направляется к главному лифту, словно просто осматривает станцию..."+str(" She keeps covering her private bits though.. which doesn't help much because she has quite a lot that she needs to cover.." if nakedAndShy else "")+"")
 
-		saynn("She walks past the checkpoint and steps inside the elevator. It's hard to see which button she presses from far away.. but you notice that she is pressing the lowest one, the one for the floor with all the mine shafts..")
+		saynn("Она проходит мимо контрольно-пропускного пункта и заходит в лифт. Издалека трудно разглядеть, какую кнопку она нажимает... но вы замечаете, что она жмет самую нижнюю — ту, что ведет на этаж со всеми шахтными стволами...")
 
-		addButton("Follow", "See where she goes next", "in_workshop")
+		addButton("Следовать", "Посмотреть, куда она направится дальше", "in_workshop")
 	if(state == "in_workshop"):
 		addCharacter("alexrynard")
 		aimCameraAndSetLocName("mining_nearentrance")
 		playAnimation(StageScene.Duo, "stand", {pc="artica", npc="alexrynard", bodyState={hard=true}})
-		saynn("You take the next elevator when it arrives and pick the same floor.")
+		saynn("Вы садитесь в следующий прибывший лифт и выбираете тот же этаж.")
 
-		saynn("As you step out.. you find the fluff under all the catwalks, where the things like pickaxes are handed out to inmates..")
+		saynn("Когда вы выходите... вы обнаруживаете, что она забилась в щель под техническими мостками, там, где заключенным выдают инструменты вроде кирок...")
 
 		if (isNaked):
-			saynn("[say=alexrynard]Really? You're gonna work like that? I'm not blind, you know.[/say]")
+			saynn("[say=alexrynard]Серьезно? Ты собралась так работать? Я ведь не слепая, знаешь ли.[/say]")
 
 		else:
-			saynn("[say=alexrynard]Really? You're gonna work like that? I'm not blind, you know.[/say]")
+			saynn("[say=alexrynard]Серьезно? Ты собралась так работать? Я ведь не слепая, знаешь ли.[/say]")
 
 		saynn("[say=artica].. ..[/say]")
 
-		saynn("You don't hear Artica from your hidden position, she is talking way too quietly compared to anyone else..")
+		saynn("Из своего укрытия вы почти не слышите Артику — она говорит слишком тихо по сравнению с остальными...")
 
-		saynn("[say=alexrynard]You're really asking that? Can't you see?[/say]")
+		saynn("[say=alexrynard]Ты реально об этом спрашиваешь? Разве не видно?[/say]")
 
-		saynn("Artica looks at herself.. and shrugs.")
+		saynn("Артика оглядывает себя... и пожимает плечами.")
 
-		saynn("[say=alexrynard]I'd rather you not hurt your cock with that pickaxe. Go away.[/say]")
+		saynn("[say=alexrynard]Я бы предпочла, чтобы ты не повредил свой член этой киркой. Ступай отсюда.[/say]")
 
-		saynn("The fluff lowers her head and starts heading away. The engineer sees that and rolls his eyes.")
+		saynn("Пушистая опускает голову и направляется прочь. Инженер замечает это и закатывает глаза.")
 
-		saynn("[say=alexrynard]Wait. Come back, inmate.[/say]")
+		saynn("[say=alexrynard]Погоди. Вернись, заключенная.[/say]")
 
 		saynn("[say=artica]..?[/say]")
 
-		saynn("Artica obediently returns to the foxy.")
+		saynn("Артика послушно возвращается к лису.")
 
-		saynn("[say=alexrynard]Why are you here?[/say]")
+		saynn("[say=alexrynard]Что ты здесь забыла?[/say]")
 
 		saynn("[say=artica].. .. ..[/say]")
 
-		saynn("Engineer scratches his chin, thinking..")
+		saynn("Инженер чешет подбородок, раздумывая...")
 
-		saynn("[say=alexrynard]Wanna be a test subject?[/say]")
+		saynn("[say=alexrynard]Хочешь стать подопытной?[/say]")
 
-		saynn("Artica blinks a lot, her body fidgeting, tail curling around her waist, ears lowering..")
+		saynn("Артика часто моргает, она ерзает всем телом, её хвост обвивается вокруг талии, а уши прижимаются к голове...")
 
-		saynn("[say=alexrynard]So?[/say]")
+		saynn("[say=alexrynard]Ну так что?[/say]")
 
-		saynn("Artica blinks even more. So much so that the engineer decides to throw some kind of small case at her. The girl barely catches it, her whole frame bending from the weight of whatever is inside.")
+		saynn("Артика моргает еще чаще. Настолько, что инженер решает кинуть в неё какой-то небольшой кейс. Девушка едва успевает поймать его, её всё тело прогибается под тяжестью того, что лежит внутри.")
 
-		saynn("[say=alexrynard]I guess that's a yes. Follow me.[/say]")
+		saynn("[say=alexrynard]Думаю, это значит «да». Иди за мной.[/say]")
 
-		saynn("The engineer starts climbing the catwalk.. while Artica is barely able to keep up, panting softly while carrying the heavy case.")
+		saynn("Инженер начинает подниматься по техническому мостику... в то время как Артика едва поспевает за ним, тихонько пыхтя и таща тяжелый кейс.")
 
-		saynn("Interesting..")
+		saynn("Интересно...")
 
-		addButton("Follow", "See what happens next", "in_workshop_actually")
+		addButton("Следовать", "Смотреть, что будет дальше", "in_workshop_actually")
 	if(state == "in_workshop_actually"):
 		playAnimation(StageScene.Duo, "sit", {pc="artica", npc="alexrynard", bodyState={hard=true}})
 		aimCameraAndSetLocName("eng_workshop")
-		saynn("They head towards the workshop area. The place with a bunch of work tables, arts and crafts kind of deal.. but without the arts.. and where crafts can only be done under strict supervision..")
+		saynn("Они направляются к мастерской. Это место заставлено верстаками, что-то вроде творческой студии... но без творчества... и где «творчество» разрешено только под строжайшим присмотром...")
 
-		saynn("The engineer points at the table and Artica drops the case there, panting just as much.")
+		saynn("Инженер указывает на стол, и Артика с тем же тяжелым дыханием ставит на него кейс.")
 
-		saynn("[say=alexrynard]Now sit.[/say]")
+		saynn("[say=alexrynard]А теперь садись.[/say]")
 
-		saynn("She nods and takes a seat while the engineer opens the case.. revealing.. something..")
+		saynn("Она кивает и садится, пока инженер открывает кейс... обнаруживая... нечто...")
 
-		saynn("You're pretty sure it's electronics of some kind. You can see components.. and wires.. but it's clearly the case of functionality over.. anything else really.")
+		saynn("Вы почти уверены, что это какая-то электроника. Видны компоненты... и провода... но очевидно, что здесь функциональность стоит выше... всего остального.")
 
-		saynn("[say=alexrynard]I'm gathering data for my project. The more people test it, the faster it will work for other people.[/say]")
+		saynn("[say=alexrynard]Я собираю данные для своего проекта. Чем больше людей его протестирует, тем быстрее он станет полезен для остальных.[/say]")
 
-		saynn("Artica tilts her head while watching the foxy quickly assemble something, using some kind safety goggles as a base and attaching things to them.")
+		saynn("Артика склоняет голову набок, наблюдая, как лисичка быстро что-то собирает, используя защитные очки в качестве основы и прикрепляя к ним различные детали.")
 
-		saynn("[say=alexrynard]Entropy is important when you're dealing with complicated blackboxes such as brains. Yeah, it's possible to make a digital model of one.. but you need at least a hundred other brains to understand the complexity.. how it works..[/say]")
+		saynn("[say=alexrynard]Энтропия — важная штука, когда имеешь дело с такими сложными «черными ящиками», как мозг. Да, можно создать его цифровую модель... но тебе понадобится еще как минимум сотня мозгов, чтобы осознать всю эту сложность... то, как он работает...[/say]")
 
-		saynn("He looks at the girl.. while she just blushes.")
+		saynn("Он смотрит на девушку... а она лишь заливается румянцем.")
 
-		saynn("[say=alexrynard]Understand what I mean? We can not possibly understand what every neuron of our brain does. But every neuron in our brain does something. And so just remembering that info for each neuron would require.. at least a bigger brain. Machines though.. they kinda can..[/say]")
+		saynn("[say=alexrynard]Понимаешь, о чем я? Мы просто не в состоянии осознать, что делает каждый отдельный нейрон. Но каждый нейрон в нашем мозгу что-то делает. И если пытаться запомнить информацию о каждом из них, то для этого потребуется... как минимум мозг побольше. А вот машины... они вроде как справляются...[/say]")
 
-		saynn("It feels like the engineer can just go on and on forever..")
+		saynn("Кажется, инженер может рассуждать об этом бесконечно...")
 
-		saynn("[say=alexrynard]I don't know what the future holds for us. It feels like machines will play a huge part in it.. no matter what some people think.[/say]")
+		saynn("[say=alexrynard]Не знаю, что нас ждет в будущем. Чувствую, машины сыграют в нем огромную роль... что бы там ни думали некоторые люди.[/say]")
 
-		saynn("Artica bleps. While the engineer seems to be done with his prototype..")
+		saynn("Артика облизывается. Тем временем инженер, кажется, закончил работу над своим прототипом...")
 
-		saynn("[say=alexrynard]I also don't know why I'm explaining all of that.. Just put it on already.[/say]")
+		saynn("[say=alexrynard]И сама не знаю, зачем всё это объясняю... Просто надень это уже.[/say]")
 
-		saynn("He presents Artica.. a fancy visor.. with wires sticking out everywhere..")
+		saynn("Он протягивает Артике... шикарный визор... из которого во все стороны торчат провода...")
 
-		saynn("[say=alexrynard]What? Changed your mind? I won't judge if you want to go hit rocks with a pickaxe.[/say]")
+		saynn("[say=alexrynard]Что? Передумала? Я не стану осуждать, если ты захочешь просто пойти поколоть камни киркой.[/say]")
 
-		saynn("Artica shakes her head and grabs the prototype..")
+		saynn("Артика качает головой и берет прототип...")
 
-		addButton("Continue", "See what happens next", "artica_with_visor_on")
+		addButton("Продолжить", "Смотреть, что будет дальше", "artica_with_visor_on")
 	if(state == "artica_with_visor_on"):
 		addCharacter("artica", ["hypno", "naked"])
 		playAnimation(StageScene.Duo, "sit", {pc="artica", npc="alexrynard", bodyState={hard=true, naked=true}})
-		saynn("She carefully secures it around her head with the engineer's help..")
+		saynn("С помощью инженера она осторожно закрепляет его на голове...")
 
-		saynn("[say=alexrynard]It's designed to improve your mood, that's all you need to know. Ready?[/say]")
+		saynn("[say=alexrynard]Это разработано, чтобы поднять тебе настроение, всё, что тебе нужно знать. Готова?[/say]")
 
-		saynn("Artica nods, her cyan naive eyes sparkling with blind trust.. The engineer touches some wires together.. and the visor lights up with an inviting yellow glow.")
+		saynn("Артика кивает, её наивные голубые глаза светятся слепой уверенностью... Инженер соединяет провода... и визор загорается манящим жёлтым светом.")
 
-		saynn("Soft lights begin to dance across Artica's vision, her body relaxing almost instantly under the device's influence.")
+		saynn("Мягкие огни начинают плясать перед глазами Артики, и её тело почти мгновенно расслабляется под воздействием устройства.")
 
-		saynn("The engineer quickly notices the change in Artica's expression.. And yeah, you see it too, even from far away.. Her breathing is slower and deeper, her gaze directed straight.. And most importantly, her eyes.. something is happening to her eyes..")
+		saynn("Инженер быстро замечает перемену в выражении лица Артики... И да, ты тоже это видишь, даже издалека... Её дыхание становится медленнее и глубже, взгляд — прямее... И самое главное, её глаза... с её глазами что-то происходит...")
 
-		saynn("[say=alexrynard]I've never seen that kind of reaction. Do you hear me?[/say]")
+		saynn("[say=alexrynard]Я никогда не видел такой реакции. Ты меня слышишь?[/say]")
 
-		saynn("She nods, seemingly in full control of her body..")
+		saynn("Она кивает, казалось бы, полностью контролируя своё тело...")
 
-		saynn("[say=alexrynard]How do you feel?[/say]")
+		saynn("[say=alexrynard]Как ощущения?[/say]")
 
-		saynn("What happens after that question is.. strange..")
+		saynn("То, что происходит после этого вопроса... странно...")
 
-		saynn("Artica's paws begin to trail over her fur"+str(", sliding under her shorts and shirt, slowly taking them off.." if !isNaked else ", not covering or hiding any of her private bits anymore..")+"")
+		saynn("Лапки Артики начинают скользить по её меху"+str(", sliding under her shorts and shirt, slowly taking them off.." if !isNaked else ", not covering or hiding any of her private bits anymore..")+"")
 
-		saynn("Foxy raises a brow while the fluff.. starts touching her breasts, caressing the soft mounds, playing with the perky"+str(" swollen" if getCharacter("artica").isLactating() else "")+" nips..")
+		saynn("Фокси приподнимает бровь, пока пушистый мех... начинает ласкать её грудь, поглаживая мягкие полушария и играя с упругими сосками"+str(" swollen" if getCharacter("artica").isLactating() else "")+" nips..")
 
-		saynn("[say=alexrynard]Is that how you are feeling?[/say]")
+		saynn("[say=alexrynard]Ты вот что чувствуешь?[/say]")
 
-		saynn("She nods. Well, she is feeling.. herself.. her paws exploring her fluffy belly, sliding down to her drippy pussy and "+str("hard trobbing cock" if !isCaged else "drippy locked cock")+"..")
+		saynn("Она кивает. Что ж, она чувствует... саму себя... её лапы исследуют пушистый живот, скользя вниз, к мокрой киске, и "+str("hard trobbing cock" if !isCaged else "drippy locked cock")+"..")
 
-		saynn("[say=alexrynard]Alright, something is wrong. Stop.[/say]")
+		saynn("[say=alexrynard]Так, что-то здесь не так. Стой.[/say]")
 
-		saynn("Artica obeys.. immediately.. no questions asked. She sits still, just like before.. but now she is aroused, panting softly with her tongue out, her nips are aroused, her canine member is leaking pre, her pussy leaving a wet spot on the seat..")
+		saynn("Артика повинуется... мгновенно... без лишних вопросов. Она замирает, как и прежде... но теперь она возбуждена, тихо посапывает, высунув язык, её соски напряжены, из её клыкастого члена сочится предэякулят, а киска оставляет мокрое пятно на сиденье...")
 
-		saynn("The engineer sighs and grumbles to himself..")
+		saynn("Инженер вздыхает и ворчит себе под нос...")
 
-		saynn("[say=alexrynard]..why does everything I create is either taken away, somehow used as a weapon.. or becomes a sextoy..[/say]")
+		saynn("[say=alexrynard]...почему всё, что я создаю, либо отнимают, либо используют как оружие... либо оно превращается в секс-игрушку...[/say]")
 
-		saynn("Somehow Artica hears him.. but only the last part..")
+		saynn("Каким-то образом Артика слышит его... но только последнюю часть...")
 
-		addButton("Continue", "See what happens next", "artica_becomes_sextoy")
+		addButton("Продолжить", "Смотреть, что будет дальше", "artica_becomes_sextoy")
 	if(state == "artica_becomes_sextoy"):
 		playAnimation(StageScene.Zonked, "tease", {pc="artica", npc="alexrynard", bodyState={naked=true, hard=true}})
-		saynn("Artica instantly slides off the chair, assuming a very lewd position on the floor, her legs raised high to her shoulders, her toes curling as her paws sneak under her balls, obediently spreading her pussy for the engineer, proudly showcasing the slick cyan love tunnel..")
+		saynn("Артика мгновенно соскальзывает со стула, принимая на полу крайне похотливую позу: ноги высоко закинуты к плечам, пальцы на ногах подрагивают, а лапы подбираются под её яички, послушно раздвигая киску для инженера и с гордостью демонстрируя скользкий бирюзовый любовный туннель...")
 
-		saynn("Foxy looks at that sight.. and sighs.")
+		saynn("Фокси смотрит на это зрелище... и вздыхает.")
 
-		saynn("[say=alexrynard]You know what.. I'm pretty sure there is a bias in your head..[/say]")
+		saynn("[say=alexrynard]Знаешь что... Я почти уверена, что в твоей голове есть предвзятость..[/say]")
 
-		saynn("Artica tilts her head.")
+		saynn("Артика наклоняет голову набок.")
 
-		saynn("[say=alexrynard]If we stop now, you're gonna want to do more slutty stuff, aren't you? You want to get off?[/say]")
+		saynn("[say=alexrynard]Если мы сейчас остановимся, ты ведь захочешь чего-нибудь пошлого, а? Хочешь кончить?[/say]")
 
-		saynn("Artica nods eagerly, her tongue out and drooling, her hypnotized eyes watching the fancy colors with great interest.. Other engineers begin to notice the girl on the floor, stuck in a very compromised position.")
+		saynn("Артика жадно кивает, высунув язык и пуская слюни; её загипнотизированные глаза с огромным интересом следят за причудливыми цветами... Другие инженеры начинают замечать девчонку на полу, застывшую в весьма двусмысленной позе.")
 
-		saynn("[say=alexrynard]Well.. go ahead then. Show me how you feel. Just not on my work bench.[/say]")
+		saynn("[say=alexrynard]Ну что ж... валяй. Покажи мне, что ты чувствуешь. Только не на моем верстаке.[/say]")
 
-		saynn("Looks like that's all that Artica needed to hear..")
+		saynn("Похоже, это было всё, что нужно было услышать Артике...")
 
-		addButton("Continue", "See what happens next", "artica_cums_from_order")
+		addButton("Продолжить", "Смотреть, что будет дальше", "artica_cums_from_order")
 	if(state == "artica_cums_from_order"):
 		if (isCaged):
 			playAnimation(StageScene.Zonked, "rubcum", {pc="artica", npc="alexrynard", bodyState={naked=true, hard=true}})
-			saynn("Her obedience is immediate, her cock is caged up so her paws reach between her legs, fingers plunging into her wet pussy fast and hard, like she was desperate.. Moans slip past her lips, her body arching, her mind instantly lost in the overwhelming pleasure..")
+			saynn("Она подчиняется мгновенно; её член заперт в клетке, поэтому её лапы тянутся между ног, а пальцы быстро и грубо вонзаются в её мокрую киску, словно она в отчаянии... С губ срываются стоны, тело выгибается, а разум мгновенно тонет в захлестывающем удовольствии...")
 
-			saynn("Her cock throbs in its metal trap, leaking precum that she smears over her clawed digits, her pussy clenching around them and dripping juices on the cold floor, the stimulation driving her to the edge..")
+			saynn("Её член пульсирует в металлической ловушке, выделяя предэякулят, который она размазывает по своим когтистым пальцам; киска сжимается вокруг них, капая соками на холодный пол, а стимуляция подводит её к самому краю...")
 
 		else:
 			playAnimation(StageScene.Zonked, "strokecum", {pc="artica", npc="alexrynard", bodyState={naked=true, hard=true}})
-			saynn("Her obedience was immediate, her paws landing on her cock and proceeding to stroke it fast and hard, like she was desperate.. Moans slip past her lips, her body arching, her mind instantly lost in the overwhelming pleasure..")
+			saynn("Она подчинилась мгновенно: её лапы легли на член, и она принялась быстро и жестко ласкать его, словно в отчаянии... С губ срываются стоны, тело выгибается, а разум мгновенно тонет в захлестывающем удовольствии...")
 
-			saynn("Her cock throbs, leaking precum that she smears over her clawed digits, her neglected pussy dripping juices on the cold floor, the stimulation driving her to the edge..")
+			saynn("Её член пульсирует, выделяя предэякулят, который она размазывает по когтистым пальцам; её заброшенная киска капает соками на холодный пол, а стимуляция подводит её к самому краю...")
 
-		saynn("The engineer scratches the back of his head watching it, more annoyed than anything. At least he is still getting his entropy data or whatever he was seeking..")
+		saynn("Инженер, наблюдая за этим, чешет затылок — скорее раздраженный, чем чем-либо еще. По крайней мере, он всё еще получает свои данные об энтропии или что он там искал...")
 
-		saynn("With a final, slutty cry, Artica cums, her cock shooting thick ropes of cum, splattering over her own"+str(" pregnant" if getCharacter("artica").isVisiblyPregnant() else "")+" belly and {artica.breasts}, her pussy gushing, squirting wildly all over the floor.")
+		saynn("С последним похотливым криком Артика кончает, её член выстреливает густыми струями спермы, забрызгивая её собственный"+str(" pregnant" if getCharacter("artica").isVisiblyPregnant() else "")+" живот и {artica.breasts}, а её киска хлещет, дико разбрызгивая всё вокруг по полу.")
 
-		saynn("[say=alexrynard]Aw, c'mon. I told you, no mess near my workspace.[/say]")
+		saynn("[say=alexrynard]Ой, да ладно тебе. Я же говорил: никакой грязи рядом с моим рабочим местом![/say]")
 
-		saynn("Hearing that, Artica instantly flips to her belly.. and starts eagerly licking up her own girlcum off the floor, cleaning after herself..")
+		saynn("Услышав это, Артика мгновенно переворачивается на живот... и начинает жадно слизывать собственную девичью сперму с пола, убирая за собой...")
 
-		saynn("[say=alexrynard]Oh no, stop that, you're lapping up so much dirt.[/say]")
+		saynn("[say=alexrynard]О нет, прекрати, ты же столько грязи слизала![/say]")
 
-		saynn("Artica nods and pants heavily, her muscles still tensing up randomly from the orgasm.")
+		saynn("Артика кивает и тяжело дышит, её мышцы всё еще хаотично подергиваются от оргазма.")
 
-		saynn("[say=alexrynard]Hope you had fun or something.[/say]")
+		saynn("[say=alexrynard]Надеюсь, ты получила удовольствие или типа того.[/say]")
 
-		saynn("The engineer reaches to turn off the prototype and take it off.")
+		saynn("Инженер тянется к прототипу, чтобы выключить его и снять.")
 
-		addButton("Continue", "See what happens next", "alex_removes_visor")
+		addButton("Продолжить", "Смотреть, что будет дальше", "alex_removes_visor")
 	if(state == "alex_removes_visor"):
 		playAnimation(StageScene.Zonked, "tease", {pc="artica", npc="alexrynard", bodyState={naked=true, hard=true}})
 		addCharacter("artica", ["naked"])
-		saynn("Foxy carefully dissasembles the prototype and takes it off Artica's eyes.. eyes that continue to show that interesting swirly pattern.")
+		saynn("Фокси осторожно разбирает прототип и снимает его с глаз Артики... глаз, в которых всё еще виден тот странный вихревой узор.")
 
-		saynn("[say=alexrynard]Oh fuck. Don't tell me I broke your mind.[/say]")
+		saynn("[say=alexrynard]Твою мать. Только не говори мне, что я сломал тебе мозг.[/say]")
 
-		saynn("But as she blinks, the patterns begin to fade away.. Artica's gaze is focused on some faraway point in space.. she is not hypnotized anymore.. but she is not here either..")
+		saynn("Но пока она моргает, узоры начинают бледнеть... Взгляд Артики устремлен куда-то в далекую точку пространства... она больше не загипнотизирована... но и здесь её тоже нет...")
 
-		saynn("[say=alexrynard]Hey, you.[/say]")
+		saynn("[say=alexrynard]Эй, ты.[/say]")
 
-		saynn("Only when the engineer snaps his fingers in front of Artica's face, she snaps out of it, gasping softly and looking around, still laying in a very compromising position, all her bits visible to anyone around..")
+		saynn("Только когда инженер щелкает пальцами перед лицом Артики, она приходит в себя, тихо ахая и озираясь по сторонам; она всё еще лежит в крайне компрометирующей позе, и все её прелести выставлены на всеобщее обозрение...")
 
 		saynn("[say=artica].. .. ..?..[/say]")
 
-		saynn("[say=alexrynard]I don't know why you are on the floor. Get up, inmate.[/say]")
+		saynn("[say=alexrynard]Не знаю, какого хрена ты валяешься на полу. Вставай, заключенная.[/say]")
 
-		saynn("Artica looks down.. and sees cum on her naked tits.. which makes her blush hard.")
+		saynn("Артика смотрит вниз... и видит сперму на своей голой груди... отчего заливается густым румянцем.")
 
-		addButton("Continue", "See what happens next", "artica_dressesup")
+		addButton("Продолжить", "Смотреть, что будет дальше", "artica_dressesup")
 	if(state == "artica_dressesup"):
 		playAnimation(StageScene.Duo, "stand", {pc="artica", npc="alexrynard"})
-		saynn("Artica quickly gets up and covers herself up, trying to hide all the mess..")
+		saynn("Артика быстро вскакивает и пытается прикрыться, стараясь спрятать весь этот беспорядок...")
 
-		saynn("[say=alexrynard]I've seen everything, don't worry about it.[/say]")
+		saynn("[say=alexrynard]Я всё видел, так что не парься.[/say]")
 
-		saynn("The engineer shows the visor.")
+		saynn("Инженер показывает визор.")
 
-		saynn("[say=alexrynard]I'm gonna be processing the data now. Go away.[/say]")
+		saynn("[say=alexrynard]Сейчас я займусь обработкой данных. Свали отсюда.[/say]")
 
-		saynn("Artica nods and lowers her chin, turning around and preparing to leave..")
+		saynn("Артика кивает и опускает подбородок, разворачиваясь, чтобы уйти..")
 
-		saynn("[say=alexrynard]And.. thanks.[/say]")
+		saynn("[say=alexrynard]И.. спасибо.[/say]")
 
 		saynn("[say=artica]..![/say]")
 
-		saynn("The fluff chrrrrs and runs away.. to her spot probably..")
+		saynn("Пушистик заурчал и убежал.. наверное, на своё место..")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

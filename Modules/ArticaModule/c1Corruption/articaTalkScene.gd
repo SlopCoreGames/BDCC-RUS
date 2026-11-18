@@ -25,401 +25,401 @@ func _run():
 		isLusty = getModule("ArticaModule").isLusty()
 		nakedAndShy = (isNaked && !isSlut)
 		if (getModule("ArticaModule").isLusty() || getFlag("ArticaModule.LQArticaGotBrainwashed")):
-			saynn("Artica is swaying and fidgeting a lot, her cheeks blushing slightly."+str(" Her heavy belly is protruding out a lot, her paws support and caress it lovingly.." if getCharacter("artica").isVisiblyPregnant() else "")+""+str(" Her eyes are sparkling with lust and eternal obedience as she is looking at you.." if getFlag("ArticaModule.LQArticaGotBrainwashed") else "")+"")
+			saynn("Артика заметно ерзает и покачивается, её щеки слегка покраснели."+str(" Her heavy belly is protruding out a lot, her paws support and caress it lovingly.." if getCharacter("artica").isVisiblyPregnant() else "")+""+str(" Her eyes are sparkling with lust and eternal obedience as she is looking at you.." if getFlag("ArticaModule.LQArticaGotBrainwashed") else "")+"")
 
 		else:
 			if (nakedAndShy):
-				saynn("Artica is covering herself up as much as she can, her lack of clothes is making her blush. "+str(" Her heavy belly is protruding out a lot, clearly carrying a whole litter.." if getCharacter("artica").isVisiblyPregnant() else "")+"")
+				saynn("Артика старается прикрыться как можно сильнее, её нагота заставляет её краснеть."+str(" Her heavy belly is protruding out a lot, clearly carrying a whole litter.." if getCharacter("artica").isVisiblyPregnant() else "")+"")
 
 			elif (isNaked):
-				saynn("Artica is swaying about like her usual self, her paws aren't hiding her private bits, allowing anyone to check them out.. Including you."+str(" Her heavy belly is protruding out a lot, clearly carrying a whole litter.." if getCharacter("artica").isVisiblyPregnant() else "")+"")
+				saynn("Артика покачивается, как обычно, её лапки почти не скрывают интимные места, позволяя любому разглядеть их... Включая тебя."+str(" Her heavy belly is protruding out a lot, clearly carrying a whole litter.." if getCharacter("artica").isVisiblyPregnant() else "")+"")
 
 			else:
-				saynn("Artica is swaying about, rarely standing still for longer than a few seconds."+str(" Her heavy belly is protruding out a lot, her paws caressing it gently.." if getCharacter("artica").isVisiblyPregnant() else "")+"")
+				saynn("Артика постоянно в движении, она редко замирает дольше чем на пару секунд."+str(" Her heavy belly is protruding out a lot, her paws caressing it gently.." if getCharacter("artica").isVisiblyPregnant() else "")+"")
 
 		saynn("[say=artica]"+str(getModule("ArticaModule").getReaction())+"[/say]")
 
-		saynn("Corruption: "+str(Util.roundF(corruption*100.0, 1))+"%")
+		saynn("Порча: "+str(Util.roundF(corruption*100.0, 1))+"%")
 
-		addButton("Talk", "Chat about stuff", "talk_menu")
-		addButton("Tease", "Do something half-lewd with her", "tease_menu")
+		addButton("Поговорить", "Поболтать о всяком", "talk_menu")
+		addButton("Подразнить", "Заняться чем-то полупошлым", "tease_menu")
 		if (getModule("ArticaModule").isLusty() || getFlag("ArticaModule.LQArticaGotBrainwashed")):
-			addButton("Sex", "See what kind of kinky things you can do with her", "sex_menu")
+			addButton("Секс", "Посмотреть, на какие извращения она способна", "sex_menu")
 		else:
-			addDisabledButton("Sex", "Artica is not horny enough")
+			addDisabledButton("Секс", "Артика недостаточно возбуждена")
 		if (getCharacter("artica").hasEffect(StatusEffect.HasBodyWritings) || getCharacter("artica").hasEffect(StatusEffect.CoveredInCum)):
-			addButton("Shower", "Wait until Artica heads to the showers on her own..", "start_showers")
+			addButton("Душ", "Подожди, пока Артика сама пойдет в душ...", "start_showers")
 		else:
-			addDisabledButton("Shower", "Artica won't go to the showers unless she is messy")
+			addDisabledButton("Душ", "Артика не пойдет в душ, пока не испачкается")
 		if (getModule("ArticaModule").hasAnyWaitScenesLeft()):
 			if (getModule("ArticaModule").isLusty() || getFlag("ArticaModule.LQArticaGotBrainwashed")):
 				if (getModule("ArticaModule").canTriggerWaitScene()):
-					saynn("Artica is gonna do something if you wait for her to do so..")
+					saynn("Если подождать, Артика сама что-нибудь предпримет...")
 
-					addButton("Wait..", "See what Artica will do if left alone", "trigger_wait")
+					addButton("Погоди...", "Посмотреть, что сделает Артика, если оставить её одну", "trigger_wait")
 				else:
-					addDisabledButton("Wait..", "Conditions aren't met to start the next scene!\n"+getModule("ArticaModule").getBlockingReqs())
+					addDisabledButton("Погоди...", "Условия для начала следующей сцены не выполнены!\n"+getModule("ArticaModule").getBlockingReqs())
 			else:
-				addDisabledButton("Wait..", "Nothing will happen if you do this. Can try to make Artica horny to encourage her to explore the station")
+				addDisabledButton("Погоди...", "Если сделать это сейчас, ничего не произойдет. Можно попробовать возбудить Артику, чтобы подтолкнуть её к исследованию станции")
 		if (getFlag("ArticaModule.LQArticaGotDreamCatcher") || getFlag("ArticaModule.LQArticaGotBrainwashed")):
-			addButton("Memories", "Replay one of the old lewd scenes", "replay_menu")
-			addButton("Feed something", "Feed something to Artica", "feedmenu")
-		addButton("Leave", "Time to go", "endthescene")
+			addButton("Воспоминания", "Пересмотреть одну из старых пошлых сцен", "replay_menu")
+			addButton("Покормить", "Покормить Артику", "feedmenu")
+		addButton("Уйти", "Пора идти", "endthescene")
 		if (getFlag("ArticaModule.TentaclesPcHasFlower") && !getFlag("ArticaModule.TentaclesArticaHasFlower")):
-			addButton("Flower!", "Give Artica the flower that she is looking for", "do_give_flower")
+			addButton("Цветок!", "Отдать Артике цветок, который она ищет", "do_give_flower")
 		GM.ES.triggerRun(Trigger.TalkingToNPC, ["artica"])
 	if(state == "ask_lilac"):
-		saynn("[say=pc]So why are you a lilac? What did you do to earn that purple color?[/say]")
+		saynn("[say=pc]Так почему ты сиреневая? Что ты сделала, чтобы заслужить такой цвет?[/say]")
 
 		if (getFlag("ArticaModule.LQArticaGotBrainwashed")):
-			saynn("[say=artica]Um.. I d-don't remember actually.. All I know is.. I'm your fucktoy slut.. Nothing else matters.. haha..[/say]")
+			saynn("[say=artica]Эм.. я д-даже не помню толком.. Знаю только, что.. я твоя шлюшка-игрушка.. Остальное не важно.. ха-ха..[/say]")
 
-			saynn("Artica chrrrrs softly as she nuzzles your cheek.")
+			saynn("Артика тихонько мурлычет, прижимаясь носом к твоей щеке.")
 
 		elif (getFlag("ArticaModule.LQArticaGotDreamCatcher")):
-			saynn("[say=artica]That corporation.. AlphaCorp?.. It invaded my planet.. Destroyed the careful balance.. I don't know why..[/say]")
+			saynn("[say=artica]Та корпорация.. АльфаКорп?.. Она вторглась на мою планету.. Разрушила хрупкий баланс.. Не знаю почему..[/say]")
 
-			saynn("Artica looks down on herself..")
+			saynn("Артика опускает взгляд на свое тело..")
 
-			saynn("[say=artica]So I.. wrote words of encouragement.. on my body.. everywhere.. I w-wasn't gonna fight myself.. But I didn't want to do n-nothing.. And then I.. tried to make everyone s-see me..[/say]")
+			saynn("[say=artica]И тогда я.. стала писать слова поддержки.. на своем теле.. повсюду.. Я не собиралась с кем-то с-сражаться.. Но и просто н-ничего не делать тоже не хотела.. И тогда я.. попыталась заставить всех м-меня заметить..[/say]")
 
-			saynn("That's one way to spread the message..")
+			saynn("Это тоже способ донести свое послание..")
 
-			saynn("[say=artica]I h-hope I helped other Jogauni not to give up.. but I s-soon got caught..[/say]")
+			saynn("[say=artica]Я н-надеялась, что помогла другим йогауни не сдаваться.. но в-вскоре меня поймали..[/say]")
 
-			saynn("[say=pc]Sounds like simple public indecency.[/say]")
+			saynn("[say=pc]Похоже на обычное непристойное поведение на публике.[/say]")
 
-			saynn("[say=artica]M-maybe.. they w-were very mean to me though.. S-something about.. setting the precedent..[/say]")
+			saynn("[say=artica]М... может быть... н-но они были ко мне очень жестоки... Ч-что-то там про... создание прецедента...[/say]")
 
-			saynn("Makes sense.")
+			saynn("Логично.")
 
 		else:
-			saynn("[say=artica]I.. um.. it's a long story.. our planet got invaded..[/say]")
+			saynn("[say=artica]Я... эм... это долгая история... на нашу планету напали...[/say]")
 
-			saynn("Artica looks at her paws.")
+			saynn("Артика смотрит на свои лапы.")
 
-			saynn("[say=artica]I couldn't r-really fight.. but.. d-doing nothing was a-also bad.. t-that's what they wanted.. T-they wanted to convince us that everything was g-gonna be alright soon..[/say]")
+			saynn("[say=artica]Я н-не могла по-настоящему сражаться... но... н-ничего не делать тоже б-было плохо... И-именно этого они и х-хотели... О-они хотели убедить нас, что в скором времени всё б-будет хорошо...[/say]")
 
-			saynn("Sounds like AlphaCorp alright.")
+			saynn("Похоже на АльфаКорп, как и всегда.")
 
-			saynn("[say=artica]I knew that we had to resist if we wanted to stay the Jogauni that we are.. I.. I d-don't know.. I d-did what I could.. I.. um.. I w-was spreading the message.. message that they didn't like..[/say]")
+			saynn("[say=artica]Я знала, что мы должны сопротивляться, если хотим остаться теми Йогауни, кем мы являемся... Я... я н-не знаю... Я д-делала всё, что могла... Я... эм... я р-распространяла весть... весть, которая им н-не нравилась...[/say]")
 
-			saynn("Huh.")
+			saynn("Хм.")
 
-			saynn("[say=pc]Still.. What are your crimes? They charged you with something sexual related, right?[/say]")
+			saynn("[say=pc]И всё же... Каковы твои преступления? Тебя обвинили в чем-то сексуальном, верно?[/say]")
 
-			saynn("Artica lowers her gaze and scratches behind her ear.")
+			saynn("Артика опускает взгляд и чешет за ухом.")
 
-			saynn("[say=artica]Y-.y.. yea..h..[/say]")
+			saynn("[say=artica]Д... д-да...[/say]")
 
-			saynn("Looks like you're not gonna get that out of her.")
+			saynn("Похоже, тебе её так просто не разговорить.")
 
-		addButton("Continue", "See what happens next", "talk_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "talk_menu")
 	if(state == "ask_gym"):
-		saynn("[say=pc]You like going to the gym?[/say]")
+		saynn("[say=pc]Любишь ходить в спортзал?[/say]")
 
 		if (getFlag("ArticaModule.LQArticaGotBrainwashed")):
-			saynn("[say=artica]I.. I j-just wanted to get flexible enough to be able to suck my own cock..[/say]")
+			saynn("[say=artica]Я.. я п-просто хотела стать достаточно гибкой, чтобы иметь возможность сосать свой собственный член..[/say]")
 
-			saynn("Wow. What a bold fluff.")
+			saynn("Вау. Какая смелая пушинка.")
 
-			saynn("[say=artica]So I can p-pleasure myself between all the times that you fuck me.. haha..[/say]")
+			saynn("[say=artica]Чтобы я могла у-ублажать себя в перерывах между тем, как ты меня трахаешь.. ха-ха..[/say]")
 
 		else:
-			saynn("[say=artica]Me? Not really.. no.. why are you asking?..[/say]")
+			saynn("[say=artica]Я? Не особо.. нет.. а почему ты спрашиваешь?..[/say]")
 
-			saynn("Hah. Interesting.")
+			saynn("Хах. Интересно.")
 
-			saynn("[say=pc]No reason.[/say]")
+			saynn("[say=pc]Без причины.[/say]")
 
-			saynn("[say=artica]I was going out on hunts sometimes.. I was often the slowest fluff though.. K-Kept getting lost..[/say]")
+			saynn("[say=artica]Иногда я выходила на охоту.. Но чаще всего я была самой медленной пушинкой.. П-постоянно терялась..[/say]")
 
-			saynn("Tribal life, huh.")
+			saynn("Племенной образ жизни, значит.")
 
-			saynn("[say=pc]How does your old life compare to.. this?[/say]")
+			saynn("[say=pc]На что похожа твоя прошлая жизнь по сравнению с.. этим?[/say]")
 
-			saynn("Artica shrugs.")
+			saynn("Артика пожимает плечами.")
 
-			saynn("[say=artica]I miss my tribe.. but.. y-yeah.. it's v-very different..[/say]")
+			saynn("[say=artica]Я скучаю по своему племени... но... д-да... здесь всё о-очень по-другому..[/say]")
 
 			if (getFlag("ArticaModule.eventSelfsuck", 0) >= 2):
-				saynn("[say=pc]I think I know why you were going to the gym, Artica~.[/say]")
+				saynn("[say=pc]Кажется, я догадываюсь, зачем ты ходила в спортзал, Артика~.[/say]")
 
-				saynn("She blushes deeply.")
+				saynn("Она густо краснеет.")
 
-				saynn("[say=artica]Eep..[/say]")
+				saynn("[say=artica]Ой...[/say]")
 
-				saynn("You pat her on the head, offering some comfort.")
+				saynn("Вы гладите её по голове, пытаясь утешить.")
 
-				saynn("[say=pc]You can keep trying, I liked what I saw.[/say]")
+				saynn("[say=pc]Можешь продолжать попытки, мне понравилось то, что я увидела.[/say]")
 
-				saynn("She chrrrrrs softly..")
+				saynn("Она тихонько мурлычет...")
 
 				if (getFlag("ArticaModule.LQArticaGotDreamCatcher")):
-					saynn("[say=artica]Y-yeah.. I just wanted to.. you know.. become more flexible.. I w-was really curious h-how my cock tasted..[/say]")
+					saynn("[say=artica]Д-да.. я просто хотела.. ну, знаешь.. стать более гибкой.. М-мне было очень любопытно, каков на вкус м-мой член..[/say]")
 
-		addButton("Continue", "See what happens next", "talk_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "talk_menu")
 	if(state == "ask_mommy"):
-		saynn("[say=pc]How do you feel.. now that you're a mommy?[/say]")
+		saynn("[say=pc]Что ты чувствуешь.. теперь, когда ты мамочка?[/say]")
 
 		var gaveBirthAmount = getFlag("ArticaModule.gaveBirthTimes", 0)
-		saynn("[say=artica]First time was.. s-scary.. and painful.. but the nurses were n-nice to me..[/say]")
+		saynn("[say=artica]В первый раз было.. с-страшно.. и больно.. но медсёстры были ко мне н-нежны..[/say]")
 
-		saynn("Artica looks down at her belly..")
+		saynn("Артика смотрит на свой живот..")
 
-		saynn("[say=artica]They let me feed my pups for a bit.. it felt strange.. but kinda good..[/say]")
+		saynn("[say=artica]Они дали мне немного покормить моих щенков.. это было странно.. но как-то даже приятно..[/say]")
 
 		if (gaveBirthAmount >= 2):
-			saynn("[say=pc]It's not your first time though.[/say]")
+			saynn("[say=pc]Но это ведь не в первый раз.[/say]")
 
-			saynn("[say=artica]Y-yeah.. I t-think it's not the last too.. haha..[/say]")
+			saynn("[say=artica]Д-да.. К-кажется, это будет не в последний раз.. ха-ха..[/say]")
 
 		if (gaveBirthAmount >= 4):
-			saynn("She scratches behind her ear.")
+			saynn("Она чешет себя за ушком.")
 
-			saynn("[say=artica]Is it s-strange to say.. t-that I want more..[/say]")
+			saynn("[say=artica]Странно ли это з-звучит.. ч-что я хочу еще..[/say]")
 
-			saynn("[say=pc]It's not. You're a good mommy, Artica.[/say]")
+			saynn("[say=pc]Вовсе нет. Ты отличная мамочка, Артика.[/say]")
 
-			saynn("She chrrrrrs happily and nuzzles your cheek, her tail swishing happily.")
+			saynn("Она счастливо мурлычет и прижимается щекой к твоей, радостно виляя хвостом.")
 
 		if (gaveBirthAmount >= 7):
-			saynn("[say=artica]T-thank you.. f-for m-making mommy so many times.. I l-love being your little slutty b-breeding bitch..[/say]")
+			saynn("[say=artica]С-спасибо.. з-за то, ч-что столько раз д-делал мамочке с-секс.. Я т-так люблю быть твоей маленькой шлюшечкой-бродкой..[/say]")
 
-			saynn("Awww, so cute.")
+			saynn("Оу-у, какая милашка.")
 
 		if (gaveBirthAmount >= 10):
-			saynn("Looks like she wants to add some more to her last sentence..")
+			saynn("Похоже, она хочет добавить что-то еще к своей последней фразе...")
 
-			saynn("[say=artica]I'm like.. a total slut for more pups.. nyaah.. I w-wanna be filled with c-cum always.. I wanna b-be bred.. again and again..[/say]")
+			saynn("[say=artica]Я прямо.. настоящая сучка, жаждущая щенков.. ня-ах.. Я х-хочу, чтобы меня всегда набивали с-спермой.. Хочу, ч-чтобы меня осеменяли.. снова и снова..[/say]")
 
-			saynn("You really messed with her mind, huh.. Looks like she can not get any more eager about pregnancy.. You can only pat yourself for accomplishing this!")
+			saynn("Ты реально перепахал ей мозги, а.. Похоже, она теперь только и мечтает, что о беременности.. Можешь собой гордиться, ты это сделал!")
 
-		saynn("You recall that Artica gave birth.. exactly "+str(gaveBirthAmount)+" "+str("times" if gaveBirthAmount  != 1 else "time")+".")
+		saynn("Ты вспоминаешь, что Артика рожала.. именно "+str(gaveBirthAmount)+" "+str("times" if gaveBirthAmount  != 1 else "time")+".")
 
-		addButton("Continue", "See what happens next", "talk_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "talk_menu")
 	if(state == "ask_sizequeen"):
-		saynn("[say=pc]Would you consider yourself.. a size queen?[/say]")
+		saynn("[say=pc]Ты бы назвала себя.. фанаткой больших размеров?[/say]")
 
-		saynn("[say=artica]A size q-queen? W-what's that..[/say]")
+		saynn("[say=artica]Ф-фанаткой раз-размеров? Э-это еще что такое..[/say]")
 
-		saynn("[say=pc]Well, you know, a queen of big sizes.[/say]")
+		saynn("[say=pc]Ну, понимаешь, любительница всего огромного.[/say]")
 
-		saynn("Artica scratches her chin.")
+		saynn("Артика чешет подбородок.")
 
-		saynn("[say=artica]I'm n-not r-really a q-queen of anything..[/say]")
+		saynn("[say=artica]Я н-не то чтобы ф-фанатка ч-чего-то там..[/say]")
 
 		if (getFlag("ArticaModule.eventDildo", 0) >= 2):
-			saynn("[say=pc]Yeah, that would be stretching it, really.. haha..[/say]")
+			saynn("[say=pc]Да уж, это было бы сильным преувеличением.. ха-ха..[/say]")
 
-			saynn("Artica instantly realizes what you mean.. her cheeks red like fire..")
+			saynn("Артика мгновенно понимает, что ты имеешь в виду.. её щеки вспыхивают огнем..")
 
 		if (getFlag("ArticaModule.eventDildo", 0) >= 3):
-			saynn("[say=artica]I g-guess.. then.. y-yeah.. I m-might be..[/say]")
+			saynn("[say=artica]Н-наверное.. тогда.. д-да.. м-может и так..[/say]")
 
-			saynn("You tilt your head.")
+			saynn("Ты наклоняешь голову набок.")
 
-			saynn("[say=pc]What was that?[/say]")
+			saynn("[say=pc]Что это было?[/say]")
 
-			saynn("[say=artica]D-does it count if it's my.. mmm..[/say]")
+			saynn("[say=artica]Э-это считается, если это моё... ммм...[/say]")
 
-			saynn("[say=pc]It definitely counts, Artica.[/say]")
+			saynn("[say=pc]Определенно считается, Артика.[/say]")
 
-			saynn("[say=artica]..hah..[/say]")
+			saynn("[say=artica]..хах..[/say]")
 
-		addButton("Continue", "See what happens next", "talk_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "talk_menu")
 	if(state == "ask_tentacles"):
-		saynn("[say=pc]Do you have interest in.. tentacles.. Artica?[/say]")
+		saynn("[say=pc]Тебя интересуют... щупальца... Артика?[/say]")
 
-		saynn("Artica blinks and coughs.")
+		saynn("Артика моргает и покашливает.")
 
-		saynn("[say=artica]Tentacles?..[/say]")
+		saynn("[say=artica]Щупальца?..[/say]")
 
-		saynn("[say=pc]Yeah, tentacles, long flexible tendrils.[/say]")
+		saynn("[say=pc]Да, щупальца, длинные гибкие отростки.[/say]")
 
-		saynn("She scratches behind her head.")
+		saynn("Она чешет затылок.")
 
-		saynn("[say=artica]Well.. when I was young.. I got lost and ran into some mystical creature.. it d-did had t-those..[/say]")
+		saynn("[say=artica]Ну... когда я была молода... я потерялась и наткнулась на одно мистическое существо... у н-него были э-эти самые...[/say]")
 
-		saynn("[say=pc]So.. you are?[/say]")
+		saynn("[say=pc]Так... ты...?[/say]")
 
-		saynn("She blushes deeply..")
+		saynn("Она густо краснеет...")
 
 		if (getFlag("ArticaModule.eventTentacles", 0) >= 3):
-			saynn("[say=artica]Um.. Just..[/say]")
+			saynn("[say=artica]Эм.. Просто..[/say]")
 
-			saynn("[say=pc]C'mon. I saw your belly, it wasn't a pregnant belly~.[/say]")
+			saynn("[say=pc]Да ладно тебе. Я видела твой животик, он не был похож на беременный~.[/say]")
 
-			saynn("She covers her face.")
+			saynn("Она закрывает лицо руками.")
 
-			saynn("[say=artica]Eep.. I..[/say]")
+			saynn("[say=artica]Ой.. Я..[/say]")
 
-			saynn("She speaks very quietly.")
+			saynn("Она говорит очень тихо.")
 
-			saynn("[say=artica]..g-guess..[/say]")
+			saynn("[say=artica]..к-кажется..[/say]")
 
-			saynn("Such a shy fluff. You saw it though, you know the full truth.")
+			saynn("Какая скромница. Но ты ведь видела, ты знаешь всю правду.")
 
 			if (getFlag("ArticaModule.gaveBirthToEggs")):
-				saynn("[say=artica]I d-did find s-some..[/say]")
+				saynn("[say=artica]Я н-нашла н-немного..[/say]")
 
-				saynn("Find huh. Interesting choice of words.")
+				saynn("«Нашла», значит? Интересный выбор слов.")
 
-				saynn("[say=artica]And it d-did.. s-stuff me full of.. some kind of eggs..[/say]")
+				saynn("[say=artica]И это п-правда.. м-меня набило.. какими-то.. яйцами..[/say]")
 
-				saynn("[say=pc]Must have felt awful, huh~?[/say]")
+				saynn("[say=pc]Должно быть, ощущения были хреновые, а~?[/say]")
 
-				saynn("[say=artica]You s-saw it yourself.. S-so many e-eggs.. eep.. I t-think I c-came j.just laying them..[/say]")
+				saynn("[say=artica]Ты в-все сам видел.. С-столько и-икри.. ик.. Кажется, я п-правда кончила, п-просто пока они там лежали..[/say]")
 
-				saynn("[say=pc]You're a slut for tentacles, Artica~.[/say]")
+				saynn("[say=pc]Ты просто шлюха для щупалец, Артика~.[/say]")
 
-				saynn("[say=artica]..haha.. y-yeah.. I g-guess..[/say]")
+				saynn("[say=artica]..ха-ха.. д-да.. п-пожалуй..[/say]")
 
 		else:
-			saynn("[say=artica]Um.. Just.. fascinated..[/say]")
+			saynn("[say=artica]Ну.. Просто.. заворожило..[/say]")
 
-			saynn("Interesting..")
+			saynn("Интересно...")
 
-		addButton("Continue", "See what happens next", "talk_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "talk_menu")
 	if(state == "talk_menu"):
-		saynn("What do you want to talk about?")
+		saynn("О чем хочешь поговорить?")
 
-		addButton("Lilac", "Ask why Artica is a lilac", "ask_lilac")
+		addButton("Сирень", "Спросить, почему Артика — сирень", "ask_lilac")
 		if (getFlag("ArticaModule.eventSelfsuck", 0) >= 1):
-			addButton("Gym", "Ask Artica if she likes doing sport activities", "ask_gym")
+			addButton("Тренажерный зал", "Спросить Артику, любит ли она заниматься спортом", "ask_gym")
 		else:
-			addDisabledButton("Gym", "You have no reason to ask that yet..")
+			addDisabledButton("Тренажерный зал", "Тебе пока нет смысла об этом спрашивать...")
 		if (getFlag("ArticaModule.gaveBirthTimes", 0) > 0):
-			addButton("Mommy", "Ask Artica about how she feels to be a mommy", "ask_mommy")
+			addButton("Мамочка", "Спросить Артику о том, каково это — быть мамочкой", "ask_mommy")
 		else:
-			addDisabledButton("Mommy", "Artica never gave birth.. yet..")
+			addDisabledButton("Мамочка", "Артика еще ни разу не рожала... пока что...")
 		if (getFlag("ArticaModule.eventDildo", 0) >= 1):
-			addButton("Size queen", "Ask Artica if she is a size queen", "ask_sizequeen")
+			addButton("Размерщица", "Спросить Артику, не помешана ли она на размерах", "ask_sizequeen")
 		else:
-			addDisabledButton("Size queen", "You have no reason to ask that yet..")
+			addDisabledButton("Размерщица", "Тебе пока нет смысла об этом спрашивать...")
 		if (getFlag("ArticaModule.eventTentacles", 0) >= 2):
-			addButton("Tentacles", "Ask Artica if she likes tentacles", "ask_tentacles")
+			addButton("Тентакли", "Спросить Артику, нравятся ли ей щупальца", "ask_tentacles")
 		else:
-			addDisabledButton("Tentacles", "You have no reason to ask that yet..")
+			addDisabledButton("Тентакли", "Тебе пока нет смысла об этом спрашивать...")
 		if (getFlag("ArticaModule.eventPortalPanties", 0) >= 2):
-			addButton("Portal panties", "Ask Artica to put on or remove the portal panties", "toggle_portal_panties")
+			addButton("Портальные трусики", "Попросить Артику надеть или снять портальные трусики", "toggle_portal_panties")
 		else:
-			addDisabledButton("Portal panties", "Artica doesn't yet have portal panties.. Let her explore the station and maybe find some")
-		addButton("Back", "Enough chatting", "")
+			addDisabledButton("Портальные трусики", "У Артики пока нет портальных трусиков... Пусть побродит по станции, может, она их где-нибудь найдет")
+		addButton("Назад", "Хватит болтать", "")
 	if(state == "toggle_portal_panties"):
 		if (getFlag("ArticaModule.wearsPortalPanties", false)):
-			saynn("[say=pc]Those panties that you have.. Can I take a look?[/say]")
+			saynn("[say=pc]Те трусики, что у тебя есть... Можно взглянуть?[/say]")
 
-			saynn("Artica's ears twitch nervously, her cheeks flushing a bit. She pulls the purple panties out and presents them. They look generic enough, with a cute red heart on them.. but the inner sides hides a few thin metal rings that have closed apertures on them..")
+			saynn("Уши Артики нервно дергаются, а щеки слегка краснеют. Она достает фиолетовые трусики и протягивает их тебе. На вид они самые обычные, с милым красным сердечком... но с внутренней стороны на них спрятаны несколько тонких металлических колец с закрытыми отверстиями...")
 
-			saynn("[say=artica]Here..[/say]")
+			saynn("[say=artica]Вот..[/say]")
 
-			saynn("[say=pc]Can you put them on?[/say]")
+			saynn("[say=pc]Можешь их надеть?[/say]")
 
-			saynn("[say=artica]Oh.. um.. Here?[/say]")
+			saynn("[say=artica]Ох.. эм.. Прямо сюда?[/say]")
 
-			saynn("You nod confidently, making the fluff blush more.")
+			saynn("Ты уверенно киваешь, заставляя пушистую девчонку покраснеть еще сильнее.")
 
-			saynn("[say=artica]Oki..[/say]")
+			saynn("[say=artica]Хорошо..[/say]")
 
 			if (isNaked):
-				saynn("Artica carefully steps into the panties and pulls them up, adjusting the fit until they rest comfortably on her hips, the cold portal rings brushing against her sensitive bits don't seem to bother her at all..")
+				saynn("Артика осторожно шагает в трусики и натягивает их, поправляя так, чтобы они удобно сели на бедра; холодные портальные кольца, касающиеся её чувствительных мест, кажется, её совсем не беспокоят..")
 
 			else:
-				saynn("Artica pulls her shorts down, exposing her private bits to you.. Then she carefully steps into the panties and pulls them up, adjusting the fit until they rest comfortably on her hips. The cold portal rings brushing against her sensitive bits don't seem to bother her at all..")
+				saynn("Артика стягивает шорты, обнажая перед тобой свою интимную зону.. Затем она осторожно шагает в трусики и натягивает их, поправляя так, чтобы они удобно сели на бедра. Холодные портальные кольца, касающиеся её чувствительных мест, кажется, её совсем не беспокоят..")
 
-			saynn("[say=artica]Here..[/say]")
+			saynn("[say=artica]Вот..[/say]")
 
-			saynn("[say=pc]Thank you, Artica.[/say]")
+			saynn("[say=pc]Спасибо, Артика.[/say]")
 
-			saynn("She offers you a cute smile.")
+			saynn("Она мило тебе улыбается.")
 
 		else:
-			saynn("[say=pc]Can you take off your portal panties, Artica.[/say]")
+			saynn("[say=pc]Артика, сними свои портальные трусики.[/say]")
 
-			saynn("She nods.")
+			saynn("Она кивает.")
 
-			saynn("[say=artica]Sure..[/say]")
+			saynn("[say=artica]Конечно..[/say]")
 
-			saynn("Artica pulls her purple panties off and stores them. Enough fun with portals for now.")
+			saynn("Артика снимает свои фиолетовые трусики и убирает их. С порталами на сегодня хватит веселья.")
 
-		addButton("Continue", "See what happens next", "talk_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "talk_menu")
 	if(state == "replay_menu"):
-		saynn("Pick which event you want to see again.")
+		saynn("Выбери событие, которое хочешь увидеть снова.")
 
 		addEventReplayButtons()
 		if (false):
-			addButton("Error", "You shouldn't see this", "do_pick_replay_event")
-		addButton("Back", "You changed your mind", "")
+			addButton("Ошибка", "Тебе не стоит этого видеть", "do_pick_replay_event")
+		addButton("Назад", "Вы передумали", "")
 	if(state == "do_pick_replay_event"):
-		saynn("Which scene of that event do you want to see again?")
+		saynn("Какую сцену из этого события ты хочешь увидеть снова?")
 
 		addEventReplaySceneButtons()
 		if (false):
-			addButton("Error", "You shouldn't see this", "do_start_replay_scene")
-		addButton("Back", "You changed your mind", "replay_menu")
+			addButton("Ошибка", "Тебе не стоит этого видеть", "do_start_replay_scene")
+		addButton("Назад", "Вы передумали", "replay_menu")
 	if(state == "trigger_wait"):
 		playAnimation(StageScene.Solo, "stand", {pc="artica"})
 		var firstTimeWait = getFlag("ArticaModule.firstTimeWait", false)
 		if (!firstTimeWait):
 			setFlag("ArticaModule.firstTimeWait", true)
-			saynn("Artica is looking around intently.. you get a feeling that she wants to do something.. on her own.. but her inherent shyness prevents her from telling you that outright.")
+			saynn("Артика внимательно оглядывается по сторонам... У тебя возникает чувство, что она хочет что-то сделать... сама... но врожденная застенчивость мешает ей сказать тебе об этом прямо.")
 
-			saynn("So you just leave her alone. You find a spot from where you can watch her.. and then just wait.")
+			saynn("И ты оставляешь её в покое. Ты находишь место, откуда можно за ней наблюдать... и просто ждешь.")
 
-			saynn("And, not even a few minutes later, Artica starts heading somewhere, her desire makes her eager to explore the prison.")
+			saynn("И не проходит и нескольких минут, как Артика отправляется куда-то — желание исследовать тюрьму переполняет её.")
 
 		else:
-			saynn("Artica's behavior makes it obvious that she wants to explore the station on her own more.")
+			saynn("Поведение Артики явно дает понять, что она хочет еще больше изучить станцию самостоятельно.")
 
-			saynn("So you just leave her alone. You find a spot from where you can watch her.. and then just wait. Soon enough, Artica starts heading somewhere..")
+			saynn("И ты оставляешь её в покое. Ты находишь место, откуда можно за ней наблюдать... и просто ждешь. Вскоре Артика начинает куда-то направляться...")
 
-		addButton("Follow", "See what Artica will do", "start_corruption_event")
+		addButton("Следовать", "Посмотреть, что будет делать Артика", "start_corruption_event")
 	if(state == "sex_menu"):
-		saynn("Artica is horny. How do you wanna solve that?")
+		saynn("Артика возбуждена. Как ты хочешь это решить?")
 
-		addButton("Breed her", "Try for some pups", "sex_breed")
-		addButton("Ride her", "Artica has a nice cock.. why not ride it", "sex_ride")
+		addButton("Оплодотворить её", "Попробовать зачать щенков", "sex_breed")
+		addButton("Оседлать её", "У Артики классный член... почему бы не оседлать его?", "sex_ride")
 		if (corruption >= 0.2):
-			addButton("Pawjob", "Make Artica cum with just your feet", "sex_pawjob")
+			addButton("Павджоб", "Доведи Артику до оргазма одними лишь ступнями", "sex_pawjob")
 		else:
-			addDisabledButton("Pawjob", "Artica's corruption needs to be above 20% for her to agree to this")
+			addDisabledButton("Павджоб", "Чтобы Артика согласилась на это, уровень её развращённости должен быть выше 20%")
 		if (corruption >= 0.3):
-			addButtonWithChecks("Ropes!", "Use some ropes to suspend Artica above the floor.. and then have some fun with her (Requires a rope harness!)", "sex_ropes", [], [[ButtonChecks.HasItemWithTag, ItemTag.RopeHarness]])
+			addButtonWithChecks("Верёвки!", "Используй верёвки, чтобы подвесить Артику над полом... а затем оторвись по полной (Требуется верёвочная сбруя!)", "sex_ropes", [], [[ButtonChecks.HasItemWithTag, ItemTag.RopeHarness]])
 		else:
-			addDisabledButton("Ropes!", "Artica's corruption needs to be above 30% for her to agree.. also.. prepare a rope harness")
+			addDisabledButton("Верёвки!", "Чтобы Артика согласилась, её развращённость должна быть выше 30%... а также... приготовь верёвочную сбрую")
 		if (corruption >= 0.5):
 			if (!isCaged):
-				addButton("Mutual pawjob", "Help each other out with your paws", "sex_mutualpawjob")
+				addButton("Взаимный лапотрах", "Помогите друг другу своими лапками", "sex_mutualpawjob")
 			else:
-				addDisabledButton("Mutual pawjob", "Artica can not be caged for this scene. Sorry!")
+				addDisabledButton("Взаимный лапотрах", "Для этой сцены Артика не должна быть в клетке. Прости!")
 		else:
-			addDisabledButton("Mutual pawjob", "Artica's corruption needs to be above 50% for her to be kinky enough to do this!")
+			addDisabledButton("Взаимный лапотрах", "Чтобы Артика стала достаточно извращённой для этого, её уровень развращённости должен быть выше 50%!")
 		if (corruption >= 0.8):
-			addButtonWithChecks("Hypnovisor fun..", "Mess with Artica's mind a little.. You will need a hypnovisor for this", "sex_hypnovisorfun", [], [[ButtonChecks.HasItemWithTag, ItemTag.Hypnovisor]])
+			addButtonWithChecks("Веселье с гипновизором...", "Немного покопайся в мозгах у Артики... Для этого тебе понадобится гипновизор", "sex_hypnovisorfun", [], [[ButtonChecks.HasItemWithTag, ItemTag.Hypnovisor]])
 		else:
-			addDisabledButton("Hypnovisor fun..", "Artica's corruption needs to be above 80% for her to be kinky enough to do this.. also don't forget to bring a hypnovisor!")
+			addDisabledButton("Веселье с гипновизором...", "Уровень развращенности Артики должен быть выше 80%, чтобы она стала достаточно похотливой для этого... и не забудь взять гипновизор!")
 		if (getFlag("ArticaModule.LQArticaGotDreamCatcher")):
-			addButton("Invite Rahi..", "Let Rahi and Artica do some kinky stuff together..", "do_invite_rahi")
-		addButton("Back", "Never mind", "")
+			addButton("Пригласить Рахи...", "Дать Рахи и Артике заняться чем-нибудь пошленьким вместе...", "do_invite_rahi")
+		addButton("Назад", "Проехали", "")
 	if(state == "tease_menu"):
-		saynn("What do you want to do?")
+		saynn("Что ты хочешь сделать?")
 
-		addButton("Canteen", "(Pawplay) Invite Artica to go eat", "do_tease_canteen")
-		addButton("Your cell", "Invite Artica to your cell", "do_tease_cell")
+		addButton("Столовая", "(Лапоигры) Пригласить Артику поесть", "do_tease_canteen")
+		addButton("Твоя камера", "Пригласить Артику к себе в камеру", "do_tease_cell")
 		if (corruption >= 0.25):
-			addButton("Grope her", "Casually grope Artica out in the public", "do_grope")
+			addButton("Лапать её", "Небрежно лапать Артику на людях", "do_grope")
 		else:
-			addDisabledButton("Grope her", "Artica's corruption needs to be at least 25% for you to casually grope her out in the public")
+			addDisabledButton("Лапать её", "Уровень развращенности Артики должен быть не менее 25%, чтобы ты мог бесцеремонно лапать её на людях")
 		if (corruption >= 0.5):
-			addButton("Dirty language", "Get Artica horny with just words", "do_dirtylanguage")
+			addButton("Грязные словечки", "Завести Артику одним лишь словом", "do_dirtylanguage")
 		else:
-			addDisabledButton("Dirty language", "Artica's corruption needs to be at least 50% for you to be able to get her horny with just your words")
-		addButton("Back", "Go back to the previous menu", "")
+			addDisabledButton("Грязные словечки", "Уровень развращенности Артики должен быть не менее 50%, чтобы ты мог возбудить её одними лишь словами")
+		addButton("Назад", "Назад в предыдущее меню", "")
 	if(state == "do_dirtylanguage"):
 		playAnimation(StageScene.Grope, "tease", {pc="artica", npc="pc", bodyState={hard=true}})
 		var isPregnant = getCharacter("artica").isVisiblyPregnant()
-		saynn("You lean in close to Artica, making her feel your hot breath against her ear.")
+		saynn("Ты наклоняешься ближе к Артике, заставляя её чувствовать твоё горячее дыхание у самого уха.")
 
 		var theTopic = RNG.pick(["naked", "whore", "paws"])
 		#if (isCaged && RNG.chance(40)):
@@ -429,257 +429,257 @@ func _run():
 		if (!isPregnant && RNG.chance(30) && GM.pc.hasReachablePenis()):
 			theTopic = "breed"
 		if (theTopic == "naked"):
-			saynn("[say=pc]You look so beautiful when you're naked, Artica.[/say]")
+			saynn("[say=pc]Ты такая красивая, когда голая, Артика.[/say]")
 
-			saynn("Artica instantly lowers her gaze, her tail curling around her leg.")
+			saynn("Артика тут же опускает взгляд, а её хвост обвивается вокруг ноги.")
 
-			saynn("[say=pc]I just.. love.. seeing your tits.. cock.. your pussy.. all on display for me to see.[/say]")
+			saynn("[say=pc]Мне просто.. так.. нравится.. смотреть на твои сиськи.. на твой член.. на твою киску.. когда всё это выставлено напоказ для меня.[/say]")
 
 			saynn(""+str("She is not naked right now.. but you can still see her nipples becoming perky and stiff behind the shirt" if !isNaked else "You notice her nipples becoming perky and stiff as you say that..")+"")
 
-			saynn("[say=artica]Mm-m.. t-thank you.. for the c-compliment..[/say]")
+			saynn("[say=artica]Мм-м.. с-спасибо.. за к-комплимент..[/say]")
 
-			saynn("[say=pc]You're such a good pet. You're always ready to show off your body for me.[/say]")
+			saynn("[say=pc]Ты такая послушная зверушка. Всегда готова выставить свое тело напоказ для меня.[/say]")
 
 			if (!isNaked):
-				saynn("Her breathing becomes deeper, "+str("something in her shorts twitching" if isCaged else "her shorts bulging")+"..")
+				saynn("Ее дыхание становится глубже, "+str("something in her shorts twitching" if isCaged else "her shorts bulging")+"..")
 
 			else:
-				saynn("Her breathing becomes deeper, "+str("her caged up cock becoming all cute and drippy" if isCaged else "her cock peeking out of its sheath, the tip leaking pre..")+"")
+				saynn("Ее дыхание становится глубже, "+str("her caged up cock becoming all cute and drippy" if isCaged else "her cock peeking out of its sheath, the tip leaking pre..")+"")
 
-			saynn("[say=artica]Y-y.. y-yes.. I-I.. I.. love.. I love being a.. e-exhibionist little slut..[/say]")
+			saynn("[say=artica]Д-да.. д-да.. Я.. я.. обожаю.. обожаю быть такой.. э-экзальтированной маленькой шлюшкой-экспонатом..[/say]")
 
-			saynn("So cute to hear her say that.")
+			saynn("Так мило слышать, как она это говорит.")
 
-			saynn("[say=pc]Good girl.[/say]")
+			saynn("[say=pc]Хорошая девочка.[/say]")
 
-			saynn("Her chin is low.. but her"+str(" naked" if isNaked else "")+" chest is puffed out, her butt swaying sensually while her paws slide along the white fur on her sides.")
+			saynn("Ее подбородок опущен.. но ее"+str(" naked" if isNaked else "")+" грудь вздымается, а задница соблазнительно покачивается, пока лапки скользят по белому меху на боках.")
 
 		elif (theTopic == "whore"):
-			saynn("[say=pc]You're so obedient, Artica. Always ready to spread your legs for me.. or anyone really.. who wants to use you."+str(". Always ready to offer me your cock to play with too~." if GM.pc.hasVagina() else "")+"[/say]")
+			saynn("[say=pc]Ты такая покорная, Артика. Всегда готова раздвинуть ноги для меня.. или вообще для любого.. кто захочет тебя использовать."+str(". Always ready to offer me your cock to play with too~." if GM.pc.hasVagina() else "")+"[/say]")
 
-			saynn("Your words make her blink many times, her cheeks blush deep red as she stands up on her toes.")
+			saynn("От твоих слов она часто хлопает ресницами, а ее щеки заливаются густым румянцем, когда она встает на цыпочки.")
 
-			saynn("[say=pc]Right?[/say]")
+			saynn("[say=pc]Правда?[/say]")
 
-			saynn("[say=artica]I.. um.. m-maybe..[/say]")
+			saynn("[say=artica]Я.. ну.. м-может быть..[/say]")
 
-			saynn("You don't touch her at all.. but your eyes are drilling her, making the white fluff squirm in place.."+str(" while her nips are becoming visibly aroused behind the shirt." if !isNaked else " while her nips become visibly hard and stiff..")+"")
+			saynn("Ты её совсем не трогаешь... но твой взгляд буквально впивается в неё, заставляя белый пушок на её теле подёргиваться.."+str(" while her nips are becoming visibly aroused behind the shirt." if !isNaked else " while her nips become visibly hard and stiff..")+"")
 
-			saynn("[say=pc]Maybe? C'mon, you can do better than that.[/say]")
+			saynn("[say=pc]Может быть? Да ладно тебе, ты можешь лучше.[/say]")
 
-			saynn("Her voice is trembling.")
+			saynn("Её голос дрожит.")
 
-			saynn("[say=artica]I.. I love being.. a f-fucktoy..[/say]")
+			saynn("[say=artica]Я.. я обожаю быть.. с-секс-игрушкой..[/say]")
 
-			saynn("Wow, brave words.")
+			saynn("Ого, какие смелые слова.")
 
-			saynn("[say=pc]What else? Tell me.[/say]")
+			saynn("[say=pc]Что ещё? Рассказывай.[/say]")
 
-			saynn("[say=artica]I'm.. I.. a cocksleeve.. a plaything.. I-I w-wanna be u-used.. f-forced..[/say]")
+			saynn("[say=artica]Я.. я.. просто клячка.. игрушка.. Я-я х-хочу, чтобы меня и-использовали.. с-силой..[/say]")
 
-			saynn("Her shy voice.. coupled with the dirty things that she is saying.. arouses even you.")
+			saynn("Её застенчивый голос в сочетании с грязными словами, которые она произносит... возбуждает даже тебя.")
 
-			saynn("[say=pc]Good girl.[/say]")
+			saynn("[say=pc]Хорошая девочка.[/say]")
 
 		elif (theTopic == "paws"):
-			saynn("[say=pc]You have a thing for paws..[/say]")
+			saynn("[say=pc]Тебе нравятся лапки..[/say]")
 
-			saynn("Artica lowers her gaze, her legs shuffling slowly..")
+			saynn("Артика опускает взгляд, медленно переминаясь с ноги на ногу..")
 
-			saynn("[say=artica]I.. um.. d-don't what you are t-talking a-about..[/say]")
+			saynn("[say=artica]Я.. эм.. н-не понимаю, о ч-чем ты г-говоришь..[/say]")
 
-			saynn("[say=pc]Oh yeah? Saying that you don't like them would be a lie and you know it~.[/say]")
+			saynn("[say=pc]Да неужели? Сказать, что они тебе не нравятся — значит соврать, и ты это прекрасно знаешь~.[/say]")
 
-			saynn("[say=artica]I.. I.. am a pawslut..[/say]")
+			saynn("[say=artica]Я.. я.. я лапкозависимая шлюшка..[/say]")
 
-			saynn("Wow, so bold.")
+			saynn("Ого, как смело.")
 
-			saynn("[say=artica]I like the way t-they feel.. the s-softness.. the warmth.. I like the way they smell..[/say]")
+			saynn("[say=artica]Мне н-нравится их ощущение.. их м-мягкость.. тепло.. Мне нравится, как они пахнут..[/say]")
 
-			saynn("She swallows audibly.")
+			saynn("Она слышно сглатывает.")
 
-			saynn("[say=artica]I l-ll..love.. sucking on toes.. a-and.. licking paw pads.. a.and aa..ah..and.. having my cock stroked with hind paws..[/say]")
+			saynn("[say=artica]Я.. л-люблю.. сосать пальцы на лапах.. а-а.. лизать подушечки.. а.. аа.. и.. и когда мой член ласкают задними лапами..[/say]")
 
 			if (isNaked):
-				saynn("She swallows again.. and again.. but her mouth is still watering itself.."+str(" Her caged cock twitching in its tight little prison.." if isCaged else " Her cock getting out of the sheath and becoming erect fast..")+"")
+				saynn("Она сглатывает снова.. и снова.. но во рту всё равно скапливается слюна.."+str(" Her caged cock twitching in its tight little prison.." if isCaged else " Her cock getting out of the sheath and becoming erect fast..")+"")
 
 			else:
-				saynn("She swallows again.. and again.. but her mouth is still watering itself.."+str(" Something in her shorts is twitching.." if isCaged else " Her shorts bulging fast, there is wet spot on the cloth already..")+"")
+				saynn("Она сглатывает снова.. и снова.. но во рту всё равно скапливается слюна.."+str(" Something in her shorts is twitching.." if isCaged else " Her shorts bulging fast, there is wet spot on the cloth already..")+"")
 
-			saynn("[say=artica]I-I'm a h-huge.. slut.. for paws.. b-being stepped on.. s-sucking.. licking.. ah.. p-please.. hh-hh..[/say]")
+			saynn("[say=artica]Я-я.. огромная.. шлюшка.. по лапкам.. л-люблю, когда на меня наступают.. с-сосать.. лизать.. ах.. п-пожалуйста.. хх-хх..[/say]")
 
-			saynn("You smile while Artica is panting softly..")
+			saynn("Ты улыбаешься, пока Артика тихонько посапывает..")
 
-			saynn("[say=artica]Ah.. hh-h.. ah.. t-that's about it..[/say]")
+			saynn("[say=artica]Ах.. хх-х.. ах.. в-вот и всё..[/say]")
 
-			saynn("She said more than enough.")
+			saynn("Она сказала более чем достаточно.")
 
 		elif (theTopic == "preg"):
-			saynn("[say=pc]You're glowing, Artica. Pregnancy looks good on you.[/say]")
+			saynn("[say=pc]Ты прямо светишься, Артика. Беременность тебе к лицу.[/say]")
 
-			saynn("Her gaze directed down, towards her round belly.")
+			saynn("Её взгляд опустился вниз, на её округлившийся живот.")
 
-			saynn("[say=artica]T-thank you.. I'm so.. f-fertile.. R-ready to carry litter after l-litter..[/say]")
+			saynn("[say=artica]Т-спасибо.. Я такая.. о-оплодотворенная.. Г-готова вынашивать помёт за по-по妙дом..[/say]")
 
-			saynn("You smile while she gently embraces herself.")
+			saynn("Ты улыбаешься, пока она нежно обнимает саму себя.")
 
-			saynn("[say=artica]I'm.. a l-little breeding bitch.. m-made to b-breed and c-carry pups.. and k-kittens.. a-and.. a-.. ah.. hah..[/say]")
+			saynn("[say=artica]Я.. м-маленькая сучка для разведения.. с-созданная, ч-чтобы плодиться и н-носить щенят.. и к-котят.. и.. и.. а-а.. ах.. хах..[/say]")
 
-			saynn("[say=pc]Little litter carrier.[/say]")
+			saynn("[say=pc]Мелкая носильщица мусора.[/say]")
 
-			saynn("Her eyes.. so lusty..")
+			saynn("Её глаза.. такие похотливые..")
 
-			saynn("[say=artica]I-I want to carry all"+str(" your" if GM.pc.hasReachablePenis() else "")+" pups.. t-to be filled with"+str(" your" if GM.pc.hasReachablePenis() else "")+" seed.. again and again..[/say]")
+			saynn("[say=artica]Я... я хочу нести всё"+str(" your" if GM.pc.hasReachablePenis() else "")+" щенки.. ч-чтобы наполняли меня"+str(" your" if GM.pc.hasReachablePenis() else "")+" семенем.. снова и снова..[/say]")
 
-			saynn("Her shy tongue is saying some very naughty things..")
+			saynn("Её робкий язычок произносит очень грязные вещи..")
 
-			saynn("[say=artica]I'm such a.. a c-cum dumpster.. a c-cock sleeve.. breeding sow.. m-meat hole.. s-seed receptacle.. a slut pup..[/say]")
+			saynn("[say=artica]Я такая.. такая с-спермобак.. просто к-кокслив.. свинья для осеменения.. м-мясная дырка.. с-сосуд для семени.. сучка-щенок..[/say]")
 
-			saynn("Wow.. she can keep going and going.. and going..")
+			saynn("Ого.. она может говорить это бесконечно.. и бесконечно..")
 
 		elif (theTopic == "breed"):
 			if (getCharacter("artica").isInHeat()):
-				saynn("[say=pc]You're glowing today, Artica. Feeling that heat again?[/say]")
+				saynn("[say=pc]Ты сегодня прямо сияешь, Артика. Снова чувствуешь этот жар?[/say]")
 
 			else:
-				saynn("[say=pc]You like being bred, don't you~?[/say]")
+				saynn("[say=pc]Тебе ведь нравится, когда тебя осеменяют, да~?[/say]")
 
-			saynn("Her tail is swishing behind her as you say that.")
+			saynn("Когда ты это говоришь, её хвост начинает вилять из стороны в сторону.")
 
-			saynn("[say=artica]I.. y-yes.. I c-can't s-stop thinking a-about i-it..[/say]")
+			saynn("[say=artica]Я.. д-да.. я н-не могу п-перестать д-думать об э-этом..[/say]")
 
-			saynn("[say=pc]About what?[/say]")
+			saynn("[say=pc]О чём именно?[/say]")
 
-			saynn("She bites her lip.")
+			saynn("Она прикусывает губу.")
 
-			saynn("[say=artica]A-about.. b-being b-bred.. About f-feeling"+str(" your" if GM.pc.hasReachablePenis() else "")+" cock inside me.. filling me up with seed..[/say]")
+			saynn("[say=artica]Н-насчет.. т-того, что меня б-бродят.. Насчет о-ощущений,"+str(" your" if GM.pc.hasReachablePenis() else "")+"когда член внутри меня.. наполняет меня с-семенем..[/say]")
 
-			saynn("The scent her fur gives off.. is so arousing right now.")
+			saynn("Запах её меха.. сейчас так возбуждает.")
 
-			saynn("[say=pc]You like that, don't you? Being filled up, feeling that warm cum flooding your pussy.[/say]")
+			saynn("[say=pc]Тебе ведь это нравится, да? Когда тебя наполняют, когда чувствуешь, как теплая сперма заливает твою киску.[/say]")
 
-			saynn("She nods eagerly.")
+			saynn("Она жадно кивает.")
 
-			saynn("[say=artica]I.. I.. I d-don't know.. I.. I t-think I love it.. I l-love b-being f-fucked by big cocks, f-feeling them stretch m-me wide.. r-ravanging m-my h-holes.. i-inflating my b-belly with that.. t-thick v-virile seed.. ahh-h..[/say]")
+			saynn("[say=artica]Я.. я.. я д-даже не знаю.. Я.. я к-кажется, мне это н-нравится.. М-мне н-нравится, к-когда меня п-трахают огромные члены, к-когда чувствую, как они р-раздвигают меня.. р-разрывают мои д-дырочки.. н-наполняя мой ж-живот этой.. т-толстой, м-мужской спермой.. ахх-х..[/say]")
 
 			if (isNaked):
-				saynn("She is shivering, her "+str("caged up cock is pulsing wildly inside.. her pussy is so needy she is making the floor wet." if isCaged else "canine cock leaves its sheath and is pulsing wildly.. her pussy is so needy that she is making the floor wet.")+"")
+				saynn("Она дрожит, её "+str("caged up cock is pulsing wildly inside.. her pussy is so needy she is making the floor wet." if isCaged else "canine cock leaves its sheath and is pulsing wildly.. her pussy is so needy that she is making the floor wet.")+"")
 
 			else:
-				saynn("She is shivering, her "+str("caged up cock is pulsing wildly inside her shorts.. her pussy is so needy it's making a big wet spot on the cloth." if isCaged else "canine cock is pulsing wildly inside her shorts.. her pussy is so needy it's making a big wet spot on the cloth.")+"")
+				saynn("Она дрожит, её "+str("caged up cock is pulsing wildly inside her shorts.. her pussy is so needy it's making a big wet spot on the cloth." if isCaged else "canine cock is pulsing wildly inside her shorts.. her pussy is so needy it's making a big wet spot on the cloth.")+"")
 
-			saynn("[say=artica]I..I'm a.. a dirty c-cumslut.. A-.. ah.. b-breeding whore who craves c-cock.. w-who begs to b-be filled with cum.. I.I.. l-love b-being used.. fucked.. i-impregnated.. any way y-you want..[/say]")
+			saynn("[say=artica]Я.. я.. грязная с-спермотека.. П-п.. ах.. шлюха для б-брэдинга, которая жаждет ч-члена.. к-которая умоляет, ч-чтобы её н-наполнили спермой.. Я.. я.. л-люблю, когда меня используют.. трахают.. о-оплодотворяют.. любым с-способом, к-какой захочешь..[/say]")
 
-			saynn("You smile while watching the poor needy fluff squirm.")
+			saynn("Ты улыбаешься, наблюдая за тем, как извивается эта бедная, жаждущая пушистка.")
 
-			saynn("[say=pc]Good girl.[/say]")
+			saynn("[say=pc]Хорошая девочка.[/say]")
 
-		saynn("Making her horny is so easy now, Artica's libido seems to be off the charts..")
+		saynn("Разогнать её похоть теперь проще простого, либидо Артики, кажется, зашкаливает..")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "do_grope"):
 		playAnimation(StageScene.Grope, "grope", {pc="artica", npc="pc", bodyState={hard=true}})
 		var isPregnant = getCharacter("artica").isVisiblyPregnant()
 		var acceptCaged = getFlag("ArticaModule.cagedAcceptStage", 0)
 		if (isPregnant):
-			saynn("Seeing Artica pregnant.. you just can't stop yourself from doing this first..")
+			saynn("Вид беременной Артики... ты просто не можешь удержаться, чтобы не сделать это первым..")
 
-			saynn("Without much warning, your hands"+str(" undo the buttons of her shirt and open it. They then" if !isNaked else "")+" land on her swollen tits and cup then, her dark cyan nips dribble milk even from just a small amount of pressure.")
+			saynn("Без лишних предупреждений, твои руки"+str(" undo the buttons of her shirt and open it. They then" if !isNaked else "")+" ложатся на её раздутые сиськи и обхватывают их; её тёмно-бирюзовые соски начинают сочиться молоком даже от малейшего нажатия.")
 
-			saynn("[say=artica]Ahh..[/say]")
+			saynn("[say=artica]Ааах..[/say]")
 
-			saynn("[say=pc]You have some juicy tits, Artica..[/say]")
+			saynn("[say=pc]У тебя сочные сиськи, Артика..[/say]")
 
-			saynn("[say=artica]T-thanks.. t-they just.. you k-know.. from b-breeding.. Ahh-h~..[/say]")
+			saynn("[say=artica]С-спасибо.. о-они просто.. ну, ты з-знаешь.. от в-вскармливания.. Ахх-х~..[/say]")
 
-			saynn("You squeeze her lactating tits firmly, causing many little squirts of breast milk! You really get her going, Artica is arching her back while lots of little rivers of milk start trailing down from her nips.")
+			saynn("Ты крепко сжимаешь её лактирующие груди, вызывая целые брызги грудного молока! Ты по-настоящему заводишь её: Артика выгибает спину, пока тонкие струйки молока стекают по её соскам.")
 
-			saynn("[say=pc]I know.[/say]")
+			saynn("[say=pc]Я знаю.[/say]")
 
-			saynn("After that, your hands slide lower and land on her pregnant belly. Gently, you begin to rub it.")
+			saynn("После этого твои руки скользят ниже и ложатся на её беременный живот. Ты начинаешь нежно его поглаживать.")
 
-			saynn("[say=pc]Enough to feed many pups.. Like the ones that you are carrying.[/say]")
+			saynn("[say=pc]Этого хватит, чтобы прокормить кучу щенков.. Таких, как те, что ты носишь в себе.[/say]")
 
-			saynn("[say=artica]Nnhh-h.. ah.. y-yeah.. haha.. h-ah.. I'm s-such a.. puppy maker..[/say]")
+			saynn("[say=artica]Ннхх-х.. ах.. д-да.. ха-ха.. ах.. Я т-такая.. производительница щенков..[/say]")
 
 		else:
-			saynn("Without much warning, your hands"+str(" undo the buttons of her shirt and open it. They then" if !isNaked else "")+" land on Artica's {artica.breasts} and cup them, emphasizing their form."+str(" Some lonely drops of breast milk leak from her dark cyan nips as you do that.." if getCharacter("artica").canBeMilked() else "")+"")
+			saynn("Без лишних предупреждений, твои руки"+str(" undo the buttons of her shirt and open it. They then" if !isNaked else "")+" приземляются на {artica.breasts} Артики, и ты обхватываешь их ладонями, подчеркивая их форму."+str(" Some lonely drops of breast milk leak from her dark cyan nips as you do that.." if getCharacter("artica").canBeMilked() else "")+"")
 
-			saynn("[say=artica]Eep..[/say]")
+			saynn("[say=artica]Ой...[/say]")
 
-			saynn("She looks around, checking if anyone is looking while you're casually groping her tits.")
+			saynn("Она оглядывается по сторонам, проверяя, не смотрит ли кто-нибудь, пока ты небрежно тискаешь её сиськи.")
 
-			saynn("[say=pc]Afraid that someone might see this? Or maybe.. you want to be seen?[/say]")
+			saynn("[say=pc]Боишься, что кто-то увидит? Или, может... ты хочешь, чтобы тебя заметили?[/say]")
 
-			saynn("One hand stays and teases her nips, playing with the fancy purple piercings that the girl has.. while another slides down along her belly.. tracing around the belly button.. before reaching around and suddenly pulling"+str(" her shorts down and yanking her tail high" if !isNaked else " on her tail")+", exposing Artica's fluffy ass to any random onlookers. Her tail tries to curl down.. but you keep it high and use your second hand to spread her ass, making sure Artica's tight asshole and"+str(" creamed dripping cunt" if getCharacter("artica").hasEffect(StatusEffect.HasCumInsideVagina) else "wet need cunt")+" are visible.")
+			saynn("Одна рука остается на её сосках, дразня их и играя с изысканными фиолетовыми пирсингами, которые носит эта девчонка... в то время как другая скользит вниз вдоль живота... очерчивая пупок... прежде чем обхватить и внезапно потянуть"+str(" her shorts down and yanking her tail high" if !isNaked else " on her tail")+", обнажая пушистую задницу Артики перед любыми случайными прохожими. Её хвост пытается поджаться... но ты держишь его высоко и используешь вторую руку, чтобы раздвинуть её ягодицы, следя за тем, чтобы её тугой анус и"+str(" creamed dripping cunt" if getCharacter("artica").hasEffect(StatusEffect.HasCumInsideVagina) else "wet need cunt")+" были хорошо видны.")
 
-			saynn("[say=artica]Ah!..[/say]")
+			saynn("[say=artica]Ах!..[/say]")
 
-			saynn("[say=pc]Don't like it? Why don't you bite me then?[/say]")
+			saynn("[say=pc]Не нравится? Ну так укуси меня тогда![/say]")
 
-			saynn("[say=artica]Eep.. I-I know better t-than to bite..[/say]")
+			saynn("[say=artica]Ик.. Я-я знаю, ч-что кусаться — не лучшая идея...[/say]")
 
 			if (isVerySlut):
-				saynn("Random inmates walk past.. staring at Artica's holes. This makes her.. drip eagerly.. the fluff is squirming in your hands while you grope her ass.")
+				saynn("Мимо проходят случайные заключенные, пялясь в дырочки Артики. От этого она начинает... жадно течь... пух в твоих руках буквально извивается, пока ты ласкаешь её задницу.")
 
-				saynn("[say=pc]Good slut.[/say]")
+				saynn("[say=pc]Хорошая шлюшка.[/say]")
 
 			else:
-				saynn("Random inmates walk past.. staring at Artica's holes. This makes her lower her gaze and.. and just take their teasing looks.")
+				saynn("Мимо проходят случайные заключенные... пялясь на дырки Артики. От этого она опускает взгляд и... просто терпит их насмешливые взгляды.")
 
-				saynn("[say=pc]Good girl.[/say]")
+				saynn("[say=pc]Хорошая девочка.[/say]")
 
 		if (!isCaged):
 			if (isLusty):
-				saynn("The fluff is blushing.. while her cock is peeking out more and more from its sheath. It's gotten quite hard from you teasing her so much..")
+				saynn("Пушинка краснеет... а её член всё больше и больше высовывается из чехла. Он стал довольно твердым от того, как сильно ты её дразнишь...")
 
 			else:
-				saynn("The fluff is blushing.. while her hard cock is throbbing more and more. It feels like any touch can set it off now..")
+				saynn("Пушинка краснеет... а её твердый член всё сильнее пульсирует. Кажется, от любого прикосновения он вот-вот сорвется...")
 
 		else:
 			if (isLusty):
-				saynn("The fluff is blushing.. while her cock is throbbing inside the chastity cage.. It feels like any touch can set it off, her cyan shaft putting an immense amount of pressure on the metal.")
+				saynn("Пушинка краснеет... а её член пульсирует внутри клетки целомудрия... Кажется, любое прикосновение может спровоцировать эрекцию; её голубой ствол оказывает огромное давление на металл.")
 
 			else:
-				saynn("The fluff is blushing.. while her cock is trying more and more to get out of its sheath.. failing as the metal keeps forced inside with only the drippy tip peeking.")
+				saynn("Пушинка краснеет... а её член всё отчаяннее пытается выбраться из чехла... но терпит неудачу, так как металл удерживает его внутри, оставляя снаружи лишь сочащуюся смазкой головку.")
 
 			if (acceptCaged <= 1):
-				saynn("[say=artica]T-the c-cage.. hh-hurts a bit.. m-maybe you s-should..[/say]")
+				saynn("[say=artica]К-клетка... хх-больно немного.. м-может, тебе с-стоит..[/say]")
 
-				saynn("[say=pc]Are you telling me what to do?[/say]")
+				saynn("[say=pc]Ты что, указываешь мне, что делать?[/say]")
 
-				saynn("[say=artica]N-nno.. of course n-not.. nhh.. gods..[/say]")
+				saynn("[say=artica]Н-нет.. конечно н-нет.. нхх.. боги..[/say]")
 
-				saynn("You let go of her ass and cup her fluffy balls instead, gently squeezing.")
+				saynn("Ты отпускаешь её задницу и вместо этого обхватываешь её пушистые яички, нежно сжимая их.")
 
-				saynn("[say=pc]This stays on until I say otherwise.[/say]")
+				saynn("[say=pc]Эта штука будет на тебе, пока я не скажу иначе.[/say]")
 
-				saynn("Maybe you should bring the fluff into your cell sometime and train her to be less reliant on her dick for pleasure..")
+				saynn("Может, тебе стоит как-нибудь затащить эту пушистую в свою камеру и научить её получать удовольствие не только от своего члена...")
 
 			elif (acceptCaged <= 2):
-				saynn("[say=artica]T-the c-cage.. S-sits so tight..[/say]")
+				saynn("[say=artica]К-клетка.. с-сидит так туго..[/say]")
 
-				saynn("[say=pc]Are you complaining? Think I should unlock you?[/say]")
+				saynn("[say=pc]Ты жалуешься? Думаешь, мне стоит тебя расстегнуть?[/say]")
 
-				saynn("[say=artica]Nn-no.. Its f-for you to d-decide..[/say]")
+				saynn("[say=artica]Н-нет.. Т-тебе решать..[/say]")
 
-				saynn("You let go of her ass and cup her fluffy balls instead, gently squeezing.")
+				saynn("Ты отпускаешь её задницу и вместо этого обхватываешь её пушистые яички, нежно сжимая их.")
 
-				saynn("[say=pc]Good.[/say]")
+				saynn("[say=pc]Умница.[/say]")
 
-				saynn("She looks like she needs slightly more training to rely less on her dick.")
+				saynn("Похоже, ей нужно еще немного потренироваться, чтобы меньше зависеть от своего члена.")
 
 			else:
-				saynn("[say=artica]M-my useless-s.. c-cock.. ah..[/say]")
+				saynn("[say=artica]М-мой бесполезный.. ч-член.. ах..[/say]")
 
-				saynn("[say=pc]It is, indeed.[/say]")
+				saynn("[say=pc]Так оно и есть.[/say]")
 
-				saynn("[say=artica]I'm.. a f-fucktoy.. nh-h..[/say]")
+				saynn("[say=artica]Я.. просто шлюшка-игрушка.. нх-х..[/say]")
 
-		saynn("You've gotten the fluff pent up in seconds.. good..")
+		saynn("Ты умудрился довести пушистую до пика за считанные секунды... хорошо...")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 func getDebugActions():
 	return [
 	{
@@ -704,7 +704,7 @@ func doDebugAction(_id, _args = {}):
 func addEventReplayButtons():
 	var replayScenes = getModule("ArticaModule").getReplayMenuScenes()
 	for eventID in replayScenes:
-		addButton(replayScenes[eventID]["name"], "Pick this event", "do_pick_replay_event", [eventID])
+		addButton(replayScenes[eventID]["name"], "Выбрать это событие", "do_pick_replay_event", [eventID])
 
 func addEventReplaySceneButtons():
 	var replayScenes = getModule("ArticaModule").getReplayMenuScenes()

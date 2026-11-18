@@ -7,175 +7,175 @@ func _run():
 	if(state == ""):
 		addCharacter("kidlat")
 		playAnimation(StageScene.Duo, "stand", {npc="kidlat"})
-		saynn("You sneakily peek your head into each cell of the lilac cellblock.. one cell after another.. until you find the one that has a familiar silhouette!")
+		saynn("Ты осторожно заглядываешь в каждую камеру сиреневого блока... одну за другой... пока не находишь ту, где виднеется знакомый силуэт!")
 
-		saynn("Kidlat is being lazy, for once, resting on her prisoner bed, her eyes closed.")
+		saynn("Кидлат, на удивление, ленится: она развалилась на своей тюремной койке с закрытыми глазами.")
 
-		saynn("Her ears perk when you step inside. With a sleepy smile, she lifts her head.")
+		saynn("Стоит тебе войти, как её уши навостряются. С сонной улыбкой она поднимает голову.")
 
-		saynn("[say=kidlat]Oh, hey, luv.[/say]")
+		saynn("[say=kidlat]О, привет, любовь моя![/say]")
 
-		saynn("She quickly swings her legs off the bed and stands. With a playful flourish, she invites you to step deeper into her cell.")
+		saynn("Она быстро спрыгивает с кровати и встает. Игривым жестом она приглашает тебя пройти вглубь камеры.")
 
-		saynn("[say=kidlat]Welcome to my crib![/say]")
+		saynn("[say=kidlat]Добро пожаловать в мою берлогу![/say]")
 
-		saynn("You look around. It's pretty much the same cell as any other, just with slightly more comfy furniture.. lilacs always get the best stuff.")
+		saynn("Ты оглядываешься. Камера почти такая же, как и все остальные, разве что мебель чуть поудобнее... сиреневым всегда достается самое лучшее.")
 
-		saynn("[say=pc]Cozy.[/say]")
+		saynn("[say=pc]Уютно.[/say]")
 
-		saynn("Kidlat grins.")
+		saynn("Кидлат расплывается в улыбке.")
 
-		saynn("[say=kidlat]Ye! Come on, let's cuddle! No reason to stand around.[/say]")
+		saynn("[say=kidlat]Е! Давай, иди ко мне, обнимемся! Чего ты там столбом стоишь?[/say]")
 
-		saynn("She reaches out and grabs your hand, pulling you towards her bed.")
+		saynn("Она протягивает руку и хватает тебя за ладонь, увлекая за собой к своей кровати.")
 
-		saynn("Why not.")
+		saynn("Почему бы и нет.")
 
-		addButton("Cuddle", "Spend some time together", "do_cuddle")
+		addButton("Обнимашки", "Провести время вместе", "do_cuddle")
 	if(state == "do_cuddle"):
 		playAnimation(StageScene.Cuddling, "idle", {npc="kidlat"})
-		saynn("There isn't much space.. but you both manage to squeeze in, your bodies finding a comfortable closeness. You wrap an arm around her as she nestles into your warmth, her head resting against your shoulder.")
+		saynn("Места маловато... но вам обоим удается втиснуться, и ваши тела находят уютное, тесное положение. Ты обнимаешь её, а она прижимается к твоему теплу, положив голову тебе на плечо.")
 
-		saynn("[say=pc]Much better than cuddling on those cold pipes, huh.[/say]")
+		saynn("[say=pc]Куда лучше, чем обниматься с этими холодными трубами, а?[/say]")
 
-		saynn("A soft laugh escapes her as she snugs deeper into your embrace.")
+		saynn("Тихий смешок срывается с её губ, когда она еще плотнее прижимается к тебе.")
 
-		saynn("[say=kidlat]Hah. I will probably never return there.[/say]")
+		saynn("[say=kidlat]Хах. Наверное, я туда уже никогда не вернусь.[/say]")
 
-		saynn("Makes you wonder if that means she's leaving her shopkeeper life behind.. a bittersweet thought.. but it's probably for the best.")
+		saynn("Невольно задумываешься: значит ли это, что она оставляет жизнь лавочницы?.. Мысль горько-сладкая... но, скорее всего, так будет даже лучше.")
 
-		saynn("[say=pc]That was quick. Not gonna miss that place?[/say]")
+		saynn("[say=pc]Быстро ты. Не будет скучать по тому месту?[/say]")
 
-		saynn("Her shoulders do a little bounce.")
+		saynn("Её плечи слегка вздрагивают от смеха.")
 
-		saynn("[say=kidlat]What was there to miss? It was a good place to hide. Hide from both your problems and feelings..[/say]")
+		saynn("[say=kidlat]А о чем тут скучать? Хорошее было место, чтобы спрятаться. Спрятаться и от проблем, и от собственных чувств...[/say]")
 
-		saynn("She pauses, gazing around the cell before her eyes fall on her worn lilac uniform. A quite hum escapes her.")
+		saynn("Она замирает, оглядывая камеру, прежде чем её взгляд падает на поношенную лиловую форму. Из её груди вырывается тихий гул.")
 
-		saynn("[say=kidlat]There is one thing that I will miss actually..[/say]")
+		saynn("[say=kidlat]На самом деле, будет одна вещь, по которой я буду скучать...[/say]")
 
-		saynn("[say=pc]Your cardboard box?[/say]")
+		saynn("[say=pc]Твоя картонная коробка?[/say]")
 
-		saynn("A burst of laughter makes her spray a little spit onto her shirt.")
+		saynn("Внезапный приступ смеха заставляет её немного брызнуть слюной на рубашку.")
 
-		saynn("[say=kidlat]PFFF! It's hard for me to bap ya from here. But consider yourself bapped.[/say]")
+		saynn("[say=kidlat]ПФФФ! Мне трудно тебя чмокнуть отсюда. Но считай, что я тебя чмокнула.[/say]")
 
-		saynn("[say=pc]Ow.[/say]")
+		saynn("[say=pc]Ой.[/say]")
 
-		saynn("She chuckles and then slides down a bit.. so she can look up at you from an upside-down angle, her eyes shining brightly.")
+		saynn("Она посмеивается и сползает чуть ниже... чтобы смотреть на тебя снизу вверх, под перевернутым углом, и её глаза при этом ярко сияют.")
 
-		saynn("[say=kidlat]I will miss you, luv.[/say]")
+		saynn("[say=kidlat]Я буду скучать по тебе, любовь моя.[/say]")
 
-		saynn("[say=pc]I'm still here, a little too early for that.[/say]")
+		saynn("[say=pc]Я всё ещё здесь, для этого ещё рановато.[/say]")
 
-		saynn("She rolls her eyes, still smiling.")
+		saynn("Она закатывает глаза, всё ещё улыбаясь.")
 
-		saynn("[say=kidlat]You know what I mean, hun. I will miss the ability to help you.[/say]")
+		saynn("[say=kidlat]Ты понимаешь, о чем я, дорогуша. Мне будет не хватать возможности помогать тебе.[/say]")
 
-		saynn("After a pause, her tone softens further.")
+		saynn("После паузы её тон становится ещё мягче.")
 
-		saynn("[say=kidlat]I couldn't understand why you were doing it. Why were you helping a silly blue cat..[/say]")
+		saynn("[say=kidlat]Я никак не могла понять, зачем ты это делаешь. Зачем ты помогаешь этому дурацкому синему коту...[/say]")
 
-		saynn("A voice is warm.. a pleasing murmur.")
+		saynn("Голос звучит тепло... приятный, убаюкивающий шепот.")
 
-		saynn("[say=kidlat]But now I do. I think ya got this cat addicted to that.. feeling.[/say]")
+		saynn("[say=kidlat]Но теперь я понимаю. Думаю, ты подсадил этого кота на это... чувство.[/say]")
 
-		saynn("A brief pause, Kidlat keeps pausing to try to gather her scrambled thoughts together.")
+		saynn("Короткая пауза; Кидлат то и дело замолкает, пытаясь собрать свои спутанные мысли воедино.")
 
-		saynn("[say=kidlat]Sounds soapy, I know.. But you matter to me. And I wanna matter to you.[/say]")
+		saynn("[say=kidlat]Звучит приторно, знаю... Но ты важен для меня. И я хочу быть важной для тебя.[/say]")
 
-		saynn("Her sweet words are making your heart melt.")
+		saynn("От её сладких слов твоё сердце начинает таять.")
 
-		saynn("[say=pc]You don't have to do anything to matter to me, Kidlat.[/say]")
+		saynn("[say=pc]Тебе не нужно ничего делать, чтобы быть важной для меня, Кидлат.[/say]")
 
-		saynn("[say=kidlat]I don't have to. But I want to. That's what friends do, they help each other~. Out of the kindness of their hearts![/say]")
+		saynn("[say=kidlat]Не обязательно. Но мне хочется. Так поступают друзья — помогают друг другу~. Просто по доброте душевной![/say]")
 
-		saynn("Nice to hear that.")
+		saynn("Приятно это слышать.")
 
-		saynn("[say=pc]You do have a kind heart, Kidlat, I will give you that. I'm not sure if I can be helped, though.[/say]")
+		saynn("[say=pc]Признаю, Кидлат, у тебя доброе сердце. Но не уверена, что мне можно помочь.[/say]")
 
-		saynn("[say=kidlat]You sure can be! I can help your adventures by continuing to be your shopkeeper~.[/say]")
+		saynn("[say=kidlat]Еще как можно! Я буду помогать тебе в приключениях, продолжая быть твоей лавочницей~.[/say]")
 
-		saynn("You raise a brow and tilt your head, your voice tease-y.")
+		saynn("Ты вопросительно вскидываешь бровь и наклоняешь голову, в твоем голосе слышится лукавство.")
 
-		saynn("[say=pc]Didn't you say you're done? And already, you wanna return down there?[/say]")
+		saynn("[say=pc]Разве ты не говорила, что с тебя хватит? И ты уже хочешь вернуться туда?[/say]")
 
-		saynn("[say=kidlat]That wouldn't be a.. return.. I'd only be down there when you're down there. I can raid stashes and sell stuff only to you![/say]")
+		saynn("[say=kidlat]Это не будет... возвращением... Я буду спускаться туда только тогда, когда будешь ты. Я смогу грабить тайники и продавать всё только тебе![/say]")
 
-		saynn("Your very personal shopkeeper kitty.")
+		saynn("Твоя личная кошечка-торговка.")
 
-		saynn("[say=pc]How would you find me?[/say]")
+		saynn("[say=pc]А как бы ты меня нашла?[/say]")
 
-		saynn("[say=kidlat]I know my ways around those tunnels, don't worry~.[/say]")
+		saynn("[say=kidlat]Не волнуйся, я знаю эти туннели как свои пять пальцев~.[/say]")
 
-		saynn("Somehow you were always running into her after all..")
+		saynn("Каким-то образом ты всё равно постоянно натыкался на неё...")
 
-		saynn("[say=pc]It feels like I can't stop you from doing this.[/say]")
+		saynn("[say=pc]Такое чувство, будто мне тебя не остановить.[/say]")
 
-		saynn("[say=kidlat]Not even if you tie me up~.[/say]")
+		saynn("[say=kidlat]Даже если ты меня свяжешь~.[/say]")
 
-		saynn("She sticks her tongue at you.. but then stops staring at you from this awkward angle.")
+		saynn("Она высовывает тебе язык... но затем перестает пялиться на тебя под этим неловким углом.")
 
-		saynn("[say=kidlat]Speaking off.. Well.. if you don't wanna be down there.. We can just be buddies.. you know.. fuckbuddies. Haha.[/say]")
+		saynn("[say=kidlat]Кстати говоря... Ну... если не хочешь там внизу копаться... Мы можем просто быть дружбанами... ну, знаешь... секс-дружбанами. Ха-ха.[/say]")
 
-		saynn("[say=pc]Advanced friendship.[/say]")
+		saynn("[say=pc]Продвинутая дружба.[/say]")
 
-		saynn("[say=kidlat]With benefits~.[/say]")
+		saynn("[say=kidlat]С бонусами~.[/say]")
 
-		saynn("She giggles and then yawns.")
+		saynn("Она хихикает, а затем зевает.")
 
-		saynn("[say=kidlat]I'm pretty tired.. wanna rest for a bit?[/say]")
+		saynn("[say=kidlat]Я чертовски устала... хочешь немного отдохнуть?[/say]")
 
-		saynn("[say=pc]I don't see why not.[/say]")
+		saynn("[say=pc]А почему бы и нет.[/say]")
 
-		saynn("She gets comfy in your hands.. a quiet purring escapes her maw.")
+		saynn("Она уютно устраивается в твоих руках... из её пасти вырывается тихое мурлыканье.")
 
-		addButton("Rest", "Spend some time together", "do_cuddle_spend_time")
+		addButton("Отдохнуть", "Провести время вместе", "do_cuddle_spend_time")
 	if(state == "do_cuddle_spend_time"):
-		saynn("Some time passes.. Kidlat is snoozing in your hands.")
+		saynn("Проходит некоторое время... Кидлат дремлет у тебя на руках.")
 
-		saynn("With nothing better to do, your eyes wander around her cell.. until they stumble upon a loose panel on the wall. A panel that you can just about reach.")
+		saynn("Делать всё равно нечего, и твой взгляд блуждает по её камере... пока не натыкается на расшатанную панель на стене. Панель, до которой можно почти дотянуться.")
 
-		saynn("You pull it off slightly.. and see the cardboard box behind.. as well as her emotional support bread, resting on top of it. All is good in the world.")
+		saynn("Ты слегка оттягиваешь её... и видишь за ней картонную коробку, а сверху на ней — её хлеб для эмоциональной поддержки. В мире всё идёт правильно.")
 
-		saynn("You put the panel back.. and just continue resting with Kidlat. Her quiet purring seems to have a very soothing effect on you..")
+		saynn("Ты ставишь панель на место... и просто продолжаешь отдыхать с Кидлат. Её тихое мурлыканье действует на тебя очень успокаивающе...")
 
-		addButton("Rest", "Spend even more time together", "do_cuddle_wakeup")
+		addButton("Отдохнуть", "Провести с ней ещё больше времени", "do_cuddle_wakeup")
 	if(state == "do_cuddle_wakeup"):
 		playAnimation(StageScene.Duo, "stand", {npc="kidlat"})
-		saynn("All good things eventually come to an end.")
+		saynn("Всё хорошее рано или поздно заканчивается.")
 
-		saynn("After some more warm cuddles, it was time to get up. Kidlat opens her eyes.")
+		saynn("После очередного сеанса теплых обнимашек пора вставать. Кидлат открывает глаза.")
 
-		saynn("[say=kidlat]That was.. probably the best nap I ever had..[/say]")
+		saynn("[say=kidlat]Это был... наверное, лучший сон в моей жизни...[/say]")
 
-		saynn("[say=pc]I'm glad I could provide.[/say]")
+		saynn("[say=pc]Рад, что смог тебя порадовать.[/say]")
 
-		saynn("[say=kidlat]Haha, ye.[/say]")
+		saynn("[say=kidlat]Ха-ха, ага.[/say]")
 
-		saynn("She gets up and stretches. Her whole body is shivering while she is arching her back.. until a cute moan leaves her lips.")
+		saynn("Она поднимается и потягивается. Всё её тело дрожит, когда она выгибает спину... пока с её губ не срывается милый стон.")
 
-		saynn("[say=kidlat]Ah~. Thank you for everything, luv~. You didn't have to help this blue cat-shaped thing but you did! Means a lot. I can't even explain it.[/say]")
+		saynn("[say=kidlat]Ах~. Спасибо тебе за всё, дорогуша~. Тебе вовсе не обязательно было помогать этой синей кошачьей штучке, но ты это сделал! Это много значит. Даже не знаю, как объяснить.[/say]")
 
-		saynn("[say=pc]No worries.[/say]")
+		saynn("[say=pc]Без проблем.[/say]")
 
-		saynn("She gives you a quick but tight hug.")
+		saynn("Она быстро, но крепко обнимает тебя.")
 
-		saynn("[say=kidlat]You don't have to check on me now! Feel free to do your thing, luv! Maybe our paths will cross again sometime. Or maybe they won't. And that's okay![/say]")
+		saynn("[say=kidlat]Можешь не проверять, как я, прямо сейчас! Занимайся своими делами, милый! Может, наши пути ещё пересекутся. А может, и нет. И это тоже нормально![/say]")
 
-		saynn("[say=pc]World works in mysterious ways, you're right.[/say]")
+		saynn("[say=pc]Мир полон загадок, ты прав.[/say]")
 
-		saynn("You approach the exit of her cell, still feeling fuzzy inside.")
+		saynn("Ты направляешься к выходу из её камеры, всё ещё ощущая приятную легкость внутри.")
 
-		saynn("[say=kidlat]See you around, hun![/say]")
+		saynn("[say=kidlat]Увидимся, солнце![/say]")
 
-		saynn("[say=pc]See you too, Kidlat.[/say]")
+		saynn("[say=pc]До встречи, Кидлат.[/say]")
 
-		saynn("Just like that, it was time to go.")
+		saynn("Вот так просто пришло время уходить.")
 
-		saynn("(( Kidlat's dedicated content ends here. Thank you for playing <3 ))")
+		saynn("(( На этом эксклюзивный контент Кидлата заканчивается. Спасибо за игру <3 ))")
 		setFlag("DrugDenModule.KidlatCustomTalkGreet", "Hey, luv! You're already back, hah.")
-		addButton("Continue", "See you around..", "endthescene")
+		addButton("Продолжить", "Еще увидимся..", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

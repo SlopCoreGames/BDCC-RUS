@@ -24,329 +24,329 @@ func _run():
 		nakedAndShy = (isNaked && !isSlut)
 		playAnimation(StageScene.Solo, "walk", {pc="artica"})
 		aimCameraAndSetLocName("hall_mainentrance")
-		saynn("Artica seems to be heading towards the elevator.")
+		saynn("Похоже, Артика направляется к лифту.")
 
-		saynn("Your guess is, she is heading towards the workshop again..")
+		saynn("Твоя догадка: она снова идет в мастерскую...")
 
-		addButton("Follow", "See where she goes", "in_workshop")
+		addButton("Следовать", "Проследить за ней", "in_workshop")
 	if(state == "in_workshop"):
 		GM.pc.setLocation("eng_workshop")
 		aimCameraAndSetLocName("eng_workshop")
 		addCharacter("alexrynard")
 		playAnimation(StageScene.Duo, "stand", {pc="artica", npc="alexrynard"})
-		saynn("And you weren't wrong, Artica is standing near that engineer foxy.")
+		saynn("И ты не ошибся: Артика стоит рядом с тем лисим инженером.")
 
-		saynn("[say=alexrynard]Look, I'm busy. I don't want to sound mean but.. I'm not eager for sex like most people seem to be here.[/say]")
+		saynn("[say=alexrynard]Слушай, я занят. Не хочу звучать грубо, но... я не так жажду секса, как большинство здесь обитающих.[/say]")
 
-		saynn("The foxy struggles to find the right words, speaking strictly but slowly. The fluff lowers her gaze.")
+		saynn("Лисенок изо всех сил пытается подобрать правильные слова, говоря строго, но медленно. Пушинка опускает взгляд.")
 
 		saynn("[say=artica].. ..[/say]")
 
-		saynn("[say=alexrynard]I'm glad that you like being a test subject. I'm sure someone in the medical wing would appreciate that. Mhm?[/say]")
+		saynn("[say=alexrynard]Я рада, что тебе нравится быть подопытным. Уверена, кто-нибудь в медблоке это оценит. М-м?[/say]")
 
-		saynn("Engineer sighs and tries to return to his current task, his hand holding a screwdriver. He tries to unscrew something.. but his hands begin to shake when Artica starts leaving..")
+		saynn("Инженер вздыхает и пытается вернуться к работе, сжимая в руке отвертку. Он пытается что-то открутить... но его руки начинают дрожать, когда Артика собирается уходить...")
 
-		saynn("[say=alexrynard]Wait![/say]")
+		saynn("[say=alexrynard]Погоди![/say]")
 
-		saynn("The fluff instantly returns to the foxy, her eyes full of hope. All the while the engineer sighs again.")
+		saynn("Пушинка мгновенно возвращается к лисенку, ее глаза полны надежды. А инженер снова тяжело вздыхает.")
 
-		saynn("[say=alexrynard]I got something else you can test. But this is the last time.[/say]")
+		saynn("[say=alexrynard]У меня есть еще кое-что для тестов. Но это в последний раз.[/say]")
 
-		saynn("Foxy reaches under the workbench.. and pulls another case out. He opens it.. revealing.. panties? Purple panties. Artica tilts her head watching a normal-looking piece of clothing.")
+		saynn("Фокси запускает руку под верстак... и вытаскивает еще один кейс. Он открывает его... и обнаруживается... трусики? Фиолетовые трусики. Артика с любопытством склоняет голову набок, разглядывая обычный на вид предмет одежды.")
 
 		saynn("[say=artica]..?[/say]")
 
-		saynn("[say=alexrynard]Nu huh, look.[/say]")
+		saynn("[say=alexrynard]Ну надо же, смотри-ка.[/say]")
 
-		saynn("He turns the panties inside-out.. revealing some kind of devices that are attached to the cloth. Together with that, he also shows Artica some kind of.. tube.")
+		saynn("Он выворачивает трусики наизнанку... обнаруживая прикрепленные к ткани какие-то устройства. Вместе с ними он показывает Артике еще какую-то... трубку.")
 
-		saynn("[say=alexrynard]You will figure it out, I'm sure. Now leave me alone, I gotta focus.[/say]")
+		saynn("[say=alexrynard]Ты сама во всем разберешься, я уверен. А теперь оставь меня в покое, мне нужно сосредоточиться.[/say]")
 
-		saynn("Artica grabs the two prototypes.. The panties she begins to put on already..")
+		saynn("Артика хватает оба прототипа... и уже начинает натягивать трусики на себя...")
 
-		saynn("[say=alexrynard]No, not here. Go a.. somewhere else.[/say]")
+		saynn("[say=alexrynard]Нет, не здесь. Иди... куда-нибудь в другое место.[/say]")
 
-		saynn("She nods.. and just heads off, swaying her hips with extra excitement.")
+		saynn("Она кивает... и просто уходит, покачивая бедрами от особого возбуждения.")
 
 		saynn("[say=artica]..[/say]")
 
-		saynn("[say=alexrynard]You're welcome.[/say]")
+		saynn("[say=alexrynard]Не за что.[/say]")
 
-		addButton("Follow", "See where Artica is going now..", "in_cell")
+		addButton("Следовать", "Посмотрим, куда теперь направилась Артика...", "in_cell")
 	if(state == "in_cell"):
 		aimCameraAndSetLocName("cellblock_lilac_nearcell")
 		GM.pc.setLocation("cellblock_lilac_nearcell")
 		addCharacter("artica", ["naked"])
 		playAnimation(StageScene.SexPortalOral, "tease", {pc="artica", onlyRight=true, bodyState={naked=true, hard=true}})
 		removeCharacter("alexrynard")
-		saynn("Artica rushes into her cell"+str(", quickly throws her clothes on the bed" if !isNaked else "")+" and puts on the unassuming purple panties.")
+		saynn("Артика влетает в свою камеру"+str(", quickly throws her clothes on the bed" if !isNaked else "")+"и натягивает неприметные фиолетовые трусики.")
 
-		saynn("[say=artica]..just panties?.. At least they fit snuggly..[/say]")
+		saynn("[say=artica]..просто трусики?.. По крайней мере, сидят плотно..[/say]")
 
-		saynn("Nothing interesting happened from just putting them on.. and there doesn't seem to be any buttons or controls on them.. so she switches her focus to the other device.")
+		saynn("От того, что она их надела, ничего особенного не произошло... и на них, кажется, нет ни кнопок, ни каких-либо органов управления... поэтому она переключает внимание на другое устройство.")
 
-		saynn("[say=artica]..hm..[/say]")
+		saynn("[say=artica]..хм..[/say]")
 
-		saynn("That one is way more interesting, featuring an array of buttons and a little screen. She takes a deep breath and presses one of them.")
+		saynn("А вот это куда интереснее: на нем целый ряд кнопок и маленький экранчик. Она делает глубокий вдох и нажимает на одну из них.")
 
-		saynn("There is an electronic noise.. followed by the device lighting up.. almost like it's a flashlight.")
+		saynn("Раздается электронный писк, а затем устройство загорается... почти как фонарик.")
 
-		saynn("[say=artica]Eek..[/say]")
+		saynn("[say=artica]Ой!..[/say]")
 
-		saynn("But it was actually something else. Artica's eyes widen in amazement as the device opens some kind of portal.. and inside of that portal.. she sees the unmistakable cyan folds of her own pussy..")
+		saynn("Но на самом деле это было нечто иное. Глаза Артики расширяются от изумления, когда устройство открывает своего рода портал... и внутри этого портала... она видит безошибочно узнаваемые бирюзовые складки своей собственной киски...")
 
-		saynn("[say=artica]Oh.. wait.. what.. h-how..[/say]")
+		saynn("[say=artica]Ох.. погоди.. что.. к-как..[/say]")
 
-		saynn("Her heart races as she brings the device.. which looks more like a fleshlight now.. closer.. Feeling the warmth of her own breath is making the pussy displayed on that fleshlight clench and get all wet. Artica instantly tries to look inside her panties.. but all she can do is free her cock, the panties are keeping themselves secure around her slit.. so there is no denying it anymore..")
+		saynn("Сердце бешено колотится, когда она подносит устройство... которое теперь больше напоминает мастурбатор... всё ближе... От тепла её собственного дыхания киска, изображенная на этом мастурбаторе, начинает сжиматься и намокать. Артика тут же пытается заглянуть в свои трусики... но всё, что ей удаётся — это освободить свой член; трусики плотно обхватили её щель... так что отрицать очевидное больше невозможно...")
 
-		saynn("[say=artica]Is that.. how my pussy looks.. wow..[/say]")
+		saynn("[say=artica]Неужели... именно так выглядит моя киска?.. Вау...[/say]")
 
-		saynn("She drags her tongue over the folds.. and moans, feeling her pussy being licked.. Her eyes are sparkling with excitement..")
+		saynn("Она проводит языком по складкам... и стонет, чувствуя, как её лижут... Её глаза сияют от возбуждения...")
 
-		addButton("Continue", "See what happens next", "artica_sits")
+		addButton("Продолжить", "Смотреть, что будет дальше", "artica_sits")
 	if(state == "artica_sits"):
 		playAnimation(StageScene.FleshlightSit, "tease", {pc="artica", bodyState={naked=true, hard=true}})
-		saynn("Unable to resist any longer, she sits on the edge of her bed, positioning the fleshlight at the tip of her throbbing, knotted canine cock. She gently traces her own petals with it, precum mixing with her pussy juices.. before she suddenly stops and pulls the fleshlight away.")
+		saynn("Не в силах больше сопротивляться, она садится на край кровати, приставляя мастурбатор к кончику своего пульсирующего, узловатого собачьего члена. Она осторожно обводит им свои лепестки, смешивая предэякулят с соками своей киски... прежде чем внезапно замереть и отстранить мастурбатор.")
 
-		saynn("[say=artica]..am I.. r-really gonna do this?..[/say]")
+		saynn("[say=artica]..неужели я... д-действительно это сделаю?..[/say]")
 
-		saynn("She is hesitating, her gaze turning desperate.")
+		saynn("Она колеблется, её взгляд становится отчаянным.")
 
-		saynn("[say=artica]..am I really g-gonna fuck myself..[/say]")
+		saynn("[say=artica]..неужели я и вправду с-сама себя оттрахаю...[/say]")
 
-		saynn("Artica sighs, her body fidgeting around, toes curling. She brings the fleshlight a little closer to her face.. and spreads the folds with her other paw.. looking deep inside.. seeing the whole slick love tunnel with a tight-looking cervix at the end.. Artica sees how her pussy clenches in great detail.. her own aroused scent hitting her nosetrills.. intoxicating scent..")
+		saynn("Артика вздыхает, её тело ерзает, пальцы ног поджимаются. Она подносит мастурбатор чуть ближе к лицу... и раздвигает складки другой лапой... заглядывая глубоко внутрь... видя весь этот скользкий любовный туннель с тугой шейкой матки на конце... Артика в мельчайших деталях видит, как сжимается её киска... её собственный возбужденный запах бьёт в ноздри... дурманящий аромат...")
 
-		saynn("[say=artica]..just a little bit maybe.. mmm.. I will just pull out before cumming.. y-yes..[/say]")
+		saynn("[say=artica]..может, совсем чуть-чуть... ммм... я просто вытащу его перед самым концом... д-да...[/say]")
 
-		saynn("She presses the fleshlight against the tip of her cock.. and lets it penetrate her folds and spread them aside.. her own member slipping into the welcoming wet slit..")
+		saynn("Она прижимает флешлайт к кончику своего члена... и позволяет ему проникать в складки плоти, раздвигая их... её собственный член скользит в приветливую влажную щель...")
 
-		addButton("Continue", "See what happens next", "artica_fucks_herself")
+		addButton("Продолжить", "Смотреть, что будет дальше", "artica_fucks_herself")
 	if(state == "artica_fucks_herself"):
 		playAnimation(StageScene.FleshlightSit, "sex", {pc="artica", bodyState={naked=true, hard=true}})
-		saynn("The instantly pleasure was intense, her body responding to both the penetration and the internal sensation, a soft moan leaving her lips..")
+		saynn("Наслаждение накрывает мгновенно и с невероятной силой; её тело откликается и на само проникновение, и на внутренние ощущения, а с губ срывается тихий стон...")
 
-		saynn("[say=artica]Ah..[/say]")
+		saynn("[say=artica]Ах..[/say]")
 
-		saynn("Artica starts with slow, deliberate thrusts, each movement of that fleshlight sending shivers through her.")
+		saynn("Артика начинает с медленных, размеренных толчков, и каждое движение флешлайта заставляет её содрогаться от дрожи.")
 
-		saynn("[say=artica]I can feel.. e-every inch.. of my own cock.. inside me.. ah..ah..[/say]")
+		saynn("[say=artica]Я чувствую... к-каждый дюйм... своего собственного члена... внутри себя... ах... ах...[/say]")
 
-		saynn("Her breaths become faster, mingled with all the cute moans that she produces while fucking herself, lost in the sea of pleasure..")
+		saynn("Её дыхание учащается, смешиваясь с милыми стонами, которые она издает, трахая саму себя, утопая в море наслаждения...")
 
-		addButton("Continue", "See what happens next", "artica_fucks_herself_faster")
+		addButton("Продолжить", "Смотреть, что будет дальше", "artica_fucks_herself_faster")
 	if(state == "artica_fucks_herself_faster"):
 		playAnimation(StageScene.FleshlightSit, "fast", {pc="artica", bodyState={naked=true, hard=true}})
-		saynn("With each thrust, she increases the pace without even realizing it, the fleshlight becoming slick with her juices. The dual stimulation of fucking and being fucked drives her wild, her moans growing louder.")
+		saynn("С каждым толчком она, сама того не замечая, ускоряется, и флешлайт становится скользким от её соков. Двойная стимуляция — когда она одновременно и трахает, и трахается — сводит её с ума, а стоны становятся всё громче.")
 
-		saynn("[say=artica]Y-yes.. ah.. hah..[/say]")
+		saynn("[say=artica]Д-да... ах... хах...[/say]")
 
-		saynn("She feels the knot at the base of her cock inflating with blood.. and slapping against the sensitive folds, unable to fit inside anymore.")
+		saynn("Она чувствует, как узел у основания её члена раздувается от крови... и хлопает по чувствительным складкам, больше не в силах войти внутрь.")
 
-		saynn("[say=artica]I should stop.. r-right now.. ah.. just a few more.. mhmm-m.. and that's all..[/say]")
+		saynn("[say=artica]Мне стоит остановиться... п-прямо сейчас... ах... еще всего несколько раз... ммм-м... и всё...[/say]")
 
-		saynn("She is close, her body squirming on her bed, shivers rushing through her..")
+		saynn("Она уже близко, её тело извивается на кровати, а по всему телу пробегает дрожь...")
 
-		saynn("[say=artica]I gotta s-stop..[/say]")
+		saynn("[say=artica]Мне н-нужно остановиться..[/say]")
 
-		addButton("Continue", "See what happens next", "artica_doesnt_stop")
+		addButton("Продолжить", "Смотреть, что будет дальше", "artica_doesnt_stop")
 	if(state == "artica_doesnt_stop"):
 		playAnimation(StageScene.FleshlightSit, "cum", {pc="artica", bodyState={naked=true, hard=true}})
-		saynn("The tightness of her own pussy was too much to endure, Artica lets out a noise of passion as she forces the full length of her cock inside that fleshlight.. the knot slipping in with a satisfying pop..")
+		saynn("Собственная киска сжимала её слишком сильно, и Артика издала страстный стон, когда с силой вогнала свой член целиком в эту плоть.. узел с приятным хлопком проскользнул внутрь..")
 
-		saynn("[say=artica]Nhh.. I c-can't stop..[/say]")
+		saynn("[say=artica]Нхх.. я н-не могу остановиться..[/say]")
 
-		saynn("Her body trembles, orgasm crashing over her. More moans leave her lips as her thick creamy cum shoots through her cock, pumping her own pussy full of it.. She could probably feel every spurt, the warmth spreading inside her..")
+		saynn("Её тело дрожит, накрывая волной оргазма. С губ срываются новые стоны, пока густая кремовая сперма бьёт струями из её члена, наполняя её собственную киску.. Она, должно быть, чувствовала каждый толчок, ощущая, как внутри разливается тепло..")
 
-		saynn("Her sprawled toes reaching out far, her chin high.. her eyes sparkling with lust..")
+		saynn("Её растопыренные пальцы ног вытянуты, подбородок высоко поднят.. а глаза сияют от похоти..")
 
-		saynn("[say=artica]W-why did I do that.. ah..[/say]")
+		saynn("[say=artica]З-зачем я это сделала.. ах..[/say]")
 
-		saynn("You know why..")
+		saynn("Ты и сама знаешь почему..")
 
-		addButton("Continue", "See what happens next", "after_first_orgasm")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_first_orgasm")
 	if(state == "after_first_orgasm"):
 		playAnimation(StageScene.FleshlightSit, "inside", {pc="artica", bodyState={naked=true, hard=true}})
-		saynn("As the orgasm begins to fade, she is left panting, her own length still fully inside her, creating a cute bump on her belly..")
+		saynn("Когда оргазм начинает утихать, она остается тяжело дышащей, при этом её член всё еще остается внутри неё, создавая милую выпуклость на животе..")
 
 		if (getCharacter("artica").isVisiblyPregnant()):
-			saynn("[say=artica]At l-least I'm already pregnant..[/say]")
+			saynn("[say=artica]Х-хотя, я и так уже беременна..[/say]")
 
 		else:
-			saynn("[say=artica]I'm g-gonna knock myself up like this..[/say]")
+			saynn("[say=artica]Я так с-себя забеременею..[/say]")
 
-		saynn("Artica looks down at herself.. the knot prevents any leakage.. pulling out now would mean unleashing a flow of seed onto her bed..")
+		saynn("Артика смотрит вниз на себя... узел не дает ни капле вытечь... если вытащить его сейчас, на кровать хлынет поток семени...")
 
-		saynn("Even after that orgasm, Artica's eyes are still somehow lusty..")
+		saynn("Даже после такого оргазма глаза Артики всё еще полны похоти...")
 
-		saynn("[say=artica]Well.. Since I already came inside m-myself..[/say]")
+		saynn("[say=artica]Ну... раз уж я и так кончила в с-себя...[/say]")
 
-		saynn("Is she really gonna continue.. what a needy fluff.")
+		saynn("Неужели она реально продолжит... какая же ненасытная пушинка.")
 
-		addButton("Continue", "See what happens next", "artica_more_horny")
+		addButton("Продолжить", "Смотреть, что будет дальше", "artica_more_horny")
 	if(state == "artica_more_horny"):
 		playAnimation(StageScene.FleshlightSit, "standsex", {pc="artica", bodyState={naked=true, hard=true}})
-		saynn("She carefully pulls the fleshlight off her swollen knot.. gasping as it pops out, leaving her pussy gaping slightly and dripping her own cum. Then, without wasting another moment, Artica positions herself better on the bed, her paw lining up the fleshlight with her cock once more..")
+		saynn("Она осторожно стягивает фаллоимитатор со своего разбухшего узла, ахая от того, как он с хлопком выскальзывает, оставляя её киску слегка приоткрытой и сочащейся собственной спермой. Затем, не теряя ни секунды, Артика поудобнее устраивается на кровати, прицеливая фаллоимитатор к своему члену...")
 
-		saynn("This time, she thrusts into her pussy rather than stroking her shaft with it, her hips already moving at a steady pace, her tight, slick pussy enveloping her member nicely, all the seed making her love tunnel extra slick..")
+		saynn("На этот раз она не ласкает ствол, а с силой вгоняет его в свою киску; её бедра уже двигаются в размеренном темпе, а узкая, влажная щель плотно обхватывает член, причём излишки семени делают её любовный туннель невероятно скользким...")
 
-		saynn("[say=artica]Ah.. w-why does my pussy f-feel so good..[/say]")
+		saynn("[say=artica]Ах... п-почему в киске так п-приятно...[/say]")
 
-		saynn("Maybe you should help her..")
+		saynn("Может, тебе стоит ей помочь?")
 
-		addButton("Just watch", "Just watch Artica snowballing her own pussy", "just_watch")
-		addButton("Join", "Grab Artica's fleshlight and help her fuck herself..", "join_in")
+		addButton("Просто наблюдай", "Просто наблюдай, как Артика засаживает сама себе", "just_watch")
+		addButton("Присоединиться", "Хватай фаллоимитатор Артики и помоги ей трахать саму себя...", "join_in")
 	if(state == "just_watch"):
 		setFlag("ArticaModule.nextReaction", "p2alone")
 		playAnimation(StageScene.FleshlightSit, "standfast", {pc="artica", bodyState={naked=true, hard=true}})
-		saynn("Naaah, you'd rather just let her have fun. Why would you startle the fluff.. when she is moaning so desperately and slutty..")
+		saynn("Да ну, ты скорее просто позволишь ей повеселиться. Зачем пугать пушистую... когда она так отчаянно и похотливо стонет...")
 
-		saynn("She increases the pace, her paws gripping the fleshlight tightly as she thrust faster and harder, her half-deflated knot slapping against her stuffed pussy, occasionally slipping in and out..")
+		saynn("Она ускоряется, крепко сжимая лапами фаллоимитатор и всаживая его всё быстрее и сильнее; её полусдувшийся узел то и дело шлепает по набитой пизде, периодически выскальзывая туда-сюда...")
 
-		saynn("[say=artica]Ah.. ah.. You're s-such a slut, Artica.. F-fucking your own pussy like t-this.. ah.. so tight..[/say]")
+		saynn("[say=artica]Ах.. ах.. Ты такая шлюшка, Артика.. Т-трахать собственную пизду вот так.. ах.. так тесно..[/say]")
 
-		saynn("The pleasure is making her head spin, her balls tensing up more, her member throbbing inside the fleshlight as she nears her second climax..")
+		saynn("От удовольствия у неё идет кругом голова, яички напрягаются всё сильнее, а член пульсирует внутри фаллоимитатора, пока она приближается к своему второму оргазму...")
 
-		addButton("Continue", "See what happens next", "artica_cums_inside_herself_again")
+		addButton("Продолжить", "Смотреть, что будет дальше", "artica_cums_inside_herself_again")
 	if(state == "artica_cums_inside_herself_again"):
 		playAnimation(StageScene.FleshlightSit, "standinside", {pc="artica", bodyState={naked=true, hard=true}})
-		saynn("Her knot inflates with blood again.. which makes her eager to do.. it..")
+		saynn("Её узел снова раздувается от крови... что заставляет её жаждать... этого...")
 
-		saynn("With one rough thrust, she manages to knot her pussy again.. her orgasming inner walls clenching around her canine cock.. until she cums hard, dumping a second load deep inside her womb, snowballing her own pussy..")
+		saynn("Одним резким толчком ей удается снова завязаться в своей пизде... её оргазмирующие внутренние стенки сжимаются вокруг собачьего члена... пока она не кончает на полную, выплескивая вторую порцию глубоко в матку и забивая собственную пизду снегом...")
 
-		saynn("[say=artica]Ah.. ny-yaahhh.. ah..[/say]")
+		saynn("[say=artica]Ах.. ня-аааахх.. ах..[/say]")
 
-		saynn("She kept thrusting, her body moving on its own, milking every last drop of cum from her balls.. She is panting.. shaking.. her slit keeps getting tight around the knot..")
+		saynn("Она продолжала двигаться, её тело действовало само по себе, выжимая каждую последнюю каплю спермы из яичек... Она тяжело дышит... её трясет... а щель всё сильнее сжимается вокруг узла...")
 
-		addButton("Continue", "See what happens next", "artica_after_double")
+		addButton("Продолжить", "Смотреть, что будет дальше", "artica_after_double")
 	if(state == "artica_after_double"):
 		playAnimation(StageScene.FleshlightSit, "inside", {pc="artica", bodyState={naked=true, hard=true}})
-		saynn("Finally, exhausted and utterly spent, Artica collapses on the bed, her cock still stuck inside her pussy.")
+		saynn("Наконец, измотанная и совершенно опустошенная, Артика валится на кровать, всё ещё оставаясь завязанной внутри собственной пизды.")
 
-		saynn("She lays there, panting and basking in the afterglow, her body still tingling.")
+		saynn("Она лежит, тяжело дыша и наслаждаясь послевкусием, пока всё её тело всё ещё покалывает от удовольствия.")
 
 		if (getCharacter("artica").isVisiblyPregnant()):
-			saynn("[say=artica]I s-shouldn't have done this.. How am I ever gonna jack myself off any other way.. haha..[/say]")
+			saynn("[say=artica]Н-надо было этого не делать.. Как же я теперь буду дрочить по-другому.. ха-ха..[/say]")
 
 		else:
-			saynn("[say=artica]I have definetly knocked myself up.. haha..[/say]")
+			saynn("[say=artica]Я определенно умудрилась забеременеть.. ха-ха..[/say]")
 
-		saynn("You let the girl recover.. and just leave. Such a kinky fluff she is..")
+		saynn("Ты позволяешь девушке прийти в себя.. и просто уходишь. Какая же она всё-таки кинки-пушинка..")
 
-		addButton("Continue", "See what happens next", "endthescene_removepanties")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_removepanties")
 	if(state == "join_in"):
 		setFlag("ArticaModule.nextReaction", "p2pc")
 		playAnimation(StageScene.SexFleshlight, "tease", {pc="artica", npc="pc", bodyState={naked=true, hard=true}})
-		saynn("Artica was so busy fucking herself.. that she didn't even hear your footsteps approaching her bed..")
+		saynn("Артика так увлеклась трахом самой себя.. что даже не услышала твоих шагов, приближающихся к её кровати..")
 
-		saynn("Without much warning, you grab the fleshlight out of Artica's hands, making her gasp.")
+		saynn("Без лишних предупреждений ты выхватываешь фаллоимитатор из рук Артики, заставляя её ахнуть.")
 
-		saynn("[say=artica]AH! EEP![/say]")
+		saynn("[say=artica]АХ! И-ИП![/say]")
 
-		saynn("You pull the fluff into your embrace with your other hand.")
+		saynn("Другой рукой ты притягиваешь эту пушинку к себе в объятия.")
 
-		saynn("[say=pc]Wow.. Look at that.. your pussy is so wet..[/say]")
+		saynn("[say=pc]Ого.. Посмотри-ка.. твоя киска такая мокрая..[/say]")
 
-		saynn("[say=artica]Wh-what.. are you..[/say]")
+		saynn("[say=artica]Ч-что.. ты..[/say]")
 
-		saynn("You don't answer, instead bringing the fleshlight close to her twitching cock, brushing the sensitive cyan folds against the pointy canine cock tip.. Artica shivers, her body reacting to the teasing touch.")
+		saynn("Ты не отвечаешь, вместо этого поднося фаллоимитатор вплотную к её подергивающемуся члену, потирая чувствительные голубые складки о кончик острого клыкастого члена.. Артика вздрагивает, её тело реагирует на это дразнящее прикосновение.")
 
-		saynn("[say=pc]Such an eager girl..[/say]")
+		saynn("[say=pc]Какая нетерпеливая девочка..[/say]")
 
-		saynn("She whimpers, her hips instinctively thrusting forward, seeking the warmth and tightness.. but you just pull her pussy away when that happens.")
+		saynn("Она скулит, инстинктивно подаваясь бедрами вперед в поисках тепла и тесноты.. но каждый раз, когда она это делает, ты лишь отстраняешь её киску подальше.")
 
-		saynn("[say=artica]Please..[/say]")
+		saynn("[say=artica]Пожалуйста..[/say]")
 
-		saynn("Her voice becomes a desperate whisper..")
+		saynn("Её голос переходит в отчаянный шепот..")
 
-		saynn("[say=artica]Please.. I n-need it..[/say]")
+		saynn("[say=artica]Пожалуйста.. м-мне нужно..[/say]")
 
-		saynn("You slowly slide the fleshlight over the head of Artica's cock, teasing her hard by moving the toy up and down, her pussy never taking the full length inside.. Artica moans, her hips bucking more as she tries to force herself deeper into the fleshlight.. but you keep her held firmly..")
+		saynn("Ты медленно надеваешь флешлайт на головку члена Артики, издевательски водя игрушкой вверх и вниз, так что её киска никогда не принимает всю длину.. Артика стонет, её бедра дергаются всё сильнее, когда она пытается затолкнуться глубже в игрушку.. но ты крепко удерживаешь её на месте..")
 
-		saynn("[say=artica]Please.. anything.. I will do anything.. I n-need to..[/say]")
+		saynn("[say=artica]Пожалуйста.. всё что угодно.. я сделаю всё, что скажешь.. м-мне нужно..[/say]")
 
-		saynn("[say=pc]You need what?[/say]")
+		saynn("[say=pc]Тебе нужно что?[/say]")
 
-		saynn("[say=artica]I need to cum.. i-inside my own p-pussy.. I w-wanna breed myself.. p-please..[/say]")
+		saynn("[say=artica]Мне нужно кончить.. в с-свою собственную п-письку.. я х-хочу осеменить саму себя.. п-пожалуйста..[/say]")
 
-		saynn("Artica begging is making you smile.. How can you say no?")
+		saynn("То, как Артика умоляет, заставляет тебя улыбаться.. Как тут сможешь отказать?")
 
-		addButton("Give it to her", "Slide the fleshlight along her cock..", "pc_slides_felshlight")
+		addButton("Отдай это ей", "Скользи флешлайтом по её члену...", "pc_slides_felshlight")
 	if(state == "pc_slides_felshlight"):
 		playAnimation(StageScene.SexFleshlight, "sex", {pc="artica", npc="pc", bodyState={naked=true, hard=true}})
-		saynn("Your chin lands on her shoulder as you finally slide the fleshlight down over Artica's cock, the half-deflated knot slipping in as well..")
+		saynn("Твой подбородок ложится ей на плечо, когда ты наконец насаживаешь флешлайт на член Артики, и полусдувшийся узел тоже проскальзывает внутрь...")
 
-		saynn("[say=artica]Ah..[/say]")
+		saynn("[say=artica]Ах..[/say]")
 
-		saynn("Artica moans loudly as the familliar tightness envelops her cock.. a familliar member stretching her fuckhole..")
+		saynn("Артика громко стонет, когда знакомая теснота охватывает её член... знакомый член растягивает её дырочку...")
 
-		saynn("You begin to stroke her cock with the fleshlight at a pace that is making her squirm and rub against you..")
+		saynn("Ты начинаешь ласкать её член флешлайтом в таком темпе, что она начинает ерзать и тереться о тебя...")
 
-		saynn("[say=pc]You love fucking yourself?[/say]")
+		saynn("[say=pc]Тебе нравится трахать саму себя?[/say]")
 
-		saynn("[say=artica]Y-yes.. ah..[/say]")
+		saynn("[say=artica]Д-да... ах...[/say]")
 
-		saynn("[say=pc]Do it then, fuck yourself.[/say]")
+		saynn("[say=pc]Ну так сделай это, трахни себя.[/say]")
 
-		addButton("Continue", "See what happens next", "pc_slides_felshlight_fast")
+		addButton("Продолжить", "Смотреть, что будет дальше", "pc_slides_felshlight_fast")
 	if(state == "pc_slides_felshlight_fast"):
 		playAnimation(StageScene.SexFleshlight, "fast", {pc="artica", npc="pc", bodyState={naked=true, hard=true}})
-		saynn("Artica obeys, thrusting her hips forward a bit to meet the fleshlight. The sensations of fucking herself is driving her wild, more passionate noises escaping her lips.. as you stroke her cock faster with that handy fleshlight.")
+		saynn("Артика подчиняется, слегка подавая бедра вперед, чтобы встретить флешлайт. Ощущение того, как она трахает сама себя, сводит её с ума, из её уст вырываются всё более страстные стоны... пока ты всё быстрее двигаешь флешлайтом по её члену.")
 
-		saynn("[say=artica]Ah.. ah.. ah..[/say]")
+		saynn("[say=artica]Ах... ах... ах...[/say]")
 
-		saynn("You can feel her pussy resisting, her inner walls clenching around the pulsing knotted cock, increasing the friction. But you keep pushing through, forcing that pussy to swallow most of the length.. the fat orb getting swollen with blood again and slapping against her folds..")
+		saynn("Ты чувствуешь, как её киска сопротивляется, её внутренние стенки сжимаются вокруг пульсирующего узловатого члена, усиливая трение. Но ты продолжаешь давить, заставляя её щель проглотить почти всю длину... раздувшийся от крови шар снова насаживается на складки её плоти...")
 
-		saynn("[say=pc]What should I do with that knot?[/say]")
+		saynn("[say=pc]Что мне делать с этим узлом?[/say]")
 
-		saynn("[say=artica]I-inside.. please.. ah.. r-ram it in.. k-knot my p-pussy.. please.. ah..[/say]")
+		saynn("[say=artica]В-внутрь.. пожалуйста.. ах.. в-вбей его.. заполни мой п-пиздю.. пожалуйста.. ах..[/say]")
 
-		saynn("Such a needy fluff..")
+		saynn("Какая ненасытная пушинка...")
 
-		addButton("Knot", "Shove full length of Artica's cock inside her pussy", "pc_makes_artica_knot_herself_cum")
+		addButton("Узел", "Засунуть член Артики в её киску на всю длину", "pc_makes_artica_knot_herself_cum")
 	if(state == "pc_makes_artica_knot_herself_cum"):
 		playAnimation(StageScene.SexFleshlight, "inside", {pc="artica", npc="pc", bodyState={naked=true, hard=true}})
-		saynn("As Artica was nearing her orgasm, you suddenly slid the fleshlight further, forcing the knot to part Artica's pussy wide and slip inside with a cute pop noise.")
+		saynn("Когда Артика была уже близка к оргазму, ты внезапно толкнул плоть глубже, заставляя узел широко раздвинуть её киску и войти внутрь с милым чпокающим звуком.")
 
-		saynn("[say=artica]AH!.. Ahh-hh..[/say]")
+		saynn("[say=artica]АХ!.. Ахх-хх..[/say]")
 
-		saynn("Artica cries out a moan, her pussy gripping the full length of her shaft hard. Being knotted.. by her own cock.. is quickly sending the fluff over the edge.")
+		saynn("Артика вскрикивает от стона, её киска мертвой хваткой обхватывает ствол на всю длину. То, что её завязывает... её собственный член... быстро доводит пушинку до края.")
 
-		saynn("[say=artica]I'm.. Ah-h..[/say]")
+		saynn("[say=artica]Я.. Ах-х..[/say]")
 
-		saynn("Her {artica.penis} is throbbing and shooting thick ropes of cum into the fleshlight.. snowballing her own womb, adding to the seed that was already there. You continue to tug on the fleshlight, trying to milk every last drop of spunk from her balls.")
+		saynn("Её {artica.penis} пульсирует, выбрасывая густые струи кончи в фаллоимитатор... они заполняют её матку, смешиваясь с уже накопленным там семенем. Ты продолжаешь тянуть фаллоимитатор, стараясь выжать из её яичек последнюю каплю спермы.")
 
-		saynn("[say=pc]Good girl. Yeah, breed yourself, like that..[/say]")
+		saynn("[say=pc]Хорошая девочка. Да, размножай себя, вот так..[/say]")
 
-		saynn("She is leaning into you, her legs are all shaky, her toes keep curling up.")
+		saynn("Она прижимается к тебе, её ноги дрожат, а пальцы на ногах то и дело поджимаются.")
 
-		addButton("Cuddle", "Pull her into some cuddles", "do_cuddle_after_sex")
+		addButton("Обнимашки", "Притянуть её к себе, чтобы обняться", "do_cuddle_after_sex")
 	if(state == "do_cuddle_after_sex"):
 		playAnimation(StageScene.Cuddling, "squirm", {pc="pc", npc="artica", npcBodyState={naked=true, hard=true}})
-		saynn("You pull the exhausted, spent Artica onto the bed and cuddle her.. while her cock is still fully inside that fleshlight, the knot keeping it secured nicely..")
+		saynn("Ты укладываешь измотанную, опустошенную Артику на кровать и обнимаешь её... при этом её член всё еще плотно сидит в фаллоимитаторе, а узел надежно удерживает его внутри..")
 
-		saynn("[say=artica]Hh-hh.. mmhh..[/say]")
+		saynn("[say=artica]Хх-хх.. ммхх..[/say]")
 
-		saynn("You chukle as she is still squirming in your hands.")
+		saynn("Ты посмеиваешься, глядя, как она всё еще извивается в твоих руках.")
 
-		saynn("[say=pc]Enjoying yourself?[/say]")
+		saynn("[say=pc]Наслаждаешься?[/say]")
 
-		saynn("[say=artica]Yes-..s.. ah.. how did you..[/say]")
+		saynn("[say=artica]Да!.. ах.. как ты..[/say]")
 
-		saynn("[say=pc]You weren't exactly hiding, were you.[/say]")
+		saynn("[say=pc]Ты не особо-то и пряталась, верно?[/say]")
 
-		saynn("She lowers her eyes.")
+		saynn("Она опускает взгляд.")
 
-		saynn("[say=artica]M-maybe.. haha..[/say]")
+		saynn("[say=artica]М-может быть.. ха-ха..[/say]")
 
-		saynn("You nuzzle her cheek while she chrrrrs quietly.")
+		saynn("Ты прижимаешься к её щеке, пока она тихонько мурлычет.")
 
-		saynn("[say=pc]Such an eager girl.[/say]")
+		saynn("[say=pc]Какая послушная девочка.[/say]")
 
-		saynn("You just spend some time like this.. while Artica is being a cockwarmer.. for her own cock..")
+		saynn("Вы просто проводите время вот так.. пока Артика работает грелкой для члена.. для своего собственного члена..")
 
-		saynn("But eventually it was time to go.")
+		saynn("Но в конце концов пришло время уходить.")
 
-		addButton("Continue", "See what happens next", "endthescene_removepanties")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_removepanties")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

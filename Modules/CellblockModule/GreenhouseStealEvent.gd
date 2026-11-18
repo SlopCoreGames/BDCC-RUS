@@ -10,7 +10,7 @@ func run(_triggerID, _args):
 	if(!GM.main.getModuleFlag("CellblockModule", "Cellblock_GreenhouseLooted", false)):
 		addButtonUnlessLate("Steal", "Try and steal something", "steal_apple")
 	else:
-		addDisabledButton("Steal", "Too dangerous to do this again today")
+		addDisabledButton("Украсть", "Слишком опасно делать это снова сегодня")
 
 func getPriority():
 	return 6

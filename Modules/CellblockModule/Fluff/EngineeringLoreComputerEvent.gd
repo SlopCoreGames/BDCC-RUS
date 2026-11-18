@@ -7,7 +7,7 @@ func registerTriggers(es):
 	es.addTrigger(self, Trigger.EnteringRoom, "eng_lorecomputerroom")
 
 func run(_triggerID, _args):
-	addButtonWithChecks("Computer", "Take a seat and check the computer", "computer", [], [ButtonChecks.NotBlindfolded, ButtonChecks.NotHandsBlocked])
+	addButtonWithChecks("Компьютер", "Присядь и проверь компьютер", "computer", [], [ButtonChecks.NotBlindfolded, ButtonChecks.NotHandsBlocked])
 
 func getPriority():
 	return 0

@@ -65,16 +65,16 @@ func _run():
 					"I won’t let you go without a fuck.",
 				])+"[/say]")
 				
-			addButton("Be fucked", "Let them have it their way with you", "startsexsubby")
-			addButton("Attack", "Show them that it was a bad idea", "attack")
-			addButtonWithChecks("Offer 5 credits", "Maybe that will make them fuck off", "offer_5_credits", [], [[ButtonChecks.HasCredits, 5]])
+			addButton("Даться траху", "Позволить им делать с тобой всё, что захотят", "startsexsubby")
+			addButton("Атаковать", "Показать им, что это была хреновая идея", "attack")
+			addButtonWithChecks("Предложить 5 кредитов", "Может, тогда они отъебутся", "offer_5_credits", [], [[ButtonChecks.HasCredits, 5]])
 			
 		# (kind version)
 		if(npcVariation == "kind"):
 			if(RNG.chance(50)):
-				saynn("One of the inmates gets your attention. You look at {npc.him} and realize that {npc.he} doesn’t seem to be very threatening.")
+				saynn("Один из заключенных привлекает ваше внимание. Вы смотрите на {npc.him} и понимаете, что {npc.he} не кажется особо угрожающим.")
 			else:
-				saynn("An inmate points at you to get your attention. You stop and watch {npc.him} stepping towards you, {npc.his} lusty eyes tracing your {pc.masc} curves.")
+				saynn("Заключенный указывает на вас, привлекая внимание. Вы останавливаетесь и наблюдаете, как {npc.him} шагает к вам, а {npc.his} жадными глазами обводит ваши {pc.masc} изгибы.")
 
 			# (if never met)
 			if(!sawBefore):
@@ -92,9 +92,9 @@ func _run():
 					"Wanna fuck?",
 				])+"[/say]")
 			
-			addButton("Agree", "Let them have it their way with you", "startsexsubby")
-			addButton("Decline", "You’d rather not get fucked", "decline")
-			addButton("Attack", "Show them that it was a bad idea", "attack")
+			addButton("Согласиться", "Позволить им делать с тобой всё, что захотят", "startsexsubby")
+			addButton("Отказаться", "Вам бы не хотелось, чтобы вас трахнули", "decline")
+			addButton("Атаковать", "Показать им, что это была хреновая идея", "attack")
 
 		# (mean version)
 		if(npcVariation == "mean"):
@@ -113,11 +113,11 @@ func _run():
 				"Shut up and let me fuck you.",
 			])+"[/say]")
 
-			saynn("{npc.He} is trying to fuck you!")
+			saynn("{npc.He} пытается вас оттрахать!")
 			
-			addButton("Be fucked", "Let them have it their way with you", "startsexsubby")
-			addButton("Attack", "Show them that it was a bad idea", "attack")
-			addButtonWithChecks("Offer 5 credits", "Maybe that will make them fuck off", "offer_5_credits", [], [[ButtonChecks.HasCredits, 5]])
+			addButton("Даться траху", "Позволить им делать с тобой всё, что захотят", "startsexsubby")
+			addButton("Атаковать", "Показать им, что это была хреновая идея", "attack")
+			addButtonWithChecks("Предложить 5 кредитов", "Может, тогда они отъебутся", "offer_5_credits", [], [[ButtonChecks.HasCredits, 5]])
 
 		# (subby version)
 		if(npcVariation == "subby"):
@@ -143,13 +143,13 @@ func _run():
 					"Heya.. Want some sex?",
 				])+"[/say]")
 
-			#addButton("Submit to", "Let them have it their way with you", "startsexsubby")
-			addButtonWithChecks("Sex!", "Time to fuck them!", "startsexasdom", [], [ButtonChecks.CanStartSex])
-			addButton("Submit to", "Let them have it their way with you", "startsexsubby")
-			addButton("Inventory", "Look at your inventory", "openinventory")
+			#addButton("Подчиниться", "Позволить им делать с тобой всё, что захотят", "startsexsubby")
+			addButtonWithChecks("Секс!", "Пора их оттрахать!", "startsexasdom", [], [ButtonChecks.CanStartSex])
+			addButton("Подчиниться", "Позволить им делать с тобой всё, что захотят", "startsexsubby")
+			addButton("Инвентарь", "Посмотреть инвентарь", "openinventory")
 			if(GM.pc.getInventory().hasRemovableRestraints()):
-				addButton("Struggle", "Struggle out of your restraints", "strugglemenu")
-			addButton("Decline", "You’d rather not get fucked", "decline")
+				addButton("Сопротивление", "Вырваться из оков", "strugglemenu")
+			addButton("Отказаться", "Вам бы не хотелось, чтобы вас трахнули", "decline")
 			# (OPTIONS ARE)
 
 			# (if normal = Be fucked, Attack, Offer credits)
@@ -164,7 +164,7 @@ func _run():
 	if(state == "attack"):
 		# (if normal)
 		if(npcVariation != "mean"):
-			saynn("You lash out at {npc.him} and shove away! The inmate growls back and gets ready for a fight.")
+			saynn("Вы наносите удар {npc.him} и отталкиваете его! Заключенный в ответ рычит и готовится к драке.")
 
 			saynn("[say=npc]"+RNG.pick([
 				"Fine, we can play rough.",
@@ -175,7 +175,7 @@ func _run():
 
 		# (if mean)
 		else:
-			saynn("You gather all your strength and shove {npc.him} away from you. The inmate growls and gets up, ready to fight.")
+			saynn("Вы собрав все силы, отталкиваете {npc.him} от себя. Заключенный рычит и поднимается, готовый к драке.")
 
 			saynn("[say=npc]"+RNG.pick([
 				"Huge mistake, bitch.",
@@ -185,26 +185,26 @@ func _run():
 				"Hope you like pain, bitch. Actually, I hope you don’t.",
 			])+"[/say]")
 
-		addButton("Fight", "Start the fight", "startfight")
+		addButton("Драться", "Начать бой", "startfight")
 
 
 	if(state == "if_lost"):
-		saynn("You collapse, unable to continue fighting.")
+		saynn("Ты валишься с ног, не в силах продолжать бой.")
 
 		# (default)
 		if(npcVariation != "mean"):
-			saynn("[say=npc]What did you think was gonna happen?[/say]")
+			saynn("[say=npc]Ты что, думал, всё будет иначе?[/say]")
 
 		# (if mean)
 		else:
-			saynn("[say=npc]Know your place, bitch.[/say]")
+			saynn("[say=npc]Знай своё место, сучка.[/say]")
 
-		saynn("Since you can’t really fight {npc.him} back anymore, your only choice is to submit.")
+		saynn("Поскольку {npc.him} больше не может по-настоящему сопротивляться, у тебя остается только один выбор — подчиниться.")
 
-		addButton("Get fucked", "Well, you lost", "startsexsubby")
+		addButton("Получи по полной", "Ну, ты проиграл(а)", "startsexsubby")
 
 	if(state == "if_won"):
-		saynn("You pin the defeated inmate to the floor. {npc.He} doesn’t seem to struggle much.")
+		saynn("Ты прижимаешь побежденного заключенного к полу. {npc.He} особо не сопротивляется.")
 
 		saynn("[say=npc]"+RNG.pick([
 			"What a slut.",
@@ -221,7 +221,7 @@ func _run():
 	if(state == "offer_5_credits"):
 		# (if success)
 		if(bribeSuccess):
-			saynn("You produce a chip with 5 credits and offer it to the inmate.")
+			saynn("Вы достаете чип номиналом 5 кредитов и предлагаете его заключенному.")
 
 			saynn("[say=npc]"+RNG.pick([
 				"Huh, consider yourself lucky.",
@@ -229,14 +229,14 @@ func _run():
 				"Fine. I can find a more willing slut with that.",
 			])+"[/say]")
 
-			saynn("{npc.He} snatches it and leaves you alone.")
+			saynn("{npc.He} выхватывает его и оставляет вас в покое.")
 
-			addButton("Leave", "Time to go", "endthescene")
+			addButton("Уйти", "Пора идти", "endthescene")
 		# (if mean and fails)
 		else:
-			saynn("You huff and struggle for a bit before finally showing a chip with some credits to the inmate.")
+			saynn("Вы фыркаете и немного сопротивляетесь, прежде чем наконец показать заключенному чип с кредитами.")
 
-			saynn("But {npc.he} slaps your hand away and instead wrenches it behind your back.")
+			saynn("Но {npc.he} отбивает вашу руку и вместо этого заводит её вам за спину.")
 
 			saynn("[say=npc]"+RNG.pick([
 				"You think you can bribe me? Bitch, you’re gonna get fucked.",
@@ -244,12 +244,12 @@ func _run():
 			])+"[/say]")
 
 			# (options are get fucked and attack)
-			addButton("Be fucked", "Let them have it their way with you", "startsexsubby")
-			addButton("Attack", "Show them that it was a bad idea", "attack")
+			addButton("Даться траху", "Позволить им делать с тобой всё, что захотят", "startsexsubby")
+			addButton("Атаковать", "Показать им, что это была хреновая идея", "attack")
 
 	if(state == "decline"):
 		if(subOffered == ""):
-			saynn("You refuse politely. The inmate shrugs.")
+			saynn("Вы вежливо отказываетесь. Заключенный пожимает плечами.")
 
 			saynn("[say=npc]"+RNG.pick([
 				"Sure, I won’t force you.",
@@ -258,11 +258,11 @@ func _run():
 			])+"[/say]")
 
 		# (scene ends)
-			addButton("Leave", "Time to go", "endthescene")
+			addButton("Уйти", "Пора идти", "endthescene")
 
 		# (if subby and chance)
 		else:
-			saynn("You refuse politely. The inmate sighs audibly and looks through {npc.his} pockets before presenting you "+subOffered+".")
+			saynn("Вы вежливо отказываетесь. Заключенный громко вздыхает и шарит по {npc.his} карманам, прежде чем протянуть вам "+subOffered+".")
 
 			saynn("[say=npc]"+RNG.pick([
 				"Pretty please?..",
@@ -275,10 +275,10 @@ func _run():
 			addWonButton()
 
 	if(state == "after_sex" || state == "after_sex_won"):
-		saynn("After the fun time ends, the inmate just leaves you alone.")
+		saynn("Когда веселье заканчивается, зэк просто оставляет тебя в покое.")
 
 		# (scene ends)
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 		
 	if(state == "after_sex"):
 		GM.ES.triggerRun(Trigger.AfterSexWithDynamicNPCThatWon, [npcID])
@@ -287,12 +287,12 @@ func _run():
 		GM.ES.triggerRun(Trigger.AfterSexWithDefeatedDynamicNPC, [npcID])
 
 func addWonButton():
-	addButton("Leave", "Just leave before anyone else sees you", "endthescene")
-	addButtonWithChecks("Sex!", "Time to fuck them!", "startsexasdom", [], [ButtonChecks.CanStartSex])
-	addButton("Submit to", "Let them have it their way with you", "startsexsubby")
-	addButton("Inventory", "Look at your inventory", "openinventory")
+	addButton("Уйти", "Просто уходи, пока тебя не заметили.", "endthescene")
+	addButtonWithChecks("Секс!", "Пора их оттрахать!", "startsexasdom", [], [ButtonChecks.CanStartSex])
+	addButton("Подчиниться", "Позволить им делать с тобой всё, что захотят", "startsexsubby")
+	addButton("Инвентарь", "Посмотреть инвентарь", "openinventory")
 	if(GM.pc.getInventory().hasRemovableRestraints()):
-		addButton("Struggle", "Struggle out of your restraints", "strugglemenu")
+		addButton("Сопротивление", "Вырваться из оков", "strugglemenu")
 	GM.ES.triggerRun(Trigger.DefeatedDynamicNPC, [npcID])
 
 func _react(_action: String, _args):

@@ -60,25 +60,25 @@ func encounter_run():
 	if(state == "lost_encounter"):
 		playAnimation(StageScene.Duo, "defeat", {npc=npcID})
 		
-		saynn("You lost! Looks like the junkie is eager to fuck you.")
+		saynn("Ты проиграл! Похоже, торчу очень хочется тебя оттрахать.")
 		
-		addButton("Continue", "See what happens next", "start_defeated_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_defeated_sex")
 	
 	if(state == "encounter_survived_sex"):
 		removeCharacter(npcID)
-		saynn("You managed to endure the onslaught! Time to run!")
+		saynn("Тебе удалось выдержать этот натиск! Пора валить!")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		
 	if(state == "encounter_fully_rekt"):
 		removeCharacter(npcID)
 		playAnimation(StageScene.Sleeping, "sleep")
 		
-		saynn("You got chocked out completely..")
+		saynn("Тебя вырубили наглухо...")
 		
-		saynn("All you see is darkness..")
+		saynn("Перед глазами лишь кромешная тьма...")
 		
-		addButton("Continue", "See what happens next", "encounter_endrun")
+		addButton("Продолжить", "Смотреть, что будет дальше", "encounter_endrun")
 	
 	if(state == "encounter_medical"):
 		clearCharacter()
@@ -86,35 +86,35 @@ func encounter_run():
 		addCharacter("eliza")
 		aimCameraAndSetLocName("medical_hospitalwards")
 	
-		saynn("[say=eliza]Wakey-wakey![/say]")
+		saynn("[say=eliza]Просыпайся, соня![/say]")
 		
-		saynn("You open your eyes.. and realize that you're somewhere in the medical wing.")
+		saynn("Ты открываешь глаза... и понимаешь, что находишься где-то в медблоке.")
 		
-		saynn("[say=eliza]Nanobots worked like a charm! I treated some of your injuries while you were taking a nap. Eat this muffin too, you're starving![/say]")
+		saynn("[say=eliza]Наноботы сработали на ура! Пока ты дрых, я подлатала твои раны. И вот тебе маффин, ты же голодный как волк![/say]")
 	
-		saynn("She gives you a muffin. You eat it immediately. It tastes like the best thing you have ever eaten in your life.")
+		saynn("Она протягивает тебе маффин. Ты съедаешь его мгновенно. На вкус это лучшее, что ты когда-либо пробовал в своей жизни.")
 	
-		saynn("[say=pc]Thanks..[/say]")
+		saynn("[say=pc]Спасибо..[/say]")
 		
-		saynn("She points at a drawer near your hospital bed.")
+		saynn("Она указывает на ящик тумбочки рядом с твоей больничной койкой.")
 		
-		saynn("[say=eliza]All your things are in there.[/say]")
+		saynn("[say=eliza]Все твои вещи там.[/say]")
 		
-		saynn("You get up, grab all your belongings and prepare to follow Eliza.")
+		saynn("Вы встаете, хватаете свои вещи и готовитесь следовать за Элизой.")
 		
-		addButton("Follow", "See where she will bring you", "encounter_back_to_lobby")
+		addButton("Следовать", "Посмотреть, куда она вас приведет", "encounter_back_to_lobby")
 		
 	if(state == "encounter_back_to_lobby"):
 		GM.pc.setLocation("med_lobbymain")
 		aimCameraAndSetLocName("med_lobbymain")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		
-		saynn("Eliza brings you out into the lobby.")
+		saynn("Элиза выводит вас в вестибюль.")
 		
-		saynn("[say=eliza]Take care now![/say]")
+		saynn("[say=eliza]Береги себя![/say]")
 		
-		addButton("Continue", "Time to go!", "endthescene")
-		addButton("Run back", "Rush back to the hidden drug den entrance", "encounter_endthescene_rushback")
+		addButton("Продолжить", "Пора идти!", "endthescene")
+		addButton("Бежать назад", "Спешно вернуться к скрытому входу в притон", "encounter_endthescene_rushback")
 	
 func encounter_react(_action: String, _args):
 	if(_action == "start_defeated_sex"):

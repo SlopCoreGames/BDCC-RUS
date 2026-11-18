@@ -47,7 +47,7 @@ func _run():
 		if(itemRef != null):
 			itemName = itemRef.getAStackName()
 		
-		saynn("As you step through the dimly-lit tunnels, you run into a junkie. This one doesn't seem to be aggressive towards you, huh.")
+		saynn("Когда ты идешь по тускло освещенным туннелям, тебе попадается торчок. Этот вроде не настроен на агрессию, а?")
 		
 		saynn("[say=npc]"+RNG.pick([  
 			"Well, well.. look at this. Ain’t often we get fresh meat down here. I got an offer for you.",  
@@ -56,7 +56,7 @@ func _run():
 			"You don’t let off the same rotten scent that everyone else does. I got an offer for you.",  
 		])+"[/say]")  
 		
-		saynn("Junkie shows you [b]"+itemName+"[/b] in {npc.his} hand.")
+		saynn("Торчок показывает тебе [b]"+itemName+"[/b] в {npc.his} руке.")
 		
 		saynn("[say=npc]"+RNG.pick([  
 			"I’m feeling needy. You give me a good fuck, and this is yours.",  
@@ -64,11 +64,11 @@ func _run():
 			"If you want this, you’re gonna have to put in some work and make me feel real good.",  
 		])+"[/say]")  
 		
-		saynn("{npc.He} will give you the item if you make {npc.him} cum at least twice and leave {npc.him} satisfied after the sex..")
+		saynn("{npc.He} даст тебе предмет, если ты заставишь {npc.him} кончить как минимум дважды и оставишь {npc.him} удовлетворенной после секса...")
 		
-		addButton("Agree (Be dom)", "Might as well have some fun", "agree_sex")
-		addButton("Attack", "Fight them", "startFight")
-		addButton("Get lost", "Tell them to get lost", "say_get_lost")
+		addButton("Согласиться (Быть домом)", "Можно и развлечься", "agree_sex")
+		addButton("Атаковать", "Сразиться с ними", "startFight")
+		addButton("Свалить", "Сказать им, чтобы проваливали", "say_get_lost")
 	
 	if(state == "sexSatisfied"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
@@ -78,7 +78,7 @@ func _run():
 		if(itemRef != null):
 			itemName = itemRef.getAStackName()
 		
-		saynn("After the sex, the junkie gives you "+itemName+"!")
+		saynn("После секса торчок дает тебе "+itemName+"!")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"Not bad..",
@@ -88,12 +88,12 @@ func _run():
 			"Here you go. Thankies!",
 		])+"[/say]")
 		
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 	
 	if(state == "sexNotSatisfied"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
 		
-		saynn("The junkie refuses to give you the item!")
+		saynn("Наркоман отказывается отдавать тебе предмет!")
 		
 		if(reasonFail == "orgasms"):
 			saynn("[say=npc]"+RNG.pick([
@@ -109,13 +109,13 @@ func _run():
 			])+"[/say]")
 		
 		
-		addButton("Leave", "Oh well", "endthescene")
-		addButton("Attack", "Fight them", "startFight")
+		addButton("Уйти", "Ну и ладно", "endthescene")
+		addButton("Атаковать", "Сразиться с ними", "startFight")
 	
 	if(state == "say_get_lost"):
-		saynn("You tell {npc.him} to get lost and continue on your way.")
+		saynn("Ты посылаешь {npc.him} куда подальше и идешь дальше.")
 		
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 		
 	
 func _react(_action: String, _args):

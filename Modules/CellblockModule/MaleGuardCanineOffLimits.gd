@@ -9,7 +9,7 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="maleguard_canine"})
 
 	if(state == ""):
-		saynn("You hear a raspy male voice coming from the shadow behind you.")
+		saynn("Из тени позади тебя доносится хриплый мужской голос.")
 
 		saynn("[say=maleguard_canine]"+RNG.pick([
 			"Hey, you’re not supposed to be here.",
@@ -19,9 +19,9 @@ func _run():
 			"Inmates never learn, do they.",
 		])+"[/say]")
 
-		saynn("You turn around and see a prison’s guard, judging by his blue uniform and armored look. He has clear canine features, perky wolf-like ears, long muzzle with a rough snout and a swishing tail.")
+		saynn("Ты оборачиваешься и видишь тюремного охранника — судя по синей униформе и броне, это точно он. У него явно выраженные звериные черты: стоячие волчьи уши, длинная морда с грубым носом и виляющий хвост.")
 
-		saynn("He grabs his stun baton and casually approaches you, his predator eyes checking you out.")
+		saynn("Он хватает электрошокер и небрежно приближается к тебе, оглядывая тебя хищным взглядом.")
 
 		saynn("[say=maleguard_canine]"+RNG.pick([
 			"What are we gonna do about this?",
@@ -30,17 +30,17 @@ func _run():
 			"I don’t like your odds.",
 		])+"[/say]")
 
-		saynn("Seems like it’s a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Fight", "Seems like there is no other way", "fight")
+		addButton("Драться", "Похоже, другого пути нет.", "fight")
 
 	if(state == "lost_fight"):
-		saynn("You got defeated by a single guard. Unable to continue fighting, you drop to your knees and await your faith.")
+		saynn("Тебя одолела всего одна охранница. Не в силах продолжать бой, ты падаешь на колени и ждешь своей участи.")
 
-		addButton("Continue", "See what happens", "getrestrained")
+		addButton("Продолжить", "Посмотреть, что будет", "getrestrained")
 
 	if(state == "getrestrained"):
-		saynn("The guard walks up to you.")
+		saynn("Охранница подходит к тебе вплотную.")
 
 		saynn("[say=maleguard_canine]"+RNG.pick([
 			"Time to dispense some justice",
@@ -49,18 +49,18 @@ func _run():
 			"This is gonna serve as a punishment.",
 		])+"[/say]")
 
-		saynn("He produces some restraint and tries to put it on you!")
+		saynn("Он достает какие-то средства фиксации и пытается надеть их на тебя!")
 
 		# (scene ends)
 
-		addButton("Continue", "Oh no", "endthescene")
+		addButton("Продолжить", "О нет", "endthescene")
 
 	if(state == "won_fight"):
-		saynn("You pin the defeated guard to the floor. He doesn’t seem to struggle much.")
+		saynn("Ты прижимаешь поверженного охранника к полу. Кажется, он особо и не сопротивляется.")
 
 		# (if has hands)
 		if(!GM.pc.hasBlockedHands()):
-			saynn("You use his cuffs to cuff him, rendering him mostly helpless.")
+			saynn("Ты используешь его же наручники, чтобы сковать его, делая его практически беспомощным.")
 
 		saynn("[say=maleguard_canine]"+RNG.pick([
 			"What’s your plan?",
@@ -68,7 +68,7 @@ func _run():
 			"A short goodbye fuck before you leave would be nice.",
 		])+"[/say]")
 
-		addButton("Leave him be", "Just loot him and leave before anyone else sees you", "endthescene")
+		addButton("Оставить его в покое", "Просто обчистить его и свалить, пока тебя не заметили", "endthescene")
 
 func _react(_action: String, _args):
 

@@ -23,198 +23,198 @@ func _run():
 		nakedAndShy = (isNaked && !isSlut)
 		playAnimation(StageScene.Solo, "walk", {pc="artica"})
 		aimCameraAndSetLocName("hall_mainentrance")
-		saynn("Artica seems to be heading towards the medical block again. Interesting..")
+		saynn("Похоже, Артика снова направляется к медицинскому блоку. Интересно...")
 
-		saynn("You do the usual, taking the next elevator after her.")
+		saynn("Ты делаешь как обычно — садишься в следующий лифт за ней.")
 
-		addButton("Continue", "See what happens next", "in_medical")
+		addButton("Продолжить", "Смотреть, что будет дальше", "in_medical")
 	if(state == "in_medical"):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {pc="artica", npc="eliza"})
 		aimCameraAndSetLocName("med_lobbymain")
-		saynn("Quietly, you step out into the medical lobby and sit on one of the benches..")
+		saynn("Тихо выскользнув в вестибюль медблока, ты присаживаешься на одну из скамеек...")
 
-		saynn("[say=eliza]So~? Tell me everything.[/say]")
+		saynn("[say=eliza]Ну~? Рассказывай всё как есть![/say]")
 
-		saynn(""+str("Naked " if isNaked else "")+"Artica blushes deeply, not sure where to start.")
+		saynn(""+str("Naked " if isNaked else "")+"Артика густо краснеет, не зная, с чего начать.")
 
 		saynn("[say=artica].. .. ..[/say]")
 
-		saynn("[say=eliza]And-d~?[/say]")
+		saynn("[say=eliza]Ну и-и-и~?[/say]")
 
 		saynn("[say=artica].. .. .. ..[/say]")
 
-		saynn("Doctor's eyes go big, she takes off her glasses for a bit and eyes Artica from toes to ears.")
+		saynn("Глаза Доктора округляются; она снимает очки и пристально осматривает Артику с ног до головы.")
 
-		saynn("[say=eliza]Wow.. that is amazing. They looked like tentacles, you're saying? I guess it wasn't really a fertilizer then..[/say]")
+		saynn("[say=eliza]Ого... это потрясающе. Ты говоришь, они были похожи на щупальца? Значит, это было вовсе не удобрение...[/say]")
 
-		saynn("Artica sways from side to side, her toes sprawling wide while her tail is curled around her waist.")
+		saynn("Артика покачивается из стороны в сторону, широко расставив пальцы ног, а её хвост обвит вокруг талии.")
 
 		saynn("[say=artica].. .. .. ..[/say]")
 
-		saynn("[say=eliza]Wow! HAH! Inside you? I should have been there to watch~.[/say]")
+		saynn("[say=eliza]Ого! ХА! Внутри тебя? Надо было быть там и посмотреть на это воочию~.[/say]")
 
-		saynn("Artica blushes again.. before suddenly offering the feline doctor many flowers.. the same flowers that she brought the other time.")
+		saynn("Артика снова заливается румянцем... а затем внезапно протягивает кошкодеву-доктору охапку цветов... тех самых, что она принесла в прошлый раз.")
 
-		saynn("[say=eliza]Oh wow, I see how it is~. Alright, give me some time.[/say]")
+		saynn("[say=eliza]Ого, вот оно как~. Ладно, дай мне немного времени.[/say]")
 
-		saynn("Doctor Quinn grabs the flowers and heads towards her lab to prepare the drug..")
+		saynn("Доктор Куинн берет цветы и направляется в лабораторию, чтобы приготовить препарат...")
 
-		saynn("All the while, Artica just bounces in place, struggling to contain herself.")
+		saynn("Все это время Артика просто подпрыгивает на месте, изо всех сил стараясь сдержать возбуждение.")
 
-		saynn("Finally, after some minutes, the doctor returns.")
+		saynn("Наконец, спустя несколько минут, доктор возвращается.")
 
-		saynn("[say=eliza]I know you want all of it.. but I'm only giving you two.[/say]")
+		saynn("[say=eliza]Я знаю, что ты хочешь всё сразу... но я дам тебе только две штуки.[/say]")
 
-		saynn("The feline doctor hands Artica two vials with that green glowing fluid..")
+		saynn("Кошкодевушка-доктор протягивает Артике два флакона с этой светящейся зеленой жидкостью...")
 
-		saynn("[say=eliza]It's not fertilizer.. we made some kind of mutagen I think. And that means the plants might mutate into anything.. including something dangerous.[/say]")
+		saynn("[say=eliza]Это не удобрение... кажется, мы сделали какой-то мутаген. А это значит, что растения могут превратиться во что угодно... даже в нечто опасное.[/say]")
 
-		saynn("Somehow that only seems to make the fluff more curious. She nods-nods and heads straight to the elevator.")
+		saynn("Каким-то образом это только раззадоривает пушистую проказницу. Она энергично кивает и направляется прямиком к лифту.")
 
-		saynn("[say=eliza]..I'm totally gonna destroy this station by accident one day.. oh well~.[/say]")
+		saynn("[say=eliza]...Однажды я точно случайно разнесу эту станцию к чертям... ну да ладно~.[/say]")
 
-		addButton("Follow", "See where Artica is heading", "near_greenhouses")
+		addButton("Следовать", "Посмотреть, куда идет Артика", "near_greenhouses")
 	if(state == "near_greenhouses"):
 		removeCharacter("eliza")
 		addCharacter("artica", ["naked"])
 		aimCameraAndSetLocName("main_greenhouses")
 		GM.pc.setLocation("main_greenhouses")
 		playAnimation(StageScene.Solo, "stand", {pc="artica", bodyState={naked=true,hard=true}})
-		saynn("You follow the fluff as she masterfully avoids the guard patrols on her way to the sacred spot..")
+		saynn("Ты следуешь за пушистой малышкой, которая мастерски уворачивается от патрулей охраны на пути к священному месту...")
 
-		saynn("Artica steps into the greenhouse, her heart is probably racing right now. She had returned to this place that had given her such intense pleasure before.."+str(" With a deep breath, she began to undress, completely willingly, her shirt and shorts falling to the floor, rendering her completely naked.." if !isNaked else "")+"")
+		saynn("Артика входит в оранжерею, её сердце, должно быть, бешено колотится. Она вернулась в место, которое уже дарило ей столь неистовое наслаждение..."+str(" With a deep breath, she began to undress, completely willingly, her shirt and shorts falling to the floor, rendering her completely naked.." if !isNaked else "")+"")
 
-		saynn("[say=artica]C-can't believe I'm a-about to d-do this..[/say]")
+		saynn("[say=artica]Н-не верится, что я п-правда ЭТО сделаю...[/say]")
 
-		saynn("Her {artica.breasts} rose and fell with each breath, her perky pierced nipples hardening in the cold air. With a shiver of excitement and nervousness passing through her spine, she approaches the peaceful normal-looking plants, holding two vials of green glowing fluid in her paws..")
+		saynn("Её {artica.breasts} вздымалась и опускалась с каждым вдохом, а упругие проколотые соски твердели на холодном воздухе. С дрожью от возбуждения и волнения, пробегающей по позвоночнику, она приближается к мирным на вид растениям, сжимая в лапках два флакона с зеленой светящейся жидкостью...")
 
-		saynn("With a determined look, she uncaps one of the vials.. and pours its contents onto the plants.. just holding onto the second one for now..")
+		saynn("С решительным видом она откупоривает один из флаконов... и выливает содержимое на растения... пока лишь придерживая второй...")
 
-		addButton("Continue", "See what happens next", "artica_teased")
+		addButton("Продолжить", "Смотреть, что будет дальше", "artica_teased")
 	if(state == "artica_teased"):
 		playAnimation(StageScene.TentaclesTease, "tease", {pc="artica", plant=true, bodyState={naked=true, hard=true}})
-		saynn("Immediately, the plants react, transforming before Artica's eyes, their stems growing, getting thicker and shaking off any leaves and petals, revealing the smooth slick green tendrils.. tentacles really..")
+		saynn("Растения реагируют мгновенно, трансформируясь прямо на глазах у Артики: их стебли растут, утолщаются, стряхивают листья и лепестки, обнажая гладкие скользкие зеленые отростки... настоящие щупальца...")
 
-		saynn("Almost like they're sentient, they reach out towards the fluff, the first one wrapping around her ankle and brushing against her thigh, probably feeling the heat that's radiating from Artica's sex..")
+		saynn("Словно обладая разумом, они тянутся к пушистке; первое обвивает её лодыжку и касается бедра, наверняка чувствуя жар, исходящий от киски Артики...")
 
-		saynn("[say=artica]Ah..[/say]")
+		saynn("[say=artica]Ах..[/say]")
 
-		saynn("No hesitation, no resistance, Artica lets the tentacles tease her, the little touches making her moan softly, her pussy growing more wet.. and dripping juices onto the slick stems.. that seem to be growing and growing.. not that different from the first time..")
+		saynn("Без колебаний и сопротивления, Артика позволяет щупальцам дразнить себя; от этих легких касаний она тихо стонет, а её киска становится всё мокрее... сок капает на скользкие стебли, которые, кажется, растут и растут... всё так же, как в первый раз...")
 
-		addButton("Continue", "See what happens next", "artica_first_penetration")
+		addButton("Продолжить", "Смотреть, что будет дальше", "artica_first_penetration")
 	if(state == "artica_first_penetration"):
 		playAnimation(StageScene.TentaclesTease, "inside", {pc="artica", plant=true, bodyState={naked=true, hard=true}})
-		saynn("More tentacles join in, wrapping around her legs, waist and arms. Artica gasps softly as they all begin to play with her body, teasing her {artica.breasts}, caressing the"+str(" swollen milky nips" if getCharacter("artica").isLactating() else " perky cyan nips")+", rubbing her clit and"+str(" slipping inside her chastity cage, brushing against her trapped canine cock" if isCaged else " brushing against her erect canine cock")+"..")
+		saynn("Присоединяются новые щупальца, обвивая её ноги, талию и руки. Артика тихо ахает, когда они начинают ласкать её тело, дразня {artica.breasts} и нежно поглаживая"+str(" swollen milky nips" if getCharacter("artica").isLactating() else " perky cyan nips")+", растирая её клитор и"+str(" slipping inside her chastity cage, brushing against her trapped canine cock" if isCaged else " brushing against her erect canine cock")+"..")
 
-		saynn("[say=artica]Ah.. hah..[/say]")
+		saynn("[say=artica]Ах.. хах..[/say]")
 
-		saynn("The less freedom Artica has, the more she seems to be enjoying it, the tentacles pulling on her wrists and forcefully making her spread her legs wider.. while a pair of thin tendrils tease her wet folds and then spread them wide, allowing for a big, fat one to ram itself inside.. immediately making the fluff feel so stretched and filled..")
+		saynn("Чем меньше свободы у Артики, тем больше она, кажется, наслаждается этим: щупальца тянут её за запястья, заставляя широко раздвинуть ноги.. в то время как пара тонких усиков дразнит её влажные складки, а затем раздвигает их максимально широко, позволяя толстому, мясистому отростку с силой войти внутрь.. отчего её плоть мгновенно ощущается такой растянутой и наполненной..")
 
-		saynn("[say=artica]Ah!.. EEP![/say]")
+		saynn("[say=artica]Ах!.. И-ик![/say]")
 
-		saynn("The thrust was so forceful that Artica loses the grip on the second vial.. and then watches as it flies in an arc towards the plant..")
+		saynn("Толчок был настолько мощным, что Артика выпускает из рук вторую колбу.. и наблюдает, как та летит по дуге прямо к растению..")
 
-		saynn("The vial shatters.. covering the green tendrils in a glowing fluid.. that seems to instantly get absorbed..")
+		saynn("Колба разбивается.. покрывая зеленые усики светящейся жидкостью.. которая, кажется, мгновенно впитывается в них..")
 
-		saynn("[say=artica]..o-oops..[/say]")
+		saynn("[say=artica]..о-ой..[/say]")
 
-		addButton("Continue", "See what kind of monster Artica has created..", "tentacles_grow")
+		addButton("Продолжить", "Посмотри, какое чудовище создала Артика..", "tentacles_grow")
 	if(state == "tentacles_grow"):
 		playAnimation(StageScene.TentaclesSex, "tease", {pc="artica", plant=true, bodyState={naked=true, hard=true}})
-		saynn("Almost instantly, the tentacles' growth continues.. as it starts occupying more and more space in the greenhouse, shoving all the other trays and the other hydroponics equipment out of the way..")
+		saynn("Почти мгновенно рост щупалец ускоряется.. они начинают занимать всё больше и больше места в теплице, расталкивая прочь все остальные лотки и гидропонное оборудование..")
 
-		saynn("It was too late to run, the tentacles quickly gathered enough strength to lift Artica off the floor, suspending her in the air, exploring every inch of her helpless body.")
+		saynn("Бежать было уже поздно: щупальца быстро набрали силу и оторвали Артику от пола, подвесив её в воздухе и исследуя каждый дюйм её беспомощного тела.")
 
-		saynn("[say=artica]W-waitt-tt.. what is.. ah.. oh n-no.. p-put me d-down..[/say]")
+		saynn("[say=artica]П-подожди-и.. что это.. ах.. о-о нет.. п-поставь меня н-на землю..[/say]")
 
-		saynn("After lifting the fluff, the tentacles forcefully spread her legs again, some caressing her pussy folds and some playing with her {artica.penis}.. but there is also one tentacle that presses against her tight clenching tailhole, its fat girth preventing it from penetrating the poor girl..")
+		saynn("Приподняв её пушистую задницу, щупальца снова с силой развели её ноги: одни ласкали складки её киски, другие играли с её {artica.penis}.. но было и ещё одно щупальце, которое упиралось в её туго сжатое анусное отверстие; из-за своей жирной толщины оно пока не могло проникнуть внутрь бедной девушки..")
 
-		saynn("[say=artica]N-no t-there.. w-wait.. p-please.. e-easy.. ah..[/say]")
+		saynn("[say=artica]Н-не т-туда.. п-подожди.. п-пожалуйста.. п-помедленнее.. ах..[/say]")
 
-		saynn("As if listening to her, an extra tentacle sprouts out and reaches towards her maw, the slick pointy tip hovering near her mouth, probably waiting for her to invite it in..")
+		saynn("Словно прислушиваясь к ней, из общей массы вырывается дополнительное щупальце и тянется к её пасти; скользкий заостренный кончик завис у самого рта, словно ожидая, когда она сама пригласит его внутрь..")
 
-		saynn("You notice that some of the tentacles mutate.. their tips changing shape. Makes you wonder why..")
+		saynn("Вы замечаете, что некоторые щупальца мутируют.. их кончики меняют форму. Это заставляет задуматься, почему..")
 
-		addButton("Continue", "See if Artica will manage to endure this..", "artica_tentaclessex")
+		addButton("Продолжить", "Посмотрим, сможет ли Артика выдержать это..", "artica_tentaclessex")
 	if(state == "artica_tentaclessex"):
 		playAnimation(StageScene.TentaclesSex, "sex", {pc="artica", plant=true, bodyState={naked=true, hard=true}})
-		saynn("Artica desperately tries to keep the eager tendrils away from her holes.. but loses quick.. she suddenly throws her head back and cries out a notice of pleasure as two fat ones stretch both of her holes enough to force themselves in, already pounding her pussy and ass, and now stretching the inner walls too..")
+		saynn("Артика отчаянно пытается уберечь свои дырочки от жадных отростков.. но быстро проигрывает.. она внезапно запрокидывает голову и вскрикивает от нахлынувшего удовольствия, когда два толстых щупальца растягивают оба её отверстия настолько, что им удается войти внутрь, уже вовсю трахая её киску и задницу и растягивая теперь ещё и внутренние стенки..")
 
-		saynn("[say=artica]AH!.. H-H.. Hh-hhhmhh..[/say]")
+		saynn("[say=artica]АХ!.. Х-Х.. Хх-ххмммм..[/say]")
 
-		saynn("As soon as Artica parts her lips, a sneaky tentacle finds it way past her teeth, forcing her jaw to stay opened wide as it starts fucking and stretching her throat.."+str(" All the while the tentacle that's wrapped around her cock is stroking her shaft with a smooth, rhythmic motion, its tip is gently teasing the cockhole, threatening to stretch that hole as well.." if !isCaged else " All the while the tentacle that has found its way into her chastity cage is doing swirling motions inside the sheath, circling around the locked away pulsing shaft, its tip is gently teasing the cockhole, threatening to stretch that hole as well..")+"")
+		saynn("Как только Артика разомкнула губы, подлое щупальце проскальзывает сквозь зубы, заставляя её челюсть широко раскрыться, и начинает трахать и растягивать её горло.."+str(" All the while the tentacle that's wrapped around her cock is stroking her shaft with a smooth, rhythmic motion, its tip is gently teasing the cockhole, threatening to stretch that hole as well.." if !isCaged else " All the while the tentacle that has found its way into her chastity cage is doing swirling motions inside the sheath, circling around the locked away pulsing shaft, its tip is gently teasing the cockhole, threatening to stretch that hole as well..")+"")
 
-		saynn("[say=artica]MMmmhh-hmm.. ghhhmmh-.. hh..[/say]")
+		saynn("[say=artica]Мммм-мм.. гххммм-.. хх..[/say]")
 
-		saynn("Artica's eyes widened as the plant is now fucking all her holes.. pleasuring her in all the unspeakable ways..")
+		saynn("Глаза Артики расширились: растение теперь трахает все её дырочки.. доставляя ей невообразимое наслаждение..")
 
-		addButton("Continue", "See if Artica's mind will endure this..", "artica_tentaclessex_fast")
+		addButton("Продолжить", "Посмотрим, выдержит ли разум Артики это..", "artica_tentaclessex_fast")
 	if(state == "artica_tentaclessex_fast"):
 		playAnimation(StageScene.TentaclesSex, "fast", {pc="artica", pcCum=true, plant=true, bodyState={naked=true, hard=true}})
-		saynn("The tentacles begin to move faster, their trusts deep and powerful.. more little tentacles manage to slip inside her.. before growing big and thick, stretching her pussy and tailhole to extreme levels, fucking them raw..")
+		saynn("Тентакли начинают двигаться быстрее, их толчки глубокие и мощные.. всё больше мелких щупалец умудряются проскользнуть внутрь.. прежде чем раздуться и стать толстыми, растягивая её киску и анус до предела, вколачиваясь в них до красноты..")
 
-		saynn("Poor helpless fluff is moaning around the tentacle in her mouth, her body trembling with raw pleasure. You can just sense her climax building already, the pressure rising with each passing second of this.. experiment.."+str(" The knot at the base of Artica's is inflating with blood.. and getting squeezed by the tentacle who is also now thrusting it's thin tip down her urethra, fucking her little cockhole.." if !isCaged else " Her chastity cage is twitching a lot as the trapped cock is pulsing inside.. pleasured by the tentacle who is also now thrusting it's thin tip down her urethra, fucking her little cockhole..")+"")
+		saynn("Бедная беспомощная пушинка стонет вокруг тентакля во рту, её тело дрожит от первобытного удовольствия. Можно буквально почувствовать, как в ней нарастает оргазм, давление усиливается с каждой секундой этого.. эксперимента.."+str(" The knot at the base of Artica's is inflating with blood.. and getting squeezed by the tentacle who is also now thrusting it's thin tip down her urethra, fucking her little cockhole.." if !isCaged else " Her chastity cage is twitching a lot as the trapped cock is pulsing inside.. pleasured by the tentacle who is also now thrusting it's thin tip down her urethra, fucking her little cockhole..")+"")
 
-		saynn("As she approaches her orgasm, the tentacles inside her pussy and ass seem to grow even thicker, their tips swelling and throbbing, pushing on Artica's g-spot and her prostate at the same time, never leaving her empty..")
+		saynn("По мере приближения к оргазму тентакли внутри её киски и задницы, кажется, становятся ещё толще, их кончики раздуваются и пульсируют, одновременно надавливая на точку G и простату Артики, не оставляя её ни на миг пустой..")
 
-		saynn("[say=artica]HHH-Hh-h!.. Mhhh-mmhhHH!..[/say]")
+		saynn("[say=artica]ААХ-Х-х!.. Мммм-ммхХХ!..[/say]")
 
-		saynn("One of the trusts finally set off the chain reaction.. Artica's body convulses in an explosive orgasm, the tentacles holding her squirming form as her needy pussy and tight asshole clench around the intruding green swirly rods, "+str("her balls tensing up, her cock twitching as it shoots thick ropes of cum onto the tentacles stroking it, letting it get absorbed by them." if !isCaged else "her balls tensing up, her locked cock twitching inside its cage as it shoots thick ropes of cum from the sheath onto the tentacles fucking her, letting it get absorbed by them..")+"")
+		saynn("Один из толчков наконец запустил цепную реакцию.. Тело Артики содрогается в взрывном оргазме, тентакли удерживают её извивающееся тело, пока её жаждущая киска и тугой анус сжимаются вокруг вторгшихся зеленых спиралевидных стержней,"+str("her balls tensing up, her cock twitching as it shoots thick ropes of cum onto the tentacles stroking it, letting it get absorbed by them." if !isCaged else "her balls tensing up, her locked cock twitching inside its cage as it shoots thick ropes of cum from the sheath onto the tentacles fucking her, letting it get absorbed by them..")+"")
 
 		if (getCharacter("artica").isLactating()):
-			saynn("The orgasm is so strong that Artica's nips squirt milk during each throb of her cock.. which is quickly absorbed by the tentacles as well..")
+			saynn("Оргазм настолько сильный, что соски Артики брызгают молоком при каждом пульсации её члена.. которое тентакли тоже быстро впитывают..")
 
-		saynn("Even though Artica came, the tentacles don't stop railing her thigh holes, only getting more eager instead.. You notice them changing again, their green texture becoming translucent for some reason..")
+		saynn("Несмотря на то, что Артика кончила, тентакли не прекращают трахать её дырочки, становясь лишь более нетерпеливыми.. Ты замечаешь, что они снова меняются, их зеленая текстура почему-то становится полупрозрачной..")
 
-		saynn("[say=artica]Hhh-h.. hhhmmhhh-h..[/say]")
+		saynn("[say=artica]Ххх-х.. хххмммхх-х..[/say]")
 
-		saynn("Poor fluff's mind begins to melt from the overwhelming sensations, her thoughts dissolving into a hazy of pleasure, obvious by her lusty, shaky eyes that keep rolling up. The rhythmic thrusts of the tentacles are driving her to the edge again and again.. With each climax, Artica's body grows more sensitive, her muffled moans growing hotter, her balls getting milked dry more by the plant that seems to be hungry for any.. material..")
+		saynn("Бедный пушистик начинает терять рассудок от переизбытка ощущений; её мысли растворяются в туманном экстазе, о чем свидетельствуют её похотливые, дрожащие глаза, постоянно закатывающиеся вверх. Ритмичные толчки щупалец снова и снова доводят её до грани.. С каждым оргазмом тело Артики становится всё чувствительнее, её приглушенные стоны — всё жарче, а её яички растение, кажется, жадное до любого.. материала.., высасывает досуха..")
 
-		saynn("You notice.. something.. traveling.. up the transparent overgrown stems.. something big and round..")
+		saynn("Ты замечаешь.. что-то.. ползущее.. вверх по прозрачным разросшимся стеблям.. что-то крупное и круглое..")
 
-		addButton("Continue", "See the result of Artica's actions..", "artica_gets_stuffed_with_eggs")
+		addButton("Продолжить", "Посмотреть на результат действий Артики..", "artica_gets_stuffed_with_eggs")
 	if(state == "artica_gets_stuffed_with_eggs"):
 		playAnimation(StageScene.TentaclesSex, "inside", {pc="artica", pcCum=true, cum=true, plant=true, bodyState={naked=true, hard=true}})
-		saynn("As another climax washes over her, the tentacles inside her holes suddenly push themselves even deeper, their tips expanding.. as some kind of.. eggs.. travel up them, slipping inside her well-prepared gaping-stretched holes without much trouble..")
+		saynn("Когда её накрывает очередной оргазм, щупальца внутри её отверстий внезапно проталкиваются еще глубже, их кончики расширяются.. пока некие.. яйца.. движутся по ним, без особых труда проскальзывая в её хорошо подготовленные, растянутые дырочки..")
 
-		saynn("Artica's eyes widened in shock as she felt the tentacles start depositing big round eggs inside her, stuffing her womb, ass and stomach full of them, her belly swelling slightly more with each egg adding more and more volume to it..")
+		saynn("Глаза Артики расширились от шока, когда она почувствовала, как щупальца начинают откладывать внутри неё крупные круглые яйца, набивая её матку, задницу и желудок ими; её живот слегка раздувается с каждым новым яйцом, увеличивающимся в объеме..")
 
-		saynn("[say=artica]Grhh-h!.. gh-h.. grlhh.. hh..[/say]")
+		saynn("[say=artica]Грхх-х!.. гх-х.. грлхх.. хх..[/say]")
 
-		saynn("And before she can catch her breath, the same tentacles begin to pump the girl full of warm, thick fluid, filling the empty space between the eggs inside her womb, belly and ass to the brim, with some already leaking out of her stuffed holes..")
+		saynn("И прежде чем она успевает перевести дух, те же щупальца начинают закачивать в девушку теплую густую жидкость, заполняя до краев пустоты между яйцами в её матке, животе и заднице, при этом часть жидкости уже начинает вытекать из её набитых отверстий..")
 
-		saynn("[say=artica]Mmmm-mhh!.. mmh.h.hh..[/say]")
+		saynn("[say=artica]Мммм-ммх!.. ммх.х.хх..[/say]")
 
-		saynn("The weird sensation of being used as some kind of egg storage is so strong that she came once more, her holes clenching tight around the tendrils, milking them for every drop of that fluid..")
+		saynn("Странное ощущение того, что её используют как какое-то хранилище для яиц, настолько сильное, что она кончила ещё раз; её отверстия плотно сжимались вокруг тентаклей, выцеживая из них каждую каплю этой жидкости...")
 
-		saynn("As the final waves of pleasure start to fade, Artica was left hanging in the air, her body limp and thoroughly used..")
+		saynn("Когда последние волны удовольствия начали утихать, Артика осталась висеть в воздухе — обмякшее, полностью использованное тело...")
 
-		saynn("The plant, after seemingly serving purpose, begins to slowly wither away, its molecular structure probably got damaged too much by all the mutagen..")
+		saynn("Растение, судя по всему, выполнив свою задачу, начинает медленно увядать; вероятно, его молекулярная структура слишком сильно пострадала от всей этой мутагенной жижи...")
 
-		addButton("Continue", "See what happens next", "artica_recover")
+		addButton("Продолжить", "Смотреть, что будет дальше", "artica_recover")
 	if(state == "artica_recover"):
 		setFlag("ArticaModule.nextReaction", "t3hap")
 		playAnimation(StageScene.GivingBirth, "idle", {pc="artica", bodyState={naked=true, hard=true}})
-		saynn("The tentacles slowly retracted, leaving Artica gasping for breath as her gaping holes began gushing with plant's fluids.. They carefully set her on the floor.. before retracting away.. letting her be..")
+		saynn("Тентакли медленно втянулись, оставив Артику жадно хватать ртом воздух, пока её разверзшиеся отверстия извергали растительные соки... Её осторожно опустили на пол... а затем они скрылись, оставив её в покое...")
 
-		saynn("[say=artica]Khh.. kh.. ah..[/say]")
+		saynn("[say=artica]Кхх.. кх.. ах..[/say]")
 
-		saynn("Artica's mind is clearly a blur, she looks down and sees her belly swollen with eggs.. she can hardly put her paws around it now..")
+		saynn("Разум Артики явно затуманен; она смотрит вниз и видит свой живот, раздутый от яиц... теперь она едва может обхватить его лапами...")
 
-		saynn("[say=artica]S-so m-much.. h..hah..[/say]")
+		saynn("[say=artica]Т-так.. м-много.. х.. хах..[/say]")
 
-		saynn("Little moans escape from her as she gropes and kneads it.. the eggs shifting inside her holes as she does it..")
+		saynn("Тихие стоны срываются с её губ, пока она ощупывает и разминает живот... яйца смещаются внутри её отверстий от её движений...")
 
-		saynn("Artica catches her breath.. and then starts to get up.. all the extra weight really dragging her down.")
+		saynn("Артика переводит дух... а затем начинает подниматься... лишний вес ощутимо тянет её к земле.")
 
-		saynn("But eventually, she succeeds.. and starts waddling towards her spot..")
+		saynn("Но в конце концов ей это удаётся... и она начинает ковылять в сторону своего места...")
 
-		saynn("Wow. You'd never thought you would be able to see something like that..")
+		saynn("Ого... Никогда бы не подумала, что смогу увидеть нечто подобное...")
 
-		saynn("But now it was time to go.")
+		saynn("Но пришло время уходить.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

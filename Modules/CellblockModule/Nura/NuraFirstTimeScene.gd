@@ -5,46 +5,46 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("You enter a room that can be described as a robotics lab. Although, this one seems to be completely abandoned. Machinery and equipment is left in disarray, most of the lights are flickering, desperately trying to enlighten the room but failing again and again, instead giving you a sense of unease.")
+		saynn("Вы входите в помещение, которое можно описать как лабораторию робототехники. Однако эта кажется совершенно заброшенной. Машины и оборудование разбросаны в беспорядке, большинство ламп мерцают, отчаянно пытаясь осветить комнату, но раз за разом терпят неудачу, лишь нагоняя на вас жуть.")
 
-		saynn("You realize that you probably won't find anything useful here.")
+		saynn("Вы понимаете, что вряд ли найдете здесь что-то полезное.")
 
-		addButton("Go back", "Return to the main corridor", "go_back")
+		addButton("Назад", "Вернуться в главный коридор", "go_back")
 	if(state == "go_back"):
-		saynn("You turn around and proceed to step out of the room. But as you do so, your foot hits something metal and you hear a faint whirring sound. You notice a body lying on the floor! Completely motionless. And naked. The blinking lights make this look like a scene straight out of a horror film.")
+		saynn("Вы разворачиваетесь, чтобы выйти из комнаты. Но в этот момент ваша нога задевает что-то металлическое, и вы слышите слабый жужжащий звук. Вы замечаете тело, лежащее на полу! Совершенно неподвижное. И обнаженное. Из-за мигающего света всё это напоминает сцену из фильма ужасов.")
 
-		addButton("Look closer", "Did someone die here?", "look_closer")
-		addButton("Leave", "Time to leave this place!", "leave")
+		addButton("Присмотреться поближе", "Неужели здесь кто-то умер?", "look_closer")
+		addButton("Уйти", "Пора убираться отсюда!", "leave")
 	if(state == "leave"):
 		GM.pc.setLocation("eng_nearnura")
 		aimCameraAndSetLocName("eng_nearnura")
-		saynn("You quickly make your way the heck out of that room. Phew.")
+		saynn("Вы поскорее выметаетесь из этой комнаты. Фух.")
 
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 	if(state == "look_closer"):
 		addCharacter("nura")
 		playAnimation(StageScene.Duo, "stand", {npc="nura"})
-		saynn("You step closer and realize that it's a humanoid android, lying face down among the rubble. You bend down to get a closer look, and notice that it has a label on its shoulder that you can't read due to many scratches.")
+		saynn("Вы подходите ближе и понимаете, что это гуманоидный андроид, лежащий лицом вниз среди обломков. Вы наклоняетесь, чтобы рассмотреть его получше, и замечаете на плече наклейку, которую невозможно прочитать из-за множества царапин.")
 
-		saynn("As you reach to turn it over, the android's eyes snap open and it quickly stands up, startling you in the process.")
+		saynn("Стоит вам протянуть руку, чтобы перевернуть его, как глаза андроида резко распахиваются, и он стремительно вскакивает, заставляя вас вздрогнуть от неожиданности.")
 
-		saynn("The android stares at you and speaks in a calm, robotic voice.")
+		saynn("Андроид пристально смотрит на вас и произносит что-то спокойным роботизированным голосом.")
 
-		saynn("[say=nura]Hello, I am Nur-A. How may I assist you?[/say]")
+		saynn("[say=nura]Здравствуйте, я — Нур-А. Чем я могу вам помочь?[/say]")
 
-		saynn("Nur-A, huh.")
+		saynn("Нур-А, значит.")
 
-		saynn("[say=pc]You're an android?[/say]")
+		saynn("[say=pc]Ты андроид?[/say]")
 
-		saynn("You hear servos screeching slightly as the android tries to nod.")
+		saynn("Вы слышите легкий скрежет сервоприводов, когда андроид пытается кивнуть.")
 
-		saynn("[say=nura]My purpose is to provide medical assistance to those in need. I can administer medication, perform basic medical procedures, and monitor vital signs. I am also programmed to provide emotional support to patients, as well as assist in their rehabilitation.[/say]")
+		saynn("[say=nura]Моя цель — оказывать медицинскую помощь нуждающимся. Я могу назначать лекарства, проводить базовые медицинские процедуры и следить за жизненными показателями. Также я запрограммирована оказывать эмоциональную поддержку пациентам и помогать в их реабилитации.[/say]")
 
-		saynn("Her speech is completely emotionless, just word after word without even a single pause.")
+		saynn("Её речь абсолютно лишена эмоций — просто слова, идущие одно за другим без единой паузы.")
 
-		saynn("Interesting. You decide to look around some more to make sure there is no one else around.")
+		saynn("Интересно. Вы решаете еще раз оглядеться по сторонам, чтобы убедиться, что рядом никого нет.")
 
-		addButton("Continue", "See what happens next", "endtalk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endtalk")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

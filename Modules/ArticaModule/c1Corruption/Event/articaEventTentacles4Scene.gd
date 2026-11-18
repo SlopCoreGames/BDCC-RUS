@@ -24,194 +24,194 @@ func _run():
 		isLusty = getModule("ArticaModule").isLusty()
 		nakedAndShy = (isNaked && !isSlut)
 		playAnimation(StageScene.Duo, "stand", {npc="artica"})
-		saynn("As you approach Artica, you find her in a state of distress.. She is panting heavily and holding her arms wrapped around her incredibly swollen belly. Her eyes are wide from fear as looked up at you with a pleading expression.")
+		saynn("Когда ты приближаешься к Артике, ты видишь, что она в глубоком смятении... Она тяжело дышит, обхватив руками свой невероятно раздувшийся живот. Её глаза широко распахнуты от страха, и она смотрит на тебя с умоляющим выражением лица.")
 
-		saynn("[say=artica]I.. I.. t-think.. t-they w-want to..[/say]")
+		saynn("[say=artica]Я.. я.. к-кажется.. о-они х-хотят..[/say]")
 
-		saynn("[say=pc]You think you're about to give birth?[/say]")
+		saynn("[say=pc]Думаешь, ты вот-вот родишь?[/say]")
 
-		saynn("[say=artica]Uhh.. umm-m.. ah.. k-kinda..[/say]")
+		saynn("[say=artica]Ох.. эммм.. ах.. ч-что-то вроде того..[/say]")
 
-		saynn("Whatever it is, better to show her to the doctor.")
+		saynn("Что бы это ни было, лучше показать её врачу.")
 
-		addButton("Medical!", "Bring Artica to the medical", "in_medical")
+		addButton("В медпункт!", "Отвести Артику в медпункт", "in_medical")
 	if(state == "in_medical"):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {pc="artica", npc="eliza"})
 		aimCameraAndSetLocName("med_lobbymain")
 		GM.pc.setLocation("med_lobbymain")
-		saynn("You grab Artica by her paw and carefully guide her to the main elevator. It starts bringing you down to the lower floor..")
+		saynn("Ты берешь Артику за лапу и осторожно ведешь к главному лифту. Он начинает спускать вас на нижний этаж...")
 
-		saynn("[say=artica]T-these a-are not.. p-pups.. I.. I g-got.. um..[/say]")
+		saynn("[say=artica]Э-это н-не.. ц-щенята.. я.. я п-получила.. эм..[/say]")
 
-		saynn("You pretend that you don't understand what she is talking about.")
+		saynn("Ты делаешь вид, что не понимаешь, о чем она говорит.")
 
-		saynn("[say=pc]Don't worry, I got you.[/say]")
+		saynn("[say=pc]Не волнуйся, я тебя держу.[/say]")
 
-		saynn("[say=artica]Ah..[/say]")
+		saynn("[say=artica]Ах..[/say]")
 
-		saynn("The metal doors finally open, allowing you to bring Artica out into the medical lobby.. The familiar doctor quickly rushes to you, seeing and hearing the panting pregnant-looking fluff.")
+		saynn("Металлические двери наконец открываются, позволяя тебе вывести Артикуку в медицинское лобби... Увидев и услышав тяжело дышащую, похожую на беременную пушистиху, знакомый доктор спешит к вам.")
 
-		saynn("[say=eliza]Wow. Doctor Quinn here.[/say]")
+		saynn("[say=eliza]Ого. Доктор Куинн на связи.[/say]")
 
-		saynn("[say=pc]She needs help.[/say]")
+		saynn("[say=pc]Ей нужна помощь.[/say]")
 
-		saynn("[say=artica]I.. um..[/say]")
+		saynn("[say=artica]Она... эм...[/say]")
 
-		saynn("The feline scans the girl with some device and then quickly starts tapping on her datapad.")
+		saynn("Кошка сканирует девушку каким-то прибором, а затем быстро начинает стучать по своему датападу.")
 
-		saynn("[say=eliza]Oh, I know, eggs~. I'm setting everything up as we speak.[/say]")
+		saynn("[say=eliza]О, я знаю, яйца~. Я уже всё подготавливаю.[/say]")
 
-		saynn("[say=pc]Eggs?[/say]")
+		saynn("[say=pc]Яйца?[/say]")
 
-		saynn("The feline nods.")
+		saynn("Кошка кивает.")
 
-		saynn("[say=eliza]This inmate here participated in a little experiment~. And now she is full of.. eggs. Don't worry, they're harmless.. if she lays them down in time. And that time is now~.[/say]")
+		saynn("[say=eliza]Эта заключенная приняла участие в небольшом эксперименте~. И теперь она полна... яиц. Не волнуйтесь, они безвредны... если она отложит их вовремя. А время пришло~.[/say]")
 
-		saynn("You pretend that you're surprised.")
+		saynn("Ты притворяешься, что удивлена.")
 
-		saynn("[say=eliza]Do you wanna.. help? No is fine, I can just give you a few when we're done~. They share the taste of their carrier.. but they're usually very sweet~.[/say]")
+		saynn("[say=eliza]Хочешь... попробовать? Если нет — ничего страшного, я просто дам тебе парочку, когда закончим~. У них вкус их носителя... но обычно они очень сладкие~.[/say]")
 
-		saynn("Do you really want to see Artica lay these plant eggs?..")
+		saynn("Ты действительно хочешь увидеть, как Артика откладывает эти растительные яйца?..")
 
-		addButton("Watch", "See it happen", "do_watch")
-		addButton("Skip", "Just receive the eggs", "do_skip")
+		addButton("Смотреть", "Посмотреть на это", "do_watch")
+		addButton("Пропустить", "Просто принять яйца", "do_skip")
 	if(state == "do_skip"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("You decide to just wait in the lobby.")
+		saynn("Ты решаешь просто подождать в вестибюле.")
 
-		saynn("And soon.. Artica and doctor Quinn return to you, with Artica having a flat belly again!"+str(" Well.. a flatter one.. It's clearly still round, just a bit less." if getCharacter("artica").isVisiblyPregnant() else "")+"")
+		saynn("И вскоре... Артика и доктор Куинн возвращаются к тебе, при этом живот Артики снова стал плоским!"+str(" Well.. a flatter one.. It's clearly still round, just a bit less." if getCharacter("artica").isVisiblyPregnant() else "")+"")
 
-		saynn("[say=eliza]There you go! I kept some for.. the lab.[/say]")
+		saynn("[say=eliza]Вот, держи! Я оставила немного для... лаборатории.[/say]")
 
-		saynn("The feline hands you a few.. white egg-like.. fruits? All of them are covered in juices..")
+		saynn("Кошка протягивает тебе несколько... белых, похожих на яйца... плодов? Все они покрыты соком...")
 
-		saynn("[say=eliza]Sorry, I didn't wash them. But it adds to the flavor, trust me~.[/say]")
+		saynn("[say=eliza]Ой, прости, я их не помыла. Но это только добавляет вкуса, поверь мне~.[/say]")
 
-		saynn("[say=pc]Thanks.. I guess..[/say]")
+		saynn("[say=pc]Спасибо.. наверное..[/say]")
 
-		saynn("The feline nods and steps back.")
+		saynn("Кошка кивает и отступает назад.")
 
-		addButton("Artica", "Look at her", "skip_lookatartica")
+		addButton("Артика", "Посмотри на неё", "skip_lookatartica")
 	if(state == "skip_lookatartica"):
 		playAnimation(StageScene.Duo, "stand", {npc="artica"})
-		saynn("Artica looks.. spent.. exhausted.")
+		saynn("Артика выглядит.. выжатой.. измотанной.")
 
-		saynn("[say=pc]How do you feel?[/say]")
+		saynn("[say=pc]Как ты себя чувствуешь?[/say]")
 
-		saynn("[say=artica]I.. ah.. i-it was intense..[/say]")
+		saynn("[say=artica]Это.. ах.. это было интенсивно..[/say]")
 
-		saynn("Her blush makes you smile.")
+		saynn("От её румянца на лице невольно улыбаешься.")
 
-		saynn("[say=artica]I w-will.. g-go back to my spot..[/say]")
+		saynn("[say=artica]Я.. в-вернусь.. на своё место..[/say]")
 
-		saynn("[say=pc]Sure, you do that.[/say]")
+		saynn("[say=pc]Конечно, иди.[/say]")
 
-		saynn("Both, Artica and doctor Quinn, leave you alone with the.. eggs.")
+		saynn("И Артика, и доктор Куинн оставляют тебя наедине с.. яйцами.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_watch"):
 		aimCameraAndSetLocName("med_milkingroom")
 		addCharacter("artica", ["naked"])
 		playAnimation(StageScene.GivingBirth, "birth", {pc="artica", bodyState={naked=true, hard=true}})
-		saynn("[say=pc]Alright, let's do it.[/say]")
+		saynn("[say=pc]Ладно, погнали.[/say]")
 
-		saynn("The feline nods and helps you bring the panting fluff to one of the secluded rooms. This one seems to have a lot of.. specialized equipment.. including a hi-tech table.")
+		saynn("Кошка кивает и помогает тебе отвести тяжело дышащую пушистиху в одну из уединенных комнат. В этой, кажется, полно всякого.. специализированного оборудования.. включая высокотехнологичный стол.")
 
-		saynn("But before the doctor can bring the table to life, Artica sits down on the floor and starts moaning and holding onto her giant belly, her noises a mixture of pain and pleasure..")
+		saynn("Но прежде чем доктор успевает привести стол в действие, Артика опускается на пол и начинает стонать, хватаясь за свой огромный живот; в её звуках смешались боль и наслаждение..")
 
-		saynn("[say=artica]Ah!.. ah.. Agh.. hh-hh..[/say]")
+		saynn("[say=artica]Ах!.. ах.. Агх.. хх-хх..[/say]")
 
-		saynn("[say=eliza]Hold on-n-n, I'm still setting everything up![/say]")
+		saynn("[say=eliza]Подожди-и-и, я еще всё не настроила![/say]")
 
-		saynn("Looks like you will have to make do without that table for now."+str(" You quickly undress Artica and make her spread her legs wide, giving you a view of her slick holes" if !isNaked else " You make Artica spread her legs wide, giving you a view of her slick holes")+".")
+		saynn("Похоже, пока придется обойтись без этого стола."+str(" You quickly undress Artica and make her spread her legs wide, giving you a view of her slick holes" if !isNaked else " You make Artica spread her legs wide, giving you a view of her slick holes")+".")
 
-		saynn("[say=artica]Ahh-h.. ahh.. it's.. h-happening..[/say]")
+		saynn("[say=artica]Ааах-х.. ахх.. это.. п-происходит..[/say]")
 
-		saynn("Artica's pussy and asshole both twitch and clench, her body instinctively preparing for what is about to come.. You just put your hands on squirming fluff's legs, trying to keep her still.. as you watch.. entranced by the view of the first egg already peeking from her pussy, stretching her sensitive folds bit by bit..")
+		saynn("И киска, и анус Артики подергиваются и сжимаются — её тело инстинктивно готовится к тому, что вот-вот случится.. Ты кладешь руки на извивающиеся ножки пушистой девчонки, пытаясь удержать её на месте.. и наблюдаешь.. завороженный видом первого яйца, которое уже показалось из её киски, дюйм за дюймом растягивая чувствительные складки..")
 
-		saynn("[say=pc]Let it happen, girl.[/say]")
+		saynn("[say=pc]Пусть всё идет своим чередом, девочка.[/say]")
 
-		saynn("[say=artica]Nh-hh.. hh-h.. AHh-h![/say]")
+		saynn("[say=artica]Нх-хх.. хх-х.. ААх-х![/say]")
 
-		saynn("Artica kept pushing.. until the first egg finally slipped out of her pussy with a wet squelch! The sensation was clearly too much for the poor girl, her eyes rolled back as her "+str("locked cock is throbbing in its cage, eagerly leaking pre" if isCaged else "hard canine cock throbbed, a long line of pre hanging from the tip already")+"..")
+		saynn("Артика продолжала тужиться.. пока первое яйцо наконец не выскользнуло из её киски с влажным хлюпаньем! Ощущения явно оказались слишком сильными для бедняжки: её глаза закатились, когда её "+str("locked cock is throbbing in its cage, eagerly leaking pre" if isCaged else "hard canine cock throbbed, a long line of pre hanging from the tip already")+"..")
 
-		saynn("[say=pc]Quinn?[/say]")
+		saynn("[say=pc]Куинн?[/say]")
 
-		saynn("[say=eliza]I'm almost do-o-o-one! Sorry-y-y! Damn computers..[/say]")
+		saynn("[say=eliza]Я почти за-а-акончила! Прости-и-и! Чёртовы компы...[/say]")
 
-		saynn("You grab the egg.. ohh, it's slippery, its surface coated in Artica's juices.. and put it aside.")
+		saynn("Ты хватаешь яйцо... о-о, оно скользкое, вся его поверхность покрыта соками Артики... и откладываешь его в сторону.")
 
-		saynn("The next egg follows quickly, this one pushing against Artica's tight asshole. She arches her back and lets another noise of pain and pleasure as her rear hole gets stretched wide.. It seems to be stimulating her prostate so much that she can't hold back, Artica rolls her eyes back again as "+str("locked cock shoots thick ropes of cum onto the floor, her balls tensing up as the egg finally leaves her butt.." if isCaged else "throbbing cock starts shooting thick ropes of cum onto the floor, her balls tensing up as the egg finally leaves her butt..")+"")
+		saynn("Следующее яйцо следует незамедлительно, это давит в тугой задний проход Артики. Она выгибает спину, издавая очередной стон боли и наслаждения, пока её задница растягивается всё шире... Похоже, это так сильно стимулирует её простату, что она не может сдержаться; глаза Артики снова закатываются, когда она..."+str("locked cock shoots thick ropes of cum onto the floor, her balls tensing up as the egg finally leaves her butt.." if isCaged else "throbbing cock starts shooting thick ropes of cum onto the floor, her balls tensing up as the egg finally leaves her butt..")+"")
 
-		saynn("[say=artica]Ahhh-hh.. So b-bii-ig..[/say]")
+		saynn("[say=artica]Ааахх... Како-о-ое же оно б-б-большое...[/say]")
 
-		saynn("[say=eliza]I got it![/say]")
+		saynn("[say=eliza]Есть![/say]")
 
-		addButton("Continue", "See what happens next", "artica_in_machine")
+		addButton("Продолжить", "Смотреть, что будет дальше", "artica_in_machine")
 	if(state == "artica_in_machine"):
 		playAnimation(StageScene.BDSMMachineFuck, "wand", {pc="artica", pcCum=true, noDildos=true, bodyState={naked=true, hard=true}})
-		saynn("The doctor finally manages to get the smart table operational. It carefully grabs Artica with its long manipulator arms and brings her over the table, two tube-like egg collectors get pressed against her wet holes..")
+		saynn("Доктору наконец удается запустить умный стол. Механизм осторожно подхватывает Артику длинными манипуляторами и подносит её к столу, после чего два трубчатых сборщика яиц плотно прижимаются к её влажным отверстиям...")
 
-		saynn("[say=eliza]Here![/say]")
+		saynn("[say=eliza]Получай![/say]")
 
-		saynn("One by one, round white eggs emerge from her body, each one sending Artica into another passion frenzy as her hole gets stretched wide, gaping more and more, working tirelessly to expel the eggs.")
+		saynn("Одно за другим из её тела появляются круглые белые яйца, каждое из которых ввергает Артику в новый приступ страсти: её отверстия растягиваются всё шире и шире, пока она неустанно работает, выталкивая яйца наружу.")
 
-		saynn("[say=artica]Nhh-h.. ah..[/say]")
+		saynn("[say=artica]Ннхх... ах...[/say]")
 
-		saynn("Her balls keep getting drained as the eggs push on all her buttons on their way out, her cock keeps shooting strong spurts of seed as the girl is being pushed further and further into the abyss of pleasure..")
+		saynn("Её яички продолжают опустошаться, пока яйца, проталкиваясь наружу, нажимают на все её чувствительные точки; её член продолжает выдавать мощные струи семени, пока девушка всё глубже и глубже погружается в бездну наслаждения...")
 
-		addButton("Continue", "See what happens next", "do_make_eggs")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_make_eggs")
 	if(state == "do_make_eggs"):
 		playAnimation(StageScene.BDSMMachineFuck, "tease", {pc="artica", noDildos=true, bodyState={naked=true, hard=true}})
-		saynn("As the last egg slips free, Artica's body does a final, powerful shudder. Her pussy and tailhole.. gaping wide.. both love tunnels oozing with the remains of the sweet nectar that the eggs were bathing in.. Her cock, now spent, twitches weakly as a few final drops of cum dribbled out.")
+		saynn("Когда последнее яйцо выскальзывает наружу, тело Артики содрогается в последней мощной судороге. Её киска и анальное отверстие... широко раззявлены... оба отверстия сочатся остатками сладкого нектара, в котором купались яйца... Её член, теперь уже опустошенный, слабо подергивается, пока вытекают последние капли спермы.")
 
-		saynn("[say=artica]..ah..[/say]")
+		saynn("[say=artica]..ах..[/say]")
 
-		saynn("She seems to be utterly exhausted.. her belly now"+str(" not as round as it was before.. but still somewhat round.." if getCharacter("artica").isVisiblyPregnant() else " completely flat again..")+"")
+		saynn("Она кажется совершенно изможденной... её живот теперь"+str(" not as round as it was before.. but still somewhat round.." if getCharacter("artica").isVisiblyPregnant() else " completely flat again..")+"")
 
-		saynn("[say=eliza]What a nice yield![/say]")
+		saynn("[say=eliza]Какой отличный урожай![/say]")
 
-		saynn("The feline hands you your share of the eggs.. all of them covered in juices and smelling like.. Artica..")
+		saynn("Кошка протягивает тебе твою долю яиц... все они покрыты соком и пахнут... Артикой...")
 
-		saynn("[say=artica]T-t.. t-th..[/say]")
+		saynn("[say=artica]О-о.. о-о..[/say]")
 
-		saynn("[say=pc]Relax, Artica. You need to rest.[/say]")
+		saynn("[say=pc]Расслабься, Артика. Тебе нужно отдохнуть.[/say]")
 
-		saynn("She nods and just throws her head back, resting as her holes begin to slowly close up again..")
+		saynn("Она кивает и просто откидывает голову назад, отдыхая, пока её отверстия начинают медленно закрываться...")
 
-		saynn("You look at the eggs..")
+		saynn("Ты смотришь на яйца...")
 
-		saynn("[say=pc]What can I even do with them?[/say]")
+		saynn("[say=pc]Да что мне с ними вообще делать?[/say]")
 
-		saynn("The feline shows you by suddenly biting into one of them.. causing a sweet flavor to instantly fill your lungs.")
+		saynn("Кошка показывает тебе, внезапно вонзаясь зубами в один из них... отчего твои легкие мгновенно наполняет сладкий аромат.")
 
-		saynn("[say=eliza]Ah~. It's food. It's just a great snack~.[/say]")
+		saynn("[say=eliza]Ах~. Это еда. Просто отличная закуска~.[/say]")
 
-		saynn("[say=pc]I see..[/say]")
+		saynn("[say=pc]Понятно..[/say]")
 
-		saynn("You spend some time together with the feline and Artica.. until she is able to walk again.")
+		saynn("Вы проводите какое-то время вместе с кошкой и Артикой... пока она снова не сможет ходить.")
 
-		addButton("Continue", "See what happens next", "back_to_lobby")
+		addButton("Продолжить", "Смотреть, что будет дальше", "back_to_lobby")
 	if(state == "back_to_lobby"):
 		addCharacter("artica")
 		playAnimation(StageScene.Duo, "stand", {npc="artica"})
 		aimCameraAndSetLocName("med_lobbymain")
-		saynn("The feline brings you and Artica back into the lobby..")
+		saynn("Кошка приводит тебя и Артику обратно в лобби...")
 
-		saynn("[say=eliza]Well, that's gonna be it! If you ever find yourself full of juicy fruits, you know where to find me![/say]")
+		saynn("[say=eliza]Ну, на этом всё! Если вдруг почувствуешь, что набился сочными фруктами — ты знаешь, где меня искать![/say]")
 
-		saynn("Artica blushes.")
+		saynn("Артика краснеет.")
 
-		saynn("[say=artica]Ok-kay..[/say]")
+		saynn("[say=artica]Ладно..[/say]")
 
-		saynn("She turns towards you.")
+		saynn("Она поворачивается к тебе.")
 
-		saynn("[say=artica]T-thank you.. Feels weird not to be.. full.. all the time.. haha..[/say]")
+		saynn("[say=artica]С-спасибо... Странно чувствовать себя не... сытой... всё время... ха-ха...[/say]")
 
-		saynn("And so she heads towards her back spot.")
+		saynn("И она направляется к своему привычному месту.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

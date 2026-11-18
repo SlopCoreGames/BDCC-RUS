@@ -52,36 +52,36 @@ func _run():
 		var ehibit = GM.pc.getSkillLevel(Skill.Exhibitionism)
 
 		if(ehibit < 2):
-			saynn("Maybe you can use this opportunity to test yourself..")
+			saynn("Может, стоит воспользоваться случаем и испытать себя..")
 		elif(ehibit < 4):
-			saynn("A lewd thought crosses your mind. Maybe you can offer {npc.him} a little show?")
+			saynn("В голову приходит непристойная мысль. Может, устроить {npc.him} небольшое шоу?")
 		elif(ehibit < 6):
-			saynn("You feel pretty confident about your body. Lewd thoughts keep appearing in your head.")
+			saynn("Ты чувствуешь себя очень уверенно в своем теле. В голове то и дело всплывают пошлые мысли.")
 		else:
-			saynn("You can’t wait to expose yourself more. All these surprised and embarrassed looks that you are getting give you so much pleasure.")
+			saynn("Тебе не терпится раздеться еще сильнее. Все эти удивленные и смущенные взгляды приносят тебе невероятное удовольствие.")
 
-		addButton("Avoid", "You don’t feel like exposing yourself more", "avoid")
+		addButton("Избежать", "Тебе не хочется раздеваться больше", "avoid")
 		
-		addButtonWithChecks("Tits", "Show off your chest", "tits", [], [[ButtonChecks.SkillCheck, Skill.Exhibitionism, 1], ButtonChecks.NotArmsRestrained, ButtonChecks.NotHandsBlocked])
+		addButtonWithChecks("Сиськи", "Показать грудь", "tits", [], [[ButtonChecks.SkillCheck, Skill.Exhibitionism, 1], ButtonChecks.NotArmsRestrained, ButtonChecks.NotHandsBlocked])
 		if(ehibit >= 1):
-			addButtonWithChecks("Ass", "Show off your butt", "ass", [], [[ButtonChecks.SkillCheck, Skill.Exhibitionism, 3], ButtonChecks.NotArmsRestrained, ButtonChecks.NotHandsBlocked])
+			addButtonWithChecks("В задницу", "Показать задницу", "ass", [], [[ButtonChecks.SkillCheck, Skill.Exhibitionism, 3], ButtonChecks.NotArmsRestrained, ButtonChecks.NotHandsBlocked])
 		if(ehibit >= 3):
-			addButtonWithChecks("Pussy", "Flash your pussy", "pussy", [], [ButtonChecks.HasReachableVagina, [ButtonChecks.SkillCheck, Skill.Exhibitionism, 5], ButtonChecks.NotArmsRestrained, ButtonChecks.NotHandsBlocked])
-			addButtonWithChecks("Cock", "Flash your dick", "cock", [], [ButtonChecks.HasPenis, [ButtonChecks.SkillCheck, Skill.Exhibitionism, 5], ButtonChecks.NotArmsRestrained, ButtonChecks.NotHandsBlocked])
+			addButtonWithChecks("В киску", "Показать киску", "pussy", [], [ButtonChecks.HasReachableVagina, [ButtonChecks.SkillCheck, Skill.Exhibitionism, 5], ButtonChecks.NotArmsRestrained, ButtonChecks.NotHandsBlocked])
+			addButtonWithChecks("Член", "Покажи свой член", "cock", [], [ButtonChecks.HasPenis, [ButtonChecks.SkillCheck, Skill.Exhibitionism, 5], ButtonChecks.NotArmsRestrained, ButtonChecks.NotHandsBlocked])
 		if(ehibit >= 5):
-			addButtonWithChecks("Show yourself off", "Don’t hide anything", "show_yourself_off", [], [[ButtonChecks.SkillCheck, Skill.Exhibitionism, 7], ButtonChecks.NotArmsRestrained, ButtonChecks.NotHandsBlocked])
-		addButton("Attack", "What is their problem", "attack")
+			addButtonWithChecks("Выставь себя напоказ", "Не скрывай ничего", "show_yourself_off", [], [[ButtonChecks.SkillCheck, Skill.Exhibitionism, 7], ButtonChecks.NotArmsRestrained, ButtonChecks.NotHandsBlocked])
+		addButton("Атаковать", "Чего они хотят?", "attack")
 		
 	if(state == "avoid"):
-		saynn("You hide your face and escape the area as quickly as possible while trying to avoid any eyes.")
+		saynn("Вы прикрываете лицо и стараетесь как можно быстрее свалить отсюда, стараясь не попадаться на глаза.")
 
-		saynn("Luckily the inmate doesn’t seem to follow you.")
+		saynn("К счастью, заключенный, кажется, не собирается за вами гнаться.")
 
 		# (scene ends)
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 		
 	if(state == "failed_to_get_away"):
-		saynn("But before you leave, the inmate grabs you by the collar and tries to grope your body!")
+		saynn("Но прежде чем вы успеваете уйти, заключенный хватает вас за воротник и пытается лапать ваше тело!")
 		
 		saynn(RNG.pick([
 			"[say=npc]Where are you going, slut? Your job is to serve inmates like me.[/say]",
@@ -90,15 +90,15 @@ func _run():
 			"[say=npc]Think I will let you go after what I saw? I’m gonna fuck you.[/say]",
 		]))
 
-		addButton("Attack", "What is their problem", "attack")
-		addButton("Submit to", "Let them have it their way", "startsexsubby")
+		addButton("Атаковать", "Чего они хотят?", "attack")
+		addButton("Подчиниться", "Пусть делают, что хотят", "startsexsubby")
 
 	if(state == "attack"):
-		saynn("You quickly turn around and shove your elbow into {npc.his} chest.")
+		saynn("Ты резко разворачиваешься и втыкаешь локоть в {npc.his} грудь.")
 
 		# (if success)
 		if(attackSuccessful):
-			saynn("That forces all the air out of {npc.him}. The inmate drops onto {npc.his} knees and gasps.")
+			saynn("Это выбивает из {npc.him} весь дух. Заключенный падает на {npc.his} колени, жадно хватая ртом воздух.")
 			
 			saynn(RNG.pick([
 				"[say=npc]You.. fucker..[/say]",
@@ -107,14 +107,14 @@ func _run():
 				
 			]))
 
-			saynn("Seems like now is a good time to leave.")
+			saynn("Похоже, сейчас самое время сваливать.")
 			
 			addWonButton()
 		# (addwonbuttons)
 
 		# (if fail)
 		else:
-			saynn("That makes {npc.him} cough but {npc.he} is still standing. And {npc.he} is still angry.")
+			saynn("От этого {npc.him} начинает кашлять, но {npc.he} всё еще стоит на ногах. И {npc.he} всё еще в ярости.")
 
 			saynn(RNG.pick([
 				"[say=npc]Ugh.. Prepare to be my bitch.[/say]",
@@ -123,25 +123,25 @@ func _run():
 			]))
 
 			# (fight)
-			addButton("Fight", "Start the fight", "startfight")
+			addButton("Драться", "Начать бой", "startfight")
 
 		# (if won, if lose are the same)
 
 	if(state == "if_lost"):
-		saynn("You collapse, unable to continue fighting.")
+		saynn("Ты валишься с ног, не в силах продолжать бой.")
 
 		if(npcVariation != "mean"):
-			saynn("[say=npc]What did you think was gonna happen?[/say]")
+			saynn("[say=npc]Ты что, думал, всё будет иначе?[/say]")
 
 		else:
-			saynn("[say=npc]Know your place, bitch.[/say]")
+			saynn("[say=npc]Знай своё место, сучка.[/say]")
 
-		saynn("Since you can’t really fight {npc.him} back anymore, your only choice is to submit.")
+		saynn("Поскольку {npc.him} больше не может по-настоящему сопротивляться, у тебя остается только один выбор — подчиниться.")
 
-		addButton("Get fucked", "Well, you lost", "startsexsubby")
+		addButton("Получи по полной", "Ну, ты проиграл(а)", "startsexsubby")
 
 	if(state == "if_won"):
-		saynn("You pin the defeated inmate to the floor. {npc.He} doesn’t seem to struggle much.")
+		saynn("Ты прижимаешь побежденного заключенного к полу. {npc.He} особо не сопротивляется.")
 
 		saynn("[say=npc]"+RNG.pick([
 			"What a slut.",
@@ -156,83 +156,83 @@ func _run():
 
 		# (if flat tits)
 		if(!GM.pc.hasBigBreasts()):
-			saynn("You expose and show off your {pc.breasts}, teasing and caressing the nipples that perk up from the touch. Your chest is not very big but sometimes size doesn’t matter.")
+			saynn("Ты обнажаешь и выставляешь напоказ свою {pc.breasts}, дразня и лаская соски, которые твердеют от прикосновений. Твоя грудь не очень большая, но иногда размер не имеет значения.")
 
 		# (if big tits)
 		else:
-			saynn("You expose and show off your {pc.breasts}, squeezing and caressing them. You teasingly hide just the nipples, so lewd. Why hide such nice funbags when you can embarrass others with them.")
+			saynn("Ты обнажаешь и выставляешь напоказ свою {pc.breasts}, сжимая и лаская их. Ты игриво прикрываешь только соски — как же это похотливо. Зачем прятать такие классные буфера, если ими можно смущать других?")
 
-		saynn("The inmate raises {npc.his} brow. Doing lewd things like this makes you more confident and proud of your body.")
+		saynn("Заключенный приподнимает {npc.his} бровь. Подобные непристойности заставляют тебя чувствовать себя увереннее и гордиться своим телом.")
 
-		addButton("Leave", "That was lewd", "leavecheck")
+		addButton("Уйти", "Это было пошло", "leavecheck")
 
 	if(state == "ass"):
 		# (Requires level 3)
 
-		saynn("You expose your {pc.thick} butt and wiggle it slightly while looking behind you. You spank your ass, making it bounce. (or) You spread your buttcheks, showing off your {pc.analStretch} star.")
+		saynn("Ты демонстрируешь свою {pc.thick} задницу и слегка виляешь ею, оглядываясь назад. Ты шлепаешь себя по ягодицам, заставляя их подпрыгивать. (или) Ты разводишь булки, демонстрируя свою {pc.analStretch} звездочку.")
 
-		saynn("You see the inmate's big eyes. Doing lewd things like this makes you more confident and proud of your body.")
+		saynn("Ты видишь широко раскрытые глаза заключенного. Подобные непристойности заставляют тебя чувствовать себя увереннее и гордиться своим телом.")
 
-		addButton("Leave", "That was lewd", "leavecheck")
+		addButton("Уйти", "Это было пошло", "leavecheck")
 
 	if(state == "pussy"):
 		# (Requires level 5)
 
-		saynn("You flash your {pc.pussyStretch} pussy for a second and stick your tongue out. But just that one moment made you feel lusty.")
+		saynn("Ты на секунду демонстрируешь свою {pc.pussyStretch} киску и высовываешь язык. Но даже этого мгновения хватило, чтобы ты почувствовала прилив похоти.")
 
-		saynn("The inmate might have caught just the right moment. But you don’t mind exposing some skin, it’s just your pussy after all.")
+		saynn("Возможно, заключенный подловил именно тот нужный момент. Но тебя не смущает обнажение кожи — в конце концов, это всего лишь твоя киска.")
 
-		addButton("Leave", "That was lewd", "leavecheck")
+		addButton("Уйти", "Это было пошло", "leavecheck")
 
 	if(state == "cock"):
 		# (requires level 5)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("You quickly flash your caged up dick and offer any watcher a cheeky smile. The thrill of exposing yourself so boldly feels good.")
+			saynn("Ты быстро демонстрируешь свой член в клетке и одариваешь любого наблюдателя дерзкой ухмылкой. Азарт от столь смелого саморазоблачения приносит удовольствие.")
 		else:
-			saynn("You quickly flash your {pc.penis} and offer any watcher a cheeky smile. The thrill of exposing yourself so boldly feels good.")
+			saynn("Ты быстро демонстрируешь свою {pc.penis} и одариваешь любого наблюдателя дерзкой ухмылкой. Азарт от столь смелого саморазоблачения приносит удовольствие.")
 
-		saynn("You even manage to keep an eye contact with the inmate. Doing lewd things like this makes you more confident and proud of your body.")
+		saynn("Тебе даже удается удерживать зрительный контакт с заключенным. Подобные развратные штучки придают тебе уверенности и заставляют гордиться своим телом.")
 
-		addButton("Leave", "That was lewd", "leavecheck")
+		addButton("Уйти", "Это было пошло", "leavecheck")
 
 	if(state == "show_yourself_off"):
 		# (requires level 7)
 
-		saynn("There is nothing better than showing your body off and seeing people’s reaction. You look directly at the inmate while touching yourself.")
+		saynn("Нет ничего лучше, чем выставлять свое тело напоказ и наблюдать за реакцией окружающих. Ты смотришь прямо на заключенного, лаская себя.")
 
 		# (if has flat tits)
 		if(!GM.pc.hasBigBreasts()):
-			saynn("You start by flashing your {pc.breasts} and teasing your nipples until they’re nice and hard. Who needs big milkers anyways, they’re too distracting.")
+			saynn("Ты начинаешь с того, что демонстрируешь свои {pc.breasts} и дразнишь соски, пока они не станут твердыми и возбужденными. В конце концов, кому нужны огромные сиськи? От них слишком много отвлекаешься.")
 
 		# (if has big tits)
 		else:
-			saynn("You start by flashing your {pc.breasts} and squeezing them between your hands. Your nipples quickly get hard poke against your palms while you rub them. You have some great tits that are worth showing off.")
+			saynn("Ты начинаешь с того, что демонстрируешь свои {pc.breasts} и сжимаешь их ладонями. Твои соски быстро твердеют и упираются в ладони, пока ты их трешь. У тебя отличная грудь, которую стоит показать.")
 
 		# (if has pussy)
 		if(GM.pc.hasReachableVagina()):
-			saynn("One of your hands then slips down to your pussy. You keep groping your chest while spreading your folds and showing off the sensitive flesh. Lewd.")
+			saynn("Затем одна твоя рука скользит вниз, к киске. Ты продолжаешь ощупывать грудь, одновременно раздвигая половые губы и демонстрируя чувствительную плоть. Как развратно.")
 
 		# (if has cock)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("A big smirk shines on your face while you flash your locked up {pc.penis}. Your digits wrap around your chastity cage and give it a slight stroke. You don't get any pleasure from that but it still feels nice.")
+			saynn("На твоем лице играет широкая ухмылка, пока ты демонстрируешь свои запертые {pc.penis}. Пальцы обхватывают твою девственную клетку и слегка поглаживают её. Ты не получаешь от этого удовольствия, но ощущения всё равно приятные.")
 		elif(GM.pc.hasReachablePenis()):
-			saynn("A big smirk shines on your face while you flash your {pc.penis}. Your digits wrap around your shaft and give it a slight stroke.")
+			saynn("На твоем лице играет широкая ухмылка, пока ты демонстрируешь свои {pc.penis}. Пальцы обхватывают твой член и слегка поглаживают его.")
 
-		saynn("You turn around and slide your hands down your {pc.thick} thighs before giving them a smack. Then you spread buttcheeks and show off your {pc.analStretch} tailhole!")
+		saynn("Ты поворачиваешься спиной и ведешь руками вниз по своим {pc.thick} бедрам, прежде чем звонко шлепнуть по ним. Затем ты раздвигаешь ягодицы, демонстрируя свое {pc.analStretch} анальное отверстие!")
 
-		saynn("So exciting, you’re showing all of you for that one inmate. And then you quickly run away.")
+		saynn("Так волнительно — ты выставляешь себя на показ ради одного-единственного заключенного. А затем быстро убегаешь.")
 
 		# (scene ends)
 		if(npcVariation in ["kind", "subby"]):
-			addButton("Continue", "So lewd", "endthescene")
+			addButton("Продолжить", "Как развратно", "endthescene")
 		else:
-			addButton("Continue", "So lewd", "failed_to_get_away")
+			addButton("Продолжить", "Как развратно", "failed_to_get_away")
 
 	if(state == "after_sex" || state == "after_sex_won"):
-		saynn("After the fun time ends, the inmate just leaves you alone.")
+		saynn("Когда веселье заканчивается, зэк просто оставляет тебя в покое.")
 
 		# (scene ends)
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 		
 	if(state == "after_sex"):
 		GM.ES.triggerRun(Trigger.AfterSexWithDynamicNPCThatWon, [npcID])
@@ -241,12 +241,12 @@ func _run():
 		GM.ES.triggerRun(Trigger.AfterSexWithDefeatedDynamicNPC, [npcID])
 
 func addWonButton():
-	addButton("Leave", "Just leave before anyone else sees you", "endthescene")
-	addButtonWithChecks("Sex!", "Time to fuck them!", "startsexasdom", [], [ButtonChecks.CanStartSex])
-	addButton("Submit to", "Let them have it their way with you", "startsexsubby")
-	addButton("Inventory", "Look at your inventory", "openinventory")
+	addButton("Уйти", "Просто уходи, пока тебя не заметили.", "endthescene")
+	addButtonWithChecks("Секс!", "Пора их оттрахать!", "startsexasdom", [], [ButtonChecks.CanStartSex])
+	addButton("Подчиниться", "Позволить им делать с тобой всё, что захотят", "startsexsubby")
+	addButton("Инвентарь", "Посмотреть инвентарь", "openinventory")
 	if(GM.pc.getInventory().hasRemovableRestraints()):
-		addButton("Struggle", "Struggle out of your restraints", "strugglemenu")
+		addButton("Сопротивление", "Вырваться из оков", "strugglemenu")
 	GM.ES.triggerRun(Trigger.DefeatedDynamicNPC, [npcID])
 
 func _react(_action: String, _args):

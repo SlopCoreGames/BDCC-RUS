@@ -7,77 +7,77 @@ func _run():
 	if(state == ""):
 		addCharacter("kidlat", ["naked"])
 		playAnimation(StageScene.Duo, "stand", {npc="kidlat", npcAction="sit", npcBodyState={naked=true}})
-		saynn("You follow the tunnels, scanning the dimly-lit walls.. until you spot a familiar shape up ahead. Somehow you always manage to bump into her.")
+		saynn("Ты идешь по туннелям, осматривая тускло освещенные стены... пока впереди не замечаешь знакомый силуэт. Каким-то образом тебе всегда удается на нее наткнуться.")
 
-		saynn("Kidlat is sitting on one of the broken crates, her cardboard box somewhere out of view. She is still naked, her black and cyan fur glinting faintly in the low light. She looks tired.")
+		saynn("Кидлат сидит на одном из сломанных ящиков, ее картонная коробка где-то вне поля зрения. Она все еще голая, ее черно-голубой мех тускло поблескивает в слабом свете. Она выглядит уставшей.")
 
-		saynn("At the sound of your footsteps, her ears twitch.. and her eyes instinctively snap up to meet yours.")
+		saynn("Услышав твои шаги, она дергает ушами... и ее глаза инстинктивно вскидываются, встречаясь с твоими.")
 
-		saynn("[say=kidlat]Oh. If it ain't my favorite perv~. Came for another show?[/say]")
+		saynn("[say=kidlat]Оу. Если не мой любимый извращенец~. Пришел на очередное представление?[/say]")
 
-		saynn("You don't say anything. Instead, you pull out a familiar bundle of black fabric with lilac trims.")
+		saynn("Ты ничего не говоришь. Вместо этого ты достаешь знакомый сверток из черной ткани с лиловой отделкой.")
 
-		saynn("Kidlat sees it.. and freezes. Her cyan-and-purple eyes widen as you hold the uniform out toward her. She doesn't take it right away.")
+		saynn("Кидлат видит это... и замирает. Ее голубо-фиолетовые глаза расширяются, когда ты протягиваешь ей униформу. Она берет ее не сразу.")
 
-		saynn("[say=kidlat]How.. Why would you..[/say]")
+		saynn("[say=kidlat]Как... Зачем тебе это...[/say]")
 
-		saynn("[say=pc]Pretty sure it's yours. Take it.[/say]")
+		saynn("[say=pc]Уверен, что это твоя. Бери.[/say]")
 
-		saynn("Her voice catches a little. When she finally takes the uniform, her fingers brush yours, her touch warm.. and much softer than you'd expect.")
+		saynn("Ее голос слегка дрожит. Когда она наконец забирает форму, ее пальцы касаются твоих — ее кожа теплая... и гораздо мягче, чем ты ожидал.")
 
-		saynn("[say=kidlat]Bloody hell..[/say]")
+		saynn("[say=kidlat]Черт возьми...[/say]")
 
-		saynn("Her ears flick low while she stares at the bundle in her paws.")
+		saynn("Её ушки поникли, пока она во все глаза пялилась на сверток в своих лапках.")
 
-		saynn("[say=pc]Something is wrong? It might be damaged a little but I tried not to add to that.[/say]")
+		saynn("[say=pc]Что-то не так? Может, он немного поврежден, но я старалась не усугублять.[/say]")
 
-		saynn("[say=kidlat]No.. I mean.. I just figured I wasn't worth the trouble.[/say]")
+		saynn("[say=kidlat]Нет.. то есть.. я просто подумала, что не стою лишних хлопот.[/say]")
 
-		saynn("[say=pc]It wasn't too hard to track it down, these junkies will spew anything out when they're high.[/say]")
+		saynn("[say=pc]Найти его было несложно, эти торчки разбалтывают всё подряд, когда под кайфом.[/say]")
 
-		saynn("She blinks a few times, looking all small and shy.")
+		saynn("Она несколько раз моргает, выглядя совсем маленькой и застенчивой.")
 
-		saynn("[say=kidlat]Hey.. you probably expect somethin' in return? I can.. uh.. anything you want. I can.. on my knees.. or.. you know.. against a wall.. uh.. how do you want to..[/say]")
+		saynn("[say=kidlat]Эй.. ты ведь, наверное, ждешь чего-то взамен? Я могу.. э-э.. всё, что захочешь. Могу.. на коленях.. или.. ну, ты понимаешь.. у стенки.. э-э.. как тебе больше нравится..[/say]")
 
-		saynn("Her cheeks are burning with cyan.. She mutters to herself..")
+		saynn("Её щеки пылают циановым цветом.. Она бормочет себе под нос..")
 
-		saynn("[say=kidlat]..fuck, I sound like such a weird slut..[/say]")
+		saynn("[say=kidlat]..блять, звучу как какая-то странная шлюха..[/say]")
 
-		saynn("You decide to stop her before she humiliates herself too much.")
+		saynn("Ты решаешь остановить её, пока она окончательно не опозорилась.")
 
-		saynn("[say=pc]You don't owe me anything, Kidlat.[/say]")
+		saynn("[say=pc]Ты мне ничего не должна, Кидлат.[/say]")
 
-		saynn("Her tail flicks nervously behind her. The silence insures. She tugs the uniform to her chest, pressing the fabric close.")
+		saynn("Её хвост нервно подергивается сзади. Тишина нарастает. Она прижимает форму к груди, плотно вжимая ткань в тело.")
 
-		saynn("A moment of peace.. in the middle of hell.")
+		saynn("Мгновение покоя... посреди этого ада.")
 
-		saynn("You hear quiet purring..")
+		saynn("Ты слышишь тихое мурлыканье...")
 
-		saynn("[say=kidlat]You really are something, luv.[/say]")
+		saynn("[say=kidlat]Ты и впрямь нечто, дорогуша.[/say]")
 
-		addButton("Continue", "See what happens next", "kidlat_dresses")
+		addButton("Продолжить", "Смотреть, что будет дальше", "kidlat_dresses")
 	if(state == "kidlat_dresses"):
 		addCharacter("kidlat")
 		playAnimation(StageScene.Duo, "stand", {npc="kidlat"})
-		saynn("Kidlat puts her uniform on, covering herself up. There are some holes in it.. but nothing too major. The uniform fits her like a glove.")
+		saynn("Кидлат натягивает форму, прикрываясь. В ней есть пара дырок... но ничего критичного. Форма сидит на ней как влитая.")
 
-		saynn("[say=kidlat]Thank you.[/say]")
+		saynn("[say=kidlat]Спасибо.[/say]")
 
-		saynn("She takes a step forward, just a small one.. until there is barely any space between you. She looks up at you through her lashes, lips parted slightly.")
+		saynn("Она делает шаг вперед, совсем небольшой... пока между вами почти не остается пространства. Она смотрит на тебя из-под ресниц, слегка приоткрыв губы.")
 
-		saynn("[say=kidlat]Don't think this means I'm gonna stop teasin' you, though~.[/say]")
+		saynn("[say=kidlat]Но не думай, что из-за этого я перестану тебя дразнить~.[/say]")
 
-		saynn("You chuckle.. and give the cat a few pats on the head.")
+		saynn("Ты усмехаешься... и пару раз гладишь кошечку по голове.")
 
-		saynn("[say=pc]Do your worst.[/say]")
+		saynn("[say=pc]Давай, покажи всё, на что способна.[/say]")
 
-		saynn("She leans in even closer, your lips are about to touch.. but then she pulls away.")
+		saynn("Она наклоняется еще ближе, ваши губы вот-вот соприкоснутся... но вдруг она отстраняется.")
 
-		saynn("[say=kidlat]You're gonna buy something, luv~?[/say]")
+		saynn("[say=kidlat]Купишь что-нибудь, дорогуша~?[/say]")
 
-		saynn("Of course.")
+		saynn("Конечно.")
 
-		addButton("Continue", "See what happens next", "start_browsing_shop")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_browsing_shop")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

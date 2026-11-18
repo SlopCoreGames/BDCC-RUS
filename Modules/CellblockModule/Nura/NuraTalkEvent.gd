@@ -15,9 +15,9 @@ func react(_triggerID, _args):
 
 func run(_triggerID, _args):
 	if(GM.main.getFlag("CellblockModule.FoundNura")):
-		saynn("Nur-A seems to be around")
+		saynn("Похоже, Нура-А где-то рядом")
 		
-		addButton("Nur-A", "Talk to the android", "nura")
+		addButton("Нура-А", "Поговорить с андроидом", "nura")
 
 func getPriority():
 	return 100

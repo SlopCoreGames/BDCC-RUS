@@ -6,101 +6,101 @@ func _init():
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("You step cautiously through the dark, twisting tunnels, the scent of chemicals thick in the air, making you feel light-headed. So light-headed that your foot accidentally hits an unscrewed panel, making a noise.")
+		saynn("Вы осторожно пробираетесь сквозь темные, извилистые туннели. В воздухе стоит густой запах химикатов, от которого начинает кружиться голова. Настолько сильно, что вы случайно задеваете ногой открученную панель, и раздается шум.")
 
-		saynn("[sayFemale]Eep![/sayFemale]")
+		saynn("[sayFemale]Ой![/sayFemale]")
 
-		saynn("A sudden yelp echoes through the corridor, followed by a flurry of movement. In the dim light, you catch sight of a figure stepping back and forth, fur bristling, tail puffed up like a brush.")
+		saynn("В коридоре эхом разносится внезапный вскрик, за которым следует суматошное движение. В тусклом свете вы замечаете фигуру: она мечется взад-вперед, шерсть дыбом, а хвост распушился, словно щетка.")
 
-		saynn("Another crazy junkie most likely.. so you raise your fists and prepare for a fight.")
+		saynn("Скорее всего, очередной безумный торчок... Вы сжимаете кулаки, готовясь к драке.")
 
-		addButton("Continue", "See what happens next", "kidlat_reveal")
+		addButton("Продолжить", "Смотреть, что будет дальше", "kidlat_reveal")
 	if(state == "kidlat_reveal"):
 		addCharacter("kidlat")
 		playAnimation(StageScene.Duo, "stand", {npc="kidlat", npcAction="dodge"})
-		saynn("No point in waiting. You push into the darkness.. and instantly run into a startled feline who leaps back the moment she sees you.")
+		saynn("Ждать нет смысла. Вы ныряете в темноту... и тут же натыкаетесь на перепуганную кошачью девку, которая отскакивает назад, едва завидев вас.")
 
-		saynn("[say=kidlat]Oh bloody hell, you nearly gave me a heart attack! What's the big idea sneaking up on a poor little kitty, huh? Rude, rude, rude![/say]")
+		saynn("[say=kidlat]Черт возьми, вы мне чуть сердце не остановили! Какого хрена ты так подкрадываешься к бедной кошечке, а? Грубо, грубо, просто грубо![/say]")
 
-		saynn("She huffs at you.. but she doesn't seem to be aggressive at all. This gives you time to inspect the dimly-lit kitty.")
+		saynn("Она фыркает на вас... но агрессии в ней почти нет. Это дает вам время рассмотреть эту полумрачную котейку.")
 
-		saynn("Before you is a feline.. an inmate.. Her fur is black with sharp cyan patterns. Her eyes, purple and cyan, are staring at you with wide, startled cat pupils. Her uniform has lilac trims on it.. coupled with a bulky metal collar resting snuggly around her neck. She presses a paw to her chest, exhaling dramatically.")
+		saynn("Перед вами кошка... заключенная. У нее черная шерсть с резкими циановыми узорами. Ее глаза — фиолетово-голубые — смотрят на вас широко распахнутыми, испуганными зрачками. На ее униформе лиловая отделка, а на шее плотно сидит массивный металлический ошейник. Она прижимает лапу к груди, драматично выдыхая.")
 
-		saynn("You're still a bit confused by the sight. The feline notices that.. and grins, her tail giving a lazy flick.")
+		saynn("Вы все еще немного озадачены увиденным. Кошка замечает это и ухмыляется, лениво вильнув хвостом.")
 
-		saynn("[say=kidlat]Right then, let's pretend that didn't happen, yeah? Let me introduce myself![/say]")
+		saynn("[say=kidlat]Ладно, давай сделаем вид, что этого не было, идет? Позволь представиться![/say]")
 
-		addButton("Continue", "See what happens next", "box_intro")
+		addButton("Продолжить", "Смотреть, что будет дальше", "box_intro")
 	if(state == "box_intro"):
 		playAnimation(StageScene.Duo, "stand", {npc="kidlat", kidlatBox=true, further=true})
-		saynn("With a theatrical flourish, she plops a battered cardboard box onto the floor and flips it open, revealing an assortment of goods inside. She spreads her arms as if presenting the finest wares in the world.")
+		saynn("С театральным пафосом она швыряет на пол потрёпанную картонную коробку и распахивает её, демонстрируя разнообразие товаров внутри. Она разводит руки в стороны, словно презентуя лучшие диковины в мире.")
 
-		saynn("[say=kidlat]Welcome to Kidlat's humble little shop of shady wonders! You got credits, I got goods. Simple, innit? No takin', no beggin' - I do business properly around here.[/say]")
+		saynn("[say=kidlat]Добро пожаловать в скромную лавочку сомнительных чудес от Кидлат! У тебя есть кредиты, у меня есть товар. Всё просто, а? Никакого воровства и попрошайничества — здесь ведут дела по-взрослому![/say]")
 
-		saynn("Kidlat, huh.")
+		saynn("Кидлат, значит...")
 
-		saynn("She leans in slightly, smirking, eyes gleaming with mischief.")
+		saynn("Она слегка наклоняется вперёд, ухмыляясь; в её глазах пляшут озорные искорки.")
 
-		saynn("[say=kidlat]So, what's it gonna be, hun? Need somethin' to keep your bones from aching? A little something-something to keep things nice and stiff? Or maybe you just wanna chat with a blue cat-shaped thing? That'll cost ya extra, by the way.[/say]")
+		saynn("[say=kidlat]Ну, чего желаешь, дорогуша? Нужно что-то, чтобы кости не ныли? Немножко «того самого», чтобы всё стояло как вкопанное? Или, может, просто хочешь поболтать с синей кошачьей мордашкой? Это, кстати, будет стоить дороже![/say]")
 
-		saynn("She winks, her tail swishing behind her as she waits for your response.")
+		saynn("Она подмигивает, ожидая твоего ответа и лениво помахивая хвостом.")
 
-		saynn("[say=kidlat]Just kiddin'![/say]")
+		saynn("[say=kidlat]Да шучу я![/say]")
 
-		saynn("In a sea of mindless junkies.. this sure is an unusual sight.")
+		saynn("В море безмозглых торчков... это зрелище выглядит чертовски необычно.")
 
-		addButton("Just browse", "Skip any chat and just get to business", "just_browse")
-		addButton("Ask", "Ask Kidlat what she is doing down here in this dangerous place", "ask_what")
+		addButton("Просто осмотреться", "Пропустить болтовню и сразу перейти к делу", "just_browse")
+		addButton("Спросить", "Спросить Кидлат, что она забыла в этом опасном месте", "ask_what")
 	if(state == "just_browse"):
-		saynn("[say=pc]Alright, let's see what you have.[/say]")
+		saynn("[say=pc]Ладно, посмотрим, что тут у тебя есть.[/say]")
 
-		saynn("[say=kidlat]Let me know if something tickles your fancy, hun![/say]")
+		saynn("[say=kidlat]Дай знать, если что-то приглянется, дорогуша![/say]")
 
-		saynn("Time for business.")
+		saynn("Пора приниматься за дело.")
 
-		addButton("Continue", "See what happens next", "run_generic_shop_scene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "run_generic_shop_scene")
 	if(state == "ask_what"):
-		saynn("You cross your arms and eye Kidlat as she stands behind her little makeshift shop.")
+		saynn("Вы скрещиваете руки на груди, оглядывая Кидлат, которая стоит за своей самодельной лавкой.")
 
-		saynn("[say=pc]What are you even doing down here in a place like this?[/say]")
+		saynn("[say=pc]Что ты вообще здесь забыла, в таком месте?[/say]")
 
-		saynn("Her ears twitch, her grin faltering for a brief moment before she waves a paw dismissively.")
+		saynn("Её уши дёргаются, а улыбка на мгновение гаснет, прежде чем она пренебрежительно машет лапой.")
 
-		saynn("[say=kidlat]Pffft, what kinda question is that, luv? What am I doing down here? What are you doin' down here, hun? Maybe I gotta be asking you the questions![/say]")
+		saynn("[say=kidlat]Пффф, что это за вопрос, любовь моя? Что я тут делаю? А ты-то что тут забыла, милочка? Может, это тебе стоит у меня спрашивать![/say]")
 
-		saynn("She snickers, leaning back against the cold metal wall of an abandoned maintenance tunnel. She taps at her cardboard box with the claws of her hind paw, nodding to herself.")
+		saynn("Она хихикает, откидываясь на холодную металлическую стену заброшенного технического туннеля. Она постукивает когтями задней лапы по картонной коробке, довольно кивая самой себе.")
 
-		saynn("[say=kidlat]I'm just chilling.. thrivin'. While you're all gettin' your butts beat - I just enjoy the ambience and make a little cash on the side. Beats hitting rocks all day![/say]")
+		saynn("[say=kidlat]Да я просто чиллю... процветаю. Пока вы там все получаете по задницам, я просто наслаждаюсь атмосферой да подзарабатываю по мелочи. Это куда лучше, чем весь день долбить камни![/say]")
 
-		saynn("She stretches, letting out a lazy little meow.. then glances at you with a smirk.")
+		saynn("Она потягивается, издавая ленивое короткое «мяу»... а затем смотрит на тебя с ухмылкой.")
 
-		saynn("[say=kidlat]Enough about me. You're gonna buy something, luv?[/say]")
+		saynn("[say=kidlat]Хватит обо мне. Купишь что-нибудь, любовь моя?[/say]")
 
-		saynn("You were about to consider it.. but now a question lingers on your mind..")
+		saynn("Ты уже собирался было об этом подумать... но теперь в твоей голове крутится один вопрос...")
 
-		saynn("[say=pc]Why do you call me luv?[/say]")
+		saynn("[say=pc]Почему ты называешь меня «любовь моя»?[/say]")
 
-		saynn("Kidlat blinks.. and then giggles.")
+		saynn("Кидлат моргает... а затем хихикает.")
 
-		saynn("[say=kidlat]I did? Oh. Dunno, why not? Sounds cute, don't it? Bit better than.. Oi, fuckface!.. but if that's what you prefer, I can make some adjustments~.[/say]")
+		saynn("[say=kidlat]Разве? Ой. Да хрен знает, почему бы и нет? Звучит мило, разве нет? Куда лучше, чем... Эй, рожа долбаная!.. Но если тебе так больше нравится, я могу подстроиться~.[/say]")
 
-		saynn("What a brat.. She smirks, watching your reaction, clearly enjoying herself. Then she shrugs.")
+		saynn("Ну и нахалка... Она ухмыляется, наблюдая за твоей реакцией и явно наслаждаясь моментом. Затем она пожимает плечами.")
 
-		saynn("[say=kidlat]Besides, ain't like I know your name. Luv works for all sorts. Easy. Simple. Keeps things friendly n' cozy, and most folks don't whine about it.[/say]")
+		saynn("[say=kidlat]К тому же, я же не знаю твоего имени. «Любовь моя» подходит для всех подряд. Легко. Просто. Так всё остается дружелюбным и уютным, и большинство народ не ноет по этому поводу.[/say]")
 
-		saynn("She suddenly leans in slightly, her tail swishing playfully.")
+		saynn("Она внезапно слегка наклоняется к тебе, игриво виляя хвостом.")
 
-		saynn("[say=kidlat]And you also do look like a 'luv' kinda person. All soft 'round the edges~.[/say]")
+		saynn("[say=kidlat]Да и вообще, ты выглядишь как человек, который любит нежности. Такая вся мягкая, без острых углов~.[/say]")
 
-		saynn("She chuckles to herself before flopping back into her relaxed position.")
+		saynn("Она тихонько посмеивается, прежде чем снова откинуться назад в расслабленной позе.")
 
-		saynn("[say=kidlat]But hey, if you really wanna make it personal, you could always tell me your name. But I will still just keep callin' ya luv forever.. You have no choice, hun~.[/say]")
+		saynn("[say=kidlat]Но эй, если тебе прям приспичило переходить на личности, всегда можешь назвать мне своё имя. Хотя я всё равно буду называть тебя «любовью» до конца своих дней... У тебя просто нет выбора, дорогуша~.[/say]")
 
-		saynn("Right.")
+		saynn("Ясно.")
 
-		saynn("Time to see what she is selling.")
+		saynn("Пора посмотреть, что она тут толкает.")
 
-		addButton("Continue", "See what happens next", "run_generic_shop_scene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "run_generic_shop_scene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

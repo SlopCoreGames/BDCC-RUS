@@ -9,9 +9,9 @@ func registerTriggers(es):
 	
 func run(_triggerID, _args):
 	if(getFlag("ArticaModule.lastQuestStarted") && !getFlag("ArticaModule.LQArticaGotDreamCatcher") && !getFlag("ArticaModule.LQArticaGotBrainwashed")):
-		saynn("You notice.. that she is sneakily playing with something.")
+		saynn("Вы замечаете... что она вовсю вовсю во что-то тайком играет.")
 		
-		addButton("Something..", "What is that kitty doing?", "goodend")
+		addButton("Что-то...", "Что это там за кошечка делает?", "goodend")
 
 func getPriority():
 	return 0

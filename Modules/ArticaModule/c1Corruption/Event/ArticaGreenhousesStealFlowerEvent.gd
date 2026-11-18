@@ -9,7 +9,7 @@ func registerTriggers(es):
 func run(_triggerID, _args):
 	if(!getFlag("ArticaModule.TentaclesPcHasFlower") && !getFlag("ArticaModule.TentaclesArticaHasFlower")):
 		if(getFlag("ArticaModule.eventTentacles", 0) >= 1):
-			addButton("Steal flower", "Steal a flower that Artica needs", "stealplant")
+			addButton("Украсть цветок", "Украсть цветок, который необходим Артике", "stealplant")
 
 func getPriority():
 	return 0

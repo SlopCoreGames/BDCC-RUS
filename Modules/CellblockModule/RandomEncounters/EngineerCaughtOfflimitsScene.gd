@@ -34,7 +34,7 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
 
 	if(state == ""):
-		saynn("As you wander the dark, dimly lit corridors of the engineering block, you hear the sound of heavy footsteps approaching from around the corner. Suddenly, one of the engineers appears. {npc.He} spots you!")
+		saynn("Пока ты бродишь по темным, тускло освещенным коридорам инженерного блока, из-за угла доносится звук тяжелых шагов. Внезапно перед тобой появляется один из инженеров. {npc.He} замечает тебя!")
 		
 		# (new engineer)
 		if(!sawBefore):
@@ -118,16 +118,16 @@ func _run():
 			# (end)
 
 		if(npcVariation in ["kind", "subby"]):
-			saynn("Seems like {npc.he} is not looking for a fight.")
+			saynn("Похоже, {npc.he} не настроен на драку.")
 			
-			addButton("Intimidate", "Ask them nicely to let you through", "intimidate")
-			addButton("Attack", "Well, they are asking for it", "attack")
-			addButton("Offer body", "Maybe you can try to seduce them", "offer_body")
+			addButton("Запугивание", "Вежливо попросить пропустить тебя", "intimidate")
+			addButton("Атаковать", "Ну, они сами напросились", "attack")
+			addButton("Предложить свое тело", "Может, стоит попытаться соблазнить их?", "offer_body")
 		else:
-			saynn("Seems like {npc.he} is not just gonna let you go.")
+			saynn("Похоже, {npc.he} просто так тебя не отпустит.")
 
-			addButton("Attack", "Well, they are asking for it", "attack")
-			addButton("Offer body", "Maybe you can try to seduce them", "offer_body")
+			addButton("Атаковать", "Ну, они сами напросились", "attack")
+			addButton("Предложить свое тело", "Может, стоит попытаться соблазнить их?", "offer_body")
 		
 	if(state == "intimidate_success"):
 		saynn(RNG.pick([
@@ -136,7 +136,7 @@ func _run():
 			"[say=pc]Trying to stop me will end badly for you. Mhm?[/say]",
 		]))
 		
-		saynn("The engineer hears your words and lowers {npc.his} head.")
+		saynn("Инженер слышит твои слова и опускает {npc.his} голову.")
 		
 		saynn(RNG.pick([
 			"[say=npc]Okay, okay, I hear you. Just don’t hit me..[/say]",
@@ -144,7 +144,7 @@ func _run():
 			"[say=npc]Fine, just don’t break anything..[/say]",
 			]))
 		
-		saynn("Seem like it won't be hard to convince {pc.him} to have some fun time.")
+		saynn("Похоже, уговорить {pc.him} немного развлечься не составит труда.")
 		
 		addWonButton()
 	
@@ -155,7 +155,7 @@ func _run():
 			"[say=pc]Trying to stop me will end badly for you. Mhm?[/say]",
 		]))
 		
-		saynn("The engineer hears your words and assumes a brave stance.")
+		saynn("Инженер слышит твои слова и принимает боевую стойку.")
 	
 		saynn(RNG.pick([
 			"[say=npc]I can’t let you go, I’m sorry.[/say]",
@@ -163,19 +163,19 @@ func _run():
 			"[say=npc]I’m not afraid. I must protect the equipment![/say]",
 		]))
 		
-		saynn("Seems like it's a fight.")
+		saynn("Похоже, назревает драка.")
 		
-		addButton("Fight", "Start the fight", "startfight")
+		addButton("Драться", "Начать бой", "startfight")
 		
 	if(state == "attack"):
 		# (if subby, can just auto-win)
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
 
-		saynn("You lash out at {npc.name}!")
+		saynn("Ты наносишь удар по {npc.name}!")
 
 		# (if mean)
 		if(npcVariation == "mean"):
-			saynn("But {npc.he} is ready, shoving you back before growling at you.")
+			saynn("Но {npc.he} готов(а): он(а) отталкивает тебя и издает яростный рык.")
 
 			saynn(RNG.pick([
 				"[say=npc]Oh, you gonna fucking regret this.[/say]",
@@ -184,10 +184,10 @@ func _run():
 			]))
 
 		# (options is fight)
-			addButton("Fight", "Start the fight", "startfight")
+			addButton("Драться", "Начать бой", "startfight")
 		# (if subby/coward happened)
 		elif(npcVariation == "subby"):
-			saynn("{npc.He} totally wasn’t prepared for that. The guard gasps and collapses before you.")
+			saynn("{npc.He} совершенно к этому не был(а) готов(а). Охранник ахает и падает перед тобой замертво.")
 
 			saynn(RNG.pick([
 				"[say=npc]Ow.. Don’t hurt me! You can go.[/say]",
@@ -198,7 +198,7 @@ func _run():
 			addWonButton()
 			# (default)
 		else:
-			saynn("{npc.He} staggers back but quickly recovers. The guard doesn’t look happy with you.")
+			saynn("{npc.He} пошатывается, но быстро восстанавливает равновесие. Охранник явно не в восторге от тебя.")
 
 			saynn(RNG.pick([
 				"[say=npc]Well, I can teach you a lesson or two.[/say]",
@@ -206,12 +206,12 @@ func _run():
 				"[say=npc]Resisting will only make this worse for you.[/say]",
 			]))
 
-			addButton("Fight", "Start the fight", "startfight")
+			addButton("Драться", "Начать бой", "startfight")
 
 
 
 	if(state == "if_lost"):
-		saynn("You collapse, unable to continue fighting.")
+		saynn("Ты валишься с ног, не в силах продолжать бой.")
 
 		# (default)
 		if(npcVariation != "mean"):
@@ -228,14 +228,14 @@ func _run():
 				"[say=npc]Stupid bitch. Getting fucked is the least of your problems.[/say]",
 			]))
 
-		saynn("Since you can’t really fight back anymore, your only choice is to submit.")
+		saynn("Раз уж ты больше не можешь сопротивляться, твой единственный выход — сдаться.")
 
 		# (sex)
-		addButton("Get fucked", "Well, you lost", "startsexsubby")
+		addButton("Получи по полной", "Ну, ты проиграл(а)", "startsexsubby")
 
 
 	if(state == "if_won"):
-		saynn("You pin the defeated engineer to the floor. {npc.He} doesn’t seem to struggle much.")
+		saynn("Ты прижимаешь поверженного инженера к полу. {npc.He}, кажется, особо и не сопротивляется.")
 
 		saynn(RNG.pick([
 			"[say=npc]So, what now?[/say]",
@@ -250,51 +250,51 @@ func _run():
 		addWonButton()
 
 	if(state == "offer_body"):
-		saynn("You really wanna avoid any fights but also don’t feel like being thrown out of the engineering block. So instead of submitting, you offer the engineer a kind smile while striking a sexy pose, showing off your {pc.masc} curves.")
+		saynn("Ты очень хочешь избежать драки, но и быть вышвырнутым(ой) из инженерного блока тоже не гоже. Поэтому вместо того, чтобы сдаться, ты одариваешь инженера ласковой улыбкой и принимаешь сексуальную позу, демонстрируя свои {pc.masc} изгибы.")
 
-		saynn("[say=pc]How about I offer you something better? Myself for example.[/say]")
+		saynn("[say=pc]Как насчет того, чтобы я предложила тебе кое-что получше? Например, саму себя.[/say]")
 
 		# (if mean)
 		if(npcVariation == "mean"):
-			saynn("{npc.He} checks you out and reaches out to grab you by the arm.")
+			saynn("{npc.He} оценивающе осматривает тебя и тянется, чтобы схватить за руку.")
 
-			saynn("[say=npc]Oh yeah? Resist and you will regret it.[/say]")
+			saynn("[say=npc]Да неужели? Попробуй только сопротивляться — пожалеешь.[/say]")
 			
-			addButton("Get fucked", "Let them have it", "startsexsubby")
+			addButton("Получи по полной", "Дать им жару", "startsexsubby")
 
 		# (if subby)
 		elif(npcVariation == "subby"):
-			saynn("{npc.He} blushes while sneakily glancing at you. The shy engineer lowers {npc.his} head.")
+			saynn("{npc.He} краснеет, украдкой поглядывая на тебя. Застенчивый инженер опускает {npc.his} голову.")
 
-			saynn("[say=npc]I mean.. You can take me if you want then..[/say]")
+			saynn("[say=npc]В смысле... можешь взять меня, если хочешь..[/say]")
 
-			saynn("Huh, this engineer seems to be quite subby.")
+			saynn("Хм, похоже, этот инженер — та еще подчиняшка.")
 			addWonButton()
 		else:
 			# (if default)
 
-			saynn("{npc.He} checks you out and steps towards you.")
+			saynn("{npc.He} разглядывает тебя и делает шаг навстречу.")
 
-			saynn("[say=npc]Huh. Maybe. I wouldn't mind a good fuck.[/say]")
+			saynn("[say=npc]Хм. Может быть. Я бы не отказалась от хорошего траха.[/say]")
 
-			addButton("Get fucked", "Let them have it", "startsexsubby")
+			addButton("Получи по полной", "Дать им жару", "startsexsubby")
 
 		# (Options are sex or sex (dom) if hands untied)
 
 
 	if(state == "after_sex"):
-		saynn("You use this time to slip away before the engineer can escort you out of the engineering block.")
+		saynn("Ты используешь это время, чтобы ускользнуть, пока инженер не вывела тебя из инженерного блока.")
 
 		# (scene ends)
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 
 func addWonButton():
-	addButton("Leave", "Just leave before anyone else sees you", "endthescene")
-	addButtonWithChecks("Sex!", "Time to fuck them!", "startsexasdom", [], [ButtonChecks.CanStartSex])
-	addButton("Submit to", "Let them have it their way with you", "startsexsubby")
-	addButton("Inventory", "Look at your inventory", "openinventory")
+	addButton("Уйти", "Просто уходи, пока тебя не заметили.", "endthescene")
+	addButtonWithChecks("Секс!", "Пора их оттрахать!", "startsexasdom", [], [ButtonChecks.CanStartSex])
+	addButton("Подчиниться", "Позволить им делать с тобой всё, что захотят", "startsexsubby")
+	addButton("Инвентарь", "Посмотреть инвентарь", "openinventory")
 	if(GM.pc.getInventory().hasRemovableRestraints()):
-		addButton("Struggle", "Struggle out of your restraints", "strugglemenu")
+		addButton("Сопротивление", "Вырваться из оков", "strugglemenu")
 	GM.ES.triggerRun(Trigger.DefeatedDynamicNPC, [npcID])
 
 func _react(_action: String, _args):

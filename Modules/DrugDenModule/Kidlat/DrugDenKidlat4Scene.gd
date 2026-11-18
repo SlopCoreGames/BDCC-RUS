@@ -7,35 +7,35 @@ func _run():
 	if(state == ""):
 		addCharacter("kidlat", ["naked"])
 		playAnimation(StageScene.Duo, "stand", {npc="kidlat", further=true, kidlatBox=true, npcAction="struggle", npcBodyState={naked=true}})
-		saynn("The dim, flickering light of the tunnels reveals a familiar silhouette before you. It's Kidlat, the friendly shopkeeper kitty. But this time, she seems to be caught in a precarious position..")
+		saynn("Тусклый, мерцающий свет туннелей выхватывает перед вами знакомый силуэт. Это Кидлат, дружелюбная кошечка-торговка. Но на этот раз она, кажется, оказалась в весьма щекотливом положении...")
 
-		saynn("She is naked again.. but that's not the worst part.. you actually notice her uniform neatly laid out in her cardboard box.")
+		saynn("Она снова голышом... но это еще не самое худшее... вы замечаете, что её униформа аккуратно разложена в картонной коробке.")
 
-		saynn("Her wrists strain against the cuffs behind her back, accentuating the curve of her chest as she writhes against the restraints. Her black and cyan fur gleams, giving off a soft sheen that catches the low light glow.")
+		saynn("Её запястья натянуты в наручниках за спиной, что только подчеркивает изгиб груди, пока она извивается в путах. Её черно-бирюзовая шерстка лоснится, мягко поблескивая в слабом свете.")
 
-		saynn("You take a step back.. making her ears perk instantly.")
+		saynn("Вы делаете шаг назад... и её ушки тут же навостряются.")
 
-		saynn("[say=kidlat]Oh, cheers.. Whoever it is.. welcome to Kidlat's humble little shop of shady wonders. Meow. I have a slight problem here, don't worry..[/say]")
+		saynn("[say=kidlat]О, привет... Кто бы там ни был... добро пожаловать в скромную лавочку сомнительных чудес Кидлат. Мяу. У меня тут небольшая проблемка, но не волнуйтесь...[/say]")
 
-		saynn("A tight blindfold is covering her eyes, making her unable to see you.. or anything really. Despite that, she seems to be still trying to run her shop. Interesting.")
+		saynn("Её глаза закрывает плотная повязка, так что она не видит ни вас... ни вообще чего-либо. Несмотря на это, она, кажется, всё еще пытается вести дела. Интересно.")
 
-		saynn("She sways her girly hips restlessly, trying to somehow wiggle her way out of the ankle cuffs as well, the little chain is holding her legs closed.. but you can still notice the slight wetness between them.")
+		saynn("Она беспокойно покачивает своими девчачьими бедрами, пытаясь как-то выскользнуть и из манжет на лодыжках — короткая цепочка держит её ноги вместе... но вы всё равно замечаете легкую влажность между ними.")
 
-		saynn("[say=kidlat]I don't have much to offer.. for obvious reasons.. but I trust that you will pay a fair price if you're gonna take something.[/say]")
+		saynn("[say=kidlat]Предложить мне особо нечего... по очевидным причинам... но я верю, что вы заплатите честную цену, если решите что-нибудь взять.[/say]")
 
-		saynn("You watch as she tugs at the cuffs again. The motion makes her chest bounce slightly, breasts jiggling, nipples hard against the cool air of the tunnels. She probably realizes by now that the struggle is pointless.. but she still tries, her cheeks blushing with cyan.")
+		saynn("Ты наблюдаешь, как она снова дергает за наручники. От этих движений её грудь слегка подпрыгивает, соски твердеют от прохладного воздуха туннелей. Наверное, она уже понимает, что борьба бесполезна... но всё равно пытается, а её щеки заливаются циановым румянцем.")
 
-		saynn("You stay quiet for now, not sure how to react yet.")
+		saynn("Ты пока молчишь, не зная, как на это реагировать.")
 
-		saynn("[say=kidlat]Sorry if it was your stash that I raided.. I mean.. meow.. I'm just a dumb blue cat-thing, don't mind me. I totally didn't trigger any traps that you laid out.. haha..[/say]")
+		saynn("[say=kidlat]Прости, если это я обчистила твои заначки... то есть... мяу... я просто глупая синяя кошачья тварь, не обращай на меня внимания. И я точно не активировала ни одной из твоих ловушек... ха-ха...[/say]")
 
-		saynn("Her inner thighs rub against each other as she wiggles her body. She is probably still trying to break free.. but the damp fur near her crotch tells you a different story. Her breath quickens, the eerie ambience of the tunnels is now broken by her panting.. and the sounds of little drops of wetness hitting the floor.")
+		saynn("Её внутренние стороны бёдер трутся друг о друга, пока она извивается всем телом. Похоже, она всё ещё пытается вырваться... но влажная шерсть у неё в паху говорит о другом. Её дыхание учащается, жуткая атмосфера туннелей теперь нарушается её прерывистым сопением... и звуками мелких капель, бьющих о пол.")
 
-		saynn("[say=kidlat]I don't suppose you've got a key by any chance?.. I'd appreciate it.. well, who cares about appreciation.. but I'd find a way to pay back, yeah?..[/say]")
+		saynn("[say=kidlat]У тебя случайно нет ключа?.. Было бы здорово... ну, какая разница, что там «здорово»... но я бы нашла способ отблагодарить, а?..[/say]")
 
-		saynn("You can help her if you have a restraint key.. But at the same time.. her bound form is extremely exposed and vulnerable.. You can just take what she is selling.. or take something else instead..")
+		saynn("Ты можешь помочь ей, если у тебя есть ключ от наручников... Но в то же время... её связанное тело выглядит крайне открытым и уязвимым... Ты можешь просто взять то, что она предлагает... или взять кое-что другое вместо этого...")
 
-		addButton("Continue", "See what happens next", "start_browsing_shop")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_browsing_shop")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

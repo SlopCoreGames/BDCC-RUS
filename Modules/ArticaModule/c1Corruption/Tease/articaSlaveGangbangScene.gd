@@ -39,72 +39,72 @@ func _run():
 		isVerySlut = getModule("ArticaModule").isVerySlut()
 		isLusty = getModule("ArticaModule").isLusty()
 		nakedAndShy = (isNaked && !isSlut)
-		saynn("Who do you want to gangbang Artica? You need at least 2 people to gangbang her.. but the more slaves you choose, the longer the gangbang will last..")
+		saynn("С кем ты хочешь устроить артр-гангбанг для Артики? Тебе нужно выбрать как минимум 2 человек... но чем больше рабов ты выберешь, тем дольше будет длиться этот групповой секс...")
 
-		saynn("Anyone who doesn't have a reachable cock will wear a strapon automatically.")
+		saynn("Любой, у кого нет подходящего члена, автоматически получит страпон.")
 
 		if (pickedSlaves.size() > 1):
-			addButton("Start", "Do it!", "start_gangbang")
+			addButton("Старт", "Вперёд!", "start_gangbang")
 		else:
-			addDisabledButton("Start", "Need to pick at least 2 people before starting")
-		addButton("CANCEL", "You changed your mind", "endthescene")
+			addDisabledButton("Старт", "Нужно выбрать хотя бы 2 человек перед началом")
+		addButton("CANCEL", "Вы передумали", "endthescene")
 		if (!pickedSlaves.has("pc")):
-			addButton("+You", "Add yourself into this", "toggle_pc")
+			addButton("+Ты", "Добавить себя в список", "toggle_pc")
 		else:
-			addButton("-You", "Remove yourself from this", "toggle_pc")
+			addButton("-You", "Убрать себя из списка", "toggle_pc")
 		addSlaveButtons()
 		if (false):
-			addButton("Error", "You shouldn't see this", "toggle_slave")
+			addButton("Ошибка", "Тебе не стоит этого видеть", "toggle_slave")
 	if(state == "start_gangbang"):
 		addCharacter("artica", ["naked"])
 		playAnimation(StageScene.Solo, "struggle", {pc="artica", bodyState={naked=true}})
 		var pcIncluded = (pickedSlaves.has("pc"))
 		var howManySlaves = pickedSlaves.size()
-		saynn("You tell Artica to wait for a bit.. as you call in some of your slaves to approach you.")
+		saynn("Ты просишь Артику немного подождать... и подзываешь своих рабов, чтобы они подошли к тебе.")
 
-		saynn("[say=pc]Have some fun with her."+str(" I will watch." if !pcIncluded else " I will join too.")+"[/say]")
+		saynn("[say=pc]Повеселись с ней."+str(" I will watch." if !pcIncluded else " I will join too.")+"[/say]")
 
-		saynn("Artica looks around.. confused.. as "+str(howManySlaves)+" people surround her, blocking off the only exit from your cell..")
+		saynn("Артика растерянно оглядывается... как будто "+str(howManySlaves)+" люди окружают её, перекрывая единственный выход из твоей камеры..")
 
-		saynn("[say=artica]Um.. what is.. t-this..[/say]")
+		saynn("[say=artica]Мм.. что это.. э-это..[/say]")
 
 		if (isNaked):
-			saynn("One of them suddenly grabs her arms.. while the second slaps her perky"+str(" lactating" if getCharacter("artica").isLactating() else "")+" tits.")
+			saynn("Один из них внезапно хватает её за руки.. а второй хлопает её по упругой"+str(" lactating" if getCharacter("artica").isLactating() else "")+" tits.")
 
-			saynn("[say=artica]Ee-ep.. e-easy.. w-wai-.. ow..[/say]")
+			saynn("[say=artica]И-ип.. п-полегче.. п-подож-.. ой..[/say]")
 
-			saynn("While the fluff is busy trying to free her arms, someone pulls up on her balls, revealing the pussy that's hiding behind them.. Someone else yanks on the tail, making Artica stick her ass out, her tight tailhole twitching..")
+			saynn("Пока пушистая пытается освободить руки, кто-то тянет её за яйца, обнажая спрятанную за ними киску.. Другой дергает за хвост, заставляя Артику выпятить задницу, отчего её тугое анальное отверстие начинает подергиваться..")
 
 			if (isVerySlut):
-				saynn("[say=artica]P-please.. ah.. p-pound me r-raw..[/say]")
+				saynn("[say=artica]П-пожалуйста.. ах.. в-трахай меня н-насухую..[/say]")
 
 			elif (isSlut):
-				saynn("[say=artica]Am I g-gonna b-be.. g-ganbanged..[/say]")
+				saynn("[say=artica]Неужели меня ждёт.. г-ганбанг..[/say]")
 
 			else:
-				saynn("[say=artica]P-please.. ah.. d-don't..[/say]")
+				saynn("[say=artica]П-пожалуйста.. ах.. н-не надо..[/say]")
 
 		else:
-			saynn("One of them suddenly grabs her arms.. while the second forcibly takes off the shirt, exposing those perky"+str(" lactating" if getCharacter("artica").isLactating() else "")+" tits.")
+			saynn("Один из них внезапно хватает её за руки.. а второй силой срывает с неё рубашку, обнажая эти упругие"+str(" lactating" if getCharacter("artica").isLactating() else "")+" tits.")
 
-			saynn("[say=artica]Ee-ep.. e-easy.. w-wai-.. ow..[/say]")
+			saynn("[say=artica]И-ип.. п-полегче.. п-подож-.. ой..[/say]")
 
-			saynn("While the fluff is busy trying to free her arms, her shorts get pulled down too, exposing her "+str("caged up cock" if isCaged else "sheath")+".. and the pussy that's hiding behind the balls.. Someone yanks on the tail, making Artica stick her ass out, her tight tailhole twitching..")
+			saynn("Пока пушистая пытается освободить руки, её шорты тоже стягивают вниз, обнажая её "+str("caged up cock" if isCaged else "sheath")+".. и киску, что прячется за яичками.. Кто-то дергает за хвост, заставляя Артику выпятить зад, пока её узкое анальное отверстие подергивается..")
 
 			if (isVerySlut):
-				saynn("[say=artica]P-please.. ah.. p-pound me r-raw..[/say]")
+				saynn("[say=artica]П-пожалуйста.. ах.. в-трахай меня н-насухую..[/say]")
 
 			elif (isSlut):
-				saynn("[say=artica]Am I g-gonna b-be.. g-ganbanged..[/say]")
+				saynn("[say=artica]Неужели меня ждёт.. г-ганбанг..[/say]")
 
 			else:
-				saynn("[say=artica]P-please.. ah.. d-don't..[/say]")
+				saynn("[say=artica]П-пожалуйста.. ах.. н-не надо..[/say]")
 
-		saynn("Looks like the fun is just about to begin..")
+		saynn("Похоже, самое веселье только начинается..")
 
-		addButton("Continue", "See what happens next", "start_first_scene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_first_scene")
 		if (false):
-			addButton("IGNORE", "You shouldn't see this", "start_next_scene")
+			addButton("IGNORE", "Тебе не стоит этого видеть", "start_next_scene")
 	if(state == "dp_tease"):
 		playAnimation(StageScene.SexDP, "tease", {pc="artica", npc=npc1, npc2=npc2, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true,hard=true}, npc2BodyState={exposedCrotch=true,hard=true}})
 		var pcIncluded = (npc1 == "pc" || npc2 == "pc")
@@ -112,23 +112,23 @@ func _run():
 		var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon())
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon())
 		var cocksText = ("both cocks" if onlyCocks else ("both strapons" if onlyStrapons else "a cock and a strapon"))
-		saynn("With a firm grip, "+str(slavesText)+" grab Artica and force her down to her knees. {npc1.You} {npc1.youVerb('slide')} under her and guides {npc1.yourHis} {npc1.strapon} down her needy slit.. while {npc2.you} {npc2.youVerb('position')} {npc2.yourself} behind and align {npc2.yourHis} {npc2.strapon} with the other tight hole, {npc2.yourHis} hands pull Artica's arms behind her back.. "+str(cocksText)+" are gonna double-penetrate the fluff's fresh holes any second..")
+		saynn("Крепко сжав,"+str(slavesText)+" хватает Артику и заставляет её опуститься на колени. {npc1.You} {npc1.youVerb('slide')} под ней и направляет {npc1.yourHis} {npc1.strapon} в её жаждущую щель.. в то время как {npc2.you} {npc2.youVerb('position')} {npc2.yourself} сзади и совмещает {npc2.yourHis} {npc2.strapon} с другим узким отверстием, {npc2.yourHis} руки отводят руки Артики за спину.. "+str(cocksText)+" собираются устроить двойное проникновение в свежие дырочки пушистой в любую секунду..")
 
-		saynn("[say=artica]Ah.. h-hey..[/say]")
+		saynn("[say=artica]Ах.. эй..[/say]")
 
-		saynn("Artica tries to free her arms.. but they are being held too tightly. No one here is letting the girl go without a full belly.")
+		saynn("Артика пытается освободить руки.. но их держат слишком крепко. Никто здесь не отпустит девчонку, пока её живот не будет полон.")
 
 		if (isVerySlut):
-			saynn("[say=artica]L-looks like.. I-I'm g.gonna b-be stretched..[/say]")
+			saynn("[say=artica]К-кажется.. м-меня сейчас р-растянут..[/say]")
 
 		elif (isSlut):
-			saynn("[say=artica]A-are you gonna b-be rough w-with my hh.holes?..[/say]")
+			saynn("[say=artica]В-вы будете ж-жестко обходиться с м-моими дырочками?..[/say]")
 
 		else:
-			saynn("[say=artica]D..d-do I h-have a s-say in t-tthis?..[/say]")
+			saynn("[say=artica]Э..э-это м-мне п-положено что-то р-решать?..[/say]")
 
 		# (( Double penetration starts with {npc1.name} on the bottom and {npc2.name} behind. ))
-		addButton("Continue", "See what happens next", "dp_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "dp_sex")
 	if(state == "dp_sex"):
 		playAnimation(StageScene.SexDP, "sex", {pc="artica", npc=npc1, npc2=npc2, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true,hard=true}, npc2BodyState={exposedCrotch=true,hard=true}})
 		var pcIncluded = (npc1 == "pc" || npc2 == "pc")
@@ -137,19 +137,19 @@ func _run():
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon())
 		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "cocks and strapons"))
 		if (!didFirst):
-			saynn("In one powerful combined thrust, "+str("your" if pcIncluded else "their")+" "+str(cocksText)+" get rammed into Artica's holes, one sliding up her cunt while another is going down her tight ass, making the girl feel incredibly full.")
+			saynn("Одним мощным одновременным толчком, "+str("your" if pcIncluded else "their")+" "+str(cocksText)+" меня вжимают в дырки Артики: один член входит ей в киску, а другой — в её тугую дырочку, отчего девчонка чувствует себя невероятно наполненной.")
 
-			saynn("[say=artica]Ah!.. h-hh..[/say]")
+			saynn("[say=artica]Ах!.. х-хх..[/say]")
 
-			saynn("Artica's body is arching from the sudden double penetration, the pleasure of being fucked raw is making her own cock hard and drippy..")
+			saynn("Тело Артики выгибается от внезапного двойного проникновения; от удовольствия, которое дарит этот грубый секс, её собственный член становится твердым и влажным..")
 
 		else:
-			saynn("It doesn't take long for a new set of cocks to slide up both Artica's holes, "+str(slavesText)+" bring the girl to her knees.. before shoving "+str("your" if pcIncluded else "their")+" "+str(cocksText)+" inside, stretching her wide!")
+			saynn("Вскоре в обе дырки Артики влетает уже новая порция членов, "+str(slavesText)+" заставляя девчонку упасть на колени.. а затем их заталкивают "+str("your" if pcIncluded else "their")+" "+str(cocksText)+" внутрь, растягивая её до предела!")
 
-			saynn("Her drippy"+str(" caged" if isCaged else " hard")+" useless cock is bobbing up and down as she is being fucked raw, a mix of precum and old cum is leaking from the tip.")
+			saynn("Её влажный, "+str(" caged" if isCaged else " hard")+" бесполезный член подпрыгивает вверх-вниз, пока её жестко трахают, а с кончика стекает смесь предэякулята и старой спермы.")
 
 		# (( Double penetration SEX with {npc1.name} on the bottom and {npc2.name} behind. ))
-		addButton("Continue", "See what happens next", "dp_sexfast")
+		addButton("Продолжить", "Смотреть, что будет дальше", "dp_sexfast")
 	if(state == "dp_sexfast"):
 		playAnimation(StageScene.SexDP, "fast", {pc="artica", npc=npc1, npc2=npc2, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true,hard=true}, npc2BodyState={exposedCrotch=true,hard=true}})
 		var pcIncluded = (npc1 == "pc" || npc2 == "pc")
@@ -157,20 +157,20 @@ func _run():
 		var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon())
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon())
 		var cocksText = ("the two cocks" if onlyCocks else ("the two strapons" if onlyStrapons else "the cock and the strapon"))
-		saynn("With each thrust, Artica felt "+str(cocksText)+" filling her completely, stretching her to the limits, working in tandem, pretty much never leaving her holes empty.")
+		saynn("С каждым толчком Артика чувствовала, как "+str(cocksText)+" полностью заполняет её, растягивая до предела и работая в унисон, практически никогда не оставляя её дырочки пустыми.")
 
-		saynn("Artica's moans are filling the air as she forced to endure the onslaught, her arms are wrenched behind her back while "+str(slavesText)+" are fucking her at a more rapid pace.")
+		saynn("Стоны Артики наполняют воздух, пока она вынуждена терпеть этот натиск; её руки заведены за спину, а "+str(slavesText)+" трахают её всё быстрее и быстрее.")
 
-		saynn("[say=artica]Mm-my.. ass-s-s.. ahh-hh..[/say]")
+		saynn("[say=artica]Ммм... моя... зад-д-ница... ахх-хх..[/say]")
 
 		if (!didFirst):
-			saynn("Artica's first orgasm is approaching quickly, her cock pulsing wildly"+str(" inside of its cage" if isCaged else "")+", her ass and pussy squeezing the"+str(" rubber" if onlyStrapons else "")+" dicks tightly.")
+			saynn("Первый оргазм Артики стремительно приближается, её член бешено пульсирует,"+str(" inside of its cage" if isCaged else "")+" а её анус и киска туго сжимают"+str(" rubber" if onlyStrapons else "")+" члены.")
 
 		else:
-			saynn("Artica looks like she is about to cum again, her cock pulsing wildly"+str(" inside of its cage" if isCaged else "")+", her ass and pussy squeezing the"+str(" rubber" if onlyStrapons else "")+" dicks tightly.")
+			saynn("Похоже, Артика вот-вот снова кончит, её член бешено пульсирует,"+str(" inside of its cage" if isCaged else "")+" а её анус и киска туго сжимают"+str(" rubber" if onlyStrapons else "")+" члены.")
 
 		# (( Double penetration SEX FAST with {npc1.name} on the bottom and {npc2.name} behind. ))
-		addButton("Continue", "See what happens next", "dp_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "dp_cum")
 	if(state == "dp_cum"):
 		playAnimation(StageScene.SexDP, "inside", {pc="artica", npc=npc1, npc2=npc2, pcCum=true, npcCum=true, npc2Cum=true, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true,hard=true}, npc2BodyState={exposedCrotch=true,hard=true}})
 		#var pcIncluded = (npc1 == "pc" || npc2 == "pc")
@@ -178,33 +178,33 @@ func _run():
 		#var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon())
 		#var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon())
 		#var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "cocks and strapons"))
-		saynn("With each double-thrust, her pussy and asshole were stretched to their limits.. until the fluff just couldn't endure it any longer. Her lips let out a passionate moan.. followed by her cock erupting, shooting thick ropes of cum"+str(" through the little hole in a chastity cage" if isCaged else "")+" onto the floor.")
+		saynn("С каждым двойным толчком её киска и анус растягивались до предела... пока плоть просто не начала сдаваться. Её губы издали страстный стон... за которым последовал взрыв её члена, извергающего густые струи спермы"+str(" through the little hole in a chastity cage" if isCaged else "")+" прямо на пол.")
 
 		if (getCharacter(npc1).isWearingStrapon()):
-			saynn("Her pussy was milking the strapon that was fucking it.. until the toy finally decided to release its cumlube reserve deep into the girl's womb..")
+			saynn("Её киска выжимала страпон, который трахал её... пока игрушка наконец не решила выпустить свой запас смазки-спермы глубоко в матку девушки...")
 
 		else:
-			saynn("Her pussy was milking the cock that was fucking it.. until she felt a load being pumped directly into her womb, hot seed flooding her depths while her own orgasm was still happening..")
+			saynn("Её киска выжимала член, который трахал её... пока она не почувствовала, как порция семени вкачивается прямо в её матку, горячие семена заливают её глубины, пока её собственный оргазм всё ещё продолжается...")
 
 		if (getCharacter(npc2).isWearingStrapon()):
-			saynn("At the same time, {npc2.you} drove {npc2.yourHis} {npc2.strapon} deep into her ass, the tightness of her pulsing inner walls enough to trigger that toy to release its cumlube load as well.")
+			saynn("В то же самое время {npc2.you} вогнал {npc2.yourHis} {npc2.strapon} глубоко ей в задницу; тесноты её пульсирующих внутренних стенок хватило, чтобы спровоцировать и эту игрушку на выброс порции смазки-спермы.")
 
 		else:
-			saynn("At the same time, {npc2.you} drove {npc2.yourHis} {npc2.strapon} deep into her ass, the tightness of her pulsing inner walls enough to make {npc2.youHim} cum in seconds, filling that asshole with {npc2.yourHis} hot, sticky {npc2.cum}..")
+			saynn("В то же самое время {npc2.you} вогнал {npc2.yourHis} {npc2.strapon} глубоко ей в задницу; тесноты её пульсирующих внутренних стенок хватило, чтобы {npc2.youHim} кончил за считанные секунды, наполняя этот анус горячей, липкой {npc2.cum} {npc2.yourHis}..")
 
 		if (!didFirst):
-			saynn("A powerful first orgasm.. but certainly not the last.. Artica is still moaning after that one..")
+			saynn("Мощный первый оргазм... но явно не последний... Артика всё ещё стонет даже после этого...")
 
 			if (isVerySlut):
-				saynn("[say=artica]Ah.. my h-holes.. ah.. s-so f-full..[/say]")
+				saynn("[say=artica]Ах... мои д-дырочки... ах... так м-много...[/say]")
 
 			elif (isSlut):
-				saynn("[say=artica]Ah.. y-you're not d-done, are you-u?.. ah.. ahh-h..[/say]")
+				saynn("[say=artica]Ах... т-ты ведь е-ещё не з-закончил, да?.. ах... ахх-х...[/say]")
 
 			else:
-				saynn("[say=artica]Ah.. my ass.s-.. ah-h.. t-too m-muuch.. w-wai..[/say]")
+				saynn("[say=artica]Ах... мой анус... ах... с-слишком м-много... п-подожди...[/say]")
 
-			saynn("She notices that the people around her aren't yet fully satisfied.. It's time to switch..")
+			saynn("Она замечает, что окружающие еще не до конца удовлетворены... Пора сменить состав...")
 
 		# (( Double penetration CUM with {npc1.name} on the bottom and {npc2.name} behind. ))
 		addNextGangButton()
@@ -215,23 +215,23 @@ func _run():
 		var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon())
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon())
 		var cocksText = ("both cocks" if onlyCocks else ("both strapons" if onlyStrapons else "a cock and a strapon"))
-		saynn("With a firm grip, "+str(slavesText)+" grab Artica by all the 4 paws.. before pulling her up, above floor. No time is wasted, "+str(cocksText)+" already aligned with the fluff's holes.")
+		saynn("Крепко сжав,"+str(slavesText)+" хватают Артику за все четыре лапы... прежде чем поднять её над полом. Время не теряется, "+str(cocksText)+" уже прицеливаются к дырочкам пушистой.")
 
-		saynn("[say=artica]Ah.. h-hey..[/say]")
+		saynn("[say=artica]Ах.. эй..[/say]")
 
-		saynn("{npc1.You} {npc1.youAre} holding her legs, {npc1.yourHis} {npc1.strapon} is brushing against that needy slit, about to enter it. {npc2.You} {npc2.youAre} holding her chest, {npc2.yourHis} {npc2.strapon} resting on Artica's lips, ready to pierce..")
+		saynn("{npc1.You} {npc1.youAre} держат её за ноги, {npc1.yourHis} {npc1.strapon} трётся о ту самую жаждущую щель, вот-вот войдя внутрь. {npc2.You} {npc2.youAre} сжимают её грудь, {npc2.yourHis} {npc2.strapon} замирает у губ Артики, готовый ворваться..")
 
 		if (isVerySlut):
-			saynn("[say=artica]L-looks like.. I-I'm g.gonna b-be stretched..[/say]")
+			saynn("[say=artica]К-кажется.. м-меня сейчас р-растянут..[/say]")
 
 		elif (isSlut):
-			saynn("[say=artica]A-are you gonna b-be rough w-with my hh.holes?..[/say]")
+			saynn("[say=artica]В-вы будете ж-жестко обходиться с м-моими дырочками?..[/say]")
 
 		else:
-			saynn("[say=artica]D..d-do I h-have a s-say in t-tthis?..[/say]")
+			saynn("[say=artica]Э..э-это м-мне п-положено что-то р-решать?..[/say]")
 
 		# (( Spitroast starts with {npc1.name} fucking pussy and {npc2.name} fucking throat. ))
-		addButton("Continue", "See what happens next", "spit_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "spit_sex")
 	if(state == "spit_sex"):
 		playAnimation(StageScene.SexSpitroast, "sex", {pc="artica", npc=npc1, npc2=npc2, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true,hard=true}, npc2BodyState={exposedCrotch=true,hard=true}})
 		var pcIncluded = (npc1 == "pc" || npc2 == "pc")
@@ -240,21 +240,21 @@ func _run():
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon())
 		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "cocks and strapons"))
 		if (!didFirst):
-			saynn("In one powerful combined thrust, "+str("your" if pcIncluded else "their")+" "+str(cocksText)+" get rammed into Artica's holes, one sliding up her cunt while another is going down her throat, stealing the fluff's ability to talk or breathe really.")
+			saynn("Одним мощным одновременным толчком, "+str("your" if pcIncluded else "their")+" "+str(cocksText)+" вбиваются в дырочки Артики: один скользит в её киску, а другой опускается ей в глотку, буквально лишая пушистую возможности говорить или дышать.")
 
-			saynn("[say=artica]Kh.. h-hh..[/say]")
+			saynn("[say=artica] Кх.. х-хх..[/say]")
 
-			saynn("Artica's body is arching from the sudden penetrations, the pleasure of being fucked from both ends is making her own cock hard and drippy..")
+			saynn("Тело Артики выгибается от внезапного проникновения; удовольствие от того, что её трахают с обоих концов, заставляет её собственный член твердеть и течь..")
 
 		else:
-			saynn("One set of cocks gets replaced by another, "+str(slavesText)+" swiftly grab Artica by all the paws before pulling her up and aligning "+str("your" if pcIncluded  else "their")+" "+str(cocksText)+" with Artica's used holes..")
+			saynn("Одну порцию членов сменяет другая, "+str(slavesText)+" стремительно хватают Артику за все лапы, прежде чем поднять её и пристроить "+str("your" if pcIncluded  else "their")+" "+str(cocksText)+" к уже использованным дырочкам Артики..")
 
-			saynn("Moments later, her pussy and throat are stuffed full. The constant gangbanging isn't giving Artica much time to rest.. she is forced to endure this.. her eyes rolling up, toes twitching.")
+			saynn("Спустя мгновение её киска и глотка забиты до отказа. Бесконечный групповой секс не дает Артике времени на передышку... она вынуждена терпеть это... её глаза закатываются, а пальцы ног подергиваются.")
 
-			saynn("Her leaky"+str(" caged" if isCaged else "")+" cock is dripping with her cum onto her gray belly.. the fur color hiding most of the mess.")
+			saynn("Её сочащийся"+str(" caged" if isCaged else "")+" член капает её же кончаем на её серый живот... цвет меха скрывает большую часть этой грязи.")
 
 		# (( Spitroast SEX with {npc1.name} fucking pussy and {npc2.name} fucking throat. ))
-		addButton("Continue", "See what happens next", "spit_sexfast")
+		addButton("Продолжить", "Смотреть, что будет дальше", "spit_sexfast")
 	if(state == "spit_sexfast"):
 		playAnimation(StageScene.SexSpitroast, "fast", {pc="artica", npc=npc1, npc2=npc2, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true,hard=true}, npc2BodyState={exposedCrotch=true,hard=true}})
 		#var pcIncluded = (npc1 == "pc" || npc2 == "pc")
@@ -262,16 +262,16 @@ func _run():
 		var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon())
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon())
 		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "cocks and strapons"))
-		saynn("Muffled cries of pleasure spill out of her as the two"+str(" rubber" if onlyStrapons else "")+" shafts were being forced into her from both ends, the sensations overwhelming her as she was struggling to breathe, her body being rocked by the force of each thrust.")
+		saynn("Приглушенные стоны наслаждения вырываются из неё, пока два"+str(" rubber" if onlyStrapons else "")+" члена насильно втискивались в неё с обоих концов; ощущения захлестывали её, она пыталась дышать, а её тело сотрясалось от каждого мощного толчка.")
 
 		if (!didFirst):
-			saynn("Artica's first orgasm is approaching quickly, her cock pulsing wildly"+str(" inside of its cage" if isCaged else "")+", her throat and pussy gripping the "+str(cocksText)+" urgently.")
+			saynn("Первый оргазм Артики стремительно приближается, её член бешено пульсирует,"+str(" inside of its cage" if isCaged else "")+", её глотка и киска сжимают "+str(cocksText)+" urgently.")
 
 		else:
-			saynn("Artica looks like she is about to cum again, her cock pulsing wildly"+str(" inside of its cage" if isCaged else "")+", her pussy clenching around the {npc1.strapon} hard.")
+			saynn("Похоже, Артика вот-вот снова кончит, её член бешено пульсирует,"+str(" inside of its cage" if isCaged else "")+", её киска судорожно обхватывает {npc1.strapon} жестко.")
 
 		# (( Spitroast SEX FAST with {npc1.name} fucking pussy and {npc2.name} fucking throat. ))
-		addButton("Continue", "See what happens next", "spit_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "spit_cum")
 	if(state == "spit_cum"):
 		playAnimation(StageScene.SexSpitroast, "inside", {pc="artica", npc=npc1, npc2=npc2, pcCum=true, npcCum=true, npc2Cum=true, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true,hard=true}, npc2BodyState={exposedCrotch=true,hard=true}})
 		var pcIncluded = (npc1 == "pc" || npc2 == "pc")
@@ -279,33 +279,33 @@ func _run():
 		#var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon())
 		#var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon())
 		#var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "cocks and strapons"))
-		saynn("Artica's body created a round arch as "+str(slavesText)+" pressed firmly against her from both ends. With her legs, throat and chest held firmly, she was at "+str("your" if pcIncluded else "their")+" mercy, her breath hitching.. until her"+str(" caged" if isCaged else "")+" throbbed cock suddenly began shooting her virile seed, her pussy walls clenching and spasming around the thick shaft, drawing it deep, her throat doing the same to the other cock..")
+		saynn("Тело Артики выгнулось дугой, когда "+str(slavesText)+" плотно прижались к ней с обоих концов. Когда её ноги, горло и грудь были крепко зажаты, она оказалась во "+str("your" if pcIncluded else "their")+" власти толпы, её дыхание прерывалось... пока её"+str(" caged" if isCaged else "")+"пульсирующий член внезапно начал извергать в неё своё семя; стенки её киски сжимались и спазмировали вокруг толстого ствола, засасывая его глубоко, и её глотка делала то же самое со вторым членом..")
 
 		if (getCharacter(npc2).isWearingStrapon()):
-			saynn("The shaft in her mouth was just a strapon.. but it still released the cumlube that was loaded into it when Artica's walls squeezed that toy hard.")
+			saynn("Член у неё во рту был всего лишь страпоном.. но он всё равно выпустил смазку, заправленную внутрь, когда стенки Артики с силой сжали эту игрушку.")
 
 		else:
-			saynn("The cock in her mouth is pulsing and throbbing against her throat.. before releasing its hot seed inside, forcing the fluff to swallow everything.")
+			saynn("Член во рту пульсирует и бьётся о её горло.. прежде чем извергнуть горячее семя внутрь, заставляя её глотать всё до последней капли.")
 
 		if (getCharacter(npc1).isWearingStrapon()):
-			saynn("The strapon that was fucking her pussy is now meeting a lot of resistance as Artica's stuffed hole is milking it for all of its cumlube.")
+			saynn("Страпон, который трахал её киску, теперь встречает сильное сопротивление, так как набитое дышло Артики выжимает из него всю смазку.")
 
 		else:
-			saynn("Artica's womb gets stuffed full with {npc1.cum} as her orgasming"+str(" used" if didFirst else "")+" pussy is milking {npc1.your} balls dry.")
+			saynn("Матка Артики наполняется {npc1.cum}, пока её оргазмирующая"+str(" used" if didFirst else "")+" киска выжимает {npc1.your} яйца досуха.")
 
 		if (!didFirst):
-			saynn("A powerful first orgasm.. but certainly not the last.. Artica is coughing after that first round..")
+			saynn("Мощный первый оргазм.. но явно не последний.. Артика кашляет после этого первого раунда..")
 
 			if (isVerySlut):
-				saynn("[say=artica]Ah.. my h-holes.. kh-h.. ah.. s-so f-full..[/say]")
+				saynn("[say=artica]Ах.. мои д-дырочки.. кх-х.. ах.. так.. м-много..[/say]")
 
 			elif (isSlut):
-				saynn("[say=artica]Ah.. y-you're not d-done, are you-u?.. ah.. kh-h.. kh..[/say]")
+				saynn("[say=artica]Ах.. т-ты ведь ещё не з-закончил, да?.. ах.. кх-х.. кх..[/say]")
 
 			else:
-				saynn("[say=artica]Ah.. my t-throat.. ah-h.. khh..kh.. w-wai..[/say]")
+				saynn("[say=artica]Ах.. моё г-горло.. ах-х.. кхх.. кх.. п-подожди..[/say]")
 
-			saynn("She notices that the people around her aren't yet fully satisfied.. It's time to switch..")
+			saynn("Она замечает, что окружающие еще не до конца удовлетворены... Пора сменить состав...")
 
 		# (( Spitroast CUM with {npc1.name} fucking pussy and {npc2.name} fucking throat. ))
 		addNextGangButton()
@@ -316,23 +316,23 @@ func _run():
 		var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon() && !getCharacter(npc3).isWearingStrapon())
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon() && getCharacter(npc3).isWearingStrapon())
 		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "cocks and strapons"))
-		saynn("With a firm grip, "+str(slavesText)+" force Artica onto all fours. No time is wasted, all the "+str(cocksText)+" already aligned with the fluff's holes.")
+		saynn("Крепко сжав,"+str(slavesText)+" заставляют Артику встать на четвереньки. Время не теряют, все "+str(cocksText)+" уже прицеливаются к дырочкам пушистой.")
 
-		saynn("[say=artica]Ah.. w-wow..[/say]")
+		saynn("[say=artica]Ах.. в-вау..[/say]")
 
-		saynn("{npc1.You} {npc1.youAre} underneath, {npc1.yourHis} {npc1.strapon} is brushing against the girl's slit, about to enter her dripping pussy. {npc2.You} {npc2.youVerb('take')} a spot behind, {npc2.yourHis} {npc2.strapon} pressed against that tight ass while {npc3.your} {npc3.strapon} is brushing against Artica's mouth lips..")
+		saynn("{npc1.You} {npc1.youAre} снизу, {npc1.yourHis} {npc1.strapon} трется о щелочку девушки, вот-вот войдя в ее сочащуюся киску. {npc2.You} {npc2.youVerb('take')} сзади, {npc2.yourHis} {npc2.strapon} прижатый к этой тугой заднице, пока {npc3.your} {npc3.strapon} касается губ Артики..")
 
 		# (( Gangbang starts with {npc1.name} fucking pussy, {npc2.name} fucking ass and {npc3.name} fucking throat.
 		if (isVerySlut):
-			saynn("[say=artica]L-looks like.. I-I'm g.gonna b-be stretched..[/say]")
+			saynn("[say=artica]К-кажется.. м-меня сейчас р-растянут..[/say]")
 
 		elif (isSlut):
-			saynn("[say=artica]A-are you gonna b-be rough w-with my hh.holes?..[/say]")
+			saynn("[say=artica]В-вы будете ж-жестко обходиться с м-моими дырочками?..[/say]")
 
 		else:
-			saynn("[say=artica]D..d-do I h-have a s-say in t-tthis?..[/say]")
+			saynn("[say=artica]Э..э-это м-мне п-положено что-то р-решать?..[/say]")
 
-		addButton("Continue", "See what happens next", "gang_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "gang_sex")
 	if(state == "gang_sex"):
 		playAnimation(StageScene.SexGangbang, "sex", {pc="artica", npc2=npc1, npc=npc2, npc3=npc3, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true,hard=true}, npc2BodyState={exposedCrotch=true,hard=true}, npc3BodyState={exposedCrotch=true,hard=true}})
 		var pcIncluded = (npc1 == "pc" || npc2 == "pc" || npc3 == "pc")
@@ -341,19 +341,19 @@ func _run():
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon() && getCharacter(npc3).isWearingStrapon())
 		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "cocks and strapons"))
 		if (!didFirst):
-			saynn("In one powerful combined thrust, "+str("your" if pcIncluded else "their")+" "+str(cocksText)+" get rammed into Artica's holes, one sliding up her cunt, one stretching her asshole and another going down her throat.")
+			saynn("Одним мощным одновременным толчком, "+str("your" if pcIncluded else "their")+" "+str(cocksText)+" с силой вбиваются в отверстия Артики: один скользит в ее киску, другой растягивает анус, а третий опускается ей в глотку.")
 
-			saynn("[say=artica]Nh-h!.. h-hmhh..[/say]")
+			saynn("[say=artica]Нх-х!.. х-ммхх..[/say]")
 
-			saynn("Artica's body is arching from the sudden penetration, the pleasure of being fucked from every angle is making her own cock hard and drippy..")
+			saynn("Тело Артики выгибается от внезапного проникновения; удовольствие от того, что ее трахают со всех сторон, заставляет ее собственный член твердеть и течь..")
 
 		else:
-			saynn("One set of cocks gets replaced by another, "+str(slavesText)+" swiftly align "+str("your" if pcIncluded  else "their")+" "+str(cocksText)+" with Artica's used holes.. before ramming them inside, not giving the fluff even a single moment to come to senses.")
+			saynn("Одну порцию членов сменяет другая, "+str(slavesText)+" быстро выравнивают "+str("your" if pcIncluded  else "their")+" "+str(cocksText)+" с уже использованными отверстиями Артики.. прежде чем вогнать их внутрь, не давая этой пушистой штучке ни единого мгновения, чтобы прийти в себя.")
 
-			saynn("Artica's body is trembling, pleasure of being fucked from every angle is making her own cock hard again, old cum is dripping off of the tip, mixed with the precum.")
+			saynn("Тело Артики дрожит, удовольствие от того, что ее трахают со всех сторон, снова заставляет ее собственный член твердеть, старая сперма стекает с кончика, смешиваясь с предэякулятом.")
 
 		# (( Gangbang SEX with {npc1.name} fucking pussy, {npc2.name} fucking ass and {npc3.name} fucking throat.))
-		addButton("Continue", "See what happens next", "gang_sexfast")
+		addButton("Продолжить", "Смотреть, что будет дальше", "gang_sexfast")
 	if(state == "gang_sexfast"):
 		playAnimation(StageScene.SexGangbang, "fast", {pc="artica", npc2=npc1, npc=npc2, npc3=npc3, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true,hard=true}, npc2BodyState={exposedCrotch=true,hard=true}, npc3BodyState={exposedCrotch=true,hard=true}})
 		#var pcIncluded = (npc1 == "pc" || npc2 == "pc" || npc3 == "pc")
@@ -361,16 +361,16 @@ func _run():
 		var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon() && !getCharacter(npc3).isWearingStrapon())
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon() && getCharacter(npc3).isWearingStrapon())
 		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "cocks and strapons"))
-		saynn("Artica's holes were being pounded faster and harder, {npc1.your} {npc1.strapon} is getting thrust upward by {npc1.youHim}, slick cyan folds tightly wrapping around it while a different {npc2.strapon} hammering the girl's ass, inner walls squeezing that one tightly.. just like the girl's throat around {npc3.your} {npc3.strapon}.")
+		saynn("Отверстия Артики долбили всё быстрее и сильнее; {npc1.your} {npc1.strapon} вбивается вверх под напором {npc1.youHim}, скользкие голубые складки плотно обхватывают его, в то время как другой {npc2.strapon} молотит по заднице девушки, а внутренние стенки туго сжимают его.. точно так же, как глотка девушки сжимает {npc3.your} {npc3.strapon}.")
 
 		if (!didFirst):
-			saynn("Artica's first orgasm is approaching quickly, her cock pulsing wildly"+str(" inside of its cage" if isCaged else "")+", all her holes gripping the "+str(cocksText)+" urgently.")
+			saynn("Первый оргазм Артики стремительно приближается, её член бешено пульсирует,"+str(" inside of its cage" if isCaged else "")+", все её отверстия сжимают "+str(cocksText)+" urgently.")
 
 		else:
-			saynn("Artica's next orgasm is approaching quickly, her cock pulsing wildly"+str(" inside of its cage" if isCaged else "")+", all her holes gripping the "+str(cocksText)+" urgently.")
+			saynn("Следующий оргазм Артики приближается стремительно, её член бешено пульсирует,"+str(" inside of its cage" if isCaged else "")+", все её отверстия сжимают "+str(cocksText)+" urgently.")
 
 		# (( Gangbang FAST with {npc1.name} fucking pussy, {npc2.name} fucking ass and {npc3.name} fucking throat. ))
-		addButton("Continue", "See what happens next", "gang_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "gang_cum")
 	if(state == "gang_cum"):
 		playAnimation(StageScene.SexGangbang, "inside", {pc="artica", npc2=npc1, npc=npc2, npc3=npc3, pcCum=true, npcCum=true, npc2Cum=true, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true,hard=true}, npc2BodyState={exposedCrotch=true,hard=true}, npc3BodyState={exposedCrotch=true,hard=true}})
 		#var pcIncluded = (npc1 == "pc" || npc2 == "pc" || npc3 == "pc")
@@ -378,24 +378,24 @@ func _run():
 		var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon() && !getCharacter(npc3).isWearingStrapon())
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon() && getCharacter(npc3).isWearingStrapon())
 		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "cocks and strapons"))
-		saynn("Artica's throat, pussy and ass spasmed around the three "+str(cocksText)+" buried deep within her, milking them for every drop of cum"+str("lube" if  onlyStrapons else "")+" as she was overwhelmed by waves of pleasure."+str(". for the first time.. but certainly not the last." if !didFirst else "")+"")
+		saynn("горло, киску и задницу Артики спазмировали вокруг трёх "+str(cocksText)+" глубоко застрявших в ней, выцеживая из них каждую каплю спермы,"+str("lube" if  onlyStrapons else "")+" пока её накрывало волнами наслаждения."+str(". for the first time.. but certainly not the last." if !didFirst else "")+"")
 
-		saynn("Pretty much at the same time, her own {artica.penis} erupted, shooting thick streams of cum while her pussy released a shower of transparent girlcum.. Her body is twitching and quivering, legs shaking, toes curling hard.")
+		saynn("Практически в тот же самый момент её собственный {artica.penis} извергся, выбрасывая густые струи спермы, в то время как её киска выпустила фонтан прозрачной девичьей смазки... Её тело дергается и дрожит, ноги трясутся, а пальцы ног сильно поджимаются.")
 
 		# (( Gangbang CUM with {npc1.name} fucking pussy, {npc2.name} fucking ass and {npc3.name} fucking throat. ))
 		if (!didFirst):
-			saynn("Artica is coughing after that first round..")
+			saynn("Артика кашляет после первого раунда...")
 
 			if (isVerySlut):
-				saynn("[say=artica]Ah.. my h-holes.. kh-h.. ah.. s-so f-full..[/say]")
+				saynn("[say=artica]Ах.. мои д-дырочки.. кх-х.. ах.. так.. м-много..[/say]")
 
 			elif (isSlut):
-				saynn("[say=artica]Ah.. y-you're not d-done, are you-u?.. ah.. kh-h.. kh..[/say]")
+				saynn("[say=artica]Ах.. т-ты ведь ещё не з-закончил, да?.. ах.. кх-х.. кх..[/say]")
 
 			else:
-				saynn("[say=artica]Ah.. my t-throat.. ah-h.. khh..kh.. w-wai..[/say]")
+				saynn("[say=artica]Ах.. моё г-горло.. ах-х.. кхх.. кх.. п-подожди..[/say]")
 
-			saynn("She notices that the people around her aren't yet fully satisfied.. It's time to switch..")
+			saynn("Она замечает, что окружающие еще не до конца удовлетворены... Пора сменить состав...")
 
 		addNextGangButton()
 	if(state == "after_gangbang"):
@@ -404,41 +404,41 @@ func _run():
 		var slavesText = ("your slaves" if !pcIncluded else "you and your slaves")
 		var onlyCocks = onlyCocksGlobal
 		var onlyStrapons = onlyStraponsGlobal
-		saynn("After the last slaves have finished gangbanging Artica, she is left laying on the floor, completely spent from the intense pounding of all holes.. Her pussy and asshole are left gaping and leaking"+str(" fake" if onlyStrapons else "")+" seed, her throat sore and stretched from the rough treatment it had received. Every muscle in her body twitched with the aftermath of the pleasure she had just experienced..")
+		saynn("После того как последние рабы закончили групповой секс с Артикой, она осталась лежать на полу, совершенно измотанная интенсивной долбежкой во все дыры... Её киска и анус остаются широко раскрытыми и сочащимися"+str(" fake" if onlyStrapons else "")+" семенем, а горло — садненым и растянутым от грубого обращения. Каждая мышца в её теле подергивалась от последствий только что пережитого наслаждения...")
 
-		saynn("[say=artica]Nh-h.. ahh..h-h-h.. h.h.. ny-y..h..ah..[/say]")
+		saynn("[say=artica]Нх-х.. ахх.. х-х-х.. х.х.. нь-ы..х..ах..[/say]")
 
 		if (!onlyStrapons && !onlyCocks):
-			saynn("As she laid there, used and abused.. "+str(slavesText)+" decide to surround her for the last time. With mean smiles on "+str("your" if pcIncluded else "their")+" faces, "+str("you" if pcIncluded else "they")+" begin to stroke cocks and rub pussies, preparing to give the fluff one final, humiliating act of submission..")
+			saynn("Она лежала там, измученная и использованная.. "+str(slavesText)+" решают окружить её в последний раз. С ехидными улыбками на "+str("your" if pcIncluded else "their")+" лицах, "+str("you" if pcIncluded else "they")+" начинают ласкать члены и теребить киски, готовясь устроить этой пушистке последний, унизительный акт подчинения..")
 
-			saynn("Soon, "+str(slavesText)+" unleash "+str("your" if pcIncluded else "their")+" loads, covering Artica's fur and face with layers of hot, sticky cum.. and salty slick girlcum.. The fluff's fur is being marked by many scents at once while she is just completely at "+str("your" if pcIncluded else "their")+" mercy..")
+			saynn("Вскоре, "+str(slavesText)+" unleash "+str("your" if pcIncluded else "their")+" заливают её, покрывая мех и лицо Артики слоями горячей, липкой спермы.. и солевой девичьей смазки.. Мех пушистки помечается множеством запахов одновременно, пока она просто полностью находится во "+str("your" if pcIncluded else "their")+" mercy..")
 
 		elif (onlyCocks):
-			saynn("As she laid there, used and abused.. "+str(slavesText)+" decide to surround her for the last time. With mean smiles on "+str("your" if pcIncluded else "their")+" faces, "+str("you" if pcIncluded else "they")+" begin to stroke cocks, preparing to give the fluff one final, humiliating act of submission..")
+			saynn("Она лежала там, измученная и использованная.. "+str(slavesText)+" решают окружить её в последний раз. С ехидными улыбками на "+str("your" if pcIncluded else "their")+" лицах, "+str("you" if pcIncluded else "they")+" начинают ласкать члены, готовясь совершить над пушистой один последний, унизительный акт подчинения..")
 
-			saynn("Soon, "+str(slavesText)+" unleash "+str("your" if pcIncluded else "their")+" loads, covering Artica's fur and face with layers of hot, sticky cum.. The fluff's fur is being marked by many scents at once while she is just completely at "+str("your" if pcIncluded else "their")+" mercy..")
+			saynn("Вскоре, "+str(slavesText)+" unleash "+str("your" if pcIncluded else "their")+" изливаются, покрывая мех и мордочку Артики слоями горячей, липкой спермы.. Мех пушистой помечается множеством запахов одновременно, пока она полностью находится во власти "+str("your" if pcIncluded else "their")+" mercy..")
 
 		else:
-			saynn("As she laid there, used and abused.. "+str(slavesText)+" decide to surround her for the last time. With mean smiles on "+str("your" if pcIncluded else "their")+" faces, "+str("you" if pcIncluded else "they")+" take off "+str("your" if pcIncluded else "their")+" strapons and start rubbing "+str("your" if pcIncluded else "their")+" pussies, preparing to give the fluff one final, humiliating act of submission..")
+			saynn("Она лежала там, измученная и использованная.. "+str(slavesText)+" решают окружить её в последний раз. С ехидными улыбками на "+str("your" if pcIncluded else "their")+" лицах, "+str("you" if pcIncluded else "they")+" снимают "+str("your" if pcIncluded else "their")+" страпоны и начинают тереться "+str("your" if pcIncluded else "their")+" кисками, готовясь совершить над пушистой один последний, унизительный акт подчинения..")
 
-			saynn("Soon, "+str(slavesText)+" unleash "+str("your" if pcIncluded else "their")+" loads, covering Artica's fur and face with layers of salty slick girlcum.. The fluff's fur is being marked by many scents at once while she is just completely at "+str("your" if pcIncluded else "their")+" mercy..")
+			saynn("Вскоре, "+str(slavesText)+" unleash "+str("your" if pcIncluded else "their")+" изливаются, покрывая мех и мордочку Артики слоями соленой, скользкой девичьей смазки.. Мех пушистой помечается множеством запахов одновременно, пока она полностью находится во власти "+str("your" if pcIncluded else "their")+" mercy..")
 
 		if (isVerySlut):
-			saynn("[say=artica]I'm.. s-such a.. c-cum h-hungry.. w-whore.. ah-h.. cum d-dumpster..[/say]")
+			saynn("[say=artica]Я.. т-такая.. с-спермоголодная.. ш-шлюшка.. ах-х.. спермобак..[/say]")
 
 		elif (isSlut):
-			saynn("[say=artica]I'm.. s-such a.. c-cum.. w-whore.. ahh..[/say]")
+			saynn("[say=artica]Я.. т-такая.. с-спермо.. ш-шлюшка.. ахх..[/say]")
 
 		else:
-			saynn("[say=artica]Hhh-h.. ah-h.. s-so m-mmuuch..[/say]")
+			saynn("[say=artica]Ххх-х.. ах-х.. т-так.. м-много..[/say]")
 
-		saynn("You stay there and help the fluff to come back to her senses.. before bringing her out into the main hall.. still covered in various fluids..")
+		saynn("Ты оставайся там и помоги пушистой прийти в себя.. прежде чем вывести её в главный зал.. всё ещё покрытую различными жидкостями..")
 
-		addButton("Enough", "This was fun", "endthescene")
+		addButton("Хватит", "Это было весело", "endthescene")
 func addSlaveButtons():
-	sayn("Who will gangbang her:")
+	sayn("Кто устроит ей глоббэнд:")
 	if(pickedSlaves.has("pc")):
-		sayn("You")
+		sayn("Ты")
 
 	var notFit = {}
 	var pcSlaves = GM.main.getPCSlavesIDs()
@@ -454,10 +454,10 @@ func addSlaveButtons():
 			notFit[slaveID] = "This slave is busy with something already"
 			continue
 		if(pickedSlaves.has(slaveID)):
-			addButton("-"+character.getName(), "Level "+str(npcSlave.slaveLevel)+" "+npcSlave.getSlaveTypeName()+"\n\n"+character.getSmallDescription(), "toggle_slave", [slaveID])
+			addButton("-"+character.getName(), "Уровень "+str(npcSlave.slaveLevel)+" "+npcSlave.getSlaveTypeName()+"\n\n"+character.getSmallDescription(), "toggle_slave", [slaveID])
 			sayn(character.getName())
 		else:
-			addButton("+"+character.getName(), "Level "+str(npcSlave.slaveLevel)+" "+npcSlave.getSlaveTypeName()+"\n\n"+character.getSmallDescription(), "toggle_slave", [slaveID])
+			addButton("+"+character.getName(), "Уровень "+str(npcSlave.slaveLevel)+" "+npcSlave.getSlaveTypeName()+"\n\n"+character.getSmallDescription(), "toggle_slave", [slaveID])
 	for slaveID in notFit:
 		var character = getCharacter(slaveID)
 		addDisabledButton(character.getName(), notFit[slaveID])
@@ -503,13 +503,13 @@ func after_gangbang():
 
 func addNextGangButton():
 	if(sceneAmount <= 1):
-		saynn("This was the last one..")
+		saynn("Это был последний раз...")
 	elif(sceneAmount == 2):
-		saynn("The slaves can use Artica one more time..")
+		saynn("Рабыни могут использовать Артику еще один раз...")
 	else:
-		saynn(str(sceneAmount-1)+" uses left!")
+		saynn(str(sceneAmount-1)+" осталось!")
 
-	addButton("Continue", "See what happens next", "start_next_scene")
+	addButton("Продолжить", "Смотреть, что будет дальше", "start_next_scene")
 
 func afterEachGang():
 	getModule("ArticaModule").addCorruption(0.01)

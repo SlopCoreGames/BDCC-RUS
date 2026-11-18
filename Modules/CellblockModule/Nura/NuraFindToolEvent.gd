@@ -9,9 +9,9 @@ func registerTriggers(es):
 func run(_triggerID, _args):
 	if(GM.main.getFlag("CellblockModule.FoundNura")):
 		if(!GM.main.getFlag("CellblockModule.NuraFoundTool")):
-			saynn("You notice some kind of tool one of the worktables. An industrial-sized syringe with some circuitry attached.")
+			saynn("Вы замечаете какой-то инструмент на одном из рабочих столов. Промышленный шприц, к которому прикреплены какие-то микросхемы.")
 		
-			addButton("Syringe tool", "Grab it", "nura")
+			addButton("Инструмент-шприц", "Схватить его", "nura")
 
 func getPriority():
 	return 0

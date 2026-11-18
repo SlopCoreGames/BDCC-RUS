@@ -15,11 +15,11 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
 		
-		saynn("As you step deeper into the tunnels, you run into someone. Or, more like, something.")
+		saynn("Когда ты заходишь глубже в туннели, ты натыкаешься на кого-то. Точнее, на что-то.")
 		
-		saynn("{npc.His} skin is sallow, {npc.his} pupils blown wide like black holes. A junkie.")
+		saynn("{npc.His} кожа землистая, а {npc.his} зрачки расширены, словно черные дыры. Торчок.")
 		
-		saynn("{npc.His} gaze snaps to you, and for a moment, there’s just twitchy silence.")
+		saynn("{npc.His} взгляд резко впивается в тебя, и на мгновение воцаряется нервная тишина.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"The fuck are you lookin’ at, fresh meat? You ain’t one of us. Ain’t got the shakes. The fuck are you doing here?",
@@ -36,9 +36,9 @@ func _run():
 			"The fuck you doin’ down here, tourist? Lookin’ for a good time or a bad one?",
 		])+"[/say]")
 		
-		saynn("It's hard to blend in when you're not a junkie yourself.. Looks like you will have to fight {npc.him}..")
+		saynn("Сложно слиться с толпой, если ты сам не торчок... Похоже, тебе придется сразиться с {npc.him}...")
 		
-		addButton("Fight", "Start the fight", "startFight")
+		addButton("Драться", "Начать бой", "startFight")
 	
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

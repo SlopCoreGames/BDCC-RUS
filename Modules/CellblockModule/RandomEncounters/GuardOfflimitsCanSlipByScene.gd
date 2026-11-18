@@ -38,33 +38,33 @@ func _run():
 		saynn("While carefully stepping through the area you spot one of the guards. You caught {npc.him} at a very good moment because {npc.his} back is turned away so you can try to just sneak past.")
 		
 		if(sawBefore):
-			saynn("It's hard to tell from where you are but you think you saw {npc.him} before.")
+			saynn("Отсюда трудно разобрать, но тебе кажется, что ты уже видел {npc.him} раньше.")
 		
 			if(npcVariation == "subby"):
-				saynn("You remember {npc.him} being "+RNG.pick(["quite shy", "of the nervous type", "shy", "on the shy side", "on the quiet side"])+".")
+				saynn("Ты помнишь, как {npc.him} был"+RNG.pick(["quite shy", "of the nervous type", "shy", "on the shy side", "on the quiet side"])+".")
 			if(npcVariation == "mean"):
-				saynn("You remember {npc.him} being "+RNG.pick(["one of the mean ones", "quite mean", "one of the rough ones", "mean", "not of the kind type"])+".")
+				saynn("Ты помнишь, как {npc.him} был"+RNG.pick(["one of the mean ones", "quite mean", "one of the rough ones", "mean", "not of the kind type"])+".")
 		else:
-			saynn("You don't recall meeting {npc.him} before.")
+			saynn("Вы не помните, чтобы встречали {npc.him} раньше.")
 			
-		saynn("You try to stay quiet while thinking about your options.")
+		saynn("Ты стараешься не шуметь, обдумывая свои варианты.")
 		
-		addButton("Confront", "Grab their attention", "confront")
-		addButton("Sneak past", "Success chance: "+str(Util.roundF(getSlipByChance(), 1))+"%. Try to avoid them", "sneak_past")
+		addButton("Противостояние", "Привлечь их внимание", "confront")
+		addButton("Проскользнуть мимо", "Шанс успеха:"+str(Util.roundF(getSlipByChance(), 1))+"%. Постарайся их избежать", "sneak_past")
 
 	if(state in ["confront", "spotted", "spottedstealing"]):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
 
 		if(state == "confront"):
-			saynn("You decide not to hide in the shadows and openly confront the guard. You step towards {npc.him} and get {npc.his} attention.")
+			saynn("Ты решаешь не прятаться в тенях, а открыто противостоять охраннику. Ты делаешь шаг к {npc.him} и привлекаешь {npc.his} внимание.")
 		elif(state == "spotted"):
-			saynn("You try to slip past the guard unnoticed but fail!")
+			saynn("Ты пытаешься проскользнуть мимо охранника незаметно, но терпишь неудачу!")
 		elif(state == "spottedstealing"):
-			saynn("You try to steal from the guard but fail!")
+			saynn("Ты пытаешься обнести охранника, но у тебя ничего не выходит!")
 
 		if(npcVariation == "mean"):
 			if(sawBefore):
-				saynn("The guard "+RNG.pick(["catches your silhouette with {npc.his} gaze", "hears your steps"])+" and turns around, {npc.his} stun baton already makes sparks.")
+				saynn("Охранник "+RNG.pick(["catches your silhouette with {npc.his} gaze", "hears your steps"])+" и оборачивается, его электрошокер {npc.his} уже высекает искры.")
 				
 				saynn(RNG.pick([
 					"[say=npc]Huh, you again. Are you one of those masochistic bitches?[/say]",
@@ -73,7 +73,7 @@ func _run():
 					"[say=npc]You know I'm not just gonna let you through.[/say]",
 					]))
 			else:
-				saynn("The guard "+RNG.pick(["catches your silhouette with {npc.his} gaze", "hears your steps"])+" and turns around, {npc.his} stun baton already makes sparks. {npc.He} quickly checks you out.")
+				saynn("Охранник "+RNG.pick(["catches your silhouette with {npc.his} gaze", "hears your steps"])+" и оборачивается, его электрошокер {npc.his} уже высекает искры. {npc.He} быстро осматривает тебя.")
 				
 				saynn(RNG.pick([
 					"[say=npc]Who do we have here? More painsluts?[/say]",
@@ -82,12 +82,12 @@ func _run():
 					"[say=npc]I'm never tired of fresh faces. They change so fast after a few beatings.[/say]",
 					]))
 			
-			saynn("It seems fighting is the only option with this one.")
+			saynn("Похоже, с этим типом остается только драться.")
 			
-			addButton("Fight", "Begin the fight", "startfight")
+			addButton("Драться", "Начать бой", "startfight")
 		elif(npcVariation == "subby"):
 			if(sawBefore):
-				saynn("The guard "+RNG.pick(["gasps", "eeks", "staggers back", "jumps"])+" when {npc.he} notices you. And then {npc.he} blushes.")
+				saynn("Охранник "+RNG.pick(["gasps", "eeks", "staggers back", "jumps"])+" когда {npc.he} замечает тебя. И тогда {npc.he} краснеет.")
 				
 				saynn("[say=npc]"+RNG.pick([
 					"You wanted something?.. I'm not gonna stop you.",
@@ -97,7 +97,7 @@ func _run():
 					"Do you wanna do something with me?..",
 				])+"[/say]")
 			else:
-				saynn("The guard "+RNG.pick(["gasps", "eeks", "staggers back", "jumps"])+" when {npc.he} notices you. The stun baton almost slips out of {npc.his} hands.")
+				saynn("Охранник "+RNG.pick(["gasps", "eeks", "staggers back", "jumps"])+" когда {npc.he} замечает тебя. Электрошокер чуть не выскальзывает из рук {npc.his}.")
 			
 				saynn("[say=npc]"+RNG.pick([
 					"Oh! Another inmate. What are you gonna do with me?..",
@@ -106,12 +106,12 @@ func _run():
 					"Don't remember you.. Are you one of the new ones?.."
 				])+"[/say]")
 			
-			saynn("It seems this guard doesn't plan on bashing your skull in.")
+			saynn("Похоже, этот охранник не собирается проламывать тебе череп.")
 			
 			addWonButton()
 		else:
 			if(sawBefore):
-				saynn("The guard "+RNG.pick(["raises {npc.his} brow at you", "turns around to face you", "gives you a strict look"])+" as {npc.he} spots you. The guard turns {npc.his} stun baton on and carefully watches you.")
+				saynn("Охранник "+RNG.pick(["raises {npc.his} brow at you", "turns around to face you", "gives you a strict look"])+" когда {npc.he} заприметила тебя. Охранник включает {npc.his} электрошокер и внимательно следит за тобой.")
 				
 				saynn("[say=npc]"+RNG.pick([
 					"I remember you. You're not allowed to be here, inmate.",
@@ -120,7 +120,7 @@ func _run():
 					"Gonna surrender? Not as painful for you that way."
 				])+"[/say]")
 			else:
-				saynn("The guard "+RNG.pick(["raises {npc.his} brow at you", "turns around to face you", "gives you a strict look"])+" as {npc.he} spots you. The guard turns {npc.his} stun baton on and carefully watches the unfamilliar face.")
+				saynn("Охранник "+RNG.pick(["raises {npc.his} brow at you", "turns around to face you", "gives you a strict look"])+" когда {npc.he} заприметила тебя. Охранник включает {npc.his} электрошокер и внимательно разглядывает незнакомое лицо.")
 				
 				saynn("[say=npc]"+RNG.pick([
 					"Don't recall you. But you're not allowed to be here, inmate.",
@@ -129,13 +129,13 @@ func _run():
 					"Hey! Hands up. No funny movements."
 				])+"[/say]")
 			
-			saynn("It seems you can't just turn around and leave now.")
+			saynn("Похоже, теперь просто так развернуться и уйти не получится.")
 			
-			addButton("Fight", "Begin the fight", "startfight")
-			addButton("Surrender", "Let them have it their way with you", "surrender")
+			addButton("Драться", "Начать бой", "startfight")
+			addButton("Сдаться", "Позволить им делать с тобой всё, что захотят", "surrender")
 	
 	if(state == "surrender"):
-		saynn("Instead of fighting, you just raise your hands up and surrender.")
+		saynn("Вместо того чтобы драться, ты просто поднимаешь руки вверх и сдаешься.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"Good choice. Now we're gonna have some fun.",
@@ -144,15 +144,15 @@ func _run():
 			"That's what I wanna see. I will still punish you for trespassing.",
 		])+"[/say]")
 		
-		saynn("You are completely at {npc.his} mercy.")
+		saynn("Ты полностью во власти {npc.his}.")
 		
-		addButton("Submit to", "Let them have it their way with you", "startsexsubby")
+		addButton("Подчиниться", "Позволить им делать с тобой всё, что захотят", "startsexsubby")
 			
 	if(state == "after_sex" || state == "after_sex_won"):
-		saynn("After the fun time ends, the guard just leaves you alone.")
+		saynn("Когда веселое время заканчивается, охранник просто оставляет тебя в покое.")
 
 		# (scene ends)
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 		
 	if(state == "after_sex"):
 		GM.ES.triggerRun(Trigger.AfterSexWithDynamicNPCThatWon, [npcID])
@@ -161,34 +161,34 @@ func _run():
 		GM.ES.triggerRun(Trigger.AfterSexWithDefeatedDynamicNPC, [npcID])
 
 	if(state == "sneak_past"):
-		saynn("You managed to sneak past the guard without {npc.him} noticing!")
+		saynn("Тебе удалось проскользнуть мимо охранника так, что {npc.him} ничего не заметила!")
 		
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 
 	if(state == "sneak_past_canSteal"):
-		saynn("You managed to sneak past the guard!")
+		saynn("Тебе удалось проскользнуть мимо охранника!")
 		
-		saynn("But just before you leave your eye catches some helpful supplies that you can steal from {npc.his} belt.")
+		saynn("Но прямо перед выходом твой взгляд падает на полезные припасы, которые можно стащить с {npc.his} пояса.")
 
-		saynn("It would be risky though.")
+		saynn("Впрочем, это может быть рискованно.")
 
-		addButtonWithChecks("Steal", "Chance: 50%. Try to steal some things from the guard", "trysteal", [], [ButtonChecks.NotArmsRestrained, ButtonChecks.NotHandsBlocked])
-		addButton("Just leave", "Time to go", "endthescene")
+		addButtonWithChecks("Украсть", "Шанс: 50%. Попытаться что-нибудь стащить у охранника", "trysteal", [], [ButtonChecks.NotArmsRestrained, ButtonChecks.NotHandsBlocked])
+		addButton("Просто уйти", "Пора идти", "endthescene")
 	
 	if(state == "sneak_past_canAttack"):
-		saynn("You managed to sneak past the guard!")
+		saynn("Тебе удалось проскользнуть мимо охранника!")
 		
-		saynn("But the guard is still standing in a such a good spot. You think you can try to grab {npc.him} and cuff using {npc.his} own cuffs.")
+		saynn("Но охранник всё ещё стоит на очень удобном месте. Ты думаешь, что сможешь схватить {npc.him} и сковать его/её с помощью {npc.his} собственных наручников.")
 
-		saynn("It can be somewhat risky though.")
+		saynn("Впрочем, это довольно рискованно.")
 
-		addButtonWithChecks("Attack", "Chance: 70%. Try to restrain them", "trycuff", [], [ButtonChecks.NotArmsRestrained, ButtonChecks.NotHandsBlocked])
-		addButton("Just leave", "Time to go", "endthescene")
+		addButtonWithChecks("Атаковать", "Шанс: 70%. Попытаться обездвижить их", "trycuff", [], [ButtonChecks.NotArmsRestrained, ButtonChecks.NotHandsBlocked])
+		addButton("Просто уйти", "Пора идти", "endthescene")
 	
 	if(state == "cuff_subby"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
 		
-		saynn("You sneak up behind the guard and suddenly grab {npc.him} by the neck while your other hand searches through {npc.his} equipment.")
+		saynn("Ты подкрадываешься к охраннику со спины и внезапно хватаешь {npc.him} за шею, пока вторая рука шарит по {npc.his} снаряжению.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"Eek!",
@@ -198,7 +198,7 @@ func _run():
 			"Wha..",
 		])+"[/say]")
 		
-		saynn("To your surprise {npc.he} doesn't seem to resist at all. You manage to find some cuffs that quickly lock around {npc.his} arms, forcing them behind.")
+		saynn("К твоему удивлению, {npc.he} почти не сопротивляется. Тебе удается найти наручники и быстро защелкнуть их на {npc.his} руках, заставив их завести их за спину.")
 		
 		if(sawBefore):
 			saynn("[say=npc]"+RNG.pick([
@@ -214,15 +214,15 @@ func _run():
 				"Kinky..",
 			])+"[/say]")
 		
-		saynn("{npc.He} is blushing a lot, you can just leave {npc.him} like that or have some fun.")
+		saynn("{npc.He} сильно краснеет; можно просто оставить {npc.him} в таком виде, а можно немного развлечься.")
 		
-		addButtonWithChecks("Sex!", "Time to fuck them", "startsexasdom", [], [ButtonChecks.CanStartSex])
-		addButton("Leave", "Just leave before anyone else sees you", "endthescene")
+		addButtonWithChecks("Секс!", "Пора их оттрахать", "startsexasdom", [], [ButtonChecks.CanStartSex])
+		addButton("Уйти", "Просто уходи, пока тебя не заметили.", "endthescene")
 		
 	if(state == "cuff_fail"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
 
-		saynn("You sneak up behind the guard and suddenly grab {npc.him} by the neck while your other hand searches through {npc.his} equipment.")
+		saynn("Ты подкрадываешься к охраннику со спины и внезапно хватаешь {npc.him} за шею, пока вторая рука шарит по {npc.his} снаряжению.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"The fuck?!",
@@ -232,7 +232,7 @@ func _run():
 			"Huh!?",
 		])+"[/say]")
 		
-		saynn("But {npc.he} quickly manages to pull your hand away before shoving {npc.his} elbow into your chest and turning around.")
+		saynn("Но {npc.he} успевает быстро убрать твою руку, прежде чем ткнуть {npc.his} локтем тебе в грудь и развернуться.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"Now that was rude.",
@@ -241,14 +241,14 @@ func _run():
 			"Seems like you need to be taught a lesson.",
 		])+"[/say]")
 	
-		saynn("Oops. Seems like you gotta fight now.")
+		saynn("Ой. Похоже, теперь придется драться.")
 		
-		addButton("Fight", "Begin the fight", "startfight")
+		addButton("Драться", "Начать бой", "startfight")
 	
 	if(state == "cuff_success"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
 		
-		saynn("You sneak up behind the guard and suddenly grab {npc.him} by the neck while your other hand searches through {npc.his} equipment.")
+		saynn("Ты подкрадываешься к охраннику со спины и внезапно хватаешь {npc.him} за шею, пока вторая рука шарит по {npc.his} снаряжению.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"The fuck?!",
@@ -258,7 +258,7 @@ func _run():
 			"Huh!?",
 		])+"[/say]")
 		
-		saynn("{npc.He} tries to resist but one little jab into {npc.his} side calms {npc.him} down. You manage to find some cuffs that quickly lock around {npc.his} arms, forcing them behind.")
+		saynn("{npc.He} пытается сопротивляться, но один меткий тычок {npc.his} в бок успокаивает {npc.him}. Тебе удается найти наручники, которые быстро защелкиваются на руках {npc.his}, заставляя их оказаться за спиной.")
 		
 		if(sawBefore):
 			saynn("[say=npc]"+RNG.pick([
@@ -273,34 +273,34 @@ func _run():
 				"Uncuff me right now or you will regret it.",
 			])+"[/say]")
 		
-		saynn("{npc.He} is still resisting a lot. You can just leave {npc.him} like that or have some fun.")
+		saynn("{npc.He} всё еще сильно сопротивляется. Можно просто оставить {npc.him} как есть, а можно немного развлечься.")
 		
-		addButtonWithChecks("Sex!", "Time to fuck them", "startsexasdom", [], [ButtonChecks.CanStartSex])
-		addButton("Leave", "Just leave before anyone else sees you", "endthescene")
+		addButtonWithChecks("Секс!", "Пора их оттрахать", "startsexasdom", [], [ButtonChecks.CanStartSex])
+		addButton("Уйти", "Просто уходи, пока тебя не заметили.", "endthescene")
 	
 	if(state == "if_lost"):
-		saynn("You collapse, unable to continue fighting.")
+		saynn("Ты валишься с ног, не в силах продолжать бой.")
 
 		# (default)
 		if(npcVariation != "mean"):
-			saynn("[say=npc]Attacking a guard wasn’t such a smart idea, was it?[/say]")
+			saynn("[say=npc]Нападать на охранника было не самой умной идеей, а?[/say]")
 
 		# (if mean)
 		else:
-			saynn("[say=npc]That’s what I thought, bitch.[/say]")
+			saynn("[say=npc]Так я и думала, сучка.[/say]")
 
-		saynn("{npc.He} crouches near and looks at you.")
+		saynn("{npc.He} приседает рядом и смотрит на тебя.")
 
-		saynn("[say=npc]And now it’s time to have some fun with you.[/say]")
+		saynn("[say=npc]А теперь пришло время немного развлечься с тобой.[/say]")
 
-		saynn("Since you can’t really fight back anymore, your only choice is to submit.")
+		saynn("Раз уж ты больше не можешь сопротивляться, твой единственный выход — сдаться.")
 
 		# (sex)
-		addButton("Get fucked", "Well, you lost", "startsexsubby")
+		addButton("Получи по полной", "Ну, ты проиграл(а)", "startsexsubby")
 
 
 	if(state == "if_won"):
-		saynn("You pin the defeated guard to the floor. {npc.He} doesn’t seem to struggle much.")
+		saynn("Ты прижимаешь поверженного охранника к полу. {npc.He} вроде как не особо сопротивляется.")
 
 		saynn(RNG.pick([
 			"[say=npc]What’s your plan?[/say]",
@@ -311,12 +311,12 @@ func _run():
 		addWonButton()
 		
 func addWonButton(sextext = "Sex!", sexdesc = "Time to fuck them!"):
-	addButton("Leave", "Just leave before anyone else sees you", "endthescene")
+	addButton("Уйти", "Просто уходи, пока тебя не заметили.", "endthescene")
 	addButtonWithChecks(sextext, sexdesc, "startsexasdom", [], [ButtonChecks.CanStartSex])
-	addButton("Submit to", "Let them have it their way with you", "startsexsubby")
-	addButton("Inventory", "Look at your inventory", "openinventory")
+	addButton("Подчиниться", "Позволить им делать с тобой всё, что захотят", "startsexsubby")
+	addButton("Инвентарь", "Посмотреть инвентарь", "openinventory")
 	if(GM.pc.getInventory().hasRemovableRestraints()):
-		addButton("Struggle", "Struggle out of your restraints", "strugglemenu")
+		addButton("Сопротивление", "Вырваться из оков", "strugglemenu")
 	GM.ES.triggerRun(Trigger.DefeatedDynamicNPC, [npcID])
 
 func _react(_action: String, _args):

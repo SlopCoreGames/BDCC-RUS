@@ -37,7 +37,7 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
 
 	if(state == ""):
-		saynn("You were going somewhere when your gaze catches one of the inmates posing seductively at anyone who walks past. {npc.He} catches your stare and gestures to come closer.")
+		saynn("Вы куда-то шли, как вдруг ваш взгляд зацепился за одну из заключенных, которая соблазнительно позирует каждому проходящему мимо. {npc.He} ловит ваш взгляд и жестом приглашает подойти поближе.")
 
 		# (if didn’t saw)
 		if(!sawBefore):
@@ -53,26 +53,26 @@ func _run():
 				"[say=npc]Looking for company, sweetie? I can provide. For a price~.[/say]",
 			]))
 
-		saynn("Huh, seems like {npc.he} is a prostitute. Or maybe just trying to earn some credits.")
+		saynn("Хм, похоже, {npc.he} — проститутка. Или просто пытается подзаработать кредитов.")
 
 		# (Options are Leave, How much and Attack?)
 
-		addButton("How much", "Ask the prostitute how much they cost", "how_much")
-		addButton("Attack", "You don’t wanna pay", "attack")
-		addButton("Leave", "You don’t require their services", "leave")
+		addButton("Сколько?", "Спросить у проститутки, сколько стоят её услуги", "how_much")
+		addButton("Атаковать", "Вы не хотите платить", "attack")
+		addButton("Уйти", "Вам не нужны её услуги", "leave")
 
 	if(state == "leave"):
-		saynn("You tell {npc.him} that you are not interested and just leave.")
+		saynn("Вы говорите {npc.him}, что не заинтересованы, и просто уходите.")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 	if(state == "attack"):
-		saynn("You take a strong pose and show your intimidating voice.")
+		saynn("Вы принимаете внушительную позу и говорите угрожающим голосом.")
 
-		saynn("[say=pc]Why would I pay if I can get something for free.[/say]")
+		saynn("[say=pc]Зачем мне платить, если можно получить всё бесплатно?[/say]")
 
-		saynn("{npc.name} gasps and takes one step back.")
+		saynn("{npc.name} ахает и делает шаг назад.")
 
 		# (if mean)
 		if(npcVariation == "mean"):
@@ -93,13 +93,13 @@ func _run():
 				"[say=npc]Good luck getting anything for free in this world.[/say]",
 			]))
 
-		saynn("Seems like it’s a fight.")
+		saynn("Похоже, назревает драка.")
 
 		# (fight button)
-		addButton("Fight", "Start the fight", "startfight")
+		addButton("Драться", "Начать бой", "startfight")
 
 	if(state == "how_much"):
-		saynn("You ask the inmate how much {npc.his} services cost. {npc.He} offers you a cute smile.")
+		saynn("Вы спрашиваете заключенную, сколько стоят {npc.his} услуги. {npc.He} отвечает вам милой улыбкой.")
 
 		var npc = GlobalRegistry.getCharacter(npcID)
 		var personality:Personality = npc.getPersonality()
@@ -111,10 +111,10 @@ func _run():
 				"[say=npc]"+str(amountRequested)+" credits and I will be yours to do whatever you want with me~.[/say]",
 				"[say=npc]Give me "+str(amountRequested)+" credits and I will be your slut~.[/say]",
 			]))
-			addButtonWithChecks("Agree", "Start sex as dom", "paytodom", [], [[ButtonChecks.HasCredits, amountRequested]])
-			addButton("Attack", "You don’t wanna pay", "attack")
-			addButton("Leave", "You don’t require their services", "leave")
-			addButton("Ask to dom", "Maybe they can dom", "ask_to_dom")
+			addButtonWithChecks("Согласиться", "Начать секс в роли доминанта", "paytodom", [], [[ButtonChecks.HasCredits, amountRequested]])
+			addButton("Атаковать", "Вы не хотите платить", "attack")
+			addButton("Уйти", "Вам не нужны её услуги", "leave")
+			addButton("Попросить её доминировать", "Может, она и доминантка", "ask_to_dom")
 
 		# (if npc is switch)
 		elif(subbyStat >= -0.2):
@@ -124,10 +124,10 @@ func _run():
 				"[say=npc]"+str(amountRequested)+" credits for a fuck. I can top or bottom, your choice~.[/say]",
 			]))
 			
-			addButtonWithChecks("Dom them", "Start sex as dom", "paytodom", [], [[ButtonChecks.HasCredits, amountRequested]])
-			addButtonWithChecks("Sub to them", "Start sex as sub", "paytosub", [], [[ButtonChecks.HasCredits, amountRequested]])
-			addButton("Attack", "You don’t wanna pay", "attack")
-			addButton("Leave", "You don’t require their services", "leave")
+			addButtonWithChecks("Доминировать над ней", "Начать секс в роли доминанта", "paytodom", [], [[ButtonChecks.HasCredits, amountRequested]])
+			addButtonWithChecks("Подчиниться ей", "Начать секс в роли сабмиссива", "paytosub", [], [[ButtonChecks.HasCredits, amountRequested]])
+			addButton("Атаковать", "Вы не хотите платить", "attack")
+			addButton("Уйти", "Вам не нужны её услуги", "leave")
 		# (if npcs is dom)
 		else:
 			saynn(RNG.pick([
@@ -135,10 +135,10 @@ func _run():
 				"[say=npc]I can fuck you for "+str(amountRequested)+" credits, cutie.[/say]",
 				"[say=npc]"+str(amountRequested)+" credits. I’m a dom so I decide how we will fuck, understand?[/say]",
 			]))
-			addButtonWithChecks("Agree", "Start sex as sub", "paytosub", [], [[ButtonChecks.HasCredits, amountRequested]])
-			addButton("Attack", "You don’t wanna pay", "attack")
-			addButton("Leave", "You don’t require their services", "leave")
-			addButton("Ask to sub", "Maybe they can sub", "ask_to_sub")
+			addButtonWithChecks("Согласиться", "Начать секс в роли сабмиссива", "paytosub", [], [[ButtonChecks.HasCredits, amountRequested]])
+			addButton("Атаковать", "Вы не хотите платить", "attack")
+			addButton("Уйти", "Вам не нужны её услуги", "leave")
+			addButton("Попросить её подчиниться", "Может, они могут быть сабами?", "ask_to_sub")
 
 		# (subs get options Agree, Leave, Attack, Ask to dom)
 		# (switches get options Sub to them, Dom them, Leave, Attack)
@@ -146,7 +146,7 @@ func _run():
 		# (Agree deducts the credits and starts sex)
 
 	if(state == "agree_mean_sometimes"):
-		saynn("You agree and give {npc.him} a chip with some credits. {npc.He} looks at you with a cunning smile and puts the chip away.")
+		saynn("Вы соглашаетесь и даете {npc.him} чип с кредитами. {npc.He} смотрит на вас с хитрой ухмылкой и убирает чип.")
 
 		saynn(RNG.pick([
 			"[say=npc]You know what? I changed my mind. I don’t feel like fucking.[/say]",
@@ -154,15 +154,15 @@ func _run():
 			"[say=npc]You know what? I decided that I won’t fuck with you. Thanks for the creds though.[/say]",
 		]))
 
-		saynn("{npc.He} is totally trying to scam you!")
+		saynn("{npc.He} явно пытается тебя развести!")
 
 		# (Options are Attack, Just leave)
 
-		addButton("Attack", "You can’t let them just steal your credits like that!", "attack1")
-		addButton("Just leave", "Let them have it", "just_leave")
+		addButton("Атаковать", "Нельзя позволять им вот так просто воровать твои кредиты!", "attack1")
+		addButton("Просто уйти", "Дать им жару", "just_leave")
 
 	if(state == "attack1"):
-		saynn("Enraged by the unfairness of the situation, you shove the inmate back and take a fighting stance. {npc.He} staggers back and then growls at you.")
+		saynn("Разъяренный несправедливостью ситуации, вы толкаете заключенного и встаете в боевую стойку. {npc.He} пошатывается, а затем рычит на вас.")
 
 		saynn(RNG.pick([
 			"[say=npc]Should have just left, fucker.[/say]",
@@ -170,13 +170,13 @@ func _run():
 			"[say=npc]Try me, fucker.[/say]",
 		]))
 
-		saynn("Seems like it’s a fight.")
+		saynn("Похоже, назревает драка.")
 
 		# (fight button. Winning recovers credits)
-		addButton("Fight", "Start the fight", "startfight")
+		addButton("Драться", "Начать бой", "startfight")
 
 	if(state == "just_leave"):
-		saynn("You tilt your head down and let {npc.him} keep your credits.")
+		saynn("Вы склоняете голову, позволяя {npc.him} оставить кредиты себе.")
 		
 		saynn(RNG.pick([
 			"[say=npc]Good paypig, you would have wasted all your credits on sluts anyways.[/say]",
@@ -184,12 +184,12 @@ func _run():
 		]))
 
 		# (scene ends)
-		addButton("Continue", "Huff", "endthescene")
+		addButton("Продолжить", "Пф!", "endthescene")
 
-		addButton("Ask to dom", "Ask if they can dominate you", "ask_to_dom")
+		addButton("Попросить её доминировать", "Спросить, могут ли они доминировать", "ask_to_dom")
 
 	if(state == "ask_to_dom"):
-		saynn("You ask the inmate if {npc.he} can be a dominant and fuck you.")
+		saynn("Вы спрашиваете заключенного, может ли {npc.he} быть доминантом и трахнуть вас.")
 
 		saynn(RNG.pick([
 			"[say=npc]Uhh.. I can try? You would have to pay way more though, at least "+str(amountRequested)+" credits.[/say]",
@@ -198,12 +198,12 @@ func _run():
 		]))
 
 		# (Options are Agree, Leave, Attack)
-		addButtonWithChecks("Agree", "Start sex as sub", "paytosub", [], [[ButtonChecks.HasCredits, amountRequested]])
-		addButton("Attack", "You don’t wanna pay", "attack")
-		addButton("Leave", "You don’t require their services", "leave")
+		addButtonWithChecks("Согласиться", "Начать секс в роли сабмиссива", "paytosub", [], [[ButtonChecks.HasCredits, amountRequested]])
+		addButton("Атаковать", "Вы не хотите платить", "attack")
+		addButton("Уйти", "Вам не нужны её услуги", "leave")
 
 	if(state == "ask_to_sub"):
-		saynn("You ask the inmate if {npc.he} can be subby to you and let you fuck {npc.him}.")
+		saynn("Вы спрашиваете заключенного, может ли {npc.he} быть сабом, чтобы вы могли трахнуть {npc.him}.")
 
 		saynn(RNG.pick([
 			"[say=npc]Are you serious? Me? Sub to you? I won’t do it.. Unless you have at least "+str(amountRequested)+" credits.[/say]",
@@ -212,25 +212,25 @@ func _run():
 		]))
 
 		# (Options are Agree, Leave, Attack)
-		addButtonWithChecks("Agree", "Start sex as dom", "paytodom", [], [[ButtonChecks.HasCredits, amountRequested]])
-		addButton("Attack", "You don’t wanna pay", "attack")
-		addButton("Leave", "You don’t require their services", "leave")
+		addButtonWithChecks("Согласиться", "Начать секс в роли доминанта", "paytodom", [], [[ButtonChecks.HasCredits, amountRequested]])
+		addButton("Атаковать", "Вы не хотите платить", "attack")
+		addButton("Уйти", "Вам не нужны её услуги", "leave")
 
 	if(state == "if_lost"):
-		saynn("You collapse, unable to continue fighting.")
+		saynn("Ты валишься с ног, не в силах продолжать бой.")
 
 		if(npcVariation != "mean"):
-			saynn("[say=npc]What did you think was gonna happen?[/say]")
+			saynn("[say=npc]Ты что, думал, всё будет иначе?[/say]")
 
 		else:
-			saynn("[say=npc]Know your place, bitch.[/say]")
+			saynn("[say=npc]Знай своё место, сучка.[/say]")
 
-		saynn("Since you can’t really fight {npc.him} back anymore, your only choice is to submit.")
+		saynn("Поскольку {npc.him} больше не может по-настоящему сопротивляться, у тебя остается только один выбор — подчиниться.")
 
-		addButton("Get fucked", "Well, you lost", "startsexsubby")
+		addButton("Получи по полной", "Ну, ты проиграл(а)", "startsexsubby")
 
 	if(state == "if_won"):
-		saynn("You pin the defeated inmate to the floor. {npc.He} doesn’t seem to struggle much.")
+		saynn("Ты прижимаешь побежденного заключенного к полу. {npc.He} особо не сопротивляется.")
 
 		saynn("[say=npc]"+RNG.pick([
 			"What a slut.",
@@ -241,10 +241,10 @@ func _run():
 		addWonButton()
 
 	if(state == "after_sex" || state == "after_sex_won"):
-		saynn("After the fun time ends, the inmate just leaves you alone.")
+		saynn("Когда веселье заканчивается, зэк просто оставляет тебя в покое.")
 
 		# (scene ends)
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 		
 	if(state == "after_sex"):
 		GM.ES.triggerRun(Trigger.AfterSexWithDynamicNPCThatWon, [npcID])
@@ -253,12 +253,12 @@ func _run():
 		GM.ES.triggerRun(Trigger.AfterSexWithDefeatedDynamicNPC, [npcID])
 
 func addWonButton():
-	addButton("Leave", "Just leave before anyone else sees you", "endthescene")
-	addButtonWithChecks("Sex!", "Time to fuck them!", "startsexasdom", [], [ButtonChecks.CanStartSex])
-	addButton("Submit to", "Let them have it their way with you", "startsexsubby")
-	addButton("Inventory", "Look at your inventory", "openinventory")
+	addButton("Уйти", "Просто уходи, пока тебя не заметили.", "endthescene")
+	addButtonWithChecks("Секс!", "Пора их оттрахать!", "startsexasdom", [], [ButtonChecks.CanStartSex])
+	addButton("Подчиниться", "Позволить им делать с тобой всё, что захотят", "startsexsubby")
+	addButton("Инвентарь", "Посмотреть инвентарь", "openinventory")
 	if(GM.pc.getInventory().hasRemovableRestraints()):
-		addButton("Struggle", "Struggle out of your restraints", "strugglemenu")
+		addButton("Сопротивление", "Вырваться из оков", "strugglemenu")
 	GM.ES.triggerRun(Trigger.DefeatedDynamicNPC, [npcID])
 
 func _react(_action: String, _args):

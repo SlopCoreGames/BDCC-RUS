@@ -4,7 +4,7 @@ func _init():
 	id = "KidlatQuest"
 
 func getVisibleName():
-	return "Kidlat's Shop of Wonders"
+	return "Лавка чудес Кидлата"
 
 func getProgress():
 	var result = []

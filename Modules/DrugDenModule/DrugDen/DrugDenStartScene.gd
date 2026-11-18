@@ -7,34 +7,34 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Solo, "stand")
 		
-		saynn("You're standing in front of an abandoned maintenance vent that will lead you down to the underground drug den.")
+		saynn("Ты стоишь перед заброшенным вентиляционным люком, который ведет вниз, в подземный притон.")
 		
-		saynn("You will have to leave all your items here. They will be returned to you after the run. Your stats/perks will also be temporary reset while you're there.")
+		saynn("Тебе придется оставить здесь все свои вещи. Их вернут тебе после забега. Твои статы и перки также будут временно сброшены на время пребывания там.")
 		
 		var highestLevel:int = int(GM.main.getFlag("DrugDenModule.HighestDrugDenLevel", 0))
-		sayn("Highest reached level: "+str(highestLevel))
+		sayn("Максимальный достигнутый уровень: "+str(highestLevel))
 		
 		var raidedLabsAmount:int = int(GM.main.getFlag("DrugDenModule.RaidedLabs", 0))
-		saynn("Amount of drug labs that you have looted/destroyed: "+str(raidedLabsAmount))
+		saynn("Количество разграбленных/уничтоженных нарколабораторий: "+str(raidedLabsAmount))
 		
-		saynn("Do you wanna start a new run?")
+		saynn("Хочешь начать новый забег?")
 		
 		if(GM.pc.isWearingPortalPanties()):
-			addDisabledButton("New run", "Your portal panties have bluespace tech in them which will interfere with Eliza's nanobots. Take them off first!")
+			addDisabledButton("Новый забег", "В твоих портальных трусиках есть технологии блюспейса, которые будут мешать наноботам Элизы. Сначала сними их!")
 		else:
-			addButton("New run", "Start exploring the tunnels", "do_start")
-		addButton("Cancel", "You changed your mind!", "endthescene")
+			addButton("Новый забег", "Начать исследование туннелей", "do_start")
+		addButton("Отмена", "Ты передумал!", "endthescene")
 
 	if(state == "do_start"):
 		aimCameraAndSetLocName(GM.pc.getLocation())
 		
-		saynn("You stash your belongings in the designated stash and squeeze into the maintenance vent...")
+		saynn("Ты прячешь свои вещи в специальном тайнике и протискиваешься в вентиляционную шахту...")
 		
-		saynn("A wave of harsh, chemical-laced air floods your lungs. It clings to your senses, dulling your mind and sapping your strength. This will take some adjusting..")
+		saynn("Волна резкого, пропитанного химикатами воздуха наполняет твои легкие. Она обволакивает чувства, затуманивая разум и высасывая силы. К этому придется привыкнуть...")
 		
-		saynn("Very soon you begin to lose your bearings. Every tunnel starts looking the same.. and the darkness doesn't help either. Here is hope that Eliza's nanobots will work..")
+		saynn("Вскоре ты начинаешь терять ориентацию. Все туннели становятся на одно лицо... да и темнота не помогает. Остается лишь надеяться, что наноботы Элизы справятся...")
 		
-		addButton("Continue", "Time to do this", "endthescene_markfirst")
+		addButton("Продолжить", "Пора за дело", "endthescene_markfirst")
 	
 	
 func _react(_action: String, _args):

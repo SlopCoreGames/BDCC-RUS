@@ -26,547 +26,547 @@ func _run():
 		isLusty = getModule("ArticaModule").isLusty()
 		nakedAndShy = (isNaked && !isSlut)
 		if (isNaked):
-			saynn("Seeing Artica's "+str("desperate caged up drippy cock" if isCaged else "hard drippy canine cock")+".. makes you want to do things to it!")
+			saynn("Вид @@B*@@Artica's@@F*@@ "+str("desperate caged up drippy cock" if isCaged else "hard drippy canine cock")+".. так и манит сделать с ней что-нибудь!")
 
 		else:
-			saynn("Seeing Artica's "+str("desperate caged up cock leaving wet spots on her shorts" if isCaged else "hard canine cock bulging out her shorts")+".. makes you want to do things to it!")
+			saynn("Вид @@B*@@Artica's@@F*@@ "+str("desperate caged up cock leaving wet spots on her shorts" if isCaged else "hard canine cock bulging out her shorts")+".. так и манит сделать с ней что-нибудь!")
 
-		saynn("You bite your lip while silently staring at the white fluff who is constantly fidgeting because of her body's needs. Your gazes collide..")
+		saynn("Ты прикусываешь губу, молча пялясь на эту белоснежную пушистку, которая не может унять дрожь в теле от нахлынувшей похоти. Ваши взгляды встречаются...")
 
-		saynn("[say=artica]Y-yes?..[/say]")
+		saynn("[say=artica]Д-да?..[/say]")
 
-		saynn("[say=pc]Let's fuck![/say]")
+		saynn("[say=pc]Давай трахаться![/say]")
 
-		saynn("Your hand darts out and grabs the girl's collar before yanking her in the direction of your cell.")
+		saynn("Твоя рука резко выбрасывается вперед, ты хватаешь девушку за воротник и тянешь её в сторону своей камеры.")
 
-		saynn("[say=artica]Eep!..[/say]")
+		saynn("[say=artica]Ик!..[/say]")
 
-		addButton("Cell", "Pin the fluff against your bed", "in_cell")
+		addButton("Камера", "Прижать пушистку к кровати", "in_cell")
 	if(state == "in_cell"):
 		addCharacter("artica", ["naked"])
 		playAnimation(StageScene.SexCowgirlAlt, "tease", {npc="pc", pc="artica", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		aimCameraAndSetLocName(GM.pc.getCellLocation())
 		GM.pc.setLocation(GM.pc.getCellLocation())
-		saynn("You rush to your cell, pulling the girl by her collar who can barely move her hind paws fast enough to keep up.")
+		saynn("Ты несешься к своей камере, таща за собой девчонку за воротник; она едва успевает перебирать задними лапками, чтобы не отставать.")
 
 		if (!isNaked):
-			saynn("As soon as you burst into your little private cell, your hands forcibly strip the fluff naked before pinning her against your bed.. soon followed by your naked body getting on top of her.")
+			saynn("Как только ты врываешься в свою маленькую личную камеру, твои руки грубо сдирают с пушистой шкурки одежду, прижимая её к кровати... а следом за этим твоё голое тело нависает сверху.")
 
 		else:
-			saynn("As soon as you burst into your little private cell, your hands shove and then pin the naked fluff against your bed.. soon followed by your naked body getting on top of her.")
+			saynn("Как только ты врываешься в свою маленькую личную камеру, твои руки вжимают обнаженную пушистицу в кровать... а следом за этим твоё голое тело нависает сверху.")
 
-		saynn("[say=artica]E-eep.. t-too ff-fast..[/say]")
+		saynn("[say=artica]И-ик.. с-слишком бы-стро..[/say]")
 
-		saynn("As you straddle Artica's hips.. you can just feel the heat that's radiating from her"+str(" caged up" if isCaged else "")+" cock.. the scent making your own lust grow bigger with each passing moment.")
+		saynn("Когда ты усаживаешься верхом на бедра Артики... ты кожей чувствуешь исходящий от неё жар."+str(" caged up" if isCaged else "")+" член... её запах заставляет твою собственную похоть разгораться с каждым мгновением.")
 
 		if (GM.pc.hasReachableVagina()):
-			saynn("With a sly grin, you tease "+str("her chastity cage by grinding it with your pussy slightly" if isCaged else "her hard cyan shaft by sliding your pussy along it, spreading your juices")+".")
+			saynn("С хитрой ухмылкой ты дразнишь "+str("her chastity cage by grinding it with your pussy slightly" if isCaged else "her hard cyan shaft by sliding your pussy along it, spreading your juices")+".")
 
 		else:
-			saynn("With a sly grin, you tease "+str("her chastity cage by grinding it with your ass slightly" if isCaged else "her hard cyan shaft by lowering yourself onto the tip, making it prod your tailhole")+".")
+			saynn("С хитрой ухмылкой ты дразнишь "+str("her chastity cage by grinding it with your ass slightly" if isCaged else "her hard cyan shaft by lowering yourself onto the tip, making it prod your tailhole")+".")
 
 		if (isCaged):
-			saynn("[say=artica]I-I'm.. n-not rr-really.. aah-h.. a.. top.. and m-my d-dick is l-locked a-anyway.. it's u-useless..[/say]")
+			saynn("[say=artica]Я.. я в-не то.. аах-х.. в-верхняя.. и м-мой ч-член всё равно з-заблокирован.. всё б-бесполезно..[/say]")
 
-			addDisabledButton("Pussy", "Artica is caged!")
-			addDisabledButton("Ass", "Artica is caged!")
-			addButtonWithChecks("Pick strapon", "Make Artica wear one of your strapons!", "pick_strapon", [], [[ButtonChecks.HasStrapons]])
-			addButton("Chastity grind", "Grind her cage", "chastity_ride")
+			addDisabledButton("В киску", "Артика в клетке!")
+			addDisabledButton("В задницу", "Артика в клетке!")
+			addButtonWithChecks("Выбрать страпон", "Надеть на Артику один из твоих страпонов!", "pick_strapon", [], [[ButtonChecks.HasStrapons]])
+			addButton("Трение через девственность", "Тереться о её клетку", "chastity_ride")
 		else:
-			saynn("[say=artica]I-I'm.. n-not rr-really.. aah-h.. a.. top..[/say]")
+			saynn("[say=artica]Я... я н-не то.. аах-х.. а.. топ..[/say]")
 
-			addButtonWithChecks("Pussy", "Ride that lollypop of a dick with your slit", "ride_pussy", [], [[ButtonChecks.HasReachableVagina]])
-			addButton("Ass", "Ride that lollypop of a dick with your butt", "ride_ass")
-			addDisabledButton("Chastity grind", "Artica needs to be caged up for this")
-		addButton("Never mind", "Cancel the scene", "endthescene")
+			addButtonWithChecks("В киску", "Скачи на этом леденце-хуе своей щелью", "ride_pussy", [], [[ButtonChecks.HasReachableVagina]])
+			addButton("В задницу", "Скачи на этом леденце-хуе своей задницей", "ride_ass")
+			addDisabledButton("Трение через девственность", "Для этого Артику нужно запереть в клетку")
+		addButton("Проехали", "Прервать сцену", "endthescene")
 	if(state == "chastity_ride"):
 		playAnimation(StageScene.SexCowgirlAlt, "inside", {npc="pc", pc="artica", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("[say=pc]For me it's not useless~.[/say]")
+		saynn("[say=pc]Для меня это совсем не бесполезно~.[/say]")
 
 		if (GM.pc.hasReachableVagina()):
-			saynn("With a playful smirk, you position yourself above her cage, your pussy hovering just above it. Slowly, you lower yourself onto it, letting the fluff feel the heat radiating from your slick folds.")
+			saynn("С игривой ухмылкой ты устраиваешься над её клеткой, твоя киска зависает прямо над ней. Медленно ты опускаешься на неё, позволяя пуху почувствовать жар, исходящий от твоих влажных складок.")
 
 		else:
-			saynn("With a playful smirk, you position yourself above her cage, your {pc.analStretch} tailhole hovering just above it. Slowly, you lower yourself onto it, letting the fluff feel the heat radiating from your love tunnel.")
+			saynn("С игривой ухмылкой ты устраиваешься над её клеткой, твоё {pc.analStretch} анусное отверстие зависает прямо над ней. Медленно ты опускаешься на неё, позволяя пуху почувствовать жар, исходящий от твоего любовного туннеля.")
 
-		saynn("[say=artica]Ah..[/say]")
+		saynn("[say=artica]Ах..[/say]")
 
-		saynn("[say=pc]It's fun to tease you.. when you're locked up like that..[/say]")
+		saynn("[say=pc]Так весело дразнить тебя... когда ты вот так заперта...[/say]")
 
-		saynn("Artica squirms slightly, her cock is straining against its confines, cyan tip failing to get past the firm metal cage. All the while you just start to slowly grind your "+str("pussy" if GM.pc.hasReachableVagina() else "asshole")+" against it, riding the fluff like that..")
+		saynn("Артика слегка ерзает, её член напряженно упирается в свои оковы, голубой кончик никак не может пролезть сквозь твердую металлическую клетку. А ты тем временем начинаешь медленно тереться своим "+str("pussy" if GM.pc.hasReachableVagina() else "asshole")+" о неё, оседлав этот пушистик...")
 
-		saynn("[say=artica]Hh-hahh.. ah..[/say]")
+		saynn("[say=artica]Ах-ахх.. ах..[/say]")
 
-		saynn("Even though there is no direction stimulation, Artica is moaning, her hips bucking against the bed slightly.. She is so-o-o horny..")
+		saynn("Хотя прямой стимуляции нет, Артика стонет, её бедра слегка подпрыгивают на кровати... Она та-а-ак хочет секса...")
 
-		saynn("[say=artica]P-please.. it's.. t-too much to e-endure.. ah..[/say]")
+		saynn("[say=artica]П-пожалуйста.. это.. с-слишком тяжело вы-терпеть.. ах..[/say]")
 
-		saynn("Her toes curling with anticipation, her paws grabbing onto the bed sheets.. while you just keep riding her caged cock, letting the metal tip inside your "+str("slick pussy slit.. letting your hot juices drip onto it and land on her sensitive flesh." if GM.pc.hasReachableVagina() else "needy fuckhole.. letting it spread your start slightly.")+"")
+		saynn("Её пальцы на лапах поджимаются от предвкушения, она вцепляется в простыни... пока ты продолжаешь скакать на её запертом члене, позволяя металлическому наконечнику внутри твоей "+str("slick pussy slit.. letting your hot juices drip onto it and land on her sensitive flesh." if GM.pc.hasReachableVagina() else "needy fuckhole.. letting it spread your start slightly.")+"")
 
-		saynn("[say=artica]Nhh-hh!.. P-pppleee-asee.. g-gooods..[/say]")
+		saynn("[say=artica]Ннх-х!.. П-по-о-ожалуйста.. д-даа..[/say]")
 
-		saynn("Poor fluff is melting.. while you're just smiling.")
+		saynn("Бедняжка совсем растаяла.. а ты лишь улыбаешься.")
 
-		saynn("[say=pc]If you're so eager, cum already~. Cum like the little chastity slut that you are.[/say]")
+		saynn("[say=pc]Раз уж ты так жаждешь, кончай уже~. Кончай, как маленькая девка в девственной девайсе.[/say]")
 
-		saynn("With a gasp, Artica's orgasm crashes over her, her cock pulsating in its little tight cage as streams of cum spurted out onto her own belly.. She is squirming hard under you.. desperate moans leaving her lips one after another.. while you just giggle softly.")
+		saynn("С судорожным вздохом оргазм накрывает Артику; её член пульсирует в тесной клетке, извергая струи спермы прямо ей на живот.. Она отчаянно извивается под тобой, с губ одна за другой срываются стоны.. а ты лишь тихонько хихикаешь.")
 
-		saynn("[say=artica]Ahh.. ah-h.ah..ahh..[/say]")
+		saynn("[say=artica]Ах.. ах-х.. ах.. ахх..[/say]")
 
-		saynn("[say=pc]Good girl.[/say]")
+		saynn("[say=pc]Хорошая девочка.[/say]")
 
-		saynn("As her small cute climax comes to an end, she is left panting, her body still quivering with the aftershocks of her peak.")
+		saynn("Когда её милый, короткий оргазм подходит к концу, она остается тяжело дышать, а её тело всё еще содрогается от отголосков пика.")
 
-		saynn("[say=artica]..g-gods..[/say]")
+		saynn("[say=artica]..б-боги..[/say]")
 
-		saynn("You rest together like that.. before you help her to get back to her spot.")
+		saynn("Вы так и лежите в обнимку.. прежде чем ты помогаешь ей вернуться на её место.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "pick_strapon"):
-		saynn("Which strapon do you want to put on Artica?")
+		saynn("Какой страпон ты хочешь надеть на Артику?")
 
 		addStraponButtons()
-		addButton("Back", "You changed your mind", "in_cell")
+		addButton("Назад", "Вы передумали", "in_cell")
 		if (false):
-			addButton("Nope", "You shouldn't see this", "do_put_on_strapon_on_artica")
+			addButton("Неа", "Тебе не стоит этого видеть", "do_put_on_strapon_on_artica")
 	if(state == "do_put_on_strapon_on_artica"):
 		playAnimation(StageScene.SexCowgirlAlt, "tease", {npc="pc", pc="artica", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("[say=pc]And I don't plan to unlock you~.[/say]")
+		saynn("[say=pc]И я не планирую тебя разблокировать~.[/say]")
 
-		saynn("Artica tilts her head slightly, her big puppy eyes confused. But it all becomes clear when you pull out one of your strapon harnesses..")
+		saynn("Артика слегка наклоняет голову, её большие щенячьи глазки выражают замешательство. Но всё становится ясно, когда ты достаешь один из своих ремней для страпона..")
 
 		if (GM.pc.canWearStrapon()):
-			saynn("[say=artica]A..are y-you gonna w-wear that?..[/say]")
+			saynn("[say=artica]Т-ты... т-ты реально собираешься это н-надеть?..[/say]")
 
 		else:
-			saynn("[say=artica]W-what are you gonna..[/say]")
+			saynn("[say=artica]Ч-что ты собираешься..[/say]")
 
-		saynn("Your smile shines brightly as you proceed to secure the harness around Artica's hips, strapon going over her caged cock..")
+		saynn("Твоя улыбка сияет, пока ты затягиваешь ремни гарнесса на бедрах Артики, натягивая страпон поверх её зажатого в клетку члена..")
 
-		saynn("[say=artica]B.. but..[/say]")
+		saynn("[say=artica]Н-но..[/say]")
 
-		saynn("[say=pc]Just try to imagine that it's your real cock~.[/say]")
+		saynn("[say=pc]Просто представь, что это твой настоящий член~.[/say]")
 
-		saynn("[say=artica]I.. d-do..n..t.. ah..[/say]")
+		saynn("[say=artica]Я.. н-не.. д..о..лжна.. ах..[/say]")
 
-		saynn("You spit on the rubber shaft and then firmly stroke it with your hand, spreading your saliva along the shiny surface.. which makes Artica tense up.")
+		saynn("Ты плюешь на резиновый ствол, а затем уверенно проводишь по нему рукой, размазывая слюну по блестящей поверхности.. от чего Артика напрягается.")
 
 		if (hasArticaCumInStrapon):
-			saynn("[say=pc]You don't even know the best part yet~.[/say]")
+			saynn("[say=pc]Ты еще даже не знаешь, что самое интересное~.[/say]")
 
-			saynn("[say=artica]Um?..[/say]")
+			saynn("[say=artica]М-м?..[/say]")
 
-			saynn("You have no plans to tell her what that strapon is loaded with.. And especially the origin of that load..")
+			saynn("Ты не собираешься говорить ей, чем набит этот страпон.. И уж тем более — откуда взялась эта начинка..")
 
 		elif (hasCumInStrapon):
-			saynn("[say=pc]You don't even know the best part yet~.[/say]")
+			saynn("[say=pc]Ты еще даже не знаешь, что самое интересное~.[/say]")
 
-			saynn("[say=artica]Um?..[/say]")
+			saynn("[say=artica]М-м?..[/say]")
 
-			saynn("You have no plans to tell her what that strapon is loaded with..")
+			saynn("Ты и не думаешь говорить ей, чем набит этот страпон...")
 
-		saynn("How do you want to ride her strapon now?")
+		saynn("Как именно ты хочешь оседлать страпон?")
 
-		addButtonWithChecks("Pussy", "Ride the strapon with your pussy", "do_ride_strapon_pussy", [], [[ButtonChecks.HasReachableVagina]])
-		addButton("Ass", "Ride the strapon with your ass", "do_ride_strapon_ass")
+		addButtonWithChecks("В киску", "Оседлать страпон киской", "do_ride_strapon_pussy", [], [[ButtonChecks.HasReachableVagina]])
+		addButton("В задницу", "Оседлать страпон попой", "do_ride_strapon_ass")
 	if(state == "do_ride_strapon_pussy"):
 		playAnimation(StageScene.SexCowgirlAlt, "sex", {npc="pc", pc="artica", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You lean forward and grab Artica's by the chin, making her look up at you.")
+		saynn("Ты наклоняешься вперед и берешь Артику за подбородок, заставляя её посмотреть на тебя.")
 
-		saynn("[say=pc]Shh~. Just be a good fucktoy and moan as I ride you.[/say]")
+		saynn("[say=pc]Тсс~. Просто будь хорошей секс-игрушкой и стони, пока я на тебе скачу.[/say]")
 
-		saynn("And with that, your free hand wraps its digits around Artica's rubber cock.. before guiding it as you lower yourself onto it, the pointy head kissing your "+str("wet folds and then spreading them" if !isAnal else "{pc.analStretch} anal ring and then spreading it")+".. the toy slowly sliding inside you.")
+		saynn("И с этими словами твоя свободная рука обхватывает резиновый член Артики... прежде чем направить его, пока ты медленно опускаешься на него, и острый кончик касается твоей "+str("wet folds and then spreading them" if !isAnal else "{pc.analStretch} anal ring and then spreading it")+".. игрушка медленно скользит внутрь тебя.")
 
-		saynn("[say=pc]Oh yeah..[/say]")
+		saynn("[say=pc]О да..[/say]")
 
-		saynn("Seeing that, Artica's cheek blush.. The pressure inside her chastity cage rising.")
+		saynn("При виде этого щеки Артики заливаются румянцем... давление внутри её клетки целомудрия нарастает.")
 
-		saynn("[say=artica]T-th-his is.. l-lewd.. ah-..[/say]")
+		saynn("[say=artica]Э-это... по-пошло.. ах..[/say]")
 
-		saynn("You cut her off by bringing your body down onto that nice fat shaft, letting it pierce your "+str("cunt" if !isAnal else "ass")+" and stretch the inner walls wide. Feels good.. too good.. a little cute moan escapes your lips as your muscles tense up, your "+str("slit" if !isAnal else "fuckhole")+" hugging that rubber cock firmly.")
+		saynn("Ты прерываешь её, насаживаясь на этот приятный толстый член, позволяя ему войти в твою "+str("cunt" if !isAnal else "ass")+" и растянуть внутренние стенки. Приятно.. слишком приятно.. с твоих губ срывается милый стон, когда мышцы напрягаются, а твоя "+str("slit" if !isAnal else "fuckhole")+" крепко обхватывает этот резиновый член.")
 
 		if (!isAnal):
-			saynn("[say=pc]Nice cock, Artica. Do you feel my pussy clenching around it~?[/say]")
+			saynn("[say=pc]Классный член, Артика. Чувствуешь, как моя киска сжимается вокруг него~?[/say]")
 
 		else:
-			saynn("[say=pc]Nice cock, Artica. Do you feel my butt clenching around it~?[/say]")
+			saynn("[say=pc]Классный член, Артика. Чувствуешь, как моя задница сжимается вокруг него~?[/say]")
 
-		saynn("[say=artica]..y-yea.hhah.. ah..[/say]")
+		saynn("[say=artica]..д-да.. ах..[/say]")
 
-		saynn("Artica's toes curl from pleasure as you begin to ride her, your back arching with each motion. The feeling of being full sends shivers down your spine.. while Artica is squirming below you, your "+str("wet pussy" if !isAnal else "anal star")+" sliding up and down along the toy.")
+		saynn("Пальцы ног Артики поджимаются от удовольствия, когда ты начинаешь скакать на ней, выгибая спину при каждом движении. Ощущение наполненности пробирает дрожью до самого позвоночника.. пока Артика извивается под тобой, твоя "+str("wet pussy" if !isAnal else "anal star")+" скользит вверх и вниз по игрушке.")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("That strapon is massaging your "+str("pleasure spot" if !isAnal else "prostate")+" so nicely that you feel the pressure behind your chastity cage rising fast too.. Two caged up cuties having fun together..")
+			saynn("Этот страпон массирует твою "+str("pleasure spot" if !isAnal else "prostate")+" так приятно, что ты чувствуешь, как давление за твоей клеткой целомудрия стремительно растет.. Две запертые милашки развлекаются вместе..")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("That strapon is massaging your "+str("pleasure spot" if !isAnal else "prostate")+" so nicely that you feel the pressure in your own member rising fast..")
+			saynn("Этот страпон массирует твою "+str("pleasure spot" if !isAnal else "prostate")+" так приятно, что ты чувствуешь, как давление в твоем собственном члене стремительно растет..")
 
-		addButton("Faster", "Ride her faster", "ride_strapon_pussy_faster")
+		addButton("Быстрее", "Скачи на ней быстрее", "ride_strapon_pussy_faster")
 	if(state == "ride_strapon_pussy_faster"):
 		playAnimation(StageScene.SexCowgirlAlt, "fast", {npc="pc", pc="artica", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		if (!isAnal):
-			saynn("As your passion grows, so does your pace, Artica's strapon hammering against your cervix as you slam yourself against her hips. The cage behind the strapon harness is twitching..")
+			saynn("По мере роста страсти растет и твой темп: страпон Артики молотит прямо по твоей шейке матки, пока ты вколачиваешься в её бедра. Клетка за ремнями страпона подергивается..")
 
 		else:
-			saynn("As your passion grows, so does your pace, Artica's strapon reaching deep inside your {pc.masc} ass as you slam it against her hips. The cage behind the strapon harness is twitching..")
+			saynn("По мере роста страсти растет и твой темп: страпон Артики проникает глубоко в твою {pc.masc} задницу, пока ты вколачиваешься в её бедра. Клетка за ремнями страпона подергивается..")
 
-		saynn("[say=artica]T-t-ttoo m-much!.. ahh-h.. I c-can't.. ah..ahh.. P-please.."+str(" m-miss.." if GM.pc.getGender() == Gender.Female else "")+"[/say]")
+		saynn("[say=artica]С-с-слишком м-много!.. ахх-х.. Я в-всё.. ах.. ахх.. П-пожалуйста.."+str(" m-miss.." if GM.pc.getGender() == Gender.Female else "")+"[/say]")
 
-		saynn("Wow.. the fluff is really getting into it, the visual stimulation getting her oh so horny.. She keeps moaning as you ride the rubber toy that has nothing to do with her real cock, her hips lifting instinctively to meet your movements.")
+		saynn("Вау.. пушинка реально вошла во вкус, визуальная стимуляция доводит её до безумия.. Она не перестает стонать, пока ты скачешь на резиновой игрушке, которая не имеет ничего общего с её настоящим членом, а её бедра инстинктивно вздрагивают навстречу твоим движениям..")
 
-		saynn("Your own moans synergize with hers.. You're about to cum..")
+		saynn("Твои стоны сливаются с её стонами.. Ты вот-вот кончишь..")
 
-		addButton("Cum", "Time to cum..", "ride_strapon_cum")
+		addButton("Кончить", "Пора кончать..", "ride_strapon_cum")
 	if(state == "ride_strapon_cum"):
 		playAnimation(StageScene.SexCowgirlAlt, "inside", {npc="pc", pc="artica", pcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("With each motion, Artica feels her arousal building more and more.. Until she just can't take it anymore.")
+		saynn("С каждым движением Артика чувствует, как возбуждение нарастает всё сильнее и сильнее.. Пока она просто не перестает это терпеть.")
 
-		saynn("[say=artica]Ahhhh-h-h!.. ahh-h..ah.h.ah.a.. g-godds..[/say]")
+		saynn("[say=artica]Ааааххх!.. ахх.. ах.. ах.. боже..[/say]")
 
-		saynn("Her body is convulsing with pleasure, her slick neglected pussy releasing a torrent of girlcum onto the bedsheets.. her caged up dick throbbing in its tight cage.. cumming while forced to stay in its sheath.. her wasted seed already leaking from under the strapon harness..")
+		saynn("Её тело сотрясают конвульсии удовольствия, её влажная, заброшенная киска извергает поток девичьей смазки на простыни.. её запертый в клетке член пульсирует.. она кончает, будучи вынужденной оставаться в чехле.. её растраченное семя уже просачивается из-под ремней страпона..")
 
 		if (hasArticaCumInStrapon):
-			saynn("At the same time, your own orgasm hits you like a tidal wave. Your legs shake as you take the whole rubber shaft inside you, the inner walls of your slick warm "+str("pussy squirting and" if !isAnal else "love tunnel")+" clenching rhythmically around the toy.. clenching so much that it triggers the toy to finally release its contents inside you.. [b]Artica's cum is flooding your "+str("womb" if !isAnal else "butt")+"[/b]!")
+			saynn("В то же время твой собственный оргазм накрывает тебя, словно приливная волна. Твои ноги дрожат, когда ты принимаешь в себя весь резиновый ствол, а внутренние стенки твоей влажной и теплой "+str("pussy squirting and" if !isAnal else "love tunnel")+" ритмично сжимаются вокруг игрушки.. сжимаясь так сильно, что это заставляет игрушку наконец извергнуть содержимое прямо в тебя.. [b]Сперма Артики заливает твою "+str("womb" if !isAnal else "butt")+"[/b]!")
 
 			if (GM.pc.isWearingChastityCage()):
-				saynn("Strings of {pc.cum} erupt through the little hole of your chastity cage, landing on Artica's gray belly, leaving cute patterns and marking her fur.")
+				saynn("Струи {pc.cum} прорываются сквозь маленькое отверстие твоей клетки целомудрия, попадая на серый живот Артики, оставляя милые узоры и пачкая её мех.")
 
 			elif (GM.pc.hasReachablePenis()):
-				saynn("Strings of {pc.cum} erupt from your {pc.penis} and land on Artica's gray belly and tits, leaving cute patterns and marking her fur.")
+				saynn("Струи {pc.cum} вырываются из твоего {pc.penis} и попадают на серый живот и грудь Артики, оставляя милые узоры и пачкая её мех.")
 
 			if (!isAnal):
-				saynn("[say=pc]Ah.. yeah.. g-give me all your pups, Artica.. your cock is pumping me full of your thick virile cum..[/say]")
+				saynn("[say=pc]Ах.. да.. д-дай мне всех своих щенков, Артика.. твой член наполняет меня твоей густой, мощной спермой..[/say]")
 
 			else:
-				saynn("[say=pc]Ah.. yeah.. look, Artica.. your cock is pumping me full of your thick virile cum..[/say]")
+				saynn("[say=pc]Ах.. да.. смотри, Артика.. твой член наполняет меня твоей густой, мощной спермой..[/say]")
 
-			saynn("The fluff notices some of the spunk already leaking out.. Her eyes widened.")
+			saynn("Пушистая замечает, что часть спермы уже вытекает наружу.. Её глаза расширяются.")
 
-			saynn("[say=artica]Nh-h.. b-but.. ah.. h-how.. wha..[/say]")
+			saynn("[say=artica]Нн-н.. н-но.. ах.. к-как.. ч-что..[/say]")
 
-			saynn("[say=pc]Ah.. Remember when I milked you~?[/say]")
+			saynn("[say=pc]Ах.. Помнишь, как я доила тебя~?[/say]")
 
-			saynn("Artica pants and blinks many times, her cheeks somehow blushing even more bright now.")
+			saynn("Артика тяжело дышит и часто моргает, её щеки, кажется, краснеют ещё сильнее.")
 
 		elif (hasCumInStrapon):
-			saynn("At the same time, your own orgasm hits you like a tidal wave. Your legs shake as you take the whole rubber shaft inside you, the inner walls of your slick warm "+str("pussy squirting and" if !isAnal else "love tunnel")+" clenching rhythmically around the toy.. clenching so much that it triggers the toy to finally release its contents inside you.. [b]Someone's cum is flooding your "+str("womb" if !isAnal else "butt")+"[/b]!")
+			saynn("В то же время твой собственный оргазм накрывает тебя, словно приливная волна. Твои ноги дрожат, когда ты принимаешь в себя весь резиновый ствол, а внутренние стенки твоей влажной и теплой "+str("pussy squirting and" if !isAnal else "love tunnel")+" ритмично сжимая игрушку.. сжимая так сильно, что это заставляет игрушку наконец излить всё содержимое внутрь тебя.. [b]Чья-то сперма наводняет твою "+str("womb" if !isAnal else "butt")+"[/b]!")
 
 			if (GM.pc.isWearingChastityCage()):
-				saynn("Strings of {pc.cum} erupt through the little hole of your chastity cage, landing on Artica's gray belly, leaving cute patterns and marking her fur.")
+				saynn("Струи {pc.cum} прорываются сквозь маленькое отверстие твоей клетки целомудрия, попадая на серый живот Артики, оставляя милые узоры и пачкая её мех.")
 
 			elif (GM.pc.hasReachablePenis()):
-				saynn("Strings of {pc.cum} erupt from your {pc.penis} and land on Artica's gray belly and tits, leaving cute patterns and marking her fur.")
+				saynn("Струи {pc.cum} вырываются из твоего {pc.penis} и попадают на серый живот и грудь Артики, оставляя милые узоры и пачкая её мех.")
 
 			if (!isAnal):
-				saynn("[say=pc]Ah.. yeah.. breed me, Artica.. your cock is pumping me full of thick virile cum..[/say]")
+				saynn("[say=pc]Ах.. да.. оплодотвори меня, Артика.. твой член наполняет меня густой, сильной спермой..[/say]")
 
 			else:
-				saynn("[say=pc]Ah.. yeah.. look, Artica.. your cock is pumping me full of thick virile cum..[/say]")
+				saynn("[say=pc]Ах.. да.. смотри, Артика.. твой член наполняет меня густой, сильной спермой..[/say]")
 
-			saynn("The fluff notices some of the spunk already leaking out.. Her eyes widened.")
+			saynn("Пушистая замечает, что часть спермы уже вытекает наружу.. Её глаза расширяются.")
 
-			saynn("[say=artica]Nh-h.. b-but.. ah.. h-how.. wha..[/say]")
+			saynn("[say=artica]Нн-н.. н-но.. ах.. к-как.. ч-что..[/say]")
 
-			saynn("[say=pc]Ah.. I just loaded it with someone's cum~. Not yours, don't worry~.[/say]")
+			saynn("[say=pc]Ах.. я только что набила её чьей-то спермой~. Не твоей, не волнуйся~.[/say]")
 
-			saynn("Artica pants and blinks many times, her cheeks somehow blushing even more bright now.")
+			saynn("Артика тяжело дышит и часто моргает, её щеки, кажется, краснеют ещё сильнее.")
 
 		else:
-			saynn("At the same time, your own orgasm hits you like a tidal wave. Your legs shake as you take the whole rubber shaft inside you, the inner walls of your slick warm "+str("pussy squirting and" if !isAnal else "love tunnel")+" clenching rhythmically around the toy..")
+			saynn("В то же время твой собственный оргазм накрывает тебя, словно приливная волна. Твои ноги дрожат, когда ты принимаешь в себя весь резиновый ствол, а внутренние стенки твоей влажной и теплой "+str("pussy squirting and" if !isAnal else "love tunnel")+" ритмично сжимая игрушку..")
 
 			if (GM.pc.isWearingChastityCage()):
-				saynn("Strings of {pc.cum} erupt through the little hole of your chastity cage, landing on Artica's gray belly, leaving cute patterns and marking her fur.")
+				saynn("Струи {pc.cum} прорываются сквозь маленькое отверстие твоей клетки целомудрия, попадая на серый живот Артики, оставляя милые узоры и пачкая её мех.")
 
 			elif (GM.pc.hasReachablePenis()):
-				saynn("Strings of {pc.cum} erupt from your {pc.penis} and land on Artica's gray belly and tits, leaving cute patterns and marking her fur.")
+				saynn("Струи {pc.cum} вырываются из твоего {pc.penis} и попадают на серый живот и грудь Артики, оставляя милые узоры и пачкая её мех.")
 
-			saynn("[say=pc]Ah.. yeah.. Good girl.. Got so excited just from watching me ride your cock~?[/say]")
+			saynn("[say=pc]Ах.. да.. Хорошая девочка.. Так завелась, просто глядя, как я скачу на твоём члене~?[/say]")
 
-			saynn("The fluff notices some of the spunk already leaking out.. Her eyes widened.")
+			saynn("Пушистая замечает, что часть спермы уже вытекает наружу.. Её глаза расширяются.")
 
-			saynn("[say=artica]Nh-h.. ah.. y-yea..h..hah..[/say]")
+			saynn("[say=artica]Нх-х.. ах.. д-да..х.. хах..[/say]")
 
-			saynn("[say=pc]Hah. Adorable.[/say]")
+			saynn("[say=pc]Хах. Милота какая.[/say]")
 
-			saynn("Artica pants and blinks many times, her cheeks somehow blushing even more bright now.")
+			saynn("Артика тяжело дышит и часто моргает, её щеки, кажется, краснеют ещё сильнее.")
 
-		addButton("Rest", "Just spend time together", "just_rest")
+		addButton("Отдохнуть", "Просто провести время вместе", "just_rest")
 		if (hasCumInStrapon || hasArticaCumInStrapon):
-			addButton("Sit on face", "Make Artica clean up her mess", "pussy_sit_on_face_strapon")
+			addButton("Сесть на лицо", "Заставить Артику убрать за собой", "pussy_sit_on_face_strapon")
 		else:
-			addDisabledButton("Sit on face", "Load the strapon with someone's cum.. including Artica's.. to able to do this")
+			addDisabledButton("Сесть на лицо", "Чтобы сделать это, нужно смазать страпон чьей-нибудь спермой... в том числе и спермой Артики...")
 	if(state == "ride_pussy"):
 		playAnimation(StageScene.SexCowgirlAlt, "sex", {npc="pc", pc="artica", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You lean forward and grab Artica's by the chin, making her look up at you.")
+		saynn("Ты наклоняешься вперед и берешь Артику за подбородок, заставляя её посмотреть на тебя.")
 
-		saynn("[say=pc]Shh~. Just be a good fucktoy and moan as I ride you.[/say]")
+		saynn("[say=pc]Тсс~. Просто будь хорошей секс-игрушкой и стони, пока я на тебе скачу.[/say]")
 
-		saynn("And with that, your free hand wraps its digits around Artica's canine cock.. before guiding it as you lower yourself onto it, the pointy head kissing your "+str("wet folds and then spreading them" if !isAnal else "{pc.analStretch} anal ring and then spreading it")+".. her cock slowly sliding inside you.")
+		saynn("И вот, твоя свободная рука обхватывает пальцами собачий член Артики... направляя его, пока ты медленно опускаешься на него, и острое головка касается твоей "+str("wet folds and then spreading them" if !isAnal else "{pc.analStretch} anal ring and then spreading it")+".. её член медленно скользит внутрь тебя.")
 
-		saynn("[say=pc]Oh yeah..[/say]")
+		saynn("[say=pc]О да..[/say]")
 
-		saynn("[say=artica]Ah-.. y-youre so.. w-warm.. n-not too f-fast, o-oka- eep![/say]")
+		saynn("[say=artica]Ах!.. т-ты такая.. т-теплая.. н-не слишком б-быстро, о-ока... ах![/say]")
 
-		saynn("You cut her off by bringing your body down onto that nice fat shaft, letting it pierce your "+str("cunt" if !isAnal else "ass")+" and stretch the inner walls wide. Feels good.. too good.. a little cute moan escapes your lips as your muscles tense up, your "+str("slit" if !isAnal else "fuckhole")+" hugging that cock firmly.")
+		saynn("Ты прерываешь её, насаживаясь на этот приятный толстый член, позволяя ему войти в твою "+str("cunt" if !isAnal else "ass")+" и растянуть внутренние стенки. Приятно.. слишком приятно.. с твоих губ срывается милый стон, когда мышцы напрягаются, а твоя "+str("slit" if !isAnal else "fuckhole")+" крепко обхватывая этот член.")
 
 		if (!isAnal):
-			saynn("[say=pc]Nice cock, Artica. Do you feel my pussy clenching around it~?[/say]")
+			saynn("[say=pc]Классный член, Артика. Чувствуешь, как моя киска сжимается вокруг него~?[/say]")
 
 		else:
-			saynn("[say=pc]Nice cock, Artica. Do you feel my butt clenching around it~?[/say]")
+			saynn("[say=pc]Классный член, Артика. Чувствуешь, как моя задница сжимается вокруг него~?[/say]")
 
-		saynn("[say=artica]..y-yea.hhah.. ah..[/say]")
+		saynn("[say=artica]..д-да.. ах..[/say]")
 
-		saynn("Artica's toes curl from pleasure as you begin to ride her, your back arching with each motion. The feeling of being full sends shivers down your spine.. while Artica is squirming below you, your "+str("wet pussy" if !isAnal else "anal star")+" sliding up and down her shaft.")
+		saynn("Пальцы ног Артики поджимаются от удовольствия, когда ты начинаешь скакать на ней, выгибая спину при каждом движении. Ощущение наполненности пробирает дрожью до самого позвоночника.. пока Артика извивается под тобой, твоя "+str("wet pussy" if !isAnal else "anal star")+" скользит вверх и вниз по её члену.")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Her cock is massaging your "+str("pleasure spot" if !isAnal else "prostate")+" so nicely that you feel the pressure behind your chastity cage rising fast..")
+			saynn("Её член так приятно массирует твою "+str("pleasure spot" if !isAnal else "prostate")+" что ты чувствуешь, как давление за клеткой целомудрия стремительно растёт..")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Her cock is massaging your "+str("pleasure spot" if !isAnal else "prostate")+" so nicely that you feel the pressure in your own member rising fast..")
+			saynn("Её член так приятно массирует твою "+str("pleasure spot" if !isAnal else "prostate")+" так приятно, что ты чувствуешь, как давление в твоем собственном члене стремительно растет..")
 
-		addButton("Faster", "Ride her faster", "ride_pussy_faster")
+		addButton("Быстрее", "Скачи на ней быстрее", "ride_pussy_faster")
 	if(state == "ride_pussy_faster"):
 		playAnimation(StageScene.SexCowgirlAlt, "fast", {npc="pc", pc="artica", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		if (!isAnal):
-			saynn("As your passion grows, so does your pace, Artica's cock hammering against your cervix as you slam yourself against her hips.")
+			saynn("С ростом страсти растёт и темп: член Артики молотит по твоей шейке матки, пока ты с силой вжимаешься в её бёдра.")
 
 		else:
-			saynn("As your passion grows, so does your pace, Artica's cock reaching deep inside your {pc.masc} ass as you slam it against her hips.")
+			saynn("С ростом страсти растёт и темп: член Артики проникает глубоко в твою {pc.masc} задницу, пока ты с силой вжимаешься в её бёдра.")
 
-		saynn("[say=artica]T-t-ttoo m-much!.. ahh-h.. I c-can't.. ah..ahh.. P-please.."+str(" m-miss.." if GM.pc.getGender() == Gender.Female else "")+"[/say]")
+		saynn("[say=artica]С-с-слишком м-много!.. ахх-х.. Я в-всё.. ах.. ахх.. П-пожалуйста.."+str(" m-miss.." if GM.pc.getGender() == Gender.Female else "")+"[/say]")
 
-		saynn("Artica's knot is inflating, making her cock is even more fat at the base.. so much that the orb doesn't fit inside anymore, just slapping against your "+str("needy {pc.vaginaStretch} pussy folds" if !isAnal else "needy {pc.analStretch} ring")+".. But you keep trying, stretching yourself out more bit by bit..")
+		saynn("Узел Артики раздувается, делая основание её члена ещё толще.. настолько, что шар уже не влезает целиком, а лишь хлопает по твоей "+str("needy {pc.vaginaStretch} pussy folds" if !isAnal else "needy {pc.analStretch} ring")+".. Но ты продолжаешь пытаться, шаг за шагом растягиваясь всё сильнее..")
 
-		saynn("[say=artica]I-it w-won't.. ah.. w-won't f-fit.. ah![/say]")
+		saynn("[say=artica]О-он н-не.. ах.. н-не в-влезет.. ах![/say]")
 
-		saynn("Sounds like a challenge.")
+		saynn("Звучит как вызов.")
 
-		saynn("[say=pc]I will make it.[/say]")
+		saynn("[say=pc]Я справлюсь![/say]")
 
-		addButton("Get knotted", "Force it in!", "ride_pussy_cum")
+		addButton("Принять узел", "Втисни его силой!", "ride_pussy_cum")
 	if(state == "ride_pussy_cum"):
 		playAnimation(StageScene.SexCowgirlAlt, "inside", {npc="pc", pc="artica", pcCum=true, npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Artica's big blue orb is struggling to fit inside no matter how hard you ride her..")
+		saynn("Огромная синяя сфера Артики никак не хочет пролезать внутрь, как бы усердно ты ни двигалась..")
 
-		saynn("[say=artica]I'm.. g-ggonnaa-aah.hh-hnyaaa-hh!..[/say]")
+		saynn("[say=artica]Я.. с-сейчас.. ааах-хх-хняаа-хх!..[/say]")
 
-		saynn("But.. then.. with a determined thrust of power, you suddenly manage to impale yourself on her pulsating cock almost balls deep, the swollen knot starts slipping inside you, stretching your tight entrance extremely wide to accommodate all that girth.. Then, with one final push, the knot finally gets buried fully, tying you to the squirming shaking girl..")
+		saynn("Но.. вдруг.. решительным толчком ты умудряешься почти на всю глубину вонзиться в её пульсирующий член; раздутая узел начинает проскальзывать внутрь, растягивая твой узкий вход до невероятной ширины, чтобы вместить весь этот объем.. Затем, последним рывком, узел наконец оказывается полностью внутри, намертво привязывая тебя к извивающейся и дрожащей девушке..")
 
-		saynn("[say=pc]Oh fuck~..[/say]")
+		saynn("[say=pc]Ох, блядь~..[/say]")
 
 		if (!isAnal):
-			saynn("You let out a passionate moan of ecstasy as Artica's cock throbs inside you, filling your womb to the brim with many spurts of thick, virile cum.. while your pussy is clenching around her knotted shaft, your own orgasm overwhelming your senses and making your legs tremble.")
+			saynn("Ты издаешь страстный стон экстаза, пока член Артики пульсирует внутри тебя, наполняя твою матку до краев множеством порций густой, мощной спермы.. в то время как твоя киска судорожно сжимается вокруг её раздутого ствола, а собственный оргазм захлестывает чувства, заставляя ноги дрожать.")
 
 		else:
-			saynn("You let out a passionate moan of ecstasy as Artica's cock throbs inside you, filling your butt to the brim with many spurts of thick, virile cum.. while your inner walls are clenching around her knotted shaft, your own orgasm overwhelming your senses and making your legs tremble.")
+			saynn("Ты издаешь страстный стон экстаза, пока член Артики пульсирует внутри тебя, наполняя твою задницу до краев множеством порций густой, мощной спермы.. в то время как твои внутренние стенки сжимаются вокруг её раздутого ствола, а собственный оргазм захлестывает чувства, заставляя ноги дрожать.")
 
-		saynn("[say=artica]Nnhh-h!.. ahhh-h..hh.. ahh..[/say]")
+		saynn("[say=artica]Ннхх-х!.. ааах-х..хх.. ахх..[/say]")
 
-		saynn("Oh wow, Artica is grabbing onto the bed sheets desperately while her whole body is thrashing wildly, her lusty eyes rolling up, her"+str(" own" if !isAnal else "")+" pussy releasing a shower of her girly fluids onto her thighs..")
+		saynn("Ого, Артика отчаянно вцепилась в простыни, всё её тело дико бьется в конвульсиях, а её похотливые глаза закатываются вверх, её"+str(" own" if !isAnal else "")+" киска извергает поток девичьих соков прямо на её бёдра..")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("That's not all the mess that the fluff is receiving though, there is also your caged up cock that is cumming all over her gray belly, weak strings of your seed are marking her fur.")
+			saynn("Но это ещё не всё, что пачкает пушистая малышка: твой зажатый в клетке член тоже кончает ей на серый живот, оставляя тонкие струйки семени на её меху.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("That's not all the mess that the fluff is receiving though, there is also your own cock that is cumming all over her gray belly, strong strings of your seed are marking her fur.")
+			saynn("Но это ещё не всё, что пачкает пушистая малышка: твой собственный член тоже кончает ей на серый живот, оставляя густые струйки семени на её меху.")
 
-		saynn("Both you and her are panting heavily.. the feeling of tightness doesn't ever leave anymore as you two are tied together, her full member stuck inside you..")
+		saynn("И ты, и она тяжело дышите.. чувство тесноты уже никуда не исчезает, ведь вы теперь буквально сцеплены друг с другом, а её разбухший член застрял внутри тебя..")
 
-		saynn("[say=artica]Ah-h.. hh.. s-stuck..[/say]")
+		saynn("[say=artica]Ах-х.. хх.. з-застрял..[/say]")
 
-		saynn("[say=pc]Yeah.. Let me be your cock warmer, Artica.[/say]")
+		saynn("[say=pc]Да.. Позволь мне согреть твой член, Артика.[/say]")
 
-		saynn("[say=artica]S-s.. s-sure.. ah..[/say]")
+		saynn("[say=artica]К-к.. к-конечно.. ах..[/say]")
 
-		saynn("It's not like she has a choice.")
+		saynn("Впрочем, у неё всё равно нет выбора.")
 
-		addButton("Rest", "Just spend time together until the knot deflates", "just_rest")
-		addButton("Sit on face", "Make Artica clean up her mess", "pussy_sit_on_face")
-		addButton("Knot-fucking", "(Roughness) Milk Artica's balls dry", "pussy_knot_fucking")
+		addButton("Отдохнуть", "Просто проведите время вместе, пока узел не спадёт", "just_rest")
+		addButton("Сесть на лицо", "Заставить Артику убрать за собой", "pussy_sit_on_face")
+		addButton("Секс с узлом", "(Грубо) Молоко высыхает на яйцах Артики", "pussy_knot_fucking")
 	if(state == "just_rest"):
 		if (isStraponFuck):
-			saynn("You rest together like that, with Artica's strapon still inside you. You lean forward and get comfy on Artica's"+str(" round pregnant" if getCharacter("artica").isVisiblyPregnant() else "")+" chest.. while her chastity cage is still faintly pulsing, making the rubber toy shift inside..")
+			saynn("Вы лежите вот так, и страпон Артики всё еще внутри тебя. Ты подаешься вперед, устраиваясь поудобнее на"+str(" round pregnant" if getCharacter("artica").isVisiblyPregnant() else "")+"её груди... в то время как её девственная клетка всё еще едва заметно пульсирует, заставляя резиновый фаллос шевелиться внутри...")
 
-			saynn("[say=artica]Ah..[/say]")
+			saynn("[say=artica]Ах..[/say]")
 
 			var acceptCaged = getFlag("ArticaModule.cagedAcceptStage", 0)
-			saynn("[say=pc]Poor girl. You'd wish that this was your real cock inside me?[/say]")
+			saynn("[say=pc]Бедняжка. Ты бы хотела, чтобы внутри тебя был твой настоящий член?[/say]")
 
 			if (acceptCaged <= 1):
-				saynn("[say=artica]Y-yeahh-h..[/say]")
+				saynn("[say=artica]Д-дааа...[/say]")
 
-				saynn("[say=pc]Well, too bad. I guess I gotta train your mind more~.[/say]")
+				saynn("[say=pc]Ну, жаль. Похоже, мне придется получше натренировать твой разум~.[/say]")
 
 			elif (acceptCaged <= 2):
-				saynn("[say=artica]M-maybe.. I d-don't know..[/say]")
+				saynn("[say=artica]М-может быть... Я д-даже не знаю...[/say]")
 
-				saynn("[say=pc]Well, too bad. I guess I gotta train your mind more~.[/say]")
+				saynn("[say=pc]Ну, жаль. Похоже, мне придется получше натренировать твой разум~.[/say]")
 
 			else:
-				saynn("[say=artica]N-no.. M-my c-cock.. useless.. b-better to k-keep locked..[/say]")
+				saynn("[say=artica]Н-нет... М-мой ч-член... бесполезен... л-лучше оставить его з-запертым...[/say]")
 
-				saynn("[say=pc]Aww. You're such a good girl.[/say]")
+				saynn("[say=pc]Оууу. Ты такая хорошая девочка.[/say]")
 
-			saynn("You cuddle for a bit more before you finally take off her strapon.. while keeping the cage, of course. After that, you just let Artica go.")
+			saynn("Вы еще немного обнимаетесь, прежде чем ты наконец снимаешь с нее страпон... разумеется, оставляя клетку. После этого ты просто отпускаешь Артику.")
 
-			saynn("[say=artica]T-take care..[/say]")
+			saynn("[say=artica]Береги...[/say]")
 
 		else:
-			saynn("Since there is nothing better to do, you decide to just rest together. You lean forward and get comfy on Artica's"+str(" round pregnant" if getCharacter("artica").isVisiblyPregnant() else "")+" chest.. while her knot is still faintly pulsing inside you.")
+			saynn("Раз делать больше нечего, вы решаете просто полежать вместе. Ты наклоняешься вперед и удобно устраиваешься на"+str(" round pregnant" if getCharacter("artica").isVisiblyPregnant() else "")+" груди Артики... пока ее узел всё еще едва заметно пульсирует внутри тебя.")
 
-			saynn("[say=artica]Ah..[/say]")
+			saynn("[say=artica]Ах..[/say]")
 
-			saynn("[say=pc]Don't squirm, silly. You're making yourself hard again.[/say]")
+			saynn("[say=pc]Не ерзай, глупышка. Ты снова возбуждаешься.[/say]")
 
-			saynn("[say=artica]I'm.. mmhh.. t-trying.. ah..[/say]")
+			saynn("[say=artica]Я... ммхх... п-пытаюсь... ах...[/say]")
 
-			saynn("You giggle and lick her lips.")
+			saynn("Ты хихикаешь и слизываешь капли с ее губ.")
 
-			saynn("[say=pc]Poor girl.[/say]")
+			saynn("[say=pc]Бедняжка.[/say]")
 
-			saynn("And just like that, you spend some time.. until Artica's knot deflates enough for you to escape it.. Her cum starts gushing out of your used hole instantly..")
+			saynn("И вот так вы проводите время... пока узел Артики не спадет достаточно, чтобы ты смог из него выбраться... Ее сперма тут же начинает хлестать из твоего использованного отверстия...")
 
-			saynn("You clean what you can and let Artica go.")
+			saynn("Ты вытираешь всё, что можешь, и отпускаешь Артику.")
 
-			saynn("Her legs are still shaky.")
+			saynn("Её ноги всё ещё дрожат.")
 
-			saynn("[say=artica]T-ttake care..[/say]")
+			saynn("[say=artica]Б-берегись..[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene_getbackstrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_getbackstrapon")
 	if(state == "pussy_knot_fucking"):
 		playAnimation(StageScene.SexCowgirlChoke, "fast", {npc="pc", pc="artica", pcCum=true, npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Even with her full length inside you.. you're still hungry for more..")
+		saynn("Даже когда он внутри тебя на всю длину.. тебе всё равно мало..")
 
-		saynn("[say=pc]Hold on, fucktoy.. It's gonna be a rough ride..[/say]")
+		saynn("[say=pc]Держись, секс-игрушка.. Поездка будет жесткой..[/say]")
 
-		saynn("[say=artica]Wha-.. Ahh!..[/say]")
+		saynn("[say=artica]Что?.. А-ах!..[/say]")
 
-		saynn("With determination in your eyes, you apply your full strength and pull yourself up.. forcefully yanking the fat knot out of your "+str("used pussy" if !isAnal else "stuffed ass")+", allowing the cum to start gushing out.. Poor fluff's body is tensing under you, the sudden act making her squirm hard.")
+		saynn("С решимостью в глазах, ты вкладываешь всю свою силу и рывком тянешь себя вверх.. с силой выдергивая жирный узел из твоей "+str("used pussy" if !isAnal else "stuffed ass")+", позволяя сперме хлынуть наружу.. Тело бедной пушистой зверушки напрягается под тобой, от этого резкого движения она начинает сильно извиваться.")
 
-		saynn("[say=pc]Ah..[/say]")
+		saynn("[say=pc]Ах..[/say]")
 
-		saynn("You weren't finished though.. rather than pulling away completely, you start lowering yourself onto her cock again, trying to force the knot inside.")
+		saynn("Но ты ещё не закончил.. вместо того чтобы полностью отстраниться, ты снова начинаешь опускаться на её член, пытаясь силой протолкнуть узел обратно внутрь.")
 
-		saynn("[say=artica]Wa-ait!.. n-noo-o.. d-don't.. pp-pllease!.. s-stop!.. ahh-h..[/say]")
+		saynn("[say=artica]По-подожди!.. н-не-е-ет.. п-пожалуйста!.. о-остановись!.. ах-х..[/say]")
 
-		saynn("Artica actually starts trying to pull away from you.. her paws pushing you off.. which gives you no choice..")
+		saynn("Артика на самом деле пытается отстраниться от тебя.. её лапы упираются в тебя, пытаясь оттолкнуть.. но это не оставляет тебе выбора..")
 
-		saynn("[say=pc]Nghh.. Shut up and knot me, slut.[/say]")
+		saynn("[say=pc]Нгхх.. Заткнись и завяжи меня, сучка![/say]")
 
-		saynn("You slap her hands away and get a firm grip on her throat, pushing the fluff into the bed as you force her knot inside you, the fat orb slipping past your "+str("stretched wide pussy folds" if !isAnal else "stretched wide asshole")+" yet again!")
+		saynn("Ты отшвыриваешь её руки и крепко сжимаешь её горло, вдавливая пушистую задницу в кровать и силой проталкивая её узел внутрь себя; жирная сфера снова проскальзывает сквозь твою "+str("stretched wide pussy folds" if !isAnal else "stretched wide asshole")+"!")
 
-		saynn("[say=artica]Kh-h!..[/say]")
+		saynn("[say=artica]Кх-х!..[/say]")
 
-		saynn("Your legs are shaking, your used "+str("slit" if !isAnal else "tailhole")+" clenching hard around the cock that has just came inside you.. but you don't stop, pulling yourself up again before getting yourself knotted.. again and again, each time applying less force as your "+str("pussy" if !isAnal else "anal ring")+" adapts to the knot-fucking..")
+		saynn("Твои ноги дрожат, твоя измученная "+str("slit" if !isAnal else "tailhole")+" сильно сжимается вокруг члена, который только что вошел в тебя... но ты не останавливаешься, снова приподнимаясь, чтобы принять узел... снова и снова, с каждым разом прилагая всё меньше усилий, пока твоя "+str("pussy" if !isAnal else "anal ring")+" адаптируется к траху узлом...")
 
-		saynn("Artica's resistance fades quickly, her eyes rolling up. Her lips are producing silent gasps as your hand still squeezes her throat, her body quivering underneath you..")
+		saynn("Сопротивление Артики быстро угасает, её глаза закатываются. Её губы беззвучно хватают воздух, пока твоя рука всё ещё сжимает её горло, а её тело дрожит под тобой...")
 
-		saynn("Your cell smells of hot sex.. you keep riding that knot, forcing it in and out yourself.. until Artica's cock starts throbbing inside you yet again! With full force, you bring yourself down, accepting her full length.. followed by Artica's hot virile seed spilling "+str("inside your womb" if !isAnal else "deep inside you")+" yet again, her balls tensing up wildly as you milk them dry with your stretched "+str("cunt" if !isAnal else "inner walls")+".")
+		saynn("В твоей камере пахнет горячим сексом... ты продолжаешь скакать на этом узле, сама вгоняя его туда и обратно... пока член Артики снова не начинает пульсировать внутри тебя! Всей мощью ты обрушиваешься вниз, принимая её на всю длину... вслед за чем горячее, полное мужской силы семя Артики снова выплескивается "+str("inside your womb" if !isAnal else "deep inside you")+" , а её яички дико напрягаются, пока ты выжимаешь их досуха своей растянутой "+str("cunt" if !isAnal else "inner walls")+".")
 
 		if (!isAnal):
 			if (GM.pc.isVisiblyPregnant()):
-				saynn("[say=pc]Y-yeah.. I'm pregnant already but I need more.. I need all of it..[/say]")
+				saynn("[say=pc]Д-да.. я уже беременна, но мне нужно больше.. Мне нужно всё до последней капли..[/say]")
 
 			else:
-				saynn("[say=pc]Y-yeah.. pump me full of your pups.. I need all of it..[/say]")
+				saynn("[say=pc]Д-да.. залей меня своими щенками.. Мне нужно всё..[/say]")
 
 		else:
-			saynn("[say=pc]Y-yeah.. pump me full.. I need all of it..[/say]")
+			saynn("[say=pc]Д-да.. залей меня до краев.. Мне нужно всё..[/say]")
 
-		saynn("Artica is drooling, the pleasure consumed her mind. Your own body is kinda giving up too by this point, all the muscles.. exhausted..")
+		saynn("Артика пускает слюни, наслаждение полностью захватило её разум. Твоё собственное тело к этому моменту тоже начинает сдавать, все мышцы.. измотаны..")
 
-		saynn("You find strength to yank the knot out for the last time.. before.. just flopping on top of the girl..")
+		saynn("Ты находишь в себе силы в последний раз рвануть узел наружу.. после чего.. просто валишься на девушку сверху..")
 
-		addButton("Continue", "See what happens next", "after_knotfuck")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_knotfuck")
 	if(state == "after_knotfuck"):
 		playAnimation(StageScene.Sleeping, "sleep", {npc="pc", pc="artica", bodyState={naked=true}, npcBodyState={naked=true}})
-		saynn("Hours later..")
+		saynn("Спустя несколько часов..")
 
-		saynn("Your bed is so soft.. Why isn't it always this soft?")
+		saynn("Твоя кровать такая мягкая.. Почему она не всегда такая мягкая?")
 
-		saynn("You open your eyes..")
+		saynn("Ты открываешь глаза..")
 
-		saynn("[say=artica]H-h-hai.. um..[/say]")
+		saynn("[say=artica]П-п-привет.. эм..[/say]")
 
-		saynn("Your head hurts a little.. ow.. just like your used gaping fuckhole..")
+		saynn("Голова немного побаливает.. ой.. прямо как твоё привыкшее к разрывам дышло..")
 
-		saynn("[say=artica]I.. I d-didn't k-know if I should.. w-wake you up..[/say]")
+		saynn("[say=artica]Я.. я н-не знала, стоит ли.. п-пробуждать тебя..[/say]")
 
-		saynn("So adorable..")
+		saynn("Такая милая..")
 
-		saynn("[say=artica]Do you n-need something?..[/say]")
+		saynn("[say=artica]Т-тебе что-нибудь нужно?..[/say]")
 
-		saynn("[say=pc]Y-yeah.. no.. it's okay.[/say]")
+		saynn("[say=pc]А.. нет.. всё в порядке.[/say]")
 
-		saynn("[say=artica]H-hope I was a good.. f-.. f-fucktoy..[/say]")
+		saynn("[say=artica]Н-надеюсь, я была хорошей.. с-.. с-секс-игрушкой..[/say]")
 
-		saynn("You smooch her on the lips and get up.")
+		saynn("Ты чмокаешь её в губы и встаёшь.")
 
-		saynn("[say=pc]Hah. Yeah.[/say]")
+		saynn("[say=pc]Хах. Да.[/say]")
 
-		saynn("You help her to get up too.")
+		saynn("Ты тоже помогаешь ей подняться.")
 
-		saynn("[say=artica]I will.. b-be in my spot..[/say]")
+		saynn("[say=artica]Я б-буду.. на своём месте..[/say]")
 
-		saynn("[say=pc]Uh huh.[/say]")
+		saynn("[say=pc]Угу.[/say]")
 
 		if (!isNaked):
-			saynn("Artica grabs her uniform and runs off..")
+			saynn("Артика хватает свою форму и убегает..")
 
 		else:
-			saynn("Artica blinks a few times.. and then runs off..")
+			saynn("Артика пару раз моргает... а затем убегает...")
 
-		saynn("Huh.")
+		saynn("Хм.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "pussy_sit_on_face"):
 		playAnimation(StageScene.SexFaceSitting, "sit", {pc="pc", npc="artica", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		if (!isStraponFuck):
-			saynn("You wait a bit until Artica's knot deflates enough.. before easing yourself off of it.. plop..")
+			saynn("Ты ждешь немного, пока узел Артики не спадет достаточно сильно... прежде чем плавно соскользнуть с него... шлеп...")
 
 		else:
-			saynn("You wait a bit before easing yourself off of that strapon.")
+			saynn("Ты ждешь немного, прежде чем плавно снять с себя этот страпон.")
 
-		saynn("[say=artica]Ah.. t-that was.. i-intense..[/say]")
+		saynn("[say=artica]Ах... э-это было... о-очень интенсивно...[/say]")
 
-		saynn("[say=pc]I'm not done yet~.[/say]")
+		saynn("[say=pc]Я еще не закончила~.[/say]")
 
-		saynn("Watching Artica lay underneath you, panting and squirming.. gives another.. an even more kinky idea.. With a mischievous glint in your eyes, you straddle Artica's.. face, offering your messy used "+str("pussy" if !isAnal else "asshole")+"..")
+		saynn("Вид Артики, лежащей под тобой, тяжело дышащей и извивающейся... наводит на еще одну... еще более извращенную идею... С озорным блеском в глазах ты усаживаешься верхом ей на лицо, подставляя свою грязную, использованную "+str("pussy" if !isAnal else "asshole")+"..")
 
-		saynn("[say=pc]Lick it up, Artica.[/say]")
+		saynn("[say=pc]Вылизывай, Артика.[/say]")
 
-		saynn("[say=artica]Eep..[/say]")
+		saynn("[say=artica]Ой...[/say]")
 
-		saynn("The girl hesitates, her cheeks flushing deep red.. while "+str("someone's" if (!hasArticaCumInStrapon && hasCumInStrapon) else "her own")+" seed starts dripping onto her face. Her head is trapped between your thighs.. there is nowhere she can go.")
+		saynn("Девушка колеблется, ее щеки заливаются густым румянцем... в то время как "+str("someone's" if (!hasArticaCumInStrapon && hasCumInStrapon) else "her own")+" семя начинает капать ей на лицо. Ее голова зажата между твоих бедер... ей некуда деться.")
 
-		saynn("[say=pc]Lick or I will just grind your face~.[/say]")
+		saynn("[say=pc]Лижи, иначе я просто буду втирать это тебе в лицо~.[/say]")
 
-		saynn("No matter what, she can't avoid the intoxicating scent.. it makes Artica dart her tongue out and give your "+str("pussy" if !isAnal else "anal ring")+" a careful little lick, catching some of the.. flavor.")
+		saynn("Что бы она ни делала, ей не устоять перед этим пьянящим ароматом... от него Артика невольно высовывает язык, чтобы дать тебе "+str("pussy" if !isAnal else "anal ring")+" осторожный маленький лизь, слизывая часть этого... вкуса.")
 
-		saynn("[say=pc]Mmm~..[/say]")
+		saynn("[say=pc]Ммм~..[/say]")
 
 		if (!isAnal):
-			saynn("Your little moan makes Artica taste more of that cocktail of your juices and "+str("someone's" if (!hasArticaCumInStrapon && hasCumInStrapon) else "her own")+" cum, her body trembling as her tongue delves deeper, spreading the sensitive folds and lapping it all up..")
+			saynn("Твой тихий стон заставляет Артику пробовать всё больше этого коктейля из твоих соков и "+str("someone's" if (!hasArticaCumInStrapon && hasCumInStrapon) else "her own")+" спермы; её тело дрожит, пока язык проникает всё глубже, раздвигая чувствительные складки и слизывая всё до последней капли...")
 
 		else:
-			saynn("Your little moan makes Artica taste more of "+str("someone's" if (!hasArticaCumInStrapon && hasCumInStrapon) else "her own")+" cum, her body trembling as her tongue delves deeper, rimming around the sensitive ring and lapping it all up..")
+			saynn("Твой тихий стон заставляет Артику пробовать всё больше "+str("someone's" if (!hasArticaCumInStrapon && hasCumInStrapon) else "her own")+" спермы; её тело дрожит, пока язык проникает всё глубже, обходя чувствительное кольцо и слизывая всё до последней капли...")
 
-		saynn("[say=pc]Good.. girl.. mmh-h.. little cum eater..[/say]")
+		saynn("[say=pc]Хорошая.. девочка.. ммм-х.. маленькая жрица спермы..[/say]")
 
-		saynn("Her tongue is working tirelessly, cleaning your "+str("pussy" if !isAnal else "butt")+" up and exploring you from the inside. All the while her "+str("own cock is hard again, pre dripping off the tip.." if !isStraponFuck else "caged cock is trying to get hard in its metal prison again, pre dripping off the tip..")+"")
+		saynn("Её язык работает без устали, вычищая твою "+str("pussy" if !isAnal else "butt")+" и исследуя тебя изнутри. И всё это время её "+str("own cock is hard again, pre dripping off the tip.." if !isStraponFuck else "caged cock is trying to get hard in its metal prison again, pre dripping off the tip..")+"")
 
-		saynn("[say=pc]Now swallow.[/say]")
+		saynn("[say=pc]А теперь глотай.[/say]")
 
-		saynn("Artica shows you her mouth full of "+str("someone's" if (!hasArticaCumInStrapon && hasCumInStrapon) else "her own")+" cum.. then closing it and swallowing.. before showing how empty it is now.")
+		saynn("Артика показывает тебе свой рот, полный "+str("someone's" if (!hasArticaCumInStrapon && hasCumInStrapon) else "her own")+" спермы... затем закрывает его и сглатывает... после чего демонстрирует, насколько он теперь пуст.")
 
-		saynn("[say=pc]Such a good girl.. Thank you, Artica~.[/say]")
+		saynn("[say=pc]Какая хорошая девочка.. Спасибо, Артика~.[/say]")
 
-		saynn("[say=artica]N-no.. p-problem..[/say]")
+		saynn("[say=artica]Н-нет.. б-без проблем..[/say]")
 
-		saynn("You help her to come back to sense and send her off back to her spot. While you stay and clean up a bit.")
+		saynn("Ты помогаешь ей прийти в себя и отправляешь её обратно на место. А сам остаёшься, чтобы немного прибраться.")
 
-		addButton("Continue", "See what happens next", "endthescene_getbackstrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_getbackstrapon")
 func addStraponButtons():
 	var strapons = GM.pc.getStrapons()
 	for strapon in strapons:

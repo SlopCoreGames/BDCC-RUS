@@ -7,56 +7,56 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Solo, "stand")
 		
-		saynn("Are you sure you want to give up?")
+		saynn("Ты уверен, что хочешь сдаться?")
 		
-		addButton("Give up", "Enough exploring", "do_give_up")
-		addButton("Cancel", "You changed your mind!", "endthescene")
+		addButton("Сдаться", "Хватит исследовать", "do_give_up")
+		addButton("Отмена", "Ты передумал!", "endthescene")
 
 	if(state == "do_give_up"):
 		playAnimation(StageScene.Solo, "kneel")
 
-		saynn("You decide to stop exploring this place and just wait..")
+		saynn("Ты решаешь прекратить осмотр этого места и просто подождать...")
 		
-		saynn("Eventually you get so hungry and tired that you can't keep your eyes open anymore. You collapse completely..")
+		saynn("В конце концов, голод и усталость берут своё, и ты уже не можешь держать глаза открытыми. Ты окончательно валишься с ног...")
 
-		saynn("The last thing you see is some kind of blue glow surrounding you..")
+		saynn("Последнее, что ты видишь — это какое-то синее свечение, окружающее тебя...")
 		
-		addButton("Continue", "See what happens next", "stop_run")
+		addButton("Продолжить", "Смотреть, что будет дальше", "stop_run")
 	
 	if(state == "stop_run"):
 		playAnimation(StageScene.Sleeping, "sleep")
 		addCharacter("eliza")
 		aimCameraAndSetLocName("medical_hospitalwards")
 	
-		saynn("[say=eliza]Wakey-wakey![/say]")
+		saynn("[say=eliza]Просыпайся, соня![/say]")
 		
-		saynn("You open your eyes.. and realize that you're somewhere in the medical wing.")
+		saynn("Ты открываешь глаза... и понимаешь, что находишься где-то в медблоке.")
 		
-		saynn("[say=eliza]Nanobots worked like a charm! I treated some of your injuries while you were taking a nap. Eat this muffin too, you're starving![/say]")
+		saynn("[say=eliza]Наноботы сработали на ура! Пока ты дрых, я подлатала твои раны. И вот тебе маффин, ты же голодный как волк![/say]")
 	
-		saynn("She gives you a muffin. You eat it immediately. It tastes like the best thing you have ever eaten in your life.")
+		saynn("Она протягивает тебе маффин. Ты съедаешь его мгновенно. На вкус это лучшее, что ты когда-либо пробовал в своей жизни.")
 	
-		saynn("[say=pc]Thanks..[/say]")
+		saynn("[say=pc]Спасибо..[/say]")
 		
-		saynn("She points at a drawer near your hospital bed.")
+		saynn("Она указывает на ящик тумбочки рядом с твоей больничной койкой.")
 		
-		saynn("[say=eliza]All your things are in there.[/say]")
+		saynn("[say=eliza]Все твои вещи там.[/say]")
 		
-		saynn("You get up, grab all your belongings and prepare to follow Eliza.")
+		saynn("Вы встаете, хватаете свои вещи и готовитесь следовать за Элизой.")
 		
-		addButton("Follow", "See where she will bring you", "back_to_lobby")
+		addButton("Следовать", "Посмотреть, куда она вас приведет", "back_to_lobby")
 		
 	if(state == "back_to_lobby"):
 		GM.pc.setLocation("med_lobbymain")
 		aimCameraAndSetLocName("med_lobbymain")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		
-		saynn("Eliza brings you out into the lobby.")
+		saynn("Элиза выводит вас в вестибюль.")
 		
-		saynn("[say=eliza]Take care now![/say]")
+		saynn("[say=eliza]Береги себя![/say]")
 		
-		addButton("Continue", "Time to go!", "endthescene")
-		addButton("Run back", "Rush back to the hidden drug den entrance", "endthescene_rushback")
+		addButton("Продолжить", "Пора идти!", "endthescene")
+		addButton("Бежать назад", "Спешно вернуться к скрытому входу в притон", "endthescene_rushback")
 	
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

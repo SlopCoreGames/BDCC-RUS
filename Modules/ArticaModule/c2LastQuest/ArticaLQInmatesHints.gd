@@ -9,11 +9,11 @@ func registerTriggers(es):
 func run(_triggerID, _args):
 	if(getFlag("ArticaModule.lastQuestStarted") && !getFlag("ArticaModule.LQArticaGotDreamCatcher") && !getFlag("ArticaModule.LQArticaGotBrainwashed")):
 		if(getFlag("ArticaModule.lqLastNPC", "") == _args[0]):
-			addDisabledButton("Interogate", "You already interogated them")
+			addDisabledButton("Допросить", "Вы уже их допросили")
 		else:
 			var character = getCharacter(_args[0])
 			if(character != null && character.getCharacterType() == CharacterType.Inmate):
-				addButton("Interogate", "See if they know something about Artica's dreamcatcher", "dointerogate", [_args[0]])
+				addButton("Допросить", "Выяснить, знают ли они что-нибудь о ловце снов Артики", "dointerogate", [_args[0]])
 
 func getPriority():
 	return 0

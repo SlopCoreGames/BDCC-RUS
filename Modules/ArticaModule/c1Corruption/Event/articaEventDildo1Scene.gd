@@ -24,254 +24,254 @@ func _run():
 		nakedAndShy = (isNaked && !isSlut)
 		playAnimation(StageScene.Solo, "walk", {pc="artica"})
 		aimCameraAndSetLocName("hall_mainentrance")
-		saynn("Artica seems to be heading towards the main elevator"+str(", covering her private bits with her paws at all times" if nakedAndShy else "")+".")
+		saynn("Похоже, Артика направляется к главному лифту"+str(", covering her private bits with her paws at all times" if nakedAndShy else "")+".")
 
-		saynn("You let her take this one and just wait for the next. She seems to be heading down to the lowest floor.. the one where all the mine shafts are.")
+		saynn("Ты позволяешь ей уйти, решая подождать следующего раза. Кажется, она спускается на самый нижний этаж... туда, где находятся все шахты.")
 
-		addButton("Follow", "See where Artica is heading..", "artica_near_mines")
+		addButton("Следовать", "Посмотреть, куда идет Артика...", "artica_near_mines")
 	if(state == "artica_near_mines"):
 		aimCameraAndSetLocName("mining_nearentrance")
-		saynn("As you exit the elevator, you see Artica.. standing on a catwalk.")
+		saynn("Когда ты выходишь из лифта, ты видишь Артику... она стоит на техническом мостике.")
 
 		if (isNaked):
-			saynn("Her hands seem to be traveling along her body.. digits caressing her curves. Occasionally, her paw reaches her pussy and gives it a few rubs.")
+			saynn("Её руки словно блуждают по телу... пальцы ласкают её изгибы. Время от времени её лапа тянется к киске и начинает её потирать.")
 
 		else:
-			saynn("Her hands seem to be traveling along her body.. slipping under her uniform and caressing her curves. Bravely, she tugs her shorts down a bit, exposing her pussy and giving it a few rubs.")
+			saynn("Её руки словно блуждают по телу... проскальзывая под униформу и лаская её изгибы. Набравшись смелости, она слегка спускает шорты, обнажая киску, и начинает её потирать.")
 
-		saynn("Artica stands high on her toes as her clawed digits spread her sensitive folds wide. You're standing behind her, seeing her fluffy butt mostly.. but you still notice the ropes of her juices hanging from her slit. Someone is clearly incredibly horny..")
+		saynn("Артика стоит на цыпочках, широко раздвигая когтями свои чувствительные складки. Ты стоишь позади неё и видишь в основном её пушистую задницу... но всё же замечаешь тягучие нити её соков, свисающие из щели. Кто-то явно невероятно возбужден...")
 
-		saynn("So horny that she doesn't even notice a..")
+		saynn("Настолько возбужден, что она даже не замечает...")
 
-		saynn("[say=socket]Hey there![/say]")
+		saynn("[say=socket]Эй, ты![/say]")
 
-		saynn("[say=artica]EEK![/say]")
+		saynn("[say=artica]АЙ![/say]")
 
-		addButton("Continue", "See what happens next", "sudden_socket")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sudden_socket")
 	if(state == "sudden_socket"):
 		addCharacter("socket")
 		playAnimation(StageScene.Duo, "stand", {pc="artica", npc="socket"})
-		saynn("..a half-naked fennec approaching her."+str(" Artica jumps and quickly tries to pull her shorts up.. failing at that spectacularly.." if !isNaked else " Artica jumps and quickly covers herself up..")+"")
+		saynn("..полуголая феннек приближается к ней."+str(" Artica jumps and quickly tries to pull her shorts up.. failing at that spectacularly.." if !isNaked else " Artica jumps and quickly covers herself up..")+"")
 
-		saynn("[say=socket]Name is Socket. But you can call me EEK as well if you want![/say]")
+		saynn("[say=socket]Меня зовут Сокет. Но если хочешь, можешь звать меня просто Ик![/say]")
 
-		saynn("Embarrassed Artica tries to cover her blushing cheeks with her paws.. only to realize that her digits are still coated with her juices.")
+		saynn("Смущенная Артика пытается прикрыть покрасневшие щеки лапками... но внезапно осознает, что её пальцы всё еще липкие от собственного сока.")
 
-		saynn("[say=socket]So.. What's up, um.. friendly face.[/say]")
+		saynn("[say=socket]Ну.. как оно, эмм.. дружелюбное личико?[/say]")
 
-		saynn("Artica notices the.. general lack of what one would consider clothing.. on the engineer.")
+		saynn("Артика замечает.. полное отсутствие того, что принято считать одеждой.. на инженере.")
 
 		saynn("[say=artica].. ..[/say]")
 
-		saynn("She is talking so quietly that you can't hear a word..")
+		saynn("Она говорит так тихо, что почти невозможно разобрать ни слова..")
 
-		saynn("[say=socket]Oh, that's my uniform! Always been like that.."+str(" But where is yours?" if isNaked else "")+"[/say]")
+		saynn("[say=socket]О, это моя униформа! Она всегда такая была.."+str(" But where is yours?" if isNaked else "")+"[/say]")
 
 		if (nakedAndShy):
-			saynn("Socket tilts her head while Artica eeps and covers herself again.")
+			saynn("Сокет наклоняет голову, пока Артика испуганно пищит и снова пытается прикрыться.")
 
-			saynn("[say=socket]Don't be shy! I'm not planning to have an unsolicited breeding session with you![/say]")
+			saynn("[say=socket]Да не стесняйся! Я не планирую устраивать с тобой сеанс незваного осеменения![/say]")
 
-			saynn("The poor fluff blinks while her cheeks burn red..")
+			saynn("Бедняжка-пушинка моргает, а её щеки пылают ярко-красным..")
 
 		elif (isNaked):
-			saynn("Artica shrugs and blinks a lot, now feeling a little bit more comfy when she realizes that she is not alone with all her private bits exposed..")
+			saynn("Артика пожимает плечами и часто моргает; теперь ей становится чуть уютнее, когда она понимает, что не одна, пока все её интимные места выставлены напоказ...")
 
-			saynn("[say=socket]I guess you're looking for an unsolicited breeding session. Sadly I can't provide, sorry![/say]")
+			saynn("[say=socket]Думаю, ты ищешь незапланированную сессию оплодотворения. К сожалению, я не могу её устроить, прости![/say]")
 
-			saynn("A small blush does appear on the fluff's cheeks when she hears that.")
+			saynn("Услышав это, пушистая девчонка слегка краснеет.")
 
 		saynn("[say=artica].. ..?[/say]")
 
-		saynn("[say=socket]Me? I'm a space station technician! Very new here.[/say]")
+		saynn("[say=socket]Я? Да я техник космической станции! Совсем новенькая здесь.[/say]")
 
 		saynn("[say=artica].. ..[/say]")
 
-		saynn("Socket smiles.")
+		saynn("Сокет улыбается.")
 
-		saynn("[say=socket]Oh, you and me both. Cool! I can show you the workshop if you want.[/say]")
+		saynn("[say=socket]О, мы в одной лодке. Круто! Если хочешь, могу показать тебе мастерскую.[/say]")
 
-		saynn("Artica is clearly hesitant, her legs shut, inner thighs rubbing against each other.")
+		saynn("Артика явно колеблется: она плотно сжимает ноги, потирая внутренние стороны бёдер друг о друга.")
 
-		saynn("[say=socket]Something is wrong?[/say]")
+		saynn("[say=socket]Что-то не так?[/say]")
 
 		saynn("[say=artica].. ..[/say]")
 
-		saynn("Socket raises a brow, her hand scratches under her chin.")
+		saynn("Сокет приподнимает бровь, почесывая подбородок рукой.")
 
-		saynn("[say=socket]Hm.. I'm sure I can help you! Let's go![/say]")
+		saynn("[say=socket]Хм... Уверена, я смогу тебе помочь! Пошли![/say]")
 
-		saynn("With nothing better to do, Artica decides to follow the naked engineer..")
+		saynn("Раз делать ей всё равно нечего, Артика решает проследить за голым инженером...")
 
-		addButton("Follow", "See where Artica is heading..", "artica_in_workshop")
+		addButton("Следовать", "Посмотреть, куда идет Артика...", "artica_in_workshop")
 	if(state == "artica_in_workshop"):
 		GM.pc.setLocation("eng_workshop")
 		aimCameraAndSetLocName("eng_workshop")
 		playAnimation(StageScene.Duo, "sit", {pc="artica", npc="socket", npcAction=["stand", "res://Inventory/UnriggedModels/BigWrench/BigWrench.tscn"]})
-		saynn("Socket brings Artica into the workshop. A room with multiple working benches for inmates and staff to use. Although, any and all tools seem to be locked away, requiring staff access.")
+		saynn("Сокет заводит Артику в мастерскую — помещение с несколькими верстаками, предназначенными для заключенных и персонала. Хотя все инструменты, кажется, заперты и требуют доступа сотрудников.")
 
-		saynn("Artica sits behind one of the benches while Socket just leans against it.")
+		saynn("Артика садится за один из верстаков, а Сокет просто прислоняется к нему.")
 
-		saynn("[say=socket]So, you are saying.. you can hardly focus?[/say]")
+		saynn("[say=socket]Значит, ты хочешь сказать... что тебе почти невозможно сосредоточиться?[/say]")
 
-		saynn("Artica nods slightly.")
+		saynn("Артика слегка кивает.")
 
-		saynn("[say=socket]Ask someone to rail your cunt? Did you try that?[/say]")
+		saynn("[say=socket]Попросить кого-нибудь трахнуть твою киску? Ты пробовала это?[/say]")
 
-		saynn("The fluff starts coughing, air stuck in her throat.")
+		saynn("Милашка начинает кашлять, воздух застревает у неё в горле.")
 
-		saynn("[say=socket]There is gotta be someone who you can ask to plow you raw! Make you into their cock pocket.[/say]")
+		saynn("[say=socket]Должен же быть кто-то, кого ты можешь попросить впахивать в тебя без смазки! Чтобы превратил тебя в свой карман для члена.[/say]")
 
-		saynn("The way Socket casually talks about sex makes her gather all the eyes in the room..")
-
-		saynn("[say=artica].. ..[/say]")
-
-		saynn("[say=socket]Ohh.. that's fair. Can't you just use your fingers then?[/say]")
-
-		saynn("Artica lowers her gaze low.")
+		saynn("То, как непринужденно Сокет рассуждает о сексе, заставляет всех в комнате уставиться на неё...")
 
 		saynn("[say=artica].. ..[/say]")
 
-		saynn("[say=socket]More digits?[/say]")
+		saynn("[say=socket]Ох... ну справедливо. А ты не можешь просто использовать пальцы?[/say]")
+
+		saynn("Артика низко опускает взгляд.")
+
+		saynn("[say=artica].. ..[/say]")
+
+		saynn("[say=socket]Еще пальчиков?[/say]")
 
 		saynn("[say=artica]..[/say]")
 
-		saynn("[say=socket]What about the whole fist? That's gotta be enough![/say]")
+		saynn("[say=socket]А как насчет целого кулака? Этого-то точно должно хватить![/say]")
 
-		saynn("Artica blushes and shrugs, keeping her legs closed.")
+		saynn("Артика краснеет и пожимает плечами, не размыкая ног.")
 
-		saynn("Socket scratches her chin more.")
+		saynn("Сокет еще сильнее чешет подбородок.")
 
-		saynn("[say=socket]Aw.. I don't think I have any toys for you.. I have this wrench though! Wanna use it?[/say]")
+		saynn("[say=socket]Ох.. Кажется, у меня нет для тебя игрушек.. Но есть вот этот гаечный ключ! Хочешь попробовать?[/say]")
 
-		saynn("Socket pulls out her giant industrial wrench and places it on the bench, making Artica's eyes go big.")
+		saynn("Сокет достает свой гигантский промышленный ключ и кладет его на верстак, отчего глаза Артики округляются.")
 
 		saynn("[say=artica]..[/say]")
 
-		saynn("[say=socket]No? It's way bigger than a fist! I can lend it to you for some time.[/say]")
+		saynn("[say=socket]Нет? Да он же куда больше кулака! Могу одолжить тебе его на время.[/say]")
 
 		saynn("[say=artica].. ..[/say]")
 
-		saynn("Socket sighs and puts the wrench away, returning to thinking..")
+		saynn("Сокет вздыхает и убирает ключ, снова погружаясь в раздумья..")
 
-		saynn("[say=socket]Hmm.. I have no toys.. but I have access to a 3d printer![/say]")
+		saynn("[say=socket]Хмм.. Игрушек нет.. зато у меня есть доступ к 3D-принтеру![/say]")
 
-		saynn("Artica's eyes sparkling, full of hope, her toes curling, tail wagging.")
+		saynn("Глаза Артикики сияют надеждой, пальцы ног поджимаются, а хвост так и виляет.")
 
-		saynn("[say=socket]..but I don't have any models.. I mean I do, but you probably can't have much fun with a support girder piece..[/say]")
+		saynn("[say=socket]...но у меня нет никаких моделей... ну, то есть есть, но вряд ли можно весело провести время с куском опорной балки...[/say]")
 
-		saynn("Artica sighs..")
+		saynn("Артика вздыхает...")
 
-		saynn("[say=socket]I might have an idea..[/say]")
+		saynn("[say=socket]У меня есть одна идея...[/say]")
 
 		if (isCaged):
 			if (isNaked):
-				saynn("Socket eyes the naked girl out.. and notices her caged cock. Socket points straight at it, making Artica spread her legs and gasp.")
+				saynn("Сокет окидывает взглядом обнаженную девушку... и замечает её зажатый в клетке член. Сокет указывает прямо на него, заставляя Артику широко расставить ноги и ахнуть.")
 
 			else:
-				saynn("Socket eyes the girl out.. and notices her bulging shorts. She quickly pulls down her shorts, exposing a caged cock, making the fluff gasp and squirm.")
+				saynn("Сокет окидывает взглядом девушку... и замечает её раздутые шорты. Она быстро стягивает шорты, обнажая зажатый в клетке член, отчего пушистая замирает и начинает ерзать.")
 
-			saynn("[say=socket]This! This could be a model![/say]")
+			saynn("[say=socket]Вот это! Вот это может сойти за модель![/say]")
 
 			saynn("[say=artica].. ..[/say]")
 
-			saynn("[say=socket]The cage? Pff, easy. You have a condom wrapper by any chance?[/say]")
+			saynn("[say=socket]Клетка? Пфф, пустяки. У тебя случайно нет обертки от презерватива?[/say]")
 
-			saynn(""+str("Naked " if isNaked else "")+"Artica tilts her head at that question.")
+			saynn(""+str("Naked " if isNaked else "")+"Артика в ответ на этот вопрос склоняет голову набок.")
 
-			saynn("[say=socket]No? I could use my wrench then.. Hold still![/say]")
+			saynn("[say=socket]Нет? Тогда я воспользуюсь своим гаечным ключом... Не дергайся![/say]")
 
-			saynn("Artica eeps and offers her claws instead.")
+			saynn("Артика пискнула и вместо этого протянула свои когти.")
 
-			saynn("[say=socket]Claws?.. Let's try.[/say]")
+			saynn("[say=socket]Когти?.. Давай попробуем.[/say]")
 
-			saynn("Socket grabs Artica's paw and guides one of her claws under the cage's lock, somewhere very specific. She shakes it a little.. until something inside the cage clicks!")
+			saynn("Сокет хватает Артику за лапу и просовывает один из её когтей под замок клетки, в очень определенное место. Она слегка шевелит им... пока внутри клетки что-то не щелкает!")
 
-			saynn("[say=socket]There you go![/say]")
+			saynn("[say=socket]Есть![/say]")
 
-			saynn("Artica gasps.")
+			saynn("Артика ахает.")
 
 			saynn("[say=artica].. .. ..[/say]")
 
-			saynn("[say=socket]Oh, you were locked for a reason? It's okay, it's just temporary! To make a digital mold! One second![/say]")
+			saynn("[say=socket]Ой, тебя заперли не просто так? Ничего страшного, это ненадолго! Чтобы сделать цифровую форму! Секундочку![/say]")
 
 		else:
 			if (isNaked):
-				saynn("Socket eyes the naked girl out.. and notices her hard cock. Socket points straight at it, making Artica spread her legs and gasp.")
+				saynn("Сокет разглядывает обнаженную девушку... и замечает её твердый член. Сокет тычет прямо в него пальцем, заставляя Артику широко расставить ноги и ахнуть.")
 
 			else:
-				saynn("Socket eyes the girl out.. and notices her bulging shorts. She quickly pulls down her shorts, exposing a hard canine cock, making the fluff gasp and squirm.")
+				saynn("Сокет разглядывает девушку... и замечает бугор под шортами. Она быстро стягивает шорты, обнажая твердый собачий член, отчего пушистая замирает и начинает ерзать.")
 
-			saynn("[say=socket]This! This could be a model![/say]")
+			saynn("[say=socket]Вот это! Вот это может сойти за модель![/say]")
 
 			saynn("[say=artica].. ..[/say]")
 
-			saynn("Socket smiles.")
+			saynn("Сокет улыбается.")
 
-			saynn("[say=socket]Trust me, it will work! I just need a digital mold. Stand up and give me a second![/say]")
+			saynn("[say=socket]Поверь мне, всё получится! Мне просто нужна цифровая форма. Встань и дай мне секунду![/say]")
 
-		addButton("Continue", "See what happens next", "socket_takes_digital_mold")
+		addButton("Продолжить", "Смотреть, что будет дальше", "socket_takes_digital_mold")
 	if(state == "socket_takes_digital_mold"):
 		playAnimation(StageScene.Duo, "stand", {pc="artica", npc="socket", bodyState={naked=true,hard=true}, npcAction="kneel"})
 		if (isCaged):
-			saynn("Socket grabs her datapad and kneels before Artica. She carefully takes the unlocked cage off, causing that juicy canine cock to instantly spring out hard, pre leaking from its tip..")
+			saynn("Сокет хватает датапад и опускается на колени перед Артикой. Она осторожно снимает отпертую клетку, из-за чего сочный собачий член мгновенно выпрыгивает, уже твердый и с каплей предэякулята на кончике...")
 
-			saynn("[say=socket]Fluids might interfere with it![/say]")
+			saynn("[say=socket]Жидкость может помешать работе![/say]")
 
-			saynn("Socket puts her hand on Artica's cock and slides her palm along its veiny texture, capturing any precum and making the girl squirm oh so much, her member quickly growing even harder, her knot inflating with blood.")
+			saynn("Сокет кладет руку на член Артики и ведет ладонью вдоль его вздутых вен, собирая предэякулят, отчего девушка начинает неистово ерзать, а её член становится еще тверже, а узел раздувается от прилива крови.")
 
-			saynn("[say=socket]Oh, perfect![/say]")
+			saynn("[say=socket]О, идеально![/say]")
 
-			saynn("Socket runs some app and proceeds to orbit her datapad around Artica's twitching hard cock, seemingly trying to record it from every angle.")
+			saynn("Сокет запускает какое-то приложение и начинает водить датападом вокруг дергающегося твердого члена Артики, словно пытаясь заснять его со всех ракурсов.")
 
-			saynn("After she is finished doing that, Socket quickly puts the cage back on that hard cock, forcing it into its sheath while Artica is moaning a lot.. click..")
+			saynn("Закончив с этим, Сокет быстро надевает клетку обратно на твердый член, с силой заталкивая его в чехол, пока Артика громко стонет... щелк...")
 
-			saynn("[say=socket]There you go, just like it was![/say]")
+			saynn("[say=socket]Вот так, всё как было![/say]")
 
-			saynn("Artica looks at her claws.. and hums.. before bringing them into her mouth and carefully trimming them short with her teeth. Huh.")
+			saynn("Артика смотрит на свои когти... и напевает под нос... прежде чем засунуть их в рот и аккуратно подгрызть, укорачивая их зубами. Хм.")
 
 		else:
-			saynn("Socket grabs her datapad and kneels before Artica. Feeling a warm breath near her crotch is making Artica's cock quickly get fully hard, pre leaking from its tip..")
+			saynn("Сокет хватает датапад и опускается на колени перед Артикой. От ощущения теплого дыхания у своего паха член Артики мгновенно становится полностью твердым, а с кончика начинает сочиться смазка...")
 
-			saynn("[say=socket]Fluids might interfere with it![/say]")
+			saynn("[say=socket]Жидкость может помешать работе![/say]")
 
-			saynn("Socket puts her hand on Artica's cock and slides her palm along its veiny texture, capturing any precum and making the girl squirm oh so much, her member quickly growing even harder, her knot inflating with blood.")
+			saynn("Сокет кладет руку на член Артики и ведет ладонью вдоль его вздутых вен, собирая предэякулят, отчего девушка начинает неистово ерзать, а её член становится еще тверже, а узел раздувается от прилива крови.")
 
-			saynn("[say=socket]Oh, perfect![/say]")
+			saynn("[say=socket]О, идеально![/say]")
 
-			saynn("Socket runs some app and proceeds to orbit her datapad around Artica's twitching hard cock, seemingly trying to record it from every angle.")
+			saynn("Сокет запускает какое-то приложение и начинает водить датападом вокруг дергающегося твердого члена Артики, словно пытаясь заснять его со всех ракурсов.")
 
-		saynn("After doing the required steps for the photogrammetry, Socket projects the final model of Artica's cock and balls on her datapad, causing a spinning hologram to appear and start hovering above the screen. The resolution seems high enough to see every crease.. every vein..")
+		saynn("Завершив все необходимые этапы фотограмметрии, Сокет выводит финальную модель члена и яичек Артики на её датапад; над экраном появляется и начинает вращаться голограмма. Разрешение кажется достаточно высоким, чтобы разглядеть каждую складочку... каждую венку...")
 
-		saynn("[say=socket]Look, pretty cool, uh?[/say]")
+		saynn("[say=socket]Смотри, довольно круто, а?[/say]")
 
-		saynn("Artica licks her lips, her mouth watering.")
+		saynn("Артика облизывает губы, у неё текут слюнки.")
 
-		saynn("[say=socket]It's one to one, the exact dimensions are recorded too![/say]")
+		saynn("[say=socket]Масштаб один к одному, и все точные размеры записаны![/say]")
 
 		saynn("[say=artica].. .. ..?..[/say]")
 
-		saynn("Socket blinks while looking at Artica.")
+		saynn("Сокет моргает, не отрывая взгляда от Артики.")
 
-		saynn("[say=socket]I mean.. Yeah, I can.[/say]")
+		saynn("[say=socket]В смысле... Да, могу.[/say]")
 
-		saynn("Socket presses a button and the projected hologram becomes bigger..")
+		saynn("Сокет нажимает кнопку, и спроецированная голограмма увеличивается...")
 
-		saynn("[say=socket]Like this?[/say]")
-
-		saynn("[say=artica]..[/say]")
-
-		saynn("[say=socket]Haha, sure![/say]")
-
-		saynn("Socket presses that button again and the hologram of the cock gets scaled up again, now being at least 50% bigger than it was originally..")
+		saynn("[say=socket]Вот так?[/say]")
 
 		saynn("[say=artica]..[/say]")
 
-		saynn("[say=socket]Oki doki! I will get the process started and get it delivered to your cell! In a discrete package of course.[/say]")
+		saynn("[say=socket]Ха-ха, конечно![/say]")
 
-		saynn("Artica nods and steps away. Her lust isn't satisfied today.. but she seems to be mostly content about it. You might have to ignite the fire inside her again to push her further..")
+		saynn("Сокет снова нажимает на кнопку, и голограмма члена масштабируется ещё сильнее — теперь она как минимум на 50% больше, чем была изначально...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		saynn("[say=artica]..[/say]")
+
+		saynn("[say=socket]Оки-доки! Я запущу процесс и доставлю всё прямо к тебе в камеру! Разумеется, в максимально незаметной упаковке.[/say]")
+
+		saynn("Артика кивает и отходит. Её похоть сегодня не утолена... но, кажется, она вполне довольна собой. Возможно, тебе придётся снова раздуть пламя внутри неё, чтобы зайти ещё дальше...")
+
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

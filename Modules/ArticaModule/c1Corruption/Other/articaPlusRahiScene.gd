@@ -32,874 +32,874 @@ func _run():
 		isSlave = getModule("RahiModule").isInSlavery()
 		isFullSlave = getModule("RahiModule").canTalkInFirstPerson()
 		playAnimation(StageScene.Duo, "stand", {npc="rahi"})
-		saynn("You tell Artica to head into her cell.. while you go and grab Rahi. You get a feeling that pairing the shy kitty and the shy fluff might lead to something interesting.")
+		saynn("Ты говоришь Артике идти в камеру... а сам идешь за Рахи. У тебя есть предчувствие, что союз этой застенчивой кошечки и той пушистой скромницы может привести к чему-то очень интересному.")
 
-		saynn("[say=rahi]Hang around with Artica? She is fun.. Sounds good.. meow..[/say]")
+		saynn("[say=rahi]Потусоваться с Артикой? С ней весело... Звучит неплохо... мяу...[/say]")
 
-		saynn("It doesn't take much effort to convince the kitty. So you bring her into Artica's cell too.")
+		saynn("Убедить кошечку не составляет труда. Так что ты приводишь её в камеру к Артике.")
 
-		addButton("Continue", "See what happens next", "in_cell")
+		addButton("Продолжить", "Смотреть, что будет дальше", "in_cell")
 	if(state == "in_cell"):
 		playAnimation(StageScene.Duo, "stand", {npc="artica", pc="rahi"})
 		aimCameraAndSetLocName("cellblock_lilac_nearcell")
 		GM.pc.setLocation("cellblock_lilac_nearcell")
-		saynn("Kitty waves to the"+str(" naked" if isNaked else "")+" lilac girl.")
+		saynn("Кошечка машет рукой"+str(" naked" if isNaked else "")+"сиреневой девушке.")
 
-		saynn("[say=rahi]Hello-o..[/say]")
+		saynn("[say=rahi]Приве-е-ет...[/say]")
 
-		saynn("Artica waves back. They're standing near each other.. while you just go sit on a chair, hoping to see a great show.")
-
-		if (isFullSlave):
-			saynn("[say=artica]Heyas.. Rahi..[/say]")
-
-		else:
-			saynn("[say=artica]Heyas.. Kitty..[/say]")
-
-		saynn("Rahi sees how you just sat in the corner with your legs crossed.. and hums, her sly kitty eyes already begin to make the fluff blush.")
-
-		saynn("[say=artica]What is t-this about..[/say]")
-
-		saynn("[say=rahi]Hmm..[/say]")
-
-		saynn("Artica tilts her head.. while Rahi makes a single step towards her.")
+		saynn("Артика машет ей в ответ. Они стоят рядом... а ты просто усаживаешься на стул, надеясь увидеть отличное шоу.")
 
 		if (isFullSlave):
-			saynn("[say=rahi]I think.. {rahiMaster} here wants to see something.. meow..[/say]")
+			saynn("[say=artica]Приветики... Рахи...[/say]")
 
 		else:
-			saynn("[say=rahi]She thinks.. {pc.name} wants to see something.. meow..[/say]")
+			saynn("[say=artica]Приветики... Кошечка...[/say]")
 
-		saynn("Rahi smiles and looks at you for confirmation. Artica looks at you too, unsure what to do..")
+		saynn("Рахи видит, как ты просто уселся в углу, закинув ногу на ногу... и напевает под нос, а её хитрые кошачьи глазки уже заставляют пушистую девушку краснеть.")
 
-		saynn("What do you want them to do?")
+		saynn("[say=artica]О чем это... о чем это вообще..[/say]")
 
-		addButton("Play", "Let them play together and figure out who is the biggest slut", "do_play")
+		saynn("[say=rahi]Хмм..[/say]")
+
+		saynn("Артика наклоняет голову.. в то время как Рахи делает шаг к ней.")
+
+		if (isFullSlave):
+			saynn("[say=rahi]Думаю.. {rahiMaster} хочет что-то увидеть.. мяу..[/say]")
+
+		else:
+			saynn("[say=rahi]Она думает.. что {pc.name} хочет что-то увидеть.. мяу..[/say]")
+
+		saynn("Рахи улыбается и ищет твоего подтверждения взглядом. Артика тоже смотрит на тебя, не зная, что делать..")
+
+		saynn("Что ты хочешь, чтобы они сделали?")
+
+		addButton("Воспроизвести", "Дать им поиграть вместе и выяснить, кто из них самая большая шлюха", "do_play")
 		if (getFlag("ArticaModule.rewardNotFirst", false)):
-			addButton("Go full out", "(Sex) Let Rahi bully Artica into full submission", "do_fullout")
-			addButton("Train sex!", "Have a threesome with Artica in the middle", "do_trainsex")
+			addButton("Пойти ва-банк", "(Секс) Позволить Рахи довести Артику до полного подчинения через доминирование", "do_fullout")
+			addButton("Тренировочный секс!", "Устроить тройничок с Артикой посередине", "do_trainsex")
 		else:
-			addDisabledButton("Go full out", "This would be too much for the first time..")
-			addDisabledButton("Train sex!", "This would be way too much for the first time..")
+			addDisabledButton("Пойти ва-банк", "Для первого раза это будет слишком..")
+			addDisabledButton("Тренировочный секс!", "Для первого раза это будет чересчур..")
 	if(state == "do_trainsex"):
 		playAnimation(StageScene.Duo, "stand", {npc="artica", npcBodyState={naked=true,hard=true}})
 		addCharacter("artica", ["naked"])
-		saynn("Your gaze sparks with lust.")
+		saynn("Твой взгляд искрится похотью.")
 
-		saynn("[say=pc]You know.. I'm actually thinking of double-teaming a certain someone together.[/say]")
+		saynn("[say=pc]Знаешь.. я тут подумываю о том, чтобы нам вдвоем наброситься на одну особу.[/say]")
 
-		saynn("[say=rahi]Ohh.. Sounds good..[/say]")
+		saynn("[say=rahi]Ооо.. Звучит неплохо..[/say]")
 
-		saynn("You get up from the chair and stand in another corner of the room, making it so Artica is now between you and Rahi.. Both your gazes are staring at the slightly confused fluff..")
+		saynn("Ты встаешь со стула и переходишь в другой угол комнаты, так что Артика оказывается зажата между тобой и Рахи.. Оба ваших взгляда устремлены на слегка растерянную пушистую девчонку..")
 
-		saynn("Artica looks around while you just smile. You see how Rahi is bracing, trying to focus on something.")
+		saynn("Артика оглядывается по сторонам, пока ты просто улыбаешься. Ты видишь, как Рахи напряглась, пытаясь на чем-то сосредоточиться.")
 
-		saynn("[say=artica]Um.. I.. eek![/say]")
+		saynn("[say=artica]Ой... я... ой![/say]")
 
-		saynn("Suddenly Rahi steps closer and puts her paws all over the girl,"+str(" forcibly undressing her and then" if !isNaked else "")+" bravely groping and caressing her butt. Artica is moaning and acting incredibly subby while kitty's paws already reach between the herm's legs, finding the cute wet slit and"+str(" the caged up sheath" if isCaged else " the sheath that her cyan member already peeking from")+"..")
+		saynn("Внезапно Рахи делает шаг ближе и облепляет девушку своими лапками,"+str(" forcibly undressing her and then" if !isNaked else "")+"смело ощупывая и лаская её задницу. Артика стонет и ведет себя невероятно покорно, пока лапки кошечки уже пробираются между ног германии, нащупывая милую влажную щелочку и"+str(" the caged up sheath" if isCaged else " the sheath that her cyan member already peeking from")+"..")
 
 		if (isCaged):
-			saynn("[say=rahi]That is cute.. Luckily, we won't have to remove the cage..[/say]")
+			saynn("[say=rahi]Как мило... К счастью, нам не придется снимать клетку..[/say]")
 
-			saynn("[say=artica]Oh?..[/say]")
+			saynn("[say=artica]О?..[/say]")
 
-			saynn("Rahi pulls out a strapon harness.. that she has from somewhere.. and quickly secures it around Artica's waist, putting a rubber cock over her caged one and making sure her slit is still available..")
+			saynn("Рахи достает страпон-портупею... неведомо откуда взятую... и быстро закрепляет её на талии Артики, надевая резиновый член поверх её клетки и следя за тем, чтобы щелочка оставалась доступной..")
 
-			saynn("[say=rahi]That is your new cock, stupid slut.. You are now our bitch..[/say]")
+			saynn("[say=rahi]Это твой новый член, тупая шлюшка.. Теперь ты наша сучка..[/say]")
 
 		else:
-			saynn("[say=rahi]Shut up, stupid slut.. You are now our bitch..[/say]")
+			saynn("[say=rahi]Заткнись, тупая шлюшка.. Теперь ты наша сучка..[/say]")
 
-		saynn("Rahi is certainly.. very mouthy.. But it seems to work on Artica, the intimidated fluff is shivering.. but also dripping juices all over the floor, the scent of an aroused slutty girl hits your senses..")
+		saynn("Рахи, конечно... очень остра на язык.. Но, похоже, это действует на Артику: запуганная пушинка дрожит, но при этом заливает всё вокруг соками, а запах возбужденной девчачьей шлюхи бьет вам в нос..")
 
-		saynn("[say=rahi]You're such a cute little bitch, aren't you?[/say]")
+		saynn("[say=rahi]Ты такая милая маленькая сучка, правда?[/say]")
 
-		saynn("Rahi tries to sound dommy, her voice low and husky. She keeps rubbing Artica's"+str(" new rubber" if isCaged else "")+" cock and pussy with slow strokes and rubs, feeling"+str(" her shaft swell and" if !isCaged else " her strapon harness twitching above the cage and")+" her pussy getting more slick under her touch. Artica shivers, her breath hitching..")
+		saynn("Рахи старается звучать доминантно, её голос низкий и хриплый. Она продолжает тереть Артику..."+str(" new rubber" if isCaged else "")+"член и киску медленными движениями и трением, чувствуя,"+str(" her shaft swell and" if !isCaged else " her strapon harness twitching above the cage and")+"как её киска становится всё более влажной под её ласками. Артика вздрагивает, её дыхание сбивается...")
 
-		saynn("[say=artica]R-Rahi..[/say]")
+		saynn("[say=artica]Р-Рахи..[/say]")
 
 		if (isFullSlave):
-			saynn("[say=rahi]Miss Rahi. Call me Miss Rahi or I will.. kick your balls![/say]")
+			saynn("[say=rahi]Мисс Рахи. Зови меня мисс Рахи, иначе я.. отпинаю твои яйца![/say]")
 
 		else:
-			saynn("[say=rahi]Miss Rahi. Call her Miss Rahi or she will.. kick your balls![/say]")
+			saynn("[say=rahi]Мисс Рахи. Зови её мисс Рахи, иначе она.. отпинает твои яйца![/say]")
 
-		saynn("[say=artica]M-Miss Rahi.. ah..[/say]")
+		saynn("[say=artica]М-мисс Рахи.. ах..[/say]")
 
-		saynn("The fluff is whimpering as Rahi squeezes her balls, the mix of fear and arousal making her tremble.")
+		saynn("Пушинка скулит, пока Рахи сжимает её яйца; смесь страха и возбуждения заставляет её дрожать.")
 
-		saynn("Artica is gonna be in the middle of a sex train.. But which spot do you want to take?")
+		saynn("Артика окажется в самом центре секс-поезда... Но какое место займешь ты?")
 
 		if (GM.pc.hasReachableVagina()):
-			addButton("First", "Be the one who is getting fucked by Artica. Rahi will be fucking Artica with a strapon while Artica fucks your pussy", "train_be_first")
+			addButton("Первым", "Стать тем, кого трахает Артика. Рахи будет трахать Артику страпоном, пока Артика трахает твою киску", "train_be_first")
 		else:
-			addButton("First", "Be the one who is getting fucked by Artica. Rahi will be fucking Artica with a strapon while Artica fucks your ass", "train_be_first")
+			addButton("Первым", "Стань тем, кого трахает Артика. Рахи будет трахать Артику страпоном, пока Артика трахает твою задницу", "train_be_first")
 		if (GM.pc.hasReachablePenis() || (GM.pc.hasStrapons() && GM.pc.canWearStrapon())):
-			addButton("Last", "Be the one who is fucking Artica. Rahi will be getting fucked by Artica while you fuck Artica", "train_be_last")
+			addButton("Последний", "Стань тем, кто трахает Артику. Рахи будет трахает Артику, пока ты трахаешь Артику", "train_be_last")
 		else:
-			addDisabledButton("Last", "You don't have any strapons to fuck Artica while she fucks Rahi..")
+			addDisabledButton("Последний", "У тебя нет страпона, чтобы трахать Артику, пока она трахает Рахи...")
 	if(state == "be_last_pickstrapon"):
-		saynn("Pick which strapon you want to use to fuck Artica.")
+		saynn("Выберите страпон, которым хотите трахнуть Артику.")
 
 		addStraponButtons("be_last_addstrapon_pc")
 		if (false):
-			addButton("Nope", "You shouldn't see this", "be_last_addstrapon_pc")
+			addButton("Неа", "Тебе не стоит этого видеть", "be_last_addstrapon_pc")
 	if(state == "train_be_last"):
 		playAnimation(StageScene.SexTrain, "tease", {pc="artica", npc="rahi", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}, npc2="pc", npc2BodyState={naked=true,hard=true}})
-		saynn("You twirl your finger while looking at Rahi.. and she understands everything.")
+		saynn("Ты крутишь пальцем, глядя на Рахи... и она всё понимает.")
 
-		saynn("[say=rahi]Kneel![/say]")
+		saynn("[say=rahi]На колени![/say]")
 
 		if (!pcStrapon):
-			saynn("Together, you forcibly bring Artica onto her knees. You position yourself behind, your hands gripping Artica's hips, keeping her still.")
+			saynn("Вместе вы насильно ставите Артику на колени. Ты устраиваешься сзади, крепко сжимая бедра Артики руками, чтобы она не двигалась.")
 
 		else:
-			saynn("Together, you forcibly bring Artica onto her knees. You quickly secure a strapon harness around your waist and position yourself behind, your hands gripping Artica's hips, keeping her still.")
+			saynn("Вместе вы насильно ставите Артику на колени. Ты быстро закрепляешь страпон на талии и устраиваешься сзади, крепко сжимая бедра Артики руками, чтобы она не двигалась.")
 
-		saynn("Rahi grabs Artica's chin.. and makes the fluff look up at her.. as she undresses, dropping her shorts and shirt, exposing her {rahi.breasts} and cute pink pussy.. Artica gulps audibly.")
+		saynn("Рахи хватает Артику за подбородок... и заставляет эту пушистую дурочку смотреть на неё... пока она раздевается, сбрасывая шорты и майку, обнажая свою {rahi.breasts} и милую розовую киску... Артика слышно сглатывает.")
 
-		saynn("[say=rahi]We're gonna use you.. like the stupid slutty fucktoy that you are..[/say]")
+		saynn("[say=rahi]Мы тебя используем... как тупую шлюшливую игрушку для ебли, которой ты и являешься...[/say]")
 
-		saynn("Rahi then turns around and gets on all fours, her pussy wet and ready.. She reaches one of her hands out to guide Artica's "+str("rubber canine cock" if isStrapon else "canine cock")+" into her slick entrance.. while you put pressure on her back from behind, preventing her from escaping but also aligning your "+str("own cock" if !pcStrapon else "rubber cock")+" with her cyan cunt and letting it rub against her wet sensitive folds.."+str(" Little did she know, your toy is loaded with a surprise.." if (straponHasCum || straponHasArticaCum) else "")+""+str(" very big surprise.." if straponHasArticaCum else "")+"")
+		saynn("Рахи разворачивается и встает на четвереньки, ее киска мокрая и готовая... Она протягивает одну руку, чтобы направить @@B*@@ Artica's @@T*@@..."+str("rubber canine cock" if isStrapon else "canine cock")+"в её скользкий вход... пока ты давишь ей на спину сзади, не давая ей сбежать, но при этом выравнивая твой @@B*@@"+str("own cock" if !pcStrapon else "rubber cock")+"с её голубой киской, позволяя ей тереться о её влажные чувствительные складки.."+str(" Little did she know, your toy is loaded with a surprise.." if (straponHasCum || straponHasArticaCum) else "")+""+str(" very big surprise.." if straponHasArticaCum else "")+"")
 
 		if (isFullSlave):
-			saynn("[say=rahi]Fuck me.. you little whore.[/say]")
+			saynn("[say=rahi]Трахни меня.. ты, маленькая шлюшка.[/say]")
 
 		else:
-			saynn("[say=rahi]Fuck her.. you little whore.[/say]")
+			saynn("[say=rahi]Трахни её... ты, маленькая шлюшка.[/say]")
 
-		saynn("[say=artica]Eek.. I.. oh..[/say]")
+		saynn("[say=artica]Ой.. я.. о боже..[/say]")
 
-		saynn("Rahi growls, trying to maintain her dom persona. All the while Artica is sandwiched between you two, her body shivering from the overwhelming sensations coming from both ends..")
+		saynn("Рахи рычит, пытаясь сохранить образ доминантки. Тем временем Артика зажата между вами двумя, и её тело дрожит от невероятных ощущений, бьющих с обеих сторон..")
 
-		addButton("Thrust!", "Start fucking the fluff", "behind_do_thrust")
+		addButton("Толчок!", "Начинай трахать этот пушистик", "behind_do_thrust")
 	if(state == "behind_do_thrust"):
 		playAnimation(StageScene.SexTrain, "sex", {pc="artica", npc="rahi", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}, npc2="pc", npc2BodyState={naked=true,hard=true}})
-		saynn("With a fast thrust, you enter Artica, ramming your "+str("cock" if !pcStrapon else "strapon")+" down her slit and eliciting a sharp gasp from her. As your hips collide with Artica's butt, it makes her thrust her hips forward too, causing her"+str(" rubber" if isStrapon else "")+" cock to part Rahi's pussy folds wide and slide inside..")
+		saynn("Резким толчком ты входишь в Артику, вонзая свой "+str("cock" if !pcStrapon else "strapon")+" прямо в её щель, заставляя её резко ахнуть. Когда твои бёдра сталкиваются с задницей Артики, она невольно подаётся вперёд, отчего её "+str(" rubber" if isStrapon else "")+" член широко раздвигает складки киски Рахи и скользит внутрь..")
 
-		saynn("[say=artica]EEP-.. nhh..[/say]")
+		saynn("[say=artica]Тхх.. нхх..[/say]")
 
-		saynn("[say=rahi]Ah..[/say]")
+		saynn("[say=rahi]Ах..[/say]")
 
-		saynn("As Artica recoils from your thrust, you meet her ass with another, pounding her pussy raw.. while she, in turn, fucks Rahi.")
+		saynn("Пока Артика откидывается от твоего толчка, ты наносишь следующий удар, вколачивая свой член в её раздолбанную киску.. в то время как она, в свою очередь, трахает Рахи.")
 
-		saynn("[say=rahi]You like this, don't you, slut? Being used like.. the bitch that you are? Ah..[/say]")
+		saynn("[say=rahi]Тебе ведь нравится, сучка? То, что тебя используют как.. настоящую шлюху? А..[/say]")
 
-		saynn("Artica's response is just a series of whimpers and moans, her body betraying her as her arousal skyrockets, her"+str(" rubber member getting squeezed tightly by Rahi's pussy.. and she somehow feels it.." if isStrapon else " canine member getting squeezed tightly by Rahi's pussy..")+"")
+		saynn("Ответ Артики — лишь череда всхлипов и стонов; её тело предаёт её, когда возбуждение взлетает до небес, а её "+str(" rubber member getting squeezed tightly by Rahi's pussy.. and she somehow feels it.." if isStrapon else " canine member getting squeezed tightly by Rahi's pussy..")+"")
 
-		addButton("Faster", "Thrust faster", "behind_faster")
+		addButton("Быстрее", "Толкать быстрее", "behind_faster")
 	if(state == "behind_faster"):
 		playAnimation(StageScene.SexTrain, "fast", {pc="artica", npc="rahi", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}, npc2="pc", npc2BodyState={naked=true,hard=true}})
-		saynn("Gradually, you increase the pace, thrusting down that cyan slit harder while your grip on her hips is tightening. You lean in closer to her ear and whisper..")
+		saynn("Постепенно ты наращиваешь темп, всё сильнее вбиваясь в эту голубую щель, и твоя хватка на её бёдрах становится всё крепче. Ты наклоняешься ближе к её уху и шепчешь..")
 
-		saynn("[say=pc]You're such a good girl, Artica.. Take it all..[/say]")
+		saynn("[say=pc]Какая же ты хорошая девочка, Артика... Принимай всё до капли...[/say]")
 
-		saynn("[say=artica]Nyahh..[/say]")
+		saynn("[say=artica]Нья-а-ах...[/say]")
 
 		if (!pcStrapon):
-			saynn("..and instantly feel her pussy clench around your cock.")
+			saynn("...и мгновенно чувствуешь, как её киска сжимается вокруг твоего члена.")
 
 		else:
-			saynn("..and instantly feel her pussy tugging on your strapon more, walls clenching around it, increasing friction.")
+			saynn("...и мгновенно чувствуешь, как её киска сильнее тянет твой страпон, стенки сжимаются вокруг него, усиливая трение.")
 
 		if (isFullSlave):
-			saynn("[say=rahi]Ah.. You're gonna knot my pussy, slut, you hear? Your whole cock is going inside me.. or I'm gonna.. ah.. g-gonna.. s-step.. ah..[/say]")
+			saynn("[say=rahi]Ах... Ты сейчас завяжешь мне киску узлом, сучка, слышишь? Весь твой член войдет в меня... или я сейчас... ах... с-сейчас... ах... с-сделаю... ах...[/say]")
 
 		else:
-			saynn("[say=rahi]Ah.. You're gonna knot her pussy, slut, you hear? Your whole cock is going inside her.. or she is gonna.. ah.. g-gonna.. s-step.. ah..[/say]")
+			saynn("[say=rahi]Ах... Ты сейчас завяжешь ей киску узлом, сучка, слышишь? Весь твой член войдет в неё... или она сейчас... ах... с-сейчас... ах... с-сделает... ах...[/say]")
 
-		saynn("The cell is filled with the sounds of your bodies moving together, mixed with all the moans and gasps of pleasure. Artica was lost in the sensations, her mind probably a complete haze from submission and lust. As you continue to fuck her clenching pussy, Rahi also picks up the pace and impales herself on Artica's cock harder and faster.. her pink folds slapping against the"+str(" growing" if !isStrapon else " fat rubber")+" knot..")
+		saynn("Камера наполнена звуками ваших тел, движущихся в унисон, перемежающимися со стонами и вздохами наслаждения. Артика полностью растворилась в ощущениях, её разум, должно быть, превратился в сплошной туман от подчинения и похоти. Пока ты продолжаешь трахать её сжимающуюся киску, Рахи тоже ускоряется и насаживается на член Артики всё сильнее и быстрее... её розовые складки шлепают по"+str(" growing" if !isStrapon else " fat rubber")+" knot..")
 
-		addButton("Continue", "See what happens next..", "behind_cum")
+		addButton("Продолжить", "Смотри, что будет дальше...", "behind_cum")
 	if(state == "behind_cum"):
 		playAnimation(StageScene.SexTrain, "inside", {pc="artica", npc="rahi", pcCum=true, npcCum=true, npc2Cum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}, npc2="pc", npc2BodyState={naked=true,hard=true}})
-		saynn("With a final, desperate thrust, Rahi manages to knot herself on Artica's cock, the sudden spike of pleasure sending them both over the edge!")
+		saynn("Последним отчаянным толчком Рахи удается завязаться узлом на члене Артики, и внезапный всплеск наслаждения отправляет их обеих за грань!")
 
-		saynn("[say=rahi]Myaa-ah..[/say]")
+		saynn("[say=rahi]Мья-а-ах...[/say]")
 
 		if (isStrapon):
-			saynn("Rahi is shaking while Artica's cock is throbbing.. inside of its little cage.. cum leaking from under Artica's strapon harness as her pussy clenches around your"+str(" rubber" if pcStrapon else "")+" cock, trying to milk it.."+str(" and succeeding.." if (!pcStrapon || straponHasCum || straponHasArticaCum) else "")+"")
+			saynn("Рахи дрожит, пока член Артики пульсирует... внутри своей маленькой клетки... сперма вытекает из-под ремней страпона, пока её киска сжимается вокруг твоего"+str(" rubber" if pcStrapon else "")+" член, пытаясь выдоить его.."+str(" and succeeding.." if (!pcStrapon || straponHasCum || straponHasArticaCum) else "")+"")
 
 		else:
-			saynn("Rahi is shaking while Artica's cock is throbbing and pulsing, flooding the cat's womb full of her seed.. At same time, Artica's pussy clenches around your"+str(" rubber" if pcStrapon else "")+" cock, trying to milk it.. "+str(" and succeeding.." if (!pcStrapon || straponHasCum || straponHasArticaCum) else "")+"")
+			saynn("Рахи дрожит, пока член Артики пульсирует и бьется, заливая утробу кошки её семенем.. В то же время киска Артики сжимается вокруг твоего"+str(" rubber" if pcStrapon else "")+" члена, пытаясь выдоить его.. "+str(" and succeeding.." if (!pcStrapon || straponHasCum || straponHasArticaCum) else "")+"")
 
 		if (!pcStrapon):
-			saynn("You groan and throw your hips forward, ramming your {pc.penis} deep inside and breaking into Artica's babymaker.. before pumping it full of your {pc.cum}.. The intensity of this rough treatment pushed Artica deeper into the abyss of pleasure, her entire body shaking between you and Rahi..")
+			saynn("Ты стонешь и подаешься бедрами вперед, вонзая свой {pc.penis} глубоко внутрь и взламывая «машинку для детей» Артики.. прежде чем наполнить её своей {pc.cum}.. Интенсивность этого грубого обращения толкнула Артику еще глубже в бездну наслаждения, всё её тело дрожало между тобой и Рахи..")
 
 		else:
-			saynn("Eager to enhance this moment, you throw your hips forward, ramming your toy deep inside and breaking into Artica's babymaker.."+str(" before pumping it full of cum, your strapon releasing its load inside" if (straponHasCum && !straponHasArticaCum) else "")+""+str(" before pumping it full of Artica's cum, your strapon releasing its load inside" if (straponHasArticaCum) else "")+".. The intensity of this rough treatment pushed Artica deeper into the abyss of pleasure, her entire body shaking between you and Rahi..")
+			saynn("Жаждая усилить этот момент, ты подаешься бедрами вперед, вонзая свою игрушку глубоко внутрь и взламывая «машинку для детей» Артики.."+str(" before pumping it full of cum, your strapon releasing its load inside" if (straponHasCum && !straponHasArticaCum) else "")+""+str(" before pumping it full of Artica's cum, your strapon releasing its load inside" if (straponHasArticaCum) else "")+".. Интенсивность этого грубого обращения толкнула Артику еще глубже в бездну наслаждения, всё её тело дрожало между тобой и Рахи..")
 
-		saynn("Rahi, who was equally overwhelmed by this, her pussy squirting, producing a fountain of juices, milking Artica's"+str(" fake" if isStrapon else "")+" cock while the room echoing with her moans, her legs shaking wildly.")
+		saynn("Рахи, которую накрыло не меньше, её киска фонтанирует соками, выдоивая"+str(" fake" if isStrapon else "")+" член Артики, пока комната эхом отзывается на её стоны, а её ноги дико дрожат.")
 
-		saynn("As you all begin to come down from your highs, you continue to hold Artica gently, your "+str("member" if !pcStrapon else "toy")+" inside her.. while her"+str(" rubber" if isStrapon else "")+" member is inside Rahi..")
+		saynn("Когда вы все начинаете постепенно приходить в себя, ты продолжаешь нежно обнимать Артику, твой"+str("member" if !pcStrapon else "toy")+" всё еще внутри неё.. пока её"+str(" rubber" if isStrapon else "")+" член внутри Рахи...")
 
-		saynn("[say=rahi]Ah.. f-feels so good.. h-hh..[/say]")
+		saynn("[say=rahi]Ах.. п-приятно так.. х-хх..[/say]")
 
-		saynn("[say=artica]Hhhnnhh.. mhhh..[/say]")
+		saynn("[say=artica]Хххнн.. мммх..[/say]")
 
-		saynn("[say=pc]You two are so cute.[/say]")
+		saynn("[say=pc]Вы двое такие милашки.[/say]")
 
-		saynn("[say=rahi]N-no.. y-you..[/say]")
+		saynn("[say=rahi]Н-нет.. т-ты..[/say]")
 
-		addButton("Continue", "See what happens next", "aftercuddle")
+		addButton("Продолжить", "Смотреть, что будет дальше", "aftercuddle")
 	if(state == "aftercuddle"):
 		playAnimation(StageScene.Sleeping, "sleep", {pc="rahi", npc="artica", bodyState={naked=true}, npcBodyState={naked=true}})
-		saynn("After so much fun.. you let the girls cuddle together. Rahi is licking Artica's ear.. while the white fluff moans softly.")
+		saynn("После такого бурного веселья ты позволяешь девушкам прижаться друг к другу. Рахи лижет Артику в ушко, а белая пушинка тихонько стонет.")
 
-		saynn("Who knew that they would get along so well.")
+		saynn("Кто бы мог подумать, что они так быстро поладят.")
 
-		saynn("You join the cuddle pile and spend some time together with them..")
+		saynn("Ты присоединяешься к этой куче тел, чтобы провести с ними немного времени...")
 
-		saynn("But soon it was time to go..")
+		saynn("Но вскоре пришло время уходить...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "train_be_first"):
 		addCharacter("rahi", ["naked"])
 		pcVag = GM.pc.hasReachableVagina()
 		playAnimation(StageScene.Duo, "kneel", {pc="artica", npc="rahi", bodyState={naked=true,hard=true}, npcBodyState={naked=true,hard=true}})
-		saynn("You nod towards Rahi and Artica's tail.. and the kitty understands everything.")
+		saynn("Ты киваешь на хвосты Рахи и Артики... и кошечка всё понимает.")
 
-		saynn("[say=rahi]Kneel![/say]")
+		saynn("[say=rahi]На колени![/say]")
 
-		saynn("You and Rahi forcibly bring Artica to her knees.")
+		saynn("Вы с Рахи силой ставите Артику на колени.")
 
-		saynn("[say=artica]Eep..[/say]")
+		saynn("[say=artica]Ой...[/say]")
 
-		saynn("The feline then stands in front of her, undressing and revealing her {rahi.breasts} and a cute pink pussy. But she isn't just stripping for the heck of it, Rahi suddenly pulls out"+str(" another" if isStrapon else "")+" strapon.. and takes her time, carefully sliding the short end down her wet exposed slit, securing it that way.."+str(" Where is she getting so many toys from anyway.." if isStrapon else "")+"")
+		saynn("Затем кошка встает перед ней, раздеваясь и обнажая свою {rahi.breasts} и милую розовую киску. Но она раздевается не просто так — Рахи внезапно достает"+str(" another" if isStrapon else "")+" страпон... и не торопится, осторожно просовывая короткий конец в её мокрую открытую щель, закрепляя его таким образом..."+str(" Where is she getting so many toys from anyway.." if isStrapon else "")+"")
 
-		saynn("Artica bites her lip, her eyes darting between Rahi and her new shiny knotted toy..")
+		saynn("Артика кусает губу, её глаза мечутся между Рахи и её новой блестящей узловатой игрушкой...")
 
-		saynn("[say=rahi]Lick it, you.. useless whore. Unless you want your cunt bruised.[/say]")
+		saynn("[say=rahi]Лижи его, ты... бесполезная шлюха. Если не хочешь, чтобы твою киску все в синяках было.[/say]")
 
-		saynn("[say=artica]Y-yes.. M-Miss Rahi..[/say]")
+		saynn("[say=artica]Д-да.. М-мисс Рахи..[/say]")
 
-		saynn("Artica leans in closer and flicks her cyan tongue out, dragging it along that shiny cock, coating it with her saliva, her tail swaying anxiously behind her as she sees Rahi's mean eyes.")
+		saynn("Артика наклоняется ближе и высовывает свой бирюзовый язык, проводя им по блестящему члену и смазывая его слюной; её хвост тревожно покачивается позади, когда она ловит на себе суровый взгляд Рахи.")
 
 		if (isStrapon):
-			saynn("Artica's own strapon is twitching as the locked away cock is trying to get hard under it..")
+			saynn("Собственный страпон Артики подергивается, так как спрятанный внутри член пытается встать под ним...")
 
 		else:
-			saynn("Artica's cock is hard and dripping..")
+			saynn("Член Артики твердый и сочащийся смазкой...")
 
-		saynn("[say=rahi]Such a good little whore.. Right?.. meow..[/say]")
+		saynn("[say=rahi]Такая хорошая маленькая шлюшка.. Правда?.. мяу..[/say]")
 
-		saynn("Artca is stammering, her cheeks blushing brightly.")
+		saynn("Артика заикается, её щеки пылают ярким румянцем.")
 
-		saynn("[say=artica]Y-yes.. I'm y-your whore, M-Miss R-Rahi..[/say]")
+		saynn("[say=artica]Д-да.. Я в-ваша шлюшка, м-мисс Р-Рахи..[/say]")
 
-		saynn("[say=rahi]Now..[/say]")
+		saynn("[say=rahi]А теперь..[/say]")
 
-		saynn("You were watching Rahi trying to be dominant with a smirk. But now it was time for you to have some fun too..")
+		saynn("Ты наблюдал за тем, как Рахи с ухмылкой пытается доминировать. Но пришло время и тебе немного развлечься..")
 
-		addButton("All fours", "Get on all fours in front of Artica", "first_tease")
+		addButton("На четвереньки", "Встань на четвереньки перед Артикой", "first_tease")
 	if(state == "first_tease"):
 		playAnimation(StageScene.SexTrain, "tease", {pc="artica", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}, npc2="rahi", npc2BodyState={naked=true,hard=true}})
-		saynn("Rahi moves behind Artica, her paws pulling her tail high and then giving her a firm spank.")
+		saynn("Рахи подходит к Артике сзади, её лапы высоко задирают её хвост, а затем она отвешивает ей звонкий шлепок.")
 
-		saynn("[say=rahi]Ready to be fucked, bitch?[/say]")
+		saynn("[say=rahi]Готова, сучка, чтобы тебя оттрахали?[/say]")
 
-		saynn("At the same time, you position yourself in front of the fluff, getting on all fours, your "+str("pussy" if pcVag else "tailhole")+" already brushing against "+str("the tip of Artica's strapon" if isStrapon else "the tip of Artica's cock")+".. You have your hand on her shaft.. guiding it..")
+		saynn("В то же время ты устраиваешься перед пушистой бестией, вставая на четвереньки, и твой "+str("pussy" if pcVag else "tailhole")+" уже касается "+str("the tip of Artica's strapon" if isStrapon else "the tip of Artica's cock")+".. Твоя рука лежит на её стержне.. направляя его..")
 
-		saynn("[say=pc]And you will be fucking me too, Artica. "+str("Filling me with your seed like a good girl" if !isStrapon else "Like a good girl")+".[/say]")
+		saynn("[say=pc]И ты тоже будешь трахать меня, Артика. "+str("Filling me with your seed like a good girl" if !isStrapon else "Like a good girl")+".[/say]")
 
-		saynn("[say=artica]Eek.. I.. t-this is.. nnhh..[/say]")
+		saynn("[say=artica]Ой.. Я.. э-это.. ннхх..[/say]")
 
-		saynn("Sandwiched between you and Rahi, Artica is squirming softly, unsure how to react.. but not for long.")
+		saynn("Зажатая между тобой и Рахи, Артика мягко ерзает, не зная, как реагировать.. но ненадолго.")
 
-		addButton("Continue", "See what happens next", "front_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "front_sex")
 	if(state == "front_sex"):
 		playAnimation(StageScene.SexTrain, "sex", {pc="artica", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}, npc2="rahi", npc2BodyState={naked=true,hard=true}})
-		saynn("Rahi quickly aligns herself with Artica's pussy.. teasing the slick entrance.. before she throws her hips forward!")
+		saynn("Рахи быстро пристраивается к киске Артики.. дразня влажное отверстие.. а затем резко подается бедрами вперед!")
 
-		saynn("[say=artica]Ah!..[/say]")
+		saynn("[say=artica]Ах!..[/say]")
 
-		saynn("The rubber strapon spreads her slit wide.. while the impact of Rahi's hips on her butt makes her thrust forward too, her "+str("{artica.penis}" if !isStrapon else "strapon")+" parting your "+str("folds" if pcVag else "anal star")+" and burying itself deep inside you soon after.")
+		saynn("Резиновый страпон широко раздвигает её щель.. а от удара бедер Рахи о её задницу она тоже подается вперед, её "+str("{artica.penis}" if !isStrapon else "strapon")+" раздвигает твой "+str("folds" if pcVag else "anal star")+" и вскоре глубоко погружается в тебя.")
 
-		saynn("[say=pc]Mmm~..[/say]")
+		saynn("[say=pc]Ммм~..[/say]")
 
-		saynn("[say=rahi]Take it.. you slut..[/say]")
+		saynn("[say=rahi]Бери его... сучка...[/say]")
 
-		saynn("Rahi growls and pulls the toy out before ramming it in again, her voice hitching slightly as the strapon is rubbing against her inner walls each time.")
+		saynn("Рахи рычит и выдергивает игрушку, прежде чем снова с силой вогнать её в себя; её голос слегка прерывается от того, как страпон каждый раз с силой трется о её внутренние стенки.")
 
-		saynn("[say=rahi]You l-love being fucked like this, don't you..[/say]")
+		saynn("[say=rahi]Т-тебе ведь н-нравится, когда тебя так трахают, да?..[/say]")
 
-		saynn("At the same time, you meet Artica's"+str(" rubber" if isStrapon else "")+" cock with your own motions, impaling your eager "+str("pussy" if pcVag else "asshole")+" onto that veiny shaft, getting it stretched more.."+str(" Your hard cock is dripping pre as your buttons are being stimulated nicely.." if GM.pc.hasReachablePenis() else "")+""+str(" Your caged up cock is dripping pre as your button are being stimulated nicely.." if GM.pc.isWearingChastityCage() else "")+"")
+		saynn("В то же время ты навстречу члену Артики"+str(" rubber" if isStrapon else "")+"собственными движениями, насаживаясь своим жадным "+str("pussy" if pcVag else "asshole")+"на этот вздутый ствол, растягиваясь всё сильнее..."+str(" Your hard cock is dripping pre as your buttons are being stimulated nicely.." if GM.pc.hasReachablePenis() else "")+""+str(" Your caged up cock is dripping pre as your button are being stimulated nicely.." if GM.pc.isWearingChastityCage() else "")+"")
 
-		saynn("[say=artica]Y-yes.. I l-love b-being your whore.. ah..[/say]")
+		saynn("[say=artica]Д-да... м-мне н-нравится б-быть твоей шлюхой... ах...[/say]")
 
-		addButton("Faster", "Really hump that cock", "front_faster")
+		addButton("Быстрее", "По-настоящему вжарься в этот член", "front_faster")
 	if(state == "front_faster"):
 		playAnimation(StageScene.SexTrain, "fast", {pc="artica", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}, npc2="rahi", npc2BodyState={naked=true,hard=true}})
-		saynn("Your moans grow louder, your "+str("pussy" if pcVag else "tailhole")+" hugging that cock tightly.."+str(" You feel the knot near the base of her shaft growing fast and juicy.. and so you keep trying to fit it in.." if !isStrapon else " You feel the knot near the base of her rubber shaft.. and so you keep trying to fit it in..")+"")
+		saynn("Твои стоны становятся громче, твоё "+str("pussy" if pcVag else "tailhole")+"крепко обхватывает этот член..."+str(" You feel the knot near the base of her shaft growing fast and juicy.. and so you keep trying to fit it in.." if !isStrapon else " You feel the knot near the base of her rubber shaft.. and so you keep trying to fit it in..")+"")
 
-		saynn("[say=pc]Knot me, Artica. I want to feel your knot inside me.. ah..[/say]")
+		saynn("[say=pc]Завяжи меня, Артика. Я хочу чувствовать твой узел внутри себя.. ах..[/say]")
 
-		saynn("Poor fluff is squirming a lot.. So Rahi puts her paw on her hair and yanks on it.")
+		saynn("Бедняжка так сильно извивается.. И тогда Рахи кладет лапу ей на волосы и резко дергает.")
 
-		saynn("[say=rahi]You heard {pc.him}, whore..[/say]")
+		saynn("[say=rahi]Ты слышала, что сказала {pc.him}, шлюха..[/say]")
 
-		saynn("Artica obeys as much as she can, "+str("fucking" if pcVag else "pegging")+" you while she is getting fucked herself, Rahi's strapon was pounding her pussy hard..")
+		saynn("Артика подчиняется как может, "+str("fucking" if pcVag else "pegging")+"пока её саму вовсю трахают — страпон Рахи с силой вколачивается в её киску..")
 
-		saynn("And she wasn't gonna stop, kitty's pace only quickened, her panting unable to hide her own moans anymore as the feeldoe strapon is pushing on her own pleasure spot quite well. She doesn't stop trying to fit the whole thing in, her toy also has the knot..")
+		saynn("И она не собиралась останавливаться: темп кошечки только ускорился, а её прерывистое дыхание уже не могло скрыть стоны, ведь филдоу-страпон отлично давит на её точку удовольствия. Она всё пытается заглотить его целиком, ведь у её игрушки тоже есть узел..")
 
-		saynn("[say=rahi]Mhh.. ah.. f-fuck.. Take it all, b-bitch.. p-please..[/say]")
+		saynn("[say=rahi]Ммм.. ах.. б-блядь.. Прими всё, с-сучка.. п-пожалуйста..[/say]")
 
-		saynn("[say=artica]Ahh-h.. g-gods.. t-too m-muuch.. ah..[/say]")
+		saynn("[say=artica]Ааах.. о-боги.. с-слишком м-много.. ах..[/say]")
 
-		saynn("You feel close..")
+		saynn("Ты чувствуешь, что конец близок..")
 
-		addButton("Continue", "See what happens next", "front_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "front_cum")
 	if(state == "front_cum"):
 		playAnimation(StageScene.SexTrain, "inside", {pc="artica", npc="pc", pcCum=true, npcCum=true, npc2Cum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}, npc2="rahi", npc2BodyState={naked=true,hard=true}})
-		saynn("Rahi got a good grip on Artica's hair.. and then.. with one final push.. forces her whole knotted shaft inside, stretching that pussy to its maximum.. and beyond..")
+		saynn("Рахи крепко схватила Артику за волосы.. и затем.. одним финальным толчком.. вбивает весь свой раздутый узел внутрь, растягивая её киску до предела.. и даже сильнее..")
 
-		saynn("[say=artica]Ahh-hh!.. S-so b-big.. ah..[/say]")
+		saynn("[say=artica]Ах-х!.. Т-такой б-большой.. ах..[/say]")
 
-		saynn("The friction finally pushes Rahi over the edge, her own slit pulsing around the feeldoe strapon as she cums, her pussy juices gushing all over Artica's legs..")
+		saynn("Трение наконец доводит Рахи до края: её щель пульсирует вокруг филдоу-страпона, пока она кончает, заливая соками все ноги Артики..")
 
-		saynn("[say=rahi]Ah.. nyaah..[/say]")
+		saynn("[say=rahi]Ах.. няаа..[/say]")
 
 		if (!isStrapon):
-			saynn("The rough thrust forces the fluff to throw her hips forward.. just when you were meeting her cock.. the immense amount of pressure results in Artica's"+str(" rubber" if isStrapon else "")+" knot popping inside you! Both you and Artica cum hard, her cock shooting rope after rope of spunk inside your "+str("womb" if pcVag else "ass")+".. while Rahi's strapon is filling her with some kind of cumlube..")
+			saynn("Грубый толчок заставляет пушистую выкинуть бедра вперед.. как раз в тот момент, когда ты принимаешь её член.. из-за колоссального давления у Артики"+str(" rubber" if isStrapon else "")+"внутри тебя выстреливает узел! И ты, и Артика кончаете на полную, её член выпускает веретено за веретеном спермы прямо в твою"+str("womb" if pcVag else "ass")+".. в то время как страпон Рахи наполняет её какой-то смазкой из кончи:")
 
 		else:
-			saynn("The rough thrust forces the fluff to throw her hips forward.. just when you were meeting her cock.. the immense amount of pressure results in Artica's"+str(" rubber" if isStrapon else "")+" knot popping inside you! Both you and Artica cum hard, her cock shooting rope after rope of spunk.. into her chastity cage.. while Rahi's strapon is filling her with some kind of cumlube..")
+			saynn("Грубый толчок заставляет пушистую выкинуть бедра вперед.. как раз в тот момент, когда ты принимаешь её член.. из-за колоссального давления у Артики"+str(" rubber" if isStrapon else "")+"внутри тебя выстреливает узел! И ты, и Артика кончаете на полную, её член выпускает веретено за веретеном спермы.. прямо в её клетки целовать.. в то время как страпон Рахи наполняет её какой-то смазкой из кончи:")
 
-		saynn("[say=pc]Ah.. so much..[/say]")
+		saynn("[say=pc]Ах.. так много..[/say]")
 
-		saynn("The cell is filled with moans and a strong scent of sex as the three of you go through your orgasmic state.. your bodies rubbing against each other as the ecstatic waves cause random muscles to tense up..")
+		saynn("Камера наполняется стонами и густым запахом секса, пока вы втроем пребываете в состоянии оргазма.. ваши тела трутся друг о друга, а экстатические волны заставляют мышцы непроизвольно сокращаться..")
 
-		saynn("[say=rahi]Such a.. s-such a.. h-huff.. ah..[/say]")
+		saynn("[say=rahi]Такая.. т-такая.. х-хфф.. ах..[/say]")
 
-		saynn("Rahi is struggling to stay to dommy, her soft nature makes her hug Artica.")
+		saynn("Рахи изо всех сил старается сохранять доминантный вид, но её мягкая натура заставляет её прижаться к Артике.")
 
-		saynn("[say=artica]Nhh-h.. ahh-h.. t-thank.. y-you.. M-Miss Rahi.. and {pc.name}.. I'm.. s-such a s-slut..[/say]")
+		saynn("[say=artica]Нхх-х.. ахх-х.. с-спасибо.. в-вам.. М-мисс Рахи.. и {pc.name}.. я.. такая т-тёлка..[/say]")
 
-		saynn("[say=rahi]Me-eow-w..[/say]")
+		saynn("[say=rahi]Мяу-у-у..[/say]")
 
-		saynn("[say=pc]You two are so cute.[/say]")
+		saynn("[say=pc]Вы двое такие милашки.[/say]")
 
-		saynn("[say=rahi]N-no.. y-you..[/say]")
+		saynn("[say=rahi]Н-нет.. т-ты..[/say]")
 
-		addButton("Continue", "See what happens next", "aftercuddle")
+		addButton("Продолжить", "Смотреть, что будет дальше", "aftercuddle")
 	if(state == "do_play"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", pc="artica"})
-		saynn("You shrug at their gazes.")
+		saynn("Вы пожимаете плечами под их взглядами.")
 
-		saynn("[say=pc]So, I know that you two are total bottoms..[/say]")
+		saynn("[say=pc]Так вот, я знаю, что вы обе — полные низочки..[/say]")
 
-		saynn("They both pout at you like you just called them something bad.")
+		saynn("Обе надувают губки, будто вы только что сказали им что-то обидное.")
 
-		saynn("[say=pc]But I think one of you is more subby than the other.[/say]")
+		saynn("[say=pc]Но мне кажется, что одна из вас куда более покорная, чем другая.[/say]")
 
-		saynn("[say=artica]I'm not.. tha-a-at.. subby.. I can be the top.. I think..[/say]")
+		saynn("[say=artica]Я не.. на-а-астолько.. покорная.. Я могу быть сверху.. вроде как..[/say]")
 
-		saynn("Rahi hears speech full of unsure undertones that and chuckles softly.")
-
-		if (isFullSlave):
-			saynn("[say=rahi]Well.. why don't you try your skills on me then.. meow..[/say]")
-
-		else:
-			saynn("[say=rahi]Well.. why don't you try your skills on her then.. meow..[/say]")
-
-		saynn("The environment is fully controlled by you.. so why not. "+str("Naked " if isNaked else "")+"Artica clears her throat.. and takes a step closer to Rahi, their noses almost touching now..")
-
-		saynn("[say=artica]Um.. bend over.. w-wait.. t-take your clothes off first.. like a.. um..[/say]")
-
-		saynn("It was honestly cute. Rahi listens to Artica's orders and nods-nods.. but doesn't act.")
-
-		saynn("[say=artica]W-why didn't you..[/say]")
+		saynn("Рахи слышит в её голосе нотки неуверенности и тихонько посмеивается.")
 
 		if (isFullSlave):
-			saynn("[say=rahi]Make me?[/say]")
+			saynn("[say=rahi]Ну.. тогда почему бы тебе не опробовать свои навыки на мне.. мяу..[/say]")
 
 		else:
-			saynn("[say=rahi]Make her?[/say]")
+			saynn("[say=rahi]Ну.. тогда почему бы тебе не опробовать свои навыки на ней.. мяу..[/say]")
 
-		saynn("Artica blinks a lot.. Being so close to the cute kitty is making her blush, her body swaying a bit, her tail wrapping around her waist..")
+		saynn("Окружающая среда полностью под твоим контролем.. так почему бы и нет."+str("Naked " if isNaked else "")+"Артика откашливается.. и делает шаг ближе к Рахи, так что их носы теперь почти соприкасаются..")
 
-		saynn("[say=artica]Um.. do it or I w-will.. um.. hah.. um..[/say]")
+		saynn("[say=artica]Эм.. наклонись.. п-погоди.. с-сначала раздевайся.. ну, как будто.. эм..[/say]")
 
-		saynn("Rahi is getting tired of that.. she suddenly darts her paw out and grabs Artica by the short hair.")
+		saynn("Это было честно мило. Рахи слушает приказы Артики и закивала-закивала.. но ничего не предпринимает.")
+
+		saynn("[say=artica]П-почему ты не..[/say]")
 
 		if (isFullSlave):
-			saynn("[say=rahi]Alright, you whore. You are the most subby soft slut that I have ever seen I think.. Stand still now.[/say]")
+			saynn("[say=rahi]Заставь меня?[/say]")
 
 		else:
-			saynn("[say=rahi]Alright, you whore. You are the most subby soft slut that she has ever seen, she thinks.. Stand still now.[/say]")
+			saynn("[say=rahi]Заставь её?[/say]")
 
-		saynn("The sudden switch makes Artica's eyes widen, a flash of fear and arousal going through them. She tries to stand her ground, to assert herself.. but only realizes that she is doing exactly what Rahi told her to do.")
+		saynn("Артика часто моргает.. От такой близости к милой кошечке она заливается румянцем, её тело слегка покачивается, а хвост обвивается вокруг талии..")
 
-		saynn("[say=artica]Eep.. h-hey..[/say]")
+		saynn("[say=artica]Мм.. делай это, а то я.. эм.. хах.. эм..[/say]")
 
-		addButton("Continue", "See what happens next", "play_rahi_undresses_artica")
+		saynn("Рахи это надоедает.. она внезапно выбрасывает лапу и хватает Артику за короткую шерстку.")
+
+		if (isFullSlave):
+			saynn("[say=rahi]Ладно, шлюшка. По-моему, ты самая покорная и мягкая сучка, которую я когда-либо видела.. А теперь замри.[/say]")
+
+		else:
+			saynn("[say=rahi]Ладно, шлюшка. Она думает, что ты самая покорная и мягкая сучка, которую она когда-либо видела.. А теперь замри.[/say]")
+
+		saynn("От такой внезапной перемены глаза Артики расширяются, в них промелькнула смесь страха и возбуждения. Она пытается держаться уверенно, проявить характер.. но лишь осознает, что делает именно то, что велела Рахи.")
+
+		saynn("[say=artica]Ой.. п-привет..[/say]")
+
+		addButton("Продолжить", "Смотреть, что будет дальше", "play_rahi_undresses_artica")
 	if(state == "play_rahi_undresses_artica"):
 		playAnimation(StageScene.Grope, "grope", {pc="artica", npc="rahi"})
 		if (isNaked):
-			saynn("Rahi's other paw boldly lands on Artica's naked body and begins exploring it, her clawed digits going over the sides, following the fancy fur pattern..")
+			saynn("Другая лапа Рахи смело ложится на обнаженное тело Артики и начинает его исследовать, ее когтистые пальцы скользят по бокам, прослеживая изысканный узор меха..")
 
 		else:
-			saynn("Rahi's other paw boldly slips into Artica's shirt and begins exploring her body, her clawed digits going over the sides, following the fancy fur pattern..")
+			saynn("Другая лапа Рахи смело просовывается под рубашку Артики и начинает исследовать её тело, её когтистые пальцы скользят по бокам, прослеживая изысканный узор меха..")
 
-		saynn("[say=rahi]Meow? You are not subby? Prove it already..[/say]")
+		saynn("[say=rahi]Мяу? Ты не покорная? Ну так докажи это уже..[/say]")
 
-		saynn("Even though Rahi is an incredibly subby kitty herself.. subbyness seems to be relative.. A single cat can be both a prey and predator it seems.. huh.")
+		saynn("Хотя сама Рахи — невероятно покорная кошечка.. похоже, покорность — понятие относительное.. Кажется, одна и та же кошка может быть и добычей, и хищником одновременно.. хм.")
 
-		saynn("Artica tries to pull Rahi's paws off of her hair and body.. but the kitty just keeps returning them to where they were, now squeezing Artica's butt and fondling her nice"+str(" swollen" if getCharacter("artica").isLactating() else "")+" tits..")
+		saynn("Артика пытается стряхнуть лапы Рахи со своих волос и тела.. но кошечка лишь возвращает их на место, теперь уже сжимая задницу Артики и лаская её аппетитные"+str(" swollen" if getCharacter("artica").isLactating() else "")+" tits..")
 
-		saynn("[say=artica]Eep..[/say]")
+		saynn("[say=artica]Ой...[/say]")
 
-		saynn("Eventually Artica gives up and lets the feline grope and rub her, Rahi's paws quickly finds her wet needy slit and a"+str(" sheath that houses a half-hard canine cock.." if !isCaged else " sheath that is protected by a metal chastity cage..")+"")
+		saynn("В конце концов Артика сдается и позволяет кошке лапать и тереться о неё; лапы Рахи быстро находят её мокрую, жаждущую щель и..."+str(" sheath that houses a half-hard canine cock.." if !isCaged else " sheath that is protected by a metal chastity cage..")+"")
 
 		if (isCaged):
-			saynn("[say=rahi]You thought you could top the kitty with that?.. It's very cute..[/say]")
+			saynn("[say=rahi]Думала, что сможешь переплюнуть киску?.. Это очень мило..[/say]")
 
 		else:
-			saynn("[say=rahi]You are awfully wet for someone who thought they could top the kitty..[/say]")
+			saynn("[say=rahi]Ты чертовски мокрая для той, кто возомнил, будто сможет переплюнуть киску..[/say]")
 
-		saynn("Artica's ears turn down, the commanding presence of Rahi somehow making her shiver.")
+		saynn("Уши Артики прижимаются к голове; властное присутствие Рахи заставляет её невольно дрожать.")
 
-		saynn("[say=artica]Eek.. w-what d-do you want me to d-do..[/say]")
+		saynn("[say=artica]Ой.. ч-что м-мне д-должна с-сделать..[/say]")
 
-		saynn("Her voice barely above a whisper.")
+		saynn("Её голос едва слышен, почти шепот.")
 
-		saynn("[say=rahi]Get on your knees already, you.. stupid fucking bitch! Yeah..[/say]")
+		saynn("[say=rahi]А ну вставай на колени, ты.. тупая гребаная сучка! Да..[/say]")
 
-		saynn("Such a mouthy cat.. Things are quickly getting interesting..")
+		saynn("Какая дерзкая кошечка.. Всё быстро становится интересным..")
 
-		addButton("Continue", "See what happens next", "play_artica_knees")
+		addButton("Продолжить", "Смотреть, что будет дальше", "play_artica_knees")
 	if(state == "play_artica_knees"):
 		playAnimation(StageScene.Duo, "kneel", {pc="artica", npc="rahi", bodyState={hard=true}})
-		saynn("Artica hesitates for a moment.. but feeling Rahi's claws near her nips and balls makes her sink to her knees fast, her cheeks flushing with both embarrassment.. and something else.")
+		saynn("Артика на мгновение колеблется.. но, почувствовав когти Рахи возле своих сосков и яичек, она быстро опускается на колени, а её щеки заливаются румянцем от смущения... и чего-то еще.")
 
-		saynn("Kitty smiles.. and then hums, unsure what to do next. She looks down at herself and gasps.")
+		saynn("Киска улыбается.. а затем мурлычет, не зная, что делать дальше. Она смотрит вниз на себя и ахает.")
 
 		if (isFullSlave):
-			saynn("[say=rahi]Lick my pussy, you slut. And make a good job of it. I'm not Rahi.. I'm a Miss Rahi now..[/say]")
+			saynn("[say=rahi]Лижи мою киску, сучка. И постарайся хорошенько. Я тебе не просто Рахи... Теперь я — Мисс Рахи..[/say]")
 
 		else:
-			saynn("[say=rahi]Lick her pussy, you slut. And make a good job of it. She is not kitty.. She is.. Miss Rahi now..[/say]")
+			saynn("[say=rahi]Лижи её киску, сучка. И постарайся хорошенько. Она больше не кошечка... Теперь она... Мисс Рахи..[/say]")
 
-		saynn("Artica tilts her head, confused at that order. Rahi is quickly getting impatient, she grabs Artica's hair again.. before pushing her face into her crotch, the fluff's snout is pressed directly against Rahi's shorts..")
+		saynn("Артика в замешательстве наклоняет голову от такого приказа. Рахи быстро теряет терпение и снова хватает Артику за волосы, после чего вжимает её мордочку ей в промежность; пушистый нос оказывается прижат прямо к шортам Рахи..")
 
-		saynn("[say=rahi]Do it already..[/say]")
+		saynn("[say=rahi]Давай же уже..[/say]")
 
-		saynn("Artica whines.. She is panting warmly against Rahi's crotch making her squirm a bit.. But then she finally flicks her long canine tongue out.. and proceeds to drag it over the cloth, trying to find where the sensitive folds are..")
+		saynn("Артика скулит.. Она тепло дышит в пах Рахи, заставляя ту слегка ерзать.. Но наконец она высовывает свой длинный клыкастый язык.. и начинает водить им по ткани, пытаясь нащупать, где там самые чувствительные складки..")
 
-		saynn("[say=rahi]P-pathetic.. that's what you call licking?.. Harder, you.. stupid whore..[/say]")
+		saynn("[say=rahi]Ж-жалко.. и это ты называешь лизанием?.. Сильнее, ты.. тупая шлюха..[/say]")
 
-		saynn("A curiosity makes you delve in and ask something..")
+		saynn("Любопытство заставляет тебя вклиниться и спросить..")
 
-		saynn("[say=pc]Why do you cuss so much, kitty?[/say]")
+		saynn("[say=pc]Почему ты так много ругаешься, кошечка?[/say]")
 
-		saynn("Rahi momentarily snaps out of it, her ears turning down.")
+		saynn("Рахи на мгновение выходит из образа, её ушки понуро опускаются.")
 
-		saynn("[say=rahi]Um.. i-isn't that how you dominate.. meow..[/say]")
+		saynn("[say=rahi]Ну.. разве не так ты... доминируешь надо мной.. мяу..[/say]")
 
-		saynn("Fair enough.. It's certainly one way to dom.. You nod and let them continue.")
+		saynn("Справедливо.. Это определенно один из способов доминировать.. Ты киваешь, позволяя им продолжать.")
 
-		saynn("It seems this rough way to domming is doing tricks with Artica's mind.. She obediently laps at Rahi's pussy through the shorts with increased pressure, shivering while her own arousal grows fast.."+str(" canine cock bulging her own shorts.." if (!isNaked && !isCaged) else "")+""+str(" canine cock standing fully hard and dripping pre.." if (isNaked && !isCaged) else "")+""+str(" her locked away canine cock dripping pre.." if isCaged else "")+"")
+		saynn("Похоже, такой грубый способ доминирования творит что-то с разумом Артики.. Она послушно и с нажимом вылизывает киску Рахи сквозь шорты, дрожа от того, как быстро растет ее собственное возбуждение.."+str(" canine cock bulging her own shorts.." if (!isNaked && !isCaged) else "")+""+str(" canine cock standing fully hard and dripping pre.." if (isNaked && !isCaged) else "")+""+str(" her locked away canine cock dripping pre.." if isCaged else "")+"")
 
-		saynn("[say=rahi]Ah.. nyaa-ah..[/say]")
+		saynn("[say=rahi]Ах.. няа-ах..[/say]")
 
-		saynn("Rahi grabs onto Artica's hair more and moans softly, the cloth becoming wet exactly where her slick needy flower is..")
+		saynn("Рахи сильнее вцепляется в волосы Артики и тихо стонет; ткань становится мокрой именно там, где находится ее влажный, жаждущий цветок..")
 
-		saynn("[say=rahi]N-not s-so fast.. s-silly.. ah.. kitty is g-gonna..[/say]")
+		saynn("[say=rahi]Н-не так.. п-быстро.. глупышка.. ах.. кошечка сейчас..[/say]")
 
-		saynn("Suddenly Rahi stands high on her toes, a sudden wave of pleasure rushing through her.. while Artica keeps licking obediently, her tongue following the outline of the pulsing pussy.. her paws sliding under Rahi's hind paws and gently massaging the paw pads..")
+		saynn("Внезапно Рахи встает на цыпочки, охваченная резкой волной наслаждения.. в то время как Артика продолжает послушно лизать, ведя языком по контуру пульсирующей киски.. ее лапки скользят под задние лапы Рахи, нежно массируя подушечки..")
 
-		saynn("[say=rahi]Ahh-h.. e-easy.. ah..[/say]")
+		saynn("[say=rahi]Ааах.. п-полегче.. ах..[/say]")
 
-		saynn("Finally, Rahi manages to push Artica back.. Fluff's subby eyes are sparkling brightly..")
+		saynn("Наконец Рахи удается оттолкнуть Артику назад.. Глаза пушистой подчиненки ярко сияют..")
 
-		saynn("[say=rahi]G-good w-whore.. n-now..[/say]")
+		saynn("[say=rahi]Х-хорошая ш-шлюшка.. а.. н-now..[/say]")
 
-		addButton("Continue", "See what happens next", "play_onfloor")
+		addButton("Продолжить", "Смотреть, что будет дальше", "play_onfloor")
 	if(state == "play_onfloor"):
 		addCharacter("artica", ["naked"])
 		playAnimation(StageScene.SexPawjob, "tease", {pc="artica", npc="rahi", bodyState={naked=true, hard=true}})
-		saynn("Rahi notices Artica's interest in hind paws.. and smirks.")
+		saynn("Рахи замечает интерес Артики к задним лапам.. и ухмыляется.")
 
-		saynn("[say=rahi]You want to cum now, don't you, soft little bitch?..[/say]")
+		saynn("[say=rahi]Хочешь кончить прямо сейчас, да, мягкотелая сучка?..[/say]")
 
-		saynn("[say=artica]M-m.. m-maybe.. y-yea.. mmhh..[/say]")
-
-		if (isCaged):
-			saynn("Artica's hands reach for her chastity cage.. but Rahi is quick to slap them away.. with her legs.")
-
-		else:
-			saynn("Artica's hands reach for her hard twitching cock.. but Rahi is quick to slap them away.. with her legs.")
-
-		saynn("[say=rahi]Nu huh.. You will cum like a.. like a pathetic slut that you are.. only from k-kitty's touch.[/say]")
+		saynn("[say=artica]М-м.. м-может быть.. д-да.. ммхх..[/say]")
 
 		if (isCaged):
-			saynn("For some reason, Rahi goes and quickly grabs a strapon harness.. that she puts it on Artica, securing a rubber canine cock over her locked away real one..")
-
-			saynn("[say=rahi]This is your cock now..[/say]")
-
-			saynn("Rahi gets down on the floor.. and presents her hind paws to Artica in full their glory, her toes curling near the "+str("rubber " if isCaged else "")+" canine cock.. Artica's mouth watering as she watches..")
+			saynn("Руки Артики тянутся к её девственной клетке... но Рахи быстро отбивает их... своими ногами.")
 
 		else:
-			saynn("Rahi gets down on the floor.. and presents her hind paws to Artica in full their glory, her toes curling near the "+str("rubber " if isCaged else "")+" canine cock.. Artica's mouth watering as she watches..")
+			saynn("Руки Артики тянутся к её твердому, подергивающемуся члену... но Рахи быстро отбивает их... своими ногами.")
 
-		saynn("[say=artica]M-may I.. um.. M-Miss Rahi..[/say]")
+		saynn("[say=rahi]Ну хм.. Ты кончишь как.. как жалкая шлюшка, которой ты и являешься.. только от прикосновений киски.[/say]")
 
-		saynn("Rahi shakes her head.")
+		if (isCaged):
+			saynn("По какой-то причине Рахи быстро хватает страпон-ремень... и надевает его на Артику, закрепляя резиновый собачий член поверх её запертого настоящего...")
 
-		saynn("[say=rahi]You can do better than that..[/say]")
+			saynn("[say=rahi]Теперь это твой член..[/say]")
 
-		addButton("Continue", "See what happens next", "play_rahistrokes_begin")
+			saynn("Рахи опускается на пол... и во всей красе демонстрирует свои задние лапки, поджимая пальцы возле "+str("rubber " if isCaged else "")+"собачьего члена... у Артики текут слюнки, пока она наблюдает...")
+
+		else:
+			saynn("Рахи опускается на пол... и во всей красе демонстрирует свои задние лапки, поджимая пальцы возле "+str("rubber " if isCaged else "")+"собачьего члена... у Артики текут слюнки, пока она наблюдает...")
+
+		saynn("[say=artica]М-можно мне.. эм.. М-мисс Рахи..[/say]")
+
+		saynn("Рахи качает головой.")
+
+		saynn("[say=rahi]Ты можешь лучше..[/say]")
+
+		addButton("Продолжить", "Смотреть, что будет дальше", "play_rahistrokes_begin")
 	if(state == "play_rahistrokes_begin"):
 		playAnimation(StageScene.SexPawjob, "sex", {pc="artica", npc="rahi", bodyState={naked=true, hard=true}})
-		saynn("Rahi's hind paws move to stroke Artica's cock.. pawpads wrapping the "+str("rubber" if isCaged else "veiny")+" shaft.. and going up and down along, her toes squeezing and rubbing the"+str(" sensitive flesh" if !isCaged else "shiny fake member")+".. "+str("Even though Rahi is only teasing a strapon, the visuals alone make Artica moan, her body trembling.." if isCaged else "As Rahi teases the cyan cock, Artica can't help but to moan, her body trembling..")+"")
+		saynn("Задние лапы Рахи начинают ласкать член Артики.. подушечки обхватывают"+str("rubber" if isCaged else "veiny")+"ствол.. и двигаются вверх-вниз, а пальцы сжимают и потирают его,"+str(" sensitive flesh" if !isCaged else "shiny fake member")+".. "+str("Even though Rahi is only teasing a strapon, the visuals alone make Artica moan, her body trembling.." if isCaged else "As Rahi teases the cyan cock, Artica can't help but to moan, her body trembling..")+"")
 
-		saynn("[say=rahi]You want faster?.. Beg..[/say]")
+		saynn("[say=rahi]Хочешь быстрее?.. Умоляй..[/say]")
 
-		saynn("[say=artica]Mmmhh-hh.. p-please.. it f-feels so good..[/say]")
+		saynn("[say=artica]Мммхх-хх.. п-пожалуйста.. э-это так приятно..[/say]")
 
-		saynn("Rahi tilts her head.")
-
-		if (isFullSlave):
-			saynn("[say=rahi]Speak up, slut.. I can barely hear you..[/say]")
-
-		else:
-			saynn("[say=rahi]Speak up, slut.. Kitty can barely hear you..[/say]")
-
-		saynn("Rahi slows down on purpose, barely stroking the cock now..")
-
-		saynn("[say=artica]Mm..M-Miss Rahi.. Ma-ay you p-please.. ff..faster..[/say]")
-
-		saynn("Artica whines and tries to hump those paws, shoving her cock in-between.. but Rahi just spreads her legs when that happens, giggling seeing the desperate fluff squirm..")
-
-		saynn("[say=artica]Please.. hh-h.. I'm a s-slut..[/say]")
+		saynn("Рахи наклоняет голову.")
 
 		if (isFullSlave):
-			saynn("[say=rahi]Slut for my paws?[/say]")
+			saynn("[say=rahi]Говори громче, шлюшка.. я тебя почти не слышу..[/say]")
 
 		else:
-			saynn("[say=rahi]Slut for her paws?[/say]")
+			saynn("[say=rahi]Говори громче, шлюшка.. Кити тебя почти не слышит..[/say]")
 
-		saynn("Artica nods-nods.."+str(" Her neglected cock twitching.. until Rahi wraps her hind paws around it again and begins stroking it.. slowly.." if !isCaged else " Her strapon is twitching as the caged cock underneath it pushes on the harness.. until Rahi wraps her hind paws around the rubber shaft and begins stroking it.. slowly..")+"")
+		saynn("Рахи намеренно замедляется, едва лаская член..")
 
-		saynn("[say=artica]I'm.. a total pawslut.. ah.. d-dirty little paw b-bitch.. p-please..[/say]")
+		saynn("[say=artica]Мм.. М-мисс Рахи.. М-можно вам.. п-пожалуйста.. фф.. быстрее..[/say]")
 
-		saynn("[say=rahi]Oki~.[/say]")
+		saynn("Артика скулит и пытается насаживаться на эти лапы, втискивая свой член между ними.. но Рахи лишь шире раздвигает ноги, хихикая при виде того, как отчаянный пушистик извивается..")
 
-		saynn("Rahi suddenly stops, making Artica squirm harder.")
+		saynn("[say=artica]Пожалуйста.. хх-х.. Я ш-шлюшка..[/say]")
 
-		saynn("[say=artica]..M-miss Rahi?..[/say]")
+		if (isFullSlave):
+			saynn("[say=rahi]Шлюшка для моих лапок?[/say]")
 
-		saynn("[say=rahi]Do it yourself.. pawslut.. meow..[/say]")
+		else:
+			saynn("[say=rahi]Шлюшка для её лапок?[/say]")
 
-		saynn("Kitty presents her hind paws to Artica.. and nods-nods to her confused stare.")
+		saynn("Артика кивает-кивает.."+str(" Her neglected cock twitching.. until Rahi wraps her hind paws around it again and begins stroking it.. slowly.." if !isCaged else " Her strapon is twitching as the caged cock underneath it pushes on the harness.. until Rahi wraps her hind paws around the rubber shaft and begins stroking it.. slowly..")+"")
 
-		addButton("Continue", "See what happens next", "play_artica_cums")
+		saynn("[say=artica]Я.. настоящая лапошлюшка.. ах.. г-грязная маленькая лапоб**дь.. п-пожалуйста..[/say]")
+
+		saynn("[say=rahi]Оки~.[/say]")
+
+		saynn("Рахи внезапно останавливается, заставляя Артику извиваться ещё сильнее.")
+
+		saynn("[say=artica]М-мисс Рахи?..[/say]")
+
+		saynn("[say=rahi]Сделай сама.. лапочка.. мяу..[/say]")
+
+		saynn("Кошечка подставляет свои задние лапки Артике.. и кивает в ответ на её растерянный взгляд.")
+
+		addButton("Продолжить", "Смотреть, что будет дальше", "play_artica_cums")
 	if(state == "play_artica_cums"):
 		playAnimation(StageScene.SexPawjob, "thrustfast", {pc="artica", npc="rahi", bodyState={naked=true, hard=true}})
-		saynn("Artica blushes deeply.. but she does obey, carefully putting her hands on Rahi's ankles.. and then thrusting between them, her lips producing a cute moan..")
+		saynn("Артика густо краснеет.. но всё же подчиняется, осторожно кладя руки на лодыжки Рахи.. а затем просовывая член между ними, издавая при этом милый стон..")
 
-		saynn("[say=rahi]T-there you go.. as fast as you want..[/say]")
+		saynn("[say=rahi]В-вот так.. как захочешь, быстрее..[/say]")
 
-		saynn("[say=artica]Y-yes.. M-Miss Rahi.. hh-hmm..[/say]")
+		saynn("[say=artica]Д-да.. М-мисс Рахи.. хх-мм..[/say]")
 
-		saynn("The fluff quickly picks up the pace, sliding her"+str(" pulsing" if !isCaged else " fake")+" member between Rahi's paws at a faster pace.. while the kitty just admires the view..")
-
-		if (isCaged):
-			saynn("Even though Artica's actual cock isn't being stimulated at all, the fluff somehow finds stimulation in this.. She moans louder and more passionate..")
-
-		else:
-			saynn("The cyan knot begins to inflate quickly.. Artica's cock is already throbbing.. She moans louder and more passionate..")
-
-		saynn("[say=artica]I'm.. I'm g-gon.. ahhh!..[/say]")
+		saynn("Пушинка быстро ускоряется, просовывая свой"+str(" pulsing" if !isCaged else " fake")+"член между лапок Рахи всё быстрее.. пока кошечка просто любуется этой картиной..")
 
 		if (isCaged):
-			saynn("..and then rams the knotted strapon through the hole between Rahi's hind paws.. letting them squeeze the fat rubber orb.. while she can't hold back anymore.. Artica cums hard, her whole body arching as cum begins oozing from under her strapon harness, her locked cock shooting cum into own sheath and chastity cage..")
-
-			saynn("[say=rahi]You're making such a mess on the floor, whore.. Y-You will have to clean that..[/say]")
+			saynn("Хотя сам член Артики вовсе не стимулируется, пушинка каким-то образом получает от этого удовольствие.. Она стонет всё громче и страстнее..")
 
 		else:
-			saynn("..and then rams the knotted member through the hole between Rahi's hind paws.. letting them squeeze her fat juicy orb so tightly that she can't hold back anymore.. Artica cums hard, her twitching member releasing thick strings of cum.. all of them landing on Rahi's uniform and the exposed parts of her fur..")
+			saynn("Циановый узел начинает быстро раздуваться.. член Артики уже пульсирует.. Она стонет всё громче и всё страстнее..")
 
-			saynn("[say=rahi]Eek.. you messy whore.. y-you will have to clean that..[/say]")
+		saynn("[say=artica]Я.. я сейчас.. ахх!..[/say]")
 
-		saynn("[say=artica]Nya-a-ahh-..[/say]")
+		if (isCaged):
+			saynn("..а затем с силой вгоняет узловатый страпон в отверстие между задними лапами Рахи.. позволяя им сжимать жирный резиновый шар.. пока та уже не может сдерживаться.. Артика кончает на полную, её тело выгибается дугой, а сперма начинает сочиться из-под ремней страпон-харднеса, заливая её собственный член и девственную клетку..")
 
-		saynn("Artica is panting, her body shivering wildly..")
+			saynn("[say=rahi]Ты так всё размазала по полу, шлюха.. П-придётся тебе это вылизать..[/say]")
 
-		addButton("Continue", "See what happens next", "play_artica_cleans_rahi")
+		else:
+			saynn("..а затем с силой вгоняет узловатый член в отверстие между задними лапами Рахи.. позволяя им сжимать её жирный сочный шар так сильно, что та уже не может сдерживаться.. Артика кончает на полную, её дергающийся член извергает густые струи спермы.. все они попадают на униформу Рахи и на открытые участки её меха..")
+
+			saynn("[say=rahi]Ой.. ну ты и грязная шлюха.. т-тебе придётся это убрать..[/say]")
+
+		saynn("[say=artica]Ня-а-ах!..[/say]")
+
+		saynn("Артика тяжело дышит, её тело сотрясает сильная дрожь..")
+
+		addButton("Продолжить", "Смотреть, что будет дальше", "play_artica_cleans_rahi")
 	if(state == "play_artica_cleans_rahi"):
 		playAnimation(StageScene.SexPawjob, "tease", {pc="artica", npc="rahi", bodyState={naked=true, hard=true}})
 		if (isCaged):
-			saynn("Rahi points at the mess on the floor with her toes..")
+			saynn("Рахи пальцами задних лап указывает на беспорядок на полу..")
 
-			saynn("[say=rahi]Clean it up, slut..[/say]")
+			saynn("[say=rahi]Вылижи всё, сучка..[/say]")
 
-			saynn("Artica, still high from her orgasm, obeys without hesitation. She drops low to the floor and begins lapping up her own cum, her tongue working eagerly to clean up every drop.. Rahi watches with a satisfied smirk..")
+			saynn("Артика, всё ещё пребывая в экстазе после оргазма, повинуется без колебаний. Она опускается на пол и начинает слизывать собственную сперму, жадно работая языком, чтобы собрать каждую каплю.. Рахи наблюдает за этим с самодовольной ухмылкой..")
 
 		else:
-			saynn("Rahi looks down at the messy uniform..")
+			saynn("Рахи смотрит вниз на испачканную форму...")
 
-			saynn("[say=rahi]Clean it up, slut..[/say]")
+			saynn("[say=rahi]Вылижи всё, сучка..[/say]")
 
-			saynn("Artica, still high from her orgasm, obeys without hesitation. She leans in and begins licking the cum off of Rahi's fur and her uniform, her tongue working eagerly to clean up every drop.. Rahi watches with a satisfied smirk..")
+			saynn("Артика, всё ещё пребывающая в эйфории после оргазма, повинуется без колебаний. Она наклоняется и начинает слизывать сперму с меха и формы Рахи, усердно работая языком, чтобы вылизать каждую каплю... Рахи наблюдает за этим с довольной ухмылкой...")
 
-		saynn("[say=rahi]Good.. g-girl..[/say]")
+		saynn("[say=rahi]Молодец.. д-девочка..[/say]")
 
-		saynn("[say=pc]Just like you.[/say]")
+		saynn("[say=pc]Точно как ты.[/say]")
 
-		saynn("Rahi turns her head towards you.. and covers her face up..")
+		saynn("Рахи поворачивает голову в твою сторону... и прикрывает лицо руками...")
 
-		saynn("[say=rahi]..meow-w..[/say]")
+		saynn("[say=rahi]..мяу-у..[/say]")
 
-		saynn("She instantly goes into subby mode again.. what a cutie..")
+		saynn("Она мгновенно снова входит в режим покорной сучки... какая милашка...")
 
-		saynn("You let them wrap up.. and pat them both.")
+		saynn("Ты позволяешь им закончить... и похлопываешь обеих по голове.")
 
-		saynn("[say=pc]Amazing show, thank you.[/say]")
+		saynn("[say=pc]Потрясающее шоу, спасибо.[/say]")
 
-		saynn("Rahi purrs.. Artica chrrrrs..")
+		saynn("Рахи мурлычет... Артика довольно урчит...")
 
-		saynn("But it was time to go..")
+		saynn("Но пора было идти...")
 
-		addButton("Continue", "See what happens next", "endthescene_removearticastrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_removearticastrapon")
 	if(state == "do_fullout"):
 		playAnimation(StageScene.Duo, "stand", {pc="rahi", npc="artica", npcBodyState={hard=true}})
-		saynn("It's not the first time you gather them here.. So you roughly know who is more subby out of the two of them.. It was time to let Rahi loose..")
+		saynn("Ты не в первый раз собираешь их здесь... Так что ты примерно понимаешь, кто из них двоих более покорная... Пришло время выпустить Рахи на волю...")
 
-		saynn("[say=pc]You can go full out on that girl, kitty. Do anything you want.[/say]")
+		saynn("[say=pc]Можешь вовсю отрываться на этой девчонке, кошечка. Делай всё, что захочешь.[/say]")
 
-		saynn("Artica hears that and eeps, her fluffy tail flicking wildly behind her..")
+		saynn("Услышав это, Артика испуганно пискнула, а её пушистый хвост начал бешено метаться из стороны в сторону...")
 
-		saynn("Rahi nods.. and focuses her gaze on the white fluff..")
+		saynn("Рахи кивает... и устремляет взгляд на белое облако меха...")
 
-		saynn("[say=rahi]Meow..[/say]")
+		saynn("[say=rahi]Мяу...[/say]")
 
-		saynn("[say=artica]..yip..[/say]")
+		saynn("[say=artica]..тяв..[/say]")
 
-		saynn("Rahi takes a single step forward.. And Artica takes a step back.")
+		saynn("Рахи делает шаг вперед... А Артика отступает на шаг назад.")
 
-		saynn("[say=rahi]Is something wrong.. are you afraid of something?..[/say]")
+		saynn("[say=rahi]Что-то не так?.. Ты чего-то боишься?..[/say]")
 
-		saynn("Artica's ears flatten slightly, her cheeks flushing as she avoids the drilling stare..")
+		saynn("Ушки Артики слегка прижимаются, а щеки заливаются румянцем, пока она пытается избежать этого сверлящего взгляда...")
 
 		saynn("[say=artica]N..n-n.. n..[/say]")
 
-		saynn("[say=rahi]You're shivering..[/say]")
+		saynn("[say=rahi]Ты дрожишь...[/say]")
 
-		saynn("Rahi takes another step.. while the fluff runs into the wall behind her.. cornering herself.")
+		saynn("Рахи делает еще шаг... в то время как пушистая зажимается у стены позади нее, оказываясь в ловушке.")
 
-		saynn("[say=artica]Eek..[/say]")
+		saynn("[say=artica]Ой!..[/say]")
 
-		saynn("[say=rahi]I'm just a cat.. meow meow..[/say]")
+		saynn("[say=rahi]Я просто кошечка... мяу-мяу...[/say]")
 
-		saynn("Rahi steps closer and closer.. while Artica hugs the wall.")
+		saynn("Рахи подходит всё ближе и ближе... пока Артика прижимается к стене.")
 
-		saynn("[say=rahi]Aren't you just.. the prettiest little whore?..[/say]")
+		saynn("[say=rahi]А ты ведь просто... самая миленькая маленькая шлюшка?..[/say]")
 
-		saynn("Aw, she can dominate without being mean.. almost..")
+		saynn("Оу, она умеет доминировать, не будучи при этом злой... почти...")
 
-		saynn("Rahi's paw reaches out high and lands on"+str(" Artica's naked shoulder, gently caressing her fur.." if isNaked else " Artica's shoulder, gently pulling the collar of the lilac shirt to the side and caressing the fur underneath..")+"")
+		saynn("Лапа Рахи тянется вверх и ложится на"+str(" Artica's naked shoulder, gently caressing her fur.." if isNaked else " Artica's shoulder, gently pulling the collar of the lilac shirt to the side and caressing the fur underneath..")+"")
 
 		saynn("[say=artica]I.. I-I..[/say]")
 
-		saynn("[say=rahi]Don't even try to deny it, you stupid bitch..[/say]")
+		saynn("[say=rahi]Даже не вздумай отрицать это, тупая сучка...[/say]")
 
-		saynn("Softness didn't last long though, Rahi grips Artica's chin, forcing the fluff to look into her eyes.")
+		saynn("Однако мягкость длится недолго: Рахи хватает Артику за подбородок, заставляя пушистую смотреть ей прямо в глаза.")
 
-		saynn("[say=rahi]You're just a slut, aren't you? A bitch in heat, desperate for a good rough fuck.[/say]")
+		saynn("[say=rahi]Ты ведь просто шлюха, да? Сучка в течке, отчаянно жаждущая хорошего жесткого траха.[/say]")
 
-		saynn("Artica whimpers softly, the degrading words sending thrills through her body, her cock twitching"+str(" in its little cage, trying to grow hard but failing.." if isCaged else ", growing harder by the second..")+"")
+		saynn("Артика тихонько скулит; унизительные слова пронзают её тело дрожью, а член начинает дергаться."+str(" in its little cage, trying to grow hard but failing.." if isCaged else ", growing harder by the second..")+"")
 
-		addButton("Continue", "See what happens next", "all_stradle")
+		addButton("Продолжить", "Смотреть, что будет дальше", "all_stradle")
 	if(state == "all_stradle"):
 		addCharacter("rahi", ["naked"])
 		addCharacter("artica", ["naked"])
 		playAnimation(StageScene.SexCowgirlAlt, "tease", {pc="artica", npc="rahi", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Artica doesn't even resist as Rahi"+str(" forcibly undresses and then" if !isNaked else "")+" pushes her onto the floor.")
+		saynn("Артика даже не сопротивляется, когда Рахи"+str(" forcibly undresses and then" if !isNaked else "")+" валит её на пол.")
 
 		if (isCaged):
-			saynn("The feline notices that the herm is caged up and pouts..")
+			saynn("Кошка замечает, что герма заперта в клетке, и обиженно дует губы...")
 
 			if (isFullSlave):
-				saynn("[say=rahi]You're not going away without fucking me, slut..[/say]")
+				saynn("[say=rahi]Ты никуда не уйдёшь, пока не трахнешь меня, сучка..[/say]")
 
 			else:
-				saynn("[say=rahi]You're not going away without fucking her, slut..[/say]")
+				saynn("[say=rahi]Ты никуда не уйдёшь, пока не трахнешь её, сучка..[/say]")
 
-			saynn("Rahi grabs a strapon harness and quickly secures it around Artica's waist, giving her a fake canine cock.. over her real useless one..")
+			saynn("Рахи хватает стрэп-он и быстро закрепляет его на талии Артики, надевая на неё фальшивый собачий член... поверх её собственного бесполезного..")
 
-			saynn("[say=artica]Eek.. my..[/say]")
+			saynn("[say=artica]Ой.. мой..[/say]")
 
-			saynn("[say=rahi]Shh..[/say]")
+			saynn("[say=rahi]Тсс..[/say]")
 
 		else:
-			saynn("[say=artica]Eek..[/say]")
+			saynn("[say=artica]Ой!..[/say]")
 
-			saynn("[say=rahi]Shh..[/say]")
+			saynn("[say=rahi]Тсс..[/say]")
 
-		saynn("Rahi stands over Artica.. and then gently wiggles her fluffy butt out of her shorts, letting them fall on the fluff's face.")
+		saynn("Рахи нависает над Артикой... а затем плавно вытряхивает свою пушистую задницу из шорт, позволяя им упасть прямо на пушистую мордочку.")
 
-		saynn("[say=rahi]Oops..[/say]")
+		saynn("[say=rahi]Ой..[/say]")
 
-		saynn("She kicks them away, opening a great view of her wet dripping sex. Rahi seems to be just as aroused as the herm..")
+		saynn("Она отшвыривает их в сторону, открывая великолепный вид на свою влажную, сочащуюся киску. Рахи, кажется, возбуждена не меньше этой кошечки..")
 
-		saynn("The shirt flies off too, followed by Rahi straddling Artica's hips, already grinding her slit against the "+str("hard knotted cock" if !isStrapon else "rubber knotted cock")+"..")
+		saynn("Рубашка тоже слетает, а следом Рахи запрыгивает верхом на бедра Артики, уже с силой втирая свою щель в "+str("hard knotted cock" if !isStrapon else "rubber knotted cock")+"..")
 
-		saynn("[say=rahi]You like this, don't you..[/say]")
+		saynn("[say=rahi]Тебе ведь это нравится, правда..[/say]")
 
-		saynn("Rahi purrs while dragging her sensitive folds along the veiny surface of Artica's cock, coating it with her juices.")
+		saynn("Рахи мурлычет, проводя своими чувствительными складками по вздутому члену Артики, смазывая его своим соком.")
 
-		saynn("[say=rahi]Just as much as you love being called a slut and being treated like the whore that you are..[/say]")
+		saynn("[say=rahi]Так же сильно, как тебе нравится, когда тебя называют шлюхой и обращаются с тобой как с настоящей блудницей..[/say]")
 
-		saynn("Artica's breath hitches, her body squirming under the needy feline..")
+		saynn("У Артики перехватывает дыхание, её тело извивается под ненасытной кошкой..")
 
-		saynn("[say=artica]Y-yes.. I d-do..[/say]")
+		saynn("[say=artica]Д-да.. н-нравится..[/say]")
 
-		saynn("You can barely hear her..")
+		saynn("Её голос едва слышен..")
 
-		saynn("With a sly grin, Rahi positions herself above that"+str(" rubber" if isStrapon else " juicy")+" cock, her pussy pushing on the tip, trying to engulf it..")
+		saynn("С хитрой ухмылкой Рахи устраивается прямо над этим"+str(" rubber" if isStrapon else " juicy")+"член, её киска давит на кончик, пытаясь поглотить его целиком..")
 
-		saynn("[say=rahi]Good girl.. Let's see how well you can fuck, slut..[/say]")
+		saynn("[say=rahi]Хорошая девочка.. Посмотрим, как хорошо ты умеешь трахаться, шлюшка..[/say]")
 
-		saynn("Rahi looks at you.. waiting for your nod.")
+		saynn("Рахи смотрит на тебя.. ожидая твоего кивка.")
 
-		addButton("Nod", "Let them fuck", "all_fuck")
+		addButton("Кивнуть", "Пусть трахаются", "all_fuck")
 	if(state == "all_fuck"):
 		playAnimation(StageScene.SexCowgirlAlt, "sex", {pc="artica", npc="rahi", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("As soon as you nod, Rahi brings herself down onto Artica's shaft, her slick pussy enveloping it nicely..")
+		saynn("Как только ты киваешь, Рахи опускается на член Артики, её влажная киска плотно обволакивает его..")
 
-		saynn("[say=artica]Ah.. s-so tight..[/say]")
+		saynn("[say=artica]Ах.. т-так тесно..[/say]")
 
 		if (isStrapon):
-			saynn("The fluff moans.. wait.. how..")
+			saynn("Пушистая стонет.. погоди.. как..")
 
-		saynn("[say=rahi]Oh yeah?.. Focus on pleasing it..[/say]")
+		saynn("[say=rahi]О да?.. Сосредоточься на том, чтобы доставить ему удовольствие..[/say]")
 
-		saynn("Rahi raises a bit.. just to let go and bring herself down onto Artica who instinctively thrusts her hips upwards, eager to obey the feline.")
+		saynn("Рахи немного приподнимается.. лишь для того, чтобы снова опуститься на Артику, который инстинктивно подает бедра вверх, стремясь угодить кошечке.")
 
-		saynn("[say=rahi]Ah.. Is this all you've got, b-bitch?..[/say]")
+		saynn("[say=rahi]Ах.. И это всё, на что ты способна, с-сучка?..[/say]")
 
-		saynn("Kitty grips Artica's thighs, digging her claws into them.. while riding that cock hard, bouncing up and down. All the while Artica is bucking her hips more, trying to force more of her"+str(" fake" if isStrapon else " ")+" canine cock inside..")
+		saynn("Китти вцепляется когтями в бёдра Артики, яростно скача на её члене и подпрыгивая вверх-вниз. В это время Артика всё сильнее выгибает бёдра, пытаясь заглотить как можно больше её"+str(" fake" if isStrapon else " ")+"собачьего члена..")
 
-		saynn("[say=artica]I'm.. ah.. I-I'm.. t-trying.. M-Miss Rahi..[/say]")
+		saynn("[say=artica]Я.. ах.. П-пытаюсь.. М-мисс Рахи..[/say]")
 
-		saynn("[say=rahi]Hh-h.ah..[/say]")
+		saynn("[say=rahi]Хх-х.. ах..[/say]")
 
-		saynn("Rahi closes her eyes and pants softly, cute girly moans keep leaving her lips.. She catches herself getting close and losing her dom energy.. and decides to switch things up.")
+		saynn("Рахи закрывает глаза и тихо дышит, с её губ срываются милые девчачьи стоны.. Почувствовав, что она вот-вот потеряет свою доминантную энергию, она решает сменить тактику.")
 
-		addButton("Continue", "See what happens next", "all_sexlick")
+		addButton("Продолжить", "Смотреть, что будет дальше", "all_sexlick")
 	if(state == "all_sexlick"):
 		playAnimation(StageScene.SexPawLick, "inside", {pc="artica", npc="rahi", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("She brings the fluff up to a kneeling position.. while laying down herself.. before pushing her hind paw directly into Artica's face.")
+		saynn("Она принимает положение на коленях, при этом сама ложится на спину, а затем подставляет свою заднюю лапу прямо к лицу Артики.")
 
 		if (isFullSlave):
-			saynn("[say=rahi]I guess you need some extra incentive to do better..[/say]")
+			saynn("[say=rahi]Думаю, тебе нужен дополнительный стимул, чтобы стараться лучше..[/say]")
 
 		else:
-			saynn("[say=rahi]Kitty guesses you need some extra incentive to do better..[/say]")
+			saynn("[say=rahi]Китти, полагаю, тебе нужен дополнительный стимул, чтобы стараться лучше..[/say]")
 
-		saynn("Artica sees the rough pawpads.. her mouth watering.. until Rahi baps her with the clawed toes.")
+		saynn("Артика видит грубые подушечки лап, у неё текут слюнки.. пока Рахи не шлёпает её когтистыми пальцами.")
 
-		saynn("[say=rahi]Lick already..[/say]")
+		saynn("[say=rahi]Ну же, лижи..[/say]")
 
-		saynn("The fluff nods and digs her face into the paw, flicking her tongue out and dragging it over the bean, making Rahi squirm and her pussy clench.")
+		saynn("Пушистая киса кивает и утыкается мордочкой в лапку, высовывая язык и слизывая нежность с подушечек, отчего Рахи начинает извиваться, а её киска судорожно сжимается.")
 
-		saynn("[say=rahi]Ah..[/say]")
+		saynn("[say=rahi]Ах..[/say]")
 
-		addButton("Continue", "See what happens next", "all_sexlick_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "all_sexlick_sex")
 	if(state == "all_sexlick_sex"):
 		playAnimation(StageScene.SexPawLick, "sex", {pc="artica", npc="rahi", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Artica remembers that her"+str(" rubber" if isStrapon else "")+" cock is still inside the kitty.. She proceeds to slowly thrust her hips, fucking that pussy while licking her paw, making her clench harder.")
+		saynn("Артика вспоминает, что её"+str(" rubber" if isStrapon else "")+" член всё ещё внутри кошечки... Она начинает медленно двигать бёдрами, трахая эту киску и одновременно лизая лапку, заставляя её сжиматься ещё сильнее.")
 
-		saynn("[say=rahi]Ah.. f-fuck.. you're a good little bitch..[/say]")
+		saynn("[say=rahi]Ах.. б-блядь.. ты хорошая маленькая сучка..[/say]")
 
-		saynn("Rahi rubs her hind paw against Artica's face, massaging her blushing cheeks with her beans.")
+		saynn("Рахи трется задней лапкой о лицо Артики, массируя её раскрасневшиеся щеки своими подушечками.")
 
-		saynn("[say=artica]Nyahh..[/say]")
+		saynn("[say=artica]Нья-а-ах...[/say]")
 
-		saynn("She catches one of the toes.. and begins sucking on it.. It makes her pick up the pace.")
+		saynn("Артика перехватывает один из пальцев... и начинает его сосать... Это заставляет её ускориться.")
 
-		saynn("[say=rahi]F-faster.. fuck that wet cunt.. rail it.. harder..[/say]")
+		saynn("[say=rahi]Б-быстрее.. трахай эту мокрую щелку.. всаживайся.. сильнее..[/say]")
 
-		saynn("Rahi's dominance seems to be slipping hard as her mind gets flooded with pleasure.")
+		saynn("Доминирование Рахи стремительно ускользает, пока её разум затопляет волна наслаждения.")
 
-		addButton("Continue", "See what happens next", "all_sexlick_sex_fast")
+		addButton("Продолжить", "Смотреть, что будет дальше", "all_sexlick_sex_fast")
 	if(state == "all_sexlick_sex_fast"):
 		playAnimation(StageScene.SexPawLick, "fast", {pc="artica", npc="rahi", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Artica is panting too.. but she obeys, pounding into Rahi's pussy while holding her hind paw and nuzzling it..")
+		saynn("Артика тоже тяжело дышит... но она подчиняется, вколачиваясь в киску Рахи, при этом сжимая её заднюю лапку и лаская её носом...")
 
-		saynn("[say=artica]I'm.. g-gonna.. ah.[/say]")
+		saynn("[say=artica]Я.. с-сейчас.. ах.[/say]")
 
-		saynn("[say=rahi]M-meow-w.. y-you're close, w-whore?..[/say]")
+		saynn("[say=rahi]М-мяу.. т-ты так близко, ш-шлюха?..[/say]")
 
 		if (isStrapon):
-			saynn("Somehow Artica finds enough stimulation in this, her caged cock is twitching hard under the strapon harness, you notice a pool of juices gathering up under her, her own pussy dripping eagerly..")
+			saynn("Каким-то образом Артика находит в этом достаточно стимуляции; её член в клетке сильно дергается под ремнями страпона. Ты замечаешь лужицу соков, скапливающуюся под ней — её собственная киска жадно течет.")
 
-			saynn("[say=rahi]Oh y-yeah.. W-what a slut.. S-sure.. Knot"+str(" me.. I want it all.." if isFullSlave else "her.. Kitty wants it all..")+"[/say]")
+			saynn("[say=rahi]Ох, д-да.. Какая ж с-сучка.. К-конечно.. Узел"+str(" me.. I want it all.." if isFullSlave else "her.. Kitty wants it all..")+"[/say]")
 
-			saynn("[say=artica]Y-yes.. M-Miss Rahi..[/say]")
+			saynn("[say=artica]Д-да.. М-мисс Рахи..[/say]")
 
-			saynn("Artica begins going hard, trying to force the rubber knot inside too, the harness putting pressure on her chastity cage while she does so..")
+			saynn("Артика начинает двигаться жестче, пытаясь протолкнуть внутрь и резиновый узел; при этом ремни страпона давят на её девственную клетку.")
 
 		else:
-			saynn("Artica's cock is twitching hard, the knot at the base inflating into a fat meaty orb. You notice a pool of juices gathering up under her, her own pussy dripping eagerly.")
+			saynn("Член Артики сильно дергается, узел у основания раздувается в жирный мясной шар. Ты замечаешь лужицу соков, скапливающуюся под ней — её собственная киска жадно течет.")
 
-			saynn("[say=rahi]Oh y-yeah.. W-what a slut.. S-sure.. Fill "+str("me up.. Knot my needy pussy.. cum inside.." if isFullSlave else "her up.. Knot her needy pussy.. cum inside..")+"[/say]")
+			saynn("[say=rahi]Ох, д-да.. Какая ж с-сучка.. К-конечно.. Наполни "+str("me up.. Knot my needy pussy.. cum inside.." if isFullSlave else "her up.. Knot her needy pussy.. cum inside..")+"[/say]")
 
-			saynn("[say=artica]Y-yes.. M-Miss Rahi..[/say]")
+			saynn("[say=artica]Д-да.. М-мисс Рахи..[/say]")
 
-			saynn("Artica begins going hard, trying to force the knot inside too, stretching Rahi's pussy to its limits..")
+			saynn("Артика начинает двигаться жестче, пытаясь протолкнуть внутрь и узел, растягивая киску Рахи до предела.")
 
-		addButton("Continue", "See what happens next", "all_sexlick_sex_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "all_sexlick_sex_cum")
 	if(state == "all_sexlick_sex_cum"):
 		playAnimation(StageScene.SexPawLick, "inside", {pc="artica", npc="rahi", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("With a final, forceful thrust, Artica's knot slips past Rahi's entrance.. locking them together.")
+		saynn("Последним мощным толчком узел Артики проскальзывает за вход в киску Рахи... намертво сцепляя их вместе.")
 
-		saynn("[say=rahi]AH!..[/say]")
+		saynn("[say=rahi]АХ!..[/say]")
 
-		saynn("[say=artica]Nyahh!..[/say]")
+		saynn("[say=artica]Нья-а!..[/say]")
 
 		if (!isStrapon):
-			saynn("Kitty arches her back as thick ropes of cum get shot deep into her womb, her pussy squeezing and milking every drop from Artica's twitching balls.. Both fluffs are shaking hard, their moans echoing around the cell..")
+			saynn("Китти выгибает спину, когда густые струи спермы влетают глубоко в её матку; её киска сжимается, высасывая каждую каплю из подёргивающихся яиц Артики... Обе пушинки сильно дрожат, и их стоны эхом разносятся по камере...")
 
 			if (isFullSlave && !getCharacter("rahi").isVisiblyPregnant()):
-				saynn("[say=rahi]Breed meeee-e..[/say]")
+				saynn("[say=rahi]Оплодотвори меня-а-а!..[/say]")
 
-			saynn("Such eager girls, wow. Getting so frisky right in front of you.")
+			saynn("Какие жадные девчонки, вау. Прямо перед твоими глазами разыгрались.")
 
-			saynn("As the last waves of their orgasm subside, Artica collapses onto Rahi, panting heavily..")
+			saynn("Когда последние волны оргазма утихают, Артика тяжело дыша падает на Рахи...")
 
 		else:
-			saynn("Kitty arches her back as her pussy is now squeezing the whole length of that strapon, trying to milk it, its tip resting in her womb. At the same time, Artica's cum is dripping onto the floor, leaking from under the harness.. Both fluffs are shaking hard, their moans echoing around the cell..")
+			saynn("Китти выгибает спину, её киска теперь сжимает фаллоимитатор по всей длине, пытаясь выжать из него всё до капли, пока его кончик упирается в матку. В то же время сперма Артики капает на пол, вытекая из-под портупеи... Обе пушинки сильно дрожат, и их стоны эхом разносятся по камере...")
 
-			saynn("Such eager girls, wow. Getting so frisky right in front of you.")
+			saynn("Какие жадные девчонки, вау. Прямо перед твоими глазами разыгрались.")
 
-			saynn("As the last waves of their orgasm subside, Artica collapses onto Rahi, panting heavily..")
+			saynn("Когда последние волны оргазма утихают, Артика тяжело дыша падает на Рахи...")
 
-		saynn("[say=rahi]Myaa-aaah..[/say]")
+		saynn("[say=rahi]Мя-а-а-ах!..[/say]")
 
-		saynn("[say=artica]A-are you okay, M-miss Rahi?..[/say]")
+		saynn("[say=artica]В-вы в порядке, м-мисс Рахи?..[/say]")
 
-		saynn("[say=rahi]Nyeaaahhh..[/say]")
+		saynn("[say=rahi]Нья-а-а-ах!..[/say]")
 
-		saynn("Kitty begins licking Artica's cheek.. while still having her full length inside her..")
+		saynn("Китти начинает вылизывать щеку Артики... при этом всё еще оставаясь в ней на всю длину...")
 
-		saynn("[say=pc]Looks like you broke her a bit.[/say]")
+		saynn("[say=pc]Похоже, ты её немного сломал.[/say]")
 
-		saynn("Artica blushes..")
+		saynn("Артика краснеет...")
 
-		saynn("[say=artica]S-sorry.. ah.. she is clenching so hard..[/say]")
+		saynn("[say=artica]П-прости.. ах.. она так сильно сжимается..[/say]")
 
-		saynn("[say=rahi]Fff.. uuhh..[/say]")
+		saynn("[say=rahi]Ффф.. ууухх..[/say]")
 
-		saynn("[say=pc]You're good, Artica. Let her squirm..[/say]")
+		saynn("[say=pc]Всё в порядке, Артика. Пусть поерзает..[/say]")
 
-		saynn("And so you let them cuddle like that for some time..")
+		saynn("И вот вы позволяете им так обниматься какое-то время...")
 
-		saynn("After that, you help Rahi to come back to senses.. and send them both off.")
+		saynn("После этого вы помогаете Рахи прийти в себя... и отпускаете их обеих.")
 
-		saynn("It was time to go.")
+		saynn("Пришло время уходить.")
 
-		addButton("Continue", "See what happens next", "endthescene_removearticastrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_removearticastrapon")
 func addStraponButtons(nextstateid):
 	var strapons = GM.pc.getStrapons()
 	for strapon in strapons:

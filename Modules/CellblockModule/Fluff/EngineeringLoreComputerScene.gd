@@ -6,154 +6,154 @@ func _init():
 func _run():
 
 	if(state == ""):
-		saynn("The screen displays the following information:")
+		saynn("На экране отображается следующая информация:")
 
 		sayn("-------------")
 
-		sayn("[b]Life Support Systems:[/b]")
+		sayn("[b]Системы жизнеобеспечения:[/b]")
 
-		sayn("- Oxygen Level: 98%")
+		sayn("- Уровень кислорода: 98%")
 
-		sayn("- Carbon Dioxide Level: 0.05%")
+		sayn("- Уровень углекислого газа: 0,05%")
 
-		sayn("- Unknown gases: 2%")
+		sayn("- Неизвестные газы: 2%")
 
-		sayn("- Temperature: 72°F")
+		sayn("- Температура: 72°F")
 
-		sayn("- Humidity: 50%")
+		sayn("- Влажность: 50%")
 
-		saynn("Warning: Air scrubbers require maintenance")
+		saynn("Внимание: требуется техобслуживание скрубберов воздуха")
 
-		sayn("[b]Power Systems:[/b]")
+		sayn("[b]Энергосистемы:[/b]")
 
-		sayn("- Energy level: 80%")
+		sayn("- Уровень энергии: 80%")
 
-		sayn("- Generator status: Online")
+		sayn("- Статус генератора: В сети")
 
-		sayn("- Solar panels status: Online")
+		sayn("- Статус солнечных панелей: В сети")
 
-		saynn("Warning: BT Batteries damaged or removed")
+		saynn("Внимание: БТ-батареи повреждены или извлечены")
 
-		sayn("[b]Propulsion Systems:[/b]")
+		sayn("[b]Двигательные установки:[/b]")
 
-		sayn("- Orbit: Stable")
+		sayn("- Орбита: Стабильная")
 
-		saynn("- Star System: <ERROR, ACCESS DENIED>")
+		saynn("- Звездная система: <ОШИБКА, ДОСТУП ЗАПРЕЩЕН>")
 
-		sayn("[b]Resource Monitoring:[/b]")
+		sayn("[b]Мониторинг ресурсов:[/b]")
 
-		sayn("- Total Prisoners: 5300")
+		sayn("- Всего заключенных: 5300")
 
-		sayn("- Staff Members: 1800")
+		sayn("- Персонал: 1800")
 
-		sayn("- Nursery: "+str(120+GM.CS.getChildrenAmountOf("pc")))
+		sayn("- Детский сад: "+str(120+GM.CS.getChildrenAmountOf("pc")))
 
-		saynn("- Uranium Supply: Sufficient")
+		saynn("- Запас урана: Достаточный")
 
-		sayn("[b]Communication Systems:[/b]")
+		sayn("[b]Системы связи:[/b]")
 
-		sayn("- Status: Connected")
+		sayn("- Статус: Подключено")
 
-		sayn("- Incoming/Outgoing Transmissions: None")
+		sayn("- Входящие/Исходящие передачи: Нет")
 
-		sayn("- Bluespace Crystal Frequency: <ERROR, ACCESS DENIED>")
+		sayn("- Частота кристаллов блюспейса: <ОШИБКА, ДОСТУП ЗАПРЕЩЕН>")
 
-		sayn("- Backup Crystal Frequency: <CAPTAIN ACCESS REQUIRED>")
+		sayn("- Частота резервного кристалла: <ТРЕБУЕТСЯ ДОСТУП КАПИТАНА>")
 
-		saynn("- Inmate Collar Frequency: 457bfe76-7618-404c")
+		saynn("- Частота ошейников заключенных: 457bfe76-7618-404c")
 
-		addButton("Documents", "Check the documents folder", "documents")
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Документы", "Проверить папку с документами", "documents")
+		addButton("Уйти", "Пора идти", "endthescene")
 
 	if(state == "documents"):
-		saynn("The monitor shows that there are 2 documents stored.")
+		saynn("Монитор показывает, что хранится 2 документа.")
 
-		sayn("1. Job Posting v1.0 final corrected (2) copy.pdf")
-		saynn("2. corrections.html")
+		sayn("1. Вакансия v1.0 финальная исправленная (2) копия.pdf")
+		saynn("2. исправления.html")
 
-		addButton("Document 1", "Check the first document", "document_1")
-		addButton("Document 2", "Check the second document", "document_2")
-		addButton("Back", "Go to the previous menu", "")
+		addButton("Документ 1", "Проверить первый документ", "document_1")
+		addButton("Документ 2", "Проверить второй документ", "document_2")
+		addButton("Назад", "Вернуться в предыдущее меню", "")
 
 
 	if(state == "document_1"):
-		saynn("Available positions: Maintenance Engineer, Telecoms Engineer, (Any) Engineer")
+		saynn("Доступные вакансии: Инженер по техобслуживанию, Инженер связи, Инженер (любой специализации)")
 
-		saynn("Location: Broken Dreams Correctional Center, Asteroid XJ-blalalaa")
+		saynn("Местоположение: Исправительный центр «Разбитые мечты», астероид XJ-blalalaa")
 
-		sayn("Job Description:")
+		sayn("Описание вакансии:")
 
-		saynn("We are seeking highly skilled and experienced engineers to join our team at the space station Broken Dreams Correctional Center (Or BDCC for short). As you may have noticed, BDCC is a prison facility, housing thousands of the most dangerous criminals from all corners of our galaxy. Have no worry because you will be protected from any dangers by our huge team of professional guards. The location of this prison is classified so you will have to be relocated for semi-permanent living but AlphaCorp will provide everything necessary, including your transit. In exchange, you will be paid at least a minimal salary, enough to cover your living needs and much more. As an engineer, you will be responsible for the smooth operation and maintenance of all systems on board, including advanced resource excavation systems, life support, and security measures.")
+		saynn("Мы ищем высококвалифицированных и опытных инженеров, готовых присоединиться к нашей команде на космической станции «Разбитые мечты» (сокращенно BDCC). Как вы могли заметить, BDCC — это тюремный объект, где содержатся тысячи самых опасных преступников со всех уголков нашей галактики. Не беспокойтесь: ваша безопасность обеспечена нашей огромной командой профессиональных охранников. Местоположение тюрьмы засекречено, поэтому вам придется переехать на полупостоянное место жительства, но AlphaCorp предоставит всё необходимое, включая транспорт. Взамен вы будете получать как минимум минимальную зарплату, которой хватит на покрытие всех жизненных потребностей и даже больше. Как инженер, вы будете отвечать за бесперебойную работу и обслуживание всех бортовых систем, включая передовые системы добычи ресурсов, системы жизнеобеспечения и меры безопасности.")
 
-		sayn("Responsibilities:")
+		sayn("Обязанности:")
 
-		sayn("- Maintain and repair the exterior of the station to withstand the constant exposure to solar radiation and extreme temperatures.")
+		sayn("- Поддержание и ремонт внешних конструкций станции для защиты от постоянного солнечного излучения и экстремальных температур.")
 
-		sayn("- Oversee the resource excavation systems, which are crucial for maintaining the asteroid's orbit and for power generation.")
+		sayn("- Контроль систем добычи ресурсов, необходимых для поддержания орбиты астероида и выработки электроэнергии.")
 
-		sayn("- Monitor and troubleshoot the security systems to prevent any attempts at escape or sabotage.")
+		sayn("- Мониторинг и устранение неисправностей в системах безопасности для предотвращения попыток побега или саботажа.")
 
-		sayn("- Coordinate with the prison staff and oversee the daily operations of the prison.")
+		sayn("- Координация действий с персоналом тюрьмы и контроль повседневных операционных процессов.")
 
-		saynn("- Monitor the prisoners and ensure their basic needs are met.")
+		saynn("- Надзор за заключенными и обеспечение удовлетворения их базовых потребностей.")
 
-		sayn("Qualifications:")
+		sayn("Требования:")
 
-		sayn("- Bachelor's degree in engineering or related field (Would be a great plus)")
+		sayn("- Степень бакалавра в области инженерного дела или смежной области (будет большим плюсом)")
 
-		sayn("- At least 5 years of experience in a similar role (Not strictly required)")
+		sayn("- Опыт работы на аналогичной должности не менее 5 лет (не является строго обязательным)")
 
-		sayn("- Strong knowledge of propulsion systems, life support systems, and security systems (We will teach you everything, just apply!)")
+		sayn("- Глубокие знания двигательных установок, систем жизнеобеспечения и систем безопасности (мы всему научим, просто подавай заявку!)")
 
-		sayn("- Experience working in a remote or isolated environment (It’s not that bad, really)")
+		sayn("- Опыт работы в удаленной или изолированной среде (На самом деле, всё не так уж плохо)")
 
-		sayn("- Strong problem-solving and analytical skills (Being strong would help you a lot, yes)")
+		sayn("- Сильные аналитические способности и навыки решения проблем (Сила бы вам очень пригодилась, это точно)")
 
-		sayn("- Excellent communication and interpersonal skills (If you can talk, we can talk)")
+		sayn("- Отличные коммуникативные навыки и умение ладить с людьми (Если вы умеете говорить, то и мы сможем договориться)")
 
-		saynn("- This is an excellent opportunity to work in a challenging and unique environment, where you will be responsible for ensuring the safety and security of one of the galaxy's most high-security prisons. If you have a passion for engineering and are up for the challenge, we encourage you to apply. (PLEASE)")
+		saynn("- Это великолепная возможность поработать в уникальных и непростых условиях, где вы будете отвечать за безопасность одной из самых охраняемых тюрем в галактике. Если вы горите инженерным делом и готовы принять вызов, мы призываем вас подать заявку. (ПОЖАЛУЙСТА)")
 
-		sayn("Application:")
+		sayn("Заявка:")
 
-		sayn("If you meet the qualifications and are interested in applying for this position, please submit your resume and cover letter for consideration.")
+		sayn("Если вы соответствуете квалификации и заинтересованы в этой вакансии, пожалуйста, пришлите свое резюме и сопроводительное письмо для рассмотрения.")
 
-		saynn("We thank all applicants for their interest in this position, however, only those selected for an interview will be contacted.")
+		saynn("Мы благодарим всех кандидатов за интерес к этой позиции, однако связаться удастся только с теми, кто будет отобран для собеседования.")
 
-		saynn("End of document.")
+		saynn("Конец документа.")
 		
-		addButton("Back", "Go to the previous menu", "documents")
+		addButton("Назад", "Вернуться в предыдущее меню", "documents")
 
 
 	if(state == "document_2"):
-		saynn("<Warning!> Unable to display hypertext, outputting raw data instead")
+		saynn("<Внимание!> Гипертекст отобразить не удалось, вывод сырых данных")
 
-		sayn("<Head>")
+		sayn("<Заголовок>")
 
-		sayn("Email conversation with Alex Rynard")
+		sayn("Переписка по электронной почте с Алексом Ринардом")
 
 		sayn("</Head>")
 
 		sayn("<Body>")
 
-		sayn("<message from=Alex Rynard>Hey, do we really have to lie in our job postings? They will know that there is nothing advanced in the way we mine resources. There is nothing advanced about this prison at all.</message>")
+		sayn("<message from=Alex Rynard>Слушай, нам реально обязательно врать в объявлениях о вакансиях? Они же поймут, что в наших методах добычи ресурсов нет ничего передового. В этой тюрьме вообще нет ничего передового.</message>")
 
-		sayn("<message from=John, HR>no one is gonna sign up otherwise. relax, they won’t be able to tell anyone anyway</message>")
+		sayn("<message from=John, HR>Иначе никто и не подпишется. Расслабься, они всё равно никому не смогут об этом рассказать</message>")
 
-		sayn("<message from=Alex Rynard>Yeah, it’s still scummy, you know? And also. Guards protecting us? Really? Everyone is out for themselves out here.</message>")
+		sayn("<message from=Alex Rynard>Да, всё равно это выглядит крысино, понимаешь? И ещё... Охрана, которая нас защищает? Серьёзно? Здесь каждый сам за себя.</message>")
 
-		sayn("<message from=John, HR>just let me do my job, I don’t get paid enough to care about this shit</message>")
+		sayn("<message from=John, HR>Просто дай мне делать мою работу, мне платят недостаточно, чтобы париться из-за этого дерьма</message>")
 
-		sayn("<message from=Alex Rynard>*Sigh*. Everything else should be fine. Remove the asteroid name from the location before posting it. Okay?</message>")
+		sayn("<message from=Alex Rynard>*Вздох*. В остальном всё должно быть нормально. Убери название астероида из локации перед публикацией. Окей?</message>")
 
-		sayn("<message from=John, HR>fine, jeeez</message>")
+		sayn("<message from=John, HR>Ладно, господи</message>")
 
-		sayn("<message from=Alex Rynard>Remove the non-funny additions to the Qualifications too. Yes, we’re desperate for more engineers but no need to beg.</message>")
+		sayn("<message from=Alex Rynard>И убери из раздела «Квалификация» все эти несмешные приписки. Да, нам отчаянно нужны инженеры, но не нужно же буквально выпрашивать их.</message>")
 
-		sayn("<message from=John, HR>oh cmon. fine, I will do it when I can, I’m on a break</message>")
+		sayn("<message from=John, HR>да ладно тебе. ладно, сделаю, как только смогу, у меня сейчас перерыв</message>")
 
 		sayn("</Body>")
 		
-		addButton("Back", "Go to the previous menu", "documents")
+		addButton("Назад", "Вернуться в предыдущее меню", "documents")
 
 func _react(_action: String, _args):
 

@@ -9,400 +9,400 @@ func _run():
 	if(state == ""):
 		addCharacter("kidlat", ["naked"])
 		playAnimation(StageScene.Grope, "grope", {pc="kidlat", npc="pc", bodyState={naked=true, hard=true}})
-		saynn("The fur around the crotch of that kitty is shining in the faint light.. might as well help that poor needy shopkeeper.")
+		saynn("Мех в паху этой кошечки так и блестит в тусклом свете... стоит помочь этой бедной, жаждущей лавке.")
 
-		saynn("You approach her closer.. and take in the sight of her bound body. Her black fur has that fancy cyan pattern on her belly that you can now admire in full detail. Her arms have blue zig-zags on them.. they look like lightning. Her breasts have a cute dark spot in the shape of a heart.")
+		saynn("Ты подходишь ближе... и во всех подробностях разглядываешь её связанное тело. На её чёрном меху на животе виден тот самый изысканный бирюзовый узор. На лапах — синие зигзаги, похожие на молнии. А на её груди красуются милые тёмные пятнышки в форме сердечек.")
 
-		saynn("Kidlat's whiskers are twitching from your breath.")
+		saynn("Усы Кидлат подёргиваются от твоего дыхания.")
 
-		saynn("[say=kidlat]Hey.. uh.. lad. You don't have to be so close, I'm not for sale, haha..[/say]")
+		saynn("[say=kidlat]Эй... э-э... парень. Тебе не обязательно подходить так близко, я не продаюсь, ха-ха...[/say]")
 
-		saynn("One of your hands reaches out and cups her firm breasts, making them bounce up and down a few times. A silent gasp escapes Kidlat..")
+		saynn("Одна твоя рука тянется к ней и обхватывает её упругую грудь, заставляя её несколько раз подпрыгнуть. У Кидлат вырывается беззвучный вздох...")
 
-		saynn("[say=kidlat]Come on, now. Buy something or leave..[/say]")
+		saynn("[say=kidlat]Ну же. Купи что-нибудь или уходи...[/say]")
 
-		saynn("Her chest is much more interesting than her wares and she knows that. She tries to take a step back but you just follow, your hand lands back on her breast and squeezes it.")
+		saynn("Её грудь куда интереснее её товаров, и она это знает. Она пытается сделать шаг назад, но ты просто следуешь за ней, и твоя рука снова ложится на её грудь, сжимая её.")
 
-		saynn("[say=kidlat]Ah~.. Hey, now.. Why are you touching me?[/say]")
+		saynn("[say=kidlat]Ах~... Эй, ну ты чего... Зачем ты меня трогаешь?[/say]")
 
-		saynn("You don't respond, instead just choosing to continue playing with her, your second hand joining, caressing her cute tits. You can feel her blue nips harden under your touch, and you can't help but smile. Kidlat's breathing becomes shallow.. you can hear her panting quietly.")
+		saynn("Ты не отвечаешь, предпочитая продолжать ласки; вторая рука присоединяется к первой, нежно поглаживая её милые сиськи. Ты чувствуешь, как под твоими пальцами твердеют её синие соски, и невольно улыбаешься. Дыхание Кидлат становится прерывистым... ты слышишь её тихое, сбивчивое сопение.")
 
-		saynn("[say=kidlat]Mm.h..[/say]")
+		saynn("[say=kidlat]Мм... х...[/say]")
 
-		saynn("She takes a few more steps back.. until her back gets pressed against one of the walls.")
+		saynn("Она делает еще несколько шагов назад... пока не упирается спиной в одну из стен.")
 
-		saynn("[say=kidlat]Oopsie.. now I'm cornered.. We can talk this out, right?..[/say]")
+		saynn("[say=kidlat]Ой-ой... теперь я в ловушке... Мы ведь можем договориться, да?..[/say]")
 
-		saynn("You cup her breasts again, fingers sinking into her soft, fur-covered squishy orbs. You lift them slightly before letting them bounce back into place, drawing another gasp from the feline.")
+		saynn("Ты снова обхватываешь её грудь ладонями, погружая пальцы в мягкие, покрытые мехом упругие шары. Ты слегка приподнимаешь их, а затем отпускаешь, позволяя им спружинить обратно, что заставляет кошачью девицу снова судорожно вздохнуть.")
 
-		saynn("[say=kidlat]Ah.. how about you don't go too far.. and then I won't have a reason to resist.. much..[/say]")
+		saynn("[say=kidlat]Ах... только не заходи слишком далеко... тогда у меня не будет причин особо... сопротивляться...[/say]")
 
-		saynn("Your fingers find her nips and pinch them, making her hips jerk slightly, your actions clearly sending jolts of pleasure through her body. You roll the hardened buds between your digits, twisting them just enough to make her squirm.")
+		saynn("Твои пальцы находят её соски и щипают их, заставляя её бедра слегка дернуться; твои действия явно посылают разряды удовольствия по всему её телу. Ты перекатываешь затвердевшие бугорки между пальцами, слегка скручивая их, чтобы заставить её извиваться.")
 
-		saynn("[say=kidlat]Bloody 'ell..[/say]")
+		saynn("[say=kidlat]Черт возьми...[/say]")
 
-		saynn("You notice her rubbing her legs against each other more.. There is an obvious wet spot of fur growing on her inner thighs. Kidlat lets out a soft meow as your hands release her breasts, only to slide lower, tracing the cyan fur of her belly until you reach her needy slit.")
+		saynn("Ты замечаешь, что она всё сильнее трется бедрами друг о друга... На внутренней стороне её бедер отчетливо проступает влажное пятно на меху. Кидлат издает тихое мяуканье, когда твои руки отпускают её грудь и скользят ниже, оглаживая бирюзовый мех на животе, пока не достигают её жаждущей щели.")
 
-		saynn("Indeed.. she is all damp down there. You run two digits along the folds and teasing the little blue sensitive clit with little rubs. Kidlat's thighs tremble.. and she tries to press her legs together.. but there is no escape.")
+		saynn("И впрямь... там всё совсем мокрое. Ты проводишь двумя пальцами вдоль складок, дразня маленькую синюю чувствительную клитор легкими поглаживаниями. Бедра Кидлат дрожат... она пытается свести ноги вместе... но спасения нет.")
 
-		saynn("[say=kidlat]Mmf.. damn it.. You have a.. soft touch.. but you don't h-have to..[/say]")
+		saynn("[say=kidlat]Ммм... черт... У тебя... нежные руки... но тебе не об-обязательно...[/say]")
 
-		saynn("Despite her words, her body whispers something else.. it's arching into your touch, desperate.. One of your hands still rests on her breasts, fondling them.. while the second spreads her aroused folds.. catching a few strings of her juices on your digits.")
+		saynn("Вопреки её словам, тело шепчет совсем о другом... оно выгибается навстречу твоим рукам, в отчаянии... Одна твоя ладонь всё ещё покоится на её груди, лаская соски... а вторая раздвигает её возбуждённые складки... собирая на пальцах капли её соков.")
 
-		saynn("[say=kidlat]Nh.. I can still bite, you know..[/say]")
+		saynn("[say=kidlat]Нн... я всё ещё могу укусить, знаешь ли..[/say]")
 
-		saynn("Can she really though? You catch some more of her delicious wetness and quickly bring that hand up to her bratty lips, your digits boldly slipping past her teeth.")
+		saynn("Но сможет ли на самом деле? Ты захватываешь ещё немного её восхитительной влаги и быстро подносишь руку к её капризным губам, смело просовывая пальцы ей в рот.")
 
-		saynn("[say=kidlat]Mhhhm?!..[/say]")
+		saynn("[say=kidlat]Мхххм?!..[/say]")
 
-		saynn("Her cheeks burn cyan, her body squirming while you continue to play with her tits.. but she doesn't bite. You can feel her rough tongue gently sliding along your digits, tasting her own juice.")
+		saynn("Её щеки пылают циановым цветом, она извивается, пока ты продолжаешь играть с её сиськами... но она не кусается. Ты чувствуешь, как её шершавый язык нежно скользит по твоим пальцам, слизывая её собственный сок.")
 
-		saynn("After letting her thoroughly clean your fingers, you pull back and watch her.. The helpless kitty is left in a much more needy state than before, her hips swaying in round seductive motions, her long tail wrapped around her leg.")
+		saynn("Дав ей тщательно вылизать пальцы, ты отстраняешься и наблюдаешь за ней... Беспомощная кошечка осталась в куда более жадном состоянии, чем прежде: её бёдра покачиваются в соблазнительных круговых движениях, а длинный хвост обвит вокруг ноги.")
 
-		saynn("[say=kidlat]Bloody tease.. I'm.. ngh.. I'm not gonna beg..[/say]")
+		saynn("[say=kidlat]Чёртова дразнилка.. Я.. нхх.. я не собираюсь умолять..[/say]")
 
-		addButton("Make her cum", "Push Kidlat further with your touches", "do_finger")
-		addButton("Enough fun", "Let Kidlat cool down", "do_cooldown")
-		addButtonWithChecks("Forced BJ", "Time for you to have some fun too", "do_bj", [], [[ButtonChecks.HasReachablePenis]])
-		addButtonWithChecks("Forced lick", "Time for you to have some fun too", "do_lick", [], [[ButtonChecks.HasReachableVagina]])
-		addButtonWithChecks("Breed", "Enough playing around", "do_breed", [], [[ButtonChecks.HasReachablePenis]])
+		addButton("Довести её до оргазма", "Продолжать ласкать Кидлат", "do_finger")
+		addButton("Хватит веселиться", "Дать Кидлат остыть", "do_cooldown")
+		addButtonWithChecks("Принудительный минет", "Теперь и тебе пора повеселиться", "do_bj", [], [[ButtonChecks.HasReachablePenis]])
+		addButtonWithChecks("Принудительное облизывание", "Теперь и тебе пора повеселиться", "do_lick", [], [[ButtonChecks.HasReachableVagina]])
+		addButtonWithChecks("Спариваться", "Хватит игр", "do_breed", [], [[ButtonChecks.HasReachablePenis]])
 	if(state == "do_cooldown"):
-		saynn("Enough is enough, you decide to stop the teasing here and step back.")
+		saynn("С тебя хватит, ты решаешь прекратить дразнилки и отступаешь на шаг.")
 
-		saynn("Kidlat feels that.. and pouts. Her legs still instinctively rub against each other.")
+		saynn("Кидлат чувствует это... и дуется. Её ноги всё ещё инстинктивно трутся друг о друга.")
 
-		saynn("[say=kidlat]What a rude lad.. It's not like I can reach it myself.. huff.[/say]")
+		saynn("[say=kidlat]Какой грубиян.. Это не то чтобы я сама могла до него дотянуться.. хафф.[/say]")
 
-		saynn("Seeing her struggle is so cute.")
+		saynn("Видеть её старания так мило.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_finger"):
 		playAnimation(StageScene.Grope, "gropefast", {pc="kidlat", npc="pc", bodyState={naked=true, hard=true}})
-		saynn("You step closer again, Kidlat's breath hitching as she senses your presence. Her trembling body is pinned between you and the cold wall, her wrists bound tight behind her back. Her chest is rising and falling quickly, her perky tits still heaving from your teasing.")
+		saynn("Ты снова подходишь ближе, и у Кидлат перехватывает дыхание от твоего присутствия. Её дрожащее тело зажато между тобой и холодной стеной, запястья туго стянуты за спиной. Её грудь часто вздымается и опускается, а упругие сиськи всё ещё подрагивают после твоих ласк.")
 
-		saynn("[say=kidlat]I swear.. don't toy with me.. whoever you are..[/say]")
+		saynn("[say=kidlat]Клянусь... не играй со мной... кем бы ты ни был...[/say]")
 
-		saynn("Her brattiness is gone.. replaced with not-so-subtle desperation that she can't hide anymore. Your hands find her breasts again, fingers immediately seeking her stiff nipples. You roll them firmly, pinching and tugging.. until her legs begin to shake, unable to resist the electric pulses shooting through her body.")
+		saynn("Её капризность испарилась, уступив место не слишком скрываемому отчаянию, которое она больше не в силах прятать. Твои руки снова находят её грудь, пальцы тут же ищут затвердевшие соски. Ты с силой перекатываешь их, щипая и потягивая... пока её ноги не начинают дрожать, не в силах сопротивляться электрическим импульсам, прошивающим её тело.")
 
-		saynn("[say=kidlat]Hhh.m..[/say]")
+		saynn("[say=kidlat]Ххм...[/say]")
 
-		saynn("Her back arches, pressing her breasts harder into your hands, her body moving on instinct now. You lower one hand, gliding it over her soft belly before slipping between her thighs again. Her slit is.. simply soaked.. radiating so much heat that you're not sure how she is still staying so composed. You trace slow, teasing circles around her clit, feeling her hips jerk at every movement.")
+		saynn("Её спина выгибается, еще сильнее прижимая грудь к твоим ладоням; теперь её тело движется на инстинктах. Ты опускаешь одну руку, ведя ею по мягкому животу, прежде чем снова скользнуть между её бёдер. Её щелочка... просто насквозь мокрая... от неё исходит такой жар, что ты не понимаешь, как ей удается сохранять хоть какое-то самообладание. Ты описываешь медленные, дразнящие круги вокруг её клитора, чувствуя, как её бёдра дёргаются при каждом движении.")
 
-		saynn("[say=kidlat]Ngh.. j-just there..[/say]")
+		saynn("[say=kidlat]Нгх... п-прямо там...[/say]")
 
-		saynn("Her breathing becomes ragged as you press two fingers against her entrance, sliding inside her with ease. Her bound wrists tug against the restraints, fingers flexing as she tries to touch you back, her tail lashing out and curling around one of your legs.")
+		saynn("Её дыхание становится рваным, когда ты прижимаешь два пальца к её входу и с легкостью входишь внутрь. Её связанные запястья дергаются в путах, пальцы сжимаются в попытке коснуться тебя в ответ, а хвост хлещет из стороны в сторону и обвивается вокруг одной из твоих ног.")
 
-		saynn("[say=kidlat]F-fuck..[/say]")
+		saynn("[say=kidlat]Б-бля...[/say]")
 
-		saynn("She gasps, back arching again as you find her sweet spot, curling your fingers just right, your second hand still playing with her breasts, fingers twisting and tugging on it. She moans.. and her moans grow louder, hips bucking wildly as you push her higher and higher, your digits playing inside her.")
+		saynn("Она ахает, снова выгибаясь, когда ты находишь её эрогенную точку, идеально изгибая пальцы; твоя вторая рука всё еще ласкает её грудь, пальцы скручивают и тянут сосок. Она стонет... и её стоны становятся всё громче, бёдра дико дёргаются, пока ты доводишь её всё выше и выше, играя пальцами внутри неё.")
 
-		saynn("[say=kidlat]I'm.. about.. hh.. to..[/say]")
+		saynn("[say=kidlat]Я... сейчас... хх... кончу...[/say]")
 
-		saynn("Her entire body shudders violently.. and she lets out a high-pitched noise of love as the orgasm crashes over her. Her legs nearly give out.. but you hold her steady as the pleasure washes through her, wave after wave. Her slit clenches around your fingers, soaking your hand as her climax takes over.")
+		saynn("Всё её тело сотрясает сильная дрожь... и она издаёт высокий, полный наслаждения стон, когда на неё обрушивается оргазм. Ноги почти подкашиваются... но ты удерживаешь её, пока волна за волной удовольствие прошивает её насквозь. Её щель сжимается вокруг твоих пальцев, намочив твою руку, пока её накрывает мощнейший климакс.")
 
-		saynn("You keep teasing her just a little longer, drawing out every last shiver until she is completely spent.")
+		saynn("Ты продолжаешь дразнить её ещё немного, выжимая из неё каждую последнюю дрожь, пока она окончательно не изнеможет.")
 
-		saynn("[say=kidlat]Bloody hell..[/say]")
+		saynn("[say=kidlat]Черт возьми...[/say]")
 
-		addButton("Continue", "See what happens next", "do_finger_cuddle")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_finger_cuddle")
 	if(state == "do_finger_cuddle"):
 		playAnimation(StageScene.BreastGroping, "tease", {pc="pc", npc="kidlat", npcBodyState={naked=true, hard=true}})
-		saynn("She slumps against the wall, her head falling forward as she tries to catch her breath, her body still trembling with aftershocks. You catch her and help her land onto the floor.")
+		saynn("Она сползает по стене, уронив голову, пытаясь отдышаться; её тело всё ещё сотрясают отголоски оргазма. Ты подхватываешь её и помогаешь опуститься на пол.")
 
-		saynn("[say=kidlat]You really know how to make a kitty purr.. whoever you are..[/say]")
+		saynn("[say=kidlat]Ты и впрямь умеешь заставить кошечку мурчать... кто бы ты ни был...[/say]")
 
-		saynn("What a cute kitty.")
+		saynn("Какая милая кошечка.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_breed"):
 		playAnimation(StageScene.SexAgainstWall, "tease", {pc="pc", npc="kidlat", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Enough playing around.")
+		saynn("Хватит игр.")
 
-		saynn("Kidlat's body quivers against you as your hands press her firmly against the cold surface of the nearest wall, raising her legs to her shoulders so that she is not touching the floor anymore. In this pinned position, her soaked slit already brushes against your {pc.penis}..")
+		saynn("Тело Кидлат дрожит в твоих руках, когда ты крепко прижимаешь её к холодной поверхности ближайшей стены, задирая её ноги к самым плечам, чтобы она больше не касалась пола. В таком прижатом положении её мокрая щель уже трется о твой {pc.penis}...")
 
-		saynn("[say=kidlat]Ohh fuck.. You're not a shy lad, are you..[/say]")
+		saynn("[say=kidlat]Ох, блядь... А ты не из робких, да?..[/say]")
 
-		saynn("She squirms against your tight grip.. but there is nowhere for her to go. You shift her body slightly, pressing the tip of your cock against her inviting cyan flower.. the petals spreading without much force.")
+		saynn("Она ерзает в твоей крепкой хватке... но бежать ей некуда. Ты слегка смещаешь её тело, прижимая головку своего члена к её манящему голубому цветку... лепестки расходятся без особого усилия.")
 
-		saynn("[say=kidlat]Mmmhhph.. I'm s-screwed, aren't I..[/say]")
+		saynn("[say=kidlat]Мммхх... Я же встряла, да?..[/say]")
 
-		addButton("Ram it in", "Take her raw", "do_breed_fuck")
+		addButton("Всаживай на полную", "Возьми её без презерватива", "do_breed_fuck")
 	if(state == "do_breed_fuck"):
 		playAnimation(StageScene.SexAgainstWall, "sex", {pc="pc", npc="kidlat", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Her intuition wasn't betraying her.. but her body is.")
+		saynn("Интуиция её не подводила... а вот тело — подводит.")
 
-		saynn("Kidlat lets out a choked gasp as you slide in, filling her in one deep motion. Her slick, hot walls tighten around your shaft immediately, her breasts bouncing wildly as you begin pounding into her without restraint, each thrust shaking her entire body.")
+		saynn("Кидлат издает сдавленный всхлип, когда ты входишь в неё одним глубоким движением, заполняя её целиком. Её влажные, горячие стенки тут же сжимаются вокруг твоего члена, а грудь бешено подпрыгивает, когда ты начинаешь неистово вколачиваться в неё без всякой сдержанности, и каждый толчок сотрясает всё её тело.")
 
-		saynn("[say=kidlat]Nhh.. d-damn junkie.. w-why do you fuck so well.. ah.. you in particular..[/say]")
+		saynn("[say=kidlat]Нхх.. ч-чертов наркоман.. п-почему ты так охрененно трахаешься.. ах.. особенно ты..[/say]")
 
-		saynn("Her mouth is slightly opened, tongue out. Her moans begin to echo through the tunnel, her long fluffy tail is sweeping the floor. You want more.. so you lean in and force a deep kiss, invading her mouth and letting your tongues play, exchanging fluids.")
+		saynn("Её рот слегка приоткрыт, язык высунут. Её стоны начинают эхом разноситься по туннелю, а длинный пушистый хвост метет по полу. Тебе хочется большего... поэтому ты наклоняешься и навязываешь глубокий поцелуй, вторгаясь в её рот и позволяя языкам переплетаться, обмениваясь жидкостями.")
 
-		saynn("As you pull free, there is a string of saliva hanging between your and her lips. You two are so close.. and yet she can't see you.. while you see her cyan deep blushing face in full detail.")
+		saynn("Когда ты выходишь, между вашими губами тянется ниточка слюны. Вы так близки... и всё же она не может тебя видеть... в то время как ты во всех деталях видишь её густо-циановое, раскрасневшееся лицо.")
 
-		saynn("[say=kidlat]Ngh..[/say]")
+		saynn("[say=kidlat]Нгх..[/say]")
 
-		addButton("Faster", "Speed up the action", "do_breed_fast")
+		addButton("Быстрее", "Ускорить темп", "do_breed_fast")
 	if(state == "do_breed_fast"):
 		playAnimation(StageScene.SexAgainstWall, "fast", {pc="pc", npc="kidlat", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Before she can say anything else, you thrust harder, faster, driving your cock into her with a primal need. Kidlat lets out a gasp as her entire body shudders, her pussy clenching around you even tighter.")
+		saynn("Прежде чем она успевает что-то сказать, ты начинаешь толкаться сильнее и быстрее, вбивая свой член в неё с первобытной жаждой. Кидлат ахает, когда всё её тело содрогается, а её киска сжимается вокруг тебя ещё крепче.")
 
-		saynn("[say=kidlat]W-wai.. I'm.. ah.. hah.. Ah-h..[/say]")
+		saynn("[say=kidlat]О-оо.. я.. ах.. хах.. А-ах..[/say]")
 
-		saynn("You can feel it.. And you keep going, ravaging that cute cyan slit, keeping your pace fast and hard. Poor kitty is shivering in your hands, her lips parted as she is panting and huffing at you, her hot breathing tickling your nose.. while you just keep fucking her.")
+		saynn("Ты чувствуешь это.. И ты не останавливаешься, неистово вколачиваясь в эту милую голубую щелочку, сохраняя быстрый и жесткий темп. Бедная кошечка дрожит в твоих руках, ее губы приоткрыты, она тяжело дышит и сопит тебе в лицо, ее горячее дыхание щекочет твой нос.. пока ты просто продолжаешь ее трахать.")
 
-		saynn("Her pussy clenches around your {pc.penis} one last time.. before her climax washes over her.. her walls spasming around you as her juices drip down her thighs, dripping onto the floor.")
+		saynn("Ее киска в последний раз сжимается вокруг твоего {pc.penis}.. прежде чем на нее обрушивается оргазм.. ее стенки спазмируют вокруг тебя, а соки стекают по бедрам, капая на пол.")
 
-		saynn("[say=kidlat]Hhh..ah..[/say]")
+		saynn("[say=kidlat]Ххх.. ах..[/say]")
 
-		saynn("You don't stop, thrusting through her orgasm, overpowering her clenched inner walls.. grunting silently as the pleasurable friction makes your own legs shiver slightly too..")
+		saynn("Ты не останавливаешься, пробиваясь сквозь ее оргазм, подавляя ее сжатые внутренние стенки.. безмолвно рыча, пока от приятного трения твои собственные ноги тоже начинают слегка подрагивать..")
 
-		addButton("Inside", "Breed the kitty", "do_breed_inside")
-		addButton("Pull out", "You'd rather not risk it", "do_breed_pullout")
+		addButton("Внутри", "Оплодотворить кошечку", "do_breed_inside")
+		addButton("Вытащить", "Лучше не рисковать", "do_breed_pullout")
 	if(state == "do_breed_inside"):
 		playAnimation(StageScene.SexAgainstWall, "inside", {pc="pc", npc="kidlat", pcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You're close.. and the thought of breeding her completely fills your mind. You pull back.. before burying your cock as deep as possible, pinning her into the wall as your climax hits. Your {pc.penis} smashes into her cervix.. and begins throbbing.. spilling waves of hot, creamy {pc.cum} directly into her womb.")
+		saynn("Ты уже близко.. и мысль об оплодотворении полностью заполняет твой разум. Ты слегка отстраняешься.. а затем всаживаешь свой член так глубоко, как только возможно, прижимая ее к стене в момент своего пика. Твой {pc.penis} с силой бьется в ее шейку.. и начинает пульсировать.. изливая волны горячей, кремовой {pc.cum} прямо ей в матку.")
 
-		saynn("[say=kidlat]Hhh-ahh.. f-fuck.. damn.. animal.. ah.. s-so much..[/say]")
+		saynn("[say=kidlat]Ххх-аах.. б-блядь.. черт.. животное.. ах.. так.. так много..[/say]")
 
-		saynn("Kidlat's restrained body trembles against you.. her long tail wrapping around your leg as you fill her up.. right here in these tunnels.. She is panting like crazy while your member is still inside, pumping her with the last bits of your seed.")
+		saynn("Скованное тело Кидлат дрожит в твоих руках.. ее длинный хвост обвивает твою ногу, пока ты наполняешь ее.. прямо здесь, в этих туннелях.. Она дышит как сумасшедшая, пока твой член все еще внутри, выкачивая в нее последние капли твоего семени.")
 
-		saynn("By the end of it, you're left panting..")
+		saynn("К концу всего этого ты остаешься тяжело дышащим...")
 
 		didBreed = true
-		addButton("Continue", "See what happens next", "do_breed_after")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_breed_after")
 	if(state == "do_breed_pullout"):
 		playAnimation(StageScene.SexAgainstWall, "tease", {pc="pc", npc="kidlat", pcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You're close.. But the thought of breeding her here, in these dirty tunnels doesn't seem appealing. You keep ramming it in.. but as soon as you feel the point of no return.. you pull out, your cock leaving her wet slit with a satisfying wet noise.")
+		saynn("Ты уже близко... Но мысль о том, чтобы осеменить её прямо здесь, в этих грязных туннелях, не кажется слишком заманчивой. Ты продолжаешь вбиваться в неё... но как только чувствуешь, что точка невозврата пройдена... ты выдергиваешь член, и твой член покидает её мокрую щель с приятным влажным звуком.")
 
-		saynn("[say=kidlat]Ah!..[/say]")
+		saynn("[say=kidlat]Ах!..[/say]")
 
-		saynn("More silent grunts leave your lips as your {pc.penis} begins shooting beautiful strings of {pc.cum} into the wall behind Kidlat. Some of it lands on her fluffy tail that wraps around your leg during this.")
+		saynn("С твоих губ срываются безмолвные стоны, когда твой {pc.penis} начинает извергать прекрасные струи {pc.cum} на стену позади Кидлат. Часть спермы попадает на её пушистый хвост, который в этот момент обвивает твою ногу.")
 
-		saynn("[say=kidlat]F-fuck..[/say]")
+		saynn("[say=kidlat]Б-бля...[/say]")
 
-		saynn("Her cyan pussy still clenches around hot empty air, moans escaping her.")
+		saynn("Её голубая киска всё еще сжимается вокруг горячего пустого воздуха, из неё вырываются стоны.")
 
-		saynn("By the end of it, you're left panting..")
+		saynn("К концу всего этого ты остаешься тяжело дышащим...")
 
-		addButton("Continue", "See what happens next", "do_breed_after")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_breed_after")
 	if(state == "do_breed_after"):
 		playAnimation(StageScene.SexStart, "start", {npc="kidlat", npcBodyState={naked=true}})
-		saynn("Carefully, you lower the squirming feline onto the floor. All without a single word.")
+		saynn("Осторожно, не говоря ни слова, ты опускаешь извивающуюся кошку на пол.")
 
 		if (didBreed):
-			saynn("As you pull out, her used pussy instantly starts to drip with your seed, creating a little puddle of creamy stuff under her.")
+			saynn("Когда ты выходишь, её использованная киска мгновенно начинает сочиться твоим семенем, образуя под ней небольшую лужицу кремообразной субстанции.")
 
 		else:
-			saynn("Her pussy is still dripping, creating a little puddle of juices under her.")
+			saynn("Её киска всё еще подтекает, образуя под ней маленькую лужицу соков.")
 
-		saynn("You step back, escaping the grasp of her tail.")
+		saynn("Ты отступаешь, вырываясь из хватки её хвоста.")
 
-		saynn("[say=kidlat]You're one.. awful.. shopper..[/say]")
+		saynn("[say=kidlat]Ну ты и.. ужасная.. покупательница..[/say]")
 
-		saynn("She looks at you.. tries to.. through the tight blindfold.")
+		saynn("Она смотрит на тебя.. пытаясь разглядеть что-то сквозь плотную повязку на глазах.")
 
-		saynn("[say=kidlat]But maybe I will forgive you.. this time..[/say]")
+		saynn("[say=kidlat]Но, может быть, на этот раз.. я тебя прощу..[/say]")
 
-		saynn("What a cute kitty. Enough fun for now though.")
+		saynn("Какая милая кошечка. Но на сегодня веселья хватит.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_bj"):
 		playAnimation(StageScene.SexOralForced, "tease", {pc="pc", npc="kidlat", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("She had her share of fun.. time for you to do the same.")
+		saynn("Она уже вдоволь повеселилась.. теперь твоя очередь.")
 
-		saynn("Without any notice, you force Kidlat down to her knees in front of you, pulling her cuffed paws high above her head.")
+		saynn("Без предупреждения ты заставляешь Кидлат опуститься перед тобой на колени, задирая её скованные лапы высоко над головой.")
 
-		saynn("[say=kidlat]Eek.. That was pretty rude.. Guess I should've expected it..[/say]")
+		saynn("[say=kidlat]Ой!.. Это было довольно грубо.. Наверное, мне стоило этого ожидать..[/say]")
 
-		saynn("She can't see anything.. but she can surely feel it when the tip of your {pc.penis} presses against her soft lips, smearing a bead of precum onto them. Kidlat flinches, her ears flicking at the sensation. She tries to instinctively pull away.. but you just bring her back, holding her wrists with a tight grip.")
+		saynn("Она ничего не видит.. но она точно чувствует, как кончик твоего {pc.penis} прижимается к её мягким губам, размазывая по ним каплю предэякулята. Кидлат вздрагивает, её уши дёргаются от этого ощущения. Она инстинктивно пытается отстраниться.. но ты лишь возвращаешь её назад, крепко сжимая её запястья.")
 
-		saynn("[say=kidlat]You're really makin' me do this, lad?[/say]")
+		saynn("[say=kidlat]Ты и правда заставляешь меня это делать, парень?[/say]")
 
-		saynn("One of your hands tangles into her dark hair, keeping her extremely still as you drag your shaft along her cheek, feeling the warmth of her blushing furred skin against you. Her tail flicks in frustration.. but when you press your length against her lips again, her rough feline tongue sneakily flicks out to give you a quick lick.")
+		saynn("Одной рукой ты запутываешься в её тёмных волосах, удерживая её почти неподвижно, пока проводишь своим членом по её щеке, чувствуя тепло её разгорячённой меховой кожи. Её хвост раздражённо дёргается.. но когда ты снова прижимаешься к её губам, её шершавый кошачий язычок воровато высовывается, чтобы быстро лизнуть тебя.")
 
-		saynn("[say=kidlat]You're gonna buy something from me then, okay?[/say]")
+		saynn("[say=kidlat]Значит, ты собираешься что-то у меня купить, да?[/say]")
 
-		saynn("A silent smirk appears on your face as she willingly parts her lips and grabs the head of your cock with them, her tongue gently plays with its tip, catching the next few drops of pre.")
+		saynn("На твоем лице появляется молчаливая ухмылка, когда она послушно размыкает губы и обхватывает головку твоего члена, а ее язык нежно ласкает кончик, слизывая первые капли предэякулята.")
 
-		saynn("You're not gonna go easy on her..")
+		saynn("Ты не собираешься церемониться с ней...")
 
-		addButton("Face-fucking", "Ramp it up real fast", "do_bj_sex")
+		addButton("Фейсфакинг", "Прибавить газу", "do_bj_sex")
 	if(state == "do_bj_sex"):
 		playAnimation(StageScene.SexOralForced, "suck", {pc="pc", npc="kidlat", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("She barely has time to react before you ram your whole length inside her bratty mouth, the head of your cock bending against the back of her mouth before going down her throat. Her muffled protest is lost as her walls instinctively clenche around you. You feel her struggle, trying to pull her bound arms away.. but there is no way for her to stop you.")
+		saynn("Она едва успевает среагировать, как ты вбиваешь всю свою длину в ее дерзкий рот; головка члена упирается в заднюю стенку горла, прежде чем провалиться глубже. Ее приглушенный протест тонет в звуках, когда стенки ее глотки инстинктивно сжимаются вокруг тебя. Ты чувствуешь, как она пытается высвободить связанные руки... но остановить тебя ей не под силу.")
 
-		saynn("[say=kidlat]Mmf!.. Nngh..[/say]")
+		saynn("[say=kidlat]Мммф!.. Ннгх..[/say]")
 
-		saynn("With her wrists in your hands, she can't push you away.. she can only take what you give. And so you begin sliding inside, letting her warm mouth envelop you, pulling out of her throat.. just to stretch it again a few moments later.")
+		saynn("Пока ее запястья в твоих руках, она не может оттолкнуть тебя... ей остается только принимать то, что ты ей даешь. И ты начинаешь входить в нее, позволяя ее теплому рту обволакивать тебя, то выходя из ее горла, то снова врываясь туда через мгновение, чтобы растянуть его еще сильнее.")
 
-		saynn("She gags slightly but tries to adjust, drool already dripping down her chin as you fuck her like this. Each time her throat gets tight around your cock only spurs you on, various wet noises accompanying your motions.")
+		saynn("Ее слегка подташнивает, но она пытается подстроиться; слюна уже течет по ее подбородку, пока ты трахаешь ей рот. Каждый раз, когда ее глотка сжимается вокруг твоего члена, это лишь подстегивает тебя, сопровождая каждое движение влажными хлюпающими звуками.")
 
-		addButton("Faster", "Really fuck her face", "do_bj_fast")
+		addButton("Быстрее", "По-настоящему оттрахать ей лицо", "do_bj_fast")
 	if(state == "do_bj_fast"):
 		playAnimation(StageScene.SexOralForced, "suckfast", {pc="pc", npc="kidlat", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Her breathes come in short, needy gasps whenever you pull back.. but you don't give her much time before thrusting in again, fucking her face at a faster and faster pace. Her whole body trembles under your onslaught on her throat, her nipples hard, her thighs pressed together as she struggles to keep up.")
+		saynn("Стоит тебе отстраниться, как её дыхание превращается в короткие, жадные всхлипы... но ты не даешь ей перевести дух, снова всаживаясь в неё, трахая ей лицо всё быстрее и быстрее. Всё её тело дрожит под твоим натиском на её горло; соски затвердели, а бёдра плотно прижаты друг к другу — она изо всех сил пытается не захлебнуться.")
 
-		saynn("Kidlat keeps gagging and choking on your cock.. which feels great.. the walls of her throat squeezing your length in all of the various pleasurable ways.")
+		saynn("Кидлат то и дело давится и задыхается от твоего члена... и это чертовски приятно... стенки её горла сжимают твою плоть всеми возможными способами, доставляя нереальное удовольствие.")
 
-		saynn("[say=kidlat]Nhhnn.. m..mhhff.. hh..[/say]")
+		saynn("[say=kidlat]Нххнн.. м..мххфф.. хх..[/say]")
 
-		saynn("Her cheeks are burning cyan.. her body is tense.. but by now she has stopped trying to break free.. just holding her shaky paws clenched into fists.. while you ravage her throat, stretching it and using it for your pleasure.")
+		saynn("Её щеки горят ярко-голубым... тело напряжено... но к этому моменту она уже перестала пытаться вырваться... просто сжимает свои дрожащие лапки в кулаки, пока ты терзаешь её горло, растягивая его ради своего удовольствия.")
 
-		saynn("Her feline tongue is unmistakable.. She could do some real damage with it if she wanted to.. but she just curls around your dick, spreading her saliva along it. What a good kitty.")
+		saynn("Её кошачий язык невозможно перепутать ни с чем... Если бы она захотела, она могла бы натворить дел, но она лишь обвивает им твой член, размазывая по нему слюну. Какая послушная киска.")
 
-		saynn("Her breasts jiggle slightly with each time, her body trembling as she submits to you, her chest rising and falling quickly as she tries her best to keep up.")
+		saynn("Её грудь слегка подпрыгивает при каждом толчке, тело дрожит в подчинении, а грудная клетка часто вздымается и опускается — она из последних сил пытается справиться с темпом.")
 
-		saynn("The way her throat treats you.. makes you want to grunt.. you're getting so close..")
+		saynn("То, как её горло принимает тебя... заставляет тебя стонать от удовольствия... ты уже совсем близко...")
 
-		addButton("Throatpie", "Send it all down her throat", "do_bj_throatpie")
+		addButton("Глотать всё до капли", "Выплеснуть всё ей в глотку", "do_bj_throatpie")
 	if(state == "do_bj_throatpie"):
 		playAnimation(StageScene.SexOralForced, "suckinside", {pc="pc", npc="kidlat", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You thrust deeper one last time.. and just stay like this.. holding her in place as you feel yourself reaching your orgasm. You hear her letting quiet, muffled whimpers, her throat is pulsing around your cock.. pushing you over the edge.")
+		saynn("Ты всаживаешься поглубже в последний раз... и замираешь... удерживая её на месте, чувствуя, как оргазм подступает к самому краю. Ты слышишь её тихие, приглушенные всхлипы; её горло пульсирует вокруг твоего члена, окончательно срывая тебя с цепи.")
 
-		saynn("Your balls tense up hard.. as your {pc.penis} starts shooting waves of sticky {pc.cum} deep inside her with multiple throbbing motions..")
+		saynn("Твои яйца сильно напрягаются.. когда твой {pc.penis} начинает выбрасывать волны липкой {pc.cum} глубоко в неё мощными пульсирующими толчками..")
 
-		saynn("Kidlat gags a lot by this moment.. but tries to swallow instinctively.. only to realize that there is nothing to swallow, your load is sent directly down her throat, past her mouth into her belly.")
+		saynn("К к этому моменту Кидлат уже вовсю давится.. но инстинктивно пытается сглотнуть.. лишь чтобы осознать, что глотать нечего — твоя порция летит прямиком ей в глотку, минуя рот, сразу в живот.")
 
-		saynn("[say=kidlat]Nhh.h.. glk.. hh..hhh.. glk.. hh..[/say]")
+		saynn("[say=kidlat]Нхх.. глък.. хх..ххх.. глък.. хх..[/say]")
 
-		saynn("The way her walls milk you for all your seed.. it's amazing.. making you wish you could stay like this forever.")
+		saynn("То, как её стенки выжимают из тебя всё до последней капли.. это просто невероятно.. заставляя желать, чтобы так продолжалось вечно.")
 
-		saynn("Sadly, you begin to notice Kidlat's strength fading away, her body struggling again.. out of desperation.. as her only source of air was cut off.. replaced with a constant supply of jizz..")
+		saynn("К сожалению, ты начинаешь замечать, что силы Кидлат на исходе, её тело снова начинает бороться.. от отчаяния.. ведь единственный источник воздуха был перекрыт.. сменившись непрерывным потоком спермы..")
 
-		addButton("Pull out", "Let her breathe", "do_bj_end")
+		addButton("Вытащить", "Дать ей подышать", "do_bj_end")
 	if(state == "do_bj_end"):
 		playAnimation(StageScene.SexOralForced, "tease", {pc="pc", npc="kidlat", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You'd rather not make the girl black out on you.. so you pull out as soon as her throat stops draining your balls.")
+		saynn("Тебе не хочется, чтобы девчонка отключилась.. поэтому ты выходишь, как только её глотка перестает высасывать твои яйца.")
 
-		saynn("Kidlat gasps for air and starts coughing loudly.. all while still hanging by her arms above her head.")
+		saynn("Кидлат жадно хватает ртом воздух и начинает громко кашлять.. всё ещё вися на вытянутых руках над своей головой.")
 
-		saynn("[say=kidlat]Ghh-hh. hhhkhh.. B-bloody f-fucking hell.. kh..[/say]")
+		saynn("[say=kidlat]Гхх-хх.. хххкхх.. Б-блин, черт возьми.. кх..[/say]")
 
-		saynn("A thin strand of saliva and {pc.cum} connects her lips to your cock. She coughs more, trying to catch her breath.")
+		saynn("Тонкая нить слюны и {pc.cum} соединяет её губы с твоим членом. Она кашляет еще сильнее, пытаясь отдышаться.")
 
-		saynn("[say=kidlat]How about a little warnin' first, huh? F-fuck.. kh..[/say]")
+		saynn("[say=kidlat]Может, сначала предупредишь, а? Б-бля... кх...[/say]")
 
-		saynn("Her expression is a mix of clear frustration and something else. She lowers her head and just breathes for a bit while moving her jaw.")
+		saynn("В её взгляде смешались явное раздражение и что-то ещё. Она опускает голову и просто дышит, слегка двигая челюстью.")
 
-		saynn("[say=kidlat]I kept up pretty well, eh?.. All things considered..[/say]")
+		saynn("[say=kidlat]А я неплохо справилась, а?.. Учитывая обстоятельства...[/say]")
 
-		saynn("Slowly, she licks her lips, catching and swallowing any lingering mess. She finds the tip of your cock again and cleans it too, dragging her tongue along its length.")
+		saynn("Она медленно облизывает губы, слизывая и проглатывая остатки смазки. Снова нащупав кончик твоего члена, она очищает и его, проводя языком по всей его длине.")
 
-		saynn("[say=kidlat]Customer always right..[/say]")
+		saynn("[say=kidlat]Клиент всегда прав...[/say]")
 
-		saynn("Looks like she has just made herself a new loyal customer.")
+		saynn("Похоже, она только что обрела нового преданного клиента.")
 
-		saynn("You let go of her wrists and help her get up. It's time to wrap up.")
+		saynn("Ты отпускаешь её запястья и помогаешь ей подняться. Пора закругляться.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_lick"):
 		playAnimation(StageScene.SexOralForced, "tease", {pc="pc", npc="kidlat", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("She had her share of fun.. time for you to do the same.")
+		saynn("Она уже вдоволь повеселилась.. теперь твоя очередь.")
 
-		saynn("Without any notice, you force Kidlat down to her knees in front of you, pulling her cuffed paws high above her head.")
+		saynn("Без предупреждения ты заставляешь Кидлат опуститься перед тобой на колени, задирая её скованные лапы высоко над головой.")
 
-		saynn("[say=kidlat]Eek.. That was pretty rude.. Junkies these days..[/say]")
+		saynn("[say=kidlat]Ой... Это было довольно грубо... Нынешние торчки совсем обнаглели...[/say]")
 
-		saynn("Your {pc.foot} nudges her thighs, making her spread her legs for you, revealing just how wet she already is. The fur around her cyan slit is all shiny and slick.")
+		saynn("Твой {pc.foot} подталкивает её бёдра, заставляя раздвинуть ноги и обнажая то, насколько сильно она уже промокла. Мех вокруг её бирюзовой щели блестит от влаги.")
 
-		saynn("[say=kidlat]I'm not for sale, lad.. But I hope you will buy somethin' after this![/say]")
+		saynn("[say=kidlat]Я не продаюсь, парень... Но надеюсь, после этого ты что-нибудь купишь![/say]")
 
-		saynn("You stand close to her.. so close that your own wet flower is hovering a few inches away from her blushing face. Her chest is rising and falling in deep, long breaths.. yeah, she can totally feel your heat.")
+		saynn("Ты стоишь совсем рядом... настолько близко, что твоя влажная киска зависает в паре дюймов от её раскрасневшегося лица. Её грудь тяжело и глубоко вздымается... да, она определенно чувствует твой жар.")
 
-		saynn("[say=kidlat]That's a.. very wet.. scent. I'm sorry, I don't take payments in fish.[/say]")
+		saynn("[say=kidlat]Какой... очень влажный... запах. Прости, но я не принимаю оплату рыбой.[/say]")
 
-		saynn("So cheeky. You know just the way to use those bratty lips.")
+		saynn("Какая дерзкая. Ты точно знаешь, как использовать эти капризные губки.")
 
-		addButton("Pull close", "Make her work", "do_lick_sex")
+		addButton("Притянуть ближе", "Заставить её поработать", "do_lick_sex")
 	if(state == "do_lick_sex"):
 		playAnimation(StageScene.SexOralForced, "lick", {pc="pc", npc="kidlat", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Without a word, you push your {pc.masc} hips forward. Your dripping slit presses against her lips.")
+		saynn("Без лишних слов ты подаёшь свои {pc.masc} бёдра вперёд. Твоя сочащаяся щель прижимается к её губам.")
 
-		saynn("[say=kidlat]O-oi-..[/say]")
+		saynn("[say=kidlat]О-ой!..[/say]")
 
-		saynn("The sudden contact makes her entire body tense, her mouth parts around your sensitive folds while the scent of your arousal fills her senses.")
+		saynn("От внезапного контакта всё её тело напрягается; её рот непроизвольно раскрывается вокруг твоих чувствительных складок, пока аромат твоего возбуждения заполняет все её чувства.")
 
-		saynn("She instinctively tries to pull away.. but your firm grasp on her cuffed wrists prevents it, forcing her into your crotch instead as you roll your hips against her face, rubbing your soaked folds against her soft lips.")
+		saynn("Она инстинктивно пытается отстраниться... но твоя крепкая хватка на её скованных запястьях не даёт ей этого сделать, заставляя её вместо этого вжаться в твою промежность, пока ты двигаешь бёдрами ей в лицо, втирая свои мокрые складки в её мягкие губы.")
 
-		saynn("[say=kidlat]Mmfff-..[/say]")
+		saynn("[say=kidlat]Мммфф!..[/say]")
 
-		saynn("She muffles a protest, her warm breathing spreading against your clit and folds. It sends a shiver through you, your pussy dripping arousal onto the fur of her cheeks.. onto her snout.. making her blush harder.")
+		saynn("Она приглушенно протестует, и её теплое дыхание обдает твой клитор и складки. Тебя пробирает дрожь, а из киски капает возбуждение прямо на мех её щек... на её мордочку... заставляя её краснеть ещё сильнее.")
 
-		saynn("You press harder against her mouth, your juices smearing against her lips.. until she has no choice but to taste you.")
+		saynn("Ты сильнее прижимаешься к её рту, размазывая свои соки по её губам... пока у неё не остается иного выбора, кроме как попробовать тебя на вкус.")
 
-		saynn("[say=kidlat]Huff..f..[/say]")
+		saynn("[say=kidlat]Хафф.. ф..[/say]")
 
-		saynn("She huffs warmly.. But then.. slowly.. tentatively.. her tongue flicks out.")
+		saynn("Она тепло фыркает... Но затем... медленно... неуверенно... её язык высовывается наружу.")
 
-		saynn("[say=kidlat]Mmf..[/say]")
+		saynn("[say=kidlat]Ммф..[/say]")
 
-		saynn("She laps at your slit once, as if testing.. before another slow lick drags from your entrance up to your clit. Her cyan tongue has such a great texture, it makes you shiver, your legs giving up a little.")
+		saynn("Она один раз слизывает влагу с твоей щели, словно пробуя на вкус... а затем еще один медленный лизок тянется от входа вверх к самому клитору. У её бирюзового языка такая потрясающая текстура, что тебя бросает в дрожь, а ноги начинают подкашиваться.")
 
-		saynn("[say=kidlat]Ngh.. hah.. yer real into this..[/say]")
+		saynn("[say=kidlat]Нгх.. хах.. тебе и правда это нравится..[/say]")
 
-		saynn("Even now, she is trying to stay smug. So you roll your hips again, making her snout press against your mound, covering up her nostrils. She gasps softly, her tongue slipping out again, flicking against your clit.. it makes you let out a silent grunt.")
+		saynn("Даже сейчас она пытается сохранять самодовольный вид. Поэтому ты снова подаешься бедрами, заставляя её мордочку вжаться в твою лобковую зону, перекрывая ей ноздри. Она тихо ахает, её язык снова вылетает, дразня твой клитор... от этого ты издаешь беззвучный стон.")
 
-		saynn("[say=kidlat]Heh..[/say]")
+		saynn("[say=kidlat]Хех...[/say]")
 
-		saynn("She keeps giving you teasing licks.. while you slowly ride her face, enjoying the sensations. The feline doesn't seem to resist much anymore, her own pussy dripping onto the floor.")
+		saynn("Она продолжает дразняще лизать тебя... пока ты медленно всадница на её лице, наслаждаясь ощущениями. Кошка, кажется, уже почти не сопротивляется, а её собственная киска капает прямо на пол.")
 
-		addButton("Faster", "Really grind her face", "do_lick_fast")
+		addButton("Быстрее", "Втираться лицом в неё", "do_lick_fast")
 	if(state == "do_lick_fast"):
 		playAnimation(StageScene.SexOralForced, "lickfast", {pc="pc", npc="kidlat", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Your shivering and the quiet noises make her smirk again.. so you speed up, proceeding to grind her face harder, forcing her deeper into your soaked needy folds.")
+		saynn("Твоя дрожь и тихие звуки заставляют её снова ухмыльнуться... так что ты ускоряешься, сильнее вжимаясь лицом в её плоть и заставляя её глубже погружаться в твои пропитанные влагой, жаждущие складки.")
 
-		saynn("[say=kidlat]Mmmph-!..[/say]")
+		saynn("[say=kidlat]Мммф!..[/say]")
 
-		saynn("She tries to lean back.. but your grip keeps her right where she belongs.. between your legs.")
+		saynn("Она пытается откинуться назад... но твоя хватка удерживает её именно там, где ей и место... между твоих ног.")
 
-		saynn("[say=kidlat]Haah.. f-fuckin'.. mmhhph..[/say]")
+		saynn("[say=kidlat]Хаах.. блядь!.. ммххп!..[/say]")
 
-		saynn("She gets the message.")
+		saynn("Она понимает намек.")
 
-		saynn("Her tongue is pressed firmly against your slit now, no longer hesitant. She does slow, deep strokes up and down your dripping pussy with it. The contrast of her rough tongue against your soft, sensitive folds sends more jolts of pleasure through you. Your thighs squeeze slightly around her head.. and she lets out a muffled whine.. but doesn't stop.")
+		saynn("Теперь её язык плотно прижат к твоему разрезу, больше нет никаких колебаний. Она медленно и глубоко водит им вверх и вниз по твоей сочащейся киске. Контраст её шершавого языка и твоих мягких, чувствительных складок посылает новые разряды удовольствия по всему телу. Твои бёдра слегка сжимаются вокруг её головы... и она издаёт приглушённый стон... но не останавливается.")
 
-		saynn("[say=kidlat]Mmhh.. tastes.. hh.. nice..[/say]")
+		saynn("[say=kidlat]Мммх.. вкус.. хх.. классный..[/say]")
 
-		saynn("The way her voice vibrates between your legs adds to the sensations. She adjusts a little, tilting her head just enough to let her tongue prod at your pussy entrance.. and then sliding inside.")
+		saynn("То, как её голос вибрирует между твоих ног, только усиливает ощущения. Она слегка меняет положение, наклоняя голову ровно настолько, чтобы её язык мог прощупать вход в твою киску... а затем скользнуть внутрь.")
 
-		saynn("Your breath hitches, your inner walls hugging the invading tongue.. tongue that is littered with little barbs all over. Her little brat grin returns. But it feels so good..")
+		saynn("Твоё дыхание перехватывает, внутренние стенки обхватывают вторгшийся язык... язык, покрытый крошечными ворсинками. На её лице снова появляется эта дерзкая ухмылка. Но это так чертовски приятно...")
 
-		saynn("She laps at you hungrily now, swirling her tongue inside you before pulling back to flick at your clit a few more times. Slow, lazy strokes are followed by sudden quick licks.. all the while you gently grind her face, making that blindfold on her eyes very wet by now..")
+		saynn("Теперь она слизывает твою влагу с жадностью, закручивая язык внутри тебя, прежде чем отстраниться и ещё несколько раз быстро лизнуть клитор. Медленные, ленивые движения сменяются внезапными быстрыми языками... а ты тем временем нежно втираешься лицом в её лицо, отчего повязка на её глазах уже стала совсем мокрой...")
 
-		saynn("She purrs, the vibrations making your whole body shudder. Your fingers tighten against her wrists, pulling her into you.")
+		saynn("Она мурлычет, и от этой вибрации всё твоё тело пробирает дрожь. Твои пальцы сильнее сжимают её запястья, притягивая её к себе.")
 
-		saynn("[say=kidlat]Mmhh~..[/say]")
+		saynn("[say=kidlat]Мммхх~..[/say]")
 
-		saynn("Her tongue works your clit faster, her mouth sealing around you to suck gently before flicking it again. You feel needier and needier.. your hips buck against her face as you are ramping up the grinding again, chasing that pleasure..")
+		saynn("Её язык начинает ласкать твой клитор всё быстрее, она плотно обхватывает его губами, мягко посасывая, а затем снова делает резкий взмах языком. Ты чувствуешь, как желание нарастает.. твои бёдра дергаются навстречу её лицу, ты снова начинаешь неистово тереться о неё, преследуя это наслаждение..")
 
-		saynn("[say=kidlat]Mmmmhh.. ngh..[/say]")
+		saynn("[say=kidlat]Ммммхх.. нхх..[/say]")
 
-		saynn("She lets out a low purring again.. and that's what pushes you over.")
+		saynn("Она снова издаёт низкое мурлыканье.. и именно это становится последней каплей.")
 
-		saynn("Your orgasm slams into you. Your whole body locks up, your legs trembling, thighs clamping around her head as you let out a silent cry, pleasure crashing through in overwhelming waves..")
+		saynn("Оргазм обрушивается на тебя со всей силой. Всё тело сводит судорогой, ноги дрожат, бёдра сжимают её голову, пока ты издаёшь беззвучный крик, а волны неистового удовольствия захлёстывают тебя..")
 
-		saynn("Kidlat doesn't stop.. even as your juices gush onto her tongue, she keeps licking, keeps sucking, keeps devouring every last drop of your release. Her tongue slides inside you again and starts lapping at your pulsating inner walls, extending your peak..")
+		saynn("Кидлат не останавливается.. даже когда твои соки брызжут ей на язык, она продолжает лизать, сосать и жадно слизывать каждую последнюю каплю твоего извержения. Её язык снова входит внутрь, слизывая влагу с твоих пульсирующих стенок, продлевая твой пик..")
 
-		addButton("Continue", "See what happens next", "do_lick_after")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_lick_after")
 	if(state == "do_lick_after"):
 		playAnimation(StageScene.SexOralForced, "tease", {pc="pc", npc="kidlat", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("She only pulls away when your grip loosens, her lips shiny, her breath heavy.. just like yours.")
+		saynn("Она отстраняется лишь тогда, когда твоя хватка ослабевает; её губы блестят, а дыхание тяжёлое.. совсем как твоё.")
 
-		saynn("Kidlat tilts her head up, grinning breathlessly into the darkness.")
+		saynn("Кидлат закидывает голову, тяжело дыша и ухмыляясь в темноту.")
 
-		saynn("[say=kidlat]Fuckin' hell.. haven't had customers like you before.[/say]")
+		saynn("[say=kidlat]Твою мать.. таких клиентов, как ты, у меня ещё не было.[/say]")
 
-		saynn("You smirk and brush a thumb over her soaked lips.. making her lick them.")
+		saynn("Ты ухмыляешься и проводишь большим пальцем по её влажным губам, заставляя её облизать их.")
 
-		saynn("Her ears flick, her tail swishes behind her.")
+		saynn("Её ушки дёргаются, а хвост мерно покачивается позади.")
 
-		saynn("[say=kidlat]Tell other junkies I have the best customer service.. wait, don't..[/say]")
+		saynn("[say=kidlat]Скажи другим торчкам, что у меня лучший сервис... хотя нет, не надо...[/say]")
 
-		saynn("Licking and sniffing your pussy for so long clearly made her space out a little.")
+		saynn("От того, что она так долго лизала и обнюхивала твою киску, она явно немного приуныла и улетела в астрал.")
 
-		saynn("Better stop there.")
+		saynn("Лучше на этом остановиться.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):
