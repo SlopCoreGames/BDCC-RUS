@@ -9,7 +9,7 @@ func _init():
 	pointsOnUnlock = 10
 
 func getName() -> String:
-	return "Grows a random bodypart"
+	return "Увеличивает случайную часть тела"
 
 func getPillName() -> String:
 	return "VariLimb"
@@ -54,7 +54,7 @@ func getPillOptions() -> Dictionary:
 	
 	return {
 		"specificPartID": {
-			name = "Bodypart",
+			name = "Часть тела",
 			desc = "What bodypart should the drug grow.",
 			value = "",
 			values = theParts,

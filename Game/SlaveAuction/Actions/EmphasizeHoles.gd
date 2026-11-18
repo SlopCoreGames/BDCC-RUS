@@ -7,7 +7,7 @@ func getActionType():
 	return AuctionActionType.Emphasize
 
 func getName() -> String:
-	return "Holes"
+	return "Дырки @@B*@@"
 
 func getButtonDesc() -> String:
 	return "Spread the slave's butt and really show off their holes.\n\nDoesn't reveal any preferences, has a negative effects on bidders who don't strongly prefer any of the presented traits."
@@ -21,44 +21,44 @@ func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	
 	if(hasVag):
 		if(vagTight && anusTight):
-			saynn("{presenter.You} {presenter.youVerb('step')} behind {slave.name}, grabbing {slave.hisHer} hips and pulling {slave.himHer} back slightly to display {slave.hisHer} perfectly toned body. Slowly, {presenter.youHe} {presenter.youHeVerb('spread')} {slave.hisHer} cheeks wide, revealing both {slave.hisHer} tight, inviting pussy and clenched anus to the bidders.")
+			saynn("{presenter.You} {presenter.youVerb('step')} стоит позади {slave.name}, хватая {slave.hisHer} за бедра и слегка оттягивая {slave.himHer} назад, чтобы продемонстрировать {slave.hisHer} идеально подтянутое тело. Медленно, {presenter.youHe} {presenter.youHeVerb('spread')} {slave.hisHer} разводит ягодицы в стороны, открывая торгующимся как {slave.hisHer} тугую, манящую киску, так и сжатый анус.")
 			
 			sayPresenter("Take a look, folks! This slave comes with two tightly wrapped packages for your pleasure. You won’t find anything as snug as this, built to grip and squeeze every inch you give.")
 			
-			saynn("{presenter.YouHe} {presenter.youHeVerb('run')} your fingers teasingly around {slave.hisHer} holes, emphasizing just how firm and untouched they are.")
+			saynn("{presenter.YouHe} {presenter.youHeVerb('run')} дразняще водит пальцами вокруг {slave.hisHer} отверстий, подчеркивая, насколько они тугие и нетронутые.")
 			
 			sayPresenter("Both holes, perfectly tight, perfectly ready for whatever you choose.")
 		elif(vagTight || anusTight):
-			saynn("With a steady hand, {presenter.you} {presenter.youVerb('take')} hold of {slave.name}’s hips, pulling {slave.himHer} back before spreading {slave.hisHer} cheeks wide, giving the bidders a perfect view of both the pussy and anus.")
+			saynn("Уверенной рукой {presenter.you} {presenter.youVerb('take')} хватает {slave.name} за бедра, притягивая {slave.himHer} назад и широко разводя {slave.hisHer} ягодицы, открывая участникам аукциона идеальный вид на киску и анус.")
 			
 			sayPresenter("Let’s get a good look at what’s on offer. {slave.He} {slave.isAre} ready from both ends, eager and waiting for whatever you decide to fill.")
 			
-			saynn("{presenter.YouHe} {presenter.youHeVerb('make')} sure the bidders can see everything, running {presenter.yourHis} fingers near {slave.hisHer} openings.")
+			saynn("{presenter.YouHe} {presenter.youHeVerb('make')} чтобы все участники аукциона могли разглядеть всё до мельчайших подробностей, проводя {presenter.yourHis} пальцами возле {slave.hisHer} отверстий.")
 			
 			sayPresenter("Two perfect holes, versatile and ready for all kinds of play.")
 		else:
-			saynn("{presenter.You} confidently {presenter.youVerb('step')} behind the slave, gripping {slave.hisHer} hips firmly and spreading {slave.hisHer} cheeks wide, making sure to display the well-worn, gaping holes of both {slave.hisHer} pussy and anus to the bidders.")
+			saynn("{presenter.You} уверенно {presenter.youVerb('step')} позади рабыни, крепко сжимая {slave.hisHer} бедра и широко разводя {slave.hisHer} ягодицы, чтобы продемонстрировать торгующимся изрядно растянутые, зияющие дырки и {slave.hisHer} киски, и ануса.")
 			
 			sayPresenter("Here we have a slave who’s clearly seen some use! Look at how loose these holes are, ready to take whatever you throw at them.")
 		
-			saynn("{presenter.YouHe} {presenter.youHeVerb('trace')} the edges of both gaping entrances, showing just how open and inviting they are.")
+			saynn("{presenter.YouHe} {presenter.youHeVerb('trace')} края обоих зияющих отверстий, показывая, насколько они открыты и манящи.")
 
 			sayPresenter("Plenty of space to fill, whether you choose the front or the back. It’s all ready for more!")
 	else:
 		if(anusTight):
-			saynn("{presenter.You} {presenter.youVerb('step')} behind the slave, placing both hands on {slave.hisHer} hips before spreading {slave.hisHer} cheeks to present the tight, puckered anus to the bidders.")
+			saynn("{presenter.You} {presenter.youVerb('step')} заходит со спины рабыни, кладет обе руки на {slave.hisHer} бедра и разводит {slave.hisHer} ягодицы, выставляя перед участниками аукциона тугое, сморщенное анус.")
 			
 			sayPresenter("Here we have a perfectly tight hole, ready for anyone who enjoys a little resistance. Just look at how clenched {slave.hisHer} little back door is.")
 			
-			saynn("{presenter.YouHe} {presenter.youHeVerb('press', 'presses')} lightly around the edge, letting the bidders get a clear view of the tightness.")
+			saynn("{presenter.YouHe} слегка разводит {presenter.youHeVerb('press', 'presses')} по краям, позволяя участникам аукциона отчетливо рассмотреть, насколько всё там туго.")
 			
 			sayPresenter("Perfectly tight, ready to grip every inch you give.")
 		else:
-			saynn("With a confident grip, {presenter.you} {presenter.youVerb('pull')} the slave's hips back and {presenter.youVerb('spread')} {slave.hisHer} cheeks wide, showcasing the loose, well-worn anus for all the bidders to see.")
+			saynn("Уверенным хватом {presenter.you} отводит {presenter.youVerb('pull')} бедра рабыни назад и {presenter.youVerb('spread')} широко разводит {slave.hisHer}, демонстрируя всем участникам аукциона её расслабленный, привыкший к использованию анус.")
 			
 			sayPresenter("Now, this one here’s seen some use! Just look at how open this hole is, no need to worry about tightness here.")
 			
-			saynn("{presenter.YouHe} {presenter.youHeVerb('trace')} the edges, making sure the bidders can see how much room there is.")
+			saynn("{presenter.YouHe} растягивает {presenter.youHeVerb('trace')} по краям, чтобы участники аукциона могли увидеть, как много там места.")
 			
 			sayPresenter("Plenty of space for any kind of play. This one’s ready to take whatever you’ve got!")
 	

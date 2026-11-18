@@ -60,19 +60,19 @@ func getTopicValue(_topicID, _pc):
 
 func getVisibleName(_topicID):
 	if(_topicID == InterestTopic.StuffedPussy):
-		return "a creamed pussy"
+		return "залитая спермой киска"
 	if(_topicID == InterestTopic.StuffedAss):
-		return "a cum-stuffed ass"
+		return "забитая кончой задница"
 	if(_topicID == InterestTopic.StuffedPussyOrAss):
-		return "any used hole"
+		return "любое использованное отверстие"
 	if(_topicID == InterestTopic.Pregnant):
-		return "pregnant bellies"
+		return "беременные животы"
 	if(_topicID == InterestTopic.StuffedThroat):
-		return "cum eaters"
+		return "пожирательницы спермы"
 	if(_topicID == InterestTopic.CoveredInCum):
-		return "sluts covered with cum"
+		return "шлюхи, покрытые кончой"
 	if(_topicID == InterestTopic.CoveredInLotsOfCum):
-		return "total cumdumpsters"
+		return "настоящие спермобаксы"
 	
 	return "error:"+str(_topicID)
 

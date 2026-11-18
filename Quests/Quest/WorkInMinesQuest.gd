@@ -4,7 +4,7 @@ func _init():
 	id = "WorkInMinesQuest"
 
 func getVisibleName():
-	return "Mineshafts"
+	return "Шахты"
 
 func getProgress():
 	var result = []

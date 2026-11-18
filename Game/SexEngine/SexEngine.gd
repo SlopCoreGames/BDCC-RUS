@@ -825,7 +825,7 @@ func getActionsForCharID(_charID:String, isForMenu:bool = false) -> Array:
 	if(_isPC && isForMenu):
 		result.append({
 			id = "continue",
-			name = "Continue",
+			name = "Продолжить",
 			desc = "Just continue doing what you're doing",
 			priority = 999,
 			user = _charID,
@@ -844,7 +844,7 @@ func getActionsForCharID(_charID:String, isForMenu:bool = false) -> Array:
 			if(_theDomInfo.isDynamicJoiner() && !_theDomInfo.hasGoals()):
 				result.append({
 					id = "dynamicLeave",
-					name = "Leave",
+					name = "Уйти",
 					desc = "Leave the scene",
 					score = 1.0,
 					priority = 0,

@@ -296,13 +296,13 @@ func _init():
 
 func start():
 	playAnimation(StageScene.Grope, "tease", {npc=getOwnerID()})
-	saynn("{npc.name} approaches you!")
+	saynn("{npc.name} подходит к тебе!")
 	talkModularOwnerToPC("SoftSlaveryCuddle") # Hey, I don't wanna do anything with you. Let's just go cuddle together.
-	saynn("Looks like you are being invited to chill together with your owner.")
-	saynn("{npc.name} holds a leash, waiting for your submission.")
+	saynn("Похоже, тебя приглашают расслабиться вместе с твоим хозяином.")
+	saynn("{npc.name} держит поводок, ожидая твоего подчинения.")
 	
-	addButton("Obey", "Go and chill together!", "obey")
-	addButton("Resist!", "You're not gonna let them do it", "resist")
+	addButton("Повиноваться", "Пойти и расслабиться вместе!", "obey")
+	addButton("Сопротивляться!", "Ты не собираешься позволять им это делать", "resist")
 
 func start_do(_id:String, _args:Array):
 	if(_id == "obey"):
@@ -314,11 +314,11 @@ func start_do(_id:String, _args:Array):
 	
 func cuddling():
 	playAnimation(StageScene.Cuddling, "idle", {pc=getOwnerID()})
-	saynn("You arrive to the good chilling spot!")
+	saynn("Вы добрались до отличного места для отдыха!")
 	talkModularOwnerToPC("SoftSlaveryCuddle2") # And now, we cuddle.
-	saynn("Your owner finds a nearest bench and pulls you close for cuddling.")
-	saynn("Feeling a tight embrace, you relax a little.. maybe this whole slavery thing isn't so bad.")
-	addButton("Chill", "Just relax", "doChill")
+	saynn("Твой хозяин находит ближайшую скамейку и притягивает тебя к себе для объятий.")
+	saynn("Чувствуя крепкие объятия, ты немного расслабляешься... может, всё это рабство не так уж и плохо.")
+	addButton("Расслабиться", "Просто расслабься", "doChill")
 	
 func cuddling_do(_id:String, _args:Array):
 	if(_id == "doChill"):
@@ -327,11 +327,11 @@ func cuddling_do(_id:String, _args:Array):
 		setState("askedQuestion")
 	
 func askedQuestion():
-	saynn("You spend some time together.. just resting..")
-	saynn("Eventually, {npc.name} decides to ask you a question.")
+	saynn("Вы проводите время вместе... просто отдыхая...")
+	saynn("В конце концов, {npc.name} решает задать тебе вопрос.")
 	var theEntry: Dictionary = QuestionDB[questionID] if QuestionDB.has(questionID) else {}
 	talkOwner(theEntry[qtext] if theEntry.has(qtext) else ("BAD QUESTION DB ENTRY: "+str(questionID)))
-	saynn("How do you wanna answer?")
+	saynn("Как ответишь?")
 	
 	var theAnswers:Array = theEntry[qanswers] if theEntry.has(qanswers) else []
 	var _i:int = 0
@@ -339,7 +339,7 @@ func askedQuestion():
 		addButton(theAnswer[0], theAnswer[1], "pickAnswer", [_i])
 		_i += 1
 	if(theAnswers.empty()):
-		addButton("Close", "Let the dev know!", "endEvent")
+		addButton("Закрыть", "Дай знать разработчику!", "endEvent")
 	
 	#addContinue("endEvent")
 
@@ -357,19 +357,19 @@ func ownerAnswers():
 	var theAnswer:Array = theAnswers[answerIndx]
 	var theOwnerText:String = theAnswer[2][ownerAnswerIndx]
 	
-	saynn("You tell {npc.name} what you think..")
+	saynn("Ты говоришь {npc.name} то, что думаешь...")
 	talk(C_PC, theAnswer[1])
-	saynn("{npc.He} {npc.verb('think')} about it for a bit.")
+	saynn("{npc.He} {npc.verb('think')} об этом какое-то время.")
 	talkOwner(theOwnerText)
-	saynn("And with that thought, you continue to cuddle..")
+	saynn("С этой мыслью вы продолжаете обниматься...")
 
 	addContinue("setState", ["cuddleEnded"])
 	
 func cuddleEnded():
 	playStand()
-	saynn("Eventually, it was time to stop cuddling.")
+	saynn("В конце концов, пришло время прекратить объятия.")
 	talkModularOwnerToPC("SoftSlaveryCuddleEnd") # Thanks for being a good cuddle slut. Gonna check on you some other day.
-	saynn("And so, {npc.he} {npc.verb('leave')} you be.. for now..")
+	saynn("И вот, {npc.he} {npc.verb('leave')} тебя... пока что...")
 	addContinue("endEvent")
 	
 func saveData() -> Dictionary:

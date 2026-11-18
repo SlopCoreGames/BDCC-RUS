@@ -12,13 +12,13 @@ func onStart(_args:Array):
 
 func start():
 	if(!didIntro):
-		saynn("You tell {npc.name} that you are ready to submit.. but only if {npc.he} {npc.verb('promise')} to listen to your limits.")
+		saynn("Вы говорите {npc.name}, что готовы подчиниться... но только если {npc.he} {npc.verb('promise')} выслушает ваши пределы.")
 	
-		saynn("Your owner is listening.")
+		saynn("Ваш хозяин слушает.")
 		
-		saynn("You can pick as many as you want. The owner might not listen to all of them but {npc.he} {npc.isAre} guaranteed to listen to at least 1 of them.")
+		saynn("Вы можете выбрать сколько угодно ограничений. Хозяин может не прислушаться ко всем, но {npc.he} {npc.isAre} гарантирует, что он выслушает хотя бы одно из них.")
 	else:
-		saynn("List of limits:")
+		saynn("Список ограничений:")
 	var theOwner = getOwner()
 	var theList:Array = []
 	for theLimitID in pickedSexLimits:
@@ -29,7 +29,7 @@ func start():
 		theList.append(theLimitEntry["name"]+": "+theLimitEntry["desc"]+" (Agree chance: "+str(Util.roundF(theChance, 1))+"%)")
 	saynn(Util.join(theList, "\n"))
 	
-	addButton("CONFIRM", "Confirm your list of limits", "confirm")
+	addButton("CONFIRM", "Подтвердить список ограничений", "confirm")
 	
 	var bannedLimits:Array = []
 	for limitEntryID in pickedSexLimits:
@@ -45,7 +45,7 @@ func start():
 		var isIn:bool = pickedSexLimits.has(limitEntryID)
 		
 		if(bannedLimits.has(limitEntryID)):
-			addDisabledButton(("+" if !isIn else "-")+limitEntry["name"], "This limit is now incompatible with your other selected limits")
+			addDisabledButton(("+" if !isIn else "-")+limitEntry["name"], "Это ограничение теперь несовместимо с другими выбранными вами лимитами")
 		else:
 			addButton(("+" if !isIn else "-")+limitEntry["name"], limitEntry["desc"], "toggle", [limitEntryID])
 
@@ -73,7 +73,7 @@ func start_do(_id:String, _args:Array):
 		setState("ownerAgreeLimits")
 	
 func ownerAgreeLimits():
-	saynn("You tell your owner your limits.. and then {npc.he} {npc.verb('tell')} which ones {npc.he} {npc.verb('agree')} to honor.")
+	saynn("Вы озвучиваете хозяину свои пределы... и затем {npc.he} {npc.verb('tell')}, какие именно из них {npc.he} {npc.verb('agree')} соблюдать.")
 	
 	var theList:Array = []
 	for theLimitID in pickedSexLimits:

@@ -44,12 +44,12 @@ func _run():
 		var npcSlave:NpcSlave = npc.getNpcSlavery()
 		var prostitution = npcSlave.getActivity()
 		
-		saynn("{npc.name} finds you, looking quite exhausted after whoring {npc.himself} out for "+str(prostitution.workHoursRemember)+" hours!")
+		saynn("{npc.name} находит тебя, выглядящую совершенно измотанной после того, как ты трахалась с {npc.himself} в течение "+str(prostitution.workHoursRemember)+" часов!")
 		
 		if(howMuchEarned <= 0):
-			saynn("{npc.He} walks up to you and gives you.. nothing.. somehow, {npc.he} didn't earn anything.")
+			saynn("{npc.He} подходит к тебе и дает тебе... ничего... каким-то образом {npc.he} ничего не заработала.")
 		else:
-			saynn("{npc.He} walks up to you and gives you "+str(howMuchEarned)+" credit"+("s" if howMuchEarned != 1 else "")+"!")
+			saynn("{npc.He} подходит к тебе и дает тебе "+str(howMuchEarned)+" credit"+("s" if howMuchEarned != 1 else "")+"!")
 		
 		if(howMuchEarned <= 4):
 			if(npcSlave.getObedience() < 0.3 && npcSlave.getLove() < 0.3 && npcSlave.getBrokenSpirit() < 0.3):
@@ -81,31 +81,31 @@ func _run():
 				])+"[/say]")
 		
 		if(howMuchEarned == 0):
-			saynn("Zero credits? Really? That's pathetic and deserves a good punishment!")
+			saynn("Ноль кредитов? Серьезно? Это жалко, и ты заслуживаешь хорошего наказания!")
 		elif(howMuchEarned == 1):
-			saynn("A single credit? Really? That's pathetic and deserves a good punishment!")
+			saynn("Всего один кредит? Серьезно? Это жалко, и ты заслуживаешь хорошего наказания!")
 		elif(howMuchEarned <= 4):
-			saynn("Only "+str(howMuchEarned)+" credits? That's not a lot, deserves a small punishment.")
+			saynn("Всего лишь "+str(howMuchEarned)+" кредитов? Это немного, заслуживает легкого наказания.")
 		elif(howMuchEarned <= 10):
-			saynn("That's not a lot.. but it's still something, deserves a small reward.")
+			saynn("Не так уж много... но все же что-то есть, заслуживает небольшой награды.")
 		elif(howMuchEarned <= 20):
-			saynn("That's a very fair amount, {npc.he} deserves a normal reward.")
+			saynn("Очень справедливая сумма, {npc.he} заслуживает обычной награды.")
 		else:
-			saynn("Wow, that's a lot. {npc.He} deserves a big reward!")
+			saynn("Ого, это прилично. {npc.He} заслуживает щедрой награды!")
 		
 		if(npcSlave.getObedience() < 0.3 && npcSlave.getLove() < 0.3 && npcSlave.getBrokenSpirit() < 0.3):
-			saynn("[say=npc]I will return to your cell, I guess.[/say]")
+			saynn("[say=npc]Думаю, я вернусь в твою камеру.[/say]")
 		else:
 			saynn("[say=npc]"+RNG.pick([
 				"I'm pretty tired, gonna return to your cell.",
 				"I will go put myself back on a leash..",
 			])+"[/say]")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	
 	if(state == "something_wrong"):
-		saynn("Something went wrong, they weren't a whore at all!")
-		addButton("Continue", "Oh well", "endthescene")
+		saynn("Что-то пошло не так, она оказалась вовсе не шлюхой!")
+		addButton("Продолжить", "Ну и ладно", "endthescene")
 		return
 
 func _react(_action: String, _args):

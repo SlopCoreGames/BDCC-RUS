@@ -16,7 +16,7 @@ func _init():
 	buttonPriority = 40
 
 func getVisibleName():
-	return "Slave helper"
+	return "Помощник рабыни @@B*@@"
 
 func getVisibleDesc():
 	return "Manage how your sub will help other slaves"

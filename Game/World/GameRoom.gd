@@ -282,7 +282,7 @@ func setMissionSpriteVisible(_vis:bool):
 func _get_property_list():
 	var properties = []
 	properties.append({
-			name = "Location Tags",
+			name = "Теги локации",
 			type = TYPE_NIL,
 			hint_string = "loctag_",
 			usage = PROPERTY_USAGE_GROUP | PROPERTY_USAGE_SCRIPT_VARIABLE

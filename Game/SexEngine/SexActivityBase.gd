@@ -1620,7 +1620,7 @@ func doCumBJDom(isDeepthroat:bool = false):
 		var breakChance:float = condom.getCondomBreakChance()
 		condomBroke = getDom().shouldCondomBreakWhenFucking(getSub(), breakChance)
 		if(condomBroke):
-			text = "[b]The condom broke![/b] "+text
+			text = "[b]Презерватив порвался![/b] "+text
 			condom.destroyMe()
 			fetishUp(DOM_0, Fetish.Condoms, -20.0)
 			fetishUp(SUB_0, Fetish.Condoms, -30.0)
@@ -1658,7 +1658,7 @@ func doCumBJFacialsDom():
 		var breakChance:float = condom.getCondomBreakChance()
 		
 		if(RNG.chance(breakChance)):
-			text = "[b]The condom broke![/b] "+text
+			text = "[b]Презерватив порвался![/b] "+text
 			condom.destroyMe()
 			fetishUp(DOM_0, Fetish.Condoms, -20.0)
 			fetishUp(SUB_0, Fetish.Condoms, -30.0)
@@ -1736,7 +1736,7 @@ func doCumBJSub(supposedToBeAngry:bool = true):
 		var breakChance:float = condom.getCondomBreakChance()
 		condomBroke = getSub().shouldCondomBreakWhenFucking(getDom(), breakChance)
 		if(condomBroke):
-			text = "[b]The condom broke![/b] "+text
+			text = "[b]Презерватив порвался![/b] "+text
 			condom.destroyMe()
 			fetishUp(SUB_0, Fetish.Condoms, -20.0)
 			fetishUp(DOM_0, Fetish.Condoms, -30.0)
@@ -1793,7 +1793,7 @@ func doCumBJFacialsSub(supposedToBeAngry:bool = true):
 		var breakChance:float = condom.getCondomBreakChance()
 		
 		if(RNG.chance(breakChance)):
-			text = "[b]The condom broke![/b] "+text
+			text = "[b]Презерватив порвался![/b] "+text
 			condom.destroyMe()
 			fetishUp(SUB_0, Fetish.Condoms, -20.0)
 			fetishUp(DOM_0, Fetish.Condoms, -30.0)
@@ -2613,7 +2613,7 @@ func doProcessCumInside(_indxTop:int, _indxBottom:int, _hole:String, tryKnot:boo
 		var breakChance:float = condom.getCondomBreakChance()
 		condomBroke = topChar.shouldCondomBreakWhenFucking(bottomChar, breakChance)
 		if(condomBroke):
-			text = "[b]The condom broke![/b] "+text
+			text = "[b]Презерватив порвался![/b] "+text
 			condom.destroyMe()
 			didCumInside = true
 			fetishUp(_indxTop, Fetish.Condoms, -20.0)
@@ -2966,7 +2966,7 @@ func cumInside(_indxWho:int, _indxTarget:int, _hole:String, _extra:Dictionary = 
 		if(strapon.getFluids() != null && !strapon.getFluids().isEmpty()):
 			var straponHasCum:bool = strapon.getFluids().hasVirileFluids()
 			target.cummedInBodypartByAdvanced(_hole, theChar.getID())
-			var text:String = "{<TOP>.Your} strapon gets squeezed by {<BOTTOM>.your} "+getNameHole(_indxTarget, _hole)+" enough for it to suddenly [b]release its contents inside {<BOTTOM>.youHim}[/b]!"
+			var text:String = "{<TOP>.Your} сжимает страпон {<BOTTOM>.your} "+getNameHole(_indxTarget, _hole)+" enough for it to suddenly [b]release its contents inside {<BOTTOM>.youHim}[/b]!"
 			addTextTopBottom(text, _indxWho, _indxTarget)
 			
 			if(straponHasCum && target.hasWombIn(_hole) && target.getFertility() > 0.1):
@@ -3008,7 +3008,7 @@ func doProcessCumBJInside(_indxTop:int, _indxBottom:int, isDeepthroat:bool = fal
 		var breakChance:float = condom.getCondomBreakChance()
 		condomBroke = topChar.shouldCondomBreakWhenFucking(bottomChar, breakChance)
 		if(condomBroke):
-			text = "[b]The condom broke![/b] "+text
+			text = "[b]Презерватив порвался![/b] "+text
 			condom.destroyMe()
 			fetishUp(_indxTop, Fetish.Condoms, -20.0)
 			fetishUp(_indxBottom, Fetish.Condoms, -30.0)
@@ -3120,7 +3120,7 @@ func cumOnto(_indxWho:int, _indxTarget:int, _extra:Dictionary = {}):
 		var breakChance:float = condom.getCondomBreakChance()
 		
 		if(RNG.chance(breakChance)):
-			text = "[b]The condom broke![/b] "+text
+			text = "[b]Презерватив порвался![/b] "+text
 			condom.destroyMe()
 			fetishUp(_indxWho, Fetish.Condoms, -20.0)
 			fetishUp(_indxTarget, Fetish.Condoms, -30.0)
@@ -3186,19 +3186,19 @@ func tryPenetrate(_indxTop:int, _indxBottom:int, _hole:String, isEnveloping:bool
 			"{<TOP>.You} {<TOP>.youVerb('shove','shoves')} {<TOP>.yourHis} {<TOP>.penisShort} inside {<BOTTOM>.your} "+getNameHole(_indxBottom, _hole)+"!",
 		])
 		if(isEnveloping):
-			text = "{<BOTTOM>.You} {<BOTTOM>.youVerb('engulf')} {<TOP>.youHis} {<TOP>.penisShort}, letting it penetrate {<BOTTOM>.yourHis} "+getNameHole(_indxBottom, _hole)+"."
+			text = "{<BOTTOM>.You} {<BOTTOM>.youVerb('engulf')} {<TOP>.youHis} {<TOP>.penisShort}, позволяя ему войти в {<BOTTOM>.yourHis} "+getNameHole(_indxBottom, _hole)+"."
 		if(_hole == BodypartSlot.Anus && bottomChar.getInventory().hasSlotEquipped(InventorySlot.Anal)):
 			var item = bottomChar.getInventory().getEquippedItem(InventorySlot.Anal)
 			if(!isEnveloping):
-				text = "{<TOP>.You} temporarily {<TOP>.youVerb('retrieve')} "+str(item.getAStackName())+" out of {<BOTTOM>.your} ass. "+text
+				text = "{<TOP>.You} на время {<TOP>.youVerb('retrieve')} "+str(item.getAStackName())+" out of {<BOTTOM>.your} ass. "+text
 			else:
-				text = "{<BOTTOM>.You} temporarily {<BOTTOM>.youVerb('retrieve')} "+str(item.getAStackName())+" out of {<BOTTOM>.yourHis} ass. "+text
+				text = "{<BOTTOM>.You} на время {<BOTTOM>.youVerb('retrieve')} "+str(item.getAStackName())+" out of {<BOTTOM>.yourHis} ass. "+text
 		elif(_hole == BodypartSlot.Vagina && bottomChar.getInventory().hasSlotEquipped(InventorySlot.Vagina)):
 			var item = bottomChar.getInventory().getEquippedItem(InventorySlot.Vagina)
 			if(!isEnveloping):
-				text = "{<TOP>.You} temporarily {<TOP>.youVerb('retrieve')} "+str(item.getAStackName())+" out of {<BOTTOM>.your} pussy. "+text
+				text = "{<TOP>.You} на время {<TOP>.youVerb('retrieve')} "+str(item.getAStackName())+" out of {<BOTTOM>.your} pussy. "+text
 			else:
-				text = "{<BOTTOM>.You} temporarily {<BOTTOM>.youVerb('retrieve')} "+str(item.getAStackName())+" out of {<BOTTOM>.yourHis} pussy. "+text
+				text = "{<BOTTOM>.You} на время {<BOTTOM>.youVerb('retrieve')} "+str(item.getAStackName())+" out of {<BOTTOM>.yourHis} pussy. "+text
 		
 		addTextTopBottom(text, _indxTop, _indxBottom)
 		

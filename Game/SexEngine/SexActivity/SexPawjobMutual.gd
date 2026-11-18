@@ -14,7 +14,7 @@ func _init():
 func getVisibleName() -> String:
 	if(GM.pc):
 		if(GM.pc.bodypartHasTrait(BodypartSlot.Legs, PartTrait.LegsPlanti)):
-			return "Mutual footjob"
+			return "Взаимный футджоб"
 	return activityName
 
 func getGoals():

@@ -82,11 +82,11 @@ func start():
 		playAnimation(StageScene.Duo, "hurt", {npc=getOwnerID()})
 	
 	var theLockInfo := getLockNameDesc(pickedLock)
-	saynn("{npc.name} forces [b]"+theLockInfo[0]+"[/b] onto you and locks it with a [b]key[/b] before putting it away.")
+	saynn("{npc.name} forces [b]"+theLockInfo[0]+"[/b] на тебя и защелкивает её с помощью [b]ключа[/b], прежде чем убрать её.")
 	talkModularOwnerToPC("SoftSlaveryPunishLockRestraint") # You fucked up. And now you will have to wear it.
-	saynn("Looks like you don't get a choice in this..")
+	saynn("Похоже, выбора у тебя нет...")
 	talkModularOwnerToPC("SoftSlaveryPunishLockRestraint2") # If you dare to take it off before I allow you, I will have to punish you again.
-	saynn("The restraint sits extremely tightly.. there is no easy way to unlock it without a key.")
+	saynn("Оковы сидят чрезвычайно плотно... без ключа их не расстегнуть.")
 	talkModularOwnerToPC("SoftSlaveryPunishLockRestraint3") # You are on some very thin ice right now, you really better start behaving now.
 	
 	addContinue("endEvent")

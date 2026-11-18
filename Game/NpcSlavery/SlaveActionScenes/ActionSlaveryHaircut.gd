@@ -34,29 +34,29 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc=npcID, npcBodyState={leashedBy="pc"}})
 		
 		if(isAlreadyAtBathroom):
-			saynn("You are standing near the big mirrors. Sinks here have some hair grooming and growing supplies that you can use on your slave to change {npc.his} haircut.")
+			saynn("Вы стоите у больших зеркал. В раковинах лежат средства для ухода за волосами и их роста, которые можно использовать на своей рабыне, чтобы изменить {npc.his} прическу.")
 		else:
-			saynn("You leash your slave and bring {npc.him} to one of the bathrooms. Sinks here have some hair grooming and growing supplies that you can use on your slave to change {npc.his} haircut.")
+			saynn("Вы привязываете рабыню поводком и ведете {npc.him} к одной из душевых. В раковинах лежат средства для ухода за волосами и их роста, которые можно использовать на своей рабыне, чтобы изменить {npc.his} прическу.")
 		
-		saynn("What do you want to change?")
+		saynn("Что именно вы хотите изменить?")
 		
-		addButton("Haircut", "Change your slave's haircut", "changehaircutmenu")
+		addButton("Прическа", "Изменить прическу рабыни", "changehaircutmenu")
 		var bodypart = npc.getBodypart(BodypartSlot.Hair)
 		if(!bodypart.hasCustomSkinPattern()):
-			addButton("Skin", "Change the hair's skin", "changepartskinmenu")
+			addButton("Кожа", "Изменить текстуру волос", "changepartskinmenu")
 		else:
 			if(!GlobalRegistry.getPartSkins(bodypart.id).empty() || bodypart.pickedSkin != null):
-				addButton("Skin", "Change the hair's skin", "changepartskinmenu")
-		addButton("Primary color", "Change your slave's hair color", "changecolor", [0])
-		addButton("Secondary color", "Change your slave's hair color", "changecolor", [1])
-		addButton("Tertiary color", "Change your slave's hair color", "changecolor", [2])
-		addButton("Done", "Enough tinkering", "endthescene")
+				addButton("Кожа", "Изменить текстуру волос", "changepartskinmenu")
+		addButton("Основной цвет", "Изменить цвет волос рабыни", "changecolor", [0])
+		addButton("Вторичный цвет", "Изменить цвет волос рабыни", "changecolor", [1])
+		addButton("Третичный цвет", "Изменить цвет волос рабыни", "changecolor", [2])
+		addButton("Готово", "Достаточно копания", "endthescene")
 
 	if(state == "changepartskinmenu"):
-		saynn("Pick the haircut style that you want to see on your slave")
+		saynn("Выберите стиль стрижки, который вы хотите применить к своей рабыне")
 
 		var bodypart = npc.getBodypart(BodypartSlot.Hair)
-		addButton("BACK", "Go back", "")
+		addButton("BACK", "Назад", "")
 		
 		if(bodypart.hasCustomSkinPattern()):
 			var defaultSkinIsActive:bool = (bodypart.pickedSkin == null)
@@ -85,9 +85,9 @@ func _run():
 
 
 	if(state == "changehaircutmenu"):
-		saynn("Pick the haircut that you want to see on your slave")
+		saynn("Выберите стрижку, которую вы хотите сделать своей рабыне")
 		
-		addButton("BACK", "This one is good", "")
+		addButton("BACK", "Этот вариант хорош", "")
 
 		var activeHaircutBodypartId:String = ""
 		if(npc.hasBodypart(BodypartSlot.Hair)):
@@ -106,9 +106,9 @@ func _run():
 			GM.ui.setCurrentPage(savedPage)
 
 	if(state == "changehair"):
-		saynn("You humm as you work on your slave's hair, using the instant hair grower and scissors to shape the way {npc.his} hair looks")
+		saynn("Вы напеваете под нос, работая с волосами рабыни; используя мгновенный стимулятор роста и ножницы, вы придаете {npc.his} волосам нужную форму")
 
-		addButton("Continue", "See what happens next", "changehaircutmenu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "changehaircutmenu")
 
 	if(state == "changecolor"):
 		var bodypart = npc.getBodypart(BodypartSlot.Hair)
@@ -125,8 +125,8 @@ func _run():
 			rememberedColor = bodypart.pickedBColor
 		colorPicker.connect("color_changed", self, "changepartcolormenu_colorchanged")
 			
-		addButton("Back", "Go back", "resetcolor_bodypartmenu")
-		addButton("Confirm", "Select this color", "changepartcolormenu_select")
+		addButton("Назад", "Назад", "resetcolor_bodypartmenu")
+		addButton("Подтвердить", "Выбрать этот цвет", "changepartcolormenu_select")
 		
 
 var isChanging = false

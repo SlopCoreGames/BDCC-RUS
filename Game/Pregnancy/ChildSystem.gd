@@ -6,7 +6,7 @@ var archive: Dictionary = {}
 
 func _ready():
 	GM.CS = self
-	name = "ChildSystem"
+	name = "Система детей"
 
 func addChild(child):
 	children.append(child)

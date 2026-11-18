@@ -8,61 +8,61 @@ func onStart(_args:Array):
 
 func start():
 	playStand()
-	saynn("Slavery Relationship info:")
+	saynn("Информация об отношениях (рабство):")
 	var theNpcOwner := getNpcOwner()
 	if(theNpcOwner):
 		saynn(Util.join(theNpcOwner.getRelationshipFullInfo(), "\n"))
 	
-	addButton("Close", "You've seen enough", "endEvent")
+	addButton("Закрыть", "Ты уже достаточно навидался", "endEvent")
 	if(theNpcOwner):
 		if(theNpcOwner.canChooseApproachDays()):
-			addButton("Frequency", "Set how often should your owner approach you", "setState", ["approachMenu"])
+			addButton("Частота", "Настрой, как часто твой хозяин будет подходить к тебе", "setState", ["approachMenu"])
 		else:
-			addDisabledButton("Frequency", "Your dynamic hasn't progressed far enough..")
+			addDisabledButton("Частота", "Ваши отношения еще недостаточно развиты...")
 		if(theNpcOwner.canChooseToDisableSleepTogether()):
-			addButton("Sleep together", "Choose if you want to sleep together with your owner", "setState", ["sleepTogetherMenu"])
+			addButton("Переспать", "Выбери, хочешь ли ты переспать со своим хозяином", "setState", ["sleepTogetherMenu"])
 		else:
-			addDisabledButton("Sleep together", "Your dynamic hasn't progressed far enough..")
+			addDisabledButton("Переспать", "Ваши отношения еще недостаточно развиты...")
 
 func sleepTogetherMenu():
-	saynn("Do you want to sleep together with your owner?")
+	saynn("Хочешь спать вместе со своим хозяином?")
 	
 	var curSelText:String = "Random"
 	if(getNpcOwner().isSleepTogetherDisabled()):
 		curSelText = "Never"
 	if(getNpcOwner().isSleepTogetherAlways()):
 		curSelText = "Always"
-	saynn("Current selection: "+curSelText)
+	saynn("Текущий выбор: "+curSelText)
 	
-	addButton("Back", "Enough choosing", "setState", ["start"])
-	addButton("Random", "Owner will sometimes sleep with you", "setSleep", [0])
-	addButton("Never", "Owner will never sleep with you", "setSleep", [1])
-	addButton("Always", "Owner will always try to sleep with you", "setSleep", [2])
+	addButton("Назад", "Хватит выбирать", "setState", ["start"])
+	addButton("Случайно", "Хозяин будет иногда спать с тобой", "setSleep", [0])
+	addButton("Никогда", "Хозяин никогда не будет спать с тобой", "setSleep", [1])
+	addButton("Всегда", "Хозяин всегда будет пытаться переспать с тобой", "setSleep", [2])
 
 func sleepTogetherMenu_do(_id:String, _args:Array):
 	if(_id == "setSleep"):
 		getNpcOwner().sleepTogetherOption = _args[0]
 
 func approachMenu():
-	addButton("Back", "Enough choosing", "setState", ["start"])
+	addButton("Назад", "Хватит выбирать", "setState", ["start"])
 	var theNpcOwner := getNpcOwner()
 	if(!theNpcOwner):
 		return
 	
-	saynn("You're allowed to choose how often {npc.name} will approach you.")
+	saynn("Вы можете сами выбрать, как часто {npc.name} будет подходить к вам.")
 	
 	var theCurrentFreq:int = theNpcOwner.nextApproachOverride
 	if(theCurrentFreq <= 0):
-		saynn("Currently, your owner decides how often to approach you.")
+		saynn("Сейчас частота подходов зависит от решения вашего хозяина.")
 	else:
-		saynn("Currently, your owner will approach you every "+str(theCurrentFreq)+" day"+("s" if theCurrentFreq != 1 else "")+".")
+		saynn("Сейчас ваш хозяин будет подходить к вам каждые "+str(theCurrentFreq)+" day"+("s" if theCurrentFreq != 1 else "")+".")
 	
 	var possible:Array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 30]
 	for _days in possible:
 		if(_days <= 0):
-			addButton("Up to owner", "Let the owner decide how often to approach you", "setDays", [_days])
+			addButton("На усмотрение хозяина", "Пусть хозяин сам решает, как часто подходить к вам", "setDays", [_days])
 		else:
-			addButton(str(_days)+" day"+("s" if _days != 1 else ""), "Choose this frequency", "setDays", [_days])
+			addButton(str(_days)+" day"+("s" if _days != 1 else ""), "Выбрать эту частоту", "setDays", [_days])
 
 func approachMenu_do(_id:String, _args:Array):
 	if(_id == "setDays"):

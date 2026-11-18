@@ -19,7 +19,7 @@ func _run():
 		addCharacter(npcID)
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
 		
-		saynn("Your submissive is trained enough for you to let {npc.him} to walk around the prison. You can order {npc.him} to automatically shower your other slaves that are covered in cum or bring pregnant slaves into the nursery.")
+		saynn("Ваша подчиненная достаточно обучена, чтобы вы могли позволить ей {npc.him} ходить по тюрьме. Вы можете приказать {npc.him} автоматически мыть других ваших рабов, покрытых спермой, или приводить беременных рабынь в родильный зал.")
 		
 		var npcSlave:NpcSlave = npc.getNpcSlavery()
 		var willWash = false
@@ -30,19 +30,19 @@ func _run():
 			willHelpBirth = subHelper.willHelpGiveBirth
 		
 		if(!willWash):
-			saynn("Currently, your sub will [b]not[/b] automatically wash your other slaves when they are covered in cum.")
+			saynn("В данный момент ваша рабыня [b]не будет[/b] автоматически мыть других ваших рабов, когда те покрыты спермой.")
 		else:
-			saynn("Currently, your sub [b]will[/b] automatically wash your other slaves.")
+			saynn("В данный момент ваша рабыня [b]будет[/b] автоматически мыть других ваших рабов.")
 			
 		if(!willHelpBirth):
-			saynn("Also, {npc.he} will [b]not[/b] automatically bring your pregnant slaves into nursery to give birth.")
+			saynn("Также {npc.he} будет [b]не[/b] автоматически приводить ваших беременных рабынь в родильный зал для родов.")
 		else:
-			saynn("Also, {npc.he} [b]will[/b] automatically bring your pregnant slaves into nursery to give birth.")
+			saynn("Также {npc.he} [b]будет[/b] автоматически приводить ваших беременных рабынь в родильный зал для родов.")
 		
-		addButton("Toggle wash", "Make/stop your slave wash other slaves", "toggle_wash")
-		addButton("Toggle birth", "Make/stop your slave bring pregnant slaves into nursery", "toggle_birth")
+		addButton("Переключить мытье", "Заставить/остановить мытье рабов вашей рабыней", "toggle_wash")
+		addButton("Переключить роды", "Заставить/остановить приведение беременных рабынь в родильный зал", "toggle_birth")
 		
-		addButton("Close", "Enough manipulating", "endthescene")
+		addButton("Закрыть", "Хватит манипуляций", "endthescene")
 
 
 func _react(_action: String, _args):

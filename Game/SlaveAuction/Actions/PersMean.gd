@@ -7,7 +7,7 @@ func getActionType():
 	return AuctionActionType.Personality
 
 func getName() -> String:
-	return "Mean/Kind"
+	return "Скверный/Добрый"
 
 func getButtonDesc() -> String:
 	return "Tell the bidders about the slave's mean/kind personality.\n\n[b]Might[/b] reveal 1 fetish preference of each bidder."

@@ -217,7 +217,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 				var breakChance:float = condom.getCondomBreakChance()
 				
 				if(RNG.chance(breakChance)):
-					text = "[b]The condom broke![/b] "+text
+					text = "[b]Презерватив порвался![/b] "+text
 					condom.destroyMe()
 					fetishUp(SUB_0, Fetish.Condoms, -15.0)
 					fetishUp(DOM_0, Fetish.Condoms, -20.0)
@@ -261,7 +261,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 				var breakChance:float = condom.getCondomBreakChance()
 				
 				if(RNG.chance(breakChance)):
-					text = "[b]The condom broke![/b] "+text
+					text = "[b]Презерватив порвался![/b] "+text
 					condom.destroyMe()
 					fetishUp(SUB_0, Fetish.Condoms, -15.0)
 					fetishUp(DOM_0, Fetish.Condoms, -20.0)
@@ -304,7 +304,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 				var breakChance = condom.getCondomBreakChance()
 				condomBroke = getSub().shouldCondomBreakWhenFucking(getDom(), breakChance)
 				if(condomBroke):
-					text = "[b]The condom broke![/b] "+text
+					text = "[b]Презерватив порвался![/b] "+text
 					condom.destroyMe()
 					fetishUp(SUB_0, Fetish.Condoms, -15.0)
 					fetishUp(DOM_0, Fetish.Condoms, -20.0)

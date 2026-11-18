@@ -7,195 +7,195 @@ func _run():
 	if(state == ""):
 		addCharacter("alexrynard")
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard", npcAction="sit"})
-		saynn("You find Alex in his usual spot, fixing datapads.")
+		saynn("Ты находишь Алекса на его обычном месте: он копается в датападах.")
 
-		saynn("You're not quite sure how you should approach him.")
+		saynn("Ты не совсем понимаешь, как к нему подступиться.")
 
-		addButton("Sit quietly", "Don't say anything", "sit_quietly")
-		addButton("Say sorry", "Apologize", "say_sorry")
+		addButton("Тихо сесть рядом", "Промолчать", "sit_quietly")
+		addButton("Извиниться", "Принести извинения", "say_sorry")
 	if(state == "sit_quietly"):
 		playAnimation(StageScene.Duo, "sit", {npc="alexrynard", npcAction="sit"})
-		saynn("You decide to take a seat.. but on a chair that belongs to another table, quite some distance away from Alex. But enough to see what he is doing.")
+		saynn("Ты решаешь присесть... но на стул у другого стола, довольно далеко от Алекса. Но достаточно близко, чтобы видеть, чем он занят.")
 
-		saynn("Alex acknowledges your presence with a quick stare.")
+		saynn("Алекс отмечает твоё присутствие коротким взглядом.")
 
-		saynn("After some time, he sighs and leaves the tools on the table.. before approaching you.")
+		saynn("Спустя какое-то время он вздыхает и откладывает инструменты на стол... после чего подходит к тебе.")
 
-		saynn("[say=alexrynard]Good job.[/say]")
+		saynn("[say=alexrynard]Отличная работа.[/say]")
 
-		saynn("[say=pc]Huh?[/say]")
+		saynn("[say=pc]А?[/say]")
 
-		saynn("Alex points at you. You're not sure if he is being sarcastic.")
+		saynn("Алекс указывает на тебя. Ты не совсем понимаешь, сарказм это или нет.")
 
-		saynn("[say=alexrynard]You. Good job with the datapads.[/say]")
+		saynn("[say=alexrynard]Ты. С датападами ты справился молодцом.[/say]")
 
-		saynn("You're still not sure.")
+		saynn("Ты всё ещё не уверена.")
 
-		saynn("[say=pc]Really?[/say]")
+		saynn("[say=pc]Серьёзно?[/say]")
 
-		saynn("He sighs.")
+		saynn("Он вздыхает.")
 
-		saynn("[say=alexrynard]Sit with me.[/say]")
+		saynn("[say=alexrynard]Присядь со мной.[/say]")
 
-		addButton("Sit", "Might as well", "after_sit")
+		addButton("Сесть", "Почему бы и нет", "after_sit")
 	if(state == "say_sorry"):
-		saynn("You feel like you owe him a little apology.")
+		saynn("Тебе кажется, что ты задолжала ему небольшое извинение.")
 
-		saynn("[say=pc]Sorry.[/say]")
+		saynn("[say=pc]Прости.[/say]")
 
-		saynn("Alex acknowledges your presence with a little nod.")
+		saynn("Алекс подтверждает твоё присутствие коротким кивком.")
 
-		saynn("Looks like you should leave..")
+		saynn("Похоже, тебе пора уходить...")
 
-		saynn("But before you do..")
+		saynn("Но прежде чем ты это сделаешь...")
 
-		saynn("[say=alexrynard]Good job.[/say]")
+		saynn("[say=alexrynard]Отличная работа.[/say]")
 
-		saynn("[say=pc]Huh?[/say]")
+		saynn("[say=pc]А?[/say]")
 
-		saynn("Alex points at you. You're not sure if he is being sarcastic.")
+		saynn("Алекс указывает на тебя. Ты не совсем понимаешь, сарказм это или нет.")
 
-		saynn("[say=alexrynard]You. Good job with the datapads.[/say]")
+		saynn("[say=alexrynard]Ты. С датападами ты справился молодцом.[/say]")
 
-		saynn("You're still not sure.")
+		saynn("Ты всё ещё не уверена.")
 
-		saynn("[say=pc]Really?[/say]")
+		saynn("[say=pc]Серьёзно?[/say]")
 
-		saynn("Alex sighs.")
+		saynn("Алекс вздыхает.")
 
-		saynn("[say=alexrynard]Sit down.[/say]")
+		saynn("[say=alexrynard]Присаживайся.[/say]")
 
-		addButton("Sit", "Might as well", "after_sit")
+		addButton("Сесть", "Почему бы и нет", "after_sit")
 	if(state == "after_sit"):
 		playAnimation(StageScene.Duo, "sit", {npc="alexrynard", npcAction="sit"})
-		saynn("You take a seat on your usual chair.")
+		saynn("Ты садишься на свой привычный стул.")
 
-		saynn("[say=alexrynard]I don't wanna weigh you down with my shit. Life's been rough.[/say]")
+		saynn("[say=alexrynard]Не хочу грузить тебя своим дерьмом. Жизнь в последнее время — сплошная хрень.[/say]")
 
-		saynn("[say=pc]Too much work?[/say]")
+		saynn("[say=pc]Слишком много работы?[/say]")
 
-		saynn("Alex rubs his eyes and looks at the pile of datapads before shaking his head.")
+		saynn("Алекс протирает глаза, смотрит на стопку датападов и качает головой.")
 
-		saynn("[say=alexrynard]Work is work. It's whatever. Long story short.[/say]")
+		saynn("[say=alexrynard]Работа есть работа. Пофиг. Короче говоря...[/say]")
 
-		saynn("He looks at you.")
+		saynn("Он смотрит на тебя.")
 
-		saynn("[say=alexrynard]Trust is an extremely fragile thing. Building it takes forever. Breaking it.. one wrong decision.[/say]")
+		saynn("[say=alexrynard]Доверие — штука крайне хрупкая. Чтобы построить его, нужна вечность. А чтобы разрушить... достаточно одного неверного решения.[/say]")
 
-		saynn("You can see his experience speaking through him. Your actions didn't help change that.")
+		saynn("Видно, что он повидал виды. И твои действия вряд ли что-то изменят.")
 
-		saynn("[say=alexrynard]I know, I know. You thought you were doing the right thing. But life.. has..[/say]")
+		saynn("[say=alexrynard]Знаю, знаю. Ты думала, что поступаешь правильно. Но жизнь... она...[/say]")
 
-		saynn("You can notice his fists clenching. And, for some reason, you hear a mechanical whirl coming from him as he does that.")
+		saynn("Ты замечаешь, как он сжимает кулаки. И почему-то в этот момент слышишь исходящее от него механическое жужжание.")
 
-		saynn("[say=alexrynard]Life.. will.. screw you. Even if you do everything right.[/say]")
+		saynn("[say=alexrynard]Жизнь... она еще тебя поимеет. Даже если ты всё делаешь по уму.[/say]")
 
-		saynn("He calms down and grabs one of the datapad from the bin with the fixed ones.")
+		saynn("Он успокаивается и выуживает один из датападов из корзины с исправленными устройствами.")
 
-		saynn("[say=alexrynard]So yeah. You did good. Better than any other engineer. But I can't really trust you. I don't even trust my colleagues, why would I trust an inmate.[/say]")
+		saynn("[say=alexrynard]Так что да. Ты молодец. Лучше любого другого инженера. Но доверять тебе... сложно. Я даже коллегам своим не особо верю, с чего бы мне доверять заключенной?[/say]")
 
-		saynn("His words do make sense.")
+		saynn("В его словах есть смысл.")
 
-		saynn("[say=pc]So I should leave?[/say]")
+		saynn("[say=pc]Значит, мне пора уходить?[/say]")
 
-		saynn("Alex is quiet while staring at the pile of broken datapads. Until he breaks that silence.")
+		saynn("Алекс молчит, уставившись на кучу сломанных датападов, пока наконец не нарушает тишину.")
 
-		saynn("[say=alexrynard]I don't know why you stick around.. I'm into very different stuff from anyone else around here.[/say]")
+		saynn("[say=alexrynard]И не знаю, почему ты всё еще ошиваешься рядом... У меня совсем другие вкусы, не такие, как у всех здесь.[/say]")
 
-		saynn("That can explain a few things.")
+		saynn("Это многое объясняет.")
 
-		saynn("[say=alexrynard]You know, you can still help me. But only under my full supervision. Under my full control. Otherwise, let's end it right here.[/say]")
+		saynn("[say=alexrynard]Знаешь, ты всё ещё можешь мне помогать. Но только под моим полным присмотром. Под моим полным контролем. Иначе давай на этом и закончим.[/say]")
 
-		saynn("Almost feels like you're about to sign a contract..")
+		saynn("Такое чувство, будто ты сейчас подписываешь контракт...")
 
-		saynn("Do you wanna keep helping the foxy?")
+		saynn("Хочешь и дальше помогать этому лису?")
 
-		addButton("Agree", "Agree to help Alex while he controls you", "agree_help")
-		addButton("Nah", "(End Alex Content) He can stern in his own problems alone", "stop_content")
-		addButton("What stuff?", "Ask what Alex is into", "ask_whatstuff")
+		addButton("Согласиться", "Согласиться помогать Алексу, пока он тобой помыкает", "agree_help")
+		addButton("Неа", "(Завершить контент Алекса) Пусть сам разгребает свои проблемы", "stop_content")
+		addButton("Что за дела?", "Спросить, на что подсел Алекс", "ask_whatstuff")
 	if(state == "ask_whatstuff"):
-		saynn("[say=pc]What are you into? Why do you think it's different?[/say]")
+		saynn("[say=pc]Что тебе нравится? И почему ты думаешь, что всё иначе?[/say]")
 
-		saynn("Alex looks around the workshop.")
+		saynn("Алекс оглядывает мастерскую.")
 
-		saynn("[say=alexrynard]Because.. it's not. I like the same things. But not for the same reasons.[/say]")
+		saynn("[say=alexrynard]Потому что... это не так. Мне нравятся те же вещи. Но по другим причинам.[/say]")
 
-		saynn("That's.. very confusing. He leans back in his chair, his gaze directed high.")
+		saynn("Это... очень запутанно. Он откидывается на спинку стула, устремив взгляд куда-то вверх.")
 
-		saynn("[say=alexrynard]Power exchange can be fun, I think. Everyone here does it.[/say]")
+		saynn("[say=alexrynard]Обмен властью может быть прикольным, я так думаю. Здесь все этим занимаются.[/say]")
 
-		saynn("Hard to say no to that.")
+		saynn("С этим трудно спорить.")
 
-		saynn("[say=alexrynard]But I feel like nobody understands it. It's all about abuse these days. People think they're dominant if they can force someone to do what they don't want to do.[/say]")
+		saynn("[say=alexrynard]Но мне кажется, что никто этого не понимает. Сейчас всё сводится к насилию. Люди думают, что они доминанты, если могут заставить кого-то делать то, чего тот не хочет.[/say]")
 
-		saynn("He shakes his head and then looks you in the eyes.")
+		saynn("Он качает головой, а затем смотрит тебе прямо в глаза.")
 
-		saynn("[say=alexrynard]Feelings don't matter anymore, it's all about being strong. Whatever, I will get over it one day.[/say]")
+		saynn("[say=alexrynard]Чувства больше не имеют значения, главное — быть сильным. Ну да ладно, когда-нибудь я с этим смирюсь.[/say]")
 
-		saynn("Alex frowns.")
+		saynn("Алекс хмурится.")
 
-		saynn("[say=alexrynard]Forget what I said. Nothing matters.[/say]")
+		saynn("[say=alexrynard]Забудь, что я сказал(а). Вообще ничего не важно.[/say]")
 
-		saynn("Right now it feels even more like a contract..")
+		saynn("Сейчас это всё больше напоминает контракт...")
 
-		saynn("Do you wanna keep helping the foxy?")
+		saynn("Хочешь и дальше помогать этому лису?")
 
-		addButton("Agree", "Agree to help Alex while he controls you", "agree_help")
-		addButton("Nah", "(End Alex Content) He can stern in his own problems alone", "stop_content")
+		addButton("Согласиться", "Согласиться помогать Алексу, пока он тобой помыкает", "agree_help")
+		addButton("Неа", "(Завершить контент Алекса) Пусть сам разгребает свои проблемы", "stop_content")
 	if(state == "stop_content"):
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard", npcAction="sit"})
-		saynn("[say=pc]I'd rather not be punished for just trying to help. So, yeah, you don't get full control over me.[/say]")
+		saynn("[say=pc]Мне бы не хотелось получать наказание просто за попытку помочь. Так что да, полный контроль надо мной тебе не принадлежит.[/say]")
 
-		saynn("[say=alexrynard]I understand.[/say]")
+		saynn("[say=alexrynard]Я понимаю.[/say]")
 
-		saynn("He nods.")
+		saynn("Он кивает.")
 
-		saynn("You get up.")
+		saynn("Вы встаете.")
 
-		saynn("Time to go.")
+		saynn("Пора идти.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "agree_help"):
-		saynn("[say=pc]Sure, I hate that pile of datapads.[/say]")
+		saynn("[say=pc]Конечно, терпеть не могу эту кучу датападов.[/say]")
 
-		saynn("Alex chuckles softly.")
+		saynn("Алекс тихо посмеивается.")
 
-		saynn("[say=alexrynard]You will hate it even more soon. But, first, I will teach you some things about safety. Do as I say, not as I do.[/say]")
+		saynn("[say=alexrynard]Скоро ты возненавидишь их ещё сильнее. Но сначала я научу тебя правилам безопасности. Делай так, как я говорю, а не так, как я делаю.[/say]")
 
-		addButton("Sure", "Say this", "agree_sure")
-		addButton("Yes Sir", "Say this", "agree_yessir")
+		addButton("Конечно", "Скажите это", "agree_sure")
+		addButton("Есть, сэр", "Скажите это", "agree_yessir")
 	if(state == "agree_sure"):
-		saynn("[say=pc]Sure.[/say]")
+		saynn("[say=pc]Конечно.[/say]")
 
-		saynn("You move your chair closer. And watch him and his hands as he shows you how to properly disassemble and assemble the datapad without the threat of cutting or electrocuting yourself.")
+		saynn("Вы пододвигаете стул ближе. И не сводите глаз с его рук, пока он показывает, как правильно разбирать и собирать датапад, чтобы не порезаться и не получить удар током.")
 
-		saynn("He lets you do it too, carefully tracking your actions. Time flies. You fix a few datapads under his supervision. Ones that aren't too broken.")
+		saynn("Он позволяет и вам попробовать, внимательно следя за каждым вашим движением. Время летит незаметно. Под его присмотром вы чините несколько датападов — тех, что не слишком сильно повреждены.")
 
-		saynn("[say=alexrynard]Yeah, something like that.[/say]")
+		saynn("[say=alexrynard]Да, что-то вроде того.[/say]")
 
-		saynn("[say=pc]So.. Can I do everything now?[/say]")
+		saynn("[say=pc]Значит... теперь мне можно всё?[/say]")
 
-		saynn("[say=alexrynard]Nope. Only the easy ones.[/say]")
+		saynn("[say=alexrynard]Не-а. Только самое простое.[/say]")
 
-		saynn("Aw. That's something, right?")
+		saynn("Эх. Но это ведь уже прогресс, верно?")
 
-		saynn("[say=alexrynard]Go rest. I will be taking a little break.[/say]")
+		saynn("[say=alexrynard]Иди отдыхай. А я немного передохну.[/say]")
 
-		saynn("Well. That wasn't entirely fun. But you feel like.. you progressed?")
+		saynn("Ну что ж. Было не совсем весело, но кажется... вы продвинулись вперед?")
 
-		saynn("Time to go.")
+		saynn("Пора идти.")
 
-		addButton("Leave", "See what happens next", "endthescene")
+		addButton("Уйти", "Смотреть, что будет дальше", "endthescene")
 	if(state == "agree_yessir"):
-		saynn("[say=pc]Yes, sir, I will do everything you say~.[/say]")
+		saynn("[say=pc]Да, сэр, я буду делать всё, что вы скажете~.[/say]")
 
-		saynn("Alex starts coughing, he clearly got caught off-guard.")
+		saynn("Алекс начинает кашлять — очевидно, его застали врасплох.")
 
-		saynn("[say=alexrynard]Pff. Don't call me that or I will gag you.[/say]")
+		saynn("[say=alexrynard]Пфф. Не называй меня так, а то заставишь меня блевать.[/say]")
 
-		saynn("That sounds fun though.")
+		saynn("Хотя звучит весело.")
 
-		addButton("Sure", "Say this", "agree_sure")
+		addButton("Конечно", "Скажите это", "agree_sure")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

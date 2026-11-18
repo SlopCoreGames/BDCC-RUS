@@ -8,7 +8,7 @@ func _init():
 	slaveResistChanceMult = 0.0
 
 func getVisibleName():
-	return "Check on slave"
+	return "Проверить рабыню"
 
 func getVisibleDesc():
 	return "Ask them how they feel"
@@ -255,7 +255,7 @@ func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 func getExtraActions(_slaveID, _extraSlavesIDs = {}):
 	return [
 		{
-			name = "Release slave",
+			name = "Освободить рабыню",
 			desc = "Free your slave and let them leave your cell",
 			sceneID = "ActionSlaveryFreeSlaveScene",
 			args = [],

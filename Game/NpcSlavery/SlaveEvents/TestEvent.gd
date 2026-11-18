@@ -16,5 +16,5 @@ func supportsActivity(_theActivityID):
 
 func runEvent(_npcSlavery:NpcSlave):
 	return {
-		text = "AN EVENT HAPPENED!",
+		text = "ПРОИЗОШЛО СОБЫТИЕ!",
 	}

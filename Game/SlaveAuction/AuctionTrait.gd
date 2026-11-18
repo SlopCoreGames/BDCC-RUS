@@ -7,7 +7,7 @@ func getTraitType(_id:String):
 	return AuctionTraitType.Fetish
 
 func getName(_id:String) -> String:
-	return "ERROR? FILL ME"
+	return "ОШИБКА? ЗАПОЛНИ МЕНЯ"
 
 func calculateScore(_id:String, _char:BaseCharacter) -> float:
 	return 0.0

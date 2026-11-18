@@ -8,7 +8,7 @@ func _init():
 	pointsOnUnlock = 15
 
 func getName() -> String:
-	return "Creates a hybrid"
+	return "Создает гибрида"
 
 func getPillName() -> String:
 	return "Hybridizer"
@@ -18,7 +18,7 @@ func getUnlockData() -> Dictionary:
 		eliza = "Interesting. This pill contains a DNA of some species. But not enough to override everything.. I think this pill will create a.. hybrid of sorts. A blend of two species. Isn't that cool? I think I will call it.. 'Hybridizer'",
 		tryOptions = [
 			{
-				name = "Make Eliza eat it",
+				name = "Заставить Элизу сожрать это",
 				desc = "Ask if she is brave enough to try her own product. This might be funny or sad, who knows.",
 				sceneID = "ElizaDrugTestHybridScene",
 			},
@@ -58,7 +58,7 @@ func getPillOptions() -> Dictionary:
 		speciesArray.append([speciesID, GlobalRegistry.getSpecies(speciesID).getVisibleName()])
 	var result:Dictionary = {
 		"species": {
-			name = "Species",
+			name = "Вид",
 			desc = "What species should the drug transform you into.",
 			value = Species.Canine,
 			values = speciesArray,

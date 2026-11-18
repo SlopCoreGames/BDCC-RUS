@@ -8,7 +8,7 @@ func _init():
 	pointsOnUnlock = 5
 
 func getName() -> String:
-	return "Removes horns"
+	return "Убирает рога"
 
 func getPillName() -> String:
 	return "HornsBeGone"

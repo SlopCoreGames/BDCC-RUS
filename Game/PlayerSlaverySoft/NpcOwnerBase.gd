@@ -52,7 +52,7 @@ func endSlavery():
 		theRelationship.stopMe()
 
 func getVisibleName() -> String:
-	return "Fill me!"
+	return "Наполни меня!"
 
 func getApproachSubEventID() -> String:
 	return "approach"

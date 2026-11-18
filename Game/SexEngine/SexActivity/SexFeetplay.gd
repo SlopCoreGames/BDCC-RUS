@@ -87,7 +87,7 @@ func rubpenis_processTurn():
 		react(SexReaction.FeetplayRubbingPenis, [20, 10])
 
 func onheadwaitingforanswer_processTurn():
-	var text:String = "{dom.You} {dom.youVerb('hold')} {sub.you} pinned to the floor with {dom.yourHis} {dom.foot} while waiting for {sub.youHim}."
+	var text:String = "{dom.You} {dom.youVerb('hold')} {sub.you} прижаты к полу {dom.yourHis} {dom.foot} в ожидании {sub.youHim}."
 	waitTimer += 1
 	if(waitTimer > 4):
 		state = "onhead"

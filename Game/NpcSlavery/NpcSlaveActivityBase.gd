@@ -5,7 +5,7 @@ var id = "Error"
 var slavery:WeakRef
 
 func getVisibleName():
-	return "Change me"
+	return "Измени меня"
 
 func onStart(_args = []):
 	pass

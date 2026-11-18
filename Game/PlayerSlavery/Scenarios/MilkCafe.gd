@@ -576,10 +576,10 @@ func onDayEnd():
 	
 	if(earned > 0):
 		totalEarned += earned
-		saynn("The cafe made some profit!")
+		saynn("Кафе получило небольшую прибыль!")
 		addCredits(earned)
 	else:
-		saynn("The cafe wasn't able to make any profit because there was not enough milk/cream.")
+		saynn("Кафе не удалось получить прибыль из-за нехватки молока или сливок.")
 	
 	for theNewUpgradeLevel in range(UPGRADES.size()):
 		if(upgradeLevel >= theNewUpgradeLevel):
@@ -588,7 +588,7 @@ func onDayEnd():
 		var amountToEarn:int = theEntry["earned"]
 		if(totalEarned >= amountToEarn):
 			upgradeLevel = theNewUpgradeLevel
-			sayn("[b]The cafe earned enough credits for an upgrade![/b]")
+			sayn("[b]Кафе заработало достаточно кредитов на улучшение![/b]")
 			saynn(theEntry["message"])
 	
 	milkedToday = 0
@@ -738,28 +738,28 @@ func main_state():
 	aimCamera(L_CENTER)
 	playAnimation(StageScene.Solo, "stand")
 	
-	saynn("You are a "+cowBullBoth("cow", "bull", "cow")+" slave that belongs to two cafe owners. They will come to milk you for your "+cowBullBoth("milk", "seed", "milk and seed")+" twice every day.")
+	saynn("Вы — "+cowBullBoth("cow", "bull", "cow")+" рабыня, принадлежащая двум владельцам кафе. Они будут приходить доить тебя для получения "+cowBullBoth("milk", "seed", "milk and seed")+" дважды в день.")
 	
 	if(day <= 0):
-		saynn("Right now, you are standing in a dimly-lit basement that is used as the cafe's storage space. Most of the light comes from the open garden. In the corners of the space, there is milking equipment installed. The only door out of here is locked. On the other side from that door, there is a powered-off freezer room that is divided into sections. One of these sections is your cell. Apart from you, there are two other slaves down here.")
+		saynn("Сейчас вы стоите в полумраке подвального помещения, которое служит складом кафе. Большая часть света проникает из открытого сада. В углах установлено оборудование для дойки. Единственная дверь отсюда заперта. По ту сторону двери находится выключенная морозильная камера, разделенная на секции. Одна из этих секций — ваша камера. Помимо вас, здесь находятся еще две рабыни.")
 	else:
-		saynn("You are standing in a dimly-lit basement that is used as the cafe's storage space.")
+		saynn("Вы стоите в полумраке подвального помещения, которое служит складом кафе.")
 	
-	sayn("Day: "+str(day))
-	sayn("Obedience: "+getObedienceText())#+" "+str(Util.roundF(obedience*100.0, 1))+"%")
-	sayn("Cow's trust: "+getCowTrustText())#+" "+str(Util.roundF(cowTrust*100.0, 1))+"%")
-	sayn("Bull's trust: "+getBullTrustText())#+" "+str(Util.roundF(bullTrust*100.0, 1))+"%")
+	sayn("День: "+str(day))
+	sayn("Послушание: "+getObedienceText())#+" "+str(Util.roundF(obedience*100.0, 1))+"%")
+	sayn("Доверие коровы: "+getCowTrustText())#+" "+str(Util.roundF(cowTrust*100.0, 1))+"%")
+	sayn("Доверие быка: "+getBullTrustText())#+" "+str(Util.roundF(bullTrust*100.0, 1))+"%")
 	if(getTreatAmount() > 0):
-		sayn("Treats: "+str(getTreatAmount()))
+		sayn("Лакомства: "+str(getTreatAmount()))
 	if(getShivAmount() > 0):
-		sayn("Shivs: "+str(getShivAmount()))
+		sayn("Заточки: "+str(getShivAmount()))
 	
 	sayn("")
 	
 	if(idleState == IDLE_IDLE):
-		sayn("You don't have any particular needs.")
+		sayn("У вас нет каких-то особых потребностей.")
 		if(padlockDamage > 0.0):
-			sayn("Door: "+getDoorDamageText())
+			sayn("Дверь: "+getDoorDamageText())
 		
 		addAction("Graze", "Spend time on the field, chew some grass", "idleGraze")
 		addAction("Hide in cell", "Hide in your cell", "idleCell")
@@ -799,13 +799,13 @@ func main_state():
 				else:
 					addAction("Bull's cage", "Help Pip with his chastity cage", "idleBullCage")
 	if(idleState == IDLE_SOCIAL):
-		saynn("You feel like socializing.")
+		saynn("Вам хочется пообщаться.")
 		
 		addAction("Cow", "Spend time with the cow", "talkCow")
 		addAction("Bull", "Spend time with the bull", "talkBull")
 		addAction("Annoy owners", "Make them regret buying you!", "talkAnnoy")
 	if(idleState == IDLE_HUNGRY):
-		saynn("You feel hungry.")
+		saynn("Вы чувствуете голод.")
 		
 		addAction("Eat grass", "Go eat grass like a good livestock", "eatGrass")
 		addAction("Starve", "You refuse to eat the grass", "eatStarve")
@@ -814,7 +814,7 @@ func main_state():
 			addAction("Eat a treat!", "Eat one of your treats", "eatTreat")
 		#addAction("Suck bull", "Feed on the bull's seed", "eatSuckBull")
 	if(idleState == IDLE_NEEDY):
-		saynn("You feel like you could do something lewd.")
+		saynn("Вам хочется заняться чем-нибудь пошлым.")
 		
 		addAction("Just chill", "Get some extra stamina", "needyRest")
 		addAction("Complain", "Complain that you are extremely needy!", "needyComplain")
@@ -912,8 +912,8 @@ func main_do(_id:String, _args:Array):
 		processTurn()
 	if(_id == "idleGraze"):
 		aimCamera(RNG.pick([L_FIELD, L_FIELD2, L_FIELD3]))
-		saynn("You spend some time out in the garden, just wandering around.")
-		saynn("There isn't much to do.. so you just chew some grass while you're at it.")
+		saynn("Вы проводите время в саду, просто бродя вокруг.")
+		saynn("Делать особо нечего... так что ты просто жуешь траву от скуки.")
 		if(upgradeLevel >= UPGRADE_GRASS):
 			addStamina(20)
 			addPain(-20)
@@ -922,7 +922,7 @@ func main_do(_id:String, _args:Array):
 			addPain(-10)
 		
 		if(obedience < 0.0 && RNG.chance(10.0 - 4.0*getShivAmount())):
-			saynn("While exploring, you find a sharp piece of wood.")
+			saynn("Во время прогулки ты находишь острый кусок дерева.")
 			addShiv()
 		
 		var special:String = RNG.pickWeightedDict({
@@ -950,7 +950,7 @@ func main_do(_id:String, _args:Array):
 				]))
 			addObedience(1)
 		if(special == "girl"):
-			saynn("Sofie comes in to check on you.")
+			saynn("Заходит Софи, чтобы проверить, как ты.")
 			if(obedience < -0.1):
 				talk(C_GIRL, RNG.pick([
 					"I don't trust your bratty ass.",
@@ -965,7 +965,7 @@ func main_do(_id:String, _args:Array):
 				]))
 			addObedience(1)
 		if(special == "cow" && cowTrust > 0.0):
-			saynn("You stumble upon Milka who is doing the same.")
+			saynn("Ты натыкаешься на Милку, которая делает то же самое.")
 			talk(C_COW, RNG.pick([
 				"Moo..",
 				"Moo!",
@@ -974,7 +974,7 @@ func main_do(_id:String, _args:Array):
 			]))
 			addCowTrust(1.0)
 		if(special == "bull" && bullTrust > 0.0):
-			saynn("You stumble upon Pip who is doing the same.")
+			saynn("Ты натыкаешься на Пип, которая делает то же самое.")
 			talk(C_BULL, RNG.pick([
 				"The ceiling is too high.. can't reach.",
 				"I tried digging.. there is just steel under the ground.",
@@ -986,7 +986,7 @@ func main_do(_id:String, _args:Array):
 		addContinueEventTrigger()
 	if(_id == "idleCell"):
 		aimCamera(L_SLEEP)
-		saynn("You hide in your cell, away from everybody.")
+		saynn("Ты прячешься в своей камере, подальше от всех.")
 		if(upgradeLevel >= UPGRADE_CELLS):
 			addStamina(50)
 		else:
@@ -996,7 +996,7 @@ func main_do(_id:String, _args:Array):
 			"": 60.0, "guy": 40.0, "girl": 20.0,
 		})
 		if(special == "guy"):
-			saynn("Leo finds you.")
+			saynn("Тебя находит Лео.")
 			talk(C_GUY, RNG.pick([
 				"Aw, c'mon. Don't be shy.",
 				"I don't bite, you don't have to hide.",
@@ -1005,7 +1005,7 @@ func main_do(_id:String, _args:Array):
 				"I don't wanna tell Sofie..",
 			]))
 		if(special == "girl"):
-			saynn("Sofie finds you in your cell and drags you out by your collar.")
+			saynn("Софи находит тебя в камере и вытаскивает за шиворот.")
 			addPain(10)
 			if(obedience < -0.1):
 				talk(C_GIRL, RNG.pick([
@@ -1029,36 +1029,36 @@ func main_do(_id:String, _args:Array):
 		GM.pc.clearBodywritings()
 		GM.pc.clearTallymarks()
 		#GM.pc.afterTakingAShower()
-		saynn("You ask to be washed.")
+		saynn("Ты просишь, чтобы тебя помыли.")
 		
 		if(RNG.chance(50)):
-			saynn("Sofie grabs you roughly by the arm and shoves you against the garden wall. Without a word, she sprays a sharp jet of cold water straight at your back and butt, making you flinch.")
+			saynn("Софи грубо хватает тебя за руку и прижимает к садовой стене. Не говоря ни слова, она направляет резкую струю холодной воды прямо тебе в спину и задницу, заставляя тебя вздрогнуть.")
 			talk(C_GIRL, "Turn around.")
-			saynn("You obey, and she sweeps the stream across your front in the same manner.. just enough to get you clean.")
+			saynn("Ты повинуешься, и она проводит струей по твоему телу тем же самым образом... ровно столько, чтобы отмыть тебя.")
 		else:
-			saynn("Leo leads you out into the open field. With a hose in one hand and a sponge in the other, he works the water gently over your body, making sure to rinse away every trace of dirt.. and other mess.")
+			saynn("Лео выводит тебя на открытое поле. Держа в одной руке шланг, а в другой — губку, он осторожно поливает твоё тело водой, стараясь смыть каждую крупицу грязи... и прочего дерьма.")
 			talk(C_GUY, "There we go. Much better, eh?")
 		addContinueEventTrigger()
 	if(_id == "idlePeek"):
 		aimCamera(L_COUNTER)
 		if(peekState == PEEK_START):
-			saynn("You stand high on your toes and peek into the small slit of a window near the top of the reinforced door.")
+			saynn("Ты встаешь на цыпочки и заглядываешь в узкую щель окна в верхней части укрепленной двери.")
 			addStamina(-10)
-			saynn("It's dirty and foggy.. and also thick enough to not let out any sound.")
-			saynn("Hard to see much.. the counter blocks most of the view. But you do see some nice tables with pink cloths laid out on them.. wide sofa-like chairs.. and a few customers.")
-			saynn("You wave to try to get some attention.. but no one can see you. Someone is gotta help you, they just have to notice you..")
-			saynn("Soon, you give up.")
-			saynn("While looking through the small crack between the door and the frame.. you notice that there is a [b]padlock[/b] on the other side. You can't reach it.. but you can try to break it from this side.")
-			saynn("The bull sees you.")
+			saynn("Там грязно и туманно... а еще там так плотно, что ни один звук не может просочиться наружу.")
+			saynn("Разглядеть многого трудно... стойка перекрывает большую часть обзора. Но ты видишь симпатичные столики с розовыми скатертями... широкие кресла, похожие на диваны... и несколько посетителей.")
+			saynn("Ты машешь рукой, пытаясь привлечь внимание... но тебя никто не видит. Кто-нибудь должен помочь, им просто нужно тебя заметить...")
+			saynn("Вскоре ты сдаешься.")
+			saynn("Глядя сквозь узкую щель между дверью и рамой... ты замечаешь, что с той стороны висит [b]навесной замок[/b]. Ты не можешь до него дотянуться... но можешь попытаться выломать его с этой стороны.")
+			saynn("Бык замечает тебя.")
 			talk(C_BULL, "That is a very dumb idea.")
-			saynn("You shrug.")
+			saynn("Ты пожимаешь плечами.")
 			talk(C_BULL, "Don't let me stop you though. This world was built on dumb ideas.")
-			saynn("Sofie is approaching the door so you dash away while you still can.")
+			saynn("Софи приближается к двери, поэтому ты бросаешься наутек, пока еще есть возможность.")
 			peekState = PEEK_NOTICED_PADLOCK
 			peekTried = 0
 			return
 		peekTried += 1
-		saynn("You stand high on your toes and peek into the small window.")
+		saynn("Ты встаешь на цыпочки и заглядываешь в маленькое окошко.")
 		addStamina(-10)
 		
 		saynn(RNG.pick([
@@ -1074,29 +1074,29 @@ func main_do(_id:String, _args:Array):
 			peekTried = 0
 			peekState = PEEK_NOTICED_CUSTOMER
 			playAnimation(StageScene.Solo, "stand", {pc=C_OFFICER})
-			saynn("You were about to give up.. but then you [b]notice someone[/b]..")
-			saynn("He is wearing fancy clothes.. and also spots one hell of a smile. What a wolf.")
-			saynn("You bounce and wave.. but he turns away too fast. And soon, he head off.")
+			saynn("Ты уже собиралась сдаться... но тут вдруг [b]замечаешь кого-то[/b]...")
+			saynn("На нем шикарная одежда... и, надо сказать, чертовски обаятельная улыбка. Ну и волк.")
+			saynn("Ты подпрыгиваешь и машешь ему рукой... но он слишком быстро отворачивается. И вскоре уходит.")
 			return
 		elif(peekState == PEEK_NOTICED_CUSTOMER && RNG.chance(-30+peekTried*50)):
 			peekTried = 0
 			peekState = PEEK_NOTICED_BY_CUSTOMER
 			playAnimation(StageScene.Solo, "stand", {pc=C_OFFICER})
-			saynn("You were about to give up.. but then you [b]notice him[/b] again!")
-			saynn("It's the fancy wolf that you saw the other day. He is busy ordering something.")
-			saynn("It's your chance! You wave and jump, trying to get his attention..")
-			saynn("The wolf finishing making his order.. and then gives your door a quick glance.")
+			saynn("Ты уже собиралась сдаться... но тут ты снова [b]замечаешь его[/b]!")
+			saynn("Это тот самый щеголеватый волк, которого ты видела на днях. Он занят заказом.")
+			saynn("Это твой шанс! Ты машешь и прыгаешь, пытаясь привлечь его внимание...")
+			saynn("Волк заканчивает делать заказ... и бросает быстрый взгляд на твою дверь.")
 			talk(C_PC, "C'mon, notice me! I'm here!")
-			saynn("His brow shifts ever so subtly.. But you really can't tell.")
-			saynn("Sofie hands him his order.. and so he leaves. Fuck, almost..")
+			saynn("Его брови едва заметно дергаются... но разобрать что-то точно невозможно.")
+			saynn("Софи отдает ему заказ... и он уходит. Блядь, почти получилось...")
 			return
 		elif(peekState == PEEK_NOTICED_BY_CUSTOMER && RNG.chance(-20+peekTried*50)):
 			peekTried = 0
 			peekState = PEEK_BULLIED_BY_GIRL
 			playAnimation(StageScene.Solo, "stand", {pc=C_OFFICER})
-			saynn("You see [b]him[/b]! He is back, making his order.")
-			saynn("This time you don't even need to wave.. he is looking over Sofie's shoulder at your door.")
-			saynn("You can see him saying something to the girl.. something that startles her. Oh shit.")
+			saynn("Ты видишь [b]его[/b]! Он вернулся, чтобы сделать заказ.")
+			saynn("На этот раз тебе даже не нужно махать рукой... он смотрит через плечо Софи прямо на твою дверь.")
+			saynn("Ты видишь, как он что-то говорит девчонке... что-то, что заставляет её вздрогнуть. О черт.")
 			addContinue("setState", ["pEventBullyByGirl"])
 			return
 		elif(peekState == PEEK_BULLIED_BY_GIRL && RNG.chance(-10+peekTried*60) && !gonnaHavePeekEvent):
@@ -1104,29 +1104,29 @@ func main_do(_id:String, _args:Array):
 			gonnaHavePeekEvent = true
 			peekState = PEEK_FIRST_EVENT_HAPPENED
 			playAnimation(StageScene.Solo, "stand", {pc=C_OFFICER})
-			saynn("You see [b]him[/b]!")
-			saynn("Who cares what that bitch said.. you wave your arms and get his attention. It seems to work!")
-			saynn("The wolf puts on a subtle smile.. but that's about it. Huh..")
-			saynn("He finishes making his order.. grabs it.. and just leaves.")
-			saynn("Maybe.. maybe this is pointless. Maybe there is nothing you can do..")
+			saynn("Ты видишь [b]его[/b]!")
+			saynn("Какая разница, что там вякнула эта сучка... ты машешь руками, привлекая его внимание. Кажется, сработало!")
+			saynn("Волк едва заметно улыбается... но на этом всё. Хм...")
+			saynn("Он заканчивает делать заказ... забирает его... и просто уходит.")
+			saynn("Может быть... может быть, всё это бессмысленно. Может, ты уже ничего не можешь изменить...")
 			return
 		elif(peekState == PEEK_FIRST_EVENT_HAPPENED && RNG.chance(-30+peekTried*100) && !gonnaHavePeekEvent):
 			peekTried = 0
 			gonnaHavePeekEvent = true
 			peekState = PEEK_SECOND_EVENT_HAPPENED
 			playAnimation(StageScene.Solo, "stand", {pc=C_OFFICER})
-			saynn("You see [b]him[/b]! It's the officer.")
-			saynn("He looks at you.. and puts on a familliar smile.")
-			saynn("This means that he is probably gonna be on a night shift today.. and so are you.")
+			saynn("Ты видишь [b]его[/b]! Это офицер.")
+			saynn("Он смотрит на тебя... и расплывается в знакомой улыбке.")
+			saynn("Это значит, что сегодня он, скорее всего, будет в ночную смену... как и ты.")
 			return
 		elif(peekState == PEEK_SECOND_EVENT_HAPPENED && RNG.chance(min(-40+peekTried*60, 50.0)) && !gonnaHavePeekEvent):
 			peekTried = 0
 			gonnaHavePeekEvent = true
 			peekState = PEEK_THIRD_EVENT_HAPPENED
 			playAnimation(StageScene.Solo, "stand", {pc=C_OFFICER})
-			saynn("You see [b]him[/b]! It's the officer.")
-			saynn("He looks at you.. and puts on a familliar smile.")
-			saynn("This means that he is probably gonna be on a night shift today.. and so are you.")
+			saynn("Ты видишь [b]его[/b]! Это офицер.")
+			saynn("Он смотрит на тебя... и расплывается в знакомой улыбке.")
+			saynn("Это значит, что сегодня он, скорее всего, будет в ночную смену... как и ты.")
 			return
 		
 		var special:String = RNG.pickWeightedDict({
@@ -1134,9 +1134,9 @@ func main_do(_id:String, _args:Array):
 		})
 		if(special == "guy"):
 			playAnimation(StageScene.Duo, "stand", {npc=C_GUY})
-			saynn("Leo suddenly steps through the door.")
+			saynn("Лео внезапно входит в дверь.")
 			talk(C_GUY, "Excuse me, coming through.")
-			saynn("He almost just walks past you.. but then he stops.")
+			saynn("Он почти проходит мимо тебя... но вдруг замирает.")
 			talk(C_GUY, RNG.pick([
 				"Wait. Step away from the door please.",
 				"Hm. Don't touch this door please.",
@@ -1146,7 +1146,7 @@ func main_do(_id:String, _args:Array):
 			addObedience(-1)
 		if(special == "girl"):
 			playAnimation(StageScene.Duo, "defeat", {npc=C_GIRL})
-			saynn("The door hits your nose as Sofie suddenly opens it!")
+			saynn("Дверь бьет тебя прямо по носу — это Софи резко распахнула её!")
 			addPain(20)
 			talk(C_GIRL, RNG.pick([
 				"Why are you so dumb? Don't make me punish you.",
@@ -1156,7 +1156,7 @@ func main_do(_id:String, _args:Array):
 			]))
 			addObedience(-1)
 		
-		saynn("If you keep trying, [b]someone will certainly notice you.[/b]")
+		saynn("Если не прекратишь, [b]кто-нибудь обязательно тебя заметит.[/b]")
 		
 		addContinueEventTrigger()
 	if(_id == "endingLockCheck"):
@@ -1166,20 +1166,20 @@ func main_do(_id:String, _args:Array):
 	if(_id == "idleSmash"):
 		aimCamera(L_DOOR)
 		
-		saynn("You wait for a good moment and hit the door!")
+		saynn("Ты выжидаешь подходящий момент и бьешь по двери!")
 		addStamina(-30)
 		
 		addPadlockDamage(RNG.randf_range(1.0, 3.0))
 		
 		if(cageRemoved):
-			saynn("Pip joins and kicks the door with his powerful hooves as well!")
+			saynn("Пип присоединяется и тоже наносит мощный удар копытами!")
 			addPadlockDamage(RNG.randf_range(1.0, 3.0))
 		
 		if(padlockDamage >= 1.0):
-			saynn("[b]The padlock got broken![/b] But there is not enough time to do anything about it now.")
+			saynn("[b]Замок сломан![/b] Но сейчас времени на что-то еще просто нет.")
 		
 		if(RNG.chance(30.0 - 10.0*getShivAmount())):
-			saynn("A small piece of the door splinters off.. quite a sharp piece.")
+			saynn("От двери отлетает маленький щеп — довольно острый кусок дерева.")
 			addShiv()
 		
 		var special:String = RNG.pickWeightedDict({
@@ -1187,17 +1187,17 @@ func main_do(_id:String, _args:Array):
 		})
 		if(special == "guy"):
 			playAnimation(StageScene.Duo, "stand", {npc=C_GUY})
-			saynn("A few seconds later, Leo steps out.")
+			saynn("Спустя несколько секунд выходит Лео.")
 			talk(C_GUY, RNG.pick([
 				"Hey. Uh. Can you stop?",
 				"Don't touch this door.",
 				"Keep away from this door please.",
 			]))
-			saynn("At least you got out easy.")
+			saynn("По крайней мере, тебе удалось выбраться без проблем.")
 			addObedience(-1)
 		if(special == "girl"):
 			if(RNG.chance(10.0 - obedience*20.0)):
-				saynn("A few moments later, Sofie open the door and grabs you.")
+				saynn("Спустя мгновение Софи открывает дверь и хватает тебя.")
 				talk(C_GIRL, RNG.pick([
 					"That was dumb.",
 					"Alright, you're getting it!",
@@ -1209,7 +1209,7 @@ func main_do(_id:String, _args:Array):
 				addObedience(-2)
 			else:
 				playAnimation(StageScene.Duo, "defeat", {npc=C_GIRL})
-				saynn("A few moments later, Sofie flings the door open and shoves you down to the floor.")
+				saynn("Спустя мгновение Софи распахивает дверь и швыряет тебя на пол.")
 				addPain(5)
 				talk(C_GIRL, RNG.pick([
 					"Stop doing that, you stupid whore.",
@@ -1219,7 +1219,7 @@ func main_do(_id:String, _args:Array):
 				]))
 				addObedience(-2)
 			if(RNG.chance(100.0 - obedience*70.0)):
-				saynn("She pulls out some cuffs and locks them around your ankles!")
+				saynn("Она достает наручники и застегивает их на твоих лодыжках!")
 				GM.pc.getInventory().forceEquipStoreOtherUnlessRestraint(GlobalRegistry.createItem("inmateanklecuffs"))
 		
 		addContinueEventTrigger()
@@ -1240,7 +1240,7 @@ func main_do(_id:String, _args:Array):
 			"I can feel something already..",
 			"Thank you for helping!",
 		]))
-		saynn("The process takes a while so you have a little chat in the process.")
+		saynn("Процесс занимает немало времени, так что вы успеваете немного поболтать.")
 		addCowTrust(1)
 		sayMilkaLine()
 		saynn(RNG.pick([
@@ -1251,7 +1251,7 @@ func main_do(_id:String, _args:Array):
 			talk(C_COW, RNG.pick([
 				"Thank you, thank you, thank you! My titties look so much better now! I can make so much milk~.",
 			]))
-			saynn("Milka seems to be satisfied with this size.. but the tube isn't empty yet.")
+			saynn("Похоже, Милка довольна таким размером... но трубка еще не пуста.")
 			talk(C_COW, "You can apply it more if you want.. But I just feel bad for taking up so much of your time.. Can I give back?")
 			addCowTrust(5)
 			addAction("It's okay", "You are happy that you helped Milka and that's all that you needed", "setState", ["main"])
@@ -1262,7 +1262,7 @@ func main_do(_id:String, _args:Array):
 			talk(C_COW, RNG.pick([
 				"Ah.. Thank you! I can use it on you too if you want!",
 			]))
-			saynn("You read the small text on the tube. It says that the change is instant and permanent.")
+			saynn("Ты читаешь мелкий шрифт на тюбике. Там сказано, что изменения происходят мгновенно и навсегда.")
 		
 			addContinueEventTrigger()
 			addAction("Your breasts", "Allow Milka to use the cream on your breasts, making them bigger!", "milkaUseCreamOnPC")
@@ -1273,14 +1273,14 @@ func main_do(_id:String, _args:Array):
 			addContinueEventTrigger()
 	if(_id == "milkaUseCreamOnPC"):
 		playAnimation(StageScene.BreastGroping, "grope", {pc="psmilka", npc="pc", npcBodyState={hard=true}})
-		saynn("You agree, letting Milka use the special cream on your {pc.breasts}.")
-		saynn("It still takes a while so you chat some more.")
+		saynn("Ты соглашаешься, позволяя Милке нанести специальный крем на твой {pc.breasts}.")
+		saynn("Это всё еще занимает какое-то время, так что вы продолжаете болтать.")
 		var theBreasts:BodypartBreasts = GM.pc.getBodypart(BodypartSlot.Breasts)
 		if(theBreasts):
 			theBreasts.size += 1
 			theBreasts.processTime(0)
 		sayMilkaLine()
-		saynn("Eventually, you begin to feel your chest twitching! A little gasp escapes your lips as you feel your breasts getting bigger!")
+		saynn("В конце концов ты начинаешь чувствовать, как в груди всё подергивается! С губ срывается легкий вздох, когда ты ощущаешь, как твоя грудь становится всё больше и больше!")
 		talk(C_COW, "There we go!")
 		addContinueEventTrigger()
 	if(_id == "milkaRewardBreed"):
@@ -1288,48 +1288,48 @@ func main_do(_id:String, _args:Array):
 		var _withStrapon:bool = addStrapon(C_PC, C_BULL)
 		
 		if(!_withStrapon):
-			saynn("Yeah, seeing Milka's flushed face and soft, needy body.. it gives you a wild idea. You carefully push her down to the floor.")
+			saynn("Да, глядя на раскрасневшееся лицо Милки и её мягкое, жаждущее тело... тебя посещает безумная идея. Ты осторожно прижимаешь её к полу.")
 			talk(C_PC, "Let's see how you take it, Milka.")
-			saynn("She gasps, ears flicking and tail twitching as you grab her thighs and spread them wide.")
+			saynn("Она ахает, её ушки дергаются, а хвостик подрагивает, когда ты хватаешь её за бедра и разводишь их широко.")
 			talk(C_COW, "moo~?..")
-			saynn("You raise her legs high, pinning them up to her shoulders. Her slick pussy shines as you line your hard shaft up with her needy entrance.")
-			saynn("With a rough thrust, you push deep into her slit, making Milka cry out a desperate moan.")
+			saynn("Ты высоко задираешь её ноги, прижимая их к самым плечам. Её влажная киска блестит, пока ты прицеливаешься своим твердым членом к её жаждущему входу.")
+			saynn("Резким толчком ты входишь глубоко в её щель, заставляя Милку издать отчаянный стон.")
 			talk(C_COW, "Ahhh~! Mooo~..")
-			saynn("Your hips slam into hers, your {pc.penis} pounding her pussy with steady, rough thrusts. Her big milky breasts bounce with every thrust, her nipples already leaking drops of strawberry-scented milk.")
+			saynn("Твои бедра с силой впечатываются в её бедра, твой {pc.penis} методично и грубо вколачивается в её киску. Её огромная молочная грудь подпрыгивает при каждом толчке, а соски уже подтекают каплями молока с ароматом клубники.")
 			talk(C_PC, "That's it.. take it, cowgirl.")
-			saynn("You grip her legs tighter and go faster, hammering her pussy, the tip of your cock pushing on her most sensitive spots until she’s squirming under you.")
+			saynn("Ты крепче сжимаешь её ноги и ускоряешься, вбиваясь в её киску; головка твоего члена давит на самые чувствительные точки, пока она извивается под тобой.")
 			talk(C_COW, "Ahhh.. ahhh.. moo~.. it’s too much!")
-			saynn("Milka’s body arches, her breasts shaking and spraying milk as her pussy clenches around you, her orgasm hitting hard. You feel her walls milking your cock, forcing your own climax.")
+			saynn("Тело Милки выгибается дугой, её грудь трясется и брызжет молоком, а киска сжимается вокруг тебя от мощного оргазма. Ты чувствуешь, как её стенки доят твой член, заставляя тебя самого вот-вот кончить.")
 			talk(C_PC, "Nghhh..")
-			saynn("With one final, deep thrust, you bury yourself to the hilt and start pumping her womb with your hot seed. Thick ropes of {pc.cum} flood her, mixing with her pussy juices.")
-			saynn("Milka cries out in pleasure, her nipples squirting more sweet milk while her body trembles beneath you, her tail curling tight.")
+			saynn("Последним глубоким толчком ты зарываешься в неё до самого основания и начинаешь заливать её утробу своим горячим семенем. Густые струи {pc.cum} наполняют её, смешиваясь с её соками.")
+			saynn("Милка вскрикивает от наслаждения, её соски брызжут еще большим количеством сладкого молока, пока её тело дрожит под тобой, а хвост плотно сворачивается кольцом.")
 			talk(C_COW, "Mmmhh~.. s-so warm.. moo..")
-			saynn("You stay inside her for a few moments, panting heavily before finally pulling out. A mix of cum and milk drips from her as she lies there, satisfied and glowing.")
+			saynn("Ты остаешься внутри нее на несколько мгновений, тяжело дыша, прежде чем наконец выскользнуть наружу. Смесь спермы и молока стекает с нее, пока она лежит, удовлетворенная и сияющая.")
 			talk(C_PC, "Good girl.")
 			talk(C_COW, "Thank you.. for filling me.. ahh..")
-			saynn("You sit beside her, resting for a bit while stroking her hair.")
+			saynn("Ты садишься рядом, немного отдыхая и перебирая ее волосы.")
 		else:
-			saynn("Yeah, seeing Milka's flushed face and soft, needy body.. it gives you a wild idea. You carefully push her down to the floor and go grab one of the strapon harnesses from the milking equipment shelf.")
+			saynn("Да, глядя на раскрасневшееся лицо Милки и ее мягкое, жаждущее тело... тебя посещает безумная идея. Ты осторожно укладываешь ее на пол и идешь к полке с доильным оборудованием, чтобы схватить один из ремней для страпона.")
 			talk(C_PC, "Let's see how you take it, Milka.")
-			saynn("She gasps, ears flicking and tail twitching as you grab her thighs and spread them wide.")
+			saynn("Она ахает, её ушки дергаются, а хвостик подрагивает, когда ты хватаешь её за бедра и разводишь их широко.")
 			talk(C_COW, "moo~?..")
-			saynn("Before climbing on top of her, you secure that harness around your waist.")
-			saynn("You then raise Milka's legs high, pinning them to her shoulders as the slick tip of your prelubed toy presses against her needy entrance.")
+			saynn("Прежде чем залезть на нее сверху, ты плотно закрепляешь ремень на талии.")
+			saynn("Затем ты высоко задираешь ноги Милки, прижимая их к ее плечам, пока скользкий кончик твоего смазанного игрушки прижимается к ее влажному входу.")
 			talk(C_PC, "Ready to be bred, cowgirl?")
-			saynn("With a smooth, forceful thrust, you push deep into her slit, making Milka cry out a desperate moan.")
+			saynn("Плавным, но мощным толчком ты входишь глубоко в ее щель, заставляя Милку издать отчаянный стон.")
 			talk(C_COW, "Ahhh~! Mooo~..")
-			saynn("Your hips slam into hers, your strapon pounding her pussy with steady, rough thrusts. Her big milky breasts bounce with every movement, her nipples leaking sweet strawberry-scented milk.")
+			saynn("Твои бедра впечатываются в ее бедра, страпон методично и грубо долбит ее киску. Ее пышная молочная грудь подпрыгивает при каждом движении, а соски источают сладкое молоко с ароматом клубники.")
 			talk(C_PC, "That's it.. take it, cowgirl.")
-			saynn("You grip her legs tighter and go faster, hammering her pussy, the toy’s tip grazing her most sensitive spots until she’s squirming beneath you.")
+			saynn("Ты крепче сжимаешь ее ноги и ускоряешься, вколачивая игрушку в ее щель; ее кончик задевает самые чувствительные точки, пока она не начинает извиваться под тобой.")
 			talk(C_COW, "Ahhh.. ahhh.. moo~.. it’s too much!")
-			saynn("Milka’s body arches, her breasts shaking and spraying milk as her pussy clenches around the toy's shaft, her orgasm hitting hard. The sudden tightness triggers the hidden mechanism in the strapon.")
-			saynn("With a faint hum, the toy starts pumping warm seed deep into her womb, releasing thick ropes of cum-like fluid that mix with her juices.")
-			saynn("Milka moans loudly, her nipples squirting more sweet milk while her body trembles beneath you, her tail curling tight as she’s filled.")
+			saynn("Тело Милки выгибается дугой, грудь дрожит и брызжет молоком, а ее киска судорожно сжимает ствол игрушки от мощного оргазма. Внезапный спазм активирует скрытый механизм в страпоне.")
+			saynn("С едва слышным гулом игрушка начинает закачивать теплое семя глубоко в ее матку, выпуская густые струи жидкости, похожей на сперму, которая смешивается с ее соками.")
+			saynn("Милка громко стонет, её соски брызжут всё большим количеством сладкого молока, а её тело дрожит под тобой, и хвост плотно сворачивается кольцом, когда ты наполняешь её.")
 			talk(C_COW, "Mmmhh~.. s-so warm.. moo..")
-			saynn("You keep the strapon buried inside her for a few moments, watching her chest rise and fall before slowly pulling out. A mix of cum and milk drips from her pussy as she lies there, glowing and satisfied.")
+			saynn("Ты на мгновение оставляешь страпон внутри неё, наблюдая за тем, как вздымается и опускается её грудь, прежде чем медленно вытащить его. Смесь спермы и молока капает из её киски, пока она лежит перед тобой, сияющая и удовлетворенная.")
 			talk(C_PC, "Good girl.")
 			talk(C_COW, "Thank you.. for filling me.. ahh..")
-			saynn("You sit beside her, resting for a bit while stroking her hair.")
+			saynn("Ты садишься рядом, немного отдыхая и перебирая ее волосы.")
 		
 		if(_withStrapon):
 			GlobalRegistry.getCharacter(C_COW).cummedInVaginaBy(C_PC, FluidSource.Strapon)
@@ -1342,23 +1342,23 @@ func main_do(_id:String, _args:Array):
 	if(_id == "milkaRewardBreastfeed"):
 		playAnimation(StageScene.BreastFeeding, "feed", {pc="psmilka", npc="pc"})
 		
-		saynn("Yeah, seeing Milka's new tits.. it gives you an idea. You kneel before her and reach towards her new lovely big mounds.")
+		saynn("Да, глядя на новую грудь Милки... у тебя появляется идея. Ты опускаешься перед ней на колени и тянешь руки к её новым прекрасным пышным холмикам.")
 		talk(C_PC, "Mind if I taste them?")
-		saynn("Milka blushes, her ears perking. She parts her legs and tilts her torso back, offering her heavy chest for you to play with.")
+		saynn("Милка краснеет, её ушки приподнимаются. Она разводит ноги и отклоняет торс назад, подставляя тебе свою тяжелую грудь, чтобы ты мог с ней поиграть.")
 		talk(C_COW, "Moo~. Anything for you, sweet friend.")
-		saynn("Leaning in, you wrap your lips around one swollen nipple, gently squeezing it between your teeth.")
-		saynn("A warm, sweet milk spurts into your mouth, tasting of fresh strawberries. Your hand cups the other breast, groping and kneading its heavy form.")
+		saynn("Наклонившись, ты обхватываешь губами один набухший сосок, осторожно сжимая его зубами.")
+		saynn("Теплое, сладкое молоко брызжет тебе в рот, на вкус как свежая клубника. Твоя рука обхватывает другую грудь, ощупывая и разминая её тяжелую форму.")
 		talk(C_COW, "Ah..")
-		saynn("Milka shudders, her tail swishing as she moans softly. You switch breasts, latching onto the other nipple and suckling deeply, coaxing another stream of milky sweetness.")
-		saynn("Your fingers knead and pinch, playing with her hardened nipples as they release more and more of that tasty strawberry-flavored milk into your mouth.")
+		saynn("Милка вздрагивает, её хвост виляет, а сама она тихо стонет. Ты переходишь на другую грудь, насаживаясь на другой сосок и жадно сосая его, выманивая новую струю молочной сладости.")
+		saynn("Твои пальцы разминают и щипают, играя с её затвердевшими сосками, пока они выпускают всё больше и больше этого вкусного клубничного молока тебе в рот.")
 		talk(C_COW, "Ah.. more.. yes.. moo..")
-		saynn("Each swallow brings a shiver through her body. She throws her head back and lets out more encouraigng moans as her pussy gets wetter after each second.")
+		saynn("Каждый глоток заставляет её тело содрогаться. Она запрокидывает голову и издает всё более ободряющие стоны, а её киска с каждой секундой становится всё влажнее.")
 		talk(C_COW, "Mmhh.. ahh-hh~..")
-		saynn("A series of quick convulses rocks through her body, her needy pussy slit pulsing as her nips squirt with more of that tasty goodness.")
-		saynn("After you’ve drained both breasts, you lean back, licking stray droplets from your lips. Milka sighs, satisfied, her eyes half-closed from pleasure.")
+		saynn("Серия быстрых конвульсий сотрясает её тело; её жаждущая щель пульсирует, а соски брызжут новой порцией этого вкусного нектара.")
+		saynn("Осушив обе груди, ты откидываешься назад, слизывая капли с губ. Милка удовлетворенно вздыхает, ее глаза полуприкрыты от наслаждения.")
 		talk(C_PC, "Your milk tastes nice.")
 		talk(C_COW, "Thank you.. for making me feel so.. good.")
-		saynn("You sit together in the warm glow, her chest rising and falling as she tries to get her breathing back.")
+		saynn("Вы сидите вместе в теплом сиянии; ее грудь вздымается и опускается, пока она пытается восстановить дыхание.")
 		
 		GlobalRegistry.getCharacter(C_COW).milk()
 		
@@ -1385,12 +1385,12 @@ func main_do(_id:String, _args:Array):
 		sayPipLine()
 		
 		if(cageDamage >= 1.0):
-			saynn("Miraculously, you [b]manage to break the lock[/b]! It's pieces fall onto the ground.")
+			saynn("Чудо! Тебе [b]удалось взломать замок[/b]! Его обломки рассыпаются по полу.")
 			talk(C_BULL, "Ah..")
-			saynn("Carefully, you start tugging on the cage itself, trying to pull it off.. but something is still preventing that. Pip's throbbing cock is desperately trying to get hard.")
+			saynn("Ты осторожно начинаешь тянуть за саму клетку, пытаясь снять ее... но что-то все еще мешает. Пульсирующий член Пипа отчаянно пытается встать колом.")
 			talk(C_BULL, "Fuck.. Really? How the fuck is it still stuck. I'm just destined to stay a femboy fucktoy, aren't I?")
-			saynn("You were just about ready to give up.. but you notice how Pip's trapped horsecock slowly bends the metal more and more, trying to become erect.")
-			saynn("If you can't pull off his cage.. Maybe you can make his cock do it by getting him even more horny.")
+			saynn("Ты уже почти готов сдаться... но замечаешь, как зажатый конский член Пипа всё сильнее разгибает металл, пытаясь достичь эрекции.")
+			saynn("Если не получается снять клетку самому... может, заставить его член сделать это, раззадорив парня еще сильнее?")
 			
 			addAction("Tease", "Keep teasing him about the chastity cage", "cageTeaseUnlock")
 			addAction("Anal", "Fuck his ass (or peg him with a strapon) to try to help him!", "cageAnalFuck")
@@ -1400,11 +1400,11 @@ func main_do(_id:String, _args:Array):
 		#	updateCharacters()
 		else:
 			if(cageDamage < 0.35):
-				saynn("Not much has changed. You have to keep trying.")
+				saynn("Почти ничего не изменилось. Нужно продолжать попытки.")
 			elif(cageDamage < 0.7):
-				saynn("The cage is giving way, you can feel it. There is more and more wiggle room after each try.")
+				saynn("Клетка поддается, ты это чувствуешь. С каждой попыткой она все сильнее шатается.")
 			else:
-				saynn("It feels like the cage will snap soon. You're almost there.")
+				saynn("Кажется, клетка вот-вот лопнет. Ты уже почти у цели.")
 		addContinueEventTrigger()
 	if(_id == "cageAnalFuck"):
 		cageRemoved = true
@@ -1413,56 +1413,56 @@ func main_do(_id:String, _args:Array):
 		playAnimation(StageScene.SexLowDoggy, "fast", {pc="pc", npc="pspip", pcCum=true, npcCum=true, bodyState={hard=true}, npcBodyState={hard=true}})
 
 		if(!_wornStrapon):
-			saynn("You decide to help him. With a firm hand, you shove Pip onto the floor, his belly down and ass up.")
+			saynn("Ты решаешь помочь ему. Резким движением ты швыряешь Пипа на пол, заставляя его лечь животом вниз, а задницей вверх.")
 			talk(C_PC, "Let's try this, stud.")
-			saynn("Pip's eyes widen as you press your hard cock against his slick, trembling asshole.")
+			saynn("Глаза Пипа расширяются, когда ты прижимаешь свой твердый член к его влажному, дрожащему анусу.")
 			talk(C_BULL, "W-wait.. what are you..")
-			saynn("You grip his hips, lifting them just enough to line yourself up perfectly. His tail whips as you tease the tip against his rim.")
+			saynn("Ты хватаешь его за бедра, приподнимая их ровно настолько, чтобы идеально выровняться. Его хвост хлещет из стороны в сторону, пока ты дразнишь его отверстие кончиком члена.")
 			talk(C_PC, "Relax.. you love this, don't you?")
-			saynn("With a smooth thrust, you drive deep into Pip’s tight asshole. He gasps, back arching, his locked cage rattling against the floor.")
-			saynn("Your cock sinks in and out, massaging his prostate. Each your thrust pulls cute moans out from him.")
+			saynn("Одним плавным толчком ты глубоко входишь в тугой анус Пипа. Он ахает, выгибая спину, а его запертая клетка с грохотом бьется о пол.")
+			saynn("Твой член входит и выходит, массируя его простату. Каждый твой толчок вырывает из него милые стоны.")
 			talk(C_BULL, "Ahh.. f-fuck.. so rough..")
-			saynn("You don't give him any time to process it, increasing the pace. Your hand grabs his hair and yanks back on it.")
-			saynn("Precum drips from the tip of the cage as his ass clenches around you, the tension building until it’s almost unbearable.")
+			saynn("Ты не даешь ему времени осознать происходящее, наращивая темп. Твоя рука вцепляется в его волосы и резко тянет их назад.")
+			saynn("Предэякулят капает с кончика клетки, пока его задница сжимается вокруг тебя, а напряжение нарастает до почти невыносимого предела.")
 			talk(C_PC, "That’s it.. be a good girl and cum for me.")
-			saynn("Pip’s cock twitches violently, the cage bending under the strain. With one final, hard thrust, his [b]member breaks free[/b], bars of his cage snapping apart from the sheer power of his erection!")
-			saynn("When freed, his flared horsecock springs to full hardness in seconds before bursting with a thick, virile blast of seed!")
-			saynn("Thick ropes of cum land all across the floor as Pip moans in bliss, his body shaking hard as you pump his ass full of your spunk.")
+			saynn("Член Пипа бешено дергается, клетка гнется под напором. Одним финальным, мощным толчком его [b]член вырывается на свободу[/b], прутья его клетки разлетаются в щепки от невероятной силы эрекции!")
+			saynn("Освободившись, его раздутый лошадиный член за секунды становится каменным, а затем взрывается густым, мощным потоком семени!")
+			saynn("Густые струи спермы разлетаются по всему полу, пока Пип стонет от блаженства, а его тело сотрясает сильная дрожь, пока ты наполняешь его задницу своей тягучей жидкостью.")
 			talk(C_BULL, "F-fuck! Ah! Ahhh-h!..")
 			talk(C_PC, "Holy shit, it worked.")
-			saynn("Even the owners come to check on all the noise.")
+			saynn("Даже хозяева приходят проверить, из-за чего поднялся такой шум.")
 			talk(C_GIRL, "What the hell is going on out here?")
 			talk(C_GUY, "Looks like they found a way to take off the cage.")
 			talk(C_GIRL, "Could have put a bucket under him at least, fuck.")
-			saynn("They could have been more happy about it.. but oh well. At least Pip seems to be enjoying it.")
+			saynn("Они могли бы порадоваться этому сильнее... но что ж. По крайней мере, Пип, похоже, в восторге.")
 			talk(C_BULL, "T-thank you.. hh-hh..")
-			saynn("You smile, watching Pip’s spent form, your chest rising and falling with satisfaction.")
+			saynn("Ты улыбаешься, глядя на изнеможденное тело Пипа, а твоя грудь мерно вздымается от чувства удовлетворения.")
 		else:
-			saynn("You decide to help him. First, you go and grab a strapon harness from the milking equipment storage before securing it around your hips and applying a thick layer of lube onto its rubber shaft.")
-			saynn("Then with a firm hand, you shove Pip onto the floor, his belly down and ass up.")
+			saynn("Ты решаешь помочь ему. Сначала ты идешь к складу доильного оборудования, берешь страпон, закрепляешь его на бедрах и густо смазываешь резиновый ствол лубрикантом.")
+			saynn("Затем уверенным движением ты швыряешь Пипа на пол, заставляя его лечь на живот, выставив задницу вверх.")
 			talk(C_PC, "Let's try this, stud.")
-			saynn("Pip's eyes widen as you press your new rubber cock against his slick, trembling asshole.")
+			saynn("Глаза Пипа расширяются, когда ты прижимаешь свой новый резиновый член к его влажному, дрожащему анусу.")
 			talk(C_BULL, "W-wait.. what are you..")
-			saynn("You grip his hips, lifting them just enough to line yourself up perfectly. His tail whips as you tease the tip against his rim.")
+			saynn("Ты хватаешь его за бедра, приподнимая их ровно настолько, чтобы идеально выровняться. Его хвост хлещет из стороны в сторону, пока ты дразнишь его отверстие кончиком члена.")
 			talk(C_PC, "Relax.. you love this, don't you?")
-			saynn("With a smooth thrust, you drive the strapon deep into Pip’s tight asshole. He gasps, back arching.")
-			saynn("Your rubber cock sinks in and out, massaging his prostate. Each of your thrusts pulls cute moans out from him.")
+			saynn("Одним плавным толчком ты вгоняешь страпон глубоко в тугой анус Пипа. Он ахает, выгибая спину.")
+			saynn("Твой резиновый член входит и выходит, массируя его простату. Каждый твой толчок вырывает из него милые стоны.")
 			talk(C_BULL, "Ahh.. f-fuck.. so rough..")
-			saynn("You don't give him any time to process it, increasing the pace. One hand grabs his hair and yanks back on it as you hammer into him.")
-			saynn("Precum drips from the tip of his locked cage as his ass clenches around your toy, the tension building until it’s almost unbearable.")
+			saynn("Ты не даешь ему времени осознать происходящее, наращивая темп. Одной рукой ты хватаешь его за волосы и резко тянешь назад, пока вбиваешься в него.")
+			saynn("Предэякулят капает с кончика его запертой клетки, пока его задница сжимается вокруг твоей игрушки, а напряжение нарастает до почти невыносимого предела.")
 			talk(C_PC, "That’s it.. be a good girl and cum for me.")
-			saynn("Pip’s cock twitches violently inside its cage, the metal bending under the strain. With one final, hard thrust of your hips, his [b]cage snaps apart[/b] from the sheer power of his erection!")
-			saynn("When freed, his flared horsecock springs to full hardness in seconds before bursting with a thick, virile blast of seed!")
-			saynn("Thick ropes of cum land all across the floor as Pip moans in bliss, his body shaking hard.")
+			saynn("Член Пипа бешено дергается внутри клетки, металл гнется под напором. Одним финальным, мощным толчком бедер ты заставляешь его [b]клетку лопнуть[/b] от неистовой силы его эрекции!")
+			saynn("Освободившись, его раздутый лошадиный член за секунды становится каменным, а затем взрывается густым, мощным потоком семени!")
+			saynn("Густые струи коньяка заливают пол, пока Пип блаженно стонет, содрогаясь всем телом.")
 			talk(C_BULL, "F-fuck! Ah! Ahhh-h!..")
 			talk(C_PC, "Holy shit, it worked.")
-			saynn("Even the owners come to check on all the noise.")
+			saynn("Даже хозяева приходят проверить, из-за чего поднялся такой шум.")
 			talk(C_GIRL, "What the hell is going on out here?")
 			talk(C_GUY, "Looks like they found a way to take off the cage.")
 			talk(C_GIRL, "Could have put a bucket under him at least, fuck.")
-			saynn("They could have been more happy about it.. but oh well. At least Pip seems to be enjoying it.")
+			saynn("Они могли бы порадоваться этому сильнее... но что ж. По крайней мере, Пип, похоже, в восторге.")
 			talk(C_BULL, "T-thank you.. hh-hh..")
-			saynn("You smile, watching Pip’s spent form, your chest rising and falling with satisfaction.")
+			saynn("Ты улыбаешься, глядя на изнеможденное тело Пипа, а твоя грудь мерно вздымается от чувства удовлетворения.")
 		
 		GlobalRegistry.getCharacter(C_BULL).cummedInAnusBy(C_PC)
 		GM.pc.orgasmFrom(C_BULL)
@@ -1474,32 +1474,32 @@ func main_do(_id:String, _args:Array):
 		updateCharacters()
 		playAnimation(StageScene.ChairOral, "tease", {pc="pspip", npc="pc", pcCum=true, bodyState={hard=true}})
 		
-		saynn("Time to help him. You stop messing with his cage and just look up at him.")
+		saynn("Пора ему помочь. Ты перестаешь возиться с его клеткой и просто смотришь на него снизу вверх.")
 		talk(C_PC, "I guess you are right.")
-		saynn("He tilts his head.")
+		saynn("Он наклоняет голову.")
 		talk(C_BULL, "Huh?")
 		talk(C_PC, "I guess you are destined to be someone's slut.")
-		saynn("Pip sighs.. you notice his locked member twitching slightly.")
+		saynn("Пип вздыхает... ты замечаешь, как его запертый член слегка дергается.")
 		talk(C_PC, "It's not that bad. I'm sure you will grow to like it.")
 		talk(C_BULL, "What do you mean?")
 		talk(C_PC, "You love cumming from your prostate getting smashed already, don't you?")
-		saynn("He frowns.. but his cock twitches more, putting extra pressure onto his cage.")
+		saynn("Он хмурится... но член дергается еще сильнее, создавая дополнительное давление на клетку.")
 		talk(C_BULL, "I'm a stud!")
 		talk(C_PC, "Just face it. Your cock is locked away forever. It's no better than a clit. You're a girl, not a stud.")
-		saynn("Precum is flowing down from the tip of his cage. Pip is squirming hard, his throbbing attempt at an erection is bending the metal more and more!")
+		saynn("Предэякулят течет из кончика клетки. Пип сильно ерзает, а его пульсирующая попытка эрекции все сильнее гнет металл!")
 		talk(C_BULL, "H-hey, d-don't say that.")
 		talk(C_PC, "Your clitty is dripping, slut. You love it, admit it. You love getting fucked like a girl.")
-		saynn("Suddenly, with a loud ping, the top part of his chastity cage flies off, instantly revealing his rock-hard flared shaft of a meaty horsecock. Wow.")
+		saynn("Внезапно с громким звоном верхняя часть его клетки отлетает, мгновенно обнажая твердый, расширенный у основания мясной конский член. Ого.")
 		talk(C_BULL, "Ahh-h-h!..")
-		saynn("Pip sees it and gasps, grabbing onto the chair while his cock is still throbbing.. before suddenly shooting out a thick virile load of his seed! Strings after strings of cum fly through the air in beatiful arcs as he moans like a slut, his body unable to calm itself down, his head thrown back.")
+		saynn("Пип видит это и ахает, вцепляясь в стул, пока его член все еще пульсирует... как вдруг из него вырывается густая, мощная порция семени! Струя за струей конь летит по воздуху красивыми дугами, пока он стонет как шлюха, не в силах унять дрожь во всем теле, откинув голову назад.")
 		talk(C_PC, "Holy shit, it worked.")
 		talk(C_BULL, "Mhh-h.. ah.. ghh-h.. ah-hh..")
-		saynn("Even the owners come to check on all the noise.")
+		saynn("Даже хозяева приходят проверить, из-за чего поднялся такой шум.")
 		talk(C_GIRL, "Really? You've hit pure oil and your lazy ass couldn't put a bucket under that stream?")
 		talk(C_GUY, "But at least his cage is off, Sofie. Milking him is gonna be easier.")
-		saynn("Sofie grumbles and walks away.")
+		saynn("Софи ворчит и уходит.")
 		talk(C_BULL, "Shit.. so much. T-thank you..")
-		saynn("You smile and nod.")
+		saynn("Ты улыбаешься и киваешь.")
 		addBullTrust(5)
 		addContinue("setState", ["main"])
 	
@@ -1525,37 +1525,37 @@ func main_do(_id:String, _args:Array):
 	if(_id == "talkCow"):
 		playAnimation(StageScene.Duo, "stand", {npc=C_COW})
 		aimCamera(L_COW)
-		saynn("You spend some time hanging out with the cow.")
+		saynn("Ты проводишь некоторое время, зависая с коровой.")
 		addCowTrust(1)
 		sayMilkaLine()
 		
 		if(cowTrust >= 0.1 && !canHelpMilka):
 			canHelpMilka = true
-			saynn("Before you go..")
+			saynn("Прежде чем ты уйдешь...")
 			talk(C_COW, "OH!")
-			saynn("You stop and watch her pull some kind of.. cream tube.")
+			saynn("Ты останавливаешься и наблюдаешь, как она достает какой-то... тюбик с кремом.")
 			talk(C_COW, "The owner bought it for me. But he is too busy running the cafe to apply it.")
-			saynn("You read the effects.. estrogen, prolactin.. apparently this cream is supposed to help with the lactation. Needs to be applied directly to the breasts.")
+			saynn("Ты читаешь состав... эстроген, пролактин... судя по всему, этот крем должен стимулировать лактацию. Его нужно наносить прямо на грудь.")
 			talk(C_COW, "I'm too afraid to use it myself, I'm just a cow!")
 		elif(helpedMilka):
-			saynn("You chat a little more.")
+			saynn("Вы еще немного болтаете.")
 			sayMilkaLine()
 		
 		addContinueEventTrigger()
 	if(_id == "talkBull"):
 		playAnimation(StageScene.Duo, "stand", {npc=C_BULL})
 		aimCamera(L_BULL)
-		saynn("You spend some time hanging out with the bull.")
+		saynn("Ты проводишь некоторое время, зависая с быком.")
 		addBullTrust(1)
 		sayPipLine()
 		
 		if(bullTrust >= 0.1 && !canHelpCage):
 			canHelpCage = true
-			saynn("Before you go, he shows you his chastity cage. His locked away cock is pulsing hard inside its tight little prison.")
+			saynn("Перед твоим уходом он показывает тебе свою девственную клетку. Его запертый член сильно пульсирует внутри своей тесной маленькой тюрьмы.")
 			talk(C_BULL, "It's been there for at least a few months. I'm fucking desperate. Maybe you can try to do something? If you have the time.")
-			saynn("A caged bull just isn't right. On the other hand, maybe that's just his fate now.")
+			saynn("Бык в клетке — это как-то неправильно. С другой стороны, возможно, такова его судьба.")
 		elif(cageRemoved):
-			saynn("You chat a little more.")
+			saynn("Вы еще немного болтаете.")
 			sayPipLine()
 		
 		addContinueEventTrigger()
@@ -1575,14 +1575,14 @@ func main_do(_id:String, _args:Array):
 		})
 		if(special == "treat"):
 			playAnimation(StageScene.Duo, "stand", {npc=C_GUY})
-			saynn("Leo walks up to you.")
+			saynn("Лео подходит к тебе.")
 			talk(C_GUY, "Sofie really doesn't like that you're making so much noise.")
-			saynn("His hand produces a slice of an apple.")
+			saynn("Его рука достает ломтик яблока.")
 			talk(C_GUY, "If I give you a treat, will you behave?")
-			saynn("You nod, obviously. The guy hands you the treat.")
+			saynn("Ты киваешь, это очевидно. Парень протягивает тебе угощение.")
 			addTreat(1)
 		if(special == "bully"):
-			saynn("Sofie gets extremely annoyed with you.")
+			saynn("Софи дико бесится из-за тебя.")
 			talk(C_GIRL, RNG.pick([
 				"SHUT UP, BITCH.",
 				"YOU ARE SUCH A WHINY BITCH.",
@@ -1591,22 +1591,22 @@ func main_do(_id:String, _args:Array):
 			bullyScene(C_PC)
 		if(special == "shiv"):
 			if(bullTopic <= 0):
-				saynn("After that stunt, one of the other slaves approaches you.")
+				saynn("После этого трюка к тебе подходит один из других рабов.")
 				talk(C_BULL, "Hey.. you don't know me.. but I think this might be more useful to you than me.")
-				saynn("He hands you a sharpened rock.. could be used as a weapon.")
+				saynn("Он протягивает тебе заточенный камень... его можно использовать как оружие.")
 				
 			else:
-				saynn("After that stunt, Pip approaches you.")
+				saynn("После этого трюка к тебе подходит Пип.")
 				talk(C_BULL, "Hey.. I think this might be more useful to you than me.")
-				saynn("He hands you a sharpened rock.. could be used as a weapon.")
+				saynn("Он протягивает тебе заточенный камень... его можно использовать как оружие.")
 			addShiv()
 		
 		addContinueEventTrigger()
 	if(_id == "talkCowMilk"):
 		if(cowTopic > 0):
-			saynn("You make Milka an offer to milk her. She agrees.")
+			saynn("Ты предлагаешь Милке подоить её. Она соглашается.")
 		else:
-			saynn("You tell the cow that it's time for you to milk her.")
+			saynn("Ты говоришь корове, что пора её подоить.")
 		milkScene(C_PC, C_COW)
 		addStamina(-40)
 		addCowTrust(3)
@@ -1617,9 +1617,9 @@ func main_do(_id:String, _args:Array):
 			addDisabledAction("Breed her", "She doesn't trust you enough..")
 	if(_id == "talkBullMilk"):
 		if(bullTopic > 0):
-			saynn("You make Pip an offer to milk him. He agrees.")
+			saynn("Ты предлагаешь Пипу подоить его. Он соглашается.")
 		else:
-			saynn("You tell the bull that it's time for you to milk him.")
+			saynn("Ты говоришь быку, что пришло время подоить его.")
 		milkScene(C_PC, C_BULL)
 		addStamina(-40)
 		addBullTrust(3)
@@ -1627,12 +1627,12 @@ func main_do(_id:String, _args:Array):
 	if(_id == "eatGrass"):
 		aimCamera(L_EAT)
 		if(upgradeLevel >= UPGRADE_GRASS):
-			saynn("You go out onto the field and eat some of that tasty grass.")
+			saynn("Ты выходишь на поле и поедаешь немного этой вкусной травы.")
 			addStamina(50)
 			GM.pc.fillBalls(0.2)
 			GM.pc.fillBreasts(0.2)
 		else:
-			saynn("You go out onto the field and eat some grass.")
+			saynn("Ты выходишь на поле и ешь траву.")
 			addStamina(30)
 		addObedience(1)
 		var special:String = RNG.pickWeightedDict({
@@ -1643,84 +1643,84 @@ func main_do(_id:String, _args:Array):
 		if(special == "cow" && cowTrust > 0.0):
 			playAnimation(StageScene.Duo, "stand", {npc=C_COW})
 			GlobalRegistry.getCharacter(C_COW).fillBreasts(0.5)
-			saynn("Milka does the same nearby, chewing on some grass blades.")
+			saynn("Милка делает то же самое неподалеку, пережевывая травинки.")
 			talk(C_COW, RNG.pick([
 				"Tasty, isn't it?",
 				"Moo~. Free grass.. Constant milking.. What else would a cow want?",
 				"Happy times!",
 				"Enough grass for us both!",
 			]))
-			saynn("You.. nod.")
+			saynn("Ты... киваешь.")
 			addCowTrust(2)
 		if(special == "bull" && bullTrust > 0.0):
 			playAnimation(StageScene.Duo, "stand", {npc=C_BULL})
 			GlobalRegistry.getCharacter(C_BULL).fillBalls(0.5)
-			saynn("Pip hides in the corner of the field, chewing on a single grass blade.")
+			saynn("Пип прячется в углу поля, медленно жуя одну-единственную травинку.")
 			talk(C_BULL, RNG.pick([
 				"They have a whole ass garden.. but we're only allowed to eat grass.",
 				"I'm not a grass-eater, okay? I just.. need something to chew on at least.",
 				"I wanna step on their berries so much.. but they will do the same with mine.",
 				"This place isn't so bad, is it? Eh, who am I kidding..",
 			]))
-			saynn("You nod.")
+			saynn("Ты киваешь.")
 			addBullTrust(2)
 		addContinueEventTrigger()
 	if(_id == "eatStarve"):
-		saynn("Anything is better than eating grass. You decide to just starve.")
+		saynn("Что угодно лучше, чем жрать траву. Ты решаешь просто сдохнуть от голода.")
 		addStamina(-30)
 		if(GM.pc.getStamina() <= 0):
-			saynn("Ow.. Your belly hurts..")
+			saynn("Ой... Живот разболелся...")
 			addPain(20)
 		if(getTreatAmount() <= 0 && RNG.chance(20+GM.pc.getPainLevel()*80.0+clamp(obedience, 0.0, 1.0)*50.0)):
 			playAnimation(StageScene.Duo, "stand", {npc=C_GUY})
-			saynn("Leo approaches you and hands you a carrot..")
+			saynn("Лео подходит к тебе и протягивает морковку...")
 			talk(C_GUY, "I know the grass isn't what you normally eat. But don't starve yourself, okay? Don't tell Sofie.")
-			saynn("Free treat, hey.")
+			saynn("Держи, угощение!")
 			addTreat(1)
 		addContinueEventTrigger()
 	if(_id == "eatDemand"):
-		saynn("You demand to be fed normal food!")
+		saynn("Ты требуешь нормальной еды!")
 		addObedience(-2)
 		if(RNG.chance(max(20.0+obedience*50.0, 10.0))):
-			saynn("The owners.. actually feed you. They give you some leftovers to munch on.")
+			saynn("Владельцы... всё-таки кормят тебя. Они дают тебе немного объедков, чтобы ты мог перекусить.")
 			addStamina(40)
 		else:
-			saynn("The owners don't seem to care. Looks like you're starving..")
+			saynn("Владельцам, кажется, плевать. Похоже, ты умираешь от голода...")
 			addStamina(-30)
 		addContinueEventTrigger()
 	if(_id == "eatTreat"):
-		saynn("You eat a treat! It was very tasty.")
+		saynn("Ты съедаешь лакомство! Было очень вкусно.")
 		addStamina(100)
 		addPain(-100)
-		saynn("But, soon, it ended.")
+		saynn("Но вскоре всё закончилось.")
 		addTreat(-1)
 		
 		if(RNG.chance(30) && cowTrust > 0.0):
-			saynn("Milka drools while watching you.")
+			saynn("Милка пускает слюнки, наблюдая за тобой.")
 			if(getTreatAmount() > 0):
-				saynn("You just can't watch Milka's puppy eyes.. You have a spare treat so you decide to give it to her.")
+				saynn("Ты просто не можешь выносить этот взгляд щенячьих глаз Милки... У тебя завалялось лишнее лакомство, и ты решаешь отдать его ей.")
 				talk(C_COW, "For me? Thank you-u-u~!")
 				addCowTrust(3)
 				addTreat(-1)
 				
 		if(RNG.chance(20) && bullTrust > 0.0):
-			saynn("Pip sighs.")
+			saynn("Пип вздыхает.")
 			talk(C_BULL, RNG.pick([
 				"That was enough, huh?",
 				"I see how it is.",
 				"Eating treats that they gave you, huh?",
 			]))
-			saynn("You can hear some jealousy in his voice.")
+			saynn("В его голосе слышится ревность.")
 			addBullTrust(-1)
 		
 		addContinueEventTrigger()
 	if(_id == "needyMilk"):
-		saynn("You ask to be milked an extra time..")
+		saynn("Ты просишь подоить тебя еще разок...")
 		addObedience(1)
 		milkScene(RNG.pick([C_GUY, C_GIRL]), C_PC)
 		addContinueEventTrigger()
 	if(_id == "needyRest"):
-		saynn("You decide to just chill..")
+		saynn("Ты решаешь просто расслабиться...")
 		addStamina(20)
 		
 		var possible:Array = []
@@ -1735,36 +1735,36 @@ func main_do(_id:String, _args:Array):
 			var randP:String = RNG.pick(possible)
 			if(randP == "cow"):
 				playAnimation(StageScene.Duo, "stand", {npc=C_COW})
-				saynn("Milka joins and chats with you.")
+				saynn("Милка подходит и начинает болтать с тобой.")
 				sayMilkaLine()
 				addCowTrust(2)
 			if(randP == "bull"):
 				playAnimation(StageScene.Duo, "stand", {npc=C_BULL})
-				saynn("Pip joins and chats with you.")
+				saynn("Пип подходит и начинает болтать с тобой.")
 				sayPipLine()
 				addBullTrust(2)
 			if(randP == "guy"):
 				playAnimation(StageScene.Duo, "stand", {npc=C_GUY})
-				saynn("Leo joins and chats with you.")
+				saynn("Лео подходит и начинает болтать с тобой.")
 				sayLeoLine()
 		
 		#GM.pc.orgasmFrom("pc")
 		addContinueEventTrigger()
 	if(_id == "needyOfferSelf"):
-		saynn("You decide to offer your body to the owners..")
+		saynn("Ты решаешь предложить своё тело владельцам...")
 		
-		saynn("Who do you want to fuck you?")
+		saynn("Кто именно будет тебя трахать?")
 		
 		setState("needySex")
 		addAction("Leo", "Let the guy fuck you", "startSex", [C_GUY, C_PC, SexType.DefaultSex, {SexMod.BondageDisabled: true, SexMod.DisableDynamicJoiners: true}])
 		addAction("Sofie", "Let the girl fuck you", "startSex", [C_GIRL, C_PC, SexType.DefaultSex, {SexMod.BondageDisabled: true, SexMod.DisableDynamicJoiners: true}])
 		addAction("Both", "Let them both have fun with you", "startSex", [[C_GIRL, C_GUY], C_PC, SexType.DefaultSex, {SexMod.BondageDisabled: true, SexMod.DisableDynamicJoiners: true}])
 	if(_id == "needyComplain"):
-		saynn("You complain about your neediness!")
+		saynn("Ты жалуешься на то, как сильно тебе хочется ласки!")
 		addObedience(-2)
 		
 		if(RNG.chance(30)):
-			saynn("Suddenly, you get approached.")
+			saynn("Внезапно к тебе кто-то подходит.")
 			bullyScene(C_PC)
 		
 		addContinueEventTrigger()
@@ -1773,28 +1773,28 @@ func main_do(_id:String, _args:Array):
 		setState(_args[0])
 
 func needySex_sexResult(_sex:SexEngineResult):
-	saynn("The sex has ended!")
+	saynn("Секс окончен!")
 	if(_sex.didSubsWin()):
-		saynn("They got beaten.")
+		saynn("Их отлупили.")
 		addObedience(-4)
 	else:
 		if(_sex.getAverageDomSatisfaction() < 0.7):
-			saynn("They didn't like it.")
+			saynn("Им не понравилось.")
 			addObedience(-2)
 		else:
 			addObedience(3)
 			
 			if(RNG.chance(30.0+obedience*70.0)):
-				saynn("They gave you a treat!")
+				saynn("Тебя угостили вкусняшкой!")
 				addTreat(1)
 
 	addContinue("setState", ["main"])
 
 func sleep_state():
 	aimCamera(L_SLEEP)
-	saynn("It's getting late. The cafe is closed and the owners bring you back into your cells before locking the doors.")
+	saynn("Становится поздно. Кафе закрывается, и владельцы возвращают тебя в камеру, прежде чем запереть двери.")
 	
-	saynn("Time to try to sleep.")
+	saynn("Пора попытаться уснуть.")
 	
 	onDayEnd()
 	
@@ -1813,13 +1813,13 @@ func sleepScene():
 	playAnimation(StageScene.Sleeping, "sleep")
 	GM.main.startNewDay()
 	GM.pc.afterSleeping(false)
-	saynn("It's a new day. Time to wake up.")
+	saynn("Наступил новый день. Пора просыпаться.")
 	if(upgradeLevel >= UPGRADE_CELLS):
-		saynn("Sleeping on an actual bed is so much nicer.")
+		saynn("Спать на настоящей кровати куда приятнее.")
 		addStamina(50)
 		addPain(-100)
 	else:
-		saynn("The old crates don't make for the best bed so you barely feel refreshed.")
+		saynn("Старые ящики — не лучшая замена кровати, так что ты едва чувствуешь себя отдохнувшим.")
 		addStamina(20)
 		addPain(-50)
 	
@@ -1831,7 +1831,7 @@ func sleepScene():
 		else:
 			addContinue("setState", ["main"])
 		if(GM.pc.getCredits() >= 0):
-			saynn("[b]The owners have paid off their debt! You can be released![/b]")
+			saynn("[b]Владельцы выплатили долг! Тебя могут отпустить![/b]")
 			addAction("Freedom!", "You did your part. Time for the owners to do the same", "ENDING", ["end_credits"])
 
 #func sleep_do(_id:String, _args:Array):
@@ -1843,12 +1843,12 @@ func sleepScene():
 func about_to_be_milked_by_guy_state():
 	aimCamera(L_ACT)
 	playAnimation(StageScene.Duo, "stand", {npc=C_GUY})
-	saynn("Leo approaches you.")
+	saynn("Лео подходит к тебе.")
 	if(agreeMilk && !GM.pc.canBeMilked() && !GM.pc.hasEffect(StatusEffect.HasCumInsideAnus) && !GM.pc.hasEffect(StatusEffect.HasCumInsideVagina)):
 		talk(C_GUY, RNG.pick([
 			"Time for milking. Are you lactating? If not, I will have to try to knock you up first.",
 		]))
-		saynn("Looks like he will try to breed you if you agree..")
+		saynn("Похоже, если ты согласишься, он попытается тебя осеменить...")
 	else:
 		talk(C_GUY, RNG.pick([
 			"I have to milk you now.",
@@ -1861,24 +1861,24 @@ func about_to_be_milked_by_guy_state():
 
 func about_to_be_milked_by_guy_do(_id:String, _args:Array):
 	if(_id == "agree"):
-		saynn("You decide to let him milk you.")
+		saynn("Ты решаешь позволить ему подоить тебя.")
 		addObedience(1)
 		
 		milkScene(C_GUY, C_PC)
 		setState("main")
 	if(_id == "decline"):
-		saynn("You decline his offer.")
+		saynn("Ты отклоняешь его предложение.")
 		addObedience(-1)
 		if(day > 0 && RNG.chance(max(5.0 - obedience*50.0, 5.0))):
 			playAnimation(StageScene.Duo, "stand", {npc=C_GIRL})
 			setState("about_to_be_milked_by_girl")
 			
-			saynn("Suddenly, Sofie steps out and glares at you. Leo sees her and takes a few steps back.")
+			saynn("Внезапно выходит Софи и свирепо смотрит на тебя. Лео замечает её и делает несколько шагов назад.")
 			talk(C_GIRL, RNG.pick([
 				"Think you're so smart? Guess I'm gonna have to milk you myself.",
 				"Leo might be soft but I'm not so lenient. Get ready to be punished.",
 			]))
-			saynn("Looks like she wants to fight you..")
+			saynn("Похоже, она хочет с тобой подраться...")
 			
 			addAction("Fight!", "Start the fight", "startFight", [C_GIRL])
 			if(getShivAmount() > 0):
@@ -1909,12 +1909,12 @@ func about_to_be_milked_by_guy_do(_id:String, _args:Array):
 func about_to_be_milked_by_girl_state():
 	aimCamera(L_ACT)
 	playAnimation(StageScene.Duo, "stand", {npc=C_GIRL})
-	saynn("Sofie approaches you.")
+	saynn("Софи подходит к тебе.")
 	if(agreeMilk && !GM.pc.canBeMilked() && !GM.pc.hasEffect(StatusEffect.HasCumInsideAnus) && !GM.pc.hasEffect(StatusEffect.HasCumInsideVagina)):
 		talk(C_GIRL, RNG.pick([
 			"I've came to milk you. I don't care if you're not lactating, I will just have to breed you first then.",
 		]))
-		saynn("Looks like she will try to knock you up if you agree..")
+		saynn("Похоже, если ты согласишься, она попытается тебя оплодотворить...")
 	else:
 		if(obedience < -0.1):
 			talk(C_GIRL, RNG.pick([
@@ -1928,20 +1928,20 @@ func about_to_be_milked_by_girl_state():
 				"Got some "+cowBullBoth("milk", "cream", "milk and cream")+"? I need it all.",
 				"I've come to milk you so you better behave.",
 			]))
-	saynn("It doesn't look like she is gonna take a no for an answer..")
+	saynn("Похоже, она не собирается принимать ответ «нет»...")
 	
 	addAction("Allow", "Let her milk you", "agree")
 	addAction("Fight!", "Resist her attempts", "decline")
 
 func about_to_be_milked_by_girl_do(_id:String, _args:Array):
 	if(_id == "agree"):
-		saynn("You decide to let her milk you.")
+		saynn("Ты решаешь позволить ей подоить тебя.")
 		addObedience(1)
 		
 		milkScene(C_GIRL, C_PC)
 		setState("main")
 	if(_id == "decline"):
-		saynn("You decline her offer.")
+		saynn("Ты отклоняешь её предложение.")
 		addObedience(-1)
 		if(obedience < -0.1):
 			talk(C_GIRL, RNG.pick([
@@ -1955,13 +1955,13 @@ func about_to_be_milked_by_girl_do(_id:String, _args:Array):
 				"Such a silly animal. I will make you behave.",
 				"You're nothing but an animal. Behave or I will make you.",
 			]))
-		saynn("Looks like you are gonna have to fight her.")
+		saynn("Похоже, тебе придётся с ней сразиться.")
 		addAction("Fight!", "Start the fight", "startFight", [C_GIRL])
 		if(getShivAmount() > 0):
 			addAction("Shiv her!", "Use your shiv to make her fuck off", "useShiv")
 	if(_id == "useShiv"):
 		playAnimation(StageScene.Duo, "shiv", {npc=C_GIRL, npcAction="defeat"})
-		saynn("Before Sofie can react, you pull out a shiv and attack her with it!")
+		saynn("Прежде чем Софи успевает среагировать, ты выхватываешь шило и наносишь ей удар!")
 		
 		talk(C_GIRL, RNG.pick([
 			"OW, FUCKER!",
@@ -1971,16 +1971,16 @@ func about_to_be_milked_by_girl_do(_id:String, _args:Array):
 		addObedience(-3)
 		
 		if(RNG.chance(10 - (getShivAmount()-1)*3)):
-			saynn("Sofie grunts as she leaves. Miraculously, [b]you managed to keep the shiv[/b].")
+			saynn("Софи кряхтит, уходя. Чудесным образом, [b]тебе удалось сохранить шило[/b].")
 		else:
-			saynn("Sofie grunts as she leaves. Sadly, her skin is thick enough to break the shiv.")
+			saynn("Софи кряхтит, уходя. К сожалению, её кожа оказалась достаточно толстой, чтобы сломать шило.")
 			useShiv()
 		#setState("main")
 		addContinue("setState", ["main"])
 	
 func about_to_be_milked_by_girl_fightResult(_didPCWin:bool):
 	if(_didPCWin):
-		saynn("You managed to fight Sofie off!")
+		saynn("Тебе удалось отбиться от Софи!")
 		talk(C_GIRL, RNG.pick([
 			"I'm not done with you, slut..",
 			"Argh.. Screw you then, you stupid bitch.",
@@ -1990,14 +1990,14 @@ func about_to_be_milked_by_girl_fightResult(_didPCWin:bool):
 		
 		addObedience(-5)
 	else:
-		saynn("You lost the fight..")
+		saynn("Ты проиграл в схватке...")
 		talk(C_GIRL, RNG.pick([
 			"Pathetic.",
 			"That was dumb. Very dumb.",
 			"Stop being such a fucking brat.",
 			"I got enough lazy fucks around me.",
 		]))
-		saynn("Sofie grabs you and prepares for the milking procedure.")
+		saynn("Софи хватает тебя и готовится к процедуре дойки.")
 		
 		milkScene(C_GIRL, C_PC)
 	
@@ -2544,14 +2544,14 @@ func failedlockescape_state():
 	playAnimation(StageScene.Solo, "kick")
 	aimCamera(L_COUNTER)
 	
-	saynn("You put your whole strength into the next attack.. and kick the reinforced door down! The padlock snaps in half, unable to keep you locked away any longer.")
+	saynn("Ты вкладываешь всю свою силу в следующий удар... и вышибаешь укрепленную дверь! Навесной замок разлетается пополам, не в силах больше удерживать тебя внутри.")
 	addStamina(-80)
 	
-	saynn("Feeling brave.. and inspired.. you rush out of that damn dungeon, your eyes squinting from the brightness of the cafe lights.")
+	saynn("Почувствовав храбрость... и вдохновение... ты вылетаешь из этой чертовой темницы, щурясь от яркого света кафе.")
 	
-	saynn("After making so much noise, the customers turns their heads towards you.. Their eyes become huge.")
+	saynn("После такого шума посетители оборачиваются к тебе... Их глаза округляются от изумления.")
 	
-	saynn("Without even realizing it, you vault over the counter and dash towards the exit!")
+	saynn("Сами того не осознавая, ты перепрыгиваешь через прилавок и несешься к выходу!")
 	
 	addContinue("setState", ["fldown"])
 
@@ -2561,25 +2561,25 @@ func fldown_state():
 	playAnimation(StageScene.Duo, "defeat", {npc=C_GUY, npcAction="stunbaton"})
 	aimCamera(L_DOCKS)
 	
-	saynn("You don't think.. you just act. Fight or flight. But it looks like you are not flying today..")
+	saynn("Ты не думаешь... ты просто действуешь. Бей или беги. Но, похоже, сегодня бежать не получится...")
 	
-	saynn("Leaving the cafe was the easy part.. but now you're in some kind of docks. Nothing but spaceships and complete void behind the windows.")
+	saynn("Выбраться из кафе было проще всего... но теперь ты в каких-то доках. За окнами — лишь космические корабли да бесконечная пустота.")
 	
-	saynn("You try to board one of the ships.. but the door's panel beeps at you.")
+	saynn("Ты пытаешься заскочить на один из кораблей... но панель двери отвечает тебе противным писком.")
 	
-	saynn("And that's when the consequences catch up.. You feel immense pain as a cattle-prod gets shoved into your ribs, sending a shock that is strong enough to bring down an elephant, let alone you.")
+	saynn("И именно в этот момент настигают последствия... Ты чувствуешь невыносимую боль: электрошокер втыкают тебе прямо в ребра, и разряд такой силы, что он свалит слона, не то что тебя.")
 	
 	addPain(70)
 	
 	talk(C_GUY, "Sorry, I can't let you go.")
 	
-	saynn("You'd like to respond.. but you can't. Your body is spazzing out on the floor from the aftershocks..")
+	saynn("Тебе хочется как-то ответить... но ты не можешь. Твое тело бьется в конвульсиях на полу от остаточных разрядов...")
 	
-	saynn("Leo grabs your by the collar and pulls you back into the cafe.")
+	saynn("Лео хватает тебя за шиворот и затаскивает обратно в кафе.")
 	
 	talk(C_GUY, "Uh.. ignore us, please. Enjoy your meals, pretend we're not here.")
 	
-	saynn("Seeing a naked you.. and a guy with a cattle-prod.. most of the customers just pack up their things and leave in a hurry.")
+	saynn("Увидев тебя — голым, а рядом парня с электрошокером... большинство посетителей просто спешно собирают вещи и сваливают.")
 	
 	addContinue("setState", ["flback"])
 
@@ -2589,24 +2589,24 @@ func flback_state():
 	playAnimation(StageScene.Duo, "stand", {pc=C_GIRL, npc=C_GUY})
 	aimCamera(L_CENTER)
 	
-	saynn("You get dragged off back into the dimly-lit staff-only room..")
+	saynn("Тебя волокут обратно в тускло освещенную служебную комнату...")
 	
 	talk(C_GIRL, "REALLY? You let {pc.him} escape? What the fuck is wrong with you?!")
 	
 	talk(C_GUY, "I didn't. {pc.He} broke out somehow.")
 	
 	if(!cageRemoved && !helpedMilka):
-		saynn("Still dizzy, you look around and see the other slaves. The bull sighs.. and the cow is just shaking in the corner, her terrified eyes are only focussed on the cattle prod.")
+		saynn("Все еще пошатываясь от головокружения, ты оглядываешься и видишь других рабов. Бык тяжело вздыхает... а корова просто дрожит в углу, ее полные ужаса глаза прикованы только к электрошокеру.")
 	elif(cageRemoved):
-		saynn("Still dizzy, you look around and see the other slaves. The bull looks like he is ready to help you.. but there are also obvious signs of doubts in his stare. And the cow is just shaking in the corner, her terrified eyes are only focussed on the cattle prod.")
+		saynn("Все еще пошатываясь от головокружения, ты оглядываешься и видишь других рабов. Бык выглядит так, будто готов прийти тебе на помощь... но в его взгляде читаются явные сомнения. А корова просто дрожит в углу, ее полные ужаса глаза прикованы только к электрошокеру.")
 	else:
-		saynn("Still dizzy, you look around and see the other slaves. The cow clearly wants to help any way she can.. but the sight of that cattle-prod is making her shiver and wince. The bull.. he just sighs at you and shakes his head.")
+		saynn("Всё ещё кружится голова. Оглядевшись, ты видишь остальных рабов. Корова явно хочет помочь чем может... но при виде электрошокера её начинает трясти, и она морщится от страха. Бык... он лишь вздыхает, глядя на тебя, и качает головой.")
 	
-	saynn("You get a feeling that, without their combined help, you're screwed.")
+	saynn("У тебя возникает стойкое ощущение, что без их общей помощи тебе просто пиздец.")
 	
-	saynn("The owners step out and shut the door behind. You can hear them still arguing about it.")
+	saynn("Хозяева выходят и закрывают за собой дверь. Ты всё ещё слышишь, как они спорят.")
 	
-	saynn("Looks like your escape attempt has failed.. And now everything hurts.")
+	saynn("Похоже, твоя попытка побега провалилась... И теперь всё тело ноет от боли.")
 	
 	addContinue("setState", ["flcheck"])
 
@@ -2614,9 +2614,9 @@ func flcheck_state():
 	processTurn()
 	playAnimation(StageScene.Solo, "stand")
 	
-	saynn("After some time, you manage to get up.")
+	saynn("Спустя какое-то время тебе удаётся подняться.")
 	
-	saynn("The door is locked yet again.. but it looks like they just used the same half-broken padlock. These cheapskates didn't even bother to get a new one.")
+	saynn("Дверь снова заперта... но, похоже, они использовали тот же самый наполовину сломанный навесной замок. Эти жлобы даже не удосужились купить новый.")
 	
 	addContinue("setState", ["main"])
 
@@ -2626,7 +2626,7 @@ func morningpunish_state():
 	addChar(C_GIRL)
 	playAnimation(StageScene.SexCowgirlChoke, "tease", {pc="pc", npc=C_GIRL})
 	
-	saynn("Before you can get up, Sofie walks into your cell and pins you to the floor, her hands quickly find your throat!")
+	saynn("Прежде чем ты успеваешь встать, в камеру влетает Софи и прижимает тебя к полу, её руки мгновенно смыкаются на твоём горле!")
 	talk(C_GIRL, RNG.pick([
 		"WHY ARE YOU SO FUCKING LAZY? WHERE IS MY "+("MILK" if agreeMilk else "SEED")+"? HOW AM I SUPPOSED TO RUN MY CAFE?",
 		"YOU THOUGHT THIS IS A HOLIDAY RESORT? YOU BETTER START GIVING ME YOUR "+("MILK" if agreeMilk else "SEED")+" OR I WILL HAVE TO SELL YOU. MAYBE EVEN IN BITS.",
@@ -2634,9 +2634,9 @@ func morningpunish_state():
 		"YOU THINK YOU'RE SMART? I WILL TORTURE YOU UNTIL YOU START GIVING ME MY "+("MILK" if agreeMilk else "SEED")+". ALL OF IT.",
 	]))
 	
-	saynn("She is clearly mad because you didn't make any seed or milk for the cafe..")
+	saynn("Она явно в ярости из-за того, что ты не выдал ни семени, ни молока для кафе...")
 	
-	saynn("You try to throw her off.. but it seems that she is not done punishing you yet..")
+	saynn("Ты пытаешься сбросить её с себя... но, похоже, она ещё не закончила тебя наказывать...")
 	
 	addContinue("startSex", [C_GIRL, C_PC, SexType.DefaultSex, {SexMod.SubMustGoUnconscious:true, SexMod.DisableDynamicJoiners:true}])
 	if(getShivAmount() > 0):
@@ -2648,48 +2648,48 @@ func morningpunish_do(_id:String, _args:Array):
 	if(_id == "useshiv"):
 		playAnimation(StageScene.Duo, "shiv", {npc=C_GIRL, npcAction="defeat"})
 		
-		saynn("You break free by forcing a shiv into her arm!")
+		saynn("Тебе удаётся вырваться, вонзив заточку ей в руку!")
 		talk(C_GIRL, RNG.pick([
 			"ARGH! YOU FUCKER!",
 			"YOU BITCH.. FUCK!",
 			"THAT FUCKING HURT, FUCKER.",
 		]))
 		if(RNG.chance(10 - (getShivAmount()-1)*3)):
-			saynn("Sofie grunts as she leaves. Miraculously, [b]you managed to keep the shiv[/b].")
+			saynn("Софи кряхтит, уходя. Чудесным образом, [b]тебе удалось сохранить шило[/b].")
 		else:
-			saynn("Sofie grunts as she leaves. Sadly, her skin is thick enough to break the shiv.")
+			saynn("Софи кряхтит, уходя. К сожалению, её кожа оказалась достаточно толстой, чтобы сломать шило.")
 			useShiv()
 		
 		needsPunishment = false
 		addContinue("setState", ["main"])
 
 func morningpunish_sexResult(_sex:SexEngineResult):
-	saynn("The punishment has ended!")
+	saynn("Наказание окончено!")
 	if(_sex.didSubsWin()):
 		playAnimation(StageScene.Duo, "shove", {npc=C_GIRL, npcAction="hurt"})
-		saynn("You managed to fight back against Sofie.")
+		saynn("Тебе удалось дать отпор Софи.")
 		talk(C_GIRL, RNG.pick([
 			"..fucking slut.",
 			"..stupid bitch.",
 			"..I'm not done with you, whore.",
 			"Ugh. Fuck you.",	
 		]))
-		saynn("She grunts.. and leaves you be.. for now.")
+		saynn("Она кряхтит... и оставляет тебя в покое... пока что.")
 		addObedience(-5)
 	else:
 		if(_sex.isSubUnconscious(C_PC)):
 			playAnimation(StageScene.SexStart, "defeated", {pc=C_GIRL})
-			saynn("Sofie pulls her hands away from your throat and slaps your cheek a few times.")
+			saynn("Софи убирает руки от твоего горла и несколько раз дает тебе звонкую пощечину.")
 			talk(C_GIRL, RNG.pick([
 				"Get up, your dumb bitch. I know you're not dead.",
 				"Get up. If you don't want more, you better start producing.",
 			]))
-			saynn("She quickly leaves and comes back with a bucket of water that she spills over your face. Refreshing.")
+			saynn("Она быстро уходит и возвращается с ведром воды, которое выплескивает тебе в лицо. Освежает.")
 			addStamina(40)
 			addPain(-50)
 		elif(_sex.getAverageDomSatisfaction() < 0.7):
 			playAnimation(StageScene.SexStart, "start", {pc=C_GIRL})
-			saynn("Sofie is done with you.. but she doesn't exactly look satisfied.")
+			saynn("С Софи покончено... но она не выглядит особо удовлетворенной.")
 			talk(C_GIRL, RNG.pick([
 				"You can't even struggle right.",
 				"Why are you so fucking weak? Ughh, everyone around me is a mistake.",
@@ -2698,7 +2698,7 @@ func morningpunish_sexResult(_sex:SexEngineResult):
 			addObedience(-2)
 		else:
 			playAnimation(StageScene.SexStart, "start", {pc=C_GIRL})
-			saynn("Sofie is done with you.. she doesn't seem so.. pent up.. anymore.")
+			saynn("С Софи покончено... кажется, она больше не чувствует такого... напряжения.")
 			talk(C_GIRL, RNG.pick([
 				"Start producing or you will see me again.",
 				"If anything, at least I got myself a punching bag. Second one.",
@@ -2707,7 +2707,7 @@ func morningpunish_sexResult(_sex:SexEngineResult):
 	
 	if(!canMilkOthers):
 		canMilkOthers = true
-		saynn("Before she leaves, she adds one more thing..")
+		saynn("Прежде чем уйти, она добавляет кое-что еще...")
 		talk(C_GIRL, "If you can't give me enough "+cowBullBoth("milk", "cream", "milk")+", start milking others. Be useful, bitch.")
 	
 	needsPunishment = false
@@ -2845,7 +2845,7 @@ func eGirlBulliesSlave_do(_id:String, _args:Array):
 			addAction("Shiv her!", "Use your shiv to make her fuck off", "useShiv")
 	if(_id == "useShiv"):
 		playAnimation(StageScene.Duo, "shiv", {npc=C_GIRL, npcAction="defeat"})
-		saynn("Before Sofie can react, you pull out a shiv and attack her with it!")
+		saynn("Прежде чем Софи успевает среагировать, ты выхватываешь шило и наносишь ей удар!")
 		
 		talk(C_GIRL, RNG.pick([
 			"OW, FUCKER!",
@@ -2855,9 +2855,9 @@ func eGirlBulliesSlave_do(_id:String, _args:Array):
 		addObedience(-3)
 		
 		if(RNG.chance(10 - (getShivAmount()-1)*3)):
-			saynn("Sofie grunts as she leaves. Miraculously, [b]you managed to keep the shiv[/b].")
+			saynn("Софи кряхтит, уходя. Чудесным образом, [b]тебе удалось сохранить шило[/b].")
 		else:
-			saynn("Sofie grunts as she leaves. Sadly, her skin is thick enough to break the shiv.")
+			saynn("Софи кряхтит, уходя. К сожалению, её кожа оказалась достаточно толстой, чтобы сломать шило.")
 			useShiv()
 		addContinue("setState", ["main"])
 		
@@ -2878,7 +2878,7 @@ func eGirlBulliesSlave_do(_id:String, _args:Array):
 
 func eGirlBulliesSlave_fightResult(_didPCWin:bool):
 	if(_didPCWin):
-		saynn("You managed to fight Sofie off!")
+		saynn("Тебе удалось отбиться от Софи!")
 		talk(C_GIRL, RNG.pick([
 			"I'm not done with you, slut..",
 			"Argh.. Screw you then, you stupid bitch.",
@@ -2887,7 +2887,7 @@ func eGirlBulliesSlave_fightResult(_didPCWin:bool):
 		]))
 		addObedience(-5)
 	else:
-		saynn("You lost the fight..")
+		saynn("Ты проиграл в схватке...")
 		talk(C_GIRL, RNG.pick([
 			"Pathetic.",
 			"That was dumb. Very dumb.",
@@ -2939,16 +2939,16 @@ func eGirlCattleProdCow_do(_id:String, _args:Array):
 		addChar(theSlave)
 		GlobalRegistry.getCharacter(C_COW).fillBreasts(1.0)
 		playAnimation(StageScene.Duo, "stunbaton", {pc=theOwner, npc=theSlave, npcAction="hurt"})
-		saynn("Sofie presses the cattle prod against Milka's breasts and squeezes the handle, sending a painful shock through her chest.")
+		saynn("Софи прижимает электрошокер к груди Милки и сжимает рукоятку, пропуская болезненный разряд через её грудь.")
 		talk(C_COW, "Ow!")
-		saynn("Milka's body convulses, her muscles all tensing up.. and her nipples squirt out pure milk! ")
+		saynn("Тело Милки содрогается, мышцы напрягаются... и из её сосков брызжет чистое молоко!")
 		talk(C_GIRL, "Much better.")
 	
 	if(_id == "doProtect"):
 		if(RNG.chance(50)):
 			playAnimation(StageScene.Duo, "stunbaton", {pc=theOwner, npc="pc", npcAction="hurt"})
 			
-			saynn("You push Milka out of the cattle prod's way.. and get hit by it instead. Ow! Your whole body convulses from the sudden painful shock that is rocking through it.")
+			saynn("Ты отталкиваешь Милку с пути электрошокера... и получаешь удар вместо неё. Ой! Всё тело сотрясается от резкого болезненного разряда, прошивающего тебя насквозь.")
 			addPain(40)
 			addStamina(-25)
 			
@@ -2957,23 +2957,23 @@ func eGirlCattleProdCow_do(_id:String, _args:Array):
 			
 			if(GM.pc.isLactating()):
 				GM.pc.fillBreasts(1.0)
-				saynn("Your breasts [b]feel full, leaking {pc.milk}![/b]")
+				saynn("Твоя грудь [b]кажется налитой, из неё сочится {pc.milk}![/b]")
 			else:
 				if(GM.pc.stimulateLactation()):
-					saynn("Your breasts [b]suddenly began lactating![/b]")
+					saynn("Твоя грудь [b]внезапно начала лактацию![/b]")
 				else:
-					saynn("Your breasts feel stimulated..")
-			saynn("When Sofie leaves, Milka gives you a quick hug.")
+					saynn("Ты чувствуешь стимуляцию в груди...")
+			saynn("Когда Софи уходит, Милка быстро тебя обнимает.")
 			addCowTrust(4)
 		else:
 			playAnimation(StageScene.Duo, "stunbaton", {pc=theOwner, npc="pc", npcAction="dodge"})
 			
-			saynn("You push Milka out of the cattle prod's way.. and manage to dodge it as well!")
+			saynn("Ты отталкиваешь Милку с пути электрошокера... и тебе удаётся увернуться!")
 			addStamina(-25)
-			saynn("Sofie rolls her eyes.")
+			saynn("Софи закатывает глаза.")
 			talk(C_GIRL, "I have no time for this. Screw you.")
 			addObedience(-4)
-			saynn("When Sofie leaves, Milka gives you a quick hug.")
+			saynn("Когда Софи уходит, Милка быстро тебя обнимает.")
 			addCowTrust(4)
 	
 	addContinue("setState", ["main"])
@@ -3019,16 +3019,16 @@ func eGirlCattleProdBull_do(_id:String, _args:Array):
 		addChar(theSlave)
 		GlobalRegistry.getCharacter(C_BULL).fillBalls(1.0)
 		playAnimation(StageScene.Duo, "stunbaton", {pc=theOwner, npc=theSlave, npcBodyState={hard=true}, npcAction="hurt"})
-		saynn("Sofie presses the cattle prod against Pip's "+("chastity cage" if !cageRemoved else "balls")+" and squeezes the handle, sending a painful shock through him.")
+		saynn("Софи прижимает электрошокер к "+("chastity cage" if !cageRemoved else "balls")+" Пипу и сжимает рукоятку, пропуская через него болезненный разряд.")
 		talk(C_BULL, "ARGH! FUCK!")
-		saynn("Pip's body convulses, a guttural scream leaves his mouth.. "+("His locked cock throbs inside its tight prison, leaking with seed." if !cageRemoved else "His cock goes hard instantly, throbbing, flared tip dripping with seed."))
+		saynn("Тело Пипа сотрясается конвульсиями, из его рта вырывается гортанный крик... "+("His locked cock throbs inside its tight prison, leaking with seed." if !cageRemoved else "His cock goes hard instantly, throbbing, flared tip dripping with seed."))
 		talk(C_GIRL, "Much better.")
 	
 	if(_id == "doProtect"):
 		if(RNG.chance(50)):
 			playAnimation(StageScene.Duo, "stunbaton", {pc=theOwner, npc="pc", npcAction="hurt", npcBodyState={hard=true}})
 			
-			saynn("You push Pip out of the cattle prod's way.. and get hit by it instead. Ow! Your whole body convulses from the sudden painful shock that is rocking through it.")
+			saynn("Ты отталкиваешь Пипа с пути электрошокера... и вместо него получаешь удар сам. Ой! Всё твоё тело пронзает резкий, болезненный разряд тока.")
 			addPain(40)
 			addStamina(-25)
 			
@@ -3037,32 +3037,32 @@ func eGirlCattleProdBull_do(_id:String, _args:Array):
 			
 			if(GM.pc.hasPenis()):
 				GM.pc.fillBalls(1.0)
-				saynn("Your balls [b]feel full![/b]")
+				saynn("Твои яйца [b]кажутся налитыми![/b]")
 			elif(GM.pc.isLactating()):
 				GM.pc.fillBreasts(1.0)
-				saynn("Your breasts [b]feel full, leaking {pc.milk}![/b]")
+				saynn("Твоя грудь [b]кажется налитой, из неё сочится {pc.milk}![/b]")
 			else:
 				if(GM.pc.stimulateLactation()):
-					saynn("Your breasts [b]suddenly began lactating![/b]")
+					saynn("Твоя грудь [b]внезапно начала лактацию![/b]")
 				else:
-					saynn("Your breasts feel stimulated..")
-			saynn("When Sofie leaves, Pip approaches you.")
+					saynn("Ты чувствуешь стимуляцию в груди...")
+			saynn("Когда Софи уходит, Пип подходит к тебе.")
 			talk(C_BULL, "This sucks. Sorry.")
 			addBullTrust(4)
 		else:
 			playAnimation(StageScene.Duo, "stunbaton", {pc=theOwner, npc="pc", npcAction="dodge"})
 			
-			saynn("You push Pip out of the cattle prod's way.. and manage to dodge it as well!")
+			saynn("Ты отталкиваешь Пипа с пути электрошокера... и тебе удаётся увернуться!")
 			addStamina(-25)
-			saynn("Sofie rolls her eyes.")
+			saynn("Софи закатывает глаза.")
 			talk(C_GIRL, "I have no time for this. Screw you.")
 			addObedience(-4)
-			saynn("When Sofie leaves, Pip approaches you.")
+			saynn("Когда Софи уходит, Пип подходит к тебе.")
 			talk(C_BULL, "Fuck that bitch, right?")
 			addBullTrust(4)
 	
 		if(RNG.chance(100.0 - getShivAmount()*40.0)):
-			saynn("He hands you a sharpened stone.")
+			saynn("Он протягивает тебе заточенный камень.")
 			addShiv()
 			talk(C_BULL, "I hope this will be helpful to you.")
 	
@@ -3074,12 +3074,12 @@ func eEatAss_state():
 	addChar(C_GIRL)
 	playAnimation(StageScene.Duo, "stand", {pc=C_PC, npc=C_GIRL})
 
-	saynn("Sofie approaches you, a tasty-looking treat in her hand.")
+	saynn("К тебе подходит Софи, держа в руке какое-то аппетитное лакомство.")
 	talk(C_GIRL, "Want this? I know you do.")
-	saynn("Her free hand grabs you by the collar.")
+	saynn("Свободной рукой она хватает тебя за воротник.")
 	talk(C_GIRL, "My ass needs a good eating.")
 	if(GM.pc.isOralBlocked()):
-		saynn("She jiggles some keys in front of your face.")
+		saynn("Она побрякивает ключами прямо перед твоим лицом.")
 		talk(C_GIRL, "I will even free your face if you do.")
 	
 	addAction("Deny", "A treat isn't worth it", "deny")
@@ -3087,7 +3087,7 @@ func eEatAss_state():
 
 func eEatAss_do(_id:String, _args:Array):
 	if(_id == "deny"):
-		saynn("You deny her offer.")
+		saynn("Вы отклоняете её предложение.")
 		talk(C_GIRL, "Alright, screw you then.")
 		addObedience(-1)
 	
@@ -3095,15 +3095,15 @@ func eEatAss_do(_id:String, _args:Array):
 		GM.pc.freeEyesDeleteAll()
 		GM.pc.freeMouthDeleteAll()
 		playAnimation(StageScene.SexRimming, "fast", {pc=C_GIRL, npc=C_PC, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You obey by getting on your knees and watching Sofie turn around and shove her ass into your face.")	
-		saynn("With gentle licks of your tongue, you begin serving her, getting her pucker nice and wet with your saliva.")
+		saynn("Вы повинуетесь: встаете на колени и наблюдаете, как Софи разворачивается и сует свою задницу вам прямо в лицо.")	
+		saynn("Нежными движениями языка вы начинаете обслуживать её, смачивая её анус своей слюной.")
 		talk(C_GIRL, RNG.pick([
 			"C'mon, get your tongue in there, you slut.",
 			"Do it properly or no treat!",
 			"Mhh.. maybe I should use you as my ass-licker instead.",
 		]))
-		saynn("Quiet moans escape from the girl while you go at it, eating her ass, letting your tongue explore her star.")
-		saynn("After the job is done, she reluctantly hands you the reward.")
+		saynn("Тихие стоны срываются с губ девушки, пока вы усердно вылизываете её задницу, позволяя языку исследовать её сфинктер.")
+		saynn("Когда работа сделана, она неохотно вручает вам награду.")
 		addTreat(1)
 		addObedience(3)
 	
@@ -3113,7 +3113,7 @@ func eWannaCuddle_state():
 	addChar(C_GUY)
 	playAnimation(StageScene.Duo, "stand", {pc=C_PC, npc=C_GUY})
 
-	saynn("Leo approaches you.")
+	saynn("Лео подходит к тебе.")
 	talk(C_GUY, "I'm not here to bully you, don't worry. Wanna chill together maybe?")
 	
 	addAction("Chill", "Agree to chill with your owner", "chill")
@@ -3121,15 +3121,15 @@ func eWannaCuddle_state():
 
 func eWannaCuddle_do(_id:String, _args:Array):
 	if(_id == "noChill"):
-		saynn("You deny his offer.")
+		saynn("Вы отклоняете его предложение.")
 		talk(C_GUY, "Sure, okay, no problem.")
 	
 	if(_id == "chill"):
 		playAnimation(StageScene.Cuddling, "idle", {pc=C_GUY, npc=C_PC})
-		saynn("You decide to spend some time with the guy.")
-		saynn("It's nice to not be abused or bullied for once. Leo is chatting with you while you just stay quiet mostly.")
+		saynn("Вы решаете провести немного времени с этим парнем.")
+		saynn("Приятно хоть раз не подвергаться насилию или издевательствам. Лео болтает с вами, а вы в основном просто молчите.")
 		sayLeoLine()
-		saynn("Eventually, he gets up and leaves.")
+		saynn("В конце концов, он встает и уходит.")
 		addStamina(30)
 		addObedience(1)
 	
@@ -3140,30 +3140,30 @@ func eCowSeesTreat_state():
 	addChar(C_COW)
 	playAnimation(StageScene.Beg, "beg", {pc=C_COW, npc=C_PC})
 
-	saynn("Milka hops around.. before stopping near you and sniffing the air.")
+	saynn("Милка прыгает вокруг... прежде чем остановиться рядом с вами и принюхаться к воздуху.")
 	talk(C_COW, RNG.pick([
 		"You have a treat? Can I have?? Pretty please-e-e-e-e!",
 		"Treat? Please?.. I love treats..",
 		"I sniff a treat on you! Since you haven't eaten it yet.. maybe I can..",
 		"Treat?..",
 	]))
-	saynn("She gets on her knees before you.. her puppy eyes looking up at you.")
+	saynn("Она опускается перед тобой на колени... и смотрит на тебя взглядом преданного щенка.")
 	
 	addAction("Give treat", "Give Milka a treat", "give")
 	addAction("No", "You'd rather save it", "noGive")
 
 func eCowSeesTreat_do(_id:String, _args:Array):
 	if(_id == "noGive"):
-		saynn("You deny Milka.")
+		saynn("Ты отказываешь Милке.")
 		talk(C_COW, "Aww..")
-		saynn("She tries to hide it.. but she is certainly sad.")
+		saynn("Она пытается это скрыть... но ей явно грустно.")
 		addCowTrust(-3)
 	
 	if(_id == "give"):
 		playAnimation(StageScene.Beg, "pat", {pc=C_COW, npc=C_PC})
-		saynn("How can you say no? You feed Milka the treat and give her a pat.")
+		saynn("Как тут можно сказать «нет»? Ты даешь Милке лакомство и ласково гладишь её.")
 		addTreat(-1)
-		saynn("Milka happily noms the treat and eagerly nuzzles your hand!")
+		saynn("Милка счастливо уплетает угощение и с восторгом прижимается носом к твоей руке!")
 		talk(C_COW, RNG.pick([
 			"Thank you, thank you, thank-youuuuu!",
 			"It tasted SO GOOD!",
@@ -3179,12 +3179,12 @@ func eBullSeesTreat_state():
 	addChar(C_BULL)
 	playAnimation(StageScene.Duo, "stand", {pc=C_PC, npc=C_BULL})
 
-	saynn("Pip slowly approaches you, his head lowered.")
+	saynn("Пип медленно подходит к тебе, низко опустив голову.")
 	talk(C_BULL, RNG.pick([
 		"I'm gonna be honest.. I'm hungry as fuck.. I don't wanna eat that stupid grass.. Do you maybe have something?",
 		"I'm sorry for asking.. but do you maybe have something to eat? I hate the grass, man.. I hate it so much..",
 	]))
-	saynn("He looks desperate.")
+	saynn("Он выглядит отчаявшимся.")
 	
 	addAction("Give treat", "Give Pip a treat", "give")
 	addAction("No", "You'd rather save it", "noGive")
@@ -3192,18 +3192,18 @@ func eBullSeesTreat_state():
 
 func eBullSeesTreat_do(_id:String, _args:Array):
 	if(_id == "noGive"):
-		saynn("You deny Pip.")
+		saynn("Ты отказываешь Пипу.")
 		talk(C_BULL, RNG.pick([
 			"Shit.. fine..",
 			"I saw that you had a treat.. but it's okay.. shit..",
 			]))
-		saynn("He heads towards the grass field.")
+		saynn("Он направляется к травяному полю.")
 		addBullTrust(-2)
 	if(_id == "give"):
 		playAnimation(StageScene.Duo, "stand", {pc=C_PC, npc=C_BULL})
-		saynn("You have a spare treat so you decide to give him one.")
+		saynn("У тебя завалялось лишнее лакомство, и ты решаешь угостить его.")
 		addTreat(-1)
-		saynn("Pip grabs it and savours it, making sure to lick it from all sides.. before digging his teeth in.")
+		saynn("Пип хватает его и смакует, старательно облизывая со всех сторон... прежде чем вонзить в него зубы.")
 		talk(C_BULL, RNG.pick([
 			"Shit, that tastes too good.. Thank you, friend.",
 			"Fuck me that tastes good.. Thank you.",
@@ -3213,18 +3213,18 @@ func eBullSeesTreat_do(_id:String, _args:Array):
 	if(_id == "eatAss"):
 		playAnimation(StageScene.SexRimming, "fast", {pc=C_PC, npc=C_BULL, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		talk(C_PC, "My ass is a good treat, you know.")
-		saynn("He shrugs.")
+		saynn("Он пожимает плечами.")
 		talk(C_BULL, "Sure.")
-		saynn("You give him a confused look.. but he just commits to it, kneeling behind you and digging his face into your ass, dragging his long muscly tongue along the flesh of your {pc.analStretch} star..")
-		saynn("Oh shit.. he slips his tongue inside, eating you out.. your whole body shivering..")
+		saynn("Ты смотришь на него в замешательстве... но он лишь упрямо продолжает, опускаясь на колени позади тебя и утыкаясь лицом в твою задницу, проводя длинным мускулистым языком по плоти твоей {pc.analStretch} звезды...")
+		saynn("О черт... он просовывает язык внутрь, вылизывая тебя... всё твоё тело пробирает дрожь...")
 		if(GM.pc.isWearingChastityCage()):
-			saynn("Your locked cock is pulsing in its cage.. your prostate is tingling from being stimulated..")
+			saynn("Твой запертый член пульсирует в клетке... простата покалывает от стимуляции...")
 		elif(GM.pc.hasReachablePenis()):
-			saynn("Your cock is pulsing, dripping pre.. your prostate is tingling from being stimulated..")
+			saynn("Твой член пульсирует, сочась предэякулятом... простата покалывает от стимуляции...")
 		elif(GM.pc.hasReachableVagina()):
-			saynn("Your pussy is pulsing subtly, dripping juices..")
-		saynn("Soft moans escape your lips while the guy is servicing you so thoroughly..")
-		saynn("When he is done.. you're left trembling. Pip gets up and prepares to leave.")
+			saynn("Твоя киска едва заметно пульсирует, источая соки...")
+		saynn("Тихие стоны срываются с твоих губ, пока парень так тщательно тебя обслуживает...")
+		saynn("Когда он заканчивает... ты остаешься дрожать. Пип встает и готовится уходить.")
 		talk(C_PC, "Wait, want the treat?")
 		talk(C_BULL, "Uh.. I guess I'm good now. Thanks.")
 		addBullTrust(1)
@@ -3250,9 +3250,9 @@ func eRandomStuff_state():
 		talk(C_BULL, "Can I ask something? Do you even understand that you're a slave?")
 		talk(C_COW, "Moo? I'm a cow.. Cows can't be slaves..")
 		talk(C_BULL, "You have a collar around your neck.")
-		saynn("Milka tries to look down at her neck.")
+		saynn("Милка пытается взглянуть на свою шею.")
 		talk(C_COW, "Do I? Maybe I'm also a puppy then? A cowpup! Awoof-moo!")
-		saynn("The guy sighs and just leaves her be.")
+		saynn("Парень вздыхает и просто оставляет её в покое.")
 	if(theEvent == "milkapip2"):
 		addChar(C_COW)
 		addChar(C_BULL)
@@ -3260,11 +3260,11 @@ func eRandomStuff_state():
 		
 		talk(C_COW, "Hope you're doing well, Pip!")
 		talk(C_BULL, "I guess. Why are you asking? What do you want?")
-		saynn("Milka blinks.")
+		saynn("Милка моргает.")
 		talk(C_COW, "Um.. I don't know.. uh.. I'm sorry..")
-		saynn("Pip sighs.")
+		saynn("Пип вздыхает.")
 		talk(C_BULL, "It's okay, Milka.. It's okay. Thank you, hope you're well too.")
-		saynn("Milka brightens up and gives the stud a quick nuzzle before running away.")
+		saynn("Милка просияла, быстро ткнулась носом в красавца и убежала.")
 	if(theEvent == "milkapip3"):
 		addChar(C_COW)
 		addChar(C_BULL)
@@ -3272,12 +3272,12 @@ func eRandomStuff_state():
 		
 		talk(C_COW, "Pip, do bulls like carrots?")
 		talk(C_BULL, "That's.. rabbits. I'm also a horse, not a bull.")
-		saynn("Milka tilts her head in confusion, her ears flopping a little.")
+		saynn("Милка в замешательстве наклоняет голову, и её ушки забавно хлопают.")
 		talk(C_COW, "Oh. What about sugar cubes then?")
 		talk(C_BULL, "I'd eat one, sure.")
-		saynn("She gasps.")
+		saynn("Она ахает.")
 		talk(C_COW, "Horses eat sugar cubes?! I want to be a horse too! Neigh-moo!")
-		saynn("Pip just closes his eyes and sighs, trying not to smile.")
+		saynn("Пип просто закрывает глаза и вздыхает, стараясь не улыбнуться.")
 	if(theEvent == "milkapip4"):
 		addChar(C_COW)
 		addChar(C_BULL)
@@ -3285,21 +3285,21 @@ func eRandomStuff_state():
 		
 		talk(C_COW, "You look sad, Pip. Want me to share my milk with you?")
 		talk(C_BULL, "That’s.. not really something I drink.")
-		saynn("Milka tilts her head, then shrugs.")
+		saynn("Милка наклоняет голову, а затем пожимает плечами.")
 		talk(C_COW, "More for me then!")
-		saynn("She cups her own breasts and giggles while Pip mutters something under his breath and looks away.")
+		saynn("Она обхватывает свои груди руками и хихикает, пока Пип что-то бормочет себе под нос и отводит взгляд.")
 	if(theEvent == "milkapip5"):
 		addChar(C_COW)
 		addChar(C_BULL)
 		playAnimation(StageScene.Duo, "stand", {pc=C_COW, npc=C_BULL})
 		
-		saynn("Milka walks up to Pip holding a tiny flower between her fingers.")
+		saynn("Милка подходит к Пипу, сжимая в пальцах крошечный цветок.")
 		talk(C_COW, "For you!")
 		talk(C_BULL, "Where did you even get this?")
 		talk(C_COW, "Found it growing near the wall! It was lonely, so now it’s yours.")
-		saynn("Pip hesitates before taking it, clearly unsure how to react.")
+		saynn("Пип колеблется, прежде чем взять его, явно не зная, как реагировать.")
 		talk(C_BULL, "..Thanks, Milka.")
-		saynn("Milka helps tie it to Pip's ear.")
+		saynn("Милка помогает привязать это к уху Пипа.")
 		talk(C_COW, "Yay! Now you’re a fancy bull!")
 	if(theEvent == "milkapip6"):
 		addChar(C_COW)
@@ -3307,31 +3307,31 @@ func eRandomStuff_state():
 		playAnimation(StageScene.Duo, "stand", {pc=C_COW, npc=C_BULL})
 		
 		if(!cageRemoved):
-			saynn("Milka is crouched in front of Pip, staring at his chastity cage.")
+			saynn("Милка сидит на корточках перед Пипом, не отрывая взгляда от его девственной клетки.")
 			talk(C_BULL, "What are you doing?")
 			talk(C_COW, "What is that?")
-			saynn("Pip sighs.")
+			saynn("Пип вздыхает.")
 			talk(C_BULL, "Chastity cage. I can't breed anyone with it on.")
-			saynn("Milka gasps.")
+			saynn("Милка ахает.")
 			talk(C_COW, "But what kind of bull are you if you can't breed?! How are you gonna breed me?!")
 			talk(C_BULL, "I'm not a bull, okay? I'm a stud! These stupid owners bought me and are using me as a bull.")
-			saynn("Milka squints.")
+			saynn("Милка прищуривается.")
 			talk(C_COW, "Things just don't add up, you're right. You're not a bull.")
-			saynn("Pip shrugs.")
+			saynn("Пип пожимает плечами.")
 			talk(C_COW, "And you're not a stud also.. Maybe you're a cow, like me! Can you moo? Moo~.")
-			saynn("Pip sighs again.")
+			saynn("Пип снова вздыхает.")
 		else:
-			saynn("Milka is crouched in front of Pip, staring at his horsecock.")
+			saynn("Милка сидит на корточках перед Пипом, уставившись на его лошачий член.")
 			talk(C_BULL, "What are you doing?")
 			talk(C_COW, "Where is your thingie?")
 			talk(C_BULL, "T.. Thingie?")
-			saynn("Milka tilts her head.")
+			saynn("Милка наклоняет голову набок.")
 			talk(C_COW, "You know.. a metal thingie.")
 			talk(C_BULL, "Chastity cage. Our friend here helped me break it.")
-			saynn("He nods towards you.")
+			saynn("Он кивает в твою сторону.")
 			talk(C_COW, "OHH! Means you can breed now?!")
 			talk(C_BULL, "I guess.")
-			saynn("Milka smiles.")
+			saynn("Милка улыбается.")
 	if(theEvent == "milkapip7"):
 		addChar(C_COW)
 		addChar(C_BULL)
@@ -3341,11 +3341,11 @@ func eRandomStuff_state():
 		talk(C_BULL, "No.")
 		talk(C_COW, "Are you sure?")
 		talk(C_BULL, "Very.")
-		saynn("Milka leans in close to his chest and closes her eyes.")
+		saynn("Милка прижимается к его груди и закрывает глаза.")
 		talk(C_COW, "Hmm.. nope. No purring. You’re a broken bull.")
 		talk(C_BULL, "..I feel broken, yeah.")
 		talk(C_COW, "I still like you..")
-		saynn("Milka pats him gently, then skips away.")
+		saynn("Милка нежно похлопывает его, а затем убегает вприпрыжку.")
 
 	addContinue("setState", ["main"])
 
@@ -3355,7 +3355,7 @@ func eHelpCage_state():
 	playAnimation(StageScene.TFLook, "crotch", {pc=C_BULL})
 	aimCamera(L_BULL)
 	
-	saynn("Pip is tugging on his chastity cage, trying to slide it off.. but only pinching his balls in the process.")
+	saynn("Пип дергает за свою девственницкую клетку, пытаясь снять её... но в процессе лишь сильнее сдавливает яйца.")
 	talk(C_BULL, "Ah, fuck.. God dammit.")
 	
 	addAction("Ignore", "Let him stay caged", "setState", ["main"])
@@ -3365,7 +3365,7 @@ func eHelpCage_state():
 
 func eHelpCage_do(_id:String, _args:Array):
 	if(_id == "doHelp"):
-		saynn("You decide to help him.")
+		saynn("Вы решаете помочь ему.")
 		talk(C_BULL, "Oh.. sure, you can try.")
 		playAnimation(StageScene.ChairOral, "rub", {pc="pspip", npc="pc"})
 		
@@ -3384,27 +3384,27 @@ func eHelpCage_do(_id:String, _args:Array):
 		sayPipLine()
 
 		if(cageDamage < 0.35):
-			saynn("Not much has changed. You have to keep trying.")
+			saynn("Почти ничего не изменилось. Нужно продолжать попытки.")
 		elif(cageDamage < 0.7):
-			saynn("The cage is giving way, you can feel it. There is more and more wiggle room after each try.")
+			saynn("Клетка поддается, ты это чувствуешь. С каждой попыткой она все сильнее шатается.")
 		else:
-			saynn("It feels like the cage will snap soon. You're almost there.")
+			saynn("Кажется, клетка вот-вот лопнет. Ты уже почти у цели.")
 	if(_id == "doBully"):
 		playAnimation(StageScene.SexFaceSitting, "sit", {pc=C_PC, npc=C_BULL, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Instead of helping him, you decide to tease him for his chastity.")
+		saynn("Вместо того чтобы помочь, вы решаете подразнить его за то, что он в клетке.")
 		if(GM.pc.hasPenis()):
-			saynn("You pin him down to the floor and sit on his face, your balls rest on his forehead"+(", your pussy coats his snout and cheeks with your juices" if GM.pc.hasReachableVagina() else "")+"!")
+			saynn("Вы прижимаете его к полу и садитесь ему на лицо, так что ваши яйца покоятся на его лбу."+(", your pussy coats his snout and cheeks with your juices" if GM.pc.hasReachableVagina() else "")+"!")
 		elif(GM.pc.hasReachableVagina()):
-			saynn("You pin him down to the floor and sit on his face, your pussy coats his snout and cheeks with your juices!")
+			saynn("Вы прижимаете его к полу и садитесь ему на лицо, так что ваша киска заливает его морду и щеки соками!")
 		else:
-			saynn("You pin him down to the floor and sit on his face, your crotch rubbing against his snout!")
+			saynn("Вы прижимаете его к полу и садитесь ему на лицо, вжимая промежность прямо в его морду!")
 		talk(C_PC, RNG.pick([
 			"Do you really need your cock? You're doing fine as is. Grade S buttslut.",
 			"Bet you forgot what your own cock feels like. Doesn’t matter though, does it? Your ass does all the work.",
 			"Such a pretty little femboy, all caged up. I almost feel bad.. almost.",
 			"Silly stud, I thought you'd get used to being a fucktoy by now.",
 		]))
-		saynn("His face is blushing softly.. but he is trying to push you off.")
+		saynn("Его лицо слегка краснеет... но он пытается оттолкнуть вас.")
 		talk(C_BULL, RNG.pick([
 			"I'm a stud..",
 			"I'm not a slut..",
@@ -3421,25 +3421,25 @@ func pEventBullyByGirl_state():
 	aimCamera(L_CENTER)
 	playAnimation(StageScene.Duo, "hurt", {npc=C_GIRL, npcAction="shove"})
 	
-	saynn("Sofie hands the fancy wolf his order.. and then rushes to you.")
-	saynn("You can't even make a few steps back before she is already near you, grabbing you by the collar and shoving you back.")
+	saynn("Софи отдает заказ шикарному волку... а затем спешит к вам.")
+	saynn("Ты не успеваешь сделать и пары шагов назад, как она уже рядом — хватает тебя за воротник и грубо толкает обратно.")
 	talk(C_GIRL, "WHY ARE YOU SO STUPID? ARGH!")
-	saynn("Wow.. what an angry bitch.")
+	saynn("Ого... ну и злющая сучка.")
 	talk(C_GIRL, "I WILL CUT YOUR LEGS OFF IF I HAVE TO. HEAR ME?")
-	saynn("The other owner joins her.")
+	saynn("К ней присоединяется второй владелец.")
 	talk(C_GUY, "What's wrong, sweetheart?")
-	saynn("She grabs him and shoves him back too.")
+	saynn("Она хватает и его, тоже толкая назад.")
 	talk(C_GIRL, "WHAT'S WRONG? We're almost got caught with FUCKING SLAVES in our basement, that's what! It's all your fault!")
-	saynn("The guy lowers his head slightly.. and carefully approaches his partner, gently embracing.")
+	saynn("Парень слегка опускает голову... и осторожно подходит к своей партнерше, нежно обнимая её.")
 	talk(C_GUY, "But we didn't get caught, did we?")
-	saynn("Sofie slaps his hands away..")
+	saynn("Софи сбрасывает его руки...")
 	talk(C_GIRL, "If you don't look after this bitch, it's only a matter of time. I don't wanna rot in a fucking prison.")
-	saynn("Leo embraces her again, gently nuzzling her cheek.")
+	saynn("Лео снова обнимает её, ласково прижимаясь щекой к её щеке.")
 	talk(C_GUY, "My bad, love. Try to relax, take some rest. If we're gonna be careful, we will be able to pull through. Together.")
-	saynn("Sofie gives you a piercing glare.. but then just sighs.")
+	saynn("Софи пронзает тебя яростным взглядом... но затем просто вздыхает.")
 	talk(C_GIRL, "Fine.. I need a massage.")
-	saynn("Leo lightens up. He grabs Sofie's hand and invites her to follow.")
-	saynn("Interesting.")
+	saynn("Лео расцветает в улыбке. Он берет Софи за руку и приглашает её следовать за собой.")
+	saynn("Интересно.")
 	addContinue("setState", ["main"])
 
 
@@ -3449,14 +3449,14 @@ func ePeekFirstEvent_state():
 	addChar(C_GUY)
 	playAnimation(StageScene.Choking, "idle", {pc=C_GIRL, npc=C_PC})
 	
-	saynn("Before you fall asleep, Sofie storms your cell and pins you against a wall.")
+	saynn("Прежде чем ты успеваешь заснуть, Софи врывается в твою камеру и прижимает тебя к стене.")
 	talk(C_GIRL, "YOU FUCKED US, YOU KNOW THAT? I HOPE YOU'RE FUCKING HAPPY.")
-	saynn("She growls and chokes you slightly.. but then she suddenly pulls her hands away from your neck.")
+	saynn("Она рычит и слегка сдавливает тебе горло... но вдруг резко убирает руки от твоей шеи.")
 	talk(C_GIRL, "And I can't even hurt you. Aghh, I hate you so much.")
-	saynn("Leo walks in, the second owner.")
+	saynn("Входит Лео, второй владелец.")
 	talk(C_GUY, "Sofie? We're closed for the day but someone is still sitting behind the table.")
 	talk(C_GIRL, "Yep. He knows about THIS BITCH.")
-	saynn("The guy's eyes go wide.")
+	saynn("Глаза парня округляются.")
 	talk(C_GUY, "Oh shit.. I saw a holster on his belt. Are we screwed?")
 	talk(C_GIRL, "I don't fucking know. But he said he wants to see {pc.him}.")
 	addContinue("setState", ["ePeekFirstEvent2"])
@@ -3466,13 +3466,13 @@ func ePeekFirstEvent2_state():
 	addChar(C_GIRL)
 	addChar(C_GUY)
 	playAnimation(StageScene.Duo, "stand", {pc=C_PC, npc=C_GIRL, bodyState={leashedBy=C_GIRL}})
-	saynn("Sofie pulls out a leash and clips it to your collar. She then looks you in the eyes.")
+	saynn("Софи достает поводок и пристегивает его к твоему ошейнику. Затем она заглядывает тебе прямо в глаза.")
 	talk(C_GIRL, "No. Funny. Business. You hear me? I really don't wanna turn my cafe into a steakhouse.")
-	saynn("You nod..")
+	saynn("Ты киваешь...")
 	talk(C_GUY, "..it's our cafe, right, sweetheart?")
-	saynn("She growls.")
+	saynn("Она рычит.")
 	talk(C_GIRL, "If we fuck this up, it will be nobody's cafe. C'mon, try to look nice.")
-	saynn("Sofie begins pulling you towards the door..")
+	saynn("Софи начинает тянуть тебя к двери...")
 	addContinue("setState", ["ePeekFirstEvent3"])
 
 func ePeekFirstEvent3_state():
@@ -3481,32 +3481,32 @@ func ePeekFirstEvent3_state():
 	addChar(C_GIRL)
 	addChar(C_GUY)
 	playAnimation(StageScene.Duo, "stand", {pc=C_PC, npc=C_OFFICER, npcAction="sit", bodyState={hard=true}})
-	saynn("You get brought out.. your eyes squint as they struggle to adjust to the bright enviroment.")
-	saynn("The cafe is empty.. It's past its closing hour. All the tables are empty.. except for one.")
-	saynn("A mature wolf is waiting behind it, his eyes are busy reading the menu.")
+	saynn("Тебя выводят наружу... твои глаза жмурятся, пытаясь привыкнуть к яркому свету.")
+	saynn("В кафе пусто... Время закрытия уже прошло. Все столики свободны... за исключением одного.")
+	saynn("За стойкой ждет зрелый волк, его взгляд сосредоточен на чтении меню.")
 	talk(C_GIRL, "There you go, sir. Here is the person that you saw. {pc.He} {pc.isAre} just our..")
-	saynn("Sofie's voice is so much more.. polite.")
+	saynn("Голос Софи звучит гораздо... вежливее.")
 	talk(C_OFFICER, "Thank you.")
-	saynn("Sofie and Leo look at each other, their faces puzzled. You're standing still near the table, arms behind your back.. the atmosphere is quite.. charged.")
+	saynn("Софи и Лео переглядываются с озадаченными лицами. Ты стоишь неподвижно у стола, заложив руки за спину... атмосфера становится весьма... наэлектризованной.")
 	talk(C_OFFICER, "I have a long night shift ahead of me. So.. a cup of coffee would be nice. Maybe a cupcake.")
-	saynn("The two owners exchange confused glances again.. until Sofie shoves her elbow into Leo's side.")
+	saynn("Владельцы снова обмениваются растерянными взглядами... пока Софи не тычет локтем Лео в бок.")
 	talk(C_GUY, "Oh.. of course. I will get right to it, sir.")
-	saynn("Leo rushes towards the counter.. while the officer puts away the menu and switches his attention towards you.. towards your {pc.masc} body.. towards your {pc.breasts}.."+(" towards your {pc.penis}.." if GM.pc.hasPenis() else ""))
+	saynn("Лео спешит к стойке... в то время как офицер убирает меню и переключает внимание на тебя... на твое {pc.masc} тело... на твою {pc.breasts}..."+(" towards your {pc.penis}.." if GM.pc.hasPenis() else ""))
 	talk(C_OFFICER, "I knew there was some secret to this place.. It's a crime.")
 	talk(C_GIRL, "Uh.. it's nothing illegal.. we can explain..")
-	saynn("The officer cuts her off.")
+	saynn("Офицер обрывает её на полуслове.")
 	talk(C_OFFICER, "Your food and coffee have no right to be SO good. Let me tell you, best in the whole galaxy. And I've been in a lot of these space cafes, believe me.")
-	saynn("Sofie doesn't know how to react to such words.. so she just nods.. her hand still holding a leash to your collar.")
+	saynn("Софи не знает, как реагировать на такие слова... поэтому она просто кивает... всё еще сжимая в руке поводок, прикрепленный к твоему ошейнику.")
 	talk(C_OFFICER, "I know that you have your secret.. ingredients. And I don't wanna reveal them to others. That would be extremely rude, wouldn't it?")
 	talk(C_GIRL, "Uh.. y-yeah, it would be.")
-	saynn("The officer nods.")
+	saynn("Офицер кивает.")
 	talk(C_OFFICER, "All I'm asking for is.. some personal dinners. I will pay, of course. I will make it worth it for you.")
-	saynn("Sofie rubs her face with her free hand.. you can see the slight shiver in her limbs.")
+	saynn("Софи трет лицо свободной рукой... можно заметить легкую дрожь в её теле.")
 	talk(C_GIRL, "Of course, sir. That can be arranged.")
 	talk(C_OFFICER, "I don't wanna be push-y. I'm okay with getting the same treatment that everyone else does. I want to ask {pc.his} opinion.")
-	saynn("He grabs the middle of the leash.. and tugs on it slightly, inviting you to come closer to him.")
+	saynn("Он перехватывает поводок посередине... и слегка тянет за него, приглашая тебя подойти ближе.")
 	talk(C_OFFICER, "Do you want to service me?")
-	saynn("Leo finally returns, bringing the officer's order. A cup of coffee and a few cupcakes..")
+	saynn("Лео наконец возвращается с заказом офицера. Чашка кофе и несколько капкейков...")
 	
 	addAction("Agree", "Agree to service the offer", "doAgree")
 	addAction("No", "This is too much", "noAgree")
@@ -3518,34 +3518,34 @@ func ePeekFirstEvent3_do(_id:String, _args:Array):
 		peekState = PEEK_BULLIED_BY_GIRL
 		aimCamera(L_SLEEP)
 		playAnimation(StageScene.Duo, "stand", {npc=C_GIRL})
-		saynn("You decide to deny his offer. Sofie's glare is piercing you..")
+		saynn("Вы решаете отклонить его предложение. Пронзительный взгляд Софи буквально впивается в вас...")
 		talk(C_OFFICER, "That's okay. I understand. I will just stay as a normal client.")
 		talk(C_GIRL, "Okay. Now, if you excuse us..")
-		saynn("The officer nods. Sofie yanks you back into the basement.. into your cell.")
+		saynn("Офицер кивает. Софи рывком тащит вас обратно в подвал... прямиком в вашу камеру.")
 		talk(C_GIRL, "You are SO fucking lucky. I was gonna murder you on the spot. Now sleep.")
-		saynn("She leaves and locks the cell.")
+		saynn("Она уходит и запирает дверь камеры.")
 		addAction("Sleep", "Now it's time to sleep.. for real", "SLEEP")
 	if(_id == "doAgree"):
 		addChar(C_OFFICER)
 		gonnaHavePeekEvent = false
 		playAnimation(StageScene.Duo, "kneel", {npc=C_OFFICER, npcAction="sit", bodyState={hard=true, leashedBy=C_OFFICER}})
-		saynn("Instead of saying anything, you just show your obedience by kneeling near him.")
-		saynn("The officer smiles.. and reaches his hand out to scritch you under the chin.")
+		saynn("Вместо того чтобы что-то сказать, вы просто демонстрируете покорность, опускаясь перед ним на колени.")
+		saynn("Офицер улыбается... и протягивает руку, чтобы почесать вас под подбородком.")
 		talk(C_GIRL, "Do you still.. uh.. need us?")
 		talk(C_OFFICER, "I think I will need one of you.")
-		saynn("Sofie shoves her elbow into his partner side again to make him disappear.")
+		saynn("Софи снова тычет локтем напарнику в бок, заставляя его поскорее исчезнуть.")
 		if(agreeMilk || !GM.pc.hasPenis()):
-			saynn("The officer grabs a cup of freshly brewed coffee and takes a sip.")
+			saynn("Офицер берет чашку свежесваренного кофе и делает глоток.")
 			talk(C_OFFICER, "I think it could use a bit more milk. Fresh milk.")
-			saynn("He places the cup near the edge of the table.. near your chest.")
+			saynn("Он ставит чашку почти у самого края стола... совсем рядом с вашей грудью.")
 			talk(C_GIRL, "Of course, I will fix it right away.")
 			addAction("Fresh milk..", "See what Sofie will do with your breasts", "setState", ["ePeekFirstEventMilk"])
 		else:
-			saynn("The officer grabs a cupcake.. and brings it closer, inspecting.")
+			saynn("Офицер берет капкейк... и подносит его ближе, внимательно разглядывая.")
 			talk(C_OFFICER, "Looks a bit.. dry to me. Could use some more cream. Fresh cream. What do you think?")
-			saynn("He places the cupcake near the edge of the table.. near you.")
+			saynn("Он ставит капкейк на край стола... совсем рядом с тобой.")
 			talk(C_GIRL, "Of course, I will fix it right away.")
-			saynn("Sofie runs away to grab something.. a strapon harness.")
+			saynn("Софи убегает, чтобы схватить кое-что... стрэп-он.")
 			addAction("Fresh cream..", "See what Sofie will do with you", "setState", ["ePeekFirstEventSeed"])
 
 func ePeekFirstEventMilk_state():
@@ -3553,22 +3553,22 @@ func ePeekFirstEventMilk_state():
 	addChar(C_GIRL)
 	playAnimation(StageScene.BreastGroping, "grope", {pc=C_GIRL, npc=C_PC, npcCum=true, npcBodyState={naked=true,hard=true}})
 	GM.pc.milk()
-	saynn("Sofie nods at the officer and gently takes your hand, guiding you closer to the table.")
-	saynn("She positions you near the edge, your {pc.breasts} just beneath the officer’s steaming cup.")
-	saynn("Slowly, Sofie cups your breasts and begins fondling and caressing them.")
-	saynn("Her thumbs press on your nipples, rolling them left and right until you shiver and your buds get all hard and sensitive.")
-	saynn("A drop of creamy {pc.milk} forms at each nipple before trickling down into the officer’s cup.")
-	saynn("Seeing that, Sofie begins milking you, squeezing your breasts in gentle yet firm strokes.. causing the {pc.milk} to squirt straight into the coffee.")
-	saynn("You moan softly, squirming under her touch as waves of pleasure and embarrassment wash over you. The officer can't pull his gaze away from you.")
-	saynn("After some time, the cup receives a nice extra layer of your warm {pc.milk}. The officer nods in approval, lifts the cup, and takes a sip.") 
+	saynn("Софи кивает офицеру и мягко берет тебя за руку, направляя к столу.")
+	saynn("Она усаживает тебя у самого края, так что твои {pc.breasts} оказываются прямо под дымящейся чашкой офицера.")
+	saynn("Медленно Софи обхватывает твои груди ладонями и начинает ласкать и поглаживать их.")
+	saynn("Её большие пальцы надавливают на соски, перекатывая их из стороны в сторону, пока ты не начинаешь дрожать, а твои бугорки не становятся твердыми и сверхчувствительными.")
+	saynn("На каждом соске образуется капля сливочного {pc.milk}, которая затем стекает прямо в чашку офицера.")
+	saynn("Увидев это, Софи начинает доить тебя, сжимая грудь мягкими, но уверенными движениями... отчего {pc.milk} брызжет прямо в кофе.")
+	saynn("Ты тихо стонешь, ерзая под её руками, пока волны удовольствия и смущения накрывают тебя. Офицер не может оторвать от тебя взгляда.")
+	saynn("Спустя некоторое время в чашке образуется аппетитный слой твоего теплого {pc.milk}. Офицер одобрительно кивает, подносит чашку к губам и делает глоток.") 
 	talk(C_OFFICER, "Mmm.. that is perfect.")
-	saynn("Sofie's eyes light up when she hears that.")
+	saynn("Глаза Софи загораются, когда она слышит это.")
 	if(agreeSeed && GM.pc.hasPenis()):
-		saynn("Next, the officer grabs a cupcake.. and brings it closer, inspecting.")
+		saynn("Затем офицер берет капкейк... и подносит его ближе, внимательно осматривая.")
 		talk(C_OFFICER, "Looks a bit.. dry to me. Could use some more cream. What do you think?")
-		saynn("He places the cupcake back.")
+		saynn("Он кладет капкейк обратно.")
 		talk(C_GIRL, "Of course, sir. I will fix it right away.")
-		saynn("Sofie runs away to grab something.. a strapon harness.")
+		saynn("Софи убегает, чтобы схватить кое-что... стрэп-он.")
 		addAction("Fresh cream..", "See what Sofie will do with you", "setState", ["ePeekFirstEventSeed"])
 	else:
 		addContinue("setState", ["ePeekFirstEvent4"])
@@ -3580,39 +3580,39 @@ func ePeekFirstEventSeed_state():
 	playAnimation(StageScene.SexFreeStanding, "fast", {pc=C_GIRL, npc=C_PC, pcCum=true, npcCum=true, bodyState={naked=true,hard=true}, npcBodyState={naked=true,hard=true}})
 	GM.pc.milkSeed()
 	GM.pc.orgasmFrom(C_GIRL)
-	saynn("Sofie secures a strapon harness around her hips, the rubber cock bobbing eagerly at her waist.")
-	saynn("She grabs your wrists and guides them behind your back while pushing on your back, bending you forward, your cock hovering above the cupcake..")
-	saynn("Firmly, she lines her new rubber shaft up with your needy asshole.")
-	saynn("With a strong thrust, Sofie drives the strapon deep into you. You gasp as the tip presses against your pleasure spot.. "+("making your cock go hard instantly." if !GM.pc.isWearingChastityCage() else "making your caged cock attempt to go hard in its prison."))
-	saynn("She begins a slow, deliberate rhythm, each stroke massaging your prostate further and making you squirm.")
+	saynn("Софи затягивает на бедрах ремни страпона, и резиновый член у её талии нетерпеливо подпрыгивает.")
+	saynn("Она хватает тебя за запястья и уводит их за спину, одновременно надавливая тебе на лопатки и заставляя наклониться вперед — так что твой член зависает прямо над капкейком...")
+	saynn("Решительным движением она совмещает свой новый резиновый ствол с твоим жаждущим анусом.")
+	saynn("Мощным толчком Софи вгоняет страпон глубоко в тебя. Ты ахаешь, когда кончик упирается в твою точку удовольствия..."+("making your cock go hard instantly." if !GM.pc.isWearingChastityCage() else "making your caged cock attempt to go hard in its prison."))
+	saynn("Она начинает медленный, размеренный ритм: каждый толчок массирует твою простату всё глубже, заставляя тебя извиваться.")
 	talk(C_PC, "M-mmh.. mmm..")
-	saynn("Pre is dribbling from your member as her toy plunges in and out. The officer is watching you get fucked with great interest.")
-	saynn("Sofie picks up the pace, pounding you nice and hard. Your moans grow louder, echoing in the cafe.")
-	saynn("It doesn't take long until your prostate inflates and becomes stiff. And soon, with a cry of pleasure, you start cumming.. Thick ropes of cream are pulsing out of your dick, landing directly onto the placed cupcake.")
-	saynn("Sofie holds steady, letting your cock add that extra layer on top of the existing frosting.")
-	saynn("When you're done.. the officer leans forward and grabs that cupcake from the table.. before taking a good bite.")
+	saynn("Предэякулят капает с твоего члена, пока её игрушка входит и выходит из тебя. Офицер с огромным интересом наблюдает за тем, как тебя трахают.")
+	saynn("Софи ускоряется, вколачивая страпон в тебя всё сильнее и жестче. Твои стоны становятся громче, эхом разносясь по кафе.")
+	saynn("Вскоре твоя простата раздувается и становится твердой. И вот, с криком наслаждения, ты начинаешь кончать... Густые струи крема пульсируют из твоего члена, попадая прямо на капкейк.")
+	saynn("Софи держит его неподвижно, позволяя твоему члену добавить еще один слой поверх уже имеющейся глазури.")
+	saynn("Когда ты заканчиваешь... офицер наклоняется вперед и хватает капкейк со стола... прежде чем откусить добрый кусок.")
 	talk(C_OFFICER, "Mmm.. that’s rich. Incredible.")
-	saynn("Hearing that makes Sofie smile.. while you're busy panting.. your balls drained.")
+	saynn("Услышав это, Софи улыбается... пока ты тяжело дышишь, чувствуя опустошенность в яичках.")
 	addContinue("setState", ["ePeekFirstEvent4"])
 
 func ePeekFirstEvent4_state():
 	removeStrapon(C_GIRL)
 	playAnimation(StageScene.Duo, "stand", {pc=C_GUY, npc=C_OFFICER, npcAction="sit"})
-	saynn("The officer enjoys the rest of his.. dinner.. sipping the coffee and finishing the cupcake.")
-	saynn("You stand near.. but Sofie and Leo are a few steps away, as to not disturb the meal.")
+	saynn("Офицер наслаждается остатком своего... ужина... потягивая кофе и доедая капкейк.")
+	saynn("Ты стоишь неподалеку... но Софи и Лео держатся на несколько шагов в стороне, чтобы не мешать трапезе.")
 	talk(C_OFFICER, "Alright, I think I can pay now.")
 	extraProfit += 10000
-	saynn("Leo swiftly approaches the table.. the bill in his hands.")
+	saynn("Лео быстро подходит к столу... со счетом в руках.")
 	talk(C_OFFICER, "Would this be enough, perhaps?")
-	saynn("The officer produces a credits chip.. and hands it to the guy. Leo's eyes go wide.")
+	saynn("Офицер достает кредитный чип... и протягивает его парню. Глаза Лео округляются.")
 	talk(C_GUY, "Sir.. this is way too much.")
-	saynn("The officer smiles.")
+	saynn("Офицер улыбается.")
 	talk(C_OFFICER, "The rest is a tip. I really enjoyed the service. I hope we can do this again sometime. Eh?")
-	saynn("Sofie runs up to Leo and whispers into his ear.")
+	saynn("Софи подбегает к Лео и шепчет ему на ухо.")
 	talk(C_GIRL, "..take the fucking chip already and go, don't be stupid.. take the slave too..")
-	saynn("Leo nods to the officer.. and takes your leash.")
+	saynn("Лео кивает офицеру... и берет твой поводок.")
 	talk(C_GUY, "Thank you, sir. We would love to have you here again.")
-	saynn("The officer nods back.. and watches Leo walk you back into the kitchen.")
+	saynn("Офицер кивает в ответ... и наблюдает, как Лео ведет тебя обратно на кухню.")
 	
 	addContinue("setState", ["ePeekFirstEvent5"])
 
@@ -3621,9 +3621,9 @@ func ePeekFirstEvent5_state():
 	addChar(C_GUY)
 	playAnimation(StageScene.Duo, "stand", {npc=C_GUY, bodyState={leashedBy=C_GUY}})
 	
-	saynn("Leo brings you back into your cell. You feel.. quite tired.")
+	saynn("Лео возвращает тебя в камеру. Ты чувствуешь... сильную усталость.")
 	talk(C_GUY, "You did very well. Thank you..")
-	saynn("He removes the leash from your collar.")
+	saynn("Он снимает поводок с твоего ошейника.")
 	talk(C_GUY, "Sleep well.")
 	
 	addAction("Sleep", "Time to sleep!", "SLEEP")
@@ -3631,15 +3631,15 @@ func ePeekFirstEvent5_state():
 
 func ePeekSecondEvent_state():
 	playAnimation(StageScene.Duo, "stand", {npc=C_GIRL, bodyState={leashedBy=C_GIRL}})
-	saynn("You weren't planning to sleep.. and it looks like you were right.")
+	saynn("Ты не планировала спать... и, похоже, была права.")
 
-	saynn("Sofie enters your cell and instantly clips a leash to your collar.")
+	saynn("В камеру входит Софи и тут же пристегивает поводок к твоему ошейнику.")
 
 	talk(C_GIRL, "You're in luck, the guy wants to see you again.")
-	saynn("She pulls you up off of the floor and swipes any dust from your butt. Her free hand catches your chin.")
+	saynn("Она поднимает тебя с пола и смахивает пыль с твоей задницы. Свободной рукой она берет тебя за подбородок.")
 
 	talk(C_GIRL, "If you don't want to be in trouble, you are gonna do everything that he wants you to do. Like a good slut.")
-	saynn("Feels like you won't have much of a choice this time..")
+	saynn("Кажется, на этот раз выбора у тебя будет немного...")
 	addAction("Follow", "See where she brings you", "setState", ["ePeekSecondEvent2"])
 
 func ePeekSecondEvent2_state():
@@ -3650,64 +3650,64 @@ func ePeekSecondEvent2_state():
 	GM.pc.freeMouthDeleteAll()
 	GM.pc.freeHandsDeleteAll()
 	GM.pc.freeArmsDeleteAll()
-	saynn("Sofie brings you out into the seating area of the cafe. The cafe is closed so there is no one around.. except for him that is. The guy is sitting behind his usual table, already eating a cupcake and enjoying his coffee.")
+	saynn("Софи выводит тебя в зал кафе. Кафе уже закрыто, так что вокруг никого нет... кроме него. Парень сидит за своим привычным столиком, уже уплетая капкейк и наслаждаясь кофе.")
 
-	saynn("You kneel near his table.. it feels right for some reason.")
+	saynn("Ты опускаешься на колени возле его стола... почему-то это кажется правильным.")
 
 	talk(C_GIRL, "Your dessert has arrived, sir.")
 	talk(C_OFFICER, "Wonderful.")
-	saynn("Dessert? You don't think anyone ever called you like that..")
+	saynn("Десерт? Не думаешь, что тебя когда-нибудь так называли...")
 
-	saynn("The officer reaches his hand out to cup your chin, the soft touch of his big, manly palm makes something inside you tingle. Let's hope this dessert doesn't start melting down.")
+	saynn("Офицер протягивает руку и берет тебя за подбородок; от мягкого прикосновения его большой мужской ладони внутри всё начинает трепетать. Будем надеяться, что этот десерт не начнет таять слишком быстро.")
 
 	talk(C_OFFICER, "Are they treating you well here?")
-	saynn("He is asking you.. The sudden question makes you lower your eyes. You can just feel Sofie's drilling gaze behind you..")
+	saynn("Он спрашивает тебя... От этого внезапного вопроса ты опускаешь глаза. Ты буквально кожей чувствуешь сверлящий взгляд Софи за спиной...")
 
-	saynn("It takes a while to force a gesture.. but you nod.. slowly.. subtly. Sofie lets out a sigh of relief behind you.")
+	saynn("Требуется время, чтобы заставить себя сделать жест... но ты киваешь... медленно... едва заметно. Софи за твоей спиной облегченно вздыхает.")
 
 	talk(C_OFFICER, "I see. It's just.. would be a shame to see such a treat go to waste.")
 	talk(C_GIRL, "We take good care of {pc.him}.")
-	saynn("The officer nods.. takes a sip of his coffee.. and then carefully unzips his pants, revealing his half-hard member.")
+	saynn("Офицер кивает... делает глоток кофе... а затем осторожно расстегивает ширинку, обнажая свой полуэрегированный член.")
 
-	saynn("Seeing it so close.. makes your mouth watery. Each vein, all the crevices, the pointy tip, the scent.. makes you want to serve.")
+	saynn("Вид его плоти так близко... заставляет рот наполняться слюной. Каждая вена, каждая складка, острое острие, запах... всё это заставляет тебя жаждать служения.")
 	addContinue("setState", ["ePeekSecondEvent3"])
 
 func ePeekSecondEvent3_state():
 	addChar(C_OFFICER)
 	addChar(C_GIRL)
 	playAnimation(StageScene.ChairOral, "stroke", {pc=C_OFFICER, npc=C_PC, bodyState={showPenis=true,hard=true}, npcBodyState={naked=true, hard=true}})
-	saynn("You get under the table.. and position yourself behind his legs.")
+	saynn("Ты ныряешь под стол... и устраиваешься между его ног.")
 
-	saynn("His cock is a magnet.. seeing it makes you grasp it with one hand, your digits wrapping around his shaft.")
+	saynn("Его член — словно магнит... увидев его, ты обхватываешь его рукой, обхватывая ствол пальцами.")
 
-	saynn("The officer doesn't seem to mind your bravery. You get a glimpse of his smile as he just casually continues to have his dinner.")
+	saynn("Похоже, офицера не смущает твоя смелость. Ты замечаешь его мимолетную улыбку, пока он невозмутимо продолжает свой ужин.")
 
-	saynn("Seeing no pushback, you push further yourself, your hand moving along the shiny texture, getting that cock nice and hard, watching from up close how it fills with more and more blood, veins inflating, the pointy tip releasing a first drop of precum.")
+	saynn("Не встретив сопротивления, ты переходишь к делу: твоя рука скользит по блестящей поверхности, заставляя член наливаться твердостью. Ты во все глаза наблюдаешь, как он наполняется кровью, вены вздуваются, а на кончике появляется первая капля предэякулята.")
 
 	talk(C_GIRL, "If you need something, I'm here. Just so you know.")
 	talk(C_OFFICER, "I think all my current needs are satisfied, thank you.")
-	saynn("You keep stroking him off, your hand gliding along his length up and down, his balls tensing up ever so slightly.")
+	saynn("Ты продолжаешь ласкать его, твоя рука скользит вверх и вниз по всей длине, а его яички при этом слегка напрягаются.")
 
-	saynn("While eating his cupcake, some of the crumbs land onto his pants.. but one of the lucky ones ends up directly on his dick, floating in the small pool of his pre.. Makes you want to steal it..")
+	saynn("Пока он ест свой капкейк, несколько крошек падают ему на штаны... но одна из счастливчиков приземляется прямо на его член, плавая в маленькой лужице его предэякулята... Так и хочется её украсть...")
 	addContinue("setState", ["ePeekSecondEvent4"])
 	
 func ePeekSecondEvent4_state():
 	addChar(C_OFFICER)
 	addChar(C_GIRL)
 	playAnimation(StageScene.ChairOral, "suck", {pc=C_OFFICER, npc=C_PC, bodyState={showPenis=true,hard=true}, npcBodyState={naked=true, hard=true}})
-	saynn("You bring your head closer to the tip of that member.. and then.. with a flick of your tongue.. you catch the crumb that is soaked with his slightly-salty precum.")
+	saynn("Ты подносишь голову ближе к самой головке... и затем... быстрым движением языка... слизываешь крошку, пропитанную его слегка солоноватой смазкой.")
 
-	saynn("He notices it.. and purposefully sprinkles a few more of them all around his cock.")
+	saynn("Он замечает это... и намеренно рассыпает еще несколько крошек по всему своему члену.")
 
-	saynn("And so.. rather than going one by one after them.. you just part your lips and let the whole head of his member inside your mouth, your tongue instantly starts the search, gliding along the pulsing surface, coating it with your saliva.")
+	saynn("И тогда... вместо того чтобы охотиться за каждой по отдельности... ты просто приоткрываешь губы и заглатываешь всю головку его члена целиком; твой язык мгновенно начинает поиски, скользя по пульсирующей поверхности и покрывая её своей слюной.")
 
-	saynn("You get more and more of that dick in, the tip already meets with the back of your mouth and gets guided down your tight throat. Before you trigger your gag reflex, you decide to pull away slightly.. before swallowing some of his cock again.")
+	saynn("Член входит всё глубже, головка уже касается задней стенки твоей глотки и направляется вниз по твоему узкому горлу. Прежде чем сработает рвотный рефлекс, ты решаешь слегка отстраниться... а затем снова заглатываешь часть его члена.")
 
-	saynn("Your ears pick up on his quiet growl. Each time your tongue flicks against his sensitive tip, his balls tense up again, his shaft feeding you more of his pre.")
+	saynn("Твои уши улавливают его тихий рык. Каждый раз, когда твой язык касается чувствительной головки, его яички снова напрягаются, а ствол подпитывает тебя всё новой порцией смазки.")
 
 	talk(C_OFFICER, "Actually.. Do you have.. chains.. perhaps?")
 	talk(C_GIRL, "Yes, plenty. Mmh, may I ask why do you need them?")
-	saynn("The officer chuckles softly and finishes his coffee in a few gulps.")
+	saynn("Офицер тихо посмеивается и в несколько глотков допивает свой кофе.")
 
 	talk(C_OFFICER, "I'd like to enjoy my dessert on the table, not under it.")
 	talk(C_GIRL, "Of course, sir.")
@@ -3715,39 +3715,39 @@ func ePeekSecondEvent4_state():
 	
 func ePeekSecondEvent5_state():
 	playAnimation(StageScene.SexOralTable, "tease", {pc=C_OFFICER, npc=C_PC, bodyState={showPenis=true, hard=true}, npcBodyState={naked=true, hard=true}})
-	saynn("Sofie returns with the chains.. and helps to tie you up to the table, your head hanging from the edge.")
+	saynn("Возвращается Софи с цепями... и помогает привязать тебя к столу так, чтобы твоя голова свисала с края.")
 
 	talk(C_OFFICER, "Thank you.")
-	saynn("The officer gets up and approaches you.. his hard cock looming over your face, the tip dripping onto your chin.")
+	saynn("Офицер встает и подходит к тебе... его твердый член нависает прямо над твоим лицом, а головка капает тебе на подбородок.")
 
 	talk(C_OFFICER, "I will try to be careful.")
-	saynn("Slowly, he begins to bury his cock down between your lips, the tip slides past your teeth and brushes against your cushion of a tongue before finding the back of your mouth and curving down your throat.")
+	saynn("Медленно он начинает заталкивать свой член тебе в рот; головка скользит между зубов, задевает твой мягкий язык, а затем пробирается к задней стенке горла, уходя глубоко вниз.")
 
-	saynn("You can feel it stretching you out.. your fist clench as you try to pull your focus away from your gag reflex. Still, eventually it begins to catch up with you, your throat suddenly clenching around his cock, producing wet gagging noises.")
+	saynn("Ты чувствуешь, как он растягивает тебя... твои кулаки сжимаются, пока ты пытаешься отвлечься от рвотного рефлекса. Но в конце концов он берет свое: горло внезапно сжимается вокруг его члена, издавая влажные звуки позывов.")
 
 	talk(C_OFFICER, "Mhh.. that felt good. May I?")
-	saynn("Your fists are still clenched.. but your thumbs perk up..")
+	saynn("Твои кулаки всё еще сжаты... но большие пальцы невольно дергаются...")
 	addContinue("setState", ["ePeekSecondEvent6"])
 
 func ePeekSecondEvent6_state():
 	playAnimation(StageScene.SexOralTable, "suck", {pc=C_OFFICER, npc=C_PC, bodyState={showPenis=true, hard=true}, npcBodyState={naked=true, hard=true}})
-	saynn("The officer proceeds to move his hips, sliding most of his cock out.. before thrusting forward again, stretching your throat further.")
+	saynn("Офицер начинает двигать бедрами, почти полностью вынимая член... а затем снова мощно всаживает его, растягивая твое горло еще сильнее.")
 
-	saynn("His hands land on your neck, getting a feel for that bump that his member is creating while passing by.")
+	saynn("Его ладони ложатся тебе на шею, он прощупывает тот бугорок, который образуется при каждом прохождении его плоти.")
 
-	saynn("You get short glimpses of Sofie. Her mean eyes are silently tracking the main action, making sure you're not completely broken yet.")
+	saynn("Ты мельком видишь Софи. Её злобные глаза молча следят за основным действием, проверяя, не сломлена ли ты окончательно.")
 
-	saynn("You gag and choke on that cock more and more.. and yet.. you can't get enough. Lonely tears stream down your cheeks as your throat is being used for his pleasure. Your whole body wants to squirm.. but the chains keep you still for him.")
+	saynn("Ты всё сильнее давишься и задыхаешься от этого члена... и всё же... тебе всё мало. Одинокие слезы текут по твоим щекам, пока твое горло служит для его удовольствия. Всё твое тело хочет извиваться... но цепи удерживают тебя неподвижно ради него.")
 
 	talk(C_OFFICER, "Yeah.. such a nice treat. Could use some cream stuffing, huh?")
-	saynn("Yes..")
+	saynn("Да...")
 	addContinue("setState", ["ePeekSecondEvent7"])
 
 func ePeekSecondEvent7_state():
 	playAnimation(StageScene.SexOralTable, "suckfast", {pc=C_OFFICER, npc=C_PC, bodyState={showPenis=true, hard=true}, npcBodyState={naked=true, hard=true}})
-	saynn("He increases his pace, fucking your throat even faster, really testing your limits. When most of the time, your wind pipe is blocked by a giant cock, the air becomes a very limited supply.. your inner walls clench harder around that shaft, making the guy grunt from pleasure.")
+	saynn("Он ускоряется, трахая твое горло еще быстрее, по-настоящему испытывая твои пределы. Поскольку большую часть времени твой трахеальный проход перекрыт гигантским членом, воздуха становится катастрофически мало... твои внутренние стенки сжимаются вокруг ствола еще сильнее, заставляя парня стонать от наслаждения.")
 
-	saynn("You can see his knot inflating.. getting fatter as blood rushes down to his crotch. He makes a few attempts to fit it inside.. but decides against dislocating your jaw.")
+	saynn("Ты видишь, как его узел раздувается... становясь всё толще, пока кровь приливает к его паху. Он делает несколько попыток вогнать его внутрь... но решает не вывихивать тебе челюсть.")
 
 	talk(C_OFFICER, "Hope you are ready..")
 	addContinue("setState", ["ePeekSecondEvent8"])
@@ -3756,44 +3756,44 @@ func ePeekSecondEvent8_state():
 	GM.pc.gotThroatFuckedBy(C_OFFICER)
 	GM.pc.cummedInMouthBy(C_OFFICER)
 	playAnimation(StageScene.SexOralTable, "suckinside", {pc=C_OFFICER, npc=C_PC, bodyState={showPenis=true, hard=true}, npcBodyState={naked=true, hard=true}})
-	saynn("With one last thrust, he shoves most of his length inside, his knot pressing against your lips as his shaft starts to pulse inside your throat.")
+	saynn("Последним мощным толчком он заталкивает почти всю свою длину; его узел упирается тебе в губы, а член начинает пульсировать у тебя в горле.")
 
-	saynn("He throws his head back and growls.. as his cock starts shooting waves of creamy seed down your inner walls, straight into your belly.")
+	saynn("Он запрокидывает голову и рычит... когда его член начинает извергать волны кремовой спермы прямо на твои внутренние стенки, проникая глубоко в живот.")
 
 	talk(C_OFFICER, "Ngh-h..")
-	saynn("While he is busy pumping you full of his spunk, you begin to see darkness creeping in around the corners of your vision, everything is getting blurrier. And yet, you continue to serve, eagerly swallowing everything his cock gives you.")
+	saynn("Пока он занят тем, что наполняет тебя своей кончой, ты начинаешь замечать, как по краям зрения подступает тьма, всё становится всё более размытым. И всё же ты продолжаешь служить, жадно заглатывая всё, что дает тебе его член.")
 	addContinue("setState", ["ePeekSecondEvent9"])
 
 func ePeekSecondEvent9_state():
 	playAnimation(StageScene.SexOralTable, "tease", {pc=C_OFFICER, npc=C_PC, bodyState={showPenis=true, hard=true}, npcBodyState={naked=true, hard=true}})
-	saynn("When the officer is done, he finally pulls out, letting you suddenly breathe again. You cough.. you cough a lot.. hungrily grabbing any piece of air you can get.")
+	saynn("Когда офицер заканчивает, он наконец вынимается, позволяя тебе наконец вздохнуть. Ты кашляешь... кашляешь много... жадно хватая ртом каждый глоток воздуха.")
 
 	talk(C_OFFICER, "What a treat. Could be the best treat in the whole galaxy.")
-	saynn("Sofie approaches you two.")
+	saynn("Софи подходит к вам двоим.")
 
 	talk(C_GIRL, "I'm glad you have enjoyed our offerings.")
-	saynn("He nods.. and hands her a credits chip.")
+	saynn("Он кивает... и протягивает ей кредитный чип.")
 
 	talk(C_OFFICER, "Will this be enough?")
-	saynn("She quickly checks it. There is clearly a big number on it.. and yet.. her lips go narrow.")
+	saynn("Она быстро проверяет его. На нем явно крупная сумма... и всё же... её губы сжимаются в узкую линию.")
 
 	talk(C_GIRL, "Well..")
-	saynn("Without a word extra, the officer just hands a second chip.")
+	saynn("Без лишних слов офицер просто протягивает второй чип.")
 
 	talk(C_OFFICER, "Best treat, like I said.")
-	saynn("Sofie takes the chip and nods.")
+	saynn("Софи берет чип и кивает.")
 
 	talk(C_GIRL, "Thank you. I will wrap everything up.")
-	saynn("The officer nods again.. zips his pants.. and starts heading towards the exit, shooting you a quick glance and a smile when he is at the door.")
+	saynn("Офицер снова кивает.. застегивает ширинку.. и направляется к выходу, бросив на тебя быстрый взгляд и улыбнувшись уже в дверях.")
 	addContinue("setState", ["ePeekSecondEvent10"])
 
 func ePeekSecondEvent10_state():
 	aimCamera(L_SLEEP)
 	playAnimation(StageScene.Duo, "stand", {npc=C_GIRL})
-	saynn("After this dinner, Sofie brings you back into your cell.")
+	saynn("После этого ужина Софи возвращает тебя в камеру.")
 
 	talk(C_GIRL, "Next time, put a little more passion into it. We got bills to pay.")
-	saynn("You don't respond.. just waiting for her to leave.")
+	saynn("Ты не отвечаешь.. просто ждешь, когда она уйдет.")
 	
 	gonnaHavePeekEvent = false
 	addAction("Sleep", "Time to sleep", "SLEEP")
@@ -3803,13 +3803,13 @@ func ePeekSecondEvent10_state():
 
 func ePeekThirdEvent_state():
 	playAnimation(StageScene.Duo, "stand", {npc=C_GIRL, bodyState={leashedBy=C_GIRL}})
-	saynn("You knew that Sofie would come for you after the cafe closes for the night. You were waiting for it.")
+	saynn("Ты знал, что Софи придет за тобой после закрытия кафе. Ты этого ждал.")
 
 	talk(C_GIRL, "C'mon, you know the drill.")
-	saynn("She clips a leash to your collar and tugs on it, inviting you to follow.")
+	saynn("Она пристегивает поводок к твоему ошейнику и тянет за него, приглашая следовать за ней.")
 
 	talk(C_GIRL, "I'm expecting a lot of credits. Got it, slut?")
-	saynn("You nod.. what else are you supposed to do.")
+	saynn("Ты киваешь.. а что еще тебе остается делать?")
 	
 	addContinue("setState", ["ePeekThirdEvent2"])
 
@@ -3818,59 +3818,59 @@ func ePeekThirdEvent2_state():
 	addChar(C_OFFICER)
 	addChar(C_GIRL)
 	playAnimation(StageScene.ChairOral, "tease", {pc=C_OFFICER, npc=C_PC, bodyState={showPenis=true,hard=true}, npcBodyState={naked=true, hard=true}})
-	saynn("You follow the greedy girl out into the seating area and approach the usual table. The wolf is already waiting for you.")
+	saynn("Ты следуешь за этой жадной девчонкой в обеденную зону и подходишь к привычному столику. Волк уже ждет тебя.")
 
-	saynn("Gotta earn those credits.. Without any input, you get down to your knees and get under the table, your hands find the zipper and get the officer's balls and sheath out. After some gentle stroking, the tip of his cock starts to peek out.. and then the rest of his shaft follows from you nuzzling it.")
+	saynn("Кредиты сами себя не заработают.. Не дожидаясь команд, ты опускаешься на колени и забираешься под стол; твои руки находят молнию и извлекают яички и кожаный чехол офицера. После нескольких нежных поглаживаний кончик его члена начинает показываться наружу.. а затем, благодаря твоим ласкам, из него выходит и остальная часть ствола.")
 
 	talk(C_OFFICER, "I thought I'm the hungry one here. Hah.")
-	saynn("Sofie puts on a polite smile, her free hand is now holding a menu.")
+	saynn("Софи вежливо улыбается, держа в свободной руке меню.")
 
 	talk(C_GIRL, "Would you like to order something, sir?")
 	talk(C_OFFICER, "You know.. I'm pretty hungry tonight. I could go for a whole cake. Or a pie.")
-	saynn("Sofie raises a brow and clears her throat.")
+	saynn("Софи приподнимает бровь и откашливается.")
 
 	talk(C_GIRL, "Hm.. we would have to check if we still have some left.")
-	saynn("While you're busy getting his cock hard with your tongue, he reaches under the table to pat you.")
+	saynn("Пока ты усердно ласкаешь его член языком, он запускает руку под стол, чтобы похлопать тебя.")
 
 	talk(C_OFFICER, "No worries. I already have everything I need.")
-	saynn("His smile.. he is about to do something.")
+	saynn("Его улыбка... кажется, он задумал что-то эдакое.")
 
 	addContinue("setState", ["ePeekThirdEvent3"])
 
 func ePeekThirdEvent3_state():
 	addChar(C_OFFICER)
 	playAnimation(StageScene.SexOverTable, "tease", {pc=C_OFFICER, npc=C_PC, bodyState={showPenis=true, hard=true}, npcBodyState={naked=true, hard=true}})
-	saynn("The officer grabs the leash and invites you to get from under the table.. before placing you on top of it, your body bent forward, your {pc.thick} ass sticking out.")
+	saynn("Офицер хватает поводок и манит тебя вылезти из-под стола... а затем заставляет встать на него лицом вниз, так что твой {pc.thick} зад торчит во все стороны.")
 
-	saynn("He rests his hard cock on top of your buns and gently slides back and forth.")
+	saynn("Он кладет свой твердый член на твои ягодицы и начинает медленно водить им вперед-назад.")
 
 	talk(C_OFFICER, "What a treat, no reason to keep you on the dirty floor. Right?")
-	saynn("You look back over your shoulder.. and see his smile.. as well as Sofie's strict eyes. You nod..")
+	saynn("Ты оглядываешься через плечо... и видишь его улыбку... а также строгий взгляд Софи. Ты киваешь...")
 
-	saynn("The officer brushes the tip of his member over your "+str("holes.. your pussy and tailhole" if GM.pc.hasReachableVagina() else "{pc.anusStretch} tailhole")+".. his pre dripping onto your sensitive flesh. "+str("He ends up guiding his cock down to your needy slit, the tip pressing against the folds.. before spreading them wide." if GM.pc.hasReachableVagina() else "He takes some time teasing you before guiding his cock down to your needy star, the tip pressing against it.. before spreading it slightly.")+"")
+	saynn("Офицер проводит кончиком своего члена по твоей "+str("holes.. your pussy and tailhole" if GM.pc.hasReachableVagina() else "{pc.anusStretch} tailhole")+".. его предэякулят капает на твою чувствительную плоть. "+str("He ends up guiding his cock down to your needy slit, the tip pressing against the folds.. before spreading them wide." if GM.pc.hasReachableVagina() else "He takes some time teasing you before guiding his cock down to your needy star, the tip pressing against it.. before spreading it slightly.")+"")
 
 	addContinue("setState", ["ePeekThirdEvent4"])
 
 func ePeekThirdEvent4_state():
 	addChar(C_OFFICER)
 	playAnimation(StageScene.SexOverTable, "sex", {pc=C_OFFICER, npc=C_PC, bodyState={showPenis=true, hard=true}, npcBodyState={naked=true, hard=true}})
-	saynn("With a firm thrust, he slides into your "+str("velvet" if GM.pc.hasReachableVagina() else "inviting")+" warmth. Inch by inch, his member is exploring your wet inner walls, getting deeper each time.")
+	saynn("Резким толчком он входит в твою "+str("velvet" if GM.pc.hasReachableVagina() else "inviting")+" теплоту. Дюйм за дюймом его член исследует твои влажные внутренние стенки, с каждым разом проникая всё глубже.")
 
 	talk(C_OFFICER, "That's it.. Take it all.")
-	saynn("He sets a slow.. but extremely pleasurable rhythm, each pump sending you further into a mindset of a submissive sex toy.. Little moans escape your mouth while you're getting fucked over the table, your hands holding onto the edges.")
+	saynn("Он задает медленный... но невероятно приятный ритм, и каждый толчок погружает тебя всё глубже в состояние покорной секс-игрушки... Сквозь губы вырываются тихие стоны, пока тебя трахают прямо на столе, а твои руки судорожно вцепились в его края.")
 
 	addContinue("setState", ["ePeekThirdEvent5"])
 
 func ePeekThirdEvent5_state():
 	addChar(C_OFFICER)
 	playAnimation(StageScene.SexOverTable, "fast", {pc=C_OFFICER, npc=C_PC, bodyState={showPenis=true, hard=true}, npcBodyState={naked=true, hard=true}})
-	saynn("It feels good.. for both, you and him. Feeling that your "+str("{pc.pussyStretch} pussy" if GM.pc.hasReachableVagina() else "{pc.analStretch} ass")+" is handling his cock nicely, the guy speeds his pace up, thrusting deeper and harder.")
+	saynn("Это приятно... обоим: и тебе, и ему. Чувствуя, как твоя "+str("{pc.pussyStretch} pussy" if GM.pc.hasReachableVagina() else "{pc.analStretch} ass")+" отлично справляется с его членом, парень ускоряется, всаживаясь всё глубже и сильнее.")
 
 	talk(C_PC, "Ah.. ah..")
 	talk(C_OFFICER, "Such a nice pussy." if GM.pc.hasReachableVagina() else "Such a nice ass.")
-	saynn("Hearing that.. makes your inner muscles clench, your slick walls hugging his shaft tightly as he keeps fucking you, pushing through the friction.")
+	saynn("От этого звука твои внутренние мышцы сжимаются, а влажные стенки плотно обхватывают его ствол, пока он продолжает трахать тебя, преодолевая трение.")
 
-	saynn("You won't be able to endure that for very long.. you're about to cum.")
+	saynn("Ты вряд ли сможешь долго это терпеть... ты вот-вот кончишь.")
 
 	addContinue("setState", ["ePeekThirdEvent6"])
 
@@ -3884,21 +3884,21 @@ func ePeekThirdEvent6_state():
 		GM.pc.gotAnusFuckedBy(C_OFFICER)
 		GM.pc.cummedInAnusBy(C_OFFICER)
 	GM.pc.orgasmFrom(C_OFFICER)
-	saynn("You feel the base of his cock swell as the knot engorges with blood. Without warning, he pins you harder against the table.. and then shoves his entire length in one powerful thrust.. knot and all.. filling you completely.")
+	saynn("Ты чувствуешь, как основание его члена раздувается — узел наполняется кровью. Без предупреждения он сильнее прижимает тебя к столу... а затем одним мощным толчком вгоняет в тебя всю свою длину... вместе с узлом... заполняя тебя до краев.")
 
 	talk(C_OFFICER, "Grrhh..")
 	talk(C_PC, "Ahhh-h!..")
-	saynn("Warm seed floods your "+str("womb" if GM.pc.hasReachableVagina() else "butt")+" in thick waves, the table shaking from your body squirming, unable to contain this amount of cock.. You cum soon after, your "+str("pussy" if GM.pc.hasReachableVagina() else "tailhole")+" pulsing and clenching around his throbbing knot, milking every drop of his hot cum.")
+	saynn("Теплое семя густыми волнами заливает твою "+str("womb" if GM.pc.hasReachableVagina() else "butt")+"стол содрогается от того, как твое тело извивается, не в силах вместить в себя такой объем... Вскоре ты кончаешь, и твоя "+str("pussy" if GM.pc.hasReachableVagina() else "tailhole")+" пульсирует и сжимается вокруг его пульсирующего узла, высасывая каждую каплю его горячей спермы.")
 
-	saynn("There is too much stimulation.. your eyes keep rolling up as your loud moans echo around the empty cafe.. "+str("Your pussy squirts from your g-spot getting smashed by his fat orb" if GM.pc.hasReachableVagina() else "")+""+str("Your {pc.penis} squirts with {pc.cum} from your prostate getting smashed by his fat orb" if (!GM.pc.hasReachableVagina() && GM.pc.hasPenis()) else "")+""+str("Your tailhole keeps pusling" if (!GM.pc.hasReachableVagina() && !GM.pc.hasPenis()) else "")+", your legs are shaking wildly while the wolf behind you keeps breeding you, his balls emptying up inside you.")
+	saynn("Стимуляция слишком сильная... твои глаза закатываются, а громкие стоны эхом разносятся по пустому кафе..."+str("Your pussy squirts from your g-spot getting smashed by his fat orb" if GM.pc.hasReachableVagina() else "")+""+str("Your {pc.penis} squirts with {pc.cum} from your prostate getting smashed by his fat orb" if (!GM.pc.hasReachableVagina() && GM.pc.hasPenis()) else "")+""+str("Your tailhole keeps pusling" if (!GM.pc.hasReachableVagina() && !GM.pc.hasPenis()) else "")+", твои ноги дико дрожат, пока волк позади продолжает осеменять тебя, опустошая свои яйца прямо внутри тебя.")
 
-	saynn("When that's done, the two of you tremble on top of the table.. both completely spent.")
+	saynn("Когда всё заканчивается, вы оба дрожите на столе... оба совершенно измотанные.")
 
 	talk(C_OFFICER, "That.. I really needed that.")
-	saynn("While you're still squirming from having his full length inside you, Sofie approaches you two.")
+	saynn("Пока ты всё ещё корчишься от ощущения его полной длины внутри тебя, Софи подходит к вам двоим.")
 
 	talk(C_GIRL, "I hope you have been satisfied with our selection.")
-	saynn("He chuckles.")
+	saynn("Он усмехается.")
 
 	talk(C_OFFICER, "I'm still very much hungry, miss.")
 	
@@ -3907,16 +3907,16 @@ func ePeekThirdEvent6_state():
 func ePeekThirdEvent7_state():
 	addChar(C_OFFICER)
 	playAnimation(StageScene.SexOverTable, "lick", {pc=C_OFFICER, npc=C_PC, bodyState={showPenis=true, hard=true}, npcBodyState={naked=true, hard=true}})
-	saynn("He yanks his knot out of your "+str("pussy" if GM.pc.hasReachableVagina() else "ass")+".. before getting down to his knees and shoving his face into your "+str("crotch" if GM.pc.hasReachableVagina() else "butt")+".")
+	saynn("Он вырывает свой узел из твоей "+str("pussy" if GM.pc.hasReachableVagina() else "ass")+".. прежде чем опуститься на колени и уткнуться лицом в твою "+str("crotch" if GM.pc.hasReachableVagina() else "butt")+".")
 
-	saynn("The wolf.. he starts eating you out.. you can feel his powerful tongue slide over your "+str("folds" if GM.pc.hasReachableVagina() else "tailhole")+".. before penetrating the creamed hole and proceeding to lap away at the inner wall.")
+	saynn("Волк... он начинает ласкать тебя языком... ты чувствуешь, как его мощный язык скользит по твоей "+str("folds" if GM.pc.hasReachableVagina() else "tailhole")+".. прежде чем проникнуть в залитое кремом отверстие и приняться вылизывать внутренние стенки.")
 
 	talk(C_GIRL, "Of course, sir. Enjoy your.. cake.")
-	saynn("And so he does, licking you out from the inside, thrusting his tongue in and out, swallowing your juices.. as well as his own seed. Looks like the guy is not the picky kind..")
+	saynn("И он так и делает: вылизывает тебя изнутри, вонзая язык туда-сюда, заглатывая твои соки... а заодно и своё семя. Похоже, этот парень не из привередливых...")
 
-	saynn("Getting treated like this.. feels nice.. your soft moans keep him hungry for more. He leaves the cream that's inside you mostly in-tact.. and just finishes by glazing your "+str("folds" if GM.pc.hasReachableVagina() else "star")+" a bit more, dragging his tongue along the contours.")
+	saynn("Такое обращение... это так приятно... твои тихие стоны заставляют его хотеть ещё. Он оставляет крем внутри тебя почти нетронутым... и просто завершает процесс, покрывая твою "+str("folds" if GM.pc.hasReachableVagina() else "star")+" ещё слоем, проводя языком по всем изгибам.")
 
-	saynn("When he is done, he gets up and gently gropes your rear.")
+	saynn("Когда он заканчивает, он поднимается и нежно ласкает твою задницу.")
 
 	talk(C_OFFICER, "So tasty.")
 	
@@ -3926,43 +3926,43 @@ func ePeekThirdEvent8_state():
 	addChar(C_OFFICER)
 	addChar(C_GIRL)
 	playAnimation(StageScene.Duo, "stand", {pc=C_OFFICER, npc=C_GIRL})
-	saynn("The wolf turns towards the girl and starts reaching into his pockets, producing some credit chips.")
+	saynn("Волк поворачивается к девушке и начинает шарить по карманам, доставая кредитные чипы.")
 
-	saynn("But before he hands them to the lady.. he stops. A slight twitch of Sofie's brows is followed by her puffing her lips.")
+	saynn("Но прежде чем протянуть их леди... он замирает. Софи слегка вздрагивает бровями и надувает губы.")
 
 	talk(C_OFFICER, "I'm aware of your cafe's.. situation.")
-	saynn("Sofie tilts her head a bit, slightly worried now.")
+	saynn("Софи слегка наклоняет голову, теперь уже с легким беспокойством.")
 
 	talk(C_GIRL, "What do you mean exactly?")
 	talk(C_OFFICER, "The numerous debts. You did what you did.. to survive. You resorted to using illegal slaves.")
-	saynn("He gives you a quick glance. You're still on the table, panting heavily..")
+	saynn("Он бросает на тебя быстрый взгляд. Ты всё ещё лежишь на столе, тяжело и часто дыша...")
 
-	saynn("Sofie blinks many times.. you can just tell that her heart is now beating faster than yours. Leo approaches the table as well, listening carefully.")
+	saynn("Софи часто моргает... можно буквально почувствовать, что её сердце колотится быстрее твоего. Лео тоже подходит к столу, внимательно прислушиваясь.")
 
 	talk(C_GIRL, "Uh.. there was.. no other choice really.")
 	talk(C_OFFICER, "I ain't planning to blackmail you, don't worry. And you ain't going to jail, not because of me. What I want to do.. is make an offer.")
-	saynn("Leo and Sofie look at each other.")
+	saynn("Лео и Софи переглядываются.")
 
 	talk(C_GUY, "An offer?")
 	talk(C_OFFICER, "I give you enough credits to pay off your debts. A clean slate, a new life. And in exchange..")
-	saynn("His manly hand lands on your back.. and gently strokes it.")
+	saynn("Его мужская рука ложится тебе на спину... и нежно поглаживает её.")
 
 	talk(C_OFFICER, "I get to keep this cutie pie.")
-	saynn("Leo and Sofie look at each other again, their eyes huge. They just can't believe it.")
+	saynn("Лео и Софи снова смотрят друг на друга, их глаза расширены от изумления. Они просто не могут в это поверить.")
 
 	talk(C_GUY, "Oh..")
-	saynn("There is a short silence.. as the gears in the girl's head turn.")
+	saynn("Наступает короткая тишина... пока в голове у девушки крутятся шестеренки мыслей.")
 
 	talk(C_GIRL, "How about.. ten percent on top maybe?.. We will really-really miss this cutie pie.")
 	talk(C_GUY, "Sofie..")
 	talk(C_GIRL, "Tshhh.. shut up..")
-	saynn("Really? Even the wolf is stunned by the haggling attempts.")
+	saynn("Серьезно? Даже волк ошарашен такими попытками поторговаться.")
 
 	talk(C_OFFICER, "I can give five.")
 	talk(C_GIRL, "Deal.")
-	saynn("The officer pulls out a few more colorful credit chips.. makes sure the sum is correct.. and then hands them to Sofie. In exchange, she hands the leash to your collar.")
+	saynn("Офицер достает еще несколько ярких кредитных чипов... проверяет, верно ли посчитана сумма... а затем протягивает их Софи. Взамен она передает поводок, пристегнутый к твоему ошейнику.")
 
-	saynn("After the deal is done, the pair quickly retracts into the kitchen. Only Leo gives you a final goodbye wave of his hand.. before Sofie pulls him out of view.")
+	saynn("Как только сделка завершена, пара быстро скрывается на кухне. Только Лео напоследок машет тебе рукой... прежде чем Софи утягивает его с глаз долой.")
 
 	addContinue("setState", ["ePeekThirdEvent9"])
 
@@ -3970,14 +3970,14 @@ func ePeekThirdEvent9_state():
 	addChar(C_OFFICER)
 	playAnimation(StageScene.Duo, "stand", {npc=C_OFFICER, bodyState={leashedBy=C_OFFICER}})
 	aimCamera(L_DOCKS)
-	saynn("The officer helps you to get up.. and then clips a leash to your collar..")
+	saynn("Офицер помогает тебе подняться... а затем пристегивает поводок к твоему ошейнику...")
 
 	talk(C_OFFICER, "Well.. let's go then.")
-	saynn("You nod and follow the wolf down into the docks. As you look through the window, you see his ship.. it's huge.. barely fitting.")
+	saynn("Ты киваешь и следуешь за волком вниз, к докам. Глянув в окно, ты видишь его корабль... он огромный... едва вписывается в ангар.")
 
-	saynn("Your eyes pick up on the AlphaCorp emblems everywhere. Whoever he is, he must be someone high on the food chain.")
+	saynn("Твой взгляд постоянно натыкается на эмблемы AlphaCorp. Кем бы он ни был, он явно занимает высокое положение в пищевой цепочке.")
 
-	saynn("You approach the docking port. He opens the airlock.. and invites you in. You give the cafe the last glimpse.. before stepping inside.")
+	saynn("Ты подходишь к стыковочному порту. Он открывает шлюз... и приглашает тебя войти. Ты бросаешь последний взгляд на кафе... прежде чем переступить порог.")
 
 	addContinue("ENDING", ["end_officer"])
 
@@ -3988,48 +3988,48 @@ func intro_state():
 	aimCamera(L_DOCKS)
 	GM.pc.setLocation(L_CENTER)
 	playAnimation(StageScene.Solo, "kneel")
-	saynn("You find yourself.. in something that looks like the trunk of the spacetruck. There are a few crates around, most of them locked. You manage to peek into one of them and find.. fruits and vegetables. Weird.")
+	saynn("Ты оказываешься... внутри чего-то, напоминающего грузовой отсек космического грузовика. Вокруг разбросано несколько ящиков, большинство из них заперты. Тебе удается заглянуть в один из них и обнаружить... фрукты и овощи. Странно.")
 
-	saynn("Apart from the cargo.. you're alone in here.")
+	saynn("Помимо груза... ты здесь совсем одна.")
 
-	saynn("The spacetruck is certainly moving.. somewhere. You look around a bit more.")
+	saynn("Космический грузовик определенно куда-то движется... Ты осматриваешься повнимательнее.")
 
-	saynn("There are two ways out of here, in the form of two doors. One of them is wide, designed for unloading stuff.. and certainly leads into outer space. The second one is a small one and probably leads into the cockpit. That one is locked. You hear some voices behind it.. but that's about it.")
+	saynn("Отсюда есть два выхода — две двери. Одна широкая, предназначенная для разгрузки товаров... и ведет прямиком в открытый космос. Вторая — маленькая, скорее всего, ведет в кабину пилота. Она заперта. За ней слышны чьи-то голоса... но больше ничего.")
 
-	saynn("Might as well just wait and see what happens next..")
+	saynn("Пожалуй, стоит просто подождать и посмотреть, что будет дальше...")
 
 	addContinue("setState", ["intro2"])
 
 func intro2_state():
 	playAnimation(StageScene.Duo, "stand", {pc=C_GIRL, npc=C_GUY})
-	saynn("Soon, the spacetruck starts to dock somewhere. After the.. less than smooth.. docking process, the engines finally shut off.")
+	saynn("Вскоре грузовой корабль начинает швартовку. После... не самого плавного... процесса стыковки двигатели наконец глохнут.")
 
-	saynn("Two.. dragons.. enter the cargo space. The girl starts speaking first.")
+	saynn("В грузовой отсек входят... два дракона... Девушка начинает говорить первой.")
 
 	talk(C_GIRL, "You're still alive. Good. Gonna start slow. Here is the deal. In case you haven't noticed it yet, we have bought you.")
-	saynn("Two versus one.. and you're not exactly armed. Who knows how many others are behind the wall as well.")
+	saynn("Двое против одного... а ты, мягко говоря, не вооружен. Кто знает, сколько еще народу может прятаться за стеной.")
 
 	talk(C_GIRL, "Since you are now our property.. you are gonna do exactly what we tell you to do. Otherwise.. Show {pc.him}, Leo.")
 	talk(C_GUY, "Sure.")
-	saynn("The guy pulls out a.. what looks like a collapsable baton.. but with a little fork at the tip. He squeezes the handle.. and a little lightning of electricity spawns between the fork's tines.")
+	saynn("Парень достает... что-то похожее на складную дубинку... но с маленькой вилочкой на конце. Он сжимает рукоять... и между зубцами вилки проскакивают маленькие разряды электричества.")
 
 	talk(C_GUY, "If this touches you, it will hurt.")
-	saynn("Yeah, that seems obvious.")
+	saynn("Ну да, это и так очевидно.")
 
 	talk(C_GIRL, "Now. I'm gonna put a leash on you. Leo?")
 	talk(C_GUY, "I got you.")
 	talk(C_GIRL, "You fucking better.")
-	saynn("The girl.. Sofie.. pulls out a leash and reaches out to clip it to your collar. All the while the guy is ready to strike you at any point.")
+	saynn("Девушка... Софи... достает поводок и тянется, чтобы пристегнуть его к твоему ошейнику. При этом парень готов ударить тебя в любой момент.")
 
-	saynn("You stand still and let them do whatever they have to do.")
+	saynn("Ты стоишь смирно и позволяешь им делать всё, что им нужно.")
 
 	talk(C_GIRL, "Now grab a crate.")
-	saynn("They're not too heavy.. but they're not exactly light either. After you do that, the girl starts glaring at the guy.. clearly confusing him.")
+	saynn("Они не слишком тяжелые... но и не совсем легкие. После того как ты это сделаешь, девушка начинает сверлить парня взглядом... явно сбивая его с толку.")
 
 	talk(C_GUY, "Sofie?")
 	talk(C_GIRL, "Grab one too, don't be a lazy fuck.")
 	talk(C_GUY, "Alright.")
-	saynn("The guy puts the weapon away and grabs a crate.. before following you.")
+	saynn("Парень убирает оружие, хватает ящик и идет следом за тобой.")
 
 	addContinue("setState", ["intro3"])
 
@@ -4038,15 +4038,15 @@ func intro3_state():
 	addChar(C_GUY)
 	playAnimation(StageScene.Duo, "stand", {npc=C_GIRL, flipNPC=true, bodyState={leashedBy=C_GIRL}})
 	aimCamera(L_COUNTER)
-	saynn("You step out of the spacetruck.. and see some kind of docks. There are a few other docking ports.. but all of them are not occupied currently. Whatever this place is, it doesn't get a lot of traffic.")
+	saynn("Вы выходите из грузового космолета... и видите что-то вроде доков. Есть еще несколько стыковочных портов... но сейчас все они свободны. Что бы это место ни было, трафик здесь явно невелик.")
 
-	saynn("As you follow the docks, still on a leash, you begin to see.. a structure at the end of it. You could say that it's a space station.. but that would be exaggerating things greatly. It's the size of a two-story building.")
+	saynn("Следуя вдоль доков, все еще на поводке, вы начинаете замечать... строение в самом конце пути. Можно сказать, что это космическая станция... но это было бы сильным преувеличением. Оно размером всего лишь с двухэтажное здание.")
 
-	saynn("It's hard to see through the dock's windows.. but you do notice a giant neon sign above the structure. It says.. 'The Daily Drip'.")
+	saynn("Сквозь окна доков трудно разглядеть детали... но вы замечаете гигантскую неоновую вывеску над строением. На ней написано... «Ежедневная капля».")
 
-	saynn("Inside it.. you see a seating area consisting out of a few pink tables.. and a counter, with a small kitchen behind it.")
+	saynn("Внутри... вы видите обеденную зону с несколькими розовыми столиками... и стойку, за которой скрывается маленькая кухня.")
 
-	saynn("The girl walks you behind the counter.. and towards the door at the back of the kitchen.")
+	saynn("Девушка ведет вас за стойку... к двери в глубине кухни.")
 
 	addContinue("setState", ["intro4"])
 
@@ -4054,12 +4054,12 @@ func intro4_state():
 	aimCamera(L_CENTER)
 	addChar(C_GIRL)
 	addChar(C_GUY)
-	saynn("Behind the door.. There are some small stairs that lead into darkness.")
+	saynn("За дверью... обнаруживается небольшая лестница, уходящая во тьму.")
 
 	talk(C_GIRL, "Keep going, animal.")
-	saynn("Animal? Carefully, you step down the stairs, awkwardly looking from around the crate that you're carrying.")
+	saynn("Животное? Вы осторожно спускаетесь по ступеням, неуклюже заглядывая из-за ящика, который несете в руках.")
 
-	saynn("Your eyes begin to slowly adapt to the darkness. While that is happening, they also begin to pick up on some silhouettes. Before you can make out any details, the girl yanks on the leash.")
+	saynn("Ваши глаза начинают постепенно привыкать к темноте. Пока это происходит, они начинают различать какие-то силуэты. Прежде чем вы успеваете разглядеть детали, девушка резко дергает за поводок.")
 
 	talk(C_GIRL, "You will get a chance to say hi later.")
 	
@@ -4068,26 +4068,26 @@ func intro4_state():
 func intro5_state():
 	aimCamera(L_SLEEP)
 	playAnimation(StageScene.Duo, "stand", {npc=C_GIRL})
-	saynn("You follow the mean girl into some kind of.. industrial freezer? It's a big cold room that is divided into a few sections but only one of them seems to be actually powered. You place the crate exactly where you are told to do so.")
+	saynn("Вы следуете за этой стервой в какое-то подобие... промышленной морозильной камеры? Это большое холодное помещение, разделенное на несколько секций, но, кажется, питание подается только на одну из них. Вы ставите ящик именно туда, куда вам велели.")
 
 	talk(C_GIRL, "Go sleep now.")
-	saynn("She points at one of the empty sections of the cold room.")
+	saynn("Она указывает на одну из пустых секций холодильной камеры.")
 
-	saynn("You step inside.. The door behind you closes shut.")
+	saynn("Ты заходишь внутрь... Дверь за тобой захлопывается.")
 
-	saynn("It's chilly here.. but it will have to do.")
+	saynn("Здесь прохладно... но придётся потерпеть.")
 
 	addContinue("setState", ["intro6"])
 
 func intro6_state():
 	GM.main.startNewDay()
 	playAnimation(StageScene.Sleeping, "sleep")
-	saynn("You manage to get some sleep.. but it wasn't exactly the pleasant kind.")
+	saynn("Тебе удаётся немного поспать... но сон был, мягко говоря, не самым приятным.")
 
 	addStamina(20)
 	addPain(-50)
 	day = 0
-	saynn("You hear the banging on the door.. which means.. it's probably time to get up.")
+	saynn("Ты слышишь стук в дверь... а это значит... пора вставать.")
 	
 	addContinue("setState", ["intro7"])
 	
@@ -4096,30 +4096,30 @@ func intro7_state():
 	addChar(C_GIRL)
 	addChar(C_GUY)
 	playAnimation(StageScene.Duo, "stand", {npc=C_GIRL})
-	saynn("You get up and step out into the main space. You're not the only one who got woken up it seems.. From the other sections of the fridge, come out two other.. slaves.. a horse and a colorful puppy.")
+	saynn("Ты встаёшь и выходишь в основное помещение. Похоже, не ты один проснулся... Из других отсеков холодильника выходят ещё две... рабыни... лошадь и разноцветный щенок.")
 
-	saynn("The girl and the guy from yesterday are here too.. your new owners.")
+	saynn("Девушка и парень, что были здесь вчера, тоже здесь... твои новые хозяева.")
 
 	talk(C_GIRL, "Everyone welcome the new animal.")
-	saynn("The girl catches your confused stare. You look around a bit more.. and notice a lot of.. strange equipment. In the corner of this.. basement.. there seems to be a special walled-off space.. with a little garden. The sunlight that comes through the ceiling of that garden is the only light that illuminates the rest of the basement.")
+	saynn("Девушка ловит твой растерянный взгляд. Ты оглядываешься получше... и замечаешь кучу... странного оборудования. В углу этого... подвала, кажется, есть отдельное огороженное пространство... с маленьким садиком. Солнечный свет, пробивающийся сквозь потолок этого сада — единственный источник света, освещающий остальную часть подвала.")
 
 	talk(C_GIRL, "Yes. You are now an animal.")
 	talk(C_GUY, "We're running a cafe and we need milk and cream to keep it running.")
-	saynn("Leo receives a glare from Sofie.")
+	saynn("Софи одаряет Лео свирепым взглядом.")
 
 	talk(C_GIRL, "Why don't you tell them the exact coordinates of this cafe while you're at it, huh?")
 	talk(C_GUY, "My bad.")
-	saynn("The girl turns towards you again.")
+	saynn("Девушка снова поворачивается к тебе.")
 
 	talk(C_GIRL, "He is not wrong though. Ever so often, we are gonna come down here and milk you. All of you.")
-	saynn("Milk? So that's probably what the equipment is for.")
+	saynn("Молоко? Похоже, оборудование нужно именно для этого.")
 
 	talk(C_GUY, "Once you help the cafe earn enough credits, we will actually let you go.")
 	talk(C_GIRL, "We will consider that, yes. How much is enough? Right now it's 250 thousand credits.")
 	addCredits(-250000)
-	saynn("That's a lot..")
+	saynn("Ого, сколько всего...")
 
-	saynn("Sofie approaches you specifically.")
+	saynn("Софи подходит именно к тебе.")
 
 	talk(C_GIRL, "So. How are you gonna be useful to us? We already have a cow and a bull so you could be either, I don't care. I just don't take 'no' for an answer.")
 
@@ -4136,15 +4136,15 @@ func intro8milk_state():
 	agreeSeed = false
 	addChar(C_GIRL)
 	addChar(C_GUY)
-	saynn("You tell the owners that you choose your breasts.")
+	saynn("Ты говоришь владельцам, что сама выберешь себе грудь.")
 
 	talk(C_GIRL, "Alright. And if you're not lactating, we will find a way to make you do it, don't you worry, cow.")
-	saynn("A cow.. is that who you are now?")
+	saynn("Корова... неужели это теперь твоя роль?")
 
 	talk(C_GIRL, "We will start milking you soon. If you're hungry, go eat grass.")
-	saynn("And with that, your new owners leave you be.")
+	saynn("После этого твои новые хозяева оставляют тебя в покое.")
 
-	saynn("The other slaves.. animals.. the cow and the bull.. head towards their corners.")
+	saynn("Остальные рабы... животные... корова и бык... расходятся по своим углам.")
 	addContinue("setState", ["main"])
 
 func intro8seed_state():
@@ -4152,15 +4152,15 @@ func intro8seed_state():
 	agreeSeed = true
 	addChar(C_GIRL)
 	addChar(C_GUY)
-	saynn("You tell the owners that you choose your cock.")
+	saynn("Ты говоришь владельцам, что сам выберешь себе член.")
 
 	talk(C_GIRL, "Alright. So you're a bull then. Good.")
-	saynn("A bull.. is that who you are now?")
+	saynn("Бык... неужели это теперь твоя роль?")
 
 	talk(C_GIRL, "We will start milking you soon. If you're hungry, go eat grass.")
-	saynn("And with that, your new owners leave you be.")
+	saynn("После этого твои новые хозяева оставляют тебя в покое.")
 
-	saynn("The other slaves.. animals.. the cow and the bull.. head towards their corners.")
+	saynn("Остальные рабы... животные... корова и бык... расходятся по своим углам.")
 	addContinue("setState", ["main"])
 
 func intro8both_state():
@@ -4168,13 +4168,13 @@ func intro8both_state():
 	agreeSeed = true
 	addChar(C_GIRL)
 	addChar(C_GUY)
-	saynn("You tell the owners that you choose.. both your cock and your breasts.")
+	saynn("Ты говоришь владельцам, что выбираешь... и член, и грудь.")
 
 	talk(C_GIRL, "Alright. We shouldn't have any problems milking your cock. But if you're not lactating, we will find a way to make you do it, don't you worry, cow.")
-	saynn("A cow.. is that who you are now?")
+	saynn("Корова... неужели это теперь твоя роль?")
 
 	talk(C_GIRL, "We will start milking you soon. If you're hungry, go eat grass.")
-	saynn("And with that, your new owners leave you be.")
+	saynn("После этого твои новые хозяева оставляют тебя в покое.")
 
-	saynn("The other slaves.. animals.. the cow and the bull.. head towards their corners.")
+	saynn("Остальные рабы... животные... корова и бык... расходятся по своим углам.")
 	addContinue("setState", ["main"])

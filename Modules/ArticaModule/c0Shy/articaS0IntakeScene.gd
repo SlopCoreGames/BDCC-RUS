@@ -5,56 +5,56 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("While wandering around the station, your ears pick up on a small talk between the two inmates.")
+		saynn("Блуждая по станции, вы случайно подслушиваете негромкий разговор двух заключенных.")
 
-		saynn("[sayFemale]Hey, I think it's the intake day.. Yeah, it must be.. Look at the busy bees being all busy and stuff.[/sayFemale]")
+		saynn("[sayFemale]Эй, кажется, сегодня день приема новых... Ага, точно... Глянь, какие все деловые, прямо пчелки полосатые.[/sayFemale]")
 
-		saynn("You stop and look around. Indeed, you notice that the guard checkpoint is indeed looking more.. lively.. than usual.")
+		saynn("Вы останавливаетесь и оглядываетесь. И впрямь, у КПП охраны сегодня... оживленнее, чем обычно.")
 
-		saynn("[sayMale]Fresh meat! Hah. Always tastes better than leftovers! Just gotta tenderize it first, let's go see what future-bitches they brought.[/sayMale]")
+		saynn("[sayMale]Свежее мясо! Ха! Всегда вкуснее, чем объедки! Главное — сначала его отбить, пойдем глянем, каких сучек сегодня притащили.[/sayMale]")
 
-		saynn("Might as well take a look yourself. After all, you were fresh meat at some point too..")
+		saynn("Можно и самому взглянуть. В конце концов, когда-то и вы были «свежим мясом»...")
 
-		addButton("Watch", "Look at the new inmates", "artica_arrives")
+		addButton("Смотреть", "Посмотреть на новеньких", "artica_arrives")
 	if(state == "artica_arrives"):
 		aimCameraAndSetLocName("hall_mainentrance")
 		GM.pc.setLocation("hall_mainentrance")
 		addCharacter("artica")
 		addCharacter("risha")
 		playAnimation(StageScene.Duo, "walk", {pc="artica", npc="risha", flipNPC=true, npcAction="walk", bodyState={leashedBy="risha"}})
-		saynn("The news spread quickly in this place. Not even a minute later, there is already a whole crowd of inmates surrounding you, waiting to see the new faces.")
+		saynn("Новости в этих краях разлетаются мгновенно. Не проходит и минуты, как вас уже окружает толпа заключенных, жаждущих увидеть новые лица.")
 
-		saynn("[sayMale]Bring them out! The one with the biggest tits and widest hips is mine to claim![/sayMale]")
+		saynn("[sayMale]Выводите их! Та, у которой сиськи больше и бедра шире, — моя![/sayMale]")
 
-		saynn("[sayMale]Fuck off, how about you go suck a cock instead.[/sayMale]")
+		saynn("[sayMale]Отъебись, лучше иди член пососи.[/sayMale]")
 
-		saynn("The guards push the most eager inmates away from the checkpoint and form a wall of sorts, a corridor.. before the lift finally arrives.")
+		saynn("Охранники расталкивают самых азартных зэков от КПП, образуя своего рода живую стену — коридор, в ожидании, пока наконец прибудет лифт.")
 
-		saynn("A metal screech reveals a dozen new inmates.. wearing collars, cuffs and their shiny fresh inmate uniforms, some orange, some red, some purple.. Each new inmate is accompanied by a staff member that holds their leash.")
+		saynn("Скрежет металла возвещает о прибытии дюжины новых заключенных... на них ошейники, наручники и новенькая, блестящая форма — кто-то в оранжевом, кто-то в красном, кто-то в фиолетовом... Каждого новичка сопровождает сотрудник, держащий его на поводке.")
 
-		saynn("The crowd around you cheers loudly as the 'fresh meat' is being paraded out. You see some faces full of fear and anger.. and some that are surprised.")
+		saynn("Толпа вокруг тебя громко улюлюкает, когда «свежее мясо» выстраивают в парад. Ты видишь лица, полные страха и ярости... и лица, искаженные изумлением.")
 
-		saynn("[sayMale]Hell yeah! Which one is gonna snap first! Anyone wants to track bets?[/sayMale]")
+		saynn("[sayMale]Вот это да! Кто первым сорвется?! Будет кто ставить ставки?[/sayMale]")
 
-		saynn("[sayFemale]So many pretty girls! Who wants to be my toy for the evening?[/sayFemale]")
+		saynn("[sayFemale]Сколько красоток! Кто хочет стать моей игрушкой на этот вечер?[/sayFemale]")
 
-		saynn("One of the new inmates catches your eye in particular.. The white bright fur with fancy cyan patterns stands out quite a lot, compared to others. She is accompanied by a mean tall lynx guard who is relentlessly tugging on the leash.. before shoving some eager inmate back with her free hand.")
+		saynn("Одна из новеньких особенно бросается тебе в глаза... Её белоснежный мех с изысканными голубыми узорами сильно выделяется на фоне остальных. Её сопровождает злая высокая рысь-охранница, которая безжалостно тянет за поводок, а свободной рукой грубо отпихивает какого-то жадного заключенного.")
 
-		saynn("[say=risha]Contain your horny asses, you stupid whores![/say]")
+		saynn("[say=risha]Придержите свои похотливые задницы, тупые шлюхи![/say]")
 
-		saynn("[sayMale]Suck my dick![/sayMale]")
+		saynn("[sayMale]Соси мой член![/sayMale]")
 
-		saynn("[say=risha]Oh yeah? Try me, fucker. You won't even need to remove your ribs after my personal treatment. I will break you in half![/say]")
+		saynn("[say=risha]Да неужели? Ну попробуй, ублюдок. После моего «персонального лечения» тебе даже ребра вынимать не придется. Я тебя пополам сломаю![/say]")
 
-		saynn("The fur behind is being quiet, avoiding any eye contact. She awkwardly puts one hindpaw forward after another, trying to keep up.")
+		saynn("Белоснежка ведет себя тихо, стараясь ни с кем не встречаться взглядом. Она неуклюже переставляет задние лапы, пытаясь не отставать.")
 
-		saynn("[say=risha]C'mon, let us pass, let us pass. You will get a good look at them later, the softies are tired after a long flight, can't you see.[/say]")
+		saynn("[say=risha]Да давайте, дайте пройти, дайте пройти! Рассмотрите их позже, эти неженки вымотаны долгим перелетом, разве не видно?[/say]")
 
-		saynn("The crowd is still cheering, giving the new inmates the proper intake experience. Things begin to quiet down only after all the inmates get pulled down to the cellblock.")
+		saynn("Толпа всё ещё ревёт, устраивая новобранцам «достойный» приём. Всё начинает затихать лишь тогда, когда всех заключённых наконец затаскивают в блок камер.")
 
-		saynn("Since that white-furred inmate is wearing a lilac uniform.. might be worth it to look for her in the lilac cellblock sometime later..")
+		saynn("Раз уж та белошерстная заключённая в сиреневой форме... может, стоит поискать её в сиреневом блоке чуть позже..")
 
-		addButton("Continue", "That was fun", "endscene_clearrestraints")
+		addButton("Продолжить", "Это было весело", "endscene_clearrestraints")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

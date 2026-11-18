@@ -4,7 +4,7 @@ func _init():
 	id = "Continue"
 
 func getName() -> String:
-	return "Continue"
+	return "Продолжить"
 
 func getButtonDesc() -> String:
 	return "See what happens next.."

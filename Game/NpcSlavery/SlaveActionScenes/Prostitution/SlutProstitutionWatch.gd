@@ -55,75 +55,75 @@ func _run():
 		#var npcSlave:NpcSlave = npc.getNpcSlavery()
 		#var prostitution = npcSlave.getActivity()
 		
-		saynn("You notice your slut {npc.name} offering {npc.himself} to someone.")
+		saynn("Вы замечаете, как ваша шлюшка {npc.name} предлагает {npc.himself} кому-то.")
 		
 		if(slutIsDom):
-			saynn("Looks like your slut's offer includes {npc.him} taking charge.")
+			saynn("Похоже, предложение твоей шлюхи включает в себя {npc.him} взятие инициативы на себя.")
 		else:
-			saynn("Looks like your slut's offer includes {npc.him} being on the receiving end.")
+			saynn("Похоже, предложение твоей шлюхи включает в себя {npc.him} роль принимающей стороны.")
 		
-		saynn("Do you want to watch them?")
+		saynn("Хочешь на них посмотреть?")
 		
-		addButton("Watch", "See how they fuck", "do_watch")
-		addButton("Leave", "You'd rather not", "rude_check")
+		addButton("Смотреть", "Посмотри, как они трахаются", "do_watch")
+		addButton("Уйти", "Ты бы предпочел этого не делать", "rude_check")
 	
 	if(state == "after_sex"):
 		playAnimation(StageScene.Duo, "stand", {pc=npcID, npc=npc2ID})
 		
-		saynn("Your slut gets paid after the sex and starts looking for another client.")
+		saynn("Твою шлюху расплачивают после секса, и она начинает искать нового клиента.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 	if(state == "skipped_client_rude"):
 		playAnimation(StageScene.Duo, "hurt", {pc=npcID, npcAction="shove", npc=npc2ID})
 		
 		if(instantConflict):
-			saynn("You were going somewhere.. but then you notice that one of your sluts, {npc.name}, and {npc.his} client have a big verbal conflict.")
+			saynn("Ты куда-то направлялась... но тут замечаешь, что у одной из твоих шлюх, {npc.name}, и {npc.his} клиента разгорелся нешуточный словесный конфликт.")
 		else:
-			saynn("You were about to go somewhere.. but then you notice that the client is being incredibly rude with your slut.")
+			saynn("Ты уже собирался куда-то пойти... но тут замечаешь, что клиент ведет себя невероятно грубо с твоей шлюхой.")
 
-		saynn("{npc.name} tries to walk away.. but the client turns into a real asshole and starts shoving {npc.him}.")
+		saynn("{npc.name} пытается уйти.. но клиент превращается в настоящего мудака и начинает толкать {npc.him}.")
 		
-		addButton("Protect", "You're not gonna let that happen", "do_intimidate", ["rude"])
-		addButton("Walk away", "Whatever, your slut can handle it", "do_walkaway", ["rude"])
+		addButton("Защитить", "Ты не позволишь этому случиться", "do_intimidate", ["rude"])
+		addButton("Уйти", "Да пофиг, твоя шлюшка сама справится", "do_walkaway", ["rude"])
 		
 	if(state == "skipped_client_rob"):
 		playAnimation(StageScene.Duo, "hurt", {pc=npcID, npcAction="shove", npc=npc2ID})
 
 		if(instantConflict):
-			saynn("You were going somewhere.. but then you notice that one of your sluts, {npc.name}, and {npc.his} client are having a fight.")
+			saynn("Ты уже собирался куда-то идти... но вдруг замечаешь, что одна из твоих шлюх, {npc.name}, и {npc.his} клиент устроили потасовку.")
 		else:
-			saynn("You were about to go somewhere.. but then you notice that the client is doing something to your slut.")
+			saynn("Ты уже собирался куда-то идти... но вдруг замечаешь, что клиент что-то вытворяет с твоей шлюхой.")
 
-		saynn("Yeah, the client is not looking for sex, {npc2.he} {npc2.isAre} actually trying to rob {npc.name}!")
+		saynn("Да клиент вовсе не секса ищет, {npc2.he} {npc2.isAre} на самом деле пытается ограбить {npc.name}!")
 		
-		addButton("Protect", "You're not gonna let that happen", "do_intimidate", ["rob"])
-		addButton("Walk away", "Whatever, your slut can handle it", "do_walkaway", ["rob"])
+		addButton("Защитить", "Ты не позволишь этому случиться", "do_intimidate", ["rob"])
+		addButton("Уйти", "Да пофиг, твоя шлюха сама справится", "do_walkaway", ["rob"])
 		
 	if(state == "aftersex_rob"):
 		playAnimation(StageScene.Duo, "hurt", {pc=npcID, npcAction="shove", npc=npc2ID})
 
-		saynn("The sex has ended.. but the client doesn't seem to be satisfied.")
+		saynn("Секс закончился... но клиент, кажется, остался не удовлетворен.")
 
-		saynn("{npc2.He} {npc2.isAre} trying to rob your slut!")
+		saynn("{npc2.He} {npc2.isAre} пытается ограбить твою шлюху!")
 		
-		addButton("Protect", "You're not gonna let that happen", "do_intimidate", ["rob"])
-		addButton("Walk away", "Whatever, your slut can handle it", "do_walkaway", ["rob"])
+		addButton("Защитить", "Ты не позволишь этому случиться", "do_intimidate", ["rob"])
+		addButton("Уйти", "Да пофиг, твоя шлюха сама справится", "do_walkaway", ["rob"])
 		
 	if(state == "aftersex_notsatisfied"):
 		playAnimation(StageScene.Duo, "hurt", {pc=npcID, npcAction="shove", npc=npc2ID})
 
-		saynn("The sex has ended.. but the client doesn't seem to be satisfied.")
+		saynn("Секс закончился... но клиент, кажется, остался не удовлетворен.")
 
-		saynn("{npc2.He} {npc2.isAre} being incredibly rude with your slut!")
+		saynn("{npc2.He} {npc2.isAre} ведет себя невероятно грубо с твоей шлюхой!")
 		
-		addButton("Protect", "You're not gonna let that happen", "do_intimidate", ["rude"])
-		addButton("Walk away", "Whatever, your slut can handle it", "do_walkaway", ["rude"])
+		addButton("Защитить", "Ты не позволишь этому случиться", "do_intimidate", ["rude"])
+		addButton("Уйти", "Да пофиг, твоя шлюха сама справится", "do_walkaway", ["rude"])
 		
 	if(state == "do_intimidate"):
 		playAnimation(StageScene.Duo, "stand", {pc="pc", npc=npc2ID})
 		
-		saynn("You can't let that happen so you step in and drag the asshole away from your whore.")
+		saynn("Ты не можешь этого допустить, поэтому вмешиваешься и оттаскиваешь этого мудака от своей бляди.")
 		
 		saynn("[say=npc2]"+RNG.pick([
 			"Huh, are you some kind of pimp? I will fuck you up.",
@@ -132,37 +132,37 @@ func _run():
 			"Fucker, I wasn't done with that slut.",
 		])+"[/say]")
 		
-		saynn("Looks like it's a fight..")
-		addButton("Fight", "Start the fight", "do_fight")
+		saynn("Похоже, назревает драка...")
+		addButton("Драться", "Начать бой", "do_fight")
 		
 	if(state == "do_walkaway"):
 		playAnimation(StageScene.Solo, "stand")
 		
-		saynn("You have no time for this so you just walk away.")
+		saynn("У тебя нет на это времени, поэтому ты просто уходишь.")
 		
 		if(intimidateReason == "rude"):
-			saynn("Your slut, {npc.name}, got a little more depressed after {npc.he} got verbally and physically assaulted.")
+			saynn("Твоя шлюха, {npc.name}, впала в еще большую депрессию после того, как {npc.he} подверглась словесному и физическому насилию.")
 		
 		if(intimidateReason == "rob"):
-			saynn("Your slut, {npc.name}, got robbed, meaning {npc.he} lost all of the credits that {npc.he} earned today.")
+			saynn("Твою шлюху, {npc.name}, ограбили, а значит, {npc.he} лишилась всех кредитов, которые {npc.he} заработала сегодня.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	
 	if(state == "lost_fight"):
 		playAnimation(StageScene.Solo, "defeat")
 		
-		saynn("You lost the fight. Your slut saw that you were losing and managed to escape in time.. But {npc.he} will trust you less now for sure")
+		saynn("Ты проиграл драку. Твоя шлюха видела, что ты проигрываешь, и ей удалось вовремя сбежать... Но {npc.he} теперь точно будет доверять тебе меньше.")
 
-		addButton("Continue", "Oh well", "endthescene")
+		addButton("Продолжить", "Ну и ладно", "endthescene")
 
 	if(state == "won_fight"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
 		
-		saynn("You won the fight. The defeated asshole crawls away, there is no point torturing {npc2.him} more.")
+		saynn("Ты выиграл драку. Побежденный мудак уползает прочь, нет смысла истязать {npc2.him} дальше.")
 		
-		saynn("Looks like your slut trusts you more now.")
+		saynn("Похоже, твоя шлюха теперь доверяет тебе больше.")
 
-		addButton("Continue", "Nice work", "endthescene")
+		addButton("Продолжить", "Отличная работа", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

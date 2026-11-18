@@ -23,7 +23,7 @@ func shouldHappenFinal(_npcSlavery:NpcSlave):
 
 func runEvent(_npcSlavery:NpcSlave):
 	return {
-		text = "AN EVENT HAPPENED!",
+		text = "ПРОИЗОШЛО СОБЫТИЕ!",
 	}
 
 func reactSceneEnd(_npcSlavery:NpcSlave, _sceneResult):

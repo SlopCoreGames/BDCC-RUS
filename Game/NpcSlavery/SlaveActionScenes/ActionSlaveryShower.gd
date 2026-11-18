@@ -34,21 +34,21 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc=npcID, npcBodyState={leashedBy="pc"}})
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		
-		saynn("You are standing in the dressing room with {npc.name}.")
+		saynn("Вы стоите в раздевалке вместе с {npc.name}.")
 		
-		saynn("How do you want {npc.him} to shower?")
+		saynn("Как вы хотите, чтобы {npc.him} приняла душ?")
 		
-		addButton("Alone", "Just watch it", "shower_alone")
+		addButton("В одиночку", "Просто наблюдать", "shower_alone")
 		if(npcSlavery.getObedience() < 0.3 && npcSlavery.getLove() < 0.3):
-			addDisabledButton("Together", "Your slave is not obedient enough")
+			addDisabledButton("Вместе", "Ваша рабыня недостаточно послушна")
 		else:
-			addButton("Together", "Shower together with your slave", "shower_together")
+			addButton("Вместе", "Принять душ вместе со своей рабыней", "shower_together")
 		if(npcSlavery.getSlaveSkill(SlaveType.Submissive) >= 4):
-			addButton("Sub's care", "Let your slave shower you", "sub_shower_pc")
+			addButton("Забота о сабке", "Позволить рабыне отмыть вас", "sub_shower_pc")
 		else:
-			addDisabledButton("Sub's care", "Requires Submissive skill of at least rank D")
+			addDisabledButton("Забота о сабке", "Требуется навык «Покорность» не ниже ранга D")
 
-		addButton("Cancel", "You changed your mind", "endthescene")
+		addButton("Отмена", "Вы передумали", "endthescene")
 
 	if(state == "sub_shower_pc"):
 		if(GM.pc.getLocation() == "main_dressing2"):
@@ -77,90 +77,90 @@ func _run():
 			])
 
 		if(isFastServing):
-			saynn("You tell {npc.name} that you could use a shower.")
+			saynn("Вы говорите {npc.name}, что не прочь принять душ.")
 			
 			saynn("[say=npc]"+subReaction+"[/say]")
 			
-			saynn("Your submissive brings you to one of the dressing rooms, before beginning the ritual of undressing you.")
+			saynn("Ваша рабыня ведет вас в одну из раздевалок, прежде чем начать ритуал раздевания.")
 		else:
-			saynn("You tell {npc.name} that today it's {npc.his} job to wash you.")
+			saynn("Вы говорите {npc.name}, что сегодня именно {npc.his} должна вас вымыть.")
 			
 			saynn("[say=npc]"+subReaction+"[/say]")
 			
-			saynn("After a short pause, your submissive begins the ritual of undressing you.")
+			saynn("После короткой паузы ваша рабыня начинает ритуал раздевания.")
 		
-		saynn("When all the clothes are off, {npc.name} guides you further into the showers room. {npc.He} takes the role of a caretaker and begins by carefully washing your hair.")
+		saynn("Когда вся одежда снята, {npc.name} ведет вас дальше, в душевую. {npc.He} берет на себя роль заботливой служанки и начинает с тщательного мытья ваших волос.")
 			
-		saynn("The water is cold as usual but {npc.his} touch feels warm and pleasant. As {npc.his} fingers work through the strands, you feel comfort. Then {npc.he} moves down to your neck and shoulders, washing away any dirt and dried up fluids.")
+		saynn("Вода, как обычно, холодная, но прикосновения {npc.his} кажутся теплыми и приятными. Когда пальцы {npc.his} перебирают пряди, вы чувствуете комфорт. Затем {npc.he} спускается к вашей шее и плечам, смывая всю грязь и засохшие выделения.")
 		
 		if(npcSlavery.getLove() < 0.5 && npcSlavery.getObedience() < 0.5):
-			saynn("{npc.He} doesn’t dare.. or is not eager enough.. to touch your chest, so {npc.he} avoids your {pc.breasts} and instead just focuses on washing your {pc.masc} back and sides. At least {npc.he} {npc.isAre} doing a good job there, you feel the tension in your muscles going away.")
+			saynn("{npc.He} не смеет... или просто недостаточно осмеливается... коснуться вашей груди, поэтому {npc.he} обходит ваши {pc.breasts} и вместо этого сосредотачивается на мытье вашей {pc.masc} спины и боков. По крайней мере, {npc.he} {npc.isAre} отлично справляется, и вы чувствуете, как напряжение в мышцах уходит.")
 
 			if(GM.pc.hasReachablePenis() || GM.pc.isWearingChastityCage()):
-				saynn("Your sub hesitates to touch your {pc.penis} too, just quickly washing around it, sliding {npc.his} hands over your {pc.thick} thighs and legs. Maybe {npc.he} needs some more training. Either way, you are clean by the end of it, just not exactly satisfied.")
+				saynn("Ваша рабыня тоже не решается коснуться ваших {pc.penis}, лишь быстро омывая область вокруг них и скользя {npc.his} руками по вашим {pc.thick} бедрам и ногам. Возможно, {npc.he} нужно еще немного практики. Так или иначе, к концу процедуры вы чисты, но не совсем удовлетворены.")
 			elif(GM.pc.hasReachableVagina()):
-				saynn("Your sub hesitates to touch your pussy too, just quickly washing around it, sliding {npc.his} hands over your {pc.thick} thighs and legs. Maybe {npc.he} needs some more training. Either way, you are clean by the end of it, just not exactly satisfied.")
+				saynn("Твой суб тоже не решается трогать твою киску, лишь быстро омывая область вокруг, скользя {npc.his} руками по твоим {pc.thick} бедрам и ногам. Возможно, {npc.he} нужно еще немного тренировок. Так или иначе, к концу процедуры ты чиста, но не совсем удовлетворена.")
 			else:
-				saynn("Your sub hesitates to touch your other private bits too, just quickly washing around, sliding {npc.his} hands over your {pc.thick} thighs and legs. Maybe {npc.he} needs some more training. Either way, you are clean by the end of it, just not exactly satisfied.")
+				saynn("Твой суб тоже не решается касаться других твоих интимных мест, лишь быстро омывая всё вокруг, скользя {npc.his} руками по твоим {pc.thick} бедрам и ногам. Возможно, {npc.he} нужно еще немного тренировок. Так или иначе, к концу процедуры ты чиста, но не совсем удовлетворена.")
 		else:
-			saynn("With a delicate touch, {npc.he} follows the contours of your {pc.breasts}, {npc.his} palms brushing over your"+(" lactating" if GM.pc.isLactating() else "")+" nips. Then {npc.he} gives some attention to your {pc.masc} back and sides too, properly washing everywhere, even under your armpits. You feel the tension in your muscles going away.")
+			saynn("Нежным касанием {npc.he} следует контурам твоих {pc.breasts}, а ладони {npc.his} скользят по твоим"+(" lactating" if GM.pc.isLactating() else "")+"соскам. Затем {npc.he} уделяет внимание и твоей {pc.masc} спине и бокам, тщательно отмывая всё повсюду, даже подмышками. Ты чувствуешь, как напряжение в мышцах уходит.")
 			
 			if(GM.pc.isWearingChastityCage()):
-				saynn("After washing the back, your sub’s hands slide down over your"+(" big pregnant" if GM.pc.isVisiblyPregnant() else "")+" belly and reach your {pc.penis}. The touch is tender enough for you to just let {npc.him} do it, {npc.his} digits carefully slide over your chastity cage and reach as close to your member as they can, trying to make sure every nook and cranny is clean.")
+				saynn("После мытья спины руки твоего суба скользят вниз по твоему"+(" big pregnant" if GM.pc.isVisiblyPregnant() else "")+"животу и достигают твоих {pc.penis}. Прикосновение настолько нежное, что ты просто позволяешь {npc.him} делать свое дело; {npc.his} пальцы осторожно скользят по твоей девственной клетке, пробираясь как можно ближе к члену, стараясь вымыть каждую щелочку и каждый уголок.")
 			elif(GM.pc.hasReachablePenis()):
-				saynn("After washing the back, your sub’s hands slide down over your"+(" big pregnant" if GM.pc.isVisiblyPregnant() else "")+" belly and reach your {pc.penis}. The touch is tender enough for you to just let {npc.him} do it, {npc.his} digits carefully slide over the sensitive skin and make sure every nook and cranny is clean.")
+				saynn("После мытья спины руки твоего суба скользят вниз по твоему"+(" big pregnant" if GM.pc.isVisiblyPregnant() else "")+"животу и достигают твоих {pc.penis}. Прикосновение настолько нежное, что ты просто позволяешь {npc.him} делать свое дело; {npc.his} пальцы осторожно скользят по чувствительной коже, стараясь вымыть каждую щелочку и каждый уголок.")
 			elif(GM.pc.hasReachableVagina()):
-				saynn("After washing the back, your sub’s hands slide down over your"+(" big pregnant" if GM.pc.isVisiblyPregnant() else "")+" belly and reach your {pc.vaginaStretch} pussy. The touch is tender enough for you to just let {npc.him} do it, {npc.his} digits carefully slide over the sensitive skin and make sure every nook and cranny there is clean.")
+				saynn("После мытья спины руки твоего суба скользят вниз по твоему"+(" big pregnant" if GM.pc.isVisiblyPregnant() else "")+" живота и добирается до твоей {pc.vaginaStretch} киски. Прикосновения настолько нежные, что ты просто позволяешь {npc.him} делать это, пока {npc.his} пальцы осторожно скользят по чувствительной коже, вычищая каждую щелочку и каждый уголок.")
 			else:
-				saynn("After washing the back, your sub’s hands slide down over your"+(" big pregnant" if GM.pc.isVisiblyPregnant() else "")+" belly and reach your crotch. The touch is tender enough for you to just let {npc.him} do it, {npc.his} digits carefully slide over the sensitive skin and make sure everywhere between your legs is clean.")
+				saynn("После мытья спины руки твоего суба скользят вниз по твоему"+(" big pregnant" if GM.pc.isVisiblyPregnant() else "")+" живота и добирается до твоей промежности. Прикосновения настолько нежные, что ты просто позволяешь {npc.him} делать это, пока {npc.his} пальцы осторожно скользят по чувствительной коже, следя за тем, чтобы всё между твоими ногами было идеально чистым.")
 		
-		saynn("Both you and your sub are now clean on the outside.")
+		saynn("Теперь и ты, и твоя сучка чисты снаружи.")
 		
-		addButton("Enough", "Enough showering", "endthescene")
+		addButton("Хватит", "Хватит мыться", "endthescene")
 		if(npcSlavery.getSlaveSkill(SlaveType.Submissive) >= 10):
 			if(GM.pc.hasEffect(StatusEffect.HasCumInsideAnus) || GM.pc.hasEffect(StatusEffect.HasCumInsideVagina)):
-				addButton("Inside", "Order to clean inside too", "sub_cleans_inside_pc")
+				addButton("Внутри", "Приказ помыться и внутри тоже", "sub_cleans_inside_pc")
 			else:
-				addDisabledButton("Inside", "You don't have anything that the sub can clean")
+				addDisabledButton("Внутри", "Тебе нечего предложить подчиненной для очистки")
 		else:
-			addDisabledButton("Inside", "Submissive skill rank A- or higher required")
+			addDisabledButton("Внутри", "Требуется ранг навыка «Подчинение» A- или выше")
 		
 	if(state == "sub_cleans_inside_pc"):
 		if(GM.pc.hasEffect(StatusEffect.HasCumInsideVagina)):
 			playAnimation(StageScene.SexOral, "lick", {pc="pc", npc=npcID, pcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 			
-			saynn("Your sub’s eyes sparkle when you order {npc.him} that you need your pussy clean too. Rather than doing it with {npc.his} hands, your submissive decides to get on {npc.his} knees before you. {npc.His} palms land on the inner sides of your thighs and gently push them aside, allowing {npc.him} to dig {npc.his} face into your messy pussy slit.")
+			saynn("Глаза твоего саба заблескивают, когда ты приказываешь {npc.him}, что тебе тоже нужно почистить киску. Вместо того чтобы делать это {npc.his} руками, твой подчиненный решает опуститься на {npc.his} колени перед тобой. {npc.His} ладони ложатся на внутреннюю сторону твоих бедер и мягко раздвигают их, позволяя {npc.him} уткнуться {npc.his} лицом в твою влажную щель.")
 			
-			saynn("{npc.He} slips {npc.his} tongue past your sensitive lips and eagerly starts lapping away at your inner walls, trying to gather as much mess as {npc.he} can into {npc.his} mouth.")
+			saynn("{npc.He} скользит {npc.his} языком мимо твоих чувствительных губ и с жадностью начинает вылизывать твои внутренние стенки, стараясь собрать как можно больше {npc.he} в свой {npc.his} рот.")
 			
 			if(GM.pc.hasEffect(StatusEffect.HasCumInsideAnus)):
-				saynn("While working on your pussy, {npc.his} hands spread your butt cheeks and help your butt leak fluids, {npc.his} tongue is making you clench and relax a lot, accelerating the process.")
+				saynn("Пока он возится с твоей киской, {npc.his} разводит твои ягодицы руками, помогая им сочиться смазкой, а {npc.his} заставляет тебя то сжиматься, то расслабляться, ускоряя процесс.")
 				
-			saynn("Each caress and calculated movement brings you closer and closer.. Until a quick little orgasm overwhelms you, your pussy releasing a shower of fluids onto your sub’s face.. until the other shower quickly cleans it again.")
+			saynn("Каждое ласкающее прикосновение, каждое выверенное движение приближают тебя всё ближе и ближе... Пока внезапный, бурный оргазм не накрывает тебя с головой, и твоя @@B*@@ не извергает целый фонтан смазки прямо в лицо твоему субу... пока другой душ быстро не смывает всё это во второй раз.")
 			
-			saynn("After all that, your sub spits all the collected mess out directly into the drain. It would be too gross to swallow it anyway.")
+			saynn("После всего этого твой саб выплевывает всю накопленную жижу прямо в слив. В любом случае, глотать это было бы слишком мерзко.")
 			
 			GM.pc.clearOrificeFluidsCheckBlocked()
 		else:
 			GM.pc.clearOrificeFluidsCheckBlocked()
 			playAnimation(StageScene.SexRimming, "sex", {pc="pc", npc=npcID, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 			
-			saynn("Your sub’s eyes sparkle when you order {npc.him} that you need your ass cleaned inside too. Rather than doing it with {npc.his} hands, your submissive decides to get on {npc.his} knees behind you. {npc.His} palms land on your buttcheek and gently spread them, allowing {npc.him} to dig {npc.his} face in.")
+			saynn("Глаза твоего саба так и сверкают, когда ты приказываешь {npc.him}, что тебе нужно вычистить задницу и внутри тоже. Вместо того чтобы делать это {npc.his} руками, твой саб решает встать на {npc.his} колени позади тебя. {npc.His} ладони ложатся на твою ягодицу и мягко раздвигают её, позволяя {npc.him} уткнуться {npc.his} лицом внутрь.")
 			
-			saynn("{npc.He} slips {npc.his} tongue past your sensitive anal ring and eagerly starts lapping away at your inner walls, trying to gather as much mess as {npc.he} can into {npc.his} mouth.")
+			saynn("{npc.He} просовывает {npc.his} язык сквозь твое чувствительное анальное кольцо и с жадностью начинает вылизывать твои внутренние стенки, стараясь собрать как можно больше {npc.he} в свой {npc.his} рот.")
 		
 			if(GM.pc.isWearingChastityCage()):
-				saynn("Each caress and calculated movement brings you closer and closer.. Until a quick little orgasm overwhelms you, your locked member throbbing behind the metal cage and dripping {pc.cum} onto the floor while your prostate is getting milked dry.")
+				saynn("Каждое ласкающее и расчетливое движение приближает тебя всё ближе и ближе... Пока внезапный короткий оргазм не накрывает тебя с головой; твой запертый член пульсирует за металлической клеткой, капая {pc.cum} на пол, пока твою простату выжимают досуха.")
 			elif(GM.pc.hasReachablePenis()):
-				saynn("Each caress and calculated movement brings you closer and closer.. Until a quick little orgasm overwhelms you, your {pc.penis} throbbing and shooting {pc.cum} onto the floor while your prostate is getting milked dry.")
+				saynn("Каждое ласкающее и расчетливое движение приближает тебя всё ближе и ближе... Пока внезапный короткий оргазм не накрывает тебя с головой; твой {pc.penis} пульсирует, извергая {pc.cum} на пол, пока твою простату выжимают досуха.")
 			elif(GM.pc.hasReachableVagina()):
-				saynn("Each caress and calculated movement brings you closer and closer.. Until a quick little orgasm overwhelms you, your neglected pussy pulsing and releasing a shower of fluids onto the floor.")
+				saynn("Каждое ласкающее и расчетливое движение приближает тебя всё ближе и ближе... Пока внезапный короткий оргазм не накрывает тебя с головой; твоя заброшенная киска пульсирует, извергая фонтан жидкостей на пол.")
 			else:
-				saynn("Each caress and calculated movement brings you closer and closer.. Until a quick little orgasm overwhelms you, your body squirming and shaking.")
+				saynn("Каждое ласкающее и расчетливое движение приближает тебя всё ближе и ближе... Пока внезапный короткий оргазм не накрывает тебя с головой; твое тело корчится и дрожит.")
 				
-			saynn("After all that, your sub spits all the collected mess out directly into the drain. It would be too gross to swallow it anyway.")
+			saynn("После всего этого твой саб выплевывает всю накопленную жижу прямо в слив. В любом случае, глотать это было бы слишком мерзко.")
 			
-		addButton("Continue", "That was fun", "endthescene")
+		addButton("Продолжить", "Это было весело", "endthescene")
 		
 	if(state == "shower_together"):
 		if(GM.pc.getLocation() == "main_dressing2"):
@@ -168,24 +168,24 @@ func _run():
 		else:
 			aimCameraAndSetLocName("main_shower1")
 		playAnimation(StageScene.ShoweringDuo, "shower", {pc=npcID, npc="pc", bodyState={naked=true}, npcBodyState={naked=true}})
-		saynn("You shower together with {npc.name}. The leash is clipped to the shower head to make sure your slave can't just escape or even turn towards you.")
+		saynn("Вы принимаете душ вместе с {npc.name}. Поводок пристегнут к душевой лейке, чтобы твой раб не мог просто сбежать или даже повернуться к тебе.")
 		
-		saynn("Your possessive hands land on {npc.his} body and begin washing it, making sure to clean the private bits too, everywhere but inside.")
+		saynn("Твои собственнические руки ложатся на тело {npc.his} и начинают его мыть, тщательно отмывая интимные места — везде, кроме самого нутра.")
 
-		addButton("Enough", "That was fun", "endthescene")
-		addButton("Clean inside", "Clean inside your slave's orifices", "together_cleaninside")
+		addButton("Хватит", "Это было весело", "endthescene")
+		addButton("Помыться внутри", "Вымыть отверстия внутри твоего раба", "together_cleaninside")
 
 	if(state == "together_cleaninside"):
 		if(npc.hasReachableVagina()):
-			saynn("Without even a warning, you put your hands on {npc.his} butt and spread it, making it so both {npc.his} holes are stretched wide.")
+			saynn("Без всякого предупреждения ты хватаешь {npc.his} за задницу и раздвигаешь её так, что оба {npc.his} растягиваются настежь.")
 			
-			saynn("You order {npc.him} to push and soon any fluids that were inside {npc.his} begin to leak out and quickly getting washed away by the running water.")
+			saynn("Ты приказываешь {npc.him} тужиться, и вскоре вся жидкость внутри {npc.his} начинает вытекать, быстро смываясь бегущей водой.")
 		else:
-			saynn("Without even a warning, you put your hands on {npc.his} butt and spread it, making it so both {npc.his} tailhole is stretched wide.")
+			saynn("Без всякого предупреждения ты хватаешь {npc.his} за задницу и раздвигаешь её так, что хвостовое отверстие {npc.his} растягивается настежь.")
 			
-			saynn("You order {npc.him} to push and soon any fluids that were inside {npc.him} begin to leak out and quickly getting washed away by the running water.")
+			saynn("Ты приказываешь {npc.him} тужиться, и вскоре вся жидкость внутри {npc.him} начинает вытекать, быстро смываясь бегущей водой.")
 		
-		addButton("Enough", "That was fun", "endthescene")
+		addButton("Хватит", "Это было весело", "endthescene")
 
 	if(state == "shower_alone"):
 		if(GM.pc.getLocation() == "main_dressing2"):
@@ -196,20 +196,20 @@ func _run():
 		if(deservesPunishment):
 			playAnimation(StageScene.Duo, "stand", {npc=npcID, flipNPC=true, npcAction="stand", npcBodyState={naked=true, leashedBy="pc"}})
 		
-			saynn("Your hand is holding your slave's leash to make sure {npc.he} doesn't do anything stupid.")
+			saynn("Твоя рука сжимает поводок рабыни, чтобы убедиться, что {npc.he} не выкинет какую-нибудь глупость.")
 			
-			saynn("You put {npc.him} under the running water and order {npc.him} to wash {npc.himself}")
+			saynn("Ты подставляешь {npc.him} под струю воды и приказываешь {npc.him} вымыть {npc.himself}")
 			
-			saynn("But {npc.name} just pouts and stands still, ignoring your order and covering {npc.himself} up as best as {npc.he} can. At least {npc.he} can't escape the water.")
+			saynn("Но {npc.name} лишь дуется и стоит неподвижно, игнорируя приказ и прикрывая {npc.himself} так, как только может {npc.he}. По крайней мере, от воды {npc.he} не сбежать.")
 		else:
 			playAnimation(StageScene.Duo, "stand", {npc=npcID, flipNPC=true, npcAction="struggle", npcBodyState={naked=true, leashedBy="pc"}})
 			#var npcSlavery:NpcSlave = npc.getNpcSlavery()
-			saynn("Your slave is showering alone while your hand is holding {npc.his} leash to make {npc.he} won't do anything silly.")
+			saynn("Твоя рабыня принимает душ одна, пока ты держишь {npc.his} на поводке, чтобы {npc.he} не натворила глупостей.")
 			
-			saynn("But it looks like your slave is obedient enough to listen, {npc.he} washes {npc.his} body under the running water while letting you watch.")
+			saynn("Но, похоже, твоя рабыня достаточно послушна: {npc.he} моет {npc.his} тело под струями воды, позволяя тебе наблюдать за процессом.")
 		
-		addButton("Enough", "That was fun", "endthescene")
-		addButton("Clean inside", "Order them to clean inside too", "alone_cleaninside")
+		addButton("Хватит", "Это было весело", "endthescene")
+		addButton("Помыться внутри", "Прикажи им промыть и внутри тоже", "alone_cleaninside")
 		
 	if(state == "alone_cleaninside"):
 		playAnimation(StageScene.Showering, "rub", {pc=npcID, bodyState={naked=true}})
@@ -217,15 +217,15 @@ func _run():
 		
 		if(!deservesPunishment):
 			if(npc.hasReachableVagina()):
-				saynn("You order {npc.him} to wash inside too. {npc.name} spreads both {npc.his} holes with {npc.his} hands for you and pushes any mess out.")
+				saynn("Ты приказываешь {npc.him} вымыться и внутри тоже. {npc.name} разводит обе {npc.his} дырочки {npc.his} руками, чтобы ты мог всё вычистить.")
 			else:
-				saynn("You order {npc.him} to wash inside too. {npc.name} spreads {npc.his} butt with hands for you and pushes any mess out.")
+				saynn("Ты приказываешь {npc.him} вымыться и внутри тоже. {npc.name} разводит {npc.his} задницу руками, чтобы ты мог всё вычистить.")
 		else:
-			saynn("You order {npc.him} to wash inside too.. but your slave refuses to do it, demanding that you turn away first. Obviously you're not gonna do that.")
+			saynn("Ты приказываешь {npc.him} вымыться и внутри тоже... но твоя рабыня отказывается это делать, требуя, чтобы ты сначала отвернулся. Очевидно, что делать это ты не собираешься.")
 			
-			saynn("Looks like {npc.he} just earned {npc.himself} a punishment.")
+			saynn("Похоже, {npc.he} только что заслужил(а) для {npc.himself} наказание.")
 		
-		addButton("Enough", "That was fun", "endthescene")
+		addButton("Хватит", "Это было весело", "endthescene")
 
 
 func _react(_action: String, _args):

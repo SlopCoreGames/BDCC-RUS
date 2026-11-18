@@ -11,7 +11,7 @@ func _init():
 	pointsOnUnlock = 25
 
 func getName() -> String:
-	return "Changes species"
+	return "Смена вида"
 
 func getPillName() -> String:
 	return "WildShift"
@@ -21,7 +21,7 @@ func getUnlockData() -> Dictionary:
 		eliza = "Wow! This one is just.. packed.. with all sorts of DNA. I see a lot of different patterns.. but they do share something in common. I think this one has the potential to completely change you into something else! To override your species! Just imagine the adventures you could have in a new body. I will call it.. 'WildShift'.",
 		tryOptions = [
 			{
-				name = "Make Eliza eat it",
+				name = "Заставить Элизу сожрать это",
 				desc = "Ask if she is brave enough to try her own product. This might be funny or sad, who knows.",
 				sceneID = "ElizaDrugTestSpeciesScene",
 			},
@@ -63,7 +63,7 @@ func getPillOptions() -> Dictionary:
 		speciesArray.append([speciesID, GlobalRegistry.getSpecies(speciesID).getVisibleName()])
 	var result:Dictionary = {
 		"species": {
-			name = "Species",
+			name = "Вид",
 			desc = "What species should the drug transform you into.",
 			value = Species.Canine,
 			values = speciesArray,
@@ -74,7 +74,7 @@ func getPillOptions() -> Dictionary:
 		if(bodypartSlot in [BodypartSlot.Hair, BodypartSlot.Vagina, BodypartSlot.Anus]):
 			continue
 		result["no"+bodypartSlot] = {
-			name = "Skip "+BodypartSlot.getVisibleNameNoCap(bodypartSlot),
+			name = "Пропустить "+BodypartSlot.getVisibleNameNoCap(bodypartSlot),
 			desc = "Should this bodypart not be morphed?",
 			value = false,
 			values = [[false, "No"], [true, "Yes"]]

@@ -4,19 +4,19 @@ func _init():
 	id = "IntroSexy"
 
 func getName() -> String:
-	return "Sexy introduction"
+	return "Сексуальное представление"
 
 func getButtonDesc() -> String:
 	return "Start the auction while acting very seductive.\n\nReveals 2 body-related preferences from each bidder and makes them eager to bid early."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
-	saynn("The room darkens, the curtains open, and {presenter.name} steps into the spotlight with a sultry smile. {presenter.She} runs a hand down the length of the slave’s body, ensuring all eyes are on {slave.his} as {presenter.you} {presenter.youVerb('speak')} in a slow, alluring voice.")
+	saynn("В комнате гаснет свет, шторы раздвигаются, и {presenter.name} выходит в свет прожектора с соблазнительной улыбкой. {presenter.She} проводит рукой по всему телу раба, следя за тем, чтобы все взгляды были прикованы к {slave.his}, пока {presenter.you} {presenter.youVerb('speak')} томным, манящим голосом.")
 	
 	sayPresenter("Welcome to the Blacktail Market! I see you're all ready for something special tonight. Allow me to introduce you to this treat - a fine specimen that will fulfill your wildest fantasies. But remember, only the highest bidder will claim {slave.him}.")
 	
-	saynn("The bidders shift in their seats, their gazes fixed on the slave. Tension rises in the room, and you can feel the excitement already building.")
+	saynn("Участники аукциона ерзают в своих креслах, не сводя глаз с раба. Напряжение в зале растет, и вы уже кожей чувствуете нарастающее возбуждение.")
 	
-	saynn("During that, you try to pick out which areas of the slave the bidders are the most attracted to.")
+	saynn("В этот момент вы пытаетесь определить, какие именно части тела раба привлекают участников больше всего.")
 
 	sayPresenter("The starting bet is "+str(_auction.startingBid)+" credits.")
 

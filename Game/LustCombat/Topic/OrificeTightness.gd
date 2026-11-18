@@ -48,13 +48,13 @@ func getTopicValue(_topicID, _pc):
 
 func getVisibleName(_topicID):
 	if(_topicID == InterestTopic.LooseAnus):
-		return "a stretched anus"
+		return "растянутый анус"
 	if(_topicID == InterestTopic.LoosePussy):
-		return "a stretched pussy"
+		return "растянутая киска"
 	if(_topicID == InterestTopic.TightAnus):
-		return "a tight anus"
+		return "узкий анус"
 	if(_topicID == InterestTopic.TightPussy):
-		return "a tight pussy"
+		return "узкая киска"
 	
 	return "error:"+str(_topicID)
 

@@ -8,10 +8,10 @@ func onStart(_args:Array):
 
 func start():
 	playStand()
-	saynn("You decide to attack your owner!")
+	saynn("Вы решаете напасть на своего хозяина!")
 	talkModularOwnerToPC("SoftSlaveryAttackReaction") #You're gonna regret it.
 	
-	addButton("Fight", "Start the fight", "startFight", [getOwnerID()])
+	addButton("Драться", "Начать бой", "startFight", [getOwnerID()])
 	
 func start_fightResult(_didWin:bool):
 	if(_didWin):
@@ -21,18 +21,18 @@ func start_fightResult(_didWin:bool):
 
 func pcWon():
 	playAnimation(StageScene.Duo, "stand", {npc=getOwnerID(), npcAction="kneel"})
-	saynn("You won the fight! Your weakened owner is on {npc.his} knees in front of you.")
+	saynn("Вы победили в схватке! Обессиленный хозяин стоит перед вами на {npc.his} коленях.")
 	talkModularOwnerToPC("SoftSlaveryAttackLost") #"Ugh.. so? You're still my {npc.npcSlave}."
 	addInfluenceResist()
-	saynn("{npc.name}'s influence over you has decreased!")
+	saynn("Влияние {npc.name} на вас уменьшилось!")
 	
 	addContinue("endEvent")
 
 func pcLost():
 	playAnimation(StageScene.Duo, "kneel", {npc=getOwnerID()})
-	saynn("You have lost the fight against your owner.")
+	saynn("Вы проиграли бой против своего хозяина.")
 	talkModularOwnerToPC("SoftSlaveryAttackWon") #"And now.. I'm gonna punish you."
-	saynn("Now you will have to endure what they have in mind for you.")
+	saynn("Теперь вам придётся вытерпеть всё то, что он задумал для вас.")
 	addContinue("startPunish")
 
 func pcLost_do(_id:String, _args:Array):

@@ -8,7 +8,7 @@ func _init():
 	}
 
 func getVisibleName():
-	return "Oral sex (Receiving)"
+	return "Оральный секс (Принимающий)"
 
 func getGoals(_sexEngine, _domFetishHolder, _dom, _sub):
 	var possible = [SexGoal.FuckOral]

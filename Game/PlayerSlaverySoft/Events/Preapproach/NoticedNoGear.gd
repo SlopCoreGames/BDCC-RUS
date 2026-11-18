@@ -17,13 +17,13 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 
 func start():
 	playStand()
-	saynn("Your owner walks up to you.. and hums.")
+	saynn("Твой хозяин подходит к тебе... и напевает под нос.")
 	talkModularOwnerToPC("SoftSlaveryNoticedNoGear") #Wait. Didn't I lock something onto you? I'm pretty sure I did. Where is it, {npc.npcSlave}?
-	saynn("Looks like {npc.name} isn't happy..")
+	saynn("Похоже, {npc.name} не в духе...")
 	talkModularOwnerToPC("SoftSlaveryNoticedNoGear2") #You know what that means. I will have to punish you.
 	
-	addButton("Accept", "Accept the punishment", "getPunished")
-	addButton("Resist!", "Resist the punishment!", "doResist")
+	addButton("Принять", "Принять наказание", "getPunished")
+	addButton("Сопротивляться!", "Сопротивляйся наказанию!", "doResist")
 
 func start_do(_id:String, _args:Array):
 	if(_id == "getPunished"):

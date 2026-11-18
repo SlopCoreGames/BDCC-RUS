@@ -35,17 +35,17 @@ func genTasks():
 
 func start():
 	playAnimation(StageScene.Grope, "tease", {npc=getOwnerID()})
-	saynn("Your owner {npc.name} approaches you, looking a little.. shy.")
+	saynn("Твой хозяин {npc.name} подходит к тебе, выглядя немного... застенчиво.")
 	talkModularOwnerToPC("SoftSlaveryTaskFuckOwner")
-	saynn("Looks like {npc.he} {npc.verb('want')} to submit to you.. for a bit. Your owner lists what {npc.he} {npc.verb('want')} you to do with {npc.him} during sex.")
+	saynn("Похоже, {npc.he} {npc.verb('want')} тебе.. на какое-то время. Твой хозяин перечисляет, что {npc.he} {npc.verb('want')} тебе делать с {npc.him} во время секса.")
 	
 	sayOwnerTaskInfo("{npc.name} wants you to do this to {npc.him}:")
 	
-	saynn("{npc.He} will probably get angry if you don't do it all..")
+	saynn("{npc.He} наверняка разозлится, если ты не сделаешь всё до конца..")
 	
-	addButton("Accept", "Try to do it", "obey")
-	addButton("Resist!", "You're not gonna do it", "resist")
-	addButton("Different?", "Ask the owner to give you different tasks", "askDifferent")
+	addButton("Принять", "Попробовать сделать всё", "obey")
+	addButton("Сопротивляться!", "Ты не собираешься этого делать", "resist")
+	addButton("Что-то другое?", "Попросить хозяина дать тебе другие задания", "askDifferent")
 	
 	
 func start_do(_id:String, _args:Array):
@@ -61,10 +61,10 @@ func start_do(_id:String, _args:Array):
 func obey():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER), npcAction="kneel"})
 	
-	saynn("You agree.. and so.. Your owner submits to you!")
-	saynn("Time to have some fun.")
+	saynn("Ты соглашаешься.. и вот.. Твой хозяин подчиняется тебе!")
+	saynn("Пора повеселиться.")
 	#addInfluenceObey(RNG.randf_range(0.05, 0.1))
-	addButton("Continue", "See what happens next", "startSex", ["pc", getRoleID(C_OWNER), SexType.DefaultSex, {}])
+	addButton("Продолжить", "Смотреть, что будет дальше", "startSex", ["pc", getRoleID(C_OWNER), SexType.DefaultSex, {}])
 	
 func obey_sexResult(_sexResult:SexEngineResult):
 	if(_sexResult.isSubUnconscious(getOwnerID())):
@@ -83,26 +83,26 @@ func obey_sexResult(_sexResult:SexEngineResult):
 
 func afterSex():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER)})
-	saynn("The sex has ended!")
+	saynn("Секс окончен!")
 	saynn(resultText)
 	talkModularOwnerToPC("SoftSlaveryTaskFuckOwnerGood")
-	saynn("It looks like your owner is satisfied!")
+	saynn("Похоже, твой хозяин удовлетворен!")
 	addInfluenceObey()
 	addContinue("endEvent")
 
 func failedSex():
 	playStand()
-	saynn("The sex has ended!")
+	saynn("Секс окончен!")
 	saynn(resultText)
 	talkModularOwnerToPC("SoftSlaveryTaskFuckOwnerBad")
-	saynn("Looks like your owner isn't satisfied with your actions..")
-	addButton("Obey", "Accept the punishment", "punish")
-	addButton("Resist!", "You're not gonna just accept the punishment", "resist")
+	saynn("Похоже, твой хозяин не в восторге от твоих действий..")
+	addButton("Повиноваться", "Принять наказание", "punish")
+	addButton("Сопротивляться!", "Ты не собираешься просто так принять наказание?", "resist")
 
 func madeDomUncon():
 	playAnimation(StageScene.SexStart, "defeated", {npc=getOwnerID()})
-	saynn("Oops, looks like your owner is weaker than you thought. Or maybe you did it on purpose..")
-	saynn("Either way, {npc.he} won't be able to punish you even if {npc.he} wanted to!")
+	saynn("Ой, похоже, твой хозяин слабее, чем ты думала. А может, ты сделала это специально...")
+	saynn("Так или иначе, {npc.he} не сможет наказать тебя, даже если {npc.he} очень захочет!")
 	addInfluenceResist()
 	addContinue("endEventOwnerUncon")
 

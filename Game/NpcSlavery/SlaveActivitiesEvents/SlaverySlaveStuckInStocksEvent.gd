@@ -25,7 +25,7 @@ func run(_triggerID, _args):
 			#if(_triggerID == Trigger.EnteringRoom):
 			#	addButton(("(!) " if npcSlavery.hasRandomEventToTrigger() else "")+character.getName(), character.getSmallDescription(), "do_check", [character])
 			#elif(_triggerID == Trigger.EnteringRoomWithSlave):
-			addButton(character.getName(), "Let your slave fuck this "+character.getSpeciesFullName()+"\n\n"+character.getSmallDescription(), "do_slave_fuck", [_args[1], character.getID()])
+			addButton(character.getName(), "Пусть твоя рабыня трахает это "+character.getSpeciesFullName()+"\n\n"+character.getSmallDescription(), "do_slave_fuck", [_args[1], character.getID()])
 	if(_args[0] == "fight_slutwall"):
 		for charID in slaves:
 			var character:DynamicCharacter = getCharacter(charID)
@@ -38,7 +38,7 @@ func run(_triggerID, _args):
 			#if(_triggerID == Trigger.EnteringRoom):
 			#	addButton(("(!) " if npcSlavery.hasRandomEventToTrigger() else "")+character.getName(), character.getSmallDescription(), "do_check_slut", [character])
 			#elif(_triggerID == Trigger.EnteringRoomWithSlave):
-			addButton(character.getName(), "Let your slave fuck this "+character.getSpeciesFullName()+"\n\n"+character.getSmallDescription(), "do_slave_fuck_slut", [_args[1], character.getID()])
+			addButton(character.getName(), "Пусть твой раб трахает это "+character.getSpeciesFullName()+"\n\n"+character.getSmallDescription(), "do_slave_fuck_slut", [_args[1], character.getID()])
 	
 	
 func getPriority():

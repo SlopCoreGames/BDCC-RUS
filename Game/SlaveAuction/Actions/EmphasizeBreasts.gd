@@ -7,7 +7,7 @@ func getActionType():
 	return AuctionActionType.Emphasize
 
 func getName() -> String:
-	return "Breasts"
+	return "Грудь"
 
 func getButtonDesc() -> String:
 	return "Really show off the slave's breasts.\n\nDoesn't reveal any preferences, has a negative effects on bidders who don't strongly prefer any of the presented traits."
@@ -15,19 +15,19 @@ func getButtonDesc() -> String:
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	if(_slaveTraits.has("BreastsSmall") && _slaveTraits["BreastsSmall"] > 0.0):
 		if(!_char.hasNonFlatBreasts()):
-			saynn("{presenter.You} gently {presenter.youVerb('cup')} slave's pecs, lifting them slightly and drawing attention to the male nips. {presenter.YourHis} hands glide over them with a touch that both reveals and emphasizes their beauty.")
+			saynn("{presenter.You} нежно {presenter.youVerb('cup')} грудные мышцы раба, слегка приподнимая их и привлекая внимание к мужским соскам. {presenter.YourHis} руки скользят по ним, касаясь их так, что это одновременно обнажает и подчеркивает их красоту.")
 			
 			sayPresenter("Neat, aren’t they? For those of you who appreciate raw powerful forms, these are perfect.")
 		else:
-			saynn("{presenter.You} gently {presenter.youVerb('cup')} slave's {slave.breasts}, lifting them slightly and drawing attention to their delicate size. {presenter.YourHis} hands glide over them with a touch that both reveals and emphasizes their beauty.")
+			saynn("{presenter.You} нежно {presenter.youVerb('cup')} {slave.breasts} раба, слегка приподнимая их и привлекая внимание к их изящному размеру. {presenter.YourHis} руки скользят по ним, касаясь их так, что это одновременно обнажает и подчеркивает их красоту.")
 			
 			sayPresenter("Petite, aren’t they? For those of you who appreciate a more subtle form, these are perfect.")
 	if(_slaveTraits.has("BreastsAverage") && _slaveTraits["BreastsAverage"] > 0.0):
-		saynn("{presenter.You} {presenter.youVerb('move')} closer to {slave.name}, cupping {slave.hisHer} {slave.breasts} in {presenter.YourHis} hands, lifting them slightly to give the bidders a clear view. {presenter.YouHe} {presenter.youHeVerb('run')} your thumbs over {slave.hisHer} nipples, making sure to highlight their firmness.")
+		saynn("{presenter.You} {presenter.youVerb('move')} ближе к {slave.name}, обхватывая {slave.hisHer} {slave.breasts} в {presenter.YourHis} руках и слегка приподнимая их, чтобы дать участникам торгов четкий обзор. {presenter.YouHe} {presenter.youHeVerb('run')} большими пальцами по {slave.hisHer} соскам, чтобы подчеркнуть их упругость.")
 	
 		sayPresenter("These are some beatiful, firm little babies. Trust me, they are incredibly fun to grope.")
 	if(_slaveTraits.has("BreastsHuge") && _slaveTraits["BreastsHuge"] > 0.0):
-		saynn("{presenter.You} {presenter.youVerb('approach', 'approaches')} {slave.name} before gripping {slave.hisHer} {slave.breasts} with both hands, lifting and squeezing them gently to emphasize their fullness. {presenter.YouHe} {presenter.youHeVerb('smile')} at the bidders as you continue to present the heavy curves to them.")
+		saynn("{presenter.You} {presenter.youVerb('approach', 'approaches')} {slave.name}, прежде чем сжать {slave.hisHer} {slave.breasts} обеими руками, слегка приподнимая и сжимая их, чтобы подчеркнуть их пышность. {presenter.YouHe} {presenter.youHeVerb('smile')} на участников торгов, продолжая демонстрировать им эти тяжелые изгибы.")
 	
 		sayPresenter("Look at the size of these! Full, soft, and incredibly fun to squeeze. You won’t find a better pair, trust me.")
 

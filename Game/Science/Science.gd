@@ -51,7 +51,7 @@ const DIFFICULTY_VERY_HARD = 3
 
 var upgradesInfo:Dictionary = {
 	"TFAcceleratePill": {
-		name = "QuickShift Pill",
+		name = "Таблетка «Быстрая смена»",
 		desc = "Allows you to make 'QuickShift' pills that speed up the process of transformation greatly.",
 		cost = 15,
 		requiredUpgrades = [],
@@ -64,7 +64,7 @@ var upgradesInfo:Dictionary = {
 		},
 	},
 	"TFApplyPill": {
-		name = "MorphIn Pill",
+		name = "Таблетка «Морфинг внутрь»",
 		desc = "Allows you to make 'MorphIn' pills that make all transformations permanent.",
 		cost = 30,
 		requiredUpgrades = ["TFAcceleratePill"],
@@ -78,7 +78,7 @@ var upgradesInfo:Dictionary = {
 		},
 	},
 	"TFUndoPill": {
-		name = "MorphAway Pill",
+		name = "Таблетка «Морфинг вовне»",
 		desc = "Allows you to make 'MorphAway' pills that undo all transformations.",
 		cost = 50,
 		requiredUpgrades = ["TFAcceleratePill"],
@@ -94,7 +94,7 @@ var upgradesInfo:Dictionary = {
 	
 	
 	"BasicPills": {
-		name = "Basic pills",
+		name = "Базовые таблетки",
 		desc = "Lets you use fluids to create some of the non-transformative drugs: Heat pills, Breeder pills, Birth control pills, Anaphrodisiac pills.",
 		cost = 25,
 		requiredUpgrades = [],
@@ -123,7 +123,7 @@ var upgradesInfo:Dictionary = {
 		},
 	},
 	"EnergyDrink": {
-		name = "Energy drink",
+		name = "Энергетик",
 		desc = "Download a recipe of the most generic energy drink, allowing you to create them.",
 		cost = 25,
 		requiredUpgrades = ["BasicPills"],
@@ -137,7 +137,7 @@ var upgradesInfo:Dictionary = {
 		},
 	},
 	"painkillers": {
-		name = "Painkillers",
+		name = "Обезболивающее",
 		desc = "Allows you to make painkillers.",
 		cost = 25,
 		requiredUpgrades = ["BasicPills"],
@@ -151,7 +151,7 @@ var upgradesInfo:Dictionary = {
 		},
 	},
 	"AdvancedPills": {
-		name = "Advanced pills",
+		name = "Продвинутые таблетки",
 		desc = "Allows you to make some advanced pills.",
 		cost = 35,
 		requiredUpgrades = ["EnergyDrink", "painkillers"],
@@ -165,7 +165,7 @@ var upgradesInfo:Dictionary = {
 		},
 	},
 	"strangepill": {
-		name = "Strange pill",
+		name = "Странная таблетка",
 		desc = "As you unlock more and more pills, it's becoming harder to find ones that you haven't seen before. This upgrade allows you to spend some Science Points and a lot of fluids to try to create a new strange pill from scratch by generating and assembling random molecular structures. Each pill will cost more than the last!",
 		cost = 50,
 		requiredUpgrades = ["painkillers", "EnergyDrink"],
@@ -184,7 +184,7 @@ var upgradesInfo:Dictionary = {
 	
 	
 	"cheaperCrafts1": {
-		name = "Lab efficiency 1",
+		name = "Эффективность лаборатории 1",
 		desc = "Lowers the amount of fluids you need to create something by 10%.",
 		cost = 10,
 		drugAmount = 2,
@@ -193,14 +193,14 @@ var upgradesInfo:Dictionary = {
 	},
 	
 	"shower1": {
-		name = "Smart Shower",
+		name = "Умный душ",
 		desc = "Install a special shower that will wash off any fluids from your body and deposit them into the fluid tanks.",
 		cost = 20,
 		requiredUpgrades = ["cheaperCrafts1"],
 	},
 	
 	"cheaperCrafts2": {
-		name = "Lab efficiency 2",
+		name = "Эффективность лаборатории 2",
 		desc = "Lowers the amount of fluids you need to create something by an additional 15%.",
 		cost = 35,
 		drugAmount = 5,
@@ -209,7 +209,7 @@ var upgradesInfo:Dictionary = {
 	},
 	
 	"shower2": {
-		name = "Shower Douche",
+		name = "Душ для заключенных",
 		desc = "Upgrade the shower, allowing it to also collect fluids from inside your holes!",
 		cost = 20,
 		requiredUpgrades = ["shower1", "cheaperCrafts2"],
@@ -217,7 +217,7 @@ var upgradesInfo:Dictionary = {
 	},
 	
 	"soap": {
-		name = "Bio-Scrub Soap",
+		name = "Био-очищающее мыло",
 		desc = "Unlock a recipe for the bio-scrub soap that is capable of removing permanent bodywritings.",
 		cost = 15,
 		requiredUpgrades = ["shower2", "AdvancedPills"],
@@ -232,7 +232,7 @@ var upgradesInfo:Dictionary = {
 	},
 	
 	"cheaperCrafts3": {
-		name = "Lab efficiency 3",
+		name = "Эффективность лаборатории 3",
 		desc = "Lowers the amount of fluids you need to create something by an additional 25%.",
 		cost = 60,
 		drugAmount = 10,
@@ -241,7 +241,7 @@ var upgradesInfo:Dictionary = {
 	},
 	
 	"configurableDrugs": {
-		name = "Custom drugs",
+		name = "Кастомные препараты",
 		desc = "Allows you to 'configure' certain types of drugs when making them.",
 		cost = 100,
 		requiredUpgrades = ["cheaperCrafts3"],
@@ -250,7 +250,7 @@ var upgradesInfo:Dictionary = {
 	
 	
 	"tanksUpgrade1": {
-		name = "Tanks capacity 1",
+		name = "Объем танков 1",
 		desc = "Expand the lab and install bigger fluid tanks that will hold more fluids.",
 		cost = 20,
 		requiredUpgrades = [],
@@ -258,14 +258,14 @@ var upgradesInfo:Dictionary = {
 	},
 	
 	"fluidInspector": {
-		name = "Fluid inspector",
+		name = "Инспектор жидкостей",
 		desc = "Install a special scanner that will allow you to closely inspect any fluid container. It will show you the DNA of every fluid in the selected container",
 		cost = 20,
 		requiredUpgrades = ["tanksUpgrade1"],
 	},
 	
 	"tanksUpgrade2": {
-		name = "Tanks capacity 2",
+		name = "Объем танков 2",
 		desc = "Expand the lab and install bigger fluid tanks that will hold more fluids.",
 		cost = 40,
 		requiredUpgrades = ["tanksUpgrade1"],
@@ -273,20 +273,20 @@ var upgradesInfo:Dictionary = {
 	},
 	
 	"fluidFilter": {
-		name = "Fluid filter",
+		name = "Фильтр жидкости",
 		desc = "Install a special fluid filter machine that will allow you to filter out selected fluids from your fluid containers.",
 		cost = 20,
 		requiredUpgrades = ["tanksUpgrade2"],
 	},
 	"bluespaceStash": {
-		name = "Bluespace Stash",
+		name = "Заначка в блюспейсе",
 		desc = "Allows you to access your private stash from inside the lab!",
 		cost = 30,
 		requiredUpgrades = ["tanksUpgrade2"],
 	},
 	
 	"tanksUpgrade3": {
-		name = "Tanks capacity 3",
+		name = "Емкость баков: 3",
 		desc = "Expand the lab and install bigger fluid tanks that will hold more fluids.",
 		cost = 60,
 		requiredUpgrades = ["tanksUpgrade2"],
@@ -294,32 +294,32 @@ var upgradesInfo:Dictionary = {
 	},
 	
 	"advBreastPump": {
-		name = "Breast Pump Mk2",
+		name = "Сцеживающий насос Mk2",
 		desc = "Unlocks a prototype of an advanced breast pump that you can buy in the medical vendomat.",
 		cost = 50,
 		requiredUpgrades = ["tanksUpgrade3"],
 	},
 	"advPenisPump": {
-		name = "Penis Pump Mk2",
+		name = "Насос для пениса Mk2",
 		desc = "Unlocks a prototype of an advanced penis pump that you can buy in the medical vendomat.",
 		cost = 50,
 		requiredUpgrades = ["tanksUpgrade3"],
 	},
 	"advPlasticBottle": {
-		name = "Bluespace Plastic Bottle",
+		name = "Пластиковая бутылка Bluespace",
 		desc = "Unlocks a bluespace plastic bottle that you can buy in the medical vendomat. This bottle can store 100x as much fluids!",
 		cost = 50,
 		requiredUpgrades = ["advBreastPump", "advPenisPump"],
 	},
 	"advStrapon": {
-		name = "Bluespace strapon",
+		name = "Страпон Bluespace",
 		desc = "Unlocks an advanced strapon and a portal chastity cage! The advanced strapon has a portal ring on it that allows it to 'project' any penis that is available in the bluespace. Keep in mind that these are highly unstable.",
 		cost = 50,
 		requiredUpgrades = ["bluespaceStash", "advPenisPump"],
 	},
 	
 	"tanksUpgrade4": {
-		name = "Tanks capacity 4",
+		name = "Емкость баков: 4",
 		desc = "Expand the lab and install bigger fluid tanks that will hold more fluids.",
 		cost = 100,
 		requiredUpgrades = ["tanksUpgrade3"],
@@ -327,20 +327,20 @@ var upgradesInfo:Dictionary = {
 	},
 	
 	"milkingBetter1": {
-		name = "Milking efficiency 1",
+		name = "Эффективность сцеживания 1",
 		desc = "Install a better equipment in the milking room. Unlocks more ways for Eliza to milk you, makes ALL kinds of milking 25% more efficient.",
 		cost = 20,
 		requiredUpgrades = [],
 	},
 	"milkingBetter2": {
-		name = "Milking efficiency 2",
+		name = "Эффективность сцеживания 2",
 		desc = "Install an even more better equipment in the milking room. Unlocks more ways for Eliza to milk you, makes ALL kinds of milking 75% more efficient.",
 		cost = 30,
 		drugAmount = 5,
 		requiredUpgrades = ["milkingBetter1"],
 	},
 	"milkingBetter3": {
-		name = "Milking efficiency 3",
+		name = "Эффективность сцеживания 3",
 		desc = "Install the best equipment in the milking room. Unlocks ability for Eliza to 'quick milk' you, makes ALL kinds of milking 100% more efficient.",
 		cost = 50,
 		drugAmount = 10,
@@ -349,20 +349,20 @@ var upgradesInfo:Dictionary = {
 	
 	
 	"unlimitedFluidStorage": {
-		name = "Tanks capacity +INF!",
+		name = "Емкость баков: +БЕСКОНЕЧНОСТЬ!",
 		desc = "Install special BLUESPACE fluid tanks that will hold a shit ton of fluids!",
 		cost = 250,
 		requiredUpgrades = ["milkingBetter3", "tanksUpgrade4", "advPlasticBottle", "configurableDrugs", "strangepill", "bluespaceStash"],
 	},
 	"drugDenLoot": {
-		name = "Strong Nanobots!",
+		name = "Мощные наноботы!",
 		desc = "Upgrade Eliza's nanobots, allowing them to extract you with ALL items that you have found during the drug den exploration!",
 		cost = 250,
 		requiredUpgrades = ["milkingBetter3", "tanksUpgrade4", "advPlasticBottle", "configurableDrugs", "strangepill", "bluespaceStash"],
 	},
 	
 	"tentNeuroLink": {
-		name = "Neuro-Link",
+		name = "Нейролинк",
 		desc = "Unlocks a recipe for a special device that will let you temporarily gain control of a tentacle monster.",
 		cost = 50,
 		requiredUpgrades = [],
@@ -376,14 +376,14 @@ var upgradesInfo:Dictionary = {
 		moduleCheck = "ElizaModule", # ElizaModule is gonna be asked to check if this upgrade is visible
 	},
 	"oviStrapons": {
-		name = "Ovipositor strapons",
+		name = "Стрáпы-овипозиторы",
 		desc = "Unlocks 2 prototype strapons that are capable of doing oviposition! You will be able to buy them from the medical vendomat.",
 		cost = 30,
 		requiredUpgrades = [],
 		moduleCheck = "ElizaModule",
 	},
 	"eggPills": {
-		name = "Egg pills",
+		name = "Яйцевые капсулы",
 		desc = "Unlocks two new pills: first one dramatically accelerates egg development, while the other one constructs a shell around any fetus, transforming live birth into egg-laying.",
 		cost = 20,
 		requiredUpgrades = [],

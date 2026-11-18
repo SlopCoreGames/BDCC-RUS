@@ -11,7 +11,7 @@ func _init():
 	pointsOnUnlock = 5
 
 func getName() -> String:
-	return "Makes you thinner"
+	return "Делает тебя стройнее"
 
 func getPillName() -> String:
 	return "SliMM"
@@ -53,7 +53,7 @@ func getPillOptions() -> Dictionary:
 		posVals.append([theVal, str(theVal)+"%"])
 	return {
 		"target": {
-			name = "Target",
+			name = "Цель",
 			desc = "Whats the final thickness should be like (This drug can only lower thickness).",
 			value = 50,
 			values = posVals,

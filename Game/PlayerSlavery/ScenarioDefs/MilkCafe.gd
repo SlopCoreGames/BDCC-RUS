@@ -4,7 +4,7 @@ func _init():
 	id = "MilkCafe"
 
 func getVisibleName() -> String:
-	return "Milking slave"
+	return "Рабыня-доярка"
 
 func getVisibleDesc() -> String:
 	return "You will be sold to a lovely couple that runs a cafe that is in dire need of milk and/or seed."
@@ -18,19 +18,19 @@ func createSlavery():
 func getEndings() -> Dictionary:
 	return {
 		"earned": {
-			name = "Pay off the debt",
+			name = "Выплатить долг",
 			desc = "Be a good cow/bull",
 		},
 		"annoyed": {
-			name = "Buying you was a mistake",
+			name = "Купить тебя было ошибкой",
 			desc = "Be the most annoying thing imaginable",
 		},
 		"escaped": {
-			name = "Teamwork makes the dream work",
+			name = "Командная работа — залог успеха",
 			desc = "Escape with the help of other slaves",
 		},
 		"officer": {
-			name = "Special treat",
+			name = "Особое угощение",
 			desc = "Get the attention of a hero",
 		},
 	}

@@ -4,7 +4,7 @@ func _init():
 	id = SexGoal.SpankSub
 
 func getVisibleName():
-	return "Spank sub"
+	return "Подчиняться шлепкам"
 
 func isPossible(_sexEngine, _domInfo, _subInfo, _data):
 	if(_sexEngine.noViolence || _subInfo.isUnconscious()):

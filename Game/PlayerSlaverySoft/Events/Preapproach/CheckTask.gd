@@ -22,12 +22,12 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 
 func start():
 	playStand()
-	saynn("You get swiftly approached by {npc.name}, your owner! And they don't look very happy.")
+	saynn("К тебе стремительно подходит {npc.name}, твой хозяин! И вид у него совсем не радостный.")
 	talkModularOwnerToPC("SoftSlaveryCheckTaskFail")
-	saynn("Looks like you are about to be punished..")
+	saynn("Похоже, тебя сейчас будут наказывать...")
 	
-	addButton("Okay", "Agree to be punished", "startPunish")
-	addButton("Resist!", "Resist the punishment", "startResist")
+	addButton("Окей", "Согласиться на наказание", "startPunish")
+	addButton("Сопротивляться!", "Сопротивляться наказанию", "startResist")
 
 func start_do(_id:String, _args:Array):
 	if(_id == "startPunish"):
@@ -37,9 +37,9 @@ func start_do(_id:String, _args:Array):
 
 func allcompleted():
 	playStand()
-	saynn("You get approached by {npc.name}, your owner.")
+	saynn("К тебе подходит {npc.name}, твой хозяин.")
 	talkModularOwnerToPC("SoftSlaveryCheckTaskGood")
-	saynn("{npc.He} {npc.verb('seem')} satisfied.")
+	saynn("{npc.He} {npc.verb('seem')} доволен.")
 	addInfluenceObey()
 	talkModularOwnerToPC("SoftSlaveryCheckTaskGood2")
 	addContinue("endEvent")

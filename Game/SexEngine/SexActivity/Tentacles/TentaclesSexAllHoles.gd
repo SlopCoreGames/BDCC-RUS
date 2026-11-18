@@ -7,7 +7,7 @@ const POSE_ALLHOLES = "allholes"
 
 const POSES = {
 	POSE_ALLHOLES: {
-		name = "All holes",
+		name = "Все отверстия",
 		anim = StageScene.TentaclesSex,
 		anims = ["tease", "inside", "sex", "fast"],
 	},

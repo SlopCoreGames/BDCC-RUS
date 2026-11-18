@@ -2,7 +2,7 @@ extends SubGameWorld
 
 
 func _on_CBStairs1_onEnter(room):
-	room.addButton("Go up", "Go up to the main hall", "goup")
+	room.addButton("Вверх", "Подняться в главный зал", "goup")
 
 func _on_CBStairs1_onReact(_room, key):
 	if(key == "goup"):
@@ -11,7 +11,7 @@ func _on_CBStairs1_onReact(_room, key):
 
 
 func _on_CBStairs2_onEnter(room):
-	room.addButton("Go up", "Go up to the main hall", "goup")
+	room.addButton("Вверх", "Подняться в главный зал", "goup")
 
 
 func _on_CBStairs2_onReact(_room, key):
@@ -57,14 +57,14 @@ func _on_CellblockRoom11_onPreEnter(room):
 		
 		room.roomName = "My cell"
 		
-		room.addButton("Stash", "You can hide something in your cell", "stash")
+		room.addButton("Заначка", "В своей камере можно что-нибудь спрятать", "stash")
 		
 		if(!GM.main.playerHasCompanions()):
-			room.addButton("Rest", "Lay down on the bed", "rest")
+			room.addButton("Отдохнуть", "Прилечь на кровать", "rest")
 		# Debug testing, free to remove
-		#room.addButton("Override", "Override pc", "over")
-		#room.addButton("Clear", "Clear pc", "clearover")
-		#room.addButton("Flashback test", "Test", "flashback")
+		#room.addButton("Перезапись", "Перезаписать ПК", "over")
+		#room.addButton("Очистить", "Очистить ПК", "clearover")
+		#room.addButton("Тестовое воспоминание", "Тест", "flashback")
 	else:
 		room.roomDescription = "This is not your cell"
 		room.roomName = "Cell"

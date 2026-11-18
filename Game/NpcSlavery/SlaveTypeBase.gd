@@ -4,7 +4,7 @@ class_name SlaveTypeBase
 var id = "ERROR"
 
 func getVisibleName():
-	return "CHANGE ME"
+	return "ИЗМЕНИ МЕНЯ"
 
 func getVisibleDesc():
 	return "CHANGE ME"

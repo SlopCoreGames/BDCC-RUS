@@ -7,7 +7,7 @@ func getActionType():
 	return AuctionActionType.Mind
 
 func getName() -> String:
-	return "Pet skill"
+	return "Навык питомца"
 
 func getButtonDesc() -> String:
 	return "Tell the bidders about the slave’s extensive training as a Pet.\n\n[b]Might[/b] reveal 1 personality preference of each bidder."

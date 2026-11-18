@@ -8,7 +8,7 @@ func _init():
 	pointsOnUnlock = 10
 
 func getName() -> String:
-	return "Grows a pussy"
+	return "Выращивает киску"
 
 func getPillName() -> String:
 	return "P-Bloom"

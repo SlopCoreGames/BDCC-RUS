@@ -16,7 +16,7 @@ func getName() -> String:
 	return "ERROR"
 
 func getDescription() -> String:
-	return "FILL ME"
+	return "ЗАПОЛНИ МЕНЯ"
 
 func getCompletionString() -> String:
 	return ""

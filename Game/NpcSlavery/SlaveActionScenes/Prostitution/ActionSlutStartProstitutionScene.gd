@@ -21,22 +21,22 @@ func _run():
 		
 		var npcSlave:NpcSlave = npc.getNpcSlavery()
 		if(npcSlave.getWorkEfficiency() <= 0.25):
-			saynn("{npc.name} is too tired to do any prostitution today. Give {npc.him} some rest.")
+			saynn("{npc.name} слишком устала, чтобы сегодня проститутировать. Дайте {npc.him} отдохнуть.")
 			
-			addButton("Continue", "Oh well", "endthescene")
+			addButton("Продолжить", "Ну и ладно", "endthescene")
 			return
 		
-		saynn("Do you want to let {npc.name} out into the prison so {npc.he} can whore {npc.himself} out?")
-		saynn("{npc.He} will return to you after some time and give you {npc.his} earnings. How much {npc.he} earns depends on {npc.his} slut level. The higher it is, the more {npc.he} will earn and the longer {npc.he} will work without needing a break.")
+		saynn("Выпустить {npc.name} в тюрьму, чтобы {npc.he} могла трахать {npc.himself} на панели?")
+		saynn("{npc.He} вернется к вам через некоторое время и принесет выручку от {npc.his}. Сколько заработает {npc.he}, зависит от уровня шлюховатости {npc.his}. Чем он выше, тем больше заработает {npc.he} и тем дольше {npc.he} сможет работать без перерыва.")
 		
 
-		addButton("Prostitution!", "Let your slut do some work", "start_whore")
-		addButton("Cancel", "You changed your mind", "endthescene")
+		addButton("Проституция!", "Заставить свою шлюху поработать", "start_whore")
+		addButton("Отмена", "Вы передумали", "endthescene")
 	
 	if(state == "start_whore"):
-		saynn("You order your slut to get out there and earn you some creds!")
+		saynn("Вы приказываете своей шлюхе выйти в свет и заработать вам кредитов!")
 		
-		addButton("Continue", "See what happens next", "do_start_whore")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_start_whore")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

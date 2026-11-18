@@ -2,7 +2,7 @@ extends SubGameWorld
 
 
 func _on_MainStairs1_onEnter(room):
-	room.addButton("Go down", "Go down to the cells", "godown")
+	room.addButton("Спуститься вниз", "Спуститься в камеры", "godown")
 
 
 func _on_MainStairs1_onReact(_room, key):
@@ -12,7 +12,7 @@ func _on_MainStairs1_onReact(_room, key):
 
 
 func _on_MainStairs2_onEnter(room):
-	room.addButton("Go down", "Go down to the cells", "godown")
+	room.addButton("Спуститься вниз", "Спуститься в камеры", "godown")
 
 
 func _on_MainStairs2_onReact(_room, key):
@@ -23,9 +23,9 @@ func _on_MainStairs2_onReact(_room, key):
 
 func _on_MainCanteen_onEnter(room):
 	if(!GM.main.getFlag("Canteen_PlayerAteToday", false)):
-		room.addButton("Eat", "See what you can catch", "eat")
+		room.addButton("Поесть", "Посмотреть, что можно поймать", "eat")
 	else:
-		room.addDisabledButton("Eat", "You already ate today")
+		room.addDisabledButton("Поесть", "Ты уже сегодня ел")
 
 
 func _on_MainCanteen_onReact(room, key):
@@ -37,9 +37,9 @@ func _on_MainDressingRoom_onEnter(room):
 	if(GM.main.playerHasCompanions()):
 		return
 	if(GM.pc.isFullyNaked()):
-		room.addDisabledButton("Undress", "You're already naked")
+		room.addDisabledButton("Раздеться", "Ты и так голышом")
 	else:
-		room.addButton("Undress", "Take off your clothes and go take a shower", "shower")
+		room.addButton("Раздеться", "Сними одежду и иди в душ", "shower")
 
 func _on_MainDressingRoom_onReact(room, key):
 	if(key == "shower"):
@@ -49,9 +49,9 @@ func _on_MainShowerRoom_onEnter(room):
 	if(GM.main.playerHasCompanions()):
 		return
 	if(GM.pc.isFullyNaked()):
-		room.addButton("Shower", "Take a shower", "shower")
+		room.addButton("Душ", "Принять душ", "shower")
 	else:
-		room.addDisabledButton("Shower", "You need to be naked")
+		room.addDisabledButton("Душ", "Тебе нужно быть голышом")
 
 func _on_MainShowerRoom_onReact(room, key):
 	if(key == "shower"):
@@ -59,7 +59,7 @@ func _on_MainShowerRoom_onReact(room, key):
 
 
 func _on_MainElevator_onEnter(room):
-	room.addButton("Elevator", "Use it", "elevator")
+	room.addButton("Лифт", "Используй это", "elevator")
 
 func _on_MainElevator_onReact(room, key):
 	if(key == "elevator"):
@@ -67,19 +67,19 @@ func _on_MainElevator_onReact(room, key):
 
 
 func _on_MainVendomatRoom_onEnter(room):
-	room.saynn("This corner has a working Vendo-Mat here. It has been battered to hell, but it looks like it will work fine.")
+	room.saynn("В этом углу стоит рабочий вендомат. Он избит до полусмерти, но, похоже, всё ещё будет нормально работать.")
 	
-	room.addButton("Vendomat", "Approach it", "vendomat")
+	room.addButton("Вендомат", "Подойти к нему", "vendomat")
 
 func _on_MainVendomatRoom_onReact(room, key):
 	if(key == "vendomat"):
 		room.runScene("VendomatScene")
 
 func _on_MainLaundry_onEnter(room):
-	room.saynn("You also see a vendomat nearby. This one seems to be selling some kind of clothing")
+	room.saynn("Рядом вы также видите вендомат. Кажется, в этом продается какая-то одежда")
 	
-	room.addButton("Uniform vendor", "Approach the vendor", "uniform")
-	room.addButton("Vendomat", "Approach it", "vendomat")
+	room.addButton("Торговец униформой", "Подойти к торговцу", "uniform")
+	room.addButton("Вендомат", "Подойти к нему", "vendomat")
 
 func _on_MainLaundry_onReact(room, key):
 	if(key == "uniform"):
@@ -90,9 +90,9 @@ func _on_MainLaundry_onReact(room, key):
 
 
 func _on_MainGreenhousesJumpable_onEnter(room):
-	#room.saynn("You look over the railing and see that the drop is not that high.")
+	#room.saynn("Вы заглядываете за перила и видите, что высота обрыва не такая уж и большая.")
 	
-	room.addButton("Vault over", "Seems like you can jump down to the yard here", "vault")
+	room.addButton("Прыжок через ограду", "Похоже, отсюда можно спрыгнуть во внутренний двор", "vault")
 
 
 func _on_MainGreenhousesJumpable_onReact(_room, key):
@@ -102,7 +102,7 @@ func _on_MainGreenhousesJumpable_onReact(_room, key):
 		GM.main.addMessage("You successfully jumped over the railing")
 
 func _on_MainHallRoom9_onEnter(_room):
-	#room.addButton("Try stocks", "Stick your head into them out of curiosity", "stocks")
+	#room.addButton("Попробовать колодки", "Просунуть в них голову из любопытства", "stocks")
 	pass
 
 func _on_MainHallRoom9_onReact(_room, _key):
@@ -112,8 +112,8 @@ func _on_MainHallRoom9_onReact(_room, _key):
 
 
 func _on_MainHallRoom21_onEnter(_room):
-	#room.addButton("Mirror", "Change your haircut", "mirror")
-	#room.addButton("Toilet", "Find an empty stall", "toilet")
+	#room.addButton("Зеркало", "Изменить прическу", "mirror")
+	#room.addButton("Туалет", "Найти свободную кабинку", "toilet")
 	pass
 
 

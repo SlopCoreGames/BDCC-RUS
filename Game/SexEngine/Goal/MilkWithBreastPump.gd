@@ -4,7 +4,7 @@ func _init():
 	id = SexGoal.MilkWithBreastPump
 
 func getVisibleName():
-	return "Use breast pump on"
+	return "Использовать молокоотсос на @@B*@@"
 
 func isPossible(_sexEngine, _domInfo, _subInfo, _data):
 	if(_domInfo.getChar().hasBoundArms() || _domInfo.getChar().hasBlockedHands()):

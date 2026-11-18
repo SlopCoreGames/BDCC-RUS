@@ -38,15 +38,15 @@ func getTopicValue(_topicID, _pc):
 
 func getVisibleName(_topicID):
 	if(_topicID == InterestTopic.FullyNaked):
-		return "complete nudity"
+		return "полная нагота"
 	if(_topicID == InterestTopic.ExposedPussy):
-		return "naked pussy"
+		return "голая киска"
 	if(_topicID == InterestTopic.ExposedAnus):
-		return "exposed anus"
+		return "открытый анус"
 	if(_topicID == InterestTopic.ExposedBreasts):
-		return "naked breasts"
+		return "голая грудь"
 	if(_topicID == InterestTopic.ExposedCock):
-		return "exposed cock"
+		return "обнаженный член"
 	if(_topicID == InterestTopic.ExposedPanties):
 		return "panties"
 	if(_topicID == InterestTopic.ExposedBra):

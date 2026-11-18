@@ -170,7 +170,7 @@ func doFirstPendingTransformation(_context:Dictionary, _isShort:bool = false) ->
 	if(foundTF == null):
 		return {
 			success = false,
-			text = "COULDN'T TRANSFORM ANYTHING!",
+			text = "НИЧЕГО НЕ ПОЛУЧИЛОСЬ ТРАНСФОРМИРОВАТЬ!",
 		}
 	
 	var newEffects:Array = foundResult["effects"] if foundResult.has("effects") else []

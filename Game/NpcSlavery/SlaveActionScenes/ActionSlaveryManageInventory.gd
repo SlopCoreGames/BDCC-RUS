@@ -22,14 +22,14 @@ func _run():
 	if(state == ""):
 		addCharacter(npcID)
 		
-		saynn("What do you want to do?")
+		saynn("Что ты хочешь сделать?")
 		
 		#var items = getCharacter(npcID).getInventory().getAllItems()
 		
-		say("{npc.name}'s equipped items:\n")
+		say("{npc.name} экипировано:\n")
 		for slot in InventorySlot.getAll():
 			if(!npc.getInventory().hasSlotEquipped(slot) && npc.invCanEquipSlot(slot)):
-				#say(InventorySlot.getVisibleName(slot)+": "+"Nothing"+"\n")
+				#say(InventorySlot.getVisibleName(slot)+": "+"Ничего"+"\n")
 				continue
 			if(!npc.invCanEquipSlot(slot)):
 				continue
@@ -43,12 +43,12 @@ func _run():
 		var itemNames = []
 		for item in items:
 			itemNames.append(item.getStackName())
-		say("{npc.name}'s stored items:\n")
+		say("{npc.name} хранит в инвентаре:\n")
 		say(Util.join(itemNames, ", "))
 		
-		addButton("Give", "Give your slave something", "hideitemmenu")
-		addButton("Take/Equip", "Take something from your slave or make them equip/unequip something", "takeitemmenu")
-		addButton("Step away", "You're done", "endthescene")
+		addButton("Дать", "Дать рабыне что-нибудь", "hideitemmenu")
+		addButton("Взять/Экипировать", "Забрать у рабыни или заставить её надеть/снять вещь", "takeitemmenu")
+		addButton("Отойти", "Готово", "endthescene")
 	if(state == "hideitemmenu"):
 		var theItems = []
 		theItems.append_array(GM.pc.getInventory().getItems())
@@ -63,7 +63,7 @@ func _run():
 		var _ok = inventory.connect("onItemSelected", self, "onInventoryItemSelected")
 		var _ok2 = inventory.connect("onInteractWith", self, "onInventoryItemInteracted")
 		var _ok3 = inventory.connect("onInteractWithGroup", self, "onInventoryItemGroupInteracted")
-		addButton("Back", "Go back", "")
+		addButton("Назад", "Назад", "")
 	
 	if(state == "takeitemmenu"):
 		var inventory = inventoryScreenScene.instance()
@@ -73,12 +73,12 @@ func _run():
 		var _ok = inventory.connect("onItemSelected", self, "onInventoryItemSelected")
 		var _ok2 = inventory.connect("onInteractWith", self, "onInventoryItemInteracted")
 		var _ok3 = inventory.connect("onInteractWithGroup", self, "onInventoryItemGroupInteracted")
-		addButton("Back", "Go back", "")
+		addButton("Назад", "Назад", "")
 	
 	if(state == "item_toggle_message"):
 		saynn(itemPutonMessage)
 		
-		addButton("Continue", "See what happens next", "takeitemmenu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "takeitemmenu")
 
 func _react(_action: String, _args):
 	if(_action == "hideitem"):
@@ -150,7 +150,7 @@ func _react(_action: String, _args):
 func onInventoryItemSelected(item: ItemBase):
 	if(state == "hideitemmenu"):
 		GM.ui.clearButtons()
-		addButton("Back", "Go back", "")
+		addButton("Назад", "Назад", "")
 		
 		if(item.canCombine() && item.getAmount() > 1):
 			var amounts = [1, 2, 3, 4, 5, int(item.getAmount() * 0.5)]
@@ -163,10 +163,10 @@ func onInventoryItemSelected(item: ItemBase):
 					continue
 				checkedAmounts[str(amount)] = true
 				
-				addButton("Give "+str(amount), "Give this amount", "stashx", [item, amount])
+				addButton("Дать "+str(amount), "Дать это количество", "stashx", [item, amount])
 	if(state == "takeitemmenu"):
 		GM.ui.clearButtons()
-		addButton("Back", "Go back", "")
+		addButton("Назад", "Назад", "")
 		
 		if(item.canCombine() && item.getAmount() > 1):
 			var amounts = [1, 2, 3, 4, 5, int(item.getAmount() * 0.5)]
@@ -179,10 +179,10 @@ func onInventoryItemSelected(item: ItemBase):
 					continue
 				checkedAmounts[str(amount)] = true
 				
-				addButton("Take "+str(amount), "Take this amount", "takex", [item, amount])
+				addButton("Взять "+str(amount), "Взять столько", "takex", [item, amount])
 		else:
 			if(!item.isWornByWearer()):
-				addButton("Take", "Take this item", "taketheitem", [item])
+				addButton("Забрать", "Забрать этот предмет", "taketheitem", [item])
 
 func tryToggleWornItem(item:ItemBase):
 	if(item.getClothingSlotSafe().empty()):
@@ -231,7 +231,7 @@ func onInventoryItemInteracted(item: ItemBase):
 			inv.selectedItem = null
 			inv.updateSelectedInfo()
 			GM.ui.clearButtons()
-			addButton("Back", "Don't do anything", "")
+			addButton("Назад", "Ничего не делать", "")
 		var theItems = []
 		theItems.append_array(GM.pc.getInventory().getItems())
 		#if(GM.pc.getCredits() > 0):
@@ -261,7 +261,7 @@ func onInventoryItemInteracted(item: ItemBase):
 			inv.selectedItem = null
 			inv.updateSelectedInfo()
 			GM.ui.clearButtons()
-			addButton("Back", "Don't do anything", "")
+			addButton("Назад", "Ничего не делать", "")
 		#inv.setItems(npc.getInventory().getAllItems(), "take")
 		inv.setItems(npc.getInventory().getItemsAndEquippedItemsTogetherGrouped(), "equiptake")
 

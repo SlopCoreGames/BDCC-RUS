@@ -11,7 +11,7 @@ func _init():
 	rewardHint = 2
 
 func getVisibleName():
-	return "Headpats"
+	return "Поглаживания по голове"
 
 func getVisibleDesc():
 	return "Give your slave a pat on the head"
@@ -20,7 +20,7 @@ func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var character:DynamicCharacter = GlobalRegistry.getCharacter(_slaveID)
 	var npcSlavery:NpcSlave = character.getNpcSlavery()
 	
-	var text = "You offer {npc.name} a few soothing headpats for {npc.his} efforts.\n\n"
+	var text = "Вы ласково гладите {npc.name} по голове, поощряя {npc.his} старания.\n\n"
 	
 	var deservesPunishment = false
 	

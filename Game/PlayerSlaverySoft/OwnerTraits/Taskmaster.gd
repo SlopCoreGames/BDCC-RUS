@@ -4,7 +4,7 @@ func _init():
 	id = "Taskmaster"
 
 func getVisibleName() -> String:
-	return "Taskmaster"
+	return "Надсмотрщик"
 
 func getVisibleDescription() -> String:
 	return "The owner really likes to give their slave tasks to do."

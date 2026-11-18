@@ -12,7 +12,7 @@ func _init():
 func getVisibleName() -> String:
 	if(GM.pc):
 		if(GM.pc.bodypartHasTrait(BodypartSlot.Legs, PartTrait.LegsPlanti)):
-			return "Footjob"
+			return "Футбол (Footjob)"
 	return activityName
 
 func getGoals():

@@ -19,12 +19,12 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 
 func start():
 	playStand()
-	saynn("Your owner walks up to you and smiles, {npc.his} hand holding a key.")
+	saynn("Твой хозяин подходит к тебе и улыбается, {npc.his} сжимает в руке ключ.")
 	talkModularOwnerToPC("SoftSlaveryOfferGearUnlock") #You've been locked for quite a while. Ready to be unlocked?
-	saynn("Looks like {npc.he} {npc.verb('want')} to remove key-locked gear..")
+	saynn("Похоже, {npc.he} {npc.verb('want')}, чтобы снять с тебя снаряжение на замках...")
 	
-	addButton("Okay", "Agree to be unlocked", "beUnlocked")
-	addButton("Keep it", "Ask the owner to keep it", "keepGear")
+	addButton("Окей", "Согласиться, чтобы тебя разблокировали", "beUnlocked")
+	addButton("Оставить", "Попросить хозяина оставить всё как есть", "keepGear")
 
 func start_do(_id:String, _args:Array):
 	if(_id == "beUnlocked"):
@@ -35,9 +35,9 @@ func start_do(_id:String, _args:Array):
 
 func afterUnlocked():
 	playStand()
-	saynn("You agree, allowing {npc.name} to use {npc.his} key to unlock your locked gear!")
+	saynn("Ты соглашаешься, позволяя {npc.name} использовать {npc.his} ключ, чтобы отпереть твою запертую экипировку!")
 	talkModularOwnerToPC("SoftSlaveryOfferGearUnlock2") #There you go, much better, right? I'm not done with you yet though.
-	saynn("Looks like {npc.he} {npc.verb('want')} to do something else with you..")
+	saynn("Похоже, {npc.he} {npc.verb('want')}, чтобы сделать с тобой что-то другое...")
 	addContinue("startApproach")
 
 func afterUnlocked_do(_id:String, _args:Array):
@@ -46,10 +46,10 @@ func afterUnlocked_do(_id:String, _args:Array):
 
 func askedKeep():
 	playStand()
-	saynn("You ask {npc.name} to keep the locked gear on you.")
+	saynn("Ты просишь {npc.name} оставить запертое снаряжение на тебе.")
 	talkModularOwnerToPC("SoftSlaveryOfferGearUnlockKeep") #Keep it? Sure, why not. It fits you.
 	addInfluenceObey(0.2)
-	saynn("{npc.He} {npc.verb('put')} the key away.")
+	saynn("{npc.He} {npc.verb('put')} ключ.")
 	talkModularOwnerToPC("SoftSlaveryOfferGearUnlockKeep2") #Now, I still wanna do something else with you.
 	addContinue("startApproach")
 

@@ -10,7 +10,7 @@ func _init():
 	id = "SubHelper"
 	
 func getVisibleName():
-	return "Slave helper"
+	return "Помощник рабыни @@B*@@"
 
 func getActivityText():
 	if(currentHelpingTask != ""):

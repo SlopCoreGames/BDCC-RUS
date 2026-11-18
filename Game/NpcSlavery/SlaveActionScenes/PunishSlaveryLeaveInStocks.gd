@@ -20,18 +20,18 @@ func _run():
 		playAnimation(StageScene.StocksSexOral, "tease", {npc="pc", pc=npcID})
 		
 		if(GM.pc.getLocation() == "main_punishment_spot"):
-			saynn("You decide to lock your slave into the stocks.")
+			saynn("Вы решаете запереть своего раба в колодки.")
 			
-			saynn("After all, why shouldn't other be able to have fun with {npc.him}?")
+			saynn("В конце концов, почему бы другим не повеселиться с {npc.him}?")
 		else:
 			aimCameraAndSetLocName("main_punishment_spot")
 			GM.pc.setLocation("main_punishment_spot")
 			
-			saynn("After {npc.name} serves {npc.his} punishment, you decide to leave {npc.him} stuck in there.")
+			saynn("После того как {npc.name} получит свое {npc.his} наказание, вы решаете оставить {npc.him} торчать там.")
 			
-			saynn("After all, why shouldn't other be able to have fun with {npc.him}?")
+			saynn("В конце концов, почему бы другим не повеселиться с {npc.him}?")
 			
-		addButton("Continue", "See what happens next", "leave_slave_in_stocks")
+		addButton("Продолжить", "Смотреть, что будет дальше", "leave_slave_in_stocks")
 
 
 func _react(_action: String, _args):

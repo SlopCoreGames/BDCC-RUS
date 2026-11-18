@@ -4,7 +4,7 @@ func _init():
 	id = SexGoal.Fuck69
 
 func getVisibleName():
-	return "Fuck 69"
+	return "Минет и кунилингус (69)"
 
 func isPossible(_sexEngine, _domInfo, _subInfo, _data):
 	if(_subInfo.getChar().isOralBlocked()):

@@ -4,7 +4,7 @@ func _init():
 	id = SlaveType.Pet
 
 func getVisibleName():
-	return "Pet"
+	return "Питомец"
 
 func getVisibleDesc():
 	return "Turn your slave into a personal pet and get ability to give them walkies"
@@ -54,12 +54,12 @@ func getUnlockHints(_npc):
 	return [
 		{
 			unlocksAt = 3,
-			name = "Walkies",
-			text = "You can now give your pet walkies around the station!",
+			name = "Прогулка",
+			text = "Теперь вы можете выгуливать своего питомца по станции!",
 		},
 		{
 			unlocksAt = 8,
-			name = "More actions",
-			text = "More actions are available to satisfy your pet's wants during the walkies",
+			name = "Больше действий",
+			text = "Во время прогулки доступны дополнительные действия, чтобы удовлетворить потребности вашего питомца",
 		},
 	]

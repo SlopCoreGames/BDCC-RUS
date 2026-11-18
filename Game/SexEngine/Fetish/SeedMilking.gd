@@ -7,7 +7,7 @@ func _init():
 	}
 
 func getVisibleName():
-	return "Seed Milking"
+	return "Дойка семени"
 
 func getGoals(_sexEngine, _domFetishHolder, _dom, _sub):
 	var possible = []

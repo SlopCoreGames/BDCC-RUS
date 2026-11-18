@@ -14,7 +14,7 @@ func _init():
 
 	extraSlaves = {
 		"dom": {
-			name = "Dominant",
+			name = "Доминант",
 			desc = "Person who will fuck your slut",
 			slaveSkillsRequired = {},
 			slaveMinLevel = 0,
@@ -27,7 +27,7 @@ func _init():
 	buttonPriority = 70
 
 func getVisibleName():
-	return "Slave-on-Slut"
+	return "Раб над шлюхой"
 
 func getVisibleDesc():
 	return "Order your slut to be fucked by one of your other slaves"

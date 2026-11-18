@@ -20,9 +20,9 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 func start():
 	playAnimation(StageScene.Duo, "hurt", {npc=getOwnerID(), bodyState={leashedBy=getOwnerID()}})
 	sayPretext()
-	saynn("{npc.name} shoves you and then clips a leash to your collar!")
+	saynn("{npc.name} толкает тебя, а затем пристегивает поводок к твоему ошейнику!")
 	talkModularOwnerToPC("SoftSlaveryPunishSlutwall")
-	saynn("Your owner is really not in a good mood..")
+	saynn("Твой хозяин явно не в духе...")
 	
 	addContinue("setState", ["inStocks"])
 	
@@ -30,7 +30,7 @@ func inStocks():
 	setLocation(LOC_SLUTWALL)
 	playAnimation(StageScene.SlutwallSex, "tease", {npc=getRoleID(C_OWNER)})
 	
-	saynn("You get brought into the underground arena area and get shoved into the slutwall!")
+	saynn("Тебя приводят на подземную арену и заталкивают в стену для шлюх!")
 	talkModularOwnerToPC("SoftSlaveryPunishSlutwallLock")
 	addContinue("startStocks")
 

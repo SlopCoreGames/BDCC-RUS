@@ -17,20 +17,20 @@ func getTraitType(_id:String):
 
 func getName(_id:String) -> String:
 	if(_id == "FetishSexBottom"):
-		return "Sextoy (Bottom)"
+		return "Секс-игрушка (Низ)"
 	if(_id == "FetishSexTop"):
-		return "Sextoy (Top)"
+		return "Секс-игрушка (Верх)"
 	if(_id == "FetishSexExotic"):
-		return "Sextoy (Exotic)"
+		return "Секс-игрушка (Экзотика)"
 		
 	if(_id == "FetishBDSM"):
-		return "BDSM fetish"
+		return "БДСМ-фетиш"
 	if(_id == "FetishMilking"):
-		return "Milking fetish"
+		return "Фетиш на дойку"
 	if(_id == "FetishExhibitionism"):
-		return "Exhibitionist"
+		return "Экбиционист"
 	if(_id == "FetishDrugUse"):
-		return "Drug junkie"
+		return "Наркоман"
 	
 	return "ERROR"
 

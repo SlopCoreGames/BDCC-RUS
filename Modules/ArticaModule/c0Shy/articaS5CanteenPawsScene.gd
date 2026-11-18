@@ -9,184 +9,184 @@ func _run():
 	if(state == ""):
 		addCharacter("artica")
 		playAnimation(StageScene.Duo, "sit", {npc="artica", npcAction="sit"})
-		saynn("Artica seems to be occupying her usual spot. She looks a bit.. sad.. more than usual.. so you skip the meal and go straight to her table.")
+		saynn("Артика, похоже, заняла своё привычное место. Она выглядит немного... грустной... даже больше обычного... так что ты пропускаешь еду и направляешься прямиком к её столу.")
 
 		s4Outcome = getFlag("ArticaModule.s4Outcome", "left")
 		if (s4Outcome == "left" || s4Outcome == "won"):
-			saynn("[say=pc]Hey Artica. How was it. The mines.[/say]")
+			saynn("[say=pc]Эй, Артика. Ну как там? В шахтах?[/say]")
 
-			saynn("[say=artica]It was.. f-fine?..[/say]")
+			saynn("[say=artica]Нормально... в-вроде?..[/say]")
 
-			saynn("There is no way that's true.")
+			saynn("Да не может быть, чтобы это было правдой.")
 
-			saynn("[say=pc]But how was it actually?[/say]")
+			saynn("[say=pc]Но как всё было на самом деле?[/say]")
 
-			saynn("[say=artica]It was painful.. still is.. oww-w..[/say]")
+			saynn("[say=artica]Было больно... и до сих пор больно... ахх..[/say]")
 
 		else:
-			saynn("[say=pc]Hey Artica. You're alright?[/say]")
+			saynn("[say=pc]Эй, Артика. Ты в порядке?[/say]")
 
-			saynn("[say=artica]I'm.. okay..[/say]")
+			saynn("[say=artica]Я... нормально..[/say]")
 
-			saynn("Judging from how she looks, there is no way that's true.")
+			saynn("Судя по её виду, это точно не так.")
 
-			saynn("[say=pc]But how are you actually?[/say]")
+			saynn("[say=pc]Но как ты себя чувствуешь на самом деле?[/say]")
 
-			saynn("[say=artica]Not that good.. oww-w..[/say]")
+			saynn("[say=artica]Не так уж и хорошо.. ой-ой..[/say]")
 
-		saynn("For some reason, the girl winces each time tries to move her legs.. and since she does that a lot, the girl is wincing constantly.")
+		saynn("По какой-то причине девушка морщится каждый раз, когда пытается пошевелить ногами.. а так как делает она это постоянно, то и морщится она без остановки.")
 
-		saynn("[say=artica]I think I stepped on a rock.. wrong.. still hurts a bit..[/say]")
+		saynn("[say=artica]Кажется, я наступила на камень.. не так.. всё равно немного болит..[/say]")
 
-		addButton("Take a look", "See if something is wrong with Artica's hind leg", "take_look")
+		addButton("Взглянуть", "Проверить, всё ли в порядке с задней лапой Артики", "take_look")
 	if(state == "take_look"):
 		playAnimation(StageScene.CheckPaw, "check", {pc="artica", npc="pc"})
-		saynn("You look under the table.. but it's too dark there to see anything.")
+		saynn("Вы заглядываете под стол.. но там слишком темно, чтобы что-то разглядеть.")
 
-		saynn("[say=pc]Alright, let me take a look.[/say]")
+		saynn("[say=pc]Ладно, дай-ка я посмотрю.[/say]")
 
-		saynn("You get up and approach Artica.")
+		saynn("Вы встаете и подходите к Артике.")
 
-		saynn("[say=pc]I will need you sitting the other way. Which one hurts?[/say]")
+		saynn("[say=pc]Тебе нужно сесть по-другому. Какая именно болит?[/say]")
 
-		saynn("[say=artica]..mm-m.. right one..[/say]")
+		saynn("[say=artica]..мм-м.. правая..[/say]")
 
-		saynn("Your hand lands on her shoulder and helps to turn her around, Artica doesn't resist it.")
+		saynn("Ты кладешь руку ей на плечо и помогаешь развернуться; Артика не сопротивляется.")
 
-		saynn("After that, you crouch and carefully lift her right hind leg a bit, your hands supporting the ankle.. so fluffy.")
+		saynn("Затем ты приседаешь и осторожно приподнимаешь её правую заднюю лапу, придерживая за лодыжку... какая же она пушистая.")
 
-		saynn("A quick visual check.. Everything seems fine.")
+		saynn("Быстрый визуальный осмотр... Кажется, всё в порядке.")
 
-		saynn("[say=pc]Where does it hurt?[/say]")
+		saynn("[say=pc]Где болит?[/say]")
 
-		saynn("Artica tries to curl her toes.. and winces again, her hind paw sprawling wide from a spasm.")
+		saynn("Артика пытается подогнуть пальцы... и снова морщится от боли, когда её задняя лапа широко распластывается от спазма.")
 
-		saynn("[say=artica]Eep..[/say]")
+		saynn("[say=artica]Ой...[/say]")
 
-		saynn("Huh. You lift the paw a little higher and look below, at her cyan rough beans. Again, there doesn't seem to be any obvious damage done to them.. which is good.")
+		saynn("Хм. Ты приподнимаешь лапу чуть выше и смотришь на её голубые шершавые подушечки. Снова не видно никаких явных повреждений... и это хорошо.")
 
-		saynn("[say=pc]I think you just pulled a muscle, Artica.[/say]")
+		saynn("[say=pc]Думаю, ты просто потянула мышцу, Артика.[/say]")
 
-		saynn("[say=artica]Mm..m.. What should I do..[/say]")
+		saynn("[say=artica]М-м... а что мне делать?..[/say]")
 
-		addButton("Paw massage", "Knead her hind paw a bit to try to take the edge off", "paw_massage")
-		addButton("Bring to medical", "Just bring Artica to medical where the doctor can help her", "bring_to_doctor")
+		addButton("Массаж лапки", "Немного размять ей заднюю лапку, чтобы хоть немного унять боль", "paw_massage")
+		addButton("Отвести в медпункт", "Просто отвести Артику в медпункт, чтобы врач ей помог", "bring_to_doctor")
 	if(state == "bring_to_doctor"):
 		playAnimation(StageScene.Duo, "stand", {npc="artica"})
 		aimCameraAndSetLocName("med_lobbymain")
 		GM.pc.setLocation("med_lobbymain")
-		saynn("[say=pc]It can heal on its own. But it's best if we go see a doctor.[/say]")
+		saynn("[say=pc]Само заживёт. Но лучше всё-таки сходить к врачу.[/say]")
 
-		saynn("[say=artica]Oh.h-h.. r.r-right..[/say]")
+		saynn("[say=artica]Ох... д-д... да... точно...[/say]")
 
-		saynn("Just the thought of meeting new people makes Artica stutter again it seems.")
+		saynn("Похоже, от одной только мысли о встрече с новыми людьми Артика снова начинает заикаться.")
 
-		saynn("No point in putting it away any longer, you use your hands to support Artica as she is getting up, the girl has to hop around on one leg basically.")
+		saynn("Смысла прятать лапку больше нет; вы придерживаете Артику руками, пока она пытается встать — девчонке приходится буквально прыгать на одной ноге.")
 
-		saynn("[say=artica]Ee..p-p.. eep.. ow..[/say]")
+		saynn("[say=artica]И-и... п-п... ой...[/say]")
 
-		saynn("[say=pc]No rush.[/say]")
+		saynn("[say=pc]Не спеши.[/say]")
 
-		saynn("One hop at a time, you eventually get to the medical.")
+		saynn("Прыжок за прыжком, и вот вы наконец добрались до медпункта.")
 
-		addButton("Continue", "See what happens next", "in_medical")
+		addButton("Продолжить", "Смотреть, что будет дальше", "in_medical")
 	if(state == "in_medical"):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "struggle_legs", {npc="eliza", pc="artica"})
-		saynn("The doctor quickly approaches you two as you hop into the lobby.")
+		saynn("Как только вы вваливаетесь в вестибюль, доктор быстро направляется к вам.")
 
-		saynn("[say=eliza]Dr. Quinn here. Easy there, let me see.[/say]")
+		saynn("[say=eliza]Это доктор Куинн. Потише, дай-ка взглянуть.[/say]")
 
-		saynn("[say=pc]Pulled muscle.[/say]")
+		saynn("[say=pc]Растяжение мышцы.[/say]")
 
-		saynn("She quickly examines the hurt hind paw.")
+		saynn("Она быстро осматривает поврежденную заднюю лапу.")
 
-		saynn("[say=eliza]Mhm, seems like. The pawpads look pristine, would totally rub them if no one was watching. Heh.[/say]")
+		saynn("[say=eliza]М-да, похоже на то. Подушечки лап выглядят просто идеально... если бы никто не смотрел, я бы с удовольствием их потирала. Хех.[/say]")
 
-		saynn("Artica blushes hearing that. The feline doctor produces an elastic bandage and puts it around the girl's ankle.")
+		saynn("Артика краснеет от этих слов. Кошка-врач достает эластичный бинт и обматывает им лодыжку девушки.")
 
-		saynn("[say=eliza]There we go. How did you pull it?[/say]")
+		saynn("[say=eliza]Ну вот и всё. Как ты умудрилась так потянуть?[/say]")
 
-		saynn("[say=artica]Mines..[/say]")
+		saynn("[say=artica]Моя...[/say]")
 
-		saynn("[say=pc]Was her first time with a pickaxe.[/say]")
+		saynn("[say=pc]Это был её первый раз с киркой.[/say]")
 
-		saynn("The feline hums and rubs her chin.")
+		saynn("Кошка что-то напевает под нос, потирая подбородок.")
 
-		saynn("[say=eliza]Guess your paws just weren't made for this. Get some rest, you need it. If you want, we have some special rooms here, they're very soft~.[/say]")
+		saynn("[say=eliza]Похоже, твои лапки просто не созданы для такого. Отдохни, тебе это нужно. Если хочешь, у нас тут есть особенные комнаты, они очень мягкие~.[/say]")
 
-		saynn("[say=artica]Mm-m.. It's okay.. Thank you, I feel better already.[/say]")
+		saynn("[say=artica]Мм-м.. Всё хорошо.. Спасибо, мне уже лучше.[/say]")
 
-		saynn("At least you feel like Artica has made some progress, she is not as shy as before.")
+		saynn("По крайней мере, кажется, что Артика делает успехи — она уже не такая застенчивая, как раньше.")
 
-		addButton("Continue", "See what happens next", "artica_thanks_pc")
+		addButton("Продолжить", "Смотреть, что будет дальше", "artica_thanks_pc")
 	if(state == "artica_thanks_pc"):
 		removeCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="artica"})
-		saynn("The feline doctor nods and leaves, seeing that the bandage had a positive effect.")
+		saynn("Кошка-врач кивает и уходит, видя, что повязка подействовала.")
 
-		saynn("[say=artica]Thank you too.. Don't know how I can..[/say]")
+		saynn("[say=artica]И тебе спасибо.. Даже не знаю, как отблагодарить..[/say]")
 
-		saynn("[say=pc]Go get some rest. I will see you around.[/say]")
+		saynn("[say=pc]Иди отдыхай. Еще увидимся.[/say]")
 
-		saynn("Artica smiles and nods, putting most of her weight onto the healthy leg while holding her arms spread wide to help with the balance. Her fluffy tail wraps around your thigh, hugging your leg warmly.")
+		saynn("Артика улыбается и кивает, перенося основной вес на здоровую лапу и широко расставив руки для равновесия. Её пушистый хвост обвивает ваше бедро, тепло обнимая ногу.")
 
-		saynn("[say=artica]Same place..[/say]")
+		saynn("[say=artica]В то же место..[/say]")
 
-		saynn("That feels like an invitation. After that, she leaves you be. Time to go.")
+		saynn("Это звучит как приглашение. После этого она оставляет вас в покое. Пора идти.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "paw_massage"):
 		playAnimation(StageScene.CheckPaw, "beans", {pc="artica", npc="pc"})
-		saynn("[say=pc]Nothing a little massage can't fix.[/say]")
+		saynn("[say=pc]Немного массажа — и всё будет в ажуре.[/say]")
 
-		saynn("[say=artica]I.. I d-don't know if..[/say]")
+		saynn("[say=artica]Я... я н-не знаю, вдруг..[/say]")
 
-		saynn("Artica hesitates.. but as soon as your digits begin brushing against her fluffy ankle, warming it up, the girl becomes quiet.")
+		saynn("Артика колеблется... но как только твои пальцы начинают касаться её пушистой лодыжки, согревая её, девушка затихает.")
 
-		saynn("You just smile as your palms work their magic, pulling any tension out of her muscles. You can see Artica fidgeting more as you knead her hind leg, the toes on the healthy one curl up and sprawl out rhythmically.")
+		saynn("Ты просто улыбаешься, пока твои ладони творят магию, выгоняя любое напряжение из её мышц. Ты замечаешь, что Артика начинает ерзать всё сильнее, пока ты разминаешь её заднюю лапу; пальцы на здоровой ноге ритмично сжимаются и разжимаются.")
 
-		saynn("[say=artica]Nn-n.. h-hah.. mmhmm.. t-there.. y-yes.. mm.m.m..[/say]")
+		saynn("[say=artica]Нн-н.. х-хах.. ммхм.. в-вот так.. д-да.. мм.м.м..[/say]")
 
-		saynn("Cute shy noises escape her maw. Artica raises her chin a bit, her breathing gets deeper, the pain seems to gradually leave her foot.")
+		saynn("Из её пасти вырываются милые застенчивые звуки. Артика слегка приподнимает подбородок, её дыхание становится глубже, а боль в лапе, кажется, постепенно отступает.")
 
-		saynn("Seeing how much she likes it, you might as well offer something extra. One of your hands keeps supporting the ankle while the second one lands on the cyan beans and starts gently rubbing them.")
+		saynn("Видя, как ей это нравится, можно предложить нечто большее. Одна твоя рука продолжает поддерживать лодыжку, в то время как вторая ложится на голубые бобы и начинает нежно их растирать.")
 
-		saynn("[say=artica]Ah-h.. e-eep.. ah..[/say]")
+		saynn("[say=artica]Ах-х.. и-ип.. ах..[/say]")
 
-		saynn("As you do that, Artica starts squirming under your touch, closing and spreading her legs, arching her back a bit.. producing little moans..")
+		saynn("От твоих действий Артика начинает извиваться под твоими руками, то сжимая, то раздвигая ноги, слегка выгибая спину... издавая тихие стоны...")
 
-		saynn("You also notice her shorts bulging out in the crotch region.. A small wet spot appears.. two spots actually.. The fluff must be really liking this.")
+		saynn("Ты также замечаешь, как её шорты натягиваются в паху... Появляется маленькое влажное пятнышко... даже два... Похоже, мех ей это чертовски нравится.")
 
-		saynn("She notices your smirk.. and blushes deeply. Her hands cover her crotch as you keep teasing her toes with gentle circular strokes around each cyan bean.")
+		saynn("Она замечает твою ухмылку... и густо краснеет. Она прикрывает пах руками, пока ты продолжаешь дразнить её пальцы нежными круговыми движениями вокруг каждого голубого боба.")
 
-		saynn("[say=artica]H-hah.. p-please.. it's t-too much.h..[/say]")
+		saynn("[say=artica]Ха-ха.. п-пожалуйста.. это с-слишком много..[/say]")
 
-		saynn("So adorable. You decide to stop there, probably best not to overstimulate her hurt hindpaw.")
+		saynn("Какая прелесть. Ты решаешь на этом остановиться — пожалуй, не стоит слишком сильно раззадоривать её поврежденную заднюю лапку.")
 
-		saynn("[say=pc]Glad it seems to be better already.[/say]")
+		saynn("[say=pc]Рада, что тебе уже лучше.[/say]")
 
-		saynn("[say=artica]Mm-mmh.. nnhh-h.. y-yes-s.. ah..ah.. thank you..[/say]")
+		saynn("[say=artica]Мм-ммх.. ннхх.. д-да.. ах.. ах.. спасибо..[/say]")
 
-		saynn("You smile and carefully put the paw onto the cold floor.")
+		saynn("Ты улыбаешься и осторожно ставишь лапку на холодный пол.")
 
-		saynn("[say=pc]Go get some rest now, don't stress your muscles.[/say]")
+		saynn("[say=pc]А теперь иди отдохни, не перенапрягай мышцы.[/say]")
 
-		saynn("[say=artica]Y-yes.. G-good idea..[/say]")
+		saynn("[say=artica]Д-да.. Х-хорошая идея..[/say]")
 
-		saynn("You help the blushing girl to get up, supporting her as she tries to balance on one leg and cover her crotch at the same time.")
+		saynn("Ты помогаешь покрасневшей девушке подняться, поддерживая её, пока она пытается удержать равновесие на одной ноге и одновременно прикрыться.")
 
-		saynn("[say=artica]I will be here.. t-tomorrow..[/say]")
+		saynn("[say=artica]Я буду здесь.. з-завтра..[/say]")
 
-		saynn("Hah. That feels like an invitation.")
+		saynn("Ха. Это звучит как приглашение.")
 
-		saynn("Artica tests the ground with her hurt paw.. and seems to be able to stand on it mostly. So she proceeds to head towards the exit.")
+		saynn("Артика пробует почву под раненой лапой... и, кажется, почти может на неё опираться. С этим она направляется к выходу.")
 
-		saynn("[say=pc]See you around.[/say]")
+		saynn("[say=pc]Ещё увидимся.[/say]")
 
-		saynn("She chrrrrs back.")
+		saynn("Она отвечает ему нежным «чрррр».")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

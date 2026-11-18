@@ -13,7 +13,7 @@ func _init():
 	rewardHint = -3
 
 func getVisibleName():
-	return "Stocks"
+	return "Колодки"
 
 func getVisibleDesc():
 	return "Put your slave into the stocks and see how they like it"
@@ -21,7 +21,7 @@ func getVisibleDesc():
 func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var npcSlavery:NpcSlave = getSlave(_slaveID)
 	
-	var text = "Eager to punish, you leash {npc.name} and bring {npc.him} to the main punishment platform. You find a free set of stocks and then throw your slave into them, amplying force if needed."
+	var text = "Жаждущий наказания, вы накидываете поводок на {npc.name} и приводите {npc.him} к главной платформе для наказаний. Найдя свободные колодки, вы с силой зашвыриваете в них свою рабыню, при необходимости не жалея напора."
 	
 	text += "\n\nYou make sure {npc.his} head and arms are secured properly and just let {npc.him} 'enjoy' being forced into such a vulnerable exposed position for about half an hour.\n\n"
 	
@@ -56,7 +56,7 @@ func getTimePass(_slaveID, _extraSlavesIDs = {}):
 func getExtraActions(_slaveID, _extraSlavesIDs = {}):
 	return [
 		{
-			name = "Keep in stocks",
+			name = "Запереть в колодки",
 			desc = "Keep your slave in the stocks",
 			sceneID = "PunishSlaveryLeaveInStocks",
 			args = [],

@@ -10,7 +10,7 @@ func _init():
 	pointsOnUnlock = 25
 
 func getName() -> String:
-	return "HuCow transformation"
+	return "Трансформация в Человека-Корову"
 
 func getPillName() -> String:
 	return "MegaMilkMAX"
@@ -20,7 +20,7 @@ func getUnlockData() -> Dictionary:
 		eliza = "Wow.. This pill packs a lot.. Very interesting.. I think it will affect your breasts in some way.. but it will also do something else. I think I’ll call it.. 'MegaMilkMAX.' For no reason in particular.",
 		tryOptions = [
 			{
-				name = "Make Eliza eat it",
+				name = "Заставить Элизу сожрать это",
 				desc = "Ask if she is brave enough to try her own product. She will probably become very milky.",
 				sceneID = "ElizaDrugTestHuCowScene",
 			},

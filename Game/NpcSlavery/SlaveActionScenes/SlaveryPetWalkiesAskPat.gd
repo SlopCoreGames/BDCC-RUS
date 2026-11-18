@@ -82,7 +82,7 @@ func _run():
 
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		
-		saynn("As you walk your puppy around the station, you walk into one of the "+str(whoStr)+"s.")
+		saynn("Пока вы гуляете со своим щеночком по станции, вы натыкаетесь на одного из "+str(whoStr)+"s.")
 		
 		if(npcVariation == "kind"):
 			saynn("[say=npc2]"+RNG.pick([
@@ -94,7 +94,7 @@ func _run():
 				"Oh wow, cute pup.",
 			])+"[/say]")
 			
-			saynn("The "+whoStr+"'s eyes light up with excitement.")
+			saynn("На "+whoStr+"'s глаза загораются от восторга.")
 			
 			saynn("[say=npc2]"+RNG.pick([
 				"Mind if I give {npc.him} a pat?",
@@ -102,8 +102,8 @@ func _run():
 				"I really wanna pat!",
 			])+"[/say]")
 			
-			addButton("Sure", "Let them pat your pup", "let_pat")
-			addButton("No", "No patting", "no_pat")
+			addButton("Конечно", "Позволить им погладить щенка", "let_pat")
+			addButton("No", "Никаких поглаживаний", "no_pat")
 		if(npcVariation == "mean"):
 			saynn("[say=npc2]"+RNG.pick([
 				"Do you really have to walk your stupid mutt here?",
@@ -112,7 +112,7 @@ func _run():
 				"Control your pet better.",
 			])+"[/say]")
 			
-			saynn("The "+whoStr+"'s furrows {npc.his} brows.")
+			saynn("На "+whoStr+"'s хмурит {npc.his} брови.")
 			
 			saynn("[say=npc2]"+RNG.pick([
 				"Don't sniff me.",
@@ -121,8 +121,8 @@ func _run():
 				"Go away before I step on your mutt.",
 			])+"[/say]")
 			
-			addButton("Bite!", "Order your pet to bite them", "make_bite")
-			addButton("Leave", "You'd rather not get into trouble", "do_mean_leave")
+			addButton("Кусь!", "Приказать питомцу укусить их", "make_bite")
+			addButton("Уйти", "Вы не хотите навлекать на себя неприятности", "do_mean_leave")
 		if(npcVariation == "subby"):
 			saynn("[say=npc2]"+RNG.pick([
 				"Oh.. What a cute puppy.",
@@ -131,7 +131,7 @@ func _run():
 				"Puppy!",
 			])+"[/say]")
 			
-			saynn("The "+whoStr+"'s blushes a bit.")
+			saynn("На "+whoStr+"'s слегка краснеет.")
 			
 			saynn("[say=npc2]"+RNG.pick([
 				"Wish I'd be on a leash like that.. Does {npc.he} bite?",
@@ -139,99 +139,99 @@ func _run():
 				"I'm not drooling.. Does {npc.he} bite?",
 			])+"[/say]")
 			
-			addButton("Give paw", "Order your pet to give them a paw", "make_subby_paw")
-			addButton("Bite playfully", "Order your pet to bite them", "make_subby_bite")
-			addButton("Leave", "Just walk past", "endthescene")
+			addButton("Дать лапу", "Приказать питомцу дать им лапу", "make_subby_paw")
+			addButton("Игриво прикусить", "Приказать питомцу укусить их", "make_subby_bite")
+			addButton("Уйти", "Просто пройти мимо", "endthescene")
 			if(npcSlavery.getSlaveSkill(SlaveType.Pet) >= 8):
-				addButton("Lick", "Order your pet to lick their crotch", "make_subby_lick")
+				addButton("Лизать", "Приказать питомцу лизать им промежность", "make_subby_lick")
 			else:
-				addDisabledButton("Lick", "Pet skill A or higher required")
+				addDisabledButton("Лизать", "Требуется навык питомца A или выше")
 
 	if(state == "make_subby_lick"):
 		playAnimation(StageScene.PuppyDuo, "stand", {pc=npc2ID, npcAction="sit", npc=npcID, npcBodyState={naked=true}})
 		
-		saynn("[say=pc]Nah, {npc.he} can do something better.[/say]")
+		saynn("[say=pc]Не, {npc.he} может кое-что получше.[/say]")
 		
-		saynn("You point at the "+whoStr+" and order your puppy.")
+		saynn("Вы указываете на "+whoStr+" и прикажи своему щеночку.")
 		
-		saynn("[say=pc]Lick.[/say]")
+		saynn("[say=pc]Лизать.[/say]")
 		
-		saynn("Your puppy obeys eagerly, crawling up to {npc2.him} before sitting up and nuzzling {npc2.his} crotch.")
+		saynn("Твой щеночек послушно ползет к {npc2.him}, а затем садится и начинает тыкаться носом в промежность {npc2.his}.")
 		
 		if(npc2.hasReachablePenis() || npc2.isWearingChastityCage()):
-			saynn("That's not it though, your puppy also sticks {npc.his} tongue out and drags it along {npc2.his} {npc2.penis}"+(" through the clothing." if !npc2.isFullyNaked() else "."))
+			saynn("Но это еще не всё: твой щеночек еще и высовывает {npc.his} язык, проводя им по {npc2.his} {npc2.penis}"+(" through the clothing." if !npc2.isFullyNaked() else "."))
 		elif(npc2.hasReachableVagina()):
-			saynn("That's not it though, your puppy also sticks {npc.his} tongue out and drags it along {npc2.his} {npc2.pussyStretch} pussy"+(" through the clothing." if !npc2.isFullyNaked() else "."))
+			saynn("Но это еще не всё: твой щеночек еще и высовывает {npc.his} язык, проводя им по {npc2.his} {npc2.pussyStretch} киске"+(" through the clothing." if !npc2.isFullyNaked() else "."))
 		else:
-			saynn("That's not it though, your puppy also sticks {npc.his} tongue out and drags it along it"+(" through the clothing." if !npc2.isFullyNaked() else "."))
+			saynn("Но это еще не всё: твой щеночек еще и высовывает {npc.his} язык, проводя им по ней"+(" through the clothing." if !npc2.isFullyNaked() else "."))
 		
 		saynn("[say=npc2]"+RNG.pick([
 			"You trained {npc.him} well..",
 			"Good puppy..",
 		])+"[/say]")
 		
-		saynn("Your puppy receives lots of headpats for that.")
+		saynn("За это твой щеночек получает много поглаживаний по голове.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 	if(state == "make_subby_paw"):
 		playAnimation(StageScene.PuppyDuo, "stand", {pc=npc2ID, npcAction="paw", npc=npcID, npcBodyState={naked=true}})
 
-		saynn("[say=pc]Nah, {npc.he} doesn't.[/say]")
+		saynn("[say=pc]Нет, {npc.he} не делает этого.[/say]")
 
-		saynn("You order your puppy.")
+		saynn("Ты отдаешь приказ своему щеночку.")
 		
-		saynn("[say=pc]Give paw to {npc2.him}, pup.[/say]")
+		saynn("[say=pc]Дай лапу, {npc2.him}, малыш.[/say]")
 		
-		saynn("Your pet obeys, sitting up and offering {npc.his} paw to the "+whoStr+". {npc2.He} shakes it.")
+		saynn("Твой питомец слушается, садится и протягивает {npc.his} лапу тебе"+whoStr+". {npc2.He} трясет ею.")
 		
 		saynn("[say=npc2]"+RNG.pick([
 			"You trained {npc.him} well..",
 			"Good puppy..",
 		])+"[/say]")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	
 	if(state == "make_subby_bite"):
 		playAnimation(StageScene.PuppySexOral, "tease", {pc=npc2ID, npc=npcID, npcBodyState={naked=true}})
 	
-		saynn("[say=pc]{npc.He} can. But you shouldn't be afraid.[/say]")
+		saynn("[say=pc]{npc.He} может. Но тебе не стоит бояться.[/say]")
 		
-		saynn("You order your puppy with a kind voice.")
+		saynn("Вы отдаете приказ своему щеночку ласковым голосом.")
 		
-		saynn("[say=pc]Show {npc2.him} how you bite, pup.[/say]")
+		saynn("[say=pc]Покажи, {npc2.him} как ты умеешь кусаться, щенок.[/say]")
 		
-		saynn("Your pet obeys and crawls up to the "+whoStr+", who crouches down. {npc.Name} opens {npc.his} mouth.. and starts nibbling on the "+whoStr+"'s hand, looking quite cute.")
+		saynn("Твой питомец послушно подползает к @@B*@@"+whoStr+", который приседает. {npc.Name} открывает {npc.his} рот... и начинает покусывать"+whoStr+"в руке, выглядит довольно мило.")
 		
 		saynn("[say=npc2]"+RNG.pick([
 			"Ohh, that tickles..",
 			"Good puppy..",
 		])+"[/say]")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	
 	if(state == "do_mean_leave"):
 		playAnimation(StageScene.PuppyDuo, "stand", {npc=npcID, npcBodyState={naked=true, leashedBy="pc"}})
 		
-		saynn("You decide that it's not worth it.. and just leave.")
+		saynn("Ты решаешь, что оно того не стоит... и просто уходишь.")
 		
 		saynn("[say=npc2]"+RNG.pick([
 			"That's right, go away.",
 			"Yeah, go away.",
 		])+"[/say]")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		
 	if(state == "make_bite_won"):
 		playAnimation(StageScene.PuppyDuo, "defeat", {pc=npc2ID, npc=npcID, npcBodyState={naked=true}})
 		
-		saynn("You point at the "+whoStr+" and order your pet!")
+		saynn("Вы указываете на "+whoStr+"и отдай приказ своему питомцу!")
 		
-		saynn("[say=pc]Bite![/say]")
+		saynn("[say=pc]Кусай![/say]")
 		
-		saynn("Your puppy sees the enemy and starts crawling towards {npc2.him}, scary growling can be heard from {npc.him}! The "+whoStr+" sees that and chuckles.. until {npc2.his} ankle gets bitten! And then the second one too!")
+		saynn("Твой щенок замечает врага и начинает ползти к {npc2.him}, со стороны {npc.him} слышится жуткое рычание!"+whoStr+"видит это и посмеивается... пока {npc2.his} лодыжку не кусают! А следом и вторую!")
 		
-		saynn("The "+whoStr+" grunts and drops to {npc2.his} knees before your pup.. And, before {npc2.he} can stand up, {npc2.he} gets headbutted firmly!")
+		saynn("На "+whoStr+"кряхтит и падает на {npc2.his} колени перед твоим щенком... И прежде чем {npc2.he} успевает встать, {npc2.he} получает крепкий удар лбом!")
 		
 		saynn("[say=npc2]"+RNG.pick([
 			"Argh.. Fuck! Stupid mutt!.",
@@ -240,9 +240,9 @@ func _run():
 		])+"[/say]")
 		
 		if(OPTIONS.isContentEnabled(ContentType.Watersports)):
-			saynn("You chuckle while your puppy pees on the defeated enemy, as a final act of total humiliation.")
+			saynn("Ты посмеиваешься, глядя, как твой щенок метит поверженного врага — это становится последним актом полного унижения.")
 		else:
-			saynn("You chuckle while your puppy lightly headbutts the defeated enemy, as a final act of total humiliation.")
+			saynn("Вы посмеиваетесь, пока ваш щенок слегка бодает поверженного врага — в качестве финального акта полного унижения.")
 		
 		saynn("[say=npc2]"+RNG.pick([
 			"HEY! No! Bad!",
@@ -250,18 +250,18 @@ func _run():
 			"What the fuck?!",
 		])+"[/say]")
 		
-		saynn("You pat your puppy and continue on your journey.")
+		saynn("Вы гладите своего щеночка и продолжаете свой путь.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		
 	if(state == "make_bite_fail"):
 		playAnimation(StageScene.PuppyDuo, "stand", {pc=npc2ID, npc=npcID, npcAction="sad", npcBodyState={naked=true}})
 		
-		saynn("You point at the "+whoStr+" and order your pet!")
+		saynn("Вы указываете на "+whoStr+"и отдай приказ своему питомцу!")
 		
-		saynn("[say=pc]Bite![/say]")
+		saynn("[say=pc]Кусай![/say]")
 		
-		saynn("Your puppy sees the enemy.. and, sadly, gets too scared to bite {npc2.him}. Instead, {npc.he} flops onto the floor and whines while covering {npc.himself} with {npc.his} paws. Looks like {npc.he} still could use some more training..")
+		saynn("Твой щеночек видит врага... и, к сожалению, слишком пугается, чтобы укусить {npc2.him}. Вместо этого, {npc.he} плюхается на пол и скулит, прикрывая {npc.himself} своими {npc.his} лапами. Похоже, {npc.he} всё ещё не помешало бы немного потренироваться...")
 		
 		saynn("[say=npc2]"+RNG.pick([
 			"Pff. Pathetic.",
@@ -269,17 +269,17 @@ func _run():
 			"Bite me? Your pup knows better.",
 		])+"[/say]")
 		
-		saynn("Looks like it's a fight..")
+		saynn("Похоже, назревает драка...")
 		
-		addButton("Fight", "You will have to bite them instead", "mean_start_fight")
+		addButton("Драться", "Вместо этого тебе придётся их кусать", "mean_start_fight")
 		
 	if(state == "let_pat"):
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		playAnimation(StageScene.PuppySexOral, "tease", {pc=npc2ID, npc=npcID, npcBodyState={naked=true, hard=true}})
 		
-		saynn("You nod, allowing {npc2.him} to do it.")
+		saynn("Вы киваете, позволяя {npc2.him} сделать это.")
 		
-		saynn("Your puppy wags {npc.his} tail eagerly as the "+whoStr+" pats {npc.him}.")
+		saynn("Ваш щенок с энтузиазмом виляет {npc.his} хвостом, когда "+whoStr+" гладит {npc.him}.")
 		
 		saynn("[say=npc2]"+RNG.pick([
 			"Who's a good puppy?",
@@ -288,7 +288,7 @@ func _run():
 			"Look at you, so cute.",
 		])+"[/say]")
 		
-		saynn("Your pet barks back playfully.")
+		saynn("Ваш питомец игриво лает в ответ.")
 		
 		if(RNG.chance(40) && npc2.hasReachablePenis() && !npc.isOralBlocked()):
 			saynn("[say=npc2]"+RNG.pick([
@@ -296,30 +296,30 @@ func _run():
 				"Wish I could see how well you can treat a bone.",
 			])+"[/say]")
 			
-			addButton("Just leave", "See what happens next", "endthescene")
+			addButton("Просто уйти", "Смотреть, что будет дальше", "endthescene")
 			if(npcSlavery.getSlaveSkill(SlaveType.Pet) >= 8):
-				addButton("Let them", "Let them have some fun with your pet", "let_pat_suck")
+				addButton("Позволить им", "Дать им немного повеселиться с вашим питомцем", "let_pat_suck")
 			else:
-				addDisabledButton("Let them", "Pet skill B- or higher required")
+				addDisabledButton("Позволить им", "Требуется навык «Ласка» уровня B- или выше")
 		elif(RNG.chance(40) && npc2.hasReachableVagina() && !npc.isOralBlocked()):
 			saynn("[say=npc2]"+RNG.pick([
 				"Wish I could see how well you can lick.",
 			])+"[/say]")
 			
-			addButton("Just leave", "See what happens next", "endthescene")
+			addButton("Просто уйти", "Смотреть, что будет дальше", "endthescene")
 			if(npcSlavery.getSlaveSkill(SlaveType.Pet) >= 8):
-				addButton("Let them", "Let them have some fun with your pet", "let_pat_lick")
+				addButton("Позволить им", "Дать им немного повеселиться с вашим питомцем", "let_pat_lick")
 			else:
-				addDisabledButton("Let them", "Pet skill B- or higher required")
+				addDisabledButton("Позволить им", "Требуется навык «Ласка» уровня B- или выше")
 		else:
-			addButton("Continue", "See what happens next", "endthescene")
+			addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	
 	if(state == "let_pat_suck_inside"):
 		playAnimation(StageScene.PuppySexOral, "sex", {pc=npc2ID, npc=npcID, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		
-		saynn("You nod, letting {npc2.him} have some fun with your pet.")
+		saynn("Ты киваешь, позволяя {npc2.him} немного развлечься с твоим питомцем.")
 		
-		saynn("Your puppy obediently opens {npc.his} maw and lets the "+whoStr+" fuck it raw.. before swallowing the whole load.")
+		saynn("Ваш щеночек послушно разевает {npc.his} пасть и позволяет"+whoStr+"блядь, ебашь сырым.. прежде чем проглотить всю порцию целиком.")
 	
 		saynn("[say=npc2]"+RNG.pick([
 			"Oh yeah, that's a good slutty pet.",
@@ -327,14 +327,14 @@ func _run():
 			"There we go. Such a nice mouth.",
 		])+"[/say]")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		
 	if(state == "let_pat_suck_outside"):
 		playAnimation(StageScene.PuppySexOral, "sex", {pc=npc2ID, npc=npcID, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		
-		saynn("You nod, letting {npc2.him} have some fun with your pet.")
+		saynn("Ты киваешь, позволяя {npc2.him} немного развлечься с твоим питомцем.")
 		
-		saynn("Your puppy obediently opens {npc.his} maw and lets the "+whoStr+" fuck it raw.. before receiving the sticky load onto {npc.his} face.")
+		saynn("Твой щеночек послушно разевает {npc.his} пасть и позволяет..."+whoStr+"да в рот его ебать, прямо так.. прежде чем принять липкий груз на лицо {npc.his}.")
 	
 		saynn("[say=npc2]"+RNG.pick([
 			"Enjoy being messy, pup.",
@@ -343,14 +343,14 @@ func _run():
 			"You lick it off if you want.",
 		])+"[/say]")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		
 	if(state == "let_pat_lick"):
 		playAnimation(StageScene.PuppySexOral, "grind", {pc=npc2ID, npc=npcID, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		
-		saynn("You nod, letting {npc2.him} have some fun with your pet.")
+		saynn("Ты киваешь, позволяя {npc2.him} немного развлечься с твоим питомцем.")
 		
-		saynn("Your puppy obediently parts {npc.his} lips and rolls {npc.his} tongue out, letting the "+whoStr+" press {npc2.his} {npc2.pussyStretch} pussy against it. {npc2.He} grinds your pup's face.. releasing a shower of fluids onto {npc.his} face.")
+		saynn("Твой щеночек послушно размыкает {npc.his} губы и высовывает {npc.his} язык, позволяя"+whoStr+"прижми {npc2.his} {npc2.pussyStretch} к нему. {npc2.He} втирается в морду твоего щенка... заливая {npc.his} лицо фонтаном смазки.")
 	
 		saynn("[say=npc2]"+RNG.pick([
 			"Enjoy being messy, pup.",
@@ -359,46 +359,46 @@ func _run():
 			"You have a nice tongue, puppy.",
 		])+"[/say]")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	
 	if(state == "no_pat"):
 		playAnimation(StageScene.Duo, "stand", {npc=npc2ID})
 		
-		saynn("[say=pc]{npc.He} {npc.isAre} not in the mood for strangers today.[/say]")
+		saynn("[say=pc]{npc.He} {npc.isAre} сегодня не в настроении для незнакомцев.[/say]")
 		
-		saynn("The "+whoStr+" frowns slightly.")
+		saynn("На "+whoStr+" слегка хмурится.")
 		
-		saynn("[say=npc2]I see. Oh well.[/say]")
+		saynn("[say=npc2]Понятно. Ну, что ж.[/say]")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		
 	if(state == "won_mean_fight"):
 		playAnimation(StageScene.Duo, "stand", {npc=npc2ID, npcAction="defeat"})
 		
-		saynn("Hell yeah, the "+whoStr+" hits the floor, unable to continue fighting.")
+		saynn("Черт возьми, "+whoStr+" валится на пол, не в силах продолжать бой.")
 		
 		saynn("[say=npc2]"+RNG.pick([
 			"Argh. Fuck you.",
 			"Screw you.",
 		])+"[/say]")
 		
-		saynn("Your pup seems to trust you a bit more after that.")
+		saynn("Похоже, твой щенок стал доверять тебе чуть больше после этого.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		
 	if(state == "lost_mean_fight"):
 		playAnimation(StageScene.Duo, "defeat", {npc=npc2ID})
 		
-		saynn("Fuck. You hit the floor, unable to continue fighting.")
+		saynn("Блядь. Ты валишься на пол, не в силах продолжать бой.")
 		
 		saynn("[say=npc2]"+RNG.pick([
 			"Now take your mutt and go the fuck away.",
 			"Go away before I beat up your stupid dog too.",
 		])+"[/say]")
 		
-		saynn("Your pup seems to trust you less after that.")
+		saynn("Похоже, твой щенок стал доверять тебе чуть меньше после этого.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

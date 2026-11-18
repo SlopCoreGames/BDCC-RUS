@@ -14,7 +14,7 @@ func _init():
 	buttonPriority = 30
 
 func getVisibleName():
-	return "Change name"
+	return "Изменить имя"
 
 func getVisibleDesc():
 	return "Give your slave a new name"

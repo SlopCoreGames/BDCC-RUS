@@ -6,7 +6,7 @@ func _init():
 	id = "MakeLactate"
 
 func getName() -> String:
-	return "Make "+getCharName(charID)+" lactate"
+	return "Приготовить"+getCharName(charID)+" lactate"
 
 func getDescription() -> String:
 	return getCharDescription(charID)

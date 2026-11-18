@@ -8,7 +8,7 @@ func _init():
 	pointsOnUnlock = 5
 
 func getName() -> String:
-	return "Makes breasts flat"
+	return "Делает грудь плоской"
 
 func getPillName() -> String:
 	return "BreastsBeGone"

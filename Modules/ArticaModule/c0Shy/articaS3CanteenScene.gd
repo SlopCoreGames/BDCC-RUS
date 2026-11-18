@@ -9,181 +9,181 @@ func _run():
 	if(state == ""):
 		addCharacter("artica")
 		playAnimation(StageScene.Solo, "sit", {pc="artica"})
-		saynn("You look around the canteen.. and notice a familiar white fluff sitting alone on a bench near one of the corners, staring at her food tray.")
+		saynn("Ты оглядываешь столовую... и замечаешь знакомый белый пушистик, сидящий в одиночестве на скамье в углу и уставившийся в свой поднос с едой.")
 
-		saynn("You get in line and receive your own tray.. filled with the gray tasteless paste. Yummy..")
+		saynn("Ты встаешь в очередь и получаешь свой поднос... наполненный серой безвкусной пастой. Вкуснотища...")
 
-		saynn("Might as well join her and see what's up.")
+		saynn("Можно и к ней присоединиться, посмотреть, что к чему.")
 
-		addButton("Sit near", "Sit near the white fluff", "walk_up_scare")
+		addButton("Сесть рядом", "Сесть рядом с белым пушистиком", "walk_up_scare")
 	if(state == "walk_up_scare"):
 		playAnimation(StageScene.Duo, "stand", {npc="artica", npcAction="sit"})
-		saynn("You walk up to that lilac's table, still holding the tray.")
+		saynn("Ты подходишь к столику этой сиреневой девчонки, всё еще держа в руках поднос.")
 
-		saynn("[say=pc]Mind if I?[/say]")
+		saynn("[say=pc]Не возражаешь, если я присяду?[/say]")
 
-		saynn("Hearing that, the girl jumps! She quickly pulls her paws from under the table and looks at you with big cyan eyes while blinking frantically.")
+		saynn("Услышав это, девушка подпрыгивает! Она быстро убирает лапки под стол и смотрит на тебя огромными голубыми глазами, лихорадочно хлопая ресницами.")
 
-		saynn("[say=artica]Eep! Ah! Oh.. Um.. m..[/say]")
+		saynn("[say=artica]Ик! А! Ох... Эм... м...[/say]")
 
-		saynn("She closes her legs, tucks her tail under butt and lowers her gaze, trying to occupy as little space as possible.")
+		saynn("Она сжимает ножки, поджимает хвост под задницу и опускает взгляд, стараясь занимать как можно меньше места.")
 
-		saynn("[say=artica]Mm.. um.. I..[/say]")
+		saynn("[say=artica]Мм.. эм.. я..[/say]")
 
-		saynn("Your sudden words really startled her, it seems.")
+		saynn("Кажется, твои внезапные слова действительно её напугали.")
 
-		saynn("[say=pc]Relax. Just wondering if I can eat at this table.[/say]")
+		saynn("[say=pc]Расслабься. Просто думаю, можно ли мне сесть за этот стол.[/say]")
 
-		saynn("[say=artica]Oh.. s-sure..[/say]")
+		saynn("[say=artica]О.. к-конечно..[/say]")
 
-		saynn("The girl shakes her head.. but then nods twice as much.")
+		saynn("Девушка качает головой... но затем кивает уже дважды.")
 
-		saynn("So unsure this girl is. Maybe she is just still in shock after suddenly ending up in one of the most strict and secure prisons.")
+		saynn("Насколько же она нерешительна. Может, она всё ещё пребывает в шоке от того, что внезапно оказалась в одной из самых строгих и охраняемых тюрем.")
 
-		addButton("Sit", "Take a seat", "sit_near")
+		addButton("Сесть", "Сесть", "sit_near")
 	if(state == "sit_near"):
 		playAnimation(StageScene.Duo, "sit", {npc="artica", npcAction="sit"})
-		saynn("You sit on a bench opposite of hers, just so you don't startle the poor girl even more.")
+		saynn("Ты садишься на скамью напротив неё, чтобы не пугать бедную девчонку ещё сильнее.")
 
-		saynn("Plastic utensil in hand, you begin consuming the prison treat. The girl keeps her gaze low, doing the same, eating.. just at a much slower pace.")
+		saynn("С пластиковым прибором в руке, ты начинаешь поедать тюремное угощение. Девушка не поднимает глаз, делая то же самое — ест... только гораздо медленнее.")
 
-		saynn("Might as well be a little polite.")
+		saynn("Стоит проявить немного вежливости.")
 
 		if (GM.pc.getInmateType() == InmateType.HighSec):
-			saynn("[say=pc]Name is {pc.name}. Don't worry about the red, I won't bite you now.[/say]")
+			saynn("[say=pc]Меня зовут {pc.name}. Не бойся красного, я не собираюсь тебя кусать.[/say]")
 
 		elif (GM.pc.getInmateType() == InmateType.SexDeviant):
-			saynn("[say=pc]Name is {pc.name}. You're a lilac, just like me.[/say]")
+			saynn("[say=pc]Её имя — {pc.name}. Ты тоже сиреневая, прямо как я.[/say]")
 
 		else:
-			saynn("[say=pc]Name is {pc.name}. Orange colors means I'm harmless.[/say]")
+			saynn("[say=pc]Её имя — {pc.name}. Оранжевый цвет значит, что я безобидная.[/say]")
 
-		saynn("Her ears perk at your words. The girl blinks a few more times in a row, fidgeting while sitting on her tail.")
+		saynn("Её ушки навостряются от твоих слов. Девушка несколько раз подряд моргает, неловко ерзая на своём хвосте.")
 
-		saynn("[say=artica]Hi.. umm.. m..[/say]")
+		saynn("[say=artica]Привет.. эм.. п..[/say]")
 
-		saynn("No wonder you couldn't hear her talking with that big ass cat the other day.")
+		saynn("Неудивительно, что ты не слышал, как она болтала с тем здоровенным котом на днях.")
 
-		addButton("So shy", "Tell the girl that she acting quite shy for a lilac", "say_shy")
-		addButton("Food sucks?", "Ask why is she eating so slowly", "say_foodsucks")
+		addButton("Такая скромница", "Сказать девушке, что она ведет себя слишком застенчиво для сиреневой", "say_shy")
+		addButton("Еда отстой?", "Спросить, почему она ест так медленно", "say_foodsucks")
 	if(state == "say_shy"):
-		saynn("[say=pc]You seem quite shy, for a lilac especially.[/say]")
+		saynn("[say=pc]Ты кажешься очень застенчивой, особенно для сиреневой.[/say]")
 
-		saynn("The girl rubs her nose. As you are sitting opposite of her, you notice her spreading her toes wide each time you get her attention. It's kinda.. cute.")
+		saynn("Девушка потирает нос. Сидя напротив неё, вы замечаете, что каждый раз, когда вы привлекаете её внимание, она широко разводит пальцы ног. Это даже... мило.")
 
-		saynn("[say=artica]..j-just.. trying to.. stay quiet.[/say]")
+		saynn("[say=artica]П-просто.. стараюсь.. не шуметь.[/say]")
 
-		saynn("Poor fluff clearly scared. Might as well reassure her a little bit.")
+		saynn("Бедняжка явно напугана. Стоит немного её подбодрить.")
 
-		saynn("[say=pc]Whatever you heard from others, it's not that bad. You get used to it.[/say]")
+		saynn("[say=pc]Что бы ты там ни слышала от других, всё не так уж плохо. Привыкаешь.[/say]")
 
-		saynn("She looks up at you.. and offers you a subtle smile.")
+		saynn("Она поднимает на вас взгляд... и едва заметно улыбается.")
 
-		saynn("[say=artica]M-mm.. mhm.. um..[/say]")
+		saynn("[say=artica]М-мм.. мхм.. эм..[/say]")
 
-		saynn("She continues to nom the paste at a fairly slow pace.")
+		saynn("Она продолжает довольно медленно уплетать пасту.")
 
-		addButton("Lilacs are sluts", "Remind the girl of the colors that she is wearing", "say_lilacssluts")
-		addButton("Food sucks?", "Ask why is she eating so slowly", "say_foodsucks")
-		addButton("Enough chat", "Time to move on", "enough_chat")
+		addButton("Сирень — шлюхи", "Напомнить девушке о цветах её одежды", "say_lilacssluts")
+		addButton("Еда отстой?", "Спросить, почему она ест так медленно", "say_foodsucks")
+		addButton("Хватит болтать", "Пора двигаться дальше", "enough_chat")
 	if(state == "say_lilacssluts"):
-		saynn("[say=pc]All the lilacs are sluts. Just so you know.[/say]")
+		saynn("[say=pc]Все эти сиреньки — те ещё шлюшки. Просто чтобы ты знала.[/say]")
 
-		saynn("The girl's cheeks start glowing red as you say that. She sways from side to side on the bench, struggling to stay still. You can just feel her heart racing now.. but even that didn't seem to make her snap out of her shy state.")
+		saynn("От твоих слов щеки девушки начинают пылать красным. Она покачивается на скамье из стороны в сторону, изо всех сил стараясь не ерзать. Ты буквально чувствуешь, как бешено колотится её сердце... но даже это, кажется, не помогло ей выйти из состояния жуткой застенчивости.")
 
-		saynn("[say=artica]Um.. m.. m.m.. sluts?..[/say]")
+		saynn("[say=artica]Эм.. ш.. ш.. шлюшки?..[/say]")
 
-		saynn("You continue to casually eat the paste with a smug expression.")
+		saynn("Ты продолжаешь небрежно уплетать пасту с самодовольным видом.")
 
-		saynn("[say=pc]Yeah, just stating the facts. You might become someone's sex toy.[/say]")
+		saynn("[say=pc]Да ладно, просто констатирую факт. Ты вполне можешь стать чьей-нибудь секс-игрушкой.[/say]")
 
-		saynn("Your gazes collide. You smile while the girl only blushes even more deeply.")
+		saynn("Ваши взгляды встречаются. Ты улыбаешься, а девушка лишь краснеет ещё сильнее.")
 
-		saynn("[say=pc]Not the worst thing that could happen to someone here.[/say]")
+		saynn("[say=pc]Не самая худшая участь, которая может постичь кого-то в этом месте.[/say]")
 
-		saynn("She shakes her head a little.. and then nods a bunch.. before lowering her head and focussing on nomming her food.")
+		saynn("Она слегка качает головой... а затем несколько раз кивает... после чего опускает голову и сосредоточенно принимается за еду.")
 
-		addButton("Food sucks?", "Ask why is she eating so slowly", "say_foodsucks")
-		addButton("Enough chat", "Time to move on", "enough_chat")
+		addButton("Еда отстой?", "Спросить, почему она ест так медленно", "say_foodsucks")
+		addButton("Хватит болтать", "Пора двигаться дальше", "enough_chat")
 	if(state == "say_foodsucks"):
-		saynn("[say=pc]Don't like the food?[/say]")
+		saynn("[say=pc]Еда не нравится?[/say]")
 
-		saynn("She shrugs.")
+		saynn("Она пожимает плечами.")
 
-		saynn("[say=artica]It's.. oki..[/say]")
+		saynn("[say=artica]Она.. норм..[/say]")
 
-		saynn("[say=pc]Don't have to be insincere with me, I'm eating the same crap. And I know that it's crap.[/say]")
+		saynn("[say=pc]Не обязательно притворяться передо мной, я жру ту же дрянь. И я прекрасно знаю, что это дрянь.[/say]")
 
 		if (!gaveApple):
-			saynn("The girl tilts her head a bit, occasionally still getting some more paste into her mouth.")
+			saynn("Девушка слегка наклоняет голову, время от времени закидывая в рот порции пасты.")
 
 		else:
-			saynn("The girl tilts her head a bit, focussing on biting into the apple that you gave her.")
+			saynn("Девушка слегка наклоняет голову, сосредоточенно вгрызаясь в предложенное тобой яблоко.")
 
-		addButton("So shy", "Tell the girl that she acting quite shy for a lilac", "say_shy")
-		addButton("Enough chat", "Time to move on", "enough_chat")
+		addButton("Такая скромница", "Сказать девушке, что она ведет себя слишком застенчиво для сиреневой", "say_shy")
+		addButton("Хватит болтать", "Пора двигаться дальше", "enough_chat")
 		if (!gaveApple):
 			if (GM.pc.getInventory().hasItemID("appleitem")):
-				addButton("Give apple", "Give the girl one of your apples", "do_give_apple")
+				addButton("Дать яблоко", "Отдать девушке одно из своих яблок", "do_give_apple")
 			else:
-				addDisabledButton("Give apple", "You don't have any apples")
+				addDisabledButton("Дать яблоко", "У тебя нет яблок")
 	if(state == "do_give_apple"):
-		saynn("Your hand produces a little treat and quickly rubs it squeaky-clean against your wrist before offering it to the girl.")
+		saynn("Твоя рука достает маленькое лакомство, ты быстро протираешь его о запястье до скрипа, а затем протягиваешь девушке.")
 
-		saynn("[say=pc]Nom this. It's not exactly a lot of protein.. but at least it has a taste.[/say]")
+		saynn("[say=pc]Покушай это. Белка тут не густо... но зато есть хоть какой-то вкус.[/say]")
 
-		saynn("The fluff is reluctant.. so you basically put the apple into her paw.")
+		saynn("Пушистая особа колеблется... так что ты просто вкладываешь яблоко ей в лапку.")
 
-		saynn("[say=artica]..t-thank.. k.. ks..[/say]")
+		saynn("[say=artica]..с-спасибо.. к.. кс..[/say]")
 
-		saynn("[say=pc]Don't mention it.[/say]")
+		saynn("[say=pc]Не стоит благодарности.[/say]")
 
-		saynn("She brings the treat to her maw.. bites it.. and then chrrrs as the juice hits her tongue.")
+		saynn("Она подносит лакомство к своей пасти.. откусывает.. и издает довольное урчание, когда сок касается её языка.")
 
-		saynn("Can't let the poor girl starve.")
+		saynn("Нельзя дать бедняжке умереть с голоду.")
 
-		addButton("So shy", "Tell the girl that she acting quite shy for a lilac", "say_shy")
-		addButton("Enough chat", "Time to move on", "enough_chat")
+		addButton("Такая скромница", "Сказать девушке, что она ведет себя слишком застенчиво для сиреневой", "say_shy")
+		addButton("Хватит болтать", "Пора двигаться дальше", "enough_chat")
 	if(state == "enough_chat"):
 		playAnimation(StageScene.Duo, "stand", {npc="artica", npcAction="sit"})
-		saynn("You finish your meal, feeling slightly less tired than before.. which is the best thing you could hope for.")
+		saynn("Вы заканчиваете трапезу, чувствуя себя чуть менее уставшим, чем прежде... а это лучшее, на что можно рассчитывать.")
 
-		saynn("[say=pc]Well, see you around.[/say]")
+		saynn("[say=pc]Ну, еще увидимся.[/say]")
 
-		saynn("You get up and bring the tray to the right window.")
+		saynn("Вы встаете и несете поднос к окну справа.")
 
-		saynn("As you walk past the girl, you hear her quiet shy voice.")
+		saynn("Когда вы проходите мимо девушки, вы слышите её тихий, застенчивый голосок.")
 
-		saynn("[say=artica]..Artica..[/say]")
+		saynn("[say=artica]..Артика..[/say]")
 
-		saynn("[say=pc]Huh?[/say]")
+		saynn("[say=pc]А?[/say]")
 
-		saynn("You stop for a second.")
+		saynn("Вы замираете на секунду.")
 
-		saynn("[say=artica]..n..name is..[/say]")
+		saynn("[say=artica]..и.. имя..[/say]")
 
-		addButton("Nice name", "Comment on her name", "say_nicename")
-		addButton("Forget it", "Tell Artica that she might as well forget it", "say_canforget")
+		addButton("Классное имя", "Прокомментировать её имя", "say_nicename")
+		addButton("Забыть об этом", "Сказать Артике, что ей лучше об этом забыть", "say_canforget")
 	if(state == "say_nicename"):
-		saynn("[say=pc]Artica? Has a nice ring to it.[/say]")
+		saynn("[say=pc]Артика? Звучит красиво.[/say]")
 
-		saynn("[say=artica]..t-thanks..[/say]")
+		saynn("[say=artica]..с-спасибо..[/say]")
 
-		saynn("Probably better to give Artica a day to rest and get used to her new life. Hard to say what's going on in her head right now.")
+		saynn("Наверное, лучше дать Артике день, чтобы она отдохнула и привыкла к новой жизни. Трудно сказать, что сейчас у неё в голове.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "say_canforget"):
-		saynn("[say=pc]You might as well forget it. Inmates here only have a number.[/say]")
+		saynn("[say=pc]Можешь об этом забыть. У зэчек здесь только номера.[/say]")
 
-		saynn("Artica nods subtly and lowers her gaze.")
+		saynn("Артика едва заметно кивает и опускает взгляд.")
 
-		saynn("[say=pc]Don't be sad. You will also be called all sorts of cool names. Depends on how you act.[/say]")
+		saynn("[say=pc]Не грусти. Тебя тоже будут называть всякими крутыми именами. Смотря как будешь себя вести.[/say]")
 
-		saynn("[say=artica]..ok-k.. t-thanks..[/say]")
+		saynn("[say=artica]..с-спасибо..[/say]")
 
-		saynn("Probably better to give Artica a day to rest and get used to her new life. Hard to say what's going on in her head right now.")
+		saynn("Наверное, лучше дать Артике день, чтобы она отдохнула и привыкла к новой жизни. Трудно сказать, что сейчас у неё в голове.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

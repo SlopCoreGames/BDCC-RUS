@@ -6,7 +6,7 @@ var id:String = ""
 var npcOwnerRef:WeakRef
 
 func getVisibleName() -> String:
-	return "FILL ME!"
+	return "ЗАПОЛНИ МЕНЯ!"
 
 func getVisibleDescription() -> String:
 	return "FILL ME!"

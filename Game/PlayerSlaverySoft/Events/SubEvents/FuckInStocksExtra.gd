@@ -18,18 +18,18 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 func start():
 	playAnimation(StageScene.Duo, "stand", {pc=getRoleID(C_EXTRA1), npc=getRoleID(C_OWNER)})
 	sayPretext()
-	saynn("{npc1.name} approaches you and your owner!")
+	saynn("{npc1.name} подходит к тебе и твоему хозяину!")
 	talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryFuckInStocksExtra")
 	
 	var ownerRejectChance:float = 50.0 + ownerPersonality(PersonalityStat.Mean)*50.0 + 100.0*getOwnerNOM(NOM.NoSharing) - 100.0*getOwnerNOM(NOM.Sharing)
 	if(!smartChance(ownerRejectChance)):
 		talkModularOwnerToPC("SoftSlaveryFuckInStocksExtraYes")
-		saynn("Double trouble..")
+		saynn("Двойная порция проблем...")
 		addContinue("setState", ["inStocks"])
 	else:
 		talkModularOwnerToPC("SoftSlaveryFuckInStocksExtraNo")
 		talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryFuckInStocksExtraNo2")
-		saynn("Both of them don't wanna back down..")
+		saynn("Оба не собираются отступать...")
 		addContinue("doNpcFight")
 
 func start_do(_id:String, _args:Array):
@@ -47,9 +47,9 @@ func inStocks():
 	setLocation(LOC_STOCKS)
 	playAnimation(StageScene.StocksSpitroast, "tease", {npc=getRoleID(C_OWNER), npc2=getRoleID(C_EXTRA1)})
 	
-	saynn("You obey their touch, bending forward and placing your head onto the lower part of the stocks before they lock you in.")
+	saynn("Ты послушно подставляешься под их руки, наклоняясь вперед и опуская голову в нижнюю часть колодок, прежде чем они защелкнут замок.")
 	addInfluenceObey()
-	saynn("Looks like you are about to be used by both of them..")
+	saynn("Похоже, тебя сейчас будут поиметь оба...")
 	addContinue("startSex", [[getRoleID(C_OWNER), getRoleID(C_EXTRA1)], "pc", SexType.StocksSex])
 	
 func inStocks_sexResult(_sexResult:SexEngineResult):
@@ -57,21 +57,21 @@ func inStocks_sexResult(_sexResult:SexEngineResult):
 
 func afterSex():
 	playAnimation(StageScene.Duo, "stand", {npc=getOwnerID()})
-	saynn("After the sex, your owner unlocks you from the stocks.")
+	saynn("После секса твой хозяин освобождает тебя из колодок.")
 	talkModularOwnerToPC("SoftSlaveryFuckInStocksExtraFree")
 	addContinue("endEvent")
 
 
 func extraLost():
 	playAnimation(StageScene.Solo, "stand", {pc=getRoleID(C_OWNER)})
-	saynn("After a lost fight, {npc1.name} just fucks off!")
+	saynn("Проиграв бой, {npc1.name} просто съебывает!")
 	addInfluenceObey(0.2)
-	saynn("Time to continue where you left off..")
-	addButton("Submit", "Submit to your owner", "endEvent")
+	saynn("Пора продолжить с того места, где вы остановились...")
+	addButton("Подчиниться", "Подчиниться хозяину", "endEvent")
 
 func extraWon():
 	playAnimation(StageScene.StocksSexOral, "tease", {npc=getRoleID(C_EXTRA1)})
-	saynn("{npc1.name} won! Looks like they're gonna fuck you alone while your owner is watching!")
+	saynn("{npc1.name} победил(а)! Похоже, тебя собираются оттрахать в одиночку прямо на глазах у твоего хозяина!")
 	addInfluenceResist()
 	addContinue("startSex", [getRoleID(C_EXTRA1), "pc", SexType.StocksSex])
 
@@ -80,6 +80,6 @@ func extraWon_sexResult(_sex:SexEngineResult):
 
 func afterSexExtra():
 	playAnimation(StageScene.Duo, "stand", {npc=getOwnerID()})
-	saynn("After the sex, {npc1.name} leaves, allowing your defeated owner to unlock you from the stocks.")
+	saynn("После секса {npc1.name} уходит, позволяя твоему поверженному хозяину освободить тебя из колодок.")
 	talkModularOwnerToPC("SoftSlaveryFuckInStocksExtraFreeLost")
 	addContinue("endEvent")

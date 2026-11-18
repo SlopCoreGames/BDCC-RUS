@@ -11,22 +11,22 @@ func arun(_triggerID, _args):
 	if(!GM.main.getModuleFlag("CellblockModule", "Cellblock_GreenhouseLooted", false)):
 		addButtonUnlessLate("Steal", "Try and steal something", "steal_apple")
 	else:
-		addDisabledButton("Steal", "Too dangerous to do this again today")
+		addDisabledButton("Украсть", "Слишком опасно делать это снова сегодня")
 	
 func run(_triggerID, _args):
 	if(getFlag("AlexRynardModule.ch2CheckAlexSceneHappened") && !getFlag("AlexRynardModule.ch2FinalSceneHappened")):
 		if(_triggerID == Trigger.DefeatedDynamicNPC):
 			if(getFlag("AlexRynardModule.ch2LastCheckedNPC", "") == _args[0]):
-				addDisabledButton("Parts!", "You already checked them")
+				addDisabledButton("Детали!", "Ты уже проверял их")
 			else:
 				var character = getCharacter(_args[0])
 				if(character != null && character.getCharacterType() == CharacterType.Engineer):
-					addButton("Parts!", "See if they have the required parts", "checkparts", [_args[0]])
+					addButton("Детали!", "Проверить, есть ли нужные детали", "checkparts", [_args[0]])
 		if(_triggerID == Trigger.EnteringRoom):
 			if(getFlag("AlexRynardModule.ch2StolePartsStorageDay", -1) >= GM.main.getDays()):
-				addDisabledButton("Parts!", "You have already searched for parts today")
+				addDisabledButton("Детали!", "Ты уже искал детали сегодня")
 			else:
-				addButton("Parts!", "Steal some parts for Alex", "stealparts")
+				addButton("Детали!", "Украсть немного деталей для Алекса", "stealparts")
 
 func getPriority():
 	return 0

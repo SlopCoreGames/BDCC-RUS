@@ -4,7 +4,7 @@ class_name SexGoalBase
 var id = "error"
 
 func getVisibleName():
-	return "Error"
+	return "Ошибка"
 
 func isPossible(_sexEngine, _domInfo, _subInfo, _data):
 	return true

@@ -19,7 +19,7 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 func start():
 	playAnimation(StageScene.Duo, "stand", {pc=getOwnerID(), npc=getRoleID(C_EXTRA1)})
 	sayPretext()
-	saynn("{npc1.name} stands in the way.")
+	saynn("{npc1.name} преграждает вам путь.")
 	talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryParadeFuckOffer")
 	
 	var allowSexChance:float = 50.0 + ownerPersonality(PersonalityStat.Subby)*40.0 + ownerPersonality(PersonalityStat.Naive)*20.0
@@ -46,7 +46,7 @@ func start():
 			addContinue("endEvent")
 		else:
 			talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryParadeFuckOfferFight")
-			saynn("Looks like something is gonna happen!")
+			saynn("Похоже, сейчас что-то будет!")
 			addContinue("fight")
 
 func start_do(_id:String, _args:Array):
@@ -65,7 +65,7 @@ func start_eventResult(_event, _tag:String, _args:Array):
 
 func afterSex():
 	playAnimation(StageScene.Duo, "stand", {npc=getOwnerID(), bodyState={leashedBy=getOwnerID()}})
-	saynn("After the sex, your owner clicks the leash to your collar again.")
+	saynn("После секса ваш хозяин снова пристегивает поводок к вашему ошейнику.")
 	talkModularOwnerToPC("SoftSlaveryParadeFuckOfferGood")
 	addInfluenceObey(0.3)
 	addContinue("endEvent")
@@ -73,7 +73,7 @@ func afterSex():
 func ownerWon():
 	playAnimation(StageScene.Duo, "stand", {npc=getOwnerID(), bodyState={leashedBy=getOwnerID()}})
 	
-	saynn("Your owner clicks the leash to your collar again.")
+	saynn("Ваш хозяин снова пристегивает поводок к вашему ошейнику.")
 	talkModularOwnerToPC("SoftSlaveryParadeFuckOfferWon")
 	addInfluenceObey(0.2)
 	addContinue("endEvent")
@@ -81,7 +81,7 @@ func ownerWon():
 func ownerLost():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_EXTRA1)})
 	
-	saynn("After the fight, you get approached by {npc1.name}.")
+	saynn("После драки к вам подходит {npc1.name}.")
 	
 	isThreesome = RNG.chance(50)
 	if(!isThreesome):
@@ -97,7 +97,7 @@ func ownerLost_sexResult(_sex:SexEngineResult):
 func afterLostSex():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_EXTRA1)})
 	
-	saynn("{npc.name} is still recovering after that defeat, giving you time to leave.")
+	saynn("{npc.name} всё еще восстанавливается после поражения, давая вам время уйти.")
 	addInfluenceResist(0.8)
 	addContinue("endEvent")
 

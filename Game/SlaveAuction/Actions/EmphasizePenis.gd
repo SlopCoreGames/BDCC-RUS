@@ -7,34 +7,34 @@ func getActionType():
 	return AuctionActionType.Emphasize
 
 func getName() -> String:
-	return "Penis"
+	return "Пенис"
 
 func getButtonDesc() -> String:
 	return "Really show off the slave's dick.\n\nDoesn't reveal any preferences, has a negative effects on bidders who don't strongly prefer any of the presented traits."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	if(_slaveTraits.has("PenisSmall") && _slaveTraits["PenisSmall"] > 0.0):
-		saynn("{presenter.You} {presenter.youVerb('walk')} up to the slave, a wicked smile curling on {presenter.yourHis} lips as {presenter.youHe} {presenter.youHeVerb('reach', 'reaches')} out. The bidders are watching closely. {presenter.YouHe} {presenter.youHeVerb('grab')} {slave.name}'s {slave.penis}, and {presenter.youHeVerb('give')} it a little tug, drawing a chuckle from some of the bidders.")
+		saynn("{presenter.You} {presenter.youVerb('walk')} подходит к рабыне, и на {presenter.yourHis} губах играет порочная ухмылка, когда {presenter.youHe} {presenter.youHeVerb('reach', 'reaches')} наружу. Участники торгов внимательно наблюдают. {presenter.YouHe} {presenter.youHeVerb('grab')} {slave.name}'s {slave.penis}, и {presenter.youHeVerb('give')} слегка дергает его, вызывая смешки у некоторых аукционистов.")
 		
 		sayPresenter("Take a look at this. {slave.He} might not be packing much down here, but I guarantee you, {slave.heShe}'ll make up for it in obedience. Look at how hard {slave.heShe} already is!")
 	
-		saynn("{presenter.YouHe} {presenter.youHeVerb('tease')} the small cock between {presenter.yourHis} fingers, holding it up as if putting it on display, making sure the bidders can see the full length as well as the size of the balls.")
+		saynn("{presenter.YouHe} {presenter.youHeVerb('tease')} маленький член между {presenter.yourHis} пальцами, приподнимая его так, словно выставляя на показ, чтобы торговцы могли рассмотреть и всю длину, и размер яичек.")
 		
 		sayPresenter("Imagine this little cock begging for attention while {slave.heShe} serves your every whim..")
 	if(_slaveTraits.has("PenisAverage") && _slaveTraits["PenisAverage"] > 0.0):
-		saynn("{presenter.You} {presenter.youVerb('step')} forward, {presenter.yourHis} hand reaching down to grasp {slave.name}'s {slave.penis}, which stands proudly at attention. The slave lets out a soft gasp as {presenter.yourHis} fingers wrap around {slave.himHer}, and the bidders lean in with interest.")
+		saynn("{presenter.You} {presenter.youVerb('step')} вперед, протягивая {presenter.yourHis} руку, чтобы схватить {slave.name}'s {slave.penis}, который гордо стоит в напряжении. Рабыня тихо ахает, когда {presenter.yourHis} пальцы обхватывают {slave.himHer}, а участники торгов с интересом подаются вперед.")
 		
 		sayPresenter("Take a look at this. {slave.HeShe} {slave.isAre} already hard, just from being up here. Imagine what {slave.heShe}'ll do when you give {slave.himHer} a real command.")
 	
-		saynn("{presenter.YouHe} slowly {presenter.youHeVerb('stroke')} the length, letting the bidders take in every inch. With a playful grin, {presenter.youHe} {presenter.youHeVerb('cup')} the balls too, presenting them in their full glory.")
+		saynn("{presenter.YouHe} медленно {presenter.youHeVerb('stroke')} длину, позволяя торговцам рассмотреть каждый дюйм. С игривой ухмылкой {presenter.youHe} {presenter.youHeVerb('cup')} и яички тоже, представляя их во всем великолепии.")
 	
 		sayPresenter("This cock is going to give you everything you want, every time.")
 	if(_slaveTraits.has("PenisLong") && _slaveTraits["PenisLong"] > 0.0):
-		saynn("With a dramatic gesture, {presenter.you} {presenter.youVerb('approach', 'approaches')} the slave, {presenter.yourHis} hand reaching out to grab that {slave.penis} and give it a few slow strokes. As the weight of it fills {presenter.yourHis} hand, the bidders' eyes widen in appreciation.")
+		saynn("Драматичным жестом {presenter.you} {presenter.youVerb('approach', 'approaches')} рабыню, протягивая {presenter.yourHis} руку, чтобы схватить этот {slave.penis} и сделать несколько медленных движений. Когда его тяжесть наполняет {presenter.yourHis} руку, глаза торговцев расширяются от восхищения.")
 	
 		sayPresenter("Now this.. is something special. Just look at the size of this cock!")
 		
-		saynn("{presenter.You} {presenter.youVerb('continue')} to run {presenter.yourHis} fingers along the shaft, making sure every inch is visible. All the while, the second hand cups the sizeable orbs, presenting them to the bidders' eyes as well.")
+		saynn("{presenter.You} {presenter.youVerb('continue')} проводит {presenter.yourHis} пальцами по стволу, следя за тем, чтобы каждый дюйм был на виду. При этом вторая рука обхватывает внушительные шары, выставляя их на обозрение торгующимся.")
 		
 		sayPresenter("Who’s going to be the lucky one to claim this amazing juicy dick?")
 

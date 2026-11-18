@@ -3,7 +3,7 @@ extends SubGameWorld
 
 
 func _on_FightClubRoom_onEnter(room):
-	room.addButton("Leave", "Return to the prison", "leave")
+	room.addButton("Уйти", "Вернуться в тюрьму", "leave")
 
 
 func _on_FightClubRoom_onReact(_room, key):

@@ -25,7 +25,7 @@ func canDo(_lustState: LustCombatState, _args):
 
 func getVisibleName(_lustState: LustCombatState, _args):
 	var itemState: SimpleRemoveState = _args["itemState"]
-	return "Take "+itemState.casualName+" off"
+	return "Взять "+itemState.casualName+" off"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "Take it off fully!"

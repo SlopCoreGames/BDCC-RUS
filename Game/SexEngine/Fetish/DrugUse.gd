@@ -9,7 +9,7 @@ func _init():
 	}
 
 func getVisibleName():
-	return "Drug use"
+	return "Употребление наркотиков"
 
 func getGoals(_sexEngine, _domFetishHolder, _dom, _sub):
 	var possible = []

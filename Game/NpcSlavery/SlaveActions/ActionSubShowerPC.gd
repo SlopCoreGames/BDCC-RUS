@@ -16,7 +16,7 @@ func _init():
 	buttonPriority = 90
 
 func getVisibleName():
-	return "Shower"
+	return "Душ"
 
 func getVisibleDesc():
 	return "Order your sub to shower you"

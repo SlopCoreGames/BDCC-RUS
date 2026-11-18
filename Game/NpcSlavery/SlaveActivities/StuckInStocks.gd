@@ -4,7 +4,7 @@ func _init():
 	id = "StuckInStocks"
 	
 func getVisibleName():
-	return "Stuck in stocks"
+	return "Зажатая в колодах"
 
 func onStart(_args = []):
 	var pawn = GM.main.IS.spawnPawnIfNeeded(getCharID())
@@ -53,7 +53,7 @@ func hoursPassed(_howMuch):
 func getInteractActions():
 	return [
 		{
-			name = "Stocks",
+			name = "Колодки",
 			desc = "Pay them a visit",
 			sceneID = "SlaveTPToLocScene",
 			args = ["main_punishment_spot"],

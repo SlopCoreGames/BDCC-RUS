@@ -17,19 +17,19 @@ var fuckHoleNames:Array = [
 
 const POSES = {
 	POSE_CUDDLEFUCK: {
-		name = "Cuddle-fuck",
+		name = "Обнимашки-трах",
 		anim = StageScene.TentaclesCuddle,
 		anims = ["tease", "inside", "sex", "fast"],
 		startText = "{dom.You} {dom.youVerb('grab')} {sub.you} and {dom.youVerb('lift')} {sub.youHim} above the floor slightly. Most tentacles are forming a seat under {sub.youHim} while one of them slides towards {sub.yourHis} <HOLE>.",
 	},
 	POSE_BONDAGEFUCK: {
-		name = "Bound-fuck",
+		name = "Трах в путах",
 		anim = StageScene.TentaclesBondage,
 		anims = ["tease", "inside", "sex", "fast"],
 		startText = "{dom.You} {dom.youVerb('grab')} {sub.you} and {dom.youVerb('bind')} {sub.yourHis} arms and legs, two tentacles are covering up {sub.yourHis} mouth and eyes while another one slides down to {sub.yourHis} <HOLE>.",
 	},
 	POSE_CHOKEFUCK: {
-		name = "Choke-fuck",
+		name = "Трах с удушением",
 		anim = StageScene.TentaclesChoke,
 		anims = ["sextease", "sexinside", "sex", "sexfast"],
 		startText = "",

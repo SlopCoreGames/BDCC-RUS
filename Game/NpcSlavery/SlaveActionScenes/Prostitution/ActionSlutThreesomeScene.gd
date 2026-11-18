@@ -28,15 +28,15 @@ func _run():
 		#var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		#var npc2Slavery:NpcSlave = npc2.getNpcSlavery()
 		
-		saynn("You grab two of your sluts, about to have fun with them!")
+		saynn("Ты хватаешь двух своих шлюх, готовясь оторваться с ними по полной!")
 		
-		addButton("Sex", "Time to have some fun", "do_sex")
+		addButton("Секс", "Пора развлечься", "do_sex")
 	if(state == "after_sex"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID, pc=npc2ID, bodyState={chains=[["normal", "neck", "scene", "floor"]]}, npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
 		
-		saynn("After the sex ends, you order your slaves to get up. You make sure that both of them are still chained up to the floor.")
+		saynn("Когда секс заканчивается, ты приказываешь рабыням встать. Ты убеждаешься, что обе они всё ещё прикованы цепями к полу.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		
 		
 func _react(_action: String, _args):

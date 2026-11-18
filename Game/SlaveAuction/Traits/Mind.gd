@@ -18,19 +18,19 @@ func getTraitType(_id:String):
 
 func getName(_id:String) -> String:
 	if(_id == "MindStaff"):
-		return "Staff member"
+		return "Сотрудник"
 	if(_id == "MindInmate"):
-		return "Inmate"
+		return "Заключённый"
 	if(_id == "SkillSlut"):
-		return "Slut skill"
+		return "Навык шлюхи"
 	if(_id == "SkillPet"):
-		return "Pet skill"
+		return "Навык питомца"
 	if(_id == "SkillSubmissive"):
-		return "Submissive skill"
+		return "Навык покорности"
 	if(_id == "MindBroken"):
-		return "Mindbroken"
+		return "Сломленный разум"
 	if(_id == "MindSubmitted"):
-		return "Submitted"
+		return "Подчинившийся"
 	
 	return "ERROR"
 

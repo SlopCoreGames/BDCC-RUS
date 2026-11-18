@@ -8,7 +8,7 @@ func _init():
 	}
 
 func getVisibleName():
-	return "Unconscious sex"
+	return "Секс в бессознательном состоянии"
 
 func getGoals(_sexEngine, _domFetishHolder, _dom, _sub):
 	var possible = []

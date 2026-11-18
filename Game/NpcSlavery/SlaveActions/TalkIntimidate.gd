@@ -9,7 +9,7 @@ func _init():
 	buttonPriority = 50
 
 func getVisibleName():
-	return "Intimidate"
+	return "Запугивание"
 
 func getVisibleDesc():
 	return "Threaten your slave to make them obey better"

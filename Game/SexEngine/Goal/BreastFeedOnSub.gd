@@ -4,7 +4,7 @@ func _init():
 	id = SexGoal.BreastFeedOnSub
 
 func getVisibleName():
-	return "Breastfeed on sub"
+	return "Кормить грудью сабку"
 
 func isPossible(_sexEngine, _domInfo, _subInfo, _data):
 	#if(!_subInfo.getChar().canBeMilked()):

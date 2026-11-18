@@ -4,7 +4,7 @@ func _init():
 	id = "Dominant"
 
 func getVisibleName() -> String:
-	return "Dominant"
+	return "Доминант"
 
 func getVisibleDescription() -> String:
 	return "The owner is extra dominant and will be more eager to lock the slave up."

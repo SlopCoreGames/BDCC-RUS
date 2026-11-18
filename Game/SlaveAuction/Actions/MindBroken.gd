@@ -7,7 +7,7 @@ func getActionType():
 	return AuctionActionType.Mind
 
 func getName() -> String:
-	return "Mind-broken"
+	return "Сломленная психика"
 
 func getButtonDesc() -> String:
 	return "Point out the slave's broken mind.. Might cause a big reaction, positive or negative.\n\n[b]Might[/b] reveal 1 personality preference of each bidder."

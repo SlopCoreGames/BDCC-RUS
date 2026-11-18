@@ -38,11 +38,11 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 func start():
 	playAnimation(StageScene.Duo, "hurt", {npc=getOwnerID(), npcAction="shove"})
 	sayPretext()
-	saynn("As a punishment, your owner starts ripping your clothes!")
+	saynn("В качестве наказания твой хозяин начинает рвать на тебе одежду!")
 	for theLine in damageTexts:
 		saynn(theLine)
 	talkModularOwnerToPC("SoftSlaveryPunishRipClothes")
-	saynn("And just like that, the punishment ends.")
+	saynn("И вот так просто наказание заканчивается.")
 	addContinue("endEvent")
 
 func saveData() -> Dictionary:

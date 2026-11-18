@@ -22,48 +22,48 @@ func _run():
 		GM.pc.setLocation("main_punishment_spot")
 		playAnimation(StageScene.Stocks, "idle", {pc=npcID})
 		
-		saynn("{npc.name} is stuck in the stocks. You can wait for someone to use {npc.him} or do it yourself.")
+		saynn("{npc.name} зажата в колодах. Ты можешь подождать, пока кто-то воспользуется {npc.him}, или сделать это сам.")
 		
 		if(npcSlave != null):
 			if(npcSlave.getWorkEfficiency() <= 0.1):
-				saynn("Your slave is very tired. Using {npc.him} now will make {npc.him} more depressed.")
+				saynn("Твоя рабыня очень устала. Если использовать {npc.him} прямо сейчас, {npc.him} впадет в еще большую депрессию.")
 				
 			if(npcSlave.getDespair() >= 0.8):
-				saynn("{npc.He} looks very depressed, {npc.his} mind might snap at any moment.")
+				saynn("{npc.He} выглядит очень подавленной, рассудок {npc.his} может пошатнуться в любой момент.")
 			elif(npcSlave.getDespair() >= 0.5):
 				if(npcSlave.getBrokenSpirit() >= 0.9):
-					saynn("{npc.He} looks suppressed. But {npc.he} also doesn't resist at all, {npc.his} spirit must be broken by now!")
+					saynn("{npc.He} выглядит подавленной. Но {npc.he} совсем не сопротивляется — похоже, дух {npc.his} уже окончательно сломлен!")
 				elif(npcSlave.getBrokenSpirit() > 0.5):
-					saynn("{npc.He} looks suppressed. But {npc.he} also doesn't resist much, a sign of {npc.his} spirit breaking.")
+					saynn("{npc.He} выглядит подавленной. Но {npc.he} почти не сопротивляется, что говорит о надломленном духе {npc.his}.")
 				else:
-					saynn("{npc.He} looks suppressed. But {npc.he} keeps trying to break out occasionally, {npc.his} spirit is clearly very high.")
+					saynn("{npc.He} выглядит подавленной. Но {npc.he} время от времени пытается вырваться, так что дух {npc.his} явно еще держится.")
 			else:
 				if(npcSlave.getBrokenSpirit() >= 0.9):
-					saynn("{npc.He} doesn't resist at all, {npc.his} spirit must be broken by now!")
+					saynn("{npc.He} совсем не сопротивляется, дух {npc.his} наверняка уже сломлен!")
 				elif(npcSlave.getBrokenSpirit() > 0.5):
-					saynn("{npc.He} doesn't resist much, a sign of {npc.his} spirit breaking.")
+					saynn("{npc.He} почти не сопротивляется, это признак того, что дух {npc.his} ломается.")
 			
 		if(npc.hasEffect(StatusEffect.HasTallyMarks)):
 			var tallyMarks = npc.getEffect(StatusEffect.HasTallyMarks)
 			var tallyAmount = tallyMarks.totalAmount
 			
 			if(tallyAmount > 0):
-				saynn("{npc.His} body has "+str(tallyAmount)+" tallymark"+("s" if tallyAmount != 1 else "")+" on it which means that {npc.he} got used roughly that many times.")
+				saynn("На теле {npc.His} есть "+str(tallyAmount)+" tallymark"+("s" if tallyAmount != 1 else "")+" штук, а это значит, что {npc.he} использовали так грубо столько раз.")
 		
-		addButton("Watch", "See what others do with your slave", "do_watch")
-		addButtonWithChecks("Use", "Fuck your slave yourself", "do_use", [], [ButtonChecks.CanStartSex])
+		addButton("Смотреть", "Посмотреть, что другие делают с твоей рабыней", "do_watch")
+		addButtonWithChecks("Использовать", "Трахнуть свою рабыню самому", "do_use", [], [ButtonChecks.CanStartSex])
 		
-		addButton("Free slave", "Enough stocks", "do_free_slave")
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Освободить рабыню", "Хватит колодок", "do_free_slave")
+		addButton("Уйти", "Пора идти", "endthescene")
 
 	if(state == "do_free_slave"):
 		aimCameraAndSetLocName(GM.pc.getCellLocation())
 		GM.pc.setLocation(GM.pc.getCellLocation())
 		playAnimation(StageScene.Duo, "stand", {npc=npcID, npcBodyState={leashedBy="pc"}})
 		
-		saynn("Enough stocks, you free {npc.name} up and then bring {npc.him} back to your cell.")
+		saynn("Хватит с ней этих колодок, освободи {npc.name}, а затем отнеси {npc.him} обратно в камеру.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

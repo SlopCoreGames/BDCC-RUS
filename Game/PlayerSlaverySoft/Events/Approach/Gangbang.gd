@@ -24,15 +24,15 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 func start():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER), bodyState={leashedBy=getOwnerID()}})
 	sayPretext()
-	saynn("{npc.name} clicks a leash to your collar.")
+	saynn("{npc.name} щелкает поводком у твоего ошейника.")
 	talkModularOwnerToPC("SoftSlaveryGB")
-	saynn("Looks like your owner wants to find some people to gangbang you with..")
-	addButton("Obey", "Let it happen", "go")
-	addButton("Resist", "You're not gonna let it happen!", "resist")
+	saynn("Похоже, твой хозяин хочет найти кого-нибудь, чтобы устроить тебе групповой секс...")
+	addButton("Повиноваться", "Пусть всё идет своим чередом", "go")
+	addButton("Сопротивляться", "Ты не собираешься этого допускать!", "resist")
 	if(canSetLimits()):
-		addButton("Yes, but..", "Obey but put limits to what your owner can do to you during sex", "yesbut")
+		addButton("Да, но..", "Повиноваться, но установить границы того, что хозяин может с вами делать во время секса", "yesbut")
 	else:
-		addDisabledButton("Yes, but..", "Your relationship hasn't progressed far enough for you to be able to set limits")
+		addDisabledButton("Да, но..", "Ваши отношения еще недостаточно развиты, чтобы вы могли устанавливать границы")
 
 func getParadeTarget() -> String:
 	var theResult:String= RNG.pick(LOCS_PARADE)
@@ -56,7 +56,7 @@ func start_eventResult(_event, _id:String, _args:Array):
 func searching():
 	playAnimation(StageScene.Duo, "walk", {npc=getOwnerID(), npcAction="walk", flipNPC=true, bodyState={leashedBy=getOwnerID()}})
 	
-	saynn("You are being walked around by a leash while {npc.name} is looking for people to gangbang you with!")
+	saynn("Тебя ведут на поводке, пока {npc.name} ищет кандидатов для группового секса с тобой!")
 	
 	addButtonAt(6, "Walk", "See where your owner will bring you..", "go")
 	addDisabledButtonAt(10, "Leashed", "You are leashed")
@@ -94,23 +94,23 @@ func doGo():
 func cancel_sex():
 	playStand(true)
 	
-	saynn("Eventually, {npc.name} decides to give up.")
+	saynn("В конце концов, {npc.name} решает сдаться.")
 	talkModularOwnerToPC("SoftSlaveryGBGiveup")
 	addInfluenceResist(0.5)
-	saynn("Looks like the gangbang is cancelled..")
+	saynn("Похоже, групповушка отменяется...")
 	addContinue("endEvent")
 
 func invite():
 	playAnimation(StageScene.Duo, "stand", {pc=getOwnerID(), npc=getRoleID(C_EXTRA4)})
 	
-	saynn("Your owner approaches someone!")
+	saynn("Твой хозяин подходит к кому-то!")
 	talkModularOwnerToPC("SoftSlaveryGBOffer")
 	
 	var agreeChance:float = 50.0 - personality(C_EXTRA4, PersonalityStat.Subby)*20.0 + personality(C_EXTRA4, PersonalityStat.Mean)*30.0
 	var subInsteadChance:float = 10.0 + personality(C_EXTRA4, PersonalityStat.Subby)*200.0
 	
 	if(smartChance(agreeChance)):
-		saynn("The new person is eyeing you out.")
+		saynn("Новичок вовсю разглядывает тебя.")
 		talkModular(C_EXTRA4, C_OWNER, "SoftSlaveryGBSure")
 		talkModularOwnerToPC("SoftSlaveryGBFollow")
 		addContinue("add")
@@ -121,7 +121,7 @@ func invite():
 			talkModular(C_EXTRA4, C_OWNER, "SoftSlaveryGBSubOfferNoAw")
 			addContinue("notadd")
 		else:
-			saynn("{npc.name} tilts {npc.his} head.")
+			saynn("{npc.name} наклоняет {npc.his} голову.")
 			talkModularOwnerToPC("SoftSlaveryGBSubOfferYes")
 			addContinue("addsub")
 	else:
@@ -175,7 +175,7 @@ func getFreeSlot() -> int:
 func about_to_sex():
 	playAnimation(StageScene.GivingBirth, "idle")
 	
-	saynn("{npc.name} stops. Looks like the gang has been assembled..")
+	saynn("{npc.name} замирает. Похоже, банда в сборе...")
 	talkModularOwnerToPC("SoftSlaveryGBStart")
 	
 	var theDoms:Array = [getOwnerID()]
@@ -206,10 +206,10 @@ func about_to_sex_sexResult(_sex:SexEngineResult):
 
 func afterSex():
 	playAnimation(StageScene.GivingBirth, "idle")
-	saynn("The gangbang has ended!")
+	saynn("Гангбанг окончен!")
 	talkModularOwnerToPC("SoftSlaveryGBEnd")
 	addInfluenceObey()
-	saynn("Your owner hands you a chip with "+str(earnedCredits)+" credits!")
+	saynn("Твой хозяин протягивает тебе чип с "+str(earnedCredits)+" кредитами!")
 	
 	addContinue("endEvent")
 

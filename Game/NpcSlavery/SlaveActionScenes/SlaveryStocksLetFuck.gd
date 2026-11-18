@@ -29,10 +29,10 @@ func _run():
 		else:
 			playAnimation(StageScene.StocksSexOral, "tease", {npc=npcID, pc=npc2ID})
 		
-		saynn("Do you want to let {npc.name} fuck {npc2.name}?")
+		saynn("Хочешь позволить {npc.name} трахнуть {npc2.name}?")
 		
-		addButton("Yes", "Let them have fun", "make_on_slave_fuck_another")
-		addButton("Cancel", "You changed your mind", "endthescene")
+		addButton("Да", "Пусть развлекаются", "make_on_slave_fuck_another")
+		addButton("Отмена", "Вы передумали", "endthescene")
 
 
 func _react(_action: String, _args):

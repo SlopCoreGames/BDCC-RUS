@@ -9,13 +9,13 @@ const POSE_GROPE = 2
 
 const POSES = {
 	POSE_CUDDLE: {
-		name = "Cuddling",
+		name = "Объятия",
 	},
 	POSE_BONDAGE: {
-		name = "Bondage",
+		name = "Бондаж",
 	},
 	POSE_GROPE: {
-		name = "Standing",
+		name = "Стоя",
 	},
 }
 

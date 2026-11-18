@@ -10,7 +10,7 @@ func _init():
 	}
 
 func getVisibleName():
-	return "Masochism"
+	return "Мазохизм"
 
 func getGoals(_sexEngine, _domFetishHolder, _dom, _sub):
 	var possible = []

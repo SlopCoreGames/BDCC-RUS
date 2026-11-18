@@ -23,11 +23,11 @@ func getTopicValue(_topicID, _pc):
 
 func getVisibleName(_topicID):
 	if(_topicID == InterestTopic.FeminineBody):
-		return "a feminine body"
+		return "женственное тело"
 	if(_topicID == InterestTopic.AndroBody):
-		return "an androgynous body"
+		return "андрогинное тело"
 	if(_topicID == InterestTopic.MasculineBody):
-		return "a masculine body"
+		return "мужественное тело"
 	
 	return "error:"+str(_topicID)
 

@@ -4,7 +4,7 @@ func _init():
 	id = SexGoal.AddBodywritings
 
 func getVisibleName():
-	return "Add bodywritings"
+	return "Добавить надписи на теле"
 
 func isPossible(_sexEngine, _domInfo, _subInfo, _data):
 	if(_domInfo.getChar().hasBoundArms() || _domInfo.getChar().hasBlockedHands()):

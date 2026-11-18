@@ -7,205 +7,205 @@ func _run():
 	if(state == ""):
 		addCharacter("alexrynard")
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard", npcAction="sit"})
-		saynn("Alex grabs one of the broken datapads and begins to fix it. He uses a screwdriver to open the cover and then starts poking the wiring in various spots with some multitool. It takes a while so he sits down.")
+		saynn("Алекс хватает один из разбитых датападов и принимается его чинить. Он откручивает крышку отверткой, а затем начинает тыкать мультитулом в разные места проводки. Дело идет медленно, поэтому он усаживается поудобнее.")
 
-		saynn("Now is as good of a time as ever to ask something.")
+		saynn("Сейчас самое подходящее время, чтобы о чем-нибудь спросить.")
 
-		saynn("[say=pc]Do you do.. lewd stuff?[/say]")
+		saynn("[say=pc]Ты занимаешься... всякой пошлой херней?[/say]")
 
-		saynn("The foxy hears that.. and becomes motionless for a second, letting the awkward silence settle in. After that he just returns to tinkering with the broken device.")
+		saynn("Услышав это, лис на секунду замирает, позволяя неловкой тишине повиснуть в воздухе. После этого он просто возвращается к ковырянию в сломанном устройстве.")
 
-		saynn("[say=pc]I mean..[/say]")
+		saynn("[say=pc]В смысле...[/say]")
 
-		saynn("[say=alexrynard]I know what you mean, trust me.[/say]")
+		saynn("[say=alexrynard]Поверь, я понимаю, о чем ты.[/say]")
 
-		saynn("Sounds like a no.")
+		saynn("Похоже, что нет.")
 
-		addButton("Why not?", "Pester him a bit more", "why_not")
-		addButton("Never mind", "The guy is clearly not gonna fuck you", "endthescene")
+		addButton("Почему нет?", "Немного попинать его вопросами", "why_not")
+		addButton("Проехали", "Парень явно не собирается с тобой трахаться", "endthescene")
 	if(state == "why_not"):
-		saynn("[say=pc]Why not?[/say]")
+		saynn("[say=pc]Почему это?[/say]")
 
-		saynn("Alex doesn't show much emotion, he is clearly focussed on his task. He finds a wire that was causing the whole board to short-circuit and begins to fix it.")
+		saynn("Алекс не особо проявляет эмоции, он явно сосредоточен на своей задаче. Он находит провод, из-за которого вся плата коротит, и принимается его чинить.")
 
-		saynn("[say=pc]You don't like talking about that?[/say]")
+		saynn("[say=pc]Не любишь об этом говорить?[/say]")
 
-		saynn("He growls as he accidentally cuts the wrong wire.")
+		saynn("Он рычит, когда случайно перерезает не тот провод.")
 
-		saynn("[say=alexrynard]Listen. If you wanna get fucked, go out there and pull your pants down.[/say]")
+		saynn("[say=alexrynard]Слушай. Если хочешь, чтобы тебя трахнули, выходи вон и спускай штаны.[/say]")
 
-		saynn("He is kinda.. mean.. huh? But he is probably not wrong.")
+		saynn("Он какой-то... грубый... да? Но, наверное, он прав.")
 
-		saynn("[say=alexrynard]Let me do some work in peace. Please.[/say]")
+		saynn("[say=alexrynard]Дай мне поработать в тишине. Пожалуйста.[/say]")
 
-		saynn("The foxy begins to solder the cut wire back.")
+		saynn("Этот лис принимается припаивать перерезанный провод обратно.")
 
-		saynn("Maybe you should just wait until he is done?")
+		saynn("Может, стоит просто подождать, пока он закончит?")
 
-		addButton("Wait", "Watch him work", "do_wait")
+		addButton("Подождать", "Наблюдать за его работой", "do_wait")
 	if(state == "do_wait"):
 		playAnimation(StageScene.Duo, "sit", {npc="alexrynard", npcAction="sit"})
-		saynn("You decide to sit down nearby and stay quiet for some time. Alex sighs when you do that.")
+		saynn("Ты решаешь присесть неподалеку и какое-то время посидеть тихо. Алекс вздыхает, когда ты это делаешь.")
 
-		saynn("Some time passes. The foxy finishes repairing the datapad and turns it on. He smiles when the thing seems to work fine after everything that it had to endure.")
+		saynn("Проходит некоторое время. Хитрец заканчивает ремонт датапада и включает его. Он довольно улыбается, видя, что после всех этих мучений устройство работает как новенькое.")
 
-		saynn("[say=pc]Are you.. done?[/say]")
+		saynn("[say=pc]Ты... закончил?[/say]")
 
-		saynn("[say=alexrynard]Do I look done?[/say]")
+		saynn("[say=alexrynard]А разве я похож на того, кто закончил?[/say]")
 
-		saynn("To be fair, he kinda does..")
+		saynn("Если честно, он и впрямь выглядит уставшим...")
 
-		saynn("Alex puts the repaired datapad away.. and then opens one of the drawers, revealing.. what feels like hundreds more of those broken devices. He catches your surprised gaze.")
+		saynn("Алекс убирает починенный датапад... а затем открывает один из ящиков, в котором обнаруживается... кажется, еще сотни таких же сломанных девайсов. Он ловит твой удивленный взгляд.")
 
-		saynn("[say=alexrynard]I told you already. You will have many more chances with someone else. I'm not into mindless rough sex anyway.[/say]")
+		saynn("[say=alexrynard]Я же тебе уже говорил. У тебя будет еще много шансов с кем-нибудь другим. Меня всё равно не прет этот бездумный грубый секс.[/say]")
 
-		addButton("Not rough", "What about normal sex?", "ask_notrough")
-		addButton("Asexual?", "Ask if he is asexual", "ask_asexual")
-		addButton("Job too important?", "Ask if he values his job more than having some fun", "ask_job")
-		addButton("Just watch", "Just continue watching", "just_watch_more")
+		addButton("Не грубый", "А как насчет обычного секса?", "ask_notrough")
+		addButton("Асексуал?", "Спросить, не асексуал ли он", "ask_asexual")
+		addButton("Работа слишком важна?", "Спросить, ценит ли он работу больше, чем немного развлечений", "ask_job")
+		addButton("Просто наблюдай", "Просто продолжать наблюдать", "just_watch_more")
 	if(state == "ask_notrough"):
-		saynn("[say=pc]What about.. normal sex then?[/say]")
+		saynn("[say=pc]А как насчет.. обычного секса?[/say]")
 
-		saynn("He shrugs.")
+		saynn("Он пожимает плечами.")
 
-		saynn("[say=alexrynard]Still mindless.[/say]")
+		saynn("[say=alexrynard]Все еще бездумно.[/say]")
 
-		saynn("[say=pc]Define mindless.[/say]")
+		saynn("[say=pc]Что значит «бездумно»?[/say]")
 
-		saynn("Foxy looks at you with his tired eyes.. and sighs.")
+		saynn("Фокси смотрит на тебя своими усталыми глазами... и вздыхает.")
 
-		saynn("[say=alexrynard]No.[/say]")
+		saynn("[say=alexrynard]Нет.[/say]")
 
-		saynn("Fair enough. You probably have to figure that out yourself.")
+		saynn("Справедливо. Скорее всего, тебе придется разобраться с этим самой.")
 
-		addButton("Asexual?", "Ask if he is asexual", "ask_asexual")
-		addButton("Job too important?", "Ask if he values his job more than having some fun", "ask_job")
-		addButton("Just watch", "Just continue watching", "just_watch_more")
+		addButton("Асексуал?", "Спросить, не асексуал ли он", "ask_asexual")
+		addButton("Работа слишком важна?", "Спросить, ценит ли он работу больше, чем немного развлечений", "ask_job")
+		addButton("Просто наблюдай", "Просто продолжать наблюдать", "just_watch_more")
 	if(state == "ask_asexual"):
-		saynn("[say=pc]Are you.. asexual.. by any chance?[/say]")
+		saynn("[say=pc]Ты... случайно не... асексуалка?[/say]")
 
-		saynn("His ears perk when he hears that word.")
+		saynn("Его уши навостряются, когда он слышит это слово.")
 
-		saynn("[say=alexrynard]Asexual? Because I don't wanna fuck you on your first request?[/say]")
+		saynn("[say=alexrynard]Асексуалка? Потому что ты не хочешь трахаться со мной по первому же требованию?[/say]")
 
-		saynn("[say=pc]So far most of the people here are..[/say]")
+		saynn("[say=pc]Пока что большинство людей здесь...[/say]")
 
-		saynn("[say=alexrynard]Yeah, everyone here cares only about non-stop fucking. More power to them. Can I do my job now?[/say]")
+		saynn("[say=alexrynard]Ага, здесь всех волнует только непрерывный трах. Ну и молодцы. А теперь можно мне заняться делом?[/say]")
 
-		saynn("Silence settles in again. Foxy sighs and looks at you.")
+		saynn("Снова воцаряется тишина. Фокси вздыхает и смотрит на тебя.")
 
-		saynn("[say=alexrynard]Sorry, okay?[/say]")
+		saynn("[say=alexrynard]Прости, ладно?[/say]")
 
-		addButton("Why sorry?", "Ask why did he apologize", "ask_whysorry")
-		addButton("Not rough", "What about normal sex?", "ask_notrough")
-		addButton("Job too important?", "Ask if he values his job more than having some fun", "ask_job")
-		addButton("Just watch", "Just continue watching", "just_watch_more")
+		addButton("Почему прости?", "Спросить, почему он извинился", "ask_whysorry")
+		addButton("Не грубый", "А как насчет обычного секса?", "ask_notrough")
+		addButton("Работа слишком важна?", "Спросить, ценит ли он работу больше, чем немного развлечений", "ask_job")
+		addButton("Просто наблюдай", "Просто продолжать наблюдать", "just_watch_more")
 	if(state == "ask_whysorry"):
-		saynn("[say=pc]Why sorry? You might have a point.[/say]")
+		saynn("[say=pc]Почему прости? А ведь в твоих словах может быть смысл.[/say]")
 
-		saynn("He lowers his gaze for a second.")
+		saynn("На секунду он опускает взгляд.")
 
-		saynn("[say=alexrynard]It came out mean.[/say]")
+		saynn("[say=alexrynard]Звучало грубовато.[/say]")
 
-		saynn("[say=pc]Okay, well.. okay.[/say]")
+		saynn("[say=pc]Ладно, ну... ладно.[/say]")
 
-		saynn("[say=alexrynard]I don't want to stick out. But I have enough things to fuck with for now.[/say]")
+		saynn("[say=alexrynard]Не хочется выделяться. Но на данный момент у меня и так хватает проблем, в которые можно вляпаться.[/say]")
 
-		saynn("Yeah, the foxy seems to be working non-stop. Makes you wonder what he actually likes then.. other than stressing out about his job.")
+		saynn("Да, этот лис, похоже, пашет без остановки. Невольно задумываешься, что ему вообще нравится... кроме как стрессовать из-за своей работы.")
 
-		addButton("May I help?", "Ask if you can help with the tasks", "ask_mayhelp")
-		addButton("Not rough", "What about normal sex?", "ask_notrough")
-		addButton("Job too important?", "Ask if he values his job more than having some fun", "ask_job")
-		addButton("Just watch", "Just continue watching", "just_watch_more")
+		addButton("Могу я помочь?", "Спросить, можно ли помочь с делами", "ask_mayhelp")
+		addButton("Не грубый", "А как насчет обычного секса?", "ask_notrough")
+		addButton("Работа слишком важна?", "Спросить, ценит ли он работу больше, чем немного развлечений", "ask_job")
+		addButton("Просто наблюдай", "Просто продолжать наблюдать", "just_watch_more")
 	if(state == "ask_mayhelp"):
-		saynn("[say=pc]Can I help with something?[/say]")
+		saynn("[say=pc]Можно мне чем-нибудь помочь?[/say]")
 
-		saynn("[say=alexrynard]I'm good.[/say]")
+		saynn("[say=alexrynard]Я в порядке.[/say]")
 
-		saynn("That was.. a very snappy response. Oh well, it was worth a shot.")
+		saynn("Это был... очень резкий ответ. Ну да ладно, попытка не пытка.")
 
-		addButton("Not rough", "What about normal sex?", "ask_notrough")
-		addButton("Job too important?", "Ask if he values his job more than having some fun", "ask_job")
-		addButton("Just watch", "Just continue watching", "just_watch_more")
+		addButton("Не грубый", "А как насчет обычного секса?", "ask_notrough")
+		addButton("Работа слишком важна?", "Спросить, ценит ли он работу больше, чем немного развлечений", "ask_job")
+		addButton("Просто наблюдай", "Просто продолжать наблюдать", "just_watch_more")
 	if(state == "ask_job"):
-		saynn("[say=pc]Is your job that important? Why not have some fun occasionally?[/say]")
+		saynn("[say=pc]Твоя работа настолько важна? Почему бы иногда не развлечься?[/say]")
 
-		saynn("He tilts his head to the side.")
+		saynn("Он наклоняет голову набок.")
 
-		saynn("[say=alexrynard]Because I get paid?[/say]")
+		saynn("[say=alexrynard]Потому что мне за это платят?[/say]")
 
-		saynn("[say=pc]Are credits worth burning out over?[/say]")
+		saynn("[say=pc]Стоят ли кредиты того, чтобы из-за них сгорать?[/say]")
 
-		saynn("He stays silent for a few seconds. Then he looks at your collar.")
+		saynn("Он молчит несколько секунд. Затем переводит взгляд на твой ошейник.")
 
-		saynn("[say=alexrynard]Do I look like I'm burning out? There is more to this job than just fixing the damn datapads.[/say]")
+		saynn("[say=alexrynard]Я что, похожа на выгоревшую? В этой работе есть кое-что поважнее, чем просто починка этих чертовых датападов.[/say]")
 
-		saynn("[say=pc]Like what?[/say]")
+		saynn("[say=pc]Типа чего?[/say]")
 
-		saynn("He reaches his hand to tap on your collar.")
+		saynn("Он протягивает руку, чтобы постучать по твоему воротнику.")
 
-		saynn("[say=alexrynard]Who do you think made those?[/say]")
+		saynn("[say=alexrynard]Как думаешь, кто их сделал?[/say]")
 
-		saynn("[say=pc]You?[/say]")
+		saynn("[say=pc]В тебе?[/say]")
 
-		saynn("Foxy chuckles.")
+		saynn("Фокси посмеивается.")
 
-		saynn("[say=alexrynard]Fuck no. These collars are ancient. But I made them actually work like they are supposed to.[/say]")
+		saynn("[say=alexrynard]Да ни хрена! Эти ошейники — древнее дерьмо. Но я сделала так, чтобы они реально работали как надо.[/say]")
 
-		saynn("You tug on it. If being tight around your neck was a design requirement, they sure are working great.")
+		saynn("Ты тянешь за него. Если по задумке они должны туго облегать шею, то справляются они на ура.")
 
-		saynn("[say=pc]So you know how to take them off?[/say]")
+		saynn("[say=pc]Так ты знаешь, как их снять?[/say]")
 
-		saynn("[say=alexrynard]Yeah, it's very simple. You don't.[/say]")
+		saynn("[say=alexrynard]Ага, всё очень просто. Никак.[/say]")
 
-		saynn("Aw. That would have been so easy.")
+		saynn("Оу. А ведь это было бы так просто.")
 
-		saynn("[say=pc]So.. You fix stuff?[/say]")
+		saynn("[say=pc]Значит... ты чинишь всякую хрень?[/say]")
 
-		saynn("[say=alexrynard]I'm a station engineer. Does that answer your question?[/say]")
+		saynn("[say=alexrynard]Я инженер станции. Это отвечает на твой вопрос?[/say]")
 
-		saynn("You're not sure what the question was by this point..")
+		saynn("К этому моменту ты уже и сам не уверен, в чем заключался вопрос...")
 
-		saynn("[say=pc]This space station is not exactly your usual sort.[/say]")
+		saynn("[say=pc]Эта космическая станция — не совсем обычное местечко.[/say]")
 
-		saynn("[say=alexrynard]Mhm. Like I said, there is more to it that makes it bearable.[/say]")
+		saynn("[say=alexrynard]Мгм. Как я уже сказала, здесь есть вещи, благодаря которым тут еще можно терпеть.[/say]")
 
-		saynn("What a sly fox.")
+		saynn("Ну и хитрая же лиса.")
 
-		addButton("Not rough", "What about normal sex?", "ask_notrough")
-		addButton("Asexual?", "Ask if he is asexual", "ask_asexual")
-		addButton("Just watch", "Just continue watching", "just_watch_more")
+		addButton("Не грубый", "А как насчет обычного секса?", "ask_notrough")
+		addButton("Асексуал?", "Спросить, не асексуал ли он", "ask_asexual")
+		addButton("Просто наблюдай", "Просто продолжать наблюдать", "just_watch_more")
 	if(state == "just_watch_more"):
-		saynn("Oh well. You decide to just watch Alex work a bit more.")
+		saynn("Ну да ладно. Ты решаешь еще немного понаблюдать за работой Алекса.")
 
-		saynn("He grabs another broken datapad.. and begins to fix it. This one has a cracked screen so he takes off the frame and starts replacing, being careful to disconnect all of the connectors first.")
+		saynn("Он хватает очередной сломанный датапад... и принимается его чинить. У этого треснувший экран, так что он снимает рамку и начинает замену, стараясь сначала отсоединить все коннекторы.")
 
-		saynn("Foxy is clearly working way faster while it's quiet. He is focussed on the device in his hands. But occasionally his gaze checks on you.. to make sure you're not doing anything bad probably.")
+		saynn("Очевидно, что пока тихо, этот лис работает куда быстрее. Он полностью сосредоточен на устройстве в руках, но время от времени бросает на тебя взгляд... наверняка чтобы убедиться, что ты не выкидываешь никаких фокусов.")
 
-		saynn("After fixing that one.. he grabs another.. and then another.. Ohh, this one has similar damage to the last one. By now you can kinda guess what he is gonna do.")
+		saynn("Починив этот... он берет следующий... а затем еще один... О, у этого повреждения похожи на предыдущий. К этому моменту ты уже примерно понимаешь, что он будет делать дальше.")
 
-		saynn("Still.. It's so.. boring.. you feel like you're about to fall asleep..")
+		saynn("И всё же... это так... скучно... кажется, ты вот-вот вырубишься от сна...")
 
-		saynn("That work table sure looks comfy right now.. the cold metal surface starts to feel as soft as a pillow to your head.")
+		saynn("Тот рабочий стол сейчас кажется таким удобным... холодная металлическая поверхность начинает ощущаться под головой мягкой, как подушка.")
 
-		addButton("Continue", "See what happens next", "after_nap")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_nap")
 	if(state == "after_nap"):
 		playAnimation(StageScene.Duo, "sit", {npc="alexrynard"})
-		saynn("..you wake up from Alex shaking your shoulder. He is holding a bin full of fixed tablets under his arm.")
+		saynn("...ты просыпаешься от того, что Алекс трясет тебя за плечо. Под мышкой он держит контейнер, полный починенных планшетов.")
 
-		saynn("[say=alexrynard]Up, inmate.[/say]")
+		saynn("[say=alexrynard]Подъем, зэк![/say]")
 
-		saynn("[say=pc]Huh? How long did I..[/say]")
+		saynn("[say=pc]А? И сколько же я...[/say]")
 
-		saynn("[say=alexrynard]Long enough for me to actually get some stuff done. Now go away.[/say]")
+		saynn("[say=alexrynard]Достаточно долго, чтобы я успел хоть что-то сделать. А теперь проваливай.[/say]")
 
-		saynn("Still so cold. Maybe he is just fully content with not having any friends? Maybe his job and his prototypes are all that he needs.")
+		saynn("Всё такой же холодный. Может, ему и правда плевать на отсутствие друзей? Может, работы и прототипов ему вполне хватает.")
 
-		saynn("Can't test your prototypes without someone else though..")
+		saynn("Правда, без кого-то ещё твои прототипы не протестировать...")
 
-		saynn("Maybe you can pester him some other time. For now, you should indeed be heading off.")
+		saynn("Может, помучаешь его в другой раз. А пока тебе и впрямь пора идти.")
 
-		addButton("Leave", "See what happens next", "endthescene")
+		addButton("Уйти", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

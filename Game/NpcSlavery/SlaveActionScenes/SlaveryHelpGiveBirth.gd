@@ -20,68 +20,68 @@ func _run():
 	if(state == ""):
 		addCharacter(npcID)
 		
-		saynn("The nurse gasps when she sees the huge belly of the person on your leash.")
+		saynn("Медсестра ахает, когда видит огромный живот того, кто на твоем поводке.")
 		
-		saynn("Clearly, it's time to let {npc.name} give birth..")
+		saynn("Очевидно, пришло время позволить {npc.name} родить..")
 		
-		addButton("Continue", "Time to do this", "before_birth")
-		addButton("Cancel", "You changed your mind", "endthescene")
+		addButton("Продолжить", "Пора за дело", "before_birth")
+		addButton("Отмена", "Вы передумали", "endthescene")
 
 	if(state == "before_birth"):
 		playAnimation(StageScene.GivingBirth, "birth", {pc=npcID, bodyState={naked=true}})
 
-		saynn("You stand by {npc.nameS} side while {npc.he} listens to the nurse's orders. Then {npc.he} reaches {npc.his} hand to you and smiles nervously. You decide to hold it, to help {npc.him} feel calmer.")
+		saynn("Ты стоишь рядом с {npc.nameS}, пока {npc.he} слушает указания медсестры. Затем {npc.he} протягивает тебе {npc.his} руку и нервно улыбается. Ты решаешь сжать её, чтобы помочь {npc.him} успокоиться.")
 
-		saynn("Contractions are happening, causing {npc.name} to groan from the pain while clenching your hand.")
+		saynn("Начинаются схватки: {npc.name} стонет от боли, до боли сжимая твою руку.")
 
-		saynn("The room fills with tension as {npc.name} produces more and more painful cries when the contractions become faster and harder.")
+		saynn("Комната наполняется напряжением, когда {npc.name} издает всё более мучительные крики — схватки становятся всё чаще и сильнее.")
 
-		addButton("Continue", "See what happens next", "do_birth")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_birth")
 	if(state == "do_birth"):
 		playAnimation(StageScene.GivingBirth, "idle", {pc=npcID, bodyState={naked=true}})
 		if (bornChildAmount == 1):
-			saynn("{npc.name} gave birth to "+str(bornChildAmount)+" kid!")
+			saynn("{npc.name} родила "+str(bornChildAmount)+" ребенка!")
 
 		else:
-			saynn("{npc.name} gave birth to "+str(bornChildAmount)+" kids!")
+			saynn("{npc.name} родила "+str(bornChildAmount)+" детей!")
 
 		saynn(""+str(bornString)+"")
 
-		addButton("Continue", "See what happens next", "after_birth")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_birth")
 	if(state == "after_birth"):
 		playAnimation(StageScene.SexStart, "start", {pc = "pc", npc=npcID, npcBodyState={naked=true}})
 		if (bornChildAmount <= 1):
-			saynn("Moments pass like an eternity until finally, the sound of a newborn's cry fills the air.")
+			saynn("Мгновения тянутся целую вечность, пока наконец воздух не наполняет крик новорожденного.")
 
-			saynn("{npc.name}'s eyes shine with tears of relief and joy. She waits for the nurse to carefully clean her child and then begins cradling in her hands.")
+			saynn("Глаза {npc.name} сияют от слез облегчения и радости. Она ждет, пока акушерка бережно очистит ее дитя, а затем начинает баюкать его в своих руках.")
 
 		elif (bornChildAmount == 2):
-			saynn("Moments pass like an eternity until finally, the sound of a newborn's cry fills the air. Oh.. But not just one.. Soon {npc.name} gives birth to another kid..")
+			saynn("Мгновения тянутся целую вечность, пока наконец воздух не наполняет крик новорожденного. Ох... Но не одного... Вскоре {npc.name} рожает еще одного ребенка...")
 
-			saynn("{npc.name}'s eyes shine with tears of relief and joy. She waits for the nurse to carefully clean her child and then begins cradling one of them in her hands.")
+			saynn("Глаза {npc.name} сияют от слез облегчения и радости. Она ждет, пока акушерка бережно очистит ее дитя, а затем начинает баюкать одного из них в своих руках.")
 
 		else:
-			saynn("Moments pass like an eternity until finally, the sound of a newborn's cry fills the air. Oh.. But not just one.. Soon {npc.name} gives birth to another kid.. But even after that, {npc.his} belly is still big, meaning there is more..")
+			saynn("Мгновения тянутся целую вечность, пока наконец воздух не наполняет крик новорожденного. Ох... Но не одного... Вскоре {npc.name} рожает еще одного ребенка... Но даже после этого живот {npc.his} все еще большой, а значит, есть еще...")
 
-			saynn("It's only when {npc.name} gives birth to the last child, {npc.his} eyes begin to shine with tears of relief and joy. She waits for the nurse to carefully clean her child and then begins cradling one of them in her hands.")
+			saynn("Только когда {npc.name} рожает последнего ребенка, глаза {npc.his} начинают сиять от слез облегчения и радости. Она ждет, пока акушерка бережно очистит ее дитя, а затем начинает баюкать одного из них в своих руках.")
 
 		saynn("[say=npc]"+str(RNG.pick(["Oh.. oh my.. so perfect.. Look at the tiny fingers and those little eyes.. So beautiful..", "Hi, mommy loves you more than words can express.. welcome to the world, my precious..", "I can't believe I brought this incredible life into existence.. I can't live without you already..", "I will do everything in my power to give you the life you deserve.."]))+"[/say]")
 
-		saynn("{npc.He} gently kisses {npc.his} baby's forehead while you stand nearby and smile.")
+		saynn("{npc.He} нежно целует младенца {npc.his} в лоб, пока ты стоишь рядом и улыбаешься.")
 
-		saynn("[say=pc]You did an amazing job.[/say]")
+		saynn("[say=pc]Ты проделала потрясающую работу![/say]")
 
-		saynn("You both just stare at the new life for a while..")
+		saynn("Вы оба какое-то время просто смотрите на новую жизнь...")
 
 		if (bornChildAmount <= 1):
-			saynn("Sadly, you can only spend so much time with that kid, the strict prison policy forbids prolonged inmate interaction. Fair enough.. You wave the new life goodbye and then step back into the lobby with the mother, your hand quickly leashes {npc.him} again.")
+			saynn("К сожалению, проводить с ребенком можно лишь ограниченное время — строгие тюремные правила запрещают длительное общение заключенных. Что ж, справедливо... Ты машешь на прощание новорожденному и возвращаешься в вестибюль вместе с матерью, быстро снова надевая поводок на {npc.him}.")
 
 		else:
-			saynn("Sadly, you can only spend so much time with those kids, the strict prison policy forbids inmate interaction with them. Fair enough.. You wave the new life goodbye and then step back into the lobby with the mother, your hand quickly leashes {npc.him} again.")
+			saynn("К сожалению, проводить с этими детьми много времени не получится — строгая тюремная политика запрещает заключенным общение с ними. Впрочем, справедливо... Вы машете на прощание новой жизни и возвращаетесь в вестибюль вместе с матерью, и ваша рука быстро снова накидывает поводок на {npc.him}.")
 
-		saynn("Time to go..")
+		saynn("Пора идти..")
 
-		addButton("Continue", "That was something", "endthescene")
+		addButton("Продолжить", "Это было нечто", "endthescene")
 
 
 func _react(_action: String, _args):

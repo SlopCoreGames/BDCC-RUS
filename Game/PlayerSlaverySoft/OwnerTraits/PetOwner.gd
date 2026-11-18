@@ -4,7 +4,7 @@ func _init():
 	id = "PetOwner"
 
 func getVisibleName() -> String:
-	return "Pet owner"
+	return "Владелец питомца"
 
 func getVisibleDescription() -> String:
 	return "The owner likes to treat the slave as their pet."

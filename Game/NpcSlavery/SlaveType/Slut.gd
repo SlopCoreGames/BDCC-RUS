@@ -4,7 +4,7 @@ func _init():
 	id = SlaveType.Slut
 
 func getVisibleName():
-	return "Slut"
+	return "Шлюха"
 
 func getVisibleDesc():
 	return "Turn your slave into a fucktoy and get an ability to whore them out"
@@ -54,12 +54,12 @@ func getUnlockHints(_npc):
 	return [
 		{
 			unlocksAt = 2,
-			name = "Order slut",
-			text = "You can now order your slut to be fucked by one of your other slaves",
+			name = "Подстилка по приказу",
+			text = "Теперь вы можете приказать своей шлюхе, чтобы её оттрахал кто-то из ваших других рабов",
 		},
 		{
 			unlocksAt = 5,
-			name = "Prostitution",
-			text = "You can now order your slut to whore themself out! The higher the slut skill, the more your sluts will earn.",
+			name = "Проституция",
+			text = "Теперь вы можете приказать своей шлюхе трахаться с кем угодно! Чем выше навык шлюхи, тем больше она будет зарабатывать.",
 		},
 	]

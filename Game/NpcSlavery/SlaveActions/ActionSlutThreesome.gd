@@ -14,7 +14,7 @@ func _init():
 
 	extraSlaves = {
 		"sub2": {
-			name = "Second slave",
+			name = "Вторая рабыня",
 			desc = "Who is gonna be the second sub in the sex",
 			slaveSkillsRequired = {
 			},
@@ -28,7 +28,7 @@ func _init():
 	buttonPriority = 70
 
 func getVisibleName():
-	return "Threesome (2 subs)"
+	return "Трио (2 подчиненные)"
 
 func getVisibleDesc():
 	return "Fuck 2 of your slaves at the same time"

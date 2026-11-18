@@ -2,7 +2,7 @@ extends SubGameWorld
 
 
 func _on_CDElevator_onEnter(room):
-	room.addButton("Elevator", "Use it", "elevator")
+	room.addButton("Лифт", "Используй это", "elevator")
 
 
 func _on_CDElevator_onReact(room, key):

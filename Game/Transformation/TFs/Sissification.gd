@@ -13,7 +13,7 @@ func _init():
 	pointsOnUnlock = 15
 
 func getName() -> String:
-	return "Sissification"
+	return "Сиссификация"
 
 func getPillName() -> String:
 	return "SissyMoldPro"
@@ -59,7 +59,7 @@ func start(_args:Dictionary):
 func getPillOptions() -> Dictionary:
 	return {
 		"noPenisShrink": {
-			name = "Penis shrinking",
+			name = "Уменьшение пениса",
 			desc = "Should the drug make the penis smaller",
 			value = false,
 			values = [[false, "Enabled"], [true, "Disabled"]],

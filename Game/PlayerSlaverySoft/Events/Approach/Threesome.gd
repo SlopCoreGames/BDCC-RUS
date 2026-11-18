@@ -18,15 +18,15 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 
 func start():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER), pc=getRoleID(C_EXTRA1), flipNPC=true})
-	saynn("{npc.name} approaches you.. but {npc.he} {npc.isAre} not alone this time.")
+	saynn("{npc.name} подходит к тебе... но на этот раз {npc.he} {npc.isAre} не в одиночку.")
 	talkModularOwnerToPC("SoftSlaveryThreesomeStart")
 	
-	addButton("Obey", "Allow them to do it", "obey")
-	addButton("Resist!", "You're not gonna let them do it", "resist")
+	addButton("Повиноваться", "Позволить им это", "obey")
+	addButton("Сопротивляться!", "Ты не собираешься позволять им это делать", "resist")
 	if(canSetLimits()):
-		addButton("Yes, but..", "Obey but put limits to what your owner can do to you during sex", "yesbut")
+		addButton("Да, но..", "Повиноваться, но установить границы того, что хозяин может с вами делать во время секса", "yesbut")
 	else:
-		addDisabledButton("Yes, but..", "Your relationship hasn't progressed far enough for you to be able to set limits")
+		addDisabledButton("Да, но..", "Ваши отношения еще недостаточно развиты, чтобы вы могли устанавливать границы")
 
 func start_do(_id:String, _args:Array):
 	if(_id == "obey"):
@@ -42,9 +42,9 @@ func start_do(_id:String, _args:Array):
 func obey():
 	playAnimation(StageScene.Duo, "kneel", {npc=getRoleID(C_OWNER)})
 	
-	saynn("You obey and submit to {npc.name} and {npc.his} friend!")
+	saynn("Ты послушно подчиняешься {npc.name} и {npc.his} другу!")
 	addInfluenceObey(RNG.randf_range(0.05, 0.1))
-	addButton("Continue", "See what happens next", "startSex", [[getRoleID(C_OWNER), getRoleID(C_EXTRA1)], "pc", SexType.DefaultSex, {SexMod.DisableDynamicJoiners:true}])
+	addButton("Продолжить", "Смотреть, что будет дальше", "startSex", [[getRoleID(C_OWNER), getRoleID(C_EXTRA1)], "pc", SexType.DefaultSex, {SexMod.DisableDynamicJoiners:true}])
 	
 func obey_sexResult(_sexResult:SexEngineResult):
 	sexSatisfaction = _sexResult.getAverageDomSatisfaction()
@@ -52,7 +52,7 @@ func obey_sexResult(_sexResult:SexEngineResult):
 
 func afterSex():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER)})
-	saynn("The sex has ended!")
+	saynn("Секс окончен!")
 	if(sexSatisfaction < 0.5):
 		talkModularOwnerToPC("SoftSlaveryFuckResultBad") #"That was awful. Are you trying to make me mad, {npc.npcSlave}? Whatever, I will be back soon."
 	elif(sexSatisfaction < 0.8):

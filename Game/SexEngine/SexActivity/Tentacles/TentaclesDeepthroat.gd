@@ -14,13 +14,13 @@ var fuckHoleNames:Array = [
 
 const POSES = {
 	POSE_DEEPTHROAT: {
-		name = "Deepthroat",
+		name = "Глубокий минет",
 		anim = StageScene.TentaclesDeepthroat,
 		anims = ["tease", "inside", "sex", "fast"],
 		startText = "{dom.You} {dom.youVerb('bring')} {sub.you} down to {sub.yourHis} knees. One of the tentacles reaches towards {sub.yourHis} lips!",
 	},
 	POSE_GANGBANG: {
-		name = "Gangbang",
+		name = "Гангбанг",
 		anim = StageScene.TentaclesGangbang,
 		anims = ["tease", "inside", "stroke", "fast"],
 		startText = "Many tentacles surround {sub.you}. One of the tentacles reaches towards {sub.yourHis} [b]lips[/b]!",

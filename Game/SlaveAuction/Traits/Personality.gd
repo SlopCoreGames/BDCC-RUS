@@ -17,21 +17,21 @@ func getTraitType(_id:String):
 
 func getName(_id:String) -> String:
 	if(_id == "PersSubby"):
-		return "Subby"
+		return "Сабби"
 	if(_id == "PersDominant"):
-		return "Dominant"
+		return "Доминант"
 	if(_id == "PersBrat"):
-		return "Bratty"
+		return "@@B*@@Дерзкая@@@@T*@@@@F*@@"
 	if(_id == "PersMean"):
-		return "Mean"
+		return "Злобность"
 	if(_id == "PersKind"):
-		return "Kind"
+		return "Добрый"
 	if(_id == "PersBrave"):
-		return "Brave"
+		return "@@B*@@Храбрая@@T*@@@@F*@@"
 	if(_id == "PersNaive"):
-		return "Naive"
+		return "Наивная"
 	if(_id == "PersPerceptive"):
-		return "Perceptive"
+		return "Проницательная"
 	
 	return "ERROR"
 

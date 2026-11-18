@@ -4,7 +4,7 @@ func _init():
 	id = RepStat.Alpha
 
 func getVisibleName():
-	return "Alpha Reputation"
+	return "Репутация Альфы"
 
 func getMaxLevel() -> int:
 	return 6

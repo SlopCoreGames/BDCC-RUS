@@ -4,7 +4,7 @@ func _init():
 	id = "Tentacles"
 
 func getVisibleName() -> String:
-	return "Tentacles"
+	return "Тентакли"
 
 func getVisibleDesc() -> String:
 	return "You will help grow your very own tentacle monster."
@@ -25,11 +25,11 @@ func getEndings() -> Dictionary:
 			desc = "Escape while murdering at least one of the villains",
 		},
 		"stealth": {
-			name = "A Whole New World",
+			name = "Целый новый мир",
 			desc = "Escape the biolab completely stealthily",
 		},
 		"egged": {
-			name = "Parting gift",
+			name = "Прощальный подарок",
 			desc = "Escape while getting at least one of the villains egged-up",
 		},
 	}

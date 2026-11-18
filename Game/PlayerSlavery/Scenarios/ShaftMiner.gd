@@ -20,191 +20,191 @@ const debugFreeUpdates = false #Set this to false before ship
 
 const UpgradesDB = {
 	"headlight": {
-		name = "Headlight",
+		name = "Фонарь",
 		desc = "Let's you see further in the dark",
 		cost = 3,
 		reqs = [],
 	},
 	
 	"pick1": {
-		name = "Better pickaxe",
+		name = "Улучшенная кирка",
 		desc = "Mining will yield ore nuggets every time.",
 		cost = 5,
 		reqs = ["headlight"],
 	},
 	"pick2": {
-		name = "Notched pickaxe",
+		name = "Зазубренная кирка",
 		desc = "Mining will produce 2 ore nuggets.",
 		cost = 20,
 		reqs = ["pick1"],
 	},
 	"pick3": {
-		name = "Basic drill",
+		name = "Базовая дрель",
 		desc = "Mining will produce 3 ore nuggets!",
 		cost = 500,
 		reqs = ["pick2"],
 	},
 	"pick4": {
-		name = "Mega drill",
+		name = "Мега-дрель",
 		desc = "Let's you mine the whole deposit in one go!",
 		cost = 50000,
 		reqs = ["pick3"],
 	},
 	"pick5": {
-		name = "Super Mega drill",
+		name = "Супер-мега-бур",
 		desc = "This drill can get through the world's strongest materials with ease, even Voidsteel!",
 		cost = 1500000,
 		reqs = ["pick4"],
 	},
 	
 	"cart1": {
-		name = "Minecart storage 1",
+		name = "Хранилище в вагонетке 1",
 		desc = "Minecart can hold 20 ore nuggets.",
 		cost = 20,
 		reqs = ["pick1"],
 	},
 	"cart2": {
-		name = "Minecart storage 2",
+		name = "Хранилище в вагонетке 2",
 		desc = "Minecart can hold 30 ore nuggets.",
 		cost = 60,
 		reqs = ["cart1"],
 	},
 	"cart3": {
-		name = "Minecart storage 3",
+		name = "Хранилище в вагонетке 3",
 		desc = "Minecart can hold 100 ore nuggets.",
 		cost = 1000,
 		reqs = ["cart2"],
 	},
 	
 	"gloves1": {
-		name = "Grabby gloves",
+		name = "Захватные перчатки",
 		desc = "Allows you (and other slaves) to pick up 2 nuggets at once.",
 		cost = 30,
 		reqs = ["pick1"],
 	},
 	"gloves2": {
-		name = "Grabbier Gloves",
+		name = "Супер-захватные перчатки",
 		desc = "Allows you (and other slaves) to pick up 5 nuggets at once. Your slaves can carry 20 nuggets instead of 10.",
 		cost = 90,
 		reqs = ["gloves1"],
 	},
 	
 	"minecartscoop": {
-		name = "Minecart Scoop",
+		name = "Черпак вагонетки",
 		desc = "Pushing the minecart over nuggets will make it automatically pick them up.",
 		cost = 600,
 		reqs = ["cart2", "gloves2"],
 	},
 	
 	"minecartcredit": {
-		name = "Careful delivery",
+		name = "Осторожная доставка",
 		desc = "Delivering ore with your minecart makes you earn 2x the credits!",
 		cost = 250,
 		reqs = ["cart2"],
 	},
 	
 	"minecartrefreshments1": {
-		name = "Refreshments",
+		name = "Перекус",
 		desc = "The minecart has a water bottle taped to it. It allows you to fully refresh your stamina once per day.",
 		cost = 45,
 		reqs = ["cart1"],
 	},
 	"minecartrefreshments2": {
-		name = "Extra Refreshments",
+		name = "Дополнительный перекус",
 		desc = "The minecart has a little fridge installed. Using it allows you to fully refresh your stamina 3 times a day.",
 		cost = 3000,
 		reqs = ["minecartrefreshments1", "cart2"],
 	},
 	
 	"moreCreds1": {
-		name = "Ore processing 1",
+		name = "Переработка руды 1",
 		desc = "Install basic ore processing (metal pans), allowing each nugget to get sold for 3 credits instead of 1.",
 		cost = 20,
 		reqs = ["headlight"],
 	},
 	"moreCreds2": {
-		name = "Ore processing 2",
+		name = "Переработка руды 2",
 		desc = "Install better ore processing (magnets), allowing each nugget to get sold for 10 credits.",
 		cost = 222,
 		reqs = ["moreCreds1", "ore1"],
 	},
 	"moreCreds3": {
-		name = "Ore processing 3",
+		name = "Переработка руды 3",
 		desc = "Install better ore processing (crushers), allowing each nugget to get sold for 20 credits.",
 		cost = 1500,
 		reqs = ["moreCreds2"],
 	},
 	"moreCreds4": {
-		name = "Ore processing 4",
+		name = "Переработка руды 4",
 		desc = "Install better ore processing (sorting bots), allowing each nugget to get sold for 50 credits.",
 		cost = 2500,
 		reqs = ["moreCreds3"],
 	},
 	"moreCreds5": {
-		name = "Ore processing 5",
+		name = "Переработка руды 5",
 		desc = "Install better ore processing (bluespace extractors), allowing each nugget to get sold for 100 credits.",
 		cost = 10000,
 		reqs = ["moreCreds4"],
 	},
 	"moreCreds6": {
-		name = "Ore processing 6",
+		name = "Переработка руды 6",
 		desc = "Install better ore processing (weed-high kobols), allowing each nugget to get sold for 1000 credits.",
 		cost = 69420,
 		reqs = ["moreCreds5"],
 	},
 	
 	"dudes1": {
-		name = "Sex toys",
+		name = "Секс-игрушки",
 		desc = "Buy some sex toys for other slaves. This gives you 1x shaft miner and 1x ore carrier every morning.",
 		cost = 15,
 		reqs = ["pick1"],
 	},
 	"dudes2": {
-		name = "Fuck machines",
+		name = "Фаллоимитаторы-машины",
 		desc = "Install some fuck machines. This gives you 1x shaft miner and 1x ore carrier every morning.",
 		cost = 69,
 		reqs = ["dudes1"],
 	},
 	"dudes3": {
-		name = "Whores",
+		name = "Шлюхи",
 		desc = "Hire some of the slaves as sluts for the other slaves. This gives you 1x shaft miner and 1x ore carrier every morning.",
 		cost = 105,
 		reqs = ["dudes2"],
 	},
 	"dudes4": {
-		name = "Bluespace fleshlights",
+		name = "Блюспейс-флешлайты",
 		desc = "Hand out some portal panties and bluespace fleshlights to slaves. This gives you 1x shaft miner and 1x ore carrier every morning.",
 		cost = 888,
 		reqs = ["dudes3"],
 	},
 	"dudes5": {
-		name = "VR porn",
+		name = "VR-порно",
 		desc = "Give the slaves some portable VR headsets that are totally not hypnovisors. This gives you 1x shaft miner and 1x ore carrier every morning.",
 		cost = 1569,
 		reqs = ["dudes4"],
 	},
 	
 	"ore1": {
-		name = "Scanners 1",
+		name = "Сканеры 1",
 		desc = "Install some basic ore scanners. Makes the mining zones have 3x as much ore in them on average.",
 		cost = 100,
 		reqs = ["pick2"],
 	},
 	"ore2": {
-		name = "Scanners 2",
+		name = "Сканеры 2",
 		desc = "Install better ore scanners. Makes the mining zones have 5x as much ore in them on average.",
 		cost = 1000,
 		reqs = ["ore1", "moreCreds2"],
 	},
 	"ore3": {
-		name = "Scanners 3",
+		name = "Сканеры 3",
 		desc = "Install the best ore scanners. Makes the mining zones have 10x as much ore in them on average.",
 		cost = 10000,
 		reqs = ["ore2"],
 	},
 	
 	"rest": {
-		name = "Comfy cages",
+		name = "Уютные клетки",
 		desc = "Install better cages for you and other slaves. Allows you to rest for 2 hours to skip time and regain some stamina",
 		cost = 20000,
 		reqs = ["dudes3"],
@@ -236,28 +236,28 @@ func getTextsForLoc(_loc:String):
 	
 	if(pushingMinecart):
 		if(nuggetsMinecart <= 0):
-			saynn("You are pushing an empty cart.")
+			saynn("Вы толкаете пустую тележку.")
 		else:
-			saynn("You are pushing a minecart that has "+str(nuggetsMinecart)+" ore "+("nugget" if nuggetsMinecart == 1 else "nuggets")+" in it.")
+			saynn("Вы толкаете вагонетку, в которой лежит "+str(nuggetsMinecart)+" ore "+("nugget" if nuggetsMinecart == 1 else "nuggets")+" @@B*@@.")
 	elif(GM.pc.getLocation() == minecartLoc):
 		if(nuggetsMinecart <= 0):
-			saynn("You are standing near an empty cart.")
+			saynn("Вы стоите рядом с пустой вагонеткой.")
 		else:
-			saynn("You are standing near a minecart that has "+str(nuggetsMinecart)+" ore "+("nugget" if nuggetsMinecart == 1 else "nuggets")+" in it.")
+			saynn("Вы стоите рядом с вагонеткой, в которой лежит "+str(nuggetsMinecart)+" ore "+("nugget" if nuggetsMinecart == 1 else "nuggets")+" @@B*@@.")
 	
 	if(!pushingMinecart):
-		sayn("Tool: "+getToolName())
+		sayn("Инструмент: "+getToolName())
 	if(nuggetsCarrying > 0):
-		saynn("You are holding "+str(nuggetsCarrying)+" "+("nugget" if nuggetsCarrying == 1 else "nuggets")+".")
+		saynn("Вы держите "+str(nuggetsCarrying)+" "+("nugget" if nuggetsCarrying == 1 else "nuggets")+".")
 	
 	if(_loc == LOC_CAGE):
 		if(getMaxDudeAmount(true) > 0 || getMaxDudeAmount(false) > 0):
-			sayn("Hired shaft miners: "+str(getDudeAmount(true))+"/"+str(getMaxDudeAmount(true)))
-			saynn("Hired ore carriers: "+str(getDudeAmount(false))+"/"+str(getMaxDudeAmount(false)))
+			sayn("Нанятых шахтеров: "+str(getDudeAmount(true))+"/"+str(getMaxDudeAmount(true)))
+			saynn("Нанятых носильщиков руды: "+str(getDudeAmount(false))+"/"+str(getMaxDudeAmount(false)))
 	if(_loc == LOC_BOSS):
 		var thePers:float = float(totalMined) / float(TOTAL_MINED_TARGET)
-		sayn("Total amount of credits earned: "+str(totalMined))
-		saynn("Target to get freedom: "+str(TOTAL_MINED_TARGET)+" ("+str(Util.roundF(thePers*100.0, 1))+"%)")
+		sayn("Всего заработано кредитов: "+str(totalMined))
+		saynn("Цель для получения свободы:"+str(TOTAL_MINED_TARGET)+" ("+str(Util.roundF(thePers*100.0, 1))+"%)")
 
 func getToolName() -> String:
 	if(hasUpgrade("pick5")):

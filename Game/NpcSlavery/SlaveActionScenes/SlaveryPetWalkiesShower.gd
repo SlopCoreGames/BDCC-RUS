@@ -34,112 +34,112 @@ func _run():
 		else:
 			aimCameraAndSetLocName("main_shower1")
 		
-		saynn("You bring your pet under one of the free shower heads and start washing {npc.him} under the running cold water, your hands gently grooming {npc.his} fur.")
+		saynn("Вы подводите своего питомца под одну из свободных душевых головок и начинаете мыть {npc.him} под струями холодной воды, нежно расчесывая руками {npc.his} шерсть.")
 		
-		saynn("[say=pc]Bath time![/say]")
+		saynn("[say=pc]Время купания![/say]")
 		
 		if(npcSlavery.isActivelyResisting()):
-			saynn("Your pet grumbles and tries to resist but the puppy restraints keep {npc.him} mostly helpless.")
+			saynn("Ваш питомец ворчит и пытается сопротивляться, но благодаря щенячьим фиксаторам {npc.him} остается почти беспомощным.")
 		elif(npcSlavery.getFear() >= 40):
-			saynn("Your pet shivers and keeps {npc.his} head low.")
+			saynn("Ваш питомец дрожит и прижимает {npc.his} голову.")
 		else:
-			saynn("Your pet wiggles {npc.his} rear and barks playfully.")
+			saynn("Ваш питомец виляет {npc.his} задом и игриво лает.")
 			
-		saynn("Soon, any mess that was on your precious puppy goes away.")
+		saynn("Вскоре вся грязь, что была на вашем драгоценном щенке, исчезает.")
 		
-		addButton("Enough", "That was fun", "endthescene")
+		addButton("Хватит", "Это было весело", "endthescene")
 		if(npcSlavery.getSlaveSkill(SlaveType.Pet) >= 5):
-			addButton("Wash inside", "Clean inside their holes too", "clean_inside")
+			addButton("Помыть внутри", "Вымыть их дырочки", "clean_inside")
 		else:
-			addDisabledButton("Wash inside", "Pet skill D+ or higher required")
+			addDisabledButton("Помыть внутри", "Требуется навык питомца D+ или выше")
 		if(npcSlavery.getSlaveSkill(SlaveType.Pet) >= 8):
-			addButtonWithChecks("Feed cum", "Fuck your pet's throat", "start_feed_cum", [], [[ButtonChecks.HasReachablePenis]])
-			addButtonWithChecks("Feed girlcum", "Grind your pet's face", "start_feed_girlcum", [], [[ButtonChecks.HasReachableVagina]])
+			addButtonWithChecks("Накормить кончой", "Трахать в глотку своего питомца", "start_feed_cum", [], [[ButtonChecks.HasReachablePenis]])
+			addButtonWithChecks("Накормить девичьей кончой", "Втирать кончу в лицо питомца", "start_feed_girlcum", [], [[ButtonChecks.HasReachableVagina]])
 		else:
-			addDisabledButton("Feed cum", "Pet skill B- or higher required")
+			addDisabledButton("Накормить кончой", "Требуется навык «Ласка» уровня B- или выше")
 		
 	if(state == "start_feed_cum"):
 		playAnimation(StageScene.PuppySexOral, "sex", {pc="pc", npc=npcID, npcBodyState={naked=true, hard=true, leashedBy="pc"}, bodyState={naked=true,hard=true}})
 		
-		saynn("Seeing your happy clean pet makes you want to get a little more kinky with {npc.him}.")
+		saynn("Вид чистого и довольного питомца заставляет тебя захотеть немного больше извращений с {npc.him}.")
 		
-		saynn("You decide to feed your pet a treat.. a different kind of treat. Your pet watches with big interest as you turn off the water and kneel nearby. {npc.His} mouth is watering in anticipation as you expose your {pc.penis} and bring {npc.his} head closer.")
+		saynn("Ты решаешь угостить своего питомца лакомством... лакомством особого рода. Твой питомец с огромным интересом наблюдает, как ты выключаешь воду и опускаешься на колени рядом. У {npc.His} текут слюнки в предвкушении, когда ты обнажаешь свой {pc.penis} и подносишь {npc.his} голову ближе.")
 		
-		saynn("[say=pc]Be a good {npc.boy} and open your mouth.[/say]")
+		saynn("[say=pc]Будь хорошей {npc.boy} и открой ротик.[/say]")
 		
-		saynn("With a firm yet gentle hand, you guide your cock to your pet’s waiting lips. Your pet obeys as you slide your hard member between them, past {npc.his} fangs, the tip meeting {npc.his} throat.")
+		saynn("Твердой, но нежной рукой ты направляешь свой член к ожидающим губам питомца. Твой питомец послушно принимает твой твердый орган, пропуская его сквозь {npc.his} клыки, пока головка не упирается в {npc.his} горло.")
 		
-		saynn("[say=pc]If you want a treat, suck it well.[/say]")
+		saynn("[say=pc]Хочешь вкусняшку — соси хорошо.[/say]")
 		
-		saynn("Your pet closes {npc.his} lips around your cock as you start fucking {npc.his} mouth, the tip going deep down {npc.his} throat, testing the gag-reflex!")
+		saynn("Твой питомец смыкает {npc.his} губы вокруг твоего члена, когда ты начинаешь трахать {npc.his} рот, проталкивая головку глубоко в {npc.his} горло, проверяя рвотный рефлекс!")
 		
-		addButton("Feed", "Feed them good", "do_feed_cum")
+		addButton("Покормить", "Корми их хорошо", "do_feed_cum")
 		
 	if(state == "do_feed_cum"):
 		playAnimation(StageScene.PuppySexOral, "fast", {pc="pc", npc=npcID, npcBodyState={naked=true, hard=true, leashedBy="pc"}, bodyState={naked=true,hard=true}})
 		
-		saynn("Your pet is working {npc.his} tongue so well that it only takes a few minutes before your member starts throbbing inside {npc.his} mouth.")
+		saynn("Твой питомец так усердно работает {npc.his} языком, что проходит всего пара минут, прежде чем твой член начинает пульсировать внутри {npc.his} рта.")
 		
-		saynn("You grunt as your {pc.penis} releases its load directly inside. Your seed, thick and creamy, coats {npc.his} tongue and starts sliding smoothly down {npc.his} throat, many waves of it. Your pet is obediently swallowing everything, {npc.his} throat kneading your cock with its walls.")
+		saynn("Ты кряхтишь, когда твой {pc.penis} изливается прямо внутрь. Твоё семя, густое и кремовое, обволакивает {npc.his} язык и начинает плавно соскальзывать в {npc.his} горло, волна за волной. Твой питомец послушно всё проглатывает, а {npc.his} горло обхватывает твой член своими стенками.")
 		
-		saynn("[say=pc]Good {npc.boy}, here is your treat.[/say]")
+		saynn("[say=pc]Умница {npc.boy}, держи вкусняшку.[/say]")
 		
-		saynn("After you’ve finished feeding your pet your {pc.cum}, you offer {npc.him} some pets and scritches.")
+		saynn("Когда вы закончите скармливать своему питомцу свой {pc.cum}, вы предложите {npc.him} немного ласки и почесушек.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		
 	if(state == "start_feed_girlcum"):
 		playAnimation(StageScene.PuppySexOral, "grind", {pc="pc", npc=npcID, npcBodyState={naked=true, hard=true, leashedBy="pc"}, bodyState={naked=true,hard=true}})
 		
-		saynn("Seeing your happy clean pet makes you want to get a little more kinky with {npc.him}.")
+		saynn("Вид чистого и довольного питомца заставляет тебя захотеть немного больше извращений с {npc.him}.")
 		
-		saynn("You decide to feed your pet a treat.. a different kind of treat. Your pet watches with big interest as you turn off the water and stand nearby. {npc.His} mouth is watering in anticipation as you expose your {pc.pussyStretch} pussy and bring {npc.his} head closer.")
+		saynn("Вы решаете угостить своего питомца лакомством... лакомством совсем другого рода. Ваш питомец с огромным интересом наблюдает за тем, как вы выключаете воду и встаете рядом. {npc.His} рот наполняется слюной в предвкушении, пока вы обнажаете свою {pc.pussyStretch} киску и подносите {npc.his} голову ближе.")
 		
-		saynn("[say=pc]Be a good {npc.boy} and use your tongue.[/say]")
+		saynn("[say=pc]Будь хорошей {npc.boy} и используй свой язычок.[/say]")
 		
-		saynn("After saying that, you push your pussy slit against {npc.his} lips, your slick folds brushing against them. As you feel {npc.his} tongue start exploring your petals, you proceed to slowly grind {npc.his} face, dragging your pussy along {npc.his} tongue and face features.")
+		saynn("Сказав это, ты прижимаешься щелью своей киски к {npc.his} губам, задевая их влажными складками. Почувствовав, как {npc.his} язык начинает исследовать твои лепестки, ты начинаешь медленно тереться лицом о {npc.his}, проглаживая своей киской {npc.his} язык и черты лица.")
 		
-		saynn("With each motion, you mark your pet with your pussy juices, forcing your scent into {npc.him}. It feels good, your cute moans begin to fill the room..")
+		saynn("С каждым движением ты помечаешь своего питомца своими соками, вбивая свой запах в {npc.him}. Это чертовски приятно, и твои милые стоны начинают наполнять комнату...")
 		
-		addButton("Feed", "Feed them good", "do_feed_girlcum")
+		addButton("Покормить", "Корми их хорошо", "do_feed_girlcum")
 		
 	if(state == "do_feed_girlcum"):
 		playAnimation(StageScene.PuppySexOral, "grind", {pc="pc", npc=npcID, npcBodyState={naked=true, hard=true, leashedBy="pc"}, bodyState={naked=true,hard=true}})
 		
-		saynn("You grind your pet’s face faster and harder, your pussy twitching a lot around that tongue.. until the orgasm washes over you.")
+		saynn("Ты вжимаешь лицо своего питомца в себя всё быстрее и сильнее, твоя киска судорожно пульсирует вокруг этого языка... пока тебя не накрывает оргазм.")
 		
-		saynn("Your body starts squirming as your clenching pussy releases a fountain of {pc.girlcum} directly into your pet’s mouth. Your warm juices flow down {npc.his} tongue and throat as {npc.he} eagerly laps them up. The orgasmic sensations sends lots of shivers through you, many more cute moans escaping from you.")
+		saynn("Твое тело начинает корчиться, когда сжимающаяся киска извергает фонтан {pc.girlcum} прямо в рот твоему питомцу. Твои теплые соки стекают по {npc.his} языку и горлу, пока {npc.he} жадно слизывает их. Оргазмические ощущения прошивают тебя дрожью, и из тебя вырывается еще больше милых стонов.")
 		
-		saynn("[say=pc]Good {npc.boy}.. Lap them all up.. yeah, just like that.[/say]")
+		saynn("[say=pc]Вкусные {npc.boy}.. Слизывай всё до капли.. да, именно так.[/say]")
 		
-		saynn("After you’ve finished feeding your pet your {pc.girlcum}, you offer {npc.him} some pets and scritches.")
+		saynn("Накормив своего питомца своими {pc.girlcum}, ты ласкаешь {npc.him}, почесывая за ушком.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		
 	if(state == "clean_inside"):
 		playAnimation(StageScene.PuppyPinned, "pinned", {pc="pc", npc=npcID, npcBodyState={naked=true, hard=true, leashedBy="pc"}})
 		
 		if(npc.hasReachableVagina()):
-			saynn("You also want to wash inside your pet's holes so you get up and put your foot on {npc.his} head, pinning {npc.him} to the cold wet floor while also making {npc.him} stick {npc.his} butt high up, {npc.his} pussy and ass positioned directly under the shower head.")
+			saynn("Тебе также хочется промыть дырочки внутри своего питомца, поэтому ты встаешь и ставишь ногу на голову {npc.his}, прижимая {npc.him} к холодному мокрому полу и заставляя {npc.him} задрать {npc.his} задницу повыше, так чтобы {npc.his} киска и анус оказались прямо под струями душа.")
 			
-			saynn("[say=pc]Gotta get you washed everywhere, puppy.[/say]")
+			saynn("[say=pc]Нужно отмыть тебя везде, щеночек.[/say]")
 			
-			saynn("Water starts flowing along your pet's private bits and washing away any mess with it. A bit humiliating.. but not for good puppies.")
+			saynn("Вода начинает стекать по интимным местам твоего питомца, смывая всю грязь. Немного унизительно... но не для послушных щенков.")
 			
-			saynn("Your pet moans softly as the water flows along and between {npc.his} sensitive pussy folds.")
+			saynn("Твой питомец тихо стонет, когда вода струится по {npc.his} чувствительным складкам киски.")
 		else:
-			saynn("You also want to wash inside your pet's tailhole so you get up and put your foot on {npc.his} head, pinning {npc.him} to the cold wet floor while also making {npc.him} stick {npc.his} butt high up, ass positioned directly under the shower head.")
+			saynn("Вы также хотите промыть внутри хвостового отверстия вашего питомца, поэтому встаете и ставите ногу на голову {npc.his}, прижимая {npc.him} к холодному мокрому полу и заставляя {npc.him} высоко задирать {npc.his}, так чтобы задница оказалась прямо под струями душа.")
 			
-			saynn("[say=pc]Gotta get you washed everywhere, puppy.[/say]")
+			saynn("[say=pc]Нужно отмыть тебя везде, щеночек.[/say]")
 			
-			saynn("Water starts flowing along your pet's private bits and washing away any mess with it. A bit humiliating.. but not for good puppies.")
+			saynn("Вода начинает стекать по интимным местам твоего питомца, смывая всю грязь. Немного унизительно... но не для послушных щенков.")
 			
 			if(npc.isWearingChastityCage()):
-				saynn("Your pet moans softly as the water stimulates {npc.his} tailhole, {npc.his} caged up cock is twitching slightly.")
+				saynn("Ваш питомец тихо стонет, пока вода стимулирует хвостовое отверстие {npc.his}, а зажатый в клетке член {npc.his} слегка подергивается.")
 			elif(npc.hasReachablePenis()):
-				saynn("Your pet moans softly as the water stimulates {npc.his} tailhole, {npc.his} {npc.penis} is hard and twitching slightly.")
+				saynn("Ваш питомец тихо стонет, пока вода стимулирует хвостовое отверстие {npc.his}, а {npc.his} {npc.penis} твердый и слегка подергивается.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

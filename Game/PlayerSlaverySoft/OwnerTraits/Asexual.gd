@@ -4,7 +4,7 @@ func _init():
 	id = "Asexual"
 
 func getVisibleName() -> String:
-	return "Asexual"
+	return "Асексуал"
 
 func getVisibleDescription() -> String:
 	return "The owner is much less likely to have sex with you. Doesn't affect their chance to share you."

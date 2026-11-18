@@ -7,7 +7,7 @@ func getActionType():
 	return AuctionActionType.Body
 
 func getName() -> String:
-	return "Pregnancy"
+	return "Беременность"
 
 func getButtonDesc() -> String:
 	return "Highlight the slave's pregnant belly.\n\n[b]Might[/b] reveal 1 mind preference of each bidder."

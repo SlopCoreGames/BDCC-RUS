@@ -14,7 +14,7 @@ func _init():
 	buttonPriority = 110
 
 func getVisibleName():
-	return "Manage inventory"
+	return "Управление инвентарем"
 
 func getVisibleDesc():
 	return "Change what your slave is wearing"

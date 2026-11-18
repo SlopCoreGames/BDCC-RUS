@@ -30,41 +30,41 @@ func _run():
 
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		if(GM.pc.getLocation() in ["main_bathroom1", "main_bathroom2"]):
-			saynn("Your pet looks up at you with sad eyes while tippy-toeing around on the spot, clearly needing a relief. Putting your pet onto a toilet would be way too hard so you bring {npc.him} to the urinals instead.")
+			saynn("Твой питомец смотрит на тебя грустными глазами и переминается с ноги на ногу, явно нуждаясь в облегчении. Сажать его на унитаз слишком хлопотно, поэтому ты ведешь {npc.him} к писсуарам.")
 			
 			if(npc.isWearingChastityCage() || npc.hasReachablePenis()):
 				if(npcSlavery.getSlaveSkill(SlaveType.Pet) < 10):
-					saynn("Your pet has to pee into it like a dog, while raising {npc.his} hind leg. {npc.He} ends up peeing all over the place anyway, your pet might need some more training.")
+					saynn("Твоему питомцу приходится писать в него, как собаке, задрав {npc.his} заднюю лапу. В итоге {npc.He} все равно разбрызгивает мочу повсюду; похоже, твоему питомцу нужно еще поучиться.")
 				else:
-					saynn("Your pet obeys eagerly and pees like a real dog, while raising {npc.his} hind leg.")
+					saynn("Твой питомец охотно подчиняется и писает как настоящая собака, задрав {npc.his} заднюю лапу.")
 			else:
 				if(npcSlavery.getSlaveSkill(SlaveType.Pet) < 10):
-					saynn("Your pet has to pee into it like a dog, with {npc.his} butt turned towards it. {npc.He} ends up peeing all over the place anyway, your pet might need some more training.")
+					saynn("Твоему питомцу приходится писать в него, как собаке, повернувшись к нему {npc.his} задом. В итоге {npc.He} все равно разбрызгивает мочу повсюду; похоже, твоему питомцу нужно еще поучиться.")
 				else:
-					saynn("Your pet obeys eagerly and pees like a real dog, with {npc.his} butt turned towards it.")
+					saynn("Твой питомец охотно подчиняется и писает как настоящая собака, повернувшись к нему {npc.his} задом.")
 		else:
-			saynn("Your pet looks up at you with sad eyes while squirming uncomfortably, clearly needing a relief.")
+			saynn("Твой питомец смотрит на тебя грустными глазами и неудобно ерзает, явно нуждаясь в облегчении.")
 			
-			saynn("You look around and find a few bushes that you lead your pet behind. A playful smirk appears on your face.")
+			saynn("Ты оглядываешься по сторонам и находишь несколько кустов, за которые уводишь своего питомца. На твоем лице появляется игривая ухмылка.")
 			
-			saynn("[say=pc]Go ahead.[/say]")
+			saynn("[say=pc]Давай, вперед.[/say]")
 			
 			if(npc.isWearingChastityCage() || npc.hasReachablePenis()):
 				if(npcSlavery.getSlaveSkill(SlaveType.Pet) < 10):
-					saynn("Reluctantly, {npc.he} obeys, {npc.his} movements awkward and clumsy. {npc.He} raises {npc.his} hind leg to mimic a real dog.. but ends up peeing all over the place.")
+					saynn("Неохотно {npc.he} подчиняется, движения {npc.his} неуклюжие и скованные. {npc.He} задирает {npc.his} заднюю лапу, пытаясь подражать настоящей собаке... но в итоге все равно писает во все стороны.")
 					
-					saynn("{npc.He} finishes quickly and does {npc.his} best to avoid your gaze.")
+					saynn("{npc.He} быстро заканчивает дело, изо всех сил стараясь, чтобы {npc.his} не встречался с твоим взглядом.")
 				else:
-					saynn("Obeying like a well-trained pup, {npc.name} walks up to the bush and pees while raising {npc.his} leg, like a real pet would.")
+					saynn("Послушно, словно натренированный щенок, {npc.name} подходит к кусту и справляет нужду, задрав {npc.his} ногу, точь-в-точь как настоящий питомец.")
 			else:
 				if(npcSlavery.getSlaveSkill(SlaveType.Pet) < 10):
-					saynn("Reluctantly, {npc.he} obeys, {npc.his} movements awkward and clumsy. {npc.He} tries to spread {npc.his} hind legs wide to mimic a real female dog.. but ends up peeing all over the place anyway.")
+					saynn("Неохотно, {npc.he} подчиняется, {npc.his} движения неуклюжие и неловкие. {npc.He} пытается широко расставить {npc.his} задние лапы, имитируя настоящую суку... но в итоге всё равно ссыт куда попало.")
 					
-					saynn("{npc.He} finishes quickly and does {npc.his} best to avoid your gaze.")
+					saynn("{npc.He} быстро заканчивает дело, изо всех сил стараясь, чтобы {npc.his} не встречался с твоим взглядом.")
 				else:
-					saynn("Obeying like a well-trained pup, {npc.name} walks up to the bush and pees while spreading {npc.his} hind legs wide and lowering {npc.himself}, like a real female dog would.")
+					saynn("Послушно, словно дрессированный щенок, {npc.name} подходит к кусту и справляет нужду, широко расставив {npc.his} задние лапы и пригибая {npc.himself}, точь-в-точь как настоящая сучка.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

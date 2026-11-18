@@ -16,7 +16,7 @@ func run(_triggerID, _args):
 			if(GM.main.getDays() > getFlag("ArticaModule.s1day", -1)):
 				addButtonUnlessLate("White fluff", "Search for that new inmate", "c2scene")
 			else:
-				addDisabledButton("White fluff", "The guard is standing near that fluff's cell. Better come back some other day")
+				addDisabledButton("Белый пух", "Охранник стоит у камеры этого пушистика. Лучше зайти в другой раз")
 	else:
 		if(getFlag("ArticaModule.s2happened") && !getFlag("ArticaModule.s3happened")):
 			addButtonUnlessLate("White fluff", "She seems to be here", "s3scene")
@@ -24,7 +24,7 @@ func run(_triggerID, _args):
 			if(GM.main.getDays() > getFlag("ArticaModule.s3day", -1)):
 				addButtonUnlessLate("Artica", "Join the white fluff", "s4scene")
 			else:
-				addDisabledButton("Artica", "Visit her tomorrow")
+				addDisabledButton("Артика", "Навестить её завтра")
 		if(getFlag("ArticaModule.s4happened") && !getFlag("ArticaModule.s5happened")):
 			addButtonUnlessLate("Artica", "Join the white fluff", "s5scene")
 		
@@ -35,7 +35,7 @@ func run(_triggerID, _args):
 				else:
 					addButtonUnlessLate("Artica", "Join the white fluff", "s6scene")
 			else:
-				addDisabledButton("Artica", "Visit her tomorrow")
+				addDisabledButton("Артика", "Навестить её завтра")
 
 func getPriority():
 	return 0

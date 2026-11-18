@@ -7,7 +7,7 @@ func getActionType():
 	return AuctionActionType.Emphasize
 
 func getName() -> String:
-	return "Body"
+	return "Тело"
 
 func getButtonDesc() -> String:
 	return "Emphasize the slave's curves and femininity/masculinity.\n\nDoesn't reveal any preferences, has a negative effects on bidders who don't strongly prefer any of the presented traits."
@@ -22,41 +22,41 @@ func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	
 	if(isFemi):
 		if(isSlim):
-			saynn("{presenter.You} {presenter.youVerb('step')} closer to {slave.name}, running {presenter.yourHis} hands down {slave.hisHer} delicate, slender figure. With a firm grip, {presenter.youHe} {presenter.youHeVerb('pull')} {slave.himHer} forward slightly, giving the bidders a better view of the feminine beauty before them.")
+			saynn("{presenter.You} {presenter.youVerb('step')} ближе к {slave.name}, проводя {presenter.yourHis} руками по {slave.hisHer} нежной, стройной фигуре. Крепко сжав, {presenter.youHe} {presenter.youHeVerb('pull')} {slave.himHer} вперед, чтобы дать участникам торгов получше рассмотреть представленную перед ними женскую красоту.")
 			
 			sayPresenter("Look at this slender beauty.. graceful, refined, and perfectly feminine. A body built for elegance and obedience.")
 		if(isAver):
-			saynn("With a confident smile, {presenter.you} {presenter.youVerb('approach', 'approaches')} the slave before sliding {presenter.yourHis} hands along the gentle curves of {slave.hisHer} well-proportioned body. The {slave.thick} shape of {slave.hisHer} hips and waist exudes an incredibly alluring feminine charm.")
+			saynn("С уверенной улыбкой, {presenter.you} {presenter.youVerb('approach', 'approaches')} рабыню, прежде чем скользнуть {presenter.yourHis} руками по мягким изгибам {slave.hisHer} пропорционального тела. {slave.thick} очертания {slave.hisHer} бедер и талии источают невероятно манящее женское очарование.")
 			
 			sayPresenter("Feast your eyes on these perfect proportions - balanced, girly, and ready to serve in any way you desire.")
 		if(isThic):
-			saynn("{presenter.You} {presenter.youVerb('approach', 'approaches')} {slave.name} before placing {presenter.yourHis} hands on the slave's full, curvy hips, running them over the lush figure before the crowd. {slave.HeShe} radiates a robust femininity, the soft, thick curves inviting attention.")
+			saynn("{presenter.You} {presenter.youVerb('approach', 'approaches')} {slave.name}, прежде чем положить {presenter.yourHis} руки на полные, округлые бедра рабыни, проводя ими по пышной фигуре перед толпой. {slave.HeShe} излучает мощную женственность, а мягкие, сочные изгибы так и манят взгляды.")
 			
 			sayPresenter("This one’s body is just impossible to resist.. voluptuous and undeniably feminine. All the softness you could ever want.")
 	if(isAndr):
 		if(isSlim):
-			saynn("{presenter.You} {presenter.youVerb('step')} up to {slave.name}, {presenter.yourHis} hands tracing along the slim, androgynous lines of {slave.hisHer} body. {presenter.YouHe} {presenter.youHeVerb('let')} the light of the projector play on that fit body.. highlighting the curves.")
+			saynn("{presenter.You} {presenter.youVerb('step')} к {slave.name}, {presenter.yourHis} руками очерчивая тонкие, андрогинные линии {slave.hisHer} тела. {presenter.YouHe} {presenter.youHeVerb('let')} игра света от проектора на этом подтянутом теле... подчеркивающая все изгибы.")
 			
 			sayPresenter("This is something truly unique - a slender body that walks the line between feminine and masculine, appealing to those with an eye for both.")
 		if(isAver):
-			saynn("Standing close to {slave.name}, {presenter.you} {presenter.youVerb('let')} your hands glide along {slave.hisHer} neutral, balanced frame. {slave.HisHer} body is neither overly feminine nor masculine, with proportions that offer a harmonious middle ground.. so {presenter.youHe} {presenter.youHeVerb('make')} sure to highlight that.")
+			saynn("Стоя вплотную к {slave.name}, {presenter.you} {presenter.youVerb('let')} твои руки скользят по {slave.hisHer} нейтральному, сбалансированному телосложению. {slave.HisHer} тело не слишком женственное и не слишком мужественное, с пропорциями, представляющими собой гармоничную середину... так что {presenter.youHe} {presenter.youHeVerb('make')} не забудь подчеркнуть это.")
 			
 			sayPresenter("A perfect body.. neither too soft nor too firm. This body will adapt to any role, ready to serve however you see fit.")
 		if(isThic):
-			saynn("{presenter.You} {presenter.youVerb('place')} {presenter.yourHis} hands firmly on {slave.name}’s full, solid frame, emphasizing the thick but evenly balanced body. Neither strongly masculine nor feminine..")
+			saynn("{presenter.You} {presenter.youVerb('place')} {presenter.yourHis} крепко прижимает руки к {slave.name} плотному, крепкому телу, акцентируя внимание на массивном, но равномерно развитом телосложении. Ни особо мужском, ни особо женском...")
 			
 			sayPresenter("Look at this strong, thick build. Balanced in every way.. perfectly suited for any task or role you have in mind.")
 	if(isMasc):
 		if(isSlim):
-			saynn("{presenter.You} {presenter.youVerb('approach', 'approaches')} {slave.name}, running {presenter.yourHis} hands over the taut, firm lines of {slave.hisHer} lean body. The masculine definition is subtle but clear, strength lying beneath the slim build.")
+			saynn("{presenter.You} {presenter.youVerb('approach', 'approaches')} {slave.name}, проводя {presenter.yourHis} руками по тугим, твердым линиям {slave.hisHer} подтянутого тела. Мужественные черты едва уловимы, но отчетливы: под стройным телосложением скрывается сила.")
 			
 			sayPresenter("Look at this slim form.. that just radiates raw strength. This body is built for service and endurance.")
 		if(isAver):
-			saynn("{presenter.You} {presenter.youVerb('step')} up to {slave.name}, letting {presenter.yourHis} hands glide over {slave.hisHer} firm, well-defined chest and shoulders. The proportions are strong and masculine, with enough muscle to promise strength without overwhelming bulk.")
+			saynn("{presenter.You} {presenter.youVerb('step')} подходит к {slave.name}, позволяя {presenter.yourHis} рукам скользить по {slave.hisHer} твердой, рельефной груди и плечам. Пропорции сильные и мужественные, с достаточным количеством мышц, обещающим мощь, но без избыточной массивности.")
 			
 			sayPresenter("Strong, balanced, and masculine. This one will serve with power and grace, perfect for those who appreciate a firm hand.")
 		if(isThic):
-			saynn("{presenter.You} {presenter.youVerb('place')} {presenter.yourHis} hands on {slave.name}’s broad, powerful shoulders, running them down {slave.hisHer} thick, muscular body. Every inch of {slave.himHer} exudes strength and dominance, a truly imposing figure.")
+			saynn("{presenter.You} {presenter.youVerb('place')} {presenter.yourHis} кладет руки на широкие, мощные плечи {slave.name}, ведя ими вниз по {slave.hisHer} крепкому, мускулистому телу. Каждый дюйм {slave.himHer} источает силу и доминирование — поистине внушительная фигура.")
 			
 			sayPresenter("Here’s a body built for power and control.. Thick, masculine, and ready to be put to work in every possible way.")
 			

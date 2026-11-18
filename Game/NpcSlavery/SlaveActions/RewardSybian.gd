@@ -12,7 +12,7 @@ func _init():
 	rewardHint = 4
 
 func getVisibleName():
-	return "Sybian"
+	return "Сибиан"
 
 func getVisibleDesc():
 	return "Let your slave experience a powerful orgasm by making them sit on a sybian"
@@ -27,7 +27,7 @@ func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var character:DynamicCharacter = GlobalRegistry.getCharacter(_slaveID)
 	var npcSlavery:NpcSlave = character.getNpcSlavery()
 	
-	var text = "You lead {npc.name} to the sybian machine and secure {npc.him} to it before turning the machine on to its maximum vibration setting, a reward for {npc.his} great efforts.\n\n"
+	var text = "Ты ведешь {npc.name} к машине-сибиану и пристегиваешь {npc.him} к ней, после чего включаешь вибрацию на максимум — награда за {npc.his} великие старания.\n\n"
 	
 	if(npcSlavery.getDespair() > 0.8):
 		text += "Even though the vibrations are extremely powerful, {npc.heShe} exhibits a passive response, showing no enthusiasm for the experience."

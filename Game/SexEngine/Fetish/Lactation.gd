@@ -7,7 +7,7 @@ func _init():
 	}
 
 func getVisibleName():
-	return "Lactation"
+	return "Лактация"
 
 func getGoals(_sexEngine, _domFetishHolder, _dom, _sub):
 	var possible = []

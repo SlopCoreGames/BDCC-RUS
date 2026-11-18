@@ -74,7 +74,7 @@ func _init():
 	id = "Walkies"
 	
 func getVisibleName():
-	return "On walkies"
+	return "На прогулке @@B*@@"
 
 func onStart(_args = []):
 	pass

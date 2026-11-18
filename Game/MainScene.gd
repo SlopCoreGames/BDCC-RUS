@@ -334,7 +334,7 @@ func removeScene(scene, args = []):
 		Log.print("Error: no more scenes in the scenestack")
 		gameUI.clearText()
 		gameUI.clearButtons()
-		gameUI.say("Error: no more scenes in the scenestack. Please let the developer know")
+		gameUI.say("Ошибка: в стеке сцен больше нет сцен. Пожалуйста, сообщите об этом разработчику")
 		return
 
 func getSceneByUniqueID(uID):
@@ -847,7 +847,7 @@ func npcSlaveryOnNewDay():
 func getVisibleTime():
 	var text = ""
 	if(isVeryLate()):
-		text = "Night time"
+		text = "Ночное время"
 	else:
 		text = Util.getTimeStringHHMM(timeOfDay)
 	

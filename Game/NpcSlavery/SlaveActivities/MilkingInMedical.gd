@@ -6,7 +6,7 @@ func _init():
 	id = "MilkingInMedical"
 	
 func getVisibleName():
-	return "Milking in medical"
+	return "Дойка в медпункте"
 
 func getActivityText():
 	var theText:String = "{npc.name} is being milked in the medical bay!"
@@ -44,7 +44,7 @@ func hoursPassed(_howMuch):
 func getInteractActions():
 	return [
 		{
-			name = "Cancel",
+			name = "Отмена",
 			desc = "Bring your slave back.",
 			sceneID = "SlaveryCancelActivity",
 			args = ["You find {npc.name} in the medical and bring {npc.him} back."],

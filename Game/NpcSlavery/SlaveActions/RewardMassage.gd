@@ -12,7 +12,7 @@ func _init():
 	rewardHint = 3
 
 func getVisibleName():
-	return "Massage"
+	return "Массаж"
 
 func getVisibleDesc():
 	return "Give your slave a back massage as a reward"
@@ -21,7 +21,7 @@ func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var character:DynamicCharacter = GlobalRegistry.getCharacter(_slaveID)
 	var npcSlavery:NpcSlave = character.getNpcSlavery()
 	
-	var text = "You instruct {npc.name} to lie down and then give {npc.him} a gentle, back massage, a big reward for {npc.his} efforts.\n\n"
+	var text = "Вы приказываете {npc.name} лечь, а затем делаете {npc.him} нежный массаж спины — отличная награда за {npc.his} старания.\n\n"
 	
 	if(npcSlavery.getDespair() > 0.8):
 		text += "{npc.HeShe} remains passive, showing no interest in the massage. Or anything really.."

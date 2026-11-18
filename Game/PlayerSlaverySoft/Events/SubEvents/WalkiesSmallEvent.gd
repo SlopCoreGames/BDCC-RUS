@@ -24,7 +24,7 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 func start():
 	playAnimation(StageScene.PuppySexStart, "start", {pc=getRoleID(C_EXTRA1), npcBodyState={naked=true}})
 	sayPretext()
-	saynn("{npc1.name} approaches you two and crouches in front of you.")
+	saynn("{npc1.name} подходит к вам двоим и приседает перед вами.")
 
 	var biteName:String = RNG.pick([
 		"Bite", "Nom", "Grrr", "Grr", "Chomp",
@@ -38,19 +38,19 @@ func start():
 		])
 		
 		if(RNG.chance(50)):
-			addButton(barkName, "Do this", "doObey")
-			addButton(biteName, "Do this", "doBite")
+			addButton(barkName, "Сделать это", "doObey")
+			addButton(biteName, "Сделать это", "doBite")
 		else:
-			addButton(biteName, "Do this", "doBite")
-			addButton(barkName, "Do this", "doObey")
+			addButton(biteName, "Сделать это", "doBite")
+			addButton(barkName, "Сделать это", "doObey")
 	else:
 		talkModular(C_EXTRA1, C_PC, "SoftSlaveryWalkiesPet") # What a cute puppy. Can I pat you?
 		if(RNG.chance(50)):
-			addButton("Allow", "Do this", "doObey")
-			addButton(biteName, "Do this", "doBite")
+			addButton("Разрешить", "Сделать это", "doObey")
+			addButton(biteName, "Сделать это", "doBite")
 		else:
-			addButton(biteName, "Do this", "doBite")
-			addButton("Allow", "Do this", "doObey")
+			addButton(biteName, "Сделать это", "doBite")
+			addButton("Разрешить", "Сделать это", "doObey")
 	
 func start_do(_id:String, _args:Array):
 	if(_id == "doObey"):
@@ -79,34 +79,34 @@ func doTheBite():
 func youObey():
 	playAnimation(StageScene.PuppySexStart, "pet", {pc=getRoleID(C_EXTRA1), npcBodyState={naked=true}})
 	if(walkiesEvent == "bark"):
-		saynn("You let out a happy bark!")
+		saynn("Ты радостно тявкаешь!")
 		talk(C_PC, RNG.pick([
 			"Bark! Bark!",
 			"Woof! Bark! Arff-f.",
 		]))
-		saynn("In return, the person starts petting you!")
+		saynn("В ответ человек начинает тебя гладить!")
 		talkModular(C_EXTRA1, C_PC, "SoftSlaveryWalkiesGoodPuppy") # Good puppy.
 		addInfluenceObey(0.2)
 	else:
-		saynn("You stand still and present your head, allowing the person to start patting you!")
+		saynn("Ты замираешь и подставляешь голову, позволяя человеку начать поглаживания!")
 		talkModular(C_EXTRA1, C_PC, "SoftSlaveryWalkiesGoodPuppy") # Good puppy.
-		saynn("Feels good..")
+		saynn("Приятно...")
 		addInfluenceObey(0.2)
 	
 	if(npcWantsSex):
-		saynn("It looks like the person wants more than just to pat you though..")
+		saynn("Похоже, человек хочет не только гладить тебя...")
 		talkModular(C_EXTRA1, C_PC, "SoftSlaveryWalkiesGoodPuppySex") # Are you gonna be a good puppy and let me fuck you?
 		if(ownerProtectedPC):
-			saynn("Before too long, your owner steps in and shoves {npc1.him} back.")
+			saynn("Вскоре вмешивается твой хозяин и отталкивает {npc1.him} назад.")
 			talkModularOwnerToPC("SoftSlaveryWalkiesBiteProtect") # This is my {npc.npcSlave}. Fuck off.
-			saynn("The person rolls {npc1.his} eyes and walks away.")
+			saynn("Человек закатывает {npc1.his} глаза и уходит.")
 			addContinue("endEvent")
 		else:
-			saynn("Looks like your owner doesn't mind..")
-			addButton("Sex", "Let them fuck you", "startSex", [getRoleID(C_EXTRA1), "pc", SexType.BitchsuitSex, {SexMod.DisableDynamicJoiners:true,SexMod.BondageDisabled:true,SexMod.SubsStartNaked:true}])
-			addButton("Bite!", "Bite them for trying to do this", "bite")
+			saynn("Похоже, твоему хозяину не против...")
+			addButton("Секс", "Дай им трахнуть тебя", "startSex", [getRoleID(C_EXTRA1), "pc", SexType.BitchsuitSex, {SexMod.DisableDynamicJoiners:true,SexMod.BondageDisabled:true,SexMod.SubsStartNaked:true}])
+			addButton("Кусь!", "Укуси их за попытку сделать это", "bite")
 	else:
-		saynn("After that small encounter, you continue on your way..")
+		saynn("После этой короткой стычки ты продолжаешь свой путь...")
 		addContinue("endEvent")
 
 func youObey_sexResult(_sex:SexEngineResult):
@@ -118,19 +118,19 @@ func youObey_do(_id:String, _args:Array):
 
 func biteWhatever():
 	playAnimation(StageScene.PuppyDuo, "hurt", {pc=getRoleID(C_EXTRA1), npcBodyState={naked=true}})
-	saynn("Suddenly, you ludge forward and bite the person!")
+	saynn("Внезапно ты подаешься вперед и кусаешь человека!")
 	talkModular(C_EXTRA1, C_PC, "SoftSlaveryWalkiesBiteBad") # Ow. Control your mut better.
-	saynn("{npc1.He} {npc1.verb('grumble')}.. but decide against doing anything back.")
-	saynn("With that, you continue on your way..")
+	saynn("{npc1.He} {npc1.verb('grumble')}... но решаешь ничего не предпринимать в ответ.")
+	saynn("С этими мыслями ты продолжаешь свой путь...")
 	addContinue("endEvent")
 
 func biteFight():
 	playAnimation(StageScene.PuppyDuo, "hurt", {pc=getRoleID(C_EXTRA1), npcBodyState={naked=true}})
-	saynn("Suddenly, you ludge forward and bite the person!")
+	saynn("Внезапно ты подаешься вперед и кусаешь человека!")
 	talkModular(C_EXTRA1, C_PC, "SoftSlaveryWalkiesBiteAttack") # Ow. I will make you suffer for this.
-	saynn("Oops.. The person yanks you around by the collar.. but then your owner pushes {npc1.him} back!")
+	saynn("Ой... Человек дергает тебя за воротник... но тут твой хозяин отталкивает {npc1.him} назад!")
 	talkModularOwnerToPC("SoftSlaveryWalkiesBiteProtect") # This is my {npc.npcSlave}. Fuck off.
-	saynn("Looks like they're gonna fight because of you!")
+	saynn("Похоже, из-за тебя они сейчас вцепятся друг другу в глотки!")
 	addContinue("fight")
 
 func biteFight_do(_id:String, _args:Array):
@@ -150,7 +150,7 @@ func biteFight_eventResult(_event, _tag:String, _args:Array):
 
 func afterSex():
 	playAnimation(StageScene.PuppySexStart, "start", {pc=getOwnerID(), npcBodyState={naked=true,leashedBy=getOwnerID()}})
-	saynn("After the sex, your owner clicks the leash to your collar again.")
+	saynn("После секса ваш хозяин снова пристегивает поводок к вашему ошейнику.")
 	talkModularOwnerToPC("SoftSlaveryParadeFuckOfferGood")
 	addInfluenceObey(0.1)
 	addContinue("endEvent")
@@ -158,7 +158,7 @@ func afterSex():
 func ownerWon():
 	playAnimation(StageScene.Duo, "stand", {npc=getOwnerID(), bodyState={leashedBy=getOwnerID()}})
 	
-	saynn("Your owner clicks the leash to your collar again.")
+	saynn("Ваш хозяин снова пристегивает поводок к вашему ошейнику.")
 	talkModularOwnerToPC("SoftSlaveryParadeFuckOfferWon")
 	addInfluenceObey(0.2)
 	addContinue("endEvent")
@@ -169,14 +169,14 @@ func ownerLost():
 	
 	if(smartChance(theSexChance)):
 		playAnimation(StageScene.PuppySexStart, "sad", {pc=getRoleID(C_EXTRA1), npcBodyState={naked=true}})
-		saynn("After the fight, you get approached by {npc1.name}. Looks like {npc1.he} {npc1.verb('want')} to fuck you..")
+		saynn("После драки к тебе подходит {npc1.name}. Похоже, {npc1.he} {npc1.verb('want')}, чтобы трахнуть тебя...")
 		addContinue("startSex", [getRoleID(C_EXTRA1), "pc", SexType.BitchsuitSex, {SexMod.DisableDynamicJoiners:true,SexMod.BondageDisabled:true,SexMod.SubsStartNaked:true}])
 	else:
 		playAnimation(StageScene.PuppySexStart, "sad", {pc=getOwnerID(), npcBodyState={naked=true}})
-		saynn("After the fight, you get approached by {npc1.name}. {npc1.He} {npc1.verb('grab')} you by the collar and slaps your cheek! Ow.")
+		saynn("После драки к тебе подходит {npc1.name}. {npc1.He} {npc1.verb('grab')} тебя за воротник и дает пощечину! Ай.")
 		talkModular(C_EXTRA1, C_PC, "SoftSlaveryWalkiesBadPuppy") #Stupid mut.
-		saynn("The person leaves you alone after that.")
-		saynn("Your owner clicks a leash to your collar again.")
+		saynn("После этого человек оставляет тебя в покое.")
+		saynn("Твой хозяин снова защелкивает поводок на твоем ошейнике.")
 		talkModularOwnerToPC("SoftSlaveryWalkiesBadPuppyObey") #You need to obey more, {npc.npcSlave}
 		addInfluenceResist(0.5)
 		addContinue("endEvent")
@@ -187,7 +187,7 @@ func ownerLost_sexResult(_sex:SexEngineResult):
 func afterLostSex():
 	playAnimation(StageScene.PuppySexStart, "start", {pc=getOwnerID(), npcBodyState={naked=true,leashedBy=getOwnerID()}})
 	
-	saynn("{npc.name} clicks a leash to your collar again.")
+	saynn("{npc.name} снова защелкивает поводок на твоем ошейнике.")
 	addInfluenceResist(0.8)
 	talkModularOwnerToPC("SoftSlaveryWalkiesLostNotDone") #Whatever. We're not done walking around yet.
 	addContinue("endEvent")

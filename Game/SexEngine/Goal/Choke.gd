@@ -4,7 +4,7 @@ func _init():
 	id = SexGoal.Choke
 
 func getVisibleName():
-	return "Choke sub"
+	return "Подтип удушения"
 
 func isPossible(_sexEngine, _domInfo, _subInfo, _data):
 	if(_sexEngine.noViolence || _subInfo.isUnconscious()):

@@ -17,47 +17,47 @@ func start():
 		setLocation(LOC_SOLITARY)
 		
 		if(!isWilling):
-			saynn("You wake up.. hanging above the floor by your wrists.. in a small dark cell..")
-			saynn("One of the walls.. is made out of thick glass. Behind it.. a figure.")
+			saynn("Ты просыпаешься.. подвешенным над полом за запястья.. в маленькой темной камере..")
+			saynn("Одна из стен.. сделана из толстого стекла. За ней.. чей-то силуэт.")
 			talkModularOwnerToPC("SoftSlaveryIntro1") # You're up? Good.
-			saynn("This doesn't look good..")
-			saynn("The figure enters the cell and approaches you. It's {npc.name}.")
+			saynn("Выглядит не очень хорошо..")
+			saynn("Фигура входит в камеру и приближается к тебе. Это {npc.name}.")
 			talkModularOwnerToPC("SoftSlaveryIntro2") # You are now my slave. Undestand?
-			saynn("Right.. You're unsure how to react to that.")
+			saynn("Точно.. Ты не совсем понимаешь, как на это реагировать.")
 			talkModularOwnerToPC("SoftSlaveryIntro3") # You will do as I say or we will have a problem
-			saynn("It sure doesn't seem like you have much of a choice..")
+			saynn("Похоже, выбора у тебя немного..")
 		else:
-			saynn("You get brought into the solitary confinement area.. {npc.name} grabs your wrists and cuffs them high above your head..")
+			saynn("Тебя притаскивают в зону одиночных камер.. {npc.name} хватает тебя за запястья и заковывает их высоко над головой..")
 			talkModularOwnerToPC("SoftSlaveryIntro1Willing") # Now let's talk.
-			saynn("This is exciting..")
-			saynn("{npc.name} grabs your chin and makes you look at {npc.him}.")
+			saynn("Это волнующе..")
+			saynn("{npc.name} берет тебя за подбородок, заставляя смотреть на {npc.him}.")
 			talkModularOwnerToPC("SoftSlaveryIntro2") # You are now my slave. Undestand?
-			saynn("You nod.")
+			saynn("Ты киваешь.")
 			talkModularOwnerToPC("SoftSlaveryIntro3") # You will do as I say or we will have a problem
-			saynn("It sure doesn't seem like you have much of a choice.. good.")
+			saynn("Похоже, выбора у тебя немного.. и это хорошо.")
 	else:
 		setLocation(getOwnerHomeLoc())
 		
 		if(!isWilling):
-			saynn("You wake up.. hanging above the floor by your wrists.. in a cell..")
-			saynn("The more you look at it.. the more you realize.. this isn't your cell.")
-			saynn("Someone walks in..")
+			saynn("Ты просыпаешься.. подвешенным к потолку за запястья.. в какой-то камере..")
+			saynn("Чем дольше ты всматриваешься.. тем отчетливее понимаешь.. это не твоя камера.")
+			saynn("Кто-то входит..")
 			talkModularOwnerToPC("SoftSlaveryIntro1") # You're up? Good.
-			saynn("This doesn't look good..")
-			saynn("The figure approaches you. It's {npc.name}.")
+			saynn("Выглядит не очень хорошо..")
+			saynn("Фигура приближается к тебе. Это {npc.name}.")
 			talkModularOwnerToPC("SoftSlaveryIntro2") # You are now my slave. Undestand?
-			saynn("Right.. You're unsure how to react to that.")
+			saynn("Точно.. Ты не совсем понимаешь, как на это реагировать.")
 			talkModularOwnerToPC("SoftSlaveryIntro3") # You will do as I say or we will have a problem
-			saynn("It sure doesn't seem like you have much of a choice..")
+			saynn("Похоже, выбора у тебя немного..")
 		else:
-			saynn("You get brought into a little cell.. {npc.name} grabs your wrists and cuffs them high above your head..")
+			saynn("Тебя затаскивают в тесную камеру.. {npc.name} хватает тебя за запястья и заковывает их высоко над головой..")
 			talkModularOwnerToPC("SoftSlaveryIntro1Willing") # Now let's talk.
-			saynn("This is exciting..")
-			saynn("{npc.name} grabs your chin and makes you look at {npc.him}.")
+			saynn("Это волнующе..")
+			saynn("{npc.name} берет тебя за подбородок, заставляя смотреть на {npc.him}.")
 			talkModularOwnerToPC("SoftSlaveryIntro2") # You are now my slave. Undestand?
-			saynn("You nod.")
+			saynn("Ты киваешь.")
 			talkModularOwnerToPC("SoftSlaveryIntro3") # You will do as I say or we will have a problem
-			saynn("It sure doesn't seem like you have much of a choice.. good.")
+			saynn("Похоже, выбора у тебя немного.. и это хорошо.")
 	
 	addContinue("setState", ["nearcellblock"])
 	
@@ -65,9 +65,9 @@ func nearcellblock():
 	playAnimation(StageScene.Duo, "stand", {npc=getOwnerID(), bodyState={leashedBy=getOwnerID()}})
 	setLocation(LOC_CELLBLOCK_MIDDLE)
 	
-	saynn("After a brief.. introduction.. your new owner clicks a leash to your collar and walks you back to the cellblock.")
+	saynn("После краткого.. знакомства.. твой новый хозяин пристегивает поводок к твоему ошейнику и ведет тебя обратно в блок камер.")
 	talkModularOwnerToPC("SoftSlaveryIntroEND")# I will be checking on you ever so often. Don't forget who you belong to.
-	saynn("Looks like {npc.he} {npc.is}n't gonna keep you in {npc.his} {npc.cell} all day long.. it's not like you can escape this place anyway.")
+	saynn("Похоже, {npc.he} {npc.is}не собирается держать тебя в {npc.his} {npc.cell} весь день напролет.. всё равно из этого места просто так не сбежать.")
 	if(onlyOnce()):
 		var theNpcOwner := getNpcOwner()
 		if(theNpcOwner):

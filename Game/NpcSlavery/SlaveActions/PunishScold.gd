@@ -13,7 +13,7 @@ func _init():
 	rewardHint = -1
 
 func getVisibleName():
-	return "Scold"
+	return "Сварка"
 
 func getVisibleDesc():
 	return "Give your slave some verbal abuse"
@@ -21,7 +21,7 @@ func getVisibleDesc():
 func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var npcSlavery:NpcSlave = getSlave(_slaveID)
 	
-	var text = "You adopt a firm stance and fix your gaze upon {npc.name}. Time to be mean.\n\n"
+	var text = "Ты принимаешь решительный вид и впиваешься взглядом в {npc.name}. Пора проявить строгость.\n\n"
 	
 	text += "[say=pc]"+RNG.pick([
 		"Suppress your futile attempts at resistance. You're here to obey. Your will is meaningless.",

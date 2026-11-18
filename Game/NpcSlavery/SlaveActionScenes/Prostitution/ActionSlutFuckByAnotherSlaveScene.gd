@@ -28,19 +28,19 @@ func _run():
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		var npc2Slavery:NpcSlave = npc2.getNpcSlavery()
 		
-		saynn("You order your slut named {npc.name} to obey {npc2.name} and let {npc2.him} do anything {npc.he} wants with {npc.his} body, to be {npc2.his} stress-relief fucktoy.")
+		saynn("Ты приказываешь своей шлюхе по имени {npc.name} подчиниться {npc2.name} и позволить {npc2.him} делать с {npc.his} телом всё, что пожелает {npc.he}, чтобы та стала {npc2.his} игрушкой для снятия стресса.")
 		
-		saynn("Since all your slave are on a short chain, your slut doesn't really have a choice anyway."+(" You do notice that your slut is pretty tired though, meaning {npc.he} won't enjoy it for sure." if npcSlavery.getWorkEfficiency() <= 0.15 else ""))
+		saynn("Поскольку все твои рабы сидят на короткой цепи, у твоей шлюхи всё равно особо нет выбора."+(" You do notice that your slut is pretty tired though, meaning {npc.he} won't enjoy it for sure." if npcSlavery.getWorkEfficiency() <= 0.15 else ""))
 		
 		if(npc2Slavery.isMindBroken()):
-			saynn("Your second slave hears your order.. and looks just as spaced out as before.")
+			saynn("Твой второй раб слышит твой приказ... и выглядит таким же отрешённым, как и прежде.")
 			
-			saynn("Looks like {npc2.he} won't be able to do this in {npc2.his} current state.. Unless you force {npc2.him}.")
+			saynn("Похоже, {npc2.he} не сможет этого сделать в {npc2.his} нынешнем состоянии... если только ты не заставишь {npc2.him}.")
 			
-			addButton("Force", "Force your broken slave to fuck your slut", "do_force_sex")
-			addButton("Cancel", "You changed your mind", "endthescene")
+			addButton("Заставить", "Заставить своего сломленного раба трахнуть твою шлюху", "do_force_sex")
+			addButton("Отмена", "Вы передумали", "endthescene")
 		elif(npc2Slavery.personalityScore({PersonalityStat.Subby:1.0}) > 0.0):
-			saynn("Your second slave hears your order.. and lowers {npc2.his} gaze.")
+			saynn("Твой второй раб слышит твой приказ... и опускает взгляд {npc2.his}.")
 			
 			saynn("[say=npc2]"+RNG.pick([
 				"I'm not really a dominant person.. you know?..",
@@ -48,12 +48,12 @@ func _run():
 				"I'm a pretty subby person myself..",
 			])+"[/say]")
 			
-			saynn("Forcing {npc2.name} to do this will actually make {npc2.him} feel more stressed than before..")
+			saynn("Если заставить {npc2.name} сделать это, {npc2.him} на самом деле будет чувствовать ещё больший стресс, чем раньше...")
 			
-			addButton("Force", "Force your subby slave to fuck your slut", "do_force_sex")
-			addButton("Cancel", "You changed your mind", "endthescene")
+			addButton("Заставить", "Заставить своего покорного раба трахнуть твою шлюху", "do_force_sex")
+			addButton("Отмена", "Вы передумали", "endthescene")
 		else:
-			saynn("Your second slave hears that.. and seems to be ready for some good action.")
+			saynn("Твоя вторая рабыня слышит это... и, похоже, готова к хорошей жаре.")
 		
 			saynn("[say=npc2]"+RNG.pick([
 				"Let's have some fun.",
@@ -61,13 +61,13 @@ func _run():
 				"Let's see how much you can handle.",
 			])+"[/say]")
 			
-			addButton("Watch", "See what your slave will do to your slut", "do_watch_sex")
+			addButton("Смотреть", "Посмотри, что твоя рабыня сделает с твоей шлюхой", "do_watch_sex")
 	if(state == "after_sex"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID, pc=npc2ID, bodyState={chains=[["normal", "neck", "scene", "floor"]]}, npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
 		
-		saynn("After the sex ends, you order your slaves to get up. You make sure that both of them are still chained up to the floor.")
+		saynn("Когда секс заканчивается, ты приказываешь рабыням встать. Ты убеждаешься, что обе они всё ещё прикованы цепями к полу.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		
 		
 func _react(_action: String, _args):

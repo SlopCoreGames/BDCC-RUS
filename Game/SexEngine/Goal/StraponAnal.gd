@@ -4,7 +4,7 @@ func _init():
 	id = SexGoal.StraponAnal
 
 func getVisibleName():
-	return "Strapon anus"
+	return "Анальный страпон"
 
 func isPossible(_sexEngine, _domInfo, _subInfo, _data):
 	if(_domInfo.getChar().hasBoundArms() || _domInfo.getChar().hasBlockedHands()):

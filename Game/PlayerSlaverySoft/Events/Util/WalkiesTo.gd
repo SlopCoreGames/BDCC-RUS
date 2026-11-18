@@ -18,7 +18,7 @@ func onStart(_args:Array):
 
 func start():
 	playAnimation(StageScene.PuppyDuo, "stand", {pc=getOwnerID(), flipPC=true, npcBodyState={naked=true, leashedBy=getOwnerID()}})
-	saynn("{npc.name} starts walking you around!")
+	saynn("{npc.name} ведет тебя на прогулку!")
 	
 	addButtonAt(6, "Walk", "See where your owner will bring you..", "walk")
 	addDisabledButtonAt(10, "Leashed", "You are leashed")
@@ -41,7 +41,7 @@ func start_do(_id:String, _args:Array):
 func walking():
 	playAnimation(StageScene.PuppyDuo, "walk", {pc=getOwnerID(), npcAction="walk", flipPC=true, npcBodyState={naked=true, leashedBy=getOwnerID()}})
 	
-	saynn("You are being walked by your owner.")
+	saynn("Твой хозяин ведет тебя за собой.")
 	
 	var _roomInfo = GM.world.getRoomByID(getLocation())
 	if(_roomInfo):

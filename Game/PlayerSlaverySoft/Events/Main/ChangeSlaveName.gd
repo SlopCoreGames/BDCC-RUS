@@ -8,16 +8,16 @@ func onStart(_args:Array):
 
 func start():
 	playStand()
-	saynn("You ask your owner if {npc.he} can start calling you differently.")
+	saynn("Вы спрашиваете своего хозяина, может ли {npc.he} теперь называться как-то иначе.")
 	talkModularOwnerToPC("SoftSlaveryChangeName") #"How should I call my {npc.npcSlave} then?"
-	saynn("Choose your new nickname.")
+	saynn("Выберите себе новое прозвище.")
 	
-	addButton("CANCEL", "You changed your mind", "endEvent")
+	addButton("CANCEL", "Вы передумали", "endEvent")
 	var theNpcOwner := getNpcOwner()
 	if(!theNpcOwner):
 		return
 	for nickname in theNpcOwner.getPossiblePCNames():
-		addButton(nickname, "Choose this nickname", "setNickname", [nickname])
+		addButton(nickname, "Выбрать это прозвище", "setNickname", [nickname])
 
 func start_do(_id:String, _args:Array):
 	var theNpcOwner := getNpcOwner()
@@ -26,6 +26,6 @@ func start_do(_id:String, _args:Array):
 	setState("afterNamed")
 	
 func afterNamed():
-	saynn("You tell your owner which name you would like {npc.him} to use.")
+	saynn("Вы говорите хозяину, каким именем вы бы хотели, чтобы {npc.him} вас называл(а).")
 	talkModularOwnerToPC("SoftSlaveryChangeNameEND") #Alright. You will now be my {npc.npcSlave}.
 	addContinue("endEvent")

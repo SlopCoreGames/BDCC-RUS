@@ -18,9 +18,9 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 func start():
 	playAnimation(StageScene.Duo, "stand", {npc=getOwnerID(), bodyState={leashedBy=getOwnerID()}})
 	sayPretext()
-	saynn("{npc.name} shoves you and then clips a leash to your collar!")
+	saynn("{npc.name} толкает тебя, а затем пристегивает поводок к твоему ошейнику!")
 	talkModularOwnerToPC("SoftSlaveryPunishStocks")
-	saynn("Your owner is really not in a good mood..")
+	saynn("Твой хозяин явно не в духе...")
 	
 	addContinue("setState", ["inStocks"])
 	
@@ -28,7 +28,7 @@ func inStocks():
 	setLocation(LOC_STOCKS)
 	playAnimation(StageScene.StocksSexOral, "tease", {npc=getOwnerID()})
 	
-	saynn("You get brought to the punishment platform and get locked into the stocks!")
+	saynn("Тебя притаскивают к плахе для наказаний и зажимают ноги в колодки!")
 	talkModularOwnerToPC("SoftSlaveryPunishStocksLock")
 	addContinue("findSomeone")
 
@@ -43,8 +43,8 @@ func inStocks_do(_id:String, _args:Array):
 
 func foundSomeone():
 	playAnimation(StageScene.StocksSexOral, "tease", {npc=getRoleID(C_EXTRA1)})
-	saynn("Your owner offers nearby people to punish you.")
-	saynn("And soon.. a person approaches you.")
+	saynn("Твой хозяин предлагает окружающим тебя наказать.")
+	saynn("И вскоре... к тебе кто-то подходит.")
 	
 	talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryPunishStocksAsk")
 	var credAm:int = RNG.randi_range(1,4)*5
@@ -52,17 +52,17 @@ func foundSomeone():
 	
 	var attackInsteadChance:float = 30.0 + personality(C_EXTRA1, PersonalityStat.Mean)*30.0 + personality(C_EXTRA1, PersonalityStat.Impatient)*10.0 - personality(C_EXTRA1, PersonalityStat.Coward)*10.0
 	if(RNG.chance(attackInsteadChance)):
-		saynn("{npc1.name} considers {npc1.his} options.")
+		saynn("{npc1.name} обдумывает {npc1.his} варианты.")
 		talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryPunishStocksAskNoBuy")
-		saynn("Your owner furrows {npc.his} brows.")
+		saynn("Твой хозяин хмурит {npc.his} брови.")
 		talkModularOwnerToPC("SoftSlaveryPunishStocksAskNoBuy2")
 		talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryPunishStocksAskNoBuy3")
-		saynn("Ohh, looks like something is about to happen!")
+		saynn("О-о, похоже, сейчас что-то будет!")
 		addContinue("doNpcFight")
 	else:
-		saynn("{npc1.name} considers {npc1.his} options.")
+		saynn("{npc1.name} обдумывает {npc1.his} варианты.")
 		talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryPunishStocksAskSure")
-		saynn("{npc1.He} {npc1.verb('hand')} your owner a credits chip.. and puts {npc1.his} hands on you..")
+		saynn("{npc1.He} протягивает {npc1.verb('hand')} твоему хозяину кредитный чип... и кладет {npc1.his} на тебя...")
 		addContinue("startSex", [getRoleID(C_EXTRA1), "pc", SexType.StocksSex, {SexMod.DisableDynamicJoiners:true}])
 
 func foundSomeone_do(_id:String, _args:Array):
@@ -91,11 +91,11 @@ func startTheStocks():
 
 func afterSex():
 	playAnimation(StageScene.StocksSexOral, "tease", {npc=getOwnerID()})
-	saynn("The sex has ended! {npc1.name} leaves, satisfied.")
-	saynn("Your owner leans against the stocks.")
+	saynn("Секс окончен! {npc1.name} уходит, довольный/ая.")
+	saynn("Твой хозяин опирается на колодки.")
 	talkModularOwnerToPC("SoftSlaveryPunishStocksAfterSex")
-	saynn("{npc.He} {npc.verb('step')} away from the stocks.. without unlocking you.")
-	saynn("Looks like you will have to escape on your own..")
+	saynn("{npc.He} {npc.verb('step')} от колодок... но тебя не освобождает.")
+	saynn("Похоже, тебе придется выбираться самостоятельно...")
 	addContinue("startTheStocks")
 
 func afterSex_do(_id:String, _args:Array):
@@ -104,11 +104,11 @@ func afterSex_do(_id:String, _args:Array):
 
 func thatSucked():
 	playAnimation(StageScene.Duo, "shove", {npc=getOwnerID(), npcAction="hurt", pc=getRoleID(C_EXTRA1)})
-	saynn("The sex has ended! But {npc1.name} doesn't seem to be satisfied at all.")
+	saynn("Секс окончен! Но {npc1.name}, кажется, совсем не удовлетворена.")
 	talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryPunishStocksAfterBadSex")
 	talkModularOwnerToPC("SoftSlaveryPunishStocksAfterBadSex2")
-	saynn("Your owner gets shoved by the angry person!")
-	saynn("Looks like something is gonna happen!")
+	saynn("Твоего хозяина толкает разъяренный человек!")
+	saynn("Похоже, сейчас что-то будет!")
 	addContinue("doNpcFight")
 	
 func thatSucked_do(_id:String, _args:Array):
@@ -125,22 +125,22 @@ func thatSucked_eventResult(_event, _tag:String, _args:Array):
 
 func ownerLost():
 	playAnimation(StageScene.StocksSexOral, "tease", {pc=getOwnerID(), npc=getRoleID(C_EXTRA1)})
-	saynn("Your owner lost the fight against {npc1.name}!")
+	saynn("Твой хозяин проиграл бой против {npc1.name}!")
 	if(shouldTakeCredits):
-		saynn("{npc1.name} reaches to fetch {npc1.his} credits back from {npc.name}.")
+		saynn("{npc1.name} тянется, чтобы забрать {npc1.his} кредитов обратно у {npc.name}.")
 	talkOwner(RNG.pick(["Ghrh..", "Fuck..", "Ugh..", "Mghh-.."]))
 	addInfluenceResist()
 	talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryPunishStocksOwnerLost")
-	saynn("The person is not done yet.. {npc1.he} {npc1.verb('grab')} {npc.name} and {npc1.verb('lock')} {npc.him} into the stocks alongside you!")
+	saynn("Человек еще не закончил... {npc1.he} {npc1.verb('grab')} {npc.name} и {npc1.verb('lock')} {npc.him} в колодки вместе с тобой!")
 	
 	var willAlsoFuckChance:float = 50.0 + personality(C_EXTRA1, PersonalityStat.Mean)*20.0 - personality(C_EXTRA1, PersonalityStat.Subby)*20.0
 	if(!smartChance(willAlsoFuckChance)):
 		talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryPunishStocksOwnerLost2")
-		saynn("And just like that, {npc1.he} {npc1.verb('leave')} you two stuck in the stocks..")
+		saynn("И вот так просто, {npc1.he} {npc1.verb('leave')} вас двоих запертыми в колодках...")
 		addContinue("endMakeOwnerStocked")
 	else:
 		talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryPunishStocksOwnerLost3")
-		saynn("What an ironic turn of events. And you have the front-row seat.")
+		saynn("Какой ироничный поворот событий. И у тебя есть место в первом ряду.")
 		addContinue("startSex", [getRoleID(C_EXTRA1), getOwnerID(), SexType.StocksSex, {}])
 
 func ownerLost_do(_id:String, _args:Array):
@@ -154,20 +154,20 @@ func ownerLost_sexResult(_sex:SexEngineResult):
 
 func ownerWon():
 	playAnimation(StageScene.StocksSexOral, "tease", {npc=getOwnerID(), pc=getRoleID(C_EXTRA1)})
-	saynn("Your owner won the fight against {npc1.name}! And so {npc.he} {npc.verb('locks')} the loser into the stocks, alongside you!")
+	saynn("Твой хозяин победил в схватке против {npc1.name}! И теперь {npc.he} {npc.verb('locks')} проигравшего в колодки, прямо к тебе!")
 	var willAlsoFuckChance:float = 50.0 + personality(C_OWNER, PersonalityStat.Mean)*20.0 - personality(C_OWNER, PersonalityStat.Subby)*20.0
 	if(!smartChance(willAlsoFuckChance)):
 		talkModularOwnerToPC("SoftSlaveryPunishStocksOwnerWon")
-		saynn("{npc.He} {npc.verb('point')} at you.")
+		saynn("{npc.He} {npc.verb('point')} на тебя.")
 		talkModularOwnerToPC("SoftSlaveryPunishStocksOwnerWon2")
-		saynn("{npc.He} {npc.verb('step')} away from the stocks.. without unlocking you.")
-		saynn("Looks like you will have to escape on your own..")
+		saynn("{npc.He} {npc.verb('step')} от колодок... но тебя не освобождает.")
+		saynn("Похоже, тебе придется выбираться самостоятельно...")
 		addContinue("startTheStocks")
 	else:
 		talkModularOwnerToPC("SoftSlaveryPunishStocksOwnerWon3")
-		saynn("{npc.He} {npc.verb('point')} at you too.")
+		saynn("{npc.He} тоже {npc.verb('point')} на тебя.")
 		talkModularOwnerToPC("SoftSlaveryPunishStocksOwnerWon4")
-		saynn("A free show for you.")
+		saynn("Бесплатное шоу специально для тебя.")
 		addContinue("startSex", [getOwnerID(), getRoleID(C_EXTRA1), SexType.StocksSex, {}])
 	
 
@@ -182,8 +182,8 @@ func ownerWon_sexResult(_sex:SexEngineResult):
 
 func afterSexDomLost():
 	playAnimation(StageScene.StocksSexOral, "tease", {pc=getOwnerID(), npc=getRoleID(C_EXTRA1)})
-	saynn("The sex has ended.. and it looks like {npc1.name} is not planning to unlock either of you.")
-	saynn("Oh well.")
+	saynn("Секс закончился... и, похоже, {npc1.name} не собирается освобождать ни вас, ни его.")
+	saynn("Ну, что ж.")
 	addContinue("endMakeOwnerStocked")
 
 func afterSexDomLost_do(_id:String, _args:Array):
@@ -194,8 +194,8 @@ func afterSexDomLost_do(_id:String, _args:Array):
 
 func afterSexDomWon():
 	playAnimation(StageScene.StocksSexOral, "tease", {npc=getOwnerID(), pc=getRoleID(C_EXTRA1)})
-	saynn("The sex has ended.. and it looks like {npc.name} is not planning to unlock either of you.")
-	saynn("Oh well.")
+	saynn("Секс закончился... и, похоже, {npc.name} не собирается освобождать ни вас, ни его.")
+	saynn("Ну, что ж.")
 	addContinue("endMakeOwnerStocked")
 
 func afterSexDomWon_do(_id:String, _args:Array):

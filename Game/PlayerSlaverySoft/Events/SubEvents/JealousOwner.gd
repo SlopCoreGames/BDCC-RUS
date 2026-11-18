@@ -27,11 +27,11 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 func start():
 	playAnimation(StageScene.Duo, "stand", {pc=getRoleID(C_EXTRA1), npc=getOwnerID()})
 	sayPretext()
-	saynn("Someone approaches you two.. someone who you know.. and who knows you.")
+	saynn("К вам приближается кто-то.. кто-то, кого вы знаете.. и кто знает вас.")
 	talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryFuckJealousStart")
 	talkModular(C_OWNER, C_EXTRA1, "SoftSlaveryFuckJealousFight")
 	
-	saynn("Looks like your two owners are about to fight..")
+	saynn("Похоже, твои двое хозяев вот-вот вцепятся друг другу в глотки...")
 	
 	if(instantSurrender):
 		addContinue("setState", ["ownerLost"])
@@ -52,22 +52,22 @@ func start_eventResult(_event, _tag:String, _args:Array):
 func ownerWon():
 	playAnimation(StageScene.SexStart, "start", {npc=getRoleID(C_EXTRA1), pc=getOwnerID()})
 	
-	saynn("Your owner has won.. against your other owner!")
+	saynn("Твой хозяин победил... твоего второго хозяина!")
 	talkModularOwnerToPC("SoftSlaveryFuckJealousOwnerWon")
 	addInfluenceObey(0.2)
-	saynn("Your second owner grunts.")
+	saynn("Твой второй хозяин кряхтит.")
 	talk(C_EXTRA1, "Whatever.")
 	
 	var haveSexChance:float = 50.0 + ownerPersonality(PersonalityStat.Mean)*50.0
 	haveSexChance -= getOwnerNOM(NOM.Asexual)*200.0
 	if(smartChance(haveSexChance)):
-		saynn("As the defeated owner tries to leave, {npc.name} grabs and holds {npc1.him} still!")
+		saynn("Когда побежденный хозяин пытается уйти, {npc.name} хватает и удерживает {npc1.him} на месте!")
 		talkModularOwnerToPC("SoftSlaveryFuckJealousOwnerWonFuck")
 		addInfluenceObey()
-		addButton("Continue", "See what happens next", "startSex", [getOwnerID(), ["pc", getRoleID(C_EXTRA1)], SexType.DefaultSex, {SexMod.DisableDynamicJoiners:true}])
+		addButton("Продолжить", "Смотреть, что будет дальше", "startSex", [getOwnerID(), ["pc", getRoleID(C_EXTRA1)], SexType.DefaultSex, {SexMod.DisableDynamicJoiners:true}])
 	else:
-		saynn("As the defeated owner leaves, {npc.name} directs {npc.his} attention back at you..")
-		addButton("Submit", "See what happens next..", "endEvent")
+		saynn("Когда побежденный хозяин уходит, {npc.name} заставляет {npc.his} снова обратить внимание на тебя...")
+		addButton("Подчиниться", "Смотри, что будет дальше...", "endEvent")
 
 func ownerWon_sexResult(_sexResult:SexEngineResult):
 	setSubResult(SUB_END)
@@ -76,34 +76,34 @@ func ownerWon_sexResult(_sexResult:SexEngineResult):
 func ownerLost():
 	if(!instantSurrender):
 		playAnimation(StageScene.SexStart, "start", {pc=getRoleID(C_EXTRA1), npc=getOwnerID()})
-		saynn("Your owner has lost.. to your other owner!")
+		saynn("Твой хозяин проиграл... твоему другому хозяину!")
 	else:
 		playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_EXTRA1), pc=getOwnerID()})
-		saynn("No fight happens though!")
+		saynn("Впрочем, драки не случилось!")
 
-	saynn("{npc1.name} begins approaching {npc.name}..")
+	saynn("{npc1.name} начинает приближаться к {npc.name}...")
 	talkModularOwnerToPC("SoftSlaveryFuckJealousOwnerLostOffer")
-	saynn("Your second owner stops for a second.")
+	saynn("Твой второй хозяин на секунду замирает.")
 	talkModularOwnerToPC("SoftSlaveryFuckJealousOwnerLostOffer2")
-	saynn("Your second owner hums while eyeing you out.")
+	saynn("Твой второй хозяин что-то напевает, вожделенно разглядывая тебя.")
 	if(smartChance(50.0 - personality(C_EXTRA1, PersonalityStat.Mean)*50.0)):
 		talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryFuckJealousOwnerLostOfferAgree")
-		saynn("Both of them grab you..")
+		saynn("Они оба хватают тебя...")
 		talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryFuckJealousOwnerLostOfferAgree2")
-		addButton("Continue", "See what happens next", "startSex", [[getOwnerID(), getRoleID(C_EXTRA1)], "pc", SexType.DefaultSex, {SexMod.DisableDynamicJoiners:true}])
+		addButton("Продолжить", "Смотреть, что будет дальше", "startSex", [[getOwnerID(), getRoleID(C_EXTRA1)], "pc", SexType.DefaultSex, {SexMod.DisableDynamicJoiners:true}])
 	else:
 		talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryFuckJealousOwnerLostOfferNope")
 		addInfluenceResist()
-		saynn("{npc1.He} {npc1.verb('grab')} the both of you..")
-		addButton("Continue", "See what happens next", "startSex", [getRoleID(C_EXTRA1), ["pc", getOwnerID()], SexType.DefaultSex, {SexMod.DisableDynamicJoiners:true}])
+		saynn("{npc1.He} {npc1.verb('grab')} вас обоих...")
+		addButton("Продолжить", "Смотреть, что будет дальше", "startSex", [getRoleID(C_EXTRA1), ["pc", getOwnerID()], SexType.DefaultSex, {SexMod.DisableDynamicJoiners:true}])
 
 func ownerLost_sexResult(_sexResult:SexEngineResult):
 	setState("afterSex")
 
 func afterSex():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER)})
-	saynn("The sex has ended!")
-	saynn("Your other owner finally leaves you alone.")
+	saynn("Секс окончен!")
+	saynn("Твой другой хозяин наконец-то оставляет тебя в покое.")
 	addContinue("endEvent")
 
 func saveData() -> Dictionary:

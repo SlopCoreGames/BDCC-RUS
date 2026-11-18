@@ -4,7 +4,7 @@ func _init():
 	id = "Kind"
 
 func getVisibleName() -> String:
-	return "Kind"
+	return "Добрый"
 
 func getVisibleDescription() -> String:
 	return "The owner is a bit less likely to do mean things to you. They might also decide to not punish you."

@@ -32,39 +32,39 @@ func getTraitType(_id:String):
 
 func getName(_id:String) -> String:
 	if(_id == "BodySlim"):
-		return "Slim body"
+		return "Худощавое тело"
 	if(_id == "BodyAverage"):
-		return "Average body"
+		return "Среднее телосложение"
 	if(_id == "BodyThick"):
-		return "Thick body"
+		return "Плотное тело"
 	if(_id == "Masculine"):
-		return "Masculine"
+		return "Мужское"
 	if(_id == "Androgynous"):
-		return "Androgynous"
+		return "Андрогинный"
 	if(_id == "Feminine"):
-		return "Feminine"
+		return "Женское"
 	if(_id == "BreastsSmall"):
-		return "Small breasts"
+		return "Маленькая грудь"
 	if(_id == "BreastsAverage"):
-		return "Average-sized breasts"
+		return "Средняя грудь"
 	if(_id == "BreastsHuge"):
-		return "Huge breasts"
+		return "Огромная грудь"
 	if(_id == "PenisSmall"):
-		return "Small penis"
+		return "Маленький член"
 	if(_id == "PenisAverage"):
-		return "Average-length penis"
+		return "Средний член"
 	if(_id == "PenisLong"):
-		return "Long penis"
+		return "Длинный член"
 	if(_id == "VaginaTight"):
-		return "Tight pussy"
+		return "Узкая киска"
 	if(_id == "VaginaLoose"):
-		return "Stretched pussy"
+		return "Растянутая киска"
 	if(_id == "AnusTight"):
-		return "Tight anus"
+		return "Узкий анус"
 	if(_id == "AnusLoose"):
-		return "Stretched anus"
+		return "Растянутый анус"
 	if(_id == "Pregnant"):
-		return "Pregnant"
+		return "Беременная"
 	
 	return "ERROR"
 

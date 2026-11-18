@@ -4,7 +4,7 @@ class_name QuestBase
 var id = "error"
 
 func getVisibleName():
-	return "Bad quest"
+	return "Плохой квест"
 
 func getProgress():
 	return ["Bad quest, let the developer know"]

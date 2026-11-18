@@ -4,7 +4,7 @@ func _init():
 	id = SexGoal.Cuddle
 
 func getVisibleName():
-	return "Cuddle"
+	return "Обнимашки"
 
 func isPossible(_sexEngine, _domInfo, _subInfo, _data):
 	if(_subInfo.isUnconscious()):

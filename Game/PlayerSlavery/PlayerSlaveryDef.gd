@@ -6,7 +6,7 @@ class_name PlayerSlaveryDef
 var id:String = ""
 
 func getVisibleName() -> String:
-	return "Error"
+	return "Ошибка"
 
 func getVisibleDesc() -> String:
 	return "Fill me"

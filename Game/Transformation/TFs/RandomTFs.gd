@@ -53,7 +53,7 @@ func start(_args:Dictionary):
 func getPillOptions() -> Dictionary:
 	return {
 		"howOftenTime": {
-			name = "Frequency",
+			name = "Частота",
 			desc = "How often should the changes happen",
 			value = 60*60*25,
 			values = [

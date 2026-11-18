@@ -4,7 +4,7 @@ func _init():
 	id = "icejogauni"
 	
 func getVisibleName():
-	return "Ice Jogauni"
+	return "Ледяные Йогауни"
 
 func isPlayable():
 	return false

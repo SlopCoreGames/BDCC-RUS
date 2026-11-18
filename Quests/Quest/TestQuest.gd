@@ -7,7 +7,7 @@ func _init():
 	id = "TestQuest"
 
 func getVisibleName():
-	return "Test Quest"
+	return "Тестовый квест"
 
 func getProgress():
 	var result = []

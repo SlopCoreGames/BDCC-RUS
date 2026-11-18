@@ -8,17 +8,17 @@ func onStart(_args:Array):
 
 func start():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER)})
-	saynn("Test!")
+	saynn("Тест!")
 	talk(C_OWNER, "Meow meow.")
 	#if(onlyOnce()):
 	#	sayAppend("[color=red]OW[/color]")
 	#	GM.pc.addPain(10)
 	addInfluence(0.01)
 	
-	addButton("Pet", "Pet the cat", "pet")
-	addButton("Pet 2", "Pet the cat but better", "setState", ["petted"])
-	addButton("Stop it!", "Stop the petting", "end")
-	addButton("Fight!", "Wagh", "startFight", ["risha"])
+	addButton("Питомец", "Погладить кошку", "pet")
+	addButton("Погладить 2", "Погладить кошку, но получше", "setState", ["petted"])
+	addButton("Прекрати!", "Перестать гладить", "end")
+	addButton("В бой!", "Вааах!", "startFight", ["risha"])
 
 func start_do(_id:String, _args:Array):
 	if(_id == "end"):
@@ -35,11 +35,11 @@ func start_fightResult(_didWin:bool):
 
 func weWon():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER), npcAction="kneel"})
-	saynn("YAY! YOU WON!")
-	addButton("Back", "Go back", "setState", ["start"])
+	saynn("УРА! ТЫ ПОБЕДИЛА!")
+	addButton("Назад", "Назад", "setState", ["start"])
 
 func petted():
-	saynn("You pet the cat.")
-	saynn("The cat purrs.")
+	saynn("Вы гладите кошку.")
+	saynn("Кошка мурлычет.")
 	
-	addButton("Back", "Go back", "setState", ["start"])
+	addButton("Назад", "Назад", "setState", ["start"])

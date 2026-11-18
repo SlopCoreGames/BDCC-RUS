@@ -4,7 +4,7 @@ func _init():
 	id = SexGoal.Tribadism
 
 func getVisibleName():
-	return "Tribadism"
+	return "Трибадизм"
 
 func isPossible(_sexEngine, _domInfo, _subInfo, _data):
 	if(!_domInfo.getChar().hasReachableVagina() || !_subInfo.getChar().hasReachableVagina()):

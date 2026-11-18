@@ -4,7 +4,7 @@ func _init():
 	id = SexGoal.TieUp
 
 func getVisibleName():
-	return "Tie up"
+	return "Связать"
 
 func generateData(_sexEngine, _domInfo, _subInfo):
 	return [

@@ -11,7 +11,7 @@ func _init():
 	pointsOnUnlock = 5
 
 func getName() -> String:
-	return "Increases length of penis"
+	return "Увеличивает длину пениса"
 
 func getPillName() -> String:
 	return "SuperShaft"
@@ -53,7 +53,7 @@ func getPillOptions() -> Dictionary:
 		lenArray.append([theLen, str(theLen)+"cm"])
 	return {
 		"target": {
-			name = "Target",
+			name = "Цель",
 			desc = "Whats the final penis length should be (This drug can only increase length).",
 			value = 18.0,
 			values = lenArray,

@@ -11,122 +11,122 @@ func _run():
 		playAnimation(StageScene.Hug, "idle", {pc="pc", npc="alexrynard"})
 		
 	if(state == ""):
-		saynn("As you approach Alex for a chat he comes over to you, looking a bit concerned.")
+		saynn("Когда ты подходишь к Алексу, чтобы поболтать, он сам направляется к тебе с немного обеспокоенным видом.")
 		
-		saynn("[say=alexrynard]Hey {pc.name}, Can I ask you something?[/say]")
+		saynn("[say=alexrynard]Эй, {pc.name}, можно тебя кое о чем спросить?[/say]")
 		
-		saynn("[say=pc]What is it?[/say]")
+		saynn("[say=pc]Что такое?[/say]")
 		
-		saynn("He looks down at your noticbly pregnant belly, mulling over his words...")
+		saynn("Он переводит взгляд на твой заметно округлившийся живот, подбирая слова...")
 		
-		saynn("He sighs.")
+		saynn("Он вздыхает.")
 		
-		saynn("[say=alexrynard]You're pregnant, clearly... and well...[/say]")
+		saynn("[say=alexrynard]Ты явно беременна... и, ну...[/say]")
 		
-		saynn("Alex leans in and almost whispers.")
+		saynn("Алекс наклоняется ближе и почти шепчет.")
 		
-		saynn("[say=alexrynard]...Would I happen to be the father?[/say]")
+		saynn("[say=alexrynard]...Неужели отцом оказался именно я?[/say]")
 		
-		saynn("[say=alexrynard]I've noticed it, and while I don't keep track of everything you do, I just, had to ask. Because I don't know for sure...[/say]")
+		saynn("[say=alexrynard]Я заметил это, и хотя я не слежу за каждым твоим шагом, я просто... должен был спросить. Потому что я не уверен до конца...[/say]")
 		
-		saynn("What do you tell him?")
+		saynn("Что ты ему ответишь?")
 		
-		addButton("Yes", ("(Lie) " if !isPregFromAlex else "")+"Say that he is the father", "AlexYesFather")
-		addButton("No", ("(Lie) " if isPregFromAlex else "")+"Say that he is not the father", "AlexNotFather")
+		addButton("Да", ("(Lie) " if !isPregFromAlex else "")+"Сказать, что он отец", "AlexYesFather")
+		addButton("No", ("(Lie) " if isPregFromAlex else "")+"Сказать, что он не отец", "AlexNotFather")
 		
 		
 	if(state == "AlexYesFather"):
 		playAnimation(StageScene.Hug, "hug", {pc="alexrynard", npc="pc"})
 		
 		if(isPregFromAlex):
-			saynn("Well, might as well tell Alex now.")
+			saynn("Ну, что ж, можно и сказать Алексу прямо сейчас.")
 		else:
-			saynn("He is not the father.. But you're curious how he would react..")
+			saynn("Он не отец... Но тебе любопытно, как он отреагирует...")
 		
-		saynn("[say=pc]Yes, You are gonna be a father...[/say]")
+		saynn("[say=pc]Да, ты станешь отцом...[/say]")
 		
-		saynn("Alex leans over on his workshop table when he hears what you told him, sighing")
+		saynn("Услышав твои слова, Алекс тяжело вздыхает и опирается на свой верстак")
 		
-		saynn("For a few but very slow minutes, Alex just stands there, seemingly lost in thought.")
+		saynn("На несколько бесконечно долгих минут Алекс просто замирает, словно погрузившись в свои мысли.")
 		
-		saynn("Unsure of what to do with yourself, you walk over next to him and put a hand on his shoulder.")
+		saynn("Не зная, как себя вести, ты подходишь к нему и кладешь руку ему на плечо.")
 		
-		saynn("[say=pc]You gonna be alright?[/say]")
+		saynn("[say=pc]Ты в порядке?[/say]")
 		
-		saynn("[say=alexrynard]Yeah, I just...[/say]")
+		saynn("[say=alexrynard]Да, я просто...[/say]")
 		
-		saynn("[say=alexrynard]Having kids in a nowhere space prison is incredibly reckless...[/say]")
+		saynn("[say=alexrynard]Рожать детей в тюрьме посреди чертовой пустоты — это невероятно безрассудно...[/say]")
 		
-		saynn("[say=alexrynard]It's already too late to prevent it but...[/say]")
+		saynn("[say=alexrynard]Предотвратить это уже слишком поздно, но...[/say]")
 		
-		saynn("Fidgeting, Alex shakes his head with a sigh.")
+		saynn("Нервно переминаясь с ноги на ногу, Алекс со вздохом качает головой.")
 		
-		saynn("[say=alexrynard]No, No. Shouldn't think like that. But still, I'd be a terrible father.[/say]")
+		saynn("[say=alexrynard]Нет, нет. Не стоит так думать. Но всё же, из меня вышел бы ужасный отец.[/say]")
 		
-		saynn("[say=pc]I won't even be able to see my kids...[/say]")
+		saynn("[say=pc]Я даже не смогу увидеть своих детей...[/say]")
 		
-		saynn("[say=alexrynard]I won't either. I have a criminal record remember? The nurses never let me into the nursery.[/say]")
+		saynn("[say=alexrynard]Я тоже. У меня ведь судимость, помнишь? Медсестры меня в детскую никогда не пускают.[/say]")
 		
-		saynn("[say=pc]So I guess that makes both of us.[/say]")
+		saynn("[say=pc]Значит, мы в одной лодке.[/say]")
 		
-		saynn("The two of you just sit in silence for a while. Alex holding his head in his hands as he thinks.")
+		saynn("Вы двое просто сидите в тишине какое-то время. Алекс обхватил голову руками, погрузившись в свои мысли.")
 		
-		saynn("[say=alexrynard]...I'd hate having to just give my kids away to the nursery... and then who knows where after that...[/say]")
+		saynn("[say=alexrynard]...Мне бы так не хотелось просто отдать своих детей в ясли... а там бог знает, куда их денут дальше...[/say]")
 		
-		saynn("Not quite sure to say, you just step over and hug the fox. Which he returns in kind.")
+		saynn("Не зная, что сказать, вы просто подходите и обнимаете лиса. Он отвечает вам взаимностью.")
 		
-		saynn("[say=alexrynard]Y'know, maybe it won't be the worst.[/say]")
+		saynn("[say=alexrynard]Знаешь, может, всё не так уж и плохо.[/say]")
 		
-		saynn("[say=alexrynard]While I won't be able to do much, I can still help you out. If you need support, you can come to me. How does that sound?[/say]")
+		saynn("[say=alexrynard]Пусть я и не смогу особо помочь, но я всё равно буду рядом. Если тебе понадобится поддержка — просто приходи ко мне. Как тебе такая идея?[/say]")
 		
-		saynn("[say=pc]I can work with that...[/say]")
+		saynn("[say=pc]Это уже что-то...[/say]")
 		
-		saynn("The two of you just embrace each other as the mood settles back down.")
+		saynn("Вы просто обнимаете друг друга, пока напряжение постепенно спадает.")
 		
-		saynn("Eventually though, Alex breaks away back to his workshop, the offer to support you still in your mind...")
+		saynn("В конце концов Алекс всё же возвращается в свою мастерскую, а предложение поддержать тебя всё ещё крутится у него в голове...")
 		
-		addButton("Continue", "Continue on your way", "endthescene")
+		addButton("Продолжить", "Продолжить путь", "endthescene")
 		
 	
 	if(state == "AlexNotFather"):
 		if(isPregFromAlex):
-			saynn("He is the father for sure.. but you decide to go easy on the poor foxy.")
+			saynn("Он определенно отец... но ты решаешь не слишком давить на бедную лисичку.")
 		else:
-			saynn("You decide to tell Alex the truth.")
+			saynn("Ты решаешь открыть Алексу всю правду.")
 		
-		saynn("[say=pc]No, you're not.[/say]")
+		saynn("[say=pc]Нет, не отец.[/say]")
 		
-		saynn("The fox looks instantly relieved.")
+		saynn("Лисичка мгновенно выглядит так, будто у неё гора с плеч свалилась.")
 		
-		saynn("[say=alexrynard]Oh that's good to hear. I don't know about you, but me, personally, having children while in prison just seems reckless. I've had that arguement enough times already...[/say]")
+		saynn("[say=alexrynard]О, это радует. Не знаю, как ты, но лично мне кажется, что заводить детей в тюрьме — это верх безрассудства. Я уже не раз выслушивал подобные споры...[/say]")
 		
-		saynn("[say=alexrynard]Not like the nursery would let me in anyway with my criminal record...[/say]")
+		saynn("[say=alexrynard]Всё равно бы меня в детскую не пустили с моей-то судимостью...[/say]")
 		
-		saynn("Alex lets out a long sigh.")
+		saynn("Алекс тяжело вздыхает.")
 		
-		saynn("[say=alexrynard]Who is the father anyway... actually, no, don't answer that. How are you holding up?[/say]")
+		saynn("[say=alexrynard]Кто там вообще отец... хотя нет, не отвечай. Как ты вообще держишься?[/say]")
 		
-		saynn("Giving your own gravid body a look, you put your hands over top of it before looking back up at Alex.")
+		saynn("Окинув взглядом свое раздувшееся от беременности тело, ты кладешь руки на живот, а затем снова смотришь на Алекса.")
 		
-		saynn("[say=pc]I could be better.[/say]")
+		saynn("[say=pc]Могло быть и лучше.[/say]")
 		
-		saynn("[say=alexrynard]Yeah... I imagine carrying that around isnt fun.[/say]")
+		saynn("[say=alexrynard]Да уж... представляю, каково это — таскать на себе такую махину.[/say]")
 		
-		saynn("[say=alexrynard]Actually...[/say]")
+		saynn("[say=alexrynard]Вообще-то...[/say]")
 		
-		saynn("[say=alexrynard]I wasn't going to bring it up, but ever since I saw you start showing, I've been bracing myself for this moment just incase I was the father.[/say]")
+		saynn("[say=alexrynard]Я не собирался поднимать эту тему, но с тех пор, как заметил, что у тебя начал проявляться живот, я всё подсознательно готовился к этому моменту — на случай, если отцом окажусь я.[/say]")
 		
-		saynn("[say=alexrynard]And well, since we are at least friends, I wouldn't mind supporting you anyway I can... If you want it, though.[/say]")
+		saynn("[say=alexrynard]И, ну, раз уж мы хотя бы друзья, я был бы не прочь поддержать тебя любым способом... если ты сама этого захочешь.[/say]")
 		
-		saynn("Well, better to have the option at least. Could mean more cuddles with Alex. That's always a good thing.")
+		saynn("Что ж, по крайней мере, теперь есть выбор. Это может означать больше обнимашек с Алексом. А это всегда к лучшему.")
 		
-		saynn("[say=pc]I'll see.[/say]")
+		saynn("[say=pc]Посмотрим.[/say]")
 		
-		saynn("Alex nods and heads back to his workshop...")
+		saynn("Алекс кивает и возвращается в свою мастерскую...")
 		
-		saynn("Something to think about.")
+		saynn("Есть над чем подумать.")
 
-		addButton("Continue", "Continue on your way", "endthescene")
+		addButton("Продолжить", "Продолжить путь", "endthescene")
 
 
 
@@ -139,13 +139,13 @@ func _run():
 #
 #		saynn("[By picking this option, It'll disable Alex's expanded pregnancy content for your current character's pregnancy and any future ones they might have.]")
 #
-#		addButton("Go back", "Back to the yes or no", "")
-#		addButton("Can't be", "Commit", "AlexCantBeFather")
+#		addButton("Назад", "Вернуться к выбору «да» или «нет»", "")
+#		addButton("Быть того не может", "Подтвердить", "AlexCantBeFather")
 		
 #
-#		saynn("Oh sorry, I just saw you were and had a panic, what did you want to talk about")
+#		saynn("Ой, прости, я просто увидел тебя и запаниковал. О чем ты хотел(а) поговорить?")
 #
-#		addButton("Continue", "Continue on your way", "endthescene")
+#		addButton("Продолжить", "Продолжить путь", "endthescene")
 
 func _react(_action: String, _args):
 

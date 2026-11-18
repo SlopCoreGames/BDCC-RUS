@@ -5,7 +5,7 @@ var id = "error"
 var dynamicChangesPersonalityAffectors:Dictionary = {}
 
 func getVisibleName():
-	return "Error"
+	return "Ошибка"
 
 func getGoals(_sexEngine, _domFetishHolder, _dom, _sub):
 	return []

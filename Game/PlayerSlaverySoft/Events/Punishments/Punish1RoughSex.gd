@@ -18,7 +18,7 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 func start():
 	playAnimation(StageScene.SexLowDoggy, "tease", {pc=getOwnerID()})
 	sayPretext()
-	saynn("{npc.name} grabs and pins you into the floor!")
+	saynn("{npc.name} хватает тебя и вжимает в пол!")
 	talkModularOwnerToPC("SoftSlaveryPunishRoughSex")
 	
 	var theChar = GlobalRegistry.getCharacter(getOwnerID())
@@ -35,15 +35,15 @@ func start_sexResult(_sex:SexEngineResult):
 
 func afterSex():
 	playAnimation(StageScene.SexStart, "start", {pc=getOwnerID()})
-	saynn("The rough sex has ended!")
+	saynn("Грубый секс окончен!")
 	talkModularOwnerToPC("SoftSlaveryPunishRoughSexEnded")
-	saynn("Looks like the punishment is over..")
+	saynn("Похоже, наказание подошло к концу...")
 	addContinue("endEvent")
 
 func pcWon():
 	playAnimation(StageScene.Duo, "stand", {npc=getOwnerID(), npcAction="defeat"})
-	saynn("You managed to fight back against your owner!")
+	saynn("Тебе удалось дать отпор своему хозяину!")
 	addInfluenceResist()
 	talkModularOwnerToPC("SoftSlaveryPunishRoughSexPCWon") #Ugh.. I'm not done with you
-	saynn("Looks like the punishment is over..")
+	saynn("Похоже, наказание подошло к концу...")
 	addContinue("endEvent")

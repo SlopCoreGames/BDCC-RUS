@@ -173,7 +173,7 @@ func startActivity(_args):
 		if(restraintData == null):
 			return
 		
-		var text = "{dom.You} {dom.youVerb('help')} to take off {sub.yourHis} "+item.getVisibleName()+"."
+		var text = "{dom.You} {dom.youVerb('help')} снять {sub.yourHis}"+item.getVisibleName()+"."
 		
 		var struggleText = restraintData.getRemoveMessage()
 		if(struggleText != ""):

@@ -29,7 +29,7 @@ var buttonPriority = 100
 var rewardHint = 0
 
 func getVisibleName():
-	return "CHANGE ME"
+	return "ИЗМЕНИ МЕНЯ"
 
 func getVisibleDesc():
 	return "CHANGE MY DESCRIPTION"
@@ -132,7 +132,7 @@ func fitsAsExtraSlave(_role, _charID):
 
 func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	return {
-		text = "You did something with "+str(_slaveID)+"!",
+		text = "Ты что-то сделал с "+str(_slaveID)+"!",
 	}
 
 func doActionSimpleFinal(_slaveID, _extraSlavesIDs = {}):

@@ -6,7 +6,7 @@ func _init():
 	id = "BusyBeingHelpedBy"
 	
 func getVisibleName():
-	return "Busy being helped"
+	return "Занята тем, что ей помогают @@B*@@"
 
 func onStart(_args = []):
 	otherSlaveID = _args[0]

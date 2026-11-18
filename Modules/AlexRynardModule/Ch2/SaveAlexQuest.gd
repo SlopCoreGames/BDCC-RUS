@@ -4,7 +4,7 @@ func _init():
 	id = "SaveAlexQuest"
 
 func getVisibleName():
-	return "Trust Issues"
+	return "Проблемы с доверием"
 
 func getProgress():
 	var result = []

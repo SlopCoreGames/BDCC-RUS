@@ -4,7 +4,7 @@ func _init():
 	id = SexGoal.AddTallymarks
 
 func getVisibleName():
-	return "Add tallymarks"
+	return "Добавить зарубки"
 
 func isPossible(_sexEngine, _domInfo, _subInfo, _data):
 	if(_domInfo.getChar().hasBoundArms() || _domInfo.getChar().hasBlockedHands()):

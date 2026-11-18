@@ -30,70 +30,70 @@ func _run():
 		playAnimation(StageScene.PuppyDuo, "stand", {npc=npcID, flipNPC=true, npcBodyState={naked=true, leashedBy="pc"}})
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 
-		saynn("You bring your pet to the canteen, catching a fair amount of eyes from the inmates around.")
+		saynn("Вы приводите своего питомца в столовую, привлекая немало взглядов заключенных вокруг.")
 		
-		saynn("What do you want to get for {npc.name}? You notice that the kitchen also offers literal dog food.. but only for animals and at a price of 2 credits.. Your pet is an animal, sort of.")
+		saynn("Что вы хотите взять для {npc.name}? Вы замечаете, что на кухне также предлагают настоящий сухой корм... но только для животных и по цене 2 кредита... Ваш питомец, в каком-то смысле, тоже животное.")
 		
-		addButton("Inmate food", "Free option that is available for everyone", "feed_inmatefood")
-		addButtonWithChecks("Dog food", "Pay 2 credits to get a special treat for your pet", "feed_dogfood", [], [[ButtonChecks.HasCredits, 2]])
+		addButton("Еда для заключенных", "Бесплатный вариант, доступный всем", "feed_inmatefood")
+		addButtonWithChecks("Собачий корм", "Заплатить 2 кредита, чтобы купить питомцу особое лакомство", "feed_dogfood", [], [[ButtonChecks.HasCredits, 2]])
 		if(npcSlavery.getSlaveSkill(SlaveType.Pet) >= 10):
-			addButton("Puppy treats", "Maybe you can get some free treats?", "feed_puppytreats")
+			addButton("Вкусняшки для щенков", "Может, получится раздобыть бесплатные вкусняшки?", "feed_puppytreats")
 		else:
-			addDisabledButton("Puppy treats", "Pet skill A- or higher required")
+			addDisabledButton("Вкусняшки для щенков", "Требуется навык питомца уровня A- или выше")
 	
 	if(state == "feed_inmatefood"):
 		playAnimation(StageScene.PuppyDuo, "sit", {npc=npcID, npcAction="sad", flipNPC=true, npcBodyState={naked=true, leashedBy="pc"}})
 		
-		saynn("You decide not to be too fancy and just order some usual inmate food for your pet.")
+		saynn("Вы решаете не шиковать и заказываете своему питомцу обычную тюремную еду.")
 		
-		saynn("The cook sees who you have on a leash and decides to switch the normal tray with a plastic pet bowl before filling it full of gray tasteless-looking paste. At least it’s free, hey.")
+		saynn("Повар видит, кто у вас на поводке, и решает заменить стандартный поднос на пластиковую миску для животных, прежде чем наполнить её серой безвкусной пастой. Ну, по крайней мере, это бесплатно.")
 		
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		if(npcSlavery.getSlaveSkill(SlaveType.Pet) < 11):
-			saynn("You take a seat on one of the benches and put the bowl on the floor. Your puppy approaches it and awkwardly plops {npc.his} face into it. While {npc.he} {npc.isAre} busy with that, you just admire the view.")
+			saynn("Вы садитесь на одну из скамей и ставите миску на пол. Ваш щенок подходит к ней и неловко роняет {npc.his} лицо прямо в еду. Пока {npc.he} {npc.isAre} занята этим, вы просто любуетесь видом.")
 		
-			saynn("The paste is clearly not a delicacy.. but it’s enough to satisfy the hunger. Your pet seems slightly more happy.")
+			saynn("Паста явно не деликатес... но её достаточно, чтобы утолить голод. Ваш питомец кажется чуть более довольным.")
 		else:
-			saynn("You take a seat on one of the benches and put the bowl on the floor. Your puppy approaches it and then carefully lowers {npc.himself} onto the floor, {npc.his} chin resting on the bowl. While {npc.he} {npc.isAre} busy with that, you just admire the view.")
+			saynn("Вы садитесь на одну из скамей и ставите миску на пол. Ваш щенок подходит к ней, а затем осторожно опускает {npc.himself} на пол, {npc.his} подбородок на край миски. Пока {npc.he} {npc.isAre} занята этим, вы просто любуетесь видом.")
 		
-			saynn("The paste is clearly not a delicacy.. but it’s enough to satisfy the hunger. Your pet seems happy. {npc.He} even wiggles {npc.his} butt a bit.")
-		addButton("Continue", "See what happens next", "endthescene")
+			saynn("Паста явно не деликатес... но её достаточно, чтобы утолить голод. Ваш питомец кажется счастливым. {npc.He} даже слегка виляет {npc.his} задницей.")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		
 	if(state == "feed_dogfood"):
 		playAnimation(StageScene.PuppyDuo, "sit", {npc=npcID, npcAction="sad", flipNPC=true, npcBodyState={naked=true, leashedBy="pc"}})
 		
-		saynn("You decide to pay some credits and get a pet bowl filled to the brim with dog food. Honestly.. it’s not even that bad compared to the paste that everyone else is getting, there are even some meat pieces there and there.")
+		saynn("Вы решаете потратить немного кредитов и берете миску, наполненную до краев собачьим кормом. Честно говоря... это даже не так уж плохо по сравнению с пастой, которую едят все остальные — там даже попадаются кусочки мяса.")
 		
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		if(npcSlavery.getSlaveSkill(SlaveType.Pet) < 12):
-			saynn("You take a seat on one of the benches and put the bowl on the floor. Your pet sees the contents.. and looks at you with sad eyes.")
+			saynn("Вы садитесь на одну из скамей и ставите миску на пол. Ваш питомец видит содержимое... и смотрит на вас печальными глазами.")
 			
-			saynn("[say=pc]Hey, c’mon. Maybe you will like it.[/say]")
+			saynn("[say=pc]Эй, да ладно тебе. Может, тебе понравится.[/say]")
 			
-			saynn("{npc.He} sighs and sniffs the dog food.. You can hear {npc.him} swallowing saliva audibly. So humiliating.")
+			saynn("{npc.He} вздыхает и принюхивается к корму... Вы отчетливо слышите, как {npc.him} сглатывает слюну. Какое унижение.")
 			
-			saynn("Looks like the hunger has won though, your pet digs {npc.his} face into the bowl and starts nomming the food. The more {npc.he} does it, the more eagerly {npc.he} crunches on it. Almost makes you feel envious.")
+			saynn("Похоже, голод взял верх: твой питомец зарывается {npc.his} мордой в миску и начинает уплетать еду. Чем больше {npc.he} чавкает, тем охотнее {npc.he} хрустит кормом. Тебя даже начинает пробирать зависть.")
 			
-			saynn("Your pet leaves the bowl squeaky-clean. Nice.")
+			saynn("Твой питомец оставляет миску идеально чистой. Красавчик.")
 		else:
-			saynn("You take a seat on one of the benches and put the bowl on the floor. Your pet sees its contents.. and eagerly digs {npc.his} face into it!")
+			saynn("Ты садишься на одну из скамеек и ставишь миску на пол. Твой питомец видит содержимое... и с энтузиазмом зарывается в него {npc.his} мордой!")
 			
-			saynn("You can hear eager crunching noises and see {npc.his} rear wiggling happily. After leaving the bowl squeaky-clean, your pet walks up to you and nuzzles your leg thankfully.")
+			saynn("Слышно азартное хрустение, и ты видишь, как от счастья виляет {npc.his} задницей. Оставив миску идеально чистой, твой питомец подходит к тебе и благодарно тычется носом в твою ногу.")
 			
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		
 	if(state == "feed_puppytreats"):
 		playAnimation(StageScene.PuppyDuo, "stand", {npc=npcID, npcAction="sit", flipNPC=true, npcBodyState={naked=true, leashedBy="pc"}})
 		
-		saynn("You wonder if you can get something better than inmate food for free. You get your pet’s attention and tell {npc.him} to try something.")
+		saynn("Ты гадаешь, можно ли раздобыть что-нибудь получше тюремной баланды на халяву. Ты привлекаешь внимание своего питомца и велишь {npc.him} попробовать кое-что.")
 		
-		saynn("Your pet nods eagerly and barks to get the cook’s attention. Then {npc.he} swiftly pushes {npc.himself} off the floor to sit up, before putting on {npc.his} best begging eyes.")
+		saynn("Твой питомец с энтузиазмом кивает и лает, чтобы привлечь внимание повара. Затем {npc.he} ловко отталкивает {npc.himself} от пола, чтобы сесть, и включает {npc.his} самый умоляющий взгляд.")
 		
-		saynn("The cook’s stern gaze softens as he sees your pet being all cute and obedient. It doesn’t seem to be enough so your pet also wiggles {npc.his} front paws before rolling around a few times.")
+		saynn("Суровый взгляд повара смягчается, когда он видит, какой твой питомец милый и послушный. Но этого мало, поэтому твой питомец еще и дрыгает {npc.his} передними лапами, а затем пару раз перекатывается по полу.")
 		
-		saynn("And soon, the cook gives up and throws your puppy a few puppy treats! Your pet eagerly scoops them up and starts happily crunching on them. What a good {npc.boy}.")
+		saynn("И вскоре повар сдается и кидает твоему щенку несколько лакомств! Твой питомец жадно подхватывает их и начинает счастливо хрустеть. Какой хороший {npc.boy}.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

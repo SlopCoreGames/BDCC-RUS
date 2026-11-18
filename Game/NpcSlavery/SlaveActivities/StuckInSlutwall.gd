@@ -4,7 +4,7 @@ func _init():
 	id = "StuckInSlutwall"
 	
 func getVisibleName():
-	return "Stuck in a slutwall"
+	return "Застрявшая в шлюзовой стене @@B*@@"
 
 func getActivityText():
 	return "{npc.name} is currently stuck in a slutwall so {npc.he} {npc.isAre} not here."

@@ -181,7 +181,7 @@ func onAction(_auction, _action:AuctionAction, _result:Dictionary):
 func say(theText:String):
 	var theAuction = getAuction()
 	if(theAuction != null):
-		theAuction.saynn("[say="+bidderID+"]"+theText+"[/say]")
+		theAuction.saynn("[say=\""+bidderID+"]"+theText+"[/say]")
 
 func sayn(theText:String):
 	var theAuction = getAuction()
@@ -359,7 +359,7 @@ func saveData():
 
 func loadData(_data):
 	index = SAVE.loadVar(_data, "index", 0)
-	name = "Bidder "+str(index + 1)
+	name = "Участник торгов"+str(index + 1)
 	bidderID = "bidder"+str(index + 1)
 	desire = SAVE.loadVar(_data, "desire", 0.0)
 	var theLikes = SAVE.loadVar(_data, "likes", {})

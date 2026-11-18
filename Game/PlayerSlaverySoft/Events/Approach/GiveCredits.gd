@@ -16,15 +16,15 @@ func start():
 		creditsAmount = RNG.randi_range(5, 10)
 	
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER)})
-	saynn("Your owner approaches you, {npc.his} eyes shine with a need for something.")
+	saynn("Твой хозяин подходит к тебе, {npc.his} глаза светятся жаждой чего-то.")
 	talkOwner(getModularDialogue(C_OWNER, C_PC, "SoftSlaveryGiveCreditsStart").replace("<CREDITS>", str(creditsAmount)+" credits"))
 	
 	if(GM.pc.getCredits() >= creditsAmount):
-		addButton("Obey", "Allow them to take your credits", "obey")
+		addButton("Повиноваться", "Позволить им забрать твои кредиты", "obey")
 	else:
-		addDisabledButton("Obey", "You don't have enough!")
-	addButton("Resist", "They are not gonna take your credits", "resist")
-	addButton("I'm short", "Say that you don't have enough", "setState", ["amShort"])
+		addDisabledButton("Повиноваться", "Тебе не хватает!")
+	addButton("Сопротивляться", "Они не собираются забирать твои кредиты", "resist")
+	addButton("Мне не хватает", "Сказать, что у тебя недостаточно кредитов", "setState", ["amShort"])
 
 func start_do(_id:String, _args:Array):
 	if(_id == "obey"):
@@ -40,18 +40,18 @@ func start_eventResult(_event, _id:String, _args:Array):
 	setState("obey")
 
 func obey():
-	saynn("You obey and let your owner take your credits.")
+	saynn("Ты послушно позволяешь хозяину забрать твои кредиты.")
 	talkModularOwnerToPC("SoftSlaveryGiveCreditsTake")
 	addInfluenceObey()
 	addContinue("endEvent")
 
 func amShort():
-	saynn("You tell your owner that you're short on credits.")
+	saynn("Ты говоришь хозяину, что у тебя не хватает кредитов.")
 	talkModularOwnerToPC("SoftSlaveryGiveCreditsShort")
-	saynn("Looks {npc.he} {npc.isAre} gonna punish you.")
+	saynn("Похоже, {npc.he} {npc.isAre} собирается тебя наказать.")
 	
-	addButton("Accept", "Let the punishment happen", "accept")
-	addButton("Resist", "Resist the punishment", "resist")
+	addButton("Принять", "Принять наказание", "accept")
+	addButton("Сопротивляться", "Сопротивляться наказанию", "resist")
 
 func amShort_do(_id:String, _args:Array):
 	if(_id == "accept"):

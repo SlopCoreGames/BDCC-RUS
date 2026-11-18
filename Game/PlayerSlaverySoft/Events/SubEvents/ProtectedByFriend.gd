@@ -25,13 +25,13 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 func start():
 	playAnimation(StageScene.Duo, "stand", {pc=getOwnerID(), npc=getRoleID(C_EXTRA1)})
 	sayPretext()
-	saynn("One of your friends suddenly shows up!")
+	saynn("Внезапно появляется один из твоих друзей!")
 	talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryProtectedByFriendStart") #"HEY! WHAT ARE YOU DOING WITH {pc.name}?"
 	talkModular(C_OWNER, C_EXTRA1, "SoftSlaveryProtectedByFriendResponse") #"It's none of your business"
-	saynn("Looks like your friend wants to try to protect you..")
+	saynn("Похоже, твой друг хочет попытаться защитить тебя...")
 	
-	addButton("Watch", "Let them fight", "fight")
-	addButton("It's okay", "Tell your friend that everything is fine", "itsokay")
+	addButton("Смотреть", "Пусть дерутся", "fight")
+	addButton("Все в порядке", "Сказать другу, что всё хорошо", "itsokay")
 
 func start_do(_id:String, _args:Array):
 	if(_id == "fight"):
@@ -42,7 +42,7 @@ func start_do(_id:String, _args:Array):
 		setState("allgood")
 
 func allgood():
-	saynn("You tell your friend {npc1.name} that everything is okay.")
+	saynn("Ты говоришь своему другу {npc1.name}, что всё в порядке.")
 	talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryProtectedByFriendAllGoodResp") #Alright. Whatever then
 	addContinue("endEvent")
 
@@ -56,7 +56,7 @@ func start_eventResult(_event, _tag:String, _args:Array):
 func ownerWon():
 	playAnimation(StageScene.Duo, "stand", {pc=getOwnerID(), npcAction="kneel", npc=getRoleID(C_EXTRA1)})
 	
-	saynn("Your owner won! You friend is unable to continue fighting.")
+	saynn("Твой хозяин победил! Твой друг не в силах продолжать бой.")
 	talkModular(C_OWNER, C_EXTRA1, "SoftSlaveryProtectedByFriendLost") #Now go away while you still can
 	addInfluenceObey(0.3)
 	if(onlyOnce()):
@@ -66,7 +66,7 @@ func ownerWon():
 func ownerLost():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_EXTRA1)})
 	
-	saynn("Your friend manages to save you! And so you thank {npc1.him} for the efforts.")
+	saynn("Твоему другу удается спасти тебя! И ты благодаришь {npc1.him} за старания.")
 	talkModular(C_EXTRA1, C_PC, "SoftSlaveryProtectedByFriendWonThank") # You are welcome
 	addInfluenceResist(0.5)
 	addContinue("endEvent")

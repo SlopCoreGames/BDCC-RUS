@@ -9,7 +9,7 @@ func registerTriggers(es):
 func run(_triggerID, _args):
 	if(getFlag("AlexRynardModule.ch2GotRektHappened") && !getFlag("AlexRynardModule.ch2CheckAlexSceneHappened")):
 		if(GM.main.getDays() <= getFlag("AlexRynardModule.ch2GotRektDay", -1)):
-			addDisabledButton("Alex", "Come back another day to check on Alex")
+			addDisabledButton("Алекс", "Вернись в другой день, чтобы навестить Алекса")
 		else:
 			addButtonUnlessLate("Alex", "Ask about Alex", "startElizaScene")
 	

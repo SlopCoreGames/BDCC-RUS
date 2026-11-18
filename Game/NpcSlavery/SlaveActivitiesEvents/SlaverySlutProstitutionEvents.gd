@@ -43,8 +43,8 @@ func run(_triggerID, _args):
 	
 	var randomSlave = RNG.pick(allWorkingSluts)
 	
-	saynn("You notice one of your working sluts, "+randomSlave.getName()+".")
-	addButton(randomSlave.getName()+" (slut)", "See what your slut is doing", "lookslut", [randomSlave.getID()])
+	saynn("Вы замечаете одну из своих рабочих шлюх, "+randomSlave.getName()+".")
+	addButton(randomSlave.getName()+" (шлюха)", "Посмотреть, чем занята ваша шлюха", "lookslut", [randomSlave.getID()])
 	
 func onButton(_method, _args):
 	if(_method == "lookslut"):

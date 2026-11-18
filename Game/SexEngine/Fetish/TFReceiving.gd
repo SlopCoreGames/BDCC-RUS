@@ -8,7 +8,7 @@ func _init():
 	}
 
 func getVisibleName():
-	return "TF subject"
+	return "Объект ТФ"
 
 func getGoals(_sexEngine, _domFetishHolder, _dom, _sub):
 	var possible = []

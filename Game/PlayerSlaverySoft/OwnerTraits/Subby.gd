@@ -4,7 +4,7 @@ func _init():
 	id = "Subby"
 
 func getVisibleName() -> String:
-	return "Subby"
+	return "Сабби"
 
 func getVisibleDescription() -> String:
 	return "The owner can occasionally submit to you. They will also not have an 'Aura of dominance' during fights."

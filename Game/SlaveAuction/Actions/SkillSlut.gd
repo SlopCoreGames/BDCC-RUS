@@ -7,7 +7,7 @@ func getActionType():
 	return AuctionActionType.Mind
 
 func getName() -> String:
-	return "Slut skill"
+	return "Навык шлюхи"
 
 func getButtonDesc() -> String:
 	return "Tell the bidders about the slave’s extensive training as a Slut.\n\n[b]Might[/b] reveal 1 personality preference of each bidder."

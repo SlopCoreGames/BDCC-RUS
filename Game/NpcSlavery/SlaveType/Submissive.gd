@@ -4,7 +4,7 @@ func _init():
 	id = SlaveType.Submissive
 
 func getVisibleName():
-	return "Submissive"
+	return "Покорная"
 
 func getVisibleDesc():
 	return "Turn your slave into an obedient sub and get an ability to make them serve you"
@@ -55,27 +55,27 @@ func getUnlockHints(_npc):
 	return [
 		{
 			unlocksAt = 2,
-			name = "Bondage helper",
-			text = "Your sub can now help unlock one of your restraints per day",
+			name = "Помощница в связывании",
+			text = "Теперь ваша субка может раз в день помогать освобождаться от одних ваших оков",
 		},
 		{
 			unlocksAt = 4,
-			name = "Showering the owner",
-			text = "Your sub can now shower you",
+			name = "Омовение хозяина",
+			text = "Теперь ваша субка может мыть вас в душе",
 		},
 		{
 			unlocksAt = 7,
-			name = "Massage",
-			text = "Your sub can now perform a special massage on you which feels almost as a good yoga exercise",
+			name = "Массаж",
+			text = "Теперь ваша субка может делать вам особый массаж, который ощущается почти как отличная йога",
 		},
 		{
 			unlocksAt = 10,
-			name = "Better showering",
-			text = "Your sub can clean you inside too now and take care of your lustness",
+			name = "Улучшенное омовение",
+			text = "Теперь ваша субка может очищать вас и изнутри, утоляя вашу похоть",
 		},
 		{
 			unlocksAt = 15,
-			name = "Slave helper",
-			text = "You can now order your sub to give another one of your slaves a shower or help bring them to the nursery for a child birth",
+			name = "Помощник рабыни @@B*@@",
+			text = "Теперь вы можете приказать своей субке искупать другую вашу рабыню или помочь проводить её в детскую для родов",
 		},
 	]

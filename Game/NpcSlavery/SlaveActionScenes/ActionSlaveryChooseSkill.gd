@@ -20,12 +20,12 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc=npcID, npcBodyState={leashedBy="pc"}})
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		
-		sayn("{npc.name}'s current slave level is "+str(npcSlavery.getLevel()))
-		saynn("For each 5 slave levels {npc.he} can get a new skill/specialization.")
+		sayn("Текущий уровень рабыни {npc.name}: "+str(npcSlavery.getLevel()))
+		saynn("За каждые 5 уровней рабыни {npc.he} может получить новый навык или специализацию.")
 		
-		saynn("Your slave's current main specialization is "+npcSlavery.getCurrentSkillName()+". This is the skill that will be trained by you.")
+		saynn("Текущая основная специализация вашей рабыни: "+npcSlavery.getCurrentSkillName()+". Это навык, который будете тренировать вы.")
 		
-		sayn("Current skills of your slave:")
+		sayn("Текущие навыки вашей рабыни:")
 		for slaveType in npcSlavery.slaveSpecializations:
 			var slaveTypeObj:SlaveTypeBase = GlobalRegistry.getSlaveType(slaveType)
 			if(slaveTypeObj == null):
@@ -33,22 +33,22 @@ func _run():
 			sayn(slaveTypeObj.getVisibleName()+": "+npcSlavery.rankToLetter(npcSlavery.slaveSpecializations[slaveType]))
 		
 		if(npcSlavery.slaveSpecializations.keys().size() > 1):
-			addButton("Main skill", "Pick your slave's main specialization", "pick_main_menu")
+			addButton("Основной навык", "Выберите основную специализацию вашей рабыни", "pick_main_menu")
 		else:
-			addDisabledButton("Main skill", "Your slave only has a single specialization currently")
+			addDisabledButton("Основной навык", "У вашей рабыни сейчас только одна специализация")
 			
 		if(npcSlavery.canLearnNewSkill()):
 			if(npcSlavery.canLearnNewSkillAndHasAvailable()):
-				addButton("Learn new", "Add a new specialization/skill to your slave!", "learn_new_menu")
+				addButton("Изучить новое", "Добавьте новую специализацию/навык вашей рабыне!", "learn_new_menu")
 			else:
-				addDisabledButton("Learn new", "Your slave already has all the skills possible!")
+				addDisabledButton("Изучить новое", "У вашей рабыни уже есть все возможные навыки!")
 		else:
-			addDisabledButton("Learn new", "You can make your slave learn a new specialization/skill every 5 slave levels")
-		addButton("Done", "Enough tinkering", "endthescene")
+			addDisabledButton("Изучить новое", "Вы можете обучать рабыню новой специализации/навыку каждые 5 уровней рабыни")
+		addButton("Готово", "Достаточно копания", "endthescene")
 
 	if(state == "learn_new_menu"):
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
-		saynn("Which skill do you want to give to your slave? You will be able to train any skill that your slave has.")
+		saynn("Какой навык вы хотите дать своей рабыне? Вы сможете тренировать любой навык, который уже есть у вашей рабыни.")
 		
 		for slaveType in GlobalRegistry.getSlaveTypes():
 			if(npcSlavery.hasSkill(slaveType)):
@@ -57,30 +57,30 @@ func _run():
 			if(slaveTypeObj == null):
 				continue
 			if(!slaveTypeObj.canTeach(npc)):
-				addDisabledButton(slaveTypeObj.getVisibleName(), "[color=red]Incompatible with this slave[/color]\n"+slaveTypeObj.getVisibleDesc())
+				addDisabledButton(slaveTypeObj.getVisibleName(), "[color=red]Несовместимо с этой рабыней[/color]\n"+slaveTypeObj.getVisibleDesc())
 				continue
 			if(npcSlavery.getLevel() < slaveTypeObj.getMinimalSlaveLevel()):
-				addDisabledButton(slaveTypeObj.getVisibleName(), "[color=red]Minimum slave level required: "+str(slaveTypeObj.getMinimalSlaveLevel())+"[/color]\n"+slaveTypeObj.getVisibleDesc())
+				addDisabledButton(slaveTypeObj.getVisibleName(), "[color=red]Требуемый минимальный уровень рабыни: "+str(slaveTypeObj.getMinimalSlaveLevel())+"[/color]\n"+slaveTypeObj.getVisibleDesc())
 				continue
 			addButton(slaveTypeObj.getVisibleName(), slaveTypeObj.getVisibleDesc(), "learn_new", [slaveType])
 
-		addButton("BACK", "You changed your mind", "")
+		addButton("BACK", "Вы передумали", "")
 
 	if(state == "pick_main_menu"):
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
-		saynn("Pick your slave's main specialization.")
+		saynn("Выберите основную специализацию вашей рабыни.")
 		
-		saynn("Your slave's current main specialization is "+npcSlavery.getCurrentSkillName()+". You will train your slave's selected main specialization.")
+		saynn("Текущая основная специализация вашей рабыни: "+npcSlavery.getCurrentSkillName()+". Вы будете тренировать выбранную основную специализацию рабыни.")
 		
-		sayn("Current skills of your slave:")
+		sayn("Текущие навыки вашей рабыни:")
 		for slaveType in npcSlavery.slaveSpecializations:
 			var slaveTypeObj:SlaveTypeBase = GlobalRegistry.getSlaveType(slaveType)
 			if(slaveTypeObj == null):
 				continue
-			addButton(slaveTypeObj.getVisibleName(), "Pick this one", "pick_main", [slaveType])
+			addButton(slaveTypeObj.getVisibleName(), "Выбрать это", "pick_main", [slaveType])
 			sayn(slaveTypeObj.getVisibleName()+": "+npcSlavery.rankToLetter(npcSlavery.slaveSpecializations[slaveType]))
 		
-		addButton("Back", "Go back", "")
+		addButton("Назад", "Назад", "")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

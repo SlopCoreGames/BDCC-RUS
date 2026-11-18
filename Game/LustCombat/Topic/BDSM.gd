@@ -40,20 +40,20 @@ func getTopicValue(_topicID, _pc):
 
 func getVisibleName(_topicID):
 	if(_topicID == InterestTopic.TallyMarks):
-		return "tally marks"
+		return "зарубки"
 	if(_topicID == InterestTopic.Bodywritings):
-		return "body writings"
+		return "надписи на теле"
 	
 	if(_topicID == InterestTopic.Gags):
 		return "gags"
 	if(_topicID == InterestTopic.Blindfolds):
 		return "blindfolds"
 	if(_topicID == InterestTopic.BDSMRestraints):
-		return "BDSM restraints"
+		return "БДСМ-ограничители"
 	if(_topicID == InterestTopic.ButtPlugs):
 		return "buttplugs"
 	if(_topicID == InterestTopic.VaginalPlugs):
-		return "vaginal plugs"
+		return "вагинальные пробки"
 
 	
 	return "error:"+str(_topicID)

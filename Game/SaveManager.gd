@@ -267,7 +267,7 @@ func triggerAutosave():
 		return
 	saveGame("user://saves/autosave_"+Util.stripBadFilenameCharacters(GM.pc.getName())+".save")
 	if(GM.ui != null):
-		GM.ui.say("\n\n[center][i]Autosave completed[/i][/center]\n")
+		GM.ui.say("\n\n[center][i]Автосохранение завершено[/i][/center]\n")
 	isAutoSaving = false
 
 func getAllSavePathsInFolder(path = "user://saves/"):

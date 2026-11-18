@@ -11,15 +11,15 @@ func _init():
 
 func start():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER)})
-	saynn("Your owner approaches you, leash in {npc.his} hand!")
+	saynn("Твой хозяин подходит к тебе, сжимая поводок в {npc.his} руке!")
 	talkModularOwnerToPC("SoftSlaveryStocksStart")
 	
-	addButton("Obey", "Allow them to do it", "obey")
-	addButton("Resist!", "You're not gonna let them do it", "resist")
+	addButton("Повиноваться", "Позволить им это", "obey")
+	addButton("Сопротивляться!", "Ты не собираешься позволять им это делать", "resist")
 	if(canSetLimits()):
-		addButton("Yes, but..", "Obey but put limits to what your owner can do to you during sex", "yesbut")
+		addButton("Да, но..", "Повиноваться, но установить границы того, что хозяин может с вами делать во время секса", "yesbut")
 	else:
-		addDisabledButton("Yes, but..", "Your relationship hasn't progressed far enough for you to be able to set limits")
+		addDisabledButton("Да, но..", "Ваши отношения еще недостаточно развиты, чтобы вы могли устанавливать границы")
 
 func start_do(_id:String, _args:Array):
 	if(_id == "obey"):
@@ -39,9 +39,9 @@ func start_eventResult(_event, _id:String, _args:Array):
 func inStocks():
 	playAnimation(StageScene.StocksSexOral, "tease", {npc=getRoleID(C_OWNER)})
 	
-	saynn("You fully obey and let {npc.name} lock you into stocks!")
+	saynn("Вы полностью повинуетесь и позволяете {npc.name} запереть вас в колодки!")
 	talkModularOwnerToPC("SoftSlaveryStocksLocked")
-	addButton("Continue", "See what happens next", "startSex", [getRoleID(C_OWNER), "pc", SexType.StocksSex, {SexMod.DisableDynamicJoiners:true}])
+	addButton("Продолжить", "Смотреть, что будет дальше", "startSex", [getRoleID(C_OWNER), "pc", SexType.StocksSex, {SexMod.DisableDynamicJoiners:true}])
 	
 func inStocks_sexResult(_sexResult:SexEngineResult):
 	sexSatisfaction = _sexResult.getAverageDomSatisfaction()
@@ -49,7 +49,7 @@ func inStocks_sexResult(_sexResult:SexEngineResult):
 
 func afterSex():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER)})
-	saynn("After the sex, your owner is nice enough to unlock you!")
+	saynn("После секса хозяин проявляет милосердие и отпирает тебя!")
 	
 	if(sexSatisfaction < 0.5):
 		talkModularOwnerToPC("SoftSlaveryFuckResultBad") #"That was awful. Are you trying to make me mad, {npc.npcSlave}? Whatever, I will be back soon."

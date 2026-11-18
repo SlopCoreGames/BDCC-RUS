@@ -25,11 +25,11 @@ func _run():
 		addCharacter(npcID)
 		playAnimation(StageScene.Massage, "back", {pc=npcID, npc="pc"})
 		
-		saynn("You instruct your submissive to give you a back massage before laying down on your inmate bed.")
+		saynn("Вы приказываете своей подчиненной сделать вам массаж спины, прежде чем лечь на тюремную койку.")
 		
-		saynn("[say=npc]Yes, {npc.pcOwner}.[/say]")
+		saynn("[say=npc]Да, {npc.pcOwner}.[/say]")
 		
-		saynn("Without hesitation, {npc.he} obediently complies, sitting nearby. As {npc.heShe} starts to knead your shoulders with a tender touch, you feel a wave of warmth spreading through them.")
+		saynn("Без малейших колебаний {npc.he} послушно исполняет приказ и садится рядом. Когда {npc.heShe} начинает нежно разминать ваши плечи, вы чувствуете, как по телу разливается волна тепла.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"Let's see.. Wow. Your shoulders feel so strong.. under my hands.",
@@ -37,7 +37,7 @@ func _run():
 			"Let's start.. Your shoulders are my favorite place. I could get used to this..",
 		])+"[/say]")
 		
-		saynn("After removing any tension from your shoulders, your sub’s hands glide over your {pc.masc} back, following and caressing the curves at a slow, relaxing pace.")
+		saynn("Сняв напряжение с ваших плеч, руки вашей субки скользят по вашей {pc.masc} спине, медленно и расслабляюще поглаживая каждый изгиб.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"These curves, they're intoxicating. I could drown in them, happily.",
@@ -45,20 +45,20 @@ func _run():
 			"Great back, lets get all the tension out of it..",
 		])+"[/say]")
 		
-		saynn("You can’t help but to moan softly, the gentle touch coupled with {npc.his} words feel quite good.")
+		saynn("Вы невольно тихонько стонете: нежные прикосновения в сочетании с {npc.his} словами чертовски приятны.")
 		
-		saynn("This massage has warmed up your back the same way a yoga session would!")
+		saynn("Этот массаж разогрел вашу спину так же эффективно, как сеанс йоги!")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		if(npc.getNpcSlavery().getSlaveSkill(SlaveType.Submissive) >= 11):
-			addButton("Butt massage", "Order them to massage your butt too", "butt_massage")
+			addButton("Массаж ягодиц", "Приказать ей помассировать и задницу тоже", "butt_massage")
 		else:
-			addDisabledButton("Butt massage", "Requires submissive skill at least A")
+			addDisabledButton("Массаж ягодиц", "Требуется навык подчиненной не ниже A")
 
 	if(state == "butt_massage"):
 		playAnimation(StageScene.Massage, "butt", {pc=npcID, npc="pc"})
 		
-		saynn("You ask your submissive to continue. And so {npc.his} hands venture lower, gently caressing your buttocks with a sensuality that sends shivers down your spine.")
+		saynn("Вы просите свою подчиненную продолжать. И вот {npc.his} опускает руки ниже, нежно лаская ваши ягодицы с такой чувственностью, что по спине пробегает дрожь.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"Your butt's a real treat, you know that, {npc.pcOwner}?",
@@ -66,11 +66,11 @@ func _run():
 			"Thank you for letting me massage your butt, {npc.pcOwner}, it feels nice.",
 		])+"[/say]")
 		
-		saynn("As {npc.he} works to remove the tension from your muscles, you find yourself lost in the sensations.")
+		saynn("Пока {npc.he} старается снять напряжение в ваших мышцах, вы ловите себя на том, что полностью растворяетесь в этих ощущениях.")
 		
-		saynn("By the end of it, you feel quite energized.")
+		saynn("К концу массажа вы чувствуете небывалый прилив сил.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

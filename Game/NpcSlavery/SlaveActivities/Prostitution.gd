@@ -9,7 +9,7 @@ func _init():
 	id = "Prostitution"
 	
 func getVisibleName():
-	return "Prostitution"
+	return "Проституция"
 
 func onStart(_args = []):
 	slutSkill = getSlave().getSlaveSkill(SlaveType.Slut)
@@ -87,7 +87,7 @@ func getEarnedCredits():
 func getInteractActions():
 	return [
 		{
-			name = "Cancel",
+			name = "Отмена",
 			desc = "Find your slut and tell them to stop whoring themselves out.",
 			sceneID = "SlaveryCancelActivity",
 			args = ["You find {npc.name} out in the prison and tell {npc.him} to stop working. Since you disturbed {npc.his} work, you won't get any credits."],

@@ -12,11 +12,11 @@ func onStart(_args:Array):
 
 func start():
 	playAnimation(StageScene.Duo, "stand", {npc=getOwnerID(), npcAction="kneel"})
-	saynn("You ask {npc.name} if you can fuck {npc.him}.")
+	saynn("Вы спрашиваете {npc.name}, можно ли вам трахнуть {npc.him}.")
 	talkModularOwnerToPC("SoftSlaveryAskFuckOwner") #Hm. Alright. But only because I want it.
-	saynn("Your owner submits, kneeling in front of you!")
+	saynn("Ваш хозяин сдается, преклонив перед вами колени!")
 	
-	addButton("Continue", "See what happens next", "startSex", ["pc", getOwnerID(), SexType.DefaultSex, {}])
+	addButton("Продолжить", "Смотреть, что будет дальше", "startSex", ["pc", getOwnerID(), SexType.DefaultSex, {}])
 
 func start_sexResult(_sexResult:SexEngineResult):
 	if(_sexResult.isSubUnconscious(getOwnerID())):
@@ -27,7 +27,7 @@ func start_sexResult(_sexResult:SexEngineResult):
 
 func domBlackedOut():
 	playAnimation(StageScene.SexStart, "defeated", {npc=getOwnerID()})
-	saynn("Oops, looks like your owner is weaker than you thought. Oh well.")
+	saynn("Ой, похоже, ваш хозяин слабее, чем вы думали. Ну и ладно.")
 	addContinue("endEventOwnerUncon")
 
 func domBlackedOut_do(_id:String, _args:Array):
@@ -39,7 +39,7 @@ func domBlackedOut_do(_id:String, _args:Array):
 
 func afterSex():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER)})
-	saynn("The sex has ended!")
+	saynn("Секс окончен!")
 	if(sexSatisfaction < 0.5):
 		talkModularOwnerToPC("SoftSlaveryAskFuckOwnerBad") #"That was awful. I'm a subby bitch but even I can top better!"
 	elif(sexSatisfaction < 0.8):

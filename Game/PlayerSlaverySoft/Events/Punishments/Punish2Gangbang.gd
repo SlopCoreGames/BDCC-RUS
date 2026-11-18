@@ -21,9 +21,9 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 func start():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER), bodyState={leashedBy=getOwnerID()}})
 	sayPretext()
-	saynn("{npc.name} clicks a leash to your collar.")
+	saynn("{npc.name} щелкает поводком у твоего ошейника.")
 	talkModularOwnerToPC("SoftSlaveryPunishGB")
-	saynn("Looks like your owner wants to find some people to gangbang you with..")
+	saynn("Похоже, твой хозяин хочет найти кого-нибудь, чтобы устроить тебе групповой секс...")
 	addContinue("go")
 	
 func getParadeTarget() -> String:
@@ -39,7 +39,7 @@ func start_do(_id:String, _args:Array):
 func searching():
 	playAnimation(StageScene.Duo, "walk", {npc=getOwnerID(), npcAction="walk", flipNPC=true, bodyState={leashedBy=getOwnerID()}})
 	
-	saynn("You are being walked around by a strict leash!")
+	saynn("Тебя водят на коротком, строгом поводке!")
 	
 	addButtonAt(6, "Walk", "See where your owner will bring you..", "go")
 	addDisabledButtonAt(10, "Leashed", "You are leashed")
@@ -77,23 +77,23 @@ func doGo():
 func cancel_sex():
 	playStand(true)
 	
-	saynn("Eventually, {npc.name} decides to give up.")
+	saynn("В конце концов, {npc.name} решает сдаться.")
 	talkModularOwnerToPC("SoftSlaveryPunishGBGiveup")
 	addInfluenceResist(0.5)
-	saynn("Looks like you got off easy!")
+	saynn("Похоже, тебе еще легко отделалось!")
 	addContinue("endEvent")
 
 func invite():
 	playAnimation(StageScene.Duo, "stand", {pc=getOwnerID(), npc=getRoleID(C_EXTRA4)})
 	
-	saynn("Your owner approaches someone!")
+	saynn("Твой хозяин подходит к кому-то!")
 	talkModularOwnerToPC("SoftSlaveryPunishGBOffer")
 	
 	var agreeChance:float = 50.0 - personality(C_EXTRA4, PersonalityStat.Subby)*20.0 + personality(C_EXTRA4, PersonalityStat.Mean)*30.0
 	var subInsteadChance:float = 10.0 + personality(C_EXTRA4, PersonalityStat.Subby)*200.0
 	
 	if(smartChance(agreeChance)):
-		saynn("The new person is eyeing you out.")
+		saynn("Новичок вовсю разглядывает тебя.")
 		talkModular(C_EXTRA4, C_OWNER, "SoftSlaveryPunishGBSure")
 		talkModularOwnerToPC("SoftSlaveryPunishGBFollow")
 		addContinue("add")
@@ -104,7 +104,7 @@ func invite():
 			talkModular(C_EXTRA4, C_OWNER, "SoftSlaveryPunishGBSubOfferNoAw")
 			addContinue("notadd")
 		else:
-			saynn("{npc.name} tilts {npc.his} head.")
+			saynn("{npc.name} наклоняет {npc.his} голову.")
 			talkModularOwnerToPC("SoftSlaveryPunishGBSubOfferYes")
 			addContinue("addsub")
 	else:
@@ -158,7 +158,7 @@ func getFreeSlot() -> int:
 func about_to_sex():
 	playAnimation(StageScene.GivingBirth, "idle")
 	
-	saynn("{npc.name} stops. Looks like the gang has been assembled..")
+	saynn("{npc.name} замирает. Похоже, банда в сборе...")
 	talkModularOwnerToPC("SoftSlaveryPunishGBStart")
 	
 	var theDoms:Array = [getOwnerID()]
@@ -177,7 +177,7 @@ func about_to_sex_sexResult(_sex:SexEngineResult):
 
 func afterSex():
 	playAnimation(StageScene.GivingBirth, "idle")
-	saynn("The gangbang has ended!")
+	saynn("Гангбанг окончен!")
 	talkModularOwnerToPC("SoftSlaveryPunishGBEnd")
 	
 	addContinue("endEvent")

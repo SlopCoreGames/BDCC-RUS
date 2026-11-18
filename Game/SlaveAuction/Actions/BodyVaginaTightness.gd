@@ -7,7 +7,7 @@ func getActionType():
 	return AuctionActionType.Body
 
 func getName() -> String:
-	return "Pussy tightness"
+	return "@@B*@@Узость киски@@T*@@@@F*@@"
 
 func getButtonDesc() -> String:
 	return "Highlight the slave's pussy.\n\n[b]Might[/b] reveal 1 mind preference of each bidder."

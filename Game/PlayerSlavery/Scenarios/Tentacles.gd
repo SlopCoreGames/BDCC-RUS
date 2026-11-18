@@ -41,7 +41,7 @@ func addSkipActions(_scene:SceneBase):
 		return
 	
 	for entry in getDebugStages():
-		_scene.addButton(entry[1], "SKIP TO THIS STAGE", "skipStage", [entry[0]])
+		_scene.addButton(entry[1], "ПРОПУСТИТЬ ЭТАП", "skipStage", [entry[0]])
 func doSkipAction(_stage:int):
 	GM.pc.setLocation(LOC_BED)
 	setStage(_stage)
@@ -849,7 +849,7 @@ func clearEvent():
 
 func addMonsterNameButtons(_scene:SceneBase):
 	for theName in MONSTER_NAMES:
-		_scene.addButton(theName, "Pick this name!", "pickName", [theName])
+		_scene.addButton(theName, "Выбери это имя!", "pickName", [theName])
 
 func setMonsterName(_n:String):
 	monsterName = _n
@@ -907,7 +907,7 @@ func talk(_text:String):
 	var _theText:String = processTalkText(_text)
 	if(_theText.empty()):
 		return
-	_scene.saynn("[say="+getTentaclesCharID()+"]"+_theText+"[/say]")
+	_scene.saynn("[say=\""+getTentaclesCharID()+"]"+_theText+"[/say]")
 
 func doAnimDuo(_anim:String, _otherArgs:Dictionary = {}):
 	var theArgs:Dictionary = {plant=true}

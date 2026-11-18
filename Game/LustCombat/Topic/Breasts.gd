@@ -37,11 +37,11 @@ func getVisibleName(_topicID):
 	if(_topicID == InterestTopic.NoBreasts):
 		return "flat-chests"
 	if(_topicID == InterestTopic.SmallBreasts):
-		return "small breasts"
+		return "маленькая грудь"
 	if(_topicID == InterestTopic.MediumBreasts):
-		return "perky tits"
+		return "упругие сиськи"
 	if(_topicID == InterestTopic.BigBreasts):
-		return "huge milkers"
+		return "огромные молочные железы"
 	if(_topicID == InterestTopic.LactatingBreasts):
 		return "lactation"
 	

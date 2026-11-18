@@ -5,25 +5,25 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("You decide to idle for some time in the lilac block, wondering if that white fluffy ball will decide to come out of her cell today. Busting in on them would be kinda mean.. so you keep that option as a last resort.")
+		saynn("Ты решаешь немного поторчать в сиреневом блоке, гадая, решит ли эта белоснежная пушистая комочек выйти из своей камеры сегодня. Вломиться к ним без предупреждения было бы как-то грубо... так что ты оставляешь этот вариант на крайний случай.")
 
-		saynn("So far.. It's kinda quiet. You only see other lilacs wandering around, flashing their bodies to anyone even remotely curious.")
+		saynn("Пока что... довольно тихо. Вокруг лишь бродят другие «сиреневые», выставляя свои тела напоказ любому, кто проявит хоть малейший интерес.")
 
-		saynn("Maybe it's time to give up on waiting..")
+		saynn("Может, пора уже перестать ждать?..")
 
-		addButton("Continue", "See what happens next", "artica_hungry")
+		addButton("Продолжить", "Смотреть, что будет дальше", "artica_hungry")
 	if(state == "artica_hungry"):
 		addCharacter("artica")
 		playAnimation(StageScene.Solo, "stand", {pc="artica"})
-		saynn("You were about to return to your cell.. when you suddenly see a cute snow-white muzzle curiously sticking out from one of the cells. She looks around cautiously, scanning the cellblock for any obvious threats. You pretend to tie your shoes.. invisible ones.")
+		saynn("Ты уже собирался вернуться в свою камеру... как вдруг замечаешь, что из одной из дверей любопытно высовывается милая белоснежная мордочка. Она осторожно оглядывается, сканируя блок на предмет явных угроз. Ты делаешь вид, что завязываешь шнурки... на невидимых ботинках.")
 
-		saynn("After seeing that the other inmates don't pay much attention to her, the white-cyan fluff sticks more of her body out. Your careful gaze picks up on her holding her paw on her grumbling belly.. Looks like she is forced to start exploring the station.")
+		saynn("Заметив, что остальные заключенные не обращают на неё особого внимания, бело-голубая пушинка выставляет наружу всё больше своего тела. Твой внимательный взгляд подмечает, что она прижимает лапку к урчащему животу... Похоже, ей всё же придётся начать исследовать станцию.")
 
-		saynn("The girl walks past you at a faster-than-normal pace, keeping her gaze low and her fluffy tail curled around her leg.")
+		saynn("Девушка проходит мимо тебя быстрее обычного, низко опустив взгляд и обернув пушистый хвост вокруг ноги.")
 
-		saynn("Following her feels creepy.. but it's probably obvious where to find her.")
+		saynn("Идти за ней как-то жутковато... но, скорее всего, найти её будет нетрудно.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

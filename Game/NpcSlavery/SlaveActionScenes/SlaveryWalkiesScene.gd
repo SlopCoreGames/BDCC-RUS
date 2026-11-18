@@ -26,9 +26,9 @@ func resolveCustomCharacterName(_charID):
 func _run():
 	if(state == ""):
 		if(!npc.isSlaveToPlayer()):
-			saynn("Somehow, you lost your slave during the walkies! Oh no.")
+			saynn("Каким-то образом вы умудрились потерять свою рабыню во время прогулки! О нет.")
 			
-			addButton("Continue", "See what happens next", "endthescene")
+			addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 			return
 		
 		var roomID = GM.pc.location
@@ -77,7 +77,7 @@ func _run():
 		
 		if(isPetWalkies()):
 			var puppyPoints = npc.getNpcSlavery().getActivity().puppyPoints
-			sayn("Puppy points: "+str(puppyPoints)+"/"+str(npc.getNpcSlavery().getActivity().getRequiredPuppyPoints())+". "+npc.getNpcSlavery().getActivity().getNeedText())
+			sayn("Очки щенка: "+str(puppyPoints)+"/"+str(npc.getNpcSlavery().getActivity().getRequiredPuppyPoints())+". "+npc.getNpcSlavery().getActivity().getNeedText())
 			
 		_roomInfo._onEnter()
 		GM.ES.triggerRun(Trigger.EnteringRoomWithSlave, [GM.pc.location, npcID, walkiesType])
@@ -85,9 +85,9 @@ func _run():
 	if(state == "return_to_cell"):
 		aimCameraAndSetLocName(GM.pc.getCellLocation())
 		
-		saynn("You return back to your cell with your slave.")
+		saynn("Вы возвращаетесь в свою камеру вместе со своей рабыней.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	
 
 func _react(_action: String, _args):

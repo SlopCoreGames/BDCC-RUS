@@ -4,7 +4,7 @@ func _init():
 	id = SexGoal.ReceiveAnal
 
 func getVisibleName():
-	return "Ride (Anal)"
+	return "Верхом (Анальный)"
 
 func isPossible(_sexEngine, _domInfo, _subInfo, _data):
 	if(!_domInfo.getChar().hasReachableAnus() || !_subInfo.getChar().hasReachablePenis()):

@@ -72,13 +72,13 @@ func getHumanReadablePossibleListString() -> String:
 func start():
 	playStand()
 	
-	saynn("{npc.name} approaches you.. "+("holding a few items." if pickedLocks.size() > 1 else "holding something."))
+	saynn("{npc.name} подходит к тебе... "+("holding a few items." if pickedLocks.size() > 1 else "holding something."))
 	talkModularOwnerToPC("SoftSlaveryLockRestraint") # Today I feel like locking something onto you
 	saynn("{npc.He} {npc.verb('show')} "+str(pickedLocks.size())+" thing"+("s" if pickedLocks.size() != 1 else "")+": "+getHumanReadablePossibleListString()+".")
 	talkModularOwnerToPC("SoftSlaveryLockRestraint2") # Which one do you like the most, I'm generous enough to let you choose
-	saynn("Looks like you must choose something..")
+	saynn("Похоже, тебе придётся что-то выбрать...")
 	
-	addButton("Resist!", "You don't wanna be restrained!", "resist")
+	addButton("Сопротивляться!", "Ты не хочешь, чтобы тебя сковали!", "resist")
 	
 	for theLock in pickedLocks:
 		var theLockInfo:Array = getLockNameDesc(theLock)
@@ -120,8 +120,8 @@ func afterLocked():
 	else:
 		playStand()
 	
-	saynn("You obey and let {npc.name} lock the "+getLockNameDesc(pickedLock)[0].to_lower()+" onto you!")
-	saynn("After that, {npc.he} {npc.verb('show')} you the key..")
+	saynn("Ты повинуешься и позволяешь {npc.name} застегнуть "+getLockNameDesc(pickedLock)[0].to_lower()+" на тебе!")
+	saynn("После этого {npc.he} {npc.verb('show')} тебе ключ...")
 	talkModularOwnerToPC("SoftSlaveryLockRestraint3") # I will keep the key. Don't try to struggle it off, {npc.npcSlave}.
 	addContinue("endEvent")
 

@@ -26,17 +26,17 @@ func getTopicValue(_topicID, _pc):
 
 func getVisibleName(_topicID):
 	if(_topicID == InterestTopic.ThickBody):
-		return "a thick body"
+		return "пышное тело"
 	if(_topicID == InterestTopic.AverageMassBody):
-		return "an average body"
+		return "тело среднего телосложения"
 	if(_topicID == InterestTopic.SlimBody):
-		return "a slim body"
+		return "стройное тело"
 	if(_topicID == InterestTopic.ThickButt):
-		return "a thick butt"
+		return "пышная задница"
 	if(_topicID == InterestTopic.AverageButt):
-		return "an average butt"
+		return "задница среднего размера"
 	if(_topicID == InterestTopic.SlimButt):
-		return "a slim butt"
+		return "узкая задница"
 	
 	return "error:"+str(_topicID)
 

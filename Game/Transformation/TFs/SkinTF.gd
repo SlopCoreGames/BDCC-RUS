@@ -13,7 +13,7 @@ func _init():
 	pointsOnUnlock = 10
 
 func getName() -> String:
-	return "Changes colors"
+	return "Меняет цвета"
 
 func getPillName() -> String:
 	return "CoLore"
@@ -63,25 +63,25 @@ func getPillOptions() -> Dictionary:
 	
 	return {
 		"skin": {
-			name = "Skin",
+			name = "Кожа",
 			desc = "The new skin.",
 			value = "EmptySkin",
 			values = skinsArray,
 		},
 		"color_r": {
-			name = "Primary color",
+			name = "Основной цвет",
 			desc = "The primary color.",
 			value = "#FF0000",
 			color = true,
 		},
 		"color_g": {
-			name = "Secondary color",
+			name = "Вторичный цвет",
 			desc = "The secondary color.",
 			value = "#FFFF00",
 			color = true,
 		},
 		"color_b": {
-			name = "Third color",
+			name = "Третий цвет",
 			desc = "The third color.",
 			value = "#FF00FF",
 			color = true,

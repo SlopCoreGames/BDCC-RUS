@@ -11,7 +11,7 @@ func _init():
 	rewardHint = 1
 
 func getVisibleName():
-	return "Praise"
+	return "Похвала"
 
 func getVisibleDesc():
 	return "Tell your slave that they are doing quite good."
@@ -20,7 +20,7 @@ func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var character:DynamicCharacter = GlobalRegistry.getCharacter(_slaveID)
 	var npcSlavery:NpcSlave = character.getNpcSlavery()
 	
-	var text = "You gently praise your slave, acknowledging {npc.his} obedience and good behavior.\n\n"
+	var text = "Вы мягко хвалите своего раба, отмечая его {npc.his} послушание и хорошее поведение.\n\n"
 	
 	text += RNG.pick([
 		"[say=pc]Good job.[/say]",

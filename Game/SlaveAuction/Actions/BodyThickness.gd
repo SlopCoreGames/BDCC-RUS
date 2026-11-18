@@ -7,7 +7,7 @@ func getActionType():
 	return AuctionActionType.Body
 
 func getName() -> String:
-	return "Thickness"
+	return "Пышность форм"
 
 func getButtonDesc() -> String:
 	return "Point out the slave's curves.\n\n[b]Might[/b] reveal 1 mind preference of each bidder."

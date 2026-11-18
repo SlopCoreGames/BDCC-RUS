@@ -4,7 +4,7 @@ class_name RepStatBase
 var id:String = "error"
 
 func getVisibleName():
-	return "Error?"
+	return "Ошибка?"
 
 func getTextForLevel(_level:int, _rep):
 	return "ERROR, FILL ME PLS"

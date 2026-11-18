@@ -8,7 +8,7 @@ func _init():
 	}
 
 func getVisibleName():
-	return "TF giver"
+	return "Дающий TF"
 
 func getGoals(_sexEngine, _domFetishHolder, _dom, _sub):
 	var possible = []

@@ -20,21 +20,21 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc=npcID, npcBodyState={leashedBy="pc"}})
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		
-		saynn("Are you sure you want to release {npc.name}?")
+		saynn("Вы уверены, что хотите освободить {npc.name}?")
 		
-		saynn("As long as {npc.he} {npc.isAre} sane enough, {npc.he} will just return to whatever {npc.he} was doing before getting enslaved by you. But {npc.he} will forget anything that you taught {npc.him}.")
+		saynn("Пока {npc.he} {npc.isAre} достаточно в здравом уме, {npc.he} просто вернется к тому, чем {npc.he} занималась до того, как вы превратили её в рабыню. Но {npc.he} забудет всё, чему вы {npc.him} научили.")
 		
 		if(npcSlavery.isMindBroken()):
-			saynn("Since {npc.name} is mindbroken, {npc.he} will be committed to the mental ward indefinitely, meaning {npc.he} will be forgotten by you forever.")
+			saynn("Так как {npc.name} сломлена ментально, {npc.he} поместят в психиатрическое отделение на неопределенный срок, а это значит, что {npc.he} навсегда останется лишь воспоминанием для вас.")
 		
-		addButton("Release", "Let your slave go", "release_slave")
-		addButton("Cancel", "You changed your mind", "endthescene")
+		addButton("Освободить", "Отпустить рабыню", "release_slave")
+		addButton("Отмена", "Вы передумали", "endthescene")
 
 	if(state == "release_slave"):
 		aimCameraAndSetLocName("hall_mainentrance")
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
 		
-		saynn("You grab {npc.name}'s leash and bring {npc.him} out into the main hall. After that, you just unclip the leash.")
+		saynn("Вы хватаете {npc.name} за поводок и выводите {npc.him} в главный зал. После этого вы просто расстегиваете карабин.")
 		
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		
@@ -52,20 +52,20 @@ func _run():
 			])+"[/say]")
 		
 		if(npcSlavery.isMindBroken()):
-			saynn("{npc.He} doesn't say anything, just standing still. {npc.His} gaze unfocused.")
+			saynn("{npc.He} ничего не говорит, просто стоит неподвижно. Взгляд {npc.His} расфокусирован.")
 			
-			saynn("You snap your fingers in front of {npc.his} face.. no reaction. Oh well.")
+			saynn("Вы щелкаете пальцами перед лицом {npc.his}... никакой реакции. Ну и ладно.")
 			
-			saynn("After stepping away from {npc.him}, one of the staff members approaches and asks {npc.him} something.")
+			saynn("После того как вы отходите от {npc.him}, к {npc.him} подходит один из сотрудников и о чем-то спрашивает.")
 			
-			saynn("Soon, a few nurses arrive and take {npc.name} away somewhere..")
+			saynn("Вскоре приходят несколько медсестер и уводят {npc.name} куда-то прочь...")
 		elif(npcSlavery.isResistingSuperActively()):
 			saynn("[say=npc]"+RNG.pick([
 				"Really? I won't thank you. In fact, you know what? Fuck you.",
 				"You shouldn't messed with me in the first place."
 			])+"[/say]")
 		
-			saynn("{npc.name} shows you the middle finger.. and quickly leaves.")
+			saynn("{npc.name} показывает тебе средний палец.. и быстро уходит.")
 		elif(npcSlavery.hasSubmittedToPC()):
 			saynn("[say=npc]"+RNG.pick([
 				"Um. But I belong to you. You're serious? I'm not sure what to do now..",
@@ -76,7 +76,7 @@ func _run():
 				"I.. I don't think I'm ready for this. Being with you has become my whole world. What am I supposed to do now? I'll miss you.. More than you'll ever know.",
 			])+"[/say]")
 			
-			saynn("Your slave.. ex-slave.. lowers {npc.his} head.. as you step away.")
+			saynn("Твоя рабыня.. бывшая рабыня.. опускает {npc.his} голову.. когда ты отходишь.")
 		elif(npcSlavery.getLove() > 0.95):
 			saynn("[say=npc]"+RNG.pick([
 				"But.. I love you.. You can't be serious..",
@@ -86,14 +86,14 @@ func _run():
 				"You're actually letting me go? Well, don't expect me to be grateful. I'm done with you",
 			])+"[/say]")
 			
-			saynn("Your ex-slave humpfs and walks away.")
+			saynn("Твоя бывшая рабыня дрыгает задом и уходит прочь.")
 		elif(npcSlavery.getObedience() > 0.5 || npcSlavery.getLove() > 0.5 || npcSlavery.getBrokenSpirit()):
 			saynn("[say=npc]"+RNG.pick([
 				"So this is it, then? You're just letting me go? After all the time we've spent together? I don't know whether to be relieved or heartbroken. But I suppose it doesn't matter now. Farewell",
 				"Um. But I belong to you. You're serious? I'm not sure what to do now.. It's strange to think of life without you, but part of me is relieved. I'll miss you, but I'll also be glad to finally be my own person again",
 			])+"[/say]")
 			
-			saynn("Your ex-slave looks around.. and then walks away somewhere.")
+			saynn("Твоя бывшая рабыня оглядывается.. а затем уходит куда-то в сторону.")
 		else:
 			saynn("[say=npc]"+RNG.pick([
 				"Wow. I never thought I'd see the day when you'd release me. I hope you're not lying.",
@@ -102,9 +102,9 @@ func _run():
 				"You're letting me go? Don't act like you're doing me a favor. I'll be just fine without being your slave.",
 			])+"[/say]")
 			
-			saynn("Your ex-slave looks around.. and then swiftly walks away somewhere.")
+			saynn("Твоя бывшая рабыня оглядывается.. а затем стремительно уходит куда-то в сторону.")
 		
-		addButton("Continue", "See what happens next", "slave_released")
+		addButton("Продолжить", "Смотреть, что будет дальше", "slave_released")
 		
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

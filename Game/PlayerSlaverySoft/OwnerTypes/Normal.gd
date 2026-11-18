@@ -8,7 +8,7 @@ func _init():
 	id = "Normal"
 
 func getVisibleName() -> String:
-	return "Normal"
+	return "Обычный"
 
 func onLevelUp():
 	addRandomTraitChecked() # Trait should happen first because new picked name depends on traits

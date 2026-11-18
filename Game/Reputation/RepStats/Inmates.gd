@@ -4,7 +4,7 @@ func _init():
 	id = RepStat.Inmates
 
 func getVisibleName():
-	return "Inmates Reputation"
+	return "Репутация заключенных"
 
 func getMaxLevel() -> int:
 	return 4

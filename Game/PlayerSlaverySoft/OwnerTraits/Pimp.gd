@@ -4,7 +4,7 @@ func _init():
 	id = "Pimp"
 
 func getVisibleName() -> String:
-	return "Pimp"
+	return "Сутенёр"
 
 func getVisibleDescription() -> String:
 	return "The owner is way more likely to let others fuck their slave. The owner is also much more eager to make the slave do prostitution."

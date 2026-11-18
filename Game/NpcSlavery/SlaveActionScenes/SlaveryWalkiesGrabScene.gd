@@ -19,27 +19,27 @@ func _run():
 		addCharacter(npcID)
 		var npcSlave:NpcSlave = npc.getNpcSlavery()
 		
-		saynn("What are you planning to do with {npc.name}?")
+		saynn("Что ты планируешь делать с {npc.name}?")
 		
-		addButton("Wander around", "Leash your slave and wander around the station with them", "do_wander")
+		addButton("Бродить туда-сюда", "Взять рабыню на поводок и погулять с ней по станции", "do_wander")
 		if(npcSlave.getSlaveSkill(SlaveType.Pet) >= 3):
 			if(npcSlave.getWorkEfficiency() <= 0.25):
-				addDisabledButton("Walkies", "Your pet is too tired for walkies, give them some rest")
+				addDisabledButton("Прогулка", "Твой питомец слишком устал для прогулки, дай ему отдохнуть")
 			else:
-				addButton("Walkies", "Give your pet walkies around the station", "do_petwander")
+				addButton("Прогулка", "Вывести своего питомца на прогулку по станции", "do_petwander")
 		else:
-			addDisabledButton("Walkies", "Your slave doesn't have high enough pet skill. Requires at least rank D-")
-		#addDisabledButton("Pimping", "Your slave doesn't have high enough slut skill")
-		addButton("Cancel", "Never mind", "endthescene")
+			addDisabledButton("Прогулка", "У твоей рабыни недостаточно высокий навык питомца. Требуется ранг не ниже D-")
+		#addDisabledButton("Сутенёрство", "У твоего раба недостаточно высокий навык шлюхи")
+		addButton("Отмена", "Проехали", "endthescene")
 		
 	if(state == "do_wander"):
 		GM.pc.setLocation("hall_mainentrance")
 		aimCameraAndSetLocName("hall_mainentrance")
 		playAnimation(StageScene.Duo, "stand", {npc=npcID, npcBodyState={leashedBy="pc"}})
 		
-		saynn("You leash your slave and bring {npc.him} out into the main hall.")
+		saynn("Ты надеваешь поводок на своего раба и выводишь {npc.him} в главный зал.")
 		
-		addButton("Continue", "See what happens next", "start_wander", [""])
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_wander", [""])
 	
 	if(state == "do_petwander"):
 		GM.pc.setLocation("hall_mainentrance")
@@ -47,16 +47,16 @@ func _run():
 		#playAnimation(StageScene.PuppyDuo, "walk", {npc=npcID, npcAction="walk", flipNPC=true, npcBodyState={naked=true, leashedBy="pc"}})
 		playAnimation(StageScene.PuppyDuo, "stand", {npc=npcID, flipNPC=true, npcBodyState={naked=true, leashedBy="pc"}})
 
-		saynn("You "+("undress and " if !npc.isFullyNaked() else "")+"put some puppy restraints on your pet before bringing {npc.him} out into the main hall for walkies.")
+		saynn("Вы "+("undress and " if !npc.isFullyNaked() else "")+"надень на своего питомца собачьи ограничители, прежде чем выводить {npc.him} в главный зал на прогулку.")
 		
 		var npcSlave:NpcSlave = npc.getNpcSlavery()
 		var puppySkill = npcSlave.getSlaveSkill(SlaveType.Pet)
 		if(puppySkill < 15):
 			var howMuchNeeded = 2 + int(sqrt(puppySkill+1)*1.5)
 			
-			saynn("Your pet gets puppy points each time you satisfy {npc.his} pet need. Get at least "+str(howMuchNeeded)+" puppy points to raise {npc.his} pet skill.")
+			saynn("Твой питомец получает очки щенка каждый раз, когда ты удовлетворяешь потребность {npc.his}. Наберите как минимум "+str(howMuchNeeded)+" очков щенка, чтобы повысить навык питомца {npc.his}.")
 		
-		addButton("Continue", "See what happens next", "start_wander", ["walkies"])
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_wander", ["walkies"])
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

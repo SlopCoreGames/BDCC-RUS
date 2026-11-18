@@ -11,24 +11,24 @@ func onStart(_args:Array):
 
 func start():
 	playStand()
-	saynn("You ask your owner if {npc.he} can let you go.")
+	saynn("Вы спрашиваете своего хозяина, может ли {npc.he} отпустить вас на волю.")
 	
 	if(freedomPrice <= 0):
 		talkModularOwnerToPC("SoftSlaveryAskedFreedom") #"I guess I can. No point in me bugging you any further, you already know that you are my {npc.npcSlave}. Do you really want that though?"
-		saynn("You ask if that means that you don't have to pay anything. {npc.He} {npc.verb('nod')}.")
-		saynn("Do your want {npc.name} to stop being your owner?")
+		saynn("Вы спрашиваете, значит ли это, что вам больше не придется платить. {npc.He} {npc.verb('nod')}.")
+		saynn("Хотите ли вы, чтобы {npc.name} перестал быть вашим хозяином?")
 	
-		addButton("CANCEL", "You changed your mind", "endEvent")
-		addButton("Yes", "Ask them to stop being your owner", "commit")
+		addButton("CANCEL", "Вы передумали", "endEvent")
+		addButton("Да", "Попросить их перестать быть вашим хозяином", "commit")
 	else:
 		talkOwner(getModularDialogue(C_OWNER, C_PC, "SoftSlaveryAskedFreedomPay").replace("<CREDITS>", str(freedomPrice)+" credits"))
-		saynn("Looks like it's gonna cost you..")
+		saynn("Похоже, это обойдется вам в копеечку...")
 		
-		addButton("Cancel", "You changed your mind", "endEvent")
+		addButton("Отмена", "Вы передумали", "endEvent")
 		if(GM.pc.getCredits() >= freedomPrice):
-			addButton("Pay", "Pay your owner "+str(freedomPrice)+" credits to become free again", "doPay")
+			addButton("Заплатить", "Заплатить хозяину "+str(freedomPrice)+" кредитов, чтобы снова стать свободным", "doPay")
 		else:
-			addDisabledButton("Pay", "You don't have this much credits..")
+			addDisabledButton("Заплатить", "У вас недостаточно кредитов...")
 		
 func start_do(_id:String, _args:Array):
 	if(_id == "commit"):
@@ -40,14 +40,14 @@ func start_do(_id:String, _args:Array):
 	
 func committed():
 	if(freedomPrice <= 0):
-		saynn("You tell your owner that you do want that.")
+		saynn("Вы говорите хозяину, что действительно этого хотите.")
 		talkModularOwnerToPC("SoftSlaveryAskedFreedomEND") #Alright, well. Go away then.
-		saynn("That was easy..")
+		saynn("Это было легко...")
 	else:
-		saynn("You hand your owner a credit chip with a hefty sum on it.")
-		saynn("{npc.name} takes a quick look at it and then puts it away.")
+		saynn("Вы протягиваете своему владельцу кредитный чип с внушительной суммой.")
+		saynn("{npc.name} бросает на него быстрый взгляд и убирает себе.")
 		talkModularOwnerToPC("SoftSlaveryAskedFreedomEND") #Alright, well. Go away then.
-		saynn("That was easy..")
+		saynn("Это было легко...")
 	addContinue("doEndEveything")
 
 func committed_do(_id:String, _args:Array):

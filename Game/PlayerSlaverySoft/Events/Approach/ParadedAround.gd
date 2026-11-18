@@ -18,11 +18,11 @@ func _init():
 
 func start():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER)})
-	saynn("Your owner approaches you while holding a leash.")
+	saynn("Твой хозяин подходит к тебе, держа в руке поводок.")
 	talkModularOwnerToPC("SoftSlaveryParadeAroundStart") #"I wanna parade you around the prison. And show off my {npc.npcSlave}."
 	
-	addButton("Obey", "Allow them to do it", "obey")
-	addButton("Resist!", "You're not gonna let them do it", "resist")
+	addButton("Повиноваться", "Позволить им это", "obey")
+	addButton("Сопротивляться!", "Ты не собираешься позволять им это делать", "resist")
 
 #func shouldEndAfterSubEvent(_args:Array) -> bool:
 #	return true
@@ -45,7 +45,7 @@ func start_do(_id:String, _args:Array):
 
 func paraded():
 	playAnimation(StageScene.Duo, "stand", {npc=getOwnerID()})
-	saynn("After reaching the destination, {npc.name} stops and turns towards you.")
+	saynn("Дойдя до места назначения, {npc.name} останавливается и поворачивается к тебе.")
 	paradedOutcome()
 
 func paradedOutcome():
@@ -58,8 +58,8 @@ func paradedOutcome():
 				talkModularOwnerToPC("SoftSlaveryParadeAroundFirst") #"Like it so far? We're just getting started."
 			else:
 				talkModularOwnerToPC("SoftSlaveryParadeAroundMore") #"Good. Let's walk more."
-		addButton("Obey", "Allow them to leash you again", "obey")
-		addButton("Resist!", "You're not gonna let them do it", "resist")
+		addButton("Повиноваться", "Позволить им снова надеть на тебя поводок", "obey")
+		addButton("Сопротивляться!", "Ты не собираешься позволять им это делать", "resist")
 	else:
 		talkModularOwnerToPC("SoftSlaveryParadeAroundFree")
 		addContinue("endEvent")
@@ -99,12 +99,12 @@ func getDoState() -> String:
 
 func pMedical():
 	playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-	saynn("{npc.name} brings you down to the medical wing.")
+	saynn("{npc.name} ведет тебя в медицинское крыло.")
 	talkOwner("My {npc.npcSlave} isn't doing too well.")
 	talkCharID("eliza", "Oh, I have something that can help.")
-	saynn("The feline doctor walks up to you and feeds you a little pill!")
+	saynn("Кошка-врач подходит к тебе и дает тебе маленькую таблетку!")
 	talkCharID("eliza", "This should help~.")
-	saynn("Your owner nods and pulls you away from the counter.")
+	saynn("Твой хозяин кивает и уводит тебя от прилавка.")
 	
 	if(onlyOnce()):
 		GM.pc.addPain(-100)
@@ -116,49 +116,49 @@ func pMedical():
 
 func pVendomat():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER)})
-	saynn("{npc.name} decides to stop near a vendomat.")
+	saynn("{npc.name} решает остановиться возле вендомата.")
 	
 	if(onlyOnce()):
 		var theItemToGive:String = RNG.pick(["EnergyDrink"])
 		if(theItemToGive):
 			talkOwner("Thirsty?")
-			saynn("{npc.He} {npc.verb('buy')} an energy drink and hands it to you.")
+			saynn("{npc.He} {npc.verb('buy')} энергетический напиток и протягивает его тебе.")
 			talkOwner("Enjoy.")
 			GM.pc.getInventory().addItem(GlobalRegistry.createItem(theItemToGive))
 			GM.main.addMessage("You received an energy drink!")
-	saynn("After that, you get pulled away from the vendomat.")
+	saynn("После этого тебя уводят от вендомата.")
 	paradedOutcome()
 
 func pCanteen():
 	playAnimation(StageScene.PawJobUnderTable, "start", {pc="pc", npc=getOwnerID()})
-	saynn("{npc.name} brings you into a canteen.")
+	saynn("{npc.name} заводит тебя в столовую.")
 	if(GM.pc.isOralBlocked()):
 		talkModularOwnerToPC("SoftSlaveryParadeAroundEatGagged") #"Too bad you can't eat, {npc.npcSlave}. I will though."
 		if(!GM.pc.isBlindfolded()):
-			saynn("All you can do is watch your owner eat..")
+			saynn("Всё, что тебе остаётся — это смотреть, как ест твой хозяин...")
 		else:
-			saynn("All you can do is.. imagine.. your owner eat..")
+			saynn("Всё, что тебе остаётся — это... воображать... как ест твой хозяин...")
 	else:
 		talkModularOwnerToPC("SoftSlaveryParadeAroundEat") #"Lets take a break. Enjoy your meal, {npc.npcSlave}."
 		if(onlyOnce()):
 			GM.pc.afterEatingAtCanteen()
-		saynn("You and your owner spend time eating together behind one of the canteen tables.")
+		saynn("Вы с хозяином проводите время за едой за одним из столов в столовой.")
 	paradedOutcome()
 	
 func pStocksTease():
 	playAnimation(StageScene.Duo, "stand", {npc=getOwnerID()})
-	saynn("You stop near the punishment platform that has the row of stocks.")
+	saynn("Вы останавливаетесь возле помоста для наказаний, где стоит ряд колодок.")
 	talkModularOwnerToPC("SoftSlaveryParadeAroundPlatform")
 	paradedOutcome()
 
 func pShower():
 	playAnimation(StageScene.ShoweringDuo, "shower", {npc=getOwnerID(), bodyState={naked=true}, npcBodyState={naked=true}})
-	saynn("You get brought into the shower room where {npc.name} helps to wash you!")
+	saynn("Вас приводят в душевую, где {npc.name} помогает вам отмыться!")
 	talkModularOwnerToPC("SoftSlaveryParadeAroundShower")
 	if(onlyOnce()):
 		getOwner().afterTakingAShower()
 		GM.pc.afterTakingAShower()
-	saynn("After that is done, your owner guides you out.")
+	saynn("Когда всё закончено, хозяин выводит вас наружу.")
 	
 	paradedOutcome()
 

@@ -8,7 +8,7 @@ func onStart(_args:Array):
 
 func start():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER)})
-	saynn("You approach your owner.")
+	saynn("Вы подходите к своему хозяину.")
 	talkModularOwnerToPC("SoftSlaveryTalkStart") #What do you want, {npc.npcSlave}?
 	
 	var theNpcOwner := getNpcOwner()
@@ -17,12 +17,12 @@ func start():
 		for textLine in theNpcOwner.getOwnerInfo():
 			theText += "\n- "+textLine
 		
-		#saynn("{npc.name} is your owner!\n- Slavery level: "+str(theNpcOwner.level)+"\n"+"- Influence: "+str(Util.roundF(theNpcOwner.influence*100.0, 1))+"%")
+		#saynn("{npc.name} — ваш хозяин!\n — Уровень рабства: "+str(theNpcOwner.level)+"\n"+"— Влияние: "+str(Util.roundF(theNpcOwner.influence*100.0, 1))+"%")
 		
 		saynn(theText)
 		
 		if(theNpcOwner.hasGivenPCTasks()):
-			saynn("You have been given tasks that you need to complete:\n"+theNpcOwner.getQuestProgressText())
+			saynn("Вам дали задания, которые необходимо выполнить:\n"+theNpcOwner.getQuestProgressText())
 		
 		var theTalkActions := theNpcOwner.getTalkActions(self)
 		for actionEntry in theTalkActions:
@@ -31,10 +31,10 @@ func start():
 			else:
 				addDisabledButton(actionEntry[0], actionEntry[1])
 	
-	#addButton("Attack!", "Attack your owner", "startFight", [getOwnerID()])
-	#addButton("Tasks!", "Get some test tasks", "getTasks")
-	#addButton("Punish!", "Get punished for testing", "getPunished")
-	addButton("Leave", "You have finished talking with your owner", "endEvent")
+	#addButton("Атака!", "Атаковать хозяина", "startFight", [getOwnerID()])
+	#addButton("Задания!", "Взять пробные задания", "getTasks")
+	#addButton("Наказать!", "Получить наказание за тесты", "getPunished")
+	addButton("Уйти", "Вы закончили разговор со своим хозяином", "endEvent")
 
 
 
@@ -58,15 +58,15 @@ func start_fightResult(_didWin:bool):
 
 func pcWon():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER), npcAction="kneel"})
-	saynn("YAY! YOU WON!")
+	saynn("УРА! ТЫ ПОБЕДИЛА!")
 	
 	addInfluence(-1.0)
 	
 	addContinue("endEvent")
 
 func pcLost():
-	saynn("YOU LOST THE FIGHT.")
+	saynn("ТЫ ПРОИГРАЛА БОЙ.")
 	
-	saynn("YOU PROBABLY SHOULD BE PUNISHED.")
+	saynn("ТЕБЯ, ВЕРОЯТНО, ЖДЕТ НАКАЗАНИЕ.")
 	
 	addContinue("endEvent")

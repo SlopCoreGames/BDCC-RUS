@@ -6,298 +6,298 @@ func _init():
 func _run():
 	if(state == ""):
 		addCharacter("eliza")
-		saynn("Some time has passed.. maybe Alex is better now?")
+		saynn("Прошло какое-то время... может, Алексу уже лучше?")
 
-		saynn("[say=pc]How is Alex? Can I see him?[/say]")
+		saynn("[say=pc]Как Алекс? Можно его увидеть?[/say]")
 
-		saynn("Eliza lowers her gaze for a second, her expression changes for a more sad one.")
+		saynn("Элиза на мгновение опускает взгляд, и выражение её лица становится печальным.")
 
-		saynn("[say=eliza]He is okay. About as good as he can be in his situation.[/say]")
+		saynn("[say=eliza]Он в порядке. Настолько, насколько это возможно в его ситуации.[/say]")
 
-		saynn("Something isn't right.")
+		saynn("Что-то здесь не так.")
 
-		saynn("[say=pc]Are you sure?[/say]")
+		saynn("[say=pc]Вы уверены?[/say]")
 
-		saynn("[say=eliza]Our surgeons are good but.. sadly, we don't exactly have prosthetic spines lying around.[/say]")
+		saynn("[say=eliza]Наши хирурги хороши, но... к сожалению, у нас тут не валяются запасные протезы позвоночника.[/say]")
 
-		saynn("[say=pc]So.. he is paralyzed?[/say]")
+		saynn("[say=pc]Значит... он парализован?[/say]")
 
-		saynn("Eliza nods subtly.")
+		saynn("Элиза едва заметно кивает.")
 
-		saynn("[say=eliza]Alex is also.. not talking much. Mostly stares at the same spot. He is not in a good mental space.[/say]")
+		saynn("[say=eliza]А еще Алекс... почти не разговаривает. В основном просто пялится в одну точку. Психологически ему сейчас очень тяжело.[/say]")
 
-		saynn("You both stay quiet for some time.")
+		saynn("Вы оба какое-то время храните молчание.")
 
-		saynn("[say=eliza]We can go pay him a visit.. Maybe that will cheer him up.[/say]")
+		saynn("[say=eliza]Мы могли бы навестить его... Может, это его приободрит.[/say]")
 
-		addButton("Follow", "See where Eliza brings you", "captain_meet")
+		addButton("Следовать", "Посмотрим, куда тебя приведёт Элиза", "captain_meet")
 	if(state == "captain_meet"):
 		addCharacter("captain")
 		playAnimation(StageScene.Duo, "stand", {npc="captain", pc="eliza"})
 		aimCameraAndSetLocName("medical_firstcorridorcross")
-		saynn("While following Eliza through the sterile white corridors, you run into the captain..")
+		saynn("Следуя за Элизой по стерильно-белым коридорам, вы натыкаетесь на капитана...")
 
-		saynn("[say=eliza]Oh, hello captain. Feeling sick?[/say]")
+		saynn("[say=eliza]О, здравствуйте, капитан. Плохо себя чувствуете?[/say]")
 
-		saynn("The captain puts on a subtle smile.")
+		saynn("На лице капитана появляется едва заметная улыбка.")
 
-		saynn("[say=captain]Hello, doctor Quinn. No, I was actually checking on our engineer. Awful things happened to him, it's a real tragedy. Everyone responsible is gonna be heavily punished, I will make sure of that.[/say]")
+		saynn("[say=captain]Здравствуйте, доктор Куинн. Нет, на самом деле я зашел проведать нашего инженера. С ним случилась ужасная штука, настоящая трагедия. Все виновные будут сурово наказаны, я лично об этом позабочусь.[/say]")
 
-		saynn("He directs his gaze to you.")
+		saynn("Он переводит взгляд на тебя.")
 
-		saynn("[say=captain]Thank you, inmate. You saved his life.[/say]")
+		saynn("[say=captain]Благодарю вас, заключенная. Вы спасли ему жизнь.[/say]")
 
-		saynn("Eliza puts her paw on her mouth.")
+		saynn("Элиза прикрывает рот лапой.")
 
-		saynn("[say=eliza]Did he talk to you?[/say]")
+		saynn("[say=eliza]Он с тобой разговаривал?[/say]")
 
-		saynn("[say=captain]He said a few words, yeah. I thought it would be best not to bother him too much.[/say]")
+		saynn("[say=captain]Он сказал пару слов, да. Я подумала, что лучше его особо не беспокоить.[/say]")
 
-		saynn("[say=eliza]What did he say?[/say]")
+		saynn("[say=eliza]И что же он сказал?[/say]")
 
-		saynn("[say=captain]Um.. Alex is not himself yet, he is still in shock, what he says is heavily influenced by that. Now, if you excuse me.[/say]")
+		saynn("[say=captain]Ну... Алекс еще не совсем пришел в себя, он всё еще в шоке, и это сильно влияет на то, что он говорит. А теперь, если позволишь...[/say]")
 
-		saynn("Captain turns away to leave.. but Eliza stops him, grabbing onto his shoulder.")
+		saynn("Капитан отворачивается, собираясь уйти... но Элиза останавливает его, хватая за плечо.")
 
-		saynn("[say=eliza]One last thing, cap. Is there a way the station can put up an order for a prosthetic spine? He needs it.[/say]")
+		saynn("[say=eliza]И последнее, кэп. Можно ли через станцию оформить заказ на протез позвоночника? Он ему необходим.[/say]")
 
-		saynn("Captain lowers his gaze.")
+		saynn("Капитан опускает взгляд.")
 
-		saynn("[say=captain]You gotta understand how pricey those things are. But I will see what I can do, trust me, I want him back on his feet as much as you. I think for now we all should focus on helping him recover.[/say]")
+		saynn("[say=captain]Ты должна понимать, насколько это дорогое удовольствие. Но я посмотрю, что можно сделать, поверь, я хочу, чтобы он снова встал на ноги так же сильно, как и ты. Думаю, сейчас нам всем стоит сосредоточиться на его восстановлении.[/say]")
 
-		saynn("Eliza tilts her head, looking slightly confused by his words.")
+		saynn("Элиза наклоняет голову, выглядя слегка сбитой с толку его словами.")
 
-		saynn("[say=eliza]But.. captain..[/say]")
+		saynn("[say=eliza]Но... капитан...[/say]")
 
-		saynn("[say=captain]I'm afraid I don't have any more time to chat, I need to work.[/say]")
+		saynn("[say=captain]Боюсь, у меня больше нет времени на болтовню, мне нужно работать.[/say]")
 
-		saynn("Eliza's paw slowly slides off the captain's shoulder as he turns away and leaves.")
+		saynn("Лапа Элизы медленно соскальзывает с плеча капитана, когда он отворачивается и уходит.")
 
-		saynn("Eliza sighs.")
+		saynn("Элиза вздыхает.")
 
-		saynn("[say=eliza]Let's go..[/say]")
+		saynn("[say=eliza]Пошли..[/say]")
 
-		addButton("Continue", "See what happens next", "alex_first_meet")
+		addButton("Продолжить", "Смотреть, что будет дальше", "alex_first_meet")
 	if(state == "alex_first_meet"):
 		removeCharacter("captain")
 		addCharacter("alexrynard", ["naked"])
 		playAnimation(StageScene.Sleeping, "sleep", {pc="alexrynard", bodyState={naked=true}})
 		aimCameraAndSetLocName("medical_hospitalwards")
-		saynn("Hospital wards. Probably the only peaceful place on the whole station.")
+		saynn("Больничные палаты. Пожалуй, единственное спокойное место на всей станции.")
 
-		saynn("All the beds are separated by the long dividers, Eliza brings you to the one where Alex is resting at. He seems to be conscious.")
+		saynn("Все койки разделены длинными перегородками; Элиза подводит тебя к той, где отдыхает Алекс. Кажется, он в сознании.")
 
-		saynn("[say=eliza]Hey, look who I brought.[/say]")
+		saynn("[say=eliza]Эй, смотри, кого я привела.[/say]")
 
-		saynn("Alex takes a second to look you in the eyes.. and then just sighs, his gaze cold.")
+		saynn("Алекс замирает на секунду, глядя тебе прямо в глаза... а затем просто вздыхает, и его взгляд становится холодным.")
 
-		saynn("[say=pc]How do you feel?[/say]")
+		saynn("[say=pc]Как ты себя чувствуешь?[/say]")
 
-		saynn("[say=alexrynard]Great.[/say]")
+		saynn("[say=alexrynard]Замечательно.[/say]")
 
-		saynn("Yeah, that probably wasn't the best question. But at least he is talking.")
+		saynn("Да, пожалуй, вопрос был не самый удачный. Но, по крайней мере, он разговаривает.")
 
-		saynn("[say=eliza]We will do everything we can to help you, trust me.[/say]")
+		saynn("[say=eliza]Поверь, мы сделаем всё возможное, чтобы помочь тебе.[/say]")
 
-		saynn("[say=alexrynard]I hate that word so much now..[/say]")
+		saynn("[say=alexrynard]Я теперь так ненавижу это слово..[/say]")
 
-		saynn("Eliza tilts her head slightly, confused by his words. Alex sees that.. and lowers his gaze.")
+		saynn("Элиза слегка наклоняет голову, сбитая с толку его словами. Алекс замечает это.. и опускает взгляд.")
 
-		saynn("[say=alexrynard]I'm sorry. I don't want anyone to see me like this.[/say]")
+		saynn("[say=alexrynard]Прости. Я не хочу, чтобы кто-то видел меня таким.[/say]")
 
-		saynn("[say=pc]You're still Alex, the same Alex that I know.[/say]")
+		saynn("[say=pc]Ты всё тот же Алекс, тот самый, которого я знаю.[/say]")
 
-		saynn("He shakes his head.")
+		saynn("Он качает головой.")
 
-		saynn("[say=alexrynard]I'm a broken man. Physically and mentally. And it's all my fault.[/say]")
+		saynn("[say=alexrynard]Я сломленный человек. И физически, и ментально. И во всём этом виноват я сам.[/say]")
 
-		saynn("[say=eliza]What do you mean? You got jumped by three inmates, that's not your fault.[/say]")
+		saynn("[say=eliza]В каком смысле? На тебя напали трое заключенных, это не твоя вина.[/say]")
 
-		saynn("[say=alexrynard]Uh huh.[/say]")
+		saynn("[say=alexrynard]Угу.[/say]")
 
-		saynn("Alex looks you in the eyes.. trying to see something in them.. but then just gives up and frowns.")
+		saynn("Алекс смотрит тебе прямо в глаза.. пытаясь что-то в них разглядеть.. но затем просто сдается и хмурится.")
 
-		saynn("[say=alexrynard]I keep putting my trust into others. You'd think I would learn by now? Captain was right.[/say]")
+		saynn("[say=alexrynard]Я всё время доверяю людям. Казалось бы, пора бы уже и научиться? Капитан был прав.[/say]")
 
-		saynn("[say=pc]What did he tell you?[/say]")
+		saynn("[say=pc]Что он тебе сказал?[/say]")
 
-		saynn("Ten seconds of silence.")
+		saynn("Десять секунд тишины.")
 
-		saynn("[say=alexrynard]No one is your friend.[/say]")
+		saynn("[say=alexrynard]Никто тебе не друг.[/say]")
 
-		saynn("He probably said more than that.. The captain loves giving speeches.")
+		saynn("Наверняка он сказал гораздо больше... Капитан обожает толкать речи.")
 
-		saynn("Eliza lowers her gaze.. you notice her eyes watering up.")
+		saynn("Элиза опускает взгляд... ты замечаешь, что её глаза наполняются слезами.")
 
-		saynn("[say=eliza]I.. I will leave you two alone for now.. Sorry..[/say]")
+		saynn("[say=eliza]Я... я оставлю вас двоих на время... Простите...[/say]")
 
-		saynn("Eliza rubs her eyes as she swiftly leaves the room.")
+		saynn("Элиза протирает глаза и быстро выходит из комнаты.")
 
-		saynn("[say=alexrynard]Back then, many years ago, I thought I could at least trust myself. A logical thought, right? Nah.. my own creation broke me. Hah.. Can't even trust machines anymore.[/say]")
+		saynn("[say=alexrynard]Тогда, много лет назад, я думала, что смогу хотя бы доверять самой себе. Логично, да? Как бы не так... моё собственное творение сломало меня. Хах... теперь даже машинам нельзя верить.[/say]")
 
-		saynn("He looks at you.")
+		saynn("Он смотрит на тебя.")
 
-		saynn("[say=alexrynard]History will keep repeating if we don't learn from our mistakes..[/say]")
+		saynn("[say=alexrynard]История будет повторяться снова и снова, если мы не извлечем уроки из своих ошибок...[/say]")
 
-		saynn("You can't shake off this feeling that he is trying to blame you too for what happened.")
+		saynn("Тебя не покидает чувство, что он пытается переложить часть вины за случившееся и на тебя тоже.")
 
-		saynn("[say=pc]Listen, I never told anything to that inmate..[/say]")
+		saynn("[say=pc]Слушай, я ничего не говорила тому заключенному...[/say]")
 
-		saynn("[say=alexrynard]None of this matters anymore, does it. I was a spineless beta before. Now I'm a spineless parasite.[/say]")
+		saynn("[say=alexrynard]Всё это больше не имеет значения, верно? Раньше я был бесхребетным бетой. Теперь я — бесхребетный паразит.[/say]")
 
-		addButton("I will help", "Tell Alex that you will help him", "alex_iwillhelp")
-		addButton("Man up", "Tell Alex that he should stay strong no matter what", "alex_manup")
+		addButton("Я помогу", "Сказать Алексу, что ты поможешь ему", "alex_iwillhelp")
+		addButton("Соберись, мужик", "Сказать Алексу, что он должен оставаться сильным, несмотря ни на что", "alex_manup")
 	if(state == "alex_manup"):
 		removeCharacter("eliza")
-		saynn("[say=pc]Man up, Alex. You gotta stay strong no matter what. Any difficulty can be overcomed as long as you don't give up.[/say]")
+		saynn("[say=pc]Соберись, Алекс. Ты должен оставаться сильным, несмотря ни на что. Любые трудности можно преодолеть, главное — не сдаваться.[/say]")
 
-		saynn("Alex looks at his legs that don't move anymore.")
+		saynn("Алекс смотрит на свои ноги, которые больше не слушаются.")
 
-		saynn("[say=alexrynard]Uh huh. Thanks for the kind words, I will man up now.[/say]")
+		saynn("[say=alexrynard]Угу. Спасибо за добрые слова, сейчас как раз соберусь.[/say]")
 
-		saynn("He is being pretty sarcastic.. so not all hope is lost?")
+		saynn("Он говорит довольно саркастично... значит, надежда еще не потеряна?")
 
-		saynn("[say=alexrynard]I was trying to be strong. Ended up weak. I wanted to be tough.. but ended up broken. Maybe I'm just not made for this world.[/say]")
+		saynn("[say=alexrynard]Я пытался быть сильным. А в итоге оказался слабым. Хотел быть крутым... а стал сломленным. Может, я просто не создан для этого мира.[/say]")
 
-		saynn("Huh, looks like telling him to stay strong again won't be the best idea.. The guy is clearly depressed. Whatever the captain said to him, it's not helping.")
+		saynn("Хм, похоже, снова советовать ему держаться — не самая лучшая идея... Парень явно в депрессии. Что бы там капитан ему ни наговорил, это явно не помогает.")
 
-		saynn("[say=pc]You should stop listening to the captain.[/say]")
+		saynn("[say=pc]Тебе стоит перестать слушать капитана.[/say]")
 
-		saynn("[say=alexrynard]Do you think I want to? The problem is that.. he is right. We will betray each other as soon as the benefits outweigh the consequences. It's that simple.[/say]")
+		saynn("[say=alexrynard]Думаешь, я сама этого хочу? Проблема в том, что... он прав. Мы предадим друг друга, как только выгода перевесит последствия. Всё просто.[/say]")
 
-		saynn("You're pretty sure you didn't betray him..")
+		saynn("Ты почти уверена, что не предавала его...")
 
-		saynn("[say=pc]I never betrayed our trust, okay? I don't know what the captain told you.. but he is either very wrong or lying.[/say]")
+		saynn("[say=pc]Я никогда не предавала наше доверие, ясно? Не знаю, что там наплел тебе капитан... но он либо сильно ошибается, либо нагло врет.[/say]")
 
-		saynn("Alex frowns.")
+		saynn("Алекс хмурится.")
 
-		saynn("[say=alexrynard]Swear.[/say]")
+		saynn("[say=alexrynard]Клянешься?[/say]")
 
-		saynn("[say=pc]What?[/say]")
+		saynn("[say=pc]Что?[/say]")
 
-		saynn("[say=alexrynard]Swear on it.[/say]")
+		saynn("[say=alexrynard]Клянись в этом.[/say]")
 
-		saynn("[say=pc]I swear? I swear I didn't betray you.[/say]")
+		saynn("[say=pc]Клянусь? Клянусь, что не предавала тебя.[/say]")
 
-		saynn("His gaze is drilling yours. Yours is unshakable.")
+		saynn("Его взгляд буквально сверлит твой. Твой же остается непоколебимым.")
 
-		saynn("[say=alexrynard]You could be telling the truth or lying straight to my face.. How can anyone trust anyone..[/say]")
+		saynn("[say=alexrynard]Ты можешь говорить правду, а можешь врать мне прямо в лицо... Как вообще можно кому-то доверять...[/say]")
 
-		saynn("He is wrong. Words are pretty meaningless here. The actions will speak louder.")
+		saynn("Он не прав. Слова здесь почти ничего не значат. Поступки скажут громче.")
 
-		saynn("Alex sighs.")
+		saynn("Алекс вздыхает.")
 
-		saynn("It's probably best to leave him alone now though. Nothing that you say will ever change his mind.")
+		saynn("Хотя, пожалуй, сейчас его лучше оставить в покое. Что бы ты ни сказала, его мнение уже не изменить.")
 
-		saynn("[say=pc]Take care..[/say]")
+		saynn("[say=pc]Береги себя..[/say]")
 
-		addButton("Leave", "Time to go", "after_alex_eliza")
+		addButton("Уйти", "Пора идти", "after_alex_eliza")
 	if(state == "alex_iwillhelp"):
 		removeCharacter("eliza")
-		saynn("[say=pc]I will help you. We will find a way to put you back on your feet, trust me.[/say]")
+		saynn("[say=pc]Я помогу тебе. Поверь, мы найдем способ поставить тебя на ноги.[/say]")
 
-		saynn("There is that word again.. It's kinda annoying you too now. So easy to promise something.")
+		saynn("Опять это слово.. Тебя оно тоже начинает раздражать. Так легко что-то обещать.")
 
-		saynn("Alex sighs.")
+		saynn("Алекс вздыхает.")
 
-		saynn("[say=alexrynard]The only way you can help now is by grabbing a pillow.[/say]")
+		saynn("[say=alexrynard]Единственное, чем ты можешь помочь сейчас — это принести подушку.[/say]")
 
-		saynn("[say=pc]You should.. stop listening to the captain.[/say]")
+		saynn("[say=pc]Тебе стоит.. перестать слушать капитана.[/say]")
 
-		saynn("[say=alexrynard]Do you think I want to? The problem is that.. he is right. Trust is there as long as it is beneficial. Laws work as long as there is a punishment for not obeying them. It's that simple..[/say]")
+		saynn("[say=alexrynard]Думаешь, я сама этого хочу? Проблема в том, что.. он прав. Доверие существует лишь до тех пор, пока оно выгодно. Законы работают лишь до тех пор, пока за их нарушение следует наказание. Всё так просто..[/say]")
 
-		saynn("Carrot and a stick, huh.")
+		saynn("Кнут и пряник, значит.")
 
-		saynn("[say=pc]I never betrayed our trust, okay? I don't know what the captain told you.. but he is either very wrong or lying.[/say]")
+		saynn("[say=pc]Я никогда не предавала наше доверие, ясно? Не знаю, что там наплел тебе капитан... но он либо сильно ошибается, либо нагло врет.[/say]")
 
-		saynn("Alex frowns.")
+		saynn("Алекс хмурится.")
 
-		saynn("[say=alexrynard]Swear.[/say]")
+		saynn("[say=alexrynard]Клянешься?[/say]")
 
-		saynn("[say=pc]What?[/say]")
+		saynn("[say=pc]Что?[/say]")
 
-		saynn("[say=alexrynard]Swear on it.[/say]")
+		saynn("[say=alexrynard]Клянись в этом.[/say]")
 
-		saynn("[say=pc]I swear? I swear I didn't betray you.[/say]")
+		saynn("[say=pc]Клянусь? Клянусь, что не предавала тебя.[/say]")
 
-		saynn("His gaze is drilling yours. Yours is unshakable.")
+		saynn("Его взгляд буквально сверлит твой. Твой же остается непоколебимым.")
 
-		saynn("[say=alexrynard]You could be telling the truth or lying straight to my face.. How can anyone trust anyone..[/say]")
+		saynn("[say=alexrynard]Ты можешь говорить правду, а можешь врать мне прямо в лицо... Как вообще можно кому-то доверять...[/say]")
 
-		saynn("He is wrong. Words are pretty meaningless here. The actions will speak louder.")
+		saynn("Он не прав. Слова здесь почти ничего не значат. Поступки скажут громче.")
 
-		saynn("Alex sighs.")
+		saynn("Алекс вздыхает.")
 
-		saynn("It's probably best to leave him alone now though. Nothing that you say will ever change his mind.")
+		saynn("Хотя, пожалуй, сейчас его лучше оставить в покое. Что бы ты ни сказала, его мнение уже не изменить.")
 
-		saynn("[say=pc]Take care..[/say]")
+		saynn("[say=pc]Береги себя..[/say]")
 
-		addButton("Leave", "Time to go", "after_alex_eliza")
+		addButton("Уйти", "Пора идти", "after_alex_eliza")
 	if(state == "after_alex_eliza"):
 		removeCharacter("alexrynard")
 		addCharacter("eliza")
 		aimCameraAndSetLocName("medical_firstcorridorcross")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		GM.pc.setLocation("med_lobbynw")
-		saynn("You exit the wards and follow the white corridors back to the lobby.. Eliza is nowhere in sight but.. who cares by this point.")
+		saynn("Вы выходите из палат и идете по белым коридорам обратно к вестибюлю. Элизы нигде не видно, но... да и какая теперь разница.")
 
-		saynn("Nurses quickly take notice of a free inmate walking around the staff-only area.. but one look is enough to make them get out of the way.")
+		saynn("Медсестры тут же замечают свободного заключенного, разгуливающего по зоне для персонала... но одного вашего взгляда достаточно, чтобы они поспешили расступиться.")
 
-		saynn("Suddenly, Eliza runs up to you, using her paws to quickly wipe away her tears.")
+		saynn("Внезапно к вам подбегает Элиза, быстро вытирая слезы лапками.")
 
-		saynn("[say=eliza]I know what we can do![/say]")
+		saynn("[say=eliza]Я знаю, что мы можем сделать![/say]")
 
-		saynn("[say=pc]The station doesn't have funds for it, why bother?[/say]")
+		saynn("[say=pc]У станции нет на это средств, зачем морочить голову?[/say]")
 
-		saynn("[say=eliza]Screw the station, I talked with one of the surgeons. He seems to be brave enough to try to repair Alex's back. What he needs is.. parts.[/say]")
+		saynn("[say=eliza]К черту станцию, я говорила с одним из хирургов. Он кажется достаточно смелым, чтобы попытаться восстановить спину Алекса. Но ему нужны... запчасти.[/say]")
 
-		saynn("You tilt your head slightly.")
+		saynn("Ты слегка наклоняешь голову.")
 
-		saynn("[say=pc]Parts?[/say]")
+		saynn("[say=pc]Запчасти?[/say]")
 
-		saynn("[say=eliza]Yes![/say]")
+		saynn("[say=eliza]Да![/say]")
 
-		saynn("[say=pc]Where am I gonna get prosthetic spine parts?[/say]")
+		saynn("[say=pc]И где мне достать детали для протеза позвоночника?[/say]")
 
-		saynn("Eliza smiles.")
+		saynn("Элиза улыбается.")
 
-		saynn("[say=eliza]A lot of the parts are the same in any machine. And you'd be surprised what engineers sometimes have in their pockets. People are stealing things left and right here.[/say]")
+		saynn("[say=eliza]Многие детали подходят к любой машине. И ты удивишься, что инженеры иногда таскают в карманах. Здесь воруют направо и налево.[/say]")
 
-		saynn("[say=pc]And you're saying.. that I should steal from them?[/say]")
+		saynn("[say=pc]И ты хочешь сказать... что мне стоит у них воровать?[/say]")
 
-		saynn("Eliza scratches her neck.")
+		saynn("Элиза чешет шею.")
 
-		saynn("[say=eliza]Yeah-h-h?.. Listen, it's not the best solution. But it is A solution.[/say]")
+		saynn("[say=eliza]Ну да-а-а?.. Слушай, это не самый лучший вариант. Но это вариант.[/say]")
 
-		saynn("Beating up other engineers so you could save Alex.. It might actually be worth it..")
+		saynn("Избить других инженеров, чтобы спасти Алекса... А это, возможно, того стоит...")
 
-		saynn("[say=eliza]Ple-e-e-ease? We need to help him, he can't stay glued to the bed forever, it's just not right.[/say]")
+		saynn("[say=eliza]Ну пожа-а-алуйста! Нам нужно помочь ему, он не может вечно быть прикованным к постели, это просто неправильно.[/say]")
 
-		saynn("[say=pc]I will think about it.[/say]")
+		saynn("[say=pc]Я подумаю об этом.[/say]")
 
-		saynn("[say=eliza]Just get as many as you can, it will be easier for you two during the operation. While I will search for documentation about his prosthetic![/say]")
+		saynn("[say=eliza]Просто раздобудь как можно больше деталей, так вам обоим будет проще во время операции. А я пока поищу документацию на его протез![/say]")
 
-		saynn("Wait..")
+		saynn("Погоди...")
 
-		saynn("[say=pc]You're saying I will be operating too?[/say]")
+		saynn("[say=pc]Ты хочешь сказать, что я тоже буду участвовать в операции?[/say]")
 
-		saynn("[say=eliza]Of course, you are Alex's apprentice, you know a lot about fixing stuff, don't you?[/say]")
+		saynn("[say=eliza]Конечно, ты же подмастерье Алекса, ты ведь отлично разбираешься в ремонте всякой хрени, верно?[/say]")
 
-		saynn("She is not wrong.. But it's way too early to celebrate.")
+		saynn("Она не ошибается... Но праздновать еще слишком рано.")
 
-		saynn("[say=pc]Him having his spine back won't fix him.[/say]")
+		saynn("[say=pc]То, что он снова обрел стержень, еще не значит, что он исцелился.[/say]")
 
-		saynn("Eliza sighs and lowers her eyes.")
+		saynn("Элиза вздыхает и опускает глаза.")
 
-		saynn("[say=eliza]But we can at least try..[/say]")
+		saynn("[say=eliza]Но мы можем хотя бы попытаться...[/say]")
 
-		saynn("You nod. Hope is a contagious feeling, isn't it..")
+		saynn("Ты киваешь. Надежда — заразительное чувство, не так ли...")
 
-		saynn("Eliza nods back and swipes off her new tears.")
+		saynn("Элиза кивает в ответ и смахивает свежие слезы.")
 
-		saynn("[say=eliza]I will show you the way out..[/say]")
+		saynn("[say=eliza]Я покажу тебе выход...[/say]")
 
-		addButton("Follow", "Time to go", "endthescene")
+		addButton("Следовать", "Пора идти", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

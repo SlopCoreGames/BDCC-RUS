@@ -15,14 +15,14 @@ func onStart(_args:Array):
 
 func start():
 	playAnimation(StageScene.Duo, "stand", {pc=getRoleID(C_EXTRA1), npc=getRoleID(C_EXTRA2)})
-	saynn("{npc1.name} and {npc2.name} prepare to fight!")
+	saynn("{npc1.name} и {npc2.name} готовятся к бою!")
 
 	var char1FightScore:float = calcPowerScoreOf(C_EXTRA1)
 	var char2FightScore:float = calcPowerScoreOf(C_EXTRA2)
 	char1FightScore *= char1FightScore
 	char2FightScore *= char2FightScore
 	var theChar1Chance:float = char1FightScore / (char1FightScore + char2FightScore)
-	saynn("{npc1.name}'s chance to win: "+str(Util.roundF(theChar1Chance*100.0, 1))+"%\n{npc2.name}'s chance to win: "+str(Util.roundF((1.0-theChar1Chance)*100.0, 1))+"%")
+	saynn("Шанс {npc1.name} на победу: "+str(Util.roundF(theChar1Chance*100.0, 1))+"%\n шанс {npc2.name} на победу: "+str(Util.roundF((1.0-theChar1Chance)*100.0, 1))+"%")
 	
 	addContinue("doFight")
 
@@ -54,15 +54,15 @@ func start_do(_id:String, _args:Array):
 func npc1_won():
 	playAnimation(StageScene.Duo, "stand", {pc=getRoleID(C_EXTRA1), npcAction="defeat", npc=getRoleID(C_EXTRA2)})
 	
-	saynn("{npc1.name} won!")
-	addButton("Continue", "See what happens next", "endEvent", ["npc1"])
+	saynn("{npc1.name} победила!")
+	addButton("Продолжить", "Смотреть, что будет дальше", "endEvent", ["npc1"])
 	
 
 func npc2_won():
 	playAnimation(StageScene.Duo, "defeat", {pc=getRoleID(C_EXTRA1), npc=getRoleID(C_EXTRA2)})
 	
-	saynn("{npc2.name} won!")
-	addButton("Continue", "See what happens next", "endEvent", ["npc2"])
+	saynn("{npc2.name} победил!")
+	addButton("Продолжить", "Смотреть, что будет дальше", "endEvent", ["npc2"])
 	
 func didNpc1Win() -> bool:
 	return whoWon == "npc1"

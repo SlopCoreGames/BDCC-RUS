@@ -7,7 +7,7 @@ func getActionType():
 	return AuctionActionType.Body
 
 func getName() -> String:
-	return "Femininity"
+	return "Женственность"
 
 func getButtonDesc() -> String:
 	return "Point out the slave's femininity/masculinity.\n\n[b]Might[/b] reveal 1 mind preference of each bidder."

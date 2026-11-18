@@ -13,7 +13,7 @@ func _init():
 	rewardHint = -4
 
 func getVisibleName():
-	return "Wooden horse"
+	return "Деревянная лошадь"
 
 func getVisibleDesc():
 	return "Torture your slave using a wooden horse"
@@ -28,7 +28,7 @@ func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var character:DynamicCharacter = GlobalRegistry.getCharacter(_slaveID)
 	var npcSlavery:NpcSlave = character.getNpcSlavery()
 	
-	var text = "Feeling very mean, you throw {npc.name} onto the wooden horse, making {npc.him} straddle its sharp metal edge that instantly digs into {npc.his} crotch with painful levels of discomfort!\n\n"
+	var text = "В порыве жестокости вы швыряете {npc.name} на деревянную лошадь, заставляя {npc.him} оседлать её острый металлический край, который мгновенно впивается в {npc.his} пах, вызывая мучительный дискомфорт!\n\n"
 	
 	if(npcSlavery.isActivelyResisting()):
 		text += "{npc.HeShe} struggles against the restraints, but the firm bindings hold {npc.him} in place, forcing {npc.him} to endure the punishment."

@@ -8,7 +8,7 @@ func _init():
 	pointsOnUnlock = 10
 
 func getName() -> String:
-	return "Grows a penis"
+	return "Выращивает пенис"
 
 func getPillName() -> String:
 	return "DiRecto"
@@ -18,7 +18,7 @@ func getUnlockData() -> Dictionary:
 		eliza = "Interesting! This pill seems to be infused with a combination of androgenic compounds and tissue-stimulating agents that could promote the development of penile tissue. When taken, it will probably trigger the growth of a penis in individuals who don’t have one. I think I’ll call it.. 'DiRecto.' It’s quite fitting, don’t you think?",
 		tryOptions = [
 			{
-				name = "Make Eliza eat it",
+				name = "Заставить Элизу сожрать это",
 				desc = "Ask if she is brave enough to try her own product. She will probably want to test her new organ.",
 				sceneID = "ElizaDrugTestGrowCockScene",
 			},

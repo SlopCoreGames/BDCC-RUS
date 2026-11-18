@@ -17,11 +17,11 @@ func start():
 	playAnimation(StageScene.Duo, "hurt", {npc=getOwnerID(), npcAction="shove"})
 	sayPretext()
 	if(isOwnerStaff()):
-		saynn("{npc.name} shoves you and then presses some kind of device against your collar!")
+		saynn("{npc.name} толкает тебя, а затем прижимает к твоему ошейнику какое-то устройство!")
 	else:
-		saynn("{npc.name} shoves you and then presses some kind of hacked chip against your collar!")
+		saynn("{npc.name} толкает тебя, а затем прижимает к твоему ошейнику какой-то взломанный чип!")
 	talkModularOwnerToPC("SoftSlaveryPunishCredits")
-	saynn("Your collar beeps as some of your credits get forcefully withdrawn from your inmate accounts..")
+	saynn("Твой ошейник издает писк: часть твоих кредитов принудительно списывается с заключенческого счета...")
 	talkModularOwnerToPC("SoftSlaveryPunishCredits2")
 	
 	if(onlyOnce()):

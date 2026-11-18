@@ -32,12 +32,12 @@ func _init():
 
 func start():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER)})
-	saynn("Your owner approaches you while holding puppy gear and a leash.")
+	saynn("Твой хозяин подходит к тебе, держа в руках собачий инвентарь и поводок.")
 	talkModularOwnerToPC("SoftSlaveryPetWalkies") # It's walkies time. Let's get you prepared, {npc.npcSlave}.
-	saynn("Looks like they wanna undress you and make you wear the gear..")
+	saynn("Похоже, он хочет раздеть тебя и нацепить на тебя всё это снаряжение...")
 	
-	addButton("Obey", "Allow them to do it", "obey")
-	addButton("Resist!", "You're not gonna let them do it", "resist")
+	addButton("Повиноваться", "Позволить им это", "obey")
+	addButton("Сопротивляться!", "Ты не собираешься позволять им это делать", "resist")
 
 #func shouldEndAfterSubEvent(_args:Array) -> bool:
 #	return true
@@ -61,7 +61,7 @@ func start_do(_id:String, _args:Array):
 
 func preparedPuppy():
 	playAnimation(StageScene.PuppySexOral, "tease", {pc=getOwnerID(), npcBodyState={naked=true, leashedBy=getOwnerID()}})
-	saynn("Your owner prepares you for walkies, making you wear the puppy restraints and then clipping a leash to your collar.")
+	saynn("Твой хозяин готовит тебя к прогулке: сначала он надевает на тебя собачьи фиксаторы, а затем пристегивает поводок к твоему ошейнику.")
 	talkModularOwnerToPC("SoftSlaveryPetWalkiesReady") # Ready? Try to keep up, puppy.
 	addContinue("start")
 
@@ -75,7 +75,7 @@ func preparedPuppy_do(_id:String, _args:Array):
 func paraded():
 	#playAnimation(StageScene.PuppyDuo, "stand", {pc=getOwnerID(), npcBodyState={naked=true, leashedBy=getOwnerID()}})
 	playAnimation(StageScene.PuppySexOral, "tease", {pc=getOwnerID(), npcBodyState={naked=true, leashedBy=getOwnerID()}})
-	saynn("After reaching the destination, {npc.name} stops and turns towards you.")
+	saynn("Дойдя до места назначения, {npc.name} останавливается и поворачивается к тебе.")
 	paradedOutcome()
 
 func paradedOutcome():
@@ -89,11 +89,11 @@ func paradedOutcome():
 			else:
 				talkModularOwnerToPC("SoftSlaveryParadeAroundMore") #"Good. Let's walk more."
 		addContinue("obey")
-		#addButton("Obey", "Allow them to leash you again", "obey")
-		#addButton("Resist!", "You're not gonna let them do it", "resist")
+		#addButton("Повиноваться", "Позволить им снова надеть на тебя поводок", "obey")
+		#addButton("Сопротивляться!", "Ты не собираешься позволять им это делать", "resist")
 	else:
 		talkModularOwnerToPC("SoftSlaveryParadeAroundFree")
-		saynn("{npc.name} begins to take off the puppy restraints.")
+		saynn("{npc.name} начинает снимать с тебя собачьи фиксаторы.")
 		addContinue("endEvent")
 	addInfluenceObey(0.25)
 
@@ -147,12 +147,12 @@ func getDoState() -> String:
 
 func pMedical():
 	playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-	saynn("{npc.name} brings you down to the medical wing.")
+	saynn("{npc.name} ведет тебя в медицинское крыло.")
 	talkOwner("My {npc.npcSlave} isn't doing too well.")
 	talkCharID("eliza", "Oh, I have something that can help.")
-	saynn("The feline doctor walks up to you and feeds you a little pill!")
+	saynn("Кошка-врач подходит к тебе и дает тебе маленькую таблетку!")
 	talkCharID("eliza", "This should help~.")
-	saynn("Your owner nods and pulls you away from the counter.")
+	saynn("Твой хозяин кивает и уводит тебя от прилавка.")
 	
 	if(onlyOnce()):
 		GM.pc.addPain(-100)
@@ -164,49 +164,49 @@ func pMedical():
 
 func pVendomat():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER)})
-	saynn("{npc.name} decides to stop near a vendomat.")
+	saynn("{npc.name} решает остановиться возле вендомата.")
 	
 	if(onlyOnce()):
 		var theItemToGive:String = RNG.pick(["EnergyDrink"])
 		if(theItemToGive):
 			talkOwner("Thirsty?")
-			saynn("{npc.He} {npc.verb('buy')} an energy drink and hands it to you.")
+			saynn("{npc.He} {npc.verb('buy')} энергетический напиток и протягивает его тебе.")
 			talkOwner("Enjoy.")
 			GM.pc.getInventory().addItem(GlobalRegistry.createItem(theItemToGive))
 			GM.main.addMessage("You received an energy drink!")
-	saynn("After that, you get pulled away from the vendomat.")
+	saynn("После этого тебя уводят от вендомата.")
 	paradedOutcome()
 
 func pCanteen():
 	playAnimation(StageScene.PawJobUnderTable, "start", {pc="pc", npc=getOwnerID()})
-	saynn("{npc.name} brings you into a canteen.")
+	saynn("{npc.name} заводит тебя в столовую.")
 	if(GM.pc.isOralBlocked()):
 		talkModularOwnerToPC("SoftSlaveryParadeAroundEatGagged") #"Too bad you can't eat, {npc.npcSlave}. I will though."
 		if(!GM.pc.isBlindfolded()):
-			saynn("All you can do is watch your owner eat..")
+			saynn("Всё, что тебе остаётся — это смотреть, как ест твой хозяин...")
 		else:
-			saynn("All you can do is.. imagine.. your owner eat..")
+			saynn("Всё, что тебе остаётся — это... воображать... как ест твой хозяин...")
 	else:
 		talkModularOwnerToPC("SoftSlaveryParadeAroundEat") #"Lets take a break. Enjoy your meal, {npc.npcSlave}."
 		if(onlyOnce()):
 			GM.pc.afterEatingAtCanteen()
-		saynn("You and your owner spend time eating together behind one of the canteen tables.")
+		saynn("Вы с хозяином проводите время за едой за одним из столов в столовой.")
 	paradedOutcome()
 	
 func pStocksTease():
 	playAnimation(StageScene.Duo, "stand", {npc=getOwnerID()})
-	saynn("You stop near the punishment platform that has the row of stocks.")
+	saynn("Вы останавливаетесь возле помоста для наказаний, где стоит ряд колодок.")
 	talkModularOwnerToPC("SoftSlaveryParadeAroundPlatform")
 	paradedOutcome()
 
 func pShower():
 	playAnimation(StageScene.ShoweringDuo, "shower", {npc=getOwnerID(), bodyState={naked=true}, npcBodyState={naked=true}})
-	saynn("You get brought into the shower room where {npc.name} helps to wash you!")
+	saynn("Вас приводят в душевую, где {npc.name} помогает вам отмыться!")
 	talkModularOwnerToPC("SoftSlaveryParadeAroundShower")
 	if(onlyOnce()):
 		getOwner().afterTakingAShower()
 		GM.pc.afterTakingAShower()
-	saynn("After that is done, your owner guides you out.")
+	saynn("Когда всё закончено, хозяин выводит вас наружу.")
 	
 	paradedOutcome()
 
@@ -216,7 +216,7 @@ func simpleTrick():
 		wantsTrick = RNG.pick([
 			"bark", "down", "sit", "paw", "roll",
 		])
-	saynn("Your owner stops and turns towards you.")
+	saynn("Твой хозяин замирает и поворачивается к тебе.")
 	
 	if(wantsTrick == "bark"):
 		talkOwner("Bark for me.")
@@ -228,14 +228,14 @@ func simpleTrick():
 		talkOwner("Give paw.")
 	elif(wantsTrick == "roll"):
 		talkOwner("Roll over.")
-	saynn("Looks like {npc.name} wants you to do something..")
+	saynn("Похоже, {npc.name} хочет, чтобы ты что-то сделал(а)...")
 	
 	var possible:Array = [
 		["Bark", "bark"], ["Lie down", "down"], ["Sit", "sit"], ["Raise paw", "paw"], ["Roll", "roll"],
 	]
 	possible.shuffle()
 	for buttonEntry in possible:
-		addButton(buttonEntry[0], "Do this!", "doTrick", [buttonEntry[1]])
+		addButton(buttonEntry[0], "Сделай это!", "doTrick", [buttonEntry[1]])
 
 func simpleTrick_do(_id:String, _args:Array):
 	if(_id == "doTrick"):
@@ -335,7 +335,7 @@ func simpleTrickCorrect():
 	saynn(trickResultToText(pcPickedTrick, true))
 	talkModularOwnerToPC("SoftSlaveryWalkiesCorrect") # Correct. Good puppy.
 	addInfluenceObey(0.2)
-	saynn("You wait for what's next.")
+	saynn("Ты замер(ла) в ожидании того, что будет дальше.")
 	paradedOutcome()
 
 func simpleTrickWrong():
@@ -343,7 +343,7 @@ func simpleTrickWrong():
 	saynn(trickToText(pcPickedTrick))
 	saynn(trickResultToText(pcPickedTrick, false))
 	talkModularOwnerToPC("SoftSlaveryWalkiesWrong") # Nope. Wrong.
-	saynn("Oh well. You wait for what's next.")
+	saynn("Ну что ж. Ты ждешь, что будет дальше.")
 	#addInfluenceObey(0.2)
 	paradedOutcome()
 
@@ -353,11 +353,11 @@ func simonsSaysTricks():
 		trickQueue = generateTrickQueue(RNG.randi_range(3, 5))
 		pcPickedTrick = ""
 	
-	saynn("Your owner turns towards you.")
+	saynn("Твой хозяин поворачивается к тебе.")
 	talkOwner("Let's do something more complicated, I wanna test my puppy.")
-	saynn("You tilt your head.")
+	saynn("Ты наклоняешь голову набок.")
 	talkOwner("I will say a list of tricks and you will do them, in the same order.")
-	saynn("Your ears perk, listening carefully..")
+	saynn("Твои ушки на макушке, ты внимательно прислушиваешься...")
 	
 	var theTricks:Array = []
 	for theTrick in trickQueue:
@@ -367,7 +367,7 @@ func simonsSaysTricks():
 	
 func simonsSaysTricksDo():
 	if(pcPickedTrick == ""):
-		saynn("Your owner finished listing what tricks {npc.he} {npc.verb('want')} you to perform and just watches now.")
+		saynn("Твой хозяин закончил перечислять трюки, которые {npc.he} {npc.verb('want')} заставляет тебя выполнять, и теперь просто наблюдает.")
 	else:
 		playTrickAnim(pcPickedTrick)
 		saynn(trickToText(pcPickedTrick))
@@ -377,7 +377,7 @@ func simonsSaysTricksDo():
 		["Bark", "bark"], ["Lie down", "down"], ["Sit", "sit"], ["Raise paw", "paw"], ["Roll", "roll"],
 	]
 	for buttonEntry in possible:
-		addButton(buttonEntry[0], "Do this!", "doTrick", [buttonEntry[1]])
+		addButton(buttonEntry[0], "Сделай это!", "doTrick", [buttonEntry[1]])
 
 func simonsSaysTricksDo_do(_id:String, _args:Array):
 	var theTrick:String = _args[0]
@@ -397,7 +397,7 @@ func simonsSaysTricksDoFailed():
 	saynn(trickToText(pcPickedTrick))
 	saynn(trickResultToText(pcPickedTrick, false))
 	talkModularOwnerToPC("SoftSlaveryWalkiesWrong") # Nope. Wrong.
-	saynn("Oh well. You wait for what's next.")
+	saynn("Ну что ж. Ты ждешь, что будет дальше.")
 	#addInfluenceObey(0.2)
 	paradedOutcome()
 
@@ -407,7 +407,7 @@ func simonsSaysTricksDoGood():
 	saynn(trickResultToText(pcPickedTrick, true))
 	talkModularOwnerToPC("SoftSlaveryWalkiesCorrect") # Correct. Good puppy.
 	addInfluenceObey(0.4)
-	saynn("You get lots of headpats for getting it right!")
+	saynn("За то, что всё сделала правильно, тебя щедро гладят по голове!")
 	paradedOutcome()
 
 func applyRandomDir(_loc:String, _amount:int) -> String:
@@ -439,30 +439,30 @@ func findStick():
 		moveAmount = 0
 		isStickFake = RNG.chance(20.0 + ownerPersonality(PersonalityStat.Mean)*10.0)
 	playAnimation(StageScene.PuppyDuo, "throw", {pc=getOwnerID(), npcBodyState={naked=true}})
-	saynn("{npc.name} stops and turns towards you, {npc.his} hand produces a ball!")
+	saynn("{npc.name} останавливается и поворачивается к тебе, {npc.his} рука достает мячик!")
 	talkModularOwnerToPC("SoftSlaveryWalkiesBall") # I wanna play fetch with you, {npc.npcSlave}.
-	saynn("{npc.He} {npc.verb('pull')} {npc.his} hand far back.. before throwing the ball somewhere behind you!")
+	saynn("{npc.He} {npc.verb('pull')} {npc.his} заносит руку далеко назад... а затем швыряет мяч куда-то за спину!")
 	talkModularOwnerToPC("SoftSlaveryWalkiesBall2") # Go get the ball!
 	
 	addContinue("setState", ["findStickFinding"])
 
 func findStickFinding():
 	if(!foundStick):
-		saynn("Find the ball! Find the ball! Find the ball!")
+		saynn("Найди мяч! Найди мяч! Найди мяч!")
 	else:
-		saynn("Bring the ball back! Bring the ball back! Bring the ball back!")
+		saynn("Принеси мяч! Принеси мяч! Принеси мяч!")
 	var roomID:String = GM.pc.location
 	aimCamera(roomID)
 	
 	if(!isStickFake):
 		if(roomID == stickLoc && !foundStick):
-			addButton("BALL!", "Grab the ball!", "grabStick")
+			addButton("МЯЧ!", "Хватай мяч!", "grabStick")
 		
 		if(foundStick && roomID == ownerLoc):
-			addButton("Give ball!", "Give your owner the ball", "setState", ["gaveStick"])
+			addButton("Дай мяч!", "Подать мячик хозяину", "setState", ["gaveStick"])
 	else:
 		if(moveAmount >= 3 && roomID == ownerLoc):
-			addButton("No ball..", "You couldn't find your owner's ball..", "setState", ["fakeStickFound"])
+			addButton("Мячика нет...", "Тебе не удалось найти мячик хозяина...", "setState", ["fakeStickFound"])
 	
 	if(GM.world.canGoID(roomID, GameWorld.Direction.NORTH)):
 		addButtonAt(6, "North", "Go north", "go", [GameWorld.Direction.NORTH, Direction.North])
@@ -501,36 +501,36 @@ func findStickFinding_do(_id:String, _args:Array):
 
 func gaveStick():
 	playAnimation(StageScene.PuppyDuo, "stand", {pc=getOwnerID(), npcAction="back", npcBodyState={naked=true}})
-	saynn("You sit down and drop the ball into your owner's hand!")
-	saynn("In exchange, {npc.name} pushes you down to your back and starts giving you lots of bellyrubs!")
+	saynn("Ты садишься и роняешь мячик прямо в руку хозяину!")
+	saynn("В награду {npc.name} валит тебя на спину и начинает вовсю чесать тебе пузико!")
 	talkModularOwnerToPC("SoftSlaveryWalkiesPraise") # Good puppy. What a good puppy.
 	addInfluenceObey(0.4)
-	saynn("You can't help but to wiggle from the many touches.")
-	saynn("After that's done, your owner helps you to get up.")
+	saynn("Ты не можешь удержаться и начинаешь вилять всем телом от этих ласк.")
+	saynn("Когда всё заканчивается, хозяин помогает тебе подняться.")
 	paradedOutcome()
 
 func stickTooFar():
 	playAnimation(StageScene.PuppySexStart, "start", {pc=getOwnerID(), npcBodyState={naked=true}})
 	if(isStickFake):
-		saynn("You get pretty far from your owner.. trying to find the ball.. but fail.. where did it go?")
-		saynn("Eventually, your owner catches up with you.")
+		saynn("Ты уходишь довольно далеко от хозяина... пытаясь найти мячик... но тщетно... куда же он делся?")
+		saynn("В конце концов, хозяин тебя догоняет.")
 		talkModularOwnerToPC("SoftSlaveryWalkiesBallTooFarFake") #Couldn't find the ball? It's because it's in my hand, you silly pup.
-		saynn("Looks like you got tricked.. there was never a ball.")
+		saynn("Похоже, тебя разыграли... никакого мячика и не было.")
 		addInfluenceObey(0.2)
 	else:
-		saynn("You get pretty far from your owner.. but {npc.he} easily {npc.verb('catch', 'catches')} up with you.")
+		saynn("Ты уходишь довольно далеко от своего хозяина... но {npc.he} легко {npc.verb('catch', 'catches')} за тобой.")
 		talkModularOwnerToPC("SoftSlaveryWalkiesBallTooFar") #Where do you think you're going? What a silly pup, did you get lost trying to find the ball?
 		addInfluenceObey(0.2)
-		saynn("You let out a soft whine.")
+		saynn("Ты издаешь тихий скулящий звук.")
 	paradedOutcome()
 
 func fakeStickFound():
 	playAnimation(StageScene.PuppySexStart, "pat", {pc=getOwnerID(), npcBodyState={naked=true}})
-	saynn("You come back to your owner and lower your head, producing a sad, soft whine.")
-	saynn("{npc.name} smiles and starts giving you headpats!")
+	saynn("Ты возвращаешься к хозяину и опускаешь голову, издавая печальный, тихий скулёж.")
+	saynn("{npc.name} улыбается и начинает гладить тебя по голове!")
 	talkModularOwnerToPC("SoftSlaveryWalkiesNoBallFound") # You're sad because you couldn't find my ball? That's because I did a fake throw. Such a silly puppy.
 	addInfluenceObey(0.4)
-	saynn("You got tricked! But the many pats make up for it.")
+	saynn("Тебя обхитрили! Но за это тебя щедро погладили.")
 	paradedOutcome()
 
 func saveData() -> Dictionary:

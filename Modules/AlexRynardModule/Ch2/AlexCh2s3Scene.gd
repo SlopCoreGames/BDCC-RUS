@@ -43,1770 +43,1770 @@ func _run():
 		addCharacter("alexrynard")
 	if(state == "time1"):
 		playAnimation(StageScene.Duo, "sit", {npc="alexrynard", npcAction="sit"})
-		saynn("Helping him is the least you can do after everything. You sit nearby and proceed to work, fixing broken datapads and shock remotes.")
+		saynn("Помочь ему — это меньшее, что ты можешь сделать после всего пережитого. Ты садишься рядом и принимаешься за работу: чинишь сломанные датапады и шоковые пульты.")
 
-		saynn("Alex sits quietly for some time. But then he leans close to you and puts his hand on your shoulder.")
+		saynn("Алекс какое-то время сидит тихо. Но затем он наклоняется к тебе и кладет руку тебе на плечо.")
 
-		saynn("[say=alexrynard]Thank you.[/say]")
+		saynn("[say=alexrynard]Спасибо.[/say]")
 
-		saynn("[say=pc]Don't mention it.[/say]")
+		saynn("[say=pc]Не стоит благодарности.[/say]")
 
-		saynn("[say=alexrynard]Try and stop me.[/say]")
+		saynn("[say=alexrynard]Попробуй, останови меня.[/say]")
 
-		saynn("He chuckles and returns to work.")
+		saynn("Он усмехается и возвращается к работе.")
 
-		saynn("Time flies. For some reason both of you seem to be working faster than before. What used to take you hours now just takes about thirty minutes to do. Could be that you just got more skilled at this.")
+		saynn("Время летит незаметно. По какой-то причине вы оба работаете быстрее, чем раньше. То, на что раньше уходили часы, теперь занимает всего минут тридцать. Возможно, ты просто набила руку.")
 
-		addButton("Continue", "See what happens next", "after_work_check")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_work_check")
 	if(state == "toolate"):
 		playAnimation(StageScene.Duo, "sit", {npc="alexrynard"})
-		saynn("Eventually the station's lights begin to dim down, signaling the end of the work day.")
+		saynn("В конце концов свет на станции начинает тускнеть, сигнализируя об окончании рабочего дня.")
 
-		saynn("Alex hands you the credits for the work.")
+		saynn("Алекс протягивает тебе кредиты за работу.")
 
-		saynn("[say=alexrynard]Good job. We could do something together if you want. Or we can just go our merry ways, that's fine too.[/say]")
+		saynn("[say=alexrynard]Отличная работа. Если хочешь, можем заняться чем-нибудь вместе. Или можем просто разойтись каждый своим путем, как тебе удобно.[/say]")
 
-		addButton("Just go", "Just go", "endthescene")
-		addButton("Trust exercises", "Might as well get a little bit kinky", "start_trust")
+		addButton("Просто иди", "Просто иди", "endthescene")
+		addButton("Упражнения на доверие", "Можно и немного пошалить", "start_trust")
 	if(state == "aftersomefixing"):
 		playAnimation(StageScene.Duo, "sit", {npc="alexrynard"})
-		saynn("After a few hours of work, it's time to take a break.")
+		saynn("Спустя несколько часов работы пора сделать перерыв.")
 
-		saynn("Alex hands you the credits for what you have already done.")
+		saynn("Алекс протягивает тебе кредиты за уже проделанную работу.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "time2"):
 		playAnimation(StageScene.Duo, "sit", {npc="alexrynard", npcAction="sit"})
-		saynn("You return to the usual grind. Alex does the same. It's so much easier to work together, having someone nearby helps you to focus. It helps him too it seems.")
+		saynn("Ты возвращаешься к привычной рутине. Алекс делает то же самое. Работать вместе гораздо проще — присутствие кого-то рядом помогает сосредоточиться. Похоже, ему это тоже на руку.")
 
-		saynn("[say=pc]How.. is your back doing?[/say]")
+		saynn("[say=pc]Как... твоя спина?[/say]")
 
-		saynn("[say=alexrynard]Same as before.[/say]")
+		saynn("[say=alexrynard]Как обычно.[/say]")
 
-		saynn("[say=pc]Does it break often?[/say]")
+		saynn("[say=pc]Она часто ломается?[/say]")
 
-		saynn("[say=alexrynard]It's.. fine. Does what its supposed to do. I don't want to be mean to the creators. It allows me to walk after all.[/say]")
+		saynn("[say=alexrynard]Всё... нормально. Делает то, что должна. Не хочется злиться на создателей. В конце концов, благодаря ей я могу ходить.[/say]")
 
-		saynn("You nod. The room stays quiet for some time.")
+		saynn("Ты киваешь. В комнате на некоторое время воцаряется тишина.")
 
-		saynn("[say=alexrynard]But it's pretty shit. And it was shit even back then.[/say]")
+		saynn("[say=alexrynard]Но это полная херня. Да и тогда всё было через жопу.[/say]")
 
-		saynn("[say=pc]Think you would have been able to do a better job?[/say]")
+		saynn("[say=pc]Думаешь, ты бы справился лучше?[/say]")
 
-		saynn("Alex sighs.")
+		saynn("Алекс вздыхает.")
 
-		saynn("[say=alexrynard]Back then.. I'd say yes, I would have created something a hundred times better. But not now. I'm not putting my inventions anywhere near my body anymore. Got enough scars.[/say]")
+		saynn("[say=alexrynard]Тогда... Думаю, да, я бы создал что-то в сто раз круче. Но не сейчас. Я больше не подпущу свои изобретения к своему телу. Шрамов и так хватает.[/say]")
 
-		saynn("[say=pc]Looks like you don't trust yourself.[/say]")
+		saynn("[say=pc]Похоже, ты сама себе не доверяешь.[/say]")
 
-		saynn("He smiles.")
+		saynn("Он улыбается.")
 
-		saynn("[say=alexrynard]You're right, I trust you more.[/say]")
+		saynn("[say=alexrynard]Ты прав, тебе я доверяю больше.[/say]")
 
-		saynn("You don't even realize.. but you worked through most of what's left of the piles of broken devices without even realizing it.")
+		saynn("Ты даже не замечаешь... но ты перебрала почти все оставшиеся кучи сломанных девайсов, сама того не осознавая.")
 
-		saynn("[say=pc]We're almost done![/say]")
+		saynn("[say=pc]Мы почти закончили![/say]")
 
-		saynn("[say=alexrynard]Huh. Let's not rush ourselves. Or bad things will happen.[/say]")
+		saynn("[say=alexrynard]Хм. Давай не будем спешить. А то случится какая-нибудь хрень.[/say]")
 
-		saynn("That's fair.")
+		saynn("Справедливо.")
 
-		addButton("Continue", "See what happens next", "after_work_check")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_work_check")
 	if(state == "time3"):
 		playAnimation(StageScene.Duo, "sit", {npc="alexrynard", npcAction="sit"})
-		saynn("Inspired, you continue fixing the rest of the datapads and broken remotes. You feel like you know each component by heart by now.")
+		saynn("Вдохновленная, ты продолжаешь чинить оставшиеся датапады и сломанные пульты. Кажется, ты уже выучила каждый компонент наизусть.")
 
-		saynn("You count how many devices are left.. about 9? Wow. Each one takes about an hour to fix.. so it looks like you will just need one more session after this!")
+		saynn("Ты считаешь, сколько устройств осталось... около девяти? Ого. На починку каждого уходит примерно час... так что, похоже, после этого тебе понадобится еще всего одна сессия!")
 
-		saynn("[say=alexrynard]They will bring more.. for sure.[/say]")
+		saynn("[say=alexrynard]Они еще принесут.. это точно.[/say]")
 
-		saynn("[say=pc]What if you're wrong?[/say]")
+		saynn("[say=pc]А что, если ты ошибаешься?[/say]")
 
-		saynn("[say=alexrynard]You can't imagine how much I want to be wrong.[/say]")
+		saynn("[say=alexrynard]Ты даже не представляешь, как сильно я хочу ошибаться.[/say]")
 
-		saynn("You decide to shut up and work-work-work!")
+		saynn("Ты решаешь заткнуться и работать-работать-работать!")
 
-		addButton("Continue", "See what happens next", "after_work_check")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_work_check")
 	if(state == "time4"):
 		playAnimation(StageScene.Duo, "sit", {npc="alexrynard", npcAction="sit"})
-		saynn("No extra devices were brought.. so you only have two more to fix each!")
+		saynn("Дополнительных устройств не принесли... так что вам осталось починить всего по два штуки на каждого!")
 
-		saynn("[say=alexrynard]No rush, please.[/say]")
+		saynn("[say=alexrynard]Только не спеши, пожалуйста.[/say]")
 
-		saynn("[say=pc]What, you don't even know what you're gonna do with all the free time?[/say]")
+		saynn("[say=pc]Что, ты даже не знаешь, чем займешься во все это свободное время?[/say]")
 
-		saynn("[say=alexrynard]Pff. Of course I know.[/say]")
+		saynn("[say=alexrynard]Пфф. Конечно, знаю.[/say]")
 
-		saynn("You try to pace yourself.. but it's hard to hide the excitement.. even if you do realize that this might not be the end.")
+		saynn("Ты пытаешься распределить силы... но трудно скрыть возбуждение... даже если ты понимаешь, что это может быть еще не конец.")
 
-		addButton("Continue", "See what happens next", "time4_done")
+		addButton("Продолжить", "Смотреть, что будет дальше", "time4_done")
 	if(state == "time4_done"):
 		playAnimation(StageScene.Duo, "sit", {npc="alexrynard"})
-		saynn("And so.. you tighten up the last screw.. and pop the rear panel back on.. Done. Truly done. No one has brought any new stuff. And all of the backlog is done. Empty. Completed.")
+		saynn("И вот... ты затягиваешь последний винт... и защелкиваешь заднюю панель... Готово. По-настоящему готово. Новых заказов нет. И весь завал разгребён. Пусто. Завершено.")
 
-		saynn("Alex seems to be done too.. your stares meet.")
+		saynn("Алекс, кажется, тоже закончила... ваши взгляды встречаются.")
 
-		saynn("[say=pc]So.. What now?[/say]")
+		saynn("[say=pc]Ну... и что теперь?[/say]")
 
-		saynn("The workbench is unnaturally empty. So weird.")
+		saynn("Верстак непривычно пуст. Так странно.")
 
-		saynn("[say=alexrynard]Um..[/say]")
+		saynn("[say=alexrynard]Эм...[/say]")
 
-		saynn("[say=pc]Didn't you want to go talk with the captain?[/say]")
+		saynn("[say=pc]Разве ты не хотела пойти поговорить с капитаном?[/say]")
 
-		saynn("[say=alexrynard]Yeah. But I'm tired. I will do it tomorrow. For now.. how about some rest?[/say]")
+		saynn("[say=alexrynard]Да. Но я устала. Сделаю это завтра. А пока... как насчёт отдыха?[/say]")
 
-		saynn("Sounds good.")
+		saynn("Звучит неплохо.")
 
-		saynn("[say=alexrynard]Nothing kinky, I promise. Just rest.[/say]")
+		saynn("[say=alexrynard]Обещаю, ничего пошлого. Просто отдых.[/say]")
 
-		addButton("Follow", "See what happens next", "time3_gofollow")
+		addButton("Следовать", "Смотреть, что будет дальше", "time3_gofollow")
 	if(state == "time3_gofollow"):
 		aimCameraAndSetLocName("eng_workshop")
 		GM.pc.setLocation("eng_workshop")
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard"})
-		saynn("Alex brings you to the staff break room. A very familiar room by now.")
+		saynn("Алекс ведёт тебя в комнату отдыха для персонала. Эта комната уже стала тебе очень знакомой.")
 
-		saynn("Both of you pop open a soda can each. Refreshing.. especially when it's free.")
+		saynn("Вы обе открываете по баночке газировки. Освежает... особенно когда она бесплатная.")
 
-		saynn("[say=alexrynard]I will search for something to watch. Just drop yourself onto the sofa.[/say]")
+		saynn("[say=alexrynard]Поищу что-нибудь посмотреть. А ты просто падай на диван.[/say]")
 
-		addButton("Sure", "Just do it", "time3_rest_sure")
-		addButton("Yes Sir", "Say this", "time3_rest_yessir")
+		addButton("Конечно", "Просто сделай это", "time3_rest_sure")
+		addButton("Есть, сэр", "Скажите это", "time3_rest_yessir")
 	if(state == "time3_rest_yessir"):
-		saynn("[say=pc]Yes, Sir.[/say]")
+		saynn("[say=pc]Есть, сэр.[/say]")
 
-		saynn("Alex raises a brow.. but then just smiles when you smile.")
+		saynn("Алекс приподнимает бровь... но, увидев твою улыбку, отвечает тебе улыбкой.")
 
-		saynn("[say=alexrynard]You don't really have to say it outside of..[/say]")
+		saynn("[say=alexrynard]Тебе вовсе не обязательно говорить это вне...[/say]")
 
-		saynn("[say=pc]I know.[/say]")
+		saynn("[say=pc]Я знаю.[/say]")
 
-		saynn("Your smile only becomes wider.")
+		saynn("Твоя улыбка становится только шире.")
 
-		saynn("[say=pc]What, you're gonna stop me~?[/say]")
+		saynn("[say=pc]Что, неужели ты решишь меня остановить~?[/say]")
 
-		saynn("The foxy tilts his head, his hand reaching for your collar, tugging you closer to the sofa.")
+		saynn("Лисенок наклоняет голову, его рука тянется к твоему воротнику, притягивая тебя ближе к дивану.")
 
-		saynn("[say=alexrynard]Sit, like a good {pc.boy}.[/say]")
+		saynn("[say=alexrynard]Садись, как послушная {pc.boy}.[/say]")
 
-		saynn("[say=pc]Yes, Sir.[/say]")
+		saynn("[say=pc]Есть, сэр.[/say]")
 
-		addButton("Sit", "Do it", "time3_rest_sure")
+		addButton("Сесть", "Сделай это", "time3_rest_sure")
 	if(state == "time3_rest_sure"):
 		playAnimation(StageScene.Duo, "sit", {npc="alexrynard"})
-		saynn("You take a seat on a sofa that has no right to be this soft. Maybe you're just too used to the inmate furniture being extremely stiff by now..")
+		saynn("Ты плюхаешься на диван, который просто не имеет права быть таким мягким. Может, ты просто слишком привык к жесткой тюремной мебели..")
 
-		saynn("The TV shows digital static while Alex is going through random cardboard boxes, searching.")
+		saynn("На экране телевизора рябит цифровое шипение, пока Алекс копается в каких-то картонных коробках, что-то выискивая.")
 
-		saynn("[say=alexrynard]There is gotta be something..[/say]")
+		saynn("[say=alexrynard]Должно же там что-то быть..[/say]")
 
-		saynn("[say=pc]What are you looking for?[/say]")
+		saynn("[say=pc]Что ты там ищешь?[/say]")
 
-		saynn("[say=alexrynard]Hold up.. Hell yeah, I found them.[/say]")
+		saynn("[say=alexrynard]Погоди-ка.. Черт возьми, да! Нашел![/say]")
 
-		saynn("He grabs two dusty vhs tapes and presents them to you.")
+		saynn("Он хватает две запыленные VHS-кассеты и протягивает их тебе.")
 
-		saynn("[say=alexrynard]So do you want to watch.. Celestial Odyssey or.. Quantum Hearts.[/say]")
+		saynn("[say=alexrynard]Ну так что, хочешь глянуть... «Небесную Одиссею» или... «Квантовые сердца»?[/say]")
 
-		saynn("[say=pc]What are they about?[/say]")
+		saynn("[say=pc]А о чем они?[/say]")
 
-		saynn("[say=alexrynard]I honestly have no idea.[/say]")
+		saynn("[say=alexrynard]Да без понятия, честно.[/say]")
 
-		saynn("Second one has the word 'heart' in it so it's probably something romantic..")
+		saynn("Во втором есть слово «сердца», так что, скорее всего, это какая-нибудь романтика..")
 
-		addButton("Celestial Odyssey", "Watch this one", "time3_cel_od")
-		addButton("Quantum Hearts", "Watch this one", "time3_qua_her")
+		addButton("Небесная Одиссея", "Посмотрим вот этот", "time3_cel_od")
+		addButton("Квантовые сердца", "Посмотрим вот этот", "time3_qua_her")
 	if(state == "time3_cel_od"):
 		playAnimation(StageScene.Duo, "sit", {npc="alexrynard", npcAction="sit"})
-		saynn("All that romantic stuff is for softies.")
+		saynn("Вся эта романтическая херня — для слабаков.")
 
-		saynn("[say=pc]First one sounds good.[/say]")
+		saynn("[say=pc]Первый звучит неплохо.[/say]")
 
-		saynn("Alex quickly slides the tape into the tv's tape player and sits near you. Both you and him are sipping soda while watching the movie.")
+		saynn("Алекс быстро вставляет кассету в видеомагнитофон и усаживается рядом с тобой. Вы оба потягиваете газировку, глядя на экран.")
 
-		saynn("Obviously it starts with some shots of space. The void is littered with millions of little colorful dots, forming beautiful patterns. But then, at some point, the camera turns to reveal a husk of a planet.")
+		saynn("Очевидно, всё начинается с кадров космоса. Пустота усыпана миллионами крошечных разноцветных точек, образующих красивые узоры. Но затем, в какой-то момент, камера поворачивается, открывая вид на остов планеты.")
 
-		saynn("A ship flies into view, the words 'Astral Voyager' clearly visible on its side.")
+		saynn("В кадре появляется корабль, на борту которого отчетливо видны слова «Астральный странник».")
 
-		saynn("[sayFemale]We were too late..[/sayFemale]")
+		saynn("[sayFemale]Мы опоздали...[/sayFemale]")
 
-		saynn("[say=alexrynard]Wow, that ship looks sick. Unpractical but sick.[/say]")
+		saynn("[say=alexrynard]Охренеть, какой корабль крутой. Непрактичный, но просто отвал башки![/say]")
 
-		saynn("Looks like Alex doesn't care much about the plot anymore.")
+		saynn("Похоже, Алексу на сюжет уже глубоко плевать.")
 
-		saynn("[sayFemale]We have to warn the others![/sayFemale]")
+		saynn("[sayFemale]Мы должны предупредить остальных![/sayFemale]")
 
-		saynn("Some kind of space anomaly suddenly attacks the spaceship, destroying one of the engines.")
+		saynn("Какая-то космическая аномалия внезапно атакует звездолет, уничтожая один из двигателей.")
 
-		saynn("[say=alexrynard]Really? Where were your eyes?[/say]")
+		saynn("[say=alexrynard]Серьезно? Ты куда вообще смотрел?![/say]")
 
-		saynn("[sayFemale]..we can't win. But we're not allowed to lose hope either, all power to the warpdrive![/sayFemale]")
+		saynn("[sayFemale]..нам не победить. Но и терять надежду нельзя, всю энергию на варп-двигатель![/sayFemale]")
 
-		saynn("All the stars become smeared lines while watching the ship warp from inside its cockpit.")
+		saynn("Глядя из кабины пилота, наблюдаешь, как звезды превращаются в размытые линии во время прыжка.")
 
-		saynn("[say=alexrynard]Ehh, ships don't really warp like that, it's clearly CGI. I will give them props for trying though.[/say]")
+		saynn("[say=alexrynard]Эх, корабли не прыгают вот так, это явно дешевая компьютерная графика. Но за попытку им можно поставить плюс.[/say]")
 
-		saynn("And so the rest of the movie is spent with the ship racing against the clock, trying to warn planets before the anomaly gets to them. For some reason others don't believe them.. to the point of the main characters having to fight their way through them all. It's a fun, mindless movie with lots of dogfights in space. Alex seems to be quite entertained by it.")
+		saynn("И вот остаток фильма корабль наперегонки со временем пытается предупредить планеты, пока аномалия не добралась до них. По какой-то причине остальные им не верят... до такой степени, что главным героям приходится пробиваться сквозь толпу. Это веселое, бездумное кино с кучей космических собачьих свалок. Похоже, Алекс в полном восторге.")
 
-		saynn("With the anomaly defeated.. The credits finally roll..")
+		saynn("Когда аномалия повержена... наконец-то начинают идти титры...")
 
-		saynn("[say=alexrynard]Wow.. When they had to sacrifice their ship.. That was so sad.[/say]")
+		saynn("[say=alexrynard]Вау... Когда им пришлось пожертвовать своим кораблем... Это было так грустно.[/say]")
 
-		saynn("[say=pc]That was the only way to kill the anomaly.[/say]")
+		saynn("[say=pc]Это был единственный способ уничтожить аномалию.[/say]")
 
-		saynn("[say=alexrynard]Yeah.. Well, no. They could have just let it haunt the bad guys, who cares about these assholes.[/say]")
+		saynn("[say=alexrynard]Да... Ну, нет. Они могли бы просто оставить её преследовать плохих парней, какая разница до этих мудаков?[/say]")
 
-		saynn("[say=pc]You could always build a new ship.[/say]")
+		saynn("[say=pc]Всегда можно построить новый корабль.[/say]")
 
-		saynn("Alex sighs.")
+		saynn("Алекс вздыхает.")
 
-		saynn("[say=alexrynard]True.[/say]")
+		saynn("[say=alexrynard]Верно.[/say]")
 
-		saynn("You watch the rest of the credits together in silence.")
+		saynn("Вы молча досматриваете титры.")
 
-		saynn("[say=alexrynard]Well, it was fun. Thanks for being around.[/say]")
+		saynn("[say=alexrynard]Ну, было весело. Спасибо, что составил(а) компанию.[/say]")
 
-		saynn("[say=pc]You better prepare for the captain giving you more work tomorrow.[/say]")
+		saynn("[say=pc]Тебе лучше подготовиться к тому, что завтра капитан нагрузит тебя новой работой.[/say]")
 
-		saynn("[say=alexrynard]Eh, I'd be surprised. There is probably not a single broken datapad left on the station.[/say]")
+		saynn("[say=alexrynard]Эх, я бы удивился. На станции, наверное, не осталось ни одного целого датапада.[/say]")
 
-		saynn("Alex notices how late it is.")
+		saynn("Алекс замечает, как поздно уже стало.")
 
-		saynn("[say=alexrynard]Shift time well spent. I hope you can find a way out of here. It's sleepy time.[/say]")
+		saynn("[say=alexrynard]Смена прошла не зря. Надеюсь, ты найдешь способ выбраться отсюда. Пора спать.[/say]")
 
-		saynn("You nod. Alex nods back and leaves you to it.")
+		saynn("Ты киваешь. Алекс кивает в ответ и оставляет тебя наедине с собой.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "time3_qua_her"):
 		playAnimation(StageScene.Duo, "sit", {npc="alexrynard", npcAction="sit"})
-		saynn("[say=pc]Second one sounds nice.[/say]")
+		saynn("[say=pc]Второй вариант звучит неплохо.[/say]")
 
-		saynn("Alex nods and inserts the second tape into the TV's tape player before taking a seat on your sofa.")
+		saynn("Алекс кивает, вставляет вторую кассету в видеомагнитофон и усаживается на твой диван.")
 
-		saynn("The film is about some kind of new device that is able to harness someone's feelings as a power source, eliminating the need for conventional resources. First ten minutes are spent explaining how it works exactly.")
+		saynn("Фильм рассказывает о каком-то новом устройстве, способном использовать человеческие чувства в качестве источника энергии, избавляя от необходимости в привычных ресурсах. Первые десять минут уходят на объяснение того, как именно это работает.")
 
-		saynn("[say=alexrynard]Huh, so you can just make a bunch of fuckmachines and farm the pleasure feeling that way.[/say]")
+		saynn("[say=alexrynard]Хм, значит, можно просто наклепать кучу секс-машин и выкачивать из них чувство удовольствия.[/say]")
 
-		saynn("The movie cuts to a modern-day 'power factory' full of tied up people who are constantly being whipped and spanked by some automated system, their bodies bruised and bleeding.")
+		saynn("Сцена в фильме сменяется видом на современную «энергетическую фабрику», забитую связанными людьми, которых постоянно хлещут и шлепают автоматизированные системы; их тела покрыты синяками и кровоточат.")
 
-		saynn("[say=alexrynard]..or that.. Pain is a pretty easy feeling to farm too I guess.[/say]")
+		saynn("[say=alexrynard]..или вот это.. Боль тоже довольно легко превратить в ресурс, я полагаю.[/say]")
 
-		saynn("One of the main characters, a young engineer, sets off to stop that madness when one of the rebels shows him the full truth about how people are abused for energy..")
+		saynn("Один из главных героев, молодой инженер, отправляется на борьбу с этим безумием после того, как один из повстанцев открывает ему всю правду о том, как людей истязают ради энергии...")
 
-		saynn("You look at Alex and see that he is a bit lonely. The movie isn't exciting him that much either.")
+		saynn("Ты смотришь на Алекса и видишь, что ему немного одиноко. Фильм его тоже не особо забавляет.")
 
-		addButton("Cuddle up", "(No sex) Cuddle with Alex while watching the movie", "time3_cuddleup")
-		addButton("Sit on lap", "(Sex) Who cares about that movie..", "time3_sitlap")
+		addButton("Прижаться", "(Без секса) Прижаться к Алексу во время просмотра фильма", "time3_cuddleup")
+		addButton("Сесть на колени", "(Секс) Да какая разница, что там за фильм...", "time3_sitlap")
 	if(state == "time3_cuddleup"):
 		playAnimation(StageScene.Cuddling, "idle", {pc="alexrynard", npc="pc"})
-		saynn("You shift closer to Alex, your chin lands on his shoulder.")
+		saynn("Ты придвигаешься ближе к Алексу и кладешь подбородок ему на плечо.")
 
-		saynn("[say=pc]You look lonely..[/say]")
+		saynn("[say=pc]Ты выглядишь одиноко..[/say]")
 
-		saynn("He turns his head and looks at you. The whole room is illuminated by the pink light coming from the TV.")
+		saynn("Он поворачивает голову и смотрит на тебя. Всю комнату заливает розовый свет, исходящий от телевизора.")
 
-		saynn("[say=pc]I could fix that..[/say]")
+		saynn("[say=pc]Я могла бы это исправить..[/say]")
 
-		saynn("And so you tackle him and snug up into his embrace.")
+		saynn("И вот ты наваливаешься на него, уютно устраиваясь в его объятиях.")
 
-		saynn("[say=alexrynard]Yeah.. this is much better.[/say]")
+		saynn("[say=alexrynard]Да.. так гораздо лучше.[/say]")
 
-		saynn("[say=pc]You're welcome.[/say]")
+		saynn("[say=pc]Не за что.[/say]")
 
-		saynn("You watch the rest of the movie. At some point the two protagonists get cornered by the bad guys at the pain factory. They can't fight back because their weapons are drained. All hope seems to be lost..")
+		saynn("Ты досматриваешь фильм. В какой-то момент двух главных героев зажимают в угол злодеи на фабрике боли. Они не могут дать отпор, потому что их оружие разряжено. Кажется, надежды нет..")
 
-		saynn("And yet, they suddenly realize that they could use love, the most powerful feeling in the world. They kiss each other.. causing the factory's batteries to suddenly get overcharged beyond their limit, making the whole place explode. Of course, somehow, the two main characters survive.")
+		saynn("И тут они внезапно осознают, что могут использовать любовь — самое мощное чувство в мире. Они целуются.. отчего батареи фабрики внезапно перегружаются сверх предела, и всё здание взрывается. Разумеется, оба главных героя каким-то чудом выживают.")
 
-		saynn("[say=alexrynard]That was so predictable. Love saves everything, give me a break..[/say]")
+		saynn("[say=alexrynard]До чего же предсказуемо. Любовь спасает всё на свете, ну серьезно..[/say]")
 
-		saynn("[say=pc]You didn't like it?[/say]")
+		saynn("[say=pc]Тебе не понравилось?[/say]")
 
-		saynn("[say=alexrynard]It was alright.. with you especially.[/say]")
+		saynn("[say=alexrynard]Вполне сойдет.. особенно в твоей компании.[/say]")
 
-		saynn("He smiles kindly and hugs you tighter.")
+		saynn("Он ласково улыбается и прижимает тебя к себе крепче.")
 
-		saynn("You watch the credits together.")
+		saynn("Вы вместе смотрите титры.")
 
-		saynn("[say=alexrynard]Well, it was fun. Thanks for being around.[/say]")
+		saynn("[say=alexrynard]Ну, было весело. Спасибо, что составил(а) компанию.[/say]")
 
-		saynn("[say=pc]You better prepare for the captain giving you more work tomorrow.[/say]")
+		saynn("[say=pc]Тебе лучше подготовиться к тому, что завтра капитан нагрузит тебя новой работой.[/say]")
 
-		saynn("[say=alexrynard]Eh, I'd be surprised. There is probably not a single broken datapad left on the station.[/say]")
+		saynn("[say=alexrynard]Эх, я бы удивился. На станции, наверное, не осталось ни одного целого датапада.[/say]")
 
-		saynn("Alex notices how late it is.")
+		saynn("Алекс замечает, как поздно уже стало.")
 
-		saynn("[say=alexrynard]Shift time well spent. I hope you can find a way out of here. It's time for bed.[/say]")
+		saynn("[say=alexrynard]Смена прошла не зря. Надеюсь, ты найдешь способ выбраться отсюда. Пора спать.[/say]")
 
-		saynn("You nod. Alex nods back and leaves you to it.")
+		saynn("Ты киваешь. Алекс кивает в ответ и оставляет тебя наедине с собой.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "time3_sitlap"):
 		playAnimation(StageScene.BreastFeeding, "teasealt", {pc="pc", npc="alexrynard", bodyState={naked=true}})
-		saynn("Why not do something more fun. You shift closer to Alex.. before sitting on his lap.")
+		saynn("Почему бы не заняться чем-нибудь более веселым? Ты придвигаешься ближе к Алексу.. а затем усаживаешься к нему на колени.")
 
-		saynn("[say=pc]You look lonely..[/say]")
+		saynn("[say=pc]Ты выглядишь одиноко..[/say]")
 
-		saynn("Alex raises a brow. The whole room is illuminated by the pink light coming from the TV, creating a cozy atmosphere.")
+		saynn("Алекс удивленно вскидывает бровь. Вся комната залита розовым светом от телевизора, создающим уютную атмосферу.")
 
-		saynn("[say=pc]I could fix that..[/say]")
+		saynn("[say=pc]Я могла бы это исправить..[/say]")
 
-		saynn("And so you take off your clothes, presenting your {pc.masc} body to him, your {pc.breasts} out on display.")
+		saynn("И вот ты снимаешь одежду, демонстрируя ему своё {pc.masc} тело, выставляя напоказ свои {pc.breasts}.")
 
-		saynn("Alex smiles.")
+		saynn("Алекс улыбается.")
 
-		saynn("[say=alexrynard]How are you planning to do that?[/say]")
+		saynn("[say=alexrynard]И как ты собираешься это сделать?[/say]")
 
-		addButton("Tie him up", "Use his own restraints against him", "time3_tiehimup")
+		addButton("Связать его", "Использовать его же фиксаторы против него самого", "time3_tiehimup")
 	if(state == "time3_tiehimup"):
 		playAnimation(StageScene.BreastFeeding, "teasealt", {pc="pc", npc="alexrynard", bodyState={naked=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Alex gets a little concerned when you start undressing him, taking off his shirt, shorts and even tugging on his underwear. You lean close to his ear.")
+		saynn("Алекс начинает немного беспокоиться, когда ты приступаешь к раздеванию его: снимаешь рубашку, шорты и даже тянешь за его трусы. Ты наклоняешься к самому его уху.")
 
-		saynn("[say=pc]You will have to trust me on that one~.[/say]")
+		saynn("[say=pc]В этом вопросе тебе придётся мне довериться~.[/say]")
 
-		saynn("You find a few restraints in his pockets.. a blindfold and some cuffs. You hold them while looking at him, smiling.")
+		saynn("Ты находишь в его карманах несколько предметов... повязку на глаза и наручники. Ты держишь их, глядя на него с улыбкой.")
 
-		saynn("[say=pc]You know what to say if you want me to stop~.[/say]")
+		saynn("[say=pc]Ты знаешь, что сказать, если захочешь, чтобы я остановилась~.[/say]")
 
-		saynn("The corners of his mouth raise. He didn't say the safeword.. which means he doesn't mind it.")
+		saynn("Уголки его губ приподнимаются. Он не произнёс стоп-слово... а значит, он совсем не против.")
 
-		saynn("You begin to carefully tie a blindfold around his eyes and then just as carefully bring his arms behind his back before cuffing them.")
+		saynn("Ты начинаешь осторожно завязывать ему глаза повязкой, а затем так же аккуратно заводишь его руки за спину и сковываешь их наручниками.")
 
-		saynn("Your hands slide over his manly curves, causing the muscles that you touch to twitch a little. His red rocket is leaving its sheath and is now poking your crotch.. huh..")
+		saynn("Твои руки скользят по его мужественным изгибам, заставляя мышцы под твоими пальцами слегка подергиваться. Его «красная ракета» уже наполовину вышла из ножен и теперь упирается тебе в промежность... ох...")
 
-		saynn("Should you put a condom on him?")
+		saynn("Стоит ли надеть на него презерватив?")
 
-		addButtonWithChecks("Best condom", "Put your best condom on his cock", "time3_lap_bestcondom", [], [ButtonChecks.HasCondoms])
-		addButtonWithChecks("Worst condom", "Put your worst condom on his cock", "time3_lap_worstcondom", [], [ButtonChecks.HasCondoms])
-		addButton("No condom", "Raw will feel the best", "time3_lap_nocondom")
+		addButtonWithChecks("Лучший презерватив", "Надеть на его член лучший презерватив", "time3_lap_bestcondom", [], [ButtonChecks.HasCondoms])
+		addButtonWithChecks("Худший презерватив", "Надеть на его член самый паршивый презерватив", "time3_lap_worstcondom", [], [ButtonChecks.HasCondoms])
+		addButton("Без презерватива", "Без резинки будет приятнее всего", "time3_lap_nocondom")
 	if(state == "time3_lap_usedcondom"):
 		playAnimation(StageScene.SexCowgirl, "tease", {npc="pc", pc="alexrynard", bodyState={naked=true, hard=true, condom=usedCondom}, npcBodyState={naked=true}})
-		saynn("There is no reason for this to get messy.. so you grab one of your condoms, quickly rip off the packaging, and begin to carefully apply it onto Alex's member. You can feel his girth pulsing slightly in your hands as you do it.")
+		saynn("Нет причин для лишней грязи... ты хватаешь один из своих презервативов, быстро разрываешь упаковку и начинаешь осторожно натягивать его на член Алекса. Ты чувствуешь, как его плоть слегка пульсирует в твоих руках.")
 
-		saynn("[say=alexrynard]Good {pc.boy}..[/say]")
+		saynn("[say=alexrynard]Хорош {pc.boy}..[/say]")
 
-		saynn("Pff, you are supposed to be in charge here.")
+		saynn("Пфф, вообще-то тут должна заправлять ты.")
 
-		saynn("[say=pc]Don't make me change my mind, sly fox.[/say]")
+		saynn("[say=pc]Не заставляй меня передумать, хитрая лисица.[/say]")
 
-		saynn("He smirks.")
+		saynn("Он ухмыляется.")
 
-		saynn("[say=alexrynard]My bad, I should have seen this coming.[/say]")
+		saynn("[say=alexrynard]Мой косяк, надо было предвидеть такое.[/say]")
 
-		saynn("What a brat.. The blindfold hides his eyes but you can just feel the smug aura coming off from him.")
+		saynn("Ну и наглец... Повязка скрывает его глаза, но его самодовольную ауру чувствуешь кожей.")
 
-		saynn("[say=pc]If you keep this up, you might not be coming at all today.[/say]")
+		saynn("[say=pc]Если продолжишь в том же духе, сегодня можешь вообще никуда не пойти.[/say]")
 
-		saynn("[say=alexrynard]I feel like you need it a lot more than I do~.[/say]")
+		saynn("[say=alexrynard]Мне кажется, тебе это нужно куда больше, чем мне~.[/say]")
 
-		saynn("Wow. He's not wrong though.. You push him into the sofa and position yourself above his member.. The movie keeps playing but exactly zero people care about it currently.")
+		saynn("Ого. А ведь он не ошибается... Ты вжимаешь его в диван и устраиваешься сверху, нависая над его членом... Фильм продолжает идти, но сейчас на него всем плевать.")
 
-		addButtonWithChecks("Cowgirl (Vag)", "Ride him with your pussy", "time3_lap_ridepussy", [], [ButtonChecks.HasReachableVagina])
-		addButton("Cowgirl (Anal)", "Ride him with your ass", "time3_lap_rideanal")
+		addButtonWithChecks("Наездница (Вагина)", "Трахни его своей киской", "time3_lap_ridepussy", [], [ButtonChecks.HasReachableVagina])
+		addButton("Наездница (Анальный секс)", "Трахни его своей жопой", "time3_lap_rideanal")
 	if(state == "time3_lap_nocondom"):
 		playAnimation(StageScene.SexCowgirl, "tease", {npc="pc", pc="alexrynard", bodyState={naked=true, hard=true, condom=usedCondom}, npcBodyState={naked=true}})
-		saynn("It's much more fun without any condoms. So you decide to do it raw.. There aren't that many chances to get all of the foxy to yourself anyway.")
+		saynn("Без презервативов куда веселее. Так что ты решаешь трахаться всухую... В конце концов, не так часто выпадает шанс заполучить эту лисичку целиком и полностью.")
 
-		saynn("Your hands slide over his member more, getting it fully hard and spreading his own precum all over the veiny surface, preparing for what's next..")
+		saynn("Твои руки всё сильнее скользят по его члену, доводя его до полной твердости и размазывая его собственную смазку по вздутым венам, подготавливая почву для того, что будет дальше...")
 
-		saynn("[say=alexrynard]No rubber? I hope you know I can't really pull out like this~.[/say]")
+		saynn("[say=alexrynard]Без резины? Надеюсь, ты понимаешь, что в таком состоянии я вряд ли смогу вовремя вытащить~.[/say]")
 
-		saynn("Who said anything about pulling out..")
+		saynn("Кто вообще говорил о том, чтобы вытаскивать?..")
 
-		saynn("[say=pc]I'm in charge here, sly fox. You're just along for the ride~.[/say]")
+		saynn("[say=pc]Здесь главная я, хитрая лисичка. А ты просто наслаждаешься поездкой~.[/say]")
 
-		saynn("He smirks.")
+		saynn("Он ухмыляется.")
 
-		saynn("[say=alexrynard]My bad, I should have seen this coming.[/say]")
+		saynn("[say=alexrynard]Мой косяк, надо было предвидеть такое.[/say]")
 
-		saynn("What a brat.. The blindfold hides his eyes but you can just feel the smug aura coming off from him.")
+		saynn("Ну и наглец... Повязка скрывает его глаза, но его самодовольную ауру чувствуешь кожей.")
 
-		saynn("[say=pc]If you keep this up, you might not be coming at all today.[/say]")
+		saynn("[say=pc]Если продолжишь в том же духе, сегодня можешь вообще никуда не пойти.[/say]")
 
-		saynn("[say=alexrynard]I feel like you need it a lot more than I do~.[/say]")
+		saynn("[say=alexrynard]Мне кажется, тебе это нужно куда больше, чем мне~.[/say]")
 
-		saynn("Wow. He's not wrong though.. You push him into the sofa and position yourself above his member.. The movie keeps playing but exactly zero people care about it currently.")
+		saynn("Ого. А ведь он не ошибается... Ты вжимаешь его в диван и устраиваешься сверху, нависая над его членом... Фильм продолжает идти, но сейчас на него всем плевать.")
 
-		addButtonWithChecks("Cowgirl (Vag)", "Ride him with your pussy", "time3_lap_ridepussy", [], [ButtonChecks.HasReachableVagina])
-		addButton("Cowgirl (Anal)", "Ride him with your ass", "time3_lap_rideanal")
+		addButtonWithChecks("Наездница (Вагина)", "Трахни его своей киской", "time3_lap_ridepussy", [], [ButtonChecks.HasReachableVagina])
+		addButton("Наездница (Анальный секс)", "Трахни его своей жопой", "time3_lap_rideanal")
 	if(state == "time3_lap_ridepussy"):
 		playAnimation(StageScene.SexCowgirl, "sex", {npc="pc", pc="alexrynard", bodyState={naked=true, hard=true, condom=usedCondom}, npcBodyState={naked=true, hard=true}})
-		saynn("Time for games is over, now comes the real action. You carefully align his blood-colored length with your {pc.pussyStretch} pussy slit and proceed to lower yourself, your petals being spread by the pointy tip of a canine cock.")
+		saynn("Время игр прошло, теперь начинается настоящая жара. Ты аккуратно совмещаешь его кроваво-красную плоть со своей щелью {pc.pussyStretch} и начинаешь опускаться, чувствуя, как лепестки твоей киски раздвигаются острым кончиком его собачьего члена.")
 
-		saynn("Alex is completely helpless with all the restraints.. but looks like he doesn't mind much. You can see his chest moving slower as you start to accept his member inside you, the tip spreading the slick inner walls and quickly passing your pleasure spot.")
+		saynn("Алекс совершенно беспомощен во всех этих путах... но, похоже, его это не особо беспокоит. Ты видишь, как его грудная клетка вздымается всё медленнее, когда ты начинаешь принимать его член внутрь; головка раздвигает влажные стенки и быстро находит твою точку удовольствия.")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your member reacts instantly by getting hard.. well, trying to. There is pressure slowly building in your chastity cage now..")
+			saynn("Твой член реагирует мгновенно, становясь твердым... ну, по крайней мере, он пытается. В твоей клетке целомудрия начинает медленно нарастать давление...")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your own {pc.penis} reacts instantly by getting hard, a lonely tip of your precum shining on its tip.")
+			saynn("Твоя собственная {pc.penis} мгновенно реагирует эрекцией, а на кончике блестит одинокая капля предэякулята.")
 
-		saynn("[say=pc]Yeah.. I can do whatever I want with you, sly fox..[/say]")
+		saynn("[say=pc]Да уж... я могу делать с тобой всё, что захочу, хитрая лисичка...[/say]")
 
-		saynn("[say=alexrynard]You're just lucky I allowed you to cuff me.[/say]")
+		saynn("[say=alexrynard]Тебе просто повезло, что я позволил тебе надеть на меня наручники.[/say]")
 
-		saynn("Huh. You catch him off-guard by letting your pussy take the rest of his cock in one motion, your buttcheeks slapping against his hips.")
+		saynn("Хм. Ты застаешь его врасплох, одним движением заглатывая остаток его члена, при этом твои ягодицы с хлопком шлепаются о его бедра.")
 
-		saynn("[say=alexrynard]Nh..[/say]")
+		saynn("[say=alexrynard]Нх...[/say]")
 
-		saynn("[say=pc]Is that so? You had every chance to stop me, sly foxy.[/say]")
+		saynn("[say=pc]Вот как? У тебя был каждый шанс остановить меня, хитрая лисица.[/say]")
 
-		saynn("You don't just sit on him, you proceed to slowly grind his lap before switching to riding, raising your body before bringing it back down, his length fully inside you"+str(", the condom providing enough lube to allow for that" if usedCondom else ", his precum mixing with your juices, lowering friction")+".")
+		saynn("Ты не просто садишься на него, ты начинаешь медленно тереться о его пах, а затем переходишь к полноценному фрикционному езде, поднимая тело и снова опускаясь на него, пока его плоть полностью не входит в тебя."+str(", the condom providing enough lube to allow for that" if usedCondom else ", his precum mixing with your juices, lowering friction")+".")
 
-		saynn("[say=alexrynard]Perhaps I wanted to see what would happen.[/say]")
+		saynn("[say=alexrynard]Возможно, мне просто хотелось посмотреть, что из этого выйдет.[/say]")
 
-		saynn("[say=pc]Such a shame that I blindfolded you then, huh~?[/say]")
+		saynn("[say=pc]Какая жалость, что я тогда завязала тебе глаза, а, хм~?[/say]")
 
-		saynn("You keep riding him while having this little chat, your hands resting on his pecs, your digits digging into his short orange fur.")
+		saynn("Ты продолжаешь скакать на нем, ведя эту болтовню; твои ладони лежат на его грудных мышцах, а пальцы впиваются в короткий рыжий мех.")
 
-		saynn("[say=alexrynard]I feel enough, don't worry.[/say]")
+		saynn("[say=alexrynard]Я и так всё чувствую, не беспокойся.[/say]")
 
-		addButton("Faster", "Ride him faster", "time3_lap_ridepussy_faster")
+		addButton("Быстрее", "Скачи на нем быстрее", "time3_lap_ridepussy_faster")
 	if(state == "time3_lap_ridepussy_faster"):
 		playAnimation(StageScene.SexCowgirl, "fast", {npc="pc", pc="alexrynard", bodyState={naked=true, hard=true, condom=usedCondom}, npcBodyState={naked=true, hard=true}})
-		saynn("Gradually, you increase the pace, bringing yourself onto his member faster and harder. You can feel his knot getting bigger inside you.. at some point it becomes too big to fit inside, just slapping against your wet drippy pussy instead. Occasional moans escape from you..")
+		saynn("Постепенно ты наращиваешь темп, насаживаясь на его член всё быстрее и жестче. Ты чувствуешь, как его узел внутри тебя раздувается... в какой-то момент он становится слишком большим, чтобы поместиться целиком, и начинает просто хлестать по твоей мокрой, сочащейся киске. С твоих губ то и дело срываются стоны...")
 
-		saynn("[say=pc]How much do you trust me, foxy~? Mh-h..[/say]")
+		saynn("[say=pc]Насколько сильно ты мне доверяешь, лисичка~? М-м-м...[/say]")
 
-		saynn("[say=alexrynard]What do you think?[/say]")
+		saynn("[say=alexrynard]И что ты об этом думаешь?[/say]")
 
-		saynn("Suddenly, you stop moving your hips, letting his cock just rest inside you. One of your hands slides up to his neck.. your digits putting some slight amount of pressure on it, just to feel him less in control.")
+		saynn("Внезапно ты перестаешь двигать бедрами, позволяя его члену просто покоиться внутри тебя. Одна твоя рука скользит к его шее... ты слегка сжимаешь её пальцами, просто чтобы почувствовать, что он теряет контроль.")
 
-		saynn("[say=pc]I'm the one asking questions here, foxy.[/say]")
+		saynn("[say=pc]Вопросы здесь задаю я, лисичка.[/say]")
 
-		saynn("[say=alexrynard]Well, I didn't safeword yet.[/say]")
+		saynn("[say=alexrynard]Ну, стоп-слово я еще не произнесла.[/say]")
 
-		saynn("[say=pc]Is that a challenge? Ah..[/say]")
+		saynn("[say=pc]Это вызов? Ах..[/say]")
 
-		saynn("You return to riding him, his knot continuing to inflate with blood until it reaches its maximum size. He should be close, you can feel his length twitching ever so slightly inside you.. makes you want to get his knot inside so much..")
+		saynn("Ты возвращаешься к тому, чтобы скакать на нем, пока его узел продолжает раздуваться от прилива крови, достигая своего максимума. Он уже почти на пределе, ты чувствуешь, как его плоть едва заметно подергивается внутри тебя.. от этого так хочется загнать его узел поглубже..")
 
-		saynn("[say=alexrynard]You already have one~.[/say]")
+		saynn("[say=alexrynard]Он у тебя уже есть~.[/say]")
 
-		saynn("You're quite close too.")
+		saynn("Ты тоже уже совсем близко.")
 
-		addButton("Get knotted", "Try to force his knot inside you", "time3_lap_ridepussy_knotcum")
-		addButton("Pull out", "Stop riding him at the last possible second", "time3_lap_ridepussy_pullout")
+		addButton("Принять узел", "Попытаться силой загнать его узел в себя", "time3_lap_ridepussy_knotcum")
+		addButton("Вытащить", "Перестать скакать на нем в самый последний момент", "time3_lap_ridepussy_pullout")
 	if(state == "time3_lap_ridepussy_knotcum"):
 		playAnimation(StageScene.SexCowgirl, "inside", {npc="pc", pc="alexrynard", pcCum=true, npcCum=true, bodyState={naked=true, hard=true, condom=usedCondom}, npcBodyState={naked=true, hard=true}})
-		saynn("Yep, his knot is a challenge alright.. but you keep trying to force it inside, bringing yourself down onto his cock hard. The tip keeps pushing on your cervix while the knot stretches your pussy wider and wider.. until finally slipping inside!")
+		saynn("Да уж, его узел — та еще задачка.. но ты продолжаешь пытаться втиснуть его внутрь, с силой опускаясь на его член. Головка то и дело упирается в твою шейку матки, а узел растягивает твою киску всё шире и шире.. пока, наконец, он не проскальзывает внутрь!")
 
-		saynn("[say=alexrynard]Oh fuck..[/say]")
+		saynn("[say=alexrynard]Ох, бля..[/say]")
 
 		if (usedCondom && condomBroke):
-			saynn("Alex grunts, a shiver makes his spine whirl, his member is throbbing inside you, filling the condom up with his seed.. And yet.. Something feels off. You feel warmness in your womb.. Oh no.. [b]The condom has broken, spilling its contents inside you[/b]. You don't even realize it yet, your own orgasm hides this..")
+			saynn("Алекс кряхтит, по его позвоночнику пробегает дрожь, его член пульсирует внутри тебя, наполняя презерватив семенем.. И всё же.. что-то кажется не так. Ты чувствуешь тепло в своей утробе.. О нет.. [b]Презерватив порвался, и всё содержимое вылилось внутрь тебя[/b]. Ты этого даже не осознаешь, твой собственный оргазм скрывает это..")
 
 		elif (usedCondom):
-			saynn("Alex grunts, a shiver makes his spine whirl, his member is throbbing inside you while filling the condom up with his seed. And.. looks like.. the condom managed to contain it all just fine. Your own orgasm makes it hard to focus on that though..")
+			saynn("Алекс кряхтит, по его позвоночнику пробегает дрожь, его член пульсирует внутри тебя, наполняя презерватив семенем. И.. похоже.. презерватив справился и удержал всё внутри. Впрочем, из-за твоего собственного оргазма сосредоточиться на этом трудно..")
 
 		else:
-			saynn("Alex grunts, a shiver makes his spine whirl, his member is throbbing inside you, filling your womb up with his seed.. all of it. His balls are tensing up during each twitch, stuffing more warmness into you.. Your own orgasm makes it hard to focus on that though..")
+			saynn("Алекс кряхтит, по его позвоночнику пробегает дрожь; его член пульсирует внутри тебя, заполняя твою матку его семенем... до самого края. Его яички напрягаются при каждом спазме, вливая в тебя всё больше тепла... Но твой собственный оргазм мешает на этом сосредоточиться...")
 
-		saynn("You throw your head back and produce a long noise of passion, your clenching pussy housing Alex's full length, knot included. The sensations are so strong, you can't stop yourself from gushing transparent fluids all over his chest..")
+		saynn("Ты запрокидываешь голову, издавая долгий стон страсти; твоя сжимающаяся киска обхватывает Алекса на всю длину, включая узел. Ощущения настолько сильные, что ты не можешь сдержаться и заливаешь его грудь прозрачной смазкой...")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your caged up cock is throbbing too, shooting weak lines of {pc.cum} through the little hole of the cage..")
+			saynn("Твой запертый в клетку член тоже пульсирует, выстреливая слабыми струйками {pc.cum} сквозь маленькое отверстие клетки...")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your own cock is throbbing too, shooting strong thick lines of {pc.cum}, your balls quickly getting milked for all their seed..")
+			saynn("Твой собственный член тоже пульсирует, выстреливая густыми мощными струями {pc.cum}, пока твои яички быстро отдают всё до последней капли...")
 
-		saynn("[say=pc]Ahh-h..[/say]")
+		saynn("[say=pc]Ааахх..[/say]")
 
-		saynn("You two are stuck together, the knot preventing any leakage.. You can't get up even if you wanted to though, your legs are so shaky..")
+		saynn("Вы буквально сцепились друг с другом, узел не дает ни капле вытечь... Но ты не сможешь встать, даже если очень захочешь — ноги слишком дрожат...")
 
-		saynn("[say=alexrynard]That feels.. so good.. so tight..[/say]")
+		saynn("[say=alexrynard]Это так.. приятно.. так тесно..[/say]")
 
-		saynn("[say=pc]Hah-h.. Why don't you do it more often then, silly fox.. fuck..[/say]")
+		saynn("[say=pc]Хахх.. Тогда почему ты не делаешь этого чаще, глупая лисичка.. блядь..[/say]")
 
-		saynn("[say=alexrynard]I hate how good it feels..[/say]")
+		saynn("[say=alexrynard]Ненавижу то, как это охрененно приятно..[/say]")
 
-		saynn("That.. doesn't make much sense.. but oh well.")
+		saynn("Это.. не совсем логично.. но ладно.")
 
-		saynn("Both of you are panting heavily.. and stuck together.")
+		saynn("Вы оба тяжело дышите... и буквально приклеены друг к другу.")
 
-		saynn("[say=pc]Looks like we're watching the movie now..[/say]")
+		saynn("[say=pc]Похоже, теперь мы сами как в кино..[/say]")
 
-		saynn("It's ending already anyway. Explosions are happening on screen while two lovers are kissing in front of them. You haven't watched the whole movie but somehow you can just guess that the love just magically fixed everything.")
+		saynn("Фильм уже подходит к концу. На экране гремят взрывы, а на их фоне целуются влюбленные. Ты не смотрела фильм целиком, но и так понятно, что любовь магическим образом всех спасла.")
 
-		saynn("Eventually the credits begin to roll. Maybe it's time to try to free yourself.")
+		saynn("Наконец начинают идти титры. Пожалуй, пора попытаться освободиться.")
 
-		addButton("Free yourself", "Try to yank his knot out of your pussy", "time3_lap_ridepussy_afterknot")
+		addButton("Освободиться", "Попытаться вырвать его узел из своей киски", "time3_lap_ridepussy_afterknot")
 	if(state == "time3_lap_ridepussy_afterknot"):
 		playAnimation(StageScene.Cuddling, "idle", {pc="alexrynard", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		if (usedCondom && condomBroke):
-			saynn("Finally, after the knot has deflated enough, you manage to pull your pussy away from his cock.. just to realize that the condom has broken.. oops.. Your stuffed slit is leaking his seed..")
+			saynn("Наконец, когда узел достаточно спал, тебе удается отстранить киску от его члена... и тут ты понимаешь, что презерватив порвался... ох... Твоя набитая щель течет его семенем...")
 
-			saynn("[say=alexrynard]Is everything okay?[/say]")
+			saynn("[say=alexrynard]Все в порядке?[/say]")
 
-			saynn("Alex tries to figure out why you are so quiet.")
+			saynn("Алекс пытается понять, почему ты так притихла.")
 
-			saynn("[say=pc]Um.. yeah.[/say]")
+			saynn("[say=pc]Эм.. да.[/say]")
 
-			saynn("You quickly remove any obvious signs of what happened and just snug up to Alex, rubbing against his manly body.")
+			saynn("Ты быстро убираешь все явные следы случившегося и просто прижимаешься к Алексу, потираясь о его мужественное тело.")
 
-			saynn("[say=pc]Let's just rest..[/say]")
+			saynn("[say=pc]Давай просто отдохнем..[/say]")
 
-			saynn("[say=alexrynard]Sure.. Rest sounds good now.[/say]")
+			saynn("[say=alexrynard]Конечно.. Отдохнуть сейчас — самое то.[/say]")
 
 		elif (usedCondom):
-			saynn("Finally, after the knot has deflated enough, you manage to pull your pussy away from his cock. You carefully tie the used condom up and dispose of it safely. All mess is avoided, nice.")
+			saynn("Наконец, когда узел достаточно уменьшился, тебе удается оттянуть свою киску от его члена. Ты аккуратно завязываешь использованный презерватив и выбрасываешь его в безопасное место. Никакой грязи, отлично.")
 
-			saynn("After that, you just snug up to Alex, rubbing against his manly body.")
+			saynn("После этого ты просто прижимаешься к Алексу, потираясь о его мужественное тело.")
 
-			saynn("[say=pc]Let's just rest..[/say]")
+			saynn("[say=pc]Давай просто отдохнем..[/say]")
 
-			saynn("[say=alexrynard]Sure.. Rest sounds good now.[/say]")
+			saynn("[say=alexrynard]Конечно.. Отдохнуть сейчас — самое то.[/say]")
 
 		else:
-			saynn("Finally, after the knot has deflated enough, you manage to pull your pussy away from his cock. Your stuffed pussy is leaking his seed a lot so you cover it with your hand.. preventing some of the mess.")
+			saynn("Наконец, когда узел достаточно уменьшился, тебе удается оттянуть свою киску от его члена. Твоя набитая киска вовсю течет его семенем, поэтому ты прикрываешь её рукой, чтобы избежать беспорядка.")
 
-			saynn("After that, you just snug up to Alex, rubbing against his manly body.")
+			saynn("После этого ты просто прижимаешься к Алексу, потираясь о его мужественное тело.")
 
-			saynn("[say=pc]Let's just rest..[/say]")
+			saynn("[say=pc]Давай просто отдохнем..[/say]")
 
-			saynn("[say=alexrynard]Sure.. Rest sounds good now.[/say]")
+			saynn("[say=alexrynard]Конечно.. Отдохнуть сейчас — самое то.[/say]")
 
-		saynn("Cuddling together feels nice. After some time you decide to uncuff Alex and remove his blindfold. It's probably best for you both to head to bed now.")
+		saynn("Прижиматься друг к другу так приятно. Спустя какое-то время ты решаешь снять наручники с Алекса и снять с него повязку на глазах. Пожалуй, вам обоим пора ложиться спать.")
 
-		saynn("[say=alexrynard]Take care.[/say]")
+		saynn("[say=alexrynard]Береги себя.[/say]")
 
-		saynn("[say=pc]You too.[/say]")
+		saynn("[say=pc]И ты тоже.[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene_removecuffs")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_removecuffs")
 	if(state == "time3_lap_ridepussy_pullout"):
 		playAnimation(StageScene.SexCowgirl, "tease", {npc="pc", pc="alexrynard", pcCum=true, npcCum=true, bodyState={naked=true, hard=true, condom=usedCondom}, npcBodyState={naked=true, hard=true}})
 		if (usedCondom):
-			saynn("Nope, you will go against that challenge on purpose! You wait for when the point of no return happens for Alex.. before raising your body, letting his cock to slip out.")
+			saynn("Нет, ты решишь пойти наперекор этому вызову! Ты ждешь момента, когда Алекс достигнет точки невозврата... прежде чем приподняться, позволяя его члену выскользнуть наружу.")
 
-			saynn("The foxy grunts while his throbbing cock is filling the condom up.. while not inside you.")
+			saynn("Лисица хрипло стонет, пока его пульсирующий член наполняет презерватив... всё еще не входя в тебя.")
 
-			saynn("At the same time, you were also pushed past your peak, your pussy's muscles are contracting around nothing.. but it still feels good.")
+			saynn("В то же время тебя тоже накрывает пик удовольствия; мышцы твоей киски судорожно сжимаются вокруг пустоты... но это всё равно чертовски приятно.")
 
-			saynn("[say=alexrynard]Ah.. hah.. brat.[/say]")
+			saynn("[say=alexrynard]Ах.. хах.. мелкая дрянь.[/say]")
 
-			saynn("[say=pc]No you. Looks like you needed it.[/say]")
+			saynn("[say=pc]Нет, это тебе нужно было.[/say]")
 
-			saynn("[say=alexrynard]More than you can imagine..[/say]")
+			saynn("[say=alexrynard]Больше, чем ты можешь себе представить..[/say]")
 
-			saynn("You carefully tie the used condom up and safely dispose of it. Might as well cuddle now..")
+			saynn("Ты аккуратно завязываешь использованный презерватив и выбрасываешь его. Можно и пообниматься теперь...")
 
 		else:
-			saynn("Nope, you will go against that challenge on purpose! You wait for when the point of no return happens for Alex.. before raising your body, letting his cock to slip out.")
+			saynn("Нет, ты решишь пойти наперекор этому вызову! Ты ждешь момента, когда Алекс достигнет точки невозврата... прежде чем приподняться, позволяя его члену выскользнуть наружу.")
 
-			saynn("The foxy grunts while his throbbing cock releases its load.. directly onto his stomach, creating quite a mess.")
+			saynn("Лисица хрипит, пока его пульсирующий член извергает порцию спермы... прямо ему на живот, создавая изрядный беспорядок.")
 
-			saynn("At the same time, you were also pushed past your peak, your pussy's muscles are contracting around nothing.. but it still feels good.")
+			saynn("В то же время тебя тоже накрывает пик удовольствия; мышцы твоей киски судорожно сжимаются вокруг пустоты... но это всё равно чертовски приятно.")
 
-			saynn("[say=alexrynard]Ah.. hah.. brat.[/say]")
+			saynn("[say=alexrynard]Ах.. хах.. мелкая дрянь.[/say]")
 
-			saynn("[say=pc]No you. Looks like you needed it.[/say]")
+			saynn("[say=pc]Нет, это тебе нужно было.[/say]")
 
-			saynn("[say=alexrynard]More than you can imagine..[/say]")
+			saynn("[say=alexrynard]Больше, чем ты можешь себе представить..[/say]")
 
-			saynn("Might as well cuddle now.. Just gotta be careful and avoid getting his mess onto yourself too..")
+			saynn("Можно и обняться.. Главное — быть осторожной, чтобы не испачкаться в его соке..")
 
-		addButton("Cuddle", "Rest together", "time3_lap_ridepussy_pullout_cuddle")
+		addButton("Обнимашки", "Отдохнуть вместе", "time3_lap_ridepussy_pullout_cuddle")
 	if(state == "time3_lap_ridepussy_pullout_cuddle"):
 		playAnimation(StageScene.Cuddling, "idle", {pc="alexrynard", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You turn around and snug up to Alex, your back pressed against his manly body.")
+		saynn("Ты поворачиваешься и прижимаешься к Алексу, чувствуя спиной его мужественное тело.")
 
-		saynn("[say=pc]Let's just rest..[/say]")
+		saynn("[say=pc]Давай просто отдохнем..[/say]")
 
-		saynn("[say=alexrynard]Sure.. Rest sounds good now.[/say]")
+		saynn("[say=alexrynard]Конечно.. Отдохнуть сейчас — самое то.[/say]")
 
-		saynn("Cuddling together feels nice. After some time you decide to uncuff Alex and remove his blindfold. It's probably best for you both to head to bed now.")
+		saynn("Прижиматься друг к другу так приятно. Спустя какое-то время ты решаешь снять наручники с Алекса и снять с него повязку на глазах. Пожалуй, вам обоим пора ложиться спать.")
 
-		saynn("[say=alexrynard]Take care.[/say]")
+		saynn("[say=alexrynard]Береги себя.[/say]")
 
-		saynn("[say=pc]You too.[/say]")
+		saynn("[say=pc]И ты тоже.[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene_removecuffs")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_removecuffs")
 	if(state == "time3_lap_rideanal"):
 		playAnimation(StageScene.SexCowgirl, "sex", {npc="pc", pc="alexrynard", bodyState={naked=true, hard=true, condom=usedCondom}, npcBodyState={naked=true, hard=true}})
-		saynn("Time for games is over, now comes the real action. You carefully align his blood-colored length with your {pc.analStretch} tailhole and proceed to lower yourself, your cute star being spread by the pointy tip of a canine cock.")
+		saynn("Время игр прошло, начинается настоящая жара. Ты аккуратно совмещаешь его кроваво-красную плоть со своим {pc.analStretch} анусом и начинаешь опускаться, чувствуя, как твоя милая киска растягивается острым кончиком собачьего члена.")
 
-		saynn("Alex is completely helpless with all the restraints.. but looks like he doesn't mind much. You can see his chest moving slower as you start to accept his member inside you, the tip spreading the slick inner walls and quickly passing your pleasure spot.")
+		saynn("Алекс совершенно беспомощен во всех этих путах... но, похоже, его это не особо беспокоит. Ты видишь, как его грудная клетка вздымается всё медленнее, когда ты начинаешь принимать его член внутрь; головка раздвигает влажные стенки и быстро находит твою точку удовольствия.")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your member reacts instantly by getting hard.. well, trying to. There is pressure slowly building in your chastity cage now as your prostate is being massaged..")
+			saynn("Твой член реагирует мгновенно, становясь твердым... ну, по крайней мере, он пытается. В твоей девственной клетке начинает нарастать давление, пока твою простату массируют..")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your own {pc.penis} reacts instantly by getting hard as your prostate is being massaged, a lonely tip of your precum shining on the tip of your member.")
+			saynn("Твой собственный {pc.penis} мгновенно твердеет от массажа простаты, а на кончике члена поблескивает одинокая капля предэякулята.")
 
-		saynn("[say=pc]Yeah.. I can do whatever I want with you, sly fox..[/say]")
+		saynn("[say=pc]Да уж... я могу делать с тобой всё, что захочу, хитрая лисичка...[/say]")
 
-		saynn("[say=alexrynard]You're just lucky I allowed you to cuff me.[/say]")
+		saynn("[say=alexrynard]Тебе просто повезло, что я позволил тебе надеть на меня наручники.[/say]")
 
-		saynn("Huh. You catch him off-guard by letting your ass take the rest of his cock in one motion, your buttcheeks slapping against his hips.")
+		saynn("Ого. Ты застаешь его врасплох, одним движением заглатывая остаток его члена, при этом твои ягодицы с хлопком шлепают по его бедрам.")
 
-		saynn("[say=alexrynard]Nh..[/say]")
+		saynn("[say=alexrynard]Нх...[/say]")
 
-		saynn("[say=pc]Is that so? You had every chance to stop me, sly foxy.[/say]")
+		saynn("[say=pc]Вот как? У тебя был каждый шанс остановить меня, хитрая лисица.[/say]")
 
-		saynn("You don't just sit on him, you proceed to slowly grind his lap before switching to riding, raising your body before bringing it back down, his length fully inside you"+str(", the condom providing enough lube to allow for that" if usedCondom else ", his precum lowering friction")+".")
+		saynn("Ты не просто садишься на него, ты начинаешь медленно тереться о его пах, а затем переходишь к полноценному фрикционному езде, поднимая тело и снова опускаясь на него, пока его плоть полностью не входит в тебя."+str(", the condom providing enough lube to allow for that" if usedCondom else ", his precum lowering friction")+".")
 
-		saynn("[say=alexrynard]Perhaps I wanted to see what would happen.[/say]")
+		saynn("[say=alexrynard]Возможно, мне просто хотелось посмотреть, что из этого выйдет.[/say]")
 
-		saynn("[say=pc]Such a shame that I blindfolded you then, huh~?[/say]")
+		saynn("[say=pc]Какая жалость, что я тогда завязала тебе глаза, а, хм~?[/say]")
 
-		saynn("You keep riding him while having this little chat, your hands resting on his pecs, your digits digging into his short orange fur.")
+		saynn("Ты продолжаешь скакать на нем, ведя эту болтовню; твои ладони лежат на его грудных мышцах, а пальцы впиваются в короткий рыжий мех.")
 
-		saynn("[say=alexrynard]I feel enough, don't worry.[/say]")
+		saynn("[say=alexrynard]Я и так всё чувствую, не беспокойся.[/say]")
 
-		addButton("Faster", "Ride him faster", "time3_lap_rideanal_faster")
+		addButton("Быстрее", "Скачи на нем быстрее", "time3_lap_rideanal_faster")
 	if(state == "time3_lap_rideanal_faster"):
 		playAnimation(StageScene.SexCowgirl, "fast", {npc="pc", pc="alexrynard", bodyState={naked=true, hard=true, condom=usedCondom}, npcBodyState={naked=true, hard=true}})
-		saynn("Gradually, you increase the pace, bringing yourself onto his member faster and harder. You can feel his knot getting bigger inside you.. at some point it becomes too big to fit inside, just slapping against your needy fuckhole instead. Occasional moans escape from you..")
+		saynn("Постепенно ты наращиваешь темп, насаживаясь на него всё быстрее и жестче. Ты чувствуешь, как его узел внутри тебя раздувается.. в какой-то момент он становится слишком большим, чтобы поместиться внутри, и просто бьется о твою жаждущую дырочку. Из твоих уст то и дело вырываются стоны..")
 
-		saynn("[say=pc]How much do you trust me, foxy~? Mh-h..[/say]")
+		saynn("[say=pc]Насколько сильно ты мне доверяешь, лисичка~? М-м-м...[/say]")
 
-		saynn("[say=alexrynard]What do you think?[/say]")
+		saynn("[say=alexrynard]И что ты об этом думаешь?[/say]")
 
-		saynn("Suddenly, you stop moving your hips, letting his cock just rest inside you. One of your hands slides up to his neck.. your digits putting some slight amount of pressure on it, just to feel him less in control.")
+		saynn("Внезапно ты перестаешь двигать бедрами, позволяя его члену просто покоиться внутри тебя. Одна твоя рука скользит к его шее... ты слегка сжимаешь её пальцами, просто чтобы почувствовать, что он теряет контроль.")
 
-		saynn("[say=pc]I'm the one asking questions here, foxy.[/say]")
+		saynn("[say=pc]Вопросы здесь задаю я, лисичка.[/say]")
 
-		saynn("[say=alexrynard]Well, I didn't safeword yet.[/say]")
+		saynn("[say=alexrynard]Ну, стоп-слово я еще не произнесла.[/say]")
 
-		saynn("[say=pc]Is that a challenge? Ah..[/say]")
+		saynn("[say=pc]Это вызов? Ах..[/say]")
 
-		saynn("You return to riding him, his knot continuing to inflate with blood until it reaches its maximum size. He should be close, you can feel his length twitching ever so slightly inside you.. makes you want to get his knot inside so much..")
+		saynn("Ты возвращаешься к тому, чтобы скакать на нем, пока его узел продолжает раздуваться от прилива крови, достигая своего максимума. Он уже почти на пределе, ты чувствуешь, как его плоть едва заметно подергивается внутри тебя.. от этого так хочется загнать его узел поглубже..")
 
-		saynn("[say=alexrynard]You already have one~.[/say]")
+		saynn("[say=alexrynard]Он у тебя уже есть~.[/say]")
 
-		saynn("You're quite close too.")
+		saynn("Ты тоже уже совсем близко.")
 
-		addButton("Get knotted", "Try to force his knot inside you", "time3_lap_rideanal_knotcum")
-		addButton("Pull out", "Stop riding him at the last possible second", "time3_lap_rideanal_pullout")
+		addButton("Принять узел", "Попытаться силой загнать его узел в себя", "time3_lap_rideanal_knotcum")
+		addButton("Вытащить", "Перестать скакать на нем в самый последний момент", "time3_lap_rideanal_pullout")
 	if(state == "time3_lap_rideanal_knotcum"):
 		playAnimation(StageScene.SexCowgirl, "inside", {npc="pc", pc="alexrynard", pcCum=true, npcCum=true, bodyState={naked=true, hard=true, condom=usedCondom}, npcBodyState={naked=true, hard=true}})
-		saynn("Yep, his knot is a challenge alright.. but you keep trying to force it inside, bringing yourself down onto his cock hard. The tip keeps pushing on your pleasure spot while the knot stretches your tailhole wider and wider.. until finally slipping inside!")
+		saynn("Да уж, его узел — та еще задачка.. но ты продолжаешь пытаться втиснуть его внутрь, с силой насаживаясь на его член. Кончик постоянно давит на твою точку удовольствия, пока узел растягивает твой анус всё шире и шире.. пока он, наконец, не проскальзывает внутрь!")
 
-		saynn("[say=alexrynard]Oh fuck..[/say]")
+		saynn("[say=alexrynard]Ох, бля..[/say]")
 
 		if (usedCondom && condomBroke):
-			saynn("Alex grunts, a shiver makes his spine whirl, his member is throbbing inside you, filling the condom up with his seed.. And yet.. Something feels off. You feel warmness spreading.. Oh no.. [b]The condom has broken, spilling its contents inside you[/b]. You don't even realize it yet, your own orgasm hides this..")
+			saynn("Алекс кряхтит, по его позвоночнику пробегает дрожь, его член пульсирует внутри тебя, наполняя презерватив его семенем... И всё же... Что-то кажется не так. Ты чувствуешь, как разливается тепло... О нет... [b]Презерватив порвался, и всё содержимое вылилось внутрь тебя[/b]. Ты этого даже не осознаешь, твой собственный оргазм скрывает это...")
 
 		elif (usedCondom):
-			saynn("Alex grunts, a shiver makes his spine whirl, his member is throbbing inside you while filling the condom up with his seed. And.. looks like.. the condom managed to contain it all just fine. Your own orgasm makes it hard to focus on that though..")
+			saynn("Алекс кряхтит, по его позвоночнику пробегает дрожь, его член пульсирует внутри тебя, наполняя презерватив семенем. И.. похоже.. презерватив справился и удержал всё внутри. Впрочем, из-за твоего собственного оргазма сосредоточиться на этом трудно..")
 
 		else:
-			saynn("Alex grunts, a shiver makes his spine whirl, his member is throbbing inside you, filling your butt up with his seed.. all of it. His balls are tensing up during each twitch, stuffing more warmness into you.. Your own orgasm makes it hard to focus on that though..")
+			saynn("Алекс кряхтит, по его позвоночнику пробегает дрожь, его член пульсирует внутри тебя, заполняя твою задницу его семенем... до краев. Его яички напрягаются при каждом подергивании, вливая в тебя всё больше тепла... Но твой собственный оргазм мешает на этом сосредоточиться...")
 
-		saynn("You throw your head back and produce a long noise of passion, your clenching ass housing Alex's full length, knot included. The sensations are so strong, you can't stop yourself from squirming around his cock..")
+		saynn("Ты запрокидываешь голову и издаешь долгий стон страсти; твоя сжимающаяся задница принимает Алекса во всю длину, включая узел. Ощущения настолько сильные, что ты не можешь удержаться от того, чтобы не ерзать на его члене...")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your caged up cock is throbbing too, shooting weak lines of {pc.cum} through the little hole of the cage, your prostate beyond stimulated..")
+			saynn("Твой зажатый в клетку член тоже пульсирует, выстреливая слабыми струйками {pc.cum} через маленькое отверстие клетки, твоя простата возбуждена до предела...")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your own cock is throbbing too, shooting strong thick lines of {pc.cum}, your balls quickly getting milked for all their seed, your prostate beyond stimulated..")
+			saynn("Твой собственный член тоже пульсирует, выстреливая мощными густыми струями {pc.cum}, твои яички быстро отдают всё семя, а простата возбуждена до предела...")
 
-		saynn("[say=pc]Ahh-h..[/say]")
+		saynn("[say=pc]Ааахх..[/say]")
 
-		saynn("You two are stuck together, the knot preventing any leakage.. You can't get up even if you wanted to though, your legs are so shaky..")
+		saynn("Вы буквально сцепились друг с другом, узел не дает ни капле вытечь... Но ты не сможешь встать, даже если очень захочешь — ноги слишком дрожат...")
 
-		saynn("[say=alexrynard]That feels.. so good.. so tight..[/say]")
+		saynn("[say=alexrynard]Это так.. приятно.. так тесно..[/say]")
 
-		saynn("[say=pc]Hah-h.. Why don't you do it more often then, silly fox.. fuck..[/say]")
+		saynn("[say=pc]Хахх.. Тогда почему ты не делаешь этого чаще, глупая лисичка.. блядь..[/say]")
 
-		saynn("[say=alexrynard]I hate how good it feels..[/say]")
+		saynn("[say=alexrynard]Ненавижу то, как это охрененно приятно..[/say]")
 
-		saynn("That.. doesn't make much sense.. but oh well.")
+		saynn("Это.. не совсем логично.. но ладно.")
 
-		saynn("Both of you are panting heavily.. and stuck together.")
+		saynn("Вы оба тяжело дышите... и буквально приклеены друг к другу.")
 
-		saynn("[say=pc]Looks like we're watching the movie now..[/say]")
+		saynn("[say=pc]Похоже, теперь мы сами как в кино..[/say]")
 
-		saynn("It's ending already anyway. Explosions are happening on screen while two lovers are kissing in front of them. You haven't watched the whole movie but somehow you can just guess that the love just magically fixed everything.")
+		saynn("Фильм уже подходит к концу. На экране гремят взрывы, а на их фоне целуются влюбленные. Ты не смотрела фильм целиком, но и так понятно, что любовь магическим образом всех спасла.")
 
-		saynn("Eventually the credits begin to roll. Maybe it's time to try to free yourself.")
+		saynn("Наконец начинают идти титры. Пожалуй, пора попытаться освободиться.")
 
-		addButton("Free yourself", "Try to yank his knot out of your ass", "time3_lap_rideanal_afterknot")
+		addButton("Освободиться", "Попытаться вырвать его узел из своей задницы", "time3_lap_rideanal_afterknot")
 	if(state == "time3_lap_rideanal_afterknot"):
 		playAnimation(StageScene.Cuddling, "idle", {pc="alexrynard", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		if (usedCondom && condomBroke):
-			saynn("Finally, after the knot has deflated enough, you manage to pull your ass away from his cock.. just to realize that the condom has broken.. oops.. Your stuffed fuckhole is leaking his seed..")
+			saynn("Наконец, когда узел достаточно спал, тебе удается отстранить задницу от его члена... только чтобы осознать, что презерватив порвался... упс... Твоя набитая дырка протекает его семенем...")
 
-			saynn("[say=alexrynard]Is everything okay?[/say]")
+			saynn("[say=alexrynard]Все в порядке?[/say]")
 
-			saynn("Alex tries to figure out why you are so quiet.")
+			saynn("Алекс пытается понять, почему ты так притихла.")
 
-			saynn("[say=pc]Um.. yeah.[/say]")
+			saynn("[say=pc]Эм.. да.[/say]")
 
-			saynn("You quickly remove any obvious signs of what happened and just snug up to Alex, rubbing against his manly body.")
+			saynn("Ты быстро убираешь все явные следы случившегося и просто прижимаешься к Алексу, потираясь о его мужественное тело.")
 
-			saynn("[say=pc]Let's just rest..[/say]")
+			saynn("[say=pc]Давай просто отдохнем..[/say]")
 
-			saynn("[say=alexrynard]Sure.. Rest sounds good now.[/say]")
+			saynn("[say=alexrynard]Конечно.. Отдохнуть сейчас — самое то.[/say]")
 
 		elif (usedCondom):
-			saynn("Finally, after the knot has deflated enough, you manage to pull your ass away from his cock. You carefully tie the used condom up and dispose of it safely. All mess is avoided, nice.")
+			saynn("Наконец, когда узел достаточно спал, тебе удается отстранить задницу от его члена. Ты аккуратно завязываешь использованный презерватив и выбрасываешь его. Грязи удалось избежать, вот это да.")
 
-			saynn("After that, you just snug up to Alex, rubbing against his manly body.")
+			saynn("После этого ты просто прижимаешься к Алексу, потираясь о его мужественное тело.")
 
-			saynn("[say=pc]Let's just rest..[/say]")
+			saynn("[say=pc]Давай просто отдохнем..[/say]")
 
-			saynn("[say=alexrynard]Sure.. Rest sounds good now.[/say]")
+			saynn("[say=alexrynard]Конечно.. Отдохнуть сейчас — самое то.[/say]")
 
 		else:
-			saynn("Finally, after the knot has deflated enough, you manage to pull your ass away from his cock. Your stuffed fuckhole is leaking his seed a lot so you cover it with your hand.. preventing some of the mess.")
+			saynn("Наконец, когда узел немного спал, тебе удается отстранить свою задницу от его члена. Твоя набитая дырка так и течет его семенем, что тебе приходится прикрывать её рукой, чтобы хоть как-то сдержать этот беспорядок.")
 
-			saynn("After that, you just snug up to Alex, rubbing against his manly body.")
+			saynn("После этого ты просто прижимаешься к Алексу, потираясь о его мужественное тело.")
 
-			saynn("[say=pc]Let's just rest..[/say]")
+			saynn("[say=pc]Давай просто отдохнем..[/say]")
 
-			saynn("[say=alexrynard]Sure.. Rest sounds good now.[/say]")
+			saynn("[say=alexrynard]Конечно.. Отдохнуть сейчас — самое то.[/say]")
 
-		saynn("Cuddling together feels nice. After some time you decide to uncuff Alex and remove his blindfold. It's probably best for you both to head to bed now.")
+		saynn("Прижиматься друг к другу так приятно. Спустя какое-то время ты решаешь снять наручники с Алекса и снять с него повязку на глазах. Пожалуй, вам обоим пора ложиться спать.")
 
-		saynn("[say=alexrynard]Take care.[/say]")
+		saynn("[say=alexrynard]Береги себя.[/say]")
 
-		saynn("[say=pc]You too.[/say]")
+		saynn("[say=pc]И ты тоже.[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene_removecuffs")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_removecuffs")
 	if(state == "time3_lap_rideanal_pullout"):
 		playAnimation(StageScene.SexCowgirl, "tease", {npc="pc", pc="alexrynard", pcCum=true, npcCum=true, bodyState={naked=true, hard=true, condom=usedCondom}, npcBodyState={naked=true, hard=true}})
 		if (usedCondom):
-			saynn("Nope, you will go against that challenge on purpose! You wait for when the point of no return happens for Alex.. before raising your body, letting his cock to slip out.")
+			saynn("Нет, ты решишь пойти наперекор этому вызову! Ты ждешь момента, когда Алекс достигнет точки невозврата... прежде чем приподняться, позволяя его члену выскользнуть наружу.")
 
-			saynn("The foxy grunts while his throbbing cock is filling the condom up.. while not inside you.")
+			saynn("Лисица хрипло стонет, пока его пульсирующий член наполняет презерватив... всё еще не входя в тебя.")
 
-			saynn("At the same time, you were also pushed past your peak, your asshole's muscles are contracting around nothing.. but it still feels good.")
+			saynn("В то же время тебя вынесло за пределы пика; мышцы ануса судорожно сжимаются вокруг пустоты... но ощущения всё равно чертовски приятные.")
 
-			saynn("[say=alexrynard]Ah.. hah.. brat.[/say]")
+			saynn("[say=alexrynard]Ах.. хах.. мелкая дрянь.[/say]")
 
-			saynn("[say=pc]No you. Looks like you needed it.[/say]")
+			saynn("[say=pc]Нет, это тебе нужно было.[/say]")
 
-			saynn("[say=alexrynard]More than you can imagine..[/say]")
+			saynn("[say=alexrynard]Больше, чем ты можешь себе представить..[/say]")
 
-			saynn("You carefully tie the used condom up and safely dispose of it. Might as well cuddle now..")
+			saynn("Ты аккуратно завязываешь использованный презерватив и выбрасываешь его. Можно и пообниматься теперь...")
 
 		else:
-			saynn("Nope, you will go against that challenge on purpose! You wait for when the point of no return happens for Alex.. before raising your body, letting his cock to slip out.")
+			saynn("Нет, ты решишь пойти наперекор этому вызову! Ты ждешь момента, когда Алекс достигнет точки невозврата... прежде чем приподняться, позволяя его члену выскользнуть наружу.")
 
-			saynn("The foxy grunts while his throbbing cock releases its load.. directly onto his stomach, creating quite a mess.")
+			saynn("Лисица хрипит, пока его пульсирующий член извергает порцию спермы... прямо ему на живот, создавая изрядный беспорядок.")
 
-			saynn("At the same time, you were also pushed past your peak, your asshole's muscles are contracting around nothing.. but it still feels good.")
+			saynn("В то же время тебя вынесло за пределы пика; мышцы ануса судорожно сжимаются вокруг пустоты... но ощущения всё равно чертовски приятные.")
 
-			saynn("[say=alexrynard]Ah.. hah.. brat.[/say]")
+			saynn("[say=alexrynard]Ах.. хах.. мелкая дрянь.[/say]")
 
-			saynn("[say=pc]No you. Looks like you needed it.[/say]")
+			saynn("[say=pc]Нет, это тебе нужно было.[/say]")
 
-			saynn("[say=alexrynard]More than you can imagine..[/say]")
+			saynn("[say=alexrynard]Больше, чем ты можешь себе представить..[/say]")
 
-			saynn("Might as well cuddle now.. Just gotta be careful and avoid getting his mess onto yourself too..")
+			saynn("Можно и обняться.. Главное — быть осторожной, чтобы не испачкаться в его соке..")
 
-		addButton("Cuddle", "Rest together", "time3_lap_rideanal_pullout_cuddle")
+		addButton("Обнимашки", "Отдохнуть вместе", "time3_lap_rideanal_pullout_cuddle")
 	if(state == "time3_lap_rideanal_pullout_cuddle"):
 		playAnimation(StageScene.Cuddling, "idle", {pc="alexrynard", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You turn around and snug up to Alex, your back pressed against his manly body.")
+		saynn("Ты поворачиваешься и прижимаешься к Алексу, чувствуя спиной его мужественное тело.")
 
-		saynn("[say=pc]Let's just rest..[/say]")
+		saynn("[say=pc]Давай просто отдохнем..[/say]")
 
-		saynn("[say=alexrynard]Sure.. Rest sounds good now.[/say]")
+		saynn("[say=alexrynard]Конечно.. Отдохнуть сейчас — самое то.[/say]")
 
-		saynn("Cuddling together feels nice. After some time you decide to uncuff Alex and remove his blindfold. It's probably best for you both to head to bed now.")
+		saynn("Прижиматься друг к другу так приятно. Спустя какое-то время ты решаешь снять наручники с Алекса и снять с него повязку на глазах. Пожалуй, вам обоим пора ложиться спать.")
 
-		saynn("[say=alexrynard]Take care.[/say]")
+		saynn("[say=alexrynard]Береги себя.[/say]")
 
-		saynn("[say=pc]You too.[/say]")
+		saynn("[say=pc]И ты тоже.[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene_removecuffs")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_removecuffs")
 	if(state == "time5"):
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard"})
-		saynn("You two are standing near Alex's normal workplace, near his bench. All the tools are neatly stashed away, no broken device in sight.")
+		saynn("Вы стоите рядом с обычным рабочим местом Алекса, возле его верстака. Все инструменты аккуратно убраны, и ни одного сломанного устройства поблизости не видно.")
 
-		saynn("[say=alexrynard]Feels weird, huh?[/say]")
+		saynn("[say=alexrynard]Странно, да?[/say]")
 
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
-		saynn("[say=pc]What are you gonna do?[/say]")
+		saynn("[say=pc]И что ты собираешься делать?[/say]")
 
-		saynn("[say=alexrynard]Well, I still don't have parts that I need.. I guess I will just brainstorm new ideas. And obviously do my duties as a station's engineer.[/say]")
+		saynn("[say=alexrynard]Ну, нужных деталей у меня всё еще нет... Думаю, просто поштурмлю голову новыми идеями. Ну и, конечно, буду выполнять свои обязанности инженера станции.[/say]")
 
-		saynn("That doesn't leave much space for you, huh?")
+		saynn("Это не оставляет тебе особого пространства для маневра, а?")
 
-		saynn("[say=pc]Can I help somehow?[/say]")
+		saynn("[say=pc]Может, мне как-то помочь?[/say]")
 
-		saynn("Alex rubs the back of his head, looking a bit guilty.")
+		saynn("Алекс потирает затылок с немного виноватым видом.")
 
-		saynn("[say=alexrynard]I.. don't know.[/say]")
+		saynn("[say=alexrynard]Даже не знаю...[/say]")
 
-		saynn("Sudden male voice.")
+		saynn("Внезапно раздается мужской голос.")
 
-		saynn("[sayMale]Rynard? Here is something for you.[/sayMale]")
+		saynn("[sayMale]Рынард? Тут кое-что для тебя.[/sayMale]")
 
-		saynn("One of the engineers brings a huge cardboard box and places it on the table.")
+		saynn("Один из инженеров приносит огромную картонную коробку и ставит её на стол.")
 
-		saynn("[say=alexrynard]What do you mean, for me?[/say]")
+		saynn("[say=alexrynard]В смысле, для меня?[/say]")
 
-		saynn("[sayMale]I dunno, logistics says it's for you, I gotta go.[/sayMale]")
+		saynn("[sayMale]Да хрен знает, логисты сказали, что твоё. Ладно, я погнал.[/sayMale]")
 
-		saynn("After that, the guy just walks away, leaving you alone with the anxiety.")
+		saynn("После этого парень просто уходит, оставляя тебя наедине с нарастающей тревогой.")
 
-		saynn("Looks like that vacation is posponed.. Alex's eyes are so sad.")
+		saynn("Похоже, отпуск откладывается... В глазах Алекса читается такая печаль.")
 
-		saynn("[say=alexrynard]I don't want to open it..[/say]")
+		saynn("[say=alexrynard]Даже не хочется открывать...[/say]")
 
-		saynn("[say=pc]What if it's.. something good?[/say]")
+		saynn("[say=pc]А вдруг там... что-то хорошее?[/say]")
 
-		saynn("He sighs.")
+		saynn("Он вздыхает.")
 
-		saynn("[say=alexrynard]You will never find a million credits in your room randomly.. but you may find rats.[/say]")
+		saynn("[say=alexrynard]Ты вряд ли найдешь в своей комнате миллион кредитов просто так... зато крыс найти вполне можешь.[/say]")
 
-		saynn("So pessimistic.")
+		saynn("Какой пессимизм.")
 
-		addButton("Open it", "See what's inside", "time5_rekt")
+		addButton("Открыть", "Посмотреть, что внутри", "time5_rekt")
 	if(state == "time5_rekt"):
-		saynn("Since Alex is hesitating, you just open the box yourself.")
+		saynn("Поскольку Алекс колеблется, ты просто открываешь коробку сам(а).")
 
-		saynn("Inside.. about what you would expect..")
+		saynn("Внутри... примерно то, чего ты и ожидал(а)...")
 
-		saynn("Alex stares at the contents.. intently.")
+		saynn("Алекс пристально всматривается в содержимое...")
 
-		saynn("[say=alexrynard]About two weeks of new work.[/say]")
+		saynn("[say=alexrynard]Работы на недели две вперед.[/say]")
 
-		saynn("[say=pc]You.. definitely need my help now.[/say]")
+		saynn("[say=pc]Тебе... определенно нужна моя помощь.[/say]")
 
-		saynn("Alex shrugs.")
+		saynn("Алекс пожимает плечами.")
 
-		saynn("[say=alexrynard]You might be right. But not for the right reason.[/say]")
+		saynn("[say=alexrynard]Возможно, ты и прав(а). Но не по той причине.[/say]")
 
-		saynn("Huh? You give Alex a look of confusion.")
+		saynn("А? Ты смотришь на Алекса с недоумением.")
 
-		saynn("[say=alexrynard]I'm so sick of this. I'm not touching another broken datapad ever.[/say]")
+		saynn("[say=alexrynard]Как же меня всё это достало. Больше ни к одному сломанному датападу пальцем не прикоснусь![/say]")
 
-		saynn("[say=pc]But.. What are you gonna do then?[/say]")
+		saynn("[say=pc]Но... и что ты тогда будешь делать?[/say]")
 
-		saynn("[say=alexrynard]Let's pay the captain a visit.[/say]")
+		saynn("[say=alexrynard]Давай заглянем к капитану.[/say]")
 
-		saynn("That sounds better than doing this.. but it also sounds scarier.")
+		saynn("Звучит получше, чем ковыряться в этом... но звучит и пугающе.")
 
-		saynn("[say=alexrynard]You don't have to say anything, I will do most of the talking.[/say]")
+		saynn("[say=alexrynard]Можешь ничего не говорить, в основном болтать буду я.[/say]")
 
-		saynn("Seems like a no-brainer..")
+		saynn("Похоже, тут и думать нечего...")
 
-		addButton("Follow", "See where Alex brings you", "time5_nearlift")
+		addButton("Следовать", "Смотреть, куда тебя приведет Алекс", "time5_nearlift")
 	if(state == "time5_nearlift"):
 		aimCameraAndSetLocName("cd_near_elevator")
 		GM.pc.setLocation("hall_mainentrance")
-		saynn("You and Alex enter the lift. He uses his badge to get access to more floors before selecting the command deck.")
+		saynn("Вы с Алексом заходите в лифт. Он прикладывает свой бейдж, чтобы получить доступ к верхним этажам, и выбирает командный мостик.")
 
-		saynn("[say=pc]Do you really need me though?[/say]")
+		saynn("[say=pc]А я-то тебе точно нужна?[/say]")
 
-		saynn("[say=alexrynard]Yeah.[/say]")
+		saynn("[say=alexrynard]Ага.[/say]")
 
-		saynn("The lift screeches as it starts ascending to a higher floor.")
+		saynn("Лифт со скрежетом начинает подниматься на верхний этаж.")
 
-		saynn("[say=alexrynard]So old. And yet, it will probably serve another century at least. People knew what they were doing back then.[/say]")
+		saynn("[say=alexrynard]Такой старый. И всё же, он, вероятно, прослужит ещё как минимум столетие. В те времена люди знали, что делают.[/say]")
 
-		saynn("[say=pc]Don't you know what you're doing?[/say]")
+		saynn("[say=pc]А ты разве не знаешь, что делаешь?[/say]")
 
-		saynn("[say=alexrynard]I just pretend to.[/say]")
+		saynn("[say=alexrynard]Я просто притворяюсь.[/say]")
 
-		saynn("He smiles.")
+		saynn("Он улыбается.")
 
-		saynn("The doors open.. revealing a few guards. Guards that don't seem to be happy about seeing an unrestrained inmate here.")
+		saynn("Двери открываются, открывая вид на нескольких охранников. Судя по их виду, они не в восторге от того, что видят здесь неподконтрольного заключенного.")
 
-		saynn("[say=alexrynard]Right.. It is a high-security floor, huh.[/say]")
+		saynn("[say=alexrynard]Точно... Это же этаж строгого режима, да?[/say]")
 
-		saynn("He turns towards you, his hands producing some cuffs.")
+		saynn("Он поворачивается к тебе, доставая наручники.")
 
-		saynn("[say=alexrynard]You have to be restrained first, inmate.[/say]")
+		saynn("[say=alexrynard]Сначала тебя нужно сковать, заключенная.[/say]")
 
-		saynn("Fair enough.. He talks so differently when guards are nearby.")
+		saynn("Справедливо... Он так сильно меняет тон, когда рядом охрана.")
 
-		addButton("Continue", "See what happens next", "time5_cuffup")
+		addButton("Продолжить", "Смотреть, что будет дальше", "time5_cuffup")
 	if(state == "time5_cuffup"):
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard", bodyState={leashedBy="alexrynard"}})
-		saynn("Alex carefully brings your arms behind your back and cuffs them.. before also cuffing your ankles together.")
+		saynn("Алекс осторожно заводит твои руки за спину и застегивает наручники, а затем скрепляет ими еще и твои лодыжки.")
 
-		saynn("[say=alexrynard]No scratch, no kick..[/say]")
+		saynn("[say=alexrynard]Ни царапины, ни пинка..[/say]")
 
-		saynn("Next, he produces a muzzle.. and proceeds to secure it around your head.")
+		saynn("Затем он достает намордник.. и плотно затягивает его на твоей голове.")
 
-		saynn("[say=alexrynard]..and no bite.[/say]")
+		saynn("[say=alexrynard]..и ни одного укуса.[/say]")
 
-		saynn("He turns towards the guards.. but they still don't seem happy about how you look.")
+		saynn("Он поворачивается к охранникам.. но они всё еще явно не в восторге от твоего вида.")
 
-		saynn("[say=alexrynard]Right, I don't do this very often, okay?[/say]")
+		saynn("[say=alexrynard]Ладно, я не так уж часто этим занимаюсь, ясно?[/say]")
 
-		saynn("Alex produces a leash and clips it to your collar.")
+		saynn("Алекс достает поводок и пристегивает его к твоему ошейнику.")
 
-		saynn("[say=alexrynard]Happy?[/say]")
+		saynn("[say=alexrynard]Довольны?[/say]")
 
-		saynn("The guards finally seem to give way.")
+		saynn("Наконец, охранники, кажется, сдаются.")
 
-		addButton("Follow", "See where Alex brings you", "time5_nearcaptain")
+		addButton("Следовать", "Смотреть, куда тебя приведет Алекс", "time5_nearcaptain")
 	if(state == "time5_nearcaptain"):
 		aimCameraAndSetLocName("cd_near_captain_office")
 		playAnimation(StageScene.Duo, "walk", {npc="alexrynard", npcAction="walk", flipNPC=true, bodyState={leashedBy="alexrynard"}})
-		saynn("You and Alex walk through the rich-looking corridors. Your feet feel the soft carpet as you awkwardly hop around, your eyes feast upon the many paintings that are hanging on the walls.")
+		saynn("Вы с Алексом идете по роскошным коридорам. Твои ноги утопают в мягком ковре, пока ты неуклюже перепрыгиваешь с ноги на ногу, а глаза жадно разглядывают множество картин, развешанных по стенам.")
 
-		saynn("[say=alexrynard]Even makes me feel small. And I'm not the one cuffed here.[/say]")
+		saynn("[say=alexrynard]Даже заставляет меня чувствовать себя крошечной. И это не я тут в наручниках.[/say]")
 
-		saynn("You approach the captain's office. It seems to be guarded by one of the special guards, one that has his lower jaw replaced with a scary-looking prosthetic one.")
+		saynn("Вы подходите к кабинету капитана. Похоже, его охраняет один из спецназовцев — тот самый, у которого вместо нижней челюсти стоит жуткий протез.")
 
-		saynn("[say=alexrynard]I need to see the captain.[/say]")
+		saynn("[say=alexrynard]Мне нужно к капитану.[/say]")
 
-		saynn("[say=skar]Why?[/say]")
+		saynn("[say=skar]Зачем?[/say]")
 
-		saynn("[say=alexrynard]Because.[/say]")
+		saynn("[say=alexrynard]Просто потому.[/say]")
 
-		saynn("[say=skar]Why the inmate?[/say]")
+		saynn("[say=skar]Зачем заключенному?[/say]")
 
-		saynn("[say=alexrynard]I need to talk, okay? {pc.He} {pc.isAre} important to the matter.[/say]")
+		saynn("[say=alexrynard]Мне нужно поговорить, ясно? {pc.He} {pc.isAre} Это важно для дела.[/say]")
 
-		saynn("The big guard talks into his headset for some time.. before letting you through.")
+		saynn("Громила какое-то время что-то бубнит в гарнитуру... прежде чем пропустить вас.")
 
-		addButton("Captain's office", "See what happens next", "time5_captain")
+		addButton("Кабинет капитана", "Смотреть, что будет дальше", "time5_captain")
 	if(state == "time5_captain"):
 		addCharacter("captain")
 		playAnimation(StageScene.Duo, "stand", {pc="alexrynard", npc="captain", npcAction="sit"})
 		aimCameraAndSetLocName("cd_captain_office")
-		saynn("Alex steps into the captain's office, you follow after.")
+		saynn("Алекс входит в кабинет капитана, вы следуете за ним.")
 
-		saynn("The captain seems to be sitting behind his table, working on something on his laptop. He closes it down and looks at you two.")
+		saynn("Капитан сидит за столом и что-то сосредоточенно печатает в ноутбуке. Он закрывает крышку и переводит взгляд на вас двоих.")
 
-		saynn("[say=captain]Welcome.[/say]")
+		saynn("[say=captain]Добро пожаловать.[/say]")
 
-		saynn("He looks at Alex specifically.")
+		saynn("Он смотрит именно на Алекс.")
 
-		saynn("[say=captain]Coffee? Whiskey? I have just water too.[/say]")
+		saynn("[say=captain]Кофе? Виски? Есть еще просто вода.[/say]")
 
-		saynn("[say=alexrynard]I'm good, I'm not gonna take much of your time.[/say]")
+		saynn("[say=alexrynard]Всё в порядке, я не займу много твоего времени.[/say]")
 
-		saynn("The captain nods. Alex stands in the middle of the room.. you take a spot behind him.")
+		saynn("Капитан кивает. Алекс стоит посреди комнаты... вы занимаете место позади него.")
 
-		saynn("[say=captain]Alright. What's eating you?[/say]")
+		saynn("[say=captain]Ладно. Что тебя гложет?[/say]")
 
-		saynn("Alex sighs and lowers his gaze for a second.")
+		saynn("Алекс вздыхает и на секунду опускает взгляд.")
 
-		saynn("[say=alexrynard]Why?[/say]")
+		saynn("[say=alexrynard]Почему?[/say]")
 
-		saynn("The captain tilts his head slightly.")
+		saynn("Капитан слегка наклоняет голову.")
 
-		saynn("[say=captain]Why what?[/say]")
+		saynn("[say=captain]Почему что?[/say]")
 
-		saynn("[say=alexrynard]You know what.[/say]")
+		saynn("[say=alexrynard]Знаешь что?[/say]")
 
-		saynn("[say=captain]Enlighten me, I really don't.[/say]")
+		saynn("[say=captain]Просвети меня, а то я реально не в курсе.[/say]")
 
-		saynn("[say=alexrynard]Why do you make me do useless crap?[/say]")
+		saynn("[say=alexrynard]Зачем ты заставляешь меня делать всю эту бесполезную херню?[/say]")
 
-		saynn("Wow, Alex sounds quite annoyed. While the captain stays unphased, his voice is neutral.")
+		saynn("Ого, Алекс звучит довольно раздраженно. В то время как капитан остается невозмутимым, его голос звучит нейтрально.")
 
-		saynn("[say=captain]You mean.. repairs? Could you please remind me of who you are?[/say]")
+		saynn("[say=captain]Ты имеешь в виду... ремонт? Не мог бы ты напомнить мне, кто ты такой?[/say]")
 
-		saynn("[say=alexrynard]Me? I'm a station's engineer, why the stupid question.[/say]")
+		saynn("[say=alexrynard]Я? Я инженер станции, к чему этот тупой вопрос?[/say]")
 
-		saynn("The captain tilts his head more, his strict gaze direct towards Alex's eyes.")
+		saynn("Капитан наклоняет голову еще сильнее, его строгий взгляд устремлен прямо в глаза Алексу.")
 
-		saynn("[say=captain]I'm asking because I feel like you forgot who you are, Rynard.[/say]")
+		saynn("[say=captain]Я спрашиваю, потому что у меня такое чувство, будто ты забыл, кто ты такой, Рйнард.[/say]")
 
-		saynn("[say=alexrynard]I didn't forget anything. But this can't continue like this. I demand an answer. Why? Why do I feel like I'm being punished.[/say]")
+		saynn("[say=alexrynard]Я ничего не забыл. Но так продолжаться не может. Я требую ответа. Почему? Почему у меня такое чувство, будто меня наказывают?[/say]")
 
-		saynn("The captain rubs his chin.")
+		saynn("Капитан потирает подбородок.")
 
-		saynn("[say=captain]Right..[/say]")
+		saynn("[say=captain]Верно..[/say]")
 
-		addButton("Continue", "See what happens next", "time5_captainapproaches")
+		addButton("Продолжить", "Смотреть, что будет дальше", "time5_captainapproaches")
 	if(state == "time5_captainapproaches"):
 		playAnimation(StageScene.Duo, "stand", {pc="alexrynard", npc="captain"})
-		saynn("The captain stands up and approaches Alex, their gazes are at the same level now.")
+		saynn("Капитан встает и подходит к Алексу, теперь их взгляды на одном уровне.")
 
-		saynn("[say=captain]I guess there was a misunderstanding between us. I'm not punishing you, Alex. I'm just.. trying to hold you back a little.[/say]")
+		saynn("[say=captain]Думаю, между нами произошло недопонимание. Я не наказываю тебя, Алекс. Я просто.. пытаюсь немного притормозить тебя.[/say]")
 
-		saynn("Alex raises a brow.")
+		saynn("Алекс приподнимает бровь.")
 
-		saynn("[say=alexrynard]Hold me back? But why?[/say]")
+		saynn("[say=alexrynard]Притормозить? Но почему?[/say]")
 
-		saynn("The captain looks at you for a second. His deep stare sends shivers down your spine.")
+		saynn("Капитан на секунду замирает, глядя на тебя. От его тяжелого, пронзительного взгляда по спине пробегает дрожь.")
 
-		saynn("[say=captain]Like I said before.. Big things await us in the future, Alex. But for now.. I need you to do what I'm saying. I just don't want you to.. burn out.. with tech.[/say]")
+		saynn("[say=captain]Как я уже говорил.. Впереди нас ждут великие дела, Алекс. Но сейчас.. мне нужно, чтобы ты слушался. Я просто не хочу, чтобы ты.. перегорел.. из-за технологий.[/say]")
 
-		saynn("Confusing..")
+		saynn("Запутанно..")
 
-		saynn("[say=alexrynard]Burn out?[/say]")
+		saynn("[say=alexrynard]Перегорел?[/say]")
 
-		saynn("[say=captain]Yeah. You have great potential, Alex. I'm afraid that you might accidentally.. break yourself.. more than you already did.[/say]")
+		saynn("[say=captain]Да. У тебя огромный потенциал, Алекс. Я боюсь, что ты можешь случайно.. сломать себя.. еще сильнее, чем уже сделал.[/say]")
 
-		saynn("The captain directs his attention to Alex's chest.. the whirling of his back becoming obvious.")
+		saynn("Капитан переводит взгляд на грудь Алекса.. становится заметно, как бешено вращается его спина.")
 
-		saynn("[say=captain]I hope you can understand this, you're a smart guy. But no one is perfect. And that's fine. But that means that our creations aren't perfect either. They can hurt us.. bad.[/say]")
+		saynn("[say=captain]Надеюсь, ты сможешь это понять, ты ведь умный парень. Но никто не идеален. И это нормально. Но это также значит, что и наши творения не совершенны. Они могут причинить нам боль... сильную боль.[/say]")
 
 		saynn("[say=alexrynard]I.. I..[/say]")
 
-		saynn("Alex starts lowering his gaze, he seems to be struggling with something. The captain taps on his shoulder a few times.")
+		saynn("Алекс начинает опускать взгляд, кажется, он с чем-то борется. Капитан несколько раз хлопает его по плечу.")
 
-		saynn("[say=captain]I want you to be happy, I really do. All these repairs.. they're just to keep your mind sharp, you know? I can't offer you much more with what resources the station currently has, I'm sorry.[/say]")
+		saynn("[say=captain]Я хочу, чтобы ты был счастлив, правда. Все эти ремонты... они нужны лишь для того, чтобы твой разум оставался острым, понимаешь? При нынешних ресурсах станции я не могу предложить тебе многого, прости.[/say]")
 
-		addButton("Continue", "See what happens next", "time5_captain_looksatplayer")
+		addButton("Продолжить", "Смотреть, что будет дальше", "time5_captain_looksatplayer")
 	if(state == "time5_captain_looksatplayer"):
 		playAnimation(StageScene.Duo, "stand", {npc="captain"})
-		saynn("[say=captain]I put my full trust into you. I just hope you can do the same for me. There are a lot of bad people in the world, you know that better than me.[/say]")
+		saynn("[say=captain]Я полностью тебе доверяю. И лишь надеюсь, что ты сможешь ответить мне тем же. В мире полно плохих людей, и ты знаешь об этом лучше меня.[/say]")
 
-		saynn("The captain approaches you next.. while still talking with Alex.")
+		saynn("Затем к тебе подходит капитан, всё еще продолжая разговор с Алексом.")
 
-		saynn("[say=captain]I just really don't want you to.. make a mistake.[/say]")
+		saynn("[say=captain]Я просто очень не хочу, чтобы ты... совершил ошибку.[/say]")
 
-		saynn("The captain tugs on your muzzle a bit, checking how well secured it is.")
+		saynn("Капитан слегка тянет тебя за намордник, проверяя, насколько плотно он закреплен.")
 
-		saynn("Alex, even more confused, looks at the captain. Something clicks in him..")
+		saynn("Алекс, окончательно сбитый с толку, смотрит на капитана. В его голове что-то щелкает...")
 
-		saynn("[say=alexrynard]Mistake? What do you mean by mistake?[/say]")
+		saynn("[say=alexrynard]Ошибка? Что вы имеете в виду под ошибкой?[/say]")
 
-		saynn("[say=captain]Exactly what it sounds like.[/say]")
+		saynn("[say=captain]Именно то, что звучит.[/say]")
 
-		saynn("[say=alexrynard]You mean {pc.him}, don't you?[/say]")
+		saynn("[say=alexrynard]Ты имеешь в виду {pc.him}, не так ли?[/say]")
 
-		saynn("[say=captain]I really didn't want to forbid you from interacting with inmates. But you gotta understand that they are convicted criminals, you can't trust them. Especially when any kind of new technology is involved.[/say]")
+		saynn("[say=captain]Мне правда не хотелось запрещать тебе общаться с заключенными. Но ты должна понимать, что они — осужденные преступники, им нельзя доверять. Особенно когда дело касается каких-то новых технологий.[/say]")
 
-		saynn("Alex hums.")
+		saynn("Алекс что-то напевает под нос.")
 
-		saynn("[say=alexrynard]So that's what it's about? You sound jealous, cap.[/say]")
+		saynn("[say=alexrynard]Так вот в чем дело? Ты звучишь ревниво, кэп.[/say]")
 
-		saynn("Alex gently tugs on the leash, pulling you away from the captain.")
+		saynn("Алекс мягко тянет за поводок, уводя тебя от капитана.")
 
-		addButton("Continue", "See what happens next", "time5_captain_morecaptain")
+		addButton("Продолжить", "Смотреть, что будет дальше", "time5_captain_morecaptain")
 	if(state == "time5_captain_morecaptain"):
 		playAnimation(StageScene.Duo, "stand", {pc="alexrynard", npc="captain"})
-		saynn("[say=captain]Jealous is a very strong word, Rynard. I'm protecting the station. But I'm also protecting you. This is for your own good.[/say]")
+		saynn("[say=captain]«Ревниво» — это слишком сильное слово, Ринард. Я защищаю станцию. Но заодно защищаю и тебя. Это для твоего же блага.[/say]")
 
-		saynn("[say=alexrynard]Uh huh.[/say]")
+		saynn("[say=alexrynard]Угу.[/say]")
 
-		saynn("Captain frowns.")
+		saynn("Капитан хмурится.")
 
-		saynn("[say=captain]Are you forgetting what I did for you? I saved you. Where would you be without me?[/say]")
+		saynn("[say=captain]Ты что, забыла, что я для тебя сделал? Я спас тебя. Где бы ты была без меня?[/say]")
 
-		saynn("[say=alexrynard]And now you think that you own me? Hah.[/say]")
+		saynn("[say=alexrynard]И теперь ты думаешь, что я твоя собственность? Ха![/say]")
 
-		saynn("[say=captain]You know what.. I want you to think about it. Thoroughly. Alone. Without any other mind influencing you. We will talk later.[/say]")
+		saynn("[say=captain]Знаешь что... Я хочу, чтобы ты хорошенько об этом подумала. В одиночестве. Чтобы на тебя не влиял никто другой. Поговорим позже.[/say]")
 
-		saynn("[say=alexrynard]We're not gonna talk later. I quit.[/say]")
+		saynn("[say=alexrynard]Ничего мы позже не обсудим. Я увольняюсь.[/say]")
 
-		saynn("That bombshell catches the captain off-guard.")
+		saynn("Эта бомба застает капитана врасплох.")
 
-		saynn("[say=captain]Huh? Wha.. You can't, we have a contract.[/say]")
+		saynn("[say=captain]А? Что?.. Ты не можешь, у нас же контракт![/say]")
 
-		saynn("[say=alexrynard]It will run out soon. And I will be out.[/say]")
+		saynn("[say=alexrynard]Он скоро закончится. Как и мое пребывание здесь.[/say]")
 
-		saynn("Captain stays quiet for some time. And he is not happy even if his expression says otherwise, he can not pull his gaze away from Alex.")
+		saynn("Капитан на некоторое время замолкает. И хотя по его лицу этого не скажешь, он явно не в восторге, но он не может оторвать взгляда от Алекс.")
 
-		saynn("[say=captain]You're gonna break our trust like that? After everything that..[/say]")
+		saynn("[say=captain]Ты вот так просто предашь наше доверие? После всего, что..[/say]")
 
-		saynn("Alex cuts him off, making one step forward.")
+		saynn("Алекс перебивает его, делая шаг вперед.")
 
-		saynn("[say=alexrynard]Shut up about the trust already, it was never about trust. Do you think I'm not grateful that you pulled me out of my hell? I am. But everything has a limit. I draw mine here.[/say]")
+		saynn("[say=alexrynard]Да хватит уже про это доверие, дело никогда не было в доверии. Думаешь, я не благодарна за то, что ты вытащил меня из этого ада? Благодарна. Но у всего есть предел. И мой предел — здесь.[/say]")
 
-		saynn("Captain stays quiet for some more time.")
+		saynn("Капитан снова замолкает на какое-то время.")
 
-		saynn("[say=captain]Your spine..[/say]")
+		saynn("[say=captain]Твой позвоночник..[/say]")
 
-		saynn("[say=alexrynard]Rip it out, I don't care. I will pay for the wheelchair. And then I will be rolling the fuck out of here.[/say]")
+		saynn("[say=alexrynard]Вырви его, мне плевать. Я сама куплю себе инвалидное кресло. А потом на нем, блядь, и уеду отсюда нахер.[/say]")
 
-		saynn("Wow, Alex is ready to put his everything for this..")
+		saynn("Ого, Алекс готов выложиться здесь на полную...")
 
-		saynn("Captain rubs his chin, his strict focussed eyes staring at Alex for at least half a minute.")
+		saynn("Капитан потирает подбородок, его строгий, сосредоточенный взгляд не отрывается от Алекса как минимум полминуты.")
 
-		saynn("[say=captain]Right. How about.. we will allocate some funding to your prototypes, we will find a good number. And obviously then there wouldn't be a need for keeping you busy with simple repairs. I want to make it right by you, I'm not a monster.[/say]")
+		saynn("[say=captain]Так. Как насчет того... чтобы мы выделили финансирование на твои прототипы, причем в приличном объеме? И тогда, само собой, тебе не придется тратить время на простую починку хлама. Я хочу отплатить тебе за старания, я же не монстр.[/say]")
 
-		saynn("It feels like the captain is forcing himself to say these words.")
+		saynn("Кажется, будто капитан заставляет себя произносить эти слова.")
 
-		saynn("[say=alexrynard]I want full ownership of my prototypes. They're mine, not AlphaCorp's.[/say]")
+		saynn("[say=alexrynard]Я хочу полного права собственности на свои прототипы. Они принадлежат мне, а не «АльфаКорп».[/say]")
 
-		saynn("[say=captain]Huh.. That might be possible to arrange. But then I want some control of what you are creating. I can't let you create an atomic bomb here, I hope you can understand that.[/say]")
+		saynn("[say=captain]Хм... Это еще можно устроить. Но тогда я хочу иметь контроль над тем, что именно ты создаешь. Я не могу позволить тебе собрать здесь атомную бомбу, надеюсь, ты понимаешь.[/say]")
 
-		saynn("[say=alexrynard]That's fair.[/say]")
+		saynn("[say=alexrynard]Справедливо.[/say]")
 
-		saynn("The captain reaches his hand out for a handshake.")
+		saynn("Капитан протягивает руку для рукопожатия.")
 
-		saynn("[say=captain]We have a deal?[/say]")
+		saynn("[say=captain]Договорились?[/say]")
 
-		saynn("Alex quickly glances over his shoulder at you.")
+		saynn("Алекс бросает быстрый взгляд через плечо на тебя.")
 
-		saynn("[say=alexrynard]I also want this inmate to be assigned as my apprentice. I taught {pc.him} a lot already.[/say]")
+		saynn("[say=alexrynard]Я также хочу, чтобы этот заключенный был назначен моим подмастерьем. Я уже многому научил {pc.him}.[/say]")
 
-		saynn("[say=captain]{pc.He} {pc.isAre} an inmate.[/say]")
+		saynn("[say=captain]{pc.He} — это {pc.isAre} заключенный.[/say]")
 
-		saynn("[say=alexrynard]I once had a collar around my neck. Did you forget already?[/say]")
+		saynn("[say=alexrynard]Когда-то на моей шее был ошейник. Ты что, уже и забыл?[/say]")
 
-		saynn("Captain's hand tenses up a little.")
+		saynn("Рука капитана слегка напрягается.")
 
-		saynn("[say=captain]Alright, {pc.he} can be your assistant. Within reason.[/say]")
+		saynn("[say=captain]Ладно, {pc.he} может быть твоим помощником. Но в разумных пределах.[/say]")
 
-		saynn("Alex nods and shakes the captain's hand.")
+		saynn("Алекс кивает и пожимает руку капитану.")
 
-		saynn("[say=alexrynard]I'm glad we could talk it out, cap. Better than us keeping hidden anger for each other.[/say]")
+		saynn("[say=alexrynard]Рад, что мы смогли всё обсудить, кэп. Это лучше, чем копить скрытую злость друг на друга.[/say]")
 
-		saynn("[say=captain]Of course.[/say]")
+		saynn("[say=captain]Разумеется.[/say]")
 
-		saynn("One of them surely got a much better deal out of this. They exchange smiles before Alex leaves the office, bringing you along on a leash. The captain gives you a cold goodbye stare.")
+		saynn("Один из них явно остался в гораздо большем выигрыше. Они обмениваются улыбками, после чего Алекс выходит из кабинета, ведя тебя за собой на поводке. Капитан провожает вас холодным прощальным взглядом.")
 
-		addButton("Continue", "See what happens next", "time5_returningback")
+		addButton("Продолжить", "Смотреть, что будет дальше", "time5_returningback")
 	if(state == "time5_returningback"):
 		removeCharacter("captain")
 		aimCameraAndSetLocName("cd_last_intersection")
 		playAnimation(StageScene.Duo, "walk", {npc="alexrynard", npcAction="walk", flipNPC=true, bodyState={leashedBy="alexrynard"}})
-		saynn("You and Alex walk through the rich corridor back to the lift.")
+		saynn("Вы с Алексом идете по роскошному коридору обратно к лифту.")
 
-		saynn("[say=alexrynard]Went better than expected, huh?[/say]")
+		saynn("[say=alexrynard]Прошло лучше, чем ожидалось, а?[/say]")
 
-		saynn("Could be your chance to ask something.")
+		saynn("Возможно, это твой шанс о чем-то спросить.")
 
-		addButton("No questions", "Just follow him", "time5_returnback")
-		addButton("Why me", "Ask why did he brought you", "time5_whyme")
-		addButton("How", "How did Alex manage to persuade him", "time5_how")
-		addButton("Apprentice?", "What does that mean", "time5_apprentice")
+		addButton("Ничего не спрашивать", "Просто идти за ним", "time5_returnback")
+		addButton("Почему я?", "Спросить, зачем он тебя притащил", "time5_whyme")
+		addButton("Как", "Как Алексу удалось его убедить?", "time5_how")
+		addButton("Подмастерье?", "Что это значит?", "time5_apprentice")
 	if(state == "time5_whyme"):
-		saynn("[say=pc]Was I needed? I didn't really do anything.[/say]")
+		saynn("[say=pc]Я был нужен? Я ведь толком ничего не сделал.[/say]")
 
-		saynn("Alex chuckles.")
+		saynn("Алекс усмехается.")
 
-		saynn("[say=alexrynard]You did more than you realize.[/say]")
+		saynn("[say=alexrynard]Ты сделала больше, чем сама осознаешь.[/say]")
 
-		saynn("Alex turns towards you.")
+		saynn("Алекс поворачивается к тебе.")
 
-		saynn("[say=alexrynard]Everyone is using each other. I thought that this is the norm, how the world works. You proved me wrong. I can't do everything, I was very close to giving up. But with you, I feel like I can do anything. Because you got my back.[/say]")
+		saynn("[say=alexrynard]Все используют друг друга. Я думал, что это норма, так устроен мир. Но ты доказала, что я ошибался. Я не всесилен, я был уже на грани того, чтобы всё бросить. Но с тобой мне кажется, что я горы сверну. Потому что ты прикрываешь мне спину.[/say]")
 
-		saynn("He smiles and pats you on the head. Huh. If you could have kicked him for that pun, you probably would have.")
+		saynn("Он улыбается и хлопает тебя по голове. Хм. Если бы ты могла пнуть его за эту каламбурную тупость, ты бы наверняка это сделала.")
 
-		addButton("Enough questions", "Just follow him", "time5_returnback")
-		addButton("How", "How did Alex manage to persuade him", "time5_how")
-		addButton("Apprentice?", "What does that mean", "time5_apprentice")
+		addButton("Хватит вопросов", "Просто идти за ним", "time5_returnback")
+		addButton("Как", "Как Алексу удалось его убедить?", "time5_how")
+		addButton("Подмастерье?", "Что это значит?", "time5_apprentice")
 	if(state == "time5_how"):
-		saynn("[say=pc]How did you manage to change his mind? What if he just let you quit.[/say]")
+		saynn("[say=pc]Как тебе удалось переубедить его? А что, если бы он просто позволил тебе уйти?[/say]")
 
-		saynn("Alex shrugs.")
+		saynn("Алекс пожимает плечами.")
 
-		saynn("[say=alexrynard]He needs me a lot more than I need him. Either way, I'm not planning on staying here forever. I did more than enough for him already.[/say]")
+		saynn("[say=alexrynard]Он нуждается во мне гораздо больше, чем я в нем. В любом случае, я не планирую оставаться здесь вечно. Для него я уже сделала более чем достаточно.[/say]")
 
-		saynn("[say=pc]What are you gonna do?[/say]")
+		saynn("[say=pc]И что ты собираешься делать?[/say]")
 
-		saynn("[say=alexrynard]After BDCC? Not sure yet. And I have you here. I don't have anyone on the outside. So I wasn't planning on quitting now either way.[/say]")
+		saynn("[say=alexrynard]После БДКЦ? Пока не знаю. И здесь есть ты. Снаружи у меня никого нет. Так что в любом случае я не собиралась увольняться прямо сейчас.[/say]")
 
-		saynn("Looks like his gamble paid off.")
+		saynn("Похоже, его ставка сыграла.")
 
-		addButton("Enough questions", "Just follow him", "time5_returnback")
-		addButton("Why me", "Ask why did he brought you", "time5_whyme")
-		addButton("Apprentice?", "What does that mean", "time5_apprentice")
+		addButton("Хватит вопросов", "Просто идти за ним", "time5_returnback")
+		addButton("Почему я?", "Спросить, зачем он тебя притащил", "time5_whyme")
+		addButton("Подмастерье?", "Что это значит?", "time5_apprentice")
 	if(state == "time5_apprentice"):
-		saynn("[say=pc]I'm your apprentice now? What does that mean?[/say]")
+		saynn("[say=pc]Теперь я твой подмастерье? И что это значит?[/say]")
 
-		saynn("He smiles.")
+		saynn("Он улыбается.")
 
-		saynn("[say=alexrynard]Nothing really changes. It's just that you're now allowed to help me legally rather than.. under the table, you know?[/say]")
+		saynn("[say=alexrynard]Да особо ничего не меняется. Просто теперь тебе разрешено помогать мне официально, а не... «под столом», понимаешь?[/say]")
 
-		saynn("[say=pc]That means you could have been punished back then when we were helping Eliza?[/say]")
+		saynn("[say=pc]То есть тогда, когда мы помогали Элизе, тебя могли наказать?[/say]")
 
-		saynn("Alex hums.")
+		saynn("Алекс что-то напевает под нос.")
 
-		saynn("[say=alexrynard]If I always did the 'right' thing, I'd be the captain's slave forever, doing what he wants me to do because he saved me back then. Fuck that, I'd rather do what I want and suffer the consequences.[/say]")
+		saynn("[say=alexrynard]Если бы я всегда поступала «правильно», я бы вечно была рабыней капитана — делала бы всё, что он захочет, только потому, что он когда-то меня спас. К черту всё, лучше уж делать то, что хочу, и разгребать последствия.[/say]")
 
-		saynn("Fair enough.")
+		saynn("Справедливо.")
 
-		addButton("Enough questions", "Just follow him", "time5_returnback")
-		addButton("Why me", "Ask why did he brought you", "time5_whyme")
-		addButton("How", "How did Alex manage to persuade him", "time5_how")
+		addButton("Хватит вопросов", "Просто идти за ним", "time5_returnback")
+		addButton("Почему я?", "Спросить, зачем он тебя притащил", "time5_whyme")
+		addButton("Как", "Как Алексу удалось его убедить?", "time5_how")
 	if(state == "time5_returnback"):
 		aimCameraAndSetLocName("mining_nearentrance")
 		GM.pc.setLocation("mining_nearentrance")
 		playAnimation(StageScene.Duo, "walk", {npc="alexrynard", npcAction="walk", flipNPC=true, bodyState={leashedBy="alexrynard"}})
-		saynn("Alex brings you back to the lowest level of the station. And yet, you still feel like you won.")
+		saynn("Алекс приводит тебя на самый нижний уровень станции. И всё же, у тебя такое чувство, будто ты победила.")
 
-		saynn("[say=alexrynard]There we go. Let's get you uncuffed.[/say]")
+		saynn("[say=alexrynard]Вот и всё. Давай сниму с тебя наручники.[/say]")
 
-		saynn("[say=pc]What if he breaks his promise and gives you more things to fix?[/say]")
+		saynn("[say=pc]А если он нарушит обещание и будет подкидывать тебе всё больше работы?[/say]")
 
-		saynn("[say=alexrynard]I will start stealing the parts then. He won't. And obviously there is still the whole station to fix, I'm still an engineer.[/say]")
+		saynn("[say=alexrynard]Тогда я начну воровать запчасти. Он — нет. Да и станцию ещё целиком чинить, я всё-таки инженер.[/say]")
 
-		addButton("Cuffs", "Get them removed", "time5_nocuffs")
+		addButton("Наручники", "Снять их", "time5_nocuffs")
 	if(state == "time5_nocuffs"):
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard"})
-		saynn("He removes the cuffs, the attached leash and the muzzle.")
+		saynn("Он снимает наручники, пристегнутый к ним поводок и намордник.")
 
-		saynn("[say=alexrynard]The collar stays, heh.[/say]")
+		saynn("[say=alexrynard]Ошейник остается, хех.[/say]")
 
-		saynn("[say=pc]Is there really no way to take it off? Just curious.[/say]")
+		saynn("[say=pc]Неужели его и правда нельзя снять? Просто любопытно.[/say]")
 
-		saynn("Alex smirks.")
+		saynn("Алекс ухмыляется.")
 
-		saynn("[say=alexrynard]I know what you feel. There is no way to create a truly impenetrable system, these collars do have some flaws. But none of them can be exploited by inmates which makes them secure.[/say]")
+		saynn("[say=alexrynard]Я знаю, что ты чувствуешь. Невозможно создать по-настоящему непробиваемую систему, у этих ошейников есть свои недостатки. Но ни один из них не может быть использован заключенными в своих целях, что делает их надежными.[/say]")
 
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
-		saynn("[say=alexrynard]Take care. Thank you.[/say]")
+		saynn("[say=alexrynard]Береги себя. Спасибо.[/say]")
 
-		saynn("Alex leaves you alone.")
+		saynn("Алекс оставляет тебя в покое.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "time6"):
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard"})
-		saynn("You approach Alex as his new apprentice!")
+		saynn("Ты подходишь к Алексу в качестве его нового ученика!")
 
-		saynn("[say=pc]Hey there.[/say]")
+		saynn("[say=pc]Привет.[/say]")
 
-		saynn("He seems to be just working on something. Something that's not a broken datapad, nice!")
+		saynn("Кажется, он просто над чем-то работает. И это не какой-нибудь разбитый датапад, это радует!")
 
-		saynn("[say=alexrynard]Yeah, hi. The captain didn't lie, no more devices to fix.[/say]")
+		saynn("[say=alexrynard]А, привет. Капитан не врал, больше никаких устройств чинить не надо.[/say]")
 
-		saynn("[say=pc]But.. What are we gonna do then?[/say]")
+		saynn("[say=pc]Но... что нам тогда делать?[/say]")
 
-		saynn("[say=alexrynard]Well, you know, I'm still a station engineer. We could just do general maintenance.[/say]")
+		saynn("[say=alexrynard]Ну, понимаешь, я всё ещё инженер станции. Можем просто заняться плановым техобслуживанием.[/say]")
 
-		saynn("It's monotonous work too.. but anything is better than repairing the same things over and over.")
+		saynn("Работа монотонная... но это всё равно лучше, чем раз за разом чинить одно и то же.")
 
-		saynn("Something beeps in Alex's pocket. He pulls his datapad out and goes through some menus.")
+		saynn("В кармане у Алекса что-то пиликает. Он достаёт свой датапад и начинает листать меню.")
 
-		saynn("[say=alexrynard]Oh, speaking of. The generator in the mines has stopped working, let's go check it out.[/say]")
+		saynn("[say=alexrynard]О, кстати, о таком. Генератор в шахтах встал, давай пойдём проверим.[/say]")
 
-		saynn("Yay, your first task.")
+		saynn("Ура, твоё первое задание.")
 
-		addButton("Mineshaft", "Head there with Alex", "time6_mine")
+		addButton("Шахта", "Отправиться туда с Алексом", "time6_mine")
 	if(state == "time6_mine"):
 		aimCameraAndSetLocName("mining_shafts_entering")
-		saynn("It's dark.. obviously.. none of the lights work so Alex has to use his datapad as a torch.")
+		saynn("Там темно... ну, очевидно... свет не работает, так что Алексу приходится использовать датапад вместо фонарика.")
 
-		saynn("You and him carefully tread through the mineshaft, following the wires that are attached to the rocks.")
+		saynn("Вы осторожно пробираетесь по шахте, следуя вдоль проводов, прикрепленных к скалам.")
 
-		saynn("[say=pc]Kinda creepy.[/say]")
+		saynn("[say=pc]Как-то жутковато.[/say]")
 
-		saynn("[say=alexrynard]It's fine, we just have to find the damn thing.[/say]")
+		saynn("[say=alexrynard]Все нормально, нам просто нужно найти эту чертову штуку.[/say]")
 
-		saynn("Either your mind is playing with you.. or not.. for some reason you keep noticing movement in your peripheral vision. Hard to tell, everything is so dark.")
+		saynn("То ли воображение играет с тобой... то ли нет... по какой-то причине ты то и дело замечаешь движение краем глаза. Трудно сказать наверняка, здесь слишком темно.")
 
-		saynn("[say=alexrynard]There it is.[/say]")
+		saynn("[say=alexrynard]Вот оно.[/say]")
 
-		saynn("The generator.. It looks like a big metal box. And it clearly suffered some damage, its top panel is bent under the weight of a huge boulder.")
+		saynn("Генератор... Выглядит как большой металлический ящик. И он явно пострадал: верхняя панель смята под весом огромного валуна.")
 
-		saynn("[say=alexrynard]Huh, we will have to investigate the supports later, don't want the mineshaft to collapse completely.[/say]")
+		saynn("[say=alexrynard]Хм, позже придется проверить опоры, а то не хочется, чтобы шахта окончательно обвалилась.[/say]")
 
-		saynn("Sounds dangerous.. Alex hands you the datapad and starts trying to push the boulder off.")
+		saynn("Звучит опасно... Алекс протягивает тебе датапад и принимается пытаться сдвинуть валун.")
 
-		saynn("[say=pc]Need some help?[/say]")
+		saynn("[say=pc]Помощь нужна?[/say]")
 
-		saynn("He is panting heavily, the motors in his spine working hard.")
+		saynn("Он тяжело дышит, а моторы в его позвоночнике работают на пределе возможностей.")
 
-		saynn("[say=alexrynard]I got.. it.. Just hold the light for me.[/say]")
+		saynn("[say=alexrynard]Есть.. получилось.. Просто держи свет.[/say]")
 
-		saynn("He finally manages to roll it off. He unscrews one of the panels, exposing the wiring and internal parts.")
+		saynn("Наконец ему удается скатить его. Он откручивает одну из панелей, обнажая проводку и внутренние детали.")
 
-		saynn("[say=alexrynard]Yeah, some capacitors got crushed. Shouldn't take too long to fix.[/say]")
+		saynn("[say=alexrynard]Да, несколько конденсаторов раздавило. Починкой не займутся много времени.[/say]")
 
-		saynn("And so you keep the light on him while he proceeds to carefully remove the busted components and replace them.")
+		saynn("И вот ты продолжаешь светить ему, пока он осторожно вынимает поврежденные компоненты и заменяет их новыми.")
 
-		saynn("[say=alexrynard]Strange that the rock fell exactly on it.[/say]")
+		saynn("[say=alexrynard]Странно, что камень упал прямо на него.[/say]")
 
-		saynn("[say=pc]What if it wasn't a coincidence?[/say]")
+		saynn("[say=pc]А что, если это не было совпадением?[/say]")
 
-		saynn("[say=alexrynard]You'd need a lot of strength to lift one big enough to break this generator. They're armored as you can see.[/say]")
+		saynn("[say=alexrynard]Нужно иметь недюжинную силу, чтобы поднять камень, способный разбить этот генератор. Как видишь, они бронированные.[/say]")
 
-		saynn("Click.. and the generator kicks into action. The lights around you flicker a lot.. until the current normalizes.")
+		saynn("Щелк.. и генератор оживает. Свет вокруг тебя сильно мерцает.. пока ток не стабилизируется.")
 
-		saynn("[say=alexrynard]Voila.[/say]")
+		saynn("[say=alexrynard]Вуаля.[/say]")
 
-		saynn("That was easy. But nothing in the world is ever that easy..")
+		saynn("Это было слишком просто. Но в этом мире ничего не бывает настолько просто..")
 
-		saynn("[say=avy]Look who's we got here.[/say]")
+		saynn("[say=avy]Смотрите-ка, кто это у нас тут.[/say]")
 
-		saynn("A familiar voice behind you..")
+		saynn("Знакомый голос раздается за спиной...")
 
-		addButton("Look around", "See what's up", "time6_avy_and_gang")
+		addButton("Осмотреться", "Посмотреть, что там", "time6_avy_and_gang")
 	if(state == "time6_avy_and_gang"):
 		addCharacter("avy")
 		addCharacter("stud")
 		addCharacter("volk")
 		playAnimation(StageScene.Duo, "stand", {pc="alexrynard", npc="avy"})
-		saynn("You look around and see a group of three inmates surrounding you.. A black fox with a cheeky smile, a brown horse with a strong hand holding a pickaxe and a gray wolf with a crazy stare. None of them seem to be particularly friendly..")
+		saynn("Оглядевшись, вы видите группу из трех заключенных, окруживших вас. Черная лисица с наглой ухмылкой, коричневая лошадь с крепкой рукой, сжимающей кирку, и серый волк с безумным взглядом. Ни один из них не кажется дружелюбным...")
 
-		saynn("[say=alexrynard]Generator is fixed, get back to your jobs.[/say]")
+		saynn("[say=alexrynard]Генератор починен, возвращайтесь к работе.[/say]")
 
-		saynn("They're blocking the way back to the station. Alex is reaching for his shock remote already..")
+		saynn("Они преграждают путь назад к станции. Алекс уже тянется к своему электрошоковому пульту...")
 
-		saynn("[say=alexrynard]I'm warning you.[/say]")
+		saynn("[say=alexrynard]Предупреждаю один раз.[/say]")
 
-		saynn("[say=avy]Relax, pretty boy. If I get what I want, no one will get hurt.[/say]")
+		saynn("[say=avy]Расслабься, красавчик. Если я получу то, что хочу, никто не пострадает.[/say]")
 
-		saynn("Yeah, they are probably responsible for breaking that generator..")
+		saynn("Да, скорее всего, это они виноваты в поломке генератора...")
 
-		saynn("[say=alexrynard]Yeah, no.[/say]")
+		saynn("[say=alexrynard]Ага, как же.[/say]")
 
-		saynn("Alex whips the shock remote and aims it at the gang of inmates.. He presses the red button, dropping one of the inmates.")
+		saynn("Алекс взмахивает электрошоковым пультом и наводит его на банду заключенных. Он нажимает красную кнопку, сбивая одного из них с ног.")
 
-		saynn("[say=volk]SUKA! MY NECK![/say]")
+		saynn("[say=volk]СУКА! ШЕЯ![/say]")
 
-		saynn("But before the remote can recharge, the buff horse suddenly throws his pickaxe at him.")
+		saynn("Но прежде чем пульт успевает перезарядиться, качок-конь внезапно швыряет в него свою кирку.")
 
-		saynn("[say=alexrynard]What the..[/say]")
+		saynn("[say=alexrynard]Что за...[/say]")
 
-		saynn("The dull part of the tool hits Alex's chest, causing him to drop what he was holding. And before Alex can pick it up, the black fox swiftly closes the distance and crushes the dropped remote with her foot, stealing any hope of an easy victory..")
+		saynn("Тупая часть инструмента попадает Алексу в грудь, заставляя его выпустить то, что он держал. И прежде чем Алекс успевает поднять предмет, черная лисица стремительно сокращает дистанцию и раздавливает выпавший пульт лапой, лишая его всякой надежды на легкую победу.")
 
-		saynn("[say=avy]Wow, you don't even want to hear me out first? We didn't even start dating and you have already broken my trust.[/say]")
+		saynn("[say=avy]Ого, ты даже не хочешь сначала меня выслушать? Мы еще даже не начали встречаться, а ты уже предала мое доверие.[/say]")
 
-		saynn("[say=alexrynard]If you touch us, you're gonna regret it.[/say]")
+		saynn("[say=alexrynard]Если тронешь нас, пожалеешь.[/say]")
 
-		saynn("The black foxy chuckles.")
+		saynn("Черная лисица усмехается.")
 
-		saynn("[say=avy]Empty threats, so predictable. Either way.. I only want you to help take off our collars. And we all gonna go on our merry ways, completely unharmed and with all bones intact.[/say]")
+		saynn("[say=avy]Пустые угрозы, так предсказуемо. В любом случае... я всего лишь хочу, чтобы ты помог нам снять ошейники. И тогда мы все разойдемся каждый своей дорогой, совершенно невредимые и с целыми костями.[/say]")
 
-		saynn("[say=alexrynard]What? That's the point of the collars, no one can remove them.[/say]")
+		saynn("[say=alexrynard]Что? В этом-то и смысл ошейников — никто не может их снять.[/say]")
 
-		saynn("The black foxy steps forward and barks..")
+		saynn("Черная лисица делает шаг вперед и заливается лаем.")
 
-		saynn("[say=avy]Don't bullshit me, boy. I know that you designed them. Which means you know how to take them off.[/say]")
+		saynn("[say=avy]Не пизди мне, парень. Я знаю, что это ты их спроектировал. А значит, ты знаешь, как их снять.[/say]")
 
-		saynn("Alex tilts his head, deeply confused.")
+		saynn("Алекс в замешательстве наклоняет голову.")
 
-		saynn("[say=alexrynard]How the fuck do you know that?[/say]")
+		saynn("[say=alexrynard]Какого хуя ты это знаешь?[/say]")
 
-		saynn("Avy directs her stare at you.. Her silent nod is deafening.")
+		saynn("Ави пристально смотрит на тебя. Её молчаливый кивок красноречивее любых слов.")
 
-		saynn("[say=alexrynard]What? There is no way..[/say]")
+		saynn("[say=alexrynard]Что? Да не может быть...[/say]")
 
-		addButton("She is lying!", "You didn't tell her that!", "time6_sheislying")
+		addButton("Она лжёт!", "Ты ей об этом не говорил!", "time6_sheislying")
 	if(state == "time6_sheislying"):
 		playAnimation(StageScene.Duo, "hurt", {npc="stud", npcAction="shove"})
-		saynn("You're pretty sure you never told anyone that Alex was involved with creating the collars..")
+		saynn("Ты почти уверен, что никогда не упоминал никому, что Алекс приложил руку к созданию ошейников...")
 
-		saynn("[say=pc]She is lying! I never told her anything.[/say]")
+		saynn("[say=pc]Она лжёт! Я ей ничего не говорил![/say]")
 
-		saynn("The dark foxy chuckles.")
+		saynn("Темная лисица усмехается.")
 
-		saynn("[say=avy]Really? You want to keep both the credits and your new boyfriend? Something has to give~.[/say]")
+		saynn("[say=avy]Серьезно? Хочешь оставить и кредиты, и своего нового бойфренда? Придется чем-то пожертвовать~.[/say]")
 
-		saynn("Alex, looking even more confused and unsure now..")
+		saynn("Алекс выглядит еще более растерянным и неуверенным..")
 
 		saynn("[say=alexrynard]I..[/say]")
 
-		saynn("[say=pc]What the fuck are you talking about.[/say]")
+		saynn("[say=pc]О чем ты, блять, вообще говоришь?[/say]")
 
-		saynn("[say=alexrynard]We will deal with that later.. Right now..[/say]")
+		saynn("[say=alexrynard]С этим разберемся позже.. А сейчас..[/say]")
 
-		saynn("[say=avy]Right now it's time to take our collars off, boy~.[/say]")
+		saynn("[say=avy]А сейчас самое время снять ошейники, мальчик~.[/say]")
 
-		saynn("Avy and the other two inmates start approaching Alex, one at the time. You try to stay close to him but the buff horse shoves you away.")
+		saynn("Эви и две другие заключенные начинают подходить к Алексу, одна за другой. Ты пытаешься держаться поближе к нему, но мускулистая кобыла отпихивает тебя.")
 
-		saynn("[say=stud]Go the fuck away if you want to live.[/say]")
+		saynn("[say=stud]Свали нахер, если хочешь жить.[/say]")
 
-		saynn("Alex and the dark foxy are exchanging the first punches behind this mountain of muscles.. You can't leave him like this..")
+		saynn("Алекс и темная лисица обмениваются первыми ударами за этой горой мышц.. Ты не можешь оставить его так..")
 
-		addButton("Fight!", "Start the fight", "time6_into_first_fight")
-		addButton("Shock remote", "Look at it", "time6_lookatshockremote")
+		addButton("В бой!", "Начать бой", "time6_into_first_fight")
+		addButton("Электрошокер", "Посмотри на это", "time6_lookatshockremote")
 	if(state == "time6_lookatshockremote"):
-		saynn("You quickly rush to the shock remote.. Sadly, its frame is crushed to bits. Can't use it.")
+		saynn("Ты быстро бросаешься к пульту шокера... К сожалению, его корпус разбит вдребезги. Использовать не получится.")
 
-		saynn("Alex won't be able to endure the fight against three inmates for much longer..")
+		saynn("Алекс долго не продержится в бою против троих заключенных...")
 
-		addButton("Fight!", "Start the fight", "time6_into_first_fight")
-		addButton("Shock remote", "Maybe you can salvage it", "time6_lookatshockactually")
+		addButton("В бой!", "Начать бой", "time6_into_first_fight")
+		addButton("Электрошокер", "Может, удастся его восстановить?", "time6_lookatshockactually")
 	if(state == "time6_lookatshockactually"):
 		playAnimation(StageScene.Solo, "kneel")
-		saynn("You try to use the shock remote again.. but it doesn't work.")
+		saynn("Ты снова пытаешься использовать пульт шокера... но он не работает.")
 
-		saynn("Alex yelps as he collapses, unable to fight any longer.. Fuck..")
+		saynn("Алекс вскрикивает и валится на землю, больше не в силах сражаться... Блядь...")
 
-		saynn("[say=avy]Ready to talk, failed hero? I really don't want to kill you. Just tell me how to unlock the collars and I will be out of your way~.[/say]")
+		saynn("[say=avy]Ну что, готов поговорить, герой неудачник? Мне очень не хочется тебя убивать. Просто скажи, как разблокировать ошейники, и я уйду с твоей дороги~.[/say]")
 
-		saynn("Wait.. Who cares if the frame is smashed, you just need to trigger the remote. You use your knowledge to disassemble it. Now you just need to short-circuit one of the pins with something metal..")
+		saynn("Погоди... Какая разница, что корпус разбит, нужно просто активировать пульт. Используя свои знания, ты разбираешь его. Теперь осталось только замкнуть один из контактов чем-нибудь металлическим...")
 
-		saynn("Alex growls back and tries to free himself, his spine whirring loudly. Avy just stares him into the eyes.")
+		saynn("Алекс огрызается и пытается вырваться, его позвоночник громко жужжит. Эви просто сверлит его взглядом.")
 
-		saynn("[say=avy]Aww, you think you're strong?[/say]")
+		saynn("[say=avy]Оу, ты думаешь, что ты сильный?[/say]")
 
-		saynn("Avy suddenly throws Alex down to the cold floor.. before [b]stomping[/b] on his back hard, [b]crushing his prosthetic spine[/b].. Sparks bursting out of it as Alex lets out a gut-wrenching cry.")
+		saynn("Эви внезапно швыряет Алекса на холодный пол... а затем с силой [b]втаптывает[/b] ему спину, [b]раздавливая его протез позвоночника[/b]... Из него вырываются искры, а Алекс издает душераздирающий крик.")
 
-		saynn("[say=alexrynard]A-ARGH!..[/say]")
+		saynn("[say=alexrynard]А-ААГХ!..[/say]")
 
-		saynn("[say=pc]NO! YOU BITCH![/say]")
+		saynn("[say=pc]НЕТ! ТЫ, СУКА![/say]")
 
-		saynn("[say=avy]But you're just a spineless beta. Don't go anywhere, I need to deal with your little wife~.[/say]")
+		saynn("[say=avy]Но ты всего лишь бесхребетный бета. Никуда не уходи, мне нужно разобраться с твоей мелкою женушкой~.[/say]")
 
-		saynn("Alex is in too much pain to respond, his broken prosthetic is making his whole body twitch in an uncontrollable agony..")
+		saynn("Алекс слишком измучен болью, чтобы ответить; его сломанный протез заставляет всё тело содрогаться в неконтролируемой агонии...")
 
-		saynn("Avy looks at you next.")
+		saynn("Эви переводит взгляд на тебя.")
 
-		saynn("[say=avy]What was that, little slut?[/say]")
+		saynn("[say=avy]Что ты там вякнула, маленькая шлюшка?[/say]")
 
-		saynn("She starts walking towards you. Your hands are shaking.. you manage to find a little metal piece and jam it into the board..")
+		saynn("Она начинает идти к тебе. Твои руки дрожат... тебе удается нащупать маленькую металлическую деталь и вогнать её в плату...")
 
-		saynn("Moments later, all four nearby collars activate..")
+		saynn("Спустя мгновение все четыре ближайших ошейника активируются...")
 
-		saynn("[say=avy]ARGH![/say]")
+		saynn("[say=avy]АААГХ![/say]")
 
-		saynn("[say=stud]NGH.[/say]")
+		saynn("[say=stud]НГХ.[/say]")
 
-		saynn("[say=volk]SUKAAA![/say]")
+		saynn("[say=volk]СУКААА![/say]")
 
-		saynn("A similar cry leaves your mouth too.. the pain is almost comparable to what Alex probably feels right now..")
+		saynn("Похожий крик срывается и с твоих губ... боль почти такая же, какую сейчас, вероятно, испытывает Алекс...")
 
-		saynn("After a few seconds of unbearable agony, the bluespace crystal attached to the board overheats.. and cracks.. finally ending the broadcast.")
+		saynn("Спустя несколько секунд невыносимой агонии кристалл блюспейса, закрепленный на панели, перегревается... и трескается... наконец прерывая трансляцию.")
 
-		saynn("Avy is furious, even after being downed, she starts crawling towards you, her eyes full of rage. Her friends quickly pull her away from you luckily.")
+		saynn("Ави в ярости; даже будучи сбитой с ног, она начинает ползти к тебе, и её глаза полны гнева. К счастью, друзья быстро оттаскивают её от тебя.")
 
-		saynn("You hear Alex coughing..")
+		saynn("Ты слышишь, как Алекс кашляет...")
 
-		addButton("Alex!", "Forget about them", "time6_won_savealex")
+		addButton("Алекс!", "Забудь о них", "time6_won_savealex")
 	if(state == "time6_into_first_fight"):
 		playAnimation(StageScene.Duo, "dodge", {npc="volk", npcAction="shiv"})
-		saynn("[say=pc]You're gonna pay for this, you fuckers.[/say]")
+		saynn("[say=pc]Вы за это заплатите, ублюдки![/say]")
 
-		saynn("You were ready to fight the buff horse but the gray wolf steps in and pulls a shiv out, before trying to stab you with it!")
+		saynn("Ты уже был готов сразиться с мощным конем, но тут вперед выходит серый волк и выхватывает шило, пытаясь вонзить его в тебя!")
 
-		saynn("[say=volk]Wanna see the world red, suka. Gonna make you leak.[/say]")
+		saynn("[say=volk]Хочешь увидеть мир в красном цвете, сука? Сейчас я из тебя всю кровь выпущу.[/say]")
 
-		saynn("Luckily you manage to avoid his first swing..")
+		saynn("К счастью, тебе удается уклониться от его первого замаха...")
 
-		saynn("It's time to fight.")
+		saynn("Пора драться.")
 
-		addButton("Fight", "Start the first fight", "time6_first_fight")
+		addButton("Драться", "Начать первый бой", "time6_first_fight")
 	if(state == "time6_lost_fight"):
 		playAnimation(StageScene.Solo, "defeat")
-		saynn("You lost the fight.. Ow.. The bruises hurt badly.")
+		saynn("Ты проиграл бой... Ох... Синяки чертовски болят.")
 
-		saynn("Alex is being beat up in the background.. You have to stop them or they're gonna kill him..")
+		saynn("На заднем плане избивают Алекса... Тебе нужно их остановить, иначе они его прикончат...")
 
-		saynn("Think..")
+		saynn("Думай...")
 
-		addButton("Shock remote", "Try to use it", "time6_lost_fight_useremote")
+		addButton("Электрошокер", "Попробовать использовать", "time6_lost_fight_useremote")
 	if(state == "time6_lost_fight_useremote"):
 		playAnimation(StageScene.Solo, "kneel")
-		saynn("The remote! Or.. whatever is left of it. You sneakily crawl to it and start inspecting while Alex is being beaten up in the background by all three of the inmates..")
+		saynn("Пульт! Или то, что от него осталось. Ты крадешься к нему и начинаешь осматривать, пока на заднем плане трое заключенных вовсю лупят Алекса...")
 
-		saynn("[say=avy]Ready to talk, failed hero? I really don't want to kill you. Just tell me how to unlock the collars and I will be out of your way~.[/say]")
+		saynn("[say=avy]Ну что, готов поговорить, герой неудачник? Мне очень не хочется тебя убивать. Просто скажи, как разблокировать ошейники, и я уйду с твоей дороги~.[/say]")
 
-		saynn("Alex yelps as he collapses, unable to fight any longer..")
+		saynn("Алекс вскрикивает и валится на землю, больше не в силах сопротивляться...")
 
-		saynn("You reach the shock remote.. fuck.. It's smashed to bits. Wait.. Who cares if it's smashed, you just need to trigger it. You use your knowledge to disassemble it. Now you just need to short-circuit one of the pins with something metal..")
+		saynn("Ты добираешься до пульта электрошокера... блядь... Он разбит вдребезги. Стоп... Да какая разница, разбит он или нет, тебе нужно просто его активировать. Ты используешь свои знания, чтобы разобрать его. Теперь осталось только замкнуть один из контактов чем-нибудь металлическим...")
 
-		saynn("Alex growls back and tries to free himself, his spine whirring loudly. Avy just stares him into the eyes.")
+		saynn("Алекс огрызается и пытается вырваться, его позвоночник громко жужжит. Эви просто сверлит его взглядом.")
 
-		saynn("[say=avy]Aww, you think you're strong?[/say]")
+		saynn("[say=avy]Оу, ты думаешь, что ты сильный?[/say]")
 
-		saynn("Avy suddenly throws Alex down to the cold floor.. before [b]stomping[/b] on his back hard, [b]crushing his prosthetic spine[/b].. Sparks bursting out of it as Alex lets out a gut-wrenching cry.")
+		saynn("Эви внезапно швыряет Алекса на холодный пол... а затем с силой [b]втаптывает[/b] ему спину, [b]раздавливая его протез позвоночника[/b]... Из него вырываются искры, а Алекс издает душераздирающий крик.")
 
-		saynn("[say=alexrynard]A-ARGH!..[/say]")
+		saynn("[say=alexrynard]А-ААГХ!..[/say]")
 
-		saynn("[say=pc]NO! YOU BITCH![/say]")
+		saynn("[say=pc]НЕТ! ТЫ, СУКА![/say]")
 
-		saynn("[say=avy]But you're just a spineless beta. Don't go anywhere, I need to deal with your little wife~.[/say]")
+		saynn("[say=avy]Но ты всего лишь бесхребетный бета. Никуда не уходи, мне нужно разобраться с твоей мелкою женушкой~.[/say]")
 
-		saynn("Alex is in too much pain to respond, his broken prosthetic is making his whole body twitch in an uncontrollable agony..")
+		saynn("Алекс слишком измучен болью, чтобы ответить; его сломанный протез заставляет всё тело содрогаться в неконтролируемой агонии...")
 
-		saynn("Avy looks at you next.")
+		saynn("Эви переводит взгляд на тебя.")
 
-		saynn("[say=avy]What was that, little slut?[/say]")
+		saynn("[say=avy]Что ты там вякнула, маленькая шлюшка?[/say]")
 
-		saynn("She starts walking towards you. Your hands are shaking.. you manage to find a little metal piece and jam it into the board..")
+		saynn("Она начинает идти к тебе. Твои руки дрожат... тебе удается нащупать маленькую металлическую деталь и вогнать её в плату...")
 
-		saynn("Moments later, all four nearby collars activate..")
+		saynn("Спустя мгновение все четыре ближайших ошейника активируются...")
 
-		saynn("[say=avy]ARGH![/say]")
+		saynn("[say=avy]АААГХ![/say]")
 
-		saynn("[say=stud]NGH.[/say]")
+		saynn("[say=stud]НГХ.[/say]")
 
-		saynn("[say=volk]SUKAAA![/say]")
+		saynn("[say=volk]СУКААА![/say]")
 
-		saynn("A similar cry leaves your mouth too.. the pain is almost comparable to what Alex probably feels right now..")
+		saynn("Похожий крик срывается и с твоих губ... боль почти такая же, какую сейчас, вероятно, испытывает Алекс...")
 
-		saynn("After a few seconds of unbearable agony, the bluespace crystal attached to the board overheats.. and cracks.. finally ending the broadcast.")
+		saynn("Спустя несколько секунд невыносимой агонии кристалл блюспейса, закрепленный на панели, перегревается... и трескается... наконец прерывая трансляцию.")
 
-		saynn("Avy is furious, even after being downed, she starts crawling towards you, her eyes full of rage. Her friends quickly pull her away from you luckily.")
+		saynn("Ави в ярости; даже будучи сбитой с ног, она начинает ползти к тебе, и её глаза полны гнева. К счастью, друзья быстро оттаскивают её от тебя.")
 
-		saynn("You hear Alex coughing..")
+		saynn("Ты слышишь, как Алекс кашляет...")
 
-		addButton("Alex!", "Forget about them", "time6_won_savealex")
+		addButton("Алекс!", "Забудь о них", "time6_won_savealex")
 	if(state == "time6_second_fight"):
 		playAnimation(StageScene.Duo, "stand", {npc="stud"})
-		saynn("You managed to beat the gray wolf. He hisses loudly as he hits the floor, his hand dropping the shiv.")
+		saynn("Тебе удалось одолеть серого волка. Он громко шипит, падая на пол, и из его руки выпадает заточка.")
 
-		saynn("[say=volk]I WILL CUT YOU-U..[/say]")
+		saynn("[say=volk]Я ТЕБЯ РАЗРЕЖУ-У..[/say]")
 
-		saynn("The horse is still blocking your path though.")
+		saynn("Однако лошадь всё ещё преграждает тебе путь.")
 
-		saynn("[say=avy]Fuck.[/say]")
+		saynn("[say=avy]Блядь.[/say]")
 
-		saynn("You look behind the stud and notice that Alex has managed to bring the dark foxy down.. But not for long, she injects something into herself and rushes back into the fight.")
+		saynn("Ты оглядываешься за стойло и замечаешь, что Алексу удалось свалить эту темную лисицу... Но ненадолго: она вкалывает себе что-то и снова бросается в бой.")
 
-		saynn("[say=stud]I will crush you, stupid whore.[/say]")
+		saynn("[say=stud]Я раздавлю тебя, тупая шлюха.[/say]")
 
-		saynn("Can't avoid this one.. Time to fight..")
+		saynn("От этого не уйти... Пора драться...")
 
-		addButton("Fight", "Start the first fight", "time6_do_second_fight")
+		addButton("Драться", "Начать первый бой", "time6_do_second_fight")
 	if(state == "time6_third_fight"):
 		playAnimation(StageScene.Duo, "defeat", {pc="alexrynard", npc="avy"})
-		saynn("[say=alexrynard]Fuck!..[/say]")
+		saynn("[say=alexrynard]Сука!..[/say]")
 
-		saynn("Alex drops to his knees, defeated. Avy grabs him by the throat, her claws putting pressure on his skin.")
+		saynn("Алекс падает на колени, побежденный. Эви хватает его за горло, впиваясь когтями в кожу.")
 
-		saynn("[say=avy]Ready to talk, failed hero? I really don't want to kill you. Just tell me how to unlock the collars and I will be out of your way~.[/say]")
+		saynn("[say=avy]Ну что, готов поговорить, герой неудачник? Мне очень не хочется тебя убивать. Просто скажи, как разблокировать ошейники, и я уйду с твоей дороги~.[/say]")
 
-		saynn("[say=pc]Hey! Let him go and fight me, you bitch.[/say]")
+		saynn("[say=pc]Эй! Отпусти его и дерись со мной, сука![/say]")
 
-		saynn("Alex just growls back and tries to free himself, his spine whirring loudly. Avy just stares him into the eyes.")
+		saynn("Алекс лишь рычит в ответ, пытаясь вырваться, при этом его позвоночник громко жужжит. Эви просто сверлит его взглядом.")
 
-		saynn("[say=avy]Aww, you think you're strong?[/say]")
+		saynn("[say=avy]Оу, ты думаешь, что ты сильный?[/say]")
 
-		saynn("Avy suddenly throws Alex down to the cold floor.. before [b]stomping[/b] on his back hard, [b]crushing his prosthetic spine[/b].. Sparks bursting out of it as Alex lets out a gut-wrenching cry.")
+		saynn("Эви внезапно швыряет Алекса на холодный пол... а затем с силой [b]втаптывает[/b] ему спину, [b]раздавливая его протез позвоночника[/b]... Из него вырываются искры, а Алекс издает душераздирающий крик.")
 
-		saynn("[say=alexrynard]A-ARGH!..[/say]")
+		saynn("[say=alexrynard]А-ААГХ!..[/say]")
 
-		saynn("[say=avy]But you're just a spineless beta. Don't go anywhere, I need to deal with your little wife~.[/say]")
+		saynn("[say=avy]Но ты всего лишь бесхребетный бета. Никуда не уходи, мне нужно разобраться с твоей мелкою женушкой~.[/say]")
 
-		saynn("Alex is in too much pain to respond, his broken prosthetic is making his whole body twitch in an uncontrollable agony..")
+		saynn("Алекс слишком измучен болью, чтобы ответить; его сломанный протез заставляет всё тело содрогаться в неконтролируемой агонии...")
 
-		saynn("Avy looks at you next.")
+		saynn("Эви переводит взгляд на тебя.")
 
-		saynn("[say=avy]Come here, bitch.[/say]")
+		saynn("[say=avy]А ну иди сюда, сучка.[/say]")
 
-		saynn("She is still clearly under the influence of something.. Who knows when it will run out. Time to fight..")
+		saynn("Она явно всё ещё под кайфом... Кто знает, когда действие закончится. Пора драться...")
 
-		addButton("Fight", "Start the first fight", "time6_do_third_fight")
+		addButton("Драться", "Начать первый бой", "time6_do_third_fight")
 	if(state == "time6_lost_avy"):
 		playAnimation(StageScene.Solo, "defeat")
-		saynn("You drop to your knees, defeated..")
+		saynn("Ты падаешь на колени, поверженный...")
 
-		saynn("[say=avy]That's what you get.[/say]")
+		saynn("[say=avy]Так тебе и надо.[/say]")
 
-		saynn("Avy turns towards Alex who is coughing and grunts as something in his back sparks..")
+		saynn("Эви поворачивается к Алексу, который кашляет и кряхтит, пока в его спине что-то искрит...")
 
-		saynn("[say=avy]I'm not done with you.[/say]")
+		saynn("[say=avy]Я с тобой ещё не закончила.[/say]")
 
-		saynn("Fuck, she is gonna kill him. You have to stop her..")
+		saynn("Блядь, она его прикончит. Нужно её остановить...")
 
-		saynn("Think..")
+		saynn("Думай...")
 
-		addButton("Shock remote", "Try to use it", "time6_lost_avy_remote")
+		addButton("Электрошокер", "Попробовать использовать", "time6_lost_avy_remote")
 	if(state == "time6_lost_avy_remote"):
-		saynn("The remote! Or.. whatever is left of it. You sneakily crawl to it and start inspecting while Alex is being surrounded by all three inmates..")
+		saynn("Пульт! Или... то, что от него осталось. Ты незаметно подползаешь к нему и начинаешь осматривать, пока Алекса окружают все три заключённые...")
 
-		saynn("[say=avy]Wanna talk? Silence costs a lot these days, you know.[/say]")
+		saynn("[say=avy]Хочешь поговорить? Молчание нынче стоит дорого, знаешь ли.[/say]")
 
-		saynn("You reach the shock remote.. fuck.. It's smashed to bits. Wait.. Who cares if it's smashed, you just need to trigger it. You use your knowledge to disassemble it. Then you take a metallic piece and short-circuit one of the pins..")
+		saynn("Ты дотягиваешься до пульта шокера... бля... Он разбит вдребезги. Стоп... Какая разница, если он разбит, тебе же нужно просто его активировать. Используя свои знания, ты разбираешь его. Затем берешь металлический обломок и замыкаешь один из контактов...")
 
-		saynn("Moments later, all four nearby collars activate..")
+		saynn("Спустя мгновение все четыре ближайших ошейника активируются...")
 
-		saynn("[say=avy]ARGH![/say]")
+		saynn("[say=avy]АААГХ![/say]")
 
-		saynn("[say=stud]NGH.[/say]")
+		saynn("[say=stud]НГХ.[/say]")
 
-		saynn("[say=volk]SUKAAA![/say]")
+		saynn("[say=volk]СУКААА![/say]")
 
-		saynn("A similar cry leaves your mouth too.. the pain is almost comparable to what Alex probably feels right now..")
+		saynn("Похожий крик срывается и с твоих губ... боль почти такая же, какую сейчас, вероятно, испытывает Алекс...")
 
-		saynn("After a few seconds of unbearable agony, the bluespace crystal attached to the board overheats.. and cracks.. finally ending the broadcast.")
+		saynn("Спустя несколько секунд невыносимой агонии кристалл блюспейса, закрепленный на панели, перегревается... и трескается... наконец прерывая трансляцию.")
 
-		saynn("Avy is furious, even after being downed, she starts crawling towards you, her eyes full of rage. Her friends quickly pull her away from you luckily.")
+		saynn("Ави в ярости; даже будучи сбитой с ног, она начинает ползти к тебе, и её глаза полны гнева. К счастью, друзья быстро оттаскивают её от тебя.")
 
-		saynn("You hear Alex coughing..")
+		saynn("Ты слышишь, как Алекс кашляет...")
 
-		addButton("Alex!", "Forget about them", "time6_won_savealex")
+		addButton("Алекс!", "Забудь о них", "time6_won_savealex")
 	if(state == "time6_won_avy"):
 		playAnimation(StageScene.Duo, "stand", {npc="avy", npcAction="defeat"})
-		saynn("Avy drops to her knees, defeated.")
+		saynn("Ави падает на колени, побежденная.")
 
-		saynn("[say=avy]Stupid bitch..[/say]")
+		saynn("[say=avy]Тупая сучка..[/say]")
 
-		saynn("You slowly approach her. It'd probably be fitting to break something of hers in return.. At least a few bones.")
+		saynn("Ты медленно приближаешься к ней. Было бы справедливо сломать что-нибудь и ей взамен... По крайней мере, пару костей.")
 
-		saynn("[say=alexrynard]Agh-h.. h..[/say]")
+		saynn("[say=alexrynard]Агх-х.. х..[/say]")
 
-		saynn("Alex's painful cries make your dark thoughts poof. You turn your head and see him coughing blood.. This isn't good..")
+		saynn("Болезненные крики Алекс заставляют твои мрачные мысли испариться. Ты поворачиваешь голову и видишь, как он кашляет кровью... Это не к добру...")
 
-		saynn("Avy smirks.")
+		saynn("Ави ухмыляется.")
 
-		saynn("[say=avy]Go on, save your broken toy.[/say]")
+		saynn("[say=avy]Давай, спасай свою сломанную игрушку.[/say]")
 
-		addButton("Alex!", "Forget about Avy", "time6_won_savealex")
-		addButton("Kick crotch", "(CBT) Kick Avy's crotch first", "time6_won_kickavy")
+		addButton("Алекс!", "Забить на Ави", "time6_won_savealex")
+		addButton("Удар в пах", "(CBT) Сначала пнуть Эви в промежность", "time6_won_kickavy")
 	if(state == "time6_won_kickavy"):
 		playAnimation(StageScene.SexFeetPlay, "crotch", {pc="pc", npc="avy"})
-		saynn("Nope, she is not getting away that easy. Time is critical but you just can't stop yourself from quickly raising your leg and stomping on Avy's crotch [b]hard[/b].")
+		saynn("Не, так просто она не отделается. Время поджимает, но ты просто не можешь удержаться: ты резко задираешь ногу и со всей дури [b]впечатываешь[/b] ей в промежность.")
 
-		saynn("[say=avy]Wai-.. AGH! F-FUCK! FUCK-FUCK-Fuck![/say]")
+		saynn("[say=avy]Подожди... АГХ! Б-БЛЯТЬ! СУКА-СУКА-СУКА![/say]")
 
-		saynn("This girl is clearly packing.. was. Your mean stomp makes her whole body tense up, the poor foxy grabs onto her crotch and starts rolling around on the floor, painful cries escaping her maw.")
+		saynn("У этой девчонки явно там... было кое-что внушительное. От твоего жестокого пинка всё её тело напрягается; бедняжка-лисичка вцепляется в пах и начинает кататься по полу, испуская из пасти болезненные вопли.")
 
-		saynn("[say=pc]You're the one with the broken toy now, stupid bitch.[/say]")
+		saynn("[say=pc]Теперь ты — та самая сломанная игрушка, тупая сучка.[/say]")
 
-		saynn("[say=avy]F-Fuck y-you!..[/say]")
+		saynn("[say=avy]Б-блядь... да ты!..[/say]")
 
-		saynn("Avy's friends quickly pull her away from you. Right, Alex is still coughing..")
+		saynn("Друзья Эви быстро утаскивают её от тебя. Точно, Алекс всё ещё кашляет...")
 
-		addButton("Alex!", "Forget about them", "time6_won_savealex")
+		addButton("Алекс!", "Забудь о них", "time6_won_savealex")
 	if(state == "time6_won_savealex"):
 		removeCharacter("avy")
 		removeCharacter("stud")
 		removeCharacter("volk")
 		playAnimation(StageScene.GivingBirth, "birth", {pc="alexrynard"})
-		saynn("You rush to Alex and crouch near him.")
+		saynn("Ты бросаешься к Алексу и приседаешь рядом с ним.")
 
-		saynn("Avy and her friends use this moment to escape. They clearly won't get what they want from Alex while he is in this state anyway..")
+		saynn("Эви и её подруги используют этот момент, чтобы сбежать. В таком состоянии они всё равно вряд ли получили бы от Алекса то, что хотели...")
 
-		saynn("[say=pc]Alex![/say]")
+		saynn("[say=pc]Алекс![/say]")
 
-		saynn("[say=alexrynard]Gh-h-h..[/say]")
+		saynn("[say=alexrynard]Гх-х-х..[/say]")
 
-		saynn("He is grinding his teeth, hissing loudly, his whole body is still twitching. Each few seconds something in his back sparks, causing him to drop one painful cry after another.")
+		saynn("Он скрежещет зубами, громко шипит, и всё его тело всё ещё сотрясают конвульсии. Каждые несколько секунд в его спине проскакивает искра, заставляя его издавать один болезненный крик за другим.")
 
-		saynn("[say=alexrynard]F-fuck.. AGH!..[/say]")
+		saynn("[say=alexrynard]Б-блять.. АГХ!..[/say]")
 
-		saynn("[say=pc]I have to help you now.[/say]")
+		saynn("[say=pc]Мне нужно помочь тебе прямо сейчас.[/say]")
 
-		saynn("You reach your hands to his clothing.. but he suddenly slaps them away.")
+		saynn("Вы тянете руки к его одежде... но он внезапно отшвыривает их.")
 
-		saynn("[say=alexrynard]N-No! C-call.. help.. Kgh..[/say]")
+		saynn("[say=alexrynard]Н-нет! П-позови.. на помощь.. Кхх..[/say]")
 
-		saynn("He is coughing blood while his own spine is sending shocks through his heart constantly, the guy clearly won't survive another minute unless you do something now..")
+		saynn("Он харкает кровью, пока его собственный позвоночник постоянно посылает разряды прямо в сердце; парень явно не протянет и минуты, если вы не предпримете что-то прямо сейчас...")
 
-		saynn("You get a glimpse of his eyes.. they're full of fear.. raw animal fear..")
+		saynn("Вы мельком видите его глаза... они полны страха... первобытного животного страха...")
 
-		addButton("His spine", "You have to try to reach it", "time6_won_reachspine")
+		addButton("Его позвоночник", "Вам нужно попытаться дотянуться до него", "time6_won_reachspine")
 	if(state == "time6_won_reachspine"):
 		playAnimation(StageScene.GivingBirth, "birth", {pc="alexrynard", bodyState={naked=true}})
-		saynn("His uniform is in the way so you can't even examine his prosthetic spine, you have to take off his clothes.")
+		saynn("Его униформа мешает осмотреть протез позвоночника, так что тебе придётся снять с него одежду.")
 
-		saynn("But each time you try to pull off his shirt, Alex grunts painfully and shoves you back.")
+		saynn("Но каждый раз, когда ты пытаешься стянуть с него рубашку, Алек болезненно кряхтит и отталкивает тебя.")
 
-		saynn("[say=alexrynard]ARGH! N-NO![/say]")
+		saynn("[say=alexrynard]АРГХ! Н-НЕТ![/say]")
 
-		saynn("He is not thinking straight, you have to do something fast..")
+		saynn("Он уже соображает с трудом, нужно действовать быстро...")
 
-		saynn("It doesn't get easier, his spine spews some oil out.. and then sparks again.. causing an instant fire! So much for the fucking first task as an apprentice!")
+		saynn("Становится только хуже: из его позвоночника брызжет масло... а затем снова летят искры... вызывая мгновенное возгорание! Вот тебе и гребаное первое задание ученика!")
 
-		saynn("While Alex is busy.. burning.. you manage to take off his toolbelt. You find some wire cutters that you quickly use to cut through the cloth of his shirt, tossing the burning pieces away.")
+		saynn("Пока Алек занят... самосожжением... тебе удается стащить с него пояс для инструментов. Ты находишь кусачки и быстро разрезаешь ткань его рубашки, отбрасывая горящие лоскуты в сторону.")
 
-		saynn("Now you have to find a way to.. turn off.. his spine. But Alex is still resisting you.")
+		saynn("Теперь нужно найти способ... выключить... его позвоночник. Но Алек всё еще сопротивляется.")
 
-		saynn("[say=alexrynard]D-DON'T! YOU GONNA.. K-KILL ME.[/say]")
+		saynn("[say=alexrynard]Н-НЕ НАДО! ТЫ ЖЕ... У-УБЬЕШЬ МЕНЯ![/say]")
 
-		saynn("Well maybe he should have let you practice fixing his spine when he had the chance..")
+		saynn("Ну, возможно, ему стоило дать тебе потренироваться на его позвоночнике, когда была возможность...")
 
-		addButton("Talk to him", "Try to persuade him into not resisting", "time6_alex_trytalkfirst")
-		addButton("Knock him out", "There is no time for talking. Time for quick solutions", "time6_alex_knockout")
+		addButton("Поговорить с ним", "Попытаться убедить его не сопротивляться", "time6_alex_trytalkfirst")
+		addButton("Вырубить его", "Разговоры — это роскошь, которой нет. Нужно действовать быстро", "time6_alex_knockout")
 	if(state == "time6_alex_knockout"):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("The way he resists.. leaves you no choice.")
+		saynn("То, как он сопротивляется... не оставляет тебе выбора.")
 
-		saynn("[say=pc]I'm sorry Alex..[/say]")
+		saynn("[say=pc]Прости, Алекс...[/say]")
 
-		saynn("Carefully but strictly, you wrap your arms around him, the inner side of your elbows pressed firmly against his throat. You have no idea how to do this correctly.. so you just start to push on his neck, trying to knock him out.")
+		saynn("Осторожно, но решительно ты обхватываешь его руками, плотно прижимая внутреннюю сторону локтей к его горлу. Ты понятия не имеешь, как делать это правильно... поэтому просто начинаешь давить на шею, пытаясь лишить его сознания.")
 
-		saynn("[say=alexrynard]Y-you're.. k-killing.. I'm g-gonna.. d-die..[/say]")
+		saynn("[say=alexrynard]Т-ты... у-убиваешь... я... с-сейчас... д-умру...[/say]")
 
-		saynn("[say=pc]I have to.. I'm sorry..[/say]")
+		saynn("[say=pc]Приходится... прости меня...[/say]")
 
-		saynn("You keep him in this choke-hold as still as you can. All the while Alex is desperately trying to pry your arms off.. even now.. when he is getting weaker and weaker..")
+		saynn("Ты удерживаешь его в этом удушающем захвате, стараясь не шевелиться. Всё это время Алекс отчаянно пытается разжать твои руки... даже сейчас, когда он слабеет с каждой секундой...")
 
-		saynn("Sparks hit your skin.. leaving little dark dots of burned flesh on it. You have to..")
+		saynn("Искры бьют по твоей коже, оставляя маленькие темные пятнышки обожженной плоти. Тебе нужно...")
 
-		saynn("Eventually Alex stops resisting.. Instantly, you stop choking him and check on his pulse.. extremely faint one.")
+		saynn("В конце концов Алекс перестает сопротивляться... Ты тут же перестаешь душить его и проверяешь пульс... Он едва ощутим.")
 
-		saynn("His own spine is still shocking him every few seconds, threatening to stop his heart any second.. You have to.. turn the power off somehow. Hopefully you can just cut through some wires..")
+		saynn("Его собственный позвоночник всё еще бьет его током каждые несколько секунд, грозя в любой момент остановить сердце... Нужно... как-то вырубить питание. Надеюсь, получится просто перерезать провода...")
 
-		saynn("You carefully turn Alex onto his belly and get a better look at his back.. Fuck.. So much blood here too. Blood and burned fur. Is that his.. original spine poking through.. gross, it's all broken.. No wonder he is coughing blood.")
+		saynn("Ты осторожно переворачиваешь Алекса на живот, чтобы получше рассмотреть его спину... Блядь... Здесь тоже полно крови. Кровь и обгоревшая шерсть. Это что, его... настоящий позвоночник торчит наружу?.. Мерзость, он весь раздроблен... Неудивительно, что он харкает кровью.")
 
-		saynn("You slip your wire cutters into that mess of metal, bones and flesh.. and start cutting through the wiring.. One wrong motion causes the sparks to hit all over your face, blinding you for a second and making Alex's body jerk.")
+		saynn("Ты просовываешь кусачки в это месиво из металла, костей и плоти... и начинаешь перекусывать провода... Одно неверное движение — и сноп искр бьет тебе прямо в лицо, на мгновение ослепляя, а тело Алекса вздрагивает от разряда.")
 
-		saynn("You keep cutting through.. anything you can get to really. Eventually, the sparks stop coming out.. Good.")
+		saynn("Ты продолжаешь резать... всё, до чего можешь дотянуться. Наконец искры прекращаются... Хорошо.")
 
-		saynn("You carefully put Alex onto the floor. He is still breathing heavily and coughing occasionally.. But at least his own spine isn't killing him anymore..")
+		saynn("Ты осторожно опускаешь Алекса на пол. Он всё еще тяжело дышит и время от времени кашляет... Но, по крайней мере, его собственный позвоночник больше не пытается его убить...")
 
-		saynn("Now it should be relatively safe to find someone.")
+		saynn("Теперь можно относительно спокойно поискать кого-нибудь.")
 
-		addButton("Get help", "Find somebody to help you", "time6_alex_blur")
+		addButton("Позвать на помощь", "Найти кого-нибудь, кто поможет тебе", "time6_alex_blur")
 	if(state == "time6_alex_trytalkfirst"):
-		saynn("You put your hands on the foxy and try to make him understand.")
+		saynn("Ты кладешь руки на лиса, пытаясь заставить его понять.")
 
-		saynn("[say=pc]Alex, listen to me! You have to tell me how to disable your spine. And you have to actually let me. Please![/say]")
+		saynn("[say=pc]Алекс, послушай меня! Ты должен сказать, как отключить твой позвоночник. И ты должен позволить мне это сделать. Пожалуйста![/say]")
 
-		saynn("Alex looks at you with his scared shaky eyes.. and keeps shaking his head.. while coughing up blood.. The shocks make him grab onto his heart more and more..")
+		saynn("Алекс смотрит на тебя испуганными, дрожащими глазами... и продолжает качать головой, захлебываясь кровью... От разрядов тока он всё сильнее и сильнее вцепляется в свое сердце...")
 
-		saynn("He is getting weaker.. Why doesn't he trust you..")
+		saynn("Он слабеет... Почему он тебе не доверяет...")
 
-		addButton("Talk more", "Keep trying to persuade him while you can..", "time6_alex_moretalk")
-		addButton("Knock him out", "There is no time for talking. Time for quick solutions", "time6_alex_knockout")
+		addButton("Говорить больше", "Продолжать убеждать его, пока есть возможность...", "time6_alex_moretalk")
+		addButton("Вырубить его", "Разговоры — это роскошь, которой нет. Нужно действовать быстро", "time6_alex_knockout")
 	if(state == "time6_alex_moretalk"):
 		playAnimation(StageScene.GivingBirth, "idle", {pc="alexrynard", bodyState={naked=true}})
-		saynn("[say=pc]Alex, please. You might not want to trust me. But right now you have to. You hear me? Just this time.[/say]")
+		saynn("[say=pc]Алекс, прошу тебя. Может, ты и не хочешь мне верить. Но сейчас тебе придется. Слышишь? Только в этот раз.[/say]")
 
-		saynn("Alex is grunting heavily.. he nods a few times.. and does his best to keep himself still.")
+		saynn("Алекс тяжело кряхтит... он пару раз кивает... и изо всех сил старается не шевелиться.")
 
-		saynn("[say=alexrynard]W-wires.. F-fuck.. Kgh.. C-cut.[/say]")
+		saynn("[say=alexrynard]П-провода... Б-блять... Кх... П-перережь.[/say]")
 
-		saynn("Right, cut through all of the wires.. Should be easy enough. You just have to avoid panicking..")
+		saynn("Так, перерезать все провода... Должно быть несложно. Главное — не поддаться панике...")
 
-		saynn("You carefully turn Alex onto his belly and get a better look at his back.. Fuck.. So much blood here too. Blood and burned fur. Is that his.. original spine poking through.. gross, it's all broken.. No wonder he is coughing blood.")
+		saynn("Ты осторожно переворачиваешь Алекса на живот, чтобы получше рассмотреть его спину... Блядь... Здесь тоже полно крови. Кровь и обгоревшая шерсть. Это что, его... настоящий позвоночник торчит наружу?.. Мерзость, он весь раздроблен... Неудивительно, что он харкает кровью.")
 
-		saynn("You slip your wire cutters into that mess of metal, bones and flesh.. and start cutting through the wiring.. One wrong motion causes the sparks to hit all over your face, blinding you for a second and making Alex jerk.")
+		saynn("Ты просовываешь кусачки в это месиво из металла, костей и плоти... и начинаешь перекусывать провода... Одно неверное движение — и сноп искр бьет тебе прямо в лицо, на мгновение ослепляя тебя и заставляя Алекса дернуться.")
 
-		saynn("[say=alexrynard]I'm g-gonna die.. Argh.. It hurts.. e-everything..[/say]")
+		saynn("[say=alexrynard]Я... я сейчас сдохну.. Аргх.. Больно.. в-всё болит..[/say]")
 
-		saynn("[say=pc]No, Alex, stay with me.[/say]")
+		saynn("[say=pc]Нет, Алекс, не уходи, держись за меня.[/say]")
 
-		addButton("Continue", "See what happens next", "time6_alex_talk_final")
+		addButton("Продолжить", "Смотреть, что будет дальше", "time6_alex_talk_final")
 	if(state == "time6_alex_talk_final"):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("You keep cutting through.. anything you can get to really. Alex is grunting heavily.. until his legs finally 'turn off'. The pain goes away.. just like every other feeling.")
+		saynn("Ты продолжаешь кромсать всё подряд, что попадается под руку. Алекс тяжело кряхтит.. пока его ноги наконец не «отключаются». Боль уходит.. как и все остальные чувства.")
 
-		saynn("You carefully put Alex onto the floor. He is still breathing heavily and coughing occasionally.. But at least his own spine isn't killing him anymore..")
+		saynn("Ты осторожно опускаешь Алекса на пол. Он всё еще тяжело дышит и время от времени кашляет... Но, по крайней мере, его собственный позвоночник больше не пытается его убить...")
 
-		saynn("[say=pc]I.. I will go get help now. Everything will be okay, trust me.[/say]")
+		saynn("[say=pc]Я.. я сейчас принесу помощь. Всё будет хорошо, поверь мне.[/say]")
 
-		saynn("He doesn't say anything back.")
+		saynn("В ответ он ничего не говорит.")
 
-		addButton("Get help", "Find somebody to help you", "time6_alex_blur")
+		addButton("Позвать на помощь", "Найти кого-нибудь, кто поможет тебе", "time6_alex_blur")
 	if(state == "time6_alex_blur"):
 		removeCharacter("alexrynard")
 		playAnimation(StageScene.Solo, "sit")
 		aimCameraAndSetLocName("med_lobbyse")
 		GM.pc.setLocation("med_lobbymain")
-		saynn("Next few moments become a blur.. You rush out of the mineshaft and find the first staff member that you can.. You quickly tell them everything that happened.. After that.. You just don't remember it anymore.")
+		saynn("Следующие несколько мгновений сливаются в сплошное пятно.. Ты вылетаешь из шахты и находишь первого попавшегося сотрудника.. Быстро рассказываешь им обо всём, что случилось.. А дальше.. ты уже ничего не помнишь.")
 
-		saynn("You snap out of it only about an hour later. You find yourself sitting on one of the benches in the medical lobby.. You faintly remember the moment when three nurses rushed past you, pushing an emergency medical stretcher past you with unconscious Alex on it..")
+		saynn("Ты приходишь в себя спустя примерно час. Ты сидишь на одной из скамеек в вестибюле медпункта.. В памяти смутно всплывает момент, когда мимо тебя пронеслись три медсестры, толкая каталку с без сознания лежащим Алексом..")
 
-		saynn("You did everything you could.. Now you can only wait.")
+		saynn("Ты сделала всё, что было в твоих силах.. Теперь остается только ждать.")
 
-		saynn("Your first task didn't go exactly as planned, huh..")
+		saynn("Твое первое задание прошло не совсем так, как планировалось, а..")
 
-		addButton("Continue", "See what happens next", "time6_eliza_approaches")
+		addButton("Продолжить", "Смотреть, что будет дальше", "time6_eliza_approaches")
 	if(state == "time6_eliza_approaches"):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("[say=eliza]Wanna wash your hands?[/say]")
+		saynn("[say=eliza]Хочешь помыть руки?[/say]")
 
-		saynn("[say=pc]Huh?[/say]")
+		saynn("[say=pc]А?[/say]")
 
-		saynn("You look at your hands.. They're covered in blood.. How did you not notice that..")
+		saynn("Ты смотришь на свои руки... Они все в крови... Как ты раньше этого не замечал...")
 
-		saynn("[say=pc]Yeah.[/say]")
+		saynn("[say=pc]Ага.[/say]")
 
-		saynn("[say=eliza]Follow me.[/say]")
+		saynn("[say=eliza]Иди за мной.[/say]")
 
-		addButton("Follow", "See where Eliza brings you", "time6_eliza_follow")
+		addButton("Следовать", "Посмотрим, куда тебя приведёт Элиза", "time6_eliza_follow")
 	if(state == "time6_eliza_follow"):
 		aimCameraAndSetLocName("med_researchlab")
 		setFlag("AlexRynardModule.ch2GotRektHappened", true)
 		setFlag("AlexRynardModule.ch2GotRektDay", GM.main.getDays())
-		saynn("She brings you into one of the labs and points at the sink. You start washing your hands and your face.")
+		saynn("Она заводит тебя в одну из лабораторий и указывает на раковину. Ты начинаешь отмывать руки и лицо.")
 
-		saynn("[say=eliza]Looks like you and Alex had a very rough day..[/say]")
+		saynn("[say=eliza]Похоже, у вас с Алексом выдался очень тяжелый денек...[/say]")
 
-		saynn("[say=pc]How is he?[/say]")
+		saynn("[say=pc]Как он?[/say]")
 
-		saynn("Eliza stays quiet for some time.")
+		saynn("Элиза какое-то время молчит.")
 
-		saynn("[say=eliza]Alive. Barely. Surgeons are fighting for his life. His injuries are.. better not talk about it.[/say]")
+		saynn("[say=eliza]Жив. Едва-едва. Хирурги борются за его жизнь. Его травмы... лучше не будем о них говорить.[/say]")
 
-		saynn("You sigh.")
+		saynn("Ты вздыхаешь.")
 
-		saynn("[say=eliza]Yeah.. I feel you.. I wish I had something better to say. Come back tomorrow, you look like you need rest.[/say]")
+		saynn("[say=eliza]Да... как я тебя понимаю... Хотела бы я сказать что-нибудь ободряющее. Приходи завтра, тебе нужно отдохнуть.[/say]")
 
-		saynn("You nod. Eliza guides you back to the medical lobby and pats you on the back.")
+		saynn("Ты киваешь. Элиза провожает тебя обратно в медицинское лобби и ободряюще хлопает по спине.")
 
-		saynn("[say=eliza]He is strong, he will pull through.[/say]")
+		saynn("[say=eliza]Он сильный, он выкарабкается.[/say]")
 
-		saynn("Time to go..")
+		saynn("Пора идти..")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

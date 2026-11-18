@@ -55,21 +55,21 @@ func getTopicValue(_topicID, _pc):
 
 func getVisibleName(_topicID):
 	if(_topicID == InterestTopic.NoVagina):
-		return "lack of a pussy"
+		return "отсутствие киски"
 	if(_topicID == InterestTopic.HasVaginaOnly):
-		return "just a pussy"
+		return "просто киска"
 	if(_topicID == InterestTopic.HasVaginaAndCock):
 		return "herms"
 	if(_topicID == InterestTopic.BigCock):
-		return "huge cocks"
+		return "огромные члены"
 	if(_topicID == InterestTopic.AverageCock):
-		return "average-sized cocks"
+		return "члены среднего размера"
 	if(_topicID == InterestTopic.SmallCock):
-		return "small cute cocks"
+		return "маленькие милые члены"
 	if(_topicID == InterestTopic.NoCock):
-		return "lack of a cock"
+		return "отсутствие члена"
 	if(_topicID == InterestTopic.HasCockOnly):
-		return "just a cock"
+		return "просто член"
 	
 	return "error:"+str(_topicID)
 

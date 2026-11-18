@@ -8,7 +8,7 @@ func _init():
 	pointsOnUnlock = 15
 
 func getName() -> String:
-	return "Demonification"
+	return "Демонификация"
 
 func getPillName() -> String:
 	return "DemoniX"
@@ -47,7 +47,7 @@ func getUnlockData() -> Dictionary:
 		eliza = "Looks like this one will give you horns, a unique tail and hoofs. I'm gonna call it.. "+getPillName()+". I think that name will fit it nicely.",
 		tryOptions = [
 			{
-				name = "Make Eliza eat it",
+				name = "Заставить Элизу сожрать это",
 				desc = "(Submissive sex) Ask if she is brave enough to try her own product. She will probably become horny and dominant.. very dominant..",
 				sceneID = "ElizaDrugTestDemoniXScene",
 			},

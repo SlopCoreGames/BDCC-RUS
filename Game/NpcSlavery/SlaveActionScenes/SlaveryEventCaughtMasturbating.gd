@@ -31,106 +31,106 @@ func _run():
 	if(state == ""):
 		if (masType == "penis"):
 			playAnimation(StageScene.Grope, "watchstroke", {pc=npcID, npc="pc", bodyState={exposedCrotch=true, hard=true}})
-			saynn("You walk up to your slave.. and notice that {npc.he} {npc.isAre} stroking {npc.his} {npc.penis}. Quite eagerly too.")
+			saynn("Ты подходишь к своей рабыне... и замечаешь, что {npc.he} {npc.isAre} ласкает {npc.his} {npc.penis}. Да еще и как жадно.")
 
 		elif (masType == "vag"):
 			playAnimation(StageScene.Grope, "watchrub", {pc=npcID, npc="pc", bodyState={exposedCrotch=true, hard=true}})
-			saynn("You walk up to your slave.. and notice that {npc.he} {npc.isAre} rubbing {npc.his} {npc.pussyStretch} pussy. Quite eagerly too.")
+			saynn("Ты подходишь к своей рабыне... и замечаешь, что {npc.he} {npc.isAre} трет {npc.his} {npc.pussyStretch} киску. Да еще и как жадно.")
 
-		saynn("Encouraging might make {npc.him} like you more.. but it also might spoil {npc.him}. If you don't want your slave to masturbate, maybe you can try cuffing {npc.his} hands.."+str(" Or putting a chastity cage on {npc.his} cock." if (masType == "penis") else "")+"")
+		saynn("Поощрение может заставить {npc.him} любить тебя сильнее... но это также может разбаловать {npc.him}. Если ты не хочешь, чтобы твоя рабыня мастурбировала, возможно, стоит сковать {npc.his} руки..."+str(" Or putting a chastity cage on {npc.his} cock." if (masType == "penis") else "")+"")
 
-		addButton("Encourage", "Let them orgasm", "do_encourage_check")
-		addButton("Order to stop", "Order them to stop", "do_orderstop_check")
-		addButtonWithChecks("Force to stop", "You can't let this happen no matter what", "force_stop_check", [], [[ButtonChecks.NotHandsBlocked], [ButtonChecks.NotArmsRestrained]])
-		addButton("Offer yourself", "Offer them to fuck you instead", "do_offerself_check")
+		addButton("Поощрить", "Дать ей кончить", "do_encourage_check")
+		addButton("Приказать остановиться", "Приказать ей остановиться", "do_orderstop_check")
+		addButtonWithChecks("Заставить остановиться", "Ты не можешь допустить подобного ни при каких обстоятельствах", "force_stop_check", [], [[ButtonChecks.NotHandsBlocked], [ButtonChecks.NotArmsRestrained]])
+		addButton("Предложить себя", "Предложить им трахнуть тебя вместо этого", "do_offerself_check")
 	if(state == "do_forcetostop_fail"):
 		playAnimation(StageScene.Duo, "hurt", {npc=npcID, npcAction="shove"})
-		saynn("You can't let that happen no matter what. So you don't even order your slave. Instead, you rush up to {npc.him} and forcibly wrench {npc.his} arms behind {npc.his} back.")
+		saynn("Ты не можешь допустить такого ни при каких обстоятельствах. Поэтому ты даже не отдаешь приказ рабыне. Вместо этого ты бросаешься к {npc.him} и силой заламываешь {npc.his} руки за {npc.his} спину.")
 
-		saynn("But your slave manages to break free!")
+		saynn("Но твоей рабыне удается вырваться!")
 
 		saynn("[say=npc]"+str(RNG.pick(["Fuck you! I must cum! I will cum!", "Screw you, I'm cumming today!", "Fuck off, I need it!"]))+"[/say]")
 
-		saynn("Looks like it's a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Fight", "Start the fight", "do_fight_slave")
+		addButton("Драться", "Начать бой", "do_fight_slave")
 	if(state == "lost_slavecums"):
 		if (masType == "penis"):
 			playAnimation(StageScene.Grope, "watchstroke", {pc=npcID, npc="pc", pcCum=true, bodyState={exposedCrotch=true, hard=true}})
-			saynn("{npc.name} won.. meaning {npc.he} gets to do what {npc.he} wants.")
+			saynn("{npc.name} победила... а значит, {npc.he} делает то, что хочет {npc.he}.")
 
-			saynn("[say=npc]Screw you..[/say]")
+			saynn("[say=npc]Да пошел ты!..[/say]")
 
-			saynn("Your slave starts stroking {npc.his} member fast, swiftly bringing {npc.himself} to a climax. Better to stay slightly away and watch rather than risk getting yourself.. caught in the blast.")
+			saynn("Твоя рабыня начинает быстро ласкать член {npc.his}, стремительно доводя {npc.himself} до оргазма. Лучше держаться на небольшом расстоянии и наблюдать, чем рискнуть и попасть... под раздачу.")
 
-			saynn("{npc.name} grunts and arches {npc.his} back as {npc.his} throbbing {npc.penis} shoots thick lines of {npc.cum}, making the floor all messy and sticky. Your slave is left panting and satisfied.")
+			saynn("{npc.name} кряхтит и выгибает {npc.his} спину, когда пульсирующий {npc.penis} {npc.his} выбрасывает густые струи {npc.cum}, заливая пол липкой массой. Твоя рабыня остается тяжело дышащей и удовлетворенной.")
 
 		elif (masType == "vag"):
 			playAnimation(StageScene.Grope, "watchrub", {pc=npcID, npc="pc", pcCum=true, bodyState={exposedCrotch=true, hard=true}})
-			saynn("{npc.name} won.. meaning {npc.he} gets to do what {npc.he} wants.")
+			saynn("{npc.name} победила... а значит, {npc.he} делает то, что хочет {npc.he}.")
 
-			saynn("[say=npc]Screw you..[/say]")
+			saynn("[say=npc]Да пошел ты!..[/say]")
 
-			saynn("Your slave starts fingering {npc.his} slit fast, swiftly bringing {npc.himself} to a climax. Better to stay slightly away and watch rather than risk getting yourself.. caught in the blast.")
+			saynn("Твоя рабыня начинает быстро перебирать пальцами в щели {npc.his}, стремительно доводя {npc.himself} до оргазма. Лучше держаться на небольшом расстоянии и наблюдать, чем рискнуть и попасть... под раздачу.")
 
-			saynn("{npc.name} moans and arches {npc.his} back as {npc.his} twitching {npc.pussyStretch} pussy releases a fountain of transparent {npc.girlcum}, making the floor all wet and sticky. Your slave is left panting and satisfied.")
+			saynn("{npc.name} стонет и выгибает {npc.his} спину, когда из ее дергающейся {npc.pussyStretch} {npc.his} киски вырывается фонтан прозрачной {npc.girlcum}, делая пол влажным и липким. Твоя рабыня остается тяжело дышащей и удовлетворенной.")
 
-		saynn("Looks like your slave has earned a punishment. Hopefully it was worth it for {npc.him}.")
+		saynn("Похоже, твой раб заслужил наказание. Надеемся, для {npc.him} оно того стоило.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "won_antihornyfight"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID, npcAction="defeat", npcBodyState={leashedBy="pc"}})
-		saynn("You win. Your slave, {npc.name}, hits the floor, unable to continue fighting.")
+		saynn("Вы победили. Ваша рабыня, {npc.name}, падает на пол, не в силах продолжать борьбу.")
 
 		if (masType == "penis"):
-			saynn("No stroking for {npc.him} looks like, {npc.he} {npc.isAre} forced to endure the strong desire without being able to satisfy it.")
+			saynn("Похоже, {npc.him} больше не разрешено ласкать себя; {npc.he} {npc.isAre} вынуждена терпеть сильное желание, не имея возможности его удовлетворить.")
 
 		elif (masType == "vag"):
-			saynn("No masturbating for {npc.him} looks like, {npc.he} {npc.isAre} forced to endure the strong desire without being able to satisfy it.")
+			saynn("Похоже, {npc.him} мастурбировать запрещено, и {npc.he} {npc.isAre} приходится терпеть сильное желание, не имея возможности его удовлетворить.")
 
-		saynn("Your slave looks a bit more desperate than before. {npc.He} will surely trust you less too. Maybe you shouldn't trust {npc.him} too and cuff {npc.his} hands..")
+		saynn("Твой раб выглядит еще более отчаявшимся, чем прежде. {npc.He} наверняка станет доверять тебе меньше. Может, тебе и самому не стоит слишком доверять {npc.him} и надеть на руки {npc.his}..")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_forcetostop"):
 		playAnimation(StageScene.Grope, "tease", {pc=npcID, npc="pc", bodyState={exposedCrotch=true, hard=true}})
-		saynn("You can't let that happen no matter what. So you don't even order your slave. Instead, you rush up to {npc.him} and forcibly wrench {npc.his} arms behind {npc.his} back.")
+		saynn("Ты не можешь допустить такого ни при каких обстоятельствах. Поэтому ты даже не отдаешь приказ рабыне. Вместо этого ты бросаешься к {npc.him} и силой заламываешь {npc.his} руки за {npc.his} спину.")
 
 		saynn("[say=npc]"+str(RNG.pick(["H-hey!.. I was so close!", "No! Let me cum!", "No, don't do this, please!"]))+"[/say]")
 
 		if (masType == "penis"):
-			saynn("Nope. You force {npc.him} to watch as {npc.his} {npc.penis} starts to go soft without any stimulation.")
+			saynn("Не-а. Ты заставляешь {npc.him} смотреть, как {npc.his} {npc.penis} начинает вянуть без всякой стимуляции.")
 
 		elif (masType == "vag"):
-			saynn("Nope. You force {npc.him} to watch as {npc.his} drippy pussy is left to dry up without any stimulation.")
+			saynn("Не-а. Ты заставляешь {npc.him} смотреть, как {npc.his} сочная, влажная киска сохнет без малейшей стимуляции.")
 
-		saynn("Crisis averted.. but your slave won't trust you much for doing this.. it will also affect {npc.his} mental health.")
+		saynn("Кризис миновал... но после такого твоя рабыня вряд ли будет тебе доверять... это также повлияет на {npc.his} психическое состояние.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_orderstop"):
 		playAnimation(StageScene.Grope, "tease", {pc=npcID, npc="pc", bodyState={exposedCrotch=true, hard=true}})
-		saynn("Your slave seems to be close.. but that won't stop you from denying {npc.him}.")
+		saynn("Твой раб, кажется, близок к разрядке... но это не помешает тебе лишить его {npc.him}.")
 
-		saynn("[say=pc]Stop, right now. Or you're gonna regret it.[/say]")
+		saynn("[say=pc]А ну стоять! Живо прекращай, а то пожалеешь.[/say]")
 
 		if (masType == "penis"):
-			saynn("{npc.name} hears you.. {npc.his} hand stroking {npc.his} cock slower and slower as {npc.he} deliberates..")
+			saynn("{npc.name} слышит тебя.. {npc.his} рука поглаживает {npc.his} член всё медленнее и медленнее, пока {npc.he} раздумывает..")
 
-			saynn("[say=npc]Yes, {npc.pcOwner}..[/say]")
+			saynn("[say=npc]Да, {npc.pcOwner}..[/say]")
 
-			saynn("You can just feel the desperation in {npc.his} noises as {npc.he} denies {npc.himself} {npc.his} own orgasm, pulling {npc.his} hand away from {npc.his} hard leaky shaft.. and just letting it go soft.")
+			saynn("Ты буквально чувствуешь отчаяние в звуках, которые издает {npc.his}, когда {npc.he} лишает {npc.himself} {npc.his} собственный оргазм, убирая {npc.his} руку от {npc.his} твердого, сочащегося смазкой члена.. и просто позволяя ему обмякнуть.")
 
-			saynn("Looks like your slave just dodged a bullet, there is nothing really to punish {npc.him} for.")
+			saynn("Похоже, твоя рабыня только что проскочила; особо-то и наказывать {npc.him} не за что.")
 
 		elif (masType == "vag"):
-			saynn("{npc.name} hears you.. {npc.his} hand rubbing {npc.his} pussy slower and slower as {npc.he} deliberates..")
+			saynn("{npc.name} слышит тебя.. {npc.his} рука ласкает {npc.his} киску всё медленнее и медленнее, пока {npc.he} раздумывает..")
 
-			saynn("[say=npc]Yes, {npc.pcOwner}..[/say]")
+			saynn("[say=npc]Да, {npc.pcOwner}..[/say]")
 
-			saynn("You can just feel the desperation in {npc.his} noises as {npc.he} denies {npc.himself} {npc.his} own orgasm, pulling {npc.his} hand away from {npc.his} slick drippy slit.. and just letting {npc.his} sensitive needy petals stay neglected.")
+			saynn("Ты буквально чувствуешь отчаяние в звуках, которые издает {npc.his}, когда {npc.he} лишает {npc.himself} {npc.his} собственный оргазм, убирая {npc.his} руку от {npc.his} влажной, сочащейся щели.. и просто оставляя {npc.his} чувствительные, жаждущие лепестки без внимания.")
 
-			saynn("Looks like your slave just dodged a bullet, there is nothing really to punish {npc.him} for.")
+			saynn("Похоже, твоя рабыня только что проскочила; особо-то и наказывать {npc.him} не за что.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_orderstop_fail"):
 		if (masType == "penis"):
 			playAnimation(StageScene.Grope, "watchstroke", {pc=npcID, npc="pc", pcCum=true, bodyState={exposedCrotch=true, hard=true}})
@@ -139,202 +139,202 @@ func _run():
 			playAnimation(StageScene.Grope, "watchrub", {pc=npcID, npc="pc", pcCum=true, bodyState={exposedCrotch=true, hard=true}})
 
 		
-		saynn("Your slave seems to be close.. but that won't stop you from denying {npc.him}.")
+		saynn("Твой раб, кажется, близок к разрядке... но это не помешает тебе лишить его {npc.him}.")
 
-		saynn("[say=pc]Stop, right now. Or you're gonna regret it.[/say]")
+		saynn("[say=pc]А ну стоять! Живо прекращай, а то пожалеешь.[/say]")
 
 		if (masType == "penis"):
 			playAnimation(StageScene.Grope, "watchstroke", {pc=npcID, npc="pc", bodyState={exposedCrotch=true, hard=true}})
-			saynn("{npc.name} hears you.. {npc.his} hand stroking {npc.his} cock slower and slower as {npc.he} deliberates..")
+			saynn("{npc.name} слышит тебя.. {npc.his} рука поглаживает {npc.his} член всё медленнее и медленнее, пока {npc.he} раздумывает..")
 
-			saynn("[say=npc]Screw you..[/say]")
+			saynn("[say=npc]Да пошел ты!..[/say]")
 
-			saynn("Rather than denying {npc.himself}, your slave decides to go against your words and starts stroking {npc.his} member fast, swiftly bringing {npc.himself} to a climax. Better to stay slightly away and watch rather than risk getting yourself.. caught in the blast.")
+			saynn("Вместо того чтобы отрицать {npc.himself}, твой раб решает пойти наперекор твоим словам и начинает быстро ласкать {npc.his} член, стремительно доводя {npc.himself} до климакса. Лучше держаться на небольшом расстоянии и просто наблюдать, чем рискнуть и самому... попасть под раздачу.")
 
-			saynn("{npc.name} grunts and arches {npc.his} back as {npc.his} throbbing {npc.penis} shoots thick lines of {npc.cum}, making the floor all messy and sticky. Your slave is left panting and satisfied.")
+			saynn("{npc.name} кряхтит и выгибает {npc.his} спину, когда пульсирующий {npc.penis} {npc.his} выбрасывает густые струи {npc.cum}, заливая пол липкой массой. Твоя рабыня остается тяжело дышащей и удовлетворенной.")
 
 		elif (masType == "vag"):
 			playAnimation(StageScene.Grope, "watchrub", {pc=npcID, npc="pc", bodyState={exposedCrotch=true, hard=true}})
-			saynn("{npc.name} hears you.. {npc.his} hand rubbing {npc.his} pussy slower and slower as {npc.he} deliberates..")
+			saynn("{npc.name} слышит тебя.. {npc.his} рука ласкает {npc.his} киску всё медленнее и медленнее, пока {npc.he} раздумывает..")
 
-			saynn("[say=npc]Screw you..[/say]")
+			saynn("[say=npc]Да пошел ты!..[/say]")
 
-			saynn("Rather than denying {npc.himself}, your slave decides to go against your words and starts fingering {npc.his} slit fast, swiftly bringing {npc.himself} to a climax. Better to stay slightly away and watch rather than risk getting yourself.. caught in the blast.")
+			saynn("Вместо того чтобы отрицать {npc.himself}, твой раб решает пойти наперекор твоим словам и начинает быстро перебирать пальцами {npc.his} щель, стремительно доводя {npc.himself} до климакса. Лучше держаться на небольшом расстоянии и просто наблюдать, чем рискнуть и самой... попасть под раздачу.")
 
-			saynn("{npc.name} moans and arches {npc.his} back as {npc.his} twitching {npc.pussyStretch} pussy releases a fountain of transparent {npc.girlcum}, making the floor all wet and sticky. Your slave is left panting and satisfied.")
+			saynn("{npc.name} стонет и выгибает {npc.his} спину, когда из ее дергающейся {npc.pussyStretch} {npc.his} киски вырывается фонтан прозрачной {npc.girlcum}, делая пол влажным и липким. Твоя рабыня остается тяжело дышащей и удовлетворенной.")
 
-		saynn("Looks like your slave has earned a punishment. Hopefully it was worth it for {npc.him}.")
+		saynn("Похоже, твой раб заслужил наказание. Надеемся, для {npc.him} оно того стоило.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_encourage"):
-		saynn("You decide to just.. watch it unfold. {npc.name} notices your curious stare.. and keeps going as you give {npc.him} a silent permission to continue.")
+		saynn("Ты решаешь просто... наблюдать за происходящим. {npc.name} замечает твой любопытный взгляд... и продолжает, когда ты молча даешь {npc.him} разрешение продолжать.")
 
 		if (masType == "penis"):
 			playAnimation(StageScene.Grope, "watchstroke", {pc=npcID, npc="pc", bodyState={exposedCrotch=true, hard=true}})
-			saynn("Your gazes keep intersecting as your slave keeps sliding {npc.his} palm along {npc.his} shaft, the tip leaking plenty of pre. {npc.He} doesn't say anything back, just trying to enjoy the moment before you'd eventually decide to stop {npc.him}.")
+			saynn("Ваши взгляды то и дело пересекаются, пока твой раб водит {npc.his} ладонью по {npc.his} стволу, а кончик обильно сочится предэякулятом. {npc.He} ничего не отвечает, просто пытаясь насладиться моментом, прежде чем ты в конечном итоге решишь остановить {npc.him}.")
 
 		elif (masType == "vag"):
 			playAnimation(StageScene.Grope, "watchrub", {pc=npcID, npc="pc", bodyState={exposedCrotch=true, hard=true}})
-			saynn("Your gazes keep intersecting as your slave keeps rubbing {npc.his} pussy with {npc.his} digits, occasionally switching to the clit and giving it a few rubs too, {npc.his} sensitive folds looking slick. {npc.He} doesn't say anything back, just trying to enjoy the moment before you'd eventually decide to stop {npc.him}.")
+			saynn("Ваши взгляды то и дело пересекаются, пока твой раб трет {npc.his} киску {npc.his} пальцами, время от времени переходя на клитор и лаская его, а {npc.his} чувствительные складки выглядят влажными и скользкими. {npc.He} ничего не отвечает, просто пытаясь насладиться моментом, прежде чем ты в конечном итоге решишь остановить {npc.him}.")
 
-		saynn("Judging from how {npc.name} is panting, {npc.he} must be close.")
+		saynn("Судя по тому, как тяжело дышит {npc.name}, {npc.he} уже совсем близко.")
 
-		addButton("Just watch", "Let them cum", "do_encourage_cum")
-		addButtonWithChecks("Help them", "Offer them a hand", "do_encourage_help", [], [[ButtonChecks.NotHandsBlocked], [ButtonChecks.NotArmsRestrained]])
+		addButton("Просто наблюдай", "Дай им кончить", "do_encourage_cum")
+		addButtonWithChecks("Помоги им", "Предложи помощь", "do_encourage_help", [], [[ButtonChecks.NotHandsBlocked], [ButtonChecks.NotArmsRestrained]])
 	if(state == "do_encourage_help"):
 		if (masType == "penis"):
 			playAnimation(StageScene.Grope, "strokefast", {pc=npcID, npc="pc", pcCum=true, bodyState={exposedCrotch=true, hard=true}})
-			saynn("It looked so fun that you decided to join in and help your slave! Your hand displaces {npc.his} as you start stroking {npc.his} cock instead. Any protests are silenced with a quiet..")
+			saynn("Это выглядело так весело, что ты решил(а) присоединиться и помочь своему рабу! Твоя рука оттесняет {npc.his}, когда ты начинаешь ласкать член {npc.his} вместо этого. Любые протесты заглушаются тихим...")
 
-			saynn("[say=pc]Tshh-h.. Just enjoy it.[/say]")
+			saynn("[say=pc]Тссс... Просто наслаждайся.[/say]")
 
-			saynn("And so {npc.he} does, {npc.his} balls tensing up already. You can feel {npc.his} shaft throbbing in your hand as you slide it along the length.. until a number of thick strings of seed bursts out of it!")
+			saynn("И {npc.he} повинуется, яички {npc.his} уже напряжены. Ты чувствуешь, как ствол {npc.his} пульсирует в твоей руке, пока ты ведешь ею вдоль всей длины... пока из него не вырываются густые струи семени!")
 
 			if (didABrat):
-				saynn("You weren't standing in the.. blast zone.. But your slave purposefully turned at the last second, giving you zero time to react before {npc.his} load lands on you! Wow!")
+				saynn("Ты не стоял(а) прямо в... зоне поражения... Но твой раб намеренно повернулся в последнюю секунду, не оставив тебе времени среагировать, прежде чем порция {npc.his} приземлилась на тебя! Ого!")
 
-				saynn("[say=pc]HEY![/say]")
+				saynn("[say=pc]ЭЙ![/say]")
 
-				saynn("All you hear back is moans and giggling. That surely deserves a [b]big[/b] punishment. You make sure to squeeze {npc.his} balls tightly to make {npc.him} shush.")
+				saynn("В ответ ты слышишь лишь стоны и хихиканье. Это определенно заслуживает [b]серьезного[/b] наказания. Ты крепко сжимаешь яички {npc.his}, заставляя {npc.him} замолчать.")
 
 			else:
-				saynn("You were standing slightly aside, making sure {npc.his} load doesn't land on you and hits the floor instead.")
+				saynn("Ты стоял(а) чуть в стороне, стараясь сделать так, чтобы порция {npc.his} не попала на тебя, а приземлилась на пол.")
 
-				saynn("Looks like your slave received a good discharge. {npc.He} seems happy about it too, you notice a little smile."+str(" Hopefully that will help against {npc.his} depression a bit." if npc.getNpcSlavery().getDespair() > 0.6 else "")+"")
+				saynn("Похоже, твой раб отлично разрядился. {npc.He} кажется, доволен этим — ты замечаешь легкую улыбку."+str(" Hopefully that will help against {npc.his} depression a bit." if npc.getNpcSlavery().getDespair() > 0.6 else "")+"")
 
 		elif (masType == "vag"):
 			playAnimation(StageScene.Grope, "gropefast", {pc=npcID, npc="pc", pcCum=true, bodyState={exposedCrotch=true, hard=true}})
-			saynn("It looked so fun that you decided to join in and help your slave! Your hand displaces {npc.his} as you start playing with {npc.his} pussy instead. Any protests are silenced with a quiet..")
+			saynn("Это выглядело так весело, что ты решил(а) присоединиться и помочь своему рабу! Твоя рука оттесняет {npc.his}, когда ты начинаешь ласкать киску {npc.his} вместо этого. Любые протесты заглушаются тихим...")
 
-			saynn("[say=pc]Tshh-h.. Just enjoy it.[/say]")
+			saynn("[say=pc]Тссс... Просто наслаждайся.[/say]")
 
-			saynn("And so {npc.he} does, you can hear some of {npc.his} new cute moans already. Your thumb is focussed on rubbing that little bean while the two digits spread the folds and start fingering that pussy hole fast.. until an entire fountain of juices bursts out of it!")
+			saynn("И так {npc.he} и делает, можно уже услышать некоторые из {npc.his} новых милых стонов. Твой большой палец сосредоточен на потирании этой маленькой бусинки, пока два пальца раздвигают складки и начинают быстро ласкать это влагалище... пока из него не вырывается настоящий фонтан соков!")
 
 			if (didABrat):
-				saynn("You weren't standing in the.. blast zone.. But your slave purposefully turned at the last second, giving you zero time to react before {npc.his} {npc.girlcum} lands on you! Wow!")
+				saynn("Ты не стоял прямо в... зоне поражения... Но твоя рабыня намеренно развернулась в последнюю секунду, не оставив тебе ни единого шанса среагировать, прежде чем на тебя приземлится {npc.his} {npc.girlcum}! Ого!")
 
-				saynn("[say=pc]HEY![/say]")
+				saynn("[say=pc]ЭЙ![/say]")
 
-				saynn("All you hear back is moans and giggling. That surely deserves a [b]big[/b] punishment. You start by gently slapping {npc.his} pussy to make {npc.him} shush.")
+				saynn("В ответ слышны лишь стоны и хихиканье. Это определенно заслуживает [b]большого[/b] наказания. Ты начинаешь с того, что слегка шлепаешь {npc.his} киску, заставляя {npc.him} замолчать.")
 
 			else:
-				saynn("You were standing slightly aside, making sure {npc.his} {npc.girlcum} doesn't land on you and hits the floor instead.")
+				saynn("Ты стоял чуть в стороне, следя за тем, чтобы {npc.his} {npc.girlcum} не приземлились на тебя, а упали на пол.")
 
-				saynn("Looks like your slave received a good discharge. {npc.He} seems happy about it too, you notice a little smile."+str(" Hopefully that will help against {npc.his} depression a bit." if npc.getNpcSlavery().getDespair() > 0.6 else "")+"")
+				saynn("Похоже, твой раб отлично разрядился. {npc.He} кажется, доволен этим — ты замечаешь легкую улыбку."+str(" Hopefully that will help against {npc.his} depression a bit." if npc.getNpcSlavery().getDespair() > 0.6 else "")+"")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_encourage_cum"):
 		if (masType == "penis"):
 			playAnimation(StageScene.Grope, "watchstroke", {pc=npcID, npc="pc", pcCum=true, bodyState={exposedCrotch=true, hard=true}})
-			saynn("You watch how your slave starts grunting and moaning, {npc.his} balls tensing up, the cock in {npc.his} hands throbbing.. until a number of thick strings of seed bursts out of it!")
+			saynn("Ты наблюдаешь, как твой раб начинает кряхтеть и стонать, {npc.his} яички напрягаются, а член в {npc.his} руках пульсирует... пока из него не вырывается целая серия густых струй семени!")
 
 			if (didABrat):
-				saynn("You weren't standing in the.. blast zone.. But your slave purposefully turned at the last second, giving you zero time to react before {npc.his} load lands on you! Wow!")
+				saynn("Ты не стоял(а) прямо в... зоне поражения... Но твой раб намеренно повернулся в последнюю секунду, не оставив тебе времени среагировать, прежде чем порция {npc.his} приземлилась на тебя! Ого!")
 
-				saynn("[say=pc]HEY![/say]")
+				saynn("[say=pc]ЭЙ![/say]")
 
-				saynn("All you hear back is moans and giggling. That surely deserves a [b]big[/b] punishment.")
+				saynn("В ответ слышны лишь стоны и хихиканье. Это определенно заслуживает [b]большого[/b] наказания.")
 
 			else:
-				saynn("You were standing slightly aside, making sure {npc.his} load doesn't land on you and hits the floor instead.")
+				saynn("Ты стоял(а) чуть в стороне, стараясь сделать так, чтобы порция {npc.his} не попала на тебя, а приземлилась на пол.")
 
-				saynn("Looks like your slave received a good discharge. {npc.He} seems happy about it too, you notice a little smile."+str(" Hopefully that will help against {npc.his} depression a bit." if npc.getNpcSlavery().getDespair() > 0.6 else "")+"")
+				saynn("Похоже, твой раб отлично разрядился. {npc.He} кажется, доволен этим — ты замечаешь легкую улыбку."+str(" Hopefully that will help against {npc.his} depression a bit." if npc.getNpcSlavery().getDespair() > 0.6 else "")+"")
 
 		elif (masType == "vag"):
 			playAnimation(StageScene.Grope, "watchrub", {pc=npcID, npc="pc", pcCum=true, bodyState={exposedCrotch=true, hard=true}})
-			saynn("You watch how your slave starts to squirm a bit and let out cute moans, {npc.his} hand motions become all shaky and stuttery, {npc.his} pussy slit clenching.. until an entire fountain of juices bursts out of it!")
+			saynn("Ты наблюдаешь, как твоя рабыня начинает слегка ерзать и издавать милые стоны, {npc.his} движения рук становятся всякими дрожащими и прерывистыми, {npc.his} щель киски сжимается... пока из неё не вырывается настоящий фонтан соков!")
 
 			if (didABrat):
-				saynn("You weren't standing in the.. blast zone.. But your slave purposefully turned at the last second, giving you zero time to react before {npc.his} {npc.girlcum} lands on you! Wow!")
+				saynn("Ты не стоял прямо в... зоне поражения... Но твоя рабыня намеренно развернулась в последнюю секунду, не оставив тебе ни единого шанса среагировать, прежде чем на тебя приземлится {npc.his} {npc.girlcum}! Ого!")
 
-				saynn("[say=pc]HEY![/say]")
+				saynn("[say=pc]ЭЙ![/say]")
 
-				saynn("All you hear back is moans and giggling. That surely deserves a [b]big[/b] punishment.")
+				saynn("В ответ слышны лишь стоны и хихиканье. Это определенно заслуживает [b]большого[/b] наказания.")
 
 			else:
-				saynn("You were standing slightly aside, making sure {npc.his} {npc.girlcum} doesn't land on you and hits the floor instead.")
+				saynn("Ты стоял чуть в стороне, следя за тем, чтобы {npc.his} {npc.girlcum} не приземлились на тебя, а упали на пол.")
 
-				saynn("Looks like your slave received a good discharge. {npc.He} seems happy about it too, you notice a little smile."+str(" Hopefully that will help against {npc.his} depression a bit." if npc.getNpcSlavery().getDespair() > 0.6 else "")+"")
+				saynn("Похоже, твой раб отлично разрядился. {npc.He} кажется, доволен этим — ты замечаешь легкую улыбку."+str(" Hopefully that will help against {npc.his} depression a bit." if npc.getNpcSlavery().getDespair() > 0.6 else "")+"")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_encourage_fail"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
-		saynn("You decide to just.. watch it unfold. {npc.name} notices your curious stare.. and stops.")
+		saynn("Ты решаешь просто... наблюдать за процессом. {npc.name} замечает твой любопытный взгляд... и останавливается.")
 
 		saynn("[say=npc]"+str(RNG.pick(["..what?", "Why are you looking?", "Need something?", "Can't you see I'm horny over here?"]))+"[/say]")
 
-		saynn("[say=pc]Keep going.[/say]")
+		saynn("[say=pc]Продолжай.[/say]")
 
 		if (masType == "penis"):
-			saynn("{npc.He} strokes {npc.his} members a few more times.. but then stops.")
+			saynn("{npc.He} еще несколько раз ласкает член {npc.his}... но затем замирает.")
 
 		else:
-			saynn("{npc.He} rubs {npc.his} pussy a few more times.. but then stops.")
+			saynn("{npc.He} еще несколько раз трет киску {npc.his}... но затем замирает.")
 
-		saynn("[say=npc]Look away![/say]")
+		saynn("[say=npc]Отводи взгляд![/say]")
 
-		saynn("Wow, you don't plan on listening to your slave's orders. Instead, you put on stern eyes.")
+		saynn("Ого, ты явно не собираешься слушаться приказов своей рабыни. Вместо этого ты принимаешь суровый вид.")
 
-		saynn("[say=npc]Well, then I won't do it..[/say]")
+		saynn("[say=npc]Ну, тогда я не буду...[/say]")
 
-		saynn("Looks like {npc.he} earned {npc.himself} a small punishment too.")
+		saynn("Похоже, {npc.he} заслужила для {npc.himself} небольшое наказание.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "offerself_toosubby"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
-		saynn("{npc.He} seems to be having fun.. alone. Why not offer {npc.him} to have some fun with you?")
+		saynn("Похоже, {npc.He} весело проводит время... в одиночку. Почему бы не предложить {npc.him} повеселиться вместе с тобой?")
 
-		saynn("[say=pc]Why don't you fuck me instead. Just this one time.[/say]")
+		saynn("[say=pc]Почему бы тебе просто не трахнуть меня? Хотя бы один разок.[/say]")
 
-		saynn("Your slave notices your interest and instantly stops.")
+		saynn("Твой раб замечает твой интерес и тут же останавливается.")
 
 		saynn("[say=npc]"+str(RNG.pick(["Oh, uhh..", "Oh fuck.."]))+"[/say]")
 
-		saynn("[say=pc]C'mon, it will be fun.[/say]")
+		saynn("[say=pc]Да ладно тебе, будет весело![/say]")
 
-		saynn("{npc.He} lowers {npc.his} head.")
+		saynn("{npc.He} понуро опускает {npc.his} голову.")
 
-		saynn("[say=npc]Sorry.. I don't think I have it in me..[/say]")
+		saynn("[say=npc]Прости... Кажется, у меня нет на это сил...[/say]")
 
-		saynn("Looks like your slave is too subby for this! Oh well.")
+		saynn("Похоже, твой раб слишком уж покорный для такого! Ну да ладно.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "offerself_nofetish"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
-		saynn("{npc.He} seems to be having fun.. alone. Why not offer {npc.him} to have some fun with you?")
+		saynn("Похоже, {npc.He} весело проводит время... в одиночку. Почему бы не предложить {npc.him} повеселиться вместе с тобой?")
 
-		saynn("[say=pc]Why don't you fuck me instead. Just this one time.[/say]")
+		saynn("[say=pc]Почему бы тебе просто не трахнуть меня? Хотя бы один разок.[/say]")
 
-		saynn("Your slave notices your interest and instantly stops.")
+		saynn("Твой раб замечает твой интерес и тут же останавливается.")
 
 		saynn("[say=npc]"+str(RNG.pick(["Oh, uhh..", "Oh fuck.."]))+"[/say]")
 
-		saynn("[say=pc]C'mon, it will be fun.[/say]")
+		saynn("[say=pc]Да ладно тебе, будет весело![/say]")
 
-		saynn("{npc.He} shrugs.")
+		saynn("{npc.He} пожимает плечами.")
 
-		saynn("[say=npc]I'm not into sex much, you know.[/say]")
+		saynn("[say=npc]Знаешь, секс — это не совсем моё...[/say]")
 
-		saynn("Weird, huh. Looks like your slave is lacking interest in most sex activities.")
+		saynn("Странно, да? Похоже, твоему рабу не особо интересны занятия сексом.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_offerself"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
-		saynn("{npc.He} seems to be having fun.. alone. Why not offer {npc.him} to have some fun with you?")
+		saynn("Похоже, {npc.He} весело проводит время... в одиночку. Почему бы не предложить {npc.him} повеселиться вместе с тобой?")
 
-		saynn("[say=pc]Why don't you fuck me instead. Just this one time.[/say]")
+		saynn("[say=pc]Почему бы тебе просто не трахнуть меня? Хотя бы один разок.[/say]")
 
-		saynn("Your slave notices your interest and instantly stops.")
+		saynn("Твой раб замечает твой интерес и тут же останавливается.")
 
 		saynn("[say=npc]"+str(RNG.pick(["Huh?", "What?", "Are your serious?"]))+"[/say]")
 
-		saynn("[say=pc]C'mon, it will be fun.[/say]")
+		saynn("[say=pc]Да ладно тебе, будет весело![/say]")
 
-		saynn("{npc.He} checks you out.. and bites {npc.his} lip.")
+		saynn("{npc.He} разглядывает тебя... и прикусывает {npc.his} губу.")
 
-		saynn("[say=npc]Alright, don't complain later.[/say]")
+		saynn("[say=npc]Ладно, только потом не ной![/say]")
 
-		addButton("Continue", "See what happens next", "start_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_sex")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

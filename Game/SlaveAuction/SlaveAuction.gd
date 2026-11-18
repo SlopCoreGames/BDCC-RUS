@@ -259,9 +259,9 @@ func doAction(_auctionAction:AuctionAction):
 					
 					var soldBidder:AuctionBidder = bidders[lastBidderIndex]
 					
-					sayn("The slave was sold to "+soldBidder.name+" for "+str(currentBid)+" credits!")
-					sayn("Total amount of bids: "+str(totalBidTimes))
-					saynn("Round amount: "+str(roundNumber))
+					sayn("Раб был продан "+soldBidder.name+" for "+str(currentBid)+" кредитами!")
+					sayn("Всего ставок: "+str(totalBidTimes))
+					saynn("Итоговая сумма: "+str(roundNumber))
 					
 					var totalTraitsPositive:int = 0
 					var totalTraitsNegative:int = 0
@@ -286,13 +286,13 @@ func doAction(_auctionAction:AuctionAction):
 							if(traitT >= AuctionBidder.TRAIT_HIT):
 								totalHitTraitsNegative += 1
 					if(totalTraitsPositive != 0 && totalTraitsNegative != 0):
-						sayn("Bidders total traits amount: "+str(totalTraitsPositive+totalTraitsNegative)+", Positive: "+str(totalTraitsPositive)+", Negative: "+str(totalTraitsNegative))
-						sayn("Revealed: "+str(totalRevealedTraitsPositive+totalRevealedTraitsNegative)+" ("+str(Util.roundF(float(totalRevealedTraitsPositive+totalRevealedTraitsNegative)/float(totalTraitsPositive+totalTraitsNegative)*100.0, 1))+"%), Positive: "+str(totalRevealedTraitsPositive)+" ("+str(Util.roundF(float(totalRevealedTraitsPositive)/float(totalTraitsPositive)*100.0, 1))+"%), Negative: "+str(totalRevealedTraitsNegative)+" ("+str(Util.roundF(float(totalRevealedTraitsNegative)/float(totalTraitsNegative)*100.0, 1))+"%)")
-						sayn("Hit: "+str(totalHitTraitsPositive+totalHitTraitsNegative)+" ("+str(Util.roundF(float(totalHitTraitsPositive+totalHitTraitsNegative)/float(totalTraitsPositive+totalTraitsNegative)*100.0, 1))+"%), Positive: "+str(totalHitTraitsPositive)+" ("+str(Util.roundF(float(totalHitTraitsPositive)/float(totalTraitsPositive)*100.0, 1))+"%), Negative: "+str(totalHitTraitsNegative)+" ("+str(Util.roundF(float(totalHitTraitsNegative)/float(totalTraitsNegative)*100.0, 1))+"%)")
+						sayn("Суммарные черты участников: "+str(totalTraitsPositive+totalTraitsNegative)+", Положительные: "+str(totalTraitsPositive)+", Отрицательные: "+str(totalTraitsNegative))
+						sayn("Открыто: "+str(totalRevealedTraitsPositive+totalRevealedTraitsNegative)+" ("+str(Util.roundF(float(totalRevealedTraitsPositive+totalRevealedTraitsNegative)/float(totalTraitsPositive+totalTraitsNegative)*100.0, 1))+"%), Положительные: "+str(totalRevealedTraitsPositive)+" ("+str(Util.roundF(float(totalRevealedTraitsPositive)/float(totalTraitsPositive)*100.0, 1))+"%), Отрицательные: "+str(totalRevealedTraitsNegative)+" ("+str(Util.roundF(float(totalRevealedTraitsNegative)/float(totalTraitsNegative)*100.0, 1))+"%)")
+						sayn("Попадание: "+str(totalHitTraitsPositive+totalHitTraitsNegative)+" ("+str(Util.roundF(float(totalHitTraitsPositive+totalHitTraitsNegative)/float(totalTraitsPositive+totalTraitsNegative)*100.0, 1))+"%), Положительные: "+str(totalHitTraitsPositive)+" ("+str(Util.roundF(float(totalHitTraitsPositive)/float(totalTraitsPositive)*100.0, 1))+"%), Отрицательные: "+str(totalHitTraitsNegative)+" ("+str(Util.roundF(float(totalHitTraitsNegative)/float(totalTraitsNegative)*100.0, 1))+"%)")
 				else:
 					saynnPresenter("That's it.. Time is up.")
 					
-					saynn("The slave wasn't sold to anyone..")
+					saynn("Раба никто не купил...")
 				
 				actionText = Util.join(extraActionTexts, "")
 				return
@@ -385,7 +385,7 @@ func doAction(_auctionAction:AuctionAction):
 		if(disDisLikesTexts.size() > 0):
 			disTexts.append("dislikes slaves with "+Util.humanReadableList(disDisLikesTexts)+" trait"+("s" if disDisLikesTexts.size() > 1 else ""))
 
-		sayn("[i]"+getSlaverName()+" learned that "+bidder.name+" "+Util.join(disTexts, " and ")+".[/i]")
+		sayn("[i]"+getSlaverName()+" узнал(а), что "+bidder.name+" "+Util.join(disTexts, " and ")+".[/i]")
 		hadAnyLearns = true
 	if(hadAnyLearns):
 		sayn("")
@@ -437,28 +437,28 @@ func doRoundOfBiddingWithChecks():
 		if(bidAmount >= 2):
 			#print("YAY. BID AMOUNT: "+str(bidAmount))
 			if(isPCBeingSold):
-				saynn("Since "+getSlaverName()+" got at least 2 new bids, they can present you more!")
+				saynn("Так как "+getSlaverName()+" было сделано как минимум 2 новые ставки, вам могут представить еще варианты!")
 			else:
-				saynn("Since you got at least 2 new bids, you can present your slave more!")
+				saynn("Так как было сделано как минимум 2 новые ставки, вы можете продолжать выставлять свою рабыню!")
 			canPresent = true
 			bidLastChances = 0
 		else:
 			canPresent = false
 			if(isPCBeingSold):
-				saynn("Since "+getSlaverName()+" got less than 2 new bids after the soft end, they can’t present you anymore.")
+				saynn("Так как "+getSlaverName()+" было сделано меньше 2 новых ставок после мягкого завершения, вам больше не будут предлагать варианты.")
 			else:
-				saynn("Since you got less than 2 new bids after the soft end, you can’t present your slave anymore.")
+				saynn("Так как было сделано меньше 2 новых ставок после мягкого завершения, вы больше не можете выставлять свою рабыню!")
 	else:
 		if(roundNumber == 0):
 			if(isPCBeingSold):
-				saynn("The auction has started!")
+				saynn("Аукцион начался!")
 			else:
-				saynn("The auction has started! Learn as many bidders preferences as possible before the soft end.")
+				saynn("Аукцион начался! Постарайтесь узнать как можно больше о предпочтениях участников до мягкого завершения.")
 		else:
 			if(isPCBeingSold):
-				saynn("Since it’s round "+str(roundNumber)+" and the soft end hasn’t happened yet, "+getSlaverName()+" can present you more.")
+				saynn("Раз уж идет раунд "+str(roundNumber)+" и мягкое завершение еще не наступило, "+getSlaverName()+" может предложить вам больше.")
 			else:
-				saynn("Since it’s round "+str(roundNumber)+" and the soft end hasn’t happened yet, you can present your slave more.")
+				saynn("Раз уж идет раунд "+str(roundNumber)+" и мягкое завершение еще не наступило, вы можете выставить своего раба подороже.")
 		canPresent = true
 		bidLastChances = 0
 
@@ -504,7 +504,7 @@ func doRoundOfBidding() -> int:
 				bidder.onBid(totalBidTimes)
 				
 				if(totalBidTimes == 0):
-					saynn("[say="+bidder.bidderID+"]I will match "+str(currentBid)+" credits.[/say]")
+					saynn("[say=\""+bidder.bidderID+"]Я уравняю ставку "+str(currentBid)+" кредитов.[/say]")
 				else:
 					var theDot:String = "."
 					if(totalBidTimes > 10):
@@ -514,12 +514,12 @@ func doRoundOfBidding() -> int:
 						prefix = "I will raise it to "
 						
 					if(resultBidAmount == 0 || RNG.chance(80 - resultBidAmount*10 - totalBidTimes*3)):
-						saynn("[say="+bidder.bidderID+"]"+prefix+str(currentBid)+" credits"+theDot+"[/say]")
+						saynn("[say=\""+bidder.bidderID+"]"+prefix+str(currentBid)+" credits"+theDot+"[/say]")
 					else:
-						saynn("[say="+bidder.bidderID+"]"+prefix+str(currentBid)+" credits"+theDot+" "+bidder.getOutbidReaction()+"[/say]")
+						saynn("[say=\""+bidder.bidderID+"]"+prefix+str(currentBid)+" credits"+theDot+" "+bidder.getOutbidReaction()+"[/say]")
 					
 					
-					#saynn(bidder.name+" placed a "+str(currentBid)+" credits bid.")
+					#saynn(bidder.name+" выставил(а) "+str(currentBid)+" кредитов.")
 				resultBidAmount += 1
 				bidLastChances = 0
 				totalBidTimes += 1

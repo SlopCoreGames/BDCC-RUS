@@ -9,15 +9,15 @@ func _init():
 
 func getName() -> String:
 	if(fluidID == ""):
-		return "Donate Any Fluid"
+		return "Сдать любую жидкость"
 	else:
 		var fluidObj:FluidBase = GlobalRegistry.getFluid(fluidID)
 		if(fluidObj == null):
-			return "Donate "+str(fluidID)
-		return "Donate "+str(fluidObj.getVisibleName())
+			return "Сдать "+str(fluidID)
+		return "Сдать "+str(fluidObj.getVisibleName())
 
 func getDescription() -> String:
-	return "Use the donation machine here or get milked by Dr. Quinn."
+	return "Воспользуйтесь аппаратом для дойки здесь или отдайтесь на дойку доктору Куинн."
 
 func getCompletionString() -> String:
 	return str(Util.roundF(curAmount, 1))+"/"+str(Util.roundF(needAmount, 1))+"ml"

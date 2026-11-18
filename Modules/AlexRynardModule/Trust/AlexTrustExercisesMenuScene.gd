@@ -7,17 +7,17 @@ func _run():
 	if(state == ""):
 		addCharacter("alexrynard")
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard"})
-		saynn("Which trust exercise do you wanna do?")
+		saynn("Какое упражнение на доверие хочешь попробовать?")
 
-		addButton("Trust exercise 1", "Do the first one", "do_first")
+		addButton("Упражнение на доверие 1", "Выполнить первое", "do_first")
 		var howManyCh2 = getFlag("AlexRynardModule.ch2SceneNum", 0)
 		if (howManyCh2 >= 3):
-			addButton("Trust exercise 2", "Do the second one", "do_second")
+			addButton("Упражнение на доверие 2", "Выполнить второе", "do_second")
 		if (howManyCh2 >= 7):
-			addButton("Trust exercise 3", "Do the third one", "do_third")
+			addButton("Упражнение на доверие 3", "Выполнить третье", "do_third")
 		if (getFlag("AlexRynardModule.ch2FinalSceneHappened")):
-			addButton("Trust exercise 4", "Do the last one", "do_fourth")
-		addButton("Never mind", "You changed your mind", "endthescene")
+			addButton("Упражнение на доверие 4", "Выполнить последнее", "do_fourth")
+		addButton("Проехали", "Вы передумали", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

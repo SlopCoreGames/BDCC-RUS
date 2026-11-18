@@ -4,7 +4,7 @@ func _init():
 	id = SexGoal.Pawjob
 
 func getVisibleName():
-	return "Pawjob"
+	return "Павджоб"
 
 func isPossible(_sexEngine, _domInfo, _subInfo, _data):
 	if(_domInfo.getChar().hasBoundLegs()):

@@ -9,470 +9,470 @@ func _run():
 		aimCameraAndSetLocName("eng_breakroom")
 		GM.pc.setLocation("eng_bay_corridor")
 		playAnimation(StageScene.Duo, "walk", {npc="alexrynard", npcAction="walk", flipNPC=true})
-		saynn("The whole space station seems to be sleeping by now. All the lights are dimmed down, offering a moody atmosphere while you follow Alex through the corridors of the engineering block.")
+		saynn("Кажется, вся космическая станция уже погрузилась в сон. Свет приглушен, создавая атмосферу таинственности, пока ты следуешь за Алексом по коридорам инженерного блока.")
 
-		saynn("The foxy opens the staff-only door by entering some code and then invites you into a cozy-looking room.")
+		saynn("Лисичка вводит код, открывает дверь, предназначенную только для персонала, и приглашает тебя в уютную на вид комнату.")
 
-		saynn("It looks like.. a break room. You've been here already. But now you can get a better look. You notice a tv, a sofa, chairs, a vendomat with some drinks. There is even a little shower cabin. It seems that engineers can't stop thinking about work even during their break time because one of the corners has a long work table with a board above it that has a crazy amount of notes pinned to it.")
+		saynn("Похоже на... комнату отдыха. Ты уже бывал здесь раньше, но теперь можешь рассмотреть всё получше. Ты замечаешь телевизор, диван, стулья, вендинговый автомат с напитками. Здесь даже есть маленькая душевая кабина. Похоже, инженеры не могут перестать думать о работе даже во время перерыва, потому что в одном из углов стоит длинный рабочий стол, а над ним висит доска, утыканная безумным количеством заметок.")
 
-		saynn("[say=alexrynard]Right. Give me a second.[/say]")
+		saynn("[say=alexrynard]Так. Дай мне секунду.[/say]")
 
-		saynn("Alex quickly pushes the big sofa out of the way and then invites you to stand in the middle of the room.")
+		saynn("Алекс быстро отодвигает большой диван в сторону и предлагает тебе встать посреди комнаты.")
 
-		saynn("[say=alexrynard]Just stand there.[/say]")
+		saynn("[say=alexrynard]Просто стой здесь.[/say]")
 
-		addButton("Continue", "See what happens next", "stand_in_middle")
+		addButton("Продолжить", "Смотреть, что будет дальше", "stand_in_middle")
 	if(state == "stand_in_middle"):
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard"})
-		saynn("Alright. You take the offered spot and just.. wait.")
+		saynn("Ладно. Ты занимаешь предложенное место и просто... ждешь.")
 
-		saynn("Alex approaches the work table and opens one of the locked drawers, grabbing a box full of unfinished prototypes. He finds the right one.. and returns to you.")
+		saynn("Алекс подходит к рабочему столу и открывает один из запертых ящиков, выуживая коробку, полную незаконченных прототипов. Он находит нужный... и возвращается к тебе.")
 
-		saynn("It looks like.. fancy glasses. But with some electronics and wires sticking out of them.")
+		saynn("Похоже на... модные очки. Но из них торчат всякие электронные детали и провода.")
 
-		saynn("[say=pc]Glasses?[/say]")
+		saynn("[say=pc]Очки?[/say]")
 
-		saynn("[say=alexrynard]Yeah. I wired up a few highly-precise cameras to them that read your irises and there are also some LED strips that can send highly-concentrated light impulses.[/say]")
+		saynn("[say=alexrynard]Ага. Я подключил к ним несколько сверхточных камер, которые считывают радужку, а еще там есть светодиодные ленты, способные посылать мощные импульсы концентрированного света.[/say]")
 
-		saynn("[say=pc]Sounds.. dangerous.[/say]")
+		saynn("[say=pc]Звучит... опасно.[/say]")
 
-		saynn("[say=alexrynard]Well, it can be. But these are just off the shell components. It should be better than the sum of its parts.[/say]")
+		saynn("[say=alexrynard]Ну, может и так. Но это пока просто детали в сборе. В итоге устройство должно превзойти сумму своих частей.[/say]")
 
-		saynn("You realize that you still don't understand what it will do.")
+		saynn("Ты ведь понимаешь, что до сих пор не осознаешь, на что они способны.")
 
-		saynn("[say=pc]What will they do though?[/say]")
+		saynn("[say=pc]И на что же?[/say]")
 
-		saynn("Alex shrugs.")
+		saynn("Алекс пожимает плечами.")
 
-		saynn("[say=alexrynard]The obvious use case is in medicine. These LEDs are so strong, they are capable of performing laser eye surgery. The high-range high-density matrices of the cameras allows for the whole procedure to be completely automated. All the while being smaller than any auto-doc.[/say]")
+		saynn("[say=alexrynard]Очевидный вариант применения — медицина. Эти светодиоды настолько мощные, что могут заменить лазерную хирургию глаза. Высокоточные матрицы камер позволяют полностью автоматизировать процедуру. И всё это в корпусе, который меньше любого автодока.[/say]")
 
-		saynn("Really cool tech. But you don't really have any problems with your eyes..")
+		saynn("Технология реально крутая. Но у тебя ведь нет проблем со зрением...")
 
-		saynn("[say=alexrynard]But.. I decided to do something else with them. Do you know how your brain works? Any brain.[/say]")
+		saynn("[say=alexrynard]Но... я решил использовать их иначе. Ты вообще знаешь, как работает мозг? Любой мозг.[/say]")
 
-		saynn("What a weird question.")
+		saynn("Какой странный вопрос.")
 
-		saynn("[say=pc]Well, yeah, kinda. Lots of connected neurons..[/say]")
+		saynn("[say=pc]Ну, типа того. Куча взаимосвязанных нейронов...[/say]")
 
-		saynn("[say=alexrynard]Yeah, exactly. Your brain has inputs, like your eyes, internal layers that consist of neurons and some outputs, like your muscles.[/say]")
+		saynn("[say=alexrynard]Да, именно так. У твоего мозга есть входные данные, вроде глаз, внутренние слои, состоящие из нейронов, и выходные данные, вроде мышц.[/say]")
 
-		saynn("You feel like you won't be able to follow him for long..")
+		saynn("Тебе кажется, что ты не сможешь долго за ним поспевать...")
 
-		saynn("[say=alexrynard]Basically, lights can trigger some of your neurons to fire. The cameras in these goggles can catch that through the microscopic twitches of your eye muscles and use that info to try to guess the internal logic of your brain. Obviously it takes a lot of time to gather enough entropy so this process is quite slow.[/say]")
+		saynn("[say=alexrynard]По сути, свет может заставить некоторые твои нейроны срабатывать. Камеры в этих очках могут уловить это через микроскопические подергивания глазных мышц и использовать эту информацию, чтобы попытаться угадать внутреннюю логику твоего мозга. Очевидно, что требуется много времени, чтобы собрать достаточно энтропии, так что процесс довольно медленный.[/say]")
 
-		saynn("Wow..")
+		saynn("Ого..")
 
-		saynn("[say=pc]You're saying that it can read minds?[/say]")
+		saynn("[say=pc]Ты хочешь сказать, что он может читать мысли?[/say]")
 
-		saynn("[say=alexrynard]Yeah. Well, no. But it can guess some stuff. There is way too much information to process to be able to actually 'read' someone's mind. And the error is too huge for any data to be considered reliable.[/say]")
+		saynn("[say=alexrynard]Ну, да. Хотя и нет. Но он может кое-что угадать. Информации слишком много, чтобы реально «прочитать» чей-то разум. Да и погрешность слишком велика, чтобы считать любые данные надежными.[/say]")
 
-		saynn("Doesn't stop them from using mindtesters to find guilty people..")
+		saynn("Это не мешает им использовать «тестеры разума», чтобы вычислять виновных...")
 
-		saynn("[say=alexrynard]I programmed this particular prototype to find layers that are responsible for negative thoughts and then.. use the carefully crafted LED patterns to negate their values.[/say]")
+		saynn("[say=alexrynard]Я запрограммировал этот конкретный прототип так, чтобы он находил слои, отвечающие за негативные мысли, а затем... использовал тщательно выверенные светодиодные паттерны, чтобы обнулить их значение.[/say]")
 
-		saynn("Blocking negative thoughts.. You feel like you can make a pretty guess about who he is making that prototype for.")
+		saynn("Блокировка негативных мыслей... Кажется, ты примерно понимаешь, для кого он делает этот прототип.")
 
-		saynn("[say=pc]Right. All of that amounts to.. Anti-depression goggles?[/say]")
+		saynn("[say=pc]То есть... Антидепрессивные очки?[/say]")
 
-		saynn("He shrugs.")
+		saynn("Он пожимает плечами.")
 
-		saynn("[say=alexrynard]Why not, that's a good description.[/say]")
+		saynn("[say=alexrynard]А почему бы и нет, вполне точное описание.[/say]")
 
-		saynn("He begins to carefully put this prototype on your head. It still seems to be disabled so it shouldn't do anything. But you stand very still just in case.")
+		saynn("Он начинает осторожно надевать этот прототип тебе на голову. Похоже, он всё еще отключен, так что ничего не должно произойти. Но ты замираешь, на всякий случай.")
 
-		addButton("Continue", "See what happens next", "wear_disabled_goggles")
+		addButton("Продолжить", "Смотреть, что будет дальше", "wear_disabled_goggles")
 	if(state == "wear_disabled_goggles"):
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard"})
-		saynn("They now look more like a.. visor.. when they land on your head.")
+		saynn("Когда они опускаются на твою голову, они теперь больше похожи на... визор...")
 
-		saynn("[say=alexrynard]Alright. We will do a few tests but I want to let you know that you will always be in control. If you feel like something is wrong, tell me immediately and I will turn them off. Hm.. yeah, just say 'RED' if something is wrong, okay?[/say]")
+		saynn("[say=alexrynard]Так, ладно. Мы проведем несколько тестов, но я хочу, чтобы ты знала: контроль всегда будет за тобой. Если почувствуешь, что что-то идет не так, сразу говори мне, и я их выключу. Хм... да, просто скажи «КРАСНЫЙ», если станет не по себе, идет?[/say]")
 
-		saynn("So caring.")
+		saynn("Какой заботливый.")
 
-		saynn("[say=alexrynard]And if something goes really-really wrong and you will stop being able to talk, just close your eyes. Without access to your eyes, the LEDs shouldn't be able to affect you in any way.[/say]")
+		saynn("[say=alexrynard]А если случится что-то совсем-совсем серьезное и ты вдруг перестанешь соображать или говорить, просто закрой глаза. Без доступа к зрению светодиоды не должны никак на тебя повлиять.[/say]")
 
-		saynn("That's.. concerning. But you've gone so far already.")
+		saynn("Это... тревожно. Но ты ведь уже зашла так далеко.")
 
-		saynn("[say=alexrynard]Ready?[/say]")
+		saynn("[say=alexrynard]Готова?[/say]")
 
-		addButton("Yes", "Start the experiment", "do_start")
-		addButton("RED", "Say it", "do_prestart_red")
-		addButton("Hypnovisor?", "You have a very strong suspicion about this", "mark_zeros")
+		addButton("Да", "Начать эксперимент", "do_start")
+		addButton("RED", "Сказать это", "do_prestart_red")
+		addButton("Гипновизор?", "У тебя есть очень сильное предчувствие насчет этого", "mark_zeros")
 	if(state == "mark_zeros"):
-		saynn("You realize that it kinda looks like one of those visors that mess with your mind.")
+		saynn("Ты понимаешь, что это чертовски похоже на один из тех визоров, что копаются в мозгах.")
 
-		saynn("[say=pc]Isn't this.. a hypnovisor?[/say]")
+		saynn("[say=pc]Это что... гипновизор?[/say]")
 
-		saynn("Alex raises his brow and puts on an extremely confused expression.")
+		saynn("Алекс удивленно вскидывает бровь с крайне озадаченным видом.")
 
-		saynn("[say=alexrynard]A hypnovisor? You're talking about those toys that everyone here is using?[/say]")
+		saynn("[say=alexrynard]Гипновизор? Ты про те игрушки, которыми тут все пользуются?[/say]")
 
-		saynn("Wow, looks like you have struck a nerve.")
+		saynn("Ого, похоже, ты задел за живое.")
 
-		saynn("[say=alexrynard]No, it is not a hypnovisor. It works completely differently. Does completely different things. My prototype is aimed to cure depression, not scramble someone's brain until they're a willing fuckdoll. How can you even compare?[/say]")
+		saynn("[say=alexrynard]Нет, это не гипновизор. У него совсем другой принцип работы. Совсем другие задачи. Мой прототип нацелен на лечение депрессии, а не на то, чтобы превратить чей-то мозг в кашу, пока человек не станет послушной шлюхой-куклой. Как их вообще можно сравнивать?[/say]")
 
-		saynn("Fair enough.. For some reason you still have doubts.")
+		saynn("Справедливо... Но почему-то сомнения всё равно остаются.")
 
-		saynn("He adjusts the visor on your head to sit a little better.")
+		saynn("Он поправляет визор на твоей голове, чтобы тот сидел удобнее.")
 
-		saynn("[say=alexrynard]So? Ready?[/say]")
+		saynn("[say=alexrynard]Ну что? Готова?[/say]")
 
-		addButton("Yes", "Start the experiment", "do_start")
-		addButton("RED", "Say it", "do_prestart_red")
+		addButton("Да", "Начать эксперимент", "do_start")
+		addButton("RED", "Сказать это", "do_prestart_red")
 	if(state == "do_prestart_red"):
-		saynn("You don't know why but you have a strong desire to say it now..")
+		saynn("Ты сама не понимаешь почему, но тебе безумно хочется сказать это прямо сейчас...")
 
-		saynn("[say=pc]RED.[/say]")
+		saynn("[say=pc]КРАСНЫЙ.[/say]")
 
-		saynn("Alex rolls his eyes and sighs.")
+		saynn("Алекс закатывает глаза и вздыхает.")
 
-		saynn("[say=alexrynard]I didn't even turn it on yet, brat.[/say]")
+		saynn("[say=alexrynard]Я его ещё даже не включил, мелкая.[/say]")
 
-		saynn("[say=pc]Oh, sorry. I was just testing the safeword.[/say]")
+		saynn("[say=pc]Ой, прости. Я просто проверяла стоп-слово.[/say]")
 
-		saynn("He rolls his eyes even harder.")
+		saynn("Он закатывает глаза ещё сильнее.")
 
-		saynn("[say=alexrynard]Ready?[/say]")
+		saynn("[say=alexrynard]Готова?[/say]")
 
-		addButton("Yes", "Start the experiment", "do_start")
+		addButton("Да", "Начать эксперимент", "do_start")
 	if(state == "do_start"):
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard"})
-		saynn("[say=pc]Yes, I'm ready.[/say]")
+		saynn("[say=pc]Да, я готова.[/say]")
 
-		saynn("Alex nods and then uses a screwdriver to short-circuit the power switch of the main board..")
+		saynn("Алекс кивает, а затем отверткой замыкает переключатель питания на главной плате...")
 
-		saynn("Almost instantly, some of the LED's light up with a cozy yellow color. You hear a pleasing low-pitched hum near your ears as the prototype gradually warms up around your head.")
+		saynn("Почти мгновенно несколько светодиодов загораются уютным желтым светом. У ваших ушей раздается приятный низкий гул — это прототип постепенно прогревается вокруг вашей головы.")
 
-		saynn("[say=alexrynard]Good. Don't forget to say RED if you think that something is wrong.[/say]")
+		saynn("[say=alexrynard]Хорошо. Не забудь сказать «КРАСНЫЙ», если почувствуешь, что что-то идет не так.[/say]")
 
-		saynn("He doesn't have to repeat it twice, you got it already.. At least his words make you feel safe.")
+		saynn("Ему не приходится повторять дважды, вы и так всё поняли... По крайней мере, от его слов на душе становится спокойнее.")
 
-		saynn("You look around the room. It's still the same room, it just now has a pink-yellow tint to it.")
+		saynn("Ты оглядываешься по сторонам. Комната всё та же, только теперь всё вокруг залито розовато-жёлтым оттенком.")
 
-		saynn("Fancy glasses, huh.")
+		saynn("Шикарные очки, а?")
 
-		addButton("Continue", "See what happens next", "stage1")
-		addButton("RED", "Say this", "do_start_red")
+		addButton("Продолжить", "Смотреть, что будет дальше", "stage1")
+		addButton("RED", "Скажите это", "do_start_red")
 	if(state == "do_start_red"):
-		saynn("[say=pc]RED.[/say]")
+		saynn("[say=pc]КРАСНЫЙ.[/say]")
 
-		saynn("Alex tilts his head slightly. But then snaps out of it and quickly turns off the prototype.")
+		saynn("Алекс слегка наклоняет голову набок. Но затем он тут же приходит в себя и быстро выключает прототип.")
 
-		saynn("[say=alexrynard]You felt something bad?[/say]")
+		saynn("[say=alexrynard]Почувствовала что-то неладное?[/say]")
 
-		saynn("[say=pc]Um.. I thought these were voice-controlled. I wanted them to glow red rather than yellow.[/say]")
+		saynn("[say=pc]Эм.. Я думал, они управляются голосом. Хотел, чтобы они светились красным, а не жёлтым.[/say]")
 
-		saynn("He sighs.")
+		saynn("Он вздыхает.")
 
-		saynn("[say=alexrynard]They're not. Let's try again.[/say]")
+		saynn("[say=alexrynard]Нет. Давай попробуем ещё раз.[/say]")
 
-		saynn("At least he seems to be patient with you.")
+		saynn("По крайней мере, он кажется терпеливым к тебе.")
 
-		saynn("[say=alexrynard]Ready?[/say]")
+		saynn("[say=alexrynard]Готова?[/say]")
 
-		addButton("Yes", "Start the experiment", "do_start")
+		addButton("Да", "Начать эксперимент", "do_start")
 	if(state == "stage1"):
-		saynn("As the time passes, you notice that the yellow glow is now only in your peripheral vision.. It begins to slowly cycle through various tints of yellow.. then various tints of blue and green.. Ohh, it just went from green to purple. And then from blue to orange.")
+		saynn("С течением времени ты замечаешь, что жёлтое свечение теперь находится лишь на периферии твоего зрения.. Оно начинает медленно перетекать из одного оттенка жёлтого в другой.. затем в различные оттенки синего и зелёного.. Ох, оно только что сменилось с зелёного на фиолетовый. А затем с синего на оранжевый.")
 
-		saynn("[rainbow freq=0.05 sat=0.2 val=1.0]Very colorful.[/rainbow]")
+		saynn("[rainbow freq=0.05 sat=0.2 val=1.0]Очень красочно.[/rainbow]")
 
-		saynn("[say=pc]It looks nice.[/say]")
+		saynn("[say=pc]Выглядит мило.[/say]")
 
-		saynn("[say=alexrynard]Uh huh. Feel any different yet?[/say]")
+		saynn("[say=alexrynard]Угу. Уже чувствуешь что-нибудь?[/say]")
 
-		saynn("Not really.. you don't really feel anything. Just calmness. The low-pitched hum helps you focus on yourself.")
+		saynn("Не особо... ты почти ничего не чувствуешь. Только спокойствие. Низкий гул помогает тебе сосредоточиться на себе.")
 
-		saynn("[say=pc]Not really.[/say]")
+		saynn("[say=pc]Не особо.[/say]")
 
-		saynn("[say=alexrynard]Nothing can be something.[/say]")
+		saynn("[say=alexrynard]Ничто не может стать чем-то.[/say]")
 
-		saynn("[rainbow freq=0.05 sat=0.2 val=1.0]You smile.[/rainbow]")
+		saynn("[rainbow freq=0.05 sat=0.2 val=1.0]Ты улыбаешься.[/rainbow]")
 
-		saynn("[say=alexrynard]Very rarely though.[/say]")
+		saynn("[say=alexrynard]Хотя это бывает крайне редко.[/say]")
 
-		saynn("Huh. You are breathing right now. Every few seconds, you catch some air, just to exhale it soon after. Feels nice. You even part your lips a tiny bit to catch more of that sweet air.")
+		saynn("Хм. Ты сейчас дышишь. Каждые несколько секунд ты втягиваешь воздух, чтобы тут же его выдохнуть. Приятное чувство. Ты даже слегка приоткрываешь губы, чтобы поймать побольше этого сладкого воздуха.")
 
-		addButton("Continue", "See what happens next", "stage2")
-		addButton("RED", "Say it", "stage1_red")
+		addButton("Продолжить", "Смотреть, что будет дальше", "stage2")
+		addButton("RED", "Сказать это", "stage1_red")
 	if(state == "stage1_red"):
-		saynn("[say=pc]Red.[/say]")
+		saynn("[say=pc]Красный.[/say]")
 
-		saynn("Alex hears that and pretty much instantly turns off the prototype, causing the colorful lights to go away, just like the hum.")
+		saynn("Алекс слышит это и почти мгновенно выключает прототип, отчего разноцветные огни гаснут так же внезапно, как и исчезает гул.")
 
-		saynn("[say=alexrynard]Something went wrong?[/say]")
+		saynn("[say=alexrynard]Что-то пошло не так?[/say]")
 
-		saynn("[say=pc]Um.. I don't know. For some reason I was focusing a lot on myself.[/say]")
+		saynn("[say=pc]М-м... даже не знаю. Почему-то я слишком сильно зациклилась на себе.[/say]")
 
-		saynn("Alex hums.")
+		saynn("Алекс что-то напевает под нос.")
 
-		saynn("[say=alexrynard]Hm.. Maybe that was happening because your surroundings, the prison, carries a lot of negative emotions with it?[/say]")
+		saynn("[say=alexrynard]Хм... Может, это потому, что само место, эта тюрьма, пропитано кучей негативных эмоций?[/say]")
 
-		saynn("You shrug.")
+		saynn("Ты пожимаешь плечами.")
 
-		saynn("[say=alexrynard]I really want to test it for a little longer. Would that be okay?[/say]")
+		saynn("[say=alexrynard]Мне очень хочется протестировать его еще немного. Ты не против?[/say]")
 
-		saynn("You don't see why not so you nod.")
+		saynn("Вы не видите причин для отказа, поэтому киваете.")
 
-		saynn("[say=alexrynard]Ready?[/say]")
+		saynn("[say=alexrynard]Готова?[/say]")
 
-		addButton("Yes", "Start the experiment", "do_start")
+		addButton("Да", "Начать эксперимент", "do_start")
 	if(state == "stage2"):
-		saynn("Ow. The visor suddenly flashes [color=red]red[/color] a few times before returning back to [rainbow freq=0.05 sat=0.2 val=1.0]soft warm colors[/rainbow]. If the cameras wanted to see muscles in your eyes twitch, they certainly got what they wanted..")
+		saynn("Ой! Визор внезапно несколько раз вспыхивает [color=red]красным[/color], а затем возвращается к [rainbow freq=0.05 sat=0.2 val=1.0]мягким теплым цветам[/rainbow]. Если камеры и хотели запечатлеть, как дергаются ваши глазные мышцы, то они определенно добились своего...")
 
-		saynn("The soft colors are obviously way nicer to look at.. making you appreciate them a lot more.")
+		saynn("Мягкие цвета, очевидно, куда приятнее для глаз... из-за чего вы начинаете ценить их гораздо сильнее.")
 
-		saynn("[rainbow freq=0.05 sat=0.9 val=1.0]Everything is so colorful.[/rainbow]")
+		saynn("[rainbow freq=0.05 sat=0.9 val=1.0]Всё такое яркое и красочное.[/rainbow]")
 
-		saynn("You don't even notice that there are some kind of words appearing on the visor. Very calming words like 'Free', 'Happy', 'Fun'. They're nice to look at too.")
+		saynn("Вы даже не замечаете, как на визоре начинают появляться какие-то слова. Очень успокаивающие слова, вроде «Свобода», «Счастье», «Веселье». На них тоже приятно смотреть.")
 
-		saynn("Ow. There goes the red flashing again. Very annoying.. Why do you have to look at the throbbing red colors.. You don't wanna do that..")
+		saynn("Ой. Опять это красное мигание. Жутко раздражает... Почему вы обязаны пялиться в эти пульсирующие красные пятна... Вам совсем этого не хочется...")
 
-		saynn("[say=alexrynard]All good?[/say]")
+		saynn("[say=alexrynard]Все в порядке?[/say]")
 
-		saynn("Soon, the bright red transitions back into a [color=pink]nice pink color[/color].. Very pretty. Feels like you could look at it all day.. Fuck that red color.")
+		saynn("Скоро ярко-красный снова сменится на [color=pink]приятный розовый цвет[/color].. Очень красиво. Кажется, на него можно смотреть весь день.. Блядь, этот красный цвет.")
 
-		addButton("Continue", "See what happens next", "stage3")
-		addButton("RED", "Say it", "stage2_red")
+		addButton("Продолжить", "Смотреть, что будет дальше", "stage3")
+		addButton("RED", "Сказать это", "stage2_red")
 	if(state == "stage2_red"):
-		saynn("[say=pc]..red?[/say]")
+		saynn("[say=pc]..красный?[/say]")
 
-		saynn("For some reason it took a lot of your will power to say that damned word.")
+		saynn("Почему-то тебе потребовалось немало силы воли, чтобы произнести это чертово слово.")
 
-		saynn("Alex turns off the prototype as fast as he can.. but your peripheral vision still has that [rainbow freq=0.05 sat=0.2 val=1.0]colorful pretty[/rainbow] haze.")
+		saynn("Алекс выключает прототип так быстро, как только может.. но в твоем периферийном зрении все еще стоит эта [rainbow freq=0.05 sat=0.2 val=1.0]красочная, приятная[/rainbow] дымка.")
 
-		saynn("[say=alexrynard]Something went wrong?[/say]")
+		saynn("[say=alexrynard]Что-то пошло не так?[/say]")
 
-		saynn("[say=pc]Oh.. I don't actually know. I saw a lot of red flashes.. I didn't like those.[/say]")
+		saynn("[say=pc]Ох.. на самом деле я не знаю. Я видела много красных вспышек.. Они мне не понравились.[/say]")
 
-		saynn("[say=alexrynard]Let me look at you.[/say]")
+		saynn("[say=alexrynard]Дай-ка я на тебя посмотрю.[/say]")
 
-		saynn("He does a quick visual check of your eyes.")
+		saynn("Он быстро осматривает твои глаза.")
 
-		saynn("[say=alexrynard]I'm not a doctor but they do look slightly bigger than usual. Huh.[/say]")
+		saynn("[say=alexrynard]Я не врач, но зрачки выглядят чуть шире обычного. Хм.[/say]")
 
-		saynn("[say=pc]If you could remove those flashes, I'd be happy to look at the colors more.[/say]")
+		saynn("[say=pc]Если бы ты мог убрать эти вспышки, я бы с удовольствием понаблюдала за цветами подольше.[/say]")
 
-		saynn("Alex hums.")
+		saynn("Алекс что-то напевает под нос.")
 
-		saynn("[say=alexrynard]I don't think I can. They're part of the calibration like I said. They should stop after there is enough entropy. Would you be willing to try again? We still don't know if it does what it should, block negative thoughts.[/say]")
+		saynn("[say=alexrynard]Не думаю, что получится. Как я уже сказала, это часть калибровки. Они должны прекратиться, когда накопится достаточно энтропии. Ты не против попробовать еще раз? Мы всё еще не знаем, работает ли он так, как должен — блокировать негативные мысли.[/say]")
 
-		saynn("For some reason your brain doesn't want to say no.. You feel like you should be concerned.. but you're not..")
+		saynn("По какой-то причине твой мозг не хочет говорить «нет»... Ты чувствуешь, что пора бы начать беспокоиться... но не беспокоишься...")
 
-		addButton("Yes", "Start the experiment", "do_start")
+		addButton("Да", "Начать эксперимент", "do_start")
 	if(state == "stage3"):
-		saynn("Soon, the red flashing stops.. leaving just the [rainbow freq=0.05 sat=0.9 val=1.0]nice pretty colors and kind words.[/rainbow]")
+		saynn("Вскоре красное мигание прекращается... оставляя лишь [rainbow freq=0.05 sat=0.9 val=1.0]прекрасные, приятные цвета и добрые слова.[/rainbow]")
 
-		saynn("You're looking at a wall.. and realize how good it is. Years of engineering and then months of actual assembly lead you to being able to see it. So much effort, you can't help but to appreciate it.")
+		saynn("Ты смотришь на стену... и осознаешь, насколько она хороша. Годы инженерных разработок, а затем месяцы сборки — и вот ты можешь видеть результат. Столько усилий, что ты невольно начинаешь ими восхищаться.")
 
-		saynn("Then you turn your head a little.. and see Alex. Oh wow. His previously orange fur now has [rainbow freq=0.05 sat=0.9 val=1.0]all sorts of tints[/rainbow] to it. So much detail to it, you can't help but part your lips a little more.. and even begin to drool.")
+		saynn("Затем ты слегка поворачиваешь голову... и видишь Алекса. О боже. Его мех, раньше просто оранжевый, теперь отливает [rainbow freq=0.05 sat=0.9 val=1.0]всеми цветами радуги[/rainbow]. Столько деталей, что ты невольно приоткрываешь рот... и даже начинаешь пускать слюни.")
 
-		saynn("Some part of your brain tries to tell you that you should be concerned by now.. Drooling while examining someone's fur isn't normal.. But then your mind throws that negative thought away. Why worry if you're.. happy.")
+		saynn("Какая-то часть твоего мозга пытается твердить, что пора бы уже начать волноваться... пускать слюни, разглядывая чужой мех — это ненормально... Но затем разум отбрасывает эту негативную мысль. Зачем беспокоиться, если тебе... хорошо.")
 
-		saynn("[say=alexrynard]How do you.. feel?[/say]")
+		saynn("[say=alexrynard]Как ты... себя чувствуешь?[/say]")
 
-		saynn("You can still fully control your body. You look at your hands and smile. Wiggling your fingers is so entertaining for some reason..")
+		saynn("Ты всё еще полностью контролируешь свое тело. Ты смотришь на свои руки и улыбаешься. Почему-то шевелить пальцами кажется невероятно увлекательным...")
 
-		saynn("[say=pc]I feel nice..[/say]")
+		saynn("[say=pc]Чувствую себя чудесно...[/say]")
 
-		saynn("[say=alexrynard]Can you.. walk around a bit?[/say]")
+		saynn("[say=alexrynard]Можешь... немного походить?[/say]")
 
-		addButton("Do it", "Obey his words", "stage4")
-		addButton("RED", "Say it", "stage3_red")
+		addButton("Сделай это", "Повинуйся его словам", "stage4")
+		addButton("RED", "Сказать это", "stage3_red")
 	if(state == "stage3_red"):
-		saynn("You open your mouth more, about to say the word.. but nothing comes out.")
+		saynn("Ты широко открываешь рот, собираясь произнести слово... но звуков нет.")
 
-		saynn("Huh?")
+		saynn("А?")
 
-		saynn("[rainbow freq=0.05 sat=0.9 val=1.0]Colors are so pretty...[/rainbow]")
+		saynn("[rainbow freq=0.05 sat=0.9 val=1.0]Цвета такие красивые...[/rainbow]")
 
-		saynn("No.. yes. Wait.")
+		saynn("Нет... да. Погоди.")
 
-		saynn("You're so confused. And now you're not.")
+		saynn("Ты в полном замешательстве. А теперь — нет.")
 
-		saynn("What is happening? Everything is good!")
+		saynn("Что происходит? Всё так хорошо!")
 
-		saynn("[rainbow freq=0.05 sat=0.9 val=1.0]Just look at the colors...[/rainbow]")
+		saynn("[rainbow freq=0.05 sat=0.9 val=1.0]Просто смотри на цвета...[/rainbow]")
 
-		saynn("It's like your brain is fighting you! No, it is obviously just helping.")
+		saynn("Твой мозг будто борется с тобой! Нет, он явно просто помогает.")
 
-		saynn("It's helping you stay happy. No.. You must.. resist.")
+		saynn("Он помогает тебе оставаться счастливой. Нет... Ты должна... сопротивляться.")
 
-		addButton("Close eyes", "Try to close your eyes", "stage3_red_try_close_eyes")
-		addButton("Give in", "Just let it continue..", "stage4")
+		addButton("Закрой глаза", "Попытаться закрыть глаза", "stage3_red_try_close_eyes")
+		addButton("Сдаться", "Просто позволь этому продолжаться..", "stage4")
 	if(state == "stage3_red_try_close_eyes"):
-		saynn("You close your eyes shut! But.. you still see those [rainbow freq=0.05 sat=0.9 val=0.4]pretty colors.[/rainbow] Oh no, they're very dark though.")
+		saynn("Ты крепко зажмуриваешься! Но.. ты всё равно видишь эти [rainbow freq=0.05 sat=0.9 val=0.4]прелестные цвета.[/rainbow] О нет, они очень тёмные.")
 
-		saynn("Soon, the darkness starts to get replaced with throbbing red.. You keep your eyes shut..")
+		saynn("Вскоре тьму начинает вытеснять пульсирующий красный.. Ты продолжаешь держать глаза закрытыми..")
 
-		saynn("[say=alexrynard]Should I stop?![/say]")
+		saynn("[say=alexrynard]Мне остановиться?![/say]")
 
-		saynn("[color=red]Pain![/color] It hurts not to look.")
+		saynn("[color=red]Боль![/color] Больно не смотреть.")
 
-		saynn("[say=pc]N-no..[/say]")
+		saynn("[say=pc]Н-нет..[/say]")
 
-		saynn("You just wanna be happy.. You don't want red.")
+		saynn("Ты просто хочешь быть счастливой.. Тебе не нужен этот красный.")
 
-		saynn("You open your eyes.. because you really-really want to see those [rainbow freq=0.05 sat=0.9 val=1.0]pretty colors[/rainbow] again..")
+		saynn("Ты открываешь глаза... потому что тебе безумно-безумно хочется снова увидеть эти [rainbow freq=0.05 sat=0.9 val=1.0]прелестные цвета[/rainbow]...")
 
-		addButton("Continue", "Just let it continue..", "stage4")
+		addButton("Продолжить", "Просто позволь этому продолжаться..", "stage4")
 	if(state == "stage4"):
 		playAnimation(StageScene.Duo, "walk", {npc="alexrynard"})
-		saynn("You proceed to step around the room, exactly like Alex ordered you to. The [rainbow freq=0.05 sat=0.9 val=1.0]colors[/rainbow] follow you no matter where you go. But if you stop even for a second.. those colors go away.. can't let that happen.")
+		saynn("Ты продолжаешь ходить по комнате, в точности как приказал Алекс. [rainbow freq=0.05 sat=0.9 val=1.0]Цвета[/rainbow] следуют за тобой, куда бы ты ни пошел. Но стоит тебе замереть хоть на секунду... цвета исчезают... нельзя этого допустить.")
 
-		saynn("Lap after lap, you keep doing the given task while Alex rubs his chin, clearly fascinated by the effect.")
+		saynn("Круг за кругом ты выполняешь заданную задачу, пока Алекс потирает подбородок, явно завороженный произведенным эффектом.")
 
-		saynn("[say=alexrynard]You feel tired yet?[/say]")
+		saynn("[say=alexrynard]Уже чувствуешь усталость?[/say]")
 
-		saynn("[say=pc]No, I feel great.[/say]")
+		saynn("[say=pc]Нет, я чувствую себя отлично.[/say]")
 
-		saynn("[say=alexrynard]Come to me.[/say]")
+		saynn("[say=alexrynard]Иди ко мне.[/say]")
 
-		saynn("That's a great task. You get a strong desire to kneel before him.")
+		saynn("Это отличное задание. У тебя возникает непреодолимое желание опуститься перед ним на колени.")
 
-		addButton("Do it", "Obey his words", "stage5")
-		addButton("RED", "Say it", "stage4_red")
+		addButton("Сделай это", "Повинуйся его словам", "stage5")
+		addButton("RED", "Сказать это", "stage4_red")
 	if(state == "stage4_red"):
-		saynn("No.. you don't wanna kneel..")
+		saynn("Нет... ты не хочешь вставать на колени...")
 
-		saynn("You try to say the [color=red]word[/color].. but you can't. It's too bad of a word.")
+		saynn("Ты пытаешься произнести то самое [color=red]слово[/color]... но не можешь. Это слишком грязное слово.")
 
-		saynn("Colorful lights fade away.. replaced by.. red flashes. Ow.. it hurts. No, it feels great..")
+		saynn("Разноцветные огни гаснут... их сменяют... красные вспышки. Ой... больно. Нет, это чертовски приятно...")
 
-		saynn("You feel like your mind is about to break.. no, you're feeling great. You just want to get a taste of the lights and read more of those kind words..")
+		saynn("Кажется, твой разум вот-вот треснет... нет, тебе просто чертовски хорошо. Тебе просто хочется распробовать этот свет и прочитать побольше этих ласковых слов...")
 
-		saynn("It's so overwhelming.. and yet.. you are the calmest you ever were. You can't win this. No, you already won.. just grab your prize..")
+		saynn("Это так ошеломляет... и всё же... ты спокоен как никогда. Тебе не победить. Нет, ты уже победил... просто забери свой приз...")
 
-		addButton("Do it", "Obey his words", "stage5")
-		addButton("Close eyes", "Try to close your eyes", "stage4_red_try_close_eyes")
+		addButton("Сделай это", "Повинуйся его словам", "stage5")
+		addButton("Закрой глаза", "Попытаться закрыть глаза", "stage4_red_try_close_eyes")
 	if(state == "stage4_red_try_close_eyes"):
-		saynn("You try to close your eyes as the last resort.. but you can't even do that anymore.")
+		saynn("Ты пытаешься закрыть глаза как последний шанс... но даже это тебе уже не под силу.")
 
-		saynn("You're completely screwed! And feel awesome about it!")
+		saynn("Ты в полной заднице! И тебе это чертовски нравится!")
 
-		saynn("You can only blink. But even that ability is stripped from you when you try to do it too fast. Your own brain works against you.. No, it actually doesn't.")
+		saynn("Тебе остается только моргать. Но даже эта способность ускользает от тебя, стоит попытаться делать это слишком быстро. Твой собственный мозг работает против тебя... Нет, на самом деле нет.")
 
-		saynn("How can it? You are the brain. And you are doing exactly what you want to do. How can some colors and words affect your mind? Don't be silly.")
+		saynn("Как он может? Ты и есть мозг. И ты делаешь именно то, что хочешь. Как какие-то цвета и слова могут повлиять на твой разум? Не глупи.")
 
-		saynn("Yeah. It's fun.")
+		saynn("Да. Это весело.")
 
-		saynn("Time to kneel.")
+		saynn("Пора встать на колени.")
 
-		addButton("Do it", "Obey his words", "stage5")
+		addButton("Сделай это", "Повинуйся его словам", "stage5")
 	if(state == "stage5"):
 		playAnimation(StageScene.Duo, "kneel", {npc="alexrynard"})
-		saynn("[say=pc]Of course![/say]")
+		saynn("[say=pc]Конечно![/say]")
 
-		saynn("You nod and swiftly approach Alex.. before getting on your knees before him.")
+		saynn("Ты киваешь и стремительно подходишь к Алексу... прежде чем опуститься перед ним на колени.")
 
-		saynn("[say=pc]I'm here.[/say]")
+		saynn("[say=pc]Я здесь.[/say]")
 
-		saynn("[say=alexrynard]Oh wow. Did the prototype make you do that?[/say]")
+		saynn("[say=alexrynard]Ого. Это прототип заставил тебя так поступить?[/say]")
 
-		saynn("[say=pc]No.[/say]")
+		saynn("[say=pc]Нет.[/say]")
 
-		saynn("[say=alexrynard]I see. Huh. [rainbow freq=0.05 sat=0.9 val=1.0]Good job.[/rainbow][/say]")
+		saynn("[say=alexrynard]Понятно. Хм. [rainbow freq=0.05 sat=0.9 val=1.0]Хорошая работа.[/rainbow][/say]")
 
-		saynn("You smile as the [rainbow freq=0.05 sat=0.9 val=1.0]colors[/rainbow] become brighter.")
+		saynn("Ты улыбаешься, когда [rainbow freq=0.05 sat=0.9 val=1.0]цвета[/rainbow] становятся ярче.")
 
-		saynn("[say=alexrynard]Wait. Are you lying to me though?[/say]")
+		saynn("[say=alexrynard]Погоди. А ты не врешь мне?[/say]")
 
-		saynn("Yes. No. Of course not. But.. wait.. were you?")
+		saynn("Да. Нет. Конечно нет. Но... погоди... а вдруг ты всё-таки врал?")
 
-		saynn("You look up at him, your eyes shine with obedience.")
+		saynn("Ты смотришь на него снизу вверх, и твои глаза сияют послушанием.")
 
-		saynn("[say=pc]Were I allowed to?[/say]")
+		saynn("[say=pc]Если бы мне позволили?[/say]")
 
-		saynn("[say=alexrynard]No.[/say]")
+		saynn("[say=alexrynard]Нет.[/say]")
 
-		saynn("[say=pc]Then.. of course I didn't lie. I am doing this because I want to do this. Sorry if I made you doubt me.[/say]")
+		saynn("[say=pc]Тогда... конечно, я не врал. Я делаю это, потому что сам этого хочу. Прости, если заставил тебя усомниться во мне.[/say]")
 
-		saynn("[say=alexrynard]Interesting. Tell me why you are here.[/say]")
+		saynn("[say=alexrynard]Интересно. Расскажи мне, почему ты здесь.[/say]")
 
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
-		saynn("[say=pc]To help you test this prototype![/say]")
+		saynn("[say=pc]Чтобы помочь тебе протестировать этот прототип![/say]")
 
-		saynn("[say=alexrynard]Uh huh.[/say]")
+		saynn("[say=alexrynard]Угу.[/say]")
 
-		saynn("[say=pc]And obey you and your every word to the best of my ability![/say]")
+		saynn("[say=pc]И повиноваться тебе и каждому твоему слову в меру своих сил![/say]")
 
-		saynn("Alex raises a brow. He has so much power and control over you at this very moment. So many things he could do to you.. And you wouldn't mind anything in this state.. You would have loved all of it.. He just gotta say a word..")
+		saynn("Алекс приподнимает бровь. В этот самый момент он обладает над тобой огромной властью и контролем. Столько всего он мог бы с тобой сделать... И в таком состоянии тебя бы это ничуть не смутило... Тебе бы всё это даже понравилось... Ему нужно лишь произнести одно слово...")
 
-		saynn("[say=alexrynard]What did I create..[/say]")
+		saynn("[say=alexrynard]Что же я создал...[/say]")
 
-		saynn("[say=pc]I don't know. But I truly feel great.[/say]")
+		saynn("[say=pc]Не знаю. Но я правда чувствую себя великолепно.[/say]")
 
-		saynn("[say=alexrynard]We have to stop now.[/say]")
+		saynn("[say=alexrynard]Нам пора остановиться.[/say]")
 
-		saynn("What? But that will end the [rainbow freq=0.05 sat=0.9 val=1.0]colors[/rainbow]!")
+		saynn("Что? Но тогда же исчезнут все эти [rainbow freq=0.05 sat=0.9 val=1.0]цвета[/rainbow]!")
 
-		saynn("[say=pc]Why-y? I will do anything for you..[/say]")
+		saynn("[say=pc]Почему-ы-ы? Я сделаю для тебя всё что угодно...[/say]")
 
-		saynn("But before you can stop him, he quickly powers off the prototype, causing the [fade]lights to disappear..[/fade]")
+		saynn("Но прежде чем ты успеваешь его остановить, он быстро выключает прототип, из-за чего [fade]свет гаснет...[/fade]")
 
-		addButton("Continue", "See what happens next", "in_trance")
+		addButton("Продолжить", "Смотреть, что будет дальше", "in_trance")
 	if(state == "in_trance"):
-		saynn("With no fancy lights or kind words.. you just sit still now.. Nothing matters..")
+		saynn("Никаких ярких огней и ласковых слов... теперь ты просто сидишь неподвижно... Всё не имеет значения...")
 
-		saynn("[say=alexrynard]Um.. Are you with me?[/say]")
+		saynn("[say=alexrynard]Эм.. Ты меня слышишь?[/say]")
 
-		saynn("His words just fly past you. He tries to shake your shoulder.. but again.. there is no reaction from you.")
+		saynn("Его слова пролетают мимо тебя. Он пытается встряхнуть тебя за плечо.. но снова.. никакой реакции.")
 
-		saynn("[say=alexrynard]Oh fuck. Please tell me I didn't fry your brain or something.[/say]")
+		saynn("[say=alexrynard]Ох, блядь. Только не говори мне, что я поджарил тебе мозги или типа того.[/say]")
 
-		saynn("He shakes you a bit more.. and then snaps his fingers before your eyes. And that is what finally makes you snap out of your trance-like state.")
+		saynn("Он трясет тебя сильнее.. а затем щелкает пальцами прямо перед твоими глазами. И именно это наконец вырывает тебя из транса.")
 
-		saynn("[say=pc]Oh.[/say]")
+		saynn("[say=pc]Ох.[/say]")
 
-		saynn("[say=alexrynard]Are you okay?[/say]")
+		saynn("[say=alexrynard]Ты в порядке?[/say]")
 
-		saynn("[say=pc]Yeah.. I'm back.[/say]")
+		saynn("[say=pc]Да.. Я вернулась.[/say]")
 
-		saynn("[say=alexrynard]That's.. a relief. Do you remember what just happened?[/say]")
+		saynn("[say=alexrynard]Это.. облегчение. Ты помнишь, что только что произошло?[/say]")
 
-		saynn("You think you do.. yeah, you definitely saw everything with your own eyes.")
+		saynn("Тебе кажется, что помнишь.. да, ты определенно видела всё своими глазами.")
 
-		saynn("[say=pc]Yes. I almost couldn't control myself. But I remember it feeling.. nice.. too nice. Like nothing bad matters anymore at all.[/say]")
+		saynn("[say=pc]Да. Я почти не могла себя контролировать. Но я помню, что это было.. приятно.. даже слишком приятно. Словно всё плохое больше вообще не имеет значения.[/say]")
 
-		saynn("Alex stays quiet for some time, watching you.. while you are still on your knees before him.")
+		saynn("Алекс какое-то время молчит, наблюдая за тобой... пока ты всё ещё стоишь перед ним на коленях.")
 
-		saynn("[say=alexrynard]I don't know how I feel about it.[/say]")
+		saynn("[say=alexrynard]Даже не знаю, как к этому относиться.[/say]")
 
-		saynn("You can still notice faint signs of the colorful haze in your peripheral vision.")
+		saynn("На периферии зрения всё ещё заметны слабые отблески разноцветной дымки.")
 
-		saynn("[say=pc]Depression is gonna be the last of your problems if you wear it.[/say]")
+		saynn("[say=pc]Депрессия станет твоей последней проблемой, если ты будешь его носить.[/say]")
 
-		saynn("[say=alexrynard]Very funny.[/say]")
+		saynn("[say=alexrynard]Очень смешно.[/say]")
 
-		saynn("[say=pc]It certainly.. has some effect. For a first prototype, it's not bad. You gotta work on it more, fix the program maybe.[/say]")
+		saynn("[say=pc]Эффект определённо.. есть. Для первого прототипа неплохо. Тебе нужно ещё поработать над ним, может, программу подправить.[/say]")
 
-		saynn("Alex scratches the back of his head.")
+		saynn("Алекс чешет затылок.")
 
-		saynn("[say=alexrynard]Well.. I think I gotta talk with the captain about it.[/say]")
+		saynn("[say=alexrynard]Ну.. думаю, мне стоит поговорить об этом с капитаном.[/say]")
 
-		saynn("[say=pc]Can I keep it?[/say]")
+		saynn("[say=pc]Можно мне его оставить?[/say]")
 
-		saynn("[say=alexrynard]It costs a lot, you know.[/say]")
+		saynn("[say=alexrynard]Он стоит кучу денег, знаешь ли.[/say]")
 
-		saynn("[say=pc]I can pay with credits.[/say]")
+		saynn("[say=pc]Я могу расплатиться кредитами.[/say]")
 
-		saynn("Alex shrugs.")
+		saynn("Алекс пожимает плечами.")
 
-		saynn("[say=alexrynard]You might break someone's brain with it.[/say]")
+		saynn("[say=alexrynard]Этой штукой можно и мозги кому-нибудь вскрыть.[/say]")
 
-		saynn("[say=pc]I will be careful. More testing is good, right?[/say]")
+		saynn("[say=pc]Я буду осторожен. Лишние тесты ведь не помешают, верно?[/say]")
 
-		saynn("He sighs while looking at his prototype on your head.")
+		saynn("Он вздыхает, глядя на свой прототип у тебя на голове.")
 
-		saynn("[say=alexrynard]Fine, I guess I could use some extra data about how it works to make a better one. Thank you for the help.[/say]")
+		saynn("[say=alexrynard]Ладно, полагаю, мне не помешают дополнительные данные о том, как он работает, чтобы сделать модель получше. Спасибо за помощь.[/say]")
 
-		saynn("Great. He takes off the visor and puts it away for now.")
+		saynn("Отлично. Он снимает визор и пока откладывает его в сторону.")
 
-		saynn("[say=alexrynard]And.. get up already. I will show you the way out.[/say]")
+		saynn("[say=alexrynard]А теперь... давай уже вставай. Я выведу тебя отсюда.[/say]")
 
-		saynn("Time to go.")
+		saynn("Пора идти.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

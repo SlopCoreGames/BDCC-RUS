@@ -48,7 +48,7 @@ func checkRunPunish() -> bool:
 func punishSkip():
 	playStand()
 	
-	saynn("{npc.name} was about to punish you.. but decided against it at the last moment.")
+	saynn("{npc.name} собиралась тебя наказать... но в последний момент передумала.")
 	talkModularOwnerToPC("SoftSlaveryPunishSkip")
-	saynn("Looks like you are free for now!")
+	saynn("Похоже, пока что ты свободен!")
 	addContinue("endEvent")

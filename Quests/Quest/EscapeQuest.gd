@@ -5,7 +5,7 @@ func _init():
 	id = "EscapeQuest"
 
 func getVisibleName():
-	return "Escape from the prison"
+	return "Побег из тюрьмы"
 
 func getProgress():
 	var result = []

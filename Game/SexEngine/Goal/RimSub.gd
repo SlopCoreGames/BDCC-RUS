@@ -4,7 +4,7 @@ func _init():
 	id = SexGoal.RimSub
 
 func getVisibleName():
-	return "Rim sub"
+	return "Римская субмиссивность"
 
 func isPossible(_sexEngine, _domInfo, _subInfo, _data):
 	if(!_subInfo.getChar().hasReachableAnus() || _domInfo.getChar().isOralBlocked()):

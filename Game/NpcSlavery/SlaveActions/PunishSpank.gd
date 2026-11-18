@@ -13,7 +13,7 @@ func _init():
 	rewardHint = -2
 
 func getVisibleName():
-	return "Spank"
+	return "Отшлепать"
 
 func getVisibleDesc():
 	return "Give your slave a good spank"
@@ -21,7 +21,7 @@ func getVisibleDesc():
 func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var npcSlavery:NpcSlave = getSlave(_slaveID)
 	
-	var text = "Annoyed with your slave, you bring {npc.him} down to all fours and then deliver a series of firm spanks to {npc.his} {npc.thick} butt!\n\n"
+	var text = "Раздраженный своим рабом, вы ставите {npc.him} на четвереньки и наносите серию крепких шлепков по {npc.his} {npc.thick} заднице!\n\n"
 	
 	if(npcSlavery.getSpoiling() > 0.7):
 		text += "{npc.He} gasps and complains audibly while also trying to protect {npc.his} rear with {npc.his} hands.. just to get them slapped too."

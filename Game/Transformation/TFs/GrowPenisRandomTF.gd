@@ -10,7 +10,7 @@ func _init():
 	pointsOnUnlock = 10
 
 func getName() -> String:
-	return "Grows a random penis"
+	return "Выращивает случайный член"
 
 func getPillName() -> String:
 	return "BoneRoll"
@@ -20,7 +20,7 @@ func getUnlockData() -> Dictionary:
 		eliza = "Fascinating! This pill appears to contain a blend of growth factors and hormonal precursors that could stimulate penile tissue transformation. When ingested, it will probably affect your penis in some way.. I think I’ll call it.. 'BoneRoll.' Why not!",
 		tryOptions = [
 			{
-				name = "Make Eliza eat it",
+				name = "Заставить Элизу сожрать это",
 				desc = "Ask if she is brave enough to try her own product. She will probably end up in a milking machine..",
 				sceneID = "ElizaDrugTestRandomCockScene",
 			},
@@ -65,13 +65,13 @@ func getPillOptions() -> Dictionary:
 	
 	return {
 		"specificPartID": {
-			name = "Cock type",
+			name = "Тип члена",
 			desc = "What kind of cock the drug will grow.",
 			value = "",
 			values = dicks,
 		},
 		"targetLen": {
-			name = "Length",
+			name = "Длина",
 			desc = "How long should the new cock be.",
 			value = 12.0,
 			values = lenArray,

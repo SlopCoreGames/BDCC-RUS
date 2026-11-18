@@ -12,15 +12,15 @@ func onStart(_args:Array):
 
 func start():
 	playStand()
-	saynn("You beg your owner to unlock the restraint that {npc.he} locked onto you.")
+	saynn("Вы умоляете своего хозяина разблокировать {npc.he}, который сковал вас.")
 	talkModularOwnerToPC("SoftSlaveryBegUnlockNo") # Cute. But not today.
-	saynn("{npc.He} {npc.isAre} not ready to unlock you yet.. but your begging did have an effect.")
+	saynn("{npc.He} {npc.isAre} еще не готов вас освободить... но ваши мольбы произвели эффект.")
 	addInfluenceObey(0.2)
 	addContinue("endEvent")
 	
 func readyToUnlock():
 	playStand()
-	saynn("You beg your owner to unlock the restraint that {npc.he} locked onto you.")
+	saynn("Вы умоляете своего хозяина разблокировать {npc.he}, который сковал вас.")
 	talkModularOwnerToPC("SoftSlaveryBegUnlockYes") # Alright. It's time to unlock you
 	
 	addContinue("getUnlocked")
@@ -34,7 +34,7 @@ func readyToUnlock_do(_id:String, _args:Array):
 	
 func afterUnlocked():
 	playStand()
-	saynn("{npc.name} uses {npc.his} key to unlock you!")
+	saynn("{npc.name} использует {npc.his}, чтобы освободить вас!")
 	talkModularOwnerToPC("SoftSlaveryBegUnlockDone") # There you go. Enjoy being free, for now.
 	addInfluenceObey(0.2)
 	addContinue("endEvent")

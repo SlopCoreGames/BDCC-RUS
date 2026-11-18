@@ -14,7 +14,7 @@ func _init():
 	buttonPriority = 110
 
 func getVisibleName():
-	return "Specializations"
+	return "Специализации"
 
 func getVisibleDesc():
 	return "Change your slave's main specialization and make them learn new ones!"

@@ -7,7 +7,7 @@ func _init():
 	}
 
 func getVisibleName():
-	return "Strapon sex (Anal)"
+	return "Секс со страпоном (Анальный)"
 
 func getGoals(_sexEngine, _domFetishHolder, _dom, _sub):
 	var possible = []

@@ -7,19 +7,19 @@ func getActionType():
 	return AuctionActionType.Intro
 
 func getName() -> String:
-	return "Normal introduction"
+	return "Обычное представление"
 
 func getButtonDesc() -> String:
 	return "Start the auction while acting normally.\n\nThis action will reveal 3 random preferences of each bidder."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
-	saynn("The curtains open, revealing {presenter.name}, who is standing on a little raised platform.")
+	saynn("Занавес раздвигается, открывая взору {presenter.name}, стоящую на небольшом возвышении.")
 	
 	sayPresenter("Good evening, ladies and gentlemen. Welcome to Blacktail Market! Tonight, I present to you a unique and rare offering.")
 	
-	saynn("The spotlight highlights {slave.name} who is standing on {slave.his} {slave.toes}.")
+	saynn("Луч прожектора выхватывает {slave.name}, стоящую на {slave.his} {slave.toes}.")
 	
-	saynn("The bidders lean forward, curious but composed. You hear their quiet chatter and try to pick out anything useful.")
+	saynn("Участники аукциона подаются вперед — любопытные, но сохраняющие самообладание. Вы слышите их негромкий гул и пытаетесь уловить что-нибудь полезное.")
 	
 	sayPresenter("The starting bet is "+str(_auction.startingBid)+" credits.")
 	

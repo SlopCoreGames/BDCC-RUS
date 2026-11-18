@@ -50,7 +50,7 @@ func getAIScore(_char:BaseCharacter, _auction, _slaveTraits:Dictionary) -> float
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	return {
-		text = "FILL MEEEEE",
+		text = "ЗАПОЛНИ МЕНЯЯЯЯЯЯ",
 		slaveReaction = getSlaveReaction(_char, _auction.getSlaveReactionType()),
 		traits = getTraits(),
 		desire = getPassiveDesireGain(),

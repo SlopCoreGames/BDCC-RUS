@@ -11,7 +11,7 @@ func _init():
 	pointsOnUnlock = 15
 
 func getName() -> String:
-	return "Masculinization"
+	return "Мускулинизация"
 
 func getPillName() -> String:
 	return "TestosteGo"
@@ -53,25 +53,25 @@ func start(_args:Dictionary):
 func getPillOptions() -> Dictionary:
 	return {
 		"addPenis": {
-			name = "Grow penis",
+			name = "Рост пениса",
 			desc = "Should the drug grow a fully-functional penis",
 			value = true,
 			values = [[true, "Yes"], [false, "No"]],
 		},
 		"removeVag": {
-			name = "Remove pussy",
+			name = "Удаление пизды",
 			desc = "Should the drug remove the vagina",
 			value = true,
 			values = [[true, "Yes"], [false, "No"]],
 		},
 		"switchBreasts": {
-			name = "Male breasts",
+			name = "Мужские груди",
 			desc = "Should the drug morph female breasts to male pecs",
 			value = true,
 			values = [[true, "Yes"], [false, "No"]],
 		},
 		"switchHair": {
-			name = "Switch hair",
+			name = "Смена прически",
 			desc = "Should the drug grow male hair (only if it's not male already)",
 			value = true,
 			values = [[true, "Yes"], [false, "No"]],

@@ -4,7 +4,7 @@ func _init():
 	id = RepStat.Whore
 
 func getVisibleName():
-	return "Whore Reputation"
+	return "Репутация шлюхи"
 
 func getMaxLevel() -> int:
 	return 9

@@ -20,7 +20,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "Shake off shorts"
+	return "Сбросить шорты встряхиванием"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "You can't use your hands so you have to shake your whole body to remove your shorts"

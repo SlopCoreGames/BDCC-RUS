@@ -35,54 +35,54 @@ func run(_triggerID, _args):
 	if(locName in ["hall_canteen"]):
 		if(walkiesType == "walkies"):
 			if(npcSlavery.getActivityID() == "Walkies" && npcSlavery.getActivity().petWants == "food"):
-				addButton("Canteen (Pet)", "Feed your puppy!", "start_pet_canteen", [npcID])
+				addButton("Столовая (Питомец)", "Покорми своего щеночка!", "start_pet_canteen", [npcID])
 			else:
-				addDisabledButton("Canteen (Pet)", "Your puppy is not hungry")
+				addDisabledButton("Столовая (Питомец)", "Твой щеночек не голоден")
 	
 	if(locName in ["main_laundry"]):
 		if(theChar.canRepairClothes()):
-			addButtonWithChecks("Repair clothes (Slave)", "Pay 5 credits to repair your slave's clothes", "do_repair_clothes", [theChar], [[ButtonChecks.HasCredits, 5]])
+			addButtonWithChecks("Починить одежду (Рабыня)", "Потратить 5 кредитов, чтобы починить одежду своей рабыни", "do_repair_clothes", [theChar], [[ButtonChecks.HasCredits, 5]])
 		else:
-			addDisabledButton("Repair clothes (Slave)", "Your slave's clothes seem to be alright")
+			addDisabledButton("Починить одежду (Рабыня)", "Одежда твоей рабыни выглядит вполне прилично")
 		
 	if(locName in ["main_bathroom1", "main_bathroom2"]):
 		if(npcSlavery.getLevel() >= 3):
-			addButton("Mirror (Slave)", "Change your slave's haircut", "starthair", [npcID])
+			addButton("Зеркало (Рабыня)", "Изменить прическу рабыни", "starthair", [npcID])
 		else:
-			addDisabledButton("Mirror (Slave)", "Slave level 3+ required to do this")
+			addDisabledButton("Зеркало (Рабыня)", "Требуется уровень рабыни 3+")
 		
 		if(npcSlavery.getActivityID() == "Walkies" && npcSlavery.getActivity().petWants == "pee"):
-			addButton("Urinals (Pet)", "Help your puppy relieve themselves", "start_pee", [npcID])
+			addButton("Писсуары (Питомцы)", "Помочь своему щеночку справить нужду", "start_pee", [npcID])
 
 	if(locName in peeSpots):
 		if(npcSlavery.getActivityID() == "Walkies" && npcSlavery.getActivity().petWants == "pee"):
-			addButton("Bushes (Pet)", "Help your puppy relieve themselves", "start_pee", [npcID])
+			addButton("Кусты (Питомцы)", "Помочь своему щеночку справить нужду", "start_pee", [npcID])
 
 	if(locName in playSpots):
 		if(npcSlavery.getActivityID() == "Walkies" && npcSlavery.getActivity().petWants == "play"):
-			addButton("Play (Pet)", "This looks like a good spot to play with your pet", "start_play", [npcID])
+			addButton("Играть (Питомцы)", "Похоже, это отличное место, чтобы поиграть со своим питомцем", "start_play", [npcID])
 		if(npcSlavery.getActivityID() == "Walkies" && npcSlavery.getActivity().petWants == "train"):
-			addButton("Train (Pet)", "This looks like a good spot to teach your pet some tricks", "start_train", [npcID])
+			addButton("Дрессировка (Питомцы)", "Похоже, это отличное место, чтобы обучить питомца новым трюкам", "start_train", [npcID])
 
 
 	if(locName in ["main_dressing1", "main_dressing2"]):
-		addButton("Shower (Slave)", "Make your slave take a shower", "startshower", [npcID, walkiesType])
+		addButton("Душ (Рабыни)", "Заставить рабыню принять душ", "startshower", [npcID, walkiesType])
 
 	if(locName in ["main_punishment_spot"]):
-		addButton("Stocks (Slave)", "Put your slave into the stocks", "startstocks", [npcID])
+		addButton("Колодки (Рабыня)", "Посадить рабыню в колодки", "startstocks", [npcID])
 
 	if(locName in ["fight_slutwall"]):
-		addButton("Slutwall (Slave)", "Put your slave into the slutwall", "startslutwall", [npcID])
+		addButton("Стена шлюх (Рабыня)", "Загнать рабыню в стену шлюх", "startslutwall", [npcID])
 
 	if(locName in ["medical_nursery"]):
 		if(theChar.isReadyToGiveBirth()):
-			addButton("Give birth (Slave)", "Make your slave give birth", "givebirth", [npcID])
+			addButton("Роды (Рабыня)", "Заставить рабыню рожать", "givebirth", [npcID])
 		else:
-			addDisabledButton("Give birth (Slave)", "Your slave is not pregnant or is not ready to give birth yet")
+			addDisabledButton("Роды (Рабыня)", "Рабыня не беременна или еще не готова к родам")
 	
 	if(locName == "med_lobbymain"):
 		if(theChar.hasEffect(StatusEffect.Wounded) || theChar.hasEffect(StatusEffect.StretchedPainfullyAnus) || theChar.hasEffect(StatusEffect.StretchedPainfullyPussy)):
-			addButton("Heal", "Ask the doctors to heal your slave", "doHeal", [theChar])
+			addButton("Лечить", "Попросить врачей вылечить твою рабыню", "doHeal", [theChar])
 	
 	if(locName == "med_researchlab"):
 		if(GM.main.SCI.hasUpgrade("shower1")):
@@ -90,9 +90,9 @@ func run(_triggerID, _args):
 			var hasCumInside:bool = theChar.hasEffect(StatusEffect.HasCumInsideAnus) || theChar.hasEffect(StatusEffect.HasCumInsideVagina) || theChar.hasEffect(StatusEffect.HasCumInsideMouth)
 			
 			if(hasCumOnBody):
-				addButton("Biolab shower", "Make the slave take the special shower that will collect the fluids", "doBioShower", [theChar])
+				addButton("Душ в биолаборатории", "Заставить рабыню принять особый душ для сбора жидкостей", "doBioShower", [theChar])
 			if(GM.main.SCI.hasUpgrade("shower2") && hasCumInside):
-				addButton("Biolab shower (+inside)", "Make the slave take the special shower that will collect the fluids. Including the fluids inside their holes", "doBioShowerInside", [theChar])
+				addButton("Душ в биолаборатории (+внутри)", "Заставить рабыню принять особый душ для сбора жидкостей. Включая жидкости из её дырочек", "doBioShowerInside", [theChar])
 	
 func getPriority():
 	return 0

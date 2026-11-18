@@ -9,7 +9,7 @@ func _init():
 	buttonPriority = 40
 
 func getVisibleName():
-	return "Reassure"
+	return "Успокоить"
 
 func getVisibleDesc():
 	return "Offer words of comfort and reassurance to your slave"

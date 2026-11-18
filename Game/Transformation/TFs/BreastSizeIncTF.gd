@@ -10,7 +10,7 @@ func _init():
 	pointsOnUnlock = 5
 
 func getName() -> String:
-	return "Increases size of breasts"
+	return "Увеличивает размер груди"
 
 func getPillName() -> String:
 	return "TiTS"
@@ -47,7 +47,7 @@ func start(_args:Dictionary):
 func getPillOptions() -> Dictionary:
 	return {
 		"stages": {
-			name = "Stages",
+			name = "Стадии",
 			desc = "How many times should the breasts be increased.",
 			value = 3,
 			values = [

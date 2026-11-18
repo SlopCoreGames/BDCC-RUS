@@ -19,15 +19,15 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 
 func start():
 	playStand()
-	saynn("{npc.name} approaches you.")
+	saynn("{npc.name} подходит к тебе.")
 	talkModularOwnerToPC("SoftSlaveryTaskProstitutionGive")
-	saynn("Your owner gives you a task.")
+	saynn("Твой хозяин дает тебе задание.")
 	sayTaskInfo()
 	sayOwnerRandomTaskLine()
 	saynn("{npc.He} {npc.verb('nod')}.")
 	talkModularOwnerToPC("SoftSlaveryTaskCheck")
-	saynn("Looks like you only have a few days to complete it..")
-	addButton("Okay", "Agree to the tasks", "endEvent")
+	saynn("Похоже, на выполнение у тебя всего пара дней...")
+	addButton("Окей", "Согласиться на задания", "endEvent")
 
 func start_do(_id:String, _args:Array):
 	if(_id == "resist"):

@@ -8,7 +8,7 @@ func _init():
 	}
 
 func getVisibleName():
-	return "Feetplay (Dom)"
+	return "Игры с ногами (Доминант)"
 
 func getGoals(_sexEngine, _domFetishHolder, _dom, _sub):
 	var possible = [SexGoal.DoFeetplay, SexGoal.Pawjob]

@@ -9,7 +9,7 @@ func _init():
 	}
 
 func getVisibleName():
-	return "Rimming (Giving)"
+	return "Римминг (Дающий)"
 
 func getGoals(_sexEngine, _domFetishHolder, _dom, _sub):
 	var possible = [SexGoal.RimSub]

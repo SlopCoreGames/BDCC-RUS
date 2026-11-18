@@ -408,10 +408,10 @@ func getFreePawnsNear(maxDepth:int, maxDist:float=-1.0, minSocial:float = 0.5) -
 	return result
 
 func talk(_role:int, _text:String):
-	saynn("[say="+convertRoleToAlias(_role)+"]"+_text+"[/say]")
+	saynn("[say=\""+convertRoleToAlias(_role)+"]"+_text+"[/say]")
 
 func talkCharID(_charID:String, _text:String):
-	saynn("[say="+_charID+"]"+_text+"[/say]")
+	saynn("[say=\""+_charID+"]"+_text+"[/say]")
 
 func talkOwner(_text:String):
 	talk(C_OWNER, _text)
@@ -441,7 +441,7 @@ func addDisabledButtonAt(_indx:int, _name:String, _desc:String):
 	getRunner().addDisabledButtonAt(self, _indx, _name, _desc)
 
 func addContinue(_action:String, _args:Array = []):
-	addButton("Continue", "See what happens next..", _action, _args)
+	addButton("Продолжить", "Смотри, что будет дальше...", _action, _args)
 
 func endEvent(_args:Array = []):
 	getRunner().removeEndedEvent(self, _args)

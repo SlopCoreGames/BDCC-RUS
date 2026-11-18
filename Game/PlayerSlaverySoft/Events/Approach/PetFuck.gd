@@ -11,16 +11,16 @@ func _init():
 
 func start():
 	playAnimation(StageScene.Grope, "tease", {npc=getOwnerID()})
-	saynn("{npc.name} approaches you, holding puppy restraints in {npc.his} hands!")
+	saynn("{npc.name} подходит к тебе, сжимая в {npc.his} щенячьи поводки!")
 	talkModularOwnerToPC("SoftSlaveryPetFuck") # I wanna have some fun with my {npc.npcSlave}. Hold this while I secure this bitchsuit on you.
-	saynn("Looks like {npc.he} {npc.verb('want')} to make you wear a bitchsuit!")
+	saynn("Похоже, {npc.he} {npc.verb('want')} заставить тебя надеть костюм сучки!")
 	
-	addButton("Obey", "Allow them to do it", "obey")
-	addButton("Resist!", "You're not gonna let them do it", "resist")
+	addButton("Повиноваться", "Позволить им это", "obey")
+	addButton("Сопротивляться!", "Ты не собираешься позволять им это делать", "resist")
 	if(canSetLimits()):
-		addButton("Yes, but..", "Obey but put limits to what your owner can do to you during sex", "yesbut")
+		addButton("Да, но..", "Повиноваться, но установить границы того, что хозяин может с вами делать во время секса", "yesbut")
 	else:
-		addDisabledButton("Yes, but..", "Your relationship hasn't progressed far enough for you to be able to set limits")
+		addDisabledButton("Да, но..", "Ваши отношения еще недостаточно развиты, чтобы вы могли устанавливать границы")
 
 func start_do(_id:String, _args:Array):
 	if(_id == "obey"):
@@ -35,10 +35,10 @@ func start_do(_id:String, _args:Array):
 func obey():
 	playAnimation(StageScene.PuppyDuo, "stand", {pc=getOwnerID(), npcBodyState={naked=true}})
 	
-	saynn("You submit to your owner, allowing {npc.him} to put puppy gear on you!")
-	saynn("And now, you are completely helpless..")
+	saynn("Ты покорно подчиняешься хозяину, позволяя {npc.him} надеть на тебя щенячью экипировку!")
+	saynn("И теперь ты совершенно беспомощна...")
 	addInfluenceObey(RNG.randf_range(0.05, 0.1))
-	addButton("Continue", "See what happens next", "startSex", [getOwnerID(), "pc", SexType.BitchsuitSex, {SexMod.DisableDynamicJoiners:true,SexMod.SubsStartNaked:true}])
+	addButton("Продолжить", "Смотреть, что будет дальше", "startSex", [getOwnerID(), "pc", SexType.BitchsuitSex, {SexMod.DisableDynamicJoiners:true,SexMod.SubsStartNaked:true}])
 	
 func obey_sexResult(_sexResult:SexEngineResult):
 	sexSatisfaction = _sexResult.getAverageDomSatisfaction()
@@ -46,7 +46,7 @@ func obey_sexResult(_sexResult:SexEngineResult):
 
 func afterSex():
 	playAnimation(StageScene.PuppyDuo, "stand", {pc=getOwnerID(), npcBodyState={naked=true}})
-	saynn("The sex has ended!")
+	saynn("Секс окончен!")
 	if(sexSatisfaction < 0.5):
 		talkModularOwnerToPC("SoftSlaveryFuckResultBad") #"That was awful. Are you trying to make me mad, {npc.npcSlave}? Whatever, I will be back soon."
 	elif(sexSatisfaction < 0.8):
@@ -57,7 +57,7 @@ func afterSex():
 		addInfluenceObey(sexSatisfaction)
 	else:
 		addInfluenceResist(1.0-sexSatisfaction)
-	saynn("Your owner starts taking off the puppy gear from you..")
+	saynn("Твой хозяин начинает снимать с тебя щенячью экипировку...")
 	addContinue("endEvent")
 
 func saveData() -> Dictionary:

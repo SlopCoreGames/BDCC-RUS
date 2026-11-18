@@ -14,13 +14,13 @@ func _init():
 func start():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER)})
 	
-	saynn("Your owner approaches you while holding a marker.")
+	saynn("Твой хозяин подходит к тебе, сжимая в руке маркер.")
 	talkModularOwnerToPC("SoftSlaveryMarkingStart") #I feel like marking my {npc.npcSlave}. So stand still while I do this.
-	saynn("Looks like {npc.he} {npc.isAre} about to leave a body writing on you.")
+	saynn("Похоже, {npc.he} {npc.isAre} собирается оставить на твоём теле надпись.")
 	
-	addButton("Obey", "Let them mark you", "let")
-	addButton("No?", "Say no", "no")
-	addButton("Please no", "Beg for it", "pleaseno")
+	addButton("Повиноваться", "Позволить им пометить тебя", "let")
+	addButton("Нет?", "Сказать «нет»", "no")
+	addButton("Пожалуйста, только не это", "Умолять об этом", "pleaseno")
 
 func start_do(_id:String, _args:Array):
 	if(_id == "let"):
@@ -41,17 +41,17 @@ func afterBodywriting():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER), bodyState={naked=true}})
 	
 	if(markedAmount <= 1):
-		saynn("You obey and let the owner leave a mark on you!")
+		saynn("Ты повинуешься и позволяешь хозяину оставить на тебе метку!")
 	elif(markedAmount == 2):
-		saynn("You let the owner leave a second mark on you!")
+		saynn("Ты позволяешь хозяину оставить на тебе вторую метку!")
 	elif(markedAmount == 3):
-		saynn("You let the owner leave a third mark on you. They make you look quite.. interesting.")
+		saynn("Ты позволяешь хозяину оставить на тебе третью метку. Теперь ты выглядишь довольно... интересно.")
 	elif(markedAmount == 4):
-		saynn("You let the owner leave a fourth mark on you. They make you look quite.. suggestive.")
+		saynn("Вы позволяете владельцу поставить на вас четвертую метку. Теперь вы выглядите весьма... многообещающе.")
 	elif(markedAmount == 5):
-		saynn("You let the owner leave a fifth mark on you. They make you look quite slutty!")
+		saynn("Вы позволяете владельцу поставить на вас пятую метку. Теперь вы выглядите чертовски похотливо!")
 	else:
-		saynn("You let the owner leave a.. another mark on you. They make you look extremely slutty!")
+		saynn("Вы позволяете владельцу поставить на вас еще одну.. метку. Теперь вы выглядите запредельно шлюшливо!")
 	
 	addInfluenceObey(0.1)
 	
@@ -63,12 +63,12 @@ func afterBodywriting():
 	addContinue("setState", ["tryWriting"])
 
 func tryWriting():
-	saynn("After leaving a mark on you.. your owner is still holding the marker.")
+	saynn("Оставив на вас метку.. ваш владелец всё еще сжимает маркер в руке.")
 	talkModularOwnerToPC("SoftSlaveryMarkingAnother") #Another one?
 
-	addButton("Yes", "Let them mark you", "let")
-	addButton("No?", "Say no", "no")
-	addButton("Please no", "Beg for it", "pleaseno")
+	addButton("Да", "Позволить им пометить тебя", "let")
+	addButton("Нет?", "Сказать «нет»", "no")
+	addButton("Пожалуйста, только не это", "Умолять об этом", "pleaseno")
 
 func tryWriting_do(_id:String, _args:Array):
 	if(_id == "let"):
@@ -87,26 +87,26 @@ func tryWriting_do(_id:String, _args:Array):
 
 func fineEnough():
 	if(markedAmount <= 0):
-		saynn("You tell your owner that you don't wanna be marked.")
-		saynn("Suprisingly, your owner nods and just puts the marker away.")
+		saynn("Вы говорите владельцу, что не хотите, чтобы вас помечали.")
+		saynn("К вашему удивлению, владелец кивает и просто убирает маркер.")
 		talkModularOwnerToPC("SoftSlaveryMarkingNoStart") #Whatever, I guess I'm not marking you
 		addInfluenceResist()
 	else:
-		saynn("You tell your owner that this is enough.")
-		saynn("Your owner nods and puts the marker away.")
+		saynn("Вы говорите владельцу, что на сегодня хватит.")
+		saynn("Ваш владелец кивает и убирает маркер.")
 		talkModularOwnerToPC("SoftSlaveryMarkingNo") #Alright. I guess this is enough for now.
 	addContinueCheckExtra()
 
 func fightOrMark():
 	if(markedAmount <= 0):
-		saynn("You tell your owner that you don't wanna be marked.")
+		saynn("Вы говорите владельцу, что не хотите, чтобы вас помечали.")
 	else:
-		saynn("You tell your owner that this is enough.")
-	saynn("But {npc.name} doesn't back down.")
+		saynn("Вы говорите владельцу, что на сегодня хватит.")
+	saynn("Но {npc.name} не отступает.")
 	talkModularOwnerToPC("SoftSlaveryMarkingNoFail")
 
-	addButton("Fine", "Let them mark you", "let")
-	addButton("Resist", "Resist it", "resist")
+	addButton("Ладно", "Позволить им пометить тебя", "let")
+	addButton("Сопротивляться", "Сопротивляться", "resist")
 
 func fightOrMark_do(_id:String, _args:Array):
 	if(_id == "let"):
@@ -120,10 +120,10 @@ func pleaseFineEnough():
 		talkPC("Please, no.")
 	else:
 		talkPC("Please, that's enough.")
-	saynn("You beg your owner to stop.")
-	saynn("{npc.name} hears that.. and actually stops.")
+	saynn("Ты умоляешь хозяина остановиться.")
+	saynn("{npc.name} слышит это... и действительно останавливается.")
 	talkModularOwnerToPC("SoftSlaveryMarkingBegYes") #"You are being so cute, begging me. How can I say no?"
-	saynn("{npc.He} {npc.verb('put')} the marker away.")
+	saynn("{npc.He} {npc.verb('put')} маркер подальше.")
 	talkModularOwnerToPC("SoftSlaveryMarkingBegYes2") #That's enough then
 	addContinueCheckExtra()
 
@@ -132,13 +132,13 @@ func beggingStart():
 		talkPC("Please, no.")
 	else:
 		talkPC("Please, that's enough.")
-	saynn("You beg your owner to stop.")
-	saynn("But {npc.name} is still holding the marker.")
+	saynn("Ты умоляешь хозяина остановиться.")
+	saynn("Но {npc.name} всё ещё сжимает маркер.")
 	talkModularOwnerToPC("SoftSlaveryMarkingBegNo") #If you're gonna beg, do it on your knees
-	saynn("You tilt your head a bit.")
+	saynn("Ты слегка наклоняешь голову.")
 	talkModularOwnerToPC("SoftSlaveryMarkingBegNo2") #Kneel, now
-	addButton("Kneel", "Do as your owner says", "kneel")
-	addButton("Resist", "You won't do that!", "resist")
+	addButton("Встать на колени", "Делать, как велит хозяин", "kneel")
+	addButton("Сопротивляться", "Ты не посмеешь!", "resist")
 
 func beggingStart_do(_id:String, _args:Array):
 	if(_id == "kneel"):
@@ -148,16 +148,16 @@ func beggingStart_do(_id:String, _args:Array):
 
 func begGiveCredits():
 	playAnimation(StageScene.Duo, "kneel", {npc=getOwnerID()})
-	saynn("You do as ordered, kneeling before {npc.name}. {npc.His} drilling gaze makes you lower yours.")
+	saynn("Ты беспрекословно подчиняешься приказу, преклоняя колени перед {npc.name}. Под сверлящим взглядом {npc.His} ты невольно опускаешь глаза.")
 	addInfluenceObey(0.5)
 	talkModularOwnerToPC("SoftSlaveryMarkingBegCredits")
-	saynn("The marker is hovering close to your skin.")
+	saynn("Маркер завис совсем близко к твоей коже.")
 	
 	if(GM.pc.getCredits() >= 5):
-		addButton("Pay", "Hand them the credits", "pay")
+		addButton("Заплатить", "Передать им кредиты", "pay")
 	else:
-		addDisabledButton("Pay", "You don't have enough..")
-	addButton("Refuse", "Refuse to do it", "getmarked")
+		addDisabledButton("Заплатить", "У тебя недостаточно средств...")
+	addButton("Отказаться", "Отказаться это делать", "getmarked")
 
 func begGiveCredits_do(_id:String, _args:Array):
 	if(_id == "pay"):
@@ -169,32 +169,32 @@ func begGiveCredits_do(_id:String, _args:Array):
 		setState("begGiveCreditsMarked")
 
 func begGiveCreditsPaid():
-	saynn("You hand your owner a credits chip.")
+	saynn("Ты протягиваешь своему хозяину кредитный чип.")
 	talkModularOwnerToPC("SoftSlaveryMarkingBegCreditsGive") #Thanks. These are more useful to me anyway.
 	addInfluenceObey(0.5)
-	saynn("Satisfied with the credits, your owner puts the marker away.")
+	saynn("Довольный кредитами, твой хозяин убирает маркер.")
 	talkModularOwnerToPC("SoftSlaveryMarkingBegCreditsGive2") #I guess thats it then.
 	addContinueCheckExtra()
 
 func begGiveCreditsMarked():
 	playAnimation(StageScene.Duo, "kneel", {npc=getOwnerID(), bodyState={naked=true}})
-	saynn("You refuse to give your credits.")
+	saynn("Ты отказываешься отдавать свои кредиты.")
 	addInfluenceResist(0.5)
-	saynn("Seeing that, {npc.name} starts leaving many writings on your skin!")
+	saynn("Увидев это, {npc.name} начинает оставлять на твоей коже множество надписей!")
 	talkModularOwnerToPC("SoftSlaveryMarkingBegNoMarked") #That's what you get. Enjoy the marks
-	saynn("Only when getting their share of fun is when your owner decides to stop.")
+	saynn("Твой хозяин решает остановиться лишь тогда, когда получает свою порцию удовольствия.")
 	addContinue("endEvent")
 
 
 func begKissFoot():
 	playAnimation(StageScene.Duo, "kneel", {npc=getOwnerID()})
-	saynn("You do as ordered, kneeling before {npc.name}. {npc.His} drilling gaze makes you lower yours.")
+	saynn("Ты беспрекословно подчиняешься приказу, преклоняя колени перед {npc.name}. Под сверлящим взглядом {npc.His} ты невольно опускаешь глаза.")
 	addInfluenceObey(0.5)
 	talkModularOwnerToPC("SoftSlaveryMarkingBegFoot")
-	saynn("The marker is hovering close to your skin.")
+	saynn("Маркер завис совсем близко к твоей коже.")
 	
-	addButton("Kiss", "Kiss their foot", "setState", ["begKissFootKiss"])
-	addButton("Refuse", "Refuse to do it", "getmarked")
+	addButton("Поцеловать", "Поцеловать ногу", "setState", ["begKissFootKiss"])
+	addButton("Отказаться", "Отказаться это делать", "getmarked")
 
 func begKissFoot_do(_id:String, _args:Array):
 	if(_id == "getmarked"):
@@ -203,33 +203,33 @@ func begKissFoot_do(_id:String, _args:Array):
 		setState("begKissFootMarked")
 
 func begKissFootKiss():
-	saynn("You lean lower and kiss your owner's {npc.foot}, exactly as ordered.")
-	saynn("{npc.name} sees that and smiles.")
+	saynn("Ты наклоняешься ниже и целуешь {npc.foot}, в точности как было приказано.")
+	saynn("{npc.name} замечает это и улыбается.")
 	talkModularOwnerToPC("SoftSlaveryMarkingBegFootKiss")
 	addInfluenceObey(0.5)
-	saynn("As you finish worshipping {npc.his} {npc.feet}, {npc.he} finally puts the marker away.")
+	saynn("Когда ты заканчиваешь поклоняться {npc.feet} {npc.his}, {npc.he} наконец убирает маркер.")
 	talkModularOwnerToPC("SoftSlaveryMarkingBegFootKiss2")
 	addContinueCheckExtra()
 
 func begKissFootMarked():
 	playAnimation(StageScene.Duo, "kneel", {npc=getOwnerID(), bodyState={naked=true}})
-	saynn("You refuse to get anywhere close {npc.name}'s {npc.feet}.")
+	saynn("Ты отказываешься приближаться к {npc.feet} {npc.name}.")
 	addInfluenceResist(0.5)
-	saynn("Seeing that, {npc.name} starts leaving many writings on your skin!")
+	saynn("Увидев это, {npc.name} начинает оставлять на твоей коже множество надписей!")
 	talkModularOwnerToPC("SoftSlaveryMarkingBegNoMarked") #That's what you get. Enjoy the marks
-	saynn("Only when getting their share of fun is when your owner decides to stop.")
+	saynn("Твой хозяин решает остановиться лишь тогда, когда получает свою порцию удовольствия.")
 	addContinue("endEvent")
 	
 
 func begHumiliateSelf():
 	playAnimation(StageScene.Duo, "kneel", {npc=getOwnerID()})
-	saynn("You do as ordered, kneeling before {npc.name}. {npc.His} drilling gaze makes you lower yours.")
+	saynn("Ты беспрекословно подчиняешься приказу, преклоняя колени перед {npc.name}. Под сверлящим взглядом {npc.His} ты невольно опускаешь глаза.")
 	addInfluenceObey(0.5)
 	talkModularOwnerToPC("SoftSlaveryMarkingBegHumiliation")
-	saynn("The marker is hovering close to your skin.")
+	saynn("Маркер завис совсем близко к твоей коже.")
 	
-	addButton("Admit", "Say it", "admit")
-	addButton("Stay quiet", "Refuse to say it", "getmarked")
+	addButton("Признать", "Сказать это", "admit")
+	addButton("Молчать", "Отказаться говорить", "getmarked")
 
 func begHumiliateSelf_do(_id:String, _args:Array):
 	if(_id == "admit"):
@@ -240,24 +240,24 @@ func begHumiliateSelf_do(_id:String, _args:Array):
 		setState("begHumiliateSelfMarked")
 
 func begHumiliateSelfAdmit():
-	saynn("You speak.")
+	saynn("Ты говоришь.")
 	talkPC("I'm your {npc.npcSlave}.")
 	talkModularOwnerToPC("SoftSlaveryMarkingBegHumiliation2")
-	saynn("The tip of a marker starts leavings its trail on your skin.")
+	saynn("Кончик маркера начинает оставлять след на твоей коже.")
 	talkPC("I'm your {npc.npcSlave}! Nothing but your property!")
 	talkModularOwnerToPC("SoftSlaveryMarkingBegHumiliation3")
 	addInfluenceObey(0.5)
-	saynn("{npc.name} finally puts the marker away.")
+	saynn("{npc.name} наконец убирает маркер.")
 	talkModularOwnerToPC("SoftSlaveryMarkingBegHumiliation4")
 	addContinueCheckExtra()
 
 func begHumiliateSelfMarked():
 	playAnimation(StageScene.Duo, "kneel", {npc=getOwnerID(), bodyState={naked=true}})
-	saynn("You refuse to admit anything.")
+	saynn("Ты отказываешься во всём признаваться.")
 	addInfluenceResist(0.5)
-	saynn("Seeing your disobedience, {npc.name} starts leaving many writings on your skin!")
+	saynn("Видя твоё неповиновение, {npc.name} начинает исписывать твою кожу множеством надписей!")
 	talkModularOwnerToPC("SoftSlaveryMarkingBegNoMarked") #That's what you get. Enjoy the marks
-	saynn("Only when getting their share of fun is when your owner decides to stop.")
+	saynn("Твой хозяин решает остановиться лишь тогда, когда получает свою порцию удовольствия.")
 	addContinue("endEvent")
 	
 func incMarked():
@@ -286,9 +286,9 @@ func addContinueCheckExtra():
 
 func notDoneYetPerm():
 	talkModularOwnerToPC("SoftSlaveryMarkingNotDone") #"Actually.. you know what.. I'm not done with you just yet."
-	saynn("Your owner pulls out a leash..")
-	addButton("Obey", "Let your owner do anything with you..", "go")
-	addButton("Resist", "That's enough!", "resist")
+	saynn("Твой хозяин достаёт поводок...")
+	addButton("Повиноваться", "Позволь своему хозяину делать с тобой всё, что угодно...", "go")
+	addButton("Сопротивляться", "Довольно!", "resist")
 
 func notDoneYetPerm_do(_id:String, _args:Array):
 	if(_id == "go"):
@@ -302,9 +302,9 @@ func notDoneYetPerm_eventResult(_event, _tag:String, _args:Array):
 func aboutToPermWriting():
 	playAnimation(StageScene.StocksSexOral, "tease", {npc=getRoleID(C_OWNER), bodyState={naked=true}})
 
-	saynn("{npc.name} brings you to the punishment platform where {npc.he} {npc.verb('lock')} you into the stocks!")
+	saynn("{npc.name} тащит тебя на платформу для наказаний, где {npc.he} {npc.verb('lock')} тебя в колодки!")
 	talkModularOwnerToPC("SoftSlaveryMarkingNotDoneStocks") #"This is just so you don't run away now."
-	saynn("After saying that, {npc.he} {npc.verb('pull')} out a [b]permanent[/b] marker!")
+	saynn("Сказав это, {npc.he} {npc.verb('pull')} достает [b]перманентный[/b] маркер!")
 	
 	addContinue("getMarked")
 
@@ -314,17 +314,17 @@ func aboutToPermWriting_do(_id:String, _args:Array):
 
 func afterGetPermMarked():
 	playAnimation(StageScene.StocksSexOral, "tease", {npc=getRoleID(C_OWNER), bodyState={naked=true}})
-	saynn("Your owner scribbles something on you with a permanent marker!")
+	saynn("Твой хозяин что-то черкает на тебе перманентным маркером!")
 	talkModularOwnerToPC("SoftSlaveryMarkingNotDoneStocks2") #Perfect. This is art.
 	addInfluenceObey(0.3)
-	saynn("After displaying you for some time, your owner decides to finally unlock you and let you go.")
+	saynn("Показав тебя напоказ какое-то время, твой хозяин наконец решает освободить тебя и отпустить.")
 	addContinue("endEvent")
 
 func notDoneYetCum():
 	talkModularOwnerToPC("SoftSlaveryMarkingNotDone") #"Actually.. you know what.. I'm not done with you just yet."
-	saynn("Your owner pulls out a leash..")
-	addButton("Obey", "Let your owner do anything with you..", "go")
-	addButton("Resist", "That's enough!", "resist")
+	saynn("Твой хозяин достаёт поводок...")
+	addButton("Повиноваться", "Позволь своему хозяину делать с тобой всё, что угодно...", "go")
+	addButton("Сопротивляться", "Довольно!", "resist")
 
 func notDoneYetCum_do(_id:String, _args:Array):
 	if(_id == "go"):
@@ -339,9 +339,9 @@ func cumMarkUrinal():
 	playAnimation(StageScene.UrinalPeeing, "idle", {npc=getOwnerID(), bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 	var theOwner := getOwner()
 	if(theOwner.hasReachablePenis()):
-		saynn("Your owner cuffs you up to a urinal and pulls {npc.his} {npc.penis} out, already gently stroking it!")
+		saynn("Твой хозяин приковывает тебя к писсуару и вытаскивает {npc.his} {npc.penis}, уже нежно поглаживая его!")
 	elif(theOwner.hasVagina()):
-		saynn("Your owner cuffs you up to a urinal and exposes {npc.his} pussy, already gently rubbing it!")
+		saynn("Твой хозяин приковывает тебя к писсуару и выставляет напоказ {npc.his} киску, уже нежно потирая её!")
 	talkModularOwnerToPC("SoftSlaveryMarkingNotDoneUrinal")
 	addContinue("getMarked")
 
@@ -359,19 +359,19 @@ func cumMarkUrinalMarked():
 	if(theOwner.hasReachablePenis()):
 		playAnimation(StageScene.UrinalPeeing, "stroke", {npc=getOwnerID(), npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 	
-		saynn("And so, after some stroking, your owner marks you with {npc.his} {npc.cum}! {npc.His} {npc.penis} is throbbing while shooting sticky strings all over your face!")
+		saynn("И вот, после нежных поглаживаний, твой хозяин помечает тебя {npc.his} {npc.cum}! {npc.His} {npc.penis} пульсирует, выстреливая липкими струями прямо тебе в лицо!")
 	else:
 		playAnimation(StageScene.UrinalPeeing, "peefemale", {npc=getOwnerID(), npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		
 		if(theOwner.hasVagina()):
-			saynn("And so, after some pussy rubbing, your owner lets out a moan as {npc.his} {npc.pussyStretch} {pussy} squirts all over your face and body, covering you with a layer of {npc.his} juices!")
+			saynn("И вот, после того как твою киску хорошенько потерли, твой хозяин стонет, когда {npc.his} {npc.pussyStretch} {pussy} заливает всё твоё лицо и тело, покрывая тебя слоем {npc.his} соков!")
 		else:
-			saynn("And so, after some time, your owner marks you by cumming all over your face!")
+			saynn("И вот, спустя некоторое время, твой хозяин помечает тебя, кончая тебе прямо на лицо!")
 		
 	talkModularOwnerToPC("SoftSlaveryMarkingNotDoneUrinal2") #"Mmhh.. Good {npc.npcSlave}."
 	addInfluenceObey(0.3)
 	
-	saynn("After some time, your owner finally uncuffs you from the urinal and then lets you go.")
+	saynn("Спустя какое-то время твой хозяин наконец снимает с тебя наручники у писсуара и отпускает тебя.")
 	addContinue("endEvent")
 	
 func saveData() -> Dictionary:

@@ -5,7 +5,7 @@ var quests: Dictionary = {}
 
 func _ready():
 	GM.QS = self
-	name = "QuestSystem"
+	name = "Система квестов"
 	
 	registerQuests()
 

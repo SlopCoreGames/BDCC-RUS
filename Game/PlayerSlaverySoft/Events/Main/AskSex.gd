@@ -12,15 +12,15 @@ func onStart(_args:Array):
 
 func start():
 	playAnimation(StageScene.Grope, "tease", {npc=getOwnerID()})
-	saynn("You ask {npc.name} if {npc.he} can fuck you!")
+	saynn("Ты спрашиваешь {npc.name}, может ли {npc.he} трахнуть тебя!")
 	talkModularOwnerToPC("SoftSlaveryAskSex") #Sure. Get on your knees first.
-	saynn("Looks like you will need to beg a bit.")
+	saynn("Похоже, тебе придется немного поползать на коленях.")
 	
-	addButton("Obey", "Allow them to do it", "obey")
+	addButton("Повиноваться", "Позволить им это", "obey")
 	if(canSetLimits()):
-		addButton("Obey, but..", "Obey but put limits to what your owner can do to you during sex", "yesbut")
+		addButton("Повиноваться, но..", "Повиноваться, но установить границы того, что хозяин может с вами делать во время секса", "yesbut")
 	else:
-		addDisabledButton("Obey, but..", "Your relationship hasn't progressed far enough for you to be able to set limits")
+		addDisabledButton("Повиноваться, но..", "Ваши отношения еще недостаточно развиты, чтобы вы могли устанавливать границы")
 
 func start_do(_id:String, _args:Array):
 	if(_id == "obey"):
@@ -31,9 +31,9 @@ func start_do(_id:String, _args:Array):
 	
 func obey():
 	playAnimation(StageScene.Duo, "kneel", {npc=getRoleID(C_OWNER)})
-	saynn("You submit to your owner!")
+	saynn("Вы подчиняетесь своему хозяину!")
 	addInfluenceObey(RNG.randf_range(0.05, 0.1))
-	addButton("Continue", "See what happens next", "startSex", [getRoleID(C_OWNER), "pc", SexType.DefaultSex, {SexMod.DisableDynamicJoiners:true}])
+	addButton("Продолжить", "Смотреть, что будет дальше", "startSex", [getRoleID(C_OWNER), "pc", SexType.DefaultSex, {SexMod.DisableDynamicJoiners:true}])
 	
 func obey_sexResult(_sexResult:SexEngineResult):
 	sexSatisfaction = _sexResult.getAverageDomSatisfaction()
@@ -41,7 +41,7 @@ func obey_sexResult(_sexResult:SexEngineResult):
 
 func afterSex():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER)})
-	saynn("The sex has ended!")
+	saynn("Секс окончен!")
 	if(sexSatisfaction < 0.5):
 		talkModularOwnerToPC("SoftSlaveryFuckResultBad") #"That was awful. Are you trying to make me mad, {npc.npcSlave}? Whatever, I will be back soon."
 	elif(sexSatisfaction < 0.8):

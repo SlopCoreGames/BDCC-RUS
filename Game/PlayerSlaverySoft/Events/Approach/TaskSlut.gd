@@ -26,16 +26,16 @@ func genTasks():
 
 func start():
 	playStand()
-	saynn("{npc.name} approaches you.")
+	saynn("{npc.name} подходит к тебе.")
 	talkModularOwnerToPC("SoftSlaveryTaskSlutGive")
-	saynn("{npc.He} {npc.verb('start')} listing things that {npc.he} {npc.verb('want')} you to do.")
+	saynn("{npc.He} {npc.verb('start')} список дел, которые {npc.he} {npc.verb('want')} заставляет тебя выполнять.")
 	sayTaskInfo()
 	sayOwnerRandomTaskLine()
-	saynn("Your owner offers you a smile..")
+	saynn("Твой хозяин/хозяйка одаривает тебя улыбкой...")
 	talkModularOwnerToPC("SoftSlaveryTaskCheck")
-	saynn("Looks like you only have a few days to complete these..")
-	addButton("Okay", "Agree to the tasks", "endEvent")
-	addButton("Different?", "Ask the owner to give you different tasks", "askDifferent")
+	saynn("Похоже, на выполнение этих заданий у тебя всего пара дней...")
+	addButton("Окей", "Согласиться на задания", "endEvent")
+	addButton("Что-то другое?", "Попросить хозяина дать тебе другие задания", "askDifferent")
 
 func start_do(_id:String, _args:Array):
 	if(_id == "askDifferent"):
@@ -43,11 +43,11 @@ func start_do(_id:String, _args:Array):
 		setState("askedDifferent")
 
 func askedDifferent():
-	saynn("You ask your owner if they can give you different tasks.")
+	saynn("Ты спрашиваешь хозяина/хозяйку, может ли он/она давать тебе другие задания.")
 	sayTaskInfo()
 	sayOwnerRandomTaskLine()
-	addButton("Okay", "Agree to the tasks", "endEvent")
-	addButton("Different?", "Ask the owner to give you different tasks", "askDifferent")
+	addButton("Окей", "Согласиться на задания", "endEvent")
+	addButton("Что-то другое?", "Попросить хозяина дать тебе другие задания", "askDifferent")
 
 func askedDifferent_do(_id:String, _args:Array):
 	if(_id == "askDifferent"):

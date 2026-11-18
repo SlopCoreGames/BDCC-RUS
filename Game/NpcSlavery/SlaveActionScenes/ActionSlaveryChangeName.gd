@@ -22,52 +22,52 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc=npcID, npcBodyState={leashedBy="pc"}})
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		
-		saynn("Your slave's current name is {npc.name}.")
+		saynn("Текущее имя твоего раба — {npc.name}.")
 		
 		if(npc.getFlag("OriginalName") != null && npc.getFlag("OriginalName") != npc.getName()):
-			saynn("You recall that {npc.his} original name was "+str(npc.getFlag("OriginalName", "Bob"))+".")
+			saynn("Ты вспоминаешь, что {npc.his} оригинальное имя было"+str(npc.getFlag("OriginalName", "Bob"))+".")
 		
 		if(npcSlavery.isMindBroken()):
 			saynn("[say=npc]..kh..[/say]")
 		else:
-			saynn("[say=npc]I should say something?[/say]")
+			saynn("[say=npc]Мне что, сказать что-то?[/say]")
 		
-		saynn("What do you want to change.")
+		saynn("Что именно ты хочешь изменить?")
 		
-		addButton("Name", "Pick a new name for your slave", "pick_name")
-		addButton("Short description", "Pick a new short description for your slave", "pick_desc")
-		addButton("Chat color", "Change your slave's chat color", "pick_chatcolor")
-		addButton("Back", "Go back", "endthescene")
+		addButton("Имя", "Выбери новое имя для своего раба", "pick_name")
+		addButton("Краткое описание", "Выберите новое краткое описание для своего раба", "pick_desc")
+		addButton("Цвет чата", "Измените цвет чата вашего раба", "pick_chatcolor")
+		addButton("Назад", "Назад", "endthescene")
 	
 	if(state == "pick_chatcolor"):
 		var colorPicker = colorPickerScene.instance()
 		GM.ui.addFullScreenCustomControl("colorpicker", colorPicker)
 		colorPicker.setCurrentColor(npc.getChatColor())
 			
-		addButton("Confirm", "Change the name", "do_pick_color")
-		addButton("Reset to default", "Reset the slave's chat color", "do_reset_chatcolor")
-		addButton("Cancel", "You changed your mind", "")
+		addButton("Подтвердить", "Изменить имя", "do_pick_color")
+		addButton("Сбросить на стандартное", "Сбросить цвет чата рабыни", "do_reset_chatcolor")
+		addButton("Отмена", "Вы передумали", "")
 	
 	if(state == "pick_name"):
-		say("Pick a new name for your slave:")
+		say("Выберите новое имя для вашей рабыни:")
 		
 		var textBox:LineEdit = addTextbox("npc_name")
 		textBox.text = npc.getName()
 		var _ok = textBox.connect("text_entered", self, "onNameTextBoxEnterPressed")
 		
-		addButton("Confirm", "Change the name", "do_pick_name")
-		addButton("Cancel", "You changed your mind", "")
+		addButton("Подтвердить", "Изменить имя", "do_pick_name")
+		addButton("Отмена", "Вы передумали", "")
 		addButtonAt(4, "Random?", "Help choose a random name", "do_random_name")
 	
 	if(state == "pick_desc"):
-		saynn("Pick a new description for your slave")
+		saynn("Выберите новое описание для вашей рабыни")
 		
 		var textBox = addBigTextbox("npc_desc")
 		textBox.text = npc.getSmallDescription()
 		#var _ok = textBox.connect("text_entered", self, "onNameTextBoxEnterPressed")
 		
-		addButton("Confirm", "Change the description", "do_pick_desc")
-		addButton("Cancel", "You changed your mind", "")
+		addButton("Подтвердить", "Изменить описание", "do_pick_desc")
+		addButton("Отмена", "Вы передумали", "")
 
 func onNameTextBoxEnterPressed(_new_text:String):
 	GM.main.pickOption("do_pick_name", [])

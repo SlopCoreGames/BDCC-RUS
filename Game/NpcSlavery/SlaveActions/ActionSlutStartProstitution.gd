@@ -17,7 +17,7 @@ func _init():
 	buttonPriority = 50
 
 func getVisibleName():
-	return "Prostitution"
+	return "Проституция"
 
 func getVisibleDesc():
 	return "Tell your slut to start whoring themself out"

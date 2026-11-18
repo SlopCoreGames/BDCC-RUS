@@ -16,9 +16,9 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 func start():
 	playAnimation(StageScene.Duo, "stand", {npc=getOwnerID(), bodyState={leashedBy=getOwnerID()}})
 	sayPretext()
-	saynn("Your owner forcefully clicks a leash to your collar and starts yanking on it.")
+	saynn("Твой хозяин с силой защелкивает поводок на твоем ошейнике и начинает его дергать.")
 	talk(C_OWNER, "You are going with me, {npc.npcSlave}.")
-	saynn("{npc.He} sounds quite pissed off..")
+	saynn("{npc.He} звучит довольно разъяренно..")
 	
 	addContinue("goToEliza")
 
@@ -31,19 +31,19 @@ func start_do(_id:String, _args:Array):
 func nearEliza():
 	playAnimation(StageScene.Duo, "stand", {pc=getOwnerID(), npc="eliza"})
 	
-	saynn("Soon, you arrive.. to the medical block. {npc.name} approaches the counter.. and get the attention of a feline that is sitting behind it.")
+	saynn("Вскоре вы прибываете.. в медицинский блок. {npc.name} подходит к стойке.. и привлекает внимание кошки, сидящей по ту сторону.")
 	talk(C_EXTRA1, "Dr. Quinn here, how can I help?")
 	talk(C_OWNER, "I think I found a perfect test subject for your studies.")
-	saynn("The feline raises her brow and looks over the shoulder of your owner.")
+	saynn("Кошка приподнимает бровь и заглядывает через плечо твоего хозяина.")
 	talk(C_EXTRA1, "Did you? That sounds great.")
 	talk(C_OWNER, "Yeah, {pc.he} {pc.isAre} a bit bratty. I'm kinda sick of {pc.him} to be honest. Maybe you will be able to make better use of {pc.him}.")
-	saynn("The feline doctor smiles and gets up.")
+	saynn("Кошка-врач улыбается и встает.")
 	talk(C_EXTRA1, "It's a good thing that science doesn't care about brattiness~. And yes, we could always use more test subjects.")
-	saynn("She steps from behind the counter and approaches you.")
+	saynn("Она выходит из-за стойки и подходит к тебе.")
 	talk(C_OWNER, "Here is the leash. You might have to give it a hard pull occasionally. Cuffs will help too.")
 	talk(C_EXTRA1, "Don't worry, we have just the right tools to make sure our science projects go smooth~.")
-	saynn("The feline takes the leash.. and invites you to follow.")
-	saynn("Your owner.. ex-owner.. turns around and just heads for the elevator.")
+	saynn("Кошка берет поводок.. и приглашает тебя следовать за ней.")
+	saynn("Твой хозяин.. бывший хозяин.. разворачивается и просто направляется к лифту.")
 	
 	addContinue("setState", ["elizaTalk"])
 
@@ -51,11 +51,11 @@ func elizaTalk():
 	playStand(true, C_EXTRA1, C_PC)
 	setLocation("medical_near_pccell")
 	
-	saynn("The feline doctor brings you somewhere..")
+	saynn("Кошка-врач ведет тебя куда-то..")
 	talk(C_EXTRA1, "Wonder what you did to earn such a punishment.")
-	saynn("Suddenly, you feel a prick on your neck.. The girl has injected you with something.")
+	saynn("Внезапно ты чувствуешь укол в шею.. Девушка что-то тебе вколола.")
 	talk(C_EXTRA1, "Doesn't matter much~. I will fix you and your bratty behaviour.")
-	saynn("And soon.. the cold surface of the floor meets with your sleepy face..")
+	saynn("И скоро.. холодная поверхность пола встретится с твоим сонным лицом..")
 	addContinue("startTheThing")
 
 func elizaTalk_do(_id:String, _args:Array):

@@ -18,7 +18,7 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 func start():
 	playAnimation(StageScene.Duo, "stand", {pc=getOwnerID(), npc=getRoleID(C_EXTRA1)})
 	sayPretext()
-	saynn("A guard stops you and your owner.")
+	saynn("Охранник останавливает тебя и твоего хозяина.")
 	talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryParadeGuard")
 	
 	if(getRolePawn(C_OWNER).isStaff() && RNG.chance(50)):
@@ -30,7 +30,7 @@ func start():
 	
 	talkModularOwnerToPC("SoftSlaveryParadeGuardProblem")
 	talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryParadeGuardProblem2")
-	saynn("Looks like they're about to fight..")
+	saynn("Похоже, они сейчас вцепятся друг другу в глотки...")
 	
 	addContinue("fight")
 
@@ -48,7 +48,7 @@ func start_eventResult(_event, _tag:String, _args:Array):
 func ownerWon():
 	playAnimation(StageScene.Duo, "stand", {npc=getOwnerID(), bodyState={leashedBy=getOwnerID()}})
 	
-	saynn("Your owner clicks the leash to your collar again.")
+	saynn("Ваш хозяин снова пристегивает поводок к вашему ошейнику.")
 	talkModularOwnerToPC("SoftSlaveryParadeGuardWon")
 	addInfluenceObey(0.2)
 	addContinue("endEvent")
@@ -56,7 +56,7 @@ func ownerWon():
 func ownerLost():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_EXTRA1)})
 	
-	saynn("The guard frees you.")
+	saynn("Охранник освобождает тебя.")
 	talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryParadeGuardLost")
 	addInfluenceResist(0.4)
 	addContinue("endEvent")

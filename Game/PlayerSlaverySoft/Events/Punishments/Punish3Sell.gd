@@ -16,17 +16,17 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 func start():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER)})
 	sayPretext()
-	saynn("Your owner gives you a very mean look!")
+	saynn("Твой хозяин бросает на тебя очень злобный взгляд!")
 	talkModularOwnerToPC("SoftSlaveryPunishSell")
-	saynn("Sounds like you're about to get your freedom back?")
+	saynn("Похоже, ты вот-вот обретешь свободу?")
 	
 	addContinue("setState", ["flashed"])
 
 func flashed():
 	playAnimation(StageScene.Sleeping, "sleep")
-	saynn("Suddenly, you see a bright flash! So bright it feels like it pierces straight through you!")
-	saynn("An agonizing headache makes your head spin.. and then you collapse.")
-	saynn("The landing wasn't the softest. You feel your consciousness slipping away..")
+	saynn("Внезапно ты видишь яркую вспышку! Настолько яркую, что кажется, будто она прошивает тебя насквозь!")
+	saynn("Мучительная головная боль заставляет голову идти кругом... а затем ты валишься с ног.")
+	saynn("Приземление было не самым мягким. Ты чувствуешь, как сознание ускользает...")
 	talkModularOwnerToPC("SoftSlaveryPunishSell2")
 	
 	addContinue("getSold")
