@@ -17,7 +17,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "Rub clit"
+	return "@@B*@@Теребить клитор@@T*@@@@F*@@"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "Give your sensitive bean some love"

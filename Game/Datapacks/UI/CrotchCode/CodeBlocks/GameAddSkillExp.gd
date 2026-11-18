@@ -47,7 +47,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Add skill exp",
+			text = "Добавить опыт навыка",
 		},
 		{
 			type = "slot",

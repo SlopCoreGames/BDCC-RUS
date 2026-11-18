@@ -25,7 +25,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Length",
+			text = "Длина",
 		},
 		{
 			type = "slot",

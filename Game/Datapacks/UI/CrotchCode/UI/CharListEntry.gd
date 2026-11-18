@@ -26,14 +26,14 @@ func setEntry(theCharName, theEntry):
 	name_label.text = "Full id: "+entry["realid"]
 	
 	alias_var_ui.setData({
-		name = "Alias",
+		name = "Прозвище",
 		value = charAlias,
 	})
 	
 	starts_check_box.set_pressed_no_signal(entry["start"])
 	
 	variant_var_ui.setData({
-		name = "Variant",
+		name = "Вариант",
 		value = entry["variant"],
 	})
 

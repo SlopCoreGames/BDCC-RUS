@@ -5,352 +5,352 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("You've been standing in front of the mission board when you suddenly begin hearing angry snarls and noises coming out from the other room.")
+		saynn("Ты стоишь перед доской заданий, как вдруг из соседней комнаты доносятся яростное рычание и какой-то шум.")
 
-		saynn("Better go see what's up.")
+		saynn("Пожалуй, стоит пойти и посмотреть, что там стряслось.")
 
-		addButton("Continue", "See what happens next", "avy_ferri_angy")
+		addButton("Продолжить", "Смотреть, что будет дальше", "avy_ferri_angy")
 	if(state == "avy_ferri_angy"):
 		addCharacter("avy")
 		addCharacter("ferri")
 		playAnimation(StageScene.Duo, "stand", {pc="avy", npc="ferri"})
 		aimCameraAndSetLocName("hideout_chill")
 		GM.pc.setLocation("hideout_chill")
-		saynn("[say=avy]Don't make me snap your horns off, bitch.[/say]")
+		saynn("[say=avy]Не заставляй меня отрывать тебе рога, сучка![/say]")
 
-		saynn("[say=ferri]I'm not gonna do what you want![/say]")
+		saynn("[say=ferri]Я не собираюсь делать то, что ты хочешь![/say]")
 
-		saynn("Avy has Ferri backed against one of the crates. The foxy is taller, her blue eyes shining bright, she is looming over the dracat. Ferri is standing her ground, her dragon tail wagging behind her annoyed.")
+		saynn("Ави прижала Ферри к одному из ящиков. Лисица выше, её голубые глаза ярко сияют, она буквально нависает над дракатом. Ферри не отступает, её драконий хвост раздраженно дёргается из стороны в сторону.")
 
-		saynn("[say=pc]What is happening here?[/say]")
+		saynn("[say=pc]Что здесь происходит?[/say]")
 
-		saynn("Avy looks at you, her eyes narrowed.")
+		saynn("Ави смотрит на тебя, прищурив глаза.")
 
-		saynn("[say=avy]The slut has gotten her stupid lab but she refuses to work still.[/say]")
+		saynn("[say=avy]Эта шлюха получила свою дурацкую лабораторию, но всё равно отказывается работать![/say]")
 
-		saynn("Ferri's claws are visibly out.")
+		saynn("Когти Ферри заметно выпущены.")
 
-		saynn("[say=ferri]I did a thing! I saved you![/say]")
+		saynn("[say=ferri]Я кое-что сделала! Я спасла тебя![/say]")
 
-		saynn("Avy crosses her arms.")
+		saynn("Эви скрещивает руки на груди.")
 
-		saynn("[say=avy]I don't care, do what you're told. We didn't make you our slave for nothing.[/say]")
+		saynn("[say=avy]Мне плевать, делай, что велят. Мы не просто так сделали тебя нашей рабыней.[/say]")
 
-		saynn("[say=ferri]Grr-r..[/say]")
+		saynn("[say=ferri]Гррр-р...[/say]")
 
-		saynn("Ferri looks up at the foxy and just growls, showing her long fangs.")
+		saynn("Ферри смотрит на эту лисицу и просто рычит, демонстрируя свои длинные клыки.")
 
-		saynn("[say=pc]Ferri? Chill. What did Avy tell you to do?[/say]")
+		saynn("[say=pc]Ферри? Остынь. Что Эви велела тебе делать?[/say]")
 
-		saynn("[say=avy]Bitch is slacking![/say]")
+		saynn("[say=avy]Эта сучка совсем расслабилась![/say]")
 
-		saynn("[say=pc]Avy, shush.[/say]")
+		saynn("[say=pc]Эви, потише.[/say]")
 
-		saynn("Avy lets out a sharp huff and takes a half-step back.")
+		saynn("Эви резко фыркает и делает полшага назад.")
 
-		saynn("[say=ferri]She wants meds..[/say]")
+		saynn("[say=ferri]Она хочет лекарства...[/say]")
 
-		saynn("[say=avy]I want painkillers, the good stuff! They only push paracetamol here but that shit is weak. Bitch doesn't want to make tramadol for us.[/say]")
+		saynn("[say=avy]Мне нужны обезболивающие, нормальные! Здесь вкалывают один парацетамол, но это дерьмо вообще не берет. Сучке просто лень готовить нам трамадол.[/say]")
 
-		saynn("Ferri points at the lab setup.")
+		saynn("Ферри указывает на лабораторное оборудование.")
 
-		saynn("[say=ferri]Avy, we don't exactly have the most sterile space here. Anything I make might as well be poison. And besides.. Tramadol has bad side effects.. It can also cause..[/say]")
+		saynn("[say=ferri]Эви, у нас тут не самая стерильная обстановка. То, что я сделаю, может оказаться чистым ядом. И кроме того... у Трамадола есть побочки... Он также может вызвать...[/say]")
 
-		saynn("[say=avy]I know what it can cause, shut your mouth. I don't care. Obey, you useless whore.[/say]")
+		saynn("[say=avy]Я знаю, что он может вызвать, так что завали хлебало. Мне плевать. Слушайся, бесполезная шлюха.[/say]")
 
-		saynn("Ferri takes a brave step towards Avy, closing in until their noses almost touch.")
+		saynn("Ферри делает смелый шаг к Эви, сокращая дистанцию так, что их носы почти соприкасаются.")
 
-		saynn("[say=ferri]You're stupid, Avy![/say]")
+		saynn("[say=ferri]Ты тупая, Эви![/say]")
 
-		saynn("Her words are followed by an instant silence. Avy tilts her head to the side a bit.")
+		saynn("За её словами следует мгновенная тишина. Эви слегка наклоняет голову набок.")
 
-		saynn("[say=avy]Huh? What did you just say?[/say]")
+		saynn("[say=avy]А? Что ты сейчас сказала?[/say]")
 
-		saynn("The air gets tense fast. The foxy's glare is drilling Ferri's shaky eye contact. The dracat is visibly getting smaller under the onslaught.. but still rebellious.")
+		saynn("Обстановка мгновенно накаляется. Лисий взгляд буквально сверлит дрожащий взор Ферри. Дракат заметно съеживается под этим натиском... но всё ещё дерзит.")
 
-		saynn("[say=ferri]You're.. stupid.. kinda.. gr..[/say]")
+		saynn("[say=ferri]Ты... тупая... типа того... гр...[/say]")
 
-		addButton("Continue", "See what happens next", "avy_threats")
+		addButton("Продолжить", "Смотреть, что будет дальше", "avy_threats")
 	if(state == "avy_threats"):
-		saynn("Avy doesn't shout.. or snarl. Her voice just drops to a low, flat tone.")
+		saynn("Эви не кричит и не рычит. Её голос просто опускается до низкого, ровного тона.")
 
-		saynn("[say=avy]I guess you forgot your place, girl.. happens sometimes.. it does.[/say]")
+		saynn("[say=avy]Кажется, ты забыла своё место, девчонка... такое иногда случается... бывает.[/say]")
 
-		saynn("The foxy's eyes start smoothly following the dracat's curves while she points out certain features.")
+		saynn("Глаза лисицы плавно скользят по изгибам дракатки, пока она выделяет определённые черты её фигуры.")
 
-		saynn("[say=avy]Can be fixed easily. I guess I will start by breaking some of your fingers. One by one. Snap-snap. Until you won't be able to hold even a beaker..[/say]")
+		saynn("[say=avy]Это легко исправить. Думаю, начну с того, что переломаю тебе пальцы. Один за другим. Хрусть-хрусть. Пока ты не сможешь удержать даже мензурку...[/say]")
 
-		saynn("Ferri blinks.. and takes a step back, her tail freezes.")
+		saynn("Ферри моргает... и делает шаг назад, её хвост замирает.")
 
-		saynn("[say=avy]Guess I can break your arms too by that point. Make little pieces of bone poking through the skin. You will start bleeding all over your precious lab. I will make you clean it with your own tongue.[/say]")
+		saynn("[say=avy]Думаю, к тому моменту я смогу сломать и твои руки. Сделаю так, чтобы осколки костей протыкали кожу. Ты начнешь истекать кровью по всей своей драгоценной лаборатории. И я заставлю тебя вылизывать всё это собственным языком.[/say]")
 
-		saynn("Ferri's breath hitches, her ears go flat, her angry expression turning into a fearful one.")
+		saynn("У Ферри перехватывает дыхание, её уши прижимаются к голове, а гневное выражение лица сменяется испугом.")
 
-		saynn("[say=pc]Avy.[/say]")
+		saynn("[say=pc]Эйви.[/say]")
 
-		saynn("[say=avy]After that.. gonna fuck you. Why not? Right here. You're just gonna drool and whine while I tear you open with my knot.[/say]")
+		saynn("[say=avy]А после этого... трахну тебя. Почему бы и нет? Прямо здесь. Ты будешь просто пускать слюни и скулить, пока я разрываю тебя изнутри своим узлом.[/say]")
 
-		saynn("Avy approaches and reaches out to trace a claw down Ferri's cheek. Ferri doesn't move.")
+		saynn("Ави подходит ближе и проводит когтем по щеке Ферри. Ферри не шевелится.")
 
-		saynn("[say=pc]Quit it.[/say]")
+		saynn("[say=pc]Прекращай.[/say]")
 
-		saynn("[say=avy]Gonna leave your holes gaping. You'll be bleeding for days. Maybe weeks. You're nothing, Ferri. You're our slave. Our toy, to do whatever we want to.[/say]")
+		saynn("[say=avy]Твои дырки останутся зиять. Ты будешь кровоточить днями. Может, неделями. Ты — ничто, Ферри. Ты наша рабыня. Наша игрушка, чтобы делать с тобой всё, что нам вздумается.[/say]")
 
-		saynn("Avy's claw stops under Ferri's chin. She tilts the dracat's head up.")
+		saynn("Коготь Эви замирает под подбородком Ферри. Она задирает голову драката вверх.")
 
-		saynn("[say=avy]So make my tramadol. You useless. Worthless. Annoying. Little. Cunt.[/say]")
+		saynn("[say=avy]Так что делай мой трамадол. Ты, бесполезная. Никчемная. Раздражающая. Мелкая. Сучка.[/say]")
 
-		saynn("Silence happens again. Ferri's eyes get visibly wet, her jaw getting tight.")
+		saynn("Снова воцаряется тишина. Глаза Ферри заметно увлажняются, а челюсти сжимаются.")
 
-		addButton("Continue", "See what happens next", "ferri_bites")
+		addButton("Продолжить", "Смотреть, что будет дальше", "ferri_bites")
 	if(state == "ferri_bites"):
 		playAnimation(StageScene.Duo, "hurt", {pc="avy", npc="ferri", npcAction="bite"})
-		saynn("Then something in her snaps.")
+		saynn("И тут в ней что-то лопается.")
 
-		saynn("[say=ferri]GRRRrh![/say]")
+		saynn("[say=ferri]РРРРрр![/say]")
 
-		saynn("Ferri lunges, her jaws open wide and clamp down on Avy's shoulder. Hard. Enough to draw some blood from the foxy. Avy lets out a painful cry, eyes wide in shock.")
+		saynn("Ферри бросается вперед, широко раскрывает пасть и впивается зубами в плечо Эви. Сильно. Достаточно, чтобы пустить кровь лисице. Эви издает болезненный крик, ее глаза широко распахиваются от шока.")
 
-		saynn("[say=avy]AGHH! YOU F-F..[/say]")
+		saynn("[say=avy]АГХХ! ТЫ, Б-Б...[/say]")
 
-		saynn("Avy manages to shove the ferocious dracat away without causing too much more damage to her shoulder.")
+		saynn("Эви удается оттолкнуть свирепую дракат, не нанеся плечу слишком серьезных повреждений.")
 
-		saynn("Ferri is hissing while Avy is grunting painfully. She really got caught off-guard by the sudden attack.")
+		saynn("Ферри шипит, а Эви мучительно кряхтит. Внезапная атака застала её врасплох.")
 
-		saynn("[say=avy]Fucking.. brat.. ugh.. Gonna fucking ravage you.[/say]")
+		saynn("[say=avy]Чертова... девчонка... ух... Я тебя, блядь, просто разорву на куски.[/say]")
 
-		saynn("You shove yourself in-between them before things get any worse.")
+		saynn("Ты вклиниваешься между ними, пока ситуация не стала еще хуже.")
 
-		saynn("[say=pc]Stop. Both of you.[/say]")
+		saynn("[say=pc]Стойте. Обе.[/say]")
 
-		saynn("[say=avy]She is gonna regret this. Step aside.[/say]")
+		saynn("[say=avy]Она об этом еще пожалеет. Отойди в сторону.[/say]")
 
-		saynn("[say=pc]You're not getting your tramadol, you heard her. It's not safe to make meds here. At least not at the moment.[/say]")
+		saynn("[say=pc]Трамадола ты не получишь, ты слышала? Здесь нельзя делать лекарства. По крайней мере, сейчас.[/say]")
 
-		saynn("Avy rolls her eyes. She pulls out a pill bottle and pops one.")
+		saynn("Эви закатывает глаза. Она достает баночку с таблетками и глотает одну.")
 
-		saynn("[say=avy]Why the fuck did we break her then?[/say]")
+		saynn("[say=avy]Какого хера мы тогда её сломали?[/say]")
 
-		saynn("[say=pc]Other stuff. Her chemistry is what saved us from Eliza. You have to chill now, Avy.[/say]")
+		saynn("[say=pc]Другое дело. Именно её химия спасла нас от Элизы. А теперь остынь, Эви.[/say]")
 
-		saynn("[say=avy]Ugh.. Alright. But I want her punished. She bit me! Your bratty slave has forgotten her place.[/say]")
+		saynn("[say=avy]Уф... Ладно. Но я хочу, чтобы её наказали. Она меня укусила! Твоя избалованная рабыня забыла свое место.[/say]")
 
-		saynn("You look at the Ferri next. She is still quite.. upset.. her tail is lashing behind her.")
+		saynn("Затем ты переводишь взгляд на Ферри. Она все еще весьма... расстроена... её хвост нервно хлещет по воздуху.")
 
-		saynn("[say=ferri]Mow..[/say]")
+		saynn("[say=ferri]Мяу...[/say]")
 
-		addButton("Punish Ferri", "(Avy's Love +) Show Ferri her place", "punish_ferri")
-		addButton("Punish Avy", "(Avy's Obedience +) Avy went way too far", "punish_avy")
+		addButton("Наказать Ферри", "(Любовь Эви +) Показать Ферри её место", "punish_ferri")
+		addButton("Наказать Эви", "(Послушание Эви +) Эви зашла слишком далеко", "punish_avy")
 	if(state == "punish_avy"):
 		playAnimation(StageScene.Duo, "stand", {npc="avy"})
-		saynn("[say=pc]I think you deserved it, Avy. I think you actually deserve much more for your threats.[/say]")
+		saynn("[say=pc]Думаю, ты это заслужила, Эви. На самом деле, за свои угрозы ты заслуживаешь куда большего.[/say]")
 
-		saynn("[say=avy]What? You gonna treat that doormat like she is above me?[/say]")
+		saynn("[say=avy]Что? Ты собираешься обращаться с этой тряпкой так, будто она выше меня?[/say]")
 
-		saynn("[say=pc]She is not above you. Not below you either. I think you should apologize to your fellow teammate.[/say]")
+		saynn("[say=pc]Она не выше тебя. Но и не ниже. Думаю, тебе стоит извиниться перед своей напарницей.[/say]")
 
-		saynn("Avy is growling. You understand that she would never do that. You're counting on it.")
+		saynn("Эви рычит. Ты понимаешь, что она никогда бы не сделала этого. Ты рассчитываешь на это.")
 
-		saynn("[say=avy]Fuck you, I won't do that. I'd rather make that slut eat the dirt.[/say]")
+		saynn("[say=avy]Да пошла ты, я не стану этого делать. Лучше заставлю эту сучку жрать землю.[/say]")
 
-		saynn("[say=pc]Ferri, bite her again.[/say]")
+		saynn("[say=pc]Ферри, укуси её ещё раз![/say]")
 
-		saynn("Ferri didn't need much convincing. She pounced the foxy the instant you gave the order.")
+		saynn("Ферри не пришлось долго убеждать. Она набросилась на лисицу в тот же миг, как ты отдал приказ.")
 
-		addButton("Continue", "See what happens next", "avy_tied_up")
+		addButton("Продолжить", "Смотреть, что будет дальше", "avy_tied_up")
 	if(state == "avy_tied_up"):
 		playAnimation(StageScene.RopesSolo, "struggle", {pc="avy"})
-		saynn("You join Ferri and overpower Avy together. Then you use some ropes to tie the foxy up before suspending her above the floor using one of the pipes in the ceiling.")
+		saynn("Вы объединяетесь с Ферри и вместе одолеваете Эви. Затем вы используете веревки, чтобы связать эту лисичку, и подвешиваете её над полом за одну из труб под потолком.")
 
-		saynn("[say=avy]Hey! What the fuck![/say]")
+		saynn("[say=avy]Эй! Какого хера?![/say]")
 
-		saynn("When you're done, she is left dangling in the air, squirming, trying to escape.. but that only makes the ropes dig into her fur and cloth harder.")
+		saynn("Когда вы заканчиваете, она остается болтаться в воздухе, извиваясь и пытаясь вырваться... но от этого веревки лишь сильнее впиваются в её мех и одежду.")
 
-		saynn("[say=pc]Ferri is waiting.[/say]")
+		saynn("[say=pc]Ферри ждет.[/say]")
 
-		saynn("[say=avy]Really? You are pathetic. Fucking hell, I will kill you both.[/say]")
+		saynn("[say=avy]Серьезно? Вы жалкие. Блядь, я обоих вас убью![/say]")
 
-		saynn("You sigh and direct your attention towards Ferri.")
+		saynn("Вы вздыхаете и переключаете внимание на Ферри.")
 
-		saynn("[say=pc]I guess we should leave Avy for a bit to think about her behaviour. For an hour or three.[/say]")
+		saynn("[say=pc]Думаю, нам стоит оставить Эви на время, чтобы она обмозговала свое поведение. Часа на три.[/say]")
 
-		saynn("[say=ferri]Sounds good, mew~.[/say]")
+		saynn("[say=ferri]Звучит отлично, мяу~.[/say]")
 
-		saynn("And so you start walking away.")
+		saynn("И вот вы начинаете уходить.")
 
-		saynn("Avy is growling behind you.. growling and squirm.")
+		saynn("Эви рычит вам в спину... рычит и извивается.")
 
-		saynn("As soon as you step out of the room, you hear her voice.")
+		saynn("Как только ты выходишь из комнаты, ты слышишь её голос.")
 
-		saynn("[say=avy]Wait, you fuckers![/say]")
+		saynn("[say=avy]А ну стоять, ублюдки![/say]")
 
-		saynn("You go back and surround the annoyed foxy.")
+		saynn("Ты возвращаешься и окружаешь раздражённую лисицу.")
 
-		saynn("[say=avy]Forget what I said. I was just fucking with you. Okay?[/say]")
+		saynn("[say=avy]Забудь, что я сказала. Я просто стебалась над вами. Окей?[/say]")
 
-		saynn("[say=pc]Are you happy with that, Ferri?[/say]")
+		saynn("[say=pc]Ты довольна, Ферри?[/say]")
 
-		saynn("[say=ferri]I think so. Mew..[/say]")
+		saynn("[say=ferri]Думаю, да. Мяу...[/say]")
 
-		saynn("You cup Avy's chin, making her growl softly.")
+		saynn("Ты берешь Ави за подбородок, заставляя её тихо зарычать.")
 
-		saynn("[say=pc]Are you gonna bully Ferri into making shit for you again?[/say]")
+		saynn("[say=pc]Ты опять собираешься задирать Ферри, чтобы она наготовила тебе всякой херни?[/say]")
 
-		saynn("[say=avy]I wouldn't have to if she would be doing her job.[/say]")
+		saynn("[say=avy]Мне бы не пришлось, если бы она нормально делала свою работу.[/say]")
 
-		saynn("[say=pc]I see. Let's go, Ferri. I'm gonna go ask Kait to spend time with her.[/say]")
+		saynn("[say=pc]Понятно. Пошли, Ферри. Пойду попрошу Кейт провести с ней время.[/say]")
 
-		saynn("[say=avy]Fine! I won't![/say]")
+		saynn("[say=avy]Ладно! Не буду![/say]")
 
-		saynn("Avy has given up struggling, panting heavily instead. The ropes are digging into her fur, including around her crotch. Avy's shorts look quite bulgy.")
+		saynn("Эйви перестала сопротивляться и теперь лишь тяжело дышит. Верёвки впиваются в её мех, в том числе в районе промежности. Шорты Эйви заметно вздулись.")
 
-		saynn("[say=pc]Ferri is just as valuable as you to this team. And you are just as valuable as her. Understand?[/say]")
+		saynn("[say=pc]Ферри так же важна для команды, как и ты. А ты так же важен, как и она. Понимаешь?[/say]")
 
-		saynn("[say=avy]Sure..[/say]")
+		saynn("[say=avy]Ну да..[/say]")
 
-		saynn("[say=pc]We look after each other. We don't threaten each other.[/say]")
+		saynn("[say=pc]Мы заботимся друг о друге. Мы не угрожаем друг другу.[/say]")
 
-		saynn("[say=avy]Yeah, yeah, I get it. Get me the fuck down before Kait sees me like this.[/say]")
+		saynn("[say=avy]Да-да, я понял. Спусти меня уже нахер, пока Кейт не увидела меня в таком виде.[/say]")
 
-		saynn("That's probably as much as you can get out of her. And so you begin untying her.")
+		saynn("Пожалуй, это всё, что можно из неё вытянуть. И ты начинаешь развязывать её.")
 
-		addButton("Continue", "See what happens next", "untie_avy")
+		addButton("Продолжить", "Смотреть, что будет дальше", "untie_avy")
 	if(state == "untie_avy"):
 		playAnimation(StageScene.Duo, "stand", {npc="avy"})
-		saynn("Avy gets up off of the floor and crosses her arms, her mean eyes glaring at the both of you.")
+		saynn("Эйви поднимается с пола и скрещивает руки на груди, сверля вас обоих злобным взглядом.")
 
-		saynn("[say=pc]You looked cute tied up.[/say]")
+		saynn("[say=pc]Ты мило смотрелась связанной.[/say]")
 
-		saynn("[say=ferri]I agree~.[/say]")
+		saynn("[say=ferri]Согласна~.[/say]")
 
-		saynn("[say=avy]Shut up, both of you.[/say]")
+		saynn("[say=avy]Заткнитесь оба.[/say]")
 
-		saynn("And so she walks away.")
+		saynn("И вот она уходит.")
 
-		saynn("[say=ferri]I will be going too I think..[/say]")
+		saynn("[say=ferri]Думаю, я тоже пойду..[/say]")
 
-		saynn("[say=pc]Sure. Don't let Avy bully you around.[/say]")
+		saynn("[say=pc]Конечно. И не позволяй Эви задирать тебя.[/say]")
 
-		saynn("[say=ferri]I will bite her again if she tries, mew.[/say]")
+		saynn("[say=ferri]Если она попробует, я снова её укушу, мяу.[/say]")
 
-		saynn("You chuckle. It might end badly for Ferri. But maybe she wants it.")
+		saynn("Ты усмехаешься. Для Ферри это может закончиться плохо. Но, возможно, она сама этого хочет.")
 
-		saynn("Mission completed!")
+		saynn("Миссия выполнена!")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "punish_ferri"):
 		playAnimation(StageScene.Duo, "stand", {npc="ferri"})
-		saynn("[say=pc]Ferri. You really should learn your place already.[/say]")
+		saynn("[say=pc]Ферри. Тебе уже давно пора выучить своё место.[/say]")
 
-		saynn("[say=ferri]Mew?.. But she was threatening me![/say]")
+		saynn("[say=ferri]Мяу?.. Но она же мне угрожала![/say]")
 
-		saynn("You pull out some ropes. Avy seems to understand what you want to do.")
+		saynn("Ты достаёшь верёвки. Похоже, Эви понимает, что ты задумал.")
 
-		saynn("[say=pc]Hold her, Avy.[/say]")
+		saynn("[say=pc]Держи её, Эви.[/say]")
 
-		saynn("[say=avy]With pleasure~.[/say]")
+		saynn("[say=avy]С удовольствием~.[/say]")
 
-		saynn("Not even a second passes before Avy pins Ferri to the floor, already undressing her.")
+		saynn("Не проходит и секунды, как Эви прижимает Ферри к полу, уже вовсю раздевая её.")
 
-		saynn("[say=ferri]Hey! Ah![/say]")
+		saynn("[say=ferri]Эй! А-ах![/say]")
 
-		saynn("You start tying the brat up.")
+		saynn("Ты начинаешь связывать эту мелкую дрянь.")
 
-		addButton("Continue", "See what happens next", "ferri_tied_up")
+		addButton("Продолжить", "Смотреть, что будет дальше", "ferri_tied_up")
 	if(state == "ferri_tied_up"):
 		playAnimation(StageScene.RopesSolo, "struggle", {pc="ferri", bodyState={naked=true}})
 		addCharacter("ferri", ["naked"])
-		saynn("Avy is holding growling Ferri still while you undress and tie her up before suspending her above the floor by throwing the ropes over the ceiling pipe.")
+		saynn("Эви удерживает рычащую Ферри, пока ты раздеваешь и связываешь её, а затем подвешиваешь над полом, закидывая веревки на потолочную трубу.")
 
-		saynn("Ferri is thrashing against the ropes, her naked body tries to twist and pull. But that only makes the ropes dig into her fur more, getting all tight around her chest and her thighs.. as well as right between her legs. She lets out a sharp gasp as the rope presses against her pussy.")
+		saynn("Ферри бьется в путах, её обнаженное тело извивается и пытается вырваться. Но от этого веревки лишь сильнее впиваются в мех, туго стягивая грудь, бедра... и самое сокровенное между ног. Она издает резкий вздох, когда веревка с силой прижимается к её киске.")
 
-		saynn("[say=ferri]Nngh! You fu.. ah..[/say]")
+		saynn("[say=ferri]Ннгх! Ах ты су.. ах..[/say]")
 
-		saynn("[say=pc]Watch your mouth, brat.[/say]")
+		saynn("[say=pc]Следи за языком, дрянь.[/say]")
 
-		saynn("You give her ass a firm spank, so loud that the echo bounces off the walls multiple times. Ferri cries out, her tail lashing wildly behind her.")
+		saynn("Ты отвешиваешь ей звонкий шлепок по заднице, настолько громкий, что эхо многократно разносится по стенам. Ферри вскрикивает, а её хвост дико хлещет из стороны в сторону.")
 
-		saynn("[say=ferri]Grrrr-r.. I will bite you all! Let me down![/say]")
+		saynn("[say=ferri]Грррр-р.. Я вас всех покусаю! Спустите меня![/say]")
 
-		saynn("Another spank sends her curvy ass to jiggle. Her tail whips harder.. so you grab it and tie it to the rope above until she can't move it at all. She growls more.")
+		saynn("Очередной шлепок заставляет её аппетитные ягодицы колыхаться. Хвост дёргается всё сильнее... тогда ты хватаешь его и привязываешь к канату сверху так, что она почти теряет подвижность. Она начинает рычать ещё яростнее.")
 
-		saynn("[say=ferri]Meanies![/say]")
+		saynn("[say=ferri]Стервятники![/say]")
 
-		saynn("[say=avy]What a slut, are you dripping already?[/say]")
+		saynn("[say=avy]Ну и шлюшка, ты что, уже течёшь?[/say]")
 
-		saynn("Avy is right, the fur looks a bit wet around her crotch.")
+		saynn("Ави права, мех в районе её промежности кажется немного влажным.")
 
-		saynn("[say=ferri]Shut up! That's just.. it's not me.. uh..[/say]")
+		saynn("[say=ferri]Заткнись! Это просто... это не я... э-э...[/say]")
 
-		saynn("[say=pc]Sure.[/say]")
+		saynn("[say=pc]Конечно.[/say]")
 
-		saynn("You produce a ballgag. Ferri's eyes go wide.")
+		saynn("Ты достаёшь шариковый кляп. Глаза Ферри расширяются от ужаса.")
 
-		saynn("[say=ferri]No no no-.. mphh..[/say]")
+		saynn("[say=ferri]Нет-нет-нет!.. ммффф!..[/say]")
 
-		addButton("Continue", "See what happens next", "ferri_gets_gagged")
+		addButton("Продолжить", "Смотреть, что будет дальше", "ferri_gets_gagged")
 	if(state == "ferri_gets_gagged"):
 		playAnimation(StageScene.RopesOralSex, "tease", {pc="ferri", npc="pc", bodyState={naked=true, hard=true}})
-		saynn("You push the ball past her sharp teeth and tighten the head harness around her face. She tries to push it out but can't. Then you tie a blindfold around her eyes, plunging her into complete darkness.")
+		saynn("Ты проталкиваешь шарик между её острых зубов и затягиваешь ремни намордника на её мордочке. Она пытается вытолкнуть его, но тщетно. Затем ты завязываешь ей глаза повязкой, погружая её в полную темноту.")
 
-		saynn("[say=ferri]MHhhh-h..[/say]")
+		saynn("[say=ferri]ММммм-хх..[/say]")
 
-		saynn("[say=avy]Much better, in my opinion.[/say]")
+		saynn("[say=avy]По-моему, так гораздо лучше.[/say]")
 
-		saynn("Ferri is still squirming and growling.. through the gag now. Her body rocks in the ropes, making the rope between her legs rub back and forth. She shivers, some of her growls turning into muffled whines.")
+		saynn("Ферри всё еще извивается и рычит... теперь уже сквозь кляп. Её тело раскачивается в путах, из-за чего веревка между ног то и дело трется о плоть. Она вздрагивает, и её рычание постепенно переходит в приглушенное поскуливание.")
 
-		saynn("[say=pc]You're staying like this for now.[/say]")
+		saynn("[say=pc]Пока что ты останешься в таком положении.[/say]")
 
-		saynn("She huffs.. but she doesn't really have a choice.")
+		saynn("Она фыркает... но выбора у неё особо нет.")
 
-		saynn("[say=pc]Let's go chill for now, Avy.[/say]")
+		saynn("[say=pc]А пока давай просто расслабимся, Эви.[/say]")
 
-		saynn("[say=avy]Sure~.[/say]")
+		saynn("[say=avy]Конечно~.[/say]")
 
-		saynn("And so you leave Ferri be like this for about twenty minutes.")
+		saynn("И вот ты оставляешь Ферри в таком виде примерно на двадцать минут.")
 
-		saynn("When you return, you see that she isn't fighting anymore. Her body is just idly swaying slightly, drool runs down her chin around the ballgag. Her thighs are all soaked with her juices. She is breathing slowly and shaky, letting the ropes hold her.")
+		saynn("Когда ты возвращаешься, то видишь, что она больше не сопротивляется. Её тело лишь лениво покачивается, а с подбородка, вокруг шарика кляпа, стекает слюна. Внутренности бедер полностью промокли от её соков. Она дышит медленно и прерывисто, позволяя веревкам держать свой вес.")
 
-		saynn("[say=pc]Should be enough.[/say]")
+		saynn("[say=pc]Должно хватить.[/say]")
 
-		addButton("Continue", "See what happens next", "undo_ferri_gag")
+		addButton("Продолжить", "Смотреть, что будет дальше", "undo_ferri_gag")
 	if(state == "undo_ferri_gag"):
-		saynn("You undo the ballgag and pull off the blindfold. Ferri blinks at the light, squinting from the sudden brightness.")
+		saynn("Ты расстегиваешь кляп и снимаешь повязку с глаз. Ферри моргает, щурясь от внезапного яркого света.")
 
-		saynn("[say=pc]How are you doing now, Ferri?[/say]")
+		saynn("[say=pc]Ну как ты теперь, Ферри?[/say]")
 
-		saynn("[say=ferri]..mew..[/say]")
+		saynn("[say=ferri]..мяу..[/say]")
 
-		saynn("She looks at you, her eyes subby.")
+		saynn("Она смотрит на тебя, и в её глазах читается покорность.")
 
-		saynn("[say=pc]Learned your place yet?[/say]")
+		saynn("[say=pc]Уже усвоила своё место?[/say]")
 
-		saynn("[say=ferri]..yes..[/say]")
+		saynn("[say=ferri]..да..[/say]")
 
-		saynn("You give her a pat.")
+		saynn("Ты похлопываешь её по голове.")
 
-		saynn("[say=pc]Good. You don't have to make stuff for Avy. But don't bite her.[/say]")
+		saynn("[say=pc]Хорошо. Тебе не обязательно готовить для Эви. Но и не кусайся.[/say]")
 
-		saynn("[say=ferri]I will be good.. mew..[/say]")
+		saynn("[say=ferri]Я буду послушной.. мяу..[/say]")
 
-		saynn("Looks like the brat broke a bit. Her eyes are flat with her head.")
+		saynn("Похоже, девчонку немного надломило. Взгляд стал пустым, голова поникла.")
 
-		saynn("[say=pc]Let's get you down then.[/say]")
+		saynn("[say=pc]Тогда давай спустим тебя на землю.[/say]")
 
-		addButton("Continue", "See what happens next", "ferri_after_down")
+		addButton("Продолжить", "Смотреть, что будет дальше", "ferri_after_down")
 	if(state == "ferri_after_down"):
 		playAnimation(StageScene.Duo, "stand", {npc="ferri"})
-		saynn("And so you lower her down to the floor before untying her limbs. She is indeed.. quite wet.")
+		saynn("И вот ты опускаешь её на пол, прежде чем развязать конечности. Она и впрямь... изрядно промокла.")
 
-		saynn("[say=pc]What do you think, Avy? Did the brat suffer enough?[/say]")
+		saynn("[say=pc]Что думаешь, Эви? Мелкий достаточно настрадался?[/say]")
 
-		saynn("[say=avy]No. But it will do.[/say]")
+		saynn("[say=avy]Нет. Но на первое время сойдет.[/say]")
 
-		saynn("[say=ferri]Mow..[/say]")
+		saynn("[say=ferri]Мяу...[/say]")
 
-		saynn("Mission completed!")
+		saynn("Миссия выполнена!")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

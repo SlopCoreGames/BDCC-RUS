@@ -2,7 +2,7 @@ extends MissionBase
 
 func _init():
 	id = "Mission1"
-	name = "Paper Trail"
+	name = "Бумажный след"
 	desc = "You need to get prison's staff/inmate records to figure out the best potential recruiting targets."
 	
 	startScene = "DomM1s1Intro"
@@ -21,7 +21,7 @@ func _init():
 	
 	decisions = {
 		"helped": {
-			name = "Helped Kait",
+			name = "Помогла Кейт",
 			outcomes = {
 				"avy": {
 					text = "No",
@@ -32,7 +32,7 @@ func _init():
 					avyLine = "It was pretty fun to see that softie get wrecked.",
 				},
 				"kait": {
-					text = "Yes",
+					text = "Да",
 					effects = [
 						DECISION_EFFECT_KAIT_LOVE,
 					],

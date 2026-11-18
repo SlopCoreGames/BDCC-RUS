@@ -5,9 +5,9 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("You enter the lift and look at the panel, your inmate access allows you to go only to certain floors")
+		saynn("Вы заходите в лифт и смотрите на панель управления; ваш статус заключенного позволяет посещать лишь определенные этажи")
 		
-		saynn("Where do you want the lift to go?")
+		saynn("Куда поедем?")
 
 		var floors = [
 			["Cellblock", "hall_elevator", "Main level where all the inmate cells are"],
@@ -17,20 +17,20 @@ func _run():
 		
 		for fl in floors:
 			if(fl[1] == GM.pc.location):
-				addDisabledButton(fl[0], "You are already here")
+				addDisabledButton(fl[0], "Вы уже на месте")
 			else:
 				addButton(fl[0], fl[2], "gofloor", [fl[1]])
 				
 		GM.ES.triggerRun(Trigger.InsideElevator)
 				
-		addButton("Get out", "You don't feel like going anywhere", "endthescene")
+		addButton("Выйти", "Вам не особо-то и хочется куда-то ехать", "endthescene")
 	
 	if(state == "gofloor"):
-		saynn("With a screeching noise, the doors close and the lift begins to move towards some other floor")
+		saynn("С пронзительным скрежетом двери закрываются, и лифт начинает движение к выбранному этажу")
 		
-		saynn("You lean against one of the walls and just wait for the lift to arrive which it eventually does")
+		saynn("Вы прислоняетесь к одной из стен и просто ждете, пока лифт прибудет на место, что в итоге и происходит")
 		
-		addButton("Continue", "Step out of the lift", "endthescene")
+		addButton("Продолжить", "Выйти из лифта", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "gofloor"):

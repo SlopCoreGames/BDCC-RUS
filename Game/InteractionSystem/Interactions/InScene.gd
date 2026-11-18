@@ -11,7 +11,7 @@ func start(_pawns:Dictionary, _args:Dictionary):
 	setState("", "main")
 
 func init_text():
-	saynn("{main.You} {main.youAre} doing something..")
+	saynn("{main.You} {main.youAre} что-то делает..")
 	
 	if(!GM.main.isCharacterInAnyScene(getCharIDByRole("main"))):
 		addAction("go", "Go!", "Time to go", "default", 1.0, 30, {})

@@ -39,9 +39,7 @@ bbcode_enabled = true
 bbcode_text = "Automatic text translator. Requires access to internet.
 
 This is a very experimental feature, expect things not to work properly."
-text = "Automatic text translator. Requires access to internet.
-
-This is a very experimental feature, expect things not to work properly."
+text = "Автоматический переводчик текста. Требуется доступ в интернет.\n\nЭто экспериментальная функция, поэтому возможны ошибки в работе."
 fit_content_height = true
 
 [node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
@@ -59,7 +57,7 @@ margin_top = 5.0
 margin_right = 632.0
 margin_bottom = 19.0
 size_flags_horizontal = 3
-text = "Enable automatic text translation"
+text = "Включить автоматический перевод текста"
 
 [node name="EnableTranslationBox" type="CheckBox" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer"]
 margin_left = 636.0
@@ -77,7 +75,7 @@ margin_top = 143.0
 margin_right = 632.0
 margin_bottom = 157.0
 size_flags_horizontal = 3
-text = "Language (The fonts don't support every language)"
+text = "Язык (Шрифты поддерживают не все языки)"
 
 [node name="LanguageList" type="ItemList" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer2"]
 margin_left = 636.0
@@ -96,7 +94,7 @@ margin_top = 5.0
 margin_right = 632.0
 margin_bottom = 19.0
 size_flags_horizontal = 3
-text = "Manual \"Translate\" button"
+text = "Кнопка ручного \"Перевода\""
 
 [node name="EnableManualTranslateButton" type="CheckBox" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer3"]
 margin_left = 636.0
@@ -114,7 +112,7 @@ margin_top = 5.0
 margin_right = 632.0
 margin_bottom = 19.0
 size_flags_horizontal = 3
-text = "Translate buttons and their descriptions"
+text = "Переводить кнопки и их описания"
 
 [node name="TranslateButtonsButton" type="CheckBox" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer4"]
 margin_left = 636.0
@@ -132,7 +130,7 @@ margin_top = 5.0
 margin_right = 632.0
 margin_bottom = 19.0
 size_flags_horizontal = 3
-text = "Try to keep formatting"
+text = "Пытаться сохранять форматирование"
 
 [node name="KeepBBTagCheckbox" type="CheckBox" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer5"]
 margin_left = 636.0
@@ -150,7 +148,7 @@ margin_top = 78.0
 margin_right = 632.0
 margin_bottom = 92.0
 size_flags_horizontal = 3
-text = "Translator order"
+text = "Порядок перевода"
 
 [node name="TranslatorsList" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer6" instance=ExtResource( 2 )]
 anchor_right = 0.0
@@ -174,7 +172,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 256.0
 margin_bottom = 20.0
-text = "Save"
+text = "Сохранить"
 myShortcutKey = "1"
 
 [connection signal="toggled" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer/EnableTranslationBox" to="." method="_on_EnableTranslationBox_toggled"]

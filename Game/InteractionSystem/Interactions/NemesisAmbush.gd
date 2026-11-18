@@ -82,7 +82,7 @@ func start(_pawns:Dictionary, _args:Dictionary):
 	setState("", "main")
 
 func init_text():
-	saynn("{main.You} {main.youAre} heading somewhere..")
+	saynn("{main.You} {main.youAre} куда-то направляется..")
 	
 	addAction("go", "Go!", "Time to go", "default", 1.0, 30, {})
 
@@ -151,7 +151,7 @@ func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 					doWander()
 
 func offer_text():
-	saynn("{main.You} {main.youVerb('offer')} {offer.you} to join..")
+	saynn("{main.You} {main.youVerb('offer')} {offer.you} присоединиться..")
 	
 	addAction("join", "Answer", "Time to answer", "default", 1.0, 120, {})
 

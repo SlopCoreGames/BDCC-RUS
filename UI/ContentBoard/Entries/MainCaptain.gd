@@ -4,7 +4,7 @@ func _init():
 	id = "MainCaptain"
 	
 func getName() -> String:
-	return "Captain Route"
+	return "Капитан Роут"
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):

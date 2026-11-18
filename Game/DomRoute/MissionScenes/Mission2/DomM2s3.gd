@@ -11,91 +11,91 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Duo, "stand", {npc="kait"})
 		addCharacter("kait")
-		saynn("Kait bounces happily.")
+		saynn("Кейт радостно подпрыгивает.")
 
-		saynn("[say=kait]Finally! That brat got what she deserved.[/say]")
+		saynn("[say=kait]Наконец-то! Эта дрянь получила по заслугам.[/say]")
 
-		saynn("So much for just a doormat.")
+		saynn("И это та самая девчонка, которую считали просто тряпкой?")
 
-		saynn("[say=pc]No point in holding her in the cell anymore.[/say]")
+		saynn("[say=pc]Нет смысла больше держать её в камере.[/say]")
 
-		saynn("[say=kait]Yep. Let's see how subby she is now~.[/say]")
+		saynn("[say=kait]Ага. Посмотрим, насколько она теперь покорная~.[/say]")
 
-		addButton("Continue", "See what happens next", "player_brings_ferri_out")
+		addButton("Продолжить", "Смотреть, что будет дальше", "player_brings_ferri_out")
 	if(state == "player_brings_ferri_out"):
 		addCharacter("ferri")
 		playAnimation(StageScene.Duo, "stand", {npc="ferri", npcBodyState={leashedBy="pc"}, npcAction="kneel"})
-		saynn("You go ahead and bring Ferri out, your hand holding her leash. You also took off all the restraints that she had.")
+		saynn("Ты выводишь Ферри, держа её на поводке. Ты также сняла с неё все остальные оковы.")
 
-		saynn("[say=ferri]Mew..[/say]")
+		saynn("[say=ferri]Мяу..[/say]")
 
-		saynn("Kait leans close to her face.")
+		saynn("Кейт наклоняется к самому её лицу.")
 
-		saynn("[say=kait]You're gonna do what we tell you, right, brat~?[/say]")
+		saynn("[say=kait]Ты ведь будешь делать всё, что мы скажем, а, дрянь~?[/say]")
 
-		saynn("[say=ferri]Yes, miss.. m-mew..[/say]")
+		saynn("[say=ferri]Да, госпожа.. м-мяу..[/say]")
 
-		saynn("Might as well test that.")
+		saynn("Что ж, стоит это проверить.")
 
-		saynn("[say=pc]Kneel in front of me.[/say]")
+		saynn("[say=pc]Встань предо мной на колени.[/say]")
 
-		saynn("Ferri's ears perk when she hears you. She is quick to position herself in front of you before getting down to her knees, just as ordered. Her cyan eyes looking up at you, her tail resting on the floor.")
+		saynn("Услышав твои слова, Ферри навострила ушки. Она тут же пристроилась перед тобой и, повинуясь приказу, опустилась на колени. Её голубые глаза смотрят на тебя снизу вверх, а хвост расслабленно лежит на полу.")
 
-		saynn("[say=ferri]Here..[/say]")
+		saynn("[say=ferri]Вот..[/say]")
 
-		saynn("Kait is grinning wide.")
+		saynn("Кейт широко ухмыляется.")
 
-		saynn("[say=kait]Adorable![/say]")
+		saynn("[say=kait]Прелестно![/say]")
 
-		saynn("Ferri's cheeks blush softly.")
+		saynn("Щёки Ферри слегка розовеют.")
 
-		saynn("[say=ferri]No you..[/say]")
+		saynn("[say=ferri]Нет, это ты..[/say]")
 
-		saynn("[say=pc]Admit that you're adorable.[/say]")
+		saynn("[say=pc]Признай, что ты само очарование.[/say]")
 
-		saynn("[say=ferri]No-o-o..[/say]")
+		saynn("[say=ferri]Не-е-ет..[/say]")
 
-		saynn("She tries to look away but you catch her chin and make her look up at you again.")
+		saynn("Она пытается отвести взгляд, но ты подхватываешь её за подбородок, заставляя снова посмотреть на тебя.")
 
-		saynn("[say=pc]Ferri.[/say]")
+		saynn("[say=pc]Ферри.[/say]")
 
-		saynn("Her lips twitch.")
+		saynn("Её губы подрагивают.")
 
-		saynn("[say=ferri]Hmpff.. I'm a bit adorable..[/say]")
+		saynn("[say=ferri]Хмф.. А ведь я довольно милая..[/say]")
 
-		saynn("You give her a pat on the head.")
+		saynn("Ты гладишь её по голове.")
 
-		saynn("[say=pc]Good girl. You're gonna be our chemist.[/say]")
+		saynn("[say=pc]Хорошая девочка. Ты будешь нашим химиком.[/say]")
 
-		saynn("[say=ferri]Mew.. Do you have a.. a chemistry lab setup?..[/say]")
+		saynn("[say=ferri]Мяу.. А у вас есть.. ну, химическая лаборатория?..[/say]")
 
-		saynn("Right. Those are a thing. You and Kait look at each other.")
+		saynn("Точно. Такое бывает. Вы с Кейт переглядываетесь.")
 
-		saynn("[say=pc]We will figure it out.[/say]")
+		saynn("[say=pc]Мы что-нибудь придумаем.[/say]")
 
-		saynn("You tug up on the leash, making her get up.")
+		saynn("Ты тянешь за поводок, заставляя её подняться.")
 
-		saynn("[say=pc]You're free for now. We will find you when we need you.[/say]")
+		saynn("[say=pc]Пока ты на свободе. Мы найдем тебя, когда ты нам понадобишься.[/say]")
 
-		saynn("[say=ferri]Okay..[/say]")
+		saynn("[say=ferri]Ладно..[/say]")
 
-		saynn("You unclip the leash and let her go.")
+		saynn("Ты расстегиваешь карабин на поводке и отпускаешь её.")
 
-		addButton("Continue", "See what happens next", "last_mission_complete")
+		addButton("Продолжить", "Смотреть, что будет дальше", "last_mission_complete")
 	if(state == "last_mission_complete"):
 		setCharacters(["kait"])
 		playAnimation(StageScene.Duo, "stand", {npc="kait"})
-		saynn("[say=kait]I guess that could have gotten better overall. But we did it.[/say]")
+		saynn("[say=kait]Думаю, в целом всё могло пройти и лучше. Но мы это сделали.[/say]")
 
-		saynn("[say=pc]I guess we need to source a lab for Ferri now.[/say]")
+		saynn("[say=pc]Полагаю, теперь нам нужно найти лабораторию для Ферри.[/say]")
 
-		saynn("[say=kait]Oh yeah, who would have guessed.. chemists need chemistry labs.. About time we pay medbay a visit.[/say]")
+		saynn("[say=kait]Ну да, кто бы мог подумать... химикам нужны химические лаборатории... Пора бы нам заглянуть в медблок.[/say]")
 
-		saynn("But that's for another time. For now, you can just enjoy your sweet victory.")
+		saynn("Но это будет в другой раз. А пока — просто наслаждайся своей сладкой победой.")
 
-		saynn("Mission completed!")
+		saynn("Миссия выполнена!")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

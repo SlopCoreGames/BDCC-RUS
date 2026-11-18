@@ -48,7 +48,7 @@ func _run():
 			playAnimation(animData[0], animData[1], animData[2] if animData.size() > 2 else {})
 		saynn(savedText)
 		
-		addButton("Continue", "Continue on your way..", "endthescene")
+		addButton("Продолжить", "Продолжай свой путь..", "endthescene")
 		
 
 func _react(_action: String, _args):

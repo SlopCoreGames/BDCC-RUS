@@ -65,7 +65,7 @@ func _run():
 					addExtraButton("Disable dom autonomy", "Disallow other doms to do things with the sub", "toggle_dom_autonomy")
 			
 			if(currentCategory != []):
-				addButton("Back", "Back to the previous menu", "backbutton")
+				addButton("Назад", "Назад в предыдущее меню", "backbutton")
 				if(GM.ui.getCurrentPage() > 0):
 					addExtraButton("Back", "Back to the previous menu", "backbutton")
 			
@@ -95,7 +95,7 @@ func _run():
 			
 			addCategoryButtons(theActions)
 			
-			#addButton("Process", "Process", "processTurn")
+			#addButton("Обработать", "Обработать", "processTurn")
 		
 		else:
 			if(sexEngine.canKeepItemsAfterSex()):
@@ -104,12 +104,12 @@ func _run():
 				for item in itemsCanRecover:
 					itemNames.append(item.getVisibleName())
 				
-				saynn("There are some items that you can recover ("+Util.join(itemNames, ", ")+"). Otherwise, they will stay where they are.")
+				saynn("Есть предметы, которые можно забрать ("+Util.join(itemNames, ", ")+"), иначе они так и останутся на месте.")
 				
-				addButton("Recover items", "Recover the items", "recoverandleave")
-				addButton("LEAVE", "Just leave", "endthescene")
+				addButton("Забрать предметы", "Забрать предметы", "recoverandleave")
+				addButton("LEAVE", "Просто уйти", "endthescene")
 			else:
-				addButton("LEAVE", "The sex has ended", "endthescene")
+				addButton("LEAVE", "Секс окончен", "endthescene")
 
 func _react(_action: String, _args):
 	sexEngine.resetJustCame()
@@ -207,7 +207,7 @@ func addCategoryButtons(theActions):
 		var newCategory = actionCategory[currentCategory.size()]
 		if(!categoryButtons.has(newCategory)):
 			categoryButtons[newCategory] = true
-			addButton("!"+newCategory, "Look at the actions in this category", "pickcategory", [newCategory])
+			addButton("!"+newCategory, "Посмотреть действия в этой категории", "pickcategory", [newCategory])
 	
 func supportsSexEngine():
 	return true

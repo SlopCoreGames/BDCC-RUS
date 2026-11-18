@@ -2,7 +2,7 @@ extends Reference
 class_name DatapackScene
 
 var id:String = "error"
-var name:String = "New scene"
+var name:String = "Новая сцена"
 var devcomment:String = ""
 
 var states:Dictionary = {}
@@ -26,12 +26,12 @@ func getName():
 func getEditVars():
 	return {
 		"name": {
-			name = "Name",
+			name = "Имя",
 			type = "string",
 			value = name,
 		},
 		"devcomment": {
-			name = "Dev commentary",
+			name = "Комментарии разработчика",
 			type = "bigString",
 			value = devcomment,
 		},

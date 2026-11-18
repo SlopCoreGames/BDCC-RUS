@@ -5,14 +5,14 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("You grab a pickaxe and go deep into the mines.")
+		saynn("Ты хватаешь кирку и отправляешься вглубь шахт.")
 
-		addButton("Work", "Do the work", "work")
+		addButton("Работать", "Работать", "work")
 	
 	if(state == "work"):
-		saynn("You spend a few hours, pushing minecarts around and mining rocks. You feel tired as heck but you earned something at least.")
+		saynn("Ты проводишь несколько часов, перекатывая вагонетки и долбя камни. Ты чертовски устал, но, по крайней мере, заработал немного денег.")
 		
-		addButton("Continue", "Finally rest", "endthescene")
+		addButton("Продолжить", "Наконец-то отдохнуть", "endthescene")
 
 		GM.ES.triggerRun(Trigger.WorkingInMines)
 

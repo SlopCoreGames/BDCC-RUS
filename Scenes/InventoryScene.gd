@@ -25,12 +25,12 @@ func _run():
 			var _ok2 = inventory.connect("onInteractWith", self, "onInventoryItemInteracted")
 			
 		else:
-			saynn("What do you wanna do")
+			saynn("Что хочешь сделать?")
 			
-			say("Your equipped items:\n")
+			say("Твоё снаряжение:\n")
 			for slot in InventorySlot.getAll():
 				if(!GM.pc.getInventory().hasSlotEquipped(slot) && GM.pc.invCanEquipSlot(slot)):
-					say(InventorySlot.getVisibleName(slot)+": "+"Nothing"+"\n")
+					say(InventorySlot.getVisibleName(slot)+": "+"Ничего"+"\n")
 					continue
 				if(!GM.pc.invCanEquipSlot(slot)):
 					continue
@@ -44,23 +44,23 @@ func _run():
 			var itemNames = []
 			for item in items:
 				itemNames.append(item.getStackName())
-			say("Your items:\n")
+			say("Твои вещи:\n")
 			say(Util.join(itemNames, ", "))
 		
-			addButton("Take off", "Take off an item", "takeoffmenu")
-			addButton("Put on", "Put on an item", "putonmenu")
-			addButton("Use item", "Pick an item to use", "interactmenu")
-		addButton("Close", "Close the inventory", "endthescene")
+			addButton("Снять", "Снять предмет", "takeoffmenu")
+			addButton("Надеть", "Надеть предмет", "putonmenu")
+			addButton("Использовать", "Выбери предмет, чтобы использовать", "interactmenu")
+		addButton("Закрыть", "Закрыть инвентарь", "endthescene")
 		
 	if(state == "takeoffmenu"):
-		saynn("Pick an item you wanna take off")
+		saynn("Выберите предмет, который хотите снять")
 		
-		addButton("Back", "Go back", "")
+		addButton("Назад", "Назад", "")
 		
-		say("Your equipped items:\n")
+		say("Твоё снаряжение:\n")
 		for slot in InventorySlot.getAll():
 			if(!GM.pc.getInventory().hasSlotEquipped(slot) && GM.pc.invCanEquipSlot(slot)):
-				say(InventorySlot.getVisibleName(slot)+": "+"Nothing"+"\n")
+				say(InventorySlot.getVisibleName(slot)+": "+"Ничего"+"\n")
 				continue
 			if(!GM.pc.invCanEquipSlot(slot)):
 				continue
@@ -71,14 +71,14 @@ func _run():
 			addButton(item.getVisibleName(), item.getVisisbleDescription(), "takeoff", [item.getUniqueID()])
 		
 	if(state == "putonmenu"):
-		saynn("Pick an item you wanna put on")
+		saynn("Выберите предмет, который хотите надеть")
 		
-		addButton("Back", "Go back", "")
+		addButton("Назад", "Назад", "")
 		
-		say("Your equipped items:\n")
+		say("Твоё снаряжение:\n")
 		for slot in InventorySlot.getAll():
 			if(!GM.pc.getInventory().hasSlotEquipped(slot) && GM.pc.invCanEquipSlot(slot)):
-				say(InventorySlot.getVisibleName(slot)+": "+"Nothing"+"\n")
+				say(InventorySlot.getVisibleName(slot)+": "+"Ничего"+"\n")
 				continue
 			if(!GM.pc.invCanEquipSlot(slot)):
 				continue
@@ -93,24 +93,24 @@ func _run():
 				continue
 				
 			if(GM.pc.getInventory().hasSlotEquipped(slot)):
-				addDisabledButton(item.getVisibleName(), "This item's slot is already occupied")
+				addDisabledButton(item.getVisibleName(), "Этот слот уже занят")
 				continue
 			if(!GM.pc.invCanEquipSlot(slot)):
-				addDisabledButton(item.getVisibleName(), "You can't equip this item")
+				addDisabledButton(item.getVisibleName(), "Этот предмет нельзя экипировать")
 				continue
 			
 			addButton(item.getVisibleName(), item.getVisisbleDescription(), "puton", [item.getUniqueID()])
 		
 		
 	if(state == "interactmenu"):
-		saynn("Pick an item you wanna interact with")
+		saynn("Выберите предмет для взаимодействия")
 		#if(fightMode):
-		#	saynn("Press back to be able to equip and unequip items in a fight.")
+		#	saynn("Нажмите «назад», чтобы иметь возможность надевать и снимать предметы во время боя.")
 		
 		if(fightMode):
-			addButton("Back", "You don't wanna use anything", "endthescene")
+			addButton("Назад", "Вы не хотите ничего использовать", "endthescene")
 		else:
-			addButton("Back", "Go back", "")
+			addButton("Назад", "Назад", "")
 		
 		var savedDisabled = []
 		var equippeditems = GM.pc.getInventory().getAllEquippedItems()
@@ -118,7 +118,7 @@ func _run():
 			var item = equippeditems[invSlot]
 			var actions = item.getPossibleActions()
 			if(actions.size() > 0):
-				addButton("(worn)"+item.getStackName(), item.getVisisbleDescription(), "lookat", [item.getUniqueID()])
+				addButton("(надето)"+item.getStackName(), item.getVisisbleDescription(), "lookat", [item.getUniqueID()])
 		
 		var items = GM.pc.getInventory().getAllItems()
 		for item in items:
@@ -137,15 +137,15 @@ func _run():
 		var item: ItemBase = GM.pc.getInventory().getItemByUniqueID(savedItemUniqueID)
 		assert(item != null)
 		
-		saynn("What do you wanna do with "+item.getStackName())
+		saynn("Что вы хотите сделать с "+item.getStackName())
 		
 		for action in item.getPossibleActions():
 			if(!canDoAction(action)):
-				addDisabledButton(action["name"], "(Can't do this now)\n\n"+action["description"])
+				addDisabledButton(action["name"], "(Сейчас нельзя)\n\n"+action["description"])
 			else:
 				addButton(action["name"], action["description"], "doitemaction", [action["scene"]])
 		
-		addButton("Back", "Do nothing with it", "interactmenu")
+		addButton("Назад", "Ничего не делать", "interactmenu")
 
 func canDoAction(action):
 	if(fightMode && action.has("onlyWhenCalm") && action["onlyWhenCalm"]):
@@ -209,7 +209,7 @@ func onInventoryItemInteracted(item: ItemBase):
 
 func onInventoryItemSelected(item: ItemBase):
 	GM.ui.clearButtons()
-	addButton("Close", "Close the inventory", "endthescene")
+	addButton("Закрыть", "Закрыть инвентарь", "endthescene")
 	
 	if(item == null):
 		return
@@ -219,21 +219,21 @@ func onInventoryItemSelected(item: ItemBase):
 	if(!slot.empty() && !fightMode):
 		if(GM.pc.getInventory().hasSlotEquipped(slot)):
 			if(GM.pc.getInventory().getEquippedItem(slot) == item):
-				addButton("Take off", item.getVisisbleDescription(), "takeoff", [item.getUniqueID()])
+				addButton("Снять", item.getVisisbleDescription(), "takeoff", [item.getUniqueID()])
 			else:
-				addDisabledButton("Put on", "This item's slot is already occupied")
+				addDisabledButton("Надеть", "Этот слот уже занят")
 		elif(!GM.pc.invCanEquipSlot(slot)):
-			addDisabledButton("Put on", "You can't equip this item")
+			addDisabledButton("Надеть", "Этот предмет нельзя экипировать")
 		else:
-			addButton("Put on", item.getVisisbleDescription(), "puton", [item.getUniqueID()])
+			addButton("Надеть", item.getVisisbleDescription(), "puton", [item.getUniqueID()])
 	
 	if(fightMode && !item.canUseInCombat()):
-		addDisabledButton("Can't use!","You can't use this item in combat")
+		addDisabledButton("Нельзя использовать!","Этот предмет нельзя использовать в бою")
 		return
 	
 	for action in item.getPossibleActions():
 		if(!canDoAction(action)):
-			addDisabledButton(action["name"], "(Can't do this now)\n\n"+action["description"])
+			addDisabledButton(action["name"], "(Сейчас нельзя)\n\n"+action["description"])
 		else:
 			addButton(action["name"], action["description"], "doitemaction", [action["scene"]])
 

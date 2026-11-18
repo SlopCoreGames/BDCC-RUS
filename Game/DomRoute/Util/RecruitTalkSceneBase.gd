@@ -39,7 +39,7 @@ func didAllTopics() -> bool:
 
 func addRecButtons():
 	if(!didAllTopics()):
-		addButton("Ask more", "Ask something else", "ask_next")
+		addButton("Спросить еще", "Спросить о чем-то другом", "ask_next")
 	else:
-		addDisabledButton("Ask more", "You asked everything you could")
-	addButton("Enough", "That was enough talking", "endthescene")
+		addDisabledButton("Спросить еще", "Вы вытянули из неё всё, что могли")
+	addButton("Хватит", "Разговоров было достаточно", "endthescene")

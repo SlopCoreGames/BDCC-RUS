@@ -21,9 +21,9 @@ func _reactInit():
 
 func _run():
 	if(state == ""):
-		saynn("You disposed of that item")
+		saynn("Вы избавились от этого предмета")
 		
-		addButton("Continue", "Okay", "endthescene")
+		addButton("Продолжить", "Окей", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

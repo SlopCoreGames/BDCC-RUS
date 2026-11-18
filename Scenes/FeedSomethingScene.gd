@@ -15,11 +15,11 @@ func _run():
 		addCharacter(charID)
 		var theChar:BaseCharacter = getCharacter(charID)
 		if(!theChar):
-			addButton("Close", "Something went wrong", "endthescene")
+			addButton("Закрыть", "Что-то пошло не так", "endthescene")
 			return
 		
-		saynn("{npc.name} trusts you enough for you to be able to feed {npc.him} something!")
-		addButton("Back", "You did enough here", "endthescene")
+		saynn("{npc.name} достаточно доверяет тебе, чтобы позволить скормить {npc.him} что-нибудь!")
+		addButton("Назад", "На этом ты сделал достаточно", "endthescene")
 		
 		var _hasSomething:bool = false
 		for theItemA in GM.pc.inventory.items:
@@ -31,7 +31,7 @@ func _run():
 			addButton(theItem.getStackName(), theItem.getVisisbleDescription(), "use_item", [theItem])
 		
 		if(!_hasSomething):
-			saynn("You don't have anything you can feed to {npc.him} currently. Go get some drugs!")
+			saynn("Сейчас у тебя нет ничего, чем можно было бы накормить {npc.him}. Сходи раздобудь немного наркоты!")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

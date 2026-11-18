@@ -27,7 +27,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Set pc loc",
+			text = "Установить позу @@B*@@",
 		},
 		{
 			type = "slot",

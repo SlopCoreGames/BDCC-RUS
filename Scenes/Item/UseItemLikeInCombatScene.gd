@@ -31,17 +31,17 @@ func _reactInit():
 func _run():
 	if(state == ""):
 		# Never should be here
-		addButton("Continue", "Oops", "endthescene")
+		addButton("Продолжить", "Ой", "endthescene")
 		
 	if(state == "afteruse"):
 		saynn(savedText)
 		
-		addButton("Continue", "You did it", "endthescene")
+		addButton("Продолжить", "У тебя получилось", "endthescene")
 
 	if(state == "tooToxic"):
-		saynn("You're too intoxicated to use this")
+		saynn("Ты слишком пьян, чтобы использовать это")
 			
-		addButton("Continue", "Aww", "endthescene")
+		addButton("Продолжить", "О-о-о...", "endthescene")
 		return
 
 func _react(_action: String, _args):

@@ -4,7 +4,7 @@ func _init():
 	id = "Mirri"
 	
 func getName() -> String:
-	return "Blacktail Market"
+	return "Рынок Блэктейл"
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):

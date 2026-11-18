@@ -5,89 +5,89 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("Do you wanna reset the main route? You will be able to try another main route if you do so. But you [b]can't undo[/b] this action!")
+		saynn("Хочешь сбросить основной маршрут? Если сделаешь это, то сможешь попробовать другой путь. Но это действие [b]нельзя будет отменить[/b]!")
 		
 		if(!GM.main.MRH.history.empty()):
-			sayn("History of your endings:")
+			sayn("История твоих концовок:")
 			for theEnding in GM.main.MRH.history:
-				sayn("Day "+str(theEnding.day)+": "+MainRouteEnding.getName(theEnding.ending))
+				sayn("День "+str(theEnding.day)+": "+MainRouteEnding.getName(theEnding.ending))
 		
-		addButton("RESET", "Reset the main route!", "doReset")
-		addButton("Abort", "You changed your mind", "endthescene")
+		addButton("RESET", "Сбросить основной маршрут!", "doReset")
+		addButton("Отмена", "Вы передумали", "endthescene")
 	if(state == "doReset"):
 		playAnimation(StageScene.Sleeping, "sleep")
-		saynn("You close your eyes, letting the world around you dissolve into nothingness.")
+		saynn("Ты закрываешь глаза, позволяя окружающему миру раствориться в небытии.")
 
-		saynn("You're surrounded by pure darkness.. It's cozy here actually.")
+		saynn("Вокруг тебя — кромешная тьма... А на самом деле здесь довольно уютно.")
 
-		saynn("The old dream became a reality. That's nice. Makes you feel accomplished.")
+		saynn("Старая мечта стала реальностью. Приятно. Чувствуешь, что чего-то добился.")
 
-		saynn("But the dreaming never really ends, does it?")
+		saynn("Но сны ведь никогда по-настоящему не заканчиваются, верно?")
 
-		addButton("Dream away", "See what the new day will bring to you..", "do_sleep")
+		addButton("Спи дальше", "Посмотрим, что принесет тебе этот новый день...", "do_sleep")
 	if(state == "do_sleep"):
 		addCharacter("risha")
 		playAnimation(StageScene.Duo, "stand", {npc="risha"})
-		saynn("You come back to your senses to the sound of inmate chatter.. and footsteps on the concrete floor. The bed beneath you is hard, the pillow thin.. the usual.")
+		saynn("Ты приходишь в себя под шум голосов заключенных... и топот шагов по бетонному полу. Кровать под тобой жесткая, подушка тонкая... всё как обычно.")
 
-		saynn("Through the barred window of your cell, you see a familiar silhouette. Risha. She knocks on the glass and then switches on the intercom.")
+		saynn("Сквозь решетчатое окно своей камеры ты видишь знакомый силуэт. Риша. Она стучит по стеклу, а затем включает интерком.")
 
-		saynn("[say=risha]Up, inmate. I won't ask twice.[/say]")
+		saynn("[say=risha]Подъем, зэчка. Дважды повторять не буду.[/say]")
 
-		saynn("You obey, getting off the bed. The lynx guard enters your cell, her red eyes scanning you and your immediate surroundings.")
+		saynn("Ты повинуешься и слезаешь с кровати. В камеру входит стражница-рысь, ее красные глаза сканируют тебя и всё вокруг.")
 
-		saynn("[say=risha]Lazy time is over, inmate. I want you to go down to the mineshafts level and do some actual work.[/say]")
+		saynn("[say=risha]Время лени прошло, заключенная. Спускайся на уровень шахт и займись делом.[/say]")
 
-		saynn("She pauses and tilts her head. Her ears twitch, her expression changes as she says that.")
+		saynn("Она делает паузу и наклоняет голову набок. Ее уши дергаются, а выражение лица меняется, когда она произносит следующее:")
 
-		saynn("[say=risha]I have this.. strange feeling.. for some reason. Weird.[/say]")
+		saynn("[say=risha]У меня такое... странное чувство... почему-то. Странно.[/say]")
 
-		saynn("She stares at you for a long moment, her brows furrowed.")
+		saynn("Она долго пристально смотрит на тебя, нахмурив брови.")
 
-		saynn("[say=pc]Deja vu?[/say]")
+		saynn("[say=pc]Дежавю?[/say]")
 
-		saynn("[say=risha]The ja what? Use words, you stupid slut.[/say]")
+		saynn("[say=risha]Чего-чего? Говори нормально, тупая шлюха.[/say]")
 
-		saynn("Risha stares at her hands.. and at her current surroundings. Then she shakes it off.")
+		saynn("Риша смотрит на свои руки... а затем на то, что её окружает. Затем она встряхивает головой, отгоняя мысли.")
 
-		saynn("[say=risha]Whatever. Go hit those rocks.[/say]")
+		saynn("[say=risha]Похрен. Иди и долби эти камни.[/say]")
 
-		addButton("Fine", "Tell her you will do it", "wake_fine")
-		addButton("Fuck off", "Tell her you're not happy", "wake_fuck_off")
+		addButton("Ладно", "Сказать, что сделаешь это", "wake_fine")
+		addButton("Отъебись", "Сказать ей, что ты не счастлив", "wake_fuck_off")
 	if(state == "wake_fine"):
-		saynn("[say=pc]You're the boss.[/say]")
+		saynn("[say=pc]Как пожелаешь, босс.[/say]")
 
-		saynn("Risha smirks and gives you a cold pat on the head.")
+		saynn("Риша ухмыляется и холодно хлопает тебя по голове.")
 
-		saynn("[say=risha]Stay obedient and maybe you will even enjoy it here.[/say]")
+		saynn("[say=risha]Будь послушным, и, возможно, тебе здесь даже понравится.[/say]")
 
-		saynn("She leans down, bringing her face level with yours.")
+		saynn("Она наклоняется, приближая своё лицо к твоему.")
 
-		saynn("[say=risha]As my fucktoy~.[/say]")
+		saynn("[say=risha]Как мою личную шлюшку~.[/say]")
 
-		saynn("She suddenly gives your butt a good spank, forcing a gasp out of you.")
+		saynn("Она внезапно отвешивает тебе звонкий шлепок по заднице, заставляя тебя ахнуть.")
 
-		saynn("[say=pc]I missed you too.[/say]")
+		saynn("[say=pc]Я тоже скучала.[/say]")
 
-		saynn("[say=risha]What? Such a slut.[/say]")
+		saynn("[say=risha]Что? Ну и шлюха.[/say]")
 
-		saynn("She exits your cell and continues on her way, leaving you alone with your thoughts.")
+		saynn("Она выходит из твоей камеры и идет дальше, оставляя тебя наедине со своими мыслями.")
 
-		addButton("Continue", "Time to head to the mineshafts", "endthescene")
+		addButton("Продолжить", "Пора выдвигаться к шахтам.", "endthescene")
 	if(state == "wake_fuck_off"):
-		saynn("[say=pc]Why don't you fuck off and pester someone else instead.[/say]")
+		saynn("[say=pc]Почему бы тебе просто не съебаться и не достать кого-нибудь другого?[/say]")
 
-		saynn("Risha reaches towards her sheathed stun baton.. her palm rests on top of it.")
+		saynn("Риша тянется к своей вложенной в ножны электродубинке... её ладонь ложится на рукоять.")
 
-		saynn("[say=risha]You want me to put a leash on you and personally drag you off to the mines myself? I can also just put you into stocks and let every inmate have a turn at using you, sex toys are very popular here, you lazy slut.[/say]")
+		saynn("[say=risha]Ты хочешь, чтобы я нацепила на тебя поводок и лично потащила тебя в шахты? Или мне просто посадить тебя в колодки, чтобы каждый заключенный мог на тебе отыграться? Секс-игрушки здесь очень популярны, ленивая ты шлюха![/say]")
 
-		saynn("[say=pc]I know. I'm glad you're still the same, Risha.[/say]")
+		saynn("[say=pc]Знаю. Я рад, что ты всё такая же, Риша.[/say]")
 
-		saynn("[say=risha]What? Such a slut.[/say]")
+		saynn("[say=risha]Что? Ну и шлюха.[/say]")
 
-		saynn("She exits your cell and continues on her way, leaving you alone with your thoughts.")
+		saynn("Она выходит из твоей камеры и идет дальше, оставляя тебя наедине со своими мыслями.")
 
-		addButton("Continue", "Time to head to the mineshafts", "endthescene")
+		addButton("Продолжить", "Пора выдвигаться к шахтам.", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -9,28 +9,28 @@ func _init():
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.TFLook, "start")
-		saynn("A strange sensation begins to wash over you..")
+		saynn("Странное ощущение начинает накрывать тебя...")
 		
-		saynn("Something is happening to your body.. you can feel it..")
+		saynn("С твоим телом что-то происходит... ты это чувствуешь...")
 		
-		addButton("Continue", "See what happens..", "doTF")
+		addButton("Продолжить", "Посмотреть, что будет...", "doTF")
 		
 	if(state == "afterTF"):
 		#if(tfCount >= 2):
-		#	saynn("But that's not all..")
+		#	saynn("Но это еще не всё...")
 		
 		saynn(savedText)
 		
 		var tfHolder:TFHolder = GM.pc.getTFHolder()
 		if(tfHolder.hasPendingTransformations()):
-			saynn("You get a feeling that something else is about to happen to you..")
+			saynn("У тебя возникает предчувствие, что вот-вот случится что-то еще...")
 			
-			addButton("More??", "See what happens to you next..", "doTF")
+			addButton("Еще??", "Посмотреть, что будет с тобой дальше...", "doTF")
 		else:
-			addButton("Continue", "You changed..", "endthescene")
+			addButton("Продолжить", "Ты изменился...", "endthescene")
 		
 		#if(true):
-		#	addButton("UNDO ALL", "See what happens..", "undoall")
+		#	addButton("ОТМЕНИТЬ ВСЁ", "Посмотреть, что будет...", "undoall")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

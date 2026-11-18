@@ -4,7 +4,7 @@ func _init():
 	id = "SlaveryShaftMiner"
 	
 func getName() -> String:
-	return "Shaft Miner"
+	return "Шахтер шахты"
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):

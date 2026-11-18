@@ -28,11 +28,11 @@ func getLoc() -> String:
 
 func getInteractInfo() -> Dictionary:
 	return {
-		text = "You found something!",
+		text = "Ты что-то нашел!",
 		actions = [
 			{
 				id = "act",
-				name = "Act",
+				name = "Действие",
 				desc = "Do something!",
 				args = [],
 				disabled = false,

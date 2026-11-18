@@ -27,7 +27,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Is content enabled",
+			text = "Контент включен",
 		},
 		{
 			type = "slot",

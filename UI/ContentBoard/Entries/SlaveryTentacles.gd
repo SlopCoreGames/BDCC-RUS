@@ -4,7 +4,7 @@ func _init():
 	id = "SlaveryTentacles"
 	
 func getName() -> String:
-	return "Tentacles Biolab"
+	return "Биолаборатория щупалец"
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):

@@ -116,7 +116,7 @@ func run(_triggerID, _args):
 	execute(code)
 	
 	if(storedErrors.size() > 0):
-		saynn("[color=red](Trigger for scene: "+str(datapack.id)+":"+str(datapackScene.id)+") "+Util.join(storedErrors, "\n")+"[/color]")
+		saynn("[color=red](Триггер для сцены:"+str(datapack.id)+":"+str(datapackScene.id)+") "+Util.join(storedErrors, "\n")+"[/color]")
 		storedErrors = []
 
 	#execute(code)

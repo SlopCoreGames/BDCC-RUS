@@ -12,14 +12,14 @@ func getKeepScore() -> float:
 	return 0.8
 
 func getText():
-	return "{main.name} is patroling the prison!"
+	return "{main.name} патрулирует тюрьму!"
 
 func getActions() -> Array:
 	if(getLocation() == nextTarget):
 		return [
 			{
 				id = "rest",
-				name = "Rest",
+				name = "Отдохнуть",
 				desc = "Take a short rest",
 				score = 1.0,
 				args = {},
@@ -29,7 +29,7 @@ func getActions() -> Array:
 	return [
 		{
 			id = "go",
-			name = "Patrol!",
+			name = "Патрулируй!",
 			desc = "Patrol the station",
 			score = 1.0,
 			args = {},

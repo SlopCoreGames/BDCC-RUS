@@ -19,7 +19,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Run code once",
+			text = "Выполнить код один раз",
 		},
 		{
 			type = "slot_list",

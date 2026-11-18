@@ -27,7 +27,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Is PC in location",
+			text = "Находится ли ПК в локации",
 		},
 		{
 			type = "slot",

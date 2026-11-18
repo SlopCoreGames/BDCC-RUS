@@ -513,7 +513,7 @@ func updateSelectedTrigger():
 	trigger_settings_full_list.visible = true
 	
 	trigger_type_selector.setData({
-		name = "Type",
+		name = "Тип",
 		value = selectedTrigger.triggerType,
 		values = DatapackSceneTriggerType.getAllWithNames(),
 	})
@@ -521,7 +521,7 @@ func updateSelectedTrigger():
 	updateSelectedTriggerType()
 	
 	trigger_execute_type.setData({
-		name = "Execute type",
+		name = "Тип выполнения",
 		value = selectedTrigger.executeType,
 		instantSet = true,
 		values = [
@@ -532,7 +532,7 @@ func updateSelectedTrigger():
 	updateSelectedExecuteType()
 	
 	trigger_priority.setData({
-		name = "Trigger priority",
+		name = "Приоритет срабатывания",
 		value = selectedTrigger.priority,
 	})
 	

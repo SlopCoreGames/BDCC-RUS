@@ -70,13 +70,13 @@ margin_bottom = 720.0
 [node name="ConfirmButton" type="Button" parent="VBoxContainer/HBoxContainer2"]
 margin_right = 62.0
 margin_bottom = 20.0
-text = "Confirm"
+text = "Подтвердить"
 
 [node name="CancelButton" type="Button" parent="VBoxContainer/HBoxContainer2"]
 margin_left = 66.0
 margin_right = 120.0
 margin_bottom = 20.0
-text = "Cancel"
+text = "Отмена"
 
 [connection signal="item_selected" from="VBoxContainer/HBoxContainer/FloorList" to="." method="_on_FloorList_item_selected"]
 [connection signal="item_selected" from="VBoxContainer/HBoxContainer/CellList" to="." method="_on_CellList_item_selected"]

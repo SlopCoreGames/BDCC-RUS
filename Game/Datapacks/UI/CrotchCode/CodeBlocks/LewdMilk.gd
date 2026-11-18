@@ -63,7 +63,7 @@ func getTemplate():
 		},
 		{
 			type = "label",
-			text = "How much:",
+			text = "Количество:",
 		},
 		{
 			type = "slot",

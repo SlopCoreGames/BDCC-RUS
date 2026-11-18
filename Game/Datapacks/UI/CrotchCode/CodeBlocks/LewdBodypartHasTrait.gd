@@ -61,7 +61,7 @@ func getTemplate():
 		},
 		{
 			type = "label",
-			text = "has trait",
+			text = "имеет черту",
 		},
 		{
 			type = "slot",

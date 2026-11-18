@@ -57,41 +57,41 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Sybian, "ride", {nosybian=true,bodyState={exposedCrotch=true}})
 		
-		saynn("With a press of a button, a gentle hum fills the air as the penis pump activates, creating a stimulating suction.")
+		saynn("При нажатии кнопки воздух наполняется мягким гулом — включается насос для члена, создавая стимулирующее всасывание.")
 		
-		saynn("You feel a gradual buildup of arousal with each pump, your penis responding with throbs and twitches as the soft pleasure ring starts to stroke it.")
+		saynn("С каждым качком ты чувствуешь, как возбуждение нарастает, а твой член отзывается пульсацией и подергиваниями, пока мягкое кольцо начинает ласкать его.")
 		
-		saynn("Little moans begin to escape from you, blending with the mechanical sounds of the pump.")
+		saynn("Из твоих уст начинают вырываться тихие стоны, сливающиеся с механическим звуком насоса.")
 		
-		saynn("Soon, you begin to approach your climax. Your body squirms as the strokes and pumps are gently pushing you past your edge.")
+		saynn("Вскоре ты приближаешься к пику. Твое тело извивается, пока ритмичные толчки и всасывание мягко подталкивают тебя к самому краю.")
 		
-		saynn("With a passionate moan, your {pc.penis} starts throbbing and shooting thick strings of {pc.cum} that are quickly collected by the pump.")
+		saynn("С пылким стоном твой {pc.penis} начинает пульсировать и извергать густые струи {pc.cum}, которые насос тут же собирает.")
 		
-		saynn("After that.. you turn the device off.")
+		saynn("После этого... ты выключаешь устройство.")
 		
-		addButton("Continue", "Neat", "endthescene")
+		addButton("Продолжить", "Аккуратно", "endthescene")
 
 	if(state == "restraintequipped"):
-		saynn("You can't put on the penis pump because some restraint blocks your cock")
+		saynn("Ты не можешь надеть насос, потому что твой член что-то блокирует.")
 		
-		addButton("Continue", "Aww", "endthescene")
+		addButton("Продолжить", "О-о-о...", "endthescene")
 
 	if(state == "blockedhands"):
-		saynn("You really try to put penis pump on but your blocked hands prevent you from doing so")
+		saynn("Ты изо всех сил пытаешься надеть насос, но скованные руки мешают тебе это сделать.")
 		
-		addButton("Continue", "Aww", "endthescene")
+		addButton("Продолжить", "О-о-о...", "endthescene")
 	
 	if(state == "nopenis"):
-		saynn("You try to put on the penis pump.. But then you realize that you don't have a penis.. Oh no..")
+		saynn("Ты пытаешься надеть насос... но тут до тебя доходит, что у тебя нет члена... О нет...")
 		
-		saynn("You make sure and check again.. nope.."+str(" All you have is a pussy.. You try to pump your pussy.. but this particular pump works by stroking rather than creating negative pressure.. so you fail spectacularly.." if GM.pc.hasReachableVagina() else ""))
+		saynn("Ты перепроверяешь еще раз... нет, точно нет..."+str(" All you have is a pussy.. You try to pump your pussy.. but this particular pump works by stroking rather than creating negative pressure.. so you fail spectacularly.." if GM.pc.hasReachableVagina() else ""))
 		
-		addButton("Continue", "Aww", "endthescene")
+		addButton("Продолжить", "О-о-о...", "endthescene")
 	
 	if(state == "noreachpenis"):
-		saynn("You can't reach your penis.. so you can't put on a penis pump on it..")
+		saynn("Ты не можешь дотянуться до своего члена... так что не можешь надеть на него помпу...")
 		
-		addButton("Continue", "Aww", "endthescene")
+		addButton("Продолжить", "О-о-о...", "endthescene")
 		
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

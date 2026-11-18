@@ -20,215 +20,215 @@ func _run():
 	if(state == ""):
 		addCharacter("eliza", ["naked"])
 		playAnimation(StageScene.Duo, "sit", {npc="eliza"})
-		saynn("You enter the cell. Eliza is right where you left her, chained to the pipe above her, still wearing that straitjacket that makes her tits visible.")
+		saynn("Ты входишь в камеру. Элиза сидит ровно там же, где ты её оставил, прикованная цепью к трубе над головой; на ней всё та же смирительная рубашка, из-за которой её титьки так и бросаются в глаза.")
 
-		saynn("There is a chair in the corner. You take a seat.")
+		saynn("В углу стоит стул. Ты садишься.")
 
-		saynn("[say=pc]Gonna ask you some random things.[/say]")
+		saynn("[say=pc]Сейчас буду задавать тебе всякие разные вопросы.[/say]")
 
-		saynn("Eliza just glares at you.")
+		saynn("Элиза лишь сверлит тебя взглядом.")
 
 		saynn("[say=eliza]...[/say]")
 
-		addButton("Continue", "See what happens next", "ask_next")
+		addButton("Продолжить", "Смотреть, что будет дальше", "ask_next")
 	if(state == "0"):
-		saynn("[say=pc]So.. I get it that you're not happy about this.[/say]")
+		saynn("[say=pc]Так... я понимаю, что ты не в восторге от происходящего.[/say]")
 
-		saynn("Eliza just keeps glaring at you.")
+		saynn("Элиза продолжает сверлить тебя взглядом.")
 
-		saynn("[say=pc]Gonna say anything?[/say]")
+		saynn("[say=pc]Может, скажешь хоть слово?[/say]")
 
 		saynn("[say=eliza]...[/say]")
 
-		saynn("Looks like you are getting the silent treatment.")
+		saynn("Похоже, ты решила поиграть в молчанку.")
 
 		addRecButtons()
 	if(state == "1"):
-		saynn("[say=pc]You're a smart kitty, I know that. Why are you pretending to be dumb right now?[/say]")
+		saynn("[say=pc]Ты умная кошечка, я это знаю. Зачем же ты сейчас прикидываешься дурочкой?[/say]")
 
 		saynn("[say=eliza]...[/say]")
 
-		saynn("Her tail wags behind her, annoyed.")
+		saynn("Её хвост раздражённо дёргается позади неё.")
 
-		saynn("[say=pc]You're saving us a ballgag, thank you.[/say]")
+		saynn("[say=pc]Ты экономишь нам на шарике для кляпа, спасибо.[/say]")
 
-		saynn("A quick roll of her eyes.")
+		saynn("Она лишь быстро закатывает глаза.")
 
 		addRecButtons()
 	if(state == "2"):
-		saynn("[say=pc]Do you realize that we won't just let you go?[/say]")
+		saynn("[say=pc]Ты хоть понимаешь, что мы тебя просто так не отпустим?[/say]")
 
-		saynn("No reaction from her.")
+		saynn("Она никак не реагирует.")
 
-		saynn("[say=pc]Especially after what you did to Kait.[/say]")
+		saynn("[say=pc]Особенно после того, что ты сотворила с Кейт.[/say]")
 
-		saynn("[say=eliza]I don't regret drugging her up. Is that it?[/say]")
+		saynn("[say=eliza]То есть ты о том, что я накачала её дурманом? И это всё?[/say]")
 
-		saynn("There we go.")
+		saynn("Вот так-то лучше.")
 
-		saynn("[say=pc]But do you regret us blowing up the mental ward?[/say]")
+		saynn("[say=pc]Но жалеешь ли ты о том, что мы разнесли психиатрическое отделение?[/say]")
 
-		saynn("[say=eliza]Walls can be rebuilt, doors replaced. But what that patient experienced.. it will stay with her until the end of her life.[/say]")
+		saynn("[say=eliza]Стены можно отстроить заново, двери — заменить. Но то, через что прошла та пациентка... это останется с ней до конца дней.[/say]")
 
-		saynn("[say=pc]Kait is strong. You just made her act silly for a little bit.[/say]")
+		saynn("[say=pc]Кейт сильная. Ты просто заставила её на время вести себя как дурочка.[/say]")
 
-		saynn("[say=eliza]It left a mark on her, trust me.[/say]")
+		saynn("[say=eliza]Поверь мне, это оставило на ней след.[/say]")
 
-		saynn("[say=pc]Whatever you say.[/say]")
+		saynn("[say=pc]Как скажете.[/say]")
 
-		saynn("[say=eliza]If I were you, I'd be more afraid of a certain someone.[/say]")
+		saynn("[say=eliza]На твоем месте я бы больше опасался кое-кого другого.[/say]")
 
-		saynn("[say=pc]What the fuck are you talking about?[/say]")
+		saynn("[say=pc]О чем ты, блять, вообще говоришь?[/say]")
 
-		saynn("[say=eliza]Oh, so you don't know. Well, I'm not telling you then.[/say]")
+		saynn("[say=eliza]О, так ты не в курсе. Ну, тогда я тебе не скажу.[/say]")
 
-		saynn("She is bluffing, surely.")
+		saynn("Она наверняка блефует.")
 
 		addRecButtons()
 	if(state == "3"):
-		saynn("[say=pc]So you like drugs?[/say]")
+		saynn("[say=pc]Так тебе нравятся наркотики?[/say]")
 
-		saynn("[say=eliza]I'm a chemist.[/say]")
+		saynn("[say=eliza]Я химик.[/say]")
 
-		saynn("[say=pc]I'm sure you enjoy making drugs. I'm asking about a different thing.[/say]")
+		saynn("[say=pc]Уверена, тебе нравится их варить. Но я спрашиваю о другом.[/say]")
 
-		saynn("[say=eliza]The process of testing them can be quite entertaining too.[/say]")
+		saynn("[say=eliza]Процесс их тестирования тоже может быть весьма увлекательным.[/say]")
 
-		saynn("[say=pc]Are you a user?[/say]")
+		saynn("[say=pc]Ты сама торчишь?[/say]")
 
-		saynn("[say=eliza]Are you asking me if I'm a junkie? Ha. That's the most rude thing I've heard the whole week. I am making medical drugs. Meds.[/say]")
+		saynn("[say=eliza]Ты что, спрашиваешь, не торчу ли я? Ха. Это самое грубое, что я слышала за всю неделю. Я создаю лекарственные препараты. Медикаменты![/say]")
 
-		saynn("[say=pc]I've seen your drugs. They're not medical.[/say]")
+		saynn("[say=pc]Я видела твою «дурь». Это совсем не лекарства.[/say]")
 
-		saynn("[say=eliza]I'm testing drugs that might become medical in the future.[/say]")
+		saynn("[say=eliza]Я тестирую препараты, которые в будущем могут стать лекарствами.[/say]")
 
-		saynn("[say=pc]Is that what you're saying to yourself? What if someone tests your drugs on you?[/say]")
+		saynn("[say=pc]И это ты сама себе говоришь? А что, если кто-то протестирует твои таблетки на тебе самой?[/say]")
 
-		saynn("[say=eliza]Then they would deeply regret it.[/say]")
+		saynn("[say=eliza]Тогда они горько об этом пожалеют.[/say]")
 
 		addRecButtons()
 	if(state == "4"):
-		saynn("[say=pc]I saw you choking Ferri.[/say]")
+		saynn("[say=pc]Я видела, как ты душила Ферри.[/say]")
 
-		saynn("[say=eliza]I saw her blow up my mental ward.[/say]")
+		saynn("[say=eliza]А я видела, как она разнесла мой психбольницу к чертям.[/say]")
 
-		saynn("[say=pc]What happened to do no harm? You're a doctor.[/say]")
+		saynn("[say=pc]А как же принцип «не навреди»? Ты же врач![/say]")
 
-		saynn("[say=eliza]Reality happened. Take off your rose-tinted glasses.[/say]")
+		saynn("[say=eliza]Реальность вмешалась. Сними уже свои розовые очки.[/say]")
 
-		saynn("[say=pc]Something tells me that you enjoy torturing your patients.[/say]")
+		saynn("[say=pc]Что-то мне подсказывает, что тебе нравится пытать своих пациентов.[/say]")
 
-		saynn("[say=eliza]Something tells me that Ferri enjoyed it.[/say]")
+		saynn("[say=eliza]Что-то мне подсказывает, что Ферри это понравилось.[/say]")
 
-		saynn("[say=pc]Would you enjoy it?[/say]")
+		saynn("[say=pc]А тебе бы понравилось?[/say]")
 
-		saynn("[say=eliza]You accused me of being a sadist and now you're asking if I'm also a masochist?[/say]")
+		saynn("[say=eliza]Ты обвинила меня в садизме, а теперь спрашиваешь, не мазохистка ли я заодно?[/say]")
 
-		saynn("[say=pc]I guess so.[/say]")
+		saynn("[say=pc]Полагаю, что так.[/say]")
 
-		saynn("[say=eliza]I'm not gonna make it easy for you.[/say]")
+		saynn("[say=eliza]Легкой прогулки не жди.[/say]")
 
-		saynn("[say=pc]We can do it the hard way then.[/say]")
+		saynn("[say=pc]Что ж, тогда пойдем по сложному пути.[/say]")
 
-		saynn("[say=eliza]I'm not scared. I've been clinically dead at least once in my life.[/say]")
+		saynn("[say=eliza]Я не боюсь. В своей жизни я уже хотя бы раз была клинически мертва.[/say]")
 
 		addRecButtons()
 	if(state == "5"):
-		saynn("[say=pc]Do you know that you're completely helpless in that straitjacket?[/say]")
+		saynn("[say=pc]Ты хоть понимаешь, насколько ты беспомощна в этом смирительном корсете?[/say]")
 
-		saynn("[say=eliza]Of course I know, I helped to pick this exact model. That's why I'm not struggling.[/say]")
+		saynn("[say=eliza]Конечно, понимаю, я сама помогала выбирать именно эту модель. Поэтому я и не вырываюсь.[/say]")
 
-		saynn("[say=pc]Why did you go with latex? Why the exposed tits?[/say]")
+		saynn("[say=pc]Почему именно латекс? И почему с открытой грудью?[/say]")
 
-		saynn("[say=eliza]Because it's hot. Good enough reason for you?[/say]")
+		saynn("[say=eliza]Потому что это сексуально. Этой причины тебе достаточно?[/say]")
 
-		saynn("[say=pc]Doesn't seem very professional.[/say]")
+		saynn("[say=pc]Не особо профессионально выглядит.[/say]")
 
-		saynn("[say=eliza]It does its job.[/say]")
+		saynn("[say=eliza]Свою задачу она выполняет.[/say]")
 
-		saynn("[say=pc]Why the chastity belt?[/say]")
+		saynn("[say=pc]Зачем здесь этот пояс верности?[/say]")
 
-		saynn("[say=eliza]To protect.[/say]")
+		saynn("[say=eliza]Для защиты.[/say]")
 
-		saynn("[say=pc]Patients need their naughty bits protected? Why? They can't even reach them.[/say]")
+		saynn("[say=pc]Пациентам нужно защищать свои интимные места? Зачем? Они же даже дотянуться до них не могут.[/say]")
 
-		saynn("[say=eliza]To protect from nurses.[/say]")
+		saynn("[say=eliza]Чтобы защитить их от медсестер.[/say]")
 
-		saynn("[say=pc]And inmates?[/say]")
+		saynn("[say=pc]А от заключенных?[/say]")
 
-		saynn("[say=eliza]Inmates would never get their hands on a mental ward patient.[/say]")
+		saynn("[say=eliza]Заключенные никогда не дотянутся до пациента психиатрического отделения.[/say]")
 
-		saynn("[say=pc]I have my hands on you right now.[/say]")
+		saynn("[say=pc]Прямо сейчас мои руки на тебе.[/say]")
 
-		saynn("[say=eliza]I'm not a patient.[/say]")
+		saynn("[say=eliza]Я не пациентка.[/say]")
 
-		saynn("[say=pc]And yet, you look like one. Do you like wearing the belt?[/say]")
+		saynn("[say=pc]И всё же, выглядишь ты как настоящая [заключенная]. Тебе нравится носить этот пояс?[/say]")
 
-		saynn("[say=eliza]I know that you have the key.[/say]")
+		saynn("[say=eliza]Я знаю, что ключ у тебя.[/say]")
 
-		saynn("[say=pc]What if I snap it in half? Right in front of you.[/say]")
+		saynn("[say=pc]А что, если я переломлю его пополам? Прямо у тебя на глазах.[/say]")
 
-		saynn("[say=eliza]That would be kinda hot.[/say]")
+		saynn("[say=eliza]Это было бы довольно горячо.[/say]")
 
 		addRecButtons()
 	if(state == "6"):
-		saynn("[say=pc]Do you like sex?[/say]")
+		saynn("[say=pc]Тебе нравится секс?[/say]")
 
-		saynn("[say=eliza]Sure.[/say]")
+		saynn("[say=eliza]Конечно.[/say]")
 
-		saynn("[say=pc]Rough sex?[/say]")
+		saynn("[say=pc]Грубый секс?[/say]")
 
-		saynn("[say=eliza]I prefer when it's romantic. Candles, king-sized bed and a fresh set of black lingerie.[/say]")
+		saynn("[say=eliza]Я предпочитаю романтику. Свечи, огромная кровать и комплект свежего черного белья.[/say]")
 
-		saynn("[say=pc]You will have to settle for a dirty cell, cold floor and a straitjacket.[/say]")
+		saynn("[say=pc]Тебе придется довольствоваться грязной камерой, холодным полом и смирительной рубашкой.[/say]")
 
-		saynn("[say=eliza]Charming.[/say]")
+		saynn("[say=eliza]Очаровательно.[/say]")
 
 		addRecButtons()
 	if(state == "7"):
-		saynn("[say=pc]Do you like degradation?[/say]")
+		saynn("[say=pc]Тебе нравится унижение?[/say]")
 
-		saynn("[say=eliza]Ponyplay, petplay.[/say]")
+		saynn("[say=eliza]Пониплей, петплей.[/say]")
 
-		saynn("[say=pc]Bark for me.[/say]")
+		saynn("[say=pc]Тявкни для меня.[/say]")
 
-		saynn("[say=eliza]Neigh. And besides, I am the one who degrades.[/say]")
+		saynn("[say=eliza]Иго-го! И вообще-то, это я здесь унижаю.[/say]")
 
-		saynn("[say=pc]Not in here, you're not. We're in charge here.[/say]")
+		saynn("[say=pc]Только не здесь. Здесь главные мы.[/say]")
 
-		saynn("[say=eliza]Like sewer rats, sure.[/say]")
+		saynn("[say=eliza]Как сточные крысы? Ну, конечно.[/say]")
 
-		saynn("[say=pc]You're not even that. You're nothing here.[/say]")
+		saynn("[say=pc]Ты даже не это. Здесь ты — пустое место.[/say]")
 
-		saynn("[say=eliza]I'm a damsel in distress. That's who I am right now.[/say]")
+		saynn("[say=eliza]Я — дева в беде. Вот кто я сейчас.[/say]")
 
-		saynn("[say=pc]No one is coming to save you.[/say]")
+		saynn("[say=pc]Никто не придет тебя спасать.[/say]")
 
-		saynn("[say=eliza]No one is coming to save you either.[/say]")
+		saynn("[say=eliza]Тебя тоже никто не придет спасать.[/say]")
 
 		addRecButtons()
 	if(state == "8"):
-		saynn("[say=pc]It doesn't have to come down to this. You could choose to submit willingly.[/say]")
+		saynn("[say=pc]Все не обязательно должно доходить до этого. Ты могла бы сдаться по доброй воле.[/say]")
 
-		saynn("[say=eliza]Why would I do that? Me? Submit to some dirty inmates?[/say]")
+		saynn("[say=eliza]С чего бы это? Мне? Сдаться каким-то грязным зэчкам?[/say]")
 
-		saynn("[say=pc]You're not that much above any of us.[/say]")
+		saynn("[say=pc]Ты не так уж и выше остальных.[/say]")
 
-		saynn("[say=eliza]I am on another level. Yes, I am very much above all of you. Do you even know who my mother is?[/say]")
+		saynn("[say=eliza]Я на совсем другом уровне. Да, я чертовски выше всех вас. Ты хоть знаешь, кто моя мать?[/say]")
 
-		saynn("[say=pc]She is a bad mother if she allowed you to be here.[/say]")
+		saynn("[say=pc]Плохая она мать, раз позволила тебе здесь оказаться.[/say]")
 
-		saynn("[say=eliza]Fuck. You.[/say]")
+		saynn("[say=eliza]Да пошел ты.[/say]")
 
-		saynn("[say=pc]Am I wrong?[/say]")
-
-		saynn("[say=eliza]...[/say]")
-
-		saynn("[say=pc]Yeah?[/say]")
+		saynn("[say=pc]Разве я не прав?[/say]")
 
 		saynn("[say=eliza]...[/say]")
 
-		saynn("[say=pc]Two can play at that game.[/say]")
+		saynn("[say=pc]Да?[/say]")
+
+		saynn("[say=eliza]...[/say]")
+
+		saynn("[say=pc]Теперь мы поиграем по моим правилам.[/say]")
 
 		saynn("[say=eliza]...[/say]")
 
@@ -240,45 +240,45 @@ func _run():
 
 		addRecButtons()
 	if(state == "9"):
-		saynn("[say=pc]What about cuddling?[/say]")
+		saynn("[say=pc]А как насчет того, чтобы пообниматься?[/say]")
 
-		saynn("[say=eliza]What about it?[/say]")
+		saynn("[say=eliza]И что с того?[/say]")
 
-		saynn("[say=pc]Do you like it?[/say]")
+		saynn("[say=pc]Тебе нравится?[/say]")
 
-		saynn("[say=eliza]No, of course not. Obviously. Why would I like cuddling? I hate cuddling, duh. Cuddling is like a torture to me, I would break instantly. I'd be begging by the end of it.[/say]")
+		saynn("[say=eliza]Нет, конечно нет. Очевидно же. С чего бы мне любить обнимашки? Терпеть их не могу, ясно тебе? Для меня это сплошная пытка, я же сломаюсь в миг. К концу процесса я уже на коленях буду умолять.[/say]")
 
-		saynn("[say=pc]Huh.[/say]")
+		saynn("[say=pc]Хм.[/say]")
 
-		saynn("[say=eliza]Did I say too much?[/say]")
+		saynn("[say=eliza]Я не слишком много сболтнула?[/say]")
 
 		addRecButtons()
 	if(state == "10"):
-		saynn("[say=pc]You had a lot of things on you. Deep pockets.[/say]")
+		saynn("[say=pc]У тебя было полно всякого разного. Глубокие карманы.[/say]")
 
-		saynn("[say=eliza]You better not touch any of it. Or you might cause a biological catastrophe.[/say]")
+		saynn("[say=eliza]Тебе лучше ничего не трогать. А то еще устроишь биологическую катастрофу.[/say]")
 
-		saynn("[say=pc]Too bad you don't get a choice in this.[/say]")
+		saynn("[say=pc]Жаль только, что выбора у тебя нет.[/say]")
 
-		saynn("[say=eliza]Too bad you have no idea what any of it does.[/say]")
+		saynn("[say=eliza]Жаль, что ты понятия не имеешь, что всё это делает.[/say]")
 
-		saynn("[say=pc]We have a chemist of our own.[/say]")
+		saynn("[say=pc]У нас есть свой химик.[/say]")
 
-		saynn("[say=eliza]Cool. Why would you need me then?[/say]")
+		saynn("[say=eliza]Круто. И нахрена я тебе тогда нужна?[/say]")
 
-		saynn("[say=pc]Good question. You will have to prove your usefulness.[/say]")
+		saynn("[say=pc]Хороший вопрос. Тебе придется доказать свою полезность.[/say]")
 
-		saynn("[say=eliza]Haha. I ain't gonna do shit for you.[/say]")
+		saynn("[say=eliza]Ха-ха. Ни хрена я для тебя делать не буду.[/say]")
 
-		saynn("[say=pc]Biological catastrophe it is then.[/say]")
+		saynn("[say=pc]Значит, биологическая катастрофа. Идет.[/say]")
 
-		saynn("[say=eliza]They might never find the bodies in this dirty shithole, you know.[/say]")
+		saynn("[say=eliza]В этой грязной дыре тела могут и вовсе не найти, знаешь ли.[/say]")
 
-		saynn("[say=pc]Your scare tactics don't work because you're here with us.[/say]")
+		saynn("[say=pc]Твои пугалки не работают, ведь ты здесь торчишь вместе с нами.[/say]")
 
-		saynn("[say=eliza]I'm okay with mutual annihilation.[/say]")
+		saynn("[say=eliza]Меня вполне устраивает взаимное уничтожение.[/say]")
 
-		saynn("[say=pc]I'm okay with using you as a test subject.[/say]")
+		saynn("[say=pc]Меня вполне устраивает идея использовать тебя как подопытную крысу.[/say]")
 
 		saynn("[say=eliza]...[/say]")
 

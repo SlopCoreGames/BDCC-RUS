@@ -2,7 +2,7 @@ extends Reference
 class_name DatapackQuest
 
 var id:String = "error"
-var name:String = "New quest"
+var name:String = "Новый квест"
 var isMain:bool = false
 var priority:float = 0.0
 
@@ -17,17 +17,17 @@ func getName():
 func getEditVars():
 	return {
 		"name": {
-			name = "Name",
+			name = "Имя",
 			type = "string",
 			value = name,
 		},
 		"isMain": {
-			name = "Is main quest",
+			name = "Основной квест",
 			type = "checkbox",
 			value = isMain,
 		},
 		"priority": {
-			name = "Priority in task list",
+			name = "Приоритет в списке задач",
 			type = "number",
 			value = priority,
 		},

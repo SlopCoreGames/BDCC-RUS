@@ -39,21 +39,21 @@ func _reactInit():
 
 func _run():
 	if(state == ""):
-		saynn("You swallow the contents of "+item.getVisibleName())
+		saynn("Вы проглатываете содержимое "+item.getVisibleName())
 		
 		saynn(savedEffects)
 		
-		addButton("Continue", "Okay", "endthescene")
+		addButton("Продолжить", "Окей", "endthescene")
 
 	if(state == "nothingtodrink"):
-		saynn("There was nothing to drink")
+		saynn("Пить было нечего")
 		
-		addButton("Continue", "aww", "endthescene")
+		addButton("Продолжить", "aww", "endthescene")
 
 	if(state == "cantdrink"):
-		saynn("Some restraint prevents you from drinking that")
+		saynn("Какая-то сдержанность мешает вам это выпить")
 		
-		addButton("Continue", "aww", "endthescene")
+		addButton("Продолжить", "aww", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

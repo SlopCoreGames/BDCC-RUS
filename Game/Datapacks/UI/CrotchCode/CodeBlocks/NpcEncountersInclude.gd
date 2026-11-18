@@ -27,7 +27,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Allow encounters with",
+			text = "Разрешить встречи с",
 		},
 		{
 			type = "slot",

@@ -11,8 +11,8 @@ func run(_triggerID, _args):
 	var theRoomID = _args[0]
 	
 	if(theRoomID in ["main_bathroom1", "main_bathroom2"]):
-		addButton("Mirror", "Change your haircut", "mirror")
-		addButton("Toilet", "Find an empty stall", "toilet")
+		addButton("Зеркало", "Изменить прическу", "mirror")
+		addButton("Туалет", "Найти свободную кабинку", "toilet")
 	
 func getPriority():
 	return 0

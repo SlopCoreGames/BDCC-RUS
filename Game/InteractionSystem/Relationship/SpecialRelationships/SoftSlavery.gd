@@ -6,10 +6,10 @@ func _init():
 	id = "SoftSlavery" # Soft means you can still do stuff in the prison
 
 func getVisibleName() -> String:
-	return "Soft slavery"
+	return "Мягкое рабство"
 
 func getCategoryName() -> String:
-	return "Owner"
+	return "Владелец"
 
 func getMapTag() -> String:
 	return "O"

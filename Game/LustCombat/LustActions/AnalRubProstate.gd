@@ -25,7 +25,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "Rub prostate"
+	return "@@B*@@Теребить простату@@T*@@@@F*@@"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "Focus on your p-spot"

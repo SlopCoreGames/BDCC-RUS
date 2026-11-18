@@ -17,7 +17,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "Prod anal"
+	return "Продукт-анализ"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "Start prodding at your anal ring"

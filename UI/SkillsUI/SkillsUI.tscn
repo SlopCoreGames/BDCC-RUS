@@ -79,13 +79,13 @@ size_flags_vertical = 0
 [node name="Label" type="Label" parent="VBoxContainer/TabContainer/Stats/ScrollContainer/HBoxContainer/PanelContainer/VBoxContainer"]
 margin_right = 620.0
 margin_bottom = 20.0
-text = "Character info"
+text = "Инфо о персонаже"
 
 [node name="NameLabel" type="Label" parent="VBoxContainer/TabContainer/Stats/ScrollContainer/HBoxContainer/PanelContainer/VBoxContainer"]
 margin_top = 24.0
 margin_right = 620.0
 margin_bottom = 44.0
-text = "Rahi"
+text = "Рахи"
 
 [node name="LevelBar" parent="VBoxContainer/TabContainer/Stats/ScrollContainer/HBoxContainer/PanelContainer/VBoxContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -108,7 +108,7 @@ margin_bottom = 103.0
 mouse_filter = 1
 bbcode_enabled = true
 bbcode_text = "Test data"
-text = "Test data"
+text = "Тестовые данные"
 fit_content_height = true
 
 [node name="Vbox" type="VBoxContainer" parent="VBoxContainer/TabContainer/Stats/ScrollContainer/HBoxContainer"]
@@ -133,13 +133,13 @@ size_flags_vertical = 3
 [node name="Label" type="Label" parent="VBoxContainer/TabContainer/Stats/ScrollContainer/HBoxContainer/Vbox/PanelContainer2/VBoxContainer"]
 margin_right = 620.0
 margin_bottom = 20.0
-text = "Primary stats"
+text = "Основные статы"
 
 [node name="FreeStatsLabel" type="Label" parent="VBoxContainer/TabContainer/Stats/ScrollContainer/HBoxContainer/Vbox/PanelContainer2/VBoxContainer"]
 margin_top = 24.0
 margin_right = 620.0
 margin_bottom = 44.0
-text = "Free stats: 0"
+text = "Свободные очки: 0"
 
 [node name="HSeparator" type="HSeparator" parent="VBoxContainer/TabContainer/Stats/ScrollContainer/HBoxContainer/Vbox/PanelContainer2/VBoxContainer"]
 margin_top = 48.0
@@ -166,14 +166,14 @@ margin_bottom = 160.0
 margin_right = 100.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 100, 50 )
-text = "Apply"
+text = "Применить"
 
 [node name="CancelButton" type="Button" parent="VBoxContainer/TabContainer/Stats/ScrollContainer/HBoxContainer/Vbox/PanelContainer2/VBoxContainer/HBoxContainer"]
 margin_left = 104.0
 margin_right = 204.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 100, 0 )
-text = "Cancel"
+text = "Отмена"
 
 [node name="SecondPanel" type="PanelContainer" parent="VBoxContainer/TabContainer/Stats/ScrollContainer/HBoxContainer/Vbox"]
 margin_top = 178.0
@@ -226,7 +226,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 256.0
 margin_bottom = 26.0
-text = "Close"
+text = "Закрыть"
 myShortcutKey = "1"
 
 [connection signal="visibility_changed" from="." to="." method="_on_SkillsUI_visibility_changed"]

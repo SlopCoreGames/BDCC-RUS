@@ -42,22 +42,22 @@ func _run():
 				var theNpcOwner:NpcOwnerBase = theSpecialRelationship.npcOwner
 				if(theNpcOwner.hasGivenPCTasks()):
 					if(!showedNpcOwnerThing):
-						saynn("[i]Owner tasks:[/i]")
+						saynn("[i]Задания владельца:[/i]")
 						showedNpcOwnerThing = true
 					
 					var theOwner = getCharacter(ownerID)
 					if(!theOwner):
 						continue
-					sayn("[b]"+theOwner.getName()+" tasks:[/b]")
+					sayn("[b]"+theOwner.getName()+" задания:[/b]")
 					var theTaskLines := theNpcOwner.getQuestProgressArray()
 					for textLine in theTaskLines:
 						sayn("* "+textLine)
 					sayn("")
 		
-		saynn("[i]Main tasks:[/i]")
+		saynn("[i]Основные задания:[/i]")
 		
 		if(mainQuests.size() == 0):
-			saynn("Nothing")
+			saynn("Ничего")
 		
 		for quest in mainQuests:
 			sayn("[b]"+quest.getVisibleName()+"[/b]")
@@ -67,10 +67,10 @@ func _run():
 				sayn("* "+line)
 			sayn("")
 			
-		saynn("[i]Side tasks:[/i]")
+		saynn("[i]Побочные задания:[/i]")
 		
 		if(sideQuests.size() == 0):
-			saynn("Nothing")
+			saynn("Ничего")
 		
 		for quest in sideQuests:
 			sayn("[b]"+quest.getVisibleName()+"[/b]")
@@ -80,22 +80,22 @@ func _run():
 				sayn("* "+line)
 			sayn("")
 			
-		saynn("[i]Completed tasks:[/i]")
+		saynn("[i]Выполненные задания:[/i]")
 		
 		if(completedQuests.size() == 0):
-			saynn("Nothing")
+			saynn("Ничего")
 		
 		for quest in completedQuests:
-			sayn("[b]"+quest.getVisibleName()+"[/b] (Completed)")
+			sayn("[b]"+quest.getVisibleName()+"[/b] (Выполнено)")
 			var progress = quest.getProgress()
 			progress.invert()
 			for line in progress:
 				sayn("* "+line)
 			sayn("")
 		
-		addButton("Close", "Close the quest log", "endthescene")
+		addButton("Закрыть", "Закрыть журнал квестов", "endthescene")
 		if(getFlag("ElizaModule.s0hap")):
-			addButton("Bounties", "Try to remember which bounties you can still do", "bounties")
+			addButton("Награды за голову", "Попытайся вспомнить, какие награды еще можно забрать", "bounties")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

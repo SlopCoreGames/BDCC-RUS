@@ -10,55 +10,55 @@ func _run():
 		addCharacter("risha")
 		playAnimation(StageScene.Duo, "stand", {npc="risha"})
 		
-		saynn("You were too tired to see any dreams tonight but you managed to get some good sleep at least. The sound of inmate chatter and their footsteps on concrete floors wake you up. You open your eyes and see a guard behind the window, the one that was protecting the captain yesterday. She knocks on the window and turns on the intercom.")
+		saynn("Сегодня тебе не снилось ничего, кроме сплошной усталости, зато удалось наконец-то выспаться. Тебя пробуждает гул голосов заключенных и топот ног по бетонному полу. Ты открываешь глаза и видишь за окном охранницу — ту самую, что вчера охраняла капитана. Она стучит в стекло и включает интерком.")
 
-		saynn("[say=risha]Up, inmate. I won’t ask twice.[/say]")
+		saynn("[say=risha]Подъем, зэк! Дважды повторять не стану.[/say]")
 
-		saynn("You willingly obey and get off the bed, it wasn’t very comfortable anyways. The guard opens the cell and steps inside.")
+		saynn("Ты послушно встаешь с кровати — она всё равно была чертовски неудобной. Охранница открывает камеру и заходит внутрь.")
 
-		saynn("[say=risha]Lazy time is over, inmate, I want you to go to the mineshafts level and do actual work.[/say]")
+		saynn("[say=risha]Время лени прошло, зэк. Живо на уровень шахт, пора заняться настоящей работой.[/say]")
 
 		if(GM.pc.getInventory().hasSlotEquipped(InventorySlot.Mouth)):
-			saynn("The guard also takes a note of your head harness.")
+			saynn("Охранница также бросает взгляд на твой шлем-гарнитуру.")
 
-			saynn("[say=risha]Ha, it seems like no one has taken it off since yesterday. And so won’t I, that's what you get for being bitey, brat.[/say]")
+			saynn("[say=risha]Ха, похоже, её никто не снимал со вчерашнего дня. Ну, тогда и я не буду — так тебе и надо, кусачая дрянь![/say]")
 
-		addButton("Fine", "Tell her you will do it", "fine")
-		addButton("Fuck off", "Tell her you’re not happy", "fuck_off")
+		addButton("Ладно", "Сказать, что сделаешь это", "fine")
+		addButton("Отъебись", "Сказать, что ты недоволен", "fuck_off")
 
 	if(state == "fine"):
-		saynn("[say=pc]You’re the boss.[/say]")
+		saynn("[say=pc]Как скажешь, босс.[/say]")
 
-		saynn("The guard smirks and gives you a cold head pat.")
+		saynn("Охранница ухмыляется и холодно похлопывает тебя по голове.")
 
-		saynn("[say=risha]Stay obedient and maybe you will even enjoy it here.[/say]")
+		saynn("[say=risha]Будь послушным, и, возможно, тебе здесь даже понравится.[/say]")
 
-		saynn("She leans down bringing your heads to the same level.")
+		saynn("Она наклоняется, чтобы ваши лица оказались на одном уровне.")
 
-		saynn("[say=risha]As my fucktoy~[/say]")
+		saynn("[say=risha]Как моей секс-игрушке~[/say]")
 
-		saynn("She suddenly gives your butt a good spank, forcing a gasp out of you.")
+		saynn("Она внезапно отвешивает тебе звонкий шлепок по заднице, заставляя тебя ахнуть.")
 
-		saynn("[say=risha]But for now, use the lift to get to the mineshafts.[/say]")
+		saynn("[say=risha]А пока что используй лифт, чтобы добраться до шахт.[/say]")
 
-		saynn("The guard exits your cell and continues on her way, leaving you alone with your thoughts.")
+		saynn("Охранница выходит из камеры и идет дальше, оставляя тебя наедине со своими мыслями.")
 		
-		addButton("Continue", "Time to do the do", "endTheScene")
+		addButton("Продолжить", "Пора заняться делом", "endTheScene")
 
 	if(state == "fuck_off"):
-		saynn("[say=pc]Why don’t you fuck off and pester someone else instead.[/say]")
+		saynn("[say=pc]Почему бы тебе просто не отъебаться и не достать кого-нибудь другого?[/say]")
 
-		saynn("The guard is not very surprised, though she keeps her hand on her stun baton in your clear view now.")
+		saynn("Охранница не особо удивлена, хотя теперь она держит руку на электрошоковой дубинке прямо у тебя перед глазами.")
 
-		saynn("[say=risha]You want me to put a leash on you and personally drag you off to the mines myself? I can also just put you into stocks and let every inmate have a turn at using you, sex toys are very popular here, you lazy slut.[/say]")
+		saynn("[say=risha]Ты хочешь, чтобы я нацепила на тебя поводок и лично потащила тебя в шахты? Или мне просто посадить тебя в колодки, чтобы каждый заключенный мог на тебе отыграться? Секс-игрушки здесь очень популярны, ленивая ты шлюха![/say]")
 
-		saynn("You grit your teeth but stay quiet, messing with the guard doesn’t seem like the best idea." + (" And besides, being muzzled doesn't help with that either." if (GM.pc.getInventory().hasSlotEquipped(InventorySlot.Mouth)) else "") ) # same but cleaner(?)
+		saynn("Ты стискиваешь зубы, но хранишь молчание — связываться с охранницей сейчас кажется не лучшей идеей." + (" And besides, being muzzled doesn't help with that either." if (GM.pc.getInventory().hasSlotEquipped(InventorySlot.Mouth)) else "") ) # same but cleaner(?)
 
-		saynn("[say=risha]Another fuck up like that near me and I will personally put you into stocks for everyone to fuck, that will show how big of a whore you are. Now go and use the lift to get to the mineshafts.[/say]")
+		saynn("[say=risha]Еще один такой косяк при мне, и я лично посажу тебя в колодки, чтобы все подряд тебя трахали — вот тогда ты поймешь, какая ты на самом деле шлюха. А теперь дуй к лифту и спускайся в шахты![/say]")
 
-		saynn("The guard exits your cell and continues on her way, leaving you alone with your thoughts.")
+		saynn("Охранница выходит из камеры и идет дальше, оставляя тебя наедине со своими мыслями.")
 		
-		addButton("Continue", "Time to do the do", "endTheScene")
+		addButton("Продолжить", "Пора заняться делом", "endTheScene")
 
 
 

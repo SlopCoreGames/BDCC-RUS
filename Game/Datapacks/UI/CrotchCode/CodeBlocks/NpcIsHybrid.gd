@@ -38,7 +38,7 @@ func getTemplate():
 		},
 		{
 			type = "label",
-			text = "a hybrid",
+			text = "гибрид",
 		},
 	]
 

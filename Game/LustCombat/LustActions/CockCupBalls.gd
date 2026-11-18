@@ -17,7 +17,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "Cup balls"
+	return "Сжать яички в ладонях"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "Give your testicles some love"

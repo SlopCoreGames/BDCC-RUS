@@ -11,12 +11,12 @@ script = ExtResource( 1 )
 margin_top = 3.0
 margin_right = 216.0
 margin_bottom = 17.0
-text = "Chance: 50% Item: 2-5x Painkiller"
+text = "Шанс: 50% Предмет: 2-5x @@B*@@Обезболивающее@@T*@@@@F*@@"
 
 [node name="DeleteButton" type="Button" parent="."]
 margin_left = 220.0
 margin_right = 275.0
 margin_bottom = 20.0
-text = "Delete"
+text = "Удалить"
 
 [connection signal="pressed" from="DeleteButton" to="." method="_on_DeleteButton_pressed"]

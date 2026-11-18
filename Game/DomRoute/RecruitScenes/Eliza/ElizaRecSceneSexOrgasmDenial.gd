@@ -23,110 +23,110 @@ func _run():
 		addCharacter("eliza", ["naked"])
 		aimCameraAndSetLocName("hideout_breakroom")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("You enter the cold cell. Eliza is still chained to the pipe above her. She is still wearing a straitjacket that came from her own mental ward. Her tits are exposed, her own bound arms supporting them. A metal chastity belt is locked around her waist.. a belt that you still have a key for.")
+		saynn("Ты входишь в холодную камеру. Элиза всё ещё прикована цепями к трубе над головой. На ней всё та же смирительная рубашка из её психиатрической лечебницы. Грудь обнажена, её собственные связанные руки приподнимают её. На талии застегнут металлический пояс целомудрия... пояс, ключ от которого всё ещё у тебя.")
 
-		saynn("She glares at you.")
+		saynn("Она сверлит тебя взглядом.")
 
 		saynn("[say=pc]"+str(ch1("...", "Hey there, slut.", "Getting used to it, I see."))+"[/say]")
 
-		saynn("Eliza says nothing back, just glaring. You approach her, holding the small key.")
+		saynn("Элиза ничего не отвечает, лишь сверлит тебя глазами. Ты подходишь к ней, сжимая в руке маленький ключик.")
 
-		saynn("You insert it into the lock on her chastity belt and turn it. The thing clicks, the whole assembly unlocking itself and then falling to the floor with a heavy clang, revealing Eliza's tight-looking pussy in the process.")
+		saynn("Ты вставляешь его в замок пояса целомудрия и поворачиваешь. Раздается щелчок, вся конструкция отпирается и с тяжелым лязгом падает на пол, обнажая тугую, аппетитную киску Элизы.")
 
-		saynn("Her breath hitches, eyelids twitching a bit. It's like she knows what is coming. She pulls at her chains.. but they don't offer her any give, keeping her helpless before you.")
+		saynn("Её дыхание сбивается, веки слегка подергиваются. Кажется, она знает, что будет дальше. Она дергается на цепях... но те не дают ей ни малейшей свободы, оставляя её совершенно беспомощной перед тобой.")
 
-		saynn("[say=eliza]Whatever it is.. Just get it over with..[/say]")
+		saynn("[say=eliza]Что бы это ни было... просто покончи с этим...[/say]")
 
 		saynn("[say=pc]"+str(ch1("...", "With pleasure.", "You don't get a say in this, slave."))+"[/say]")
 
-		addButton("Continue", "See what happens next", "straight_to_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "straight_to_sex")
 	if(state == "straight_to_sex"):
 		playAnimation(StageScene.SexMatingPress, "sex", {npc="eliza", bodyState={exposedCrotch=true,hard=true}})
 		if (!straponUsed):
-			saynn("The next moment, Eliza is on the floor, pinned, her back pressed against the cold floor. Her legs are pushed up high, folding her almost in half, giving you full access to her. And so you don't waste any time, you thrust your cock into her pussy raw.")
+			saynn("В следующее мгновение Элиза уже на полу, прижатая тобой, её спина вжата в холодный пол. Её ноги высоко задраны, она почти сложилась пополам, открывая тебе полный доступ. И ты не теряешь ни секунды, с силой вгоняя свой член в её киску без смазки.")
 
 		else:
-			saynn("The next moment, Eliza is on the floor, pinned, her back pressed against the cold floor. Her legs are pushed up high, folding her almost in half, giving you full access to her. Your strapon harness is already secured around your waist. And so you don't waste any time, thrusting your new shiny pre-lubed rubber cock into her pussy.")
+			saynn("В следующее мгновение Элиза уже на полу, прижатая тобой, её спина вжата в холодный пол. Её ноги высоко задраны, она почти сложилась пополам, открывая тебе полный доступ. Твой стрэп-он уже плотно затянут на талии. И ты не теряешь ни секунды, вонзая свой новый, блестящий, заранее смазанный резиновый член в её киску.")
 
-		saynn("[say=eliza]Nnh.. fucking animal..[/say]")
+		saynn("[say=eliza]Ннх... чертов зверь...[/say]")
 
 		if (!straponUsed):
-			saynn("She is pretty tight, her inner walls try to resist by clenching around you immediately. They squeeze and hug your shaft like they're trying to push you out. But they can't.")
+			saynn("Она довольно узкая, её внутренние стенки тут же пытаются сопротивляться, сжимаясь вокруг тебя. Они сдавливают и обхватывают твой член, словно пытаясь вытолкнуть его наружу. Но у них не получается.")
 
 		else:
-			saynn("She is pretty tight.. you don't exactly feel it yourself but the friction is quite high, her inner walls are trying to resist by clenching around the rubber toy immediately. They squeeze and hug your shaft like they're trying to push you out. But they can't.")
+			saynn("Она довольно узкая... ты не чувствуешь этого напрямую, но трение очень сильное: её внутренние стенки тут же пытаются сопротивляться, сжимаясь вокруг резиновой игрушки. Они сдавливают и обхватывают твой член, словно пытаясь вытолкнуть его наружу. Но у них не получается.")
 
-		saynn("You start to fuck her. Doing slow, deep thrusts.. keeping eye contact. Your hands are pressed against the floor by her sides, keeping you stable as you rail her sex, each rough motion pushing her into the floor more.")
+		saynn("Ты начинаешь трахать её. Медленными, глубокими толчками... не разрывая зрительного контакта. Твои руки упираются в пол по обе стороны от неё, обеспечивая устойчивость, пока ты вколачиваешься в её лоно, и каждое грубое движение всё сильнее прижимает её к полу.")
 
 		saynn("[say=pc]"+str(ch1("...", "Take it, you fucking bitch.", "You like that, don't you? Fucking slut."))+"[/say]")
 
-		saynn("[say=eliza]Nh.. gh.. fuck you..[/say]")
+		saynn("[say=eliza]Нх.. гх.. чертов..![/say]")
 
-		saynn("On your hardest thrusts, the tip of your "+str("cock" if !straponUsed else "strapon")+" smashes the entrance to her womb, creating a little bump below her belly. Her emerald eyes are wide, darting around the cell, refusing to look into yours for very long.")
+		saynn("При самых мощных толчках кончик твоего "+str("cock" if !straponUsed else "strapon")+" @@B*@@ смачно бьёт в самый зев её матки, создавая небольшую выпуклость под её животом. Её изумрудные глаза широко распахнуты, они мечутся по камере, она не может долго выдерживать твой взгляд.")
 
-		saynn("Despite her attempts to resist, her body is betraying her, making her slick down there for you.")
+		saynn("Несмотря на попытки сопротивляться, тело предает её, заставляя её там, внизу, течь от твоего напора.")
 
-		addButton("Continue", "See what happens next", "sex_faster")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sex_faster")
 	if(state == "sex_faster"):
 		playAnimation(StageScene.SexMatingPress, "fast", {npc="eliza", bodyState={exposedCrotch=true,hard=true}})
-		saynn("You speed up, railing her pussy slit harder, the wet sounds echoing in the small cell. All the onslaught starts forcing cute stifled moans out of Eliza, her inner walls shivering around you.")
+		saynn("Ты ускоряешься, всё сильнее вколачиваясь в её щель, и влажные шлепки эхом отдаются в тесной камере. Этот натиск заставляет Элизу издавать сдавленные стоны, а её внутренние стенки дрожат вокруг тебя.")
 
-		saynn("[say=eliza]Ah.. ahh.. hh..[/say]")
+		saynn("[say=eliza]Ах.. ахх.. хх..[/say]")
 
-		saynn("Each thrust is pushing her frame along the floor forward a bit.. but your legs, firmly planted, keep her from sliding too much.")
+		saynn("Каждый толчок немного сдвигает её тело по полу вперед... но твои ноги, крепко упертые в пол, не дают ей слишком сильно соскользнуть.")
 
-		saynn("You break eye contact and just focus on fucking her, giving in to the animalistic desire. The feline isn't exactly in the mood for chatting too, throwing her head back and moaning into the ceiling.")
+		saynn("Ты отводишь взгляд и просто сосредотачиваешься на трахе, поддаваясь животному желанию. Кошка тоже явно не настроена на болтовню: она запрокидывает голову и стонет в потолок.")
 
 		saynn("[say=pc]"+str(ch1("...", "Such a good sextoy.", "Nothing but a sextoy."))+"[/say]")
 
-		saynn("You grunt"+str(", feeling yourself getting close" if !straponUsed else ", the friction wearing you down")+". Eliza's whole body is tensing up too. She is about to cum.")
+		saynn("Ты кряхтишь"+str(", feeling yourself getting close" if !straponUsed else ", the friction wearing you down")+". Всё тело Элизы напрягается. Она вот-вот кончит.")
 
-		saynn("It would be such a shame to ruin that.")
+		saynn("Было бы обидно всё испортить.")
 
-		addButton("Deny her", "Deny Eliza the orgasm", "deny_eliza")
+		addButton("Отказать ей", "Лишить Элизу оргазма", "deny_eliza")
 	if(state == "deny_eliza"):
 		playAnimation(StageScene.SexMatingPress, "inside", {npc="eliza", bodyState={exposedCrotch=true,hard=true}, pcCum=!straponUsed, cum=!straponUsed})
-		saynn("Suddenly, you stop, completely. Almost fully pulling, only leaving the"+str(" rubber" if straponUsed else "")+" tip inside.")
+		saynn("Внезапно ты замираешь. Почти полностью выходя из неё, оставляя лишь"+str(" rubber" if straponUsed else "")+" самый кончик внутри.")
 
-		saynn("Eliza's whole body continues to stay sense, little moans are still escaping her from inertia. She looks up at you, her chest moving fast, a wild look in her eyes.")
+		saynn("Тело Элизы всё ещё дрожит, из неё по инерции всё ещё вырываются тихие стоны. Она смотрит на тебя снизу вверх, её грудь тяжело вздымается, а в глазах застыл дикий взгляд.")
 
-		saynn("[say=eliza]You.. stopped.. ah..[/say]")
+		saynn("[say=eliza]Ты.. остановился.. ах..[/say]")
 
-		saynn("You offer her a very mean, strict expression.")
+		saynn("Ты принимаешь очень суровый, строгий вид.")
 
 		saynn("[say=pc]"+str(ch1("Submit.", "Only if you submit.", "Say that you're submitting, worthless."))+"[/say]")
 
-		saynn("[say=eliza]Or.. or what?.. hh.. Gonna deny me?..[/say]")
+		saynn("[say=eliza]И.. и что же?.. хх.. Неужели будешь лишать меня разрядки?..[/say]")
 
-		saynn("Hopefully your face can answer that question.")
+		saynn("Надеемся, твое лицо сможет ответить на этот вопрос.")
 
-		saynn("But then.. a slow, wicked smile starts spreading across her face.")
+		saynn("Но затем.. по её лицу начинает расплываться медленная, порочная улыбка.")
 
-		saynn("[say=eliza]Too bad I find orgasm denial extremely hot.. mmh..[/say]")
+		saynn("[say=eliza]Жаль, что от оргазмического голодания меня штырит неимоверно.. ммм..[/say]")
 
-		saynn("Her pussy pulses.. clenching around your still "+str("cock" if !straponUsed else "toy")+". And then.. she suddenly lets out a sharp cry, her back arching.")
+		saynn("Её киска пульсирует.. сжимаясь вокруг твоего всё ещё "+str("cock" if !straponUsed else "toy")+". И вдруг.. она резко вскрикивает, выгибаясь в спине.")
 
-		saynn("[say=eliza]Ahhh~..[/say]")
+		saynn("[say=eliza]Ааахх~..[/say]")
 
-		saynn("The thought alone was enough to push her over the edge. The bitch is moaning and squirming beneath you, her inner walls milking "+str("you" if !straponUsed else "your strapon")+" in waves.")
+		saynn("Одной этой мысли хватило, чтобы столкнуть её в бездну. Эта сучка стонет и извивается под тобой, а её внутренние стенки доят "+str("you" if !straponUsed else "your strapon")+" волнообразными толчками.")
 
 		saynn("[say=pc]"+str(ch1("...", "Fucking bitch.", "Stupid fucking slave."))+"[/say]")
 
 		if (!straponUsed):
-			saynn("Well.. there is no reason to hold back anymore. And so you slam your whole length inside her, burying yourself to the hilt. More grunts come out of you as your {pc.penis} starts pumping your seed deep into her womb. Her orgasming pussy is still milking your balls, drawing out every last drop. You feel your {pc.cum} flooding her, filling her up..")
+			saynn("Ну что ж... больше нет смысла сдерживаться. И ты с силой входишь в неё на всю длину, уходя в неё до самого основания. Из твоей груди вырывается сдавленный рык, когда твой {pc.penis} начинает вбивать семя глубоко в её матку. Её кончающая киска всё ещё доит твои яйца, высасывая последнюю каплю. Ты чувствуешь, как твой {pc.cum} затапливает её, наполняя её до краёв...")
 
 		else:
-			saynn("Well.. there is no reason to hold back anymore. And so you slam the whole rubber length inside her, burying that strapon to the hilt. It extends her orgasm, pushing her further into this ecstatic state. Her orgasming pussy is still trying to milk you.")
+			saynn("Ну что ж... больше нет смысла сдерживаться. И ты с силой входишь в неё всей резиновой длиной, заталкивая этот страпон до самого основания. Это продлевает её оргазм, погружая её ещё глубже в состояние экстаза. Её кончающая киска всё ещё пытается доить тебя.")
 
-		saynn("[say=eliza]Mhh.. f-fuck~..[/say]")
+		saynn("[say=eliza]Ммм.. б-бля~..[/say]")
 
-		saynn("When you finally pull out, her pussy is left gaping"+str(", a stream of thick seed gushing out from her used slit onto the cold floor" if !straponUsed else " for a bit, her folds and fur are soaked in her juices")+".")
+		saynn("Когда ты, наконец, выходишь, её киска остаётся широко раззявленной"+str(", a stream of thick seed gushing out from her used slit onto the cold floor" if !straponUsed else " for a bit, her folds and fur are soaked in her juices")+".")
 
-		saynn("You don't say a word. You pick up the chastity belt, put it back on her and lock it. Then you turn and leave.")
+		saynn("Ты не произносишь ни слова. Ты берёшь пояс верности, снова надеваешь его на неё и защелкиваешь замок. Затем ты разворачиваешься и уходишь.")
 
-		saynn("It didn't exactly go how you'd expect it.")
+		saynn("Всё прошло не совсем так, как ты ожидал.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

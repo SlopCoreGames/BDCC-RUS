@@ -38,39 +38,39 @@ func _reactInit():
 func _run():
 	if(state == ""):
 		if(uniqueItemID == null || uniqueItemID == ""):
-			addButton("Continue", "Oops", "endthescene")
+			addButton("Продолжить", "Ой", "endthescene")
 			return
 		
 		var item: ItemBase = GM.pc.getInventory().getItemByUniqueID(uniqueItemID)
 		if(item == null):
-			saynn("Error: no item found")
+			saynn("Ошибка: предмет не найден")
 		else:
-			saynn("You "+item.getTakingOffStringLong(false))
+			saynn("Вы "+item.getTakingOffStringLong(false))
 		
-		addButton("Continue", "You took off an item", "endthescene")
+		addButton("Продолжить", "Вы сняли предмет", "endthescene")
 
 	if(state == "smartlocked"):
-		saynn("This item is smartlocked.. so you can't remove it.")
+		saynn("Этот предмет заблокирован умным замком... так что снять его не получится.")
 		
-		addButton("Continue", "Aww", "endthescene")
+		addButton("Продолжить", "О-о-о...", "endthescene")
 
 	if(state == "awkwardtakeoff"):
 		if(uniqueItemID == null || uniqueItemID == ""):
-			addButton("Continue", "Oops", "endthescene")
+			addButton("Продолжить", "Ой", "endthescene")
 			return
 		
 		var item: ItemBase = GM.pc.getInventory().getItemByUniqueID(uniqueItemID)
 		if(item == null):
-			saynn("Error: no item found")
+			saynn("Ошибка: предмет не найден")
 		else:
-			saynn("It's very awkward to do with bound arms but you just about managed. You "+item.getTakingOffStringLong(false))
+			saynn("Это чертовски неудобно делать со связанными руками, но вам почти удалось. Вы "+item.getTakingOffStringLong(false))
 		
-		addButton("Continue", "You took off an item", "endthescene")
+		addButton("Продолжить", "Вы сняли предмет", "endthescene")
 
 	if(state == "blockedhands"):
-		saynn("You really try to take anything off but your blocked hands prevent you from doing so")
+		saynn("Вы изо всех сил пытаетесь что-то снять, но скованные руки мешают вам это сделать")
 		
-		addButton("Continue", "Aww", "endthescene")
+		addButton("Продолжить", "О-о-о...", "endthescene")
 
 
 func _react(_action: String, _args):

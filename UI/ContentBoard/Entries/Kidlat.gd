@@ -4,7 +4,7 @@ func _init():
 	id = "Kidlat"
 	
 func getName() -> String:
-	return "Kidlat"
+	return "Кидлат"
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):

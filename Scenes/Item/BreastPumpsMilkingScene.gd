@@ -56,43 +56,43 @@ func _reactInit():
 
 func _run():
 	if(state == ""):
-		saynn("You take your time, attaching breast pumps to your {pc.breasts}, before pressing a button that makes them work.")
+		saynn("Ты не спешишь, прикрепляя молокоотсосы к своей {pc.breasts}, а затем нажимаешь кнопку, запуская их работу.")
 		
-		saynn("They start off slow, gently stimulating your nips with a weak pumping rhythm, letting you get used to the sensations. It feels good.. Lonely drips of {pc.milk} already appear all around your nips.")
+		saynn("Сначала они работают медленно, нежно стимулируя соски слабым ритмом откачки, давая тебе привыкнуть к ощущениям. Это приятно... Вокруг сосков уже проступают одинокие капли {pc.milk}.")
 		
-		saynn("Pumps slowly ramp up their strength, the negative pressure that they create tugs on your little nips, forcing more {pc.milk} out of them. It tingles.. Until eventually a bigger flow gets established. The pumps collect everything your breasts make all nice and neatly.")
+		saynn("Мощность насосов постепенно нарастает; создаваемое ими отрицательное давление тянет твои маленькие соски, заставляя {pc.milk} выходить наружу всё активнее. Это вызывает покалывание... Пока, наконец, не устанавливается более сильный поток. Насосы аккуратно и чисто собирают всё, что производят твои груди.")
 		
-		saynn("Some time passes, the pumps keep steadily working on your chest. You can’t help but to let out a few quiet moans, a warm feeling spreads out through your whole body coming from your lactating babies.")
+		saynn("Проходит какое-то время, насосы продолжают мерно работать на твоей груди. Ты невольно издаешь тихие стоны, когда тепло от твоих лактирующих буферов разливается по всему телу.")
 		
-		saynn("Eventually you decide that it’s enough and turn off the pumps. But the sensations continue to echo in your stimulated nips even when all the suction has finished.")
+		saynn("В конце концов ты решаешь, что хватит, и выключаешь насосы. Но ощущения продолжают отзываться в твоих возбужденных сосках даже после того, как всасывание прекратилось.")
 		
-		addButton("Continue", "Neat", "endthescene")
+		addButton("Продолжить", "Аккуратно", "endthescene")
 
 	if(state == "pumpfail"):
-		saynn("You take your time, attaching breast pumps to your {pc.breasts}, before pressing a button that makes them work.")
+		saynn("Ты не спешишь, прикрепляя молокоотсосы к своей {pc.breasts}, а затем нажимаешь кнопку, запуская их работу.")
 
-		saynn("They start off slow, gently stimulating your nips with a weak pumping rhythm, letting you get used to the sensations. It feels good.. Even if nothing comes out yet.")
+		saynn("Сначала они работают медленно, нежно стимулируя соски слабым ритмом откачки, давая тебе привыкнуть к ощущениям. Это приятно... Даже если пока ничего не идет.")
 		
-		saynn("Pumps slowly ramp up their strength, the negative pressure that they create tugs on your little nips, trying to force the milk out of them. It tingles..")
+		saynn("Мощность насосов постепенно нарастает; создаваемое ими отрицательное давление тянет твои маленькие соски, пытаясь выжать из них молоко. Это вызывает покалывание...")
 		
-		saynn("Some time passes, the pumps steadily work on your breasts. But since you’re not lactating, nothing was produced. At least you got your nips stimulated.")
+		saynn("Проходит некоторое время, молокоотсосы мерно работают на твоей груди. Но так как ты не кормишь грудью, ничего не вышло. По крайней мере, соски получили хорошую стимуляцию.")
 		
-		addButton("Continue", "Fair enough", "endthescene")
+		addButton("Продолжить", "Справедливо", "endthescene")
 
 	if(state == "nipplessore"):
-		saynn("Your nipples are too sore after the last milking, give yourself a break.")
+		saynn("Твои соски слишком сильно болят после прошлого доения, дай себе передышку.")
 		
-		addButton("Continue", "Fair enough", "endthescene")
+		addButton("Продолжить", "Справедливо", "endthescene")
 
 	if(state == "restraintequipped"):
-		saynn("You can't put on the breast pumps because some restraint blocks your breasts")
+		saynn("Ты не можешь надеть молокоотсосы, потому что грудь скована какими-то фиксаторами")
 		
-		addButton("Continue", "Aww", "endthescene")
+		addButton("Продолжить", "О-о-о...", "endthescene")
 
 	if(state == "blockedhands"):
-		saynn("You really try to put the breast pumps on but your blocked hands prevent you from doing so")
+		saynn("Ты изо всех сил пытаешься надеть молокоотсосы, но скованные руки мешают тебе это сделать")
 		
-		addButton("Continue", "Aww", "endthescene")
+		addButton("Продолжить", "О-о-о...", "endthescene")
 		
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

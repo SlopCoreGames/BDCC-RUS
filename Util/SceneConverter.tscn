@@ -24,31 +24,7 @@ margin_right = 1280.0
 margin_bottom = 343.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "The idea of this tool is to use Google docs to write scenes because it's easier there
-
-This is an example of how the input may look like
-Each line will be made into a separate saynn call
-You can use variables like {pc.name}, {pc.he} and many others
-To indicated that someone is talking use:
-
-[say=pc]Hello, I'm {pc.name}[/say]
-
-[say=rahi]Hello, and I'm speaking as Rahi[/say]
-
-( These are comments, they won't be outputted but will be visible in the code )
-
-To add actions add > before the action name. Everything after the first , will be the action's description
-
-> Say meow, Open your mouth and make a cat noise
-
-[say=pc]MEOW![/say]
-
-The converter doesn't support multiple actions so you will have to rearrange addButton calls yourself, just see how the other scenes do it. If someone has ideas how to fix that - feel free to do so ^^
-
-> Dance, Start dancing for no reason
-You dance like a happy cat
-
-Life is good"
+text = "Идея этого инструмента в том, чтобы писать сцены в Google Docs, так как там удобнее\n\nВот пример того, как может выглядеть ввод:\nКаждая строка будет преобразована в отдельный вызов saynn\nВы можете использовать переменные, такие как {pc.name}, {pc.he} и многие другие\nЧтобы указать, что кто-то говорит, используйте:\n\n[say=pc]Привет, я {pc.name}[/say]\n\n[say=rahi]Привет, и я говорю за Рахи[/say]\n\n( Это комментарии, они не будут выведены, но будут видны в коде )\n\nЧтобы добавить действия, ставьте > перед названием действия. Всё, что идет после первой запятой, станет описанием действия\n\n> Say meow, Открой рот и мяукни, как кошка\n\n[say=pc]МЯУ![/say]\n\nКонвертер не поддерживает несколько действий одновременно, поэтому вам придется самостоятельно переставлять вызовы addButton — просто посмотрите, как это сделано в других сценах. Если есть идеи, как это исправить — не стесняйтесь предлагать ^^\n\n> Dance, Начни танцевать без причины\nВы танцуете, как счастливый кот\n\nЖизнь прекрасна"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -59,7 +35,7 @@ margin_right = 1280.0
 margin_bottom = 690.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Output will be here"
+text = "Результат будет здесь"
 syntax_highlighting = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -69,6 +45,6 @@ __meta__ = {
 margin_top = 694.0
 margin_right = 1280.0
 margin_bottom = 720.0
-text = "Convert"
+text = "Конвертировать"
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]

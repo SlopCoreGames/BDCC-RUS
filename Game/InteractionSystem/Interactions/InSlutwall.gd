@@ -11,8 +11,8 @@ func doEquipLockedRestraintOnStart():
 	getCharByRole("inmate").getInventory().forceEquipRemoveOther(GlobalRegistry.createItem("SlutwallStatic"))
 
 func showStuckText():
-	saynn("{inmate.You} {inmate.youAre} stuck in the slutwall. {inmate.YouHe} {inmate.youAreHeIs} completely helpless with {inmate.yourHis} {inmate.thick} {butt} sticking out, free for anyone to fuck..")
-	saynn("The tipbox has "+getTipsAmountString()+".. There is an automatic mechanism that would unlock {inmate.youHim} automatically at 10 credits..")
+	saynn("{inmate.You} {inmate.youAre} застряла в шлюзовой стене. {inmate.YouHe} {inmate.youAreHeIs} совершенно беспомощная, её {inmate.yourHis} {inmate.thick} {butt} торчит наружу, готовая к любому траху..")
+	saynn("В чаевых сейчас "+getTipsAmountString()+".. Есть автоматический механизм, который разблокирует {inmate.youHim} за 10 кредитов..")
 
 func canEscapeThisInteraction() -> bool:
 	return !getCharByRole("inmate").getInventory().hasLockedStaticRestraints() || (tips >= 10)
@@ -29,10 +29,10 @@ func onEscapeLockedRestraints():
 
 func about_to_use_text():
 	if(inmateOfferedSelf):
-		saynn("{user.You} {user.youVerb('agree')} to use {inmate.you}..")
+		saynn("{user.You} {user.youVerb('agree')}, чтобы использовать {inmate.you}..")
 		sayLine("user", "TalkSexOfferSelfAccept", {main="user", target="inmate"})
 	else:
-		saynn("{user.You} {user.youVerb('approach', 'approaches')} the slutwall, about to use {inmate.you}..")
+		saynn("{user.You} {user.youVerb('approach', 'approaches')} в шлюзовой стене, собираясь использовать {inmate.you}..")
 
 	addAction("continue", "Continue", "Start the sex!", "default", 1.0, 600, {start_sex=["user", "inmate", SexType.SlutwallSex, {SexMod.DisableDynamicJoiners: true}],})
 
@@ -45,8 +45,8 @@ func about_to_use_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func after_use_text():
-	saynn("{user.name} has finished using {inmate.you}..")
-	saynn("The tipbox currently has.. "+getTipsAmountString()+" in it. {inmate.name} will be able to escape at 10 credits..")
+	saynn("{user.name} закончила использовать {inmate.you}..")
+	saynn("В чаевых сейчас.. "+getTipsAmountString()+" в копилке. {inmate.name} сможет сбежать, когда наберется 10 кредитов..")
 
 	addAction("leave", "Leave", "Time to go", "default", 1.0, 60, {})
 	if(!getRolePawn("user").isPlayer() || GM.pc.getCredits() > 0):
@@ -91,7 +91,7 @@ func after_use_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func about_to_shout_text():
-	saynn("{inmate.You} {inmate.youVerb('wiggle')} {inmate.yourHis} body and {inmate.thick} butt, trying to catch anyone's attention..")
+	saynn("{inmate.You} {inmate.youVerb('wiggle')} своё {inmate.yourHis} тело и {inmate.thick} задницу, пытаясь привлечь чье-нибудь внимание..")
 
 	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 180, {})
 
@@ -107,9 +107,9 @@ func about_to_shout_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func after_tip_text():
-	saynn("Just before leaving, {user.name} decides to add to the tipbox..")
+	saynn("Перед самым уходом {user.name} решает подкинуть денег в чаевые..")
 	sayLine("user", "SlutwallAddTip", {main="user", target="inmate"})
-	saynn("The tipbox now has.. "+getTipsAmountString()+" in it. {inmate.name} will be able to get "+("it" if(tips == 1) else "to them")+".. after freeing {inmate.himself}..")
+	saynn("В коробке для чаевых теперь.. "+getTipsAmountString()+" {inmate.name} сможет забрать "+("it" if(tips == 1) else "to them")+".. после того как освободит {inmate.himself}..")
 
 	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
 
@@ -120,9 +120,9 @@ func after_tip_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func after_steal_tips_text():
-	saynn("{user.name} decides to break into the tipbox and take all of it!")
+	saynn("{user.name} решает вскрыть коробку для чаевых и заграбастать всё подчистую!")
 	sayLine("user", "SlutwallStealCredits", {main="user", target="inmate"})
-	saynn("Wow..")
+	saynn("Ого..")
 
 	addAction("continue", "Continue", "Wow.. Here go your creds..", "default", 1.0, 60, {})
 

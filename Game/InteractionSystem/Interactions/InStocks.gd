@@ -34,7 +34,7 @@ func start(_pawns:Dictionary, _args:Dictionary):
 		punisherID = _args["punisherID"]
 
 func showStuckText():
-	saynn("{inmate.You} {inmate.youAre} stuck in stocks, there is very little {inmate.youHe} can do, the movement of {inmate.yourHis} head and arms is blocked by a giant metal frame with 3 holes, its angle is forcing {inmate.youHim} to constantly stay bent forward, exposing {inmate.yourHis} butt, {inmate.yourHis} ankles are chained so {inmate.youHe} can’t really move them too. {inmate.YouHe} {inmate.youAreHeIs} completely helpless.")
+	saynn("{inmate.You} {inmate.youAre} застряла в стойках, и мало что {inmate.youHe} может поделать: движения {inmate.yourHis} головы и рук скованы гигантской металлической рамой с тремя отверстиями, а из-за её наклона {inmate.youHim} вынуждена постоянно стоять, наклонившись вперёд, подставляя {inmate.yourHis} задницу; {inmate.yourHis} лодыжки скованы цепями, так что {inmate.youHe} почти не может ими шевелить. {inmate.YouHe} {inmate.youAreHeIs} совершенно беспомощна.")
 
 func canEscapeThisInteraction() -> bool:
 	return !getCharByRole("inmate").getInventory().hasLockedStaticRestraints()
@@ -44,31 +44,31 @@ func init_text():
 	
 	var thePawn = getRolePawn("inmate")
 	if(!thePawn.isPlayer()):
-		saynn("{inmate.name} has "+str(getRoleChar("inmate").getStamina())+" stamina left.")
+		saynn("У {inmate.name} осталось "+str(getRoleChar("inmate").getStamina())+" выносливости.")
 	var npc = getRoleChar("inmate")
 	if(npc.hasEffect(StatusEffect.HasTallyMarks)):
 		var tallyMarks = npc.getEffect(StatusEffect.HasTallyMarks)
 		var tallyAmount = tallyMarks.totalAmount
 		if(tallyAmount > 0):
-			saynn("{inmate.YourHis} body has "+str(tallyAmount)+" tallymark"+("s" if tallyAmount != 1 else "")+" on it which means that {inmate.youHe} got used roughly that many times.")
+			saynn("На теле {inmate.YourHis} "+str(tallyAmount)+" tallymark"+("s" if tallyAmount != 1 else "")+" отметины, а это значит, что {inmate.youHe} использовали грубо столько-то раз.")
 	if(thePawn.isSlaveToPlayer()):
 		var npcSlave:NpcSlave = thePawn.getNpcSlavery()
 		if(npcSlave.getWorkEfficiency() <= 0.1):
-			saynn("Your slave is very tired. Using {inmate.him} now will make {inmate.him} more depressed.")
+			saynn("Твоя рабыня очень устала. Если использовать {inmate.him} сейчас, это сделает {inmate.him} ещё более подавленной.")
 		if(npcSlave.getDespair() >= 0.8):
-			saynn("{inmate.He} looks very depressed, {inmate.his} mind might snap at any moment.")
+			saynn("{inmate.He} выглядит очень подавленной, разум {inmate.his} может сорваться в любой момент.")
 		elif(npcSlave.getDespair() >= 0.5):
 			if(npcSlave.getBrokenSpirit() >= 0.9):
-				saynn("{inmate.He} looks suppressed. But {inmate.he} also doesn't resist at all, {inmate.his} spirit must be broken by now!")
+				saynn("{inmate.He} выглядит подавленной. Но {inmate.he} к тому же совсем не сопротивляется — похоже, {inmate.his} дух уже сломлен!")
 			elif(npcSlave.getBrokenSpirit() > 0.5):
-				saynn("{inmate.He} looks suppressed. But {inmate.he} also doesn't resist much, a sign of {inmate.his} spirit breaking.")
+				saynn("{inmate.He} выглядит подавленной. Но {inmate.he} тоже не особо сопротивляется, что говорит о надломленном {inmate.his} духе.")
 			else:
-				saynn("{inmate.He} looks suppressed. But {inmate.he} keeps trying to break out occasionally, {inmate.his} spirit is clearly very high.")
+				saynn("{inmate.He} выглядит подавленной. Но {inmate.he} время от времени всё же пытается вырваться, так что {inmate.his} дух явно ещё крепок.")
 		else:
 			if(npcSlave.getBrokenSpirit() >= 0.9):
-				saynn("{inmate.He} doesn't resist at all, {inmate.his} spirit must be broken by now!")
+				saynn("{inmate.He} совсем не сопротивляется, похоже, дух {inmate.his} уже окончательно сломлен!")
 			elif(npcSlave.getBrokenSpirit() > 0.5):
-				saynn("{inmate.He} doesn't resist much, a sign of {inmate.his} spirit breaking.")
+				saynn("{inmate.He} почти не сопротивляется — признак того, что дух {inmate.his} ломается.")
 
 	addAction("rest", "Rest", "Stay quiet and try to get some rest", "default", 0.1, 1800, {})
 	addAction("shout", "Shout", "Try to get some attention..", "default", (0.1 + scorePersonality("inmate", {PersonalityStat.Naive:0.1})), 30, {})
@@ -104,9 +104,9 @@ func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 func after_rest_text():
 	if(!slutwallMode):
-		saynn("{inmate.You} {inmate.youVerb('decide')} to stay quiet. {inmate.YouHe} {inmate.youAreHeIs} forced to stand in an uncomfortable pose, it’s humiliating but {inmate.youHe} {inmate.youHeVerb('get')} some rest.")
+		saynn("{inmate.You} {inmate.youVerb('decide')} молчать. {inmate.YouHe} {inmate.youAreHeIs} вынужден(а) стоять в неудобной позе; это унизительно, но зато {inmate.youHe} {inmate.youHeVerb('get')} немного отдохнуть.")
 	else:
-		saynn("{inmate.You} {inmate.youVerb('decide')} to stay quiet and just get some rest.")
+		saynn("{inmate.You} {inmate.youVerb('decide')} помалкивать и просто немного отдохнуть.")
 
 	addAction("continue", "Continue", "See what happens next", "default", 1.0, 0, {})
 
@@ -116,7 +116,7 @@ func after_rest_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func about_to_struggle_text():
-	saynn("{inmate.name} is trying to struggle!")
+	saynn("{inmate.name} пытается вырваться!")
 
 	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
 
@@ -142,10 +142,10 @@ func after_struggle_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 func about_to_use_text():
 	if(inmateOfferedSelf):
-		saynn("{user.You} {user.youVerb('agree')} to use {inmate.you}..")
+		saynn("{user.You} {user.youVerb('agree')}, чтобы использовать {inmate.you}..")
 		sayLine("user", "TalkSexOfferSelfAccept", {main="user", target="inmate"})
 	else:
-		saynn("{user.You} {user.youVerb('approach', 'approaches')} the stocks, about to use {inmate.you}..")
+		saynn("{user.You} {user.youVerb('approach', 'approaches')} в колодках, и вот-вот применят {inmate.you}...")
 
 	addAction("continue", "Continue", "Start the sex!", "default", 1.0, 600, {start_sex=["user", "inmate", SexType.StocksSex],})
 
@@ -158,7 +158,7 @@ func about_to_use_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func after_use_text():
-	saynn("{user.name} has finished using {inmate.you}..")
+	saynn("{user.name} закончила использовать {inmate.you}..")
 
 	addAction("leave", "Leave", "Time to go", "default", 1.0, 60, {})
 
@@ -172,9 +172,9 @@ func about_to_save_text():
 	if(saveTryCount == 0):
 		saynn("{saver.You} {saver.youVerb('approach', 'approaches')} {inmate.you}!")
 	else:
-		saynn("{saver.You} {saver.youVerb('stand')} next to {inmate.you}.")
+		saynn("{saver.You} {saver.youVerb('stand')} рядом с {inmate.you}.")
 
-	saynn("{saver.YouHe} can either spend some of {saver.yourHis} stamina and help {inmate.you} to struggle out of "+stocksSlutwallText("stocks", "the slutwall")+".. or use a restraint key to unlock it.")
+	saynn("{saver.YouHe} может либо потратить немного {saver.yourHis} выносливости, чтобы помочь {inmate.you} выбраться из "+stocksSlutwallText("stocks", "the slutwall")+".. либо использовать ключ, чтобы отпереть их.")
 
 	if(getRoleChar("saver").getStamina() > 0):
 		addAction("help", "Help", "Spend some stamina and help them", "default", 1.0, 180, {})
@@ -202,7 +202,7 @@ func about_to_save_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func refusable_save_using_stamina_text():
-	saynn("{saver.You} {saver.youAre} about to help {inmate.you} struggle out of "+stocksSlutwallText("stocks", "the slutwall")+".")
+	saynn("{saver.You} {saver.youAre} собирается помочь {inmate.you} выбраться из "+stocksSlutwallText("stocks", "the slutwall")+".")
 
 	var acceptHelpProbability = getInmateAcceptHelpProbability()
 	var refuseHelpProbability = 1.0 - acceptHelpProbability
@@ -221,7 +221,7 @@ func refusable_save_using_stamina_do(_id:String, _args:Dictionary, _context:Dict
 
 
 func refusable_save_using_key_text():
-	saynn("{saver.You} {saver.youAre} about to use a restraint key to unlock "+stocksSlutwallText("the stocks", "the slutwall")+".")
+	saynn("{saver.You} {saver.youAre} собирается использовать ключ от наручников, чтобы отпереть "+stocksSlutwallText("the stocks", "the slutwall")+".")
 
 	var acceptHelpProbability = getInmateAcceptHelpProbability()
 	var refuseHelpProbability = 1.0 - acceptHelpProbability
@@ -236,7 +236,7 @@ func refusable_save_using_key_do(_id:String, _args:Dictionary, _context:Dictiona
 
 
 func refused_save_text():
-	saynn("{inmate.You} {inmate.youVerb('refuse', 'refused')} {saver.your} help.")
+	saynn("{inmate.You} {inmate.youVerb('refuse', 'refused')} {saver.your} на помощь.")
 	sayLine("inmate", "HelpStocksSlutwallRefuse", {main="inmate", target="saver"})
 
 	addAction("leave", "Leave", "Time to go", "default", 1.0, 60, {})
@@ -247,7 +247,7 @@ func refused_save_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func refused_save_offered_self_text():
-	saynn("{inmate.You} {inmate.youVerb('refuse', 'refused')} {saver.your} help.")
+	saynn("{inmate.You} {inmate.youVerb('refuse', 'refused')} {saver.your} на помощь.")
 	sayLine("inmate", "HelpStocksSlutwallRefuse", {main="inmate", target="saver"})
 
 	var saverIsMean:bool = getRolePawn("saver").scorePersonalityMax({ PersonalityStat.Mean: 1.0 }) > 0.4
@@ -272,7 +272,7 @@ func refused_save_offered_self_text():
 		])
 	saynn("[say=saver]"+RNG.pick(responses)+"[/say]")
 
-	saynn("\nBut {inmate.youHe} {inmate.youDontHeDoesnt} want {saver.youHim} to leave just yet..")
+	saynn("\nНо {inmate.youHe} {inmate.youDontHeDoesnt} хочет, чтобы {saver.youHim} пока не уходил(а)..")
 	sayLine("inmate", "TalkSexOfferSelf", {main="inmate", target="saver"})
 
 	addAction("agree", "Agree", "Agree to fuck them", "agreeSexAsDom", 1.0, 60, {})
@@ -290,7 +290,7 @@ func refused_save_offered_self_do(_id:String, _args:Dictionary, _context:Diction
 
 func offered_self_deny_text():
 	sayLine("saver", "TalkSexOfferSelfDeny", {main="saver", target="inmate"})
-	saynn("{saver.You} {saver.youVerb('walk')} away, leaving {inmate.you} to be someone else's toy..")
+	saynn("{saver.You} {saver.youVerb('walk')} уходит, оставляя {inmate.you} на растерзание кому-то другому..")
 
 	addAction("continue", "Continue", "Aww..", "default", 1.0, 60, {})
 
@@ -302,9 +302,9 @@ func offered_self_deny_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 func canceled_save_text():
 	if(immediatelyLeft):
-		saynn("{saver.You} {saver.youVerb('walk')} away, leaving {inmate.you} to {inmate.yourHis} fate..")
+		saynn("{saver.You} {saver.youVerb('walk')} уходит, оставляя {inmate.you} на произвол {inmate.yourHis}..")
 	else:
-		saynn("{saver.You} {saver.youVerb('leave')}, no longer trying to save {inmate.you}..")
+		saynn("{saver.You} {saver.youVerb('leave')}, больше не пытаясь спасти {inmate.you}..")
 
 	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 30, {})
 
@@ -316,9 +316,9 @@ func canceled_save_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 func save_saved_text():
 	if(savedHow=="help"):
-		saynn("{saver.name} manages to unlock the "+stocksSlutwallText("stocks", "slutwall")+" by using {saver.his} raw strength.")
+		saynn("{saver.name} удается отпереть "+stocksSlutwallText("stocks", "slutwall")+" используя лишь {saver.his} грубую силу.")
 	else:
-		saynn("{saver.name} unlocks the "+stocksSlutwallText("stocks", "slutwall")+" with a restraint key!")
+		saynn("{saver.name} отпирает "+stocksSlutwallText("stocks", "slutwall")+" с ключом от наручников!")
 
 	addAction("leave", "Free!", "You're free!", "default", 1.0, 60, {})
 
@@ -342,9 +342,9 @@ func save_after_help_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 func about_to_shout_text():
 	if(getRoleChar("inmate").isGagged()):
-		saynn("{inmate.You} {inmate.youAre} gagged but {inmate.youHe} still {inmate.youHeVerb('try', 'tries')} to get some attention by wiggling {inmate.yourHis} body..")
+		saynn("{inmate.You} {inmate.youAre} кляп, но {inmate.youHe} всё ещё пытается {inmate.youHeVerb('try', 'tries')} привлечь к себе внимание, дрыгая {inmate.yourHis} телом..")
 	else:
-		saynn("{inmate.You} {inmate.youVerb('try', 'tries')} to shout to get someone's attention..")
+		saynn("{inmate.You} {inmate.youVerb('try', 'tries')} пытается кричать, чтобы привлечь чьё-нибудь внимание..")
 		sayLine("inmate", "StocksShout", {main="inmate"})
 
 	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 180, {})
@@ -366,7 +366,7 @@ func about_to_shout_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func after_shout_text():
-	saynn("No one came after {inmate.your} attempts.. At least {inmate.youHe} got a small rest..")
+	saynn("После {inmate.your} попыток никто так и не пришёл.. По крайней мере, {inmate.youHe} удалось немного отдохнуть..")
 
 	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 30, {})
 
@@ -377,11 +377,11 @@ func after_shout_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 func about_to_sleep_text():
 	if(!slutwallMode):
-		saynn("It seems to be very late.. everyone is heading to their cells and rooms..")
+		saynn("Кажется, уже очень поздно.. все расходятся по камерам и комнатам..")
 	else:
-		saynn("It's getting quiet.. Must be because of night time..")
-	saynn("Are they just gonna.. leave you like this?")
-	saynn("Well, time to get comfy then..")
+		saynn("Становится тихо.. Должно быть, из-за того, что наступила ночь..")
+	saynn("Неужели они просто.. оставят тебя в таком виде?")
+	saynn("Ну что ж, пора устроиться поудобнее..")
 
 	addAction("sleep", "Sleep", "Try and sleep like this..", "default", 1.0, 60, {})
 
@@ -393,8 +393,8 @@ func about_to_sleep_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func after_sleep_text():
-	saynn("You open your eyes.. and realize that you are still "+stocksSlutwallText("bound in stocks", "stuck in a slutwall")+".. Yep, it's not a dream, this is really happening..")
-	saynn("Welcome to day "+str(GM.main.getDays())+" of your sentence.")
+	saynn("Ты открываешь глаза.. и понимаешь, что всё ещё "+stocksSlutwallText("bound in stocks", "stuck in a slutwall")+".. Ага, это не сон, всё происходит на самом деле..")
+	saynn("Добро пожаловать в "+str(GM.main.getDays())+" день твоего срока.")
 
 	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
 
@@ -404,7 +404,7 @@ func after_sleep_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func free_slave_text():
-	saynn("Enough stocks, you free {inmate.name} up and then order {inmate.him} to return back to your cell.")
+	saynn("Запасов достаточно. Освобождай {inmate.name}, а затем заказывай {inmate.him}, чтобы она вернулась в камеру.")
 
 	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
 
@@ -418,7 +418,7 @@ func getInterruptActions(_pawn:CharacterPawn) -> Array:
 	if(getPawnAmount() == 1):
 		result.append({
 			id = "use",
-			name = "Use",
+			name = "Использовать",
 			desc = "Use them while they are stuck in "+stocksSlutwallText("stocks", "the slutwall"),
 			score = 1.0,
 			scoreType = "sexUse",
@@ -429,7 +429,7 @@ func getInterruptActions(_pawn:CharacterPawn) -> Array:
 		var helpScore:float = -0.01 if(saverCooldowns.has(_pawn.charID)) else 1.0
 		result.append({
 			id = "free",
-			name = "Free",
+			name = "Освободить",
 			desc = "Try to free them!",
 			score = helpScore,
 			scoreType = "help",
@@ -439,7 +439,7 @@ func getInterruptActions(_pawn:CharacterPawn) -> Array:
 	if(getPawnAmount() == 1 && getRolePawn("inmate").isSlaveToPlayer()):
 		result.append({
 			id = "free_slave",
-			name = "Unlock slave",
+			name = "Разблокировать рабыню",
 			desc = "Let your slave return back to your cell..",
 			score = 0.0,
 			scoreType = "default",

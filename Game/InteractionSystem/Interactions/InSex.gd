@@ -11,7 +11,7 @@ func start(_pawns:Dictionary, _args:Dictionary):
 	setState("", "main")
 
 func init_text():
-	saynn("{main.You} {main.youAre} doing sex..")
+	saynn("{main.You} {main.youAre} занимаются сексом..")
 	
 	if(!GM.main.isCharacterInAnySexEngine(getCharIDByRole("main"))):
 		addAction("go", "Go!", "Time to go", "default", 1.0, 30, {})

@@ -16,15 +16,15 @@ func getText():
 	var action = getCurrentAction()
 	
 	if(action == "work"):
-		return "{main.name} is hitting rocks!"
-	return "{main.name} is going to work!"
+		return "{main.name} долбит камни!"
+	return "{main.name} отправляется на работу!"
 
 func getActions() -> Array:
 	if(getLocation() != "mining_shafts_entering"):
 		return [
 			{
 				id = "go",
-				name = "Go to shaft!",
+				name = "В шахту!",
 				desc = "Do something",
 				score = 1.0,
 				args = {},
@@ -35,7 +35,7 @@ func getActions() -> Array:
 	return [
 		{
 			id = "work",
-			name = "Work!",
+			name = "Работать!",
 			desc = "Do something",
 			score = 1.0,
 			args = {},

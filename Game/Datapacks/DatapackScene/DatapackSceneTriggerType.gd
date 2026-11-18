@@ -105,7 +105,7 @@ static func getEditVars(triggerType):
 	if(triggerType == EnterRoom):
 		return {
 			"room": {
-				name = "Room name",
+				name = "Название комнаты",
 				type = "location",
 				value = "main_punishment_spot",
 			},
@@ -113,12 +113,12 @@ static func getEditVars(triggerType):
 	if(triggerType == SceneAndStateHook):
 		return {
 			"scene": {
-				name = "Scene id",
+				name = "ID сцены",
 				type = "string",
 				value = "MeScene",
 			},
 			"state": {
-				name = "Scene state",
+				name = "Состояние сцены",
 				type = "string",
 				value = "wait",
 			},
@@ -127,7 +127,7 @@ static func getEditVars(triggerType):
 		var allFloors = GlobalRegistry.getMapFloors().keys()
 		return {
 			"floor": {
-				name = "Floor",
+				name = "Этаж",
 				type = "selector",
 				value = allFloors[0] if allFloors.size() > 0 else "",
 				values = allFloors,
@@ -136,7 +136,7 @@ static func getEditVars(triggerType):
 	if(triggerType in [TalkingToDynamicNPC, MeetDynamicNPC]):
 		return {
 			"npc": {
-				name = "Npc",
+				name = "NPC",
 				type = "selector",
 				value = "",
 				values = [],
@@ -146,7 +146,7 @@ static func getEditVars(triggerType):
 	if(triggerType == TalkingToNPC):
 		return {
 			"npc": {
-				name = "Npc",
+				name = "NPC",
 				type = "selector",
 				value = "alexrynard",
 				values = [

@@ -12,7 +12,7 @@ margin_top = 3.0
 margin_right = 1234.0
 margin_bottom = 17.0
 size_flags_horizontal = 3
-text = "Test text"
+text = "Тестовый текст"
 clip_text = true
 
 [node name="DownButton" type="Button" parent="."]

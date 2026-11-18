@@ -13,7 +13,7 @@ margin_left = -335.0
 margin_top = -207.0
 margin_right = 335.0
 margin_bottom = 207.0
-window_title = "Button checks"
+window_title = "Проверка кнопок"
 script = ExtResource( 3 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -33,7 +33,7 @@ size_flags_horizontal = 3
 [node name="AddButton" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
 margin_right = 222.0
 margin_bottom = 20.0
-text = "Add check"
+text = "Добавить проверку"
 
 [node name="CheckList" type="ItemList" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
 margin_top = 24.0
@@ -45,7 +45,7 @@ size_flags_vertical = 3
 margin_top = 370.0
 margin_right = 222.0
 margin_bottom = 390.0
-text = "Remove check"
+text = "Удалить проверку"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
 margin_left = 226.0
@@ -87,13 +87,13 @@ margin_bottom = 414.0
 margin_right = 612.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
-text = "Confirm"
+text = "Подтвердить"
 
 [node name="CancelButton" type="Button" parent="VBoxContainer/HBoxContainer2"]
 margin_left = 616.0
 margin_right = 670.0
 margin_bottom = 20.0
-text = "Cancel"
+text = "Отмена"
 
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/AddButton" to="." method="_on_AddButton_pressed"]
 [connection signal="item_selected" from="VBoxContainer/HBoxContainer/VBoxContainer/CheckList" to="." method="_on_CheckList_item_selected"]

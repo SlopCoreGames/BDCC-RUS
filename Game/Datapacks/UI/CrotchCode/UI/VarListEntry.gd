@@ -27,7 +27,7 @@ func setEntry(theVarName, theEntry):
 	for varType in DatapackSceneVarType.getAll():
 		typeValues.append([varType, DatapackSceneVarType.getName(varType)])
 	string_var_ui.setData({
-		name = "Name",
+		name = "Имя",
 		value = varName,
 	})
 	var _i = 0

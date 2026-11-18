@@ -9,49 +9,49 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Solo, "stand", {bodystate={naked=true}})
 		
-		saynn("You are holding a black [b]permanent[/b] marker in your hand.")
+		saynn("В руке вы держите черный [b]перманентный[/b] маркер.")
 
-		saynn("What do you wanna do?")
+		saynn("Что будете делать?")
 
 		if(!GM.pc.hasBlockedHands() && !GM.pc.hasBoundArms()):
-			addButton("Draw on self", "You changed your mind", "pickzonemenu")
+			addButton("Нарисовать на себе", "Вы передумали", "pickzonemenu")
 		else:
-			addDisabledButton("Draw on self", "Your arms or hands are bound!")
-		addButton("Leave it", "You changed your mind", "endthescene")
+			addDisabledButton("Нарисовать на себе", "Ваши руки или кисти связаны!")
+		addButton("Оставить как есть", "Вы передумали", "endthescene")
 	
 	if(state == "pickzonemenu"):
-		saynn("Where do you wanna leave a bodywriting?")
+		saynn("Где именно вы хотите оставить надпись?")
 		
-		addButton("Cancel", "You changed your mind", "")
+		addButton("Отмена", "Вы передумали", "")
 		for zone in BodyWritingsZone.ALL:
 			var zoneName:String = BodyWritingsZone.getZoneVisibleName(zone)
-			addButton(zoneName, "Pick this zone", "pickzone", [zone])
+			addButton(zoneName, "Выбрать эту зону", "pickzone", [zone])
 	
 	if(state == "pickwritingmenu"):
-		saynn("What do you want to write on your "+str(BodyWritingsZone.getZoneVisibleName(pickedZone))+"?")
+		saynn("Что вы хотите написать на своем "+str(BodyWritingsZone.getZoneVisibleName(pickedZone))+"?")
 		
 		var theEffect
 		if(GM.pc.hasEffect(StatusEffect.HasBodyWritings)):
 			theEffect = GM.pc.getEffect(StatusEffect.HasBodyWritings)
 		
-		addButton("Back", "You changed your mind", "pickzonemenu")
+		addButton("Назад", "Вы передумали", "pickzonemenu")
 		for writingID in BodyWritings.getWritingIDsForZone(pickedZone):
 			var writingInfo:Dictionary = BodyWritings.getWritingInfo(writingID)
 			
 			var writingName:String = writingInfo[BodyWritingsDB.DBText]
 			if(theEffect && theEffect.hasPermanentWritingIDAtZone(pickedZone, writingID)):
-				addDisabledButton(writingName, "You already have this permanent writing in this zone!")
+				addDisabledButton(writingName, "В этой зоне уже есть надпись, сделанная перманентным маркером!")
 			else:
-				addButton(writingName, "Write this with a permanent marker!", "doWrite", [writingID])
+				addButton(writingName, "Написать это перманентным маркером!", "doWrite", [writingID])
 	
 	if(state == "afterwrite"):
 		playAnimation(StageScene.Solo, "stand", {bodystate={naked=true}})
 		
-		saynn("You finish scribbling a writing on your skin with a permanent marker!")
+		saynn("Вы закончили разрисовывать свою кожу перманентным маркером!")
 		
-		saynn("The marker is now out of ink so you throw it out.")
+		saynn("Чернила в маркере закончились, поэтому ты его выбрасываешь.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

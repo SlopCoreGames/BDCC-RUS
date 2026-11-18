@@ -15,134 +15,134 @@ func _run():
 		addCharacter("eliza", ["naked"])
 		aimCameraAndSetLocName("hideout_breakroom")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("You prepare everything that you will need for this on a little tray.. a glass shard, extremely sharp and dangerous, carefully cleaned.. some bandages.. and a small bottle of antiseptic. Luckily, Eliza had most of it on her.. except for the shard.")
+		saynn("Ты раскладываешь всё необходимое на небольшом подносе... осколок стекла, невероятно острый и опасный, тщательно очищенный... бинты... и маленький флакон антисептика. К счастью, у Элизы почти всё это было при себе... кроме осколка.")
 
-		saynn("Then.. you enter the cell. Eliza Quinn is standing still, her collar leashed to the pipe above her, preventing her from most things. She can't even sit on a chair that's here.")
+		saynn("Затем... ты входишь в камеру. Элиза Куинн стоит неподвижно; её ошейник пристегнут поводком к трубе над головой, что сильно ограничивает её движения. Она не может даже сесть на стоящий здесь стул.")
 
-		saynn("Her tits are still out.. and her eyes are still really angry.")
+		saynn("Её сиськи всё так же обнажены... а взгляд всё такой же яростный.")
 
-		saynn("[say=eliza]A piece of glass? So barbaric.. Could have at least stolen a scalpel..[/say]")
+		saynn("[say=eliza]Осколок стекла? Как варварски... Мог бы хотя бы скальпель стащить...[/say]")
 
 		saynn("[say=pc]"+str(ch1("...", "That's all that I need to make you regret everything.", "Someone like you doesn't deserve more."))+"[/say]")
 
-		addButton("Continue", "See what happens next", "shard_neck")
+		addButton("Продолжить", "Смотреть, что будет дальше", "shard_neck")
 	if(state == "shard_neck"):
 		playAnimation(StageScene.GropeBehind, "neck", {pc="eliza", npc="pc"})
-		saynn("You pick up the shard and get behind the feline, your hand brings the sharp edge close to her chest, touching her pretty fur but avoiding any damage.")
+		saynn("Ты берешь осколок и подходишь к кошечке со спины; твоя рука подносит острое лезвие к её груди, касаясь её прекрасного меха, но стараясь не повредить его.")
 
-		saynn("[say=eliza]You think I'm scared of a little cut?[/say]")
+		saynn("[say=eliza]Думаешь, я испугаюсь маленького пореза?[/say]")
 
 		saynn("[say=pc]"+str(ch1("...", "You should be.", "You will be."))+"[/say]")
 
-		saynn("[say=eliza]You're not gonna kill me.[/say]")
+		saynn("[say=eliza]Ты меня не убьешь.[/say]")
 
-		saynn("Gotta make her feel like you will then.")
+		saynn("Нужно заставить её поверить в это.")
 
-		saynn("The glass shard hovers just above her left nipple. One quick, precise flick later.. and you cut a shallow line across her breast. A thin, red trail appears soon after. Eliza's breath hitches slightly.. but otherwise.. She takes it well. Her eyes watch the lonely drops of blood appearing from the little cut.")
+		saynn("Осколок стекла зависает прямо над её левым соском. Один быстрый, точный взмах... и ты проводишь неглубокую линию по её груди. Вскоре проступает тонкая красная дорожка. У Элизы слегка перехватывает дыхание... но в остальном... она держится стойко. Её глаза следят за одинокими каплями крови, выступающими из маленького пореза.")
 
-		saynn("[say=eliza]It looks kinda hot..[/say]")
+		saynn("[say=eliza]Выглядит довольно горячо...[/say]")
 
-		saynn("Who are you to deny her the pleasure then? You press the sharp edge against the same breast.. and make another cut, perpendicular to the first, leaving another bleeding shallow wound. Eliza flinches and bites her lip, a shaky noise of pain gets trapped in her closed maw.")
+		saynn("Кто ты такой, чтобы лишать её удовольствия? Ты прижимаешь острое лезвие к той же груди... и делаешь ещё один надрез, перпендикулярный первому, оставляя ещё одну неглубокую кровоточащую рану. Элиза вздрагивает и закусывает губу, а из её сомкнутых рта вырывается дрожащий стон боли.")
 
-		saynn("Her nips get visibly stiffer..")
+		saynn("Её соски заметно твердеют...")
 
 		saynn("[say=pc]"+str(ch1("...", "This is just the start.", "Cry for me, you worthless thing."))+"[/say]")
 
-		saynn("Next, you bring the glass to her right breast.. and press the pointy tip directly against her nipple. Gradually, you put more force into it, making the make-shift weapon dig into her sensitive nub.. all the while it gets even stiffer.")
+		saynn("Затем ты подносишь стекло к её правой груди... и прижимаешь острый кончик прямо к соску. Постепенно ты увеличиваешь нажим, заставляя самодельное оружие впиваться в её чувствительную плоть... и всё это время сосок становится всё тверже.")
 
-		saynn("This makes the feline start hissing from pain. That's not all though. Your free hand finds her neck.. and squeezes her throat.. just enough to make breathing annoyingly hard to do.. this quickly makes the hiss die down.")
+		saynn("От боли кошка начинает шипеть. Но это ещё не всё. Твоя свободная рука находит её шею... и сжимает горло... ровно настолько, чтобы дыхание стало мучительно тяжёлым... от этого шипение быстро затихает.")
 
-		saynn("[say=eliza]Mhh.. ghh-..[/say]")
+		saynn("[say=eliza]Ммм.. гхх-..[/say]")
 
-		saynn("Eliza parts her lips and breathes deeply.. while the sharp edge draws blood.. directly from her perky nipple. Eliza arches her back slightly, your grip on her neck makes her raise her chin high.")
+		saynn("Элиза приоткрывает губы и глубоко дышит... пока острое лезвие выпускает кровь... прямо из её упругого соска. Элиза слегка выгибает спину, а твоя хватка на её шее заставляет её высоко задрать подбородок.")
 
-		saynn("Lonely drips of her red nectar make their journey down the curve of her tits.. and then start hitting the cold floor. Plap, plap..")
+		saynn("Одинокие капли её красного нектара стекают по изгибу груди... и начинают падать на холодный пол. Кап, кап...")
 
 		saynn("[say=pc]"+str(ch1("...", "How long can you last like this?", "What a mess you are."))+"[/say]")
 
-		saynn("[say=eliza]I'm not.. hh.. scared.. screw you..[/say]")
+		saynn("[say=eliza]Я не.. хх.. боюсь.. пошёл ты!..[/say]")
 
-		saynn("What a brave tongue she got. You could just increase the pressure on her throat.. steal the air completely.. but you got a better idea.")
+		saynn("Какой храбрый язычок. Ты мог бы просто усилить давление на её горло... полностью перекрыть ей воздух... но у тебя есть идея получше.")
 
-		addButton("Continue", "See what happens next", "cut_tongue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "cut_tongue")
 	if(state == "cut_tongue"):
-		saynn("You bring the glass away from her chest.. and instead let it hover in front of her face. Eliza's eyes track it, still shining with defiance.")
+		saynn("Ты убираешь стекло от её груди... и вместо этого заставляешь его парить перед её лицом. Глаза Элизы следят за ним, всё ещё сияя вызовом.")
 
-		saynn("[say=eliza]What now? Gonna carve your name into me? That ain't gonna change anything.[/say]")
+		saynn("[say=eliza]И что теперь? Решишь вырезать своё имя на мне? Это всё равно ничего не изменит.[/say]")
 
 		saynn("[say=pc]"+str(ch1("...", "Open your mouth. I need your stupid tongue.", "Stick out your tongue."))+"[/say]")
 
-		saynn("When you bring the shard closer to her lips.. her ears flatten against her head a bit.")
+		saynn("Когда ты подносишь осколок ближе к её губам... её уши слегка прижимаются к голове.")
 
-		saynn("[say=eliza]Fuck you.[/say]")
+		saynn("[say=eliza]Да пошёл ты.[/say]")
 
-		saynn("You try to catch her tongue.. but she holds her mouth shut. Seconds pass.. you get impatient.")
+		saynn("Ты пытаешься поймать её язык... но она плотно сжимает рот. Проходят секунды... ты начинаешь терять терпение.")
 
-		saynn("You bring your free hand up and cover her nostrils shut. Her eyes go wide immediately.. probably because she knows this trick.")
+		saynn("Ты поднимаешь свободную руку и зажимаешь ей ноздри. Её глаза тут же расширяются... вероятно, потому что она знает этот трюк.")
 
-		saynn("She tries to breathe through her mouth.. but you're already scrapping the glass against her fangs.. threatening.")
+		saynn("Она пытается дышать ртом... но ты уже угрожающе скребёшь стеклом по её клыкам.")
 
-		saynn("And so she holds her breath. Ten seconds.. twenty.. Her chest starts trying to gasp. Thirty.. Her lips part involuntarily, trying to sneakily grab any air. You cover her nostrils harder.")
+		saynn("И вот она задерживает дыхание. Десять секунд... двадцать... Её грудь начинает судорожно вздыматься в попытках вдохнуть. Тридцать секунд... Её губы непроизвольно приоткрываются, пытаясь украдкой глотнуть воздуха. Ты зажимаешь ей ноздри ещё сильнее.")
 
-		saynn("For the first time.. panic begins to flicker in her angry eyes.")
+		saynn("Впервые... в её яростных глазах начинает мелькать паника.")
 
-		saynn("After about a minute, her mouth opens wide to take a big breath. That's when you strike. A quick, precise flick of the glass.. it makes the feline yelp from sudden pain.. followed by a thin line opening up across the surface of her barbed tongue. Blood starts dripping from it immediately, pooling in her mouth.")
+		saynn("Примерно через минуту она широко открывает рот, чтобы сделать глубокий вдох. В этот момент ты наносишь удар. Быстрый, точный взмах стеклом... кошка вскрикивает от внезапной боли, а по поверхности её шершавого языка проходит тонкая полоска разреза. Кровь начинает тут же сочиться, скапливаясь у неё во рту.")
 
-		saynn("You release her nose. She sucks in the air desperately.")
+		saynn("Ты отпускаешь её нос. Она отчаянно жадно хватает ртом воздух.")
 
-		saynn("[say=eliza]Ugh.. hh.. f-fuchk..[/say]")
+		saynn("[say=eliza]Ух.. хх.. к-кхх..[/say]")
 
-		saynn("The wound makes it harder for her to speak clearly. She doesn't want to swallow the blood so she spits it out when enough gathers.")
+		saynn("Из-за раны ей трудно говорить членораздельно. Она не хочет глотать кровь, поэтому выплевывает её, когда её собирается достаточно много.")
 
-		saynn("That's when you grab her ponytail and yank on it, forcing her to throw her head back.. and keep it like that, her maw directed up, her mouth.. becoming a perfect well.")
+		saynn("В этот момент ты хватаешь её за хвост и резко дергаешь назад, заставляя её запрокинуть голову... и оставить её так, направив её пасть вверх, превращая её рот в идеальный колодец.")
 
-		saynn("The blood has nowhere to flow but down, along her wounded tongue, into her throat.")
+		saynn("Крови некуда течь, кроме как вниз, по её раненому языку, прямо в глотку.")
 
-		saynn("It doesn't take long before Eliza starts gagging.. choking.. her whole body jerking against yours.")
+		saynn("Вскоре Элиза начинает давиться... задыхаться... всё её тело содрогается в конвульсиях против тебя.")
 
-		saynn("[say=eliza]Ghh-.. kff-.. hhkk-..[/say]")
+		saynn("[say=eliza]Гхх-... кхх-... ххкк-...[/say]")
 
 		saynn("[say=pc]"+str(ch1("...", "Yeah, drown, bitch.", "Your own useless body working against you. So sad."))+"[/say]")
 
-		saynn("Your other hand finds her neck again, gripping tight, enough to make every swallow a struggle.")
+		saynn("Твоя другая рука снова находит её шею, сжимая её так крепко, что каждый глоток становится настоящей борьбой.")
 
-		saynn("[say=eliza]Ghh-hhh.. KHHhh..[/say]")
+		saynn("[say=eliza]Гхх-ххх.. КХХхх..[/say]")
 
-		saynn("Her eyes are still extremely wide.. tears begin gathering at the corners. She tries to break free.. desperately.. She even tries to step on your {pc.feet}.. so rude of her. You lean close to her ear.")
+		saynn("Её глаза всё ещё широко распахнуты... в уголках начинают скапливаться слезы. Она пытается вырваться... отчаянно... Она даже пытается наступить тебе на {pc.feet}... какая грубиянка. Ты наклоняешься к самому её уху.")
 
 		saynn("[say=pc]"+str(ch1("...", "Is this how you want to die? Choking on your own blood?", "Is this how you want to die? Choking on your own blood?"))+"[/say]")
 
-		saynn("More and more blood drips down her throat. Some of it is probably in her lungs now.. making her cough. She is getting weaker and weaker.. her eyes frantically looking around the dirty cell that she is in.")
+		saynn("Всё больше и больше крови стекает по её горлу. Часть её, вероятно, уже попала в лёгкие... заставляя её кашлять. Она слабеет всё больше и больше... её глаза лихорадочно осматривают грязную камеру, в которой она заперта.")
 
-		saynn("A few seconds later.. something changes in her.. something shatters.")
+		saynn("Спустя несколько секунд... что-то в ней меняется... что-то внутри надламывается.")
 
-		saynn("Her ears go flat again.. her anger goes poof.. swallowed by something else.. fear. Real fear.")
+		saynn("Её уши снова прижимаются к голове... гнев испаряется... поглощённый чем-то другим... страхом. Настоящим страхом.")
 
-		saynn("She starts tapping her rear paw against the floor.. many times. Her whole body language shifts, shoulders slumping, her head shaking.. as much as your hand allows it.")
+		saynn("Она начинает часто-часто постукивать задней лапой по полу. Всё её тело меняется: плечи опускаются, голова мелко дрожит... насколько позволяет твоя рука.")
 
-		saynn("You hold her there a moment longer.. just to make sure she understands. And then, you finally release her ponytail, letting her head fall forward.")
+		saynn("Ты удерживаешь её так ещё мгновение... просто чтобы она всё поняла. А затем наконец отпускаешь её хвост, позволяя голове бедняжки упасть вперед.")
 
-		saynn("Eliza gasps, spitting blood onto the floor and proceeding to cough wildly.")
+		saynn("Элиза судорожно вдыхает, сплевывая кровь на пол, и начинает неистово кашлять.")
 
-		saynn("[say=eliza]KGGHHhh.. GHHhkh.. KHhh-.. HGHHh..[/say]")
+		saynn("[say=eliza]КГГХХхх.. ГХХхк.. ХХхх.. ХГГХХх..[/say]")
 
-		saynn("Her voice sounds raspy, her body shaking. She makes her best effort to talk.")
+		saynn("Её голос звучит хрипло, тело сотрясает дрожь. Она изо всех сил пытается заговорить.")
 
-		saynn("[say=eliza]I.. I.. f-fuh.. I w-will do whatever.. t-the fuck you want..[/say]")
+		saynn("[say=eliza]Я.. я.. кхх.. я с-сделаю всё.. что, блять, ты захочешь..[/say]")
 
-		saynn("She keeps spitting the blood. Her cute pastel fur has received that bright scarlet accent to it.")
+		saynn("Она продолжает сплевывать кровь. Её милый пастельный мех теперь украшен ярким алым акцентом.")
 
-		saynn("You put the shard away and pick up the bandages. Methodically, you clean and wrap the cuts on her breasts. Then you wipe the blood from her mouth.")
+		saynn("Ты убираешь осколок и берешь бинты. Методично ты очищаешь и перевязываешь порезы на её груди, а затем вытираешь кровь у неё во рту.")
 
-		saynn("[say=eliza]The g-green stuff.. it's a coagulant.. hit me with it.. please..[/say]")
+		saynn("[say=eliza]Эта з-зеленая штука.. это коагулянт.. вколи мне её.. пожалуйста..[/say]")
 
-		saynn("From the tray, you take a small syringe. And fill it with the drug that she shows. Then you inject it into her bloodstream.")
+		saynn("Со столика вы берете небольшой шприц и наполняете его препаратом, который она показывает. Затем вы вводите его ей в кровоток.")
 
-		saynn("Soon, the bleeding from her tongue starts to lessen.")
+		saynn("Вскоре кровотечение из её языка начинает утихать.")
 
-		saynn("And with that.. you grab the tray and step out.")
+		saynn("И на этом.. вы хватаете поднос и выходите.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

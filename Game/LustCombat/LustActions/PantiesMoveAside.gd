@@ -18,7 +18,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "Shift panties aside"
+	return "Сдвинуть трусики в сторону"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	if(_args.has("itemName")):

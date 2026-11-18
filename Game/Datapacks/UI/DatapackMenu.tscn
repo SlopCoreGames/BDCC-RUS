@@ -26,7 +26,7 @@ margin_right = 1280.0
 margin_top = 4.0
 margin_right = 1280.0
 margin_bottom = 24.0
-text = "You can enable or disable  datapacks from inside the in-game menu (Pause menu -> Datapacks)"
+text = "Вы можете включать или выключать датапаки во внутриигровом меню (Меню паузы -> Датапаки)"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="DatapackViewer/VBoxContainer"]
 margin_top = 28.0
@@ -53,28 +53,28 @@ size_flags_vertical = 3
 margin_right = 426.0
 margin_bottom = 30.0
 rect_min_size = Vector2( 0, 30 )
-text = "New datapack"
+text = "Новый датапак"
 
 [node name="EditDatapackButton" type="Button" parent="DatapackViewer/VBoxContainer/HBoxContainer/VBoxContainer"]
 margin_top = 34.0
 margin_right = 426.0
 margin_bottom = 64.0
 rect_min_size = Vector2( 0, 30 )
-text = "Edit datapack"
+text = "Редактировать датапак"
 
 [node name="DeleteDatapackButton" type="Button" parent="DatapackViewer/VBoxContainer/HBoxContainer/VBoxContainer"]
 margin_top = 68.0
 margin_right = 426.0
 margin_bottom = 98.0
 rect_min_size = Vector2( 0, 30 )
-text = "Delete datapack"
+text = "Удалить датапак"
 
 [node name="ExportDatapackButton" type="Button" parent="DatapackViewer/VBoxContainer/HBoxContainer/VBoxContainer"]
 margin_top = 102.0
 margin_right = 426.0
 margin_bottom = 132.0
 rect_min_size = Vector2( 0, 30 )
-text = "Export datapack"
+text = "Экспортировать датапак"
 
 [node name="DatapackDescLabel" type="RichTextLabel" parent="DatapackViewer/VBoxContainer/HBoxContainer/VBoxContainer"]
 margin_top = 136.0
@@ -96,7 +96,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 253.0
 margin_bottom = 26.0
-text = "Close"
+text = "Закрыть"
 myShortcutKey = "1"
 
 [node name="UpdateButton" parent="DatapackViewer/VBoxContainer/GridContainer" instance=ExtResource( 3 )]
@@ -105,7 +105,7 @@ anchor_bottom = 0.0
 margin_left = 257.0
 margin_right = 510.0
 margin_bottom = 26.0
-text = "Reload packs"
+text = "Перезагрузить паки"
 myShortcutKey = "2"
 
 [node name="DatapackBrowserButton" parent="DatapackViewer/VBoxContainer/GridContainer" instance=ExtResource( 3 )]
@@ -114,7 +114,7 @@ anchor_bottom = 0.0
 margin_left = 514.0
 margin_right = 767.0
 margin_bottom = 26.0
-text = "DATAPACK BROWSER"
+text = "ПРОСМОТР ДАТАПАКОВ"
 myShortcutKey = "3"
 
 [node name="DatapackFolderButton" parent="DatapackViewer/VBoxContainer/GridContainer" instance=ExtResource( 3 )]
@@ -123,7 +123,7 @@ anchor_bottom = 0.0
 margin_left = 771.0
 margin_right = 1024.0
 margin_bottom = 26.0
-text = "Datapacks folder"
+text = "Папка с датапаками"
 myShortcutKey = "4"
 
 [node name="DatapackWikiButton" parent="DatapackViewer/VBoxContainer/GridContainer" instance=ExtResource( 3 )]
@@ -132,7 +132,7 @@ anchor_bottom = 0.0
 margin_left = 1028.0
 margin_right = 1280.0
 margin_bottom = 26.0
-text = "Datapacks wiki"
+text = "Вики по датапакам"
 myShortcutKey = "5"
 
 [node name="ImportPackButton" type="Button" parent="DatapackViewer/VBoxContainer/GridContainer"]
@@ -141,7 +141,7 @@ margin_top = 30.0
 margin_right = 253.0
 margin_bottom = 56.0
 size_flags_horizontal = 3
-text = "Import datapack"
+text = "Импортировать датапак"
 
 [node name="NewPackConfirmationDialog" type="ConfirmationDialog" parent="DatapackViewer"]
 anchor_left = 0.5
@@ -152,7 +152,7 @@ margin_left = -272.5
 margin_top = -107.5
 margin_right = 272.5
 margin_bottom = 107.5
-window_title = "Datapack ID"
+window_title = "ID датапака"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="DatapackViewer/NewPackConfirmationDialog"]
 margin_left = 8.0
@@ -165,8 +165,7 @@ size_flags_vertical = 3
 [node name="Label" type="Label" parent="DatapackViewer/NewPackConfirmationDialog/VBoxContainer"]
 margin_right = 529.0
 margin_bottom = 66.0
-text = "Enter an id for your new datapack
-Make sure that it's unique, id collisions will lead to only one pack being loaded"
+text = "Введите ID для вашего нового датапака.\nУбедитесь, что он уникален: при совпадении ID загрузится только один из паков"
 autowrap = true
 
 [node name="NewPackIDLineEdit" type="LineEdit" parent="DatapackViewer/NewPackConfirmationDialog/VBoxContainer"]
@@ -209,7 +208,7 @@ margin_right = 419.0
 margin_bottom = 95.0
 size_flags_horizontal = 3
 size_flags_vertical = 7
-text = "Are you sure?"
+text = "Вы уверены?"
 autowrap = true
 
 [connection signal="item_selected" from="DatapackViewer/VBoxContainer/HBoxContainer/DatapackItemList" to="." method="_on_DatapackItemList_item_selected"]

@@ -29,7 +29,7 @@ margin_bottom = 24.0
 margin_right = 1213.0
 margin_bottom = 24.0
 size_flags_horizontal = 3
-placeholder_text = "flag filter"
+placeholder_text = "фильтр флагов"
 
 [node name="Button" type="Button" parent="ScrollContainer/VBoxContainer/HBoxContainer"]
 margin_left = 1217.0

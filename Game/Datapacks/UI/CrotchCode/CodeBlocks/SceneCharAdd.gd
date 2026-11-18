@@ -36,7 +36,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Add character",
+			text = "Добавить персонажа",
 		},
 		{
 			type = "slot",

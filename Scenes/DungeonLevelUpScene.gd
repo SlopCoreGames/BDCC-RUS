@@ -17,7 +17,7 @@ func _run():
 		levelUpScreen.setData(GM.main.DrugDenRun.handledPCLevel+1, perksList, GM.main.DrugDenRun.lastSelectedStat if GM.main.DrugDenRun != null else "")
 		var _ok = levelUpScreen.connect("onConfirm", self, "onConfirmPressed")
 		
-		addButton("Confirm", "You're content with this", "doConfirm")
+		addButton("Подтвердить", "Тебя это устраивает", "doConfirm")
 
 func onConfirmPressed(selectedStat:String, selectedPerk:String):
 	if(selectedStat != ""):

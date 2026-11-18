@@ -18,7 +18,7 @@ margin_bottom = 20.0
 [node name="CharacterName" type="Label" parent="VBoxContainer"]
 margin_right = 1280.0
 margin_bottom = 14.0
-text = "Test character"
+text = "Тестовый персонаж"
 
 [node name="CharacterStatusGrid" parent="VBoxContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0

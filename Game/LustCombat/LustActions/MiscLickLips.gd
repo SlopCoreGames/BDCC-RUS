@@ -14,7 +14,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "Lick lips"
+	return "Облизывать губы"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "Show off your tongue and mouth"

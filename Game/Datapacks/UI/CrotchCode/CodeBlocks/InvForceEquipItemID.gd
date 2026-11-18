@@ -37,7 +37,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Force equip item id",
+			text = "Принудительно экипировать предмет id @@B*@@@@T*@@@@F*@@",
 		},
 		{
 			type = "slot",

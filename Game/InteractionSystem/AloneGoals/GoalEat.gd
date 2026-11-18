@@ -20,15 +20,15 @@ func getText():
 	var action = getCurrentAction()
 	
 	if(action == "eat"):
-		return "{main.name} is eating!"
-	return "{main.name} is hungry! Heading to canteen!"
+		return "{main.name} ест!"
+	return "{main.name} проголодался! Направляется в столовую!"
 
 func getActions() -> Array:
 	if(getLocation() != "hall_canteen"):
 		return [
 			{
 				id = "go",
-				name = "Go to canteen!",
+				name = "Иди в столовую!",
 				desc = "Do something",
 				score = 1.0,
 				args = {},
@@ -39,7 +39,7 @@ func getActions() -> Array:
 	return [
 		{
 			id = "eat",
-			name = "Eat!",
+			name = "Поесть!",
 			desc = "Do something",
 			score = 1.0,
 			args = {},

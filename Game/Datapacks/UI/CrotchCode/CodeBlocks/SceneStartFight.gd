@@ -34,7 +34,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Start fight",
+			text = "Начать бой",
 		},
 		{
 			type = "slot",
@@ -45,7 +45,7 @@ func getTemplate():
 		},
 		{
 			type = "label",
-			text = "IF WON:",
+			text = "ЕСЛИ ПОБЕДА:",
 		},
 		{
 			type = "slot_list",
@@ -54,7 +54,7 @@ func getTemplate():
 		},
 		{
 			type = "label",
-			text = "IF LOST:",
+			text = "ЕСЛИ ПОРАЖЕНИЕ:",
 		},
 		{
 			type = "slot_list",

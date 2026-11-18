@@ -18,7 +18,7 @@ func getScore(_pawn:CharacterPawn) -> float:
 	return 0.0
 
 func getText():
-	return "They be doing something!"
+	return "Они там что-то мутят!"
 
 func onGoalStart():
 	pass

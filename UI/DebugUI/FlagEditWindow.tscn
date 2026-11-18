@@ -11,7 +11,7 @@ margin_left = -205.5
 margin_top = -87.5
 margin_right = 205.5
 margin_bottom = 87.5
-window_title = "Editing a flag"
+window_title = "Редактирование флага"
 resizable = true
 script = ExtResource( 1 )
 
@@ -34,14 +34,14 @@ size_flags_vertical = 3
 [node name="FlagLabel" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
 margin_right = 411.0
 margin_bottom = 14.0
-text = "FLAG NAME"
+text = "НАЗВАНИЕ ФЛАГА"
 align = 1
 
 [node name="CurrentValueLabel" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
 margin_top = 18.0
 margin_right = 411.0
 margin_bottom = 32.0
-text = "Current Value = 123"
+text = "Текущее значение = 123"
 clip_text = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
@@ -67,7 +67,7 @@ margin_bottom = 52.0
 margin_top = 56.0
 margin_right = 411.0
 margin_bottom = 80.0
-text = "New value"
+text = "Новое значение"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 155.0
@@ -78,19 +78,19 @@ margin_bottom = 175.0
 margin_right = 202.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
-text = "Change flag"
+text = "Изменить флаг"
 
 [node name="ClearFlag" type="Button" parent="VBoxContainer/HBoxContainer"]
 margin_left = 206.0
 margin_right = 353.0
 margin_bottom = 20.0
-text = "Clear flag (set to null)"
+text = "Сбросить флаг (установить null)"
 
 [node name="CancelButton" type="Button" parent="VBoxContainer/HBoxContainer"]
 margin_left = 357.0
 margin_right = 411.0
 margin_bottom = 20.0
-text = "Cancel"
+text = "Отмена"
 
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/ChangeFlagButton" to="." method="_on_ChangeFlagButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/ClearFlag" to="." method="_on_ClearFlag_pressed"]

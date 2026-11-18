@@ -20,26 +20,26 @@ func _run():
 		if(GM.pc.getLocation() == GM.pc.getCellLocation()):
 			#(if in cell)
 			if(RNG.chance(50)):
-				saynn("You look around, the cell seems to be mostly secluded, you should be safe as long as nobody peeks through the reinforced window. But that thought only sparks up more desire in you. You feel kinda horny, maybe it’s a good time to blow some steam off..")
+				saynn("Ты оглядываешься по сторонам: кажется, камера довольно уединенная, и ты в безопасности, пока никто не подглядывает через армированное окно. Но эта мысль лишь разжигает твое желание. Ты чувствуешь, что чертовски возбужден, и, пожалуй, сейчас самое время немного снять напряжение...")
 			else:
-				saynn("You’re standing in your cell, alone. There are lots of inmates outside but nobody seems to be paying attention to the cell’s window so you should be safe as long as you’re careful. Maybe you can expose yourself a bit without anyone noticing here..")
+				saynn("Ты стоишь в своей камере один. Снаружи полно заключенных, но, кажется, никто не обращает внимания на окно, так что, если будешь осторожен, тебя не заметят. Может, стоит немного напоказ выставить свое хозяйство, пока никто не видит?..")
 		elif(!lustCombatState.isInPublic()):
 			#(if in private place)
 			if(RNG.chance(50)):
-				saynn("You take a look around. It’s mostly quiet. The idea of doing some naughty things suddenly crosses your lusty mind. This isn’t your cell but this spot is mostly out of the way so you should be safe as long as you’re fast and nobody notices you. You walk around a bit to make sure there is no one around, your face already starts to glow slightly red, you are so excited.")
+				saynn("Ты осматриваешься. Вокруг почти тихо. В твоей похотливой голове внезапно промелькнула мысль о чем-то неприличном. Это не твоя камера, но это место находится в стороне, так что ты в безопасности, если будешь действовать быстро и тебя не заметят. Ты немного проходишься, проверяя, нет ли кого рядом; твое лицо уже начинает слегка краснеть от предвкушения.")
 			
-				saynn("[say=pc]Anyone here?[/say]")
+				saynn("[say=pc]Есть тут кто?[/say]")
 			else:
-				saynn("Horny thoughts invade your mind as you stand in this room. It’s a public place but right now there is no one around so it’s your chance. And even if somebody walks in on you, maybe it’s not such a bad thing..")
+				saynn("Пока ты стоишь в этой комнате, тебя накрывают волны похоти. Это общественное место, но сейчас вокруг никого нет — твой шанс. И даже если кто-то застанет тебя врасплох, возможно, в этом будет только плюс...")
 				
-				saynn("[say=pc]Some privacy. good..[/say]")
+				saynn("[say=pc]Немного уединения. Хорошо...[/say]")
 		else:
 			#(if in public place)
 			if(GM.pc.getSkillLevel(Skill.Exhibitionism) < 1):
-				saynn("You look around, there are people around, lots of them in fact. Doing something lewd would surely get somebody’s attention.. But you are feeling kinda horny, the idea of teasing yourself in public sounds so hot right now.. Just gotta make sure to not get noticed.. You walk around a bit, trying to find a better spot, making sure not to catch too many eyes. Hands travel along your curves, your face is blushing red already..")
+				saynn("Ты оглядываешься по сторонам: вокруг полно народу. Любая пошлая выходка наверняка привлечет чье-то внимание... Но ты чувствуешь, как внутри всё горит от возбуждения, и мысль о том, чтобы дразнить себя на людях, кажется невероятно горячей... Главное — не спалиться... Ты немного проходишься, пытаясь найти место получше и стараясь не привлекать лишних взглядов. Руки скользят по твоим изгибам, а лицо уже заливается краской...")
 				
 				if(GM.pc.getExposedPrivates().size() > 0):
-					saynn("Your face only gets more flustered as you try to cover your exposed privates as best you can. [b]You’re not brave enough to do anything sexual.[/b]")
+					saynn("Твое лицо краснеет еще сильнее, пока ты пытаешься как можно лучше прикрыть свои обнаженные прелести. [b]Тебе не хватает смелости, чтобы заняться чем-то сексуальным.[/b]")
 				
 				saynn(RNG.pick([
 					"[say=pc]What am I doing..[/say]",
@@ -47,7 +47,7 @@ func _run():
 					"[say=pc]I’m gonna get caught.. I can’t..[/say]",
 				]))
 			elif(GM.pc.getSkillLevel(Skill.Exhibitionism) < 2):
-				saynn("It’s a public place, you see people around, doing their things. You wonder how much you can get away with, the idea of exposing yourself crosses your mind and you can’t resist it, you feel aroused already. If you’re careful, people shouldn’t even notice you.. Maybe you do want them to notice.. You don’t really wanna hide and decide to stay mostly in the open, so risky..")
+				saynn("Это общественное место, вокруг люди, занятые своими делами. Ты гадаешь, как много тебе сойдет с рук; мысль о том, чтобы выставиться напоказ, проносится в голове, и ты не можешь ей сопротивляться — возбуждение уже нарастает. Если будешь осторожна, люди тебя даже не заметят... А может, ты как раз хочешь, чтобы они заметили... Ты не хочешь прятаться и решаешь оставаться почти на виду — как рискованно...")
 				
 				saynn(RNG.pick([
 					"[say=pc]I can’t believe myself..[/say]",
@@ -55,9 +55,9 @@ func _run():
 					"[say=pc]Why does it feel so nice..[/say]",
 				]))
 			else:
-				saynn("The thought of doing something lewd in public excites you immensely. There are people around but you don’t even mind them, you’re so horny!")
+				saynn("Мысль о том, чтобы заняться чем-то непристойным на людях, безумно тебя заводит. Вокруг полно народу, но тебе плевать на них — ты слишком возбуждена!")
 				
-				saynn("You’re so tempted to start exposing yourself, maybe more than that. After all the practice you feel very confident in showing off your body. Your cheeks blush red, you can’t wait to get started.")
+				saynn("У тебя так и чешутся руки начать раздеваться, а может, и не только. После всей этой практики ты чувствуешь себя очень уверенно, демонстрируя свое тело. Щеки горят, и тебе не терпится поскорее начать.")
 				
 				saynn(RNG.pick([
 					"[say=pc]I so wanna touch myself..[/say]",
@@ -86,31 +86,31 @@ func _run():
 		if(lustCombatState.isInPublic()):
 			var visibility = lustCombatState.getVisibility()
 			if(visibility >= 1.0):
-				sayn("\nVisibility: You are visible to everyone!")
+				sayn("\nВидимость: Тебя видно всем!")
 			elif(visibility >= 0.9):
-				sayn("\nVisibility: You’re pretty sure people are watching you..")
+				sayn("\nВидимость: Ты почти уверена, что на тебя смотрят...")
 			elif(visibility >= 0.6):
-				sayn("\nVisibility: You have a feeling that you are being watched..")
+				sayn("\nВидимость: У тебя такое чувство, будто за тобой наблюдают...")
 			elif(visibility >= 0.3):
-				sayn("\nVisibility: You think no one watches you")
+				sayn("\nВидимость: Тебе кажется, что за тобой никто не смотрит")
 			else:
-				sayn("\nVisibility: You’re pretty sure no one sees you")
+				sayn("\nВидимость: Ты почти уверена, что тебя никто не видит")
 			
 			var danger = lustCombatState.getDanger()
 			if(danger > 0.0):
 				if(danger >= 0.8):
-					sayn("Danger: People are literally reaching out to grope you")
+					sayn("Опасность: Люди буквально тянутся к тебе, чтобы пощупать")
 				elif(danger >= 0.5):
-					sayn("Danger: People are crowding around you, careful!")
+					sayn("Опасность: Вокруг тебя толпятся люди, осторожнее!")
 				elif(danger >= 0.2):
-					sayn("Danger: There are a few randoms around, watching you")
+					sayn("Опасность: Повсюду какие-то случайные люди, они наблюдают за тобой")
 				else:
-					sayn("Danger: No danger")
+					sayn("Опасность: Опасности нет")
 		
 	if(state == "lustCombatAboutToCum"):
 		saynn(savedActionText)
 		
-		saynn("You’re about to cum..")
+		saynn("Ты вот-вот кончишь...")
 		
 		var lustCombatState:LustCombatState = GM.pc.getLustCombatState()
 		addLustActionsButtons(lustCombatState, lustCombatState.getOrgasmActionsSorted())
@@ -118,8 +118,8 @@ func _run():
 	if(state == "lustCombatAfterCame"):
 		saynn(savedActionText)
 		
-		addButton("Continue", "You’re not done yet", "")
-		addButton("Stop", "That’s enough for now..", "endthescene")
+		addButton("Продолжить", "Ты еще не закончила", "")
+		addButton("Стой", "На сегодня хватит...", "endthescene")
 
 func addLustActionsButtons(lustCombatState:LustCombatState, theActions):
 	for actionData in theActions:

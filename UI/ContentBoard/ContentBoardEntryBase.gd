@@ -4,7 +4,7 @@ class_name ContentBoardEntryBase
 var id:String = ""
 
 func getName() -> String:
-	return "Fill me"
+	return "Наполни меня @@B*@@"
 
 func getDesc(_isFull:bool) -> String:
 	return "Write the description here!"

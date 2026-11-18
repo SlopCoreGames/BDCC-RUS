@@ -15,7 +15,7 @@ func getKeepScore() -> float:
 	return 100.0
 
 func getText():
-	return "{main.name} is doing something.."
+	return "{main.name} что-то делает.."
 
 func getActions() -> Array:
 	return [

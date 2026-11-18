@@ -44,7 +44,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Start Sex. Dom=",
+			text = "Начать секс. Дом=",
 		},
 		{
 			type = "slot",
@@ -55,7 +55,7 @@ func getTemplate():
 		},
 		{
 			type = "label",
-			text = "Sub=",
+			text = "Саб=",
 		},
 		{
 			type = "slot",

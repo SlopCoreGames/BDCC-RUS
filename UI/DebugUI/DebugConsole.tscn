@@ -26,19 +26,19 @@ margin_bottom = 20.0
 [node name="CloseButton" type="Button" parent="PanelContainer/HBoxContainer"]
 margin_right = 101.0
 margin_bottom = 20.0
-text = "Close console"
+text = "Закрыть консоль"
 
 [node name="ClearButton" type="Button" parent="PanelContainer/HBoxContainer"]
 margin_left = 105.0
 margin_right = 203.0
 margin_bottom = 20.0
-text = "Clear console"
+text = "Очистить консоль"
 
 [node name="ProfileButton" type="Button" parent="PanelContainer/HBoxContainer"]
 margin_left = 207.0
 margin_right = 310.0
 margin_bottom = 20.0
-text = "Toggle profiler"
+text = "Переключить профайлер"
 
 [node name="MemLabel" type="Label" parent="PanelContainer"]
 unique_name_in_owner = true
@@ -63,7 +63,7 @@ selection_enabled = true
 margin_top = 369.0
 margin_right = 1280.0
 margin_bottom = 393.0
-placeholder_text = "Enter console commands here"
+placeholder_text = "Введите команды здесь"
 caret_blink = true
 caret_blink_speed = 0.5
 
@@ -76,7 +76,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 bbcode_enabled = true
 bbcode_text = "Commands:"
-text = "Commands:"
+text = "Команды:"
 selection_enabled = true
 
 [connection signal="visibility_changed" from="." to="." method="_on_DebugConsole_visibility_changed"]

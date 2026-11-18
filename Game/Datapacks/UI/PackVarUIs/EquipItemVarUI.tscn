@@ -16,7 +16,7 @@ margin_bottom = 24.0
 margin_top = 5.0
 margin_right = 33.0
 margin_bottom = 19.0
-text = "Head"
+text = "Голова"
 
 [node name="OptionButton" type="OptionButton" parent="HBoxContainer"]
 visible = false
@@ -37,7 +37,7 @@ size_flags_horizontal = 3
 margin_left = 1164.0
 margin_right = 1280.0
 margin_bottom = 24.0
-text = "Auto re-equip"
+text = "Автопереэкипировка"
 
 [connection signal="item_selected" from="HBoxContainer/OptionButton" to="." method="_on_OptionButton_item_selected"]
 [connection signal="onValueChange" from="HBoxContainer/AutoSelectorVarUI" to="." method="_on_AutoSelectorVarUI_onValueChange"]

@@ -54,8 +54,8 @@ size_flags_vertical = 3
 margin_top = 694.0
 margin_right = 638.0
 margin_bottom = 720.0
-hint_tooltip = "Read likes/dislikes from text"
-text = "Text->List"
+hint_tooltip = "Считывать симпатии/антипатии из текста"
+text = "Текст -> Список"
 
 [connection signal="onCurrentValueChange" from="HBoxContainer/VBoxContainer/ScrollContainer/Options/NpcLikesLineUI" to="." method="_on_NpcLikesLineUI_onCurrentValueChange"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer2/ConvertBackButton" to="." method="_on_ConvertBackButton_pressed"]

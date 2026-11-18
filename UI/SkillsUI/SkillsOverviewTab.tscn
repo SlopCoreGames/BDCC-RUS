@@ -23,7 +23,7 @@ size_flags_vertical = 3
 margin_right = 1280.0
 margin_bottom = 14.0
 mouse_filter = 1
-text = "Your learned skills are displayed here"
+text = "Здесь отображаются ваши изученные навыки"
 
 [node name="SkillsContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer"]
 margin_top = 18.0
@@ -40,13 +40,13 @@ margin_bottom = 42.0
 margin_top = 3.0
 margin_right = 142.0
 margin_bottom = 17.0
-text = "You have X base perks"
+text = "У вас X базовых перков"
 
 [node name="BasePerksButton" type="Button" parent="ScrollContainer/VBoxContainer/BasePerksInfo"]
 margin_left = 146.0
 margin_right = 261.0
 margin_bottom = 20.0
-text = "View base perks"
+text = "Просмотреть базовые перки"
 
 [connection signal="visibility_changed" from="." to="." method="_on_SkillsOverviewTab_visibility_changed"]
 [connection signal="pressed" from="ScrollContainer/VBoxContainer/BasePerksInfo/BasePerksButton" to="." method="_on_BasePerksButton_pressed"]

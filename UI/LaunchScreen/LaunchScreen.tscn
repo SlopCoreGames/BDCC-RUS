@@ -41,7 +41,7 @@ margin_top = 9.0
 margin_right = 1280.0
 margin_bottom = 48.0
 custom_fonts/font = SubResource( 3 )
-text = "Modded BDCC Launcher"
+text = "Моддинговый лаунчер BDCC"
 align = 1
 
 [node name="DebugButton" type="Button" parent="VBoxContainer/Label"]
@@ -60,7 +60,7 @@ margin_left = 20.0
 margin_top = -5.0
 margin_right = 266.0
 margin_bottom = 41.0
-text = "Check online broken mods list"
+text = "Проверить список сломанных модов онлайн"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 52.0
@@ -93,7 +93,7 @@ alignment = 1
 margin_top = 5.0
 margin_right = 89.0
 margin_bottom = 25.0
-text = "Mod order"
+text = "Порядок загрузки модов"
 align = 1
 
 [node name="SearchLineEdit" type="LineEdit" parent="VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/orderhb"]
@@ -102,7 +102,7 @@ margin_left = 101.0
 margin_right = 411.0
 margin_bottom = 30.0
 size_flags_horizontal = 3
-placeholder_text = "Search..."
+placeholder_text = "Поиск..."
 
 [node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer"]
 margin_top = 34.0
@@ -172,25 +172,25 @@ margin_bottom = 301.0
 [node name="ModDisableButton" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/HFlowContainer"]
 margin_right = 74.0
 margin_bottom = 26.0
-text = "Disable"
+text = "Отключить"
 
 [node name="MoveUpButton" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/HFlowContainer"]
 margin_left = 78.0
 margin_right = 164.0
 margin_bottom = 26.0
-text = "Move up"
+text = "Вверх"
 
 [node name="MoveDownButton" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/HFlowContainer"]
 margin_left = 168.0
 margin_right = 280.0
 margin_bottom = 26.0
-text = "Move down"
+text = "Вниз"
 
 [node name="DeleteModButton" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer/HFlowContainer"]
 margin_left = 284.0
 margin_right = 410.0
 margin_bottom = 26.0
-text = "DELETE MOD"
+text = "УДАЛИТЬ МОД"
 
 [node name="ModFileList" type="ItemList" parent="VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer"]
 margin_top = 305.0
@@ -215,44 +215,44 @@ unique_name_in_owner = true
 margin_left = 13.0
 margin_right = 174.0
 margin_bottom = 50.0
-text = "Rebuild BDCC.pck"
+text = "Пересборка BDCC.pck"
 
 [node name="ResetGRCacheButton" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
 margin_left = 178.0
 margin_right = 319.0
 margin_bottom = 50.0
-text = "Reset GR cache"
+text = "Сброс кэша GR"
 
 [node name="OpenModsFolder" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
 margin_left = 323.0
 margin_right = 442.0
 margin_bottom = 50.0
-text = "Mods Folder"
+text = "Папка с модами"
 
 [node name="ModBrowserButton" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
 margin_left = 446.0
 margin_right = 572.0
 margin_bottom = 50.0
-text = "Mod Browser"
+text = "Браузер модов"
 
 [node name="NoModsButton" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
 margin_left = 576.0
 margin_right = 713.0
 margin_bottom = 50.0
-text = "Play (no mods)"
+text = "Играть (без модов)"
 
 [node name="WithModsButton" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
 margin_left = 717.0
 margin_right = 851.0
 margin_bottom = 50.0
-text = "Play (modded)"
+text = "Играть (с модами)"
 
 [node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
 margin_top = 648.0
 margin_right = 851.0
 margin_bottom = 668.0
-text = "If the game crashes on start, test without mods or press the TROUBLESHOOTING button"
+text = "Если игра вылетает при запуске, попробуйте запустить её без модов или нажмите кнопку УСТРАНЕНИЯ НЕПОЛАДОК"
 align = 1
 autowrap = true
 
@@ -301,8 +301,7 @@ margin_left = 7.0
 margin_top = 56.0
 margin_right = 409.0
 margin_bottom = 99.0
-text = "Building BDCC.pck
-Please wait.."
+text = "Сборка BDCC.pck\nПожалуйста, подождите..."
 align = 1
 
 [node name="BusyPanel" type="PanelContainer" parent="."]
@@ -335,7 +334,7 @@ margin_right = 286.0
 margin_bottom = 21.0
 bbcode_enabled = true
 bbcode_text = "[center]Checking mods..[/center]"
-text = "Checking mods.."
+text = "Проверка модов..."
 fit_content_height = true
 
 [node name="BusyCloseButton" type="Button" parent="BusyPanel/CenterContainer/PanelContainer/VBoxContainer"]
@@ -377,10 +376,7 @@ bbcode_text = "[center]Choose which folder to use to save/load mods and other fi
 
 If you're using an Android 16+ device, you should probably pick the last option
 [/center]"
-text = "Choose which folder to use to save/load mods and other files.
-
-If you're using an Android 16+ device, you should probably pick the last option
-"
+text = "Выберите папку для сохранения/загрузки модов и других файлов.\n\nЕсли вы используете устройство на Android 16+, скорее всего, стоит выбрать последний вариант\n"
 fit_content_height = true
 
 [node name="AndroidLoadDocuments" type="Button" parent="AndroidChooseFolderPanel/CenterContainer/PanelContainer/VBoxContainer"]
@@ -388,14 +384,14 @@ margin_top = 151.0
 margin_right = 286.0
 margin_bottom = 201.0
 rect_min_size = Vector2( 0, 50 )
-text = "Documents folder (default)"
+text = "Папка «Документы» (по умолчанию)"
 
 [node name="AndroidLoadDownloads" type="Button" parent="AndroidChooseFolderPanel/CenterContainer/PanelContainer/VBoxContainer"]
 margin_top = 205.0
 margin_right = 286.0
 margin_bottom = 255.0
 rect_min_size = Vector2( 0, 50 )
-text = "Downloads folder"
+text = "Папка «Загрузки»"
 
 [node name="AndroidLoadData" type="Button" parent="AndroidChooseFolderPanel/CenterContainer/PanelContainer/VBoxContainer"]
 margin_top = 259.0

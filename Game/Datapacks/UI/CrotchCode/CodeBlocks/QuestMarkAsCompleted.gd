@@ -14,6 +14,6 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Mark Quest as Completed",
+			text = "Отметить квест как выполненный",
 		},
 	]

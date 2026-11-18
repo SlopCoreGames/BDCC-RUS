@@ -13,7 +13,7 @@ margin_left = 8.0
 margin_top = 23.0
 margin_right = -8.0
 margin_bottom = -6.0
-window_title = "Editing text"
+window_title = "Редактирование текста"
 script = ExtResource( 1 )
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
@@ -63,7 +63,7 @@ text = "var"
 margin_left = 170.0
 margin_right = 213.0
 margin_bottom = 20.0
-text = "if var"
+text = "если var"
 
 [node name="TagFastPicker" type="OptionButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
 margin_left = 217.0
@@ -110,20 +110,20 @@ margin_bottom = 671.0
 margin_right = 591.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
-text = "Save"
+text = "Сохранить"
 
 [node name="SpellCheckerButton" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 margin_left = 595.0
 margin_right = 1186.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
-text = "CHECK SPELLING"
+text = "ПРОВЕРИТЬ ОРФОГРАФИЮ"
 
 [node name="CancelButton" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 margin_left = 1190.0
 margin_right = 1244.0
 margin_bottom = 20.0
-text = "Cancel"
+text = "Отмена"
 
 [connection signal="popup_hide" from="." to="." method="_on_CrotchBigTextEditWindow_popup_hide"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/BoldButton" to="." method="_on_BoldButton_pressed"]

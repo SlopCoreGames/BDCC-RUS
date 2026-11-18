@@ -4,7 +4,7 @@ func _init():
 	id = "MainKait"
 	
 func getName() -> String:
-	return "Kait Main Route"
+	return "Основная ветка Кейт"
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):

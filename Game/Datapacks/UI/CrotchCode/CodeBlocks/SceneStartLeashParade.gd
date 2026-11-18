@@ -40,7 +40,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Start leash parade. Dom:",
+			text = "Начать парад поводков. Дом:",
 		},
 		{
 			type = "slot",
@@ -51,7 +51,7 @@ func getTemplate():
 		},
 		{
 			type = "label",
-			text = "Final loc:",
+			text = "Финальная локация:",
 		},
 		{
 			type = "slot",

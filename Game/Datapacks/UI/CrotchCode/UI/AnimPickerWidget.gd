@@ -65,7 +65,7 @@ func updateAnimSettings():
 	var stateVar = animPickerSelectorScene.instance()
 	anim_settings_list.add_child(stateVar)
 	stateVar.setData({
-		name = "State",
+		name = "Состояние",
 		value = animData["state"]["value"],
 		values = animStage.getSupportedStates(),
 		isVar = animData["state"]["isVar"],

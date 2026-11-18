@@ -31,34 +31,34 @@ func _reactInit():
 func _run():
 	if(state == ""):
 		if(uniqueItemID == null || uniqueItemID == ""):
-			addButton("Continue", "Oops", "endthescene")
+			addButton("Продолжить", "Ой", "endthescene")
 			return
 		
 		var item: ItemBase = GM.pc.getInventory().getItemByUniqueID(uniqueItemID)
 		if(item == null):
-			saynn("Error: no item found")
+			saynn("Ошибка: предмет не найден")
 		else:
-			saynn("You "+item.getPuttingOnStringLong(false))
+			saynn("Вы "+item.getPuttingOnStringLong(false))
 		
-		addButton("Continue", "You put on an item", "endthescene")
+		addButton("Продолжить", "Вы надеваете предмет", "endthescene")
 
 	if(state == "awkwardputon"):
 		if(uniqueItemID == null || uniqueItemID == ""):
-			addButton("Continue", "Oops", "endthescene")
+			addButton("Продолжить", "Ой", "endthescene")
 			return
 		
 		var item: ItemBase = GM.pc.getInventory().getItemByUniqueID(uniqueItemID)
 		if(item == null):
-			saynn("Error: no item found")
+			saynn("Ошибка: предмет не найден")
 		else:
-			saynn("It's very awkward to do with bound arms but you just about managed. You "+item.getPuttingOnStringLong(false))
+			saynn("Это чертовски неудобно делать со связанными руками, но вам почти удалось. Вы "+item.getPuttingOnStringLong(false))
 		
-		addButton("Continue", "You put on an item", "endthescene")
+		addButton("Продолжить", "Вы надеваете предмет", "endthescene")
 
 	if(state == "blockedhands"):
-		saynn("You really try to put that on but your blocked hands prevent you from doing so")
+		saynn("Вы изо всех сил пытаетесь это надеть, но скованные руки мешают вам это сделать")
 		
-		addButton("Continue", "Aww", "endthescene")
+		addButton("Продолжить", "О-о-о...", "endthescene")
 		
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

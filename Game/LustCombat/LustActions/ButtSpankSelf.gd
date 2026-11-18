@@ -17,7 +17,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "Spank ass"
+	return "@@B*@@шлепнуть по заднице@@T*@@@@F*@@"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "Send your butt to bounce"

@@ -64,7 +64,7 @@ margin_right = 1231.0
 margin_bottom = 720.0
 size_flags_horizontal = 3
 size_flags_vertical = 5
-text = "Test Item"
+text = "Тестовый предмет"
 valign = 1
 autowrap = true
 
@@ -85,7 +85,7 @@ margin_bottom = 720.0
 margin_left = 8.0
 margin_right = 45.0
 margin_bottom = 720.0
-text = "Use"
+text = "Использовать"
 
 [connection signal="hide" from="." to="." method="_on_InventoryEntry_hide"]
 [connection signal="mouse_entered" from="HBoxContainer/Control/SelectButton" to="." method="_on_SelectButton_mouse_entered"]

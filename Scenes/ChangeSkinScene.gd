@@ -56,16 +56,16 @@ func _run():
 	
 	if(state == ""):
 		if(debugMode):
-			addButton("RELOAD SKINS", "Reload all custom skins from disk", "do_reload_skins")
+			addButton("ОБНОВИТЬ СКИНЫ", "Перезагрузить все пользовательские скины с диска", "do_reload_skins")
 		
-		saynn("In this menu you can modify the skin/colors of your character!")
+		saynn("В этом меню вы можете изменить кожу и цвета своего персонажа!")
 		
-		saynn("Start by modifying the base skin. All bodyparts use the base skin/colors unless you override them specifically.")
+		saynn("Начните с изменения базового скина. Все части тела используют базовый цвет, если вы не настроите их отдельно.")
 		
 		
-		addButton("Confirm", "Job well done", "endthescene")
+		addButton("Подтвердить", "Работа выполнена!", "endthescene")
 		
-		addButton("Base Skin/Colors", "Choose your base skin/colors", "basemenu")
+		addButton("Базовый скин/цвета", "Выберите базовый скин/цвета", "basemenu")
 		
 		for bodypartSlot in BodypartSlot.getAll():
 			if(!thePC.hasBodypart(bodypartSlot)):
@@ -73,21 +73,21 @@ func _run():
 			var bodypart = thePC.getBodypart(bodypartSlot)
 			if(!bodypart.supportsSkin()):
 				continue
-			#addButton(bodypart.getName(), "Modify this bodypart's skin/colors", "bodypartmenu", [bodypartSlot])
-			addButton(BodypartSlot.getVisibleName(bodypartSlot), "Modify the skin/colors of the "+str(bodypart.getName()), "bodypartmenu", [bodypartSlot])
+			#addButton(bodypart.getName(), "Изменить скин/цвет этой части тела", "bodypartmenu", [bodypartSlot])
+			addButton(BodypartSlot.getVisibleName(bodypartSlot), "Изменить скин/цвет "+str(bodypart.getName()), "bodypartmenu", [bodypartSlot])
 
 	if(state == "basemenu"):
 		savedPage = 0
-		addButton("Back", "Go back", "")
-		addButton("Skin", "Change base skin", "changebaseskinmenu")
-		addButton("Primary color", "Change base primary color", "changebasecolormenu", [0])
-		addButton("Secondary color", "Change base secondary color", "changebasecolormenu", [1])
-		addButton("Tertiary color", "Change base tertiary color", "changebasecolormenu", [2])
-		addButton("Randomize colors", "Pick random colors", "dorandomcolors")
-		addButton("Randomize ALL", "Pick random skin and colors", "dorandomcolorsall")
+		addButton("Назад", "Назад", "")
+		addButton("Кожа", "Изменить базовый цвет кожи", "changebaseskinmenu")
+		addButton("Основной цвет", "Изменить основной цвет кожи", "changebasecolormenu", [0])
+		addButton("Вторичный цвет", "Изменить вторичный цвет кожи", "changebasecolormenu", [1])
+		addButton("Третичный цвет", "Изменить третичный цвет кожи", "changebasecolormenu", [2])
+		addButton("Перемешать цвета", "Выбрать случайные цвета", "dorandomcolors")
+		addButton("Перемешать ВСЁ", "Выбрать случайную кожу и цвета", "dorandomcolorsall")
 
 	if(state == "changebaseskinmenu"):		
-		addButton("Back", "Go back", "basemenu")
+		addButton("Назад", "Назад", "basemenu")
 		for skinID in GlobalRegistry.getSkinsAllKeys():
 			var theSkin:SkinBase = GlobalRegistry.getSkin(skinID)
 			var theSkinIsActive:bool = (thePC.pickedSkin == skinID)
@@ -111,27 +111,27 @@ func _run():
 			rememberedColor = thePC.pickedSkinBColor
 		colorPicker.connect("color_changed", self, "changebasecolormenu_colorchanged")
 			
-		addButton("Back", "Go back", "resetcolor_basemenu")
-		addButton("Confirm", "Select this color", "changebasecolormenu_select")
+		addButton("Назад", "Назад", "resetcolor_basemenu")
+		addButton("Подтвердить", "Выбрать этот цвет", "changebasecolormenu_select")
 
 	if(state == "bodypartmenu"):
 		savedPage = 0
 		var bodypart = thePC.getBodypart(pickedBodypartSlot)
 		
-		addButton("Back", "Go back", "")
+		addButton("Назад", "Назад", "")
 		if(!bodypart.hasCustomSkinPattern()):
-			addButton("Skin", "Change part's skin", "changepartskinmenu")
+			addButton("Кожа", "Сменить кожу части тела", "changepartskinmenu")
 		else:
 			if(!GlobalRegistry.getPartSkins(bodypart.id).empty() || bodypart.pickedSkin != null):
-				addButton("Skin", "Change part's skin", "changepartskinmenu")
-		addButton("Primary color", "Change part's primary color", "changepartcolormenu", [0])
-		addButton("Secondary color", "Change part's secondary color", "changepartcolormenu", [1])
-		addButton("Tertiary color", "Change part's tertiary color", "changepartcolormenu", [2])
+				addButton("Кожа", "Сменить кожу части тела", "changepartskinmenu")
+		addButton("Основной цвет", "Сменить основной цвет части тела", "changepartcolormenu", [0])
+		addButton("Вторичный цвет", "Сменить дополнительный цвет части тела", "changepartcolormenu", [1])
+		addButton("Третичный цвет", "Сменить третий цвет части тела", "changepartcolormenu", [2])
 
 
 	if(state == "changepartskinmenu"):
 		var bodypart = thePC.getBodypart(pickedBodypartSlot)
-		addButton("Back", "Go back", "bodypartmenu")
+		addButton("Назад", "Назад", "bodypartmenu")
 		
 		if(bodypart.hasCustomSkinPattern()):
 			var defaultSkinIsActive = (bodypart.pickedSkin == null)
@@ -173,9 +173,9 @@ func _run():
 			rememberedColor = bodypart.pickedBColor
 		colorPicker.connect("color_changed", self, "changepartcolormenu_colorchanged")
 			
-		addButton("Back", "Go back", "resetcolor_bodypartmenu")
-		addButton("Confirm", "Select this color", "changepartcolormenu_select")
-		addButton("Same as base", "Inherit the color from the base", "changepartcolormenu_select", [null])
+		addButton("Назад", "Назад", "resetcolor_bodypartmenu")
+		addButton("Подтвердить", "Выбрать этот цвет", "changepartcolormenu_select")
+		addButton("Как у основы", "Наследовать цвет от основы", "changepartcolormenu_select", [null])
 
 var isChanging = false
 func changebasecolormenu_colorchanged(_theColor):

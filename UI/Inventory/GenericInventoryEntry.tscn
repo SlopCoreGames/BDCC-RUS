@@ -74,7 +74,7 @@ margin_right = 1231.0
 margin_bottom = 720.0
 size_flags_horizontal = 3
 size_flags_vertical = 5
-text = "Test Item"
+text = "Тестовый предмет"
 valign = 1
 autowrap = true
 
@@ -99,6 +99,6 @@ margin_bottom = 720.0
 [node name="InteractButton" type="Button" parent="HBoxContainer/HBoxContainer/InteractButtonsList"]
 margin_right = 37.0
 margin_bottom = 720.0
-text = "Use"
+text = "Использовать"
 
 [connection signal="pressed" from="HBoxContainer/Control/SelectButton" to="." method="_on_SelectButton_pressed"]

@@ -13,7 +13,7 @@ func run(_triggerID, _args):
 	
 	if(GM.main.canLootRoom(roomID)):
 		if(GM.pc.isBlindfolded() && !GM.pc.canHandleBlindness()):
-			saynn("You have a strong feeling there is something to loot here but you can't do it while blindfolded..")
+			saynn("У тебя сильное предчувствие, что здесь можно что-то раздобыть, но с повязкой на глазах это сделать трудно...")
 		else:
 			var room = GM.world.getRoomByID(roomID)
 			if(room == null):
@@ -24,7 +24,7 @@ func run(_triggerID, _args):
 				roomMessage = "You notice something that you can loot here."
 			
 			saynn(roomMessage)
-			addButton("Loot", "See what's here", "loot", [roomID])
+			addButton("Обыскать", "Посмотреть, что здесь есть", "loot", [roomID])
 
 func getPriority():
 	return 1

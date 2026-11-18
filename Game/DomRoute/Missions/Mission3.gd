@@ -2,7 +2,7 @@ extends MissionBase
 
 func _init():
 	id = "Mission3"
-	name = "Just Lab Stuff"
+	name = "Просто лабораторная рутина"
 	desc = "You recruited Ferri, a chemist dracat. But now you need to get a chemistry lab setup for her."
 	
 	startScene = "DomM3s1Intro"
@@ -18,10 +18,10 @@ func _init():
 	
 	decisions = {
 		"nurse": {
-			name = "Nurse outcome",
+			name = "Исход для медсестры",
 			outcomes = {
 				"letgo": {
-					text = "Let go",
+					text = "Отпустить",
 					effects = [
 						#DECISION_EFFECT_KAIT_OBEDIENCE,
 					],
@@ -29,7 +29,7 @@ func _init():
 					avyLine = "Letting that bitch go was dumb. If she talks, I swear.",
 				},
 				"reward": {
-					text = "Rewarded",
+					text = "Награда",
 					effects = [
 						DECISION_EFFECT_KAIT_LOVE,
 					],
@@ -37,7 +37,7 @@ func _init():
 					avyLine = "Hope you had fun with that bitch. And the other bitch.",
 				},
 				"break": {
-					text = "Broken",
+					text = "Сломленная",
 					effects = [
 						DECISION_EFFECT_AVY_LOVE,
 					],

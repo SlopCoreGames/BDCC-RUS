@@ -2,7 +2,7 @@ extends MissionBase
 
 func _init():
 	id = "Mission0"
-	name = "Rahi The Thief"
+	name = "Рахи — воровка"
 	desc = "Recruit Rahi!"
 	
 	startScene = "DomM0RahiBreakIntroScene"
@@ -13,17 +13,17 @@ func _init():
 	
 	decisions = {
 		"kait": {
-			name = "Kait took Rahi's leash",
+			name = "Кейт отобрала поводок у Рахи",
 			outcomes = {
 				"assert": {
-					text = "Asserted yourself",
+					text = "Проявил характер",
 					effects = [
 						DECISION_EFFECT_KAIT_OBEDIENCE,
 					],
 					kaitLine = "Hey.. uh.. I should have asked before taking Rahi's leash, you're right.",
 				},
 				"allow": {
-					text = "Allowed it",
+					text = "Позволил это сделать",
 					effects = [
 						DECISION_EFFECT_KAIT_LOVE,
 					],

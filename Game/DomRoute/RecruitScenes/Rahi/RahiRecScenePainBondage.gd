@@ -13,127 +13,127 @@ func _run():
 		mean = (c1 == 2)
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcBodyState={naked=true, leashedBy="pc"}})
 		aimCameraAndSetLocName("hideout_breakroom")
-		saynn("You will need some things for what you are about to do. You ask Kait and Ans.. and luckily they have it! Perks of having a team.")
+		saynn("Для того, что ты задумал, тебе понадобятся кое어 какие вещи. Ты спрашиваешь Кейт и Энс... и, к счастью, у них всё есть! Плюсы работы в команде.")
 
-		saynn("After that, you enter Rahi's cell and grab her leash before bringing her closer to the middle of the cell.. positioning her under the ceiling hook that was conveniently pre-installed here.")
+		saynn("После этого ты входишь в камеру Рахи и хватаешь её поводок, подтягивая её ближе к центру клетки... устраивая её прямо под потолочным крюком, который здесь так удачно предустановили.")
 
 		saynn("[say=pc]"+str(ch1("Our team only needs brave people. I'm going to test your pain tolerance. Trust me, okay?", "Our team only needs brave people. So I'm gonna test how well you handle pain. Understand?", "Our team has no place for cowards. I'm gonna test how well you handle pain. Understand?"))+"[/say]")
 
-		saynn("Rahi blinks and then swallows audibly.")
+		saynn("Рахи моргает, а затем издает отчетливый глотательный звук.")
 
-		saynn("[say=rahi]She.. she is not sure..[/say]")
+		saynn("[say=rahi]Она... она не уверена...[/say]")
 
-		saynn("You increase the grip on the leash.")
+		saynn("Ты сильнее сжимаешь поводок.")
 
 		saynn("[say=pc]"+str(ch1("I won't do anything that you can't handle. I will be gentle. Now, let's get those clothes off..", "You will have to trust me, kitty cat. Now, clothes off.", "Too bad, if you're not a painslut yet, you will have to become one. Strip. Everything. Or I'll tear them off myself."))+"[/say]")
 
-		saynn("You watch as her paws begin to unbutton her shirt. She reveals her perky chest to you, her nips catching the slight cold breeze. Her shorts are next, she uses her claws to catch the waistband and tug down on it, revealing her cute little pink flower.")
+		saynn("Ты наблюдаешь, как её лапки начинают расстегивать пуговицы на рубашке. Она обнажает перед тобой свою упругую грудь, её соски слегка покалывает от легкого прохладного ветерка. Следом идут шорты: она цепляет когтями пояс и стягивает их вниз, открывая твоему взору её милую розовую киску.")
 
-		saynn("Rahi stands still as you begin to circle her slowly, your digits tracing her waist, her spine, her shoulder.. before reaching towards her chest to pinch a nipple. Rahi gasps, her back arching.")
+		saynn("Рахи замирает, пока ты медленно обходишь её кругом, ведя пальцами по её талии, позвоночнику, плечам... прежде чем потянуться к её груди, чтобы ущипнуть сосок. Рахи ахает, выгибая спину.")
 
-		saynn("[say=rahi]Ah.. m-meow..[/say]")
+		saynn("[say=rahi]Ах... м-мяу...[/say]")
 
-		saynn("Next, you reveal one of the things that you've got.. ropes! Lots of ropes.")
+		saynn("Затем ты достаешь одну из своих заначек... веревки! Очень много веревок.")
 
 		saynn("[say=pc]"+str(ch1("I'm gonna tie you up. I hope that's okay with you.", "I'm gonna tie you up. Stand still for me, kitty.", "I'm gonna tie you up, slut. Don't you dare move."))+"[/say]")
 
-		saynn("Rahi eyes the ropes nervously, her tail curling around her thigh.")
+		saynn("Рахи нервно косится на веревки, её хвост обвивает бедро.")
 
-		addButton("Continue", "See what happens next", "bind_rahi")
+		addButton("Продолжить", "Смотреть, что будет дальше", "bind_rahi")
 	if(state == "bind_rahi"):
 		playAnimation(StageScene.RopesOralSex, "tease", {pc="rahi", npc="pc", bodyState={naked=true, hard=true}})
-		saynn("You begin to tie her up, looping the rope around her waist a few times, making sure it's secured tightly. She squeaks as you pull her arms behind her back, crossing her wrists and tying them together.")
+		saynn("Ты начинаешь связывать её, несколько раз оборачивая веревку вокруг талии и плотно затягивая её. Она пискнула, когда ты завел её руки за спину, скрестил запястья и связал их вместе.")
 
-		saynn("The ropes do bite in.. but it doesn't look painful.. only inescapable.")
+		saynn("Веревки впиваются в кожу... но это не выглядит болезненным... скорее неизбежным.")
 
-		saynn("You guide Rahi under the ceiling hook. and throw the free end of the rope over it, catching it on its way down. Then you run it through the waist harness again and through her crotch..")
+		saynn("Ты подводишь Рахи под потолочный крюк и набрасываешь на него свободный конец веревки, ловя его на лету. Затем ты снова пропускаешь её через поясную обвязку и между ног...")
 
-		saynn("Then, with a few steady pulls, you manage to lift Rahi off the floor, her toes now dangling inches above the concrete, her body swaying gently.")
+		saynn("Затем несколькими уверенными рывками тебе удается оторвать Рахи от пола; теперь её пальцы ног болтаются в паре дюймов над бетоном, а её тело плавно покачивается.")
 
-		saynn("[say=rahi]Ah..![/say]")
+		saynn("[say=rahi]Ах..![/say]")
 
-		saynn("Her legs are still free.. but you quickly remedy that.. tying the rope around each ankle and finishing at that. Having two points of support makes her go horizontal against the floor.")
+		saynn("Её ноги всё ещё свободны... но ты быстро это исправляешь, обматывая верёвкой каждую лодыжку и закрепляя её. Благодаря двум точкам опоры она оказывается в горизонтальном положении на полу.")
 
-		saynn("And so.. Rahi is now fully exposed, suspended and helpless, her pussy and tits on full display. She is testing the ropes.. causing them to dig into her sensitive spots more.")
+		saynn("И вот... Рахи теперь полностью обнажена, подвешена и беспомощна, её киска и грудь выставлены напоказ. Она ерзает, проверяя верёвки, отчего те ещё сильнее впиваются в её чувствительные места.")
 
-		saynn("[say=rahi]Mhh.. ah..[/say]")
+		saynn("[say=rahi]Ммм.. ах..[/say]")
 
 		saynn("[say=pc]"+str(ch1("There we go. Let me know if this is too much.", "Such a helpless kitty. Let's see if I can do more.", "Such a helpless toy. I'm not done yet."))+"[/say]")
 
-		saynn("There is never enough bondage. Your hand produces a black piece of cloth that you begin to tie around Rahi's eyes, plunging her into darkness.")
+		saynn("Бондажа никогда не бывает много. Твоя рука достаёт кусок чёрной ткани, которым ты начинаешь завязывать глаза Рахи, погружая её во тьму.")
 
-		saynn("[say=rahi]N-no.. she can't see..[/say]")
+		saynn("[say=rahi]Н-нет.. она ничего не видит..[/say]")
 
 		saynn("[say=pc]"+str(ch1("It's okay. Just feel. Nothing bad will happen.", "Good. Now you'll really feel every touch.", "That's the point. I want you lost."))+"[/say]")
 
-		addButton("Continue", "See what happens next", "apply_gear")
+		addButton("Продолжить", "Смотреть, что будет дальше", "apply_gear")
 	if(state == "apply_gear"):
-		saynn("The ballgag is next. You press the rubber ball between her teeth and tighten the strap behind her head. Any words of her dissolve into muffled noises.")
+		saynn("Следующий этап — кляп. Ты зажимаешь резиновый шар между её зубами и затягиваешь ремешок на затылке. Любые её слова превращаются в невнятное мычание.")
 
-		saynn("[say=rahi]Mmph..[/say]")
+		saynn("[say=rahi]Мммф..[/say]")
 
-		saynn("Her drool already begins to collect at the corners of her lips, trailing down. Blind and gagged, she is ready.")
+		saynn("Слюна уже начинает скапливаться в уголках её губ и стекать вниз. Слепая и с кляпом во рту, она готова.")
 
-		saynn("And so now the real test comes. You produce two nipple clamps, connected by a little, short chain. You let the blind kitty feel them, dragging their rubber tips across her curves, homing in on her nips.")
+		saynn("И вот наступает настоящее испытание. Ты достаёшь два зажима для сосков, соединённых короткой цепочкой. Ты позволяешь слепой кошечке почувствовать их, проводя резиновыми наконечниками по её изгибам, целясь прямо в соски.")
 
-		saynn("Her left nipple is first. You open the clamp and slide it onto the sensitive spot. Rahi's whole body jolts, a muffled cry escaping the gag. The right nipple follows soon.. making her arch her back, swaying in the air.")
+		saynn("Сначала левый сосок. Ты раскрываешь зажим и надеваешь его на чувствительную точку. Всё тело Рахи вздрагивает, а из-под кляпа вырывается приглушенный крик. Вскоре следует и правый сосок... заставляя её выгнуться дугой и покачиваться в воздухе.")
 
-		saynn("[say=rahi]Hnnngh..![/say]")
+		saynn("[say=rahi]Хнннгх..![/say]")
 
-		saynn("You let her be like that for a bit. Rahi's muffled noises begin to die down as she gets used to the pinching. She is still breathing faster though, her stiff nips constantly under pressure.")
+		saynn("Ты оставляешь её в таком состоянии на некоторое время. Приглушенные звуки Рахи постепенно затихают, когда она привыкает к щипкам. Однако дыхание её всё ещё учащено, а напряженные соски постоянно находятся под давлением.")
 
-		saynn("The chain dangles between her breasts.. gives you an idea. You grab a few small weights.. about half a pound in weight in total.. and attach them onto the center of the chain.")
+		saynn("Цепь свисает между её грудей... и это наводит тебя на мысль. Ты берешь несколько небольших грузиков... весом всего около двухсот грамм в сумме... и прикрепляешь их к центру цепи.")
 
-		saynn("Immediately, the clamps tug downward, pulling on Rahi's nipples, forcing a muffled moan out of her. You can see her toes curling, her tail shivering stiffly.")
+		saynn("Зажимы тут же тянут вниз, натягивая соски Рахи и вырывая из неё приглушенный стон. Ты видишь, как поджимаются её пальцы на ногах, а хвост мелко и напряженно дрожит.")
 
 		saynn("[say=pc]"+str(ch1("It's not so bad, try to get used to the feeling.", "Those are just beginner weights. You'll get used to them.", "Cry all you want. Your tits look beautiful like this."))+"[/say]")
 
-		saynn("Next, you crouch behind her, sneaking your hands between her legs and spreading them more, revealing her pussy that has gotten quite slick despite all the fear. You produce another clamp with a little weight on it and carefully attach it to her clit. The object starts tugging on her bean, making the kitty squirm and try to close her thighs around it.")
+		saynn("Затем ты приседаешь позади неё, просовывая руки между её ног и разводя их шире, обнажая киску, которая стала довольно влажной, несмотря на весь страх. Ты достаешь еще один зажим с небольшим грузиком и осторожно цепляешь его за клитор. Предмет начинает тянуть её клитор, заставляя кошечку извиваться и пытаться сжать бедра вокруг него.")
 
-		saynn("[say=rahi]Nngh.. hhh..[/say]")
+		saynn("[say=rahi]Ннгх.. ххх..[/say]")
 
-		saynn("Two smaller clamps and attach one to each of her inner labias. Rahi jolts.. making every clamp tug on her sensitive bits all at once, creating a cascade of sensations that rocks through her, making the feline squirm and moan harder.")
+		saynn("Берешь еще два зажима поменьше и крепишь их к каждой из малых половых губ. Рахи вздрагивает... отчего все зажимы одновременно тянут её чувствительные места, создавая каскад ощущений, который прошибает её насквозь, заставляя кошачью телку извиваться и стонать еще сильнее.")
 
-		saynn("You step back and admire your work.")
+		saynn("Ты отступаешь на шаг, любуясь своей работой.")
 
 		saynn("[say=pc]"+str(ch1("Perfect. Please, try to endure it. As long as you can.", "Perfect. Try to endure it. As long as you can.", "Look at you. Getting off from pain."))+"[/say]")
 
-		saynn("Then you raise your hand.. and deliver a firm spank to her suspended rear. The impact makes her swing slightly.. and the weights on her nipples bounce, tugging harder.")
+		saynn("Затем ты поднимаешь руку... и отвешиваешь звонкий шлепок по её подвешенной заднице. От удара она слегка раскачивается... и грузики на сосках подпрыгивают, сильнее натягивая кожу.")
 
-		saynn("[say=rahi]MMMPHh-!..[/say]")
+		saynn("[say=rahi]МММФФ-!..[/say]")
 
-		saynn("Another spank.. causes a similar reaction. Rahi sways more, her whole body writhing, ropes digging into her, weights pulling on her bits..")
+		saynn("Еще один шлепок... вызывает такую же реакцию. Рахи раскачивается сильнее, всё её тело корчится, верёвки впиваются в кожу, а грузики тянут её плоть..")
 
-		saynn("You keep going, smacking that rear until it receives a nice red glow to it. Rahi's pussy grows wetter, a thin bead of her arousal starts hanging from her folds.")
+		saynn("Ты продолжаешь, лупя по этой заднице, пока она не наливается ярким румянцем. Киска Рахи становится всё влажнее, и тонкая капля возбуждения начинает стекать из её складок.")
 
-		saynn("[say=rahi]Mhhh!.. hh-h..[/say]")
+		saynn("[say=rahi]Мххх!.. хх-х..[/say]")
 
-		saynn("After a few more spanks, Rahi starts shaking her head, her moans turning into whimpers. She had enough it seems. Her nips lost their pinkness, instead looking red-ish.. just like her pussy folds.")
+		saynn("После нескольких шлепков Рахи начинает мотать головой, а её стоны переходят в скулёж. Похоже, с неё хватит. Её соски потеряли розовый цвет и стали красноватыми... точь-в-точь как складки её киски.")
 
-		addButton("Untie", "Enough fun for now", "untie_rahi")
+		addButton("Развязать", "На сегодня хватит", "untie_rahi")
 	if(state == "untie_rahi"):
 		playAnimation(StageScene.Cuddling, "idle", {pc="pc", npc="rahi", npcBodyState={naked=true, hard=true}})
-		saynn("You reach up and take off the weights first.. which makes Rahi gasp in relief. Then you remove the nipple clamps one by one and rub the blood back into her bruised nipples. The clit and pussy fold clamps come off too as Rahi shudders and whines more.")
+		saynn("Ты тянешься вверх и первым делом снимаешь грузики... отчего Рахи облегченно ахает. Затем ты один за другим снимаешь зажимы с сосков и втираешь кровь обратно в её ушибленную плоть. Зажимы на клиторе и складках киски тоже снимаются, пока Рахи вздрагивает и всё сильнее скулит.")
 
-		saynn("You lower her gently to the floor, then untie her wrists and ankles. The ropes have left some marks on her. Finally, you unbuckle the ballgag and remove the blindfold.")
+		saynn("Ты осторожно опускаешь её на пол, затем развязываешь запястья и лодыжки. Верёвки оставили на ней следы. Наконец, ты расстегиваешь шариковый кляп и снимаешь повязку с глаз.")
 
-		saynn("Rahi blinks in the light.. lonely tears streaking down her face. Her whole body is still shivering ever so slightly.")
+		saynn("Рахи моргает, щурясь от света... по её лицу текут одинокие слезы. Всё её тело всё ещё слегка дрожит.")
 
-		saynn("[say=rahi]S.she.. hh.. t-that was.. p-pain..[/say]")
+		saynn("[say=rahi]Э-это... хх... б-было... б-больно..[/say]")
 
-		saynn("You hold her close.")
+		saynn("Ты крепко прижимаешь её к себе.")
 
 		saynn("[say=pc]"+str(ch1("Sorry, kitty. I had to test your endurance.", "You did pretty good, kitty. Very good.", "You will get used to the pain eventually. You just need more practice."))+"[/say]")
 
-		saynn("You rub her spots.. while she rests in your hands.")
+		saynn("Ты ласкаешь её самые чувствительные места, пока она покоится в твоих руках.")
 
-		saynn("[say=rahi]That.. was too much.. the whole thing..[/say]")
+		saynn("[say=rahi]Это.. было слишком.. всё целиком..[/say]")
 
-		saynn("Looks like she is not a fan of this.")
+		saynn("Похоже, ей это не очень нравится.")
 
-		saynn("You cuddle Rahi for a while longer.. before leaving her be, stepping out of the cell to see what Kait thinks.")
+		saynn("Ты ещё какое-то время нежно обнимаешь Рахи, а затем оставляешь её одну и выходишь из камеры, чтобы узнать мнение Кейт.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

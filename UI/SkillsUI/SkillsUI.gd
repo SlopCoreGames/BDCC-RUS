@@ -142,7 +142,7 @@ func _on_ApplyButton_pressed():
 	updateAttribList()
 
 func updateDamageStatsLabel():
-	var text = "Output damage multiplier:\n"
+	var text = "Множитель исходящего урона:\n"
 	for damageType in DamageType.getAll():
 		var dam = GM.pc.getDamageMultiplier(damageType)
 		var damName = DamageType.getName(damageType)

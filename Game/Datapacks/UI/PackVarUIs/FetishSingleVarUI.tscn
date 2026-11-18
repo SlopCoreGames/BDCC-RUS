@@ -12,7 +12,7 @@ margin_top = 3.0
 margin_right = 250.0
 margin_bottom = 17.0
 rect_min_size = Vector2( 250, 0 )
-text = "Anal sex"
+text = "Анальный секс"
 clip_text = true
 
 [node name="HatesButton" type="Button" parent="."]
@@ -21,13 +21,13 @@ margin_right = 364.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
 custom_colors/font_color_disabled = Color( 0.470588, 0.588235, 1, 1 )
-text = "Hates"
+text = "Ненавидит"
 
 [node name="ReallyDislikesButton" type="Button" parent="."]
 margin_left = 368.0
 margin_right = 478.0
 margin_bottom = 20.0
-hint_tooltip = "Really dislikes"
+hint_tooltip = "Терпеть не может"
 size_flags_horizontal = 3
 custom_colors/font_color_disabled = Color( 0.470588, 0.588235, 1, 1 )
 text = "---"
@@ -36,7 +36,7 @@ text = "---"
 margin_left = 482.0
 margin_right = 593.0
 margin_bottom = 20.0
-hint_tooltip = "Dislikes"
+hint_tooltip = "Не любит"
 size_flags_horizontal = 3
 custom_colors/font_color_disabled = Color( 0.470588, 0.588235, 1, 1 )
 text = "--"
@@ -45,7 +45,7 @@ text = "--"
 margin_left = 597.0
 margin_right = 707.0
 margin_bottom = 20.0
-hint_tooltip = "Slightly dislikes"
+hint_tooltip = "Слегка не любит"
 size_flags_horizontal = 3
 custom_colors/font_color_disabled = Color( 0.470588, 0.588235, 1, 1 )
 text = "-"
@@ -56,13 +56,13 @@ margin_right = 822.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
 custom_colors/font_color_disabled = Color( 0.470588, 0.588235, 1, 1 )
-text = "Neutral"
+text = "Нейтрально"
 
 [node name="SlightlyLikesButton" type="Button" parent="."]
 margin_left = 826.0
 margin_right = 936.0
 margin_bottom = 20.0
-hint_tooltip = "Slightly likes"
+hint_tooltip = "Слегка любит"
 size_flags_horizontal = 3
 custom_colors/font_color_disabled = Color( 0.470588, 0.588235, 1, 1 )
 text = "+"
@@ -71,7 +71,7 @@ text = "+"
 margin_left = 940.0
 margin_right = 1051.0
 margin_bottom = 20.0
-hint_tooltip = "Likes"
+hint_tooltip = "Любит"
 size_flags_horizontal = 3
 custom_colors/font_color_disabled = Color( 0.470588, 0.588235, 1, 1 )
 text = "++"
@@ -80,7 +80,7 @@ text = "++"
 margin_left = 1055.0
 margin_right = 1165.0
 margin_bottom = 20.0
-hint_tooltip = "Really likes"
+hint_tooltip = "Обожает"
 size_flags_horizontal = 3
 custom_colors/font_color_disabled = Color( 0.470588, 0.588235, 1, 1 )
 text = "+++"
@@ -91,7 +91,7 @@ margin_right = 1280.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
 custom_colors/font_color_disabled = Color( 0.470588, 0.588235, 1, 1 )
-text = "Loves"
+text = "Обожает"
 
 [connection signal="pressed" from="HatesButton" to="." method="_on_HatesButton_pressed"]
 [connection signal="pressed" from="ReallyDislikesButton" to="." method="_on_ReallyDislikesButton_pressed"]

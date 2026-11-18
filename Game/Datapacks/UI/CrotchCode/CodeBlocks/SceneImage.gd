@@ -29,7 +29,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Show scene image",
+			text = "Показать изображение сцены",
 		},
 		{
 			type = "slot",

@@ -29,7 +29,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Aim camera",
+			text = "Наведение камеры",
 		},
 		{
 			type = "slot",

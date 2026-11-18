@@ -11,7 +11,7 @@ func updateInfo():
 	
 	var eventsByType:Dictionary = GM.main.WHS.eventsByEventID
 	
-	var text:String = "WORLD HISTORY:\n"
+	var text:String = "ИСТОРИЯ МИРА:\n"
 	for eventID in eventsByType:
 		var events = eventsByType[eventID]
 		

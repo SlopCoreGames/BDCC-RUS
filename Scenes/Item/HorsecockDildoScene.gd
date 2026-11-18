@@ -14,74 +14,74 @@ func _initScene(_args = []):
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.HorsecockDildoSex, "tease", {bodyState={naked=true}})
-		saynn("You're holding a hefty sex toy, the one that all studs have between their legs. You set it up on the floor carefully and let the suction cup firmly fixate it in place. Impressive size. The way it wobbles slightly makes you eager already..")
+		saynn("В твоих руках увесистая секс-игрушка — то самое, что красуется между ног у каждого альфа-самца. Ты осторожно ставишь её на пол и прижимаешь присоску, чтобы она намертво зафиксировалась. Размер впечатляет. От того, как она слегка покачивается, у тебя уже начинает всё внутри сладко ныть...")
 
-		saynn("Which hole do you wanna use..")
+		saynn("В какую дырочку хочешь его засунуть?")
 
-		addButtonWithChecks("Pussy", "Ride it with your pussy", "ride_pussy", [], [ButtonChecks.HasReachableVagina])
-		addButtonWithChecks("Anus", "Ride it with your butt", "ride_anus", [], [ButtonChecks.HasReachableAnus])
-		addButton("Cancel", "You changed your mind", "endthescene")
+		addButtonWithChecks("В киску", "Насаживаться на него киской", "ride_pussy", [], [ButtonChecks.HasReachableVagina])
+		addButtonWithChecks("В анус", "Насаживаться на него попой", "ride_anus", [], [ButtonChecks.HasReachableAnus])
+		addButton("Отмена", "Вы передумали", "endthescene")
 	#if(state == "Ignore"):
 	#	addButton("pussy", "asd", "ride_pussy")
 	#	addButton("anus", "asd", "ride_anus")
 	if(state == "begin_riding"):
 		playAnimation(StageScene.HorsecockDildoSex, "inside", {bodyState={naked=true}})
-		saynn("You lean down to the toy and spit on its flat head a few times before using your hands to spread the saliva around. Even just the preparations make you excited. But enough foreplay..")
+		saynn("Ты наклоняешься к игрушке и несколько раз плюешь на её плоский наконечник, а затем размазываешь слюну руками. Даже от одной этой подготовки тебя начинает потряхивать от возбуждения. Но хватит прелюдий...")
 
-		saynn("Time to try it, you position your body over the giant rubber horsecock and begin to slowly lower yourself onto it, your hand guiding the flared tip towards your "+str("{pc.pussyStretch} pussy" if isPussy else "{pc.analStretch} tailhole")+". The sheer girth makes it obvious that your body will need some.. convincing.. to let that thing in.")
+		saynn("Пора пробовать. Ты устраиваешься над гигантским резиновым лошадиным членом и начинаешь медленно опускаться на него, направляя расширяющийся кончик своей "+str("{pc.pussyStretch} pussy" if isPussy else "{pc.analStretch} tailhole")+". Из-за невероятной толщины сразу понятно: твоему телу понадобится небольшое... убеждение, чтобы впустить эту махину внутрь.")
 
-		saynn("First attempts aren't too successful, your "+str("pussy slit" if isPussy else "anal ring")+" struggles to stretch enough to fit it. But you don't stop trying, gradually applying more pressure onto it with your "+str("crotch" if isPussy else "butt")+". It's not inside yet but you sure feel how much it tries to stretch you, the thoughts going through your head are very arousing..")
+		saynn("Первые попытки не слишком удачны, твоя "+str("pussy slit" if isPussy else "anal ring")+" изо всех сил пытается растянуться, чтобы принять его. Но ты не сдаешься, постепенно увеличивая давление с помощью своей "+str("crotch" if isPussy else "butt")+". Оно еще не внутри, но ты отчетливо чувствуешь, как сильно оно тебя растягивает, и мысли, рождающиеся в голове, невероятно возбуждают...")
 
-		addButton("Continue", "See what happens next", "begin_penetration")
+		addButton("Продолжить", "Смотреть, что будет дальше", "begin_penetration")
 	if(state == "begin_penetration"):
 		playAnimation(StageScene.HorsecockDildoSex, "sex", {bodyState={naked=true}})
-		saynn("After a few attempts you get more and more bold with your motions, the flared head stretching your needy hole until you finally feel it sliding inside, burying itself in your "+str("slit" if isPussy else "ass")+".")
+		saynn("После нескольких попыток твои движения становятся всё смелее; расширенная головка растягивает твою жаждущую дырочку, пока ты наконец не чувствуешь, как она скользит внутрь, зарываясь в твою "+str("slit" if isPussy else "ass")+".")
 
-		saynn("It instantly puts pressure onto your pleasure spot, causing a wave of strong sensations. You don't stop there though, you start bouncing on that rubber dildo, forcing it deeper down your "+str("pussy" if isPussy else "butt")+" each time.")
+		saynn("Оно мгновенно надавливает на твою точку удовольствия, вызывая волну мощных ощущений. Но ты не останавливаешься — ты начинаешь прыгать на этом резиновом дилдо, заставляя его проникать всё глубже в твою "+str("pussy" if isPussy else "butt")+" каждый раз.")
 
 		if (GM.pc.hasPenis()):
-			saynn("Your {pc.penis} got so much harder now that the blood flows to your crotch, the tip is leaking precum a lot.")
+			saynn("Твой {pc.penis} так сильно затвердел от прилива крови к паху, что с кончика вовсю течет предэякулят.")
 
 		if (!isPussy && GM.pc.hasReachableVagina()):
-			saynn("Your neglected pussy is dripping arousal onto the toy's heavy-looking balls. The girth is enough to push onto your g-spot through the soft walls of your butt.")
+			saynn("Твоя заброшенная киска капает возбуждением на тяжелые на вид яички игрушки. Толщины достаточно, чтобы давить на твою точку G через мягкие стенки задницы.")
 
-		saynn("It feels so big inside you, rogue moans escape from your lips as you use the rubber veiny shaft to stretch yourself out. Each time you bring yourself down onto it, a cute bump shows up on your belly, the outline of a cock.")
+		saynn("Внутри оно кажется таким огромным; с твоих губ срываются невольные стоны, пока ты используешь этот резиновый венозный ствол, чтобы растянуть себя. Каждый раз, когда ты опускаешься на него, на твоем животе проступает милый бугорок — очертание члена.")
 
-		saynn("The climax draws near, you focus on your body and your sensations and just let the passionate noises slip from between your lips.")
+		saynn("Кульминация близка; ты сосредотачиваешься на своем теле и ощущениях, позволяя страстным звукам вырываться из твоих уст.")
 
-		addButton("Cum!", "Ride it until you make it", "do_cum")
+		addButton("Кончай!", "Скачи на нем, пока не достигнешь пика", "do_cum")
 	if(state == "do_cum"):
 		playAnimation(StageScene.HorsecockDildoSex, "fast", {pcCum=true, bodyState={naked=true, hard=true}})
-		saynn("You proceed to ride the fuck out of that horsecock, raising your lower part of the body before bringing it down along the fat shaft with full force, letting the flared tip as deep as your body allows and then some.")
+		saynn("Ты начинаешь ебашить на этом лошачьем члене, то вздымая таз вверх, то с силой опускаясь на толстый ствол, заглатывая расширенный кончик так глубоко, насколько позволяет тело, и даже глубже.")
 
 		if (!isPussy && GM.pc.hasPenis()):
-			saynn("This toy is great, it smashes your prostate so much that your {pc.penis} is leaking pre all over the floor. You feel yourself getting super close, that feeling is rising faster the harder you ride that cock.")
+			saynn("Эта игрушка просто охеренная: она так нещадно долбит в простату, что твоя {pc.penis} течет по всему полу. Ты чувствуешь, что финиш уже совсем близко, и это ощущение нарастает всё быстрее, чем яростнее ты скачешь на этом члене.")
 
 		else:
-			saynn("This toy is great, it smashes all the buttons of your body with ease. You feel yourself getting super close, that feeling is rising faster the harder you ride that cock.")
+			saynn("Эта игрушка просто охеренная: она с легкостью нажимает на все твои эрогенные кнопки. Ты чувствуешь, что финиш уже совсем близко, и это ощущение нарастает всё быстрее, чем яростнее ты скачешь на этом члене.")
 
 		if (GM.pc.hasPenis()):
-			saynn("Your whole body tenses up, you bring yourself down that shaft as deep as you can and arch your back, moaning passionately while your member shoots weak strings of {pc.cum} one after another. The wet orgasm is so strong that your eyes roll up.")
+			saynn("Все твое тело напрягается; ты насаживаешься на этот ствол так глубоко, как только можешь, и выгибаешь спину, страстно стоная, пока твой член выпускает слабую струю {pc.cum} за струей. Этот мокрый оргазм настолько сильный, что у тебя закатываются глаза.")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("Your whole body tenses up, you bring yourself down that shaft as deep as you can and arch your back, moaning passionately while your pussy squirts all over the toy. The orgasm is so strong that your eyes roll up.")
+			saynn("Все твое тело напрягается; ты насаживаешься на этот ствол так глубоко, как только можешь, и выгибаешь спину, страстно стоная, пока твоя киска заливает игрушку сквиртом. Оргазм настолько мощный, что у тебя закатываются глаза.")
 
 		else:
-			saynn("Your whole body tenses up, you bring yourself down that shaft as deep as you can and arch your back, moaning passionately. The orgasm is so strong that your eyes roll up.")
+			saynn("Все твое тело напрягается; ты насаживаешься на этот ствол так глубоко, как только можешь, и выгибаешь спину, страстно стоная. Оргазм настолько мощный, что у тебя закатываются глаза.")
 
-		saynn("Your "+str("pussy" if isPussy else "tailhole")+" starts pulsating around the girthy rubber dick, your stretched fuckhole desperately trying to milk it while you can't stop shaking and shivering.")
+		saynn("Твоя "+str("pussy" if isPussy else "tailhole")+" начинает пульсировать вокруг толстого резинового члена, а растянутая дырка отчаянно пытается выдоить его, пока тебя не перестает трясти и колотить крупной дрожью.")
 
 		if (hadContents):
-			saynn("Your inner walls squeeze the fat horsecock so much that it suddenly starts throbbing inside you before [b]releasing all of its contents inside your "+str("pussy" if isPussy else "ass")+"[/b].")
+			saynn("Твои внутренние стенки так сильно сжимают толстый лошачий член, что он внезапно начинает пульсировать внутри тебя, прежде чем [b] извергнуть всё своё содержимое прямо в твою "+str("pussy" if isPussy else "ass")+"[/b].")
 
-		addButton("Continue", "See what happens next", "afterglow")
+		addButton("Продолжить", "Смотреть, что будет дальше", "afterglow")
 	if(state == "afterglow"):
 		playAnimation(StageScene.HorsecockDildoSex, "inside", {bodyState={naked=true}})
-		saynn("Bliss. An ocean of pleasure. Your mind struggles to withstand the wild sensations. The toy is almost fully inside you, apart from the balls worthy of a stallion of course. Even when you stop riding it and just try to rest with it inside, the occasional moan escapes from you. The afterglow feeling is so strong, you're drooling while trying to catch your breath.")
+		saynn("Блаженство. Океан удовольствия. Твой разум едва справляется с этим безумием ощущений. Игрушка почти полностью внутри тебя, если не считать яиц, достойных настоящего жеребца. Даже когда ты перестаешь насаживаться на неё и просто пытаешься отдохнуть, из тебя всё равно вырываются случайные стоны. Послевкусие настолько сильное, что ты пускаешь слюни, пытаясь отдышаться.")
 
-		saynn("Eventually the lust fades away, replaced by a hyper sensitivity. Your "+str("slit" if isPussy else "tailhole")+" is desperately trying to close, causing discomfort. That's enough fun for now. You slowly raise your body until the flared tip makes a satisfying plop noise and leaves your gaping fuckhole to shine. "+str("You clench a few times until your tailhole closes up." if !isPussy else "You wait for a bit until your pussy hole closes up.")+"")
+		saynn("В конце концов похоть утихает, сменяясь гиперчувствительностью. Твоя "+str("slit" if isPussy else "tailhole")+" отчаянно пытается сомкнуться, вызывая дискомфорт. На сегодня веселья достаточно. Ты медленно поднимаешь тело, пока расширенный кончик не издает сочный шлепающий звук, оставляя твою разверстую дырку сиять от влаги."+str("You clench a few times until your tailhole closes up." if !isPussy else "You wait for a bit until your pussy hole closes up.")+"")
 
-		addButton("Continue", "Nice", "endthescene")
+		addButton("Продолжить", "Приятно", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

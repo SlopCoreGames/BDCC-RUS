@@ -35,7 +35,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "RNG int",
+			text = "Случайное целое число (RNG int)",
 		},
 		{
 			type = "slot",

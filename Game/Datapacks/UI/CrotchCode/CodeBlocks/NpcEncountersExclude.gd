@@ -27,7 +27,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Exclude from encounters",
+			text = "Исключить из встреч",
 		},
 		{
 			type = "slot",

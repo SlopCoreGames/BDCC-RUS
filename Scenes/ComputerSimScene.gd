@@ -58,9 +58,9 @@ func _run():
 			
 			var words = computer.getCommands()
 			if(words.size() == 0):
-				addButton("Type gibberish", "Type something", "inputfull", ["asdasdf"])
+				addButton("Печатать абракадабру", "Печатать что-нибудь", "inputfull", ["asdasdf"])
 			for command in words:
-				addButton(command, "Type this", "add", [command])
+				addButton(command, "Печатать это", "add", [command])
 			
 		elif(inputMode == "numpad"):
 			saynn("> "+getCurrentCommandString())
@@ -86,7 +86,7 @@ func _run():
 			addButtonAt(14, "COMMANDS", "Switch to the commands", "buttons")
 			
 
-		#addButton("Leave", "Job well done", "endthescene")
+		#addButton("Уйти", "Работа выполнена!", "endthescene")
 
 	elif(state == "finished"):
 		if(computer.getLastCommand() != ""):
@@ -97,7 +97,7 @@ func _run():
 		else:
 			saynn(computer.getOutput())
 		
-		addButton("Continue", "End the interaction", "endthescene")
+		addButton("Продолжить", "Завершить взаимодействие", "endthescene")
 
 func getCurrentCommandString():
 	var result = []

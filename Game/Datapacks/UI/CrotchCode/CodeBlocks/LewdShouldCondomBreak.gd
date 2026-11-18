@@ -47,7 +47,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Check condom broke",
+			text = "Проверка разрыва презерватива",
 		},
 		{
 			type = "slot",
@@ -72,7 +72,7 @@ func getTemplate():
 		},
 		{
 			type = "label",
-			text = "Chance:",
+			text = "Шанс:",
 		},
 		{
 			type = "slot",

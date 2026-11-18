@@ -22,7 +22,7 @@ size_flags_vertical = 3
 [node name="LevelLabel" type="Label" parent="VBoxContainer"]
 margin_right = 1266.0
 margin_bottom = 14.0
-text = "Unlocks at level 0"
+text = "Разблокируется на уровне 0"
 
 [node name="FlexGridContainer" type="Container" parent="VBoxContainer"]
 margin_top = 18.0

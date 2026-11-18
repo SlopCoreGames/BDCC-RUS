@@ -11,7 +11,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "Cum"
+	return "Кончить"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "Embrace the orgasm.. If you are in a fight, you will lose and succumb to your enemy"

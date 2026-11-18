@@ -30,14 +30,13 @@ margin_bottom = 387.0
 [node name="Label" type="Label" parent="StartUI/VBoxContainer"]
 margin_right = 439.0
 margin_bottom = 31.0
-text = "Click the circle when the approaching ring reaches its outer border
-The better your accuracy is the better your struggling attempt will be"
+text = "Кликай по кругу, когда приближающееся кольцо достигнет его внешней границы\nЧем выше точность, тем успешнее будет твоя попытка вырваться"
 
 [node name="StartButton" type="Button" parent="StartUI/VBoxContainer"]
 margin_top = 35.0
 margin_right = 439.0
 margin_bottom = 55.0
-text = "Start"
+text = "Старт"
 
 [node name="StartUI" type="Control" parent="StartUI"]
 margin_left = 640.0
@@ -84,13 +83,13 @@ margin_bottom = 379.0
 [node name="Label" type="Label" parent="WinUI/VBoxContainer"]
 margin_right = 70.0
 margin_bottom = 14.0
-text = "Completed"
+text = "Завершено"
 
 [node name="ContinueButton" type="Button" parent="WinUI/VBoxContainer"]
 margin_top = 18.0
 margin_right = 70.0
 margin_bottom = 38.0
-text = "Continue"
+text = "Продолжить"
 
 [connection signal="pressed" from="StartUI/VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="timeout" from="NextButtonTimer" to="." method="_on_NextButtonTimer_timeout"]

@@ -2,7 +2,7 @@ extends MissionBase
 
 func _init():
 	id = "SideMission1"
-	name = "Going broke"
+	name = "На мели"
 	desc = "Avy needs your help with returning a debt."
 	
 	startScene = "DomSM1"
@@ -14,7 +14,7 @@ func _init():
 	
 	decisions = {
 		"avy": {
-			name = "Stopped Avy",
+			name = "Остановил Эви",
 			outcomes = {
 				"allow": {
 					text = "No",
@@ -24,7 +24,7 @@ func _init():
 					avyLine = "Thanks for the help. I didn't really need it but who knows.",
 				},
 				"stopped": {
-					text = "Yes",
+					text = "Да",
 					effects = [
 						DECISION_EFFECT_AVY_OBEDIENCE,
 					],

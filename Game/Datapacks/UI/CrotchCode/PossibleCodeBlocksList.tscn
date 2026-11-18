@@ -36,8 +36,7 @@ margin_top = 9.0
 margin_right = 1280.0
 margin_bottom = 40.0
 mouse_filter = 1
-text = " Drag blocks here to delete them
- (or double right-click)"
+text = " Перетащите блоки сюда, чтобы удалить их\n (или дважды щелкните правой кнопкой)"
 autowrap = true
 
 [node name="PackVarsCollapsableRegion" parent="." instance=ExtResource( 2 )]
@@ -68,7 +67,7 @@ margin_top = 18.0
 margin_right = 1266.0
 margin_bottom = 32.0
 mouse_filter = 1
-text = "Drag blocks here to save them"
+text = "Перетащите блоки сюда, чтобы сохранить их"
 autowrap = true
 
 [node name="FavList" type="VBoxContainer" parent="PackVarsCollapsableRegion/VBoxContainer/VBoxContainer" index="1"]

@@ -40,7 +40,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Add strapon buttons. Wearer=",
+			text = "Добавить кнопки страпона. Наденет=",
 		},
 		{
 			type = "slot",

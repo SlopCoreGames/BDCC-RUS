@@ -17,7 +17,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "Spread pussy"
+	return "Развести киски @@B*@@"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "Part your sensitive folds to show off how needy you are"

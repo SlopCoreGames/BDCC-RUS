@@ -35,7 +35,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "RND float",
+			text = "Случайное число с плавающей точкой",
 		},
 		{
 			type = "slot",

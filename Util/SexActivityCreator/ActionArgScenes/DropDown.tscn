@@ -14,7 +14,7 @@ margin_bottom = 20.0
 margin_top = 3.0
 margin_right = 68.0
 margin_bottom = 17.0
-text = "Some stuff"
+text = "Некоторая хрень"
 
 [node name="OptionButton" type="OptionButton" parent="VBoxContainer" index="1"]
 margin_left = 72.0

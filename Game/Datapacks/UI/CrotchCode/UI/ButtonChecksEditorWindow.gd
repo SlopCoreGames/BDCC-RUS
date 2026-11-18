@@ -69,7 +69,7 @@ func updateSelectedItem():
 	var selectedCheck = checks[selectedIndex]
 	
 	type_selector.setData({
-		name = "Type",
+		name = "Тип",
 		values = ButtonChecks.getAllWithNames(),
 		value = selectedCheck["type"],
 	})

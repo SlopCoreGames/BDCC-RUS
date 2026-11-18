@@ -39,9 +39,9 @@ func _run():
 		var _roomInfo = GM.world.getRoomByID(path[0])
 		
 		if(_roomInfo == null):
-			saynn("You're being walked on a leash by {leasher.name}")
+			saynn("{leasher.name} выгуливает тебя на поводке")
 		else:
-			saynn("You're being walked on a leash by {leasher.name}")
+			saynn("{leasher.name} выгуливает тебя на поводке")
 			
 			if(GM.pc.isBlindfolded() && !GM.pc.canHandleBlindness()):
 				saynn(_roomInfo.getBlindDescription())
@@ -52,9 +52,9 @@ func _run():
 			saynn("[say=leasher]"+RNG.pick(randomChat)+"[/say]")
 		
 		if (teleportwhenskipped):
-			addButton("Skip", "Skip the walk", "skipwalk")
+			addButton("Пропустить", "Пропустить прогулку", "skipwalk")
 		else:
-			addButton("Skip", "Skip the walk", "endthescene")
+			addButton("Пропустить", "Пропустить прогулку", "endthescene")
 		addButtonAt(6, "Follow", "Follow the leash", "follow")
 		addDisabledButtonAt(10, "Leashed", "Can't escape from the leash")
 		addDisabledButtonAt(11, "Leashed", "Can't escape from the leash")

@@ -112,7 +112,7 @@ func updateSettings():
 		settings_list.add_child(skinScene)
 		skinScene.id = "skin"
 		skinScene.setData({
-			name = "- Skin",
+			name = "- Кожа",
 			value = {skin=(data["pickedSkin"] if data.has("pickedSkin") else null),r=(data["pickedR"] if data.has("pickedR") else null),g=(data["pickedG"] if data.has("pickedG") else null),b=(data["pickedB"] if data.has("pickedB") else null)},
 			skins = availSkins,
 		})

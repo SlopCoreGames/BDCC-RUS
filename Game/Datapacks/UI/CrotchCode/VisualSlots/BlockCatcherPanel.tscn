@@ -124,27 +124,27 @@ size_flags_horizontal = 3
 margin_left = 1182.0
 margin_right = 1260.0
 margin_bottom = 100.0
-text = "Fullscreen"
+text = "На весь экран"
 
 [node name="MapButton" type="Button" parent="MarginContainer"]
 margin_left = 10.0
 margin_right = 1270.0
 margin_bottom = 28.0
-text = "Map"
+text = "Карта"
 script = SubResource( 5 )
 
 [node name="AdvancedPickerButton" type="Button" parent="MarginContainer"]
 margin_left = 10.0
 margin_right = 1270.0
 margin_bottom = 28.0
-text = "Pick.."
+text = "Выбрать.."
 script = SubResource( 5 )
 
 [node name="FlagPickerButton" type="Button" parent="MarginContainer"]
 margin_left = 10.0
 margin_right = 1270.0
 margin_bottom = 28.0
-text = "Pick.."
+text = "Выбрать.."
 script = SubResource( 5 )
 
 [connection signal="value_changed" from="MarginContainer/SpinBox" to="." method="_on_SpinBox_value_changed"]

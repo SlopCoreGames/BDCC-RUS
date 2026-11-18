@@ -2,11 +2,11 @@ extends Reference
 class_name Datapack
 
 var id:String = "error"
-var name:String = "New pack"
+var name:String = "Новый пак"
 var author:String = "No author"
 var version:String = "1.0"
 
-var description:String = "No description provided"
+var description:String = "Описание отсутствует"
 
 var loadedPath:String = ""
 
@@ -35,36 +35,36 @@ func getEditVars():
 			noSave = true,
 		},
 		"name": {
-			name = "Name",
+			name = "Имя",
 			type = "string",
 			value = name,
 		},
 		"author": {
-			name = "Author",
+			name = "Автор",
 			type = "string",
 			value = author,
 		},
 		"version": {
-			name = "Version",
+			name = "Версия",
 			type = "string",
 			value = version,
 		},
 		"description": {
-			name = "Description",
+			name = "Описание",
 			type = "bigString",
 			value = description,
 		},
 		"requiredMods": {
 			type = "addRemoveList",
 			value = requiredMods,
-			name = "Required Mods",
+			name = "Необходимые моды",
 			values = GlobalRegistry.getLoadedMods(),
 			collapsable = true,
 		},
 		"requiredDatapacks": {
 			type = "addRemoveList",
 			value = requiredDatapacks,
-			name = "Required Datapacks",
+			name = "Необходимые датапаки",
 			values = datapacksFancy,
 			addtoprev=true,
 			noseparator=true,
@@ -72,28 +72,28 @@ func getEditVars():
 		"characters": {
 			type = "editor",
 			value = characters,
-			name = "Characters",
+			name = "Персонажи",
 			editorKind = "character",
 			datapack = self,
 		},
 		"skins": {
 			type = "editor",
 			value = skins,
-			name = "Skins",
+			name = "Скины",
 			editorKind = "skin",
 			datapack = self,
 		},
 		"scenes": {
 			type = "editor",
 			value = scenes,
-			name = "Scenes",
+			name = "Сцены",
 			editorKind = "scene",
 			datapack = self,
 		},
 		"quests": {
 			type = "editor",
 			value = quests,
-			name = "Quests",
+			name = "Квесты",
 			editorKind = "quest",
 			datapack = self,
 		},

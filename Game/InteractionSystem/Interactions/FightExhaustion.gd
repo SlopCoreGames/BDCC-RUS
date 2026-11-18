@@ -17,7 +17,7 @@ func getActions() -> Array:
 		return [
 			{
 				id = "rest",
-				name = "Rest",
+				name = "Отдохнуть",
 				desc = "Try to recover some energy",
 				score = 1.0,
 				args = {},
@@ -27,7 +27,7 @@ func getActions() -> Array:
 	return [
 		{
 			id = "getup",
-			name = "Get up",
+			name = "Встать",
 			desc = "Time to go",
 			score = 1.0,
 			args = {},
@@ -57,7 +57,7 @@ func getInterruptActions(_pawn:CharacterPawn) -> Array:
 	if(getPawnAmount() == 1):
 		result.append({
 			id = "punish",
-			name = "Punish",
+			name = "Наказать",
 			desc = "Do mean things to them while they're still down",
 			score = 0.1,
 			scoreType = "punishMean",

@@ -208,15 +208,15 @@ func react_scene_end(_tag, _result):
 
 func addNextButton(method: String, args = []):
 	if(GM.ui):
-		GM.ui.addButton("Next", "", method, args)
-	#addButton("Next")
+		GM.ui.addButton("Далее", "", method, args)
+	#addButton("Далее")
 
 func addButton(text: String, tooltip: String = "", method: String = "", args = []):
 	GM.ui.addButton(text, tooltip, method, args)
 	#emit_signal("addButton", text, method, tooltip)
 
 func addContinue(method: String = "", args = []):
-	addButton("Continue", "See what happens next", method, args)
+	addButton("Продолжить", "Смотреть, что будет дальше", method, args)
 
 func addDisabledButton(text: String, tooltip: String = ""):
 	GM.ui.addDisabledButton(text, tooltip)

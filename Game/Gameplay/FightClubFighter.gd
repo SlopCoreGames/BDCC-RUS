@@ -4,7 +4,7 @@ class_name FightClubFighter
 var id = "error"
 
 func getVisibleName():
-	return "Error"
+	return "Ошибка"
 
 func getNameAndNickname():
 	return "Error, The Error"

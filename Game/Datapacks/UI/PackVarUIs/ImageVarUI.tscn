@@ -10,7 +10,7 @@ script = ExtResource( 2 )
 margin_right = 79.0
 margin_bottom = 720.0
 size_flags_vertical = 7
-text = "Some image"
+text = "Какое-то изображение"
 valign = 1
 
 [node name="TextureRect" type="TextureRect" parent="." index="1"]
@@ -25,13 +25,13 @@ stretch_mode = 6
 margin_left = 215.0
 margin_right = 272.0
 margin_bottom = 720.0
-text = "Upload"
+text = "Загрузить"
 
 [node name="ClearButton" type="Button" parent="." index="3"]
 margin_left = 276.0
 margin_right = 320.0
 margin_bottom = 720.0
-text = "Clear"
+text = "Очистить"
 
 [node name="Control" type="Control" parent="." index="4"]
 margin_left = 324.0
@@ -51,7 +51,7 @@ margin_right = 54.0
 margin_bottom = 696.0
 size_flags_horizontal = 3
 size_flags_vertical = 7
-text = "Drag-and-drop your image onto this window"
+text = "Перетащите ваше изображение в это окно"
 align = 1
 valign = 1
 autowrap = true
@@ -60,7 +60,7 @@ autowrap = true
 margin_top = 700.0
 margin_right = 54.0
 margin_bottom = 720.0
-text = "Cancel"
+text = "Отмена"
 
 [connection signal="pressed" from="UploadButton" to="." method="_on_UploadButton_pressed"]
 [connection signal="pressed" from="ClearButton" to="." method="_on_ClearButton_pressed"]

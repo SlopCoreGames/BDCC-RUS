@@ -16,7 +16,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Get days",
+			text = "Получить дни",
 		},
 	]
 

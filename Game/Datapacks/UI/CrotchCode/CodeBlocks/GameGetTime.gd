@@ -16,6 +16,6 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Get time in seconds",
+			text = "Получить время в секундах",
 		},
 	]

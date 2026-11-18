@@ -13,7 +13,7 @@ margin_top = 353.0
 margin_right = 638.0
 margin_bottom = 367.0
 size_flags_horizontal = 3
-text = "Hello"
+text = "Привет"
 
 [node name="List" type="OptionButton" parent="."]
 margin_left = 642.0

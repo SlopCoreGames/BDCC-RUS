@@ -118,7 +118,7 @@ custom_styles/pressed = SubResource( 5 )
 custom_styles/focus = SubResource( 6 )
 custom_styles/normal = ExtResource( 5 )
 toggle_mode = true
-text = "Name:"
+text = "Имя:"
 
 [node name="VSeparator" type="VSeparator" parent="PanelContainer/VBoxC/UpperPanel/HBoxContainer"]
 margin_left = 192.0
@@ -140,7 +140,7 @@ custom_styles/pressed = SubResource( 5 )
 custom_styles/focus = SubResource( 6 )
 custom_styles/normal = ExtResource( 5 )
 toggle_mode = true
-text = "Gender:"
+text = "Пол:"
 
 [node name="VSeparator2" type="VSeparator" parent="PanelContainer/VBoxC/UpperPanel/HBoxContainer"]
 margin_left = 392.0
@@ -162,7 +162,7 @@ custom_styles/pressed = SubResource( 5 )
 custom_styles/focus = SubResource( 6 )
 custom_styles/normal = ExtResource( 5 )
 toggle_mode = true
-text = "Personality:"
+text = "Характер:"
 
 [node name="VSeparator3" type="VSeparator" parent="PanelContainer/VBoxC/UpperPanel/HBoxContainer"]
 margin_left = 592.0
@@ -184,7 +184,7 @@ custom_styles/pressed = SubResource( 5 )
 custom_styles/focus = SubResource( 6 )
 custom_styles/normal = ExtResource( 5 )
 toggle_mode = true
-text = "Childs:"
+text = "Дети:"
 
 [node name="VSeparator4" type="VSeparator" parent="PanelContainer/VBoxC/UpperPanel/HBoxContainer"]
 margin_left = 792.0
@@ -206,7 +206,7 @@ custom_styles/pressed = SubResource( 5 )
 custom_styles/focus = SubResource( 6 )
 custom_styles/normal = ExtResource( 5 )
 toggle_mode = true
-text = "Relationship:"
+text = "Отношения:"
 
 [node name="dummy" type="Label" parent="PanelContainer/VBoxC/UpperPanel/HBoxContainer"]
 margin_left = 992.0
@@ -286,7 +286,7 @@ custom_styles/hover = SubResource( 12 )
 custom_styles/pressed = SubResource( 13 )
 custom_styles/focus = SubResource( 14 )
 custom_styles/normal = SubResource( 13 )
-text = "Forget"
+text = "Забыть"
 
 [node name="Ok" type="Button" parent="CenterContainer/Notification/HBoxC"]
 visible = false
@@ -313,7 +313,7 @@ custom_styles/hover = SubResource( 12 )
 custom_styles/pressed = SubResource( 13 )
 custom_styles/focus = SubResource( 15 )
 custom_styles/normal = SubResource( 13 )
-text = "Cancel"
+text = "Отмена"
 
 [node name="NotificationLabel" type="Label" parent="CenterContainer/Notification"]
 anchor_right = 1.0

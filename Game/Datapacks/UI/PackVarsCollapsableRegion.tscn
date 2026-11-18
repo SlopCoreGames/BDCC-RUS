@@ -16,7 +16,7 @@ margin_bottom = 713.0
 [node name="Label" type="Label" parent="VBoxContainer"]
 margin_right = 1266.0
 margin_bottom = 14.0
-text = "> Test"
+text = "> Тест"
 
 [node name="TextureButton" type="TextureButton" parent="VBoxContainer/Label"]
 anchor_right = 1.0

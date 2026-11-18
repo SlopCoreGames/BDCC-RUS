@@ -16,13 +16,13 @@ func getKeepScore() -> float:
 	return 0.8
 
 func getText():
-	return "{main.name} is heading to the prostitution spot!"
+	return "{main.name} направляется к месту проституции!"
 
 func getActions() -> Array:
 	return [
 		{
 			id = "go",
-			name = "Go!",
+			name = "Вперёд!",
 			desc = "Head there",
 			score = 1.0,
 			args = {},

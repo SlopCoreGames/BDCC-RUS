@@ -16,7 +16,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Play",
+			text = "Воспроизвести",
 		},
 		{
 			id = "anim",

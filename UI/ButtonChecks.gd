@@ -94,7 +94,7 @@ static func getEditVars(thecheck:int):
 	if(thecheck == PerkCheck):
 		return {
 			"1": {
-				name = "Perk name",
+				name = "Название перка",
 				type = "advancedSelector",
 				value = Perk.StartInfertile,
 				values = GlobalRegistry.getPerks().keys(),
@@ -103,13 +103,13 @@ static func getEditVars(thecheck:int):
 	if(thecheck == StatCheck):
 		return {
 			"1": {
-				name = "Stat name",
+				name = "Название стата",
 				type = "advancedSelector",
 				value = Stat.Agility,
 				values = GlobalRegistry.getStats().keys(),
 			},
 			"2": {
-				name = "Min stat",
+				name = "Мин. стат",
 				type = "number",
 				value = 5,
 				int = true,
@@ -118,13 +118,13 @@ static func getEditVars(thecheck:int):
 	if(thecheck == SkillCheck):
 		return {
 			"1": {
-				name = "Skill name",
+				name = "Название навыка",
 				type = "advancedSelector",
 				value = Skill.BDSM,
 				values = GlobalRegistry.getSkills().keys(),
 			},
 			"2": {
-				name = "Min level",
+				name = "Мин. уровень",
 				type = "number",
 				value = 5,
 				int = true,
@@ -133,7 +133,7 @@ static func getEditVars(thecheck:int):
 	if(thecheck == HasCredits):
 		return {
 			"1": {
-				name = "Min credits",
+				name = "Мин. кредитов",
 				type = "number",
 				value = 5,
 				int = true,
@@ -142,7 +142,7 @@ static func getEditVars(thecheck:int):
 	if(thecheck == ContentEnabled):
 		return {
 			"1": {
-				name = "Content",
+				name = "Контент",
 				type = "advancedSelector",
 				value = ContentType.Watersports,
 				values = ContentType.getAll(),
@@ -151,7 +151,7 @@ static func getEditVars(thecheck:int):
 	if(thecheck in [HasItemID, NotWearingItem]):
 		return {
 			"1": {
-				name = "Item id",
+				name = "ID предмета",
 				type = "advancedSelector",
 				value = "appleitem",
 				values = GlobalRegistry.getItemRefs().keys(),
@@ -160,7 +160,7 @@ static func getEditVars(thecheck:int):
 	if(thecheck == HasItemWithTag):
 		return {
 			"1": {
-				name = "Item tag",
+				name = "Тег предмета",
 				type = "advancedSelector",
 				value = ItemTag.BDSMRestraint,
 				values = ItemTag.getNamesAndValues(),

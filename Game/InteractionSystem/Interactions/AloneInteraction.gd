@@ -239,7 +239,7 @@ func getInterruptActions(_pawn:CharacterPawn) -> Array:
 	if(!mainIsPlayer && goal && goal.id == InteractionGoal.LayEggs):
 		result.append({
 			id = "helpEggs",
-			name = "Help lay eggs",
+			name = "Помочь откладывать яйца",
 			desc = "Help them lay their eggs!",
 			score = 0.0,
 			scoreType = "approach",
@@ -250,7 +250,7 @@ func getInterruptActions(_pawn:CharacterPawn) -> Array:
 	
 	result.append({
 		id = "talk",
-		name = "Talk",
+		name = "Поговорить",
 		desc = "Talk with them",
 		score = 1.0,
 		scoreType = "approach",
@@ -260,7 +260,7 @@ func getInterruptActions(_pawn:CharacterPawn) -> Array:
 	if(getRolePawn("main").canGrabAndFuck() && _pawn.getChar().canStartSex()):
 		result.append({
 			id = "grab_and_fuck",
-			name = "Grab&Fuck",
+			name = "Схватить и трахнуть",
 			desc = "They have so many restraints that you can just fuck them..",
 			score = 1.0,
 			scoreType = "sexUse",

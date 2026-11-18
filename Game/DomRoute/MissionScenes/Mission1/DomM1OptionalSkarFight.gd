@@ -9,366 +9,366 @@ func _run():
 	if(state == ""):
 		addCharacter("skar")
 		playAnimation(StageScene.Duo, "stand", {npc="skar"})
-		saynn("You boldly walk towards the guard who is protecting the big office.")
+		saynn("Ты смело направляешься к охраннику, стоящему на посту у большого кабинета.")
 
-		saynn("It doesn't take long before he takes note of you. His prosthetic arm is quick to reach for his weapon.")
+		saynn("Вскоре он замечает тебя. Его протез руки молниеносно тянется к оружию.")
 
-		saynn("[say=skar]You're not supposed to be here.[/say]")
+		saynn("[say=skar]Тебе здесь не место.[/say]")
 
-		saynn("[say=pc]You look bored. Thought I'd offer you some company.[/say]")
+		saynn("[say=pc]Выглядишь скучающим. Решил составить тебе компанию.[/say]")
 
-		saynn("You spread your arms, a gesture of peace. The guy lowers his gaze a bit, his mechanical jaw moving as he speaks, sprinkling noises of servos into his speech.")
+		saynn("Ты разводишь руки в мирном жесте. Парень слегка опускает взгляд; когда он говорит, его механическая челюсть двигается, перемежая речь жужжанием сервоприводов.")
 
-		saynn("[say=skar]Do I look like I need company?[/say]")
+		saynn("[say=skar]Разве я похож на того, кому нужна компания?[/say]")
 
-		saynn("[say=pc]Yeah, you look bored.[/say]")
+		saynn("[say=pc]Да, ты выглядишь скучающим.[/say]")
 
-		saynn("He raises a brow.")
+		saynn("Он вскидывает бровь.")
 
-		saynn("[say=skar]Why shouldn't I just fry your neck right now?[/say]")
+		saynn("[say=skar]Почему бы мне просто не поджарить тебе шею прямо сейчас?[/say]")
 
-		saynn("[say=pc]Because that would be the boring option.[/say]")
+		saynn("[say=pc]Потому что это был бы самый скучный вариант.[/say]")
 
-		saynn("He stays quiet for some time.")
+		saynn("Какое-то время он хранит молчание.")
 
-		saynn("[say=skar]Alright, let's have some fun then.[/say]")
+		saynn("[say=skar]Ладно, тогда давай повеселимся![/say]")
 
-		saynn("Looks like it's a fight!")
+		saynn("Похоже, назревает драка!")
 
-		addButton("Fight", "Start the fight", "dom_start_fight")
+		addButton("Драться", "Начать бой", "dom_start_fight")
 	if(state == "lost_fight"):
 		playAnimation(StageScene.GivingBirth, "idle")
 		aimCameraAndSetLocName("solitary_cell")
-		saynn("You've lost the fight!")
+		saynn("Ты проиграла бой!")
 
-		saynn("[say=skar]You might have to work on your technique more.[/say]")
+		saynn("[say=skar]Тебе стоит еще поработать над техникой.[/say]")
 
-		saynn("And so the guy just throws you into solitary after that.")
+		saynn("И после всего этого парень просто закидывает тебя в карцер.")
 
-		saynn("You didn't get any records printed. Looks like you will have to do it all again.")
+		saynn("Никаких записей не напечатано. Похоже, придется начинать всё сначала.")
 
-		saynn("At least you entertained the guard for a bit.")
+		saynn("По крайней мере, ты немного развлек охранника.")
 
-		saynn("Mission failed!")
+		saynn("Миссия провалена!")
 
-		addButton("Continue", "Stop the mission", "stopthemission")
-		addButton("Restart", "Try the mission again", "trymissionagain")
+		addButton("Продолжить", "Прервать миссию", "stopthemission")
+		addButton("Перезапустить", "Попробовать еще раз", "trymissionagain")
 	if(state == "won_fight"):
 		playAnimation(StageScene.GivingBirth, "idle", {pc="skar"})
-		saynn("Miraculously, you've won the fight! The guard is down on the floor, unable to continue fighting.")
+		saynn("Чудом ты победил в бою! Охранник повалился на пол, не в силах продолжать драку.")
 
-		saynn("[say=skar]Ugh.. You won't be able to get to the captain anyway, you know?[/say]")
+		saynn("[say=skar]Уф... Ты всё равно не сможешь добраться до капитана, понимаешь?[/say]")
 
-		saynn("Yeah, looks like this guy is protecting the captain's office. That's nice. But the doors are indeed closed. That's not as nice.")
+		saynn("Ага, похоже, этот парень охраняет кабинет капитана. Приятно. Но вот двери и правда закрыты. Это уже не так приятно.")
 
-		addButton("Just leave", "Leave the guard be", "just_leave")
-		addButtonWithChecks("Ride (vaginal)", "Might as well ride his cock now!", "start_vag_ride", [], [[ButtonChecks.HasReachableVagina]])
-		addButton("Ride (anal)", "Might as well ride his cock now!", "start_anal_ride")
-		addButtonWithChecks("Fuck him", "Rail his ass!", "start_fuck_him", [], [[ButtonChecks.HasReachablePenis]])
+		addButton("Просто уйти", "Оставить стражника в покое", "just_leave")
+		addButtonWithChecks("Трахаться (вагинально)", "Раз уж на то пошло, пора оседлать его член!", "start_vag_ride", [], [[ButtonChecks.HasReachableVagina]])
+		addButton("Трахаться (анально)", "Раз уж на то пошло, пора оседлать его член!", "start_anal_ride")
+		addButtonWithChecks("Трахать его", "Разъебать ему зад!", "start_fuck_him", [], [[ButtonChecks.HasReachablePenis]])
 	if(state == "just_leave"):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("[say=pc]Oh well, enjoy your boring life then.[/say]")
+		saynn("[say=pc]Ну что ж, наслаждайся своей скучной жизнью.[/say]")
 
-		saynn("He tilts his head slightly, watching as you step out of the room.")
+		saynn("Он слегка наклоняет голову, наблюдая за тем, как ты выходишь из комнаты.")
 
-		addButton("Continue", "See what happens next", "endsceneposourselves")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endsceneposourselves")
 	if(state == "start_sex_ride"):
 		playAnimation(StageScene.SexCowgirlAmazon, "tease", {pc="skar", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("[say=pc]Who said I wanted to get to the captain? I just wanted to have some fun with you.[/say]")
+		saynn("[say=pc]Кто сказал, что я хочу добраться до капитана? Я просто хотел немного развлечься с тобой.[/say]")
 
-		saynn("You straddle the guy before he can ever get up, pinning him into the cold floor again. Your hands begin stripping the pieces of his armor. At some point it becomes hard to distinguish them from his mechanical bodyparts.")
+		saynn("Ты запрыгиваешь на него верхом прежде, чем он успевает подняться, снова прижимая его к холодному полу. Твои руки начинают срывать с него элементы брони. В какой-то момент становится трудно отличить их от его механических частей тела.")
 
-		saynn("[say=skar]You're getting yourself into some big trouble.[/say]")
+		saynn("[say=skar]Ты влипаешь в серьезные неприятности.[/say]")
 
-		saynn("[say=pc]What? You're gonna abandon your post and come find me later? Sounds fun.[/say]")
+		saynn("[say=pc]Что? Ты собираешься бросить свой пост, чтобы найти меня позже? Звучит весело.[/say]")
 
-		saynn("[say=skar]Mh.[/say]")
+		saynn("[say=skar]Мм.[/say]")
 
-		saynn("After some time, you finally got to his briefs! Pulling them off reveals his sheath. At least his cock isn't made out of cold metal.")
+		saynn("Спустя некоторое время ты наконец добралась до его трусов! Когда ты стягиваешь их, открывается его кожаная оболочка. По крайней мере, его член не сделан из холодного металла.")
 
-		saynn("[say=skar]Just go grab a lilac, I'm not a fucktoy.[/say]")
+		saynn("[say=skar]Просто сходи принеси сирень, я тебе не секс-игрушка.[/say]")
 
-		saynn("[say=pc]Shush, fucktoy.[/say]")
+		saynn("[say=pc]Тсс, секс-игрушка.[/say]")
 
-		saynn("You rub his sheath, causing his member to slowly start sliding out. The red pointy tip is first, a lonely drop of his pre already shining at the top.")
+		saynn("Ты потираешь его плоть, заставляя член медленно выскальзывать наружу. Сначала показывается красный заостренный кончик, на котором уже блестит одинокая капля предэякулята.")
 
-		saynn("The guy doesn't seem to resist as you get him nice and hard, gently stroking his cock until you see the full length of his red rocket.")
+		saynn("Парень, кажется, совсем не сопротивляется, пока ты доводишь его до состояния полной твердости, нежно лаская его член, пока не увидишь всю длину его красной ракеты.")
 
-		saynn("Then.. you position yourself over him, your "+str("slick pussy lips" if isVag else "needy anal ring")+" already brushing against the tip of his cock. He sucks in a sharp breath.. the servos whirring softly. You're just teasing him at first, letting his tip prod your entrance.. before eventually pulling away. His hips twitch involuntarily.")
+		saynn("Затем.. ты устраиваешься прямо над ним, и твой "+str("slick pussy lips" if isVag else "needy anal ring")+" уже касается самой головки его члена. Он резко втягивает воздух.. слышится мягкое жужжание сервоприводов. Сначала ты лишь дразнишь его, позволяя кончику прощупывать твое входное отверстие.. а затем медленно отстраняешься. Его бедра непроизвольно дергаются.")
 
-		saynn("[say=skar]Rubber?[/say]")
+		saynn("[say=skar]Резиновый?[/say]")
 
-		saynn("[say=pc]Shut the fuck up.[/say]")
+		saynn("[say=pc]Заткнись нахрен.[/say]")
 
 		if (!isVag):
-			saynn("You do use some of his pre-cum as lube though, massaging it into your tailhole..")
+			saynn("Впрочем, ты используешь немного его предэякулята в качестве смазки, втирая его в свое анусное отверстие..")
 
-		addButton("Continue", "See what happens next", "sex_ride")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sex_ride")
 	if(state == "sex_ride"):
 		playAnimation(StageScene.SexCowgirlAmazon, "sex", {pc="skar", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Slowly, you begin to sink down along his length, inch by inch. His cock feels hot.. the tip stretching you perfectly, his veins brushing against your sensitive walls.")
+		saynn("Медленно, дюйм за дюймом, ты начинаешь опускаться на его длину. Его член кажется горячим.. головка идеально растягивает тебя, а вены приятно касаются твоих чувствительных стенок.")
 
-		saynn("[say=skar]Nnh..[/say]")
+		saynn("[say=skar]Ннх..[/say]")
 
-		saynn("He is twitching inside you, kinda cute. The base of his member isn't as fat at the moment so you manage to get most of his length inside. That's when you start riding him, bringing yourself up and down, his pre coating your "+str("pussy while your juices are coating his dick in return" if isVag else "inner walls")+".")
+		saynn("Он дергается внутри тебя, это даже мило. Основание его члена сейчас не такое толстое, так что тебе удается принять почти всю его длину. В этот момент ты начинаешь двигаться на нем, вверх и вниз, а его смазка покрывает твой "+str("pussy while your juices are coating his dick in return" if isVag else "inner walls")+".")
 
-		saynn("Now that you're moving, it gives you some time to check his body out. Anywhere you look.. there are old unhealed wounds.. scars if you will. His arms and his jaw are the obvious exceptions.. but even they got quite scratched up.")
+		saynn("Теперь, когда ты в движении, у тебя появляется время рассмотреть его тело. Куда бы ты ни посмотрела.. повсюду старые незажившие раны.. скажем так, шрамы. Его руки и челюсть — очевидные исключения.. но даже они изрядно исцарапаны.")
 
-		saynn("[say=pc]You have a nice cock.[/say]")
+		saynn("[say=pc]У тебя классный член.[/say]")
 
-		saynn("[say=skar]Thanks..[/say]")
+		saynn("[say=skar]Спасибо..[/say]")
 
-		saynn("He grunts as your "+str("pussy" if isVag else "ass")+" clenches around him. You keep rocking your hips back and forth , letting him feel every part of it. The shaft stimulates your pleasure spot"+str(" while the tip gives your organic barricade an occasional kiss" if isVag else " pretty well")+".")
+		saynn("Он кряхтит, когда твоя "+str("pussy" if isVag else "ass")+" сжимается вокруг него. Ты продолжаешь ритмично двигать бедрами вперед-назад, заставляя его чувствовать каждый миллиметр. Ствол стимулирует твою эрогенную зону"+str(" while the tip gives your organic barricade an occasional kiss" if isVag else " pretty well")+".")
 
-		saynn("He's getting harder. Thicker. The base of his cock begins to swell.. his knot growing as you ride him.")
+		saynn("Он становится тверже. Толще. Основание его члена начинает раздуваться... его узел растет, пока ты скачешь на нем.")
 
-		addButton("Faster", "Ride him faster", "ride_faster")
+		addButton("Быстрее", "Скачи на нем быстрее", "ride_faster")
 	if(state == "ride_faster"):
 		playAnimation(StageScene.SexCowgirlAmazon, "fast", {pc="skar", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You pick up the pace, your thighs smacking against his hips, the sound echoing off the walls.")
+		saynn("Ты ускоряешься, твои бедра хлопают по его тазу, и этот звук эхом разносится по стенам.")
 
-		saynn("[say=skar]Nhh.. fuck.[/say]")
+		saynn("[say=skar]Нхх.. блядь.[/say]")
 
-		saynn("He tilts his head back, the mechanical jaw hangs slightly open, a low pant escaping him.")
+		saynn("Он запрокидывает голову, механическая челюсть слегка отвисает, и у него вырывается низкое тяжелое дыхание.")
 
-		saynn("Now you're bouncing on him! His cock slides in and out, slick"+str(" with your juices" if isVag else " and twitching")+". The knot is fully formed now.. a thick orb that slaps against your entrance, too fat to fit inside.")
+		saynn("Теперь ты буквально прыгаешь на нем! Его член скользит туда-сюда, смазанный..."+str(" with your juices" if isVag else " and twitching")+". Узел полностью сформировался... толстая сфера, которая хлопает по твоему входу, слишком огромная, чтобы войти целиком.")
 
-		saynn("[say=skar]You're not gonna fit it..[/say]")
+		saynn("[say=skar]Он не влезет..[/say]")
 
-		saynn("You're close..")
+		saynn("Ты уже близко..")
 
-		addButton("Get knotted", "Make him cum inside you!", "get_knotted")
-		addButton("Pull out", "Make him cum outside", "pull_out_ride")
+		addButton("Принять узел", "Заставь его кончить в тебя!", "get_knotted")
+		addButton("Вытащить", "Заставь его кончить наружу", "pull_out_ride")
 	if(state == "get_knotted"):
 		playAnimation(StageScene.SexCowgirlAmazon, "inside", {pc="skar", npc="pc", pcCum=true, npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("[say=pc]Watch me.[/say]")
+		saynn("[say=pc]Смотри на меня.[/say]")
 
-		saynn("You slam down.. hard.")
+		saynn("Ты с силой влетаешь в него.. мощно.")
 
-		saynn("The knot puts more and more pressure on your "+str("pussy" if isVag else "anal")+" entrance.. until it suddenly pops past your "+str("folds" if isVag else "{pc.analStretch} star")+" and gets lodged inside you! Both of you groan at the same time.. him from the sudden tightness.. and you from the feeling of getting stretched so much.")
+		saynn("Узел давит всё сильнее на твой "+str("pussy" if isVag else "anal")+"вход.. пока внезапно он не прорывается сквозь твою "+str("folds" if isVag else "{pc.analStretch} star")+"и не застревает внутри тебя! Вы оба стонете одновременно.. он — от внезапной тесноты.. а ты — от ощущения, что тебя растягивает до предела.")
 
-		saynn("[say=skar]Agh..[/say]")
+		saynn("[say=skar]Ах..[/say]")
 
-		saynn("[say=pc]Oh fuck..[/say]")
+		saynn("[say=pc]Ох, блядь..[/say]")
 
-		saynn("His hips buck upward, driving himself deeper. The knot isn't letting either of you pull away now. His whole body tenses.. his cock pulsing inside you..")
+		saynn("Его бедра дергаются вверх, вгоняя его еще глубже. Узел теперь не дает вам обоим отстраниться. Все его тело напрягается.. его член пульсирует внутри тебя..")
 
-		saynn("And then.. it happens. Thick, hot spurts of cum flood your "+str("pussy, pumping your womb full of it" if isVag else "ass, pumping your nethers full of it")+". He grunts hard, his hips jerking with each spasm, his mechanical arms scratching the floor.")
+		saynn("И тут.. это случается. Густые, горячие струи спермы наводняют твою "+str("pussy, pumping your womb full of it" if isVag else "ass, pumping your nethers full of it")+". Он тяжело рычит, его бедра дергаются при каждом спазме, а механические руки скребут по полу.")
 
-		saynn("[say=pc]Yes.. breed me, you fuck..[/say]")
+		saynn("[say=pc]Да.. трахай меня, сука..[/say]")
 
-		saynn("Your own orgasm overwhelms you, passionate moans escaping you while your "+str("pussy" if isVag else "inner")+" walls are clenching hard around his knotted cock, milking his twitching balls dry..")
+		saynn("Твой собственный оргазм накрывает тебя с головой, из тебя вырываются страстные стоны, пока твои "+str("pussy" if isVag else "inner")+" стенки судорожно сжимают его раздутый узел, выжимая всё до капли из его подергивающихся яичек..")
 
-		saynn("You keep riding him through it all.. going after every last drop..")
+		saynn("Ты продолжаешь скакать на нем, не останавливаясь... выжимая из него всё до последней капли...")
 
-		saynn("When he finally stops twitching, you're both left panting. He starts up at you, his prosthetic eyes are half-shut.")
+		saynn("Когда он, наконец, перестает дергаться, вы оба замираете, тяжело дыша. Он смотрит на тебя, его протезы глаз полуприкрыты.")
 
-		saynn("[say=skar]You're insane..[/say]")
+		saynn("[say=skar]Ты безумна..[/say]")
 
-		saynn("[say=pc]And you're a good fucktoy.[/say]")
+		saynn("[say=pc]А ты отличная секс-игрушка.[/say]")
 
-		saynn("You try to lift yourself.. but the knot is still swollen. You're stuck.")
+		saynn("Ты пытаешься приподняться... но узел всё еще раздут. Ты застряла.")
 
-		saynn("[say=skar]Told you.[/say]")
+		saynn("[say=skar]Я же говорил.[/say]")
 
-		saynn("He doesn't sound too annoyed even. Almost amused.")
+		saynn("В его голосе нет даже раздражения. Скорее, почти азарт.")
 
-		saynn("[say=pc]We're just gonna wait until you deflate.[/say]")
+		saynn("[say=pc]Так что просто подождем, пока ты не сдуешься.[/say]")
 
-		saynn("[say=skar]Or until someone spots us.[/say]")
+		saynn("[say=skar]Или пока нас кто-нибудь не заметит.[/say]")
 
-		saynn("Wait, you realize that you don't have a lot of time actually. Failing your mission because you got stuck on some guard's cock.. that sounds kinda funny.. but it's not something that you want to happen.")
+		saynn("Погоди, ты ведь понимаешь, что времени у тебя на самом деле не так много. Провалить миссию из-за того, что застряла на члене какого-то охранника... звучит забавно, но явно не то, чего бы тебе хотелось.")
 
-		addButton("Continue", "See what happens next", "try_get_off_knot")
+		addButton("Продолжить", "Смотреть, что будет дальше", "try_get_off_knot")
 	if(state == "try_get_off_knot"):
 		playAnimation(StageScene.SexCowgirlAmazon, "tease", {pc="skar", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You give him a few minutes.. but he is still hard. So you go for the other option.")
+		saynn("Ты даешь ему пару минут... но он всё еще твердый. Поэтому ты выбираешь другой вариант.")
 
-		saynn("You start trying to get up.. putting more and more strength into it.")
+		saynn("Ты начинаешь пытаться подняться... вкладывая в это всё больше и больше сил.")
 
-		saynn("[say=skar]Nhh.. too soon.[/say]")
+		saynn("[say=skar]Нхх... слишком рано.[/say]")
 
-		saynn("[say=pc]Shush. I got places to be.[/say]")
+		saynn("[say=pc]Тсс. Мне еще нужно успеть по делам.[/say]")
 
-		saynn("Your whole body shivers as that knot is stretching you out again..")
+		saynn("Все твое тело вздрагивает, когда этот узел снова начинает тебя растягивать...")
 
-		saynn("And eventually, the thing manages to slide out with a satisfying wet pop.")
+		saynn("И в конце концов, эта херня с приятным влажным звуком выскальзывает наружу.")
 
-		saynn("[say=pc]Ah.. there we fucking go.[/say]")
+		saynn("[say=pc]Ах... вот это, блядь, дело.[/say]")
 
-		saynn("Your pussy stays gaping for a bit longer.. some of his seed gushing out.")
+		saynn("Твоя киска еще какое-то время остается широко раскрытой... а его семя вытекает наружу.")
 
-		saynn("[say=pc]So messy. You will clean it up, got it?[/say]")
+		saynn("[say=pc]Как грязно. Ты всё уберешь, поняла?[/say]")
 
-		saynn("[say=skar]What am I, some kind of maid?[/say]")
+		saynn("[say=skar]Я что, какая-то служанка?[/say]")
 
-		saynn("[say=pc]No, you're a fucktoy.[/say]")
+		saynn("[say=pc]Нет, ты всего лишь секс-игрушка.[/say]")
 
-		saynn("[say=skar]That answers your question.[/say]")
+		saynn("[say=skar]Это и есть ответ на твой вопрос.[/say]")
 
-		saynn("He's looking a bit more.. lively.. now. Good for him.")
+		saynn("Сейчас он выглядит чуть более... оживленным.. Что ж, молодец.")
 
-		saynn("You get up and prepare to leave.")
+		saynn("Ты встаешь и готовишься уходить.")
 
-		addButton("Continue", "See what happens next", "endsceneposourselves")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endsceneposourselves")
 	if(state == "pull_out_ride"):
 		playAnimation(StageScene.SexCowgirlAmazon, "tease", {pc="skar", npc="pc", pcCum=true, npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You feel his cock throbbing inside you, that knot plapping against your "+str("folds" if isVag else "{pc.analStretch} star")+"..")
+		saynn("Ты чувствуешь, как его член пульсирует внутри тебя, а узел шлепает по твоей "+str("folds" if isVag else "{pc.analStretch} star")+"..")
 
-		saynn("You keep riding him.. until the point of no return. And just when his balls start to tense up, that's when you lift yourself off him completely, his cock slipping out of your wet "+str("pussy" if isVag else "tailhole")+" with a slick sound..")
+		saynn("Ты продолжаешь скакать на нем.. пока не достигаешь точки невозврата. И как раз в тот момент, когда его яички начинают напрягаться, ты полностью отрываешься от него, и его член соскальзывает из твоей влажной "+str("pussy" if isVag else "tailhole")+" с характерным хлюпающим звуком..")
 
-		saynn("[say=skar]Fuck..[/say]")
+		saynn("[say=skar]Блядь..[/say]")
 
-		saynn("The guy groans, his whole body squirming underneath you. Your digits find his shaft and wrap around it.. just holding the throbbing length as it starts shooting ropes of thick cum! One after another, splattering across his stomach.")
+		saynn("Парень стонет, всё его тело корчится под тобой. Твои пальцы находят его ствол и обхватывают его.. просто удерживая пульсирующую плоть, когда он начинает извергать струи густой спермы! Одна за другой, забрызгивая его живот.")
 
-		saynn("Your own orgasm catches up with you, your "+str("pussy" if isVag else "anal ring")+" pulsing around the cock that's not there anymore, your moans follow closely after his every noise..")
+		saynn("Твой собственный оргазм настигает тебя, твое "+str("pussy" if isVag else "anal ring")+"пульсация всё ещё ощущается там, где только что был его член, а твои стоны вторят каждому его звуку...")
 
-		saynn("His own seed pools on his scared belly, his knot begins to slowly deflate now that he is spent, he shaft still twitching in your grip.")
+		saynn("Его собственная сперма растекается по его исцарапанному животу; узел начинает медленно спадать, раз он изверг всё, что мог, но ствол всё ещё подергивается в твоей руке.")
 
-		saynn("Both of you are left panting.")
+		saynn("Вы оба тяжело дышите.")
 
-		saynn("[say=pc]Mmhh.. what a mess you made.[/say]")
+		saynn("[say=pc]Мммх.. ну и грязища.[/say]")
 
-		saynn("[say=skar]I don't think I'm the one who should be blamed..[/say]")
+		saynn("[say=skar]Не думаю, что винить стоит меня..[/say]")
 
-		saynn("[say=pc]For having such a hot body? No, you're very responsible for this.[/say]")
+		saynn("[say=pc]За то, что у тебя такое горячее тело? Нет, в этом очень даже виноват ты.[/say]")
 
-		saynn("You wipe your hand on his armor, leaving a sticky trail across the metal.")
+		saynn("Ты вытираешь руку о его доспех, оставляя липкий след на металле.")
 
-		saynn("[say=skar]..rude.[/say]")
+		saynn("[say=skar]..грубо.[/say]")
 
-		saynn("He looks a bit more lively after this.")
+		saynn("После этого он выглядит чуть более оживленным.")
 
-		saynn("You realize that you're on a timer.. so you quickly get up.")
+		saynn("Ты понимаешь, что время поджимает... и быстро вскакиваешь на ноги.")
 
-		saynn("[say=pc]Thanks for the fun, enjoy cleaning it up. I gotta go.[/say]")
+		saynn("[say=pc]Спасибо за веселье, разгребай теперь это дерьмо сам. Мне пора.[/say]")
 
-		saynn("[say=skar]Yeah, yeah..[/say]")
+		saynn("[say=skar]Да-да...[/say]")
 
-		saynn("He doesn't stop you as you step over him and head towards the exit.")
+		saynn("Он не пытается тебя остановить, когда ты перешагиваешь через него и направляешься к выходу.")
 
-		addButton("Continue", "See what happens next", "endsceneposourselves")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endsceneposourselves")
 	if(state == "start_fuck_him"):
 		playAnimation(StageScene.SexBehind, "tease", {pc="pc", npc="skar", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("[say=pc]Who said I wanted to get to the captain? I just wanted to have some fun with you.[/say]")
+		saynn("[say=pc]Кто сказал, что я хочу добраться до капитана? Я просто хотел немного развлечься с тобой.[/say]")
 
-		saynn("You push the guy onto his belly and pin him into the cold floor. Your hands begin stripping the pieces of his armor. At some point it becomes hard to distinguish them from his mechanical bodyparts.")
+		saynn("Ты переворачиваешь парня на живот и прижимаешь его к холодному полу. Твои руки начинают срывать с него элементы брони. В какой-то момент становится трудно отличить их от его механических частей тела.")
 
-		saynn("[say=skar]You're getting yourself into some big trouble.[/say]")
+		saynn("[say=skar]Ты влипаешь в серьезные неприятности.[/say]")
 
-		saynn("[say=pc]What? You're gonna abandon your post and come find me? Sounds fun.[/say]")
+		saynn("[say=pc]Что? Ты собираешься бросить свой пост и пойти искать меня? Звучит весело.[/say]")
 
-		saynn("[say=skar]Mh.[/say]")
+		saynn("[say=skar]Мм.[/say]")
 
-		saynn("After some time, you finally got to his briefs! Pulling them off reveals his tight-looking tailhole. At least that part isn't made out of cold metal. His sheath is quite normal too.. quite nice even.")
+		saynn("Спустя некоторое время ты наконец добрался до его трусов! Когда ты стягиваешь их, открывается его тугое анусное отверстие. По крайней мере, эта часть не сделана из холодного металла. Его препуций тоже выглядит вполне нормально... даже весьма недурно.")
 
-		saynn("You run your fingers along the strong curves of his ass, feeling the wolf get tense beneath you. His tail twitches, brushing against your wrist.")
+		saynn("Ты проводишь пальцами по крепким изгибам его задницы, чувствуя, как волк под тобой напрягается. Его хвост дергается, задевая твое запястье.")
 
-		saynn("[say=skar]You're really gonna do this?[/say]")
+		saynn("[say=skar]Ты серьезно собираешься это сделать?[/say]")
 
-		saynn("[say=pc]We will see how your body responds.[/say]")
+		saynn("[say=pc]Посмотрим, как отреагирует твое тело.[/say]")
 
-		saynn("You loom over his rear.. and let a bead of your saliva land directly on his star, making him shiver.")
+		saynn("Ты нависаешь над его задницей... и позволяешь капле слюны упасть прямо на его анус, заставляя его вздрогнуть.")
 
-		saynn("[say=skar]Hh..[/say]")
+		saynn("[say=skar]Хх..[/say]")
 
-		saynn("Then.. you press a thumb against his tailhole. It's tight, resisting quite a lot. Skar lets out a low grunt as you keep prodding it, his muscles eventually giving way, letting your digit sink into his warm depths.")
+		saynn("Затем.. ты прижимаешь большой палец к его анусу. Он тугой, сильно сопротивляется. Скар издает низкий стон, пока ты продолжаешь прощупывать его, пока его мышцы наконец не поддаются, позволяя твоему пальцу погрузиться в его теплые глубины.")
 
-		saynn("[say=skar]Nnh..[/say]")
+		saynn("[say=skar]Ннх..[/say]")
 
-		saynn("He is hot inside. You work your thumb in circles, loosening him up. His breathing gets heavier, his mechanical jaw producing a whirling noise.")
+		saynn("Внутри он горячий. Ты водишь большим пальцем по кругу, размягчая его. Его дыхание становится тяжелее, а механическая челюсть издает жужжащий звук.")
 
-		saynn("You begin to see something.. his sheath is twitching. A red tip emerges at first.. but then more of his shaft follows too, his canine member gradually getting harder..")
+		saynn("Ты начинаешь замечать кое-что.. его препуций подергивается. Сначала показывается красный кончик.. но затем за ним следует и остальная часть ствола, его собачий член постепенно становится тверже..")
 
-		saynn("[say=pc]Looks like someone is enjoying this.[/say]")
+		saynn("[say=pc]Похоже, кому-то это нравится.[/say]")
 
-		saynn("[say=skar]Pff..[/say]")
+		saynn("[say=skar]Пфф..[/say]")
 
-		saynn("You reach beneath him and wrap your digits around his half-erect cock, catching the lonely drops of precum from its pointy tip.")
+		saynn("Ты запускаешь руку под него и обхватываешь его полуэрегированный член, слизывая одинокие капли предэякулята с его острого кончика.")
 
-		saynn("He shudders as you bring those digits back to his tailhole and work a few of them in, his own precum working as a lube, letting you stretch him out more.")
+		saynn("Он вздрагивает, когда ты возвращаешь пальцы к его анусу и вводишь несколько штук; его собственный предэякулят служит смазкой, позволяя тебе растянуть его еще сильнее.")
 
-		saynn("[say=skar]F-fuck..[/say]")
+		saynn("[say=skar]Б-бля..[/say]")
 
-		saynn("Your own cock is hard and ready by now. You coat it with the rest of his precum, gliding your digits over it a few times.")
+		saynn("Твой собственный член к этому моменту уже твердый и готовый. Ты обмазываешь его остатками его смазки, несколько раз проводя по нему пальцами.")
 
-		saynn("Then.. you position yourself behind him, the tip of your {pc.penis} pressing against his slick entrance. Slowly, you push forward.")
+		saynn("Затем... ты устраиваешься позади него, прижимая кончик своего {pc.penis} к его влажному входу. Медленно ты подаешься вперед.")
 
-		saynn("[say=skar]G-ghh..[/say]")
+		saynn("[say=skar]Гх-хх..[/say]")
 
-		saynn("Inch by inch.. his tailhole stretches open, the tip of your member burying itself in him.. His tight inner walls grip you hard. His muscles all tense up.. you can hear it in his prosthetic arms.")
+		saynn("Дюйм за дюймом... его анус растягивается, кончик твоего члена погружается в него... Его тугие внутренние стенки крепко сжимают тебя. Все его мышцы напряжены... ты слышишь это даже по его протезам рук.")
 
-		addButton("Continue", "See what happens next", "fuck_him_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "fuck_him_sex")
 	if(state == "fuck_him_sex"):
 		playAnimation(StageScene.SexBehind, "sex", {pc="pc", npc="skar", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Eventually, you manage to get most of your length down that guard's ass. He is panting now, his body trembling. You can feel him clenching as his cock has fully emerged.. brushing against the floor.")
+		saynn("В конце концов, тебе удается вогнать почти всю длину в задницу этого охранника. Он тяжело дышит, его тело дрожит. Ты чувствуешь, как он сжимается, когда его член полностью вылез наружу... едва не касаясь пола.")
 
-		saynn("[say=pc]Just relax, be a good fucktoy.[/say]")
+		saynn("[say=pc]Просто расслабься, будь хорошей секс-игрушкой.[/say]")
 
-		saynn("You start moving, doing slow thrusts, pulling almost all the way out before sinking back in. Skar grunts with each push, his inner walls hugging your member tightly.")
+		saynn("Ты начинаешь двигаться, совершая медленные толчки, почти полностью выходя и снова погружаясь в него. Скар кряхтит при каждом толчке, его внутренние стенки плотно обхватывают твой член.")
 
-		saynn("[say=skar]Nnhh..[/say]")
+		saynn("[say=skar]Ннхх..[/say]")
 
-		saynn("The guy grunts as your cock finds his little pleasure spot.. You angle yourself a little better and proceed to focus on it, giving it little strokes with your shaft. Skar's legs shiver, his cock pulsing subtly from it all, his tip dripping pre onto the floor, forming a small puddle.")
+		saynn("Парень стонет, когда твой член находит его точку удовольствия... Ты чуть меняешь угол и начинаешь сосредоточиться на ней, совершая короткие фрикции стволом. Ноги Скара дрожат, его член едва заметно пульсирует, а с кончика на пол капает предэякулят, образуя небольшую лужицу.")
 
-		saynn("[say=pc]You like that, don't you?[/say]")
+		saynn("[say=pc]Тебе ведь нравится, да?[/say]")
 
-		saynn("[say=skar]What does it look like?.. hh..[/say]")
+		saynn("[say=skar]А на что это похоже?.. хх..[/say]")
 
-		saynn("He is so shy.")
+		saynn("Он такой стеснительный.")
 
-		addButton("Faster", "Rail his ass harder!", "fuck_him_fast")
+		addButton("Быстрее", "Трахни его задницу сильнее!", "fuck_him_fast")
 	if(state == "fuck_him_fast"):
 		playAnimation(StageScene.SexBehind, "fast", {pc="pc", npc="skar", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("As the guy's tailhole gets more slick and needy, you quicken your pace, letting the sound of skin slapping against skin echo around the room. With each thrust, you drive your {pc.penis} deep, hammering away at his prostate, making him squirm.")
+		saynn("По мере того как его анус становится всё более скользким и жадным, ты ускоряешь темп, позволяя звукам шлепков плоти о плоть эхом разноситься по комнате. С каждым толчком ты вгоняешь свой {pc.penis} глубоко, методично вбиваясь в его простату и заставляя его извиваться.")
 
-		saynn("[say=skar]Ghh.. hh.. mh..[/say]")
+		saynn("[say=skar]Гхх.. хх.. мх..[/say]")
 
-		saynn("His knot is swelling, trapped between his belly and the cold floor. Too bad he can't knot anyone.")
+		saynn("Его узел раздувается, зажатый между животом и холодным полом. Жаль, что он не может завязаться ни в ком другом.")
 
-		saynn("[say=skar]..f-fuck.. ah..[/say]")
+		saynn("[say=skar]..б-блядь.. ах..[/say]")
 
-		saynn("The poor guy can't contain his noises.. moans escaping him as you rail his ass.. harder and faster. His prostate gets all nice and swollen.. making hammering away at it easy.")
+		saynn("Бедняга не может сдерживать стоны... они вырываются из него, пока ты жестко и быстро трахаешь его в задницу. Его простата приятно разбухла, так что вбиваться в неё становится одно удовольствие.")
 
-		saynn("[say=skar]I.. I can't.. I'm g-gonna..[/say]")
+		saynn("[say=skar]Я.. я не могу.. я сейчас..[/say]")
 
-		saynn("You're close too.")
+		saynn("Ты тоже на пределе.")
 
-		addButton("Cum inside", "Breed his ass!", "fuck_him_cum")
+		addButton("Кончить внутрь", "Трахни его как следует!", "fuck_him_cum")
 	if(state == "fuck_him_cum"):
 		playAnimation(StageScene.SexBehind, "inside", {pc="pc", npc="skar", pcCum=true, npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("When you push him over the edge, his whole body locks up. His cock starts twitching violently.. and then it happens. Rope after rope of his seed sprays onto the floor beneath him, his cock pulsing as his balls get drained by that prostate orgasm. His ass clamps down on your cock hard..")
+		saynn("Когда ты доводишь его до предела, всё его тело сводит судорогой. Его член начинает бешено дергаться... и тут это происходит. Струя за струей его семя разлетается по полу под ним, а член пульсирует, пока его яички опустошаются от этого простатического оргазма. Его задница крепко сжимает твой член...")
 
-		saynn("[say=skar]Ahh-h.. f-f..ah.. f-fuck..[/say]")
+		saynn("[say=skar]Ахх.. б-б.. ах.. блядь..[/say]")
 
-		saynn("That is when you drive yourself balls-deep one final time, burying your {pc.penis} as far as it will go. You grunt as thick spurts of your {pc.cum} begin flooding his insides. Skar moans as you pump him full of your stuff, his overstimulated body shaking.")
+		saynn("Именно в этот момент ты входишь в него в последний раз, засаживая свой {pc.penis} так глубоко, как только возможно. Ты кряхтишь, когда густые порции твоей {pc.cum} начинают заливать его нутро. Скар стонет, пока ты наполняешь его своим соком, а его перестимулированное тело дрожит.")
 
-		saynn("[say=skar]Agh.. hh..[/say]")
+		saynn("[say=skar]Агх.. хх..[/say]")
 
-		saynn("After getting his insides painted.. you just stay inside him, your bodies rubbing against each other, both of you left panting.")
+		saynn("Залив его изнутри... ты просто остаешься в нем, ваши тела трутся друг о друга, и вы оба тяжело дышите.")
 
-		saynn("[say=pc]Good little fucktoy.[/say]")
+		saynn("[say=pc]Хорошая маленькая траховая игрушка.[/say]")
 
-		saynn("He can only make muffled moans in response.. his tailhole still trying to milk you.")
+		saynn("В ответ он может лишь издавать приглушенные стоны... его анус всё еще пытается доить тебя.")
 
-		addButton("Pull out", "Pull your cock out!", "fuck_him_after")
+		addButton("Вытащить", "Вытащи свой член!", "fuck_him_after")
 	if(state == "fuck_him_after"):
 		playAnimation(StageScene.SexBehind, "tease", {pc="pc", npc="skar", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You realize that you're on a timer so you really gotta go now.")
+		saynn("Ты понимаешь, что время поджимает, и тебе пора двигаться дальше.")
 
-		saynn("You pull out and watch as the guard's tailhole gapes slightly. A thick dribble of your {pc.cum} follows, trickling down his fur.")
+		saynn("Ты вытаскиваешь свой член и наблюдаешь, как задний проход охранника слегка приоткрывается. Густая струйка твоей {pc.cum} следует за ним, стекая по его меху.")
 
-		saynn("The guy just stays still on the floor, his own member slowly retreating back into its sheath. So much mess.")
+		saynn("Парень просто лежит неподвижно на полу, пока его собственный член медленно втягивается обратно в препуций. Столько грязи.")
 
-		saynn("[say=pc]Thanks for the fun. I hope you will clean it all up, I gotta run.[/say]")
+		saynn("[say=pc]Спасибо за веселье. Надеюсь, ты всё это уберешь, а мне пора бежать.[/say]")
 
-		saynn("You get up and prepare to leave.")
+		saynn("Ты встаешь и готовишься уходить.")
 
-		saynn("[say=skar]Yeah..[/say]")
+		saynn("[say=skar]Ага..[/say]")
 
-		saynn("You step over him and rush back into the corridor!")
+		saynn("Ты перешагиваешь через него и спешишь обратно в коридор!")
 
-		addButton("Continue", "See what happens next", "endsceneposourselves")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endsceneposourselves")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

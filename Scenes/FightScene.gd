@@ -44,35 +44,35 @@ func _run():
 		saynn(enemyCharacter.getFightIntro(battleName))
 		#setState("fighting")
 	elif(state == "fighting"):
-		#say("And so the fight continues")
+		#say("И вот бой продолжается")
 		pass
 		
 	if(state == "lost" || state == "win"):		
-		saynn("The fight has ended")
+		saynn("Бой окончен")
 	
 	if(state == "physattacks"):
-		saynn("Pick the attack to use")
+		saynn("Выберите тип атаки")
 		
 		addAttackButtons(Attack.Category.Physical)
 		
-		addButton("Back", "Back to fighting", "return")
+		addButton("Назад", "Вернуться к бою", "return")
 	
 	if(state == "lustattacks"):
-		saynn("Pick how you wanna tease the enemy")
+		saynn("Выберите, как именно вы хотите дразнить противника")
 		
 		var enemyLustInterests = enemyCharacter.getLustInterests()
 		if(!enemyLustInterests.hasAnyInterests()):
-			sayn("You have a feeling that teasing won't have any effect on "+enemyCharacter.getName())
+			sayn("У вас есть предчувствие, что дразнилки не подействуют на "+enemyCharacter.getName())
 		else:
 			var whatPlayerKnows = enemyLustInterests.getPlayerKnowledge()
 			
-			sayn("What you learned about "+enemyCharacter.getName()+"'s likes/dislikes:")
+			sayn("Что вам известно о "+enemyCharacter.getName()+" Любит/не любит:")
 			if(whatPlayerKnows.size() > 0):
 				for topicID in whatPlayerKnows:
 					var topic = GlobalRegistry.getLustTopic(topicID)
-					sayn("- "+enemyCharacter.getName() + " [color="+Interest.getColorString(whatPlayerKnows[topicID])+"]" + Interest.getVisibleName(whatPlayerKnows[topicID])+"[/color] seeing "+str(topic.getVisibleName(topicID)))
+					sayn("- "+enemyCharacter.getName() + " [color="+Interest.getColorString(whatPlayerKnows[topicID])+"]" + Interest.getVisibleName(whatPlayerKnows[topicID])+"[/color] вид "+str(topic.getVisibleName(topicID)))
 			else:
-				sayn("- Nothing yet")
+				sayn("- Пока ничего")
 		
 		var lustCombatState:LustCombatState = GM.pc.getLustCombatState()
 		addLustActionsButtons(lustCombatState, lustCombatState.getActionsSorted())
@@ -83,17 +83,17 @@ func _run():
 			sayn(activity)
 		#addAttackButtons(Attack.Category.Lust)
 		
-		addButton("Back", "Back to fighting", "return")
+		addButton("Назад", "Вернуться к бою", "return")
 	
 	if(state == "specialattacks"):
-		saynn("Pick the attack to use")
+		saynn("Выберите тип атаки")
 		
 		addAttackButtons(Attack.Category.Special)
 		
-		addButton("Back", "Back to fighting", "return")
+		addButton("Назад", "Вернуться к бою", "return")
 	
 	if(state == "inventory"):
-		saynn("Pick the item to use")
+		saynn("Выберите предмет для использования")
 	
 		var playerInventory = GM.pc.getInventory()
 		var usableItems = playerInventory.getAllCombatUsableItems()
@@ -104,34 +104,34 @@ func _run():
 			if(intoxic <= 0 || GM.pc.canIntoxicateMore(intoxic)):
 				addButton(item.getVisibleName(), item.getCombatDescription(), "useitem", [item])
 			else:
-				addDisabledButton(item.getVisibleName(), "[color=red]Too intoxicated to use this[/color]\n"+item.getCombatDescription())
+				addDisabledButton(item.getVisibleName(), "[color=red]Слишком пьян, чтобы использовать это[/color]\n"+item.getCombatDescription())
 	
-		addButton("Back", "Back to fighting", "return")
+		addButton("Назад", "Вернуться к бою", "return")
 	
 	if(state == "bdsm_attacks"):
-		saynn("Pick what restraint you wanna force onto your enemy")
+		saynn("Выберите тип фиксации, которую хотите навязать врагу")
 		
 		if(!GM.pc.isBlindfolded() || GM.pc.canHandleBlindness()):
 			for item in enemyCharacter.getInventory().getEquppedRestraints():
 				var restraintData: RestraintData = item.getRestraintData()
 				
 				if(!restraintData.hasSmartLock()):
-					sayn(item.getVisibleName()+", restraint level: "+restraintData.getVisibleLevel(false))
-					#sayn("- Durability: "+restraintData.getVisibleDurability())
-					saynn("- Tightness: "+restraintData.getVisibleTightness()+" ("+restraintData.getTightnessPercentString()+")")
+					sayn(item.getVisibleName()+", уровень фиксации: "+restraintData.getVisibleLevel(false))
+					#sayn("- Прочность: "+restraintData.getVisibleDurability())
+					saynn("- Тугость: "+restraintData.getVisibleTightness()+" ("+restraintData.getTightnessPercentString()+")")
 				else:
-					sayn(item.getVisibleName()+", SMART-LOCKED")
+					sayn(item.getVisibleName()+", С УМНЫМ ЗАМКОМ")
 					var smartLock:SmartLockBase = restraintData.getSmartLock()
 					saynn("- "+smartLock.getName())
 
 		else:
-			saynn("You can't judge enemy's restraints while blind")
+			saynn("Нельзя оценить фиксацию врага, пока вы ослеплены")
 		
 		var isInCategory = (restraintsPickedCategory != "")
 		if(isInCategory):
 			var pickedItemToGroup:ItemBase = GlobalRegistry.getItemRef(restraintsPickedCategory)
 			if(pickedItemToGroup != null):
-				saynn("What "+str(pickedItemToGroup.getVisibleName())+" do you want to use?")
+				saynn("Что "+str(pickedItemToGroup.getVisibleName())+" хочешь использовать?")
 			
 		var usableItems
 		var countsByUniqueRestraint = {}
@@ -177,7 +177,7 @@ func _run():
 				if(hasAtLeastOneUsableByItemID.has(categoryID)):
 					addButton(str(countsByItemID[categoryID])+"x"+itemRef.getVisibleName(), itemRef.getCombatDescription(), "openrestraintscategory", [categoryID])
 				else:
-					addDisabledButton(str(countsByItemID[categoryID])+"x"+itemRef.getVisibleName(), "Can't force this item onto the enemy")
+					addDisabledButton(str(countsByItemID[categoryID])+"x"+itemRef.getVisibleName(), "Нельзя применить этот предмет на врага")
 				
 		for item in usableItems:
 			if(!isInCategory && countsByItemID.has(item.id) && countsByItemID[item.id] > 1):
@@ -207,7 +207,7 @@ func _run():
 					buttonDesc = "Amount: " + str(theAmount) + "\n" + buttonDesc
 				addButton((str(theAmount)+"x" if theAmount > 1 else "")+buttonName, buttonDesc, "forcerestraint", [item])
 			
-		addButton("Back", "Back to fighting", "closerestraintsmenu")
+		addButton("Назад", "Вернуться к бою", "closerestraintsmenu")
 	
 	if(state == "playerMustDodge"):
 		if(whatPlayerDid != ""):
@@ -244,73 +244,73 @@ func _run():
 			saynn(GM.ui.processString(attack.canBlindAnticipationText(enemyCharacter, GM.pc)))
 		else:
 			saynn(GM.ui.processString(attack.getAnticipationText(enemyCharacter, GM.pc)))
-		addButton("Do nothing", "You don't counter the attack in any way", "dodge_donothing")
-		addButtonWithChecks("Dodge", "You dodge a physical attack completely spending 30 stamina in the process", "dodge_dodge", [], [ButtonChecks.HasStamina, ButtonChecks.NotCollapsed])
-		addButtonWithChecks("Block", "You gain "+str(GM.pc.getBlockArmor())+" additional physical armor against the attack while spending 15 stamina", "dodge_block", [], [ButtonChecks.HasStamina])
-		addButtonWithChecks("Defocus", "You try to distract yourself from the fight, gaining "+str(GM.pc.getDefocusArmor())+" lust armor and spending 15 stamina", "dodge_defocus", [], [ButtonChecks.HasStamina])
+		addButton("Ничего не делать", "Вы никак не парируете атаку", "dodge_donothing")
+		addButtonWithChecks("Уклонение", "Вы полностью уклоняетесь от физической атаки, затрачивая при этом 30 единиц выносливости", "dodge_dodge", [], [ButtonChecks.HasStamina, ButtonChecks.NotCollapsed])
+		addButtonWithChecks("Блок", "Вы получаете "+str(GM.pc.getBlockArmor())+" дополнительной физической брони против атаки, затрачивая 15 единиц выносливости", "dodge_block", [], [ButtonChecks.HasStamina])
+		addButtonWithChecks("Рассеянность", "Вы пытаетесь отвлечься от боя, получая "+str(GM.pc.getDefocusArmor())+" брони похоти и тратя 15 выносливости", "dodge_defocus", [], [ButtonChecks.HasStamina])
 		if(GM.pc.hasPerk(Perk.CombatDoubleDown)):
 			if(lastPlayerAttackData != null):
 				var pcAttack:Attack = GlobalRegistry.getAttack(lastPlayerAttackData["attackID"])
 				
 				if(pcAttack.canUse(GM.pc, enemyCharacter, lastPlayerAttackData)):
-					addButtonWithChecks("Double down", "Spend 10 stamina to do the same attack that you did a second time before the enemy attacks you", "dodge_doubledown", [], [ButtonChecks.HasStamina])
+					addButtonWithChecks("Удвоить ставку", "Потратить 10 выносливости, чтобы повторить ту же атаку еще раз, прежде чем враг нанесет удар", "dodge_doubledown", [], [ButtonChecks.HasStamina])
 				else:
-					addDisabledButton("Double down", "You can't double down on this attack")
+					addDisabledButton("Удвоить ставку", "Эту атаку нельзя удвоить")
 			else:
-				addDisabledButton("Double down", "You can only double down on a basic physical attack")
+				addDisabledButton("Удвоить ставку", "Удвоить ставку можно только для базовой физической атаки")
 				
 	if(state == "" || state == "fighting"):
 		playGetUpAnimsIfNeedTo()
 
-		addButtonWithChecks("Physical Attack", "Show a list of physical attacks that you can do", "physattacks", [], [ButtonChecks.NotStunned])
-		addButtonWithChecks("Lust Attack", "Show a list of lewd actions that you can do", "lustattacks", [], [ButtonChecks.NotStunned])
+		addButtonWithChecks("Физическая атака", "Показать список доступных физических атак", "physattacks", [], [ButtonChecks.NotStunned])
+		addButtonWithChecks("Похотливая атака", "Показать список развратных действий, которые вы можете совершить", "lustattacks", [], [ButtonChecks.NotStunned])
 		
 		if(pcHasAnyAttacksOfCategory(Attack.Category.Special)):
-			addButtonWithChecks("Special", "Show a list of your special moves", "specialattacks", [], [ButtonChecks.NotStunned])
+			addButtonWithChecks("Спецприём", "Показать список ваших особых приёмов", "specialattacks", [], [ButtonChecks.NotStunned])
 		else:
-			addDisabledButton("Special", "You don't know any special moves")
+			addDisabledButton("Спецприём", "Вы не знаете никаких особых приёмов")
 		
-		#addButton("Inspect", "Look closer", "inspect")
+		#addButton("Осмотреть", "Присмотреться поближе", "inspect")
 		if(GM.pc.getInventory().hasRemovableRestraints()):
-			addButtonWithChecks("Struggle", "Struggle against your restraints", "struggle", [], [ButtonChecks.NotStunned])
+			addButtonWithChecks("Сопротивление", "Пытаться вырваться из пут", "struggle", [], [ButtonChecks.NotStunned])
 		else:
-			addDisabledButton("Struggle", "You don't have any restraints that you can struggle out of")
-		addButton("Wait", "Do nothing", "wait")
+			addDisabledButton("Сопротивление", "На вас нет никаких пут, из которых можно было бы вырваться")
+		addButton("Подождать", "Ничего не делать", "wait")
 		
 		#if(GM.pc.getInventory().getAllCombatUsableItems().size() > 0):
-		#	addButton("Inventory", "Use an item fron your inventory", "inventory")
+		#	addButton("Инвентарь", "Использовать предмет из инвентаря", "inventory")
 		#else:
-		#	addDisabledButton("Inventory", "You don't have anything you can use in combat")
-		addButton("Inventory", "Look at your inventory", "openinventory")
+		#	addDisabledButton("Инвентарь", "У вас нет ничего, что можно использовать в бою")
+		addButton("Инвентарь", "Посмотреть инвентарь", "openinventory")
 		
 		if(GM.pc.hasEffect(StatusEffect.Collapsed)):
 			if(GM.pc.canStandUpCombat()):
-				addButtonWithChecks("Get up", "spends the whole turn", "getup", [], [ButtonChecks.NotStunned])
+				addButtonWithChecks("Встать", "тратит весь ход", "getup", [], [ButtonChecks.NotStunned])
 			else:
-				addDisabledButton("Get up", "You can't stand up now")
+				addDisabledButton("Встать", "Ты не можешь встать сейчас")
 		else:
-			addDisabledButton("Get up", "You're already standing")
+			addDisabledButton("Встать", "Ты уже стоишь")
 		
 		if(GM.pc.hasPerk(Perk.BDSMRigger)):
-			addButtonWithChecks("Bondage", "Pick which restraint you wanna try to force onto your enemy", "bdsm_attacks", [], [ButtonChecks.NotHandsBlocked, ButtonChecks.NotArmsRestrained])
+			addButtonWithChecks("Бондаж", "Выбери тип связывания, который хочешь навязать врагу", "bdsm_attacks", [], [ButtonChecks.NotHandsBlocked, ButtonChecks.NotArmsRestrained])
 		
 		if(!GM.pc.hasEffect(StatusEffect.Collapsed)):
-			addButton("Switch stance", "Switch your combat stance to the next one. This is just a visual change", "switchStance")
+			addButton("Сменить стойку", "Сменить боевую стойку на следующую. Это лишь визуальное изменение", "switchStance")
 		
 		
 		addButtonAt(14, "Submit", "Give up", "submit")
 		
 	if(state == "lost" || state == "win"):
 		if(enemyCharacter.isDynamicCharacter() && restraintIdsForcedByPC.size() > 0 && state == "win"):
-			addButton("Recover restraints", "the battle has ended", "endbattle", [true])
-			addButton("Keep restraints", "the battle has ended", "endbattle", [false])
+			addButton("Восстановить путы", "битва окончена", "endbattle", [true])
+			addButton("Сохранить путы", "битва окончена", "endbattle", [false])
 		else:
-			addButton("Continue", "the battle has ended", "endbattle", [true])
+			addButton("Продолжить", "битва окончена", "endbattle", [true])
 		
 	if(state == "lustCombatAboutToCum"):
 		saynn(whatPlayerDid)
 		
-		saynn("You're about to cum..")
+		saynn("Ты сейчас кончишь...")
 		
 		var lustCombatState:LustCombatState = GM.pc.getLustCombatState()
 		addLustActionsButtons(lustCombatState, lustCombatState.getOrgasmActionsSorted())
@@ -318,8 +318,8 @@ func _run():
 	if(state == "lustCombatAfterCame"):
 		saynn(whatPlayerDid)
 		
-		addButton("Continue", "You're not done yet", "")
-		addButton("Stop", "That's enough for now..", "endthescene")
+		addButton("Продолжить", "Ты еще не всё", "")
+		addButton("Стой", "На сегодня хватит...", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "struggle"):

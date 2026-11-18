@@ -79,7 +79,7 @@ func _ready():
 	
 	var loadedMods = GlobalRegistry.getLoadedMods()
 	if(loadedMods.size() > 0):
-		var text = "Loaded mods:"
+		var text = "Загруженные моды:"
 		for mod in loadedMods:
 			text += "\n"+str(mod)
 		loadedModsLabel.bbcode_text = text

@@ -47,7 +47,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Add",
+			text = "Добавить",
 		},
 		{
 			type = "slot",
@@ -57,7 +57,7 @@ func getTemplate():
 		},
 		{
 			type = "label",
-			text = "of item id",
+			text = "предмета с ID",
 		},
 		{
 			type = "slot",

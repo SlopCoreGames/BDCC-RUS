@@ -12,7 +12,7 @@ func _init():
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.TFLook, "start")
-		saynn("You stop because you can't make another step..")
+		saynn("Ты замираешь, потому что больше не можешь сделать ни шагу...")
 		
 		var stuffedHoles := GM.pc.getEggStuffedHoles()
 		var stuffedHolesTexts:Array = []
@@ -26,29 +26,29 @@ func _run():
 		if(stuffedHolesTexts.empty()):
 			stuffedHolesTexts = ["butt"]
 		
-		saynn("The eggs that are inside your "+Util.humanReadableList(stuffedHolesTexts)+" really want to come out now..")
+		saynn("Яйца, что внутри твоей "+Util.humanReadableList(stuffedHolesTexts)+" просто рвутся наружу прямо сейчас...")
 		
-		saynn("You can try clenching to hold them in.. but that requires a lot of stamina.")
+		saynn("Можно попытаться сжать мышцы, чтобы удержать их... но на это нужно много выносливости.")
 		
-		addButton("Lay eggs", "See what happens..", "start_laying_eggs")
-		addButton("Clench", "Try to hold them in!", "do_clench")
+		addButton("Отложить яйца", "Посмотреть, что будет...", "start_laying_eggs")
+		addButton("Сжать", "Попытаться удержать их!", "do_clench")
 	
 	if(state == "no_stamina_must_lay"):
 		playAnimation(StageScene.TFLook, "crotch")
 
-		saynn("You grunt and try to clench.. but you just don't have any strength left..")
-		saynn("Try as you might, you will have to lay these eggs now..")
-		addButton("Lay eggs", "See what happens..", "start_laying_eggs")
+		saynn("Ты кряхтишь и пытаешься сжаться... но сил совсем не осталось...")
+		saynn("Как бы ты ни старалась, сейчас тебе придётся отложить эти яйца...")
+		addButton("Отложить яйца", "Посмотреть, что будет...", "start_laying_eggs")
 	
 	if(state == "start_laying_eggs"):
 		playAnimation(StageScene.EggLaying, "idle", {bodyState={naked=true}})
 		
-		saynn("Carefully, you position yourself down on the floor, your legs spread..")
+		saynn("Ты осторожно опускаешься на пол, широко разведя ноги...")
 		
-		saynn("And then.. you start pushing.")
+		saynn("А затем... ты начинаешь тужиться.")
 		
-		addButton("Continue", "See what happens next", "layOne")
-		addButton("Skip", "See them all at once", "skipToEnd")
+		addButton("Продолжить", "Смотреть, что будет дальше", "layOne")
+		addButton("Пропустить", "Увидеть их все разом", "skipToEnd")
 	
 	if(state == "layOne"):
 		playAnimation(StageScene.EggLaying, "eggs", {eggQueue=eggQueue, shouldAutoFlop=false, bodyState={naked=true}})
@@ -61,18 +61,18 @@ func _run():
 			stuffedHolesTexts = ["tailhole"]
 		
 		#if(eggsToLay <= 0 ):
-		#	saynn("Sadly, somehow, nothing comes out. Weird.")
+		#	saynn("К сожалению, почему-то ничего не выходит. Странно.")
 		#elif(eggsToLay == 1):
-		saynn("You grunt and moan as a single egg slides out of your "+Util.humanReadableList(stuffedHolesTexts)+", really stretching you out in the process..")
+		saynn("Ты кряхтишь и стонешь, когда из твоей @@B*@@ выскальзывает одно яйцо"+Util.humanReadableList(stuffedHolesTexts)+", из-за чего ты чувствуешь, как тебя нещадно растягивает...")
 		#elif(eggsToLay == 2):
-		#	saynn("You grunt and moan as two eggs slide out of your "+Util.humanReadableList(stuffedHolesTexts)+", one after another, really stretching you out in the process..")
+		#	saynn("Ты кряхтишь и стонешь, когда из твоей @@B*@@ выскальзывают два яйца"+Util.humanReadableList(stuffedHolesTexts)+", одно за другим, из-за чего тебя нещадно растягивает...")
 		#else:
-		#	saynn("You grunt and moan as multiple eggs slide out of your "+Util.humanReadableList(stuffedHolesTexts)+", one after another, really stretching you out in the process..")
+		#	saynn("Ты кряхтишь и стонешь, когда из твоей @@B*@@ выскальзывает сразу несколько яиц"+Util.humanReadableList(stuffedHolesTexts)+", одно за другим, из-за чего тебя нещадно растягивает...")
 		
-		saynn("You laid "+str(eggs.size())+" egg"+("s" if eggs.size() != 1 else "")+"!")
+		saynn("Вы отложили "+str(eggs.size())+" egg"+("s" if eggs.size() != 1 else "")+"!")
 		
-		addButton("Continue", "See what happens next", "layOne")
-		addButton("Skip", "See them all at once", "skipToEnd")
+		addButton("Продолжить", "Смотреть, что будет дальше", "layOne")
+		addButton("Пропустить", "Увидеть их все разом", "skipToEnd")
 	
 	if(state == "skipToEnd"):
 		playAnimation(StageScene.EggLaying, "eggs", {eggQueue=eggQueue, shouldAutoFlop=true, bodyState={naked=true}})
@@ -85,39 +85,39 @@ func _run():
 			stuffedHolesTexts = ["tailhole"]
 		
 		if(eggsToLay <= 0 ):
-			saynn("Sadly, somehow, nothing comes out. Weird.")
+			saynn("К сожалению, почему-то ничего не выходит. Странно.")
 		elif(eggsToLay == 1):
-			saynn("You grunt and moan as a single egg slides out of your "+Util.humanReadableList(stuffedHolesTexts)+", really stretching you out in the process..")
+			saynn("Ты кряхтишь и стонешь, когда из твоей @@B*@@ выскальзывает одно яйцо"+Util.humanReadableList(stuffedHolesTexts)+", из-за чего ты чувствуешь, как тебя нещадно растягивает...")
 		elif(eggsToLay == 2):
-			saynn("You grunt and moan as two eggs slide out of your "+Util.humanReadableList(stuffedHolesTexts)+", one after another, really stretching you out in the process..")
+			saynn("Ты кряхтишь и стонешь, когда из твоей @@B*@@ выскальзывают два яйца"+Util.humanReadableList(stuffedHolesTexts)+", одно за другим, из-за чего тебя нещадно растягивает...")
 		else:
-			saynn("You grunt and moan as multiple eggs slide out of your "+Util.humanReadableList(stuffedHolesTexts)+", one after another, really stretching you out in the process..")
+			saynn("Ты кряхтишь и стонешь, когда из твоей @@B*@@ выскальзывает сразу несколько яиц"+Util.humanReadableList(stuffedHolesTexts)+", одно за другим, из-за чего тебя нещадно растягивает...")
 		
-		saynn("You ended up laying "+str(eggsToLay)+" egg"+("s" if eggsToLay != 1 else "")+"!")
+		saynn("В итоге вы отложили "+str(eggsToLay)+" egg"+("s" if eggsToLay != 1 else "")+"!")
 		
 		saynn(eggReport)
 		
-		saynn("You keep "+("it" if eggsToLay == 1 else "them")+" with you..")
+		saynn("Вы продолжаете держать "+("it" if eggsToLay == 1 else "them")+" при себе..")
 		
-		addButton("Continue", "Time to go..", "endthescene")
+		addButton("Продолжить", "Пора идти..", "endthescene")
 	
 	if(state == "doLayEnd"):
 		playAnimation(StageScene.EggLaying, "eggs", {eggQueue=eggQueue, shouldAutoFlop=true, bodyState={naked=true}})
 		
-		saynn("You ended up laying "+str(eggsToLay)+" egg"+("s" if eggsToLay != 1 else "")+"!")
+		saynn("В итоге вы отложили "+str(eggsToLay)+" egg"+("s" if eggsToLay != 1 else "")+"!")
 		
 		saynn(eggReport)
 		
-		saynn("You keep "+("it" if eggsToLay == 1 else "them")+" with you..")
+		saynn("Вы продолжаете держать "+("it" if eggsToLay == 1 else "them")+" при себе..")
 		
-		addButton("Continue", "Time to go..", "endthescene")
+		addButton("Продолжить", "Пора идти..", "endthescene")
 	
 	if(state == "after_clenching"):
 		playAnimation(StageScene.TFLook, "crotch")
 		
-		saynn("You clench as hard as you can and manage to keep the eggs inside! For now at least..")
-		saynn("You did use a lot of stamina in the process.. Maybe using something to block your holes could be a good idea.")
-		addButton("Continue", "Time to go..", "endthescene")
+		saynn("Вы сжимаетесь изо всех сил и вам удается удержать яйца внутри! По крайней мере, пока..")
+		saynn("Ты потратила уйму выносливости в этом процессе... Может, стоит использовать что-нибудь, чтобы закупорить твои дырочки? Это было бы неплохой идеей.")
+		addButton("Продолжить", "Пора идти..", "endthescene")
 	
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

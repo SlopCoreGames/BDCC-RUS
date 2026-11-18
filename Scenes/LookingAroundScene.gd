@@ -9,7 +9,7 @@ func _run():
 	if(state == ""):
 		setCharactersEasyList(GM.main.IS.getPawnIDsAt(GM.pc.getLocation()))
 		
-		saynn("Here is what's happening around you:")
+		saynn("Вот что происходит вокруг вас:")
 		addButtonAt(14, "Back", "Enough looking around", "endthescene")
 		
 		var pcLoc:String = GM.pc.getLocation()
@@ -25,11 +25,11 @@ func _run():
 			var interaction:PawnInteractionBase = pawn.getInteraction()
 			
 			if(interaction == null):
-				sayn("{pawn.name} is not doing anything.")
+				sayn("{pawn.name} ничего не делает.")
 			else:
 				sayn(interaction.getPreviewLineForPawn(pawn))
 			
-			addButton(character.getName(), "Focus your attention on this person", "focus", [pawn])
+			addButton(character.getName(), "Пристально посмотрите на этого человека", "focus", [pawn])
 		
 		pawnID = ""
 
@@ -39,18 +39,18 @@ func _run():
 		var pawn:CharacterPawn = GM.main.IS.getPawn(pawnID)
 		
 		if(pawn == null):
-			saynn("Pawn not found, sorry.")
-			#addButton("Back", "Enough spying", "")
+			saynn("Пешка не найдена, сорян.")
+			#addButton("Назад", "Хватит шпионить", "")
 			return
 			
-		addButton("Spy on", "See what they are up to", "spyon", [pawn])
+		addButton("Шпионить за", "Посмотреть, чем они заняты", "spyon", [pawn])
 			
 		var interaction:PawnInteractionBase = pawn.getInteraction()
 		if(interaction == null):
-			saynn("{pawn.name} is not doing anything right now.")
+			saynn("{pawn.name} сейчас ничего не делает.")
 			return
 		
-		#saynn("{pawn.name} is in a "+interaction.id+" interaction")
+		#saynn("{pawn.name} находится в "+interaction.id+" interaction")
 		if(interaction.getCurrentActionText() != ""):
 			saynn(interaction.getCurrentActionText())
 		

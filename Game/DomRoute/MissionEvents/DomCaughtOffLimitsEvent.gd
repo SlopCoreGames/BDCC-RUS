@@ -11,7 +11,7 @@ func run(_triggerID, _args):
 	var _charType:String = _args[1]
 	
 	if(GM.main.MS.isDoingMission("Mission4")):
-		addButton("Avy", "Let Avy handle this", "m4avy", [_npcID])
+		addButton("Эви", "Пусть Эви разберется", "m4avy", [_npcID])
 
 
 func getPriority():

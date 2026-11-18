@@ -68,7 +68,7 @@ func getTemplate():
 		},
 		{
 			type = "label",
-			text = "received facials from",
+			text = "получила смазки на лицо от @@B*@@@@T*@@@@F*@@",
 		},
 		{
 			type = "slot",

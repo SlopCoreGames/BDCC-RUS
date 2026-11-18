@@ -39,7 +39,7 @@ wrap_enabled = true
 margin_top = 664.0
 margin_right = 638.0
 margin_bottom = 690.0
-text = "Load from text"
+text = "Загрузить из текста"
 
 [node name="defaulthb" type="HBoxContainer" parent="vb"]
 margin_top = 694.0
@@ -50,7 +50,7 @@ margin_bottom = 720.0
 margin_top = 3.0
 margin_right = 132.0
 margin_bottom = 23.0
-text = "Default interest"
+text = "Интересы по умолчанию"
 
 [node name="defaultButton" type="OptionButton" parent="vb/defaulthb"]
 margin_left = 136.0

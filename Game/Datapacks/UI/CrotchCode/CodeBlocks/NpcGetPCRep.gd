@@ -34,7 +34,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Get pc rep",
+			text = "Получить репутацию игрока",
 		},
 		{
 			type = "rawselector",

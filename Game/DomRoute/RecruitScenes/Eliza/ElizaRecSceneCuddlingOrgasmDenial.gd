@@ -15,129 +15,129 @@ func _run():
 		addCharacter("eliza", ["naked"])
 		aimCameraAndSetLocName("hideout_breakroom")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("You need a little toy for this.. so you prepare one ahead of time.")
+		saynn("Для этого тебе понадобится маленькая игрушка... так что ты готовишь её заранее.")
 
-		saynn("Then, you step inside the cell and look at Eliza Quinn. She is standing still, her collar leashed to the pipe above her, preventing her from most things. She can't even sit on a chair that's here.")
+		saynn("Затем ты заходишь в камеру и смотришь на Элизу Куинн. Она стоит неподвижно; её ошейник привязан поводком к трубе над головой, что сильно ограничивает её движения. Она не может даже сесть на стоящий здесь стул.")
 
-		saynn("Her tits are still out.. and her eyes are still really angry.")
+		saynn("Её сиськи всё так же обнажены... а взгляд всё такой же яростный.")
 
 		saynn("[say=pc]"+str(ch1("...", "Hey there, Quinn.", "You look like one of us. Little slut."))+"[/say]")
 
-		saynn("[say=eliza]Grrr-r..[/say]")
+		saynn("[say=eliza]Гррр-р..[/say]")
 
-		saynn("Her tail wags annoyed. She struggles against the straitjacket, making the shiny material creak.")
+		saynn("Её хвост раздражённо виляет. Она пытается вырваться из смирительной рубашки, отчего блестящий материал начинает скрипеть.")
 
 		saynn("[say=pc]"+str(ch1("...", "Relax, slut. I'm not gonna hurt you today.", "What's the matter? Cat got your tongue?"))+"[/say]")
 
-		saynn("You walk over to the pipe and reach up to it, to loose the chain a little. Then you embrace Eliza and pull her down onto the floor!")
+		saynn("Ты подходишь к трубе и тянешься к ней, чтобы немного ослабить цепь. Затем ты обнимаешь Элизу и тянешь её вниз, на пол!")
 
-		addButton("Cuddle her", "Do the cuddles!", "do_cuddle")
+		addButton("Обнять её", "Давай обнимашки!", "do_cuddle")
 	if(state == "do_cuddle"):
 		playAnimation(StageScene.Cuddling, "idle", {pc="pc", npc="eliza"})
-		saynn("She tries to pull away but you're stronger.")
+		saynn("Она пытается вырваться, но ты сильнее.")
 
-		saynn("[say=eliza]What the hell are you doing?[/say]")
+		saynn("[say=eliza]Какого черта ты творишь?[/say]")
 
-		saynn("You wrap your arms around her, making it so there are now two sets of arms hugging her.")
+		saynn("Ты обхватываешь её руками, так что теперь её обнимают сразу две пары рук.")
 
 		saynn("[say=pc]"+str(ch1("...", "Shut up and take it, cuddle-slut.", "Shush, cuddle-slut."))+"[/say]")
 
-		saynn("She still squirms but you hold her tight. Her tail lashes angrily.")
+		saynn("Она всё ещё ерзает, но ты держишь её крепко. Её хвост гневно хлещет по сторонам.")
 
-		saynn("[say=eliza]You're wasting your time.[/say]")
+		saynn("[say=eliza]Ты просто тратишь время впустую.[/say]")
 
-		saynn("No. You got plenty of time actually. You let your hands wander a little more, sliding down her hips and sneaking between her legs. The chastity belt is there, still. You tug on it a little.")
+		saynn("Как бы не так. На самом деле у тебя полно времени. Ты позволяешь своим рукам блуждать чуть смелее, спускаясь к её бедрам и проскальзывая между ног. Пояс целомудрия всё ещё на месте. Ты слегка тянешь за него.")
 
-		saynn("[say=eliza]It's very cute of you to put this thing on me. It won't break me, obviously.[/say]")
+		saynn("[say=eliza]Очень мило с твоей стороны надеть на меня эту штуковину. Но она меня явно не сломит.[/say]")
 
-		saynn("That's okay, the belt is only there because it was on Kait previously.")
+		saynn("Ничего страшного, пояс здесь только потому, что до неё его носила Кейт.")
 
-		saynn("You pull out the thing that you prepared. A little pink egg-shaped vibrator. Before the feline has time to react to it, you bring it down to the belt and press it into the slit between her crotch and the cold metal. There was just enough space to slip it in.")
+		saynn("Ты достаёшь заготовленную вещь. Маленький розовый вибратор в форме яйца. Прежде чем кошка успевает среагировать, ты подносишь его к поясу и вдавливаешь в щель между её промежностью и холодным металлом. Пространства как раз хватило, чтобы просунуть его внутрь.")
 
-		saynn("The toy is now pressed tightly against her clit, trapped under the chastity belt.")
+		saynn("Игрушка теперь плотно прижата к её клитору, зажатая под девственной поясной.")
 
-		saynn("[say=eliza]Wow. Such a royal treatment.[/say]")
+		saynn("[say=eliza]Ого. Какой королевский прием.[/say]")
 
 		saynn("[say=pc]"+str(ch1("...", "Shhh. Just relax and enjoy it, slut.", "Yeah, you don't deserve it. Now shut up and enjoy it."))+"[/say]")
 
-		saynn("You use a little remote to turn the vibrator on. The low rumbly noise quickly fills the cell.")
+		saynn("Ты используешь маленький пульт, чтобы включить вибратор. Низкий рокочущий звук быстро заполняет камеру.")
 
-		saynn("[say=eliza]Mmh..[/say]")
+		saynn("[say=eliza]Ммм..[/say]")
 
-		saynn("You've set it to a low mode.. just teasing the cat. Your hands return to hugging the feline, your palms cover her exposed breasts and gently knead them.")
+		saynn("Ты выставил низкий режим... просто дразнишь кошечку. Твои руки возвращаются к объятиям, ладони накрывают её обнаженную грудь и мягко разминают её.")
 
-		saynn("The vibrations.. coupled with your hands.. make Eliza bite her lip. Her breathing gets a little deeper.")
+		saynn("Вибрация... в сочетании с твоими руками... заставляет Элизу закусить губу. Её дыхание становится чуть глубже.")
 
 		saynn("[say=pc]"+str(ch1("...", "Feel that? Good.", "You've been quiet, little pillow."))+"[/say]")
 
-		saynn("[say=eliza]Mhhm.. Toys feel good, what can I say..[/say]")
+		saynn("[say=eliza]Мхмм.. Игрушки — это приятно, что тут скажешь..[/say]")
 
-		saynn("She just earned a pinch of her nips.")
+		saynn("Она только что заслужила легкий щипок за соски.")
 
-		saynn("[say=eliza]h.. fuck you~.[/say]")
+		saynn("[say=eliza]х.. да пошел ты~.[/say]")
 
-		saynn("She is trying to stay still, trying to avoid giving you any satisfaction. So you turn the dial up, making the toy vibrate louder.")
+		saynn("Она старается не шевелиться, пытаясь не давать тебе никакого удовлетворения. Поэтому ты выкручиваешь регулятор на максимум, заставляя игрушку вибрировать громче.")
 
-		saynn("[say=eliza]H..h..ng-..[/say]")
+		saynn("[say=eliza]Х..х..мм..[/say]")
 
-		saynn("She bites her lip again, trying to keep quiet. You notice small, subtle movements of her hips.. like she is trying to press the chastity belt against the floor so she can grind against the toy.")
+		saynn("Она снова прикусывает губу, стараясь не издавать ни звука. Ты замечаешь едва уловимые движения её бёдер... будто она пытается прижать девайс к полу, чтобы сильнее тереться о него.")
 
 		saynn("[say=pc]"+str(ch1("...", "Let it out, slut. I want to hear you.", "You're holding back so hard. Cute. And pathetic."))+"[/say]")
 
-		saynn("Eliza is visibly twitching more and more.. her nips have gotten fully stiff under your palms. The scent of a horny feline is reaching your nose now.")
+		saynn("Элизу всё сильнее бьёт дрожь... её соски под твоими ладонями стали совсем твёрдыми. До твоего носа уже доносится этот сладковатый запах возбуждённой кошки.")
 
-		saynn("If she is gonna play that game.. might as well increase the pressure.")
+		saynn("Раз уж она решила в это играть... стоит поддать жару.")
 
-		addButton("Continue", "See what happens next", "toy_full_speed")
+		addButton("Продолжить", "Смотреть, что будет дальше", "toy_full_speed")
 	if(state == "toy_full_speed"):
 		playAnimation(StageScene.Cuddling, "squirm", {pc="pc", npc="eliza"})
-		saynn("You turn the toy's strength to its max. Loud, high-pitched vibrations begin spreading from Eliza's crotch.")
+		saynn("Ты выкручиваешь мощность игрушки на максимум. Громкая, высокочастотная вибрация начинает разноситься прямо из промежности Элизы.")
 
-		saynn("[say=eliza]Mhh-hh.. nhh~..[/say]")
+		saynn("[say=eliza]Ммм-хх.. нхх~..[/say]")
 
-		saynn("She throws her head back and lets out a breathy sigh. You can feel the tension building in her body, Eliza is now squirming in your hands, her breathing turning into short, sharp gasps.")
+		saynn("Она запрокидывает голову и издаёт прерывистый вздох. Ты чувствуешь, как напряжение в её теле нарастает; Элиза начинает извиваться в твоих руках, а её дыхание превращается в короткие, резкие всхлипы.")
 
-		saynn("[say=eliza]Mhh.. hh-..[/say]")
+		saynn("[say=eliza]М-мм... хх-...[/say]")
 
-		saynn("You can feel it.. she is getting close.")
+		saynn("Ты чувствуешь это... она уже на грани.")
 
 		saynn("[say=pc]"+str(ch1("...", "You gonna cum, slut? Gonna cum from just a little toy?", "You gonna cum, little worthless slut?"))+"[/say]")
 
-		saynn("Right when you feel like she has reached the edge.. you decide that it's time.")
+		saynn("Как раз в тот момент, когда кажется, что она вот-вот сорвётся в оргазм... ты решаешь, что пора.")
 
-		saynn("You turn the little toy off, completely.")
+		saynn("Ты полностью выключаешь игрушку.")
 
-		saynn("[say=eliza]Mhh.. w-wow.. Really? Ah..[/say]")
+		saynn("[say=eliza]Ммм.. в-вау.. Серьезно? Аах..[/say]")
 
-		saynn("She is still squirming against you, the straitjacket keeping her completely helpless. You hold her tight as she lets out noises of frustration.")
+		saynn("Она всё еще извивается в твоих руках, а смирительная рубашка делает её совершенно беспомощной. Ты крепко прижимаешь её к себе, пока она издает звуки разочарования.")
 
-		saynn("[say=eliza]You couldn't.. mhh.. hold it for a second longer?..[/say]")
+		saynn("[say=eliza]Ты не смогла.. ммх.. продержаться еще хоть секундочку?..[/say]")
 
 		saynn("[say=pc]"+str(ch1("Submit.", "If you wanna cum, you have to submit. Easy.", "You want to cum? You have to earn it. Start by submitting."))+"[/say]")
 
-		saynn("Her whole body is trembling, you can feel the heat radiating from her.")
+		saynn("Всё её тело дрожит, ты буквально чувствуешь исходящий от неё жар.")
 
-		saynn("Eliza is silent for a moment.. then.. she chuckles softly..")
+		saynn("Элиза на мгновение замолкает.. а затем.. тихонько посмеивается..")
 
-		saynn("[say=eliza]The thing is.. mhh.. I find orgasm denial extremely hot.. Hah..[/say]")
+		saynn("[say=eliza]Дело в том.. ммх.. что оргазменное сдерживание кажется мне чертовски сексуальным.. Хах..[/say]")
 
-		saynn("She is rubbing her thighs against each other, her lips producing little moans.")
+		saynn("Она трет бедра друг о друга, и с её губ срываются тихие стоны.")
 
-		saynn("[say=eliza]Stealing someone's pleasure.. getting them so close.. mhh.. just to ruin it all.. I love that.. hah..[/say]")
+		saynn("[say=eliza]Красть чье-то удовольствие.. доводить их до самого предела.. ммх.. только чтобы всё испортить.. Обожаю это.. хах..[/say]")
 
-		saynn("You're not touching her at all.. and yet.. her whole body is still tense. She closes her eyes.")
+		saynn("Ты её совсем не касаешься.. и всё же.. всё её тело напряжено. Она закрывает глаза.")
 
-		saynn("[say=eliza]Ah.. ahh.. yes.. yess~..[/say]")
+		saynn("[say=eliza]Ах.. ахх.. да.. даа~..[/say]")
 
-		saynn("She arches her back.. A long, cute moan escapes her as she suddenly cums.. Her whole body squirms against your hands.. and the straitjacket.. a little puddle of her juices collecting underneath the chastity belt.")
+		saynn("Она выгибает спину.. Длинный, милый стон вырывается из её груди, когда она внезапно кончает.. Всё её тело извивается в твоих руках.. и в смирительной рубашке.. а под поясом целомудрия начинает собираться маленькая лужица её соков.")
 
-		saynn("[say=eliza]That felt good~.[/say]")
+		saynn("[say=eliza]Было так приятно~.[/say]")
 
-		saynn("What a bitch.")
+		saynn("Ну и сука.")
 
-		saynn("You pull the pink toy away from her clit.. and leave her be in the cell.")
+		saynn("Ты убираешь розовую игрушку от её клитора... и оставляешь её одну в камере.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

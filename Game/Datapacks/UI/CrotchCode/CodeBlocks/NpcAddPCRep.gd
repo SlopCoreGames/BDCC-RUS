@@ -39,7 +39,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Add pc rep",
+			text = "Добавить репутацию ПК",
 		},
 		{
 			type = "slot",

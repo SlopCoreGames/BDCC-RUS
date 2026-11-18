@@ -1,7 +1,7 @@
 extends SkinBase
 class_name DatapackSkin
 
-var name:String = "New skin"
+var name:String = "Новый скин"
 var skinImage:DatapackImage = DatapackImage.new()
 var skinTypeWeights:Dictionary = {}
 
@@ -20,17 +20,17 @@ func getFittingSkinTypes():
 func getEditVars():
 	return {
 		"name": {
-			name = "Name",
+			name = "Имя",
 			type = "string",
 			value = name,
 		},
 		"skinImage": {
-			name = "Skin",
+			name = "Кожа",
 			type = "image",
 			value = skinImage.getImage(),
 		},
 		"skinTypeWeights": {
-			name = "Skin type weights (0 = never, 1.0 = normal, >1.0 = more often)",
+			name = "Веса типа кожи (0 = никогда, 1.0 = нормально, >1.0 = чаще)",
 			type = "skinTypeWeights",
 			value = skinTypeWeights,
 		},

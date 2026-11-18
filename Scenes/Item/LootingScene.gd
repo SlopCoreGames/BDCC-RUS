@@ -41,27 +41,27 @@ func _run():
 			var _ok2 = inventory.connect("onInteractWith", self, "onInventoryItemInteracted")
 			
 			if(savedCredits > 0 || !inv.isEmpty()):
-				addButton("Take all", "Take everything and leave", "grabAllAndLeave")
+				addButton("Забрать всё", "Забрать всё и уйти", "grabAllAndLeave")
 		else:
-			saynn("Choose what do you wanna take")
+			saynn("Выбрать, что взять")
 			
 			if(savedCredits == 0 && inv.getItems().size() == 0):
-				sayn("You found:")
-				sayn("Nothing left")
+				sayn("Вы нашли:")
+				sayn("Ничего не осталось")
 			else:
-				addButton("Take all", "Take everything and leave", "grabAllAndLeave")
+				addButton("Забрать всё", "Забрать всё и уйти", "grabAllAndLeave")
 				
-				sayn("You found:")
+				sayn("Вы нашли:")
 				if(savedCredits > 0):
 					sayn("- "+str(savedCredits)+" "+Util.multipleOrSingularEnding(savedCredits, "credit"))
 					
-					addButton(str(savedCredits)+" "+Util.multipleOrSingularEnding(savedCredits, "credit"), "Grab the credits", "grabCredits")
+					addButton(str(savedCredits)+" "+Util.multipleOrSingularEnding(savedCredits, "credit"), "Сгрести кредиты", "grabCredits")
 				for item in inv.getItems():
 					sayn("- "+item.getStackName())
 					
 					addButton(item.getStackName(), item.getVisisbleDescription(), "grabItem", [item.getUniqueID()])
 			
-		addButton("Leave", "You don't want anything else", "endthescene")
+		addButton("Уйти", "Больше ничего не нужно", "endthescene")
 		
 func _react(_action: String, _args):
 	if(_action == "grabAllAndLeave"):

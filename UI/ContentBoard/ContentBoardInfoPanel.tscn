@@ -122,7 +122,7 @@ margin_top = 8.0
 margin_right = 354.0
 margin_bottom = 40.0
 custom_fonts/font = SubResource( 7 )
-text = "CONTENT NAME"
+text = "НАЗВАНИЕ КОНТЕНТА"
 align = 1
 valign = 1
 autowrap = true
@@ -142,7 +142,7 @@ margin_bottom = 53.0
 [node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/PanelContainer2/VBoxContainer"]
 margin_right = 350.0
 margin_bottom = 20.0
-text = "Description"
+text = "Описание"
 align = 1
 
 [node name="DescLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/PanelContainer2/VBoxContainer"]
@@ -169,7 +169,7 @@ margin_bottom = 53.0
 [node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/KinksPanel/VBoxContainer"]
 margin_right = 350.0
 margin_bottom = 20.0
-text = "Involved kinks"
+text = "Задействованные кинки"
 align = 1
 
 [node name="KinksLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/KinksPanel/VBoxContainer"]
@@ -196,7 +196,7 @@ margin_bottom = 53.0
 [node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/ConditionsContainer/VBoxContainer"]
 margin_right = 350.0
 margin_bottom = 20.0
-text = "Start conditions"
+text = "Условия начала"
 align = 1
 
 [node name="CondLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/ConditionsContainer/VBoxContainer"]
@@ -223,7 +223,7 @@ margin_bottom = 53.0
 [node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HowToProgressContainer/VBoxContainer"]
 margin_right = 350.0
 margin_bottom = 20.0
-text = "How to progress"
+text = "Как прогрессировать"
 align = 1
 
 [node name="ProgressLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/HowToProgressContainer/VBoxContainer"]
@@ -248,7 +248,7 @@ margin_right = 350.0
 margin_bottom = 40.0
 custom_colors/font_color = Color( 0, 1, 0, 1 )
 custom_fonts/font = SubResource( 15 )
-text = "Completed!"
+text = "Готово!"
 align = 1
 
 [node name="CloseButton" type="Button" parent="VBoxContainer"]
@@ -256,7 +256,7 @@ margin_top = 652.0
 margin_right = 358.0
 margin_bottom = 696.0
 rect_min_size = Vector2( 0, 44 )
-text = "Close"
+text = "Закрыть"
 
 [connection signal="meta_clicked" from="VBoxContainer/ScrollContainer/VBoxContainer/PanelContainer2/VBoxContainer/DescLabel" to="." method="_on_DescLabel_meta_clicked"]
 [connection signal="pressed" from="VBoxContainer/CloseButton" to="." method="_on_CloseButton_pressed"]

@@ -18,7 +18,7 @@ margin_left = 30.0
 margin_right = 1250.0
 margin_bottom = 720.0
 size_flags_horizontal = 3
-text = "Pick"
+text = "Выбрать"
 
 [node name="Label2" type="Label" parent="." index="2"]
 margin_left = 1254.0

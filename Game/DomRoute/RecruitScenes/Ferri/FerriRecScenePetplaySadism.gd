@@ -12,175 +12,175 @@ func _run():
 		addCharacter("ferri", ["naked"])
 		aimCameraAndSetLocName("hideout_breakroom")
 		playAnimation(StageScene.Duo, "stand", {npc="ferri", npcBodyState={naked=true}})
-		saynn("You need a particular thing and Kait offers to quickly make a make-shift version of it. Seems good enough.")
+		saynn("Тебе нужна одна вещь, и Кейт предлагает быстро соорудить её импровизированную версию. Вроде бы сойдет.")
 
-		saynn("Then.. you open the cell's door and step inside, holding a new fancy multi-tailed whip in your hand. It was made out of many braided wires, twisted together at the handle, each tip ending with a small knot. It's fairly big for cat o' nine tails whips.. almost a meter long.")
+		saynn("Затем... ты открываешь дверь камеры и входишь внутрь, сжимая в руке новый шикарный многохвостый кнут. Он сделан из множества сплетенных проволок, скрученных у рукояти, и на каждом конце — маленький узел. Для девятихвостки он довольно велик... почти метр в длину.")
 
-		saynn("Ferri looks up at you, her wrists still cuffed, her face still muzzled. Her cyan eyes narrow.")
+		saynn("Ферри смотрит на тебя снизу вверх; её запястья всё ещё в наручниках, а на мордочке — намордник. Её голубые глаза сужаются.")
 
-		saynn("[say=ferri]Took you long enough, meanie. Came to let me go finally?[/say]")
+		saynn("[say=ferri]Долго же ты копался, злюка. Наконец-то пришел меня выпустить?[/say]")
 
-		saynn("You hold up the whip.")
+		saynn("Ты поднимаешь кнут вверх.")
 
 		saynn("[say=pc]"+str(ch1("No. I came to train you.", "No, slut. I came to break you.", "No, you stupid bitch. I came to make you my pet."))+"[/say]")
 
-		saynn("Her tail slams against the floor, her big fangs click against the basket of the muzzle.")
+		saynn("Её хвост с силой хлопает по полу, а клыки цокают о корзину намордника.")
 
-		saynn("[say=ferri]Mew.. you wish. I'm not some slave you can just..[/say]")
+		saynn("[say=ferri]Мяу... мечтай больше. Я тебе не какая-нибудь рабыня, которую можно просто...[/say]")
 
-		saynn("You approach and crack the whip against the wall, not that far away from Ferri's thigh. She flinches when you do that.")
+		saynn("Ты подходишь ближе и хлестаешь кнутом по стене совсем рядом с бедром Ферри. От этого звука она вздрагивает.")
 
 		saynn("[say=pc]"+str(ch1("Kneel. Now.", "On your knees, whore.", "Kneel before I stripe that pretty blue fur red."))+"[/say]")
 
-		saynn("[say=ferri]Make me![/say]")
+		saynn("[say=ferri]Ну же, попробуй![/say]")
 
-		addButton("Continue", "See what happens next", "grab_leash")
+		addButton("Продолжить", "Смотреть, что будет дальше", "grab_leash")
 	if(state == "grab_leash"):
 		playAnimation(StageScene.Duo, "stand", {npc="ferri", npcAction="hurt", npcBodyState={naked=true, leashedBy="pc"}})
-		saynn("You grab her leash and yank, pulling her away from the wall.. while your hand delivers a strike! Ferri yelps as the whip comes down across her bare ass.")
+		saynn("Ты хватаешь её за поводок и резко дергаешь, отрывая её от стены... и в этот же миг наносишь удар! Ферри взвизгивает, когда кнут опускается на её голую задницу.")
 
-		saynn("[say=ferri]Eep![/say]")
+		saynn("[say=ferri]Ик![/say]")
 
-		saynn("Her whole body tenses, a few small lines appear on her butt.")
+		saynn("Всё её тело напрягается, на ягодицах проступают мелкие складки.")
 
 		saynn("[say=pc]"+str(ch1("I said kneel. Not hard.", "Kneel, bitch. Or the next one's on your tits.", "You're going to learn. One whip strike at a time."))+"[/say]")
 
-		addButton("Continue", "See what happens next", "ferri_kneels")
+		addButton("Продолжить", "Смотреть, что будет дальше", "ferri_kneels")
 	if(state == "ferri_kneels"):
 		playAnimation(StageScene.Duo, "stand", {npc="ferri", npcAction="kneel", npcBodyState={naked=true, leashedBy="pc"}})
-		saynn("Ferri glares at you.. but her knees begin to bend. Slowly, she lowers herself down to the cold floor before you, her cuffed hands still pressing against her back.")
+		saynn("Ферри свирепо смотрит на тебя... но её колени начинают подгибаться. Медленно она опускается на холодный пол перед тобой, всё ещё прижимая скованные руки к спине.")
 
-		saynn("[say=ferri]..mow.. fine.[/say]")
+		saynn("[say=ferri]..ладно.. хорошо.[/say]")
 
 		saynn("[say=pc]"+str(ch1("Good. Now hold still.", "That's better. Stay.", "Look at you. Already learning your place."))+"[/say]")
 
-		saynn("You crouch and unlock her wrist cuffs, letting her arms fall to her sides while the metal clatters to the floor.")
+		saynn("Ты приседаешь и отпираешь наручники, позволяя её рукам упасть вдоль тела, пока металл с лязгом падает на пол.")
 
-		saynn("[say=ferri]Mew?..[/say]")
+		saynn("[say=ferri]Мяу?..[/say]")
 
 		saynn("[say=pc]"+str(ch1("Get on all fours. Like a puppy.", "Get on all fours. You're going to be my slutty pup.", "Get on all fours, you worthless."))+"[/say]")
 
-		saynn("Ferri rubs her wrists, her tail curling around her hip.")
+		saynn("Ферри потирает запястья, её хвост обвивается вокруг бедра.")
 
-		saynn("[say=ferri]And if I don't?[/say]")
+		saynn("[say=ferri]А если не захочу?[/say]")
 
-		saynn("You answer with another strike. This one lands across her back. She yelps and pushes her chest forward.")
+		saynn("Ты отвечаешь очередным ударом. Этот приходится ей по спине. Она взвизгивает и выпячивает грудь вперед.")
 
 		saynn("[say=pc]"+str(ch1("Then I keep hitting you until you do.", "Then you get the whip until you can't stand. Your choice.", "Then you bleed. Simple."))+"[/say]")
 
-		saynn("Ferri's ears flatten..")
+		saynn("Уши Ферри прижимаются к голове...")
 
-		addButton("Continue", "See what happens next..", "ferri_allfours")
+		addButton("Продолжить", "Смотри, что будет дальше...", "ferri_allfours")
 	if(state == "ferri_allfours"):
 		playAnimation(StageScene.Duo, "stand", {npc="ferri", npcAction="allfours", npcBodyState={naked=true, leashedBy="pc"}})
-		saynn("She plants her palms on the floor and slowly gets on all fours, her breasts hanging down now, swaying as she positions herself a little better.")
+		saynn("Она упирается ладонями в пол и медленно встает на четвереньки; её грудь теперь свисает вниз, покачиваясь, пока она устраивается поудобнее.")
 
-		saynn("[say=ferri]Mrow.. happy now?[/say]")
+		saynn("[say=ferri]Мррр... теперь доволен?[/say]")
 
-		saynn("Her tone isn't nice enough so you give her butt another smack with the whip, the many knots digging themselves into her fur and leaving lots of marks on her soft cheeks.")
+		saynn("Её тон кажется недостаточно ласковым, поэтому ты снова хлестаешь её по заднице хлыстом; многочисленные узлы впиваются в мех, оставляя множество следов на её мягких щечках.")
 
-		saynn("[say=ferri]Huff..[/say]")
+		saynn("[say=ferri]Хафф...[/say]")
 
 		saynn("[say=pc]"+str(ch1("I'll be happy when you're a drooling mess. Crawl behind me, pup.", "Crawl behind me, slut.", "I'll be happy when you're nothing but a drooling mess. Crawl."))+"[/say]")
 
-		saynn("You tug on the leash.. and watch as she follows, one step at a time. You walk her in a slow circle around the cell, her tail lagging behind her.")
+		saynn("Ты тянешь за поводок... и наблюдаешь, как она следует за тобой, шаг за шагом. Ты водишь её медленными кругами по камере, а её хвост волочится позади.")
 
-		saynn("You decide to give her another strike on her butt, really making it sting.")
+		saynn("Ты решаешь нанести еще один удар по её заднице, чтобы она по-настоящему зажгло.")
 
-		saynn("[say=ferri]Hff! I did as told.. Meanie..[/say]")
+		saynn("[say=ferri]Хфф! Я сделала, как велели... Вреднюга...[/say]")
 
-		saynn("Another whip strike happens again, Ferri's butt getting quite red. She squirms and arches her back, struggling to contain the pain.")
+		saynn("Снова раздается удар хлыста, и задница Ферри заметно краснеет. Она ерзает и выгибает спину, пытаясь сдержать боль.")
 
-		saynn("[say=ferri]Eep.. huff-f..[/say]")
+		saynn("[say=ferri]Иик... хафф-ф...[/say]")
 
-		saynn("You walk around the cell some more with her, from one side to another. That's when Ferri decides to say something.")
+		saynn("Ты продолжаешь ходить с ней по камере из угла в угол. И именно в этот момент Ферри решает что-то сказать.")
 
-		saynn("[say=ferri]You hit like a kitten, you know..[/say]")
+		saynn("[say=ferri]Ты бьешь как кошечка, знаешь ли..[/say]")
 
-		saynn("[say=pc]Kitten, huh. We can get you a kitten.[/say]")
+		saynn("[say=pc]Кошечка, значит? Мы можем тебе кошечку устроить.[/say]")
 
-		saynn("You step out of the cell, Ferri on a leash. Kait is standing near.")
+		saynn("Вы выходите из камеры, Ферри на поводке. Кейт стоит неподалеку.")
 
-		addButton("Kait", "Let Kait do some stuff with Ferri", "let_kait")
+		addButton("Кейт", "Дать Кейт немного поиграть с Ферри", "let_kait")
 	if(state == "let_kait"):
 		addCharacter("kait")
 		playAnimation(StageScene.Spanking, "fast", {pc="kait", npc="ferri", npcBodyState={naked=true, hard=true}})
 		aimCameraAndSetLocName("hideout_near_break_room")
-		saynn("[say=kait]Aww, what a cute puppy! Is she broken yet?[/say]")
+		saynn("[say=kait]Оу, какой милый щеночек! Она уже сломалась?[/say]")
 
-		saynn("[say=pc]Not yet. She said I hit like a kitten.[/say]")
+		saynn("[say=pc]Еще нет. Она сказала, что я бью как кошечка.[/say]")
 
-		saynn("[say=kait]Hah! Let me try.[/say]")
+		saynn("[say=kait]Ха! Дай-ка я попробую.[/say]")
 
-		saynn("Kait sits behind Ferri and gropes that fluff butt of hers.")
+		saynn("Кейт садится позади Ферри и начинает тискать её пушистую задницу.")
 
-		saynn("[say=ferri]Mew..[/say]")
+		saynn("[say=ferri]Мяу..[/say]")
 
-		saynn("Suddenly.. Three quick strikes in a row against her rump. Ferri squeaks, her front paws slipping a bit. Her tail moves out of the way, giving you and Kait a clear view of her wet cyan pussy.")
+		saynn("Внезапно.. три быстрых удара подряд по её ягодицам. Ферри пискнула, её передние лапы слегка разъехались. Хвост убирается в сторону, открывая тебе и Кейт четкий вид на её мокрую голубую киску.")
 
-		saynn("[say=ferri]Mnn.. you can do harder than that.. mew..[/say]")
+		saynn("[say=ferri]Ммм.. можешь и посильнее.. мяу..[/say]")
 
-		saynn("[say=kait]Aww, adorable.[/say]")
+		saynn("[say=kait]Оу, прелесть какая.[/say]")
 
-		saynn("She fetches the whip from you and uses that instead, whipping the dracat's ass again and again, each one making Ferri moan into the basket muzzle.")
+		saynn("Она забирает у тебя хлыст и использует его, раз за разом стегая драката по заднице; от каждого удара Ферри стонет в корзинном наморднике.")
 
-		saynn("[say=kait]Better?[/say]")
+		saynn("[say=kait]Так лучше?[/say]")
 
-		saynn("[say=ferri]..yes.. mew..[/say]")
+		saynn("[say=ferri]..да.. мяу..[/say]")
 
-		saynn("While Kait is hitting Ferri's rear, you crouch beside her and smack her tits instead, sending them to jiggle beneath her.")
+		saynn("Пока Кейт лупит Ферри по заднице, ты приседаешь рядом и вместо этого шлепаешь её по сиськам, заставляя их забавно колыхаться.")
 
-		saynn("[say=ferri]Eep.. nyah..[/say]")
+		saynn("[say=ferri]Иик.. ня..[/say]")
 
-		saynn("Poor dracat is getting double-teamed.. but she doesn't seem to mind. Her slit is dripping onto the floor, her butt fully exposed, just like her breasts.")
+		saynn("Бедная дракат попала под двойной напор... но, кажется, ей не привыкать. Её щелочка сочит сок прямо на пол, а задница и грудь полностью выставлены на обозрение.")
 
 		saynn("[say=pc]"+str(ch1("Look at you. Begging for it with your whole body.", "You're getting really horny from this, aren't you, slut?", "Dumb puppy. Your cunt is dripping."))+"[/say]")
 
-		saynn("[say=ferri]Don't stare so much.. ah.. meanies..[/say]")
+		saynn("[say=ferri]Не пяльтесь так сильно.. ах.. вредины..[/say]")
 
-		saynn("[say=kait]I will stare as long as I want to~.[/say]")
+		saynn("[say=kait]Буду пялиться столько, сколько захочу~.[/say]")
 
-		saynn("You fetch the whip back from Kait and deliver more hits all over her body.. her back receives a few fancy red stripes.. just like her tits and thighs.")
+		saynn("Ты забираешь хлыст обратно у Кейт и наносишь новые удары по всему её телу... на спине остаются изящные красные полосы... прямо как на сиськах и бедрах.")
 
-		saynn("[say=ferri]I will bite chu all.. nyaa-ah..[/say]")
+		saynn("[say=ferri]Я тебя укушу... ня-а-а...[/say]")
 
-		saynn("Her pussy receives a soft impact as well, the many knots of the braided wires stinging the sensitive bits. Ferri's hips back as she lets out a whine.")
+		saynn("Её киску тоже настигает мягкий удар: многочисленные узлы плетёного провода покалывают чувствительные места. Ферри откидывает бёдра назад, издавая жалобный скулёж.")
 
-		saynn("[say=ferri]Nhh.. m-mew..[/say]")
+		saynn("[say=ferri]Нхх... м-мяу...[/say]")
 
-		saynn("She flops onto the floor.")
+		saynn("Она мешком валится на пол.")
 
-		saynn("[say=kait]Aw, I think you broke the poor puppy.[/say]")
+		saynn("[say=kait]Ой, кажется, ты сломал бедную собачку.[/say]")
 
-		saynn("[say=ferri]Woof..[/say]")
+		saynn("[say=ferri]Гав..[/say]")
 
 		saynn("[say=pc]"+str(ch1("I think she enjoyed it.", "That bitch deserved it.", "Good. This animal deserves it."))+"[/say]")
 
-		saynn("Kait gives Ferri some pats on her head.. before you take her back into the cell.")
+		saynn("Кейт несколько раз похлопывает Ферри по голове... прежде чем ты забираешь её обратно в камеру.")
 
-		addButton("Continue", "See what happens next", "ferri_back_cuffed")
+		addButton("Продолжить", "Смотреть, что будет дальше", "ferri_back_cuffed")
 	if(state == "ferri_back_cuffed"):
 		removeCharacter("kait")
 		playAnimation(StageScene.Duo, "stand", {npc="ferri", npcBodyState={naked=true}})
-		saynn("You get Ferri back into the cell and put the cuffs back onto her paws, just for safety. Her chest is still rising and falling, her eyes looking a little spaced out.")
+		saynn("Ты возвращаешь Ферри в камеру и для безопасности снова надеваешь наручники на её лапки. Её грудь всё ещё часто вздымается, а взгляд кажется немного отсутствующим.")
 
-		saynn("[say=ferri]Mean.. mew..[/say]")
+		saynn("[say=ferri]Вредный... мяу...[/say]")
 
-		saynn("You give her butt one last smack with the whip.")
+		saynn("Ты даёшь ей последний шлепок хлыстом по заднице.")
 
-		saynn("[say=ferri]Eeep..[/say]")
+		saynn("[say=ferri]Ииик!..[/say]")
 
 		saynn("[say=pc]"+str(ch1("Good puppy.", "Sweet little slut.", "Worthless stupid whore."))+"[/say]")
 
 		if (success):
-			saynn("She purrs.")
+			saynn("Она мурлычет.")
 
 		else:
-			saynn("She huffs.")
+			saynn("Она фыркает.")
 
-		saynn("You step out.")
+		saynn("Ты выходишь наружу.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

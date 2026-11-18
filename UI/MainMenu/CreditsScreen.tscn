@@ -49,7 +49,7 @@ margin_right = 1268.0
 margin_bottom = 45.0
 bbcode_enabled = true
 bbcode_text = "Credits"
-text = "Credits"
+text = "Титры"
 fit_content_height = true
 
 [node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/ScrollVBox"]
@@ -93,30 +93,7 @@ Thank you [url=https://www.furaffinity.net/user/mekyro][color=#D375FF]Mekyro[/co
 
 Thanks to [url=https://godotengine.org/][color=#0059FF]Godot team[/color][/url] for creating the engine that this game is running on
 [/center]"
-text = "This game is very early in its development. If you are reading this - thank you!
-
-Project started by Rahi aka Alexofp on 01.08.2021
-Active development began on 28.12.2021
-
-Huge thanks to Ferri for playtesting the earliest versions and supporting me <3
-Thanks to Mekyro for creating RRDC, the inspiration of this game
-Thanks to Jacki Northstar for letting me use her character
-Thanks to Nova Dawfort for letting me use her character ^^
-Thanks to Sompurr for letting me use Socket and her art
-Thanks to Artica for letting me use her character
-Thanks to Nuxta Kidlat for letting me use her character
-
-RRDC (Red Rock Detention Center) is a place in second life,
-please check it out if you like roleplaying, it's amazing!
-Without it, this game wouldn't exist.
-The whole concept of a kinky sci-fi prison that has multiple types of
-inmates and staff co-existing together came from RRDC.
-I took that concept in its entirety and filled it with the stories of
-my characters (and made a game out of it).
-Thank you Mekyro! I'm sorry for being such a silly cat.
-
-Thanks to Godot team for creating the engine that this game is running on
-"
+text = "Эта игра находится на очень ранней стадии разработки. Если вы это читаете — спасибо!\n\nПроект запущен Rahi (он же Alexofp) 01.08.2021\nАктивная разработка началась 28.12.2021\n\nОгромное спасибо Ferri за тестирование самых первых версий и поддержку <3\nСпасибо Mekyro за создание RRDC — источника вдохновения этой игры\nСпасибо Jacki Northstar за разрешение использовать её персонажа\nСпасибо Nova Dawfort за разрешение использовать её персонажа ^^\nСпасибо Sompurr за разрешение использовать Socket и её арты\nСпасибо Artica за разрешение использовать её персонажа\nСпасибо Nuxta Kidlat за разрешение использовать её персонажа\n\nRRDC (Red Rock Detention Center) — это место во второй жизни,\nзагляните туда, если любите ролевые игры, это потрясающе!\nБез него этой игры бы не существовало.\nСама концепция кинки-фантастической тюрьмы, где сосуществуют самые разные\nтипы заключённых и персонала, пришла из RRDC.\nЯ взял эту концепцию целиком и наполнил её историями\nсвоих персонажей (и превратил это в игру).\nСпасибо, Mekyro! Прости, что я такая глупая кошка.\n\nСпасибо команде Godot за создание движка, на котором работает эта игра\n"
 fit_content_height = true
 
 [node name="ContributorsLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/ScrollVBox/ContentContainer"]
@@ -139,11 +116,7 @@ The game uses some icons from [url=https://game-icons.net/]game-icons.net[/url] 
 
 Thanks to everyone else who I probably forgot..
 [/center]"
-text = "
-The game uses some icons from game-icons.net and flaticon.com
-
-Thanks to everyone else who I probably forgot..
-"
+text = "\nВ игре используются некоторые иконки с сайтов game-icons.net и flaticon.com\n\nСпасибо всем остальным, кого я, вероятно, забыл...\n"
 fit_content_height = true
 
 [node name="DonationsLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/ScrollVBox/ContentContainer"]
@@ -166,7 +139,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 256.0
 margin_bottom = 26.0
-text = "Close"
+text = "Закрыть"
 myTooltipDesc = "Close this screen"
 myShortcutKey = "1"
 
@@ -176,7 +149,7 @@ anchor_bottom = 0.0
 margin_left = 260.0
 margin_right = 515.0
 margin_bottom = 26.0
-text = "Support Rahi"
+text = "Поддержать Rahi"
 myTooltipDesc = "Open Rahi's subscribestar"
 myShortcutKey = "2"
 

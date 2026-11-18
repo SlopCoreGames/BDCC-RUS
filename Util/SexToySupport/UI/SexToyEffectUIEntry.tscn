@@ -41,7 +41,7 @@ unique_name_in_owner = true
 margin_top = 3.0
 margin_right = 56.0
 margin_bottom = 17.0
-text = "Effect #1"
+text = "Эффект №1"
 
 [node name="Control" type="Control" parent="SexToyEffectVBox/HBoxContainer3"]
 margin_left = 60.0
@@ -54,14 +54,14 @@ margin_left = 834.0
 margin_right = 913.0
 margin_bottom = 20.0
 custom_colors/font_color = Color( 0.839216, 1, 0.980392, 1 )
-text = "Test effect"
+text = "Тестовый эффект"
 
 [node name="DeleteEffectButton" type="Button" parent="SexToyEffectVBox/HBoxContainer3"]
 margin_left = 917.0
 margin_right = 972.0
 margin_bottom = 20.0
 custom_colors/font_color = Color( 1, 0.243137, 0.243137, 1 )
-text = "Delete"
+text = "Удалить"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="SexToyEffectVBox"]
 margin_top = 24.0
@@ -73,7 +73,7 @@ size_flags_horizontal = 3
 margin_top = 5.0
 margin_right = 78.0
 margin_bottom = 19.0
-text = "Trigger toys "
+text = "Активировать игрушки "
 
 [node name="ToyGroupCheckboxes" type="HFlowContainer" parent="SexToyEffectVBox/HBoxContainer2"]
 unique_name_in_owner = true
@@ -116,7 +116,7 @@ margin_bottom = 118.0
 [node name="Label" type="Label" parent="SexToyEffectVBox/SequenceEffect"]
 margin_right = 972.0
 margin_bottom = 14.0
-text = "Sequence is definied in this format: [intensity, seconds, intensity, seconds, ...]"
+text = "Последовательность задается в формате: [intensity, seconds, intensity, seconds, ...]"
 autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="SexToyEffectVBox/SequenceEffect"]
@@ -128,7 +128,7 @@ margin_bottom = 42.0
 margin_top = 5.0
 margin_right = 74.0
 margin_bottom = 19.0
-text = "Sequence: ["
+text = "Последовательность: ["
 
 [node name="SequenceLineEdit" type="LineEdit" parent="SexToyEffectVBox/SequenceEffect/HBoxContainer"]
 unique_name_in_owner = true
@@ -163,7 +163,7 @@ margin_top = 1.0
 margin_right = 130.0
 margin_bottom = 15.0
 rect_min_size = Vector2( 130, 0 )
-text = "Intensity 100%"
+text = "Интенсивность 100%"
 
 [node name="IntensitySlider" type="HSlider" parent="SexToyEffectVBox/SimpleEffect/HBoxContainer"]
 unique_name_in_owner = true
@@ -186,7 +186,7 @@ margin_top = 1.0
 margin_right = 130.0
 margin_bottom = 15.0
 rect_min_size = Vector2( 130, 0 )
-text = "For 5.5 seconds"
+text = "На 5.5 секунд"
 
 [node name="TimeSlider" type="HSlider" parent="SexToyEffectVBox/SimpleEffect/HBoxContainer2"]
 unique_name_in_owner = true
@@ -208,7 +208,7 @@ margin_bottom = 172.0
 [node name="Label" type="Label" parent="SexToyEffectVBox/CurveEffect"]
 margin_right = 972.0
 margin_bottom = 14.0
-text = "Curve sequence"
+text = "Кривая последовательности"
 autowrap = true
 
 [node name="CurveEditor" type="Control" parent="SexToyEffectVBox/CurveEffect"]
@@ -228,7 +228,7 @@ margin_bottom = 96.0
 margin_top = 5.0
 margin_right = 124.0
 margin_bottom = 19.0
-text = "Duration (seconds) "
+text = "Длительность (сек) "
 
 [node name="CurveDurationSpinBox" type="SpinBox" parent="SexToyEffectVBox/CurveEffect/HBoxContainer"]
 unique_name_in_owner = true

@@ -23,7 +23,7 @@ margin_bottom = 38.0
 [node name="AddButton" type="Button" parent="HBoxContainer"]
 margin_right = 37.0
 margin_bottom = 20.0
-text = "Add"
+text = "Добавить"
 
 [node name="OptionButton" type="OptionButton" parent="HBoxContainer"]
 visible = false
@@ -55,13 +55,13 @@ margin_bottom = 62.0
 [node name="RemoveButton" type="Button" parent="HBoxContainer2"]
 margin_right = 64.0
 margin_bottom = 20.0
-text = "Remove"
+text = "Удалить"
 
 [node name="ClearButton" type="Button" parent="HBoxContainer2"]
 margin_left = 68.0
 margin_right = 131.0
 margin_bottom = 20.0
-text = "Clear all"
+text = "Очистить всё"
 
 [node name="UpButton" type="Button" parent="HBoxContainer2"]
 margin_left = 135.0

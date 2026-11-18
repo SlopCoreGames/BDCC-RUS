@@ -7,15 +7,15 @@ func _run():
 	if(state == ""):
 		addCharacter("skar")
 		playAnimation(StageScene.Solo, "stand", {pc="skar"})
-		saynn("You stick your head behind the corner and see a door that probably leads into some big office! This one looks different from the others.. a lot more fancier and protected. It's probably the captain's office. Going in there now is a sure way to get yourself spaced.")
+		saynn("Ты высовываешься из-за угла и видишь дверь, которая, скорее всего, ведет в какой-то большой кабинет! Эта выглядит иначе, чем остальные... гораздо роскошнее и защищеннее. Вероятно, это кабинет капитана. Если войти туда прямо сейчас, тебя наверняка вышвырнут в открытый космос.")
 
-		saynn("The door looks locked anyway.. and it's also guarded by a mean-looking guy. He didn't spot you yet.")
+		saynn("Дверь всё равно кажется запертой... к тому же её охраняет какой-то злобный тип. Он тебя пока не заметил.")
 
-		saynn("You probably don't wanna approach him.. unless you wanna fight the dude.")
+		saynn("Наверное, лучше к нему не приближаться... если только ты не хочешь с ним подраться.")
 
-		saynn("(( Approaching him again will trigger an optional hard encounter. ))")
+		saynn("(( Повторное приближение к нему запустит необязательную сложную стычку. ))")
 
-		addButton("Leave", "Take a step back", "endgoback")
+		addButton("Уйти", "Сделать шаг назад", "endgoback")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

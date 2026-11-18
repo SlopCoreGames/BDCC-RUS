@@ -14,15 +14,15 @@ func getKeepScore() -> float:
 
 func getText():
 	if(getLocation() == "medical_nursery"):
-		return "{main.name} is giving birth!"
-	return "{main.name} is heading to nursery to give birth!"
+		return "{main.name} рожает!"
+	return "{main.name} направляется в родильное отделение, чтобы родить!"
 
 func getActions() -> Array:
 	if(getLocation() == "medical_nursery"):
 		return [
 			{
 				id = "giveBirth",
-				name = "Give birth!",
+				name = "Родить!",
 				desc = "Do something",
 				score = 1.0,
 				args = {},
@@ -32,7 +32,7 @@ func getActions() -> Array:
 	return [
 		{
 			id = "go",
-			name = "Go!",
+			name = "Вперёд!",
 			desc = "Do something",
 			score = 1.0,
 			args = {},

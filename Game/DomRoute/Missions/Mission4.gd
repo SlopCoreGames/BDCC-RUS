@@ -2,7 +2,7 @@ extends MissionBase
 
 func _init():
 	id = "Mission4"
-	name = "The Quinn's Gambit"
+	name = "Гамбит Куинн"
 	desc = "It's time to figure out how are you gonna get your hands on Eliza Quinn, the chemist doctor."
 	
 	startScene = "DomM4s1Intro"
@@ -16,10 +16,10 @@ func _init():
 	
 	decisions = {
 		"kait": {
-			name = "Let Kait go or make her thank Avy",
+			name = "Отпусти Кейт или заставь её поблагодарить Эви",
 			outcomes = {
 				"letgo": {
-					text = "Let Kait go",
+					text = "Отпустить Кейт",
 					effects = [
 						DECISION_EFFECT_AVY_OBEDIENCE,
 					],
@@ -27,7 +27,7 @@ func _init():
 					avyLine = "That bitch got what she deserved. I guess both of them did.",
 				},
 				"avy": {
-					text = "Thank Avy",
+					text = "Поблагодарить Эви",
 					effects = [
 						DECISION_EFFECT_KAIT_OBEDIENCE,
 					],

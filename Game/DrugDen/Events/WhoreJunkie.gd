@@ -15,11 +15,11 @@ func getStartCooldown() -> int:
 
 func getInteractInfo() -> Dictionary:
 	return {
-		text = "You notice a junkie that doesn't seem agressive.",
+		text = "Вы замечаете торчка, который не кажется агрессивным.",
 		actions = [
 			{
 				id = "approach",
-				name = "Approach",
+				name = "Подойти",
 				desc = "See what's up",
 				args = [],
 				disabled = false,

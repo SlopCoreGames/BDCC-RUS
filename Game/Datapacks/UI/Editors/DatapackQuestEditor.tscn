@@ -63,7 +63,7 @@ margin_bottom = -4.0
 [node name="Label" type="Label" parent="VBoxContainer/Control/TabContainer/Stages"]
 margin_right = 1272.0
 margin_bottom = 14.0
-text = "Quest stages code"
+text = "Код стадий квеста"
 align = 1
 
 [node name="HBoxContainer" type="HSplitContainer" parent="VBoxContainer/Control/TabContainer/Stages"]
@@ -82,7 +82,7 @@ size_flags_vertical = 3
 [node name="StateLabel" type="Label" parent="VBoxContainer/Control/TabContainer/Stages/HBoxContainer/VBoxContainer"]
 margin_right = 902.0
 margin_bottom = 14.0
-text = "Code"
+text = "Код"
 align = 1
 
 [node name="DatapackQuestCodeWrapper" parent="VBoxContainer/Control/TabContainer/Stages/HBoxContainer/VBoxContainer" instance=ExtResource( 4 )]
@@ -105,7 +105,7 @@ size_flags_stretch_ratio = 0.4
 [node name="Label" type="Label" parent="VBoxContainer/Control/TabContainer/Stages/HBoxContainer/VBoxContainer2"]
 margin_right = 358.0
 margin_bottom = 14.0
-text = "Code blocks"
+text = "Блоки кода"
 align = 1
 
 [node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/Control/TabContainer/Stages/HBoxContainer/VBoxContainer2"]
@@ -135,14 +135,14 @@ margin_bottom = -4.0
 [node name="Label3" type="Label" parent="VBoxContainer/Control/TabContainer/Flags"]
 margin_right = 1272.0
 margin_bottom = 14.0
-text = "Datapack Flags (global variables):"
+text = "Флаги датапака (глобальные переменные):"
 align = 1
 
 [node name="Label4" type="Label" parent="VBoxContainer/Control/TabContainer/Flags"]
 margin_top = 18.0
 margin_right = 1272.0
 margin_bottom = 32.0
-text = "Add new datapack flag"
+text = "Добавить новый флаг датапака"
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer/Control/TabContainer/Flags"]
 margin_top = 36.0
@@ -152,7 +152,7 @@ margin_bottom = 60.0
 [node name="AddFlagButton" type="Button" parent="VBoxContainer/Control/TabContainer/Flags/HBoxContainer3"]
 margin_right = 37.0
 margin_bottom = 24.0
-text = "Add"
+text = "Добавить"
 
 [node name="NewFlagLineEdit" type="LineEdit" parent="VBoxContainer/Control/TabContainer/Flags/HBoxContainer3"]
 margin_left = 41.0
@@ -165,7 +165,7 @@ placeholder_text = "name"
 margin_top = 64.0
 margin_right = 1272.0
 margin_bottom = 78.0
-text = "Flags:"
+text = "Флаги:"
 
 [node name="ScrollContainer2" type="ScrollContainer" parent="VBoxContainer/Control/TabContainer/Flags"]
 margin_top = 82.0
@@ -192,7 +192,7 @@ columns = 5
 margin_right = 298.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
-text = "Save"
+text = "Сохранить"
 
 [node name="QuickUIScaleOverrider" parent="VBoxContainer/GridContainer" instance=ExtResource( 6 )]
 anchor_right = 0.0

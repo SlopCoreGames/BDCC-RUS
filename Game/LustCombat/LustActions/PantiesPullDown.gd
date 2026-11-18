@@ -19,7 +19,7 @@ func canDo(_lustState: LustCombatState, _args):
 
 func getVisibleName(_lustState: LustCombatState, _args):
 	var itemState: PantiesState = _args["itemState"]
-	return "Pull "+itemState.casualName+" down"
+	return "Тянуть"+itemState.casualName+" down"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	var itemState: PantiesState = _args["itemState"]

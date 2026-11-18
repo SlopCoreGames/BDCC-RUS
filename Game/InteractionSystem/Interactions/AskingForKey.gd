@@ -11,7 +11,7 @@ func start(_pawns:Dictionary, _args:Dictionary):
 	setState("", "reacter")
 
 func init_text():
-	saynn("{starter.name} sways uncomfortably.")
+	saynn("{starter.name} неловко переминается с ноги на ногу.")
 	sayLine("starter", "AskKeyCanYouUnlock", {main="starter", target="reacter"})
 
 	addAction("give_key", "Give key", "Just give them the key..", "help", 0.5, 60, {})
@@ -34,9 +34,9 @@ func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func denied_request_text():
-	saynn("{reacter.name} thinks about it for a second.. and then shakes {reacter.his} head.")
+	saynn("{reacter.name} на секунду задумывается... а затем качает {reacter.his} головой.")
 	sayLine("reacter", "AskKeyDeny", {main="reacter", target="starter"})
-	saynn("Looks like {starter.you} {starter.youAre}n't getting that key from {reacter.him}.. willingly.")
+	saynn("Похоже, {starter.you} {starter.youAre} не получит этот ключ от {reacter.him}... по-хорошему.")
 
 	addAction("leave", "Leave", "Oh well.. whatever..", "surrender", 1.0, 60, {})
 	addAction("attack", "Attack", "You are getting that key one way or another!", "fight", 1.0, 60, {})
@@ -50,7 +50,7 @@ func denied_request_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func denied_leave_text():
-	saynn("{starter.name} decides to just leave.. and stay locked..")
+	saynn("{starter.name} решает просто уйти... и остаться запертым...")
 
 	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
 
@@ -60,10 +60,10 @@ func denied_leave_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func gave_key_text():
-	saynn("{reacter.name} thinks about it for a second..")
+	saynn("{reacter.name} на секунду задумывается...")
 	sayLine("reacter", "AskKeyGive", {main="reacter", target="starter"})
-	saynn("{reacter.YouHe} {reacter.youHeVerb('approach', 'approaches')} {starter.you} and {reacter.youHeVerb('unlock')} the smart-locked gear with {reacter.yourHis} unique key..")
-	saynn("Freedom..")
+	saynn("{reacter.YouHe} {reacter.youHeVerb('approach', 'approaches')} {starter.you} и {reacter.youHeVerb('unlock')} умный замок на снаряжении с помощью {reacter.yourHis} уникального ключа...")
+	saynn("Свобода...")
 
 	addAction("leave", "Leave", "Yay.", "default", 1.0, 60, {})
 
@@ -73,9 +73,9 @@ func gave_key_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func sex_challenge_start_text():
-	saynn("{reacter.name} thinks about it for a second..")
+	saynn("{reacter.name} на секунду задумывается...")
 	sayLine("reacter", "AskKeyChallenge", {main="reacter", target="starter"})
-	saynn("Looks like {starter.you} {starter.youArent} getting that key unless {starter.youHe} {starter.youHeVerb('let')} {reacter.you} fuck {starter.youHim}..")
+	saynn("Похоже, {starter.you} {starter.youArent} получит этот ключ, только если {starter.youHe} {starter.youHeVerb('let')} {reacter.you} ебаный {starter.youHim}...")
 
 	addAction("submit", "Submit", "Let it happen..", "sexSub", 1.0, 300, {start_sex=["reacter", "starter", SexType.DefaultSex, {SexMod.BondageDisabled: true}],})
 	addAction("refuse", "Refuse", "You'd rather not..", "default", 0.1, 60, {})
@@ -94,7 +94,7 @@ func sex_challenge_start_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func sex_challenge_after_sex_text():
-	saynn("{reacter.name}'s satisfaction was.. "+str(Util.roundF(domSatisfaction*100.0, 1))+"%")
+	saynn("Удовлетворение {reacter.name} было..."+str(Util.roundF(domSatisfaction*100.0, 1))+"%")
 
 	addAction("unlock_them", "Unlock them", "They served you well.", "default", max(domSatisfaction, 0.01), 60, {})
 	addAction("deny", "Deny", "That wasn't good enough.", "punishMean", 0.1 if domSatisfaction >= 0.89 else (1.0 - min(domSatisfaction, 0.6)), 60, {})
@@ -113,9 +113,9 @@ func sex_challenge_after_sex_do(_id:String, _args:Dictionary, _context:Dictionar
 
 
 func sex_challenge_unlock_text():
-	saynn("{reacter.name} decides to unlock {starter.your} smart-locked restraints with {reacter.his} unique key..")
+	saynn("{reacter.name} решает отпереть умные оковы {starter.your} с помощью уникального ключа {reacter.his}..")
 	sayLine("reacter", "AskKeyChallengeUnlock", {main="reacter", target="starter"})
-	saynn("Freedom, yay.")
+	saynn("Свобода, ура!")
 
 	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
 
@@ -125,9 +125,9 @@ func sex_challenge_unlock_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func sex_challenge_denied_text():
-	saynn("{reacter.name} shakes {reacter.his} head.")
+	saynn("{reacter.name} качает головой, глядя на {reacter.his}.")
 	sayLine("reacter", "AskKeyChallengeFail", {main="reacter", target="starter"})
-	saynn("Looks like {starter.you} {starter.youAre}n't getting unlocked..")
+	saynn("Похоже, {starter.you} {starter.youAre} не удастся освободить..")
 
 	addAction("leave", "Leave", "Oh well..", "default", 1.0, 60, {})
 	addAction("attack", "Attack", "You are getting that key!", "fight", 1.0, 60, {})
@@ -141,9 +141,9 @@ func sex_challenge_denied_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func sex_challenge_refused_text():
-	saynn("{starter.You} {starter.youVerb('shake')} {starter.yourHis} head.")
+	saynn("{starter.You} {starter.youVerb('shake')} {starter.yourHis} голову.")
 	sayLine("starter", "AskKeyChallengeRefuse", {main="starter", target="reacter"})
-	saynn("{reacter.name} shrugs.")
+	saynn("{reacter.name} пожимает плечами.")
 	sayLine("reacter", "AskKeyChallengeRefuseStay", {main="reacter", target="starter"})
 
 	addAction("leave", "Leave", "Oh well..", "default", 1.0, 60, {})

@@ -7,60 +7,60 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Duo, "stand", {npc="kait"})
 		addCharacter("kait")
-		saynn("[say=pc]Let's go get those records.[/say]")
+		saynn("[say=pc]Пошли заберем эти записи.[/say]")
 
-		saynn("Kait bounces eagerly.")
+		saynn("Кейт нетерпеливо подпрыгивает.")
 
-		saynn("[say=kait]Our first heist, fuck yeah! I'm gonna go grab everyone.[/say]")
+		saynn("[say=kait]Наше первое ограбление, ебать-копать! Пойду соберу всех.[/say]")
 
-		addButton("Continue", "See what happens next", "explain_stuff")
+		addButton("Продолжить", "Смотреть, что будет дальше", "explain_stuff")
 	if(state == "explain_stuff"):
 		addCharacter("announcer")
 		addCharacter("avy")
 		playAnimation(StageScene.Duo, "stand", {npc="kait", pc="announcer"})
-		saynn("A few minutes later, Kait returns with Avy and Ans.")
+		saynn("Спустя несколько минут Кейт возвращается с Эви и Анс.")
 
-		saynn("You begin talking about the plan.")
+		saynn("Вы начинаете обсуждать план.")
 
-		saynn("[say=kait]The datapad is obviously a no-go. The thing is gonna get wiped.[/say]")
+		saynn("[say=kait]Датапад явно не вариант. Его же просто сотрут.[/say]")
 
-		saynn("[say=announcer]I might have an idea. What if we use an ancient piece of technology.. known as a printer.[/say]")
+		saynn("[say=announcer]У меня есть идея. Что, если мы используем древний кусок технологии... известный как принтер?[/say]")
 
-		saynn("[say=kait]Printer? Ancient? They're used everywhere.[/say]")
+		saynn("[say=kait]Принтер? Древний? Да их повсюду используют.[/say]")
 		
-		saynn("Ans raises a brow.")
+		saynn("Анс вскидывает бровь.")
 		
-		saynn("[say=announcer]Really? Not where I'm from.[/say]")
+		saynn("[say=announcer]Серьезно? Не там, откуда я родом.[/say]")
 		
-		saynn("[say=kait]You wanna print multiple thousands of records? How?[/say]")
+		saynn("[say=kait]Хочешь распечатать тысячи записей? Как именно?[/say]")
 
-		saynn("[say=announcer]Find any console. Sort the inmate records by.. the length of the crime list. And we print the top twenty or so. Should fit on a page nicely.[/say]")
+		saynn("[say=announcer]Найди любую консоль. Отсортируй личные дела заключенных по... длине списка преступлений. И распечатаем топ двадцать или около того. Как раз на одну страницу влезет.[/say]")
 
-		saynn("[say=avy]Exclude me too first, because I'd be the first on that list.[/say]")
+		saynn("[say=avy]Только меня сначала исключи, а то я буду первым в этом списке.[/say]")
 
-		saynn("Kait takes a moment to roll her eyes.")
+		saynn("Кейт на мгновение закатывает глаза.")
 
-		saynn("[say=kait]Very funny, Avy.[/say]")
+		saynn("[say=kait]Очень смешно, Эви.[/say]")
 
-		saynn("The snow leopard rubs her chin.")
+		saynn("Снежная леопардица потирает подбородок.")
 
-		saynn("[say=kait]Hm.. That is so weird. But it could actually work. They can't wipe a piece of paper remotely. Do you know any consoles we can get to?[/say]")
+		saynn("[say=kait]Хм... Странно. Но это может сработать. Бумагу-то они удаленно не сотрут. Ты знаешь, к каким консолям можно подобраться?[/say]")
 
-		saynn("[say=announcer]Command Deck has a bunch of offices. All you need is a staff badge.[/say]")
+		saynn("[say=announcer]На командной палубе полно кабинетов. Всё, что нужно — это бейдж сотрудника.[/say]")
 
-		saynn("[say=pc]Command Deck?[/say]")
+		saynn("[say=pc]На командной палубе?[/say]")
 
-		saynn("[say=avy]Don't be scared. They're a bunch of pussies up there. Worst case, you will run into a guard or two.[/say]")
+		saynn("[say=avy]Да не бойся ты. Там наверху сборище сопляков. В худшем случае наткнешься на охранника или двух.[/say]")
 
-		saynn("[say=kait]I will go grab Rahi then. Let's all meet near the checkpoint, in front of the main elevator.[/say]")
+		saynn("[say=kait]Тогда я схожу за Рахи. Давайте все встретимся у контрольно-пропускного пункта, перед главным лифтом.[/say]")
 
-		saynn("[say=announcer]Hope you don't need my presence. The arena requires managing.[/say]")
+		saynn("[say=announcer]Надеюсь, без меня можно обойтись. Арене нужно присматривать.[/say]")
 
-		saynn("[say=kait]You should stay and do that, you gave us plenty of help anyway.[/say]")
+		saynn("[say=kait]Тебе стоит остаться и заняться этим, ты и так нам во всём помогла.[/say]")
 
-		saynn("Ans nods.")
+		saynn("Ан кивает.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

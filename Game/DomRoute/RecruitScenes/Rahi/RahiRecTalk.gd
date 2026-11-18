@@ -14,279 +14,279 @@ func _run():
 	if(state == ""):
 		addCharacter("rahi")
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcAction="sit"})
-		saynn("You enter the cell where Rahi currently rests.")
+		saynn("Вы входите в камеру, где сейчас отдыхает Рахи.")
 
-		saynn("[say=pc]Gonna ask you some random things.[/say]")
+		saynn("[say=pc]Сейчас буду задавать тебе всякие разные вопросы.[/say]")
 
-		saynn("[say=rahi]Meow..[/say]")
+		saynn("[say=rahi]Мяу...[/say]")
 
-		addButton("Continue", "See what happens next", "ask_next")
+		addButton("Продолжить", "Смотреть, что будет дальше", "ask_next")
 	if(state == "0"):
-		saynn("[say=pc]Are you.. resisting?[/say]")
+		saynn("[say=pc]Ты что... сопротивляешься?[/say]")
 
-		saynn("Rahi blinks.")
+		saynn("Рахи моргает.")
 
-		saynn("[say=rahi]Uh.. is she supposed to?[/say]")
+		saynn("[say=rahi]Эм... а она вообще должна?[/say]")
 
-		saynn("[say=pc]You're not allowed to leave currently. Does that make you want to escape?[/say]")
+		saynn("[say=pc]Сейчас тебе нельзя уходить. Тебе от этого хочется сбежать?[/say]")
 
-		saynn("[say=rahi]This is.. somewhat exciting. She doesn't see any reasons to escape..[/say]")
+		saynn("[say=rahi]Это даже... немного волнительно. Она не видит причин для побега...[/say]")
 
-		saynn("[say=pc]But do you wish you had to resist?[/say]")
+		saynn("[say=pc]Но хочешь ли ты, чтобы тебе пришлось сопротивляться?[/say]")
 
-		saynn("[say=rahi]Well.. it depends really..[/say]")
+		saynn("[say=rahi]Ну... на самом деле, это зависит от обстоятельств...[/say]")
 
-		saynn("Right.")
+		saynn("Ясно.")
 
 		addRecButtons()
 	if(state == "1"):
-		saynn("[say=pc]Do you wanna escape this prison at all?[/say]")
+		saynn("[say=pc]Ты вообще хочешь сбежать из этой тюрьмы?[/say]")
 
-		saynn("[say=rahi]She.. has been here for a while already.[/say]")
+		saynn("[say=rahi]Она... здесь уже довольно давно.[/say]")
 
-		saynn("[say=pc]Is that a no?[/say]")
+		saynn("[say=pc]Значит, «нет»?[/say]")
 
-		saynn("[say=rahi]Kitty just doesn't know how she would live normally now.. It's not like her old life was that good anyway.[/say]")
+		saynn("[say=rahi]Китти просто не представляет, как теперь жить обычной жизнью... Да и старая жизнь у неё была не такая уж и классная.[/say]")
 
-		saynn("[say=pc]Doesn't sound like you want to escape. Are you gonna try to sabotage our plan at some point?[/say]")
+		saynn("[say=pc]Похоже, побег тебя не особо прельщает. Ты что, собираешься в какой-то момент саботировать наш план?[/say]")
 
-		saynn("[say=rahi]Sabotage?.. No.. as long as you promise to give her scritches.[/say]")
+		saynn("[say=rahi]Саботировать?.. Нет... если пообещаешь её чесать за ушком.[/say]")
 
-		saynn("Rahi offers you a cute little smile.")
+		saynn("Рахи одаривает тебя милой улыбкой.")
 
-		saynn("[say=pc]Sure, we should have enough hands for that.[/say]")
+		saynn("[say=pc]Конечно, рук на всех должно хватить.[/say]")
 
-		saynn("[say=rahi]Come to think about it.. She does have some.. loose ends.. outside. Freedom sounds better than being stuck here forever..[/say]")
+		saynn("[say=rahi]Если подумать... у неё там, снаружи, остались кое-какие... незавершенные дела... Свобода звучит куда лучше, чем вечное заточение здесь...[/say]")
 
 		addRecButtons()
 	if(state == "2"):
-		saynn("[say=pc]Do you prefer when people treat you with a lot of care?[/say]")
+		saynn("[say=pc]Тебе больше нравится, когда с тобой обращаются очень нежно?[/say]")
 
-		saynn("[say=rahi]Who doesn't.. But there are different types of care..[/say]")
+		saynn("[say=rahi]Кому не нравится?.. Но бывает разная нежность...[/say]")
 
-		saynn("[say=pc]Tell me more about that.[/say]")
+		saynn("[say=pc]Расскажи об этом поподробнее.[/say]")
 
-		saynn("[say=rahi]What is there to tell.. some are gentle.. some are strict.. some are very mean..[/say]")
+		saynn("[say=rahi]Что тут расскажешь... бывают нежные... бывают строгие... а бывают совсем злюки...[/say]")
 
-		saynn("[say=pc]Which one is your favourite?[/say]")
+		saynn("[say=pc]А какая тебе больше по душе?[/say]")
 
-		saynn("[say=rahi]Well..[/say]")
+		saynn("[say=rahi]Ну...[/say]")
 
-		saynn("She stays quiet.")
+		saynn("Она молчит.")
 
-		saynn("[say=pc]Yes?[/say]")
+		saynn("[say=pc]Да?[/say]")
 
-		saynn("[say=rahi]Uh.. you know..[/say]")
+		saynn("[say=rahi]Э-э... ну, ты понимаешь...[/say]")
 
-		saynn("She avoids the direct gaze now.")
+		saynn("Теперь она избегает прямого взгляда.")
 
-		saynn("[say=pc]You like when people are strict with you?[/say]")
+		saynn("[say=pc]Тебе нравится, когда с тобой строги?[/say]")
 
-		saynn("Rahi swallows audibly, her chin low.")
+		saynn("Рахи слышно сглатывает, низко опустив подбородок.")
 
-		saynn("[say=rahi]Um.. heh.. uh..[/say]")
+		saynn("[say=rahi]Эм... хех... а...[/say]")
 
-		saynn("[say=pc]Rahi? Use your words.[/say]")
+		saynn("[say=pc]Рахи? Говори же.[/say]")
 
-		saynn("A blush spreads on her cheeks.")
+		saynn("Её щеки заливает румянец.")
 
-		saynn("[say=rahi]Mm.. m-meow..[/say]")
+		saynn("[say=rahi]Мм.. м-мяу..[/say]")
 
-		saynn("She will probably never admit it.")
+		saynn("Она, скорее всего, никогда в этом не признается.")
 
 		addRecButtons()
 	if(state == "3"):
-		saynn("[say=pc]What are your biggest kinks?[/say]")
+		saynn("[say=pc]Какие у тебя самые сильные кинки?[/say]")
 
-		saynn("[say=rahi]Oh..[/say]")
+		saynn("[say=rahi]Ох..[/say]")
 
-		saynn("She stays quiet.")
+		saynn("Она молчит.")
 
-		saynn("[say=pc]Why the oh?[/say]")
+		saynn("[say=pc]Почему «ох»?[/say]")
 
-		saynn("[say=rahi]Kitty likes a lot of things.. This prison allowed her to see what she likes..[/say]")
+		saynn("[say=rahi]Кошечке нравится много всего.. Эта тюрьма позволила ей понять, что ей по душе..[/say]")
 
-		saynn("[say=pc]And so what would that be?[/say]")
+		saynn("[say=pc]И что же это за вещи?[/say]")
 
-		saynn("[say=rahi]Do you need.. the full list?..[/say]")
+		saynn("[say=rahi]Тебе нужен.. полный список?..[/say]")
 
-		saynn("She blinks and blushes when catching your confused gaze.")
+		saynn("Она моргает и краснеет, поймав твой недоуменный взгляд.")
 
-		saynn("[say=pc]Is it that big?[/say]")
+		saynn("[say=pc]Он что, такой огромный?[/say]")
 
-		saynn("[say=rahi]How much time do you have?..[/say]")
+		saynn("[say=rahi]Сколько у тебя времени?..[/say]")
 
-		saynn("Right.")
+		saynn("Ясно.")
 
-		saynn("[say=pc]Alright. What things you really didn't like then? That list must be short then, right?[/say]")
+		saynn("[say=pc]Ладно. А что тебе совсем не нравится? Значит, список должен быть коротким, да?[/say]")
 
-		saynn("Rahi rubs her snout.")
+		saynn("Рахи потирает мордочку.")
 
-		saynn("[say=rahi]When people are mean for no reason.. Blood stuff?.. Uh.. Being tortured isn't really that fun.. unless it's really hot..[/say]")
+		saynn("[say=rahi]Когда люди злые без причины... Кровь?.. Эм... Пытки — это не так уж весело... если только они не совсем жаркие..[/say]")
 
-		saynn("You sigh.")
+		saynn("Ты вздыхаешь.")
 
-		saynn("[say=rahi]S-sorry..[/say]")
+		saynn("[say=rahi]П-прости..[/say]")
 
 		addRecButtons()
 	if(state == "4"):
-		saynn("[say=pc]Do you like sex?[/say]")
+		saynn("[say=pc]Тебе нравится секс?[/say]")
 
-		saynn("Rahi lowers her gaze again.")
+		saynn("Рахи снова опускает взгляд.")
 
-		saynn("[say=rahi]Sex?..[/say]")
+		saynn("[say=rahi]Секс?..[/say]")
 
-		saynn("[say=pc]Yeah.[/say]")
+		saynn("[say=pc]Ага.[/say]")
 
-		saynn("[say=rahi]What kind..[/say]")
+		saynn("[say=rahi]Какой именно..[/say]")
 
-		saynn("You're not sure how to answer.")
+		saynn("Ты не совсем понимаешь, как ответить.")
 
-		saynn("[say=pc]Vanilla?[/say]")
+		saynn("[say=pc]Ванильный?[/say]")
 
-		saynn("[say=rahi]Sure..[/say]")
+		saynn("[say=rahi]Конечно..[/say]")
 
-		saynn("[say=pc]Uh.. anal?[/say]")
+		saynn("[say=pc]Э-э.. анальный?[/say]")
 
-		saynn("Rahi's gaze darts around the room.")
+		saynn("Рахи начинает беспокойно озираться по комнате.")
 
-		saynn("[say=rahi]..it's too painful usually.. you know.. when there is no preparation..[/say]")
+		saynn("[say=rahi]..обычно это слишком больно.. ну, знаешь.. когда нет подготовки..[/say]")
 
-		saynn("[say=pc]I see.[/say]")
+		saynn("[say=pc]Понятно.[/say]")
 
-		saynn("You think about it.")
+		saynn("Ты задумываешься об этом.")
 
-		saynn("[say=pc]What's your favourite kind of sex then?[/say]")
+		saynn("[say=pc]Тогда какой твой любимый вид секса?[/say]")
 
-		saynn("[say=rahi]It's.. hard to explain.[/say]")
+		saynn("[say=rahi]Это.. трудно объяснить.[/say]")
 
-		saynn("[say=pc]Can you try?[/say]")
+		saynn("[say=pc]Попробуешь?[/say]")
 
-		saynn("[say=rahi]You know.. when they're possessive?..[/say]")
+		saynn("[say=rahi]Знаешь... когда они ведут себя собственнически?..[/say]")
 
-		saynn("Right.")
+		saynn("Ясно.")
 
 		addRecButtons()
 	if(state == "5"):
-		saynn("[say=pc]Do you like petplay?[/say]")
+		saynn("[say=pc]Тебе нравится петплей?[/say]")
 
-		saynn("Her ears perk, her gaze collides with yours.")
+		saynn("Её ушки навостряются, а взгляд встречается с твоим.")
 
-		saynn("[say=rahi]Uh.. meow..[/say]")
+		saynn("[say=rahi]Э-э... мяу...[/say]")
 
-		saynn("[say=pc]Sounds like a yes.[/say]")
+		saynn("[say=pc]Похоже, это «да».[/say]")
 
-		saynn("[say=rahi]..you can't prove that..[/say]")
+		saynn("[say=rahi]..ты же не можешь это доказать..[/say]")
 
-		saynn("Her answer makes you raise a brow.")
+		saynn("От её ответа ты невольно приподнимаешь бровь.")
 
-		saynn("[say=pc]You literally call yourself kitty.[/say]")
+		saynn("[say=pc]Ты буквально назвала себя киской.[/say]")
 
-		saynn("[say=rahi]So?..[/say]")
+		saynn("[say=rahi]И?..[/say]")
 
-		saynn("You squint.. while Rahi blushes.")
+		saynn("Ты щуришься... пока Рахи заливается краской.")
 
-		saynn("[say=pc]I guess we're never gonna do walkies then. Got it.[/say]")
+		saynn("[say=pc]Значит, прогулок у нас так и не будет. Ясно.[/say]")
 
-		saynn("Rahi stays quiet.. her cheeks inflating with air slowly, her lips trembling.")
+		saynn("Рахи молчит... её щеки медленно раздуваются, а губы дрожат.")
 
-		saynn("[say=pc]Yes?[/say]")
+		saynn("[say=pc]Да?[/say]")
 
-		saynn("[say=rahi]She is.. open to experimentation..[/say]")
+		saynn("[say=rahi]Она... открыта к экспериментам...[/say]")
 
-		saynn("Of course.")
+		saynn("Конечно.")
 
 		addRecButtons()
 	if(state == "6"):
-		saynn("[say=pc]Do you like pain?[/say]")
+		saynn("[say=pc]Тебе нравится боль?[/say]")
 
-		saynn("[say=rahi]When others hit her? No.. The bruises stay for weeks..[/say]")
+		saynn("[say=rahi]Когда другие бьют её? Нет... синяки держатся неделями...[/say]")
 
-		saynn("[say=pc]I was talking about sexual pain.[/say]")
+		saynn("[say=pc]Я говорила о сексуальной боли.[/say]")
 
-		saynn("She takes time to blink and gently hug herself.")
+		saynn("Ей требуется время, чтобы моргнуть и осторожно обнять саму себя.")
 
-		saynn("[say=rahi]Most go way too far with it..[/say]")
+		saynn("[say=rahi]Большинство заходят со всем этим слишком далеко...[/say]")
 
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
 		addRecButtons()
 	if(state == "7"):
-		saynn("[say=pc]Would you consider yourself.. an exhibitionist?[/say]")
+		saynn("[say=pc]Ты бы назвал себя... эксгибиционистом?[/say]")
 
-		saynn("[say=rahi]What would that mean exactly..[/say]")
+		saynn("[say=rahi]Что именно это будет значить..[/say]")
 
-		saynn("[say=pc]Do you like when strangers see you naked?[/say]")
+		saynn("[say=pc]Тебе нравится, когда незнакомцы видят тебя голой?[/say]")
 
-		saynn("She scratches behind her head.")
+		saynn("Она чешет затылок.")
 
-		saynn("[say=rahi]This usually means she is in trouble..[/say]")
+		saynn("[say=rahi]Обычно это значит, что у неё проблемы..[/say]")
 
-		saynn("[say=pc]Let's say it's all safe.[/say]")
+		saynn("[say=pc]Допустим, всё безопасно.[/say]")
 
-		saynn("She shrugs.")
+		saynn("Она пожимает плечами.")
 
-		saynn("[say=rahi]It can be.. thrilling. But she is.. you know.. shy..[/say]")
+		saynn("[say=rahi]Это может быть.. волнительно. Но она.. ну, ты понимаешь.. она скромница..[/say]")
 
-		saynn("[say=pc]I can tell.[/say]")
+		saynn("[say=pc]Это заметно.[/say]")
 
-		saynn("[say=rahi]Hard to enjoy it.. when you're anxious.[/say]")
+		saynn("[say=rahi]Трудно получать удовольствие.. когда ты на взводе.[/say]")
 
 		addRecButtons()
 	if(state == "8"):
-		saynn("[say=pc]What can you say about bondage?[/say]")
+		saynn("[say=pc]Что ты можешь сказать о бондаже?[/say]")
 
-		saynn("[say=rahi]A lot..[/say]")
+		saynn("[say=rahi]Многое..[/say]")
 
-		saynn("[say=pc]Pick something then.[/say]")
+		saynn("[say=pc]Ну, тогда выбери что-нибудь.[/say]")
 
-		saynn("[say=rahi]That moment.. when she is standing in complete darkness.. unable to even meow.. just forced to drool mindlessly..[/say]")
+		saynn("[say=rahi]Тот самый момент... когда она стоит в кромешной тьме... не в силах даже мяукнуть... просто вынужденная пускать слюни без всякого смысла...[/say]")
 
-		saynn("She bites her lip.")
+		saynn("Она прикусывает губу.")
 
-		saynn("[say=rahi]When her arms are forced behind her.. her legs are spread-open.. chains clanking each time she shivers.. or ropes digging into her fur..[/say]")
+		saynn("[say=rahi]Когда её руки насильно заведены за спину... ноги широко разведены... цепи звенят при каждом её вздрагивании... или верёвки впиваются в мех...[/say]")
 
-		saynn("Rahi rubs her legs together.")
+		saynn("Рахи трет ногами друг о друга.")
 
-		saynn("[say=rahi]When she is completely helpless.. at someone's mercy..[/say]")
+		saynn("[say=rahi]Когда она совершенно беспомощна... во власти другого...[/say]")
 
-		saynn("She swallows audibly.")
+		saynn("Она слышно сглатывает.")
 
-		saynn("[say=rahi]That's when she feels the most free.. somehow..[/say]")
+		saynn("[say=rahi]Именно тогда она чувствует себя самой свободной... почему-то...[/say]")
 
-		saynn("Right.")
+		saynn("Ясно.")
 
 		addRecButtons()
 	if(state == "9"):
-		saynn("[say=pc]Anal?[/say]")
+		saynn("[say=pc]Анальный?[/say]")
 
-		saynn("[say=rahi]Anal?..[/say]")
+		saynn("[say=rahi]Анальный?..[/say]")
 
-		saynn("[say=pc]Yes.[/say]")
+		saynn("[say=pc]Да.[/say]")
 
-		saynn("[say=rahi]..no..[/say]")
+		saynn("[say=rahi]Нет..[/say]")
 
-		saynn("[say=pc]Why not?[/say]")
+		saynn("[say=pc]Почему это?[/say]")
 
-		saynn("[say=rahi]Pain?..[/say]")
+		saynn("[say=rahi]Больно?..[/say]")
 
-		saynn("[say=pc]But if you use lube and other preparations, it won't be painful.[/say]")
+		saynn("[say=pc]Но если использовать смазку и другие подготовки, будет не больно.[/say]")
 
-		saynn("[say=rahi]Yeah but nobody uses lube.. One person.. and now you gotta go to the doctor..[/say]")
+		saynn("[say=rahi]Да, но смазку никто не использует.. Один раз.. и вот ты уже идешь к врачу..[/say]")
 
-		saynn("Fair enough.")
+		saynn("Справедливо.")
 
 		addRecButtons()
 	if(state == "10"):
-		saynn("[say=pc]Were you always this kinky?[/say]")
+		saynn("[say=pc]Ты всегда была такой извращенкой?[/say]")
 
-		saynn("[say=rahi]Meow?..[/say]")
+		saynn("[say=rahi]Мяу?..[/say]")
 
-		saynn("[say=pc]You're a shy kitty. You seem to have some limits, sure. But you also seem to have a lot of experience.[/say]")
+		saynn("[say=pc]Ты застенчивая кошечка. У тебя явно есть свои границы, это да. Но при этом кажется, что у тебя немало опыта.[/say]")
 
-		saynn("[say=rahi]It's the prison.. You learn what you like and dislike.. whenever you like it or not..[/say]")
+		saynn("[say=rahi]Это тюрьма.. Здесь узнаешь, что тебе нравится, а что нет.. хочешь ты того или нет..[/say]")
 
-		saynn("Somehow that sentence made sense.")
+		saynn("Почему-то в этой фразе был смысл.")
 
 		addRecButtons()
 

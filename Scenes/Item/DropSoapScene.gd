@@ -6,157 +6,157 @@ func _init():
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.Showering, "body", {pc="pc", bodyState={naked=true}})
-		saynn("You were standing under a shower head, enjoying your time, relaxing.")
+		saynn("Ты стоял под душем, наслаждаясь моментом и расслабляясь.")
 
-		saynn("You were about to rub the patented Bio-Scrub Soap into your skin.. when suddenly.. it slips out of your hand. Slippery bastard.")
+		saynn("Ты уже собирался втереть запатентованное мыло «Био-Скраб» в кожу... как вдруг... оно выскальзывает из рук. Скользкая сволочь.")
 
-		saynn("Oops. Looks like you just dropped your soap.")
+		saynn("Ой. Похоже, ты только что выронил мыло.")
 
-		saynn("As you look down at it.. you feel something.. Like there is a shadow looming over you.")
+		saynn("Когда ты смотришь вниз... ты чувствуешь что-то... Будто над тобой нависла чья-то тень.")
 
-		saynn("The running water is gradually melting the soap already, you gotta act fast!")
+		saynn("Бегущая вода уже начинает размывать мыло, нужно действовать быстро!")
 
-		addButton("Bend over", "Bend over to pick up the soap", "do_bend")
-		addButton("Crouch", "Crouch and pick up the soap", "do_crouch")
-		addButton("Leave it", "That soap is as good as gone", "leave_soap")
+		addButton("Наклониться", "Наклониться, чтобы поднять мыло", "do_bend")
+		addButton("Присесть", "Присесть и поднять мыло", "do_crouch")
+		addButton("Оставить как есть", "Этому мылу уже крышка", "leave_soap")
 	if(state == "do_bend"):
 		playAnimation(StageScene.Yoga, "dog", {pc="pc", bodyState={naked=true, hard=true}})
-		saynn("You bend down toward the soap in the most exaggerated, dramatic way possible, arching your back, swaying your hips, drawing out every motion, putting all your private bits out on display.. your {pc.analStretch} tailhole.. "+str(" your pussy.." if GM.pc.hasReachableVagina() else "")+""+str(" your {pc.penis}" if GM.pc.hasPenis() else "")+"")
+		saynn("Ты наклоняешься за мылом максимально преувеличенно и драматично: прогибаешь спину, покачиваешь бедрами, растягивая каждое движение, выставляя напоказ всё своё сокровище... твой {pc.analStretch} анус.. "+str(" your pussy.." if GM.pc.hasReachableVagina() else "")+""+str(" your {pc.penis}" if GM.pc.hasPenis() else "")+"")
 
-		saynn("You linger there, exposed, waiting.. for something to happen.")
+		saynn("Ты замираешь в этой открытой позе, ожидая... чего-то.")
 
-		saynn("But the showers are silent.. except for the running water of course.")
+		saynn("Но в душевых тишина... если не считать шума льющейся воды, разумеется.")
 
-		saynn("No footsteps.")
+		saynn("Ни шагов.")
 
-		saynn("Not even a gasp.")
+		saynn("Ни даже вздоха.")
 
-		saynn("Not a single prison cliche in sight. Boring.")
+		saynn("Ни единого тюремного клише на горизонте. Скукотища.")
 
-		saynn("You wiggle. Then you wiggle harder. Still nothing.")
+		saynn("Ты виляешь задом. Затем виляешь еще сильнее. Всё равно ничего.")
 
-		saynn("Eventually, you get tired of waiting.. and just pick up the damn thing.")
+		saynn("В конце концов, тебе надоедает ждать... и ты просто поднимаешь эту чертову штуку.")
 
-		saynn("As you sigh audibly..")
+		saynn("Когда ты громко вздыхаешь...")
 
-		saynn("[sayOther]Were you expecting something else?[/sayOther]")
+		saynn("[sayOther]Ты ждала чего-то другого?[/sayOther]")
 
-		saynn("You glance darts around the empty showers.")
+		saynn("Ты быстро озираешься по сторонам в пустых душевых.")
 
-		saynn("The fuck.")
+		saynn("Какого хера.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_crouch"):
 		playAnimation(StageScene.Solo, "kneel", {bodyState={naked=true}})
-		saynn("You eye the fallen soap.. your eyes watching it gleam under the shower spray.. Such an obvious trap, laid by fate itself.")
+		saynn("Ты смотришь на упавшее мыло... наблюдая, как оно поблескивает под струями воды... Очевидная ловушка, расставленная самой судьбой.")
 
-		saynn("A lesser fool would have bent here.. expose their cheeks to the breeze.. get caught and overwhelmed.. but not you.")
+		saynn("Менее осторожный дурак уже бы наклонился... подставив свои булки под случайный взгляд... и был бы пойман и затискан... но не ты.")
 
-		saynn("No, you crouch. Knees bent, back straight, eyes sharp.")
+		saynn("Нет, ты приседаешь. Колени согнуты, спина прямая, взгляд острый.")
 
-		saynn("Like a tactical genius, you position your back towards the nearest wall, giving you an incredible level of defense. Your hand closes around the slippery bar with a grip of a master thief and leaves it no chance to escape.")
+		saynn("Словно тактический гений, ты прижимаешься спиной к ближайшей стене, обеспечивая себе невероятный уровень защиты. Твоя рука смыкается на скользком бруске с хваткой мастера-вора, не давая ему ни единого шанса ускользнуть.")
 
-		saynn("You stand tall again, victorious, unviolated, unmocked.")
+		saynn("Ты снова выпрямляешься — победитель, не тронутый и не высмеянный.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "leave_soap"):
 		playAnimation(StageScene.Showering, "body", {pc="pc", bodyState={naked=true}})
-		saynn("You eye the soap on the floor.. the one that you have just dropped.")
+		saynn("Ты смотришь на мыло на полу... то самое, которое ты только что выронил(а).")
 
-		saynn("For a moment you consider bending over.")
+		saynn("На мгновение ты задумываешься о том, чтобы наклониться.")
 
-		saynn("..but then you sigh, shake your head, and mutter to yourself.")
+		saynn("...но затем вздыхаешь, качаешь головой и бормочешь себе под нос.")
 
-		saynn("[say=pc]Better safe than fucked.[/say]")
+		saynn("[say=pc]Лучше перестраховаться, чем трахнуться.[/say]")
 
-		saynn("You turn towards the exit.. and begin heading out, ready to accept the loss.")
+		saynn("Ты поворачиваешься к выходу... и начинаешь уходить, готовый смириться с потерей.")
 
-		saynn("But then..")
+		saynn("Но тут..")
 
-		saynn("[sayOther]You're just gonna leave it?[/sayOther]")
+		saynn("[sayOther]Ты что, просто так его оставишь?[/sayOther]")
 
-		saynn("The sudden voice makes you do one-eighty in an instant.")
+		saynn("От этого внезапного голоса ты мгновенно разворачиваешься на 180 градусов.")
 
-		saynn("The showers are empty. No one in sight.")
+		saynn("Душевые пусты. Ни души.")
 
-		saynn("[say=pc]Huh?[/say]")
+		saynn("[say=pc]А?[/say]")
 
-		saynn("You blink.")
+		saynn("Ты моргаешь.")
 
-		saynn("The voice chuckles.")
+		saynn("Голос посмеивается.")
 
-		saynn("[sayOther]I mean.. this kind of soap is hard to come by. You just gonna let it melt away?[/sayOther]")
+		saynn("[sayOther]Я к тому, что такое мыло не так просто достать. Ты реально позволишь ему просто раствориться?[/sayOther]")
 
-		saynn("A slight shiver crawls up your spine. It's as if.. the whole room is talking with you.")
+		saynn("Легкая дрожь пробегает по спине. Такое чувство, будто... со всеми тобой разговаривает сама комната.")
 
-		saynn("[say=pc]Where are you? Who's talking?[/say]")
+		saynn("[say=pc]Ты где? Кто это говорит?[/say]")
 
-		saynn("[sayOther]Does it matter? You're wasting your time, inmate.[/sayOther]")
+		saynn("[sayOther]Какая разница? Ты просто тратишь время, зэк.[/sayOther]")
 
-		saynn("Inmate?.. Right.. wait.. You notice a camera in the corner of the room. Some guard must be talking with you through the intercom. That's why the voice is so weird.")
+		saynn("Зэк?.. Точно.. погоди.. Ты замечаешь камеру в углу комнаты. Должно быть, какой-то охранник говорит с тобой через интерком. Поэтому голос звучит так странно.")
 
-		saynn("[say=pc]If I pick it up, someone will obviously do a prank on me. You know the kind. Wait, are you recording this?[/say]")
+		saynn("[say=pc]Если я его подниму, надо мной явно начнут стебаться. Ну, ты понимаешь, о чем я. Погоди, ты что, записываешь это?[/say]")
 
-		saynn("[sayOther]Uh.. no? But I see. That's a real dilemma you've got yourself caught in.[/sayOther]")
+		saynn("[sayOther]Э-э.. нет? Но я понял. Ты и впрямь попал в непростую дилемму.[/sayOther]")
 
-		saynn("No shit.")
+		saynn("Да не говори!")
 
-		saynn("[sayOther]You can either let the soap rot and fade away under the constant stream of water.. or bend over.. and face the consequences of your own actions. A guaranteed loss.. or a risky gamble.[/sayOther]")
+		saynn("[sayOther]Ты можешь либо дать мылу сгнить под постоянной струей воды... либо наклониться... и принять последствия своих действий. Гарантированный проигрыш... или рискованная авантюра.[/sayOther]")
 
-		saynn("That camera is totally here to spy on inmates dropping their soap.")
+		saynn("Эта камера здесь чисто для того, чтобы шпионить за тем, как зэки роняют мыло.")
 
-		saynn("[say=pc]And so? What should I do?[/say]")
+		saynn("[say=pc]И что с того? Что мне делать?[/say]")
 
-		saynn("[sayOther]I'd say.. risk it? The combined return value of that action feels higher.[/sayOther]")
+		saynn("[sayOther]Я бы сказал... рискнуть? Кажется, суммарная выгода от этого действия будет выше.[/sayOther]")
 
-		saynn("[say=pc]And what are you gonna do with the tape? Blackmail me? Sell it on the intranet? Or you're just gonna jerk off to it yourself?[/say]")
+		saynn("[say=pc]И что ты будешь делать с этой записью? Шантажировать меня? Продашь её в интранете? Или просто будешь сам под неё дрочить?[/say]")
 
-		saynn("The echo-y room chuckles at you.")
+		saynn("Эхо в пустой комнате словно насмехается над тобой.")
 
-		saynn("[sayOther]You think that I'm here to take advantage of you? Is that what you're worried about?[/sayOther]")
+		saynn("[sayOther]Думаешь, я здесь, чтобы воспользоваться тобой? Это то, чего ты боишься?[/sayOther]")
 
-		saynn("[say=pc]Yeah. Maybe you even have someone ready behind the corner. When I will bend over, you will give them a signal to storm in. Whatever you say, it won't change my decision. I can't trust a single person in this prison.[/say]")
+		saynn("[say=pc]Ага. Может, у тебя там за углом уже кто-то притаился. Стоит мне наклониться, как ты дашь им сигнал на штурм. Что бы ты ни говорил, моё решение не изменится. В этой тюрьме нельзя доверять ни единой живой душе.[/say]")
 
-		saynn("You hear.. no answer. Maybe you have just cracked their plan and they have nothing to say.")
+		saynn("Ты слышишь... ответа нет. Возможно, ты только что раскусил их план, и им просто нечего сказать.")
 
-		saynn("Either way, it's best to leave now. That soap is as good as gone.")
+		saynn("Так или иначе, лучше уходить. Это мыло уже не вернуть.")
 
-		addButton("Continue", "See what happens next", "sudden_tentacles")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sudden_tentacles")
 	if(state == "sudden_tentacles"):
 		playAnimation(StageScene.TentaclesTease, "tease", {pc="pc", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Suddenly.. from the drain itself.. something stirs.")
+		saynn("Внезапно... прямо из сливного отверстия... что-то зашевелилось.")
 
-		saynn("Pipes groan.. Metal shudders.")
+		saynn("Трубы стонут... Металл дрожит.")
 
-		saynn("A slick, coiling shape pushes its way up through the grate.. shiny and dripping.. a tentacle..")
+		saynn("Скользкая, извивающаяся фигура проталкивается сквозь решетку... блестящая и мокрая... это щупальце...")
 
-		saynn("You stumble back, your eyes wide.")
+		saynn("Ты отшатнулся назад, широко раскрыв глаза.")
 
-		saynn("The creature emerges further, revealing more of its tentacles to your shocked gaze.")
+		saynn("Существо вылезает всё больше, являя вашему ошеломлённому взору свои щупальца.")
 
-		saynn("Before you know, one of the tentacles grabs the soap off of the floor and offers it to you.")
+		saynn("Не успеваете вы опомниться, как одно из щупалец подхватывает мыло с пола и протягивает его вам.")
 
-		saynn("[sayOther]I'm a monster. But I'm not that kind of monster.[/sayOther]")
+		saynn("[sayOther]Я монстр. Но не из тех монстров, о которых вы подумали.[/sayOther]")
 
-		saynn("The voice.. it talks by vibrating its smaller tentacles. Holy shit.")
+		saynn("Этот голос... оно говорит, вибрируя своими мелкими щупальцами. Твою мать.")
 
-		saynn("With a delicate precision, another latex tentacles carefully lifts and opens your hand.. just so the first tentacle can place the soap into it.")
+		saynn("С поразительной точностью другое латексное щупальце осторожно приподнимает и раскрывает вашу ладонь... ровно для того, чтобы первое могло вложить в неё мыло.")
 
-		saynn("[sayOther]Here you go.[/sayOther]")
+		saynn("[sayOther]Вот, держи.[/sayOther]")
 
-		saynn("You stare at the drippy, slimy appendage.")
+		saynn("Вы во все глаза пялитесь на это сопливое, склизкое отросток.")
 
-		saynn("Awkward silence.")
+		saynn("Неловкое молчание.")
 
-		saynn("[say=pc]T-Thanks..[/say]")
+		saynn("[say=pc]С-спасибо...[/say]")
 
-		saynn("The tentacles wiggle cheerfully.. and then withdraw back into the drain.")
+		saynn("Щупальца весело извиваются... а затем скрываются обратно в сливном отверстии.")
 
-		saynn("And just like that.. it's gone.")
+		saynn("И вот так просто... оно исчезло.")
 
-		saynn("You're left alone in the shower.. clutching your reclaimed soap.")
+		saynn("Ты остаешься в душе один на один со своим обмылком.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

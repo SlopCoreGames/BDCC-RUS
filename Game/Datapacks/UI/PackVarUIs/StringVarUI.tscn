@@ -9,7 +9,7 @@ script = ExtResource( 2 )
 [node name="Button" type="Button" parent="." index="0"]
 margin_right = 36.0
 margin_bottom = 720.0
-text = "Edit"
+text = "Редактировать"
 
 [node name="LineEdit" type="LineEdit" parent="." index="1"]
 visible = false

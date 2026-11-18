@@ -2,7 +2,7 @@ extends MissionBase
 
 func _init():
 	id = "SideMission2"
-	name = "Rewired"
+	name = "Перепрошитая"
 	desc = "Kait is trying to fix the TV in the other room."
 	
 	startScene = "DomSM2"
@@ -14,17 +14,17 @@ func _init():
 	
 	decisions = {
 		"kait": {
-			name = "Your reaction",
+			name = "Твоя реакция",
 			outcomes = {
 				"pat": {
-					text = "Praised Kait",
+					text = "Похвалил Кейт",
 					effects = [
 						DECISION_EFFECT_KAIT_LOVE,
 					],
 					kaitLine = "Can't believe I somehow walked around the whole prison naked. You could have stopped me!",
 				},
 				"strict": {
-					text = "Had a strict talk with Kait",
+					text = "Провел с Кейт строгий разговор",
 					effects = [
 						DECISION_EFFECT_KAIT_OBEDIENCE,
 					],

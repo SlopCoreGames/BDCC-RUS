@@ -8,107 +8,107 @@ func _run():
 		addCharacter("tavi")
 		addCharacter("avy")
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", pc="avy"})
-		saynn("During your search, you suddenly ran into someone.. someone who isn't a nurse or a doctor.")
+		saynn("Во время обыска ты внезапно натыкаешься на кого-то... на кого-то, кто явно не медсестра и не врач.")
 
-		saynn("A tall high-sec inmate gets in your way. Purple fur.. with glowy green accents everywhere. She is staying in the shadow.. but the soft green light is betraying her.")
+		saynn("На твоем пути встает высокая заключенная из режима высокого уровня безопасности. Фиолетовый мех... и повсюду светящиеся зеленые акценты. Она прячется в тени... но мягкий зеленый свет выдает её присутствие.")
 
-		saynn("You are pretty sure you saw her before.")
+		saynn("Ты почти уверен, что уже видел её раньше.")
 
-		saynn("[say=avy]Hey, you. What the fuck are you doing here?[/say]")
+		saynn("[say=avy]Эй, ты. Какого хера ты тут забыла?[/say]")
 
-		saynn("She doesn't seem.. hostile. But something about her is making you nervous. She steps out of her hiding place and observes you, keeping distance.")
+		saynn("Она не кажется... враждебной. Но что-то в ней заставляет тебя нервничать. Она выходит из своего укрытия и начинает наблюдать за тобой, держа дистанцию.")
 
-		saynn("[say=tavi]I can ask the same question about you two. Me? I'm just looking for something.[/say]")
+		saynn("[say=tavi]Я могла бы задать тот же вопрос вам обоим. Я? Просто ищу кое-что.[/say]")
 
-		saynn("[say=avy]And what would that be?[/say]")
+		saynn("[say=avy]И что же это?[/say]")
 
-		saynn("A little sly smile spreads across her lips.")
+		saynn("На её губах расплывается хитрая ухмылка.")
 
-		saynn("[say=tavi]You're a curious one, aren't you. Only my friends get to know. Do you wanna be friends, perhaps?[/say]")
+		saynn("[say=tavi]А ты любопытная, да? Об этом знают только мои друзья. Может, хочешь стать моим другом?[/say]")
 
-		saynn("[say=avy]Only if you choke on my dick first.[/say]")
+		saynn("[say=avy]Только если сначала подавишься моим членом.[/say]")
 
-		saynn("The purple feline tilts her head slightly, her paws go behind her back, her back arching a bit, pushing her chest forward.")
+		saynn("Фиолетовая кошка слегка наклоняет голову, убирает лапы за спину и чуть прогибается в пояснице, выпячивая грудь вперед.")
 
-		saynn("[say=tavi]I see how it is. If we can't be friends, perhaps at least we can avoid being enemies?[/say]")
+		saynn("[say=tavi]Ясно, всё понятно. Если уж нам не суждено быть друзьями, может, хотя бы не будем врагами?[/say]")
 
-		saynn("[say=avy]I still don't know what the fuck are you doing here, creepy cat.[/say]")
+		saynn("[say=avy]Я до сих пор не въезжаю, какого хера ты тут забыла, жуткая кошка.[/say]")
 
-		saynn("You can keep asking that question forever.. might as well see if she knows something.")
+		saynn("Можно задавать этот вопрос вечно... но, может, стоит проверить, знает ли она что-нибудь.")
 
-		saynn("[say=pc]We're looking for a snow leopard named Kait, a lilac.[/say]")
+		saynn("[say=pc]Мы ищем снежного барса по имени Кейт, она сиреневая.[/say]")
 
-		saynn("[say=tavi]I see. If Quinn got her paws on her, then she is probably in the mental ward.[/say]")
+		saynn("[say=tavi]Понятно. Если Квинну удалось её поймать, то она, скорее всего, в психушке.[/say]")
 
-		saynn("That's something.")
+		saynn("Это уже что-то.")
 
-		saynn("[say=pc]Okay. Now tell us what you are looking for.[/say]")
+		saynn("[say=pc]Ладно. Теперь говори, что именно вы ищете.[/say]")
 
-		saynn("[say=tavi]That's a secret, I'm afraid. Don't worry, I had nothing to do with your friend's disappearance.[/say]")
+		saynn("[say=tavi]Боюсь, это секрет. Но не волнуйся, к исчезновению твоей подруги я не имею никакого отношения.[/say]")
 
-		saynn("Avy looks at you and whispers.")
+		saynn("Ави смотрит на тебя и шепчет.")
 
-		saynn("[say=avy]..something makes me feel weird about her. We could beat this bitch up, you and me..[/say]")
+		saynn("[say=avy]...от неё веет чем-то странным. Мы могли бы вломить этой сучке, ты и я...[/say]")
 
-		saynn("[say=tavi]I think it's time for us to go our separate ways. Before we get spotted.[/say]")
+		saynn("[say=tavi]Думаю, нам пора разойтись. Пока нас не заметили.[/say]")
 
-		addButton("Leave", "Just let her be", "let_tavi_be")
-		addButton("Escalate", "Taunt the purple cat to see if she knows something", "try_fight_tavi")
+		addButton("Уйти", "Просто оставь её в покое", "let_tavi_be")
+		addButton("Нагнетать обстановку", "Подразнить фиолетовую кошку, чтобы проверить, знает ли она что-нибудь", "try_fight_tavi")
 	if(state == "let_tavi_be"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
-		saynn("You decide to not block the path for her.")
+		saynn("Ты решаешь не преграждать ей путь.")
 
-		saynn("[say=pc]We gotta find someone, you gotta find something else, let's not slow each other down.[/say]")
+		saynn("[say=pc]Нам нужно найти кого-то, а тебе нужно искать что-то другое, давай не будем тормозить друг друга.[/say]")
 
-		saynn("[say=avy]Really?[/say]")
+		saynn("[say=avy]Серьёзно?[/say]")
 
-		saynn("The feline walks past you, offering you a kind smile. You hold the angry Avy away from doing anything silly.")
+		saynn("Кошка проходит мимо, одарив тебя доброй улыбкой. Ты удерживаешь разгневанную Эви от какой-нибудь глупости.")
 
-		saynn("[say=tavi]You know.. If things were different, maybe you'd be helping me~.[/say]")
+		saynn("[say=tavi]Знаешь... если бы всё было иначе, может, ты бы помогала мне~.[/say]")
 
-		saynn("[say=avy]Helping you? You're the most weird ass cat I've ever seen.[/say]")
+		saynn("[say=avy]Помочь тебе? Ты самая странная кошка, которую я когда-либо видел.[/say]")
 
-		saynn("The feline stops to lean closer to the foxy.")
+		saynn("Кошка останавливается и наклоняется ближе к лисице.")
 
-		saynn("[say=tavi]We're all a little weird, aren't we?[/say]")
+		saynn("[say=tavi]Мы все немного странные, разве нет?[/say]")
 
-		saynn("[say=avy]I'm very much normal.[/say]")
+		saynn("[say=avy]А я вполне себе нормальная.[/say]")
 
-		saynn("[say=tavi]And yet, you're here, in this prison.[/say]")
+		saynn("[say=tavi]И всё же, ты здесь, в этой тюрьме.[/say]")
 
-		saynn("[say=avy]Oh, fuck you.[/say]")
+		saynn("[say=avy]Ой, да пошёл ты.[/say]")
 
-		saynn("The feline just chuckles.. and then runs away.")
+		saynn("Кошка лишь усмехается... а затем убегает.")
 
-		saynn("Time to go.")
+		saynn("Пора идти.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "try_fight_tavi"):
 		removeCharacter("tavi")
 		playAnimation(StageScene.Solo, "hurt")
-		saynn("You keep blocking the path.")
+		saynn("Ты продолжаешь преграждать путь.")
 
-		saynn("[say=pc]You're not telling the whole truth I feel like.[/say]")
+		saynn("[say=pc]Мне кажется, ты говоришь не всю правду.[/say]")
 
-		saynn("You and Avy start walking towards her, slowly.")
+		saynn("Вы с Ави начинаете медленно идти в её сторону.")
 
-		saynn("[say=avy]Tell us everything, cat.[/say]")
+		saynn("[say=avy]Выкладывай всё как есть, кошечка.[/say]")
 
-		saynn("The feline sighs.")
+		saynn("Кошка вздыхает.")
 
-		saynn("[say=tavi]I really have no time for this.[/say]")
+		saynn("[say=tavi]У меня реально нет на это времени.[/say]")
 
-		saynn("Suddenly, the purple cat throws something in front of her.. which causes an instant reaction in the form of a small bright explosion.. followed by a dark smoke cloud.")
+		saynn("Внезапно фиолетовая кошка что-то швыряет ей под ноги... что вызывает мгновенную реакцию в виде небольшой яркой вспышки, за которой следует облако темного дыма.")
 
-		saynn("When the smoke goes away, the cat is nowhere to be seen.")
+		saynn("Когда дым рассеивается, кошки нигде не видно.")
 
-		saynn("[say=avy]Bitch![/say]")
+		saynn("[say=avy]Сука![/say]")
 
-		saynn("[say=pc]Whatever. We might run into her again sometime. Right now we gotta find Kait.[/say]")
+		saynn("[say=pc]Да хрен с ней. Может, еще встретимся. Сейчас нам нужно найти Кейт.[/say]")
 
-		saynn("Time to go.")
+		saynn("Пора идти.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

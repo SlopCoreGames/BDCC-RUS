@@ -14,7 +14,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "Stop actions"
+	return "Остановить действия"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "Stop groping yourself and free your hands"
@@ -23,7 +23,7 @@ func doAction(_lustState: LustCombatState, _args):
 	_lustState.stopActivities()
 
 	return {
-		text = "{attacker.name} stopped touching {attacker.himself}!"
+		text = "{attacker.name} перестала ласкать {attacker.himself}!"
 	}
 
 func getLustTopics():

@@ -38,7 +38,7 @@ func checkCharacterBusy(_checkID, messageifbusy, characterName = ""):
 	else:
 		saynn(messageifbusy)
 	if(characterName != ""):
-		addDisabledButton(characterName, "They are not here")
+		addDisabledButton(characterName, "Их здесь нет")
 	return true
 
 func runScene(sceneid: String, args = [], tag = ""):

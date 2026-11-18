@@ -4,7 +4,7 @@ func _init():
 	id = "MainTavi"
 	
 func getName() -> String:
-	return "Tavi Main Route"
+	return "Основной маршрут Тави"
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):

@@ -19,14 +19,14 @@ margin_left = 109.0
 margin_top = 390.0
 margin_right = 379.0
 margin_bottom = 496.0
-text = "Do stuff"
+text = "Делать что-то"
 
 [node name="Button2" type="Button" parent="."]
 margin_left = 497.0
 margin_top = 386.0
 margin_right = 767.0
 margin_bottom = 492.0
-text = "Do stuff"
+text = "Делать что-то"
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

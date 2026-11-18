@@ -8,37 +8,37 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="kait", pc="avy"})
 		addCharacter("kait")
 		addCharacter("avy")
-		saynn("You're following a path of defeated, panting nurses until you meet your team.")
+		saynn("Вы идете по следу из изнуренных, тяжело дышащих медсестер, пока не встречаетесь со своей командой.")
 
-		saynn("[say=kait]Locked! Why is it locked? Is it always locked?[/say]")
+		saynn("[say=kait]Заперто! Почему оно заперто? Оно что, всегда такое?[/say]")
 
-		saynn("You're standing in front of a wide door. There is a sign on the wall that says 'Storage'. Below it is a locked access panel.")
+		saynn("Вы стоите перед широкой дверью. На стене висит табличка «Склад». Под ней расположена запертая панель управления.")
 
-		saynn("[say=avy]It should be unlocked. That's weird. They don't usually lock it.[/say]")
+		saynn("[say=avy]Оно должно быть открыто. Странно. Обычно его не запирают.[/say]")
 
-		saynn("Kait puts her paws on her sides and glares at the foxy.")
+		saynn("Кейт упирает лапы в бока и свирепо смотрит на лисицу.")
 
-		saynn("[say=kait]How do you know?[/say]")
+		saynn("[say=kait]Откуда ты знаешь?[/say]")
 
-		saynn("[say=avy]I just know. Fuck. I guess we need a badge or whatever.[/say]")
+		saynn("[say=avy]Просто знаю. Блядь. Похоже, нам нужен пропуск или типа того.[/say]")
 
-		saynn("Kait tries to use a badge from one of the defeated nurses.. but the access panel just beeps angrily and flashes red.")
+		saynn("Кейт пытается использовать пропуск одной из побежденных медсестер... но панель лишь сердито пищит и мигает красным.")
 
-		saynn("[say=kait]Crap, it needs higher access. The more we waste our time here, the more nurses we will have to beat up.[/say]")
+		saynn("[say=kait]Черт, нужен уровень доступа повыше. Чем больше мы тут торчим, тем больше медсестер нам придется отлупить.[/say]")
 
-		saynn("Going back to Eliza and asking for a badge might not be the best idea..")
+		saynn("Вернуться к Элизе и просить пропуск — не самая лучшая идея...")
 
-		saynn("[say=pc]What can we do? Eliza is busy with Ferri.[/say]")
+		saynn("[say=pc]Что нам делать? Элиза занята с Ферри.[/say]")
 
-		saynn("[say=kait]I don't know. Showers! Maybe some doctor is taking a shower.[/say]")
+		saynn("[say=kait]Даже не знаю. Душ! Может, какой-нибудь врач сейчас там моется.[/say]")
 
-		saynn("[say=avy]We should have just broken the nerdy bitch first.[/say]")
+		saynn("[say=avy]Надо было сначала сломать эту задротистую сучку.[/say]")
 
-		saynn("[say=kait]Hindsight is twenty-twenty! We don’t have much time. I’m gonna try to.. hack it open maybe. You find a working badge.[/say]")
+		saynn("[say=kait]После драки всё понятно! У нас мало времени. Я попробую... может, взломаю замок. А ты найди рабочий бейдж.[/say]")
 
-		saynn("Shower area.. surely there is someone there.")
+		saynn("Зона душа... там наверняка кто-нибудь есть.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

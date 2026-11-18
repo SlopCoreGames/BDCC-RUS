@@ -9,7 +9,7 @@ func start(_pawns:Dictionary, _args:Dictionary):
 	setState("", "punisher")
 
 func init_text():
-	saynn("{punisher.name} looms over {target.you}.")
+	saynn("{punisher.name} нависает над {target.you}.")
 	sayLine("punisher", "PunishDecide", {punisher="punisher", target="target"})
 	
 	var punisherRestraintsPreventPulling:bool = getRoleChar("punisher").hasBlockedHands() || getRoleChar("punisher").hasBoundArms()
@@ -66,7 +66,7 @@ func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func about_to_tentacles_text():
-	saynn("{punisher.name} clips a leash to {target.your} collar.")
+	saynn("{punisher.name} пристегивает поводок к ошейнику {target.your}.")
 	addAction("cell", "Escort", "Escort them towards your cell", "default", 1.0, 60, {})
 
 func about_to_tentacles_do(_id:String, _args:Dictionary, _context:Dictionary):
@@ -75,7 +75,7 @@ func about_to_tentacles_do(_id:String, _args:Dictionary, _context:Dictionary):
 		goTowards(GM.pc.getCellLocation())
 
 func pulling_to_cell_tentacles_text():
-	saynn("{punisher.name} is pulling {target.name} towards {punisher.his} cell!")
+	saynn("{punisher.name} тащит {target.name} к камере {punisher.his}!")
 	addAction("cell", "Escort", "Pull them towards your cell", "default", 1.0, 60, {})
 
 func pulling_to_cell_tentacles_do(_id:String, _args:Dictionary, _context:Dictionary):
@@ -89,7 +89,7 @@ func pulling_to_cell_tentacles_do(_id:String, _args:Dictionary, _context:Diction
 			#setState("about_to_lock_stocks", "punisher")
 
 func about_to_stocks_text():
-	saynn("{punisher.name} clips a leash to {target.your} collar.")
+	saynn("{punisher.name} пристегивает поводок к ошейнику {target.your}.")
 	sayLine("punisher", "PunishDecideStocks", {punisher="punisher", target="target"})
 
 	addAction("stocks", "Escort", "Escort them towards the stocks", "default", 1.0, 60, {})
@@ -101,7 +101,7 @@ func about_to_stocks_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func about_to_sex_text():
-	saynn("{punisher.name} grabs {target.you}..")
+	saynn("{punisher.name} хватает {target.you}...")
 	sayLine("punisher", "PunishSex", {punisher="punisher", target="target"})
 
 	addAction("sex", "Sex", "Start the sex", "default", 1.0, 300, {start_sex=["punisher", "target"],})
@@ -113,7 +113,7 @@ func about_to_sex_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func about_to_subsex_text():
-	saynn("{punisher.name} submits to {target.you}..")
+	saynn("{punisher.name} подчиняется {target.you}...")
 	sayLine("punisher", "PunishSubSex", {punisher="punisher", target="target"})
 
 	addAction("sex", "Sex", "Start the sex", "default", 1.0, 300, {start_sex=["target", "punisher"],})
@@ -125,7 +125,7 @@ func about_to_subsex_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func pulling_to_stocks_text():
-	saynn("{punisher.name} is pulling {target.name} towards the punishment platform!")
+	saynn("{punisher.name} тащит {target.name} к платформе для наказаний!")
 
 	addAction("stocks", "Escort", "Pull them towards the stocks", "default", 1.0, 60, {})
 
@@ -137,7 +137,7 @@ func pulling_to_stocks_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func about_to_lock_stocks_text():
-	saynn("{punisher.name} guides {target.name} to the stocks.")
+	saynn("{punisher.name} ведет {target.name} к колодкам.")
 	sayLine("punisher", "PunishAboutToStocks", {punisher="punisher", target="target"})
 
 	addAction("lock_them", "Lock them", "Force them into the stocks", "default", 1.0, 120, {})
@@ -151,7 +151,7 @@ func about_to_lock_stocks_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func in_stocks_text():
-	saynn("{punisher.name} locks {target.name} into the stocks!")
+	saynn("{punisher.name} зажимает {target.name} в колодках!")
 	sayLine("punisher", "PunishLockIntoStocks", {punisher="punisher", target="target"})
 
 	addAction("leave", "Leave", "Leave them be", "default", 1.0, 30, {})
@@ -163,7 +163,7 @@ func in_stocks_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func after_sex_text():
-	saynn("After sex, {punisher.name} leaves {target.you} alone..")
+	saynn("После секса {punisher.name} оставляет {target.you} в покое...")
 
 	addAction("leave", "Leave", "Time to go", "default", 1.0, 30, {})
 
@@ -173,7 +173,7 @@ func after_sex_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func just_leaving_text():
-	saynn("{punisher.name} decides to just leave {target.name} alone..")
+	saynn("{punisher.name} решает просто оставить {target.name} в покое..")
 
 	addAction("leave", "Leave", "Time to go", "default", 1.0, 30, {})
 
@@ -183,7 +183,7 @@ func just_leaving_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func about_to_slutwall_text():
-	saynn("{punisher.name} clips a leash to {target.your} collar.")
+	saynn("{punisher.name} пристегивает поводок к ошейнику {target.your}.")
 	sayLine("punisher", "PunishDecidedSlutwall", {punisher="punisher", target="target"})
 
 	addAction("escort", "Escort", "Escort them towards the slutwall", "default", 1.0, 60, {})
@@ -195,7 +195,7 @@ func about_to_slutwall_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func pulling_to_slutwall_text():
-	saynn("{punisher.name} is pulling {target.name} towards the slutwall!")
+	saynn("{punisher.name} тащит {target.name} к шлюх-стене!")
 
 	addAction("escort", "Escort", "Pull them towards the slutwall", "default", 1.0, 60, {})
 
@@ -207,7 +207,7 @@ func pulling_to_slutwall_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func about_to_lock_slutwall_text():
-	saynn("{punisher.name} is locking {target.name} in the slutwall.")
+	saynn("{punisher.name} зажимает {target.name} в шлюх-стене.")
 
 	addAction("lock_them", "Lock them", "Force them into the slutwall", "default", 1.0, 120, {})
 
@@ -220,7 +220,7 @@ func about_to_lock_slutwall_do(_id:String, _args:Dictionary, _context:Dictionary
 
 
 func in_slutwall_text():
-	saynn("{punisher.name} locks {target.name} into the slutwall!")
+	saynn("{punisher.name} зажимает {target.name} в шлюх-стене!")
 	sayLine("punisher", "PunishLockIntoSlutwall", {punisher="punisher", target="target"})
 
 	addAction("leave", "Leave", "Leave them be", "default", 1.0, 30, {})

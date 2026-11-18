@@ -7,6 +7,6 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "End Current Scene",
+			text = "Завершить текущую сцену",
 		},
 	]

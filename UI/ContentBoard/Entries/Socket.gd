@@ -4,7 +4,7 @@ func _init():
 	id = "Socket"
 	
 func getName() -> String:
-	return "Socket"
+	return "Гнездо"
 
 func getDesc(_isFull:bool) -> String:
 	if(_isFull):

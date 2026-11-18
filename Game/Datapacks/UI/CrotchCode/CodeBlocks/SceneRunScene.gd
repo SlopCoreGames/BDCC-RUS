@@ -30,7 +30,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Run Scene",
+			text = "Запустить сцену",
 		},
 		{
 			type = "slot",

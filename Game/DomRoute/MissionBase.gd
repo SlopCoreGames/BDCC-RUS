@@ -3,7 +3,7 @@ class_name MissionBase
 
 var id:String
 
-var name:String = "Change me"
+var name:String = "Измени меня"
 var desc:String = "Change me please please please"
 var startScene:String = "MISSING_MISSION_SCENE"
 var requiredMissions:Array = []

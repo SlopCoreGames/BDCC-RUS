@@ -5,516 +5,516 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("You're standing near the mission board, thinking about what should be the next move for the team..")
+		saynn("Ты стоишь у доски заданий, раздумывая, каким должен быть следующий шаг команды...")
 
-		saynn("Suddenly, a cry of pain echoes from another room.")
+		saynn("Внезапно из соседней комнаты доносится крик боли.")
 
-		saynn("[say=kait]Ouch! God fucking dammit.[/say]")
+		saynn("[say=kait]Ай! Блядь, сука, как же больно![/say]")
 
-		saynn("The voice seems very familiar.")
+		saynn("Голос кажется очень знакомым.")
 
-		addButton("Check it", "Go check it out and see what's up", "kait_tv")
+		addButton("Проверить", "Пойти и посмотреть, что там происходит", "kait_tv")
 	if(state == "kait_tv"):
 		addCharacter("kait")
 		playAnimation(StageScene.Duo, "sit", {npc="kait", npcAction="hurt"})
 		aimCameraAndSetLocName("hideout_chill")
-		saynn("You step inside the other room and uncover quite a scene.")
+		saynn("Ты заходишь в соседнюю комнату и застаешь весьма любопытную картину.")
 
-		saynn("Kait is kneeling in front of an old TV.. the kind that was already old when it came out to market.. bulky and with a rounded screen. It's showing pure static.. accompanied by the beautiful sounds of white noise.")
+		saynn("Кейт стоит на коленях перед старым телевизором... из тех, что были уже древними на момент выхода — громоздким, с выпуклым экраном. Он показывает сплошные помехи, сопровождаемые прекрасным звуком белого шума.")
 
-		saynn("The snow leopard has the back panel open, all wiring is exposed. Her paws are reaching inside.")
+		saynn("Снежный леопард откинула заднюю панель, вся проводка обнажена. Её лапы тянутся внутрь.")
 
-		saynn("Zap.")
+		saynn("Шибануло!")
 
-		saynn("[say=kait]Ouch![/say]")
+		saynn("[say=kait]Ой![/say]")
 
-		saynn("Her whole body jerks, including her tail. Her fur stands on ends, making her look puffy.")
+		saynn("Всё её тело вздрагивает, вместе с хвостом. Шерсть встаёт дыбом, из-за чего она кажется пушистой.")
 
-		saynn("She pulls her back and shakes it.")
+		saynn("Она отводит задницу назад и встряхивает ею.")
 
-		saynn("You take a seat on one of the crates and admire the show.")
+		saynn("Ты усаживаешься на один из ящиков и любуешься зрелищем.")
 
-		saynn("[say=pc]What are you doing?[/say]")
+		saynn("[say=pc]Ты что творишь?[/say]")
 
-		saynn("Kait looks over her shoulder, her face looks a bit dirty.")
+		saynn("Кейт оглядывается через плечо; её лицо выглядит немного испачканным.")
 
-		saynn("[say=kait]What does it look like? Fixing this piece of junk.[/say]")
+		saynn("[say=kait]А на что это похоже? Чиню это ведро с болтами.[/say]")
 
-		saynn("She gestures vaguely at the mess of components inside.")
+		saynn("Она неопределённо указывает на груду деталей внутри.")
 
-		saynn("[say=pc]Do you know what you're doing?[/say]")
+		saynn("[say=pc]Ты хоть понимаешь, что делаешь?[/say]")
 
-		saynn("Her ears flatten.")
+		saynn("Её уши прижимаются к голове.")
 
-		saynn("[say=kait]I know enough![/say]")
+		saynn("[say=kait]Этого мне достаточно![/say]")
 
-		saynn("She reaches back inside.")
+		saynn("Она просовывает руку обратно внутрь.")
 
-		saynn("Zap.")
+		saynn("Шибануло!")
 
-		saynn("[say=kait]Ouch![/say]")
+		saynn("[say=kait]Ой![/say]")
 
-		saynn("Her fur puffs out again.. a few sparks fly out the thing. She yanks her arm back and sucks on her hurt finger.")
+		saynn("Её мех снова встает дыбом... из штуковины вылетает несколько искр. Она резко выдергивает руку и начинает сосать ушибленный палец.")
 
-		saynn("[say=pc]Tried turning it off first?[/say]")
+		saynn("[say=pc]А ты пробовала сначала его выключить?[/say]")
 
-		saynn("You can feel her rolling her eyes.")
+		saynn("Ты прямо чувствуешь, как она закатывает глаза.")
 
-		saynn("[say=kait]This stupid thing heats up for like ten minutes, I wouldn't be able to test it otherwise.[/say]")
+		saynn("[say=kait]Эта дурацкая хрень нагревается минут десять, иначе я бы не смогла его протестировать.[/say]")
 
-		saynn("[say=pc]I guess you're screwed then. Hope you like pain.[/say]")
+		saynn("[say=pc]Ну, тогда тебе крышка. Надеюсь, ты любишь боль.[/say]")
 
-		saynn("She takes a small pause.. and then giggles.")
+		saynn("Она делает небольшую паузу... а затем хихикает.")
 
-		saynn("[say=kait]In a different life, I'd probably be an engineer, you know. But I just had to end up a slut![/say]")
+		saynn("[say=kait]В другой жизни я бы, наверное, стала инженером, знаешь ли. Но нет, мне обязательно нужно было стать шлюхой![/say]")
 
-		saynn("A short awkward pause.")
+		saynn("Короткая неловкая пауза.")
 
-		saynn("[say=kait]A lilac I mean. I'm not a slut.[/say]")
+		saynn("[say=kait]Сиреневый, я имела в виду. Я не шлюха.[/say]")
 
-		saynn("Of course.")
+		saynn("Конечно.")
 
-		saynn("You let her work.. but you soon become curious.")
+		saynn("Ты позволяешь ей работать... но вскоре в тебе просыпается любопытство.")
 
-		saynn("[say=pc]Step aside.[/say]")
+		saynn("[say=pc]Отойди в сторону.[/say]")
 
-		saynn("Kait shuffles on her knees, letting you look inside. It's about what you'd expect. Exposed wiring.. some are crossed.. some are bare. It's a mess.")
+		saynn("Кейт переминается на коленях, позволяя тебе заглянуть внутрь. Там всё именно так, как ты и ожидал. Оголённые провода... одни перепутаны, другие торчат наружу. Сплошной бардак.")
 
-		saynn("[say=pc]You need insulated gloves for this.[/say]")
+		saynn("[say=pc]Для этого тебе нужны изолированные перчатки.[/say]")
 
-		saynn("Kait crosses her arms.")
+		saynn("Кейт скрещивает руки на груди.")
 
-		saynn("[say=kait]We don't have any![/say]")
+		saynn("[say=kait]У нас их нет![/say]")
 
-		saynn("[say=pc]Then we're gonna get you some. Get up.[/say]")
+		saynn("[say=pc]Значит, мы их достанем. Вставай.[/say]")
 
-		saynn("She groans.")
+		saynn("Она стонет.")
 
-		saynn("[say=kait]I can do it![/say]")
+		saynn("[say=kait]Получится![/say]")
 
-		saynn("The snow leopard reaches inside again. Her paw hovers over a loose wire.")
+		saynn("Снежная леопардица снова запускает лапу внутрь. Её когти замирают над оголённым проводом.")
 
-		saynn("[say=pc]Kait. Stop it.[/say]")
+		saynn("[say=pc]Кейт. Прекрати.[/say]")
 
-		saynn("[say=kait]I'm almost there, I can feel it-..[/say]")
+		saynn("[say=kait]Почти... я почти чувствую это!..[/say]")
 
-		saynn("Zap.")
+		saynn("Шибануло!")
 
-		saynn("Kait yelps and falls backward onto her butt. Static electricity crackles between her ears, making them flick.")
+		saynn("Кейт вскрикивает и плюхается задом на пол. Между её ушами проскакивают искры статического электричества, заставляя их дёргаться.")
 
-		saynn("[say=kait]..ow..[/say]")
+		saynn("[say=kait]..ой..[/say]")
 
-		saynn("[say=pc]That's it. We're getting you insulated gloves. Up.[/say]")
+		saynn("[say=pc]Всё, хватит. Мы купим тебе диэлектрические перчатки. А теперь — вверх.[/say]")
 
-		saynn("Kait sits up, rubbing her wrist.")
+		saynn("Кейт садится, потирая запястье.")
 
-		saynn("You offer her a hand. She takes it and gets pulled to her feet.")
+		saynn("Вы протягиваете ей руку. Она хватает её, и вы помогаете ей подняться на ноги.")
 
-		saynn("[say=pc]Where can we get them?[/say]")
+		saynn("[say=pc]Где их можно достать?[/say]")
 
-		saynn("[say=kait]Engineers usually carry some..[/say]")
+		saynn("[say=kait]Инженеры обычно носят с собой кое-что..[/say]")
 
-		saynn("Engineering it is.")
+		saynn("Значит, идем в инженерный отдел.")
 
-		addButton("Continue", "See what happens next", "in_engineering")
+		addButton("Продолжить", "Смотреть, что будет дальше", "in_engineering")
 	if(state == "in_engineering"):
 		aimCameraAndSetLocName("eng_workshop")
 		playAnimation(StageScene.Duo, "stand", {npc="kait"})
-		saynn("After some time, you arrive at the engineering bay.. and enter the workshop area. A place where inmates and engineers can waste their time creating something of questionable use.")
+		saynn("Спустя некоторое время вы прибываете в инженерный отсек... и входите в мастерскую. Место, где заключенные и инженеры могут коротать время, создавая всякую хрень сомнительной пользы.")
 
-		saynn("You and Kait lean against one of the walls. There are a few engineers around.")
+		saynn("Вы с Кейт прислоняетесь к одной из стен. Вокруг крутится несколько инженеров.")
 
-		saynn("[say=kait]So? What now?[/say]")
+		saynn("[say=kait]Ну и? Что теперь?[/say]")
 
-		saynn("[say=pc]We're gonna come up with a plan and then execute it. One step at a time.[/say]")
+		saynn("[say=pc]Сначала придумаем план, а потом приступим к делу. Шаг за шагом.[/say]")
 
-		saynn("Kait's shoulders slump.")
+		saynn("Плечи Кейт поникли.")
 
-		saynn("[say=kait]But that will take forever.[/say]")
+		saynn("[say=kait]Но это же займет целую вечность.[/say]")
 
-		saynn("[say=pc]We have all the time in the world. Lets pick the best target and wait for a good moment. We might have to involve some of our team.[/say]")
+		saynn("[say=pc]У нас впереди вся жизнь. Давай выберем лучшую цель и дождемся подходящего момента. Возможно, нам придется привлечь кого-то из нашей команды.[/say]")
 
-		saynn("Kait breaks eye contact in the middle of you speaking. She turns her head and looks at her surroundings.. until she sees something.")
+		saynn("Посреди твоих слов Кейт отводит взгляд. Она оглядывается по сторонам... пока что-то не замечает.")
 
-		saynn("[say=kait]That sounds so boring. Give me a second.[/say]")
+		saynn("[say=kait]Звучит ужасно скучно. Дай мне секунду.[/say]")
 
-		saynn("She starts heading somewhere!")
+		saynn("Она направляется куда-то!")
 
-		saynn("[say=pc]Where are you going?[/say]")
+		saynn("[say=pc]Ты куда это собралась?[/say]")
 
-		saynn("[say=kait]Just watch me.[/say]")
+		saynn("[say=kait]Просто смотри.[/say]")
 
-		saynn("[say=pc]Kait..[/say]")
+		saynn("[say=pc]Кейт...[/say]")
 
-		saynn("Well.. Time to see what mess she will get herself into.")
+		saynn("Ну что ж... Пора посмотреть, в какую передрягу она вляпается.")
 
-		addButton("Continue", "See what happens next", "kait_socket")
+		addButton("Продолжить", "Смотреть, что будет дальше", "kait_socket")
 	if(state == "kait_socket"):
 		addCharacter("socket")
 		playAnimation(StageScene.Duo, "stand", {pc="kait", npc="socket"})
-		saynn("[say=kait]Hey.. uh.. cool uniform.[/say]")
+		saynn("[say=kait]Эй... э-э... классная форма.[/say]")
 
-		saynn("You find Kait standing near a half-naked fennec who seems to be completely unfazed by it. She does have a backpack though.. bulky boots.. a top that doesn't cover anything.. She is not entirely naked.")
+		saynn("Вы находите Кейт стоящей рядом с полуголой феннеком, которая, кажется, совершенно не смущена происходящим. Зато у неё есть рюкзак... массивные ботинки... и топ, который почти ничего не прикрывает... В общем, она не совсем голая.")
 
-		saynn("[say=socket]Thanks! Name is Socket.[/say]")
+		saynn("[say=socket]Спасибо! Меня зовут Сокет.[/say]")
 
-		saynn("She is being quite friendly with Kait too.")
+		saynn("Она ведет себя с Кейт довольно дружелюбно.")
 
-		saynn("[say=kait]Yes, hey, Socket. I wonder.. Do you have any spare gloves? The yellow ones.[/say]")
+		saynn("[say=kait]О, привет, Сокет. Слушай... У тебя случайно нет лишних перчаток? Тех, желтых.[/say]")
 
-		saynn("[say=socket]Let's see![/say]")
+		saynn("[say=socket]Так, посмотрим![/say]")
 
-		saynn("She drops her backpack onto the nearest workbench and begins rummaging through it. Spare wires, a crowbar, cutters, a screwdriver, some lube and duct tape. Somehow there is also a giant wrench in between all of that.")
+		saynn("Она бросает рюкзак на ближайший верстак и начинает в нем копаться. Запасные провода, ломик, кусачки, отвертка, немного смазки и армированный скотч. И каким-то образом среди всего этого затесался огромный гаечный ключ.")
 
-		saynn("[say=socket]No, I only have one pair it seems. Sorry![/say]")
+		saynn("[say=socket]Нет, похоже, у меня всего одна пара. Прости![/say]")
 
-		saynn("[say=kait]Can I maybe have that pair perhaps?[/say]")
+		saynn("[say=kait]А можно мне всё-таки ту пару?[/say]")
 
-		saynn("Socket blinks a few times, her expression changes to a more hostile one.")
+		saynn("Сокет несколько раз моргает, и выражение её лица становится более враждебным.")
 
-		saynn("[say=socket]..Do you need to be bonked or something?[/say]")
+		saynn("[say=socket]...Тебя что, приложить надо, или как?[/say]")
 
-		saynn("[say=kait]I guess I'd rather not. Listen, what if I promise to return it?[/say]")
+		saynn("[say=kait]Пожалуй, лучше не надо. Слушай, а если я пообещаю её вернуть?[/say]")
 
-		saynn("The fennec hums.")
+		saynn("Феннек что-то напевает под нос.")
 
-		saynn("[say=socket]Hm.. I still prefer the bonking thing.[/say]")
+		saynn("[say=socket]Хм... Всё равно вариант с «приложить» мне нравится больше.[/say]")
 
-		saynn("[say=kait]Pretty please?[/say]")
+		saynn("[say=kait]Ну пожалуйста?[/say]")
 
-		saynn("She hums some more and scratches her chin. Then she gets all excited and bouncy.")
+		saynn("Она продолжает что-то напевать, почесывая подбородок, а затем внезапно приходит в восторг и начинает подпрыгивать от нетерпения.")
 
-		saynn("[say=socket]I have an idea! If you wear this headset that's on my head for a bit, I will let you have the gloves![/say]")
+		saynn("[say=socket]У меня есть идея! Если ты наденешь этот гарнитур, который сейчас на мне, на какое-то время, то я отдам тебе перчатки![/say]")
 
-		saynn("[say=kait]Headset? What is it gonna do?[/say]")
+		saynn("[say=kait]Гарнитур? И что он будет делать?[/say]")
 
-		saynn("[say=socket]It will make sure that you will actually return them![/say]")
+		saynn("[say=socket]Он гарантирует, что ты их действительно вернешь![/say]")
 
-		saynn("That could mean many things..")
+		saynn("Это может означать что угодно...")
 
-		saynn("[say=kait]It will hypnotize me?[/say]")
+		saynn("[say=kait]Он что, загипнотизирует меня?[/say]")
 
-		saynn("[say=socket]No, it's not a hypnovisor obviously. Why would I wear one? It will just show you what happens if you don't return the gloves, what punishment you will receive![/say]")
+		saynn("[say=socket]Нет, это же не гипновизор, очевидно! Зачем мне его надевать? Он просто покажет тебе, что будет, если ты не вернешь перчатки — какое наказание тебя ждет![/say]")
 
-		saynn("Kait raises a brow. Obviously a sane person would say no to that offer.")
+		saynn("Кейт вскидывает бровь. Любой здравомыслящий человек на ее месте ответил бы «нет».")
 
-		saynn("[say=kait]Uh huh. Sure. Whatever it is, I can take it. Just promise you will give me the gloves after.[/say]")
+		saynn("[say=kait]Угу. Конечно. Что бы это ни было, я справлюсь. Только пообещай, что отдашь мне перчатки после этого.[/say]")
 
-		saynn("[say=socket]Yes, of course! I will prepare it![/say]")
+		saynn("[say=socket]Да, конечно! Я всё подготовлю![/say]")
 
-		saynn("Socket takes off her headset and begins pressing buttons on it..")
+		saynn("Сокет снимает гарнитуру и начинает нажимать на кнопки..")
 
-		saynn("You nudge Kait's side and whisper into her ear while the fennec is distracted.")
+		saynn("Пока фенек отвлечена, ты толкаешь Кейт локтем в бок и шепчешь ей на ухо.")
 
-		saynn("[say=pc]Kait, this is a bad idea and you know it.[/say]")
+		saynn("[say=pc]Кейт, это плохая затея, и ты сама это знаешь.[/say]")
 
-		saynn("She whispers back.")
+		saynn("Она шепчет в ответ.")
 
-		saynn("[say=kait]Shush, I know it's a hypnovisor, I'm not stupid. My mind is strong enough to not be affected by it.[/say]")
+		saynn("[say=kait]Тсс, я знаю, что это гипновизор, я не дура. Мой разум достаточно силен, чтобы он на него не подействовал.[/say]")
 
-		saynn("[say=pc]I'm not so sure about that.[/say]")
+		saynn("[say=pc]Я в этом не так уж уверен.[/say]")
 
-		saynn("[say=kait]Saying I'm dumb?[/say]")
+		saynn("[say=kait]Намекаешь, что я тупая?[/say]")
 
-		saynn("[say=pc]No.[/say]")
+		saynn("[say=pc]Нет.[/say]")
 
-		saynn("[say=kait]I can take it, I'm telling you.[/say]")
+		saynn("[say=kait]Я справлюсь, говорю тебе![/say]")
 
-		saynn("[say=pc]Alright, don't let me stop you then.[/say]")
+		saynn("[say=pc]Ладно, тогда не буду тебе мешать.[/say]")
 
-		saynn("If she says that it's fine, might as well let her.")
+		saynn("Раз она говорит, что всё в порядке, то можно и позволить.")
 
-		addButton("Continue", "See what happens next", "hypno_stuff")
+		addButton("Продолжить", "Смотреть, что будет дальше", "hypno_stuff")
 	if(state == "hypno_stuff"):
-		saynn("Socket finishes pressing buttons. The headset hums softly in her paws.")
+		saynn("Сокет заканчивает нажимать на кнопки. Гарнитура тихо гудит в её лапах.")
 
-		saynn("[say=socket]Okay! It's ready.[/say]")
+		saynn("[say=socket]Готово! Можно пользоваться.[/say]")
 
-		saynn("Kait takes the headset without hesitation. She glances at you, smirks.. and then puts it on.")
+		saynn("Кейт без колебаний забирает гарнитуру. Она бросает на тебя взгляд, ухмыляется... и надевает её.")
 
-		saynn("Once she secures the thing.. she just lets it do its thing.")
+		saynn("Как только она закрепляет устройство... она просто позволяет ему делать своё дело.")
 
-		saynn("There is no obvious reaction from Kait. She is just.. standing still, breathing calmly. You notice some of the light leaking from under the face cushion.")
+		saynn("У Кейт нет никакой явной реакции. Она просто... стоит неподвижно, спокойно дыша. Ты замечаешь, как свет просачивается из-под подкладки на лице.")
 
-		saynn("[say=socket]Can you see something?[/say]")
+		saynn("[say=socket]Ты что-нибудь видишь?[/say]")
 
-		saynn("[say=kait]Yep. Just lots of colors.[/say]")
+		saynn("[say=kait]Ага. Просто куча всяких цветов.[/say]")
 
-		saynn("Socket walks in a slow circle around her, inspecting Kait.")
+		saynn("Сокет медленно обходит её кругом, осматривая Кейт.")
 
-		saynn("[say=socket]Hm.. You should see more than that.[/say]")
+		saynn("[say=socket]Хм.. Тебе стоит увидеть не только это.[/say]")
 
-		saynn("[say=kait]Well, what I can tell you, that's all that I see.[/say]")
+		saynn("[say=kait]Ну, что могу сказать — это всё, что мне удалось разглядеть.[/say]")
 
-		saynn("Time passes, Kait sighs a few times.")
+		saynn("Проходит время, Кейт несколько раз вздыхает.")
 
-		saynn("[say=kait]Kinda boring.[/say]")
+		saynn("[say=kait]Как-то скучновато.[/say]")
 
-		saynn("[say=socket]It should be almost done![/say]")
+		saynn("[say=socket]Всё должно быть почти готово![/say]")
 
-		addButton("Continue", "See what happens next", "give_headset_back")
+		addButton("Продолжить", "Смотреть, что будет дальше", "give_headset_back")
 	if(state == "give_headset_back"):
-		saynn("Soon, the headset turns off its fancy lights.")
+		saynn("Вскоре на гарнитуре гаснут её навороченные огоньки.")
 
-		saynn("Socket carefully takes it off Kait's face.. revealing her usual eyes.")
+		saynn("Сокет осторожно снимает её с лица Кейт, открывая её обычные глаза.")
 
-		saynn("[say=pc]Feel any different?[/say]")
+		saynn("[say=pc]Чувствуешь какие-нибудь изменения?[/say]")
 
-		saynn("[say=kait]Nope! I feel exactly the same.[/say]")
+		saynn("[say=kait]Не-а! Чувствую себя точно так же.[/say]")
 
-		saynn("Maybe you shouldn't have worried so much then.")
+		saynn("Может, тебе тогда не стоило так сильно переживать.")
 
-		saynn("Kait looks at the fennec.")
+		saynn("Кейт смотрит на феннека.")
 
-		saynn("[say=kait]I did your thing! Give me the gloves now.[/say]")
+		saynn("[say=kait]Я всё сделала! А теперь отдавай перчатки.[/say]")
 
-		saynn("Socket shrugs and puts the headset back on her head. Then she reaches into her backpack and produces a set of shiny insulated gloves.")
+		saynn("Сокет пожимает плечами и снова надевает гарнитуру. Затем она лезет в рюкзак и достает пару блестящих изолированных перчаток.")
 
-		saynn("[say=socket]There you go. One pair of rubber gloves.[/say]")
+		saynn("[say=socket]Держи. Пара резиновых перчаток.[/say]")
 
-		saynn("Kait holds them like they're made out of gold. To be fair, they seem quite useful, especially if you're just an assistant for example.")
+		saynn("Кейт держит их так, будто они сделаны из чистого золота. Справедливости ради, они кажутся весьма полезными, особенно если ты, скажем, всего лишь ассистент.")
 
-		saynn("[say=kait]Perfect! Let's go![/say]")
+		saynn("[say=kait]Идеально! Погнали![/say]")
 
-		saynn("The snow leopard grabs your hand and pulls you towards the exit.")
+		saynn("Снежная леопардица хватает тебя за руку и тянет к выходу.")
 
-		addButton("Follow", "Go back to your hideout", "go_back")
+		addButton("Следовать", "Вернуться в убежище", "go_back")
 	if(state == "go_back"):
 		removeCharacter("socket")
 		playAnimation(StageScene.Duo, "sit", {npc="kait", npcAction="kneel"})
 		aimCameraAndSetLocName("hideout_chill")
-		saynn("Back in the hideout, Kait kneels in front of the TV again.")
+		saynn("Вернувшись в убежище, Кейт снова опускается на колени перед телевизором.")
 
-		saynn("[say=kait]Told you it would work out![/say]")
+		saynn("[say=kait]Говорила же, что всё получится![/say]")
 
-		saynn("She puts on the yellow gloves.. they fit perfectly.")
+		saynn("Она надевает желтые перчатки... сидят идеально.")
 
-		saynn("[say=kait]Alright. Now we're talking![/say]")
+		saynn("[say=kait]Вот теперь другое дело![/say]")
 
-		saynn("Speaking of.. Maybe you should have a talk with her later. She did an incredibly risky thing after all.")
+		saynn("Кстати о ней... Может, тебе стоит поговорить с ней попозже? В конце концов, она совершила невероятно рискованный поступок.")
 
-		saynn("She works in silence for a minute, tying some wires together. Looks like the gloves aren't just some cheap budget knock offs, they actually prevent her from getting zapped.")
+		saynn("Она минуту работает в тишине, скручивая провода. Похоже, эти перчатки — не просто дешевая подделка, они реально защищают её от ударов током.")
 
-		saynn("[say=kait]That Socket.. she is kinda strange, isn't she?[/say]")
+		saynn("[say=kait]Эта Розетка... она какая-то странная, не находишь?[/say]")
 
-		saynn("[say=pc]Certainly.[/say]")
+		saynn("[say=pc]Безусловно.[/say]")
 
-		saynn("[say=kait]Doesn't matter, at least I've got the gloves.[/say]")
+		saynn("[say=kait]Неважно, главное, что перчатки теперь у меня.[/say]")
 
-		saynn("She really gets into the TV's guts, trying to do something deep inside.")
+		saynn("Она буквально зарывается в кишки телевизора, пытаясь что-то там подшаманить.")
 
-		saynn("[say=pc]Are you gonna return them?[/say]")
+		saynn("[say=pc]Ты собираешься их вернуть?[/say]")
 
-		saynn("[say=kait]Hah, why would I? These babies are mine now.[/say]")
+		saynn("[say=kait]Ха, с чего бы это? Теперь эти крошки мои.[/say]")
 
-		saynn("Suddenly, the white noise is gone! The static goes away, replaced by.. a person speaking.")
+		saynn("Внезапно белый шум исчезает! Помехи пропадают, а вместо них... слышится чей-то голос.")
 
-		saynn("[sayMale]AlphaNews, your only trusted source for galactic truth.[/sayMale]")
+		saynn("[sayMale]Альфа-Новости — ваш единственный надежный источник галактической истины.[/sayMale]")
 
-		saynn("It seems to be working!")
+		saynn("Кажется, работает!")
 
-		saynn("[say=kait]Grrrr-..[/say]")
+		saynn("[say=kait]Грррр...[/say]")
 
-		saynn("Kait doesn't seem to be happy about it though. She starts tinkering away again.")
+		saynn("Впрочем, Кейт, похоже, не в восторге. Она снова принимается ковыряться в настройках.")
 
-		saynn("[sayMale]Today, our glorious fleet has liberated yet another world from the evil grip of the vile Syndicate. The oppressed locals, free at last, greeted our brave soldiers with tears of joy, baskets of fresh bread, and handmade pies.[/sayMale]")
+		saynn("[sayMale]Сегодня наш славный флот освободил еще один мир из зловещей хватки подлого Синдиката. Угнетенные местные жители, наконец обретя свободу, встречали наших доблестных солдат слезами радости, корзинами свежего хлеба и домашними пирогами.[/sayMale]")
 
-		saynn("[say=kait]Where is that fucking receiver..[/say]")
+		saynn("[say=kait]Да где же этот гребаный приемник...[/say]")
 
-		saynn("[sayMale]Overwhelmed by gratitude, they have also collectively and unanimously begged to be welcomed under our protective umbrella. Because they know that freedom isn't just given, it's a reward for complete loyalty.[/sayMale]")
+		saynn("[sayMale]Переполненные благодарностью, они единогласно и дружно взмолились о том, чтобы их приняли под наше защитное крыло. Ибо они знают: свобода не просто даруется — она является наградой за абсолютную преданность.[/sayMale]")
 
-		saynn("That's when she finally manages to switch the channel. The screen goes black.. and then shows the beginning of some movie instead!")
+		saynn("И вот ей наконец удается переключить канал. Экран чернеет... а затем вместо новостей начинается какой-то фильм!")
 
-		saynn("[say=kait]Finally. We're not gonna watch your stupid war shit down here.[/say]")
+		saynn("[say=kait]Наконец-то. Мы не собираемся смотреть ваше тупое военное дерьмо.[/say]")
 
-		saynn("That's.. interesting.")
+		saynn("Это... любопытно.")
 
-		saynn("[say=pc]How did you do that? Other TVs don't have a way to switch the channel.[/say]")
+		saynn("[say=pc]Как тебе это удалось? У других теликов нет переключателя каналов.[/say]")
 
-		saynn("[say=kait]Because they lock the frequency, obviously. They're not just evil, they're also assholes.[/say]")
+		saynn("[say=kait]Потому что они блокируют частоту, очевидно. Они не просто злые, они еще и мудаки.[/say]")
 
-		saynn("Kait takes a few steps back.. and sees what's on screen.")
+		saynn("Кейт делает несколько шагов назад... и видит, что на экране.")
 
-		saynn("[say=kait]Space wars! That is my favourite childhood movie! We gotta watch it![/say]")
+		saynn("[say=kait]Космические войны! Это мой любимый фильм детства! Мы обязаны это посмотреть![/say]")
 
-		addButton("Praise her", "(Kait's Love +) Praise Kait for doing such a good job", "do_pat")
-		addButton("Be strict", "(Kati's Obedience +) Have a strict talk with Kait about how she should be more careful", "do_strict")
+		addButton("Похвалить её", "(Любовь Кейт +) Похвалить Кейт за то, что она так хорошо справилась", "do_pat")
+		addButton("Быть строгим", "(Послушание Кейт +) Провести строгий разговор с Кейт о том, что ей нужно быть осторожнее", "do_strict")
 	if(state == "do_strict"):
 		playAnimation(StageScene.Grope, "tease", {pc="kait", npc="pc"})
-		saynn("She got the gloves and fixed the TV.. but she did in a very dangerous way.")
+		saynn("Она достала перчатки и починила телик... но сделала это очень рискованным способом.")
 
-		saynn("[say=pc]Come here, Kait.[/say]")
+		saynn("[say=pc]Иди сюда, Кейт.[/say]")
 
-		saynn("As Kait gets closer, you give her a strict look. When she catches it, her tail goes low.")
+		saynn("Когда Кейт подходит ближе, ты бросаешь на неё строгий взгляд. Поймав его, она прижимает хвост.")
 
-		saynn("[say=pc]You've acted incredibly recklessly today.[/say]")
+		saynn("[say=pc]Сегодня ты вела себя невероятно безрассудно.[/say]")
 
-		saynn("She rolls her eyes.")
+		saynn("Она закатывает глаза.")
 
-		saynn("[say=kait]So? It worked out![/say]")
+		saynn("[say=kait]Ну и? Всё же сработало![/say]")
 
-		saynn("Your hand darts out to get a hold of her collar, making her look at you.")
+		saynn("Твоя рука резко выбрасывается вперёд, чтобы схватить её за ошейник, заставляя её посмотреть на тебя.")
 
-		saynn("[say=pc]Don't rely on dumb luck, Kait, please, it will fuck you over one day.[/say]")
+		saynn("[say=pc]Не полагайся на тупое везение, Кейт, умоляю, однажды оно тебя поимеет.[/say]")
 
-		saynn("Her gaze jumps from spot to spot.. always avoiding yours. Her rear paw kicks the floor.")
+		saynn("Её взгляд мечется с места на место, постоянно избегая твоего. Задняя лапа нервно подергивается по полу.")
 
-		saynn("[say=kait]I was ready for the consequences.. obviously..[/say]")
+		saynn("[say=kait]Я была готова к последствиям... очевидно же...[/say]")
 
-		saynn("[say=pc]But you're not alone anymore. You're in a team. Why do I have to say it to you? You gotta be more responsible.[/say]")
+		saynn("[say=pc]Но теперь ты не одна. Ты в команде. Почему я должна повторять тебе это? Ты должна быть ответственнее.[/say]")
 
-		saynn("Her ears go flat, fluffy tail wraps around her leg.")
+		saynn("Её ушки прижимаются к голове, а пушистый хвост обвивает ногу.")
 
-		saynn("[say=pc]If you can't, at least listen to my orders then. Okay? Don't be a bad girl.[/say]")
+		saynn("[say=pc]Раз не можешь, то хотя бы слушайся моих приказов. Ладно? Не будь плохой девочкой.[/say]")
 
-		saynn("She nods subtly.")
+		saynn("Она едва заметно кивает.")
 
-		saynn("[say=kait]Yes.. My bad.[/say]")
+		saynn("[say=kait]Да... Моя вина.[/say]")
 
-		saynn("Looks like she learned something. Might as well give her the carrot too.")
+		saynn("Похоже, она кое-чему научилась. Можно и морковку ей дать.")
 
-		saynn("[say=pc]I understand that you felt bored. And I'm glad it worked out. Good job.[/say]")
+		saynn("[say=pc]Я понимаю, что тебе было скучно. И я рада, что всё получилось. Молодец.[/say]")
 
-		saynn("You give her one headpat.. it seems to cheer her up enough to make her smile again. Then she suddenly gasps.")
+		saynn("Ты гладишь её по голове... кажется, это достаточно поднимает ей настроение, чтобы она снова улыбнулась. Но вдруг она резко вскрикивает.")
 
-		saynn("[say=kait]Oh.. I almost forgot! Since I'm done with the TV, I gotta bring the gloves back to Socket.[/say]")
+		saynn("[say=kait]Ох... чуть не забыла! Раз с теликом закончено, надо вернуть перчатки Сокет.[/say]")
 
-		saynn("You raise a brow and watch Kait take off the gloves carefully.")
+		saynn("Ты вскидываешь бровь, наблюдая, как Кейт осторожно снимает перчатки.")
 
-		saynn("[say=pc]Didn't you say that you're keeping them?[/say]")
+		saynn("[say=pc]Разве ты не говорила, что оставляешь их себе?[/say]")
 
-		saynn("[say=kait]Me? I don't think I did..[/say]")
+		saynn("[say=kait]Я? Не думаю, что я...[/say]")
 
-		saynn("For some reason, she starts unbuttoning her shirt. Strange.. but why not.")
+		saynn("Почему-то она начинает расстегивать рубашку. Странно... но почему бы и нет.")
 
-		saynn("[say=pc]You're gonna miss the movie too, can't you wait?[/say]")
+		saynn("[say=pc]Ты же и фильм пропустишь, неужели не можешь подождать?[/say]")
 
-		saynn("[say=kait]No.. I gotta give them to her.. like.. right now..[/say]")
+		saynn("[say=kait]Нет... я должен отдать их ей... прямо... сейчас...[/say]")
 
-		saynn("Her gaze looks a bit spaced out.")
+		saynn("Её взгляд кажется немного отсутствующим.")
 
-		addButton("Continue", "See what happens next", "naked_kait")
+		addButton("Продолжить", "Смотреть, что будет дальше", "naked_kait")
 	if(state == "do_pat"):
 		playAnimation(StageScene.Grope, "pat", {pc="kait", npc="pc"})
-		saynn("She got the gloves.. and managed to fix the TV. She deserves the praise.")
+		saynn("Она раздобыла перчатки... и даже умудрилась починить телик. Она заслуживает похвалы.")
 
-		saynn("[say=pc]Yeah, we should. Come here.[/say]")
+		saynn("[say=pc]Да, стоит. Иди сюда.[/say]")
 
-		saynn("As Kait gets closer, you give her a few soft pats on the head. The sudden act catches her off-guard, her tail goes stiff.. but then she begins purring.")
+		saynn("Когда Кейт подходит ближе, ты пару раз мягко гладишь её по голове. Этот внезапный жест застает её врасплох, её хвост на мгновение замирает... но затем она начинает мурлыкать.")
 
-		saynn("[say=pc]You did a good job.[/say]")
+		saynn("[say=pc]Ты отлично справилась.[/say]")
 
-		saynn("[say=kait]Thank you. I appreciate it.[/say]")
+		saynn("[say=kait]Спасибо. Мне очень приятно.[/say]")
 
-		saynn("She offers you a cute smile.")
+		saynn("Она мило тебе улыбается.")
 
-		saynn("[say=kait]Oh.. I almost forgot! Since I'm done with the TV, I gotta bring the gloves back to Socket.[/say]")
+		saynn("[say=kait]Ох... чуть не забыла! Раз с теликом закончено, надо вернуть перчатки Сокет.[/say]")
 
-		saynn("You raise a brow and watch Kait take off the gloves carefully.")
+		saynn("Ты вскидываешь бровь, наблюдая, как Кейт осторожно снимает перчатки.")
 
-		saynn("[say=pc]Didn't you say that you're keeping them?[/say]")
+		saynn("[say=pc]Разве ты не говорила, что оставляешь их себе?[/say]")
 
-		saynn("[say=kait]Me? I don't think I did..[/say]")
+		saynn("[say=kait]Я? Не думаю, что я...[/say]")
 
-		saynn("For some reason, she starts unbuttoning her shirt. Strange.. but why not.")
+		saynn("Почему-то она начинает расстегивать рубашку. Странно... но почему бы и нет.")
 
-		saynn("[say=pc]You're gonna miss the movie too, can't you wait?[/say]")
+		saynn("[say=pc]Ты же и фильм пропустишь, неужели не можешь подождать?[/say]")
 
-		saynn("[say=kait]No.. I gotta give them to her.. like.. right now..[/say]")
+		saynn("[say=kait]Нет... я должен отдать их ей... прямо... сейчас...[/say]")
 
-		saynn("Her gaze looks a bit spaced out.")
+		saynn("Её взгляд кажется немного отсутствующим.")
 
-		addButton("Continue", "See what happens next", "naked_kait")
+		addButton("Продолжить", "Смотреть, что будет дальше", "naked_kait")
 	if(state == "naked_kait"):
 		playAnimation(StageScene.Duo, "stand", {npc="kait", npcBodyState={naked=true}})
 		addCharacter("kait", ["naked"])
-		saynn("Kait completely strips her clothing in front of you. Her shirt falls to the floor. Then her shorts.")
+		saynn("Кейт полностью раздевается прямо перед тобой. Сначала на пол падает её рубашка, а затем и шорты.")
 
-		saynn("She then just stands there completely naked. Her snow-white fur covers most of her body.. but her pink nipples are clearly visible on her chest, perky and exposed. Between her legs, her soft pussy lips peek out from her fur.")
+		saynn("Затем она просто стоит перед тобой совершенно голая. Её белоснежный мех покрывает почти всё тело... но розовые соски на груди отчетливо видны — упругие и выставленные напоказ. А между ног из меха выглядывают мягкие половые губки.")
 
-		saynn("[say=pc]Kait? All good?[/say]")
+		saynn("[say=pc]Кейт? Всё в порядке?[/say]")
 
-		saynn("[say=kait]Yeah? Yeah. What do you mean?[/say]")
+		saynn("[say=kait]А? Да, всё нормально. Что ты имеешь в виду?[/say]")
 
-		saynn("She doesn't cover herself. Doesn't even seem to notice.")
+		saynn("Она даже не пытается прикрыться. Кажется, она этого даже не замечает.")
 
-		saynn("[say=pc]Right. Nothing. Carry on, silly cat.[/say]")
+		saynn("[say=pc]Понятно. Да ничего особенного. Продолжай, глупая кошка.[/say]")
 
-		saynn("Holding the gloves, she heads towards the hideout's exit.")
+		saynn("Сжимая в руках перчатки, она направляется к выходу из убежища.")
 
-		saynn("[say=kait]Okay, I'll be right back![/say]")
+		saynn("[say=kait]Ладно, я скоро вернусь![/say]")
 
-		saynn("She jogs away, her exposed breasts and butt bouncing from each step.")
+		saynn("Она убегает легким бегом, и её обнаженная грудь и задница подпрыгивают в такт каждому шагу.")
 
-		saynn("That's what she gets for wearing random headsets.")
+		saynn("Так ей и надо, раз носит всякие случайные гарнитуры.")
 
-		addButton("Continue", "See what happens next", "alone_wait")
+		addButton("Продолжить", "Смотреть, что будет дальше", "alone_wait")
 	if(state == "alone_wait"):
 		removeCharacter("kait")
 		playAnimation(StageScene.Solo, "sit")
-		saynn("You just sit and watch the movie.")
+		saynn("Просто сиди и смотри кино.")
 
-		saynn("It's not bad actually. The effects are a little dated perhaps.. But after so much time behind bars, any movie is gonna feel great.")
+		saynn("На самом деле неплохо. Эффекты, пожалуй, немного устарели... Но после стольких лет за решеткой любой фильм кажется божественным.")
 
-		saynn("The plot.. Nothing special really. Good guys must protect their universe before the bad guys destroy it.")
+		saynn("Сюжет... Ничего особенного. Хорошие парни должны защитить свою вселенную, пока плохие её не уничтожили.")
 
-		saynn("Some popcorn would be nice. But oh well.")
+		saynn("Попкорна бы сейчас не помешало. Но ладно.")
 
-		saynn("Some time later..")
+		saynn("Спустя некоторое время...")
 
 		saynn("[say=kait]{pc.name}!![/say]")
 
-		saynn("Looks like Kait is back. Her mind as well it seems.")
+		saynn("Похоже, Кейт вернулась. И, судя по всему, разум тоже.")
 
-		addButton("Continue", "See what happens next", "kait_angy")
+		addButton("Продолжить", "Смотреть, что будет дальше", "kait_angy")
 	if(state == "kait_angy"):
 		addCharacter("kait", ["naked"])
 		playAnimation(StageScene.Duo, "stand", {npc="kait", npcBodyState={naked=true}})
-		saynn("Kait storms the room.")
+		saynn("Кейт влетает в комнату.")
 
-		saynn("[say=kait]Why didn't you stop me?? I walked naked through the whole prison! Every guard and their pet saw me![/say]")
+		saynn("[say=kait]Почему ты меня не остановил?? Я прошла нагишом через всю тюрьму! На меня пялился каждый охранник и все их шалавы![/say]")
 
-		saynn("You can't help but to chuckle softly.")
+		saynn("Ты невольно тихо посмеиваешься.")
 
-		saynn("[say=pc]Really? Hah.[/say]")
+		saynn("[say=pc]Серьезно? Хах.[/say]")
 
-		saynn("She pushes you lightly.")
+		saynn("Она слегка подталкивает тебя.")
 
-		saynn("[say=kait]One of them kept looking at me in the elevator! I thought I had some dirt on my fur![/say]")
+		saynn("[say=kait]Один из них пялился на меня в лифте! Я уж думала, у меня на меху какая-то грязь![/say]")
 
-		saynn("[say=pc]It was entirely your choice.[/say]")
+		saynn("[say=pc]Это был целиком твой выбор.[/say]")
 
-		saynn("She pouts and crosses her arms under her breasts.. that are still exposed.")
+		saynn("Она дуется и скрещивает руки под грудью... которая всё еще остается открытой.")
 
-		saynn("[say=kait]Socket got very amused too if you're curious.. She snapped her fingers.. And I realized what was happening. I was fucking naked in the middle of nowhere! I'm so mad at you![/say]")
+		saynn("[say=kait]Сокет тоже была в восторге, если тебе интересно... Она щелкнула пальцами... И тут до меня дошло, что происходит. Я была чертовски голой посреди черт знает чего! Я так на тебя зла![/say]")
 
-		saynn("[say=pc]Must have been a very interesting journey back.[/say]")
+		saynn("[say=pc]Должно быть, обратный путь был очень интересным.[/say]")
 
-		saynn("You keep giggling while Kait lightly scratches you everywhere.. makes it even more entertaining.")
+		saynn("Ты продолжаешь хихикать, пока Кейт слегка щекочет тебя повсюду... это делает процесс еще забавнее.")
 
-		saynn("[say=kait]It wasn't! I had to cover myself with what I could.. my tail and paws.. and other lilacs. I'm not a slut, you know![/say]")
+		saynn("[say=kait]Вовсе нет! Мне пришлось прикрываться всем, чем удалось... хвостом, лапами... и остальными мелочами. Я не шлюха, ясно тебе![/say]")
 
-		saynn("[say=pc]I know. Everyone knows now.[/say]")
+		saynn("[say=pc]Знаю. Теперь это знают все.[/say]")
 
-		saynn("[say=kait]GRrrr-r![/say]")
+		saynn("[say=kait]Гррр-р![/say]")
 
-		saynn("She furrows her brows a lot and keeps scratching you more.")
+		saynn("Она сильно хмурится и продолжает чесать тебя всё сильнее.")
 
-		saynn("[say=pc]You wanna kill me or watch the movie?[/say]")
+		saynn("[say=pc]Ты хочешь меня прикончить или фильм смотреть?[/say]")
 
-		saynn("[say=kait]..huff.. the movie..[/say]")
+		saynn("[say=kait]..пых.. фильм..[/say]")
 
-		saynn("Kait grabs her clothes.. dusts them off and wears them. She sits on the crate near you and sighs.")
+		saynn("Кейт хватает свою одежду... отряхивает её и надевает. Она садится на ящик рядом с тобой и вздыхает.")
 
-		saynn("Watching the TV makes her calm down eventually.")
+		saynn("Просмотр телевизора в итоге помогает ей успокоиться.")
 
-		saynn("[say=kait]I guess it was worth it after all..[/say]")
+		saynn("[say=kait]Думаю, оно того стоило..[/say]")
 
-		saynn("And so you spend some more time together, watching Space Wars.")
+		saynn("И вот вы проводите ещё немного времени вместе, смотря «Космические войны».")
 
-		saynn("Mission completed!")
+		saynn("Миссия выполнена!")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

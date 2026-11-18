@@ -14,115 +14,115 @@ func _run():
 		mean = (c1 == 2)
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcAction="allfours", further=true, npcBodyState={naked=true, leashedBy="pc"}})
 		aimCameraAndSetLocName("hideout_breakroom")
-		saynn("You enter Rahi's cell and grab her leash. She doesn't seem to resist as you bring her closer to the exit.. but then stop and turn around.")
+		saynn("Ты входишь в камеру Рахи и хватаешь её поводок. Она не сопротивляется, когда ты ведешь её к выходу... но вдруг замирает и оборачивается.")
 
 		saynn("[say=pc]"+str(ch1("I really wanna trust you. You're gonna be a good puppy for me for a bit, okay?", "I will check how obedient you are. From now on, you're a dog. Until I say otherwise. Got it?", "You will act like a bitch in heat from now on. Do you understand that, slut?"))+"[/say]")
 
-		saynn("Rahi blinks, confused, her ears go flat.")
+		saynn("Рахи растерянно моргает, её ушки прижимаются к голове.")
 
-		saynn("[say=rahi]Meow?.. She is a cat though..[/say]")
+		saynn("[say=rahi]Мяу?.. Но она же кошка..[/say]")
 
-		saynn("Your grip on the leash tightens.")
+		saynn("Твоя хватка на поводке крепнет.")
 
 		saynn("[say=pc]"+str(ch1("Yes, I know. But I wanna see how well you can do this. It's gonna be fun. Let's get those clothes off first, pets don't wear them, do they?", "I only see a puppy in front of me. A very strange puppy. Puppies usually don't wear clothes, do they?", "I don't care. You'll play the part or I'll make you. Now, dogs don't need clothes. Take them off."))+"[/say]")
 
-		saynn("She hesitates.. but eventually her paws begin to unbutton her shirt. And you just watch as she reveals her perky chest to you, her nips now catching the slight cold breeze that travels here. Shorts are next, she catches the waistband with her claws and slowly tugs down on its sides, letting the cloth slide down along her thighs, revealing her cute little pink flower.")
+		saynn("Она колеблется... но в конце концов её лапки начинают расстегивать пуговицы на рубашке. И ты просто наблюдаешь, как она обнажает свою упругую грудь, соски которой теперь ловят легкий прохладный ветерок. Следом идут шорты: она цепляется когтями за пояс и медленно тянет его в стороны, позволяя ткани соскользнуть по бедрам и обнажить её милый розовый цветок.")
 
 		saynn("[say=pc]"+str(ch1("Good. Precious. Now could you get on all fours for me?", "Mhm. Pups don't walk on two legs too.", "Get on all fours."))+"[/say]")
 
-		saynn("Rahi rubs her snout.. and then slowly lowers herself in front of you, her tail tucks between her legs.")
+		saynn("Рахи трется мордочкой о лапы... а затем медленно опускается перед тобой, поджав хвост между ног.")
 
-		saynn("[say=rahi]..meow?..[/say]")
+		saynn("[say=rahi]... мяу?..[/say]")
 
 		saynn("[say=pc]"+str(ch1("Almost. Try to get into the mindset of a puppy for me, please? Now let's go for a walk.", "No, that's not the noise that puppies make. Let's go for walk.", "Meow? Really? You're such a dumb pup. Let's go."))+"[/say]")
 
-		saynn("Her cheeks blush subtly. Time to give your pup some walkies.")
+		saynn("Её щеки едва заметно краснеют. Пора вывести свою собачку на прогулку.")
 
-		addButton("Continue", "See what happens next", "near_arena")
+		addButton("Продолжить", "Смотреть, что будет дальше", "near_arena")
 	if(state == "near_arena"):
 		aimCameraAndSetLocName("fight_corner_ne")
-		saynn("You lead her out of the secret hideout and towards the roaring crowd of the arena. There is a juicy fight happening at the moment so aren't catching that much attention. Rahi's paws shuffle across the cold floor, her tail curling low, her chin low.")
+		saynn("Ты выводишь её из секретного убежища навстрев ревущей толпе арены. Сейчас там идет сочный бой, так что вы не привлекаете слишком много внимания. Лапки Рахи шаркают по холодному полу, хвост поджат, а подбородок опущен.")
 
-		saynn("Occasionally she tries to rise back to two feet.. but a pull of your leash keeps her down.")
+		saynn("Время от времени она пытается подняться на задние лапы... но рывок поводка заставляет её снова опуститься.")
 
 		saynn("[say=pc]"+str(ch1("You're doing so well. Just keep crawling, puppy.", "Stay down. Eyes forward. No stopping, just crawl.", "What part of being a bitch don't you understand? Crawl."))+"[/say]")
 
-		saynn("She obeys, slowly crawling behind you, trying to avoid bumping into anyone.")
+		saynn("Она подчиняется, медленно ползя за тобой и стараясь ни в кого не врезаться.")
 
-		saynn("Some inmates begin to take notice. First, there are just a few whispers.. then there are fingers being pointed. Rahi's cheeks blush harder.. but she keeps crawling.")
+		saynn("Некоторые заключенные начинают обращать на вас внимание. Сначала слышится лишь шепот... затем на вас начинают указывать пальцами. Щеки Рахи краснеют всё сильнее... но она продолжает ползти.")
 
-		saynn("One of the inmates steps closer. He asks if he could pet Rahi.")
+		saynn("Один из заключенных подходит ближе. Он спрашивает, можно ли погладить Рахи.")
 
-		saynn("The feline freezes. She looks up at you with wide, pleading blue eyes.")
+		saynn("Кошка замирает. Она смотрит на тебя широко распахнутыми, умоляющими голубыми глазами.")
 
 		saynn("[say=pc]"+str(ch1("Of course. She loves attention. Just be gentle.", "Yes. But make it quick.", "Go ahead. She's just an animal."))+"[/say]")
 
-		saynn("The inmate kneels down and scratches behind Rahi's ear. She flinches, her whole body tenses.")
+		saynn("Заключенная опускается на колени и начинает чесать Рахи за ушком. Та вздрагивает, всё её тело напрягается.")
 
-		saynn("[say=rahi]..rrr-r..[/say]")
+		saynn("[say=rahi]..ррр-р..[/say]")
 
-		saynn("Her eyes go half-closed as the same inmate starts patting her head. A little whine slips past her teeth.")
+		saynn("Её глаза полузакрываются, когда та же заключенная начинает поглаживать её по голове. Сквозь зубы прорывается тихий скулёж.")
 
-		saynn("When he is done, that inmate goes away.. but someone else takes their place. They ask you nicely so you allow them to pat your pet as well.")
+		saynn("Когда она заканчивает, заключенная уходит... но на её место приходит кто-то другой. Они вежливо просят разрешения, и ты позволяешь им тоже погладить твою зверушку.")
 
-		saynn("[sayFemale]Who's a good puppy?? Who's a good girl???[/sayFemale]")
+		saynn("[sayFemale]Кто у нас хорошая собачка?? Кто у нас умница???[/sayFemale]")
 
-		saynn("Rahi blushes deeply as she gets lots of pats and scritches, her butt sways ever so slightly.")
+		saynn("Рахи густо краснеет от обилия поглаживаний и почесушек, её попка при этом едва заметно покачивается.")
 
 		saynn("[say=pc]"+str(ch1("Say something, puppy.", "Voice, puppy.", "Use your voice, mut."))+"[/say]")
 
-		saynn("[say=rahi]..r-ruff..[/say]")
+		saynn("[say=rahi]..р-р-р... гав...[/say]")
 
-		saynn("[sayFemale]Yes, you are! What a beautiful puppy! Adorable little pet~.[/sayFemale]")
+		saynn("[sayFemale]Да, ты! Какая красивая собачка! Прелестная маленькая питомица~.[/sayFemale]")
 
-		saynn("Rahi struggles to contain herself.. a subtle purring starts to escape her. That same inmate now strokes Rahi's back and gives her a soft pat on the rear before getting up and getting the attention of a whole bunch of people!")
+		saynn("Рахи изо всех сил пытается сдержаться... из неё начинает вырываться едва уловимое мурлыканье. Та же заключенная теперь гладит Рахи по спине и мягко шлепает её по заднице, прежде чем подняться и привлечь внимание целой толпы людей!")
 
-		saynn("The group asks if they can rub Rahi's belly.")
+		saynn("Группа спрашивает, можно ли им погладить Рахи по животику.")
 
 		saynn("[say=pc]"+str(ch1("Yes, just be extremely gentle with my puppy.", "Go ahead. She'll roll over for you.", "If she resists, just hold her down."))+"[/say]")
 
-		saynn("The inmates giggle and then flip Rahi onto her back! The feline squeaks.. but doesn't fight it. Her belly is exposed, pink nipples looking stiff, the tail covering her other naughty bits.")
+		saynn("Заключенные хихикают и переворачивают Рахи на спину! Кошечка пискнула... но не сопротивляется. Её животик обнажен, розовые соски затвердели, а хвост прикрывает остальные её грязные местечки.")
 
-		saynn("Someone's rough palm begins to rub slow circles around her soft brown fur. Rahi's breath hitches. Her hips shift. Involuntarily.")
+		saynn("Чья-то грубая ладонь начинает медленно выводить круги по её мягкому коричневому меху. Дыхание Рахи сбивается. Её бедра непроизвольно дергаются.")
 
-		saynn("Another inmate reaches down and starts scritching under her chin. A third hand is giving attention to her ears. A fourth one strokes her waist. The fifth one brushes her inner thighs and the tail.")
+		saynn("Другая заключенная наклоняется и начинает чесать её под подбородком. Третья рука ласкает её ушки. Четвертая гладит её за талию. Пятая проводит по внутренней стороне бедер и хвосту.")
 
-		saynn("Rahi is surrounded now, a bunch of inmates petting her, scritching her.. and whispering words into her ears.. praising her.. The arena fight doesn't seem to be as interesting to these people anymore.")
+		saynn("Теперь Рахи окружена толпой заключенных, которые гладят её, чешут... и шепчут ей на ушко... восхваляя её... Битва на арене, кажется, больше не так интересна этим людям.")
 
-		saynn("[say=rahi]Hh.. ahh-h.. w-woof.. mm.. r-ruuff..[/say]")
+		saynn("[say=rahi]Хх.. ахх-х.. гав.. мм.. р-ррррф..[/say]")
 
-		saynn("Her tail and toes are curling, her face is burning, more and more purring escapes the adorable puppy.")
+		saynn("Её хвост и пальцы на лапах поджимаются, лицо горит, а из милой собачки вырывается всё больше и больше мурчания.")
 
 		saynn("[say=pc]"+str(ch1("Look at you. You love this, don't you, puppy?", "That's it, puppy. Let everyone see how much you like it.", "Such a slut. Getting off on being treated like a dog."))+"[/say]")
 
-		saynn("Rahi whines.. her maw making long, needy noises. Her hips start rocking against nothing, her thighs rubbing together. The sheer amount of belly rubs and headpats, coupled with all the sweet words, make her look silly, her tongue rolls out, she starts panting and barking softly, her tail no longer covering her wet sex.")
+		saynn("Рахи скулит... её пасть издает долгие, жаждущие звуки. Её бедра начинают качаться в пустоте, а бедра трутся друг о друга. Обилие почесушек живота и поглаживаний по голове в сочетании со всеми этими сладкими словами заставляет её выглядеть глупо: язык вываливается наружу, она начинает тихо тяжело дышать и лаять, а хвост больше не прикрывает её влажную киску.")
 
-		saynn("Eventually the crowd has enough fun with your pussy and starts to disperse.")
+		saynn("В конце концов, толпе надоедает развлекаться с твоей киской, и она начинает расходиться.")
 
-		saynn("Rahi lies on her back, still panting, legs slightly apart, her tail wagging.. thumping against the floor.")
+		saynn("Рахи лежит на спине, всё еще тяжело дыша, ноги слегка разведены, а хвост виляет... стуча по полу.")
 
 		saynn("[say=pc]"+str(ch1("Good puppy. Precious puppy. I hope I wasn't too hard on you.", "You don't get to ask for more. Only if you choose to obey.", "There you go. That's a bitch in heat if I ever saw one. Obey and this might happen again."))+"[/say]")
 
-		saynn("You tug on the leash. Rahi rolls over clumsily.. starts following on all fours, her gripping slit leaving a wet trail on the concrete.")
+		saynn("Ты тянешь за поводок. Рахи неуклюже переворачивается... начинает идти на четвереньках, оставляя влажный след от своей сжимающейся щели на бетоне.")
 
-		addButton("Continue", "See what happens next", "back_to_cell")
+		addButton("Продолжить", "Смотреть, что будет дальше", "back_to_cell")
 	if(state == "back_to_cell"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcBodyState={leashedBy="pc"}})
 		aimCameraAndSetLocName("hideout_breakroom")
-		saynn("You bring Rahi back into the cell. The chain is tied around the pip again. She is still panting, her eyes struggle to focus.")
+		saynn("Ты возвращаешь Рахи в камеру. Цепь снова затянута вокруг её соска. Она всё ещё тяжело дышит, а её взгляд с трудом фокусируется.")
 
 		if (perfect):
-			saynn("[say=rahi]Woof! Uh.. Y-yes.. she will do anything.. just.. please.. more petting.. more..[/say]")
+			saynn("[say=rahi]Гав! Ох.. Д-да.. она сделает всё что угодно.. только.. пожалуйста.. ещё погладь её.. ещё..[/say]")
 
 		elif (success):
-			saynn("[say=rahi]Yes.. woof..[/say]")
+			saynn("[say=rahi]Да.. гав..[/say]")
 
 		else:
-			saynn("[say=rahi]T-this was.. s-something..[/say]")
+			saynn("[say=rahi]Э-это было.. ч-что-то с чем-то..[/say]")
 
-		saynn("You step out of the cell to see what Kait thinks..")
+		saynn("Ты выходишь из камеры, чтобы посмотреть, что об этом думает Кейт...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

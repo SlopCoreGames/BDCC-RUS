@@ -44,11 +44,11 @@ func _reactInit():
 
 func _run():
 	if(state == ""):
-		addButton("Close", "Meow", "endthescene")
-		addButton("SETTINGS", "Change some stuff", "settingsmenu")
+		addButton("Закрыть", "Мяу", "endthescene")
+		addButton("SETTINGS", "Изменить настройки", "settingsmenu")
 		
 		for stageScene in anims:
-			addButton(stageScene, "Choose this", "pickcat", [stageScene])
+			addButton(stageScene, "Выбрать это", "pickcat", [stageScene])
 			
 		if(page > 0):
 			GM.ui.setCurrentPage(page)
@@ -59,29 +59,29 @@ func _run():
 		saynn("npc=\""+secondNPC+"\"")
 		
 		if(everyoneCumming):
-			saynn("Everyone will be shown orgasming")
+			saynn("Всем будет показан оргазм")
 		
-		addButton("PC", "change first character", "changepcmenu")
-		addButton("NPC", "change second character", "changenpcmenu")
-		addButton("Toggle cum", "Change if everyone is cumming or not", "toggle_cum")
-		addButton("Back", "Meow", "")
+		addButton("PC", "сменить первого персонажа", "changepcmenu")
+		addButton("NPC", "сменить второго персонажа", "changenpcmenu")
+		addButton("Вкл/выкл кончу", "Изменить, кончают все или нет", "toggle_cum")
+		addButton("Назад", "Мяу", "")
 
 	if(state == "changepcmenu" || state == "changenpcmenu"):
-		addButton("Back", "Meow", "settingsmenu")
-		addButton("PLAYER", "Set to pc", state+"_pick", ["pc"])
+		addButton("Назад", "Мяу", "settingsmenu")
+		addButton("PLAYER", "Установить как pc", state+"_pick", ["pc"])
 		for charID in GlobalRegistry.getCharacters():
 			var character = GlobalRegistry.getCharacter(charID)
 			if(character == null || charID == "errorerror"):
 				continue
-			addButton(character.getName(), "Set to "+str(charID), state+"_pick", [charID])
+			addButton(character.getName(), "Установить "+str(charID), state+"_pick", [charID])
 
 	if(state == "pickcat"):
-		addButton("Back", "Nya", "")
+		addButton("Назад", "Ня", "")
 		saynn(lastSceneString)
 		
 		var theanims = anims[currentCategory]
 		for a in theanims:
-			addButton(a, "play this", "playa", [a])
+			addButton(a, "воспроизведение этого", "playa", [a])
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

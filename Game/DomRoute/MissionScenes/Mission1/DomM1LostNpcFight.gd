@@ -7,18 +7,18 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.GivingBirth, "idle")
 		aimCameraAndSetLocName("solitary_cell")
-		saynn("You've lost the fight!")
+		saynn("Ты проиграла бой!")
 
-		saynn("The guard calls others and together they apprehend you.")
+		saynn("Охранник зовет подмогу, и они вместе скручивают тебя.")
 
-		saynn("Soon after, you are thrown into solitary where you can think about your actions.")
+		saynn("Вскоре тебя бросают в карцер, чтобы ты могла поразмыслить над своим поведением.")
 
-		saynn("You didn't get to any working printers.. looks like you will have to do it all again.")
+		saynn("До принтеров ты так и не добралась... похоже, придется начинать всё сначала.")
 
-		saynn("Mission failed!")
+		saynn("Миссия провалена!")
 
-		addButton("Continue", "Stop the mission", "stopthemission")
-		addButton("Restart", "Try the mission again", "trymissionagain")
+		addButton("Продолжить", "Прервать миссию", "stopthemission")
+		addButton("Перезапустить", "Попробовать еще раз", "trymissionagain")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

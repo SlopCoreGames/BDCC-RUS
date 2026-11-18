@@ -145,22 +145,22 @@ __meta__ = {
 unique_name_in_owner = true
 margin_right = 116.0
 margin_bottom = 26.0
-hint_tooltip = "Quick save (F5)"
+hint_tooltip = "Быстрое сохранение (F5)"
 size_flags_horizontal = 3
 shortcut_in_tooltip = false
 shortcut = SubResource( 16 )
-text = "Q.save"
+text = "Б.сохр."
 
 [node name="LoadButton" type="Button" parent="MainLayout/LeftPanel/Margin/VBox/HBoxContainer2"]
 unique_name_in_owner = true
 margin_left = 120.0
 margin_right = 236.0
 margin_bottom = 26.0
-hint_tooltip = "Quick load (F9)"
+hint_tooltip = "Быстрая загрузка (F9)"
 size_flags_horizontal = 3
 shortcut_in_tooltip = false
 shortcut = SubResource( 18 )
-text = "Q.load"
+text = "Б.загр."
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="MainLayout/LeftPanel/Margin/VBox"]
 margin_top = 640.0
@@ -174,29 +174,29 @@ __meta__ = {
 unique_name_in_owner = true
 margin_right = 95.0
 margin_bottom = 26.0
-hint_tooltip = "Spend the stat points and look at your skills (X)"
+hint_tooltip = "Потратить очки характеристик и посмотреть навыки (X)"
 size_flags_horizontal = 3
 shortcut_in_tooltip = false
 shortcut = SubResource( 10 )
-text = "Skills"
+text = "Навыки"
 
 [node name="MenuButton" type="Button" parent="MainLayout/LeftPanel/Margin/VBox/HBoxContainer3"]
 unique_name_in_owner = true
 margin_left = 99.0
 margin_right = 195.0
 margin_bottom = 26.0
-hint_tooltip = "Open the menu (C)"
+hint_tooltip = "Открыть меню (C)"
 size_flags_horizontal = 3
 shortcut_in_tooltip = false
 shortcut = SubResource( 8 )
-text = "Menu"
+text = "Меню"
 
 [node name="DebugMenuButton" type="Button" parent="MainLayout/LeftPanel/Margin/VBox/HBoxContainer3"]
 unique_name_in_owner = true
 margin_left = 199.0
 margin_right = 236.0
 margin_bottom = 26.0
-hint_tooltip = "Open the debug/cheats menu"
+hint_tooltip = "Открыть меню отладки/читов"
 shortcut_in_tooltip = false
 text = "DG"
 
@@ -209,10 +209,10 @@ margin_bottom = 696.0
 unique_name_in_owner = true
 margin_right = 236.0
 margin_bottom = 26.0
-hint_tooltip = "Rollback the game's state back"
+hint_tooltip = "Откатить состояние игры"
 size_flags_horizontal = 3
 shortcut_in_tooltip = false
-text = "Rollback"
+text = "Откат"
 
 [node name="HSplitContainer" type="HSplitContainer" parent="MainLayout"]
 margin_left = 264.0
@@ -248,14 +248,14 @@ unique_name_in_owner = true
 margin_left = 4.0
 margin_right = 146.0
 margin_bottom = 30.0
-text = "Show original"
+text = "Показать оригинал"
 
 [node name="ManualTranslateButton" type="Button" parent="MainLayout/MainScreenBoxContainer/Panel/TranslateBox"]
 unique_name_in_owner = true
 margin_left = 150.0
 margin_right = 242.0
 margin_bottom = 30.0
-text = "Translate"
+text = "Перевести"
 
 [node name="SexToySmallPanel" parent="MainLayout/MainScreenBoxContainer/Panel" instance=ExtResource( 7 )]
 margin_left = 246.0
@@ -431,7 +431,7 @@ columns = 5
 margin_right = 75.0
 margin_bottom = 26.0
 size_flags_horizontal = 3
-text = "Close"
+text = "Закрыть"
 
 [node name="DebugPanel" parent="MainLayout" instance=ExtResource( 16 )]
 unique_name_in_owner = true
@@ -493,7 +493,7 @@ margin_top = 18.8284
 margin_right = 78.0
 margin_bottom = 44.8284
 rect_min_size = Vector2( 100, 40 )
-text = "Close"
+text = "Закрыть"
 
 [node name="FullArtLabel" type="Label" parent="FullArtworkRect"]
 unique_name_in_owner = true

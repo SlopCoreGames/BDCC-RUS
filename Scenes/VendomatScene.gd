@@ -58,13 +58,13 @@ func sort_stock(a, b):
 
 func _run():
 	if(state == ""):
-		saynn("You approach the vendomat, it's a bulky machine that has a screen, a few buttons and an open compartment. Seems like you can get some things here in exchange for your credits")
+		saynn("Вы подходите к вендоматy — это громоздкий аппарат с экраном, парой кнопок и открытым отсеком. Похоже, здесь можно что-то раздобыть в обмен на свои кредиты")
 		
-		saynn("What do you wanna do?")
+		saynn("Что будете делать?")
 
-		addButton("Buy", "See what the machine has to sell", "buymenu")
-		addButton("Sell", "See what you can sell", "sellmenu")
-		addButton("Step away", "Step away from the machine", "endthescene")
+		addButton("Купить", "Посмотреть ассортимент", "buymenu")
+		addButton("Продать", "Посмотреть, что можно продать", "sellmenu")
+		addButton("Отойти", "Отойти от автомата", "endthescene")
 	
 	if(state == "buymenu"):
 		var inventory = inventoryScreenScene.instance()
@@ -73,7 +73,7 @@ func _run():
 		var _ok = inventory.connect("onItemSelected", self, "onInventoryItemSelected")
 		var _ok2 = inventory.connect("onInteractWith", self, "onInventoryItemInteracted")
 
-		addButton("Back", "Don't buy anything", "")
+		addButton("Назад", "Ничего не покупать", "")
 
 	if(state == "sellmenu"):
 		var inventory = inventoryScreenScene.instance()
@@ -83,7 +83,7 @@ func _run():
 		var _ok2 = inventory.connect("onInteractWith", self, "onInventoryItemInteracted")
 		var _ok3 = inventory.connect("onInteractWithGroup", self, "onInventoryItemGroupInteracted")
 
-		addButton("Back", "Don't sell anything", "")
+		addButton("Назад", "Ничего не продавать", "")
 		
 func _react(_action: String, _args):
 	if(_action == ""):
@@ -189,7 +189,7 @@ func onInventoryItemInteracted(item: ItemBase):
 
 func onInventoryItemSelected(item: ItemBase):
 	GM.ui.clearButtons()
-	addButton("Back", "Don't do anything", "")
+	addButton("Назад", "Ничего не делать", "")
 	
 	if(state == "buymenu"):
 		var itemData = sellItemsData[item.id]
@@ -203,9 +203,9 @@ func onInventoryItemSelected(item: ItemBase):
 			var newAmount = itemAmountPerBuy * amount
 			
 			if(credits >= newPrice):
-				addButton("Buy "+(str(newAmount))+" for "+str(newPrice)+" credits", "Amount: "+str(newAmount)+"\nPrice: "+str(newPrice)+" credits", "buy", [item.id, amount])
+				addButton("Купить "+(str(newAmount))+" for "+str(newPrice)+" credits", "Кол-во: "+str(newAmount)+"\nЦена: "+str(newPrice)+" credits", "buy", [item.id, amount])
 			else:
-				addDisabledButton("Buy "+(str(newAmount))+" for "+str(newPrice)+" credits", "Amount: "+str(newAmount)+"\nPrice: "+str(newPrice)+" credits\nYou don't have enough credits")
+				addDisabledButton("Купить "+(str(newAmount))+" for "+str(newPrice)+" credits", "Кол-во: "+str(newAmount)+"\nЦена: "+str(newPrice)+" кредитов\nНедостаточно кредитов")
 	if(state == "sellmenu"):
 		var itemAmount = item.getAmount()
 		var amounts = [1, 2, 3, 4, 5, int(itemAmount * 0.3), int(itemAmount * 0.5), int(itemAmount * 0.7), itemAmount]
@@ -223,7 +223,7 @@ func onInventoryItemSelected(item: ItemBase):
 			
 			var newSellPrice = item.getSellPrice() * amount
 			
-			addButton("Sell "+(str(amount))+" for "+str(newSellPrice)+" credits", "Amount: "+str(amount)+"\nPrice: "+str(newSellPrice)+" credits", "sell", [item, amount])
+			addButton("Продать "+(str(amount))+" for "+str(newSellPrice)+" credits", "Кол-во: "+str(amount)+"\nЦена: "+str(newSellPrice)+" credits", "sell", [item, amount])
 			
 func onInventoryItemGroupInteracted(item: ItemBase):
 	if(state == "sellmenu"):

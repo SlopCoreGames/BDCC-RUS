@@ -20,11 +20,11 @@ func getStartCooldown() -> int:
 
 func getInteractInfo() -> Dictionary:
 	return {
-		text = "You found a broken vendomat machine! It seems to be still accepting credits..\n\nPrice: "+str(useCost)+"\nItem: UNKN??ERr..or??!",
+		text = "Ты нашел сломанный вендомат! Похоже, он все еще принимает кредиты..\n\nЦена: "+str(useCost)+"\nItem: UNKN??ERr..or??!",
 		actions = [
 			{
 				id = "pay",
-				name = "Pay "+str(useCost)+" credit"+("s" if useCost != 1 else ""),
+				name = "Оплатить "+str(useCost)+" credit"+("s" if useCost != 1 else ""),
 				desc = "Pay "+str(useCost)+" credit"+("s" if useCost != 1 else "")+" and see if you will get anything.",
 				args = [],
 				disabled = GM.pc.getCredits() < useCost,

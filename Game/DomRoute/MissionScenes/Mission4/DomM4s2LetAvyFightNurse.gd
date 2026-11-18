@@ -17,11 +17,11 @@ func _run():
 		playAnimation(StageScene.Solo, "stand")
 		addCharacter(npcID)
 		playAnimation(StageScene.Duo, RNG.pick(["punch", "kick", "shove", "bite"]), {pc="avy", npc=npcID, npcAction="defeat"})
-		saynn("You let Avy handle this one!")
+		saynn("Ты позволяешь Эви разобраться с этим самой!")
 
-		saynn("She beats the nurse up with ease!")
+		saynn("Она с легкостью избивает медсестру!")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

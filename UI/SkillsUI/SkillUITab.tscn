@@ -43,7 +43,7 @@ size_flags_vertical = 0
 margin_right = 1266.0
 margin_bottom = 14.0
 mouse_filter = 1
-text = "Skill visible name"
+text = "Отображаемое название навыка"
 
 [node name="LevelBar" parent="ScrollContainer/VBoxContainer/PanelContainer/VBoxContainer" instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -59,7 +59,7 @@ margin_top = 38.0
 margin_right = 1266.0
 margin_bottom = 52.0
 mouse_filter = 1
-text = "Skill visible desc"
+text = "Отображаемое описание навыка"
 
 [node name="MarginContainer" type="MarginContainer" parent="ScrollContainer/VBoxContainer/PanelContainer/VBoxContainer"]
 margin_top = 56.0
@@ -73,7 +73,7 @@ margin_top = 70.0
 margin_right = 1266.0
 margin_bottom = 84.0
 mouse_filter = 1
-text = "Skill perks:"
+text = "Преимущества навыка:"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
 margin_top = 102.0
@@ -118,7 +118,7 @@ margin_bottom = 121.0
 margin_right = 624.0
 margin_bottom = 14.0
 mouse_filter = 1
-text = "Select a perk on the left"
+text = "Выберите перк слева"
 
 [node name="MarginContainer" type="MarginContainer" parent="ScrollContainer/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer"]
 margin_top = 18.0
@@ -133,7 +133,7 @@ margin_bottom = 42.0
 mouse_filter = 1
 bbcode_enabled = true
 bbcode_text = "Description will be shown here"
-text = "Description will be shown here"
+text = "Здесь будет представлено описание"
 fit_content_height = true
 
 [node name="MarginContainer2" type="MarginContainer" parent="ScrollContainer/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer"]
@@ -149,7 +149,7 @@ margin_bottom = 70.0
 mouse_filter = 1
 bbcode_enabled = true
 bbcode_text = "Requirements will be shown here"
-text = "Requirements will be shown here"
+text = "Здесь будут указаны требования"
 fit_content_height = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer"]
@@ -162,14 +162,14 @@ rect_min_size = Vector2( 0, 40 )
 margin_right = 310.0
 margin_bottom = 40.0
 size_flags_horizontal = 3
-text = "Learn"
+text = "Изучить"
 
 [node name="TogglePerkButton" type="Button" parent="ScrollContainer/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer"]
 margin_left = 314.0
 margin_right = 624.0
 margin_bottom = 40.0
 size_flags_horizontal = 3
-text = "Toggle perk on/off"
+text = "Включить/выключить перк"
 
 [connection signal="pressed" from="ScrollContainer/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/UnlockPerkButton" to="." method="_on_UnlockPerkButton_pressed"]
 [connection signal="pressed" from="ScrollContainer/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/TogglePerkButton" to="." method="_on_TogglePerkButton_pressed"]

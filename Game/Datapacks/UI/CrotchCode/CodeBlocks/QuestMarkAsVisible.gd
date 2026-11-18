@@ -14,6 +14,6 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Mark Quest as Visible",
+			text = "Сделать квест видимым",
 		},
 	]

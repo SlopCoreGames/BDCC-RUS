@@ -26,7 +26,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Reset npc equipment",
+			text = "Сбросить снаряжение NPC @@B*@@",
 		},
 		{
 			type = "slot",

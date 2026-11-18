@@ -7,174 +7,174 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Duo, "stand", {npc="kait", pc="rahi"})
 		setCharacters(["kait", "avy", "rahi"])
-		saynn("You meet the team near the checkpoint, Rahi included.")
+		saynn("Вы встречаетесь с командой у контрольно-пропускного пункта, Рахи тоже там.")
 
-		saynn("[say=rahi]Meow..[/say]")
+		saynn("[say=rahi]Мяу...[/say]")
 
-		saynn("[say=kait]We need a staff badge. Think you can get us one? Quietly. We will return it after.[/say]")
+		saynn("[say=kait]Нам нужен бейдж сотрудника. Думаешь, сможешь раздобыть нам один? Тихо. Потом вернем.[/say]")
 
-		saynn("The brown feline hums.")
+		saynn("Коричневошерстная кошка что-то мурлычет под нос.")
 
-		saynn("[say=rahi]Hm.. yeah.. she can try. Give her some time..[/say]")
+		saynn("[say=rahi]Хм.. да.. она может попробовать. Дай ей немного времени..[/say]")
 
-		saynn("Kait nods. Rahi starts wandering around the area, looking for lonely staffers.")
+		saynn("Кейт кивает. Рахи начинает бродить по округе, высматривая одиноких сотрудников.")
 
-		addButton("Continue", "See what happens next", "avy_gives_painkillers")
+		addButton("Продолжить", "Смотреть, что будет дальше", "avy_gives_painkillers")
 	if(state == "avy_gives_painkillers"):
 		playAnimation(StageScene.Duo, "stand", {npc="avy"})
-		saynn("[say=kait]Once she gets us a badge, two of us will have to stay here and keep the guard busy while someone else goes up there and gets the records. Fast.[/say]")
+		saynn("[say=kait]Как только она достанет нам бейдж, двое из нас должны будут остаться здесь, чтобы отвлекать охрану, пока кто-то другой проберется наверх и заберет записи. Быстро.[/say]")
 
-		saynn("The second task sounds more fun than the first one.")
+		saynn("Вторая задача звучит куда веселее первой.")
 
-		saynn("[say=pc]I will get them.[/say]")
+		saynn("[say=pc]Я достану их.[/say]")
 
-		saynn("[say=kait]There are probably gonna be a few offices up there. Search them until you find one with a printer.[/say]")
+		saynn("[say=kait]Там наверху, скорее всего, будет несколько кабинетов. Обыщите их, пока не найдете тот, где есть принтер.[/say]")
 
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
-		saynn("A few seconds later Avy approaches you and hands you something. A few pill bottles it seems.")
+		saynn("Спустя несколько секунд к вам подходит Эви и протягивает что-то. Похоже, это несколько баночек с таблетками.")
 
-		saynn("[say=avy]I brought you some antipains. Pop one if you feel shitty. It's not like I give a fuck but you might as well have them.[/say]")
+		saynn("[say=avy]Притащила тебе обезболивающих. Глотни, если почувствуешь себя дерьмово. Мне-то, по большому счету, поебать, но пусть будут.[/say]")
 
-		saynn("[say=pc]Thanks, might come in handy.[/say]")
+		saynn("[say=pc]Спасибо, может пригодиться.[/say]")
 
-		saynn("Before you can get a hold of them, Kait shoves herself in and swipes them to check their labels.")
+		saynn("Прежде чем ты успеваешь их схватить, Кейт вклинивается между вами и выхватывает упаковку, чтобы проверить этикетку.")
 
-		saynn("[say=kait]Are they normal?[/say]")
+		saynn("[say=kait]Они обычные?[/say]")
 
-		saynn("[say=avy]Are you normal?[/say]")
+		saynn("[say=avy]Ты в порядке?[/say]")
 
-		saynn("[say=kait]Yes. But you're not.[/say]")
+		saynn("[say=kait]Да. А вот ты — нет.[/say]")
 
-		saynn("[say=avy]I'm high above normal.[/say]")
+		saynn("[say=avy]Я куда выше нормы.[/say]")
 
-		saynn("[say=kait]Yeah, very high.[/say]")
+		saynn("[say=kait]Ага, очень даже высокая.[/say]")
 
-		saynn("You notice Rahi approaching someone.")
+		saynn("Ты замечаешь, что Рахи направляется к кому-то.")
 
-		saynn("[say=pc]Psst.[/say]")
+		saynn("[say=pc]Псс.[/say]")
 
-		saynn("That gets others to stop arguing and pay attention. Kait gives the pills back.")
+		saynn("Это заставляет остальных замолчать и прислушаться. Кейт возвращает таблетки.")
 
-		addButton("Continue", "See what happens next", "rahi_talks_with_nova")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_talks_with_nova")
 	if(state == "rahi_talks_with_nova"):
 		setCharacters(["rahi", "nova"])
 		playAnimation(StageScene.Duo, "stand", {pc="rahi", npc="nova"})
-		saynn("[say=rahi]Hey.. uh.. she has a..[/say]")
+		saynn("[say=rahi]Эй.. э-э.. у неё тут..[/say]")
 
-		saynn("The guard.. gray husky with a fancy guard armor.. turns towards the brown feline.")
+		saynn("Охранница.. серая хаски в шикарной броне.. поворачивается к коричневой кошке.")
 
-		saynn("[say=nova]Well hello there, pretty kitty~.[/say]")
+		saynn("[say=nova]Ну привет, красавица~.[/say]")
 
-		saynn("[say=rahi]..meow..[/say]")
+		saynn("[say=rahi]..мяу..[/say]")
 
-		saynn("Rahi's ears flatten, her tail wraps around her leg, her cheeks start glowing a bit.")
+		saynn("Ушаки Рахи прижимаются к голове, хвост обвивает ногу, а щеки начинают слегка розоветь.")
 
-		saynn("[say=nova]Aw.. don't be shy~. What's a little cutie like you doing all alone here?[/say]")
+		saynn("[say=nova]Ой.. ну не стесняйся~. Что такая милашка делает здесь совсем одна?[/say]")
 
-		saynn("[say=rahi]She.. she got a bit lost.. meow.. And then she saw you and thought.. um..[/say]")
+		saynn("[say=rahi]Она.. она немного заблудилась.. мяу.. А потом увидела вас и подумала.. эм..[/say]")
 
-		saynn("The husky tilts her head, a warm smile spreading across her muzzle. Rahi's gaze is low.. watching the guard's armor, jumping from point to point. Eventually she sees something.")
+		saynn("Хаски наклоняет голову, и на её морде расплывается теплая улыбка. Рахи смотрит в пол.. её взгляд блуждает по доспехам охранницы, перескакивая с одной детали на другую. Наконец, она что-то замечает.")
 
-		saynn("[say=nova]Thought what, sweetheart?[/say]")
+		saynn("[say=nova]Подумала что, сладкая?[/say]")
 
-		saynn("Rahi shuffles closer, trembling.")
+		saynn("Рахи, дрожа, подходит ближе.")
 
-		saynn("[say=rahi]Kitty thought.. maybe you could help her find her way back to the cellblock?..[/say]")
+		saynn("[say=rahi]Китти подумала... может, ты поможешь ей найти дорогу обратно в блок камер?..[/say]")
 
-		saynn("She looks up at the guard with big blue eyes, her lips slightly quivering.")
+		saynn("Она смотрит на охранницу огромными голубыми глазами, её губы слегка подрагивают.")
 
-		saynn("Nova's expression softens further, she reaches out and cups Rahi's chin.. and hears her purr.")
+		saynn("Выражение лица Новы становится ещё мягче; она протягивает руку, берет Рахи за подбородок... и слышит её мурлыканье.")
 
-		saynn("[say=nova]Oh, you poor thing. Lost little kitten in a big scary prison.[/say]")
+		saynn("[say=nova]Ох, бедненькая. Маленький потерявшийся котенок в огромной страшной тюрьме.[/say]")
 
-		saynn("Seconds later.. you hear a click..")
+		saynn("Спустя несколько секунд... раздается щелчок...")
 
-		addButton("Continue", "See what happens next", "rahi_gets_leashed")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_gets_leashed")
 	if(state == "rahi_gets_leashed"):
 		playAnimation(StageScene.Duo, "stand", {pc="rahi", npc="nova", bodyState={leashedBy="nova"}})
-		saynn("A leash got clipped to Rahi's collar. Her expression changes for a split second as that happens.. looks like this wasn't part of the plan.")
+		saynn("К ошейнику Рахи пристегнули поводок. На мгновение её лицо меняется... похоже, это не входило в её планы.")
 
-		saynn("[say=nova]Let's escort you back to your cell~.[/say]")
+		saynn("[say=nova]Давай-ка мы проводим тебя обратно в камеру~.[/say]")
 
-		saynn("Husky starts tugging on the leash, inviting Rahi to follow.")
+		saynn("Хаски начинает тянуть за поводок, приглашая Рахи следовать за ней.")
 
-		saynn("[say=rahi]Uh.. oh.. um.. y-yeah.. um.. sure..[/say]")
+		saynn("[say=rahi]А.. о.. эм.. д-да.. эм.. конечно..[/say]")
 
-		saynn("Kait starts whispering.")
+		saynn("Кейт начинает шептать.")
 
-		saynn("[say=kait]Shit.. do we help her?[/say]")
+		saynn("[say=kait]Бля... нам ей помочь?[/say]")
 
-		saynn("[say=avy]Shut up. Just watch.[/say]")
+		saynn("[say=avy]Заткнись. Просто смотри.[/say]")
 
-		saynn("[say=kait]But we need our thief.[/say]")
+		saynn("[say=kait]Но нам же нужна наша воровка.[/say]")
 
-		saynn("[say=avy]Don't be a pussy.[/say]")
+		saynn("[say=avy]Не будь тряпкой.[/say]")
 
-		saynn("Rahi follows the guard.. little steps. Her eyes frantically scan the surroundings..")
+		saynn("Рахи следует за стражником... мелкими шажками. Её глаза лихорадочно сканируют всё вокруг...")
 
-		addButton("Continue", "See what happens next", "rahi_hits_her_toe")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_hits_her_toe")
 	if(state == "rahi_hits_her_toe"):
 		playAnimation(StageScene.Duo, "defeat", {pc="rahi", npc="nova", bodyState={leashedBy="nova"}})
-		saynn("They start going down the stairs.")
+		saynn("Они начинают спускаться по лестнице.")
 
-		saynn("Suddenly, Rahi twists her ankle on one of them and falls with a loud mewl that echoes across the whole hall.")
+		saynn("Внезапно Рахи подворачивает ногу на одной из ступенек и падает с громким мяуканьем, которое эхом разносится по всему залу.")
 
-		saynn("[say=rahi]EEP![/say]")
+		saynn("[say=rahi]АЙ![/say]")
 
-		saynn("The guard is quick to turn around and crouch near the poor feline. She starts assessing the damage.")
+		saynn("Стражница быстро оборачивается и приседает рядом с бедной кошечкой. Она начинает осматривать повреждения.")
 
-		saynn("[say=rahi]Ow.. ow.. sorry.. ow-w..[/say]")
+		saynn("[say=rahi]Ой.. ой.. прости.. ой-ой..[/say]")
 
-		saynn("The husky carefully inspects Rahi's rear paw.")
+		saynn("Хаски осторожно осматривает заднюю лапку Рахи.")
 
-		saynn("[say=nova]It's not too bad. Such a clumsy girl~. Be more careful. Those little paws of yours weren't made for climbing it seems~.[/say]")
+		saynn("[say=nova]Да вроде не сильно. Ну и неуклюжая же ты девчонка~. Будь осторожнее. Твои маленькие лапки, похоже, не созданы для скалолазания~.[/say]")
 
-		saynn("[say=rahi]S-sorry..[/say]")
+		saynn("[say=rahi]П-прости..[/say]")
 
-		saynn("[say=nova]It's okay, cutie. Can you walk?[/say]")
+		saynn("[say=nova]Всё хорошо, милашка. Сможешь идти?[/say]")
 
-		saynn("[say=rahi]Maybe.. can we maybe.. rest.. on the bench..[/say]")
+		saynn("[say=rahi]Может быть.. можно нам.. присесть.. на скамейку..[/say]")
 
-		saynn("[say=nova]Sure, I could use a lap kitty~. Let me help you get up. Name is Nova by the way.[/say]")
+		saynn("[say=nova]Конечно, мне как раз не помешала бы кошечка на коленях~. Давай помогу тебе встать. Кстати, меня зовут Нова.[/say]")
 
-		saynn("Nova leans closer to Rahi who puts her paws all over the guard's armor, trying to find something to grab onto.. yeah.")
+		saynn("Нова наклоняется ближе к Рахи, которая вовсю ощупывает доспехи охранницы, пытаясь за что-нибудь ухватиться.. ага.")
 
-		saynn("The feline starts to slowly limp towards the nearest bench with Nova helping her. As this pair walks past you, kitty is quick to toss you something.. the badge. Perfect.")
+		saynn("Кошечка начинает медленно ковылять к ближайшей скамейке под присмотром Новы. Когда эта парочка проходит мимо тебя, кошечка спешно швыряет тебе кое-что.. значок. Идеально.")
 
-		saynn("Nova helps settle Rahi onto the bench.")
+		saynn("Нова помогает Рахи устроиться на скамейке.")
 
-		saynn("[say=nova]Do you want me to go find you a doctor?[/say]")
+		saynn("[say=nova]Хочешь, я поищу тебе врача?[/say]")
 
-		saynn("[say=rahi]No.. just.. stay near for a bit?..[/say]")
+		saynn("[say=rahi]Нет.. просто.. побудь рядом немного?..[/say]")
 
-		saynn("[say=nova]I can certainly do that~.[/say]")
+		saynn("[say=nova]Обязательно~.[/say]")
 
-		saynn("Avy and Kait stay near to make sure Nova doesn't do anything silly.")
+		saynn("Эви и Кейт остаются рядом, чтобы Нова не натворила глупостей.")
 
-		saynn("For you.. it's time to act.")
+		saynn("Для тебя.. пришло время действовать.")
 
-		addButton("Elevator", "Go to the command deck", "go_elevator")
+		addButton("Лифт", "Отправиться на командный мостик", "go_elevator")
 	if(state == "go_elevator"):
 		playAnimation(StageScene.Solo, "stand")
 		GM.pc.setLocation("cd_near_elevator")
 		aimCameraAndSetLocName("cd_near_elevator")
 		setCharacters([])
-		saynn("You walk past the checkpoint and swiftly step inside the elevator before anyone can ask anything.")
+		saynn("Ты проходишь мимо контрольно-пропускного пункта и стремительно заскакиваешь в лифт, прежде чем кто-либо успеет что-то спросить.")
 
-		saynn("There is a little slot in the lift's panel that you press the badge against.. which gives you access to the command deck floor.")
+		saynn("На панели лифта есть небольшая прорезь, к которой нужно приложить бейдж, чтобы получить доступ к этажу командного мостика.")
 
-		saynn("You press the button.. and wait as the doors close with an annoying screech. The metal room starts to ascend lazily.")
+		saynn("Ты нажимаешь на кнопку.. и ждешь, пока двери с раздражающим визгом закрываются. Металлическая кабина начинает лениво подниматься вверх.")
 
-		saynn("No going back now.")
+		saynn("Назад пути нет.")
 
-		saynn("Soon, the doors open.. revealing a long corridor. This area looks quite different from what you are used to. Many expensive-looking paintings on the walls, red cloth with golden accents everywhere. The tiled floor looks clean and shiny, it's covered with a long carpet so your feet don't feel cold as you step.")
+		saynn("Вскоре двери распахиваются, открывая вид на длинный коридор. Это место сильно отличается от того, к чему ты привык(ла). На стенах — множество дорогих картин, повсюду красная ткань с золотыми акцентами. Плиточный пол выглядит чистым и блестящим, но он застелен длинной ковровой дорожкой, чтобы ноги не мерзли при ходьбе.")
 
-		saynn("You see a few guards patrolling this area already.")
+		saynn("Ты замечаешь, что по этой зоне уже патрулируют несколько охранников.")
 
-		saynn("Good thing you have those painkillers.")
+		saynn("Хорошо, что у тебя есть эти обезболивающие.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

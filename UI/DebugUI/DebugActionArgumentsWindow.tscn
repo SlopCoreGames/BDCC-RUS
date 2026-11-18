@@ -11,7 +11,7 @@ margin_left = -640.0
 margin_top = -360.0
 margin_right = 640.0
 margin_bottom = 360.0
-window_title = "Debug action arguments"
+window_title = "Аргументы действия отладки"
 resizable = true
 script = ExtResource( 1 )
 
@@ -51,6 +51,6 @@ margin_bottom = 720.0
 [node name="DoActionButton" type="Button" parent="VBoxContainer/HBoxContainer"]
 margin_right = 73.0
 margin_bottom = 20.0
-text = "Do action"
+text = "Выполнить действие"
 
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/DoActionButton" to="." method="_on_DoActionButton_pressed"]

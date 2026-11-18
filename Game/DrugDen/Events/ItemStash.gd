@@ -30,7 +30,7 @@ func onSpawn(_drugDen):
 	
 	var descsDB:Array = [
 		{
-			text = "A rusted old toolbox sits near the base of a broken pipe. Its lid is slightly ajar, revealing a glimpse of what’s inside. {slot1} The surrounding dust is undisturbed, as if it’s been sitting here for years. {slot2}",
+			text = "У подножия сломанной трубы стоит старый ржавый ящик для инструментов. Крышка слегка приоткрыта, позволяя заглянуть внутрь. {slot1} Вокруг не шелохнулось ни пылинки, будто он простоял здесь целую вечность. {slot2}",
 			slot1sus = [
 				"The latch is free of rust, with tiny scratches near the edges.",
 			],
@@ -45,7 +45,7 @@ func onSpawn(_drugDen):
 			],
 		},
 		{
-			text = "A dusty backpack rests against the tunnel wall, its strap half-torn from age. {slot1} The zipper is mostly closed, though it looks like someone rummaged through it before. {slot2}",
+			text = "У стены туннеля прислонен пыльный рюкзак, ремень которого наполовину истлел от старости. {slot1} Молния почти застегнута, хотя кажется, что кто-то уже рылся в нем раньше. {slot2}",
 			slot1sus = [
 				"The fabric near the bottom is slightly raised, as if something stiff is underneath.",
 			],
@@ -60,7 +60,7 @@ func onSpawn(_drugDen):
 			],
 		},
 		{
-			text = "An old wooden supply crate leans against the cold wall, its surface covered in scratches and graffiti. {slot1} A few nails are loose, suggesting it’s been opened before. {slot2}",
+			text = "Старый деревянный ящик с припасами прислонен к холодной стене, его поверхность покрыта царапинами и граффити. {slot1} Несколько гвоздей разболтались, намекая на то, что его уже открывали. {slot2}",
 			slot1sus = [
 				"There’s a faint indentation around the edges, as if the lid was pressed back into place.",
 			],
@@ -75,7 +75,7 @@ func onSpawn(_drugDen):
 			],
 		},
 		{
-			text = "A dented metal locker stands upright, its door slightly ajar. {slot1} A faded number is scratched into its surface, almost unreadable. {slot2}",
+			text = "Помятый металлический шкафчик стоит прямо, его дверца слегка приоткрыта. {slot1} На поверхности выцарапано выцветшее число, которое почти невозможно разобрать. {slot2}",
 			slot1sus = [
 				"The handle has a thin, uneven gap between it and the door.",
 			],
@@ -90,7 +90,7 @@ func onSpawn(_drugDen):
 			],
 		},
 		{
-			text = "A box sits in the corner, its paint chipped and faded. {slot1} The latch is still intact, though it looks a little worn. {slot2}",
+			text = "В углу стоит коробка, краска на которой облупилась и выцвела. {slot1} Защелка всё еще цела, хотя выглядит довольно изношенной. {slot2}",
 			slot1sus = [
 				"A faint outline of a handprint is visible in the dust around the latch.",
 			],
@@ -105,7 +105,7 @@ func onSpawn(_drugDen):
 			],
 		},
 		{
-			text = "Behind a loose panel, you discover a small hidden cache. {slot1} A tattered cloth is draped over it, as if someone tried to hide it. {slot2}",
+			text = "За неплотной панелью вы обнаруживаете небольшой тайник. {slot1} Он накрыт обрывком ткани, словно кто-то пытался его спрятать. {slot2}",
 			slot1sus = [
 				"The cloth has a single clean fold along one side, different from the rest of the wrinkles.",
 			],
@@ -120,7 +120,7 @@ func onSpawn(_drugDen):
 			],
 		},
 		{
-			text = "A sleek metal case rests atop a pile of junk, reflecting a dim light. {slot1} The locking mechanism looks simple, just a basic latch. {slot2}",
+			text = "На куче хлама лежит гладкий металлический кейс, отражающий тусклый свет. {slot1} Замок выглядит просто — обычная защелка. {slot2}",
 			slot1sus = [
 				"The surrounding junk is pushed slightly outward, like the case was set down more recently.",
 			],
@@ -135,7 +135,7 @@ func onSpawn(_drugDen):
 			],
 		},
 		{
-			text = "A hollowed-out section of concrete reveals a stash tucked inside. {slot1} The space is just big enough for a small cache of supplies. {slot2}",
+			text = "В выдолбленной части бетонной стены спрятан тайник. {slot1} Пространства как раз хватает для небольшого запаса припасов. {slot2}",
 			slot1sus = [
 				"The floor immediately in front of it is slightly less dusty than the surrounding area.",
 			],
@@ -172,11 +172,11 @@ func getCooldown() -> int:
 
 func getInteractInfo() -> Dictionary:
 	return {
-		text = "You notice something interesting..\n\n"+stashDesc+"\n\nDo you wanna try to loot it?",
+		text = "Вы замечаете кое-что интересное..\n\n"+stashDesc+"\n\nDo you wanna try to loot it?",
 		actions = [
 			{
 				id = "loot",
-				name = "Loot it",
+				name = "Обыскать",
 				desc = "See if you can find some helpful stuff!",
 				args = [],
 				disabled = false,

@@ -13,6 +13,6 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Has Lab Access",
+			text = "Есть доступ в лабораторию",
 		},
 	]

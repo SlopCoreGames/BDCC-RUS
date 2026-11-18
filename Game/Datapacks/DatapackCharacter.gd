@@ -2,8 +2,8 @@ extends Reference
 class_name DatapackCharacter
 
 var id:String = "error"
-var name:String = "New character"
-var description:String = "No description provided"
+var name:String = "Новый персонаж"
+var description:String = "Описание отсутствует"
 var gender = Gender.Male
 var pronounsGender = null
 var hasChatColor:bool = false
@@ -96,7 +96,7 @@ func getEditVars():
 	
 	return {
 		"name": {
-			name = "Name",
+			name = "Имя",
 			type = "string",
 			value = name,
 		},
@@ -106,7 +106,7 @@ func getEditVars():
 			value = description,
 		},
 		"gender": {
-			name = "Gender",
+			name = "Пол",
 			type = "selector",
 			value = gender,
 			values = [
@@ -118,7 +118,7 @@ func getEditVars():
 			noseparator=true,
 		},
 		"pronounsGender": {
-			name = "Pronouns gender",
+			name = "Род местоимений",
 			type = "selector",
 			value = pronounsGender,
 			values = [
@@ -131,160 +131,160 @@ func getEditVars():
 			#noseparator=true,
 		},
 		"femininity": {
-			name = "Femininity",
+			name = "Женственность",
 			type = "number",
 			int=true,
 			value = femininity,
 		},
 		"thickness": {
-			name = "Thickness",
+			name = "Пышность форм",
 			type = "number",
 			int=true,
 			value = thickness,
 		},
 		"hasChatColor": {
-			name = "Enable custom chat color",
+			name = "Включить кастомный цвет чата",
 			type = "checkbox",
 			value = hasChatColor,
 			noseparator=true,
 		},
 		"chatColor": {
-			name = "Custom chat color",
+			name = "Кастомный цвет чата",
 			type = "color",
 			value = chatColor,
 		},
 		"characterType": {
-			name = "Character type",
+			name = "Тип персонажа",
 			type = "selector",
 			values = CharacterType.getAllForDatapackCharacter(),
 			value = characterType,
 		},
 		"inmateType": {
-			name = "Inmate type (or unknown)",
+			name = "Тип заключённого (или неизвестно)",
 			type = "selector",
 			values = InmateType.getAllWithNames(),
 			value = inmateType,
 		},
 		"species": {
-			name = "Species",
+			name = "Вид",
 			type = "addRemoveList",
 			value = species,
 			values = GlobalRegistry.getAllSpecies().keys(),
 			collapsable = true,
 		},
 		"customSpeciesName": {
-			name = "Custom species name (optional)",
+			name = "Название кастомного вида (опционально)",
 			type = "string",
 			value = customSpeciesName,
 			addtoprev=true,
 		},
 		"skin": {
-			name = "Base skin",
+			name = "Базовый цвет кожи",
 			type = "skin",
 			skins = GlobalRegistry.getSkinsAllKeys(),
 			value = {skin=pickedSkin, r=pickedSkinRColor, g=pickedSkinGColor, b=pickedSkinBColor},
 			noBase = true,
 		},
 		"bodyparts": {
-			name = "Bodyparts",
+			name = "Части тела",
 			type = "bodyparts",
 			value = bodyparts,
 			collapsable = true,
 		},
 		"equippedItems": {
-			name = "Default equipment",
+			name = "Стандартное снаряжение",
 			type = "equippedItems",
 			value = equippedItems,
 			collapsable = true,
 		},
 		"attacks": {
-			name = "Attacks",
+			name = "Атаки",
 			type = "addRemoveList",
 			value = attacks,
 			values = attackListFancy,
 			collapsable = true,
 		},
 		"combatStance": {
-			name = "Combat stance",
+			name = "Боевая стойка",
 			type = "selector",
 			values = combatStanceFancy,
 			value = combatStance,
 		},
 		"stats": {
-			name = "Stats",
+			name = "Характеристики",
 			type = "stats",
 			value = stats,
 			collapsable = true,
 		},
 		"level": {
-			name = "Character level",
+			name = "Уровень персонажа",
 			type = "number",
 			value = level,
 			int=true,
 			addtoprev = true,
 		},
 		"basePain": {
-			name = "Base pain",
+			name = "Базовая боль",
 			type = "number",
 			value = basePain,
 			int=true,
 			addtoprev = true,
 		},
 		"baseLust": {
-			name = "Base lust",
+			name = "Базовое возбуждение",
 			type = "number",
 			value = baseLust,
 			int=true,
 			addtoprev = true,
 		},
 		"baseStamina": {
-			name = "Base stamina",
+			name = "Базовая выносливость",
 			type = "number",
 			value = baseStamina,
 			int=true,
 			addtoprev = true,
 		},
 		"restraintDodgeChanceMult": {
-			name = "Restraint dodge chance (0.9 = default, <0.9 = harder to tie up, >0.9 = easier to tie up)",
+			name = "Шанс уклонения от пут (0.9 = стандарт, <0.9 = сложнее связать, >0.9 = легче связать)",
 			type = "number",
 			value = restraintDodgeChanceMult,
 			addtoprev = true,
 			step = 0.01,
 		},
 		"restraintStrugglePower": {
-			name = "Struggle power mult (1 = default, <1 = worse at struggling, >1 = better at struggling)",
+			name = "Множитель силы борьбы (1 = стандарт, <1 = слабее борется, >1 = сильнее борется)",
 			type = "number",
 			value = restraintStrugglePower,
 			addtoprev = true,
 			step = 0.01,
 		},
 		"perks": {
-			name = "Perks",
+			name = "Перки",
 			type = "addRemoveList",
 			value = perks,
 			values = perkListFancy,
 			collapsable = true,
 		},
 		"personality": {
-			name = "Personality",
+			name = "Личность",
 			type = "personality",
 			value = personality,
 			collapsable = true,
 		},
 		"fetishes": {
-			name = "Fetishes",
+			name = "Фетиши",
 			type = "fetishes",
 			value = fetishes,
 			collapsable = true,
 		},
 		"lustInterests": {
-			name = "Likes/dislikes",
+			name = "Симпатии/антипатии",
 			type = "likesDislikes",
 			value = lustInterests,
 			collapsable = true,
 		},
 		"lootTable": {
-			name = "Loot table",
+			name = "Таблица лута",
 			type = "lootTable",
 			value = {
 				baseTableID = lootTableID,
@@ -296,37 +296,37 @@ func getEditVars():
 			collapsable = true,
 		},
 		"portrait": {
-			name = "Portrait (normal)",
+			name = "Портрет (обычный)",
 			type = "image",
 			value = portrait.getImage(),
 		},
 		"portraitNaked": {
-			name = "Portrait (naked)",
+			name = "Портрет (голый)",
 			type = "image",
 			value = portraitNaked.getImage(),
 		},
 		"excludeEncounters": {
-			name = "Exclude from encounters",
+			name = "Исключить из встреч",
 			type = "checkbox",
 			value = excludeEncounters,
 			collapsable = true,
 		},
 		"disableForget": {
-			name = "Disable ability to forget this character",
+			name = "Запретить забывать этого персонажа",
 			type = "checkbox",
 			value = disableForget,
 			addtoprev = true,
 			noseparator=true,
 		},
 		"disableMeet": {
-			name = "Disable ability to meet this character",
+			name = "Запретить встречу с этим персонажем",
 			type = "checkbox",
 			value = disableMeet,
 			addtoprev = true,
 			noseparator=true,
 		},
 		"disableBirth": {
-			name = "Disable automatic child birth for this character",
+			name = "Отключить автоматическое рождение детей у этого персонажа",
 			type = "checkbox",
 			value = disableBirth,
 			addtoprev = true,

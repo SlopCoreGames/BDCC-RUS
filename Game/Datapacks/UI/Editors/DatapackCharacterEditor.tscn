@@ -72,7 +72,7 @@ columns = 5
 margin_right = 256.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
-text = "Save"
+text = "Сохранить"
 
 [connection signal="onVariableChange" from="VBoxContainer/HBoxContainer/ScrollContainer/PackVariables" to="." method="_on_PackVariables_onVariableChange"]
 [connection signal="pressed" from="VBoxContainer/GridContainer/SaveButton" to="." method="_on_SaveButton_pressed"]

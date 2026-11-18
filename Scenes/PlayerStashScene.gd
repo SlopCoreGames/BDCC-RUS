@@ -8,15 +8,15 @@ func _init():
 func _run():
 	if(state == ""):
 		if(GM.pc.getLocation() != GM.pc.getCellLocation()):
-			saynn("What do you want to do with your stash.")
+			saynn("Что ты хочешь сделать со своим тайником?")
 		else:
-			saynn("You find a place you can stash some items in, it's under your pillow. What do you wanna do")
+			saynn("Ты нашел место, где можно спрятать вещи — прямо под подушкой. Что будешь делать?")
 		
 		var items = GlobalRegistry.getCharacter("playerstash").getInventory().getAllItems()
 		var itemNames = []
 		for item in items:
 			itemNames.append(item.getVisibleName())
-		say("Items in the stash:\n")
+		say("Вещи в тайнике:\n")
 		say(Util.join(itemNames, ", "))
 		say("\n\n")
 		
@@ -24,12 +24,12 @@ func _run():
 		itemNames = []
 		for item in items:
 			itemNames.append(item.getVisibleName())
-		say("Your items:\n")
+		say("Твои вещи:\n")
 		say(Util.join(itemNames, ", "))
 		
-		addButton("Stash item", "Hide an item", "hideitemmenu")
-		addButton("Take item", "Take an item", "takeitemmenu")
-		addButton("Step away", "You're done", "endthescene")
+		addButton("Предмет в тайнике", "Спрятать предмет", "hideitemmenu")
+		addButton("Взять предмет", "Взять предмет", "takeitemmenu")
+		addButton("Отойти", "Готово", "endthescene")
 	if(state == "hideitemmenu"):
 		var theItems = []
 		theItems.append_array(GM.pc.getInventory().getItems())
@@ -44,7 +44,7 @@ func _run():
 		var _ok = inventory.connect("onItemSelected", self, "onInventoryItemSelected")
 		var _ok2 = inventory.connect("onInteractWith", self, "onInventoryItemInteracted")
 		var _ok3 = inventory.connect("onInteractWithGroup", self, "onInventoryItemGroupInteracted")
-		addButton("Back", "Go back", "")
+		addButton("Назад", "Назад", "")
 	
 	if(state == "takeitemmenu"):
 		var inventory = inventoryScreenScene.instance()
@@ -53,7 +53,7 @@ func _run():
 		var _ok = inventory.connect("onItemSelected", self, "onInventoryItemSelected")
 		var _ok2 = inventory.connect("onInteractWith", self, "onInventoryItemInteracted")
 		var _ok3 = inventory.connect("onInteractWithGroup", self, "onInventoryItemGroupInteracted")
-		addButton("Back", "Go back", "")
+		addButton("Назад", "Назад", "")
 
 func _react(_action: String, _args):
 	if(_action == "hideitem"):
@@ -120,7 +120,7 @@ func _react(_action: String, _args):
 func onInventoryItemSelected(item: ItemBase):
 	if(state == "hideitemmenu"):
 		GM.ui.clearButtons()
-		addButton("Back", "Go back", "")
+		addButton("Назад", "Назад", "")
 		
 		if(item.canCombine() && item.getAmount() > 1):
 			var amounts = [1, 2, 3, 4, 5, int(item.getAmount() * 0.5)]
@@ -133,10 +133,10 @@ func onInventoryItemSelected(item: ItemBase):
 					continue
 				checkedAmounts[str(amount)] = true
 				
-				addButton("Stash "+str(amount), "Stash this amount", "stashx", [item, amount])
+				addButton("Тайник "+str(amount), "Спрятать столько", "stashx", [item, amount])
 	if(state == "takeitemmenu"):
 		GM.ui.clearButtons()
-		addButton("Back", "Go back", "")
+		addButton("Назад", "Назад", "")
 		
 		if(item.canCombine() && item.getAmount() > 1):
 			var amounts = [1, 2, 3, 4, 5, int(item.getAmount() * 0.5)]
@@ -149,7 +149,7 @@ func onInventoryItemSelected(item: ItemBase):
 					continue
 				checkedAmounts[str(amount)] = true
 				
-				addButton("Take "+str(amount), "Take this amount", "takex", [item, amount])
+				addButton("Взять "+str(amount), "Взять столько", "takex", [item, amount])
 
 func onInventoryItemGroupInteracted(item: ItemBase):
 	if(state == "hideitemmenu"):
@@ -169,7 +169,7 @@ func onInventoryItemInteracted(item: ItemBase):
 			inv.selectedItem = null
 			inv.updateSelectedInfo()
 			GM.ui.clearButtons()
-			addButton("Back", "Don't do anything", "")
+			addButton("Назад", "Ничего не делать", "")
 		var theItems = []
 		theItems.append_array(GM.pc.getInventory().getItems())
 		if(GM.pc.getCredits() > 0):
@@ -189,5 +189,5 @@ func onInventoryItemInteracted(item: ItemBase):
 			inv.selectedItem = null
 			inv.updateSelectedInfo()
 			GM.ui.clearButtons()
-			addButton("Back", "Don't do anything", "")
+			addButton("Назад", "Ничего не делать", "")
 		inv.setItems(GlobalRegistry.getCharacter("playerstash").getInventory().getAllItems(), "take")

@@ -11,7 +11,7 @@ script = ExtResource( 1 )
 unique_name_in_owner = true
 margin_right = 59.0
 margin_bottom = 24.0
-text = "Main"
+text = "Главное"
 
 [node name="ValueHSlider" type="HSlider" parent="."]
 unique_name_in_owner = true

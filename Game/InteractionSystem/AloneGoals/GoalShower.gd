@@ -16,10 +16,10 @@ func getKeepScore() -> float:
 
 func getText():
 	if(sstate == "shower"):
-		return "{main.name} is showering!"
+		return "{main.name} принимает душ!"
 	if(sstate == "undress"):
-		return "{main.name} has undressed and is now going into the showers!"
-	return "{main.name} is heading to the shower!"
+		return "{main.name} разделся/разделась и направляется в душевую!"
+	return "{main.name} идет в душ!"
 
 func getActions() -> Array:
 	return [

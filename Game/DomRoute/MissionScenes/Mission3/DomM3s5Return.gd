@@ -8,509 +8,509 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="kait", pc="avy"})
 		addCharacter("kait")
 		addCharacter("avy")
-		saynn("You meet with Kait and Avy near the locked storage room again.")
+		saynn("Вы снова встречаетесь с Кейт и Эви возле запертой кладовой.")
 
-		saynn("Kait is on her knees, below the access panel, messing with its exposed wiring.")
+		saynn("Кейт стоит на коленях перед панелью доступа, копаясь в оголенных проводах.")
 
-		saynn("[say=avy]Hey. How is the hacking going, cat?[/say]")
+		saynn("[say=avy]Эй. Как успехи со взломом, кошечка?[/say]")
 
-		saynn("[say=kait]I will trigger the bolts if I rip out the wrong wire. I will leave as a last resort option. Did you find something, {pc.name}?[/say]")
+		saynn("[say=kait]Если выдерну не тот провод, сработают засовы. В крайнем случае просто свалим. Ты что-нибудь нашла, {pc.name}?[/say]")
 
-		saynn("You show them what you found.")
+		saynn("Вы показываете им свою находку.")
 
-		saynn("[say=pc]I got a badge. It looks a bit different from the other ones.[/say]")
+		saynn("[say=pc]У меня есть значок. На вид он немного отличается от остальных.[/say]")
 
-		saynn("[say=kait]Oh. Worth a try.[/say]")
+		saynn("[say=kait]О. Стоило попробовать.[/say]")
 
-		saynn("Kait snatches the thing and presses it against the panel. The screen turns a happy green color.")
+		saynn("Кейт выхватывает значок и прижимает его к панели. Экран загорается радостным зеленым светом.")
 
-		saynn("[say=kait]That works![/say]")
+		saynn("[say=kait]Работает![/say]")
 
-		saynn("The double-doors of the storage room begin sliding apart, inviting you all inside. Perfect.")
+		saynn("Двойные двери кладовой начинают разъезжаться в стороны, приглашая вас войти. Идеально.")
 
-		saynn("Moments later.. a nurse steps out from behind the corner, a pre-warmed shock remote in her hand. All the while you were busy watching the rusty mechanism..")
+		saynn("Спустя мгновение из-за угла выходит медсестра с заранее разогретым пультом для шоковой терапии в руке. А ты всё это время был занят разглядыванием ржавого механизма...")
 
-		saynn("Kait's ears perk.")
+		saynn("Уши Кейт навостряются.")
 
-		saynn("[say=kait]Oh shit, behind you![/say]")
+		saynn("[say=kait]Твою мать, сзади![/say]")
 
-		saynn("A buzz.. Followed instantly by a deafening cry.")
+		saynn("Жужжание... за которым мгновенно следует оглушительный крик.")
 
-		addButton("Continue", "See what happens next", "avy_gets_shocked")
+		addButton("Продолжить", "Смотреть, что будет дальше", "avy_gets_shocked")
 	if(state == "avy_gets_shocked"):
 		playAnimation(StageScene.Duo, "defeat", {npc="nurse", pc="avy"})
 		addCharacter("nurse")
-		saynn("Avy hits the floor, blue arcs of electricity dancing across Avy's neck. She convulses on the floor, a raw scream tearing from her throat.")
+		saynn("Эви валится на пол, по её шее пляшут синие дуги электричества. Она бьётся в конвульсиях, а из её горла вырывается дикий вопль.")
 
-		saynn("[say=avy]AGHH! FUCK![/say]")
+		saynn("[say=avy]АААГХ! БЛЯТЬ![/say]")
 
-		saynn("[say=kait]The nurse![/say]")
+		saynn("[say=kait]Медсестра![/say]")
 
-		saynn("You dash towards her. The nurse's thumb is fingering the main button on the remote so hard you can hear the plastic begging for mercy.")
+		saynn("Ты бросаешься к ней. Медсестра так сильно давит большим пальцем на главную кнопку пульта, что кажется, будто пластик вот-вот взмолится о пощаде.")
 
-		addButton("Nurse!", "Bring her down", "bring_nurse_down")
+		addButton("Медсестра!", "Свали её!", "bring_nurse_down")
 	if(state == "bring_nurse_down"):
 		playAnimation(StageScene.SexLowDoggy, "tease", {pc="pc", npc="nurse"})
-		saynn("You slam into the nurse before the remote recharges! Both of you crash to the floor, the remote skittering across the floor.")
+		saynn("Ты влетаешь в медсестру прежде, чем пульт успевает перезарядиться! Вы оба с грохотом валитесь на пол, а пульт отлетает куда-то в сторону.")
 
-		saynn("The nurse thrashes beneath you, trying to claw at your face.")
+		saynn("Медсестра брыкается под тобой, пытаясь вцепиться когтями тебе в лицо.")
 
-		saynn("[say=nurse]Let.. go![/say]")
+		saynn("[say=nurse]От.. пусти![/say]")
 
-		saynn("You catch one of her clawed paws and wrench it behind her back, turning her around to face the cold floor tiles in the process. You reach around to grab her other arm and pull it back behind her too, mostly pacifying the girl.")
+		saynn("Ты перехватываешь одну её когтистую лапу и резко заводишь ей за спину, разворачивая её лицом к холодной кафельной плитке. Затем ты обхватываешь её вторую руку и тоже тянешь назад, тем самым в основном усмиряя девчонку.")
 
-		saynn("[say=kait]I got the fucking remote![/say]")
+		saynn("[say=kait]Пульт, блядь, у меня![/say]")
 
-		saynn("When you subdue the nurse, you get a chance to look at Kait who is stomping onto the remote.. making it look like a mess of wires and electric boards.. with a fancy blue glow coming from the core of it.")
+		saynn("Когда ты усмиряешь медсестру, тебе удается взглянуть на Кейт, которая вовсю топчет пульт... превращая его в месиво из проводов и плат, из центра которого исходит яркое синее свечение.")
 
-		saynn("[say=nurse]Security! SECURITY! Help me![/say]")
+		saynn("[say=nurse]Охрана! ОХРАНА! Помогите мне![/say]")
 
-		saynn("She is wriggling hard underneath you, her tail baps your face again and again.")
+		saynn("Она яростно извивается под тобой, и её хвост раз за разом хлещет тебя по лицу.")
 
-		saynn("[say=pc]Kait. I could use some help over here.[/say]")
+		saynn("[say=pc]Кейт. Мне тут не помешала бы помощь.[/say]")
 
-		saynn("[say=kait]Right! One second.[/say]")
+		saynn("[say=kait]Точно! Секундочку.[/say]")
 
-		saynn("She produces some ropes and runs up to you.")
+		saynn("Она достает веревки и подбегает к тебе.")
 
-		saynn("You keep the nurse pinned while Kait starts working on her. The first loop goes around her wrists and elbows, pulling them together until they almost touch. She makes sure she got the cat's arms fully tied up.")
+		saynn("Ты удерживаешь медсестру, пока Кейт принимается за дело. Первый виток обвивает её запястья и локти, стягивая их так сильно, что они почти соприкасаются. Она следит за тем, чтобы руки «кошечки» были связаны намертво.")
 
-		saynn("[say=nurse]Ah.. quit it![/say]")
+		saynn("[say=nurse]Ах.. прекрати![/say]")
 
-		saynn("[say=kait]Oh, I'm just getting started.[/say]")
+		saynn("[say=kait]О, я только начинаю.[/say]")
 
-		addButton("Continue", "See what happens next", "nurse_gets_tied_up")
+		addButton("Продолжить", "Смотреть, что будет дальше", "nurse_gets_tied_up")
 	if(state == "nurse_gets_tied_up"):
 		playAnimation(StageScene.Hogtied, "idle", {pc="nurse"})
-		saynn("Kait runs the rope under the nurse's arms, around her chest, just above her breasts.. and then below them too. The rope digs into the fabric, making her tits bulge out visibly. The nurse lets out a strangled gasp.")
+		saynn("Кейт проводит веревку под мышками медсестры, вокруг груди, чуть выше сосков... а затем и под ними. Веревка впивается в ткань, заставляя её сиськи отчетливо выпирать. Медсестра издает сдавленный всхлип.")
 
-		saynn("[say=nurse]Stop it, I'm not gonna resist![/say]")
+		saynn("[say=nurse]Хватит, я всё равно не буду сопротивляться![/say]")
 
-		saynn("[say=kait]Too late![/say]")
+		saynn("[say=kait]Слишком поздно![/say]")
 
-		saynn("The snow kitty works swiftly and efficiently, running the rope between the nurse's legs and looping it around her thighs.. before tightening it up hard! The rope digs hard into the nurse's clothed pussy slit, making the nurse jerk against the restraints, her face flushing red.")
+		saynn("Снежная кошечка работает быстро и ловко: она пропускает веревку между ног медсестры и обвивает её вокруг бедер... а затем затягивает узел намертво! Веревка глубоко врезается в её затянутую одеждой промежность, заставляя медсестру дернуться в путах, а её лицо заливается краской.")
 
-		saynn("[say=nurse]Nnh..[/say]")
+		saynn("[say=nurse]Ннх..[/say]")
 
-		saynn("Kait finishes it up by folding the nurse's legs and tying them up.. before running the rope from her ankles to her wrists, pulling the poor staffer into a strict hogtie.")
+		saynn("Закончив дело, Кейт подгибает ноги медсестры и связывает их, а затем протягивает веревку от лодыжек к запястьям, стягивая бедняжку-персонал в тугой «hogtie» (связку в позе кастрата).")
 
-		saynn("The nurse's back is arching, her chest thrust forward, breasts straining against the ropes, crotch rope biting deep.")
+		saynn("Спина медсестры выгнулась дугой, грудь подалась вперед, соски натягивают веревки, а паховая перевязка впивается глубоко в плоть.")
 
-		saynn("You get up.. letting her squirm. She tries.. but every movement just makes the ropes dig in harder.")
+		saynn("Ты встаешь... позволяя ей извиваться. Она пытается сопротивляться... но каждое движение лишь заставляет веревки впиваться еще сильнее.")
 
-		saynn("[say=nurse]You're gonna regret it when Doctor Quinn finds you! She.. ah.. she has her special ways with someone like you![/say]")
+		saynn("[say=nurse]Ты пожалеешь об этом, когда тебя найдет доктор Куинн! У нее... ах... у нее есть свои особые методы для таких, как ты![/say]")
 
-		saynn("[say=kait]I've heard about it. And I'm not afraid in the slightest. Let's get you gagged.[/say]")
+		saynn("[say=kait]Я об этом слышал. И ни капли не боюсь. А теперь давай заткнем тебе рот.[/say]")
 
-		saynn("[say=nurse]Hey! No![/say]")
+		saynn("[say=nurse]Эй! Нет![/say]")
 
-		saynn("Kait shoves a rubber ballgag into the nurse's mouth and secures the harness around her face.")
+		saynn("Кейт запихивает резиновый кляп в рот медсестре и затягивает ремни на ее лице.")
 
-		saynn("After that, Kait runs up to Avy. You do the same.")
+		saynn("После этого Кейт подбегает к Эви. Ты делаешь то же самое.")
 
-		addButton("Continue", "See what happens next", "kait_helps_avy")
+		addButton("Продолжить", "Смотреть, что будет дальше", "kait_helps_avy")
 	if(state == "kait_helps_avy"):
 		playAnimation(StageScene.SexStartDDS, "start", {pc="avy", npc="kait"})
-		saynn("Avy groans, her limbs twitching slightly as the last echoes of the shock wear off.")
+		saynn("Эви стонет, ее конечности слегка подергиваются, когда последние отголоски шока начинают утихать.")
 
-		saynn("[say=kait]Get up, Avy. Quit drooling on the floor.[/say]")
+		saynn("[say=kait]Вставай, Эви. Хватит пускать слюни на пол.[/say]")
 
-		saynn("You hear a pained chuckle from the dark foxy. She slowly sits up.")
+		saynn("Ты слышишь болезненный смешок этой темноволосой лисицы. Она медленно садится.")
 
-		saynn("[say=avy]Can't believe my eyes, you saved me. Me, an evil bitch. Such a hero.[/say]")
+		saynn("[say=avy]Поверить не могу своим глазам... ты меня спас. Меня, злую сучку. Какой герой.[/say]")
 
-		saynn("[say=kait]I didn't save you, shut up. And we're doing a heist, stupid. I don't wanna drag your unconscious ass to the hideout.[/say]")
+		saynn("[say=kait]Я тебя не спасала, заткнись. И вообще, мы на ограблении, тупица. Мне просто не хотелось тащить твою бессознательную задницу до убежища.[/say]")
 
-		saynn("Avy swipes the dust off of her uniform.")
+		saynn("Эви смахивает пыль со своей униформы.")
 
-		saynn("[say=avy]Blah blah blah, you tried your best, I know. I guess that makes you a failed hero, hah.[/say]")
+		saynn("[say=avy]Бла-бла-бла, ты очень старался, знаю. Похоже, ты просто неудачливый герой, а?[/say]")
 
-		saynn("[say=kait]I should just finish you..[/say]")
+		saynn("[say=kait]Мне стоит просто прикончить тебя...[/say]")
 
-		saynn("Avy pulls out a pill bottle and pops one. A sigh of relief comes not long after.")
+		saynn("Эви достает баночку с таблетками и глотает одну. Вскоре следует вздох облегчения.")
 
-		saynn("[say=avy]Oh yeah, with your hands~?[/say]")
+		saynn("[say=avy]О да, и что же ты сделаешь своими ручонками~?[/say]")
 
-		saynn("[say=kait]Oh no, shut up. Please.[/say]")
+		saynn("[say=kait]О нет, заткнись. Пожалуйста.[/say]")
 
-		saynn("The foxy finally gets up. She rolls her shoulders and stretches a bit.")
+		saynn("Лисичка наконец поднимается. Она разминает плечи и немного потягивается.")
 
-		saynn("[say=avy]You're right, hands are only enough for a prelude.[/say]")
+		saynn("[say=avy]Ты прав, одних рук хватит только на прелюдию.[/say]")
 
-		saynn("[say=pc]We're all gonna get fucked if we don't hurry up. That doctor might be done with Ferri any minute now.[/say]")
+		saynn("[say=pc]Нам всем пиздец, если мы не поторопимся. Этот доктор может закончить с Ферри в любую минуту.[/say]")
 
-		saynn("[say=avy]Fine. We can reminisce later when we have the time. We can't leave the nurse here, let's get that bitch inside the storage room.[/say]")
+		saynn("[say=avy]Ладно. Поностальгируем позже, когда будет время. Нельзя оставлять медсестру здесь, давайте затащим эту сучку в кладовку.[/say]")
 
-		saynn("She walks over to the gagged cat, grabs the ropes at her back and lifts her up. The nurse lets out a muffled squeak through the ballgag, her eyes wide.")
+		saynn("Она подходит к связанной кошке, хватает за веревки на спине и поднимает её. Медсестра издает приглушенный писк сквозь кляп, её глаза широко распахнуты.")
 
-		addButton("Storage room", "Search it!", "do_search_room")
+		addButton("Кладовка", "Обыщите её!", "do_search_room")
 	if(state == "do_search_room"):
 		playAnimation(StageScene.Duo, "stand", {npc="avy", pc="kait"})
 		aimCameraAndSetLocName("medical_storage")
-		saynn("You all step inside the storage room.")
+		saynn("Вы все входите в кладовку.")
 
-		saynn("It's about what you'd expect.. multiple rows of shelves each filled with crates and containers.")
+		saynn("Всё как обычно... ряды стеллажей, заставленных ящиками и контейнерами.")
 
-		saynn("Avy drops the nurse in the corner, facing away from you.")
+		saynn("Ави бросает медсестру в углу спиной к вам.")
 
-		saynn("[say=avy]So.. where is the fucking lab shit?[/say]")
+		saynn("[say=avy]Ну и... где, блять, эта сраная лаборатория?[/say]")
 
-		saynn("[say=kait]Probably in one of these crates.. crap. I guess we have to search them all.[/say]")
+		saynn("[say=kait]Наверное, в одном из этих ящиков... дерьмо. Похоже, придется обыскать их все.[/say]")
 
-		saynn("That would take forever, there is no way you're doing it.")
+		saynn("Это займет целую вечность, ты ни за что не справишься.")
 
-		saynn("You get a little closer to one of the crates.. and notice something.")
+		saynn("Ты подходишь чуть ближе к одному из ящиков... и замечаешь кое-что.")
 
-		saynn("[say=pc]They all got labels on them. Just read.[/say]")
+		saynn("[say=pc]На всех есть этикетки. Просто читай.[/say]")
 
-		saynn("And so the three of you start going through each row of shelves, carefully examining each label. Everyone got a single row to check.")
+		saynn("И вот вы втроем начинаете обходить каждый ряд полок, внимательно изучая каждую наклейку. Каждому достался свой ряд для проверки.")
 
-		saynn("Time passes..")
+		saynn("Проходит время...")
 
-		saynn("And soon..")
+		saynn("И вскоре...")
 
-		saynn("[say=kait]I think I found it! This one says 'Dangerous equipment and materials. Dispose when possible'. Huh, we'd be practically doing them a favor by stealing this.[/say]")
+		saynn("[say=kait]Кажется, я нашла! Тут написано: «Опасное оборудование и материалы. Утилизировать при первой возможности». Хм, если мы это украдем, то сделаем им почти одолжение.[/say]")
 
-		saynn("She pulls the crate off the shelf and opens it.")
+		saynn("Она стягивает ящик с полки и открывает его.")
 
-		saynn("Inside, nestled in foam padding, is a complete chemistry setup. Glass flasks, beakers, a small heating element, coiled tubing.. and rows of sealed vials filled with some kind of liquids.")
+		saynn("Внутри, утопая в пенопласте, находится полный набор для химических опытов: стеклянные колбы, мензурки, небольшой нагревательный элемент, спиральные трубки... и ряды запечатанных флаконов с какой-то жидкостью.")
 
-		saynn("It's almost too good to be true.")
+		saynn("Это кажется почти слишком идеальным, чтобы быть правдой.")
 
-		saynn("[say=pc]This is it. Should be enough for Ferri.[/say]")
+		saynn("[say=pc]Вот и всё. Для Ферри должно хватить.[/say]")
 
-		saynn("Kait closes the crate.")
+		saynn("Кейт закрывает ящик.")
 
-		saynn("[say=kait]Let's carry it to the hideout![/say]")
+		saynn("[say=kait]Тащи его в убежище![/say]")
 
-		saynn("Avy elbow-bumps the snow leopard.")
+		saynn("Эви толкает снежного барса локтем.")
 
-		saynn("[say=avy]Excuse me, how are you gonna do that? Every guard and their mother will want to tackle you on-sight.[/say]")
+		saynn("[say=avy]Прости, но как ты это сделаешь? Каждый охранник и его матушка захочет свалить тебя на месте при виде этого.[/say]")
 
-		saynn("[say=kait]..shit.[/say]")
+		saynn("[say=kait]..черт.[/say]")
 
-		saynn("Indeed. The crate is too big to hide it. It's contents too.")
+		saynn("И впрямь. Ящик слишком велик, чтобы его спрятать. Как и его содержимое.")
 
-		saynn("[say=avy]And even if we shove everything up our asses, we're not walking through that checkpoint![/say]")
+		saynn("[say=avy]Да мы хоть всё засунем себе в задницы, но через этот КПП всё равно не пройдём![/say]")
 
-		saynn("[say=kait]We're not gonna do that. We need a plan..[/say]")
+		saynn("[say=kait]Но мы не будем этого делать. Нам нужен план...[/say]")
 
-		saynn("It's not looking good. Everything that you did.. you might have to give it up now. Ferri wouldn't get her lab.. you wouldn't get its benefits.")
+		saynn("Дела плохи. Всё, что ты сделала... возможно, сейчас придётся от всего этого отказаться. Ферри не получит свою лабораторию... а ты — её блага.")
 
-		saynn("You gotta think. And you don't have time, Eliza is gonna be done any second now.")
+		saynn("Надо соображать. А времени в обрез — Элиза вот-вот закончит.")
 
-		saynn("Maybe there is something you can do.")
+		saynn("Может, ты что-нибудь сможешь придумать.")
 
-		saynn("You look around the room.")
+		saynn("Ты оглядываешь комнату.")
 
-		saynn("Shelves. You have shelves with crates. Crates with all sorts of medical stuff. Pills.. breast pumps.. fluid tanks..")
+		saynn("Стеллажи. На стеллажах стоят ящики. В ящиках всякая медицинская всячина. Таблетки... молокоотсосы... резервуары с жидкостью...")
 
-		saynn("You have a lab.. theoretically.. but you don't have anyone who can run it.")
+		saynn("У тебя есть лаборатория... теоретически... но тебе не хватает людей, чтобы ею управлять.")
 
-		saynn("What else is there..")
+		saynn("Что еще тут есть...")
 
-		addButton("Continue", "See what happens next", "do_think")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_think")
 	if(state == "do_think"):
-		saynn("Think.. you gotta think.")
+		saynn("Думай... надо думать.")
 
-		saynn("[say=kait]What if.. we leave the crate in one of the vents. Somewhere close to the elevator.. and then we smuggle its contents piece by piece, multiple runs.[/say]")
+		saynn("[say=kait]А что если... оставить ящик в одном из вентиляционных отверстий? Где-нибудь рядом с лифтом... а потом переносить содержимое по кусочкам, за несколько заходов?[/say]")
 
-		saynn("[say=avy]That is a dumb idea.[/say]")
+		saynn("[say=avy]Это тупая идея.[/say]")
 
-		saynn("Very dangerous. Will take forever too. It's a no go.")
+		saynn("Очень опасно. И времени займет целую вечность. Не вариант.")
 
-		saynn("[say=kait]Oh yeah, your shove-everything-up-our-asses idea was so much better. At least I'm offering a solution.[/say]")
+		saynn("[say=kait]О да, твоя идея запихать всё нам в задницы была куда лучше. По крайней мере, я предлагаю решение.[/say]")
 
-		saynn("You need to get a single crate out of here.")
+		saynn("Вам нужно вытащить отсюда один единственный ящик.")
 
-		saynn("[say=avy]Fine. But if this blows up in our faces, I'm blaming you.[/say]")
+		saynn("[say=avy]Ладно. Но если всё это взлетит на воздух, виновата будешь ты.[/say]")
 
-		saynn("You let them argue while you think. Getting the crate out.. How can you do that? None of you can just walk out with it. Right?")
+		saynn("Ты позволяешь им спорить, пока сам думаешь. Вытащить ящик... Как это сделать? Никто из вас не сможет просто так выйти с ним на выход. Верно?")
 
-		saynn("[say=kait]You always blame me.[/say]")
+		saynn("[say=kait]Ты вечно меня винишь.[/say]")
 
-		saynn("You'd be brought down instantly.. Only a staffer would realistically be able to do it.")
+		saynn("Тебя же сразу повяжут... Реалистично это под силу только сотруднику.")
 
-		saynn("[say=avy]Because it's always your fault.[/say]")
+		saynn("[say=avy]Потому что всё всегда из-за тебя.[/say]")
 
-		saynn("The nurse!")
+		saynn("Медсестра!")
 
-		saynn("[say=pc]I got a better idea.[/say]")
+		saynn("[say=pc]У меня есть идея получше.[/say]")
 
-		saynn("Everyone's ears perk towards you.")
+		saynn("Все настороженно поворачиваются к тебе.")
 
-		saynn("[say=pc]Tell the nurse to carry it for us.[/say]")
+		saynn("[say=pc]Скажи медсестре, пусть она понесет это за нас.[/say]")
 
-		saynn("You hear a confused muffled noise from the corner.")
+		saynn("Из угла доносится сдавленный, растерянный звук.")
 
-		saynn("[say=avy]Why the fuck would she agree to do that for.. hmm-.. Wait a second. You might be right. Let me do something.[/say]")
+		saynn("[say=avy]С какого хуя она должна на это согласиться?.. Хм... Погоди-ка. А ведь ты можешь быть прав. Дай-ка я что-нибудь предприму.[/say]")
 
-		saynn("Avy starts walking towards the nurse. The girl almost got rid of her ropes too by now, her legs and arms are pretty much free.")
+		saynn("Эви направляется к медсестре. Девушка к этому моменту почти выбралась из веревок — ее руки и ноги уже почти свободны.")
 
-		saynn("[say=avy]Ohh, look at you. You almost struggled free. So cute.[/say]")
+		saynn("[say=avy]Ох, посмотрите на нее. Почти вырвалась. Какая милашка.[/say]")
 
-		addButton("Continue", "See what happens next", "avy_on_nurse")
+		addButton("Продолжить", "Смотреть, что будет дальше", "avy_on_nurse")
 	if(state == "avy_on_nurse"):
 		playAnimation(StageScene.SexFeetPlay, "pin", {pc="avy", npc="nurse"})
-		saynn("The nurse tries to crawl away but Avy is quick to pin her into the floor. The foxy flips the nurse onto her back and plants a hind paw on her chest, pressing just enough to make breathing annoyingly-hard.")
+		saynn("Медсестра пытается уползти, но Эви быстро прижимает ее к полу. Лисица переворачивает ее на спину и ставит заднюю лапу ей на грудь, надавливая ровно настолько, чтобы дышать стало чертовски трудно.")
 
-		saynn("[say=avy]Here's the deal, pussycat. You're gonna do exactly what we say. No screaming. No running. No hero shit.[/say]")
+		saynn("[say=avy]Так, слушай сюда, киска. Будешь делать ровно то, что мы скажем. Никаких криков. Никакого бегства. И никакой геройской херни.[/say]")
 
-		saynn("Avy looks down at her with mean blue eyes.")
+		saynn("Эви смотрит на нее сверху вниз своими коварными голубыми глазами.")
 
-		saynn("[say=avy]Yes, if you do any of that, you're gonna ruin our plans. It'd be so-so terrible for us. But let me tell you what would happen next.[/say]")
+		saynn("[say=avy]Да, если ты начнешь выпендриваться, то испортишь нам все планы. А это будет ну очень-очень плохо для нас. Но давай я расскажу тебе, что будет дальше.[/say]")
 
-		saynn("The nurse blinks.")
+		saynn("Медсестра часто моргает.")
 
-		saynn("[say=avy]We're gonna enjoy our time in solitary. Lots of time to think there. With nothing better to do, we're gonna come up with so many things that we will want to do to you.. And then.. we're gonna be out.[/say]")
+		saynn("[say=avy]Мы отлично проведем время в одиночке. Там будет полно времени, чтобы подумать. И раз нам больше нечем будет заняться, мы напридумываем столько всего, что захотим с тобой сделать... А потом... мы выйдем на свободу.[/say]")
 
-		saynn("Avy tilts her head a bit, a cunning smile curls the tips of her lips.")
+		saynn("Эви слегка наклоняет голову, а кончики её губ растягиваются в лукавой ухмылке.")
 
-		saynn("[say=avy]We're in the same small prison, you know. I know how you look. I can find you. You can't hide.[/say]")
+		saynn("[say=avy]Мы ведь в одной маленькой тюрьме, понимаешь? Я знаю, как ты выглядишь. Я смогу тебя найти. Тебе не спрятаться.[/say]")
 
-		saynn("The threatening notes in her voice get stronger. And then stronger yet.")
+		saynn("Угрожающие нотки в её голосе становятся всё сильнее. И ещё сильнее.")
 
-		saynn("[say=avy]And then.. I guess I will start with small stuff. I will tear those cute whiskers off, you don't really need them. Could bite a chunk of your ear off. Your claws.. I could snap them in half. It's really painful. REALLY-really painful.[/say]")
+		saynn("[say=avy]А потом... думаю, я начну с мелочей. Вырву эти твои милые усики, они тебе всё равно не особо нужны. Могу и кусок уха откусить. Твои когти... я могла бы переломить их пополам. Это очень больно. ОЧЕНЬ-очень больно.[/say]")
 
-		saynn("The nurse winces just thinking about that.")
+		saynn("Медсестра вздрагивает от одной только мысли об этом.")
 
-		saynn("Kait glances at you and taps the side of her forehead.")
+		saynn("Кейт бросает на тебя взгляд и постукивает пальцем по виску.")
 
-		saynn("[say=avy]I guess I could torture your nipples. Your clit. Your cunt. Leave them all bleeding.[/say]")
+		saynn("[say=avy]Думаю, я могла бы пытать твои соски. Твой клитор. Твою киску. Оставить их все в крови.[/say]")
 
-		saynn("The poor nurse looks terrified.. too terrified to resist. Tears begin running down her cheeks.")
+		saynn("Бедная медсестра выглядит в ужасе... слишком напуганная, чтобы сопротивляться. По её щекам начинают катиться слезы.")
 
-		saynn("[say=avy]And then.. I have a knotted cock, you know. Could dislocate your jaw. Could loosen up your pretty ass. We will see.[/say]")
+		saynn("[say=avy]А потом... у меня ведь узловатый член, знаешь ли. Могу и челюсть тебе вывихнуть. Могу и твою прелестную задницу размягчить. Посмотрим.[/say]")
 
-		saynn("Avy gropes the bulge on her shorts. Kait finally has enough of it. She runs up to the foxy.")
+		saynn("Эви ощупывает выпуклость на шортах девушки. Кайту это окончательно надоедает, и она подбегает к этой лисичке.")
 
-		saynn("[say=kait]Avy, quit scaring the poor staffer to death. Go away.[/say]")
+		saynn("[say=kait]Эви, хватит пугать бедную сотрудницу до смерти. Свали отсюда![/say]")
 
-		addButton("Continue", "See what happens next", "kaits_turn")
+		addButton("Продолжить", "Смотреть, что будет дальше", "kaits_turn")
 	if(state == "kaits_turn"):
 		playAnimation(StageScene.SexCowgirlAlt, "tease", {pc="nurse", npc="kait"})
-		saynn("Kait shoves Avy off and straddles the nurse herself. The snow leopard leans down, almost touching noses, her voice turning soft.")
+		saynn("Кайт отталкивает Эви и сама запрыгивает на медсестру верхом. Снежная леопардица наклоняется к ней, почти касаясь носами, и её голос становится мягким.")
 
-		saynn("[say=kait]Hey. Hey, look at me. Eyes on me, sweetheart.[/say]")
+		saynn("[say=kait]Эй. Эй, посмотри на меня. Глазки на меня, милашка.[/say]")
 
-		saynn("The nurse looks up at Kait with wet, pleading eyes. The leopard reaches out to brush her paw against the nurse's hair, gently.")
+		saynn("Медсестра смотрит на Кайту влажными, умоляющими глазами. Леопардица протягивает лапу и нежно проводит ею по волосам девушки.")
 
-		saynn("[say=kait]I can't stop Avy from doing things to you if you fuck it up for us. I mean I can try.. Anyway.[/say]")
+		saynn("[say=kait]Если ты всё запорёшь, я не смогу помешать Эви творить с тобой всякое. Ну, то есть, попробовать смогу... В общем, слушай.[/say]")
 
-		saynn("Kait catches the nurse's chin and gently scritches it.")
+		saynn("Кайт берет медсестру за подбородок и ласково его почесывает.")
 
-		saynn("[say=kait]Thing is.. if you obey us this one time, good stuff is gonna happen. There is a big reward waiting for you~.[/say]")
+		saynn("[say=kait]Дело в том... что если ты послушаешься нас в этот раз, случится кое-что очень приятное. Тебя ждёт огромная награда~.[/say]")
 
-		saynn("Kait's clawed digits follow the lines of the nurse's neck, making her shiver slightly and raise her chin. Kait leans in even closer to murmur into her ear.")
+		saynn("Когтистые пальцы Кайт ведут по линии шеи медсестры, заставляя ту слегка вздрогнуть и приподнять подбородок. Кайт наклоняется ещё ближе, чтобы прошептать ей на ухо.")
 
-		saynn("[say=kait]I can make you feel really-really good, you know..[/say]")
+		saynn("[say=kait]Я могу сделать тебе о-о-очень хорошо, знаешь ли...[/say]")
 
-		saynn("Her digits go further, sliding under the nurse's uniform, caressing the soft fur of her chest. The nurse gasps subtly, her back arching a bit. Kait's paw cups one of her breasts, digits circling the nipple until it stiffens.")
+		saynn("Её пальцы проникают глубже, скользя под униформу медсестры и лаская мягкий мех на её груди. Медсестра едва слышно ахает, слегка прогибаясь в спине. Лапа Кейт обхватывает одну из её грудей, поглаживая сосок пальцами, пока тот не твердеет.")
 
-		saynn("[say=kait]Your desires.. I could make them real.[/say]")
+		saynn("[say=kait]Твои желания... Я могла бы воплотить их в реальность.[/say]")
 
-		saynn("It seems to be working quite well. The nurse isn't looking terrified anymore.")
+		saynn("Похоже, это работает довольно хорошо. Медсестра больше не выглядит так, будто напугана до смерти.")
 
-		saynn("[say=kait]You'd also be receiving our protection. So? What do you think? Can you carry a little box for us for a few minutes?[/say]")
+		saynn("[say=kait]Взамен ты получишь нашу защиту. Ну так что? Как думаешь? Сможешь подержать для нас маленькую коробочку несколько минут?[/say]")
 
-		saynn("The scared nurse blinks many times.. but then nods once softly. Kait smiles and gives her a smooch on the forehead.")
+		saynn("Напуганная медсестра часто моргает... но затем тихо кивает. Кейт улыбается и нежно целует её в лоб.")
 
-		saynn("[say=kait]Good girl~. I will tell that stupid Avy to fuck off.[/say]")
+		saynn("[say=kait]Хорошая девочка~. Я скажу этой тупой Эви, чтобы она отвалила.[/say]")
 
-		saynn("[say=avy]I heard that![/say]")
+		saynn("[say=avy]Я всё слышала![/say]")
 
-		saynn("[say=kait]Good, means I don't have to repeat myself.[/say]")
+		saynn("[say=kait]Хорошо, значит, мне не придется повторять дважды.[/say]")
 
-		saynn("Kait unties the rest of the ropes and takes the ballgag harness off of the nurse's head.")
+		saynn("Кейт развязывает остальные веревки и снимает с головы медсестры ремень для кляпа.")
 
-		saynn("Good inmate, bad inmate. They managed to execute it pretty well.")
+		saynn("Хорошая заключенная, плохая заключенная. Им удалось справиться с этим довольно успешно.")
 
-		addButton("Continue", "See what happens next", "kait_undoes_stuff")
+		addButton("Продолжить", "Смотреть, что будет дальше", "kait_undoes_stuff")
 	if(state == "kait_undoes_stuff"):
 		playAnimation(StageScene.Duo, "stand", {npc="nurse"})
-		saynn("You and Kait help the nurse to get up.")
+		saynn("Вы с Кейт помогаете медсестре подняться.")
 
-		saynn("[say=pc]Alright. You all handle the crate. I gotta run back to the doctor and Ferri.[/say]")
+		saynn("[say=pc]Ладно. С ящиком разберетесь сами. А мне нужно бегом обратно к доктору и Ферри.[/say]")
 
-		saynn("Here is hoping they're still busy with each other..")
+		saynn("Остается надеяться, что они всё еще заняты друг другом...")
 
-		saynn("You see the nurse pick up the crate before you rush back to the milking room.")
+		saynn("Вы видите, как медсестра подхватывает ящик, после чего вы спешите обратно в доильный зал.")
 
-		saynn("[say=avy]Don't you dare drop it![/say]")
+		saynn("[say=avy]Только попробуй его уронить![/say]")
 
-		addButton("Continue", "See what happens next", "back_to_eliza")
+		addButton("Продолжить", "Смотреть, что будет дальше", "back_to_eliza")
 	if(state == "back_to_eliza"):
 		setCharacters([])
 		addCharacter("eliza")
 		addCharacter("ferri", ["naked"])
 		playAnimation(StageScene.MilkingStallDuo, "watchfast", {pc="ferri", npc="eliza", bodyState={naked=true, hard=true}})
 		aimCameraAndSetLocName("med_milkingroom")
-		saynn("You dash to the milking room as fast as you can.")
+		saynn("Вы несетесь в доильный зал так быстро, как только можете.")
 
-		saynn("Being spotted is the last thing you want so you sneak back into the stall instead.")
+		saynn("Быть замеченными — последнее, чего вам хочется, поэтому вместо того, чтобы идти в лоб, вы прокрадываетесь обратно в стойло.")
 
-		saynn("You see a heavily-panting dracat and a happy-looking doctor in front of her, holding the half-full milk tank.")
+		saynn("Перед вами предстает тяжело дышащая дракатка и выглядящий очень довольным доктор, держащий наполовину полный бак с молоком.")
 
-		saynn("[say=eliza]Hah~. Look at you. Gave me so much milk to use~. My coffee breaks are gonna be so much better now.[/say]")
+		saynn("[say=eliza]Ха~. Посмотри на себя. Нацедила мне столько молочка~. Теперь мои перерывы на кофе станут куда приятнее.[/say]")
 
-		saynn("[say=ferri]M-moo.. mhh-.. mo-oo..[/say]")
+		saynn("[say=ferri]М-муу.. мхх-.. му-уу..[/say]")
 
-		saynn("Ferri looks completely spaced out. Eliza pats her on the head.")
+		saynn("Ферри выглядит совершенно отрешенной. Элиза похлопывает её по голове.")
 
-		saynn("[say=eliza]Good moo.[/say]")
+		saynn("[say=eliza]Хорошая коровка.[/say]")
 
-		saynn("You clear your throat audibly.")
+		saynn("Вы громко откашливаетесь.")
 
-		saynn("[say=eliza]Oh, right, the owner, I forgot you were here to be honest. Enjoyed the show~?[/say]")
+		saynn("[say=eliza]Ох, точно, хозяин! Если честно, я и забыла, что вы здесь. Понравилось зрелище~?[/say]")
 
-		saynn("[say=pc]Oh yeah. What a scene this was. Wow, so hot.[/say]")
+		saynn("[say=pc]О да. Ну и сцена была. Вау, как же горячо.[/say]")
 
-		saynn("Eliza chuckles.")
+		saynn("Элиза посмеивается.")
 
-		saynn("[say=eliza]I'm glad you liked it~. I didn't hear you if you said anything during it, I was.. in the flow state.. just like Ferri~.[/say]")
+		saynn("[say=eliza]Рада, что вам понравилось~. Не слышала, чтобы вы что-то говорили во время процесса, я была... в потоке... совсем как Ферри~.[/say]")
 
-		saynn("[say=pc]Yeah, I was just.. watching.[/say]")
+		saynn("[say=pc]Да, я просто... наблюдал.[/say]")
 
-		saynn("Eliza nods and puts away the milk tank before proceeding to clean Ferri a bit and then unlock her.")
+		saynn("Элиза кивает и убирает бак с молоком, после чего немного отмывает Ферри и расстегивает её крепления.")
 
-		saynn("Poor dracat almost collapses but Eliza catches her.")
+		saynn("Бедная драка чуть не падает в обморок, но Элиза подхватывает её.")
 
-		saynn("[say=ferri]Mew-w-w..[/say]")
+		saynn("[say=ferri]Мяу-у-у..[/say]")
 
-		saynn("[say=eliza]Aww. Maybe you need a few days in the padded room to get your bearings back~?[/say]")
+		saynn("[say=eliza]Оуу. Может, тебе стоит провести пару дней в мягкой комнате, чтобы прийти в себя~?[/say]")
 
-		saynn("Ferri just moans softly in response.")
+		saynn("Ферри лишь тихонько стонет в ответ.")
 
-		saynn("[say=pc]I hope you didn't break my pet already.[/say]")
+		saynn("[say=pc]Надеюсь, ты еще не сломал мою питомицу.[/say]")
 
-		saynn("[say=eliza]Nahh, she will be fine~. Bring her in again sometime.[/say]")
+		saynn("[say=eliza]Да ладно, с ней всё будет в порядке~. Заводи её к нам еще как-нибудь.[/say]")
 
-		addButton("Continue", "See what happens next", "ferri_leashed_again")
+		addButton("Продолжить", "Смотреть, что будет дальше", "ferri_leashed_again")
 	if(state == "ferri_leashed_again"):
 		addCharacter("ferri")
 		playAnimation(StageScene.Duo, "stand", {npc="ferri", npcBodyState={leashedBy="pc"}})
-		saynn("You approach Ferri and help her get dressed. Then you clip a leash to her collar.")
+		saynn("Вы подходите к Ферри и помогаете ей одеться. Затем вы пристегиваете поводок к её ошейнику.")
 
-		saynn("[say=pc]I think it's time for us to go.[/say]")
+		saynn("[say=pc]Думаю, нам пора идти.[/say]")
 
-		saynn("[say=eliza]Don't you want your payment~?[/say]")
+		saynn("[say=eliza]Разве ты не хочешь получить оплату~?[/say]")
 
-		saynn("[say=pc]Uh. Right. How much is it?[/say]")
+		saynn("[say=pc]Ах. Точно. И сколько она составляет?[/say]")
 
-		saynn("[say=eliza]Well.. Ten credits. I will send them to your inmate account when I will fill in all that paperwork.[/say]")
+		saynn("[say=eliza]Ну.. Десять кредитов. Я зачислю их на твой счет заключенного, когда заполню все эти бумажки.[/say]")
 
-		saynn("You nod and proceed to head out.")
+		saynn("Ты киваешь и направляешься к выходу.")
 
-		saynn("Eliza walks in front of you.")
+		saynn("Элиза идет впереди тебя.")
 
-		addButton("Continue", "See what happens next", "eliza_runs_into_nurse")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_runs_into_nurse")
 	if(state == "eliza_runs_into_nurse"):
 		aimCameraAndSetLocName("med_nearmilking")
 		addCharacter("nurse")
 		playAnimation(StageScene.Duo, "stand", {pc="eliza", npc="nurse"})
-		saynn("And of course.. Eliza just had to exit at exactly the right moment to run into the nurse that's carrying the crate to the exit.")
+		saynn("И, конечно же... Элизе подгадал самый подходящий момент, чтобы столкнуться с медсестрой, которая как раз несла ящик к выходу.")
 
-		saynn("[say=eliza]Hey, you, stop right there.[/say]")
+		saynn("[say=eliza]Эй, ты, а ну стой![/say]")
 
-		saynn("The nurse stops dead in her tracks.. and visibly swallows. She turns slowly, ears flattening against her head.. the crate wobbling in her arms.")
+		saynn("Медсестра замирает как вкопанная... и заметно сглатывает. Она медленно оборачивается, прижав уши к голове, а ящик в её руках начинает опасно покачиваться.")
 
-		saynn("Down the corridor, you notice Avy and Kait hiding behind the corner. You direct a silent angry glare at them.. and see them shrug in return.")
+		saynn("В конце коридора ты замечаешь Эйви и Кейт, прячущихся за углом. Ты бросаешь на них молчаливый яростный взгляд... и видишь, как они в ответ лишь пожимают плечами.")
 
-		saynn("[say=nurse]Um.. yes, Doctor Quinn?..[/say]")
+		saynn("[say=nurse]Эм... да, доктор Куинн?..[/say]")
 
-		saynn("Eliza puts on her strict eyes and approaches the nurse. She circles her, slowly and quietly, her tail swaying annoyed. She stops in front of the girl and tilts her head, watching carefully.")
+		saynn("Элиза принимает строгий вид и приближается к медсестре. Она обходит её кругом, медленно и тихо, раздраженно покачивая хвостом. Остановившись перед девушкой, она наклоняет голову, внимательно наблюдая за ней.")
 
-		saynn("[say=eliza]What is it that you're carrying?[/say]")
+		saynn("[say=eliza]Что это ты там тащишь?[/say]")
 
-		saynn("[say=nurse]Well.. just.. stuff?[/say]")
+		saynn("[say=nurse]Ну... просто... всякое?[/say]")
 
-		saynn("[say=eliza]Stuff, huh.[/say]")
+		saynn("[say=eliza]Вещицы, значит?[/say]")
 
-		saynn("Eliza leans in extremely close, looking the nurse into her eyes directly.")
+		saynn("Элиза наклоняется вплотную, заглядывая медсестре прямо в глаза.")
 
-		saynn("[say=eliza]Are you really stealing supplies? Again?[/say]")
+		saynn("[say=eliza]Ты и правда воруешь припасы? Опять?[/say]")
 
-		saynn("[say=nurse]No..[/say]")
+		saynn("[say=nurse]Нет...[/say]")
 
-		saynn("[say=eliza]Yes, you are.[/say]")
+		saynn("[say=eliza]Да, воруешь.[/say]")
 
-		saynn("The nurse's breath hitches, her pupils dilating. Eliza visibly licks her fangs while watching the poor girl.")
+		saynn("У медсестры перехватывает дыхание, зрачки расширяются. Элиза демонстративно облизывает клыки, наблюдая за бедняжкой.")
 
-		saynn("[say=eliza]You seem scared. Hm. Did someone threaten you to do this?[/say]")
+		saynn("[say=eliza]Ты, кажется, напугана. Хм. Тебя кто-то заставил это сделать?[/say]")
 
-		saynn("It's probably best if you try to steer the conversation away.")
+		saynn("Пожалуй, лучше попытаться увести разговор в другую сторону.")
 
-		saynn("[say=pc]Give the poor nurse some rest, she doesn't get paid enough for this.[/say]")
+		saynn("[say=pc]Дай бедной медсестре отдохнуть, ей за это слишком мало платят.[/say]")
 
-		saynn("Eliza doesn't even look at you, her paw shoots up.")
+		saynn("Элиза даже не смотрит на тебя, она просто вскидывает лапу.")
 
-		saynn("[say=eliza]Tshh-, I'm not letting it slide this time.[/say]")
+		saynn("[say=eliza]Тссс, на этот раз я это так не оставлю.[/say]")
 
-		saynn("She turns full attention back to the nurse, reaching out to cup the trembling feline's chin. Her thumb strokes along the jaw.. gentle but firm.")
+		saynn("Она переключает всё своё внимание обратно на медсестру, протягивая руку и обхватывая подбородок дрожащей кошечки. Её большой палец поглаживает челюсть... нежно, но уверенно.")
 
-		saynn("[say=eliza]So. Please, cutie, tell me. What happened? Why are you shivering?[/say]")
+		saynn("[say=eliza]Ну же. Пожалуйста, милашка, расскажи мне. Что случилось? Почему ты так дрожишь?[/say]")
 
-		saynn("[say=nurse]Well.. uhm..[/say]")
+		saynn("[say=nurse]Ну.. эмм..[/say]")
 
-		saynn("Eliza's other paw comes up, stroking the nurse's ear.")
+		saynn("Другая лапа Элизы поднимается, поглаживая медсестру по ушку.")
 
-		saynn("[say=eliza]Yes? You can tell everything to me, I can protect you. But I gotta be able to trust you, you know?[/say]")
+		saynn("[say=eliza]Ну? Ты можешь доверить мне всё, я смогу тебя защитить. Но мне нужно знать, что я могу тебе верить, понимаешь?[/say]")
 
-		saynn("The nurse nods subtly. She is still holding that crate.. makes her quite helpless before the doctor.")
+		saynn("Медсестра едва заметно кивает. Она всё ещё держит тот ящик... что делает её почти беспомощной перед доктором.")
 
-		saynn("[say=eliza]Just.. tell me what happened, I won't be angry. But if you don't.. then I will be.[/say]")
+		saynn("[say=eliza]Просто.. расскажи мне, что произошло, я не буду злиться. Но если не расскажешь.. тогда разозлюсь я.[/say]")
 
-		saynn("[say=nurse]Uh.. hm.. ah..[/say]")
+		saynn("[say=nurse]Ох.. хм.. ах..[/say]")
 
-		saynn("Eliza's claws come out slowly, now scritching her chin and ear, digging into the fur.")
+		saynn("Когти Элизы медленно выпускаются, теперь они скребут её подбородок и ухо, впиваясь в мех.")
 
-		saynn("[say=pc]Doctor, I really think..[/say]")
+		saynn("[say=pc]Доктор, я правда думаю..[/say]")
 
-		saynn("Eliza's clawed paw jumps to hold your mouth shut.")
+		saynn("Когтистая лапа Элизы резко влетает тебе в рот, заставляя замолчать.")
 
-		saynn("[say=eliza]Shut up! Tell me already![/say]")
+		saynn("[say=eliza]Заткнись! Выкладывай уже![/say]")
 
-		saynn("[say=nurse]I feel subby! From your voice.. that's why I'm.. like this..[/say]")
+		saynn("[say=nurse]Я чувствую себя сабмишеном! От вашего голоса.. вот почему я.. такая..[/say]")
 
-		saynn("The words burst out of the nurse, high and desperate. Eliza blinks.")
+		saynn("Слова вырываются из уст медсестры — высокие и отчаянные. Элиза моргает.")
 
-		saynn("[say=eliza]Oh? Really~? Wow. Right. Subby kitty.[/say]")
+		saynn("[say=eliza]О? Неужели~? Ого. Понятно. Кошечка-сабмишенок.[/say]")
 
-		saynn("Eliza stares at the nurse for some time, her expression shifting, softening. A cute little smile returns to her.")
+		saynn("Элиза какое-то время пристально смотрит на медсестру, выражение её лица меняется, смягчаясь. На губах появляется милая улыбка.")
 
-		saynn("[say=eliza]Now everything makes so much more sense, haha. I didn't even realize~.[/say]")
+		saynn("[say=eliza]Теперь всё стало гораздо понятнее, ха-ха. А я ведь даже не осознавала~.[/say]")
 
-		saynn("She giggles.. and the nurse giggles too.. but way more nervously.")
+		saynn("Она хихикает.. и медсестра тоже хихикает.. но гораздо более нервно.")
 
-		saynn("[say=eliza]It still doesn't quite explain what you are doing with these.. hm..[/say]")
+		saynn("[say=eliza]Хотя это всё ещё не совсем объясняет, что ты творишь с этими.. хм..[/say]")
 
-		saynn("Eliza reads the label on the crate.. then peeks inside it. Her brow rises high.")
+		saynn("Элиза читает этикетку на ящике... затем заглядывает внутрь. Её брови взлетают вверх.")
 
-		saynn("[say=eliza]Oh.. Right. I see. You're helping to dispose of old equipment. Finally, that stuff was there for weeks.[/say]")
+		saynn("[say=eliza]Ох... Ну да. Понятно. Помогаешь избавляться от старого оборудования. Наконец-то, эта хрень валялась там неделями.[/say]")
 
-		saynn("[say=nurse]Yeah.. uh..[/say]")
+		saynn("[say=nurse]Да... э-э...[/say]")
 
-		saynn("Eliza sighs.")
+		saynn("Элиза вздыхает.")
 
-		saynn("[say=eliza]You know what? Do whatever you want with it. Dump it into space for all I care, I really hated that outdated kit. Good girl, helping to keep our storage room tidy.[/say]")
+		saynn("[say=eliza]Знаешь что? Делай с ним что хочешь. Выкинь его в космос, мне плевать, я терпеть не могла этот устаревший хлам. Умница, помогаешь поддерживать порядок на складе.[/say]")
 
-		saynn("[say=nurse]..thank you.. Doctor Quinn..[/say]")
+		saynn("[say=nurse]... спасибо... Доктор Куинн...[/say]")
 
-		saynn("Eliza gives the nurse a soft smack on the butt.")
+		saynn("Элиза слегка шлепает медсестру по заднице.")
 
-		saynn("[say=nurse]Ah..[/say]")
+		saynn("[say=nurse]Ах!..[/say]")
 
-		saynn("[say=eliza]Run along now~. I got paperwork to do.[/say]")
+		saynn("[say=eliza]А теперь беги~. У меня тут бумажная волокита.[/say]")
 
-		saynn("[say=nurse]Yes, Doctor Quinn..[/say]")
+		saynn("[say=nurse]Слушаюсь, доктор Куинн...[/say]")
 
-		saynn("The nurse hurries past, crate clutched to her chest.")
+		saynn("Медсестра торопливо проходит мимо, прижимая к груди ящик.")
 
-		saynn("Eliza walks away too, leaving you all be.")
+		saynn("Элиза тоже уходит, оставляя вас в покое.")
 
-		saynn("Kait and Avy come out of the hiding and help you walk the nurse to the hideout.")
+		saynn("Кейт и Эйви выбираются из укрытия и помогают тебе проводить медсестру до тайника.")
 
-		addButton("Continue", "See what happens next", "start_hideout_scene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_hideout_scene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

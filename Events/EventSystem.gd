@@ -7,7 +7,7 @@ var datapackEvents = []
 
 func _ready():
 	GM.ES = self
-	name = "EventSystem"
+	name = "Система событий"
 	
 	registerEventTriggers()
 	

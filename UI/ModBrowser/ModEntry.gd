@@ -2,7 +2,7 @@ extends Reference
 class_name ModEntry
 
 var id:String = ""
-var name:String = "Test mod"
+var name:String = "Тестовый мод"
 var author:String = "Someone"
 var authorsData:Dictionary = { authors = ["Someone"], preferredSeparator = ", " }
 var description:String = ""

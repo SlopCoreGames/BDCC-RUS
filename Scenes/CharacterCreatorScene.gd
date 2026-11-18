@@ -21,44 +21,44 @@ func _run():
 	#print(Bodypart.findPossibleBodypartIDs(BodypartSlot.Tail, GM.pc, [Species.Human]))
 	
 	if(state == "" || state == "pickgender"):
-		say("Pick your character's gender. This will affect the color of your speech and how others will treat you. This can be changed at any point")
+		say("Выберите пол своего персонажа. Это повлияет на цвет вашего текста и на то, как к вам будут относиться окружающие. Пол можно изменить в любой момент")
 		
-		addButton("Male", "You're a guy", "setgender", [Gender.Male])
-		addButton("Female", "You're a girl", "setgender", [Gender.Female])
-		addButton("Androgynous", "Somewhere in between", "setgender", [Gender.Androgynous])
-		addButton("Other", "Something else", "setgender", [Gender.Other])
+		addButton("Мужской", "Вы — парень", "setgender", [Gender.Male])
+		addButton("Женский", "Вы — девушка", "setgender", [Gender.Female])
+		addButton("Андрогинный", "Что-то среднее", "setgender", [Gender.Androgynous])
+		addButton("Другой", "Что-то иное", "setgender", [Gender.Other])
 
 	if(state == "pickpronouns"):
-		say("Pick your character's pronouns. This can be changed at any point")
+		say("Выберите местоимения для вашего персонажа. Их можно изменить в любой момент")
 
-		addButton("Derive from gender", "Automatically adjust pronouns based on gender", "setpronouns", [null])
-		addButton("he/his", "Choose masculine pronouns", "setpronouns", [Gender.Male])
-		addButton("she/her", "Choose feminine pronouns", "setpronouns", [Gender.Female])
-		addButton("they/their", "Choose androgynous or neutral pronouns", "setpronouns", [Gender.Androgynous])
-		addButton("it/its", "Choose neutral pronouns", "setpronouns", [Gender.Other])
-		addButton("back", "Back to picking gender", "pickgender")
+		addButton("Производное от пола", "Автоматически подбирать местоимения в зависимости от пола", "setpronouns", [null])
+		addButton("he/his", "Выбрать мужские местоимения", "setpronouns", [Gender.Male])
+		addButton("she/her", "Выбрать женские местоимения", "setpronouns", [Gender.Female])
+		addButton("they/their", "Выбрать андрогинные или нейтральные местоимения", "setpronouns", [Gender.Androgynous])
+		addButton("it/its", "Выбрать нейтральные местоимения", "setpronouns", [Gender.Other])
+		addButton("back", "Назад к выбору пола", "pickgender")
 
 	if(state == "pickspecies"):
-		say("Pick your character's species")
+		say("Выберите вид вашего персонажа")
 		var allSpecies = GlobalRegistry.getAllPlayableSpecies()
 		for speciesID in allSpecies:
 			var speciesInfo = GlobalRegistry.getSpecies(speciesID)
 			addButton(speciesInfo.getVisibleName(), speciesInfo.getVisibleDescription(), "setspecies", [[speciesID]])
-		addButton("Make Hybrid", "Make a custom hybrid", "pickhybrid1")
-		addButton("back", "Back to picking pronouns", "pickpronouns")
+		addButton("Создать гибрида", "Создать кастомного гибрида", "pickhybrid1")
+		addButton("back", "Вернуться к выбору местоимений", "pickpronouns")
 
 	if(state == "pickhybrid1"):
-		say("Pick your first species")
+		say("Выберите первую расу")
 		
 		var allSpecies = GlobalRegistry.getAllPlayableSpecies()
 		for speciesID in allSpecies:
 			var speciesInfo = GlobalRegistry.getSpecies(speciesID)
 			addButton(speciesInfo.getVisibleName(), speciesInfo.getVisibleDescription(), "pick2species", [speciesID])
 			
-		addButton("back", "Back", "pickspecies")
+		addButton("back", "Назад", "pickspecies")
 
 	if(state == "pick2species"):
-		say("Pick your second species")
+		say("Выберите вторую расу")
 		
 		var allSpecies = GlobalRegistry.getAllPlayableSpecies()
 		for speciesID in allSpecies:
@@ -68,16 +68,16 @@ func _run():
 			var speciesInfo = GlobalRegistry.getSpecies(speciesID)
 			addButton(speciesInfo.getVisibleName(), speciesInfo.getVisibleDescription(), "setspecies", [[pickedFirstSpeciesHybrid, speciesID]])
 		
-		addButton("back", "Back", "pickhybrid1")
+		addButton("back", "Назад", "pickhybrid1")
 
 	if(state == "pickedspecies"):
 		savedPage = 0
 		playAnimation(StageScene.Solo, "stand", {bodyState={naked=true,hard=true}})
 		
 		if(debugMode):
-			saynn("[b]Scene is running in debug mode, no bodypart restrictions are applied[/b]")
+			saynn("[b]Сцена запущена в режиме отладки, ограничения по частям тела не применяются[/b]")
 		
-		say("You are a "+GM.pc.getSpeciesFullName())
+		say("Вы — "+GM.pc.getSpeciesFullName())
 		say("\n----\n")
 		
 		var bodyparts = GM.pc.getBodyparts()
@@ -85,7 +85,7 @@ func _run():
 		for slot in allSlots:
 			var slotName = BodypartSlot.getVisibleName(slot)
 			if(!bodyparts.has(slot) || bodyparts[slot] == null):
-				say(slotName+": None\n")
+				say(slotName+": Нет\n")
 				continue
 			
 			var bodypart = bodyparts[slot]
@@ -99,7 +99,7 @@ func _run():
 				
 			#say("\n")
 		say("\n")
-		sayn("Body attributes:")
+		sayn("Атрибуты тела:")
 		for curAttrib in GM.pc.getAttributesText():
 			sayn(curAttrib[0]+": "+str(curAttrib[1]))
 			
@@ -108,23 +108,23 @@ func _run():
 		
 		for slot in allSlots:
 			var slotName = BodypartSlot.getVisibleName(slot)
-			addButton(slotName, "Change this bodypart", "pickbodypart", [slot])
+			addButton(slotName, "Изменить эту часть тела", "pickbodypart", [slot])
 			
 		addExtraButtonAt(3, "Body attributes", "Change your femininity, thickness and so", "bodyAttributes")
 			
 		# DEBUG testing stuff, feel free to remove
 		if(false):
-			sayn("\nEXAMPLE DESCRIPTION:")
+			sayn("\nПРИМЕР ОПИСАНИЯ:")
 			if(GM.pc.hasPenis()):
-				sayn("your dick is {pc.cockSize} and also {pc.cockDesc}")
-				saynn("You have {pc.aPenis}")
-			sayn("You have {pc.breasts}")
-			saynn("Your breasts are {pc.breastsSize} and they are also {pc.breastsDesc}")
+				sayn("твой член {pc.cockSize} и также {pc.cockDesc}")
+				saynn("У вас есть {pc.aPenis}")
+			sayn("У вас есть {pc.breasts}")
+			saynn("Ваша грудь {pc.breastsSize} и она также {pc.breastsDesc}")
 			if(GM.pc.hasVagina()):
-				saynn("You have {pc.aVagina}")
+				saynn("У вас есть {pc.aVagina}")
 			if(GM.pc.hasTail()):
-				saynn("You have {pc.aTail}")
-			saynn("Your body shape is {pc.thick}, you look {pc.feminine}")
+				saynn("У вас есть {pc.aTail}")
+			saynn("Тип вашего тела {pc.thick}, вы выглядите {pc.feminine}")
 			
 		
 		if(!debugMode):
@@ -133,22 +133,22 @@ func _run():
 			addExtraButtonAt(4, "Change species", "! This will override all the bodyparts !", "pickspecies")
 		
 	if(state == "pickbodypart"):
-		saynn("Choose the bodypart or change the attributes of the current one")
+		saynn("Выберите часть тела или измените параметры текущей")
 		
-		addButton("Back", "go back", "pickedspecies")
+		addButton("Назад", "назад", "pickedspecies")
 		
 		var playerBodypart = null
 		
 		if(GM.pc.hasBodypart(pickingBodypartType)):
 			playerBodypart = GM.pc.getBodypart(pickingBodypartType)
 			
-			sayn("Currently selected: "+playerBodypart.getCharacterCreatorName())
+			sayn("Выбрано сейчас: "+playerBodypart.getCharacterCreatorName())
 			for curAttrib in playerBodypart.getAttributesText():
 				sayn(curAttrib[0]+": "+str(curAttrib[1]))
 			
 			var attribOptions = playerBodypart.getPickableAttributes()
 			if(attribOptions.size() > 0):
-				addButton("Change current", "Change the attributes of the current bodypart instead of creating a new one", "bodypartAttributes")
+				addButton("Изменить текущее", "Изменять параметры текущей части тела вместо создания новой", "bodypartAttributes")
 			
 			
 		
@@ -196,11 +196,11 @@ func _run():
 		var bodypart = GM.pc.getBodypart(pickingBodypartType)
 		var attributes = bodypart.getPickableAttributes()
 		
-		saynn("Change the attributes of "+bodypart.getCharacterCreatorName())
+		saynn("Изменить параметры "+bodypart.getCharacterCreatorName())
 		for curAttrib in bodypart.getAttributesText():
 			sayn(curAttrib[0]+": "+str(curAttrib[1]))
 		
-		addButton("Done", "You're done changing attributes", "pickedspecies")
+		addButton("Готово", "Настройка параметров завершена", "pickedspecies")
 		
 		for attributeID in attributes:
 			var attribute = attributes[attributeID]
@@ -223,17 +223,17 @@ func _run():
 		for option in currentAttribute["options"]:
 			addButton(option[1], option[2], "setAttribute", [option[0]])
 		
-		addButton("Back", "Go back a menu", "bodypartAttributes")
+		addButton("Назад", "Назад на меню", "bodypartAttributes")
 	
 	if(state == "bodyAttributes"):
 		var attributes = GM.pc.getPickableAttributes()
 		
-		saynn("Pick what do you wanna change about your body")
+		saynn("Выберите, что именно вы хотите изменить в своем теле")
 		for curAttrib in GM.pc.getAttributesText():
 			sayn(curAttrib[0]+": "+str(curAttrib[1]))
 		
-		addButton("Done", "You're done changing attributes", "pickedspecies")
-		addButton("Skin/Colors", "Change how you look", "startskinmenu")
+		addButton("Готово", "Настройка параметров завершена", "pickedspecies")
+		addButton("Кожа/Цвета", "Изменить внешность", "startskinmenu")
 		
 		for attributeID in attributes:
 			var attribute = attributes[attributeID]
@@ -248,7 +248,7 @@ func _run():
 			var bodypartAttributes = bodypart.getPickableAttributes()
 			if(bodypartAttributes.size() == 0):
 				continue
-			addButton(bodypart.getCharacterCreatorName().capitalize()+" attributes", "Change the attributes of this bodypart", "openBodypartAttributes", [slot])
+			addButton(bodypart.getCharacterCreatorName().capitalize()+" attributes", "Изменить параметры этой части тела", "openBodypartAttributes", [slot])
 			
 
 	if(state == "bodyAttributeMenu"):
@@ -268,7 +268,7 @@ func _run():
 			addButton(option[1], option[2], "bodySetAttribute", [option[0]])
 		
 		
-		addButton("Back", "Go back a menu", "bodyAttributes")
+		addButton("Назад", "Назад на меню", "bodyAttributes")
 
 func _react(_action: String, _args):
 	if(_action == "setgender"):

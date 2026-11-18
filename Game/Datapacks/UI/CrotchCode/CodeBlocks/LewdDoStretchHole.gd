@@ -47,7 +47,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Stretch",
+			text = "Растянуть",
 		},
 		{
 			type = "slot",

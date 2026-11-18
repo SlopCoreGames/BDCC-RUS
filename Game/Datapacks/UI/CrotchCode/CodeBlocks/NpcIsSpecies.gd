@@ -43,7 +43,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Does",
+			text = "Является",
 		},
 		{
 			type = "slot",
@@ -54,7 +54,7 @@ func getTemplate():
 		},
 		{
 			type = "label",
-			text = "belong to the",
+			text = "представителем",
 		},
 		{
 			type = "slot",

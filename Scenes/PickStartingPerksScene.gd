@@ -7,14 +7,14 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("Pick the perks you wanna start with. Be careful, you can only pick starting perks once. You can pick more than one or none at all.")
+		saynn("Выбери стартовые перки. Будь осторожен: выбрать их можно только один раз. Можно взять несколько штук или не брать вовсе.")
 		
-		sayn("Picked perks:")
+		sayn("Выбранные перки:")
 		for perkID in pickedPerksIds:
 			var perk: PerkBase = GlobalRegistry.getPerk(perkID)
 			sayn("[b]"+perk.getVisibleName()+"[/b]: "+perk.getVisibleDescription())
 		if(pickedPerksIds.size() == 0):
-			sayn("[b]- None picked[/b]")
+			sayn("[b]— Ничего не выбрано[/b]")
 		
 		for perkID in GlobalRegistry.getPerksIDsBySkill(Skill.Start):
 			var perk: PerkBase = GlobalRegistry.getPerk(perkID)
@@ -24,8 +24,8 @@ func _run():
 			else:
 				addButton(perk.getVisibleName(), perk.getVisibleDescription(), "pickperk", [perkID])
 				
-		addButton("Clear all", "Remove all picked perks", "clearall")
-		addButton("Confirm", "You wanna select these perks", "endthescene")
+		addButton("Очистить всё", "Сбросить все выбранные перки", "clearall")
+		addButton("Подтвердить", "Ты хочешь выбрать эти перки?", "endthescene")
 				
 func _react(_action: String, _args):
 	if(_action == "clearall"):

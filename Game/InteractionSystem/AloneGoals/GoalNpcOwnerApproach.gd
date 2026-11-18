@@ -30,7 +30,7 @@ func getKeepScore() -> float:
 	return 100.0
 
 func getText():
-	return "{main.name} is going somewhere.."
+	return "{main.name} куда-то направляется.."
 
 func getActions() -> Array:
 	return [

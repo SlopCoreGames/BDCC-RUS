@@ -26,7 +26,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Is datapack loaded",
+			text = "Датапак загружен",
 		},
 		{
 			type = "slot",

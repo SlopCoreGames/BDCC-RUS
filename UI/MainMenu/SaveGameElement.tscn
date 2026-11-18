@@ -24,20 +24,20 @@ fit_content_height = true
 margin_left = 1061.0
 margin_right = 1103.0
 margin_bottom = 26.0
-text = "Load"
+text = "Загрузить"
 
 [node name="ExportButton" type="Button" parent="."]
 margin_left = 1107.0
 margin_right = 1159.0
 margin_bottom = 26.0
-hint_tooltip = "Export the savefile. Useful for transfering your savefile from the web version into the standalone one or just to backup your save"
-text = "Export"
+hint_tooltip = "Экспортировать файл сохранения. Полезно для переноса прогресса из веб-версии в автономную или просто для создания резервной копии"
+text = "Экспорт"
 
 [node name="DeleteButton" type="Button" parent="."]
 margin_left = 1163.0
 margin_right = 1280.0
 margin_bottom = 26.0
-text = "DELETE FOREVER"
+text = "УДАЛИТЬ НАВСЕГДА"
 
 [connection signal="pressed" from="LoadButton" to="." method="_on_LoadButton_pressed"]
 [connection signal="pressed" from="ExportButton" to="." method="_on_ExportButton_pressed"]

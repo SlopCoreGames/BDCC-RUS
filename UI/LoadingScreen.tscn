@@ -35,7 +35,7 @@ percent_visible = false
 [node name="Label" type="Label" parent="ProgressBar"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-text = "Loading.."
+text = "Загрузка.."
 align = 1
 valign = 1
 autowrap = true

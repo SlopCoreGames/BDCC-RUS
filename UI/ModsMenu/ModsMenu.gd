@@ -18,7 +18,7 @@ func _ready():
 	if OS.get_name() == "HTML5" and OS.has_feature("JavaScript"):
 		_define_js()
 
-	var text = "[b][url=https://github.com/Alexofp/BDCC/wiki/How-to-install-BDCC-mods]How to install mods (click me)[/url][/b]\n\nTo install a mod drag it into the mods folder and restart the game. Mods are loaded in alphabetical order.\n\n"
+	var text = "[b][url=https://github.com/Alexofp/BDCC/wiki/How-to-install-BDCC-mods]Как установить моды (нажми на меня)[/url][/b]\n\nЧтобы установить мод, перетащите его в папку mods и перезапустите игру. Моды загружаются в алфавитном порядке.\n\n"
 	if(!GlobalRegistry.hasModSupport()):
 		text += "! Mods aren't supported when running the game from the editor, this is godot issue. Export the game and run it standalone to get mod support !\n\n"
 		# read more here: https://github.com/godotengine/godot/issues/19815

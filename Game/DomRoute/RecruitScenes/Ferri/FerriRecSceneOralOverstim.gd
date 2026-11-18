@@ -17,205 +17,205 @@ func _run():
 		straponUsed = (extra("strapon", "") != "") && (extra("variant", "") == "strapon")
 		vagVariant = (extra("variant", "") == "vaginal")
 		playAnimation(StageScene.Duo, "stand", {npc="ferri", npcBodyState={naked=true}})
-		saynn("You ask your team for a ring gag.. and something special just for this occasion. Kait gives you both, the restraint and some kind of.. aphrodisiac drug. Apparently she just mixed some random ones. What's the worst that could happen?")
+		saynn("Ты просишь у своей команды кольцо-кляп... и что-нибудь особенное для этого случая. Кейт дает тебе и то, и другое: и средство для фиксации, и какой-то... афродизиак. Судя по всему, она просто смешала всё подряд. Что может пойти не так?")
 
-		saynn("And so you step inside the cell. Ferri is still here, naked, cuffed, muzzled and leashed to the pipe.")
+		saynn("И вот ты входишь в камеру. Ферри всё еще здесь: голая, в наручниках, с намордником и на поводке, привязанном к трубе.")
 
-		saynn("Her cyan eyes lock onto you the second you step inside.")
+		saynn("Её голубые глаза впиваются в тебя в ту же секунду, как ты переступаешь порог.")
 
-		saynn("[say=ferri]Finally. You took your sweet time, meanie.. Unlock me already..[/say]")
+		saynn("[say=ferri]Наконец-то. Ну ты и тянешь, вредина... Развяжи меня уже![/say]")
 
-		saynn("You hold up the ring gag. Her pupils shrink.")
+		saynn("Ты поднимаешь кольцевой кляп. Её зрачки сужаются.")
 
-		saynn("[say=ferri]Mew?! No way. I'm not putting that thing in my mouth.[/say]")
+		saynn("[say=ferri]Мяу?! Да ни за что! Я не собираюсь совать эту хрень в рот![/say]")
 
 		saynn("[say=pc]"+str(ch1("You don't get to say no.", "Shut up and open wide, slut.", "You're mine to use and abuse. Accept it."))+"[/say]")
 
-		saynn("[say=ferri]I'll bite your fingers off![/say]")
+		saynn("[say=ferri]Я тебе все пальцы откушу![/say]")
 
-		saynn("She can't do that with the muzzle currently, the metal basket stops her fangs. But you gotta replace it somehow.")
+		saynn("С нынешним намордником ей это вряд ли удастся — металлическая корзина сдерживает клыки. Но намордник всё равно придется чем-то заменить.")
 
-		saynn("So you grab Ferri by the horns. She yelps, a shiver going down her spine as you get a good grip on them.")
+		saynn("Итак, ты хватаешь Ферри за рога. Она вскрикивает, и по её спине пробегает дрожь, когда ты крепко их сжимаешь.")
 
-		saynn("[say=ferri]M-mew.. don't.. don't touch those..[/say]")
+		saynn("[say=ferri]М-мяу... не надо... не трогай их...[/say]")
 
-		saynn("Right. Seems like you just gotta touch them more.")
+		saynn("Так. Похоже, нужно просто трогать их сильнее.")
 
 		saynn("[say=pc]"+str(ch1("Then behave.", "Too late, bitch.", "You're so sensitive. Pathetic."))+"[/say]")
 
-		saynn("While Ferri is busy squirming from you rubbing her horns, you take off her muzzle and shove the ring gag between her teeth. She is quick to try to spit it out but you buckle it tight behind her head.")
+		saynn("Пока Ферри извивается от того, что ты трешь её рога, ты снимаешь с неё намордник и запихиваешь кольцо-кляп ей в рот. Она тут же пытается выплюнуть его, но ты туго затягиваешь ремешок на затылке.")
 
-		saynn("[say=ferri]I'm.. not.. g-good.. with.. huff..[/say]")
+		saynn("[say=ferri]Я.. не.. х-хороша.. хфф..[/say]")
 
-		saynn("That's all she manages to say before you gag her.")
+		saynn("Это всё, что она успевает промямлить, прежде чем ты окончательно затыкаешь ей рот.")
 
-		addButton("Continue", "See what happens next", "pp_start")
+		addButton("Продолжить", "Смотреть, что будет дальше", "pp_start")
 	if(state == "pp_start"):
 		playAnimation(StageScene.SexOralForced, "tease", {pc="pc", npc="ferri", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Her jaw is now locked open, drool already starts pooling at the corners of her lips.")
+		saynn("Её челюсть теперь зафиксирована в открытом положении, а в уголках губ уже начинает скапливаться слюна.")
 
-		saynn("Her eyes go wide as you pull out a small vial, the liquid inside is pink and glowing faintly. You pour it into Ferri's mouth, causing her to cough. But the gag and your hold on her horns makes her unable to spit all of it out.")
+		saynn("Её глаза расширяются, когда ты достаешь маленький флакон с розовой, слегка светящейся жидкостью. Ты вливаешь её в рот Ферри, заставляя её закашляться. Но из-за кляпа и того, как ты держишь её за рога, она не может выплюнуть всё содержимое.")
 
 		saynn("[say=pc]"+str(ch1("Just enjoy it, cutie.", "Enjoy it, little slut.", "Enjoy it, whore."))+"[/say]")
 
-		saynn("You grab her leash and yank her forward, making her stumble onto her knees. Then, you unlock her cuffs for a second, so that you could grab her arms and bring them high above her head.")
+		saynn("Ты хватаешь её за поводок и резко тянешь на себя, заставляя её упасть на колени. Затем ты на секунду отстегиваешь её наручники, чтобы схватить её за руки и завести их высоко над головой.")
 
-		saynn("[say=ferri]Mmnh..[/say]")
+		saynn("[say=ferri]Мммнх..[/say]")
 
 		if (straponUsed):
-			saynn("You swiftly secure a strapon harness around your waist, the tip hovering near her maw. Good luck biting now.")
+			saynn("Ты быстро закрепляешь страпон-портупею на талии, и его наконечник зависает прямо перед её пастью. Удачи с попытками укусить теперь.")
 
-			addButton("Continue", "See what happens next", "pp_fuck")
+			addButton("Продолжить", "Смотреть, что будет дальше", "pp_fuck")
 		elif (!vagVariant):
-			saynn("Your cock is already out and hard, hovering near her maw. Good luck biting now.")
+			saynn("Твой член уже наготове, твердый и пульсирующий прямо перед её пастью. Удачи ей теперь, если захочет укусить.")
 
-			addButton("Continue", "See what happens next", "pp_fuck")
+			addButton("Продолжить", "Смотреть, что будет дальше", "pp_fuck")
 		else:
-			saynn("Your pussy is already exposed, hovering near her maw. Good luck biting now.")
+			saynn("Твоя киска уже выставлена напоказ, прямо перед её пастью. Удачи ей теперь, если захочет укусить.")
 
-			addButton("Continue", "See what happens next", "vag_fuck")
+			addButton("Продолжить", "Смотреть, что будет дальше", "vag_fuck")
 	if(state == "pp_fuck"):
 		playAnimation(StageScene.SexOralForced, "suck", {pc="pc", npc="ferri", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("And so you slide your "+str("cock" if !straponUsed else "rubber shaft")+" through the convenient ring, forcing yourself into Ferri's mouth.. and going deeper too, past her teeth and straight into her throat.")
+		saynn("И вот ты просовываешь свой "+str("cock" if !straponUsed else "rubber shaft")+" сквозь удобное кольцо, втискивая себя в рот Ферри... заходя всё глубже, мимо зубов, прямиком к самому горлу.")
 
-		saynn("[say=ferri]Ggk-![/say]")
+		saynn("[say=ferri]Ггк-![/say]")
 
-		saynn("Her eyes water instantly. She gags, her tail slams against the floor.")
+		saynn("У неё тут же наворачиваются слезы. Она давится, а её хвост с силой бьет по полу.")
 
 		saynn("[say=pc]"+str(ch1("Breathe through your nose.", "Shut up and take it.", "There we go. Good little hole."))+"[/say]")
 
-		saynn("You start slow, letting her throat walls convulse around "+str("you" if !straponUsed else "the toy")+". Then you get a better grip and shove all the way to the base! Her nose presses against your crotch.")
+		saynn("Ты начинаешь медленно, позволяя стенкам её горла судорожно сжиматься вокруг "+str("you" if !straponUsed else "the toy")+". Затем ты берешь покрепче и вгоняешь его до самого основания! Её нос прижимается к твоему паху.")
 
-		saynn("[say=ferri]Mrrrrnngh..![/say]")
+		saynn("[say=ferri]Мррррнгх..![/say]")
 
 		saynn("[say=pc]"+str(ch1("That's it. Take all of it.", "Such a good little cock sleeve.", "Your throat was made for this."))+"[/say]")
 
-		saynn("You begin to fuck her face. Hard and rough. Each thrust slams the ring gag against her teeth. Drools is quick to spay out of her mouth, her tears mixing with it. Her raised cuffed arms are forcing her to stay in one place for you. She can't do anything, can't even bite.")
+		saynn("Ты начинаешь трахать ей лицо. Жестко и грубо. Каждый толчок впечатывает кляп-кольцо в её зубы. Слюна мгновенно течет изо рта, смешиваясь со слезами. Из-за поднятых в наручниках рук она вынуждена оставаться на месте. Она ничего не может сделать, не может даже укусить.")
 
-		saynn("Whatever that drug is, it seems to be doing something. It certainly makes it so fucking her throat is much pleasurable for you. Every inch of her lips, her tongue, her throat.. they all wrap around your "+str("member" if !straponUsed else "rubber cock")+" so well.")
+		saynn("Что бы это ни было за лекарство, оно явно работает. От него её глотка становится чертовски приятной для тебя. Каждый миллиметр её губ, языка, горла... всё это обволакивает твой "+str("member" if !straponUsed else "rubber cock")+" так плотно.")
 
-		saynn("You feel her start to shake, her gagged wet noises getting louder.")
+		saynn("Ты чувствуешь, как она начинает дрожать, а её влажные звуки сквозь кляп становятся всё громче.")
 
 		saynn("[say=pc]"+str(ch1("There it is. Feel good?", "You're clenching around me. Dirty bitch.", "You like it. The bratty little slut likes it."))+"[/say]")
 
-		saynn("Suddenly, Ferri's hips begin to jerk. Her tail smacks against the floor again. Seconds later, a wet, gushing sound comes from between her thighs. She is orgasming.. hard.")
+		saynn("Внезапно бедра Ферри начинают дергаться. Её хвост снова хлопает по полу. Секунду спустя между её бедер раздается влажный, хлюпающий звук. Она кончает... мощно.")
 
-		saynn("[say=ferri]HNNNN-!..[/say]")
+		saynn("[say=ferri]ХНННН-!..[/say]")
 
-		saynn("Her whole body arches, her eyes roll back, her pussy spraying the floor. And you don't stop. You keep pounding her throat through the whole thing.")
+		saynn("Всё её тело выгибается дугой, глаза закатываются, а из её киски на пол брызжет смазка. И ты не останавливаешься. Ты продолжаешь вколачивать свой член ей в глотку на протяжении всего процесса.")
 
-		addButton("Continue", "See what happens next", "pp_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "pp_cum")
 	if(state == "pp_cum"):
 		playAnimation(StageScene.SexOralForced, "suckfast", {pc="pc", npc="ferri", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You pick up the pace, sliding your "+str("cock" if !straponUsed else "strapon")+" in and out of that throat faster!")
+		saynn("Ты ускоряешься, всё быстрее и быстрее вгоняя свой "+str("cock" if !straponUsed else "strapon")+" в это горло!")
 
-		saynn("Ferri barely has time to breathe before the next orgasm hits.. and then the third one too, stacking with the second. Her body keeps trying to convulse, her tail thrashing, her muffled noises turning into wet, desperate squeals around your cock.")
+		saynn("Ферри едва успевает перевести дух, как накрывает следующий оргазм... а затем и третий, накладывающийся на второй. Её тело продолжает содрогаться в конвульсиях, хвост бешено мечет, а приглушенные звуки превращаются в влажные, отчаянные скулящие стоны вокруг твоего члена.")
 
-		saynn("[say=ferri]Hfff.. hff.. MMM-! MMPH-![/say]")
+		saynn("[say=ferri]Хффф.. хфф.. МММ-! ММПФ-![/say]")
 
-		saynn("Her eyes are just constantly rolled up by this point, her pussy keeps making a puddle of juices underneath her.")
+		saynn("К этому моменту её глаза уже постоянно закачены, а из её киски под ней постоянно растекается лужица соков.")
 
 		if (!straponUsed):
-			saynn("And so you feel your own climax building.")
+			saynn("И вот ты чувствуешь, как внутри тебя нарастает оргазм.")
 
 			saynn("[say=pc]"+str(ch1("You're gonna swallow every drop.", "Get ready, slut", "Take it like the worthless whore you are."))+"[/say]")
 
-			saynn("You bury yourself to the hilt, your cock pulsing. Thick ropes of {pc.cum} shoot straight down her throat. She gags more.. but is forced to swallow, she has no choice. The ring gag keeps her mouth wide open while you're pumping her full of your stuff, the drug is making her cum for the fourth time, her pussy pulsing around nothing, squirting nothing too..")
+			saynn("Ты входишь в неё до самого основания, твой член пульсирует. Густые струи {pc.cum} бьют прямо ей в глотку. Она всё сильнее давится... но вынуждена глотать, у неё нет выбора. Кольцо-кляп держит её рот широко открытым, пока ты наполняешь её своим семенем; из-за наркотика она кончает уже в четвертый раз, её киска пульсирует в пустоте, тоже извергаясь в никуда...")
 
-			saynn("[say=ferri]Glk.. glk.. nnngh..[/say]")
+			saynn("[say=ferri]Глоть.. глоть.. нннгх..[/say]")
 
-			saynn("You make sure your balls are drained by that brat, staying inside as long as possible. It does look like she is about to pass out though.. so it's time to stop.")
+			saynn("Ты следишь за тем, чтобы эта дрянь выкачала из твоих яиц всё до последней капли, оставаясь внутри как можно дольше. Впрочем, кажется, она вот-вот отключится... так что пора завязывать.")
 
 		else:
-			saynn("You feel like you gotta end on a high note..")
+			saynn("Тебе хочется закончить на высокой ноте...")
 
 			saynn("[say=pc]"+str(ch1("Get ready.", "Get ready, slut", "Take it like the worthless whore you are."))+"[/say]")
 
-			saynn("And so you bury the rubber toy to the hilt, really testing that brat's throat. She gags more.. but is forced to endure it, she has no choice. The ring gag keeps her mouth wide open while you're stretching her out, the drug is making her cum for the fourth time, her pussy pulsing around nothing, squirting nothing too..")
+			saynn("И ты вонзаешь резиновую игрушку до самого основания, по-настоящему испытывая глотку этой девчонки. Она всё сильнее давится... но вынуждена терпеть, у неё нет выбора. Кольцо-кляп держит её рот широко открытым, пока ты растягиваешь её; из-за наркотика она кончает уже в четвертый раз, её киска пульсирует в пустоте, тоже извергаясь в никуда...")
 
-			saynn("[say=ferri]Glk.. glk.. nnngh..[/say]")
+			saynn("[say=ferri]Глоть.. глоть.. нннгх..[/say]")
 
-			saynn("You make sure to stay inside as long as possible. It does look like she is about to pass out though.. so it's time to stop.")
+			saynn("Ты стараешься оставаться внутри как можно дольше. Впрочем, кажется, она вот-вот отключится... так что пора завязывать.")
 
-		addButton("Continue", "See what happens next", "pp_pullout")
+		addButton("Продолжить", "Смотреть, что будет дальше", "pp_pullout")
 	if(state == "pp_pullout"):
 		playAnimation(StageScene.GivingBirth, "idle", {pc="ferri", bodyState={naked=true, hard=true}})
-		saynn("When you finally pull out, Ferri collapses. Her body twitches with small aftershocks, her tail lies limp.")
+		saynn("Когда ты наконец выходишь, Ферри валится с ног. Её тело содрогается от мелких послевкусиев оргазма, а хвост безжизненно лежит.")
 
-		saynn("You pick up the basket muzzle and replace the ring gag with it. Her fangs click against the metal.")
+		saynn("Ты берешь корзинчатую насадку и заменяешь ею кольцо-кляп. Ее клыки с щелчком ударяются о металл.")
 
-		saynn("[say=ferri]Ghk.. ugh..[/say]")
+		saynn("[say=ferri]Гхк.. ух..[/say]")
 
-		saynn("Her voice is weak, hoarse.")
+		saynn("Её голос слабый и охрипший.")
 
 		saynn("[say=pc]"+str(ch1("Good girl. Rest now.", "That's what you get for being a brat.", "You're lucky I didn't go longer."))+"[/say]")
 
-		saynn("You step out of the cell to see what Kait thinks.")
+		saynn("Ты выходишь из камеры, чтобы посмотреть, что думает Кейт.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "vag_fuck"):
 		playAnimation(StageScene.SexOralForced, "lick", {pc="pc", npc="ferri", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("And so you shove your pussy into Ferri's face, pressing your slick folds against her parted lips. Her mouth is forced open and her tongue is out, she has no choice but to lick you.")
+		saynn("И вот ты вжимаешь свою киску прямо в лицо Ферри, прижимая влажные складки к ее приоткрытым губам. Ее рот насильно разведен, язык высунут — у нее нет другого выбора, кроме как лизать тебя.")
 
-		saynn("[say=ferri]Ghh..[/say]")
+		saynn("[say=ferri]Гхх..[/say]")
 
-		saynn("You start slowly, sliding your slit against her face, letting her tongue do some work.")
+		saynn("Ты начинаешь медленно, водя щелью по ее лицу и позволяя ее языку поработать.")
 
-		saynn("[say=ferri]Mrhhh..[/say]")
+		saynn("[say=ferri]Мррхх..[/say]")
 
 		saynn("[say=pc]"+str(ch1("That's it. Lick all of it.", "Such a good little cunt licker.", "Your tongue was made for this."))+"[/say]")
 
-		saynn("Soon, you begin to just grind her face, hard and rough. Each thrust of your hips brings you immense pleasure, causing you to start moaning. Her drool and your juices are mixing together. Her raised cuffed arms force her to stay in one spot for you. She can't do anything, can't even bite.")
+		saynn("Вскоре ты начинаешь просто втираться в ее лицо, жестко и грубо. Каждый толчок бедрами приносит тебе безмерное удовольствие, заставляя стонать. Ее слюна и твои соки смешиваются воедино. Поднятые в наручниках руки заставляют ее оставаться на месте. Она ничего не может сделать, даже укусить.")
 
-		saynn("Whatever that drug is, it seems to be doing something. It certainly makes it so riding her face is much more fun for you. Every flick of her tongue, every desperate suck of her parted lips sends waves of heat through you.")
+		saynn("Что бы это ни был за наркотик, он явно действует. От него скакать ей на лице становится куда приятнее. Каждый взмах ее языка, каждый отчаянный глоток ее приоткрытых губ посылает по твоему телу волны жара.")
 
-		saynn("You feel her start to shake, her gagged wet noises getting louder.")
+		saynn("Ты чувствуешь, как она начинает дрожать, а её влажные звуки сквозь кляп становятся всё громче.")
 
 		saynn("[say=pc]"+str(ch1("There it is. Feel good?", "You're getting off this, dirty bitch.", "You like it. The bratty little slut likes it."))+"[/say]")
 
-		saynn("Suddenly, Ferri's hips begin to jerk. Her tail smacks against the floor again. Seconds later, a wet, gushing sound comes from between her thighs. She is orgasming.. hard.")
+		saynn("Внезапно бедра Ферри начинают дергаться. Её хвост снова хлопает по полу. Секунду спустя между её бедер раздается влажный, хлюпающий звук. Она кончает... мощно.")
 
-		saynn("[say=ferri]HNNNN-!..[/say]")
+		saynn("[say=ferri]ХНННН-!..[/say]")
 
-		saynn("Her whole body arches, her eyes roll back, her pussy spraying the floor. And you don't stop. You keep grinding against her face through the whole thing.")
+		saynn("Все ее тело выгибается дугой, глаза закатываются, а из киски на пол брызжет смазка. И ты не останавливаешься. Ты продолжаешь втираться в ее лицо до самого конца.")
 
-		addButton("Continue", "See what happens next", "vag_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "vag_cum")
 	if(state == "vag_cum"):
 		playAnimation(StageScene.SexOralForced, "lickfast", {pc="pc", npc="ferri", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You pick up the pace, grinding your pussy against her mouth faster and harder!")
+		saynn("Ты ускоряешься, всё сильнее и яростнее втирая свою киску в её рот!")
 
-		saynn("Ferri barely has time to breathe before the next orgasm hits.. and then the third one too, stacking with the second. Her body keeps trying to convulse, her tail thrashing, her muffled noises turning into wet, desperate squeals against your folds.")
+		saynn("Ферри едва успевает перевести дух, как накрывает следующий оргазм... а следом и третий, накладывающийся на второй. Её тело продолжает содрогаться, хвост дёргается, а приглушённые звуки превращаются в мокрые, отчаянные визги прямо у твоих складок.")
 
-		saynn("[say=ferri]Hfff.. hff.. MMM-! MMPH-![/say]")
+		saynn("[say=ferri]Хффф.. хфф.. МММ-! ММПФ-![/say]")
 
-		saynn("Her eyes are just constantly rolled up by this point, her pussy keeps making a puddle of juices underneath her.")
+		saynn("К этому моменту её глаза уже постоянно закачены, а из её киски под ней постоянно растекается лужица соков.")
 
-		saynn("And so you feel your own climax getting close..")
+		saynn("И вот ты чувствуешь, что твой собственный пик уже близко...")
 
 		saynn("[say=pc]"+str(ch1("You're gonna swallow every drop.", "Get ready, slut.", "Take it like the worthless whore you are."))+"[/say]")
 
-		saynn("As soon as you push yourself over the peak, you bury her face between your legs, pressing her parted lips against pulsing yours.. Your muscles clench.. and then you squirt! Thick jets of your juices shooting straight past the ring gag and into her throat. She gags.. but is forced to swallow, she has no choice. The ring gag keeps her mouth wide open while you're just letting go.. the drug making her cum for the fourth time, her own pussy pulsing around nothing, squirting nothing too..")
+		saynn("Как только ты переваливаешь за вершину, ты вжимаешь её лицо между своих ног, прижимая её приоткрытые губы к своим пульсирующим губам... Твои мышцы сжимаются... и тут тебя заливает! Густые струи соков бьют прямо сквозь кольцо кляпа ей в горло. Она давится... но вынуждена глотать, у неё нет выбора. Кольцо держит её рот широко раскрытым, пока ты отдаёшься экстазу... а препарат заставляет её кончать в четвёртый раз — её собственная киска пульсирует в пустоте, тоже извергаясь в никуда...")
 
-		saynn("[say=ferri]Glk.. glk.. nnngh..[/say]")
+		saynn("[say=ferri]Глоть.. глоть.. нннгх..[/say]")
 
-		saynn("You make sure your orgasm ends.. And eventually it does.")
+		saynn("Ты стараешься довести свой оргазм до конца... И в конце концов он случается.")
 
-		addButton("Continue", "See what happens next", "vag_pullout")
+		addButton("Продолжить", "Смотреть, что будет дальше", "vag_pullout")
 	if(state == "vag_pullout"):
 		playAnimation(StageScene.GivingBirth, "idle", {pc="ferri", bodyState={naked=true, hard=true}})
-		saynn("When you finally pull your slit away from her face, Ferri collapses. Her body twitches with small aftershocks, her tail lies limp.")
+		saynn("Когда ты наконец отстраняешь свою щель от её лица, Ферри буквально валится с ног. Её тело подёргивается от мелких отголосков оргазма, а хвост безжизненно лежит.")
 
-		saynn("You pick up the basket muzzle and replace the ring gag with it. Her fangs click against the metal.")
+		saynn("Ты берешь корзинчатую насадку и заменяешь ею кольцо-кляп. Ее клыки с щелчком ударяются о металл.")
 
-		saynn("[say=ferri]Ghk.. ugh..[/say]")
+		saynn("[say=ferri]Гхк.. ух..[/say]")
 
-		saynn("Her voice is weak, hoarse.")
+		saynn("Её голос слабый и охрипший.")
 
 		saynn("[say=pc]"+str(ch1("Good girl. Rest now.", "That's what you get for being a brat.", "You're lucky I didn't go longer."))+"[/say]")
 
-		saynn("You step out of the cell to see what Kait thinks.")
+		saynn("Ты выходишь из камеры, чтобы посмотреть, что думает Кейт.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

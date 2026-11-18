@@ -9,7 +9,7 @@ func _init():
 	choices = [
 		{
 			id = "tone",
-			name = "Tone",
+			name = "Тон",
 			desc = "What tone do you want to use while speaking with Rahi",
 			options = [
 				["gentle", "Gentle", "Use a very kind tone with Rahi", RecruitChoiceResult.Red],
@@ -19,7 +19,7 @@ func _init():
 		},
 		{
 			id = "main",
-			name = "Main action",
+			name = "Основное действие",
 			desc = "What should the main action be",
 			options = [
 				["sex", "Sex", "Have sex with Rahi", RecruitChoiceResult.Yellow],
@@ -29,7 +29,7 @@ func _init():
 		},
 		{
 			id = "special",
-			name = "Special kink",
+			name = "Особая фишка",
 			desc = "What special kink do you wanna incorporate",
 			options = [
 				["public", "In public", "Do it in public", RecruitChoiceResult.Yellow],
@@ -45,7 +45,7 @@ func getExtraChoices(_choices:Array, _extras:Dictionary) -> Array:
 		if(GM.pc.hasReachablePenis()):
 			result.append({
 					id = "condom",
-					name = "Condom",
+					name = "Презерватив",
 					desc = "Pick which condom you want to use, if any",
 					options = [
 						["no", "No condom", "Don't use a condom"],
@@ -56,7 +56,7 @@ func getExtraChoices(_choices:Array, _extras:Dictionary) -> Array:
 		else:
 			result.append({
 					id = "strapon",
-					name = "Strapon",
+					name = "Страпон",
 					desc = "Pick which strapon you wanna use.",
 					options = getStraponOptions(),
 				})

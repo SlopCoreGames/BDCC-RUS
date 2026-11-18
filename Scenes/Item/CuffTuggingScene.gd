@@ -6,27 +6,27 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("You take a look at your cuffs. They're not as complicated as the collar but they still feature a magnetic lock.")
+		saynn("Ты осматриваешь свои наручники. Они не такие сложные, как ошейник, но в них всё равно стоит магнитный замок.")
 		
-		saynn("They sit pretty tightly, the soft padding on the inside doesn't help much.")
+		saynn("Они сидят довольно плотно, и мягкая подкладка внутри особо не спасает.")
 
-		addButton("Leave it", "Nothing you can do", "leaveit")
+		addButton("Оставить как есть", "Ничего не поделаешь", "leaveit")
 		if(GM.pc.hasBoundArms()):
-			addDisabledButton("Tug", "Your bound arms don't let you do this")
+			addDisabledButton("Дернуть", "Связанные руки не дают этого сделать")
 		else:
-			addButton("Tug", "Try to tug on them", "tug")
+			addButton("Дернуть", "Попытаться дернуть их", "tug")
 
 	if(state == "tug"):
-		saynn("You try and tug on one of your cuffs, it has barely any leeway. You decide that breaking your fingers just to take one off is not worth it.")
+		saynn("Ты пробуешь дернуть за одно из колец, но люфт почти отсутствует. Ты решаешь, что ломать пальцы только ради того, чтобы снять одно из них, того не стоит.")
 		
-		saynn("Alas, you make zero progress")
+		saynn("Увы, прогресса ноль")
 		
-		addButton("Continue", "Oh well", "")
+		addButton("Продолжить", "Ну и ладно", "")
 
 	if(state == "leaveit"):
-		saynn("You sigh and leave your cuffs alone")
+		saynn("Ты вздыхаешь и оставляешь наручники в покое")
 		
-		addButton("Continue", "Oh well", "endthescene")
+		addButton("Продолжить", "Ну и ладно", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -15,14 +15,14 @@ func getKeepScore() -> float:
 	return 0.0
 
 func getText():
-	return "{main.name} is laying eggs..."
+	return "{main.name} откладывает яйца..."
 
 func getActions() -> Array:
 	if(!announced):
 		return [
 			{
 				id = "announce",
-				name = "Lay eggs!",
+				name = "Отложи яйца!",
 				desc = "Do something",
 				score = 1.0,
 				args = {},
@@ -33,7 +33,7 @@ func getActions() -> Array:
 	return [
 		{
 			id = "giveBirth",
-			name = "Lay eggs!",
+			name = "Отложи яйца!",
 			desc = "Do something",
 			score = 1.0,
 			args = {},

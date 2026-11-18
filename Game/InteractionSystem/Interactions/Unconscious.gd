@@ -13,7 +13,7 @@ func start(_pawns:Dictionary, _args:Dictionary):
 	setState("", "main")
 
 func init_text():
-	saynn("{main.You} {main.youAre} unconscious..")
+	saynn("{main.You} {main.youAre} без сознания..")
 	
 	addAction("wait", "Wait", "Maybe something will happen..", "default", 1.0, 600, {})
 
@@ -29,8 +29,8 @@ func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 		setState("", "main")
 
 func no_nurses_text():
-	saynn("Your mind tingles..")
-	saynn("You feel like no one is coming to save you at this point..")
+	saynn("В голове всё покалывает..")
+	saynn("Кажется, на этот раз спасать тебя уже некому..")
 	
 	addAction("giveup", "Give up?", "What else is there to do..", "default", 1.0, 60, {})
 
@@ -40,9 +40,9 @@ func no_nurses_do(_id:String, _args:Dictionary, _context:Dictionary):
 		runScene("ElizaBackupPCSaveScene")
 
 func about_to_fuck_text():
-	saynn("{user.name} approaches {main.you}..")
+	saynn("{user.name} приближается к {main.you}..")
 	
-	saynn("A sinister glint shines in {user.his} eyes..")
+	saynn("В глазах {user.his} вспыхивает зловещий блеск..")
 	
 	addAction("sex", "Sex", "Time to have some fun", "default", 1.0, 300, {start_sex=["user", "main", SexType.DefaultSex, {SexMod.SubsStartUnconscious: true}],})
 
@@ -52,7 +52,7 @@ func about_to_fuck_do(_id:String, _args:Dictionary, _context:Dictionary):
 		setState("after_sex", "user")
 
 func after_sex_text():
-	saynn("After that, it was time for {user.name} to leave fast..")
+	saynn("После этого {user.name} пора было поскорее уходить..")
 	
 	addAction("leave", "Leave", "Time to go..", "default", 1.0, 60, {})
 
@@ -66,7 +66,7 @@ func getInterruptActions(_pawn:CharacterPawn) -> Array:
 	if(getPawnAmount() == 1 && _pawn.getChar().canStartSex()):
 		result.append({
 			id = "fuck",
-			name = "Fuck",
+			name = "Блядь",
 			desc = "Fuck them while they are unconscious",
 			score = 0.5,
 			scoreType = "sexUse",
@@ -76,7 +76,7 @@ func getInterruptActions(_pawn:CharacterPawn) -> Array:
 	if(getPawnAmount() == 1 && !_pawn.isPlayer() && getRolePawn("main").isPlayer()):
 		result.append({
 			id = "grab",
-			name = "Grab",
+			name = "Схватить",
 			desc = "Do something interesting with them..",
 			score = (0.5 if _pawn.getSocial() > 0.4 else 0.0),
 			scoreType = "punishMean",

@@ -37,7 +37,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Get skill level",
+			text = "Получить уровень навыка",
 		},
 		{
 			type = "slot",

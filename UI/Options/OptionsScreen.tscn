@@ -35,7 +35,7 @@ margin_right = 334.0
 margin_bottom = 40.0
 rect_min_size = Vector2( 0, 40 )
 size_flags_horizontal = 3
-text = "Gameplay"
+text = "Геймплей"
 
 [node name="GameCatButton" type="Button" parent="VBoxContainer/HFlowContainer"]
 unique_name_in_owner = true
@@ -44,7 +44,7 @@ margin_right = 636.0
 margin_bottom = 40.0
 rect_min_size = Vector2( 0, 40 )
 size_flags_horizontal = 3
-text = "Game"
+text = "Игра"
 
 [node name="DisplayCatButton" type="Button" parent="VBoxContainer/HFlowContainer"]
 unique_name_in_owner = true
@@ -53,7 +53,7 @@ margin_right = 951.0
 margin_bottom = 40.0
 rect_min_size = Vector2( 0, 40 )
 size_flags_horizontal = 3
-text = "Display"
+text = "Экран"
 
 [node name="InterfaceCatButton" type="Button" parent="VBoxContainer/HFlowContainer"]
 unique_name_in_owner = true
@@ -62,7 +62,7 @@ margin_right = 1280.0
 margin_bottom = 40.0
 rect_min_size = Vector2( 0, 40 )
 size_flags_horizontal = 3
-text = "Interface"
+text = "Интерфейс"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
 margin_top = 68.0
@@ -84,7 +84,7 @@ margin_right = 1280.0
 margin_bottom = 21.0
 bbcode_enabled = true
 bbcode_text = "Options screen"
-text = "Options screen"
+text = "Экран настроек"
 fit_content_height = true
 
 [node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/ScrollVBox"]
@@ -134,7 +134,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 255.0
 margin_bottom = 26.0
-text = "Save"
+text = "Сохранить"
 myTooltipDesc = "Save the settings and close this menu"
 myShortcutKey = "1"
 
@@ -144,7 +144,7 @@ anchor_bottom = 0.0
 margin_left = 259.0
 margin_right = 514.0
 margin_bottom = 26.0
-text = "Defaults"
+text = "По умолчанию"
 myTooltipDesc = "Reset settings to their default values"
 myShortcutKey = "2"
 
@@ -154,7 +154,7 @@ anchor_bottom = 0.0
 margin_left = 518.0
 margin_right = 772.0
 margin_bottom = 26.0
-text = "Reset Render"
+text = "Сброс рендеринга"
 myTooltipDesc = "Hard-Reset render settings"
 myShortcutKey = "3"
 

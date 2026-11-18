@@ -17,13 +17,13 @@ func _run():
 	if(state == ""):
 		var encounterSettings:EncounterSettings = GM.main.getEncounterSettings()
 		
-		saynn("This is a menu that contains info about characters that you have met or might meet.")
+		saynn("Это меню содержит информацию о персонажах, которых вы уже встретили или можете встретить.")
 		
 		var hasSomeoneToForget = false
-		sayn("You remember that prison has:")
+		sayn("Вы помните, что в тюрьме есть:")
 		var encounterPools = GM.main.getDynamicCharactersPools()
 		if(encounterPools.size() == 0):
-			sayn(" - Nothing, explore to find more characters")
+			sayn(" - Никого, исследуйте локации, чтобы найти новых персонажей")
 		for encounterPoolID in encounterPools:
 			var amount = GM.main.getDynamicCharactersPoolSize(encounterPoolID)
 			
@@ -32,21 +32,21 @@ func _run():
 		sayn("")
 		
 		if(encounterSettings.doesPreferKnownEncounters()):
-			saynn("Known characters: You prefer to encounter characters that you already saw.")
+			saynn("Знакомые персонажи: Вы предпочитаете встречать тех, кого уже видели.")
 		else:
-			saynn("Known characters: You don't mind meeting new characters.")
+			saynn("Знакомые персонажи: Вы не против встречать новых персонажей.")
 		
 		if(GM.pc.dynamicPersonality):
-			saynn("Dynamic personality: Your personality or fetishes can dynamically change after sex.")
+			saynn("Динамичная личность: Ваша личность или фетиши могут динамично меняться после секса.")
 		else:
-			saynn("Dynamic personality: Your personality or fetishes will never change after sex.")
+			saynn("Динамичная личность: Ваша личность или фетиши никогда не изменятся после секса.")
 		
 		if(encounterSettings.shouldSubThreesomesBeEnabled()):
-			saynn("Threesomes: You don't mind being a sub in threesomes.")
+			saynn("Тройнички: Вы не против быть сабом в тройничках.")
 		else:
-			saynn("Threesomes: Doms will never dynamically join the sex if you are a sub.")
+			saynn("Тройнички: Доминантные партнеры никогда не присоединятся к сексу динамически, если вы саб.")
 		
-		sayn("Relative chances for the genders of encountered npcs:")
+		sayn("Относительные шансы появления NPC разных полов:")
 		for gender in NpcGender.getAll():
 			var genderName = NpcGender.getVisibleNameColored(gender)
 			var extraInfo = ""
@@ -58,7 +58,7 @@ func _run():
 			sayn(str(genderName)+": "+str(Util.roundF(weight*100.0, 1))+"%"+extraInfo)
 		sayn("")
 		
-		sayn("Relative chances for the species of encountered npcs:")
+		sayn("Относительная вероятность появления видов встреченных NPC:")
 		var species = GlobalRegistry.getAllPlayableSpecies()
 		for speciesID in species:
 			var speciesObject:Species = species[speciesID]
@@ -68,7 +68,7 @@ func _run():
 			sayn(str(speciesName)+": "+str(Util.roundF(weight*100.0, 1))+"%")
 		sayn("")
 		
-		sayn("Things that npcs won't do to you:")
+		sayn("Вещи, которые NPC точно НЕ будут с вами делать:")
 		var disabledGoalsNames = []
 		var allGoals = GlobalRegistry.getSexGoals()
 		for goalID in allGoals:
@@ -79,33 +79,33 @@ func _run():
 				
 				disabledGoalsNames.append(goal.getVisibleName())
 		if(disabledGoalsNames.size() == 0):
-			saynn("- Nothing is disabled")
+			saynn("- Ничего не отключено")
 		else:
 			saynn(Util.humanReadableList(disabledGoalsNames))
 		
-		addButton("Back", "Close this menu", "endthescene")
+		addButton("Назад", "Закрыть меню", "endthescene")
 		
 		if(hasSomeoneToForget):
-			addButton("Characters", "Shows any randomly generated characters that you encountered", "npclistmenu")
+			addButton("Персонажи", "Показывает всех встреченных вами случайно сгенерированных персонажей", "npclistmenu")
 		else:
-			addDisabledButton("Characters", "You haven't met any randomly generated characters")
+			addDisabledButton("Персонажи", "Вы еще не встречали случайно сгенерированных персонажей")
 		
-		addButton("Toggle known", "Toggle between meeting only old characters and meeting both old and new", "toggleKnown")
-		addButton("Dynamic personality", "Change the way your personality changes after sex", "togglePersonalityChange")
-		addButton("Threesomes (sub)", "Toggle the ability for extra doms to join the sex when you are a sub", "toggleThreesomesSub")
-		addButton("My fetishes", "Menu that allows you to see and change your fetishes", "fetishmenu")
-		addButton("My personality", "Menu that allows you to see and change your personality", "personalitymenu")
-		addButton("Genders", "Pick the chances of the genders of the encountered npcs", "gendersmenu")
-		addButton("Species", "Pick the chances of the species of the encountered npcs", "speciesmenu")
-		addButton("Restrictions", "Pick what things you don't want to happen to you in sex", "goalsmenu")
-		addButton("Goal weights", "Change the weights of sex goals that other characters will persue during sex", "goalweightsmenu")
-		addButton("TFs weights", "Change the weights of transformations that 'strange pills' might contain", "tfweightsmenu")
+		addButton("Переключить: известные", "Переключение между режимами: только старые персонажи или и старые, и новые", "toggleKnown")
+		addButton("Динамичный характер", "Изменить то, как меняется ваш характер после секса", "togglePersonalityChange")
+		addButton("Тройнички (саб)", "Включить возможность участия дополнительных доминантов, когда вы в роли саба", "toggleThreesomesSub")
+		addButton("Мои фетиши", "Меню для просмотра и изменения ваших фетишей", "fetishmenu")
+		addButton("Мой характер", "Меню для просмотра и изменения вашего характера", "personalitymenu")
+		addButton("Полы", "Настроить шансы появления определенных полов у встреченных NPC", "gendersmenu")
+		addButton("Вид", "Выберите шансы появления определенных видов у встреченных NPC", "speciesmenu")
+		addButton("Ограничения", "Выберите то, чего вы НЕ хотите, чтобы с вами происходило во время секса", "goalsmenu")
+		addButton("Веса целей", "Измените веса сексуальных целей, к которым будут стремиться другие персонажи во время секса", "goalweightsmenu")
+		addButton("Веса ТФ", "Измените веса трансформаций, которые могут содержаться в «странных таблетках»", "tfweightsmenu")
 
 	if(state == "goalweightsmenu"):
 		var encounterSettings:EncounterSettings = GM.main.getEncounterSettings()
-		addButton("Back", "Close this menu", "")
+		addButton("Назад", "Закрыть меню", "")
 		
-		sayn("These are the current weights of all sex goals:")
+		sayn("Текущие веса всех сексуальных целей:")
 		var allGoals = GlobalRegistry.getSexGoals()
 		for goalID in allGoals:
 			var goal: SexGoalBase = GlobalRegistry.getSexGoal(goalID)
@@ -114,13 +114,13 @@ func _run():
 			var goalWeight = encounterSettings.getGoalWeight(goalID, goal.getGoalDefaultWeight())
 			
 			sayn(goal.getVisibleName()+": "+str(Util.roundF(goalWeight*100.0, 1))+"%")
-			addButton(goal.getVisibleName(), "Change the weight of this goal", "changegoalweightmenu", [goalID])
+			addButton(goal.getVisibleName(), "Изменить вес этой цели", "changegoalweightmenu", [goalID])
 		
 	if(state == "tfweightsmenu"):
 		var encounterSettings:EncounterSettings = GM.main.getEncounterSettings()
-		addButton("Back", "Close this menu", "")
+		addButton("Назад", "Закрыть меню", "")
 		
-		sayn("These are the current weights of all transformations that might be caused by 'strange pills':")
+		sayn("Текущие веса всех трансформаций, которые могут быть вызваны «странными таблетками»:")
 		var allTFs = GlobalRegistry.getTransformationRefs()
 		for tfID in allTFs:
 			var tf: TFBase = GlobalRegistry.getTransformationRef(tfID)
@@ -135,46 +135,46 @@ func _run():
 				sayn(pillName+" ("+tfName+"): "+str(Util.roundF(tfWeight*100.0, 1))+"%")
 			else:
 				sayn(tfName+": "+str(Util.roundF(tfWeight*100.0, 1))+"%")
-			addButton(tf.getName(), "Change the weight of this transformation", "changetfweightmenu", [tfID])
+			addButton(tf.getName(), "Изменить вес этой трансформации", "changetfweightmenu", [tfID])
 		
 	if(state == "changegoalweightmenu"):
 		var encounterSettings:EncounterSettings = GM.main.getEncounterSettings()
-		addButton("Back", "Close this menu", "")
+		addButton("Назад", "Закрыть меню", "")
 		var pickedGoal = GlobalRegistry.getSexGoal(pickedGoalIDToChange)
 		if(pickedGoal != null):
 			var goalWeight = encounterSettings.getGoalWeight(pickedGoalIDToChange, pickedGoal.getGoalDefaultWeight())
-			saynn("The current weight for '"+pickedGoal.getVisibleName()+"' goal is "+str(Util.roundF(goalWeight*100.0, 1))+"%")
+			saynn("Текущий вес для «"+pickedGoal.getVisibleName()+"» составляет "+str(Util.roundF(goalWeight*100.0, 1))+"%")
 			
-			addButton("Default", "Reset the weight to the default value", "changegoalweight", [-1])
+			addButton("По умолчанию", "Сбросить вес до значения по умолчанию", "changegoalweight", [-1])
 			
 			var possibleWeights = [0.0, 0.05, 0.1, 0.15, 0.2, 0.3, 0.4, 0.5, 0.7, 0.9, 1.0, 1.2, 1.5, 2.0, 3.0, 5.0]
 			for weight in possibleWeights:
 				var weightStr = str(Util.roundF(weight*100.0, 1))+"%"
 				
-				addButton(weightStr, "Set the weight to this value", "changegoalweight", [weight])
+				addButton(weightStr, "Установить вес равным этому значению", "changegoalweight", [weight])
 			
 	if(state == "changetfweightmenu"):
 		var encounterSettings:EncounterSettings = GM.main.getEncounterSettings()
-		addButton("Back", "Close this menu", "")
+		addButton("Назад", "Закрыть меню", "")
 		var pickedTF:TFBase = GlobalRegistry.getTransformationRef(pickedTFIDToChange)
 		if(pickedTF != null):
 			var goalWeight = encounterSettings.getTFWeight(pickedTFIDToChange, pickedTF.getPillGenWeight())
-			saynn("The current weight for '"+pickedTF.getName()+"' transformation is "+str(Util.roundF(goalWeight*100.0, 1))+"%")
+			saynn("Текущий вес трансформации «"+pickedTF.getName()+"» равен "+str(Util.roundF(goalWeight*100.0, 1))+"%")
 			
-			addButton("Default", "Reset the weight to the default value", "changetfweight", [-1])
+			addButton("По умолчанию", "Сбросить вес до значения по умолчанию", "changetfweight", [-1])
 			
 			var possibleWeights = [0.0, 0.05, 0.1, 0.15, 0.2, 0.3, 0.4, 0.5, 0.7, 0.9, 1.0, 1.2, 1.5, 2.0, 3.0, 5.0]
 			for weight in possibleWeights:
 				var weightStr = str(Util.roundF(weight*100.0, 1))+"%"
 				
-				addButton(weightStr, "Set the weight to this value", "changetfweight", [weight])
+				addButton(weightStr, "Установить вес равным этому значению", "changetfweight", [weight])
 			
 		
 	if(state == "goalsmenu"):
 		var encounterSettings:EncounterSettings = GM.main.getEncounterSettings()
-		addButton("Back", "Close this menu", "")
+		addButton("Назад", "Закрыть меню", "")
 		
-		sayn("Things that npcs won't do to you:")
+		sayn("Вещи, которые NPC точно НЕ будут с вами делать:")
 		var disabledGoalsNames = []
 		var allGoals = GlobalRegistry.getSexGoals()
 		for goalID in allGoals:
@@ -184,11 +184,11 @@ func _run():
 			
 			if(encounterSettings.isGoalDisabledForSubPC(goalID)):
 				disabledGoalsNames.append(goal.getVisibleName())
-				addButton("+"+goal.getVisibleName(), "Enable this", "enablegoalforpc", [goalID])
+				addButton("+"+goal.getVisibleName(), "Включить", "enablegoalforpc", [goalID])
 			else:
-				addButton("-"+goal.getVisibleName(), "Disable this", "disablegoalforpc", [goalID])
+				addButton("-"+goal.getVisibleName(), "Выключить", "disablegoalforpc", [goalID])
 		if(disabledGoalsNames.size() == 0):
-			saynn("- Nothing is disabled")
+			saynn("- Ничего не отключено")
 		else:
 			saynn(Util.humanReadableList(disabledGoalsNames))
 			
@@ -197,9 +197,9 @@ func _run():
 
 	if(state == "speciesmenu"):
 		var encounterSettings:EncounterSettings = GM.main.getEncounterSettings()
-		addButton("Back", "Close this menu", "")
+		addButton("Назад", "Закрыть меню", "")
 		
-		sayn("Relative chances for the species of encountered npcs:")
+		sayn("Относительная вероятность появления видов встреченных NPC:")
 		var species = GlobalRegistry.getAllPlayableSpecies()
 		for speciesID in species:
 			var speciesObject:Species = species[speciesID]
@@ -207,14 +207,14 @@ func _run():
 			
 			var weight = encounterSettings.getSpeciesWeight(speciesID)
 			sayn(str(speciesName)+": "+str(Util.roundF(weight*100.0, 1))+"%")
-			addButton(speciesName, "Change the chance of this species", "specieschancemenu", [speciesID])
+			addButton(speciesName, "Изменить шанс появления этого вида", "specieschancemenu", [speciesID])
 		sayn("")
 
 	if(state == "gendersmenu"):
 		var encounterSettings:EncounterSettings = GM.main.getEncounterSettings()
-		addButton("Back", "Close this menu", "")
+		addButton("Назад", "Закрыть меню", "")
 		
-		sayn("Relative chances for the genders of encountered npcs:")
+		sayn("Относительные шансы появления NPC разных полов:")
 		for gender in NpcGender.getAll():
 			var genderName = NpcGender.getVisibleNameColored(gender)
 			var extraInfo = ""
@@ -224,18 +224,18 @@ func _run():
 			
 			var weight = encounterSettings.getGenderWeight(gender)
 			sayn(str(genderName)+": "+str(Util.roundF(weight*100.0, 1))+"%"+extraInfo)
-			addButton(NpcGender.getVisibleName(gender), "Change the chance of this gender", "genderchancemenu", [gender])
+			addButton(NpcGender.getVisibleName(gender), "Изменить шанс этого пола", "genderchancemenu", [gender])
 		sayn("")
 
 	if(state == "genderchancemenu"):
 		var gender = pickedGenderToChange
 		var encounterSettings:EncounterSettings = GM.main.getEncounterSettings()
-		saynn("The current chance for "+NpcGender.getVisibleNameColored(gender)+" is "+str(Util.roundF(encounterSettings.getGenderWeight(gender)*100.0, 1))+"%")
+		saynn("Текущий шанс для "+NpcGender.getVisibleNameColored(gender)+" is "+str(Util.roundF(encounterSettings.getGenderWeight(gender)*100.0, 1))+"%")
 
-		addButton("Back", "Go back to the previous menu", "gendersmenu")
-		addButton("Default", "Set back to default chance", "setgenderchance", [gender, -1.0])
+		addButton("Назад", "Назад в предыдущее меню", "gendersmenu")
+		addButton("По умолчанию", "Вернуть стандартный шанс", "setgenderchance", [gender, -1.0])
 		for chance in [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]:
-			addButton(str(Util.roundF(chance*100.0))+"%", "Pick this chance", "setgenderchance", [gender, chance])
+			addButton(str(Util.roundF(chance*100.0))+"%", "Выбрать этот шанс", "setgenderchance", [gender, chance])
 
 	if(state == "specieschancemenu"):
 		var species = pickedSpeciesToChange
@@ -244,24 +244,24 @@ func _run():
 		if(!speciesObject):
 			speciesObject = GlobalRegistry.getSpecies(Species.Canine)
 		var speciesName = speciesObject.getVisibleName()
-		saynn("The current chance for "+speciesName+" is "+str(Util.roundF(encounterSettings.getSpeciesWeight(species)*100.0, 1))+"%")
+		saynn("Текущий шанс для "+speciesName+" is "+str(Util.roundF(encounterSettings.getSpeciesWeight(species)*100.0, 1))+"%")
 
-		addButton("Back", "Go back to the previous menu", "speciesmenu")
-		addButton("Default", "Set back to default chance", "setspecieschance", [species, -1.0])
+		addButton("Назад", "Назад в предыдущее меню", "speciesmenu")
+		addButton("По умолчанию", "Вернуть стандартный шанс", "setspecieschance", [species, -1.0])
 		for chance in [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.2, 1.5, 2.0, 3.0]:
-			addButton(str(Util.roundF(chance*100.0))+"%", "Pick this chance", "setspecieschance", [species, chance])
+			addButton(str(Util.roundF(chance*100.0))+"%", "Выбрать этот шанс", "setspecieschance", [species, chance])
 
 	if(state == "npclistmenu"):
 		var encounterPools = GM.main.getDynamicCharactersPools()
 
-		saynn("Select which occupation the character that you want to look for has.")
-		saynn("You can forget any character in the list so they will never show up again. This action can not be undone.")
-		saynn("Keep in mind that if this character is pregnant, their pregnancy will be forgotten too. But any kids you had together will stay.")
+		saynn("Выберите профессию персонажа, которого хотите найти.")
+		saynn("Вы можете «забыть» любого персонажа из списка, чтобы он больше никогда не появлялся. Это действие нельзя отменить.")
+		saynn("Имейте в виду: если персонаж будет беременным, его беременность тоже будет забыта. Но все ваши общие дети останутся.")
 
-		addButton("Back", "Go back a level", "") 
+		addButton("Назад", "Назад", "") 
 		
 		for encounterPoolID in encounterPools:
-			addButton(CharacterPool.getVisibleName(encounterPoolID), "Pick this occupation", "occupationmenupool", [encounterPoolID])
+			addButton(CharacterPool.getVisibleName(encounterPoolID), "Выбрать эту профессию", "occupationmenupool", [encounterPoolID])
 		
 	if(state == "occupationmenupool"):
 		var npclist = npclistScene.instance()
@@ -282,18 +282,18 @@ func _run():
 
 			npclist.addRow(NPCname, gender, subbyStat, characterID, pickedPoolToShow, sharedKidsAmount, dynamicCharacter.canForgetCharacter(), dynamicCharacter.canMeetCharacter())
 	
-		addButton("Back", "Go back a level", "closenpclist")
+		addButton("Назад", "Назад", "closenpclist")
 		
 		var encounterPools = GM.main.getDynamicCharactersPools()
 		for encounterPoolID in encounterPools:
-			addButton(CharacterPool.getVisibleName(encounterPoolID), "Pick this occupation", "occupationmenupool", [encounterPoolID])
+			addButton(CharacterPool.getVisibleName(encounterPoolID), "Выбрать эту профессию", "occupationmenupool", [encounterPoolID])
 
 	if(state == "fetishmenu"):
 		var fetishHolder = GM.pc.getFetishHolder()
-		saynn("Having a fetish for something means you will get more lust doing this activity during sex.")
-		addButton("Go back", "Go back a menu", "")
+		saynn("Наличие фетиша означает, что во время секса это занятие будет сильнее разжигать ваше вожделение.")
+		addButton("Назад", "Назад на меню", "")
 		
-		sayn("Your fetishes:")
+		sayn("Ваши фетиши:")
 		for fetishID in GlobalRegistry.getFetishes():
 			var fetish = GlobalRegistry.getFetish(fetishID)
 			var fetishValue:float = fetishHolder.getFetish(fetishID)
@@ -302,35 +302,35 @@ func _run():
 			
 			sayn(fetish.getVisibleName()+": "+"[color="+fetishColor+"]"+fetishInterestText+"[/color]")
 			
-			addButton(fetish.getVisibleName(), "Change how much you enjoy this fetish", "changefetish", [fetishID])
+			addButton(fetish.getVisibleName(), "Изменить уровень удовольствия от этого фетиша", "changefetish", [fetishID])
 		
 	if(state == "changefetish"):
 		var fetishHolder = GM.pc.getFetishHolder()
 		var fetish = GlobalRegistry.getFetish(pickedFetishToChange)
 		if(fetish != null):
-			saynn("Your current value for '"+fetish.getVisibleName()+"' fetish is "+FetishInterest.getVisibleName(fetishHolder.getFetish(pickedFetishToChange)))
+			saynn("Ваше текущее значение для фетиша '"+fetish.getVisibleName()+"' составляет "+FetishInterest.getVisibleName(fetishHolder.getFetish(pickedFetishToChange)))
 			
-			saynn("Pick your new value for this fetish")
+			saynn("Выберите новое значение для этого фетиша")
 			
 			for fetishInterest in FetishInterest.getAll():
-				addButton(FetishInterest.getVisibleName(fetishInterest), "Change to this", "changeinterest", [fetishInterest])
+				addButton(FetishInterest.getVisibleName(fetishInterest), "Изменить на это", "changeinterest", [fetishInterest])
 			
 			
-		addButton("Back", "Don't change anything", "fetishmenu")
+		addButton("Назад", "Ничего не менять", "fetishmenu")
 		
 	if(state == "personalitymenu"):
 		var personality: Personality = GM.pc.getPersonality()
-		saynn("Your personality has a minor effect on how you react during sex.")
-		addButton("Go back", "Go back a menu", "")
+		saynn("Ваш характер оказывает небольшое влияние на то, как вы реагируете во время секса.")
+		addButton("Назад", "Назад на меню", "")
 		
-		sayn("Your personality:")
+		sayn("Ваш характер:")
 		for statID in PersonalityStat.getAll():
 			var value = personality.getStat(statID)
 			var statName = PersonalityStat.getVisibleName(statID)
 			var statValue = PersonalityStat.getVisibleDesc(statID, value)
 			
-			sayn(statName+": "+statValue+" (Raw value is "+str(Util.roundF(value*100.0,1))+"%)")
-			addButton(statName, "Change this personality stat", "changepersonality", [statID])
+			sayn(statName+": "+statValue+" (Чистое значение: "+str(Util.roundF(value*100.0,1))+"%)")
+			addButton(statName, "Изменить этот параметр характера", "changepersonality", [statID])
 	
 	if(state == "changepersonality"):
 		var personality: Personality = GM.pc.getPersonality()
@@ -338,15 +338,15 @@ func _run():
 		var statName = PersonalityStat.getVisibleName(pickedPersonalityStat)
 		var statValue = PersonalityStat.getVisibleDesc(pickedPersonalityStat, value)
 		
-		saynn("Your current raw value for '"+statName+"' personality stat is "+str(Util.roundF(value*100.0,1))+"% (or '"+str(statValue)+"')")
+		saynn("Ваше текущее значение параметра '"+statName+"' составляет "+str(Util.roundF(value*100.0,1))+"% (или '"+str(statValue)+"')")
 		
-		addButton("Done", "Enough changing", "personalitymenu")
-		addButton("-15%", "Change the personality stat", "changepersonalitystatby", [-0.15])
-		addButton("-5%", "Change the personality stat", "changepersonalitystatby", [-0.05])
-		addButton("-1%", "Change the personality stat", "changepersonalitystatby", [-0.01])
-		addButton("+1%", "Change the personality stat", "changepersonalitystatby", [0.01])
-		addButton("+5%", "Change the personality stat", "changepersonalitystatby", [0.05])
-		addButton("+15%", "Change the personality stat", "changepersonalitystatby", [0.15])
+		addButton("Готово", "Достаточно изменений", "personalitymenu")
+		addButton("-15%", "Изменить параметр личности", "changepersonalitystatby", [-0.15])
+		addButton("-5%", "Изменить параметр личности", "changepersonalitystatby", [-0.05])
+		addButton("-1%", "Изменить параметр личности", "changepersonalitystatby", [-0.01])
+		addButton("+1%", "Изменить параметр личности", "changepersonalitystatby", [0.01])
+		addButton("+5%", "Изменить параметр личности", "changepersonalitystatby", [0.05])
+		addButton("+15%", "Изменить параметр личности", "changepersonalitystatby", [0.15])
 		
 func doMeetNpc(ID, occupation):
 	var pcLoc:String = GM.pc.getLocation()

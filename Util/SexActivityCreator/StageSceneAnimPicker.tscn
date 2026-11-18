@@ -15,7 +15,7 @@ margin_bottom = 20.0
 margin_top = 3.0
 margin_right = 42.0
 margin_bottom = 17.0
-text = "Scene:"
+text = "Сцена:"
 
 [node name="OptionButton" type="OptionButton" parent="HBoxContainer"]
 margin_left = 46.0
@@ -29,7 +29,7 @@ margin_left = 735.0
 margin_top = 3.0
 margin_right = 801.0
 margin_bottom = 17.0
-text = "Animation"
+text = "Анимация"
 
 [node name="OptionButton2" type="OptionButton" parent="HBoxContainer"]
 margin_left = 805.0

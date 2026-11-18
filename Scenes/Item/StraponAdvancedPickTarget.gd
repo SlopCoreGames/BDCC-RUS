@@ -24,29 +24,29 @@ func _reactInit():
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.Solo, "stand", {bodyState={naked=true}})
-		saynn("Pick which character's penis should this advanced strapon use.")
+		saynn("Выберите, чей пенис будет использовать этот продвинутый страпон.")
 		
 		var curID:String = item.penisID
 		if(curID.empty()):
-			saynn("Current target: None (Will use a hologram strapon)")
+			saynn("Текущая цель: Нет (будет использован голографический страпон)")
 		else:
 			var theChar:BaseCharacter = getCharacter(curID)
 			if(theChar):
-				saynn("Current target: "+str(theChar.getName()))
+				saynn("Текущая цель: "+str(theChar.getName()))
 			else:
-				saynn("Current target: !ERROR!")
+				saynn("Текущая цель: !ОШИБКА!")
 		
-		addButton("Close", "Enough messing around", "endthescene")
+		addButton("Закрыть", "Хватит возиться", "endthescene")
 		if(!curID.empty()):
-			addButton("Clear", "Use the hologram strapon", "select", [""])
+			addButton("Очистить", "Использовать голографический страпон", "select", [""])
 		var _haveAny:bool = false
 		for theChar in allCharsWithPanties:
 			#if(!charCanUsePenis(theChar)):
 			#	continue
-			addButton(theChar.getName(), "Select this character's penis!", "select", [theChar.getID()])
+			addButton(theChar.getName(), "Выбрать пенис этого персонажа!", "select", [theChar.getID()])
 			_haveAny = true
 		if(!_haveAny):
-			saynn("- There aren't any characters detected that are wearing portal panties or a portal chastity cage.")
+			saynn("- Персонажи в портальных трусиках или портальных девайсах целомудрия не обнаружены.")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

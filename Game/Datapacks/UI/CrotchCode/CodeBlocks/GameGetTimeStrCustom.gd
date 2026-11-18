@@ -27,7 +27,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Get time formatted for",
+			text = "Получить время в формате для @@B*@@ @@T*@@ @@F*@@",
 		},
 		{
 			type = "slot",

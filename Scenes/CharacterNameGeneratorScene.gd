@@ -9,13 +9,13 @@ func _init():
 func _run():
 	if(state == ""):
 		if(randomName == ""):
-			saynn("Choose which dictionary to use for name generation.")
+			saynn("Выберите словарь для генерации имен.")
 		else:
-			saynn("Random name: [color="+getColorStringForGender(randomNameGender)+"]" + randomName + "[/color]")
+			saynn("Случайное имя: [color="+getColorStringForGender(randomNameGender)+"]" + randomName + "[/color]")
 
-		addButton("Any", "Generate a random feminine or masculine name", "generate_name_any")
-		addButton("Feminine", "Generate a random feminine name", "generate_name_fem")
-		addButton("Masculine", "Generate a random masculine name", "generate_name_masc")
+		addButton("Любое", "Сгенерировать случайное женское или мужское имя", "generate_name_any")
+		addButton("Женское", "Сгенерировать случайное женское имя", "generate_name_fem")
+		addButton("Мужское", "Сгенерировать случайное мужское имя", "generate_name_masc")
 
 		if(randomName != ""):
 			addButtonAt(10, "Confirm", "Proceed with selected name", "confirm")

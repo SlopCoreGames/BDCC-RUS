@@ -34,28 +34,28 @@ margin_bottom = 124.0
 visible = false
 margin_right = 1266.0
 margin_bottom = 14.0
-text = "Skill name"
+text = "Название навыка"
 
 [node name="DescLabel" type="Label" parent="VBoxContainer"]
 visible = false
 margin_top = 38.0
 margin_right = 1266.0
 margin_bottom = 52.0
-text = "Description"
+text = "Описание"
 
 [node name="LearnedPerksLabel" type="Label" parent="VBoxContainer"]
 visible = false
 margin_top = 20.0
 margin_right = 1266.0
 margin_bottom = 34.0
-text = "Learned perks: 0/10"
+text = "Изученные перки: 0/10"
 
 [node name="FreePerksLabel" type="Label" parent="VBoxContainer"]
 visible = false
 margin_top = 20.0
 margin_right = 1266.0
 margin_bottom = 34.0
-text = "Free perk points: 0"
+text = "Свободных очков перков: 0"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 margin_right = 1276.0
@@ -79,6 +79,6 @@ margin_bottom = 122.0
 rect_min_size = Vector2( 70, 40 )
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.15
-text = "Perks"
+text = "Перки"
 
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/PerksButton" to="." method="_on_PerksButton_pressed"]

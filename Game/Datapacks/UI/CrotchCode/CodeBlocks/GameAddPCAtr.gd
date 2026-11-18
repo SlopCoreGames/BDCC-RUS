@@ -36,7 +36,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Add to pc",
+			text = "Добавить в pc@@B*@@",
 		},
 		{
 			type = "rawselector",

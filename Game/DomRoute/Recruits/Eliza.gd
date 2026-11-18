@@ -9,7 +9,7 @@ func _init():
 	choices = [
 		{
 			id = "tone",
-			name = "Tone",
+			name = "Тон",
 			desc = "What tone do you want to use while speaking with Eliza",
 			options = [
 				["silent", "Silent", "Give Eliza a mostly silent treatment", RecruitChoiceResult.Red],
@@ -19,7 +19,7 @@ func _init():
 		},
 		{
 			id = "main",
-			name = "Main action",
+			name = "Основное действие",
 			desc = "What should the main action be",
 			options = [
 				["bloodplay", "Bloodplay", "Use a sharp edge to make Eliza bleed", RecruitChoiceResult.Green],
@@ -29,7 +29,7 @@ func _init():
 		},
 		{
 			id = "special",
-			name = "Special kink",
+			name = "Особая фишка",
 			desc = "What special kink do you wanna incorporate",
 			options = [
 				["druguse", "Drug-use", "Use Eliza's drugs against her", RecruitChoiceResult.Green],
@@ -57,7 +57,7 @@ func getExtraChoices(_choices:Array, _extras:Dictionary) -> Array:
 		else:
 			result.append({
 					id = "strapon",
-					name = "Strapon",
+					name = "Страпон",
 					desc = "Pick which strapon you wanna use.",
 					options = getStraponOptions(),
 				})

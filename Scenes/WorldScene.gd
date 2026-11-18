@@ -15,7 +15,7 @@ func _run():
 	
 	aimCamera(roomID)
 
-	#say("Meow\n")
+	#say("Мяу\n")
 	#say(_roomInfo.getDescription())
 
 	if(GM.world.canGoID(roomID, GameWorld.Direction.NORTH)):
@@ -37,7 +37,7 @@ func _run():
 		addButtonAt(12, "East", "Go east",  "go", [GameWorld.Direction.EAST, Direction.East])
 	else:
 		addDisabledButtonAt(12, "East", "Can't go east")
-	#addDisabledButton("bark", "no awo")
+	#addDisabledButton("bark", "нет аво")
 	
 	if(GM.main.IS.hasPawnsAtIgnorePC(roomID)):
 		addButtonAt(7, "Look around", "See what's happening around you", "look_around")
@@ -272,7 +272,7 @@ func runInteraction():
 	saynn(textAndActions[0])
 	
 	if(GM.main.isDebuggingIS):
-		sayn("[b]Debug info[/b]:")
+		sayn("[b]Инфо для отладки[/b]:")
 		saynn(Util.join(pawn.getDebugInfo(), "\n"))
 	
 	if(interaction.getCurrentPawn() == pawn):
@@ -289,9 +289,9 @@ func runInteraction():
 			if(theRelativeActionsInfo.size() > 1):
 				var curPawn := interaction.getCurrentPawn()
 				if(curPawn):
-					saynn(curPawn.getChar().getName()+"'s actions:\n"+Util.join(theRelativeActionsInfo, "\n"))
+					saynn(curPawn.getChar().getName()+"Действия \n:"+Util.join(theRelativeActionsInfo, "\n"))
 			
-		addButton("Continue", "See what happens next", "progress_interaction")
+		addButton("Продолжить", "Смотреть, что будет дальше", "progress_interaction")
 	
 	return true
 	

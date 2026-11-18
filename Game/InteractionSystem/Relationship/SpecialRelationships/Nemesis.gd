@@ -33,7 +33,7 @@ func getBigDescription() -> String:
 	return "Nemeses will actively try to do mean things to you if they get the chance. Nemeses might also try to ambush you."
 
 func getVisibleName() -> String:
-	return "Nemesis"
+	return "Нексус"
 
 func getCategoryColor() -> Color:
 	return Color.red

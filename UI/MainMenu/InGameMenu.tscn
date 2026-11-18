@@ -44,36 +44,36 @@ custom_constants/separation = 20
 unique_name_in_owner = true
 margin_right = 135.0
 margin_bottom = 26.0
-text = "Resume"
+text = "Продолжить"
 
 [node name="SaveGameButton" type="Button" parent="MainMenu/MainMenuCenter/VBoxContainer"]
 unique_name_in_owner = true
 margin_top = 46.0
 margin_right = 135.0
 margin_bottom = 72.0
-text = "Save Game"
+text = "Сохранить игру"
 
 [node name="LoadGameButton" type="Button" parent="MainMenu/MainMenuCenter/VBoxContainer"]
 unique_name_in_owner = true
 margin_top = 92.0
 margin_right = 135.0
 margin_bottom = 118.0
-text = "Load Game"
+text = "Загрузить игру"
 
 [node name="DatapacksButton" type="Button" parent="MainMenu/MainMenuCenter/VBoxContainer"]
 unique_name_in_owner = true
 margin_top = 138.0
 margin_right = 135.0
 margin_bottom = 164.0
-text = "Datapacks"
+text = "Датапаки"
 
 [node name="ContentBoardButton" type="Button" parent="MainMenu/MainMenuCenter/VBoxContainer"]
 unique_name_in_owner = true
 margin_top = 184.0
 margin_right = 135.0
 margin_bottom = 210.0
-hint_tooltip = "Might contain spoilers!"
-text = "Content Board"
+hint_tooltip = "Могут быть спойлеры!"
+text = "Доска контента"
 
 [node name="SexToyManagerButton" type="Button" parent="MainMenu/MainMenuCenter/VBoxContainer"]
 unique_name_in_owner = true
@@ -87,7 +87,7 @@ unique_name_in_owner = true
 margin_top = 276.0
 margin_right = 135.0
 margin_bottom = 302.0
-text = "Main Menu"
+text = "Главное меню"
 
 [node name="DatapackIngameMenu" parent="." instance=ExtResource( 5 )]
 visible = false

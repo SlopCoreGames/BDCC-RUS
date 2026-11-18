@@ -19,44 +19,44 @@ func _reactInit():
 
 func _run():
 	if(state == ""):
-		saynn("What do you wanna do with the contents of "+item.getVisibleName())
+		saynn("Что вы хотите сделать с содержимым "+item.getVisibleName())
 		
 		if(item.getFluids() != null):
 			var fluids = item.getFluids()
 			if(fluids.isCapacityLimited()):
-				sayn("Max volume: "+str(Util.roundF(fluids.getFluidAmount()))+"/"+str(Util.roundF(fluids.getCapacity(), 1))+" ml")
+				sayn("Макс. объем: "+str(Util.roundF(fluids.getFluidAmount()))+"/"+str(Util.roundF(fluids.getCapacity(), 1))+" ml")
 			if(!fluids.isEmpty()):
-				saynn("Contents:\n"+Util.join(fluids.getContentsHumanReadableArray(),"\n"))
+				saynn("Содержимое:\n"+Util.join(fluids.getContentsHumanReadableArray(),"\n"))
 			else:
-				saynn("Contents: Empty")
+				saynn("Содержимое: пусто")
 			
-			sayn("Transfer to = transfer fluids from this item to another")
-			saynn("Fill = transfer fluids from some other item to this one")
+			sayn("Перелить в = перекачать жидкость из этого предмета в другой")
+			saynn("Наполнить = перекачать жидкость из другого предмета в этот")
 			
 			if(fluids.isEmpty()):
-				addDisabledButton("Transfer to", "It's empty")
+				addDisabledButton("Перелить в", "Оно пустое")
 			else:
-				addButton("Transfer to", "Transfer fluids to other item", "transferFluids")
-			addButton("Fill", "Use other item to fill this item", "fillWithFluids")
+				addButton("Перелить в", "Перелить жидкость в другой предмет", "transferFluids")
+			addButton("Наполнить", "Использовать другой предмет, чтобы наполнить этот", "fillWithFluids")
 			if(!fluids.isEmpty()):
-				addButton("Empty it!", "Remove any fluids from this item", "empty_warning")
+				addButton("Опорожнить!", "Удалить все жидкости из этого предмета", "empty_warning")
 			else:
-				addDisabledButton("Empty it!", "It's already empty")
+				addDisabledButton("Опорожнить!", "Он и так пуст")
 		
-		addButton("Close", "Enough messing around", "endthescene")
+		addButton("Закрыть", "Хватит возиться", "endthescene")
 
 	if(state == "empty_warning"):
-		saynn("You sure you wanna empty this item?")
+		saynn("Ты уверен, что хочешь опустошить этот предмет?")
 		
-		saynn("The fluids inside it will be lost forever.")
+		saynn("Жидкость внутри будет потеряна навсегда.")
 		
-		addButton("Confirm", "Empty it", "do_empty")
-		addButton("Cancel", "You changed your mind", "")
+		addButton("Подтвердить", "Опорожнить", "do_empty")
+		addButton("Отмена", "Вы передумали", "")
 
 	if(state == "fillWithFluids"):
-		saynn("Pick which item you wanna use to fill selected one with")
+		saynn("Выберите предмет, которым хотите наполнить выбранный")
 
-		addButton("Back", "Go back a menu", "")
+		addButton("Назад", "Назад на меню", "")
 		
 		var equippedItems = GM.pc.getInventory().getAllEquippedItems()
 		for slot in equippedItems:
@@ -72,59 +72,59 @@ func _run():
 			
 			if(theitem.getFluids() != null):
 				if(theitem.getFluids().isEmpty()):
-					addDisabledButton(theitem.getStackName(), "(This item is empty)\n\n"+theitem.getVisisbleDescription())
+					addDisabledButton(theitem.getStackName(), "(Этот предмет пуст)\n\n"+theitem.getVisisbleDescription())
 				else:
 					addButton(theitem.getStackName(), theitem.getVisisbleDescription(), "pickFillFrom", [theitem.getUniqueID()])
 
 	if(state in ["pickFillFrom", "enteramounttofill"]):
-		saynn("How much do you wanna transfer?")
+		saynn("Сколько хотите перелить?")
 		
-		sayn("To:")
+		sayn("Кому:")
 		if(item.getFluids() != null):
 			sayn(item.getStackName())
 			var fluids = item.getFluids()
 			if(fluids.isCapacityLimited()):
-				sayn("Max volume: "+str(Util.roundF(fluids.getFluidAmount()))+"/"+str(Util.roundF(fluids.getCapacity(), 1))+" ml")
+				sayn("Макс. объем: "+str(Util.roundF(fluids.getFluidAmount()))+"/"+str(Util.roundF(fluids.getCapacity(), 1))+" ml")
 			if(!fluids.isEmpty()):
-				saynn("Contents:\n"+Util.join(fluids.getContentsHumanReadableArray(),"\n"))
+				saynn("Содержимое:\n"+Util.join(fluids.getContentsHumanReadableArray(),"\n"))
 			else:
-				saynn("Contents: Empty")
+				saynn("Содержимое: пусто")
 		
-		sayn("From:")
+		sayn("Откуда:")
 		var item2 = GM.pc.getInventory().getItemByUniqueID(interactionItemID)
 		if(item2.getFluids() != null):
 			sayn(item2.getStackName())
 			var fluids = item2.getFluids()
 			if(fluids.isCapacityLimited()):
-				sayn("Max volume: "+str(Util.roundF(fluids.getFluidAmount()))+"/"+str(Util.roundF(fluids.getCapacity(), 1))+" ml")
+				sayn("Макс. объем: "+str(Util.roundF(fluids.getFluidAmount()))+"/"+str(Util.roundF(fluids.getCapacity(), 1))+" ml")
 			if(!fluids.isEmpty()):
-				saynn("Contents:\n"+Util.join(fluids.getContentsHumanReadableArray(),"\n"))
+				saynn("Содержимое:\n"+Util.join(fluids.getContentsHumanReadableArray(),"\n"))
 			else:
-				saynn("Contents: Empty")
+				saynn("Содержимое: пусто")
 		
 		if(state == "enteramounttofill"):
-			saynn("Enter how much you wanna transfer in ml")
+			saynn("Введите количество мл для переноса")
 			
 			var textBox:LineEdit = addTextbox("transfer_ml")
 			var _ok = textBox.connect("text_entered", self, "onFillMLEnterPressed")
-			addButton("Confirm", "pick this amount", "confirmtextfill")
+			addButton("Подтвердить", "выбрать это количество", "confirmtextfill")
 			
-			addButton("Back", "Go back a menu", "fillWithFluids")
+			addButton("Назад", "Назад на меню", "fillWithFluids")
 		else:
-			addButton("Back", "Go back a menu", "fillWithFluids")
+			addButton("Назад", "Назад на меню", "fillWithFluids")
 			var variants = [0.1, 0.25, 0.5, 0.75, 1.0]
 			var fluids = item2.getFluids()
 			var howMuch = fluids.getFluidAmount()
 			for howMuchPercent in variants:
 				var willTransfer = howMuch * howMuchPercent
-				addButton(str(Util.roundF(willTransfer, 1))+" ml", "Transfer "+(str(howMuchPercent*100.0))+"%", "doFill", [willTransfer])
-			addButton("Specific amount", "Enter the amount of ml you wanna transfer", "enteramounttofill")
+				addButton(str(Util.roundF(willTransfer, 1))+" ml", "Перелить "+(str(howMuchPercent*100.0))+"%", "doFill", [willTransfer])
+			addButton("Точное количество", "Введите количество мл, которое хотите перелить", "enteramounttofill")
 					
 
 	if(state == "transferFluids"):
-		saynn("Where do you wanna transfer the fluids to")
+		saynn("Куда хочешь перекачать жидкости?")
 		
-		addButton("Back", "Go back a menu", "")
+		addButton("Назад", "Назад на меню", "")
 		
 		var equippedItems = GM.pc.getInventory().getAllEquippedItems()
 		for slot in equippedItems:
@@ -142,48 +142,48 @@ func _run():
 				addButton(theitem.getStackName(), theitem.getVisisbleDescription(), "pickTransferTo", [theitem.getUniqueID()])
 		
 	if(state in ["pickTransferTo", "enteramounttotransfer"]):
-		saynn("How much do you wanna transfer?")
+		saynn("Сколько хотите перелить?")
 		
-		sayn("From:")
+		sayn("Откуда:")
 		if(item.getFluids() != null):
 			sayn(item.getStackName())
 			var fluids = item.getFluids()
 			if(fluids.isCapacityLimited()):
-				sayn("Max volume: "+str(Util.roundF(fluids.getFluidAmount()))+"/"+str(Util.roundF(fluids.getCapacity(), 1))+" ml")
+				sayn("Макс. объем: "+str(Util.roundF(fluids.getFluidAmount()))+"/"+str(Util.roundF(fluids.getCapacity(), 1))+" ml")
 			if(!fluids.isEmpty()):
-				saynn("Contents:\n"+Util.join(fluids.getContentsHumanReadableArray(),"\n"))
+				saynn("Содержимое:\n"+Util.join(fluids.getContentsHumanReadableArray(),"\n"))
 			else:
-				saynn("Contents: Empty")
+				saynn("Содержимое: пусто")
 		
-		sayn("To:")
+		sayn("Кому:")
 		var item2 = GM.pc.getInventory().getItemByUniqueID(interactionItemID)
 		if(item2.getFluids() != null):
 			sayn(item2.getStackName())
 			var fluids = item2.getFluids()
 			if(fluids.isCapacityLimited()):
-				sayn("Max volume: "+str(Util.roundF(fluids.getFluidAmount()))+"/"+str(Util.roundF(fluids.getCapacity(), 1))+" ml")
+				sayn("Макс. объем: "+str(Util.roundF(fluids.getFluidAmount()))+"/"+str(Util.roundF(fluids.getCapacity(), 1))+" ml")
 			if(!fluids.isEmpty()):
-				saynn("Contents:\n"+Util.join(fluids.getContentsHumanReadableArray(),"\n"))
+				saynn("Содержимое:\n"+Util.join(fluids.getContentsHumanReadableArray(),"\n"))
 			else:
-				saynn("Contents: Empty")
+				saynn("Содержимое: пусто")
 		
 		if(state == "enteramounttotransfer"):
-			saynn("Enter how much you wanna transfer in ml")
+			saynn("Введите количество мл для переноса")
 			
 			var textBox:LineEdit = addTextbox("transfer_ml")
 			var _ok = textBox.connect("text_entered", self, "onTransferMLEnterPressed")
-			addButton("Confirm", "pick this amount", "confirmtexttransfer")
+			addButton("Подтвердить", "выбрать это количество", "confirmtexttransfer")
 			
-			addButton("Back", "Go back a menu", "transferFluids")
+			addButton("Назад", "Назад на меню", "transferFluids")
 		else:
-			addButton("Back", "Go back a menu", "transferFluids")
+			addButton("Назад", "Назад на меню", "transferFluids")
 			var variants = [0.1, 0.25, 0.5, 0.75, 1.0]
 			var fluids = item.getFluids()
 			var howMuch = fluids.getFluidAmount()
 			for howMuchPercent in variants:
 				var willTransfer = howMuch * howMuchPercent
-				addButton(str(Util.roundF(willTransfer, 1))+" ml", "Transfer "+(str(howMuchPercent*100.0))+"%", "doTransfer", [willTransfer])
-			addButton("Specific amount", "Enter the amount of ml you wanna transfer", "enteramounttotransfer")
+				addButton(str(Util.roundF(willTransfer, 1))+" ml", "Перелить "+(str(howMuchPercent*100.0))+"%", "doTransfer", [willTransfer])
+			addButton("Точное количество", "Введите количество мл, которое хотите перелить", "enteramounttotransfer")
 			
 func onTransferMLEnterPressed(_new_text:String):
 	GM.main.pickOption("confirmtexttransfer", [])

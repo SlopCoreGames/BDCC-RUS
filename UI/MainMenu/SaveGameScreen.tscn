@@ -41,8 +41,7 @@ margin_bottom = 87.0
 bbcode_enabled = true
 bbcode_text = "Here you can save your game
 Keep in mind that during the early development save structure might change a lot and so your previous saves might not work anymore, sorry. Your best bet would be saving inside your cell when you wanna switch versions"
-text = "Here you can save your game
-Keep in mind that during the early development save structure might change a lot and so your previous saves might not work anymore, sorry. Your best bet would be saving inside your cell when you wanna switch versions"
+text = "Здесь можно сохранить игру\nИмейте в виду, что на ранних этапах разработки структура сохранений может сильно меняться, поэтому старые файлы могут перестать работать, сорри. Лучше всего сохраняться прямо в камере, когда захотите переключить версию игры"
 fit_content_height = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/ScrollVBox"]
@@ -62,7 +61,7 @@ margin_left = 504.0
 margin_right = 604.0
 margin_bottom = 40.0
 rect_min_size = Vector2( 100, 40 )
-text = "Save"
+text = "Сохранить"
 
 [node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/ScrollVBox"]
 margin_top = 135.0
@@ -94,7 +93,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 256.0
 margin_bottom = 26.0
-text = "Close"
+text = "Закрыть"
 myShortcutKey = "1"
 
 [node name="DeleteButton" parent="VBoxContainer/GridContainer" instance=ExtResource( 4 )]
@@ -103,7 +102,7 @@ anchor_bottom = 0.0
 margin_left = 260.0
 margin_right = 515.0
 margin_bottom = 26.0
-text = "Delete Save"
+text = "Удалить сохранение"
 myShortcutKey = "2"
 
 [connection signal="visibility_changed" from="." to="." method="_on_LoadGameScreen_visibility_changed"]

@@ -29,7 +29,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Set loc name",
+			text = "Установить имя локации",
 		},
 		{
 			type = "slot",

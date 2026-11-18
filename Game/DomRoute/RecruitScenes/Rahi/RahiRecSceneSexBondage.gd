@@ -21,164 +21,164 @@ func _run():
 		straponUsed = (extra("strapon", "") != "")
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcBodyState={leashedBy="pc"}})
 		aimCameraAndSetLocName("hideout_breakroom")
-		saynn("This plan will require lots of bondage gear.. but Kait is kind enough to share the missing required pieces.")
+		saynn("Для этого плана понадобится куча снаряжения для бондажа... но Кейт достаточно добра, чтобы поделиться недостающими деталями.")
 
-		saynn("And so you enter Rahi's cell and grab her leash. Her ears go flat as you lead her to the center of the room and then turn towards her.")
+		saynn("И вот ты входишь в камеру Рахи и берешь её поводок. Её ушки прижимаются к голове, когда ты ведешь её к центру комнаты, а затем поворачиваешься к ней лицом.")
 
 		saynn("[say=pc]"+str(ch1("I'm gonna be very gentle.", "You're gonna stand still for me, like a good kitty.", "One wrong move.. and I will make it hurt.. a lot."))+"[/say]")
 
-		saynn("[say=rahi]Meow?..[/say]")
+		saynn("[say=rahi]Мяу?..[/say]")
 
-		saynn("Time to have some fun.")
+		saynn("Пора повеселиться.")
 
-		addButton("Cuff her", "Time for bondage!", "do_bondage")
+		addButton("Сковать её наручниками", "Время бондажа!", "do_bondage")
 	if(state == "do_bondage"):
 		playAnimation(StageScene.HangingDuo, "idle", {pc="rahi", npc="pc", bodyState={naked=true, hard=true}})
-		saynn("That shirt is only gonna get in the way. Without saying anything, you begin unbuttoning and taking it off.")
+		saynn("Эта рубашка будет только мешаться. Не говоря ни слова, ты начинаешь расстегивать пуговицы и снимать её.")
 
-		saynn("[say=rahi]W-what are you.. meow![/say]")
+		saynn("[say=rahi]Ч-что ты... мяу![/say]")
 
-		saynn("Then you grab her paws and cuff them together! You repurpose the leash, disconnecting it from her collar and clipping it to her cuffs instead, the other end gets looped over a sturdy ceiling hook that was conveniently installed here at some point.")
+		saynn("Затем ты хватаешь её лапки и сковываешь их вместе! Ты переделываешь поводок: отсоединяешь его от ошейника и пристегиваешь к наручникам, а другой конец закидываешь на прочный потолочный крюк, который каким-то образом здесь предусмотрительно установили.")
 
-		saynn("[say=rahi]Oh.. wait! Ah![/say]")
+		saynn("[say=rahi]Ох... подожди! А-ах![/say]")
 
-		saynn("The metal rattles as you pull on the leash, making the cat pull her arms above her head. Rahi rises onto her tippy toes, barely touching the floor.")
+		saynn("Металл дребезжит, когда ты тянешь за поводок, заставляя кошку задрать руки над головой. Рахи встает на цыпочки, едва касаясь пола ступнями.")
 
-		saynn("Her exposed chest is moving up and down, pink nips catching the cold wind. She blushes as you look at her.")
+		saynn("Её обнаженная грудь вздымается и опускается, розовые соски чутко реагируют на холодный ветер. Она краснеет под твоим взглядом.")
 
-		saynn("But you're not done yet. You grab her shorts by the waistband and pull them down, the helpless feline can't do anything as you expose her fluffy thighs and a cute little flower between her legs.")
+		saynn("Но ты еще не закончил. Ты хватаешь её за пояс шорт и стягиваешь их вниз; беспомощная кошечка не может ничего сделать, пока ты обнажаешь её пушистые бедра и милый маленький цветочек между ног.")
 
-		saynn("[say=rahi]Meow-w..[/say]")
+		saynn("[say=rahi]Мяу-у..[/say]")
 
 		saynn("[say=pc]"+str(ch1("I'm gonna make you wear some more things. I hope this is okay. Let me know if I should stop.", "I'm just getting started, kitty cat.", "Fucktoys like you don't deserve freedom."))+"[/say]")
 
-		saynn("You secure a pair of cuffs around her ankles next. But instead of connecting them together, you use a metal spreader in between, which forces her to hold her legs spread for you.")
+		saynn("Следующим делом ты надеваешь наручники на её щиколотки. Но вместо того чтобы соединить их вместе, ты используешь металлический разделитель, который заставляет её держать ноги широко разведенными для тебя.")
 
-		saynn("[say=rahi]She.. she can't cover herself up anymore..[/say]")
+		saynn("[say=rahi]Она.. она больше не может прикрыться..[/say]")
 
 		saynn("[say=pc]"+str(ch1("Again, let me know if I should stop.", "Good.", "Shut up, little slut."))+"[/say]")
 
-		saynn("Indeed, her pink folds are now on full display. You slide your digits over the sensitive parts and hear a little moan from her, your digits catching some of her arousal.")
+		saynn("Действительно, её розовые складки теперь выставлены напоказ. Ты проводишь пальцами по чувствительным местам и слышишь её тихий стон; на твоих пальцах остается её возбуждение.")
 
-		saynn("Still, you're not done yet.")
+		saynn("И всё же, ты еще не закончил.")
 
-		addButton("More toys", "Put more things on Rahi", "more_toys")
+		addButton("Больше игрушек", "Надеть на Рахи что-нибудь еще", "more_toys")
 	if(state == "more_toys"):
 		playAnimation(StageScene.HangingSex, "tease", {pc="rahi", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true, condom=condomUsed}})
-		saynn("A strip of black cloth goes over her eyes, pulling her into complete darkness. Then comes the ballgag. You push the rubber ball against her lips until she parts them, the rubber sphere now holding her jaw open, her tongue drooling.")
+		saynn("Полоска черной ткани ложится ей на глаза, погружая в полную темноту. Затем идет кляп. Ты прижимаешь резиновый шар к её губам, пока она не размыкает их, и теперь резиновая сфера держит её челюсть открытой, а с языка капает слюна.")
 
-		saynn("[say=rahi]Mmph..[/say]")
+		saynn("[say=rahi]Мммф..[/say]")
 
-		saynn("Her tail curls between her legs, the only part of her that wasn't made helpless.")
+		saynn("Её хвост поджат между ног — единственная часть тела, которую не удалось лишить воли.")
 
-		saynn("Almost done.. The last toy that you have is a little bullet vibrator. You strap the remote around her thigh and then use a piece of tape to attach the little pink egg directly onto her clit. As you turn the dial, the toy starts buzzing ever so audibly, making kitty sway her butt.")
+		saynn("Почти всё.. Последняя игрушка, что у тебя осталась — это маленький вибропуля. Ты закрепляешь пульт на её бедре, а само розовое яичко приклеиваешь скотчем прямо к клитору. Когда ты начинаешь крутить колесико, игрушка начинает громко жужжать, заставляя кошечку непроизвольно вилять задницей.")
 
-		saynn("[say=rahi]Mhh-h.. mhhphh..[/say]")
+		saynn("[say=rahi]Ммм-х.. ммффхх..[/say]")
 
 		saynn("[say=pc]"+str(ch1("That looks great. Lovely.", "I know you like it. You will like what I will do with you next even more.", "Nothing but a needy whore. Not even trying to resist."))+"[/say]")
 
-		saynn("The chains hold her helpless, her toes barely touching the floor, her perky tits bouncing free, her pussy dripping juices onto the floor. Rahi throws her head back and lets out muffled moans into the gag..")
+		saynn("Цепи держат её беспомощной: носки едва касаются пола, упругая грудь подпрыгивает, а киска сочится соком прямо на пол. Рахи запрокидывает голову, издавая приглушенные стоны сквозь кляп...")
 
 		if (!straponUsed):
-			saynn("That's when you get behind her, your cock getting lined up with her folds, the tip already prodding at the entrance. "+str("You take some extra time to put a condom on.. Might as well use one." if condomUsed else "")+"")
+			saynn("В этот момент ты заходишь ей со спины, прицеливая свой член к её складкам; кончик уже упирается в самое вхождение."+str("You take some extra time to put a condom on.. Might as well use one." if condomUsed else "")+"")
 
 		else:
-			saynn("That's when you quickly secure the strapon around your waist, the shiny tip already brushing against her folds, prodding at the entrance.")
+			saynn("В этот момент ты быстро закрепляешь страпон на талии; его блестящий наконечник уже касается её складок, прощупывая вход.")
 
-		addButton("Continue", "See what happens next", "sex_part")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sex_part")
 	if(state == "sex_part"):
 		playAnimation(StageScene.HangingSex, "sex", {pc="rahi", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true, condom=condomUsed}})
-		saynn("Then you push inside..")
+		saynn("Затем ты входишь внутрь...")
 
-		saynn("[say=rahi]Mmph-![/say]")
+		saynn("[say=rahi]Мммпх-![/say]")
 
-		saynn("Her whole body tenses, chains rattling more. She tries to instinctively close her thighs.. but the ankle spreader holds her open for you. Her claws scratch uselessly at the metal.")
+		saynn("Всё её тело напрягается, цепи начинают греметь сильнее. Она инстинктивно пытается свести бёдра.. но распорка для лодыжек держит её раскрытой специально для тебя. Её когти бесполезно скребут по металлу.")
 
-		saynn("You don't rush it. You draw back slowly.. allowing her slick tunnel to close up.. before pushing deep inside again! Each thrust makes her swing gently forward and back, meeting your motions.")
+		saynn("Ты не спешишь. Ты медленно выходишь.. давая её влажному туннелю сомкнуться.. а затем снова глубоко входишь! С каждым толчком она плавно раскачивается вперед-назад, подстраиваясь под твои движения.")
 
-		saynn("[say=rahi]Nnnh.. hhh.. ah… mphh..[/say]")
+		saynn("[say=rahi]Ннн.. ххх.. ах… мпхх..[/say]")
 
-		saynn("Her tail wraps around your waist, desperate for something to hold. Each thrust pulls a soft noise out of her, her toes curling, her bound paws straining against the cuffs.")
+		saynn("Её хвост обвивается вокруг твоего пояса в отчаянной попытке за что-то ухватиться. Каждый толчок вырывает из неё тихий стон; её пальцы на лапах поджимаются, а связанные конечности напрягаются в кандалах.")
 
-		addButton("Continue", "See what happens next", "sex_fast")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sex_fast")
 	if(state == "sex_fast"):
 		playAnimation(StageScene.HangingSex, "fast", {pc="rahi", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true, condom=condomUsed}})
-		saynn("You pick up the pace, railing that slick pussy faster. Rahi's muffled moans get louder, her body squirming in the restraints, her inner walls clenching tightly around you, her clit still getting pleasured by the toy at the same time.")
+		saynn("Ты ускоряешься, всё сильнее вколачивая член в её влажную киску. Приглушённые стоны Рахи становятся громче, её тело извивается в путах, а внутренние стенки плотно сжимаются вокруг тебя, пока игрушка продолжает ласкать её клитор.")
 
-		saynn("[say=rahi]Mmmphh.. mmmphh-..[/say]")
+		saynn("[say=rahi]Мммпхх.. мммпхх-..[/say]")
 
 		saynn("[say=pc]"+str(ch1("You're doing great, kitty.. just let it happen..", "Good. Squirm. The chains won't break.", "Shut up and cum on my cock, cat."))+"[/say]")
 
-		saynn("Seconds later, her pussy slit begins to spasm around you as your "+str("cock" if !straponUsed else "strapon")+" hammers against a particular spot that makes her whole body go rigid.. and then the opposite.")
+		saynn("Спустя несколько секунд её щель начинает спазмировать вокруг тебя, когда твой "+str("cock" if !straponUsed else "strapon")+" с силой бьёт в ту самую точку, от которой всё её тело сначала каменеет... а затем обмякает.")
 
-		saynn("Her back arches. Her toes curl so hard they probably cramp. A long, passionate cry gets caught by her ballgag.")
+		saynn("Её спина выгибается дугой. Пальцы на лапах поджимаются так сильно, что, кажется, сводит судорогой. Долгий, страстный крик захлёбывается в кляпе.")
 
-		saynn("Her orgasm shakes the chains, her tails tightens around you like a rope.")
+		saynn("Её оргазм заставляет цепи дрожать, а хвост обвивается вокруг тебя туго, словно верёвка.")
 
-		saynn("But you're not done..")
+		saynn("Но ты еще не закончил...")
 
-		addButton("Cum inside", "Breed the kitty!", "sex_cum")
+		addButton("Кончить внутрь", "Оплодотвори кошечку!", "sex_cum")
 	if(state == "sex_cum"):
 		playAnimation(StageScene.HangingSex, "inside", {pc="rahi", npc="pc", npcCum=cameInsideRahi, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true, condom=condomUsed}})
-		saynn("You keep fucking Rahi through her orgasm, through her squirming.. until she is whimpering and trying to push back against the chains."+str(" The pressure builds in your {pc.penis}.." if !straponUsed else "")+"")
+		saynn("Ты продолжаешь трахать Рахи сквозь её оргазм, сквозь её конвульсии... пока она не начинает скулить, пытаясь податься навстречу цепям."+str(" The pressure builds in your {pc.penis}.." if !straponUsed else "")+"")
 
 		if (straponUsed):
-			saynn("As soon as her peak begins to fade, you slam the strap to the hilt! Her walls squeeze tight around the shaft again as you grind deep inside her.. the harness presses flush against her thighs, every inch of the toy buried to the base. Rahi mewls into the gag, her body shivering from each deep thrust, her tail spazzing wildly.")
+			saynn("Как только пик её удовольствия начинает спадать, ты вбиваешь стрэп на всю глубину! Её стенки снова плотно обхватывают ствол, пока ты втираешься глубоко внутрь... ремень прижимается вплотную к её бёдрам, игрушка входит до самого основания. Рахи жалобно мяукает в кляп, её тело дрожит от каждого глубокого толчка, а хвост дико дёргается.")
 
 			saynn("[say=pc]"+str(ch1("Yes.. This feels so good.", "Take it all.. Like a good bound kitty..", "Little bitch.. getting fucked with a rubber cock."))+"[/say]")
 
 		elif (condomUsed && !condomBroke):
-			saynn("As soon as you reach your peak, you bury yourself to the hilt! Her walls squeeze tight as you spill inside her.. thick ropes of your {pc.cum} begin flooding that condom inside her, pumping it full to the brim. Looks like it held! Rahi mewls, her body shivering from every pulse, her tail spazzing wildly.")
+			saynn("Как только ты достигаешь пика, ты входишь в неё до самого основания! Её стенки сжимаются, когда ты изливаешься внутрь... густые струи твоего {pc.cum} начинают заполнять презерватив внутри неё, раздувая его до краев. Похоже, он выдержал! Рахи мяукает, её тело дрожит от каждой пульсации, а хвост дико дергается.")
 
 			saynn("[say=pc]"+str(ch1("Yes.. This feels so good.", "Take it all.. Like a good kitty..", "Breeding bitch.. getting her cunt fucked like that."))+"[/say]")
 
 		else:
-			saynn("As soon as you reach your peak, you bury yourself to the hilt!"+str(" Oh no, looks like the [b]condom broke![/b]" if condomBroke else "")+" Her walls squeeze tight as you spill inside her.. thick ropes of your {pc.cum} begin flooding her, pumping her womb full of it. Rahi mewls, her body shivering from every pulse, her tail spazzing wildly.")
+			saynn("Как только ты достигаешь пика, ты входишь в неё до самого основания!"+str(" Oh no, looks like the [b]condom broke![/b]" if condomBroke else "")+"Её стенки плотно сжимаются, когда ты изливаешься внутрь... густые струи твоего {pc.cum} начинают заливать её, наполняя её утробу. Рахи мяукает, её тело дрожит от каждой пульсации, а хвост дико дергается.")
 
 			saynn("[say=pc]"+str(ch1("Yes.. This feels so good.", "Take it all.. Like a good kitty..", "Breeding bitch.. getting her cunt stuffed while completely helpless."))+"[/say]")
 
-		saynn("After a few more quick thrusts, you stay inside her"+str(", letting her clenching slit milk you dry" if cameInsideRahi else "")+". Her ragged breathing is loud through her nose, the blindfold soaked.")
+		saynn("После нескольких быстрых толчков ты остаешься внутри неё"+str(", letting her clenching slit milk you dry" if cameInsideRahi else "")+". Её прерывистое дыхание громко вырывается через нос, повязка на глазах насквозь промокла.")
 
-		addButton("Continue", "See what happens next", "after_care")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_care")
 	if(state == "after_care"):
 		playAnimation(StageScene.Cuddling, "idle", {pc="pc", npc="rahi", bodyState={naked=true}, npcBodyState={naked=true, hard=true}})
 		if (gentle):
-			saynn("After you're done.. you pull out slowly and carefully. Her legs are shaky so you lower her wrists gently, unclipping the cuffs one by one. Rahi slumps into your arms"+str(", your seed dripping out of her used pussy" if cameInsideRahi else ", her pussy dripping with juices")+". You unstrap the gag last.")
+			saynn("Когда всё заканчивается... ты медленно и осторожно выходишь из неё. Её ноги дрожат, поэтому ты аккуратно опускаешь её запястья, один за другим расстегивая наручники. Рахи бессильно оседает в твои объятия."+str(", your seed dripping out of her used pussy" if cameInsideRahi else ", her pussy dripping with juices")+". Последним ты снимаешь кляп.")
 
-			saynn("[say=rahi]Th-thank you.. meow..[/say]")
+			saynn("[say=rahi]С-спасибо.. мяу..[/say]")
 
-			saynn("[say=pc]There you go. Wasn't this fun?[/say]")
+			saynn("[say=pc]Вот так. Разве это не было весело?[/say]")
 
 		elif (mean):
-			saynn("After you're done.. you yank your cock out hard, leaving Rahi's pussy gaping"+str(" and gushing with your seed" if cameInsideRahi else " and dripping with her juices")+". She hangs limp in the chains, barely responding. You leave a little bite on her neck..")
+			saynn("Когда всё заканчивается... ты резко вырываешь свой член, оставляя киску Рахи широко раскрытой."+str(" and gushing with your seed" if cameInsideRahi else " and dripping with her juices")+". Она безвольно висит в цепях, почти не реагируя. Ты оставляешь небольшой след от укуса на её шее...")
 
-			saynn("[say=pc]There you go, whore. You're mine.[/say]")
+			saynn("[say=pc]Вот так, шлюшка. Теперь ты моя.[/say]")
 
-			saynn("You leave her hanging for a moment longer before lowering and catching her.")
+			saynn("Ты оставляешь её висеть ещё на мгновение, прежде чем опустить и подхватить.")
 
 		else:
-			saynn("After you're done.. you pull your cock out, leaving Rahi's pussy"+str(" to drip your seed onto her thighs" if cameInsideRahi else " to drip juices onto her thighs")+". Her legs are shaky.. so you catch her as you unclip the cuffs, then give her a little bite on the neck through the gag.")
+			saynn("Когда всё заканчивается... ты вынимаешь свой член, оставляя киску Рахи"+str(" to drip your seed onto her thighs" if cameInsideRahi else " to drip juices onto her thighs")+". Её ноги дрожат... поэтому ты подхватываешь её, расстегивая наручники, а затем слегка прикусываешь её за шею прямо через кляп.")
 
-			saynn("[say=pc]Good girl.. Very good girl.[/say]")
+			saynn("[say=pc]Хорошая девочка... Очень хорошая девочка.[/say]")
 
-			saynn("You remove the blindfold and gag last. She blinks up at you, tears on her cheeks.")
+			saynn("В последнюю очередь ты снимаешь повязку и кляп. Она моргает, глядя на тебя, а по её щекам текут слёзы.")
 
-		saynn("[say=pc]You're gonna work for me now, right?[/say]")
+		saynn("[say=pc]Теперь ты будешь работать на меня, верно?[/say]")
 
 		if (perfect):
-			saynn("[say=rahi]Of course.. she will do everything you want.. meow..[/say]")
+			saynn("[say=rahi]Конечно же... она сделает всё, что ты захочешь... мяу...[/say]")
 
 		elif (success):
-			saynn("[say=rahi]Yes.. she will do what you ask..[/say]")
+			saynn("[say=rahi]Да... она будет делать всё, что ты попросишь...[/say]")
 
 		else:
-			saynn("[say=rahi]Um.. uh.. well..[/say]")
+			saynn("[say=rahi]Эм... ну... в общем...[/say]")
 
-			saynn("Hm.. It doesn't look like she will.")
+			saynn("Хм... Похоже, она не собирается этого делать.")
 
-		saynn("You wrap up and step out of the cell to see what Kait thinks..")
+		saynn("Закончив, ты выходишь из камеры, чтобы посмотреть, что об этом думает Кейт...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

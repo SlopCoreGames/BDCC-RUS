@@ -45,8 +45,8 @@ func resolveCustomCharacterName(_charID):
 
 func _run():
 	if(datapack == null || datapackScene == null):
-		saynn("[color=red]Error[/color] Sorry, datapack or scene from this datapack no longer exists")
-		addButton("Close", "Close this scene", "endthescene")
+		saynn("[color=red]Ошибка[/color] Упс, датапак или сцена из этого датапака больше не существует")
+		addButton("Закрыть", "Закрыть эту сцену", "endthescene")
 		return
 	
 	if(codeContex):

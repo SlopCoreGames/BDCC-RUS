@@ -54,7 +54,7 @@ func getTemplate():
 		},
 		{
 			type = "label",
-			text = "rubs vaginas with",
+			text = "трет вагины @@B*@@",
 		},
 		{
 			type = "slot",
@@ -65,7 +65,7 @@ func getTemplate():
 		},
 		{
 			type = "label",
-			text = "Share cum chance",
+			text = "Шанс обмена спермой @@T*@@",
 		},
 		{
 			type = "slot",

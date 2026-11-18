@@ -39,7 +39,7 @@ size_flags_stretch_ratio = 0.3
 [node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
 margin_right = 292.0
 margin_bottom = 20.0
-text = "Triggers"
+text = "Триггеры"
 align = 1
 
 [node name="TriggersItemList" type="ItemList" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
@@ -58,14 +58,14 @@ margin_bottom = 664.0
 margin_right = 144.0
 margin_bottom = 26.0
 size_flags_horizontal = 3
-text = "Export config"
+text = "Экспорт конфига"
 
 [node name="LoadConfigButton" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
 margin_left = 148.0
 margin_right = 292.0
 margin_bottom = 26.0
 size_flags_horizontal = 3
-text = "Import"
+text = "Импорт"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/HBoxContainer"]
 margin_left = 296.0
@@ -88,7 +88,7 @@ margin_top = 3.0
 margin_right = 864.0
 margin_bottom = 23.0
 size_flags_horizontal = 3
-text = "Some trigger"
+text = "Какой-то триггер"
 autowrap = true
 
 [node name="TestEffectButton" type="Button" parent="VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer"]
@@ -96,7 +96,7 @@ margin_left = 868.0
 margin_right = 976.0
 margin_bottom = 26.0
 custom_colors/font_color = Color( 0.839216, 1, 0.980392, 1 )
-text = "Test trigger"
+text = "Тестовый триггер"
 
 [node name="PassiveHBox" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer"]
 unique_name_in_owner = true
@@ -108,7 +108,7 @@ margin_bottom = 50.0
 unique_name_in_owner = true
 margin_right = 103.0
 margin_bottom = 20.0
-text = "Start from %"
+text = "Начать с %"
 
 [node name="StartFromHSlider" type="HSlider" parent="VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer/PassiveHBox"]
 unique_name_in_owner = true
@@ -130,7 +130,7 @@ margin_bottom = 82.0
 unique_name_in_owner = true
 margin_right = 164.0
 margin_bottom = 28.0
-text = "Scale with value"
+text = "Масштабировать со значением"
 
 [node name="ScaleWithValueLabel" type="Label" parent="VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer/ScaleWithValue"]
 unique_name_in_owner = true
@@ -138,7 +138,7 @@ margin_left = 168.0
 margin_top = 4.0
 margin_right = 296.0
 margin_bottom = 24.0
-text = "Max at xxx pain"
+text = "Максимум при боли xxx"
 
 [node name="ScaleWithValueSlider" type="HSlider" parent="VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer/ScaleWithValue"]
 unique_name_in_owner = true
@@ -154,7 +154,7 @@ step = 0.01
 margin_top = 86.0
 margin_right = 976.0
 margin_bottom = 106.0
-text = "Trigger these effects:"
+text = "Активировать эти эффекты:"
 align = 1
 
 [node name="EffectList" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer"]
@@ -171,7 +171,7 @@ margin_top = 318.0
 margin_right = 976.0
 margin_bottom = 368.0
 rect_min_size = Vector2( 0, 50 )
-text = "Add new effect"
+text = "Добавить новый эффект"
 
 [node name="InfoAcceptDialog" type="AcceptDialog" parent="."]
 unique_name_in_owner = true
@@ -181,7 +181,7 @@ margin_left = 313.0
 margin_top = 40.0
 margin_right = -313.0
 margin_bottom = -40.0
-window_title = "Trigger Config Export"
+window_title = "Экспорт конфига триггеров"
 dialog_autowrap = true
 
 [node name="ExportTextEdit" type="TextEdit" parent="InfoAcceptDialog"]
@@ -201,7 +201,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -100.0
 margin_top = -34.0
-text = "Copy"
+text = "Копировать"
 
 [node name="ConfigImportDialog" type="ConfirmationDialog" parent="."]
 unique_name_in_owner = true
@@ -211,7 +211,7 @@ margin_left = 313.0
 margin_top = 42.0
 margin_right = -313.0
 margin_bottom = -42.0
-window_title = "Import Config"
+window_title = "Импорт конфига"
 
 [node name="ImportTextEdit" type="TextEdit" parent="ConfigImportDialog"]
 unique_name_in_owner = true
@@ -230,7 +230,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -100.0
 margin_top = -34.0
-text = "Paste"
+text = "Вставить"
 
 [node name="LoadDefaultConfigButton" type="Button" parent="ConfigImportDialog/ImportTextEdit"]
 anchor_left = 1.0
@@ -240,7 +240,7 @@ anchor_bottom = 1.0
 margin_left = -205.0
 margin_top = -34.0
 margin_right = -105.0
-text = "Default"
+text = "По умолчанию"
 
 [node name="InfoFinalAcceptDialog" type="AcceptDialog" parent="."]
 unique_name_in_owner = true

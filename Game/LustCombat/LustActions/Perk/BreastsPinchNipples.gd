@@ -32,7 +32,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "Pinch nipples"
+	return "Сжимать соски"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "Pinch your nipples with great force, forcing them to squirt milk and blind the enemy. Can be done through clothing with weaker effect."

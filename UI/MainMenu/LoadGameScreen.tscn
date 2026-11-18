@@ -47,8 +47,7 @@ margin_bottom = 87.0
 bbcode_enabled = true
 bbcode_text = "Here you can load your previous game
 Keep in mind that during the early development save structure might change a lot and so your previous saves might not work anymore, sorry. Your best bet would be saving inside your cell when you wanna switch versions"
-text = "Here you can load your previous game
-Keep in mind that during the early development save structure might change a lot and so your previous saves might not work anymore, sorry. Your best bet would be saving inside your cell when you wanna switch versions"
+text = "Здесь можно загрузить ваше предыдущее сохранение.\nУчтите, что на ранних этапах разработки структура сохранений может сильно меняться, поэтому старые файлы могут перестать работать, сорри. Лучше всего сохраняться прямо в камере, если планируете переключаться между версиями игры."
 fit_content_height = true
 
 [node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/ScrollVBox"]
@@ -81,7 +80,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 254.0
 margin_bottom = 26.0
-text = "Close"
+text = "Закрыть"
 myShortcutKey = "1"
 
 [node name="DeleteButton" parent="VBoxContainer/GridContainer" instance=ExtResource( 4 )]
@@ -90,7 +89,7 @@ anchor_bottom = 0.0
 margin_left = 258.0
 margin_right = 512.0
 margin_bottom = 26.0
-text = "Delete Save"
+text = "Удалить сохранение"
 myShortcutKey = "2"
 
 [node name="ImportButton" parent="VBoxContainer/GridContainer" instance=ExtResource( 4 )]
@@ -99,7 +98,7 @@ anchor_bottom = 0.0
 margin_left = 516.0
 margin_right = 770.0
 margin_bottom = 26.0
-text = "Import Save"
+text = "Импортировать сохранение"
 myShortcutKey = "3"
 
 [node name="SavesButton" parent="VBoxContainer/GridContainer" instance=ExtResource( 4 )]
@@ -108,7 +107,7 @@ anchor_bottom = 0.0
 margin_left = 774.0
 margin_right = 1027.0
 margin_bottom = 26.0
-text = "Saves folder"
+text = "Папка с сохранениями"
 myShortcutKey = "4"
 
 [node name="ExportSaveDialog" type="FileDialog" parent="."]
@@ -120,7 +119,7 @@ margin_left = -300.0
 margin_top = -200.0
 margin_right = 300.0
 margin_bottom = 200.0
-window_title = "Export Save"
+window_title = "Экспортировать сохранение"
 resizable = true
 access = 2
 filters = PoolStringArray( "*.save ; Save file" )
@@ -134,7 +133,7 @@ margin_left = -300.0
 margin_top = -200.0
 margin_right = 300.0
 margin_bottom = 200.0
-window_title = "Open a File"
+window_title = "Открыть файл"
 resizable = true
 mode = 0
 access = 2
@@ -149,8 +148,8 @@ margin_left = -250.0
 margin_top = -59.5
 margin_right = 250.0
 margin_bottom = 59.5
-window_title = "Save exported"
-dialog_text = "Your save was exported to:"
+window_title = "Экспорт завершен"
+dialog_text = "Ваше сохранение экспортировано в:"
 
 [node name="ExportTextPanelContainer" type="PanelContainer" parent="."]
 unique_name_in_owner = true
@@ -182,26 +181,26 @@ margin_bottom = 117.0
 [node name="Label" type="Label" parent="ExportTextPanelContainer/Control/PanelContainer/VBoxContainer"]
 margin_right = 324.0
 margin_bottom = 20.0
-text = "Save export"
+text = "Экспорт сохранения"
 align = 1
 
 [node name="DoExportAsFileButton" type="Button" parent="ExportTextPanelContainer/Control/PanelContainer/VBoxContainer"]
 margin_top = 24.0
 margin_right = 324.0
 margin_bottom = 50.0
-text = "Export as file"
+text = "Экспортировать как файл"
 
 [node name="DoExportToClipboardButton" type="Button" parent="ExportTextPanelContainer/Control/PanelContainer/VBoxContainer"]
 margin_top = 54.0
 margin_right = 324.0
 margin_bottom = 80.0
-text = "Export to clipboard"
+text = "Экспортировать в буфер обмена"
 
 [node name="DoCloseExportTextButton" type="Button" parent="ExportTextPanelContainer/Control/PanelContainer/VBoxContainer"]
 margin_top = 84.0
 margin_right = 324.0
 margin_bottom = 110.0
-text = "Cancel"
+text = "Отмена"
 
 [node name="ImportSavePanelContainer" type="PanelContainer" parent="."]
 unique_name_in_owner = true
@@ -233,26 +232,26 @@ margin_bottom = 117.0
 unique_name_in_owner = true
 margin_right = 324.0
 margin_bottom = 20.0
-text = "Save import"
+text = "Сохранить импорт"
 align = 1
 
 [node name="DoImportFromFileButton" type="Button" parent="ImportSavePanelContainer/Control/PanelContainer/VBoxContainer"]
 margin_top = 24.0
 margin_right = 324.0
 margin_bottom = 50.0
-text = "Import from file"
+text = "Импорт из файла"
 
 [node name="DoImportFromClipboardButton" type="Button" parent="ImportSavePanelContainer/Control/PanelContainer/VBoxContainer"]
 margin_top = 54.0
 margin_right = 324.0
 margin_bottom = 80.0
-text = "Import from clipboard"
+text = "Импорт из буфера обмена"
 
 [node name="DoCloseImportTextButton" type="Button" parent="ImportSavePanelContainer/Control/PanelContainer/VBoxContainer"]
 margin_top = 84.0
 margin_right = 324.0
 margin_bottom = 110.0
-text = "Cancel"
+text = "Отмена"
 
 [connection signal="visibility_changed" from="." to="." method="_on_LoadGameScreen_visibility_changed"]
 [connection signal="pressedActually" from="VBoxContainer/GridContainer/CloseButton" to="." method="_on_CloseButton_pressed"]

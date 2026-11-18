@@ -11,7 +11,7 @@ script = ExtResource( 1 )
 margin_top = 5.0
 margin_right = 32.0
 margin_bottom = 19.0
-text = "State"
+text = "Состояние"
 
 [node name="OptionButton" type="OptionButton" parent="."]
 margin_left = 36.0
@@ -32,7 +32,7 @@ clip_text = true
 margin_left = 452.0
 margin_right = 536.0
 margin_bottom = 24.0
-text = "From var"
+text = "Из переменной"
 
 [connection signal="item_selected" from="OptionButton" to="." method="_on_OptionButton_item_selected"]
 [connection signal="item_selected" from="VarOptionList" to="." method="_on_VarOptionList_item_selected"]

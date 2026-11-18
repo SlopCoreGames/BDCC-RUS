@@ -47,7 +47,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Set penis size",
+			text = "Установить размер пениса",
 		},
 		{
 			type = "slot",

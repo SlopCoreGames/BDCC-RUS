@@ -14,213 +14,213 @@ func _run():
 	if(state == ""):
 		addCharacter("ferri", ["naked"])
 		playAnimation(StageScene.Duo, "sit", {npc="ferri", npcBodyState={naked=true}})
-		saynn("You enter the cell where Ferri currently rests. You let her stand while you take a seat. She is still naked, cuffed, muzzled and leashed to the pipe.")
+		saynn("Вы входите в камеру, где сейчас отдыхает Ферри. Вы позволяете ей стоять, пока сами усаживаетесь. Она всё ещё голая, в наручниках, с намордником и на привязи у трубы.")
 
-		saynn("[say=pc]Gonna ask you some random things.[/say]")
+		saynn("[say=pc]Сейчас буду задавать тебе всякие разные вопросы.[/say]")
 
-		saynn("[say=ferri]Mew? Like what?[/say]")
+		saynn("[say=ferri]Мяу? В каком смысле?[/say]")
 
-		addButton("Continue", "See what happens next", "ask_next")
+		addButton("Продолжить", "Смотреть, что будет дальше", "ask_next")
 	if(state == "0"):
-		saynn("[say=pc]We might be trying to escape this prison. Or capture it. How do you feel about that?[/say]")
+		saynn("[say=pc]Возможно, мы пытаемся сбежать из этой тюрьмы. Или захватить её. Что ты об этом думаешь?[/say]")
 
-		saynn("[say=ferri]About time! I wanna bite the captain, make him squirm real good~.[/say]")
+		saynn("[say=ferri]Давно пора! Хочу укусить капитана, чтобы он хорошенько извивался~.[/say]")
 
-		saynn("[say=pc]So you would help us?[/say]")
+		saynn("[say=pc]Значит, ты поможешь нам?[/say]")
 
-		saynn("[say=ferri]The way you're currently treating me.. I'm not so sure.. mow..[/say]")
+		saynn("[say=ferri]Судя по тому, как ты со мной сейчас обращаешься... я не так уж уверена... мррр...[/say]")
 
 		addRecButtons()
 	if(state == "1"):
-		saynn("[say=pc]How do you feel about people telling you exactly what to do?[/say]")
+		saynn("[say=pc]Как ты относишься к тому, когда люди говорят тебе, что именно нужно делать?[/say]")
 
-		saynn("[say=ferri]I bite them![/say]")
+		saynn("[say=ferri]Я их кусаю![/say]")
 
-		saynn("[say=pc]Elaborate.[/say]")
+		saynn("[say=pc]Поподробнее.[/say]")
 
-		saynn("[say=ferri]If they reach their hand out, I bite their hand. If they're foolish enough to come very close, I bite their shoulder. If I'm kneeling, I can bite their ankles too~.[/say]")
+		saynn("[say=ferri]Если они протягивают руку — я кусаю за руку. Если они достаточно глупы, чтобы подойти совсем близко — кусаю за плечо. А если я стою на коленях, то могу укусить и за лодыжки~.[/say]")
 
-		saynn("[say=pc]What if you can't bite?[/say]")
+		saynn("[say=pc]А что, если ты не сможешь укусить?[/say]")
 
-		saynn("She shrugs.")
+		saynn("Она пожимает плечами.")
 
-		saynn("[say=ferri]Then.. dunno.. mew.[/say]")
+		saynn("[say=ferri]Тогда... ну не знаю... мяу.[/say]")
 
 		addRecButtons()
 	if(state == "2"):
-		saynn("[say=pc]Do you like bondage gear?[/say]")
+		saynn("[say=pc]Тебе нравится БДСМ-атрибутика?[/say]")
 
-		saynn("[say=ferri]Who told you that?[/say]")
+		saynn("[say=ferri]Кто тебе такое сказал?[/say]")
 
-		saynn("[say=pc]You don't seem to be trying to resist it.[/say]")
+		saynn("[say=pc]Похоже, ты особо и не пытаешься сопротивляться.[/say]")
 
-		saynn("[say=ferri]I'm saving my strength! And no, I don't have a giant pile of bdsm gear stashed in my cell..[/say]")
+		saynn("[say=ferri]Я силы берегу! И нет, у меня в камере не запрятана целая гора БДСМ-шмоток...[/say]")
 
-		saynn("Right.")
+		saynn("Ясно.")
 
 		addRecButtons()
 	if(state == "3"):
-		saynn("[say=pc]Be honest. Do you like being hurt?[/say]")
+		saynn("[say=pc]Будь честной. Тебе нравится, когда тебе причиняют боль?[/say]")
 
-		saynn("[say=ferri]You mean the kind where guards beat me up until I can't stand? No. That's just mean and stupid.[/say]")
+		saynn("[say=ferri]Ты имеешь в виду тот вид, когда охранники избивают меня до полусмерти? Нет. Это просто жестоко и тупо.[/say]")
 
-		saynn("[say=pc]What about the other kind?[/say]")
+		saynn("[say=pc]А как насчет другого вида?[/say]")
 
-		saynn("She looks away for a second.")
+		saynn("Она на секунду отводит взгляд.")
 
-		saynn("[say=ferri]Of course not, obviously. Do I look like a masochist slut?! Mew.[/say]")
+		saynn("[say=ferri]Конечно нет, очевидно же! Я что, похожа на шлюху-мазохистку?! Мяу.[/say]")
 
 		addRecButtons()
 	if(state == "4"):
-		saynn("[say=pc]A dragon and a cat. Interesting combination.[/say]")
+		saynn("[say=pc]Дракон и кошка. Интересное сочетание.[/say]")
 
-		saynn("[say=ferri]Not just any cat.. a sabretooth cat![/say]")
+		saynn("[say=ferri]Да не просто кошка... саблезубая кошка![/say]")
 
-		saynn("Makes sense. There is certainly some lynx in there too maybe, judging from the ear tassels.")
+		saynn("Логично. Судя по кисточкам на ушах, там наверняка есть ещё и капля рыси.")
 
-		saynn("[say=ferri]But yes, I've been unlucky enough to be born as a hybrid.[/say]")
+		saynn("[say=ferri]Но да, мне так не повезло, что я родилась гибридом.[/say]")
 
-		saynn("[say=pc]Why is that bad?[/say]")
+		saynn("[say=pc]А почему это плохо?[/say]")
 
-		saynn("[say=ferri]My genes are all screwed up. Mow.[/say]")
+		saynn("[say=ferri]Мои гены — сплошная чертовщина. Мяу.[/say]")
 
 		addRecButtons()
 	if(state == "5"):
-		saynn("[say=pc]Do you like sex?[/say]")
+		saynn("[say=pc]Тебе нравится секс?[/say]")
 
-		saynn("Ferri laughs.")
+		saynn("Ферри смеётся.")
 
-		saynn("[say=ferri]I'm a red, I like biting people![/say]")
+		saynn("[say=ferri]Я рыжая, и я люблю кусаться![/say]")
 
-		saynn("[say=pc]You can bite someone during sex.[/say]")
+		saynn("[say=pc]Во время секса можно кусаться.[/say]")
 
-		saynn("[say=ferri]Tried it a few times, they all just kept screaming. Maybe I shouldn't have done it during oral. Mew.[/say]")
+		saynn("[say=ferri]Пробовала пару раз, но они только и делали, что орали. Может, не стоило делать это во время минета? Мяу.[/say]")
 
 		addRecButtons()
 	if(state == "6"):
-		saynn("[say=pc]What about milking?[/say]")
+		saynn("[say=pc]А как насчет дойки?[/say]")
 
-		saynn("Ferri's breath catches. Just for a second.")
+		saynn("У Ферри на мгновение перехватывает дыхание.")
 
-		saynn("[say=ferri]..what about it?[/say]")
+		saynn("[say=ferri]..и что с того?[/say]")
 
-		saynn("[say=pc]Do you like it?[/say]")
+		saynn("[say=pc]Тебе нравится?[/say]")
 
-		saynn("[say=ferri]..mmm.. it's very.. exhausting.[/say]")
+		saynn("[say=ferri]..ммм.. это очень.. изматывает.[/say]")
 
-		saynn("[say=pc]But do you like it?[/say]")
+		saynn("[say=pc]Но тебе ведь нравится?[/say]")
 
-		saynn("[say=ferri]Makes your head empty.. no thoughts.. just milking.. mew.[/say]")
+		saynn("[say=ferri]В голове становится пусто.. ни одной мысли.. только дойка.. мяу.[/say]")
 
-		saynn("[say=pc]Is that a yes?[/say]")
+		saynn("[say=pc]Значит, да?[/say]")
 
-		saynn("[say=ferri]Why are you asking?[/say]")
+		saynn("[say=ferri]А почему ты спрашиваешь?[/say]")
 
-		saynn("[say=pc]Reasons.[/say]")
+		saynn("[say=pc]Причины.[/say]")
 
-		saynn("[say=ferri]Pff. Next question then.[/say]")
+		saynn("[say=ferri]Пфф. Тогда следующий вопрос.[/say]")
 
 		addRecButtons()
 	if(state == "7"):
-		saynn("[say=pc]You worked with chemicals? Explosives?[/say]")
+		saynn("[say=pc]Ты работала с химикатами? Со взрывчаткой?[/say]")
 
-		saynn("[say=ferri]How do you know that?[/say]")
+		saynn("[say=ferri]Откуда тебе это известно?[/say]")
 
-		saynn("[say=pc]I'm asking questions here.[/say]")
+		saynn("[say=pc]Я вообще-то задаю вопросы.[/say]")
 
-		saynn("[say=ferri]Are you?[/say]")
+		saynn("[say=ferri]Да неужели?[/say]")
 
-		saynn("[say=pc]Yes.[/say]")
+		saynn("[say=pc]Да.[/say]")
 
-		saynn("[say=ferri]You're cute.[/say]")
+		saynn("[say=ferri]А ты милашка.[/say]")
 
-		saynn("[say=pc]Answer the question.[/say]")
+		saynn("[say=pc]Отвечай на вопрос.[/say]")
 
-		saynn("[say=ferri]Why?[/say]")
+		saynn("[say=ferri]Почему?[/say]")
 
-		saynn("[say=pc]Because otherwise you're not gonna walk out of here.[/say]")
+		saynn("[say=pc]Иначе ты отсюда живой не выйдешь.[/say]")
 
-		saynn("[say=ferri]You're gonna kill me?![/say]")
+		saynn("[say=ferri]Ты что, меня убить решила?![/say]")
 
-		saynn("[say=pc]No.[/say]")
+		saynn("[say=pc]Нет.[/say]")
 
-		saynn("[say=ferri]Phew. I knew that you're too soft for that.[/say]")
+		saynn("[say=ferri]Фух. Я так и знала, что ты слишком мягкотелая для этого.[/say]")
 
-		saynn("[say=pc]Try me.[/say]")
+		saynn("[say=pc]Попробуй.[/say]")
 
-		saynn("[say=ferri]Take off my muzzle then~.[/say]")
+		saynn("[say=ferri]Ну так сними же с меня намордник~.[/say]")
 
-		saynn("[say=pc]No.[/say]")
+		saynn("[say=pc]Нет.[/say]")
 
-		saynn("[say=ferri]Soft~.[/say]")
+		saynn("[say=ferri]Мягкая такая~.[/say]")
 
 		addRecButtons()
 	if(state == "8"):
-		saynn("[say=pc]If I call you a worthless bitch, what would be your first reaction?[/say]")
+		saynn("[say=pc]А если я назову тебя никчемной сучкой, какой будет твоя первая реакция?[/say]")
 
-		saynn("[say=ferri]To bite the living heck out of you![/say]")
+		saynn("[say=ferri]Вцепиться тебе в глотку и перегрызть её![/say]")
 
-		saynn("You take a short pause.")
+		saynn("Вы делаете короткую паузу.")
 
-		saynn("[say=pc]You're a worthless bitch, Ferri.[/say]")
+		saynn("[say=pc]Ты никчемная сучка, Ферри.[/say]")
 
-		saynn("She gasps softly, her lips twitch.")
+		saynn("Она тихо ахает, и её губы подрагивают.")
 
-		saynn("[say=ferri]..don't say that.[/say]")
+		saynn("[say=ferri]...не говори так.[/say]")
 
-		saynn("[say=pc]You're a stupid worthless brat.[/say]")
+		saynn("[say=pc]Ты тупая никчёмная девчонка.[/say]")
 
-		saynn("[say=ferri]Why are you saying that? I'm not.. most of those things I'm not.. mow..[/say]")
+		saynn("[say=ferri]Почему ты так говоришь? Я не... большинство из этого про меня не... ну...[/say]")
 
-		saynn("[say=pc]I'm testing your reaction.[/say]")
+		saynn("[say=pc]Я проверяю твою реакцию.[/say]")
 
-		saynn("[say=ferri]Fuck your testing.. mow..[/say]")
+		saynn("[say=ferri]Да к чёрту твои проверки... ну...[/say]")
 
-		saynn("[say=pc]Relax, I didn't mean any of it.[/say]")
+		saynn("[say=pc]Расслабься, я не это имела в виду.[/say]")
 
-		saynn("[say=ferri]Anyone can be an asshole. Bitch this, slut that, worthless you..[/say]")
+		saynn("[say=ferri]Любой может побыть мудаком. Сучка, шлюха, никчёмная... и всё в таком духе.[/say]")
 
 		addRecButtons()
 	if(state == "9"):
-		saynn("[say=pc]Do you like being treated like a puppy? Collars, leashes, tricks.[/say]")
+		saynn("[say=pc]А тебе нравится, когда с тобой обращаются как с щеночком? Ошейники, поводки, команды.[/say]")
 
-		saynn("[say=ferri]You mean like they already treat us in this shithole? Throw in muzzles and chains into that mix.[/say]")
+		saynn("[say=ferri]Ты имеешь в виду, как с нами уже обращаются в этой дыре? Добавь к этому намордники и цепи, и будет то же самое.[/say]")
 
-		saynn("[say=pc]I mean voluntarily. With someone you trust.[/say]")
+		saynn("[say=pc]Я имею в виду — добровольно. С тем, кому ты доверяешь.[/say]")
 
-		saynn("She is quiet for a long moment.")
+		saynn("Она долго молчит.")
 
-		saynn("[say=ferri]I'm not anyone's pet.[/say]")
+		saynn("[say=ferri]Я не чья-то домашняя зверушка.[/say]")
 
-		saynn("[say=pc]Not what I asked.[/say]")
+		saynn("[say=pc]Не совсем то, о чем я спрашивала.[/say]")
 
-		saynn("[say=ferri]Leave the 'eating cum out of a bowl' part out and I might just agree. And I'm also gonna bite you hard if you try to play fetch with me.[/say]")
+		saynn("[say=ferri]Если уберешь часть про «слизывание спермы из миски», то я, может, и соглашусь. И еще я тебя больно укушу, если попытаешься играть со мной в «апорт».[/say]")
 
 		addRecButtons()
 	if(state == "10"):
-		saynn("[say=pc]Do you like orgasming?[/say]")
+		saynn("[say=pc]Тебе нравится кончать?[/say]")
 
-		saynn("Ferri raises a brow.")
+		saynn("Ферри приподнимает бровь.")
 
-		saynn("[say=ferri]Sure?[/say]")
+		saynn("[say=ferri]Ну конечно?[/say]")
 
-		saynn("[say=pc]I mean like.. a lot.[/say]")
+		saynn("[say=pc]В смысле... очень сильно.[/say]")
 
-		saynn("[say=ferri]You're gonna use that against me? Make me cum until my brain shuts off? Until my pussy can't squirt anymore? Until all my thoughts are replaced with a constant supply of dopamine?[/say]")
+		saynn("[say=ferri]Ты собираешься использовать это против меня? Доводить меня до оргазма, пока мозги не отключатся? Пока киска не перестанет сочиться? Пока все мои мысли не заменятся бесконечным потоком дофамина?[/say]")
 
-		saynn("[say=pc]Right.[/say]")
+		saynn("[say=pc]Понятно.[/say]")
 
-		saynn("[say=ferri]Mrowrl. I'm not answering it.[/say]")
+		saynn("[say=ferri]Мррр... Я не буду на него отвечать.[/say]")
 
-		saynn("[say=pc]What about the opposite? Does getting denied constantly sound hot to you?[/say]")
+		saynn("[say=pc]А как насчет обратного? Тебя, что ли, заводит, когда тебе постоянно отказывают?[/say]")
 
-		saynn("[say=ferri]You're totally gonna use it against me, huff.[/say]")
+		saynn("[say=ferri]Ты же стопудово используешь это против меня, хмф.[/say]")
 
-		saynn("[say=pc]Answer the question.[/say]")
+		saynn("[say=pc]Отвечай на вопрос.[/say]")
 
-		saynn("[say=ferri]Make me![/say]")
+		saynn("[say=ferri]Ну же, попробуй![/say]")
 
-		saynn("What a brat.")
+		saynn("Ну и дрянная девчонка.")
 
 		addRecButtons()
 

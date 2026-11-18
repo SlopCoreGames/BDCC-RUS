@@ -24,12 +24,12 @@ func _onSceneEnd():
 
 func _run():
 	if(state == ""):
-		saynn("Hello. Your name is {pc.name}")
+		saynn("Привет. Твое имя — {pc.name}")
 		
-		saynn("[say=pc]Yes, my name is {pc.name}[/say]")
+		saynn("[say=pc]Да, меня зовут {pc.name}[/say]")
 
-		addButton("Quit", "Stop the scene", "endthescene")
-		addButton("Clear override", "Nya", "clear_override")
+		addButton("Выход", "Остановить сцену", "endthescene")
+		addButton("Сбросить переопределение", "Ня", "clear_override")
 
 func _react(_action: String, _args):
 

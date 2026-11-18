@@ -15,6 +15,6 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Get time formatted",
+			text = "Получить отформатированное время",
 		},
 	]

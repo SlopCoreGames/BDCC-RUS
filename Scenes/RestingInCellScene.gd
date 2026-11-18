@@ -10,39 +10,39 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Sleeping, "sleep")
 		
-		saynn("You lay down on your stiff prisoner bed and let out a tired sigh.")
+		saynn("Ты ложишься на жесткую тюремную койку и устало вздыхаешь.")
 		
-		saynn("What do you wanna do?")
+		saynn("Что будете делать?")
 
-		addButton("Stand up", "No time for resting", "endthescene")
+		addButton("Встать", "Некогда отдыхать", "endthescene")
 
-		addButton("Sleep", "Sleep until the next day and recover your stamina", "gosleep")
+		addButton("Спать", "Спать до следующего дня, чтобы восстановить выносливость", "gosleep")
 
 		var currentTime = GM.main.getTime()
 		for t in [8, 10, 12, 14, 16, 18, 20, 22]:
 			if(currentTime < t*60*60):
-				addButton("Rest %02d:00" % [t], "Wake up when the time becomes %02d:00" % [t], "restuntil", [t])
+				addButton("Отдых до %02d:00" % [t], "Проснуться, когда наступит %02d:00" % [t], "restuntil", [t])
 			else:
-				addDisabledButton("Rest %02d:00" % [t], "Too late for that today")
+				addDisabledButton("Отдых до %02d:00" % [t], "На сегодня уже поздно")
 		
 		if(GM.main.MRH.canRestartMainRoute()):
 			addExtraButtonAt(4, "Reset Main Route", "Reset the main route progress, allowing you to start another route if you want to!", "startReset")
 		
 	if(state == "rested"):
-		saynn("You spend some time in your cell. You feel less tired.")
+		saynn("Ты проводишь некоторое время в камере. Усталость немного отступает.")
 		
-		addButton("Continue", "Time to wake up", "endthescene")
+		addButton("Продолжить", "Пора просыпаться", "endthescene")
 		
 	if(state == "slept"):
 		playAnimation(StageScene.Sleeping, "sleep", {bodyState={naked=true}})
 		
-		saynn("You slept in your cell. It's not the most pleasant experience but you managed to recover your energy.")
+		saynn("Ты поспал в своей камере. Не самое приятное занятие, но тебе удалось восстановить силы.")
 		
-		saynn("You wake up when all the prison lights begin to turn on.")
+		saynn("Ты просыпаешься, когда во всей тюрьме начинают зажигаться огни.")
 		
-		saynn("Welcome to day "+str(GM.main.getDays())+" of your sentence.")
+		saynn("Добро пожаловать в "+str(GM.main.getDays())+" день твоего срока.")
 		
-		addButton("Continue", "Time to wake up", "endthesceneandtriggerevents")
+		addButton("Продолжить", "Пора просыпаться", "endthesceneandtriggerevents")
 		
 		GM.ES.triggerRun(Trigger.WakeUpInCell)
 

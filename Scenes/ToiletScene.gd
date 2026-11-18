@@ -7,34 +7,34 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("You find an empty toilet stall and enter it. Then you sit on the toilet and begin thinking.")
+		saynn("Вы находите пустую кабинку туалета и заходите в неё. Затем вы садитесь на унитаз и погружаетесь в раздумья.")
 		
-		addButton("Fill something", "Maybe you wanna fill one of your items", "fillmenu")
-		addButton("Leave", "Enough thinking", "endthescene")
+		addButton("Наполнить что-нибудь", "Может, вы хотите наполнить один из своих предметов?", "fillmenu")
+		addButton("Уйти", "Хватит раздумий", "endthescene")
 		
 	if(state == "fillmenu"):
-		saynn("How do you wanna fill something?")
+		saynn("Чем именно вы хотите наполнить?")
 		
 		if(GM.pc.getFluidAmount(FluidSource.Pissing) >= 100):
 			if(GM.pc.isWearingPortalPanties()):
-				addDisabledButton("Pee into..", "Your portal panties prevent you from peeing into containers")
+				addDisabledButton("Помочиться в...", "Ваши портальные трусики не позволяют вам мочиться прямо в контейнеры")
 			elif(GM.pc.getInventory().getItemsWithTag(ItemTag.CanPeeInto).size() == 0):
-				addDisabledButton("Pee into..", "You don't have any bottles to pee into")
+				addDisabledButton("Помочиться в...", "У вас нет с собой никаких бутылок, чтобы помочиться в них")
 			else:
-				addButton("Pee into..", "Pee into one of your bottles", "peeintomenu")
+				addButton("Помочиться в...", "Пописать в одну из своих бутылок", "peeintomenu")
 		else:
-			addDisabledButton("Pee into..", "You don't feel like peeing")
+			addDisabledButton("Помочиться в...", "Не особо хочется писать")
 		if(GM.pc.hasEffect(StatusEffect.HasCumInsideAnus) || GM.pc.hasEffect(StatusEffect.HasCumInsideVagina)):
 			if(GM.pc.getInventory().getItemsWithTag(ItemTag.CanForceCumInto).size() == 0):
-				addDisabledButton("Push cum out..", "You don't have any bottles to push cum out into")
+				addDisabledButton("Выдавить сперму...", "У тебя нет бутылок, чтобы выдавливать в них сперму")
 			else:
-				addButton("Push cum out..", "Push cum out of one of your orifices", "pushcummenu")
+				addButton("Выдавить сперму...", "Выдавить сперму из одного из своих отверстий", "pushcummenu")
 		else:
-			addDisabledButton("Push cum out..", "None of your orifices have any cum in them")
-		addButton("Back", "Never mind", "")
+			addDisabledButton("Выдавить сперму...", "В твоих отверстиях нет спермы")
+		addButton("Назад", "Проехали", "")
 
 	if(state == "peeintomenu"):
-		saynn("Pick which container you wanna pee into")
+		saynn("Выбери, в какую емкость хочешь пописать")
 		
 		var items = GM.pc.getInventory().getItemsWithTag(ItemTag.CanPeeInto)
 		
@@ -44,36 +44,36 @@ func _run():
 			else:
 				addButton(item.getStackName(), item.getVisisbleDescription(), "peeinto", [item.getUniqueID()])
 		
-		addButton("Back", "Never mind", "fillmenu")
+		addButton("Назад", "Проехали", "fillmenu")
 	
 	if(state == "peeinto"):
-		saynn("You hold the "+usedItemName+" with your hands just above the toilet and then proceed to carefully pee into it.")
+		saynn("Вы держите "+usedItemName+" руками чуть выше унитаза, а затем осторожно начинаете в него мочиться.")
 		
-		addButton("Continue", "What a relief", "")
+		addButton("Продолжить", "Какое облегчение!", "")
 		
 	if(state == "pushcummenu"):
-		saynn("What orifice do you wanna push cum out of?")
+		saynn("Из какого отверстия ты хочешь выдавить сперму?")
 		
 		if(GM.pc.hasReachableVagina()):
 			if(GM.pc.hasEffect(StatusEffect.HasCumInsideVagina)):
-				addButton("Vagina", "Choose pussy", "pushcumvaginamenu")
+				addButton("Вагина", "Выбрать киску", "pushcumvaginamenu")
 			else:
-				addDisabledButton("Vagina", "You don't have any cum inside your pussy")
+				addDisabledButton("Вагина", "В твоей киске нет спермы")
 		else:
-			addDisabledButton("Vagina", "You don't have a reachable pussy")
+			addDisabledButton("Вагина", "Твоя киска находится вне зоны досягаемости")
 		
 		if(GM.pc.hasReachableAnus()):
 			if(GM.pc.hasEffect(StatusEffect.HasCumInsideAnus)):
-				addButton("Anus", "Choose anus", "pushcumanusmenu")
+				addButton("В анус", "Выбрать анус", "pushcumanusmenu")
 			else:
-				addDisabledButton("Anus", "You don't have any cum inside your anus")
+				addDisabledButton("В анус", "В твоем анусе нет спермы")
 		else:
-			addDisabledButton("Anus", "Your anus is not reachable")
+			addDisabledButton("В анус", "Твой анус недоступен")
 			
-		addButton("Back", "Never mind", "fillmenu")
+		addButton("Назад", "Проехали", "fillmenu")
 		
 	if(state in ["pushcumvaginamenu", "pushcumanusmenu"]):
-		saynn("Pick which container you wanna use")
+		saynn("Выбери, какой контейнер хочешь использовать")
 		
 		var items = GM.pc.getInventory().getItemsWithTag(ItemTag.CanForceCumInto)
 		
@@ -83,21 +83,21 @@ func _run():
 			else:
 				addButton(item.getStackName(), item.getVisisbleDescription(), state+"do", [item.getUniqueID()])
 		
-		addButton("Back", "Never mind", "fillmenu")
+		addButton("Назад", "Проехали", "fillmenu")
 		
 	if(state == "pushcumvaginamenudo"):
-		saynn("You hold the "+usedItemName+" near your pussy patiently and begin to try and force out all the fluids that are inside you.")
+		saynn("Вы держите "+usedItemName+" терпеливо прижмись к своей киске и попытайся выдавить из себя всю жидкость, что в тебе есть.")
 		
-		saynn("It's a slow process so you only manage to squeeze out so much out of you..")
+		saynn("Это медленный процесс, поэтому тебе удается выдавить лишь немного..")
 		
-		addButton("Continue", "What a relief", "")
+		addButton("Продолжить", "Какое облегчение!", "")
 		
 	if(state == "pushcumanusmenudo"):
-		saynn("You hold the "+usedItemName+" near your anus patiently and begin to try and force out all the fluids that are inside you.")
+		saynn("Вы держите "+usedItemName+" терпеливо прижмись к своему анусу и попытайся выдавить из себя всю жидкость, что в тебе есть.")
 		
-		saynn("It's a slow process so you only manage to squeeze out so much out of you..")
+		saynn("Это медленный процесс, поэтому тебе удается выдавить лишь немного..")
 		
-		addButton("Continue", "What a relief", "")
+		addButton("Продолжить", "Какое облегчение!", "")
 		
 func _react(_action: String, _args):
 	if(_action == "peeinto"):

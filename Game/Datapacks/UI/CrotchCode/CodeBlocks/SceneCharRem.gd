@@ -26,7 +26,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Remove character",
+			text = "Удалить персонажа",
 		},
 		{
 			type = "slot",

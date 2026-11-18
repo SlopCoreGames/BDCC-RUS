@@ -15,7 +15,7 @@ func getKeepScore() -> float:
 func getText():
 	if(lastText != ""):
 		return lastText
-	return "{main.name} is trying to remove restraints.."
+	return "{main.name} пытается освободиться от пут.."
 
 func getActions() -> Array:
 	return [

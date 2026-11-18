@@ -43,7 +43,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Has items with tag",
+			text = "Есть предметы с тегом",
 		},
 		{
 			type = "slot",

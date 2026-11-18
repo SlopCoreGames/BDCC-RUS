@@ -44,7 +44,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Remove items with tag",
+			text = "Удалить предметы с тегом",
 		},
 		{
 			type = "slot",

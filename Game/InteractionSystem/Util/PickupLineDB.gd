@@ -3,7 +3,7 @@ class_name PickupLineDB
 
 const DB = [
 	{
-		text = "Are you a magician? Because every time I look at you, ___.",
+		text = "Ты случайно не фокусник? Потому что каждый раз, когда я смотрю на тебя, ___.",
 		correct = [
 			"everyone else disappears",
 		],
@@ -14,7 +14,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you made of copper and tellurium? Because ___.",
+		text = "Ты сделана из меди и теллура? Потому что ___.",
 		correct = [
 			"you're Cu-Te",
 		],
@@ -25,7 +25,7 @@ const DB = [
 		],
 	},
 	{
-		text = "If you were a vegetable, you’d be ___.",
+		text = "Если бы ты была овощем, то была бы ___.",
 		correct = [
 			"a cute-cumber",
 		],
@@ -36,7 +36,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Do you have a map? Because ___.",
+		text = "У тебя есть карта? Потому что ___.",
 		correct = [
 			"I keep getting lost in your eyes",
 		],
@@ -47,7 +47,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Is your name Wi-Fi? Because ___.",
+		text = "Твое имя — Wi-Fi? Потому что ___.",
 		correct = [
 			"I feel a connection",
 		],
@@ -58,7 +58,7 @@ const DB = [
 		],
 	},
 	{
-		text = "I must be a snowflake, because ___.",
+		text = "Должно быть, я снежинка, потому что ___.",
 		correct = [
 			"I've fallen for you",
 		],
@@ -69,7 +69,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Your hand looks heavy. ___",
+		text = "Твоя рука кажется тяжелой. ___",
 		correct = [
 			"Can I hold it for you?",
 		],
@@ -80,7 +80,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a parking ticket? Because ___.",
+		text = "Ты случайно не штраф за парковку? Потому что ___.",
 		correct = [
 			"you've got FINE written all over you",
 		],
@@ -91,7 +91,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Is your dad a boxer? Because ___.",
+		text = "Твой папа боксер? Потому что ___.",
 		correct = [
 			"you’re a knockout",
 		],
@@ -102,7 +102,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Do you believe in love at first sight, or should I ___",
+		text = "Ты веришь в любовь с первого взгляда, или мне нужно ___",
 		correct = [
 			"walk by again?",
 		],
@@ -113,7 +113,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a campfire? Because ___.",
+		text = "Ты что, костер? Потому что ___.",
 		correct = [
 			"you’re hot and I want s’more",
 		],
@@ -124,7 +124,7 @@ const DB = [
 		],
 	},
 	{
-		text = "If I were a cat, I’d spend all 9 lives ___.",
+		text = "Будь я котом, я бы все 9 жизней провел(а) ___.",
 		correct = [
 			"loving you",
 		],
@@ -135,7 +135,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you Smuugle? Because ___.",
+		text = "Ты что, Смугл? Потому что ___.",
 		correct = [
 			"you’ve got everything I’m searching for",
 		],
@@ -146,7 +146,7 @@ const DB = [
 		],
 	},
 	{
-		text = "If beauty were time, you’d be ___.",
+		text = "Если бы красота была временем, ты бы был(а) ___.",
 		correct = [
 			"eternity",
 		],
@@ -157,7 +157,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a loan from a bank? Because ___.",
+		text = "Ты что, банковский кредит? Потому что ___.",
 		correct = [
 			"you have my interest",
 		],
@@ -168,7 +168,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you an alien? Because ___.",
+		text = "Ты что, пришелец? Потому что ___.",
 		correct = [
 			"you just abducted my heart",
 		],
@@ -179,7 +179,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you the sun? Because ___.",
+		text = "Ты что, солнце? Потому что ___.",
 		correct = [
 			"you brighten my day",
 		],
@@ -190,7 +190,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Do you have a Band-Aid? Because ___.",
+		text = "У тебя есть пластырь? Потому что ___.",
 		correct = [
 			"I just scraped my knee falling for you",
 		],
@@ -201,7 +201,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a keyboard? Because ___.",
+		text = "Ты что, клавиатура? Потому что ___.",
 		correct = [
 			"you’re just my type",
 		],
@@ -212,7 +212,7 @@ const DB = [
 		],
 	},
 	{
-		text = "If you were a triangle, you’d be ___.",
+		text = "Будь ты треугольником, ты бы был(а) ___.",
 		correct = [
 			"acute one",
 		],
@@ -223,7 +223,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a star? Because ___.",
+		text = "Ты звезда? Потому что ___.",
 		correct = [
 			"your beauty lights up the night",
 		],
@@ -234,7 +234,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a charger? Because ___.",
+		text = "Ты зарядное устройство? Потому что ___.",
 		correct = [
 			"without you, I’d die",
 		],
@@ -245,7 +245,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you made of antimatter? Because ___.",
+		text = "Ты из антиматерии? Потому что ___.",
 		correct = [
 			"you annihilate my loneliness",
 		],
@@ -256,7 +256,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you from another galaxy? Because ___.",
+		text = "Ты из другой галактики? Потому что ___.",
 		correct = [
 			"my world isn’t the same since you arrived",
 		],
@@ -267,7 +267,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a black hole? Because ___.",
+		text = "Ты черная дыра? Потому что ___.",
 		correct = [
 			"I’m drawn to you irresistibly",
 		],
@@ -278,7 +278,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you warp drive? Because ___.",
+		text = "Ты варп-двигатель? Потому что ___.",
 		correct = [
 			"you make my heart go faster than light",
 		],
@@ -289,7 +289,7 @@ const DB = [
 		],
 	},
 	{
-		text = "If I had a star for every time I thought of you, ___.",
+		text = "Если бы за каждую мысль о тебе у меня была звезда, то ___.",
 		correct = [
 			"I’d have a galaxy",
 		],
@@ -300,7 +300,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a puzzle piece? Because ___.",
+		text = "Ты кусочек пазла? Потому что ___.",
 		correct = [
 			"you complete me",
 		],
@@ -311,7 +311,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a robot? Because ___.",
+		text = "Ты робот? Потому что ___.",
 		correct = [
 			"you compute perfectly with me",
 		],
@@ -322,7 +322,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you an AI? Because ___.",
+		text = "Ты ИИ? Потому что ___.",
 		correct = [
 			"you stole my h-art",
 		],
@@ -333,7 +333,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you space-time? Because ___.",
+		text = "Ты что, пространство-время? Потому что ___.",
 		correct = [
 			"you bend my reality",
 		],
@@ -344,7 +344,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a safe word? Because ___.",
+		text = "Ты что, стоп-слово? Потому что ___.",
 		correct = [
 			"you make me want to push all my limits",
 		],
@@ -355,7 +355,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a rope? Because ___.",
+		text = "Ты что, верёвка? Потому что ___.",
 		correct = [
 			"I feel tied up with you",
 		],
@@ -366,7 +366,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you into pain? Because ___.",
+		text = "Тебе нравится боль? Потому что ___.",
 		correct = [
 			"I can make you feel good",
 		],
@@ -377,7 +377,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a dungeon? Because ___.",
+		text = "Ты что, данж? Потому что ___.",
 		correct = [
 			"I want to explore every inch",
 		],
@@ -388,7 +388,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a brat? Because ___.",
+		text = "Ты что, капризная сучка? Потому что ___.",
 		correct = [
 			"I wanna tame you",
 		],
@@ -399,7 +399,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a paddle? Because ___.",
+		text = "Ты что, паддл? Потому что ___.",
 		correct = [
 			"you've left your impact on me",
 		],
@@ -410,7 +410,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a collar? Because ___.",
+		text = "Ты что, ошейник? Потому что ___.",
 		correct = [
 			"you fit me so perfectly",
 		],
@@ -421,7 +421,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a dom? Because ___.",
+		text = "Ты что, доминант? Потому что ___.",
 		correct = [
 			"I'm into Big Doms Snuggling Me",
 		],
@@ -432,7 +432,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a vibrator on max? Because ___.",
+		text = "Ты что, вибратор на максимуме? Потому что ___.",
 		correct = [
 			"I wanna come with you",
 		],
@@ -443,7 +443,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a dictionary? Because ___.",
+		text = "Ты что, словарь? Потому что ___.",
 		correct = [
 			"you add meaning to my life",
 		],
@@ -454,7 +454,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a camera? Because ___.",
+		text = "Ты что, фотоаппарат? Потому что ___.",
 		correct = [
 			"I wanna smile looking at you",
 		],
@@ -465,7 +465,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a light bulb? Because ___.",
+		text = "Ты что, лампочка? Потому что ___.",
 		correct = [
 			"you brighten up my world",
 		],
@@ -476,7 +476,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you a painter? Because ___.",
+		text = "Ты что, художник? Потому что ___.",
 		correct = [
 			"you are drawing me in",
 		],
@@ -487,7 +487,7 @@ const DB = [
 		],
 	},
 	{
-		text = "Are you chocolate? Because ___.",
+		text = "Ты что, шоколадка? Потому что ___.",
 		correct = [
 			"you make life sweeter",
 		],

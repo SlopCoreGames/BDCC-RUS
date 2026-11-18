@@ -12,217 +12,217 @@ func _run():
 		addCharacter("ferri", ["naked"])
 		aimCameraAndSetLocName("hideout_breakroom")
 		playAnimation(StageScene.Grope, "grope", {pc="ferri", npc="pc", bodyState={naked=true, hard=true}})
-		saynn("You enter the cell and find Ferri. She is naked, cuffed and muzzled, her collar leashed to one of the pipes.")
+		saynn("Ты входишь в камеру и видишь Ферри. Она голая, в наручниках и наморднике, а её ошейник привязан поводком к одной из труб.")
 
-		saynn("She is visibly upset, her tail flicking behind her.")
+		saynn("Она заметно расстроена, её хвост нервно дёргается.")
 
-		saynn("As you step closer, she tries to kick you even. But the restraints throw her off balance, making her stumble instead.")
+		saynn("Когда ты подходишь ближе, она пытается пнуть тебя, но из-за пут теряет равновесие и вместо удара спотыкается.")
 
 		saynn("[say=pc]"+str(ch1("We're going to have some fun, you and I.", "If you're gonna resist, I'm gonna make you regret it.", "Look at you. Naked. Chained. Muzzled like the animal you are."))+"[/say]")
 
-		saynn("[say=ferri]When I get out of here, I will enjoy sinking my fangs into your neck![/say]")
+		saynn("[say=ferri]Когда я выберусь отсюда, я с удовольствием вонжу свои клыки в твою шею![/say]")
 
-		saynn("You reach out and catch one of her horns. Her whole body stiffens.")
+		saynn("Ты протягиваешь руку и хватаешь её за один из рогов. Всё её тело мгновенно напрягается.")
 
-		saynn("[say=ferri]Nnh.. quit it![/say]")
+		saynn("[say=ferri]Ннх... прекрати![/say]")
 
-		saynn("Your other hand slides up along the curves of her hips and belly, palm brushing against her fur for a bit until it finds her breast. Warm and soft. You make it bounce a bit, there is quite a bit of weight to it.")
+		saynn("Твоя другая рука скользит вверх по изгибам её бёдер и живота, ладонь на мгновение задерживается на меху, пока не находит её грудь. Теплая и мягкая. Ты слегка подбрасываешь её; она ощутимо тяжёлая.")
 
-		saynn("[say=ferri]Get your hand off my..[/say]")
+		saynn("[say=ferri]Убери руку с моей...[/say]")
 
-		saynn("Now you start kneading her chest instead, your hand cupping her breast and squeezing it, forcing a soft moan out of the dracat.")
+		saynn("Теперь ты начинаешь разминать её грудь, обхватывая ладонью и сжимая её, заставляя дракатку издать тихий стон.")
 
-		saynn("[say=ferri]Mew..[/say]")
+		saynn("[say=ferri]Мяу..[/say]")
 
-		saynn("As you play with her chest, her nipples start getting visibly stiffer.")
+		saynn("Пока ты играешь с её грудью, её соски становятся заметно тверже.")
 
 		saynn("[say=pc]"+str(ch1("Your body doesn't seem to mind. Look at those cute nips.", "Look how fast those nipples perk up. What a slut.", "Pathetic. Getting turned on this quick."))+"[/say]")
 
-		saynn("You pull your hands away and look at her reaction. She takes some time to recover..")
+		saynn("Ты убираешь руки и наблюдаешь за её реакцией. Ей требуется некоторое время, чтобы прийти в себя.")
 
-		saynn("[say=ferri]Huff. I will bite you.[/say]")
+		saynn("[say=ferri]Пфф! Ну всё, я тебя укушу![/say]")
 
-		saynn("Her eyes are quick to regain that rebellious spark.")
+		saynn("В её глазах быстро вновь вспыхивает бунтарский огонек.")
 
 		saynn("[say=pc]"+str(ch1("Asking for more, I see. Cute.", "Try to bite me and you will be biting concrete next.", "You're just a subby slut and nothing else, admit it."))+"[/say]")
 
-		addButton("Continue", "See what happens next", "do_grope_more")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_grope_more")
 	if(state == "do_grope_more"):
 		playAnimation(StageScene.BreastGroping, "grope", {pc="pc", npc="ferri", npcBodyState={naked=true, hard=true}})
-		saynn("You bring Ferri down to her knees by tugging on her horns and then position yourself behind her, both of your hands landing on her tits.")
+		saynn("Потянув её за рога, ты заставляешь Ферри опуститься на колени, а затем встаешь сзади, положив обе руки ей на грудь.")
 
-		saynn("[say=ferri]Grr-![/say]")
+		saynn("[say=ferri]Ррр-![/say]")
 
-		saynn("She snaps her teeth at you.. but that's the best she can do with that muzzle on.")
+		saynn("Она клацает на тебя зубами... но с надетым намордником это всё, на что она способна.")
 
-		saynn("Your hands squeeze both of her breasts and proceed to knead them, squeezing tightly and then releasing multiple times.")
+		saynn("Твои ладони сжимают обе её груди; ты начинаешь разминать их, то сильно сдавливая, то отпуская, и так снова и снова.")
 
-		saynn("[say=ferri]Mmhh..[/say]")
+		saynn("[say=ferri]Мммхх..[/say]")
 
 		saynn("[say=pc]"+str(ch1("Still want to bite me, huh~? Now where is that milk.", "Brats like you are easy to handle. Let's see if I can bully these tits into giving me something.", "Why are you acting like a dog if you're clearly a cow."))+"[/say]")
 
-		saynn("Your fingers dig into the soft flesh, massaging and caressing. Each squeeze pushes her perky tits together.. before you let them bounce back. Ferri's back arches against your chest, her tail keeps thrashing.. until you just trap it under your leg.")
+		saynn("Твои пальцы впиваются в мягкую плоть, массируя и лаская её. Каждое сжатие сталкивает её упругие сиськи вместе, прежде чем ты позволяешь им снова спружинить. Спина Ферри выгибается навстречу твоей груди, а хвост продолжает неистово молотить... пока ты не прижимаешь его своей ногой.")
 
-		saynn("[say=ferri]Mmf.. nghh..[/say]")
+		saynn("[say=ferri]Ммф.. нххх..[/say]")
 
-		saynn("You roll her nipples between pairs of your fingers, playing with her hard little buds that have clearly gotten quite sensitive. You switch between squeezing, pinching, twisting and pulling on them..")
+		saynn("Ты перекатываешь её соски между пальцами, играя с её маленькими твердыми бугорками, которые явно стали очень чувствительными. Ты то сжимаешь, то щипаешь, то крутишь и тянешь их...")
 
-		saynn("Ferri jerks against you, a muffled moan escaping her.")
+		saynn("Ферри дергается в твоих руках, из её горла вырывается приглушенный стон.")
 
 		saynn("[say=pc]"+str(ch1("That's it. Let me hear you, cutie.", "Melting already? I haven't even started.", "These slutty sounds tell me everything."))+"[/say]")
 
-		saynn("Your palms cup the undersides of her breasts and lift them up.. before letting them drop and bounce up again. The dracat's squirming becomes more prominent, more and more cute noises escaping her.")
+		saynn("Твои ладони обхватывают грудь снизу, приподнимая её... а затем позволяя ей упасть и снова подпрыгнуть. Судорожные движения дракатки становятся всё заметнее, а из неё всё чаще вырываются милые звуки.")
 
-		saynn("One of your hands decides to focus on her left nipple, pinching and rubbing it.")
+		saynn("Одна твоя рука решает сосредоточиться на её левом соске, щипая и потирая его.")
 
-		saynn("[say=ferri]Nnngh..[/say]")
+		saynn("[say=ferri]Нннх..[/say]")
 
-		saynn("Her whole body shudders. And then..")
+		saynn("Всё её тело содрогается. А затем...")
 
-		saynn("A bead appears on the nipple's tip. Of a white color. It traces a slow path down the curve of her breast. You catch and taste it. It's milk.")
+		saynn("На кончике соска появляется капля. Белого цвета. Она медленно стекает по изгибу её груди. Ты ловишь её и пробуешь на вкус. Это молоко.")
 
 		saynn("[say=pc]"+str(ch1("There we go.. there's the good stuff.", "Well, well. What do we have here?", "Look at that. You really are a cow."))+"[/say]")
 
-		saynn("Ferri's eyes go wide. Your other hand pinches the right nipple too.. and sure enough.. a thin stream of that same fluid spawns at its tip.")
+		saynn("Глаза Ферри расширяются. Твоя вторая рука тоже щипает правый сосок... и действительно... на его кончике пробивается тонкая струйка той же жидкости.")
 
-		saynn("[say=ferri]M-mew..[/say]")
+		saynn("[say=ferri]М-мяу..[/say]")
 
-		saynn("You squeeze both of her breasts again.. harder this time. And this makes both of her nips squirt! And so you keep going, pressing and releasing, gently milking her. You see lots of little thin, white arcs of milk that catch the dim light.")
+		saynn("Ты снова сжимаешь обе её груди... на этот раз сильнее. И от этого оба соска брызжут! Ты продолжаешь в том же духе, то нажимая, то отпуская, нежно доя её. Ты видишь множество тонких белых дуг молока, ловящих тусклый свет.")
 
 		saynn("[say=pc]"+str(ch1("Good girl. Now let's see how much you can give me.", "I want more. All of it. Hm.", "I'm curious if I can make this room into your personal milking stall now."))+"[/say]")
 
-		saynn("You look around. Yeah, there is a perfect pipe here for what you want to do.")
+		saynn("Ты оглядываешься по сторонам. Да, здесь есть идеальная труба для того, что ты задумал.")
 
-		addButton("Continue", "See what happens next", "get_ferri_into_stall")
+		addButton("Продолжить", "Смотреть, что будет дальше", "get_ferri_into_stall")
 	if(state == "get_ferri_into_stall"):
 		playAnimation(StageScene.MilkingStallDuo, "milk", {pc="ferri", npc="pc", bodyState={naked=true, hard=true}})
-		saynn("You step out for a second to ask if anyone in your team has any big fluid containers. The best one seems to be a plain metal bucket. It will do.")
+		saynn("Ты выходишь на секунду, чтобы спросить у своей команды, нет ли у кого-нибудь большой емкости для жидкости. Лучшим вариантом оказывается обычное металлическое ведро. Сойдет.")
 
-		saynn("When you return with the bucket, Ferri is back to looking mean.. but the blushing cheeks give her away.")
+		saynn("Когда ты возвращаешься с ведром, Ферри снова выглядит сердитой... но раскрасневшиеся щеки выдают её с головой.")
 
-		saynn("[say=ferri]A bucket?[/say]")
+		saynn("[say=ferri]Ведро?[/say]")
 
 		saynn("[say=pc]"+str(ch1("Yes, you know why I need it.", "To collect your milk, don't be dumb, slut.", "Why is a cow still talking? I will have to fix that."))+"[/say]")
 
-		saynn("You grab Ferri and cuff her paws to one of the pipes that is roughly at your waist height. This makes the dracat bend forward, her butt sticking out while her breasts are now dangling beneath her, still looking heavy.")
+		saynn("Ты хватаешь Ферри и пристегиваешь её лапы наручниками к одной из труб примерно на уровне твоего пояса. Это заставляет дракату наклониться вперед: её задница торчит назад, а грудь теперь свисает вниз, всё такая же тяжелая.")
 
-		saynn("[say=ferri]Hey.. I'm not a cow..[/say]")
+		saynn("[say=ferri]Эй... я тебе не корова...[/say]")
 
-		saynn("You don't answer and just place the bucket beneath her chest. Then you crouch beside her. From this angle, her cyan pussy slit is looking quite wet, all the juices have given her fluffy crotch area a darker tone. You slide your hand between her legs and rub her slit, caressing her clit and spreading her folds a bit.")
+		saynn("Ты не отвечаешь и просто ставишь ведро под её грудь. Затем ты приседаешь рядом с ней. С этого ракурса её голубая щель выглядит совсем мокрой — от всех соков пушистая зона промежности потемнела. Ты просовываешь руку между её ног и трешь щель, лаская клитор и слегка раздвигая складки.")
 
-		saynn("[say=ferri]Ah..[/say]")
+		saynn("[say=ferri]Ах...[/say]")
 
 		saynn("[say=pc]"+str(ch1("Not a cow? But look how wet you've gotten after milking.", "You're soaked down there. You are a slutty milky cow.", "Shut up, you're dripping like a broken faucet. Gonna milk you hard, cow."))+"[/say]")
 
-		saynn("After teasing her slit, your hands move to her chest. You cup her dangling breasts.. and squeeze. Some milk dribbles out, lonely drops hitting the bottom of the metal bucket with a ding.")
+		saynn("После того как ты поразвлекался с её щелью, твои руки перемещаются к груди. Ты обхватываешь её свисающие груди... и сжимаешь. Немного молока вытекает наружу, и одинокие капли с тихим звоном ударяются о дно металлического ведра.")
 
-		saynn("[say=ferri]..huff.. m-mow..[/say]")
+		saynn("[say=ferri]...хафф... м-муу...[/say]")
 
-		saynn("And so you settle into a rhythm. Squeeze. Release. Squeeze. Release. Each time you put pressure on her breasts, you draw out more and more of that sweet white fluid that always finds its way into the fluid container below.")
+		saynn("И вот ты входишь в ритм. Сжать. Отпустить. Сжать. Отпустить. С каждым нажатием на её грудь ты выжимаешь всё больше и больше этой сладкой белой жидкости, которая неизменно стекает в сосуд под ней.")
 
-		saynn("Her legs shift, her thighs pressing together.. rubbing against each other. Her breath hitches. You can see something building in her.. the way her hips start to rock, the way her tail quivers.")
+		saynn("Её ноги дёргаются, бёдра плотно прижимаются друг к другу, потираясь. Дыхание сбивается. Ты видишь, как внутри неё всё нарастает... по тому, как начинают двигаться её бёдра и как дрожит хвост.")
 
-		saynn("[say=ferri]M-mmf.. something.. something is happening..[/say]")
+		saynn("[say=ferri]М-ммф... что-то... что-то происходит...[/say]")
 
-		saynn("She is close. Already.")
+		saynn("Она уже на пределе.")
 
-		saynn("And so..")
+		saynn("И вот...")
 
-		saynn("You suddenly stop.")
+		saynn("Ты внезапно останавливаешься.")
 
-		saynn("Your hands leave her breasts entirely. Ferri is quick to notice it, her eyes needy.")
+		saynn("Твои руки полностью покидают её грудь. Ферри тут же замечает это, её взгляд становится жадным и просящим.")
 
-		saynn("[say=ferri]Wha.. why did you.. mow..[/say]")
+		saynn("[say=ferri]Что... почему ты... м-м...[/say]")
 
 		saynn("[say=pc]"+str(ch1("Not yet, cow. You don't get to cum that easily.", "Did I say you could cum? No.", "Oh no. You thought I'd let you? How cute."))+"[/say]")
 
-		saynn("Ferri whines through the muzzle, her tail lashing, her hips keep twitching.")
+		saynn("Ферри скулит сквозь намордник, её хвост хлещет из стороны в сторону, а бёдра продолжают подёргиваться.")
 
-		saynn("[say=ferri]Meanie..[/say]")
+		saynn("[say=ferri]Вреднюга...[/say]")
 
-		saynn("You laugh and return your hands to her chest, resuming the milking. Her body is quick to respond again, the milk starts flowing, her breathing becoming deep.")
+		saynn("Ты смеешься и снова прижимаешь руки к её груди, возобновляя дойку. Её тело тут же откликается: молоко начинает течь, а дыхание становится глубоким.")
 
-		saynn("[say=ferri]Ah.. ah..[/say]")
+		saynn("[say=ferri]Ах.. ах..[/say]")
 
-		saynn("Each time you pinch her nipple, she squirms a little, her eyes losing focus gradually.")
+		saynn("Каждый раз, когда ты щипаешь её сосок, она слегка ерзает, а её взгляд постепенно теряет фокус.")
 
-		saynn("You feel her getting tense again, her pussy dripping juices onto the floor. And so.. you stop again.")
+		saynn("Ты чувствуешь, как она снова напрягается, а её киска начинает сочиться соком прямо на пол. И тогда... ты снова останавливаешься.")
 
-		saynn("[say=ferri]Nngh! Y-you're an asshole..[/say]")
+		saynn("[say=ferri]Ннгх! Т-ты козел..[/say]")
 
-		saynn("She tries to kick you but the cuffs make it very awkward. Her claws scrape against the pipe as her lust gets ignored, her arousal fading. A frustrated growl leaves her maw.")
+		saynn("Она пытается пнуть тебя, но из-за наручников это получается неуклюже. Её когти скребут по трубе, пока её похоть игнорируют, а возбуждение угасает. Из её пасти вырывается разочарованное рычание.")
 
 		saynn("[say=pc]"+str(ch1("Beg me.", "You want to cum? Then beg like the cow you are.", "Say please. Maybe I'll let you. Maybe."))+"[/say]")
 
-		saynn("[say=ferri]Please.. I wanna cum..[/say]")
+		saynn("[say=ferri]Пожалуйста.. я хочу кончить..[/say]")
 
-		saynn("You hear that and return to milking, squeezing her tits. Your fingers play with her nips more, rolling and tugging on them. The milk arcs into the bucket in many thin streams, raising the fluid level to about half.")
+		saynn("Услышав это, ты возвращаешься к дойке, сжимая её титы. Твои пальцы всё больше играют с сосками, перекатывая и потягивая их. Молоко струится в ведро тонкими струйками, поднимая уровень жидкости примерно до половины.")
 
 		saynn("[say=ferri]M.. h-..[/say]")
 
-		saynn("She starts holding her moans now, her maw closed shut. But it's easy to tell, her hips start grinding against nothing, her eyes closing, breathing gets louder.")
+		saynn("Теперь она начинает сдерживать стоны, плотно сжав пасть. Но это легко заметить: её бедра начинают бесцельно двигаться, глаза закрываются, а дыхание становится всё громче.")
 
-		saynn("You don't let her trick you. You wait until the last moment and stop before she gets to her peak. Ferri instantly lets out a frustrated noise.")
+		saynn("Ты не даешь ей обмануть себя. Ты ждешь до последнего момента и останавливаешься прямо перед тем, как она достигнет пика. Ферри тут же издает разочарованный звук.")
 
-		saynn("[say=ferri]F-fuck you..[/say]")
+		saynn("[say=ferri]Да пошел ты..[/say]")
 
-		saynn("You just smirk and idly caress her breasts, keeping her on the edge.")
+		saynn("Ты лишь ухмыляешься и лениво ласкаешь её грудь, удерживая её на самом краю.")
 
-		saynn("[say=ferri]Huff.. M-mow.. Mow.. Please let me cum.. Please. I really wanna cum..[/say]")
+		saynn("[say=ferri]Хафф.. П-пожалуйста.. Пожалуйста, дай мне кончить.. Ну пожалуйста. Я так хочу кончить..[/say]")
 
-		saynn("Her tone switches so fast. You ignore her pleading, letting her cool down.")
+		saynn("Её тон меняется мгновенно. Ты игнорируешь её мольбы, давая ей немного остыть.")
 
-		saynn("But you do notice something. It's her tail. It's trying to sneakily rub her pussy slit, out of view.")
+		saynn("Но ты замечаешь кое-что. Её хвост. Он пытается незаметно тереться о её киску, скрытый от глаз.")
 
-		saynn("[say=pc]I see that.[/say]")
+		saynn("[say=pc]Я всё вижу.[/say]")
 
-		saynn("You yank on that tail and smack Ferri's ass hard, leaving a glowing hand print.")
+		saynn("Ты резко дергаешь её за хвост и с силой шлепаешь Ферри по заднице, оставляя пылающий след от ладони.")
 
-		saynn("[say=ferri]Agh.. so mean..[/say]")
+		saynn("[say=ferri]Ах.. какой же ты злюка..[/say]")
 
-		saynn("When she calms down, you resume the milking. Ferri's moans begin to sound desperate, it's like she knows. But she still has some hope. She doesn't dare to cheat anymore.")
+		saynn("Когда она успокаивается, ты возобновляешь дойку. Стоны Ферри становятся отчаянными — кажется, она всё поняла. Но надежда в ней ещё теплится. Она больше не смеет жульничать.")
 
-		saynn("The milk still flows, her tits are producing nicely, areolas spawning lots of little thin fountains as you knead the heavy orbs. The bucket is close to being full.")
+		saynn("Молоко всё так же течет, её грудь отлично снабжается; ареолы источают множество тонких струек, пока ты разминаешь тяжелые шары. Ведро почти полно.")
 
-		saynn("[say=ferri]Mm.. moo.. hh..[/say]")
+		saynn("[say=ferri]Мм.. муу.. хх..[/say]")
 
-		saynn("She is making cow noises. That's cute.")
+		saynn("Она издает звуки коровы. Это мило.")
 
-		saynn("Ferri is slowly approaching the edge again.")
+		saynn("Ферри снова медленно приближается к краю.")
 
-		saynn("[say=ferri]Please.. I will moo for you.. I will make more milk.. I will do anything.. just.. just let me cum.. once.. mow.. please.. please![/say]")
+		saynn("[say=ferri]Пожалуйста.. я буду мычать для тебя.. я буду давать больше молока.. я сделаю всё что угодно.. только.. только дай мне кончить.. один разочек.. муу.. пожалуйста.. пожалуйста![/say]")
 
-		saynn("Her voice is broken now. Her thighs are soaked. Tears begin running down her glowing cheeks.")
+		saynn("Ее голос сорван. Бедра насквозь промокли. По сияющим щекам начинают катиться слезы.")
 
 		saynn("[say=pc]"+str(ch1("Anything? That's interesting.", "Interesting.", "Of course you will do anything. You're just a slave."))+"[/say]")
 
-		saynn("You wait until the bucket is full.. and then.. you stop.")
+		saynn("Ты ждешь, пока ведро наполнится.. а затем.. ты останавливаешься.")
 
-		saynn("Ferri feels the source of stimulation going away.. and lets out a loud annoyed mewl.")
+		saynn("Ферри чувствует, как источник стимуляции отдаляется.. и издает громкий, раздраженный скулеж.")
 
-		saynn("[say=ferri]Mo-o-ow.. I hate you-u-u..[/say]")
+		saynn("[say=ferri]Му-у-у.. ты ненави-ы-ыстный..[/say]")
 
-		saynn("You move the bucket out of the way, clearly signaling that the milking is over. Your face expression is constant.")
+		saynn("Ты убираешь ведро в сторону, явно давая понять, что дойка окончена. Выражение твоего лица остается неизменным.")
 
-		saynn("Ferri is squirming hard, trying to catch her release.")
+		saynn("Ферри сильно извивается, пытаясь поймать свой оргазм.")
 
-		saynn("[say=ferri]I hate this so mu-uch.. Why.. No..[/say]")
+		saynn("[say=ferri]Как же я это ненавижу-у-у.. Почему.. Нет..[/say]")
 
-		saynn("She throws her head back and whines into the air. All the while her body is slowly losing its aroused state.. slowly and painfully.")
+		saynn("Она запрокидывает голову и скулит в пустоту. При этом её тело медленно теряет возбуждение... медленно и мучительно.")
 
 		saynn("[say=pc]"+str(ch1("If you want to cum, you're gonna do what I need you to do.", "If you want to cum, you're gonna learn to obey me completely, whore.", "I get to choose if you cum or not, you stupid whore. You better learn that."))+"[/say]")
 
-		saynn("[say=ferri]Huff-f-f.. f-fuck you..[/say]")
+		saynn("[say=ferri]Ха-а-а.. да пошёл ты..[/say]")
 
-		saynn("You uncuff her paws from the pipe, making Ferri collapse to the floor, her breathing still messy. Her nipples look a bit red and swollen, her pussy still dripping..")
+		saynn("Ты освобождаешь её лапы от трубы, и Ферри бессильно оседает на пол, всё ещё тяжело и прерывисто дыша. Её соски выглядят слегка покрасневшими и припухшими, а киска всё ещё течёт..")
 
-		saynn("You grab the bucket of milk and head out.")
+		saynn("Ты хватаешь ведро с молоком и направляешься к выходу.")
 
-		saynn("[say=pc]Fresh milk. Still warm. I think this one will contain a very unique taste.[/say]")
+		saynn("[say=pc]Свежее молоко. Ещё тёплое. Думаю, у этого будет очень уникальный вкус.[/say]")
 
-		saynn("Behind you, Ferri lets out a broken, frustrated moan.")
+		saynn("Позади тебя Ферри издаёт надрывный, разочарованный стон.")
 
-		addButton("Kait", "Go see what Kait thinks", "endthescene")
+		addButton("Кейт", "Пойти узнать, что думает Кейт", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

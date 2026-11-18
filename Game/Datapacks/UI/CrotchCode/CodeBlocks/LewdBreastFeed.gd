@@ -54,7 +54,7 @@ func getTemplate():
 		},
 		{
 			type = "label",
-			text = "Breast feeds on",
+			text = "Кормит грудью @@B*@@@@T*@@@@F*@@",
 		},
 		{
 			type = "slot",

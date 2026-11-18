@@ -73,45 +73,45 @@ static func doReact(_pawnTarget, _pawnReacts):
 		_rep.addRep(RepStat.Alpha, 0.1)
 		
 		if(pickedReact == LEASHING_SOMEONE):
-			saynn(_npc.getName()+" walks by and notices you leashing someone.")
+			saynn(_npc.getName()+" проходит мимо и замечает, как ты ведешь кого-то на поводке.")
 			sayModular(_pawnReacts, _pawnTarget, "ReactLEASHING_SOMEONE")
 		
 		if(pickedReact == FUCKING_SOMEONE):
-			saynn(_npc.getName()+" walks by and notices you fucking someone.")
+			saynn(_npc.getName()+" проходит мимо и замечает, как ты трахаешь кого-то.")
 			sayModular(_pawnReacts, _pawnTarget, "ReactFUCKING_SOMEONE")
 	else:
 		_rep.addRep(RepStat.Whore, 0.05)
 		
 		if(pickedReact == BODYWRITINGS):
-			saynn(_npc.getName()+" walks by and notices your bodywritings.")
+			saynn(_npc.getName()+" проходит мимо и замечает надписи на твоем теле.")
 			sayModular(_pawnReacts, _pawnTarget, "ReactBODYWRITINGS")
 		
 		if(pickedReact == TALLYMARKS):
-			saynn(_npc.getName()+" walks by and notices your tallymarks.")
+			saynn(_npc.getName()+" проходит мимо и замечает твои зарубки.")
 			sayModular(_pawnReacts, _pawnTarget, "ReactTALLYMARKS")
 		
 		if(pickedReact == COVERED_IN_CUM):
-			saynn(_npc.getName()+" walks by and notices your messy appearance.")
+			saynn(_npc.getName()+" проходит мимо и замечает твой неопрятный вид.")
 			sayModular(_pawnReacts, _pawnTarget, "ReactCOVERED_IN_CUM")
 		
 		if(pickedReact == COVERED_IN_PISS):
-			saynn(_npc.getName()+" walks by and notices your.. very.. messy appearance.")
+			saynn(_npc.getName()+" проходит мимо и замечает твой... ну... крайне неопрятный вид.")
 			sayModular(_pawnReacts, _pawnTarget, "ReactCOVERED_IN_PISS")
 		
 		if(pickedReact == NAKED):
-			saynn(_npc.getName()+" walks by and takes note of your private bits.")
+			saynn(_npc.getName()+" проходит мимо и засматривается на твои причиндалы.")
 			sayModular(_pawnReacts, _pawnTarget, "ReactNAKED")
 		
 		if(pickedReact == CAN_GRAB_AND_FUCK):
-			saynn(_npc.getName()+" walks by and notices you.")
+			saynn(_npc.getName()+" проходит мимо и замечает тебя.")
 			sayModular(_pawnReacts, _pawnTarget, "ReactCAN_GRAB_AND_FUCK")
 		
 		if(pickedReact == ON_A_LEASH):
-			saynn(_npc.getName()+" sees you getting dragged off somewhere.")
+			saynn(_npc.getName()+" видит, как тебя куда-то уволакивают.")
 			sayModular(_pawnReacts, _pawnTarget, "ReactON_A_LEASH")
 		
 		if(pickedReact == GETTING_FUCKED):
-			saynn(_npc.getName()+" walks by and sees you getting fucked.")
+			saynn(_npc.getName()+"@@B*@@ проходит мимо и видит, как тебя трахают.")
 			sayModular(_pawnReacts, _pawnTarget, "ReactGETTING_FUCKED")
 		
 	return true

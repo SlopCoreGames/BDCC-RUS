@@ -9,31 +9,31 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("You walk up to the machine's terminal, it has a black-and-green screen and a few buttons. You press one of them and the machine beeps.")
+		saynn("Вы подходите к терминалу автомата — у него черно-зеленый экран и несколько кнопок. Вы нажимаете на одну из них, и машина издает писк.")
 		
-		saynn("The screen displays:\n\nDetected inmate number {pc.inmateNumber}.\nInmate category: {pc.inmateType}\nInmate Uniform Replacement cost: 10 credits.\nUniform Repair cost: 5 credits.\nDyeing a clothing item cost: 5 credits.")
+		saynn("На экране отображается:\n\nОбнаружен номер заключенного {pc.inmateNumber}.\nКатегория заключенного: {pc.inmateType}\nСтоимость новой формы: 10 кредитов.\nСтоимость ремонта формы: 5 кредитов.\nСтоимость окрашивания вещи: 5 кредитов.")
 
-		saynn("What do you wanna do?")
+		saynn("Что будете делать?")
 
-		addButton("Print uniform", "You want a fresh inmate uniform", "printUniform")
+		addButton("Напечатать форму", "Вы хотите получить свежую тюремную робу", "printUniform")
 		if(GM.pc.canRepairClothes()):
-			addButton("Repair clothes", "Repair everything that you are wearing.", "repairUniform")
+			addButton("Починить одежду", "Починить всё, что на вас надето.", "repairUniform")
 		else:
-			addDisabledButton("Repair clothes", "You are not wearing anything that needs to be repaired")
-		addButton("Dye clothes", "Pick what item you want to dye", "dye_clothes_menu")
+			addDisabledButton("Починить одежду", "На вас нет ничего, что требовало бы ремонта")
+		addButton("Покрасить одежду", "Выберите вещь, которую хотите покрасить", "dye_clothes_menu")
 		
-		addButton("Walk away", "You don't wanna spend your hard earned work credits", "endthescene")
+		addButton("Уйти", "Не хочешь тратить свои кровно заработанные кредиты?", "endthescene")
 	
 	if(state == "dye_clothes_menu"):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("The machine waits for the clothing that it can dye. The screen reminds you that dyeing your inmate uniform is against the law and would lead to substantial increase of your sentence.")
+		saynn("Машина ждет одежду для окрашивания. На экране красуется напоминание: покраска тюремной робы запрещена законом и может привести к существенному увеличению срока заключения.")
 		
-		saynn("Cost: 5 credits")
+		saynn("Стоимость: 5 кредитов")
 		
 		for item in GM.pc.getInventory().getAllItemsCanDye():
 			addButtonWithChecks(item.getVisibleName(), item.getVisibleDescription(), "start_dye", [item], [[ButtonChecks.HasCredits, 5]])
 		
-		addButton("Back", "You changed your mind", "")
+		addButton("Назад", "Вы передумали", "")
 	
 	if(state == "coloring_item"):
 		var theItem:ItemBase = GM.pc.getInventory().getItemByUniqueID(dyingItemUniqueID)
@@ -50,33 +50,33 @@ func _run():
 		colorPicker.setCurrentColor(theItem.clothesColor)
 		colorPicker.connect("color_changed", self, "changebasecolormenu_colorchanged")
 		
-		addButtonWithChecks("Confirm", "Pay 5 credits and finalize the color", "do_pay_coloritem", [theItem], [[ButtonChecks.HasCredits, 5]])
-		addButton("Cancel", "You changed your mind", "cancel_dying")
+		addButtonWithChecks("Подтвердить", "Заплатить 5 кредитов и закрепить цвет", "do_pay_coloritem", [theItem], [[ButtonChecks.HasCredits, 5]])
+		addButton("Отмена", "Вы передумали", "cancel_dying")
 	
 	if(state == "notEnough"):
 		if(GM.pc.isBlindfolded()):
-			saynn("The machine angrily beeps at you, the screen displays.. something. You can't really see it but it's probably something about you not having enough credits.")
+			saynn("Машина сердито пищит, на экране что-то мелькает. Разглядеть сложно, но, скорее всего, там написано, что у вас не хватает кредитов.")
 		else:
-			saynn("The machine angrily beeps at you, the screen displays: [b]Not enough credits, go work in the mines, lazy inmate[/b]")
+			saynn("Машина сердито пищит, на экране надпись: [b]Не хватает кредитов! Иди паши в шахтах, ленивая зэчка[/b]")
 		
-		addButton("Walk away", "So rude", "endthescene")
+		addButton("Уйти", "Какая грубость", "endthescene")
 	
 	if(state == "repairUniform"):
-		saynn("You press the button and the machine withdraws some credits from you. Then take off your damaged clothes and place them into the offered space. The machine grabs it all and starts working, making a lot of noise as it tries to patch any holes up.")
+		saynn("Вы нажимаете на кнопку, и машина списывает с вас немного кредитов. Затем вы снимаете свою потрёпанную одежду и кладете её в специальный отсек. Машина заглатывает всё содержимое и начинает работать, издавая кучу шума, пока пытается заштопать все дыры.")
 		
-		saynn("The machine beeps and then gives you your clothes back, fully repaired and cleaned!")
+		saynn("Машина издает звуковой сигнал и выдает вам вашу одежду — полностью чистую и отремонтированную!")
 		
-		addButton("Walk away", "Sweet", "endthescene")
+		addButton("Уйти", "Круто", "endthescene")
 	
 	if(state == "afterPrinting"):
 		if(GM.pc.isBlindfolded()):
-			saynn("Even though you're blindfolded you somehow find the right button by pressing all of them. Then it withdraws some credits from you and prints you a fresh uniform. You can't tell if its the correct one but what can you do, you grab it and go")
+			saynn("Несмотря на повязку на глазах, вам каким-то образом удается нащупать нужную кнопку, перебирая все подряд. Машина списывает кредиты и распечатывает вам свежую униформу. Непонятно, та ли это, но деваться некуда — вы хватаете её и уходите.")
 		elif(GM.pc.hasBoundArms()):
-			saynn("Interacting with the machine is really hard without being able to use your hands but you about manage, you just press the buttons with your nose and the machine looks up the noseprints database before printing you an uniform that is exactly your size and has your inmate number. You grab it with your chin and go")
+			saynn("Взаимодействовать с машиной, когда руки заняты, чертовски сложно, но вам это удается: вы просто тыкаете в кнопки носом. Машина сверяется с базой отпечатков носа и выдает вам униформу точно вашего размера с вашим номером заключенного. Вы подхватываете её подбородком и уходите.")
 		else:
-			saynn("You press the button and the machine withdraws some credits from you. After that it hums and prints you a fresh inmate uniform that is exactly your size and has your inmate number. You grab it and go")
+			saynn("Вы нажимаете на кнопку, и машина списывает с вас немного кредитов. После этого она начинает гудеть и выдает вам новенькую тюремную робу точно вашего размера с вашим номером заключенного. Вы хватаете её и уходите.")
 			
-		addButton("Walk away", "Good", "endthescene")
+		addButton("Уйти", "Хорошо", "endthescene")
 		
 		
 func _react(_action: String, _args):

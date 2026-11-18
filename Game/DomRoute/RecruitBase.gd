@@ -16,7 +16,7 @@ var completed:bool = false
 var choices:Array = [
 	{
 		id = "tone",
-		name = "Tone",
+		name = "Тон",
 		desc = "Something something",
 		options = [
 			["loving", "Lovingly", "Do it lovingly", RecruitChoiceResult.Red],
@@ -32,7 +32,7 @@ func getExtraChoices(_choices:Array, _extras:Dictionary) -> Array:
 	return [
 		{
 			id = "condom",
-			name = "Condom",
+			name = "Презерватив",
 			desc = "Something mew mew",
 			options = [
 				["no", "No condom", "Don't use a condom"],

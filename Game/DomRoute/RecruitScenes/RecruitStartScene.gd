@@ -20,8 +20,8 @@ func resolveCustomCharacterName(_charID):
 
 func _run():
 	if(!GM.main.RCS.hasCurrent()):
-		saynn("SOMETHING WENT WRONG, THERE IS NO CURRENT RECRUIT. SORRY.")
-		addButton("Continue", "See what happens next", "endthescene")
+		saynn("ЧТО-ТО ПОШЛО НЕ ТАК, ТЕКУЩИЙ РЕКРУТ ОТСУТСТВУЕТ. ИЗВИНИТЕ.")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		return
 	aimCameraAndSetLocName("hideout_near_break_room")
 	
@@ -35,34 +35,34 @@ func _run():
 		else:
 			playAnimation(StageScene.Solo, "stand")
 		
-		saynn("You are standing near the cell where {npc.name} is held.")
+		saynn("Вы стоите рядом с камерой, где содержится {npc.name}.")
 		
 		if(_hasPresenter):
-			saynn("{presenter.name} is guarding the entrance.")
+			saynn("{presenter.name} охраняет вход.")
 		
-		saynn("What do you wanna do?")
+		saynn("Что будете делать?")
 		
 		#saynn(_recruit.getHistoryString())
 		
-		addButton("Plan", "Make a plan and execute it", "plan")
-		addButton("Talk", "Go have a chat with them!", "talk")
+		addButton("План", "Составить план и воплотить его в жизнь", "plan")
+		addButton("Поговорить", "Поболтать с ними!", "talk")
 		if(_recruit.hasHistory()):
-			addButton("History", "Try to recall your old plans", "history_menu")
-		addButton("Step away", "You changed your mind", "stepAway")
+			addButton("История", "Попытаться вспомнить свои старые планы", "history_menu")
+		addButton("Отойти", "Вы передумали", "stepAway")
 	
 	if(state == "history_menu"):
-		saynn("You attempt to recall everything that you did with {npc.name}..")
+		saynn("Вы пытаетесь вспомнить всё, что вы делали с {npc.name}...")
 		saynn(_recruit.getHistoryString())
-		addButton("Back", "Back to planning", "")
+		addButton("Назад", "Назад к планированию", "")
 	
 	if(state == "plan"):
-		sayn("Make a plan that would break {npc.name} or make {npc.him} submit.")
+		sayn("Составить план, который сломает {npc.name} или заставит {npc.him} подчиниться.")
 		
-		saynn("Difficulty: "+RecruitDifficulty.getName(_recruit.difficulty)+" ("+RecruitDifficulty.getDifficultyText(_recruit.difficulty)+")")
+		saynn("Сложность: "+RecruitDifficulty.getName(_recruit.difficulty)+" ("+RecruitDifficulty.getDifficultyText(_recruit.difficulty)+")")
 		
 		var _choices:Array = _recruit.choices
 		
-		sayn("Plan:")
+		sayn("План:")
 		for _i in _choices.size():
 			var theChoice:Dictionary = _choices[_i]
 			
@@ -81,7 +81,7 @@ func _run():
 		
 		var theExtras:Array = getExtras()
 		if(!theExtras.empty()):
-			sayn("Extras:")
+			sayn("Дополнительно:")
 		var _ei:int = 0
 		for theExtraEntry in theExtras:
 			var theID:String = theExtraEntry["id"]
@@ -90,7 +90,7 @@ func _run():
 				var theOption:Array = theExtraEntry["options"][extra[theID]]
 				sayn(theExtraEntry["name"]+": "+theOption[1]+"\n - "+theOption[2])
 			else:
-				sayn(theExtraEntry["name"]+": Undecided")
+				sayn(theExtraEntry["name"]+": Не определено")
 			_ei += 1
 		if(!theExtras.empty()):
 			sayn("")
@@ -127,23 +127,23 @@ func _run():
 			if(theCanStart[0]):
 				addButtonAt(9, "START", "Execute the plan!", "readyToDoPlan")
 			else:
-				saynn("[color=yellow]Current plan is impossible[/color]: "+theCanStart[1])
+				saynn("[color=yellow]Текущий план невыполним[/color]: "+theCanStart[1])
 		addButtonAt(14, "Cancel", "You changed your mind!", "")
 		
 		#saynn(_recruit.getHistoryString())
 	
 	if(state == "readyToDoPlan"):
-		saynn("You have prepared the plan.")
+		saynn("Вы подготовили план.")
 		var thePresenterName:String = getCharacter(_recruit.getPresenterCharID()).getName()
 		if(_hasPresenter):
 			saynn("[say="+_recruit.getPresenterCharID()+"]"+_recruit.getPresenterDialogue()+"[/say]")
-		addButton("I got it", "Do the plan yourself", "startThePlan")
-		addButton(thePresenterName, "(Skip scene) Let "+thePresenterName+" do the plan, avoiding the need for you to see it", "helperStartsThePlan")
+		addButton("Понял", "Сделать план самому", "startThePlan")
+		addButton(thePresenterName, "(Пропустить сцену) Пусть "+thePresenterName+" выполнит план, чтобы тебе не пришлось на это смотреть", "helperStartsThePlan")
 	
 	if(state == "extraMenu"):
-		saynn("Pick how you want to do it! Extra choices don't affect the result.")
+		saynn("Выбери, как хочешь поступить! Дополнительные варианты не влияют на результат.")
 		
-		addButton("Back", "You changed your mind", "plan")
+		addButton("Назад", "Вы передумали", "plan")
 		var theExtras:Array = getExtras()
 		var theExtra:Dictionary = theExtras[selectedExtra]
 		
@@ -162,33 +162,33 @@ func _run():
 		else:
 			playAnimation(StageScene.Solo, "stand")
 		aimCameraAndSetLocName("hideout_near_break_room")
-		sayn("The plan is completed.")
-		saynn("Difficulty: "+RecruitDifficulty.getName(_recruit.difficulty)+" ("+RecruitDifficulty.getDifficultyText(_recruit.difficulty)+")")
+		sayn("План выполнен.")
+		saynn("Сложность: "+RecruitDifficulty.getName(_recruit.difficulty)+" ("+RecruitDifficulty.getDifficultyText(_recruit.difficulty)+")")
 		
 		saynn(_recruit.getColorStringForChoices(lastContext.choiceIDs))
 		
 		if(lastContext.perfect):
-			saynn("It went perfectly!")
+			saynn("Все прошло идеально!")
 		elif(lastContext.success):
-			saynn("Success! Not everything was perfect but it was good enough.")
+			saynn("Успех! Не всё было безупречно, но вполне сойдет.")
 		else:
-			saynn("That wasn't it..")
+			saynn("Было не совсем так...")
 		
 		# Start the next story scene
 		# If replay more, just end it?
 		if(GM.main.RCS.isReplayMode()):
-			addButton("Continue", "Enough fun", "continueAfterSuccess")
+			addButton("Продолжить", "Хватит веселиться", "continueAfterSuccess")
 		elif(lastContext.success):
-			addButton("Continue", "See what happens next", "continueAfterSuccess")
-		addButton("Try again", "Try a different plan!", "")
+			addButton("Продолжить", "Смотреть, что будет дальше", "continueAfterSuccess")
+		addButton("Попробовать снова", "Попробуй другой план!", "")
 	
 	if(state == "helperDoesThings"):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("You tell {presenter.name} to carry out the plan.")
+		saynn("Ты приказываешь {presenter.name} приступить к выполнению плана.")
 		
-		saynn("After some time, {presenter.he} returns..")
+		saynn("Спустя некоторое время {presenter.he} возвращается...")
 		
-		addButton("Continue", "See what happens next", "afterPlan")
+		addButton("Продолжить", "Смотреть, что будет дальше", "afterPlan")
 	
 	if(state == "afterTalked"):
 		aimCameraAndSetLocName("hideout_near_break_room")
@@ -197,8 +197,8 @@ func _run():
 			playAnimation(StageScene.Duo, "stand", {npc=_presenterID})
 		else:
 			playAnimation(StageScene.Solo, "stand")
-		saynn("You have finished talking with {npc.name}!")
-		addButton("Continue", "See what happens next", "")
+		saynn("Разговор с {npc.name} окончен!")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

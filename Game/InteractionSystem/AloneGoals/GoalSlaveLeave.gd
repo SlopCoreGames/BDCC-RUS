@@ -12,7 +12,7 @@ func getKeepScore() -> float:
 	return 10.0
 
 func getText():
-	return "{main.name} is heading back to your cell.."
+	return "{main.name} направляется обратно в твою камеру.."
 
 func getActions() -> Array:
 	return [

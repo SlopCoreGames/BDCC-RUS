@@ -14,7 +14,7 @@ margin_bottom = 218.0
 [node name="Label" type="Label" parent="VBoxContainer" index="0"]
 margin_right = 1280.0
 margin_bottom = 14.0
-text = "Some stuff"
+text = "Некоторая хрень"
 
 [node name="TextEdit" type="TextEdit" parent="VBoxContainer" index="1"]
 margin_top = 18.0

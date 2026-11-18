@@ -18,7 +18,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Raw",
+			text = "Сырой",
 		},
 		{
 			id = "rawValue",

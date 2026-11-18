@@ -11,7 +11,7 @@ func getKeepScore() -> float:
 	return 2.1
 
 func getText():
-	return "{main.name} is trying to save someone!"
+	return "{main.name} пытается кого-то спасти!"
 
 func getActions() -> Array:
 #	if(getLocation() == nextTarget):
@@ -28,7 +28,7 @@ func getActions() -> Array:
 	return [
 		{
 			id = "go",
-			name = "Go!",
+			name = "Вперёд!",
 			desc = "Save the person",
 			score = 1.0,
 			args = {},

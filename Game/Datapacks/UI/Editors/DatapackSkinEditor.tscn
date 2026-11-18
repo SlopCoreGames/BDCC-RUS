@@ -81,7 +81,7 @@ size_flags_horizontal = 3
 margin_left = 205.0
 margin_right = 300.0
 margin_bottom = 20.0
-text = "Random char"
+text = "Случайный перс"
 
 [node name="GridContainer" type="GridContainer" parent="VBoxContainer"]
 margin_top = 620.0
@@ -94,7 +94,7 @@ columns = 5
 margin_right = 256.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
-text = "Save"
+text = "Сохранить"
 
 [connection signal="onVariableChange" from="VBoxContainer/HBoxContainer/ScrollContainer/PackVariables" to="." method="_on_PackVariables_onVariableChange"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/DollWrapper/HBoxContainer/RandomCharButton" to="." method="_on_RandomCharButton_pressed"]

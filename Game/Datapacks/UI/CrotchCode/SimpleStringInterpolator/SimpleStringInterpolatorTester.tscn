@@ -21,7 +21,7 @@ size_flags_vertical = 3
 margin_top = 233.0
 margin_right = 1280.0
 margin_bottom = 253.0
-text = "Test"
+text = "Тест"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer"]
 margin_top = 257.0

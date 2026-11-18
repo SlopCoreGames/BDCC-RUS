@@ -6,27 +6,27 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("You try to inspect your collar but that proves to be very hard since it's on your neck.")
+		saynn("Ты пытаешься рассмотреть свой ошейник, но это чертовски трудно, ведь он плотно сидит на шее.")
 		
-		saynn("It sits very tight, you can barelly squeeze a finger under it to scratch on your neck but thats about it.")
+		saynn("Он прилегает очень туго; ты едва можешь просунуть под него палец, чтобы почесать шею, но на этом возможности заканчиваются.")
 
-		addButton("Leave it", "Nothing you can do", "leaveit")
+		addButton("Оставить как есть", "Ничего не поделаешь", "leaveit")
 		if(GM.pc.hasBoundArms()):
-			addDisabledButton("Tug", "Your bound arms don't let you do this")
+			addDisabledButton("Дернуть", "Связанные руки не дают этого сделать")
 		else:
-			addButton("Tug", "Try to tug on it", "tug")
+			addButton("Дернуть", "Попытаться дернуть за него", "tug")
 
 	if(state == "tug"):
-		saynn("You try and tug on your collar while no one is looking. Maybe you can somehow take it off without unlocking.")
+		saynn("Ты пытаешься дернуть ошейник, пока никто не видит. Может, получится снять его как-то без ключа?")
 		
-		saynn("But alas, you make no progress, the bulky thing is sitting very tightly")
+		saynn("Но увы, прогресса нет — эта громоздкая штука сидит на шее мертвой хваткой.")
 		
-		addButton("Continue", "Oh well", "")
+		addButton("Продолжить", "Ну и ладно", "")
 
 	if(state == "leaveit"):
-		saynn("You sigh and leave your collar alone")
+		saynn("Ты вздыхаешь и перестаешь дергать за ошейник")
 		
-		addButton("Continue", "Oh well", "endthescene")
+		addButton("Продолжить", "Ну и ладно", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

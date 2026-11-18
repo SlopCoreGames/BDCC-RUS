@@ -21,14 +21,14 @@ margin_top = 5.0
 margin_right = 604.0
 margin_bottom = 19.0
 size_flags_horizontal = 3
-text = "rahi = Rahi"
+text = "рахи = Rahi"
 
 [node name="StartsCheckBox" type="CheckBox" parent="."]
 margin_left = 608.0
 margin_right = 908.0
 margin_bottom = 24.0
 size_flags_horizontal = 3
-text = "Added on start"
+text = "Добавлено при старте"
 
 [node name="VariantVarUI" parent="." instance=ExtResource( 1 )]
 anchor_right = 0.0
@@ -42,7 +42,7 @@ size_flags_horizontal = 3
 margin_left = 1217.0
 margin_right = 1272.0
 margin_bottom = 24.0
-text = "Delete"
+text = "Удалить"
 
 [connection signal="onValueChange" from="AliasVarUI" to="." method="_on_AliasVarUI_onValueChange"]
 [connection signal="toggled" from="StartsCheckBox" to="." method="_on_StartsCheckBox_toggled"]

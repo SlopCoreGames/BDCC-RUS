@@ -14,7 +14,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "Deny self"
+	return "@@B*@@Отказ себе@@T*@@@@F*@@"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "Go against your will and use 20 stamina to deny yourself the orgasm."

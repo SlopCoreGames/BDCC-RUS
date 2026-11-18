@@ -1847,8 +1847,8 @@ func doReactOnLeash(_leasherRole:String, _leashedRole:String):
 			continue
 		if(!pawn.canInterrupt()):
 			continue
-		saynn("{"+pawn.charID+".name} walks by and notices {"+_leashedRole+".you} on a leash..")
-		saynn("[say="+pawn.charID+"]WHAT A SLUT![/say]")
+		saynn("{"+pawn.charID+".name проходит мимо и замечает, что {"+_leashedRole+".you} на поводке..")
+		saynn("[say="+pawn.charID+"] КАКАЯ ШЛЮХА![/say]")
 		rep.addRep(RepStat.Whore, 0.05)
 
 func getRoleForCharID(_charID:String) -> String:

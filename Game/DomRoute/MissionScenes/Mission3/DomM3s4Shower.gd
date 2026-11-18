@@ -6,313 +6,313 @@ func _init():
 func _run():
 	if(state == ""):
 		aimCameraAndSetLocName("med_nearshower")
-		saynn("Showers area.. it looks like you found it. And it looks like you got lucky, your ears are picking up on the soft sound of running water.")
+		saynn("Зона душевых... похоже, ты нашел ее. И, кажется, тебе повезло: до твоих ушей доносится мягкий звук льющейся воды.")
 
-		saynn("Before the showers themselves.. There is a room with staff lockers. The locks seem to be all rusty from the years of high humidity. It only takes a few hits before you manage to break one, revealing the contents.")
+		saynn("Прежде чем попасть в сами душевые... здесь есть комната с раздевалками для персонала. Замки, кажется, совсем заржавели от многолетней влажности. Всего пара ударов — и один из них поддается, открывая содержимое.")
 
-		saynn("There is a top and a labcoat with the badge inside. Perfect. But your eyes also catch glimpses of a skirt.. and a set of sexy black lingerie. Whoever is showering.. she certainly has a big cup size..")
+		saynn("Там лежат топ и лабораторный халат с бейджем внутри. Идеально. Но взгляд также цепляется за юбку... и комплект черного сексуального белья. Кто бы ни принимала там душ... у нее определенно внушительный размер груди...")
 
-		saynn("You could just take the badge and leave.. or you could take a quick peep at the showers area itself..")
+		saynn("Ты можешь просто забрать бейдж и уйти... или же быстро подглядеть в саму душевую зону...")
 
-		addButton("Just leave", "Grab the badge and leave!", "just_grab_badge")
-		addButton("Take a peek", "See who is showering", "take_peek")
+		addButton("Просто уйти", "Схватить бейдж и уйти!", "just_grab_badge")
+		addButton("Подглядеть", "Посмотреть, кто принимает душ", "take_peek")
 	if(state == "just_grab_badge"):
 		GM.pc.setLocation("med_corridor7")
-		saynn("You rip the badge off of the labcoat and make your exit before anyone sees you!")
+		saynn("Ты срываешь бейдж с халата и поспешно уходишь, пока тебя никто не заметил!")
 
-		saynn("At least something is going right.")
+		saynn("По крайней мере, хоть что-то идет как надо.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "take_peek"):
 		aimCameraAndSetLocName("medical_shower")
 		addCharacter("elizaMom", ["naked"])
 		GM.pc.setLocation("med_corridor7")
 		playAnimation(StageScene.Showering, "head", {pc="elizaMom", bodyState={naked=true, hard=true}})
-		saynn("You step further and peek into the shower stalls. Through the haze.. you make out a figure.")
+		saynn("Ты проходишь чуть дальше и заглядываешь в душевые кабинки. Сквозь пелену пара... ты различаешь чей-то силуэт.")
 
-		saynn("A woman.")
+		saynn("Женщина.")
 
-		saynn("She stands under one of the shower heads, facing away, water cascading down her back. Rich yellow fur with some of the tips having a darker pink-ish accent. Her hair is pinned up in a ponytail bun..")
+		saynn("Она стоит под одной из душевых леек спиной к тебе, и потоки воды стекают по её спине. Густой желтый мех, кончики которого отливают темно-розовым. Волосы собраны в высокий хвост-пучок..")
 
-		saynn("You freeze.. watching.")
+		saynn("Ты замираешь.. наблюдая за ней.")
 
-		saynn("She is tall.. clearly mature.. with wide hips and a heavy chest that sways gently as she works her fingers through her hair. Her tail curls lazily behind her, occasionally giving a glimpse of her pink naughty bits..")
+		saynn("Она высокая.. явно зрелая.. с широкими бедрами и тяжелой грудью, которая плавно колышется, пока она перебирает пальцами волосы. Её хвост лениво извивается позади, время от времени приоткрывая вид на её розовые сочные местечки..")
 
-		addButton("Just leave", "Leave while you can!", "leave_after_saw")
-		addButton("Join her", "A crazy thought.. but why not", "do_join_her")
+		addButton("Просто уйти", "Уходи, пока не заметили!", "leave_after_saw")
+		addButton("Присоединиться к ней", "Безумная мысль.. но почему бы и нет", "do_join_her")
 	if(state == "leave_after_saw"):
 		removeCharacter("elizaMom")
 		playAnimation(StageScene.Solo, "stand")
 		GM.pc.setLocation("med_corridor7")
 		aimCameraAndSetLocName("med_nearshower")
-		saynn("Enough peeping! You return back to the lockers.")
+		saynn("Хватит подглядывать! Ты возвращаешься к шкафчикам.")
 
-		saynn("Then.. you rip the badge off of the labcoat and make your exit before anyone sees you!")
+		saynn("Затем.. ты срываешь бейдж с лабораторного халата и поспешно уходишь, пока тебя никто не застукал!")
 
-		saynn("At least something is going right.")
+		saynn("По крайней мере, хоть что-то идет как надо.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_join_her"):
 		playAnimation(StageScene.ShoweringDuo, "tease", {pc="elizaMom", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Quickly, you drop all your clothes on a bench and quietly step inside the stall.")
+		saynn("Быстро скинув всю одежду на скамью, ты тихо проскальзываешь в душевую кабинку.")
 
-		saynn("The steam wraps around you as you approach. You haven't felt water this warm since forever.. What a strange sensation.")
+		saynn("Когда ты приближаешься, тебя окутывает пар. Кажется, ты целую вечность не чувствовал настолько горячую воду... Странное ощущение.")
 
-		saynn("The woman hasn't noticed yet. She is humming softly, some tune you don't recognize, her hands have finished working through her hair and are now washing her forms.")
+		saynn("Женщина тебя еще не заметила. Она тихонько напевает какую-то незнакомую мелодию; она уже закончила расчесывать волосы и теперь намыливает свое тело.")
 
-		saynn("You step under the spray behind her. The hot water hits your shoulders. You let it run for a moment.. watching her.")
+		saynn("Ты заходишь под струю душа позади нее. Горячая вода обжигает плечи. Ты замираешь на мгновение... наблюдая за ней.")
 
-		addButton("Embrace her", "Put your hands on her and see what happens", "embrace_scarlet")
+		addButton("Обнять ее", "Положить руки на нее и посмотреть, что будет", "embrace_scarlet")
 	if(state == "embrace_scarlet"):
 		playAnimation(StageScene.ShoweringDuo, "teasehug", {pc="elizaMom", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You reach out, your hands settling on her hips. The woman stiffens.. a gasp escaping her.")
+		saynn("Ты протягиваешь руки и кладешь их ей на бедра. Женщина напрягается... у нее вырывается вздох.")
 
-		saynn("[say=elizaMom]Ohh-..[/say]")
+		saynn("[say=elizaMom]Охх...[/say]")
 
-		saynn("You don't say anything. Instead, you let your fingers slide up her sides, over the curve of her waist. You press yourself against her back, letting her feel your warmth.. and preventing her from turning around.")
+		saynn("Ты ничего не говоришь. Вместо этого ты ведешь пальцами вверх по ее бокам, очерчивая изгиб талии. Ты прижимаешься к ее спине, заставляя ее почувствовать твое тепло... и не давая ей развернуться.")
 
-		saynn("[say=elizaMom]May I ask.. if I know you?[/say]")
+		saynn("[say=elizaMom]Позволь спросить... мы знакомы?[/say]")
 
 		if (getFlag("ElizaModule.s4hap")):
-			saynn("It's Eliza's mom.. you saw her before. But it's best to pretend you don't know anyway.")
+			saynn("Это мама Элизы... ты уже видел ее раньше. Но лучше все равно притвориться, что ты ее не знаешь.")
 
 		else:
-			saynn("She has a very familiar scent to her. But no.. this is the first time you see her.")
+			saynn("Её запах кажется тебе очень знакомым. Но нет... ты видишь её впервые.")
 
-		saynn("[say=pc]Don't think so.[/say]")
+		saynn("[say=pc]Вряд ли.[/say]")
 
-		saynn("Your hands keep exploring her short fur, gently cupping her breasts and getting a feel for them. They're heavy.. full.. Another little gasp escapes her as you give her breasts a squeeze, your thumbs brushing over her perky nipples.")
+		saynn("Твои руки продолжают исследовать её короткий мех, нежно обхватывая грудь и прощупывая её. Она тяжелая... налитая... Она снова тихо ахает, когда ты сжимаешь её грудь, проводя большими пальцами по её упругим соскам.")
 
-		saynn("[say=elizaMom]A stranger. Just like in some of my dreams..[/say]")
+		saynn("[say=elizaMom]Незнакомка. Совсем как в моих снах...[/say]")
 
-		saynn("Even though you still feel her muscles being tense.. she doesn't pull away. A quiet purr coming from her chest gets overshadowed easily by the sound of running water.")
+		saynn("Хотя ты всё ещё чувствуешь, как напрягаются её мышцы... она не отстраняется. Тихое мурлыканье, исходящее из её груди, легко заглушается шумом бегущей воды.")
 
-		saynn("[say=pc]Dreams do come true sometimes.[/say]")
+		saynn("[say=pc]Иногда мечты сбываются.[/say]")
 
-		saynn("You press your face into the soft fur, breathing warmly into her neck. Your hands slide a bit lower and brush over her belly.")
+		saynn("Ты прижимаешься лицом к мягкому меху, горячо дыша ей в шею. Твои руки скользят чуть ниже, поглаживая её живот.")
 
-		saynn("[say=elizaMom]Mmmh.. Are you.. gonna be rough with me?..[/say]")
+		saynn("[say=elizaMom]Ммм... Ты будешь... грубым со мной?..[/say]")
 
-		saynn("You don't have a lot of time.. but you could spare a few minutes.")
+		saynn("У тебя не так много времени... но ты мог бы выделить несколько минут.")
 
-		addButton("Gentle shower", "Spend some time together", "just_shower")
-		addButton("Finger her", "Make that kitty purr louder", "finger_her")
-		addButtonWithChecks("Fuck her", "Breed that slut right here and now", "breed_her", [], [[ButtonChecks.HasReachablePenis]])
+		addButton("Нежный душ", "Провести время вместе", "just_shower")
+		addButton("Поласкать её пальцами", "Заставить её киску мурчать громче", "finger_her")
+		addButtonWithChecks("Трахнуть её", "Оплодотворить эту сучку прямо здесь и сейчас", "breed_her", [], [[ButtonChecks.HasReachablePenis]])
 	if(state == "finger_her"):
 		playAnimation(StageScene.ShoweringDuo, "rub", {pc="elizaMom", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You whisper into her ear while one of your hands returns back to kneading her breasts slowly.")
+		saynn("Ты шепчешь ей на ухо, пока одна твоя рука медленно продолжает разминать её грудь.")
 
-		saynn("[say=pc]No. As long as you promise to be a good little kitty for me.[/say]")
+		saynn("[say=pc]Нет. Пока ты обещаешь быть моей послушной маленькой кошечкой.[/say]")
 
-		saynn("[say=elizaMom]I'm a little old to be considered little.. But I can certainly try.[/say]")
+		saynn("[say=elizaMom]Я уже немного старовата, чтобы считаться «маленькой»... Но я определенно могу попробовать.[/say]")
 
-		saynn("Her nipples harden under your touch.. making her let out a soft, breathy moan.")
+		saynn("Её соски твердеют под твоими прикосновениями, заставляя её издать мягкий, прерывистый стон.")
 
-		saynn("Your second hand.. slides down her stomach.. following the soft curve of her belly, down through the wet fur until your fingers find her pink slit. She shivers, her legs parting just a little.")
+		saynn("Твоя вторая рука... скользит вниз по её животу... огибая мягкий изгиб, спускаясь сквозь влажный мех, пока пальцы не находят её розовую щелочку. Она вздрагивает, и её ноги слегка раздвигаются.")
 
-		saynn("Your digits slide along her sensitive folds, gently spreading them open.. and catching a line of her juices between them. She is already wet.. and not just from the shower. Her breath catches, a soft gasp echoing off the tiles.")
+		saynn("Твои пальцы скользят по её чувствительным складкам, осторожно раздвигая их... и собирая между ними капли её соков. Она уже вся мокрая... и не только от душа. Её дыхание перехватывает, и тихий вздох эхом разносится по кафелю.")
 
-		saynn("[say=elizaMom]Mmhh..[/say]")
+		saynn("[say=elizaMom]Мммхх..[/say]")
 
-		saynn("You take your time, tracing the length of her slit, feeling the heat. One of your digits finds her clit, circling it gently, barely touching. She shivers, her hips twitching forward, catching more.")
+		saynn("Ты не спешишь, прослеживая пальцем длину её щели, ощущая жар. Один из твоих пальцев находит клитор, нежно описывая вокруг него круги, едва касаясь. Она вздрагивает, её бёдра дёргаются вперёд, ловя ещё больше ласки.")
 
-		saynn("[say=elizaMom]What a tease..[/say]")
+		saynn("[say=elizaMom]Какая дразнилка..[/say]")
 
-		saynn("[say=pc]Did you forget who you are?[/say]")
+		saynn("[say=pc]Ты что, забыла, кто ты такая?[/say]")
 
-		saynn("[say=elizaMom]Yes, actually.. for a second. But now I'm reminded again..[/say]")
+		saynn("[say=elizaMom]Да, если честно.. на секунду. Но теперь мне снова напомнили..[/say]")
 
-		saynn("Your other hands squeeze her breasts, fingers pinching her nipple.. tugging on it. She moans, her head falling back against your shoulder.")
+		saynn("Другие твои руки сжимают её грудь, пальцы щипают сосок... слегка оттягивая его. Она стонет, откидывая голову тебе на плечо.")
 
-		saynn("You tug on her nipple again.. harder this time.. and a thin stream of milk drips down your fingers, washing away instantly by the water.")
+		saynn("Ты снова тянешь её за сосок... на этот раз сильнее... и тонкая струйка молока стекает по твоим пальцам, тут же смываемая водой.")
 
-		saynn("[say=elizaMom]..a.. ah..[/say]")
+		saynn("[say=elizaMom]..а.. ах..[/say]")
 
-		saynn("You keep working her clit, slow circles, driving her further into this needy state. Her breathing goes ragged, her claws out and digging into your wrists. She is rocking her hips now, desperate for more.")
+		saynn("Ты продолжаешь ласкать её клитор медленными круговыми движениями, доводя её до состояния полного изнеможения от нужды. Её дыхание становится рваным, когти впиваются в твои запястья. Теперь она сама качает бёдрами, отчаянно желая большего.")
 
-		saynn("[say=elizaMom]Mhh.. ah.. Don't make an old woman beg..[/say]")
+		saynn("[say=elizaMom]Ммм.. ах.. Не заставляй старушку умолять..[/say]")
 
-		saynn("You slide one finger inside her. She is tight.. hot.. clenching around you. You pump it in and out slowly, curling your finger inside her, trying to find the pleasure.")
+		saynn("Ты вводишь один палец внутрь. Она такая узкая.. горячая.. сжимается вокруг тебя. Ты медленно двигаешь пальцем туда-сюда, сгибая его внутри, пытаясь нащупать точку удовольствия.")
 
-		saynn("[say=elizaMom]Oh fuck.. right there..[/say]")
+		saynn("[say=elizaMom]Ох, блядь.. прямо там..[/say]")
 
-		saynn("You add a second finger.. then a third.. stretching her out a little more.. still exploring. Her moans grow a little more sensual, raw. The sound of the water now barely covers them.")
+		saynn("Ты добавляешь второй палец.. затем третий.. растягивая её ещё сильнее.. продолжая исследовать. Её стоны становятся более чувственными, первобытными. Звук воды теперь едва заглушает их.")
 
-		saynn("Time is limited.. so you stop teasing.")
+		saynn("Время ограничено.. так что ты перестаёшь дразнить её.")
 
-		saynn("You pull your digits out.. leave only two of them inside.. and start thrusting them in.. hard. She cries out, her whole body jolting from sudden pleasure as your curled fingertips hammer away at her bumpy spot. Her breasts bounce in your grip, milk dripping from her nips..")
+		saynn("Ты вынимаешь пальцы.. оставляя внутри только два.. и начинаешь вколачивать их.. жестко. Она вскрикивает, всё её тело содрогается от внезапного наслаждения, пока твои согнутые кончики пальцев методично долбят по её чувствительной точке. Её грудь подпрыгивает в твоих руках, из сосков капает молоко..")
 
-		saynn("[say=elizaMom]Ah.. ahh.. ahh-.. I'm.. I'm gonna..[/say]")
+		saynn("[say=elizaMom]Ах.. ахх.. ахх!.. Я.. я сейчас..[/say]")
 
-		saynn("You keep thrusting.. finger-fucking her at a rapid pace. It only takes mere seconds before her body starts convulsing.")
+		saynn("Ты продолжаешь ритмично вбиваться.. пальцевым сексом на бешеной скорости. Проходит всего несколько секунд, и её тело начинает биться в конвульсиях.")
 
-		saynn("She lets out a passionate cry.. before her inner walls clamp down on your fingers. A gush of fluids sprays from her, splashing against the wall, mixing with the shower water. You keep pumping, making her squirt and again.. until she is limp against you, gasping for breath.")
+		saynn("Она издаёт страстный крик.. прежде чем её внутренние стенки сжимают твои пальцы. Поток смазки вырывается из неё, разбрызгиваясь по стене и смешиваясь с водой в душе. Ты продолжаешь качать, заставляя её кончать снова и снова.. пока она не обмякнет в твоих руках, жадно хватая ртом воздух.")
 
-		saynn("[say=elizaMom]Haa.. haa.. f-fuck.. oh my god.. ah..[/say]")
+		saynn("[say=elizaMom]Хаа.. хаа.. б-блядь.. о боже.. ах..[/say]")
 
-		saynn("Her legs are trembling like hell, her tail spazzing out, her whole body squirming against your.")
+		saynn("Её ноги чертовски дрожат, хвост судорожно дергается, а всё тело извивается под твоими руками.")
 
-		saynn("You stop and let your digits stay inside her, enjoying her aftershocks.")
+		saynn("Ты замираешь, оставляя пальцы внутри неё, наслаждаясь её конвульсиями.")
 
-		saynn("[say=pc]I'm gonna take something from your locker, hope you don't mind.[/say]")
+		saynn("[say=pc]Я стащу кое-что из твоего шкафчика, надеюсь, ты не против.[/say]")
 
-		saynn("[say=elizaMom]Do.. whatever you want..[/say]")
+		saynn("[say=elizaMom]Делай.. что хочешь..[/say]")
 
-		saynn("You leave her be, carefully drawing your digits out and letting the water wash them clean.")
+		saynn("Ты оставляешь её в покое, осторожно вынимая пальцы и позволяя воде смыть их.")
 
-		saynn("Before she gets a chance to turn around.. you are already gone.")
+		saynn("Прежде чем она успевает обернуться.. тебя уже нет рядом.")
 
-		addButton("Continue", "See what happens next", "after_sex_grab_badge")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_sex_grab_badge")
 	if(state == "after_sex_grab_badge"):
 		removeCharacter("elizaMom")
 		playAnimation(StageScene.Solo, "stand")
 		GM.pc.setLocation("med_corridor7")
 		aimCameraAndSetLocName("med_nearshower")
-		saynn("You return back to the lockers.. use a blanket to quickly dry yourself.. and then put all your things on.")
+		saynn("Ты возвращаешься к шкафчикам.. быстро вытираешься полотенцем.. а затем одеваешься.")
 
-		saynn("You rip the badge off of her labcoat and make your exit before anyone sees you!")
+		saynn("Ты срываешь бейдж с её халата и смываешься, пока тебя никто не заметил!")
 
-		saynn("At least something is going right.")
+		saynn("По крайней мере, хоть что-то идет как надо.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "just_shower"):
 		playAnimation(StageScene.ShoweringDuo, "shower", {pc="elizaMom", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You let your hands rest on her hips for a moment. You lean in close to her ear, your breath tickling it.")
+		saynn("Ты на мгновение кладешь руки ей на бедра. Ты наклоняешься к самому её уху, щекоча его своим дыханием.")
 
-		saynn("[say=pc]Just relax. Let me take care of you.[/say]")
+		saynn("[say=pc]Просто расслабься. Позволь мне позаботиться о тебе.[/say]")
 
-		saynn("A soft shiver is rushing through her back, her tail brushing against your leg. You notice a certain bottle on a small ledge.")
+		saynn("По её спине пробегает легкая дрожь, а хвост нежно касается твоей ноги. Ты замечаешь на маленьком выступе какой-то флакон.")
 
-		saynn("[say=pc]Is that a soap bottle over there?[/say]")
+		saynn("[say=pc]Это что, флакон с мылом там, в углу?[/say]")
 
-		saynn("[say=elizaMom]Best one in the whole galaxy..[/say]")
+		saynn("[say=elizaMom]Лучшее во всей галактике...[/say]")
 
-		saynn("[say=pc]Smuggling contraband onto the space station, I see how it is. Hand it to me and raise your hands, nice and smooth.[/say]")
+		saynn("[say=pc]Контрабанду на космическую станцию проносят, значит? А ну, отдавай его мне и поднимай руки, плавно и без резких движений.[/say]")
 
-		saynn("She reaches for the bottle and gives it to you. Then, slowly, she raises her arms, her fingers returning to her hair.")
+		saynn("Она тянется к флакону и протягивает его тебе. Затем медленно поднимает руки, запуская пальцы обратно в волосы.")
 
-		saynn("You pour some of that stuff into your palms.. and then place your hands on her shoulders. She tenses for just a breath.. and then melts as you begin to knead the muscles there.")
+		saynn("Ты выливаешь немного этой жижи на ладони... и кладешь руки ей на плечи. На мгновение она напрягается... а затем тает, когда ты начинаешь разминать её мышцы.")
 
-		saynn("[say=elizaMom]Mmh.. you have good hands.[/say]")
+		saynn("[say=elizaMom]Ммм... у тебя отличные руки.[/say]")
 
-		saynn("Your digits are sliding down her back, spreading the soap over the pastel fur. You trace the curve of her spine, her waist.. her hips. You try to not miss an inch.")
+		saynn("Твои пальцы скользят по её спине, распределяя мыло по пастельному меху. Ты прослеживаешь изгиб её позвоночника, талии... бедер. Стараешься не упустить ни сантиметра.")
 
-		saynn("Her hands are busy washing her hair.. while your slide around to her front, gliding over her stomach, up her ribcage. You pour a little more soap and cup her breasts, much more gently this time. Your palms circle her heavy mounds, thumbs brushing over her hard nipples.")
+		saynn("Её руки заняты тем, что она моет голову... пока твои перемещаются к её животу, скользя вверх по ребрам. Ты выливаешь еще немного мыла и обхватываешь её грудь, на этот раз гораздо нежнее. Твои ладони описывают круги по её тяжелым полушариям, а большие пальцы ласкают её твердые соски.")
 
-		saynn("[say=elizaMom]Ah..[/say]")
+		saynn("[say=elizaMom]Ах...[/say]")
 
-		saynn("You squeeze softly, working the soap into her fur, making the woman shiver again.. a good sign that you should switch your focus. One hand stays on her breast while another slides down her stomach, through the wet fur and cupping her crotch, palm pressing against her slit, feeling the warmth there. The feline lets out another shaky breath.")
+		saynn("Ты мягко сжимаешь её грудь, втирая мыло в мех, отчего женщина снова вздрагивает... хороший знак, что пора сменить фокус. Одна рука остается на её груди, пока другая скользит вниз по животу, сквозь мокрый мех, к её промежности; ладонь прижимается к щели, ощущая исходящее оттуда тепло. Кошка издает еще один прерывистый вздох.")
 
-		saynn("When all that's clean, you move lower, your digits sliding over her thighs, down her legs. You kneel behind her, working the soap into her ankles.. and rear paws. She puts one hand against the wall, steadying herself as you wash her every toe.. and all the paw pads.")
+		saynn("Когда всё чистое, ты спускаешься ниже, твои пальцы скользят по её бедрам, вниз по ногам. Ты опускаешься на колени позади неё, втирая мыло в её щиколотки... и задние лапы. Она упирается одной рукой в стену, удерживая равновесие, пока ты вымываешь каждый её пальчик... и все подушечки лап.")
 
-		saynn("[say=elizaMom]You're.. very thorough..[/say]")
+		saynn("[say=elizaMom]Ты такой.. тщательный..[/say]")
 
-		saynn("Time is running out.. but only her butt is left. You pour more soap and cup the firm cheeks, kneading them slowly, feeling the muscles beneath the soft fur. She arches her back just slightly, pressing into your touch. Little scritches around the base of her tail make her shiver erratically.. in a cute way. The fluffy tail itself gets some love too, you give it a few long strokes along its length while it tries to curl around your wrists constantly.")
+		saynn("Время на исходе... осталась только её задница. Ты наливаешь еще мыла и обхватываешь крепкие ягодицы, медленно разминая их и чувствуя мышцы под мягким мехом. Она слегка прогибает спину, подставляясь под твои прикосновения. Легкое почесывание у основания хвоста заставляет её беспорядочно дрожать... довольно мило. Сам пушистый хвост тоже получает свою порцию ласки: ты проводишь по нему несколькими длинными движениями, пока он то и дело пытается обвить твои запястья.")
 
-		saynn("After you're fully done, you embrace her again.")
+		saynn("Когда ты заканчиваешь, ты снова обнимаешь её.")
 
-		saynn("[say=elizaMom]That felt so nice.. You know.. I could turn around and return the favor..[/say]")
+		saynn("[say=elizaMom]Это было так приятно... Знаешь... я могла бы обернуться и отплатить тебе тем же..[/say]")
 
-		saynn("Best if she doesn't know who you are.")
+		saynn("Лучше бы она не знала, кто ты.")
 
-		saynn("[say=pc]Maybe some other time. Right now I need to take something from your locker.[/say]")
+		saynn("[say=pc]Может, в другой раз. Сейчас мне нужно кое-что взять из твоего шкафчика.[/say]")
 
-		saynn("Her ears perk.")
+		saynn("Её ушки навостряются.")
 
-		saynn("[say=elizaMom]That's a big ask.. Do you promise to return it?[/say]")
+		saynn("[say=elizaMom]Это серьезная просьба... Обещаешь вернуть?[/say]")
 
-		saynn("[say=pc]I think it will be given back to you.[/say]")
+		saynn("[say=pc]Думаю, тебе его вернут.[/say]")
 
-		saynn("[say=elizaMom]It's not my panties, is it~?[/say]")
+		saynn("[say=elizaMom]Это ведь не мои трусики, да~?[/say]")
 
-		saynn("When she says that, you're already gone from her stall.")
+		saynn("Когда она это говорит, ты уже успеваешь выйти из её кабинки.")
 
-		addButton("Continue", "See what happens next", "after_sex_grab_badge")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_sex_grab_badge")
 	if(state == "breed_her"):
 		playAnimation(StageScene.SearchSex, "sex", {pc="elizaMom", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Something tells you that she likes it rough. And so rough she shall receive, the feeling is mutual.")
+		saynn("Что-то подсказывает тебе, что она любит пожестче. И она получит именно это — ведь чувства взаимны.")
 
-		saynn("Your hands slide down to her hips and pull her back against you.. hard. She gasps, her tail trapped between the two bodies.")
+		saynn("Твои руки скользят к её бёдрам, и ты с силой прижимаешь её спиной к себе. Она ахает, зажав хвост между вашими телами.")
 
-		saynn("[say=elizaMom]Oh-![/say]")
+		saynn("[say=elizaMom]Ох..![/say]")
 
-		saynn("You spread her ass with both hands, possessively, exposing her pink slit to the spray. You take a moment to look at her, water running down her folds. You slide two fingers down her sex, spreading her open and fingering her with a few quick thrusts, making sure that she is ready.")
+		saynn("Ты собственническим жестом раздвигаешь её ягодицы обеими руками, подставляя её розовую щелочку под струи воды. Ты замираешь на мгновение, разглядывая её, пока вода стекает по её складкам. Затем ты вводишь два пальца в её лоно, широко раздвигая её и делая несколько быстрых толчков, проверяя, готова ли она.")
 
-		saynn("She is.")
+		saynn("Она готова.")
 
-		saynn("You don't waste another second, quickly lining yourself up and ramming your {pc.penis} inside her.")
+		saynn("Ты не теряешь ни секунды, быстро пристраиваешься и с силой вбиваешь свой {pc.penis} внутрь неё.")
 
-		saynn("[say=elizaMom]AH![/say]")
+		saynn("[say=elizaMom]АХ![/say]")
 
-		saynn("Her cry echoes off the tiles, her paws land onto the wall, trying to grab onto something. You don't give her time to adjust, pulling back and throwing your hips forward again, hard, burying yourself to the hilt.")
+		saynn("Её крик эхом разносится по кафелю; она упирается лапами в стену, пытаясь за что-то ухватиться. Ты не даёшь ей опомниться, резко оттягиваешься назад и снова с силой вбиваешься в неё бедрами, заходя до самого основания.")
 
-		saynn("[say=elizaMom]F-fuck-.. oh god..[/say]")
+		saynn("[say=elizaMom]Бл*ять!.. о боже..[/say]")
 
-		saynn("Your hips slap against her ass as you establish a rhythm. Water cascades down both of you still while your hands are gripping her waist, her tits swaying with every thrust.")
+		saynn("Твои бёдра шлепают по её заднице, когда ты ловишь ритм. Вода всё так же струится по вашим телам, пока твои руки сжимают её талию, а её грудь колышется при каждом толчке.")
 
-		saynn("[say=elizaMom]Ah.. ahh.. ah-..[/say]")
+		saynn("[say=elizaMom]Ах.. ахх.. ах..[/say]")
 
-		addButton("Faster", "Increase the pace", "breed_fast")
+		addButton("Быстрее", "Ускорить темп", "breed_fast")
 	if(state == "breed_fast"):
 		playAnimation(StageScene.SearchSex, "fast", {pc="elizaMom", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You increase the pace, every thrust is spreading her slit wide, your cock hammering deep, smashing against the entrance of her womb. She is tight, hot, clenching around you each time you ram inside.")
+		saynn("Ты ускоряешься; каждый толчок широко раздвигает её щель, твой член вбивается глубоко, долбя прямо в шейку матки. Она узкая, горячая, и каждый раз, когда ты входишь, она сжимается вокруг тебя.")
 
-		saynn("[say=elizaMom]I'm.. I'm gonna..[/say]")
+		saynn("[say=elizaMom]Я.. я сейчас..[/say]")
 
-		saynn("She cums first, her whole body shuddering, legs shaking, her pussy clamping down even harder around your shaft. She cries out, her claws scraping lines into the tiles.")
+		saynn("Она кончает первой: всё её тело содрогается, ноги дрожат, а киска сжимает твой член ещё сильнее. Она вскрикивает, и её когти оставляют борозды на кафельной плитке.")
 
 		var pcHasKnot = GM.pc.bodypartHasTrait(BodypartSlot.Penis, PartTrait.PenisKnot)
-		saynn("You don't stop. You keep fucking her through her orgasm, pounding into her oversensitive walls. The orgasm makes her legs weaker so you slap her ass to help the bloodflow."+str(" Your cock is also receiving extra blood actually.. your knot has been inflating more and more.." if pcHasKnot else "")+"")
+		saynn("Но ты не останавливаешься. Ты продолжаешь трахать её прямо во время оргазма, вколачиваясь в её сверхчувствительные стенки. От оргазма её ноги слабеют, поэтому ты шлепаешь её по заднице, чтобы разогнать кровь."+str(" Your cock is also receiving extra blood actually.. your knot has been inflating more and more.." if pcHasKnot else "")+"")
 
-		saynn("[say=elizaMom]Ah.. f-fuck..[/say]")
+		saynn("[say=elizaMom]Ах.. бл*ять..[/say]")
 
-		addButton("Cum inside", "Breed the bitch", "just_breed_cum")
-		addButton("Pull out", "You changed your mind!", "just_breed_pullout")
+		addButton("Кончить внутрь", "Отработайте сучку", "just_breed_cum")
+		addButton("Вытащить", "Ты передумал!", "just_breed_pullout")
 	if(state == "just_breed_cum"):
 		playAnimation(StageScene.SearchSex, "inside", {pc="elizaMom", npc="pc", npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		var pcHasKnot = GM.pc.bodypartHasTrait(BodypartSlot.Penis, PartTrait.PenisKnot)
 		if (pcHasKnot):
-			saynn("You pull her back one last time and shove your cock deep. The knot slams against the woman's pussy entrance, stretching them wide.")
+			saynn("Ты в последний раз притягиваешь её к себе и с силой вгоняешь свой член глубоко внутрь. Узел с размаху врезается в вход в её киску, нещадно растягивая её.")
 
-			saynn("[say=elizaMom]W-wait.. what are you-.. AH![/say]")
+			saynn("[say=elizaMom]По-погоди.. что ты.. АХ![/say]")
 
-			saynn("She doesn't get to finish. With a wet pop, the knot slides inside her, making her pussy look impossibly stretched a second.. before you two get locked together. She cries out again, her back arching, claws scratching at the tiles. Her inner walls clamp down on the knot.. as the orgasm washes over you.")
+			saynn("Она не успевает договорить. С влажным чпоком узел проскальзывает внутрь, на мгновение растягивая её киску до невероятных пределов.. прежде чем вы намертво сцепляетесь друг с другом. Она снова вскрикивает, выгибая спину и царапая когтями плитку. Её внутренние стенки судорожно сжимают узел.. пока тебя накрывает волна оргазма.")
 
-			saynn("Hot seed pumps into her womb, rope after rope, hot and thick, flooding her insides. She gasps again, letting her body milk your balls dry.")
+			saynn("Горячее семя хлещет ей прямо в матку, порция за порцией, густое и обжигающее, заполняя её нутро. Она снова ловит ртом воздух, позволяя телу выжимать твои яйца досуха.")
 
-			saynn("[say=elizaMom]Too b-big.. f-fuck.. I feel it.. inside me..[/say]")
+			saynn("[say=elizaMom]Слишком б-большой.. блять.. я чувствую его.. внутри меня..[/say]")
 
-			saynn("Her belly has received a nice bump from all of this. Her legs are shaking, body trembling around you. You stay there, waiting a few long seconds..")
+			saynn("От всего этого её живот заметно округлился. Её ноги дрожат, а тело бьется в конвульсиях вокруг тебя. Ты замираешь на несколько долгих секунд..")
 
-			saynn("And then.. with a sharp yank.. you pull the knot free. A gush of your {pc.cum} follows, spilling from her gaping pussy, dripping down her thighs. She slumps against the wall, her legs giving out, water still landing on her.")
+			saynn("А затем.. резким рывком.. ты высвобождаешь узел. Следом за ним вырывается поток твоей {pc.cum}, который вытекает из её разверзнутой киски и стекает по бедрам. Она сползает по стене, ноги подкашиваются, а вода всё еще падает на неё.")
 
 		else:
-			saynn("You pull her back one last time and shove your cock balls deep, burying yourself to the base. Your hips lock against her ass.. as the orgasm washes over you.")
+			saynn("Ты в последний раз притягиваешь её к себе и вгоняешь свой член вместе с яйцами глубоко, упираясь самым основанием. Твои бедра намертво прижимаются к её заднице.. пока тебя накрывает волна оргазма.")
 
-			saynn("Hot seed pumps into her womb, rope after rope. She gasps, her body twitching, inner walls milking your balls dry. You stay there for a moment, letting every last drop fill her.")
+			saynn("Горячая сперма хлещет ей прямо в матку, струя за струей. Она задыхается, её тело содрогается, а внутренние стенки выжимают твои яйца досуха. Ты замираешь на мгновение, позволяя каждой последней капле заполнить её.")
 
-			saynn("[say=elizaMom]S-so much.. f-fuck.. I feel it.. inside me..[/say]")
+			saynn("[say=elizaMom]Так.. мн-ного.. блядь.. я чувствую её.. внутри себя..[/say]")
 
-			saynn("Then you pull out. A gush of {pc.cum} follows.. spilling from her used pussy, dripping down her thighs. She slumps against the wall, her legs giving out, water still landing on her.")
+			saynn("Затем ты выходишь. Следом вырывается поток {pc.cum}.. он выплескивается из её использованной киски и стекает по бёдрам. Она оседает на стену, ноги подкашиваются, а на неё всё ещё падают струи воды.")
 
-		saynn("Her breathing comes in short, erratic gasps.")
+		saynn("Её дыхание становится прерывистым и судорожным.")
 
-		saynn("There is no time for aftercare.. so you let the water clean your cock.. before you step out.")
+		saynn("На нежности нет времени.. так что ты позволяешь воде омыть свой член.. прежде чем выйти.")
 
-		addButton("Continue", "See what happens next", "after_sex_grab_badge")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_sex_grab_badge")
 	if(state == "just_breed_pullout"):
 		playAnimation(StageScene.SearchSex, "tease", {pc="elizaMom", npc="pc", npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("At the last possible second, you decide to change your mind and pull out. Your throbbing cock flips out with a wet sound.. followed by hot ropes of thick seed landing across the woman's ass, one after another, marking her fur.. until the water starts washing it off.")
+		saynn("В самый последний момент ты решаешь передумать и выходишь. Твой пульсирующий член с влажным звуком выскальзывает наружу.. и следом горячие струи густой спермы одна за другой обрушиваются на задницу женщины, пачкая мех.. пока вода не начинает всё смывать.")
 
-		saynn("She is left panting heavily, her body twitching, pussy still twitching from the aftershocks.")
+		saynn("Она остается тяжело дышать, её тело подергивается, а киска всё ещё содрогается от отголосков оргазма.")
 
-		saynn("[say=elizaMom]Ahh.. hah..[/say]")
+		saynn("[say=elizaMom]Ах.. хах..[/say]")
 
-		saynn("She slumps against the wall, her legs finally giving out.")
+		saynn("Она оседает на стену, её ноги наконец подкашиваются.")
 
-		saynn("There is no time for aftercare.. so you let the water clean your cock.. before you step out.")
+		saynn("На нежность нет времени.. так что ты позволяешь воде омыть свой член.. прежде чем выйти.")
 
-		addButton("Continue", "See what happens next", "after_sex_grab_badge")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_sex_grab_badge")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

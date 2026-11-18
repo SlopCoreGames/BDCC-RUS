@@ -12,186 +12,186 @@ func _run():
 		addCharacter("ferri", ["naked"])
 		aimCameraAndSetLocName("hideout_breakroom")
 		playAnimation(StageScene.Duo, "stand", {npc="ferri", npcBodyState={naked=true}})
-		saynn("You ask your team for some special restraints.. And get provided with them!")
+		saynn("Вы просите свою команду принести особые оковы... И их приносят!")
 
-		saynn("Then, you step inside the cell and see Ferri. She is still naked, cuffed, muzzled and leashed to the pipe. Good.")
+		saynn("Затем вы заходите в камеру и видите Ферри. Она всё ещё голая, в наручниках, с намордником и на привязи у трубы. Хорошо.")
 
-		saynn("Her eyes lock onto you.")
+		saynn("Её взгляд впивается в вас.")
 
-		saynn("[say=ferri]Finally.. Took you long enough. Unlock me.[/say]")
+		saynn("[say=ferri]Наконец-то... Долго же ты возился. Развяжи меня![/say]")
 
-		saynn("You just hold up the puppy restraints that you've got. It looks like a set of black leather caps that would go onto someone's elbows and knees.")
+		saynn("Вы просто поднимаете те самые аксессуары для «щенят». Это похоже на набор черных кожаных накладок, которые надеваются на локти и колени.")
 
-		saynn("[say=ferri]No! Mew.. I'm not wearing that.[/say]")
+		saynn("[say=ferri]Нет! Мяу... Я не буду это носить![/say]")
 
 		saynn("[say=pc]"+str(ch1("You don't have a choice. You will wear this.", "You will, slut.", "You'll wear what I tell you to wear, bitch."))+"[/say]")
 
-		saynn("Ferri bares her fangs more behind the muzzle. They click against the metal basket.")
+		saynn("Ферри сильнее скалит клыки под намордником. Они стучат о металлическую сетку.")
 
-		saynn("[say=ferri]Make me, meanie![/say]")
+		saynn("[say=ferri]Заставь меня, вредина![/say]")
 
-		addButton("Continue", "See what happens next", "ferri_flops")
+		addButton("Продолжить", "Смотреть, что будет дальше", "ferri_flops")
 	if(state == "ferri_flops"):
 		playAnimation(StageScene.Duo, "stand", {npc="ferri", npcAction="defeat", npcBodyState={naked=true, leashedBy="pc"}})
-		saynn("You grab her leash and pull her towards the center of the cell. She tries to jerk away but you just yank harder, causing her to collapse.")
+		saynn("Вы хватаете её за поводок и тянете к центру камеры. Она пытается вырваться, но вы дергаете ещё сильнее, заставляя её повалиться на пол.")
 
-		saynn("[say=ferri]Grr-r.. EEP![/say]")
+		saynn("[say=ferri]Ррр-р... АЙ![/say]")
 
-		saynn("She flops awkwardly, her tail slams against the floor. It looks like the legs are gonna be easier to restrain so you start with them.")
+		saynn("Она неуклюже валится на пол, её хвост с силой хлопает по полу. Похоже, лапы будет проще зафиксировать, поэтому ты начинаешь с них.")
 
-		saynn("Ferri squirms and kicks, her tail whipping your arm. You ignore it, forcing the leather restraints onto her knees, making it so her rear paws are pressed against her butt.")
+		saynn("Ферри извивается и брыкается, её хвост так и хлещет тебя по руке. Ты игнорируешь это, натягивая кожаные ремни на её колени так, чтобы задние лапки были прижаты к её заднице.")
 
-		saynn("[say=ferri]I will bite you so hard![/say]")
+		saynn("[say=ferri]Я тебя укушу, так сильно укушу![/say]")
 
-		saynn("Not with that muzzle she won't.")
+		saynn("Не с этой намордником, как она думает.")
 
-		saynn("Her arms are next. You take off her cuffs and quickly bind her before she does too much scratching. Perfect.")
+		saynn("Следуют руки. Ты снимаешь её наручники и быстро связываешь их, пока она не успела слишком сильно исцарапать тебя. Идеально.")
 
-		addButton("Continue", "See what happens next", "ferri_all_fours")
+		addButton("Продолжить", "Смотреть, что будет дальше", "ferri_all_fours")
 	if(state == "ferri_all_fours"):
 		playAnimation(StageScene.PuppyDuo, "stand", {pc="pc", npc="ferri", npcAction="walk", npcBodyState={naked=true, hard=true, leashedBy="pc"}})
-		saynn("It's done. After putting all the bits on, you pull on the leash again, making Ferri get up and follow you around the cell. She is panting, her eyes furious.")
+		saynn("Всё готово. Нацепив на неё всё снаряжение, ты снова тянешь за поводок, заставляя Ферри подняться и ходить за тобой по камере. Она тяжело дышит, а её взгляд так и мечет молнии.")
 
-		saynn("She does look kinda cute like this. Her butt is swaying, her breasts are hanging low, bouncing with each step.")
+		saynn("А ведь выглядит она довольно мило. Попка покачивается, грудь низко свисает и подпрыгивает при каждом шаге.")
 
-		saynn("[say=ferri]Huff! Why are you doing this?[/say]")
+		saynn("[say=ferri]Хафф! Зачем ты это делаешь?[/say]")
 
 		saynn("[say=pc]"+str(ch1("I want you to be a good puppy.", "I want you to obey. Like a slutty puppy.", "I want to turn you into a drooling mindless pet."))+"[/say]")
 
-		saynn("She growls.. but her tail gives a little wag.")
+		saynn("Она рычит... но её хвостик при этом слегка виляет.")
 
-		saynn("[say=ferri]Never.[/say]")
+		saynn("[say=ferri]Никогда.[/say]")
 
-		saynn("You crouch in front of her.")
+		saynn("Ты приседаешь перед ней на корточки.")
 
 		saynn("[say=pc]"+str(ch1("Sit. Can you do that for me?", "Sit, bitch.", "Sit. Now."))+"[/say]")
 
-		saynn("She stares at you, her cyan eyes burning.")
+		saynn("Она сверлит тебя взглядом, её голубые глаза буквально горят.")
 
-		saynn("[say=ferri]No.[/say]")
+		saynn("[say=ferri]Нет.[/say]")
 
-		saynn("You reach out and boop her nose, sneaking your digit between the metal bars of the muzzle.")
+		saynn("Ты протягиваешь руку и тыкаешь её в носик, просовывая палец сквозь металлические прутья намордника.")
 
-		saynn("She blinks and goes cross-eyed for a second.")
+		saynn("Она моргает, и на секунду у неё даже глаза к переносице съезжаются.")
 
 		saynn("[say=pc]"+str(ch1("I'm not afraid of you, brat. Just sit, it's not that hard.", "I'm not afraid of you, silly. Just sit, it's not that hard.", "You're such a dumb pup. Just sit, it's not that hard."))+"[/say]")
 
-		saynn("Her rear lowers.. just a bit.")
+		saynn("Её зад опускается... совсем чуть-чуть.")
 
-		saynn("You reach out to scratch behind her left ear and under her chin. It makes her shudder.")
+		saynn("Ты протягиваешь руку, чтобы почесать её за левым ушком и под подбородком. От этого она вздрагивает.")
 
-		saynn("[say=ferri]Stop it.. mew..[/say]")
+		saynn("[say=ferri]Прекрати... мяу...[/say]")
 
 		saynn("[say=pc]"+str(ch1("Good puppy. Keep going.", "C'mon, keep going.", "Show me some obedience, c'mon. I know that you're nothing but a subby pup."))+"[/say]")
 
-		addButton("Continue", "See what happens next", "ferri_sits")
+		addButton("Продолжить", "Смотреть, что будет дальше", "ferri_sits")
 	if(state == "ferri_sits"):
 		playAnimation(StageScene.PuppyDuo, "stand", {pc="pc", npc="ferri", npcAction="paw", npcBodyState={naked=true, hard=true, leashedBy="pc"}})
-		saynn("Ferri sits all the way down.. and then pushes her front paws off of the floor.")
+		saynn("Ферри садится поплотнее... а затем отрывает передние лапки от пола.")
 
-		saynn("[say=ferri]..there.. mew..[/say]")
+		saynn("[say=ferri]...вот так... мяу...[/say]")
 
 		saynn("[say=pc]"+str(ch1("Now give me your paw.", "Now give me your paw. Now.", "Now give me your paw, pup."))+"[/say]")
 
-		saynn("She huffs and hesitates. So you give her some pats on her head, making her eyes flutter half-closed. A purr starts in her chest.")
+		saynn("Она фыркает и колеблется. Тогда ты ласкаешь её по голове, отчего её веки начинают полуприкрываться. В груди у неё зарождается мурлыканье.")
 
-		saynn("[say=ferri]Mnnn..[/say]")
+		saynn("[say=ferri]Мммм...[/say]")
 
-		saynn("She lifts her paw!")
+		saynn("Она поднимает лапку!")
 
 		saynn("[say=pc]"+str(ch1("Good girl.", "What a good little slut.", "Most of the time you're a worthless stupid whore. But you know some tricks it seems."))+"[/say]")
 
-		saynn("You hold her paw, shaking it gently.")
+		saynn("Ты берешь её лапку и слегка трясешь ею.")
 
-		saynn("[say=ferri]Mew.. this is humiliating..[/say]")
+		saynn("[say=ferri]Мяу... это так унизительно...[/say]")
 
 		saynn("[say=pc]"+str(ch1("You look adorable, though.", "You look like such an adorable slutty pet though.", "You look like an adorable slutty pet. Why do you even pretend to be a person."))+"[/say]")
 
-		saynn("She shakes her head, still resisting a bit.")
+		saynn("Она качает головой, всё ещё немного сопротивляясь.")
 
-		saynn("So you reach and grab her horns, sending a shiver down her spine.")
+		saynn("Ты протягиваешь руку и хватаешь её за рога, заставляя её вздрогнуть всем телом.")
 
-		saynn("[say=ferri]Eep.. mmh..[/say]")
+		saynn("[say=ferri]Иии.. ммм..[/say]")
 
-		saynn("As you start stroking them, her lips part and a soft noise starts escaping her.")
+		saynn("Когда ты начинаешь их поглаживать, её губы приоткрываются, и из горла начинает вырываться тихий звук.")
 
-		saynn("[say=ferri]Ah..[/say]")
+		saynn("[say=ferri]Ах...[/say]")
 
-		saynn("Her body squirms as your hand slides along her ridged horns. More and more cute noises escape her, her eyes keep wanting to roll up.")
+		saynn("Её тело извивается, пока твоя ладонь скользит по ребристым рогам. Всё больше и больше милых звуков срывается с её губ, а глаза то и дело закатываются.")
 
-		saynn("[say=ferri]Nnhh.. meanie..[/say]")
+		saynn("[say=ferri]Ннхх.. вредина..[/say]")
 
-		saynn("You can see it clearly. Her cyan nips are stiff and perky, her little pussy slit dripping juices onto the floor. Her tail begins to wag a little more.")
+		saynn("Это видно невооружённым глазом. Её голубые соски напряжены и торчат, а узкая щелочка киски сочится соком прямо на пол. Её хвост начинает вилять чуть активнее.")
 
-		saynn("[say=ferri]Hff.. ah..[/say]")
+		saynn("[say=ferri]Хфф.. ах..[/say]")
 
-		addButton("Continue", "See what happens next", "more_pats")
+		addButton("Продолжить", "Смотреть, что будет дальше", "more_pats")
 	if(state == "more_pats"):
 		playAnimation(StageScene.PuppySexStart, "pat", {pc="pc", npc="ferri", npcBodyState={naked=true, hard=true, leashedBy="pc"}})
-		saynn("You let Ferri get on all fours again.")
+		saynn("Ты позволяешь Ферри снова встать на четвереньки.")
 
 		saynn("[say=pc]"+str(ch1("Look at you. You're melting, cutie.", "Look at you. You're melting, little slut.", "Look at you. You're melting. Pathetic really."))+"[/say]")
 
-		saynn("[say=ferri]Nn.. shush..[/say]")
+		saynn("[say=ferri]Нн.. тсс..[/say]")
 
-		saynn("You trust that she won't bite you and take off her muzzle.")
+		saynn("Ты веришь, что она не укусит тебя, и снимаешь с неё намордник.")
 
-		saynn("And Ferri.. just stays still, looking up at you.")
+		saynn("И Ферри... просто замирает, глядя на тебя снизу вверх.")
 
 		saynn("[say=pc]"+str(ch1("Aww. You don't wanna bite me anymore.", "I see that you don't wanna bite me anymore. Cute.", "Already gave up trying to bite me. I expected that."))+"[/say]")
 
-		saynn("You put both of your hands on her head and sink your digits into her fur, giving her scritches everywhere! Ferri's breath hitches.")
+		saynn("Ты кладешь обе руки ей на голову и запускаешь пальцы в её густую шерсть, чеша её везде, где только можно! У Ферри перехватывает дыхание.")
 
-		saynn("[say=ferri]Huff.. ffhh.. hhf..[/say]")
+		saynn("[say=ferri]Хафф.. ффф.. ххф..[/say]")
 
-		saynn("You scratch behind her ears too.. and then switch to rubbing her horns again.. you find a spot that makes her hips twitch, her tail wagging visibly.. Thump-thump-thump against the concrete.")
+		saynn("Ты чешешь её и за ушами... а затем снова переходишь на поглаживание рогов... Ты находишь то самое место, от которого её бёдра начинают подергиваться, а хвост — заметно вилять... Тук-тук-тук по бетону.")
 
-		saynn("[say=ferri]Stohohop.. mew..[/say]")
+		saynn("[say=ferri]Стооооп.. мяу..[/say]")
 
-		saynn("Her body sure doesn't want you to stop. You give that puppy many headpats, really flattening her ears in the process. Then you lean forward and give her belly and back some long strokes, making her arch it.")
+		saynn("Её тело явно не хочет, чтобы ты останавливался. Ты осыпаешь эту щеночку почесушками по голове, так что её ушки прижимаются к черепу. Затем ты наклоняешься вперед и проводишь длинными движениями по её животу и спине, заставляя её выгнуться.")
 
-		saynn("[say=ferri]Nyaa-ah..[/say]")
+		saynn("[say=ferri]Няаа-ах..[/say]")
 
-		saynn("She squirms and shivers, her tongue rolls out as she pants.")
+		saynn("Она извивается и дрожит, высунув язык и тяжело дыша.")
 
 		saynn("[say=pc]"+str(ch1("You're a cute little puppy.", "You're a slutty little pup.", "Dumb little pup."))+"[/say]")
 
-		saynn("[say=ferri]Woof.. hff.. ahh..[/say]")
+		saynn("[say=ferri]Гав.. хфф.. аах..[/say]")
 
-		saynn("Oh yeah, her pussy slit is like a little fountain, dripping non-stop. But you don't give that area any attention, you just focus on giving her scritches and pats.")
+		saynn("О да, её киска — словно маленький фонтанчик, капающий без остановки. Но ты не уделяешь этой зоне внимания, а лишь продолжаешь чесать её и гладить.")
 
-		saynn("When you stop and offer her your hand.. she automatically starts nuzzling it, purring escaping her throat. You lean closer to her ear and whisper.")
+		saynn("Когда ты останавливаешься и протягиваешь ей руку... она тут же начинает тереться о неё носом, а из её горла вырывается мурлыканье. Ты наклоняешься к самому её уху и шепчешь.")
 
 		saynn("[say=pc]"+str(ch1("Puppy, puppy, puppy.", "Puppy, puppy, puppy.", "Puppy, puppy, puppy. Nothing but a stupid puppy."))+"[/say]")
 
-		saynn("[say=ferri]Woof.. woof.. mhh..[/say]")
+		saynn("[say=ferri]Гав.. гав.. ммх..[/say]")
 
-		saynn("You give her even more headpats and belly rubs!")
+		saynn("Ты гладишь её по голове ещё сильнее и чешешь ей пузико!")
 
-		saynn("After so much praise and stimulation.. her brain visible short-circuits, her mouth hangs open, her tongue drooling onto the floor. Her eyes became unfocused, her pupils blown wide. The only sounds she makes now are soft, rhythmic little pants and puppy barks. Her tail wags so much it could easily destroy a piece of furniture if it was near.")
+		saynn("После такого количества похвалы и стимуляции... её мозг буквально коротит: рот приоткрыт, с языка на пол капает слюна. Взгляд расфокусирован, зрачки расширены на весь глаз. Единственные звуки, которые она издаёт — это мягкое, ритмичное сопение и щенячий лай. Её хвост виляет так неистово, что он мог бы легко разнести мебель, окажись она рядом.")
 
-		saynn("No fight left in that puppy. No resistance.")
+		saynn("В этой щеночке не осталось ни капли борьбы. Никакого сопротивления.")
 
-		saynn("You keep her in this state for a while longer, continuing to shower her with nice words that keep any normal thoughts out of her mind.")
+		saynn("Ты оставляешь её в этом состоянии ещё на некоторое время, продолжая осыпать её ласковыми словами, которые не дают ни одной здравой мысли пробиться в её сознание.")
 
 		saynn("[say=pc]"+str(ch1("Yes. You're my puppy. My good little puppy.", "That's right. You're a puppy. My puppy.", "Worthless little thing. You know your place, right? Yes, you do."))+"[/say]")
 
-		saynn("But now it's time to wrap it up.")
+		saynn("Но пора закругляться.")
 
-		addButton("Continue", "See what happens next", "put_things_back")
+		addButton("Продолжить", "Смотреть, что будет дальше", "put_things_back")
 	if(state == "put_things_back"):
 		playAnimation(StageScene.Beg, "pat", {pc="ferri", npc="pc", bodyState={naked=true, hard=true}})
-		saynn("You strip the puppy gear from Ferri and put her old things back on.. the muzzle and the cuffs.")
+		saynn("Ты снимаешь с Ферри атрибуты щенка и надеваешь на неё старое снаряжение... намордник и кандалы.")
 
-		saynn("She is still looking quite spaced out.")
+		saynn("Она всё ещё выглядит совершенно отлетевшей.")
 
-		saynn("[say=ferri]Woof..[/say]")
+		saynn("[say=ferri]Гав..[/say]")
 
-		saynn("You give her some more pats!")
+		saynn("Вы гладите её ещё сильнее!")
 
-		saynn("And then.. you leave her be. Time to see what Kait thinks.")
+		saynn("А затем... вы оставляете её в покое. Пора узнать, что об этом думает Кейт.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -41,21 +41,21 @@ func _on_CustomLootKindSelector_item_selected(index):
 
 func updateDropTableData():
 	base_drop_table.setData({
-		name = "Base drop table",
+		name = "Базовая таблица дропа",
 		value = (data["baseTableID"] if data.has("baseTableID") else "base"),
 		values = GlobalRegistry.getLootTables().keys(),
 	})
 	chance_to_drop_credits_ui.setData({
-		name = "Chance to drop credits",
+		name = "Шанс выпадения кредитов",
 		value = (data["creditsDropChance"] if data.has("creditsDropChance") else 0),
 	})
 	min_credits_ui.setData({
-		name = "Min credits",
+		name = "Мин. кредитов",
 		value = (data["creditsMin"] if data.has("creditsMin") else 0),
 		int=true,
 	})
 	max_credits_ui.setData({
-		name = "Max credits",
+		name = "Макс. количество кредитов",
 		value = (data["creditsMax"] if data.has("creditsMax") else 0),
 		int=true,
 	})

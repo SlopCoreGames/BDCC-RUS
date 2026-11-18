@@ -2,7 +2,7 @@ extends MissionBase
 
 func _init():
 	id = "Mission2"
-	name = "Ferocious"
+	name = "Свирепый"
 	desc = "You got the papers with all the names. Time to figure out who you're gonna recruit next!"
 	
 	startScene = "DomM2s1Intro"
@@ -15,10 +15,10 @@ func _init():
 	
 	decisions = {
 		"fight": {
-			name = "Allowed fight",
+			name = "Разрешенная драка",
 			outcomes = {
 				"let": {
-					text = "Yes",
+					text = "Да",
 					effects = [
 						DECISION_EFFECT_KAIT_OBEDIENCE,
 					],

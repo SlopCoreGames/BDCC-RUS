@@ -29,7 +29,7 @@ func _run():
 			elif(theEntrySize == 5):
 				addButtonAt(actionEntry[4], actionEntry[0], actionEntry[1], "doAction", [actionEntry])
 				
-		#addButton("Leave", "Job well done", "endthescene")
+		#addButton("Уйти", "Работа выполнена!", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

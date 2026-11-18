@@ -37,7 +37,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Set breast size",
+			text = "Установить размер груди",
 		},
 		{
 			type = "slot",

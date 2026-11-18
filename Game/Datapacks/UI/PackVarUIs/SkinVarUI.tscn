@@ -11,14 +11,14 @@ script = ExtResource( 2 )
 margin_right = 26.0
 margin_bottom = 720.0
 size_flags_vertical = 7
-text = "Skin"
+text = "Кожа"
 valign = 1
 
 [node name="CheckBoxSkin" type="CheckBox" parent="." index="1"]
 margin_left = 30.0
 margin_right = 123.0
 margin_bottom = 720.0
-text = "Same Skin"
+text = "Тот же оттенок"
 
 [node name="OptionButton" type="OptionButton" parent="." index="2"]
 visible = false
@@ -41,7 +41,7 @@ size_flags_stretch_ratio = 7.0
 margin_left = 942.0
 margin_right = 1017.0
 margin_bottom = 720.0
-text = "Same R"
+text = "Тот же R"
 
 [node name="ColorPickerButtonR" type="ColorPickerButton" parent="." index="5"]
 margin_left = 1021.0
@@ -53,7 +53,7 @@ rect_min_size = Vector2( 30, 0 )
 margin_left = 1055.0
 margin_right = 1132.0
 margin_bottom = 720.0
-text = "Same G"
+text = "Тот же G"
 
 [node name="ColorPickerButtonG" type="ColorPickerButton" parent="." index="7"]
 margin_left = 1136.0
@@ -65,7 +65,7 @@ rect_min_size = Vector2( 30, 0 )
 margin_left = 1170.0
 margin_right = 1246.0
 margin_bottom = 720.0
-text = "Same B"
+text = "Тот же B"
 
 [node name="ColorPickerButtonB" type="ColorPickerButton" parent="." index="9"]
 margin_left = 1250.0

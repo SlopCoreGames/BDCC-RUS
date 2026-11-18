@@ -7,18 +7,18 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.GivingBirth, "idle")
 		aimCameraAndSetLocName("medical_paddedcell_player")
-		saynn("You've lost the fight!")
+		saynn("Ты проиграла бой!")
 
-		saynn("Multiple nurses come soon after and apprehend you.")
+		saynn("Вскоре приходят несколько медсестер и скручивают тебя.")
 
-		saynn("Then, you are thrown into the padded room where you don't have to worry about much anymore for a while. Whatever it is that they injected you with, it makes you feel nice and calm.")
+		saynn("Затем тебя бросают в мягкую камеру, где какое-то время можно ни о чем не беспокоиться. Что бы они тебе ни вкололи, от этого на душе становится удивительно приятно и спокойно.")
 
-		saynn("You failed to steal the lab stuff for Ferri. Looks like you will have to try again.")
+		saynn("Тебе не удалось украсть лабораторное оборудование для Ферри. Похоже, придется пробовать снова.")
 
-		saynn("Mission failed!")
+		saynn("Миссия провалена!")
 
-		addButton("Continue", "Stop the mission", "stopthemission")
-		addButton("Restart", "Try the mission again", "trymissionagain")
+		addButton("Продолжить", "Прервать миссию", "stopthemission")
+		addButton("Перезапустить", "Попробовать еще раз", "trymissionagain")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

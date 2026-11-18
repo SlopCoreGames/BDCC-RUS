@@ -42,7 +42,7 @@ margin_bottom = 42.0
 unique_name_in_owner = true
 margin_right = 246.0
 margin_bottom = 28.0
-text = "Enable sex toy integration"
+text = "Включить интеграцию с секс-игрушками"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Toy Settings/VBoxContainer"]
 margin_top = 46.0
@@ -59,7 +59,7 @@ size_flags_stretch_ratio = 0.3
 [node name="Label" type="Label" parent="TabContainer/Toy Settings/VBoxContainer/HBoxContainer/VBoxContainer"]
 margin_right = 292.0
 margin_bottom = 20.0
-text = "Backends"
+text = "Бэкенды"
 
 [node name="BackendsItemList" type="ItemList" parent="TabContainer/Toy Settings/VBoxContainer/HBoxContainer/VBoxContainer"]
 unique_name_in_owner = true
@@ -73,7 +73,7 @@ allow_reselect = true
 margin_top = 123.0
 margin_right = 292.0
 margin_bottom = 143.0
-text = "Found toy features"
+text = "Обнаруженные функции игрушки"
 
 [node name="ToyItemList" type="ItemList" parent="TabContainer/Toy Settings/VBoxContainer/HBoxContainer/VBoxContainer"]
 unique_name_in_owner = true
@@ -106,7 +106,7 @@ size_flags_vertical = 3
 unique_name_in_owner = true
 margin_right = 976.0
 margin_bottom = 28.0
-text = "Enabled"
+text = "Включено"
 
 [node name="BackendPackVariables" parent="TabContainer/Toy Settings/VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer2/BackendPanel" instance=ExtResource( 3 )]
 unique_name_in_owner = true
@@ -158,7 +158,7 @@ size_flags_vertical = 3
 unique_name_in_owner = true
 margin_right = 976.0
 margin_bottom = 20.0
-text = "( This toy is reported as missing by the backend )"
+text = "( Бэкенд сообщает, что эта игрушка отсутствует )"
 
 [node name="ToyPackVariables" parent="TabContainer/Toy Settings/VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer2/ToyPanel" instance=ExtResource( 3 )]
 unique_name_in_owner = true
@@ -178,7 +178,7 @@ margin_bottom = 80.0
 margin_right = 69.0
 margin_bottom = 26.0
 size_flags_vertical = 5
-text = "Test toy"
+text = "Тестовая игрушка"
 valign = 1
 
 [node name="TestToyButton" type="Button" parent="TabContainer/Toy Settings/VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer2/ToyPanel/HBoxContainer"]
@@ -186,7 +186,7 @@ unique_name_in_owner = true
 margin_left = 73.0
 margin_right = 127.0
 margin_bottom = 26.0
-text = "Start"
+text = "Старт"
 
 [node name="TestToySlider" type="HSlider" parent="TabContainer/Toy Settings/VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer2/ToyPanel/HBoxContainer"]
 unique_name_in_owner = true
@@ -206,7 +206,7 @@ margin_bottom = 110.0
 [node name="ForgetToyButton" type="Button" parent="TabContainer/Toy Settings/VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer2/ToyPanel/HBoxContainer2"]
 margin_right = 100.0
 margin_bottom = 26.0
-text = "Forget toy"
+text = "Забыть игрушку"
 
 [node name="Gameplay Triggers" parent="TabContainer" instance=ExtResource( 4 )]
 visible = false
@@ -214,7 +214,7 @@ visible = false
 [node name="CloseButton" type="Button" parent="."]
 margin_right = 139.0
 margin_bottom = 36.0
-text = "Save & Close"
+text = "Сохранить и закрыть"
 
 [connection signal="pressed" from="TabContainer/Toy Settings/VBoxContainer/HBoxContainer2/EnableManagerCheckbox" to="." method="_on_EnableManagerCheckbox_pressed"]
 [connection signal="item_selected" from="TabContainer/Toy Settings/VBoxContainer/HBoxContainer/VBoxContainer/BackendsItemList" to="." method="_on_BackendsItemList_item_selected"]

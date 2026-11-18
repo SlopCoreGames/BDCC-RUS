@@ -15,7 +15,7 @@ margin_bottom = 24.0
 [node name="DeleteButton" type="Button" parent="VBoxContainer"]
 margin_right = 55.0
 margin_bottom = 24.0
-text = "Delete"
+text = "Удалить"
 
 [node name="UpButton" type="Button" parent="VBoxContainer"]
 margin_left = 59.0
@@ -28,7 +28,7 @@ margin_left = 82.0
 margin_top = 5.0
 margin_right = 147.0
 margin_bottom = 19.0
-text = "Condition:"
+text = "Условие:"
 
 [node name="LineEdit" type="LineEdit" parent="VBoxContainer"]
 margin_left = 151.0

@@ -8,64 +8,64 @@ func _run():
 		playAnimation(StageScene.Solo, "stand", {bodyState={naked=true}})
 		
 		if(GM.pc.isFullyNaked()):
-			saynn("You look around for an empty spot and go towards it")
+			saynn("Ты оглядываешься в поисках свободного места и направляешься к нему")
 			
-			addButton("Continue", "Take a shower", "doShower")
+			addButton("Продолжить", "Принять душ", "doShower")
 		else:
-			saynn("You take off your clothes and put them into one of the lockers. It has a lock so no one should be able to just steal them.")
+			saynn("Ты раздеваешься и складываешь вещи в один из шкафчиков. Он закрывается на замок, так что просто так их никто не украдет.")
 			
-			saynn("Now, completely naked, you proceed into the shower room and find an available spot")
+			saynn("Теперь, совершенно голышом, ты проходишь в душевую и находишь свободное место")
 
-			addButton("Continue", "Go take a shower", "doShower")
+			addButton("Продолжить", "Пойти в душ", "doShower")
 		
 	if(state == "doShower"):
 		playAnimation(StageScene.Showering, "head", {pc="pc", bodyState={naked=true}})
 		
-		saynn("You get under one of the shower heads and begin tinkering with the faucets.")
+		saynn("Ты встаешь под одну из душевых леек и начинаешь возиться с кранами.")
 		
-		saynn("But no matter what you do, all you get is cold water. It’s not freezing but it’s clear enough how the prison saves on costs")
+		saynn("Но что бы ты ни делал, из крана течет только холодная вода. Она не ледяная, но сразу становится ясно, на чем тюрьма экономит бюджет.")
 
-		saynn("You begin washing yourself, starting with the hair and going down, cleaning your face, neck, shoulders, chest, arms and legs")
+		saynn("Ты начинаешь мыться, начиная с волос и спускаясь ниже: отмываешь лицо, шею, плечи, грудь, руки и ноги")
 		
 		if(GM.pc.hasReachableVagina()):
-			saynn("Your hands slip down between your legs and give your slit a little rub to make sure it’s all clean there as well")
+			saynn("Твои руки скользят вниз, между ног, и ты слегка потираешь свою щелочку, чтобы убедиться, что там тоже всё чисто")
 		
 		if(GM.pc.hasReachablePenis()):
-			saynn("Your cock gets some attention too, you take your time to wash the shaft and the ballsack")
+			saynn("Твой член тоже получает внимание: ты не спеша отмываешь ствол и мошонку")
 		
-		saynn("Eventually, you finish cleaning yourself and just stand still under the running water for a bit, pondering")
+		saynn("В конце концов, закончив мыться, ты просто замираешь под струями воды, погружаясь в раздумья")
 		
-		addButton("Done", "Finish showering", "finish")
-		addButton("Clean inside", "Wash out any bodily fluids from inside too", "clean_inside")
-		addButton("Cold shower", "Helps to calm down", "cold_shower")
-		addButton("Masturbate", "Do something extra..", "masturbateselect")
+		addButton("Готово", "Закончить душ", "finish")
+		addButton("Помыться внутри", "Вымыть изнутри все выделения тела", "clean_inside")
+		addButton("Холодный душ", "Помогает успокоиться", "cold_shower")
+		addButton("Подрочить", "Сделать что-нибудь эдакое...", "masturbateselect")
 		GM.ES.triggerRun(Trigger.TakingAShower)
 			
 	if(state == "cold_shower"):
 		playAnimation(StageScene.Showering, "crotch", {pc="pc", bodyState={naked=true}})
 		
-		saynn("You switch the water to the coldest it can be. It’s refreshing and helps you to get away from the horny thoughts")
+		saynn("Ты переключаешь воду на самую холодную. Это освежает и помогает прогнать похотливые мысли")
 			
-		addButton("Done", "Finish showering", "finish")
+		addButton("Готово", "Закончить душ", "finish")
 			
 	if(state == "clean_inside"):
 		playAnimation(StageScene.Showering, "crotch", {pc="pc", bodyState={naked=true}})
 		
-		saynn("You use the shower to remove any fluids from your orifices")
+		saynn("Вы используете душ, чтобы смыть все выделения из своих отверстий")
 		
-		addButton("Done", "Finish showering", "finish")
-		addButton("Masturbate", "Do something extra..", "masturbateselect")
+		addButton("Готово", "Закончить душ", "finish")
+		addButton("Подрочить", "Сделать что-нибудь эдакое...", "masturbateselect")
 			
 	if(state == "finish"):
 		playAnimation(StageScene.Solo, "stand")
 		aimCamera(GM.pc.location)
 		
-		saynn("You turn off the water and go grab a towel to rub yourself dry.")
+		saynn("Вы выключаете воду и берете полотенце, чтобы насухо вытереться.")
 		
 		if(!GM.pc.isFullyNaked()):
-			saynn("Then you open your locker and put your clothing back on, ready to leave.")
+			saynn("Затем вы открываете шкафчик и снова одеваетесь, готовые к выходу.")
 		
-		addButton("Continue", "Feeling fresh", "endthescene")
+		addButton("Продолжить", "Чувствуете себя свежо", "endthescene")
 
 
 
@@ -76,24 +76,24 @@ func _run():
 		playAnimation(StageScene.Solo, "stand")
 		
 		if(GM.pc.hasPerk(Perk.NakedNoShame)):
-			saynn("As you stand idle and let the water wash over your body for a while longer, you decide you might as well take care of your lust.")
-			saynn("Your hands feel over your stomach as a mimicry of cleaning yourself as you mull over how exactly you should satiate yourself.")
-			saynn("Who cares if anyone watches?")
+			saynn("Пока вы стоите неподвижно, позволяя воде еще немного стекать по телу, вы решаете, что не помешало бы заняться удовлетворением своей похоти.")
+			saynn("Ваши руки скользят по животу, имитируя процесс мытья, пока вы раздумываете о том, как именно стоит себя удовлетворить.")
+			saynn("Да какая разница, если кто-то смотрит?")
 		else:
-			saynn("Thinking it over, you check over your shoulder if anyone is gonna instantly spot you.")
-			saynn("The showers stay pretty empty and you’re tucked away in your little corner so it should be safe if you don’t take too long.")
+			saynn("Обдумывая это, вы оглядываетесь через плечо, чтобы проверить, не заметит ли вас кто-нибудь мгновенно.")
+			saynn("В душевых почти пусто, а вы спрятались в своем уголке, так что, если не задержитесь слишком долго, всё должно быть безопасно.")
 		
-		saynn("How should you masturbate?")
+		saynn("Как именно вы будете мастурбировать?")
 
-		addButtonWithChecks("Penis", "Jerk off with your cock", "masturbate_penis", [], [ButtonChecks.HasReachablePenis])
-		addButtonWithChecks("Penis Milker", "Use your cockmilker in the public showers", "masturbate_penismilk", [], [ButtonChecks.HasPenisPump, ButtonChecks.HasReachablePenis])
-		addButtonWithChecks("Vaginal", "Finger your vagina", "masturbate_vaginal", [], [ButtonChecks.HasReachableVagina])
-		addButtonWithChecks("Anal", "Try and get off using you ass", "masturbate_anal", [], [ButtonChecks.HasReachableAnus])
+		addButtonWithChecks("Пенис", "Дрочить своим членом", "masturbate_penis", [], [ButtonChecks.HasReachablePenis])
+		addButtonWithChecks("Доилка для члена", "Использовать доилку в общественном душе", "masturbate_penismilk", [], [ButtonChecks.HasPenisPump, ButtonChecks.HasReachablePenis])
+		addButtonWithChecks("Вагинальный", "Трахать себя пальцами", "masturbate_vaginal", [], [ButtonChecks.HasReachableVagina])
+		addButtonWithChecks("Анальный", "Попробовать кончить через задницу", "masturbate_anal", [], [ButtonChecks.HasReachableAnus])
 		if(GM.pc.isLactating()):
-			addButton("Breasts", "Try and milk yourself", "masturbate_milk")
+			addButton("Грудь", "Попробовать доить саму себя", "masturbate_milk")
 		elif(!GM.pc.isLactating()):
-			addDisabledButton("Breasts", "You aren’t lactating enough to get off on being milked")
-		addButton("Nevermind", "Just finish up and leave.", "endthescene")
+			addDisabledButton("Грудь", "У тебя не так много молока, чтобы получать кайф от дойки")
+		addButton("Проехали", "Просто закончи и уходи.", "endthescene")
 	
 	
 	
@@ -101,113 +101,113 @@ func _run():
 		playAnimation(StageScene.Showering, "stroke", {pc="pc", bodyState={naked=true,hard=true}})
 		#playAnimation(StageScene.Solo, "stand", {pc="pc", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		if(GM.pc.hasPerk(Perk.NakedNoShame)):
-			saynn("Without so much as a thought for anyone who could be in here with you, your hands reach down your hips and start to tease your cock to get hard enough, feeling it over in your hands.")
+			saynn("Вообще не думая о том, кто может оказаться здесь вместе с тобой, ты опускаешь руки к бедрам и начинаешь ласкать свой член, чтобы он достаточно затвердел, ощущая его в ладонях.")
 			if(GM.pc.isVisiblyPregnant()):
-				saynn("It’s a fair bit awkward to reach around your gravid stomach with your advancing pregnancy but you manage just fine as you give your firm stomach a quick rub with your other hand.")
+				saynn("Из-за растущей беременности дотянуться до себя через округлившийся живот довольно неудобно, но ты справляешься, быстро поглаживая свой твердый живот другой рукой.")
 			if(GM.pc.hasVagina()):
-				saynn("As you reach further downwards with your other hand, you begin to tease the outer lips of your wet snatch, giving it a rub over and a grazing with your fingers")
-			saynn("Your {pc.cock} hardens enough for you to start stroking away at it.")
-			saynn("Even as you work on bringing yourself off there isn’t a whole lot to do besides feel the slightly cold water dance down your body.")
-			saynn("As such, you put no effort into hiding yourself or the noises you’re making. Calmly huffing and panting as you feel and stroke your hand over the places you know arouse you the best, making drowned-out wet schlicks as you go.")
-			saynn("Time passes but you don’t really keep track, putting your hand against the wall in front of you and spreading your legs a bit to really start going at it. Not caring to suppress the new moans you make.")
-			saynn("A quick look up to see if you’re gonna get caught and it seems like no one has bothered or just doesn’t care.")
-			saynn("Uneventful, maybe you should head out into the main hall if you want some attention...")
-			saynn("The building feeling of an orgasm welling up inside you distracts from your idle thoughts, and you get a really lecherous idea in your head. Your {pc.cock} pulses in your hands and you have just enough time to turn around and put your back against the wall to keep you from slipping...")
+				saynn("Продолжая тянуться ниже другой рукой, ты начинаешь дразнить внешние половые губы своей влажной киски, поглаживая и слегка задевая их пальцами.")
+			saynn("Твой {pc.cock} достаточно твердеет, чтобы ты могла начать ритмично его ласкать.")
+			saynn("Даже когда ты пытаешься довести себя до оргазма, делать особо нечего — разве что чувствовать, как капли прохладной воды танцуют по твоему телу.")
+			saynn("Поэтому ты даже не пытаешься скрываться или сдерживать звуки. Ты спокойно сопишь и тяжело дышишь, поглаживая рукой те места, которые возбуждают тебя лучше всего, издавая при этом приглушенные влажные члюпающие звуки.")
+			saynn("Время идет, но ты его не замечаешь, упираясь рукой в стену перед собой и слегка разводя ноги, чтобы взяться за дело всерьез. Тебе плевать, что ты не сдерживаешь новые стоны.")
+			saynn("Ты быстро оглядываешься, чтобы проверить, не поймают ли тебя, но, похоже, всем либо плевать, либо просто никто не обращает внимания.")
+			saynn("Ничего особенного. Может, стоит выйти в главный зал, если тебе хочется внимания...")
+			saynn("Ощущение нарастающего внутри оргазма отвлекает от праздных мыслей, и в голове рождается по-настоящему похотливая идея. Твой {pc.cock} пульсирует в руках, и у тебя как раз хватает времени, чтобы развернуться спиной к стене, дабы не соскользнуть...")
 		else:
-			saynn("You keep looking over your shoulder as your hands trace down your body and start to fondle your sex. Pushing your body up against the shower wall and doing your best to cover what your doing with your back and legs.")
+			saynn("Ты продолжаешь оглядываться через плечо, пока твои руки скользят вниз по телу, начиная ласкать твой член. Ты прижимаешься телом к стене душевой, изо всех сил стараясь прикрыться спиной и ногами.")
 			if(GM.pc.isVisiblyPregnant()):
-				saynn("It’s a fair bit awkward to reach around your gravid stomach with your advancing pregnancy but you manage just fine as you give your firm stomach a quick rub with your other hand.")
+				saynn("Из-за растущей беременности дотянуться до себя через округлившийся живот довольно неудобно, но ты справляешься, быстро поглаживая свой твердый живот другой рукой.")
 			if(GM.pc.hasVagina()):
-				saynn("Even as you try and hide yourself away you spread your thighs a bit and give your {pc.vagina} a quick tease, giving it a shallow graze with your other hand.")
-			saynn("As your {pc.cock} hardens and you start stroking its length, you try and stifle the sounds you make as best as you can.")
-			saynn("You inadvertently keep looking around as you try and spot any prying eyes and listen for the sounds of approaching people.")
-			saynn("It feels like time passes slower as you stay alert, it takes forever to get up to a good pace. Seeing as you’re still in the clear, you simply just put your head down between your arms and try and focus on finishing as fast as possible.")
-			saynn("Getting closer to your release you become more paranoid someone is gonna spot you, you try and speed up the process by focusing on the spots you know your {pc.cock} has.")
-			saynn("You welcome the continuing build-up of an orgasm, you’re going to cum soon enough...")
+				saynn("Даже пытаясь спрятаться, ты слегка раздвигаешь бедра и быстро дразнишь свой {pc.vagina}, слегка проводя по нему другой рукой.")
+			saynn("По мере того как твой {pc.cock} твердеет и ты начинаешь ласкать его вдоль, ты изо всех сил стараешься заглушить издаваемые звуки.")
+			saynn("Ты невольно продолжаешь оглядываться по сторонам, пытаясь выловить любопытные взгляды и прислушиваясь к шагам приближающихся людей.")
+			saynn("Кажется, что время тянется медленнее, пока ты начеку; кажется, целая вечность проходит, прежде чем темп станет приличным. Видя, что тебя всё еще не заметили, ты просто опускаешь голову между рук, пытаясь сосредоточиться на том, чтобы закончить как можно быстрее.")
+			saynn("Приближаясь к разрядке, ты становишься еще более параноидальным, боясь, что кто-то тебя заметит, и пытаешься ускорить процесс, концентрируясь на тех точках, которые заставляют твой {pc.cock} взрываться.")
+			saynn("Ты наслаждаешься нарастающим оргазмом, ты вот-вот кончишь...")
 			
-		addButton("Cum!", "", "masturbate_peniscum")
+		addButton("Кончай!", "", "masturbate_peniscum")
 	if(state == "masturbate_peniscum"):
 		playAnimation(StageScene.Showering, "stroke", {pc="pc", pcCum=true, bodyState={naked=true,hard=true}})
 		#playAnimation(StageScene.Solo, "stand", {pc="pc", npc="pc", pcCum=true, npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		
 		if(GM.pc.hasPerk(Perk.NakedNoShame)):
-			saynn("You shut your eyes as the shower water sprays the back of your head. Having turned around you aim your impending cumshot from your little shower area and out into the open.")
-			saynn("One more stroke along your cock and you feel yourself finally give, shooting a nice load in a vague direction out into the open. But you just continue stroking away, milking as much as you can from your balls.")
+			saynn("Ты зажмуриваешься, пока струи душа бьют по затылку. Развернувшись, ты направляешь свой грядущий конч в сторону от душевой кабины, прямо в открытое пространство.")
+			saynn("Еще одно движение вдоль члена, и ты чувствуешь, как наконец сдаешься, выпуская густую порцию куда-то в сторону. Но ты продолжаешь ласкать себя, выжимая из яичек всё до последней капли.")
 			if(GM.pc.hasVagina()):
-				saynn("Your neglected vagina follows in tandem, coating your inner thighs in girlcum as they squeeze against nothing.")
-			saynn("As your orgasm passes you open your eyes once more. Bracing an arm against the wall as you peel yourself off it on weak legs.")
-			saynn("Looking down to find you left a good string of cum on the tile floor, and the echo of voices at the far end of the showers seeing something. It might be best to leave now.")
+				saynn("Твоя заброшенная вагина следует за ним, заливая внутреннюю сторону бедер девичьим соком, пока она сжимается в пустоту.")
+			saynn("Когда оргазм проходит, ты снова открываешь глаза. Упираясь рукой в стену, ты пытаешься оторваться от неё на ватных ногах.")
+			saynn("Посмотрев вниз, ты видишь, что оставила на кафельном полу длинную тягу спермы, а эхо голосов в дальнем конце душевой намекает, что кто-то что-то заметил. Пожалуй, лучше уходить прямо сейчас.")
 			if(GM.pc.isVisiblyPregnant()):
-				saynn("You press your hands onto your pregnant stomach to help get it back into a comfortable enough position.")
-			saynn("Using the shower to quickly wash any leftovers from your hands you head back to the locker room grabbing a towel as you go.")
+				saynn("Ты прижимаешь руки к своему беременному животу, пытаясь уложить его в более удобное положение.")
+			saynn("Быстро смыв остатки с рук под душем, ты направляешься обратно в раздевалку, на ходу хватая полотенце.")
 			
 		else:
-			saynn("Feeling yourself starting to slip over the edge you tease your more sensitive spots and shut your eyes, pressing yourself against the wall.")
-			saynn("You bite your tongue and suppress a cry as you forcefully bend your cock between your legs to conceal your cumshot.")
+			saynn("Чувствуя, что вот-вот сорвешься в бездну, ты ласкаешь свои самые чувствительные точки и зажмуриваешься, прижимаясь всем телом к стене.")
+			saynn("Ты прикусываешь язык и подавляешь вскрик, изо всех сил прижимая член между ног, чтобы скрыть свой конч.")
 			if(GM.pc.hasVagina()):
-				saynn("Your neglected vagina freely squirts and leaks girlcum against your squished together thighs and balls since you’re hiding your orgasm.")
-			saynn("As your orgasm passes you finally give up hiding anything, putting your arm and head against the wall and panting heavily and dripping your own cum down your legs.")
-			saynn("You dart your head up as if you were spotted and sigh in relief as you got away with it.")
+				saynn("Твоя заброшенная киска вовсю брызжет и течет девичьим соком на прижатые друг к другу бедра и яйца, раз уж ты пытаешься спрятать оргазм.")
+			saynn("Когда оргазм проходит, ты наконец перестаешь прятаться: прижимаешься рукой и головой к стене, тяжело дыша и позволяя собственной сперме стекать по ногам.")
+			saynn("Ты резко вскидываешь голову, словно тебя заметили, но с облегчением вздыхаешь, поняв, что тебе это сошло с рук.")
 			if(GM.pc.isVisiblyPregnant()):
-				saynn("Righting yourself back on your feet, you try your best adjusting your pregnant stomach into a more comfortable position.")
-			saynn("Quickly washing any excess cum or sweat off you manage to calm yourself back down.")
-			saynn("You take your time heading back to the locker rooms, toweling off as you go.")
+				saynn("Выпрямившись, ты изо всех сил пытаешься устроиться поудобнее, поправляя свой беременный живот.")
+			saynn("Быстро смыв лишнюю сперму и пот, тебе удается немного успокоиться.")
+			saynn("Ты не спеша направляешься обратно в раздевалки, вытираясь на ходу полотенцем.")
 		
-		addButton("Finished", "Time to go.", "endthescene")
+		addButton("Готово", "Пора идти.", "endthescene")
 	
 	
 	if(state == "masturbate_penismilk"):
 		playAnimation(StageScene.Showering, "rub", {pc="pc", bodyState={naked=true,hard=true}})
 		#playAnimation(StageScene.Solo, "stand", {pc="pc", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		if(GM.pc.hasPerk(Perk.NakedNoShame)):
-			saynn("You casually walk back to the locker rooms still naked and never grabbing a towel. Opening the locker you grab a cock milker and start heading back to your spot.")
-			saynn("Passing a few inmates on your way back, they’re all focused on scrubbing themselves but if one notices you give them a quick flash of your body.")
-			saynn("Back in your spot you waste no time getting your cock hard and strapped into your penis pump.")
+			saynn("Ты небрежно идешь обратно в раздевалки всё еще голышом, даже не взяв полотенце. Открыв шкафчик, ты хватаешь доильный аппарат для члена и направляешься к своему месту.")
+			saynn("По пути назад ты проходишь мимо нескольких заключенных: все они заняты тем, что трут себя мочалками, но если кто-то тебя замечает, ты мимоходом демонстрируешь им свое тело.")
+			saynn("Вернувшись на место, ты не теряешь времени: возбуждаешь свой член и закрепляешь его в помпе.")
 			if(GM.pc.isVisiblyPregnant()):
-				saynn("Your gravid stomach makes trying to fit into it a bit of a guess but you find it just fine with a bit of effort.")
-			saynn("Flipping the switch the pump gets to work with a little hum.")
-			saynn("Not wanting to waste the opportunity you turn the water back on and just relax in the bliss of having your {pc.cock} pumped while in the shower.")
+				saynn("Из-за твоего раздутого живота не совсем понятно, влезет ли он туда, но с небольшим усилием ты понимаешь, что всё сидит как надо.")
+			saynn("Ты щелкаешь переключателем, и помпа начинает работать с легким гулом.")
+			saynn("Не желая упускать возможность, ты снова включаешь воду и просто расслабляешься, наслаждаясь блаженством от того, что твой {pc.cock} качают прямо в душе.")
 			if(GM.pc.hasVagina()):
-				saynn("Not wanting to leave your {pc.vagina} behind you reach under your balls and begin to just idly thumb over your clitoris and finger your sex.")
-			saynn("You let the pump do its work as your cock twitches and throbs against the masturbation ring, loudly moaning each time it runs over your dick.")
-			saynn("The shower definitely helps you relax as you have a dumb smile on your face with your back against the wall.")
-			saynn("Eventually you feel your orgasm well up within you...")
+				saynn("Не желая оставлять свой {pc.vagina} позади, ты запускаешь руку под яички и начинаешь лениво поглаживать клитор и ласкать свой член пальцами.")
+			saynn("Ты позволяешь помпе делать свое дело, пока твой член дергается и пульсирует в мастурбационном кольце, а ты громко стонешь каждый раз, когда она проходит по твоему члену.")
+			saynn("Душ определенно помогает расслабиться: ты стоишь, прислонившись спиной к стене, с глупой улыбкой на лице.")
+			saynn("В конце концов ты чувствуешь, как внутри тебя нарастает оргазм...")
 		else:
-			saynn("You leave the water running as you use your hands to cover yourself up and head back to your locker to quickly snatch your penis pump.")
-			saynn("Running back as quick as you can with the pump behind your back you find a good spot to settle in while you work on getting hard...")
+			saynn("Ты оставляешь воду включенной, прикрываешься руками и направляешься к своему шкафчику, чтобы быстро схватить помпу.")
+			saynn("Ты бежишь изо всех сил, прижимая насос к спине, и ищешь укромное местечко, чтобы устроиться и попытаться встать колом...")
 			if(GM.pc.isVisiblyPregnant()):
-				saynn("Your gravid stomach makes trying to fit into it a bit of a guess but you find it just fine with a bit of effort.")
-			saynn("Finally with your {pc.cock} inside the pump you turn it on as the little mechanical masturbator does its work.")
-			saynn("To help hide the noise of the pump you turn the shower valve as high as it will go, letting the sound of the water drown out the sounds of what you’re doing.")
+				saynn("Из-за твоего раздутого живота не совсем понятно, влезет ли он туда, но с небольшим усилием ты понимаешь, что всё сидит как надо.")
+			saynn("Наконец, надев {pc.cock} на член, ты включаешь насос, и маленький механический мастурбатор принимается за дело.")
+			saynn("Чтобы скрыть шум насоса, ты выкручиваешь кран душа на полную мощь, позволяя шуму воды заглушить звуки твоих ласк.")
 			if(GM.pc.hasVagina()):
-				saynn("It’s probably best if you got off as fast you can. You reach under your balls and start fingering away at your {pc.vagina}.")
-			saynn("Biting your lip to keep your moaning quiet you feel your orgasm approaching fast...")
-		addButton("Cum!", "", "masturbate_penismilkcum")
+				saynn("Пожалуй, лучше всего будет кончить как можно быстрее. Ты запускаешь руку под яички и начинаешь активно возиться пальцами со своим {pc.vagina}.")
+			saynn("Прикусывая губу, чтобы не стонать слишком громко, ты чувствуешь, как оргазм стремительно приближается...")
+		addButton("Кончай!", "", "masturbate_penismilkcum")
 
 	if(state == "masturbate_penismilkcum"):
 		#playAnimation(StageScene.Solo, "stand", {pc="pc", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		playAnimation(StageScene.Showering, "rub", {pc="pc", bodyState={naked=true,hard=true}})
 		
 		if(GM.pc.hasPerk(Perk.NakedNoShame)):
-			saynn("You let out a sharp cry as the pump milks you dry and continues going at your cock as you baste the inside of it with your {pc.cum}...")
+			saynn("Ты издаешь резкий вскрик, когда насос выжимает из тебя всё до последней капли, продолжая молотить по члену, пока ты заливаешь его нутро своей {pc.cum}...")
 			if(GM.pc.hasVagina()):
-				saynn("Your {pc.vaginaStretch} pussy follows your cock and similarly coats your inner thighs with girlcum.")
-			saynn("Coming down from your orgasm you right yourself and push off the shower wall.")
+				saynn("Твоя {pc.vaginaStretch} следует за членом, точно так же покрывая внутреннюю сторону бедер девичьей смазкой.")
+			saynn("Приходя в себя после оргазма, ты приводишь себя в порядок и отталкиваешься от стены душевой.")
 			if(GM.pc.isVisiblyPregnant()):
-				saynn("Putting an arm around your pregnant belly as you get back into proper order.")
-			saynn("You switch the penis pump off and pull it off your softening cock with a really wet, lewd-sounding plap.")
-			saynn("Giving the pump a look, you probably can’t use any of the cum inside it because of the running water, but you have a better idea...")
-			saynn("Holding the end of the pump up to the still running shower head you give a good clean out, like a responsible cum slut.")
-			saynn("Finishing up, you put the pump under your arm and grab two towels to dry yourself and the pump and get back to whatever you were doing.")
+				saynn("Ты обхватываешь рукой свой беременный живот, стараясь прийти в норму.")
+			saynn("Ты выключаешь насос и снимаешь его со своего обмякшего члена с громким, похотливым влажным шлепком.")
+			saynn("Взглянув на насос, ты понимаешь, что из-за текущей воды использовать его сперму вряд ли получится, но у тебя есть идея получше...")
+			saynn("Подставив конец насоса под всё еще работающую душевую лейку, ты хорошенько его промываешь, словно ответственная спермопотаранка.")
+			saynn("Закончив, ты зажимаешь насос под мышкой, хватаешь два полотенца, чтобы вытереть себя и девайс, и возвращаешься к своим делам.")
 		else:
-			saynn("You cover your mouth to mask a sultry groan as your throbbing {pc.cock} starts filling the pump with fresh cum.")
-			saynn("You squirm against the shower wall as the pump milks your balls dry while you try to keep quiet.")
+			saynn("Ты прикрываешь рот рукой, чтобы скрыть томный стон, пока твой пульсирующий {pc.cock} наполняет насос свежей спермой.")
+			saynn("Ты ерзаешь, прижимаясь к стенке душа, пока насос выжимает из твоих яичек всё до последней капли, а ты изо всех сил стараешься не шуметь.")
 			if(GM.pc.hasVagina()):
-				saynn("Girlcum leaks onto your inner thighs as your unused vagina follows with its own orgasm.")
-			saynn("You waste no time in getting the pump off your cock with a wet, lewd squelch. The last of your cum dripping from the tip of your dick in one long strand down your legs, and another still hanging from your tip to the pump.")
-			saynn("Hurriedly, you clean all evidence from you and the pump. Wrapping it in a towel as you make your getaway.")
+				saynn("Женская сперма стекает по твоим внутренней стороне бедер, когда твоя неиспользованная вагина следует за тобой, извергаясь в собственном оргазме.")
+			saynn("Ты не теряя времени снимаешь насос с члена с влажным, похотливым хлюпаньем. Последняя струйка спермы тянется от кончика твоего члена длинной нитью вниз по ногам, а еще одна всё еще свисает от головки к насосу.")
+			saynn("Ты поспешно смываешь все следы с себя и с насоса, заворачивая его в полотенце, чтобы незаметно скрыться.")
 		
-		addButton("Finished", "Just finish up and leave.", "endthescene")
+		addButton("Готово", "Просто закончи и уходи.", "endthescene")
 
 
 
@@ -216,56 +216,56 @@ func _run():
 		#playAnimation(StageScene.Solo, "stand", {pc="pc", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		
 		if(GM.pc.hasPerk(Perk.NakedNoShame)):
-			saynn("Without so much as a thought for anyone who could be in here with you, your hands reach down your hips and start to tease your {pc.vaginaStretch} pussy as the water flows down your body.")
+			saynn("Совершенно не заботясь о том, может ли кто-то застать тебя здесь, ты опускаешь руки ниже бедер и начинаешь дразнить свою запертую {pc.vaginaStretch} киску, пока вода стекает по твоему телу.")
 			if(GM.pc.isVisiblyPregnant()):
-				saynn("It’s a fair bit awkward to reach around your gravid stomach with your advancing pregnancy but you manage just fine as you give your firm stomach a quick rub with your other hand.")
+				saynn("Из-за растущей беременности дотянуться до себя через округлившийся живот довольно неудобно, но ты справляешься, быстро поглаживая свой твердый живот другой рукой.")
 			if(GM.pc.isWearingChastityCage()):
-				saynn("Your offhand follows your other one down giving your locked away {pc.cock} a tease.")
+				saynn("Твоя свободная рука следует за другой вниз, дразня твою запертую {pc.cock}.")
 			elif(GM.pc.hasReachablePenis()):
-				saynn("Your offhand follows your other one down giving your growing {pc.cock} a tease.")
-			saynn("You don’t waste effort hiding your huffing and moaning as you work. Getting your fingers as deep as they will go and blindly feeling around.")
-			saynn("Satisfied with teasing you move onto rubbing the spots you know the best with your fingers while giving your clit a rub with the other hand.")
-			saynn("Even as you work on bringing yourself off there isn’t a whole lot to do besides feel the slightly cold water dance down your body.")
-			saynn("Time passes but you don’t really keep track, putting your hand against the wall in front of you and spreading your legs a bit to really start going at it. Not caring to suppress the new moans you make.")
-			saynn("Everything continues uneventfully, maybe you should head out into the main hall if you want some attention...")
-			saynn("The building feeling of an orgasm welling up inside you distracts from your idle thoughts, and in preparation you turn your back and lean against the shower wall...")
+				saynn("Твоя свободная рука следует за другой вниз, дразня твою разбухающую {pc.cock}.")
+			saynn("Ты не тратишь силы на то, чтобы скрывать свое тяжелое дыхание и стоны во время процесса. Ты засовываешь пальцы так глубоко, как только можешь, и слепо ощупываешь всё внутри.")
+			saynn("Удовлетворившись легким дразнением, ты переходишь к стимуляции самых чувствительных точек пальцами, одновременно потирая клитор другой рукой.")
+			saynn("Даже когда ты пытаешься довести себя до оргазма, делать особо нечего — разве что чувствовать, как капли прохладной воды танцуют по твоему телу.")
+			saynn("Время идет, но ты его не замечаешь, упираясь рукой в стену перед собой и слегка разводя ноги, чтобы взяться за дело всерьез. Тебе плевать, что ты не сдерживаешь новые стоны.")
+			saynn("Всё идет своим чередом, но, возможно, тебе стоит выйти в главный зал, если хочется внимания...")
+			saynn("Нарастающее внутри ощущение оргазма отвлекает от праздных мыслей, и, готовясь к нему, ты поворачиваешься спиной и прижимаешься к стене душевой...")
 		else:
-			saynn("You keep looking over your shoulder as your hands trace down your body and start to tease your {pc.vaginaStretch} pussy. Pushing your body up against the shower wall and doing your best to cover what you’re doing with your back and legs.")
+			saynn("Ты то и дело оглядываешься через плечо, пока твои руки скользят по телу, начиная ласкать твою {pc.vaginaStretch} киску. Ты прижимаешься телом к стене душевой, изо всех сил стараясь прикрыть свои действия спиной и ногами.")
 			if(GM.pc.isVisiblyPregnant()):
-				saynn("It’s a fair bit awkward to reach around your gravid stomach with your advancing pregnancy but you manage just fine as you give your firm stomach a quick rub with your other hand.")
+				saynn("Из-за растущей беременности дотянуться до себя через округлившийся живот довольно неудобно, но ты справляешься, быстро поглаживая свой твердый живот другой рукой.")
 			if(GM.pc.isWearingChastityCage()):
-				saynn("Your offhand follows your other one down giving your locked away {pc.cock} a tease.")
+				saynn("Твоя свободная рука следует за другой вниз, дразня твою запертую {pc.cock}.")
 			elif(GM.pc.hasReachablePenis()):
-				saynn("Your offhand follows your other one down giving your growing {pc.cock} a tease.")
-			saynn("Getting your fingers as deep as they will go and blindly feeling around. You try and stifle the sounds you make as best as you can.")
-			saynn("Wanting to get off faster you move onto rubbing the spots you know the best with your fingers while giving your clit a rub with the other hand.")
-			saynn("You stay on alert if anyone is approaching you or could see you, keeping your legs as closed as they can get while you work your fingers on getting off.")
-			saynn("Thankfully the showers remain empty as you feel the familiar building of an orgasm approaching...")
+				saynn("Твоя свободная рука следует за другой вниз, дразня твою разбухающую {pc.cock}.")
+			saynn("Ты засовываешь пальцы так глубоко, как только можешь, и слепо ощупываешь всё внутри, стараясь изо всех сил заглушить издаваемые звуки.")
+			saynn("Желая кончить быстрее, ты переходишь к стимуляции самых чувствительных точек пальцами, одновременно потирая клитор другой рукой.")
+			saynn("Ты остаешься начеку, прислушиваясь, не приближается ли кто-нибудь и не могут ли тебя увидеть, стараясь держать ноги максимально плотно сжатыми, пока твои пальцы работают над тем, чтобы довести тебя до кайфа.")
+			saynn("К счастью, душевые остаются пустыми, пока ты чувствуешь, как к тебе подступает знакомое предвкушение оргазма...")
 			
-		addButton("Cum!", "", "masturbate_vaginalcum")
+		addButton("Кончай!", "", "masturbate_vaginalcum")
 	
 	if(state == "masturbate_vaginalcum"):
 		playAnimation(StageScene.Showering, "rub", {pc="pc", pcCum=true, bodyState={naked=true,hard=true}})
 		#playAnimation(StageScene.Solo, "stand", {pc="pc", npc="pc", pcCum=true, npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		if(GM.pc.hasPerk(Perk.NakedNoShame)):
-			saynn("You let out an orgasmic cry as you’re pushed over the edge from fingering yourself, your {pc.vaginaStretch} pussy covering your hands and thighs with girlcum.")
+			saynn("Ты издаешь оргазмический крик, когда тебя окончательно накрывает от самостимуляции пальцами, а твоя {pc.vaginaStretch} кишит соком, заливая руки и бедра.")
 			if(GM.pc.isWearingChastityCage()):
-				saynn("Your cute caged {pc.cock} lets out a weak cumshot from the hole in the cage as it cums as well.")
+				saynn("Твоя милая {pc.cock} в клетке выдает слабую струю из отверстия, кончая вместе с тобой.")
 			elif(GM.pc.hasReachablePenis()):
-				saynn("Your {pc.cock} sprays a few cumshots against the floor and wall, to all get washed away from the falling water.")
+				saynn("Твоя {pc.cock} разбрызгивает несколько порций спермы на пол и стену, но всё это смывается падающими струями воды.")
 			if(GM.pc.isVisiblyPregnant()):
-				saynn("Your hand goes onto your heavy and pregnant belly to support yourself as you recover from cumming.")
-			saynn("Pulling your hand from your snatch you simply wash all the fresh cum from your body as you calm back down. Heading for the locker rooms and towels without mess.")
+				saynn("Ты кладешь руку на свой тяжелый беременный живот, чтобы поддержать себя, пока приходишь в себя после оргазма.")
+			saynn("Вытащив руку из щели, ты просто смываешь свежую смазку с тела, успокаиваясь. Направляешься к раздевалкам за полотенцами, не оставляя за собой беспорядка.")
 		else:
-			saynn("You put a hand over your mouth to muffle an orgasmic cry as you’re pushed over the edge from fingering yourself, your {pc.vaginaStretch} pussy covering your hands and thighs with girlcum.")
+			saynn("Ты прикрываешь рот рукой, чтобы заглушить оргазмический крик, когда тебя окончательно накрывает от самостимуляции пальцами, а твоя {pc.vaginaStretch} заливает руки и бедра соком.")
 			if(GM.pc.isWearingChastityCage()):
-				saynn("Your cute caged {pc.cock} lets out a weak cumshot from the hole in the cage as it cums as well. Having no real control over it, it splatters the walls and floor.")
+				saynn("Твоя милая {pc.cock} в клетке выдает слабую струю из отверстия, кончая вместе с тобой. Не имея над ней реального контроля, она разбрызгивает всё по стенам и полу.")
 			elif(GM.pc.hasReachablePenis()):
-				saynn("Despite trying to hide yourself and control where you cum, your {pc.cock} sprays a few cumshots against the floor and wall. Thankfully to all get washed away from the falling water.")
+				saynn("Несмотря на попытки спрятаться и контролировать, куда именно ты кончишь, твоя {pc.cock} разбрызгивает несколько порций на пол и стену. К счастью, всё это смывается падающей водой.")
 			if(GM.pc.isVisiblyPregnant()):
-				saynn("Your hand goes onto your heavy and pregnant belly to support yourself as you recover from your ordeal, satisfied.")
-			saynn("You hurriedly wash all the evidence from your body and calm down so you can act normal heading back to grab a towel and your stuff.")
-		addButton("Finished", "Time to go", "endthescene")
+				saynn("Ты кладешь руку на свой тяжелый беременный живот, чтобы поддержать себя, восстанавливаясь после пережитого экстаза в полном удовлетворении.")
+			saynn("Ты поспешно смываешь с тела все улики и стараешься успокоиться, чтобы вести себя как ни в чем не бывало, когда пойдешь за полотенцем и вещами.")
+		addButton("Готово", "Пора идти", "endthescene")
 
 #Is now a bad time to say im not into most of solo-anal or anal fingering and don't really know how write it?
 
@@ -273,142 +273,142 @@ func _run():
 		playAnimation(StageScene.Showering, "rub", {pc="pc", bodyState={naked=true,hard=true}})
 		#playAnimation(StageScene.Solo, "stand", {pc="pc", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		if(GM.pc.hasPerk(Perk.NakedNoShame)):
-			saynn("Making a decision you reach behind yourself and start fooling around with your ass, giving yourself a loud spank and spreading your asscheeks.")
-			saynn("Having left all your stuff in a locker, looks like you’re stuck fingering yourself. Oh well.")
+			saynn("Приняв решение, ты запускаешь руку назад и начинаешь возиться со своей задницей, отвешивая себе звонкий шлепок и раздвигая ягодицы.")
+			saynn("Поскольку все твои вещи остались в шкафчике, похоже, тебе придется довольствоваться самотыком. Ну и ладно.")
 			#Herm
 			if(GM.pc.hasVagina() && GM.pc.hasPenis()):
-				saynn("One hand reaches down over both sets of your genitals giving them a tease while the other starts poking around your {pc.analStretch} ass. Giving it a good feel before starting to finger at some of the spots you know best...")
+				saynn("Одна рука опускается вниз, лаская оба набора твоих гениталий, в то время как другая начинает копаться в твоей {pc.analStretch} заднице. Ты хорошенько прощупываешь её, прежде чем начать тыкать в те самые точки, которые знаешь лучше всего...")
 				if(GM.pc.isWearingChastityCage()):
-					saynn("You feel your cock press against your chastity cage as you begin to fool around with yourself.")
-				saynn("Reaching deep, you always know a safe bet to get off. Trying to find where your prostate is you tease your other genitals, reaching your other hand into your vagina to see if you can find it from that hole as well...")
-				saynn("Eventually you do find your g-spot and you start fingering away at it, your {pc.cock} responding by instantly getting hard and drooling cum from its tip as you continue.")
-				saynn("The added fingers in your {pc.vaginaStretch} pussy help you get off way sooner than maybe you were expecting...")
-				saynn("You don’t care if anyone hears the noises you make.")
+					saynn("Ты чувствуешь, как твой член прижимается к девственной клетке, когда начинаешь возиться с собой.")
+				saynn("Проникая глубоко, ты всегда знаешь верный способ кончить. Пытаясь нащупать простату, ты дразнишь свои другие гениталии, одновременно запуская вторую руку в вагину, чтобы проверить, можно ли найти её и через это отверстие...")
+				saynn("В конце концов ты находишь свою точку G и начинаешь усердно её стимулировать пальцами; твоя {pc.cock} мгновенно реагирует, становясь твердой и пуская сперму из кончика, пока ты продолжаешь...")
+				saynn("Дополнительные пальцы в твоей {pc.vaginaStretch} киске помогают тебе кончить гораздо быстрее, чем ты ожидал...")
+				saynn("Тебе плевать, услышит ли кто-нибудь твои звуки.")
 			#Penis Only
 			elif(!GM.pc.hasVagina() && GM.pc.hasPenis()):
-				saynn("One hand reaches down over your {pc.cock} giving it a tease while the other starts poking around your {pc.analStretch} ass. Giving it a good feel before starting to finger at some of the spots you know best...")
+				saynn("Одна рука опускается ниже твоей {pc.cock}, дразня её, в то время как другая начинает шарить по твоей анусной {pc.analStretch}. Она хорошенько прощупывает тебя, прежде чем начать бесцеремонно тыкать в те самые точки, которые тебе лучше всего известны...")
 				if(GM.pc.isWearingChastityCage()):
-					saynn("You feel your cock press against your chastity cage as you begin to fool around with yourself.")
-				saynn("Reaching deep, you always know a safe bet to get off. Trying to find where your prostate is you idly start to fondle your penis as well.")
-				saynn("Eventually you do find your please spot and you start fingering away at it, your {pc.cock} responding by instantly getting hard and drooling cum from its tip as you continue.")
-				saynn("Finding where your prostate is you add more fingers to the mix, trying to get off on anal alone.")
-				saynn("You don’t care if anyone hears the noises you make.")
-				saynn("A few minutes of this you feel your cock throb in an approaching orgasm...")
+					saynn("Ты чувствуешь, как твой член прижимается к девственной клетке, когда начинаешь возиться с собой.")
+				saynn("Проникая глубоко, ты всегда знаешь верный способ кончить. Пытаясь нащупать простату, ты вполуха начинаешь поглаживать свой член.")
+				saynn("В конце концов ты находишь свою точку удовольствия и начинаешь активно её стимулировать пальцами; твоя {pc.cock} мгновенно откликается, становясь твердой и пуская сперму по кончику, пока ты продолжаешь...")
+				saynn("Нащупав простату, ты добавляешь еще больше пальцев, пытаясь кончить только через анал.")
+				saynn("Тебе плевать, услышит ли кто-нибудь твои звуки.")
+				saynn("Спустя несколько минут такого ты чувствуешь, как твой член пульсирует в предвкушении оргазма...")
 			#Vagina Only
 			elif(GM.pc.hasVagina() && !GM.pc.hasPenis()):
-				saynn("As you reach behind to poke around your {pc.analStretch} ass, you use your other hand to idly thumb away at your clit to help get more into it.")
-				saynn("Reaching deep, you always know a safe bet to get off. Trying to find where your g-spot is, your {pc.vaginaStretch} starts leaking down your thighs. Closing your eyes while feeling the water hit your body while you toy with both of your holes")
-				saynn("You don’t care if anyone hears the noises you make.")
-				saynn("Lying there for a few minutes, you feel your orgasm coming up...")
+				saynn("Закинув руку назад, чтобы пошарить в своей анусной {pc.analStretch}, ты другой рукой лениво потираешь клитор, чтобы войти в кураж.")
+				saynn("Проникая глубоко, ты всегда знаешь верный способ кончить. Пытаясь найти точку G, ты чувствуешь, как твоя {pc.vaginaStretch} начинает течь по бедрам. Ты закрываешь глаза, ощущая струи воды на теле, пока играешь сразу с обоими своими отверстиями.")
+				saynn("Тебе плевать, услышит ли кто-нибудь твои звуки.")
+				saynn("Полежав так несколько минут, ты чувствуешь, как подступает оргазм...")
 			#Null
 			else:
-				saynn("You reach behind to poke around your {pc.analStretch} ass, you feel over your null bulge.")
-				saynn("Without other genitals, you don’t know when your orgasm will come... Maybe you you should go get your hole properly fucked by someone instead...")
+				saynn("Ты тянешься рукой назад, чтобы пошарить в своей анусной {pc.analStretch}, ощупывая свой пустой бугорок.")
+				saynn("Без других гениталий ты не знаешь, когда наступит оргазм... Может, тебе стоит пойти и дать кому-нибудь как следует оттрахать свою дырочку вместо этого...")
 		else:
-			saynn("Making a decision you have a look around to make sure you’re nice and hidden away while you reach behind yourself and start fooling around with your ass.")
-			saynn("It’ll be best if you get this done fast to not risk being exposed.")
+			saynn("Приняв решение, ты оглядываешься по сторонам, чтобы убедиться, что ты надежно спрятался, а затем запускаешь руку назад и начинаешь возиться со своей задницей.")
+			saynn("Лучше всего покончить с этим поскорее, чтобы не рисковать тем, что тебя застукают.")
 			#Herm
 			if(GM.pc.hasVagina() && GM.pc.hasPenis()):
-				saynn("One hand reaches down over both sets of your genitals giving them a tease while the other starts poking around your {pc.analStretch} ass. Giving it a quick tease before starting to finger at some of the spots you know best...")
+				saynn("Одна рука опускается вниз, лаская оба набора твоих гениталий, в то время как другая начинает копаться в твоей {pc.analStretch} заднице. Сначала ты слегка дразнишь её, а затем начинаешь ловко перебирать пальцами в тех местах, которые знаешь лучше всего...")
 				if(GM.pc.isWearingChastityCage()):
-					saynn("You feel your cock press against your chastity cage as you begin to fool around with yourself.")
-				saynn("Reaching deep, you always know a safe bet to get off quick. Trying to find where your prostate is you tease your other genitals, reaching your other hand into your vagina to see if you can find it from that hole as well...")
-				saynn("Eventually you do find your g-spot and you start fingering away at it, your {pc.cock} responding by instantly getting hard and drooling cum from its tip as you continue.")
-				saynn("The added fingers in your {pc.vaginaStretch} pussy help you get off way sooner than maybe you were expecting...")
+					saynn("Ты чувствуешь, как твой член прижимается к девственной клетке, когда начинаешь возиться с собой.")
+				saynn("Проникая глубоко, ты всегда знаешь верный способ быстро кончить. Пытаясь нащупать простату, ты ласкаешь свои гениталии, одновременно запуская вторую руку во влагалище, чтобы проверить, можно ли найти её и через это отверстие...")
+				saynn("В конце концов ты находишь свою точку G и начинаешь усердно её стимулировать пальцами; твоя {pc.cock} мгновенно реагирует, становясь твердой и пуская сперму из кончика, пока ты продолжаешь...")
+				saynn("Дополнительные пальцы в твоей {pc.vaginaStretch} киске помогают тебе кончить гораздо быстрее, чем ты ожидал...")
 			#Penis Only
 			elif(!GM.pc.hasVagina() && GM.pc.hasPenis()):
-				saynn("One hand reaches down over your {pc.cock} giving it a tease while the other starts poking around your {pc.analStretch} ass. Giving it a quick tease before starting to finger at some of the spots you know best...")
+				saynn("Одна рука опускается вниз, дразня твой {pc.cock}, в то время как другая начинает копаться в твоей {pc.analStretch} заднице. Сначала ты слегка дразнишь её, а затем начинаешь ловко перебирать пальцами в тех местах, которые знаешь лучше всего...")
 				if(GM.pc.isWearingChastityCage()):
-					saynn("You feel your cock press against your chastity cage as you begin to fool around with yourself.")
-				saynn("Reaching deep, you always know a safe bet to get off. Trying to find where your prostate is you idly start to fondle your balls as well.")
-				saynn("Eventually you do find your pleasure spot and you start fingering away at it, your {pc.cock} responding by instantly getting hard and drooling cum from its tip as you continue.")
-				saynn("Finding where your prostate is you add more fingers to the mix, trying to get off on anal alone.")
-				saynn("A few minutes of this you feel your cock throb in an approaching orgasm...")
+					saynn("Ты чувствуешь, как твой член прижимается к девственной клетке, когда начинаешь возиться с собой.")
+				saynn("Проникая глубоко, ты всегда знаешь верный способ кончить. Пытаясь нащупать простату, ты в это время лениво начинаешь поглаживать свои яички.")
+				saynn("В конце концов ты находишь свою эрогенную точку и начинаешь активно её стимулировать пальцами; твой {pc.cock} мгновенно отзывается на это, становясь твердым и пуская сперму из кончика, пока ты продолжаешь.")
+				saynn("Нащупав простату, ты добавляешь еще больше пальцев, пытаясь кончить только через анал.")
+				saynn("Спустя несколько минут такого ты чувствуешь, как твой член пульсирует в предвкушении оргазма...")
 			#Vagina Only
 			elif(GM.pc.hasVagina() && !GM.pc.hasPenis()):
-				saynn("As you reach behind to poke around your {pc.analStretch} ass, you use your other hand to quickly thumb away at your clit to help get off faster.")
-				saynn("Reaching deep, you always know a safe bet to get off. Trying to find where your g-spot is, your {pc.vaginaStretch} starts leaking down your thighs. Closing your eyes while feeling the water hit your body while you toy with both of your holes")
-				saynn("Lying there for a few minutes, you feel your orgasm coming up...")
+				saynn("Пока ты тянешься назад, чтобы покопаться в своей {pc.analStretch} заднице, ты используешь другую руку, чтобы быстро потереть клитор и помочь себе кончить быстрее.")
+				saynn("Проникая глубоко, ты всегда знаешь верный способ кончить. Пытаясь найти точку G, ты чувствуешь, как твоя {pc.vaginaStretch} начинает течь по бедрам. Ты закрываешь глаза, ощущая струи воды на теле, пока играешь сразу с обоими своими отверстиями.")
+				saynn("Полежав так несколько минут, ты чувствуешь, как подступает оргазм...")
 			#Null
 			else:
-				saynn("You reach behind to poke around your {pc.analStretch} ass, you feel over your null bulge.")
-				saynn("Without other genitals, you don’t know when your orgasm will come... Maybe you you should go get your hole properly fucked by someone instead...")
+				saynn("Ты тянешься рукой назад, чтобы пошарить в своей анусной {pc.analStretch}, ощупывая свой пустой бугорок.")
+				saynn("Без других гениталий ты не знаешь, когда наступит оргазм... Может, тебе стоит пойти и дать кому-нибудь как следует оттрахать свою дырочку вместо этого...")
 		
-		addButton("Cum!", "Cum!", "masturbate_analcum")
+		addButton("Кончай!", "Кончай!", "masturbate_analcum")
 		
 	if(state == "masturbate_analcum"):
 		#playAnimation(StageScene.Solo, "stand", {pc="pc", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		playAnimation(StageScene.Showering, "rub", {pc="pc", pcCum=true, bodyState={naked=true,hard=true}})
 		if(GM.pc.hasPerk(Perk.NakedNoShame)):
-			saynn("You start to slide your fingers faster as your orgasm hits. Letting out a loud moan as you go at it.")
+			saynn("Ты начинаешь двигать пальцами всё быстрее, когда накрывает оргазм, громко стоная от удовольствия.")
 			#Herm
 			if(GM.pc.hasVagina() && GM.pc.hasPenis()):
 				if(GM.pc.isWearingChastityCage()):
-					saynn("Your cute caged {pc.cock} lets out a weak cumshot from the hole in the cage as it cums as well.")
+					saynn("Твоя милая {pc.cock} в клетке выдает слабую струю из отверстия, кончая вместе с тобой.")
 				else:
-					saynn("Your {pc.cock} sprays a few cumshots against the floor and wall, to all get washed away from the falling water.")
+					saynn("Твоя {pc.cock} разбрызгивает несколько порций спермы на пол и стену, но всё это смывается падающими струями воды.")
 				if(GM.pc.isVisiblyPregnant()):
-					saynn("Your offhand goes onto your heavy and pregnant belly to support yourself as you recover from cumming.")
-				saynn("Pulling your hand from your {pc.analStretch} ass, you simply wash all the fresh cum from your body as you calm back down. Heading for the locker rooms and towels without mess.")
+					saynn("Твоя левая рука ложится на тяжелый, беременный живот, помогая тебе удержать равновесие, пока ты приходишь в себя после оргазма.")
+				saynn("Вытащив руку из своей {pc.analStretch} задницы, ты просто смываешь свежую сперму с тела, постепенно успокаиваясь. Направляешься к раздевалкам за полотенцами, стараясь не размазать грязь.")
 			#Penis Only
 			elif(!GM.pc.hasVagina() && GM.pc.hasPenis()):
 				if(GM.pc.isWearingChastityCage()):
-					saynn("Your cute caged {pc.cock} lets out a weak cumshot from the hole in the cage as it cums as well.")
+					saynn("Твоя милая {pc.cock} в клетке выдает слабую струю из отверстия, кончая вместе с тобой.")
 				else:
-					saynn("Your {pc.cock} sprays a few cumshots against the floor and wall, to all get washed away from the falling water.")
+					saynn("Твоя {pc.cock} разбрызгивает несколько порций спермы на пол и стену, но всё это смывается падающими струями воды.")
 				if(GM.pc.isVisiblyPregnant()):
-					saynn("Your offhand goes onto your heavy and pregnant belly to support yourself as you recover from cumming.")
-				saynn("Pulling your hand from your {pc.analStretch} ass, you simply wash all the fresh cum from your body as you calm back down. Heading for the locker rooms and towels without mess.")
+					saynn("Твоя левая рука ложится на тяжелый, беременный живот, помогая тебе удержать равновесие, пока ты приходишь в себя после оргазма.")
+				saynn("Вытащив руку из своей {pc.analStretch} задницы, ты просто смываешь свежую сперму с тела, постепенно успокаиваясь. Направляешься к раздевалкам за полотенцами, стараясь не размазать грязь.")
 			#Vagina Only
 			elif(GM.pc.hasVagina() && !GM.pc.hasPenis()):
-				saynn("Your other hand rubs wildly at your slit as you have your anal orgasm.")
-				saynn("Coming back down from your orgasm, you stand back up on semi-shaky legs.")
+				saynn("Другая рука неистово трет твою щель во время анального оргазма.")
+				saynn("Приходя в себя после оргазма, ты выпрямляешься на слегка дрожащих ногах.")
 				if(GM.pc.isVisiblyPregnant()):
-					saynn("Your offhand goes onto your heavy and pregnant belly to support yourself as you recover from cumming.")
-				saynn("With everything over with and satisfied, you simply wash everything off once more and then head to grab a towel and back to your stuff...")
+					saynn("Твоя левая рука ложится на тяжелый, беременный живот, помогая тебе удержать равновесие, пока ты приходишь в себя после оргазма.")
+				saynn("Когда всё закончилось и ты чувствуешь удовлетворение, ты просто еще раз всё смываешь, а затем идешь за полотенцем и возвращаешься к своим вещам...")
 			#Null
 			else:
-				saynn("After enough time, you feel a really weak orgasm, your ass twitching and squeezing against your finger.")
-				saynn("Without genitals, it’s hard to tell if anything really happened at all...")
+				saynn("Спустя некоторое время ты чувствуешь слабый оргазм: твоя задница дергается и сжимается вокруг пальца.")
+				saynn("Из-за отсутствия гениталий трудно понять, произошло ли вообще хоть что-то...")
 				saynn("...")
-				saynn("That was anti-climactic.")
-				saynn("You just wash everything off and go to grab a towel.")
+				saynn("Это было как-то не очень эффектно.")
+				saynn("Ты просто смываешь всё лишнее и идешь за полотенцем.")
 		else:
-			saynn("You start to slide your fingers faster as your orgasm hits. Biting your lip to muffle your own orgasmic cry as you go.")
+			saynn("Твои пальцы начинают двигаться быстрее, когда накрывает оргазм. Ты закусываешь губу, чтобы заглушить собственный стон экстаза.")
 			#Herm
 			if(GM.pc.hasVagina() && GM.pc.hasPenis()):
 				if(GM.pc.isWearingChastityCage()):
-					saynn("Your cute caged {pc.cock} lets out a weak cumshot from the hole in the cage as it cums as well.")
+					saynn("Твоя милая {pc.cock} в клетке выдает слабую струю из отверстия, кончая вместе с тобой.")
 				else:
-					saynn("Your {pc.cock} sprays a few cumshots against the floor and wall, to all get washed away from the falling water.")
+					saynn("Твоя {pc.cock} разбрызгивает несколько порций спермы на пол и стену, но всё это смывается падающими струями воды.")
 				if(GM.pc.isVisiblyPregnant()):
-					saynn("Your offhand goes onto your heavy and pregnant belly to support yourself as you recover from cumming.")
-				saynn("Pulling your hand from your {pc.analStretch} ass, you simply wash all the fresh cum from your body as you calm back down. Heading for the locker rooms and towels without mess.")
+					saynn("Твоя левая рука ложится на тяжелый, беременный живот, помогая тебе удержать равновесие, пока ты приходишь в себя после оргазма.")
+				saynn("Вытащив руку из своей {pc.analStretch} задницы, ты просто смываешь свежую сперму с тела, постепенно успокаиваясь. Направляешься к раздевалкам за полотенцами, стараясь не размазать грязь.")
 			#Penis Only
 			elif(!GM.pc.hasVagina() && GM.pc.hasPenis()):
 				if(GM.pc.isWearingChastityCage()):
-					saynn("Your cute caged {pc.cock} lets out a weak cumshot from the hole in the cage as it cums as well.")
+					saynn("Твоя милая {pc.cock} в клетке выдает слабую струю из отверстия, кончая вместе с тобой.")
 				else:
-					saynn("Your {pc.cock} sprays a few cumshots against the floor and wall, to all get washed away from the falling water.")
+					saynn("Твоя {pc.cock} разбрызгивает несколько порций спермы на пол и стену, но всё это смывается падающими струями воды.")
 				if(GM.pc.isVisiblyPregnant()):
-					saynn("Your offhand goes onto your heavy and pregnant belly to support yourself as you recover from cumming.")
-				saynn("Pulling your hand from your {pc.analStretch} ass, you simply wash all the fresh cum from your body as you calm back down. Heading for the locker rooms and towels without mess.")
+					saynn("Твоя левая рука ложится на тяжелый, беременный живот, помогая тебе удержать равновесие, пока ты приходишь в себя после оргазма.")
+				saynn("Вытащив руку из своей {pc.analStretch} задницы, ты просто смываешь свежую сперму с тела, постепенно успокаиваясь. Направляешься к раздевалкам за полотенцами, стараясь не размазать грязь.")
 			#Vagina Only
 			elif(GM.pc.hasVagina() && !GM.pc.hasPenis()):
-				saynn("Your other hand rubs wildly at your slit as you have your anal orgasm.")
-				saynn("Coming back down from your orgasm, you stand back up on semi-shaky legs.")
+				saynn("Другая рука неистово трет твою щель во время анального оргазма.")
+				saynn("Приходя в себя после оргазма, ты выпрямляешься на слегка дрожащих ногах.")
 				if(GM.pc.isVisiblyPregnant()):
-					saynn("Your offhand goes onto your heavy and pregnant belly to support your self as you recover from cumming.")
-				saynn("After seeing that you weren’t found, you simply wash everything off once more and then head to grab a towel and back to your stuff...")
+					saynn("Свободная рука ложится на твой тяжелый, налитый живот, помогая тебе удержаться на ногах, пока ты приходишь в себя после кончмента.")
+				saynn("Убедившись, что тебя никто не заметил, ты просто еще раз всё смываешь, берешь полотенце и возвращаешься к своим делам...")
 			#Null
 			else:
-				saynn("After enough time, you feel a really weak orgasm, your ass twitching and squeezing against your finger.")
-				saynn("Without genitals, it’s hard to tell if anything really happened at all...")
+				saynn("Спустя некоторое время ты чувствуешь слабый оргазм: твоя задница дергается и сжимается вокруг пальца.")
+				saynn("Из-за отсутствия гениталий трудно понять, произошло ли вообще хоть что-то...")
 				saynn("...")
-				saynn("That was anti-climactic.")
-				saynn("You just wash everything off and go to grab a towel.")
+				saynn("Это было как-то не очень эффектно.")
+				saynn("Ты просто смываешь всё лишнее и идешь за полотенцем.")
 		
-		addButton("Finished", "Time to go.", "endthescene")
+		addButton("Готово", "Пора идти.", "endthescene")
 
 
 	if(state == "masturbate_milk"):
@@ -416,72 +416,72 @@ func _run():
 		
 		#playAnimation(StageScene.Solo, "stand", {pc="pc", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		if(GM.pc.hasEffect(StatusEffect.SoreNipplesAfterMilking)):
-			saynn("Having a relaxed shower like this helps your sore nipples feel better, you could probably milk yourself even with them still sore...")
+			saynn("Такой расслабляющий душ помогает твоим набухшим соскам унять боль; пожалуй, ты могла бы даже подоить себя, даже несмотря на их чувствительность...")
 		else:
-			saynn("Looking down at your leaking chest, you choose to to take care of your breasts before anything else.")
+			saynn("Глядя на свою подтекающую грудь, ты решаешь позаботиться о сосках прежде всего остального.")
 		if(GM.pc.hasPerk(Perk.NakedNoShame)):
-			saynn("You begin to feel over your milky {pc.breasts}. Grabbing both in either hand and giving your areolae a light squeeze, little streams of your {pc.milk} leak free from your nipples.")
-			saynn("You put your back against the wall and start to squeeze your nipples, streams of {pc.milk} mixing in with the shower’s flowing water, getting hornier as more milk starts flowing from your {pc.breasts}.")
+			saynn("Ты начинаешь ощупывать свою молочную {pc.breasts}. Схватив обе груди и слегка сжав ареолы, ты чувствуешь, как из сосков просачиваются тонкие струйки твоего {pc.milk}.")
+			saynn("Ты прижимаешься спиной к стене и начинаешь сжимать соски; струи {pc.milk} смешиваются с потоками воды в душе, а возбуждение растет по мере того, как из твоих {pc.breasts} начинает течь всё больше молока.")
 			if(GM.pc.isVisiblyPregnant()):
-				saynn("Once the stream has started, you let one of your breasts hang free to leak all over yourself while you rub over your gravid pregnant belly.")
+				saynn("Как только струя пошла, ты позволяешь одной из грудей свободно свисать, чтобы она заливала тебя молоком, пока ты поглаживаешь свой налитый, беременный живот.")
 			if(GM.pc.isWearingChastityCage()):
-				saynn("While not the main focus of your attention, you feel your cock hardening against the metal of your chastity cage.")
+				saynn("Хотя это и не главный объект твоего внимания, ты чувствуешь, как член твердеет, упираясь в металл твоей девственной клетки.")
 			elif(GM.pc.hasPenis()):
-				saynn("While not the main focus of your attention, you feel your cock hardening while focusing on milking yourself")
+				saynn("Хотя это и не главный объект твоего внимания, ты чувствуешь, как член твердеет, пока ты сосредоточена на доении самой себя.")
 			if(GM.pc.hasVagina()):
-				saynn("As you continue to work on your now freely milk-streaming {pc.breasts}, you feel your nethers become far wetter...")
+				saynn("Пока ты продолжаешь ласкать свои {pc.breasts}, из которых теперь вовсю хлещет молоко, ты чувствуешь, как внизу становится всё влажнее...")
 			if(GM.pc.hasPerk(Perk.MilkSelfFeed)):
 				if(GM.pc.hasBigBreasts()):
-					saynn("You quickly reach your hands to your {pc.breasts} and squeeze them very tight while guiding the nipples towards your mouth. Your tits are big enough for you to reach towards one of the nips with your lips and latch onto it.")
-					saynn("After enough stimulation, your nipples suddenly shoot a strong stream of {pc.milk} that is aimed directly into your mouth. You let out a moan while tasting your own product.")
+					saynn("Ты быстро хватаешь свои {pc.breasts} и крепко сжимаешь их, направляя соски к самому рту. Твоя грудь достаточно большая, чтобы ты могла дотянуться губами до одного из сосков и присосаться к нему.")
+					saynn("После достаточной стимуляции твои соски внезапно выбрасывают мощную струю {pc.milk} прямо тебе в рот. Ты издаешь стон, пробуя на вкус собственный продукт.")
 				else:
-					saynn("You quickly reach your hands to your {pc.breasts} and squeeze them very tight while guiding the nipples towards your mouth. Your tits aren’t big enough for you to reach them with your lips so you just knead them harder and open your mouth.")
-					saynn("After enough stimulation, your nipples suddenly shoot a strong stream of {pc.milk} that is aimed directly into your mouth. You let out a moan while tasting your own product.")
-			saynn("Your arousal continues to build as you milk yourself. Your mind goes a little blank while more and more milk continues to stream down more and more of your body, mixing with the water and spreading the both of them around your body.")
-			saynn("Before you know it your orgasm is about to hit you...")
+					saynn("Ты быстро хватаешь свои {pc.breasts} и крепко сжимаешь их, направляя соски к самому рту. Твоя грудь недостаточно велика, чтобы дотянуться до сосков губами, поэтому ты просто сильнее разминаешь их и открываешь рот.")
+					saynn("После достаточной стимуляции твои соски внезапно выбрасывают мощную струю {pc.milk} прямо тебе в рот. Ты издаешь стон, пробуя на вкус собственный продукт.")
+			saynn("Возбуждение продолжает нарастать, пока ты ласкаешь себя, выжимая молоко. В голове немного мутится, когда всё новые и новые струи молока стекают по твоему телу, смешиваясь с водой и разбрызгиваясь по всей коже.")
+			saynn("Не успеешь оглянуться, как оргазм вот-вот накроет тебя...")
 		
 		else:
-			saynn("While you probably could get away with milking yourself in the shower without anyone caring or confronting you, your own resverations about nudity are still enough to be paranoid about it.")
-			saynn("You put your back against the wall and start to squeeze your nipples, streams of {pc.milk} mixing in with the shower’s flowing water, getting hornier as more milk starts flowing from your {pc.breasts}.")
+			saynn("Хотя, скорее всего, тебе бы всё сошло с рук — никто бы и не заметил, как ты доишь себя в душе, — твои собственные комплексы по поводу наготы заставляют тебя пребывать в легкой паранойе.")
+			saynn("Ты прижимаешься спиной к стене и начинаешь сжимать соски; струи {pc.milk} смешиваются с потоками воды в душе, а возбуждение растет по мере того, как из твоих {pc.breasts} начинает течь всё больше молока.")
 			if(GM.pc.isHeavilyPregnant()):
-				saynn("You weren’t gonna do anything with your pregnancy but it seems your pregnancy had other plans, feeling the kicks from within making it hard to stay concealed.")
+				saynn("Ты не собиралась ничего предпринимать со своей беременностью, но, похоже, у неё были свои планы: изнутри ощущаются такие сильные толчки, что скрывать живот становится всё труднее.")
 			if(GM.pc.isWearingChastityCage()):
-				saynn("While not the main focus of your attention, you feel your {pc.cock} hardening against the metal of your chastity cage.")
+				saynn("Пусть это и не главное сейчас, ты чувствуешь, как твоя {pc.cock} твердеет, упираясь в металл клетки целомудрия.")
 			elif(GM.pc.hasPenis()):
-				saynn("While not the main focus of your attention, you feel your {pc.cock} hardening while focusing on milking yourself.")
+				saynn("Пусть это и не главное сейчас, ты чувствуешь, как твоя {pc.cock} твердеет, пока ты сосредоточена на том, чтобы выжать молоко.")
 			if(GM.pc.hasVagina()):
-				saynn("As you continue to work on your now freely milk-streaming {pc.breasts}, you feel your nethers become far wetter...")
-			saynn("Your arousal continues to build as you milk yourself. Your mind goes a little blank while more and more milk continues to stream down more and more of your body, mixing with the water and spreading the both of them around your body.")
-			saynn("Before you know it your orgasm is about to hit you...")
+				saynn("Пока ты продолжаешь ласкать свои {pc.breasts}, из которых теперь вовсю хлещет молоко, ты чувствуешь, как внизу становится всё влажнее...")
+			saynn("Возбуждение продолжает нарастать, пока ты ласкаешь себя, выжимая молоко. В голове немного мутится, когда всё новые и новые струи молока стекают по твоему телу, смешиваясь с водой и разбрызгиваясь по всей коже.")
+			saynn("Не успеешь оглянуться, как оргазм вот-вот накроет тебя...")
 		
-		addButton("Cum!", "", "masturbate_milkcum")
+		addButton("Кончай!", "", "masturbate_milkcum")
 	
 	if(state == "masturbate_milkcum"):
 		#playAnimation(StageScene.Solo, "stand", {pc="pc", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
 		playAnimation(StageScene.Showering, "body", {pc="pc", bodyState={naked=true,hard=true}})
 		
-		saynn("Your orgasm washes over you as you keep pinching at your nipples, overstimulating yourself while trying to milk yourself.")
+		saynn("Оргазм захлестывает тебя, пока ты продолжаешь щипать соски, чрезмерно стимулируя себя в попытках выжать молоко.")
 		if(GM.pc.hasPerk(Perk.NakedNoShame)):
-			saynn("In response you let out a deep moan and squeeze your full breasts as hard as you can, letting strong projectile streams of milk spray from your {pc.breasts}")
+			saynn("В ответ ты издаешь глубокий стон и изо всех сил сжимаешь свою налитую грудь, заставляя мощные струи молока разлетаться из твоей {pc.breasts}")
 			if(GM.pc.isWearingChastityCage()):
-				saynn("Riding out your prolonged orgasm, your cute, locked away {pc.cock} lets out a weak shot of cum from the hole in the cage.")
+				saynn("Пока ты переживаешь затяжной оргазм, твоя милая, запертая в клетке {pc.cock} выдает слабую струю спермы через отверстие.")
 			elif(GM.pc.hasPenis()):
-				saynn("Riding out your prolonged orgasm, your {pc.cock} gives off a few shots of cum to land against the floor")
+				saynn("Пока ты переживаешь затяжной оргазм, твоя {pc.cock} выдает несколько порций спермы, которые попадают прямо на пол.")
 			if(GM.pc.hasVagina()):
-				saynn("Your under-stimulated vagina finally reaches its peak and it coats your inner thighs in girlcum")
+				saynn("Твоя недостигнутая вагина наконец достигает пика, покрывая внутреннюю сторону бедер девичьим соком.")
 		else:
-			saynn("In response you have to bite your tongue out a deep moan and squeeze your full breasts as hard as you can, letting strong projectile streams of milk spray from your {pc.breasts}.")
+			saynn("В ответ тебе приходится прикусить язык от глубокого стона и изо всех сил сжать грудь, заставляя мощные струи молока разлетаться из твоей {pc.breasts}.")
 			if(GM.pc.isWearingChastityCage()):
-				saynn("Riding out your prolonged orgasm, your cute, locked away {pc.cock} lets out a weak shot of cum from the hole in the cage.")
+				saynn("Пока ты переживаешь затяжной оргазм, твоя милая, запертая в клетке {pc.cock} выдает слабую струю спермы через отверстие.")
 			elif(GM.pc.hasPenis()):
-				saynn("Riding out your prolonged orgasm, your {pc.cock} gives off a few shots of cum that land against the floor.")
+				saynn("Пока ты переживаешь затяжной оргазм, твоя {pc.cock} выдает несколько порций спермы, которые попадают на пол.")
 			if(GM.pc.hasVagina()):
-				saynn("Your under-stimulated vagina finally reaches its peak and it coats your inner thighs in girlcum")
+				saynn("Твоя недостигнутая вагина наконец достигает пика, покрывая внутреннюю сторону бедер девичьим соком.")
 		
-		saynn("By the time you finish with your climax your breasts have been milked thoroughly.")
-		saynn("Peeling yourself off the wall, you wash everything up once again and go to grab a towel and get your stuff.")
+		saynn("К тому времени, как ты заканчиваешь свой оргазм, твоя грудь оказывается полностью выдоенной.")
+		saynn("Отлепившись от стены, ты снова всё смываешь, берешь полотенце и собираешь свои вещи.")
 		
-		addButton("Finish", "Time to go.", "endthescene")
+		addButton("Закончить", "Пора идти.", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "doShower"):

@@ -28,7 +28,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Chance",
+			text = "Шанс",
 		},
 		{
 			type = "slot",

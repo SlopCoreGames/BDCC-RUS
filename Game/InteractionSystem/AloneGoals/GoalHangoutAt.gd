@@ -9,4 +9,4 @@ func getKeepScore() -> float:
 	return 0.4
 
 func getText():
-	return "{main.name} is hanging out!"
+	return "{main.name} тусуется!"

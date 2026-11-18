@@ -50,7 +50,7 @@ margin_left = 1192.0
 margin_right = 1272.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 80, 0 )
-text = "Delete"
+text = "Удалить"
 
 [connection signal="onValueChange" from="StringVarUI" to="." method="_on_StringVarUI_onValueChange"]
 [connection signal="item_selected" from="SelectorType" to="." method="_on_SelectorType_item_selected"]

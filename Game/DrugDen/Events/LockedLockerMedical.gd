@@ -15,11 +15,11 @@ func getStartCooldown() -> int:
 
 func getInteractInfo() -> Dictionary:
 	return {
-		text = "You run into a locked [b]medical[/b] locker. It will cost you 1 restraint key to see what's inside.",
+		text = "Вы натыкаетесь на запертый [b]медицинский[/b] шкафчик. Чтобы заглянуть внутрь, понадобится 1 ключ сдерживания.",
 		actions = [
 			{
 				id = "loot",
-				name = "Unlock with key",
+				name = "Открыть ключом",
 				desc = "Use 1 restraint key to unlock this locker!",
 				args = [],
 				disabled = !GM.pc.getInventory().hasItemID("restraintkey"),

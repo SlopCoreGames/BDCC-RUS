@@ -36,7 +36,7 @@ func getActivityIconForRole(_role:String):
 	return RoomStuff.PawnActivity.Chat
 
 func init_text():
-	saynn("{guard.name} notices {inmate.name} in an off-limits area!")
+	saynn("{guard.name} замечает {inmate.name} в запретной зоне!")
 	sayLine("guard", "GuardCaughtOffLimits", {guard="guard", inmate="inmate"})
 
 	addAction("fight", "Fight!", "Protect yourself!", "fight", 1.0, 60, {})
@@ -52,7 +52,7 @@ func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func about_to_fight_text():
-	saynn("{inmate.name} prepares for a fight.")
+	saynn("{inmate.name} готовится к драке.")
 	sayLine("guard", "GuardCaughtOffLimitsFight", {guard="guard", inmate="inmate"})
 
 	addAction("fight", "Fight", "Begin the fight", "fight", 1.0, 600, {start_fight=["inmate", "guard"],})
@@ -74,9 +74,9 @@ func about_to_fight_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func surrendered_text():
-	saynn("{inmate.name} raises {inmate.his} hands and gives up.")
+	saynn("{inmate.name} поднимает {inmate.his} руки и сдается.")
 	sayLine("guard", "GuardInmateSurrender", {guard="guard", inmate="inmate"})
-	saynn("{guard.name} approaches {inmate.you}.")
+	saynn("{guard.name} подходит к {inmate.you}.")
 
 	addAction("punish", "Punish", "They gotta serve a punishment!", "punishMean", 1.0, 60, {})
 	addAction("frisk", "Frisk", "Go easy on them and just frisk them", "punish", 1.0, 30, {})
@@ -97,10 +97,10 @@ func surrendered_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 func inmate_won_text():
 	if(!guardSurrender):
-		saynn("{guard.name} hits the floor. {inmate.name} won!")
+		saynn("{guard.name} падает на пол. {inmate.name} победила!")
 		sayLine("guard", "FightLostGeneric", {winner="inmate", loser="guard"})
 	else:
-		saynn("{guard.name} changes {guard.his} mind at the last second and decides to surrender!")
+		saynn("{guard.name} в последнюю секунду меняет {guard.his} мнение и решает сдаться!")
 
 	addAction("leave", "Leave", "Just leave while you can", "justleave", 1.0, 30, {})
 	addAction("punish", "Punish", "Find a way to punish them", "punishMean", 1.0, 30, {})
@@ -115,7 +115,7 @@ func inmate_won_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func about_to_leave_text():
-	saynn("{inmate.name} decides to just leave while {inmate.he} still can.")
+	saynn("{inmate.name} решает просто свалить, пока {inmate.he} еще может.")
 
 	addAction("leave", "Continue", "See what happens next.", "default", 1.0, 30, {})
 
@@ -126,7 +126,7 @@ func about_to_leave_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func guard_won_text():
-	saynn("{inmate.name} hits the floor. {guard.name} won!")
+	saynn("{inmate.name} падает на пол. {guard.name} победила!")
 	sayLine("guard", "FightWonGeneric", {winner="guard", loser="inmate"})
 
 	addAction("punish", "Punish", "They gotta serve a punishment!", "punishMean", 1.0, 60, {})
@@ -149,7 +149,7 @@ func guard_won_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func about_to_frisk_text():
-	saynn("{guard.name} is about to frisk {inmate.name}.")
+	saynn("{guard.name} собирается обыскать {inmate.name}.")
 	sayLine("guard", "GuardFrisk", {guard="guard", inmate="inmate"})
 
 	addAction("frisk", "Stay still", "Stay still and let them frisk you", "default", 1.0, 120, {})
@@ -182,10 +182,10 @@ func about_to_frisk_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 func frisked_text():
 	if(foundIllegalItems):
-		saynn("{guard.name} takes away all contraband from {inmate.name} and also 5 credits on top!")
+		saynn("{guard.name} отбирает у {inmate.name} весь контрабандный товар, да еще и 5 кредитов сверху!")
 		sayLine("guard", "GuardFriskFound", {guard="guard", inmate="inmate"})
 	else:
-		saynn("{guard.name} doesn't find any contraband.")
+		saynn("{guard.name} не находит никакого контрабанды.")
 		sayLine("guard", "GuardFriskNoFound", {guard="guard", inmate="inmate"})
 
 	addAction("escort_out", "Escort out", "Time to make them go", "default", 1.0, 30, {})
@@ -196,7 +196,7 @@ func frisked_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func escorting_out_text():
-	saynn("{guard.name} is escorting {inmate.name} out of the off-limits zone.")
+	saynn("{guard.name} выводит {inmate.name} из запретной зоны.")
 	if(RNG.chance(20)):
 		sayLine("guard", "GuardKeepMoving", {guard="guard", inmate="inmate"})
 
@@ -210,7 +210,7 @@ func escorting_out_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func escorted_out_text():
-	saynn("{guard.name} shoves {inmate.name} away.")
+	saynn("{guard.name} отталкивает {inmate.name}.")
 	sayLine("guard", "GuardGoAway", {guard="guard", inmate="inmate"})
 
 	addAction("leave", "Leave", "Time to go", "default", 1.0, 30, {})
@@ -221,9 +221,9 @@ func escorted_out_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func frisk_failed_resist_text():
-	saynn("{inmate.name} manages to avoid getting searched!")
+	saynn("{inmate.name} удается избежать обыска!")
 	sayLine("guard", "GuardFriskFailResist", {guard="guard", inmate="inmate"})
-	saynn("Looks like the guard is not happy.")
+	saynn("Похоже, охранник не в духе.")
 
 	addAction("punish", "Punish", "Punish them!", "default", 1.0, 60, {})
 

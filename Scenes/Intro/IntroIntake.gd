@@ -14,68 +14,68 @@ func _run():
 		addCharacter("captain")
 		addCharacter("risha")
 		
-		saynn("You stand in a huge open hangar. Watching the colorful markings on the floor you can guess that it supports up to about 3 ships. Most of the corners are stuffed with metal crates or other types of cargo, all of it locked, behind you is a huge energy field that allows the spaceships to pass but keep the air in. The height of a hanger allows there to be many catwalks on the walls where all the guards stand, watching the fresh blood arrive. Your attention gets stolen by someone’s loud authoritative voice that gets echoed slightly.")
+		saynn("Вы стоите в огромном открытом ангаре. Глядя на разноцветную разметку на полу, можно догадаться, что он рассчитан максимум на три корабля. Почти все углы забиты металлическими ящиками и прочим грузом, и всё это наглухо заперто. Позади вас — массивное энергетическое поле, которое пропускает космические корабли, но удерживает воздух внутри. Высота ангара позволяет разместить на стенах множество технических мостиков, где стоят охранники, наблюдая за прибытием «свежей крови». Ваше внимание привлекает чей-то громкий, властный голос, который слегка отдается эхом.")
 
-		saynn("[say=captain]Welcome. Welcome to this little paradise.[/say]")
+		saynn("[say=captain]Добро пожаловать. Добро пожаловать в этот маленький рай.[/say]")
 		
-		saynn("An officially dressed person slowly approaches you but stops a few meters away, behind him is a heavily-armored guard, single one.")
+		saynn("Человек в официальной форме медленно приближается к вам, но останавливается в нескольких метрах. За его спиной стоит одинокий охранник в тяжелой броне.")
 
-		saynn("[say=captain]Don’t stand there, the ship is gonna leave soon and you don’t wanna be there, trust me.[/say]")
+		saynn("[say=captain]Не стой столбом, корабль скоро улетит, а ты явно не захочешь остаться здесь, поверь мне на слово.[/say]")
 		
-		saynn("You look back at the spaceship, your last way of escape, and sigh. The person is pointing at the floor where there is a long marked line colored yellow. Unsure what else to do, you obey and walk towards it and stop when he gestures again.")
+		saynn("Вы оглядываетесь на космический корабль — ваш последний шанс на побег — и вздыхаете. Человек указывает на пол, где тянется длинная желтая линия разметки. Не зная, что еще делать, вы повинуетесь, идете к линии и останавливаетесь, когда он снова делает жест рукой.")
 		
-		saynn("[say=captain]Stand on the line. Good. You better start learning how to follow orders, a very useful skill.[/say]")
+		saynn("[say=captain]Встань на линию. Хорошо. Тебе стоит поскорее научиться выполнять приказы — очень полезный навык.[/say]")
 		
-		saynn("You take a good look at the people before, the officer is a medium-sized, about 1.7 meters tall, canine with very dark, almost black, fur. He has blue eyes and a short fancy haircut, slowly swishing behind him is a black canine tail. He sports bulky shoes, tight black pants, leather belt with some pouches and a dark blue military jacket with a bright glowing trim to it, everything just screams formal. The only armor he has are the carbon shoulder pads with the same bright trim.")
+		saynn("Вы внимательно осматриваете стоящих перед вами. Офицер — пес среднего роста, около 1,7 метра, с очень темной, почти черной шерстью. У него голубые глаза и стильная короткая стрижка, а позади него медленно покачивается черный собачий хвост. На нем массивные ботинки, облегающие черные штаны, кожаный ремень с подсумками и темно-синяя военная куртка с ярко светящейся отделкой — всё буквально кричит о формальности. Единственная его броня — углеродные наплечники с такой же яркой окантовкой.")
 		
-		saynn("Behind the officer is a very tall guard, more than 2 meters tall. You notice her face to be feminine but considering how much heavy armor she is carrying she must be quite strong. Her fur is of a strange dark-cyan color, the face features show that she is some kind of feline, ears have tassels on them and behind her is a very short tail. You notice that she holds a weapon, something that looks like a stun baton.")
+		saynn("За спиной офицера стоит очень высокая стражница, ростом более двух метров. Вы замечаете, что у неё женское лицо, но, учитывая вес её тяжелой брони, она должна быть невероятно сильной. Её шерсть странного темно-цианового цвета, а черты лица выдают в ней кошачьих; на ушах красуются кисточки, а сзади — очень короткий хвост. Вы замечаете, что в руках она держит оружие, похожее на электрошокерную дубинку.")
 		
-		saynn("The officer crosses his arms, he is about a meter away so you clearly see the nameplate on his jacket saying “Wright”.")
+		saynn("Офицер скрещивает руки на груди. Он стоит примерно в метре от вас, так что вы отчетливо видите именную табличку на его куртке: «Райт».")
 
-		addButton("What now", "Ask what happens next", "whatnow")
+		addButton("Что теперь?", "Спросить, что будет дальше", "whatnow")
 		
 	if(state == "whatnow"):
 		aimCamera("intro_nearcaptain")
 		setLocationName("Spaceship hangar")
 		
-		saynn("[say=pc]So. You came to take me in?[/say]")
+		saynn("[say=pc]Ну что. Пришли меня забрать?[/say]")
 		
-		saynn("The officer walks up closer to you and takes a good look, his hand grabs you by the chin and makes you look at him.")
+		saynn("Офицер подходит ближе и пристально осматривает вас; он хватает вас за подбородок, заставляя посмотреть ему в глаза.")
 
-		saynn("[say=captain]State your name first, future inmate.[/say]")
+		saynn("[say=captain]Для начала назови свое имя, будущая заключенная.[/say]")
 		
-		addButton("It's "+GM.pc.getName(), "Say your name", "sayname")
-		addButton("Shove away", "How dares he", "shoveaway")
+		addButton("Это "+GM.pc.getName(), "Назвать свое имя", "sayname")
+		addButton("Оттолкнуть", "Как он смеет!", "shoveaway")
 		
 	if(state == "sayname"):
 		saynn("[say=pc]{pc.name}[/say]")
 		
-		saynn("[say=captain]Alright, inmate. I want you to forget that name as soon as possible. Here, in this prison, you will be given a number that you will be addressed by. Now, follow me, time to process you.[/say]")
+		saynn("[say=captain]Так, заключенный. Я хочу, чтобы ты забыл это имя как можно скорее. Здесь, в этой тюрьме, тебе дадут номер, по которому тебя будут называть. А теперь за мной, пора тебя оформить.[/say]")
 
-		saynn("The officer taps on your shoulder twice and gestures towards the hangar exit")
+		saynn("Офицер дважды хлопает вас по плечу и жестом указывает на выход из ангара")
 		
-		addButton("Follow", "Follow the officer and his guard", "follow")
+		addButton("Следовать", "Идти за офицером и его охранником", "follow")
 		
 	if(state == "shoveaway"):
 		playAnimation(StageScene.Solo, "shove")
 		
-		saynn("You slap his arm away and shove him back. You growl and bare your fangs.")
+		saynn("Вы сбиваете его руку и толкаете назад. Вы рычите, обнажая клыки.")
 		
-		saynn("[say=pc]Don’t touch me. And I won’t tell you anything.[/say]")
+		saynn("[say=pc]Не трогай меня. И я тебе ничего не скажу.[/say]")
 
-		saynn("Officer staggers back but then suddenly pulls out what looks like an energy gun and aims it directly at you, the guard’s stun baton sparks, ready to hit someone.")
+		saynn("Офицер пошатывается, но затем внезапно выхватывает нечто похожее на энергетическую пушку и целится прямо в вас; шоковая дубинка охранника искрит, готовая к удару.")
 		
-		saynn("[say=captain]I never said that you had a choice. I can shoot you right now on the spot and no one would even bat an eye. Your body will be spaced and written off as an accident. Is that how you want it?[/say]")
+		saynn("[say=captain]Я не говорил, что у тебя есть выбор. Я могу пристрелить тебя прямо здесь и сейчас, и никто даже глазом не моргнет. Твое тело выбросят в космос, списав всё на несчастный случай. Так ты хочешь?[/say]")
 		
-		saynn("You instinctively raise your hands, surrendering, the rush of adrenaline has worn off, replaced with fear.")
+		saynn("Вы инстинктивно вскидываете руки, сдаваясь; прилив адреналина прошел, уступив место страху.")
 		
-		saynn("[say=pc]Fine, fine. Name is {pc.name}[/say]")
+		saynn("[say=pc]Ладно, ладно. Имя — {pc.name}[/say]")
 		
-		saynn("The officer lowers the gun.")
+		saynn("Офицер опускает пистолет.")
 		
-		saynn("[say=captain]See, much better. This kind of behavior is not tolerated here as you will find out. Follow me, time to process you.[/say]")
+		saynn("[say=captain]Вот видишь, так гораздо лучше. Такое поведение здесь не приветствуется, скоро убедишься. Иди за мной, пора тебя оформить.[/say]")
 		
-		addButton("Follow", "Follow the officer and his guard", "follow")
+		addButton("Следовать", "Идти за офицером и его охранником", "follow")
 		
 	if(state == "follow"):
 		aimCamera("intro_intakearea")
@@ -83,95 +83,95 @@ func _run():
 		
 		playAnimation(StageScene.Solo, "walk")
 		
-		saynn("You follow the officer through some corridor and enter an inmate processing area. You see a little showering area that's divided from the main room with glass and automatic doors. Then there are some kinds of vendomats and, lastly, a small medical area. The floor has useful lines that show the order in which to process the inmate.")
+		saynn("Вы следуете за офицером по коридору и входите в зону регистрации заключенных. Вы видите небольшую душевую, отделенную от основного зала стеклом и автоматическими дверями. Затем там стоят какие-то вендинговые автоматы, и, наконец, небольшой медицинский блок. На полу нанесены полезные линии, указывающие порядок прохождения регистрации.")
 		
-		saynn("The officer points at the first area and a bin before it.")
+		saynn("Офицер указывает на первую зону и стоящий перед ней контейнер.")
 		
-		saynn("[say=captain]You're gonna leave all your things and all the clothing in the bin and then go through that.[/say]")
+		saynn("[say=captain]Все свои вещи и всю одежду оставляешь в контейнере, а потом проходишь вон туда.[/say]")
 		
-		saynn("You tilt your head")
+		saynn("Вы наклоняете голову набок.")
 		
-		saynn("[say=pc]But. That will leave me naked.[/say]")
+		saynn("[say=pc]Но... тогда я останусь голым.[/say]")
 		
-		saynn("The officer nods and offers you a smile. The guard seems to be smirking too")
+		saynn("Офицер кивает и одаривает вас улыбкой. Кажется, охранник даже слегка ухмыляется.")
 		
-		addButton("Undress", "Do as he says", "undress")
-		addButton("Fuck no", "Say that you will never do it. This might not be the best idea", "notundress")
+		addButton("Раздеться", "Сделать, как он говорит", "undress")
+		addButton("Хрен там", "Сказать, что ты никогда этого не сделаешь. Возможно, это не самая лучшая идея", "notundress")
 	
 	if(state == "undress"):
 		playAnimation(StageScene.Solo, "stand", {bodyState={naked=true}})
 		aimCamera("intro_nearshower")
 		
-		saynn("Initial confusion is switched with embarrassment, you immediately blush just from the thought.")
+		saynn("Первоначальное замешательство сменяется смущением; ты мгновенно краснеешь от одной только мысли об этом.")
 		
-		saynn("[say=pc]Fine.. Can you not look at least?[/say]")
+		saynn("[say=pc]Ладно... Может, ты хотя бы не будешь смотреть?[/say]")
 		
-		saynn("[say=captain]Get used to it.[/say]")
+		saynn("[say=captain]Привыкай.[/say]")
 		
-		saynn("Seeing that there is no other choice, you approach the bin and begin undressing. You expose your chest and then your legs, of course covering yourself when you’re done. The guard in particular seems to be hungrily watching your body but the officer just mostly smirks at your blush. He then points at the airlock")
+		saynn("Понимая, что выбора нет, ты подходишь к корзине и начинаешь раздеваться. Ты обнажаешь грудь, а затем и ноги, прикрываясь, когда заканчиваешь. Конвоир, кажется, жадно разглядывает твоё тело, а офицер лишь усмехается, глядя на твой румянец. Затем он указывает на шлюз")
 		
-		saynn("[say=captain]Go inside, every inmate needs to be washed.[/say]")
+		saynn("[say=captain]Заходи внутрь, каждого заключенного нужно обмыть.[/say]")
 		
-		addButton("Shower", "Take the refreshing shower", "shower")
+		addButton("Душ", "Принять освежающий душ", "shower")
 		
 	if(state == "notundress"):
 		playAnimation(StageScene.Duo, "stand", {npc="risha", npcAction="stand"})
 		
 		aimCamera("intro_nearshower")
 		
-		saynn("You grit your teeth and show a middle finger to the guy.")
+		saynn("Ты стискиваешь зубы и показываешь парню средний палец.")
 		
-		saynn("[say=pc]Fuck no and fuck off, I’m not doing that.[/say]")
+		saynn("[say=pc]Да ни хрена подобного, и вали нахер, я этого делать не буду![/say]")
 		
-		saynn("The officer sighs and unholsters his energy gun. You, seeing him do that, don’t waste your time and try to punch him but before you can get close, you’re blocked by the tall figure that shoves you away.")
+		saynn("Офицер вздыхает и выхватывает энергетический пистолет. Видя это, ты не теряешь времени и пытаешься нанести удар, но прежде чем ты успеваешь приблизиться, тебя преграждает высокая фигура, которая грубо отталкивает тебя в сторону.")
 		
-		saynn("[say=risha]Hey, captain. Let me have some fun with this one, {pc.he} seems to be too eager. I won’t kill, promise, only break a little.[/say]")
+		saynn("[say=risha]Эй, капитан. Дай мне развлечься с этой девчонкой, {pc.he} кажется, она слишком уж рвется в бой. Обещаю, не убью, только слегка сломаю.[/say]")
 		
-		saynn("You growl and get into the combat stance")
+		saynn("Ты рычишь и принимаешь боевую стойку")
 		
-		saynn("[say=captain]Fine, {pc.he} {pc.isAre} yours.[/say]")
+		saynn("[say=captain]Ладно, {pc.he} {pc.isAre} твоя.[/say]")
 		
-		addButton("Fight", "Well, if she really wants it", "fightrisha")
+		addButton("Драться", "Ну, раз она так хочет", "fightrisha")
 	
 	if(state == "losttorisha"):
-		saynn("It wasn’t a fair fight at all, the guard had every single advantage. You can’t stand up anymore, the pain is too much. You can only grunt while the guard puts her baton away and cracks her knuckles. The officer crouches near you and forces you to look at him.")
+		saynn("Это была совсем не честная драка — у охранницы было преимущество во всём. Ты уже не можешь стоять на ногах, боль становится невыносимой. Ты лишь хрипишь, пока охранница убирает дубинку и разминает костяшки пальцев. Офицер приседает рядом с тобой и заставляет тебя посмотреть ему в глаза.")
 
 	if(state == "wonrisha"):
 		playAnimation(StageScene.Duo, "defeat", {npc="captain", npcAction="firepistol"})
 		
-		saynn("The guard kneels before you, defeated, her hand drops the baton as she grunts from pain. You quickly pick up the weapon and turn it on.")
+		saynn("Охранница, сломленная, опускается перед тобой на колени; она кряхтит от боли, и её рука разжимается, выпуская дубинку. Ты быстро подхватываешь оружие и включаешь его.")
 
-		saynn("[say=risha]Fucker, you will pay for that.. ghhh-h.[/say]")
+		saynn("[say=risha]Сука, ты за это заплатишь... гххх-х.[/say]")
 		
-		saynn("You growl and raise the baton, about to strike. But you notice that the officer is aiming his weapon at you.")
+		saynn("Вы рычите и заносите дубинку для удара, но замечаете, что офицер уже целится в вас из своего оружия.")
 		
-		saynn("[say=captain]Drop it.[/say]")
+		saynn("[say=captain]Бросай.[/say]")
 		
-		saynn("[say=risha]You lost still. Haha..mh..[/say]")
+		saynn("[say=risha]Ты всё ещё проигрываешь. Ха-ха.. мх..[/say]")
 		
-		saynn("You are shaking, guards words enrage you even more and as you swing the weapon, suddenly you feel a powerful shock going through you. The officer switched the mode of his gun to the taser and took a shot. Suddenly your every single muscle begins to tense, the pain is unbearable. You cry in agony and collapse to the floor. The officer slowly approaches you, still aiming his gun and kicks the baton away. He then crouches near you.")
+		saynn("Тебя трясет, слова охранников бесят тебя еще сильнее, и когда ты замахиваешься оружием, вдруг чувствуешь мощный разряд, прошивающий всё тело. Офицер переключил режим своего пистолета на электрошокер и выстрелил. Внезапно каждая твоя мышца начинает напрягаться, боль становится невыносимой. Ты кричишь от агонии и валишься на пол. Офицер медленно приближается к тебе, всё еще целясь из ствола, и отпинывает дубинку в сторону. Затем он приседает рядом с тобой.")
 	
 	if(state == "losttorisha" || state == "wonrisha"):
-		saynn("[say=captain]Such a silly person you are. What did you think was gonna happen? " + ("Even if you would have won, what would you do?" if state=="losttorisha" else "Even though you won, what now?") + " There are no ships here, the only ones that arrive bring new inmates and leave. Are you sure you can beat up every single guard here? You’re stuck here on this rock for the rest of your life. Do you wanna make that life miserable for yourself? Don’t be silly, you just arrived, don’t make me space you.[/say]")
+		saynn("[say=captain]Какая же ты дура. И на что ты рассчитывала?" + ("Even if you would have won, what would you do?" if state=="losttorisha" else "Even though you won, what now?") + "Кораблей здесь нет, те немногие, что прилетают, лишь привозят новых заключенных и тут же улетают. Ты уверен, что сможешь навалять каждому охраннику в этом месте? Ты застрял на этой скале до конца своих дней. Хочешь превратить свою жизнь в сущий ад? Не глупи, ты только что прибыл, не заставляй меня отправить тебя в космос.[/say]")
 		
-		saynn("[say=pc]Ugh.. fuck you..[/say]")
+		saynn("[say=pc]Твою мать.. да пошел ты..[/say]")
 		
-		saynn("The captain shakes his head and pulls out something from his pouch. It’s a muzzle.")
+		saynn("Капитан качает головой и достает что-то из своего мешочка. Это намордник.")
 		
-		saynn("[say=captain]If you’re gonna be a rebel, prepare to be punished like a rebel.[/say]")
+		saynn("[say=captain]Раз собралась бунтовать — готовься к тому, что тебя будут наказывать как бунтарку.[/say]")
 		
-		saynn("He shoves his knee into your chest, causing a painful feeling, before putting the muzzle on your face and tightening the straps around your head.")
+		saynn("Он с силой вжимает колено тебе в грудь, вызывая резкую боль, а затем натягивает на твое лицо намордник, затягивая ремни вокруг головы.")
 		
-		addButton("Get muzzled", "You're too weak to resist", "getgagged")
+		addButton("Надеть намордник", "Ты слишком слаба, чтобы сопротивляться", "getgagged")
 	
 	if(state == "getgagged"):
-		saynn("He then stands up and gestures the guard")
+		saynn("Затем он встает и жестом подзывает охранницу")
 		
-		saynn("[say=captain]Looks like {pc.he} {pc.youVerb('need')} some help to get up.[/say]")
+		saynn("[say=captain]Похоже, {pc.he} {pc.youVerb('need')} нужна помощь, чтобы подняться.[/say]")
 		
-		saynn("The guard obeys and drags you to the bin where she forcibly undresses you and then shoves you into the shower room")
+		saynn("Охранница подчиняется и тащит тебя к корзине, где силой раздевает тебя, а затем заталкивает в душевую")
 		
-		addButton("Shower", "Take the refreshing shower", "shower")
+		addButton("Душ", "Принять освежающий душ", "shower")
 
 	if(state == "shower"):
 		aimCamera("intro_shower")
@@ -179,33 +179,33 @@ func _run():
 		
 		playAnimation(StageScene.Solo, "walk", {bodyState={naked=true}})
 		
-		saynn("You step into the shower area that's closed-off with glass. It’s a small room with many shower heads attached to the ceiling. You keep covering yourself as a normal person would while preparing for the worst. And yes, when the shower begins, you feel that the water is freezing cold. It's so cold that you groan audibly.")
+		saynn("Ты заходишь в душевую зону, отделенную стеклом. Это маленькая комната с множеством душевых леек, закрепленных на потолке. Ты инстинктивно пытаешься прикрыться, как любой нормальный человек, готовясь к худшему. И да, когда включается душ, ты чувствуешь, что вода ледяная. Она настолько холодная, что ты невольно стонешь.")
 		
-		saynn("[say=pc]Why is it so cold![/say]")
+		saynn("[say=pc]Почему так холодно?![/say]")
 		
-		saynn("[say=risha]Do you think scum like you deserve anything else?[/say]")
+		saynn("[say=risha]Думаешь, такая мразь, как ты, заслуживает чего-то другого?[/say]")
 		
-		saynn("[say=captain]Well, it's a cost saving measure. But. If you prove to be a well behaving inmate. If you prove that you can rehabilitate then maybe you will get to use hot water and other benefits. We’re not monsters here. It all depends on how you act though.[/say]")
+		saynn("[say=captain]Ну, это мера экономии. Но... если ты окажешься послушной заключенной, если докажешь, что способна на исправление, то, возможно, тебе разрешат пользоваться горячей водой и другими благами. Мы здесь не монстры. Но всё зависит от твоего поведения.[/say]")
 		
-		saynn("While he explains all that to you, you can’t help but to begin shivering, the cold water runs down your body, washing it. Then it suddenly stops. Instead, some kind of white powder gets dispensed onto you. It sticks and covers you completely. And it stings a lot, causing you to hiss.")
+		saynn("Пока он всё это объясняет, ты невольно начинаешь дрожать; ледяная вода стекает по твоему телу, омывая его. Вдруг она резко прекращается. Вместо неё на тебя высыпается какой-то белый порошок. Он липнет и полностью покрывает кожу. Он сильно щиплет, заставляя тебя шипеть от дискомфорта.")
 		
-		saynn("[say=pc]What is that?![/say]")
+		saynn("[say=pc]Что это такое?![/say]")
 		
-		saynn("[say=captain]Delousing powder. Gets rid of head lice, fleas, scabies and the like. Just don’t let it get into your eye.[/say]")
+		saynn("[say=captain]Дезинсекторский порошок. Избавляет от вшей, блох, чесотки и тому подобного. Только не дай ему попасть в глаза.[/say]")
 		
-		saynn("After a few seconds, the shower starts again and this time the cold water feels like a much needed breeze.")
+		saynn("Спустя несколько секунд душ включается снова, и на этот раз холодная вода ощущается как желанный освежающий бриз.")
 		
-		saynn("[say=risha]You should rub yourself, hah.[/say]")
+		saynn("[say=risha]Тебе бы стоит растереться, а?[/say]")
 		
-		saynn("[say=pc]Not while you’re watching.[/say]")
+		saynn("[say=pc]Только не под твоим присмотром.[/say]")
 		
-		saynn("[say=risha]I’m capable of way more than just watching, trust me.[/say]")
+		saynn("[say=risha]Поверь мне, я способен на гораздо большее, чем просто смотреть.[/say]")
 		
-		saynn("When all of that is finally over, you get dried with a stream of hot air. Then you walk to the other end of the room where the second airlock is, waiting to be let out.")
+		saynn("Когда всё это наконец заканчивается, тебя обдувают струей горячего воздуха. Затем ты идешь в другой конец помещения, к следующему шлюзу, ожидая, когда тебя выпустят.")
 		
-		saynn("[say=captain]Great. Time to register you.[/say]")
+		saynn("[say=captain]Отлично. Пора тебя зарегистрировать.[/say]")
 		
-		addButton("Step out", "Do the registration", "aftershower")
+		addButton("Выйти наружу", "Пройти регистрацию", "aftershower")
 		
 	if(state == "aftershower"):
 		aimCamera("intro_aftershower")
@@ -213,64 +213,64 @@ func _run():
 		
 		playAnimation(StageScene.Solo, "walk")
 		
-		saynn("You step out back into the intake room and follow the lines on the floor to your next stop. You see a vendomat mounted onto a wall, it’s a machine capable of producing and dispensing different things. Near it on a wall is a console. It looks pretty dated, a screen that can only output green color, a bulky card reader and a mechanical keyboard, not even sensory. The officer begins to type some stuff into it while the guard watches you out.")
+		saynn("Вы выходите обратно в приемный покой и идете по линиям на полу к следующей точке. Перед вами на стене висит вендомат — аппарат, способный производить и выдавать разные вещи. Рядом с ним на стене расположена консоль. Выглядит она довольно древней: экран, способный отображать только зеленый цвет, громоздкий картридер и механическая клавиатура, даже без сенсорного слоя. Офицер начинает что-то вбивать в консоль, пока охранник пристально наблюдает за вами.")
 		
-		saynn("[say=captain]Was a while since the last time I used this.[/say]")
+		saynn("[say=captain]Давненько я этим не пользовался.[/say]")
 		
-		saynn("[say=pc]How often do you have intakes?[/say]")
+		saynn("[say=pc]Как часто у вас проходят прием новых заключенных?[/say]")
 		
-		saynn("[say=captain]Pretty often.[/say]")
+		saynn("[say=captain]Довольно часто.[/say]")
 		
-		saynn("[say=pc]But then you should be used to this?[/say]")
+		saynn("[say=pc]Но тогда вы должны к этому привыкнуть?[/say]")
 		
-		saynn("[say=captain]I’m the captain of this prison, {pc.name}[/say]")
+		saynn("[say=captain]Я капитан этой тюрьмы, {pc.name}[/say]")
 		
-		saynn("[say=pc]Um.. then why do I get such special treatment?[/say]")
+		saynn("[say=pc]Эм.. тогда почему ко мне такое особое отношение?[/say]")
 		
-		saynn("[say=captain]I don’t know. I guess you’re lucky?[/say]")
+		saynn("[say=captain]Не знаю. Наверное, тебе просто повезло?[/say]")
 		
-		saynn("The captain is done with typing in some info and the machine begins to work. Firstly, it produces something that looks like an inmate uniform. It consists of a shirt and shorts. Both are mostly made out of thick black cloth but there are some {pc.inmateColor} accent lines. It also has a number on it. “P-{pc.inmateNumber}”")
+		saynn("Капитан заканчивает вводить данные, и машина приходит в действие. Сначала она выдает нечто, похожее на заключенную форму: рубашку и шорты. И то, и другое сделано в основном из плотной черной ткани, но с кое-какими {pc.inmateColor} акцентными линиями. На форме также красуется номер: «P-{pc.inmateNumber}».")
 		
-		saynn("[say=captain]You’re not {pc.name} anymore. Now you’re inmate number {pc.inmateNumber}, {pc.inmateType} block. Put it on.[/say]")
+		saynn("[say=captain]Ты больше не {pc.name}. Теперь ты заключенный номер {pc.inmateNumber}, блок {pc.inmateType}. Надевай.[/say]")
 		
-		saynn("[say=pc]Whatever you say.[/say]")
+		saynn("[say=pc]Как скажете.[/say]")
 		
-		saynn("You take your time putting the fresh uniform on, it's exactly the right size for you.")
+		saynn("Ты не спеша натягиваешь новенькую форму — она сидит на тебе идеально.")
 		
-		saynn("[say=captain]If you lose it - you’re gonna be in trouble, just keep that in mind.[/say]")
+		saynn("[say=captain]Если потеряешь — у тебя будут проблемы, просто имей это в виду.[/say]")
 		
-		saynn("Next, the machine produces two sets of bulky metal cuffs and a collar. They look heavy and uncomfortable but at least they have a soft padding on the inside. The captain takes it all and glances at you.")
+		saynn("Затем машина выдает две пары массивных металлических наручников и ошейник. Они выглядят тяжелыми и неудобными, но, по крайней мере, внутри есть мягкая подкладка. Капитан забирает всё это и бросает на тебя взгляд.")
 		
-		saynn("[say=captain]I will put these on you. Stand still.[/say]")
+		saynn("[say=captain]Сейчас я надену это на тебя. Стой смирно.[/say]")
 		
-		addButton("Stand still", "Let him do it", "cuffs")
+		addButton("Стой смирно", "Позволить ему", "cuffs")
 		
 	if(state == "cuffs"):
 		aimCamera("intro_beforemedical")
 		
-		saynn("You don’t look too happy about it but you comply, the stare of a guard makes that choice easier. You offer your wrists and ankles to the captain as he locks every cuff onto you one by one.")
+		saynn("Ты не выглядишь особо счастливой, но подчиняешься — под пристальным взглядом охранника сделать выбор проще. Ты подставляешь запястья и лодыжки капитану, пока он один за другим застегивает на тебе каждое кольцо.")
 		
-		saynn("[say=pc]Is that even legal?[/say]")
+		saynn("[say=pc]Это вообще законно?[/say]")
 		
-		saynn("[say=risha]Are you seriously gonna be the one who talks about the law?[/say]")
+		saynn("[say=risha]Ты серьезно? Тот, кто будет рассуждать о законе?[/say]")
 		
-		saynn("[say=captain]Well, it helps with the very rebellious ones. No one ever escaped from this prison.[/say]")
+		saynn("[say=captain]Ну, это помогает с особо буйными. Из этой тюрьмы еще никто не сбегал.[/say]")
 		
-		saynn("You notice that the captain didn’t actually answer the question but you’re not sure if you want to ask him again. The captain then proceeds to put the collar on you. That’s when you realize that the soft padding doesn’t really help much, the thing sits very uncomfortably on you, barely letting you breathe. As soon as the magnetic lock on the collar engages, it beeps and a little light begins to blink red on it.")
+		saynn("Вы замечаете, что капитан так и не ответил на вопрос, но не уверены, хотите ли вы переспрашивать. Затем капитан надевает на вас ошейник. В этот момент вы понимаете, что мягкая подкладка не особо спасает — штуковина сидит крайне неудобно, едва позволяя дышать. Как только магнитный замок ошейника защелкивается, раздается писк, и на нем начинает мигать красный огонек.")
 		
-		saynn("[say=pc]What is that, is it gonna blow my head?[/say]")
+		saynn("[say=pc]Что это? Он что, взорвется у меня на голове?[/say]")
 		
-		saynn("[say=captain]Now there is no way for you to take it off. And not a single staff member can take it off too. It won’t kill you. But it is a shock collar.[/say]")
+		saynn("[say=captain]Теперь ты точно не сможешь его снять. Да и ни один сотрудник не сможет. Убивать он тебя не будет. Но это электрошоковый ошейник.[/say]")
 		
-		saynn("[say=pc]Great..[/say]")
+		saynn("[say=pc] Великолепно...[/say]")
 		
-		saynn("[say=captain]I’m glad you like it. Next stop is the medical checkup, I will let the doctor take over. See you around.[/say]")
+		saynn("[say=captain]Рад, что тебе нравится. Следующая остановка — медосмотр, дальше тебя подхватит врач. Еще увидимся.[/say]")
 		
-		saynn("[say=pc]Huh?[/say]")
+		saynn("[say=pc]А?[/say]")
 		
-		saynn("They guide you to the medical section before leaving you to it.")
+		saynn("Вас проводят в медицинский сектор, после чего оставляют на произвол судьбы.")
 		
-		addButton("Waddle there", "How bad can it be really", "endthescene")
+		addButton("Переваливай давай", "Да насколько всё может быть плохо, в самом деле", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "fightrisha"):

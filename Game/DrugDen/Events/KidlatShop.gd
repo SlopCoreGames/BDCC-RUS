@@ -145,11 +145,11 @@ func getStartCooldown() -> int:
 
 func getInteractInfo() -> Dictionary:
 	return {
-		text = "You notice someone here.",
+		text = "Вы замечаете здесь кого-то.",
 		actions = [
 			{
 				id = "approach",
-				name = "Approach",
+				name = "Подойти",
 				desc = "See what's up",
 				args = [],
 				disabled = false,
@@ -249,11 +249,11 @@ func addBuyButtons(_scene):
 			continue
 		
 		if(wasSold):
-			_scene.addDisabledButton(itemRef.getVisibleName(), "You already bought this!\n\n"+itemRef.getVisibleDescription())
+			_scene.addDisabledButton(itemRef.getVisibleName(), "Вы это уже покупали!\n\n"+itemRef.getVisibleDescription())
 		elif(GM.pc.getCredits() < cost):
-			_scene.addDisabledButton(itemRef.getVisibleName(), "Cost: "+str(cost)+" credit"+("s" if cost != 1 else "")+"\nNot enough credits!\n\n"+itemRef.getVisibleDescription())
+			_scene.addDisabledButton(itemRef.getVisibleName(), "Цена: "+str(cost)+" credit"+("s" if cost != 1 else "")+"\nНедостаточно кредитов!\n\n"+itemRef.getVisibleDescription())
 		else:
-			_scene.addButton(itemRef.getVisibleName(), "Cost: "+str(cost)+" credit"+("s" if cost != 1 else "")+"\n\n"+itemRef.getVisibleDescription(), "buyKidlatItem", [entry])
+			_scene.addButton(itemRef.getVisibleName(), "Цена: "+str(cost)+" credit"+("s" if cost != 1 else "")+"\n\n"+itemRef.getVisibleDescription(), "buyKidlatItem", [entry])
 		
 func doBuyItem(entry:Dictionary):
 	var itemID:String = entry["itemID"]

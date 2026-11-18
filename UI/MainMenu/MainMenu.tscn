@@ -122,17 +122,17 @@ __meta__ = {
 [node name="SaveButton" type="Button" parent="MainHBox/Panel2/MarginContainer/VBoxContainer/HBoxContainer2"]
 margin_right = 116.0
 margin_bottom = 26.0
-hint_tooltip = "Save the game"
+hint_tooltip = "Сохранить игру"
 size_flags_horizontal = 3
-text = "Quick save"
+text = "Быстрое сохранение"
 
 [node name="LoadButton" type="Button" parent="MainHBox/Panel2/MarginContainer/VBoxContainer/HBoxContainer2"]
 margin_left = 120.0
 margin_right = 236.0
 margin_bottom = 26.0
-hint_tooltip = "Load the saved game"
+hint_tooltip = "Загрузить сохранение"
 size_flags_horizontal = 3
-text = "Quick load"
+text = "Быстрая загрузка"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MainHBox/Panel2/MarginContainer/VBoxContainer"]
 visible = false
@@ -143,10 +143,10 @@ margin_bottom = 696.0
 [node name="PrevPageButton" type="Button" parent="MainHBox/Panel2/MarginContainer/VBoxContainer/HBoxContainer"]
 margin_right = 116.0
 margin_bottom = 26.0
-hint_tooltip = "Flip to the previous page of options"
+hint_tooltip = "Предыдущая страница настроек"
 size_flags_horizontal = 3
 disabled = true
-text = "<- Page"
+text = "<- Страница"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -155,10 +155,10 @@ __meta__ = {
 margin_left = 120.0
 margin_right = 236.0
 margin_bottom = 26.0
-hint_tooltip = "Flip to the next page of options"
+hint_tooltip = "Следующая страница настроек"
 size_flags_horizontal = 3
 disabled = true
-text = "Page ->"
+text = "Страница ->"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -210,7 +210,7 @@ margin_top = 160.0
 margin_right = 754.0
 margin_bottom = 199.0
 custom_fonts/font = SubResource( 3 )
-text = "Broken Dreams Correctional Center"
+text = "Исправительный центр «Разбитые мечты»"
 align = 1
 autowrap = true
 
@@ -220,7 +220,7 @@ margin_right = 754.0
 margin_bottom = 230.0
 bbcode_enabled = true
 bbcode_text = "[center]An erotic text-based rpg about being a prisoner in a space prison.[/center]"
-text = "An erotic text-based rpg about being a prisoner in a space prison."
+text = "Эротическая текстовая RPG о жизни заключенного в космической тюрьме."
 fit_content_height = true
 
 [node name="MarginContainer2" type="MarginContainer" parent="MainHBox/CenterAreaVBox/MainVBox/ScrollContainer/VBoxContainer"]
@@ -256,7 +256,7 @@ margin_bottom = 70.0
 custom_fonts/normal_font = SubResource( 5 )
 bbcode_enabled = true
 bbcode_text = "This game contains a lot of adult themes including sexual and fetish content and is meant to be played by adults only"
-text = "This game contains a lot of adult themes including sexual and fetish content and is meant to be played by adults only"
+text = "Эта игра содержит множество взрослых тем, включая сексуальный контент и фетиши, и предназначена только для взрослой аудитории"
 fit_content_height = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -267,7 +267,7 @@ unique_name_in_owner = true
 margin_top = 427.0
 margin_right = 754.0
 margin_bottom = 447.0
-text = "Version number here"
+text = "Номер версии"
 align = 2
 
 [node name="Label2" type="RichTextLabel" parent="MainHBox/CenterAreaVBox/MainVBox/ScrollContainer/VBoxContainer"]
@@ -276,7 +276,7 @@ margin_right = 754.0
 margin_bottom = 478.0
 bbcode_enabled = true
 bbcode_text = "[right]Created by Rahi[/right]"
-text = "Created by Rahi"
+text = "Создано Rahi"
 fit_content_height = true
 
 [node name="Spacer2" type="Control" parent="MainHBox/CenterAreaVBox/MainVBox/ScrollContainer/VBoxContainer"]
@@ -298,7 +298,7 @@ rect_min_size = Vector2( 200, 0 )
 unique_name_in_owner = true
 margin_right = 200.0
 margin_bottom = 43.0
-text = "Latest github release: loading"
+text = "Последний релиз на GitHub: загрузка"
 align = 2
 autowrap = true
 
@@ -307,7 +307,7 @@ margin_top = 47.0
 margin_right = 200.0
 margin_bottom = 87.0
 rect_min_size = Vector2( 0, 40 )
-text = "Github Releases"
+text = "Релизы на GitHub"
 
 [node name="GridContainer" type="GridContainer" parent="MainHBox/CenterAreaVBox/MainVBox"]
 unique_name_in_owner = true
@@ -323,7 +323,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 148.0
 margin_bottom = 26.0
-text = "Resume"
+text = "Продолжить"
 myTooltipDesc = "Load the latest save and continue playing"
 myShortcutKey = "1"
 
@@ -333,7 +333,7 @@ anchor_bottom = 0.0
 margin_left = 152.0
 margin_right = 300.0
 margin_bottom = 26.0
-text = "New game"
+text = "Новая игра"
 myTooltipDesc = "Start a new game"
 myShortcutKey = "2"
 
@@ -343,7 +343,7 @@ anchor_bottom = 0.0
 margin_left = 304.0
 margin_right = 452.0
 margin_bottom = 26.0
-text = "Load game"
+text = "Загрузить игру"
 myTooltipDesc = "Load a previous game"
 myShortcutKey = "3"
 
@@ -353,7 +353,7 @@ anchor_bottom = 0.0
 margin_left = 456.0
 margin_right = 603.0
 margin_bottom = 26.0
-text = "Options"
+text = "Настройки"
 myTooltipDesc = "Open the settings menu"
 myShortcutKey = "4"
 
@@ -363,7 +363,7 @@ anchor_bottom = 0.0
 margin_left = 607.0
 margin_right = 754.0
 margin_bottom = 26.0
-text = "Credits"
+text = "Титры"
 myTooltipDesc = "Check the credits"
 myShortcutKey = "5"
 
@@ -373,7 +373,7 @@ anchor_bottom = 0.0
 margin_top = 30.0
 margin_right = 148.0
 margin_bottom = 56.0
-text = "Join Discord"
+text = "Присоединиться к Discord"
 myTooltipDesc = "Join the game's discord server (18+ only)"
 myShortcutKey = "Q"
 
@@ -395,7 +395,7 @@ margin_left = 304.0
 margin_top = 30.0
 margin_right = 452.0
 margin_bottom = 56.0
-text = "DevTools"
+text = "Инструменты разработчика"
 myTooltipDesc = "Open the panel with the tools that are useful for content developers"
 myShortcutKey = "E"
 
@@ -406,7 +406,7 @@ margin_left = 456.0
 margin_top = 30.0
 margin_right = 603.0
 margin_bottom = 56.0
-text = "Changelog"
+text = "Список изменений"
 myTooltipDesc = "View the project's changelog"
 myShortcutKey = "R"
 
@@ -417,7 +417,7 @@ margin_left = 607.0
 margin_top = 30.0
 margin_right = 754.0
 margin_bottom = 56.0
-text = "Mods"
+text = "Моды"
 myTooltipDesc = "See what modules are loaded currently"
 myShortcutKey = "T"
 
@@ -428,7 +428,7 @@ anchor_bottom = 0.0
 margin_top = 60.0
 margin_right = 148.0
 margin_bottom = 86.0
-text = "AutoTranslator"
+text = "Автопереводчик"
 myTooltipDesc = "Experimental feature that translates scenes on the fly"
 myShortcutKey = "A"
 
@@ -439,7 +439,7 @@ margin_left = 152.0
 margin_top = 60.0
 margin_right = 300.0
 margin_bottom = 86.0
-text = "Datapacks"
+text = "Датапаки"
 myTooltipDesc = "Manage or create datapacks"
 myShortcutKey = "S"
 
@@ -450,7 +450,7 @@ margin_left = 304.0
 margin_top = 60.0
 margin_right = 452.0
 margin_bottom = 86.0
-text = "Troubleshooting"
+text = "Устранение неполадок"
 myTooltipDesc = "Troubleshoot problems with the game"
 myShortcutKey = "D"
 
@@ -461,7 +461,7 @@ margin_left = 456.0
 margin_top = 60.0
 margin_right = 603.0
 margin_bottom = 86.0
-text = "Quit"
+text = "Выход"
 myTooltipDesc = "See you space cowboy..."
 myShortcutKey = "F"
 
@@ -492,7 +492,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 148.0
 margin_bottom = 26.0
-text = "Close"
+text = "Закрыть"
 myShortcutKey = "1"
 
 [node name="DevSceneConverter2" parent="MainHBox/CenterAreaVBox/DevToolsScreen/GridContainer" instance=ExtResource( 11 )]
@@ -501,7 +501,7 @@ anchor_bottom = 0.0
 margin_left = 152.0
 margin_right = 300.0
 margin_bottom = 26.0
-text = "SceneConverter"
+text = "Конвертер сцен"
 myTooltipDesc = "A tool that can convert scenes written in a simple text format into code"
 myShortcutKey = "2"
 
@@ -511,7 +511,7 @@ anchor_bottom = 0.0
 margin_left = 304.0
 margin_right = 452.0
 margin_bottom = 26.0
-text = "Npc Likes Gen."
+text = "Генератор симпатий NPC"
 myShortcutKey = "3"
 
 [node name="DevCharCreator" parent="MainHBox/CenterAreaVBox/DevToolsScreen/GridContainer" instance=ExtResource( 11 )]
@@ -520,7 +520,7 @@ anchor_bottom = 0.0
 margin_left = 456.0
 margin_right = 603.0
 margin_bottom = 26.0
-text = "Char Creator"
+text = "Редактор персонажа"
 myShortcutKey = "4"
 
 [node name="DevModCreator" parent="MainHBox/CenterAreaVBox/DevToolsScreen/GridContainer" instance=ExtResource( 11 )]
@@ -529,7 +529,7 @@ anchor_bottom = 0.0
 margin_left = 607.0
 margin_right = 754.0
 margin_bottom = 26.0
-text = "ModMaker"
+text = "Создатель модов"
 myShortcutKey = "5"
 
 [node name="DevSceneConverter" parent="MainHBox/CenterAreaVBox/DevToolsScreen/GridContainer" instance=ExtResource( 11 )]
@@ -538,7 +538,7 @@ anchor_bottom = 0.0
 margin_top = 30.0
 margin_right = 148.0
 margin_bottom = 56.0
-text = "(old) SceneConverter"
+text = "(старый) SceneConverter"
 myShortcutKey = "Q"
 
 [node name="SexActivityCreator" type="Button" parent="MainHBox/CenterAreaVBox/DevToolsScreen/GridContainer"]
@@ -547,9 +547,9 @@ margin_left = 135.0
 margin_top = 30.0
 margin_right = 311.0
 margin_bottom = 56.0
-hint_tooltip = "Provides an easier way to code sex activities"
+hint_tooltip = "Упрощает написание кода для секс-сцен"
 size_flags_horizontal = 3
-text = "Sex Activity Creator"
+text = "Создатель секс-активностей"
 
 [node name="InteractionCreator" parent="MainHBox/CenterAreaVBox/DevToolsScreen/GridContainer" instance=ExtResource( 11 )]
 anchor_right = 0.0
@@ -558,7 +558,7 @@ margin_left = 152.0
 margin_top = 30.0
 margin_right = 300.0
 margin_bottom = 56.0
-text = "Interaction Creator"
+text = "Создатель взаимодействий"
 myShortcutKey = "W"
 
 [node name="DevFetishGenerator" parent="MainHBox/CenterAreaVBox/DevToolsScreen/GridContainer" instance=ExtResource( 11 )]
@@ -568,7 +568,7 @@ margin_left = 304.0
 margin_top = 30.0
 margin_right = 452.0
 margin_bottom = 56.0
-text = "Npc Fetishes Gen."
+text = "Генератор фетишей NPC"
 myShortcutKey = "3"
 
 [node name="TroubleshootingScreen" parent="MainHBox/CenterAreaVBox" instance=ExtResource( 12 )]
@@ -668,7 +668,7 @@ margin_bottom = 696.0
 unique_name_in_owner = true
 margin_right = 216.0
 margin_bottom = 43.0
-text = "Latest github release: loading"
+text = "Последний релиз на GitHub: загрузка"
 autowrap = true
 
 [node name="GithubReleasesButton" type="Button" parent="MainHBox/Panel/MarginContainer/VBoxContainer"]
@@ -676,7 +676,7 @@ unique_name_in_owner = true
 margin_top = 47.0
 margin_right = 216.0
 margin_bottom = 73.0
-text = "Github Releases"
+text = "Релизы на GitHub"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="MainHBox/Panel/MarginContainer/VBoxContainer"]
 margin_top = 77.0

@@ -37,13 +37,13 @@ margin_bottom = -4.0
 unique_name_in_owner = true
 margin_right = 198.0
 margin_bottom = 24.0
-text = "Pause all"
+text = "Пауза для всех"
 
 [node name="Label" type="Label" parent="Control/PopupPanel/OverrideList"]
 margin_top = 28.0
 margin_right = 198.0
 margin_bottom = 42.0
-text = "Toy group overrides"
+text = "Переопределение групп игрушек"
 align = 1
 
 [connection signal="pressed" from="BPButton" to="." method="_on_BPButton_pressed"]

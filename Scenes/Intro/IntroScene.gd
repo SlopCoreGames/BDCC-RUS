@@ -15,307 +15,307 @@ func _run():
 		playAnimation(StageScene.Solo, "stand")
 		
 		addCharacter("intro_detective")
-		saynn("[b]You follow a tall male figure through a long corridor[/b]. You don’t see any windows, everything is lit up by industrial-looking lights. Your head hurts, you suddenly realize that [b]you forgot where you are[/b] and what you are doing here. You panic, your eyes jump from point to point, gray floor tiles, dark-blue concrete walls, an unknown person’s back, what the heck is going on here. [b]Two guys walk by[/b], you notice their blue uniform and [b]badges that say “IIPF”[/b]. You also notice holsters and belts with equipment, the guy that you’re following has these too. You look down at your hands. No, you’re not cuffed.")
+		saynn("[b]Вы следуете за высокой мужской фигурой по длинному коридору[/b]. Окон не видно, всё залито светом промышленных ламп. Голова раскалывается, и вы внезапно осознаёте, что [b]совсем не помните, где находитесь[/b] и что здесь делаете. Накрывает паника, взгляд мечется из стороны в сторону: серая плитка на полу, тёмно-синие бетонные стены, спина незнакомца... что, чёрт возьми, происходит? [b]Мимо проходят двое парней[/b], вы замечаете их синюю форму и [b]значки с надписью «IIPF»[/b]. Также видны кобуры и ремни с снаряжением — у того, за кем вы идёте, они тоже есть. Вы смотрите на свои руки. Нет, вы не в наручниках.")
 
-		saynn("The person that is escorting you [b]stops near one of the doors[/b], unlocks it and [b]invites you in[/b].")
+		saynn("Тот, кто вас сопровождает, [b]останавливается у одной из дверей[/b], отпирает её и [b]пропускает вас внутрь[/b].")
 
-		saynn("[say=intro_detective]Come in and take a seat.[/say]")
+		saynn("[say=intro_detective]Заходи и присаживайся.[/say]")
 
-		saynn("You look at him, the [b]guy has clear canine features[/b] and a wolf mane, behind him is a fluffy tail. [b]You decide to step inside[/b]. It’s a well-lit small room with just a table, two metal chairs and a security camera in the corner. Panic is still there, the guy pushes you in slightly and locks the door behind him before sitting down on one of the chairs himself and watching you.")
+		saynn("Вы смотрите на него: у [b]парня явно выражены собачьи черты[/b] и волчья грива, а сзади — пушистый хвост. [b]Вы решаете войти[/b]. Это небольшая, хорошо освещённая комната, где есть только стол, два металлических стула и камера наблюдения в углу. Паника никуда не делась; парень слегка подталкивает вас внутрь, запирает дверь за собой, а затем сам садится на один из стульев и пристально наблюдает за вами.")
 
-		addButton("Take a seat", "Well, what else is there to do", "take_a_sit")
+		addButton("Сесть", "Ну, а что ещё остаётся делать?", "take_a_sit")
 
 	if(state == "take_a_sit"):
 		aimCamera("intro_interogation")
 		setLocationName("Interrogation room")
 		playAnimation(StageScene.Solo, "sit")
 		
-		saynn("You sit on the second chair, the one that is further from the only exit. You take a better look at the guy. He is clearly a wolf, quite tall, in his forties, gray fur, black pants and a white t-shirt.")
+		saynn("Вы садитесь на второй стул, тот, что подальше от единственного выхода. Вы внимательнее разглядываете парня. Он явно волк: довольно высокий, лет сорока, с серой шерстью, в чёрных штанах и белой футболке.")
 
-		saynn("[say=intro_detective]Name is Jake, IIPF, threat assessment division. If you want some water let me know, I can bring a bottle for you.[/say]")
+		saynn("[say=intro_detective]Меня зовут Джейк, IIPF, отдел оценки угроз. Если хочешь воды — скажи, я принесу бутылку.[/say]")
 
-		saynn("[b]Your head is still fuzzy[/b], you could clearly use some water but you shake your head and refuse. The wolf’s voice seems quite calm, his eyes do follow your motions but he is mostly relaxed in the chair.")
+		saynn("[b]В голове всё ещё туман[/b], тебе явно не помешало бы глоток воды, но ты качаешь головой, отказываясь. Голос волка звучит довольно спокойно; его глаза следят за каждым твоим движением, но в целом он расслабленно сидит в кресле.")
 
-		saynn("[say=intro_detective]No? Got it, just wanna make sure you have everything. I will ask you some questions if that’s okay. You’re not under arrest and are free to leave at any point. But I would really appreciate your cooperation, we need information.[/say]")
+		saynn("[say=intro_detective]Нет? Понял, просто хочу убедиться, что у тебя всё есть. Если не возражаешь, я задам тебе несколько вопросов. Ты не под арестом и можешь уйти в любой момент. Но я был бы очень признателен за сотрудничество — нам нужна информация.[/say]")
 
-		saynn("Jake grabs a tablet-looking device from his belt and starts interacting with the holo-screen, sending a few bright particles flying with each swipe that he does. You interlock your fingers, unsure how to react.")
+		saynn("Джейк достает с пояса устройство, похожее на планшет, и начинает работать с голографическим экраном; с каждым его движением в воздухе разлетаются яркие частицы. Ты сцепляешь пальцы в замок, не зная, как реагировать.")
 
-		saynn("[say=intro_detective]Strange, we couldn’t find your DNA-print in the database. Tell me your name. I will also need your sex, race and a few more things, shouldn’t take too long.[/say]")
+		saynn("[say=intro_detective]Странно, мы не смогли найти твой ДНК-отпечаток в базе данных. Назови свое имя. Также мне понадобятся твой пол, раса и еще пара мелочей, это не займет много времени.[/say]")
 
-		addButton("Continue", "Enter your name", "askforname")
+		addButton("Продолжить", "Введите ваше имя", "askforname")
 
 	if(state == "askforname"):
-		say("Enter the name of your character:")
+		say("Введите имя вашего персонажа:")
 		
 		var textBox:LineEdit = addTextbox("player_name")
 		var _ok = textBox.connect("text_entered", self, "onTextBoxEnterPressed")
 		
-		addButton("Confirm", "Choose this name", "setname")
+		addButton("Подтвердить", "Выбрать это имя", "setname")
 		addButtonAt(4, "Random?", "Help choose a random name", "randomname")
 		
 
 	if(state == "donecreating"):
 		playAnimation(StageScene.Solo, "sit")
-		saynn("Jake nods and puts the tablet away for now, he leans forward on the chair and directs his eyes at you.")
+		saynn("Джейк кивает и пока откладывает планшет в сторону, затем подается вперед в кресле и пристально смотрит на тебя.")
 
-		saynn("[say=intro_detective]Alright, {pc.name}. How are you feeling?[/say]")
+		saynn("[say=intro_detective]Ладно, {pc.name}. Как самочувствие?[/say]")
 
-		saynn("[say=pc]I have so many questions. Why am I here?[/say]")
+		saynn("[say=pc]У меня столько вопросов. Почему я здесь?[/say]")
 
-		saynn("[say=intro_detective]Don’t worry, it’s just a side effect of the procedure, the memories will soon start returning to you.[/say]")
+		saynn("[say=intro_detective]Не волнуйся, это просто побочный эффект процедуры, скоро воспоминания начнут возвращаться к тебе.[/say]")
 
-		saynn("[say=pc]What procedure?[/say]")
+		saynn("[say=pc]Какой процедуры?[/say]")
 
-		saynn("The guy straightens his posture again and moves his chair closer to you.")
+		saynn("Парень снова выпрямляется и пододвигает свой стул ближе к тебе.")
 
-		saynn("[say=intro_detective]Its short name is mindtest. It involves a machine that scans the brain and tries to find any inconsistencies in the neuron patterns, nerve cells that are close together but disconnected from the rest of the network. That's where our brain puts things that we are trying to keep away from ourselves and others, things that we are trying to hide. Usually these are some tragic memories like the deaths of relatives.[/say]")
+		saynn("[say=intro_detective]Ее краткое название — майндтест. Это процесс с использованием машины, которая сканирует мозг и пытается найти любые несоответствия в паттернах нейронов — нервные клетки, которые расположены близко друг к другу, но отключены от остальной сети. Именно туда наш мозг прячет то, что мы пытаемся скрыть от самих себя и окружающих. Обычно это какие-нибудь трагические воспоминания, вроде смерти родственников.[/say]")
 
-		saynn("[say=pc]That doesn’t sound very ethical.[/say]")
+		saynn("[say=pc]Звучит не очень-то этично.[/say]")
 
-		saynn("[say=intro_detective]It’s entirely automated. Going through each person's memory by hand would take years. An AI does it instead, it’s a completely self-contained process, nothing leaks out but the answer.[/say]")
+		saynn("[say=intro_detective]Процесс полностью автоматизирован. Если бы мы перебирали память каждого человека вручную, это заняло бы годы. Вместо этого это делает ИИ; процесс полностью автономный, наружу просачивается только результат.[/say]")
 
-		saynn("You raise a brow at his words.")
+		saynn("Ты удивленно приподнимаешь бровь, слушая его слова.")
 
-		saynn("[say=pc]So what does that mean?[/say]")
+		saynn("[say=pc]И что это значит?[/say]")
 
-		saynn("The guy shifts even closer to you, the room starts to feel even smaller than it was, you’re cornered. Jake’s tone shifts to a more intimidating one.")
+		saynn("Парень придвигается к тебе еще ближе; комната начинает казаться еще теснее, ты чувствуешь себя загнанной в угол. Тон Джейка становится более угрожающим.")
 
-		saynn("[say=intro_detective]That’s what I was gonna ask you. You failed the procedure. Recently, you committed a crime, {pc.name}.[/say]")
+		saynn("[say=intro_detective]Об этом я и хотел тебя спросить. Ты провалил процедуру. Недавно ты совершил преступление, {pc.name}.[/say]")
 
-		saynn("[b]You’re being confronted[/b]")
+		saynn("[b]Тебя прижали к стенке[/b]")
 
-		addButton("I didn’t do it!", "There is no way", "didntdoit")
-		addButton("Lawyer up", "You’re not gonna tell him shit", "wantlawyer")
+		addButton("Это не я!", "Быть не может", "didntdoit")
+		addButton("Зови адвоката", "Ты ему ни хрена не скажешь", "wantlawyer")
 		
 	if(state == "didntdoit"):
-		saynn("[say=pc]There is no way, I didn’t do anything, your machine failed, not me.[/say]")
+		saynn("[say=pc]Быть не может, я ничего не делал, это твоя машина сбоит, а не я![/say]")
 
-		saynn("Your hands shake, the panic returns.")
+		saynn("Руки дрожат, паника возвращается.")
 
-		saynn("[say=intro_detective]You don’t get it, we’re long past that. My job here is to figure out what you did and why you did it. And even if you don’t tell me anything, the fact alone that the mindtest has marked you is enough to put you in jail for a long time, to isolate you. I’m just here to help you explain everything. So you don’t look like a monster in the eyes of others. It might not look like that but I’m your only friend at the current moment.[/say]")
+		saynn("[say=intro_detective]Ты не понимаешь, мы уже давно прошли этот этап. Моя работа здесь — выяснить, что именно ты натворил и зачем. И даже если ты не скажешь мне ни слова, одного факта того, что тест разума пометил тебя, достаточно, чтобы засадить тебя в тюрьму на долгий срок, чтобы изолировать. Я здесь просто для того, чтобы помочь тебе всё объяснить. Чтобы в глазах остальных ты не выглядел монстром. Может, это и не похоже на правду, но на данный момент я твой единственный друг.[/say]")
 
-		saynn("You put your hands on the table and stare at a wall. Your mind is racing. If what he says is true then you are very screwed either way.")
+		saynn("Ты кладешь руки на стол и уставишься в стену. Мысли несутся вскачь. Если то, что он говорит — правда, то тебе в любом случае полная жопа.")
 
-		saynn("[say=pc]How can you be so sure?[/say]")
+		saynn("[say=pc]Откуда такая уверенность?[/say]")
 
-		saynn("The wolf sighs.")
+		saynn("Волк вздыхает.")
 
-		saynn("[say=intro_detective]We've been doing this for hundreds of years. I've been in the police force for 20 years. Minds are predictable, there are no secrets left anymore.[/say]")
+		saynn("[say=intro_detective]Мы занимаемся этим сотни лет. Я в полиции уже 20 лет. Разум предсказуем, тайн больше не осталось.[/say]")
 
-		saynn("Jake is focused on you, arms crossed. The silence is so loud.")
+		saynn("Джейк сосредоточенно смотрит на тебя, скрестив руки на груди. Тишина буквально звенит.")
 
-		saynn("[say=intro_detective]Anyone can make a mistake, {pc.name}. But we can work through it. Together.[/say]")
+		saynn("[say=intro_detective]Каждый может ошибиться, {pc.name}. Но мы можем со всем справиться. Вместе.[/say]")
 
-		addButton("Confess", "Maybe you actually did it..", "admit")
-		addButton("Stay silent", "Fuck that guy", "staysilent")
+		addButton("Признаться", "Может, ты и правда это сделал...", "admit")
+		addButton("Молчать", "Да пошёл он нахуй", "staysilent")
 		
 	if(state == "wantlawyer"):
-		saynn("You frown and look away.")
+		saynn("Ты хмуришься и отводишь взгляд.")
 
-		saynn("[say=pc]I’m not gonna tell you anything. I know how it works. Give me a lawyer.[/say]")
+		saynn("[say=pc]Я вам ничего не скажу. Я знаю, как это работает. Дайте мне адвоката.[/say]")
 
-		saynn("Jake tilts his head and puts on a mean face.")
+		saynn("Джейк наклоняет голову и принимает свирепый вид.")
 
-		saynn("[say=intro_detective]The amount of evidence we have is enough. You don’t have to tell me anything. But denying the facts won’t do you any favors. I’ve seen innocent people and you don’t look like one of them.[/say]")
+		saynn("[say=intro_detective]У нас достаточно улик. Тебе необязательно что-то рассказывать. Но отрицать факты тебе на руку не будет. Я видел много невиновных, и ты на них не похож.[/say]")
 
-		saynn("His gaze drills you.")
+		saynn("Его взгляд буквально сверлит тебя насквозь.")
 
-		saynn("[say=intro_detective]When people don’t know the truth, they assume the worst. I can help you. But only if you wanna help yourself first.[/say]")
+		saynn("[say=intro_detective]Когда люди не знают правды, они склонны предполагать худшее. Я могу помочь тебе. Но только если ты сам захочешь себе помочь.[/say]")
 
-		addButton("Confess", "Maybe you actually did it..", "admit")
-		addButton("Stay silent", "Fuck that guy", "staysilent")
+		addButton("Признаться", "Может, ты и правда это сделал...", "admit")
+		addButton("Молчать", "Да пошёл он нахуй", "staysilent")
 		
 	if(state == "staysilent"):
-		saynn("Now you feel angry. You grit your teeth and keep your mouth shut, arms crossed. Jake sees that and tilts his head down before exhaling audibly, seems like he is about to give up.")
+		saynn("Теперь ты чувствуешь ярость. Ты стискиваешь зубы и держишь рот на замке, скрестив руки на груди. Джейк замечает это, склоняет голову и тяжело вздыхает — кажется, он готов сдаться.")
 
-		saynn("[say=intro_detective]’Fraid you leave me no choice.[/say]")
+		saynn("[say=intro_detective]Боюсь, ты не оставляешь мне выбора.[/say]")
 
-		saynn("Jake stands up, moves the chair back and [b]grabs something off of his belt[/b]. It looks like some kind of [b]drug injector[/b]. Then he arms it and [b]begins closing distance[/b].")
+		saynn("Джейк встает, отодвигает стул и [b]выхватывает что-то со своего пояса[/b]. Похоже на какой-то [b]инъектор с препаратом[/b]. Затем он взводит его и [b]начинает сокращать дистанцию[/b].")
 
-		saynn("[say=pc]Hey! What is that.[/say]")
+		saynn("[say=pc]Эй! Это еще что такое?![/say]")
 
-		saynn("He doesn’t stop, he tries to swiftly inject it into your neck but you shove him away. And then again. He shows his fangs and growls at you before lunging forward and grabbing your arms. He is strong, you can only push him away so long before he overpowers you. [b]You feel a prick[/b]. Ow. What a fucker. Jake puts the used thing away and leaves you alone, taking a seat again. You’re still angry but.. [b]your head starts to feel.. light..[/b]")
+		saynn("Он не останавливается; он пытается резко вонзить иглу тебе в шею, но ты отталкиваешь его. Он делает это снова. Оскалив клыки, он рычит на тебя, прежде чем броситься вперед и перехватить твои руки. Он силен, и ты можешь отталкивать его лишь до тех пор, пока он не возьмет верх. [b]Ты чувствуешь укол[/b]. Ой! Ну и ублюдок. Джейк убирает использованную штуку и оставляет тебя в покое, снова садясь на стул. Ты всё еще злишься, но... [b]голова начинает... слегка кружиться...[/b]")
 
-		saynn("[say=intro_detective]It’s called truth serum. You made me do it, {pc.name}[/say]")
+		saynn("[say=intro_detective]Это называется сыворотка правды. Ты сам меня на это натолкнул, {pc.name}[/say]")
 
-		saynn("[say=pc]Is t-that how police upholds j-justice now.. with drugs..[/say]")
+		saynn("[say=pc]Так теперь полиция т-торжествует с-справедливость?.. с помощью д-наркотиков..[/say]")
 
-		saynn("The guy looks away for a second.")
+		saynn("Парень на секунду отводит взгляд.")
 
-		saynn("[say=intro_detective]You’re gonna be fine. We can’t let bad people out on the streets. That is our job. Let’s try again. What did you do? Tell me exactly.[/say]")
+		saynn("[say=intro_detective]Всё будет хорошо. Мы не можем выпускать плохих людей на улицы. В этом наша работа. Давай попробуем ещё раз. Что ты сделала? Рассказывай всё как есть.[/say]")
 
-		saynn("You suddenly feel like [b]you really wanna tell him the truth[/b]..")
+		saynn("Внезапно ты чувствуешь, что [b]тебе безумно хочется выложить ему всю правду[/b]...")
 		
-		addButton("Confess", "Maybe you actually did it..", "admit")
+		addButton("Признаться", "Может, ты и правда это сделал...", "admit")
 	
 	if(state == "admit"):
-		saynn("[say=pc]Fine.. I will tell you everything.[/say]")
+		saynn("[say=pc]Ладно.. Я расскажу тебе всё.[/say]")
 
-		saynn("Wolf nods.")
+		saynn("Вольф кивает.")
 
-		saynn("[say=intro_detective]I’m listening. Can go as slow as you want, you’re in a safe environment.[/say]")
+		saynn("[say=intro_detective]Я слушаю. Можешь не спешить, здесь ты в безопасности.[/say]")
 		
-		addButton("Innocent", "Tell him that you got set up. (You will start as a general block inmate)", "crime_innocent")
-		addButton("Thief", "You stole a large sum of money (You will start as a general block inmate)", "crime_theft")
-		addButton("Murderer", "You killed someone as a revenge (You start as a high security inmate)", "crime_murder")
-		addButton("Prostitute", "You did some naughty stuff for money (You will start as a sexual deviant inmate)", "crime_prostitution")
+		addButton("Невинная", "Скажи ему, что тебя подставили. (Вы начнете как заключенная общего блока)", "crime_innocent")
+		addButton("Вор", "Вы украли крупную сумму денег (Вы начнете как обычный заключенный общего режима)", "crime_theft")
+		addButton("Убийца", "Вы убили кого-то ради мести (Вы начнете как заключенный строгого режима)", "crime_murder")
+		addButton("Проститутка", "Вы занимались всякой похабщиной ради денег (Вы начнете как заключенная с сексуальными девиациями)", "crime_prostitution")
 		
 	if(state == "crime_innocent"):
-		saynn("[say=pc]I am innocent. I truly am. It was a setup. Someone really wanted to get rid of me.[/say]")
+		saynn("[say=pc]Я невиновен. Правда. Это была подстава. Кто-то очень хотел избавиться от меня.[/say]")
 
-		saynn("The guy chuckles softly.")
+		saynn("Парень тихо посмеивается.")
 
-		saynn("[say=intro_detective]Oh yeah? You know how many people say that? Who wanted to get rid of you?[/say]")
+		saynn("[say=intro_detective]Да неужели? Знаешь, сколько людей так говорят? И кто же хотел от тебя избавиться?[/say]")
 
-		saynn("[say=pc]Um..[/say]")
+		saynn("[say=pc]Эм..[/say]")
 
-		saynn("[say=intro_detective]Name wouldn’t be enough, you need proof.[/say]")
+		saynn("[say=intro_detective]Одного имени будет мало, тебе нужны доказательства.[/say]")
 
-		saynn("[say=pc]I don’t..[/say]")
+		saynn("[say=pc]Я не...[/say]")
 
-		saynn("[say=intro_detective]Even if you were, you failed a mindtest. And I’m afraid the judge has no reason to not believe the mindtest. Machines can’t lie.[/say]")
+		saynn("[say=intro_detective]Даже если бы и так, ты провалил тест на разум. И боюсь, у судьи нет причин не верить результатам теста. Машины не умеют лгать.[/say]")
 
-		saynn("You feel helpless, you keep trying to come up with a worthy excuse but there is nothing. After about ten seconds of silence Jake stands up and grabs something from his belt, metal handcuffs.")
+		saynn("Ты чувствуешь себя беспомощным, пытаешься подобрать достойное оправдание, но слов нет. Спустя примерно десять секунд тишины Джейк встает и достает из-за пояса что-то металлическое — наручники.")
 
-		saynn("[say=intro_detective]I understand you, I really do. I will be back in a few minutes. I will have to cuff you, safety precautions.[/say]")
+		saynn("[say=intro_detective]Я понимаю тебя, правда понимаю. Я вернусь через пару минут. Придется надеть на тебя наручники — меры предосторожности.[/say]")
 
-		saynn("You offer him your hands, showing no resistance and he restraints you before leaving the room, leaving you alone with your thoughts.")
+		saynn("Ты протягиваешь ему руки, не оказывая сопротивления, и он сковывает тебя, прежде чем выйти из комнаты, оставляя тебя наедине со своими мыслями.")
 
 	if(state == "crime_theft"):
-		saynn("You exhale all the air.")
+		saynn("Ты с шумным выдохом выпускаешь весь воздух из легких.")
 
-		saynn("[say=pc]First of all, I had to, I had no choice, I really needed the money.[/say]")
+		saynn("[say=pc]Во-первых, у меня не было выбора, мне просто очень нужны были деньги![/say]")
 
-		saynn("[say=intro_detective]People go to work when they need money.[/say]")
+		saynn("[say=intro_detective]Люди ходят на работу, когда им нужны деньги![/say]")
 
-		saynn("[say=pc]I needed it quick, okay? Not everyone is privileged, not everyone has rich parents or was born in a good place on a wealthy planet. You have no right to judge me. I saw the only opportunity and I took it. Yes, I stole the money, I did it. I’m a thief, criminal, thug, whatever you wanna call me. Try wearing my shoes first. I didn’t kill anyone or ruin anyone’s life.[/say]")
+		saynn("[say=pc]Они нужны были мне быстро, ясно?! Не всем везет, не у всех богатые родители или удачное место рождения на процветающей планете. У тебя нет права меня судить. Я увидел единственный шанс и ухватился за него. Да, я украл деньги, это так. Я вор, преступник, голодранец — называй как хочешь. Но сначала попробуй пожить в моих условиях. Я ведь никого не убил и ничьи жизни не разрушил![/say]")
 
-		saynn("The wolf carefully listens to you, his posture is relaxed, his hand rubs his chin.")
+		saynn("Волк внимательно слушает тебя; он расслаблен, а его рука поглаживает подбородок.")
 
-		saynn("[say=intro_detective]Mhm. I trust you, I really do. I don’t agree with you but I trust you. Yes, you didn’t ruin someone’s life, you just made it worse, you stole their money, made them feel worse and right now the government has to spend money on you as well. In the end you made this world slightly worse, you’re a net negative. Objectively speaking you are a criminal and you knew exactly what you were doing. You really wanted money you didn’t earn so you’re trying to justify this crime in your head.[/say]")
+		saynn("[say=intro_detective]М-м. Я верю тебе, правда верю. Я с тобой не согласен, но верю. Да, ты не разрушил чью-то жизнь, ты просто сделал её хуже: украл деньги, заставил человека страдать, а теперь ещё и правительству приходится тратиться на тебя. В конечном счёте, ты сделал этот мир чуть хуже, ты — чистый убыток. Объективно говоря, ты преступник, и ты прекрасно понимал, что творишь. Тебе просто очень хотелось денег, которые ты не заработал, поэтому ты пытаешься оправдать это преступление в своей голове.[/say]")
 
-		saynn("Jake stands up and grabs something from his belt, metal handcuffs.")
+		saynn("Джейк встаёт и достаёт что-то с пояса — металлические наручники.")
 
-		saynn("[say=intro_detective]I will have to cuff you, sit still.[/say]")
+		saynn("[say=intro_detective]Придётся надеть на тебя наручники, сиди смирно.[/say]")
 
-		saynn("The wolf grabs your hands and cuffs them together. Then he walks towards the exit.")
+		saynn("Волк хватает твои руки и застегивает наручники. Затем он направляется к выходу.")
 
-		saynn("[say=intro_detective]And yeah, I’m not a judge. See you in a few minutes.[/say]")
+		saynn("[say=intro_detective]И да, я не судья. Увидимся через пару минут.[/say]")
 
 	if(state == "crime_murder"):
-		saynn("[say=pc]I killed a person. And you know what. If I would have a chance, I would do it again, the fucker had it coming.[/say]")
+		saynn("[say=pc]Я убил человека. И знаешь что? Будь у меня шанс, я бы сделал это снова, этот ублюдок это заслужил.[/say]")
 
-		saynn("[say=intro_detective]You really think so?[/say]")
+		saynn("[say=intro_detective]Ты правда так думаешь?[/say]")
 
-		saynn("Your eyes glow with hatred, you wanna stand up and punch something but the wolf makes you sit again.")
+		saynn("Твои глаза светятся ненавистью; тебе хочется вскочить и кому-нибудь врезать, но волк заставляет тебя снова сесть.")
 
-		saynn("[say=pc]I made the world better, okay? I shouldn’t even be here, I’m not a danger to anyone, I got my revenge.[/say]")
+		saynn("[say=pc]Я сделал этот мир лучше, ясно?! Меня вообще здесь быть не должно, я никому не опасен, я просто отомстил.[/say]")
 
-		saynn("[say=intro_detective]Violence only causes more violence. What will you do if someone tries to get revenge for the person you murdered? Have a nice chit-chat? Hating someone doesn’t give you the right to end their life, we’re not animals.[/say]")
+		saynn("[say=intro_detective]Насилие порождает лишь новое насилие. Что ты будешь делать, если кто-то попытается отомстить за человека, которого ты прикончил? Устроишь милую беседу? То, что ты кого-то ненавидишь, не дает тебе права обрывать его жизнь — мы же не животные.[/say]")
 
-		saynn("[say=pc]Whatever you say, I don’t like you.[/say]")
+		saynn("[say=pc]Что бы ты там ни болтал, ты мне не нравишься.[/say]")
 
-		saynn("Jake stands up and grabs something from his belt, metal handcuffs.")
+		saynn("Джейк встаёт и достаёт что-то с пояса — металлические наручники.")
 
-		saynn("[say=intro_detective]I will have to cuff you, sit still.[/say]")
+		saynn("[say=intro_detective]Придётся надеть на тебя наручники, сиди смирно.[/say]")
 
-		saynn("The wolf grabs your hands and cuffs them together. Then he walks towards the exit.")
+		saynn("Волк хватает твои руки и застегивает наручники. Затем он направляется к выходу.")
 
-		saynn("[say=intro_detective]I don’t like you either. But I won’t kill for it. Gonna be back in a few minutes.[/say]")
+		saynn("[say=intro_detective]Ты мне тоже не нравишься. Но ради этого я убивать не стану. Вернусь через пару минут.[/say]")
 
 	if(state == "crime_prostitution"):
-		saynn("[say=pc]I sold my body on the streets. Gonna call me a slut?[/say]")
+		saynn("[say=pc]Я торговала своим телом на улицах. Хочешь назвать меня шлюхой?[/say]")
 
-		saynn("[say=intro_detective]Do you have a license?[/say]")
+		saynn("[say=intro_detective]У тебя есть лицензия?[/say]")
 
-		saynn("[say=pc]License? No? Why would I need a license to whore myself out.[/say]")
+		saynn("[say=pc]Лицензия? Нет? С чего бы мне нуждаться в лицензии, чтобы трахаться за деньги?[/say]")
 
-		saynn("[say=intro_detective]Sexual services aren’t really that different from any other types of services, the intergalactic law allows it as long as you have a license. If you can do it for free why shouldn’t you be able to get paid for it. The license proves that you don’t have any STDs or other diseases. You pay taxes and in exchange you get the same benefits as any other worker.[/say]")
+		saynn("[say=intro_detective]Секс-услуги не сильно отличаются от любых других услуг; межгалактический закон разрешает их, если у тебя есть лицензия. Если ты можешь делать это бесплатно, то почему бы не получать за это деньги? Лицензия доказывает, что у тебя нет венерических заболеваний или других заразы. Ты платишь налоги и взамен получаешь те же льготы, что и любой другой работник.[/say]")
 
-		saynn("[say=pc]Well, I don’t have it. My planet doesn’t follow the intergalactic law.[/say]")
+		saynn("[say=pc]Ну, у меня её нет. Моя планета не следует межгалактическому закону.[/say]")
 
-		saynn("Jake nods.")
+		saynn("Джейк кивает.")
 
-		saynn("[say=intro_detective]That’s an offense I’m afraid.[/say]")
+		saynn("[say=intro_detective]Боюсь, это правонарушение.[/say]")
 
-		saynn("Jake stands up and grabs something from his belt, metal handcuffs.")
+		saynn("Джейк встаёт и достаёт что-то с пояса — металлические наручники.")
 
-		saynn("[say=intro_detective]I will have to cuff you, safety precautions.[/say]")
+		saynn("[say=intro_detective]Придется надеть на тебя наручники, меры предосторожности.[/say]")
 
-		saynn("The wolf grabs your hands and cuffs them together. Then he walks towards the exit.")
+		saynn("Волк хватает твои руки и застегивает наручники. Затем он направляется к выходу.")
 
-		saynn("[say=intro_detective]Gonna be back in a few minutes.[/say]")
+		saynn("[say=intro_detective]Вернусь через пару минут.[/say]")
 
 	if(state in ["crime_innocent", "crime_theft", "crime_murder", "crime_prostitution"]):
-		addButton("Wait", "What else is there to do", "saidwhy")
+		addButton("Подождать", "Что еще остается делать?", "saidwhy")
 		
 	if(state == "saidwhy"):
 		playAnimation(StageScene.Solo, "sit")
-		saynn("With nothing better to do, you sit still and think about what happened. You begin to remember everything. You hold onto your face. Minutes pass, it feels like forever. The guy lied to you, you’re there for at least an hour already.")
+		saynn("Делать больше нечего, поэтому ты сидишь неподвижно и прокручиваешь в голове случившееся. Память начинает возвращать детали. Ты невольно хватаешься за лицо. Проходят минуты, но кажется, что прошла вечность. Этот парень нагло тебе соврал — ты торчишь здесь уже как минимум час.")
 		
-		addButton("Wait more", "What else is there to do", "waitmore")
+		addButton("Ждать дальше", "Что еще остается делать?", "waitmore")
 	
 	if(state == "waitmore"):
-		saynn("Suddenly, the door opens and Jake steps inside. And also two more police officers in their fancy gear. Jake moves his chair away to give room and pulls out his tablet again. His face doesn’t show much.")
+		saynn("Внезапно дверь распахивается, и входит Джейк. За ним — еще двое полицейских в парадной экипировке. Джейк отодвигает свой стул, чтобы освободить место, и снова достает планшет. Его лицо остается почти бесстрастным.")
 
-		saynn("[say=intro_detective]I’m here to tell you that the Intergalactic Court of Justice has found you guilty of your charges. You will be committed to the department of corrections shortly.[/say]")
+		saynn("[say=intro_detective]Я здесь, чтобы сообщить: Межгалактический суд справедливости признал тебя виновным по всем пунктам обвинения. В ближайшее время тебя отправят в исправительное учреждение.[/say]")
 
 		if(getFlag("Player_Crime_Type") == Flag.Crime_Type.Innocent):
-			saynn("[say=intro_detective]The lack of evidence was deemed not important enough to stop the hearings.[/say]")
+			saynn("[say=intro_detective]Недостаток улик был признан не настолько существенным, чтобы остановить слушания.[/say]")
 		elif(getFlag("Player_Crime_Type") == Flag.Crime_Type.Prostitution):
-			saynn("[say=intro_detective]Even though paid erotic or sexual services are allowed, by not properly disclosing that you committed tax fraud and put the lives of others in danger.[/say]")
+			saynn("[say=intro_detective]Несмотря на то, что платные эротические или сексуальные услуги разрешены, ты не раскрыл вовремя факт совершения налогового мошенничества, чем подверг опасности жизни других людей.[/say]")
 		else:
-			saynn("[say=intro_detective]Your crimes were committed with malicious intent, your testimony showed you as a very tainted person.[/say]")
+			saynn("[say=intro_detective]Ваши преступления совершались со злым умыслом, а ваши показания выставили вас крайне порочным человеком.[/say]")
 
 
-		saynn("[say=pc]Huh, what do you mean? Shouldn’t there be a trial? You’re not a judge, hey, HEY![/say]")
+		saynn("[say=pc]А? Что вы имеете в виду? Разве не должно быть суда? Вы же не судья, эй, ЭЙ![/say]")
 
-		saynn("The officer stops reading and guides his attention towards you.")
+		saynn("Офицер перестает читать и переводит взгляд на вас.")
 
-		saynn("[say=intro_detective]This is a trial. The judges made their decision. Soon you will be relocated into the facility called Broken Dreams Correctional Center where you will be serving the punishment. Your sentence is…[/say]")
+		saynn("[say=intro_detective]Это и есть суд. Судьи вынесли решение. Скоро вас перевезут в исправительное учреждение под названием «Исправительный центр „Разбитые мечты““, где вы будете отбывать наказание. Ваш срок…[/say]")
 
-		saynn("He looks at the tablet again and takes a short pause.")
+		saynn("Он снова смотрит в планшет и делает короткую паузу.")
 
-		saynn("[say=intro_detective]Indefinite.[/say]")
+		saynn("[say=intro_detective]Бессрочный.[/say]")
 
-		saynn("He gestures to the two officers.")
+		saynn("Он жестом указывает двум офицерам.")
 
-		saynn("[say=intro_detective]Put {pc.him} in a holding cell, transit shuttle is gonna arrive soon.[/say]")
+		saynn("[say=intro_detective]Засадите {pc.him} в камеру временного содержания, транзитный шаттл скоро прибудет.[/say]")
 
-		saynn("Shocked, you struggle to say anything comprehensible, the officers quickly do their task and drag you out of the room.")
+		saynn("Потрясенный, вы пытаетесь выдавить хоть что-то внятное, но офицеры быстро делают свое дело и вытаскивают вас из комнаты.")
 		
-		addButton("Cell", "What is even happening", "gocell")
+		addButton("Камера", "Что вообще происходит?", "gocell")
 		
 	if(state == "gocell"):
 		removeCharacter("intro_detective")
 		aimCamera("intro_ship")
 		setLocationName("Transport shuttle")
 		
-		saynn("The next moment you know, you are in a small transport shuttle, in its cargo compartment. It looks like it could fit about 10 prisoners but right now there is only one officer that's guarding you and a pilot behind a metal wall. You can see space through all the transparent windows with all its distant stars and also asteroids, it seems the shuttle is flying through an asteroid belt. Its small size allows it to avoid everything. The guard smirks watching you.")
+		saynn("В следующее мгновение ты понимаешь, что сидишь в небольшом транспортном шаттле, в грузовом отсеке. Похоже, сюда влезет человек десять заключенных, но сейчас здесь только один охранник, стерегущий тебя, да пилот за металлической перегородкой. Сквозь прозрачные иллюминаторы виден космос с его далекими звездами и астероидами — похоже, шаттл летит сквозь пояс астероидов. Благодаря своим малым размерам он легко маневрирует между ними. Охранник ухмыляется, наблюдая за тобой.")
 
-		saynn("[sayMale]See that? No chance of escaping. Unless you know how to breathe in the void. Hah[/sayMale]")
+		saynn("[sayMale]Видишь? Шансов на побег ноль. Если только ты не умеешь дышать в вакууме. Ха![/sayMale]")
 
-		saynn("You don’t say anything.")
+		saynn("Ты ничего не отвечаешь.")
 
-		saynn("[sayMale]You better be ready to spread your legs. I heard stories. You’re fucked. In many ways. Pfff-[/sayMale]")
+		saynn("[sayMale]Тебе лучше заранее раздвинуть ноги. До меня доходили слухи. Тебе пиздец. Во всех смыслах. Пфф...[/sayMale]")
 
-		saynn("The urge to punch him in the face is unbearable. You struggle against your handcuffs and grind your teeth when the guy suddenly points at one of the windows.")
+		saynn("Желание врезать ему по роже становится невыносимым. Ты дергаешься в наручниках, стиснув зубы, когда парень внезапно указывает на одно из окон.")
 
-		saynn("[sayMale]Here.[/sayMale]")
+		saynn("[sayMale]Смотри сюда.[/sayMale]")
 
-		saynn("You turn and look out of the window. Between all the asteroids [b]you see a huge rock[/b], the biggest one, floating in the void [b]with a space station seemingly shoved into it[/b]. The station looks small from this distance but you do see quite a few levels to it.")
+		saynn("Ты поворачиваешься и смотришь в иллюминатор. Среди россыпи астероидов [b]ты видишь огромную глыбу[/b], самую большую из всех, дрейфующую в пустоте, [b]в которую, кажется, втиснута космическая станция[/b]. С такого расстояния станция кажется маленькой, но ты отчетливо видишь, что у нее немало уровней.")
 
-		saynn("[sayMale]That’s where you will spend the rest of your life.[/sayMale]")
+		saynn("[sayMale]Вот там ты и проведешь остаток своей жизни.[/sayMale]")
 
-		saynn("You try to distance yourself from it all and just relax in your metal seat. The shuttle slowly approaches the hangar, its outside entrance has some kind of energy field that allows the shuttles to pass but keep all the air inside. The engines switch to a vertical thrust as the station’s gravity generator begins to affect the shuttle more. Soft touchdown. Maybe you will like it here, who knows.")
+		saynn("Ты пытаешься отгородиться от всего происходящего и просто расслабиться в своем металлическом кресле. Шаттл медленно приближается к ангару; его входной люк защищен каким-то энергетическим полем, которое пропускает корабли, но удерживает воздух внутри. Двигатели переходят на вертикальную тягу, когда гравитационный генератор станции начинает сильнее воздействовать на шаттл. Мягкая посадка. Может, тебе здесь даже понравится, кто знает.")
 
-		saynn("[sayMale]We’re here. Now get the fuck out, they are waiting for you. Oh. And give the cuffs back[/sayMale]")
+		saynn("[sayMale]Прилетели. А теперь выметайся нахер, они тебя уже ждут. О, и наручники верни[/sayMale]")
 
-		saynn("He stops you to quickly uncuff your hands before shoving you out.")
+		saynn("Он притормаживает тебя, чтобы быстро снять наручники, прежде чем вышвырнуть наружу.")
 
-		saynn("[sayMale]Don’t worry cupcake, they will give you better ones[/sayMale]")
+		saynn("[sayMale]Не дрейфь, сладкая, тебе дадут наручники получше[/sayMale]")
 		
-		addButton("Look around", "Take a good look around", "endthisscene")
+		addButton("Осмотреться", "Оглянись хорошенько", "endthisscene")
 
 func onTextBoxEnterPressed(_new_text:String):
 	GM.main.pickOption("setname", [])

@@ -39,7 +39,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Set pc rep level",
+			text = "Установить уровень репутации игрока",
 		},
 		{
 			type = "slot",

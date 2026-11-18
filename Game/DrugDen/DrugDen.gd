@@ -110,7 +110,7 @@ func buildMap():
 		#	theIcon = RoomStuff.RoomSprite.IMPORTANT
 		
 		GM.world.addRoom(DrugDenFloor, roomID, pos, {
-			name = "Drug Den",
+			name = "Притон",
 			desc = "The tunnel is dimly lit by the flickering emergency lights. Crumpled rags, used syringes, and shattered glass litter the floor, crunching softly underfoot. The air is thick - stale with sweat, smoke, and something sickly sweet that clings to your throat. Distant echoes bounce through the tunnels - low murmurs, the occasional rustling, maybe even a quiet, breathy laugh.",
 			icon = theIcon,
 			canW = roomInfo["canW"],

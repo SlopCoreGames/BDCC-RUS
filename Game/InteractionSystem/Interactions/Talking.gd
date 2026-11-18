@@ -38,14 +38,14 @@ func init_text():
 	var theReacter:BaseCharacter = getRoleChar("reacter")
 	
 	if(!notFirst):
-		saynn("{starter.name} approaches {reacter.you}.")
+		saynn("{starter.name} подходит к {reacter.you}.")
 		notFirst=true
 		
 		if(isNemesisTo("reacter", "starter")):
 			sayLine("reacter", "TalkStartNemesis", {main="reacter", target="starter"})
 	else:
-		saynn("{starter.name} is standing near {reacter.you}.")
-	saynn("{reacter.Your} affection with {starter.you} is "+getAffectionString("starter", "reacter")+".\nLust is "+getLustString("starter", "reacter")+".")
+		saynn("{starter.name} стоит рядом с {reacter.you}.")
+	saynn("Привязанность {reacter.Your} к {starter.you}: "+getAffectionString("starter", "reacter")+".\nПохоть: "+getLustString("starter", "reacter")+".")
 
 	if(!theStarter.isGagged() && getRolePawn("reacter").canSocial()):
 		if(!isNemesisTo("reacter", "starter")):
@@ -168,7 +168,7 @@ func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 		setState("npcEnslaveOfferFromPC", "reacter")
 
 func npcEnslaveOfferFromPC_text():
-	saynn("You ask {reacter.name} if you could become {reacter.his} slave!")
+	saynn("Вы спрашиваете {reacter.name}, не стать ли вам рабом(ой) {reacter.his}!")
 	sayLine("starter", "SoftSlaveryPCOffer", {main="starter", target="reacter"})
 	
 	var theAffection:float = getAffection("starter", "reacter")
@@ -195,9 +195,9 @@ func npcEnslaveOfferFromPC_do(_id:String, _args:Dictionary, _context:Dictionary)
 		setState("npcEnslaveOfferFromPC_no", "starter")
 
 func npcEnslaveOfferFromPC_yes_text():
-	saynn("{reacter.name} agreed to enslave you!")
+	saynn("{reacter.name} соглашается поработить вас!")
 	sayLine("reacter", "SoftSlaveryPCOfferYes", {main="reacter", target="starter"})
-	saynn("Time to see what happens next..")
+	saynn("Посмотрим, что будет дальше...")
 	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
 
 func npcEnslaveOfferFromPC_yes_do(_id:String, _args:Dictionary, _context:Dictionary):
@@ -209,7 +209,7 @@ func npcEnslaveOfferFromPC_yes_do(_id:String, _args:Dictionary, _context:Diction
 		pass
 
 func npcEnslaveOfferFromPC_no_text():
-	saynn("{reacter.name} declined your offer!")
+	saynn("{reacter.name} отклоняет ваше предложение!")
 	sayLine("reacter", "SoftSlaveryPCOfferNo", {main="reacter", target="starter"})
 	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
 
@@ -219,9 +219,9 @@ func npcEnslaveOfferFromPC_no_do(_id:String, _args:Dictionary, _context:Dictiona
 		setState("", "starter")
 
 func npcEnslaveOffer_text():
-	saynn("{starter.name} makes you a sudden offer!")
+	saynn("{starter.name} внезапно делает вам предложение!")
 	sayLine("starter", "SoftSlaveryOffer", {main="starter", target="reacter"})
-	saynn("Looks like {starter.he} {starter.isAre} offering to [b]enslave you[/b]..")
+	saynn("Похоже, {starter.he} {starter.isAre} предлагает вам [b]поработить вас[/b]...")
 	
 	addAction("yes", "Agree", "Agree to be enslaved.", "default", 0.0, 60, {})
 	addAction("no", "NO!", "You don't wanna become a slave.", "default", 1.0, 60, {})
@@ -238,7 +238,7 @@ func npcEnslaveOffer_do(_id:String, _args:Dictionary, _context:Dictionary):
 		setState("playerDoesntWantToBeEnslaved", "reacter")
 
 func playerDoesntWantToBeEnslaved_text():
-	saynn("You decline {starter.name}'s offer!")
+	saynn("Вы отклоняете предложение {starter.name}!")
 	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
 
 func playerDoesntWantToBeEnslaved_do(_id:String, _args:Dictionary, _context:Dictionary):
@@ -246,9 +246,9 @@ func playerDoesntWantToBeEnslaved_do(_id:String, _args:Dictionary, _context:Dict
 		setState("", "starter")
 
 func playerAgreedToBeEnslaved_text():
-	saynn("You [b]agree[/b] to be enslaved!")
+	saynn("Вы [b]соглашаетесь[/b] стать рабом!")
 	sayLine("starter", "SoftSlaveryOfferYes", {main="starter", target="reacter"})
-	saynn("Time to see what happens next..")
+	saynn("Посмотрим, что будет дальше...")
 	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
 
 func playerAgreedToBeEnslaved_do(_id:String, _args:Dictionary, _context:Dictionary):
@@ -259,7 +259,7 @@ func playerAgreedToBeEnslaved_do(_id:String, _args:Dictionary, _context:Dictiona
 		runScene("NpcOwnerEventRunnerScene", [theCharID, "Intro", ["willing"]])
 
 func about_to_leave_text():
-	saynn("{starter.name} decides to leave..")
+	saynn("{starter.name} решает уйти...")
 
 	addAction("leave", "Continue", "See what happens next..", "default", 1.0, 30, {})
 
@@ -269,7 +269,7 @@ func about_to_leave_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func chat_started_text():
-	saynn("{starter.name} wonders if {reacter.you} {reacter.youVerb('want')} to chat.")
+	saynn("{starter.name} гадает, хочет ли {reacter.you} {reacter.youVerb('want')} поболтать.")
 	sayLine("reacter", "TalkChatWhat", {main="reacter", target="starter"})
 	addChatTopics("starter", "reacter", "ask")
 	if(getRoleChar("starter").isPlayer()):
@@ -304,7 +304,7 @@ func chat_cancelled_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 func chat_leaving_text():
 	sayLine("reacter", "TalkChatLeaving", {main="reacter", target="starter"})
-	saynn("Looks like that annoyed {reacter.him} a bit too much..")
+	saynn("Похоже, это {reacter.him} немного раздражило...")
 
 	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
 
@@ -315,7 +315,7 @@ func chat_leaving_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func chat_asked_text():
-	saynn("[say=starter]"+chat["topicFull"]+". What do you think?[/say]")
+	saynn("[say=starter]"+chat["topicFull"]+". Что думаешь?[/say]")
 	addReactToChatButtons(chat, "react")
 
 	if(false):
@@ -334,10 +334,10 @@ func chat_asked_do(_id:String, _args:Dictionary, _context:Dictionary):
 func chat_reacted_text():
 	if(chatAnswer=="agree"):
 		sayLine("reacter", "TalkChatAgree", {main="reacter", target="starter"})
-		saynn("Looks like {reacter.you} {reacter.youVerb('share')} a common interest with {starter.you}.")
+		saynn("Похоже, у {reacter.you} и {starter.you} {reacter.youVerb('share')} общий интерес.")
 	elif(chatAnswer=="disagree"):
 		sayLine("reacter", "TalkChatDisagree", {main="reacter", target="starter"})
-		saynn("Looks like {reacter.youHe} didn't like {starter.your} statement.")
+		saynn("Похоже, {reacter.youHe} не понравилось высказывание {starter.your}.")
 	else:
 		sayLine("reacter", "TalkChatWhatever", {main="reacter", target="starter"})
 
@@ -349,7 +349,7 @@ func chat_reacted_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func about_to_flirt_text():
-	saynn("{starter.name} seems to be in a flirty mood..")
+	saynn("{starter.name} кажется, в кокетливом настроении...")
 	if(getRoleChar("starter").isPlayer()):
 		showKnownLikesDislikesFor("reacter")
 
@@ -374,7 +374,7 @@ func about_to_flirt_do(_id:String, _args:Dictionary, _context:Dictionary):
 func flirt_pickupline_start_text():
 	var theEntry:Dictionary = PickupLineDB.DB[pickedLineIndx]
 	saynn("[say=starter]"+theEntry["text"]+"[/say]")
-	saynn("{starter.name} takes a second to think about how to finish the line..")
+	saynn("{starter.name} замирает на секунду, обдумывая, как закончить фразу...")
 	
 	var allAnwers:Array = []
 	for correctAnswer in theEntry["correct"]:
@@ -411,7 +411,7 @@ func flirt_pickupline_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func flirt_accepted_text():
-	saynn("{reacter.name} smiles. Looks like the pickup line has worked..")
+	saynn("{reacter.name} улыбается. Похоже, подкат сработал...")
 
 	addAction("continue", "Continue", "See what happens next", "default", 1.0, 60, {})
 
@@ -424,7 +424,7 @@ func flirt_accepted_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 func flirt_denied_text():
 	sayLine("reacter", "TalkChatPickupLineFail", {main="reacter", target="starter"})
-	saynn("Oh well, was worth a try..")
+	saynn("Ну что ж, попытка не пытка...")
 
 	addAction("continue", "Continue", "See what happens next", "default", 1.0, 60, {})
 
@@ -438,22 +438,22 @@ func flirt_denied_do(_id:String, _args:Dictionary, _context:Dictionary):
 func flirt_flirted_text():
 	var focus = lust["focus"]
 	if(focus == LustFocus.Body):
-		saynn("{starter.You} {starter.youVerb('sway')} {starter.yourHis} {starter.thick} {starter.masc} body sensually..")
+		saynn("{starter.You} {starter.youVerb('sway')} {starter.yourHis} {starter.thick} {starter.masc} тело с чувством...")
 	elif(focus == LustFocus.Butt):
-		saynn("{starter.You} {starter.youVerb('turn')} around and {starter.youVerb('wiggle')} {starter.yourHis} {starter.thick} {starter.anusStretch} butt sensually..")
+		saynn("{starter.You} {starter.youVerb('turn')} вокруг и {starter.youVerb('wiggle')} {starter.yourHis} {starter.thick} {starter.anusStretch} задницу с чувством...")
 	elif(focus == LustFocus.Breasts):
-			saynn("{starter.You} {starter.youVerb('jiggle')} and {starter.youVerb('grope')} {starter.yourHis} {starter.breasts}..")
+			saynn("{starter.You} {starter.youVerb('jiggle')} и {starter.youVerb('grope')} {starter.yourHis} {starter.breasts}...")
 	elif(focus == LustFocus.Crotch):
 		var hasPenis = getRoleChar("starter").hasPenis()
 		var hasVag = getRoleChar("starter").hasVagina()
 		if(hasPenis && hasVag):
-			saynn("{starter.You} proudly {starter.youVerb('present')} {starter.yourHis} {starter.penis} and {starter.pussyStretch} {pussy}..")
+			saynn("{starter.You} гордо {starter.youVerb('present')} {starter.yourHis} {starter.penis} и {starter.pussyStretch} {pussy}...")
 		elif(hasPenis):
-			saynn("{starter.You} proudly {starter.youVerb('present')} {starter.yourHis} {starter.penis}..")
+			saynn("{starter.You} гордо {starter.youVerb('present')} {starter.yourHis} {starter.penis}...")
 		elif(hasVag):
-			saynn("{starter.You} proudly {starter.youVerb('present')} {starter.yourHis} {starter.pussyStretch} {pussy}..")
+			saynn("{starter.You} гордо {starter.youVerb('present')} {starter.yourHis} {starter.pussyStretch} {pussy}...")
 		else:
-			saynn("{starter.You} proudly {starter.youVerb('present')} {starter.yourHis} crotch..")
+			saynn("{starter.You} гордо {starter.youVerb('present')} {starter.yourHis} промежность...")
 	addReactToLustFocusButtons("flirt_react", lust)
 
 	if(false):
@@ -480,7 +480,7 @@ func flirt_reacted_text():
 		sayLine("reacter", "TalkFlirtDeny", {main="reacter", target="starter"})
 	if(getRolePawn("starter").isPlayer()):
 		if(text != ""):
-			saynn(text+" ("+str(Util.roundF(likeness*100.0, 1))+"% success rate)")
+			saynn(text+" ("+str(Util.roundF(likeness*100.0, 1))+"% шанс успеха)")
 		if(hasLearnedAnyLustInterests == true):
 			addMessage("You learned something new about {reacter.nameS} likes and dislikes..")
 
@@ -492,7 +492,7 @@ func flirt_reacted_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func offered_sex_text():
-	saynn("{starter.name} offers to fuck {reacter.you}..")
+	saynn("{starter.name} предлагает трахнуть {reacter.you}..")
 	sayLine("starter", "TalkSexOffer", {main="starter", target="reacter"})
 
 	addAction("agree", "Agree", "Let them fuck you!", "agreeSexAsSub", 1.0, 60, {})
@@ -523,7 +523,7 @@ func offered_sex_agreed_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 func offered_sex_deny_text():
 	sayLine("reacter", "TalkSexOfferDeny", {main="reacter", target="starter"})
-	saynn("Looks like {starter.you} got denied..")
+	saynn("Похоже, {starter.you} получил отказ..")
 
 	addAction("continue", "Continue", "Oh well..", "default", 1.0, 60, {})
 
@@ -533,7 +533,7 @@ func offered_sex_deny_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func offered_self_text():
-	saynn("{starter.name} offers {reacter.you} to fuck {starter.him}.")
+	saynn("{starter.name} предлагает {starter.him} трахнуть {reacter.you}.")
 	sayLine("starter", "TalkSexOfferSelf", {main="starter", target="reacter"})
 
 	addAction("agree", "Agree", "Agree to fuck them", "agreeSexAsDom", 1.0, 60, {})
@@ -573,7 +573,7 @@ func offered_self_deny_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func after_sex_text():
-	saynn("After that sex, it was time to go your separate ways..")
+	saynn("После этого секса пришло время разойтись..")
 
 	addAction("continue", "Continue", "", "default", 1.0, 60, {})
 
@@ -584,7 +584,7 @@ func after_sex_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 func grabbed_about_to_fuck_text():
 	saynn("{starter.You} {starter.youVerb('grab')} {reacter.you}..")
-	saynn("{reacter.You} quickly {reacter.youVerb('realize')} that {reacter.yourHis} restraints prevent {reacter.youHim} from escaping..")
+	saynn("{reacter.You} быстро {reacter.youVerb('realize')} {reacter.yourHis}, что эти оковы не дадут {reacter.youHim} сбежать..")
 	sayLine("starter", "TalkGrabAndFuck", {main="starter", target="reacter"})
 
 	addAction("sex", "Sex", "You're so fucked..", "default", 1.0, 600, {start_sex=["starter", "reacter"],})
@@ -596,7 +596,7 @@ func grabbed_about_to_fuck_do(_id:String, _args:Dictionary, _context:Dictionary)
 
 
 func after_grab_and_fuck_text():
-	saynn("{starter.name} leaves after messing with {reacter.you}..")
+	saynn("{starter.name} уходит, поигравшись с {reacter.you}..")
 
 	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
 
@@ -606,8 +606,8 @@ func after_grab_and_fuck_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func about_to_kidnap_text():
-	saynn("{starter.You} {starter.youVerb('grab')} {reacter.yourHis} throat and {starter.youVerb('look')} {reacter.youHim} deep into the eyes..")
-	saynn("{starter.YourHis} dominant aura alone is making {reacter.youHim} shiver..")
+	saynn("{starter.You} {starter.youVerb('grab')} {reacter.yourHis}, а {starter.youVerb('look')} {reacter.youHim} прямо в глаза..")
+	saynn("Одна лишь доминантная аура {starter.YourHis} заставляет {reacter.youHim} дрожать..")
 	sayLine("starter", "TalkAboutToKidnap", {main="starter", target="reacter"})
 	sayLine("reacter", "TalkAboutToKidnapReact", {main="reacter", target="starter"})
 

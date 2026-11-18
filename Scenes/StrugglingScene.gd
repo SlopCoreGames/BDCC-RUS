@@ -46,7 +46,7 @@ func _run():
 			playAnimation(StageScene.Solo, "stand")
 		
 		var isBlind = GM.pc.isBlindfolded()
-		saynn("Pick the restraint you wanna focus on. Keep in mind that some restraints will be harder to remove depending on what you have on.")
+		saynn("Выбери средство фиксации, на котором хочешь сосредоточиться. Учти, что некоторые из них будет сложнее снять в зависимости от того, что на тебе надето.")
 		
 		if(GM.pc.getInventory().hasItemID("restraintkey")):
 			addButtonAt(13, "Use key", "Use one of your restraint keys to unlock something", "usekey")
@@ -58,12 +58,12 @@ func _run():
 			var restraintData: RestraintData = item.getRestraintData()
 			
 			
-			#sayn("- Durability: "+restraintData.getVisibleDurability())
+			#sayn("- Прочность: "+restraintData.getVisibleDurability())
 			if(!restraintData.hasSmartLock()):
-				sayn(item.getVisibleName()+", restraint level: "+restraintData.getVisibleLevel(isBlind))
-				saynn("- Tightness: "+restraintData.getVisibleTightness()+" ("+restraintData.getTightnessPercentString()+")")
+				sayn(item.getVisibleName()+", уровень фиксации: "+restraintData.getVisibleLevel(isBlind))
+				saynn("- Тугость: "+restraintData.getVisibleTightness()+" ("+restraintData.getTightnessPercentString()+")")
 			else:
-				sayn(item.getVisibleName()+", SMART-LOCKED")
+				sayn(item.getVisibleName()+", С УМНЫМ ЗАМКОМ")
 				var smartLock:SmartLockBase = restraintData.getSmartLock()
 				var canBeSimplyRemoved = smartLock.canBeSimpleRemoved()
 				saynn("- "+smartLock.getName()+": "+smartLock.getUnlockDescription()+(("\nUNLOCKED. Can be removed") if canBeSimplyRemoved else ""))
@@ -71,18 +71,18 @@ func _run():
 					var minigameResult = MinigameResult.new()
 					minigameResult.score = 1.0
 					minigameResult.instantUnlock = true
-					addButton(item.getVisibleName(), "Take off this restraint", "struggleAgainst", [item.getUniqueID(), minigameResult])
+					addButton(item.getVisibleName(), "Снять эту фиксацию", "struggleAgainst", [item.getUniqueID(), minigameResult])
 				elif(smartLock.id == SmartLock.TightLock):
-					addButton(item.getVisibleName(), "See what item you can use to unlock the tight-lock", "tightlock", [item.getUniqueID()])
+					addButton(item.getVisibleName(), "Посмотреть, какой предмет поможет открыть замок", "tightlock", [item.getUniqueID()])
 				continue
 			
 			if(!restraintData.canStruggleFinal()):
 				continue
 			
 			if(GM.pc.getStamina() > 0):
-				addButton(item.getVisibleName(), "Focus on this restraint", "startStruggleAgainst", [item.getUniqueID()])
+				addButton(item.getVisibleName(), "Сосредоточиться на этой фиксации", "startStruggleAgainst", [item.getUniqueID()])
 			else:
-				addDisabledButton(item.getVisibleName(), "You are out of stamina")
+				addDisabledButton(item.getVisibleName(), "Выносливость закончилась")
 
 		
 		#generateActions()
@@ -93,18 +93,18 @@ func _run():
 		var requiredItemID:String = restraintData.getTightLockRequiredItemID()
 		var reqItem:ItemBase = GlobalRegistry.getItemRef(requiredItemID)
 		if(reqItem == null):
-			saynn("Something went wrong :(")
-			addButton("Continue", "Oh well", "endthescene")
+			saynn("Что-то пошло не так :(")
+			addButton("Продолжить", "Ну и ладно", "endthescene")
 		
-		saynn("The "+item.getVisibleName()+" that you are wearing has a tight-lock attached to it.")
+		saynn("На "+item.getVisibleName()+" , которое на тебе надето, установлен тугой замок.")
 		
-		saynn("To unlock it, you must use this item: "+reqItem.getVisibleName())
+		saynn("Чтобы открыть его, нужно использовать этот предмет: "+reqItem.getVisibleName())
 		
-		saynn("The item will be consumed in the process, the restraint will be destroyed.")
+		saynn("Предмет будет израсходован, а фиксация — разрушена.")
 		
-		saynn("Which item do you want to use?")
+		saynn("Какой предмет хочешь использовать?")
 		
-		addButton("Cancel", "You changed your mind", "")
+		addButton("Отмена", "Вы передумали", "")
 		for invitem in GM.pc.getInventory().getItems():
 			if(invitem.id == requiredItemID):
 				addButton(invitem.getVisibleName(), invitem.getVisibleDescription(), "tightlock_unlockwith", [invitem])
@@ -112,12 +112,12 @@ func _run():
 	if(state == "tightlock_unlocked"):
 		saynn(actionText)
 		
-		addButton("Continue", "See what happens next", "checkifokay")
+		addButton("Продолжить", "Смотреть, что будет дальше", "checkifokay")
 		
 	if(state == "usekey"):
 		var keyAmount = GM.pc.getInventory().getAmountOf("restraintkey")
-		saynn("You have "+str(keyAmount)+" "+Util.multipleOrSingularEnding(keyAmount, "key")+". Each one can unlock one piece of gear (Unless it has a smart-lock attached to it).")
-		saynn("Which restraint do you wanna unlock.")
+		saynn("У тебя есть "+str(keyAmount)+" "+Util.multipleOrSingularEnding(keyAmount, "key")+". Каждый может открыть один элемент снаряжения (если на нем нет смарт-замка).")
+		saynn("Какое средство фиксации хочешь разблокировать?")
 
 		for item in GM.pc.getInventory().getEquppedRestraints():
 			var restraintData: RestraintData = item.getRestraintData()
@@ -125,40 +125,40 @@ func _run():
 				var smartLock:SmartLockBase = restraintData.getSmartLock()
 				
 				if(!smartLock.canBeUnlockedWithKeys()):
-					addDisabledButton(item.getVisibleName(), "The SmartLock on this restraint can not be unlocked with restraint keys..")
+					addDisabledButton(item.getVisibleName(), "Смарт-замок на этом креплении нельзя открыть обычными ключами...")
 					continue
 				
 				var howManyKeysToUnlock = smartLock.getKeysAmountToUnlock()
 				if(keyAmount >= howManyKeysToUnlock):
-					addButton(item.getVisibleName(), "Restraint keys required to unlock: "+str(howManyKeysToUnlock), "dounlock", [item.getUniqueID()])
+					addButton(item.getVisibleName(), "Нужно ключей для разблокировки: "+str(howManyKeysToUnlock), "dounlock", [item.getUniqueID()])
 				else:
-					addDisabledButton(item.getVisibleName(), "Restraint keys required to unlock: "+str(howManyKeysToUnlock))
+					addDisabledButton(item.getVisibleName(), "Нужно ключей для разблокировки: "+str(howManyKeysToUnlock))
 				continue
 			
 			if(!restraintData.canUnlockWithKey()):
-				addDisabledButton(item.getVisibleName(), "This restraint doesn't seem to have a keyhole")
+				addDisabledButton(item.getVisibleName(), "Похоже, в этом креплении нет замочной скважины")
 				continue
 			addButton(item.getVisibleName(), item.getVisisbleDescription(), "dounlock", [item.getUniqueID()])
-		addButton("Back", "You don't wanna unlock anything", "")
+		addButton("Назад", "Ты не хочешь ничего разблокировать", "")
 
 	if(state == "keyminigame"):
-		saynn("Since you can't use your fingers you have to carefully balance the key between your palms and guide it towards the lock.")
+		saynn("Так как пальцы не слушаются, тебе приходится осторожно балансировать ключом между ладонями, направляя его к замку.")
 		
-		saynn("To successfully unlock the restraint you have to guess a number between 1 and 15. You have "+str(keyGameTries)+" "+Util.multipleOrSingularEnding(keyGameTries, "try", "tries")+" left")
+		saynn("Чтобы успешно разблокировать крепление, нужно угадать число от 1 до 15. У тебя есть "+str(keyGameTries)+" "+Util.multipleOrSingularEnding(keyGameTries, "try", "tries")+" left")
 
 		if(keyText != ""):
 			saynn(keyText)
 
 		#addTextbox("key_number")
 		
-		#addButton("Guess", "Try and guess this number", "key_guess")
+		#addButton("Угадать", "Попробуй угадать это число", "key_guess")
 		for _i in range(1, 16):
-			addButton(str(_i), "Try this number", "key_guess", [_i])
+			addButton(str(_i), "Попробуй это число", "key_guess", [_i])
 
 	if(state == "keyminigameFailed"):
-		saynn("Oops, you dropped the key and it broke. There goes that.")
+		saynn("Ой, ты выронил ключ, и он сломался. Вот тебе и всё.")
 		
-		addButton("Continue", "Heck", "checkifokay")
+		addButton("Продолжить", "Черт", "checkifokay")
 
 	if(state == "startStruggleAgainst"):
 		var item = GM.pc.getInventory().getItemByUniqueID(restraintID)
@@ -183,7 +183,7 @@ func _run():
 		
 		game.setDifficulty(restraintData.getLevel())
 		game.connect("minigameCompleted", self, "onMinigameCompleted")
-		addButton("Give up", "Give up the struggle and lose 10 stamina", "giveupstruggle")
+		addButton("Сдаться", "Прекратить борьбу и потерять 10 выносливости", "giveupstruggle")
 
 	if(state == "struggleAgainst"):
 		saynn(struggleText)
@@ -192,43 +192,43 @@ func _run():
 			saynn(additionalStruggleText)
 		
 		if(canKeepTheRestraint):
-			saynn("Do you wanna keep it?")
+			saynn("Хочешь оставить это себе?")
 			
-			addButton("Keep it", "Keep the restraint in your inventory", "checkifokay")
-			addButton("No", "Throw it away", "getridandcheckifokay")
+			addButton("Оставить", "Оставить путы в инвентаре", "checkifokay")
+			addButton("No", "Выбросить их", "getridandcheckifokay")
 		else:
-			addButton("Continue", "Okay", "checkifokay")
+			addButton("Продолжить", "Окей", "checkifokay")
 		
 
 	if(state == "orgasm"):
-		saynn("It's too much, you arch your back and moan loudly as you cum. You were so loud that someone might have heard that. (Temporary text)")
+		saynn("Это слишком... ты выгибаешься в спине и громко стонешь, кончая. Ты была настолько громкой, что кто-то мог тебя услышать. (Временный текст)")
 		
-		addButton("Continue", "Oh no", "spottedcheck")
+		addButton("Продолжить", "О нет", "spottedcheck")
 
 	if(state == "notspotted"):
-		saynn("Seems like no one saw or heard you. Phew")
+		saynn("Похоже, никто тебя не видел и не слышал. Фух")
 		
 		if(GM.pc.getPain() >= GM.pc.painThreshold()):
-			saynn("But you can't continue, you're in too much pain")
+			saynn("Но ты не можешь продолжать, боль слишком сильная")
 			
-			addButton("Continue", "Aw", "endthescene")
+			addButton("Продолжить", "Aw", "endthescene")
 		else:
-			addButton("Continue", "Good", "")
+			addButton("Продолжить", "Хорошо", "")
 		
 	if(state == "toolusty"):
-		saynn("You are too aroused to be able to escape from restraints")
+		saynn("Ты слишком возбуждена, чтобы вырваться из пут")
 		
-		addButton("Continue", "Oh no", "endthescene")#"spottedcheck")
+		addButton("Продолжить", "О нет", "endthescene")#"spottedcheck")
 		
 	if(state == "toopainful"):
-		saynn("It's too painful! You let out a desperate cry. You were so loud that someone might have heard that. (Temporary text)")
+		saynn("Это слишком больно! Ты издаешь отчаянный крик. Ты была настолько громкой, что кто-то мог тебя услышать. (Временный текст)")
 
-		addButton("Continue", "Oh no", "endthescene")
+		addButton("Продолжить", "О нет", "endthescene")
 		
 	if(state == "unlockedGear"):
-		saynn("You successfully unlocked the restraint. The key snaps in half, rendering it useless")
+		saynn("Вы успешно отперли фиксатор. Ключ переламывается пополам, становясь бесполезным")
 		
-		addButton("Continue", "Good", "checkifokay")
+		addButton("Продолжить", "Хорошо", "checkifokay")
 
 func onMinigameCompleted(result:MinigameResult):
 	GM.main.pickOption("struggleAgainst", [restraintID, result])

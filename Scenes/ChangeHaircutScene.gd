@@ -8,24 +8,24 @@ func _init():
 func _run():
 	if(state == ""):
 		if(!GM.pc.isBlindfolded()):
-			saynn("You look at yourself in the mirror. There is a comb, scissors and a few others things around that you can use to change how your hair looks.")
+			saynn("Вы смотрите на себя в зеркало. Рядом лежат расческа, ножницы и еще кое-какие вещи, с помощью которых можно изменить прическу.")
 		else:
-			saynn("You try to look at yourself in the mirror but then you realize that you can't see anything. Awkward. You feel around and fine a comb, scissors and a few others things around that you can use to change how your hair looks.")
+			saynn("Вы пытаетесь разглядеть себя в зеркале, но понимаете, что ничего не видите. Неловко. Вы ощупываете поверхность и находите расческу, ножницы и еще несколько предметов, которыми можно изменить прическу.")
 		
-		addButton("Leave", "You're satisfied with your current haircut", "endthescene")
-		addButton("Change Haircut", "Change your haircut", "changehaircutmenu")
-		addButton("Change Skin!", "Change your skin and colors", "changeskin")
+		addButton("Уйти", "Вас устраивает нынешняя стрижка", "endthescene")
+		addButton("Сменить прическу", "Изменить прическу", "changehaircutmenu")
+		addButton("Сменить кожу!", "Изменить цвет и текстуру кожи", "changeskin")
 
 
 	if(state == "changehaircutmenu"):
 		savedPage = 0
-		saynn("Pick the haircut that you want")
+		saynn("Выберите прическу, которая вам нравится")
 
 	if(state == "changehair"):
-		saynn("You humm as you work on your hair, using the instant hair grower and scissors to shape the way your hair looks")
+		saynn("Вы что-то напеваете себе под нос, работая над волосами: используете мгновенный стимулятор роста и ножницы, чтобы придать им нужную форму")
 
 	if(state == "changehaircutmenu" || state == "changehair"):
-		addButton("BACK", "This one is good", "")
+		addButton("BACK", "Этот вариант хорош", "")
 	
 		var activeHaircutBodypartId:String = ""
 		if(GM.pc.hasBodypart(BodypartSlot.Hair)):

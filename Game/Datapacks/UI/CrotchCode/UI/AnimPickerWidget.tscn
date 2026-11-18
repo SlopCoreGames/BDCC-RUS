@@ -40,7 +40,7 @@ size_flags_horizontal = 3
 [node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/SettingsWrapperContainer"]
 margin_right = 536.0
 margin_bottom = 14.0
-text = "Animation settings"
+text = "Настройки анимации"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/HBoxContainer/SettingsWrapperContainer"]
 margin_top = 18.0
@@ -99,13 +99,13 @@ rect_min_size = Vector2( 0, 50 )
 [node name="ConfirmButton" type="Button" parent="VBoxContainer/HBoxContainer2"]
 margin_right = 62.0
 margin_bottom = 50.0
-text = "Confirm"
+text = "Подтвердить"
 
 [node name="CancelButton" type="Button" parent="VBoxContainer/HBoxContainer2"]
 margin_left = 66.0
 margin_right = 120.0
 margin_bottom = 50.0
-text = "Cancel"
+text = "Отмена"
 
 [connection signal="item_selected" from="VBoxContainer/HBoxContainer/AnimList" to="." method="_on_AnimList_item_selected"]
 [connection signal="gui_input" from="VBoxContainer/HBoxContainer/PanelContainer" to="." method="_on_PanelContainer_gui_input"]

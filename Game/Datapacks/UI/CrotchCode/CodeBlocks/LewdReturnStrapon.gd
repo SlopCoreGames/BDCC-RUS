@@ -26,7 +26,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Return strapon to pc's inv from:",
+			text = "Вернуть страпон в инвентарь ПК из:",
 		},
 		{
 			type = "slot",

@@ -25,7 +25,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Console Print",
+			text = "Вывод в консоль",
 		},
 		{
 			type = "slot",

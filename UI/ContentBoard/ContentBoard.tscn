@@ -31,7 +31,7 @@ margin_top = 11.0
 margin_right = 126.0
 margin_bottom = 54.0
 theme = ExtResource( 5 )
-text = "Close"
+text = "Закрыть"
 
 [node name="RightPanelCanvas" type="CanvasLayer" parent="."]
 unique_name_in_owner = true

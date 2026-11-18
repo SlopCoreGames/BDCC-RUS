@@ -9,7 +9,7 @@ margin_left = 264.0
 margin_top = 144.0
 margin_right = -264.0
 margin_bottom = -144.0
-window_title = "Picking.."
+window_title = "Выбор.."
 script = ExtResource( 1 )
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
@@ -29,7 +29,7 @@ margin_bottom = 420.0
 [node name="FilterEdit" type="LineEdit" parent="MarginContainer/VBoxContainer"]
 margin_right = 728.0
 margin_bottom = 24.0
-placeholder_text = "Filter"
+placeholder_text = "Фильтр"
 
 [node name="ItemList" type="ItemList" parent="MarginContainer/VBoxContainer"]
 margin_top = 28.0
@@ -47,13 +47,13 @@ margin_bottom = 408.0
 margin_right = 670.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
-text = "Confirm"
+text = "Подтвердить"
 
 [node name="CancelButton" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 margin_left = 674.0
 margin_right = 728.0
 margin_bottom = 20.0
-text = "Cancel"
+text = "Отмена"
 
 [connection signal="popup_hide" from="." to="." method="_on_AdvancedPickingWindow_popup_hide"]
 [connection signal="text_changed" from="MarginContainer/VBoxContainer/FilterEdit" to="." method="_on_FilterEdit_text_changed"]

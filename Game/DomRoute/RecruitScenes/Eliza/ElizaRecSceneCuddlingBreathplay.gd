@@ -15,80 +15,80 @@ func _run():
 		addCharacter("eliza", ["naked"])
 		aimCameraAndSetLocName("hideout_breakroom")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("You step inside the cell and look at Eliza Quinn. She is standing still, her collar leashed to the pipe above her, preventing her from most things. She can't even sit on a chair that's here.")
+		saynn("Ты заходишь в камеру и смотришь на Элизу Куинн. Она стоит неподвижно, её ошейник привязан к трубе над головой, что почти лишает её свободы движений. Она не может даже сесть на стоящий здесь стул.")
 
-		saynn("Her tits are still out.. and her eyes are still really angry.")
+		saynn("Её сиськи всё так же обнажены... а взгляд всё такой же яростный.")
 
 		saynn("[say=pc]"+str(ch1("...", "Hey there, Quinn.", "You look like one of us. Little slut."))+"[/say]")
 
-		saynn("[say=eliza]Grrr-r..[/say]")
+		saynn("[say=eliza]Гррр-р..[/say]")
 
-		saynn("Her tail wags annoyed. She struggles against the straitjacket, making the shiny material creak.")
+		saynn("Её хвост раздражённо виляет. Она пытается вырваться из смирительной рубашки, отчего блестящий материал начинает скрипеть.")
 
 		saynn("[say=pc]"+str(ch1("...", "Relax, slut. I'm not gonna hurt you yet.", "What's the matter? Cat got your tongue?"))+"[/say]")
 
-		saynn("You walk over to the pipe and reach up to it, to loose the chain a little. Then you embrace Eliza and pull her down onto the floor!")
+		saynn("Ты подходишь к трубе и тянешься к ней, чтобы немного ослабить цепь. Затем ты обнимаешь Элизу и тянешь её вниз, на пол!")
 
-		addButton("Cuddle her", "Do the cuddles!", "do_cuddle")
+		addButton("Обнять её", "Давай обнимашки!", "do_cuddle")
 	if(state == "do_cuddle"):
 		playAnimation(StageScene.Cuddling, "idle", {pc="pc", npc="eliza"})
-		saynn("She tries to pull away but you're stronger.")
+		saynn("Она пытается вырваться, но ты сильнее.")
 
-		saynn("[say=eliza]The hell are you doing?[/say]")
+		saynn("[say=eliza]Какого чёрта ты творишь?[/say]")
 
-		saynn("You wrap your arms around her, making it so there are now 2 sets of arms hugging her.")
+		saynn("Ты обхватываешь её руками, так что теперь её обнимают сразу две пары рук.")
 
 		saynn("[say=pc]"+str(ch1("...", "Shut up and take it, cuddle-slut.", "Shush, cuddle-slut."))+"[/say]")
 
-		saynn("She squirms but you hold her tight. She seems quite rebellious so you get an idea. One of your hands starts to slide along her body, along the latex, brushing against her exposed breasts.. before reaching her neck. You grab it, your digits landing on her throat, just above the collar.")
+		saynn("Она извивается, но ты держишь её крепко. Она кажется довольно строптивой, и тут тебе приходит в голову идея. Одна твоя рука начинает скользить по её телу, по латексу, лаская её обнажённую грудь... прежде чем добраться до шеи. Ты хватаешь её, и твои пальцы ложатся на её горло, чуть выше ошейника.")
 
-		saynn("[say=eliza]Ah..[/say]")
+		saynn("[say=eliza]Ах...[/say]")
 
-		saynn("You squeeze. Not hard. Just some pressure to make her feel less in control. She flinches, her breath hitching.")
+		saynn("Ты сжимаешь. Не сильно. Просто создаешь давление, чтобы она почувствовала, что контроль ускользает из её рук. Она вздрагивает, и её дыхание прерывается.")
 
-		saynn("[say=eliza]Kinky..[/say]")
+		saynn("[say=eliza]Пикантно..[/say]")
 
 		saynn("[say=pc]"+str(ch1("...", "Shut up.", "Quiet, pet."))+"[/say]")
 
-		saynn("Her mouth opens slightly, a small gasp escaping. Her body.. which was quite rigid before.. begins to relax into your grip.")
+		saynn("Её рот слегка приоткрывается, вырывается короткий вздох. Её тело... которое до этого было совсем напряженным... начинает расслабляться в твоих руках.")
 
-		saynn("[say=eliza]..mmhh..[/say]")
+		saynn("[say=eliza]..ммхх..[/say]")
 
-		addButton("Continue", "See what happens next", "eliza_rubs_against_you")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_rubs_against_you")
 	if(state == "eliza_rubs_against_you"):
 		playAnimation(StageScene.Cuddling, "squirm", {pc="pc", npc="eliza"})
-		saynn("Even when you increase the pressure on her throat, she doesn't try to pull away.. she just endures it, her body desperately trying to push air into her lungs through the constrained throat.")
+		saynn("Даже когда ты усиливаешь давление на её горло, она не пытается отстраниться... она просто терпит, а её тело отчаянно пытается протолкнуть воздух в легкие через сжатую гортань.")
 
-		saynn("You're choking her.. while watching her nipples getting stiff from the act.")
+		saynn("Ты душишь её... и наблюдаешь за тем, как её соски твердеют от этого процесса.")
 
-		saynn("You push her further, tightening your grip until she can't breathe anymore at all. Her eyes go half-closed, her mouth letting out a completely silent moan.")
+		saynn("Ты заходишь дальше, сжимая руку всё крепче, пока она совсем не перестает дышать. Её глаза полузакрываются, а изо рта вырывается совершенно беззвучный стон.")
 
 		saynn("[say=pc]"+str(ch1("...", "Fucking slut.", "Didn't expect you to be this slutty."))+"[/say]")
 
-		saynn("Her cheeks begin to burn red. Her eyes begin to gradually lose focus. Any resistance faded away a long time ago.")
+		saynn("Её щеки начинают пылать красным. Взгляд постепенно теряет фокус. Любое сопротивление исчезло уже давным-давно.")
 
-		saynn("After about twenty seconds, you begin to feel her getting really weak. Now is probably a good time to stop then.")
+		saynn("Примерно через двадцать секунд ты чувствуешь, что она становится совсем слабой. Пожалуй, сейчас самое время остановиться.")
 
-		addButton("Continue", "See what happens next", "after_all")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_all")
 	if(state == "after_all"):
 		playAnimation(StageScene.Cuddling, "idle", {pc="pc", npc="eliza"})
-		saynn("You release her throat.. and watch Eliza gasp for a full, deep breath.")
+		saynn("Ты разжимаешь пальцы на её горле... и наблюдаешь, как Элиза жадно ловит ртом воздух, пытаясь сделать глубокий вдох.")
 
-		saynn("She blinks rapidly, the fog in her eyes clearing.")
+		saynn("Она часто моргает, и туман в её глазах постепенно рассеивается.")
 
 		saynn("[say=pc]"+str(ch1("Submit.", "You liked it. Submit, whore.", "You're a mess, Quinn. A hot, wet mess. Submit to me."))+"[/say]")
 
-		saynn("She is still busy.. breathing. Her blush slowly starts to fade.")
+		saynn("Она всё ещё занята... дыханием. Её румянец медленно начинает спадать.")
 
-		saynn("[say=eliza]You.. thought that some light choking.. is enough to break me?.. H-hhah..[/say]")
+		saynn("[say=eliza]Ты.. думал, что легкого удушения.. хватит, чтобы сломить меня?.. Х-ххах..[/say]")
 
-		saynn("She is still rebellious it seems.")
+		saynn("Похоже, она всё ещё бунтует.")
 
-		saynn("Whatever.")
+		saynn("Плевать.")
 
-		saynn("You get up and let her be.")
+		saynn("Ты встаёшь и оставляешь её в покое.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

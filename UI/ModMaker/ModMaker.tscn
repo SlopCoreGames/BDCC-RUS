@@ -20,7 +20,7 @@ size_flags_vertical = 3
 [node name="FilterLine" type="LineEdit" parent="HBoxContainer/VBoxContainer"]
 margin_right = 638.0
 margin_bottom = 24.0
-placeholder_text = "Filter files"
+placeholder_text = "Фильтровать файлы"
 
 [node name="Tree" type="Tree" parent="HBoxContainer/VBoxContainer"]
 margin_top = 28.0
@@ -39,13 +39,13 @@ margin_bottom = 720.0
 visible = false
 margin_right = 58.0
 margin_bottom = 20.0
-text = "Update"
+text = "Обновить"
 
 [node name="AddFilesButton" type="Button" parent="HBoxContainer/VBoxContainer/HBoxContainer"]
 margin_right = 638.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
-text = "Add files into mod"
+text = "Добавить файлы в мод"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
 margin_left = 642.0
@@ -65,13 +65,13 @@ select_mode = 1
 margin_top = 648.0
 margin_right = 638.0
 margin_bottom = 668.0
-text = "Remove files"
+text = "Удалить файлы"
 
 [node name="ExportModeSelector" type="OptionButton" parent="HBoxContainer/VBoxContainer2"]
 margin_top = 672.0
 margin_right = 638.0
 margin_bottom = 692.0
-text = "Gather files into one folder (Create a .zip archive yourself)"
+text = "Собрать файлы в одну папку (создать .zip архив самостоятельно)"
 items = [ "Gather files into one folder (Create a .zip archive yourself)", null, false, 0, null, "Export as .pck file", null, false, 1, null ]
 selected = 0
 
@@ -83,14 +83,14 @@ margin_bottom = 720.0
 [node name="MakeModButton" type="Button" parent="HBoxContainer/VBoxContainer2/HBoxContainer"]
 margin_right = 79.0
 margin_bottom = 24.0
-text = "Make mod"
+text = "Создать мод"
 
 [node name="ModNameEdit" type="LineEdit" parent="HBoxContainer/VBoxContainer2/HBoxContainer"]
 margin_left = 83.0
 margin_right = 638.0
 margin_bottom = 24.0
 size_flags_horizontal = 3
-text = "NewMod"
+text = "Новый мод"
 
 [connection signal="text_entered" from="HBoxContainer/VBoxContainer/FilterLine" to="." method="_on_FilterLine_text_entered"]
 [connection signal="item_selected" from="HBoxContainer/VBoxContainer/Tree" to="." method="_on_Tree_item_selected"]

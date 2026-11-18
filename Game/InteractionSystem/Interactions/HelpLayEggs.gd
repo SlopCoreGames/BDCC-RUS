@@ -11,7 +11,7 @@ func start(_pawns:Dictionary, _args:Dictionary):
 	setState("", "main")
 
 func init_text():
-	saynn("{main.You} {main.youVerb('approach', 'approaches')} {target.you}, trying to help..")
+	saynn("{main.You} {main.youVerb('approach', 'approaches')} {target.you}, пытается помочь...")
 	
 	addAction("sex", "Help", "Time to have some fun", "default", 1.0, 300, {start_sex=["main", "target", SexType.DefaultSex, {SexMod.HelpEggsMode: true}],})
 
@@ -21,7 +21,7 @@ func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 		setState("after_sex", "main")
 
 func after_sex_text():
-	saynn("After that, it was time for {main.name} to leave fast..")
+	saynn("После этого {main.name} пришлось поскорее уходить..")
 	
 	addAction("leave", "Leave", "Time to go..", "default", 1.0, 60, {})
 

@@ -44,7 +44,7 @@ func getTemplate():
 		},
 		{
 			type = "label",
-			text = "orgasms from",
+			text = "оргазмы от @@B*@@",
 		},
 		{
 			type = "slot",

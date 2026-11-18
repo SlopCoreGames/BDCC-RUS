@@ -46,12 +46,12 @@ func _run():
 		var _ok2 = inventory.connect("onInteractWith", self, "onInventoryItemInteracted")
 		var _ok3 = inventory.connect("onInteractWithGroup", self, "onInventoryItemGroupInteracted")
 		
-		addButton("Close", "Enough messing around", "endthescene")
-		addButton("Empty it ("+str(getCurrentAmount())+"/"+str(getMaxAmount())+")", "Remove all of the eggs from this strapon", "emptyit")
+		addButton("Закрыть", "Хватит возиться", "endthescene")
+		addButton("Опустошить ("+str(getCurrentAmount())+"/"+str(getMaxAmount())+")", "Вытряхнуть все яйца из этого страпона", "emptyit")
 	
 	if(state == "emptyit"):
 		saynn(reportText)
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 
 func onInventoryItemGroupInteracted(theItem: ItemBase):
 	var theItemID:String = theItem.id
@@ -75,8 +75,8 @@ func onInventoryItemGroupInteracted(theItem: ItemBase):
 	updateInvScreen(inv)
 	
 	GM.ui.clearButtons()
-	addButton("Close", "Enough messing around", "endthescene")
-	addButton("Empty it ("+str(getCurrentAmount())+"/"+str(getMaxAmount())+")", "Remove all of the eggs from this strapon", "emptyit")
+	addButton("Закрыть", "Хватит возиться", "endthescene")
+	addButton("Опустошить ("+str(getCurrentAmount())+"/"+str(getMaxAmount())+")", "Вытряхнуть все яйца из этого страпона", "emptyit")
 
 func onInventoryItemInteracted(theItem: ItemBase):
 	if(!canGiveEggs()):
@@ -99,8 +99,8 @@ func onInventoryItemInteracted(theItem: ItemBase):
 	updateInvScreen(inv)
 	
 	GM.ui.clearButtons()
-	addButton("Close", "Enough messing around", "endthescene")
-	addButton("Empty it ("+str(getCurrentAmount())+"/"+str(getMaxAmount())+")", "Remove all of the eggs from this strapon", "emptyit")
+	addButton("Закрыть", "Хватит возиться", "endthescene")
+	addButton("Опустошить ("+str(getCurrentAmount())+"/"+str(getMaxAmount())+")", "Вытряхнуть все яйца из этого страпона", "emptyit")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

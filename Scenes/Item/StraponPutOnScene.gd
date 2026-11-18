@@ -6,11 +6,11 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("You realize how silly you would look walking around with a strapon and decide against it.")
+		saynn("Ты понимаешь, как глупо будешь выглядеть, расхаживая с дриллом, и решаешь обойтись без него.")
 		
-		saynn("( Strapons are only usable during sex scenes )")
+		saynn("( Страпоны можно использовать только во время секс-сцен )")
 
-		addButton("Leave it", "Nothing you can do", "endthescene")
+		addButton("Оставить как есть", "Ничего не поделаешь", "endthescene")
 
 
 func _react(_action: String, _args):

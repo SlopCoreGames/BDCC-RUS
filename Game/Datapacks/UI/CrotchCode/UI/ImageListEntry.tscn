@@ -67,7 +67,7 @@ margin_bottom = 128.0
 margin_left = 1217.0
 margin_right = 1272.0
 margin_bottom = 128.0
-text = "Delete"
+text = "Удалить"
 
 [connection signal="onValueChange" from="IDLabel" to="." method="_on_IDLabel_onValueChange"]
 [connection signal="onValueChange" from="ArtistLabel" to="." method="_on_ArtistLabel_onValueChange"]

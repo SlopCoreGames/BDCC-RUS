@@ -11,7 +11,7 @@ func getKeepScore() -> float:
 	return 0.7
 
 func getText():
-	return "{main.name} is heading to laundry room to get {main.his} clothes repaired!"
+	return "{main.name} направляется в прачечную, чтобы починить {main.his} одежду!"
 
 func getActions() -> Array:
 	return [

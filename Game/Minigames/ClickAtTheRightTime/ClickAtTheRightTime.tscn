@@ -141,7 +141,7 @@ percent_visible = false
 [node name="Label" type="Label" parent="GameScreen/ProgressBar"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-text = "Time"
+text = "Время"
 align = 1
 valign = 1
 
@@ -174,14 +174,14 @@ margin_bottom = 394.0
 [node name="Label" type="Label" parent="StartMenu/CenterContainer/VBoxContainer"]
 margin_right = 279.0
 margin_bottom = 14.0
-text = "Click when the arrow will be in the red zone"
+text = "Кликай, когда стрелка окажется в красной зоне"
 
 [node name="Button" type="Button" parent="StartMenu/CenterContainer/VBoxContainer"]
 margin_top = 18.0
 margin_right = 279.0
 margin_bottom = 68.0
 rect_min_size = Vector2( 0, 50 )
-text = "Begin"
+text = "Начать"
 
 [connection signal="gui_input" from="ClickStealer" to="." method="_on_ClickAtTheRightTime_gui_input"]
 [connection signal="pressed" from="StartMenu/CenterContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]

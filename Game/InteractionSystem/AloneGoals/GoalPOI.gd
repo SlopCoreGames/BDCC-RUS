@@ -11,13 +11,13 @@ func getKeepScore() -> float:
 	return 0.2
 
 func getText():
-	return "{main.name} is heading somewhere."
+	return "{main.name} куда-то направляется."
 
 func getActions() -> Array:
 	return [
 		{
 			id = "go",
-			name = "Walk",
+			name = "Идти",
 			desc = "Go somewhere",
 			score = 1.0,
 			args = {},

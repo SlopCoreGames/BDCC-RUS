@@ -36,13 +36,13 @@ margin_bottom = 720.0
 [node name="UndoButton" type="Button" parent="HBoxContainer"]
 margin_right = 46.0
 margin_bottom = 20.0
-text = "Undo"
+text = "Отменить"
 
 [node name="RedoButton" type="Button" parent="HBoxContainer"]
 margin_left = 50.0
 margin_right = 94.0
 margin_bottom = 20.0
-text = "Redo"
+text = "Повторить"
 
 [connection signal="pressed" from="HBoxContainer/UndoButton" to="." method="_on_UndoButton_pressed"]
 [connection signal="pressed" from="HBoxContainer/RedoButton" to="." method="_on_RedoButton_pressed"]

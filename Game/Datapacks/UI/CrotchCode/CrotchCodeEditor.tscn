@@ -17,7 +17,7 @@ size_flags_horizontal = 3
 [node name="Label" type="Label" parent="VBoxContainer"]
 margin_right = 638.0
 margin_bottom = 14.0
-text = "Code"
+text = "Код"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
 margin_top = 18.0
@@ -44,7 +44,7 @@ margin_bottom = 330.0
 margin_top = 359.0
 margin_right = 638.0
 margin_bottom = 379.0
-text = "Execute"
+text = "Выполнить"
 
 [node name="PanelContainer" type="PanelContainer" parent="VBoxContainer"]
 margin_top = 383.0
@@ -71,7 +71,7 @@ size_flags_horizontal = 3
 [node name="Label" type="Label" parent="VBoxContainer2"]
 margin_right = 638.0
 margin_bottom = 14.0
-text = "Code blocks"
+text = "Блоки кода"
 
 [node name="ScrollContainer2" type="ScrollContainer" parent="VBoxContainer2"]
 margin_top = 18.0

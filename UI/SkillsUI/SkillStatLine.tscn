@@ -12,7 +12,7 @@ script = ExtResource( 1 )
 margin_top = 353.0
 margin_right = 77.0
 margin_bottom = 367.0
-text = "Strength: 10"
+text = "Сила: @@B*@@10@@T*@@"
 
 [node name="PlusButton" type="Button" parent="."]
 margin_left = 81.0

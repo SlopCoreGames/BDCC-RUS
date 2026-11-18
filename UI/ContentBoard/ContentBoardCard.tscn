@@ -91,7 +91,7 @@ unique_name_in_owner = true
 margin_right = 124.0
 margin_bottom = 16.0
 custom_fonts/font = ExtResource( 3 )
-text = "Some content"
+text = "Какой-то контент"
 align = 1
 autowrap = true
 
@@ -106,7 +106,7 @@ margin_top = 20.0
 margin_right = 124.0
 margin_bottom = 47.0
 custom_fonts/font = ExtResource( 4 )
-text = "Some content meow meow"
+text = "Какой-то контент, мяу-мяу"
 autowrap = true
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer"]
@@ -128,7 +128,7 @@ margin_right = 65.0
 margin_bottom = 20.0
 custom_colors/font_color = Color( 0, 1, 0, 1 )
 custom_fonts/font = ExtResource( 4 )
-text = "Completed!"
+text = "Готово!"
 
 [node name="PressButton" type="TextureButton" parent="."]
 margin_left = 12.0

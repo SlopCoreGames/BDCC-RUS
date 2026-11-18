@@ -6,16 +6,16 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("It's a locked restraint, you can't just take it off")
+		saynn("Это заблокированное средство фиксации, его нельзя просто так снять")
 		
-		saynn("If you wanna escape it you gotta use the struggle action.")
+		saynn("Если хочешь освободиться, нужно использовать действие «Борьба».")
 
-		addButton("Leave it", "Nothing you can do", "leaveit")
+		addButton("Оставить как есть", "Ничего не поделаешь", "leaveit")
 
 	if(state == "leaveit"):
-		saynn("You sigh and leave the restraint alone")
+		saynn("Ты вздыхаешь и оставляешь фиксацию как есть")
 		
-		addButton("Continue", "Oh well", "endthescene")
+		addButton("Продолжить", "Ну и ладно", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

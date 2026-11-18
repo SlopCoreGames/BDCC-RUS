@@ -97,8 +97,8 @@ func run():
 		
 		execute(code)
 	else:
-		saynn("[color=red]State '"+str(currentStateID)+"' is not defined in this scene, bug the creator![/color]")
-		scene.addButton("End scene", "Force-end this scene", "endthescene")
+		saynn("[color=red]Состояние '"+str(currentStateID)+"' не определено в этой сцене, баг создателя![/color]")
+		scene.addButton("Завершить сцену", "Принудительно завершить сцену", "endthescene")
 		
 	if(storedErrors.size() > 0):
 		saynn("[color=red]"+Util.join(storedErrors, "\n")+"[/color]")

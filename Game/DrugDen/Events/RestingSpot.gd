@@ -14,18 +14,18 @@ func getStartCooldown() -> int:
 
 func getInteractInfo() -> Dictionary:
 	return {
-		text = "You found someone's resting spot! You can rest and fully restore your stamina or masturbate and get rid of your lust!",
+		text = "Вы нашли чьё-то место для отдыха! Здесь можно вздремнуть, чтобы полностью восстановить выносливость, или заняться мастурбацией, чтобы снять возбуждение!",
 		actions = [
 			{
 				id = "rest",
-				name = "Rest",
+				name = "Отдохнуть",
 				desc = "Fully restore your stamina.",
 				args = [],
 				disabled = false,
 			},
 			{
 				id = "masturbate",
-				name = "Masturbate",
+				name = "Подрочить",
 				desc = "Get rid of your lust. Your hands and arms have to be free.",
 				args = [],
 				disabled = (GM.pc.hasBoundArms() || GM.pc.hasBlockedHands()),

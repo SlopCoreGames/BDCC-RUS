@@ -11,7 +11,7 @@ func getKeepScore() -> float:
 	return 1.0
 
 func getText():
-	return "{main.name} is leaving.."
+	return "{main.name} уходит.."
 
 func getActions() -> Array:
 	return [

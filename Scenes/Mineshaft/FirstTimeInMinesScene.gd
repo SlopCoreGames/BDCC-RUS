@@ -8,80 +8,80 @@ func _run():
 		addCharacter("alexrynard")
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard"})
 		
-		saynn("You approach the mineshafts, the black asteroid rock is what’s replacing the concrete walls here, it’s pretty dark even with a few floodlights around. There are a few inmates around doing something but your attention gets stolen after you notice some staff leaning against a wall, reading his datapad. He sports a yellow uniform and a toolbelt, he is clearly a fox judging from his orange fur and pointy canine muzzle. You spot a little detail on his fur under the right eye, two black rectangles.")
+		saynn("Вы приближаетесь к шахтам. Вместо бетонных стен здесь — черная астероидная порода; здесь довольно темно даже при наличии нескольких прожекторов. Вокруг копошатся несколько заключенных, но ваше внимание привлекает сотрудник, прислонившийся к стене с датападом в руках. На нем желтая униформа и пояс с инструментами; судя по рыжему меху и острой собачьей морде, это явно лис. Вы замечаете на его меху под правым глазом маленькую деталь — две черные прямоугольные отметины.")
 
-		saynn("[say=alexrynard]Hey you, come here. Haven’t seen you around before.[/say]")
+		saynn("[say=alexrynard]Эй ты, иди сюда. Раньше тебя здесь не видел.[/say]")
 
-		saynn("You do as he says and approach the fox, his badge says ‘Alex Rynard, Station Engineer’. Alex puts his tablet away and quickly eyes you out.")
+		saynn("Вы делаете, как он говорит, и подходите к лису. На его жетоне написано: «Алекс Ринард, инженер станции». Алекс убирает планшет и быстро осматривает вас с ног до головы.")
 
-		saynn("[say=alexrynard]New blood, huh, very cute. Grab a pickaxe and make yourself useful.[/say]")
+		saynn("[say=alexrynard]Новенькая, значит? Милашка. Хватай кирку и приноси пользу.[/say]")
 
-		saynn("[say=pc]Um. No instructions or anything?[/say]")
+		saynn("[say=pc]Эм... А инструкции будут? Или как-то еще?[/say]")
 
-		saynn("[say=alexrynard]You hit a rock until you see anything shiny or colorful. If you do, you put that in a minecart. Clear enough for you?[/say]")
+		saynn("[say=alexrynard]Копаешь камень, пока не увидишь что-нибудь блестящее или цветное. Если нашел — кидай в вагонетку. Достаточно ясно?[/say]")
 
-		addButton("Reward", "Ask what are you gonna receive", "reward")
-		addButton("How", "Why is a rock", "how")
-		addButton("Go work", "Time to work", "go_work")
+		addButton("Награда", "Спросить, что вы получите", "reward")
+		addButton("Как", "Почему это просто камень", "how")
+		addButton("Иди работай", "Пора за работу", "go_work")
 
 	if(state == "reward"):
-		saynn("[say=pc]Am I gonna be paid?[/say]")
+		saynn("[say=pc]Мне заплатят?[/say]")
 
-		saynn("[say=alexrynard]Yes you will be.[/say]")
+		saynn("[say=alexrynard]Еще как.[/say]")
 
-		saynn("[say=pc]How much?[/say]")
+		saynn("[say=pc]Сколько?[/say]")
 
-		saynn("[say=alexrynard]Does it matter? You don’t even know the value of credits.[/say]")
+		saynn("[say=alexrynard]А какая разница? Ты даже не знаешь цену кредитам.[/say]")
 
-		saynn("[say=pc]Credits?[/say]")
+		saynn("[say=pc]Кредитам?[/say]")
 
-		saynn("[say=alexrynard]Work credits. Go work already kiddo.[/say]")
+		saynn("[say=alexrynard]Рабочим кредитам. А теперь марш работать, малявка.[/say]")
 
-		saynn("Huh, the guy is not very talkative. He tilts his head and crosses arms, you can spot his exposed sharp fangs.")
+		saynn("Хм, парень не особо разговорчив. Он наклоняет голову и скрещивает руки на груди, так что можно заметить его острые клыки.")
 
-		addButton("Reward", "Ask what are you gonna receive", "reward")
-		addButton("How", "Why is a rock", "how")
-		addButton("Go work", "Time to work", "go_work")
+		addButton("Награда", "Спросить, что вы получите", "reward")
+		addButton("Как", "Почему это просто камень", "how")
+		addButton("Иди работай", "Пора за работу", "go_work")
 
 	if(state == "how"):
-		saynn("[say=pc]The station is lodged into an asteroid, right?[/say]")
+		saynn("[say=pc]Станция встроена прямо в астероид, верно?[/say]")
 
-		saynn("[say=alexrynard]And we’re mining the insides of it, the asteroid is at least fifty times the size of the station. Some ores are used as fuel, metals are used to print things, the station is pretty much self-sustainable.[/say]")
+		saynn("[say=alexrynard]И мы добываем ресурсы внутри него. Астероид как минимум в пятьдесят раз больше самой станции. Некоторые руды идут на топливо, металлы — на 3D-печать, так что станция практически полностью автономна.[/say]")
 
-		saynn("He gives you an annoyed look.")
+		saynn("Он бросает на тебя раздраженный взгляд.")
 
-		saynn("[say=alexrynard]As long as the inmates don’t slack all day.[/say]")
+		saynn("[say=alexrynard]Если только заключенные не будут весь день бездельничать.[/say]")
 
-		addButton("Reward", "Ask what are you gonna receive", "reward")
-		addButton("How", "Why is a rock", "how")
-		addButton("Go work", "Time to work", "go_work")
+		addButton("Награда", "Спросить, что вы получите", "reward")
+		addButton("Как", "Почему это просто камень", "how")
+		addButton("Иди работай", "Пора за работу", "go_work")
 
 	if(state == "go_work"):
-		saynn("You grab the heavy pickaxe and go down into one of the artificially created caves. It’s pretty much what you would expect, wooden supports, rails, minecarts. Main path gets quickly divided into a bunch of little veins with inmates doing the work, most of which spot either red or orange uniforms. You can’t see a single lilac. It’s quite cold but a few inmates aren’t wearing their shirts, maybe to show off their muscles.")
+		saynn("Ты хватаешь тяжелую кирку и спускаешься в одну из искусственно созданных пещер. Всё именно так, как и ожидалось: деревянные подпорки, рельсы, вагонетки. Основной путь быстро разветвляется на кучу узких жил, где вовсю трудятся заключенные, большинство из которых в красной или оранжевой униформе. Ни одного лилового цвета на глаза не падает. Довольно холодно, но некоторые зэки работают без рубашек — может, чтобы похвастаться мускулами.")
 
-		saynn("You find a spot with no one nearby and begin hitting the rock with your pickaxe.")
+		saynn("Ты находишь место, где никого нет рядом, и начинаешь лупить киркой по скале.")
 
-		addButton("Work", "Mine the rocks", "work")
+		addButton("Работать", "Добывать руду", "work")
 
 	if(state == "work"):
-		saynn("You try not to work too hard but still end up very tired, only a few hours pass but it feels like forever. You hit the rocks, carry them, push the minecarts around, just like the others. Seems like it’s finally time to stop for today.")
+		saynn("Ты стараешься не перетруждаться, но всё равно чертовски устаешь. Прошло всего несколько часов, но кажется, что прошла вечность. Ты бьешь по камням, таскаешь их, толкаешь вагонетки — совсем как остальные. Похоже, на сегодня пора закругляться.")
 
-		addButton("Go get credits", "You’re too tired to continue", "go_get_credits")
+		addButton("Пойти за кредитами", "Ты слишком устал, чтобы продолжать", "go_get_credits")
 
 	if(state == "go_get_credits"):
-		saynn("You return the tool and approach the fox, your uniform and hands are all dirty from the rock dust.")
+		saynn("Ты возвращаешь инструмент и подходишь к лису; твоя форма и руки все в пыли от камней.")
 
-		saynn("[say=alexrynard]Mhm. You’re free for today.[/say]")
+		saynn("[say=alexrynard]М-м. На сегодня ты свободен.[/say]")
 
-		saynn("[say=pc]How much did I earn?[/say]")
+		saynn("[say=pc]Сколько я заработал?[/say]")
 
-		saynn("[say=alexrynard]One day of work here is one work credit.[/say]")
+		saynn("[say=alexrynard]Один рабочий день здесь стоит один рабочий кредит.[/say]")
 
-		saynn("[say=pc]That doesn’t sound like a lot.[/say]")
+		saynn("[say=pc]Звучит не очень внушительно.[/say]")
 
-		saynn("He chooses to ignore your comment and just stares into his datapad.")
+		saynn("Он решает проигнорировать твой комментарий и просто утыкается в свой датапад.")
 
-		addButton("Continue", "It’s still something, right?", "endthescene")
+		addButton("Продолжить", "Все равно это хоть что-то, верно?", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "work"):

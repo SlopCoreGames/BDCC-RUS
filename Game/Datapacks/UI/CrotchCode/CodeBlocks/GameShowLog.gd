@@ -15,6 +15,6 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Show log screen",
+			text = "Показать экран лога",
 		},
 	]

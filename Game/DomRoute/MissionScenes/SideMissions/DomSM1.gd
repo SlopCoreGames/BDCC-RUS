@@ -7,381 +7,381 @@ func _run():
 	if(state == ""):
 		addCharacter("avy")
 		playAnimation(StageScene.Duo, "stand", {npc="avy"})
-		saynn("Avy approaches you, her dark fur revealed by the fluorescent lights of the mission center.")
+		saynn("Ави подходит к тебе, её тёмная шерсть отчетливо видна в свете люминесцентных ламп миссионного центра.")
 
-		saynn("[say=avy]Hey.[/say]")
+		saynn("[say=avy]Эй.[/say]")
 
-		saynn("You cross your arms.")
+		saynn("Ты скрещиваешь руки на груди.")
 
-		saynn("[say=pc]What do you need?[/say]")
+		saynn("[say=pc]Что тебе нужно?[/say]")
 
-		saynn("[say=avy]Wow, you're so direct.[/say]")
+		saynn("[say=avy]Ого, какая ты прямолинейная.[/say]")
 
-		saynn("[say=pc]I feel like I gotta be, with you especially.[/say]")
+		saynn("[say=pc]Чувствую, что иначе с тобой и не получится.[/say]")
 
-		saynn("Who knows, she might be getting you into a trap for all you know.")
+		saynn("Кто знает, может она как раз заманивает тебя в ловушку.")
 
-		saynn("[say=avy]Chill. Murder is not in the plans today. One guy owes me a bunch, I need someone to be near. Just in case.[/say]")
+		saynn("[say=avy]Расслабься. Убийства сегодня в планах нет. Один парень задолжал мне кучу денег, так что мне нужен кто-то рядом. На всякий случай.[/say]")
 
-		saynn("[say=pc]Just in case?[/say]")
+		saynn("[say=pc]На всякий случай?[/say]")
 
-		saynn("[say=avy]Yeah. Ans isn't exactly a fighter. And Kait.. That cat is just too soft.[/say]")
+		saynn("[say=avy]Ага. Энс — не самый сильный боец. А Кейт... эта кошка слишком мягкотелая.[/say]")
 
-		saynn("A soft chuckle escapes her.")
+		saynn("Она тихонько посмеивается.")
 
-		saynn("[say=pc]I thought you could stand for yourself.[/say]")
+		saynn("[say=pc]А я думала, ты умеешь постоять за себя.[/say]")
 
-		saynn("[say=avy]I sure can. But this way I can share the knowledge.[/say]")
+		saynn("[say=avy]Еще как умею. Но так я смогу поделиться опытом.[/say]")
 
-		saynn("Sounds like you won't need to be doing much. So why not?")
+		saynn("Похоже, особо напрягаться тебе не придется. Так почему бы и нет?")
 
-		saynn("[say=pc]Alright. Let's go then.[/say]")
+		saynn("[say=pc]Ладно. Тогда пошли.[/say]")
 
-		addButton("Follow", "See where she brings you", "in_cellblock")
+		addButton("Следовать", "Посмотреть, куда она тебя приведет", "in_cellblock")
 	if(state == "in_cellblock"):
 		aimCameraAndSetLocName("cellblock_lilac_nearcell")
-		saynn("You and Avy quietly exit your hideout and head out into the main areas of the prison.")
+		saynn("Вы с Эви тихо покидаете свое убежище и направляетесь в общие зоны тюрьмы.")
 
-		saynn("[say=pc]Is the arena gonna be fine without you?[/say]")
+		saynn("[say=pc]А арена как, справится без тебя?[/say]")
 
-		saynn("She offers you a shrug.")
+		saynn("Она лишь пожимает плечами.")
 
-		saynn("[say=avy]Yeah. Ans can handle most of it by himself.[/say]")
+		saynn("[say=avy]Да. Эн со всем в основном разберется сам.[/say]")
 
-		saynn("[say=pc]You and him go a long way back?[/say]")
+		saynn("[say=pc]Вы с ним давно знакомы?[/say]")
 
-		saynn("The foxy throws her head back and hums.")
+		saynn("Лисица запрокидывает голову и что-то напевает под нос.")
 
-		saynn("[say=avy]Depends on how you look at it.[/say]")
+		saynn("[say=avy]Смотря с какой стороны посмотреть.[/say]")
 
-		saynn("[say=pc]Before the prison?[/say]")
+		saynn("[say=pc]Еще до тюрьмы?[/say]")
 
-		saynn("Avy stops for a moment, her bushy tail flicks.")
+		saynn("Эви на мгновение замирает, ее пушистый хвост дергается.")
 
-		saynn("[say=avy]Hah, fuck you, of course not. He is from Earth, that huge pile of trash. And I'm not.[/say]")
+		saynn("[say=avy]Ха, да хрен там, конечно нет. Он с Земли, этот кусок мусора огромный. А я — нет.[/say]")
 
-		saynn("Soon, you reach the lilac cellblock. It's busy with life, as always, a bunch of inmates walking around.. most of them doing so quite seductively. Some lean against the walls, showing off. Others whisper to each other, maybe even about you two.")
+		saynn("Вскоре вы добираетесь до сиреневого блока камер. Там, как всегда, кипит жизнь: толпы заключенных расхаживают туда-сюда... причем большинство делает это весьма соблазнительно. Одни прислоняются к стенам, выставляя себя напоказ. Другие шепчутся друг с другом, возможно, даже о вас двоих.")
 
-		saynn("An arrival of the two of you certainly made the space a little more.. tense.")
+		saynn("Ваше совместное появление определенно сделало атмосферу в округе чуть более... напряженной.")
 
-		saynn("[say=pc]So who are we looking for?[/say]")
+		saynn("[say=pc]Так кого мы ищем?[/say]")
 
-		saynn("[say=avy]Rubi. A cat. Loves walking around shirtless. Loves taking loans and never repaying them.[/say]")
+		saynn("[say=avy]Руби. Кошка. Обожает ходить без майки. Обожает брать в долг и никогда не возвращать.[/say]")
 
-		saynn("A shirtless cat.. shouldn't be too hard to find.")
+		saynn("Безрукавный котик... найти его не должно быть слишком сложно.")
 
-		saynn("You and Avy lean against one of the walls and begin scanning the surroundings.")
+		saynn("Вы с Эви прислоняетесь к одной из стен и начинаете осматривать окрестности.")
 
-		saynn("[say=pc]Why are you helping Ans? You don't seem very compatible as friends.[/say]")
+		saynn("[say=pc]Почему ты помогаешь Энсу? Вы не кажетесь очень уж подходящими друзьями.[/say]")
 
-		saynn("Her ear twitches.")
+		saynn("Её ухо дёргается.")
 
-		saynn("[say=avy]You're asking a lot of questions.[/say]")
+		saynn("[say=avy]Ты задаёшь слишком много вопросов.[/say]")
 
-		saynn("[say=pc]Don't answer then.[/say]")
+		saynn("[say=pc]Тогда не отвечай.[/say]")
 
-		saynn("A short quiet moment is broken up by her shrug.")
+		saynn("Короткое мгновение тишины прерывается её пожиманием плеч.")
 
-		saynn("[say=avy]He helped me. I helped him. Simple.[/say]")
+		saynn("[say=avy]Он помог мне. Я помогла ему. Всё просто.[/say]")
 
-		saynn("[say=pc]You rub my back, I rub yours.[/say]")
+		saynn("[say=pc]Ты трешь мою спинку, я тру твою.[/say]")
 
-		saynn("Avy grins, showing a fang.")
+		saynn("Эви ухмыляется, обнажая клык.")
 
-		saynn("[say=avy]That's how this life works, kiddo.[/say]")
+		saynn("[say=avy]Такова жизнь, малявка.[/say]")
 
-		saynn("[say=pc]Don't call me kiddo.[/say]")
+		saynn("[say=pc]Не называй меня малявкой.[/say]")
 
-		saynn("She nudges you with her elbow.")
+		saynn("Она толкает тебя локтем.")
 
-		saynn("[say=avy]Just teasing~.[/say]")
+		saynn("[say=avy]Да ладно тебе, просто дразню~.[/say]")
 
-		saynn("You see a bunch of lilacs.. Some of them are cats.. some of them are naked.. but none of them are just shirtless.")
+		saynn("Ты видишь кучу сиреневых пятен... Некоторые из них — коты... некоторые — голые... но ни один не просто с голым торсом.")
 
-		saynn("But then you see it. The bright fur of his chest stands out against the dark concrete and painted metals. He steps out of his cell and takes his time to stretch, arms above his head, back arching.")
+		saynn("Но тут ты замечаешь его. Яркий мех на его груди выделяется на фоне темного бетона и крашеного металла. Он выходит из своей камеры и не спеша потягивается, закинув руки за голову и прогибая спину.")
 
-		saynn("[say=pc]Is that him?[/say]")
+		saynn("[say=pc]Это он?[/say]")
 
-		saynn("Avy's tail goes still.")
+		saynn("Хвост Эви замирает.")
 
-		saynn("[say=avy]Yuppity.[/say]")
+		saynn("[say=avy]Ага.[/say]")
 
-		saynn("Sensing two sets of eyes directed at him, the guy's ears perk towards your direction. As soon as he sees Avy, the guy's expression changes from a happy one down to a concerned one.. he quickly retreats back into his cell.")
+		saynn("Почувствовав на себе два взгляда, парень навострил уши в вашу сторону. Как только он видит Эви, его лицо из счастливого становится обеспокоенным... и он быстро ретируется обратно в камеру.")
 
-		saynn("[say=avy]Let's go pay him a visit.[/say]")
+		saynn("[say=avy]Пошли навестим его.[/say]")
 
-		saynn("Avy cracks her knuckles.")
+		saynn("Эви хрустит костяшками пальцев.")
 
-		saynn("[say=pc]Don't kill him.[/say]")
+		saynn("[say=pc]Только не убивай его.[/say]")
 
-		saynn("[say=avy]I will try.[/say]")
+		saynn("[say=avy]Постараюсь.[/say]")
 
-		saynn("She pushes off the wall and starts walking.")
+		saynn("Она отталкивается от стены и направляется вперед.")
 
-		addButton("Continue", "See what happens next", "avy_meets_rubi")
+		addButton("Продолжить", "Смотреть, что будет дальше", "avy_meets_rubi")
 	if(state == "avy_meets_rubi"):
 		playAnimation(StageScene.Duo, "stand", {pc="avy", npc="rubi"})
 		addCharacter("rubi")
-		saynn("You step inside the cell.. and find Rubi holding onto the chair, desperately trying to rip it off the floor.. but the bolts keep it secured in place. His muscles strain, the metal creaks.. but nothing moves.")
+		saynn("Вы заходите в камеру... и видите Руби: он вцепился в стул, отчаянно пытаясь вырвать его из пола, но болты держат намертво. Его мышцы напряжены, металл скрипит... но стул не двигается с места.")
 
-		saynn("[say=avy]I see you're busy working out.[/say]")
+		saynn("[say=avy]Вижу, ты тут вовсю тренируешься.[/say]")
 
-		saynn("Her voice makes the guy jump. He spins around, facing you.")
+		saynn("От её голоса парень вздрагивает. Он резко оборачивается к вам.")
 
-		saynn("[say=rubi]Avy! My precious Avy![/say]")
+		saynn("[say=rubi]Эви! Моя драгоценная Эви![/say]")
 
-		saynn("She steps closer, putting extra sway into her hips.")
+		saynn("Она подходит ближе, нарочито покачивая бедрами.")
 
-		saynn("[say=avy]I'm listening.[/say]")
+		saynn("[say=avy]Слушаю тебя.[/say]")
 
-		saynn("Rubi's hands shake a little.")
+		saynn("Руби слегка дрожат руки.")
 
-		saynn("[say=rubi]The last few arena fights didn't work out so well for me..[/say]")
+		saynn("[say=rubi]Последние несколько боев на арене прошли для меня не очень удачно...[/say]")
 
-		saynn("[say=avy]I thought you're strong.[/say]")
+		saynn("[say=avy]А я думала, ты сильный.[/say]")
 
-		saynn("[say=rubi]I am! Look at these gains![/say]")
+		saynn("[say=rubi]Так и есть! Посмотри на эти мышцы![/say]")
 
-		saynn("He flexes his biceps and smiles.")
+		saynn("Он напрягает бицепсы и улыбается.")
 
-		saynn("[say=avy]Charming.[/say]")
+		saynn("[say=avy]Очаровательно.[/say]")
 
-		saynn("His smile fades fast.")
+		saynn("Его улыбка быстро гаснет.")
 
-		saynn("[say=rubi]What I meant is.. some of my bets on some fighters who were totally supposed to win.. didn't come through.[/say]")
+		saynn("[say=rubi]Я имела в виду... некоторые мои ставки на бойцов, которые должны были победить железно... не сыграли.[/say]")
 
-		saynn("Avy tilts her head.")
+		saynn("Эви наклоняет голову набок.")
 
-		saynn("[say=avy]Oh, so we're gambling now?[/say]")
+		saynn("[say=avy]О, так мы теперь в азартные игры играем?[/say]")
 
-		saynn("The foxy keeps closing distance on Rubi.. who keeps backing himself off into a corner.")
+		saynn("Лисица продолжает прижимать Руби к стенке... а тот всё пятится, пока не оказывается в самом углу.")
 
-		saynn("[say=rubi]Listen.. I will get you those credits, I just need time.[/say]")
+		saynn("[say=rubi]Послушай... я достану тебе эти кредиты, мне просто нужно время.[/say]")
 
-		saynn("She shakes her head slowly.")
+		saynn("Она медленно качает головой.")
 
-		saynn("[say=avy]Sorry, can't do. I've waited long enough. Now you're just pulling my balls. And I don't appreciate my balls being pulled.[/say]")
+		saynn("[say=avy]Прости, не выйдет. Я ждал достаточно долго. Сейчас ты просто вешаешь мне лапшу на уши. А я не люблю, когда мне ебут мозги.[/say]")
 		
-		saynn("Avy looms.")
+		saynn("Эви нависает над ним.")
 		
-		saynn("[say=avy]I'd rather be the one pulling.[/say]")
+		saynn("[say=avy]Я бы предпочла сама вешать лапшу... или нечто большее.[/say]")
 
-		saynn("[say=rubi]I don't.. have..[/say]")
+		saynn("[say=rubi]У меня... нет...[/say]")
 
-		saynn("Avy's voice goes lower.. more growly.")
+		saynn("Голос Эви становится ниже... более рычащим.")
 
-		saynn("[say=avy]Give me what you have then. Turn those prison pockets out before I do it myself.[/say]")
+		saynn("[say=avy]Тогда отдай то, что есть. Вытряхивай всё из своих тюремных карманов, пока я не сделала это сама.[/say]")
 
-		saynn("Avy catches Rubi's arm and wrenches it behind his back.. before shoving the guy against a wall, his cheek now pressing into the cold metal.")
+		saynn("Эйви перехватывает руку Руби и резко выворачивает её за спину, а затем впечатывает парня в стену так, что тот прижимается щекой к холодному металлу.")
 
-		saynn("[say=rubi]Avy![/say]")
+		saynn("[say=rubi]Эйви![/say]")
 
-		saynn("[say=avy]I will break your fingers. One by one. Until you give me what I want.[/say]")
+		saynn("[say=avy]Я переломаю тебе пальцы. По одному. Пока не получишь то, что мне нужно.[/say]")
 
-		saynn("This might be going too far now. You get closer too.")
+		saynn("Возможно, всё заходит слишком далеко. Ты тоже подходишь ближе.")
 
-		saynn("[say=pc]Avy.[/say]")
+		saynn("[say=pc]Эйви.[/say]")
 
-		saynn("[say=avy]I know what I'm doing, shush. Just make sure no guards walk by.[/say]")
+		saynn("[say=avy]Я знаю, что делаю, цыц. Просто следи, чтобы мимо не прошли охранники.[/say]")
 
-		saynn("Rubi whimpers.")
+		saynn("Руби скулит.")
 
-		saynn("[say=rubi]Agh..[/say]")
+		saynn("[say=rubi]Агх..[/say]")
 
-		saynn("[say=avy]Do you know how painful it is to lose a claw? How about three? All of them?[/say]")
+		saynn("[say=avy]Знаешь, как больно терять коготь? А если три? А если все сразу?[/say]")
 
-		saynn("[say=rubi]Please.. I don't..[/say]")
+		saynn("[say=rubi]Пожалуйста.. я не..[/say]")
 
-		saynn("Avy puts pressure on the guy's hand.. until something inside it starts cracking.. quietly.")
+		saynn("Эви сильнее сжимает его руку... пока внутри что-то не начинает тихонько хрустеть.")
 
-		saynn("[say=rubi]AHH-![/say]")
+		saynn("[say=rubi]ААА-АХ![/say]")
 
-		saynn("[say=avy]Fingers gonna get broken first. Then your snout. Your fangs. Your toes. Your balls will be last. Without them, you can't earn me anything.[/say]")
+		saynn("[say=avy]Сначала сломаются пальцы. Потом твой нос. Твои клыки. Твои пальцы на ногах. Яйца оставим на десерт. Без них ты не сможешь приносить мне прибыль.[/say]")
 
-		saynn("[say=rubi]AVY I WILL GET YOU THOSE CREDITS, I SWEAR![/say]")
+		saynn("[say=rubi]ЭВИ, КЛЯНУСЬ, Я ДОБУДУ ТЕБЕ ЭТИ КРЕДИТЫ![/say]")
 
-		saynn("Avy's grip tightens.")
+		saynn("Хватка Эви становится еще крепче.")
 
-		saynn("[say=avy]That's not enough, pretty boy.[/say]")
+		saynn("[say=avy]Этого недостаточно, красавчик.[/say]")
 
-		saynn("She smashes him against the wall.. his head bounces off the flat surface.")
+		saynn("Она впечатывает его в стену... его голова с глухим стуком бьется о плоскую поверхность.")
 
-		saynn("[say=avy]Not gonna be so pretty after I'm done with you.[/say]")
+		saynn("[say=avy]После того как я с тобой закончу, ты уже не будешь таким красавчиком.[/say]")
 
-		saynn("It really looks like she is about to fuck him up in front of you.. Or maybe she really does know what she is doing.")
+		saynn("Похоже, она реально собирается разнести его в щепки прямо у тебя на глазах... А может, она точно знает, что делает.")
 
-		addButton("Let her", "(Avy's love +) Just watch and protect her from anyone who might try to stop her", "let_her")
-		addButton("Stop her", "(Avy's obedience +) Stop her before she breaks that guy", "stop_her")
+		addButton("Дай ей волю", "(Любовь Ави +) Просто наблюдай и защищай её от любого, кто попытается ей помешать", "let_her")
+		addButton("Остановить её", "(Послушание Ави +) Остановить её прежде, чем она разнесёт этого парня в щепки", "stop_her")
 	if(state == "let_her"):
-		saynn("You stay put. Arms crossed. Just watching.")
+		saynn("Ты стоишь на месте. Руки скрещены на груди. Просто наблюдаешь.")
 
-		saynn("Avy's grip tightens on Rubi's wrist again.")
+		saynn("Хватка Ави на запястье Руби снова усиливается.")
 
-		saynn("[say=rubi]Please.. I'm begging you..[/say]")
+		saynn("[say=rubi]Пожалуйста.. умоляю тебя..[/say]")
 
-		saynn("The foxy ignores him. She grabs his pinky finger.. and bends it a bit too much.. until something inside it cracks with a sickening noise. Rubi howls.")
+		saynn("Лисичка игнорирует его. Она хватает его мизинец... и сгибает его чуть сильнее, чем нужно... пока внутри не раздается тошнотворный хруст. Руби взвывает.")
 
-		saynn("[say=rubi]AHH! Fuck![/say]")
+		saynn("[say=rubi]АААХ! Блядь![/say]")
 
-		saynn("The cat's legs buckle.. but Avy holds him upright.")
+		saynn("Ноги кота подкашиваются... но Ави удерживает его, не давая упасть.")
 
-		saynn("[say=avy]Nine more to go.[/say]")
+		saynn("[say=avy]Осталось ещё девять.[/say]")
 
-		saynn("She finds his second finger.. and begins bending it too.")
+		saynn("Она находит его второй палец... и тоже начинает его сгибать.")
 
-		saynn("[say=rubi]WAIT WAIT WAIT![/say]")
+		saynn("[say=rubi]ПОДОЖДИ, ПОДОЖДИ, ПОДОЖДИ![/say]")
 
-		saynn("Avy pauses, her blue eyes shine with curiosity. Her grip is still as tight though.")
+		saynn("Эви замирает, её голубые глаза светятся любопытством, но хватка всё ещё остается крепкой.")
 
-		saynn("[say=rubi]Inside the pillow..[/say]")
+		saynn("[say=rubi]Внутри подушки...[/say]")
 
-		saynn("[say=avy]All of it?[/say]")
+		saynn("[say=avy]Прямо всего?[/say]")
 
-		saynn("Rubi nods frantically.")
+		saynn("Руби лихорадочно кивает.")
 
-		saynn("[say=rubi]Yeah..[/say]")
+		saynn("[say=rubi]Да...[/say]")
 
-		saynn("[say=avy]You better not be lying.[/say]")
+		saynn("[say=avy]Лучше бы тебе не врать.[/say]")
 
-		saynn("Avy releases his arm.. and so Rubi collapses to his knees, touching his broken finger, tears going down his cheeks.")
+		saynn("Эви отпускает его руку... и Руби падает на колени, касаясь своего сломанного пальца, а по его щекам катятся слезы.")
 
-		saynn("The credits chip was indeed just hiding inside the pillow. Avy grabs it and tests it with a fang.")
+		saynn("Кредитный чип и впрямь прятался внутри подушки. Эви хватает его и проверяет на остроту клыком.")
 
-		saynn("[say=avy]I feel some current. Good. You could have saved yourself a finger.[/say]")
+		saynn("[say=avy]Чувствую ток... Хорошо. Могла бы сэкономить себе палец.[/say]")
 
-		saynn("[say=rubi]Sorry..[/say]")
+		saynn("[say=rubi]Прости..[/say]")
 
-		saynn("Avy gives the poor cat some headpats, ruffling his hair.")
+		saynn("Эви ласково гладит беднягу по голове, взъерошивая его волосы.")
 
-		saynn("[say=avy]Good boy. Go to the medbay now. Before I get a craving to break something else~.[/say]")
+		saynn("[say=avy]Хороший мальчик. А теперь дуй в медблок. Пока у меня не возникло желания сломать что-нибудь еще~.[/say]")
 
-		saynn("Rubi doesn't argue.. He gets up and starts going towards the exit. You let him pass.")
+		saynn("Руби не спорит... Он встает и направляется к выходу. Ты позволяешь ему пройти.")
 
-		addButton("Continue", "See what happens next", "after_leave_break")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_leave_break")
 	if(state == "after_leave_break"):
 		removeCharacter("rubi")
 		playAnimation(StageScene.Duo, "stand", {npc="avy"})
-		saynn("Avy watches him go.. then turns her attention to you. Her tail flicks a bit.")
+		saynn("Эви провожает его взглядом... затем переключает внимание на тебя. Её хвост слегка подергивается.")
 
-		saynn("[say=pc]He had the credits all along.[/say]")
+		saynn("[say=pc]Так у него всё это время были кредиты.[/say]")
 
-		saynn("[say=avy]He sure did. He knew what would happen if he didn't.[/say]")
+		saynn("[say=avy]Это точно. Он прекрасно знал, что будет, если он не заплатит.[/say]")
 
-		saynn("[say=pc]Why not just pay your debt at that point.[/say]")
+		saynn("[say=pc]Почему бы тогда просто не погасить долг?[/say]")
 
-		saynn("Avy puts the chip away.")
+		saynn("Эви убирает чип.")
 
-		saynn("[say=avy]Gambling, you heard him. It's fun to waste your credits on pointless shit.[/say]")
+		saynn("[say=avy]Азартные игры, ты слышал его. Весело же тратить кредиты на всякую бесполезную херню.[/say]")
 
-		saynn("Makes you wonder what pointless shit she is wasting her credits on.")
+		saynn("Сразу начинаешь гадать, на какую бесполезную херню тратит свои кредиты она.")
 
-		saynn("[say=avy]Anyway. This is it.[/say]")
+		saynn("[say=avy]В общем, это всё.[/say]")
 
-		saynn("[say=pc]You're welcome.[/say]")
+		saynn("[say=pc]Не за что.[/say]")
 
-		saynn("[say=avy]Hah.[/say]")
+		saynn("[say=avy]Ха.[/say]")
 
-		saynn("After that, you just return back to your hideout.")
+		saynn("После этого ты просто возвращаешься в своё убежище.")
 
-		saynn("Mission completed!")
+		saynn("Миссия выполнена!")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "stop_her"):
 		playAnimation(StageScene.Duo, "stand", {npc="avy"})
-		saynn("You step forward and grab Avy's arm before she does anything else that's mean. The foxy stops mid-motion.")
+		saynn("Ты делаешь шаг вперед и перехватываешь руку Эви прежде, чем она успеет выкинуть еще какую-нибудь пакость. Эта лисичка замирает на полуслове.")
 
-		saynn("[say=pc]That's enough. That's not how we do things.[/say]")
+		saynn("[say=pc]Довольно. Мы так делами не занимаемся.[/say]")
 
-		saynn("Avy freezes. Her blue eyes snap to you.")
+		saynn("Эви застывает. Её голубые глаза резко впиваются в тебя.")
 
-		saynn("[say=avy]Excuse me?[/say]")
+		saynn("[say=avy]Прости, что?[/say]")
 
-		saynn("[say=pc]I said. That's. Enough.[/say]")
+		saynn("[say=pc]Я сказал. Хватит.[/say]")
 
-		saynn("You pull her hand away from Rubi's. The cat gasps and slumps against the wall.")
+		saynn("Ты убираешь её руку от Руби. Кошка ахает и сползает по стене.")
 
-		saynn("Avy furrows her brows, her claws extended.")
+		saynn("Эйви хмурится, выпустив когти.")
 
-		saynn("[say=avy]Or what?[/say]")
+		saynn("[say=avy]А то что?[/say]")
 
-		saynn("You tilt your head slightly.")
+		saynn("Ты слегка наклоняешь голову.")
 
-		saynn("[say=pc]Try me.[/say]")
+		saynn("[say=pc]Попробуй.[/say]")
 
-		saynn("Her jaw tightens. Her claws tap away at her hips. She stares you directly into the eyes and breathes through her nose. You hold her gaze.")
+		saynn("Её челюсти сжимаются. Когти постукивают по бёдрам. Она смотрит тебе прямо в глаза, тяжело дыша носом. Ты не отводишь взгляда.")
 
-		saynn("Seconds tick by.. Rubi is frozen in the corner, watching.")
+		saynn("Секунды тикают... Руби замерла в углу, наблюдая за происходящим.")
 
-		saynn("Then.. her shoulders drop.")
+		saynn("Затем... её плечи опускаются.")
 
-		saynn("[say=avy]Oh, fuck you.[/say]")
+		saynn("[say=avy]Ой, да пошёл ты.[/say]")
 
-		saynn("That looks like it worked.")
+		saynn("Похоже, это сработало.")
 
-		saynn("Avy yanks her arm free. Rubi lets out a shaky breath.")
+		saynn("Эви вырывает руку. Руби издает прерывистый вздох.")
 
-		saynn("[say=avy]Fine.[/say]")
+		saynn("[say=avy]Ладно.[/say]")
 
-		saynn("Avy rolls her eyes and then just goes towards the guy's bed.")
+		saynn("Эви закатывает глаза и просто направляется к кровати парня.")
 
-		saynn("[say=rubi]Hey, wait![/say]")
+		saynn("[say=rubi]Эй, постой![/say]")
 
-		saynn("She tears into the pillow.. and quickly finds something.. a credits chip.")
+		saynn("Она вцепляется в подушку... и быстро находит кое-что... кредитный чип.")
 
-		saynn("[say=rubi]Really?[/say]")
+		saynn("[say=rubi]Серьезно?[/say]")
 
-		saynn("Avy snatches it up.")
+		saynn("Эви хватает его.")
 
-		saynn("[say=avy]Use another lilac as a pillow.[/say]")
+		saynn("[say=avy]Используй другую сирень вместо подушки.[/say]")
 
-		saynn("Rubi's ears droop.")
+		saynn("Уши Руби понуро опускаются.")
 
-		saynn("[say=rubi]I was gonna quadruple it![/say]")
+		saynn("[say=rubi]А я собиралась увеличить сумму вчетверо![/say]")
 
-		saynn("[say=avy]We both know you wouldn't. Fucking loser.[/say]")
+		saynn("[say=avy]Мы оба знаем, что ты не рискнешь. Ебаный неудачник.[/say]")
 
-		saynn("She looks at you, her expression unreadable.")
+		saynn("Она смотрит на тебя, и выражение её лица невозможно прочитать.")
 
-		saynn("[say=avy]C'mon, let's go.[/say]")
+		saynn("[say=avy]Давай, пошли.[/say]")
 
-		saynn("She brushes past you, shoulder checking you lightly.")
+		saynn("Она проходит мимо, слегка задев тебя плечом.")
 
-		addButton("Continue", "See what happens next", "outside_didnt_break")
+		addButton("Продолжить", "Смотреть, что будет дальше", "outside_didnt_break")
 	if(state == "outside_didnt_break"):
 		removeCharacter("rubi")
-		saynn("You step outside. Avy just stands, facing away, staying quiet.")
+		saynn("Вы выходите на улицу. Эви просто стоит спиной к тебе, храня молчание.")
 
-		saynn("[say=pc]Are you mad at me?[/say]")
+		saynn("[say=pc]Ты злишься на меня?[/say]")
 
-		saynn("[say=avy]A bit.[/say]")
+		saynn("[say=avy]Немного.[/say]")
 
-		saynn("[say=pc]You knew where the credits were, why break his fingers.[/say]")
+		saynn("[say=pc]Ты же знала, где лежат кредиты, зачем было ломать ему пальцы?[/say]")
 
-		saynn("[say=avy]For fun.[/say]")
+		saynn("[say=avy]Для развлечения.[/say]")
 
-		saynn("[say=pc]This prison has enough sadists.[/say]")
+		saynn("[say=pc]В этой тюрьме и так хватает садистов.[/say]")
 
-		saynn("Some time passes. You hear her chuckling.")
+		saynn("Проходит некоторое время. Ты слышишь её смешок.")
 
-		saynn("[say=avy]Hah. You're right about that one. Wanna know why I didn't slit your throat?[/say]")
+		saynn("[say=avy]Хах. В этом ты прав. Хочешь знать, почему я не перерезала тебе глотку?[/say]")
 
-		saynn("She suddenly turns around and puts her face close to yours.")
+		saynn("Она внезапно разворачивается и приближает своё лицо к твоему.")
 
-		saynn("[say=pc]Sure.[/say]")
+		saynn("[say=pc]Конечно.[/say]")
 
-		saynn("[say=avy]You have something in you.. A liver and a heart, yes.[/say]")
+		saynn("[say=avy]В тебе что-то есть... Печень и сердце, это да.[/say]")
 
-		saynn("[say=pc]Maybe I can offer you something better.[/say]")
+		saynn("[say=pc]Может, я смогу предложить тебе кое-что получше.[/say]")
 
-		saynn("Avy's eyes widened for a split second.")
+		saynn("Глаза Ави на мгновение расширились.")
 
-		saynn("[say=avy]Haha. Enjoy your boring life. See you around.[/say]")
+		saynn("[say=avy]Ха-ха. Наслаждайся своей скучной жизнью. Еще увидимся.[/say]")
 
-		saynn("After that, you just return back to your hideout.")
+		saynn("После этого ты просто возвращаешься в своё убежище.")
 
-		saynn("Mission completed!")
+		saynn("Миссия выполнена!")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

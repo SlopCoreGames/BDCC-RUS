@@ -28,7 +28,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Process time UNTIL",
+			text = "Время обработки ДО",
 		},
 		{
 			type = "slot",

@@ -7,7 +7,7 @@ func _init():
 
 func _run():
 	if(state == ""):
-		addButton("CLOSE", "Close this menu", "endthescene")
+		addButton("CLOSE", "Закрыть меню", "endthescene")
 		playAnimation(StageScene.Solo, "stand")
 		setCharactersEasyList([])
 		aimCameraAndSetLocName(GM.pc.getLocation())
@@ -21,10 +21,10 @@ func _run():
 			var theCharTypeName:String = CharacterType.getName(theChar.getCharType())
 			sayn(theChar.getName()+" - "+theCharTypeName+" - [color=#"+theColor.to_html(false)+"]"+theSpecial.getCategoryName()+"[/color]")
 			
-			addButton(theChar.getName(), "Look at this relationship", "lookAt", [charID])
+			addButton(theChar.getName(), "Посмотри на эти отношения", "lookAt", [charID])
 	
 	if(state == "relationshipInfo"):
-		addButton("BACK", "Go back to the previous menu", "")
+		addButton("BACK", "Назад в предыдущее меню", "")
 		if(!GM.main.RS.special.has(selectedCharID)):
 			return
 		var theSpecial:SpecialRelationshipBase = GM.main.RS.special[selectedCharID]
@@ -33,10 +33,10 @@ func _run():
 			return
 		playAnimation(StageScene.Duo, "stand", {npc=selectedCharID})
 		setCharactersEasyList([selectedCharID])
-		sayn("Name: "+theChar.getName()+" ("+CharacterType.getName(theChar.getCharType())+")")
+		sayn("Имя: "+theChar.getName()+" ("+CharacterType.getName(theChar.getCharType())+")")
 		var theColor:Color = theSpecial.getCategoryColor()
-		sayn("Relationship: [color=#"+theColor.to_html(false)+"]"+theSpecial.getCategoryName()+"[/color]")
-		sayn("Location: "+getLocName(selectedCharID))
+		sayn("Отношения: [color=#"+theColor.to_html(false)+"]"+theSpecial.getCategoryName()+"[/color]")
+		sayn("Местоположение: "+getLocName(selectedCharID))
 		saynn(theSpecial.getBigDescription())
 		var thePawn:CharacterPawn = GM.main.IS.getPawn(selectedCharID)
 		if(thePawn):
@@ -48,23 +48,23 @@ func _run():
 				var thePCLoc:String = GM.pc.getLocation()
 				var theLoc:String = thePawn.getLocation()
 				if(!isOnSameFloor(thePCLoc, theLoc)):
-					addDisabledButton("Meet", "You need to be on the same floor!")
+					addDisabledButton("Встретиться", "Вам нужно быть на одном этаже!")
 				elif(!thePawn.canBeInterrupted()):
-					addDisabledButton("Meet", "They are busy with something!")
+					addDisabledButton("Встретиться", "Они чем-то заняты!")
 				elif(!isLocSafe(theLoc)):
-					addDisabledButton("Meet", "Their location isn't safe!")
+					addDisabledButton("Встретиться", "Их местоположение небезопасно!")
 				elif(!isLocSafe(thePCLoc)):
-					addDisabledButton("Meet", "Your current location isn't safe! Escape the danger first!")
+					addDisabledButton("Встретиться", "Ваше текущее местоположение небезопасно! Сначала спаситесь от опасности!")
 				else:
-					addButton("Meet", "Go meet them!", "doMeet")
+					addButton("Встретиться", "Иди к ним!", "doMeet")
 			else:
 				var theLoc:String = GM.pc.getLocation()
 				if(!isFloorSafeToMeetAt(theLoc)):
-					addDisabledButton("Meet", "You can't meet them on this floor!")
+					addDisabledButton("Встретиться", "Вы не можете встретиться с ними на этом этаже!")
 				elif(!isLocSafe(theLoc)):
-					addDisabledButton("Meet", "Your current location isn't safe!")
+					addDisabledButton("Встретиться", "Твое нынешнее местоположение небезопасно!")
 				else:
-					addButton("Meet", "Go meet them!", "doMeet")
+					addButton("Встретиться", "Иди к ним!", "doMeet")
 
 func isLocSafe(_loc:String) -> bool:
 	return GM.world.isLocSafe(_loc)

@@ -54,7 +54,7 @@ func getTemplate():
 		},
 		{
 			type = "label",
-			text = "substr from",
+			text = "подстрока от",
 		},
 		{
 			type = "slot",

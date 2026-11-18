@@ -37,7 +37,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Remove effect",
+			text = "Убрать эффект",
 		},
 		{
 			type = "slot",

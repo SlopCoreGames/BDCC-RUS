@@ -55,7 +55,7 @@ var pickedSkinGColor:Color = Color.lightgray
 var pickedSkinBColor:Color = Color.darkgray
 
 func _init():
-	name = "BaseCharacter"
+	name = "Базовый персонаж"
 
 func _ready():
 	bodypartStorageNode = Node.new()

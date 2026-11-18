@@ -5,7 +5,7 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("Things that happened:")
+		saynn("Произошедшие события:")
 		
 		for messageData in GM.main.getLogMessages():
 			var title = messageData["title"]
@@ -14,7 +14,7 @@ func _run():
 			sayn("[b]"+title+"[/b]")
 			saynn(message)
 		
-		addButton("Close", "Close the log", "endthescene")
+		addButton("Закрыть", "Закрыть журнал", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

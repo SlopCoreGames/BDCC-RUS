@@ -38,7 +38,7 @@ margin_top = 9.0
 margin_right = 1280.0
 margin_bottom = 48.0
 custom_fonts/font = SubResource( 1 )
-text = "Datapack Browser"
+text = "Браузер датапаков"
 align = 1
 
 [node name="CloseButton" type="Button" parent="VBoxContainer/Label"]
@@ -47,7 +47,7 @@ anchor_bottom = 0.5
 margin_top = -15.5
 margin_right = 120.0
 margin_bottom = 16.5
-text = "Close"
+text = "Закрыть"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 52.0
@@ -73,7 +73,7 @@ size_flags_vertical = 3
 [node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer"]
 margin_right = 411.0
 margin_bottom = 14.0
-text = "All available datapacks"
+text = "Все доступные датапаки"
 align = 1
 
 [node name="HFlowContainer" type="HFlowContainer" parent="VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer"]
@@ -84,26 +84,26 @@ margin_bottom = 38.0
 [node name="SortNameButton" type="Button" parent="VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/HFlowContainer"]
 margin_right = 96.0
 margin_bottom = 20.0
-text = "Sort by name"
+text = "Сортировать по имени"
 
 [node name="SortNewestFirstButton" type="Button" parent="VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/HFlowContainer"]
 margin_left = 100.0
 margin_right = 189.0
 margin_bottom = 20.0
-text = "Newest first"
+text = "Сначала новые"
 
 [node name="SortOldestFirstButton" type="Button" parent="VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/HFlowContainer"]
 margin_left = 193.0
 margin_right = 277.0
 margin_bottom = 20.0
-text = "Oldest first"
+text = "Сначала старые"
 
 [node name="DatapackSearch" type="LineEdit" parent="VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer"]
 margin_top = 42.0
 margin_right = 411.0
 margin_bottom = 66.0
 max_length = 256
-placeholder_text = "Search Datapack..."
+placeholder_text = "Поиск датапака..."
 
 [node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer"]
 margin_top = 70.0
@@ -122,8 +122,7 @@ size_flags_vertical = 3
 [node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/ScrollContainer/ModList"]
 margin_right = 411.0
 margin_bottom = 31.0
-text = "
-LOADING DATAPACK LIST"
+text = "\nЗАГРУЗКА СПИСКА ДАТАПАКОВ"
 align = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
@@ -156,7 +155,7 @@ margin_bottom = 30.0
 margin_right = 79.0
 margin_bottom = 30.0
 rect_min_size = Vector2( 0, 30 )
-text = "Download!"
+text = "Скачать!"
 
 [node name="PreviewDownloadingImage" type="PanelContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer"]
 visible = false
@@ -171,7 +170,7 @@ margin_left = 7.0
 margin_top = 95.0
 margin_right = 830.0
 margin_bottom = 109.0
-text = "Loading preview image.."
+text = "Загрузка превью.."
 align = 1
 
 [node name="PreviewTextureRect" type="TextureRect" parent="VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer2/VBoxContainer"]
@@ -209,7 +208,7 @@ custom_styles/panel = SubResource( 2 )
 margin_top = 353.0
 margin_right = 1280.0
 margin_bottom = 367.0
-text = "Downloading..."
+text = "Загрузка..."
 align = 1
 
 [node name="MessageDialog" type="AcceptDialog" parent="."]

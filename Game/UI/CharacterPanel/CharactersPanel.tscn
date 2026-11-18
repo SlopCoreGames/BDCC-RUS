@@ -22,7 +22,7 @@ script = ExtResource( 5 )
 margin_right = 1280.0
 margin_bottom = 28.0
 custom_fonts/font = SubResource( 7 )
-text = "Characters nearby"
+text = "Персонажи поблизости"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 margin_top = 32.0

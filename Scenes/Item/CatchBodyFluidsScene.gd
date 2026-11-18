@@ -33,19 +33,19 @@ func _reactInit():
 
 func _run():
 	if(state == ""):
-		saynn("You spend some time, using "+item.getVisibleName()+" to collect some of the lewd fluids that you are covered with.")
+		saynn("Вы тратите некоторое время, используя "+item.getVisibleName()+" чтобы собрать часть покрывающих вас похотливых выделений.")
 		
-		addButton("Continue", "Okay", "endthescene")
+		addButton("Продолжить", "Окей", "endthescene")
 
 	if(state == "nofluidsonbody"):
-		saynn("You aren't covered with any fluids that you can collect")
+		saynn("Вас не покрывают никакие выделения, которые можно было бы собрать")
 		
-		addButton("Continue", "aww", "endthescene")
+		addButton("Продолжить", "aww", "endthescene")
 
 	if(state == "cantdoit"):
-		saynn("Some restraint prevents you from doing this")
+		saynn("Какие-то оковы мешают вам это сделать")
 		
-		addButton("Continue", "aww", "endthescene")
+		addButton("Продолжить", "aww", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

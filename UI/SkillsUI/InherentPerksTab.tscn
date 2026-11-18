@@ -39,7 +39,7 @@ size_flags_vertical = 0
 margin_right = 1266.0
 margin_bottom = 14.0
 mouse_filter = 1
-text = "Shows perks that are inherent to your character."
+text = "Здесь отображаются врожденные перки вашего персонажа."
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer"]
 margin_top = 32.0
@@ -108,7 +108,7 @@ margin_bottom = 82.0
 margin_right = 624.0
 margin_bottom = 14.0
 mouse_filter = 1
-text = "Select a perk on the left"
+text = "Выберите перк слева"
 
 [node name="MarginContainer" type="MarginContainer" parent="ScrollContainer/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer"]
 margin_top = 18.0
@@ -123,7 +123,7 @@ margin_bottom = 42.0
 mouse_filter = 1
 bbcode_enabled = true
 bbcode_text = "Description will be shown here"
-text = "Description will be shown here"
+text = "Здесь будет представлено описание"
 fit_content_height = true
 
 [node name="MarginContainer2" type="MarginContainer" parent="ScrollContainer/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer"]
@@ -141,7 +141,7 @@ margin_bottom = 75.0
 margin_right = 624.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
-text = "Toggle perk on/off"
+text = "Включить/выключить перк"
 
 [connection signal="visibility_changed" from="." to="." method="_on_InherentPerksTab_visibility_changed"]
 [connection signal="pressed" from="ScrollContainer/VBoxContainer/HBoxContainer/PanelContainer2/VBoxContainer/HBoxContainer/TogglePerkButton" to="." method="_on_TogglePerkButton_pressed"]

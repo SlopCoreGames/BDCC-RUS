@@ -15,7 +15,7 @@ margin_bottom = 20.0
 margin_top = 3.0
 margin_right = 52.0
 margin_bottom = 17.0
-text = "UI scale"
+text = "Масштаб интерфейса"
 
 [node name="OptionButton" type="OptionButton" parent="HBoxContainer"]
 margin_left = 56.0

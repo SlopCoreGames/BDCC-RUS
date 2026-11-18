@@ -37,7 +37,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Get child amount. Father:",
+			text = "Количество детей. Отец:",
 		},
 		{
 			type = "slot",
@@ -48,7 +48,7 @@ func getTemplate():
 		},
 		{
 			type = "label",
-			text = "Mother:",
+			text = "Мать:",
 		},
 		{
 			type = "slot",

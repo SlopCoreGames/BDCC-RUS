@@ -11,7 +11,7 @@ func run(_triggerID, _args):
 	#var character:DynamicCharacter = getCharacter(npcID)
 	
 	if(GM.pc.hasKeyholderLocksFrom(npcID)):
-		addButton("Unique key", "Unlock your smart-locked restraints that were locked by this person", "dounlock", [npcID])
+		addButton("Уникальный ключ", "Разблокировать ваши смарт-оковы, которые были заперты этим человеком", "dounlock", [npcID])
 
 func getPriority():
 	return 0

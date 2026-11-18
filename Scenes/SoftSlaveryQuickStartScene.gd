@@ -11,7 +11,7 @@ func _run():
 	if(state == ""):
 		pickedNPC = ""
 		playAnimation(StageScene.TFLook, "start")
-		saynn("Who do you want to be enslaved by?")
+		saynn("Кем ты хочешь быть в рабстве?")
 		
 		for npcID in GM.main.getDynamicCharacters():
 			var theNPC:DynamicCharacter = getCharacter(npcID)
@@ -19,24 +19,24 @@ func _run():
 				continue
 			addButton(theNPC.getName(), theNPC.getSmallDescriptionWithRelationship(), "pickNPC", [npcID])
 		
-		addButton("CANCEL", "You changed your mind..", "endthescene")
+		addButton("CANCEL", "Ты передумал(а)...", "endthescene")
 	
 	if(state == "ownerTypeMenu"):
 		playAnimation(StageScene.Solo, "stand", {pc=pickedNPC})
 		
-		saynn("You have picked this character.")
+		saynn("Ты выбрал(а) этого персонажа.")
 		
-		saynn("Now choose what kind of owner do you want them to be.")
+		saynn("Теперь выбери, каким типом хозяина они будут.")
 		
-		addButton("BACK", "You have changed your mind", "")
+		addButton("BACK", "Ты изменил(а) решение", "")
 		for ownerTypeID in GlobalRegistry.getNpcOwnerTypes():
 			var theOwnerType:NpcOwnerBase = GlobalRegistry.getNpcOwnerTypeRef(ownerTypeID)
 			
-			addButton(theOwnerType.getVisibleName(), "Choose this owner type", "startSlavery", [ownerTypeID])
+			addButton(theOwnerType.getVisibleName(), "Выбрать этот тип хозяина", "startSlavery", [ownerTypeID])
 	
 	if(state == "pickingTraits"):
-		saynn("Pick the traits of your new owner.")
-		sayn("Selected traits:")
+		saynn("Выбери черты своего нового хозяина.")
+		sayn("Выбранные черты:")
 		var exclusives:Dictionary = {}
 		for traitID in pickedTraits:
 			var theTraitObj:NpcOwnerTraitBase = GlobalRegistry.getNpcOwnerTrait(traitID)
@@ -47,7 +47,7 @@ func _run():
 				exclusives[theExclusive] = true
 			sayn(" - "+theTraitObj.getVisibleName()+": "+theTraitObj.getVisibleDescription())
 		
-		addButton("CONFIRM", "Start the slavery", "startSlaveryTraits")
+		addButton("CONFIRM", "Начать рабство", "startSlaveryTraits")
 		for traitID in GlobalRegistry.getNpcOwnerTraits():
 			var theTraitObj:NpcOwnerTraitBase = GlobalRegistry.getNpcOwnerTrait(traitID)
 			if(!theTraitObj):
@@ -64,7 +64,7 @@ func _run():
 				if(canAddTrait):
 					addButton("+"+theTraitObj.getVisibleName(), theTraitObj.getVisibleDescription(), "toggleTrait", [traitID])
 				else:
-					addDisabledButton("+"+theTraitObj.getVisibleName(), "(Incompatible with other traits)\n"+theTraitObj.getVisibleDescription())
+					addDisabledButton("+"+theTraitObj.getVisibleName(), "(Несовместимо с другими чертами)\n"+theTraitObj.getVisibleDescription())
 		
 	setCharactersEasyList([pickedNPC] if !pickedNPC.empty() else [])
 	

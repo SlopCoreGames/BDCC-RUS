@@ -20,25 +20,25 @@ margin_bottom = 20.0
 [node name="ActivitySettingsButton" type="Button" parent="VBoxContainer/HBoxContainer3"]
 margin_right = 115.0
 margin_bottom = 20.0
-text = "Activity settings"
+text = "Настройки активности"
 
 [node name="StateAndActionsSettings" type="Button" parent="VBoxContainer/HBoxContainer3"]
 margin_left = 119.0
 margin_right = 247.0
 margin_bottom = 20.0
-text = "States and actions"
+text = "Состояния и действия"
 
 [node name="CustomCodeButton" type="Button" parent="VBoxContainer/HBoxContainer3"]
 margin_left = 251.0
 margin_right = 347.0
 margin_bottom = 20.0
-text = "Custom code"
+text = "Пользовательский код"
 
 [node name="CustomVarsButton" type="Button" parent="VBoxContainer/HBoxContainer3"]
 margin_left = 351.0
 margin_right = 421.0
 margin_bottom = 20.0
-text = "Variables"
+text = "Переменные"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 24.0
@@ -62,13 +62,13 @@ margin_bottom = 20.0
 [node name="AddStateButton" type="Button" parent="VBoxContainer/HBoxContainer/StatesActionsList/HBoxContainer"]
 margin_right = 73.0
 margin_bottom = 20.0
-text = "Add state"
+text = "Добавить состояние"
 
 [node name="RemoveStateButton" type="Button" parent="VBoxContainer/HBoxContainer/StatesActionsList/HBoxContainer"]
 margin_left = 77.0
 margin_right = 141.0
 margin_bottom = 20.0
-text = "Remove"
+text = "Удалить"
 
 [node name="StatesList" type="ItemList" parent="VBoxContainer/HBoxContainer/StatesActionsList"]
 margin_top = 24.0
@@ -86,13 +86,13 @@ margin_bottom = 245.0
 [node name="AddDomButton" type="Button" parent="VBoxContainer/HBoxContainer/StatesActionsList/HBoxContainer2"]
 margin_right = 115.0
 margin_bottom = 20.0
-text = "Add Dom action"
+text = "Добавить действие Доминанта"
 
 [node name="removeDomButton" type="Button" parent="VBoxContainer/HBoxContainer/StatesActionsList/HBoxContainer2"]
 margin_left = 119.0
 margin_right = 183.0
 margin_bottom = 20.0
-text = "Remove"
+text = "Удалить"
 
 [node name="DomActionsList" type="ItemList" parent="VBoxContainer/HBoxContainer/StatesActionsList"]
 margin_top = 249.0
@@ -110,13 +110,13 @@ margin_bottom = 470.0
 [node name="AddSubButton" type="Button" parent="VBoxContainer/HBoxContainer/StatesActionsList/HBoxContainer3"]
 margin_right = 107.0
 margin_bottom = 20.0
-text = "Add Sub action"
+text = "Добавить действие Сабмиссива"
 
 [node name="RemoveSubButton" type="Button" parent="VBoxContainer/HBoxContainer/StatesActionsList/HBoxContainer3"]
 margin_left = 111.0
 margin_right = 175.0
 margin_bottom = 20.0
-text = "Remove"
+text = "Удалить"
 
 [node name="SubActionsList" type="ItemList" parent="VBoxContainer/HBoxContainer/StatesActionsList"]
 margin_top = 474.0
@@ -170,7 +170,7 @@ margin_bottom = 152.0
 margin_top = 156.0
 margin_right = 1076.0
 margin_bottom = 176.0
-text = "Add anim with condition"
+text = "Добавить анимацию с условием"
 
 [node name="AnimsWithConditionList" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer/StatePropertiesList"]
 margin_top = 180.0
@@ -187,7 +187,7 @@ size_flags_vertical = 3
 [node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer/ActionPropertiesList"]
 margin_right = 1076.0
 margin_bottom = 14.0
-text = "Editing xxx"
+text = "Редактирование xxx"
 
 [node name="DynamicPropertiestList" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer/ActionPropertiesList"]
 margin_top = 18.0
@@ -293,7 +293,7 @@ margin_bottom = 24.0
 margin_top = 5.0
 margin_right = 91.0
 margin_bottom = 19.0
-text = "Variable name"
+text = "Имя переменной"
 
 [node name="LineEdit" type="LineEdit" parent="VBoxContainer/CustomVariablesTab/VBoxContainer/HBoxContainer"]
 margin_left = 95.0
@@ -310,7 +310,7 @@ margin_bottom = 52.0
 margin_top = 5.0
 margin_right = 84.0
 margin_bottom = 19.0
-text = "Default value"
+text = "Значение по умолчанию"
 
 [node name="LineEdit" type="LineEdit" parent="VBoxContainer/CustomVariablesTab/VBoxContainer/HBoxContainer2"]
 margin_left = 88.0
@@ -326,13 +326,13 @@ margin_bottom = 76.0
 [node name="AddVariableButton" type="Button" parent="VBoxContainer/CustomVariablesTab/VBoxContainer/HBoxContainer3"]
 margin_right = 92.0
 margin_bottom = 20.0
-text = "Add Variable"
+text = "Добавить переменную"
 
 [node name="RemoveVariableButton" type="Button" parent="VBoxContainer/CustomVariablesTab/VBoxContainer/HBoxContainer3"]
 margin_left = 96.0
 margin_right = 160.0
 margin_bottom = 20.0
-text = "Remove"
+text = "Удалить"
 
 [node name="VariableList" type="ItemList" parent="VBoxContainer/CustomVariablesTab"]
 margin_top = 80.0
@@ -348,19 +348,19 @@ margin_bottom = 720.0
 [node name="SaveButton" type="Button" parent="VBoxContainer/HBoxContainer2"]
 margin_right = 41.0
 margin_bottom = 20.0
-text = "Save"
+text = "Сохранить"
 
 [node name="LoadButton" type="Button" parent="VBoxContainer/HBoxContainer2"]
 margin_left = 45.0
 margin_right = 87.0
 margin_bottom = 20.0
-text = "Load"
+text = "Загрузить"
 
 [node name="GenerateCodeButton" type="Button" parent="VBoxContainer/HBoxContainer2"]
 margin_left = 91.0
 margin_right = 198.0
 margin_bottom = 20.0
-text = "Generate Code"
+text = "Сгенерировать код"
 
 [node name="WindowDialog" type="WindowDialog" parent="."]
 anchor_left = 0.5
@@ -379,7 +379,7 @@ anchor_bottom = 1.0
 [node name="Label" type="Label" parent="WindowDialog/VBoxContainer"]
 margin_right = 1089.0
 margin_bottom = 14.0
-text = "Adding something"
+text = "Добавление..."
 
 [node name="HBoxContainer" type="HBoxContainer" parent="WindowDialog/VBoxContainer"]
 margin_top = 18.0
@@ -404,7 +404,7 @@ caret_blink_speed = 0.5
 margin_top = 46.0
 margin_right = 1089.0
 margin_bottom = 66.0
-text = "Add"
+text = "Добавить"
 
 [node name="ActionEditingDialog" type="WindowDialog" parent="."]
 anchor_left = 0.5
@@ -423,7 +423,7 @@ anchor_bottom = 1.0
 [node name="Label" type="Label" parent="ActionEditingDialog/VBoxContainer"]
 margin_right = 1128.0
 margin_bottom = 14.0
-text = "Editing XXX"
+text = "Редактирование XXX"
 
 [node name="ArgsListScroll" type="ScrollContainer" parent="ActionEditingDialog/VBoxContainer"]
 margin_top = 18.0
@@ -446,7 +446,7 @@ margin_bottom = 504.0
 [node name="ConfirmActionEditButton" type="Button" parent="ActionEditingDialog/VBoxContainer/HBoxContainer"]
 margin_right = 62.0
 margin_bottom = 20.0
-text = "Confirm"
+text = "Подтвердить"
 
 [node name="ExportedCodeDialog" type="WindowDialog" parent="."]
 anchor_left = 0.5
@@ -496,7 +496,7 @@ draw_tabs = true
 margin_top = 469.0
 margin_right = 907.0
 margin_bottom = 489.0
-text = "Load"
+text = "Загрузить"
 
 [connection signal="pressed" from="VBoxContainer/HBoxContainer3/ActivitySettingsButton" to="." method="_on_ActivitySettingsButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer3/StateAndActionsSettings" to="." method="_on_StateAndActionsSettings_pressed"]

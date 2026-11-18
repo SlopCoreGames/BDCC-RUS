@@ -16,6 +16,6 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Run event",
+			text = "Запустить событие",
 		},
 	]

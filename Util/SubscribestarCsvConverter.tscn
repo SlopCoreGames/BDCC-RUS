@@ -28,7 +28,7 @@ margin_right = 1280.0
 margin_bottom = 690.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Output will be here"
+text = "Результат будет здесь"
 syntax_highlighting = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -44,7 +44,7 @@ margin_right = 317.0
 margin_bottom = 26.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Json"
+text = "JSON"
 
 [node name="Button3" type="Button" parent="VBoxContainer/HBoxContainer"]
 margin_left = 321.0
@@ -52,7 +52,7 @@ margin_right = 638.0
 margin_bottom = 26.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Json stripped"
+text = "JSON (очищенный)"
 
 [node name="Button4" type="Button" parent="VBoxContainer/HBoxContainer"]
 margin_left = 642.0
@@ -60,7 +60,7 @@ margin_right = 959.0
 margin_bottom = 26.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Json grouped"
+text = "JSON (сгруппированный)"
 
 [node name="Button2" type="Button" parent="VBoxContainer/HBoxContainer"]
 margin_left = 963.0

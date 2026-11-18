@@ -2,7 +2,7 @@ extends MissionBase
 
 func _init():
 	id = "SideMission3"
-	name = "Down to Earth"
+	name = "Приземление на Землю"
 	desc = "Ans wanted to have a small chat with you."
 	
 	startScene = "DomSM3"

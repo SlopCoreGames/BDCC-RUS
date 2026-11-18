@@ -10,7 +10,7 @@ func _run():
 		addCharacter(RC.charID)
 		playAnimation(StageScene.Duo, "stand", {npc=RC.charID})
 		
-		saynn("This is a placeholder recruit scene. Continue will end the scene.")
+		saynn("Это сцена-заглушка для рекрута. Нажатие «Продолжить» завершит сцену.")
 		
 		var textEdit = textWidgetScene.instance()
 		GM.ui.addCustomControl("textedit", textEdit)
@@ -24,7 +24,7 @@ func _run():
 		
 		textEdit.setText("\t"+Util.join(outputText, "\n\t"))
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

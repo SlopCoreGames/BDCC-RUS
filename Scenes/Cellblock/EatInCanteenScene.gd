@@ -7,28 +7,28 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Solo, "sit")
 		
-		saynn("You get into the queue and wait. The canteen is always busy with hungry inmates, some sit alone but you spot quite a few groups too.")
+		saynn("Вы встаете в очередь и ждете. В столовой всегда полно голодных заключенных: кто-то сидит в одиночку, но есть и довольно большие компании.")
 		
-		saynn("Finally you approach the counter. Behind it is a kitchen with a few cooks doing their job. A thick window blocks inmates from getting in.")
+		saynn("Наконец вы подходите к стойке. За ней — кухня, где несколько поваров делают свою работу. Толстое окно отделяет заключенных от персонала.")
 
-		saynn("The menu is not that huge, there is no menu actually, the only thing inmates get are some kind of grey paste on a plate.")
+		saynn("Меню не особо обширное, точнее, меню как такового нет — заключенным просто подают какую-то серую кашицу на тарелке.")
 
-		saynn("You take the offered plate and a basic spoon. Then you look around and spot an empty table. You take a sit and begin to ponder if you're hungry enough.")
+		saynn("Вы берете предложенную тарелку и обычную ложку. Оглядевшись, вы замечаете свободный стол. Вы садитесь и начинаете раздумывать, достаточно ли вы голодны.")
 
-		addButton("Eat it", "Yummy", "doeat")
-		addButton("Don't eat", "Yuck", "donteat")
+		addButton("Скушать", "Вкусно", "doeat")
+		addButton("Не есть", "Фу", "donteat")
 
 			
 	if(state == "doeat"):
-		saynn("You take your time consuming the paste, it's practically tasteless but it's better than nothing.")
+		saynn("Вы не спеша поедаете эту массу; на вкус она практически никакая, но это всё же лучше, чем ничего.")
 		
-		addButton("Continue", "Stand up and continue on your way", "endthescene")
+		addButton("Продолжить", "Встать и идти дальше", "endthescene")
 		GM.ES.triggerRun(Trigger.EatingInCanteen)
 		
 	if(state == "donteat"):
-		saynn("You leave the plate without taking a single bite.")
+		saynn("Ты оставляешь тарелку, так и не сделав ни единого укуса.")
 		
-		addButton("Continue", "Leave", "endthescene")
+		addButton("Продолжить", "Уйти", "endthescene")
 		GM.ES.triggerRun(Trigger.EatingInCanteen)
 
 func _react(_action: String, _args):

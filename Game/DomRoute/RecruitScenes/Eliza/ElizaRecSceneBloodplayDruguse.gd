@@ -15,123 +15,123 @@ func _run():
 		addCharacter("eliza", ["naked"])
 		aimCameraAndSetLocName("hideout_breakroom")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("You prepare everything that you need on a little tray.. a selection of drugs that you took from Eliza's pockets.. some syringes and bandages.. and a glass shard, extremely sharp and dangerous, carefully cleaned..")
+		saynn("Ты раскладываешь всё необходимое на небольшом подносе... набор наркотиков, которые ты вытащил из карманов Элизы... шприцы и бинты... и осколок стекла, невероятно острый и опасный, тщательно очищенный...")
 
-		saynn("Then.. you enter the cell. Eliza Quinn is standing still, her collar leashed to the pipe above her, preventing her from most things. She can't even sit on a chair that's here.")
+		saynn("Затем... ты входишь в камеру. Элиза Куинн стоит неподвижно; её ошейник пристегнут поводком к трубе над головой, что сильно ограничивает её движения. Она не может даже сесть на стоящий здесь стул.")
 
-		saynn("Her tits are still out.. and her eyes are still really angry.")
+		saynn("Её сиськи всё так же обнажены... а взгляд всё такой же яростный.")
 
 		saynn("[say=pc]"+str(ch1("...", "I'm gonna enjoy breaking you, slut.", "Hey, worthless. Look what I brought."))+"[/say]")
 
-		saynn("You leave the tray on a chair. Eliza sees the contents.. but doesn't say anything. Sure. She can play that game.")
+		saynn("Ты оставляешь поднос на стуле. Элиза видит содержимое... но ничего не говорит. Конечно. Она может в эту игру поиграть.")
 
-		saynn("Your hand starts hovering over all the different filled vials. Eliza knows them just by their color alone.. but luckily.. She also labeled them.")
+		saynn("Твоя рука начинает зависать над наполненными флаконами. Элиза узнает их просто по цвету... но, к счастью... она также наклеила на них этикетки.")
 
-		saynn("After some deliberation, you decide to try the special kind of painkiller.. The one that can apparently turn pain.. into pleasure. Seems useful.")
+		saynn("После недолгих раздумий ты решаешь попробовать особый вид обезболивающего... Тот самый, который, судя по всему, способен превратить боль... в удовольствие. Полезная штука.")
 
-		saynn("You fill the syringe.. approach the doctor.. and inject the drug into her neck. She flinches a bit as the weird substance enters her bloodstream.")
+		saynn("Ты набираешь препарат в шприц... подходишь к доктору... и вводишь лекарство ей в шею. Она слегка вздрагивает, когда странная субстанция попадает в её кровоток.")
 
-		saynn("[say=eliza]Gonna spank me now?[/say]")
+		saynn("[say=eliza]Теперь собираешься отшлепать меня?[/say]")
 
 		saynn("[say=pc]"+str(ch1("...", "Something much worse.", "Something much worse."))+"[/say]")
 
-		saynn("You reach for the glass shard..")
+		saynn("Ты тянешься за осколком стекла...")
 
-		addButton("Continue", "See what happens next", "shard_neck")
+		addButton("Продолжить", "Смотреть, что будет дальше", "shard_neck")
 	if(state == "shard_neck"):
 		playAnimation(StageScene.GropeBehind, "neck", {pc="eliza", npc="pc"})
-		saynn("You pick up the shard and get behind the feline, your hand pressing the sharp edge against her throat, just above her collar. The weapon does dig into her skin.. any wrong motion could end really badly. You feel Eliza's heartbeat.. steady.")
+		saynn("Ты берешь осколок и заходишь со спины к этой кошечке, прижимая острое лезвие к её горлу, чуть выше ключицы. Оружие впивается в кожу... любое неверное движение может закончиться очень плохо. Ты чувствуешь сердцебиение Элизы... оно ровное.")
 
 		saynn("[say=pc]"+str(ch1("...", "One slash can end your stupid life.", "One slash can end your little, useless life."))+"[/say]")
 
-		saynn("[say=eliza]Do it. I've seen death already.[/say]")
+		saynn("[say=eliza]Давай. Смерть я уже видела.[/say]")
 
-		saynn("Can't tell if she is bluffing.. but she doesn't seem scared indeed.")
+		saynn("Непонятно, блефует она или нет... но страха в ней действительно не видно.")
 
 		saynn("[say=pc]"+str(ch1("..hm..", "Maybe later. I want to take my time with you.", "You don't get to tell me what to do. You lost your crown."))+"[/say]")
 
-		saynn("You move the glass down.. stopping just above her left nipple. Then, with a quick, precise flick, you cut a shallow line across her breast. A thin, red line appears soon after, overflowing with blood. Eliza's breath hitches as you do it.. but she doesn't cry out. She just watches the blood well up, coloring her pastel fur red.")
+		saynn("Ты ведешь стеклом вниз... останавливаясь чуть выше её левого соска. Затем резким, точным движением ты проводишь неглубокую линию по её груди. Вскоре проступает тонкая алая полоска, сочащаяся кровью. У Элизы перехватывает дыхание... но она не вскрикивает. Она лишь наблюдает за тем, как выступает кровь, окрашивая её пастельный мех в красный цвет.")
 
-		saynn("Her nips get visibly stiffer.")
+		saynn("Её соски заметно твердеют.")
 
-		saynn("[say=eliza]Mh.. the drug is certainly working. Go me..[/say]")
+		saynn("[say=eliza]М-м... препарат определенно действует. Молодец, я!..[/say]")
 
 		saynn("[say=pc]"+str(ch1("...", "Keep talking. It just makes me want to cut deeper.", "Enjoy it while you can still feel."))+"[/say]")
 
-		saynn("You press the sharp edge against her breast.. and make another cut, perpendicular to the first, applying just enough pressure to pierce the skin.. spawning another bleeding. Eliza bits her lip, a soft, shaky moan vibrating in her throat.")
+		saynn("Ты прижимаешь острое лезвие к её груди... и делаешь еще один надрез, перпендикулярный первому, прилагая ровно столько давления, чтобы пробить кожу... вызывая новое кровотечение. Элиза закусывает губу, в её горле вибрирует тихий, дрожащий стон.")
 
 		saynn("[say=pc]"+str(ch1("...", "You like it, huh? Slut.", "What a pathetic whore."))+"[/say]")
 
-		saynn("Next, you bring the glass shard to her right breast.. and press the pointy tip directly against her hard nipple. Gradually, you put more force into it, making the make-shift weapon dig into her sensitive nub.")
+		saynn("Затем ты подносишь осколок стекла к её правой груди... и прижимаешь острый кончик прямо к её твердому соску. Постепенно ты увеличиваешь нажим, заставляя самодельное оружие впиваться в её чувствительную плоть.")
 
-		saynn("[say=eliza]Mhh.. hh-..[/say]")
+		saynn("[say=eliza]М-мм... хх-...[/say]")
 
-		saynn("Soon, you draw blood.. directly from the perky nipple. Eliza arches her back slightly, still trying to keep her mouth closed.")
+		saynn("Вскоре ты пускаешь кровь... прямо из упругого соска. Элиза слегка выгибает спину, всё еще пытаясь держать рот закрытым.")
 
-		saynn("Lonely drips of her red nectar start hitting the cold floor. Plap, plap..")
+		saynn("Одинокие капли её красного нектара начинают падать на холодный пол. Кап, кап...")
 
-		addButton("Continue", "See what happens next", "thigh_cuts")
+		addButton("Продолжить", "Смотреть, что будет дальше", "thigh_cuts")
 	if(state == "thigh_cuts"):
 		playAnimation(StageScene.GropeBehind, "rub", {pc="eliza", npc="pc"})
-		saynn("You move the little piece lower.. letting the sharp tip trace the lines where her fur meets with her chastity belt.")
+		saynn("Ты ведешь маленьким осколком ниже... позволяя острому кончику очерчивать линии там, где её мех встречается с девайсом целомудрия.")
 
-		saynn("Suddenly, you make a cut on the sensitive skin of her inner thigh.. a quick surgical slice that made hips twitch involuntarily. Before the blood has a chance to appear, you slice again.. and again.. Three slices for each of her thighs.")
+		saynn("Внезапно ты делаешь надрез на чувствительной коже её внутренней стороны бедра... быстрый хирургический срез заставляет её бедра непроизвольно дернуться. Прежде чем кровь успевает выступить, ты режешь снова... и снова... По три надреза на каждом бедре.")
 
-		saynn("Even though she is now bleeding profusely.. She is also wet.. extremely wet.. behind the belt.")
+		saynn("Хотя она сейчас и истекает кровью.. она также промокла.. до нитки.. там, под ремнем.")
 
-		saynn("[say=eliza]Ah.. f-fuck..[/say]")
+		saynn("[say=eliza]Ах.. б-блядь..[/say]")
 
-		saynn("She gasps from each cut, her breathing becoming much faster and shallower.")
+		saynn("Она вздрагивает от каждого пореза, её дыхание становится всё более частым и прерывистым.")
 
 		saynn("[say=pc]"+str(ch1("...", "You're just a slut for pain, huh.", "You like that? You like being cut like a piece of meat? I can keep going."))+"[/say]")
 
-		saynn("Her heart is beating harder against her ribs. A little puddle of her blood starts collecting beneath her, all the little streams painting her fur with many beautiful strokes of scarlet red.")
+		saynn("Сердце бешено колотится о рёбра. Под ней начинает собираться небольшая лужица крови; тонкие струйки расцвечивают её мех прекрасными мазками алого цвета.")
 
-		saynn("Eliza's legs.. begin to shiver.. visibly. Either she is getting weaker.. or she is getting scared. Maybe both.")
+		saynn("Ноги Элизы.. начинают заметно дрожать.. То ли она слабеет.. то ли ей становится страшно. А может, и то, и другое.")
 
-		addButton("Continue", "See what happens next", "back_to_throat")
+		addButton("Продолжить", "Смотреть, что будет дальше", "back_to_throat")
 	if(state == "back_to_throat"):
 		playAnimation(StageScene.GropeBehind, "neck", {pc="eliza", npc="pc"})
-		saynn("Suddenly, you bring the glass back up to her throat. This time, you press harder, really testing how much her skin can take.")
+		saynn("Внезапно ты снова подносишь стекло к её горлу. На этот раз ты давишь сильнее, всерьёз проверяя предел прочности её кожи.")
 
-		saynn("[say=eliza]..h-hey..[/say]")
+		saynn("[say=eliza]..эй..[/say]")
 
-		saynn("A little more pressure.. and the sharp shard starts leaving a thin line of red fire across her neck. Eliza gasps, her lips stay parted, warm air escaping her. Her eyes go wide.")
+		saynn("Чуть больше давления.. и острый осколок оставляет тонкую линию огненной раны на её шее. Элиза ахает, её губы остаются приоткрытыми, выпуская теплый воздух. Глаза расширяются от ужаса.")
 
 		saynn("[say=pc]"+str(ch1("...", "Ready to die for real?", "Is this what you wanted from your stupid life? To die like a pig?"))+"[/say]")
 
-		saynn("There is no way out for her. Tears start running down from her eyes, her mask seemingly cracking. Her body gets weaker and weaker from all the bloodloss.. while her heart is beating harder.")
+		saynn("Ей некуда деться. Из глаз начинают катиться слезы, её маска, кажется, трещит по швам. Тело становится всё слабее и слабее от потери крови.. в то время как сердце бьется всё неистовее.")
 
-		saynn("[say=eliza]I.. n-no.. wait.. I d-don't want.. to die..[/say]")
+		saynn("[say=eliza]Н-нет.. подожди.. я н-не хочу.. умирать..[/say]")
 
 		saynn("[say=pc]"+str(ch1("...", "Really? It's gonna be hard to convince me to stop.", "So?"))+"[/say]")
 
-		saynn("[say=eliza]I.. I give up.. Please.. I will do whatever the fuck that you want..[/say]")
+		saynn("[say=eliza]Всё... я сдаюсь... Пожалуйста... Я сделаю всё, что ты, блять, захочешь...[/say]")
 
-		saynn("She is crying, poor kitty.")
+		saynn("Она плачет, бедная кошечка.")
 
-		saynn("[say=eliza]I see.. d-darkness.. I'm gonna p-pass out..[/say]")
+		saynn("[say=eliza]Вижу... т-темноту... Кажется, я сейчас с-сольну...[/say]")
 
-		saynn("You don't actually want to kill her. But she does deserve it after what she has done to Kait.")
+		saynn("На самом деле ты не хочешь её убивать. Но после того, что она сделала с Кейт, она это заслужила.")
 
-		addButton("Continue", "See what happens next", "eliza_after_all")
+		addButton("Продолжить", "Смотреть, что будет дальше", "eliza_after_all")
 	if(state == "eliza_after_all"):
 		playAnimation(StageScene.Beg, "beg", {pc="eliza", npc="pc"})
-		saynn("You drop the glass and begin treating her wounds. You clean and bandage the cuts on her neck, her breasts, her thighs.")
+		saynn("Ты роняешь стакан и начинаешь обрабатывать её раны. Ты очищаешь и перевязываешь порезы на её шее, груди и бёдрах.")
 
-		saynn("Eliza shows you which of her drugs are best against bloodloss.. and so you inject her with that.. It's some kind of blood-volume expander and a coagulant.")
+		saynn("Элиза показывает, какие из её наркотиков лучше всего помогают при кровопотере... и ты вкалываешь ей именно это... Это какой-то препарат для увеличения объёма крови и коагулянт.")
 
-		saynn("Her breathing steadies.")
+		saynn("Её дыхание выравнивается.")
 
-		saynn("[say=pc]Kneel.[/say]")
+		saynn("[say=pc]На колени.[/say]")
 
-		saynn("And so.. she does.. in front of you. Her green eyes avoid your gaze.")
+		saynn("И она... встаёт на колени прямо перед тобой. Её зелёные глаза избегают твоего взгляда.")
 
-		saynn("Good.")
+		saynn("Хорошо.")
 
-		saynn("With that, you grab the tray.. and step out. You will have to clean the cell.. but that can be done later.")
+		saynn("С этими словами ты хватаешь поднос... и выходишь. Придется еще отмыть камеру... но это можно сделать и позже.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

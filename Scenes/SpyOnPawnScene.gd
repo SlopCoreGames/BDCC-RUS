@@ -16,14 +16,14 @@ func _run():
 		var pawn:CharacterPawn = GM.main.IS.getPawn(pawnID)
 		
 		if(pawn == null):
-			saynn("Pawn not found, sorry.")
-			addButton("Close scene", "Enough spying", "endthescene")
+			saynn("Пешка не найдена, сорян.")
+			addButton("Закрыть сцену", "Хватит шпионить", "endthescene")
 			return
 		
 		var interaction:PawnInteractionBase = pawn.getInteraction()
 		if(interaction == null):
-			saynn("Pawn is not doing anything, sorry.")
-			addButton("Close scene", "Enough spying", "endthescene")
+			saynn("Пешка ничего не делает, сорян.")
+			addButton("Закрыть сцену", "Хватит шпионить", "endthescene")
 			return
 		
 		setCharactersEasyList(interaction.getAllInvolvedCharIDs())
@@ -37,7 +37,7 @@ func _run():
 		saynn(interaction.getOutputTextFinal())
 		
 		if(GM.main.isDebuggingIS):
-			sayn("[b]Debug info[/b]:")
+			sayn("[b]Инфо для отладки[/b]:")
 			saynn(Util.join(pawn.getDebugInfo(), "\n"))
 		
 		addButtonAt(14, "End", "Enough spying", "endthescene")
@@ -47,14 +47,14 @@ func _run():
 			if(theRelativeActionsInfo.size() > 1):
 				var curPawn := interaction.getCurrentPawn()
 				if(curPawn):
-					saynn(curPawn.getChar().getName()+"'s actions:\n"+Util.join(theRelativeActionsInfo, "\n"))
+					saynn(curPawn.getChar().getName()+"Действия \n:"+Util.join(theRelativeActionsInfo, "\n"))
 
-		addButton("Continue", "See what happens next", "progress_interaction")
+		addButton("Продолжить", "Смотреть, что будет дальше", "progress_interaction")
 	
 	if(state == "pick_pawn"):
-		saynn("Pick which pawn you want to spy on")
+		saynn("Выберите пешку, за которой хотите шпионить")
 		
-		addButton("CANCEL", "Enough spying", "endthescene")
+		addButton("CANCEL", "Хватит шпионить", "endthescene")
 		for thepawnID in GM.main.IS.getPawns():
 			var pawn:CharacterPawn = GM.main.IS.getPawn(thepawnID)
 			

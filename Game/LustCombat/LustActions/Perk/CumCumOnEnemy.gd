@@ -21,7 +21,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "Cum on enemy"
+	return "Кончить на врага"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "Use 40 stamina to tackle the enemy and cum all over them, covering their body in your cum/juices!"

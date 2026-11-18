@@ -26,7 +26,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Add filled condom to loot (if perk). Who's:",
+			text = "Добавить наполненный презерватив в добычу (если есть перк). Кто:",
 		},
 		{
 			type = "slot",

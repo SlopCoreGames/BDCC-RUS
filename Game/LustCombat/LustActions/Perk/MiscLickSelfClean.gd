@@ -28,7 +28,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "Lick self clean"
+	return "Вылизать себя дочиста"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "Use your tongue to clean yourself. Swallowing different fluids will provide different effects."

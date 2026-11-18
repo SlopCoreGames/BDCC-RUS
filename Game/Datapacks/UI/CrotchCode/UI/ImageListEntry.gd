@@ -22,17 +22,17 @@ func updateEntry():
 	})
 	
 	artist_label.setData({
-		name = "Artist (optional)",
+		name = "Художник (необязательно)",
 		value = entry.artist,
 	})
 	
 	image_scale.setData({
-		name = "Scale (0.0 - 1.0)",
+		name = "Масштаб (0.0 - 1.0)",
 		value = entry.imageScale,
 	})
 	
 	image_var_ui.setData({
-		name = "Image",
+		name = "Изображение",
 		value = entry.image.getImage(),
 		texture = entry.image.getTexture(),
 	})
