@@ -2,7 +2,7 @@
 
 [ext_resource path="res://GlobalTheme.tres" type="Theme" id=1]
 [ext_resource path="res://UI/MainMenu/CreditsScreen.gd" type="Script" id=2]
-[ext_resource path="res://Fonts/Titillium-Bold.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://Fonts/Carlito/Carlito-Bold.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Game/UI/Util/SmartScrollContainer.gd" type="Script" id=4]
 [ext_resource path="res://Game/UI/Buttons/BetterButton.tscn" type="PackedScene" id=5]
 

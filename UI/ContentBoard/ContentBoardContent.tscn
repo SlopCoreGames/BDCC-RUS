@@ -35,7 +35,7 @@ font_path = "res://Fonts/DroidSansJapanese.woff2"
 font_path = "res://Fonts/DroidSansFallback.woff2"
 
 [sub_resource type="DynamicFontData" id=6]
-font_path = "res://Fonts/Titillium-Regular.otf"
+font_path = "res://Fonts/Carlito/Carlito-Regular.ttf"
 
 [sub_resource type="DynamicFont" id=12]
 size = 20

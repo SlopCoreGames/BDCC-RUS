@@ -2,7 +2,7 @@
 
 [ext_resource path="res://UI/ModBrowser/ModBrowser.gd" type="Script" id=1]
 [ext_resource path="res://Game/UI/Util/SmartScrollContainer.gd" type="Script" id=2]
-[ext_resource path="res://Fonts/Titillium-Regular.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://Fonts/Carlito/Carlito-Regular.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Fonts/Resources/BoldItalics20.tres" type="DynamicFont" id=4]
 [ext_resource path="res://Fonts/Resources/Normal20.tres" type="DynamicFont" id=5]
 [ext_resource path="res://Fonts/Resources/Bold20.tres" type="DynamicFont" id=6]
