@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.BDSM
 
 func getVisibleName():
-	return "Eager Rigger"
+	return "Жаждущая Риггерша"
 
 func getVisibleDescription():
 	return "You got more experienced at tying up people. Your chances at forcing a restraint onto someone are increased by 10% and you also recover 20% of the restraints when the enemy struggles out of them."

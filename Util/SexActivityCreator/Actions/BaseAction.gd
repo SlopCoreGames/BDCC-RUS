@@ -3,7 +3,7 @@ extends Reference
 var id = "error"
 
 func getName():
-	return "Error"
+	return "Ошибка"
 
 func getVisibleText():
 	return generateCode()

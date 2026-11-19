@@ -7,7 +7,7 @@ func _init():
 	id = "UsedCondom"
 
 func getVisibleName():
-	return "Used condom"
+	return "Использованный презерватив"
 	
 func getDescription():
 	var theText = "A condom that was used. Can be thrown if filled."

@@ -4,10 +4,10 @@ func _init():
 	id = "ObeyPill"
 
 func getVisibleName():
-	return "Slave Candy"
+	return "Рабская конфета"
 	
 func getDescription():
-	return "A glossy, pastel-colored pill that melts on the tongue. Designed to override willpower and force submission. [color=red]Avoid overdosing[/color].\n\nForcefully breaks anyone that you are trying to enslave, allowing you to skip the manual process. Can only be used during sex."
+	return "Глянцевая пастельная таблетка, которая тает на языке. Разработана, чтобы подавлять волю и навязывать покорность. [color=red]Избегайте передозировки[/color].\n\nСиловым методом ломает любого, кого вы пытаетесь поработить, позволяя пропустить процесс ручного приручения. Можно использовать только во время секса."
 
 func canUseInCombat():
 	return false
@@ -110,12 +110,12 @@ func useInSex(_receiver):
 		_receiver.addEffect("SexSpacedOut")
 		
 		return {
-			text = "{USER.Your} mind goes bye-bye, {USER.yourHis} expression spaced out.".replace("USER", _receiver.getID()),
+			text = "{USER.Your} разум улетает куда-то далеко, {USER.yourHis} взгляд становится отсутствующим.".replace("USER", _receiver.getID()),
 		}
 	else:
 		_receiver.addEffect("SexObeyDrug")
 	return {
-		text = "{USER.You} suddenly {USER.youVerb('feel')} extremely subby.".replace("USER", _receiver.getID()),
+		text = "{USER.You} внезапно становится крайне {USER.youVerb('feel')} покорной/ым.".replace("USER", _receiver.getID()),
 	}
 
 func getItemCategory():

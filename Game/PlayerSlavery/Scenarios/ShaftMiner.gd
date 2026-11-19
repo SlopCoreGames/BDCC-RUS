@@ -238,12 +238,12 @@ func getTextsForLoc(_loc:String):
 		if(nuggetsMinecart <= 0):
 			saynn("Вы толкаете пустую тележку.")
 		else:
-			saynn("Вы толкаете вагонетку, в которой лежит "+str(nuggetsMinecart)+" ore "+("nugget" if nuggetsMinecart == 1 else "nuggets")+" @@B*@@.")
+			saynn("Вы толкаете вагонетку, в которой лежит "+str(nuggetsMinecart)+" ore "+("nugget" if nuggetsMinecart == 1 else "nuggets")+".")
 	elif(GM.pc.getLocation() == minecartLoc):
 		if(nuggetsMinecart <= 0):
 			saynn("Вы стоите рядом с пустой вагонеткой.")
 		else:
-			saynn("Вы стоите рядом с вагонеткой, в которой лежит "+str(nuggetsMinecart)+" ore "+("nugget" if nuggetsMinecart == 1 else "nuggets")+" @@B*@@.")
+			saynn("Вы стоите рядом с вагонеткой, в которой лежит "+str(nuggetsMinecart)+" ore "+("nugget" if nuggetsMinecart == 1 else "nuggets")+".")
 	
 	if(!pushingMinecart):
 		sayn("Инструмент: "+getToolName())

@@ -5,10 +5,10 @@ func _init():
 	id = "QualityCondom"
 
 func getVisibleName():
-	return "Expensive Condom"
+	return "Дорогой презерватив"
 	
 func getDescription():
-	return "Three for the price of two! These ones seem to be made out of a premium material designed to enhance the experience while providing almost 100% protection against breaking"
+	return "Три по цене двух! Похоже, они сделаны из премиального материала, который усиливает ощущения, обеспечивая при этом почти 100% защиту от разрывов"
 
 func getPrice():
 	return 2

@@ -7,7 +7,7 @@ func _init():
 	isWeaponAttack = true
 	
 func getVisibleName(_context = {}):
-	return "Stun!"
+	return "Оглушение!"
 	
 func getVisibleDesc(_context = {}):
 	var item = getItem(_context)

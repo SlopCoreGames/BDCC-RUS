@@ -4,7 +4,7 @@ func _init():
 	id = Skill.Breeder
 
 func getVisibleName():
-	return "Breeder"
+	return "Осеменитель"
 
 func getVisibleDescription():
 	return "Shows how much you like to cum inside others and breed them"

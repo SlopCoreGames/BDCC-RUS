@@ -1,7 +1,7 @@
 extends BodypartHead
 
 func _init():
-	visibleName = "bulldog head"
+	visibleName = "голова бульдога"
 	id = "bulldoghead"
 
 func getCompatibleSpecies():

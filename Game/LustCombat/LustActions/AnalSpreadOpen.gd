@@ -23,7 +23,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "Раздвинуть анус @@B*@@"
+	return "Раздвинуть анус"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "Stretch open your anal ring"

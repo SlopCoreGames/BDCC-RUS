@@ -4,10 +4,10 @@ func _init():
 	id = "StraponFeline"
 
 func getVisibleName():
-	return "Strapon (feline)"
+	return "Страпон (фелиний)"
 	
 func getDescription():
-	var text = "A strapon with barbs"
+	var text = "Страпон с шипами"
 
 	return text
 

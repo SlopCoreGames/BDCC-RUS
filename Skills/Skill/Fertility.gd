@@ -4,7 +4,7 @@ func _init():
 	id = Skill.Fertility
 
 func getVisibleName():
-	return "Fertility"
+	return "Плодовитость"
 
 func getVisibleDescription():
 	return "Shows how much you are used to being impregnated by local inhabitants"

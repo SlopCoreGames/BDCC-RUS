@@ -4,10 +4,10 @@ func _init():
 	id = "AlexExoskeleton"
 
 func getVisibleName():
-	return "Exoskeleton"
+	return "Экзоскелет"
 	
 func getDescription():
-	return "Helps you move and fight"
+	return "Помогает двигаться и сражаться"
 
 func getClothingSlot():
 	return InventorySlot.Torso

@@ -191,4 +191,4 @@ static func joinSkipNewLines(arr: Array, separator: String = "") -> String:
 	return output
 
 func getName():
-	return "Google (batch)"
+	return "Google (пакетный)"

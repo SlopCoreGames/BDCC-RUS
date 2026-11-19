@@ -30,7 +30,7 @@ func getEffectDesc():
 	
 	var intoxication: float = character.getIntoxicationLevel()
 
-	var text = "You are "+str(round(intoxication*100.0))+"% intoxicated."
+	var text = "Вы в состоянии опьянения на "+str(round(intoxication*100.0))+"%."
 	
 	if(intoxication >= 0.7):
 		text += " You can barely stand on your feet."

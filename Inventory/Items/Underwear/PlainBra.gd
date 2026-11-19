@@ -5,10 +5,10 @@ func _init():
 	clothesColor = Color(1.0, 0.53, 0.73)
 
 func getVisibleName():
-	return "Bra"
+	return "Бюстгальтер"
 	
 func getDescription():
-	var text = "Generic bra made out of a cheap but stretchy material."
+	var text = "Обычный бюстгальтер из дешевого, но эластичного материала."
 
 	return text
 

@@ -159,7 +159,7 @@ func _run():
 
 		saynn("[say=rahi]Мы тебя используем... как тупую шлюшливую игрушку для ебли, которой ты и являешься...[/say]")
 
-		saynn("Рахи разворачивается и встает на четвереньки, ее киска мокрая и готовая... Она протягивает одну руку, чтобы направить @@B*@@ Artica's @@T*@@..."+str("rubber canine cock" if isStrapon else "canine cock")+"в её скользкий вход... пока ты давишь ей на спину сзади, не давая ей сбежать, но при этом выравнивая твой @@B*@@"+str("own cock" if !pcStrapon else "rubber cock")+"с её голубой киской, позволяя ей тереться о её влажные чувствительные складки.."+str(" Little did she know, your toy is loaded with a surprise.." if (straponHasCum || straponHasArticaCum) else "")+""+str(" very big surprise.." if straponHasArticaCum else "")+"")
+		saynn("Рахи разворачивается и встает на четвереньки, ее киска мокрая и готовая... Она протягивает одну руку, чтобы направить "+str("резиновый волчий член" if isStrapon else "волчий член")+" Артики в её скользкий вход... пока ты давишь ей на спину сзади, не давая ей сбежать, но при этом выравнивая свой "+str("own cock" if !pcStrapon else "rubber cock")+" с её голубой киской, позволяя ей тереться о её влажные чувствительные складки.."+str(" Little did she know, your toy is loaded with a surprise.." if (straponHasCum || straponHasArticaCum) else "")+""+str(" very big surprise.." if straponHasArticaCum else "")+"")
 
 		if (isFullSlave):
 			saynn("[say=rahi]Трахни меня.. ты, маленькая шлюшка.[/say]")

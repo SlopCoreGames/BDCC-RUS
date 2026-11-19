@@ -6,13 +6,13 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Tease"
+	return "Подразнить"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
-	var text = "{attacker.name}'s butt makes you horny."
+	var text = "От задов {attacker.name} у тебя встает."
 	
 	return {
 		text = text,
@@ -26,7 +26,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	var text = "{attacker.name}’s leans seductively, showing off her striped panties."
+	var text = "{attacker.name} соблазнительно наклоняется, демонстрируя свои полосатые трусики."
 	text += "\n\n"
 	text += "[say=attacker]"+RNG.pick([
 		"You don’t really want to fight me, do you?",

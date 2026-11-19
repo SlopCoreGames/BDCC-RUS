@@ -4,7 +4,7 @@ class_name SexToyBase
 # It's more of a 'feature' of a toy. Each vibration motor will get its own SexToyBase basically
 
 var uniqueID:int = 0
-var name:String = "Some toy feature"
+var name:String = "Какая-то функция игрушки"
 var type:int = SexToyType.Unknown
 
 var backendID:String = "" #ButtplugIO
@@ -58,12 +58,12 @@ func getSettings() -> Dictionary:
 	
 	return {
 		"name": {
-			name = "Name",
+			name = "Имя",
 			type = "string",
 			value = name,
 		},
 		"group": {
-			name = "Group",
+			name = "Группа",
 			type = "selector",
 			value = group,
 			values = theGroupsValues,

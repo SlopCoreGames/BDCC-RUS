@@ -4,7 +4,7 @@ func _init():
 	id = Stat.Vitality
 
 func getVisibleName():
-	return "Vitality"
+	return "Живучесть"
 
 func getVisibleDescription():
 	return "Raises your pain threshold"

@@ -4,10 +4,10 @@ func _init():
 	id = "policecuffs"
 
 func getVisibleName():
-	return "Police cuffs"
+	return "Полицейские наручники"
 	
 func getDescription():
-	return "Pretty standart police cuffs that go on your wrists"
+	return "Довольно стандартные полицейские наручники, которые надеваются на запястья"
 
 func getClothingSlot():
 	return InventorySlot.Wrists

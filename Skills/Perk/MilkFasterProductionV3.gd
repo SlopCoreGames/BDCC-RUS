@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Milking
 
 func getVisibleName():
-	return "Milk factory"
+	return "Молочная фабрика"
 
 func getVisibleDescription():
 	return "Your tits feel so good when they're heavy that it's all that you can focus on. Your udders began producing milk [b]120%[/b] faster"

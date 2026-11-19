@@ -4,7 +4,7 @@ func _init():
 	id = "AngledSkin"
 
 func getName():
-	return "Angled"
+	return "Угловатый"
 
 func getPatternTexture():
 	return load("res://Player/Player3D/SkinsByAuthor/AverageAce/AngledSkin/Angled_f_s.png")

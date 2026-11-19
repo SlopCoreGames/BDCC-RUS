@@ -6,10 +6,10 @@ func _init():
 	id = "ChastityCageAdvanced"
 
 func getVisibleName():
-	return "Advanced Chastity Cage"
+	return "Продвинутая девайс-клетка"
 	
 func getDescription():
-	return "Prevents the ability to use your penis. This one is incredibly hard to take off and can also shock you! But at least it has a button to customize its color.."
+	return "Блокирует возможность использовать твой член. Эту штуку невероятно трудно снять, к тому же она может бить током! Но зато здесь есть кнопка для смены цвета..."
 
 func getClothingSlot():
 	return InventorySlot.Penis
@@ -84,7 +84,7 @@ func getInventoryImage():
 	return "res://Images/Items/bdsm/ShockCageRed.png"
 
 func useInCombat(_attacker, _receiver):
-	var text = "You toggle between the 3 available colors."
+	var text = "Вы переключаетесь между 3 доступными цветами."
 	
 	currentColor += 1
 	if(currentColor >= 3):

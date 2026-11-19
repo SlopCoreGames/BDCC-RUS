@@ -181,7 +181,7 @@ func onAction(_auction, _action:AuctionAction, _result:Dictionary):
 func say(theText:String):
 	var theAuction = getAuction()
 	if(theAuction != null):
-		theAuction.saynn("[say=\""+bidderID+"]"+theText+"[/say]")
+		theAuction.saynn("[say="+bidderID+"]"+theText+"[/say]")
 
 func sayn(theText:String):
 	var theAuction = getAuction()

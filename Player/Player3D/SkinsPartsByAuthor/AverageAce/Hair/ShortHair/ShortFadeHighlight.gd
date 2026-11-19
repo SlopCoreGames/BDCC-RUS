@@ -5,7 +5,7 @@ func _init():
 	partID = "shorthair"
 
 func getName():
-	return "Fade + Highlight"
+	return "Фейд + Контур"
 
 func getPatternTexture():
 	return {

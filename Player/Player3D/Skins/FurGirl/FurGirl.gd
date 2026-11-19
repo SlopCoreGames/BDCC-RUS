@@ -4,7 +4,7 @@ func _init():
 	id = "FurGirl"
 
 func getName():
-	return "Fur Girl"
+	return "Меховая Девушка"
 
 func getPatternTexture():
 	return load("res://Player/Player3D/Skins/FurGirl/FurGirl.png")

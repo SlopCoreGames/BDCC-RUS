@@ -6,7 +6,7 @@ var author = ""
 var datapackID = ""
 
 func getName():
-	return "Error"
+	return "Ошибка"
 
 func getPatternTexture():
 	return load("res://Player/Player3D/Skins/EmptySkin/EmptySkin.png")

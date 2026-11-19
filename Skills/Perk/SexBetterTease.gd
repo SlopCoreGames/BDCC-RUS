@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.SexSlave
 
 func getVisibleName():
-	return "An eye for kinks"
+	return "Насмотренность на кинки"
 
 func getVisibleDescription():
 	return "You learn opponent's likes/dislikes faster when teasing"

@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Exhibitionism
 
 func getVisibleName():
-	return "Stunning lips"
+	return "Ошеломляющие губы"
 
 func getVisibleDescription():
 	return "Licking your lips when the opponent is above 30% lust may cause them to be distracted with lewd thoughts, stunning them with 10% chance! Chance scales up with your sexiness"

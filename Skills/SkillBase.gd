@@ -13,7 +13,7 @@ func setCharacter(newnpc):
 	npc = newnpc
 
 func getVisibleName():
-	return "Error"
+	return "Ошибка"
 
 func getShortName():
 	return getVisibleName()

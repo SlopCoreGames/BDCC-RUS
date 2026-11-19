@@ -4,10 +4,10 @@ func _init():
 	id = "GuardArmor"
 
 func getVisibleName():
-	return "Guard armor"
+	return "Стражарская броня"
 	
 func getDescription():
-	return "A standard armor for guards"
+	return "Стандартная броня для охранников"
 
 func getClothingSlot():
 	return InventorySlot.Body

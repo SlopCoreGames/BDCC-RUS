@@ -4,7 +4,7 @@ func _init():
 	id = "Piss"
 
 func getVisibleName():
-	return "Piss"
+	return "Моча"
 
 func getStatusEffectColor():
 	return Color.yellow

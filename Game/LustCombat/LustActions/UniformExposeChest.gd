@@ -23,7 +23,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "Обнажить сиськи @@B*@@@@T*@@@@F*@@"
+	return "Обнажить сиськи"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "Open up your shirt and expose what’s behind it"

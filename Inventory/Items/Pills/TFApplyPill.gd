@@ -4,10 +4,10 @@ func _init():
 	id = "TFApplyPill"
 
 func getVisibleName():
-	return "MorphIn Pill"
+	return "Таблетка «Морфинг внутрь»"
 	
 func getDescription():
-	return "A pill that's claiming to be able to [color=#"+Color.cyan.to_html()+"]turn any temporary transformation effects into permanent ones, meaning there will be no way to undo them anymore![/color]"
+	return "Таблетка, которая якобы способна [color=#"+Color.cyan.to_html()+"]turn any temporary transformation effects into permanent ones, meaning there will be no way to undo them anymore![/color]"
 
 func canUseInCombat():
 	return true

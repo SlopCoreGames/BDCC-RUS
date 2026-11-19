@@ -4,7 +4,7 @@ func _init():
 	id = "SphinxCatSkin"
 
 func getName():
-	return "Sphinx"
+	return "Сфинкс"
 
 func getPatternTexture():
 	return load("res://Player/Player3D/SkinsByAuthor/AverageAce/SphinxCatSkin/SphinxCatSkin.png")

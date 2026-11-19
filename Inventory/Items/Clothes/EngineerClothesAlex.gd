@@ -4,7 +4,7 @@ func _init():
 	id = "EngineerClothesAlex"
 
 func getDescription():
-	return "Just a simple shirt and shorts colored in orange. This one has some armored shoulder pads, perfect for someone sly and agile."
+	return "Просто обычная рубашка и шорты оранжевого цвета. На этой есть бронированные наплечники — идеальный вариант для кого-то хитрого и ловкого."
 
 func getRiggedParts(_character):
 	if(itemState.isRemoved()):

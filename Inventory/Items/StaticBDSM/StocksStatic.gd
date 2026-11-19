@@ -4,10 +4,10 @@ func _init():
 	id = "StocksStatic"
 
 func getVisibleName():
-	return "Stocks"
+	return "Колодки"
 	
 func getDescription():
-	return "You're stuck in these"
+	return "Ты застрял в этих"
 
 func getClothingSlot():
 	return InventorySlot.Static1

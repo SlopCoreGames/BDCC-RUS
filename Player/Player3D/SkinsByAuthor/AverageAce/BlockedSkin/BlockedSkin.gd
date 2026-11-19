@@ -4,7 +4,7 @@ func _init():
 	id = "BlockedSkin"
 
 func getName():
-	return "Blocked"
+	return "Заблокировано"
 
 func getPatternTexture():
 	return load("res://Player/Player3D/SkinsByAuthor/AverageAce/BlockedSkin/BlockedSkin.png")

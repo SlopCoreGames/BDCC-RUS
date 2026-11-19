@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Cock slap"
+	return "Шлепок по члену"
 	
 func calculateDamageFor(character):
 	if(!character.hasPenis()):

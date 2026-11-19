@@ -75,7 +75,7 @@ func getTemplate():
 		},
 		{
 			type = "label",
-			text = "кончает внутрь @@B*@@",
+			text = "кончает внутрь",
 		},
 		{
 			type = "slot",

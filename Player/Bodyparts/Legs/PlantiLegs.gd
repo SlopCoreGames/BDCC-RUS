@@ -1,7 +1,7 @@
 extends BodypartLeg
 
 func _init():
-	visibleName = "planti legs"
+	visibleName = "растиlegи"
 	id = "plantilegs"
 
 func getCompatibleSpecies():

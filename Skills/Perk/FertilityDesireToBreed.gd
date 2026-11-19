@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Fertility
 
 func getVisibleName():
-	return "Reckless Desires"
+	return "Безрассудные желания"
 
 func getVisibleDescription():
 	return "Your lustful cravings are so intense that you deliberately try to sabotage condoms, increasing the chance of them breaking during intimate encounters with you by 3 times.\n"\

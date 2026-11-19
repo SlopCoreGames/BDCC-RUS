@@ -4,10 +4,10 @@ func _init():
 	id = "MirriArmor"
 
 func getVisibleName():
-	return "Mirri's Armor"
+	return "Доспехи Мирри"
 	
 func getDescription():
-	return "Skimpy variant of the guard armor that is missing quite a few pieces.."
+	return "Откровенный вариант стражниковской брони, в которой не хватает доброй половины деталей..."
 
 func getClothingSlot():
 	return InventorySlot.Body

@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Fertility
 
 func getVisibleName():
-	return "Anomalous pregnancy"
+	return "Аномальная беременность"
 
 func getVisibleDescription():
 	return "Ongoing pregnancy doesn't stop you from ovulating or getting into heat. Get more chances to fill your womb with the litter up to its absolute limit."

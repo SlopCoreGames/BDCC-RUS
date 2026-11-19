@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Latex Strike"
+	return "Латексный удар"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -18,7 +18,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	#if(checkDodged(_attacker, _receiver, DamageType.Physical)):
 	#	return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "{attacker.name} lunges forward, delivering a swift and forceful strike with {attacker.his} latex-covered fist, inflicting sharp pain upon impact."
+	var text = "{attacker.name} делает резкий выпад, нанося быстрый и мощный удар {attacker.his} покрытым латексом кулаком, причиняя острую боль при столкновении."
 	if(RNG.chance(10) && _receiver.addEffect(StatusEffect.Bleeding)):
 		text += " Sharp edges of {attacker.name}'s fist caused {receiver.name} to start [color=red]bleeding[/color]."
 	return {
@@ -30,7 +30,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	var text = "{attacker.name} assumes a focused stance, ready to strike with precision. This one won't miss no matter what!"
+	var text = "{attacker.name} принимает сосредоточенную стойку, готовясь нанести точный удар. Этот раз он не промахнется, что бы ни случилось!"
 
 	return text
 

@@ -16,24 +16,24 @@ func doStruggle(_pc, _minigame:MinigameResult):
 	var _canSee = !_pc.isBlindfolded()
 	var _canBite = !_pc.isBitingBlocked()
 	
-	var text = "error?"
+	var text = "ошибка?"
 	var lust = 0
 	var pain = 0
 	var damage = 0
 	var stamina = 0
 	
 	if((_minigame.score < 0.7 || failChance(_pc, 10)) && !_minigame.instantUnlock):
-		text = "{user.name}'s chastity cage BEEPS.. And then suddenly [b]shocks[/b] {user.his} {user.penis}!"
+		text = "{user.name}'а девственная клетка ПИЩИТ... И вдруг [b]бьет током[/b] {user.his} {user.penis}!"
 		stamina = 0
 		pain = RNG.randi_range(10, 20)
 		damage = -0.3
 	else:
 		if(_handsFree && _armsFree):
-			text = "{user.name} tugs on {user.his} chastity cage, trying to take it off."
+			text = "{user.name} дергает за {user.his} девственную клетку, пытаясь ее снять."
 			damage = calcDamage(_pc, _minigame)
 			stamina = 10
 		else:
-			text = "{user.name} desperately tries to wiggle {user.his} chastity cage off but makes almost no progress."
+			text = "{user.name} отчаянно пытается стряхнуть {user.his} девственную клетку, но почти не продвигается."
 			damage = calcDamage(_pc, _minigame, 0.1)
 			stamina = 5
 		

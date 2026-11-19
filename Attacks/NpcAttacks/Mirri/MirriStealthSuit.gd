@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Defensive
 	
 func getVisibleName(_context = {}):
-	return "Stealth suit"
+	return "Стелс-костюм"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -15,7 +15,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	_attacker.addEffect("MirriRecharge", [3])
 	_attacker.addEffect("MirriStealth", [2])
 	
-	var text = "{attacker.name} activates {attacker.his} stealth suit!"
+	var text = "{attacker.name} активирует {attacker.his} стелс-костюм!"
 	
 	return {
 		text = text,

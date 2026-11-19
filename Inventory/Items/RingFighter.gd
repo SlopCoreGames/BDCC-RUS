@@ -4,10 +4,10 @@ func _init():
 	id = "RingFighter"
 
 func getVisibleName():
-	return "Ring of Triumph"
+	return "Кольцо Триумфа"
 	
 func getDescription():
-	return "A golden ring adorned with intricate engravings depicting a victorious warrior with two fallen foes kneeling by their sides. It emanates an aura of power and accomplishment.\n\n\"[i]Huh. I think it's safe to assume.. that our arena has a new Grand Champion![/i] \"\n"
+	return "Золотое кольцо, украшенное искусной гравировкой, изображающей победителя-воина, а у его ног на коленях склонились двое поверженных врагов. Оно излучает ауру силы и свершения.\n\n\"[i]Хм. Думаю, можно с уверенностью сказать... что у нашей арены появился новый Гранд-чемпион![/i] \"\n"
 
 func getClothingSlot():
 	return InventorySlot.Ring

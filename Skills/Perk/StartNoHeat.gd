@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Start
 
 func getVisibleName():
-	return "No heat"
+	return "Без внимания"
 
 func getVisibleDescription():
 	return "You don't experience a periodic desire to be bred. Only applies if you have a womb"

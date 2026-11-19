@@ -4,10 +4,10 @@ func _init():
 	id = "ChastityCagePortal"
 
 func getVisibleName():
-	return "Portal Cage"
+	return "Портал-клетка"
 	
 func getDescription():
-	return "Sends your erection straight into the bluespace!"
+	return "Отправляет твою эрекцию прямиком в блюспейс!"
 
 func getClothingSlot():
 	return InventorySlot.Penis

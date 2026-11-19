@@ -5,7 +5,7 @@ func _init():
 	partID = "equinepenis"
 
 func getName():
-	return "Two tone"
+	return "Двухцветный"
 
 func getPatternTexture():
 	return {

@@ -4,10 +4,10 @@ func _init():
 	id = "ElizaNecklace"
 
 func getVisibleName():
-	return "Necklace"
+	return "Ожерелье"
 	
 func getDescription():
-	return "A fancy necklace"
+	return "Изысканное ожерелье"
 
 func getClothingSlot():
 	return InventorySlot.Unique

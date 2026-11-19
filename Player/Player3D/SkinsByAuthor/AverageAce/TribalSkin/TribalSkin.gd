@@ -4,7 +4,7 @@ func _init():
 	id = "TribalSkin"
 
 func getName():
-	return "Tribal"
+	return "Трайбл"
 
 func getPatternTexture():
 	return load("res://Player/Player3D/SkinsByAuthor/AverageAce/TribalSkin/TribalSkin.png")

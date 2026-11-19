@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.BDSM
 
 func getVisibleName():
-	return "Perfect streak"
+	return "Идеальная серия"
 
 func getVisibleDescription():
 	return "Time to say RED to your restraints, you can continue the struggling minigame as long as you keep hitting the red zone perfectly. Each perfect hit makes your struggling 25% more efficient."

@@ -4,10 +4,10 @@ func _init():
 	id = "SocketCrotchCover"
 
 func getVisibleName():
-	return "Crotch Cover"
+	return "Набедренная накладка"
 	
 func getDescription():
-	return "A cool crotch cover that somehow holds on its own"
+	return "Крутая накладка на промежность, которая каким-то чудом держится сама по себе"
 
 func getClothingSlot():
 	return InventorySlot.Vagina

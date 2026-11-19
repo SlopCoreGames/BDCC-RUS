@@ -4,7 +4,7 @@ func _init():
 	id = "Milk"
 
 func getVisibleName():
-	return "Milk"
+	return "Молоко"
 
 func getMessyDescription(_pc, _amount):
 	if(_amount >= 500.0):

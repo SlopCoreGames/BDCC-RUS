@@ -5,7 +5,7 @@ func _init():
 	category = Category.Physical
 	
 func getVisibleName(_context = {}):
-	return "Try to get up"
+	return "Попытка подняться"
 	
 func getVisibleDesc(_context = {}):
 	return "You shouldn't see this"
@@ -18,9 +18,9 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	
 	var text
 	if(success):
-		text = "{attacker.name} wastes {attacker.his} turn but [b]{attacker.he} manages to get up[/b]"
+		text = "{attacker.name} тратит {attacker.his} ход, но [b]{attacker.he} всё же удаётся подняться[/b]"
 	else:
-		text = "{attacker.name} tries to get up [b]but fails to do so[/b] in time"
+		text = "{attacker.name} пытается подняться [b], но не успевает[/b]"
 	
 	return {
 		text = text,

@@ -8,13 +8,13 @@ func _init():
 # apple is illegal only temporally as a test item
 func getVisibleName():
 	if(isLegal):
-		return "Tasty Apple"
-	return "Stolen Apple"
+		return "Вкусное яблоко"
+	return "Украденное яблоко"
 	
 func getDescription():
 	if(isLegal):
-		return "Tasty looking apple. Will remove 30 pain and give 30 stamina. This one has a special sticker that makes it legal for inmates to have!"
-	return "Tasty looking apple. Will remove 30 pain and give 30 stamina"
+		return "Выглядит очень аппетитно. Снимает 30 единиц боли и дает 30 единиц выносливости. На этом яблоке есть специальная наклейка, благодаря которой заключенным разрешено его иметь!"
+	return "Выглядит очень аппетитно. Снимает 30 единиц боли и дает 30 единиц выносливости"
 
 func setIsLegal(legal):
 	isLegal = legal

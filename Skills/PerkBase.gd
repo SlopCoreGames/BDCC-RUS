@@ -7,7 +7,7 @@ var skillGroup = Skill.Combat
 var dungeonWeight:float = 1.0
 
 func getVisibleName():
-	return "Error"
+	return "Ошибка"
 
 func getVisibleDescription():
 	return "Error bad"

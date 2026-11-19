@@ -6,7 +6,7 @@ func _init():
 	dungeonWeight = 0.0
 
 func getVisibleName():
-	return "Stallion"
+	return "Жеребец"
 
 func getVisibleDescription():
 	return "You're a real stallion, your balls rapidly fill up by 10% after your orgasm to make sure that you are never empty"

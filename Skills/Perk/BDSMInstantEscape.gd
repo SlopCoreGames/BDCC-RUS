@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.BDSM
 
 func getVisibleName():
-	return "Instant gratification"
+	return "Мгновенное удовлетворение"
 
 func getVisibleDescription():
 	return "You know exactly where to tug to take that damn gag off. The struggling minigame now has an extra small spot that will unlock the restraint instantly if hit."

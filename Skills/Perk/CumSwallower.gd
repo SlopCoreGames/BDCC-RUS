@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.CumLover
 
 func getVisibleName():
-	return "Swallower"
+	return "Глотательница"
 
 func getVisibleDescription():
 	return "You love cum so much you can lick-clean yourself during a battle and swallow it all!"

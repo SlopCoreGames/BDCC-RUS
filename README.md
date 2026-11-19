@@ -5,9 +5,10 @@
 **Неофициальный проект полной русской локализации научно-фантастической RPG *BDCC* с открытым исходным кодом**
 
 [![Origin](https://img.shields.io/badge/Оригинал-Alexofp%2FBDCC-purple?style=flat-square)](https://github.com/Alexofp/BDCC)
-[![Engine](https://img.shields.io/badge/Движок-Godot%203.6.2%20(GDScript)-blue?style=flat-square)](#сборка-из-исходников)
+[![Engine](https://img.shields.io/badge/Движок-Godot%203.6.2%20(GDScript)-blue?style=flat-square)](#скачать-и-запустить)
 [![LLM](https://img.shields.io/badge/Перевод-Gemma%204%2026B%20A4B%20(Local)-green?style=flat-square)](#как-устроен-пайплайн-перевода)
-[![Status](https://img.shields.io/badge/Статус-В%20процессе%20локализации-yellow?style=flat-square)](#статус-локализации)
+[![Status](https://img.shields.io/badge/Статус-Готово%20100%25%20(v0.4.1)-brightgreen?style=flat-square)](#статус-локализации)
+[![Release](https://img.shields.io/badge/Скачать-Release%20v1.0-orange?style=flat-square)](https://github.com/SlopCoreGames/BDCC-RUS/releases/latest)
 
 </div>
 
@@ -18,10 +19,35 @@
 
 ---
 
+## Скачать и запустить
+
+1. Скачайте готовый архив **[`BDCC_RU_v0.4.1_Win64.zip`](https://github.com/SlopCoreGames/BDCC-RUS/releases/latest)** (`65.8 МБ`) для Windows 64-bit.
+2. Распакуйте все файлы в одну папку (`BDCC.exe` и `BDCC.pck` должны лежать рядом) и запустите `BDCC.exe`.
+3. **Portable-режим:** создайте пустую папку `BDCCData` рядом с `BDCC.exe` перед запуском, чтобы хранить сохранения, настройки и моды локально в ней.
+
+> [!TIP]
+> Для **Linux**, **macOS** и **Android** в [`export_presets.cfg`](export_presets.cfg) уже настроены пресеты экспорта и исключения (`AssetsSource/*`, `ru_tools/*`, `build/*`) — сборку можно выполнить из исходников в **Godot Engine 3.6.2**.
+
+---
+
+## Статус локализации
+
+| Компонент / Проверка | Результат |
+| --- | --- |
+| **Базовая версия игры** | BDCC `0.4.1` (форк [`Alexofp/BDCC`](https://github.com/Alexofp/BDCC)) |
+| **Покрытие файлов пайплайна** | **`4027 / 4027` (`100%`)** (`2030` `.gd` и `159` `.tscn` изменены относительно апстрима) |
+| **Память переводов (`tm_cache_bdcc.json`)** | `70 250` очищенных записей |
+| **Кириллические шрифты** | `Carlito` (`Regular / Bold / Italic / BoldItalic`) в UI + кириллический fallback для `BodyWritingsFont` |
+| **Статический аудит (`10/10`)** | `0` утечек масок, `0` незакрытых строк, `0` ошибок `{...}` / `[say=...]` / `printf` / Unicode |
+| **Автотест Godot 3.6.2 (`VerifyBDCC.tscn`)** | `VERIFY_PASS`: `3369/3369` `.gd`, `652/652` `.tscn`, `GlobalRegistry` (`679` сцен, `136` предметов, `105` персонажей, `22` модуля) |
+| **Живой запуск `BDCC.exe`** | Проверен в изолированном portable-режиме (`Using portable save directory`, `GlobalRegistry fully initialized`, `0` ошибок) |
+
+---
+
 ## О проекте
 
 Этот репозиторий — форк [`Alexofp/BDCC`](https://github.com/Alexofp/BDCC) с полной русской локализацией:
-- **Кириллический шрифт из коробки:** стандартный шрифт `Titillium` не содержит русской кириллицы, поэтому в UI и диалоговых ресурсах подключён пропорциональный шрифт **Carlito** (`Regular / Bold / Italic / BoldItalic`).
+- **Кириллический шрифт из коробки:** стандартный шрифт `Titillium` не содержит русской кириллицы, поэтому в UI и диалоговых ресурсах подключён пропорциональный шрифт **Carlito** (`Regular / Bold / Italic / BoldItalic`), а для `BodyWritingsFont` настроен кириллический fallback.
 - **Перевод всех сцен, событий, модулей и интерфейса:** переведены диалоговые скрипты (`.gd`), текстовые поля интерфейса (`.tscn`), кнопки и тултипы с сохранением всех идентификаторов сцен, флагов и подстановок.
 
 ---

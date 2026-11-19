@@ -6,7 +6,7 @@ func _init():
 	id = "addTextRandom"
 
 func getName():
-	return "Add Text Random"
+	return "Добавить случайный текст"
 
 func getVisibleText():
 	return "Pick random text: " + storedTexts

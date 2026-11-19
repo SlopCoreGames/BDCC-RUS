@@ -4,10 +4,10 @@ func _init():
 	id = "PermanentMarker"
 
 func getVisibleName():
-	return "Permanent marker"
+	return "Перманентный маркер"
 	
 func getDescription():
-	return "A single-use marker that is loaded with special ink that is almost impossible to remove."
+	return "Одноразовый маркер, заправленный особыми чернилами, которые почти невозможно стереть."
 
 func canUseInCombat():
 	return false

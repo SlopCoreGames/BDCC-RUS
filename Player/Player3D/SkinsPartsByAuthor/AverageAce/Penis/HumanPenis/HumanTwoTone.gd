@@ -5,7 +5,7 @@ func _init():
 	partID = "humanpenis"
 
 func getName():
-	return "TwoTone"
+	return "Двухцветный"
 
 func getPatternTexture():
 	return {

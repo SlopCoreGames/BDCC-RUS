@@ -64,7 +64,7 @@ func getTemplate():
 		},
 		{
 			type = "label",
-			text = "трахается с @@B*@@",
+			text = "трахается с",
 		},
 		{
 			type = "slot",

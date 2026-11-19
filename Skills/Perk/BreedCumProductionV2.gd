@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Breeder
 
 func getVisibleName():
-	return "Seed Factory"
+	return "Фабрика семян"
 
 func getVisibleDescription():
 	return "You just can't breed them enough. Your balls are now generating cum 75% faster."

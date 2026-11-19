@@ -302,7 +302,7 @@ func createNewAction():
 		priority = 0,
 		conditions = [],
 		actions = [],
-		name = "New action",
+		name = "Новое действие",
 		desc = "Change the description",
 		score = "1.0",
 		chance = "",

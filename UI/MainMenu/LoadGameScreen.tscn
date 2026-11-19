@@ -232,7 +232,7 @@ margin_bottom = 117.0
 unique_name_in_owner = true
 margin_right = 324.0
 margin_bottom = 20.0
-text = "Сохранить импорт"
+text = "Импорт сохранения"
 align = 1
 
 [node name="DoImportFromFileButton" type="Button" parent="ImportSavePanelContainer/Control/PanelContainer/VBoxContainer"]

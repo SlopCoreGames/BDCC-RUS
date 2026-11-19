@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Fertility
 
 func getVisibleName():
-	return "Mother of the Year"
+	return "Мать года"
 
 func getVisibleDescription():
 	return "The corporation has noticed your efforts and wants to reward you!\n" \

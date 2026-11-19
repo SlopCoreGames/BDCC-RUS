@@ -4,10 +4,10 @@ func _init():
 	id = "RingRahi"
 
 func getVisibleName():
-	return "Ring of Eternal Love"
+	return "Кольцо вечной любви"
 	
 func getDescription():
-	return "A simple metal ring. But it means a lot to you. Engraved on it are the words \"To Remember. Forever and Always.\"\n\n\"[i]I do...[/i]\"\n"
+	return "Простое металлическое кольцо. Но оно значит для тебя очень много. На нем выгравировано: \"Помни. Вечно и навсегда.\"\n\n\"[i]Да...[/i]\"\n"
 
 func getClothingSlot():
 	return InventorySlot.Ring

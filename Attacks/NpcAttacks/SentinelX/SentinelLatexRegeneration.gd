@@ -7,7 +7,7 @@ func _init():
 	aiScoreMultiplier = 0.8
 	
 func getVisibleName(_context = {}):
-	return "Latex Regeneration"
+	return "Латексная регенерация"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -19,7 +19,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkDodged(_attacker, _receiver, DamageType.Physical)):
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "{attacker.name} manages to coil {attacker.his} whip around {receiver.name}'s body and pull {receiver.him} close! {attacker.name}'s latex layer rapidly regenerates using {receiver.name}'s stamina!"
+	var text = "{attacker.name} умудряется обвиться {attacker.his} хлыстом вокруг тела {receiver.name} и притянуть {receiver.him} поближе! Латексный слой {attacker.name} стремительно восстанавливается, поглощая выносливость {receiver.name}!"
 	if(_receiver.getStamina() > 0):
 		_attacker.addPain(-30)
 		_attacker.addStamina(30)
@@ -33,7 +33,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	var text = " {attacker.name} morphs {attacker.his} hand into a latex whip and tries to strike you with it!"
+	var text = "{attacker.name} превращает {attacker.his} руку в латексный хлыст и пытается хлестнуть тебя им!"
 
 	return text
 

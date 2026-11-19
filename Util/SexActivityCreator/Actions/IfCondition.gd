@@ -6,7 +6,7 @@ func _init():
 	id = "ifcondition"
 
 func getName():
-	return "If Condition"
+	return "Если условие выполняется"
 
 func getVisibleText():
 	return "IF( " +storedCode+" ):"

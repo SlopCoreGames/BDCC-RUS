@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.CumLover
 
 func getVisibleName():
-	return "Sloppy seconds"
+	return "Второй сорт"
 
 func getVisibleDescription():
 	return "You love being used as a cum dumpster by different people."

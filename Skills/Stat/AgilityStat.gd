@@ -4,7 +4,7 @@ func _init():
 	id = Stat.Agility
 
 func getVisibleName():
-	return "Agility"
+	return "Ловкость"
 
 func getVisibleDescription():
 	return "Gives you more stamina"

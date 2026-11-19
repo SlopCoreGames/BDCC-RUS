@@ -6,7 +6,7 @@ func _init():
 	id = SmartLock.TightLock
 
 func getName():
-	return "Tight lock"
+	return "Тугой замок"
 
 func getUnlockDescription():
 	var restData:RestraintData = getRestraintData()

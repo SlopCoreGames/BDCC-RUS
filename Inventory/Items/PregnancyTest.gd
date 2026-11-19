@@ -4,10 +4,10 @@ func _init():
 	id = "PregnancyTest"
 
 func getVisibleName():
-	return "Pregnancy test"
+	return "Тест на беременность"
 	
 func getDescription():
-	return "Tests if you are pregnant. The package claims that it has 0.01% chance of false-positives."
+	return "Проверяет, беременны ли вы. На упаковке заявлено, что вероятность ложноположительного результата составляет всего 0,01%."
 
 func canUseInCombat():
 	return true
@@ -15,7 +15,7 @@ func canUseInCombat():
 func useInCombat(_attacker, _receiver):
 	removeXOrDestroy(1)
 	
-	var text = "You follow the intruction on how to use the test and then wait for an answer..\n\n"
+	var text = "Вы следуете инструкции по применению теста и замираете в ожидании результата...\n\n"
 	
 	if(_attacker.isPregnant()):
 		text += "The little screen shows [b]two black lines[/b]."

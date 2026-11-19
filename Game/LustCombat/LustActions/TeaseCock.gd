@@ -17,7 +17,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "@@B*@@@@T*@@@@F*@@Ласкать член@@B*@@@@T*@@@@F*@@"
+	return "Ласкать член"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "Tease your cock through the clothing"

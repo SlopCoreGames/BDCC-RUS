@@ -8,7 +8,7 @@ func _init():
 	attackPriority = 10
 	
 func getVisibleName(_context = {}):
-	return "Kick"
+	return "Удар ногой"
 	
 func getVisibleDesc(_context = {}):
 	return "Kick them for "+scaledDmgRangeStr(DamageType.Physical, 10, 15)+" damage.\n\nMay knock the opponent down with a low chance.\n\nGood against armored opponents"

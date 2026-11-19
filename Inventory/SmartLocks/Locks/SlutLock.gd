@@ -8,7 +8,7 @@ func _init():
 	id = SmartLock.SlutLock
 
 func getName():
-	return "SlutLock"
+	return "Шлюхлок"
 
 func getUnlockDescription():
 	var theText = "Unable to struggle off. Little screen shows this:\n"

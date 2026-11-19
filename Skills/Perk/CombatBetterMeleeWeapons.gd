@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Combat
 
 func getVisibleName():
-	return "Blunt Force"
+	return "Тупая сила"
 
 func getVisibleDescription():
 	return "You like using melee weapons to get that extra edge in combat. You do 15% more damage with melee weapons."

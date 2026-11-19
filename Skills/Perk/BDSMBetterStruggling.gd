@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.BDSM
 
 func getVisibleName():
-	return "Damsel of Success"
+	return "Дева Успеха"
 
 func getVisibleDescription():
 	return "You learned how to shake restraints off in the most efficient ways, if you complete the struggling minigame perfectly your struggling is twice as effective"

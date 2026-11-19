@@ -4,10 +4,10 @@ func _init():
 	id = "HypnovisorDisabled"
 
 func getVisibleName():
-	return "Stylish Visor"
+	return "Стильный визор"
 	
 func getDescription():
-	return "Just some fancy goggles"
+	return "Просто модные очки"
 
 func getClothingSlot():
 	return InventorySlot.Eyes

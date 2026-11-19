@@ -4,7 +4,7 @@ func _init():
 	id = "GeometricSkin"
 
 func getName():
-	return "Geometric"
+	return "Геометрический"
 
 func getPatternTexture():
 	return load("res://Player/Player3D/Skins/GeometricSkin/geometricSkin.png")

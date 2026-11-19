@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Breeder
 
 func getVisibleName():
-	return "Champion of Breeding"
+	return "Чемпион размножения"
 
 func getVisibleDescription():
 	return "Your balls hold so much of quality seed, it's scary. Your balls capacity and virility are increased by 25% and 10% respectively per each point in Vitality."

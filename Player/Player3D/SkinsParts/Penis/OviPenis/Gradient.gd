@@ -5,7 +5,7 @@ func _init():
 	partID = "ovipositorpenis"
 
 func getName():
-	return "Gradient"
+	return "Градиент"
 
 func getPatternTexture():
 	return {

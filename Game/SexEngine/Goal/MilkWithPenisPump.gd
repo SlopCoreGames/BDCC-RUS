@@ -4,7 +4,7 @@ func _init():
 	id = SexGoal.MilkWithPenisPump
 
 func getVisibleName():
-	return "Использовать пенис-помпу на @@B*@@"
+	return "Использовать пенис-помпу на"
 
 func isPossible(_sexEngine, _domInfo, _subInfo, _data):
 	if(_domInfo.getChar().hasBoundArms() || _domInfo.getChar().hasBlockedHands()):

@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Fertility
 
 func getVisibleName():
-	return "Pain tolerance"
+	return "Болевой порог"
 
 func getVisibleDescription():
 	return "Life in prison is tough especially if you are constantly being pregnant, all the challenges that you have overcome made you much sturdier. \n" \

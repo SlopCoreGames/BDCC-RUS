@@ -4,10 +4,10 @@ func _init():
 	id = "EnergyDrink"
 
 func getVisibleName():
-	return "Energy drink"
+	return "Энергетик"
 	
 func getDescription():
-	return "A soda can with the 'Space cola' brand. Reduces drowsiness and gives you energy! +100 stamina on use"
+	return "Баночка газировки бренда «Space cola». Уменьшает сонливость и придает сил! +100 к выносливости при использовании"
 
 func getA():
 	return "an"

@@ -5,7 +5,7 @@ func _init():
 	partID = "ponytailhair3"
 
 func getName():
-	return "Dual Sided"
+	return "Двусторонний"
 
 func getPatternTexture():
 	return {

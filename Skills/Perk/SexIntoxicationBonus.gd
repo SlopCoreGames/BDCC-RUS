@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.SexSlave
 
 func getVisibleName():
-	return "Nymphoholic"
+	return "Нимфоманка"
 
 func getVisibleDescription():
 	return "Being drunk and having sex is what you love. Preferably at the same time. You get less negative effects from being intoxicated"

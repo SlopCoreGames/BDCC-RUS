@@ -6,14 +6,14 @@ func _init():
 	id = "KeyholderKeyUnlock"
 
 func getVisibleName():
-	return "Unique Key"
+	return "Уникальный ключ"
 	
 func getDescription():
 	var keyName = "unknown"
 	if(GlobalRegistry.getCharacter(npcID) != null):
 		keyName = GlobalRegistry.getCharacter(npcID).getName()
 	
-	return "A key to your restraints! Taking this will unlock all restraints that were locked by "+str(keyName)
+	return "Ключ от твоих оков! Если взять его, откроются все оковы, запертые с помощью "+str(keyName)
 
 func getPrice():
 	return 0

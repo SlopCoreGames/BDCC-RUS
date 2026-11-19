@@ -4,7 +4,7 @@ func _init():
 	id = "GirlCum"
 
 func getVisibleName():
-	return "Girlcum"
+	return "Девичья сперма"
 
 func getMessyDescription(_pc, _amount):
 	if(_amount >= 500.0):

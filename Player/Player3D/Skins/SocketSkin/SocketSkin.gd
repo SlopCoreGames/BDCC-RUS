@@ -4,7 +4,7 @@ func _init():
 	id = "SocketSkin"
 
 func getName():
-	return "Socket"
+	return "Гнездо"
 
 func getPatternTexture():
 	return load("res://Player/Player3D/Skins/SocketSkin/SocketSkin.png")

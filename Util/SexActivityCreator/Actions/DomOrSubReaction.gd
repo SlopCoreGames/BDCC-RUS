@@ -8,7 +8,7 @@ func _init():
 	id = "domOrSubReaction"
 
 func getName():
-	return "Dom or Sub Reaction"
+	return "Реакция Доминанта или Сабмиссива"
 
 func getVisibleText():
 	return generateCode()

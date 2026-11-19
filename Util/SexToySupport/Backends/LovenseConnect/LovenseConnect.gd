@@ -52,7 +52,7 @@ func getInfo() -> Array:
 func getSettings() -> Dictionary:
 	return {
 		"localHost": {
-			name = "Local Host",
+			name = "Локальный хост",
 			type = "string",
 			value = localHost,
 		},

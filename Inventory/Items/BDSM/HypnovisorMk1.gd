@@ -6,10 +6,10 @@ func _init():
 	id = "HypnovisorMk1"
 
 func getVisibleName():
-	return "Hypnovisor Mk1"
+	return "Гипновизор Мк1"
 	
 func getDescription():
-	return "Special prototype goggles that were developed by Alex Rynard to help cure depression. What the heck is a 'YOT'?"
+	return "Специальные прототипные очки, разработанные Алексом Ринардом для лечения депрессии. И что это еще за чертов «YOT»?"
 
 func getClothingSlot():
 	return InventorySlot.Eyes

@@ -4,10 +4,10 @@ func _init():
 	id = "vaginalplug"
 
 func getVisibleName():
-	return "Vaginal plug"
+	return "Вагинальная пробка"
 	
 func getDescription():
-	return "A classic plug made out of black silicon, this one is of a normal size and also features a vibro-motor inside"
+	return "Классическая пробка из черного силикона; имеет стандартный размер и оснащена встроенным вибромотором"
 
 func getClothingSlot():
 	return InventorySlot.Vagina

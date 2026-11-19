@@ -7,7 +7,7 @@ func _init():
 	aiScoreMultiplier = 1.5
 	
 func getVisibleName(_context = {}):
-	return "Pistol Shot"
+	return "Выстрел из пистолета"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -24,7 +24,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkDodged(_attacker, _receiver, DamageType.Physical)):
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "{attacker.name}’s fires {attacker.his} gun. The bullet tears into you with terrifying accuracy, leaving a gaping hole in its way."
+	var text = "{attacker.name} стреляет из {attacker.his}. Пуля с ужасающей точностью вгрызается в тебя, оставляя на своем пути зияющую дыру."
 	if(RNG.chance(50) && _receiver.addEffect(StatusEffect.Bleeding)):
 		text += " [b]You begin bleeding![/b]"
 	
@@ -40,7 +40,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	var text = "{attacker.name}’s aims {attacker.his} gun at you, about to fire!"
+	var text = "{attacker.name} целится в тебя из {attacker.his}, готовясь к выстрелу!"
 
 	return text
 

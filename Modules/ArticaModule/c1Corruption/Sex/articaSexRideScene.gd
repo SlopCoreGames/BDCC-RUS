@@ -26,10 +26,10 @@ func _run():
 		isLusty = getModule("ArticaModule").isLusty()
 		nakedAndShy = (isNaked && !isSlut)
 		if (isNaked):
-			saynn("Вид @@B*@@Artica's@@F*@@ "+str("desperate caged up drippy cock" if isCaged else "hard drippy canine cock")+".. так и манит сделать с ней что-нибудь!")
+			saynn("Вид "+str("desperate caged up drippy cock" if isCaged else "hard drippy canine cock")+" Артики.. так и манит сделать с ней что-нибудь!")
 
 		else:
-			saynn("Вид @@B*@@Artica's@@F*@@ "+str("desperate caged up cock leaving wet spots on her shorts" if isCaged else "hard canine cock bulging out her shorts")+".. так и манит сделать с ней что-нибудь!")
+			saynn("Вид "+str("desperate caged up cock leaving wet spots on her shorts" if isCaged else "hard canine cock bulging out her shorts")+" Артики.. так и манит сделать с ней что-нибудь!")
 
 		saynn("Ты прикусываешь губу, молча пялясь на эту белоснежную пушистку, которая не может унять дрожь в теле от нахлынувшей похоти. Ваши взгляды встречаются...")
 

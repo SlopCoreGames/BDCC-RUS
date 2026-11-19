@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Fertility
 
 func getVisibleName():
-	return "Better ovulation"
+	return "Улучшенная овуляция"
 
 func getVisibleDescription():
 	return "Your body is adapting to produce more offspring. Amount of the egg cells you release during each ovulation phase is increased."

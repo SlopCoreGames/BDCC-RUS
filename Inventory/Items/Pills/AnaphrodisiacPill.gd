@@ -4,10 +4,10 @@ func _init():
 	id = "AnaphrodisiacPill"
 
 func getVisibleName():
-	return "Anaphrodisiac Pill"
+	return "Анафродизиак"
 	
 func getDescription():
-	return "Kills your libido. Removes any lust you might have."
+	return "Убивает либидо. Снимает любое сексуальное желание."
 
 func canUseInCombat():
 	return true
@@ -84,7 +84,7 @@ func useInSex(_receiver):
 	_receiver.addEffect(StatusEffect.SexAnaphrodisiacDrug)
 	_receiver.removeEffect(StatusEffect.SexHeatDrug)
 	return {
-		text = "{USER.You} {USER.youVerb('feel')} like {USER.youHe} lost passion for sex.".replace("USER", _receiver.getID()),
+		text = "{USER.You} {USER.youVerb('feel')} словно {USER.youHe} потерявший страсть к сексу.".replace("USER", _receiver.getID()),
 	}
 
 func getItemCategory():

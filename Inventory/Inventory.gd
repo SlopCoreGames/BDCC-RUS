@@ -7,7 +7,7 @@ var equippedItems:Dictionary = {}
 signal equipped_items_changed
 
 func _ready():
-	name = "Inventory"
+	name = "Инвентарь"
 
 func addItem(item: Reference):
 	if(item.currentInventory != null):

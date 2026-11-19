@@ -4,7 +4,7 @@ func _init():
 	id = Species.Dragon
 	
 func getVisibleName():
-	return "Dragon"
+	return "Драконий"
 
 func getDefaultLegs(_gender):
 	return "digilegs"

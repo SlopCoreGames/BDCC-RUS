@@ -5,7 +5,7 @@ var id : String = "errorslot"
 var allowUndressInSexEngine:bool = true
 
 func getVisibleName() -> String:
-	return "Bad Slot"
+	return "Плохой слот"
 
 func invCanEquipSlot(_char) -> bool:
 	return true

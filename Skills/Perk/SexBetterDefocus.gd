@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.SexSlave
 
 func getVisibleName():
-	return "Meditation"
+	return "Медитация"
 
 func getVisibleDescription():
 	return "Having so much experience you now know how to better distance yourself from enemy's [color="+DamageType.getColorString(DamageType.Lust)+"]lust[/color] attacks, defocussing will now half the amount of lust you receive"

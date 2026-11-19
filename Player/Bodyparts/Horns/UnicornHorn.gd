@@ -1,7 +1,7 @@
 extends BodypartHorns
 
 func _init():
-	visibleName = "unicorn horn"
+	visibleName = "единорожий рог"
 	id = "unicornhorn"
 
 func getCompatibleSpecies():

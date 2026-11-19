@@ -6,7 +6,7 @@ func _init():
 	dungeonWeight = 0.0
 
 func getVisibleName():
-	return "Maternal Intuition"
+	return "Материнская интуиция"
 
 func getVisibleDescription():
 	return "You got so experienced at being pregnant that you can now roughly guess how many cubs/kids are inside any pregnant belly just from its size and the frequency of baby kicks..  (Stacks with the Insight of You perk)"

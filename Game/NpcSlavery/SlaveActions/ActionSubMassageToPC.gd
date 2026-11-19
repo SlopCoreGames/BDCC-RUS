@@ -16,7 +16,7 @@ func _init():
 	buttonPriority = 60
 
 func getVisibleName():
-	return "Получить массаж @@B*@@@@T*@@@@F*@@"
+	return "Получить массаж"
 
 func getVisibleDesc():
 	return "Order your sub to give you a massage"

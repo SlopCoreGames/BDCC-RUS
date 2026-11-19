@@ -7,10 +7,10 @@ func _init():
 # MorphAway
 
 func getVisibleName():
-	return "MorphAway Pill"
+	return "Таблетка «Морфинг вовне»"
 	
 func getDescription():
-	return "A pill that's claiming to be able to [color=#"+Color.cyan.to_html()+"]undo any temporary transformation effects and return your body to its old self.[/color]"
+	return "Таблетка, которая якобы способна [color=#"+Color.cyan.to_html()+"]undo any temporary transformation effects and return your body to its old self.[/color]"
 
 func canUseInCombat():
 	return true
@@ -85,7 +85,7 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 func useInSex(_receiver):
 	_receiver.undoAllTransformations()
 	return {
-		text = "{USER.You} {USER.youVerb('feel')} like {USER.yourHis} old self.".replace("USER", _receiver.getID()),
+		text = "{USER.You} {USER.youVerb('feel')} как {USER.yourHis} прежний.".replace("USER", _receiver.getID()),
 	}
 
 func getItemCategory():

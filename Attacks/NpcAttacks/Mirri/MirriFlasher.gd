@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Flasher"
+	return "Вспышка"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -20,7 +20,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkDodged(_attacker, _receiver, DamageType.Physical)):
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "{attacker.name} shoves {attacker.his} flasher into your face and activates it. Your vision whites out completely, leaving you stumbling and disoriented."
+	var text = "{attacker.name} сует вам в лицо {attacker.his} флашер и включает его. В глазах всё белеет, вы спотыкаетесь, окончательно дезориентированный."
 	if(_receiver.addEffect("BlindnessAdvanced", [2])):
 		text += " [b]You are blind![/b]"
 	
@@ -38,7 +38,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	var text = "{attacker.name}’s pulls out {attacker.his} flasher."
+	var text = "{attacker.name} достает {attacker.his} флашер."
 
 	return text
 

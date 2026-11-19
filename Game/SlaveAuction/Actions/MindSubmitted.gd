@@ -7,7 +7,7 @@ func getActionType():
 	return AuctionActionType.Mind
 
 func getName() -> String:
-	return "Подчинилась @@B*@@"
+	return "Подчинилась"
 
 func getButtonDesc() -> String:
 	return "Tell the bidders about the slave’s complete submission to the master.\n\n[b]Might[/b] reveal 1 personality preference of each bidder."

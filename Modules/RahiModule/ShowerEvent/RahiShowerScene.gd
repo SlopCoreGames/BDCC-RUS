@@ -47,7 +47,7 @@ func _run():
 		if(isSlavery):
 			saynn("[say=pc]А я думала, ты ненавидишь воду.[/say]")
 			
-			saynn("[say=rahi]Душ — это другое... Здесь можно не утонуть...[say=rahi]")
+			saynn("[say=rahi]Душ — это другое... Здесь можно не утонуть...")
 		else:
 			saynn("[say=rahi]Ой, привет...[/say]")
 

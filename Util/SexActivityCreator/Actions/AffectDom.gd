@@ -9,7 +9,7 @@ func _init():
 	id = "AffectDom"
 
 func getName():
-	return "Affect Dom"
+	return "Влияние на доминанта"
 
 func getVisibleText():
 	return generateCode()

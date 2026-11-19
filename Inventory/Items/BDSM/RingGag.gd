@@ -4,10 +4,10 @@ func _init():
 	id = "ringgag"
 
 func getVisibleName():
-	return "Ring Gag"
+	return "Кольцевой кляп"
 	
 func getDescription():
-	return "Can be used to gag those cheeky brats. This one doesn't prevent oral sex. Kinky."
+	return "Можно использовать, чтобы заткнуть этих наглых соплячек. Этот вариант не мешает оральному сексу. Пикантно."
 
 func getClothingSlot():
 	return InventorySlot.Mouth

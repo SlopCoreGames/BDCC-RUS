@@ -4,10 +4,10 @@ func _init():
 	id = "LabcoatOutfit"
 
 func getVisibleName():
-	return "Labcoat"
+	return "Лабораторный халат"
 	
 func getDescription():
-	return "A labcoat, a top and a skirt. Try not to exercise too much in this outfit.."
+	return "Халат, топ и юбка. Старайся не слишком активно двигаться в этом наряде..."
 
 func getClothingSlot():
 	return InventorySlot.Body

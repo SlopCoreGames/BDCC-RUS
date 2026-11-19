@@ -4,10 +4,10 @@ func _init():
 	id = "LeatherJacket"
 
 func getVisibleName():
-	return "Leather jacket"
+	return "Кожаная куртка"
 	
 func getDescription():
-	return "A cool leather jacket and some black pants"
+	return "Крутая кожаная куртка и черные штаны"
 
 func getClothingSlot():
 	return InventorySlot.Body

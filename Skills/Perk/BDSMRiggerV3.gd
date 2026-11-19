@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.BDSM
 
 func getVisibleName():
-	return "Professional Rigger"
+	return "Профессиональный риггер"
 
 func getVisibleDescription():
 	return "You're a real pro at making rope bunnies out of people. Even if they never asked for it. Your chances at forcing a restraint onto someone are increased by 30% and you also recover additional 30% of the restraints during fights."

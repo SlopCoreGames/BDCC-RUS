@@ -4,10 +4,10 @@ func _init():
 	id = "ChastityCage"
 
 func getVisibleName():
-	return "Chastity Cage"
+	return "Клетка целомудрия"
 	
 func getDescription():
-	return "Prevents the ability to use your penis."
+	return "Блокирует возможность использовать член."
 
 func getClothingSlot():
 	return InventorySlot.Penis

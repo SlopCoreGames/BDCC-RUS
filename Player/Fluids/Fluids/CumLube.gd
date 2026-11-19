@@ -4,7 +4,7 @@ func _init():
 	id = "CumLube"
 
 func getVisibleName():
-	return "Cum Lube"
+	return "Смазка из спермы"
 
 func getCumOverlayColor():
 	return Color.lightgray

@@ -13,17 +13,17 @@ func doStruggle(_pc, _minigame:MinigameResult):
 	var _canSee = !_pc.isBlindfolded()
 	var _canBite = !_pc.isBitingBlocked()
 	
-	var text = "error?"
+	var text = "ошибка?"
 	var lust = 0
 	var pain = 0
 	var damage = 0
 	var stamina = 0
 	
 	if(failChanceLowScore(_pc, 15, _minigame)):
-		text = "{user.name} struggles to slip {user.his} hands out of the bondage mittens, but {user.his} frantic attempts only make the mittens [b]tighten around {user.his} palms more[/b], rendering {user.his} fingers completely useless."
+		text = "{user.name} изо всех сил пытается высунуть {user.his} руки из БДСМ-варежек, но {user.his} лихорадочные попытки лишь заставляют варежки [b]еще сильнее сжиматься вокруг {user.his} ладоней[/b], делая {user.his} пальцы совершенно бесполезными."
 		damage = -0.5
 	elif(_legsFree):
-		text = "{user.name} steps on the mittens and tries to pull {user.his} arms out of them."
+		text = "{user.name} наступает на варежки и пытается вытянуть из них {user.his} руки."
 		damage = calcDamage(_pc, _minigame)
 		stamina = 10
 		
@@ -31,7 +31,7 @@ func doStruggle(_pc, _minigame:MinigameResult):
 			text += " Ow, {user.name} accidentally steps on {user.his} finger."
 			pain = scaleDamage(5)
 	elif(_canBite && _armsFree):
-		text = "{user.name} bites on one of the mittens and tries to free {user.his} arm. Not very effective but better than nothing."
+		text = "{user.name} вгрызается в одну из варежек, пытаясь освободить {user.his} руку. Не самый эффективный метод, но лучше, чем ничего."
 		damage = calcDamage(_pc, _minigame, 0.6)
 		stamina = 10
 
@@ -39,7 +39,7 @@ func doStruggle(_pc, _minigame:MinigameResult):
 			text += " Ow, {user.name} accidentally bit {user.his} hand."
 			pain = scaleDamage(5)
 	else:
-		text = "{user.name} tries to helplessly wiggle the mittens off."
+		text = "{user.name} беспомощно пытается стряхнуть варежки, дрыгая ими."
 		damage = calcDamage(_pc, _minigame, 0.4)
 		stamina = RNG.randi_range(10, 20)
 		

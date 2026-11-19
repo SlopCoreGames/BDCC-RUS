@@ -12,7 +12,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "@@B*@@Качать бедрами@@T*@@@@F*@@"
+	return "Качать бедрами"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "Do a little lewd dance and show off your curves"

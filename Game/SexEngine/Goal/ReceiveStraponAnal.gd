@@ -4,7 +4,7 @@ func _init():
 	id = SexGoal.ReceiveStraponAnal
 
 func getVisibleName():
-	return "Скакать на страпоне (Анально) @@B*@@ @@T*@@ @@F*@@"
+	return "Скакать на страпоне (Анально)"
 
 func isPossible(_sexEngine, _domInfo, _subInfo, _data):
 	if(_domInfo.getChar().hasBoundArms() || _domInfo.getChar().hasBlockedHands()):

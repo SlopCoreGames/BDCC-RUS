@@ -4,10 +4,10 @@ func _init():
 	id = "BirthControlPill"
 
 func getVisibleName():
-	return "Birth Control Pill"
+	return "Противозачаточные таблетки"
 	
 func getDescription():
-	return "Alters the hormone balance of your body, significantly reducing pregnancy chance. Take one every 24 hours for the best effect."
+	return "Изменяет гормональный баланс вашего тела, значительно снижая вероятность беременности. Для достижения наилучшего эффекта принимайте по одной таблетке каждые 24 часа."
 
 func canUseInCombat():
 	return true

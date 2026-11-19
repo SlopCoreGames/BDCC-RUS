@@ -4,10 +4,10 @@ func _init():
 	id = "TFAcceleratePill"
 
 func getVisibleName():
-	return "QuickShift Pill"
+	return "Таблетка «Быстрая смена»"
 	
 func getDescription():
-	return "A pill that's claiming to be able to [color=#"+Color.cyan.to_html()+"]accelerate the progression of any transformation.[/color]"
+	return "Таблетка, которая якобы способна [color=#"+Color.cyan.to_html()+"]accelerate the progression of any transformation.[/color]"
 
 func canUseInCombat():
 	return true
@@ -84,7 +84,7 @@ func useInSex(_receiver):
 	_receiver.addTimedBuffs(getTimedBuffs(), getBuffsDurationSeconds())
 	
 	return {
-		text = "{USER.You} {USER.youVerb('feel')} like something inside {USER.youHim} is changing fast..".replace("USER", _receiver.getID()),
+		text = "{USER.You} {USER.youVerb('feel')} как будто что-то внутри {USER.youHim} меняется очень быстро..".replace("USER", _receiver.getID()),
 	}
 
 func getItemCategory():

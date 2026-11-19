@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.BDSM
 
 func getVisibleName():
-	return "Gear Collector"
+	return "Коллекционер снаряжения"
 
 func getVisibleDescription():
 	return "You learned how to struggle out of restraints without breaking them, you can now store them for later use"

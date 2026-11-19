@@ -6,7 +6,7 @@ func _init():
 	dungeonWeight = 0.0
 
 func getVisibleName():
-	return "Cum Whore Streak"
+	return "Серия куннилингусных забегов"
 
 func getVisibleDescription():
 	return "Let people cum inside you to start a streak! Each new unique partner extends that streak. The higher your streak, the stronger you become. But your streak ends if nobody new has came inside you in 6 hours."

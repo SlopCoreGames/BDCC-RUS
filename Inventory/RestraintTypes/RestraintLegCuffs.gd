@@ -15,21 +15,21 @@ func doStruggle(_pc, _minigame:MinigameResult):
 	var _canSee = !_pc.isBlindfolded()
 	var _canBite = !_pc.isBitingBlocked()
 	
-	var text = "error?"
+	var text = "ошибка?"
 	var lust = 0
 	var pain = 0
 	var damage = 0
 	var stamina = 0
 	
 	if(failChanceLowScore(_pc, 15, _minigame)):
-		text = "{user.name} kicks and twists {user.his} legs, attempting to free {user.his} ankles from the cuffs. The more {user.he} struggles, the [b]tighter the cuffs clamp down[/b]."
+		text = "{user.name} пинает и крутит {user.his} ногами, пытаясь освободить {user.his} лодыжки из кандалов. Чем сильнее {user.he} извивается, тем [b]туже затягиваются кандалы[/b]."
 		damage = -0.5
 	elif(_handsFree && _armsFree):
-		text = "{user.name} uses {user.his} hands to try and take off the leg cuffs."
+		text = "{user.name} использует {user.his} руки, пытаясь снять ножные кандалы."
 		damage = calcDamage(_pc, _minigame)
 		stamina = 10
 	else:
-		text = "{user.name} rolls around and tries to helplessly wiggle {user.his} leg cuffs off."
+		text = "{user.name} катается по полу, беспомощно пытаясь стряхнуть {user.his} ножные кандалы."
 		damage = calcDamage(_pc, _minigame, 0.5)
 		stamina = 10
 		

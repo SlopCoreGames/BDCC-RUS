@@ -5,7 +5,7 @@ func _init():
 	partID = "canineears"
 
 func getName():
-	return "Industrial"
+	return "Индустриальный"
 
 func getPatternTexture():
 	return {

@@ -24,7 +24,7 @@ func _init():
 	generateFluids()
 
 func getVisibleName():
-	return "Bad item"
+	return "Плохой предмет"
 
 func getCasualName():
 	if(itemState == null):
@@ -82,7 +82,7 @@ func getAStackNameCapitalize():
 		return (getA().capitalize() + " " + getVisibleName()).trim_prefix(" ")
 
 func getDescription():
-	return "No description provided, please let the developer know"
+	return "Описание отсутствует, пожалуйста, сообщите разработчику"
 	
 func getVisisbleDescription():
 	var text = getDescription()
@@ -635,7 +635,7 @@ func getItemWeightForNpcGeneration():
 
 func useInSex(_receiver):
 	return {
-		text = "something something",
+		text = "что-то там",
 	}
 
 func getItemCategory():
@@ -725,7 +725,7 @@ func getDatapackEditVars():
 	var result = {}
 	if(canDye()):
 		result["clothesColor"] = {
-			name = "Color",
+			name = "Цвет",
 			type = "color",
 			value = clothesColor,
 		}
@@ -794,7 +794,7 @@ func doDisplaceActionFinal(_id:String, _action:Array, _context:Dictionary) -> Di
 #		else:
 		itemState.remove()
 		return {
-			text = "{<ACTOR>.You} {<ACTOR>.youVerb('take')} off {<TARGET>.yourHis} "+str(getCasualName())+".",
+			text = "{<ACTOR>.You} {<ACTOR>.youVerb('take')} от {<TARGET>.yourHis} "+str(getCasualName())+".",
 		}
 	if(_id == "def_openShirt"):
 		itemState.openShirt()

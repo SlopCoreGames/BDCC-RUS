@@ -6,7 +6,7 @@ func _init():
 	id = "code"
 
 func getName():
-	return "Code"
+	return "Код"
 
 func getVisibleText():
 	return storedCode

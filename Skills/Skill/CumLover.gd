@@ -4,7 +4,7 @@ func _init():
 	id = Skill.CumLover
 
 func getVisibleName():
-	return "Cum Lover"
+	return "Любитель спермы"
 
 func getVisibleDescription():
 	return "Shows how much you like receiving creampies"

@@ -7,7 +7,7 @@ func _init():
 	aiScoreMultiplier = 1.5
 	
 func getVisibleName(_context = {}):
-	return "Rebel pin"
+	return "Булавка повстанца"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -19,7 +19,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkDodged(_attacker, _receiver, DamageType.Physical)):
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "{attacker.name} manages to pin {receiver.name} to the floor with {attacker.his} powerful thighs before landing a few powerful hits!"
+	var text = "{attacker.name} умудряется прижать {receiver.name} к полу своими {attacker.his} мощными бедрами, а затем наносит несколько сокрушительных ударов!"
 	text += "\n\n"
 	text += RNG.pick([
 		"[say=attacker]Pathetic.[/say]",

@@ -21,7 +21,7 @@ func _run():
 		isVerySlut = getModule("ArticaModule").isVerySlut()
 		isLusty = getModule("ArticaModule").isLusty()
 		nakedAndShy = (isNaked && !isSlut)
-		saynn("Артика так напряжена, что её лапы всё время @@B*@@"+str(" sliding under her uniform and boldly rubbing herself in various places, her shorts bulging as she does it" if !isNaked else " sliding along her curves and rubbing herself in various places, her cock twitching slightly as she does it")+". Ей точно не помешает разрядка... да и тебе тоже, на самом деле.")
+		saynn("Артика так напряжена, что её лапы всё время"+str(" sliding under her uniform and boldly rubbing herself in various places, her shorts bulging as she does it" if !isNaked else " sliding along her curves and rubbing herself in various places, her cock twitching slightly as she does it")+". Ей точно не помешает разрядка... да и тебе тоже, на самом деле.")
 
 		saynn("[say=pc]Давай расслабимся, Артика.[/say]")
 

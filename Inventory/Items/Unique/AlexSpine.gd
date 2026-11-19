@@ -4,10 +4,10 @@ func _init():
 	id = "AlexSpine"
 
 func getVisibleName():
-	return "Exospine"
+	return "Экзопозвоночник"
 	
 func getDescription():
-	return "Spine prosthetic that plugs directly into your nervous system"
+	return "Протез позвоночника, подключающийся напрямую к вашей нервной системе"
 
 func getClothingSlot():
 	return InventorySlot.Unique

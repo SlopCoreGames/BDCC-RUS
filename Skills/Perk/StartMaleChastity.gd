@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Start
 
 func getVisibleName():
-	return "Male Chastity"
+	return "Мужская целомудренность"
 
 func getVisibleDescription():
 	return "A [b]permanent[/b] chastity cage will be forced upon you during the intake process. Only applies if you have a penis."

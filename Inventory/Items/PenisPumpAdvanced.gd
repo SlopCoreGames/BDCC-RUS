@@ -4,10 +4,10 @@ func _init():
 	id = "PenisPumpAdvanced"
 
 func getVisibleName():
-	return "Penis Pump Mk2"
+	return "Насос для пениса Mk2"
 	
 func getDescription():
-	return "A tool that can extract seed. Fast. Automatically milks you every 30 minutes if worn."
+	return "Инструмент для быстрого извлечения семени. Если носить его постоянно, он будет автоматически доить тебя каждые 30 минут."
 
 func getBuffs():
 	return [

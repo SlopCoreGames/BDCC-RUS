@@ -4,10 +4,10 @@ func _init():
 	id = "buttplug"
 
 func getVisibleName():
-	return "Buttplug"
+	return "Анальная пробка"
 	
 func getDescription():
-	return "A classic plug made out of black silicon, this one is of a normal size"
+	return "Классическая пробка из черного силикона, стандартного размера"
 
 func getClothingSlot():
 	return InventorySlot.Anal

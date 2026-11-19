@@ -6,7 +6,7 @@ func _init():
 	id = "LatexEgg"
 
 func getVisibleName():
-	return "Latex Egg"
+	return "Латексное яйцо"
 	
 func getDescription():
 	var byWho = ""
@@ -19,7 +19,7 @@ func getDescription():
 		else:
 			byWho = "\n\nThis egg was laid by "+str(theChar.getName())
 	
-	return "Some weird egg. It probably doesn't have any uses."+byWho
+	return "Какое-то странное яйцо. Наверняка от него никакого толку."+byWho
 
 func canUseInCombat():
 	return false

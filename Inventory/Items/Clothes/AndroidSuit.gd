@@ -4,10 +4,10 @@ func _init():
 	id = "AndroidSuit"
 
 func getVisibleName():
-	return "Android suit"
+	return "Андроидный костюм"
 	
 func getDescription():
-	return "A cool sci-fi suit that you totally not supposed to have as a player"
+	return "Крутой научно-фантастический костюм, который игроку вроде как вообще не положено иметь"
 
 func getClothingSlot():
 	return InventorySlot.Body

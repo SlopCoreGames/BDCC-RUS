@@ -5,10 +5,10 @@ func _init():
 	id = "restraintkey"
 
 func getVisibleName():
-	return "Restraint key"
+	return "Ключ от пут"
 	
 func getDescription():
-	return "An universal one-time use key that can unlock any piece of bondage gear. You feel like you should keep some of these just in case."
+	return "Универсальный одноразовый ключ, способный открыть любой элемент БДСМ-снаряжения. Кажется, стоит приберечь парочку на всякий случай."
 
 func getPrice():
 	return 15

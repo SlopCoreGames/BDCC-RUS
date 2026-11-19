@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.CumLover
 
 func getVisibleName():
-	return "Fluid Experimenter"
+	return "Экспериментатор с жидкостями"
 
 func getVisibleDescription():
 	return "Why stop at just eating cum, they are so many other flavors to try. Having different fluids in your belly will provide you with different (or better) buffs."

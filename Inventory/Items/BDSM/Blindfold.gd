@@ -4,10 +4,10 @@ func _init():
 	id = "blindfold"
 
 func getVisibleName():
-	return "Blindfold"
+	return "Повязка на глазах"
 	
 func getDescription():
-	return "A simple piece of cloth"
+	return "Простой лоскут ткани"
 
 func getClothingSlot():
 	return InventorySlot.Eyes

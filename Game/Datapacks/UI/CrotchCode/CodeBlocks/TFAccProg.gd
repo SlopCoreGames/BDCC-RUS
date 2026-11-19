@@ -36,7 +36,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Ускорить @@T*@@",
+			text = "Ускорить",
 		},
 		{
 			type = "slot",

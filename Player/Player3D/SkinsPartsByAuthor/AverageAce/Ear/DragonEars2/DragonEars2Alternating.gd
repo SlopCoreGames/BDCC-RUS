@@ -5,7 +5,7 @@ func _init():
 	partID = "dragonears2"
 
 func getName():
-	return "Alternating"
+	return "Чередующиеся"
 
 func getPatternTexture():
 	return {

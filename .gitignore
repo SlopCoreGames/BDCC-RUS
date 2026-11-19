@@ -18,3 +18,6 @@ logs/
 # Substance painter files
 *.spp
 *.assbin
+
+# Release builds
+build/

@@ -18,10 +18,10 @@ func getVisibleName():
 		if(GM.main && penisID != "pc"): # HAAAAAAAAAACK
 			GM.main.updateCharacterUntilNow(penisID)
 		return theChar.getName()+"'s penis"
-	return "Strapon (advanced)"
+	return "Страпон (продвинутый)"
 	
 func getDescription():
-	var text:String = "Has a portal ring on its front that can project any cock available in the bluespace! Projects a solid hologram dildo by default.\n\nDon't ask about how the 'Transfer fluids' feature works, this strapon defies any logic."
+	var text:String = "Спереди оснащен портальным кольцом, способным проецировать любой член из блюспейса! По умолчанию проецирует твердый голографический дилдо.\n\nИ не спрашивай, как работает функция «Перенос жидкостей» — этот страпон плевать хотел на законы логики."
 
 	return text
 

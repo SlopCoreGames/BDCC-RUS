@@ -1,7 +1,7 @@
 extends BodypartPenis
 
 func _init():
-	visibleName = "human penis"
+	visibleName = "человеческий пенис"
 	id = "humanpenis"
 	pickedRColor = null
 	pickedGColor = null

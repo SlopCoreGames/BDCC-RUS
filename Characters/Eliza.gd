@@ -99,7 +99,7 @@ func getSpecies():
 	return ["feline"]
 
 func getFightIntro(_battleName):
-	var text = "Eliza makes her hair into a careful ponytail and opens her lab coat, displaying a rich set of syringes, injectors, pill bottles and drug vials on her belt."
+	var text = "Элиза аккуратно собирает волосы в хвост и расстегивает лабораторный халат, демонстрируя на поясе целый арсенал шприцев, инъекторов, баночек с таблетками и флаконов с препаратами."
 	text += "\n\n"
 	text += "[say=eliza]"+RNG.pick([
 		"I’m doctor Quinn. But you can call me Queen.",

@@ -4,10 +4,10 @@ func _init():
 	id = "basketmuzzle"
 
 func getVisibleName():
-	return "Basket muzzle"
+	return "Корзина-намордник"
 	
 func getDescription():
-	return "Best way to prevent your dog from unwanted chewing, oral sex, and biting. Your pet will thank you."
+	return "Лучший способ уберечь вашу собачку от нежелательного жевания, орального секса и укусов. Ваш питомец будет вам благодарен."
 
 func getClothingSlot():
 	return InventorySlot.Mouth

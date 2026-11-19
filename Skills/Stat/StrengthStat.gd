@@ -4,7 +4,7 @@ func _init():
 	id = Stat.Strength
 
 func getVisibleName():
-	return "Strength"
+	return "Сила"
 
 func getVisibleDescription():
 	return "Your physical attacks cause more pain"

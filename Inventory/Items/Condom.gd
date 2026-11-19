@@ -5,10 +5,10 @@ func _init():
 	id = "Condom"
 
 func getVisibleName():
-	return "Condom"
+	return "Презерватив"
 	
 func getDescription():
-	return "Gets sold as a pack of 10! Good against unwanted pregnancies, most of the time.\n\nSmall text on the package says that every tenth one is replaced with a balloon for all your entertaiment needs."
+	return "Продаются упаковкой по 10 штук! Отлично помогают избежать нежелательной беременности... в большинстве случаев.\n\nМелким шрифтом на упаковке указано, что каждый десятый презерватив заменен на воздушный шарик — для всех ваших развлекательных нужд."
 
 func getPrice():
 	return 1

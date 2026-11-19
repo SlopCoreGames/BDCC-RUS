@@ -5,7 +5,7 @@ func _init():
 	partID = "sockethair"
 
 func getName():
-	return "Overlap"
+	return "Перекрытие"
 
 func getPatternTexture():
 	return {

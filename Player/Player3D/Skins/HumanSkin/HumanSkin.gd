@@ -4,7 +4,7 @@ func _init():
 	id = "HumanSkin"
 
 func getName():
-	return "Human Skin"
+	return "Человеческая кожа"
 
 func getPatternTexture():
 	return load("res://Player/Player3D/Skins/HumanSkin/HumanSkin.png")

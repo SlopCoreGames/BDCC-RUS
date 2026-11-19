@@ -4,7 +4,7 @@ func _init():
 	id = "BlackGoo"
 
 func getVisibleName():
-	return "Black Goo"
+	return "Черная жижа"
 
 func getCost(_amount) -> int:
 	return int(_amount / 100.0) * 3

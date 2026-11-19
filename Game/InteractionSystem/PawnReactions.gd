@@ -111,7 +111,7 @@ static func doReact(_pawnTarget, _pawnReacts):
 			sayModular(_pawnReacts, _pawnTarget, "ReactON_A_LEASH")
 		
 		if(pickedReact == GETTING_FUCKED):
-			saynn(_npc.getName()+"@@B*@@ проходит мимо и видит, как тебя трахают.")
+			saynn(_npc.getName()+" проходит мимо и видит, как тебя трахают.")
 			sayModular(_pawnReacts, _pawnTarget, "ReactGETTING_FUCKED")
 		
 	return true

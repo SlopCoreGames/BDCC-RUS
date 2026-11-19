@@ -6,7 +6,7 @@ var id = "base"
 var restraintDataRef:WeakRef
 
 func getName():
-	return "Base lock"
+	return "Базовый замок"
 
 func getUnlockDescription():
 	return "You shouldn't see this"

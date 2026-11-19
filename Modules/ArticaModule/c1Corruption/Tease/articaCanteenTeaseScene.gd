@@ -248,7 +248,7 @@ func _run():
 
 				saynn("Ты замечаешь "+str("her shorts getting tight.." if !isNaked else "her cock leaving her sheath..")+" значит, это её возбуждает.")
 
-				saynn("Когда она закончит боготворить этот {pc.foot}.. ты опускаешь его и поднимаешь другой, чтобы она сделала массаж. И она принимается за дело, глядя на тебя с нескрываемой похотью, пока увлеченно разминает твой новый {pc.foot}.."+str(" there is a visible wet spot on her shorts where her crotch is.." if !isNaked else " Her member is fully hard and dripping by now..")+"")
+				saynn("Когда она закончит боготворить этот {pc.foot}.. ты опускаешь его и поднимаешь другой, чтобы она сделала массаж. И она принимается за дело, глядя на тебя с нескрываемой похотью, пока делает ещё один массаж.."+str(" there is a visible wet spot on her shorts where her crotch is.." if !isNaked else " Her member is fully hard and dripping by now..")+"")
 
 				saynn("[say=pc]Хорошо.. На время хватит. Не хочу, чтобы ты слишком раззадорилась.[/say]")
 

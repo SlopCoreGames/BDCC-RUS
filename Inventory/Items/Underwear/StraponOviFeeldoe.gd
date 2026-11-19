@@ -5,10 +5,10 @@ func _init():
 	clothesColor = Color("#61C71B")
 
 func getVisibleName():
-	return "Ovipositor (feeldoe)"
+	return "Овипозитор (филду)"
 	
 func getDescription():
-	var text:String = "A double-sided ovipositor strapon. Doesn't have egg storage but it can automatically use eggs from your holes. Also brings pleasure to the wearer during sex"
+	var text:String = "Двусторонний овипозитор-страпон. У него нет хранилища для яиц, но он может автоматически использовать яйца из ваших отверстий. Также приносит удовольствие носившей его женщине во время секса"
 
 	return text
 

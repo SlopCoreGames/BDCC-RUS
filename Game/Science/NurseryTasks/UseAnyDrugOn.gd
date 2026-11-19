@@ -6,7 +6,7 @@ func _init():
 	id = "UseAnyDrugOn"
 
 func getName() -> String:
-	return "Использовать любой наркотик на @@B*@@"+getCharName(charID)
+	return "Использовать любой наркотик на "+getCharName(charID)
 
 func getDescription() -> String:
 	return getCharDescription(charID)

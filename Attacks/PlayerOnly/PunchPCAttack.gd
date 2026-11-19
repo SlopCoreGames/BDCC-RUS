@@ -14,8 +14,8 @@ func canScratch(_pc) -> bool:
 
 func getVisibleName(_context = {}):
 	if(GM.pc != null && is_instance_valid(GM.pc) && canScratch(GM.pc)):
-		return "Scratch"
-	return "Punch"
+		return "Царапанье"
+	return "Удар"
 	
 func getVisibleDesc(_context = {}):
 	return "You do a combo of 2 punches, each one dealing "+scaledDmgRangeStr(DamageType.Physical, 5, 10)+" damage"

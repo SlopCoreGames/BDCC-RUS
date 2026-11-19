@@ -4,10 +4,10 @@ func _init():
 	id = "GasMask"
 
 func getVisibleName():
-	return "Gas mask"
+	return "Противогаз"
 	
 func getDescription():
-	return "A mask that can filter air"
+	return "Маска, способная фильтровать воздух"
 
 func getClothingSlot():
 	return InventorySlot.Eyes

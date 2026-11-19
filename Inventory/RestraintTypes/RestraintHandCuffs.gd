@@ -14,18 +14,18 @@ func doStruggle(_pc, _minigame:MinigameResult):
 	var _canSee = !_pc.isBlindfolded()
 	var _canBite = !_pc.isBitingBlocked()
 	
-	var text = "error?"
+	var text = "ошибка?"
 	var lust = 0
 	var pain = 0
 	var damage = 0
 	var stamina = 0
 	
 	if(failChanceLowScore(_pc, 15, _minigame)):
-		text = "{user.name} pulls and yanks at the handcuffs, but {user.his} attempts only make the metal [b]bite into {user.his} wrists more[/b], the cuffs clicking tighter with each futile effort to escape."
+		text = "{user.name} тянет и дергает наручники, но {user.his} лишь заставляет металл [b]впиваться в {user.his} запястья сильнее[/b]; с каждой тщетной попыткой сбежать кандалы защелкиваются всё туже."
 		damage = -0.5
 		pain = scaleDamage(5)
 	elif(_handsFree && _canBite):
-		text = "{user.name} uses {user.his} hands and mouth to try and take off the handcuffs without unlocking them."
+		text = "{user.name} использует {user.his} руки и рот, пытаясь снять наручники, не отпирая замок."
 		damage = calcDamage(_pc, _minigame)
 		stamina = 10
 		
@@ -33,11 +33,11 @@ func doStruggle(_pc, _minigame:MinigameResult):
 			text += " {user.name} finds {user.himself} drooling a lot."
 			lust = scaleDamage(5)
 	elif(_handsFree):
-		text = "{user.name} can't use {user.his} mouth but {user.he} can just about reach the handcuffs with {user.his} hands. {user.name} is tugging on the restraint, trying to slip it off."
+		text = "{user.name} не может использовать {user.his} рот, но {user.he} едва достает до наручников {user.his} руками. {user.name} тянет за стяжку, пытаясь соскользнуть из неё."
 		damage = calcDamage(_pc, _minigame, 0.8)
 		stamina = 10
 	elif(_canBite):
-		text = "{user.name} is trying to wiggle the handcuffs off. Not being able to use hands really sucks but using {user.his} mouth instead helps {user.him} to keep them still."
+		text = "{user.name} пытается вывертеться из наручников. Невозможность использовать руки — полный отстой, но использование {user.his} рта помогает {user.him} удерживать их на месте."
 		damage = calcDamage(_pc, _minigame, 0.7)
 		stamina = 10
 		
@@ -45,7 +45,7 @@ func doStruggle(_pc, _minigame:MinigameResult):
 			text += " {user.name} finds {user.himself} drooling a lot."
 			lust = scaleDamage(5)
 	else:
-		text = "{user.name} tries to helplessly wiggle the handcuffs off."
+		text = "{user.name} беспомощно пытается вывертеться из наручников."
 		damage = calcDamage(_pc, _minigame, 0.5)
 		stamina = RNG.randi_range(10, 20)
 		

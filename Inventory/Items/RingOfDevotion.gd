@@ -4,10 +4,10 @@ func _init():
 	id = "RingOfDevotion"
 
 func getVisibleName():
-	return "Ring of Devotion"
+	return "Кольцо преданности"
 	
 func getDescription():
-	return "A simple metal ring. Has a little inscription on it that says “A key to my heart. Forever pure.”\n\n\"[i]Accept this gift as a little token of my appreciation. I hope it will be a good reminder of your choice <3. [/i]\"\n"
+	return "Простое металлическое кольцо. На нем выгравирована короткая надпись: «Ключ к моему сердцу. Навеки чиста».\n\n\"[i]Прими этот дар как скромный знак моей признательности. Надеюсь, он станет приятным напоминанием о твоем выборе <3. [/i]\"\n"
 
 func getClothingSlot():
 	return InventorySlot.Ring

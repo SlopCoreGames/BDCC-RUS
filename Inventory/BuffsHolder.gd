@@ -33,7 +33,7 @@ var customAttributes = {}
 var extraStats = {}
 
 func _ready():
-	name = "Buffs"
+	name = "Баффы"
 
 func setCharacter(newnpc):
 	npc = newnpc

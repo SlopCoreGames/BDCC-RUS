@@ -85,7 +85,7 @@ func getEffectName():
 	return "Body writings"
 
 func getEffectDesc():
-	var text = "Someone wrote these on you"
+	var text = "Кто-то написал это на тебе"
 	for zoneInt in BodyWritingsZone.ALL:
 		var zone:String = str(zoneInt)
 		var writingsNames:Array = []

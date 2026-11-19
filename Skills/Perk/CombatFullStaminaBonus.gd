@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Combat
 
 func getVisibleName():
-	return "Power-trip"
+	return "Жажда власти"
 
 func getVisibleDescription():
 	return "Fuck feeling tired. Having 100 or more stamina means you do 20% more [color="+DamageType.getColorString(DamageType.Physical)+"]Physical damage[/color]."

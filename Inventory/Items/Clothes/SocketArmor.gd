@@ -4,10 +4,10 @@ func _init():
 	id = "SocketArmor"
 
 func getVisibleName():
-	return "Socket's Armor"
+	return "Броня для сокета"
 	
 func getDescription():
-	return "Armor that doesn't really protect you.. weird, huh.."
+	return "Броня, которая особо и не защищает... Странно, да?"
 
 func getClothingSlot():
 	return InventorySlot.Body

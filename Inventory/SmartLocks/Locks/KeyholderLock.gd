@@ -7,7 +7,7 @@ func _init():
 	id = SmartLock.KeyholderLock
 
 func getName():
-	return "Keyholder lock"
+	return "Замок с держателем ключей"
 
 func getUnlockDescription():
 	var keyholderName = "unknown"

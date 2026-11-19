@@ -25,27 +25,27 @@ func doStruggle(_pc, _minigame:MinigameResult):
 	var _canSee = !_pc.isBlindfolded()
 	var _canBite = !_pc.isBitingBlocked()
 	
-	var text = "error?"
+	var text = "ошибка?"
 	var lust = 0
 	var pain = 0
 	var damage = 0
 	var stamina = 0
 	
 	if(failChanceLowScore(_pc, 15, _minigame)):
-		text = "{user.name} clenches, attempting to push the buttplug out. Instead, {user.his} efforts cause it to [b]slide deeper[/b], the plug nestling snugly against {user.his} inner walls."
+		text = "{user.name} сжимается, пытаясь вытолкнуть анальную пробку. Но вместо этого из-за {user.his} усилий она [b]заходит еще глубже[/b], плотно прилегая к внутренним стенкам {user.his}."
 		damage = -0.5
 		lust = scaleDamage(10)
 	elif(_handsFree && _armsFree):
-		text = "Because {user.name}'s hands are free {user.he} {user.verbS('manage')} to just remove the buttplug"
+		text = "Так как руки {user.name} свободны, {user.he} может просто вытащить пробку из {user.verbS('manage')}"
 		damage = 1.0
 		lust = 10
 	elif(_legsFree):
-		text = "{user.name} squirms and wiggles {user.his} rear, trying to push the buttplug out of {user.his} butt"
+		text = "{user.name} ерзает и виляет {user.his} задом, пытаясь вытолкнуть пробку из жопы {user.his}"
 		damage = calcDamage(_pc, _minigame)
 		stamina = 5
 		lust = scaleDamage(5)
 	else:
-		text = "{user.name} desperatelly squirms, trying to make the buttplug fall out. Not being able to spread {user.his} legs makes it very hard"
+		text = "{user.name} отчаянно извивается, пытаясь заставить пробку выпасть. Из-за невозможности раздвинуть {user.his} ноги это дается очень тяжело"
 		damage = calcDamage(_pc, _minigame, 0.5)
 		stamina = 10
 		lust = scaleDamage(5)

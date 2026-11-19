@@ -4,7 +4,7 @@ func _init():
 	id = "TaviSkin"
 
 func getName():
-	return "Weird"
+	return "Странно"
 
 func getPatternTexture():
 	return load("res://Player/Player3D/Skins/TaviSkin/TaviSkin.png")

@@ -4,10 +4,10 @@ func _init():
 	id = "oldcollar"
 
 func getVisibleName():
-	return "Slave collar"
+	return "Рабский ошейник"
 	
 func getDescription():
-	return "Very bulky and extremely uncomfortable collar made out of casted iron. Has a constantly blinking red light. This one seems old and somewhat basic."
+	return "Очень громоздкий и крайне неудобный ошейник из литого железа. На нем постоянно мигает красный огонек. Похоже, это старая и довольно простая модель."
 
 func getClothingSlot():
 	return InventorySlot.Neck

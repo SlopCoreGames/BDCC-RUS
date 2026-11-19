@@ -4,7 +4,7 @@ func _init():
 	id = Species.Equine
 	
 func getVisibleName():
-	return "Equine"
+	return "Конский"
 
 func getDefaultLegs(_gender):
 	return "hoofs"

@@ -5,7 +5,7 @@ func _init():
 	partID = "combedbackhair"
 
 func getName():
-	return "Layered"
+	return "Многослойная"
 
 func getPatternTexture():
 	return {

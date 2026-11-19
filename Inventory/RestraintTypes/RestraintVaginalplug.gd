@@ -27,27 +27,27 @@ func doStruggle(_pc, _minigame:MinigameResult):
 	var _canSee = !_pc.isBlindfolded()
 	var _canBite = !_pc.isBitingBlocked()
 	
-	var text = "error?"
+	var text = "ошибка?"
 	var lust = 0
 	var pain = 0
 	var damage = 0
 	var stamina = 0
 	
 	if(failChanceLowScore(_pc, 30, _minigame)):
-		text = "{user.name} tries to push the plug out of {user.his} pussy but [b]fails spectacularly[/b], making it slide deeper and kiss the womb entrance!"
+		text = "{user.name} пытается вытолкнуть пробку из {user.his} киски, но [b]с треском проваливается[/b], из-за чего пробка заезжает ещё глубже и касается самого входа в матку!"
 		damage = -0.5
 		lust = scaleDamage(20)
 	elif(_handsFree && _armsFree):
-		text = "Because {user.name}'s hands are free {user.he} just {user.verbS('remove')} the plug."
+		text = "Поскольку руки {user.name} свободны, {user.he} просто {user.verbS('remove')} пробку."
 		damage = 1.0
 		lust = scaleDamage(10)
 	elif(_legsFree):
-		text = "{user.name} squirms and wiggles {user.his} rear, trying to push the plug out of {user.his} pussy."
+		text = "{user.name} ерзает и дёргает {user.his} задницей, пытаясь вытолкнуть пробку из {user.his} киски."
 		damage = calcDamage(_pc, _minigame)
 		stamina = 5
 		lust = scaleDamage(5)
 	else:
-		text = "{user.name} desperatelly squirms, trying to push the vaginal plug out. Not being able to spread {user.his} legs makes it very hard."
+		text = "{user.name} отчаянно извивается, пытаясь вытолкнуть вагинальную пробку. Из-за того, что она не может раздвинуть {user.his} ноги, это даётся ей с огромным трудом."
 		damage = calcDamage(_pc, _minigame, 0.5)
 		stamina = 10
 		lust = scaleDamage(5)

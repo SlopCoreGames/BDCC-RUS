@@ -4,10 +4,10 @@ func _init():
 	id = "RishaPiercings"
 
 func getVisibleName():
-	return "Feline piercings"
+	return "Кошачьи пирсинги"
 	
 func getDescription():
-	return "Piercings for your cat!"
+	return "Пирсинг для твоей кошечки!"
 
 func getClothingSlot():
 	return InventorySlot.Unique

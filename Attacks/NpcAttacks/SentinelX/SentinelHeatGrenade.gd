@@ -7,7 +7,7 @@ func _init():
 	aiScoreMultiplier = 0.8
 	
 func getVisibleName(_context = {}):
-	return "Heat grenade"
+	return "Тепловая граната"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -19,7 +19,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkDodged(_attacker, _receiver, DamageType.Lust)):
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "You breathe in the pink mist and feel extremely horny, many dirty thoughts pass through your head. Maybe surrendering isn’t such a bad idea.."
+	var text = "Ты вдыхаешь розовый туман и чувствуешь, как тебя накрывает дикое возбуждение, в голове роятся грязные мысли. Может, сдаться — это не такая уж плохая идея..."
 	text += "\n\n"
 	text += "[say=attacker]"+RNG.pick(["Target is hit.", "Attack successful.", "Intruder is almost ready.", "Lust damage inflicted successfully."])+"[/say]"
 	return {

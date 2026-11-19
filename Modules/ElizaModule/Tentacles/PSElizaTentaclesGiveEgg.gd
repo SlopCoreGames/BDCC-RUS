@@ -8,7 +8,7 @@ func _run():
 		addCharacter("eliza")
 		saynn("[say=pc]Об яйцах..[/say]")
 
-		saynn("[say=eliza]Да, со всей имеющейся у нас ДНК, создание идеального экземпляра обойдется нам в "+str(getModule("ElizaModule").getTentaclesCostStr())+"[/say]кредитов.[/say]")
+		saynn("[say=eliza]Да, со всей имеющейся у нас ДНК, создание идеального экземпляра обойдется нам в "+str(getModule("ElizaModule").getTentaclesCostStr())+".[/say]")
 
 		addButton("Хватит", "Хватит об этом болтать", "endthescene")
 		if (GM.pc.getInventory().hasItemID("PlantEgg")):
@@ -22,7 +22,7 @@ func _run():
 	if(state == "give_egg"):
 		saynn("Вы отдаете Элизе одно из своих яиц растений.")
 
-		saynn("[say=eliza]Идеально. Теперь это должно стоить нам всего "+str(getModule("ElizaModule").getTentaclesCostStr())+"[/say]кредитов.[/say]")
+		saynn("[say=eliza]Идеально. Теперь это должно стоить нам всего "+str(getModule("ElizaModule").getTentaclesCostStr())+".[/say]")
 
 		saynn("Ты киваешь.")
 

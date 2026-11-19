@@ -4,13 +4,13 @@ func _init():
 	id = "JackiChastityPiercings"
 
 func getVisibleName():
-	return "Chastity Piercings"
+	return "Пирсинг целомудрия"
 	
 func getA():
 	return "a"
 	
 func getDescription():
-	return "Piercings that stich the pussy up"
+	return "Пирсинг, сшивающий киску"
 
 func getClothingSlot():
 	return InventorySlot.Vagina

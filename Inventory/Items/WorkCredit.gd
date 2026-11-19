@@ -4,10 +4,10 @@ func _init():
 	id = "WorkCredit"
 
 func getVisibleName():
-	return "Credit"
+	return "Кредит"
 	
 func getDescription():
-	return "A little chip with some credits. A digital currency with no flaws. Some wonder if it's even real."
+	return "Маленький чип с некоторой суммой кредитов. Цифровая валюта без единого изъяна. Некоторые даже задаются вопросом, существует ли она на самом деле."
 
 func canUseInCombat():
 	return true

@@ -18,19 +18,19 @@ func doStruggle(_pc, _minigame:MinigameResult):
 	var _canSee = !_pc.isBlindfolded()
 	var _canBite = !_pc.isBitingBlocked()
 	
-	var text = "error?"
+	var text = "ошибка?"
 	var lust = 0
 	var pain = 0
 	var damage = 0
 	var stamina = 0
 	
 	if(failChanceLowScore(_pc, 10, _minigame)):
-		text = "{user.name} twists and turns desperately, trying to free {user.his} arms from the straitjacket. However, {user.his} struggles only [b]make it tighter[/b], the straps digging into {user.his} skin and immobilizing {user.his} arms even more securely."
+		text = "{user.name} отчаянно извивается, пытаясь высвободить {user.his} руки из смирительной рубашки. Однако {user.his} лишь [b]делает её ещё теснее[/b], ремни впиваются в {user.his} кожу, ещё надежнее обездвиживая {user.his} руки."
 		damage = -0.3
 		stamina = RNG.randi_range(50, 60)
 		pain = scaleDamage(10)
 	else:
-		text = "{user.name} helplessly tries to wiggle the straitjacket off."
+		text = "{user.name} беспомощно пытается выскользнуть из смирительной рубашки."
 		damage = calcDamage(_pc, _minigame)
 		stamina = RNG.randi_range(50, 60)
 	

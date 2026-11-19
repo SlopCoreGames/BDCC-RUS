@@ -16,7 +16,7 @@ signal experienceChanged
 signal skillLevelChanged(skillID)
 
 func _ready():
-	name = "Skills"
+	name = "Навыки"
 
 func setCharacter(newnpc):
 	npc = newnpc

@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Exhibitionism
 
 func getVisibleName():
-	return "Naked'n'proud"
+	return "Голая и гордая"
 
 func getVisibleDescription():
 	return "You no longer feel ashamed when you don't wear any clothes, you are comfortable being naked"

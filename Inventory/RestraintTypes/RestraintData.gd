@@ -159,13 +159,13 @@ func doStruggle(_pc, _minigame:MinigameResult):
 	var _canSee = !_pc.isBlindfolded()
 	var _canBite = !_pc.isBitingBlocked()
 	
-	var text = "error?"
+	var text = "ошибка?"
 	var lust = 0
 	var pain = 0
 	var damage = 0
 	var stamina = 0
 	
-	text = "{user.name} struggles, trying to make the "+getItem().getVisibleName()+" slip off"
+	text = "{user.name} бьется в путах, пытаясь..."+getItem().getVisibleName()+" slip off"
 	damage = calcDamage(_pc, _minigame)
 	stamina = 10
 	

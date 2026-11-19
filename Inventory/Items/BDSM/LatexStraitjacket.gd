@@ -6,12 +6,12 @@ func _init():
 	id = "LatexStraitjacket"
 
 func getVisibleName():
-	return "Latex Straitjacket"
+	return "Латексная смирительная рубашка"
 
 func getDescription():
 	if(chastity):
-		return "A very fashionable straitjacket with included chastity belt and holes for breasts\nChastity belt: [b]Enabled[/b]"
-	return "A very fashionable straitjacket holes for breasts.\nChastity belt: [b]Disabled[/b]"
+		return "Очень модная смирительная рубашка, в комплекте с поясом целомудрия и отверстиями для груди\nПояс целомудрия: [b]Включен[/b]"
+	return "Очень модная смирительная рубашка с отверстиями для груди\nПояс целомудрия: [b]Выключен[/b]"
 
 func getClothingSlot():
 	return InventorySlot.Body
@@ -99,9 +99,9 @@ func useInCombat(_attacker, _receiver):
 	var text:String= ""
 	chastity = !chastity
 	if(chastity):
-		text = "You will now wear a chastity belt together with this straitjacket!"
+		text = "Теперь вы будете носить пояс целомудрия вместе с этой смирительной рубашкой!"
 	else:
-		text = "You will not wear a chastity belt together with this straitjacket."
+		text = "Вы не будете носить пояс целомудрия вместе с этой смирительной рубашкой."
 	
 	if(isWornByWearer()):
 		updateWearerAppearance()

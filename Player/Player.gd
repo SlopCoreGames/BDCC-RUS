@@ -40,7 +40,7 @@ func _init():
 
 func _ready():
 	#GM.pc = self
-	name = "Player"
+	name = "Игрок"
 	menstrualCycle = MenstrualCycle.new()
 	menstrualCycle.setCharacter(self)
 	menstrualCycle.start()

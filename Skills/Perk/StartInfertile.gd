@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Start
 
 func getVisibleName():
-	return "Infertile"
+	return "Бесплодие"
 
 func getVisibleDescription():
 	return "No matter what you will never be able to get pregnant"

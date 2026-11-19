@@ -44,7 +44,7 @@ func getEffectName():
 	return "Tally marks"
 
 func getEffectDesc():
-	var text = "Your tally marks:"
+	var text = "Твои зарубки:"
 	for zone in marks:
 		var zoneName = BodyWritingsZone.getZoneVisibleName(int(zone))
 		var amount = marks[zone]

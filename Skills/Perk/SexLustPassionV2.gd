@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.SexSlave
 
 func getVisibleName():
-	return "Passion for lust"
+	return "Страсть к похоти"
 
 func getVisibleDescription():
 	return "You love sex! Each time you have oral, vaginal or anal sex you recover 20 [color="+DamageType.getColorString(DamageType.Stamina)+"]stamina[/color] back!"

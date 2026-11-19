@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Rebel throw"
+	return "Бросок повстанца"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -18,7 +18,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkDodged(_attacker, _receiver, DamageType.Physical)):
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "{attacker.name} manages to get a good grasp on {receiver.name} and then picks them off the floor before throwing them a few meters back!"
+	var text = "{attacker.name} умудряется крепко схватить {receiver.name}, рывком поднимает с пола и швыряет на несколько метров назад!"
 	text += "\n\n"
 	text += RNG.pick([
 		"[say=attacker]And don’t get up.[/say]",

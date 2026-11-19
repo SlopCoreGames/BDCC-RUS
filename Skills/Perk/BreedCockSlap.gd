@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Breeder
 
 func getVisibleName():
-	return "Size Matters"
+	return "Размер имеет значение"
 
 func getVisibleDescription():
 	return "Harness the strength of your cock to slap enemies into submission! You get a new Special 'Cock Slap' attack that scales depending on how heavy your cock is (how much cum is in it)!"

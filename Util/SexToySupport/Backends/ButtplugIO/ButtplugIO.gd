@@ -59,7 +59,7 @@ Not every toy type is supported.
 func getSettings() -> Dictionary:
 	return {
 		"websocketURL": {
-			name = "Websocket URL",
+			name = "URL Websocket",
 			type = "string",
 			value = websocketURL,
 		},

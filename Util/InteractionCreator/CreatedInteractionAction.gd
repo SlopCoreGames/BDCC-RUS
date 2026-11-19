@@ -43,38 +43,38 @@ const allScoreTypes = [
 func getEditVars():
 	return {
 		"name": {
-			name = "Name",
+			name = "Имя",
 			type = "string",
 			value = name,
 		},
 		"desc": {
-			name = "Desc",
+			name = "Описание",
 			type = "bigString",
 			value = desc,
 		},
 		"disabledDesc": {
-			name = "Disabled desc",
+			name = "Отключенное описание",
 			type = "bigString",
 			value = disabledDesc,
 		},
 		"scoreType": {
-			name = "Score type",
+			name = "Тип очков",
 			type = "selector",
 			value = scoreType,
 			values = allScoreTypes,
 		},
 		"score": {
-			name = "Score",
+			name = "Очки",
 			type = "string",
 			value = score,
 		},
 		"args": {
-			name = "Args",
+			name = "Аргументы",
 			type = "string",
 			value = args,
 		},
 		"time": {
-			name = "Time",
+			name = "Время",
 			type = "string",
 			value = time,
 		},
@@ -89,17 +89,17 @@ func getEditVars():
 			value = start_fight,
 		},
 		"cond": {
-			name = "Condition",
+			name = "Условие",
 			type = "string",
 			value = cond,
 		},
 		"condSee": {
-			name = "See condition",
+			name = "См. условие",
 			type = "string",
 			value = condSee,
 		},
 		"code": {
-			name = "Code",
+			name = "Код",
 			type = "bigString",
 			value = code,
 			minsize = 300,

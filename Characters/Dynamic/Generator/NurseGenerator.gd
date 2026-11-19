@@ -45,6 +45,6 @@ func pickEquipment(character:DynamicCharacter, _args = {}):
 	character.npcDefaultEquipment = theEquipment
 
 func pickSmallDescription(character:DynamicCharacter, _args = {}):
-	var text = "One of the nurses. "+str(.pickSmallDescription(character, _args))
+	var text = "Одна из медсестер."+str(.pickSmallDescription(character, _args))
 
 	return text

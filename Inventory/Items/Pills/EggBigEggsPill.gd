@@ -4,10 +4,10 @@ func _init():
 	id = "EggBigEggsPill"
 
 func getVisibleName():
-	return "Ovicapsin Pill"
+	return "Таблетка Овикапсин"
 	
 func getDescription():
-	return "A pill that will make your body construct a shell around any growing fetuses, turning future live birth into egg-laying."
+	return "Таблетка, заставляющая организм выстраивать защитную оболочку вокруг любого растущего плода, превращая процесс родов в откладывание яиц."
 
 func canUseInCombat():
 	return true
@@ -97,7 +97,7 @@ func useInSex(_receiver):
 	if(theCycle):
 		theCycle.turnImpregnatedEggsIntoBigEggs()
 	return {
-		text = "{USER.You} {USER.youVerb('feel')} different!".replace("USER", _receiver.getID()),
+		text = "{USER.You} {USER.youVerb('feel')} отличный результат!".replace("USER", _receiver.getID()),
 	}
 
 func getItemCategory():

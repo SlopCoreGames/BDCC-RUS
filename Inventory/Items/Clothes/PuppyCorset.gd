@@ -4,10 +4,10 @@ func _init():
 	id = "PuppyCorset"
 
 func getVisibleName():
-	return "Corset"
+	return "Корсет"
 	
 func getDescription():
-	return "A tight shiny corset that doesn't hide anything"
+	return "Тесный блестящий корсет, который ничего не скрывает"
 
 func getClothingSlot():
 	return InventorySlot.Torso

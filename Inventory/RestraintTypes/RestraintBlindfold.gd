@@ -28,24 +28,24 @@ func doStruggle(_pc, _minigame:MinigameResult):
 	var _canSee = !_pc.isBlindfolded()
 	var _canBite = !_pc.isBitingBlocked()
 	
-	var text = "error?"
+	var text = "ошибка?"
 	var lust = 0
 	var pain = 0
 	var damage = 0
 	var stamina = 0
 	
 	if(failChanceLowScore(_pc, 15, _minigame)):
-		text = "{user.name} struggles to shake the blindfold off but careless motions cause it to [b]get tigther[/b] around {user.his} head!"
+		text = "{user.name} тщетно пытается сбросить повязку, но из-за неосторожных движений она [b]затягивается еще туже[/b] на {user.his} голове!"
 		damage = -0.5
 	elif(_handsFree && _armsFree):
-		text = "Because {user.name}'s hands are free {user.he} manages to just untie {user.his} blindfold."
+		text = "Так как руки {user.name} свободны, {user.he} удается развязать {user.his} повязку."
 		damage = 1.0
 	elif(_handsFree):
-		text = "{user.name}'s hands are free but they are bound together so {user.name} has to awkwardly bend to reach the blindfold."
+		text = "Руки {user.name} свободны, но они связаны между собой, поэтому {user.name} приходится неуклюже наклоняться, чтобы дотянуться до повязки."
 		damage = 1.0
 		stamina = 5
 	else:
-		text = "{user.name} shakes {user.his} head, trying to make the blindfold slip off."
+		text = "{user.name} трясет {user.his} головой, пытаясь заставить повязку соскользнуть."
 		damage = calcDamage(_pc, _minigame)
 		stamina = 10
 	

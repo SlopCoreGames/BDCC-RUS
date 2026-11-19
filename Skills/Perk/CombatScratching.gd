@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Combat
 
 func getVisibleName():
-	return "Scratchy-scratchy"
+	return "Чесать-чесать!"
 
 func getVisibleDescription():
 	return "You learned to use your claws in a fight, sometimes you will cause bleeding when punching somebody"

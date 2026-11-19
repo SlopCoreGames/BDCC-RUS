@@ -4,10 +4,10 @@ func _init():
 	id = "PenisPump"
 
 func getVisibleName():
-	return "Penis Pump"
+	return "Помпа для пениса"
 	
 func getDescription():
-	return "A tool that can extract seed."
+	return "Инструмент, способный извлекать семя."
 
 func getClothingSlot():
 	return InventorySlot.Penis

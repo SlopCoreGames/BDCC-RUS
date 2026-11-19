@@ -5,7 +5,7 @@ func _init():
 	partID = "sockethair"
 
 func getName():
-	return "Roots and Ends"
+	return "Корни и кончики"
 
 func getPatternTexture():
 	return {

@@ -5,10 +5,10 @@ func _init():
 	clothesColor = Color(0.19, 0.19, 0.19)
 
 func getVisibleName():
-	return "Strapon"
+	return "Страпон"
 	
 func getDescription():
-	var text = "A strapon that can be used during sex. Can wear it only if you don't have a dick already"
+	var text = "Страпон, который можно использовать во время секса. Можно надеть, только если у тебя еще нет члена."
 
 	return text
 

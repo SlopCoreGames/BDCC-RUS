@@ -7,7 +7,7 @@ func getActionType():
 	return AuctionActionType.Ungrouped
 
 func getName() -> String:
-	return "Дразнить участников аукциона @@B*@@@@T*@@@@F*@@"
+	return "Дразнить участников аукциона"
 
 func getButtonDesc() -> String:
 	return "Tease the bidders and see their reactions.\n\nRepetable action. [b]Will[/b] reveal 1 random preference of each bidder that is always relevant to the slave."

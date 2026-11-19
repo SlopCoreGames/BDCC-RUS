@@ -4,7 +4,7 @@ func _init():
 	id = "Cum"
 
 func getVisibleName():
-	return "Cum"
+	return "Кончить"
 
 func canImpregnate():
 	return true

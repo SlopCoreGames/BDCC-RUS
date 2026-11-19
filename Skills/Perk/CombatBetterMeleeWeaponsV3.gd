@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Combat
 
 func getVisibleName():
-	return "Force of Destruction"
+	return "Сила Разрушения"
 
 func getVisibleDescription():
 	return "You love watching your foes fall before you. And knowing how to wield a weapon sure helps with that. You do [b]50%[/b] more damage with melee weapons."

@@ -37,7 +37,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Принудительное оплодотворение @@B*@@@@T*@@@@F*@@",
+			text = "Принудительное оплодотворение",
 		},
 		{
 			type = "slot",

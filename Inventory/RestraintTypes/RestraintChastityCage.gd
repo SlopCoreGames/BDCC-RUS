@@ -12,21 +12,21 @@ func doStruggle(_pc, _minigame:MinigameResult):
 	var _canSee = !_pc.isBlindfolded()
 	var _canBite = !_pc.isBitingBlocked()
 	
-	var text = "error?"
+	var text = "ошибка?"
 	var lust = 0
 	var pain = 0
 	var damage = 0
 	var stamina = 0
 	
 	if(failChanceLowScore(_pc, 15, _minigame)):
-		text = "{user.name} tugs on the chastity cage, hoping to find a way to slip {user.his} member out. However, {user.his} actions only cause the cage to [b]secure itself more firmly[/b], the metal pressing uncomfortably against {user.his} sensitive skin."
+		text = "{user.name} дергает за девственную клетку, надеясь найти способ выскользнуть {user.his} члену наружу. Однако {user.his} действия лишь заставляют клетку [b]защелкнуться еще плотнее[/b], и металл неудобно впивается в {user.his} чувствительную кожу."
 		damage = -0.5
 	elif(_handsFree && _armsFree):
-		text = "{user.name} tugs on {user.his} chastity cage, trying to take it off."
+		text = "{user.name} дергает за {user.his} девственную клетку, пытаясь ее снять."
 		damage = calcDamage(_pc, _minigame)
 		stamina = 10
 	else:
-		text = "{user.name} desperately tries to wiggle {user.his} chastity cage off but makes almost no progress."
+		text = "{user.name} отчаянно пытается стряхнуть {user.his} девственную клетку, но почти не продвигается."
 		damage = calcDamage(_pc, _minigame, 0.1)
 		stamina = 5
 	

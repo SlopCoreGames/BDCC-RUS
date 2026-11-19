@@ -5,7 +5,7 @@ func _init():
 	partID = "canineears2"
 
 func getName():
-	return "Inner Gradient"
+	return "Внутренний градиент"
 
 func getPatternTexture():
 	return {

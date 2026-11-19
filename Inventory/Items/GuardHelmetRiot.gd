@@ -4,7 +4,7 @@ func _init():
 	id = "GuardHelmetRiot"
 
 func getDescription():
-	return "An armored helmet. This is a riot variant that offers a lot of protection against physical damage."
+	return "Бронированный шлем. Это вариант для подавления беспорядков, обеспечивающий отличную защиту от физического урона."
 
 func getBuffs():
 	return [

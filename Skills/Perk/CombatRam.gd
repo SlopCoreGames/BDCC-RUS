@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Combat
 
 func getVisibleName():
-	return "Ramming"
+	return "Таранный удар"
 
 func getVisibleDescription():
 	return "A bull is trapped inside you. You get a special ability to ram enemies and stun them for 50 stamina"

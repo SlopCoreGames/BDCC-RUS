@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Exhibitionism
 
 func getVisibleName():
-	return "Swift rolls"
+	return "Быстрые перекаты"
 
 func getVisibleDescription():
 	return "All that clothing only slows you down, you get 50 extra stamina if you're COMPLETELY naked"

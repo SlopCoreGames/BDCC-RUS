@@ -6,7 +6,7 @@ func _init():
 	dungeonWeight = 0.0
 
 func getVisibleName():
-	return "Prolific Seeder"
+	return "Плодовитый сеятель"
 
 func getVisibleDescription():
 	return "Your balls begin to adapt to your breeder lifestyle and are now filling up 25% faster"

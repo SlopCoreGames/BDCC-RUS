@@ -18,7 +18,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Флаг существует @@B*@@",
+			text = "Флаг существует",
 		},
 		{
 			type = "slot",

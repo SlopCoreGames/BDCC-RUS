@@ -26,7 +26,7 @@ func getSettings() -> Dictionary:
 	var theSettings := .getSettings()
 	theSettings.merge({
 		"strengthMult": {
-			name = "Strength multiplier",
+			name = "Множитель силы",
 			type = "number",
 			value = strengthMult,
 			step = 0.01,

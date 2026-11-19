@@ -4,10 +4,10 @@ func _init():
 	id = "painkillers"
 
 func getVisibleName():
-	return "Painkillers"
+	return "Обезболивающее"
 	
 func getDescription():
-	return "Helps against pain, removes 80 pain"
+	return "Помогает от боли, снимает 80 ед. боли"
 
 func getA():
 	return ""
@@ -86,7 +86,7 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 func useInSex(_receiver):
 	_receiver.addPain(-80)
 	return {
-		text = "{USER.You} {USER.youVerb('feel')} better.".replace("USER", _receiver.getID()),
+		text = "{USER.You} {USER.youVerb('feel')} лучше.".replace("USER", _receiver.getID()),
 	}
 
 func getItemCategory():

@@ -4,10 +4,10 @@ func _init():
 	id = "bondagemittens"
 
 func getVisibleName():
-	return "Bondage Mittens"
+	return "Бондажные варежки"
 	
 func getDescription():
-	return "Black leather mittens that go on your hands. Once they're on your hands basically become useless"
+	return "Черные кожаные варежки для рук. Как только ты их надеваешь, твои руки становятся практически бесполезными"
 
 func getClothingSlot():
 	return InventorySlot.Hands

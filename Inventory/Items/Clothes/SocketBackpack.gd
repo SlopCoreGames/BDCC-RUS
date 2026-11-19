@@ -4,10 +4,10 @@ func _init():
 	id = "SocketBackpack"
 
 func getVisibleName():
-	return "Socket's backpack"
+	return "Рюкзак для сокета"
 	
 func getDescription():
-	return "A handy backpack"
+	return "Удобный рюкзак"
 
 func getClothingSlot():
 	return InventorySlot.Torso

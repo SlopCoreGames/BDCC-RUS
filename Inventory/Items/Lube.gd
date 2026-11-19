@@ -4,10 +4,10 @@ func _init():
 	id = "lube"
 
 func getVisibleName():
-	return "Lube"
+	return "Смазка"
 	
 func getDescription():
-	return "Personal lubricant that is water-based, insuring no irritation. Works both for vaginal and anal use, your orifices recover faster and don't stretch as much"
+	return "Персональный лубрикант на водной основе, гарантирующий отсутствие раздражения. Подходит как для вагинального, так и для анального использования; ваши отверстия быстрее восстанавливаются и меньше растягиваются"
 
 func getA():
 	return ""
@@ -69,5 +69,5 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 func useInSex(_receiver):
 	_receiver.addEffect(StatusEffect.LubedUp)
 	return {
-		text = "{USER.You} {USER.youVerb('feel')} ready.".replace("USER", _receiver.getID()),
+		text = "{USER.You} {USER.youVerb('feel')} готово.".replace("USER", _receiver.getID()),
 	}

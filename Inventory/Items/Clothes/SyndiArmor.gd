@@ -4,10 +4,10 @@ func _init():
 	id = "SyndiArmor"
 
 func getVisibleName():
-	return "Syndicate armor"
+	return "Броня Синдиката"
 	
 func getDescription():
-	return "A highly protected pressurised suit designed for Syndicate operatives operating in zero G"
+	return "Высокозащитный герметичный скафандр, разработанный специально для оперативников Синдиката, работающих в условиях нулевой гравитации"
 
 func getClothingSlot():
 	return InventorySlot.Body

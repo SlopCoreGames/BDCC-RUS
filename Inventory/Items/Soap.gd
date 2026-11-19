@@ -4,10 +4,10 @@ func _init():
 	id = "Soap"
 
 func getVisibleName():
-	return "Bio-Scrub Soap"
+	return "Био-очищающее мыло"
 	
 func getDescription():
-	return "A small soap brick, good for one use. It turns into liquid when you rub it on skin, meaning you don’t need access to water. Some inmates call it liquid gold.\n- Removes any fluids that are covering your body.\n- Removes any bodywritings and tallymarks.\n- Removes all [b]PERMANENT[/b] bodywritings.\n- Provides a refreshing effect."
+	return "Маленький брусок мыла, рассчитанный на одно использование. При трении о кожу он превращается в пену, так что доступ к воде не обязателен. Некоторые заключенные называют его «жидким золотом».\n- Смывает любые жидкости, покрывающие ваше тело.\n- Удаляет любые надписи на теле и зарубки.\n- Удаляет все [b]ПОСТОЯННЫЕ[/b] надписи на теле.\n- Оказывает освежающий эффект."
 
 func getA():
 	return "a"
@@ -87,5 +87,5 @@ func useInSex(_receiver):
 	_receiver.clearBodywritings(true, true)
 	_receiver.afterTakingAShower()
 	return {
-		text = "{USER.You} {USER.youVerb('feel')} clean.".replace("USER", _receiver.getID()),
+		text = "{USER.You} {USER.youVerb('feel')} чистота.".replace("USER", _receiver.getID()),
 	}

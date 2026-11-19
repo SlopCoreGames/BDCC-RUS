@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Scratch"
+	return "Царапанье"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -18,7 +18,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkDodged(_attacker, _receiver, DamageType.Physical)):
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "{attacker.name} sinks {attacker.his} sharp claws under {receiver.name}’s skin and leaves a deep scratch!"
+	var text = "{attacker.name} вонзает {attacker.his} острые когти под кожу {receiver.name} и оставляет глубокую царапину!"
 	
 	if(RNG.chance(50) && _receiver.addEffect(StatusEffect.Bleeding)):
 		text += " Sharp claws caused {receiver.name} to start [color=red]bleeding[/color]."

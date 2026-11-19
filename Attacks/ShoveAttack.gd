@@ -7,7 +7,7 @@ func _init():
 	aiScoreMultiplier = 0.5
 	
 func getVisibleName(_context = {}):
-	return "Shove"
+	return "Толкнуть"
 	
 func getVisibleDesc(_context = {}):
 	return "An attempt to shove the enemy away for "+scaledDmgStr(DamageType.Physical, 5)+" damage. 30% chance to miss. Will cause the opponent to collapse"

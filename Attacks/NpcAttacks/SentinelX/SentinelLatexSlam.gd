@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Latex Slam"
+	return "Латексный удар"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -18,7 +18,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkDodged(_attacker, _receiver, DamageType.Physical)):
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "With a thunderous impact, {attacker.name} slams {attacker.his} adhesive-coated leg into {receiver.name}, causing intense pain."
+	var text = "С громоподобным ударом {attacker.name} впечатывает свою покрытую клеем ногу в {receiver.name}, причиняя {attacker.his} нестерпимую боль."
 	return {
 		text = text,
 		pain = 40,
@@ -28,7 +28,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	var text = " {attacker.name} gathers strength, preparing to unleash a powerful blow. This one will ignore your armor completely!"
+	var text = "{attacker.name} набирает силу, готовясь нанести мощный удар. Этот удар полностью проигнорирует твою броню!"
 
 	return text
 

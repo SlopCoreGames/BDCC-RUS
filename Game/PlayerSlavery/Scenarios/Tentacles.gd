@@ -907,7 +907,7 @@ func talk(_text:String):
 	var _theText:String = processTalkText(_text)
 	if(_theText.empty()):
 		return
-	_scene.saynn("[say=\""+getTentaclesCharID()+"]"+_theText+"[/say]")
+	_scene.saynn("[say="+getTentaclesCharID()+"]"+_theText+"[/say]")
 
 func doAnimDuo(_anim:String, _otherArgs:Dictionary = {}):
 	var theArgs:Dictionary = {plant=true}

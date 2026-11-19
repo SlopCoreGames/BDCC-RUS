@@ -5,7 +5,7 @@ func _init():
 	partID = "fennecears"
 
 func getName():
-	return "Inner Highlight"
+	return "Внутренний блик"
 
 func getPatternTexture():
 	return {

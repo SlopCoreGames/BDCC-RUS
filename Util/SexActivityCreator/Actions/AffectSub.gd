@@ -10,7 +10,7 @@ func _init():
 	id = "AffectSub"
 
 func getName():
-	return "Affect Sub"
+	return "Влияние на сабку"
 
 func getVisibleText():
 	return generateCode()

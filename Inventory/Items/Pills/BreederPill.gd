@@ -4,10 +4,10 @@ func _init():
 	id = "BreederPill"
 
 func getVisibleName():
-	return "Breeder Pill"
+	return "Пилюля плодовитости"
 	
 func getDescription():
-	return "A very strong drug that alters your body's hormone balance, increasing pregnancy chance. Also significantly increases the quality of your semen"
+	return "Очень сильный препарат, который меняет гормональный баланс вашего тела, повышая шансы на беременность. Также значительно улучшает качество вашей спермы"
 
 func canUseInCombat():
 	return true

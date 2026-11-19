@@ -97,7 +97,7 @@ func _run():
 
 		saynn("Так и хочется дразнить её ещё сильнее...")
 
-		saynn("[say=pc]Я бы держала тебя под кайфом от размножающих препаратов..[say=pc]"+str(" Maybe with your belly full of someone's pups.." if !GM.pc.hasReachablePenis() else " With your belly full of pups..")+"Твой разум сломлен, а твои дырочки постоянно растянуты и забиты..[/say]")
+		saynn("[say=pc]Я бы держала тебя под кайфом от размножающих препаратов.."+str(" Maybe with your belly full of someone's pups.." if !GM.pc.hasReachablePenis() else " With your belly full of pups..")+"Твой разум сломлен, а твои дырочки постоянно растянуты и забиты..[/say]")
 
 		saynn("Чем больше ты говоришь, тем сильнее Артика ерзает и скулит, а её киска истекает соками прямо на пол.")
 

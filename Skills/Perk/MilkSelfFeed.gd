@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Milking
 
 func getVisibleName():
-	return "Milk addict"
+	return "Молочный наркоман"
 
 func getVisibleDescription():
 	return "You gain the ability to self-feed yourself by squeezing milk into your mouth, relieving pain depending on the amount!"

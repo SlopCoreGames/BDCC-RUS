@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.BDSM
 
 func getVisibleName():
-	return "True sight"
+	return "Истинное зрение"
 
 func getVisibleDescription():
 	return "You got used to being blindfolded, you learned to not rely on your eyes as much anymore. By using your others senses you can orient yourself in almost any space"

@@ -5,7 +5,7 @@ func _init():
 	whoGaveBirth = "eliza"
 
 func getVisibleName():
-	return "Plant Egg"
+	return "Яйцо растения"
 	
 func getSellPrice():
 	return 50

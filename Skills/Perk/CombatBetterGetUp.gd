@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Combat
 
 func getVisibleName():
-	return "Leap up"
+	return "Вскочить"
 
 func getVisibleDescription():
 	return "With all your combat practice you have learned how to fall properly. You will get up with a 100% chance and can even do it the same turn you were knocked down"

@@ -10,7 +10,7 @@ var enabledActually:bool = false
 signal devicesChanged
 
 func getName() -> String:
-	return "FILL ME"
+	return "ЗАПОЛНИ МЕНЯ"
 
 func getDesc() -> String:
 	return "FILL MEEEE"

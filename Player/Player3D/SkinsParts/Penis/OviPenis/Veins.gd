@@ -5,7 +5,7 @@ func _init():
 	partID = "ovipositorpenis"
 
 func getName():
-	return "Veins"
+	return "Вены"
 
 func getPatternTexture():
 	return {

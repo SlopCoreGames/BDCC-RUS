@@ -6,7 +6,7 @@ func _init():
 	dungeonWeight = 0.0
 
 func getVisibleName():
-	return "Cum Tank"
+	return "Бак с кончей"
 
 func getVisibleDescription():
 	return "You feel your balls becoming heavier after so much cumming. They now hold 50% more seed!"

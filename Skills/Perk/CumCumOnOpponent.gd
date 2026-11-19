@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.CumLover
 
 func getVisibleName():
-	return "The Climax"
+	return "Кульминация"
 
 func getVisibleDescription():
 	return "You gain an ability to masturbate and cum during fights"

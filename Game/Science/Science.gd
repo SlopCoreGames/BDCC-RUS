@@ -376,7 +376,7 @@ var upgradesInfo:Dictionary = {
 		moduleCheck = "ElizaModule", # ElizaModule is gonna be asked to check if this upgrade is visible
 	},
 	"oviStrapons": {
-		name = "Стрáпы-овипозиторы",
+		name = "Страпы-овипозиторы",
 		desc = "Unlocks 2 prototype strapons that are capable of doing oviposition! You will be able to buy them from the medical vendomat.",
 		cost = 30,
 		requiredUpgrades = [],

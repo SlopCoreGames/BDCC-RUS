@@ -1,7 +1,7 @@
 extends BodypartEars
 
 func _init():
-	visibleName = "feline ears 2"
+	visibleName = "кошачьи ушки 2"
 	id = "felineears2"
 
 func getCompatibleSpecies():

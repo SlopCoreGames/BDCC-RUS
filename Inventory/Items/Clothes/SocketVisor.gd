@@ -4,10 +4,10 @@ func _init():
 	id = "SocketVisor"
 
 func getVisibleName():
-	return "Socket's visor"
+	return "Визор разъема"
 	
 func getDescription():
-	return "A cool little vr visor"
+	return "Крутой маленький VR-визор"
 
 func getClothingSlot():
 	return InventorySlot.Eyes

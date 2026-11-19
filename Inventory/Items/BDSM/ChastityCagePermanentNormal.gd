@@ -4,10 +4,10 @@ func _init():
 	id = "ChastityCagePermanentNormal"
 
 func getVisibleName():
-	return "Permanent Cage"
+	return "Постоянная клетка"
 	
 func getDescription():
-	return "Prevents the ability to use your penis. Forever."
+	return "Лишает возможности использовать член. Навсегда."
 
 func getClothingSlot():
 	return InventorySlot.Penis

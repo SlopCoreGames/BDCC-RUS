@@ -5,10 +5,10 @@ func _init():
 	clothesColor = Color("22253e")
 
 func getVisibleName():
-	return "Casual clothes"
+	return "Повседневная одежда"
 	
 func getDescription():
-	return "Just a simple shirt and shorts"
+	return "Просто обычная рубашка и шорты"
 
 func getClothingSlot():
 	return InventorySlot.Body

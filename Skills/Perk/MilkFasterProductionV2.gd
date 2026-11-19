@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Milking
 
 func getVisibleName():
-	return "Milk enthusiast"
+	return "Любитель молочка"
 
 func getVisibleDescription():
 	return "You're a very milky cow. Your proud girls began producing milk 50% faster"

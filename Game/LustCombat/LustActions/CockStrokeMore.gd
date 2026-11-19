@@ -17,7 +17,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "@@B*@@Драть сильнее@@T*@@@@F*@@"
+	return "Драть сильнее"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "Jerk yourself off"

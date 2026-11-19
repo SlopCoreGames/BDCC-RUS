@@ -7,7 +7,7 @@ func _init():
 	clothesColor = Color("#0C470C")
 
 func getVisibleName():
-	return "Ovipositor"
+	return "Овипозитор"
 
 func getInventoryName():
 	var theName:String = getStackName()
@@ -22,7 +22,7 @@ func getInventoryName():
 	return theName
 
 func getDescription():
-	var text:String = "A strapon that is capable of stuffing someone with eggs. Must be loaded with eggs first. Has a reduced storage for fluids"
+	var text:String = "Страпон, способный набивать кого-то яйцами. Сначала его нужно зарядить яйцами. Обладает уменьшенным объемом для хранения жидкостей"
 	
 	var contentsList:Array = []
 	for theItem in eggInv.items:
@@ -75,9 +75,9 @@ func getPossibleActions():
 	var theActions:Array = .getPossibleActions()
 	
 	theActions.append({
-		name = "Load with eggs",
+		name = "Зарядить яйцами",
 		scene = "LoadOviStraponWithEggs",
-		description = "Pick what eggs do you want to load into this strapon",
+		description = "Выберите, какие яйца вы хотите зарядить в этот страпон",
 	})
 	
 	return theActions

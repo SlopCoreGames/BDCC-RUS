@@ -4,10 +4,10 @@ func _init():
 	id = "EggGrowthPill"
 
 func getVisibleName():
-	return "EggBoost Pill"
+	return "Таблетка ускорения яиц"
 	
 func getDescription():
-	return "A pill that will greatly speed up the growth of eggs in your body. Be ready to lay them soon after! The pharmacist who called this pill 'Eggcelerator' got fired the same day."
+	return "Таблетка, которая значительно ускоряет рост яиц в вашем теле. Будьте готовы отложить их почти сразу! Фармацевта, который назвал это средство «Яйцеускорителем», уволили в тот же день."
 
 func canUseInCombat():
 	return true
@@ -100,7 +100,7 @@ func useInSex(_receiver):
 	if(theCycle):
 		theCycle.boostBigEggs()
 	return {
-		text = "{USER.You} {USER.youVerb('feel')} boosted!".replace("USER", _receiver.getID()),
+		text = "{USER.You} {USER.youVerb('feel')} усилен!".replace("USER", _receiver.getID()),
 	}
 
 func getItemCategory():

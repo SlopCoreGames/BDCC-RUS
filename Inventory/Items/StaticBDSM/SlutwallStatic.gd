@@ -4,10 +4,10 @@ func _init():
 	id = "SlutwallStatic"
 
 func getVisibleName():
-	return "Slutwall"
+	return "Стенка для шлюх"
 	
 func getDescription():
-	return "You're stuck in it"
+	return "Ты в ней застрял"
 
 func getClothingSlot():
 	return InventorySlot.Static1

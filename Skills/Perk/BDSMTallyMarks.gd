@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.BDSM
 
 func getVisibleName():
-	return "Slut arithmetics"
+	return "Арифметика шлюх"
 
 func getVisibleDescription():
 	return "You love when others leave tally marks on your body after they're done using you. Each tally mark gives you +1% [color="+DamageType.getColorString(DamageType.Lust)+"]lust[/color] damage!"

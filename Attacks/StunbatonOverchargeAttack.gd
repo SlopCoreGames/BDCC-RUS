@@ -7,7 +7,7 @@ func _init():
 	aiScoreMultiplier = 0.5
 	
 func getVisibleName(_context = {}):
-	return "Use the stunbaton"
+	return "Используй электродубинку"
 	
 func getVisibleDesc(_context = {}):
 	return "You shouldn't see this"

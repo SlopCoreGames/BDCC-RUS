@@ -4,7 +4,7 @@ func _init():
 	id = "LoyalSkin"
 
 func getName():
-	return "Loyal"
+	return "Лояльный"
 
 func getPatternTexture():
 	return load("res://Player/Player3D/SkinsByAuthor/AverageAce/LoyalSkin/LoyalSkin_f_s.png")

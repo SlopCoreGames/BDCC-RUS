@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Ram"
+	return "Таран"
 	
 func getVisibleDesc(_context = {}):
 	return "Ram them for "+scaledDmgRangeStr(DamageType.Physical, 10, 15)+" damage. Uses 50 stamina\n\nWill knock the opponent down and stun them for 2 turns.\n\nGood against armored opponents"

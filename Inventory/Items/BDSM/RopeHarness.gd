@@ -5,13 +5,13 @@ func _init():
 	clothesColor = Color.red
 
 func getVisibleName():
-	return "Rope harness"
+	return "Веревочная портупея"
 	
 func getA():
 	return "a"
 	
 func getDescription():
-	return "A set of ropes that go over your body"
+	return "Набор веревок, которые стягивают ваше тело"
 
 func getClothingSlot():
 	return InventorySlot.Torso

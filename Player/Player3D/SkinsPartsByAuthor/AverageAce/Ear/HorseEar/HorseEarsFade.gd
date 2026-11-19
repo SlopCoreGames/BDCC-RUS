@@ -5,7 +5,7 @@ func _init():
 	partID = "horseears"
 
 func getName():
-	return "Fade"
+	return "Затухание"
 
 func getPatternTexture():
 	return {

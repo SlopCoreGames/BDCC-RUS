@@ -6,7 +6,7 @@ func _init():
 	id = "setState"
 
 func getName():
-	return "Set State"
+	return "Установить состояние"
 
 func getVisibleText():
 	return generateCode()

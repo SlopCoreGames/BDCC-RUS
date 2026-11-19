@@ -41,22 +41,22 @@ func doStruggle(_pc, _minigame:MinigameResult):
 	var _canSee = !_pc.isBlindfolded()
 	var _canBite = !_pc.isBitingBlocked()
 	
-	var text = "error?"
+	var text = "ошибка?"
 	var lust = 0
 	var pain = 0
 	var damage = 0
 	var stamina = 0
 	
 	if(failChanceLowScore(_pc, 10, _minigame)):
-		text = "{user.name} tries to wiggle {user.his} whole body but one wrong move makes you [b]lose a lot of progress[/b]!"
+		text = "{user.name} пытается извиваться всем {user.his} телом, но одно неверное движение — и ты [b]потеряешь кучу прогресса[/b]!"
 		damage = -0.3
 		stamina = 70
 	elif(_legsFree):
-		text = "{user.name} wiggles {user.his} whole body to try to escape."
+		text = "{user.name} извивается всем {user.his} телом, пытаясь вырваться."
 		damage = calcDamage(_pc, _minigame)
 		stamina = 70
 	else:
-		text = "{user.name} helplessly wiggles {user.his} body, having {user.his} legs restrained makes this pretty much useless."
+		text = "{user.name} беспомощно извивается всем {user.his} телом, но из-за того, что {user.his}ноги скованы, это почти бесполезно."
 		damage = calcDamage(_pc, _minigame, 0.5)
 		stamina = RNG.randi_range(70, 90)
 		

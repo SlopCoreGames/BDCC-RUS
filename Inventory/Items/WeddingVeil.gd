@@ -4,10 +4,10 @@ func _init():
 	id = "WeddingVeil"
 
 func getVisibleName():
-	return "Wedding veil"
+	return "Свадебная вуаль"
 	
 func getDescription():
-	return "A fancy veil that you wear during weddings"
+	return "Изысканная вуаль, которую надевают на свадьбу"
 
 func getClothingSlot():
 	return InventorySlot.Eyes

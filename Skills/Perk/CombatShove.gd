@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Combat
 
 func getVisibleName():
-	return "Shoving"
+	return "Толкание"
 
 func getVisibleDescription():
 	return "You gain the ability to shove the opponent away with your shoulder, possible making them trip."

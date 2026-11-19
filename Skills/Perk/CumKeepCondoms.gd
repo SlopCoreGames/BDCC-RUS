@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.CumLover
 
 func getVisibleName():
-	return "Condom slut"
+	return "Кондомная шлюшка"
 
 func getVisibleDescription():
 	return "Condoms! You love used filled condoms so much that you will actively try to keep them after sex."

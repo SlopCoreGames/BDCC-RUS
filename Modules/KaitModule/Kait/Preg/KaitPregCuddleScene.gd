@@ -133,7 +133,7 @@ func _run():
 
 		saynn("Она слегка ерзает в твоих объятиях.")
 
-		saynn("[say=kait]Слушай.. я, блядь, сама не знаю..[say=kait]"+str(" They're your kids too, you know.." if fromPC else "")+"[/say]")
+		saynn("[say=kait]Слушай.. я, блядь, сама не знаю.."+str(" They're your kids too, you know.." if fromPC else "")+"[/say]")
 
 		saynn("Ты едва заметно киваешь.")
 

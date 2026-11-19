@@ -6,7 +6,7 @@ func _init():
 	id = "PlantEgg"
 
 func getVisibleName():
-	return "Plant Egg"
+	return "Яйцо растения"
 	
 func getDescription():
 	var byWho = ""
@@ -19,7 +19,7 @@ func getDescription():
 		else:
 			byWho = "\n\nThis egg was laid by "+str(theChar.getName())
 	
-	return "A very nutrious seed with an incredibly sweet taste. Eating it will remove 50 pain and add 50 stamina.. but also add 20 lust."+byWho
+	return "Очень питательное семя с невероятно сладким вкусом. Поедание убирает 50 единиц боли и добавляет 50 единиц выносливости... но также добавляет 20 единиц похоти."+byWho
 
 func canUseInCombat():
 	return true

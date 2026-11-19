@@ -16,7 +16,7 @@ func setInmateType(newtype):
 	inmateType = newtype
 	
 func getDescription():
-	var text = "A short sleeved shirt and some shorts, both are made out of black cloth with "+InmateType.getColorName(inmateType)+" trim."
+	var text = "Короткая рубашка с коротким рукавом и шорты, оба предмета сделаны из черной ткани с "+InmateType.getColorName(inmateType)+" trim."
 
 	if(prisonerNumber != null && prisonerNumber != ""):
 		text += " The shirt has a prisoner number attached to it that says \""+prisonerNumber+"\""
@@ -71,9 +71,9 @@ func useInCombat(_attacker, _receiver):
 	if(itemState is ShirtAndShortsState):
 		itemState.noShirt = !itemState.noShirt
 		if(itemState.noShirt):
-			text = "You take the shirt off!"
+			text = "Вы снимаете рубашку!"
 		else:
-			text = "You put the shirt on!"
+			text = "Вы надеваете рубашку!"
 	
 	if(isWornByWearer()):
 		updateWearerAppearance()

@@ -6,7 +6,7 @@ func _init():
 	id = "elifcondition"
 
 func getName():
-	return "Else If Condition"
+	return "Условие Else If"
 
 func getVisibleText():
 	return "ELSE IF( " +storedCode+" ):"

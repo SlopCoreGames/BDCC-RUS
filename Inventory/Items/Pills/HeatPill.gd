@@ -4,10 +4,10 @@ func _init():
 	id = "HeatPill"
 
 func getVisibleName():
-	return "Heat Pill"
+	return "Таблетка течки"
 	
 func getDescription():
-	return "Forces females into heat and primes them ready for breeding."
+	return "Вводит самок в состояние течки и подготавливает их к спариванию."
 
 func canUseInCombat():
 	return true
@@ -83,7 +83,7 @@ func useInSex(_receiver):
 	_receiver.addEffect(StatusEffect.SexHeatDrug)
 	_receiver.removeEffect(StatusEffect.SexAnaphrodisiacDrug)
 	return {
-		text = "{USER.You} {USER.youVerb('feel')} incredibly lusty.".replace("USER", _receiver.getID()),
+		text = "{USER.You} {USER.youVerb('feel')} невероятно похотливыми.".replace("USER", _receiver.getID()),
 	}
 
 func getItemCategory():

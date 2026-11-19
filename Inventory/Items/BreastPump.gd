@@ -4,10 +4,10 @@ func _init():
 	id = "BreastPump"
 
 func getVisibleName():
-	return "Breast Pump"
+	return "Сцеживающий молоконик"
 	
 func getDescription():
-	return "A tool that can extract milk out of lactating breasts. This is a basic version that has some flaws.\nIf put on during sex it extracts "+str(getMilkSpeedPerMinuteMin())+"-"+str(getMilkSpeedPerMinuteMax())+" of milk per minute."
+	return "Инструмент для извлечения молока из лактирующих грудей. Это базовая версия, у которой есть свои недостатки.\nЕсли использовать его во время секса, он высасывает "+str(getMilkSpeedPerMinuteMin())+"-"+str(getMilkSpeedPerMinuteMax())+" of milk per minute."
 
 func getClothingSlot():
 	return InventorySlot.UnderwearTop

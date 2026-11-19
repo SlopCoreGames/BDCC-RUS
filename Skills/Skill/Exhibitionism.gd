@@ -4,10 +4,10 @@ func _init():
 	id = Skill.Exhibitionism
 
 func getVisibleName():
-	return "Exhibitionism"
+	return "Эксгибиционизм"
 
 func getShortName():
-	return "Exhibit."
+	return "Выставить напоказ."
 	
 func getVisibleDescription():
 	return "Shows how used you are to being completely naked in public"

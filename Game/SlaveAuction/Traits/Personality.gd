@@ -21,13 +21,13 @@ func getName(_id:String) -> String:
 	if(_id == "PersDominant"):
 		return "Доминант"
 	if(_id == "PersBrat"):
-		return "@@B*@@Дерзкая@@@@T*@@@@F*@@"
+		return "Дерзкая"
 	if(_id == "PersMean"):
 		return "Злобность"
 	if(_id == "PersKind"):
 		return "Добрый"
 	if(_id == "PersBrave"):
-		return "@@B*@@Храбрая@@T*@@@@F*@@"
+		return "Храбрая"
 	if(_id == "PersNaive"):
 		return "Наивная"
 	if(_id == "PersPerceptive"):

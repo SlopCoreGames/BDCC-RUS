@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Fertility
 
 func getVisibleName():
-	return "Breeding overdrive"
+	return "Режим ускоренного размножения"
 
 func getVisibleDescription():
 	return "Your reproductive organs are pushing themselves to the limit for you to bear as many children as possible. \n" \

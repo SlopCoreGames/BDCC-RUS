@@ -32,7 +32,7 @@ func canDo(_lustState: LustCombatState, _args):
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):
-	return "Кормить себя молоком @@B*@@"
+	return "Кормить себя молоком"
 
 func getVisibleDescription(_lustState: LustCombatState, _args):
 	return "Squeeze your breasts and catch some of the milk into your mouth, relieving pain depending on the amount"

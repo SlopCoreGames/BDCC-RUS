@@ -1,7 +1,7 @@
 extends BodypartArms
 
 func _init():
-	visibleName = "buff arms"
+	visibleName = "накачанные руки"
 	id = "buffarms"
 
 func getCompatibleSpecies():

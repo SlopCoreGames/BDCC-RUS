@@ -11,7 +11,7 @@ script = ExtResource( 1 )
 margin_top = 3.0
 margin_right = 216.0
 margin_bottom = 17.0
-text = "Шанс: 50% Предмет: 2-5x @@B*@@Обезболивающее@@T*@@@@F*@@"
+text = "Шанс: 50% Предмет: 2-5x Обезболивающее"
 
 [node name="DeleteButton" type="Button" parent="."]
 margin_left = 220.0

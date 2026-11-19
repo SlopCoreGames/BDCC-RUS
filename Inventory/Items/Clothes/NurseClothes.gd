@@ -4,10 +4,10 @@ func _init():
 	id = "NurseClothes"
 
 func getVisibleName():
-	return "Nurse Uniform"
+	return "Форма медсестры"
 	
 func getDescription():
-	return "Just a simple shirt and shorts colored in medbay colors"
+	return "Простая рубашка и шорты в цветах медблока"
 
 func getClothingSlot():
 	return InventorySlot.Body

@@ -5,7 +5,7 @@ func _init():
 	partID = "dragonpenis"
 
 func getName():
-	return "Tribal"
+	return "Трайбл"
 
 func getPatternTexture():
 	return {

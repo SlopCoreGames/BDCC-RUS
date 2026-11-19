@@ -17,10 +17,10 @@ func _init():
 	id = "StunBaton"
 
 func getVisibleName():
-	return "Stun baton"
+	return "Электрошокер"
 
 func getDescription():
-	var text = "Guard's default weapon.\nDoes "+Util.dmgRangeArrayStr(getDamageRange())+" physical damage.\nHas "+str(charges)+" "+Util.multipleOrSingularEnding(charges, "charge")+" left"
+	var text = "Стандартное оружие охранника.\nНаносит "+Util.dmgRangeArrayStr(getDamageRange())+" physical damage.\nHas "+str(charges)+" "+Util.multipleOrSingularEnding(charges, "charge")+" left"
 
 	return text
 

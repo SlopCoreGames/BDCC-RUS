@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.SexSlave
 
 func getVisibleName():
-	return "Kinky brat"
+	return "Извращенная шалава"
 
 func getVisibleDescription():
 	return "You know how to use your mouth more effectively, your bites cause more bleeding and do more damage"

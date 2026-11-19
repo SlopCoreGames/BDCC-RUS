@@ -6,7 +6,7 @@ func _init():
 	id = "codeline"
 
 func getName():
-	return "Code line"
+	return "Строка кода"
 
 func getVisibleText():
 	return storedCode

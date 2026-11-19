@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Start
 
 func getVisibleName():
-	return "No hybrids"
+	return "Без гибридов"
 
 func getVisibleDescription():
 	return "You will never give birth to a hybrid. Others that are impregnated by your cum will never give birth to a hybrid either. Hybrid is a mix of two species"

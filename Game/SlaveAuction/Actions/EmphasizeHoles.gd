@@ -7,7 +7,7 @@ func getActionType():
 	return AuctionActionType.Emphasize
 
 func getName() -> String:
-	return "Дырки @@B*@@"
+	return "Дырки"
 
 func getButtonDesc() -> String:
 	return "Spread the slave's butt and really show off their holes.\n\nDoesn't reveal any preferences, has a negative effects on bidders who don't strongly prefer any of the presented traits."

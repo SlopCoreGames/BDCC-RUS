@@ -26,7 +26,7 @@ func getTemplate():
 	return [
 		{
 			type = "label",
-			text = "Получить количество @@B*@@",
+			text = "Получить количество",
 		},
 		{
 			type = "slot",

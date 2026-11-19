@@ -4,13 +4,13 @@ func _init():
 	id = "ZiptiesWrist"
 
 func getVisibleName():
-	return "Zip ties (wrists)"
+	return "Пластиковые стяжки (на запястья)"
 	
 func getA():
 	return ""
 	
 func getDescription():
-	return "Bulky metal restraints. Can be locked to bind arms together"
+	return "Массивные металлические оковы. Можно запереть, чтобы сковать руки вместе"
 
 func getTakeOffScene():
 	return "CuffTuggingScene"

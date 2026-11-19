@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Fertility
 
 func getVisibleName():
-	return "Broodmother"
+	return "Матка-настоятельница"
 
 func getVisibleDescription():
 	return "Your womb is ripe for breeding, ready to bear the offspring of anyone dominant enough to claim you. \n"  \

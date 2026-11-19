@@ -45,7 +45,7 @@ Quick how-to:
 func getSettings() -> Dictionary:
 	return {
 		"webhookID": {
-			name = "Webhook ID",
+			name = "ID вебхука",
 			type = "string",
 			value = webhookID,
 		},

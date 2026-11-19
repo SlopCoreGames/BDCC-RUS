@@ -4,10 +4,10 @@ func _init():
 	id = "PlasticBottleBluespace"
 
 func getVisibleName():
-	return "Bluespace Plastic bottle"
+	return "Пластиковая бутылка блюспейса"
 	
 func getDescription():
-	return "Stores all your fluids in a bluespace dimension, allowing this bottle to store 100 times as much fluids as the normal bottle. Selling price depends on the contents."
+	return "Хранит все ваши жидкости в измерении блюспейса, что позволяет этой бутылке вмещать в 100 раз больше жидкости, чем обычная. Цена продажи зависит от содержимого."
 
 func getPrice():
 	return 20

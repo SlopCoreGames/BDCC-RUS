@@ -4,10 +4,10 @@ func _init():
 	id = "ChastityCageFlat"
 
 func getVisibleName():
-	return "Flat Cage"
+	return "Плоская клетка"
 	
 func getDescription():
-	return "Prevents the ability to use your penis. This one features a flat ergonomic design."
+	return "Лишает возможности использовать пенис. Эта модель отличается плоским эргономичным дизайном."
 
 func getClothingSlot():
 	return InventorySlot.Penis

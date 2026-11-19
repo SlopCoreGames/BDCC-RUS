@@ -6,7 +6,7 @@ func _init():
 	dungeonWeight = 0.0
 
 func getVisibleName():
-	return "Forced Ovulation"
+	return "Принудительная овуляция"
 
 func getVisibleDescription():
 	return "Maybe the cum will reach their ovaries if you keep stuffing their womb. Cumming inside someone who is cum-inflated has a chance to trigger heat and, in turn, ovulation."

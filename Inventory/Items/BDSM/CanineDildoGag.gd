@@ -4,10 +4,10 @@ func _init():
 	id = "caninedildogag"
 
 func getVisibleName():
-	return "Canine Dildo Gag"
+	return "Собачий дилдо-кляп"
 	
 func getDescription():
-	return "Consists out of a harness and a knotted rubber dildo that seals the mouth"
+	return "Состоит из шлейки и узловатого резинового дилдо, который плотно затыкает рот"
 
 func getClothingSlot():
 	return InventorySlot.Mouth

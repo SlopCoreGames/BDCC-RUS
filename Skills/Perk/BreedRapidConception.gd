@@ -6,7 +6,7 @@ func _init():
 	dungeonWeight = 0.0
 
 func getVisibleName():
-	return "Rapid Conception"
+	return "Быстрое зачатие"
 
 func getVisibleDescription():
 	return "Your seed posseses incredible properties. Cumming inside someone's pussy when you have full stamina and your balls are [b]full[/b] will give them a fertility boost and speed up any pregnanices!"

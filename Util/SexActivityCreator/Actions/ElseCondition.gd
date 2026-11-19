@@ -5,7 +5,7 @@ func _init():
 	id = "elsecondition"
 
 func getName():
-	return "Else Condition"
+	return "Условие Else"
 
 func getVisibleText():
 	return "ELSE:"

@@ -4,10 +4,10 @@ func _init():
 	id = "CanineDildo"
 
 func getVisibleName():
-	return "Canine dildo"
+	return "Собачий дилдо"
 	
 func getDescription():
-	return "A giant rubber dildo. Big enough to reach even the most deep spots. Can be filled with fluids to receive extra fun while riding it."
+	return "Гигантский резиновый фаллос. Он достаточно велик, чтобы добраться до самых глубоких точек. Его можно наполнить жидкостью, чтобы получить еще больше удовольствия во время езды на нем."
 
 func getPossibleActions():
 	return [

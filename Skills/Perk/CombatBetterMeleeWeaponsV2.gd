@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Combat
 
 func getVisibleName():
-	return "Force Multiplier"
+	return "Множитель силы"
 
 func getVisibleDescription():
 	return "Why use your fists when the prison is littered with all those contraband weapons. You do 35% more damage with melee weapons."

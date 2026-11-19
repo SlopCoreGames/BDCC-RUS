@@ -4,10 +4,10 @@ func _init():
 	id = "FetishGainPill"
 
 func getVisibleName():
-	return "Fetish Pill"
+	return "Таблетка фетиша"
 	
 func getDescription():
-	return "A very strong drug that alters your mind's hormone balance, making it gain and lose fetishes quicker"
+	return "Очень сильный препарат, который меняет гормональный баланс вашего разума, заставляя фетиши появляться и исчезать гораздо быстрее"
 
 func canUseInCombat():
 	return true

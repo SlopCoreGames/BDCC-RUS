@@ -4,7 +4,7 @@ func _init():
 	id = "HotWax"
 
 func getVisibleName():
-	return "Hot Wax"
+	return "Горячий воск"
 
 func getStatusEffectColor():
 	return Color.red

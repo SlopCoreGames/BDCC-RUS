@@ -6,7 +6,7 @@ func _init():
 	dungeonWeight = 0.0
 
 func getVisibleName():
-	return "Breeder's Bliss"
+	return "Блаженство заводчицы"
 
 func getVisibleDescription():
 	return "Heat is the prime state for breeding. Orgasming inside someone's pussy while they are in heat will relieve 20 pain and give you 20 stamina back!"

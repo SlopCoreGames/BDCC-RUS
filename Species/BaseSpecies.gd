@@ -17,7 +17,7 @@ func _init():
 	pass
 	
 func getVisibleName():
-	return "Error"
+	return "Ошибка"
 	
 func getVisibleDescription():
 	return "Not implemented, Let the developer know"

@@ -8,7 +8,7 @@ func _init():
 	id = "AddArousalSex"
 
 func getName():
-	return "Add Arousal"
+	return "Добавить возбуждение"
 
 func getVisibleText():
 	return generateCode()

@@ -4,10 +4,10 @@ func _init():
 	id = "inmatecollar"
 
 func getVisibleName():
-	return "Inmate collar"
+	return "Ошейник заключенной"
 	
 func getDescription():
-	return "Bulky and very uncomfortable collar made out of casted iron. Has a magnetic lock and a constantly blinking red light."
+	return "Громоздкий и крайне неудобный ошейник из литого железа. Оснащен магнитным замком и постоянно мигающим красным индикатором."
 
 func getClothingSlot():
 	return InventorySlot.Neck

@@ -7,7 +7,7 @@ func _init():
 	isWeaponAttack = true
 	
 func getVisibleName(_context = {}):
-	return "Throw condom"
+	return "Бросок презерватива"
 	
 func getVisibleDesc(_context = {}):
 	var item = getItem(_context)

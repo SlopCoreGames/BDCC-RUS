@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Breeder
 
 func getVisibleName():
-	return "Force of Nature"
+	return "Сила природы"
 
 func getVisibleDescription():
 	return "Embrace your role as the ultimate breeder. Your balls now produce seed 50% faster plus an additional 10% for each point in Strength! Your cum production now has no limits!"

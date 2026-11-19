@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.CumLover
 
 func getVisibleName():
-	return "Cum Slut"
+	return "Куни-сучка"
 
 func getVisibleDescription():
 	return "You ~love~ being covered in cum and no longer feel ashamed of it! Instead of debuffs, being covered with various lewd fluids will now provide you with various buffs, depending on the fluid!"

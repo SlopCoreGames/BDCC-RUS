@@ -15,7 +15,7 @@ func getVisibleName():
 			if(tf != null):
 				return tf.getPillName()
 	
-	return "Strange Pill"
+	return "Странная таблетка"
 
 #func getInventoryGroupID() -> String:
 #	if(GM.main == null):
@@ -164,7 +164,7 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 func useInSex(_receiver):
 	var _success:bool = pillStartTF(_receiver)[0]
 	return {
-		text = "Nothing happens at first.." if _success else "The pill has no effect.",
+		text = "Сначала ничего не происходит.." if _success else "The pill has no effect.",
 	}
 
 func getItemCategory():

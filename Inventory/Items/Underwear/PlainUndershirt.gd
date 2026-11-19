@@ -5,10 +5,10 @@ func _init():
 	clothesColor = Color(0.19, 0.19, 0.19)
 
 func getVisibleName():
-	return "Undershirt"
+	return "Майка"
 	
 func getDescription():
-	var text = "Sleeveless shirt that covers your chest."
+	var text = "Безрукавка, прикрывающая грудь."
 
 	return text
 

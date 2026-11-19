@@ -17,10 +17,10 @@ func _init():
 	id = "Shiv"
 
 func getVisibleName():
-	return "Shiv"
+	return "Шило"
 
 func getDescription():
-	var text = "An improvised weapon with a sharp tip.\nDoes "+Util.dmgRangeArrayStr(getDamageRange())+" physical damage and causes bleeding.\nHas enough durability for "+str(charges)+" "+Util.multipleOrSingularEnding(charges, "use")
+	var text = "Импровизированное оружие с острым наконечником.\nНаносит"+Util.dmgRangeArrayStr(getDamageRange())+" physical damage and causes bleeding.\nHas enough durability for "+str(charges)+" "+Util.multipleOrSingularEnding(charges, "use")
 
 	return text
 

@@ -483,8 +483,8 @@ func _run():
 		if (onlyOne):
 			saynn("Ты сможешь сделать с ней только одну вещь.")
 
-		addButtonWithChecks("@@B*@@Драть член@@T*@@@@F*@@", "Кончить ей на лицо", "pick_stroke", [], [ButtonChecks.HasReachablePenis])
-		addButtonWithChecks("@@B*@@Теребить киску@@T*@@@@F*@@", "Залить ей всё лицо сквиртом", "pick_rubpussy", [], [ButtonChecks.HasReachableVagina])
+		addButtonWithChecks("Драть член", "Кончить ей на лицо", "pick_stroke", [], [ButtonChecks.HasReachablePenis])
+		addButtonWithChecks("Теребить киску", "Залить ей всё лицо сквиртом", "pick_rubpussy", [], [ButtonChecks.HasReachableVagina])
 		addButtonWithChecks("Трахнуть её в зад", "Это будет немного неловко.. но нет ничего невозможного", "pick_fuckass", [], [ButtonChecks.HasReachablePenis])
 		addButtonWithChecks("Трахнуть её в зад страпоном", "Это будет немного неловко.. но нет ничего невозможного", "pick_straponass_pick", [], [ButtonChecks.HasStraponAndCanWear])
 		if (!onlyOne):
@@ -689,7 +689,7 @@ func _run():
 			saynn("Возможно, у неё ещё недостаточно опыта, чтобы получать удовольствие от анального секса.. но сейчас у неё есть шанс набраться опыта.")
 
 		else:
-			saynn("Волчица издаёт милый звук, когда чувствует, как твой {pc.penis} член@@ прощупывает её {jackiButt} анус. Её анальное кольцо к этому времени уже неплохо натренировано и послушно растягивается под твоим натиском.. Но Джеки всё ещё сжимается.")
+			saynn("Волчица издаёт милый звук, когда чувствует, как твой {pc.penis} член прощупывает её {jackiButt} анус. Её анальное кольцо к этому времени уже неплохо натренировано и послушно растягивается под твоим натиском.. Но Джеки всё ещё сжимается.")
 
 			saynn("[say=jacki]Ты собираешься.. растянуть мою дырку во всю ширь.. прямо здесь.. рррф..[/say]")
 

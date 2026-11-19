@@ -82,10 +82,10 @@ func _run():
 		saynn("Злобная охранница выходит из лифта, оказываясь лицом к лицу с Артикой.")
 
 		if (isNaked):
-			saynn("[say=risha]Шлюшка уже привыкает ходить голой, а?[say=risha]"+str(" And carrying someone's cubs too, such a breeding whore." if getCharacter("artica").isVisiblyPregnant() else "")+"[/say]")
+			saynn("[say=risha]Шлюшка уже привыкает ходить голой, а?"+str(" And carrying someone's cubs too, such a breeding whore." if getCharacter("artica").isVisiblyPregnant() else "")+"[/say]")
 
 		else:
-			saynn("[say=risha]Удивлена, что тебя до сих пор не заставили раздеться?[say=risha]"+str(" At least someone has knocked you up." if getCharacter("artica").isVisiblyPregnant() else "")+"[/say]")
+			saynn("[say=risha]Удивлена, что тебя до сих пор не заставили раздеться?"+str(" At least someone has knocked you up." if getCharacter("artica").isVisiblyPregnant() else "")+"[/say]")
 
 		saynn("[say=artica].. ..[/say]")
 

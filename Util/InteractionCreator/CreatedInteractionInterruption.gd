@@ -24,12 +24,12 @@ func getEditVars(allStates:Array):
 	
 	return {
 		"name": {
-			name = "Name",
+			name = "Имя",
 			type = "string",
 			value = name,
 		},
 		"desc": {
-			name = "Desc",
+			name = "Описание",
 			type = "bigString",
 			value = desc,
 		},
@@ -39,39 +39,39 @@ func getEditVars(allStates:Array):
 #			value = disabledDesc,
 #		},
 		"scoreType": {
-			name = "Score type",
+			name = "Тип очков",
 			type = "selector",
 			value = scoreType,
 			values = CreatedInteractionAction.allScoreTypes,
 		},
 		"scoreRole": {
-			name = "Score type role check",
+			name = "Проверка роли типа счета",
 			type = "string",
 			value = scoreRole,
 		},
 		"score": {
-			name = "Score",
+			name = "Очки",
 			type = "string",
 			value = score,
 		},
 		"args": {
-			name = "Args",
+			name = "Аргументы",
 			type = "string",
 			value = args,
 		},
 		"states": {
-			name = "States",
+			name = "Состояния",
 			type = "addRemoveList",
 			value = states,
 			values = allStatesFancy,
 		},
 		"cond": {
-			name = "Condition",
+			name = "Условие",
 			type = "string",
 			value = cond,
 		},
 		"code": {
-			name = "Code",
+			name = "Код",
 			type = "bigString",
 			value = code,
 			minsize = 300,

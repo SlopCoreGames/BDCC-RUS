@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.SexSlave
 
 func getVisibleName():
-	return "Edging"
+	return "Эджинг"
 
 func getVisibleDescription():
 	return "You love being on the edge. You do 50% more [color="+DamageType.getColorString(DamageType.Lust)+"]lust[/color] damage when your lust level is above 90%"

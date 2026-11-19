@@ -4,7 +4,7 @@ func _init():
 	id = "TentNeuroLink"
 
 func getVisibleName():
-	return "Neuro-Link injector"
+	return "Инъектор Нейро-Линк"
 	
 func getDescription():
 	var theText:String = "A single-use injector that holds a small chip that, if injected, will let you control an organic form that it was designed for."

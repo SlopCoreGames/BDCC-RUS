@@ -5,7 +5,7 @@ func _init():
 	id = "endcondition"
 
 func getName():
-	return "End Condition"
+	return "Условие завершения"
 
 func getVisibleText():
 	return "END_CONDITION"

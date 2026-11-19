@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Fertility
 
 func getVisibleName():
-	return "Submissive and Breedable"
+	return "Покорная и плодовитая"
 
 func getVisibleDescription():
 	return "You are a famous breeding toy. Doms will fuck you longer and will never pull out of you during vaginal or anal sex."

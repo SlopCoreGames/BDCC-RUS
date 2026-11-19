@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.CumLover
 
 func getVisibleName():
-	return "Cum Addict"
+	return "Спермозависимый"
 
 func getVisibleDescription():
 	return "Your body adapted to use cum as a source of protein. Fighting while having cum inside your belly OR ass will additionally remove [color="+DamageType.getColorString(DamageType.Physical)+"]4 pain[/color] each turn"

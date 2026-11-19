@@ -15,21 +15,21 @@ func doStruggle(_pc, _minigame:MinigameResult):
 	var _canSee = !_pc.isBlindfolded()
 	var _canBite = !_pc.isBitingBlocked()
 	
-	var text = "error?"
+	var text = "ошибка?"
 	var lust = 0
 	var pain = 0
 	var damage = 0
 	var stamina = 0
 	
 	if(failChanceLowScore(_pc, 15, _minigame)):
-		text = "{user.name} struggles to push the ring-gag out of {user.his} mouth, but {user.his} frantic movements only make the metal ring [b]press harder against {user.his} teeth and lips[/b], keeping {user.his} mouthhole always open."
+		text = "{user.name} изо всех сил пытается вытолкнуть кольцо-кляп изо рта {user.his}, но от {user.his} лихорадочных движений металлический обод лишь сильнее [b] впивается в {user.his} зубы и губы[/b], заставляя рот {user.his} всегда оставаться широко открытым."
 		damage = -0.5
 	elif(_handsFree && _armsFree):
-		text = "{user.name} tugs on the straps of {user.his} head harness, trying to take it off."
+		text = "{user.name} тянет за ремни налобной портупеи {user.his}, пытаясь снять её."
 		damage = calcDamage(_pc, _minigame)
 		stamina = 10
 	else:
-		text = "{user.name} tries to spit out the ring in {user.his} mouth but it proves to be very hard."
+		text = "{user.name} пытается выплюнуть кольцо изо рта {user.his}, но это оказывается чертовски трудно."
 		damage = calcDamage(_pc, _minigame, 0.1)
 		stamina = 5
 	

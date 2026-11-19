@@ -6,7 +6,7 @@ func _init():
 	dungeonWeight = 0.0
 
 func getVisibleName():
-	return "Unique Biology"
+	return "Уникальная биология"
 
 func getVisibleDescription():
 	return "Your fuckholes have adjusted to all sorts of cocks, gaining some animalistic traits in the process. Knotting you is now easier (and makes you feel good), barbed cocks can cause ovulation, and flared horsecocks will remove all other cum on penetration."

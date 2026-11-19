@@ -45,7 +45,7 @@ func pickEquipment(character:DynamicCharacter, _args = {}):
 	character.npcDefaultEquipment = theEquipment
 
 func pickSmallDescription(character:DynamicCharacter, _args = {}):
-	var text = "One of the guards. "+str(.pickSmallDescription(character, _args))
+	var text = "Один из охранников."+str(.pickSmallDescription(character, _args))
 
 	var level = character.npcLevel
 	

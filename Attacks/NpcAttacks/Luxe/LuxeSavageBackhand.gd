@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Savage Backhand"
+	return "Дикий тычок лапой"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -20,7 +20,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 		addLuxeRage(_attacker, 0.25)
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "{attacker.name}'s massive paw slams into the side of your head with bone-crushing force, claws slicing into your skin as the world spins violently. Blood spatters against the floor as the pain roars through your skull."
+	var text = "Массивная лапа {attacker.name} с костодробительной силой врезается в твой висок; когти впиваются в кожу, а мир вокруг начинает бешено вращаться. Кровь брызжет на пол, пока нестерпимая боль ревет в твоем черепе."
 	
 	if(RNG.chance(50) && _receiver.addEffect(StatusEffect.Bleeding)):
 		text += " [b]You begin to bleed![/b]"
@@ -37,7 +37,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	var text = "{attacker.name} bares {attacker.his} teeth, a growl rumbling deep in {attacker.his} chest as {attacker.he} raises a clawed hand. {attacker.His} glowing fur pulsates faintly with {attacker.his} rising fury."
+	var text = "{attacker.name} скалит {attacker.his} зубы, и в глубине {attacker.his} груди рокочет рык, когда {attacker.he} заносит когтистую лапу. {attacker.His} светящаяся шерсть едва заметно пульсирует от {attacker.his} нарастающей ярости."
 
 	return text
 

@@ -504,7 +504,7 @@ func doRoundOfBidding() -> int:
 				bidder.onBid(totalBidTimes)
 				
 				if(totalBidTimes == 0):
-					saynn("[say=\""+bidder.bidderID+"]Я уравняю ставку "+str(currentBid)+" кредитов.[/say]")
+					saynn("[say="+bidder.bidderID+"]Я уравняю ставку "+str(currentBid)+" кредитов.[/say]")
 				else:
 					var theDot:String = "."
 					if(totalBidTimes > 10):
@@ -514,9 +514,9 @@ func doRoundOfBidding() -> int:
 						prefix = "I will raise it to "
 						
 					if(resultBidAmount == 0 || RNG.chance(80 - resultBidAmount*10 - totalBidTimes*3)):
-						saynn("[say=\""+bidder.bidderID+"]"+prefix+str(currentBid)+" credits"+theDot+"[/say]")
+						saynn("[say="+bidder.bidderID+"]"+prefix+str(currentBid)+" credits"+theDot+"[/say]")
 					else:
-						saynn("[say=\""+bidder.bidderID+"]"+prefix+str(currentBid)+" credits"+theDot+" "+bidder.getOutbidReaction()+"[/say]")
+						saynn("[say="+bidder.bidderID+"]"+prefix+str(currentBid)+" credits"+theDot+" "+bidder.getOutbidReaction()+"[/say]")
 					
 					
 					#saynn(bidder.name+" выставил(а) "+str(currentBid)+" кредитов.")

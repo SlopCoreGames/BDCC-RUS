@@ -4,10 +4,10 @@ func _init():
 	id = "PlasticBottle"
 
 func getVisibleName():
-	return "Plastic bottle"
+	return "Пластиковая бутылка"
 	
 func getDescription():
-	return "Just your average plastic bottle. The special lid compresses liquids inside, allowing it to store more than it could have otherwise. Selling price depends on the contents."
+	return "Самая обычная пластиковая бутылка. Специальная крышка сжимает жидкость внутри, позволяя вместить больше объема, чем обычно. Цена продажи зависит от содержимого."
 
 func getPrice():
 	return 5

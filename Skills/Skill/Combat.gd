@@ -4,7 +4,7 @@ func _init():
 	id = Skill.Combat
 
 func getVisibleName():
-	return "Combat"
+	return "Бой"
 
 func getVisibleDescription():
 	return "Shows how well you are at a physical hand-to-hand combat"

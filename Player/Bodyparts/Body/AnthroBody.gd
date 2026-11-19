@@ -1,7 +1,7 @@
 extends BodypartBody
 
 func _init():
-	visibleName = "anthro body"
+	visibleName = "антропоморфное тело"
 	id = "anthrobody"
 
 func getCompatibleSpecies():

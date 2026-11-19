@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Lust
 	
 func getVisibleName(_context = {}):
-	return "Slap tits"
+	return "Шлепать по сиськам"
 	
 func getVisibleDesc(_context = {}):
 	return "You shouldn't see this"

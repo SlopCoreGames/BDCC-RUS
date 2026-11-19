@@ -5,7 +5,7 @@ func _init():
 	partID = "combedbackhair"
 
 func getName():
-	return "Angled"
+	return "Угловатый"
 
 func getPatternTexture():
 	return {

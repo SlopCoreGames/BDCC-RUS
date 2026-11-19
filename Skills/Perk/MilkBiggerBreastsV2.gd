@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Milking
 
 func getVisibleName():
-	return "Mega milk"
+	return "Мега-молоко"
 
 func getVisibleDescription():
 	return "Bigger breasts means more milk! And you want more milk! Your breasts can get bigger by one additional size when lactating"

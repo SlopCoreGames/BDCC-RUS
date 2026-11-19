@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Breeder
 
 func getVisibleName():
-	return "Cum stud"
+	return "Конь-производитель"
 
 func getVisibleDescription():
 	return "What a stud, your balls are always so heavy! They swiftly fill up by additional 20% after your every orgasm"

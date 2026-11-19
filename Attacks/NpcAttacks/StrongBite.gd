@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Strong bite"
+	return "Сильный укус"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -18,7 +18,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkDodged(_attacker, _receiver, DamageType.Physical)):
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "{attacker.name} manages to bite {receiver.name}, making them [color=red]bleed[/color]!"
+	var text = "{attacker.name} умудряется укусить {receiver.name}, заставляя их [color=red]истекать кровью[/color]!"
 	_receiver.addEffect(StatusEffect.Bleeding)
 	
 	return {

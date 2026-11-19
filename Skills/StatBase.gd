@@ -4,7 +4,7 @@ class_name StatBase
 var id = "error"
 
 func getVisibleName():
-	return "Error"
+	return "Ошибка"
 
 func getVisibleDescription():
 	return "Error"

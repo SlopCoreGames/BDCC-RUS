@@ -5,10 +5,10 @@ func _init():
 	clothesColor = Color(0.19, 0.19, 0.19)
 
 func getVisibleName():
-	return "Lace panties"
+	return "Кружевные трусики"
 	
 func getDescription():
-	var text = "Sexy lace panties with a fancy pattern. These are sure to make anyone horny"
+	var text = "Сексуальные кружевные трусики с изысканным узором. От них точно у любого встанет"
 
 	return text
 

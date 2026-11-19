@@ -4,7 +4,7 @@ func _init():
 	id = Skill.Milking
 
 func getVisibleName():
-	return "Milking"
+	return "Дойка"
 
 func getVisibleDescription():
 	return "Shows how much you like being milked"

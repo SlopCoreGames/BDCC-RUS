@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Combat
 
 func getVisibleName():
-	return "Drunken master"
+	return "Пьяный мастер"
 
 func getVisibleDescription():
 	return "Being drunk makes you less predictable. If your intoxication is above 50% you get 10% bonus to your dodging"

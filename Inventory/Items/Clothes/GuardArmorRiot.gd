@@ -4,7 +4,7 @@ func _init():
 	id = "GuardArmorRiot"
 
 func getDescription():
-	return "A standard armor for guards. This is a riot variant that offers a lot of protection against physical damage."
+	return "Стандартная броня для охранников. Этот вариант предназначен для подавления беспорядков и обеспечивает отличную защиту от физического урона."
 
 func getBuffs():
 	return [

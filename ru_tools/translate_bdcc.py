@@ -123,7 +123,14 @@ def validate_masks(translated: str, masks: dict) -> bool:
     found = MASK_ANY_RE.findall(translated)
     if any(tok not in masks for tok in found):
         return False
-    return all(k in translated for k in masks)
+    if any(translated.count(k) != 1 for k in masks):
+        return False
+    cleaned = translated
+    for k in masks:
+        cleaned = cleaned.replace(k, "")
+    if "@@" in cleaned:
+        return False
+    return True
 
 
 def call_llm(messages: list, json_mode: bool = False, max_tokens: int = 3072) -> str:

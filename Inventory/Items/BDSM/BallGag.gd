@@ -4,10 +4,10 @@ func _init():
 	id = "ballgag"
 
 func getVisibleName():
-	return "Ball Gag"
+	return "Шарик-кляп"
 	
 func getDescription():
-	return "Can be used to gag those cheeky brats"
+	return "Можно использовать, чтобы заткнуть этих дерзких засранок"
 
 func getClothingSlot():
 	return InventorySlot.Mouth

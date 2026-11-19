@@ -4,7 +4,7 @@ func _init():
 	id = "HealingGel"
 
 func getVisibleName():
-	return "Healing Gel"
+	return "Лечебный гель"
 
 func getMessyDescription(_pc, _amount):
 	if(_amount >= 50.0):

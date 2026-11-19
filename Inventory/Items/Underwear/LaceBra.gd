@@ -5,10 +5,10 @@ func _init():
 	clothesColor = Color(0.19, 0.19, 0.19)
 
 func getVisibleName():
-	return "Lace bra"
+	return "Кружевной бюстгальтер"
 	
 func getDescription():
-	var text = "Sexy-looking bra that will emphasize your breasts in just the right way"
+	var text = "Сексуальный лифчик, который подчеркнет твою грудь именно так, как надо"
 
 	return text
 

@@ -4,7 +4,7 @@ func _init():
 	id = "StripesSkin"
 
 func getName():
-	return "Stripes"
+	return "Полоска"
 
 func getPatternTexture():
 	return load("res://Player/Player3D/Skins/StripesSkin/stripesSkin.png")

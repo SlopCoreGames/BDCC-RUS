@@ -8,7 +8,7 @@ func registerTriggers(es):
 
 func run(_triggerID, _args):
 	if(getFlag("NpcSlaveryModule.hasSybian")):
-		addButton("Сибиан", "Оседлай свою секс-машину сибиан @@B*@@@@T*@@@@F*@@", "sybian")
+		addButton("Сибиан", "Оседлай свою секс-машину сибиан", "sybian")
 
 func getPriority():
 	return 0

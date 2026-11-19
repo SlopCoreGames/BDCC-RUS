@@ -5,7 +5,7 @@ func _init():
 	skillGroup = Skill.Combat
 
 func getVisibleName():
-	return "The wall"
+	return "Стена"
 
 func getVisibleDescription():
 	return "You learned how to block with your hands better. You now receive extra 10 armor when blocking an attack. Each 50 armor halves the incoming damage."

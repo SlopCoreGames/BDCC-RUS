@@ -6,7 +6,7 @@ func _init():
 	dungeonWeight = 0.0
 
 func getVisibleName():
-	return "Breeder's Streak"
+	return "Серия заводчика"
 
 func getVisibleDescription():
 	return "Cum inside anyone to start a streak! Each new unique partner extends that streak. The higher your streak, the stronger you become. But your streak ends if you haven't came inside anyone new in 6 hours."

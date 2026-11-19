@@ -4,7 +4,7 @@ func _init():
 	id = "NovaSkin"
 
 func getName():
-	return "Soft"
+	return "Мягкий"
 
 func getPatternTexture():
 	return load("res://Player/Player3D/Skins/NovaSkin/novaSkin.png")
