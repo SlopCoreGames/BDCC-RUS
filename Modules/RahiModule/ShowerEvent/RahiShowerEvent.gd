@@ -13,7 +13,7 @@ func run(_triggerID, _args):
 	if(doEventCheck("RahiBusy") != null):
 		return
 	
-	saynn("You notice that the familiar kitty with brown fur is taking a shower here too.")
+	saynn("Вы замечаете, что та самая знакомая коричневая кошечка тоже принимает здесь душ.")
 	addButtonUnlessLate("Rahi", "Approach the kitty", "talk")
 
 func getPriority():

@@ -5,11 +5,11 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("Next bidders will have these preferences:")
+		saynn("У следующих участников аукциона будут такие предпочтения:")
 
 		saynn(""+str(getModule("SlaveAuctionModule").getBidderInfo())+"")
 
-		addButton("Close", "Enough peeking", "endthescene")
+		addButton("Закрыть", "Достаточно подглядывать", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

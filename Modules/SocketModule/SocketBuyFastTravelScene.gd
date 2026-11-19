@@ -12,7 +12,7 @@ func _reactInit():
 
 func _run():
 	if(state == ""):
-		saynn("Which one-way vent should Socket make available from your cell?")
+		saynn("Какое одностороннее вентиляционное отверстие должен открыть для тебя Сокет?")
 
 		var ventData = getModule("SocketModule").getFastTravelData()
 		
@@ -21,22 +21,22 @@ func _run():
 			var hasVent = getFlag("SocketModule."+ventID, false)
 			
 			if(hasVent):
-				addDisabledButton(ventInfo["name"], "You already have this vent available!")
+				addDisabledButton(ventInfo["name"], "Это отверстие у тебя уже есть!")
 			else:
-				addButton(ventInfo["name"], "Look at information about this vent", "look_vent", [ventID])
+				addButton(ventInfo["name"], "Посмотреть информацию об этом отверстии", "look_vent", [ventID])
 
-		addButton("Close", "You changed your mind", "endthescene")
+		addButton("Закрыть", "Вы передумали", "endthescene")
 
 	if(state == "look_vent"):
 		var ventData = getModule("SocketModule").getFastTravelData()
 		var ventInfo = ventData[selectedVent]
 		
 		saynn(ventInfo["buydesc"])
-		saynn("Cost: "+str(ventInfo["cost"])+" credits")
-		saynn("Do you want ask Socket to make this vent available?")
+		saynn("Цена: "+str(ventInfo["cost"])+" credits")
+		saynn("Хочешь попросить Сокета открыть это отверстие?")
 		
-		addButtonWithChecks("Unlock it", "Pay the cost and get this vent working", "buy_vent", [ventInfo["cost"]], [[ButtonChecks.HasCredits, ventInfo["cost"]]])
-		addButton("Back", "You changed your mind", "")
+		addButtonWithChecks("Разблокировать", "Оплатить и запустить это отверстие", "buy_vent", [ventInfo["cost"]], [[ButtonChecks.HasCredits, ventInfo["cost"]]])
+		addButton("Назад", "Вы передумали", "")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

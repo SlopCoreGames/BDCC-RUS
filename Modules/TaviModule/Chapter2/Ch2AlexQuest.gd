@@ -4,7 +4,7 @@ func _init():
 	id = "Ch2AlexQuest"
 
 func getVisibleName():
-	return "Bluespace'd"
+	return "Блюспейснутый"
 
 func getProgress():
 	var result = []

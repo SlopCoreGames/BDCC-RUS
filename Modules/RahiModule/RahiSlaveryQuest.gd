@@ -4,7 +4,7 @@ func _init():
 	id = "RahiSlaveryQuest"
 
 func getVisibleName():
-	return "Rahi's Wet Whiskers"
+	return "Мокрые усы Рахи"
 
 func getProgress():
 	var result = []

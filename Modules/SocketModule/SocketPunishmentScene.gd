@@ -46,138 +46,138 @@ func _reactInit():
 
 func _run():
 	if(state == ""):
-		saynn("Shouldn't see this.")
+		saynn("Этого здесь быть не должно.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 	if(state == "tieup"):
 		addCharacter("socket")
 		playAnimation(StageScene.Hogtied, "idle", {pc="pc"})
-		saynn("After a long night, your eyes open..")
+		saynn("После долгой ночи твои глаза открываются...")
 
-		saynn("It's very dark.. Did someone forget to turn on the lights?")
+		saynn("Вокруг очень темно... Неужели кто-то забыл включить свет?")
 
-		saynn("You try to rub your eyes.. but quickly realize that you can't, something is preventing you from doing so. Rope! You're tied up to your own bed.")
+		saynn("Ты пытаешься протереть глаза... но быстро понимаешь, что не можешь — что-то тебе мешает. Верёвки! Ты привязан к собственной кровати.")
 
-		saynn("[say=socket]Oh, you're up! Good morning! Wondering why you're blindfolded and tied up?[/say]")
+		saynn("[say=socket]О, ты уже проснулась! Доброе утро! Гадаешь, почему ты с повязкой на глазах и связана?[/say]")
 
-		saynn("Huh. Looks like Socket is punishing you for something.")
+		saynn("Хм. Похоже, Сокет тебя за что-то наказывает.")
 
 		saynn("[say=socket]"+str(socketLine)+"[/say]")
 
-		saynn("Right.. She kinda has the upper hand here.")
+		saynn("Ну да... В этой ситуации преимущество явно на её стороне.")
 
-		saynn("[say=pc]I'm sorry?[/say]")
+		saynn("[say=pc]Прости, что?[/say]")
 
-		saynn("[say=socket]You are forgiven![/say]")
+		saynn("[say=socket]Ты прощена![/say]")
 
-		saynn("That was quick.")
+		saynn("Это было быстро.")
 
-		saynn("[say=pc]Can you untie me now?[/say]")
+		saynn("[say=pc]Теперь можешь меня развязать?[/say]")
 
-		saynn("No answer..")
+		saynn("Ответа нет...")
 
-		saynn("[say=pc]Socket?[/say]")
+		saynn("[say=pc]Розетка?[/say]")
 
-		saynn("Looks like she left..")
+		saynn("Похоже, она ушла...")
 
-		addButton("Continue", "See what happens next", "escape_loop")
+		addButton("Продолжить", "Смотреть, что будет дальше", "escape_loop")
 	if(state == "escape_loop"):
 		removeCharacter("socket")
 		playAnimation(StageScene.Hogtied, "idle", {pc="pc"})
-		saynn("You're tied up to your bed in your own cell.")
+		saynn("Ты привязана к кровати в своей собственной камере.")
 
-		addButton("Rest", "Take a breather", "escape_rest")
-		addButtonWithChecks("Struggle", "Start struggling against your restraints", "escape_do_struggle", [], [[ButtonChecks.HasStamina]])
-		addButtonWithChecks("Get up", "Enough lying around", "escape_do_getup", [], [[ButtonChecks.NotArmsRestrained], [ButtonChecks.NotLegsRestrained], [ButtonChecks.NotWearingItem, "ropeharness"]])
+		addButton("Отдохнуть", "Перевести дух", "escape_rest")
+		addButtonWithChecks("Сопротивление", "Начать вырываться из пут", "escape_do_struggle", [], [[ButtonChecks.HasStamina]])
+		addButtonWithChecks("Встать", "Хватит валяться без дела", "escape_do_getup", [], [[ButtonChecks.NotArmsRestrained], [ButtonChecks.NotLegsRestrained], [ButtonChecks.NotWearingItem, "ropeharness"]])
 	if(state == "escape_do_getup"):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("Yay, you managed to get through Socket's little punishment. Huh, you realize that there is a credit chip with a single credit on your pillow. Did Socket leave it?")
+		saynn("Ура, тебе удалось пережить маленькое наказание от Сокета. О, смотри, на твоей подушке лежит кредитный чип с одной монетой. Неужели Сокет его оставил?")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "escape_rest"):
-		saynn("You give up and try to rest for a bit..")
+		saynn("Ты сдаешься и пытаешься немного отдохнуть...")
 
-		addButton("Resting", "You are resting", "escape_rest1")
+		addButton("Отдых", "Ты отдыхаешь", "escape_rest1")
 	if(state == "escape_rest1"):
-		saynn("You're resting..")
+		saynn("Ты отдыхаешь...")
 
-		addButton("Resting", "You are resting", "escape_rest2")
+		addButton("Отдых", "Ты отдыхаешь", "escape_rest2")
 	if(state == "escape_rest2"):
-		saynn("Still resting..")
+		saynn("Всё ещё отдыхаешь...")
 
-		addButton("Resting", "You are resting", "escape_rest3")
+		addButton("Отдых", "Ты отдыхаешь", "escape_rest3")
 	if(state == "escape_rest3"):
-		saynn("You have rested for some hours..")
+		saynn("Ты проспал несколько часов...")
 
 		if (GM.main.isVeryLate()):
-			saynn("Somehow, you managed to spend the whole day struggling! Time to sleep..")
+			saynn("Каким-то образом тебе удалось провести весь день в мучениях! Пора спать...")
 
-			addButton("Sleep", "Do sleep", "escape_sleep")
+			addButton("Спать", "Лечь спать", "escape_sleep")
 		else:
-			addButton("Continue", "See what happens next", "escape_loop")
+			addButton("Продолжить", "Смотреть, что будет дальше", "escape_loop")
 	if(state == "escape_sleep"):
-		saynn("Welcome to a new day! Sleeping while tied up to your bed wasn't the best experience in your life..")
+		saynn("Добро пожаловать в новый день! Сон в связанном состоянии — не самое приятное впечатление в твоей жизни...")
 
-		addButton("Continue", "See what happens next", "socket_decides_to_save")
+		addButton("Продолжить", "Смотреть, что будет дальше", "socket_decides_to_save")
 	if(state == "socket_decides_to_save"):
 		addCharacter("socket")
 		playAnimation(StageScene.Duo, "stand", {npc="socket"})
-		saynn("Suddenly you feel someone untying you from the bed!")
+		saynn("Внезапно ты чувствуешь, что кто-то развязывает тебя на кровати!")
 
-		saynn("[say=socket]Hey, I felt bad leaving you like this for the whole day. Sorry![/say]")
+		saynn("[say=socket]Эй, мне было не по себе от того, что я оставила тебя в таком виде на весь день. Прости![/say]")
 
-		saynn("Wow, what a kind fennec.")
+		saynn("Ого, какая добрая лисичка-фенек.")
 
-		saynn("[say=pc]It's okay. Gonna untie me now?[/say]")
+		saynn("[say=pc]Всё в порядке. Сейчас развяжешь меня?[/say]")
 
 		if (GM.pc.isBlindfolded()):
-			saynn("No response.. again..")
+			saynn("Никакой реакции... опять...")
 
-			saynn("[say=pc]Right..[/say]")
+			saynn("[say=pc]Так..[/say]")
 
 		else:
-			saynn("Socket smiles and just walks away. Right..")
+			saynn("Сокет улыбается и просто уходит. Ну да, конечно...")
 
-		saynn("At least you're free. Kinda.")
+		saynn("По крайней мере, ты свободна. В каком-то смысле.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "hypnovisor"):
 		addCharacter("socket")
 		playAnimation(StageScene.Duo, "stand", {npc="socket"})
-		saynn("After a long night, you open your eyes.. and realize that the world looks so much more alive. The only problem is that your arms seem to be tied up..")
+		saynn("После долгой ночи ты открываешь глаза... и понимаешь, что мир кажется куда более живым. Единственная проблема в том, что твои руки, кажется, связаны...")
 
-		saynn("[rainbow freq=0.05 sat=0.9 val=1.0]Everything is so colorful.[/rainbow]")
+		saynn("[rainbow freq=0.05 sat=0.9 val=1.0]Всё такое яркое и красочное.[/rainbow]")
 
-		saynn("[say=socket]Good morning! Slept well?[/say]")
+		saynn("[say=socket]Доброе утро! Хорошо спалось?[/say]")
 
-		saynn("You get up off your bed and see Socket standing near. You feel like.. she did it to you.. you feel like you should thank her..")
+		saynn("Ты встаешь с кровати и видишь Сокет неподалеку. Тебе кажется... что это она сделала с тобой... и кажется, что ты должна её поблагодарить...")
 
-		saynn("[say=pc]Yes, thank you![/say]")
+		saynn("[say=pc]Да, спасибо![/say]")
 
-		saynn("Socket giggles.")
+		saynn("Сокет хихикает.")
 
-		saynn("[say=socket]Wonder why I did it?[/say]")
+		saynn("[say=socket]Интересно, почему я это сделала?[/say]")
 
-		saynn("You shake your head. Why care about such things..")
+		saynn("Ты качаешь головой. Зачем вообще об этом думать...")
 
-		saynn("Socket giggles again.")
+		saynn("Сокет снова хихикает.")
 
 		saynn("[say=socket]"+str(socketLine)+"[/say]")
 
-		saynn("Right..")
+		saynn("Понятно...")
 
-		saynn("[say=pc]I'm very sorry, won't happen again ever never forever![/say]")
+		saynn("[say=pc]Мне очень жаль, больше никогда, никогда, никогда не повторится![/say]")
 
-		saynn("[say=socket]You are forgiven![/say]")
+		saynn("[say=socket]Ты прощена![/say]")
 
-		saynn("That was quick. You nod. Socket nods.")
+		saynn("Это было быстро. Вы киваете. Сокет кивает в ответ.")
 
-		saynn("Socket leaves..")
+		saynn("Сокет уходит...")
 
-		saynn("Looks like you get to keep the visor. She is so nice, isn't she?")
+		saynn("Похоже, визор остается у тебя. Она такая милая, правда?")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -11,21 +11,21 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 
-		saynn("You approach the counter that Eliza usually sits behind. She is there, drinking her coffee as usual. But when she sees you, her expression changes to a very dark one, she frowns.")
+		saynn("Вы подходите к стойке, за которой обычно сидит Элиза. Она на месте, как обычно, потягивает кофе. Но когда она видит вас, выражение её лица резко меняется на мрачное, и она хмурится.")
 
-		saynn("[say=eliza]It’s you. I remember what you did to me.[/say]")
+		saynn("[say=eliza]Это ты. Я помню, что ты со мной сделал.[/say]")
 
-		saynn("You’re not really sure how to react. Eliza growls at you but then gets quiet.")
+		saynn("Вы не совсем понимаете, как реагировать. Элиза рычит на вас, но затем внезапно замолкает.")
 
-		saynn("[say=eliza]You’re lucky I didn’t tell the captain. He would space you the same second.[/say]")
+		saynn("[say=eliza]Тебе повезло, что я не доложила капитану. Он бы отправил тебя в открытый космос в ту же секунду.[/say]")
 
-		saynn("She sips some coffee and calms down.")
+		saynn("Она делает глоток кофе и немного успокаивается.")
 
-		saynn("[say=eliza]Anyway, what do you want?[/say]")
+		saynn("[say=eliza]В общем, чего тебе?[/say]")
 
 		# (scene ends, starts talking scene again?)
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 
 func _react(_action: String, _args):

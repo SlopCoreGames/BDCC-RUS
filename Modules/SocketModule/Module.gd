@@ -70,50 +70,50 @@ func getFastTravelData():
 
 	result["fastTravelCanteen"] = {
 		cost = 10,
-		name = "Canteen",
+		name = "Столовая",
 		location = "hall_canteen",
 		buydesc = "Vent that goes to the canteen of the main floor",
 	}
 	result["fastTravelGym"] = {
 		cost = 10,
-		name = "Gym",
+		name = "Тренажерный зал",
 		location = "gym_nearbathroom",
 		buydesc = "Vent that goes straight to the gym where all the training equipment is",
 	}
 	result["fastTravelBathroom1"] = {
 		cost = 10,
-		name = "Main bathroom",
+		name = "Главная уборная",
 		location = "main_bathroom1",
 		buydesc = "Vent that goes to the bathroom connected to the main hall",
 	}
 	result["fastTravelBathroom2"] = {
 		cost = 10,
-		name = "Gym bathroom",
+		name = "Уборная в спортзале",
 		location = "main_bathroom2",
 		buydesc = "Vent that goes to the bathroom near the gym",
 	}
 	result["fastTravelMedical"] = {
 		cost = 15,
-		name = "Medical lobby",
+		name = "Вестибюль медпункта",
 		location = "med_lobby_start",
 		buydesc = "Vent that goes straight to the medical wing lobby",
 	}
 	result["fastTravelMineshaft"] = {
 		cost = 15,
-		name = "Mineshafts",
+		name = "Шахты",
 		location = "mining_shafts_entering",
 		buydesc = "Vent that goes to the mineshafts",
 	}
 	result["fastTravelWorkshop"] = {
 		cost = 15,
-		name = "Workshop",
+		name = "Мастерская",
 		location = "eng_workshop",
 		buydesc = "Vent that goes to the engineering workshop",
 	}
 	if(getFlag("SocketModule.h4completed")):
 		result["fastTravelMedicalCorridor"] = {
 			cost = 25,
-			name = "Medical corridor",
+			name = "Коридор медпункта",
 			location = "med_nearmilking",
 			buydesc = "Vent that bypasses the staff-only doors of the medical wing and leads to one of its corridors.",
 		}
@@ -121,14 +121,14 @@ func getFastTravelData():
 		if(GM.QS.isCompleted("Ch2AlexQuest") || getFlag("AlexRynardModule.ch2CanEnterEngineering")):
 			result["fastTravelEngBreakroom"] = {
 				cost = 25,
-				name = "Eng. break room",
+				name = "Комната отдыха инженеров",
 				location = "eng_breakroom",
 				buydesc = "Vent that bypasses the staff-only doors of the engineering wing and leads to its break room.",
 			}
 	if(getFlag("SocketModule.h4completed") && getFlag("FightClubModule.BulldogBypassed")):
 		result["fastTravelUnder"] = {
 			cost = 30,
-			name = "Underground",
+			name = "Подземелье",
 			location = "fight_neararena",
 			buydesc = "Vent that goes to the abandoned maintenance area. Socket doesn't understand why would you be interested in this particular space but she is willing to do it for some extra credits.",
 		}

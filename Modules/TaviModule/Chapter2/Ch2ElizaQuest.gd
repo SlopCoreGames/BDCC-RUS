@@ -4,7 +4,7 @@ func _init():
 	id = "Ch2ElizaQuest"
 
 func getVisibleName():
-	return "Mind-melting Drugs"
+	return "Выносящие мозг наркотики"
 
 func getProgress():
 	var result = []

@@ -11,112 +11,112 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Solo, "stand")
 		
-		saynn("You approach the airlock that leads to some area you have no access to. But there is a little reinforced window. You peek through it and try to see anything interesting. It's just a bland corridor with a few doors and occasional engineers walking around. Not too useful.")
+		saynn("Вы подходите к шлюзу, ведущему в зону, куда вам пока нет доступа. Но там есть небольшое армированное окошко. Вы заглядываете в него, пытаясь разглядеть что-нибудь интересное. Это всего лишь скучный коридор с парой дверей и редкими инженерами, проходящими мимо. Не особо полезно.")
 
-		saynn("You check the airlock controls. It’s a panel that requires a pin code or an id card. And you have none of these.")
+		saynn("Вы проверяете управление шлюзом. Это панель, требующая ПИН-код или ID-карту. А у вас нет ни того, ни другого.")
 
-		saynn("Maybe Tavi can think of something. Time to go.")
+		saynn("Может, Тави что-нибудь придумает. Пора идти.")
 
-		addButton("Leave?", "See what happens next", "leave?")
+		addButton("Уйти?", "Смотреть, что будет дальше", "leave?")
 
 	if(state == "leave?"):
 		addCharacter("alexrynard")
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard"})
 		
-		saynn("But just before you can leave you see Alex Rynard walking up to you, he seems quite angry.")
+		saynn("Но прежде чем вы успеваете уйти, к вам подходит Алекс Ринард, и он выглядит чертовски злым.")
 
-		saynn("[say=alexrynard]Now wait a second. It’s my turn to ask questions.[/say]")
+		saynn("[say=alexrynard]А теперь погоди. Сейчас настала моя очередь задавать вопросы.[/say]")
 
-		saynn("He grabs you by the collar and shoves against the wall. Ow. It seems he snapped out of his working mood.")
+		saynn("Он хватает вас за воротник и вжимает в стену. Ой! Похоже, он окончательно вышел из рабочего режима.")
 
-		saynn("[say=alexrynard]How the heck did you know what happened with the bluespace transmitter? And that it even exist?[/say]")
+		saynn("[say=alexrynard]Какого черта ты вообще знаешь, что случилось с передатчиком блюспейса? И что он вообще существует?[/say]")
 
-		addButton("Intimidate", "Try to scare him", "intimidate")
-		addButton("Excuses", "Try to lie yourself out of the situation", "excuses")
-		addButton("Grab crotch", "Maybe you can soften him up by making him hard", "grab_crotch")
+		addButton("Запугивание", "Попытаться его напугать", "intimidate")
+		addButton("Оправдания", "Попытаться выкрутиться с помощью лжи", "excuses")
+		addButton("Схватить за пах", "Может, получится его размягчить, заставив встать?", "grab_crotch")
 
 
 
 	if(state == "intimidate"):
-		saynn("You break free of his grasp and push him back a bit.")
+		saynn("Ты вырываешься из его хватки и слегка отталкиваешь его.")
 
-		saynn("[say=pc]It’s not your problem. And if you don’t want to end up in the medical wing you better stop asking questions.[/say]")
+		saynn("[say=pc]Это не твои проблемы. И если не хочешь оказаться в медблоке, лучше перестань задавать вопросы.[/say]")
 
-		saynn("The guy frowns at your response and keeps his shock remote ready.")
+		saynn("Парень хмурится на твой ответ и не выпускает из рук шокер.")
 
 		# (if highsec)
 		if(GM.pc.getInmateType() == InmateType.HighSec):
-			saynn("[say=alexrynard]It doesn’t work like that, red. You better convince me real good if you don’t want your neck to be fried.[/say]")
+			saynn("[say=alexrynard]Всё работает не так, рыжая. Тебе лучше хорошенько меня убедить, если не хочешь, чтобы твою шею поджарило.[/say]")
 
 		# (if general)
 		if(GM.pc.getInmateType() == InmateType.General):
-			saynn("[say=alexrynard]You ain’t got enough teeth to scare me, orange toy. But you better convince me real good if you don’t want your neck to be fried.[/say]")
+			saynn("[say=alexrynard]Тебе зубов не хватит, чтобы меня напугать, оранжевая игрушка. Но тебе лучше хорошенько меня убедить, если не хочешь, чтобы твою шею поджарило.[/say]")
 
 		# (if lilac)
 		if(GM.pc.getInmateType() == InmateType.SexDeviant):
-			saynn("[say=alexrynard]A lilac sextoy is trying to scare me? That’s funny. You better convince me real good if you don’t want your neck to be fried.[/say]")
+			saynn("[say=alexrynard]Сиреневая секс-игрушка пытается меня напугать? Смешно. Тебе лучше хорошенько меня убедить, если не хочешь, чтобы твою шею поджарило.[/say]")
 
-		saynn("He doesn’t seem to be overly intimidated by you, he needs answers that you really don’t wanna share.")
+		saynn("Похоже, ты его не особо впечатляешь; ему нужны ответы, которыми ты делиться совсем не хочешь.")
 
 
 	if(state == "excuses"):
-		saynn("You let him hold your collar and just raise your hands slightly to show that you mean no harm.")
+		saynn("Ты позволяешь ему сжимать свой воротник и лишь слегка поднимаешь руки, показывая, что не собираешься причинять вреда.")
 
-		saynn("[say=pc]I just heard someone talk about it. Really. I’m fascinated by anything that involves bluespace.[/say]")
+		saynn("[say=pc]Я просто слышала, как кто-то об этом говорил. Правда. Меня завораживает всё, что связано с блюспейсом.[/say]")
 
-		saynn("He squints slightly.")
+		saynn("Он слегка прищуривается.")
 
-		saynn("[say=alexrynard]Who did you hear it from?[/say]")
+		saynn("[say=alexrynard]От кого ты это слышала?[/say]")
 
-		saynn("Oh no.")
+		saynn("О нет.")
 
-		saynn("[say=pc]Uhh.. Risha?[/say]")
+		saynn("[say=pc]Э-э... от Риши?[/say]")
 
-		saynn("Seems like that was a wrong answer because he frowns more.")
+		saynn("Похоже, это был неверный ответ, потому что он нахмурился ещё сильнее.")
 
-		saynn("[say=alexrynard]She is the last person who would care about that.[/say]")
+		saynn("[say=alexrynard]Она — последний человек, которого это могло бы заинтересовать.[/say]")
 
-		saynn("You put on a nervous smile and just shrug. The guy is clearly not buying it.")
+		saynn("Ты натягиваешь нервную улыбку и просто пожимаешь плечами. Парень явно тебе не верит.")
 
 	if(state == "grab_crotch"):
-		saynn("Instead of trying to explain yourself, you just reach your hand out and put it on his pants. Your digits dig in and find the outline of his sheath before giving it a rub.")
+		saynn("Вместо того чтобы пытаться оправдаться, ты просто протягиваешь руку и кладешь её ему на штаны. Твои пальцы впиваются в ткань, нащупывают очертания его чехла и начинают его поглаживать.")
 
-		saynn("[say=pc]You like it~?[/say]")
+		saynn("[say=pc]Тебе нравится~?[/say]")
 
-		saynn("Foxy is more confused than anything by your act.")
+		saynn("Фокси больше сбит с толку, чем чем-либо еще твоим спектаклем.")
 
-		saynn("[say=alexrynard]Really? I asked you a question. The answer better be convincing.[/say]")
+		saynn("[say=alexrynard]Серьезно? Я задал тебе вопрос. Надеюсь, ответ будет убедительным.[/say]")
 
-		saynn("It’s not working. But maybe you just need to double down on that tactic.")
+		saynn("Это не работает. Но, возможно, тебе просто нужно поднажать и развить эту тактику.")
 
 		# (Options are Seduce, Attack, Surrender,)
 
 	if(state in ["intimidate", "excuses", "grab_crotch"]):
-		addButton("Seduce", "Maybe he will let you go if you make him feel good", "seduce")
-		addButton("Attack", "Make him tell you the code", "attack")
-		addButton("Surrender", "Stop resisting and see what happens", "surrender")
+		addButton("Соблазнить", "Может, он отпустит тебя, если ты заставишь его почувствовать кайф", "seduce")
+		addButton("Атаковать", "Заставь его выложить код", "attack")
+		addButton("Сдаться", "Перестань сопротивляться и посмотри, что будет", "surrender")
 
 
 	if(state == "use_stun_baton"):
 		# (nees a stun baton)
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard", npcAction="defeat"})
 
-		saynn("While the foxy is busy holding your collar, your hand pulls out a contraband stun baton that you then quickly shove into the guy’s back, your digit finds the switch that makes it send out a powerful shock through the metal spine.")
+		saynn("Пока лис занят твоим воротником, твоя рука выхватывает контрабандный электрошокер, который ты быстро втыкаешь парню в спину; твой палец находит кнопку, и мощный разряд тока проходит сквозь его металлический позвоночник.")
 
-		saynn("Foxy lets out a painful grunt and then collapses as his body gets stunned, a reaction much more powerful than you get normally. He seems to be unable to move his limbs at all.")
+		saynn("Фокси издает болезненный стон и падает, когда его тело прошибает разряд — реакция куда мощнее той, что ты обычно получаешь. Кажется, он вообще не может пошевелить конечностями.")
 
-		saynn("[say=alexrynard]Aghrh.. Fuck![/say]")
+		saynn("[say=alexrynard]Агрх.. Блядь![/say]")
 
-		saynn("His loud scream was probably heard so you must act swift. You quickly get on top of him and threaten to do another strike.")
+		saynn("Его громкий крик наверняка кто-то услышал, так что действовать нужно быстро. Ты ловко наваливаешься на него сверху, угрожая нанести еще один удар.")
 
-		saynn("[say=pc]What’s the code? Spill it or I will break your fucking back.[/say]")
+		saynn("[say=pc]Какой код? Выкладывай, или я переломаю тебе твою гребаную спину![/say]")
 
-		saynn("[say=alexrynard]4125. What are you gonna do with it?[/say]")
+		saynn("[say=alexrynard]4125. И что ты с ним сделаешь?[/say]")
 
-		saynn("[say=pc]That’s all I wanted.[/say]")
+		saynn("[say=pc]Это всё, что мне было нужно.[/say]")
 
-		addButton("Just leave", "He had enough", "just_leave")
-		addButton("Hit him again", "Just so he doesn’t do anything stupid", "hit_him_again")
+		addButton("Просто уйти", "Ударить его еще раз", "just_leave")
+		addButton("Снова вмазать ему", "Просто чтобы он не натворил глупостей", "hit_him_again")
 
 
 	if(state == "just_leave"):
@@ -125,14 +125,14 @@ func _run():
 		removeCharacter("alexrynard")
 		addCharacter("maleguard_canine")
 		
-		saynn("You decide not to hit the poor foxy again, instead just leaving. And turns out, that was a great choice because outside of the engineering there is a guard patrolling the area. He sees you and frowns.")
+		saynn("Ты решаешь не бить бедного лиса снова, а просто уходишь. И оказывается, это было верное решение, потому что за пределами инженерного отсека территорию патрулирует охранник. Он замечает тебя и хмурится.")
 
-		saynn("[say=maleguard_canine]What are you looking at, inmate? Stocks always have space for more fucktoys.[/say]")
+		saynn("[say=maleguard_canine]Чего уставился, зэк? В стоках всегда найдется место для новых секс-игрушек.[/say]")
 
-		saynn("Phew, it seems he didn’t hear the foxy. You just politely ignore the guard’s words and walk past him.")
+		saynn("Фух, похоже, он не услышал лиса. Ты просто вежливо игнорируешь слова охранника и проходишь мимо него.")
 
 		# (Task completed, scene ends)
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 
 	if(state == "hit_him_again"):
 		aimCameraAndSetLocName("eng_lobby")
@@ -140,88 +140,88 @@ func _run():
 		removeCharacter("alexrynard")
 		addCharacter("maleguard_canine")
 		
-		saynn("You turn the stun baton again and press it against the guy’s chest, making him cry out from pain before losing his conciseness shortly after. The stick seems to be out of charge so you just throw it away.")
+		saynn("Ты снова включаешь электрошокер и прижимаешь его к груди парня; тот вскрикивает от боли, а вскоре и вовсе теряет сознание. Похоже, заряд кончился, так что ты просто отбрасываешь его в сторону.")
 
-		saynn("Time to make your escape. You try to run away but it seems the loud screams were heard by someone.")
+		saynn("Пора сваливать. Ты пытаешься бежать, но, кажется, громкие крики кто-то услышал.")
 
-		saynn("[say=maleguard_canine]Where do you think you are going?[/say]")
+		saynn("[say=maleguard_canine]И куда это ты собрался?[/say]")
 
-		saynn("You stumble right into the sight of some guard. Seems like there is no other option but to fight.")
+		saynn("Ты натыкаешься прямо на стражника. Похоже, другого выхода, кроме как вступить в бой, нет.")
 
-		addButton("Fight", "Fight the guard", "fight_guard")
+		addButton("Драться", "Сразиться со стражником", "fight_guard")
 
 
 	if(state == "if_lost_guard"):
-		saynn("You drop to your knees, unable to fight anymore. The guard quickly apprehends you and cuffs your hands before clipping a leash to your collar.")
+		saynn("Ты падаешь на колени, не в силах больше сопротивляться. Стражник быстро скручивает тебя, надевает наручники на руки, а затем пристегивает поводок к твоему ошейнику.")
 
-		saynn("[say=maleguard_canine]Stocks will be a good lesson for you, inmate.[/say]")
+		saynn("[say=maleguard_canine]Колодки станут для тебя хорошим уроком, заключенный.[/say]")
 
-		saynn("He pulls on the leash, forcing you to stand up and follow him.")
+		saynn("Он дергает за поводок, заставляя тебя встать и следовать за ним.")
 
-		saynn("At least you know the code.")
+		saynn("По крайней мере, код ты знаешь.")
 
 		# (Task completed)
 
-		addButton("Follow", "See where he brings you", "follow_guard")
+		addButton("Следовать", "Посмотреть, куда он тебя приведет", "follow_guard")
 
 	if(state == "follow_guard"):
 		# (also runs a scene that pulls you towards the stocks)
 
-		saynn("The guard opens the stocks and throws you into them before uncuffing your arms and trapping you in the metal contraption.")
+		saynn("Стражник открывает колодки и заталкивает тебя внутрь, после чего снимает наручники, оставляя тебя запертой в этой металлической конструкции.")
 
-		saynn("[say=maleguard_canine]Have fun being the prison’s bitch.[/say]")
+		saynn("[say=maleguard_canine]Наслаждайся ролью тюремной сучки.[/say]")
 
-		saynn("And then he just leaves you to be.")
+		saynn("И вот он просто оставляет тебя одну.")
 
 		# (scene ends)
-		addButton("Stocks", "See what happens next", "startStocks")
+		addButton("Колодки", "Смотреть, что будет дальше", "startStocks")
 
 
 	if(state == "if_won_guard"):
-		saynn("The guard drops to his knees and grunts.")
+		saynn("Охранник падает на колени и кряхтит.")
 
-		saynn("[say=maleguard_canine]Lucky bitch..[/say]")
+		saynn("[say=maleguard_canine]Везучая сучка..[/say]")
 
-		saynn("Well, he is the lucky one here because you can’t stay here with him any longer, soon more guards will arrive. So you quickly make your escape.")
+		saynn("Что ж, везунчик здесь он, ведь тебе нельзя здесь оставаться с ним дольше — скоро прибудут другие охранники. Поэтому ты поспешно совершаешь побег.")
 
 		# (Task completed, scene ends)
-		addButton("Leave", "Time to run", "endthescene")
+		addButton("Уйти", "Пора валить", "endthescene")
 
 
 	if(state == "attack"):
-		saynn("You clench your fists and prepare for a fight.")
+		saynn("Ты сжимаешь кулаки, готовясь к драке.")
 
-		saynn("[say=pc]I need to get inside and you’re standing in my way.[/say]")
+		saynn("[say=pc]Мне нужно внутрь, а ты стоишь у меня на пути.[/say]")
 
-		saynn("[say=alexrynard]So? Move me then.[/say]")
+		saynn("[say=alexrynard]Ну и? Так сдвинь меня.[/say]")
 
-		saynn("Seems he won’t just give up without a fight.")
+		saynn("Похоже, он не сдастся без боя.")
 
 		# (OPTIONS ARE FIGHT AND USE STUN BATON)
 
-		addButton("Fight", "Begin the fight", "fight_foxy")
+		addButton("Драться", "Начать бой", "fight_foxy")
 		if(GM.pc.getInventory().hasItemID("StunBaton")):
-			addButton("Use stun baton", "Exploit his weakness", "use_stun_baton")
+			addButton("Использовать электродубинку", "Воспользоваться его слабостью", "use_stun_baton")
 		else:
-			addDisabledButton("Use stun baton", "You don't have one")
+			addDisabledButton("Использовать электродубинку", "У тебя его нет")
 
 	if(state == "if_won"):
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard", npcAction="defeat"})
 		
-		saynn("Foxy drops to his knees, unable to continue fighting. You shove your leg into his back and overstress the motors in his spine, causing discomfort.")
+		saynn("Лисенок падает на колени, не в силах продолжать бой. Ты втыкаешь ногу ему в спину и перегружаешь моторы в его позвоночнике, вызывая резкую боль.")
 
-		saynn("[say=alexrynard]Fuck![/say]")
+		saynn("[say=alexrynard]Блядь![/say]")
 
-		saynn("Someone probably heard the fight so you must act swift.")
+		saynn("Кто-то наверняка услышал драку, так что действовать нужно быстро.")
 
-		saynn("[say=pc]What’s the code? Spill it or I will break your back.[/say]")
+		saynn("[say=pc]Какой код? Выкладывай, или я переломаю тебе хребет.[/say]")
 
-		saynn("[say=alexrynard]4125. The fuck are you gonna do with it?[/say]")
+		saynn("[say=alexrynard]4125. И что ты, блядь, с ним сделаешь?[/say]")
 
-		saynn("[say=pc]That’s all I wanted, foxy.[/say]")
+		saynn("[say=pc]Это всё, что мне было нужно, лисенок.[/say]")
 
-		addButton("Leave him be", "He had enough", "leave_him_be")
-		addButton("Knock him out", "Just to be safe", "knock_him_out")
+		addButton("Оставить его в покое", "Ударить его еще раз", "leave_him_be")
+		addButton("Вырубить его", "Просто для верности", "knock_him_out")
 
 
 	if(state == "knock_him_out"):
@@ -231,15 +231,15 @@ func _run():
 		addCharacter("maleguard_canine")
 		# (no encounter)
 
-		saynn("You knock the foxy out by shoving him against the wall behind, causing his spine to spark and send out a painful signal to the rest of the body. Ow.")
+		saynn("Ты вырубаешь лисенка, впечатывая его в стену позади; его позвоночник искрит, посылая волну боли по всему телу. Ох.")
 
-		saynn("No time to wonder if he is fine though, time to make your escape. You try to run away but it seems someone heard the violence.")
+		saynn("Впрочем, некогда гадать, в порядке ли он — пора сваливать. Ты пытаешься бежать, но, похоже, шум насилия уже кто-то услышал.")
 
-		saynn("[say=maleguard_canine]Where do you think you are going?[/say]")
+		saynn("[say=maleguard_canine]И куда это ты собрался?[/say]")
 
-		saynn("You stumble right into the sight of some guard. Seems like there is no other option but to fight.")
+		saynn("Ты натыкаешься прямо на стражника. Похоже, другого выхода, кроме как вступить в бой, нет.")
 
-		addButton("Fight", "Fight the guard", "fight_guard")
+		addButton("Драться", "Сразиться со стражником", "fight_guard")
 
 
 	if(state == "leave_him_be"):
@@ -249,22 +249,22 @@ func _run():
 		addCharacter("maleguard_canine")
 		# (guard encounter)
 
-		saynn("You decide not to hit the poor foxy again, instead just leaving. And turns out, that was a great choice because outside of the engineering there is a guard patrolling the area. He sees you and frowns.")
+		saynn("Ты решаешь не бить бедного лиса снова, а просто уходишь. И оказывается, это было верное решение, потому что за пределами инженерного отсека территорию патрулирует охранник. Он замечает тебя и хмурится.")
 
-		saynn("[say=maleguard_canine]What are you looking at, inmate? Stocks always have space for more fucktoys.[/say]")
+		saynn("[say=maleguard_canine]Чего уставился, зэк? В стоках всегда найдется место для новых секс-игрушек.[/say]")
 
-		saynn("Phew, it seems he didn’t hear the foxy. You just politely ignore the guard’s words and walk past him.")
+		saynn("Фух, похоже, он не услышал лиса. Ты просто вежливо игнорируешь слова охранника и проходишь мимо него.")
 
 		# (Task completed, scene ends)
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 
 
 	if(state == "if_lost"):
 		# (pretty much the same as surrender?)
 		playAnimation(StageScene.Duo, "defeat", {npc="alexrynard"})
 
-		saynn("You lost the fight. Unable to continue, you can only surrender now.")
-		addButton("Surrender", "Stop resisting and see what happens", "surrender")
+		saynn("Ты проиграла бой. Не в силах продолжать, тебе остается только сдаться.")
+		addButton("Сдаться", "Перестань сопротивляться и посмотри, что будет", "surrender")
 
 
 	if(state == "seduce"):
@@ -274,88 +274,88 @@ func _run():
 			npcBodyState={},
 		})
 		
-		saynn("Instead of doing anything silly, you decide to go the path of less resistance and offer some value. Your hands slip under the guy’s uniform and give his strong torso some love. He doesn’t seem to be against your touches so you continue exploring his body.")
+		saynn("Вместо того чтобы вытворять глупости, ты решаешь пойти по пути наименьшего сопротивления и предложить что-то ценное. Твои руки скользят под униформу парня, лаская его крепкий торс. Кажется, он не против твоих прикосновений, и ты продолжаешь исследовать его тело.")
 
-		saynn("You lean into him and purr ever so slightly while rubbing your cheek into his pecs through the shirt. Your hands slip lower and unbuckle the belt before sneaking under his pants and stumbling upon his sheath.")
+		saynn("Ты прижимаешься к нему и едва слышно мурлычешь, потирая щекой его грудные мышцы сквозь рубашку. Твои руки скользят ниже, расстегивают ремень, а затем пробираются под штаны, натыкаясь на его плотную «ножны».")
 
-		saynn("Some digits caress and cup his balls while another gives the tip of his canine cock a rub until the shaft starts leaving the contains. You look up at him with your lusty eyes and see him watching you work, soft playful growling escapes from his manly maw.")
+		saynn("Пальцы ласкают и обхватывают его яички, а другой палец поглаживает головку его звериного члена, пока ствол не начинает вырываться из оков. Ты смотришь на него своими похотливыми глазами и видишь, как он наблюдает за твоими движениями; из его мужественной пасти вырывается мягкое игривое рычание.")
 
-		saynn("[say=alexrynard]Turn around, baby.[/say]")
+		saynn("[say=alexrynard]Развернись, детка.[/say]")
 
-		saynn("Ohh~ He is so eager. But you don’t mind that. In fact, you welcome it, pulling your hands away from his girth before turning around and slightly bending forward, offering him your {pc.thick} {pc.masc} butt.")
+		saynn("Ох~ Он так жаждет этого. Но тебя это не смущает. Напротив, ты только рада, отнимая руки от его толщины, после чего разворачиваешься и слегка наклоняешься вперед, подставляя ему свою {pc.thick} {pc.masc} задницу.")
 
 		# (if has clothes)
 		if(!GM.pc.isFullyNaked()):
-			saynn("Then you pull any clothes that were covering your rear down before spreading your cute buttcheeks for him, offering the guy a great view of your private bits.")
+			saynn("Затем ты спускаешь одежду, прикрывавшую твой тыл, и раздвигаешь свои милые ягодицы, открывая парню великолепный вид на твои интимные места.")
 
 		# (else)
 		else:
-			saynn("And then you just spread your cute buttcheeks for him, offering the guy a great view of your private bits.")
+			saynn("И затем ты просто раздвигаешь свои милые ягодицы, открывая парню великолепный вид на твои интимные места.")
 
-		saynn("[say=pc]How do you wanna do it~?[/say]")
+		saynn("[say=pc]Как ты хочешь это сделать~?[/say]")
 
-		addButton("Continue", "See what happens next", "after_seduced")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_seduced")
 
 	if(state == "after_seduced"):
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard"})
 		
-		saynn("But instead of an answer, you feel him getting a hold of your arms and putting something on them. Zip ties! You gasp as he swiftly restraints you and then pins against the wall.")
+		saynn("Но вместо ответа ты чувствуешь, как он хватает тебя за руки и надевает на них что-то. Пластиковые стяжки! Ты ахаешь, когда он стремительно обездвиживает тебя, а затем прижимает к стене.")
 
-		saynn("[say=pc]Uh.. kinky?..[/say]")
+		saynn("[say=pc]Ох... это что, БДСМ?..[/say]")
 
-		saynn("[say=alexrynard]I’m not here to fuck inmates, no matter how slutty they act. Now tell me what the fuck was this all about. Spill it.[/say]")
+		saynn("[say=alexrynard]Я здесь не для того, чтобы трахать заключенных, какими бы шлюхами они ни притворялись. А теперь выкладывай, какого хера всё это значит. Живо![/say]")
 
-		saynn("Seems you won’t be getting your sexy time. Telling him that you and Tavi want to call the Syndicate and destroy the prison won’t probably end well for you both.")
+		saynn("Похоже, на секс не стоит рассчитывать. Сказать ему, что вы с Тави хотите позвонить Синдикату и разнести тюрьму, — идея, которая вряд ли сулит вам обоим хорошие перспективы.")
 
-		saynn("[say=pc]I just wanted to look at it. Never seen anything like it.[/say]")
+		saynn("[say=pc]Я просто хотел на это посмотреть. Никогда раньше ничего подобного не видел.[/say]")
 
-		saynn("He hears your excuses and growls before roughly pushing you against the wall again.")
+		saynn("Он слушает твои оправдания, рычит и снова грубо впечатывает тебя в стену.")
 
-		saynn("[say=pc]Ugh-h..[/say]")
+		saynn("[say=pc]Ух-х..[/say]")
 
-		saynn("[say=alexrynard]I don’t trust you. I guess I will have to interrogate you.[/say]")
+		saynn("[say=alexrynard]Я тебе не верю. Похоже, придется устроить тебе допрос.[/say]")
 
-		saynn("Interrogate you? What is he talking about?")
+		saynn("Допрос? О чем он вообще говорит?")
 
-		saynn("[say=pc]You gonna hurt me?[/say]")
+		saynn("[say=pc]Ты собираешься меня пытать?[/say]")
 
-		saynn("[say=alexrynard]Something much better.[/say]")
+		saynn("[say=alexrynard]Нечто куда более приятное.[/say]")
 
-		saynn("He produces a lengthy piece of cable that he then ties to your collar, leashing you. A piece of dirty dark cloth gets wrapped around your eyes, blinding you. Then he just yanks you away from the wall and makes you follow him while your hands are still restrained.")
+		saynn("Он достает длинный кусок кабеля и привязывает его к твоему ошейнику, превращая тебя в подопечную на поводке. Грязная темная тряпка обматывается вокруг твоих глаз, лишая тебя зрения. Затем он просто рывком отрывает тебя от стены и заставляет следовать за ним, пока твои руки всё еще скованы.")
 
 		# (follow)
-		addButton("Follow", "See where he brings you", "follow_foxy")
+		addButton("Следовать", "Посмотреть, куда он тебя приведет", "follow_foxy")
 
 	if(state == "surrender"):
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard"})
 		
-		saynn("You raise your hands and assume a submissive pose.")
+		saynn("Ты поднимаешь руки, принимая покорную позу.")
 
-		saynn("[say=pc]Fine, I give up.[/say]")
+		saynn("[say=pc]Ладно, сдаюсь.[/say]")
 
-		saynn("Foxy immediately pushes you against the wall and wrenches your arms behind your back before restraining them with some zip ties, very secure ones that barely allow you any leeway.")
+		saynn("Фокси тут же прижимает тебя к стене и резко заводит руки за спину, после чего стягивает их пластиковыми стяжками — очень тугими, которые почти не оставляют пространства для маневра.")
 
-		saynn("[say=alexrynard]What the fuck was the plan. Spill it.[/say]")
+		saynn("[say=alexrynard]Какого хера ты задумал? Выкладывай.[/say]")
 
-		saynn("Telling him that you and Tavi want to call the Syndicate and destroy the prison won’t probably end well for you both.")
+		saynn("Сказать ему, что вы с Тави хотите позвонить в Синдикат и разнести тюрьму к чертям, вероятно, не сулит ничего хорошего вам обоим.")
 
-		saynn("[say=pc]I just wanted to look at it. Never seen anything like it.[/say]")
+		saynn("[say=pc]Я просто хотел на это посмотреть. Никогда раньше ничего подобного не видел.[/say]")
 
-		saynn("He hears your excuses and growls before roughly pushing you against the wall again.")
+		saynn("Он слушает твои оправдания, рычит и снова грубо впечатывает тебя в стену.")
 
-		saynn("[say=pc]Ugh-h..[/say]")
+		saynn("[say=pc]Ух-х..[/say]")
 
-		saynn("[say=alexrynard]I don’t trust you. I guess I will have to interrogate you.[/say]")
+		saynn("[say=alexrynard]Я тебе не верю. Похоже, придется устроить тебе допрос.[/say]")
 
-		saynn("Interrogate you? What is he talking about?")
+		saynn("Допрос? О чем он вообще говорит?")
 
-		saynn("[say=pc]You gonna hurt me?[/say]")
+		saynn("[say=pc]Ты собираешься меня пытать?[/say]")
 
-		saynn("[say=alexrynard]Something worse.[/say]")
+		saynn("[say=alexrynard]Нечто похуже.[/say]")
 
-		saynn("He produces a lengthy piece of cable that he then ties to your collar, leashing you. A piece of dirty dark cloth gets wrapped around your eyes, blinding you. Then he just yanks you away from the wall and makes you follow him while your hands are still restrained.")
+		saynn("Он достает длинный кусок кабеля и привязывает его к твоему ошейнику, превращая тебя в подопечную на поводке. Грязная темная тряпка обматывается вокруг твоих глаз, лишая тебя зрения. Затем он просто рывком отрывает тебя от стены и заставляет следовать за ним, пока твои руки всё еще скованы.")
 
-		addButton("Follow", "See where he brings you", "follow_foxy")
+		addButton("Следовать", "Посмотреть, куда он тебя приведет", "follow_foxy")
 
 	if(state == "follow_foxy"):
 		# (also runs a leashed scene)
@@ -365,75 +365,75 @@ func _run():
 			bodyState={exposedCrotch=true,},
 		})
 
-		saynn("He brings you somewhere.. You’re not quite sure where since the blindfold makes it very hard to orient yourself around.")
+		saynn("Он приводит тебя куда-то... Ты не совсем понимаешь куда, так как из-за повязки на глазах очень трудно сориентироваться на местности.")
 
-		saynn("You hear how Alex picks something up and does something. Then you hear static coming from across the room.")
+		saynn("Ты слышишь, как Алекс что-то подбирает и совершает какое-то действие. Затем со стороны комнаты доносится статический шум.")
 
-		saynn("[say=alexrynard]Aw fuck, is the tv busted again.[/say]")
+		saynn("[say=alexrynard]Твою мать, телик опять сдох?[/say]")
 
-		saynn("TV? That only makes you more confused. Foxy pulls you somewhere and you feel yourself brushing against something soft below your waist, like a sofa.")
+		saynn("Телик? Это только сильнее сбивает тебя с толку. Фокси тянет тебя куда-то, и ты чувствуешь, как твоя нижняя часть тела задевает что-то мягкое, похожее на диван.")
 
-		saynn("[say=alexrynard]First I will deal with you, curious inmate. Do you know what happens to curious inmates?[/say]")
+		saynn("[say=alexrynard]Сначала я разберусь с тобой, любопытная заключенная. Знаешь, что бывает с любопытными заключенными?[/say]")
 
 		# (if has clothes and pussy)
 		if(GM.pc.hasVagina()):
-			saynn("He removes enough of your clothes to expose your {pc.pussyStretch} pussy slit. He then slaps your exposed ass, making you blush from feeling so helpless.")
+			saynn("Он стягивает с тебя достаточно одежды, чтобы обнажить твою {pc.pussyStretch} щель. Затем он хлопает тебя по голой заднице, заставляя покраснеть от чувства собственной беспомощности.")
 
 		# (if has clothes and no pussy)
 		else:
-			saynn("He removes enough of your clothes to expose your {pc.analStretch} tailhole. He then slaps your exposed ass, making you blush from feeling so helpless.")
+			saynn("Он стягивает с тебя достаточно одежды, чтобы обнажить твое {pc.analStretch} анус. Затем он хлопает тебя по голой заднице, заставляя покраснеть от чувства собственной беспомощности.")
 
-		saynn("[say=alexrynard]Can’t hear you. And no, I won’t fuck you. Not taking any chances with the scum like you.[/say]")
+		saynn("[say=alexrynard]Ни черта не слышу. И нет, трахать тебя я не стану. Не хочу рисковать с такой отбросной, как ты.[/say]")
 
-		addButton("Shake head", "You don’t really know what answer he wants", "shake_head")
+		addButton("Покачать головой", "Ты толком не понимаешь, какого ответа он ждет.", "shake_head")
 
 	if(state == "shake_head"):
 		playAnimation(StageScene.Sybian, "idle", {bodyState={exposedCrotch=true,}})
 		
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("You just shake your head and then feel the leash pulling you down. You have to obey it or the collar will start choking you. As you get onto your knees you feel the foxy guiding you onto something. Some kind of.. seat? A very low seat, you have to spread your legs quite a bit to be able to sit on it. Your clit and some of your pussy are resting on a little ribbed platform and your holes are pressed against some kind of bumps..")
+			saynn("Ты просто качаешь головой и чувствуешь, как поводок тянет тебя вниз. Тебе приходится подчиниться, иначе ошейник начнет тебя душить. Когда ты опускаешься на колени, ты чувствуешь, как лис направляет тебя на что-то... своего рода сиденье? Очень низкое сиденье, на котором приходится широко раздвигать ноги. Твой клитор и часть киски покоятся на маленькой ребристой платформе, а твои дырочки прижаты к каким-то бугоркам...")
 
 		# (else)
 		else:
-			saynn("You just shake your head and then feel the leash pulling you down. You have to obey it or the collar will start choking you. As you get onto your knees you feel the foxy guiding you onto something. Some kind of.. seat? A very low seat, you have to spread your legs quite a bit to be able to sit on it. Your taint area is resting on a little ribbed platform and your tailhole is pressed against some kind of bump.")
+			saynn("Ты лишь качаешь головой, а затем чувствуешь, как поводок тянет тебя вниз. Тебе приходится подчиняться, иначе ошейник начнет тебя душить. Когда ты опускаешься на колени, ты чувствуешь, как лисица направляет тебя на что-то... на какое-то сиденье? Очень низкое сиденье, на котором приходится широко раздвигать ноги. Твоя промежность покоится на маленькой ребристой платформе, а анус прижат к какому-то выступу.")
 
-		saynn("[say=pc]What is this?..[/say]")
+		saynn("[say=pc]Что это?..[/say]")
 
-		saynn("[say=alexrynard]You can still tell me why you were spying around.[/say]")
+		saynn("[say=alexrynard]Ты всё ещё можешь сказать мне, зачем ты шпионила.[/say]")
 
-		saynn("You stay silent as you can’t tell him anything.")
+		saynn("Ты хранишь молчание, потому что не можешь ему ничего доверить.")
 
-		saynn("[say=alexrynard]Well. Let’s see how long you can endure riding a sybian then.[/say]")
+		saynn("[say=alexrynard]Ну что ж. Посмотрим тогда, как долго ты сможешь выдержать езду на сибиане.[/say]")
 
-		saynn("A sybian? Oh no.")
+		saynn("Сибиан? О нет.")
 
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("Before you can resist it, the foxy produces more zip ties and starts tying your legs to the kinky seat. After that, he presses some buttons on it and the machine springs to life. The little bumps that are pressing against your holes are actually little dildos. They begin to slowly sink themselves inside you, stretching you out enough in the process.")
+			saynn("Прежде чем ты успеваешь сопротивляться, лисица достает еще пластиковых стяжек и начинает привязывать твои ноги к этому извращенному сиденью. После этого он нажимает на кнопки, и машина оживает. Маленькие бугорки, прижимающиеся к твоим отверстиям, на самом деле — маленькие дилдо. Они начинают медленно погружаться в тебя, растягивая тебя в процессе.")
 
 		# (else)
 		else:
-			saynn("Before you can resist it, the foxy produces more zip ties and starts tying your legs to the kinky seat. After that, he presses some buttons on it and the machine springs to life. The little bump that is pressing against your hole is actually a little curved dildo. It begins to slowly sink itself inside you, stretching you out enough in the process and finding your pleasure point.")
+			saynn("Прежде чем ты успеваешь сопротивляться, лисица достает еще пластиковых стяжек и начинает привязывать твои ноги к этому извращенному сиденью. После этого он нажимает на кнопки, и машина оживает. Маленький бугорок, прижимающийся к твоему отверстию, на самом деле — изогнутый дилдо. Он начинает медленно погружаться в тебя, растягивая тебя и находя твою точку удовольствия.")
 
-		saynn("[say=alexrynard]So? Last chance to save yourself.[/say]")
+		saynn("[say=alexrynard]Ну? Последний шанс спастись.[/say]")
 
-		saynn("But you can’t tell him the truth, all you can do is desperately wiggle against the zip ties that dig into your skin.")
+		saynn("Но ты не можешь сказать ему правду; всё, что тебе остаётся — это отчаянно извиваться в пластиковых стяжках, которые впиваются в твою кожу.")
 
-		addButton("Stay silent", "You got nothing to say", "stay_silent")
-		addButton("Taunt him", "Be a brat", "taunt_him")
+		addButton("Молчать", "Тебе нечего сказать", "stay_silent")
+		addButton("Подразнить его", "Включить вредину", "taunt_him")
 
 	if(state == "taunt_him"):
-		saynn("[say=pc]Turn it on already~.[/say]")
+		saynn("[say=pc]Давай, включай уже~.[/say]")
 
-		saynn("You feel him grabbing your chin.")
+		saynn("Ты чувствуешь, как он берет тебя за подбородок.")
 
-		saynn("[say=alexrynard]So cheeky. We will see how quickly your tone will change.[/say]")
+		saynn("[say=alexrynard]Какая дерзость. Посмотрим, как быстро изменится твой тон.[/say]")
 
 	if(state == "stay_silent"):
-		saynn("Well, you would rather not tell him anything rather than humiliating yourself.")
+		saynn("Что ж, ты скорее предпочтешь промолчать, чем унизиться перед ним.")
 
-		saynn("[say=alexrynard]We will see how quickly you will break.[/say]")
+		saynn("[say=alexrynard]Посмотрим, как быстро ты сломаешься.[/say]")
 
 		# (part that’s the same)
 	if(state in ["stay_silent", "taunt_him"]):
@@ -441,90 +441,90 @@ func _run():
 		
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("He flicks some switch that makes the motors inside the sybian engage. You immediately let out a noise of pleasure as the ribbed panel under your clit starts to vibrate together with the dildos shifting inside you.")
+			saynn("Он щелкает переключателем, и моторы сибиана оживают. Ты тут же издаешь стон удовольствия, когда ребристая панель под твоим клитором начинает вибрировать вместе с двигающимися внутри тебя дилдо.")
 
 		# (else)
 		else:
-			saynn("He flicks some switch that makes the motors inside the sybian engage. You immediately let out a noise of pleasure as the ribbed panel under your taint starts to vibrate together with the dildo shifting inside you.")
+			saynn("Он щелкает переключателем, и моторы сибиана оживают. Ты тут же издаешь стон удовольствия, когда ребристая панель под твоей промежностью начинает вибрировать вместе с двигающимся внутри тебя дилдо.")
 
-		saynn("[say=alexrynard]Enjoy yourself while you can.[/say]")
+		saynn("[say=alexrynard]Наслаждайся, пока можешь.[/say]")
 
-		saynn("Your body squirms on its own, each time you press your crotch into the vibrating seat, a spike of pleasure shoots through you, making you moan. But if you try to raise yourself, the zip ties dig into your skin harder which brings pain and discomfort instead of pleasure. You really got yourself into quite a predicament.")
+		saynn("Твое тело само извивается; каждый раз, когда ты прижимаешься пахом к вибрирующему сиденью, тебя прошибает вспышка удовольствия, заставляющая стонать. Но стоит попытаться приподняться, как стяжки впиваются в кожу еще сильнее, принося боль и дискомфорт вместо наслаждения. Ты и впрямь попала в незавидное положение.")
 
-		saynn("And all the while, the foxy seems to be busy fixing the tv. A slap later and the static that you’ve been hearing all this time is replaced by some AlphaCorp propaganda news. You can’t see it obviously but you hear a very enthusiastic voice explaining how many new worlds and planets were freed from enslavement that is The Syndicate. The foxy seems to just drop his butt onto the sofa, relaxing.")
+		saynn("А тем временем эта лисичка, кажется, увлеченно чинит телевизор. Спустя хлопок статический шум, который ты слышала всё это время, сменяется какими-то пропагандистскими новостями АльфаКорп. Ты, конечно, не видишь экран, но слышишь очень восторженный голос, вещающий о том, сколько новых миров и планет было освобождено от рабства Синдикатом. Лисичка, кажется, просто плюхается задом на диван, расслабляясь.")
 
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("You can’t focus on the surroundings for very long, the two dildos inside you slide in and out at a steady rate before the motors inside them turn on as well, providing extra pleasure. You can’t help but to moan while your clit and the pussy lips get stimulated by the little pad. Very soon after that your first orgasm overwhelms you, making you quiver around the machine hard while it continues to push you further past your peak.")
+			saynn("Тебе не удается долго концентрироваться на происходящем вокруг: два дилдо внутри тебя мерно ходят туда-сюда, а затем включаются и их внутренние моторы, добавляя еще больше кайфа. Ты невольно стонешь, когда клитор и половые губы стимулируются маленькой насадкой. Вскоре после этого тебя накрывает первый оргазм, заставляя тело мелко дрожать на машине, пока та продолжает выжимать из тебя удовольствие за пределом пика.")
 
 		# (else)
 		else:
-			saynn("You can’t focus on the surroundings for very long, the dildo inside you slides in and out at a steady rate before the motors inside it turn on as well, providing extra pleasure. You can’t help but to moan while your taint area gets stimulated by the little pad. Very soon after that your first orgasm overwhelms you, making you quiver around the machine hard while it continues to push you further past your peak.")
+			saynn("Ты не можешь долго удерживать внимание на окружении: фаллоимитатор внутри тебя мерно ходит туда-сюда, а затем включаются и внутренние моторы, добавляя еще больше наслаждения. Ты невольно стонешь, когда маленькая насадка начинает стимулировать твою промежность. Вскоре после этого тебя накрывает первый оргазм, заставляя тело дрожать, прижатым к машине, пока та продолжает выжимать из тебя всё больше и больше удовольствия, унося за пик.")
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
-			saynn("Your {pc.cock} starts throbbing and shooting its load onto the floor before you. It feels so good to have your prostate stimulated from both sides.")
+			saynn("Твой {pc.cock} начинает пульсировать, извергая семя прямо на пол перед тобой. Это чертовски приятно — чувствовать, как простату стимулируют с обеих сторон.")
 
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("Very soon you find yourself shivering and leaning to the sides, trying to escape the vibrations. Your private bits are very sensitive after your climax but the machine doesn’t care, it just keeps stimulating your clit and the g-spot inside your slit.")
+			saynn("Вскоре ты уже дрожишь и ерзаешь из стороны в сторону, пытаясь сбежать от вибраций. Твои интимные места слишком чувствительны после оргазма, но машине плевать — она продолжает долбить твой клитор и точку G внутри щели.")
 
 		# (else)
 		else:
-			saynn("Very soon you find yourself shivering and leaning to the sides, trying to escape the vibrations. Your private bits are very sensitive after your climax but the machine doesn’t care, it just keeps stimulating your pleasure point inside your butt.")
+			saynn("Вскоре ты уже дрожишь и ерзаешь из стороны в сторону, пытаясь сбежать от вибраций. Твои интимные места слишком чувствительны после оргазма, но машине плевать — она продолжает стимулировать твою точку удовольствия внутри задницы.")
 
-		saynn("[say=alexrynard]Ready to give up yet? [/say]")
+		saynn("[say=alexrynard]Ну что, уже готова сдаться? [/say]")
 
-		addButton("Moan", "That’s all you can offer him", "moan")
-		addButton("Resist", "This is too much!", "resist")
+		addButton("Стон", "Это всё, что ты можешь ему предложить", "moan")
+		addButton("Сопротивляться", "Это слишком!", "resist")
 
 	if(state == "resist"):
-		saynn("Instead of answering, you just resist as you can, trying to escape the overstimulation of your bits. It helps, up to a point. Eventually the zip ties dig into your skin so much that it becomes painful. You wiggle your bound arms and legs to try and free them but can’t, they are secured tight so you are forced to endure the discomfort together with your bits being stimulated.")
+		saynn("Вместо ответа ты просто изо всех сил сопротивляешься, пытаясь спастись от зашкаливающей стимуляции своих «бубенчиков». Это помогает лишь до поры до времени. В конце концов стяжки так сильно впиваются в кожу, что становится больно. Ты дрыгаешь связанными руками и ногами, пытаясь освободиться, но тщетно — они затянуты намертво, и тебе остается лишь терпеть дискомфорт вместе с непрекращающейся стимуляцией.")
 
-		saynn("[say=alexrynard]Well, since you don’t wanna talk..[/say]")
+		saynn("[say=alexrynard]Ну, раз уж ты не хочешь болтать...[/say]")
 
 		# (same as moan from here)
 
 	if(state == "moan"):
-		saynn("Instead of answering, you just part your lips and moan passionately, there is no escaping the overstimulation of your bits so you don’t even try. Your noises are louder than the tv so the foxy is approaching you, probably annoyed.")
+		saynn("Вместо ответа ты лишь приоткрываешь губы и страстно стонешь; от переизбытка ощущений в паху уже не сбежать, так что ты даже не пытаешься. Твои звуки слышны громче телевизора, поэтому лисица направляется к тебе — наверняка раздраженная.")
 
-		saynn("[say=alexrynard]Well, since you’re so loud. And also don’t wanna tell me anything..[/say]")
+		saynn("[say=alexrynard]Ну, раз уж ты такая громкая. И при этом всё равно ничего не хочешь мне рассказать...[/say]")
 
 		# (same stuff for resist from here)
 
 	if(state in ["moan", "resist"]):
 		removeCharacter("alexrynard")
 		
-		saynn("You feel a red ball being pushed past your lips, forcing your mouth to stay opened. You can’t do anything about it while the foxy secures the ballgag’s harness around your head. Your loud noises suddenly become muffled and quiet, you can’t stop yourself from drooling while the sybian brings you closer to another climax.")
+		saynn("Ты чувствуешь, как между губ проталкивают красный шарик, заставляя рот оставаться открытым. Ты ничего не можешь с этим поделать, пока лисица затягивает ремни кляпа вокруг твоей головы. Твои громкие стоны внезапно становятся приглушенными и тихими; ты не можешь сдержать слюну, пока сибиан подводит тебя к очередному оргазму.")
 
-		saynn("[say=alexrynard]Much better. I will return.. hmm.. tomorrow. To see if you got broken yet.[/say]")
+		saynn("[say=alexrynard]Так-то лучше. Я вернусь... хм... завтра. Посмотрю, сломали тебя уже или нет.[/say]")
 
-		saynn("Oh no. Is he planning to keep you here on the vibrating seat for the whole night? You try to tell him not to but can only make muffled noises while another orgasm overwhelms you.")
+		saynn("О нет. Неужели он планирует оставить тебя на этом вибрирующем сиденье на всю ночь? Ты пытаешься умолять его не делать этого, но лишь издаешь невнятное мычание, пока очередная волна оргазма накрывает тебя с головой.")
 
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("Your overstimulated pussy squirts and showers the sybian with your female juices. You arch your back and squirm, causing the pain from the zipties and pleasure from the little dildos combine in a spicy mix of otherworldly sensations.")
+			saynn("Твоя перестимулированная киска содрогается, заливая сибиан фонтаном женских соков. Ты выгибаешь спину и ерзаешь, отчего боль от стягивающих запястья стяжек и удовольствие от маленьких дилдо смешиваются в острый коктейль запредельных ощущений.")
 
 		# (else)
 		else:
-			saynn("Your overstimulated anus clenches around the vibrating rod hard. You arch your back and squirm, causing the pain from the zipties and pleasure from the little dildo combine in a spicy mix of otherworldly sensations.")
+			saynn("Твой перестимулированный анус плотно сжимает вибрирующий стержень. Ты выгибаешь спину и ерзаешь, отчего боль от стяжек и удовольствие от маленького дилдо смешиваются в острый коктейль запредельных ощущений.")
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
-			saynn("Your balls are resting on the vibrating ribbed panel and are getting milked dry, you waste another load messing up the floor before you. But only the foxy can see how big of a mess you made.")
+			saynn("Твои яйца лежат на вибрирующей ребристой панели, и их выжимают досуха; ты снова кончаешь, заливая пол перед собой. Но только эта лисичка видит, какой беспорядок ты тут устроил.")
 
-		saynn("[say=alexrynard]Mhm. Enjoy your stay.[/say]")
+		saynn("[say=alexrynard]Ммм. Наслаждайся пребыванием.[/say]")
 
-		saynn("And just like that, he stands up, turns off the tv and leaves you alone. Alone with the sybian that wants to make you cum and cum again.")
+		saynn("И вот так просто он встает, выключает телевизор и оставляет тебя одну. Одну наедине с сибианом, который жаждет, чтобы ты кончала снова и снова.")
 
-		addButton("Continue", "See what happens next", "startsybian")
+		addButton("Продолжить", "Смотреть, что будет дальше", "startsybian")
 
 
 
 	if(state == "startsybian"):
 		# (restores some pain maybe so you don’t get softlocked out of struggling)
 
-		saynn("You can’t see anything. And you can’t escape. Your private bits are super sensitive again after you came. You feel like you won’t be able to resist anymore after the next orgasm so you gotta do something now, while you still can!")
+		saynn("Ты ничего не видишь. И тебе не сбежать. Твои интимные места снова стали сверхчувствительными после оргазма. Кажется, после следующего пика ты уже не сможешь сопротивляться, так что нужно что-то предпринять прямо сейчас, пока еще есть силы!")
 
 		# (Options are Endure, Struggle and Escape if there are no restraints anymore)
 
@@ -537,67 +537,67 @@ func _run():
 		if(lustLevel < 0.2):
 			# (if has pussy)
 			if(GM.pc.hasVagina()):
-				saynn("You’re still recovering after your last orgasm so you can think straight at least. But the sybian is relentless, the two dildoes buzz inside you while pressing against all your sensitive points.")
+				saynn("Ты всё еще приходишь в себя после последнего оргазма, так что голова хотя бы соображает. Но сибиан неумолим: два дилдо жужжат внутри тебя, нажимая на все самые чувствительные точки.")
 
 			# (else)
 			else:
-				saynn("You’re still recovering after your last orgasm so you can think straight at least. But the sybian is relentless, its dildo buzzes inside you while pressing against your sensitive points.")
+				saynn("Ты всё еще приходишь в себя после последнего оргазма, так что голова хотя бы соображает. Но сибиан неумолим: его дилдо жужжит внутри тебя, нажимая на твои чувствительные точки.")
 
 		# (if > 20% lust)
 
 		# (if has pussy)
 		elif(lustLevel < 0.4):
 			if(GM.pc.hasVagina()):
-				saynn("You try to relax and get some strength back. Your pussy and ass are becoming less sensitive so the vibrations are slowly turning you on again. You can’t help but to let out a muffled noise of pleasure.")
+				saynn("Ты пытаешься расслабиться и восстановить силы. Твоя киска и задница постепенно теряют гиперчувствительность, поэтому вибрация снова начинает тебя возбуждать. Ты невольно издаешь приглушенный стон удовольствия.")
 
 			# (else)
 			else:
-				saynn("You try to relax and get some strength back. Your ass is becoming less sensitive so the vibrations are slowly turning you on again. You can’t help but to let out a muffled noise of pleasure.")
+				saynn("Ты пытаешься расслабиться и восстановить силы. Твоя задница постепенно теряет гиперчувствительность, поэтому вибрация снова начинает тебя возбуждать. Ты невольно издаешь приглушенный стон удовольствия.")
 
 		# (if > 40% lust)
 
 		# (if has pussy)
 		elif(lustLevel < 0.6):
 			if(GM.pc.hasVagina()):
-				saynn("Your pussy gets stimulated more and more, all you hear is that buzz. But it feels so good.. You can’t just sit still on the machine anymore, you shift constantly while your toes curl up sometimes.")
+				saynn("Твою киску стимулирует всё сильнее и сильнее, в ушах стоит лишь этот жужжащий звук. Но это так приятно... Ты уже не можешь просто сидеть неподвижно на аппарате: ты постоянно ерзаешь, а пальцы ног то и дело поджимаются от кайфа.")
 
 		# (else)
 			else:
-				saynn("Your ass gets stimulated more and more, all you hear is that buzz. But it feels so good.. You can’t just sit still on the machine anymore, you shift constantly while your toes curl up sometimes.")
+				saynn("Твою задницу стимулирует всё сильнее и сильнее, в ушах стоит лишь этот жужжащий звук. Но это так приятно... Ты уже не можешь просто сидеть неподвижно на аппарате: ты постоянно ерзаешь, а пальцы ног то и дело поджимаются от кайфа.")
 
 		# (if > 60% lust)
 
 		# (if has pussy)
 		elif(lustLevel < 0.8):
 			if(GM.pc.hasVagina()):
-				saynn("You can’t stop moaning, your pussy is dripping juices onto the machine. You can’t stop squirming which makes you tug against the zip ties involuntary. You feel like you don’t have much time, the pleasure slowly fills your mind.. Maybe you shouldn’t resist it?..")
+				saynn("Ты не можешь перестать стонать, твоя киска сочит соки прямо на аппарат. Ты невольно ерзаешь, из-за чего стягиваешь на себе пластиковые стяжки. Кажется, времени осталось немного, а удовольствие медленно заполняет твой разум... Может, не стоит сопротивляться?..")
 
 		# (else)
 			else:
-				saynn("You can’t stop moaning, your tailhole is clenching around the little vibrating dildo. You can’t stop squirming which makes you tug against the zip ties involuntary. You feel like you don’t have much time, the pleasure slowly fills your mind.. Maybe you shouldn’t resist it?..")
+				saynn("Ты не можешь перестать стонать, твой анус судорожно сжимается вокруг вибрирующего дилдо. Ты невольно ерзаешь, из-за чего стягиваешь на себе пластиковые стяжки. Кажется, времени осталось немного, а удовольствие медленно заполняет твой разум... Может, не стоит сопротивляться?..")
 
 		# (if > 80% lust)
 
 		# (if has pussy)
 		else:
 			if(GM.pc.hasVagina()):
-				saynn("Oh no, you feel the next climax creeping on to you. A very powerful one. Your needy slit is squirting a little while it's being edged, your muffled moans are resonating in your head. If you cum now you won’t be able to resist it any longer.")
+				saynn("О нет, ты чувствуешь, как подкатывает следующий оргазм. Очень мощный. Твоя жаждущая щель уже понемногу сочит влагу от эджинга, а приглушенные стоны отдаются эхом в голове. Если ты кончишь сейчас, то уже не сможешь сдержаться.")
 
 				# (else)
 			else:
-				saynn("Oh no, you feel the next climax creeping on to you. A very powerful one. Your needy tailhole is clenching more and more while you’re being edged, your muffled moans are resonating in your head. If you cum now you won’t be able to resist it any longer.")
+				saynn("О нет, ты чувствуешь, как подкатывает следующий оргазм. Очень мощный. Твое жаждущее анусное отверстие сжимается всё сильнее, пока тебя доводят до грани, а приглушенные стоны отдаются эхом в голове. Если ты кончишь сейчас, то уже не сможешь сдержаться.")
 
 	if(state in ["startsybian", "sybian"]):
 		if(GM.pc.getLustLevel() >= 1.0):
-			addDisabledButton("Endure", "You're too horny to endure this..")
+			addDisabledButton("Терпеть", "Ты слишком возбуждена, чтобы терпеть...")
 		else:
-			addButton("Endure", "Try to gather some strength in the process", "endure")
-		addButtonWithChecks("Struggle", "Resist against your restraints!", "struggle", [], [ButtonChecks.HasStamina])
-		addButton("Give up", "It’s just too much..", "give_up")
+			addButton("Терпеть", "Попытаться набраться сил в процессе", "endure")
+		addButtonWithChecks("Сопротивление", "Сопротивляться путам!", "struggle", [], [ButtonChecks.HasStamina])
+		addButton("Сдаться", "Это просто слишком...", "give_up")
 		if(GM.pc.hasBlockedHands() || GM.pc.hasBoundArms() || GM.pc.hasBoundLegs()):
-			addDisabledButton("Escape", "You can't escape because of the restraints")
+			addDisabledButton("Побег", "Из-за пут тебе не сбежать")
 		else:
-			addButton("Escape", "You’re free!", "escape")
+			addButton("Побег", "Ты свободна!", "escape")
 
 
 	if(state == "escape"):
@@ -605,123 +605,123 @@ func _run():
 		
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("You swiftly get off the sybian and can finally get a breather. Your legs shake a little, your pussy is tingling. Waves of heat spread out throughout your body. The two orgasms that you got were enough, any more and you think you would lose it.")
+			saynn("Ты быстро сползаешь с сибиана и наконец-то можешь перевести дух. Ноги слегка дрожат, киска покалывает. Волны жара разливаются по всему телу. Двух оргазмов было вполне достаточно — кажется, еще один, и ты окончательно потеряешь контроль.")
 
 		# (else)
 		else:
-			saynn("You swiftly get off the sybian and can finally get a breather. Your legs shake a little, your butt is tingling. Waves of heat spread out throughout your body. The two orgasms that you got were enough, any more and you think you would lose it.")
+			saynn("Ты быстро сползаешь с сибиана и наконец-то можешь перевести дух. Ноги слегка дрожат, задница покалывает. Волны жара разливаются по всему телу. Двух оргазмов было вполне достаточно — кажется, еще один, и ты окончательно потеряешь контроль.")
 
-		saynn("With no blindfold on, you can now look around the room. It seems to be some kind of staff resting room. A few chairs and sofas, a table with a coffee maker, a few plants dotted around the corners, a tv.")
+		saynn("Теперь, когда повязка снята, ты можешь осмотреться. Похоже на комнату отдыха для персонала: несколько стульев и диванов, стол с кофеваркой, в углах расставлены растения, стоит телевизор.")
 
-		saynn("While preparing to leave you notice something quite interesting. There is a huge board on one of the walls. There are many little notes on it.")
+		saynn("Собираясь уходить, ты замечаешь кое-что любопытное. На одной из стен висит огромная доска, усыпанная множеством маленьких записок.")
 
 		# (scene ends, Board action is done in-world)
 		
-		addButton("Board", "Go look at it", "board")
+		addButton("Доска", "Пойти посмотреть", "board")
 
 	if(state == "board"):
-		saynn("You walk up to the board and see something interesting. One of the notes says the following:")
+		saynn("Ты подходишь к доске и видишь кое-что интересное. На одной из записок написано следующее:")
 
-		saynn("[b]ATTENTION! THE NEW CODE IS 4125[/b]")
+		saynn("[b]ВНИМАНИЕ! НОВЫЙ КОД — 4125[/b]")
 
-		saynn("Is that what you think it is? It must be. Tavi should be proud of all the challenges you had to get through to get that code.")
+		saynn("Неужели это то, о чем ты думаешь? Должно быть, так и есть. Тави должна гордиться тем, через какие испытания тебе пришлось пройти, чтобы раздобыть этот код.")
 
 		# (Task completed)
 
 		# (scene ends)
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 
 	if(state == "give_up"):
 		playAnimation(StageScene.Sybian, "intense", {pcCum=true, bodyState={exposedCrotch=true,hard=true}})
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("It’s just too much, you succumb to the constant source of pleasure and quit resisting completely. Very soon after a third orgasm overwhelms you, making your pussy squirt out all the femcum that it had. You moan like a desperate slut and let yourself enjoy this one fully.")
+			saynn("Это просто слишком... ты сдаешься под натиском бесконечного источления удовольствия и полностью перестаешь сопротивляться. Вскоре тебя накрывает третий оргазм, от которого твоя киска буквально извергает всю накопившуюся в ней женскую сперму. Ты стонешь, как отчаянная шлюха, позволяя себе насладиться этим моментом сполна.")
 
 		# (else)
 		else:
-			saynn("It’s just too much, you succumb to the constant source of pleasure and quit resisting completely. Very soon after a third orgasm overwhelms you, making your anal ring get tight around the vibrating tip. You moan like a desperate slut and let yourself enjoy this one fully.")
+			saynn("Это просто слишком, ты поддаешься бесконечному источнику удовольствия и окончательно перестаешь сопротивляться. Вскоре после третьего оргазма тебя накрывает так сильно, что анальное кольцо сжимается вокруг вибрирующего наконечника. Ты стонешь, как отчаянная шлюха, позволяя себе насладиться этим сполна.")
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
-			saynn("Your balls are dry so all your cock can do is drip {pc.cum} and throb a lot.")
+			saynn("Твои яйца сухие, так что член может только капать {pc.cum} и сильно пульсировать.")
 
-		saynn("You realize that this is only the beginning.. But you don’t care, you’re already spacing out. Your tongue is drooling onto yourself while you begin to ride the sybian yourself.")
+		saynn("Ты понимаешь, что это только начало... Но тебе плевать, ты уже витаешь в облаках. Слюна течет изо рта, пока ты сама начинаешь скакать на сибиане.")
 
-		addButton("Time passes", "See what happens next", "time_passes")
+		addButton("Проходит время", "Смотреть, что будет дальше", "time_passes")
 
 	if(state == "time_passes"):
-		saynn("Hours pass.. Or were those just minutes? Days? You don’t know, your mind is busy bathing in this sea of pleasure. You don’t even feel satisfied after cumming again and again, you need more!")
+		saynn("Проходят часы... Или это были всего лишь минуты? Дни? Ты не знаешь, твой разум занят купанием в этом море наслаждения. Ты даже не чувствуешь удовлетворения после того, как кончаешь раз за разом — тебе нужно больше!")
 
-		addButton("Time passes again", "See what happens next", "time_passes_again")
+		addButton("Снова проходит время", "Смотреть, что будет дальше", "time_passes_again")
 
 	if(state == "time_passes_again"):
-		saynn("You feel drowsy, each orgasm drains you. Your mind gets a huge injection of endorphins each time but your body just can’t take it anymore.. But it feels so-o-o good.. More..")
+		saynn("Тебя клонит в сон, каждый оргазм выматывает тебя. Каждый раз твой мозг получает мощнейший впрыск эндорфинов, но тело уже просто не справляется... Но это так-к-к хорошо... Еще...")
 
-		saynn("The sound of your moans mixed together the sybian vibrating against your private bits has become so normal..")
+		saynn("Звук твоих стонов, смешанный с вибрацией сибиана по твоим интимным местам, стал чем-то совершенно привычным...")
 
-		saynn("Welcome to day "+str(GM.main.getDays())+" of your sentence")
+		saynn("Добро пожаловать в "+str(GM.main.getDays())+" твоего срока")
 
-		addButton("Time?", "Something will happen next?", "time?")
+		addButton("Время?", "Произойдет ли что-то дальше?", "time?")
 
 	if(state == "time?"):
 		addCharacter("alexrynard")
 		
-		saynn("Your bits are getting irritated from so much stimulation.. You probably came like a hundred times.. Or not.. You don’t even know anymore. All you feel is constant pleasure..")
+		saynn("Твои члены уже просто зудят от бесконечной стимуляции... Ты, наверное, кончал раз сто... А может и нет... Ты уже сам не понимаешь. Всё, что ты чувствуешь — это непрекращающееся наслаждение...")
 
-		saynn("Suddenly someone takes off your blindfold. It’s Alex! Your eyes squint from the light. Weak moans escape from your dry lips.")
+		saynn("Внезапно кто-то срывает с тебя повязку. Это Алекс! Глаза жмурятся от света. С твоих сухих губ срываются слабые стоны.")
 
-		saynn("[say=alexrynard]Good morning, inmate. You made quite a mess, huh.[/say]")
+		saynn("[say=alexrynard]Доброе утро, заключенный. Ну и грязища же тут разведена, а?[/say]")
 
-		saynn("He turns off the machine and you suddenly feel the world flip upside down on you. You don’t feel yourself being fucked anymore. But the phantom vibrations are still there.. So you still moan..")
+		saynn("Он выключает аппарат, и мир вокруг тебя внезапно переворачивается с ног на голову. Ты больше не чувствуешь, чтобы тебя трахали, но фантомные вибрации всё еще ощущаются... Поэтому ты продолжаешь стонать...")
 
-		saynn("[say=alexrynard]Wow, this really had fucked you up, huh? So? Gonna talk?[/say]")
+		saynn("[say=alexrynard]Ого, тебя и впрямь нехило размотало, да? Ну? Будешь говорить?[/say]")
 
-		saynn("He unlocks the gag and takes off the harness. You can actually close your mouth now. It feels so weird..")
+		saynn("Он расстегивает кляп и снимает с тебя ремни. Теперь ты наконец-то можешь закрыть рот. Ощущения такие странные...")
 
-		saynn("[say=pc]A-ah..h..[/say]")
+		saynn("[say=pc]А-ах... х..[/say]")
 
-		saynn("[say=alexrynard]Really?[/say]")
+		saynn("[say=alexrynard]Серьёзно?[/say]")
 
-		saynn("He grabs you by the collar.")
+		saynn("Он хватает тебя за воротник.")
 
-		saynn("[say=alexrynard]You want another day like this? A week? Tell me what the fuck was your plan?[/say]")
+		saynn("[say=alexrynard]Хочешь еще один такой денек? Или неделю? Ну и какой, блять, у тебя был план?[/say]")
 
-		saynn("You’re ready to melt. A cute smile shows up on your face, you don’t even care anymore.")
+		saynn("Ты готов просто растечься. На твоем лице появляется милая улыбка — тебе уже на всё плевать.")
 
-		saynn("[say=alexrynard]I see. Maybe you just wanted to end up like this. Stocks it is then, I wanna watch tv without some slut moaning all the time.[/say]")
+		saynn("[say=alexrynard]Ясно. Может, ты сама этого хотела. Значит, колодки, так колодки. Хочу посмотреть телик, чтобы какая-нибудь шлюха не ныла над ухом постоянно.[/say]")
 
-		saynn("Stocks? Is he serious? Didn’t you have enough?")
+		saynn("Колодки? Он это серьезно? Тебе что, мало было?")
 
-		addButton("Continue", "See what happens next", "learn_code_before_stocks")
+		addButton("Продолжить", "Смотреть, что будет дальше", "learn_code_before_stocks")
 
 	if(state == "learn_code_before_stocks"):
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard"})
 		
-		saynn("He clips a leash to your collar and helps you to get up by undoing the zip ties that were holding you on the sybian before pulling you off of it. Your legs shake but you somehow get up and follow him.")
+		saynn("Он пристегивает поводок к твоему ошейнику и помогает тебе подняться, расстегивая стяжки, которые удерживали тебя на сибиане, а затем стаскивает тебя с него. Ноги дрожат, но тебе каким-то образом удается встать и пойти за ним.")
 
-		saynn("You notice something interesting in the corner of your vision. There is a giant board on one of the walls with many notes on it. One of the notes says the following:")
+		saynn("Краем глаза ты замечаешь кое-что интересное. На одной из стен висит огромная доска, усыпанная записками. На одной из них написано следующее:")
 
-		saynn("[b]ATTENTION! THE NEW CODE IS 4125[/b]")
+		saynn("[b]ВНИМАНИЕ! НОВЫЙ КОД — 4125[/b]")
 
-		saynn("Is that what you think it is? It must be. Tavi is better be grateful because of all the things you had to go through.")
+		saynn("Ты так думаешь? Должно быть, так и есть. Тави стоит быть благодарной за всё то дерьмо, через которое тебе пришлось пройти.")
 
-		saynn("But the foxy doesn’t let you stand around for too long, he yanks you towards the exit.")
+		saynn("Но лис не дает тебе долго стоять без дела — он рывком тянет тебя к выходу.")
 
 		# (TASK COMPLETED)
 
-		addButton("Follow", "See where he brings you", "follow2")
+		addButton("Следовать", "Посмотреть, куда он тебя приведет", "follow2")
 
 	if(state == "follow2"):
 		# (also launches a paraded on a leash scene)
 
-		saynn("Foxy brings you to the stocks area and quickly shoves you into the free set before locking you.")
+		saynn("Лис приводит тебя к зоне с колодками и быстро заталкивает в свободный набор, прежде чем запереть тебя.")
 
-		saynn("[say=alexrynard]Here we are. Enjoy your stay as a prison’s toy.[/say]")
+		saynn("[say=alexrynard]Ну вот и всё. Наслаждайся своим пребыванием в роли тюремной игрушки.[/say]")
 
-		saynn("After that he just walks away, leaving you alone with the whole station.")
+		saynn("После этого он просто уходит, оставляя тебя одну во всей этой станции.")
 
 		# (scene ends)
-		addButton("Stocks", "See what happens next", "startStocks")
+		addButton("Колодки", "Смотреть, что будет дальше", "startStocks")
 
 
 func _react(_action: String, _args):

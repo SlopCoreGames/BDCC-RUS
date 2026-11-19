@@ -12,30 +12,30 @@ func run(_triggerID, _args):
 	var noMirri = getModule("SlaveAuctionModule").noMirri()
 	
 	if(noMirri && GM.pc.getLocation() == "market_market"):
-		addButton("Sell slave", "Start an auction!", "soloslavesell")
+		addButton("Продать рабыню", "Начать аукцион!", "soloslavesell")
 		if(getFlag("SlaveAuctionModule.upgradeSeePrefs", 0) >= 1):
-			addButton("Bidders info", "Check the preferences of the next bidders", "solobidders")
-		addButton("Upgrades", "Upgrade the Blacktail Market", "soloupgrades")
+			addButton("Инфо о ставках", "Проверить предпочтения следующих покупателей", "solobidders")
+		addButton("Улучшения", "Улучшить рынок Блэктейл", "soloupgrades")
 		
-		addButton("Prison cell", "Teleport back to your prison cell", "exitsecure")
+		addButton("Тюремная камера", "Телепортироваться обратно в камеру", "exitsecure")
 	
 	if(GM.pc.getLocation() == "market_intro"):
-		addButton("Prison cell", "Teleport back to your prison cell", "exitsecure")
+		addButton("Тюремная камера", "Телепортироваться обратно в камеру", "exitsecure")
 		if(noMirri):
-			addButton("Laptop", "Use Mirri's laptop to order stuff", "mirrilaptop")
+			addButton("Ноутбук", "Использовать ноутбук Мирри для заказа товаров", "mirrilaptop")
 	
 		if(!noMirri):
 			if(getFlag("SlaveAuctionModule.beganAuctionOnce") && !getFlag("SlaveAuctionModule.luxeIntroHap")):
-				addDisabledButton("Mirri", "She is not here..")
+				addDisabledButton("Мирри", "Её здесь нет...")
 				
-				saynn("You hear loud chatter coming from the room at the end of the corridor..")
+				saynn("Из комнаты в конце коридора доносится громкий гул голосов...")
 			else:
 				if(!checkCharacterBusy("MirriBusy", "Seems like the catgirl is not here", "Mirri")):
-					addButton("Mirri", "Talk with the catgirl", "mirri")
+					addButton("Мирри", "Поговорить с кошкодевочкой", "mirri")
 				
 	if(true):
 		if(GM.pc.getLocation() == GM.pc.getCellLocation()):
-			addButton("Blacktail Market", "Teleport to the Blacktail Market", "entersecure")
+			addButton("Рынок Блэктейл", "Телепортироваться на рынок Блэктейл", "entersecure")
 
 func getPriority():
 	return 0

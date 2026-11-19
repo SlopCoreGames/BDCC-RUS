@@ -7,87 +7,87 @@ func _run():
 	if(state == ""):
 		addCharacter("mirri")
 		playAnimation(StageScene.Duo, "stand", {npc="mirri"})
-		saynn("Excited, Mirri grabs you by the collar and yanks you towards the laptop.")
+		saynn("В возбуждении Мирри хватает тебя за воротник и тянет к ноутбуку.")
 
-		saynn("[say=mirri]Look! Did you see?[/say]")
+		saynn("[say=mirri]Смотри! Видел?[/say]")
 
-		saynn("[say=pc]See what?[/say]")
+		saynn("[say=pc]Что именно?[/say]")
 
-		saynn("There is some kind of web interface on the screen.. that shows a leaderboard of sorts. Mirri's name is in there.. pretty low. You notice that the top people are all from Blacktail.")
+		saynn("На экране какой-то веб-интерфейс... похоже на таблицу лидеров. Имя Мирри там есть... но довольно низко. Ты замечаешь, что все топовые игроки — из Блэктейла.")
 
-		saynn("[say=mirri]See that? Mirri Blacktail. Rank 1! I am not zero anymore![/say]")
+		saynn("[say=mirri]Видишь? Мирри Блэктейл. Ранг 1! Я больше не ноль![/say]")
 
-		saynn("[say=pc]Is that good?[/say]")
+		saynn("[say=pc]Это хорошо?[/say]")
 
-		saynn("She instantly frowns and pokes you with her claws.")
+		saynn("Она тут же хмурится и тычет в тебя когтями.")
 
-		saynn("[say=mirri]Is that good? Of course that's good, you dummy! Well, it's kinda shit rank still.. but you know! It just shows that I'm not a complete failure![/say]")
+		saynn("[say=mirri]Это хорошо? Конечно, это хорошо, тупица! Ну, ранг всё ещё так себе... но ты понял! Это просто значит, что я не полный неудачник![/say]")
 
-		saynn("She couldn't have done it without you.")
+		saynn("Она бы не справилась без тебя.")
 
-		saynn("[say=pc]Well, you're welcome.[/say]")
+		saynn("[say=pc]Ну, не за что.[/say]")
 
-		saynn("Mirri puts the laptop away and puts on a cute smile, her eyes have that naive tint to them.")
+		saynn("Мирри убирает ноутбук и мило улыбается, а в её глазах читается какая-то наивность.")
 
-		saynn("[say=mirri]You did great too, especially for a lowlife AlphaCorp slave. You know, {pc.name}.. I think I have developed feelings for you..[/say]")
+		saynn("[say=mirri]Ты тоже отлично справился, особенно для никчемного раба АльфаКорпа. Знаешь, {pc.name}.. кажется, я начала к тебе что-то чувствовать..[/say]")
 
-		saynn("She advances towards you, her paws reaching out.. which makes you instinctively back away.")
+		saynn("Она подается вперед, протягивая к тебе лапки... отчего ты инстинктивно отшатываешься.")
 
-		saynn("But Mirri just pounces towards you and grabs your collar.")
+		saynn("Но Мирри просто набрасывается на тебя и хватает за воротник.")
 
-		saynn("[say=pc]The fuck are you talking about.[/say]")
+		saynn("[say=pc]Ты о чем вообще, блядь, несешь?[/say]")
 
-		saynn("[say=mirri]I think I love you..[/say]")
+		saynn("[say=mirri]Думаю, я тебя люблю..[/say]")
 
-		saynn("Great, a crazy Syndicate agent is exactly the kind of lover that you need in life.")
+		saynn("Отлично, сумасшедшая агент Синдиката — это именно тот любовник, который тебе жизненно необходим.")
 
-		saynn("[say=pc]Uh.. cool.[/say]")
+		saynn("[say=pc]Э-э.. круто.[/say]")
 
-		saynn("Her softness instantly goes away, her tail puffs up, her free paw pressing its claws against your throat..")
+		saynn("Её мягкость мгновенно испаряется, хвост распушается, а свободной лапой она впивается когтями тебе в горло...")
 
-		saynn("[say=mirri]Cool? COOL? You know what is actually cool?! Your heart![/say]")
+		saynn("[say=mirri]Круто? КРУТО?! Знаешь, что на самом деле круто?! Твое сердце![/say]")
 
-		saynn("[say=pc]Baby, you're rushing things a little too fast.[/say]")
+		saynn("[say=pc]Малыш, ты слишком торопишь события.[/say]")
 
-		saynn("Mirri tilts her head and leans in close, her lips almost touching yours, her voice a seductive purr now..")
+		saynn("Мирри наклоняет голову и придвигается вплотную, её губы почти касаются твоих, а голос превращается в соблазнительное мурлыканье...")
 
-		saynn("[say=mirri]Life is so short, you know.. I worry about you all the time, you could die anyday when I'm not around.. What bitches are you fucking with, tell me every name, I can smell their scents on you.. Give me the fucking list..[/say]")
+		saynn("[say=mirri]Жизнь так коротка, знаешь ли... Я постоянно за тебя переживаю, ты ведь можешь сдохнуть в любой день, когда меня не будет рядом... С какими сучками ты трахаешься? Назови мне каждую имя, я чувствую их запах на тебе... Дай мне, блять, весь список![/say]")
 
-		saynn("Wow, this girl is going zero to sixty and back around..")
+		saynn("Ого, эту девчонку штормит от нуля до сотни и обратно...")
 
-		saynn("[say=pc]Mirri, I just want credits.[/say]")
+		saynn("[say=pc]Мирри, мне просто нужны кредиты.[/say]")
 
-		saynn("She pouts and pushes you away.")
+		saynn("Она дует губы и отталкивает тебя.")
 
-		saynn("[say=mirri]You have much to learn about what true love is, {pc.name}..[/say]")
+		saynn("[say=mirri]Тебе еще многому предстоит научиться в плане того, что такое настоящая любовь, {pc.name}...[/say]")
 
-		saynn("Her eyes see the laptop.")
+		saynn("Её взгляд падает на ноутбук.")
 
-		saynn("[say=mirri]But you're right![/say]")
+		saynn("[say=mirri]Но ты прав![/say]")
 
-		saynn("She opens the laptop again and shows you some files. Looks like.. camera recordings of your recent auctions? It's hard to see much because of how dim the lighting is near the bidders.. probably by design.")
+		saynn("Она снова открывает ноутбук и показывает тебе файлы. Похоже на... записи с камер с твоих последних аукционов? Разглядеть сложно из-за тусклого освещения рядом с участниками... вероятно, так и задумано.")
 
-		saynn("[say=mirri]We gotta start expanding! The current setup we have is dogshit. We need a nicer stage, better seats for the bidders, better cameras, hidden microphones everywhere..[/say]")
+		saynn("[say=mirri]Нам пора расширяться! То, что есть сейчас — просто дерьмо. Нужна сцена поприличнее, места получше для участников торгов, камеры повсюду, скрытые микрофоны на каждом шагу...[/say]")
 
-		saynn("You can understand why you'd want to make the environment look and feel better for the bidders.. but the rest..")
+		saynn("Можно понять, почему ты хочешь сделать обстановку более комфортной для покупателей... но всё остальное...")
 
-		saynn("[say=pc]Cameras? Microphones? Why?[/say]")
+		saynn("[say=pc]Камеры? Микрофоны? Зачем?[/say]")
 
-		saynn("[say=mirri]To gather more intel. The more we know about the bidders, the more.. targeted..  we can make our auctions. The more credits you and I can earn![/say]")
+		saynn("[say=mirri]Чтобы собирать больше инфы. Чем больше мы знаем о покупателях, тем более... точечными... мы сможем делать наши аукционы. И тем больше кредитов заработаем мы с тобой![/say]")
 
-		saynn("Makes sense. Reminds you of all the targeted ads that the global cyberspace has.")
+		saynn("Логично. Напоминает всю эту хрень с таргетированной рекламой в глобальном киберпространстве.")
 
-		saynn("[say=mirri]We're gonna squeeze this world for its every last penny.[/say]")
+		saynn("[say=mirri]Мы выжмем из этого мира всё до последней копейки.[/say]")
 
-		saynn("[say=pc]Alright, that's a plan.[/say]")
+		saynn("[say=pc]Ладно, план есть.[/say]")
 
-		saynn("[say=mirri]That's the best plan.[/say]")
+		saynn("[say=mirri]Это лучший план.[/say]")
 
-		saynn("Anything beats being chained up on that stage yourself.")
+		saynn("Что угодно лучше, чем самой стоять на этой сцене в цепях.")
 
-		saynn("[say=mirri]Keep me impressed, {pc.name}~. Tell me if you think that we should start upgrading the Market.[/say]")
+		saynn("[say=mirri]Продолжай в том же духе, {pc.name}~. Скажи, как думаешь, стоит ли нам начинать апгрейд Рынка?[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

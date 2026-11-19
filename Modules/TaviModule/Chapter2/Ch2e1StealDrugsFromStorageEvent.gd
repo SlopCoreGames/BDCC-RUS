@@ -8,7 +8,7 @@ func registerTriggers(es):
 	
 func run(_triggerID, _args):
 	if(GM.QS.isActive("Ch2ElizaQuest") && !getFlag("TaviModule.ch2PCStoleDrugs")):
-		saynn("You notice a crate that had vials with the red drug that you need to steal.")
+		saynn("Вы замечаете ящик, в котором лежат флаконы с тем самым красным наркотиком, который вам нужно украсть.")
 		
 		addButtonUnlessLate("Tavi drugs", "Steal the drugs!", "stealdrugs")
 

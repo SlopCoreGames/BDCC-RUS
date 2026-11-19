@@ -15,1108 +15,1108 @@ func _run():
 		addCharacter("luxe")
 		playAnimation(StageScene.Duo, "stand", {npc="luxe", npcAction="sit"})
 		aimCameraAndSetLocName("market_luxe")
-		saynn("Luxe is sitting behind his desk.")
+		saynn("Люкс сидит за своим столом.")
 
 		saynn("[say=luxe]"+str(getModule("SlaveAuctionModule").getLuxeGreeting())+"[/say]")
 
-		saynn("Affection towards you: "+str(Util.roundF(getModule("SlaveAuctionModule").getLuxeAffection()*100.0, 1))+"%")
+		saynn("Привязанность к вам: "+str(Util.roundF(getModule("SlaveAuctionModule").getLuxeAffection()*100.0, 1))+"%")
 
-		addButton("Talk", "Ask a few things", "talk_menu")
+		addButton("Поговорить", "Спросить кое о чем", "talk_menu")
 		if (!getFlag("SlaveAuctionModule.luxeSexIntro")):
-			addButton("Sex?", "Check if the old wolf is up for some fun with you", "sex_intro")
+			addButton("Секс?", "Проверить, не хочет ли старый волк немного развлечься с вами", "sex_intro")
 		else:
-			addButton("Sex", "See if the old wolf is up for some fun", "sex_menu")
-		addButton("Leave", "Time to go", "endthescene")
+			addButton("Секс", "Посмотреть, не хочет ли старый волк развлечься", "sex_menu")
+		addButton("Уйти", "Пора идти", "endthescene")
 	if(state == "big_intro"):
 		addCharacter("luxe")
 		playAnimation(StageScene.Duo, "stand", {npc="luxe", npcAction="stand"})
 		aimCameraAndSetLocName("market_luxe")
-		saynn("You approach the reinforced doors at the end of the corridor.. and hear the metal screech as they actually decide to open for you this time.")
+		saynn("Вы подходите к усиленным дверям в конце коридора... и слышите скрежет металла — на этот раз они действительно решаются открыться перед вами.")
 
-		saynn("The space itself begins to weigh on you as you cross it. The wolf's office radiates a dark, rich energy, walls paneled in deep polished wood with good trims glinting under soft, ambient lighting. Some red accents finish the look.")
+		saynn("По мере того как вы пересекаете пространство, оно начинает давить на вас. Кабинет волка излучает темную, насыщенную энергию: стены отделаны глубоким полированным деревом с изысканной отделкой, поблескивающей в мягком рассеянном свете. Завершают образ красные акценты.")
 
-		saynn("Luxe is staring at the holographic display of the galaxy, tracing the routes of the Syndicate ships with his eyes. The area is massive.. threaded by the many little glowing bugs.")
+		saynn("Люкс пристально смотрит на голографический дисплей галактики, прослеживая взглядом маршруты кораблей Синдиката. Пространство огромно... пронизано множеством крошечных светящихся точек.")
 
-		saynn("You're still standing near the entrance, waiting for your permission to come in. And finally, he turns around, offering you no verbal greeting but a gesture, ordering you to step forward.")
+		saynn("Вы всё еще стоите у входа, ожидая разрешения войти. Наконец он оборачивается, не произнося ни слова, а лишь жестом приказывая вам сделать шаг вперед.")
 
-		saynn("The silence stretches as Luxe takes a seat behind his dark leather chair, his fur tips creating interesting patterns all around its surface.")
+		saynn("Тишина затягивается, пока Люкс устраивается в своем кресле из темной кожи, кончики его меха создают причудливые узоры на поверхности сиденья.")
 
 		setFlag("SlaveAuctionModule.customLuxeGreeting", "So. What do you want?")
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "talk_menu"):
-		saynn("[say=pc]May I ask a few questions?[/say]")
+		saynn("[say=pc]Могу я задать несколько вопросов?[/say]")
 
-		saynn("[say=luxe]Make it quick.[/say]")
+		saynn("[say=luxe]Быстро.[/say]")
 
-		saynn("What do you want to ask?")
+		saynn("Что именно ты хочешь спросить?")
 
-		addButton("Syndicate", "Ask him about what Syndicate even is", "ask_syndicate")
-		addButton("Blacktail", "Ask him about the family", "ask_blacktail")
-		addButton("Fur pattern", "Ask him about his unique fur pattern", "ask_fur")
-		addButton("Mirri", "Ask him about Mirri", "ask_mirri")
-		addButton("Mission", "Ask what you should do", "ask_mission")
-		addButton("Back", "Enough chatting", "")
+		addButton("Синдикат", "Спросить его о том, что вообще такое Синдикат", "ask_syndicate")
+		addButton("Блэктейл", "Спросить его о семье", "ask_blacktail")
+		addButton("Узор меха", "Спросить его об уникальном узоре его меха", "ask_fur")
+		addButton("Мирри", "Спросить о Мирри", "ask_mirri")
+		addButton("Миссия", "Спросить, что нужно делать", "ask_mission")
+		addButton("Назад", "Хватит болтать", "")
 	if(state == "ask_syndicate"):
-		saynn("[say=pc]Syndicate. Is it some kind of entity?[/say]")
+		saynn("[say=pc]Синдикат? Это какая-то организация?[/say]")
 
-		saynn("His gaze sharpens at your question, a faint glint of interest flickering in his cold glowing eyes. Luxe leans back in his chair, hand holding onto his chin.")
+		saynn("Его взгляд обостряется от твоего вопроса, в холодных светящихся глазах промелькнул слабый интерес. Люкс откидывается на спинку кресла, подперев подбородок рукой.")
 
-		saynn("[say=luxe]Syndicate is an alliance of families, each with its own skills, its own resources, all working toward the same purpose.[/say]")
+		saynn("[say=luxe]Синдикат — это альянс семей, у каждой из которых свои навыки и ресурсы, но все они работают ради одной цели.[/say]")
 
-		saynn("[say=pc]Destroying AlphaCorp?[/say]")
+		saynn("[say=pc]Уничтожить АльфаКорп?[/say]")
 
-		saynn("He pauses, eyes glancing briefly toward the holographic map.")
+		saynn("Он делает паузу, на мгновение бросив взгляд на голографическую карту.")
 
-		saynn("[say=luxe]Complete and utter destruction, you are correct.[/say]")
+		saynn("[say=luxe]Полное и окончательное уничтожение, ты прав(а).[/say]")
 
-		saynn("[say=pc]Why does it need destroying? Excuse me if I don't see the obvious reasons.[/say]")
+		saynn("[say=pc]Зачем её уничтожать? Прошу прощения, если я не вижу очевидных причин.[/say]")
 
-		saynn("Luxe leans forward slightly, his eyes locking onto yours.")
+		saynn("Люкс слегка подается вперед, впиваясь взглядом в твои глаза.")
 
-		saynn("[say=luxe]AlphaCorp is a plague of this galaxy, simple as that. It strips away freedom, the right to think, to choose, of everything that it touches.[/say]")
+		saynn("[say=luxe]АльфаКорп — это чума этой галактики, всё просто. Она лишает свободы, права думать, права выбора — всего, к чему прикасается.[/say]")
 
-		saynn("You tug on your tight collar. But then you look around.")
+		saynn("Ты потягиваешь свой тугой ошейник. Но затем оглядываешься по сторонам.")
 
-		saynn("[say=pc]You're not exactly freedom fighters too, are you?[/say]")
+		saynn("[say=pc]Вы ведь не совсем борцы за свободу, верно?[/say]")
 
-		saynn("[say=luxe]We are who we have to be. Unlike AlphaCorp, Syndicate is dynamic, adapting in the moment, bending the rules if that's required. We fight because it's our choice.[/say]")
+		saynn("[say=luxe]Мы те, кем должны быть. В отличие от АльфаКорп, Синдикат динамичен: он адаптируется на лету и гнет правила, если того требует ситуация. Мы сражаемся, потому что это наш выбор.[/say]")
 
-		saynn("[say=pc]Your slaves don't exactly have any choice, do they?[/say]")
+		saynn("[say=pc]У ваших рабов ведь не особо много выбора, так ведь?[/say]")
 
-		saynn("[say=luxe]Prove that you're strong - and you will get the reins. The rest will have to listen. And it will have to stay like that, at least until the threat of this galaxy is gone.[/say]")
+		saynn("[say=luxe]Докажи, что ты силен — и поводья окажутся в твоих руках. Остальным придется подчиняться. И так будет продолжаться, по крайней мере, пока угроза этой галактике не исчезнет.[/say]")
 
-		saynn("Huh. A fight for freedom.. no matter the cost.")
+		saynn("Хм. Битва за свободу... любой ценой.")
 
-		saynn("[say=pc]Once you win, who can promise that Syndicate won't just turn into another AlphaCorp?[/say]")
+		saynn("[say=pc]Когда вы победите, кто даст гарантию, что Синдикат не превратится в очередную АльфаКорп?[/say]")
 
-		saynn("[say=luxe]Our organization is highly decentralized. Once our goal is achieved, there will be no reason for the combined Syndicate to exist.[/say]")
+		saynn("[say=luxe]Наша организация сильно децентрализована. Как только наша цель будет достигнута, у объединенного Синдиката просто не будет причин для существования.[/say]")
 
-		saynn("Decentralization is probably how it managed to survive for so long.. how long..")
+		saynn("Децентрализация, вероятно, и помогла ему продержаться так долго... как долго еще...?")
 
-		saynn("[say=pc]How long is the war going already?[/say]")
+		saynn("[say=pc]Сколько уже длится эта война?[/say]")
 
-		saynn("Luxe cups his chin and gets quiet for some time.")
+		saynn("Люкс подпирает подбородок и на некоторое время замолкает.")
 
-		saynn("[say=luxe]Time is relative in space. At least a few generations by now. I doubt many remember how the world looked before it.[/say]")
+		saynn("[say=luxe]В космосе время относительно. По крайней мере, прошло уже несколько поколений. Сомневаюсь, что многие помнят, каким был мир до этого.[/say]")
 
-		saynn("Interesting.")
+		saynn("Интересно.")
 
-		addButton("Continue", "See what happens next", "talk_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "talk_menu")
 	if(state == "ask_blacktail"):
-		saynn("[say=pc]Can you please tell me more about your family?[/say]")
+		saynn("[say=pc]Можешь рассказать побольше о своей семье?[/say]")
 
-		saynn("[say=luxe]We are Blacktail. We provide resources for the shared cause, be it credits or people.[/say]")
+		saynn("[say=luxe]Мы — «Блэктейл». Мы обеспечиваем ресурсы для общего дела, будь то кредиты или люди.[/say]")
 
-		saynn("[say=pc]And you do that.. by trading slaves?[/say]")
+		saynn("[say=pc]И вы делаете это... торгуя рабами?[/say]")
 
-		saynn("[say=luxe]AlphaCorp slaves can barely be considered people. Nothing but mindless brainwashed husks.[/say]")
+		saynn("[say=luxe]Рабов АльфаКорпа едва ли можно считать людьми. Просто бездумные, промытые мозги оболочки.[/say]")
 
-		saynn("Ouch.")
+		saynn("Ой.")
 
-		saynn("[say=pc]Do I look mindless to you?[/say]")
+		saynn("[say=pc]Я что, кажусь тебе бездумной?[/say]")
 
-		saynn("His gaze flickers, just for an instant, at your question. But his expression remains cold.")
+		saynn("Его взгляд на мгновение дрогнул от твоего вопроса, но выражение лица осталось холодным.")
 
-		saynn("[say=luxe]Not entirely. You proved that you are capable of carving your own path rather than following one that AlphaCorp wants.[/say]")
+		saynn("[say=luxe]Не совсем. Ты доказала, что способна прокладывать собственный путь, а не идти по тому, что навязывает АльфаКорп.[/say]")
 
-		saynn("Proving yourself to the Syndicate.. one sold slave at a time.")
+		saynn("Доказывая свою ценность Синдикату... продавая по одной рабыне за раз.")
 
-		saynn("[say=luxe]But still, if the circumstances were any different, we wouldn't be having this talk right now.[/say]")
+		saynn("[say=luxe]И всё же, если бы обстоятельства были хоть немного иными, мы бы сейчас не вели этот разговор.[/say]")
 
-		saynn("His words make you uncomfortable.. better ask something else.")
+		saynn("Его слова заставляют тебя чувствовать себя неловко... лучше спросить о чём-нибудь другом.")
 
-		saynn("[say=pc]How big is your family? If I might ask. I only know Mirri.[/say]")
+		saynn("[say=pc]Какая у тебя большая семья? Если не секрет. Я знаю только Мирри.[/say]")
 
-		saynn("[say=luxe]Blacktail family consists of 23 members with me being the oldest.[/say]")
+		saynn("[say=luxe]В семье Блэктейл двадцать три человека, и я — самый старший.[/say]")
 
-		saynn("Shit, this guy sure fucked a lot.")
+		saynn("Блядь, ну и натрахался же этот тип.")
 
-		saynn("[say=luxe]We're a family built on power, respect and strict discipline. And yes, we are large. Extensive, even. And all of us are focused on the same task.. almost.[/say]")
+		saynn("[say=luxe]Наша семья построена на власти, уважении и строгой дисциплине. И да, мы большая семья. Даже огромная. И все мы сосредоточены на одной задаче... почти все.[/say]")
 
-		saynn("That's one way to run a family.")
+		saynn("Свойственно такому семейству.")
 
-		addButton("Continue", "See what happens next", "talk_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "talk_menu")
 	if(state == "ask_fur"):
-		saynn("[say=pc]Interesting fur pattern.[/say]")
+		saynn("[say=pc]Интересный узор на меху.[/say]")
 
-		saynn("Luxe hears that.. and reaches into his desk, pulling out a little box. He opens it and grabs a cigar.")
+		saynn("Люкс слышит это... и лезет в свой стол, доставая маленькую коробочку. Он открывает её и выуживает сигару.")
 
-		saynn("[say=pc]May I ask what caused it?[/say]")
+		saynn("[say=pc]Могу я спросить, что стало причиной?[/say]")
 
-		saynn("You don't hear any answers. Luxe frowns.. his whole expression becoming mean.. and the tips of his fur begin to glow even harder.. almost reminding you of real fire. He brings the cigar near them.. and watches as its end lights up.")
+		saynn("Ответа ты не слышишь. Люкс хмурится, всё его лицо становится злобным... а кончики его меха начинают светиться ещё ярче, почти напоминая настоящий огонь. Он подносит к ним сигару и наблюдает, как её кончик вспыхивает.")
 
-		saynn("[say=luxe]None of your business.[/say]")
+		saynn("[say=luxe]Не твоё дело.[/say]")
 
-		saynn("Huh. Looks like you won't get an answer. You do feel the whole room becoming warmer.. It might be some kind of mutation that he has. Or it could be an implant, who knows.")
+		saynn("Хм. Похоже, ответа не будет. Ты чувствуешь, как в комнате становится теплее... Возможно, это какая-то его мутация. А может, имплант — кто знает.")
 
-		addButton("Continue", "See what happens next", "talk_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "talk_menu")
 	if(state == "ask_mirri"):
-		saynn("[say=pc]You're pretty cold to Mirri. Isn't she your daughter?[/say]")
+		saynn("[say=pc]Ты довольно суров с Мирри. Разве она не твоя дочь?[/say]")
 
-		saynn("[say=luxe]The Blacktail family is not just me and Mirri. I have to uphold everyone to the same standards, it's only fair. Mirri.. proved herself to be quite unreliable over the time. But this is all that you should know.[/say]")
+		saynn("[say=luxe]Семья Блэктейл — это не только я и Мирри. Я должен требовать от всех соблюдения одних и тех же стандартов, это будет справедливо. Мирри... со временем доказала, что ей нельзя доверять. Но это всё, что тебе стоит знать.[/say]")
 
-		saynn("[say=pc]C'mon, you can tell me more than that. Why is Mirri so.. different from you? Who is her mother, can I see her maybe?[/say]")
+		saynn("[say=pc]Да ладно тебе, ты можешь рассказать больше. Почему Мирри такая... не такая, как ты? Кто её мать, может, я смогу её увидеть?[/say]")
 
-		saynn("Luxe gives you a dead cold stare. Yeah, he clearly doesn't want to share anything else.")
+		saynn("Люкс одаряет тебя мертвенно-холодным взглядом. Да уж, явно он не горит желанием делиться подробностями.")
 
-		addButton("Continue", "See what happens next", "talk_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "talk_menu")
 	if(state == "ask_mission"):
-		saynn("[say=pc]So.. what should I do again? Convince Mirri?[/say]")
+		saynn("[say=pc]Так... что мне нужно сделать? Убедить Мирри?[/say]")
 
-		saynn("[say=luxe]I'm not asking or forcing you, an AlphaCorp slave, to do anything, I'm not her. But if you want to be spared when her plan eventually comes to its natural conclusion, I'd rather you not stand in my way.[/say]")
+		saynn("[say=luxe]Я не прошу и не заставляю тебя, рабыню АльфаКорп, делать что-либо — я не она. Но если хочешь уцелеть, когда её план наконец придет к своему логическому завершению, то лучше не стой у меня на пути.[/say]")
 
-		saynn("That's.. not that hard to remember.. do not mess with the big ass wolf..")
+		saynn("Это... не так уж трудно запомнить... не связывайся с этим огромным волком...")
 
-		saynn("[say=pc]Spared.. What do you mean by spared?[/say]")
+		saynn("[say=pc]Пощадили... В каком смысле «пощадили»?[/say]")
 
-		saynn("[say=luxe]You will be kept alive.[/say]")
+		saynn("[say=luxe]Тебя оставят в живых.[/say]")
 
-		saynn("[say=pc]Alive can mean many things. Will I be enslaved?[/say]")
+		saynn("[say=pc]«В живых» может значить разное. Я стану рабыней?[/say]")
 
-		saynn("[say=luxe]Your situation will not get any worse than it already is. You will get your freedom from AlphaCorp. What happens next will be completely up to you.[/say]")
+		saynn("[say=luxe]Твое положение не станет хуже, чем уже есть. Ты получишь свободу от АльфаКорп. А что будет дальше — решишь сама.[/say]")
 
-		saynn("That's.. something.. at least.")
+		saynn("Это... хотя бы утешение.")
 
-		addButton("Continue", "See what happens next", "talk_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "talk_menu")
 	if(state == "sex_intro"):
 		playAnimation(StageScene.Duo, "stand", {npc="luxe", npcAction="sit"})
-		saynn("You stand in the center of the Luxe's grand office, barely daring to meet the wolf's powerful, intense gaze.")
+		saynn("Ты стоишь посреди величественного офиса Люкса, едва осмеливаясь встретиться с его мощным, пристальным взглядом волка.")
 
-		saynn("The more time passes, the more his cold, unyielding eyes size you up in complete silence. Despite how glowing his stare is.. you fail to see a spark in it..")
+		saynn("Чем больше проходит времени, тем дольше его холодные, непреклонные глаза молча изучают тебя. Несмотря на то, насколько сияет его взор... ты не видишь в нем ни единой искры...")
 
-		saynn("After an uncomfortable amount of time, he tilts his head slowly.")
+		saynn("После мучительно долгого молчания он медленно наклоняет голову набок.")
 
-		saynn("[say=luxe]Either say something or leave.[/say]")
+		saynn("[say=luxe]Либо скажи что-нибудь, либо уходи.[/say]")
 
-		saynn("The words are barely spoken above a whisper.. and yet.. you feel their oppressive weight weighing you down.. down to your.. hm.")
+		saynn("Слова едва сорвались с его губ шепотом... и всё же... ты чувствуешь их гнетущую тяжесть, которая придавливает тебя... прямо к твоему... хм.")
 
-		addButton("Leave", "Fight the feeling and just leave", "endthescene")
-		addButton("Offer sex", "Offer the old wolfy a quickie", "sexintro_stupidoffer")
-		addButton("Here to serve", "Tell him that you want to serve Luxe", "sexintro_heretoserve")
+		addButton("Уйти", "Побороть чувства и просто уйти", "endthescene")
+		addButton("Предложить секс", "Предложить старому волку быстрый перепихон", "sexintro_stupidoffer")
+		addButton("Я здесь, чтобы служить", "Сказать ему, что хочешь служить Люксу", "sexintro_heretoserve")
 	if(state == "sexintro_stupidoffer"):
-		saynn("Slowly and carefully, you approach the wolf's desk and even dare to put your hands on it as you lean forward, your voice laced with seductive undertones.")
+		saynn("Медленно и осторожно ты подходишь к столу волка и, наклонившись вперед, даже осмеливаешься положить на него руки; твой голос пропитан соблазном.")
 
-		saynn("[say=pc]Wanna have some fun maybe?[/say]")
+		saynn("[say=pc]Может, повеселимся?[/say]")
 
-		saynn("All you get back is a dead stare.")
+		saynn("В ответ ты получаешь лишь мертвый взгляд.")
 
-		saynn("[say=pc]C'mon, we can choose who will top and who will bottom. Do you like anal?[/say]")
+		saynn("[say=pc]Да ладно, мы сами решим, кто будет сверху, а кто снизу. Тебе нравится анал?[/say]")
 
-		saynn("The saliva in your mouth turns into little ice crystals..")
+		saynn("Слюна во рту превращается в крошечные льдинки...")
 
-		saynn("[say=pc]Uh. Your air conditioner really needs some tuning here, wow.[/say]")
+		saynn("[say=pc]Ух. Твой кондей тут реально нуждается в настройке, вау.[/say]")
 
-		saynn("[say=luxe]Hands off.[/say]")
+		saynn("[say=luxe]Руки убрал.[/say]")
 
-		saynn("He didn't say no!")
+		saynn("Он не сказал «нет»!")
 
-		saynn("[say=pc]C'mon. I'm sure you're bored all the time, why not spice up your life a little?[/say]")
+		saynn("[say=pc]Да ладно тебе. Уверен, тебе вечно скучно, так почему бы не добавить в жизнь немного перчинки?[/say]")
 
-		saynn("Your insides are freezing by now from being so close to him.. Not a single muscle on his face moves.")
+		saynn("У тебя уже всё внутри замерзло от такой близости к нему... Ни единый мускул на его лице не дрогнул.")
 
-		saynn("[say=luxe]Hands. Off. My desk.[/say]")
+		saynn("[say=luxe]Руки. С. Моего. Стола.[/say]")
 
-		saynn("You're freezing so much that your hands might just come off if you keep it up.. So you finally decide to take a step back.")
+		saynn("Ты так замерзла, что руки могут просто отвалиться, если так пойдет и дальше... В итоге ты решаешь наконец сделать шаг назад.")
 
-		saynn("[say=luxe]I have no desire for slaves. If you need sex, you have Mirri.[/say]")
+		saynn("[say=luxe]У меня нет тяги к рабыням. Если тебе нужен секс, у тебя есть Мирри.[/say]")
 
-		saynn("Is he.. offering his daughter to you?")
+		saynn("Он что... предлагает тебе свою дочь?")
 
-		saynn("Either way.. It was worth a shot.")
+		saynn("В любом случае... попытка была стоящей.")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "sexintro_heretoserve"):
-		saynn("He is so.. strong.. His presence alone is activating something hidden in your mind..")
+		saynn("Он такой.. сильный.. Одно его присутствие пробуждает в твоем сознании что-то скрытое..")
 
-		saynn("[say=pc]I'm.. I'm here to serve, Luxe. However you see fit..[/say]")
+		saynn("[say=pc]Я.. я здесь, чтобы служить тебе, Люкс. Как пожелаешь..[/say]")
 
-		saynn("You don't know what you made you say that.. but you did.")
+		saynn("Ты сама не понимаешь, что заставило тебя это сказать.. но ты это сказала.")
 
-		saynn("Your gaze instantly drops to the floor.. while he raises an eyebrow.")
+		saynn("Твой взгляд мгновенно устремляется в пол.. в то время как он вскидывает бровь.")
 
-		saynn("[say=luxe]You want to serve me?[/say]")
+		saynn("[say=luxe]Хочешь служить мне?[/say]")
 
-		saynn("A subtle nod confirms your intentions. Luxe's expression goes back to unreadable.. through his eyes narrow ever so slightly.")
+		saynn("Едва заметный кивок подтверждает твои намерения. Лицо Люкса снова становится непроницаемым.. но его глаза слегка сужаются.")
 
-		saynn("[say=luxe]You picked the wrong person to submit to. Go serve Mirri.[/say]")
+		saynn("[say=luxe]Ты выбрала не того, перед кем стоит преклоняться. Иди служи Мирри.[/say]")
 
-		addButton("Leave", "He has a point", "endthescene")
-		addButton("I want you", "You really want to be Luxe's slave", "sexintro_iwantyou")
+		addButton("Уйти", "А ведь он прав", "endthescene")
+		addButton("Ты хочешь его", "Ты действительно хочешь стать рабыней Люкса", "sexintro_iwantyou")
 	if(state == "sexintro_iwantyou"):
-		saynn("[say=pc]But.. I want to serve you..[/say]")
+		saynn("[say=pc]Но.. я хочу служить вам..[/say]")
 
-		saynn("You watch as he taps the desk with his clawed digits in a wavy rhythm.")
+		saynn("Вы наблюдаете, как он ритмично постукивает когтистыми пальцами по столу.")
 
-		saynn("[say=luxe]I don't do slaves. Especially not AlphaCorp's slaves.[/say]")
+		saynn("[say=luxe]Я не вожусь с рабами. Особенно с рабами АльфаКорп.[/say]")
 
-		saynn("Here you are.. an AlphaCorp inmate.. begging the head of one of the Syndicate's families..")
+		saynn("И вот вы здесь.. заключенная АльфаКорп.. умоляющая главу одной из семей Синдиката..")
 
-		saynn("[say=pc]You don't have to treat me as an unwilling slave. Just know that.. my submission, my obedience, my body, it's.. all yours.. if you want.[/say]")
+		saynn("[say=pc]Вам не обязательно относиться ко мне как к невольной рабыне. Просто знайте.. моя покорность, моё послушание, моё тело — всё это.. всё ваше.. если пожелаете.[/say]")
 
-		saynn("[say=luxe]Submission. A hollow word, more often than not. What exactly do you mean by it?[/say]")
+		saynn("[say=luxe]Покорность. Чаще всего это лишь пустое слово. Что именно вы под этим подразумеваете?[/say]")
 
-		saynn("You fail to find the right words to explain it.. hm..")
+		saynn("Вам не удается подобрать правильные слова, чтобы объяснить.. хм..")
 
-		addButton("Give up", "This submission thing is too hard", "endthescene")
-		addButton("Kneel", "Just kneel before him", "sexintro_kneelbefore")
+		addButton("Сдаться", "С этой покорностью всё слишком сложно", "endthescene")
+		addButton("Встать на колени", "Просто преклоните перед ним колени", "sexintro_kneelbefore")
 	if(state == "sexintro_kneelbefore"):
 		playAnimation(StageScene.Duo, "kneel", {npc="luxe", npcAction="sit"})
-		saynn("Do, not tell..")
+		saynn("Делайте, а не говорите..")
 
-		saynn("Slowly, you bring yourself down to your knees before him.")
+		saynn("Медленно ты опускаешься перед ним на колени.")
 
-		saynn("You hold his gaze as long as you can bear.. before looking down. The weight that his eyes are putting on you is making you sweat.")
+		saynn("Ты стараешься как можно дольше удерживать его взгляд, прежде чем опустить глаза. От тяжести его взора по тебе начинает катиться пот.")
 
-		saynn("The room falls into a heavy silence.. you can only hear your heart beating.")
+		saynn("В комнате воцаряется тяжелая тишина... ты слышишь лишь бешеный стук собственного сердца.")
 
-		addButton("Continue", "See what happens next", "sexintro_luxestands")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sexintro_luxestands")
 	if(state == "sexintro_luxestands"):
 		playAnimation(StageScene.Duo, "kneel", {npc="luxe", npcAction="stand"})
-		saynn("After a tense pause, Luxe rises slowly, walking around the desk to stand directly in front of you. He looms overhead.. his scent.. dark and bitter.. filling your senses.")
+		saynn("После напряженной паузы Люкс медленно поднимается и обходит стол, чтобы встать прямо перед тобой. Он нависает над тобой, и его аромат... темный и горький... заполняет все твои чувства.")
 
-		saynn("[say=luxe]You're either brave or foolish to come here.[/say]")
+		saynn("[say=luxe]Ты либо смелая, либо глупая, раз пришла сюда.[/say]")
 
-		saynn("Or horny.")
+		saynn("Или просто похотливая.")
 
-		saynn("[say=luxe]Understand this - I don't forget and I don't forgive. Take one wrong step and your neck will be snapped faster than you can let out a squeak.[/say]")
+		saynn("[say=luxe]Уясни одно — я не забываю и не прощаю. Сделаешь один неверный шаг, и твоя шея хрустнет быстрее, чем ты успеешь пискнуть.[/say]")
 
-		saynn("That's.. mildly threatening.. but it makes sense coming from him.")
+		saynn("Это... звучит слегка угрожающе... но от него это вполне ожидаемо.")
 
-		saynn("[say=pc]I understand..[/say]")
+		saynn("[say=pc]Я понимаю..[/say]")
 
-		saynn("A faint edge of curiosity slipping into his otherwise steely tone.")
+		saynn("В его обычно стальном голосе проскальзывает едва заметная нотка любопытства.")
 
-		saynn("[say=luxe]What are you looking for?[/say]")
+		saynn("[say=luxe]Что ты ищешь?[/say]")
 
-		saynn("You tilt your head a little while he crosses his arms.")
+		saynn("Ты слегка наклоняешь голову, пока он скрещивает руки на груди.")
 
-		saynn("[say=luxe]I have no time or desire for dates. I need to know what you need from me now.[/say]")
+		saynn("[say=luxe]У меня нет ни времени, ни желания ходить на свидания. Мне нужно знать, что тебе от меня нужно прямо сейчас.[/say]")
 
-		saynn("Straight to the point, huh..")
+		saynn("Сразу к делу, значит...")
 
-		addButton("Sex", "Tell him that you just wanna be fucked..", "sexintro_say_sex")
-		addButton("Relationship", "Tell him that you wanna be in a relationship with him", "sexintro_say_relationship")
-		addButton("Breeding", "You want him to breed you", "sexintro_say_breeding")
-		addButton("Be his", "Tell him that you just want to serve him", "sexintro_say_behis")
+		addButton("Секс", "Сказать ему, что ты просто хочешь, чтобы тебя трахали...", "sexintro_say_sex")
+		addButton("Отношения", "Сказать ему, что хочешь отношений с ним", "sexintro_say_relationship")
+		addButton("Бридинг", "Ты хочешь, чтобы он тебя осеменил", "sexintro_say_breeding")
+		addButton("Стать его собственностью", "Сказать ему, что ты просто хочешь ему служить", "sexintro_say_behis")
 	if(state == "sexintro_say_sex"):
-		saynn("[say=pc]I just wanna be..[/say]")
+		saynn("[say=pc]Я просто хочу быть...[/say]")
 
-		saynn("Your cheeks are blushing just thinking about it.. The intense stare is making you squirm.")
+		saynn("Твои щеки заливаются румянцем от одной только мысли об этом... От его пристального взгляда ты начинаешь ерзать.")
 
-		saynn("[say=pc]I just wanna be f-fucked by you..[/say]")
+		saynn("[say=pc]Я просто хочу, чтобы ты меня трахнул..[/say]")
 
-		saynn("He listens to you and nods.")
+		saynn("Он слушает тебя и кивает.")
 
-		saynn("[say=luxe]You can be my cocksleeve, help me take the edge off. But I ain't gonna 'love' you, for multiple reasons, hopefully obvious ones. Not gonna breed you too, I got enough kids. Do you agree?[/say]")
+		saynn("[say=luxe]Можешь стать моей куколдой, поможешь мне снять напряжение. Но «любить» тебя я не собираюсь, по многим причинам, надеюсь, они очевидны. И осеменять тебя тоже не буду, у меня хватает детей. Согласна?[/say]")
 
 		if (GM.pc.hasAnyWomb()):
-			saynn("[say=pc]What if you do breed me.. by accident?[/say]")
+			saynn("[say=pc]А что, если ты осеменишь меня... случайно?[/say]")
 
-			saynn("[say=luxe]I don't care, they are yours then.[/say]")
+			saynn("[say=luxe]Мне плевать, тогда они будут твоими.[/say]")
 
-		addButton("Agree", "Agree to be Luxe's cocksleeve", "sexintro_agree")
-		addButton("Cancel", "You changed your mind", "sexintro_cancel")
+		addButton("Согласиться", "Согласиться стать куколдой для Люкса", "sexintro_agree")
+		addButton("Отмена", "Вы передумали", "sexintro_cancel")
 	if(state == "sexintro_say_relationship"):
-		saynn("[say=pc]I wanna..[/say]")
+		saynn("[say=pc]Я хочу..[/say]")
 
-		saynn("Your cheeks are blushing just thinking about it.. The intense stare is making you squirm.")
+		saynn("Твои щеки заливаются румянцем от одной только мысли об этом... От его пристального взгляда ты начинаешь ерзать.")
 
-		saynn("[say=pc]I wanna be your lover..[/say]")
+		saynn("[say=pc]Я хочу быть твоей любовницей..[/say]")
 
-		saynn("His tone is cold.")
+		saynn("Его тон холоден.")
 
-		saynn("[say=luxe]I'm not looking for a lover. You can be my cocksleeve if you want, help me take the edge off occasionally. Anything more - just use a dating cyberapp.[/say]")
+		saynn("[say=luxe]Мне не нужен любовник. Если хочешь, можешь стать моей куколд-свэп-подружкой, помогать мне иногда снимать напряжение. А если нужно что-то большее — просто скачай какое-нибудь приложение для знакомств.[/say]")
 
-		saynn("Dating cyberapp? Who even uses those anymore.")
+		saynn("Приложение для знакомств? Кто ими вообще сейчас пользуется.")
 
-		saynn("[say=luxe]No breeding too, I got enough kids. Do you agree?[/say]")
+		saynn("[say=luxe]И никакого размножения, у меня и так детей хватает. Согласна?[/say]")
 
 		if (GM.pc.hasAnyWomb()):
-			saynn("[say=pc]What if you do breed me.. by accident?[/say]")
+			saynn("[say=pc]А что, если ты осеменишь меня... случайно?[/say]")
 
-			saynn("[say=luxe]I don't care, they are yours then.[/say]")
+			saynn("[say=luxe]Мне плевать, тогда они будут твоими.[/say]")
 
-		addButton("Agree", "Agree to be Luxe's cocksleeve", "sexintro_agree")
-		addButton("Cancel", "You changed your mind", "sexintro_cancel")
+		addButton("Согласиться", "Согласиться стать куколдой для Люкса", "sexintro_agree")
+		addButton("Отмена", "Вы передумали", "sexintro_cancel")
 	if(state == "sexintro_say_breeding"):
-		saynn("[say=pc]I really want to be..[/say]")
+		saynn("[say=pc]Я очень хочу быть..[/say]")
 
-		saynn("Your cheeks are blushing just thinking about it.. The intense stare is making you squirm.")
+		saynn("Твои щеки заливаются румянцем от одной только мысли об этом... От его пристального взгляда ты начинаешь ерзать.")
 
-		saynn("[say=pc]I really want to be bred by you.. by such a strong wolf..[/say]")
+		saynn("[say=pc]Я очень хочу, чтобы ты меня осеменил.. такой сильный волк..[/say]")
 
-		saynn("His tone is cold.")
+		saynn("Его тон холоден.")
 
-		saynn("[say=luxe]I have 22 kids, I'm really not looking for more. Especially from.. slaves.[/say]")
+		saynn("[say=luxe]У меня уже 22 ребенка, так что новых мне особо и не надо. Тем более от... рабов.[/say]")
 
-		saynn("Aw.")
+		saynn("Оу.")
 
-		saynn("[say=luxe]You're not starting a family with me. But you can be my cocksleeve, help me take an edge off occasionally. Do you agree?[/say]")
+		saynn("[say=luxe]Семью со мной ты не создашь. Но можешь стать моей куколд-свэп-подружкой, помогать мне иногда снимать напряжение. Согласна?[/say]")
 
 		if (GM.pc.hasAnyWomb()):
-			saynn("[say=pc]What if you do breed me.. by accident?[/say]")
+			saynn("[say=pc]А что, если ты осеменишь меня... случайно?[/say]")
 
-			saynn("[say=luxe]I don't care, they are yours then.[/say]")
+			saynn("[say=luxe]Мне плевать, тогда они будут твоими.[/say]")
 
-		addButton("Agree", "Agree to be Luxe's cocksleeve", "sexintro_agree")
-		addButton("Cancel", "You changed your mind", "sexintro_cancel")
+		addButton("Согласиться", "Согласиться стать куколдой для Люкса", "sexintro_agree")
+		addButton("Отмена", "Вы передумали", "sexintro_cancel")
 	if(state == "sexintro_say_behis"):
-		saynn("[say=pc]I wanna be..[/say]")
+		saynn("[say=pc]Я хочу быть..[/say]")
 
-		saynn("Your cheeks are blushing just thinking about it.. The intense stare is making you squirm.")
+		saynn("Твои щеки заливаются румянцем от одной только мысли об этом... От его пристального взгляда ты начинаешь ерзать.")
 
-		saynn("[say=pc]I wanna be yours..[/say]")
+		saynn("[say=pc]Я хочу быть твоей..[/say]")
 
-		saynn("His tone is cold.")
+		saynn("Его тон холоден.")
 
-		saynn("[say=luxe]I'm not looking for slaves or subs, like I said. What you can be is my cocksleeve, help me take the edge off occasionally.[/say]")
+		saynn("[say=luxe]Как я уже сказал, мне не нужны рабыни или сабмиссивные девки. Ты можешь стать моей куколкой, помогать мне иногда снимать напряжение.[/say]")
 
-		saynn("That's.. almost the whole deal, just without the slave part..")
+		saynn("Это.. почти то же самое, только без части про рабыню..")
 
-		saynn("[say=luxe]No breeding too, I got enough kids. Do you agree?[/say]")
+		saynn("[say=luxe]И никакого размножения, у меня и так детей хватает. Согласна?[/say]")
 
 		if (GM.pc.hasAnyWomb()):
-			saynn("[say=pc]What if you do breed me.. by accident?[/say]")
+			saynn("[say=pc]А что, если ты осеменишь меня... случайно?[/say]")
 
-			saynn("[say=luxe]I don't care, they are yours then.[/say]")
+			saynn("[say=luxe]Мне плевать, тогда они будут твоими.[/say]")
 
-		addButton("Agree", "Agree to be Luxe's cocksleeve", "sexintro_agree")
-		addButton("Cancel", "You changed your mind", "sexintro_cancel")
+		addButton("Согласиться", "Согласиться стать куколдой для Люкса", "sexintro_agree")
+		addButton("Отмена", "Вы передумали", "sexintro_cancel")
 	if(state == "sexintro_cancel"):
 		playAnimation(StageScene.Duo, "stand", {npc="luxe"})
-		saynn("[say=pc]I.. changed my mind.[/say]")
+		saynn("[say=pc]Я.. передумал.[/say]")
 
-		saynn("The wolf stays silent.. so you slowly get up.")
+		saynn("Волк молчит.. и ты медленно встаешь.")
 
-		saynn("[say=luxe]Stop wasting my time.[/say]")
+		saynn("[say=luxe]Хватит тратить мое время.[/say]")
 
-		saynn("Yeah, better just leave at this point.")
+		saynn("Да, пожалуй, сейчас лучше просто уйти.")
 
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 	if(state == "sexintro_agree"):
 		playAnimation(StageScene.Duo, "kneel", {npc="luxe", npcAction="sit"})
-		saynn("[say=pc]Yes, I agree..[/say]")
+		saynn("[say=pc]Да, я согласна..[/say]")
 
-		saynn("Luxe nods and returns back to his desk.")
+		saynn("Люкс кивает и возвращается к своему столу.")
 
-		saynn("Not a single word wasted..")
+		saynn("Ни единого лишнего слова...")
 
-		saynn("Well.. at least now you can serve him.")
+		saynn("Ну... по крайней мере, теперь ты можешь ему служить.")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "sex_menu"):
-		saynn("How do you want to serve Luxe?")
+		saynn("Как именно ты хочешь служить Лаксу?")
 
 		var sexProgress = getFlag("SlaveAuctionModule.luxeSexProgress", 0)
-		addButton("Table service", "Service his cock while under his table", "under_start")
+		addButton("Обслуживание за столом", "Обслуживать его член под столом", "under_start")
 		if (sexProgress >= 1):
-			addButton("Deepthroating", "Let the wolf have more fun with your throat", "deepthroat_start")
+			addButton("Глубокий минет", "Позволь волку поразвлечься с твоим горлом", "deepthroat_start")
 		else:
-			addDisabledButton("Deepthroating", "Do the previous options to unlock this one")
+			addDisabledButton("Глубокий минет", "Выполни предыдущие варианты, чтобы открыть этот")
 		if (sexProgress >= 2):
-			addButton("Over the desk", "Let him take you over the desk", "sexdesk_start")
+			addButton("Прямо на рабочем столе", "Позволь ему взять тебя прямо на столе", "sexdesk_start")
 		else:
-			addDisabledButton("Over the desk", "Do the previous options to unlock this one")
+			addDisabledButton("Прямо на рабочем столе", "Выполни предыдущие варианты, чтобы открыть этот")
 		if (sexProgress >= 3):
-			addButton("Marathon", "Let him claim you as his property during a long sex marathon", "sexmar_start")
+			addButton("Марафон", "Позволь ему заявить на тебя права во время долгого секс-марафона", "sexmar_start")
 		else:
-			addDisabledButton("Marathon", "Do the previous options to unlock this one")
-		addButton("Back", "You changed your mind", "")
+			addDisabledButton("Марафон", "Выполни предыдущие варианты, чтобы открыть этот")
+		addButton("Назад", "Вы передумали", "")
 	if(state == "under_start"):
-		saynn("Luxe, with his usual icy expression, finishes examining a document on his desk, his sharp eyes barely flickering in your direction as he points firmly to the space beneath his desk.")
+		saynn("Люкс с привычным ледяным выражением лица заканчивает изучать документ на столе; его острый взгляд едва скользит в твою сторону, когда он решительно указывает на пространство под столом.")
 
-		saynn("He doesn't drop a word.. but you understand what he means.")
+		saynn("Он не произносит ни слова... но ты прекрасно понимаешь, что он имеет в виду.")
 
-		addButton("Table", "Get under his table", "under_table")
+		addButton("Стол", "Залезть под его стол", "under_table")
 	if(state == "under_table"):
 		playAnimation(StageScene.ChairOral, "tease", {pc="luxe", npc="pc", bodyState={showPenis=true, hard=true}, npcBodyState={hard=true}})
-		saynn("Without any extra questions, you approach his broad, expensive desk and get under it, positioning yourself where his hand has pointed to.")
+		saynn("Без лишних вопросов ты подходишь к его массивному дорогому столу и ныряешь под него, устраиваясь именно там, куда он указал.")
 
-		saynn("Now, hidden from view, you begin your work.. Your fingers brush along his strong thighs and reach for his zipper on his pants, already feeling the heat radiating from his crotch, the pressure rising behind the cloth.")
+		saynn("Теперь, скрытая от глаз, ты приступаешь к делу... Твои пальцы скользят по его сильным бедрам и тянутся к ширинке, и ты уже чувствуешь жар, исходящий от его паха, и нарастающее давление под тканью.")
 
-		saynn("One smooth motion exposes his thick, knotted shaft that is partly exposed from its sheath already. While you're getting all horny breathing in his manly scent, Luxe just grabs another document from the pile and begins skimming through it with his eyes, his focus directed towards the work.")
+		saynn("Одним плавным движением ты обнажаешь его толстый, узловатый член, который и так наполовину высунулся из плоти. Пока ты возбуждаешься, вдыхая его мужественный запах, Люкс просто берет очередной документ из стопки и начинает бегло просматривать его, полностью сосредоточившись на работе.")
 
-		addButton("Get it hard", "Make him fully hard with your hands", "under_table_stroke")
+		addButton("Заставь его встать", "Доведи его до полного стояка руками", "under_table_stroke")
 	if(state == "under_table_stroke"):
 		playAnimation(StageScene.ChairOral, "stroke", {pc="luxe", npc="pc", bodyState={showPenis=true, hard=true}, npcBodyState={hard=true}})
-		saynn("Both of your hands land on his member and begin following along its veiny surface, from its pointy tip to the base where the deflated knot is located. Quite quickly, his length begins to twitch and inflate further, his body pumping blood into his cock, making it nice and hard for you.")
+		saynn("Обе твои руки ложатся на его член и начинают скользить по его вздутым венам, от самого кончика до основания, где находится сдутая узелковая часть. Довольно быстро его плоть начинает подергиваться и раздуваться еще сильнее: его тело перекачивает кровь в член, делая его для тебя идеально твердым.")
 
-		saynn("Even though it's dark under his table, the glow of his veins is enough for you to see and admire the cock.. a small drop of pre already shining from its tip.")
+		saynn("Хотя под столом темно, свечения его вен достаточно, чтобы ты могла видеть и любоваться его членом... на самом кончике уже поблескивает маленькая капля предэякулята.")
 
-		saynn("Luxe is motionless save for the smallest tensing of his jaw as you take him into your mouth, your lips wrapping around the head of his member while his cold eyes continue to scan through various files.")
+		saynn("Люкс остается неподвижным, лишь челюсть едва заметно напрягается, когда ты берешь его в рот; твои губы обхватывают головку его члена, пока его холодные глаза продолжают сканировать различные файлы.")
 
-		addButton("Suck him off", "Continue your obedient service", "under_table_suck")
+		addButton("Отсосать ему", "Продолжай свое покорное служение", "under_table_suck")
 	if(state == "under_table_suck"):
 		playAnimation(StageScene.ChairOral, "suck", {pc="luxe", npc="pc", bodyState={showPenis=true, hard=true}, npcBodyState={hard=true}})
-		saynn("Slowly, you begin trying to fit more than the head of his dick into your mouth, sliding your head along it, trying to go slightly deeper with each pass, finding your and his rhythm, his shaft growing harder in your mouth as he maintains his detached expression.")
+		saynn("Медленно ты пытаешься заглотить не только головку, но и весь его член, двигая головой вверх и вниз, стараясь заходить чуть глубже с каждым разом, нащупывая ваш общий ритм; его ствол становится всё тверже у тебя во рту, пока он сохраняет отрешенное выражение лица.")
 
-		saynn("The room is dead quiet.. with only the wet sounds of your mouth and lips occasionally breaking the complete silence, producing short slurps and lip smacks. Your hands don't sit around and rich into his pants before pulling out his rich ballsack, your digits carefully caressing his orbs as you struggle to fit his whole length in, the tip of his cock testing the back of your mouth, dripping pre down your throat.. salty and slightly sweet. Despite how cold he usually is, his length feels hot in your mouth..")
+		saynn("В комнате стоит мертвая тишина... лишь влажные звуки твоих губ и рта время от времени нарушают полное безмолвие короткими причмокиваниями и хлюпаньем. Твои руки не медлят и ныряют ему в штаны, выуживая его тяжелые яйца; твои пальцы осторожно ласкают его шары, пока ты пытаешься проглотить его целиком, ощущая, как кончик члена упирается в заднюю стенку твоего горла, а предэякулят стекает по глотке... соленый и слегка сладковатый. Несмотря на то, насколько холодным он обычно кажется, его член ощущается обжигающе горячим у тебя во рту...")
 
-		saynn("And the scent.. incredible.. musky and rich, it's filling your nostrils with a deep, intoxicating aroma that wakes something primal within you, making you eager to suck him faster, your pulse quickening..")
+		saynn("А этот запах... невероятный... мускусный и насыщенный, он наполняет твои ноздри глубоким, дурманящим ароматом, который пробуждает в тебе что-то первобытное, заставляя жадно сосать его всё быстрее, пока твой пульс частит...")
 
-		addButton("Faster", "Work faster under his table", "under_table_suck_fast")
+		addButton("Быстрее", "Работать под его столом быстрее", "under_table_suck_fast")
 	if(state == "under_table_suck_fast"):
 		playAnimation(StageScene.ChairOral, "suckfast", {pc="luxe", npc="pc", bodyState={showPenis=true, hard=true}, npcBodyState={hard=true}})
-		saynn("With a slight shift of his hips, Luxe pushes his cock just a bit deeper, his powerful hand meeting the back of your head.. and guiding you to engulf more of his length. Luxe's breathing becomes slightly more ragged.. while yours gets all sorts of messed up by his cock suddenly bending down your throat, your tight inner walls clenching around his dick, your lips kissing his knot that is inflating with more blood with each second..")
+		saynn("Слегка качнув бедрами, Люкс проталкивает свой член чуть глубже, а его мощная ладонь ложится тебе на затылок... направляя тебя, чтобы ты приняла еще большую часть его длины. Дыхание Люкса становится более прерывистым... в то время как твое окончательно сбивается от того, что его член внезапно упирается тебе в горло, а твои тугие внутренние стенки сжимаются вокруг него, пока твои губы ласкают его узлел, который с каждой секундой раздувается всё сильнее от прилива крови...")
 
-		saynn("As you take him deeper, you let your hands fondle his heavy, full balls more, feeling their solid, warm weight in your palms. You knead them gently, feeling the tension building in his body.. while your mouth works in a steady rhythm, sliding up and down his length, testing your limits. The scent is still overwhelmingly masculine, making you crave him even more.")
+		saynn("Пока ты принимаешь его всё глубже, ты позволяешь своим рукам активнее ласкать его тяжелые, полные яйца, ощущая их плотный теплый вес в своих ладонях. Ты нежно разминаешь их, чувствуя, как напряжение в его теле нарастает... в то время как твой рот работает в steady ритме, скользя вверх и вниз по его длине, проверяя твои пределы. Запах по-прежнему переполняет мужской силой, заставляя тебя желать его еще сильнее.")
 
-		saynn("It looks like he is close.. It feels like that too, his knot pulsing and radiating heat like crazy.. subtle shivers begin to spread throughout his body..")
+		saynn("Похоже, он близок... Кажется, так и есть: его узел пульсирует и излучает безумный жар... по его телу начинают пробегать едва заметные дрожи...")
 
-		addButton("Facials", "Let him cum on your face", "under_table_suck_facials")
-		addButton("Swallow it", "Let him cum down your throat and not waste a single drop", "under_table_suck_inside")
+		addButton("Фейшиалы", "Дай ему кончить тебе на лицо", "under_table_suck_facials")
+		addButton("Сглотнуть всё", "Позволить ему кончить тебе в горло, не упустив ни единой капли", "under_table_suck_inside")
 	if(state == "under_table_suck_inside"):
 		playAnimation(StageScene.ChairOral, "suckinside", {pc="luxe", npc="pc", npcCum=true, bodyState={showPenis=true, hard=true}, npcBodyState={hard=true}})
-		saynn("When you feel his peak coming near, you forcibly impale yourself onto his cock as deep as your throat allows, taking the whole length except for the fat knot. You're sacrificing your ability to breathe for his pleasure.. but it's a worthy trade in your book.")
+		saynn("Когда чувствуешь, что он близок к пику, ты силой насаживаешься на его член так глубоко, насколько позволяет горло, заглатывая всю длину, кроме жирного узла. Ты жертвуешь способностью дышать ради его удовольствия... но в твоих глазах это стоящий обмен.")
 
-		saynn("Even while incredibly close, Luxe remains cold-faced, only the tension coiling in his muscles gives up that something is about to happen. And it does, his jaw clenches subtly.. and then, without a moment's warning.. his thick juicy shaft starts pulsing in your mouth as his hot seed spills down your throat, filling your belly.")
+		saynn("Даже когда момент почти настал, лицо Люкса остается холодным; лишь напряжение, сковавшее его мышцы, выдает приближение разрядки. И это происходит: его челюсть едва заметно сжимается... а затем, без малейшего предупреждения... его толстый, сочный ствол начинает пульсировать у тебя во рту, когда горячее семя изливается тебе в глотку, наполняя живот.")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("The aroma of his manliness in your lungs.. mixed with the taste of his cum.. creates an overwhelming sense of pleasure that drives you wild. You feel like your cock is gonna burst in your cage at any moment, the pressure that it is putting on its metal prison is insane..")
+			saynn("Аромат его мужественности в твоих легких... смешанный со вкусом его спермы... создает всепоглощающее чувство наслаждения, от которого ты сходишь с ума. Кажется, твой член вот-вот лопнет в клетке, давление, которое он оказывает на свою металлическую тюрьму, просто безумное...")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("The aroma of his manliness in your lungs.. mixed with the taste of his cum.. creates an overwhelming sense of pleasure that drives you wild. You feel like your cock is gonna burst at any moment, the pressure in your length is insane..")
+			saynn("Аромат его мужественности в твоих легких... смешанный со вкусом его спермы... создает всепоглощающее чувство наслаждения, от которого ты сходишь с ума. Кажется, твой член вот-вот лопнет, давление внутри него просто безумное...")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("The aroma of his manliness in your lungs.. mixed with the taste of his cum.. creates an overwhelming sense of pleasure that drives you wild. Your pussy gushes with transparent juices without any direct stimulation, the pressure is just that intense..")
+			saynn("Аромат его мужественности в твоих легких... смешанный со вкусом его спермы... создает всепоглощающее чувство наслаждения, от которого ты сходишь с ума. Твоя киска обливается прозрачным соком без всякой стимуляции — давление просто запредельное...")
 
 		else:
-			saynn("The aroma of his manliness in your lungs.. mixed with the taste of his cum.. creates an overwhelming sense of pleasure that drives you wild.")
+			saynn("Аромат его мужественности в твоих легких... смешанный со вкусом его спермы... создает всепоглощающее чувство наслаждения, от которого ты сходишь с ума.")
 
-		saynn("Your throat works as fast as it can.. but his seed just keeps coming and coming, his balls tensing up as he just keeps reading the documents, seemingly unphased by all this.. only his hand is still on the back of your head, ensuring that you swallow every drop..")
+		saynn("Твое горло работает изо всех сил... но его семя льется и льется, его яички напрягаются, пока он продолжает читать документы, казалось бы, совершенно невозмутимый... только его рука всё еще сжимает твой затылок, заставляя тебя проглотить каждую каплю...")
 
-		saynn("Only once he is spent does he release his hold, letting you pull away and start coughing, your mouth greedily catching any air that it can.")
+		saynn("Только когда он полностью изливается, он ослабляет хватку, позволяя тебе отстраниться и начать кашлять, жадно хватая ртом любой глоток воздуха.")
 
-		saynn("Feels fucking good..")
+		saynn("Это чертовски приятно...")
 
-		addButton("Get out", "Get out from under his desk", "under_table_suck_getout")
+		addButton("Выйти", "Вылезти из-под его стола", "under_table_suck_getout")
 	if(state == "under_table_suck_getout"):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("You clean up after yourself, licking off the remaining cum from his cock and balls.. before crawling from under his desk. You use your hand to wipe the corners of your mouth and watch Luxey nodding.")
+		saynn("Ты приводишь себя в порядок, слизывая остатки спермы с его члена и яичек... прежде чем выбраться из-под стола. Ты вытираешь уголки рта рукой и наблюдаешь, как Лакси одобрительно кивает.")
 
-		saynn("[say=luxe]Mhm.[/say]")
+		saynn("[say=luxe]М-м...[/say]")
 
-		saynn("That's all you get.. but it's still so worth it.. and leaves you craving more..")
+		saynn("Это всё, что ты получила... но оно того стоило... и теперь тебе хочется еще...")
 
-		saynn("But for now, it's time to go.")
+		saynn("Но сейчас пора идти.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "under_table_suck_facials"):
 		playAnimation(StageScene.ChairOral, "tease", {pc="luxe", npc="pc", pcCum=true, bodyState={showPenis=true, hard=true}, npcBodyState={hard=true}})
-		saynn("When you feel his peak coming near, you continue pushing him further and further, bringing him over the point of no return. That's when you sneak out from under his grip and pull your head back, your lips releasing his throbbing shaft..")
+		saynn("Когда ты чувствуешь, что он близок к пику, ты продолжаешь давить всё сильнее и сильнее, доводя его до точки невозврата. В этот момент ты незаметно выскальзываешь из его хватки и отстраняешься, выпуская его пульсирующий член из своих губ...")
 
-		saynn("Luxe lets out nothing but a low, quiet growl as he erupts, his balls tensing up, his thick cum splattering across your face in hot, creamy waves. You close your eyes and welcome it, trying to catch his whole load, letting him mark you with his salty seed..")
+		saynn("Лакси издает лишь низкий, тихий рык, когда кончает; его яички напрягаются, и густая сперма брызжет тебе на лицо горячими кремовыми волнами. Ты закрываешь глаза и принимаешь это, стараясь поймать всю его порцию, позволяя ему пометить тебя своим соленым семенем...")
 
-		saynn("As his orgasm begins to subside and his knotted cock stops showering you with cum.. you just sit there, feeling his seed dripping down your cheeks and chin. You can't even open your eyes, a few thick white strings went right over them..")
+		saynn("Когда его оргазм начинает утихать и его разбухший член перестает осыпать тебя спермой... ты просто сидишь, чувствуя, как его семя стекает по твоим щекам и подбородку. Ты даже не можешь открыть глаза — несколько густых белых нитей попали прямо на них...")
 
-		saynn("Feels fucking good..")
+		saynn("Это чертовски приятно...")
 
-		addButton("Get out", "Get out from under his desk", "under_table_suck_getout_facials")
+		addButton("Выйти", "Вылезти из-под его стола", "under_table_suck_getout_facials")
 	if(state == "under_table_suck_getout_facials"):
 		playAnimation(StageScene.Duo, "stand")
-		saynn("Slowly and carefully, you get out from under his desk, careful as to not leave too much of a mess..")
+		saynn("Медленно и осторожно ты выбираешься из-под его стола, стараясь не оставить после себя слишком много беспорядка...")
 
-		saynn("You use your hands to clear the area around your eyes a little.. and finally open them again.")
+		saynn("Ты руками немного разглаживаешь кожу вокруг глаз... и, наконец, снова открываешь их.")
 
-		saynn("You see Luxe, his eyes judging you silently for what you did. But he doesn't seem to be too mad.. so you probably did alright.")
+		saynn("Ты видишь Люкса: его взгляд молча осуждает тебя за содеянное. Но, кажется, он не слишком зол... так что, скорее всего, ты справилась.")
 
-		saynn("[say=luxe]Hm.[/say]")
+		saynn("[say=luxe]Хм.[/say]")
 
-		saynn("That's all you get.. but it's still so worth it.. and leaves you craving more..")
+		saynn("Это всё, что ты получила... но оно того стоило... и теперь тебе хочется еще...")
 
-		saynn("But for now, it's time to go.")
+		saynn("Но сейчас пора идти.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "deepthroat_start"):
 		playAnimation(StageScene.Duo, "stand", {npc="luxe"})
-		saynn("It was fun to serve Luxe under the desk.. but you want more.. You don't know why, you just do.")
+		saynn("Обслуживать Люкса под столом было весело... но тебе хочется большего... Ты сама не знаешь почему, просто хочется.")
 
-		saynn("[say=pc]May I serve as your cocksleeve again, Luxe..[/say]")
+		saynn("[say=pc]Можно мне снова побыть твоей куколкой, Люкс?..[/say]")
 
-		saynn("He puts his documents down and silently eyes your {pc.masc} figure out.. figure that radiates a strong submissive aura..")
+		saynn("Он откладывает документы и молча разглядывает твою {pc.masc} фигурку... фигурку, излучающую мощную ауру покорности...")
 
-		saynn("[say=luxe]Hm.[/say]")
+		saynn("[say=luxe]Хм.[/say]")
 
-		saynn("His stare is making you blush and lower your gaze.. is that a yes?")
+		saynn("От его пристального взгляда ты краснеешь и опускаешь глаза... так это «да»?")
 
-		saynn("Finally, his hands start to put away the papers, freeing his big wooden desk. After that, he just points at it.")
+		saynn("Наконец, он начинает убирать бумаги, освобождая свой массивный деревянный стол. После этого он просто указывает на него.")
 
-		addButton("Desk", "Climb it", "sexdt_desk")
+		addButton("Стол", "Залезть на него", "sexdt_desk")
 	if(state == "sexdt_desk"):
 		playAnimation(StageScene.SexOralTable, "tease", {pc="luxe", npc="pc", bodyState={showPenis=true, hard=true, condom=true}, npcBodyState={hard=true}})
-		saynn("You do as told, getting onto his desk. Luxe wastes no time and secures your wrists and ankles to it with some chains and cuffs, leaving you utterly vulnerable and exposed, only your head is sticking out from the side a bit..")
+		saynn("Ты послушно выполняешь приказ и забираешься к нему на стол. Люкс не теряет времени даром: он приковывает твои запястья и лодыжки цепями и наручниками, оставляя тебя совершенно беззащитной и открытой — лишь голова слегка торчит сбоку..")
 
-		saynn("Your heart races with anticipation as he leans over you, his cold breath washing over your face, carrying the unmistakable scent of masculinity with it that fills your senses.. You can't help but inhale deeply, the musky aroma igniting a fire deep within you..")
+		saynn("Сердце бешено колотится от предвкушения, когда он наклоняется над тобой; его холодное дыхание обдает твое лицо, принося с собой неоспоримый мускусный запах мужчины, который заполняет все твои чувства.. Ты не можешь не вдыхать глубже, и этот аромат разжигает огонь где-то глубоко внутри тебя..")
 
-		saynn("With a little fiery glint in his eyes, Luxe positions himself in front of your face, already casually rolling a thick condom over his exposed knotted cock of an impressive size. The latex shines in the glow of his veins, emphasizing every contour of his shaft.. and you feel a shiver of excitement ripple through your body.")
+		saynn("С легким огненным блеском в глазах Люкс устраивается прямо перед твоим лицом, небрежно натягивая толстый презерватив на свой внушительный, узловатый член. Латекс блестит, подчеркивая каждую венку и каждый контур его ствола.. и ты чувствуешь, как по телу пробегает дрожь возбуждения.")
 
-		saynn("He steps closer, a slight hint of heat now radiating from him and his cock, making it hard to think as he brushes his member against your lips, teasing you.")
+		saynn("Он делает шаг ближе, и теперь от него и его члена исходит едва уловимый жар; мысли путаются, когда он дразняще проводит своим членом по твоим губам.")
 
-		saynn("[say=luxe]Mouth.[/say]")
+		saynn("[say=luxe]Рот.[/say]")
 
-		saynn("His command sends a thrill down your spine.. how can you not..")
+		saynn("Его приказ прошивает твой позвоночник дрожью.. как тут не подчиниться..")
 
-		addButton("Obey", "Open your mouth for him", "sexdt_fuck")
+		addButton("Повиноваться", "Открой ему рот", "sexdt_fuck")
 	if(state == "sexdt_fuck"):
 		playAnimation(StageScene.SexOralTable, "suck", {pc="luxe", npc="pc", bodyState={showPenis=true, hard=true, condom=true}, npcBodyState={hard=true}})
-		saynn("As you part your lips, he pushes forward, his wrapped-up cock sliding past your lips and into your mouth. It goes smoothly until the tip finds the back of your mouth, making you gag slightly.. but Luxe doesn't relent.")
+		saynn("Как только ты размыкаешь губы, он подается вперед, и его обтянутый латексом член скользит мимо губ прямо в твой рот. Все идет гладко, пока кончик не достигает задней стенки горла, заставляя тебя слегка поперхнуться.. но Люкс не отступает.")
 
-		saynn("With slow thrusts, he begins to fuck your mouth, one of his hands landing on your neck and holding it firmly in place, his clawed fingers digging into your throat.")
+		saynn("Медленными толчками он начинает трахать тебе рот, положив одну руку тебе на шею и крепко фиксируя её, а его когтистые пальцы впиваются в твое горло.")
 
-		saynn("It feels good.. each motion of his hips is accompanied by the wet sounds of your mouth swallowing him, slurps and gags punctuate the air each time he tests your gag reflex, getting his shaft a little deeper each time.. until your neck begins to bulge under his powerful palm.. the sensation makes your own arousal spike even higher.."+str(" Your {pc.penis} is throbbing slightly.." if GM.pc.hasPenis() else "")+""+str(" Your pussy dripping juices onto the desk.." if GM.pc.hasReachableVagina() else "")+"")
+		saynn("Это так приятно... каждое движение его бедер сопровождается влажными звуками твоего рта, глотающего его; хлюпанье и позывы к рвоте прорезают воздух каждый раз, когда он проверяет твой рвотный рефлекс, проталкивая член всё глубже и глубже... пока твоя шея не начинает выпирать под его мощной ладонью... это ощущение заставляет твое собственное возбуждение взлетать еще выше..."+str(" Your {pc.penis} is throbbing slightly.." if GM.pc.hasPenis() else "")+""+str(" Your pussy dripping juices onto the desk.." if GM.pc.hasReachableVagina() else "")+"")
 
-		saynn("It's getting hot in here..")
+		saynn("Здесь становится жарковато...")
 
-		addButton("Continue", "See what happens next", "sexdt_faster")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sexdt_faster")
 	if(state == "sexdt_faster"):
 		playAnimation(StageScene.SexOralTable, "suckfast", {pc="luxe", npc="pc", bodyState={showPenis=true, hard=true, condom=true}, npcBodyState={hard=true}})
-		saynn("Tears begin streaming down your cheeks a bit.. but you seem to be able to swallow most of his musky cock now, his knot is slapping against your lips while the shaft goes down your {pc.throatStretch} throat, making it bulge..")
+		saynn("По щекам начинают катиться слезы... но, кажется, теперь ты уже способна проглотить почти весь его мускусный член; его узел хлопает по твоим губам, пока ствол уходит глубоко в твое {pc.throatStretch} горло, заставляя его раздуваться...")
 
-		saynn("Luxe's breathing becomes deeper.. you can feel the quiet growls of pleasure rumbling deep in his chest as he pushes you to your limits, fucking your throat at a faster pace. You do your best to suppress your gagging.. but it keeps happening, your inner walls clenching around his cock as you're making all sorts of humiliating wet slurps and gags..")
+		saynn("Дыхание Люкса становится глубже... ты чувствуешь тихий рык удовольствия, рокочущий глубоко в его груди, когда он доводит тебя до предела, трахая твое горло всё быстрее. Ты изо всех сил стараешься подавить позывы к рвоте... но они не прекращаются, твои внутренние стенки сжимаются вокруг его члена, пока ты издаешь всякие унизительные влажные хлюпающие звуки и звуки рвотных позывов...")
 
-		saynn("You're deepthroating a head of the Syndicate family.. You certainly took a few wrong turns in your life.. or maybe quite the opposite.")
+		saynn("Ты глубоко заглатываешь член главы семьи Синдиката... Ты определенно совершила пару ошибок в своей жизни... или, может быть, всё ровно наоборот.")
 
-		saynn("He tightens his grip on your neck, showcasing his control. The added pressure sends more shivers through you, amplifying your struggles.. but also the pleasure of serving.")
+		saynn("Он сильнее сжимает твою шею, демонстрируя свой контроль. Дополнительное давление заставляет тебя дрожать еще сильнее, усиливая твою борьбу... но также и удовольствие от служения.")
 
 		if (GM.pc.hasPenis()):
-			saynn("You feel your own cock pulsing with need, each thrust causing your body to respond in ways you can't control. The sight of his powerful frame, the sounds of your deepthroating, and the intoxicating scent of his musk fill your senses.. it's all too much..")
+			saynn("Ты чувствуешь, как твой собственный член пульсирует от желания; каждый его толчок заставляет твое тело реагировать так, что ты не можешь это контролировать. Вид его мощного тела, звуки твоего глубокого минета и пьянящий запах его мускуса наполняют все твои чувства... этого слишком много...")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("You feel your neglected pussy twitching with need, each thrust causing your body to respond in ways you can't control. The sight of his powerful frame, the sounds of your deepthroating, and the intoxicating scent of his musk fill your senses.. it's all too much..")
+			saynn("Ты чувствуешь, как твоя заброшенная киска дергается от жажды, и каждый его толчок заставляет твое тело реагировать так, что ты не можешь это контролировать. Вид его мощного тела, звуки твоего глубокого минета и пьянящий запах его мускуса переполняют твои чувства... это слишком... слишком много...")
 
-		saynn("That knot.. it keeps slapping against your lips.. forcing your jaw to open wider bit by bit.. it's almost like he is..")
+		saynn("Этот узел... он то и дело бьется о твои губы... заставляя твою челюсть открываться всё шире и шире... кажется, будто он...")
 
-		addButton("Continue", "See what happens next", "sexdt_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sexdt_cum")
 	if(state == "sexdt_cum"):
 		playAnimation(StageScene.SexOralTable, "suckinside", {pc="luxe", npc="pc", bodyState={showPenis=true, hard=true, condom=true}, npcBodyState={hard=true}})
-		saynn("With one last deep and powerful thrust, he forces his entire length down your throat. Your jaw almost gets dislocated while the big, fat orb forces it wide open before slipping inside, locking his member in!")
+		saynn("Последним глубоким и мощным толчком он проталкивает всю свою длину тебе в глотку. Твою челюсть едва не выбивает, когда огромная жирная головка силой раздвигает её, прежде чем скользнуть внутрь и намертво зафиксировать его член!")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your body convulses, and with a series of desperate muffled groans around Luxe's thick shaft, you suddenly cum, your locked away dick throbbing in its little cage before releasing multiple thick ropes of {pc.cum}, coating your stomach as you twitch and gasp.. and all of that without any stimulation to your cock..")
+			saynn("Твое тело сотрясает конвульсия, и сквозь серию отчаянных приглушенных стонов вокруг толстого члена Люкса ты внезапно кончаешь; твой спрятанный член пульсирует в своей маленькой клетке, прежде чем выплеснуть несколько густых струй {pc.cum}, заливая твой живот, пока ты дергаешься и задыхаешься... и всё это без малейшей стимуляции твоего члена...")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your body convulses, and with a series of desperate muffled groans around Luxe's thick shaft, you suddenly cum, your {pc.penis} throbbing before releasing multiple thick ropes of {pc.cum}, coating your stomach as you twitch and gasp.. and all of that without any stimulation to your member..")
+			saynn("Твое тело сотрясает конвульсия, и сквозь серию отчаянных приглушенных стонов вокруг толстого члена Люкса ты внезапно кончаешь; твой {pc.penis} пульсирует, прежде чем выплеснуть несколько густых струй {pc.cum}, заливая твой живот, пока ты дергаешься и задыхаешься... и всё это без малейшей стимуляции твоего члена...")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("Your body convulses, and with a series of desperate muffled groans around Luxe's thick shaft, you suddenly cum, your pussy spasming as a wave of pleasure crashes over you, making you squirt juices all over that desk.. and all of that without any direct stimulation to your sensitive folds..")
+			saynn("Твое тело сотрясает конвульсия, и сквозь серию отчаянных приглушенных стонов вокруг толстого члена Люкса ты внезапно кончаешь; твоя киска сводит судорогой, когда на тебя обрушивается волна наслаждения, заставляя тебя забрызгать соками весь этот стол... и всё это без прямой стимуляции твоих чувствительных складок...")
 
-		saynn("Luxe lets out a quiet grunt as his cock starts pulsing in your mouth, filling that condom with waves of hot, creamy seed, making it fill up your throat and belly.. It just doesn't end, the latex stretches more and more to accommodate his huge load.. your breathing is put on pause as his climax is blocking your only air intake path..")
+		saynn("Люкс тихо рычит, когда его член начинает пульсировать у тебя во рту, наполняя презерватив волнами горячей, кремовой спермой, которая заполняет твое горло и живот... Это кажется бесконечным: латекс растягивается всё сильнее, принимая его огромный заряд... Твое дыхание замирает, потому что его оргазм перекрывает единственный путь для вдоха...")
 
-		saynn("[say=luxe]Hhh..[/say]")
+		saynn("[say=luxe]Ххх..[/say]")
 
-		saynn("Fuck.. it feels so good to be his cocksleeve..")
+		saynn("Блядь... быть его куколкой для члена — это такое блаженство...")
 
-		saynn("He doesn't pull back immediately. Instead, he ties off the condom while it remains in you, leaving it in place for a moment longer. After that, his cock slips free from your mouth, leaving a filled latex balloon in your throat..")
+		saynn("Он не отстраняется сразу. Вместо этого он завязывает презерватив, пока тот всё еще внутри тебя, оставляя его на мгновение подольше. После этого его член выскальзывает из твоего рта, оставляя в горле наполненный латексный шарик...")
 
-		addButton("Continue", "See what happens next", "sexdt_after")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sexdt_after")
 	if(state == "sexdt_after"):
 		playAnimation(StageScene.SexOralTable, "tease", {pc="luxe", npc="pc", bodyState={showPenis=true, hard=true}, npcBodyState={hard=true}})
-		saynn("The air is running out.. and make that clear, struggling and squirming.. And so Luxe finally pulls it out too, all his seed neatly contained in it..")
+		saynn("Воздух заканчивается... и ты это показываешь, тщетно пытаясь вдохнуть и извиваясь... И тогда Люкс наконец вытаскивает и его — теперь вся его сперма аккуратно заперта внутри...")
 
-		saynn("You cough and grab all the air that you can.")
+		saynn("Ты кашляешь, жадно хватая ртом воздух.")
 
-		saynn("[say=pc]Kgh.. kghhh.. hh. f-fuck.. ah.. you got a h-huge cock..[/say]")
+		saynn("[say=pc]Кхг.. кххх.. хх. Б-блядь.. ах.. у тебя о-огромный член..[/say]")
 
-		saynn("Luxe just watches you.")
+		saynn("Люкс просто наблюдает за тобой.")
 
-		saynn("[say=luxe]You got a tight throat.[/say]")
+		saynn("[say=luxe]У тебя узкое горло.[/say]")
 
-		saynn("You hope that this is a compliment.")
+		saynn("Ты надеешься, что это комплимент.")
 
-		saynn("[say=pc]T-thanks.. a-anything else you need?[/say]")
+		saynn("[say=pc]Д-да... е-есть еще что-нибудь, что тебе нужно?[/say]")
 
-		saynn("He shakes his head and undoes your bindings.")
+		saynn("Он качает головой и развязывает твои путы.")
 
-		saynn("[say=pc]R-right.. Your cocksleeve will serve you again some other time when you will need it..[/say]")
+		saynn("[say=pc]Р-точно.. Твой кокслэйв еще пригодится тебе в другой раз, когда возникнет нужда..[/say]")
 
-		saynn("Slowly, you get off his desk and just leave his office.")
+		saynn("Медленно ты слезаешь с его стола и просто выходишь из кабинета.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "sexdesk_start"):
 		playAnimation(StageScene.Duo, "stand", {npc="luxe"})
-		saynn("Luxe sees you biting your lip.. and starts to put things off of his grand desk.. a good sign.")
+		saynn("Люкс замечает, как ты покусываешь губу... и начинает убирать вещи со своего величественного стола... хороший знак.")
 
-		saynn("You step a little closer, your heart racing while his is cold as a stone.. but you do notice signs of.. hunger.. in his eyes.")
+		saynn("Ты делаешь шаг ближе; твое сердце бешено колотится, в то время как его сердце холодно, как камень... но ты замечаешь в его глазах признаки... голода.")
 
-		saynn("[say=luxe]Bend.[/say]")
+		saynn("[say=luxe]Вниз.[/say]")
 
-		saynn("He commands you with a low voice..")
+		saynn("Он приказывает тебе низким голосом...")
 
-		addButton("Obey (anal)", "Do as he says. Present your butt", "sexdesk_choose_anal")
-		addButtonWithChecks("Obey (vaginal)", "Do as he says. Present your pussy", "sexdesk_choose_vag", [], [[ButtonChecks.HasReachableVagina]])
+		addButton("Повиноваться (анально)", "Сделать, как он сказал. Подставить задницу", "sexdesk_choose_anal")
+		addButtonWithChecks("Повиноваться (вагинально)", "Делай, что он говорит. Выставь свою киску", "sexdesk_choose_vag", [], [[ButtonChecks.HasReachableVagina]])
 	if(state == "sexdesk_chose"):
 		playAnimation(StageScene.SexOverTable, "tease", {pc="luxe", npc="pc", bodyState={showPenis=true, hard=true, condom=isVag}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("You comply without hesitation, surrendering to his will. Your palms press against the cool surface of the desk, your butt"+str(" and pussy" if isVag else "")+" fully exposed, making you look vulnerable.")
+		saynn("Ты беспрекословно подчиняешься, отдаваясь на его волю. Твои ладони прижаты к прохладной поверхности стола, а задница"+str(" and pussy" if isVag else "")+" полностью открыта, что делает тебя такой уязвимой.")
 
-		saynn("Luxe steps behind you, his presence looming like a storm ready to break.")
+		saynn("Люкс заходит тебе за спину, его присутствие нависает над тобой, словно надвигающаяся буря.")
 
-		saynn("With a sudden grip, he grabs your hips and pulls you back against him, the cold heat of his body surrounding you. The pointy head of his thick canine cock already prods against your "+str("{pc.analStretch} back entrance" if !isVag else "{pc.pussyStretch} pussy entrance")+", teasing and testing.")
+		saynn("Резким движением он хватает тебя за бедра и притягивает к себе, окутывая своим холодным жаром. Заточенная головка его толстого собачьего члена уже упирается в твою "+str("{pc.analStretch} back entrance" if !isVag else "{pc.pussyStretch} pussy entrance")+", дразня и проверяя тебя.")
 
-		saynn("No words are exchanged.. no words are needed, really. You feel yourself being his plaything.. and you love it.")
+		saynn("Слова не нужны... на самом деле, они и не требуются. Ты чувствуешь себя его игрушкой... и тебе это нравится.")
 
 		if (isVag):
-			saynn("Before he commits though, Luxe catches himself and stops for a second. He reaches into his desk and grabs a condom.")
+			saynn("Но прежде чем войти, Люкс на мгновение замирает. Он лезет в стол и достает презерватив.")
 
-			saynn("[say=pc]You don't have to use..[/say]")
+			saynn("[say=pc]Тебе не обязательно использовать..[/say]")
 
-			saynn("[say=luxe]I do.[/say]")
+			saynn("[say=luxe]Да.[/say]")
 
-			saynn("It feels like you won't be able to stop him..")
+			saynn("Кажется, ты не сможешь его остановить...")
 
-		addButton("Continue", "See what happens next", "sexdesk_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sexdesk_sex")
 	if(state == "sexdesk_sex"):
 		playAnimation(StageScene.SexOverTable, "sex", {pc="luxe", npc="pc", bodyState={showPenis=true, hard=true, condom=isVag}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn(""+str("After putting a condom on, " if isVag else "")+"Luxe doesn't give you a moment to adjust.. he just pushes his cock in, stretching your "+str("tailhole" if !isVag else "sensitive folds")+" and filling you in one powerful thrust! You gasp, your body instinctively tightening around him, your inner walls gripping his glowing shaft as it leaks pre inside..")
+		saynn(""+str("After putting a condom on, " if isVag else "")+"Люкс не дает тебе ни секунды, чтобы прийти в себя... он просто вгоняет свой член в твою "+str("tailhole" if !isVag else "sensitive folds")+" и заполняет тебя одним мощным толчком! Ты ахаешь, твое тело инстинктивно сжимается вокруг него, а внутренние стенки обхватывают его светящийся ствол, пока из него сочится предэякулят...")
 
-		saynn("The head of the Syndicate family begins to use you, each his thrust reaching deeper than the last. He grips your waist tightly, holding you in place as he drives into you, fucking your body as he please. The sharp sound of flesh meeting flesh echoes in the office, only broken by your moans and gasps. His manly scent envelops you, a heavy mix of dominant aura and raw masculinity, making your head spin with need..")
+		saynn("Глава семьи Синдиката начинает использовать тебя, и каждый его толчок проникает глубже предыдущего. Он крепко сжимает твою талию, удерживая на месте, пока вколачивается в тебя, трахая твое тело так, как ему вздумается. Резкий звук ударов плоти о плоть эхом разносится по кабинету, прерываясь лишь твоими стонами и вскриками. Его мужской запах окутывает тебя — тяжелая смесь доминантной ауры и первобытной маскулинности, от которой голова идет кругом от желания...")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("The way his length is pushing on your "+str("prostate" if !isVag else "g-spot")+".. it hits all the right buttons. Blood tries to flow to your locked cock.. but the cage prevents you from getting any kind of erection.. keeping you extremely horny while the pressure in your drippy little cock rises..")
+			saynn("То, как его длина давит на твою "+str("prostate" if !isVag else "g-spot")+"...попадает точно в цель. Кровь пытается прилить к твоему зажатому члену... но клетка не дает тебе встать, оставляя тебя невероятно возбужденной, пока давление в твоем сочащемся маленьком члене растет...")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("The way his length is pushing on your "+str("prostate" if !isVag else "g-spot")+".. it hits all the right buttons. Blood flows to your {pc.penis}, making you extremely hard. The stimulation is keeping you extremely horny while the pressure in your drippy cock rises..")
+			saynn("То, как его длина давит на твою "+str("prostate" if !isVag else "g-spot")+"...попадает точно в цель. Кровь приливает к твоему {pc.penis}, заставляя тебя стать чертовски твердой. Стимуляция доводит тебя до безумного возбуждения, пока давление в твоем сочащемся члене растет...")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("The way his length is pushing on your "+str("pleasure spot through the inner wall of your ass" if !isVag else "g-spot")+".. it manages to hit all the right buttons. "+str("Your asshole is not as sensitive as your pussy.. but the stimulation still keeps you extremely horny, your neglected folds getting wet, dripping juices.." if !isVag else "Even though he is using a condom, the stimulation is making your wet folds eagerly drip juices..")+"")
+			saynn("То, как его длина давит на твою "+str("pleasure spot through the inner wall of your ass" if !isVag else "g-spot")+".. ему удается нажать на все нужные кнопки. "+str("Your asshole is not as sensitive as your pussy.. but the stimulation still keeps you extremely horny, your neglected folds getting wet, dripping juices.." if !isVag else "Even though he is using a condom, the stimulation is making your wet folds eagerly drip juices..")+"")
 
-		addButton("Continue", "See what happens next", "sexdesk_fast")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sexdesk_fast")
 	if(state == "sexdesk_fast"):
 		playAnimation(StageScene.SexOverTable, "fast", {pc="luxe", npc="pc", bodyState={showPenis=true, hard=true, condom=isVag}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("As Luxe continues to ram into you, his inflating knot increases its pressure, pressing insistently against your entrance. It doesn't fit.. but Luxe doesn't stop, he pounds into you harder, the knot stretching you wider bit by bit, the sensation almost unbearable. You can feel yourself teetering on the edge, your moans echoing around the room.")
+		saynn("Пока Люкс продолжает вбиваться в тебя, его раздувающийся узел давит всё сильнее, настойчиво упираясь в твой вход. Он не лезет.. но Люкс не останавливается, он вколачивается в тебя еще мощнее, растягивая тебя всё шире и шире, от этого ощущения почти невозможно терпеть. Ты чувствуешь, что балансируешь на грани, а твои стоны эхом разлетаются по комнате.")
 
-		saynn("[say=luxe]Take it.[/say]")
+		saynn("[say=luxe]Прими его.[/say]")
 
-		saynn("[say=pc]Ahh-h.h. mhh.. h..[/say]")
+		saynn("[say=pc]Аах-х.. ммх.. х..[/say]")
 
-		saynn("You can only whimper in response to his command as the orb is still too fat to fit inside you.. you can feel your body resisting, your "+str("tailhole" if !isVag else "pussy")+" clenches around it, refusing to yield. So hot, you feel something igniting in him and you..")
+		saynn("В ответ на его команду тебе остается только скулить, ведь шар всё еще слишком толст, чтобы войти внутрь.. ты чувствуешь, как твое тело сопротивляется, твои "+str("tailhole" if !isVag else "pussy")+" сжимаются вокруг него, отказываясь уступать. Так горячо, что ты чувствуешь, как внутри него и тебя что-то вспыхивает..")
 
-		saynn("Luxe grips your hips harder, pulling you back against him, his thrusts are relentless as he stretches you further. With each motion, he forces the knot a bit deeper.. until..")
+		saynn("Люкс крепче хватает тебя за бедра, притягивая назад к себе; его толчки беспощадны, пока он растягивает тебя всё сильнее. С каждым движением он заталкивает узел всё глубже.. пока..")
 
-		addButton("Cum", "See what happens next", "sexdesk_cum")
+		addButton("Кончить", "Смотреть, что будет дальше", "sexdesk_cum")
 	if(state == "sexdesk_cum"):
 		playAnimation(StageScene.SexOverTable, "inside", {pc="luxe", npc="pc", pcCum=isVag, npcCum=true, bodyState={showPenis=true, hard=true, condom=isVag}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("Until finally, with a last powerful thrust, the knot slips inside with a satisfying plop! The sensation is incredibly sharp, a rush of fullness and tightness that sends sudden shockwaves of pleasure through both of you. Luxe's breath hitches, and he growls deeply, the sound resonating through your body.")
+		saynn("Пока, наконец, с последним мощным толчком, узел с сочным шлепком проскальзывает внутрь! Ощущение невероятно острое — прилив полноты и тесноты, который посылает внезапные волны удовольствия через вас обоих. Дыхание Люкса перехватывает, и он глубоко рычит, и этот звук резонирует во всем твоем теле.")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("The moment the knot locks in place, the world falls away. Your cock twitches in its little cage.. and you feel a surge building deep within.. The way his knot puts immense pressure against your "+str("prostate" if !isVag else "pleasure spot")+" sends sparks of electricity through your body.. and moments later, {pc.cum} begins spilling out from your {pc.penis} in weak thick ropes, splattering against the desk..")
+			saynn("В тот миг, когда узел фиксируется на месте, мир вокруг перестает существовать. Твой член дергается в своей клетке.. и ты чувствуешь, как внутри нарастает волна.. То, как его узел оказывает колоссальное давление на твой "+str("prostate" if !isVag else "pleasure spot")+" посылает искры электричества по твоему телу... и мгновения спустя {pc.cum} начинает вытекать из твоей {pc.penis} слабыми густыми струями, разбрызгиваясь по столу...")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("The moment the knot locks in place, the world falls away. Your hard cock twitches a lot.. and you feel a surge building deep within.. The way his knot puts immense  pressure against your "+str("prostate" if !isVag else "pleasure spot")+" sends sparks of electricity through your body.. and moments later, {pc.cum} begins shooting out from your {pc.penis} in strong thick ropes, splattering against the desk..")
+			saynn("В тот момент, когда узел встает на место, мир вокруг исчезает. Твой твердый член многократно дергается... и ты чувствуешь, как внутри нарастает волна... То, как его узел оказывает колоссальное давление на твою "+str("prostate" if !isVag else "pleasure spot")+" посылает искры электричества по твоему телу... и мгновения спустя {pc.cum} начинает вырываться из твоей {pc.penis} мощными густыми струями, разбрызгиваясь по столу...")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("The moment the knot locks in place, the world falls away. You instantly fall into a huge, powerful climax, your inner walls pulse and contract around Luxe's knot as your "+str("neglected " if !isVag else "")+"pussy releases a fountain of girlcum onto the desk. "+str("Even though it's your ass that is getting stimulated, it's enough to send wave after wave of immense pleasure through you.." if !isVag else "The way his fat knot massages your g-spot.. it's enough to send wave after wave of immense pleasure through you..")+"")
+			saynn("В тот момент, когда узел встает на место, мир вокруг исчезает. Ты мгновенно проваливаешься в мощнейший, сокрушительный оргазм; твои внутренние стенки пульсируют и сжимаются вокруг узла Люкса, пока твоя "+str("neglected " if !isVag else "")+"киска извергает фонтан девичьей спермы прямо на стол."+str("Even though it's your ass that is getting stimulated, it's enough to send wave after wave of immense pleasure through you.." if !isVag else "The way his fat knot massages your g-spot.. it's enough to send wave after wave of immense pleasure through you..")+"")
 
 		else:
-			saynn("The moment the knot locks in place, the world falls away. You instantly fall into a huge, powerful climax, your inner walls pulse and contract around Luxe's knot as a powerful orgasm surges through your body, your pleasure spot overstimulated by his huge cock..")
+			saynn("В тот момент, когда узел встает на место, мир вокруг исчезает. Ты мгновенно проваливаешься в мощнейший, сокрушительный оргазм; твои внутренние стенки пульсируют и сжимаются вокруг узла Люкса, пока по всему твоему телу разливается мощная волна оргазма, а твоя эрогенная зона перестимулирована его огромным членом...")
 
 		if (!isVag):
-			saynn("As you clench around Luxe, he follows you into the abyss of pleasure too.. His glowing cock is throbbing inside your ass as it starts pumping you full of his hot seed, filling you to the brim with his heat.. more and more of it until your belly becomes a little more bumpy than it was before.. the outline of his cock clearly visible..")
+			saynn("Когда ты сжимаешься вокруг Люкса, он следует за тобой в бездну наслаждения... Его светящийся член пульсирует внутри твоей задницы, наполняя тебя его горячим семенем, заполняя тебя до самых краев его жаром... всё больше и больше, пока твой живот не становится чуть более бугристым, чем прежде... очертания его члена отчетливо видны сквозь кожу...")
 
 		else:
-			saynn("As you clench around Luxe, he follows you into the abyss of pleasure too.. His glowing cock is throbbing inside your pussy.. before it starts pumping the condom inside your womb full of his hot seed, filling the rubber to the brim with his heat.. more and more of it until your belly becomes a little more bumpy than it was before.. the outline of his cock clearly visible.. The condom that he chose.. it just doesn't want to burst..")
+			saynn("Когда ты сжимаешься вокруг Люкса, он следует за тобой в бездну наслаждения.. Его светящийся член пульсирует внутри твоей киски.. прежде чем он начинает закачивать презерватив в твою утробу, наполняя его своим горячим семенем, раздувая резину до предела его жаром.. всё больше и больше, пока твой живот не становится чуть более бугристым, чем прежде.. очертания его члена отчетливо видны.. Презерватив, который он выбрал.. он просто отказывается рваться..")
 
-		saynn("[say=pc]Oh fuck.. you're so fucking big..[/say]")
+		saynn("[say=pc]Ох, блядь.. ты такой охренительно огромный..[/say]")
 
-		saynn("His whole length is stuck inside you, making you squirm on his desk, your shaking legs giving up on you.. In this moment, you are nothing more than his cocksleeve.. and somehow, it feels exactly right..")
+		saynn("Вся его длина застряла внутри тебя, заставляя тебя извиваться на его столе, а твои дрожащие ноги подкашиваются.. В этот момент ты — не более чем его чехол для члена.. и почему-то это кажется именно тем, что нужно..")
 
-		addButton("Continue", "See what happens next", "sexdesk_after")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sexdesk_after")
 	if(state == "sexdesk_after"):
 		playAnimation(StageScene.SexOverTable, "tease", {pc="luxe", npc="pc", bodyState={showPenis=true, hard=true}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("Luxe tries to yank his knot out.. but it's stuck good, keeping any mess inside..")
+		saynn("Люкс пытается выдернуть свое утолщение, но оно намертво застряло, удерживая всю грязь внутри..")
 
-		saynn("[say=luxe]You will have to wait.[/say]")
+		saynn("[say=luxe]Тебе придется подождать.[/say]")
 
-		saynn("[say=pc]NHh.h.. o-okay..[/say]")
+		saynn("[say=pc]Нхх.. ладно..[/say]")
 
-		saynn("Being his cock warmer isn't that bad of a fate.. Minutes begin to pass, little moans keep sneaking from your lips.. the feeling of being stretched is just too much.")
+		saynn("Быть его грелкой для члена — не такая уж плохая участь.. Проходят минуты, с твоих губ то и дело срываются тихие стоны.. ощущение того, как тебя растягивают, просто зашкаливает.")
 
-		saynn("After his orgasm, Luxe looks bored, he can't even reach his documents from here. Might as well try to chat..")
+		saynn("После оргазма Люкс выглядит скучающим, он отсюда даже не может дотянуться до своих документов. Можно попробовать завязать разговор..")
 
-		saynn("[say=pc]W-why.. why are you against b-breeding?[/say]")
+		saynn("[say=pc]П-почему.. почему ты против р-размножения?[/say]")
 
-		saynn("[say=luxe]I've got enough kids. Too many for one guy even.[/say]")
+		saynn("[say=luxe]У меня достаточно детей. Даже слишком много для одного мужика.[/say]")
 
-		saynn("[say=pc]Why not m-more?[/say]")
+		saynn("[say=pc]Почему не м-больше?[/say]")
 
-		saynn("[say=luxe]Your job as a cocksleeve is to not ask questions.[/say]")
+		saynn("[say=luxe]Твоя работа как члена для сосания — не задавать вопросов.[/say]")
 
 		if (!isVag):
-			saynn("Fair enough.. You shut your mouth and just wait for his knot to start deflating.. That's when Luxe pulls out, making you arch your back and let out another loud moan, his seed instantly starts to leak out of your used stretched fuckhole.")
+			saynn("Справедливо.. Ты закрываешь рот и просто ждешь, когда его узел начнет спадать.. В этот момент Люкс вытаскивается, заставляя тебя выгнуться и издать очередной громкий стон, а его семя мгновенно начинает вытекать из твоего растянутого, использованного дырочного отверстия.")
 
 		else:
-			saynn("Fair enough.. You shut your mouth and just wait for his knot to start deflating.. That's when Luxe ties the condom up and pulls out, making you arch your back and let out another loud moan, most of his seed neatly contained in the rubber.. but some got onto the floor.. Your used stretched fuckhole is still pulsing.")
+			saynn("Справедливо.. Ты закрываешь рот и просто ждешь, когда его узел начнет спадать.. В этот момент Люкс завязывает презерватив и вытаскивается, заставляя тебя выгнуться и издать очередной громкий стон; большая часть его семени аккуратно остается в резине.. но немного капнуло на пол.. Твое растянутое, использованное отверстие всё еще пульсирует.")
 
-		saynn("[say=luxe]Clean up.[/say]")
+		saynn("[say=luxe]Уберись здесь.[/say]")
 
-		saynn("[say=pc]Yes..s.. of course..[/say]")
+		saynn("[say=pc]Да.. д.. да, конечно..[/say]")
 
-		saynn("You slide down the desk and begin licking the remains of the rough fuck.")
+		saynn("Ты сползаешь со стола и начинаешь слизывать остатки жесткого траха.")
 
-		saynn("[say=luxe]Wait. Don't fucking lick it. Use this.[/say]")
+		saynn("[say=luxe]Погоди. Не смей это лизать. Используй это.[/say]")
 
-		saynn("He hands you a wet sponge and heads towards his chair.")
+		saynn("Он протягивает тебе влажную губку и направляется к своему креслу.")
 
-		saynn("Yeah, your horny mind was a little bit ahead of him.")
+		saynn("Да, твой возбужденный разум немного опередил его мысли.")
 
-		saynn("You grab the sponge and clean the various lewd fluids that ended up on his desk and floor.. as best as you can.")
+		saynn("Ты хватаешь губку и стараешься оттереть все эти пошлые жидкости, размазанные по его столу и полу... насколько это вообще возможно.")
 
-		saynn("[say=luxe]Now go.[/say]")
+		saynn("[say=luxe]А теперь иди.[/say]")
 
-		saynn("Your legs are still shaky.. so you take your time.")
+		saynn("Ноги всё ещё подкашиваются, так что ты не торопишься.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "sexmar_start"):
 		playAnimation(StageScene.Duo, "stand", {npc="luxe", bodyState={leashedBy="luxe"}})
-		saynn("[say=pc]Hey, Luxe..[/say]")
+		saynn("[say=pc]Эй, Люкс...[/say]")
 
-		saynn("Even just the intonation in your voice is enough for him to perk his ears. Luxe slowly gets up and stands in front of his desk, his clawed digits calling you to get closer.")
+		saynn("Даже одной интонации в твоем голосе достаточно, чтобы он навострил уши. Люкс медленно поднимается и встает перед столом, маня тебя к себе своими когтистыми пальцами.")
 
-		saynn("Obviously, you obey his call and close the distance, your head lowered as a million dirty thoughts rush through it.")
+		saynn("Разумеется, ты откликаешься на его зов и сокращаешь дистанцию; ты опускаешь голову, пока в мыслях проносится миллион грязных фантазий.")
 
-		saynn("[say=pc]Can I be your cocksleeve again..[/say]")
+		saynn("[say=pc]Можно мне снова побыть твоим чехлом для члена?..[/say]")
 
-		saynn("[say=luxe]You can.[/say]")
+		saynn("[say=luxe]Можно.[/say]")
 
-		saynn("Somehow, he seems more.. talkative.. even though he only said two words.")
+		saynn("Каким-то образом он кажется более... разговорчивым... хотя произнес всего два слова.")
 
-		saynn("[say=luxe]You can be my cock's slave, how about that?[/say]")
+		saynn("[say=luxe]Можешь быть моей рабыней для члена, как тебе такое?[/say]")
 
-		saynn("He leans forward, his hand raises your chin to make you look at him.")
+		saynn("Он наклоняется вперед, приподнимая твой подбородок рукой, чтобы заставить тебя посмотреть ему в глаза.")
 
-		saynn("[say=luxe]I won't stop until you drain me completely.[/say]")
+		saynn("[say=luxe]Я не остановлюсь, пока ты не выжмешь меня до последней капли.[/say]")
 
-		saynn("Sounds intimidating.. and exciting..")
+		saynn("Звучит устрашающе... и возбуждающе...")
 
-		saynn("[say=pc]S-sounds g-good..[/say]")
+		saynn("[say=pc]З-звучит х-хорошо...[/say]")
 
-		saynn("Click.")
+		saynn("Щелчок.")
 
-		saynn("You don't even realize that he clicks a leash to your collar, his hand is so swift.")
+		saynn("Ты даже не успеваешь осознать, как он ловким движением защелкивает поводок на твоем ошейнике.")
 
-		saynn("He leads you towards a door.. but not the exit of his office.. but rather his personal room..")
+		saynn("Он ведет тебя к двери... но это не выход из его кабинета, а путь в его личные покои...")
 
-		addButton("Follow", "See what happens next", "sexmar_room")
+		addButton("Следовать", "Смотреть, что будет дальше", "sexmar_room")
 	if(state == "sexmar_room"):
 		playAnimation(StageScene.HangingDuo, "idle", {npc="luxe", pc="pc", bodyState={naked=true,hard=true}})
-		saynn("Luxe's private quarters.. are quite spacious.. and just as rich as his office. Your sight is stolen by the big double bed that is placed against one of the walls, various golden patterns carved into its panels.. but that's not where he is leading you.")
+		saynn("Личные покои Люкса... весьма просторны... и так же роскошны, как и его кабинет. Твой взгляд приковывает огромная двуспальная кровать, прислоненная к одной из стен, с искусной золотой резьбой на панелях... но он ведет тебя не к ней.")
 
-		saynn("The wolf pulls out some chains and attaches them to the special ceiling hooks. His usual cold gaze holds a different edge tonight.. something possessive.. something darker.")
+		saynn("Волк достает цепи и крепит их к специальным крюкам на потолке. В его привычном холодном взгляде сегодня сквозит нечто иное... некая собственническая страсть... нечто более темное.")
 
-		saynn("Without a word extra, Luxe takes your wrists and snaps heavy cuffs around them before lifting them above your head, securing you to the chains. The steel pulls tightly, leaving you standing on your toes, completely vulnerable and at this mercy.")
+		saynn("Не говоря ни слова, Люкс хватает тебя за запястья и застегивает на них тяжелые наручники, прежде чем поднять их над твоей головой, приковав к цепям. Сталь натягивается, заставляя тебя стоять на цыпочках — совершенно беззащитную и полностью во власти его воли.")
 
-		saynn("[say=pc]Ah.. you have a nice room.[/say]")
+		saynn("[say=pc]Ах... у тебя отличная комната.[/say]")
 
-		saynn("[say=luxe]Mmh.[/say]")
+		saynn("[say=luxe]Ммм.[/say]")
 
-		addButton("Continue", "See what happens next", "sexmar_undress")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sexmar_undress")
 	if(state == "sexmar_undress"):
 		playAnimation(StageScene.HangingDuo, "idle", {npc="luxe", pc="pc", bodyState={naked=true,hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("[say=pc]..and a nice cock..[/say]")
+		saynn("[say=pc]...и член у тебя отличный...[/say]")
 
-		saynn("He takes off his usual uniform, revealing himself fully to you, his golden marks are all on display.. and his canine sheath with a hard glowing shaft housed in it.")
+		saynn("Он снимает свою привычную форму, полностью обнажаясь перед тобой; его золотые метки выставлены напоказ... а в его собачьей препуции скрыт твердый, светящийся член.")
 
-		saynn("You feel his scent now.. thick and musky.. sharp and raw.. it's making your head spin. The room is clearly getting warmer..")
+		saynn("Теперь ты чувствуешь его запах... густой, мускусный... резкий и первобытный... от него идет кругом голова. В комнате явно становится жарче...")
 
-		addButton("Continue", "See what happens next", "sexmar_circle")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sexmar_circle")
 	if(state == "sexmar_circle"):
 		playAnimation(StageScene.HangingSex, "tease", {npc="luxe", pc="pc", bodyState={naked=true,hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("He circles you slowly, his powerful frame prowling with control.. dominance. He stops just behind you, so close you can feel the head radiating from his chest against your back. One large, clawed hand traces down your spine, sending shivers through your {pc.masc} body as he explores each exposed inch. His hot breath is on your neck.. you can feel his lips graze your ear as he rumbles a deep, low growl.. it makes your body tremble.. it makes you want him..")
+		saynn("Он медленно кружит вокруг тебя, его мощное тело движется грациозно, но властно... доминантно. Он останавливается прямо за твоей спиной, так близко, что ты чувствуешь жар, исходящий от его груди. Одна его большая рука с когтями скользит вниз по твоему позвоночнику, вызывая дрожь во всем твоем {pc.masc} теле, пока он исследует каждый обнаженный дюйм кожи. Его горячее дыхание обжигает твою шею... ты чувствуешь, как его губы касаются твоего уха, когда он издает глубокий, низкий рык... от этого всё твое тело дрожит... и тебе безумно хочется его...")
 
-		saynn("[say=pc]When are gonna..[/say]")
+		saynn("[say=pc]Когда мы уже...[/say]")
 
-		saynn("[say=luxe]Soon.[/say]")
+		saynn("[say=luxe]Скоро.[/say]")
 
-		saynn("His other hand wraps around your throat, his claws dig in ever so slightly, asserting his total control over you.. and testing your limits. He makes you arch your back in just the way that he wants..")
+		saynn("Его другая рука обхватывает твое горло, когти слегка впиваются в кожу, утверждая его полный контроль над тобой... и проверяя твои пределы. Он заставляет тебя выгнуться именно так, как он того хочет...")
 
-		addButton("Ass", "Luxe will fuck your ass", "sexmar_pick_ass")
-		addButtonWithChecks("Pussy", "Luxe will fuck your pussy with a condom", "sexmar_pick_pussy", [], [[ButtonChecks.HasReachableVagina]])
+		addButton("В задницу", "Люкс оттрахает твою задницу", "sexmar_pick_ass")
+		addButtonWithChecks("В киску", "Люкс будет трахать твою киску в презервативе", "sexmar_pick_pussy", [], [[ButtonChecks.HasReachableVagina]])
 	if(state == "sexmar_sex"):
 		playAnimation(StageScene.HangingSex, "sex", {npc="luxe", pc="pc", bodyState={naked=true,hard=true}, npcBodyState={naked=true, hard=true, condom=isVag}})
 		if (isVag):
-			saynn("Quickly, he fetches a condom and spreads it over his length.")
+			saynn("Он быстро достает презерватив и натягивает его на свой член.")
 
-		saynn("Without another sound, he aligns himself behind you, his knotted, throbbing length pressing against your "+str("butt, teasing your {pc.anusStretch} entrance" if !isVag else "slick folds, teasing your {pc.pussyStretch} pussy entrance")+". One powerful hand grips your {pc.thick} hip tightly, pulling you back toward him as he pushes forward, his thick cock pressing inside, stretching you to take him!")
+		saynn("Не проронив ни звука, он устраивается позади тебя, прижимая свой узловатый, пульсирующий член к твоей "+str("butt, teasing your {pc.anusStretch} entrance" if !isVag else "slick folds, teasing your {pc.pussyStretch} pussy entrance")+". Одна его мощная рука крепко сжимает твой {pc.thick} бедро, притягивая тебя назад, пока он вжимается вперед, его толстый член входит внутрь, растягивая тебя, чтобы ты могла принять его!")
 
-		saynn("[say=pc]Ah!..[/say]")
+		saynn("[say=pc]Ах!..[/say]")
 
-		saynn("His grip on your waist increases, fingers digging into your flesh as he begins to move, his hips slamming against you, making you take his glowing gold length again and again, keeping your "+str("tailhole" if !isVag else "folds")+" stretched wide open..")
+		saynn("Его хватка на твоей талии усиливается, пальцы впиваются в плоть, когда он начинает двигаться; его бедра с силой вбиваются в тебя, заставляя тебя раз за разом принимать его сияющий золотом член, удерживая твою "+str("tailhole" if !isVag else "folds")+" растянутой настежь..")
 
-		saynn("Luxe sets a slow, punishing rhythm at first, each thrust is making you feel like you're about to break, the pressure inside you builds, your inner walls gripping his cock nice and tight..")
+		saynn("Сначала Люкс задает медленный, карающий ритм; каждый толчок заставляет тебя чувствовать, будто ты вот-вот сломаешься, давление внутри нарастает, а твои внутренние стенки плотно обхватывают его член..")
 
-		addButton("Continue", "See what happens next", "sexmar_fast")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sexmar_fast")
 	if(state == "sexmar_fast"):
 		playAnimation(StageScene.HangingSex, "fast", {npc="luxe", pc="pc", bodyState={naked=true,hard=true}, npcBodyState={naked=true, hard=true, condom=isVag}})
-		saynn("And soon, Luxe begins to fuck you faster, driving his cock deeper, his knot swelling and stretching you.. but not fitting inside anymore, instead just making you writhe against him. Juicy moans escape your lips, combining with the sounds of bodies slapping against each other..")
+		saynn("И вскоре Люкс начинает трахать тебя быстрее, вонзаясь всё глубже, его узел раздувается и растягивает тебя.. но он уже не помещается целиком, заставляя тебя лишь извиваться под ним. С твоих губ срываются сочные стоны, смешиваясь со звуками шлепков тел друг о друга..")
 
-		saynn("[say=pc]I love your cock.. ah..[/say]")
+		saynn("[say=pc]Обожаю твой член.. ах..[/say]")
 
-		saynn("His hand grabs your neck again, forcing you back against him as he pounds into you, his powerful body fully taking you. With each powerful thrust, his knot presses harder, straining, stretching..")
+		saynn("Его рука снова хватает тебя за шею, прижимая к себе, пока он вколачивается в тебя, полностью завладевая твоим телом. С каждым мощным толчком его узел давит всё сильнее, напрягаясь и растягивая тебя..")
 
-		saynn("Yeah, he is not stopping now.. you can tell it by now..")
+		saynn("Да уж, он сейчас не остановится... это уже и так понятно...")
 
-		addButton("Continue", "See what happens next", "sexmar_cum1")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sexmar_cum1")
 	if(state == "sexmar_cum1"):
 		playAnimation(StageScene.HangingSex, "inside", {npc="luxe", pc="pc", bodyState={naked=true,hard=true}, npcBodyState={naked=true, hard=true, condom=isVag}})
-		saynn("With a final, forceful motion, he rams the whole length inside your "+str("ass" if !isVag else "cunt")+", locking himself with you as his knot pushes past your "+str("anal ring" if !isVag else "pusy folds")+", sealing the two of you together.")
+		saynn("Последним мощным толчком он входит в тебя до самого основания, "+str("ass" if !isVag else "cunt")+"замыкая вас обоих, пока его узел проталкивается сквозь твою "+str("anal ring" if !isVag else "pusy folds")+", намертво скрепляя вас вместе.")
 
-		saynn("A quiet growl escapes him as his cock starts throbbing inside you, stuffing its load deep inside, pulsing deep within.. You can feel each spasm, his thick cum flooding into "+str("you" if !isVag else "the, seemingly unbreakable, condom inside your womb")+".. with nothing leaking out..")
+		saynn("Тихое рычание срывается с его губ, когда его член начинает пульсировать внутри тебя, вбивая порцию семени глубоко-глубоко, содрогаясь внутри... Ты чувствуешь каждый спазм, как его густая сперма заливает "+str("you" if !isVag else "the, seemingly unbreakable, condom inside your womb")+".. и ни капли не вытекает наружу...")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your "+str("prostate" if !isVag else "g-spot")+" gets smashed by the fat orb, causing your little locked cock to start wasting its load, shooting weak spurts of {pc.cum} onto the floor, your own orgasm is sending you shaking..")
+			saynn("Твоя "+str("prostate" if !isVag else "g-spot")+" раздавливается жирным шаром, отчего твой маленький заблокированный член начинает беспорядочно извергаться, пуская слабые струйки {pc.cum} на пол, а твой собственный оргазм заставляет тебя дрожать...")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your "+str("prostate" if !isVag else "g-spot")+" gets smashed by the fat orb, causing your {pc.penis} to start wasting its load, shooting strong spurts of {pc.cum} onto the floor, your own orgasm is sending you shaking..")
+			saynn("Твоя "+str("prostate" if !isVag else "g-spot")+" раздавливается жирным шаром, отчего твой {pc.penis} начинает беспорядочно извергаться, пуская мощные струи {pc.cum} на пол, а твой собственный оргазм заставляет тебя дрожать...")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("Your pussy is pulsing around "+str("empty air, this anal pounding" if !isVag else "that shaft, the pounding")+" is enough to make you cum, your own sudden orgasm sending you shaking..")
+			saynn("Твоя киска пульсирует вокруг "+str("empty air, this anal pounding" if !isVag else "that shaft, the pounding")+" этого достаточно, чтобы ты кончила, а твой внезапный оргазм заставляет тебя содрогаться...")
 
-		saynn("Bound, knotted and claimed.. The hot breath on your neck is adding to it.. making you squirm and clench around him..")
+		saynn("Связанная, завязанная и присвоенная... Его горячее дыхание на твоей шее только подливает масла в огонь... заставляя тебя извиваться и сжиматься вокруг него...")
 
-		saynn("[say=pc]Nhh.. f-fuck..[/say]")
+		saynn("[say=pc]Нхх... б-блядь...[/say]")
 
-		saynn("The wolf takes a small breather, his full length still inside you..")
+		saynn("Волк делает короткую передышку, всё ещё оставаясь внутри тебя во всю длину...")
 
-		saynn("[say=luxe]We're only getting started.[/say]")
+		saynn("[say=luxe]Мы только начинаем.[/say]")
 
-		saynn("Oh shit..")
+		saynn("О черт...")
 
-		addButton("Continue", "See what happens next", "sexmar_fullnelson")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sexmar_fullnelson")
 	if(state == "sexmar_fullnelson"):
 		playAnimation(StageScene.SexFullNelson, "sex", {pc="luxe", npc="pc", bodyState={naked=true,hard=true, condom=isVag}, npcBodyState={naked=true, hard=true}})
-		saynn("While his cock is still fully inside, Luxe uncuffs your hands and catches you, his hands snake under your knees and pin them up high against your shoulders before locking behind your head, grabbing into a full nelson hold.")
+		saynn("Пока его член всё еще полностью внутри, Люкс снимает наручники с твоих рук и подхватывает тебя; его руки скользят под твои колени и задирают их высоко к плечам, после чего он сцепляет их за твоей головой, фиксируя тебя в захвате «полный налсон».")
 
-		saynn("Just as before, you are completely helpless, your feet dangling high, your body fully locked by his powerful hands..")
+		saynn("Как и прежде, ты совершенно беспомощна: твои ноги высоко болтаются в воздухе, а тело намертво зажато его мощными руками...")
 
-		saynn("With one swift motion, he yanks his knot out of your stuffed ass, making your asshole gape and start leaking cum.. but only for a few moments"+str(", while he switches condoms," if isVag else "")+" before he starts thrusting inside you with raw, unrestrained force, this new angle allowing him to hit your "+str("prostate" if (GM.pc.hasPenis() && !isVag) else "most sensitive spots")+" with greater force.")
+		saynn("Одним резким движением он вырывает свой узел из твоей набитой задницы, заставляя твой анус широко раскрыться и начать сочиться спермой... но лишь на несколько мгновений,"+str(", while he switches condoms," if isVag else "")+"прежде чем он начинает входить в тебя с первобытной, необузданной силой, благодаря новому углу он может бить прямо в твою "+str("prostate" if (GM.pc.hasPenis() && !isVag) else "most sensitive spots")+" с еще большей мощью.")
 
-		saynn("[say=pc]Ah.. f-fuck!.. You're gonna break me!..[/say]")
+		saynn("[say=pc]Ах.. б-бля!.. Ты меня сейчас сломаешь!..[/say]")
 
-		saynn("[say=luxe]I do.[/say]")
+		saynn("[say=luxe]Да.[/say]")
 
-		addButton("Continue", "See what happens next", "sexmar_fullnelson_fast_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sexmar_fullnelson_fast_cum")
 	if(state == "sexmar_fullnelson_fast_cum"):
 		playAnimation(StageScene.SexFullNelson, "fast", {pc="luxe", npc="pc", bodyState={naked=true,hard=true, condom=isVag}, npcBodyState={naked=true, hard=true}})
-		saynn("The pose is forcing to take him entirely, Luxe is fucking you faster and stronger, bringing you down onto his shaft with great strength, the heat making your heart beat insanely fast.")
+		saynn("Поза вынуждает тебя полностью принять его; Люкс трахает тебя всё быстрее и сильнее, с огромной силой насаживая тебя на свой член, от чего сердце начинает бешено колотиться.")
 
-		saynn("[say=pc]I'm.. I'm gg-gonna.. Ahh![/say]")
+		saynn("[say=pc]Я.. я сейчас.. Ааах![/say]")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your orgasm catches up with you again, your poor "+str("prostate is begging for mercy as the fat shaft is massaging it relentlessly, milking it for all its fluids" if !isVag else "g-spot is begging for mercy as the fat shaft is kneading it relentlessly during the rough pounding")+". Your locked away cock throbs in its little cage and starts dripping {pc.cum} eagerly, in rhythm with the rough pounding..")
+			saynn("Очередная волна оргазма накрывает тебя, твой бедный "+str("prostate is begging for mercy as the fat shaft is massaging it relentlessly, milking it for all its fluids" if !isVag else "g-spot is begging for mercy as the fat shaft is kneading it relentlessly during the rough pounding")+". Твой запертый член пульсирует в своей клетке и начинает жадно сочиться {pc.cum} в ритм этим грубым толчкам..")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your orgasm catches up with you again, your "+str("prostate is begging for mercy as the fat shaft is massaging it relentlessly, milking it for all its fluids" if !isVag else "g-spot is begging for mercy as the fat shaft is kneading it relentlessly during the rough pounding")+". Your own dick throbs and starts dripping {pc.cum} eagerly, in rhythm with the rough pounding..")
+			saynn("Очередная волна оргазма накрывает тебя, твой "+str("prostate is begging for mercy as the fat shaft is massaging it relentlessly, milking it for all its fluids" if !isVag else "g-spot is begging for mercy as the fat shaft is kneading it relentlessly during the rough pounding")+". Твой собственный член пульсирует и начинает жадно сочиться {pc.cum} в ритм этим грубым толчкам..")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("Your orgasm catches up with you again, your poor g-spot is begging for mercy as the fat shaft is massaging it relentlessly during this. Your pussy pulses and starts squirting, releasing girlcum in short bursts, in rhythm with the rough pounding..")
+			saynn("Очередная волна оргазма накрывает тебя, твоя бедная точка G молит о пощаде, пока толстый член безжалостно массирует её. Твоя киска пульсирует и начинает кончать, выбрасывая струйки смазки короткими порциями в ритм этим грубым толчкам..")
 
 		else:
-			saynn("Your orgasm catches up with you again, your pleasure spots are all begging for mercy as the fat shaft is massaging them relentlessly. You're cumming from the rough pounding..")
+			saynn("Очередная волна оргазма накрывает тебя, все твои эрогенные зоны молят о пощаде, пока толстый член безжалостно массирует их. Ты кончаешь от этих грубых толчков..")
 
-		saynn("With every thrust, you can feel his knot swallowing again, the pressure building up until he pulls you down hard against his cock, forcing his fat orb inside you once more. The combination of your helplessness and his dominance drives you wild, his glowing member pumping "+str("your ass full of his virile seed again" if !isVag else "the fresh condom in your pussy full of his virile seed again")+".")
+		saynn("С каждым толчком ты чувствуешь, как его узел снова разбухает; давление нарастает, пока он с силой не прижимает тебя к своему члену, вновь втискивая в тебя свою толстую головку. Сочетание твоей беспомощности и его доминирования сводит тебя с ума, а его светящийся член качает "+str("your ass full of his virile seed again" if !isVag else "the fresh condom in your pussy full of his virile seed again")+".")
 
-		saynn("[say=luxe]Nh..[/say]")
+		saynn("[say=luxe]Нх..[/say]")
 
-		saynn("[say=pc]So much.. oh fu-uck.. oh fuck..[/say]")
+		saynn("[say=pc]Так много.. о боже, бля-я-ядь.. о боже, блядь..[/say]")
 
-		saynn("Your belly is actually glowing a bit, the golden accents showing through.. and it's also growing too, the cum that is being pumped into it is making it look slightly bigger.."+str(" How is that condom still holding.." if isVag else "")+"")
+		saynn("Твой живот и правда слегка светится, сквозь кожу проступают золотые узоры... и он тоже растет, от того, что в него вкачивают столько спермы, он кажется всё больше и больше.."+str(" How is that condom still holding.." if isVag else "")+"")
 
-		saynn("He doesn't stop too, moving his hips, his cock is shifting inside you, stretching you out more and more..")
+		saynn("Он не останавливается, продолжая двигать бедрами; его член внутри тебя смещается, растягивая тебя всё сильнее и сильнее..")
 
-		saynn("[say=pc]"+str("My ass" if !isVag else "My pussy")+".. you s-stuffed me..[/say]")
+		saynn("[say=pc]"+str("My ass" if !isVag else "My pussy")+".. ты м-меня набил..[/say]")
 
-		saynn("[say=luxe]I'm not done with you yet.[/say]")
+		saynn("[say=luxe]Я еще не закончил с тобой.[/say]")
 
-		saynn("[say=pc]Wha-a..[/say]")
+		saynn("[say=pc]Что-о..[/say]")
 
-		saynn("Still in this full nelson pose, he brings you to his king-sized bed..")
+		saynn("Всё еще удерживая тебя в позе «полный налсон», он несет тебя к своей огромной кровати..")
 
-		addButton("Continue", "See what happens next", "sexmar_mating")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sexmar_mating")
 	if(state == "sexmar_mating"):
 		playAnimation(StageScene.SexMatingPress, "sex", {pc="luxe", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("He gives you just a moment to catch your breath.. before yanking his cock out and throwing you onto his bed.")
+		saynn("Он дает тебе лишь мгновение, чтобы перевести дух.. прежде чем резко выдернуть свой член и швырнуть тебя на кровать.")
 
-		saynn("[say=pc]AH![/say]")
+		saynn("[say=pc]АХ![/say]")
 
-		saynn("The landing is soft, luckily.. But that can not be said for what happens next."+str(" Luxe takes off the filled rubber.. ties it up.. and looks at you, a fresh condom in his hands." if isVag else "")+"")
+		saynn("Приземление, к счастью, выходит мягким.. Но вот о том, что случится дальше, такого сказать нельзя."+str(" Luxe takes off the filled rubber.. ties it up.. and looks at you, a fresh condom in his hands." if isVag else "")+"")
 
 		if (isVag):
-			saynn("[say=pc]Luxe?..[/say]")
+			saynn("[say=pc]Люкс?..[/say]")
 
-			saynn("He deliberates for a bit.. and then throws the condom to the side.")
+			saynn("Он немного раздумывает... а затем отшвыривает презерватив в сторону.")
 
-			saynn("[say=pc]Oh?..[/say]")
+			saynn("[say=pc]О?..[/say]")
 
-		saynn("Luxe's hands raise your legs onto his shoulder and pin you into the sheets, your back pressed firmly against the surface.")
+		saynn("Люкс закидывает твои ноги себе на плечи и прижимает тебя к простыням, вжимая твою спину в матрас.")
 
-		saynn("He's got you into a firm mating press.. and that gives him complete control, allowing him to thrust into you again, the angle is perfect to start pounding your "+str("ass, your gaping asshole eagerly stretching against to fit his length." if !isVag else "cunt, your gaping pussy eagerly stretching against to fit his length.. Feels so much better without a rubber..")+"")
+		saynn("Он зажал тебя в жесткий спаривающий пресс... это дает ему полный контроль, позволяя снова войти в тебя; угол идеален, чтобы начать нещадно долбить твою "+str("ass, your gaping asshole eagerly stretching against to fit his length." if !isVag else "cunt, your gaping pussy eagerly stretching against to fit his length.. Feels so much better without a rubber..")+"")
 
-		saynn("[say=pc]I love your cock![/say]")
+		saynn("[say=pc]Обожаю твой член![/say]")
 
-		saynn("[say=luxe]Good. Take it all.[/say]")
+		saynn("[say=luxe]Хорошо. Принимай всё до капли.[/say]")
 
-		addButton("Continue", "See what happens next", "sexmar_mating_fast")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sexmar_mating_fast")
 	if(state == "sexmar_mating_fast"):
 		playAnimation(StageScene.SexMatingPress, "fast", {pc="luxe", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("As the heat between you builds, Luxe changes his rhythm, pulling out almost entirely before slamming his cock back in, the slaps echoing around the room. Your body arches against him, your needy "+str("asshole" if !isVag else "flower")+" clenching, trying to milk his balls dry as you approach another peak..")
+		saynn("По мере того как жар между вами нарастает, Люкс меняет ритм, почти полностью выходя, а затем с силой вколачивает свой член обратно, так что шлепки эхом разлетаются по комнате. Твое тело выгибается навстречу ему, твоя жадная "+str("asshole" if !isVag else "flower")+" сжимается, пытаясь выжать из него всё до последней капли, пока ты приближаешься к очередному пику...")
 
-		saynn("Luxe's thrusts are becoming more urgent.. he puts more strength into them.. until the knot gets forced into you again.. and then again and again, your "+str("tailhole" if !isVag else "pussy")+" got stretched enough for him to be able to yank his orb out and force it back inside before your ring closes up..")
+		saynn("Толчки Люкса становятся всё более неистовыми... он вкладывает в них всё больше силы... пока узел снова не втискивается в тебя... и снова, и снова, твоя "+str("tailhole" if !isVag else "pussy")+" его растянули настолько, что он смог выдернуть свой член и с силой впихнуть его обратно до того, как твоя киска сомкнется..")
 
-		saynn("[say=pc]Fuc-ck! You're knot-fucking me!..[/say]")
+		saynn("[say=pc]Бля-я-ядь! Ты что, узлом меня завязываешь!..[/say]")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("It doesn't take long for your caged member to start leaking {pc.cum} again, your balls are pretty much drained by this point, your "+str("prostate" if !isVag else "g-spot")+" smashed to bits..")
+			saynn("Вскоре твой запертый член снова начинает сочиться {pc.cum}, твои яички к этому моменту практически пусты, твоя "+str("prostate" if !isVag else "g-spot")+" разнесена в щепки..")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("It doesn't take long for your {pc.penis} to start leaking {pc.cum} again, your balls are pretty much drained by this point, your "+str("prostate" if !isVag else "g-spot")+" smashed to bits..")
+			saynn("Вскоре твоя {pc.penis} снова начинает сочиться {pc.cum}, твои яички к этому моменту практически пусты, твоя "+str("prostate" if !isVag else "g-spot")+" разнесена в щепки..")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("It doesn't take long for your pussy to gush with fluids again.. just much less.. as that cock is leaving you drained by this point..")
+			saynn("Вскоре твоя киска снова начинает извергать соки.. только гораздо слабее.. так как этот член оставляет тебя совершенно опустошенной..")
 
 		else:
-			saynn("It doesn't take long for you to cum again, your ass desperately squeezing that cock..")
+			saynn("Вскоре ты снова кончаешь, твоя задница отчаянно сжимает этот член..")
 
-		addButton("Continue", "See what happens next", "sexmar_mating_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sexmar_mating_cum")
 	if(state == "sexmar_mating_cum"):
 		playAnimation(StageScene.SexMatingPress, "inside", {pc="luxe", npc="pc", pcCum=true, npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("As Luxe reaches his limit, he lets out a primal animal growl and forces his whole length inside you again, the knot locking you both together! Feeling the immense pressure, you cry out in ecstasy, your orgasm keeps getting prolonged, your body squirming under him.")
+		saynn("Когда Люкс достигает предела, он издает первобытный звериный рык и снова вбивает всю свою длину в тебя, а узел намертво сцепляет вас обоих! Чувствуя колоссальное давление, ты вскрикиваешь от экстаза; твой оргазм затягивается, а тело корчится под ним.")
 
 		if (!isVag):
-			saynn("Luxe leans down and stares you directly into the eyes as his cock starts throbbing inside you again, somehow stuffing even more of his potent cum inside your ass, your legs shaking wildly as his balls are tensing up.. again and again.. pushing his load inside..")
+			saynn("Люкс наклоняется и смотрит тебе прямо в глаза, пока его член внутри тебя снова начинает пульсировать, каким-то образом втискивая еще больше своей мощной спермы в твою задницу; твои ноги дико дрожат, когда его яички напрягаются.. снова и снова.. выталкивая порцию внутрь..")
 
 		else:
-			saynn("Luxe leans down and stares you directly into the eyes as his cock starts throbbing inside you.. Now that the condom is gone, his potent cum is getting pumped directly into your babymaker, filling it to the brim, your legs are shaking wildly as his balls are tensing up.. again and again.. pushing his load inside..")
+			saynn("Люкс наклоняется и пристально смотрит тебе прямо в глаза, пока его член начинает пульсировать внутри тебя... Теперь, когда презерватив снят, его мощная сперма впрыскивается прямиком в твою утробу, наполняя её до самых краев; твои ноги дико дрожат, пока его яички напрягаются... снова и снова... выталкивая порцию за порцией внутрь...")
 
-		saynn("You see the fire in his eyes.. that primal spark. It spreads waves of heat through you too.. a little too much perhaps..")
+		saynn("Ты видишь огонь в его глазах... ту первобытную искру. Он расходится по тебе волнами жара... пожалуй, даже слишком сильного...")
 
-		saynn("The wolf keeps grunting.. until your clenching, used fuckhole leaves him dry.")
+		saynn("Волк продолжает хрипеть... пока твоя сжимающаяся, изнуренная дырка не оставляет его сухим.")
 
-		saynn("[say=luxe]Nothing but prey.. my prey.[/say]")
+		saynn("[say=luxe]Всего лишь добыча... моя добыча.[/say]")
 
-		saynn("Feels good to be his prey..")
+		saynn("Быть его добычей — это так приятно...")
 
-		addButton("Continue", "See what happens next", "sexmar_after_mating")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sexmar_after_mating")
 	if(state == "sexmar_after_mating"):
 		playAnimation(StageScene.Solo, "stand", {bodyState={naked=true}})
-		saynn("Slowly, after you both begin to come down back to your senses after that crazy.. marathon.. of rough passion..")
+		saynn("Медленно, когда вы оба начинаете приходить в себя после этого безумного... марафона... грубой страсти...")
 
-		saynn("Luxe is still panting, even after yanking his knotted cock out of you.. probably because it's so hot in here.. why is it so hot in here..")
+		saynn("Люкс всё еще тяжело дышит, даже после того, как выдернул свой узловатый член из тебя... наверное, потому что здесь так жарко... почему здесь так жарко...")
 
-		saynn("[say=luxe]..h.. f-fuck.[/say]")
+		saynn("[say=luxe]..х.. бля...[/say]")
 
-		saynn("He suddenly puts his hand onto his chest.. the tips of his fur are shining.. no, they're burning! And soon, the wolf collapses by your side, onto the bed.")
+		saynn("Внезапно он прижимает руку к груди... кончики его меха сияют... нет, они горят! И вскоре волк валится рядом с тобой на кровать.")
 
-		saynn("[say=pc]Luxe? Hey, are you okay?![/say]")
+		saynn("[say=pc]Люкс? Эй, ты в порядке?![/say]")
 
-		saynn("[say=luxe]..p-pills..[/say]")
+		saynn("[say=luxe]..п-пилюли..[/say]")
 
-		saynn("You see his eyes.. he is in huge pain.. all the while the room is getting hotter and hotter. Oh shit.")
+		saynn("Ты видишь его глаза... ему чертовски больно... а в комнате тем временем становится всё жарче и жарче. Ох, блядь.")
 
-		saynn("[say=pc]Pills, yes, pills. Where are they?[/say]")
+		saynn("[say=pc]Пилюли, да, пилюли. Где же они?[/say]")
 
-		saynn("Luxe is not saying anything.. just grunting and gritting his teeth.")
+		saynn("Люкс молчит... только кряхтит и стискивает зубы.")
 
-		saynn("[say=pc]Luxe, you have to tell me.[/say]")
+		saynn("[say=pc]Люкс, ты должен мне сказать.[/say]")
 
-		saynn("[say=luxe]..d-desk.. c-code.. 52734..[/say]")
+		saynn("[say=luxe]..с-стол.. к-код.. 52734..[/say]")
 
-		saynn("Right..")
+		saynn("Понятно...")
 
-		addButton("Desk", "Go grab his pills", "sexmar_pills")
+		addButton("Стол", "Схватить его пилюли", "sexmar_pills")
 	if(state == "sexmar_pills"):
 		playAnimation(StageScene.BreastFeeding, "tease", {pc="luxe", npc="pc", bodyState={naked=true}, npcBodyState={naked=true}})
-		saynn("You rush to his desk and enter the code.. opening the drawers. There are a lot of things there.. a gun, some documents, lots of little thumb drives.. a sealed urn.. some kind of old burnt-looking chastity cage.. and a pill bottle! You grab it and run back to Luxe.. who seems to be burning up from inside..")
+		saynn("Ты бросаешься к его столу и вводишь код... выдвигая ящики. Там полно всякого хлама... пистолет, какие-то документы, куча маленьких флешек... запечатанная урна... какая-то старая, обгоревшая на вид девственная клетка... и баночка с таблетками! Ты хватаешь её и бежишь обратно к Люксу, который, кажется, буквально горит изнутри...")
 
-		saynn("A single pill later.. you hear a loud sigh of relief coming from him. The room temperature begins to calm down..")
+		saynn("Спустя всего одну таблетку... ты слышишь его громкий, облегченный вздох. Температура в комнате начинает постепенно падать...")
 
-		saynn("[say=luxe]Hhh..[/say]")
+		saynn("[say=luxe]Ххх..[/say]")
 
-		saynn("[say=pc]Are you okay?..[/say]")
+		saynn("[say=pc]Ты в порядке?..[/say]")
 
-		saynn("[say=luxe]About as good as I look.[/say]")
+		saynn("[say=luxe]Примерно так же хорошо, как и выгляжу.[/say]")
 
-		saynn("[say=pc]So, not okay?[/say]")
+		saynn("[say=pc]Значит, не очень?[/say]")
 
-		saynn("A single chuckle escapes his lungs.. before he leans back and lets his head fall onto a comfy pillow.")
+		saynn("Из его груди вырывается короткий смешок, после чего он откидывается назад, позволяя голове уютно опуститься на подушку.")
 
-		saynn("[say=luxe]I need a rest.[/say]")
+		saynn("[say=luxe]Мне нужно отдохнуть.[/say]")
 
-		saynn("[say=pc]Yeah.. I will leave you to it.[/say]")
+		saynn("[say=pc]Да... тогда не буду тебе мешать.[/say]")
 
-		saynn("Suddenly, his hand grabs you by the collar and pulls you onto him.")
+		saynn("Внезапно он хватает тебя за воротник и притягивает к себе.")
 
-		saynn("[say=luxe]No you don't.[/say]")
+		saynn("[say=luxe]Еще как хочешь.[/say]")
 
-		saynn("Snuggles, yay..")
+		saynn("Обнимашки, ура..")
 
-		addButton("Rest", "Rest with him", "sexmar_rest")
+		addButton("Отдохнуть", "Отдохнуть с ним", "sexmar_rest")
 	if(state == "sexmar_rest"):
 		playAnimation(StageScene.Sleeping, "sleep", {pc="luxe", npc="pc", bodyState={naked=true}, npcBodyState={naked=true}})
-		saynn("Luxe snores quietly, one of his hands wrapped around you, keeping you on his chest. It's getting kinda chilly actually.. but his fur helps.")
+		saynn("Люкс тихо посапывает, приобняв тебя одной рукой и прижимая к своей груди. Становится довольно прохладно... но его мех отлично согревает.")
 
-		saynn("You take a little nap too.. but the wear and tear that his cock inflicted on you is making that a little problematic, your body keeps wanting to squirm..")
+		saynn("Ты тоже немного вздремнула... но из-за того, как его член изнурил тебя, это дается с трудом: тело так и норовит извиваться...")
 
-		saynn("[say=luxe]My young days are long gone.[/say]")
+		saynn("[say=luxe]Моя молодость давно прошла.[/say]")
 
-		saynn("He opens his eyes, his voice low and rumbly.")
+		saynn("Он открывает глаза, его голос звучит низко и хрипло.")
 
-		saynn("[say=pc]What are you talking about, you're still amazing..[/say]")
+		saynn("[say=pc]О чем ты говоришь, ты всё еще потрясающая...[/say]")
 
-		saynn("He looks at you and hums.")
+		saynn("Он смотрит на тебя и что-то невнятно мычит.")
 
-		saynn("[say=luxe]Tell me that thirty minutes ago.[/say]")
+		saynn("[say=luxe]Сказал бы ты мне это полчаса назад.[/say]")
 
-		saynn("[say=pc]That was just a.. I don't know what it is. Heart problems?[/say]")
+		saynn("[say=pc]Это было просто... даже не знаю. Проблемы с сердцем?[/say]")
 
-		saynn("He sighs.")
+		saynn("Он вздыхает.")
 
-		saynn("[say=luxe]Kinda like that.[/say]")
+		saynn("[say=luxe]Вроде того.[/say]")
 
-		saynn("[say=pc]You don't have to tell me, I understand.[/say]")
+		saynn("[say=pc]Тебе не обязательно говорить, я всё понимаю.[/say]")
 
-		saynn("A silence emerges. Only two souls breathing keep it from being complete..")
+		saynn("Воцаряется тишина. Лишь дыхание двух душ не дает ей стать абсолютной...")
 
-		saynn("[say=luxe]DNA splicing. The experiment was a little too advanced for my times so it came with some.. complications.[/say]")
+		saynn("[say=luxe]Сплайсинг ДНК. Эксперимент был слишком продвинутым для моего времени, так что он принес с собой некоторые... осложнения.[/say]")
 
-		saynn("[say=pc]Syndicate is doing DNA experiments?[/say]")
+		saynn("[say=pc]Синдикат проводит эксперименты с ДНК?[/say]")
 
-		saynn("AlphaCorp is probably not shy of doing it too.")
+		saynn("АльфаКорп, вероятно, тоже не стесняется в таких делах.")
 
-		saynn("[say=luxe]Mhm. That's the idea of Syndicate. Free to do whatever you can. As long as it helps the cause.[/say]")
+		saynn("[say=luxe]Мгм. В этом и суть Синдиката. Свобода делать всё, что угодно. Пока это служит общему делу.[/say]")
 
-		saynn("Free to enslave people..")
+		saynn("Свобода порабощать людей...")
 
-		saynn("[say=pc]That's freedom.. in a way.[/say]")
+		saynn("[say=pc]В каком-то смысле, это и есть свобода.[/say]")
 
-		saynn("[say=luxe]It is. I wouldn't have it any other way.[/say]")
+		saynn("[say=luxe]Так и есть. И иначе бы я не хотела.[/say]")
 
-		saynn("[say=pc]It's nice to live a life of no regrets.[/say]")
+		saynn("[say=pc]Приятно жить жизнью без сожалений.[/say]")
 
-		saynn("Luxe doesn't say anything back.. so you just snug to him a little better.. and rest.")
+		saynn("Люкс ничего не отвечает... поэтому ты просто прижимаешься к нему поплотнее... и засыпаешь.")
 
-		addButton("Rest more", "Just cuddle the wolf", "sexmar_after_cuddlecuddle")
+		addButton("Отдыхать больше", "Просто обнимай волка", "sexmar_after_cuddlecuddle")
 	if(state == "sexmar_after_cuddlecuddle"):
 		playAnimation(StageScene.Duo, "stand", {npc="luxe"})
-		saynn("But at some point.. it was time to get up.")
+		saynn("Но в какой-то момент... пришло время вставать.")
 
-		saynn("[say=luxe]I gotta return to my work.[/say]")
+		saynn("[say=luxe]Мне пора возвращаться к работе.[/say]")
 
-		saynn("[say=pc]Yeah.. of course.. uh.. thanks.[/say]")
+		saynn("[say=pc]Да.. конечно.. э-э.. спасибо.[/say]")
 
-		saynn("He tilts his head.")
+		saynn("Он наклоняет голову.")
 
-		saynn("[say=luxe]Why?[/say]")
+		saynn("[say=luxe]Почему?[/say]")
 
-		saynn("[say=pc]Uh.. for making me your cocksleeve.. I thought I'd say that..[/say]")
+		saynn("[say=pc]Ну.. за то, что сделал меня своей куколд-прокладкой.. подумала, что стоит это сказать..[/say]")
 
-		saynn("He lowers his stare.. and nods.")
+		saynn("Он опускает взгляд.. и кивает.")
 
-		saynn("[say=luxe]Mhm.[/say]")
+		saynn("[say=luxe]М-м...[/say]")
 
-		saynn("Luxe rubs his eyes, his cold demeanor is seemingly back.")
+		saynn("Люкс протирает глаза, и его холодная манера общения, кажется, вернулась.")
 
-		saynn("And so, after that slightly awkward exchange, he brings you out of his room and office..")
+		saynn("И вот, после этого слегка неловкого диалога, он выводит тебя из своей комнаты и кабинета..")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

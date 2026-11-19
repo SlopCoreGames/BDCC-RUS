@@ -4,7 +4,7 @@ func _init():
 	id = "BlacktailQuest"
 
 func getVisibleName():
-	return "Blacktail Market"
+	return "Рынок Блэктейл"
 
 func getProgress():
 	var result = []

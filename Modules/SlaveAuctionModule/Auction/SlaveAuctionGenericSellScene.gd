@@ -14,142 +14,142 @@ func resolveCustomCharacterName(_charID):
 func _run():
 	if(state == ""):
 		addCharacter("mirri")
-		saynn("Which of your slaves do you want to sell? Keep in mind that you will never see them again. Any items that they have will be lost forever too.")
+		saynn("Какую из своих рабынь ты хочешь продать? Помни, что ты больше никогда её не увидишь. Все вещи, которыми она владеет, тоже будут потеряны навсегда.")
 
-		addButton("Cancel", "You changed your mind", "endthescene")
+		addButton("Отмена", "Вы передумали", "endthescene")
 		addSlaveButtons()
 		if (false):
-			addButton("Nope", "You shouldn't see this ever", "pick_slave")
+			addButton("Неа", "Этого вообще не должны были видеть", "pick_slave")
 	if(state == "confirm_pick_slave"):
 		removeCharacter("mirri")
 		addCharacter(slaveID)
 		addCharacter("mirri")
 		playAnimation(StageScene.Duo, "stand", {npc=slaveID, npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
-		saynn("Is {slave.name} the slave that you want to sell? Keep in mind that you will never see them again. Any items that they have will be lost forever too.")
+		saynn("Ты действительно хочешь продать {slave.name}? Помни, что ты больше никогда её не увидишь. Все вещи, которыми она владеет, тоже будут потеряны навсегда.")
 
 		printSlaveTraits()
 		if (getFlag("SlaveAuctionModule.upgradeSeePrefs", 0) >= 1):
-			saynn("Bidders will have these preferences:")
+			saynn("У участников торгов будут следующие предпочтения:")
 
 			saynn(""+str(getModule("SlaveAuctionModule").getBidderInfo())+"")
 
-		addButton("Confirm", "Sell this slave!", "do_confirm_pick")
-		addButton("Cancel", "You changed your mind", "do_cancel_pick")
+		addButton("Подтвердить", "Продать эту рабыню!", "do_confirm_pick")
+		addButton("Отмена", "Вы передумали", "do_cancel_pick")
 	if(state == "do_confirm_pick"):
 		playAnimation(StageScene.Duo, "stand", {npc=slaveID, npcBodyState={leashedBy="pc"}})
 		if (!getFlag("SlaveAuctionModule.beganAuctionOnce")):
-			saynn("You make your choice.")
+			saynn("Вы делаете свой выбор.")
 
-			saynn("[say=mirri]I will bring {slave.him}, don't worry.[/say]")
+			saynn("[say=mirri]Я притащу {slave.him}, не переживай.[/say]")
 
-			saynn("[say=pc]You're so nice.[/say]")
+			saynn("[say=pc]Ты такой милый.[/say]")
 
-			saynn("[say=mirri]Aww, thank you. I love it when you say that.[/say]")
+			saynn("[say=mirri]Оу, спасибо! Обожаю, когда ты так говоришь.[/say]")
 
-			saynn("Mirri disappears inside a blue rift.. before quickly jumping out again, her hand holding a leash connected to your slave's collar. She hands the leash to you.")
+			saynn("Мирри исчезает в синем разломе... а затем стремительно выпрыгивает обратно, держа в руке поводок, прикрепленный к ошейнику вашего раба. Она протягивает поводок вам.")
 
-			saynn("[say=mirri]The more credits I earn, the higher my slaver reputation will be. And that's what you and I want.[/say]")
+			saynn("[say=mirri]Чем больше кредитов я заработаю, тем выше будет моя репутация работорговца. А это именно то, чего хотим и ты, и я.[/say]")
 
-			saynn("Sell slaves, get more rep..")
+			saynn("Продавай рабов, повышай репутацию...")
 
-			saynn("[say=mirri]So let's do it![/say]")
+			saynn("[say=mirri]Так что за дело![/say]")
 
 		else:
-			saynn("You make your choice. Mirri nods and uses her teleporter to quickly bring you the slave.")
+			saynn("Вы делаете свой выбор. Мирри кивает и использует свой телепорт, чтобы быстро доставить вам раба.")
 
-			saynn("[say=mirri]Let's do it![/say]")
+			saynn("[say=mirri]Давай сделаем это![/say]")
 
-		addButton("Market", "Secure the slave on the stage", "go_market")
+		addButton("Рынок", "Закрепить рабыню на подиуме", "go_market")
 	if(state == "go_market"):
 		aimCameraAndSetLocName("market_market")
-		saynn("You bring {slave.name} to the market and secure {slave.him}, chaining {slave.his} wrists together and attaching chains that make your slave stand on {slave.his} {slave.toes}.")
+		saynn("Вы приводите {slave.name} на рынок и закрепляете {slave.him}, сковывая запястья {slave.his} цепями, которые заставляют вашу рабыню стоять на {slave.his} {slave.toes}.")
 
-		saynn("The chatter begins to fill the void.. You put on the headset and get into the position.")
+		saynn("Гул голосов начинает заполнять пустоту... Вы надеваете гарнитуру и занимаете позицию.")
 
-		saynn("[say=pc]Picking me up?[/say]")
+		saynn("[say=pc]Забираешь меня?[/say]")
 
-		saynn("[say=mirri]Five by five.[/say]")
+		saynn("[say=mirri]Принято, пять из пяти.[/say]")
 
-		saynn("Mirri takes a spot on her presenter platform and gets ready too.")
+		saynn("Мирри тоже занимает место на подиуме ведущей и готовится.")
 
 		saynn("[say=mirri]"+str(RNG.pick(["Alright. Time to shine.", "Let's get this bread.", "Time to do this.", "No one but us.", "Teamwork makes the dream work."]) )+"[/say]")
 
-		saynn("The auction is about to begin..")
+		saynn("Аукцион вот-вот начнется...")
 
-		addButton("Slave auction", "Begin the minigame", "start_auction_minigame")
+		addButton("Рабский аукцион", "Начать мини-игру", "start_auction_minigame")
 	if(state == "failed_to_sell"):
 		playAnimation(StageScene.Duo, "stand", {pc="mirri", npc=slaveID, npcBodyState={leashedBy="mirri"}})
 		if (!getFlag("SlaveAuctionModule.failedAuctionOnce")):
-			saynn("The auction has ended.. but no one decided to buy your slave..")
+			saynn("Аукцион окончен... но никто так и не решился купить твоего раба...")
 
-			saynn("Bidders leave, the curtains close.. the eerie silence returns.")
+			saynn("Ставки сделаны, занавес опускается... возвращается жуткая тишина.")
 
-			saynn("You see Mirri detaching the chain and leashing your slave.. before proceeding to walk somewhere. Huh?")
+			saynn("Вы видите, как Мирри отцепляет цепь и надевает на вашу рабыню поводок... а затем просто разворачивается, чтобы куда-то уйти. Чего?!")
 
-			saynn("You rush to her.")
+			saynn("Вы бросаетесь к ней.")
 
-			saynn("[say=pc]Hey, where are you taking {slave.him}?[/say]")
+			saynn("[say=pc]Эй, ты куда это тащишь {slave.him}?[/say]")
 
-			saynn("[say=mirri]Well, you suck so nobody bought {slave.him}.[/say]")
+			saynn("[say=mirri]Ну, ты так отстойно ведешь торги, что {slave.him} никто не купил.[/say]")
 
-			saynn("You block the path.")
+			saynn("Вы преграждаете ей путь.")
 
-			saynn("[say=pc]But where are you taking {slave.him} now?[/say]")
+			saynn("[say=pc]Но куда ты ведешь {slave.him} сейчас?[/say]")
 
-			saynn("Mirri tilts her head.")
+			saynn("Мирри склоняет голову набок.")
 
-			saynn("[say=mirri]Since the last time this happened we found.. let's say.. a new way to utilize the slaves~.[/say]")
+			saynn("[say=mirri]С тех пор как это случилось в последний раз, мы нашли... скажем так... новый способ использования рабов~.[/say]")
 
-			saynn("[say=pc]What way? What are you gonna do?[/say]")
+			saynn("[say=pc]Какой способ? Что вы собираетесь делать?[/say]")
 
-			saynn("[say=mirri]It's not your problem anymore, {pc.name}, relax.[/say]")
+			saynn("[say=mirri]Теперь это не твоя забота, {pc.name}, расслабься.[/say]")
 
-			saynn("Sounds very concerning..")
+			saynn("Звучит весьма тревожно...")
 
-			saynn("[say=mirri]Listen, obviously I can't let you bring this slave back to your stupid prison, {slave.he} knows too much about this place.[/say]")
+			saynn("[say=mirri]Послушай, очевидно, что я не могу позволить тебе вернуть эту рабыню в твою тупую тюрьму, {slave.he} слишком много знает об этом месте.[/say]")
 
-			saynn("Mirri gently scratches {slave.name}'s chin.")
+			saynn("Мирри нежно чешет {slave.name} под подбородком.")
 
-			saynn("[say=mirri]So.. this is the next best option. You obviously won't get paid since you.. failed so spectacularly.. but I do get a hundred creds to my name at least~.[/say]")
+			saynn("[say=mirri]Так что... это лучший из оставшихся вариантов. Тебе, очевидно, не заплатят, раз уж ты... так феерично провалился... зато мне достанется как минимум сотня кредитов~.[/say]")
 
-			saynn("All this sounds so.. wrong. But the more you block the path, the more Mirri begins to reach for her gun.")
+			saynn("Все это звучит так... неправильно. Но чем больше ты преграждаешь ей путь, тем настойчивее Мирри тянется к своему пистолету.")
 
-			saynn("[say=mirri]Which part of my explanation did you not understand?[/say]")
+			saynn("[say=mirri]Какой именно части моего объяснения ты не понял?[/say]")
 
-			saynn("[say=pc]Fine. But what will happen to {slave.him}?[/say]")
+			saynn("[say=pc]Ладно. Но что будет с {slave.him}?[/say]")
 
-			saynn("You take a step to the side.. Mirri walks past you.. holding the leash to your slave.")
+			saynn("Ты делаешь шаг в сторону... Мирри проходит мимо тебя, держа поводок твоего раба.")
 
-			saynn("[say=mirri]Ohh.. You don't wanna know.[/say]")
+			saynn("[say=mirri]Охх... Тебе лучше не знать.[/say]")
 
-			saynn("As Mirri steps out the room.. you get the last glimpse of your slave.. before the wall obscures {slave.him}..")
+			saynn("Когда Мирри выходит из комнаты... ты успеваешь в последний раз взглянуть на своего раба, прежде чем стена скрывает {slave.him}...")
 
 		else:
-			saynn("The auction has ended.. but no one decided to buy your slave..")
+			saynn("Аукцион окончен... но никто так и не решился купить твоего раба...")
 
-			saynn("Bidders leave, the curtains close.. the eerie silence returns.")
+			saynn("Ставки сделаны, занавес опускается... возвращается жуткая тишина.")
 
-			saynn("You know what will happen so you don't intervene. You just let Mirri leash your slave.. and take {slave.him} somewhere..")
+			saynn("Ты знаешь, что произойдет, поэтому не вмешиваешься. Ты просто позволяешь Мирри надеть поводок на твоего раба... и увести {slave.him}...")
 
-			saynn("As Mirri steps out the room.. you get the last glimpse of your slave.. before the wall obscures {slave.him}..")
+			saynn("Когда Мирри выходит из комнаты... ты успеваешь в последний раз взглянуть на своего раба, прежде чем стена скрывает {slave.him}...")
 
-		addButton("Continue", "Goodbye slave..", "delete_slave")
+		addButton("Продолжить", "Прощай, раб...", "delete_slave")
 	if(state == "after_sold"):
 		playAnimation(StageScene.Duo, "stand", {pc="mirri", npc=slaveID, npcBodyState={leashedBy="mirri"}})
-		saynn("After a successful auction, Mirri unchains the slave's wrists and then hands the leash to a few faceless attendants who bring {slave.name} to {slave.his} new owner..")
+		saynn("После успешного аукциона Мирри освобождает запястья раба от цепей, а затем передает поводок нескольким безликим слугам, которые уводят {slave.name} к {slave.his} новому владельцу...")
 
-		saynn("As the curtains begin to close, you get a last glimpse of your slave.")
+		saynn("Когда занавес начинает опускаться, ты бросаешь последний взгляд на своего раба.")
 
-		addButton("Continue", "Goodbye slave..", "do_sell_slave_succ")
+		addButton("Продолжить", "Прощай, раб...", "do_sell_slave_succ")
 	if(state == "do_sell_slave_succ"):
 		playAnimation(StageScene.Duo, "stand", {npc="mirri"})
-		saynn("Mirri approaches you and hands you a credits chip.")
+		saynn("Мирри подходит к тебе и протягивает кредитный чип.")
 
 		saynn("[say=mirri]"+str(RNG.pick(["Here is your cut, big {pc.girl}.", "Your cut, pretty {pc.girl}.", "Your "+str(getModule("SlaveAuctionModule").getPCCut()*100)+"%, tough {pc.girl}.", "Please doing business, big {pc.girl}."]))+"[/say]")
 
-		saynn("As you take it, the catgirl just walks back to her room.")
+		saynn("Взяв его, кошкодевочка просто уходит обратно в свою комнату.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 func addSlaveButtons():
 	var slaves = GM.main.getDynamicCharacterIDsFromPool(CharacterPool.Slaves)
 	for charID in slaves:
@@ -158,12 +158,12 @@ func addSlaveButtons():
 		if(npcSlavery == null):
 			continue
 		if(npcSlavery.isDoingActivity()):
-			addDisabledButton(character.getName(), "This slave is currently busy")
+			addDisabledButton(character.getName(), "Эта рабыня сейчас занята")
 			continue
 		addButton(character.getName(), character.getSmallDescription(), "pick_slave", [charID])
 
 func printSlaveTraits():
-	sayn("{slave.name}'s traits:")
+	sayn("{slave.name} черты:")
 	var slaveTraits = SlaveAuction.calculateSlaveTraitsStatic(getCharacter(slaveID))
 	for traitID in slaveTraits:
 		var score:float = slaveTraits[traitID]

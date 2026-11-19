@@ -5,7 +5,7 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("What do you want to upgrade?")
+		saynn("Что хочешь улучшить?")
 		
 		var theUpgrades = getModule("SlaveAuctionModule").getUpgrades()
 		
@@ -16,29 +16,29 @@ func _run():
 			var canBuy = getModule("SlaveAuctionModule").canBuyUpgrade(upgradeID)
 			
 			
-			sayn("Upgrade: "+upgradeInfo["name"])
-			sayn("Description: "+upgradeInfo["desc"])
-			sayn("Upgrade level: "+str(curLevel)+"/"+str(maxLevel))
+			sayn("Улучшение: "+upgradeInfo["name"])
+			sayn("Описание: "+upgradeInfo["desc"])
+			sayn("Уровень улучшения: "+str(curLevel)+"/"+str(maxLevel))
 			if(curLevel >= 1):
-				sayn("Current level: "+upgradeInfo["descs"][curLevel-1])
+				sayn("Текущий уровень: "+upgradeInfo["descs"][curLevel-1])
 			if(curLevel < maxLevel):
 				var thePrice:int = upgradeInfo["prices"][curLevel]
-				sayn("Next level: "+upgradeInfo["descs"][curLevel])
-				sayn("Price: "+str(thePrice)+" credits")
+				sayn("Следующий уровень: "+upgradeInfo["descs"][curLevel])
+				sayn("Цена: "+str(thePrice)+" credits")
 				if(curLevel > 0):
 					if(!canBuy):
-						sayn("[color=red]Unlock requirement[/color]: "+upgradeInfo["conds"][curLevel-1]+"")
+						sayn("[color=red]Условие разблокировки[/color]: "+upgradeInfo["conds"][curLevel-1]+"")
 					else:
-						sayn("[color=green]Unlock requirement (SATISFIED)[/color]: "+upgradeInfo["conds"][curLevel-1]+"")
+						sayn("[color=green]Условие разблокировки (ВЫПОЛНЕНО)[/color]: "+upgradeInfo["conds"][curLevel-1]+"")
 			
 				if(canBuy):
-					addButtonWithChecks(upgradeInfo["name"], "Buy this upgrade for "+str(thePrice)+" credits", "buy_upgrade", [upgradeID, upgradeInfo], [[ButtonChecks.HasCredits, thePrice]])
+					addButtonWithChecks(upgradeInfo["name"], "Купить это улучшение за "+str(thePrice)+" credits", "buy_upgrade", [upgradeID, upgradeInfo], [[ButtonChecks.HasCredits, thePrice]])
 				else:
-					addDisabledButton(upgradeInfo["name"], "Can't buy this upgrade")
+					addDisabledButton(upgradeInfo["name"], "Нельзя купить это улучшение")
 			
 			sayn("")
 
-		addButton("Close", "Enough upgrading", "endthescene")
+		addButton("Закрыть", "Хватит улучшений", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

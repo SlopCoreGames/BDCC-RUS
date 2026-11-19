@@ -10,299 +10,299 @@ func _run():
 	if(state == ""):
 		addCharacter("socket")
 		playAnimation(StageScene.Duo, "stand", {npc="socket"})
-		saynn("[say=pc]Well, what do you need help with?[/say]")
+		saynn("[say=pc]Ну, с чем тебе помочь?[/say]")
 
-		saynn("Socket gasps and quickly grabs her datapad. She seems to be looking at some kind of blueprint of the station. She tilts her head and turns the datapad a few times, trying to find something.")
+		saynn("Сокет ахает и быстро хватает свой датапад. Кажется, она изучает какой-то чертеж станции. Она наклоняет голову и несколько раз поворачивает датапад, пытаясь что-то найти.")
 
-		saynn("[say=socket]Could you help guide me around the station? I feel a little lost and this map isn't helping.[/say]")
+		saynn("[say=socket]Не мог бы ты провести мне экскурсию по станции? Я чувствую себя немного потерянной, а эта карта совсем не помогает.[/say]")
 
-		saynn("You shrug.")
+		saynn("Ты пожимаешь плечами.")
 
-		saynn("[say=pc]Sure.[/say]")
+		saynn("[say=pc]Конечно.[/say]")
 
-		saynn("Finally she pokes somewhere.")
+		saynn("Наконец она на что-то тыкает.")
 
-		saynn("[say=socket]I need to get to mindshafts.. I mean mineshafts. Could you help me with that?[/say]")
+		saynn("[say=socket]Мне нужно попасть в шахты... то есть, в штольни. Поможешь мне с этим?[/say]")
 
-		saynn("Mineshafts? Sounds easy. You nod.")
+		saynn("Шахты? Звучит просто. Ты киваешь.")
 
-		saynn("[say=pc]it's just outside engineering. You can't miss it.[/say]")
+		saynn("[say=pc]Они прямо за инженерным отсеком. Промахнуться невозможно.[/say]")
 
-		saynn("Socket blinks many times while watching you. You can only compare that stare to one of a helpless puppy.")
+		saynn("Сокет часто хлопает глазами, глядя на тебя. Этот взгляд можно сравнить разве что со взглядом беспомощного щенка.")
 
-		saynn("[say=pc]Alright.. Let's go then.[/say]")
+		saynn("[say=pc]Ладно... Тогда пошли.[/say]")
 
-		saynn("[say=socket]Yay.[/say]")
+		saynn("[say=socket]Ура![/say]")
 
-		addButton("Mineshafts", "Show Socket where the mineshafts are", "show_mineshafts")
+		addButton("Шахты", "Показать сокет, где находятся шахты", "show_mineshafts")
 	if(state == "show_mineshafts"):
 		aimCameraAndSetLocName("mining_nearentrance")
-		saynn("You leave the engineering wing and instantly enter some kind of artificial cave. There are lots of catwalks here, one of them leading to the big lift.. but you're not interested in that one today.")
+		saynn("Вы выходите из инженерного крыла и мгновенно оказываетесь в какой-то искусственной пещере. Здесь полно технических мостиков, один из них ведет к большому лифту... но сегодня вас интересует не он.")
 
-		saynn("Socket steps behind you, curiously watching around.")
+		saynn("Сокет шагает следом за вами, с любопытством озираясь по сторонам.")
 
-		saynn("[say=pc]Careful here.[/say]")
+		saynn("[say=pc]Осторожнее здесь.[/say]")
 
-		saynn("You two step on some platform before pressing a button that makes the platform go down from catwalks to the rocky ground level.")
+		saynn("Вы вдвоем встаете на платформу и нажимаете кнопку, после чего она плавно опускается с мостиков на каменистый уровень земли.")
 
-		saynn("From here you can see tents that have mining equipment guarded by some engineers and a few mineshaft 'enterings'.")
+		saynn("Отсюда видны палатки с горнодобывающим оборудованием, которые охраняют инженеры, а также несколько входов в шахты.")
 
-		saynn("[say=pc]Here we are.[/say]")
+		saynn("[say=pc]Пришли.[/say]")
 
-		saynn("[say=socket]The task says that there is a broken lightbulb in the mineshaft number.. 3.[/say]")
+		saynn("[say=socket]В задании сказано, что в шахте номер... 3 перегорела лампочка.[/say]")
 
-		saynn("You point at the big number 3 above one of the caves.")
+		saynn("Вы указываете на большую цифру 3 над одним из входов в пещеру.")
 
-		saynn("[say=pc]Must be that one.[/say]")
+		saynn("[say=pc]Должно быть, эта.[/say]")
 
-		saynn("Socket nods.")
+		saynn("Сокет кивает.")
 
-		saynn("[say=socket]If you help me find it, I will give you.. what do staff give inmates here?[/say]")
+		saynn("[say=socket]Если поможешь мне найти его, я дам тебе... что тут персонал дает заключенным?[/say]")
 
-		addButton("Credits", "Say that inmates are usually rewarded with credits", "reward_credits")
-		addButton("Themselves", "Jokingly say that staff have to offer themselves to the inmates", "reward_themselves")
+		addButton("Титры", "Сказать, что заключенным обычно платят кредитами", "reward_credits")
+		addButton("Самих себя", "В шутку сказать, что персоналу приходится предлагать себя заключенным", "reward_themselves")
 	if(state == "reward_credits"):
-		saynn("[say=pc]Work credits. Each collar has an account attached to it.[/say]")
+		saynn("[say=pc]Рабочие кредиты. К каждому ошейнику привязан счет.[/say]")
 
-		saynn("Socket blinks.")
+		saynn("Сокет моргает.")
 
-		saynn("[say=socket]I'm not sure if I have any. Would you help me anyway?..[/say]")
+		saynn("[say=socket]Не уверена, есть ли они у меня. Но ты все равно поможешь?..[/say]")
 
-		saynn("You shrug. Why not. It's barely a task anyway.")
+		saynn("Вы пожимаете плечами. Почему бы и нет. Это все равно пустяковое задание.")
 
 		if (getFlag("AlexRynardModule.ch2GotRektHappened")):
-			saynn("[say=pc]I don't have the best memories attached to this mineshaft.. but sure. Let's go.[/say]")
+			saynn("[say=pc]У меня не самые лучшие воспоминания, связанные с этой шахтой... но ладно. Пошли.[/say]")
 
 		else:
-			saynn("[say=pc]Let's go.[/say]")
+			saynn("[say=pc]Погнали.[/say]")
 
-		addButton("Find broken light", "Follow the mineshaft", "follow_mineshaft")
+		addButton("Найти сломанный свет", "Идти по шахте", "follow_mineshaft")
 	if(state == "reward_themselves"):
-		saynn("You put on a fake surprised voice.")
+		saynn("Ты изображаешь фальшивое удивление.")
 
-		saynn("[say=pc]You didn't know? The staff here rewards inmates by offering their body to them to play with as they wish.[/say]")
+		saynn("[say=pc]Ты не знала? Персонал здесь поощряет заключенных, предлагая им свои тела на растерзание, как им вздумается.[/say]")
 
-		saynn("Socket nods.")
+		saynn("Сокет кивает.")
 
-		saynn("[say=socket]Alright.[/say]")
+		saynn("[say=socket]Ладно.[/say]")
 
-		saynn("Huh? You can't tell if she is serious. Her uniform doesn't make it any easier..")
+		saynn("А? Непонятно, говорит она серьезно или нет. Её форма только добавляет путаницы...")
 
-		saynn("[say=pc]Alright what?[/say]")
+		saynn("[say=pc]Ладно что?[/say]")
 
-		saynn("Socket tilts her head.")
+		saynn("Сокет наклоняет голову.")
 
-		saynn("[say=socket]Um.. I agree? Something is wrong?[/say]")
+		saynn("[say=socket]Эм... согласна? Что-то не так?[/say]")
 
-		saynn("You raise a brow. Huh, she seems pretty casual about this whole thing.. Makes you wonder how far you can take it.")
+		saynn("Ты удивленно приподнимаешь бровь. Хм, она ведет себя на редкость непринужденно... Это заставляет задуматься, как далеко можно зайти в этом деле.")
 
-		saynn("[say=pc]No, all good. Let's go.[/say]")
+		saynn("[say=pc]Да нет, всё путём. Пошли![/say]")
 
-		saynn("[say=socket]Yay![/say]")
+		saynn("[say=socket]Ура![/say]")
 
-		addButton("Find broken light", "Follow the mineshaft", "follow_mineshaft")
+		addButton("Найти сломанный свет", "Идти по шахте", "follow_mineshaft")
 	if(state == "follow_mineshaft"):
 		playAnimation(StageScene.Duo, "stand", {npc="socket", further=true, npcAction=["stand", "res://Inventory/UnriggedModels/BigWrench/BigWrench.tscn"]})
 		aimCameraAndSetLocName("mining_shafts_entering")
-		saynn("You and Socket follow the mineshaft. It has wooden supports every few meters and a whole network of rails for minecarts.. but you're still being careful as to not trip over something.. or someone.. you bump into other inmates constantly, some of them hitting the rocks and the rest are carrying them.")
+		saynn("Вы с Сокетом идете по шахте. Каждые несколько метров здесь стоят деревянные опоры, а вся сеть прорезана рельсами для вагонеток... но ты всё равно осторожничаешь, чтобы не споткнуться о что-нибудь... или о кого-нибудь... вы постоянно натыкаетесь на других заключенных: одни долбят камни, другие таскают их на себе.")
 
-		saynn("[say=socket]Wow, it's so huge![/say]")
+		saynn("[say=socket]Ого, какая махина![/say]")
 
-		saynn("You feel like literally the whole mineshaft turned their heads towards Socket.")
+		saynn("У тебя возникает ощущение, будто буквально вся шахта повернула головы вслед за Сокет.")
 
-		saynn("[say=socket]This cave is.[/say]")
+		saynn("[say=socket]Эта пещера — да.[/say]")
 
-		saynn("Right. You step a little faster to escape the hungry gazes of inmates who are curious about huge caves..")
+		saynn("Точно. Ты ускоряешь шаг, стараясь поскорее скрыться от голодных взглядов заключенных, которых так заинтриговали эти огромные пещеры...")
 
-		saynn("Finally, you find a support that is not illuminated.")
+		saynn("Наконец, вы находите опору, которая не освещена.")
 
-		saynn("[say=socket]That must be it![/say]")
+		saynn("[say=socket]Должно быть, это оно![/say]")
 
-		saynn("Socket opens her backpack and produces a fresh lightbulb. She jumps, trying to reach the light fixture.. but only makes her modest breasts jiggle more.")
+		saynn("Сокет открывает свой рюкзак и достает новенькую лампочку. Она подпрыгивает, пытаясь дотянуться до светильника... но от этого её скромная грудь лишь сильнее колышется.")
 
-		saynn("[say=socket]Aww, I can't quite reach it.[/say]")
+		saynn("[say=socket]Ой, ну почти не достаю![/say]")
 
-		saynn("Huh.. How many inmates does it take to screw in one lightbulb..")
+		saynn("Хм... Сколько заключенных нужно, чтобы вкрутить одну лампочку?..")
 
-		saynn("Oh. You notice that there is a generator that is only a few meters away. It has a reinforced closed frame which should be sturdy enough for Socket to stand on..")
+		saynn("О. Вы замечаете, что всего в паре метров стоит генератор. У него усиленный закрытый корпус, который должен быть достаточно прочным, чтобы Сокет могла на него встать...")
 
-		saynn("[say=pc]Hold on.[/say]")
+		saynn("[say=pc]Погоди-ка.[/say]")
 
-		saynn("You walk to it.. and start pushing it. The thing doesn't have any wheels so you have to just brute-force your way through it.")
+		saynn("Вы подходите к нему... и начинаете толкать. У этой штуковины нет колес, так что приходится продираться на чистой грубой силе.")
 
-		saynn("[say=pc]Ngh..[/say]")
+		saynn("[say=pc]Нгх..[/say]")
 
-		saynn("Socket sees you struggling and helps you, propping the generator up with her giant wrench to lower the friction and then joins you.")
+		saynn("Видя ваши мучения, Сокет приходит на помощь: она подкладывает под генератор свой огромный гаечный ключ, чтобы уменьшить трение, а затем присоединяется к вам.")
 
-		saynn("Together, you bring the thing to the wooden support.")
+		saynn("Вместе вы дотаскиваете эту махину до деревянной опоры.")
 
-		saynn("[say=socket]Thanks![/say]")
+		saynn("[say=socket]Спасибо![/say]")
 
-		saynn("The generator is a little shaky, it's not standing on the most flat surface.. so you hold it still for Socket as she begins to climb it.")
+		saynn("Генератор немного шатается, он стоит не на самой ровной поверхности... поэтому вы придерживаете его, пока Сокет начинает на него забираться.")
 
-		addButton("Continue", "See what happens next", "socket_climbs_generator")
+		addButton("Продолжить", "Смотреть, что будет дальше", "socket_climbs_generator")
 	if(state == "socket_climbs_generator"):
 		playAnimation(StageScene.GeneratorOral, "tease", {pc="socket", npc="pc"})
-		saynn("Socket climbs the generator and turns towards the light fixture. As she does that, you realize that her crotch is now exactly at your eye level, her exposed pussy is directly up in your face.. You can't look away too, you have to hold the generator still so she doesn't fall..")
+		saynn("Сокет забирается на генератор и поворачивается к светильнику. В этот момент вы понимаете, что её промежность оказалась прямо на уровне ваших глаз, а её открытая киска — прямо перед вашим носом... Но и отвести взгляд вы не можете — нужно крепко держать генератор, чтобы она не свалилась...")
 
-		saynn("You're not sure if you should look away though. Socket doesn't seem to mind, she is busy removing the old light. The cave is not fully lit.. but it's enough to make out her folds.. they're so close too. All things considered.. maybe she wouldn't mind?")
+		saynn("Хотя ты не уверен, стоит ли отводить взгляд. Сокет, кажется, не против — она занята демонтажем старого светильника. Пещера освещена не полностью... но этого достаточно, чтобы разглядеть её складки... и они так близко. Учитывая всё это... может, она и не будет против?")
 
-		addButton("Just stand still", "Avoid doing anything to Socket while she is in this position", "avoid_lewds")
-		addButton("Breathe on it", "Breathe on Socket's pussy warmly and see what happens", "breathe_warmly")
+		addButton("Просто стой смирно", "Ничего не делай с Сокет, пока она в таком положении", "avoid_lewds")
+		addButton("Подыши на неё", "Тепло подыши на киску Сокет и посмотри, что будет", "breathe_warmly")
 	if(state == "breathe_warmly"):
 		playAnimation(StageScene.GeneratorOral, "stroke", {pc="socket", npc="pc"})
-		saynn("Seeing Socket's pussy from up so close.. makes you wonder how she would react to this..")
+		saynn("Видя киску Сокет так близко... невольно задаешься вопросом, как она на это отреагирует...")
 
-		saynn("You lean a little closer to it and just.. breath warmly over the sensitive folds.")
+		saynn("Ты наклоняешься чуть ближе и просто... тепло дышишь на её чувствительные складки.")
 
-		saynn("Huh. Socket doesn't seem to react much, the engineer is busy unscrewing the lightbulb.. but her body does react, her slit getting a little wet, now producing a nice scent.")
+		saynn("Хм. Сокет, кажется, особо не реагирует — инженер занята выкручиванием лампочки... но её тело откликается: её щелочка становится чуть влажной, источая приятный аромат.")
 
-		saynn("You hold the generator with one hand.. but the second one reaches out and gently caresses Socket's exposed part of the thigh.")
+		saynn("Одной рукой ты придерживаешь генератор... но вторая рука тянется вперед и нежно ласкает обнаженную часть бедра Сокет.")
 
-		saynn("But then some inmates are walking past and see you like this.. causing you to recoil back and pretend that you're not doing anything.")
+		saynn("Но тут мимо проходят заключенные и застают тебя в таком виде... заставляя тебя резко отпрянуть и притвориться, что ты вообще ничего такого не делаешь.")
 
-		saynn("[say=socket]Hi! Don't mind us.[/say]")
+		saynn("[say=socket]Привет! Не обращайте на нас внимания.[/say]")
 
-		saynn("Looks like she didn't care about you caressing her thigh.. Maybe you can do more? Otherwise you'd have to stand there and endure that tantalizing scent..")
+		saynn("Похоже, её не особо впечатлили твои ласки по бедру... Может, стоит поднажать? Иначе тебе придётся просто стоять и изнывать от этого дразнящего аромата...")
 
-		saynn("Socket removes the old broken lightbulb and starts to screw in the new one.")
+		saynn("Сокет выкручивает старую перегоревшую лампочку и начинает вкручивать новую.")
 
-		addButton("Avoid thinking", "Shut down completely but avoid thinking about that pussy", "avoid_lewds_completely")
-		addButton("Dig into it!", "Who cares. Stick your face into her crotch!", "do_lick_socket")
+		addButton("Старайся не думать", "Полностью отключиться, но изо всех сил не думать о её киске", "avoid_lewds_completely")
+		addButton("Вгрызайся в неё!", "Да какая разница! Засунь лицо ей в промежность!", "do_lick_socket")
 	if(state == "avoid_lewds"):
-		saynn("You do your best and avoid even staring at that crotch from now on.. But even just knowing that it's there is enough to keep you lusty. Why doesn't she wear panties or something..")
+		saynn("Ты изо всех сил стараешься даже не смотреть в сторону её паха... Но одного лишь осознания того, что она там, достаточно, чтобы разжечь в тебе похоть. Почему она не наденет трусики или что-нибудь ещё...")
 
-		saynn("Some inmates are walking past and see you like this..")
+		saynn("Мимо проходят заключенные и видят тебя в таком виде...")
 
-		saynn("[say=socket]Hi! Don't mind us.[/say]")
+		saynn("[say=socket]Привет! Не обращайте на нас внимания.[/say]")
 
-		saynn("Socket finishes unscrewing the old lightbulb and starts installing the new one.")
+		saynn("Сокет заканчивает выкручивать старую лампочку и принимается устанавливать новую.")
 
-		saynn("You can feel the female scent of her folds.. it's so.. inviting. Even just not looking at it is not enough..")
+		saynn("Ты чувствуешь женский аромат её складок... он такой... манящий. Даже просто не смотреть на них уже недостаточно...")
 
-		addButton("Avoid thinking", "Shut down completely but avoid thinking about that pussy", "avoid_lewds_completely")
-		addButton("Dig into it!", "Who cares. Stick your face into her crotch!", "do_lick_socket")
+		addButton("Старайся не думать", "Полностью отключиться, но изо всех сил не думать о её киске", "avoid_lewds_completely")
+		addButton("Вгрызайся в неё!", "Да какая разница! Засунь лицо ей в промежность!", "do_lick_socket")
 	if(state == "do_lick_socket"):
 		playAnimation(StageScene.GeneratorOral, "lick", {pc="socket", npc="pc"})
-		saynn("Ah, what the hell, what's the worst that can happen.")
+		saynn("А, к черту всё, что может случиться самого худшего?")
 
-		saynn("You lean closer to Socket's crotch.. and start with a quick lick, brushing the tip of your tongue over that clit. Her pussy twitches a bit.. but other than that.. no reaction.. so you lick and lick again.")
+		saynn("Ты наклоняешься ближе к промежности Сокет... и начинаешь с быстрого лизка, проводя кончиком языка по клитору. Её киска слегка вздрагивает... но в остальном... никакой реакции... поэтому ты лижешь и лижешь снова.")
 
-		saynn("[say=socket]Getting there![/say]")
+		saynn("[say=socket]Почти получилось![/say]")
 
-		saynn("Her exposed slit is incredibly wet by now from your teasing.. but Socket acts like she doesn't care, she just keeps screwing in the new lightbulb. Alright, time to screw with her then.")
+		saynn("От твоих ласк её обнаженная щель уже невероятно влажная... но Сокет ведет себя так, будто ей плевать, и просто продолжает вкручивать новую лампочку. Ладно, пора тогда поиграть с ней.")
 
-		saynn("Rather than going easy on her, you dig your face between her legs, your lips pressing against her petals, your tongue spreading and playing with them!")
+		saynn("Вместо того чтобы действовать нежно, ты зарываешься лицом между её ног, прижимаясь губами к её лепесткам, и начинаешь дразнить их языком!")
 
-		saynn("[say=socket]Almost done..[/say]")
+		saynn("[say=socket]Почти готово...[/say]")
 
-		saynn("Her breathing becomes more deep, her voice quieter, her body squirming a little as you start to eat her out, your lips brushing over the sensitive flesh while the tongue keeps rubbing the clit.")
+		saynn("Её дыхание становится глубже, голос тише, а тело начинает слегка извиваться, когда ты начинаешь её отсасывать, касаясь губами чувствительной плоти, пока язык продолжает теребить клитор.")
 
-		addButton("Faster", "Lick her faster and see what happens", "socket_cums_on_pc")
+		addButton("Быстрее", "Лижи её быстрее и посмотри, что будет", "socket_cums_on_pc")
 	if(state == "socket_cums_on_pc"):
 		playAnimation(StageScene.GeneratorOral, "fast", {pc="socket", npc="pc"})
-		saynn("She struggles to screw the lightbulb in, one of her palms lands on your head for extra support.. while you just keep going at it, lapping up her juices and licking her out more, your tongue prodding her entrance and sliding inside with ease, covering the inner walls with your saliva too.")
+		saynn("Она изо всех сил пытается вкрутить лампочку, и одна её ладонь ложится тебе на голову для опоры... пока ты продолжаешь своё дело, слизывая её соки и вылизывая её всё тщательнее; твой язык исследует вход и с лёгкостью скользит внутрь, покрывая внутренние стенки слюной.")
 
-		saynn("[say=socket]Just the last.. twist..[/say]")
+		saynn("[say=socket]Ещё один.. поворот..[/say]")
 
-		saynn("You can feel her body tensing up, her sex clenching.. And yet, not a single moan, just panting, Socket is fully focussed on the work.")
+		saynn("Ты чувствуешь, как её тело напрягается, а киска сжимается... И всё же ни единого стона, только тяжёлое дыхание — Сокет полностью сосредоточена на работе.")
 
-		saynn("But just when she finally twists the light in fully, making it light up the area, her body suddenly arches its back, her wet pussy is twitching and releasing a stream of transparent girlcum.. onto your face.")
+		saynn("Но как раз в тот момент, когда она наконец докручивает лампу, и та освещает пространство, её спина внезапно выгибается, а влажная киска начинает дёргаться, извергая поток прозрачной девичьей смазки прямо тебе на лицо.")
 
-		saynn("[say=socket]That was.. easy..[/say]")
+		saynn("[say=socket]Это было.. просто..[/say]")
 
-		saynn("Socket looks down at you and sees your wet face.")
+		saynn("Сокет смотрит вниз на тебя и видит твоё мокрое лицо.")
 
-		saynn("[say=socket]Oh..[/say]")
+		saynn("[say=socket]Ох..[/say]")
 
-		saynn("She quickly climbs down the generator and helps you wipe it with some cloth.")
+		saynn("Она быстро спускается с генератора и помогает тебе вытереться тряпкой.")
 
-		saynn("[say=socket]Sorry![/say]")
+		saynn("[say=socket]Прости![/say]")
 
-		saynn("Socket marks the task as done in her datapad.")
+		saynn("Сокет отмечает задание как выполненное в своём датападе.")
 
-		saynn("[say=socket]Yay. My first completed task.[/say]")
+		saynn("[say=socket]Ура! Моё первое выполненное задание.[/say]")
 
-		addButton("Continue", "See what happens next", "after_help")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_help")
 	if(state == "avoid_lewds_completely"):
 		playAnimation(StageScene.GeneratorOral, "tease", {pc="socket", npc="pc"})
-		saynn("It takes a lot of.. strength.. but you manage to shut your brain off completely and avoid even thinking about that pussy. You only focus on keeping the generator stable"+str(" while your cock stays hard as a rock" if GM.pc.hasReachablePenis() else "")+".")
+		saynn("Это требует немало... сил... но тебе удаётся полностью отключить мозг и даже не думать о той киске. Ты сосредоточен только на том, чтобы генератор работал стабильно."+str(" while your cock stays hard as a rock" if GM.pc.hasReachablePenis() else "")+".")
 
-		saynn("[say=socket]Almost done![/say]")
+		saynn("[say=socket]Почти готово![/say]")
 
-		saynn("After a few painfully-long minutes, Socket finishes screwing in the new lightbulb.. that instantly lights up, illuminating the cave.")
+		saynn("Спустя несколько мучительно долгих минут Сокет наконец вкручивает новую лампочку... та мгновенно вспыхивает, освещая пещеру.")
 
-		saynn("[say=socket]There we go![/say]")
+		saynn("[say=socket]Вот и всё![/say]")
 
-		saynn("She carefully jumps off the generator.. Phew, now you only have to stare at her breasts.")
+		saynn("Она осторожно спрыгивает с генератора... Фух, теперь тебе остаётся только пялиться на её сиськи.")
 
-		saynn("Socket marks the task as done in her datapad.")
+		saynn("Сокет отмечает задание как выполненное в своём датападе.")
 
-		saynn("[say=socket]That wasn't so hard.[/say]")
+		saynn("[say=socket]Было не так уж и сложно.[/say]")
 
-		saynn("Maybe for her..")
+		saynn("Может быть, для неё...")
 
-		addButton("Continue", "See what happens next", "after_help")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_help")
 	if(state == "after_help"):
 		aimCameraAndSetLocName("mining_nearentrance")
 		playAnimation(StageScene.Duo, "stand", {npc="socket"})
 		GM.pc.setLocation("mining_nearentrance")
-		saynn("After completing the task, you and Socket exit the mineshafts. She turns towards you.")
+		saynn("Завершив задание, вы с Сокет выходите из шахт. Она поворачивается к тебе.")
 
-		saynn("[say=socket]Thank you! I might need your help again soon.[/say]")
+		saynn("[say=socket]Спасибо! Возможно, скоро мне снова понадобится твоя помощь.[/say]")
 
 		if (rewardLewd):
-			saynn("She starts walking away.. but then remembers something and stops.")
+			saynn("Она уже собирается уйти... но вдруг что-то вспоминает и замирает.")
 
-			saynn("[say=socket]Oh, right, the reward.[/say]")
+			saynn("[say=socket]Ах да, награда![/say]")
 
-			saynn("Casually, Socket presents you her whole body, spreading her legs a bit to give you more access.")
+			saynn("Небрежным жестом Сокет демонстрирует тебе всё своё тело, слегка раздвинув ноги, чтобы открыть тебе лучший доступ.")
 
-			saynn("You look around.. the place is not the most private one. So maybe it's fine to just leave?")
+			saynn("Ты озираешься по сторонам... место не самое уединенное. Может, ну его, и просто уйти?")
 
-			addButton("Just leave", "It was just a joke anyway", "socket_reward_just_leave")
-			addButton("Grope her", "Quietly grope Socket to not attract too much attention", "socket_reward_grope")
+			addButton("Просто уйти", "Это была всего лишь шутка", "socket_reward_just_leave")
+			addButton("Лапать её", "Тихо лапать Сокет, чтобы не привлекать лишнего внимания", "socket_reward_grope")
 		else:
-			saynn("She starts walking away.. but then remembers something and stops.")
+			saynn("Она уже собирается уйти... но вдруг что-то вспоминает и замирает.")
 
-			saynn("[say=socket]Oh, right, credits.. I don't have any but I have this![/say]")
+			saynn("[say=socket]Точно, кредиты... У меня их нет, зато есть вот это![/say]")
 
-			saynn("Socket pats you on the head softly.")
+			saynn("Сокет мягко гладит тебя по голове.")
 
-			saynn("[say=socket]Good inmate.[/say]")
+			saynn("[say=socket]Хороший заключенный.[/say]")
 
-			saynn("Credits would be better but this is better than nothing..")
+			saynn("Было бы лучше, если бы это были титры, но и так сойдет..")
 
-			addButton("Continue", "See what happens next", "endthescene")
+			addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "socket_reward_just_leave"):
-		saynn("[say=pc]I wasn't serious, staff doesn't have to submit to inmates.[/say]")
+		saynn("[say=pc]Я не всерьез, персонал не обязан подчиняться заключенным.[/say]")
 
-		saynn("[say=socket]Oh, okay! Well, take care then![/say]")
+		saynn("[say=socket]О, ладно! Ну, тогда береги себя![/say]")
 
-		saynn("That's it? She is not even angry that you lied to her. Huh.")
+		saynn("И это всё? Она даже не злится, что ты ей наврал. Хм.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "socket_reward_grope"):
 		playAnimation(StageScene.Grope, "grope", {pc="socket", npc="pc"})
-		saynn("Nah, might as well take her up on the offer. You do it sneakily though, your hand lands on her belly and slides down along it to her crotch. "+str("Her pussy is still quite wet after her orgasm. As you spread it, you reveal a few strings of juices that are hanging between her folds." if socketCame else "Her pussy is slightly wet. As you spread it, you reveal a lonely string of juices that is hanging between her folds.")+"")
+		saynn("Да нет, можно и принять её предложение. Только делай это хитро: твоя рука ложится ей на живот и скользит вниз, к самой промежности."+str("Her pussy is still quite wet after her orgasm. As you spread it, you reveal a few strings of juices that are hanging between her folds." if socketCame else "Her pussy is slightly wet. As you spread it, you reveal a lonely string of juices that is hanging between her folds.")+"")
 
-		saynn("Your other hand cups one of the breasts and gently squeezes. All the while Socket just watches you do that, spreading her legs more for you and biting her lip slightly.")
+		saynn("Другой рукой ты обхватываешь одну из её грудей и нежно сжимаешь. Всё это время Сокет просто наблюдает за тобой, раздвигая ноги еще шире и слегка покусывая губу.")
 
-		saynn("After playing with her slit for a bit, your hand slides further between her legs and finds her tight pucker.. That's when Socket's expression suddenly changes, she takes a step back, escaping your grasp.")
+		saynn("Немного поиграв с её щелочкой, ты просовываешь руку глубже между ног и нащупываешь её тугое сфинктерное кольцо... В этот момент выражение лица Сокет резко меняется, она делает шаг назад, вырываясь из твоих рук.")
 
-		saynn("[say=socket]Not there.[/say]")
+		saynn("[say=socket]Не туда.[/say]")
 
-		saynn("[say=pc]Why not?[/say]")
+		saynn("[say=pc]Почему это?[/say]")
 
-		saynn("[say=socket]Because that's the wrong hole![/say]")
+		saynn("[say=socket]Потому что это не то отверстие![/say]")
 
-		saynn("The whole floor probably heard that.. best to stop there.")
+		saynn("Наверное, это услышал весь этаж... лучше на этом остановиться.")
 
-		saynn("[say=pc]Sure.[/say]")
+		saynn("[say=pc]Конечно.[/say]")
 
-		saynn("Socket smiles and walks up, the fur on her thighs looking quite messy..")
+		saynn("Сокет улыбается и подходит ближе, при этом мех на её бёдрах выглядит довольно растрёпанным..")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

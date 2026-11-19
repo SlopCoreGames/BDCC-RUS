@@ -11,58 +11,58 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard"})
 		
-		saynn("[say=pc]Can I ask a question?[/say]")
+		saynn("[say=pc]Можно вопрос?[/say]")
 
-		saynn("Foxy rolls his eyes and just continues working on his current project, not really paying much attention to you.")
+		saynn("Фокси закатывает глаза и продолжает возиться со своим текущим проектом, почти не обращая на тебя внимания.")
 
-		saynn("[say=alexrynard]I need to get this done, be quick.[/say]")
+		saynn("[say=alexrynard]Мне нужно закончить это, так что давай побыстрее.[/say]")
 
-		saynn("[say=pc]My bad, just wanted to ask something about bluespace. I’m very fascinated by it. But if you’re not knowledgeable I can ask someone else.[/say]")
+		saynn("[say=pc]Виноват, просто хотел спросить кое-что о блюспейсе. Он меня дико завораживает. Но если ты не особо в теме, я могу спросить у кого-нибудь другого.[/say]")
 
-		saynn("He cuts you off before you can even finish the sentence.")
+		saynn("Он перебивает тебя, не давая договорить фразу до конца.")
 
-		saynn("[say=alexrynard]Actually, I am The Guy if you need to know something about bluespace.[/say]")
+		saynn("[say=alexrynard]Вообще-то, если тебе нужно что-то узнать о блюспейсе, то ты обратился по адресу.[/say]")
 
-		addButton("Bluespace transmitter", "It’s worth a shot", "bluespace_transmitter")
+		addButton("Передатчик блюспейса", "Стоит попробовать", "bluespace_transmitter")
 
 	if(state == "bluespace_transmitter"):
-		saynn("[say=pc]I heard there were problems with the bluespace transmitter? It probably wasn’t easy to repair. Good job.[/say]")
+		saynn("[say=pc]Я слышал, с передатчиком блюспейса были проблемы? Его, должно быть, было непросто починить. Отличная работа.[/say]")
 
-		saynn("He stays quiet and emotionless for a few seconds. You really hope he doesn’t start asking questions back. But he doesn’t even look at you, just talking while tinkering with some electronic board.")
+		saynn("Он замирает на несколько секунд с бесстрастным видом. Ты искренне надеешься, что он не начнет засыпать тебя встречными вопросами. Но он даже не смотрит на тебя, продолжая бормотать что-то себе под нос и ковыряться в электронной плате.")
 
-		saynn("[say=alexrynard]Transmitter? It wasn’t broken. Its core, the bluespace crystal, is fine. It just lost power. The battery was busted so I had to connect it to the main grid. And that was a pain.[/say]")
+		saynn("[say=alexrynard]Передатчик? Да он не сломан. Его ядро, кристалл блюспейса, в полном порядке. Просто питание пропало. Аккумулятор сдох, так что пришлось подключать его к основной сети. И это была та еще морока.[/say]")
 
-		saynn("Interesting. Maybe you can get more out of him by playing dumb.")
+		saynn("Интересно. Может, если ты прикинешься дурочкой, из него можно будет вытянуть больше?")
 
-		saynn("[say=pc]Pain? I like pain.[/say]")
+		saynn("[say=pc]Морока? А я люблю мучения.[/say]")
 
-		saynn("You put on a cheeky smile too. He looks at you and shakes his head.")
+		saynn("Ты нацепила на лицо дерзкую ухмылку. Он смотрит на тебя и качает головой.")
 
-		saynn("[say=alexrynard]Not that kind of pain you masochist. It was just annoying. Too little power means the bluespace crystal doesn’t respond. Too much power sends out an EMP impulse.[/say]")
+		saynn("[say=alexrynard]Не те мучения, мазохистка ты эдакая. Просто бесило жутко. Мало энергии — и кристалл блюспейса не откликается. Слишком много — и вылетает электромагнитный импульс.[/say]")
 
-		addButton("EMP?", "Ask more about it", "emp?")
+		addButton("ЭМИ?", "Расспросить подробнее", "emp?")
 
 	if(state == "emp?"):
-		saynn("[say=pc]EMP? Doesn’t that.. break electronics?[/say]")
+		saynn("[say=pc]ЭМИ? Разве он не... выжигает электронику?[/say]")
 
-		saynn("[say=alexrynard]It does, I felt every mistake. Well, my spine did.[/say]")
+		saynn("[say=alexrynard]В точку, я ощутила каждую ошибку. Ну, по крайней мере, мой позвоночник.[/say]")
 
-		saynn("Huh. Indeed. If you listen closely, the foxy’s back is making mechanical noises as he leans to grab a multitool.")
+		saynn("Хм. И правда. Если прислушаться, то, когда этот лис наклоняется за мультитулом, его спина издает отчетливый механический скрежет.")
 
-		saynn("[say=alexrynard]That’s why the transmitter is kept in a cave, away from any tech. Great thing about bluespace, it doesn’t care if you’re in open space or under a huge ass rock, the signal is always perfect.[/say]")
+		saynn("[say=alexrynard]Поэтому передатчик и держат в пещере, подальше от всякой техники. В этом и фишка блюспейса: ему плевать, находишься ты в открытом космосе или под огромной задницей скалы, сигнал всегда идеальный.[/say]")
 
-		saynn("Cave huh.")
+		saynn("Пещера, значит.")
 
-		saynn("[say=pc]A cave sounds dangerous. What if inmates stumble upon it when mining?[/say]")
+		saynn("[say=pc]Пещера звучит опасно. А если заключенные наткнутся на него во время добычи ресурсов?[/say]")
 
-		saynn("[say=alexrynard]They can’t, there is only one corridor that leads to it. Inmates can’t get to it cause we control it.[/say]")
+		saynn("[say=alexrynard]Не могут, туда ведет всего один коридор. Заключенные туда не доберутся, потому что мы полностью его контролируем.[/say]")
 
-		saynn("That was almost too easy. You nod and leave the foxy alone, he probably won’t tell you the exact location anyway.")
+		saynn("Это было почти слишком просто. Ты киваешь и оставляешь этого лиса в покое — он всё равно вряд ли выдаст точные координаты.")
 
 		# (task updated)
 
 		# (Scene ends)
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 
 
 func _react(_action: String, _args):

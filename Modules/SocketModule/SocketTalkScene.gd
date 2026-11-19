@@ -7,277 +7,277 @@ func _run():
 	if(state == ""):
 		addCharacter("socket")
 		playAnimation(StageScene.Duo, "stand", {npc="socket"})
-		saynn("You approach Socket. She offers you a kind smile.")
+		saynn("Вы подходите к Сокет. Она одаривает вас доброй улыбкой.")
 
 		if (getFlag("SocketModule.punishLineShouldSay", false)):
 			setFlag("SocketModule.punishLineShouldSay", false)
-			saynn("[say=socket]Hope I didn't punish you too hard.[/say]")
+			saynn("[say=socket]Надеюсь, я не слишком сильно тебя отмучила.[/say]")
 
 		elif (getCharacter("socket").isVisiblyPregnant()):
-			saynn("[say=socket]I'm pregnant, huh.. Maybe I shouldn't let everyone cum inside me.. But you're so nice..[/say]")
+			saynn("[say=socket]Я беременна, да?.. Может, мне не стоит позволять всем кончать в меня.. Но ты такой милый..[/say]")
 
 		elif (getFlag("SocketModule.h5completed")):
-			saynn("[say=socket]Heya! Hope you're doing well.[/say]")
+			saynn("[say=socket]Хей! Надеюсь, у тебя всё путём.[/say]")
 
 		elif (getFlag("SocketModule.h4completed")):
-			saynn("[say=socket]Hey there. I still struggle to remember what we did last time..[/say]")
+			saynn("[say=socket]Привет. Мне всё ещё трудно вспомнить, чем мы занимались в прошлый раз..[/say]")
 
 		elif (getFlag("SocketModule.h3completed")):
-			saynn("[say=socket]Don't be afraid to use my pussy through my portal device! It's always available![/say]")
+			saynn("[say=socket]Не бойся использовать мою киску через портальное устройство! Она всегда в твоём распоряжении![/say]")
 
 		elif (getFlag("SocketModule.h2completed")):
-			saynn("[say=socket]I should probably make the vents on this station wider.. Or maybe I shouldn't..[/say]")
+			saynn("[say=socket]Наверное, мне стоит сделать вентиляцию на этой станции шире.. А может, и не стоит..[/say]")
 
 		elif (getFlag("SocketModule.h1completed")):
-			saynn("[say=socket]The mines are fully lit up, we did a good job! Wanna do more?[/say]")
+			saynn("[say=socket]Шахты полностью освещены, мы отлично поработали! Хочешь продолжить?[/say]")
 
 		else:
-			saynn("[say=socket]Want something?[/say]")
+			saynn("[say=socket]Что-то нужно?[/say]")
 
-		addButton("Talk", "Talk about things", "talk_options")
+		addButton("Поговорить", "Поболтать", "talk_options")
 		if (getFlag("SocketModule.h5completed")):
-			addButton("Tasks", "Pick one of the old tasks to do again with Socket", "pick_task")
-			addButton("Poster", "There is a poster on one of the walls here..", "look_poster")
+			addButton("Задания", "Выбери одно из старых заданий, чтобы пройти его снова с Сокетом", "pick_task")
+			addButton("Плакат", "На одной из стен здесь висит плакат...", "look_poster")
 		else:
-			addButton("Help her", "Show Socket around", "do_show_around")
-		addButton("Cell upgrades", "See what Socket can upgrade in your cell", "see_cell_upgrades")
+			addButton("Помочь ей", "Показать Сокет окрестности", "do_show_around")
+		addButton("Улучшения камеры", "Посмотреть, что Сокет может улучшить в твоей камере", "see_cell_upgrades")
 		if (getFlag("SocketModule.h2completed", false)):
-			addButton("Vents", "Ask Socket what vents she can clear for you", "ask_vents")
-		addButton("Leave", "Enough talking", "endthescene")
+			addButton("Вентиляция", "Спросить Сокет, какие вентиляционные шахты она может для тебя прочистить", "ask_vents")
+		addButton("Уйти", "Хватит болтать", "endthescene")
 	if(state == "look_poster"):
-		saynn("You look around and notice a poster on one of the walls.")
+		saynn("Ты оглядываешься по сторонам и замечаешь плакат на одной из стен.")
 
-		saynn("[say=socket]Like it?[/say]")
+		saynn("[say=socket]Нравится?[/say]")
 
-		saynn("[say=pc]It's nice. Socket Hex?[/say]")
+		saynn("[say=pc]Симпатично. Сокет Хекс?[/say]")
 
-		saynn("[say=socket]Yep, that's my full name![/say]")
+		saynn("[say=socket]Да, это моё полное имя![/say]")
 
-		saynn("Somehow you only learned that now.")
+		saynn("Уму непостижимо, как ты узнал об этом только сейчас.")
 
-		addButton("Back", "Enough looking", "")
+		addButton("Назад", "Хватит пялиться", "")
 	if(state == "pick_task"):
-		saynn("Which task do you wanna do again with Socket?")
+		saynn("Какое задание ты хотел выполнить вместе с Сокетом?")
 
-		addButton("Back", "Never mind", "")
-		addButton("Mineshafts", "Do the first task", "do_1_task")
-		addButton("Bathroom", "Do the second task", "do_2_task")
-		addButton("Vendomats", "Do the third task", "do_3_task")
-		addButton("Underground", "Do the fourth task", "do_4_task")
-		addButton("Cameras", "Do the fifth task", "do_5_task")
+		addButton("Назад", "Проехали", "")
+		addButton("Шахты", "Выполнить первое задание", "do_1_task")
+		addButton("Туалет", "Выполнить второе задание", "do_2_task")
+		addButton("Вендинговые автоматы", "Выполнить третье задание", "do_3_task")
+		addButton("Подземелье", "Выполнить четвертое задание", "do_4_task")
+		addButton("Камеры", "Выполни пятую задачу", "do_5_task")
 	if(state == "talk_options"):
-		saynn("What do you want to talk about with Socket?")
+		saynn("О чем хочешь поговорить с Сокетом?")
 
-		addButton("Casual nudity", "Ask why she is pretty much fully naked", "ask_casual_nudity")
-		addButton("Headset", "Ask what she has on her head", "ask_headset")
-		addButton("New engineer", "Ask why did she decided to work here", "ask_why_work_here")
+		addButton("Непринужденная нагота", "Спросить, почему она практически голая", "ask_casual_nudity")
+		addButton("Гарнитура", "Спросить, что у неё на голове", "ask_headset")
+		addButton("Новый инженер", "Спросить, почему она решила здесь работать", "ask_why_work_here")
 		if (getFlag("SocketModule.askedWhyWorkHere")):
-			addButton("Casual sex", "Ask her about casual sex", "ask_casual_sex")
+			addButton("Секс без обязательств", "Спросить её о случайном сексе", "ask_casual_sex")
 		else:
-			addDisabledButton("Casual sex", "You don't know about this yet, shush")
+			addDisabledButton("Секс без обязательств", "Ты об этом еще не знаешь, тише...")
 		if (getFlag("SocketModule.touchedPussy")):
-			addButton("Bioengineered pussy", "Ask what that means", "ask_bioengineered_pussy")
+			addButton("Биоинженерная киска", "Спросить, что это значит", "ask_bioengineered_pussy")
 		else:
-			addDisabledButton("Bioengineered pussy", "You definitely don't know about this yet, shush")
-		addButton("Back", "Enough questions", "")
+			addDisabledButton("Биоинженерная киска", "Ты об этом точно ещё не знаешь, так что молчи")
+		addButton("Назад", "Хватит вопросов", "")
 	if(state == "ask_casual_nudity"):
-		saynn("[say=pc]May I ask you something? Something obvious.[/say]")
+		saynn("[say=pc]Можно тебя кое о чём спросить? О чём-то очевидном.[/say]")
 
-		saynn("Socket tilts her head slightly, looking a bit confused.")
+		saynn("Сокет слегка наклоняет голову, выглядя немного растерянной.")
 
-		saynn("[say=socket]Sure.[/say]")
+		saynn("[say=socket]Конечно.[/say]")
 
-		saynn("[say=pc]Why are you naked?[/say]")
+		saynn("[say=pc]Почему ты голая?[/say]")
 
-		saynn("She tilts her head more and shows you her armored boots and arm sleeves.")
+		saynn("Она наклоняет голову ещё сильнее, демонстрируя тебе свои бронированные сапоги и наручи.")
 
-		saynn("[say=socket]I'm not naked, I have these! And a backpack.. and my goggles.. and..[/say]")
+		saynn("[say=socket]Я не голая, на мне же есть это! И рюкзак... и очки... и...[/say]")
 
-		saynn("[say=pc]But your.. bits are out.[/say]")
+		saynn("[say=pc]Но твои... причиндалы наружу.[/say]")
 
-		saynn("She smiles and puffs her chest out, her {socket.breasts} jiggling a bit.")
+		saynn("Она улыбается и выпячивает грудь, отчего её {socket.breasts} слегка колышутся.")
 
-		saynn("[say=socket]Yeah, the captain said that it's allowed for staff.[/say]")
+		saynn("[say=socket]Да капитан сказал, что персоналу можно.[/say]")
 
-		saynn("Makes you wonder..")
+		saynn("Заставляет задуматься...")
 
-		saynn("[say=pc]By any chance.. are you an exhibitionst perhaps?[/say]")
+		saynn("[say=pc]Ты случайно... не эксгибиционистка?[/say]")
 
-		saynn("Socket becomes very confused by your question.")
+		saynn("Сокет впадает в полное замешательство от твоего вопроса.")
 
-		saynn("[say=socket]Um.. No? What made you think that?[/say]")
+		saynn("[say=socket]Эм... Нет? С чего ты это взял?[/say]")
 
-		saynn("Right.. Now it's your turn to be confused. She is not doing it to gather reactions from others.. but why then.")
+		saynn("Ладно... Теперь твоя очередь недоумевать. Она делает это не ради того, чтобы собирать реакции окружающих... но тогда зачем?")
 
-		saynn("[say=pc]Are the normal clothes too warm for you or something?[/say]")
+		saynn("[say=pc]Обычная одежда для тебя слишком жаркая или типа того?[/say]")
 
-		saynn("[say=socket]Warm? Not really. The heating here is not perfect but it works.[/say]")
+		saynn("[say=socket]Жаркая? Не особо. Отопление здесь не идеальное, но работает.[/say]")
 
-		saynn("It doesn't seem to be a physiological need either.")
+		saynn("Похоже, это не какая-то физиологическая потребность.")
 
-		saynn("[say=pc]Then.. Why is your outfit like that?[/say]")
+		saynn("[say=pc]Тогда... почему ты так одета?[/say]")
 
-		saynn("Socket looks at herself.. and shrugs.")
+		saynn("Сокет смотрит на себя... и пожимает плечами.")
 
-		saynn("[say=socket]It's always been like that. For as long as I remember.[/say]")
+		saynn("[say=socket]Так было всегда. Сколько я себя помню.[/say]")
 
-		saynn("You probably won't be able to get more than that out of her.")
+		saynn("Вряд ли тебе удастся вытянуть из неё что-то большее.")
 
-		addButton("Continue", "See what happens next", "talk_options")
+		addButton("Продолжить", "Смотреть, что будет дальше", "talk_options")
 	if(state == "ask_why_work_here"):
 		setFlag("SocketModule.askedWhyWorkHere", true)
-		saynn("She seems kind.. makes you wonder why she is here.")
+		saynn("Она кажется доброй... невольно задумываешься, что она здесь забыла.")
 
-		saynn("[say=pc]Why did you decide to work here, in prison?[/say]")
+		saynn("[say=pc]Почему ты решила работать здесь, в тюрьме?[/say]")
 
-		saynn("Socket shrugs.")
+		saynn("Сокет пожимает плечами.")
 
-		saynn("[say=socket]Why not?[/say]")
+		saynn("[say=socket]Почему это?[/say]")
 
-		saynn("[say=pc]Lots of bad people here.[/say]")
+		saynn("[say=pc]Здесь полно плохих людей.[/say]")
 
-		saynn("[say=socket]There are lots of bad people everywhere! Don't worry about me, I can protect myself.[/say]")
+		saynn("[say=socket]Плохие люди есть везде! Не беспокойся обо мне, я могу за себя постоять.[/say]")
 
-		saynn("She shows you the shock remote, the same one that other staff members have.")
+		saynn("Она показывает тебе шоковый пульт — такой же, как у остальных сотрудников.")
 
-		saynn("[say=pc]Still, why prison?[/say]")
+		saynn("[say=pc]И всё же, почему именно тюрьма?[/say]")
 
-		saynn("[say=socket]It's more than just a prison. It's an opportunity! So much to fix here, so many things to upgrade. I really like this station so far, can't wait to start making it better.[/say]")
+		saynn("[say=socket]Это больше, чем просто тюрьма. Это возможность! Здесь столько всего можно исправить, столько всего улучшить. Мне эта станция уже очень нравится, не терпится начать делать её лучше.[/say]")
 
-		saynn("So she is a.. workaholic?")
+		saynn("Значит, она... трудоголик?")
 
-		saynn("[say=socket]And I also heard that there is lots of sex here and stuff![/say]")
+		saynn("[say=socket]А еще я слышал, что здесь полно секса и всякого такого![/say]")
 
-		saynn("One of the engineers in the background spits his coffee.")
+		saynn("Один из инженеров на заднем плане сплевывает кофе.")
 
-		saynn("Sex, huh..")
+		saynn("Секс, значит..")
 
-		addButton("Continue", "See what happens next", "talk_options")
+		addButton("Продолжить", "Смотреть, что будет дальше", "talk_options")
 	if(state == "ask_casual_sex"):
-		saynn("[say=pc]You said something about sex..[/say]")
+		saynn("[say=pc]Ты что-то говорила про секс..[/say]")
 
-		saynn("Socket nods.")
+		saynn("Сокет кивает.")
 
-		saynn("[say=socket]You don't like sex?[/say]")
+		saynn("[say=socket]Тебе что, не нравится секс?[/say]")
 
-		saynn("You look into her eyes.. and see zero shame.")
+		saynn("Ты заглядываешь ей в глаза... и не видишь ни капли стыда.")
 
-		saynn("[say=pc]Um.. You're pretty casual about it.[/say]")
+		saynn("[say=pc]Эм.. Ты относишься к этому довольно просто.[/say]")
 
-		saynn("She smiles and wiggles her hips.")
+		saynn("Она улыбается и игриво виляет бедрами.")
 
-		saynn("[say=socket]Sex is incredibly fun, why wouldn't we be casual about it? I'm glad that the rules here are so relaxed.[/say]")
+		saynn("[say=socket]Секс — это невероятно весело, с чего бы к нему относиться как-то иначе? Я рада, что здесь такие расслабленные правила.[/say]")
 
-		saynn("Her statement does make some sense.")
+		saynn("В её словах есть смысл.")
 
-		saynn("[say=pc]Not all the sex here is casual though. Some of it is pretty rough.[/say]")
+		saynn("[say=pc]Но не весь секс здесь — просто развлечение. Иногда всё проходит довольно жестко.[/say]")
 
-		saynn("Socket shrugs.")
+		saynn("Сокет пожимает плечами.")
 
-		saynn("[say=socket]I don't mind that.[/say]")
+		saynn("[say=socket]Меня это не пугает.[/say]")
 
-		saynn("Interesting.")
+		saynn("Интересно.")
 
-		addButton("Ask to touch", "See if she would be okay with you touching her private bits", "ask_to_touch")
-		addButton("Continue", "Ask something else", "talk_options")
+		addButton("Попросить потрогать", "Спросить, не против ли она, если ты прикоснёшься к её интимным местам", "ask_to_touch")
+		addButton("Продолжить", "Спросить о чем-то другом", "talk_options")
 	if(state == "ask_to_touch"):
 		playAnimation(StageScene.Grope, "grope", {pc="socket", npc="pc"})
 		setFlag("SocketModule.touchedPussy", true)
-		saynn("[say=pc]I gotta say, you have a nice body.[/say]")
+		saynn("[say=pc]Должен признать, у тебя отличная фигура.[/say]")
 
-		saynn("Socket smiles.")
+		saynn("Сокет улыбается.")
 
-		saynn("[say=socket]Oh, thank you![/say]")
+		saynn("[say=socket]О, спасибо![/say]")
 
-		saynn("[say=pc]Can I.. touch it.[/say]")
+		saynn("[say=pc]Можно мне... потрогать её?[/say]")
 
-		saynn("Socket hums.")
+		saynn("Сокет что-то напевает под нос.")
 
-		saynn("[say=socket]Of course not![/say]")
+		saynn("[say=socket]Конечно, нет![/say]")
 
-		saynn("She sees your confused expression and chuckles.")
+		saynn("Заметив твоё растерянное лицо, она усмехается.")
 
-		saynn("[say=socket]You forgot to say please, silly.[/say]")
+		saynn("[say=socket]Ты забыла сказать «пожалуйста», глупышка.[/say]")
 
-		saynn("Obviously..")
+		saynn("Очевидно..")
 
-		saynn("[say=pc]Can I please touch you?[/say]")
+		saynn("[say=pc]Можно мне тебя потрогать?[/say]")
 
-		saynn("[say=socket]Sure![/say]")
+		saynn("[say=socket]Конечно![/say]")
 
-		saynn("She nods and puffs her chest out, giving you full access to.. everything.")
+		saynn("Она кивает и выпячивает грудь, открывая тебе полный доступ ко... всему.")
 
-		saynn("You start off easy, brushing your palm over the short fur on her belly and hips. Feels pretty soft and warm, her sides have a nice curve to them. You look her in the eyes and receive a non-verbal go-ahead to do more.")
+		saynn("Ты начинаешь осторожно, проводя ладонью по короткому меху на её животе и бёдрах. На ощупь она очень мягкая и тёплая, а её бока имеют приятный изгиб. Ты смотришь ей в глаза и получаешь невербальное согласие продолжать.")
 
-		saynn("Your hands land on her {socket.breasts}. They're not the biggest.. but they fill your palms nicely. How much more can you hope for? Socket watches your hands with great interest while you fondle and play with her breasts, your digits rubbing her stiff perky nips.")
+		saynn("Твои руки ложатся на её {socket.breasts}. Они не самые огромные... но отлично ложатся в ладони. О чём ещё можно мечтать? Сокет с огромным интересом наблюдает за твоими руками, пока ты ласкаешь и мнёшь её грудь, потирая пальцами её твёрдые, упругие соски.")
 
-		saynn("[say=socket]M-mmh..[/say]")
+		saynn("[say=socket]М-ммм..[/say]")
 
-		saynn("Her expression softens, her breathing becomes deeper. After some groping, Socket spreads her legs more.. for you.. an invitation.")
+		saynn("Её взгляд смягчается, дыхание становится глубже. После нескольких ощупываний Сокет раздвигает ноги ещё шире... для тебя... это приглашение.")
 
-		saynn("One hand stays on her breasts while another slides down to her crotch. You feel.. warmth.. radiating from her cute tight pussy lips.")
+		saynn("Одна рука остается на её груди, а другая скользит вниз, к промежности. Ты чувствуешь... тепло... исходящее от её милых, узких половых губ.")
 
-		saynn("Your digits brush over her wet folds and tease the clit a little. Socket's eyes become needier while you do that, she bites her lips.. while standing still and letting you continue, pretending that this is normal. Is it not?..")
+		saynn("Твои пальцы скользят по её влажным складкам, слегка дразня клитор. Пока ты это делаешь, взгляд Сокет становится всё более жадным; она прикусывает губы, застыв на месте и позволяя тебе продолжать, делая вид, что всё это совершенно нормально. Разве нет?..")
 
-		saynn("You're probably doing way more than just touching by this point.. but oh well.. you carefully spread her pussy petals.. and already notice a few strings of juices hanging between them. So lewd.")
+		saynn("К этому моменту ты, вероятно, делаешь уже гораздо больше, чем просто касаешься... но ладно... ты осторожно раздвигаешь лепестки её киски и сразу замечаешь несколько струек сока, тянущихся между ними. Как похотливо.")
 
-		saynn("[say=socket]Do you like it?[/say]")
+		saynn("[say=socket]Тебе нравится?[/say]")
 
-		saynn("[say=pc]Yeah, it's a nice pussy.[/say]")
+		saynn("[say=pc]Да, киска что надо.[/say]")
 
-		saynn("[say=socket]Thank you. It's bioengineered to be like this.[/say]")
+		saynn("[say=socket]Спасибо. Она биоинженерная, специально так сделана.[/say]")
 
-		saynn("Bioengineered.. what..")
+		saynn("Биоинженерная... что?..")
 
-		addButton("Continue", "Ask something else", "talk_options")
+		addButton("Продолжить", "Спросить о чем-то другом", "talk_options")
 	if(state == "ask_bioengineered_pussy"):
-		saynn("[say=pc]You said that your pussy is.. bioengineered?[/say]")
+		saynn("[say=pc]Ты сказала, что твоя киска... биоинженерная?[/say]")
 
-		saynn("Socket nods and then carefully spreads her folds for you.")
+		saynn("Сокет кивает и затем осторожно раздвигает складки для тебя.")
 
-		saynn("[say=socket]One of the biotechs helped me. It's been altered to be more stretchy, elastic and resilient.[/say]")
+		saynn("[say=socket]Один из биотехов помог мне. Её изменили, чтобы она была более растяжимой, эластичной и упругой.[/say]")
 
-		saynn("Is she really that big of a size queen? You wouldn't tell from a glance.")
+		saynn("Неужели она и правда такая помешанная на размерах? С первого взгляда и не скажешь.")
 
-		saynn("[say=socket]Thus, the inner walls of my pussy can better endure various chemical compounds like sugar or weak organic acids.[/say]")
+		saynn("[say=socket]Так что внутренние стенки моей киски могут лучше выдерживать различные химические соединения, вроде сахара или слабых органических кислот.[/say]")
 
-		saynn("The.. what..")
+		saynn("Что.. что ты сказала..")
 
-		saynn("[say=pc]Why would you need to have acid in your pussy..[/say]")
+		saynn("[say=pc]Зачем тебе кислота в киске..[/say]")
 
-		saynn("Socket shrugs.")
+		saynn("Сокет пожимает плечами.")
 
-		saynn("[say=socket]Weak acids. Like the ones they use in drinks, you know?[/say]")
+		saynn("[say=socket]Слабые кислоты. Ну, как те, что добавляют в напитки, понимаешь?[/say]")
 
-		saynn("That didn't really make it sound any better. But you feel like you should stop there before you get any more.. juicy details.")
+		saynn("От этого объяснение не стало звучать лучше. Но ты чувствуешь, что стоит остановиться, пока не посыпались еще более.. сочные подробности.")
 
-		addButton("Continue", "Ask something else", "talk_options")
+		addButton("Продолжить", "Спросить о чем-то другом", "talk_options")
 	if(state == "ask_headset"):
-		saynn("You point at the fancy goggles that Socket has on her forehead.")
+		saynn("Ты указываешь на стильные очки, которые Сокет сдвинула на лоб.")
 
-		saynn("[say=pc]What's that on your head?[/say]")
+		saynn("[say=pc]А это что у тебя на голове?[/say]")
 
-		saynn("Socket rolls her eyes up so much her tongue pokes out.")
+		saynn("Сокет так закатывает глаза, что у неё даже кончик языка высовывается.")
 
-		saynn("[say=socket]Oh. It's for when I have to netrun![/say]")
+		saynn("[say=socket]А, это! Чтобы нетраннить![/say]")
 
-		saynn("[say=pc]Netrun?[/say]")
+		saynn("[say=pc]Нетраннить?[/say]")
 
-		saynn("She nods many times.")
+		saynn("Она часто-часто кивает.")
 
-		saynn("[say=socket]Cybersecurity. Netrunning is how I can protect networks against cyber threats![/say]")
+		saynn("[say=socket]Кибербезопасность. Нетраннинг — это то, как я защищаю сети от киберугроз![/say]")
 
-		saynn("Interesting. Socket seems to be more than just an engineer.")
+		saynn("Интересно. Похоже, Сокет не просто инженер.")
 
-		saynn("[say=socket]Sadly this station doesn't have the required equipment. Makes me feel very lost..[/say]")
+		saynn("[say=socket]К сожалению, на этой станции нет нужного оборудования. Из-за этого чувствую себя совершенно потерянной...[/say]")
 
-		saynn("She looks around.")
+		saynn("Она оглядывается по сторонам.")
 
-		saynn("[say=socket]So I appreciate any help.[/say]")
+		saynn("[say=socket]Так что буду рада любой помощи.[/say]")
 
-		saynn("Fair enough.")
+		saynn("Справедливо.")
 
-		addButton("Continue", "Ask something else", "talk_options")
+		addButton("Продолжить", "Спросить о чем-то другом", "talk_options")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

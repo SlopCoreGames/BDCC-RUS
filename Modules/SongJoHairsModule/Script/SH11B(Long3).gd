@@ -1,7 +1,7 @@
 extends BodypartHair
 
 func _init():
-	visibleName = "Long 3"
+	visibleName = "Длинные 3"
 	id = "SongHair11b"
 
 	maleWeight = 0.1

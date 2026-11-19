@@ -6,39 +6,39 @@ func _init():
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("The station's corridors are all the same.. but something feels different.. feels off..")
+		saynn("Коридоры станции всегда одинаковы... но сейчас что-то кажется иным... что-то не так...")
 
-		saynn("Everything is normal.. and yet.. it's not.")
+		saynn("Всё кажется обычным... и всё же... это не так.")
 
-		saynn("A shadow is moving outside of your vision cone. A breathing ghost that you can't see.")
+		saynn("На периферии зрения мелькнула тень. Дышащий призрак, которого невозможно разглядеть.")
 
-		saynn("Is someone watching you? Looking around yields no result.")
+		saynn("Кто-то следит за тобой? Оглядываешься по сторонам, но ничего не находишь.")
 
-		saynn("And yet, something is reading you..")
+		saynn("И всё же, кто-то тебя изучает...")
 
-		saynn("An invisible hand slides over your shoulder, its clawed digits going around and reaching your chin.")
+		saynn("Невидимая рука скользит по твоему плечу, её когтистые пальцы обхватывают подбородок.")
 
-		saynn("Whatever it is, it's assessing you.. you can guess that much.")
+		saynn("Что бы это ни было, оно тебя оценивает... это можно понять без слов.")
 
-		saynn("You know how it feels because you do it a lot yourself.. Weird.. You can't help but to furrow your brows, clench your fists, and prepare for the worst.")
+		saynn("Ты знаешь это чувство, потому что сам часто так делаешь... Странно... Ты невольно хмуришься, сжимаешь кулаки и готовишься к худшему.")
 
-		addButton("Look around", "Find the intruder of peace", "look_around")
+		addButton("Осмотреться", "Найти нарушителя покоя", "look_around")
 	if(state == "look_around"):
-		saynn("You look around.. and catch a glimpse of a feline tail disturbing the cold steam coming from one of the vents. You're not sure about the color.. but it was bright.")
+		saynn("Ты оглядываешься... и на мгновение замечаешь кошачий хвост, колышущий холодный пар из одной из вентиляционных решёток. Цвет был неясен... но он был ярким.")
 
-		saynn("[say=pc]Hey, I saw you.[/say]")
+		saynn("[say=pc]Эй, я тебя видела.[/say]")
 
-		saynn("The dimly lit corridor gives too little light for your eyes.. who knows if that wasn't just your mind playing tricks on you.")
+		saynn("В тускло освещенном коридоре слишком мало света для твоих глаз... кто знает, не сыграло ли это всё с тобой шутку.")
 
-		saynn("Soon the dull hum of machinery fills the air again. Inmates are walking past, giving you slightly strange looks.")
+		saynn("Вскоре воздух снова наполняется глухим гулом механизмов. Мимо проходят заключенные, бросая на тебя странные взгляды.")
 
-		saynn("You wait a few seconds.. until everything calms down.. and then proceed on your way.")
+		saynn("Ты ждешь несколько секунд... пока всё не утихнет... а затем продолжаешь свой путь.")
 
-		saynn("Huh.")
+		saynn("Хм.")
 
-		saynn("You get a strange feeling that this is somehow related to you enslaving that person..")
+		saynn("У тебя возникает странное чувство, что это как-то связано с тем, что ты взял этого человека в рабство...")
 
-		addButton("Continue", "See what happens next..", "endthescene")
+		addButton("Продолжить", "Смотри, что будет дальше...", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

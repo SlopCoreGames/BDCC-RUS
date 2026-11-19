@@ -6,7 +6,7 @@ func _init():
 
 func _run():
 	if(state == ""):
-		saynn("Which one-way vent do you want to use?")
+		saynn("В какую одностороннюю вентиляцию хочешь залезть?")
 
 		var ventData = getModule("SocketModule").getFastTravelData()
 		
@@ -15,14 +15,14 @@ func _run():
 			var hasVent = getFlag("SocketModule."+ventID, false)
 			
 			if(hasVent):
-				addButton(ventInfo["name"], "Climb into this vent!", "tp_to", [ventInfo["location"]])
+				addButton(ventInfo["name"], "Забирайся в эту вентиляцию!", "tp_to", [ventInfo["location"]])
 
-		addButton("Back", "You changed your mind", "endthescene")
+		addButton("Назад", "Вы передумали", "endthescene")
 
 	if(state == "tp_to"):
-		saynn("You follow the web of vents and carefully get out when you reach your destination, making sure not to draw any extra attention.. You don't want others to get suspicious..")
+		saynn("Ты пробираешься по лабиринту вентиляционных шахт и осторожно выбираешься, когда достигаешь цели, стараясь не привлекать лишнего внимания... Тебе совсем не хочется, чтобы кто-то заподозрил неладное...")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -16,102 +16,102 @@ func _run():
 
 		# (You can fight or seduce her. Or wait and let Tavi be beaten up and save her)
 
-		saynn("A lynx armored cat steps from behind the corner and notices you.")
+		saynn("Из-за угла выходит кошка-рысь в броне и замечает тебя.")
 
-		saynn("[say=risha]Oh hey there~. Why did you run off? I’m not done with you yet, inmate.[/say]")
+		saynn("[say=risha]О, привет~. Ну и куда это ты сбежал? Я с тобой еще не закончила, заключенный.[/say]")
 
-		saynn("Risha directs her attention to Tavi, making her tense up.")
+		saynn("Риша переводит взгляд на Тави, отчего та заметно напрягается.")
 
-		saynn("[say=tavi]Angry that the captain is blue-balling you?[/say]")
+		saynn("[say=tavi]Злишься, что капитан тебя «загонял», но так и не взял?[/say]")
 
-		saynn("Risha rubs her chin. She is quite in an advantageous position, cutting your only exit off.")
+		saynn("Риша потирает подбородок. Она находится в крайне выгодном положении, перекрывая тебе единственный путь к отступлению.")
 
-		saynn("[say=risha]Yeah, he is strict but fair. I said I’m gonna breed you. And so I will~. Your pet can watch, I don’t mind~[/say]")
+		saynn("[say=risha]Да, он строгий, но справедливый. Я сказала, что оттрахаю тебя до беспамятства. И так и будет~. Твой питомец может смотреть, я не против~[/say]")
 
-		saynn("Tavi whispers to your ear.")
+		saynn("Тави шепчет тебе на ухо.")
 
-		saynn("[say=tavi]I will need your help, cutie.[/say]")
+		saynn("[say=tavi]Мне понадобится твоя помощь, милашка.[/say]")
 
-		saynn("Tavi then stands up and raises her hands like she is surrendering. She wiggles her butt while a cunning smile shines on her face.")
+		saynn("Затем Тави встает и поднимает руки, словно сдаваясь. На её лице играет хитрая улыбка, а задницей она игриво виляет.")
 
-		saynn("[say=tavi]I’m sure we can talk it out first and get to some compromise~. Come here. I don’t bite.[/say]")
+		saynn("[say=tavi]Уверена, мы сначала сможем всё обсудить и прийти к компромиссу~. Иди сюда. Я не кусаюсь.[/say]")
 
-		saynn("[say=risha]I’m well aware of your hair pulling tricks. You’re a red, your only compromise is being on my dick, sweetie pie.[/say]")
+		saynn("[say=risha]Твои фокусы с выдиранием волос мне прекрасно известны. Ты — рыжая, и твой единственный компромисс — это то, что ты висишь на моем члене, сладенькая.[/say]")
 
-		saynn("Risha holds a shock remote in her paw and aims it at your miss. And there is still a fair amount of distance between them, there is no way for Tavi to reach the lynx without getting her neck fried. And that makes Tavi go from smiling to growling softly and getting ready to fight.")
+		saynn("Риша сжимает в лапе пульт управления шокером и целится в твою крошку. Между ними всё еще приличное расстояние, и Тави никак не подступиться к рыси, не поджарив себе шею. От этого Тави мгновенно меняется в лице: улыбка сменяется тихим рычанием, и она готовится к драке.")
 
-		saynn("[say=tavi]Don’t make me regret saving you.[/say]")
+		saynn("[say=tavi]Не заставляй меня жалеть о том, что я тебя спасла.[/say]")
 
-		saynn("[say=risha]Maybe you shouldn’t have. But I just need to rut someone. Why fight? You will love it.[/say]")
+		saynn("[say=risha]Может, и не стоило. Но мне просто нужно с кем-нибудь трахнуться. Зачем драться? Тебе понравится.[/say]")
 
-		addButtonWithChecks("Seduce", "Offer yourself to Risha instead", "seduce", [], [[ButtonChecks.StatCheck, Stat.Sexiness, 5]])
-		addButton("Attack", "Protect Tavi at all costs", "attack")
-		addButton("Wait", "Maybe there will be a better opportunity to attack", "wait1")
+		addButtonWithChecks("Соблазнить", "Предложить себя Рише вместо Тави", "seduce", [], [[ButtonChecks.StatCheck, Stat.Sexiness, 5]])
+		addButton("Атаковать", "Любой ценой защитить Тави", "attack")
+		addButton("Подождать", "Подождать более удачного момента для атаки", "wait1")
 		
 
 	if(state == "seduce"):
 		removeCharacter("tavi")
 		playAnimation(StageScene.Duo, "stand", {npc="risha"})
 		
-		saynn("You decide that just watching the scene unfold won’t bring anything and act. You step in and block the clear path to Tavi. Risha raises her brow and aims the remote at you instead.")
+		saynn("Ты понимаешь, что просто наблюдать за происходящим бесполезно, и переходишь к действиям. Ты делаешь шаг вперед, преграждая Рише путь к Тави. Риша вскидывает бровь и наводит пульт уже на тебя.")
 
 		# (if pc is red)
 		if(GM.pc.getInmateType() == InmateType.HighSec):
-			saynn("[say=risha]Reds protecting reds, huh? I’m not surprised.[/say]")
+			saynn("[say=risha]Рыжие защищают рыжих, да? Неудивительно.[/say]")
 
 		# (if pc is general)
 		elif(GM.pc.getInmateType() == InmateType.General):
-			saynn("[say=risha]Why are you protecting a red. Stockholm syndrome?[/say]")
+			saynn("[say=risha]С чего это ты защищаешь рыжую? Стокгольмский синдром?[/say]")
 
 		# (if pc is lilac)
 		elif(GM.pc.getInmateType() == InmateType.SexDeviant):
-			saynn("[say=risha]Hah. What are you gonna do, fuck me to death?[/say]")
+			saynn("[say=risha]Хах. И что ты сделаешь, трахнешь меня до смерти?[/say]")
 
 		# (if has clothes)
 		if(!GM.pc.isFullyNaked()):
-			saynn("Instead of answering her, you just begin undressing, exposing just enough to make your private bits visible. Risha tilts her head and watches over your {pc.masc} curves.")
+			saynn("Вместо ответа ты просто начинаешь раздеваться, обнажая ровно столько, чтобы стали видны твои интимные места. Риша наклоняет голову, разглядывая твои {pc.masc} изгибы.")
 
 		# (else)
 		else:
-			saynn("Instead of answering her, you just present her your naked body. Risha tilts her head and watches over your {pc.masc} curves.")
+			saynn("Вместо ответа ты просто демонстрируешь ей свое обнаженное тело. Риша наклоняет голову, разглядывая твои {pc.masc} изгибы.")
 
-		saynn("[say=pc]Like it?[/say]")
+		saynn("[say=pc]Нравится?[/say]")
 
-		saynn("Tavi is still behind you, she doesn’t seem to mind the view of your {pc.thick} butt.")
+		saynn("Тави все еще стоит позади тебя, и, кажется, вид твоей {pc.thick} задницы ее вполне устраивает.")
 
-		saynn("[say=risha]Hmm. I’d still rather fuck the cat, she was too cocky.[/say]")
+		saynn("[say=risha]Хмм. Я бы все равно предпочла трахнуть кошку, та была слишком самоуверенной.[/say]")
 
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("You feel Risha’s hesitation and push further. You step towards her and turn around before bending and spread your legs for her, offering a great view of your {pc.pussyStretch} pussy and {pc.analStretch} ass.")
+			saynn("Ты чувствуешь нерешительность Риши и идешь напролом. Ты делаешь шаг к ней, разворачиваешься, а затем наклоняешься и раздвигаешь ноги, открывая ей великолепный вид на твою {pc.pussyStretch} киску и {pc.analStretch} зад.")
 
 		# (else if has cock)
 		elif(GM.pc.hasPenis()):
-			saynn("You feel Risha’s hesitation and push further. You step towards her and turn around before bending and spread your legs for her, offering a great view of your {pc.cock} and {pc.analStretch} butthole.")
+			saynn("Ты чувствуешь нерешительность Риши и идешь напролом. Ты делаешь шаг к ней, разворачиваешься, а затем наклоняешься и раздвигаешь ноги, открывая ей великолепный вид на твою {pc.cock} и {pc.analStretch} дырочку.")
 
 		# (else)
 		else:
-			saynn("You feel Risha’s hesitation and push further. You step towards her and turn around before bending and spread your legs for her, offering a great view of your {pc.analStretch} butthole.")
+			saynn("Ты чувствуешь нерешительность Риши и идешь напролом. Ты делаешь шаг к ней, разворачиваешься, а затем наклоняешься и раздвигаешь ноги, открывая ей великолепный вид на твою {pc.analStretch} дырочку.")
 
-		saynn("[say=pc]Why? Just breed this instead~[/say]")
+		saynn("[say=pc]Почему? Просто осемени вот это~[/say]")
 
-		saynn("You catch Risha’s hungry stare, she puts the remote away and reaches out to smack your ass. But you dodge that and teasingly wiggle your behind instead.")
+		saynn("Ты ловишь голодный взгляд Риши; она убирает пульт и тянется, чтобы шлепнуть тебя по заднице. Но ты уворачиваешься и вместо этого дразняще виляешь задом.")
 
-		saynn("[say=pc]Nuh-uh~[/say]")
+		saynn("[say=pc]Не-а~[/say]")
 
-		saynn("[say=risha]What a brat. Fine, I will deal with the cat after you.[/say]")
+		saynn("[say=risha]Ну и дрянь. Ладно, с кошкой разберусь уже после тебя.[/say]")
 
-		saynn("Risha reaches out and grabs you by the back of the collar before pulling back towards her and pinning against the nearby wall. She rubs her crotch against your butt, making you feel her cock getting harder even through her riot armor.")
+		saynn("Риша протягивает руку, хватает тебя за воротник, резко дергает на себя и прижимает к ближайшей стене. Она начинает тереться промежностью о твою задницу, и ты чувствуешь, как её член твердеет даже сквозь бронежилет.")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "continue"):
-		saynn("Risha keeps you pinned to the wall before producing some cuffs and trying to restrain your arms to the pipe above your head. Now would be a good time to strike.")
+		saynn("Риша продолжает прижимать тебя к стене, доставая наручники, чтобы приковать твои руки к трубе над головой. Сейчас — самое время для удара.")
 
-		saynn("At the same time, Tavi uses that moment to get out of sight. She seems to approach Risha from behind to steal something from her but then sneaks away and makes her escape. Is she just gonna leave you?")
+		saynn("В этот же момент Тави пользуется случаем, чтобы скрыться из виду. Кажется, она подкрадывается к Рише со спины, чтобы что-то стащить, но затем незаметно ускользает. Она что, реально собирается тебя бросить?")
 
-		addButton("Be fucked", "Just ler her do it", "be_fucked")
-		addButton("Struggle", "Risha is horny, that will give you an advantage in a fight", "struggle")
+		addButton("Даться траху", "Пусть валит", "be_fucked")
+		addButton("Сопротивление", "Риша возбуждена, это даст тебе преимущество в бою", "struggle")
 		
 
 	if(state == "be_fucked"):
@@ -123,37 +123,37 @@ func _run():
 
 		# (Risha leaves and Tavi returns)
 
-		saynn("Well, you really hope Tavi knows what she is doing. And with that, Risha cuffs your arms to some pipe above you, rendering you pretty much helpless.")
+		saynn("Что ж, остается только надеяться, что Тави знает, что делает. И с этими словами Риша приковывает твои руки к трубе над головой, оставляя тебя практически беспомощным.")
 
-		saynn("[say=pc]I’m not resisting..[/say]")
+		saynn("[say=pc]Я не сопротивляюсь...[/say]")
 
-		saynn("Risha chuckles as she proceeds to strip the important pieces of her riot armor.")
+		saynn("Риша посмеивается, начиная стягивать с себя основные элементы брони.")
 
-		saynn("[say=risha]Why not?[/say]")
+		saynn("[say=risha]А почему это?[/say]")
 
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("And since your {pc.pussyStretch} pussy is quite exposed already, Risha takes off her glove and gently runs her claws over your sensitive petals, sending shivers through your body. Yeah, she is clearly going for that hole.")
+			saynn("И поскольку твоя {pc.pussyStretch} киска и так уже совсем открыта, Риша снимает перчатку и нежно проводит когтями по твоим чувствительным лепесткам, заставляя всё тело покрыться дрожью. Да, она явно метит в это отверстие.")
 
 		# (else)
 		else:
-			saynn("And since your {pc.analStretch} tailhole is quite exposed already, Risha takes off her glove and gently runs her claws over your sensitive flesh, sending shivers through your body. She then spits on her digits and rubs them into your ass. Yeah, she is clearly going for that hole.")
+			saynn("И поскольку твоё {pc.analStretch} анусное отверстие и так уже совсем открыто, Риша снимает перчатку и нежно проводит когтями по твоей чувствительной плоти, вызывая дрожь во всём теле. Затем она сплевывает на пальцы и втирает слюну в твою задницу. Да, она явно метит в это отверстие.")
 
-		saynn("[say=risha]It’s gonna be painful either way with me.[/say]")
+		saynn("[say=risha]Со мной в любом случае будет больно.[/say]")
 
-		saynn("To prove that she exposes her sheath with a feline cock already escaping its contains after it got enough room. The tip features a few rows of barbs that seem to be somewhat soft for now but who knows.")
+		saynn("Чтобы доказать это, она обнажает препуций, из которого, получив достаточно места, уже начинает выскальзывать кошачий член. На кончике видны ряды шипов, которые пока кажутся довольно мягкими, но кто знает.")
 
-		saynn("[say=pc]Kinky..[/say]")
+		saynn("[say=pc]Пикантно...[/say]")
 
 		# (if has cock)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("Your own cock is getting somewhat hard behind the cage. Risha cups your balls and gives them a gentle squeeze.")
+			saynn("Твой собственный член начинает понемногу твердеть за решеткой. Риша обхватывает твои яйца ладонью и слегка сжимает их.")
 		elif(GM.pc.hasPenis()):
-			saynn("Your own cock is getting somewhat hard. Risha cups your balls and gives them a gentle squeeze.")
+			saynn("Твой собственный член начинает понемногу твердеть. Риша обхватывает твои яйца ладонью и слегка сжимает их.")
 
-			saynn("[say=risha]Cute.[/say]")
+			saynn("[say=risha]Мило.[/say]")
 
-		addButton("Continue", "See what happens next", "continue1")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue1")
 
 	if(state == "continue1"):
 		playAnimation(StageScene.SexStanding, "sex", {npc="pc", pc="risha",
@@ -163,25 +163,25 @@ func _run():
 		
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("You dangle around a lot, having to pretty much stand on your toes as the pipe is quite high. Risha gets herself hard and stands behind you, her strong hand catches your leg and lifts it up while the second one guides her prickly cock down your sex.")
+			saynn("Ты сильно болтаешься, вынужденный почти стоять на цыпочках, так как труба висит довольно высоко. Риша возбуждается и встает позади тебя; её сильная рука подхватывает твою ногу и задирает вверх, пока вторая направляет её колючий член в твою щель.")
 
-			saynn("Your lips send out a few soft moans while the soft barbs are brushing against your slit. Your petals are getting spread by the shaft that then finds your pussy holes and starts putting pressure on it, stretching.")
+			saynn("Твои губы издают тихие стоны, пока мягкие шипы касаются твоей прорези. Ствол раздвигает твои лепестки, находит вход в киску и начинает давить, растягивая её.")
 
-			saynn("[say=risha]My favorite moment~. Apart from breaking sluts completely, of course.[/say]")
+			saynn("[say=risha]Мой самый любимый момент~. Если, конечно, не считать полное ломание шлюх.[/say]")
 
-			saynn("You throw your head back and pant while the guard is taking her sweet time, stretching you out. Eventually the folds of your sex engulf the barbed head soon followed by Risha’s rough thrust, shoving the rest of the shaft inside! You let out a stifled moan of discomfort as you feel your inner walls being scratched and explored by an intruding member.")
+			saynn("Ты запрокидываешь голову и тяжело дышишь, пока стражница не спеша растягивает тебя. Наконец, складки твоего отверстия обволакивают зазубренную головку, а следом следует грубый толчок Риши, вбивающий остальную часть члена внутрь! Ты издаешь сдавленный стон дискомфорта, чувствуя, как чужое достоинство царапает и исследует твои внутренние стенки.")
 
 		# (else)
 		else:
-			saynn("You dangle around a lot, having to pretty much stand on your toes as the pipe is quite high. Risha gets herself hard and stands behind you, her strong hand catches your leg and lifts it up while the second one guides her prickly cock down your sex.")
+			saynn("Ты сильно болтаешься, вынужденный почти стоять на цыпочках, так как труба висит довольно высоко. Риша возбуждается и встает позади тебя; её сильная рука подхватывает твою ногу и задирает вверх, пока вторая направляет её колючий член в твою щель.")
 
-			saynn("Your lips send out a few soft moans while the soft barbs are brushing against your ring. After that you feel it being prodded by the shaft that starts putting more pressure, gradually stretching.")
+			saynn("Твои губы издают несколько тихих стонов, когда мягкие шипы начинают тереться о твое кольцо. После этого ты чувствуешь, как ствол начинает давить сильнее, постепенно растягивая тебя.")
 
-			saynn("[say=risha]My favorite moment~. Apart from breaking sluts completely, of course.[/say]")
+			saynn("[say=risha]Мой самый любимый момент~. Если, конечно, не считать полное ломание шлюх.[/say]")
 
-			saynn("You throw your head back and pant while the guard is taking her sweet time, stretching you out. Eventually your backdoor engulfs the barbed head soon followed by Risha’s rough thrust, shoving the rest of the shaft inside! You let out a stifled moan of discomfort as you feel your inner walls being scratched and explored by an intruding member.")
+			saynn("Ты запрокидываешь голову и тяжело дышишь, пока стражница не спеша растягивает тебя. Наконец, твоя задница обволакивает зазубренную головку, а следом следует грубый толчок Риши, вбивающий остальную часть члена внутрь! Ты издаешь сдавленный стон дискомфорта, чувствуя, как чужое достоинство царапает и исследует твои внутренние стенки.")
 
-		addButton("Continue", "See what happens next", "getCummedInside")
+		addButton("Продолжить", "Смотреть, что будет дальше", "getCummedInside")
 
 	if(state == "getCummedInside"):
 		playAnimation(StageScene.SexStanding, "fast", {npc="pc", pc="risha", pcCum=true, npcCum=true,
@@ -191,248 +191,248 @@ func _run():
 		
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("Risha still holds your leg lifted while proceeding to use you raw, almost pulling out her cock before thrusting deep inside. Her free paw lands on your chin and holds your jaw before forcing a few digits into your mouth. You can’t fight it, little moans escape while you begin to suck on offered fingers.")
+			saynn("Риша всё еще держит твою ногу поднятой, продолжая трахать тебя без смазки, почти вынимая свой член, прежде чем снова глубоко войти. Её свободная лапа ложится тебе на подбородок, сжимая челюсть и заталкивая несколько пальцев тебе в рот. Ты не можешь сопротивляться, из тебя вырываются тихие стоны, когда ты начинаешь сосать предложенные пальцы.")
 
-			saynn("[say=risha]Yeah, exactly how a proper slut must react.[/say]")
+			saynn("[say=risha]Да, именно так и должна реагировать настоящая шлюшка.[/say]")
 
 			# (if has cock)
 			if(GM.pc.isWearingChastityCage()):
-				saynn("Your chastity cage is just swaying around, the cock inside leaking pre while one of your pleasure points is being stimulated.")
+				saynn("Твоя девственная клетка просто болтается, а член внутри сочится предэякулятом, пока одна из твоих эрогенных зон подвергается стимуляции.")
 			elif(GM.pc.hasPenis()):
-				saynn("Your own cock is just swaying around, leaking pre while one of your pleasure points is being stimulated.")
+				saynn("Твой собственный член просто болтается, сочится предэякулятом, пока одна из твоих эрогенных зон подвергается стимуляции.")
 
 			# (if has big breasts)
 			if(GM.pc.hasBigBreasts()):
-				saynn("Your {pc.breasts} are unconstrained and are sent to bounce each time you get pounded.")
+				saynn("Твои {pc.breasts} не скованы и подпрыгивают каждый раз, когда тебя жестко трахают.")
 
-			saynn("The lynx quickly picks up the pace, eagerly fucking you, her barbed cock has reached your inner wall and began hammering at it, making you shake from so much sensations. You keep rattling the cuffs while the cat quickly brings your orgasm closer, you feel yourself getting tighter around her shaft.")
+			saynn("Рысь быстро ускоряется, жадно трахая тебя; её шипастый член достиг твоей внутренней стенки и начал молотить по ней, заставляя тебя дрожать от избытка ощущений. Ты продолжаешь греметь наручниками, пока кошка стремительно приближает твой оргазм, и ты чувствуешь, как сжимаешься вокруг её ствола.")
 
-			saynn("[say=risha]Ready to cum already? You’re dripping so much, must have been really riled up.[/say]")
+			saynn("[say=risha]Уже готов кончить? Ты весь так и течешь, должно быть, тебя неслакромно раззадорили.[/say]")
 
-			saynn("The barbs are becoming stiffer, your tongue drools onto the fingers in your mouth as the orgasm overwhelms you. Muscles begin to tense up, you’re squirming a lot while the lynx keeps thrusting inside you, raking at your inner walls and making each wave of pleasure that much better.")
+			saynn("Шипы становятся всё жестче, слюна стекает с твоего языка на пальцы во рту, когда оргазм накрывает тебя с головой. Мышцы начинают напрягаться, ты много ерзаешь, пока рысь продолжает вколачиваться в тебя, скребя по внутренним стенкам и делая каждую волну удовольствия еще мощнее.")
 
 			# (if has cock)
 			if(GM.pc.hasPenis()):
-				saynn("Your {pc.cock} wastes its {pc.cum} by messing up the floor.")
+				saynn("Твои {pc.cock} переводит впустую свой {pc.cum}, пачкая пол.")
 
-			saynn("[say=risha]Nghh~. Gonna breed you.[/say]")
+			saynn("[say=risha]Нгхх~. Сейчас я тебя осеменю.[/say]")
 
-			saynn("Yeah, it seems Risha doesn’t plan on pulling out, she rams her cock deep inside you and lets your {pc.pussyStretch} pussy get her over the edge. The barbs get very stiff and catch onto the inner walls while the shaft begins to throb and shoot cum into your babymaker. The mean lynx grunts while stuffing you full of her virile seed. All the while you keep sucking on her digits.")
+			saynn("Да, похоже, Риша не планирует выходить; она вгоняет свой член глубоко в тебя, позволяя твоей {pc.pussyStretch} киске довести её до края. Шипы становятся очень жесткими и цепляются за внутренние стенки, в то время как ствол начинает пульсировать, извергая сперму прямо в твою утробу. Злая рысь хрипит, набивая тебя своим полным жизни семенем. И всё это время ты продолжаешь сосать её пальцы.")
 
-			saynn("[say=risha]Good little slut.[/say]")
+			saynn("[say=risha]Хорошая маленькая шлюшка.[/say]")
 
 		# (if no pussy)
 		else:
-			saynn("Risha still holds your leg lifted while proceeding to use you raw, almost pulling out her cock before thrusting deep inside. Her free paw lands on your chin and holds your jaw before forcing a few digits into your mouth. You can’t fight it, little moans escape while you begin to suck on offered fingers.")
+			saynn("Риша всё еще держит твою ногу поднятой, продолжая трахать тебя без смазки, почти вынимая свой член, прежде чем снова глубоко войти. Её свободная лапа ложится тебе на подбородок, сжимая челюсть и заталкивая несколько пальцев тебе в рот. Ты не можешь сопротивляться, из тебя вырываются тихие стоны, когда ты начинаешь сосать предложенные пальцы.")
 
-			saynn("[say=risha]Yeah, exactly how a proper slut must react.[/say]")
+			saynn("[say=risha]Да, именно так и должна реагировать настоящая шлюшка.[/say]")
 
 			# (if has cock)
 			if(GM.pc.isWearingChastityCage()):
-				saynn("Your chastity cage is just swaying around, the cock inside leaking dripping uncontrollably.")
+				saynn("Твоя девственная клетка просто болтается, а член внутри беспорядочно сочит смазку.")
 			elif(GM.pc.hasPenis()):
-				saynn("Your own cock is just swaying around and dripping uncontrollably.")
+				saynn("Твой собственный член просто болтается и беспорядочно сочит смазку.")
 
 			# (if has big breasts)
 			if(GM.pc.hasBigBreasts()):
-				saynn("Your {pc.breasts} are unconstrained and are sent to bounce each time you get pounded.")
+				saynn("Твои {pc.breasts} не скованы и подпрыгивают каждый раз, когда тебя жестко трахают.")
 
-			saynn("The lynx quickly picks up the pace, eagerly fucking you, her barbed cock is hammering at your pleasure spot, making you shake from so much sensations. You keep rattling the cuffs while the cat quickly brings your orgasm closer, you feel yourself getting tighter around her shaft.")
+			saynn("Рысь быстро ускоряется, жадно трахая тебя; её шипастый член долбит прямо в твою точку удовольствия, заставляя тебя дрожать от переизбытка ощущений. Ты продолжаешь греметь наручниками, пока кошка стремительно приближает твой оргазм, и ты чувствуешь, как мышцы сжимаются вокруг её ствола.")
 
-			saynn("[say=risha]Ready to cum already? You must have been really riled up.[/say]")
+			saynn("[say=risha]Уже готов кончить? Тебя, должно быть, неслабо развезло.[/say]")
 
-			saynn("The barbs are becoming stiffer, your tongue drools onto the fingers in your mouth as the orgasm overwhelms you. Muscles begin to tense up, you’re squirming a lot while the lynx keeps thrusting inside you, raking at your inner walls and making each wave of pleasure that much better.")
+			saynn("Шипы становятся всё жестче, слюна стекает с твоего языка на пальцы во рту, когда оргазм накрывает тебя с головой. Мышцы начинают напрягаться, ты много ерзаешь, пока рысь продолжает вколачиваться в тебя, скребя по внутренним стенкам и делая каждую волну удовольствия еще мощнее.")
 
 			# (if has cock)
 			if(GM.pc.hasPenis()):
-				saynn("Your {pc.cock} wastes its {pc.cum} by messing up the floor.")
+				saynn("Твои {pc.cock} переводит впустую свой {pc.cum}, пачкая пол.")
 
-			saynn("[say=risha]Nghh~. Gonna breed you.[/say]")
+			saynn("[say=risha]Нгхх~. Сейчас я тебя осеменю.[/say]")
 
-			saynn("Yeah, it seems Risha doesn’t plan on pulling out, she rams her cock deep inside you and lets your {pc.analStretch} tailhole get her over the edge. The barbs get very stiff and catch onto the inner walls while the shaft begins to throb and shoot cum into your butt. The mean lynx grunts while stuffing you full of her virile seed. All the while you keep sucking on her digits.")
+			saynn("Да, похоже, Риша не собирается выходить; она вгоняет свой член глубоко в тебя, позволяя твоему {pc.analStretch} ану довести её до пика. Шипы становятся очень жесткими и цепляются за внутренние стенки, в то время как ствол начинает пульсировать, извергая сперму тебе в задницу. Злая рысь кряхтит, набивая тебя своим полным жизни семенем. И всё это время ты продолжаешь сосать её пальцы.")
 
-			saynn("[say=risha]Good little slut.[/say]")
+			saynn("[say=risha]Хорошая маленькая шлюшка.[/say]")
 
-		addButton("Continue", "See what happens next", "continue3")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue3")
 
 	if(state == "continue3"):
 		removeCharacter("risha")
 		playAnimation(StageScene.Solo, "stand")
 		
-		saynn("After the lynx is done cumming inside you, she waits for her barbs to become a bit softer before pulling out, causing you to moan again.")
+		saynn("После того как рысь кончает в тебя, она ждет, пока её шипы немного размягчатся, прежде чем вытащить член, заставляя тебя снова застонать.")
 
-		saynn("[say=risha]Huh, now where is that other slut.[/say]")
+		saynn("[say=risha]Хм, и где же эта другая шлюшка?[/say]")
 
-		saynn("Risha looks around, unable to find Tavi. She huffs and leaves you a panting leaking cum mess. You’re also still cuffed to the pipe.")
+		saynn("Риша оглядывается, не в силах найти Тави. Она фыркает и оставляет тебя тяжело дышащим, текущим и залитым спермой месивом. Ты всё еще прикован наручниками к трубе.")
 
-		addButton("Wait", "Maybe someone will return", "wait")
+		addButton("Подождать", "Может, кто-нибудь вернется...", "wait")
 
 	if(state == "wait"):
 		addCharacter("tavi")
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
 		
-		saynn("After a bit of time you notice Tavi returning.")
+		saynn("Спустя некоторое время ты замечаешь возвращающуюся Тави.")
 
-		saynn("She walks up to you before freeing your hands.")
+		saynn("Она подходит к тебе, прежде чем освободить твои руки.")
 
-		saynn("[say=pc]What took you so long?[/say]")
+		saynn("[say=pc]Чего ты так долго?[/say]")
 
-		saynn("[say=tavi]You will see, cutie.[/say]")
+		saynn("[say=tavi]Сама увидишь, милашка.[/say]")
 
 		# (Tavi pulls out a tablet)
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 
 	if(state == "struggle"):
-		saynn("You find a good moment and free your arm before shoving an elbow into Risha’s face, making her hiss from pain and stagger. You break free of her grasp and shove her back.")
+		saynn("Ты ловишь удачный момент и высвобождаешь руку, после чего впечатываешь локоть прямо в лицо Рише. Она шипит от боли и пошатывается. Ты вырываешься из её хватки и толкаешь её назад.")
 
-		saynn("[say=risha]Is that how you’re gonna play, slut?[/say]")
+		saynn("[say=risha]Так, значит, мы будем играть по-взрослому, сучка?[/say]")
 
-		saynn("Risha tries to find her shock remote but its not there.")
+		saynn("Риша пытается нащупать свой пульт шокера, но его там нет.")
 
-		saynn("[say=risha]Fuck. Not again.[/say]")
+		saynn("[say=risha]Блядь. Опять.[/say]")
 
-		saynn("At least her stun baton is still there. She grabs it and prepares for a fight.")
+		saynn("По крайней мере, её электродубинка всё ещё при ней. Она хватает её и готовится к драке.")
 
-		saynn("[say=risha]Well, let's do it the old fashioned way then.[/say]")
+		saynn("[say=risha]Ну что ж, тогда давай по старинке.[/say]")
 
 		# (fight)
-		addButton("Fight!", "Begin the fight", "fight_horny")
+		addButton("В бой!", "Начать бой", "fight_horny")
 
 	if(state == "if_won"):
 		addCharacter("tavi")
-		saynn("Risha drops to her knees and huffs at you. That’s when Tavi shows up.")
+		saynn("Риша падает на колени и тяжело дышит, глядя на тебя. В этот момент появляется Тави.")
 
-		saynn("[say=pc]Where have you been?[/say]")
+		saynn("[say=pc]Ты где пропадала?[/say]")
 
-		saynn("Tavi leans in to whisper into your ear.")
+		saynn("Тави наклоняется, чтобы прошептать тебе на ухо.")
 
-		saynn("[say=tavi]You will see later. Good job, my pet.[/say]")
+		saynn("[say=tavi]Увидишь позже. Молодец, мой питомец.[/say]")
 
-		saynn("[say=risha]You can’t just leave me.[/say]")
+		saynn("[say=risha]Ты не можешь просто так меня бросить.[/say]")
 
-		saynn("Tavi leans down to Risha and smiles before stealing cuffs off of her and restraining her paws.")
+		saynn("Тави наклоняется к Рише и улыбается, прежде чем стащить с неё наручники и сковать её лапы.")
 
-		addButton("Let her go", "Risha can go screw herself", "let_her_go")
-		addButton("Humiliate", "Strip Risha and write some things on her with a marker", "humiliate")
+		addButton("Отпустить её", "Пусть Риша идёт нахер", "let_her_go")
+		addButton("Унизить", "Раздеть Ришу и что-нибудь написать на ней маркером", "humiliate")
 		
 
 	if(state == "if_lost"):
-		saynn("You drop to your knees, unable to continue fighting.")
+		saynn("Ты падаешь на колени, не в силах продолжать борьбу.")
 
-		saynn("Risha looks around and sighs before producing a black marker.")
+		saynn("Риша оглядывается и вздыхает, после чего достаёт чёрный маркер.")
 
-		saynn("[say=risha]Where is that whore?[/say]")
+		saynn("[say=risha]Где эта шлюха?[/say]")
 
-		saynn("[say=pc]Why would I know?[/say]")
+		saynn("[say=pc]Откуда мне знать?[/say]")
 
-		saynn("She grabs you by the collar and presses the maker against your cheek.")
+		saynn("Она хватает тебя за воротник и прижимает маркер к твоей щеке.")
 
-		saynn("[say=risha]You’re her pet, of course you know.[/say]")
+		saynn("[say=risha]Ты её питомец, и ты это прекрасно знаешь.[/say]")
 
-		addButton("Let her draw", "Risha will draw something on you", "let_her_draw")
-		addButton("Struggle!", "You really don’t wanna be drawn on. This might be painful though", "struggle!")
+		addButton("Позволить ей рисовать", "Риша что-то на тебе нарисует", "let_her_draw")
+		addButton("Сопротивляться!", "Тебе очень не хочется, чтобы на тебе рисовали. Но это может быть больно.", "struggle!")
 
 
 	if(state == "let_her_draw"):
 		addCharacter("tavi")
-		saynn("You keep silent but also don’t resist her, just trying to catch your breath.")
+		saynn("Ты молчишь, но и не сопротивляешься, просто пытаясь перевести дух.")
 
-		saynn("[say=risha]Fine, I see how it is.[/say]")
+		saynn("[say=risha]Ладно, теперь понятно.[/say]")
 
-		saynn("Risha draws something humiliating on you, in a few spots actually. She then just straightens her posture and chuckles at the view.")
+		saynn("Риша рисует на тебе что-то унизительное, причем в нескольких местах. Затем она выпрямляется и посмеивается, глядя на результат.")
 
-		saynn("[say=risha]Much better.[/say]")
+		saynn("[say=risha]Так гораздо лучше.[/say]")
 
-		saynn("But just before Risha can react, Tavi jumps her and steals the stun baton before shoving it into the exposed part of her neck. Risha cries out from pain as her body locks up and hits the floor.")
+		saynn("Но не успевает Риша среагировать, как Тави набрасывается на неё, выхватывает электрошокер и с силой втыкает его в открытый участок её шеи. Риша вскрикивает от боли, её тело сводит судорогой, и она валится на пол.")
 
-		saynn("[say=risha]Arghh!.. B-bit-tch.[/say]")
+		saynn("[say=risha]Аргхх!.. С-сучка![/say]")
 
-		saynn("[say=tavi]No you.[/say]")
+		saynn("[say=tavi]Нет, сама ты![/say]")
 
-		saynn("Tavi holds the weapon against the lynx’s neck until she stops trying to struggle.")
+		saynn("Тави прижимает оружие к шее рыси, пока та не перестаёт сопротивляться.")
 
-		saynn("[say=pc]What took you so long.[/say]")
+		saynn("[say=pc]Чего ты так долго?[/say]")
 
-		saynn("[say=tavi]I will explain, cutie.[/say]")
+		saynn("[say=tavi] Сейчас всё объясню, милашка.[/say]")
 
-		addButton("Let her go", "Risha can go screw herself", "let_her_go")
-		addButton("Humiliate", "Strip Risha and write some things on her with a marker", "humiliate")
+		addButton("Отпустить её", "Пусть Риша идёт нахер", "let_her_go")
+		addButton("Унизить", "Раздеть Ришу и что-нибудь написать на ней маркером", "humiliate")
 		
 
 	if(state == "struggle!"):
 		addCharacter("tavi")
-		saynn("You hit the marker out of Risha’s paws and hear her growling. She kicks you down before pinning to the floor with her armored boot.")
+		saynn("Ты выбиваешь маркер из лап Риши и слышишь её рычание. Она сбивает тебя с ног, а затем прижимает к полу своим бронированным сапогом.")
 
-		saynn("[say=risha]That was a huge mistake, inmate.[/say]")
+		saynn("[say=risha]Это была огромная ошибка, заключенная.[/say]")
 
-		saynn("She grabs her handy stun baton and presses it against your exposed parts, sending a long powerful shock through you. All the while keeping you still with her boot that seems to be isolating her from being shocked too.")
+		saynn("Она хватает свой электрошокер и прижимает его к твоим самым чувствительным местам, пропуская через тебя мощный, затяжной разряд. При этом она удерживает тебя на месте сапогом, который, кажется, изолирует её саму от удара током.")
 
-		saynn("But just before Risha can react, Tavi jumps her and yanks on her hair before making it so she shoves the stun baton into her own neck. Risha cries out from pain as her body locks up and hits the floor.")
+		saynn("Но не успевает Риша среагировать, как Тави набрасывается на неё, хватает за волосы и заставляет её саму впечатать электрошокер в свою шею. Риша вскрикивает от боли, её тело сводит судорогой, и она валится на пол.")
 
-		saynn("[say=risha]Arghh!.. B-bit-tch.[/say]")
+		saynn("[say=risha]Аргхх!.. С-сучка![/say]")
 
-		saynn("[say=tavi]No you.[/say]")
+		saynn("[say=tavi]Нет, сама ты![/say]")
 
-		saynn("Tavi holds the weapon against the lynx’s neck until she stops trying to struggle.")
+		saynn("Тави прижимает оружие к шее рыси, пока та не перестаёт сопротивляться.")
 
-		saynn("You take some time trying to catch your breath.")
+		saynn("Ты тратишь некоторое время, пытаясь перевести дух.")
 
-		saynn("[say=pc]What took you so long.[/say]")
+		saynn("[say=pc]Чего ты так долго?[/say]")
 
-		saynn("[say=tavi]I will explain, cutie.[/say]")
+		saynn("[say=tavi] Сейчас всё объясню, милашка.[/say]")
 
-		saynn("Tavi then steals some cuffs off of Risha and restrains her paws.")
+		saynn("Затем Тави стащила наручники у Риши и сковала её лапы.")
 
 		# (Options are let her go, humiliate)
-		addButton("Let her go", "Risha can go screw herself", "let_her_go")
-		addButton("Humiliate", "Strip Risha and write some things on her with a marker", "humiliate")
+		addButton("Отпустить её", "Пусть Риша идёт нахер", "let_her_go")
+		addButton("Унизить", "Раздеть Ришу и что-нибудь написать на ней маркером", "humiliate")
 		
 
 	if(state == "let_her_go"):
 		removeCharacter("risha")
-		saynn("[say=pc]We should let her go.[/say]")
+		saynn("[say=pc]Нам стоит её отпустить.[/say]")
 
-		saynn("[say=tavi]Are you sure, cutie? I’m sure this slut doesn’t mind being degraded.[/say]")
+		saynn("[say=tavi]Ты уверена, милашка? Уверена, этой шлюхе не привыкать к унижениям.[/say]")
 
-		saynn("Risha rattles her cuffs and growls back. But that just makes Tavi put her digi foot onto the guard’s face and pin her with it.")
+		saynn("Риша гремит наручниками и рычит в ответ. Но это лишь заставляет Тави прижать цифровую стопу к лицу охранницы, удерживая её на месте.")
 
-		saynn("[say=tavi]I didn’t ask you.[/say]")
+		saynn("[say=tavi]Я тебя не спрашивала.[/say]")
 
-		saynn("[say=pc]Yeah, whatever. She got what she deserves already.[/say]")
+		saynn("[say=pc]Да ладно, пофиг. Она уже получила то, что заслужила.[/say]")
 
-		saynn("Tavi shrugs and kicks Risha to make her stand up. The guard obeys and gives you both an angry stare before leaving shortly after, still handcuffed.")
+		saynn("Тави пожимает плечами и пинает Ришу, заставляя ту встать. Охранница подчиняется и бросает на вас обоих сердитый взгляд, после чего уходит, всё ещё в наручниках.")
 
-		saynn("[say=pc]So. What now?[/say]")
+		saynn("[say=pc]Ну и? Что теперь?[/say]")
 
 		#(scene ends)
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 	if(state == "humiliate"):
 		addCharacter("risha", ["naked"])
 		
-		saynn("[say=pc]Can you help me strip her?[/say]")
+		saynn("[say=pc]Поможешь мне раздеть её?[/say]")
 
-		saynn("[say=tavi]Sure~.[/say]")
+		saynn("[say=tavi]Ну конечно~.[/say]")
 
-		saynn("Risha growls at that question but a slap on the cheek makes her calm down. You and Tavi begin to pry off pieces of riot armor from the lynx until there is nothing but shorts and a light top on her, it must be getting quite hot in that armor. She snarls again when you reach for her clothing.")
+		saynn("Риша рычит в ответ на этот вопрос, но от пощечины по щеке она немного успокаивается. Вы с Тави начинаете сдирать с рыси куски протекторной брони, пока на ней не остаются одни шорты и легкий топ — в этой броне, должно быть, становится совсем жарко. Когда вы тянетесь к её одежде, она снова скалится.")
 
-		saynn("[say=risha]Bitch, don’t you dare.[/say]")
+		saynn("[say=risha]Сучка, только попробуй![/say]")
 
-		saynn("But Tavi forces her digi foot into the guard’s cheek to pin her head into the cold floor.")
+		saynn("Но Тави с силой вжимает свой цифровой ботинок в щеку охранницы, пригвождая её голову к холодному полу.")
 
-		saynn("[say=tavi]Not so cocky now, are you?[/say]")
+		saynn("[say=tavi]Что, уже не такая дерзкая?[/say]")
 
-		saynn("You pull down her shorts, exposing her sheath and a little slit hiding underneath her fluffy balls. Then you pull up her top too, exposing her big bouncy tits.")
+		saynn("Вы стягиваете с неё шорты, обнажая её ножны и узкую щелочку, спрятанную под пушистыми яйцами. Затем вы задираете и топ, открывая вид на её большие, прыгучие сиськи.")
 
-		saynn("[say=tavi]Sluts don’t need clothes~[/say]")
+		saynn("[say=tavi]Шлюхам одежда ни к чему~[/say]")
 
-		saynn("Risha squirms and struggles against her cuffs so you give her breasts a smack each, sending them to jiggle.")
+		saynn("Риша извивается и пытается вырваться из наручников, поэтому вы отвешиваете каждой её груди по звонкому шлепку, заставляя их колыхаться.")
 
-		saynn("You notice a marker sticking out of one of Risha’s pouches. That might come in handy.")
+		saynn("Вы замечаете маркер, торчащий из одного из подсумков Риши. Это может пригодиться.")
 
-		addButton("Draw on her", "Scribble some humiliating things on Risha’s body", "draw_on_her")
-		addButtonWithChecks("Piss on her", "Make the slut really regret it", "piss_on_her", [], [[ButtonChecks.ContentEnabled, ContentType.Watersports]])
+		addButton("Нарисовать на ней", "Написать несколько унизительных слов на теле Риши", "draw_on_her")
+		addButtonWithChecks("Нассать на неё", "Заставить эту шлюху по-настоящему пожалеть об этом", "piss_on_her", [], [[ButtonChecks.ContentEnabled, ContentType.Watersports]])
 
 
 	if(state == "draw_on_her"):
@@ -442,26 +442,26 @@ func _run():
 			npcBodyState={naked=true,},
 		})
 
-		saynn("You go through the guard’s equipment and find a black permanent marker. When seeing it, Risha immediately begins to squirm and try to break free but Tavi is holding her still.")
+		saynn("Ты копаешься в снаряжении охранника и находишь черный перманентный маркер. Увидев его, Риша тут же начинает извиваться и пытаться вырваться, но Тави крепко держит её.")
 
-		saynn("[say=tavi]Don’t wiggle, slut. Or nobody will be able to read it~[/say]")
+		saynn("[say=tavi]Не дергайся, шлюшка. А то никто не сможет разобрать~[/say]")
 
-		saynn("[say=risha]You can go fuck yourself.[/say]")
+		saynn("[say=risha]Да иди ты нахуй.[/say]")
 
-		saynn("[say=tavi]Nu-uh~[/say]")
+		saynn("[say=tavi]Как бы не так~[/say]")
 
-		saynn("You begin scribbling naughty words on Risha, slowly making her look more like a used fucktoy. Tavi grabs the marker and adds some of her own too.")
+		saynn("Ты начинаешь выводить похабные словечки на теле Риши, постепенно превращая её в подобие использованной секс-игрушки. Тави перехватывает маркер и тоже добавляет кое-что от себя.")
 
-		saynn("Eventually the naked Risha begins to look more like a canvas, covered in drawings. And she can’t really cover herself due to her cuffed arms, she looks at her fur and sighs.")
+		saynn("В конце концов, обнаженная Риша становится похожа на холст, покрытый рисунками. Из-за скованных рук она не может прикрыться, поэтому лишь вздыхает, глядя на свой мех.")
 
-		saynn("[say=risha]Really?[/say]")
+		saynn("[say=risha]Серьезно?[/say]")
 
-		saynn("[say=tavi]Yeah~. Now get the fuck out, I won’t touch your shit.[/say]")
+		saynn("[say=tavi]Ага~. А теперь вали нахуй, к твоему дерьму я прикасаться не буду.[/say]")
 
-		saynn("And just like that, Risha gets up and leaves, trying to be sneaky so nobody sees her.")
+		saynn("И вот так, Риша встает и уходит, стараясь действовать незаметно, чтобы никто не увидел.")
 
 		#(scene ends)
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 	if(state == "piss_on_her"):
 		# (needs piss enabled)
@@ -472,64 +472,64 @@ func _run():
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
-			saynn("Tavi is still helping you to keep naked Risha in place so you take your time exposing your {pc.cock}.")
+			saynn("Тави всё еще помогает тебе удерживать голую Ришу на месте, чтобы ты мог не спеша выставить напоказ свой {pc.cock}.")
 
 		# (else if pussy)
 		elif(GM.pc.hasVagina()):
-			saynn("Tavi is still helping you to keep naked Risha in place so you take your time exposing your pussy.")
+			saynn("Тави всё еще помогает тебе удерживать голую Ришу на месте, чтобы ты мог не спеша выставить напоказ свою киску.")
 
 		# (else)
 		else:
-			saynn("Tavi is still helping you to keep naked Risha in place so you take your time exposing your crotch.")
+			saynn("Тави всё еще помогает тебе удерживать голую Ришу на месте, чтобы ты мог не спеша выставить напоказ свою промежность.")
 
-		saynn("[say=pc]Gonna mark her, that will make her remember it.[/say]")
+		saynn("[say=pc]Помечу её, тогда она это запомнит.[/say]")
 
-		saynn("[say=risha]What? Mark how?![/say]")
+		saynn("[say=risha]Что? Пометить как?![/say]")
 
-		saynn("[say=tavi]Sure, cutie~.[/say]")
+		saynn("[say=tavi]Конечно, милашка~.[/say]")
 
 		# (if cock)
 		if(GM.pc.hasPenis()):
-			saynn("Without answering Risha’s question, you just hold your cock in her direction and try to force the urge. The lynx seems to eventually realize what your plan is about, she is panting and trying to break free again but it’s too late, a stream of yellow hot piss emerges from your dick and gives the guard a golden shower. She is whining and squirming as the gross fluids make her white fur look yellow, you make sure to piss all over her tits, belly and even her sheath.")
+			saynn("Не отвечая на вопрос Риши, ты просто направляешь свой член в её сторону и пытаешься вызвать позыв. Рысь, кажется, со временем понимает, что ты задумал; она тяжело дышит и пытается вырваться, но уже слишком поздно — из твоего члена вырывается струя горячей желтой мочи, устраивая стражнице золотой дождь. Она скулит и извивается, пока мерзкая жидкость окрашивает её белый мех в желтый цвет; ты стараешься облить мочой её грудь, живот и даже препуций.")
 
 		# (else if pussy)
 		else:
-			saynn("Without answering Risha’s question, you just stand over her and try to force the urge. The lynx seems to eventually realize what your plan is about, she is panting and trying to break free again but it’s too late, a stream of yellow hot piss emerges from your pee hole and gives the guard a golden shower. She is whining and squirming as the gross fluids make her white fur look yellow, you make sure to piss all over her tits, belly and even her sheath.")
+			saynn("Не отвечая на вопрос Риши, ты просто нависаешь над ней и пытаешься вызвать позыв. Рысь, кажется, со временем понимает, что ты задумал; она тяжело дышит и пытается вырваться, но уже слишком поздно — из твоего мочеиспускательного канала вырывается струя горячей желтой мочи, устраивая стражнице золотой дождь. Она скулит и извивается, пока мерзкая жидкость окрашивает её белый мех в желтый цвет; ты стараешься облить мочой её грудь, живот и даже препуций.")
 
-		saynn("[say=risha]Hey-y! Stop it! That’s fucking gross.[/say]")
+		saynn("[say=risha]Эй-эй! Прекрати! Это же, блядь, мерзко![/say]")
 
-		saynn("[say=tavi]Piss on her face too, the slut talks too much~[/say]")
+		saynn("[say=tavi]И на лицо ей насри тоже, эта сучка слишком много болтает~[/say]")
 
-		saynn("Tavi pulls her leg away and you obey, pissing on her face and hair too, making the lynx close her eyes and mouth but still forcing her to smell the scent of pee.")
+		saynn("Тави оттягивает её ногу, и ты повинуешься, запуская струю ей прямо в лицо и волосы; рысь зажмуривается и пытается закрыть рот, но всё равно вынуждена вдыхать запах мочи.")
 
-		saynn("[say=pc]That felt so good.[/say]")
+		saynn("[say=pc]Как же это было хорошо.[/say]")
 
-		saynn("After the shower, Risha looks extremely humiliated, her red face shows that she is embarrassed of what happened.")
+		saynn("После душа Риша выглядит крайне униженной; её покрасневшее лицо выдаёт жуткое смущение от произошедшего.")
 
-		saynn("[say=tavi]Now get the fuck out, I won’t touch your shit.[/say]")
+		saynn("[say=tavi]А теперь съебись нахер, я к твоему дерьму даже не прикоснусь.[/say]")
 
-		saynn("Without an extra, naked and gross-smelling Risha obeys, getting up as fast as she can and leaving.")
+		saynn("Без лишних слов, голая и вонючая, Риша подчиняется: она вскакивает как можно быстрее и уходит.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 	if(state == "attack"):
 		removeCharacter("tavi")
 		playAnimation(StageScene.Duo, "stand", {npc="risha"})
 		
-		saynn("You step in and break the eye contact that Risha has on Tavi. The lynx smirks and points the remote at you instead.")
+		saynn("Ты делаешь шаг вперед, разрывая зрительный контакт между Ришей и Тави. Рысь ухмыляется и наводит пульт на тебя.")
 
-		saynn("[say=risha]Well, if you wanna suffer first, be my guest~.[/say]")
+		saynn("[say=risha]Ну, если хочешь пострадать первым — пожалуйста~.[/say]")
 
-		saynn("But before she can press the button, you decide to taunt her.")
+		saynn("Но прежде чем она успевает нажать на кнопку, ты решаешь её подразнить.")
 
-		saynn("[say=pc]What, can’t even fight a single inmate without using that thing? Are you that weak?[/say]")
+		saynn("[say=pc]Что, даже с одной заключенной справиться не можешь без этой хреновины? Неужели ты такая слабачка?[/say]")
 
-		saynn("Risha frowns at first but then a cheeky grin returns to her face. All the while Tavi is sneaking out of view to do something. Risha puts away the remote and whips out her stun baton.")
+		saynn("Риша сначала хмурится, но затем на её лице снова появляется дерзкая ухмылка. Всё это время Тави незаметно ускользает из виду, чтобы что-то предпринять. Риша убирает пульт и выхватывает электрошоковую дубинку.")
 
-		saynn("[say=risha]Fine, bitch. Bring it on~.[/say]")
+		saynn("[say=risha]Ладно, сучка. Ну давай, нападай~.[/say]")
 
 		# (Fight happens, if won and if lost are the same as with seducing)
-		addButton("Fight!", "Begin the fight", "fight_normal")
+		addButton("В бой!", "Начать бой", "fight_normal")
 
 	if(state == "wait1"):
 		addCharacter("tavi", ["naked"])
@@ -538,45 +538,45 @@ func _run():
 			bodyState={naked=true,},
 		})
 		
-		saynn("Maybe it's best not to do anything and see what happens, wedging between them at the current moment seems like a bad idea.")
+		saynn("Возможно, лучше ничего не предпринимать и посмотреть, что будет дальше; вклиниваться между ними прямо сейчас кажется плохой затеей.")
 
-		saynn("Tavi is still holding her paws up while glancing at you sometimes while Risha is threatening her with the remote.")
+		saynn("Тави всё ещё держит лапки поднятыми, время от времени поглядывая на тебя, пока Риша угрожает ей пультом.")
 
-		saynn("[say=risha]Unbutton that shirt.[/say]")
+		saynn("[say=risha]Расстегни рубашку.[/say]")
 
-		saynn("[say=tavi]Why don’t y..[/say]")
+		saynn("[say=tavi]А почему бы тебе...[/say]")
 
-		saynn("But just before Tavi can finish her sentence, Risha presses the button that sends an annoyingly painful shock through the red. Tavi is trying to hold strong but her muscles are visibly tensing up in reaction to electricity. You can’t help but to wince as the passive observer.")
+		saynn("Но прежде чем Тави успевает закончить фразу, Риша нажимает на кнопку, посылая по красной дубинке раздражающе болезненный разряд. Тави пытается держаться стойко, но её мышцы заметно напрягаются в ответ на электричество. Ты невольно морщишься, будучи пассивным наблюдателем.")
 
-		saynn("[say=tavi]Grghh-..[/say]")
+		saynn("[say=tavi]Гррхх!..[/say]")
 
-		saynn("[say=risha]Shut up and do as you’re told.[/say]")
+		saynn("[say=risha]Заткнись и делай, что велят.[/say]")
 
-		saynn("When the shock ends, Tavi is left quite annoyed. She glances at you with her mean eyes again before moving her paws to her shirt and undoing each button one by one, eventually exposing her purplish belly but nothing else.")
+		saynn("Когда разряд прекращается, Тави остается в крайнем раздражении. Она снова бросает на тебя взгляд своих коварных глаз, после чего тянется лапками к рубашке и начинает расстегивать пуговицу за пуговицей, в итоге обнажая свой фиолетовый животик, но не больше.")
 
-		saynn("[say=risha]Take it off.[/say]")
+		saynn("[say=risha]Снимай.[/say]")
 
-		saynn("[say=tavi]Say please?[/say]")
+		saynn("[say=tavi]Скажи «пожалуйста».[/say]")
 
-		saynn("Instead of answering, Risha just presses the button, causing the other cat to hiss and grind her teeth while her body is suffering from the constant painful shock.")
+		saynn("Вместо ответа Риша просто жмет на кнопку, заставляя другую кошку шипеть и скрежетать зубами от непрекращающихся мучительных разрядов тока.")
 
-		saynn("[say=risha]That’s enough manners for you?[/say]")
+		saynn("[say=risha]Это всё, на что тебя хватило в плане манер?[/say]")
 
-		saynn("Tavi nods subtly and opens her inmate shirt more, exposing her pristine perky tits with glowing green nips. Her chest is visibly rising and lowering as she is trying to catch her breath. The tall cat then takes off the piece of clothing completely and lets it fall. Risha hungrily eyes the exposed chest while grinning.")
+		saynn("Тави едва заметно кивает и распахивает свою тюремную рубашку еще шире, обнажая упругую, безупречную грудь с сияющими зелеными сосками. Видно, как ее грудная клетка тяжело вздымается и опускается — она пытается отдышаться. Высокая кошка полностью стягивает с себя одежду и дает ей упасть на пол. Риша с голодным блеском в глазах разглядывает обнаженную грудь, широко ухмыляясь.")
 
-		saynn("[say=risha]Much better. Now the shorts.[/say]")
+		saynn("[say=risha]Так-то лучше. Теперь шорты.[/say]")
 
-		saynn("Tavi squints at the lynx but the threat of being shocked again makes her obey. She reaches for her shorts and sneaks two digits under the rubber band before slowly pulling them down.")
+		saynn("Тави прищуривается, глядя на рысь, но угроза нового удара током заставляет ее подчиниться. Она тянется к шортам и, просунув два пальца под резинку, медленно стягивает их вниз.")
 
-		saynn("[say=tavi]Of course, miss.[/say]")
+		saynn("[say=tavi]Конечно, мисс.[/say]")
 
-		saynn("As the shorts fall, her crotch and the tight pussy slit get exposed. Tavi raises her paws up again, letting Risha look at her careful little kitty that has the same bright green color as her nips.")
+		saynn("Когда шорты спадают, обнажается ее промежность и узкая щель киски. Тави снова поднимает лапы, позволяя Рише рассмотреть свою аккуратную маленькую киску, которая отливает тем же ярко-зеленым цветом, что и соски.")
 
-		saynn("[say=risha]Much better. I knew there was a slut in you. I’m gonna put cuffs on you.[/say]")
+		saynn("[say=risha]Куда лучше. Я знала, что внутри тебя сидит шлюха. Сейчас я надену на тебя наручники.[/say]")
 
-		saynn("Completely naked Tavi just offers the lynx a kind smile.")
+		saynn("Совершенно голая Тави лишь ласково улыбается рыси.")
 
-		addButton("Continue", "See what happens next", "continue4")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue4")
 
 	if(state == "continue4"):
 		playAnimation(StageScene.Duo, "defeat", {
@@ -584,38 +584,38 @@ func _run():
 			bodyState={naked=true,},
 		})
 		
-		saynn("Risha checks out all of Tavi's exposed curves before proceeding to slowly step towards her while still holding the remote.")
+		saynn("Риша оценивающим взглядом обводит все изгибы обнаженного тела Тави, прежде чем медленно двинуться к ней, всё еще сжимая в руке пульт.")
 
-		saynn("[say=risha]Then I will bend you over and breed your slutty little slit. And you’re gonna take it like a good fucktoy.[/say]")
+		saynn("[say=risha]Тогда я нагну тебя и засажу в твою шлюшью щелочку. И ты будешь принимать это как послушная секс-игрушка.[/say]")
 
-		saynn("Tavi is smiling, her paws are still up in the air while Risha is reaching for her cuffs. But just when the lynx pulls her eyes away from the cat, she dashes forward and grabs the hand that holds the remote before expertly wrenching it behind Risha’s back, causing a sudden spike of pain for her.")
+		saynn("Тави улыбается, всё еще держа лапки в воздухе, пока Риша тянется к её наручникам. Но как только рысь отводит взгляд от кошки, та резко бросается вперед и хватает руку с пультом, мастерски выворачивая её за спину Риши, заставляя ту вскрикнуть от внезапной боли.")
 
-		saynn("[say=risha]Argh, bitch![/say]")
+		saynn("[say=risha]Аргх, сука![/say]")
 
-		saynn("Risha tries to break free but Tavi is already behind her and holding her neck with the free hand, trying to choke the guard into submission. It was so sudden, you’re not really sure what to do and Tavi is not giving you any orders so you feel like you’re paralized.")
+		saynn("Риша пытается вырваться, но Тави уже оказывается у неё за спиной и свободной рукой вцепляется ей в шею, пытаясь задушить охранницу и заставить её сдаться. Всё произошло так внезапно, что ты толком не понимаешь, что делать, а Тави не отдает никаких приказов, так что ты чувствуешь себя словно парализованным.")
 
-		saynn("[say=tavi]Submit already, whore, it’s not worth it.[/say]")
+		saynn("[say=tavi]Сдавайся уже, шлюха, оно того не стоит.[/say]")
 
-		saynn("But eventually Risha manages to free her hand enough to slam the button on the remote, sending a powerful shock through Tavi and forcing her body to let go. The lynx then breaks free easily and kicks Tavi down. Risha is pressing her armored boot into Tavi’s naked belly to make sure she can’t stand up while the constant shock wears down her body and spirit.")
+		saynn("Но в конце концов Рише удается достаточно освободить руку, чтобы с силой вдавить кнопку на пульте, посылая мощный разряд тока через тело Тави и заставляя её мышцы разжаться. Рысь легко вырывается и сбивает Тави с ног ударом ноги. Риша вдавливает свой бронированный сапог в обнаженный живот Тави, не давая ей подняться, пока непрекращающиеся разряды тока подтачивают её тело и дух.")
 
-		saynn("[say=risha]I will make sure you remember this, stupid brat.[/say]")
+		saynn("[say=risha]Я сделаю так, что ты запомнишь это, мелкая дрянь.[/say]")
 
-		saynn("There is no other choice, you must act to save Tavi!")
+		saynn("Другого выбора нет, ты должен действовать, чтобы спасти Тави!")
 
-		addButton("Push her!", "Shove Risha to make her stop", "push_her!")
+		addButton("Толкни её!", "Ткнуть Ришу, чтобы она остановилась", "push_her!")
 
 	if(state == "push_her!"):
 		removeCharacter("tavi")
 		playAnimation(StageScene.Duo, "shove", {npc="risha", npcAction="hurt"})
 		
-		saynn("You rush towards the pair and shove Risha away from Tavi. That makes the lynx drop the shock remote and snarl at you before hitting the floor in her bulky riot armor. She kicks you back and reaches for her weapon before getting up.")
+		saynn("Ты бросаешься к ним и отталкиваешь Ришу от Тави. От неожиданности рысь роняет пульт электрошокера и, оскалившись на тебя, тяжело плюхается на пол в своей громоздкой полицейской броне. Прежде чем подняться, она пинает тебя и тянется к своему оружию.")
 
-		saynn("[say=risha]Oh yeah?! Trying to be a hero? Bring it on, white knight.[/say]")
+		saynn("[say=risha]Ах так?! Решил поиграть в героя? Ну давай, рыцарь без страха и упрека, попробуй меня![/say]")
 
-		saynn("All the while Tavi is left panting on the floor, she is swiftly grabbing her clothes and also something else before quickly making her escape.")
+		saynn("В это время Тави, тяжело дыша, остается лежать на полу; она быстро хватает свою одежду и еще что-то сверху, после чего стремительно скрывается.")
 
 		# (Fight Risha, if won and if lost are same as before)
-		addButton("Fight!", "Begin the fight", "fight_easier")
+		addButton("В бой!", "Начать бой", "fight_easier")
 		
 		
 

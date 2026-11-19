@@ -11,15 +11,15 @@ func run(_triggerID, _args):
 		return
 	
 	if(getModuleFlag("RahiModule", "Rahi_NotThereToday", false)):
-		saynn("Seems like the kitty is not here")
+		saynn("Похоже, кошечки здесь нет")
 		
-		addDisabledButton("Rahi", "She is not here today")
+		addDisabledButton("Рахи", "Сегодня её здесь нет")
 		return
 	
 	if(!getModuleFlag("RahiModule", "Rahi_Introduced")):
-		saynn("You see some unknown feline sitting on a bench")
+		saynn("Вы видите какую-то неизвестную кошку, сидящую на скамейке")
 	else:
-		saynn("You see the Kitty sitting on a bench")
+		saynn("Вы видите Кошечку, сидящую на скамейке")
 	addButtonUnlessLate("Rahi", "Talk to the feline", "talk")
 
 func getPriority():

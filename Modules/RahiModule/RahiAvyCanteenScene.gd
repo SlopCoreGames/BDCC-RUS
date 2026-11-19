@@ -8,264 +8,264 @@ func _run():
 		addCharacter("rahi")
 		
 	if(state == ""):
-		saynn("The food isn’t great but it’s still better than nothing. You begin chewing on the paste and thinking about today when you suddenly hear a familiar voice.")
+		saynn("Еда не сахар, но всё же лучше, чем ничего. Ты начинаешь жевать пасту и погружаешься в мысли о сегодняшнем дне, как вдруг слышишь знакомый голос.")
 
-		saynn("[say=rahi]Can kitty sit near?..[/say]")
+		saynn("[say=rahi]Можно кошечке присесть рядом?..[/say]")
 
-		saynn("You turn your head and see the kitten, a brown feline that is from a general block. She looks a bit nervous, avoiding eye contact after asking the question.")
+		saynn("Ты поворачиваешь голову и видишь кошечку — коричневую кошку из общего блока. Она выглядит немного нервной и избегает твоего взгляда после вопроса.")
 
-		saynn("[say=rahi]Most spots are taken and she doesn’t wanna sit near the reds..[/say]")
+		saynn("[say=rahi]Почти все места заняты, а сидеть рядом с «красными» она не хочет..[/say]")
 
 		# (if red)
 		if(GM.pc.getInmateType() == InmateType.HighSec):
-			saynn("[say=pc]Well I’m a red as well.[/say]")
+			saynn("[say=pc]Ну, я тоже красная.[/say]")
 
-			saynn("[say=rahi]You seem better than most reds.. Can she?..[/say]")
+			saynn("[say=rahi]Ты кажешься получше большинства красных.. Можно ей?..[/say]")
 
-			saynn("[say=pc]I don’t mind.[/say]")
+			saynn("[say=pc]Я не против.[/say]")
 
 		# (else)
 		else:
-			saynn("[say=pc]Oh, sure.[/say]")
+			saynn("[say=pc]О, конечно.[/say]")
 
-		saynn("The canteen wasn’t too busy at this time but there weren't any empty tables either, kitty places her tray and sits behind your table, on the same side as you. She grabs the spoon and starts consuming her dish, the same one as what you have. You decide to start a little chat.")
+		saynn("В столовой в это время было не слишком людно, но и свободных столов почти не осталось. Кошечка ставит свой поднос и садится за твой стол, с той же стороны, что и ты. Она хватает ложку и принимается за еду — точно такую же, как у тебя. Ты решаешь завязать небольшой разговор.")
 
-		saynn("[say=pc]What do you do every day?[/say]")
+		saynn("[say=pc]Чем ты занимаешься каждый день?[/say]")
 
-		saynn("[say=rahi]The same as everyone else.. Working in the mines, wandering around.. She likes doing yoga.[/say]")
+		saynn("[say=rahi]Такая же, как и все остальные... Работает в шахтах, бродит туда-сюда... Любит заниматься йогой.[/say]")
 
-		saynn("[say=pc]Yoga, huh.[/say]")
+		saynn("[say=pc]Йога, значит?[/say]")
 
-		saynn("Kitty looks at you and smiles.")
+		saynn("Китти смотрит на тебя и улыбается.")
 
-		saynn("[say=rahi]She wants to stay agile.[/say]")
+		saynn("[say=rahi]Она хочет оставаться гибкой.[/say]")
 
-		saynn("[say=pc]You do look like quite an agile kitty, good job.[/say]")
+		saynn("[say=pc]А ты и впрямь выглядишь довольно гибкой кошечкой, молодец.[/say]")
 
-		saynn("[say=rahi]Thank you..[/say]")
+		saynn("[say=rahi]Спасибо..[/say]")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "continue"):
 		addCharacter("avy")
 		# (Avy, Red inmate, medium-height fox with a black fur and a feminine look)
 
-		saynn("Some red enters the canteen, this one is special because she immediately starts looking for someone instead of grabbing food. Her gaze meets kitty's. The brown feline quickly lowers her head as the red approaches.")
+		saynn("В столовую входит одна рыжая, и она особенная: вместо того чтобы сразу схватить еду, она начинает искать кого-то глазами. Её взгляд встречается с взглядом Китти. Коричневошерстная кошка быстро опускает голову, когда рыжая приближается.")
 
-		saynn("This red looks like a fox with a black fur, medium height, about 1.7 meters. She looks feminine and pretty fit, about what you would expect a bully to look like.")
+		saynn("Эта рыжая похожа на лисицу с черным мехом, среднего роста, около 1,7 метра. Она выглядит женственно и довольно подтянуто — как раз такой, какой ожидаешь увидеть задиру.")
 
-		saynn("[say=avy]Hey there, cat.[/say]")
+		saynn("[say=avy]Эй, кошка.[/say]")
 
-		saynn("[say=rahi]Hello..[/say]")
+		saynn("[say=rahi]Привет..[/say]")
 
-		saynn("Red grabs the feline by the ponytail and yanks her head back, kitty hisses from pain.")
+		saynn("Рыжая хватает кошку за хвост, собранный в конский хвост, и резко дергает её голову назад; Китти шипит от боли.")
 
-		saynn("[say=avy]Hello, who? Did my slut forget how to call me? You wanna be choking on my cock again?[/say]")
+		saynn("[say=avy]Привет, кто? Моя сучка забыла, как меня зовут? Хочешь снова подавиться моим членом?[/say]")
 
-		saynn("[say=rahi]H-hello, mistress..[/say]")
+		saynn("[say=rahi]П-приветствую, госпожа...[/say]")
 
-		saynn("The fox gives the kitten a slap on the face, causing more hissing, before sitting near. You decide not to intervene for now, who knows what that fox can do to you. You do observe carefully though.")
+		saynn("Лисица дает котенку звонкую пощечину, отчего та шипит еще сильнее, а затем усаживается рядом. Вы решаете пока не вмешиваться — кто знает, что эта лиса может сделать с вами. Впрочем, вы наблюдаете очень внимательно.")
 
-		saynn("[say=avy]That’s better. How much did you earn, your debt’s deadline is today.[/say]")
+		saynn("[say=avy]Так-то лучше. Сколько ты заработала? Срок выплаты твоего долга — сегодня.[/say]")
 
-		saynn("[say=rahi]Kitty only has 4 credits.. Her cough got worse, she can’t work as much..[/say]")
+		saynn("[say=rahi]У кошечки всего 4 кредита... Кашель усилился, она не может много работать...[/say]")
 
-		saynn("[say=avy]You think I give a fuck? I need 10. Remember what I said?[/say]")
+		saynn("[say=avy]Думаешь, мне не насрать? Мне нужно 10. Помнишь, что я говорила?[/say]")
 
-		saynn("[say=rahi]Each e-extra day is one broken bone..[/say]")
+		saynn("[say=rahi]Каждый лишний день — это одна сломанная кость...[/say]")
 
-		saynn("Red holds the poor feline by the collar, her other hand is turned into a fist. She catches your concerned gaze.")
+		saynn("Ред хватает бедную кошку за шиворот, сжав другую руку в кулак. Она ловит ваш обеспокоенный взгляд.")
 
-		saynn("[say=avy]The fuck are you looking at?[/say]")
+		saynn("[say=avy]Чего уставилась, блять?[/say]")
 
 		# (ask to stop or intimidate)
 
-		addButton("Ask to stop", "Maybe she will understand a kind approach", "ask_to_stop")
-		addButton("Intimidate", "What the heck that fox thinks she is doing", "intimidate")
+		addButton("Попросить остановиться", "Может, она поймет, если подойти к ней по-доброму?", "ask_to_stop")
+		addButton("Запугивание", "Что, черт возьми, эта лиса себе позволяет?", "intimidate")
 
 	if(state == "ask_to_stop"):
-		saynn("[say=pc]Don’t hurt her.[/say]")
+		saynn("[say=pc]Не обижай её.[/say]")
 
-		saynn("Kitty looks at you with scared eyes.")
+		saynn("Китти смотрит на тебя испуганными глазами.")
 
-		saynn("[say=rahi]D-don’t..[/say]")
+		saynn("[say=rahi]Н-не надо..[/say]")
 
-		saynn("The fox lets go of the feline’s collar and instead approaches you, she stands right behind you.")
+		saynn("Лисица отпускает ошейник кошечки и вместо этого подходит к тебе, встав прямо у тебя за спиной.")
 
 		# (if red)
 		if(GM.pc.getInmateType() == InmateType.HighSec):
-			saynn("[say=avy]Is she your slut? Look at her, that little bitch has already found a new owner while I wasn’t looking. Wow.[/say]")
+			saynn("[say=avy]Она что, твоя сучка? Глянь на неё, эта мелкая дрянь уже успела найти себе нового хозяина, пока я не видела. Офигеть.[/say]")
 
 		# (if general)
 		if(GM.pc.getInmateType() == InmateType.General):
-			saynn("[say=avy]Oh yeah? And what are you gonna do?[/say]")
+			saynn("[say=avy]Да неужели? И что ты сделаешь?[/say]")
 
 		# (if pink)
 		if(GM.pc.getInmateType() == InmateType.SexDeviant):
-			saynn("[say=avy]A lilac toy is trying to tell me something? Shouldn’t your mouth be busy with staff cocks 24/7.[/say]")
+			saynn("[say=avy]Сиреневая игрушка пытается мне что-то вякнуть? Тебе бы не мешало держать рот занятым чьими-нибудь членами 24 на 7.[/say]")
 
-		saynn("[say=pc]I’m asking you.[/say]")
+		saynn("[say=pc]Я тебя спрашиваю.[/say]")
 
-		saynn("She chuckles.")
+		saynn("Она посмеивается.")
 
-		saynn("[say=avy]Why don’t you beg instead. Get on your knees first.[/say]")
+		saynn("[say=avy]Почему бы тебе не начать умолять? А ну, встань на колени.[/say]")
 
-		saynn("Kitty stands up and takes a few steps back but the fox barks at her.")
+		saynn("Китти встает и делает несколько шагов назад, но лисица рявкает на неё.")
 
-		saynn("[say=avy]Don’t you dare. If you call someone you will get a free trip to the medical.[/say]")
+		saynn("[say=avy]Только попробуй. Если решишь кому-то позвонить, получишь бесплатную путевку в медпункт.[/say]")
 
-		saynn("Red directs her attention back at you.")
+		saynn("Рэд снова переводит на тебя свой взгляд.")
 
-		saynn("[say=avy]I. Said. Beg.[/say]")
+		saynn("[say=avy]Я. Сказала. Умоляй.[/say]")
 
 		# (beg or attack?)
 
-		addButton("Beg", "You really don’t wanna fight", "beg")
-		addButton("Attack", "Show that bully what a real pain is", "attack")
+		addButton("Умолять", "Тебе правда лучше не связываться", "beg")
+		addButton("Атаковать", "Показать этой задире, что такое настоящая головная боль", "attack")
 
 	if(state == "beg"):
 		playAnimation(StageScene.Solo, "kneel")
 		
-		saynn("You do as she orders, getting on your knees before the red and tilting your head down.")
+		saynn("Ты подчиняешься её приказу: опускаешься на колени перед Рыжей и склоняешь голову.")
 
-		saynn("[say=pc]Please don’t hurt her..[/say]")
+		saynn("[say=pc]Пожалуйста, не обижай её...[/say]")
 
-		saynn("The foxy seems quite entertained by the display, she chuckles and grabs your chin. You let her do it.")
+		saynn("Эта лисица явно забавляется зрелищем; она посмеивается и берет тебя за подбородок. Ты позволяешь ей это сделать.")
 
-		saynn("[say=avy]I totally didn’t expect this~. Why shouldn’t I hurt that slut, tell me?[/say]")
+		saynn("[say=avy]А я этого совсем не ожидала~. Ну и почему мне не стоит отлупить эту сучку, а? Ну, отвечай![/say]")
 
-		saynn("[say=pc]Because..[/say]")
+		saynn("[say=pc]Потому что...[/say]")
 
-		saynn("[say=avy]Here is a better question. Who should I hurt instead?[/say]")
+		saynn("[say=avy]Вот куда лучше смотреть. Кого мне стоит отлупить вместо неё?[/say]")
 
-		saynn("Some inmates do watch the scene but nobody dares to interrupt it, everyone is just minding their own stuff, leaving you and kitty against the fox. Kitty looks at you with very sorry eyes.")
+		saynn("Некоторые заключенные наблюдают за происходящим, но никто не смеет вмешаться — все заняты своими делами, оставляя тебя и Китти один на один с Лисицей. Китти смотрит на тебя полными жалости глазами.")
 
-		saynn("[say=pc]You can hurt me..[/say]")
+		saynn("[say=pc]Можешь причинить мне боль...[/say]")
 
-		saynn("Foxy leans down and slaps your face, causing you to recoil back. She yanks you closer.")
+		saynn("Лисица наклоняется и дает тебе звонкую пощечину, от которой ты отпрядываешь. Затем она резко дергает тебя на себя.")
 
-		saynn("[say=avy]That was way too weak for begging. Try again, whore.[/say]")
+		saynn("[say=avy]Для мольбы это было слишком слабо. Попробуй еще раз, шлюха.[/say]")
 
-		saynn("[say=pc]Please, hurt me instead..[/say]")
+		saynn("[say=pc]Пожалуйста, лучше причини боль мне...[/say]")
 
-		saynn("[say=avy]Yeah? You wanna be my painslut?[/say]")
+		saynn("[say=avy]Да? Хочешь стать моей болью-сучкой?[/say]")
 
-		saynn("[say=pc]Yes, please.. your painslut..[/say]")
+		saynn("[say=pc]Да, пожалуйста... твоей болью-сучкой...[/say]")
 
-		saynn("[say=avy]Well, if you so insist~[/say]")
+		saynn("[say=avy]Ну, раз ты так настаиваешь~[/say]")
 
-		saynn("The red pushes you down and starts kicking and scratching you, she seems to enjoy violence. You try to protect yourself but the hits are quite painful, you get the wind kicked out of you.")
+		saynn("Рыжая прижимает тебя к земле и начинает пинать и царапать — кажется, она обожает насилие. Ты пытаешься защититься, но удары довольно болезненны, и в какой-то момент у тебя перехватывает дыхание.")
 
-		saynn("When the fox is done with you, she sits on you and giggles.")
+		saynn("Когда Лисица заканчивает с тобой, она усаживается сверху и хихикает.")
 
-		saynn("[say=avy]Such an obedient punching bag. Hey cat, get over here.[/say]")
+		saynn("[say=avy]Какая послушная груша для битья. Эй, кошка, а ну иди сюда![/say]")
 
-		saynn("Kitty really doubts if she should but she does walk closer to the fox.")
+		saynn("Кити очень сомневается, стоит ли ей это делать, но всё же подходит ближе к лису.")
 
-		saynn("[say=avy]I don’t need you anymore, I have this toy now. Happy?[/say]")
+		saynn("[say=avy]Ты мне больше не нужна, теперь у меня есть эта игрушка. Довольна?[/say]")
 
-		saynn("The feline tilts her head down, her ears droop. Foxy chuckles and then leaves you two alone.")
+		saynn("Кошка склоняет голову, её ушки поникли. Фокси усмехается и оставляет вас двоих наедине.")
 
 		# (Also happens when you lose a fight)
 
-		addButton("Continue", "Ow", "aftermatch")
+		addButton("Продолжить", "Ow", "aftermatch")
 
 	if(state == "aftermatch"):
 		removeCharacter("avy")
 		playAnimation(StageScene.Hug, "hug", {npc="rahi"})
 		
-		saynn("Kitty helps you to sit on the bench and swipes the dust off.")
+		saynn("Кити помогает тебе сесть на скамью и смахивает пыль.")
 
-		saynn("[say=rahi]You shouldn’t have..[/say]")
+		saynn("[say=rahi]Тебе не стоило...[/say]")
 
-		saynn("[say=pc]Shush. It’s okay. It hurts but I’m okay..[/say]")
+		saynn("[say=pc]Тсс. Всё хорошо. Больно, но я справлюсь...[/say]")
 
-		saynn("The feline hugs you lightly and kneads your back and shoulders. You hug her back.")
+		saynn("Кошка нежно обнимает тебя, разминая спину и плечи. Ты обнимаешь её в ответ.")
 
-		saynn("[say=rahi]She is very sorry.. That red was beating her up for at least a week now..[/say]")
+		saynn("[say=rahi]Она очень виновата... Эта рыжая избивает её уже как минимум неделю...[/say]")
 
-		saynn("[say=pc]Why though? What’s that debt about?[/say]")
+		saynn("[say=pc]Но почему? Что это за долг такой?[/say]")
 
-		saynn("[say=rahi]Gambling..[/say]")
+		saynn("[say=rahi]Азартные игры..[/say]")
 
-		saynn("[say=pc]You lost against her?[/say]")
+		saynn("[say=pc]Ты проиграл ей?[/say]")
 
-		saynn("[say=rahi]Kitty won but then she turned it into a best of three.. she cheated.. Is there something she can do for you?..[/say]")
+		saynn("[say=rahi]Китти выиграла, но потом она решила сыграть до трёх побед.. она жульничала.. Может, она может что-нибудь для тебя сделать?..[/say]")
 
-		saynn("[say=pc]I will be fine.[/say]")
+		saynn("[say=pc]Со мной всё будет в порядке.[/say]")
 
-		saynn("[say=rahi]Thank you..[/say]")
+		saynn("[say=rahi]Спасибо..[/say]")
 
-		saynn("She holds onto you and starts to lick your bruises. Her tongue is rough so it feels like tickling. But it also soothes your pain, strangely enough. You offer the kitty a head pat. You both don’t seem to have the appetite anymore so you just sit together for a while.")
+		saynn("Она прижимается к тебе и начинает слизывать твои синяки. Её язык шершавый, поэтому это ощущается как щекотка. Но, как ни странно, это также унимает твою боль. Ты ласково гладишь киску по голове. Похоже, аппетит у вас обоих пропал, поэтому вы просто сидите вместе какое-то время.")
 
-		saynn("[say=pc]Gotta go.[/say]")
+		saynn("[say=pc]Пора идти.[/say]")
 
-		saynn("[say=rahi]You take care now..[/say]")
+		saynn("[say=rahi]Береги себя..[/say]")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 		
 
 	if(state == "attack"):
 		playAnimation(StageScene.Solo, "shove")
 		
-		saynn("You shove your elbow into her chest, causing the foxy to stumble back. She growls at you, showing off her bare fangs.")
+		saynn("Ты втыкаешь локоть ей в грудь, заставляя лисицу пошатнуться. Она рычит на тебя, скаля голые клыки.")
 
-		saynn("[say=avy]Is that how you wanna play? I will enjoy snapping your bones one by one.[/say]")
+		saynn("[say=avy]Так ты хочешь поиграть? Мне будет в радость ломать твои кости одну за другой.[/say]")
 
-		saynn("Seems like it’s a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Continue", "Fight!", "startfight")
+		addButton("Продолжить", "В бой!", "startfight")
 		
 
 	if(state == "intimidate"):
 		playAnimation(StageScene.Solo, "stand")
 		
-		saynn("[say=pc]I’m looking at a huge mistake you’re making.[/say]")
+		saynn("[say=pc]Я вижу, какую огромную ошибку ты совершаешь.[/say]")
 
-		saynn("The foxy reacts by smiling, she firmly pats the brown feline a few times and then steps closer to you instead. You stand up and look her into the cunning eyes.")
+		saynn("Лисица в ответ лишь улыбается, пару раз крепко хлопает коричневую кошечку по плечу, а затем сама подходит к тебе ближе. Ты выпрямляешься и заглядываешь в её хитрые глаза.")
 
-		saynn("[say=avy]So noble. Didn’t know this cat has a white knight protecting her now. Did you two fuck already?[/say]")
+		saynn("[say=avy]Как благородно. Не знала, что у этой кошки теперь есть свой белый рыцарь. Вы уже трахались?[/say]")
 
-		saynn("Kitty tilts her head down and looks away.")
+		saynn("Кошечка склоняет голову и отводит взгляд.")
 
-		saynn("[say=avy]What? You think she is a virgin innocent flower? That slut loves being degraded down to a cat level, crawling around, eating cum from a pet bowl. You’re protecting a whore.[/say]")
+		saynn("[say=avy]Что? Думаешь, она невинный цветок? Эта сучка обожает, когда её унижают до уровня животного — когда она ползает на четвереньках и слизывает сперму из миски. Ты защищаешь шлюху.[/say]")
 
-		saynn("The feline is so embarrassed she covers her face, her ears droop and her tail hides under her butt.")
+		saynn("Кошечка так смущена, что закрывает лицо руками; её ушки поникли, а хвост спрятался под задницу.")
 
-		saynn("[say=pc]I think you should shut your mouth.[/say]")
+		saynn("[say=pc]По-моему, тебе стоит заткнуться.[/say]")
 
-		saynn("[say=avy]Why don’t you show me.[/say]")
+		saynn("[say=avy]Так покажи мне.[/say]")
 
-		saynn("Seems like it's a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Continue", "Fight!", "startfight")
+		addButton("Продолжить", "В бой!", "startfight")
 
 	if(state == "won_battle"):
-		saynn("Defeated Avy pants heavily, she is still as angry as she was but she is too exhausted to continue. She points at the brown kitty and snarls at her.")
+		saynn("Пораженная Ави тяжело дышит; она всё еще злится, но слишком истощена, чтобы продолжать спор. Она указывает на коричневую кошечку и рычит на неё.")
 
-		saynn("[say=avy]Enjoy your sad little victory, cat.[/say]")
+		saynn("[say=avy] Наслаждайся своей жалкой маленькой победой, кошка.[/say]")
 
-		saynn("[say=pc]If you touch her again - you’re gonna have to deal with me. Understand?[/say]")
+		saynn("[say=pc]Если еще раз её тронешь — будешь иметь дело со мной. Поняла?[/say]")
 
-		saynn("[say=avy]As for you, you should know that this is only the beginning of our relationship.[/say]")
+		saynn("[say=avy]Что касается тебя, тебе стоит знать, что это только начало наших отношений.[/say]")
 
-		saynn("Foxy holds onto her stomach as she hobbles away.")
+		saynn("Фокси, придерживая живот, уходит, прихрамывая.")
 
-		addButton("Continue", "What now", "aftermatch")
+		addButton("Продолжить", "Что теперь?", "aftermatch")
 
 	if(state == "lost_battle"):
-		saynn("Beaten up, you sit on the ground and hold onto your bruises. It hurts. The foxy looms over you, a bright smile shines on her face, she seems to be enjoying seeing you suffer.")
+		saynn("Избитый, ты сидишь на земле, держась за ушибы. Больно. Лисица нависает над тобой с сияющей улыбкой на лице — кажется, ей в кайф смотреть на твои страдания.")
 
-		saynn("[say=avy]Very brave. And very stupid.[/say]")
+		saynn("[say=avy]Очень смело. И очень глупо.[/say]")
 
-		saynn("The foxy runs her claws over your cheek, applying enough pressure to make it uncomfortable. Then she glances at the scared brown feline.")
+		saynn("Лисица проводит когтями по твоей щеке, надавливая достаточно сильно, чтобы вызвать дискомфорт. Затем она бросает взгляд на испуганную коричневую кошку.")
 
-		saynn("[say=avy]You’re lucky I got my fix by beating this silly thing up. Don’t forget about me~[/say]")
+		saynn("[say=avy]Тебе повезло, что я получила свою дозу эндорфинов, избив эту глупышку. Не забывай обо мне~[/say]")
 
-		saynn("Red chuckles and leaves you two alone.")
+		saynn("Ред посмеивается и оставляет вас двоих наедине.")
 
-		addButton("Continue", "What now", "aftermatch")
+		addButton("Продолжить", "Что теперь?", "aftermatch")
 		
 
 func _react(_action: String, _args):

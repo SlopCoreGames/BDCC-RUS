@@ -11,279 +11,279 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		
-		saynn("You look around and scratch your head, unsure of how to start the conversation.")
+		saynn("Ты озираешься по сторонам и чешешь затылок, не зная, с чего начать разговор.")
 
-		saynn("[say=pc]Uh..[/say]")
+		saynn("[say=pc]Э-э...[/say]")
 
-		saynn("Eliza quickly picks up on that, she puts her mug away and stares at you.")
+		saynn("Элиза быстро это замечает: она убирает кружку и пристально смотрит на тебя.")
 
-		saynn("[say=eliza]Something is wrong?[/say]")
+		saynn("[say=eliza]Что-то не так?[/say]")
 
-		saynn("[say=pc]I don’t know.[/say]")
+		saynn("[say=pc]Да даже не знаю.[/say]")
 
-		saynn("[say=eliza]Stay there, inmate.[/say]")
+		saynn("[say=eliza]Стоять, заключенный![/say]")
 
-		saynn("Eliza stands up and leaves her counter before leaving out of sight just to appear from one of the staff-only airlocks. The doctor approaches you and gives you what looks like a visual check.")
+		saynn("Элиза встает, отходит от прилавка и скрывается из виду, чтобы через мгновение появиться из одного из шлюзов для персонала. К тебе подходит врач и начинает проводить что-то вроде визуального осмотра.")
 
-		saynn("[say=eliza]I can tell that you’re hiding something. Need a medical checkup?[/say]")
+		saynn("[say=eliza]Я вижу, что ты что-то скрываешь. Нужен медицинский осмотр?[/say]")
 
-		saynn("That might be your chance. At least you will be alone with Eliza.")
+		saynn("Возможно, это твой шанс. По крайней мере, ты останешься наедине с Элизой.")
 
-		saynn("[say=pc]Yeah, my head hurts a little..[/say]")
+		saynn("[say=pc]Да, голова что-то немного побаливает...[/say]")
 
-		saynn("[say=eliza]Are you sure it’s just the head? Some inmates are too embaressed to admit they had rough sex and are now bleeding down there. Tell you what, let's go to the lab.[/say]")
+		saynn("[say=eliza]Ты уверен, что только голова? Некоторые заключенные слишком стесняются признаться, что у них был жесткий секс и теперь там всё кровоточит. Знаешь что, пойдем в лазарет.[/say]")
 
-		saynn("You nod softly. But then you see Eliza producing a chain leash.")
+		saynn("Ты тихо киваешь. Но тут замечаешь, что Элиза достает цепь-поводок.")
 
-		saynn("[say=eliza]Safety measures.[/say]")
+		saynn("[say=eliza]Меры предосторожности.[/say]")
 
-		saynn("Well it’s too late to say no now. Doctor clips the leash to your collar before proceeding to walk you towards one of the staff doors.")
+		saynn("Что ж, отказываться уже поздно. Доктор пристегивает поводок к твоему ошейнику и ведет тебя к одной из дверей для персонала.")
 
-		addButton("Follow", "See where she brings you", "follow")
+		addButton("Следовать", "Посмотреть, куда она тебя приведет", "follow")
 
 	if(state == "follow"):
 		aimCameraAndSetLocName("med_researchlab")
 		playAnimation(StageScene.Duo, "sit", {npc="eliza"})
 		# (also launches a parading scene towards the lab)
 
-		saynn("You enter the sterile lab with doctor Quinn. As you step in, the fluorescent lamps turn on automatically, blinding you. You squint and let your eyes adjust while you are being brought further into the room where the medical table is.")
+		saynn("Ты входишь в стерильную лабораторию вместе с доктором Куинн. Как только ты переступаешь порог, автоматически вспыхивают люминесцентные лампы, ослепляя тебя. Ты щуришься, давая глазам привыкнуть, пока тебя ведут вглубь комнаты, где стоит медицинская кушетка.")
 
-		saynn("[say=eliza]Take a seat, patient.[/say]")
+		saynn("[say=eliza]Присаживайтесь, пациент.[/say]")
 
-		saynn("It’s not your normal table, it seems to have a built-in computer and a few tools which you can only guess are some kind of scanners. Either way, you sit on the edge and let the doctor remove the leash.")
+		saynn("Это не обычная кушетка: похоже, в неё встроен компьютер и несколько инструментов, которые, как можно догадаться, являются какими-то сканерами. Так или иначе, ты садишься на край и позволяешь доктору отстегнуть поводок.")
 
-		saynn("[say=eliza]I trust you not to do anything silly like stealing or escaping.[/say]")
+		saynn("[say=eliza]Я верю, что ты не сделаешь никакой глупости вроде кражи или побега.[/say]")
 
-		saynn("[say=pc]Thanks.[/say]")
+		saynn("[say=pc]Спасибо.[/say]")
 
-		saynn("[say=eliza]So, you have a migraine?[/say]")
+		saynn("[say=eliza]Итак, у вас мигрень?[/say]")
 
-		addButton("Headache", "Go along with the flow and see what happens", "headache")
+		addButton("Головная боль", "Плыть по течению и посмотреть, что из этого выйдет", "headache")
 
 	if(state == "headache"):
-		saynn("[say=pc]More of a headache I guess.. can’t focus.[/say]")
+		saynn("[say=pc]Скорее головная боль... никак не могу сосредоточиться.[/say]")
 
-		saynn("[say=eliza]Let me see.[/say]")
+		saynn("[say=eliza]Дайте-ка взглянуть.[/say]")
 
-		saynn("Doctor fixes her glasses and leans in close to your face, offering you a great view of her top. She looks for any obvious injuries and then focuses on your eyes.")
+		saynn("Доктор поправляет очки и наклоняется к самому твоему лицу, открывая тебе великолепный вид на свой бюст. Она осматривает тебя на предмет явных травм, а затем фокусируется на твоих глазах.")
 
 		# (if has pain)
 		if(GM.pc.getPain() > 0):
-			saynn("[say=eliza]Yeah, it seems you had a fight. Or a good impact play session~. I will find some painkillers.[/say]")
+			saynn("[say=eliza]Да, похоже, ты подрался. Или у вас был отличный сеанс импакт-плея~. Сейчас найду тебе обезболивающее.[/say]")
 
 		# (else if high)
 		elif(GM.pc.getIntoxicationLevel() > 0.1):
-			saynn("[say=eliza]Hmm. Your pupils are quite dilated. It seems you are under the influence. Or drank too much. I will look around for some detox pills.[/say]")
+			saynn("[say=eliza]Хм. Твои зрачки довольно сильно расширены. Похоже, ты под кайфом. Или перебрал с выпивкой. Поищу-ка я где-нибудь таблетки для детокса.[/say]")
 
 		# (else if horny)
 		elif(GM.pc.getLust() > 0):
-			saynn("[say=eliza]Your eyes show more lust than anything~. Horny thoughts prevent you from focusing. I will look for an anaphrodisiac, should help you calm down.[/say]")
+			saynn("[say=eliza]В твоих глазах больше похоти, чем чего-либо еще~. Похотливые мысли мешают тебе сосредоточиться. Поищу анафродизиак, он должен помочь тебе успокоиться.[/say]")
 
 		# (else)
 		else:
-			saynn("[say=eliza]You seem healthy to me. No bruises, no lustness, not under the influence.[/say]")
+			saynn("[say=eliza]На мой взгляд, ты здоров. Ни синяков, ни похоти, и под кайфом не кажешься.[/say]")
 
-			saynn("Her words make you feel nervous, is she suspecting something already?")
+			saynn("От её слов ты начинаешь нервничать: неужели она уже что-то подозревает?")
 
-			saynn("[say=eliza]I can give you some painkillers just in case I guess.[/say]")
+			saynn("[say=eliza]Ну, на всякий случай я могу дать тебе обезболивающее.[/say]")
 
 			# (end)
 
-		saynn("Eliza takes a step back and searches through some cabinets.")
+		saynn("Элиза делает шаг назад и начинает рыться в шкафчиках.")
 
-		saynn("[say=pc]Everything is alright lately? You know, anything interesting happened?[/say]")
+		saynn("[say=pc]В последнее время всё нормально? Ну, знаешь, случалось что-нибудь интересное?[/say]")
 
-		saynn("[say=eliza]With me? Not really. My days of being adventurous ended when I blew up my dad's chemistry lab by accident. Now I’m stuck here in this prison. But you know, at least I can still do science. Who cares about ranks.[/say]")
+		saynn("[say=eliza]У меня? Да не особо. Мои приключения закончились, когда я случайно взорвала папину химическую лабораторию. Теперь застряла здесь, в тюрьме. Но знаешь, по крайней мере, я всё ещё могу заниматься наукой. Плевать на звания.[/say]")
 
-		saynn("You nod. Eliza finds the pill bottle she was looking for. She hands you one pill and a glass of water.")
+		saynn("Ты киваешь. Элиза находит баночку с таблетками, которую искала. Она протягивает тебе одну таблетку и стакан воды.")
 
-		addButton("Take pill", "Might as well", "take_pill")
+		addButton("Принять таблетку", "Почему бы и нет", "take_pill")
 
 	if(state == "take_pill"):
-		saynn("You swallow the offered pill. Hard to tell but it seems it did actually help you somewhat. Eliza just crosses her arms and looks at you.")
+		saynn("Ты глотаешь предложенную таблетку. Трудно сказать наверняка, но кажется, она действительно немного помогла. Элиза лишь скрещивает руки на груди и смотрит на тебя.")
 
-		saynn("Suddenly the doors open and a nurse walks in, carrying some kind of small crate.")
+		saynn("Внезапно двери распахиваются, и входит медсестра, неся какой-то небольшой ящик.")
 
-		saynn("[say=nurse]Where can I leave this, doctor Quinn?[/say]")
+		saynn("[say=nurse]Куда мне это поставить, доктор Куинн?[/say]")
 
-		saynn("[say=eliza]Give it to me. I will check the contents and carry it to the storage later.[/say]")
+		saynn("[say=eliza]Отдай его мне. Я проверю содержимое, а позже отнесу в хранилище.[/say]")
 
-		saynn("Is that what you think it is? Eliza grabs the crate and puts it on her chemistry station. She unlocks the crate and presses a button that begins the opening sequence. The crate makes a hissing noise as it depressurizes itself and presents its contents to the doctor.")
+		saynn("Так ты думаешь? Элиза хватает ящик и ставит его на свой химический стол. Она отпирает замок и нажимает кнопку, запускающую процесс открытия. Ящик издает шипящий звук, когда давление внутри выравнивается, и открывает содержимое доктору.")
 
-		saynn("You try to peek inside but the doctor’s back blocks the view, you only catch a glimpse of a few vials that contain bright red fluid. You’re pretty sure that’s what you need to steal.")
+		saynn("Ты пытаешься заглянуть внутрь, но спина доктора загораживает обзор; тебе удается лишь мельком увидеть несколько флаконов с ярко-красной жидкостью. Ты почти уверен, что именно это тебе и нужно украсть.")
 
-		saynn("[say=pc]What’s that?[/say]")
+		saynn("[say=pc]Что это?[/say]")
 
-		saynn("[say=eliza]It’s for later.[/say]")
+		saynn("[say=eliza]Это на потом.[/say]")
 
-		saynn("Eliza sends the nurse off and then turns around before walking up to you again, arms crossed.")
+		saynn("Элиза отпускает медсестру и, прежде чем снова подойти к тебе, разворачивается, скрестив руки на груди.")
 
-		saynn("[say=eliza]How are you doing anyway?[/say]")
+		saynn("[say=eliza]Как ты вообще себя чувствуешь?[/say]")
 
-		saynn("You rub your head some more.")
+		saynn("Ты еще немного потираешь голову.")
 
-		saynn("[say=pc]I’m alright, the pill is working I thi-..[/say]")
+		saynn("[say=pc]Да вроде нормально, таблетка вроде сраба...[/say]")
 
-		saynn("Eliza cuts you off.")
+		saynn("Элиза перебивает тебя.")
 
-		saynn("[say=eliza]I heard you and another inmate broke into the captain’s office? Quite brave.[/say]")
+		saynn("[say=eliza]До меня дошли слухи, что ты и еще один заключенный вломились в кабинет капитана? Довольно смело.[/say]")
 
-		saynn("You tilt your head down and shrug, avoiding Eliza’s drilling gaze.")
+		saynn("Ты опускаешь голову и пожимаешь плечами, стараясь избежать сверлящего взгляда Элизы.")
 
-		saynn("[say=eliza]Just wondering. Was it your idea?[/say]")
+		saynn("[say=eliza]Просто любопытно. Это была твоя идея?[/say]")
 
-		addButton("Yes!", "Lie to Eliza", "yes!")
-		addButton("No", "Admit that you were made to do so", "no")
+		addButton("Да!", "Солгать Элизе", "yes!")
+		addButton("No", "Признать, что тебя к этому подтолкнули", "no")
 
 	if(state == "yes!"):
-		saynn("You nod slightly and try to look Eliza into the eyes.")
+		saynn("Ты слегка киваешь, стараясь заглянуть Элизе прямо в глаза.")
 
-		saynn("[say=pc]Yeah, I need to escape from this place.[/say]")
+		saynn("[say=pc]Да, мне нужно свалить из этого места.[/say]")
 
-		saynn("The doctor raises a brow and tilts her head slightly.")
+		saynn("Доктор приподнимает бровь и слегка наклоняет голову набок.")
 
-		saynn("[say=pc]What? Gonna shock me?[/say]")
+		saynn("[say=pc]Что? Собираешься меня шокировать?[/say]")
 
-		saynn("[say=eliza]No, just surprised. Well, I understand you somewhat but I disagree. Look around, this space station has everything, place to sleep, food, medical care, sex. No politics, no wars, no problems.[/say]")
+		saynn("[say=eliza]Нет, просто удивлен. Ну, в чем-то я тебя понимаю, но все же не согласен. Посмотри вокруг: на этой станции есть всё — еда, сон, медицина, секс. Никакой политики, никаких войн, никаких проблем.[/say]")
 
-		saynn("You frown but then chuckle.")
+		saynn("Ты хмуришься, но затем усмехаешься.")
 
-		saynn("[say=pc]Makes me wonder why they didn’t call this station ‘Heaven’. These are primal needs you are describing, doctor.[/say]")
+		saynn("[say=pc]Интересно, почему они не назвали станцию «Раем»? Ты описываешь базовые потребности, доктор.[/say]")
 
-		saynn("[say=eliza]What else do you need to be happy?[/say]")
+		saynn("[say=eliza]А что еще нужно человеку, чтобы быть счастливым?[/say]")
 
-		saynn("[say=pc]Have you ever had a dream?[/say]")
+		saynn("[say=pc]Тебе когда-нибудь снились сны?[/say]")
 
-		saynn("[say=eliza]Uh..[/say]")
+		saynn("[say=eliza]Э-э..[/say]")
 
-		saynn("Eliza looks puzzled, her gaze avoids yours.")
+		saynn("Элиза выглядит озадаченной, она избегает твоего взгляда.")
 
-		saynn("[say=eliza]What’s your point?[/say]")
+		saynn("[say=eliza]К чему ты клонишь?[/say]")
 
-		saynn("[say=pc]Imagine knowing that you will never be able to fulfill it. Your dreams will just stay there, in your head, as fantasies. When you realize that, something real inside you dies, breaks.[/say]")
+		saynn("[say=pc]Представь, что ты знаешь: тебе никогда не суждено их исполнить. Твои мечты так и останутся там, в голове, лишь фантазиями. И когда ты это осознаешь, что-то настоящее внутри тебя умирает, ломается.[/say]")
 
-		saynn("Eliza looks at you silently for a few seconds, pondering. And then frowns.")
+		saynn("Элиза молча смотрит на тебя несколько секунд, раздумывая. А затем хмурится.")
 
-		saynn("[say=eliza]Shouldn’t have disobeyed the law then. You wasted your chance. Anyway, let’s continue.[/say]")
+		saynn("[say=eliza]Тогда не стоило нарушать закон. Ты упустила свой шанс. Впрочем, давай продолжим.[/say]")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "no"):
-		saynn("You shake your head slightly and look Eliza into the eyes. She raises a brow and tilts her head slightly, intently waiting. Eventually she breaks the tense silence herself.")
+		saynn("Ты слегка качаешь головой и смотришь Элизе прямо в глаза. Она приподнимает бровь и слегка наклоняет голову, напряженно ожидая. В конце концов, она сама нарушает гнетущую тишину.")
 
-		saynn("[say=eliza]So it was Tavi then. Makes sense. And you’re trying to help her?[/say]")
+		saynn("[say=eliza]Значит, это была Тави. Логично. И ты пытаешься ей помочь?[/say]")
 
-		saynn("You stay silent. You have a strange feeling, like you’re being interrogated again.")
+		saynn("Ты молчишь. У тебя странное чувство, будто тебя снова допрашивают.")
 
-		saynn("[say=eliza]Well. I would think about it more if I were you. This place has everything, place to sleep, food, medical care, sex. No politics, no wars, no problems.[/say]")
+		saynn("[say=eliza]Ну... на твоем месте я бы еще раз всё обдумала. Здесь есть всё: еда, сон, медицина, секс. Никакой политики, никаких войн, никаких проблем.[/say]")
 
-		saynn("You stay silent still. Your hand reaches to tug on your collar.")
+		saynn("Ты всё ещё молчишь. Твоя рука непроизвольно тянется к воротнику, пытаясь его поправить.")
 
-		saynn("[say=eliza]You have potential, you know. Would be a shame to waste it. Anyway, let’s continue.[/say]")
+		saynn("[say=eliza]У тебя есть потенциал, знаешь ли. Было бы жаль его растратить. Впрочем, продолжим.[/say]")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "continue"):
-		saynn("Eliza straightens her posture and pulls out a tablet. She presses a few buttons and the table engages one of its tools, a scanner that traces your curves from the toes to the tip of your head.")
+		saynn("Элиза выпрямляется и достаёт планшет. Она нажимает несколько кнопок, и стол активирует один из своих инструментов — сканер, который проводит по твоим изгибам от кончиков пальцев ног до макушки.")
 
-		saynn("[say=eliza]Vitals seem alright. Any other complaints?[/say]")
+		saynn("[say=eliza]Жизненные показатели в норме. Есть ещё какие-нибудь жалобы?[/say]")
 
-		saynn("You shrug.")
+		saynn("Ты пожимаешь плечами.")
 
-		saynn("[say=eliza]How are the genitals?[/say]")
+		saynn("[say=eliza]Как там гениталии?[/say]")
 
-		saynn("[say=pc]What about them?[/say]")
+		saynn("[say=pc]А что с ними?[/say]")
 
-		saynn("[say=eliza]Bruises, itching, tearing, bleeding? We don’t want inmates to have scars on their vaginas here.[/say]")
+		saynn("[say=eliza]Синяки, зуд, разрывы, кровотечение? Нам не нужно, чтобы у заключенных здесь были шрамы на вагинах.[/say]")
 
-		saynn("[say=pc]It’s fine.[/say]")
+		saynn("[say=pc]Всё в порядке.[/say]")
 
-		saynn("Eliza puts the tablet away and leans in.")
+		saynn("Элиза убирает планшет и наклоняется ближе.")
 
 		# (if has clothing)
 		if(!GM.pc.isFullyNaked()):
-			saynn("[say=eliza]Are you sure? Undress completely, patient, I will examine you.[/say]")
+			saynn("[say=eliza]Ты уверена? Раздевайся полностью, пациентка, я тебя осмотрю.[/say]")
 
 		# (else)
 		else:
-			saynn("[say=eliza]Are you sure? Spread your legs, patient, I will examine you.[/say]")
+			saynn("[say=eliza]Вы уверены? Раздвиньте ноги, пациент, я должна вас осмотреть.[/say]")
 
-		saynn("[say=pc]No need.[/say]")
+		saynn("[say=pc]Нет необходимости.[/say]")
 
-		saynn("Doctor’s voice becomes more strict.")
+		saynn("Голос врача становится строже.")
 
-		saynn("[say=eliza]Are you sure?[/say]")
+		saynn("[say=eliza]Вы уверены?[/say]")
 
-		addButton("Decline", "This will probably prevent you from stealing the drugs now", "decline")
-		addButton("Attack", "Now seems to be the best time to attack Eliza and steal the drugs", "attack")
-		addButton("Obey", "Do as told and present your naked body", "obey")
+		addButton("Отказаться", "Это, вероятно, помешает вам воровать лекарства в будущем.", "decline")
+		addButton("Атаковать", "Сейчас кажется лучшим моментом, чтобы напасть на Элизу и украсть лекарства.", "attack")
+		addButton("Повиноваться", "Сделайте, как сказано, и представьте свое обнаженное тело.", "obey")
 
 
 	if(state == "decline"):
-		saynn("[say=pc]I’m fine, really.[/say]")
+		saynn("[say=pc]Со мной всё в порядке, правда.[/say]")
 
-		saynn("Eliza doesn’t say anything for a few seconds. And then she shrugs.")
+		saynn("Элиза молчит несколько секунд. А затем пожимает плечами.")
 
-		saynn("[say=eliza]Well, that’s it then. Come here if you’re ever not feeling well.[/say]")
+		saynn("[say=eliza]Ну, тогда всё. Приходите ко мне, если вдруг почувствуете себя плохо.[/say]")
 
-		saynn("You nod to her. Eliza turns towards the crate with the drugs.")
+		saynn("Вы киваете ей. Элиза поворачивается к ящику с лекарствами.")
 
-		saynn("[say=eliza]Everything seems to be alright here.[/say]")
+		saynn("[say=eliza]Здесь, кажется, всё в порядке.[/say]")
 
-		saynn("She presses the button that makes the crate close and lock itself. She grabs it by the handle and invites you to leave the lab.")
+		saynn("Она нажимает кнопку, от которой ящик закрывается и блокируется. Схватив его за ручку, она приглашает вас покинуть лабораторию.")
 
-		addButton("Leave", "Follow Eliza", "leave")
+		addButton("Уйти", "Идти за Элизой", "leave")
 
 	if(state == "leave"):
 		GM.pc.setLocation("med_nearlab")
 		aimCameraAndSetLocName("med_nearlab")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		
-		saynn("She presses a button that closes the airlock behind.")
+		saynn("Она нажимает кнопку, закрывающую шлюз за вашей спиной.")
 
-		saynn("[say=eliza]I trust you will find the exit yourself, I need to store this somewhere safe~[/say]")
+		saynn("[say=eliza]Думаю, вы сами найдете выход, а мне нужно припрятать это в надежном месте~[/say]")
 
-		saynn("[say=pc]Sure.[/say]")
+		saynn("[say=pc]Конечно.[/say]")
 
-		saynn("Seems now you will have to find their storage room to steal the drugs.")
+		saynn("Похоже, теперь вам придется найти их склад, чтобы украсть препараты.")
 
 		# (scene ends)
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 
 	if(state == "attack"):
-		saynn("Suddenly you lash out at Eliza and shove her back before trying to pin her to the nearest wall.")
+		saynn("Внезапно вы бросаетесь на Элизу и толкаете её назад, пытаясь прижать к ближайшей стене.")
 
-		saynn("[say=eliza]Argh![/say]")
+		saynn("[say=eliza]Аргх![/say]")
 
-		saynn("She tries to pull out a shock remote but you easily slap it out of her hand before grabbing her by the neck and applying some pressure to try to make her resist less.")
+		saynn("Она пытается выхватить шоковый пульт, но вы легко выбиваете его из её руки, после чего хватаете её за шею и слегка сдавливаете, чтобы она меньше сопротивлялась.")
 
-		saynn("[say=pc]Don’t make it difficult. I’m only here for one thing. And it’s not you.[/say]")
+		saynn("[say=pc]Не усложняй. Мне нужна здесь только одна вещь. И это не ты.[/say]")
 
-		saynn("You can see very little fear in Eliza’s eyes, suddenly she frees a hand and pulls out some kind of injector before trying to stick it into you. You make her drop it too but while doing so she manages to break free and escape your grasp, without even losing her glasses.")
+		saynn("В глазах Элизы почти нет страха; внезапно она освобождает одну руку и выхватывает какой-то шприц-инъектор, пытаясь вонзить его в тебя. Тебе удается заставить её выронить его, но в этот момент она умудряется вырваться из твоей хватки, даже не потеряв очки.")
 
-		saynn("[say=eliza]I’m not gonna let some junkie treat my medbay as a drug store, you better give up now.[/say]")
+		saynn("[say=eliza]Я не позволю какой-то торшечке превращать мой медблок в аптеку, так что лучше сдавайся прямо сейчас![/say]")
 
-		saynn("Seems it's a fight.")
+		saynn("Похоже, назревает драка.")
 
 		# (fight)
-		addButton("Fight!", "Time to show how is the boss here", "fight")
+		addButton("В бой!", "Пора показать, кто здесь босс.", "fight")
 
 	if(state == "if_won"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcAction="defeat"})
 		
-		saynn("Eliza is unable to fight any longer but just before she can hit the floor, you pin her against the wall again. All she can do is weakly try to pry your hands off of her neck.")
+		saynn("Элиза больше не в силах сопротивляться, но прежде чем она успевает рухнуть на пол, ты снова прижимаешь её к стене. Всё, что ей остается — это слабо пытаться разжать твои пальцы на своей шее.")
 
-		saynn("[say=eliza]L-let go..[/say]")
+		saynn("[say=eliza]О-отпусти..[/say]")
 
-		saynn("[say=pc]I can’t, pussy cat.[/say]")
+		saynn("[say=pc]Не могу, киска.[/say]")
 
-		saynn("[say=eliza]Gr-r..h-h..[/say]")
+		saynn("[say=eliza]Гр-р-р.. х-х..[/say]")
 
 		# (Options are knock her out and Injector)
 
-		addButton("Knock her out", "She shouldn’t see you stealing the drugs", "knock_her_out")
-		addButton("Injector", "Use the unknown injector on Eliza", "injector")
+		addButton("Вырубить её", "Она не должна увидеть, как ты воруешь наркоту", "knock_her_out")
+		addButton("Инъектор", "Использовать неизвестный инъектор на Элизе", "injector")
 		
 
 	if(state == "knock_her_out"):
@@ -293,13 +293,13 @@ func _run():
 			npcBodyState={},
 		})
 		
-		saynn("You start to apply more pressure onto the doctor’s neck until her resistance becomes even more weaker. Eventually, Eliza loses consciousness and you slowly make her slide down the wall before letting go of her neck.")
+		saynn("Ты начинаешь сильнее сдавливать шею доктора, пока её сопротивление не становится совсем слабым. В конце концов Элиза теряет сознание, и ты медленно позволяешь ей сползти по стене, прежде чем разжать пальцы.")
 
-		saynn("You grab the vials with the red drug, all of them. To make sure no one notices their disappearance, you replace the ones you stole with random ones that have roughly the same color.")
+		saynn("Ты хватаешь все флаконы с красным препаратом. Чтобы никто не заметил пропажи, ты заменяешь украденные флаконы случайными, которые примерно такого же цвета.")
 
-		saynn("Time to run. You crouch before Eliza and steal her badge for a second to open the door out of the lab. She should be fine, you see her chest breathing.")
+		saynn("Пора бежать. Ты приседаешь перед Элизой и на мгновение крадешь её бейдж, чтобы открыть дверь из лаборатории. С ней должно быть всё в порядке — ты видишь, как вздымается её грудь.")
 
-		addButton("Escape", "Time to go", "escape")
+		addButton("Побег", "Пора идти", "escape")
 
 	if(state == "escape"):
 		removeCharacter("eliza")
@@ -307,12 +307,12 @@ func _run():
 		aimCameraAndSetLocName("med_nearlab")
 		playAnimation(StageScene.Solo, "stand")
 		
-		saynn("You enter the corridor and close the door behind you. You stole the mind-melting drug, Tavi should be safe now.")
+		saynn("Ты входишь в коридор и закрываешь за собой дверь. Ты украл этот выносящий мозг наркотик, теперь Тави должна быть в безопасности.")
 
 		# (task updated)
 
 		# (scene ends)
-		addButton("Continue", "You got the drugs!", "endthescene")
+		addButton("Продолжить", "Препараты у тебя!", "endthescene")
 
 	if(state == "injector"):
 		playAnimation(StageScene.SexStart, "start", {
@@ -321,101 +321,101 @@ func _run():
 			npcBodyState={},
 		})
 		
-		saynn("You reach out and pick up the injector that Eliza dropped. You’re not sure what it is but might as well test it on the doctor.")
+		saynn("Ты протягиваешь руку и подбираешь инъектор, который выронила Элиза. Ты не уверен, что это, но почему бы не протестировать его на докторе?")
 
-		saynn("[say=eliza]H-hey! Don’t you dare.[/say]")
+		saynn("[say=eliza]Э-эй! Только посмей![/say]")
 
-		saynn("[say=pc]Why not?[/say]")
+		saynn("[say=pc]Почему это?[/say]")
 
-		saynn("Eliza puts up a very weak defense, wrapping her paws around your hands with the injector and keeping it away from her as best as she can. Fear and panic settles into her as she begins to lose, seeing the thing creeping closer and closer to her neck.")
+		saynn("Элиза пытается слабо сопротивляться: она обхватывает твои руки с инъектором своими лапками, стараясь удержать его подальше от шеи. В ней нарастают страх и паника, когда она понимает, что проигрывает, видя, как эта штука подбирается всё ближе и ближе к её горлу.")
 
-		saynn("[say=eliza]I w-won’t tell anyone! I promise![/say]")
+		saynn("[say=eliza]Я... я никому не скажу! Обещаю![/say]")
 
-		saynn("[say=pc]Why should I trust a scared pussy.[/say]")
+		saynn("[say=pc]С чего бы мне верить перепуганной сучке?[/say]")
 
-		saynn("Eventually you overpower the weak doctor and stick the injector into her neck. The thing injects an unknown substance into Eliza’s bloodstream and becomes spent so you throw it away and just watch what happens next.")
+		saynn("В конце концов ты одолеваешь слабую докторшу и вонзаешь инъектор ей в шею. Устройство впрыскивает в кровь Элизы неизвестное вещество и пустеет, так что ты выбрасываешь его и просто наблюдаешь за тем, что будет дальше.")
 
-		addButton("Continue", "See what happens next", "continue1")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue1")
 
 	if(state == "continue1"):
-		saynn("Eliza stops resisting completely, she presses her paws against you but seems to be unable to push you away. The drug seems to be some kind of strong sedative, making it so she can’t tense up her muscles or even yell at you anymore.")
+		saynn("Элиза полностью перестает сопротивляться; она прижимается лапками к тебе, но, кажется, уже не в силах оттолкнуть. Препарат действует как мощное седативное средство — она больше не может напрягать мышцы или даже кричать на тебя.")
 
-		saynn("[say=eliza]Why..[/say]")
+		saynn("[say=eliza]Почему..[/say]")
 
-		saynn("You take off her belt and throw onto the floor. You notice that one of the pouches has a chain that she uses to leash you around and some other restraints.")
+		saynn("Ты снимаешь с неё пояс и швыряешь на пол. Ты замечаешь, что в одном из кармашков лежит цепь, которой она тебя ошейником привязывает, и другие средства сдерживания.")
 
-		saynn("[say=pc]If you weren’t such a bitch, things would have been different.[/say]")
+		saynn("[say=pc]Если бы ты не была такой сукой, всё было бы иначе.[/say]")
 
 		# (bind and leave, undress and gag with panties, whip with the chain, breed, grind with pussy)
 
-		addButton("Bind and leave", "She doesn’t possess any threat anymore, might just leave her be", "bind_and_leave")
-		addButton("Be rough", "(Brutal noncon) Time to teach that girl a good lesson", "be_rough")
+		addButton("Связать и оставить", "Она больше не представляет угрозы, можно просто оставить её в покое", "bind_and_leave")
+		addButton("Быть грубым", "(Брутальный нонкон) Пора преподать этой девчонке хороший урок", "be_rough")
 
 
 	if(state == "bind_and_leave"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		
-		saynn("You grab the long chain that Eliza usually uses as a leash. You figure that it might work pretty well as a rope and begin tying the doctor's legs with it, making it so she can’t walk or even just spread her legs.")
+		saynn("Ты хватаешь длинную цепь, которую Элиза обычно использует как поводок. Ты решаешь, что она отлично подойдет вместо веревки, и начинаешь обматывать ею ноги доктора, связывая их так, чтобы она не могла ни ходить, ни даже раздвинуть ноги.")
 
-		saynn("[say=eliza]Hey..[/say]")
+		saynn("[say=eliza]Эй..[/say]")
 
-		saynn("You focus your attention on her body. You take off her lab coat but leave the top and the long skirt that she has. The chain then gets wrapped around her hips and waist before going over her crotch, digging into her lace panties and making her skirt lift up which exposes her sexy garter and the underwear.")
+		saynn("Ты сосредотачиваешь всё внимание на её теле. Ты снимаешь с неё лабораторный халат, но оставляешь топ и длинную юбку. Затем ты оборачиваешь цепь вокруг её бедер и талии, пропуская её между ног; металл впивается в кружевные трусики, задирая юбку и обнажая её сексуальный пояс для чулок и белье.")
 
-		saynn("[say=eliza]Anyone? H-help!..[/say]")
+		saynn("[say=eliza]Есть кто?.. П-помогите!..[/say]")
 
-		saynn("[say=pc]I’m sick of that mouth.[/say]")
+		saynn("[say=pc]Этот рот уже в печенках сидит.[/say]")
 
-		saynn("You quickly wrap the chain around the girl’s chest and use the rest of it to tie her paws together, rendering Eliza helpless. Then you fumble through her pouches more and find a ball gag and a blindfold. The doctor sees them and starts to shake her head a lot.")
+		saynn("Ты быстро обматываешь цепью грудь девушки, а оставшейся частью связываешь её лапки, делая Элизу совершенно беспомощной. Затем ты шаришь в её подсумках и находишь кляп и повязку на глаза. Доктор видит их и начинает отчаянно мотать головой.")
 
-		saynn("[say=pc]What? You’d rather have me beat you senseless before doing it? Open your mouth.[/say]")
+		saynn("[say=pc]Что? Хочешь, чтобы я сначала избил тебя до беспамятства? А ну, открой рот.[/say]")
 
-		saynn("Eliza tilts her head down but doesn’t obey. So you slip your hand under her chains and tug, causing them to dig into the girl’s fur and also her sensitive parts. That makes her let out a desperate moan that you use for your advantage by shoving the red ball into her mouth and securing the straps behind her head.")
+		saynn("Элиза склоняет голову, но не подчиняется. Тогда ты просовываешь руку под цепи и резко дергаешь, заставляя их впиться в мех девушки и её чувствительные места. Это заставляет её издать отчаянный стон, которым ты тут же пользуешься: запихиваешь красный шар ей в рот и затягиваешь ремни на затылке.")
 
-		saynn("[say=eliza]Mh-hh-f..[/say]")
+		saynn("[say=eliza]Мх-хх-ф..[/say]")
 
-		saynn("The blindfold comes soon after, you wrap it around the girl’s eyes and tie it up, completing the kinky outfit.")
+		saynn("Вскоре наступает очередь повязки: ты оборачиваешь её вокруг глаз девушки и завязываешь узлом, завершая этот извращенный наряд.")
 
-		saynn("[say=pc]Much better.[/say]")
+		saynn("[say=pc]Так-то лучше.[/say]")
 
-		saynn("Eliza huffs softly. You grab her by the chain harness and tug towards the table, making her hop around awkwardly. A little push and she falls onto it with a muffled annoyed noise coming soon after. You tickle the bound doctor and see her squirming and wiggling which makes her chains dig into the sensitive spots more, forcing out noises again.")
+		saynn("Элиза тихо фыркает. Ты хватаешь её за цепную сбрую и тянешь к столу, заставляя её неуклюже подпрыгивать. Легкий толчок — и она падает на стол, издав приглушенный раздраженный звук. Ты щекочешь связанного доктора и наблюдаешь, как она извивается и ерзает, отчего цепи еще сильнее впиваются в чувствительные места, снова вырывая из неё звуки.")
 
-		saynn("[say=pc]Enjoy trying to get out of this.[/say]")
+		saynn("[say=pc]Наслаждайся попытками выбраться.[/say]")
 
-		saynn("After that you just grab the vials with the bright red drug and store them before replacing them with the ones she has lying around with of the same color.")
+		saynn("После этого ты просто хватаешь флаконы с ярко-красным препаратом и убираешь их, заменяя теми, что валяются у неё под рукой, такого же цвета.")
 
 		# (Escape, Time to go)
-		addButton("Escape", "Time to go", "resetElizaAndescape")
+		addButton("Побег", "Пора идти", "resetElizaAndescape")
 
 	if(state == "be_rough"):
 		addCharacter("eliza", ["naked"])
 		
-		saynn("Even though Eliza is drugged up with sedatives, she is still trying to resist. Which is so bad after what she tried to do with you. With Eliza still being pinned against the wall, your hands reach out for her lab coat and begin yanking it off. It seems to be made out of a tough material, Eliza is holding on to it the best she can before receiving a punch in the gut. That makes her gasp and finally let go of it, her glasses fall onto the floor and break. You throw her coat away and pin her against the wall again, can’t have her collapsing on you now.")
+		saynn("Несмотря на то что Элиза под действием седативных препаратов, она всё еще пытается сопротивляться. Что весьма дерзко после того, что она пыталась с тобой сделать. Пока Элиза прижата к стене, твои руки тянутся к её лабораторному халату и начинают яростно стягивать его. Похоже, он сделан из плотной ткани, и Элиза держится за него изо всех сил, пока не получает удар в живот. От этого она ахает и наконец отпускает его; её очки падают на пол и разбиваются. Ты отшвыриваешь её халат и снова прижимаешь её к стене — нельзя допустить, чтобы она сейчас просто рухнула тебе на руки.")
 
-		saynn("[say=eliza]Gh-h..[/say]")
+		saynn("[say=eliza]Гх-х..[/say]")
 
-		saynn("The next item is her fancy short-sleeve top. Taking it off normally would take more time so you just tear it off with your hands, ruining it and exposing the girl’s black lace bra that supports her C-cup tits.")
+		saynn("Следующий предмет — её нарядная блузка с коротким рукавом. Снимать её аккуратно было бы слишком долго, поэтому ты просто срываешь её руками, превращая вещь в лохмотья и обнажая черное кружевное бра, поддерживающее её грудь размера C.")
 
-		saynn("Eliza tries to sink her sharp feline claws into your flesh but you easily catch her paw and make her drag her own claws against her neck, leaving a few shallow scratch marks. She hisses from the pain and retracts her claws willingly.")
+		saynn("Элиза пытается вонзить свои острые кошачьи когти в твою плоть, но ты легко перехватываешь её лапу и заставляешь её саму провести когтями по своей шее, оставляя несколько неглубоких царапин. Она шипит от боли и послушно втягивает когти.")
 
-		saynn("[say=pc]Bitch, you’re not walking away unscared today. No one's gonna save your ass.[/say]")
+		saynn("[say=pc]Сучка, сегодня ты отсюда просто так не уйдёшь. Никто не спасёт твою задницу![/say]")
 
-		saynn("You press your forearm into the doctor’s neck and watch her angry eyes as you forcibly pull down her skirt, exposing her garter and black lace panties.")
+		saynn("Ты прижимаешь предплечье к шее врача и наблюдаешь за её яростными глазами, когда силой стягиваешь с неё юбку, обнажая подвязку и чёрные кружевные трусики.")
 
-		saynn("[say=eliza]F-fuck y-you..[/say]")
+		saynn("[say=eliza]Б-блядь... т-ты!..[/say]")
 
-		saynn("[say=pc]Is that how you’re gonna talk?[/say]")
+		saynn("[say=pc]И это всё, на что ты способна?[/say]")
 
-		saynn("You leave the garter alone but grab her panties before yanking them off. The cloth digs into her pussy before finally ripping and exposing her careful pink folds. You give the bitch another punch in the stomach to stun her enough for you to shove her own ruined underwear into her mouth, using it as a makeshift gag.")
+		saynn("Ты не трогаешь подвязку, но хватаешь её за трусики и резко срываешь их. Ткань впивается в её киску, прежде чем окончательно порваться и обнажить аккуратные розовые складки. Ты даёшь этой сучке ещё один удар в живот, чтобы оглушить её настолько, чтобы запихнуть её же разорванное бельё ей в рот, используя его как самодельную кляп.")
 
-		saynn("[say=pc]Much better.[/say]")
+		saynn("[say=pc]Так-то лучше.[/say]")
 
-		saynn("Though, she spits it out soon after so you slap her face before stuffing the wet black panties into her mouth again and using some medical tape to hold it there.")
+		saynn("Впрочем, вскоре она выплевывает его, поэтому ты даёшь ей пощёчину, прежде чем снова запихнуть мокрые чёрные трусики ей в рот и закрепить их медицинским пластырем.")
 
-		saynn("Eliza looks rough, lots of bruises and scratches are now decorating her pastel yellow fur. She is coughing and holding onto her stomach. She tries to look away but you grab her by the ponytail and force eye contact. The naked doctor is hissing and wincing at your roughness, she doesn’t look so rebellious anymore. In fact, first tears appear on her cheeks, messing up the make up.")
+		saynn("Элиза выглядит паршиво: её пастельно-жёлтый мех теперь украшают многочисленные синяки и царапины. Она кашляет и держится за живот. Она пытается отвести взгляд, но ты хватаешь её за хвост и заставляешь смотреть тебе в глаза. Нагая врач шипит и морщится от твоей грубости; она больше не выглядит такой бунтаркой. Напротив, на её щеках проступают первые слёзы, размазывая макияж.")
 
-		addButton("Whip her", "(Brutal) Use her chain leash to whip her ass and more", "whip_her")
-		addButtonWithChecks("Breed her", "(noncon) Her little pussy is just too appealing to pass up", "breed_her", [], [ButtonChecks.HasReachablePenis])
-		addButtonWithChecks("Scissoring", "(noncon) Rub pussies with Eliza", "scissoring", [], [ButtonChecks.HasReachableVagina])
+		addButton("Выпороть её", "(Жестоко) Использовать её цепь, чтобы отхлестать ей задницу и не только", "whip_her")
+		addButtonWithChecks("Оплодотворить её", "(noncon) Её крошечная киска слишком соблазнительна, чтобы пройти мимо", "breed_her", [], [ButtonChecks.HasReachablePenis])
+		addButtonWithChecks("Сквиз (ножницы)", "(noncon) Тереть киски вместе с Элизой", "scissoring", [], [ButtonChecks.HasReachableVagina])
 
 
 	if(state == "whip_her"):
@@ -425,57 +425,57 @@ func _run():
 			npcBodyState={},
 		})
 		
-		saynn("[say=pc]What? Think your crying will make me stop?[/say]")
+		saynn("[say=pc]Что? Думаешь, твои слезы заставят меня остановиться?[/say]")
 
-		saynn("You reach down and grab a chain that Eliza uses to leash inmates around. You wrap one end of it around your hand, making it look like a makeshift whip. Then you pull the unwilling scared doctor towards the middle of the room before bending her over the table. Your free hand lands on her cute fit ass and gives it a rough smack. She is already wiggling but you pin her in place.")
+		saynn("Ты тянешься вниз и хватаешь цепь, которой Элиза водит заключенных на поводке. Ты обматываешь один конец вокруг руки, превращая её в подобие самодельного кнута. Затем ты притягиваешь испуганную, сопротивляющуюся докторшу к середине комнаты и нагибаешь её над столом. Твоя свободная рука ложится на её милую подтянутую задницу и с силой шлепает её. Она уже начинает ерзать, но ты прижимаешь её на месте.")
 
-		saynn("You raise the hand with the chain whip, preparing to strike. Eliza closes her eyes and braces.")
+		saynn("Ты заносишь руку с цепью-кнутом, готовясь к удару. Элиза зажмуривается и сжимается в ожидании.")
 
-		saynn("[say=pc]Such a bad slut. This will teach you.[/say]")
+		saynn("[say=pc]Какая плохая шлюшка. Это тебя проучит.[/say]")
 
-		saynn("With one swift motion, you bring the whip down and whip her ass, leaving a few bruises already. Eliza arches her back and lets out a muffled painful noise through the panties.")
+		saynn("Одним резким движением ты опускаешь кнут и хлестаешь её по заднице, оставляя первые синяки. Элиза выгибает спину, издавая приглушенный болезненный стон сквозь трусики.")
 
-		saynn("You don’t stop, the next strike comes soon after, leaving another set of wounds on both her buttcheeks and making her wiggle around desperately.")
+		saynn("Ты не останавливаешься, следующий удар следует почти сразу, оставляя новые отметины на обеих ягодицах и заставляя её отчаянно извиваться.")
 
-		saynn("[say=pc]Yeah, how does it feel to be on the receiving end?[/say]")
+		saynn("[say=pc]Да, каково это — быть на месте жертвы?[/say]")
 
-		saynn("The chain rattles as you raise it again just to whip that poor doctor’s butt again. She surely won’t be able to sit on it for a while, you already notice some wounds bleeding. Muffled cries escape from her, she tries to cover her ass but you just whip her paws away, leaving a few painful marks on them too.")
+		saynn("Цепь гремит, когда ты снова заносишь её, чтобы еще раз отлупить задницу бедной докторши. Она точно не сможет сидеть какое-то время — ты уже замечаешь, как из ран сочится кровь. Из её горла вырываются приглушенные рыдания; она пытается прикрыть задницу, но ты просто сбиваешь её ладошки в стороны, оставляя на них тоже несколько болезненных следов.")
 
-		saynn("[say=pc]If you tell anyone, I will make a proper painslut out of you. Hear me?[/say]")
+		saynn("[say=pc]Если кому-нибудь разболтаешь, я сделаю из тебя настоящую больную сучку. Услышал?[/say]")
 
-		saynn("Eliza just cries and rubs her wounded paws against her body so you whip her again, making her ass look very wounded. After some yelping and squirming, she starts to eagerly nod at you.")
+		saynn("Элиза просто плачет и трется ранеными лапками о свое тело, чтобы ты отлупил её снова, отчего её задница выглядит совсем избитой. После нескольких скулящих вскриков и ерзаний она начинает жадно кивать тебе.")
 
-		saynn("[say=pc]I don’t think I can trust you.[/say]")
+		saynn("[say=pc]Не думаю, что могу тебе доверять.[/say]")
 
-		saynn("You whip her thighs for a change and that sends a much powerful reaction, Eliza arches her back hard while her legs shake and shiver.")
+		saynn("Для разнообразия ты хлестаешь её по бедрам, и это вызывает куда более мощную реакцию: Элиза сильно выгибает спину, а её ноги начинают дрожать и трястись.")
 
-		saynn("[say=eliza]p-phhe-evse… s-stoh-hp..[/say]")
+		saynn("[say=eliza]п-пхх-е-е... о-остановись...[/say]")
 
-		saynn("She is a crying whining mess, her ass that was looking pristine not that long ago is now full of little bleeding marks that the chain links left.")
+		saynn("Она — сплошное рыдающее, скулящее месиво; её задница, которая еще недавно выглядела безупречно, теперь покрыта мелкими кровоточащими отметинами от звеньев цепи.")
 
-		saynn("You put your hands on her asscheeks and spread them. Her pink pussy is dry and the careful little tailhole visible clenching, probably from all the pain. You decide that her sensitive parts need to be taught a lesson too.")
+		saynn("Ты кладешь руки на её ягодицы и раздвигаешь их. Её розовая киска сухая, а аккуратное маленькое анальное отверстие заметно сжимается — вероятно, от боли. Ты решаешь, что её чувствительные места тоже нужно проучить.")
 
-		saynn("You hold her legs spread before whipping her for the last time, aiming directly for her slit. The reaction was powerful, a sudden shock overwhelms Eliza, her pink cunt receives a few good wounds and is pulsating as waves of pain make the girl squirm and quiver harder than before. Poor doctor is whining and crying, her paws holding onto her bleeding pussy but that only makes it more painful.")
+		saynn("Ты разводишь ей ноги перед последним ударом, целясь прямо в щель. Реакция была мощной: внезапный шок ошеломляет Элизу, её розовая щелка получает несколько хороших ран и пульсирует, пока волны боли заставляют девушку корчиться и дрожать сильнее, чем прежде. Бедная доктор скулит и плачет, прижимая лапки к своей кровоточащей киске, но от этого ей становится только больнее.")
 
-		saynn("You turn her onto her back and grab her by the neck. You see fear and desperation in her eyes.")
+		saynn("Ты переворачиваешь её на спину и хватаешь за шею. В её глазах ты видишь страх и отчаяние.")
 
-		saynn("[say=pc]Did I make myself clear?[/say]")
+		saynn("[say=pc]Я ясно выразилась?[/say]")
 
-		saynn("She nods many times.")
+		saynn("Она часто-часто кивает.")
 
-		saynn("[say=pc]Good girl.[/say]")
+		saynn("[say=pc]Хорошая девочка.[/say]")
 
-		saynn("You let go of her neck and she falls off the table, probably hurting her back in the process too.")
+		saynn("Ты отпускаешь её шею, и она валится с кушетки, наверняка ушибив при этом спину.")
 
-		addButton("Continue", "Grab the drugs and leave", "continue2")
+		addButton("Продолжить", "Схватить лекарства и свалить", "continue2")
 
 	if(state == "continue2"):
-		saynn("While Eliza is busy looking for any painkillers in her pouches, you grab the vials with bright red fluid and replace them with random ones you find in her chemistry station that have roughly the right color.")
+		saynn("Пока Элиза занята поиском обезболивающих в своих подсумках, ты хватаешь флаконы с ярко-красной жидкостью и заменяешь их случайными из её химической станции, которые примерно подходят по цвету.")
 
-		saynn("Then you fetch the badge so you can open the door and leave.")
+		saynn("Затем ты забираешь бейдж, чтобы открыть дверь и уйти.")
 
 		# (Escape, Time to go)
-		addButton("Escape", "Time to go", "escape")
+		addButton("Побег", "Пора идти", "escape")
 
 
 	if(state == "breed_her"):
@@ -486,21 +486,21 @@ func _run():
 			npcBodyState={naked=true},
 		})
 
-		saynn("Eliza is still trying to desperately push you away, you catch both her paws with one hand and force them above her head while your second hand lands on the girl’s bra and is groping her tits.")
+		saynn("Элиза всё ещё отчаянно пытается оттолкнуть тебя; ты перехватываешь обе её лапки одной рукой и задираешь их над её головой, а твоя вторая рука ложится на грудь девушки и начинает бесцеремонно мять её сиськи.")
 
-		saynn("[say=pc]Don’t cry, kitty. You’re beatiful and so I just wanna fuck you.[/say]")
+		saynn("[say=pc]Не плачь, киска. Ты такая красавица, что мне просто хочется тебя оттрахать.[/say]")
 
-		saynn("Her eyes open wide, she tries to mumble something but the panties in her mouth only make her drool more.")
+		saynn("Её глаза широко распахиваются; она пытается что-то пробормотать, но трусики во рту заставляют её только пускать слюни.")
 
-		saynn("Eliza’s body is gorgeous, sexy clean curves all around with the black lingerie really emphasizing that. Her short pastel-colored fur feels so soft when you brush your hand over it. Although Eliza twitches each time she feels your touch, probably because of all the bruises that you left on her.")
+		saynn("Тело Элизы великолепно — сексуальные, чистые изгибы, которые черное белье подчеркивает еще сильнее. Её короткий пастельный мех кажется невероятно мягким под твоей рукой. Хотя Элиза вздрагивает от каждого твоего прикосновения — вероятно, из-за всех тех синяков, что ты на ней оставил.")
 
-		saynn("Your hand slides down over that fit belly and reaches her crotch, your digits find the little sensitive bean and play with it, making Eliza squirm and try to pull away.")
+		saynn("Твоя рука скользит вниз по её подтянутому животу к промежности; пальцы находят крошечную чувствительную бусинку и начинают играть с ней, заставляя Элизу извиваться и пытаться вырваться.")
 
-		saynn("[say=pc]No? I guess I will have to take you the hard way.[/say]")
+		saynn("[say=pc]Нет? Значит, придется взять тебя по-плохому.[/say]")
 
-		saynn("Her sorry eyes track your hand as you expose your {pc.cock} and present it to her. It’s already hard, twitching and leaking precum onto the floor. She stands on her toes and looks at you pleadingly while keeping her legs shut close. You do notice that she is blushing a lot.")
+		saynn("Её полные жалости глаза следят за твоей рукой, когда ты обнажаешь свой {pc.cock} и демонстрируешь ей. Он уже твердый, подергивается и пускает капли предэякулята на пол. Она приподнимается на цыпочках и умоляюще смотрит на тебя, плотно сжав ноги. Ты замечаешь, что она сильно покраснела.")
 
-		addButton("Continue", "Enough foreplay", "continue3")
+		addButton("Продолжить", "Хватит прелюдий", "continue3")
 
 	if(state == "continue3"):
 		playAnimation(StageScene.SexStanding, "sex", {
@@ -509,30 +509,30 @@ func _run():
 			npcBodyState={naked=true},
 		})
 		
-		saynn("Eliza makes muffled noises as you turn her around and pin against the wall, the hand that was holding her paws is now forcing her head into the cold concrete while the second pulls on that convenient feline tail to make her bend forward. And it works, her inner thighs trap your shaft between them.")
+		saynn("Элиза издает приглушенные звуки, когда ты разворачиваешь её и прижимаешь к стене; рука, что держала её лапки, теперь вжимает её голову в холодный бетон, а вторая тянет за её удобный кошачий хвост, заставляя её наклониться вперед. И это работает — её внутренние стороны бедер зажимают твой член между ними.")
 
-		saynn("But you didn’t come here to fuck her thighs, you pull back a little and guide your cock directly towards her sex that seems to be mostly dry, missing any arousal juices. You press the tip of your dick against her slit and lean in to whisper her into the ear.")
+		saynn("Но ты пришел сюда не для того, чтобы трахать её бедра; ты немного отстраняешься и направляешь свой член прямо к её лону, которое кажется почти сухим, лишенным смазки возбуждения. Ты прижимаешь головку к её щели и наклоняешься, чтобы прошептать ей на ухо:")
 
-		saynn("[say=pc]Soon you will get addicted to having my litter inside you.[/say]")
+		saynn("[say=pc]Скоро ты подсядешь на то, чтобы внутри тебя были мои котята.[/say]")
 
-		saynn("But Eliza didn’t yet stop showing her protest, she was mumbling and struggling against your pin until you suddenly thrust inside her, spreading her pussy petals aside and stretching her hole enough for your cock to slide inside. The girl lets out a painful moan as you leave bruises on her soft inner walls due to the lack of any lube. But the extra friction only makes the forced intercourse feel so much better, she is clenching her tight pussy around your dick and visibly shivering.")
+		saynn("Но Элиза всё еще не переставала протестовать: она бормотала и пыталась вырваться из твоих объятий, пока ты внезапно не вошел в неё одним мощным толчком, раздвинув лепестки её киски и растянув отверстие настолько, чтобы твой член проскользнул внутрь. Девушка издает болезненный стон, так как из-за отсутствия смазки ты оставляешь синяки на её нежных внутренних стенках. Но дополнительное трение лишь делает этот принудительный секс еще приятнее — она судорожно сжимает твой член своей узкой киской и заметно дрожит.")
 
-		saynn("[say=pc]So tight~[/say]")
+		saynn("[say=pc]Какая узкая~[/say]")
 
-		saynn("You don’t stop there, you begin moving your hips back and forth, leaving empty space inside that slit just to stuff it with your cock moments later. You notice some signs of blood on your shaft from all the roughness but you push through, fucking that cute pink slutty cunt for your please and forcing more noises out of your breeding toy.")
+		saynn("Ты не останавливаешься и начинаешь двигать бедрами вперед-назад, оставляя внутри щели пустое пространство лишь для того, чтобы спустя мгновение заполнить его своим членом. Из-за грубости на стволе проступают следы крови, но ты продолжаешь, трахая эту милую розовую шлюшку ради собственного удовольствия и вырывая всё новые стоны из своей игрушки для осеменения.")
 
-		saynn("Eventually her body starts to betray her, detecting the intercourse and making her wet against her will. Now your cock can finally stop tearing her inner walls and begin sliding against them. And soon enough, the doctor starts to squirm and convulse before you, her pussy pulsating and squirting out lots of her femcum, her legs really want to give up.")
+		saynn("В конце концов её тело начинает предавать её: оно чувствует секс и против воли становится влажным. Теперь твой член может наконец перестать разрывать её внутренние стенки и начать скользить по ним. Вскоре доктор начинает корчиться и содрогаться перед тобой; её киска пульсирует, извергая потоки женской спермы, а ноги вот-вот подкосятся.")
 
-		saynn("[say=pc]Cumming already, huh~? Such a dirty girl.[/say]")
+		saynn("[say=pc]Уже кончаешь, да~? Какая грязная девочка.[/say]")
 
-		saynn("Since the slut can’t stand very well, you pull her away from the wall and bend her body over the table that’s in the middle of the room. Your cock quickly finds the familiar slit and starts pounding it raw. More little muffled moans escape from the doctor as your cock finds her g-spot and starts hammering at. You lean forward and grab both of her hands before pulling them behind her back and using them to yank the girl towards you while thrusting inside her wet slit.")
+		saynn("Так как шлюшка едва держится на ногах, ты отрываешь её от стены и нагибаешь над столом, стоящим посреди комнаты. Твой член быстро находит знакомую щель и начинает вколачивать её до красноты. Из доктора вырываются приглушенные стоны, когда твой член находит её точку G и начинает методично долбить по ней. Ты наклоняешься вперед, перехватываешь обе её руки, заводишь их ей за спину и, используя их как рычаг, тянешь девушку на себя, мощно всаживаясь в её влажную щель.")
 
-		saynn("Her needy pussy quickly starts to get tight around your {pc.cock} again, Eliza is cumming and squirting all over the table while her tits bounce each time you force yourself deep inside her and pound at her cervix. All that is pushing you quite close to your own peak too, her slit is just begging for your seed.")
+		saynn("Её жадная киска снова начинает плотно обхватывать твой {pc.cock}; Элиза кончает и заливает всё вокруг сквиртом, пока её сиськи подпрыгивают при каждом твоём мощном толчке, когда ты вбиваешься глубоко в неё, долбя прямо в шейку матки. Всё это подгоняет тебя к собственному пику — её щелочка просто умоляет о твоём семени.")
 
-		saynn("[say=pc]Ready to bear kittens from me?[/say]")
+		saynn("[say=pc]Готова выносить от меня котят?[/say]")
 
-		addButton("Cum inside", "Finish the job", "cum_inside")
-		addButton("Pull out", "She clearly doesn’t want it, might as well have some mercy", "pull_out")
+		addButton("Кончить внутрь", "Довести дело до конца", "cum_inside")
+		addButton("Вытащить", "Она явно этого не хочет, стоит проявить немного милосердия", "pull_out")
 
 	if(state == "cum_inside"):
 		playAnimation(StageScene.SexStanding, "fast", {
@@ -541,16 +541,16 @@ func _run():
 			npcBodyState={naked=true},
 		})
 		
-		saynn("The feline under you doesn’t seem to be against it much, only her tail is wagging sporadically. You bend forward and support against the table with your hands while doing powerful thrusts with your hips, ramming that cock deep inside her and breaking into her womb. That’s when the tightness shoots you over the edge, grunts escape from your lips while your {pc.cock} bursts with multiple waves of your virile {pc.cum} that quickly stuffs the girl’s babymaker full.")
+		saynn("Кошечка под тобой, кажется, не особо против — лишь её хвост беспорядочно дёргается. Ты наклоняешься вперёд, упираясь руками в стол, и совершаешь мощные толчки бёдрами, вбивая член глубоко внутрь и буквально проламываясь в её матку. В этот момент теснота сносит тебе крышу; с твоих губ срывается хриплый стон, когда твой {pc.cock} извергается мощными волнами твоего витального {pc.cum}, который мгновенно заполняет девичью утробу до краёв.")
 
-		saynn("[say=pc]There we go~.[/say]")
+		saynn("[say=pc]Вот так~.[/say]")
 
-		saynn("Eliza has given up at this point, just sobbing quietly while your {pc.cum} drips down her girly thighs. You lay down on her and playfully bite her ear before pulling out and leaving her used pink slit to leak.")
+		saynn("К этому моменту Элиза уже сдалась, она лишь тихо всхлипывает, пока твой {pc.cum} стекает по её девичьим бёдрам. Ты ложишься на неё, игриво прикусываешь её ушко, а затем выходишь, оставляя её использованную розовую щелочку сочиться соком.")
 
-		saynn("After that, you just quickly clean yourself and grab the vials from the special crate before replacing them with some random ones Eliza has around that have roughly the same color, the girl is too busy crying to notice you doing all of that anyways.")
+		saynn("После этого ты быстро приводишь себя в порядок и хватаешь флаконы из специального ящика, заменяя их какими-то случайными штуками, которые валяются у Элизы и имеют примерно такой же цвет; девчонка слишком занята рыданиями, чтобы заметить твою махинацию.")
 
 		# (escape button here)
-		addButton("Escape", "Time to go", "escape")
+		addButton("Побег", "Пора идти", "escape")
 
 
 	if(state == "pull_out"):
@@ -560,16 +560,16 @@ func _run():
 			npcBodyState={naked=true},
 		})
 		
-		saynn("The feline under you doesn’t seem to care much about her fate, only her tail is wagging sporadically. You keep railing that slutty pussy, bringing your peak closer. But in the end, you decide to be merciful and pull your cock out moments before it bursts with waves of your {pc.cum}. Instead of stuffing her babymaker, you leave her slit to gape and just cum all over her ass and back.")
+		saynn("Кошка под тобой, кажется, не особо печется о своей судьбе — лишь её хвост беспорядочно подергивается. Ты продолжаешь вколачивать в эту шлюшью киску, приближаясь к пику. Но в конце концов ты решаешь проявить милосердие и вынимаешь свой член за мгновение до того, как он взорвется волнами твоего {pc.cum}. Вместо того чтобы забить её «машинку для детей», ты оставляешь её щель широко раскрытой и просто кончаешь ей на задницу и спину.")
 
-		saynn("[say=pc]Consider yourself lucky.[/say]")
+		saynn("[say=pc]Считай, что тебе повезло.[/say]")
 
-		saynn("Eliza is just sobbing quietly while your {pc.cum} drips down from her curves. You smack her cute butt and clean your messy cock against her thighs.")
+		saynn("Элиза лишь тихо всхлипывает, пока твой {pc.cum} стекает по её изгибам. Ты шлепаешь её по милой попке и вытираешь свой грязный член о её бедра.")
 
-		saynn("After that, you just quickly grab the vials from the special crate before replacing them with some random ones Eliza has around that have roughly the same color, the girl is too busy crying to notice you doing all of that anyways.")
+		saynn("После этого ты быстро хватаешь флаконы из специального ящика, заменяя их какими-то случайными штуками, которые валяются у Элизы и имеют примерно такой же цвет; девчонка слишком занята рыданиями, чтобы заметить твои махинации.")
 
 		# (escape button here)
-		addButton("Escape", "Time to go", "escape")
+		addButton("Побег", "Пора идти", "escape")
 
 
 	if(state == "scissoring"):
@@ -582,33 +582,33 @@ func _run():
 
 		# (ideally should have a way to steal cum)
 
-		saynn("Eliza is still trying to desperately push you away, you catch both her paws with one hand and force them above her head while your second hand lands on the girl’s bra and is groping her tits.")
+		saynn("Элиза всё ещё отчаянно пытается оттолкнуть тебя; ты перехватываешь обе её лапки одной рукой и задираешь их над её головой, а твоя вторая рука ложится на грудь девушки и начинает бесцеремонно мять её сиськи.")
 
-		saynn("[say=pc]Don’t cry, kitty. You’re a beautiful woman.[/say]")
+		saynn("[say=pc]Не плачь, киска. Ты прекрасная женщина.[/say]")
 
-		saynn("She tries to mumble something but the panties in her mouth only make her drool more.")
+		saynn("Она пытается что-то пробормотать, но трусики во рту заставляют её только сильнее пускать слюни.")
 
-		saynn("Eliza’s body is gorgeous, sexy clean curves all around with the black lingerie really emphasizing that. Her short pastel-colored fur feels so soft when you brush your hand over it. Although Eliza twitches each time she feels your touch, probably because of all the bruises that you left on her.")
+		saynn("Тело Элизы великолепно — сексуальные, чистые изгибы, которые черное белье подчеркивает еще сильнее. Её короткий пастельный мех кажется невероятно мягким под твоей рукой. Хотя Элиза вздрагивает от каждого твоего прикосновения — вероятно, из-за всех тех синяков, что ты на ней оставил.")
 
-		saynn("Your hand slides down over that fit belly and reaches her crotch, your digits find the little sensitive bean and play with it, making Eliza squirm and try to pull away.")
+		saynn("Твоя рука скользит вниз по её подтянутому животу к промежности; пальцы находят крошечную чувствительную бусинку и начинают играть с ней, заставляя Элизу извиваться и пытаться вырваться.")
 
-		saynn("[say=pc]No? I guess I will have to take you the hard way.[/say]")
+		saynn("[say=pc]Нет? Значит, придется взять тебя по-плохому.[/say]")
 
-		saynn("You grab the girl by her ponytail and pull her towards the medical table, making her hiss. Then you push her to sit on it and expose your {pc.pussyStretch} pussy that is quite wet from excitement already. Eliza tries to pull away but you pull her back and catch one of her legs before raising it so you can press your crotch against hers.")
+		saynn("Ты хватаешь девчонку за хвост и тянешь к медицинскому столу, заставляя её зашипеть. Затем ты усаживаешь её на стол, обнажая её {pc.pussyStretch} киску, которая уже изрядно промокла от возбуждения. Элиза пытается отстраниться, но ты притягиваешь её обратно и подхватываешь одну её ногу, задирая её так, чтобы плотно прижаться своим пахом к её.")
 
-		saynn("[say=pc]Ever done this before~?[/say]")
+		saynn("[say=pc]Раньше такое пробовала~?[/say]")
 
-		saynn("Crying Eliza looks at you and at her pussy before shaking her head and looking away. She is dry down there but you quickly make her folds wetter by eagerly rubbing your slit against hers, little moans already begin escaping from you. When Eliza tries to stop you, your hand reaches out and grabs her by the neck.")
+		saynn("Плачущая Элиза смотрит то на тебя, то на свою киску, а затем качает головой и отводит взгляд. Там, внутри, она сухая, но ты быстро увлажняешь её складки, жадно притирая свою щель к её, и из твоей груди уже начинают вырываться тихие стоны. Когда Элиза пытается тебя остановить, твоя рука тянется вперед и хватает её за шею.")
 
-		saynn("[say=pc]Quit resisting and enjoy being pussy-fucked.[/say]")
+		saynn("[say=pc]Хватит сопротивляться, просто наслаждайся тем, как тебя трахают в киску![/say]")
 
-		saynn("You pick up the pace, letting your petals grind against the girl’s slit harder and exchanging transparent fluids in the process. Eliza’s body seems to be betraying her, she is still shaking her head but the muffled noises that she makes are quite lewd. Very soon her pussy starts to pulsate and squirt femcum all over yours, her body is squirming a lot while she is cumming.")
+		saynn("Ты ускоряешься, заставляя свои лепестки сильнее втираться в щель девушки, в процессе обмениваясь прозрачными соками. Тело Элизы, кажется, предает её: она всё ещё качает головой, но приглушенные звуки, которые она издает, звучат чертовски похотливо. Вскоре её киска начинает пульсировать и заливать твою сквиртом, а её тело извивается во время оргазма.")
 
-		saynn("[say=pc]Such a good girl~.[/say]")
+		saynn("[say=pc]Такая хорошая девочка~...[/say]")
 
-		saynn("You feel yourself getting close too.")
+		saynn("Ты чувствуешь, что тоже близок к финишу.")
 
-		addButton("Cum", "Keep grinding her until you cum", "tribcum")
+		addButton("Кончить", "Продолжай тереться о неё, пока не кончишь", "tribcum")
 
 	if(state == "tribcum"):
 		playAnimation(StageScene.SexTribadism, "fast", {
@@ -617,84 +617,84 @@ func _run():
 			npcBodyState={naked=true},
 		})
 		
-		saynn("Even though the doctor’s pussy is probably quite sensitive after the climax, you keep grinding and overstimulating it, causing the girl to squirt again soon after. Her folds are massaging yours by twitching and pulsating which makes you cum too, your legs start to shake, your slit showering Eliza’s crotch with your juices.")
+		saynn("Хотя киска доктора, вероятно, очень чувствительна после оргазма, ты продолжаешь тереться и перестимулировать её, из-за чего девушка вскоре снова кончает сквиртом. Её складки массируют твою, дергаясь и пульсируя, что заставляет тебя тоже кончить; твои ноги начинают дрожать, а твоя щель заливает промежность Элизы соками.")
 
-		saynn("[say=pc]F-fuck yeah~[/say]")
+		saynn("[say=pc]Б-бля, да-а~...[/say]")
 
-		saynn("After riding the last of your orgasmic waves, you pull your crotch away, leaving the girl’s irritated pussy alone. Eliza just kinda becomes limp on the table, pretty much giving up completely.")
+		saynn("Дождавшись, когда последние волны оргазма утихнут, ты отстраняешься, оставляя раздраженную киску девушки в покое. Элиза просто обмякает на столе, практически полностью сдавшись.")
 
-		saynn("After that you just quickly clean yourself and grab the vials from the special crate before replacing them with some random ones Eliza has around that have roughly the same color, the girl is too busy crying to notice you doing all of that anyways.")
+		saynn("После этого ты быстро приводишь себя в порядок и выхватываешь флаконы из специального ящика, заменяя их какими-то случайными штуками, которые валяются у Элизы и примерно подходят по цвету; девчонка слишком занята слезами, чтобы заметить твои махинации.")
 
 		# (escape button here)
 
-		addButton("Escape", "Time to go", "escape")
+		addButton("Побег", "Пора идти", "escape")
 
 	if(state == "if_lost"):
-		saynn("You fall to your knees and pant heavily. Eliza picks up the injector she dropped.")
+		saynn("Ты падаешь на колени, тяжело дыша. Элиза подбирает выроненный инъектор.")
 
-		saynn("[say=eliza]Big mistake. But I know how to extract some value out of you.[/say]")
+		saynn("[say=eliza]Большая ошибка. Но я знаю, как выжать из тебя хоть какую-то пользу.[/say]")
 
-		saynn("She sticks the injector into your neck, making you grunt. It seems to be some kind of sedative because you can’t even get up anymore. But then she injects you with something else. Very soon you begin to feel the world spinning around you.")
+		saynn("Она вонзает инъектор тебе в шею, заставляя крякнуть от боли. Похоже на какой-то седатив, потому что у тебя уже нет сил даже подняться. Но затем она вводит тебе что-то еще. Вскоре мир вокруг начинает кружиться.")
 
-		saynn("The last thing you see is Eliza closing the crate with the drugs before losing consciousness.")
+		saynn("Последнее, что ты видишь перед тем, как потерять сознание — это как Элиза закрывает ящик с наркотиками.")
 
-		saynn("[say=eliza]Bye-bye~.[/say]")
+		saynn("[say=eliza]Пока-пока~.[/say]")
 
-		addButton("Nap", "Time to sleep", "nap")
+		addButton("Сон", "Пора спать", "nap")
 
 	if(state == "nap"):
 		aimCameraAndSetLocName("medical_paddedcell_player")
 		GM.pc.setLocation("medical_paddedcell_player")
 		playAnimation(StageScene.Solo, "kneel")
 		
-		saynn("You sleep for a few hours. When you wake up, you notice something. The floor is.. soft. Yes, it’s a very soft floor, you almost don’t wanna open your eyes.")
+		saynn("Ты спишь несколько часов. Проснувшись, ты замечаешь странную вещь. Пол... мягкий. Да, пол очень мягкий, тебе даже не хочется открывать глаза.")
 
-		saynn("But when you do, you realize that the floor is actually padded. And walls too. Oh. No.")
+		saynn("Но когда ты всё же открываешь их, то понимаешь, что пол на самом деле оббит мягкой обивкой. И стены тоже. О... нет.")
 
-		saynn("You try to sit down but quickly realize that you can’t use arms, they are bound! You’re wearing a straitjacket!")
+		saynn("Ты пытаешься сесть, но быстро осознаешь, что не можешь пошевелить руками — они связаны! На тебе смирительная рубашка!")
 
-		saynn("[say=pc]Oh…[/say]")
+		saynn("[say=pc]Ох...[/say]")
 
-		saynn("You sit down without using your arms and look around. You’re in a small padded room with a single door and nothing else.")
+		saynn("Ты садишься, не опираясь на руки, и оглядываешься. Ты в маленькой мягкой комнате с одной единственной дверью и больше ничем.")
 
-		saynn("[say=pc]Anyone?[/say]")
+		saynn("[say=pc]Есть кто?[/say]")
 
-		saynn("Did she send you into an asylum?")
+		saynn("Неужели она отправила тебя в дурку?")
 
-		saynn("A few seconds later you hear the noise coming through a very bad intercom speaker.")
+		saynn("Спустя несколько секунд из хрипящего динамика интеркома доносится звук.")
 
-		saynn("[say=eliza]Came to your senses?[/say]")
+		saynn("[say=eliza]Пришла в себя?[/say]")
 
-		saynn("[say=pc]What did you do?[/say]")
+		saynn("[say=pc]Что ты сделала?[/say]")
 
-		saynn("[say=eliza]Me? I haven't done anything yet. But you need help, your behavior clearly shows that you’re not doing well, mental wise.[/say]")
+		saynn("[say=eliza]Я? Да я еще ничего такого не сделала. Но тебе нужна помощь — твое поведение явно говорит о том, что с менталкой у тебя беда.[/say]")
 
-		saynn("[say=pc]Let me out.[/say]")
+		saynn("[say=pc]Выпусти меня.[/say]")
 
-		saynn("You hear her giggling which comes through with a lot of static, making it sound even worse.")
+		saynn("Ты слышишь её хихиканье, которое пробивается сквозь сильные статические помехи, отчего звук кажется еще более жутковатым.")
 
-		saynn("[say=eliza]Not until your behavior changes and you become sane again.[/say]")
+		saynn("[say=eliza]Не раньше, чем твое поведение изменится и ты снова станешь вменяемой.[/say]")
 
-		saynn("[say=pc]I’m not insane![/say]")
+		saynn("[say=pc]Я не сумасшедшая![/say]")
 
-		saynn("[say=eliza]Your records say otherwise. But you should be excited actually, we will be doing some experiments on you. To help you of course. For now, have a good rest.[/say]")
+		saynn("[say=eliza]Твои записи говорят об обратном. Но вообще-то тебе стоит радоваться: мы проведем над тобой кое-какие эксперименты. Разумеется, чтобы помочь тебе. А пока — хорошенько отдохни.[/say]")
 
-		saynn("[say=pc]Experiments? What?[/say]")
+		saynn("[say=pc]Эксперименты? Что?![/say]")
 
-		saynn("But just before you can voice all your protests, the small room begins to fill with thick pink mist. Breathing it makes you drowsy and sleepy.")
+		saynn("Но не успеваешь ты высказать все свои протесты, как маленькая комната начинает наполняться густым розовым туманом. От вдоха этого тумана тебя охватывает сонливость и вялость.")
 
-		saynn("The padded floor suddenly feels quite.. comfy. Keeping your eyes open is so hard.. Your body gives up on you..")
+		saynn("Мягкий пол внезапно кажется таким... уютным. Удержать глаза открытыми становится невероятно трудно... Тело окончательно тебя подводит...")
 
-		addButton("Sleep", "Second time today", "sleep")
+		addButton("Спать", "Уже второй раз за сегодня", "sleep")
 
 	if(state == "sleep"):
 		removeCharacter("eliza")
-		saynn("You get some good sleep. You open your eyes and realize that this wasn't a dream. You can't pinch your skin with that straitjacket on but everything is real, you're indeed stuck in a padded cell..")
+		saynn("Ты крепко спишь. Открыв глаза, ты понимаешь, что это был не сон. В смирительной рубашке трудно ущипнуть себя за кожу, но всё реально — ты действительно заперта в мягкой камере...")
 
-		saynn("Welcome to day "+str(GM.main.getDays())+" of your sentence")
+		saynn("Добро пожаловать в "+str(GM.main.getDays())+" твоего срока")
 
 		# (sleep, end scene)
-		addButton("Continue", "What now?", "startMentalWard")
+		addButton("Продолжить", "Что на этот раз?", "startMentalWard")
 
 
 	if(state == "obey"):
@@ -704,158 +704,158 @@ func _run():
 		
 		# (if has clothing)
 		if(!GM.pc.isFullyNaked()):
-			saynn("You {pc.undressMessage}, leaving yourself fully naked with just the collar on. Eliza takes your clothing and neatly packs it away for now. She then puts on some latex gloves and walks up to you.")
+			saynn("Ты {pc.undressMessage}, оставаясь совершенно голой, лишь в одном ошейнике. Элиза забирает твою одежду и аккуратно убирает её на время. Затем она надевает латексные перчатки и подходит к тебе.")
 
-		saynn("[say=eliza]I will just check if you have any internal damage. Spread your legs for me like a good patient. It won’t hurt, promise.[/say]")
+		saynn("[say=eliza]Я просто проверю, нет ли у тебя внутренних повреждений. Разведи ножки, как послушная пациентка. Обещаю, будет не больно.[/say]")
 
 		# (if has pussy and cock)
 		if(GM.pc.hasPenis() && GM.pc.hasVagina()):
-			saynn("You obey the doctor and spread your legs slightly, offering a great view of your {pc.cock} and {pc.pussyStretch} pussy. There is also a {pc.analStretch} tailhole hiding behind your balls.")
+			saynn("Ты повинуешься врачу и слегка разводишь ноги, открывая отличный вид на свою {pc.cock} и {pc.pussyStretch} киску. А прямо за яичками притаилось еще и {pc.analStretch} отверстие для хвоста.")
 
-			saynn("You blush slightly as Eliza leans down to do a visual check of your private bits. Her paw reaches out to brush over your shaft and cup the balls. After that, her digits land on your pussy slit and spread it open.")
+			saynn("Ты слегка краснеешь, когда Элиза наклоняется, чтобы визуально осмотреть твои интимные места. Её лапа тянется к тебе, проводя по члену и обхватывая яички. После этого её пальцы ложатся на твою киску и раздвигают её.")
 
 		# (else if has cock)
 		elif(GM.pc.hasPenis()):
-			saynn("You obey the doctor and spread your legs slightly, offering a great view of your {pc.cock}. There is also a {pc.analStretch} tailhole hiding behind your balls.")
+			saynn("Ты повинуешься врачу и слегка раздвигаешь ноги, открывая отличный вид на свою {pc.cock}. А ещё за яичками прячется {pc.analStretch} хвостовое отверстие.")
 
-			saynn("You blush slightly as Eliza leans down to do a visual check of your private bits. Her paw reaches out to brush over your shaft and cup the balls. After that, her digits sneak further and land on your tailhole before prodding it a few times.")
+			saynn("Ты слегка краснеешь, когда Элиза наклоняется, чтобы визуально осмотреть твои интимные места. Её лапа тянется к тебе, проводя по члену и обхватывая яички. После этого её пальцы пробираются глубже и ложатся на твоё хвостовое отверстие, несколько раз тыкая в него.")
 
 		# (else if has pussy)
 		elif(GM.pc.hasVagina()):
-			saynn("You obey the doctor and spread your legs slightly, offering a great view of your {pc.pussyStretch} pussy. There is also a {pc.analStretch} tailhole hiding behind your slit.")
+			saynn("Ты повинуешься врачу и слегка раздвигаешь ноги, открывая отличный вид на свою {pc.pussyStretch} киску. А ещё за щелью прячется {pc.analStretch} хвостовое отверстие.")
 
-			saynn("You blush slightly as Eliza leans down to do a visual check of your private bits. Her paw reaches out to brush over your sex. After that, her digits land on your pussy petals and spread them open.")
+			saynn("Ты слегка краснеешь, когда Элиза наклоняется, чтобы визуально осмотреть твои интимные места. Её лапа тянется к тебе, проводя по твоему члену. После этого её пальцы ложатся на лепестки твоей киски и раздвигают их.")
 
 		# (else)
 		else:
-			saynn("You obey the doctor and spread your legs slightly, offering a great view of your crotch. There is also a {pc.analStretch} tailhole.")
+			saynn("Ты повинуешься врачу и слегка раздвигаешь ноги, открывая отличный вид на свою промежность. Там также есть {pc.analStretch} хвостовое отверстие.")
 
-			saynn("You blush slightly as Eliza leans down to do a visual check of your private bits. Her paw reaches out to brush over your crotch. After that, her digits sneak further and land on your tailhole before prodding it a few times.")
+			saynn("Ты слегка краснеешь, когда Элиза наклоняется, чтобы визуально осмотреть твои интимные места. Её лапа тянется к тебе, проводя по промежности. После этого её пальцы пробираются глубже и ложатся на твоё хвостовое отверстие, несколько раз тыкая в него.")
 
 		# (if both are tight)
 		if(GM.pc.hasTightHoles()):
-			saynn("[say=eliza]Pretty nice, I see barely any wear and tear. You don’t have much intercourses. Unless you use lube of course~.[/say]")
+			saynn("[say=eliza]Довольно мило, почти не вижу никаких износов. У тебя не так много половых актов. Если только ты не используешь смазку, конечно~.[/say]")
 
-			saynn("You blush even harder hearing Eliza comment on your sex life.")
+			saynn("Ты краснеешь еще сильнее, когда Элиза начинает комментировать твою сексуальную жизнь.")
 
-			saynn("[say=eliza]Either way, let me find some.[/say]")
+			saynn("[say=eliza]В любом случае, дай мне кое-что найти.[/say]")
 
 		# (else)
 		else:
-			saynn("[say=eliza]Hmm, I do see some wear and tear, maybe you should be using more lube.[/say]")
+			saynn("[say=eliza]Хм, я вижу кое-какой износ, может, тебе стоит использовать побольше смазки?[/say]")
 
-			saynn("You blush even harder hearing Eliza comment on your sex life.")
+			saynn("Ты краснеешь еще сильнее, когда Элиза начинает комментировать твою сексуальную жизнь.")
 
-			saynn("[say=eliza]Yeah, let me find some.[/say]")
+			saynn("[say=eliza]Ага, сейчас найду.[/say]")
 
-		saynn("Doctor turns away and heads for some lockers to try to find something. This might be your best chance.")
+		saynn("Доктор отворачивается и направляется к шкафчикам в поисках чего-нибудь полезного. Возможно, это твой лучший шанс.")
 
-		addButton("Sneak", "Stand up and grab the drugs", "sneak")
+		addButton("Прокрасться", "Встать и схватить лекарства", "sneak")
 
 	if(state == "sneak"):
-		saynn("You make sure Eliza is not looking at you before silently leaving your spot and approaching the chemistry station. You grab every vial with the bright red drug and replace them with random ones that Eliza has around with roughly the same color.")
+		saynn("Убедившись, что Элиза на тебя не смотрит, ты бесшумно покидаешь свое место и подходишь к химическому стенду. Ты хватаешь каждый флакон с ярко-красным препаратом и заменяешь их случайными флаконами, которые есть у Элизы, примерно такого же цвета.")
 
-		saynn("But then you realize..")
+		saynn("Но тут ты понимаешь...")
 
-		saynn("You’re completely naked, where are you gonna hide them? Eliza is about to turn and look at you.")
+		saynn("Ты совершенно голая, где ты собираешься их прятать? Элиза вот-вот обернется и посмотрит на тебя.")
 
-		saynn("You look down at yourself. The more you think about it, the more you realize it, there is only one way to smuggle them out..")
+		saynn("Ты опускаешь взгляд на себя. Чем больше ты об этом думаешь, тем яснее понимаешь: есть только один способ вынести их контрабандой...")
 
-		addButton("Uh..", "Panic?", "uh..")
-		addButton("Inside", "Hide them inside you..", "inside")
+		addButton("Э-э...", "Паника?", "uh..")
+		addButton("Внутри", "Спрятать их внутри себя...", "inside")
 
 	if(state == "uh.."):
-		saynn("You waste most of your time panicking and just put your hand with the drugs behind your back.")
+		saynn("Ты тратишь большую часть времени на панику и просто заводишь руку с наркотиками за спину.")
 
-		saynn("Eliza sees you standing near the table and squints.")
+		saynn("Элиза замечает, что ты стоишь у стола, и прищуривается.")
 
-		saynn("[say=eliza]Why are you standing exactly, inmate?[/say]")
+		saynn("[say=eliza]Чего ты застыла, заключенная?[/say]")
 
-		saynn("[say=pc]Uh.[/say]")
+		saynn("[say=pc]Э-э...[/say]")
 
-		saynn("She turns towards you and frowns.")
+		saynn("Она поворачивается к тебе, нахмурившись.")
 
-		saynn("[say=eliza]And what’s that in your hand?[/say]")
+		saynn("[say=eliza]И что это у тебя в руке?[/say]")
 
-		saynn("[say=pc]Nothing?[/say]")
+		saynn("[say=pc]И ничего?[/say]")
 
-		saynn("She starts creeping towards you, her paw reaches for the remote. You gotta do something!")
+		saynn("Она начинает подкрадываться к тебе, её лапа тянется к пульту. Нужно что-то предпринять!")
 
 		# (choices are attack and explain)
 
-		addButton("Explain", "Try to talk it through", "explain")
-		addButton("Attack", "Now seems to be the best time to attack Eliza and steal the drugs", "attack")
+		addButton("Объяснить", "Попытаться всё объяснить", "explain")
+		addButton("Атаковать", "Сейчас кажется лучшим моментом, чтобы напасть на Элизу и украсть лекарства.", "attack")
 
 
 	if(state == "explain"):
 		playAnimation(StageScene.Duo, "defeat", {npc="eliza"})
 		
-		saynn("[say=pc]I can explain.[/say]")
+		saynn("[say=pc]Я всё объясню![/say]")
 
-		saynn("[say=eliza]Can you?[/say]")
+		saynn("[say=eliza]И сможешь ли?[/say]")
 
-		saynn("Eliza finds the shock remote and presses the button that sends a powerful shock through your body. You cry out from pain and fall to your knees, your hand drops the vials.")
+		saynn("Элиза находит пульт и нажимает на кнопку, посылая мощный разряд тока через твоё тело. Ты вскрикиваешь от боли и падаешь на колени, выронив флаконы.")
 
-		saynn("[say=eliza]You’re just a junkie. You think this is a drug shop? But I can help you with your addictions.[/say]")
+		saynn("[say=eliza]Ты просто торчок. Думаешь, это нарколаборатория? Но я могу помочь тебе с твоей зависимостью.[/say]")
 
-		saynn("She doesn’t even give you time to catch your breath before sending another shock in. The pain makes you collapse and squirm around on the floor. Eliza then just walks up to you and sticks some kind of injector into your neck before grabbing the red vials from you and storing them into the crate.")
+		saynn("Она не дает тебе даже перевести дух, как тут же бьёт током снова. От боли ты валишься на пол и корчишься в конвульсиях. Затем Элиза просто подходит к тебе, вонзает какой-то инъектор тебе в шею, а после забирает красные флаконы и убирает их в ящик.")
 
-		saynn("Very soon you begin to feel the world spinning around you.")
+		saynn("Вскоре ты чувствуешь, как мир вокруг начинает вращаться.")
 
-		saynn("The last thing you see is Eliza closing the crate with the drugs before losing consciousness.")
+		saynn("Последнее, что ты видишь перед тем, как потерять сознание — это как Элиза закрывает ящик с наркотиками.")
 
-		saynn("[say=eliza]Bye-bye~.[/say]")
+		saynn("[say=eliza]Пока-пока~.[/say]")
 
 		# (if lost stuff starts here)
-		addButton("Nap", "Time to sleep", "nap")
+		addButton("Сон", "Пора спать", "nap")
 
 	if(state == "inside"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		
 		# (if has pussy)
 		if(GM.pc.hasReachableVagina()):
-			saynn("There is no time, you move the vials down to your slit and slide them inside one by one, hoping that the internal friction will be enough to keep them from falling out.")
+			saynn("Времени нет, ты подносишь флаконы к своей щели и вставляешь их один за другим, надеясь, что внутреннего трения хватит, чтобы они не выпали.")
 
 		# (else)
 		else:
-			saynn("There is no time, you move the vials down to your butt and slide them inside one by one, hoping that the internal friction will be enough to keep them from falling out.")
+			saynn("Времени нет, ты подносишь флаконы к своей заднице и вставляешь их один за другим, надеясь, что внутреннего трения хватит, чтобы они не выпали.")
 
-		saynn("Then you quickly sit on the table again and clench as much as you can. Eliza finds what she was looking for and walks up to you, seemingly unaware of what just happened.")
+		saynn("Затем ты быстро снова садишься на стол и сжимаешься изо всех сил. Элиза находит то, что искала, и подходит к тебе, будто и не заметив, что только что произошло.")
 
-		saynn("[say=eliza]There you go, some lube. Can buy more with your credits if you ever need it.[/say]")
+		saynn("[say=eliza]Вот, держи, немного лубриканта. Если понадобится больше, сможешь докупить за свои кредиты.[/say]")
 
-		saynn("You smile nervously and grab the offered lube.")
+		saynn("Ты нервно улыбаешься и берешь предложенный тюбик.")
 
-		saynn("[say=pc]Thanks..[/say]")
+		saynn("[say=pc]Спасибо..[/say]")
 
 		# (if has clothing)
 		if(!GM.pc.isFullyNaked()):
-			saynn("Eliza raises her brow at you. But then she just grabs your uniform and gives it to you. You carefully put your stuff on while she approaches her chemistry station and makes sure everything is okay there before closing the crate.")
+			saynn("Элиза вскидывает бровь, глядя на тебя. Но затем она просто протягивает тебе твою форму. Ты осторожно одеваешься, пока она подходит к своему химическому столу и проверяет, всё ли в порядке, прежде чем закрыть ящик.")
 
 		# (else)
 		else:
-			saynn("Eliza raises her brow at you. But then she just approaches her chemistry station and makes sure everything is okay there before closing the crate.")
+			saynn("Элиза вскидывает бровь, глядя на тебя. Но затем она просто подходит к своему химическому столу и проверяет, всё ли в порядке, прежде чем закрыть ящик.")
 
-		saynn("[say=eliza]Now we can go, inmate.[/say]")
+		saynn("[say=eliza]Теперь можем идти, заключенная.[/say]")
 
-		addButton("Leave", "You’re almost free!", "leave1")
+		addButton("Уйти", "Ты почти на свободе!", "leave1")
 
 	if(state == "leave1"):
 		GM.pc.setLocation("med_nearlab")
 		aimCameraAndSetLocName("med_nearlab")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		
-		saynn("Eliza opens the door that leads to the corridor. You get up and begin to step towards it. You do walk a little funny but luckily Eliza doesn’t spot it.")
+		saynn("Элиза открывает дверь, ведущую в коридор. Ты встаешь и начинаешь идти к ней. Твоя походка немного странная, но, к счастью, Элиза этого не замечает.")
 
-		saynn("[say=eliza]I need to store this in a safe place. I believe you will find the exit yourself?[/say]")
+		saynn("[say=eliza]Мне нужно убрать это в безопасное место. Думаю, ты и сама найдешь выход?[/say]")
 
-		saynn("You nod and watch Eliza leave you alone. Now you finally can pull out the drugs.. out of yourself. But hey, at least you have them now. Clean job. Mostly.. Tavi should be happy.")
+		saynn("Ты киваешь и смотришь, как Элиза оставляет тебя одну. Теперь ты наконец-то можешь вытащить наркотики... из самой себя. Но эй, зато они теперь у тебя. Чистая работа. Почти... Тави должна быть довольна.")
 
 		# (Task completed)
 
 		# (scene ends)
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 
 func _react(_action: String, _args):

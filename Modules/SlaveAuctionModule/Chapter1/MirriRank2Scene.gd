@@ -9,510 +9,510 @@ func _run():
 	if(state == ""):
 		addCharacter("mirri")
 		playAnimation(StageScene.Duo, "stand", {npc="mirri"})
-		saynn("Mirri shoves the laptop into your face, a loud purr intersects her each word.")
+		saynn("Мирри сует вам в лицо ноутбук, и каждое её слово перебивается громким мурлыканьем.")
 
-		saynn("[say=mirri]Mirri Blacktail is now officially slaver rank 2! I'm so happy, I wanna kiss you! Wanna make out?[/say]")
+		saynn("[say=mirri]Мирри Блэктайл официально достигла 2-го ранга работорговца! Я так счастлива, что аж расцеловать тебя хочу! Поцелуемся?[/say]")
 
-		saynn("She shoves herself into your personal space and attempts to steal a kiss but you just keep her at a distance for now.")
+		saynn("Она бесцеремонно вторгается в ваше личное пространство и пытается украсть поцелуй, но вы пока просто держите её на расстоянии.")
 
-		saynn("[say=pc]I thought you're the best slaver in the whole galaxy.[/say]")
+		saynn("[say=pc]А я-то думала, ты лучший работорговец во всей галактике.[/say]")
 
-		saynn("The catgirl instantly stops purring and suddenly bites your hand instead.")
+		saynn("Кошкодевочка мгновенно перестаёт мурлыкать и вместо этого внезапно кусает вас за руку.")
 
-		saynn("[say=pc]OW.[/say]")
+		saynn("[say=pc]АЙ![/say]")
 
-		saynn("[say=mirri]I am, objectively.[/say]")
+		saynn("[say=mirri]Объективно — так и есть.[/say]")
 
-		saynn("She throws the laptop back onto her desk and rolls her eyes.")
+		saynn("Она швыряет ноутбук обратно на стол и закатывает глаза.")
 
-		saynn("[say=mirri]And subjectively.. this list is completely meaningless, it didn't count what I did before going solo, that's total bullshit and they all know it.[/say]")
+		saynn("[say=mirri]А субъективно... этот список — полная херня. Они не учли то, что я наворотила до того, как ушла в соло. Это лютый бред, и они все это знают.[/say]")
 
-		saynn("[say=pc]You're not exactly doing everything solo now, do you?[/say]")
+		saynn("[say=pc]Ну, ты ведь сейчас тоже не совсем в одиночку работаешь, верно?[/say]")
 
-		saynn("Mirri tilts her head.")
+		saynn("Мирри склоняет голову набок.")
 
-		saynn("[say=mirri]Talking about yourself? You're just my running puppy. Catching slaves is like the smallest part of this whole business. Be glad that you don't have to worry about the rest, it's politics through and through, I fucking hate it.[/say]")
+		saynn("[say=mirri]О себе говоришь? Ты всего лишь моя бегающая за мной щеночка. Поимка рабов — это лишь малая часть всего этого бизнеса. Радуйся, что тебе не приходится париться об остальном: это сплошная политика, и я её просто ненавижу нахрен.[/say]")
 
-		saynn("[say=pc]So why do you care about it so much? The list and everything.[/say]")
+		saynn("[say=pc]Так почему же тебя это так волнует? Весь этот список и всё такое...[/say]")
 
-		saynn("She shrugs.")
+		saynn("Она пожимает плечами.")
 
-		saynn("[say=mirri]'Cause of dad? We need bigger numbers near our names so our family looks better. We are the Blacktail after all. Dad is gonna kill me if I fuck up.[/say]")
+		saynn("[say=mirri]Из-за папаши? Нам нужны цифры побольше рядом с нашими именами, чтобы семья выглядела солиднее. Мы всё-таки Блэктайл. Если я всё просру, отец меня прибьёт.[/say]")
 
-		saynn("Makes sense.")
+		saynn("Логично.")
 
-		saynn("[say=luxe]Khhm..[/say]")
+		saynn("[say=luxe]Кхм...[/say]")
 
-		saynn("You hear a male cough behind you. The room suddenly got colder.")
+		saynn("Позади тебя раздается мужской кашель. В комнате внезапно стало холоднее.")
 
-		saynn("[say=mirri]Speaking of..[/say]")
+		saynn("[say=mirri]Кстати о нем...[/say]")
 
-		addButton("Continue", "See what happens next", "luxe_comes_in")
+		addButton("Продолжить", "Смотреть, что будет дальше", "luxe_comes_in")
 	if(state == "luxe_comes_in"):
 		addCharacter("luxe")
 		playAnimation(StageScene.Duo, "stand", {pc="mirri", npc="luxe"})
-		saynn("Wolf is standing near the entrance of Mirri's room, looking around.")
+		saynn("Вольф стоит у входа в комнату Мирри, оглядываясь по сторонам.")
 
-		saynn("[say=mirri]You came here to congratulate me? You shouldn't have![/say]")
+		saynn("[say=mirri]Пришел поздравить меня? Не стоило![/say]")
 
-		saynn("Mirri rushes to him, her voice sounds sarcastic.. but her tail is upright and wagging with excitement.")
+		saynn("Мирри бросается к нему; её голос звучит саркастично, но хвост поднят и возбужденно виляет.")
 
-		saynn("[say=luxe]No.[/say]")
+		saynn("[say=luxe]Нет.[/say]")
 
-		saynn("The catgirl lowers her chin and backs off, her tail going limp.")
+		saynn("Девушка-кошка опускает подбородок и отступает, её хвост безжизненно повисает.")
 
-		saynn("[say=mirri]Aw.[/say]")
+		saynn("[say=mirri]Оу...[/say]")
 
-		saynn("The wolf steps in further, taking his sweet time. His golden marks add to the dim lighting, coloring everything around him. He stops when he reaches the middle of the space, his aura alone is making you press yourself into one of the walls.")
+		saynn("Волк заходит глубже, не торопясь. Его золотые метки подсвечивают полумрак, окрашивая всё вокруг. Он останавливается в центре зала; от одной его ауры тебя буквально прижимает к стене.")
 
-		saynn("[say=luxe]Wondering if you changed your mind yet, Mirri.[/say]")
+		saynn("[say=luxe]Интересно, ты уже передумала, Мирри?[/say]")
 
-		saynn("Mirri sighs.. and then clenches her fists.")
+		saynn("Мирри вздыхает... а затем сжимает кулаки.")
 
-		saynn("[say=mirri]I ain't giving you the coords, dad! Especially now, when my plan is working.[/say]")
+		saynn("[say=mirri]Я не дам тебе координаты, пап! Особенно сейчас, когда мой план срабатывает![/say]")
 
-		saynn("The wolf directs his attention to you, making you freeze in your spot. His amber eyes are judging you.")
+		saynn("Волк переводит взгляд на тебя, заставляя замереть на месте. Его янтарные глаза смотрят с осуждением.")
 
-		saynn("[say=luxe]There is no time to argue, Mirri.[/say]")
+		saynn("[say=luxe]Спорить некогда, Мирри.[/say]")
 
-		saynn("[say=mirri]I'm doing what's best for this family![/say]")
+		saynn("[say=mirri]Я делаю то, что лучше всего для нашей семьи![/say]")
 
-		saynn("[say=luxe]Right now we all have to do what's best for Syndicate.[/say]")
+		saynn("[say=luxe]Сейчас мы все должны делать то, что лучше всего для Синдиката.[/say]")
 
-		saynn("Mirri growls and just sits behind her desk, her eyes staring into the laptop.")
+		saynn("Мирри рычит и просто усаживается за свой стол, не отрывая взгляда от ноутбука.")
 
-		saynn("[say=mirri]Whatever, I'm trying to prove something to a deaf person it seems..[/say]")
+		saynn("[say=mirri]Плевать, похоже, я пытаюсь что-то доказать глухому..[/say]")
 
-		saynn("The silence insures. It's so quiet that you swear you went deaf yourself.")
+		saynn("Воцаряется тишина. Так тихо, что кажется, будто оглох ты сам.")
 
-		saynn("[say=luxe]Come.[/say]")
+		saynn("[say=luxe]Иди сюда.[/say]")
 
-		saynn("[say=mirri]Why? I'm tired of yapping into the abyss. Let's just skip it, I.. I just want to take a nap.[/say]")
+		saynn("[say=mirri]Зачем? Мне надоело тявкать в бездну. Давай просто пропустим это, я... я просто хочу вздремнуть.[/say]")
 
-		saynn("[say=luxe]Not you.[/say]")
+		saynn("[say=luxe]Не ты.[/say]")
 
-		saynn("Mirri raises a brow, her mean eyes looking at you.. just like the wolf's.. After all this, somehow you got a huge light projector put on you..")
+		saynn("Мирри вскидывает бровь, глядя на тебя своими злобными глазами... точь-в-точь как волчица... После всего этого на тебя каким-то образом навесили огромный световой проектор...")
 
-		saynn("[say=mirri]Really? Fine, whatever.[/say]")
+		saynn("[say=mirri]Серьезно? Ладно, хрен с тобой.[/say]")
 
-		saynn("The catgirl gets up and almost clips your shoulder as she walks past you.. before hitting the bed.")
+		saynn("Кошкодевочка встает и почти задевает тебя плечом, проходя мимо, прежде чем рухнуть на кровать.")
 
-		saynn("The wolf steps out the room.. Mirri gives you one last look.. a sad one.")
+		saynn("Волчица выходит из комнаты... Мирри бросает на тебя последний взгляд... печальный.")
 
-		addButton("Follow", "See what he has to say to you", "luxe_office")
+		addButton("Следовать", "Послушай, что он тебе скажет", "luxe_office")
 	if(state == "luxe_office"):
 		removeCharacter("mirri")
 		playAnimation(StageScene.Duo, "stand", {npc="luxe", npcAction="sit"})
 		aimCamera("market_luxe")
 		setLocationName("Office")
-		saynn("You follow him to his giant office that has a big holographic map on its main wall and a lot of expensive wooden furniture.")
+		saynn("Ты идешь за ним в его огромный кабинет, где на главной стене красуется большая голографическая карта, а повсюду расставлена дорогая деревянная мебель.")
 
-		saynn("The wolf sits behind his desk and pops some pill before leaning back in his grand chair.")
+		saynn("Волк сидит за столом, закидывает в рот какую-то таблетку и откидывается в своем величественном кресле.")
 
-		saynn("You have exactly zero idea where to stand.. so you just stand in the middle of his office.")
+		saynn("Ты понятия не имеешь, где именно тебе стоять... поэтому просто замираешь посреди кабинета.")
 
-		saynn("The wolf gazes upon you.. silently. His expression changes a few times.. subtly.")
+		saynn("Волк молча пристально смотрит на тебя. Его выражение лица несколько раз едва заметно меняется...")
 
-		saynn("After some time, he finally breaks the ice with a first question.")
+		saynn("Спустя какое-то время он, наконец, нарушает тишину первым вопросом.")
 
-		saynn("[say=luxe]Do you know why we, Blacktail, do what we do?[/say]")
+		saynn("[say=luxe]Знаешь ли ты, почему мы, Блэктайл, делаем то, что делаем?[/say]")
 
-		addButton("Money", "Obviously they are just doing it for the credits", "say_money")
-		addButton("Power", "They do it to feel power over others", "say_power")
-		addButton("Fun", "There is fun to be had in breaking and selling slaves", "say_fun")
-		addButton("Sex", "Fucking and breeding slaves. Obviously", "say_sex")
+		addButton("Деньги", "Очевидно, они делают это просто ради кредитов", "say_money")
+		addButton("Власть", "Они делают это, чтобы почувствовать власть над другими", "say_power")
+		addButton("Ради веселья", "В том, чтобы ломать и продавать рабов, есть свое удовольствие", "say_fun")
+		addButton("Секс", "Трахать и плодить рабов. Очевидно же", "say_sex")
 	if(state == "say_money"):
 		if (luxeAns == "money"):
-			saynn("[say=pc]Money? Credits?[/say]")
+			saynn("[say=pc]Деньги? Кредиты?[/say]")
 
-			saynn("The silent gaze judges you more.")
+			saynn("Безмолвный взгляд судит тебя сильнее.")
 
-			saynn("[say=luxe]Correct.[/say]")
+			saynn("[say=luxe]Верно.[/say]")
 
-			saynn("That's almost boring..")
+			saynn("Это уже почти скучно...")
 
-			saynn("The wolf takes another pause to look at you. His silence feels heavier than his words..")
+			saynn("Волк снова делает паузу, пристально глядя на тебя. Его молчание кажется тяжелее любых слов...")
 
-			saynn("[say=luxe]It's not a matter of simple greed as you might think. Slaves are the foundation of the Syndicate's economy. A war economy.[/say]")
+			saynn("[say=luxe]Дело не в простой жадности, как ты думаешь. Рабы — это фундамент экономики Синдиката. Экономики военного времени.[/say]")
 
-			saynn("Wow. That's one healthy economy they got here. After some time, he speaks again, his tone measured and deep.")
+			saynn("Ого. Ну и здоровая тут экономика. Спустя какое-то время он заговаривает снова, его тон звучит размеренно и глубоко.")
 
 		elif (luxeAns == "power"):
-			saynn("[say=pc]Power? You do it to feel power over others.[/say]")
+			saynn("[say=pc]Власть? Ты делаешь это, чтобы почувствовать власть над другими.[/say]")
 
-			saynn("The silent gaze hardens.. and the wolf barely nods, his eyes narrowing.")
+			saynn("Безмолвный взгляд становится тяжелее... волк едва заметно кивает, прищурив глаза.")
 
-			saynn("[say=luxe]True enough. But power is just a tool for us, something practical. An essential evil.[/say]")
+			saynn("[say=luxe]И то правда. Но для нас власть — лишь инструмент, нечто практическое. Необходимое зло.[/say]")
 
-			saynn("The wolf holds his silence for a moment.")
+			saynn("Волк на мгновение хранит молчание.")
 
-			saynn("[say=luxe]Power creates structure. And structure is needed if you want an efficient war time economy.[/say]")
+			saynn("[say=luxe]Власть создает структуру. А структура необходима, если хочешь иметь эффективную экономику военного времени.[/say]")
 
-			saynn("It's always about money, huh. Who would have guessed.")
+			saynn("Все дело в деньгах, да? Кто бы мог подумать.")
 
 		elif (luxeAns == "fun"):
-			saynn("[say=pc]I think you do it for fun. Breaking slaves is fun. And so is selling them, seeing their terrified faces for the last time.[/say]")
+			saynn("[say=pc]А мне кажется, ты делаешь это ради забавы. Ломать рабов — это весело. Как и продавать их, видя их перепуганные рожи в последний раз.[/say]")
 
-			saynn("The wolf's expression tightens.")
+			saynn("Лицо волка напрягается.")
 
-			saynn("[say=luxe]Fun? My family doesn't survive on fun. Syndicate doesn't either. Everything we've built is held together by war and sacrifice. Pleasure is a distraction, not a purpose.[/say]")
+			saynn("[say=luxe]Забава? Моя семья выживает не благодаря забавам. Синдикат тоже. Всё, что мы построили, держится на войне и жертвах. Удовольствие — это лишь отвлечение, а не цель.[/say]")
 
-			saynn("His unforgiving eyes lock on yours.")
+			saynn("Его беспощадный взгляд впивается в тебя.")
 
-			saynn("[say=luxe]This is business, not entertainment. The Syndicate is what it is today because of a constant flow of resources. Resources that we, Blacktail, provide.[/say]")
+			saynn("[say=luxe]Это бизнес, а не развлечение. Синдикат стал тем, чем он является сегодня, благодаря постоянному притоку ресурсов. Ресурсов, которые поставляем мы, Блэктейл.[/say]")
 
-			saynn("So it is all just for money after all it seems.")
+			saynn("Значит, в конечном счете, всё это лишь ради денег.")
 
 		elif (luxeAns == "sex"):
-			saynn("[say=pc]Sex? You breed the slaves or just use them as your fucktoys. When they break, you just sell them and enslave new ones.[/say]")
+			saynn("[say=pc]Секс? Вы либо плодите рабов, либо просто используете их как секс-игрушки. А когда они ломаются, вы просто продаете их и берете в рабство новых.[/say]")
 
-			saynn("The wolf's jaw clenches ever so slightly.. but his tone remains cold.")
+			saynn("Челюсть волка едва заметно сжимается... но его тон остается холодным.")
 
-			saynn("[say=luxe]Breeding is no priority here. The Syndicate isn't some den of idle pleasures. And unlike some, I see no value in weakness or indulgence.[/say]")
+			saynn("[say=luxe]Разведение здесь не в приоритете. Синдикат — это не притон для праздных удовольствий. И в отличие от некоторых, я не вижу ценности в слабости или излишествах.[/say]")
 
-			saynn("He shifts in his seat, his voice low and calculated.")
+			saynn("Он ерзает в кресле, его голос звучит низко и расчетливо.")
 
-			saynn("[say=luxe]Blacktail provides funds, control and stability, keeping the gears of the war machine oiled up. That is our focus.[/say]")
+			saynn("[say=luxe]Блэктейл обеспечивает финансирование, контроль и стабильность, не давая механизмам военной машины заржаветь. Вот на чем сосредоточены наши усилия.[/say]")
 
-			saynn("Funds, huh.")
+			saynn("Финансирование, значит.")
 
-		saynn("[say=luxe]Total control is the most efficient way to run any system. And our family has been providing the means to keep that system alive, sometimes alone.[/say]")
+		saynn("[say=luxe]Полный контроль — самый эффективный способ управления любой системой. И наша семья обеспечивает средства для поддержания жизни этой системы, порой в одиночку.[/say]")
 
-		saynn("[say=pc]Total control over people, you mean? Slavery.[/say]")
+		saynn("[say=pc]Полный контроль над людьми, ты это имеешь в виду? Рабство.[/say]")
 
-		saynn("A shadow flickers across the wolf's face as he nods.")
+		saynn("По лицу волка пробегает тень, когда он кивает.")
 
-		saynn("[say=luxe]Without control, everything collapses into chaos. Corruption, inefficiency, madness. All of these are just other names for AlphaCorp.[/say]")
+		saynn("[say=luxe]Без контроля всё рушится и превращается в хаос. Коррупция, неэффективность, безумие. Всё это — лишь другие названия для AlphaCorp.[/say]")
 
-		saynn("You notice his mouth twist, just slightly, when he mentions AlphaCorp.")
+		saynn("Вы замечаете, как его губы слегка кривятся, когда он упоминает AlphaCorp.")
 
-		saynn("[say=luxe]They think they're different. That somehow they're more humane, more moral. But in the end, their methods are no better than ours.[/say]")
+		saynn("[say=luxe]Они думают, что они другие. Что они каким-то образом более гуманные, более моральные. Но в конечном счёте их методы ничем не лучше наших.[/say]")
 
-		saynn("[say=pc]Pretty rich coming from.. well, slavers.[/say]")
+		saynn("[say=pc]Довольно дерзко звучит из уст... ну, работорговцев.[/say]")
 
-		saynn("The wolf leans forward, an unsettling glint in his eyes.")
+		saynn("Волк подаётся вперёд, в его глазах вспыхивает тревожный блеск.")
 
-		saynn("[say=luxe]Blacktail takes pride in what we are. And our slaves know who they are. We're not interested in illusions.[/say]")
+		saynn("[say=luxe]Блэктайл гордится тем, кто мы есть. И наши рабы знают своё место. Нам не нужны иллюзии.[/say]")
 
-		saynn("He looks at your bulky metal collar.")
+		saynn("Он смотрит на ваш массивный металлический ошейник.")
 
-		saynn("[say=luxe]You know it better than me by now, AlphaCorp sells lies, fake freedom.. illusions of free will. Illusion of democracy.[/say]")
+		saynn("[say=luxe]Ты уже знаешь лучше меня: AlphaCorp продаёт ложь, фальшивую свободу... иллюзию свободы воли. Иллюзию демократии.[/say]")
 
-		saynn("Huh.. the more you think about it.. you're not really different from the Syndicate slaves.. you just have a fancy label attached to you.. inmate.")
+		saynn("Хм... если подумать... ты ведь не особо отличаешься от рабов Синдиката... просто на тебе наклеен другой пафосный ярлык... заключенная.")
 
-		saynn("[say=luxe]Syndicate is smaller. And yet, we're stronger. Because we're efficient.[/say]")
+		saynn("[say=luxe]Синдикат меньше. И всё же мы сильнее. Потому что мы эффективнее.[/say]")
 
-		saynn("[say=pc]Alright, sure. Sounds like you're gonna win eventually. Why do you need me then?[/say]")
+		saynn("[say=pc]Ладно, допустим. Похоже, рано или поздно ты всё равно победишь. Зачем же тебе тогда я?[/say]")
 
-		saynn("The wolf tilts his head slightly, not irritated.. but calculating.")
+		saynn("Волк слегка наклоняет голову — не раздраженно, а скорее расчетливо.")
 
-		saynn("[say=luxe]Need is a strong word. By all accounts, you should be chained to a wall somewhere in the deepest reaches of our little paradise.[/say]")
+		saynn("[say=luxe]«Нужда» — слишком сильное слово. По всем меркам, тебе следовало бы гнить в цепях где-нибудь в самых глухих закоулках нашего маленького рая.[/say]")
 
-		saynn("You swallow, unsure where he is going with this. The wolf's gaze hardens, the glint in his eyes turning cold and metallic.")
+		saynn("Ты сглатываешь, не понимая, к чему он клонит. Взгляд волка тяжелеет, а блеск в его глазах становится холодным и металлическим.")
 
-		saynn("[say=luxe]Yet here you stand, alive and relatively unscathed. Might just be a case of dumb luck.. but I don't believe in luck.[/say]")
+		saynn("[say=luxe]И всё же ты стоишь здесь, живая и относительно невредимая. Возможно, это просто слепая удача... но я не верю в удачу.[/say]")
 
-		saynn("[say=pc]You need something from me. Did I guess it right?[/say]")
+		saynn("[say=pc]Тебе что-то от меня нужно. Я угадал?[/say]")
 
-		saynn("He takes his time, breathing in and out.")
+		saynn("Он не торопится, мерно вдыхая и выдыхая.")
 
-		saynn("[say=luxe]I will be blunt, your prison holds a lot of value for Syndicate. Not just because of prisoners of war or as a source of new slaves. Secrets. Our secrets. I intend to help take them back.[/say]")
+		saynn("[say=luxe]Буду прямолинеен: твоя тюрьма представляет огромную ценность для Синдиката. И не только как источник военнопленных или новых рабов. Секреты. Наши секреты. И я намерен помочь их вернуть.[/say]")
 
-		saynn("[say=pc]So, what, you need an inside man? You have Mirri already, just use..[/say]")
+		saynn("[say=pc]Так что, тебе нужен свой человек внутри? У тебя ведь уже есть Мирри, просто используй её..[/say]")
 
-		saynn("He interrupts, his tone like a cold steel edge. His stare is directed somewhere else..")
+		saynn("Он перебивает, и его тон режет, словно холодная сталь. Его взгляд устремлен куда-то в сторону..")
 
-		saynn("[say=luxe]Mirri.. is an unpredictable element. Emotional, reckless. A weakness.[/say]")
+		saynn("[say=luxe]Мирри.. — это непредсказуемый элемент. Эмоциональная, безрассудная. Слабость.[/say]")
 
-		saynn("..but not for long. He establishes eye contact again.")
+		saynn("..но ненадолго. Он снова устанавливает зрительный контакт.")
 
-		saynn("[say=luxe]And you, inmate.. somehow have her attention. Don't let yourself believe for a moment that her interest in you will end in anything but destruction.. for her, or for you.[/say]")
+		saynn("[say=luxe]А ты, заключенный.. каким-то образом привлек её внимание. Только не вздумай поверить хоть на миг, что её интерес к тебе обернется чем-то, кроме разрушения.. для неё или для тебя.[/say]")
 
-		saynn("The statement hangs in the air. He leans back again, letting his words sink in.")
+		saynn("Слова повисают в воздухе. Он снова откидывается назад, давая словам осесть в сознании.")
 
-		saynn("[say=luxe]I'm offering you an alternative option. You help me get what I need.. exact coordinates of your station.. And then I won't have to do what I will have to do.[/say]")
+		saynn("[say=luxe]Я предлагаю тебе альтернативу. Ты помогаешь мне получить то, что мне нужно.. точные координаты вашей станции.. И тогда мне не придется делать то, что придется.[/say]")
 
-		saynn("Coordinates.. the ones that Mirri somehow got a hold of? Them being on bad terms is why he needs you, it seems.")
+		saynn("Координаты.. те самые, что каким-то образом достались Мирри? Похоже, он нуждается в тебе именно потому, что они в плохих отношениях.")
 
-		saynn("[say=luxe]Or, you can stay under Mirri's thumb and gamble with her.. affection.[/say]")
+		saynn("[say=luxe]Или же ты можешь и дальше оставаться под каблуком у Мирри и играть в азартные игры с её.. привязанностью.[/say]")
 
-		saynn("The choice is clear..")
+		saynn("Выбор очевиден..")
 
-		saynn("[say=pc]What will happen to me?[/say]")
+		saynn("[say=pc]Что будет со мной?[/say]")
 
-		saynn("[say=luxe]You will be spared.[/say]")
+		saynn("[say=luxe]Тебя пощадят.[/say]")
 
-		saynn("Freedom? You're not sure how much you can trust a head of a Syndicate family..")
+		saynn("Свобода? Ты не уверен, насколько можно доверять главе семьи Синдиката...")
 
-		saynn("[say=pc]I guess I will think about it.[/say]")
+		saynn("[say=pc]Думаю, я об этом подумаю.[/say]")
 
-		saynn("He regards you again when that icy, unyielding stare.")
+		saynn("Он снова устремляет на тебя свой ледяной, непреклонный взгляд.")
 
-		saynn("[say=luxe]Mirri will never share those coordinates with you, especially now. So just play along. And make the right choice when the time comes.[/say]")
+		saynn("[say=luxe]Мирри никогда не поделится с тобой этими координатами, особенно сейчас. Так что просто подыгрывай. И сделай правильный выбор, когда придет время.[/say]")
 
-		saynn("Makes sense. The wolf relaxes in his chair.")
+		saynn("Логично. Волк расслабляется в кресле.")
 
-		saynn("[say=pc]Guess I will go now.[/say]")
+		saynn("[say=pc]Полагаю, мне пора идти.[/say]")
 
-		saynn("But, before you leave, he stops you..")
+		saynn("Но прежде чем ты уйдешь, он тебя останавливает...")
 
 		if (!getFlag("SlaveAuctionModule.knowsLuxeName")):
 			setFlag("SlaveAuctionModule.knowsLuxeName", true)
-			saynn("[say=luxe]My name is Luxe. If you have something to discuss, I will be here.[/say]")
+			saynn("[say=luxe]Меня зовут Люкс. Если захочешь что-то обсудить, я буду здесь.[/say]")
 
 		else:
-			saynn("[say=luxe]If you have something to discuss, I will be here.[/say]")
+			saynn("[say=luxe]Если захочешь что-то обсудить, я буду здесь.[/say]")
 
-		saynn("Oh, that is different. Very different. You can almost feel the room becoming warmer.. cozier.")
+		saynn("О, это совсем другое дело. Совсем другое. Кажется, даже в комнате стало теплее... уютнее.")
 
-		saynn("You nod and head for the exit.")
+		saynn("Вы киваете и направляетесь к выходу.")
 
-		addButton("Mirri", "Go check on her", "after_talk")
+		addButton("Мирри", "Пойти проверить её", "after_talk")
 	if(state == "after_talk"):
 		removeCharacter("luxe")
 		addCharacter("mirri")
 		aimCameraAndSetLocName("market_intro")
 		playAnimation(StageScene.Sleeping, "sleep", {pc="mirri"})
-		saynn("You follow the corridor and return back into Mirri's room.")
+		saynn("Вы идете по коридору и возвращаетесь в комнату Мирри.")
 
-		saynn("There she is, still napping on her bed. Mirri is curled up in a very feline way, her tail draped lazily over her side, her ears twitching every so often. Her paws.. hands.. are tucked up near her face, shielding herself from whatever is lurking in her dreams.")
+		saynn("Вот и она, всё еще дремлет на своей кровати. Мирри свернулась калачиком, точь-в-точь как кошка: хвост лениво перекинут через бок, ушки время от времени подергиваются. Её лапки... то есть руки... прижаты к лицу, словно она пытается спрятаться от того, что таится в её снах.")
 
-		saynn("Not sure what to do, you just stand still, watching her sleep, a strange sense of peace settling over the room. Mirri's closed eyes twitch.. and every so often, she lets out a small, barely audible whimper. It's kinda adorable.. but whatever she is dreaming about, it's a no walk in the park.")
+		saynn("Не зная, что делать, вы просто стоите и наблюдаете за её сном; комнату наполняет странное чувство умиротворения. Веки Мирри подергиваются... и время от времени она издает тихий, едва слышный скулеж. Это даже мило... но, судя по всему, сны ей снятся совсем не сахарные.")
 
-		addButton("Continue", "See what happens next", "mirri_wakesup")
+		addButton("Продолжить", "Смотреть, что будет дальше", "mirri_wakesup")
 	if(state == "mirri_wakesup"):
 		playAnimation(StageScene.Duo, "stand", {npc="mirri", npcAction=["holdpistol", "res://Inventory/UnriggedModels/Pistol/Pistol.tscn"]})
-		saynn("But then, you shift slightly, and a soft creak escapes from the wooden floor beneath you.")
+		saynn("Но тут вы слегка смещаетесь, и деревянный пол под вами издает мягкий скрип.")
 
-		saynn("In an instant, Mirri's up. Before her eyes are even fully open, she's got her gun drawn, level directly at you, her face a mask of feral rage. Her pupils are narrow, wild and unfocused.. wow.")
+		saynn("В мгновение ока Мирри вскакивает. Прежде чем она успевает до конца открыть глаза, она уже выхватила пушку и направила её прямо на вас; её лицо — маска дикой ярости. Зрачки сужены, взгляд дикий и расфокусированный... ого.")
 
-		saynn("[say=pc]Chill, chill! You're having nightmares, Mirri.[/say]")
+		saynn("[say=pc]Тише, тише! Тебе кошмары снятся, Мирри![/say]")
 
-		saynn("Mirri blinks and the rage goes away, replaced by confusion. Her gaze locks on you as she processes where she is. Her breathing slows, the grip on her gun loosening. A second later, she lowers it, rubbing a hand over her face while smiling.")
+		saynn("Мирри моргает, и ярость сменяется замешательством. Она впивается в вас взглядом, осознавая, где находится. Дыхание выравнивается, хватка на пистолете слабеет. Секунду спустя она опускает оружие и, улыбаясь, проводит рукой по лицу.")
 
-		saynn("[say=mirri]Nightmares? Hah.. Nah, those are just funny dreams.[/say]")
+		saynn("[say=mirri]Кошмары? Ха... Да нет, просто забавные сны.[/say]")
 
-		saynn("She tucks her gun away and rubs her eyes.")
+		saynn("Она убирает пистолет и протирает глаза.")
 
-		saynn("[say=mirri]That was a nice nap.[/say]")
+		saynn("[say=mirri]Приятно вздремнуть.[/say]")
 
-		saynn("Mirri stretches and arches her back, her thighs and wrists shiver.. before a cute moan leaves her lips.")
+		saynn("Мирри потягивается, прогибая спину; её бёдра и запястья слегка подрагивают, а с губ срывается милый стон.")
 
-		saynn("[say=mirri]Ah~. So.. What did the old man tell you? I'm a curious cat.[/say]")
+		saynn("[say=mirri]Ах~... Ну и... Что тебе сказал этот старик? Любопытство меня гложет.[/say]")
 
-		addButton("Truth", "Tell Mirri exactly what the wolf told you", "mirri_truth")
-		addButton("Not much", "He just wanted to chat", "mirri_chat")
-		addButton("Coords?", "Ask about how Mirri found your prison", "mirri_coords")
+		addButton("Правда", "Рассказать Мирри всё в точности так, как сказал волк", "mirri_truth")
+		addButton("Немного", "Он просто хотел поболтать", "mirri_chat")
+		addButton("Координаты?", "Спросить, как Мирри нашла вашу тюрьму", "mirri_coords")
 	if(state == "mirri_chat"):
 		playAnimation(StageScene.Duo, "stand", {npc="mirri"})
-		saynn("[say=pc]Luxe just wanted to chat.[/say]")
+		saynn("[say=pc]Люкс просто хотела поболтать.[/say]")
 
-		saynn("Mirri nods.. many times.")
+		saynn("Мирри кивает... много раз.")
 
-		saynn("[say=mirri]Right, yeah, of course. Dad is so-o-o chatty.[/say]")
+		saynn("[say=mirri]Точно, да, конечно. Папа такой болтушка-а-а.[/say]")
 
-		saynn("[say=pc]Maybe not with you.[/say]")
+		saynn("[say=pc]Может, не с тобой.[/say]")
 
-		saynn("[say=mirri]Ouch. Fuck you.[/say]")
+		saynn("[say=mirri]Ой, блядь. Пошла ты.[/say]")
 
-		saynn("Mirri growls.. but then stops.")
+		saynn("Мирри рычит... но затем затихает.")
 
-		saynn("[say=mirri]Listen, I know what he said. He wants the coords to your prison. You know why?[/say]")
+		saynn("[say=mirri]Слушай, я знаю, что он сказал. Ему нужны координаты твоей тюрьмы. Знаешь почему?[/say]")
 
-		saynn("[say=pc]I don't care. It's my way out.[/say]")
+		saynn("[say=pc]Мне плевать. Это мой шанс выбраться.[/say]")
 
-		saynn("She chuckles hearing that.")
+		saynn("Услышав это, она усмехается.")
 
-		saynn("[say=mirri]Yeah, your way straight out of this life and into the afterlife. Dad hates AlphaCorp, more than I do even. And he hates ANYONE who is even remotely related to AlphaCorp.[/say]")
+		saynn("[say=mirri]Ага, твой путь прямиком из этой жизни в загробную. Папа ненавидит АльфаКорп даже больше, чем я. И он ненавидит ЛЮБОГО, кто хоть отдаленно связан с АльфаКорп.[/say]")
 
-		saynn("[say=pc]Why are you telling me that if you hate AlphaCorp yourself?[/say]")
+		saynn("[say=pc]Зачем ты мне это говоришь, если сама ненавидишь АльфаКорп?[/say]")
 
-		saynn("[say=mirri]Because! I feel like you wanna betray me and I don't like that. There is a good fucking reason behind why I will never tell him the coords.[/say]")
+		saynn("[say=mirri]Потому что! У меня такое чувство, что ты хочешь меня предать, а мне это не нравится. Есть чертовски веская причина, по которой я никогда не выдам ему координаты.[/say]")
 
-		saynn("[say=pc]You hate your dad more than you hate AlphaCorp?[/say]")
+		saynn("[say=pc]Ты ненавидишь своего отца больше, чем АльфаКорп?[/say]")
 
-		saynn("[say=mirri]Maybe. But the real answer - it's not his fucking problem. I found the prison. I get to do whatever I want with it, it's FAIR.[/say]")
+		saynn("[say=mirri]Может быть. Но если честно — это не его гребаная проблема. Тюрьму нашла я. Значит, и делать с ней всё, что захочется, имею право Я, и это СПРАВЕДЛИВО.[/say]")
 
-		saynn("She is discussing it so casually like she is not enslaving inmates and staff..")
+		saynn("Она обсуждает это так непринужденно, будто и не превращает заключенных и персонал в рабов...")
 
-		saynn("[say=pc]Are you really that much better than him?[/say]")
+		saynn("[say=pc]Ты и правда настолько лучше него?[/say]")
 
-		saynn("[say=mirri]I don't have a cock so obviously I'm worse by default, sure. Go choke on his balls if you want, I couldn't care less. But you know why he actually wants the coords? Did you really think that he is doing it for Syndicate or his family name or whatever?[/say]")
+		saynn("[say=mirri]У меня нет члена, так что, очевидно, по умолчанию я хуже, ну конечно. Иди подавись его яйцами, если хочешь, мне плевать. Но ты знаешь, зачем ему на самом деле нужны координаты? Ты реально думала, что он делает это ради Синдиката или имени своей семьи или еще чего там?[/say]")
 
-		saynn("Luxe doesn't seem like the type that would lie..")
+		saynn("Люкс не похожа на ту, кто стал бы врать...")
 
-		saynn("[say=mirri]Once I hand him the coords on a silver platter, he will just relay them to other families and get all the fame for destroying your fucking prison! That's what he wants![/say]")
+		saynn("[say=mirri]Стоит мне преподнести ему координаты на блюдечке с голубой каемочкой, как он тут же раздаст их другим семьям и соберет всю славу за уничтожение твоей гребаной тюрьмы! Вот чего он хочет![/say]")
 
-		saynn("[say=pc]And you're mad because you won't get shit?[/say]")
+		saynn("[say=pc]И ты бесишься из-за того, что сама ничего не получишь?[/say]")
 
-		saynn("[say=mirri]Yeah?! Wouldn't you be fucking furious if someone else took all the rewards for your efforts?[/say]")
+		saynn("[say=mirri]А?! А ты бы не взбесился до чертиков, если бы кто-то другой забрал все награды за твои старания?[/say]")
 
-		saynn("Somehow, you know exactly how Mirri feels.")
+		saynn("Каким-то образом ты понимаешь, что именно чувствует Мирри.")
 
-		saynn("[say=pc]Yeah, I'd be mad.[/say]")
+		saynn("[say=pc]Да, я бы разозлился.[/say]")
 
-		saynn("Mirri nods and finally lowers her voice.")
+		saynn("Мирри кивает и, наконец, понижает голос.")
 
-		saynn("[say=mirri]Now you see? I'm fucking glad I'm not alone in this.[/say]")
+		saynn("[say=mirri]Теперь видишь? Я, блядь, так рада, что не одна такая.[/say]")
 
-		saynn("She sits on the edge of her desk and looks down at the floor.")
+		saynn("Она садится на край своего стола и смотрит в пол.")
 
-		saynn("[say=mirri]I hate it sometimes. Do you hate me?[/say]")
+		saynn("[say=mirri]Иногда я это просто ненавижу. Ты меня ненавидишь?[/say]")
 
-		addButton("Kiss", "Kiss her out of hate", "mirri_kiss_hate")
-		addButton("No hate", "Tell her that you don't hate her", "mirri_nohate")
-		addButton("Luxe is right", "Tell her that her father is right and she should just listen to him", "mirri_listendad")
+		addButton("Поцеловать", "Поцеловать её из чувства ненависти", "mirri_kiss_hate")
+		addButton("Никакой ненависти", "Сказать ей, что ты её не ненавидишь", "mirri_nohate")
+		addButton("Люкс права", "Скажи ей, что отец прав, и ей стоит просто его слушаться", "mirri_listendad")
 	if(state == "mirri_coords"):
 		playAnimation(StageScene.Duo, "stand", {npc="mirri"})
-		saynn("[say=pc]Can you tell me how you found BDCC?[/say]")
+		saynn("[say=pc]Можешь рассказать, как ты нашла BDCC?[/say]")
 
-		saynn("Mirri tilts her head, her gaze narrowing.")
+		saynn("Мирри наклоняет голову, её взгляд становится прищуренным.")
 
-		saynn("[say=mirri]You'd have to try harder than that.[/say]")
+		saynn("[say=mirri]Тебе придется постараться получше.[/say]")
 
-		saynn("Looks like she won't just tell you anything indeed.")
+		saynn("Похоже, она и вправду не станет болтать о чём попало.")
 
-		saynn("[say=pc]What?[/say]")
+		saynn("[say=pc]Что?[/say]")
 
-		saynn("[say=mirri]I'm dumb. But I'm not this dumb.[/say]")
+		saynn("[say=mirri]Я тупая. Но не настолько же.[/say]")
 
-		saynn("[say=pc]What are you talking about?[/say]")
+		saynn("[say=pc]О чём ты вообще говоришь?[/say]")
 
-		saynn("She growls.")
+		saynn("Она рычит.")
 
-		saynn("[say=mirri]Shut up and answer my question.[/say]")
+		saynn("[say=mirri]Заткнись и отвечай на вопрос.[/say]")
 
-		addButton("Truth", "Tell Mirri exactly what the wolf told you", "mirri_truth")
-		addButton("Not much", "He just wanted to chat", "mirri_chat")
-		addButton("Silence", "Not say her anything", "mirri_silenttreatment")
+		addButton("Правда", "Рассказать Мирри всё в точности так, как сказал волк", "mirri_truth")
+		addButton("Немного", "Он просто хотел поболтать", "mirri_chat")
+		addButton("Тишина", "Ничего ей не говорить", "mirri_silenttreatment")
 	if(state == "mirri_silenttreatment"):
 		setFlag("SlaveAuctionModule.r2outcome", "silence")
-		saynn("She told you to shut up.. so you did just that.")
+		saynn("Она велела тебе заткнуться... ну, ты и заткнулся.")
 
-		saynn("[say=mirri]Very funny.[/say]")
+		saynn("[say=mirri]Очень смешно.[/say]")
 
-		saynn("Mirri rolls her eyes.")
+		saynn("Мирри закатывает глаза.")
 
-		saynn("[say=mirri]If you wanna play that game - whatever, like I give a fuck. You will never hear the coords from me.[/say]")
+		saynn("[say=mirri]Если хочешь играть в эти игры — валяй, мне-то поебать. Координаты ты от меня всё равно не вытянешь.[/say]")
 
-		saynn("Not in her current state.")
+		saynn("Не в её нынешнем состоянии.")
 
-		saynn("[say=mirri]Keep bringing me slaves if you want your cut. That's all I care about.[/say]")
+		saynn("[say=mirri]Продолжай таскать мне рабов, если хочешь свою долю. Вот что меня волнует.[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "mirri_truth"):
 		playAnimation(StageScene.Duo, "stand", {npc="mirri"})
-		saynn("You tell Mirri what Luxe told you.")
+		saynn("Рассказать Мирри то, что тебе поведал Люкс.")
 
-		saynn("[say=mirri]Yeah.. nothing new there. I heard it a million times. Syndicate, family, secrets, all of it. He is lying.[/say]")
+		saynn("[say=mirri]Ага... ничего нового. Слышала это миллион раз. Синдикат, семья, секреты — всё в таком духе. Он пиздит.[/say]")
 
-		saynn("[say=pc]He doesn't seem like the kind that would lie.[/say]")
+		saynn("[say=pc]Он не похож на того, кто стал бы врать.[/say]")
 
-		saynn("Mirri walks up to her desk and sits on the edge.")
+		saynn("Мирри подходит к своему столу и садится на край.")
 
-		saynn("[say=mirri]You know what he actually wants? Fame for destroying your prison. That is why he is so fucking cold to me all the time. To make me snap and tell him the coords. He didn't call me his daughter in years! I'm just.. Mirri.. to him.[/say]")
+		saynn("[say=mirri]Знаешь, чего он хочет на самом деле? Слава за разрушение твоей тюрьмы. Вот почему он вечно такой, блядь, холодный со мной. Чтобы я сорвалась и выдала ему координаты. Он уже много лет не называл меня дочерью! Для него я просто... Мирри...[/say]")
 
-		saynn("Destroying BDCC.. That is your whole world.. current world.")
+		saynn("Разрушить BDCC... Это весь твой мир... нынешний мир.")
 
-		saynn("[say=pc]So.. what's the profit in not giving him the coords? I doubt you can destroy the prison on your own and get any fame.[/say]")
+		saynn("[say=pc]И какой же профит от того, чтобы не давать ему координаты? Сомневаюсь, что ты сможешь разнести тюрьму в одиночку и при этом прославиться.[/say]")
 
-		saynn("Mirri raises a brow at your question, the corners of her mouth raised.")
+		saynn("Мирри вскидывает бровь на твой вопрос, уголки её губ приподнимаются в усмешке.")
 
-		saynn("[say=mirri]Wow, that's a bold statement, hah. I'm still the best Syndicate agent, don't forget that.[/say]")
+		saynn("[say=mirri]Ого, смелое заявление, хах. Не забывай, что я всё ещё лучший агент Синдиката.[/say]")
 
-		saynn("But then she lowers her head a bit.")
+		saynn("Но затем она слегка опускает голову.")
 
-		saynn("[say=mirri]I found your prison on my own. Completely on my own. This is my mission, not anyone's else. I deserve that much, don't I?[/say]")
+		saynn("[say=mirri]Я нашла твою тюрьму сама. Совершенно сама. Это моя миссия, а не чья-то ещё. Я заслужила это, разве нет?[/say]")
 
-		saynn("You shrug. It feels weird to discuss this.")
+		saynn("Ты пожимаешь плечами. Обсуждать это как-то странно.")
 
-		saynn("[say=mirri]I can destroy your prison. But I don't want to. Why would I? I get to enslave so many bitches.. so many assholes can get put into their place. It feels good to accomplish something. Ruining AlphaCorp's influence on this world, one slave at a time.[/say]")
+		saynn("[say=mirri]Я могу разрушить твою тюрьму. Но я не хочу. С какой стати? Зато я могу поработить столько сучек... столько ублюдков наконец-то встанут на место. Приятно чего-то добиваться. Подрывать влияние АльфаКорп на этот мир — по одной рабыне за раз.[/say]")
 
-		saynn("She looks at you.")
+		saynn("Она смотрит на тебя.")
 
-		saynn("[say=mirri]You hate me, don't you? I hate my dad. So it's okay if you hate me. Be honest, I ain't gonna kill you.[/say]")
+		saynn("[say=mirri]Ты ведь ненавидишь меня, да? Я ненавижу своего папашу. Так что если ты будешь меня ненавидеть — это нормально. Будь честной, я тебя не убью.[/say]")
 
-		addButton("Kiss", "Kiss her out of hate", "mirri_kiss_hate")
-		addButton("No hate", "Tell her that you don't hate her", "mirri_nohate")
-		addButton("Luxe is right", "Tell her that her father is right and she should just listen to him", "mirri_listendad")
+		addButton("Поцеловать", "Поцеловать её из чувства ненависти", "mirri_kiss_hate")
+		addButton("Никакой ненависти", "Сказать ей, что ты её не ненавидишь", "mirri_nohate")
+		addButton("Люкс права", "Скажи ей, что отец прав, и ей стоит просто его слушаться", "mirri_listendad")
 	if(state == "mirri_kiss_hate"):
 		setFlag("SlaveAuctionModule.r2outcome", "kiss")
 		playAnimation(StageScene.Hug, "kiss", {npc="mirri"})
-		saynn("You close distance with Mirri, your noses almost collide..")
+		saynn("Ты сокращаешь дистанцию с Мирри, ваши носы почти соприкасаются...")
 
-		saynn("She admires your eyes, her lips slightly parted, her tongue licking her fangs.")
+		saynn("Она любуется твоими глазами, её губы слегка приоткрыты, а язык облизывает клыки.")
 
-		saynn("You silently watch her for a bit, putting on your most mean eyes.")
+		saynn("Ты молча наблюдаешь за ней какое-то время, глядя своим самым суровым взглядом.")
 
-		saynn("[say=pc]You're a crazy, psycho bitch.[/say]")
+		saynn("[say=pc]Ты сумасшедшая, психованная сучка.[/say]")
 
-		saynn("Mirri chuckles.. but is quickly silenced by your deep long kiss. Tongues get quickly involved, invading each other's mouths and sharing all the saliva during an intense, heated battle. Your kiss is passionate, raw, powerful.. as you both refuse to give an inch.")
+		saynn("Мирри посмеивается... но её смех быстро обрывается твоим глубоким, долгим поцелуем. Языки стремительно сплетаются, захватывая рты друг друга и смешивая слюну в интенсивной, жаркой битве. Твой поцелуй страстный, первобытный, мощный... вы оба отказываетесь уступать хоть дюйм.")
 
-		saynn("You press her against the wall, hands gripping her tightly.. while she doesn't resist. Instead, she meets you with that same fire, her paws running up your back, her claws digging in, leaving marks all across it.")
+		saynn("Ты прижимаешь её к стене, крепко сжимая руками... и она не сопротивляется. Напротив, она отвечает тебе тем же огнем: её лапы скользят по твоей спине, а когти впиваются в кожу, оставляя повсюду следы.")
 
-		saynn("[say=mirri]Yeah, I fucking hate you too~.[/say]")
+		saynn("[say=mirri]Да, я тоже тебя, блядь, ненавижу~.[/say]")
 
-		saynn("Her voice is low and breathy after that.. experience.")
+		saynn("После такого... опыта её голос звучит низко и прерывисто.")
 
-		saynn("It was time to stop.")
+		saynn("Пришло время остановиться.")
 
-		saynn("[say=mirri]Bring me more toys to sell, big {pc.boy}..[/say]")
+		saynn("[say=mirri]Приноси мне побольше игрушек на продажу, большой {pc.boy}...[/say]")
 
-		saynn("Mirri licks her lips while watching you.")
+		saynn("Мирри облизывает губы, наблюдая за тобой.")
 
-		saynn("[say=pc]Sure. Just be careful to not become one of those toys.[/say]")
+		saynn("[say=pc]Конечно. Только смотри не превратись в одну из этих игрушек.[/say]")
 
-		saynn("[say=mirri]Ha. I love you.[/say]")
+		saynn("[say=mirri]Ха. Я люблю тебя.[/say]")
 
-		saynn("[say=pc]You just told me that you hate me.[/say]")
+		saynn("[say=pc]Ты же только что сказала, что ненавидишь меня.[/say]")
 
-		saynn("[say=mirri]I love to hate you, AlphaCorp slave~.[/say]")
+		saynn("[say=mirri]Обожаю тебя ненавидеть, рабыня АльфаКорпа~.[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "mirri_nohate"):
 		setFlag("SlaveAuctionModule.r2outcome", "nohate")
-		saynn("[say=pc]I don't hate you. What you did makes sense in your situation.[/say]")
+		saynn("[say=pc]Я не ненавижу тебя. То, что ты сделала, вполне логично в твоей ситуации.[/say]")
 
-		saynn("You can't believe that you're agreeing with Syndicate.. with slavers, raiders and murderers.. and yet, it seems right.")
+		saynn("Сложно поверить, что ты соглашаешься с Синдикатом... с работорговцами, рейдерами и убийцами... и всё же, это кажется правильным.")
 
-		saynn("[say=mirri]Does it? I feel like a failure all the time. And dad's cold heart doesn't help.[/say]")
+		saynn("[say=mirri]Правда? Мне постоянно кажется, что я неудачница. А холодное сердце папаши только подливает масла в огонь.[/say]")
 
-		saynn("You approach her and gently scritch her under the chin.")
+		saynn("Ты подходишь к ней и нежно чешешь её под подбородком.")
 
-		saynn("[say=pc]You're a good girl. Screw dad.[/say]")
+		saynn("[say=pc]Ты хорошая девочка. К чёрту папашу.[/say]")
 
-		saynn("Your ears pick up on faint purring.")
+		saynn("До ваших ушей доносится слабое мурлыканье.")
 
-		saynn("[say=mirri]Can't believe that I'm agreeing with an AlphaCorp slave. But yeah, screw him.[/say]")
+		saynn("[say=mirri]Поверить не могу, что соглашаюсь с рабыней из «АльфаКорп». Но да, к черту его![/say]")
 
-		saynn("You frown at that description.. while she looks away.")
+		saynn("Вы хмуритесь, слушая это описание... пока она отводит взгляд.")
 
-		saynn("[say=mirri]He is still my dad though. What an asshole! GRrrr.. I can't. Can we just auction some more slaves off now?! We're doing so well, I wanna see others suffer, not focus on my own shit.[/say]")
+		saynn("[say=mirri]Но он всё равно мой папаша. Ну и мудак! Гррр... сил нет. Может, уже начнём продавать остальных рабов?! У нас всё так здорово идёт, я хочу смотреть, как страдают другие, а не зацикливаться на своём дерьме![/say]")
 
-		saynn("Fair enough, selling slaves is quite a distraction indeed.")
+		saynn("Справедливо, продажа рабов — отличное средство отвлечься.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "mirri_listendad"):
 		setFlag("SlaveAuctionModule.r2outcome", "luxeisright")
-		saynn("[say=pc]You know, maybe he is right though.[/say]")
+		saynn("[say=pc]Знаешь, а ведь он, возможно, прав.[/say]")
 
-		saynn("Mirri frowns.")
+		saynn("Мирри хмурится.")
 
-		saynn("[say=pc]Why not just give him the coords and move on with your life.[/say]")
+		saynn("[say=pc]Почему бы просто не дать ему координаты и не жить дальше своей жизнью?[/say]")
 
-		saynn("[say=mirri]He promised to spare you, didn't he?[/say]")
+		saynn("[say=mirri]Он ведь обещал пощадить тебя, верно?[/say]")
 
-		saynn("Her paw hovers near her gun.")
+		saynn("Её лапа зависает рядом с пистолетом.")
 
-		saynn("[say=mirri]Only my dad hates AlphaCorp slaves more than me. If you don't wanna be my bitch - I will make you my bitch. The rest you don't have to worry about, okay, fucker?[/say]")
+		saynn("[say=mirri]Только мой папа ненавидит рабов АльфаКорпа сильнее, чем я. Если не хочешь быть моей сучкой — я сделаю тебя своей сучкой. Обо всем остальном не парься, ясно тебе, ублюдок?[/say]")
 
-		saynn("So defensive all of the sudden.")
+		saynn("Чего это ты вдруг так ощетинилась?")
 
-		saynn("[say=pc]Whatever, you're a crazy psycho bitch yourself.[/say]")
+		saynn("[say=pc]Похер, ты и сама та еще сумасшедшая психопатка.[/say]")
 
-		saynn("[say=mirri]I'm a psycho bitch all the time. But not until I'm really pissed. Bring me slaves to sell and you will get your cut. You and I both need credits.[/say]")
+		saynn("[say=mirri]Я психопатка всегда. Но по-настоящему бешусь, только когда реально в ярости. Притащи мне рабов на продажу, и получишь свою долю. Нам обеим нужны кредиты.[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

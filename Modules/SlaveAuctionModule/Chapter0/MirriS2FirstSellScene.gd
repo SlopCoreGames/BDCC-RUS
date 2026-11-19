@@ -13,443 +13,443 @@ func resolveCustomCharacterName(_charID):
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("You stand in your cell and think about it.. maybe that crazy catgirl.. maybe there is an opportunity here.. of sorts. Yes.")
+		saynn("Ты стоишь в своей камере и размышляешь об этом... может, та сумасшедшая кошкодевочка... может, здесь есть своего рода возможность. Да.")
 
-		saynn("Which of your slaves do you want to sell? Keep in mind that you will never see them again. Any items that they have will be lost forever too.")
+		saynn("Какую из своих рабынь ты хочешь продать? Помни, что ты больше никогда её не увидишь. Все вещи, которыми она владеет, тоже будут потеряны навсегда.")
 
-		addButton("Cancel", "You changed your mind", "endthescene")
+		addButton("Отмена", "Вы передумали", "endthescene")
 		addSlaveButtons()
 		if (false):
-			addButton("Nope", "You shouldn't see this ever", "pick_slave")
+			addButton("Неа", "Этого вообще не должны были видеть", "pick_slave")
 	if(state == "confirm_pick_slave"):
 		addCharacter(slaveID)
 		playAnimation(StageScene.Duo, "stand", {npc=slaveID, npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
-		saynn("Is {slave.name} the slave that you want to sell? Keep in mind that you will never see them again. Any items that they have will be lost forever too.")
+		saynn("Ты действительно хочешь продать {slave.name}? Помни, что ты больше никогда её не увидишь. Все вещи, которыми она владеет, тоже будут потеряны навсегда.")
 
-		addButton("Confirm", "Sell this slave!", "do_confirm_pick")
-		addButton("Cancel", "You changed your mind", "do_cancel_pick")
+		addButton("Подтвердить", "Продать эту рабыню!", "do_confirm_pick")
+		addButton("Отмена", "Вы передумали", "do_cancel_pick")
 	if(state == "do_confirm_pick"):
 		setFlag("SlaveAuctionModule.s2hap", true)
 		playAnimation(StageScene.Duo, "stand", {npc=slaveID, npcBodyState={leashedBy="pc"}})
-		saynn("You approach one of your slaves and clip a leash to {slave.his} collar. {slave.name} gives you a slightly confused look, clearly feeling that something is off.")
+		saynn("Ты подходишь к одной из своих рабынь и пристегиваешь поводок к {slave.his} ошейнику. {slave.name} смотрит на тебя с легким замешательством, явно чувствуя, что что-то не так.")
 
-		saynn("[say=pc]Well. What now?[/say]")
+		saynn("[say=pc]Ну что. Что теперь?[/say]")
 
-		saynn("[say=mirri]Made your choice, finally?[/say]")
+		saynn("[say=mirri]Наконец-то сделала выбор?[/say]")
 
-		saynn("Your slave jumps from the sudden new voice.")
+		saynn("Твоя рабыня вздрагивает от внезапного голоса.")
 
-		addButton("Continue", "See what happens next", "mirri_appears")
+		addButton("Продолжить", "Смотреть, что будет дальше", "mirri_appears")
 	if(state == "mirri_appears"):
 		addCharacter("mirri")
 		playAnimation(StageScene.Duo, "stand", {npc="mirri"})
-		saynn("Mirri suddenly approaches you two, scaring your slave and giving you another feeling of deja vu.")
+		saynn("Мирри внезапно подходит к вам двоим, пугая рабыню и вызывая у тебя очередное чувство дежавю.")
 
-		saynn("[say=mirri]You sure took your time.[/say]")
+		saynn("[say=mirri]Ты долго же копалась.[/say]")
 
-		saynn("[say=pc]You sure know how to appear out of nowhere.[/say]")
+		saynn("[say=pc]А ты умеешь появляться из ниоткуда.[/say]")
 
-		saynn("She shrugs and leans against one of the walls, slightly tilting her head while watching you and your slave, a slightly bored expression contrasts well with that of pure confusion.")
+		saynn("Она пожимает плечами и прислоняется к одной из стен, слегка наклонив голову и наблюдая за тобой и твоей рабыней; её слегка скучающее выражение лица отлично контрастирует с её же чистым недоумением.")
 
-		saynn("[say=mirri]I'm always right on time. Unlike someone else.[/say]")
+		saynn("[say=mirri]Я всегда прихожу вовремя. В отличие от некоторых.[/say]")
 
-		saynn("[say=pc]Oh yeah, that last.. show.. was so timely.[/say]")
+		saynn("[say=pc]О да, то последнее... представление... было очень своевременным.[/say]")
 
-		saynn("[say=mirri]Pff, don't make me smash your beautiful jaw into the ugly concrete.[/say]")
+		saynn("[say=mirri]Пфф, не заставляй меня впечатывать твою прекрасную челюсть в уродливый бетон.[/say]")
 
-		saynn("Her little sly smile makes you think that she might be serious.")
+		saynn("Её хитрая ухмылка заставляет поверить, что она может говорить серьезно.")
 
-		saynn("[say=mirri]You get paid when I get paid so you're coming with me. You're ready?[/say]")
+		saynn("[say=mirri]Ты получишь деньги тогда, когда получу их я, так что ты идешь со мной. Готов?[/say]")
 
-		saynn("You can't help but to notice that she is still flashing her striped panties to everyone around.")
+		saynn("Ты не можешь не заметить, что она всё еще напоказ демонстрирует всем вокруг свои полосатые трусики.")
 
-		saynn("[say=pc]I guess. You still haven't gotten pants?[/say]")
+		saynn("[say=pc]Полагаю, что так. Ты до сих пор не раздобыл штаны?[/say]")
 
-		saynn("Mirri rolls her eyes.")
+		saynn("Мирри закатывает глаза.")
 
-		saynn("[say=mirri]Oh, come the fuck on.[/say]")
+		saynn("[say=mirri]Ой, да блядь, серьезно?[/say]")
 
-		saynn("She pulls up her armored wrist piece and presses something. Moments later, a small blue rift begins to open, right in the middle of your cell. Your slave's eyes open wide.")
+		saynn("Она задирает свой бронированный наруч и что-то нажимает. Мгновение спустя прямо посреди вашей камеры начинает открываться небольшой синий разлом. Глаза твоего раба широко распахиваются.")
 
-		saynn("[say=pc]Someone will see it one day.[/say]")
+		saynn("[say=pc]Когда-нибудь это кто-нибудь заметит.[/say]")
 
-		saynn("[say=mirri]I'm just testing a prototype that your engineers made~. C'mon, the show is about to start.[/say]")
+		saynn("[say=mirri]Я просто тестирую прототип, который собрали ваши инженеры~. Ну же, шоу вот-вот начнется![/say]")
 
-		saynn("Someone is really bad at time management. Mirri winks at you.. before shoving you and your slave into the blue portal.")
+		saynn("Кто-то явно совершенно не умеет распоряжаться временем. Мирри подмигивает тебе, а затем заталкивает тебя и твою рабыню в синий портал.")
 
-		addButton("Continue", "See what happens next", "after_tp")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_tp")
 	if(state == "after_tp"):
 		playAnimation(StageScene.Duo, "stand", {pc="mirri", npc=slaveID, npcBodyState={leashedBy="mirri"}})
 		aimCameraAndSetLocName("market_intro")
 		GM.pc.setLocation("market_intro")
-		saynn("You're back at the familiar.. place. But this time you can take a better look around.")
+		saynn("Ты снова в этом знакомом... месте. Но на этот раз ты можешь получше осмотреться.")
 
-		saynn("A dimly lit room welcomes you. So dimly that your eyes struggle to adjust after the harsh prison lighting. It's so weird to not feel a cold touch of concrete under your {pc.feet}.. the floor seems to be made out of some kind of dark wood.")
+		saynn("Тебя встречает тускло освещенная комната. Настолько тусклая, что глазам трудно привыкнуть после резкого тюремного света. Так странно не чувствовать холод бетона под своими {pc.feet}... пол кажется сделанным из какого-то темного дерева.")
 
-		saynn("Mirri grabs the leash. Your slave looks around, getting more and more concerned by the second.")
+		saynn("Мирри хватает поводок. Твоя рабыня оглядывается по сторонам, с каждой секундой всё больше и больше беспокоясь.")
 
-		saynn("[say=mirri]Don't worry, the less resistance you show, the less times I will have to shoot your ankles.[/say]")
+		saynn("[say=mirri]Не волнуйся: чем меньше сопротивления ты окажешь, тем реже мне придется стрелять тебе по лодыжкам.[/say]")
 
-		saynn("Catgirl pulls the slave out the room and into some corridor while you stay and sneak a peek at the furniture.")
+		saynn("Кошкодевочка уводит рабыню из комнаты в коридор, а ты остаешься, чтобы украдкой разглядывать обстановку.")
 
-		saynn("A bed, a pretty soft looking one. A sofa, a little coffee table, a chair and a desk with a laptop. There is also a wooden wardrobe in the corner.. but rather than having clothes.. you notice a bunch of gags, crops and cuffs, all neatly presented in it. Everything is neat, in fact, this is probably the cleanest room you have seen in your life.. prison life.")
+		saynn("Кровать, выглядит довольно мягкой. Диван, маленький кофейный столик, стул и письменный стол с ноутбуком. В углу также стоит деревянный шкаф... но вместо одежды ты замечаешь в нем кучу кляпов, хлыстов и наручников, аккуратно разложенных внутри. Всё очень опрятно; на самом деле, это, пожалуй, самая чистая комната, которую ты видел в своей жизни... в тюрьме.")
 
-		saynn("Behind you.. is a machine of sorts, currently spooling down.. you can only guess that this is what brought you here.")
+		saynn("Позади тебя... какая-то машина, которая сейчас замедляет ход... можно лишь догадываться, что именно она забросила тебя сюда.")
 
-		saynn("[say=mirri]Hey, don't make me sell you too, fucking sloth.[/say]")
+		saynn("[say=mirri]Эй, не заставляй меня продать и тебя тоже, гребаная ленивая задница![/say]")
 
-		saynn("After her words.. you hear sounds of a battle coming from the same direction. Looks like your slave isn't happy about {slave.his} new future. Makes sense, all things considered.")
+		saynn("После её слов... со стороны доносятся звуки битвы. Похоже, твоя рабыня не в восторге от своего {slave.his} нового будущего. Впрочем, учитывая обстоятельства, это логично.")
 
-		addButton("Follow", "Follow the sounds", "in_market")
+		addButton("Следовать", "Идти на звук", "in_market")
 	if(state == "in_market"):
 		playAnimation(StageScene.HangingDuo, "idle", {npc="pc", pc=slaveID, bodyState={naked=true}})
 		aimCameraAndSetLocName("market_market")
-		saynn("You step out into the corridor through a reinforced door that automatically closes behind you. Most materials have the same dark color.. but at least they didn't cheap out on the lighting here.")
+		saynn("Ты выходишь в коридор через усиленную дверь, которая автоматически закрывается за тобой. Большинство материалов имеют один и тот же темный цвет... но, по крайней мере, на освещении здесь не сэкономили.")
 
-		saynn("Not a single window anywhere.. The walls are covered with paintings of faces that you don't recognize. Seeing the dates.. you doubt that anyone does.")
+		saynn("Ни единого окна... Стены увешаны картинами с лицами, которые тебе ни о чем не говорят. Глядя на даты... ты сомневаешься, что они хоть кому-то знакомы.")
 
-		saynn("You follow a few smaller rooms and corridors until you join Mirri in a.. preparation room of sorts, a big hall with a very high ceiling. Huh, one of the walls is just a big curtain.. and the raised platform in the corner. Yes, it's that room.")
+		saynn("Ты проходишь через несколько небольших комнат и коридоров, пока не находишься вместе с Мирри в своего рода... комнате подготовки — огромном зале с очень высоким потолком. Хм, одна из стен представляет собой просто огромный занавес... а в углу стоит возвышение. Да, это именно та самая комната.")
 
-		saynn("[say=mirri]Stupid fucking bitch, how are you still resisting. Grrr. Fuck me-e-e, what are they putting into that shitty prison food.[/say]")
+		saynn("[say=mirri]Тупая гребаная сука, как ты всё еще сопротивляешься? Гррр. Блядь, да что они вообще кладут в эту дерьмовую тюремную еду?![/say]")
 
-		saynn("The catgirl is battling your slave's body, pulling on the chains that are pulling on {slave.name}'s wrists, forcing {slave.him} to raise them high.")
+		saynn("Кошкодевочка борется с телом твоей рабыни, дергая за цепи, которые сковывают запястья {slave.name}, заставляя {slave.him} высоко задрать руки.")
 
-		saynn("You realize that your slave is actually unconscious..")
+		saynn("Ты понимаешь, что твоя рабыня на самом деле без сознания...")
 
-		saynn("[say=pc]What did you do already?[/say]")
+		saynn("[say=pc]Ты что, уже всё сделала?[/say]")
 
-		saynn("[say=mirri]Shut up and help me get this whore to stand.[/say]")
+		saynn("[say=mirri]Заткнись и помоги мне заставить эту шлюху встать.[/say]")
 
-		saynn("Mirri is panting so you help her, tugging hard on the chains until the slave's {slave.toes} are the only things that are touching the ground.")
+		saynn("Мирри тяжело дышит, поэтому ты помогаешь ей, с силой дергая за цепи, пока {slave.toes} рабыни не окажутся единственным, что касается пола.")
 
-		saynn("[say=mirri]Splendid. Phew. I almost feel like you weren't useless, wormy.[/say]")
+		saynn("[say=mirri]Великолепно. Фух. Я почти почувствовала, что ты не такой уж бесполезный, червяк.[/say]")
 
-		saynn("[say=pc]Give me a break.[/say]")
+		saynn("[say=pc]Да ладно тебе.[/say]")
 
-		saynn("[say=mirri]Your break is that you're not in {slave.his} place, about to be sold. Yo. The auction is starting, make yourself transparent.[/say]")
+		saynn("[say=mirri]Твой единственный отдых в том, что ты не на {slave.his} месте, где тебя вот-вот продадут. Эй! Аукцион начинается, стань незаметным.[/say]")
 
-		saynn("What a bitch, huh. But she is right, you already hear the chatter behind the curtains, people are taking their seats.")
+		saynn("Ну и сучка, а? Но она права: за занавесом уже слышится гул голосов, люди занимают свои места.")
 
-		saynn("You just position yourself in one of the corners of the stage, somewhere where the projectors will never reach.")
+		saynn("Ты пристраиваешься в одном из углов сцены, там, куда никогда не дотянется луч проектора.")
 
-		saynn("Mirri flys up the little raised platform and closes her eyes, her fists clenched.")
+		saynn("Мирри взлетает на небольшой подиум и зажмуривается, сжав кулаки.")
 
-		saynn("[say=mirri]Alright.. just like last time. Yeah, yeah, yeah, zero worries. Alright. Let's fucking go![/say]")
+		saynn("[say=mirri]Ладно... всё как в прошлый раз. Да, да, да, вообще без проблем. Ладно. Погнали нахрен![/say]")
 
-		addButton("Watch", "See what happens..", "watch_first_auction")
+		addButton("Смотреть", "Посмотреть, что будет...", "watch_first_auction")
 	if(state == "watch_first_auction"):
 		playAnimation(StageScene.HangingDuo, "idle", {npc="mirri", pc=slaveID, bodyState={naked=true}})
-		saynn("The heavy black curtains part with a faint swish. The stage projector flickers on, casting a warm beam of light over Mirri's girly figure as she spreads her arms wide.")
+		saynn("Тяжелые черные шторы с легким шелестом раздвигаются. Включается сценический проектор, заливая теплым светом девичью фигуру Мирри, когда она широко раскидывает руки.")
 
-		saynn("[say=mirri]WELCOME! To the Blacktail Market![/say]")
+		saynn("[say=mirri]ДОБРО ПОЖАЛОВАТЬ! На рынок Блэктейл![/say]")
 
-		saynn("Mirri's voice booms across the room, her usual confidence on full display.")
+		saynn("Голос Мирри разносится по всему залу, она демонстрирует свою привычную уверенность.")
 
-		saynn("[say=mirri]Tonight, I present to you a fresh AlphaCorp catch. One that.. resisted fiercely, showing the kind of spirit that.. certain owners just love to break![/say]")
+		saynn("[say=mirri]Сегодня я представляю вам свежий улов АльфаКорп. Такую, что.. яростно сопротивлялась, проявляя тот самый дух, который.. определенные владельцы просто обожают ломать![/say]")
 
-		saynn("The main projector turns off, illuminating the naked slave.. who is still unconscious, hanging by the chains. You look into the darkness and notice bidders' confused stares.")
+		saynn("Главный проектор гаснет, освещая нагую рабыню.. которая всё еще без сознания, висит на цепях. Вы всматриваетесь в темноту и замечаете растерянные взгляды участников торгов.")
 
-		saynn("[sayOther]Are they.. alive?[/sayOther]")
+		saynn("[sayOther]Она.. живая?[/sayOther]")
 
-		saynn("[say=mirri]Of course! Trust me, it's a very rare find. Strong, resilient, but.. adaptable. Blacktail Market sells only the best of the best.[/say]")
+		saynn("[say=mirri]Конечно! Поверьте мне, это очень редкая находка. Сильная, выносливая, но.. приспосабливаемая. Рынок Блэктейл продает только самое лучшее из лучшего.[/say]")
 
-		saynn("There is an edge to her voice, a slight tension in her motions.")
+		saynn("В её голосе чувствуется резкость, в движениях — легкое напряжение.")
 
-		saynn("[say=mirri]Look at.. those {slave.breasts}. Aren't they nice? Just check those attractive curves out. I wanna touch-touch them already myself.[/say]")
+		saynn("[say=mirri]Посмотрите на эти {slave.breasts}. Разве они не милашки? Только гляньте на эти аппетитные изгибы. Мне самой уже хочется их пощупать-пощупать.[/say]")
 
-		saynn("Her words feel forced.. and so they find little reaction. Huh. Her gaze is flickering to the crowd, her feline eyes flashing brightly.")
+		saynn("Её слова звучат натянуто.. и поэтому вызывают слабую реакцию. Хм. Её взгляд мечется по толпе, а кошачьи глаза ярко блестят.")
 
-		saynn("[say=mirri]That {slave.masc} figure, those {slave.thick} hips.. I'm telling you, there is nothing quite like this one. The one who buys {slave.him} will be so-so lucky. So, place a bid while the price is still low![/say]")
+		saynn("[say=mirri]Эта {slave.masc} фигура, эти {slave.thick} бедра.. Говорю вам, ничего подобного нет. Тот, кто купит {slave.him}, будет чертовски везучим. Так что делайте ставки, пока цена еще низкая![/say]")
 
-		saynn("Mirri is trying to keep control.. but you can tell her grip is slipping a bit. No wonder, she has to present and look presentable at the same time. The bidders begin to murmur between each other.")
+		saynn("Мирри пытается держать всё под контролем.. но видно, что хватка у неё начинает немного ослабевать. Неудивительно — ей нужно и презентовать товар, и самой выглядеть презентабельно. Участники торгов начинают перешептываться между собой.")
 
-		saynn("[sayOther]{slave.He} looks half-dead. You expect us to pay for that?[/sayOther]")
+		saynn("[sayOther]{slave.He} выглядит полудохлой. И вы реально ждете, что мы за это заплатим?[/sayOther]")
 
-		saynn("[sayOther]Yeah, is the slave broken already? What's the point of buying a corpse?[/sayOther]")
+		saynn("[sayOther]Ага, она что, уже сломанная? Какой смысл покупать труп?[/sayOther]")
 
-		saynn("Mirri shoots a sharp glare into the darkness, clearly irked by all the interruptions. But then her gaze meets that of a different caliber. Oh yeah, that wolf is sitting in the audience too, you can see him.. And Mirri sees him too..")
+		saynn("Мирри бросает резкий взгляд во тьму, явно раздраженная постоянными перебиваниями. Но затем ее взгляд встречается с кем-то совсем иного калибра. О да, этот волк тоже сидит в зале, его видно... И Мирри его тоже заметила...")
 
-		saynn("[say=mirri]Listen! This one is fresh, pristine. Perfect for those who enjoy molding their property into any state they want. This product will fit any owner! Right now {slave.he} {slave.isAre} just a bit.. sleepy.[/say]")
+		saynn("[say=mirri]Слушайте! Эта — свежая, нетронутая. Идеально подойдет тем, кто любит лепить из своей собственности всё, что им вздумается. Этот товар устроит любого хозяина! Просто сейчас {slave.he} {slave.isAre} капельку... сонная.[/say]")
 
-		saynn("[sayOther]How do we know it isn't damaged goods? I see signs of abuse even from here. Did you check for scars, injuries?[/sayOther]")
+		saynn("[sayOther]А откуда нам знать, что она не бракованная? Отсюда уже видны следы насилия. Вы проверяли её на шрамы и травмы?[/sayOther]")
 
-		saynn("The questions pile on, each one making Mirri's irritation more obvious.")
+		saynn("Вопросы сыплются один за другим, и с каждым из них раздражение Мирри становится всё очевиднее.")
 
-		saynn("[say=mirri]It's not! Do you know who I am?![/say]")
+		saynn("[say=mirri]Не бракованная! Вы вообще знаете, кто я такая?![/say]")
 
-		saynn("Her tone sharpens.. but it's clear that the buyers are unconvinced. More murmurs rise, some chuckles even. You notice the wolf standing up.. and just leaving. That makes Mirri's tail wag a lot.")
+		saynn("Её тон становится резким... но очевидно, что покупатели не убеждены. Нарастает гул, слышны даже смешки. Ты замечаешь, как волк встает... и просто уходит. От этого хвост Мирри начинает бешено вилять.")
 
-		saynn("[sayOther]I do know. And to me, it looks like you're trying to sell us something you couldn't handle yourself.[/sayOther]")
+		saynn("[sayOther]Знаю. И лично мне кажется, что ты пытаешься впарить нам то, с чем сама не справилась.[/sayOther]")
 
-		saynn("The answer hits hard. Mirri stammers for a moment, her eyes darting to the unconscious slave.. then back to the bidders. The air feels thick with tension as the crowd waits for the response.")
+		saynn("Ответ бьет наотмашь. Мирри на мгновение заикается, её взгляд мечется от бессознательной рабыни к торгующимся... Воздух буквально пропитан напряжением, пока толпа ждет её реакции.")
 
-		saynn("[say=mirri]I.. uh..[/say]")
+		saynn("[say=mirri]Э.. эээ..[/say]")
 
-		saynn("Her clenched fists are shaking. Is that growling you hear?")
+		saynn("Её сжатые кулаки дрожат. Вы слышите этот рык?")
 
-		saynn("[sayOther]This is a waste of time. Let's go.[/sayOther]")
+		saynn("[sayOther]Это пустая трата времени. Пошли уже.[/sayOther]")
 
-		saynn("[say=mirri]Yeah, fine, whatever.. The auction is over, go away now.. fuckers..[/say]")
+		saynn("[say=mirri]Да, ладно, плевать.. Аукцион окончен, проваливайте теперь.. ублюдки..[/say]")
 
-		saynn("Her last word was said with just the intonation.. incredible.")
+		saynn("Последнее слово она произнесла лишь интонацией.. невероятно.")
 
-		saynn("The bidders are leaving. You counted.. exactly zero bids. Huh.")
+		saynn("Ставки сделаны, покупатели расходятся. Вы посчитали.. ровно ноль ставок. Хм.")
 
-		saynn("As the curtains close.. Mirri just stands there, frozen, watching as her audience disappears into the shadows. Her claws are out.")
+		saynn("Когда занавес опускается.. Мирри просто стоит как вкопанная, глядя, как её зрители исчезают в тенях. Её когти выпущены.")
 
-		saynn("After some time, Mirri slowly turns towards you. Her blue eyes pierce through you.")
+		saynn("Спустя какое-то время Мирри медленно поворачивается к вам. Её голубые глаза пронзают насквозь.")
 
-		saynn("Time to stand your ground.")
+		saynn("Пора проявить твердость характера.")
 
-		addButton("Continue", "See what happens next", "mirri_angery")
+		addButton("Продолжить", "Смотреть, что будет дальше", "mirri_angery")
 	if(state == "mirri_angery"):
 		playAnimation(StageScene.Duo, "stand", {npc="mirri"})
-		saynn("Mirri lets out a low growl as she walks past the unconscious slave.")
+		saynn("Мирри издает низкий рык, проходя мимо потерявшей сознание рабыни.")
 
-		saynn("[say=mirri]Useless! Fuck![/say]")
+		saynn("[say=mirri]Бесполезно! Блять![/say]")
 
-		saynn("The angry catgirl advances up to you.. but then just presses her back against the wall, staring up at the high ceiling.")
+		saynn("Разъяренная кошкодевочка наступает на тебя... но затем просто прижимается спиной к стене, уставившись в высокий потолок.")
 
-		saynn("[say=mirri]I fucking hate you. You brought me this failure. And he was there too, fuck. Of course he was. I really hope he is happy now.[/say]")
+		saynn("[say=mirri]Я тебя просто ненавижу. Ты притащил мне это ничтожество. И он тоже был там, сука. Конечно, он был там. Очень надеюсь, что он теперь доволен.[/say]")
 
-		saynn("[say=pc]Hey, it's not my fault you can't present a slave.[/say]")
+		saynn("[say=pc]Эй, это не моя вина, что ты не можешь нормально выставить раба.[/say]")
 
-		saynn("She places her hand on your shoulder, letting you feel her claws digging into you.. like you're a piece of very scratchable furniture. You let her have it.. the catgirl seems to be on edge.")
+		saynn("Она кладет руку тебе на плечо, и ты чувствуешь, как её когти впиваются в тебя... словно ты — кусок мебели, о который так и хочется поскрести. Ты позволяешь ей это... кошкодевочка явно на взводе.")
 
-		saynn("[say=mirri]Fuck you. I can present, okay? I'm, like, made for this. I'm Blacktail.[/say]")
+		saynn("[say=mirri]Да пошел ты. Я умею выставлять, ясно? Я для этого просто создана. Я — Блэктайл.[/say]")
 
-		saynn("[say=pc]Was it me who was stammering out there? Growling at the bidders?[/say]")
+		saynn("[say=pc]Это я там заикалась? Рычала на покупателей?[/say]")
 
-		saynn("Mirri rolls her eyes.")
+		saynn("Мирри закатывает глаза.")
 
-		saynn("[say=mirri]Yeah, well, what was I supposed to say? It's your fucking slave, you didn't exactly share any info with me.[/say]")
+		saynn("[say=mirri]Ну да, а что я, блять, должен был сказать? Это твой раб, ты толком и инфы-то мне не дал.[/say]")
 
-		saynn("Your slave seems to be slowly coming back to senses.. atleast {slave.he} {slave.isAre} not actually dead..")
+		saynn("Твой раб, кажется, медленно приходит в себя... по крайней мере {slave.he} {slave.isAre} не сдох окончательно...")
 
-		saynn("[say=pc]You didn't give me any time to do it.[/say]")
+		saynn("[say=pc]Ты просто не дал мне времени всё сделать.[/say]")
 
-		saynn("[say=mirri]Well, fuck you, I don't have time to listen to your love stories with each of your fucktoys. I barely have enough time to live already.[/say]")
+		saynn("[say=mirri]Да пошел ты, у меня нет времени слушать твои любовные истории про каждую твою игрушку. Мне бы на саму жизнь времени хватило.[/say]")
 
-		saynn("She keeps idly scratching you. A weird sensation.. but not too painful. Still, you carefully grab her paw and pull it away from your skin.")
+		saynn("Она продолжает лениво скрести тебя. Странное ощущение... не то чтобы больно, но всё же. Ты осторожно берешь её лапу и отводишь от своей кожи.")
 
-		saynn("An obvious solution comes to mind.")
+		saynn("На ум приходит очевидное решение.")
 
-		saynn("[say=pc]Let me present my slaves then. I know everything about them.[/say]")
+		saynn("[say=pc]Тогда позволь мне представить моих рабов. О каждом из них я знаю всё.[/say]")
 
-		saynn("Mirri looks at you.. and raises a brow.")
+		saynn("Мирри смотрит на тебя... и приподнимает бровь.")
 
-		saynn("[say=mirri]Are you serious? AlphaCorp slave selling slaves on the biggest Syndicate slave auction? Hah. I'd be floating in free space in seconds if I'd let that happen. Holy shit you're funny. Funny or dumb.[/say]")
+		saynn("[say=mirri]Ты серьезно? АльфаКорп продает рабов на крупнейшем аукционе Синдиката? Хах. Если бы я позволила такому случиться, я бы через секунду дрейфовала в открытом космосе. Мать твою, ну ты и смешной. Либо смешной, либо тупой.[/say]")
 
-		saynn("She puts her claws on you again, scratching your back. All the while your slave looks around.. and then begins trying to escape, rattling the chains.. fruitlessly.")
+		saynn("Она снова вонзает когти, царапая твою спину. Тем временем твоя рабыня оглядывается по сторонам... и пытается сбежать, гремя цепями... безрезультатно.")
 
-		saynn("Mirri hums watching the little show, her claws digging deeper and causing pain as her mind wanders.")
+		saynn("Мирри напевает под нос, наблюдая за этим маленьким представлением; её когти впиваются всё глубже, причиняя боль, пока её мысли витают где-то далеко.")
 
-		saynn("[say=mirri]You might have a point though.[/say]")
+		saynn("[say=mirri]Хотя, в твоих словах может быть доля истины.[/say]")
 
-		saynn("[say=pc]Hey, can you stop..[/say]")
+		saynn("[say=pc]Эй, может хватит?..[/say]")
 
-		saynn("She suddenly pulls her gun out and presses it against your lips, shushing you while keeping a forced eye contact.. Her blue eyes glow in the dark..")
+		saynn("Она внезапно выхватывает пистолет и прижимает его к твоим губам, заставляя замолчать и не сводя с тебя пристального взгляда... Её голубые глаза светятся в темноте...")
 
-		saynn("[say=mirri]I don't know a single thing about this slave. I don't know what they can do, what they're worth.. but you do.[/say]")
+		saynn("[say=mirri]Я ни черта не знаю об этой рабыне. Не знаю, на что она способна, сколько она стоит... но ты-то знаешь.[/say]")
 
-		saynn("The catgirl licks her lips while brushing her big scary toy against yours.")
+		saynn("Кошкодевочка облизывает губы, водя своей большой пугающей игрушкой по твоему члену.")
 
-		saynn("[say=mirri]You're the one who caught {slave.him}.. who trained {slave.him}. You know {slave.his} strengths, {slave.his} weaknesses.. yeah.. I actually kinda like your idea.. maybe it's not as stupid as it seemed at first.[/say]")
+		saynn("[say=mirri]Ты тот, кто поймал {slave.him}... кто тренировал {slave.him}. Ты знаешь сильные {slave.his} стороны и слабые {slave.his} стороны... да... а мне, честно говоря, нравится твоя идея... может, она и не такая уж тупая, как казалось сначала.[/say]")
 
-		saynn("You part your lips.. trying to say something.. but feeling Mirri trying to push the barrel of her gun inside makes you reconsider and keep your mouth shut.")
+		saynn("Ты приоткрываешь губы, пытаясь что-то сказать... но чувствуя, как Мирри пытается просунуть ствол пистолета тебе в рот, ты решаешь не спорить и просто держишь рот на замке.")
 
-		saynn("[say=mirri]I know, I know, shut up. I said that I can't let you be the presenter. And that's true, only over my dead abused fucked body I'd let you do that.[/say]")
+		saynn("[say=mirri]Знаю, знаю, заткнись. Я сказала, что не могу позволить тебе быть ведущим. И это правда: только через мой мёртвый, избитый и трахнутый труп ты сможешь это сделать![/say]")
 
-		saynn("That's.. a weird progression.")
+		saynn("Это... странное развитие событий.")
 
-		saynn("[say=mirri]You can't present slaves yourself..[/say]")
+		saynn("[say=mirri]Ты не можешь сам выставлять рабов на торги...[/say]")
 
-		saynn("Mirri stops scratching you and reaches into one of her pouches.. before pulling out a little sneaky headset and putting it on you.")
+		saynn("Мирри перестаёт ласкать тебя и лезет в одну из своих сумок... после чего достаёт маленькую незаметную гарнитуру и надевает её на тебя.")
 
-		saynn("[say=mirri]But you can do it through me![/say]")
+		saynn("[say=mirri]Но ты можешь делать это через меня![/say]")
 
-		saynn("She reaches into the pouch again and pulls out a little earpiece that she attaches to her feline ear.")
+		saynn("Она снова запускает руку в мешочек и достает маленький наушник, который прикрепляет к своему кошачьему уху.")
 
-		saynn("[say=mirri]You.. are gonna feed me all the details as I need them, all the selling points. Every little thing that will get those bids rolling in. Understand?[/say]")
+		saynn("[say=mirri]Ты.. будешь нашептывать мне все подробности по мере надобности, все козыри. Каждую мелочь, которая заставит ставки расти. Понял?[/say]")
 
-		saynn("The gun stops blocking your mouth.. but the barrel is still not exactly too far away from your face.")
+		saynn("Дуло пистолета перестает зажимать тебе рот.. но оно всё еще находится опасно близко к твоему лицу.")
 
-		saynn("[say=pc]Alright, as long as I get paid.[/say]")
+		saynn("[say=pc]Ладно, лишь бы мне заплатили.[/say]")
 
-		saynn("[say=mirri]You will get your cut~.[/say]")
+		saynn("[say=mirri]Свою долю ты получишь~.[/say]")
 
-		saynn("A cut? The fuck is she talking about.")
+		saynn("Долю? Какого хера она несет?")
 
-		saynn("[say=pc]You never mentioned a cut. It better be a big one.[/say]")
+		saynn("[say=pc]Ты не упоминала о доле. Надеюсь, она будет приличной.[/say]")
 
-		saynn("A click of her gun echoes in your ear.")
+		saynn("Щелчок её пистолета эхом отдается в твоих ушах.")
 
-		saynn("[say=mirri]You want a few grams of lead with your order?[/say]")
+		saynn("[say=mirri]Хочешь добавить пару граммов свинца к своему заказу?[/say]")
 
-		saynn("You frown.. but shake your head.")
+		saynn("Ты хмуришься.. но качаешь головой.")
 
-		saynn("[say=mirri]Good. You're lucky that you're getting anything at all.[/say]")
+		saynn("[say=mirri]Хорошо. Тебе еще повезло, что тебе вообще что-то достанется.[/say]")
 
-		saynn("Mirri holsters the gun and reaches for your headset. She presses a button that turns it on and then purrs into the microphone. The vibrations are making her ear flick in a cute way.")
+		saynn("Мирри убирает пистолет в кобуру и тянется к твоей гарнитуре. Она нажимает кнопку включения, а затем мурлычет прямо в микрофон. От вибрации её ушко мило подергивается.")
 
-		saynn("[say=mirri]Five-by-five. Good. New bidders will arrive in a bit, prepare yourself.[/say]")
+		saynn("[say=mirri]Прием, пять из пяти. Отлично. Скоро прибудут новые участники торгов, так что готовься.[/say]")
 
-		saynn("[say=pc]Next bidders will get here so soon already?[/say]")
+		saynn("[say=pc]Неужели следующие участники придут уже так скоро?[/say]")
 
-		saynn("[say=mirri]Who said that it's them who gets to us~.[/say]")
+		saynn("[say=mirri]Кто сказал, что это они приходят к нам~?[/say]")
 
-		saynn("Confusing.. but okay.")
+		saynn("Запутанно... но ладно.")
 
-		saynn("[say=pc]Shouldn't we practice or something?[/say]")
+		saynn("[say=pc]Может, нам стоит порепетировать или типа того?[/say]")
 
-		saynn("[say=mirri]What is there to practice? I do the talking, you do the thinking. Pick a good spot where you will be able to see the bidders' reaction to my words. Every bidder has different preferences, try to avoid their dislikes and you will be fine. Make them outbid each other for as long as possible![/say]")
+		saynn("[say=mirri]Что тут репетировать? Я говорю, ты думаешь. Найди хорошее место, откуда сможешь видеть реакцию торговцев на мои слова. У каждого покупателя свои предпочтения: старайся избегать того, что им не нравится, и всё будет путем. Заставь их перебивать ставки друг друга как можно дольше![/say]")
 
-		saynn("Seems.. stressful.")
+		saynn("Похоже... стрессово.")
 
-		saynn("[say=mirri]Just don't fuck up![/say]")
+		saynn("[say=mirri]Просто не просри всё![/say]")
 
-		saynn("Easy to say.")
+		saynn("Легко сказать.")
 
-		addButton("Prepare", "Wait until the new bidders arrive..", "prepare_next_auction")
+		addButton("Подготовка", "Погоди, вот придут новые участники торгов...", "prepare_next_auction")
 	if(state == "prepare_next_auction"):
 		playAnimation(StageScene.HangingDuo, "idle", {npc="mirri", pc=slaveID, bodyState={naked=true, hard=true}})
-		saynn("You walk around the stage.. until you find a good spot behind one of the pillars, hidden from any light sources but with full coverage of the whole room.")
+		saynn("Ты обходишь сцену... пока не находишь удачное место за одной из колонн — там тебя не будет видно ни при каком освещении, но ты сможешь полностью обзора всей комнаты.")
 
-		saynn("Mirri seems to be busy preparing your slave.. mentally.. for what is about to happen. You decide not to intervene there.")
+		saynn("Мирри, кажется, занята подготовкой твоего раба... ментальной... к тому, что должно произойти. Ты решаешь не вмешиваться.")
 
-		saynn("Time passes, you begin to hear the chatter growing behind the curtains.")
+		saynn("Время идет, и ты начинаешь слышать, как за занавесом нарастает гул голосов.")
 
-		saynn("You press a button on the headset to turn the microphone on.")
+		saynn("Ты нажимаешь кнопку на гарнитуре, чтобы включить микрофон.")
 
-		saynn("[say=pc]Picking me up?[/say]")
+		saynn("[say=pc]Забираешь меня?[/say]")
 
-		saynn("[say=mirri]Yep, the ear feels funny, I'm picking you up alright. The bidders are here.[/say]")
+		saynn("[say=mirri]Да, в ухе немного странно ощущается, но я тебя слышу. Участники уже здесь.[/say]")
 
-		saynn("Mirri takes her spot on the little raised platform.")
+		saynn("Мирри занимает свое место на небольшом возвышении.")
 
-		saynn("[say=mirri]Time to shine.[/say]")
+		saynn("[say=mirri]Пора сиять.[/say]")
 
-		saynn("Looks like the auction is about to start.. with you at the wheel.. kinda..")
+		saynn("Похоже, аукцион вот-вот начнется... и ты вроде как у руля...")
 
-		saynn("Let's see how hard it's gonna be.")
+		saynn("Посмотрим, насколько всё будет сложно.")
 
-		addButton("Slave auction", "Begin the minigame", "start_auction_minigame")
+		addButton("Рабский аукцион", "Начать мини-игру", "start_auction_minigame")
 	if(state == "failed_to_sell"):
-		saynn("The bidders are leaving.. their biggest bid was.. zero credits.")
+		saynn("Ставки закончились... их самая высокая ставка составила... ноль кредитов.")
 
-		saynn("Mirri's eyes look like they're about to pierce you with lasers.. or lead.")
+		saynn("Кажется, взгляд Мирри сейчас либо прожжёт в тебе дыру лазером, либо пристрелит свинцом.")
 
-		saynn("[say=pc]Listen, it's not as easy as it seems.[/say]")
+		saynn("[say=pc]Слушай, всё не так просто, как кажется.[/say]")
 
-		saynn("[say=mirri]Are you really that dumb? We have to sell this slave, we can not keep {slave.him}! Try again, you fuck, the new bidders will arrive soon. It's a busy day.[/say]")
+		saynn("[say=mirri]Ты что, реально такой тупой? Нам нужно продать эту рабыню, мы не можем держать {slave.him} вечно! Попробуй ещё раз, ублюдок, скоро придут новые покупатели. Сегодня жаркий денёк.[/say]")
 
-		saynn("Looks like you are given one more chance..")
+		saynn("Похоже, тебе дали ещё один шанс...")
 
-		addButton("Slave auction", "Begin the minigame", "start_auction_minigame")
+		addButton("Рабский аукцион", "Начать мини-игру", "start_auction_minigame")
 	if(state == "after_sold"):
 		playAnimation(StageScene.Duo, "stand", {pc="mirri", npc=slaveID, npcBodyState={naked=true, leashedBy="mirri"}})
-		saynn("You let out a breath you didn't realize you were holding.")
+		saynn("Ты выдыхаешь, сам того не замечая, что затаил дыхание.")
 
-		saynn("Mirri clips a leash to your slave's collar and whispers a few words to {slave.him}.")
+		saynn("Мирри пристегивает поводок к ошейнику твоей рабыни и шепчет что-то на ухо {slave.him}.")
 
-		saynn("[say=mirri]I won't be missing you.[/say]")
+		saynn("[say=mirri]Скучать по тебе я не стану.[/say]")
 
-		saynn("Harsh. But it's probably true for you as well. She pulls the slave off of the stage and then hands {slave.him} to a few faceless attendants that pick up from there, bringing the toy to {slave.his} new happy owner.")
+		saynn("Жестоко. Но, скорее всего, это взаимно. Она стаскивает рабыню со сцены и передаёт {slave.him} кучке безликих слуг, которые подхватывают её и несут игрушку новому счастливому владельцу {slave.his}.")
 
-		saynn("You get a few final glimpses of your slave.. ex-slave.. before {slave.he} vanishes from your sight forever..")
+		saynn("Ты успеваешь еще несколько раз мельком взглянуть на свою рабыню... бывшую рабыню... прежде чем {slave.he} навсегда исчезнет из виду..")
 
-		addButton("Continue", "See what happens next", "slave_sold_yay")
+		addButton("Продолжить", "Смотреть, что будет дальше", "slave_sold_yay")
 	if(state == "slave_sold_yay"):
 		playAnimation(StageScene.Duo, "stand", {npc="mirri"})
-		saynn("Soon, the auction ends for the day. The curtains begin to close.. the projectors all turn off, putting the room back into its dimly-lit state.")
+		saynn("Вскоре аукцион на сегодня заканчивается. Занавес начинает опускаться... проекторы гаснут, возвращая комнату в полумрак.")
 
-		saynn("Mirri approaches you, a smile is tugging at her lips.")
+		saynn("Мирри подходит к тебе, на ее губах играет улыбка.")
 
-		saynn("[say=mirri]You impressed me, {pc.name}~. Keep it up and I might just spare you when it all ends.[/say]")
+		saynn("[say=mirri]Ты впечатлил меня, {pc.name}~. Продолжай в том же духе, и, возможно, я пощажу тебя, когда всё закончится.[/say]")
 
-		saynn("She giggles watching your concerned eyes.")
+		saynn("Она хихикает, глядя в твои обеспокоенные глаза.")
 
-		saynn("[say=mirri]Relax, I'm just teasing you~. I seriously love what you did here.. I might have came a little when I finally shouted SOLD.[/say]")
+		saynn("[say=mirri]Расслабься, я просто дразню тебя~. Мне серьезно безумно понравилось то, что ты сделал здесь... когда я наконец выкрикнула «ПРОДАНО», я, кажется, даже немного кончила.[/say]")
 
-		saynn("[say=pc]Listen, I don't think I need to know every detail of..[/say]")
+		saynn("[say=pc]Послушай, не думаю, что мне нужно знать каждую деталь о..[/say]")
 
-		saynn("Suddenly, she gets into your face, her hand is holding something.. probably a gun, knowing her.")
+		saynn("Внезапно она оказывается прямо перед твоим лицом, и в ее руке что-то зажато... зная ее, скорее всего, пистолет.")
 
-		saynn("[say=mirri]I'm spilling out my soul to you and you're gonna reject me like that? Such a rude {pc.boy}. Maybe you don't need this too?[/say]")
+		saynn("[say=mirri]Я изливаю тебе душу, а ты вот так меня отвергаешь? Какой грубый {pc.boy}. Может, тебе это тоже не нужно?[/say]")
 
-		saynn("She raises her hand.. and reveals that she is holding a credit chip.")
+		saynn("Она поднимает руку... и оказывается, что в ней кредитный чип.")
 
-		saynn("[say=pc]In fact, I do need this.[/say]")
+		saynn("[say=pc]Вообще-то, мне это действительно нужно.[/say]")
 
-		saynn("The chip lands in your hands with an audible smack.")
+		saynn("Чип приземляется тебе в руки с отчетливым шлепком.")
 
-		saynn("[say=mirri]Well, here is your cut, big {pc.boy}. 10%, like we agreed.[/say]")
+		saynn("[say=mirri]Ну вот, держи свою долю, большой {pc.boy}. 10%, как и договаривались.[/say]")
 
-		saynn("[say=pc]I didn't agree to any..[/say]")
+		saynn("[say=pc]Я ни о чем не договаривалась...[/say]")
 
-		saynn("Her digits cover your lips.. red claws poking your nose. Mirri tilts her head slightly, closing the distance between your faces.. Her blue eyes glow with excitement.")
+		saynn("Ее пальцы накрывают твои губы... красные когти слегка задевают твой нос. Мирри чуть наклоняет голову, сокращая расстояние между вашими лицами... Ее голубые глаза светятся азартом.")
 
-		saynn("[say=mirri]Shhh-h.. Sometimes words are unnecessary..[/say]")
+		saynn("[say=mirri]Ш-ш-ш... Иногда слова излишни...[/say]")
 
-		saynn("She gets so close you can feel her warm breath on your neck.. before pulling away.")
+		saynn("Она придвигается так близко, что ты чувствуешь ее теплое дыхание на своей шее... прежде чем отстраниться.")
 
-		saynn("[say=mirri]You did good today, really good. I knew there was something in you since the moment I saw you. You and I, we could do a lot of damage in this business, don't you think?[/say]")
+		saynn("[say=mirri]Ты сегодня отлично поработал, правда отлично. Я поняла, что в тебе что-то есть, с самой первой нашей встречи. Мы с тобой могли бы навести немало шороху в этом бизнесе, не находишь?[/say]")
 
-		saynn("Her clawed digits slide down your chin.. and follow the curves of your shoulder.")
+		saynn("Ее когтистые пальцы скользят по твоему подбородку... и очерчивают изгиб твоего плеча.")
 
-		saynn("[say=pc]Just don't do anything crazy.[/say]")
+		saynn("[say=pc]Только не выкидывай никаких безумств.[/say]")
 
-		saynn("[say=mirri]Hah. Fuck you. I will do anything I want~. Now..[/say]")
+		saynn("[say=mirri]Хах. Пошел ты! Буду делать всё, что захочу~. А теперь..[/say]")
 
-		saynn("She grabs your arm and pulls you off stage.")
+		saynn("Она хватает тебя за руку и утягивает со сцены.")
 
-		addButton("Follow", "See where she brings you", "follow_back")
+		addButton("Следовать", "Посмотреть, куда она тебя приведет", "follow_back")
 	if(state == "follow_back"):
 		aimCameraAndSetLocName("market_intro")
 		GM.pc.setLocation("market_intro")
-		saynn("Mirri brings you into the other room with all the furniture.. and that teleporter machine.")
+		saynn("Мирри заводит тебя в другую комнату, обставленную мебелью... и тем самым телепортом.")
 
-		saynn("[say=mirri]Hold on, last thing.[/say]")
+		saynn("[say=mirri]Погоди, последнее дело.[/say]")
 
-		saynn("She rummages through her desk.. until she finds what she is looking for.")
+		saynn("Она копается в своем столе... пока не находит то, что искала.")
 
-		saynn("Oh fuck, is that another gun.. this one looks way more.. hi-tech. You see the sparks in her feline eyes as you take a step back.")
+		saynn("Ох ни хрена, это что, еще один ствол?.. Этот выглядит куда более... высокотехнологичным. Ты видишь искры в её кошачьих глазах, когда делаешь шаг назад.")
 
-		saynn("[say=pc]Hey, hey![/say]")
+		saynn("[say=pc]Эй, эй![/say]")
 
-		saynn("Mirri is swaying her hips slightly, her legs slightly bent, her tail wagging..")
+		saynn("Мирри слегка покачивает бедрами, её ноги чуть согнуты, а хвост виляет..")
 
-		saynn("You take another step back..")
+		saynn("Ты делаешь еще один шаг назад..")
 
-		saynn("Pounce!")
+		saynn("Прыжок!")
 
-		saynn("The armored catgirl jumps on you and presses the device against your neck before pulling the trigger.. Thunk.. You feel it injecting something under your skin.")
+		saynn("Бронированная кошкодевочка запрыгивает на тебя и прижимает устройство к шее, прежде чем нажать на спуск... Тук... Ты чувствуешь, как под кожу впрыскивается какая-то субстанция.")
 
-		saynn("[say=pc]Ow. What the fuck was that?[/say]")
+		saynn("[say=pc]Ой! Что это, блять, было?[/say]")
 
-		saynn("[say=mirri]Subdermal a-organic bluespace relay-tag![/say]")
+		saynn("[say=mirri]Субдермальный био-органический блюспейс-маячок![/say]")
 
-		saynn("You rub your neck.. and don't feel anything apart from a small hole that the injector needle left.")
+		saynn("Ты потираешь шею... и не чувствуешь ничего, кроме крошечной дырочки от инъекционной иглы.")
 
-		saynn("[say=pc]A what?[/say]")
+		saynn("[say=pc]Что-что?[/say]")
 
-		saynn("[say=mirri]I'm too lazy to teleport you all the time. Press on it and the teleporter will spawn a rift in your cell. Untraceable by all that useless AlphaCorp tech.[/say]")
+		saynn("[say=mirri]Мне слишком лень телепортировать тебя постоянно. Нажми на него, и телепорт создаст разлом прямо в твоей камере. Его не отследит ни одна из этих бесполезных технологий АльфаКорпа.[/say]")
 
-		saynn("Huh.. looks like she just injected you with a 'order a taxi' button.")
+		saynn("Хм... похоже, она только что вколола тебе кнопку «заказать такси».")
 
-		saynn("[say=pc]Could have told me that earlier. Before you went.. all feral on me.[/say]")
+		saynn("[say=pc]Могла бы сказать об этом раньше. До того, как ты... совсем одичала.[/say]")
 
-		saynn("[say=mirri]What, can't handle a little pussy cat? Sounds like a 'you' problem![/say]")
+		saynn("[say=mirri]Что, не справляешься с маленькой киской? Похоже, это твои проблемы![/say]")
 
-		saynn("So this is it, huh. Collared by AlphaCorp and tagged by Syndicate. Great. Just perfect.")
+		saynn("Ну вот и всё, да? Ошейник от АльфаКорпа и метка от Синдиката. Потрясающе. Просто идеально.")
 
-		saynn("[say=mirri]Tell me when you find another good slave to sell off! I'm watching you now, don't disappoint me.[/say]")
+		saynn("[say=mirri]Скажи мне, когда найдешь еще одну годную рабыню на продажу! Теперь я слежу за тобой, так что не разочаруй меня.[/say]")
 
-		saynn("Her words linger in the air as she steps back, her cunning smile is making you feel weird.")
+		saynn("Ее слова все еще вибрируют в воздухе, когда она отступает назад; от ее хищной ухмылки становится как-то не по себе.")
 
-		saynn("At least you got paid for your trouble. Even if it's not a lot..")
+		saynn("По крайней мере, тебе заплатили за хлопоты. Пусть и немного...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 func addSlaveButtons():
 	var slaves = GM.main.getDynamicCharacterIDsFromPool(CharacterPool.Slaves)
 	for charID in slaves:
@@ -458,7 +458,7 @@ func addSlaveButtons():
 		if(npcSlavery == null):
 			continue
 		if(npcSlavery.isDoingActivity()):
-			addDisabledButton(character.getName(), "This slave is currently busy")
+			addDisabledButton(character.getName(), "Эта рабыня сейчас занята")
 			continue
 		addButton(character.getName(), character.getSmallDescription(), "pick_slave", [charID])
 

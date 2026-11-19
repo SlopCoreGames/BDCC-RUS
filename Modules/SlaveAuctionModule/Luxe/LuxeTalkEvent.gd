@@ -12,7 +12,7 @@ func run(_triggerID, _args):
 		if(r6out == "luxedead"):
 			return
 		
-		addButton("Luxe", "Enter Luxe's office", "talkluxe")
+		addButton("Люкс", "Войти в кабинет Люкс", "talkluxe")
 
 func getPriority():
 	return 0

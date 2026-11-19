@@ -9,199 +9,199 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcAction="stand"})
 		
 	if(state == ""):
-		saynn("You were heading out the cellblock when you noticed a familiar feline waiting and then slowly approaching you. Kitty seems to be acting quite shy, her gaze directed downwards as she gathers enough willpower to start a conversation.")
+		saynn("Вы как раз выходили из блока камер, когда заметили знакомую кошачью фигуру, которая ждала вас и медленно приближалась. Китти ведет себя довольно застенчиво: она смотрит в пол, собираясь с духом, чтобы заговорить с вами.")
 
-		saynn("[say=pc]Hey there, Kitten.[/say]")
+		saynn("[say=pc]Привет, Кошечка.[/say]")
 
-		saynn("[say=rahi]Oh. Yes, hello.. She was wandering around.. And then she saw you..[/say]")
+		saynn("[say=rahi]Ох. Да, привет... Она просто бродила тут... И тут увидела тебя...[/say]")
 
-		saynn("Kitty rubs her snout, then fixes her ponytail, then grabs her wrist with another hand.")
+		saynn("Китти потирает носик, затем поправляет хвост, а после обхватывает запястье другой рукой.")
 
-		saynn("[say=rahi]Wanna hang around a bit? You know, just sit somewhere..[/say]")
+		saynn("[say=rahi]Не хочешь немного погулять? Ну, знаешь, просто посидеть где-нибудь...[/say]")
 
-		addButton("Sure", "Agree to hang out with the kitty", "sure")
-		addButton("Busy", "Ask her to do this some other time because you have things to do", "busy")
-		addButton("Nah", "Say that you’re not interested at all, this will stop any further interactions from Rahi", "nah")
+		addButton("Конечно", "Согласиться погулять с кошечкой", "sure")
+		addButton("Занята", "Предложить встретиться в другой раз, так как у вас есть дела", "busy")
+		addButton("Неа", "Сказать, что она вам совсем не интересна (это прекратит дальнейшие попытки Рахи)", "nah")
 
 	if(state == "nah"):
 		setModuleFlag("RahiModule", "Rahi_Denied", true)
 		
-		saynn("[say=pc]Sorry, nothing wrong with you but I’m just not interested.[/say]")
+		saynn("[say=pc]Прости, с тобой всё в порядке, просто ты мне не очень-то и интересна.[/say]")
 
-		saynn("Kitty blinks many times in a short time.")
+		saynn("Китти несколько раз быстро моргает.")
 
-		saynn("[say=rahi]Oh.. that’s okay. She understands.. Meow.. Thanks for the apple..[/say]")
+		saynn("[say=rahi]Ох.. ничего страшного. Она понимает.. Мяу.. Спасибо за яблоко..[/say]")
 
-		saynn("She rubs her eyes and walks away, probably to her favorite spot. You are left to wonder if you were too rude.")
+		saynn("Она протирает глаза и уходит — вероятно, на своё любимое место. Вы остаётесь гадать, не были ли вы слишком грубы.")
 
 		# (stop random events with rahi)
 
 		# (scene ends)
-		addButton("Continue", "Continue on your way", "endthescene")
+		addButton("Продолжить", "Продолжить путь", "endthescene")
 
 	if(state == "busy"):
 		setModuleFlag("RahiModule", "Rahi_ChillCooldown", RNG.randi_range(4, 10))
 		
-		saynn("[say=pc]I’m deeply sorry but can you find me some other time?[/say]")
+		saynn("[say=pc]Мне очень жаль, но не могла бы ты найти меня в другой раз?[/say]")
 
-		saynn("Kitty’s eyes brighten slightly with hope.")
+		saynn("Глаза Китти слегка светлеют от надежды.")
 
-		saynn("[say=rahi]Of course! Kitty can do that. Take care![/say]")
+		saynn("[say=rahi]Конечно! Китти сможет это сделать. Береги себя![/say]")
 
-		saynn("She swiftly dashes away, letting you return to your business.")
+		saynn("Она стремительно убегает, позволяя вам вернуться к своим делам.")
 
 		# (a few days cooldown)
 
 		# (scene ends)
-		addButton("Continue", "Continue on your way", "endthescene")
+		addButton("Продолжить", "Продолжить путь", "endthescene")
 
 	if(state == "sure"):
 		setModuleFlag("RahiModule", "Rahi_ChillHappened", true)
 		
-		saynn("[say=pc]Yeah, sure, we can do that. Know any good spots?[/say]")
+		saynn("[say=pc]Да, конечно, можно так сделать. Знаешь какие-нибудь хорошие места?[/say]")
 
-		saynn("Kitty is visible bouncing up and down hearing your response, she is probably not realizing that.")
+		saynn("Китти заметно подпрыгивает от радости, услышав ваш ответ, сама того, возможно, не осознавая.")
 
-		saynn("[say=rahi]Ohh. She does![/say]")
+		saynn("[say=rahi]О-о! Знает![/say]")
 
-		saynn("The feline grabs your wrist and tugs you to follow.")
+		saynn("Кошка хватает тебя за запястье и тянет за собой.")
 
-		addButton("Follow", "See where she brings you", "follow")
+		addButton("Следовать", "Посмотреть, куда она тебя приведет", "follow")
 
 	if(state == "follow"):
 		aimCameraAndSetLocName("yard_firstroom")
 		playAnimation(StageScene.Solo, "walk")
 		
-		saynn("She brings you up to the main hall and then walks you towards the yard. The whole yard area looks like a big garden, many stone pathways have tall greenery by each side. The air here feels quite fresh.")
+		saynn("Она приводит тебя в главный зал, а затем ведет к внутреннему дворику. Весь двор напоминает огромный сад, где вдоль множества каменных дорожек тянется высокая зелень. Воздух здесь кажется удивительно свежим.")
 
-		saynn("[say=rahi]She will show you her second favorite spot. After the bench.[/say]")
+		saynn("[say=rahi]Она покажет тебе свое второе любимое место. Сразу после скамейки.[/say]")
 
-		saynn("[say=pc]Your life isn’t very interesting, is it?[/say]")
+		saynn("[say=pc]Твоя жизнь не особо интересная, верно?[/say]")
 
-		saynn("[say=rahi]It’s.. well, it used to be.[/say]")
+		saynn("[say=rahi]Она... ну, раньше была.[/say]")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "continue"):
 		aimCameraAndSetLocName("yard_waterfall")
 		GM.pc.setLocation("yard_waterfall")
 		playAnimation(StageScene.Solo, "sit")
 		
-		saynn("She brings you to the little blue pond. Around you are a few bushes, stones and a bench. A little waterfall is going down from the top floor where the greenhouses are down into the pond, making it into more of a stream. Kitty takes her spot on the bench.")
+		saynn("Она подводит тебя к маленькому голубому пруду. Вокруг — пара кустов, камни и скамейка. С верхнего яруса, где расположены теплицы, в пруд стекает небольшой водопад, превращая его скорее в ручей. Китти занимает свое место на скамейке.")
 
-		saynn("[say=pc]I can totally see why you like this place.[/say]")
+		saynn("[say=pc]Теперь я прекрасно понимаю, почему тебе здесь нравится.[/say]")
 
-		saynn("You sit near her and try to relax, the firm nature of the bench makes that kinda tough though. The sound of running water is nice, it’s irregular and noisy but also quite calming.")
+		saynn("Ты садишься рядом с ней и пытаешься расслабиться, хотя из-за жесткой скамейки это дается не так просто. Звук бегущей воды приятный — неритмичный и шумный, но при этом довольно успокаивающий.")
 
-		saynn("[say=rahi]Kitty is from a cold planet, Ahdomai. Sights like these are incredibly rare there. They began disappearing as more towns were being built.. Thanks to AlphaCorp..[/say]")
+		saynn("[say=rahi]Китти родом с холодной планеты, Ахдомай. Подобные пейзажи там невероятная редкость. Они начали исчезать по мере того, как строились новые города... Благодаря АльфаКорпу...[/say]")
 
-		saynn("Kitty strokes her tail and then remembers something.")
+		saynn("Китти поглаживает свой хвост, а затем что-то вспоминает.")
 
-		saynn("[say=rahi]Oh. She can offer you something.[/say]")
+		saynn("[say=rahi]О. Она может кое-чем с тобой поделиться.[/say]")
 
-		saynn("She jumps to her feet and leaps over the pond where a little ledge is. She then sneaks under the waterfall without getting wet and shifts one of the bricks to the side. Under it you notice a little stash with alcohol. Kitty grabs a whiskey bottle, a glass and then leaps back to you.")
+		saynn("Она вскакивает на ноги и перепрыгивает через пруд к небольшому уступу. Затем она проскальзывает под водопад, не намокнув, и отодвигает один из кирпичей в сторону. Под ним ты замечаешь небольшую заначку с алкоголем. Китти хватает бутылку виски, стакан, а затем в один прыжок возвращается к тебе.")
 
-		saynn("[say=pc]Where did you get that.[/say]")
+		saynn("[say=pc]Где ты это взяла?[/say]")
 
-		saynn("Kitty puts on a cunning smile as she carefully opens the bottle, as to not attract extra attention.")
+		saynn("Китти хитро улыбается, осторожно открывая бутылку, чтобы не привлекать лишнего внимания.")
 
-		saynn("[say=rahi]One of the guards gave this one to her. She loves whiskey. Wanna try?[/say]")
+		saynn("[say=rahi]Один из охранников дал ей эту бутылочку. Она обожает виски. Хочешь попробовать?[/say]")
 
-		addButton("Take a sip", "Accept the offer", "take_a_sip")
-		addButton("Nah", "You don’t drink", "nah1")
+		addButton("Сделать глоток", "Принять предложение", "take_a_sip")
+		addButton("Неа", "Ты не пьешь", "nah1")
 		
 
 	if(state == "take_a_sip"):
-		saynn("[say=pc]Sure.[/say]")
+		saynn("[say=pc]Конечно.[/say]")
 
-		saynn("You take the offered glass and sip out of it. The orange-colored drink is sweet but then it also burns your mouth quite a bit, you cough and breathe through your mouth.")
+		saynn("Ты берешь предложенный стакан и делаешь глоток. Оранжевая жидкость сладкая, но затем она ощутимо обжигает рот; ты кашляешь и жадно ловишь ртом воздух.")
 
-		saynn("[say=pc]That’s strong.[/say]")
+		saynn("[say=pc]Крепкая штучка.[/say]")
 
-		saynn("You hand the glass back to the brown feline and watch her, she pours some whiskey in and then starts lapping at it with her rough lengthy tongue, it looks kinda cute. You can hear subtle purring coming from her.")
+		saynn("Ты возвращаешь стакан коричневошерстной кошке и наблюдаешь за ней: она наливает немного виски и начинает слизывать его своим длинным шершавым языком — выглядит довольно мило. Слышно её едва уловимое мурлыканье.")
 
-		saynn("[say=pc]Never seen anyone drink like that.[/say]")
+		saynn("[say=pc]Никогда не видел, чтобы кто-то так пил.[/say]")
 
-		saynn("[say=rahi]It’s not that strong to her anymore.[/say]")
+		saynn("[say=rahi]Для неё это уже не так и не крепко.[/say]")
 
-		addButton("Continue", "See what happens next", "continue1")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue1")
 
 	if(state == "nah1"):
-		saynn("[say=pc]I’d rather not. Don’t want any staff to spot me drunk.[/say]")
+		saynn("[say=pc]Пожалуй, не стоит. Не хочу, чтобы персонал заметил меня пьяным.[/say]")
 
-		saynn("[say=rahi]Being drunk usually helps her instead.[/say]")
+		saynn("[say=rahi]Обычно опьянение ей только на пользу.[/say]")
 
-		saynn("Kitty pours some whiskey into her glass and then starts lapping at it with her rough lengthy tongue, it looks kinda cute. You can hear subtle purring coming from her.")
+		saynn("Кошечка наливает виски в стакан и начинает слизывать его своим длинным шершавым языком, это выглядит довольно мило. Слышно её едва уловимое мурлыканье.")
 
-		saynn("[say=pc]Never seen anyone drink like that.[/say]")
+		saynn("[say=pc]Никогда не видел, чтобы кто-то так пил.[/say]")
 
-		saynn("[say=rahi]She likes the taste. It’s very sweet.[/say]")
+		saynn("[say=rahi]Ей нравится вкус. Он очень сладкий.[/say]")
 
-		addButton("Continue", "See what happens next", "continue1")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue1")
 
 	if(state == "continue1"):
-		saynn("The kitten relaxes in her seat and keeps lapping her whiskey. You spot a slight blush appearing on her cheeks. You both focus on admiring the view. With all the green and blue around you almost forget that you are stuck in a giant metal box floating through space.")
+		saynn("Кошечка расслабляется в кресле, продолжая прихлебывать виски. Ты замечаешь легкий румянец на её щеках. Вы оба замираете, любуясь видом. Среди всей этой зелени и синевы почти забываешь, что заперт в гигантской железной коробке, летящей сквозь космос.")
 
-		saynn("The feline sighs.")
+		saynn("Кошка вздыхает.")
 
-		addButton("Hug her", "Make the kitty feel better", "hug_her")
-		addButton("Gotta go", "It was nice but you feel it’s enough", "gotta_go")
+		addButton("Обнять её", "Утешить кошечку", "hug_her")
+		addButton("Пора идти", "Было приятно, но кажется, что на этом всё", "gotta_go")
 
 	if(state == "gotta_go"):
-		saynn("You stand up and give the kitty a pat on the head, she mewls and blinks at you.")
+		saynn("Вы встаете и ласково гладите кошечку по голове; она тихо мяукает и хлопает на вас глазами.")
 
-		saynn("[say=pc]Thanks for showing me this, you’re a good kitten.[/say]")
+		saynn("[say=pc]Спасибо, что показала мне это, ты хорошая кошечка.[/say]")
 
-		saynn("[say=rahi]Leaving?.. Take care! Thanks for spending some time with her..[/say]")
+		saynn("[say=rahi]Уходишь?.. Береги себя! Спасибо, что провела с ней немного времени..[/say]")
 
 		# (scene ends)
-		addButton("Continue", "Continue on your way", "endthescene")
+		addButton("Продолжить", "Продолжить путь", "endthescene")
 
 	if(state == "hug_her"):
-		saynn("You put your arm on the feline’s shoulder and pull her closer, giving her a hug. She tilts her head down and rests against you, still with a bottle in her paw.")
+		saynn("Вы кладете руку кошечке на плечо и притягиваете её к себе, обнимая. Она склоняет голову и прижимается к вам, всё еще сжимая в лапке бутылку.")
 
-		saynn("[say=pc]Something is wrong?[/say]")
+		saynn("[say=pc]Что-то не так?[/say]")
 
-		saynn("[say=rahi]It’s much better now.. meow..[/say]")
+		saynn("[say=rahi]Теперь гораздо лучше.. мяу..[/say]")
 
-		saynn("You softly chuckle and headpat the cat.")
+		saynn("Вы тихо посмеиваетесь и гладите кошку по голове.")
 
-		saynn("[say=rahi]She stole this bottle, she lied..[/say]")
+		saynn("[say=rahi]Она стащила эту бутылку, она соврала..[/say]")
 
-		saynn("You raise your brow.")
+		saynn("Ты вопросительно приподнимаешь бровь.")
 
-		saynn("[say=rahi]It’s not like they’re gonna miss it, they got their pockets full.[/say]")
+		saynn("[say=rahi]Всё равно им не жалко, у них и так карманы полные.[/say]")
 
-		saynn("You can’t really argue with that logic, your hand just keeps patting the half-drunk kitten.")
+		saynn("С этой логикой трудно спорить: твоя рука так и продолжает поглаживать полупьяную кошечку.")
 
-		addButton("Kiss her", "Kiss kitten’s cheek", "kiss_her")
-		addButton("Gotta go", "It was nice but you feel it’s enough", "gotta_go")
+		addButton("Поцеловать её", "Поцеловать кошечку в щеку", "kiss_her")
+		addButton("Пора идти", "Было приятно, но кажется, что на этом всё", "gotta_go")
 
 	if(state == "kiss_her"):
-		saynn("While she is busy lapping her alcohol you land a little kiss on her cheek, making her blush even harder. She returns the favor by nuzzling you back and purring happily. You wrap your arms around the feline and put her on your lap, she leans in and rests her head on your chest.")
+		saynn("Пока она увлечена тем, что лакает алкоголь, ты слегка целуешь её в щеку, заставляя её покраснеть ещё сильнее. Она отвечает тем же, притираясь к тебе и довольно мурлыча. Ты обнимаешь кошечку и усаживаешь её к себе на колени; она прижимается к тебе и кладет голову тебе на грудь.")
 
-		saynn("You give the kitty a kind look and then just watch the waterfall. It feels like nothing can ruin this moment.")
+		saynn("Ты бросаешь на кошечку ласковый взгляд и просто смотришь на водопад. Кажется, что ничто не способно испортить этот момент.")
 
-		saynn("[say=pc]Hey, kitty..[/say]")
+		saynn("[say=pc]Эй, кошечка..[/say]")
 
-		saynn("No response. You look down at her and notice that she is in fact sleeping. Her eyes are closed, ears are drooping down, tail is resting between her legs. You can hear her snoozing subtly. Adorable.")
+		saynn("Никакого ответа. Ты смотришь на неё и замечаешь, что она и вправду спит. Глаза закрыты, ушки опущены, хвост поджат между лапками. Слышно её тихое сопение. Прелесть.")
 
-		addButton("Bring her home", "She can’t be that heavy", "bring_her_home")
+		addButton("Отнести её домой", "Она не может быть такой тяжелой", "bring_her_home")
 
 	if(state == "bring_her_home"):
 		aimCameraAndSetLocName("cellblock_orange_nearcell")
 		GM.pc.setLocation("cellblock_orange_nearcell")
 		playAnimation(StageScene.Solo, "walk")
 		
-		saynn("You decide not to mess with her sleep and carefully stand up while holding her. The kitten is quite light, probably the reason why she is so agile. You bring her back to the cellblock and look for her cell. Luckily they are numbered and the number corresponds to the one she has on her uniform. You enter her cell and gently put her into bed. You hide her bottle under the pillow and then cover the feline with a blanket. She doesn’t look to be too disturbed by the change of place, still snoozing away.")
+		saynn("Ты решаешь не тревожить её сон и осторожно встаешь, придерживая её на руках. Кошечка совсем легкая — вероятно, поэтому она такая ловкая. Ты несешь её обратно в жилой блок и ищешь её камеру. К счастью, они пронумерованы, и номер совпадает с тем, что указан у неё на форме. Ты заходишь в её камеру и аккуратно укладываешь её в кровать. Спрятав её бутылочку под подушку, ты укрываешь кошечку одеялом. Похоже, смена обстановки её не особо беспокоит — она продолжает сладко сопеть.")
 
-		saynn("Though she suddenly grabs onto you, pulls herself closer and then lands a little kiss on your lips before letting go and landing back onto her firm bed. Is she a sleepkisser?")
+		saynn("Однако вдруг она вцепляется в тебя, притягивает себя ближе и оставляет легкий поцелуй на твоих губах, прежде чем отпустить и снова упасть на свою твердую постель. Неужели она целует во сне?")
 
-		saynn("You leave her cell and continue on your way.")
+		saynn("Вы выходите из её камеры и продолжаете свой путь.")
 
 		# (scene ends)
 
-		addButton("Continue", "What now", "endthescene")
+		addButton("Продолжить", "Что теперь?", "endthescene")
 		
 
 func _react(_action: String, _args):

@@ -337,7 +337,7 @@ func getUpgrades():
 	var totalSlaves:int = getFlag("SlaveAuctionModule.totalSlavesSold", 0)
 	return {
 		"upgradeStartingBid": {
-			name = "Starting bid",
+			name = "Начальная ставка",
 			desc = "Install better seats for bidders. Increases the starting bid.",
 			conds = [
 				"Sell 2 slaves total. Currently: "+str(totalSlaves),#1
@@ -367,7 +367,7 @@ func getUpgrades():
 			],
 		},
 		"upgradeBidIncrease": {
-			name = "Bid increase",
+			name = "Шаг ставки",
 			desc = "Make the stage prettier. Increases the bid increase.",
 			conds = [
 				"Sell a slave for at least 100 credits",#1
@@ -397,7 +397,7 @@ func getUpgrades():
 			],
 		},
 		"upgradeSeePrefs": {
-			name = "Reveal preferences",
+			name = "Раскрыть предпочтения",
 			desc = "Extra intel on the next bidders. Allows to see some preferences of the next bidders.",
 			conds = [
 				"Sell an inmate",#1
@@ -427,7 +427,7 @@ func getUpgrades():
 			],
 		},
 		"upgradeBetterHearing": {
-			name = "Better hearing",
+			name = "Улучшенный слух",
 			desc = "Install hidden microphones into bidders' seats. Increases the chances of relevant preferences being revealed.",
 			conds = [
 				"Sell a slave with slave level 5 or more",#1

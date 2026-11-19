@@ -16,1896 +16,1896 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="mirri"})
 		var mirriRank = getModule("SlaveAuctionModule").getRepLevel()
 		var canGoNextRank = getModule("SlaveAuctionModule").isReadyToAdvanceRepLevel()
-		saynn("You approach Mirri. The catgirl is eyeing you out.")
+		saynn("Вы подходите к Мирри. Кошкодевочка внимательно вас разглядывает.")
 
 		saynn("[say=mirri]"+str(getModule("SlaveAuctionModule").getMirriGreeting())+"[/say]")
 
 		saynn(""+str(getModule("SlaveAuctionModule").getRepInfoString())+"")
 
-		saynn("Affection towards you: "+str(Util.roundF(getModule("SlaveAuctionModule").getMirriAffection()*100.0, 1))+"%")
+		saynn("Привязанность к вам: "+str(Util.roundF(getModule("SlaveAuctionModule").getMirriAffection()*100.0, 1))+"%")
 
-		addButton("Sell Slave", "Sell one of your slaves on a slave auction", "sell_menu")
+		addButton("Продать рабыню", "Выставить одну из своих рабынь на аукцион", "sell_menu")
 		if (getFlag("SlaveAuctionModule.upgradeSeePrefs", 0) >= 1):
-			addButton("Bidders info", "Check the preferences of the next bidders", "bidders_info")
-		addButton("Talk", "Ask her a few things", "chat_menu")
-		addButton("Sex", "See if you can get a little kinky with her", "sex_menu_check")
+			addButton("Инфо о ставках", "Проверить предпочтения следующих покупателей", "bidders_info")
+		addButton("Поговорить", "Спросить её о кое-чем", "chat_menu")
+		addButton("Секс", "Попробовать немного раззадорить её (с перчинкой)", "sex_menu_check")
 		if (mirriRank >= 1):
-			addButton("Upgrades", "Upgrade the Blacktail Market", "open_upgrades_menu")
+			addButton("Улучшения", "Улучшить рынок Блэктейл", "open_upgrades_menu")
 		else:
-			addDisabledButton("Upgrades", "You don't access to this yet")
+			addDisabledButton("Улучшения", "У вас пока нет доступа к этому")
 		if (GlobalRegistry.getItemIDsByTagSlow(ItemTag.SoldByMirri).size() > 0):
-			addButton("Buy", "See what you can buy from Mirri", "buyscene")
+			addButton("Купить", "Посмотреть, что можно купить у Мирри", "buyscene")
 		if (canGoNextRank):
 			if (mirriRank == 5):
-				saynn("[b]Next rank will be the last. Make sure you are ready as you won't be able to go back.[/b]")
+				saynn("[b]Следующий ранг будет последним. Убедитесь, что вы готовы, ведь вернуться назад не получится.[/b]")
 
-			addButton("Next rank!", "Progress the story further", "do_next_rank")
+			addButton("Следующий ранг!", "Продвинуться по сюжету", "do_next_rank")
 		if(mirriRank >= 6):
-			addButton("Feed something", "Feed something to Mirri", "feedmenu")
-		addButton("Leave", "Enough talking", "endthescene")
+			addButton("Покормить", "Покормить Мирри", "feedmenu")
+		addButton("Уйти", "Хватит болтать", "endthescene")
 		GM.ES.triggerRun(Trigger.TalkingToNPC, ["mirri"])
 	if(state == "bidders_info"):
-		saynn("Next bidders will have these preferences:")
+		saynn("У следующих участников аукциона будут такие предпочтения:")
 
 		saynn(""+str(getModule("SlaveAuctionModule").getBidderInfo())+"")
 
-		addButton("Back", "Enough peeking", "")
+		addButton("Назад", "Достаточно подглядывать", "")
 	if(state == "kinky_times_intro"):
-		saynn("Feeling horny, you close the distance with Mirri, your stare checking her girly curves.. that she decided to put out on display. Her striped panties are sitting a little tight, the cloth outlining her kitty, highlighting the thin slit.")
+		saynn("Почувствовав возбуждение, ты сокращаешь дистанцию с Мирри, жадно разглядывая её девичьи изгибы... которые она решила выставить напоказ. Её полосатые трусики сидят довольно плотно, ткань обтягивает её киску, подчеркивая узкую щелочку.")
 
-		saynn("[say=pc]Why don't we put our side deals away for a second.. and get down to real business.[/say]")
+		saynn("[say=pc]Почему бы нам не отложить наши сторонние сделки на секунду... и не перейдем к настоящему делу?[/say]")
 
-		saynn("Mirri eyes you out.")
+		saynn("Мирри оценивающе смотрит на тебя.")
 
-		saynn("[say=mirri]Huh. I don't think you can handle a Syndicate Agent, softie. I'm a little.. out of your league.. by a few lightyears at least~.[/say]")
+		saynn("[say=mirri]Хм. Не думаю, что ты справишься с агентом Синдиката, сладенький. Я для тебя... слишком высокого полета... по крайней мере, на несколько световых лет~.[/say]")
 
-		saynn("[say=pc]Oh yeah?[/say]")
+		saynn("[say=pc]Да неужели?[/say]")
 
-		saynn("The catgirl sways her hips in a hypnotic way while circling you.")
+		saynn("Кошкодевочка гипнотически покачивает бедрами, обходя тебя кругом.")
 
-		saynn("[say=mirri]You're welcome to be my obedient sextoy, though~. It gets very lonely on this.. here.[/say]")
+		saynn("[say=mirri]Хотя ты вполне можешь стать моей послушной секс-игрушкой~. Здесь... бывает очень одиноко.[/say]")
 
-		saynn("[say=pc]I guess real sex toys aren't satisfying you anymore.[/say]")
+		saynn("[say=pc]Похоже, настоящие секс-игрушки тебя больше не удовлетворяют.[/say]")
 
-		saynn("Mirri puts on her mean eyes, her claws are out and ready to scratch..")
+		saynn("Мирри делает суровый взгляд, её когти выпущены и готовы к атаке...")
 
-		addButton("Continue", "See what happens next", "sex_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sex_menu")
 	if(state == "sex_menu"):
-		saynn("How do you want to have fun with Mirri?")
+		saynn("Как именно ты хочешь развлечься с Мирри?")
 
-		addButton("Dominate", "Try to overpower Mirri.. Might include a high amount of scratching and biting", "try_dominate")
+		addButton("Доминировать", "Попытаться одолеть Мирри силой... Возможно, дело дойдет до жестких расчесов и укусов", "try_dominate")
 		if (getFlag("SlaveAuctionModule.sexSubbedToMirri")):
-			addButton("Be her toy", "Agree to let Mirri have it her way with you", "sub_menu")
+			addButton("Стать её игрушкой", "Согласиться на то, чтобы Мирри вертела тобой как хотела", "sub_menu")
 		else:
-			addButton("Be her toy", "Agree to let Mirri have it her way with you. Will unlock submissive sex options", "agree_be_toy")
-		addButton("Back", "Back to the previous menu", "")
+			addButton("Стать её игрушкой", "Согласиться на то, чтобы Мирри вертела тобой как хотела. Откроет варианты подчиняющегося секса", "agree_be_toy")
+		addButton("Назад", "Назад в предыдущее меню", "")
 	if(state == "sub_menu"):
-		saynn("How do you wanna sub to Mirri?")
+		saynn("Как именно ты хочешь подчиняться Мирри?")
 
-		addButton("Painplay", "See what that crazy bitch can do to your body..", "sub_painplay")
+		addButton("Плей с болью", "Посмотреть, что эта сумасшедшая сучка сделает с твоим телом...", "sub_painplay")
 		if (true):
-			addButton("Pussy worship", "See what that crazy bitch will do to you with her pussy..", "sub_pussy")
+			addButton("Поклонение киске", "Посмотреть, что эта сумасшедшая сучка сделает с тобой своей киской...", "sub_pussy")
 		if (true):
-			addButton("Puppy walkies", "See yourself become the bitch..", "sub_walkies")
-		addButton("Back", "Back to the previous menu", "sex_menu")
+			addButton("Погулять, как щеночек", "Посмотри, как ты превращаешься в сучку...", "sub_walkies")
+		addButton("Назад", "Назад в предыдущее меню", "sex_menu")
 	if(state == "chat_menu"):
-		saynn("What do you wanna ask Mirri?")
+		saynn("О чем хочешь спросить Мирри?")
 
-		addButton("Wolf", "Who is that wolf with glowing black and gold fur", "ask_luxe")
-		addButton("BDCC", "Ask her about how she stumbled upon the AlphaCorp prison", "ask_bdcc")
-		addButton("Blacktail", "Ask her about her family", "ask_blacktail")
-		addButton("Slaves", "Ask her about why she enslaves people", "ask_slaves")
-		addButton("Collar", "Ask if it's possible for them to remove your collar", "ask_collar")
-		addButton("Catgirl", "Ask her about her species", "ask_catgirl")
-		addButton("Back", "Enough questions..", "")
+		addButton("Волчица", "Что это за волчица с сияющей черно-золотой шерстью?", "ask_luxe")
+		addButton("BDCC", "Спросить, как она наткнулась на тюрьму AlphaCorp", "ask_bdcc")
+		addButton("Блэктейл", "Спросить о её семье", "ask_blacktail")
+		addButton("Рабыни", "Спросить, почему она порабощает людей", "ask_slaves")
+		addButton("Ошейник", "Спросить, можно ли снять ошейник", "ask_collar")
+		addButton("Кошкодевочка", "Спросить о её виде", "ask_catgirl")
+		addButton("Назад", "Хватит вопросов...", "")
 	if(state == "ask_luxe"):
-		saynn("[say=pc]That wolf.. with the black and gold fur. Who is he?[/say]")
+		saynn("[say=pc]Тот волк... с черно-золотой шерстью. Кто он?[/say]")
 
-		saynn("Mirri rolls her eyes.")
+		saynn("Мирри закатывает глаза.")
 
-		saynn("[say=mirri]That's my dad.[/say]")
+		saynn("[say=mirri]Это мой папа.[/say]")
 
-		saynn("That.. wasn't very obvious.. all things considered.")
+		saynn("Это... было не так уж и очевидно, учитывая обстоятельства.")
 
-		saynn("[say=pc]You don't seem particularly happy about that.[/say]")
+		saynn("[say=pc]Ты, кажется, не особо этому рада.[/say]")
 
-		saynn("[say=mirri]Uh huh. If he'd hear me tell you that I'd be dead already. Or worse.[/say]")
+		saynn("[say=mirri]Угу. Если бы он услышал, как я тебе это говорю, я бы уже была мертва. Или того хуже.[/say]")
 
-		saynn("That's one way to parent.")
+		saynn("Своеобразный метод воспитания.")
 
-		addButton("Continue", "See what happens next", "chat_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "chat_menu")
 	if(state == "ask_bdcc"):
-		saynn("[say=pc]How did you stumble upon BDCC?[/say]")
+		saynn("[say=pc]Как ты наткнулась на БДКЦ?[/say]")
 
-		saynn("[say=mirri]Is that what your stupid giant hamster cage called? Hah, didn't know.[/say]")
+		saynn("[say=mirri]Так вот как называется твоя дурацкая клетка для гигантских хомяков? Ха, не знала.[/say]")
 
-		saynn("She didn't even know the prison's name..")
+		saynn("Она даже не знала названия тюрьмы...")
 
-		saynn("[say=mirri]I just scanned the whole dimension.[/say]")
+		saynn("[say=mirri]Я только что просканировала всё измерение.[/say]")
 
-		saynn("[say=pc]That's.. how is that even possible?[/say]")
+		saynn("[say=pc]Это... как такое вообще возможно?[/say]")
 
-		saynn("[say=mirri]I guess I'm just that smart~.[/say]")
+		saynn("[say=mirri]Наверное, я просто чертовски умная~.[/say]")
 
-		saynn("[say=pc]You're not gonna tell me how?[/say]")
+		saynn("[say=pc]Ты не собираешься рассказать мне, как?[/say]")
 
-		saynn("She shakes her head.")
+		saynn("Она качает головой.")
 
-		addButton("Continue", "See what happens next", "chat_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "chat_menu")
 	if(state == "ask_blacktail"):
-		saynn("[say=pc]So you are.. Blacktail.[/say]")
+		saynn("[say=pc]Так ты и есть... Блэктайл.[/say]")
 
-		saynn("Mirri nods.")
+		saynn("Мирри кивает.")
 
-		saynn("[say=mirri]Yeah. One of the Syndicate families. One of the most important ones.[/say]")
+		saynn("[say=mirri]Ага. Одна из семей Синдиката. Одна из самых влиятельных.[/say]")
 
-		saynn("[say=pc]Syndicate families?[/say]")
+		saynn("[say=pc]Семей Синдиката?[/say]")
 
-		saynn("She tilts her head, annoyed tones hiding in her voice.")
+		saynn("Она наклоняет голову, в её голосе проскальзывают раздраженные нотки.")
 
-		saynn("[say=mirri]Yeah? You've been living under a rock or something?[/say]")
+		saynn("[say=mirri]Ну да? Ты что, под камнем всю жизнь прожила?[/say]")
 
-		saynn("[say=pc]More like, attached to a rock.[/say]")
+		saynn("[say=pc]Скорее, привязана к скале.[/say]")
 
-		saynn("Mirri giggles softly.")
+		saynn("Мирри тихонько хихикает.")
 
-		saynn("[say=mirri]Oh, right, AlphaCorp thinks asteroid belts can protect their stupid silly space stations. Their brains are so one-dimensional.[/say]")
+		saynn("[say=mirri]А, точно, АльфаКорп считает, что пояса астероидов могут защитить их тупые дурацкие космические станции. У них мозги совершенно одномерные.[/say]")
 
-		saynn("[say=pc]Seems to work for them for now.[/say]")
+		saynn("[say=pc]Пока что это работает.[/say]")
 
-		saynn("She shrugs.")
+		saynn("Она пожимает плечами.")
 
-		saynn("[say=mirri]Syndicate is not a single entity. Syndicate is just many families under the same goal. Having many heads is better than one silly dictator. Brains over brute force, that was always our way.[/say]")
+		saynn("[say=mirri]Синдикат — это не единая организация. Синдикат — это просто множество семей, объединенных общей целью. Множество голов лучше, чем один глупый диктатор. Интеллект важнее грубой силы, в этом всегда заключался наш путь.[/say]")
 
-		saynn("[say=pc]And why is Blacktail one of the most important Syndicate families?[/say]")
+		saynn("[say=pc]И почему Блэктейл — одна из самых важных семей Синдиката?[/say]")
 
-		saynn("[say=mirri]Cause we enslave people, duh.[/say]")
+		saynn("[say=mirri]Потому что мы порабощаем людей, тупица.[/say]")
 
-		saynn("She has a point. But you're not sure if you see it.")
+		saynn("В этом есть смысл. Но ты не уверен, понимаешь ли ты это до конца.")
 
-		saynn("[say=mirri]It's fun. And it pays well.[/say]")
+		saynn("[say=mirri]Это весело. И хорошо оплачивается.[/say]")
 
-		saynn("Interesting.")
+		saynn("Интересно.")
 
-		addButton("Continue", "See what happens next", "chat_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "chat_menu")
 	if(state == "ask_slaves"):
-		saynn("[say=pc]Why are you.. selling slaves?[/say]")
+		saynn("[say=pc]Почему ты... продаешь рабов?[/say]")
 
-		saynn("Mirri blinks, genuinely confused at your question.")
+		saynn("Мирри моргает, искренне сбитая с толку твоим вопросом.")
 
-		saynn("[say=mirri]Are you dumb or something? I'm Blacktail.[/say]")
+		saynn("[say=mirri]Ты что, тупой? Я — Блэктайл.[/say]")
 
-		saynn("[say=pc]So?[/say]")
+		saynn("[say=pc]Ну?[/say]")
 
-		saynn("[say=mirri]SO? Yeah, I was right. You are just very-very..[/say]")
+		saynn("[say=mirri]И ЧТО? Ну вот, я так и знала. Ты просто очень-очень..[/say]")
 
-		saynn("You decide to cut her off before she insults you even more.")
+		saynn("Ты решаешь перебить её, пока она не успела оскорбить тебя ещё сильнее.")
 
-		saynn("[say=pc]Listen. I know who you are. I know what your family does. I don't care that Blacktail is known for trading slaves. Why are YOU doing this?[/say]")
+		saynn("[say=pc]Слушай. Я знаю, кто ты. Знаю, чем занимается твоя семейка. Мне плевать, что Блэктайл известны торговлей рабами. Почему ЭТО делаешь ТЫ?[/say]")
 
-		saynn("Mirri shuts up and frowns at you, her claws are visible out.")
+		saynn("Мирри замолкает и хмурится, из её пальцев непроизвольно выпускаются когти.")
 
-		saynn("[say=mirri]Fuck you. I do this for the credits and pleasure. Happy now, fucker?[/say]")
+		saynn("[say=mirri]Да пошёл ты. Я делаю это ради кредитов и удовольствия. Доволен теперь, ублюдок?[/say]")
 
-		saynn("[say=pc]Why not do something else?[/say]")
+		saynn("[say=pc]Почему бы не заняться чем-нибудь другим?[/say]")
 
-		saynn("Suddenly, she pulls her gun out and presses it against your skull. Ohh, the cat got very angry. An audible click makes your blood freeze.")
+		saynn("Внезапно она выхватывает пушку и прижимает её к твоему черепу. Ох, кошечка не на шутку разозлилась. От отчетливого щелчка затвора у тебя внутри всё леденеет.")
 
-		saynn("[say=mirri]You're saying that I suck at this? That I should just give up? Yeah, fucker?[/say]")
+		saynn("[say=mirri]То есть ты хочешь сказать, что у меня это плохо получается? Что мне пора завязывать? Ну да, ублюдок, так?[/say]")
 
-		saynn("[say=pc]No, I don't.[/say]")
+		saynn("[say=pc]Нет, не считаю.[/say]")
 
-		saynn("Her mean eyes have that predator glow in them, her tail wagging aggressively.")
+		saynn("В её злобных глазах горит хищный блеск, а хвост агрессивно виляет.")
 
-		saynn("[say=mirri]But you're implying that.[/say]")
+		saynn("[say=mirri]Но ты на это намекаешь.[/say]")
 
-		saynn("She pushes the gun more into your head, the barrel leaving a little circular imprint on above your brow already. Better not to push her further now..")
+		saynn("Она сильнее прижимает пистолет к твоей голове; ствол уже оставляет небольшой круглый след над бровью. Пожалуй, сейчас лучше её не злить...")
 
-		saynn("[say=pc]Relax, Mirri, please. You're a good slaver, the best one that I know.[/say]")
+		saynn("[say=pc]Расслабься, Мирри, прошу тебя. Ты отличный работорговец, лучший из всех, кого я знаю.[/say]")
 
-		saynn("Mirri smiles, her cheeks receive a faint red glow.")
+		saynn("Мирри улыбается, и её щеки заливает легкий румянец.")
 
-		saynn("[say=mirri]Well thank you, you're such a nice {pc.boy}.[/say]")
+		saynn("[say=mirri]Ну, спасибо, ты такой милый {pc.boy}.[/say]")
 
-		saynn("She decides to put her gun away.")
+		saynn("Она решает убрать пистолет.")
 
-		saynn("[say=pc]..you're welcome..[/say]")
+		saynn("[say=pc]..не за что..[/say]")
 
-		addButton("Continue", "See what happens next", "chat_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "chat_menu")
 	if(state == "ask_collar"):
-		saynn("[say=pc]I have this collar on my neck.[/say]")
+		saynn("[say=pc]На моей шее этот ошейник.[/say]")
 
-		saynn("[say=mirri]I've noticed, I like it a lot.[/say]")
+		saynn("[say=mirri]Я заметила... мне это чертовски нравится.[/say]")
 
-		saynn("[say=pc]Yeah, sure. Can you or someone else.. help me remove it?[/say]")
+		saynn("[say=pc]Ага, ну да. Ты можешь... или кто-нибудь другой... помочь мне его снять?[/say]")
 
-		saynn("Mirri takes a closer look.")
+		saynn("Мирри присматривается внимательнее.")
 
-		saynn("[say=mirri]Huh.[/say]")
+		saynn("[say=mirri]Хм.[/say]")
 
-		saynn("She grabs you by the collar and pulls closer. You can feel her warm breath on your chest as she closely inspects the device.")
+		saynn("Она хватает тебя за воротник и притягивает ближе. Ты чувствуешь её теплое дыхание на своей груди, пока она пристально изучает устройство.")
 
-		saynn("[say=mirri]Nope. It would be easier to cut your head off. Should I?[/say]")
+		saynn("[say=mirri]Не-а. Проще тебе голову отрубить. Может, стоит?[/say]")
 
-		saynn("[say=pc]I'm good.[/say]")
+		saynn("[say=pc]Я в норме.[/say]")
 
-		saynn("[say=mirri]It's a different design, I have no idea how to break this one. Looks like your shithole is really worried about the security of its fucktoys. Wrong priorities if you'd ask me.[/say]")
+		saynn("[say=mirri]Конструкция другая, понятия не имею, как взломать именно эту хреновину. Похоже, твоему дырявому заднице не на жизнь, а на смерть важна безопасность своих секс-игрушек. Как по мне, так приоритеты расставлены хреново.[/say]")
 
-		saynn("[say=pc]I guess.[/say]")
+		saynn("[say=pc]Пожалуй.[/say]")
 
-		saynn("[say=mirri]I can see the bluespace transmitter. The thing is relaying its position constantly.[/say]")
+		saynn("[say=mirri]Я вижу передатчик блюспейса. Эта штука постоянно транслирует твои координаты.[/say]")
 
-		saynn("Does that mean what you think it means?")
+		saynn("Значит ли это то, о чем ты подумала?")
 
-		saynn("[say=mirri]You're lucky we have a jammer installed. Otherwise you'd be dead already.[/say]")
+		saynn("[say=mirri]Тебе повезло, что у нас установлен глушитель. Иначе ты бы уже был трупом.[/say]")
 
-		saynn("[say=pc]Wait. But the jammer only covers this..[/say]")
+		saynn("[say=pc]Погоди. Но глушилка покрывает только это..[/say]")
 
-		saynn("You realize that you have no idea if you're on a space station.. or on a planet.. you could be anywhere..")
+		saynn("Ты ведь понимаешь, что понятия не имеешь, находишься ты на космической станции.. или на планете.. ты можешь быть где угодно..")
 
-		saynn("[say=pc]This.. place?[/say]")
+		saynn("[say=pc]Это.. место?[/say]")
 
-		saynn("[say=mirri]Mhm.[/say]")
+		saynn("[say=mirri]Угу.[/say]")
 
-		saynn("[say=pc]So.. the slaves that you sell..[/say]")
+		saynn("[say=pc]Значит.. рабов, которых ты продаешь..[/say]")
 
-		saynn("[say=mirri]Syndicate isn't stupid. Bluespace might be novel to you but it's a commodity here. Everyone has jammers.[/say]")
+		saynn("[say=mirri]Синдикат не тупой. Синее пространство может быть для тебя новинкой, но здесь это товар. У каждого есть глушилки.[/say]")
 
-		saynn("Necessity pushes the progress forward..")
+		saynn("Необходимость толкает прогресс вперед..")
 
-		saynn("[say=mirri]And if someone doesn't and AlphaCorp frees them.. that's their problem. I'm totally okay with enslaving and selling someone for the second time~.[/say]")
+		saynn("[say=mirri]И если кто-то не успеет, и АльфаКорп их освободит.. это их проблемы. Меня вполне устраивает возможность поработить и продать кого-то во второй раз~.[/say]")
 
-		addButton("Continue", "See what happens next", "chat_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "chat_menu")
 	if(state == "ask_catgirl"):
-		saynn("You focus your curious eyes on her black fur..")
+		saynn("Ты устремляешь любопытный взгляд на её чёрный мех..")
 
-		saynn("[say=pc]Interesting.. pattern.. for a human.[/say]")
+		saynn("[say=pc]Интересный.. узор.. для человека.[/say]")
 
-		saynn("Mirri shrugs, her tail wagging a bit.")
+		saynn("Мирри пожимает плечами, слегка виляя хвостом.")
 
-		saynn("[say=mirri]Yes, I know, I know, I'm a hybrid and everything.[/say]")
+		saynn("[say=mirri]Да, знаю, знаю, я гибрид и всё такое.[/say]")
 
-		saynn("Her feline ears flick. Huh. That ponytail that she has is hiding something interesting.")
+		saynn("Её кошачьи ушки дёрнулись. Хм. Кажется, этот её хвост скрывает что-то интересное.")
 
-		saynn("[say=mirri]Just call me what I am. A catgirl.[/say]")
+		saynn("[say=mirri]Просто называй меня как есть. Кошкодевочкой.[/say]")
 
-		saynn("A question lingers in your mind..")
+		saynn("В вашей голове затаился вопрос...")
 
-		saynn("[say=pc]I'm curious.. Do you..[/say]")
+		saynn("[say=pc]Мне вот любопытно... Ты...[/say]")
 
-		saynn("[say=mirri]..purr during sex? Only one way to find out~.[/say]")
+		saynn("[say=mirri]..мурчишь во время секса? Есть только один способ это выяснить~.[/say]")
 
-		saynn("[say=pc]That's.. alright. but I had a different question.[/say]")
+		saynn("[say=pc]Это... сойдёт. Но у меня был другой вопрос.[/say]")
 
-		saynn("Mirri giggles.")
+		saynn("Мирри хихикает.")
 
-		saynn("[say=pc]Do you have two pairs of ears?[/say]")
+		saynn("[say=pc]У тебя что, две пары ушей?[/say]")
 
-		saynn("She stops giggling and starts coughing instead.")
+		saynn("Она перестает хихикать и вместо этого начинает кашлять.")
 
-		saynn("[say=mirri]..really? That's what you're curious about?[/say]")
+		saynn("[say=mirri]..серьезно? Вот что тебя так любопытствует?[/say]")
 
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
-		saynn("[say=mirri]Curiosity.. murdered the cat.[/say]")
+		saynn("[say=mirri]Любопытство.. сгубило кошку.[/say]")
 
-		saynn("Looks like you're not gonna get the answer for that question..")
+		saynn("Похоже, на этот вопрос ответа ты не получишь..")
 
-		addButton("Continue", "See what happens next", "chat_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "chat_menu")
 	if(state == "agree_be_toy"):
 		playAnimation(StageScene.Duo, "stand", {npc="mirri"})
-		saynn("You glance at Mirri, standing in front of you, with that predatory smile of hers.")
+		saynn("Ты бросаешь взгляд на Мирри: она стоит перед тобой с этой своей хищной ухмылкой.")
 
-		saynn("Normally, you're the one in control. You dominate and enslave.. but today.. something about the way her blue feline eyes lock onto yours.. makes you hesitate. Maybe a Syndicate agent is indeed a little out of your league..")
+		saynn("Обычно всё под контролем у тебя. Ты доминируешь и порабощаешь.. но сегодня.. то, как её голубые кошачьи глаза впиваются в твои.. заставляет тебя колебаться. Возможно, агент Синдиката — это и впрямь не твой уровень..")
 
-		saynn("[say=pc]Mirri..[/say]")
+		saynn("[say=pc]Мирри...[/say]")
 
-		saynn("Your voice shows those little notes of uncertainty.. Mirri tilts her head slightly, a dangerous glint in her eyes. But then she realizes..")
+		saynn("В твоем голосе проскальзывают нотки неуверенности.. Мирри слегка наклоняет голову, в её глазах вспыхивает опасный блеск. Но затем она понимает..")
 
-		saynn("[say=mirri]Oh. Well, well, well..[/say]")
+		saynn("[say=mirri]Оу. Ну надо же..[/say]")
 
-		saynn("She purrs while stepping closer and around you, her armored boots making a powerful cling each time. Her sheer confidence makes you subtly lower your head.")
+		saynn("Она мурлычет, подходя ближе и обходя тебя со всех сторон; её бронированные сапоги при каждом шаге издают властный лязг. От её непоколебимой уверенности ты невольно склоняешь голову.")
 
-		saynn("[say=mirri]Someone is acting.. like a subby bitch.[/say]")
+		saynn("[say=mirri]Кто-то ведет себя.. как покорная сучка.[/say]")
 
-		saynn("You showed a little weakness.. but you're not a bitch.. for sure..")
+		saynn("Ты проявила небольшую слабость... но ты точно не сучка... точно не сучка...")
 
-		saynn("[say=pc]I'm not..[/say]")
+		saynn("[say=pc]Вовсе нет..[/say]")
 
-		saynn("You feel the sting of her claws as she digs them into your cheek, her padded palm covering your lips.")
+		saynn("Ты чувствуешь жжение от её когтей, когда она впивается ими в твою щеку, а её мягкая ладонь плотно прижимается к твоим губам.")
 
-		saynn("[say=mirri]Shh.. shut your mouth.. Toys don't talk.[/say]")
+		saynn("[say=mirri]Тсс.. закрой рот.. Игрушки не разговаривают.[/say]")
 
-		saynn("Something is making you stay quiet after she pulls her hand away from your face. Mirri sees that and chuckles.")
+		saynn("Что-то заставляет тебя молчать после того, как она убирает руку от твоего лица. Мирри замечает это и посмеивается.")
 
-		saynn("[say=mirri]You enslave people.. and yet.. inside.. you're the most subby thing that I know. That is so funny.[/say]")
+		saynn("[say=mirri]Ты порабощаешь людей... и всё же... внутри ты самая сабмиссивная штучка из всех, что я знаю. Это так смешно.[/say]")
 
-		saynn("You open your mouth and try to say something.. but seeing Mirri frown makes you seize up, her claws are already following the lines of your throat, threatening..")
+		saynn("Ты открываешь рот, пытаясь что-то сказать... но, видя, как Мирри хмурится, ты замираешь; её когти уже ведут линию вдоль твоего горла, угрожающе...")
 
-		saynn("[say=mirri]On your fucking knees, bi-i-itch.[/say]")
+		saynn("[say=mirri]На грёбаные колени, су-у-учка.[/say]")
 
-		saynn("She is savoring that last word for a long time.")
+		saynn("Она долго смакует это последнее слово.")
 
-		addButton("Kneel?", "Do as she says maybe", "subintro_kneel")
+		addButton("Встать на колени?", "Может, стоит сделать, как она говорит?", "subintro_kneel")
 	if(state == "subintro_kneel"):
 		playAnimation(StageScene.Duo, "kneel", {npc="mirri", bodyState={leashedBy="mirri"}})
-		saynn("You silently look at the dark wood under your feet.. while a storm of thoughts, kinky and not, is brewing in your head..")
+		saynn("Ты молча смотришь на темное дерево под ногами... пока в твоей голове бушует шторм мыслей — как извращенных, так и вполне обычных...")
 
-		saynn("Mirri stares at your face, getting more and more annoyed by the second, her tail swiping the floor.")
+		saynn("Мирри пристально смотрит тебе в лицо, с каждой секундой раздражаясь всё сильнее; её хвост нервно хлещет по полу.")
 
-		saynn("[say=mirri]Fine, I will make it easy.[/say]")
+		saynn("[say=mirri]Ладно, так и быть, я упрощу задачу.[/say]")
 
-		saynn("A leash gets clipped to your collar by Mirri. She steps on the hanging bit with her boot and pins it to the floor, making you jerk your head down, your body bending forward.. but you're still standing, putting strain on that leash.")
+		saynn("Мирри пристегивает поводок к твоему ошейнику. Она наступает сапогом на свисающий конец и прижимает его к полу, заставляя тебя резко дернуть головой вниз, а тело — наклониться вперед... но ты всё еще стоишь, натягивая поводок.")
 
-		saynn("[say=pc]Kh..[/say]")
+		saynn("[say=pc]Кх...[/say]")
 
-		saynn("[say=mirri]Lower, whore, lower. Kiss the fucking floor already.[/say]")
+		saynn("[say=mirri]Ниже, шлюха, ниже. Да поцелуй ты уже этот гребаный пол![/say]")
 
-		saynn("Mirri pulls on the leash.. pretty much forcing you to bend lower and lower.. until you have to get on your knees before her. But she doesn't stop there..")
+		saynn("Мирри тянет за поводок... практически заставляя тебя наклоняться всё ниже и ниже... пока тебе не приходится упасть перед ней на колени. Но на этом она не останавливается...")
 
-		saynn("[say=mirri]Say hi to my boot.[/say]")
+		saynn("[say=mirri]Поздоровайся с моим сапогом.[/say]")
 
-		saynn("You resist.. but you also don't, your hands just resting on your knees while Mirri keeps making you kneel lower and lower.. until that boot is all that you can see.")
+		saynn("Ты сопротивляешься... но в то же время и нет; твои руки просто лежат на коленях, пока Мирри заставляет тебя опускаться всё ниже и ниже... пока перед глазами не остается ничего, кроме этого сапога.")
 
-		saynn("[say=mirri]I'm waiting. Say hi, bitch.[/say]")
+		saynn("[say=mirri]Я жду. Поздоровайся, сучка.[/say]")
 
-		saynn("She can not be serious.. That's humiliating, even for you.. Her boot is shifting a bit, rubbing that leash into the floor.")
+		saynn("Она не может говорить серьезно... Это унизительно даже для тебя... Её сапог слегка сдвигается, втирая поводок в пол.")
 
-		saynn("[say=mirri]Say hi or I will make you kiss it. Try me, subby bitch, see what happens.[/say]")
+		saynn("[say=mirri]Поздоровайся, или заставлю тебя его целовать. Попробуй меня, сучка-сабмиссив, и посмотри, что будет.[/say]")
 
-		saynn("[say=pc]H.. h-hi..[/say]")
+		saynn("[say=pc]П... п-привет...[/say]")
 
-		saynn("Mirri hears that and giggles, her boot instantly letting go of the leash, letting you sit up.")
+		saynn("Мирри слышит это и хихикает, мгновенно отпуская поводок, позволяя тебе выпрямиться.")
 
-		saynn("[say=mirri]Good {pc.boy}.. such a good little subby {pc.boy}.. I love you, you know?[/say]")
+		saynn("[say=mirri]Умница {pc.boy}.. такая хорошая маленькая {pc.boy}.. Ты же знаешь, что я тебя люблю?[/say]")
 
-		saynn("Huh? You raise your stare and see her face.. still as mean as before.. while yours is blushing in deep red tones.")
+		saynn("А? Ты поднимаешь взгляд и видишь её лицо... всё такое же злое, как и прежде... в то время как твоё пылает густым румянцем.")
 
-		saynn("[say=mirri]What? I love me a little subby bitch~. You are a subby bitch, right?[/say]")
+		saynn("[say=mirri]Что? Обожаю маленьких сучек-сабмиссивов~. Ты ведь сучка-сабмиссив, верно?[/say]")
 
-		saynn("The leash is still in her hand.. and you are still sitting on your knees before her.. obeying her orders.. There is only one correct answer.")
+		saynn("Поводок всё ещё в её руке... а ты всё ещё стоишь перед ней на коленях... повинуясь её приказам... Есть только один правильный ответ.")
 
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
-		saynn("Mirri smiles, showing her sharp fangs to you. She leans closer to your ear, purring and whispering.")
+		saynn("Мирри улыбается, демонстрируя тебе свои острые клыки. Она наклоняется ближе к твоему уху, мурлыча и шепча.")
 
-		saynn("[say=mirri]I could bring you to that auction room at any point.. I could chain you to the ceiling.. and sell you off to the first bidders that I see..[/say]")
+		saynn("[say=mirri]Я могу привести тебя в тот аукционный зал в любой момент... Могу приковать тебя к потолку... и продать первым же покупателям, которых увижу...[/say]")
 
-		saynn("You swallow audibly. She is not wrong..")
+		saynn("Ты издаешь отчетливый глоток. Она не ошибается...")
 
-		saynn("[say=mirri]If you didn't notice yet.. I fucking hate AlphaCorp slaves..[/say]")
+		saynn("[say=mirri]Если ты еще не заметил... я, блядь, ненавижу рабов АльфаКорпа...[/say]")
 
-		saynn("After saying that with such a mean tone, she pulls away from your ear.. the tension in your body is making you squirm hard. You realize how one wrong move from you can basically kill you now..")
+		saynn("Сказав это таким злым тоном, она отстраняется от твоего уха... напряжение в твоем теле заставляет тебя извиваться. Ты понимаешь, что сейчас одно неверное движение может буквально стоить тебе жизни...")
 
-		saynn("Mirri's sly smile is making you melt.. you feel like you are ready to do anything.. She slides her paw into her striped panties and moans.")
+		saynn("Хитрая улыбка Мирри заставляет тебя таять... кажется, ты готов на всё... Она просовывает лапу в свои полосатые трусики и стонет.")
 
-		saynn("[say=mirri]I'm so fucking wet.[/say]")
+		saynn("[say=mirri]Я такая, блядь, мокрая.[/say]")
 
-		saynn("She looks at you, at the squirming mess beneath her feet.")
+		saynn("Она смотрит на тебя, на копошащуюся под её ногами кучу...")
 
-		saynn("[say=mirri]Arms behind your back.[/say]")
+		saynn("[say=mirri]Руки за спину.[/say]")
 
-		saynn("They snap there instantly, your obedient eyes meet hers and try to avoid them. She tugs on the leash to get your attention.")
+		saynn("Они мгновенно оказываются там; твои покорные глаза встречаются с её взглядом, но ты пытаешься их избежать. Она дергает за поводок, чтобы привлечь твоё внимание.")
 
-		saynn("[say=mirri]No, look at me. Look at Mirri, you AlphaCorp bitch.[/say]")
+		saynn("[say=mirri]Нет, смотри на меня. Смотри на Мирри, сучка из АльфаКорпа![/say]")
 
-		saynn("You obey.. but your gaze is shaky.. you can't find rest, constantly shifting your position a bit..")
+		saynn("Ты повинуешься... но взгляд твой дрожит... ты не можешь найти себе места, постоянно ерзая и меняя позу...")
 
-		saynn("[say=mirri]Pull my panties down.[/say]")
+		saynn("[say=mirri]Спусти мои трусики вниз.[/say]")
 
-		saynn("Instinctively, you reach your hands out.. but Mirri catches them and digs her claws in.")
+		saynn("Инстинктивно ты тянешь к ней руки... но Мирри перехватывает их и вонзает в твои ладони свои когти.")
 
-		saynn("[say=mirri]Wrong.[/say]")
+		saynn("[say=mirri]Неправильно.[/say]")
 
-		saynn("You bring your arms behind your back again..")
+		saynn("Ты снова заводишь руки за спину...")
 
-		saynn("Looks like you will have to do it some other way.")
+		saynn("Похоже, придется делать это как-то иначе.")
 
-		addButton("Teeth", "Pull them with your teeth", "subintro_teeth")
+		addButton("Зубы", "Тяни их зубами", "subintro_teeth")
 	if(state == "subintro_teeth"):
 		playAnimation(StageScene.Duo, "kneel", {npc="mirri", npcBodyState={exposedCrotch=true}, bodyState={leashedBy="mirri"}})
-		saynn("Having no access to your hands.. There is only one other way to do it. You squirm just thinking about it.. but Mirri is waiting, her impatient figure looming over you, boot tapping the wooden floor.")
+		saynn("Руки заблокированы... остается лишь один способ. От одной мысли об этом ты начинаешь извиваться... но Мирри ждет, ее нетерпеливая фигура нависает над тобой, а каблук ботинка выстукивает ритм по деревянному полу.")
 
-		saynn("You begin leaning forward.. but not fast enough for the catgirl. She runs the leash between her legs and pulls on it, yanking you forward, your face meeting her inner thigh. So warm..")
+		saynn("Ты начинаешь подаваться вперед... но недостаточно быстро для этой кошкодевки. Она пропускает поводок между ног и резко дергает за него, притягивая тебя к себе так, что твое лицо вжимается в ее внутреннюю сторону бедра. Так тепло...")
 
-		saynn("[say=mirri]So pathetic.[/say]")
+		saynn("[say=mirri]Какая жалкость.[/say]")
 
-		saynn("She uses her knee to push you back a little and guide you up to her panties. Lips parted, you catch the blue striped cloth between your teeth.. being careful to avoid biting anything sensitive.. and then begin tugging her panties down.")
+		saynn("Она слегка подталкивает тебя коленом, направляя к своим трусикам. Приоткрыв губы, ты зажимаешь между зубами синюю полосатую ткань, стараясь не прикусить ничего чувствительного... а затем начинаешь медленно стягивать их вниз.")
 
-		saynn("As you do it, the wetness clinging to her skin makes the fabric slightly damp in your mouth. The scent of her arousal fills your senses, you can't help but shudder as the material slides down further, finally revealing the drippy pink folds of her pussy in all its needy glory.")
+		saynn("Пока ты это делаешь, влага на её коже делает ткань слегка сырой во рту. Запах её возбуждения наполняет все твои чувства; ты невольно вздрагиваешь, когда материал сползает ниже, наконец обнажая сочные розовые складки её киски во всем их жадном великолепии.")
 
-		saynn("Mirri bites her lip, purring while looking down at you.")
+		saynn("Мирри прикусывает губу, довольно мурлыча и глядя на тебя сверху вниз.")
 
-		saynn("[say=mirri]See how wet I am? You did this, you know. Such a good {pc.boy}.[/say]")
+		saynn("[say=mirri]Видишь, какая я мокрая? Это ты виноват, знаешь ли. Такой хороший {pc.boy}.[/say]")
 
-		saynn("Your eyes betray you, you can't look away.. Her pussy is right in front of you now, inches from your lips, her juices dripping down onto the floor.. All you have to do is reach out.. touch.. taste.. bury yourself in that wet heat..")
+		saynn("Твой взгляд выдает тебя, ты не можешь отвести глаз... Её киска прямо перед тобой, в считанных дюймах от твоих губ, её соки капают на пол... Всё, что тебе нужно — это протянуть руку... коснуться... попробовать на вкус... зарыться в это влажное тепло...")
 
-		saynn("But as your breath hitches.. as you begin to reach.. Mirri's voice slices through the air, harsh and teasing.")
+		saynn("Но как только у тебя перехватывает дыхание... как только ты начинаешь тянуться к ней... голос Мирри прорезает воздух, резкий и дразнящий.")
 
-		saynn("[say=mirri]Don't even fucking think about it.[/say]")
+		saynn("[say=mirri]Даже не вздумай, блять.[/say]")
 
-		saynn("You stop.. the sight makes you desperate.. You almost let out a whine..")
+		saynn("Ты замираешь... от этого зрелища ты почти в отчаянии... Ты едва не издаешь жалобный скулеж...")
 
-		saynn("[say=mirri]You earned the right to look. But the rest you're yet to earn, little slave.[/say]")
+		saynn("[say=mirri]Право смотреть ты уже заслужил. Но остальное тебе еще только предстоит заработать, маленький раб.[/say]")
 
-		saynn("You look up at her.. awaiting your next order.")
+		saynn("Ты смотришь на неё снизу вверх... ожидая следующего приказа.")
 
-		saynn("[say=mirri]How? Simple. Through abuse..[/say]")
+		saynn("[say=mirri]Как? Всё просто. Через унижение..[/say]")
 
-		saynn("She digs her claws into your chin, sending agonizing sparks of discomfort throughout, drawing some blood even..")
+		saynn("Она вонзает когти тебе в подбородок, вызывая мучительные вспышки дискомфорта и даже заставляя выступить каплям крови...")
 
-		saynn("[say=mirri]..degradation..[/say]")
+		saynn("[say=mirri]..через деградацию..[/say]")
 
-		saynn("Her digits find your lips and force themselves in between, making you suck them while she tightens the leash with her other hand.. and begins to slide her pussy along it, each chain link running into her clit and rubbing it..")
+		saynn("Её пальцы находят твои губы и насильно проникают внутрь, заставляя тебя сосать их, пока другой рукой она натягивает поводок... и начинает скользить своей киской по нему, так что каждое звено цепи втирается в её клитор, лаская его...")
 
-		saynn("[say=mirri]..and complete submission. Ah..[/say]")
+		saynn("[say=mirri]..и полное подчинение. Ах..[/say]")
 
-		saynn("Mirri's body trembles, her pussy visibly pulsing in your view while her claws dig into your tongue.. ouch.. and yet, you don't bite, just tasting your blood while watching that beatiful pussy orgasm in front of you..")
+		saynn("Тело Мирри дрожит, её киска на твоих глазах заметно пульсирует, пока её когти впиваются в твой язык... ой... и всё же ты не кусаешься, лишь пробуешь на вкус свою кровь, наблюдая, как эта прекрасная киска кончает прямо перед тобой...")
 
-		saynn("[say=mirri]Such a good.. sextoy.. fuck yes-s-s..[/say]")
+		saynn("[say=mirri]Такая хорошая.. секс-игрушка.. черт возь, да-а-а..[/say]")
 
-		saynn("The view is great.. but the moment is over just as quick as it started.. Mirri pulls up her panties and takes a step back, her hand detaching the leash.")
+		saynn("Зрелище великолепное... но момент заканчивается так же быстро, как и начался... Мирри натягивает трусики и делает шаг назад, отстегивая поводок.")
 
-		saynn("[say=mirri]I loved it~. Get used to this, toy.[/say]")
+		saynn("[say=mirri]Мне понравилось~. Привыкай к этому, игрушка.[/say]")
 
 		setFlag("SlaveAuctionModule.customMirriGreeting", "Came back for more~? Such a good {pc.boy}.")
-		saynn("Just like that, she leaves you there, on your knees..")
+		saynn("Вот так просто она оставляет тебя там, на коленях...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "sub_painplay"):
 		playAnimation(StageScene.Duo, "stand", {npc="mirri", bodyState={leashedBy="mirri"}})
-		saynn("[say=pc]Hey, uh..[/say]")
+		saynn("[say=pc]Эй, слушай..[/say]")
 
-		saynn("Before you can finish your sentence, a leash gets clipped to your collar, Mirri's predator eyes flashing brightly.")
+		saynn("Прежде чем ты успеваешь закончить фразу, к твоему ошейнику пристегивают поводок, а в глазах Мирри вспыхивает хищный блеск.")
 
-		saynn("[say=mirri]You are SO coming with me.[/say]")
+		saynn("[say=mirri]Ты ТОЧНО идешь со мной.[/say]")
 
-		saynn("[say=pc]Hey, chill![/say]")
+		saynn("[say=pc]Эй, полегче![/say]")
 
-		saynn("Mirri rushes off somewhere, her paw yanking on the leash, forcing you to follow.")
+		saynn("Мирри куда-то срывается с места, дергая за поводок и заставляя тебя семенить следом.")
 
-		addButton("Continue", "See what happens next", "sub_painplay_chains")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sub_painplay_chains")
 	if(state == "sub_painplay_chains"):
 		playAnimation(StageScene.HangingDuo, "idle", {pc="pc", npc="mirri", bodyState={naked=true, hard=true}})
 		aimCameraAndSetLocName("market_market")
-		saynn("The next moments are a complete blur..")
+		saynn("Следующие мгновения сливаются в сплошное пятно...")
 
-		saynn("Only the cold metal rattle of chains makes you snap out of it. They pull your wrists high above your head. You realize that you're standing on the auction stage, completely naked and exposed.. while Mirri is circling you, eyeing out your {pc.masc} body from every angle..")
+		saynn("Лишь холодный металлический лязг цепей заставляет тебя очнуться. Твои запястья задирают высоко над головой. Ты понимаешь, что стоишь на аукционной сцене, совершенно голый и беззащитный... а Мирри кружит вокруг, разглядывая твое {pc.masc} тело со всех сторон..")
 
-		saynn("Each step she takes feels like a countdown, echoing out in your head.")
+		saynn("Каждый её шаг отдается в голове, словно обратный отсчет.")
 
-		saynn("[say=pc]Hey.. you're not planning to sell me, are you? Don't you fucking dare.[/say]")
+		saynn("[say=pc]Эй.. ты ведь не собираешься меня продать, а? Только попробуй, блядь![/say]")
 
-		saynn("She pauses her step and stays quiet, staring you down with a sadistic smirk. In her paw, she toys with a leather nine-tailed whip, letting the tails brush teasingly against her fingers.")
+		saynn("Она замирает и замолкает, сверля тебя садистской ухмылкой. В лапе она вертит кожаный девятихвостый кнут, позволяя хвостам дразняще скользить по пальцам.")
 
-		saynn("[say=mirri]I might. Scared, fucker~? You better be.[/say]")
+		saynn("[say=mirri]Может и так. Боишься, ублюдок~? И правильно делаешь.[/say]")
 
-		saynn("[say=pc]I'm not..[/say]")
+		saynn("[say=pc]Вовсе нет..[/say]")
 
-		saynn("Snap! The first crack of the whip cuts through the air, landing square on your back, forcing you to lose your train of thought.")
+		saynn("Хлыст! Первый резкий удар рассекает воздух и прилетает прямо тебе в спину, заставляя тебя окончательно сбиться с мысли.")
 
-		saynn("[say=pc]Argh..[/say]")
+		saynn("[say=pc]Ааагх...[/say]")
 
-		saynn("[say=mirri]Shut up, little AlphaCorp slave. Right now you're nothing but my toy to play with. Mine to mark..[/say]")
+		saynn("[say=mirri]Заткнись, мелкая рабыня АльфаКорп. Сейчас ты всего лишь моя игрушка. Моя собственность, которую я буду метить..[/say]")
 
-		saynn("The many whip tails strike your back again, leaving lots of little stinging lines all around. Your body jerks involuntarily..")
+		saynn("Множество хвостов кнута снова бьют по твоей спине, оставляя повсюду жгучие красные полосы. Твое тело невольно дергается..")
 
-		saynn("[say=mirri]Mine to hurt.[/say]")
+		saynn("[say=mirri]Моя, чтобы причинять боль.[/say]")
 
-		saynn("..but there is no time to process the pain before another leash follows, hitting your chest now"+str(" and making your {pc.breasts} jiggle.." if GM.pc.hasBigBreasts() else "")+".. and then another.. and another.. You cry out in shock, your body squirming and making the chains rattle, your {pc.feet} barely touching the ground.")
+		saynn("..но времени осознать боль не остается — следом летит поводок, на этот раз ударяя тебе в грудь,"+str(" and making your {pc.breasts} jiggle.." if GM.pc.hasBigBreasts() else "")+"..а затем еще один.. и еще.. Ты вскрикиваешь от шока, твое тело корчится, заставляя цепи греметь, а твои {pc.feet} едва касаются земли.")
 
-		saynn("[say=mirri]Mine to own.[/say]")
+		saynn("[say=mirri]Моя, чтобы владеть тобой.[/say]")
 
 		if (GM.pc.hasPenis()):
-			saynn("The last strike hits your {pc.thick} {pc.masc} thighs, forcing you to close your legs tightly. You feel the blood rushing down to your"+str(" locked" if GM.pc.isWearingChastityCage() else "")+" cock"+str(" and pussy slit" if GM.pc.hasVagina() else "")+"..")
+			saynn("Последний удар приходится по твоим {pc.thick} {pc.masc} бедрам, заставляя тебя плотно сжать ноги. Ты чувствуешь, как кровь приливает к твоим"+str(" locked" if GM.pc.isWearingChastityCage() else "")+" cock"+str(" and pussy slit" if GM.pc.hasVagina() else "")+"..")
 
 		elif (GM.pc.hasVagina()):
-			saynn("The last strike hits your {pc.thick} {pc.masc} thighs, forcing you to close your legs tightly. You feel the blood rushing down to your pussy slit..")
+			saynn("Последний удар приходится по твоим {pc.thick} {pc.masc} бёдрам, заставляя тебя плотно сжать ноги. Ты чувствуешь, как кровь приливает к твоей щелочке..")
 
 		else:
-			saynn("The last strike hits your {pc.thick} {pc.masc} thighs, forcing you to close your legs tightly. You feel the blood rushing down to your crotch..")
+			saynn("Последний удар приходится по твоим {pc.thick} {pc.masc} бёдрам, заставляя тебя плотно сжать ноги. Ты чувствуешь, как кровь приливает к твоей промежности..")
 
-		saynn("Mirri steps back and admires the many little marks that the whip has left.")
+		saynn("Мирри отступает на шаг, любуясь множеством мелких следов, оставленных кнутом.")
 
-		saynn("[say=mirri]Work of art..[/say]")
+		saynn("[say=mirri]Произведение искусства..[/say]")
 
-		saynn("[say=pc]Ghh.. Too bad the creator went crazy..[/say]")
+		saynn("[say=pc]Гхх.. Жаль, что создатель сошёл с ума..[/say]")
 
-		saynn("She giggles.")
+		saynn("Она хихикает.")
 
-		saynn("[say=mirri]Nah. Let me fix your sentence.[/say]")
+		saynn("[say=mirri]Не-а. Дай-ка я исправлю твое предложение.[/say]")
 
-		saynn("Oh no.. Mirri visibly extends her claws and puts her paw on your neck. Her touch is deceptively light at first.. she trails her claws down your skin, over your shoulders, across your chest, just enough to make your skin tingle..")
+		saynn("О нет.. Мирри заметно выпускает когти и кладет лапу тебе на шею. Поначалу её прикосновение обманчиво легко.. она ведет когтями по твоей коже, через плечи, по груди — ровно настолько, чтобы кожа затрепетала от предвкушения..")
 
-		saynn("You can feel her warm breath on your ear..")
+		saynn("Ты чувствуешь её теплое дыхание у своего уха..")
 
-		saynn("[say=mirri]Too bad the creator didn't finish it yet..[/say]")
+		saynn("[say=mirri]Жаль, что создатель еще не закончил..[/say]")
 
-		saynn("Without warning, her claws [color=red]DIG IN[/color] - leaving angry red lines along your back that are quick to begin bleeding. Shit, she isn't playing around.. You gasp, jerking in the chains.. but the metal holds you firmly in roughly one place.")
+		saynn("Без предупреждения её когти [color=red]ВРЕЗАЮТСЯ В КОЖУ[/color] — оставляя багровые полосы на твоей спине, которые тут же начинают кровоточить. Черт, она не шутит.. Ты ахаешь, дергаясь в цепях.. но металл крепко удерживает тебя на месте.")
 
-		saynn("[say=mirri]Crazy is such a subjective word..[/say]")
+		saynn("[say=mirri]«Безумие» — понятие слишком субъективное..[/say]")
 
-		saynn("She keeps tearing through your skin, leaving more and more shallow cuts with her claws.. each one adding to the pain..")
+		saynn("Она продолжает раздирать твою кожу, оставляя всё новые и новые неглубокие порезы своими когтями.. каждый из них лишь усиливает боль..")
 
-		saynn("[say=pc]Ghh.h.. fu-uck.. agh.. C-crazy f-fucking bitch..[/say]")
+		saynn("[say=pc]Гхх.. ах.. бля-а-адь.. агх.. Сумасшедшая ебаная сука..[/say]")
 
-		saynn("She just keeps going.. her half-feline body brushing against yours, sharing heat.")
+		saynn("Она не останавливается.. её полукошачье тело трется о твоё, делясь теплом.")
 
-		saynn("[say=mirri]To me you are the crazy one.. Thinking you can tame me.. The Legendary Syndicate Pussy Cat.[/say]")
+		saynn("[say=mirri]Как по мне, так это ты сумасшедший.. Раз думаешь, что сможешь приручить меня.. Легендарную Кошку Синдиката.[/say]")
 
-		saynn("Her claws, sharp and unforgiving, trace over the fresh whip marks, digging into your skin enough to make your head spin.")
+		saynn("Её когти, острые и беспощадные, проводят по свежим следам от плети, впиваясь в кожу так глубоко, что голова идет кругом.")
 
-		saynn("[say=mirri]And you seem to like it just as much as me.[/say]")
+		saynn("[say=mirri]И, кажется, тебе это нравится не меньше, чем мне.[/say]")
 
-		saynn("Her other hand is dragging the tips of the whip between your legs.. dangerously close to your most sensitive areas.."+str(" Your pussy dripping like it's a small fountain by now.." if GM.pc.hasReachableVagina() else "")+""+str(" Your cock hard as a rock, swaying from the constant squirming.." if GM.pc.hasReachablePenis() else "")+""+str(" Your caged up toy is leaking in its little prison.." if GM.pc.isWearingChastityCage() else "")+"")
+		saynn("Другой рукой она водит кончиками плети между твоих ног.. опасно близко к самым чувствительным местам.."+str(" Your pussy dripping like it's a small fountain by now.." if GM.pc.hasReachableVagina() else "")+""+str(" Your cock hard as a rock, swaying from the constant squirming.." if GM.pc.hasReachablePenis() else "")+""+str(" Your caged up toy is leaking in its little prison.." if GM.pc.isWearingChastityCage() else "")+"")
 
-		saynn("She forces eye contact with her claws and then grins.")
+		saynn("Она заставляет тебя встретиться с ней взглядом, вонзая когти, а затем скалится в ухмылке.")
 
-		saynn("[say=mirri]You're pathetic.. but it's adorable how much you try to hold on.. Too bad I'm going to break you anyway.[/say]")
+		saynn("[say=mirri]Ты жалок.. но то, как отчаянно ты пытаешься держаться, выглядит даже мило.. Жаль только, что я всё равно тебя сломаю.[/say]")
 
-		saynn("[say=pc]F-fuck you M-Mirri..[/say]")
+		saynn("[say=pc]Да пошла ты, М-Мирри...[/say]")
 
-		saynn("Hearing your words.. Mirri suddenly stops and puts the whip away for a second.")
+		saynn("Услышав твои слова... Мирри внезапно замирает и на секунду откладывает кнут в сторону.")
 
-		saynn("[say=pc]What are you..[/say]")
+		saynn("[say=pc]Что ты...[/say]")
 
-		addButton("Continue", "See what happens next", "sub_painplay_panties")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sub_painplay_panties")
 	if(state == "sub_painplay_panties"):
 		playAnimation(StageScene.HangingDuo, "idle", {pc="pc", npc="mirri", npcBodyState={exposedCrotch=true}, bodyState={naked=true, hard=true}})
-		saynn("She quickly pulls down her wet panties, exposing the moist pink folds to your eyes. The catgirl then takes her panties.. turns them into a ball of dripping cloth.. and forces it into your mouth.")
+		saynn("Она быстро стягивает свои мокрые трусики, подставляя твоим глазам влажные розовые складки. Затем кошкодевочка сминает трусики в ком из сочащейся ткани... и насильно запихивает их тебе в рот.")
 
-		saynn("[say=mirri]I told you to shut up, bitch.[/say]")
+		saynn("[say=mirri]Я же сказала тебе заткнуться, сучка![/say]")
 
-		saynn("Before you can even taste her juices, she suddenly sinks her fangs into your shoulder, biting down hard enough to draw a thin line of blood.. Her claws follow, raking across your back, leaving more stinging red marks everywhere.. So many that you arch your back and let out a muffled cry, the panties blocking your mouth..")
+		saynn("Прежде чем ты успеваешь почувствовать вкус её соков, она внезапно вонзает клыки тебе в плечо, кусая достаточно сильно, чтобы выступила тонкая струйка крови... Следом идут когти, полосуя твою спину и оставляя повсюду жгучие красные отметины... Их так много, что ты выгибаешься дугой и издаёшь приглушённый крик, пока трусики забивают тебе рот...")
 
-		saynn("[say=pc]Arghh-h..[/say]")
+		saynn("[say=pc]Аааагрхх!..[/say]")
 
-		saynn("Gasps keep escaping your lips as the pain overwhelms your senses.")
+		saynn("С твоих губ не перестают срываться судорожные вздохи, пока боль захлестывает твои чувства.")
 
-		saynn("Mirri purrs, hearing and feeling your pain. She licks the blood off from your shoulder and then licks her lips..")
+		saynn("Мирри мурлычет, слыша и чувствуя твою боль. Она слизывает кровь с твоего плеча, а затем облизывает свои губы...")
 
-		saynn("[say=mirri]Tasty. How can I sell such a tasty bitch?.. I have feelings for you, you know..[/say]")
+		saynn("[say=mirri]Вкусно. И как мне продать такую вкусную сучку?.. Знаешь, ты начинаешь мне нравиться...[/say]")
 
-		saynn("She stands in front of you, her hand gripping the whip again before raising it high. You feel like you know what is coming next.. but you can't stop yourself, the anticipation building in your bruised chest..")
+		saynn("Она стоит перед тобой, снова сжимая в руке кнут и высоко поднимая его над головой. Ты кожей чувствуешь, что будет дальше... но не можешь сдержаться, а предвкушение нарастает в твоей избитой груди...")
 
-		saynn("[say=mirri]Biggest one is.. love. I just love to hate you.[/say]")
+		saynn("[say=mirri]Самое главное... это любовь. Я просто обожаю тебя ненавидеть.[/say]")
 
-		saynn("She brings the whip down one final time, leather snapping against your most vulnerable spot..")
+		saynn("Она в последний раз опускает кнут, и кожа с резким щелчком хлещет по самому уязвимому твоему месту...")
 
 		if (GM.pc.hasPenis()):
-			saynn("The crack of the whip lands square on your dangling balls, sending a shockwave of pain through your entire body. Your knees buckle and give up, making you dangle off of the chains, your mind blanking as a sudden orgasm rips through you, your {pc.penis} pulsing and spilling {pc.cum} helplessly under her control.")
+			saynn("Удар кнута приходится точно по твоим болтающимся яйцам, посылая волну боли через всё тело. Колени подгибаются и предательски слабеют, заставляя тебя беспомощно повиснуть на цепях; разум мутится, когда внезапный оргазм прошибает тебя насквозь, а твой {pc.penis} пульсирует и беспомощно изливается {pc.cum} под её контролем.")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("The whip tails strike your pussy exactly, the sharp stings sending a jolt of pain through your entire body. Your knees buckle and give up, making you dangle off of the chains, your mind blanking as a sudden orgasm rips through you, your thighs quivering as your slit releases a torrent of slick wetness down onto the floor..")
+			saynn("Хвосты кнута бьют точно по твоей киске, и резкая боль пронзает всё тело. Колени подгибаются и слабеют, заставляя тебя повиснуть на цепях; разум мутится, когда внезапный оргазм прошибает тебя насквозь, а твои бёдра дрожат, пока щель извергает поток скользкой влаги прямо на пол...")
 
 		else:
-			saynn("The whip tails strike your crotch exactly, the sharp stings sending a jolt of pain through your entire body. Your knees buckle and give up, making you dangle off of the chains, your mind blanking as a sudden orgasm rips through you, your thighs quivering, your body convulsing hard..")
+			saynn("Хвосты кнута бьют точно по твоему паху, и резкая боль пронзает всё тело. Колени подгибаются и слабеют, заставляя тебя повиснуть на цепях; разум мутится, когда внезапный оргазм прошибает тебя насквозь, твои бёдра дрожат, а тело сотрясают сильные конвульсии...")
 
-		saynn("You gasp into Mirri's panties, every muscle in your body tightening. The mixture of pain and pleasure blurs together, leaving you breathless in the end, just hanging limply from the chains..")
+		saynn("Ты судорожно вдыхаешь запах трусиков Мирри, каждая мышца в твоём теле напрягается. Смесь боли и наслаждения сливается воедино, оставляя тебя в конце концов без дыхания, просто безвольно висящим на цепях...")
 
-		saynn("Mirri watches with a satisfied grin, her clawed paw groping her own breasts while she is admiring the mess that she's made of you.")
+		saynn("Мирри наблюдает с довольной ухмылкой, поглаживая когтистой лапой собственную грудь и любуясь тем беспорядком, который она из тебя устроила.")
 
-		saynn("[say=mirri]F-fuck me.. now that's art worth masturbating over.. Not your limp-dick golden abstract shit.[/say]")
+		saynn("[say=mirri]Блядь... вот это я понимаю — искусство, ради которого стоит отсосать самому себе... А не твоё вялое золотое абстрактное дерьмо.[/say]")
 
-		saynn("All the cuts, all the wounds.. they ache.. and bleed. The room is getting and darker.. or.. is that your mind saying goodbye?")
+		saynn("Все эти порезы, все эти раны... они ноют... и кровоточат. В комнате становится всё темнее... или... это твой разум прощается с реальностью?")
 
-		saynn("All you hear is..")
+		saynn("Всё, что ты слышишь, это...")
 
-		saynn("[say=mirri]H-hey.[/say]")
+		saynn("[say=mirri]Эй... ты как?[/say]")
 
-		saynn("..before the dreamworld takes over.")
+		saynn("...прежде чем мир грёз поглотит тебя целиком.")
 
-		addButton("Continue", "See what happens next", "sub_painplay_wakeup")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sub_painplay_wakeup")
 	if(state == "sub_painplay_wakeup"):
 		aimCameraAndSetLocName("market_intro")
 		playAnimation(StageScene.Sleeping, "sleep", {pc="pc", bodyState={naked=true}})
-		saynn("The world seemed to have.. rotated.. while you were taking a nice quiet nap.")
+		saynn("Кажется, мир... перевернулся... пока ты сладко и тихо дрых.")
 
-		saynn("You feel a bed underneath you. One of the most comfiest beds that you have ever felt.. it's like a cloud compared to your usual prison ones..")
+		saynn("Ты чувствуешь под собой кровать. Одна из самых удобных, что ты когда-либо ощущал... по сравнению с твоими обычными тюремными койками — это просто облако...")
 
-		saynn("You open your eyes..  and see yourself.. your body is still bruised and cut.. The signs of the abuse are all there.. but not the blood.")
+		saynn("Ты открываешь глаза... и видишь себя... твоё тело всё ещё в синяках и порезах... Следы насилия никуда не делись... но крови больше нет.")
 
-		saynn("[say=mirri]Oh, you're up. Wanna continue?[/say]")
+		saynn("[say=mirri]О, ты проснулся. Продолжим?[/say]")
 
-		saynn("[say=pc]No?[/say]")
+		saynn("[say=pc]Нет?[/say]")
 
-		saynn("She chuckles.")
+		saynn("Она посмеивается.")
 
-		saynn("[say=mirri]How was it?[/say]")
+		saynn("[say=mirri]Ну как оно было?[/say]")
 
-		saynn("[say=pc]..different.[/say]")
+		saynn("[say=pc]...другое.[/say]")
 
-		saynn("Your voice barely above a whisper.")
+		saynn("Твой голос едва слышен, почти шепот.")
 
-		saynn("[say=mirri]I knew you would like it.[/say]")
+		saynn("[say=mirri]Я знала, что тебе понравится.[/say]")
 
-		saynn("Her feline eyes shine sharply.")
+		saynn("Ее кошачьи глаза остро блестят.")
 
-		saynn("[say=mirri]Now get the fuck off my bed.[/say]")
+		saynn("[say=mirri]А теперь съебись с моей кровати.[/say]")
 
-		saynn("Right..")
+		saynn("Понятно...")
 
 		setFlag("SlaveAuctionModule.customMirriGreeting", "How are the bruises~?")
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "sub_pussy"):
-		saynn("[say=pc]Uhm..[/say]")
+		saynn("[say=pc]Эм...[/say]")
 
-		saynn("One noise from you is enough to make Mirri perk her ears.")
+		saynn("Достаточно одного звука с твоей стороны, чтобы Мирри навострила ушки.")
 
-		saynn("You see her feline eyes.. and take a step back.. while she takes two.. forward.")
+		saynn("Ты видишь ее кошачьи глаза... и делаешь шаг назад... в то время как она делает два... вперед.")
 
-		saynn("[say=mirri]Don't make me pull out my gun.[/say]")
+		saynn("[say=mirri]Не заставляй меня доставать пушку.[/say]")
 
-		saynn("[say=pc]Hey, no. Bad Mirri.[/say]")
+		saynn("[say=pc]Эй, нет. Плохая Мирри.[/say]")
 
-		saynn("She tilts her head, her ass wiggles a bit like she is about to pounce..")
+		saynn("Она наклоняет голову, ее задница слегка виляет, будто она вот-вот прыгнет...")
 
-		saynn("[say=mirri]Bad? Being bad is for tame pussies.[/say]")
+		saynn("[say=mirri]Плохой? Быть «плохим» — это для ручных сучек.[/say]")
 
-		saynn("Her tail is wagging. You notice her pulling out the chains..")
+		saynn("Её хвост виляет. Ты замечаешь, как она вытягивает цепи...")
 
-		saynn("[say=mirri]I am simply the best.. at being the worst. Get the fuck on the table.[/say]")
+		saynn("[say=mirri]Я просто лучшая... в том, чтобы быть худшей. А теперь быстро, блядь, на стол![/say]")
 
-		saynn("She swipes everything off her desk, including her laptop.. and then pounces at you!")
+		saynn("Она смахивает со стола всё подряд, включая ноутбук... а затем набрасывается на тебя!")
 
-		addButton("Continue", "See what happens next", "subpussy_table")
+		addButton("Продолжить", "Смотреть, что будет дальше", "subpussy_table")
 	if(state == "subpussy_table"):
 		playAnimation(StageScene.SexOralTable, "hover", {pc="mirri", npc="pc"})
-		saynn("In the next moment, you already feel the cold metal of the desk biting into your wrists and ankles as the chains lock you down to it. Only your head is sticking out slightly, hanging from its side, giving you some wiggle room but mostly forcing you to look up at the ceiling..")
+		saynn("В следующее мгновение ты уже чувствуешь, как холодный металл стола впивается в твои запястья и лодыжки — цепи намертво приковывают тебя к нему. Лишь голова слегка торчит сбоку, что дает тебе немного свободы движений, но в основном заставляет смотреть прямо в потолок...")
 
-		saynn("Mirri paces around you, her armored boots clicking ominously against the wooden floor, her blue eyes shining with wicked delight as she watches you struggle. The more you try to escape.. the more you realize that the resistance is futile. Mirri is a slaver after all..")
+		saynn("Мирри расхаживает вокруг тебя; её бронированные сапоги зловеще цокают по деревянному полу, а голубые глаза сияют от порочного восторга, пока она наблюдает за твоими попытками вырваться. Чем больше ты сопротивляешься... тем сильнее понимаешь, что это бесполезно. В конце концов, Мирри — работорговка...")
 
-		saynn("[say=pc]You are one crazy girl.[/say]")
+		saynn("[say=pc]Ну ты и сумасшедшая девчонка.[/say]")
 
-		saynn("[say=mirri]Look at you. I thought you're tough, big and scary~. But now, you're nothing more than my personal furniture.[/say]")
+		saynn("[say=mirri]Посмотри на себя. А я-то думала, ты крутой, большой и страшный~. Но теперь ты не более чем моя личная мебель.[/say]")
 
-		saynn("She giggles softly, pacing in your view more, flashing her exposed butt and thighs, her paws tugging on her striped panties, causing the outline of her little slit to show more prominently.")
+		saynn("Она тихо хихикает, продолжая расхаживать перед тобой, дразня тебя своей обнаженной задницей и бедрами; её лапы тянут полосатые трусики, из-за чего очертания её маленькой щелочки проступают всё отчетливее.")
 
-		saynn("[say=mirri]You called this pussy bad, didn't you.. Such a rude fucker you are..[/say]")
+		saynn("[say=mirri]Ты ведь назвал эту киску плохой, да?.. Какой же ты грубый мудак...[/say]")
 
-		saynn("[say=pc]Hey, listen.. I didn't say that..[/say]")
+		saynn("[say=pc]Эй, послушай... я этого не говорила...[/say]")
 
-		saynn("She presses a button on her fancy desk.. that makes it start to go down.. your head getting dangerously close to her inner thigh level with each second.")
+		saynn("Она нажимает кнопку на своем шикарном столе... и тот начинает опускаться... с каждой секундой твоя голова оказывается всё ближе к её внутренней стороне бедра.")
 
-		saynn("When that's done, Mirri positions herself just above you, spreading her legs slightly, the fabric of her panties right above your face. You can smell her, the intoxicating scent of her flower is filling your lungs, and it takes everything in you to not squirm.")
+		saynn("Когда стол опускается, Мирри устраивается прямо над тобой, слегка раздвинув ноги так, что ткань её трусиков оказывается прямо перед твоим лицом. Ты чувствуешь её запах — пьянящий аромат её «цветочка» наполняет твои легкие, и тебе стоит огромных усилий не заерзать от возбуждения.")
 
-		saynn("[say=mirri]Do you like 'em~?[/say]")
+		saynn("[say=mirri]Нравятся?~[/say]")
 
-		saynn("Your throat tightens as you feel her clawed digits land on your neck, tracing along the skin.")
+		saynn("Твое горло сжимается, когда ты чувствуешь, как её когтистые пальцы ложатся на твою шею, оглаживая кожу.")
 
-		saynn("[say=mirri]I can't hear you..[/say]")
+		saynn("[say=mirri]Я тебя не слышу...[/say]")
 
-		saynn("Your throat tightens even more as she squeezes it..")
+		saynn("Твое горло сжимается еще сильнее, когда она начинает его сдавливать...")
 
-		saynn("[say=pc]I.. gh.. y-yes, sure. Great panties, girl.[/say]")
+		saynn("[say=pc]Я... гх... д-да, конечно. Классные трусики, детка.[/say]")
 
-		saynn("[say=mirri]Make love, not war, is that what they say? You know what happens when you combine them?[/say]")
+		saynn("[say=mirri]«Занимайтесь любовью, а не войной» — так они говорят? А знаешь, что бывает, когда их объединить?[/say]")
 
-		saynn("She sways her butt teasingly, making the cloth shift around, creating folds around her natural folds.")
+		saynn("Она дразняще покачивает задницей, заставляя ткань смещаться и собираться складками там, где у неё и так всё складочками.")
 
-		saynn("[say=pc]Uh.. I don't think I do.[/say]")
+		saynn("[say=pc]Эх.. Кажется, нет.[/say]")
 
-		saynn("[say=mirri]Torture~. I'm gonna torture you, {pc.name}. I'm gonna torture you like no one else has ever done.[/say]")
+		saynn("[say=mirri]Пытки~. Я буду пытать тебя, {pc.name}. Я буду пытать тебя так, как никто и никогда раньше не пытал.[/say]")
 
-		saynn("Her digits sneak under your collar, eliminating the small amount of space that you had there. Looking at her pussy behind her panties without being able to touch it could be considered cruel.. but it's not exactly a torture, is it..")
+		saynn("Её пальцы проскальзывают под твой воротник, уничтожая то немногое пространство, что у тебя оставалось. Смотреть на её киску сквозь трусики, не имея возможности дотронуться до неё — это можно назвать жестокостью... но это не совсем пытка, верно?..")
 
-		saynn("[say=pc]You're.. gonna sit on my face? That's the torture?[/say]")
+		saynn("[say=pc]Ты.. собираешься сесть мне на лицо? Это и есть пытка?[/say]")
 
-		saynn("She gets a better grip.. You feel like something big is about to happen..")
+		saynn("Она перехватывает тебя поудобнее... У тебя возникает чувство, что вот-вот должно произойти что-то грандиозное...")
 
-		saynn("[say=mirri]Ever heard of.. waterboarding?[/say]")
+		saynn("[say=mirri]Слышал когда-нибудь о.. допросе водой?[/say]")
 
-		addButton("Continue", "See what happens next", "subpussy_start")
+		addButton("Продолжить", "Смотреть, что будет дальше", "subpussy_start")
 	if(state == "subpussy_start"):
 		playAnimation(StageScene.SexOralTable, "lick", {pc="mirri", npc="pc"})
-		saynn("You barely have time to react before Mirri suddenly grabs you by the collar and pulls on it while lowering herself and pressing her crotch hard against your face. Her heat is radiating through the fabric as she grinds her pussy against your face without warning.")
+		saynn("У тебя едва хватает времени среагировать, как Мирри внезапно хватает тебя за воротник и тянет на себя, одновременно опускаясь и с силой прижимая свою промежность к твоему лицу. Её жар пробивается сквозь ткань, пока она без предупреждения начинает втираться своей киской в твоё лицо.")
 
-		saynn("[say=mirri]This is pussyboarding! I will make your sorry ass drown in my cunt.[/say]")
+		saynn("[say=mirri]Это будет кискоboarding! Я заставлю твою жалкую задницу утонуть в моей щели![/say]")
 
-		saynn("She growls, her voice dark and intimidating. Her striped panties begin to get wet with arousal.. the scent of her juices is all that you can breathe in.. the air is in a very short supply now.")
+		saynn("Она рычит, её голос звучит низко и угрожающе. Её полосатые трусики начинают намокать от возбуждения... аромат её соков — это всё, чем ты можешь дышать... воздуха теперь катастрофически не хватает.")
 
-		saynn("[say=pc]Khh..[/say]")
+		saynn("[say=pc]Кхх...[/say]")
 
-		saynn("[say=mirri]You're going to lap up every drop that comes off my pussy like a good puppy bitch.[/say]")
+		saynn("[say=mirri]Ты будешь слизывать каждую каплю, что течёт из моей киски, как послушная сучка-щенка.[/say]")
 
-		saynn("She doesn't give you a choice exactly, her hips moving in aggressive, tight circles as she rubs herself all over your face, smearing her wetness across your lips and chin. The slick fabric clings to your mouth, pressing against you as she grinds harder, her thighs trapping your head, forcing you into her heat. You feel yourself suffocating..")
+		saynn("Она не особо дает тебе выбор: её бедра двигаются агрессивными, тугими кругами, пока она втирается во всё твоё лицо, размазывая свою влагу по твоим губам и подбородку. Скользкая ткань липнет к твоему рту, прижимаясь к тебе, пока она трахает тебя ещё сильнее, зажимая твою голову своими бедрами и заставляя тебя тонуть в её жаре. Ты чувствуешь, что начинаешь задыхаться...")
 
-		saynn("[say=mirri]What? You're gonna drown? Or you're gonna open your fucking mouth already.[/say]")
+		saynn("[say=mirri]Что? Ты что, утонуть собрался? Или уже наконец раскрой свой гребаный рот![/say]")
 
-		saynn("Your body obeys before your mind can catch up, your lips parting as her soaked panties push into your mouth. The taste of her pussy juices spreads across your tongue, salty and strong. Mirror moans softly as she feels you struggling. Her hips are speeding up, grinding becoming rougher, more desperate, as she forces her dripping cunt onto your face.")
+		saynn("Твое тело подчиняется раньше, чем успевает сообразить разум: губы непроизвольно размыкаются, когда её промокшие трусики вжимаются тебе в рот. Вкус её соков разливается по языку — соленый и резкий. Мирри тихо стонет, чувствуя твою борьбу. Её бедра ускоряются, движения становятся грубее, отчаяннее, пока она с силой втискивает свою сочащуюся киску тебе в лицо.")
 
-		saynn("[say=mirri]That's right. Nothing but a pussy licker..[/say]")
+		saynn("[say=mirri]Вот так. Всего лишь жалкий лизунчик..[/say]")
 
-		saynn("Her words sting.. but her body presses harder, grinding her wet panties into your mouth, the fabric soaked through with her juices. Her hips are bucking as she loses herself in the sensations, her pussy practically leaking into your mouth.")
+		saynn("Её слова жалят... но её тело прижимается ещё сильнее, втирая мокрые трусики тебе в рот, ткань которых насквозь пропитана её соками. Её бедра ходят ходуном, она теряет контроль от ощущений, а её киска практически изливается тебе прямо в рот.")
 
-		saynn("[say=mirri]Pathetic little bitch.. I love using you.. like a fucking rag.. drowning in my cunt.[/say]")
+		saynn("[say=mirri]Жалкая сучка.. Обожаю использовать тебя.. как гребаную тряпку.. чтобы ты тонул в моей щели.[/say]")
 
-		saynn("Your head spins from the lack of air.. her scent, her taste.. everything about her is overwhelming your senses. You feel yourself losing the last bits of control, submitting fully to her as she rides your face with reckless abandon..")
+		saynn("Голова идет кругом от нехватки воздуха... её запах, её вкус... всё в ней переполняет твои чувства. Ты чувствуешь, как теряешь последние остатки контроля, полностью подчиняясь ей, пока она безрассудно и жадно скачет тебе по лицу...")
 
-		addButton("Continue", "See what happens next", "subpussy_breather")
+		addButton("Продолжить", "Смотреть, что будет дальше", "subpussy_breather")
 	if(state == "subpussy_breather"):
 		playAnimation(StageScene.SexOralTable, "hover", {pc="mirri", npc="pc", npcBodyState={hard=true}, bodyState={exposedCrotch=true}})
-		saynn("Just when you think you might pass out.. Mirri finally pulls back, gasping softly as she steps away, her breathing almost as heavy as yours. You're gasping for air, your face soaked with her juices, the taste of her still thick on your tongue.")
+		saynn("Как раз в тот момент, когда ты уже готов был отключиться... Мирри наконец отстраняется, тихо и тяжело дыша, словно и сама только что пробежала марафон. Ты жадно ловишь ртом воздух, твое лицо залито её соками, а вкус её влаги всё еще густо ощущается на языке.")
 
-		saynn("[say=mirri]Hah.. Think I'm done yet? I'm not one of those soft bitches.[/say]")
+		saynn("[say=mirri]Хах... Думаешь, я уже всё? Я тебе не какая-нибудь неженка.[/say]")
 
-		saynn("She hooks her clawed thumbs into the waistband of her striped panties and pulls them down, revealing her soaked pink blushing pussy. Her lips are shining, drenched with her juices.")
+		saynn("Она цепляет когтистыми большими пальцами пояс своих полосатых трусиков и стягивает их вниз, обнажая мокрую, розовую, раскрасневшуюся киску. Её губы блестят, буквально пропитанные её соками.")
 
-		saynn("Mirri smirks down at you, her eyes have that sadistic light in them..")
+		saynn("Мирри самодовольно ухмыляется, глядя на тебя сверху вниз, а в её глазах пляшет тот самый садистский огонек...")
 
-		saynn("[say=mirri]Look at this..[/say]")
+		saynn("[say=mirri]Посмотри на это...[/say]")
 
-		saynn("She purrs, spreading her legs slightly, her wet pussy on full display with multiple slick ropes of juices hanging between the thighs.")
+		saynn("Она мурлычет, слегка разводя ноги, выставляя напоказ свою мокрую щелку, с которой между бедер свисают густые, скользкие струйки сока.")
 
-		saynn("[say=mirri]I love you.. See how wet you made me, you filthy little slut?[/say]")
+		saynn("[say=mirri]Обожаю тебя... Видишь, какой мокрой ты меня сделал, грязная ты маленькая сучка?[/say]")
 
-		saynn("You can't tear your eyes away.. You feel like you will do anything for her by this point..")
+		saynn("Ты не можешь отвести взгляд... Кажется, к этому моменту ты готов сделать для неё абсолютно всё...")
 
-		addButton("Continue", "See what happens next..", "subpussy_masturbate")
+		addButton("Продолжить", "Смотри, что будет дальше...", "subpussy_masturbate")
 	if(state == "subpussy_masturbate"):
 		playAnimation(StageScene.SexOralTable, "grind", {pc="mirri", npc="pc", npcBodyState={hard=true}, bodyState={exposedCrotch=true}})
-		saynn("Mirri steps forward again, positioning herself over your face once more, her naked slit hovering inches above your mouth.")
+		saynn("Мирри снова делает шаг вперед, вновь устраиваясь прямо над твоим лицом; её обнаженная щель зависает в считанных сантиметрах от твоего рта.")
 
-		saynn("[say=mirri]I want to feel you choke on my juices.. Drown in me, you fuck..[/say]")
+		saynn("[say=mirri]Хочу чувствовать, как ты давишься моими соками... Утопай во мне, кобель!..[/say]")
 
-		saynn("And with that, she sits on your face, her wet hot pussy resting on your face, covering your mouth. As soon as that happens, you begin polishing her folds with your tongue, gathering all the juices that you can get to.. before swallowing them all.")
+		saynn("И вот она усаживается тебе прямо на лицо, накрывая твой рот своей горячей и влажной киской. Как только это происходит, ты начинаешь вылизывать её складки, собирая все соки, которые только можешь достать... прежде чем проглотить их все до последней капли.")
 
-		saynn("[say=mirri]Ah..[/say]")
+		saynn("[say=mirri]Ах..[/say]")
 
-		saynn("She doesn't grind your face as much anymore.. just using your face as a nice firm seat, her slick folds spreading across your lips, the taste of her raw arousal flooding your taste sensors.")
+		saynn("Она больше не так сильно терзает твоё лицо.. она просто использует его как удобное, упругое сиденье; её скользкие складки растекаются по твоим губам, а вкус её первобытного возбуждения накрывает твои вкусовые рецепторы.")
 
-		saynn("[say=mirri]Faster, bitch, faster.. I love you, {pc.name}.. I love you so fucking much.. S-stupid sext-toy..[/say]")
+		saynn("[say=mirri]Быстрее, сучка, быстрее.. Я люблю тебя, {pc.name}.. Блять, как же сильно я тебя люблю.. Г-глупая секс-игрушка..[/say]")
 
-		saynn("While you're busy eating her out, her clawed digits find her clit and proceed to rub it fast. Passionate bright moans begin to fill the dark room, her hips bucking again, her thigh muscles tensing up..")
+		saynn("Пока ты увлечённо сосёшь её, её когтистые пальцы находят клитор и начинают быстро его тереть. Темную комнату наполняют страстные, громкие стоны; её бёдра снова вздрагивают, а мышцы на ногах напрягаются..")
 
-		saynn("The more you lick her up.. the more she teases her clit.. the deeper her breathing becomes, her voice breaking as she loses herself in the moment, squirming above you like a woman possessed.")
+		saynn("Чем сильнее ты её вылизываешь.. тем сильнее она дразнит свой клитор.. её дыхание становится всё глубже, а голос срывается, когда она теряет контроль над собой, извиваясь над тобой, словно одержимая женщина.")
 
-		saynn("[say=mirri]Swallow it all.. Every drop, you useless fuck.. I want to love you.. feel you.. choking on my cum.[/say]")
+		saynn("[say=mirri]Глотай всё.. Каждую каплю, бесполезная ты мразь.. Я хочу любить тебя.. чувствовать тебя.. когда ты давишься моей спермой.[/say]")
 
-		addButton("Continue", "See what happens next", "subpussy_mirricum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "subpussy_mirricum")
 	if(state == "subpussy_mirricum"):
 		playAnimation(StageScene.SexOralTable, "grindfast", {pc="mirri", npc="pc", npcBodyState={hard=true}, bodyState={exposedCrotch=true}})
-		saynn("Suddenly, her thighs clamp around your head, squeezing your head tightly.")
+		saynn("Внезапно её бёдра смыкаются вокруг твоей головы, крепко сжимая её.")
 
-		saynn("[say=mirri]AHhh-h-![/say]")
+		saynn("[say=mirri]АХхх-х-![/say]")
 
-		saynn("Mirri throws her head back as her juices are gushing into your mouth in a hot, overwhelming flood. You lose your ability to breathe again, her wetness is coating your lips and chin as she pushes you deeper into her cunt.")
+		saynn("Мирри запрокидывает голову, пока её соки горячим, захлестывающим потоком хлынут тебе в рот. Ты снова теряешь способность дышать; её влага покрывает твои губы и подбородок, пока она вжимает тебя всё глубже в свою киску.")
 
-		saynn("She growls, her voice breathless as she forces you to swallow every drop of her squirt. Her body is shaking the feral force of her release. You have no choice but to swallow, her hips moving in slow, trembling circles.")
+		saynn("Она рычит, её голос прерывается от нехватки воздуха, пока она заставляет тебя проглотить каждую каплю её сквирта. Её тело сотрясает дикая сила оргазма. У тебя нет выбора — приходится глотать, пока её бёдра медленно и дрожаще двигаются кругами.")
 
-		addButton("Continue", "See what happens next", "subpussy_after")
+		addButton("Продолжить", "Смотреть, что будет дальше", "subpussy_after")
 	if(state == "subpussy_after"):
 		playAnimation(StageScene.SexOralTable, "tease", {pc="mirri", npc="pc", npcBodyState={hard=true}, bodyState={exposedCrotch=true}})
-		saynn("Finally, after what feels like an eternity, she pulls back, panting heavily as she stares down at you with a satisfied, wicked grin. Her pussy still drips juices onto her thighs..")
+		saynn("Наконец, спустя целую вечность, она отстраняется, тяжело дыша и глядя на тебя сверху вниз с довольной, порочной ухмылкой. Её киска всё ещё источает соки, стекающие по бёдрам...")
 
-		saynn("[say=mirri]Such a good little toy. Proving it again and again that it was worth it to keep you.[/say]")
+		saynn("[say=mirri]Такая хорошая маленькая игрушка. Снова и снова доказываешь, что держать тебя было не зря.[/say]")
 
-		saynn("She purrs, her voice soft but still dripping with that cruel satisfaction.")
+		saynn("Она мурлычет, её голос звучит мягко, но в нём всё ещё сквозит это жестокое удовлетворение.")
 
-		saynn("[say=mirri]Let's get you off my fucking desk.[/say]")
+		saynn("[say=mirri]А теперь слезай с моего грёбаного стола.[/say]")
 
 		setFlag("SlaveAuctionModule.customMirriGreeting", "You liked my desk, didn't you? It's a nice sturdy desk.")
-		addButton("Continue", "See what happens next", "endthescene")
-		addButtonWithChecks("Extra humiliation", "Ask her to pee on you..", "subpussy_pee", [], [[ButtonChecks.ContentEnabled, ContentType.Watersports]])
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
+		addButtonWithChecks("Дополнительное унижение", "Попросить её пописать на тебя...", "subpussy_pee", [], [[ButtonChecks.ContentEnabled, ContentType.Watersports]])
 	if(state == "subpussy_pee"):
 		playAnimation(StageScene.SexOralTable, "rub", {pc="mirri", npc="pc", npcBodyState={hard=true}, bodyState={exposedCrotch=true}})
-		saynn("You find yourself craving more.. craving extra humiliation.")
+		saynn("Ты ловишь себя на мысли, что жаждешь большего... жаждешь ещё большего унижения.")
 
-		saynn("Before she unchains your wrists and ankles.. you decide to stop her.")
+		saynn("Прежде чем она освободит твои запястья и лодыжки... ты решаешь её остановить.")
 
-		saynn("[say=pc]Mirri.. I want you..[/say]")
+		saynn("[say=pc]Мирри... я хочу тебя...[/say]")
 
-		saynn("[say=mirri]I noticed~.[/say]")
+		saynn("[say=mirri]Я заметила~.[/say]")
 
-		saynn("[say=pc]No. I want you to.. pee on me.[/say]")
+		saynn("[say=pc]Нет. Я хочу, чтобы ты... пописала на меня.[/say]")
 
-		saynn("Her eyes narrow, sharp as blades, as she stares at you. For a moment, there is silence, just the sound of your ragged breathing and the distance hum of random machinery in the background. Then.. Mirri bursts into laughter, throwing her head back, her fangs shining in the dim light.")
+		saynn("Её глаза сужаются, становясь острыми как лезвия, пока она сверлит тебя взглядом. На мгновение воцаряется тишина, слышно лишь твоё прерывистое дыхание и далёкий гул случайных механизмов на фоне. А затем... Мирри разражается смехом, запрокинув голову, и её клыки блестят в тусклом свете.")
 
-		saynn("[say=mirri]AHAHA. You.. what?[/say]")
+		saynn("[say=mirri]АХАХА! Ты... что?[/say]")
 
-		saynn("She steps forward, her boots clacking against the floor as she looms over, her hips swaying provocatively. Her predator eyes lock onto yours. She leans in even lower.. down to your level, her lips bear your ear.. her breath hot against your skin as she whispers, her voice dripping with mockery.")
+		saynn("Она делает шаг вперёд, её сапоги цокают по полу, когда она нависает над тобой, вызывающе покачивая бёдрами. Её хищный взгляд впивается в твой. Она наклоняется ещё ниже... почти на одном уровне с тобой, её губы касаются твоего уха, а горячее дыхание обжигает кожу, когда она шепчет, и её голос так и сочится насмешкой.")
 
-		saynn("[say=mirri]You're.. that.. pathetic, huh? Really? You are lower than a worm.. You're filth.[/say]")
+		saynn("[say=mirri]Ты... настолько... жалкий, да? Серьёзно? Ты ниже червя... Ты просто грязь.[/say]")
 
-		saynn("Her words cut deep.. and yet.. there is a twisted thrill in all of this.. Your face blushes red.. her juices are still there on your face.. and yet, you're asking for more. You nod.")
+		saynn("Её слова ранят глубоко... и всё же... во всём этом есть какое-то извращённое удовольствие... Твоё лицо заливает румянец... её соки всё ещё на твоём лице... и всё же ты просишь добавки. Ты киваешь.")
 
-		saynn("[say=pc]Yes. Please, Mirri..[/say]")
+		saynn("[say=pc]Да. Пожалуйста, Мирри...[/say]")
 
-		saynn("She stands up and stares at you for a moment, a mixture of disgust and delight swirling in her eyes. Slowly, a smile creeps back onto her lips, the corners of her lips curling up.")
+		saynn("Она выпрямляется и на мгновение замирает, глядя на тебя; в её глазах смешиваются отвращение и восторг. Медленно на её губах снова появляется улыбка, уголки рта приподнимаются.")
 
-		saynn("[say=mirri]Fine. You want to be my toilet that badly? I could use one. But I ain't pissing on my desk, no fucking way. You understand what I am saying?[/say]")
+		saynn("[say=mirri]Ладно. Настолько хочешь быть моим толчком? Мне бы не помешал. Но на свой стол я срать не стану, ни хрена подобного. Понимаешь, о чём я говорю?[/say]")
 
-		saynn("You're going to have to.. drink it all.. Every. Last. Drop..")
+		saynn("Тебе придется... выпить всё... До. Последней. Капли..")
 
-		saynn("You nod.. Without another word, she stands over your face again, her crotch hovering inches above your face, her legs spread wide as she positions herself just right.")
+		saynn("Ты киваешь.. Не говоря больше ни слова, она снова нависает над твоим лицом; её промежность замерла в считанных дюймах от твоего носа, а ноги широко разведены, пока она устраивается поудобнее.")
 
-		saynn("Mirri bites her lips while looking down at you, her digits teasing her clit a little more. Her juicy pink pussy is up in your face again in its full glory..")
+		saynn("Мирри закусывает губу, глядя на тебя сверху вниз, и её пальцы начинают ещё сильнее дразнить клитор. Её сочная розовая киска снова прямо перед твоим лицом во всей своей красе..")
 
-		saynn("[say=mirri]Get ready, pathetic little toy.[/say]")
+		saynn("[say=mirri]Приготовься, жалкая маленькая игрушка.[/say]")
 
-		addButton("Continue", "See what filthy things will happen next..", "subpussy_peeactual")
+		addButton("Продолжить", "Смотри, какие грязные вещи произойдут дальше..", "subpussy_peeactual")
 	if(state == "subpussy_peeactual"):
 		playAnimation(StageScene.SexOralTable, "peefem", {pc="mirri", npc="pc", npcBodyState={hard=true}, bodyState={exposedCrotch=true}})
-		saynn("Seconds feel like hours.. You can feel the muscles of her crotch tensing up.. again and again..")
+		saynn("Секунды тянутся как часы.. Ты чувствуешь, как мышцы её промежности напрягаются.. снова и снова..")
 
-		saynn("You hear her soft grunt.. and then it happens. A sudden, warm stream of piss sprays down onto your face. But, before the mess gets too bad, you clamp your lips around her pisshole and let her start to flood your mouth with her golden juice.")
+		saynn("Ты слышишь её тихий стон.. и тут это случается. Внезапная теплая струя мочи обрушивается прямо на твоё лицо. Но прежде чем всё окончательно испачкается, ты обхватываешь губами её мочеиспускательное отверстие, позволяя ей наполнять твой рот своим золотистым соком.")
 
-		saynn("[say=mirri]Drink it. Swallow. Now![/say]")
+		saynn("[say=mirri]Пей. Глотай. Живо![/say]")
 
-		saynn("The taste is awful. it's gross.. hot.. bitter.. acrid.. it's simply the worst tasting fluid you have ever tasted. And yet, you force yourself to swallow, gulping down her piss fast.. and then again and again.")
+		saynn("Вкус отвратительный. Мерзкий.. горячий.. горький.. едкий.. это просто самая ужасная жидкость, которую ты когда-либо пробовал. И всё же, ты заставляешь себя глотать, жадно заглатывая её мочу.. снова и снова.")
 
-		saynn("Mirri watches, her smirk shining brightly as she keeps the steady yellow stream flowing, the warm liquid going straight into your mouth..")
+		saynn("Мирри наблюдает, её самодовольная ухмылка сияет, пока она поддерживает ровную желтую струю, направляя теплую жидкость прямо тебе в рот..")
 
-		saynn("[say=mirri]Ah.. Feels nice~. This is what you wanted, isn't it? You're so pathetic, drinking up my piss like a thirsty little slut. Are you proud of yourself?.. Because I'm proud of you, love~.[/say]")
+		saynn("[say=mirri]Ах.. Как приятно~. Это ведь то, чего ты хотел, а? Ты такой жалкий, хлебаешь мою мочу, как жаждущая маленькая шлюшка. Ты собой гордишься?.. Потому что я тобой горжусь, любовь моя~.[/say]")
 
-		saynn("You choke on her piss, your body trembling.. and yet, you submit entirely to her cruel methods. You keep swallowing, drinking her piss, feeling it fill your mouth again and again. The humiliation.. is intoxicating.")
+		saynn("Ты давишься её мочой, твоё тело дрожит.. и всё же ты полностью подчиняешься её жестоким методам. Ты продолжаешь глотать, пить её мочу, чувствуя, как она снова и снова наполняет твой рот. Это унижение.. оно опьяняет.")
 
-		saynn("[say=mirri]My favorite little toy.[/say]")
+		saynn("[say=mirri]Моя любимая маленькая игрушка.[/say]")
 
-		saynn("Her golden stream finally begins to slow down.. making it able for you to catch a break. After she is done, Mirri just stands there, towering over you, her eyes shining brightly.")
+		saynn("Её золотистая струя наконец начинает замедляться.. давая тебе передышку. Когда она заканчивает, Мирри просто стоит над тобой, возвышаясь всей своей статью, а её глаза ярко сияют.")
 
-		saynn("[say=mirri]Swallowed every drop, huh? Of course you did. You're a good pussy licker and you're an even better toilet~. Did you like it?[/say]")
+		saynn("[say=mirri]Проглотил всё до последней капли, да? Ну конечно. Ты отличная лизалка и ещё лучший унитаз~. Тебе понравилось?[/say]")
 
-		saynn("[say=pc]T-thank you, Mirri.. Y-yes.. This is great.. you are great.[/say]")
+		saynn("[say=pc]С-спасибо, Мирри.. Д-да.. Это великолепно.. ты великолепна.[/say]")
 
-		saynn("She smiles, a little blush tints her cheeks red.")
+		saynn("Она улыбается, и её щеки слегка розовеют.")
 
-		saynn("[say=mirri]Well thank you, kitty likes hearing nice words. I need my desk though. So let's get you the fuck down.[/say]")
+		saynn("[say=mirri]Ну, спасибо, кошечке нравится слушать приятные слова. Но мне нужен мой стол. Так что давай-ка прижмём твою задницу к полу.[/say]")
 
 		setFlag("SlaveAuctionModule.customMirriGreeting", "I ain't gonna tongue with you for some time. Not after what you begged me to do last time.")
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "sub_walkies"):
-		saynn("You're feeling a bit.. subby.. but you make sure not to show it. You put on a stone-cold face expression and try to be as motionless as possible in front of Mirri.")
+		saynn("Ты чувствуешь себя немного.. сабмиссивом.. но стараешься этого не показывать. Ты напускаешь на себя невозмутимое лицо и стараешься замереть перед Мирри, как можно неподвижнее.")
 
-		saynn("She looks at you.. and raises a brow. Fuck. Where do you look? At her! Right. You look her into the eyes.")
+		saynn("Она смотрит на тебя.. и приподнимает бровь. Блядь. Куда ты смотришь? На неё! Точно. Смотри ей прямо в глаза.")
 
-		saynn("[say=mirri]Oh? My lovely little sextoy is feeling subby?[/say]")
+		saynn("[say=mirri]О? Моя милая секс-игрушка вдруг захотела побыть сабмиссивной?[/say]")
 
-		saynn("You don't even know anymore.. Maybe it was the way you glanced at her.. or the way you hesitated, just a split second longer than usual.")
+		saynn("Ты уже и сам не понимаешь... Может, дело в том, как ты на неё посмотрел... или в том, как ты замялся — всего на долю секунды дольше обычного.")
 
-		saynn("[say=pc]No![/say]")
+		saynn("[say=pc]Нет![/say]")
 
-		saynn("Too late, Mirri's eyes have already lit up, a dangerous, predatory glint flashing through them as she tilts her head, her lips curving into a smirk.")
+		saynn("Слишком поздно: глаза Мирри уже загорелись опасным, хищным блеском; она склоняет голову набок, а её губы расплываются в ухмылке.")
 
-		saynn("You step back, she steps forward. You hear purring.. dark purring.. purring that gradually crossfades into growling.")
+		saynn("Ты отступаешь, она делает шаг вперёд. Ты слышишь мурлыканье... тёмное мурлыканье... которое постепенно переходит в рычание.")
 
-		saynn("[say=pc]Wait, Mirri, wait! Let's not rush to action and just talk about it![/say]")
+		saynn("[say=pc]Погоди, Мирри, постой! Давай не будем сразу бросаться в бой, давай просто поговорим![/say]")
 
-		saynn("[say=mirri]Do you love me?[/say]")
+		saynn("[say=mirri]Ты меня любишь?[/say]")
 
-		saynn("One heck of a question to ask in this situation.")
+		saynn("Чертовски неподходящий вопрос для такой ситуации.")
 
-		saynn("[say=pc]Of course, baby.[/say]")
+		saynn("[say=pc]Конечно, малышка.[/say]")
 
-		saynn("[say=mirri]Shh.. Fine. I won't do anything.[/say]")
+		saynn("[say=mirri]Тсс... Ладно. Я ничего не буду делать.[/say]")
 
-		saynn("She suddenly stops dead in her tracks. You can only phew.. It feels like you have defused a bomb.")
+		saynn("Она внезапно замирает на месте. Ты только и можешь, что выдохнуть... Такое чувство, будто ты только что обезвредил бомбу.")
 
-		saynn("[say=pc]..crazy..[/say]")
+		saynn("[say=pc]...сумасшедшая...[/say]")
 
-		saynn("[say=mirri]But now I will![/say]")
+		saynn("[say=mirri]Но теперь буду![/say]")
 
-		saynn("Oh shit.")
+		saynn("Ох, блядь.")
 
-		addButton("Continue", "See what happens next", "subwalkies_suit")
+		addButton("Продолжить", "Смотреть, что будет дальше", "subwalkies_suit")
 	if(state == "subwalkies_suit"):
 		playAnimation(StageScene.PuppyDuo, "stand", {pc="mirri", npcBodyState={naked=true, leashedBy="mirri", hard=true}})
-		saynn("Before you can react, Mirri tackles you and drags you off to the special wardrobe that she has. Your heart sinks when you see what kind of restraints she pulls out.")
+		saynn("Прежде чем ты успеваешь среагировать, Мирри набрасывается на тебя и тащит к своему специальному гардеробу. Сердце уходит в пятки, когда ты видишь, какие именно оковы она достает.")
 
-		saynn("[say=mirri]Hold still, you stupid mutt! Don't make me grab the buttplug tail![/say]")
+		saynn("[say=mirri]Не дергайся, тупая псина! А то заставлю надеть хвост-пробку![/say]")
 
-		saynn("She forces your knees and elbow into special leather caps that she then tightens using straps and locks with small padlocks, forcing your wrists to your shoulders and your ankles to your thighs.. making you stand on all fours.")
+		saynn("Она силой втискивает твои колени и локти в специальные кожаные накладки, которые затем затягивает ремнями и фиксирует маленькими навесными замками, прижимая запястья к плечам, а лодыжки — к бедрам... заставляя тебя стоять на четвереньках.")
 
-		saynn("[say=mirri]PERFECT![/say]")
+		saynn("[say=mirri]ИДЕАЛЬНО![/say]")
 
-		saynn("[say=pc]Mirri, fucking wait, I-..[/say]")
+		saynn("[say=pc]Мирри, блядь, подожди, я...[/say]")
 
-		saynn("She snaps the leash onto your collar with a sharp click, cutting you off. Her eyes narrow.")
+		saynn("Она с резким щелчком защелкивает поводок на твоем ошейнике, обрывая тебя на полуслове. Ее глаза сужаются.")
 
-		saynn("[say=mirri]Pups don't talk.[/say]")
+		saynn("[say=mirri]Щенки не разговаривают.[/say]")
 
-		saynn("She tugs on the leash, enough to make you jerk your head up.")
+		saynn("Она дергает за поводок — достаточно сильно, чтобы ты невольно вскинул голову.")
 
-		saynn("[say=mirri]A pup is not gonna say a word unless I let them. And you? You're nothing but a little bitch right now![/say]")
+		saynn("[say=mirri]Щенок не проронит ни слова, пока я не позволю. А ты? Ты сейчас всего лишь маленькая сучка![/say]")
 
-		saynn("You open your mouth to argue.. to say something.. anything. But she is quick to crouch and grab you by the muzzles, forcing your lips shut. Her face is inches away from yours, her hot breath tickling your cheek.")
+		saynn("Ты открываешь рот, чтобы возразить... сказать что-то... хоть что-нибудь. Но она быстро приседает и хватает тебя за мордашку, заставляя плотно сжать губы. Её лицо в нескольких дюймах от твоего, и её горячее дыхание щекочет твою щеку.")
 
-		saynn("[say=mirri]I said.. Shut the fuck up. Do I really need to remind you how a real bitch behaves?[/say]")
+		saynn("[say=mirri]Я сказала... Завали ебало. Мне что, реально нужно напоминать тебе, как ведет себя настоящая сучка?[/say]")
 
-		saynn("She gets up and takes a few steps back, as much as the leash allows, her eyes never leaving you.")
+		saynn("Она встает и делает несколько шагов назад, насколько позволяет поводок, не сводя с тебя глаз.")
 
-		saynn("[say=mirri]Puppy needs to learn.[/say]")
+		saynn("[say=mirri]Щенку нужно поучиться.[/say]")
 
-		saynn("You try to speak up again but she just yanks the leash sharply, your throat getting extremely tight as the collar digs in.")
+		saynn("Ты снова пытаешься что-то сказать, но она резко дергает за поводок, отчего горло сдавливает, а ошейник больно впивается в кожу.")
 
-		saynn("[say=mirri]Stop it, you fuck. Pups don't use words. They obey.[/say]")
+		saynn("[say=mirri]Хватит, блядь. Щенки не разговаривают. Они слушаются.[/say]")
 
-		saynn("Mirri leans down and gives the leash a soft tug, her voice softening up and becoming all sweet.")
+		saynn("Мирри наклоняется и мягко тянет за поводок, её голос становится нежным и приторно-сладким.")
 
-		saynn("[say=mirri]Now, be a good {pc.boy} and give Mirri your paw.[/say]")
+		saynn("[say=mirri]А теперь будь хорошим {pc.boy} и дай Мирри лапку.[/say]")
 
-		addButton("Give paw", "Obey her words", "subwalkies_paw")
-		addButton("Refuse", "You don't have that many spare paws to just hand them to others!", "subwalkies_refusepaw")
+		addButton("Дать лапу", "Повиноваться ей", "subwalkies_paw")
+		addButton("Отказаться", "У тебя не так много лишних лап, чтобы раздавать их направо и налево!", "subwalkies_refusepaw")
 	if(state == "subwalkies_paw"):
 		playAnimation(StageScene.PuppyDuo, "stand", {pc="mirri", npcAction="paw", npcBodyState={naked=true, leashedBy="mirri", hard=true}})
-		saynn("You know how it's gonna end if you don't obey.. So might as well.")
+		saynn("Ты знаешь, чем всё закончится, если не подчинишься... Так что проще сразу сдаться.")
 
-		saynn("You lower yourself.. before awkwardly pushing your top part of the body off the floor in order to sit down.")
+		saynn("Ты склоняешься перед ней... а затем неуклюже отталкиваешься верхней частью тела от пола, чтобы сесть.")
 
-		saynn("Mirri is crouching near, her eyes judging you.")
+		saynn("Мирри сидит рядом на корточках, и её взгляд буквально препарирует тебя.")
 
-		saynn("[say=mirri]Mhm?[/say]")
+		saynn("[say=mirri]М-м?[/say]")
 
-		saynn("With nothing better to do, you raise your.. paw.. and offer it to Mirri.")
+		saynn("Делать всё равно нечего, и ты поднимаешь свою... лапку... и протягиваешь её Мирри.")
 
-		saynn("[say=mirri]Yay![/say]")
+		saynn("[say=mirri]Ура![/say]")
 
-		saynn("She shakes it like crazy and then gives you lots of headpats.")
+		saynn("Она трясет её как сумасшедшая, а затем начинает осыпать тебя лаской, поглаживая по голове.")
 
-		saynn("[say=mirri]Good {pc.boy}! Such a good fucking {pc.boy}! See, you can obey when you want to.[/say]")
+		saynn("[say=mirri]Молодец, {pc.boy}! Такая охренительная {pc.boy}! Видишь, ты можешь быть послушной, когда захочешь.[/say]")
 
-		saynn("Might as well commit..")
+		saynn("Можно уже и самоликвидироваться...")
 
-		saynn("[say=pc]A-..woof.. awoof..[/say]")
+		saynn("[say=pc]Гав... аву-вуф...[/say]")
 
-		saynn("More scritches and pats come your way, Mirri rubs your face and gives you a small kiss.")
+		saynn("Мирри чешет тебя и гладит еще сильнее, а затем нежно целует в лицо.")
 
-		saynn("[say=mirri]Lovely. Now let's go explore your stupid station. Walkies time![/say]")
+		saynn("[say=mirri]Прелестно. А теперь пошли исследовать твою дурацкую станцию. Время гулять![/say]")
 
-		saynn("Your heart sinks..")
+		saynn("Сердце уходит в пятки...")
 
-		saynn("[say=pc]Uh..[/say]")
+		saynn("[say=pc]Э-э...[/say]")
 
-		saynn("Mirri raises a brow.")
+		saynn("Мирри вскидывает бровь.")
 
-		saynn("[say=mirri]What was that? You don't want walkies?[/say]")
+		saynn("[say=mirri]Что это было? Ты что, не хочешь гулять?[/say]")
 
-		saynn("[say=pc]Uh.. um.. woof..[/say]")
+		saynn("[say=pc]Э-э... ну... гав...[/say]")
 
-		saynn("[say=mirri]I knew you would![/say]")
+		saynn("[say=mirri]Так я и знала![/say]")
 
-		saynn("She opens a blue glowing rift.. and steps through, her hand tugging on the leash.")
+		saynn("Она открывает светящийся синим разлом... и шагает внутрь, натягивая поводок.")
 
-		saynn("Welp..")
+		saynn("Ну, что ж...")
 
-		addButton("Continue", "See what happens next", "subwalkies_tp")
+		addButton("Продолжить", "Смотреть, что будет дальше", "subwalkies_tp")
 	if(state == "subwalkies_refusepaw"):
 		playAnimation(StageScene.PuppyDuo, "stand", {pc="mirri", npcAction="sad", npcBodyState={naked=true, leashedBy="mirri", hard=true}})
-		saynn("You hesitate, still trying to maintain at least some shred of dignity. Your muscles are tensing, resisting the degrading command.")
+		saynn("Ты колеблешься, всё ещё пытаясь сохранить хотя бы крупицу достоинства. Твои мышцы напрягаются, сопротивляясь унизительному приказу.")
 
-		saynn("Mirri sees that, her expression shifting from amusement to cold frustration. She steps closer, her armored boot finding your back and resting on it. Her fingers wrap around the stunbaton that is hanging from her leg.")
+		saynn("Мирри замечает это, и выражение её лица сменяется с насмешливого на холодное раздражение. Она делает шаг вперёд, упираясь бронированным сапогом тебе в спину. Её пальцы смыкаются на электрошоковой дубинке, висящей на бедре.")
 
-		saynn("[say=mirri]You're going to be a stubborn little bitch?[/say]")
+		saynn("[say=mirri]Решила поиграть в упрямую сучку?[/say]")
 
-		saynn("She growls.. but you don't budge.")
+		saynn("Она рычит... но ты не двигаешься с места.")
 
-		saynn("With a swift motion, she flicks the stunbaton to life, the crackling sound of electricity filling the air. She brings it closer and closer.. just inches away from your face now. Her eyes are locked on yours.")
+		saynn("Резким движением она активирует дубинку, и воздух наполняется треском электричества. Она подносит её всё ближе и ближе... теперь она всего в паре дюймов от твоего лица. Её взгляд прикован к твоим глазам.")
 
-		saynn("[say=mirri]Last chance, whore. Give paw.[/say]")
+		saynn("[say=mirri]Последний шанс, шлюха. Лапу![/say]")
 
-		saynn("You swallow hard, fear making all your insides shrink.. but you still can't bring yourself to comply.")
+		saynn("Ты тяжело сглатываешь, от страха всё внутри сжимается... но ты всё ещё не можешь заставить себя подчиниться.")
 
-		saynn("Mirri's eyes darken. She clicks her tongue in disapproval. Then, without warning, she presses the weapon against your arm.")
+		saynn("Взгляд Мирри темнеет. Она неодобрительно цокает языком. Затем, без предупреждения, она прижимает оружие к твоему предплечью.")
 
-		saynn("[say=pc]ARgh![/say]")
+		saynn("[say=pc]Аргх![/say]")
 
-		saynn("The jolts of electricity shoot through your body, sharp and painful, your muscles spasming uncontrollably for a brief moment, making you kiss and hug the wooden floor with all your paws.")
+		saynn("Разряды электричества прошивают твоё тело, резкие и болезненные; на мгновение мышцы неконтролируемо сводит судорогой, заставляя тебя буквально целовать и обнимать деревянный пол всеми четырьмя лапами.")
 
-		saynn("[say=mirri]Bad pup. But, you know.. there is a good side to this.[/say]")
+		saynn("[say=mirri]Плохой щенок. Но, знаешь... в этом есть и свои плюсы.[/say]")
 
-		saynn("She smiles, putting the baton away.")
+		saynn("Она улыбается, убирая дубинку.")
 
-		saynn("[say=mirri]I can do this all day.[/say]")
+		saynn("[say=mirri]Я могу так весь день.[/say]")
 
-		saynn("She crouches down near you.")
+		saynn("Она приседает рядом с тобой.")
 
 		if (GM.pc.hasPenis()):
-			saynn("[say=mirri]Maybe next time I will press it against something else.. Like your cock. Bet you'd be a real obedient little puppy then, won't you?[/say]")
+			saynn("[say=mirri]Может, в следующий раз я прижму её к чему-нибудь другому... Например, к твоему члену. Спорим, тогда ты станешь совсем послушным песиком?[/say]")
 
 		elif (GM.pc.hasVagina()):
-			saynn("[say=mirri]Maybe next time I will press it against something else.. Like your cunt. Bet you'd be a real obedient little puppy then, won't you?[/say]")
+			saynn("[say=mirri]Может, в следующий раз я прижму её к чему-нибудь другому... Например, к твоей киске. Спорим, тогда ты станешь совсем послушным песиком?[/say]")
 
 		else:
-			saynn("[say=mirri]Maybe next time I will press it against something else.. Like your ass. Bet you'd be a real obedient little puppy then, won't you?[/say]")
+			saynn("[say=mirri]Может, в следующий раз я прижму её к чему-нибудь другому... Например, к твоей заднице. Спорим, тогда ты станешь совсем послушным песиком?[/say]")
 
-		saynn("Your heart races.. the humiliation and fear mix in your stomach..")
+		saynn("Сердце бешено колотится... в животе смешиваются унижение и страх...")
 
-		saynn("Slowly, reluctantly, you raise your paw as best as you can.")
+		saynn("Медленно, неохотно, ты поднимаешь лапу, насколько это возможно.")
 
-		saynn("[say=mirri]Good {pc.boy}. But we're over that now. Let's go for some walkies, I know just the spot![/say]")
+		saynn("[say=mirri]Умница, {pc.boy}. Но с этим покончено. Пошли прогуляемся, я знаю отличное местечко![/say]")
 
-		saynn("You get a strong feeling that you know exactly what she means by the.. spot.")
+		saynn("У тебя возникает стойкое ощущение, что ты прекрасно понимаешь, что именно она имеет в виду под этим... «местом».")
 
-		saynn("Mirri opens the blue glowing rift and invites you to crawl through.. you see your cell through it..")
+		saynn("Мирри открывает светящийся синим разлом и приглашает тебя пролезть сквозь него... сквозь него ты видишь свою камеру...")
 
-		saynn("[say=pc]Woo-oof..[/say]")
+		saynn("[say=pc]Ву-у-уф..[/say]")
 
-		saynn("Somehow that noise that came out on its own..")
+		saynn("Каким-то образом этот звук вырвался сам собой...")
 
-		saynn("[say=mirri]What? It will be fun![/say]")
+		saynn("[say=mirri]Что? Это будет весело![/say]")
 
-		saynn("She yanks you through..")
+		saynn("Она рывком затягивает тебя внутрь...")
 
-		addButton("Continue", "See what happens next", "subwalkies_tp")
+		addButton("Продолжить", "Смотреть, что будет дальше", "subwalkies_tp")
 	if(state == "subwalkies_tp"):
 		aimCameraAndSetLocName("cellblock_corridor_middle")
 		playAnimation(StageScene.PuppyDuo, "walk", {pc="mirri", npcAction="walk", npcBodyState={naked=true, leashedBy="mirri", hard=true}, flipNPC=true})
-		saynn("Mirri tugs you through the corridors of the prison. She looks around a lot, checking out the architecture of this place.. the place that has become a new home for you.")
+		saynn("Мирри тащит тебя по тюремным коридорам. Она постоянно оглядывается, изучая архитектуру этого места... места, которое стало для тебя новым домом.")
 
-		saynn("[say=mirri]I don't know what's more stupid, concrete and metal or wood and metal.[/say]")
+		saynn("[say=mirri]Даже не знаю, что глупее: бетон и металл или дерево и металл.[/say]")
 
-		saynn("The many inmates that you walk past stop just to check out the fancy leashed pup that is being led by a sexy pantsless catgirl. You two sure are standing out..")
+		saynn("Множество заключенных, мимо которых вы проходите, замирают, чтобы разглядеть шикарного пёсика на поводке, которого ведет сексуальная кошкодевочка без штанов. Вы двое определенно выделяетесь из толпы...")
 
-		saynn("[say=mirri]Yes, you all can pat. Just be careful, {pc.he} might bite.[/say]")
+		saynn("[say=mirri]Да, гладить можно всех. Только осторожнее, {pc.he} может и укусить.[/say]")
 
-		addButton("Continue", "See what happens next", "subwalkies_moreexplore")
+		addButton("Продолжить", "Смотреть, что будет дальше", "subwalkies_moreexplore")
 	if(state == "subwalkies_moreexplore"):
 		aimCameraAndSetLocName("main_punishment_spot")
 		playAnimation(StageScene.PuppyDuo, "walk", {pc="mirri", npcAction="walk", npcBodyState={naked=true, leashedBy="mirri", hard=true}, flipNPC=true})
-		saynn("Mirri's grin never goes away as she leads you through the prison corridors, her naked half-furry hips swaying confidently, her feline tail playfully flicking behind her as she tugs you along, her striped panties proudly presented to the eyes of others.")
+		saynn("Ухмылка Мирри не сходит с лица, пока она ведет тебя по тюремным коридорам; её полуголые полупушистые бёдра уверенно покачиваются, а кошачий хвост игриво дёргается позади, пока она тянет тебя за собой, гордо выставляя напоказ свои полосатые трусики перед взглядами окружающих.")
 
-		saynn("You encounter stairs.. your true nemesis. You just about manage to pull your paws onto the first step.. but the next ones Mirri has to help you with, janking you up by the leash.")
+		saynn("Перед вами лестница... ваш истинный заклятый враг. Тебе едва удаётся закинуть лапы на первую ступеньку... но со следующими Мирри приходится помогать, подтягивая тебя за поводок.")
 
-		saynn("[say=mirri]Such a clumsy animal, I love you.[/say]")
+		saynn("[say=mirri]Такая неуклюжая зверушка, обожаю тебя.[/say]")
 
-		saynn("As you walk past the punishment area, Mirri takes note of the many pillories.. with some of them being used.")
+		saynn("Когда вы проходите мимо зоны наказаний, Мирри отмечает множество колодок... причём некоторые из них сейчас используются.")
 
-		saynn("[say=mirri]Oh wow. Maybe your stupid little prison has some flair to it. I'm sure the captain stole this idea from one of our prisons. You guys steal everything that isn't bolted down.[/say]")
+		saynn("[say=mirri]Ого. Может, в вашей дурацкой тюрьме есть хоть какой-то стиль. Уверена, капитан подсмотрел эту идею в одной из наших тюрем. Вы, ребята, воруете всё, что не прибито к полу.[/say]")
 
-		saynn("She sees the yard.")
+		saynn("Она видит двор.")
 
-		saynn("[say=mirri]Oh, perfect. Let's go play on some grass![/say]")
+		saynn("[say=mirri]О, идеально. Пошли поваляемся на травке![/say]")
 
-		addButton("Continue", "See what happens next", "subwalkies_nova")
+		addButton("Продолжить", "Смотреть, что будет дальше", "subwalkies_nova")
 	if(state == "subwalkies_nova"):
 		addCharacter("nova")
 		playAnimation(StageScene.Duo, "stand", {pc="mirri", npc="nova"})
 		aimCameraAndSetLocName("yard_northCorridor")
-		saynn("Mirri follows the stone pathways while you are touching the grass with your new puppy paws..")
+		saynn("Мирри идет по каменным дорожкам, пока ты ощупываешь траву своими новыми щенячьими лапками...")
 
-		saynn("But as you turn around a corner, you suddenly run into another guard.")
+		saynn("Но стоит вам завернуть за угол, как вы внезапно натыкаетесь на другого охранника.")
 
-		saynn("[say=nova]Huh. Oh wow, such an adorable pup~.[/say]")
+		saynn("[say=nova]Хм. Ого, какой очаровательный щеночек~.[/say]")
 
-		saynn("[say=mirri]Takes one to know one.[/say]")
+		saynn("[say=mirri]Знает, как выглядит такой же, как она сама.[/say]")
 
-		saynn("A husky blocks your path. Her attention was glued to you.. but then the naked butt stole it.")
+		saynn("Пушистая заслоняет тебе путь. Сначала её внимание было приковано к тебе... но потом её украла твоя голая задница.")
 
-		saynn("[say=nova]Interesting armor.. configuration. You're one of the newbies? Don't remember seeing you around. What's your name?[/say]")
+		saynn("[say=nova]Интересная конфигурация... брони. Ты из новеньких? Не помню, чтобы видела тебя раньше. Как тебя зовут?[/say]")
 
-		saynn("Nova is trying to make out the badge. The tension is slowly rising..")
+		saynn("Нова пытается разглядеть значок. Напряжение медленно растет...")
 
-		saynn("[say=mirri]Hey, well, you're not running the default kit either, are you?[/say]")
+		saynn("[say=mirri]Эй, ну, ты ведь тоже не в стандартном снаряжении, верно?[/say]")
 
-		saynn("Nova looks into her wrist computer that is built into her armor.")
+		saynn("Нова заглядывает в наручный компьютер, встроенный в её броню.")
 
-		saynn("[say=nova]You didn't answer my..[/say]")
+		saynn("[say=nova]Ты так и не ответила на мой...[/say]")
 
-		saynn("Mirri blocks the screen with her paw, blocking it for Nova. Mirri goes full out, her tail wagging.")
+		saynn("Мирри перекрывает экран своей лапой, закрывая его от Новы. Мирри вовсю старается, виляя хвостом.")
 
-		saynn("[say=mirri]I recognize that. That is Syndicate tech. Should I file a report on your ass? Makes you look like some kind of spy, you know.[/say]")
+		saynn("[say=mirri]Узнаю эту штуку. Это технологии Синдиката. Может, мне составить рапорт на твою задницу? Выглядишь как какая-то шпионка, знаешь ли.[/say]")
 
-		saynn("Nova starts reaching for her stun baton.")
+		saynn("Нова тянется к своему электрошокеру.")
 
-		saynn("[say=nova]What is. Your. Name.[/say]")
+		saynn("[say=nova]Как. Тебя. Зовут.[/say]")
 
-		saynn("The bluff clearly didn't work.")
+		saynn("Блеф явно не сработал.")
 
-		saynn("[say=mirri]It's.. Kirri. Happy, stupid mutt?[/say]")
+		saynn("[say=mirri]Кирри... Это Кирри. Довольна, тупая дворняга?[/say]")
 
-		saynn("Nova squints and wraps her digits around the handle of her weapon.")
+		saynn("Нова прищуривается и обхватывает пальцами рукоять своего оружия.")
 
-		saynn("[say=nova]Your badge clearly says Officer Lyra.[/say]")
+		saynn("[say=nova]На твоем же жетоне четко написано: офицер Лира.[/say]")
 
-		saynn("[say=mirri]That is my.. that's my other name. And yes, I'm new around here. Don't be stupid.[/say]")
+		saynn("[say=mirri]Это мое... это мое другое имя. И да, я тут новенькая. Не тупи.[/say]")
 
-		saynn("Mirri's bullshit clearly isn't working. Her own paw begins to reach.. it begins to reach for her gun. You really don't like where this is going now..")
+		saynn("Вранье Мирри явно не прокатывает. Ее лапа начинает тянуться... тянуться к пистолету. Ты начинаешь понимать, что дело пахнет керосином...")
 
-		saynn("[say=mirri]You know, puppy.. I am just giving my personal little bitch a walk. I think we should just walk past each other and pretend that this little misunderstanding didn't happen.[/say]")
+		saynn("[say=mirri]Знаешь что, щеночек... Я просто выгуливаю свою личную сучку. Думаю, нам стоит просто разойтись и сделать вид, что этого недоразумения не было.[/say]")
 
-		saynn("[say=nova]Oh yeah? Try me.[/say]")
+		saynn("[say=nova]Да неужели? Ну, попробуй.[/say]")
 
-		saynn("Her paw reaches further..")
+		saynn("Ее лапа тянется всё дальше...")
 
-		saynn("[say=mirri]I will. You are making a huge mistake. This mistake might just cost you.. everything.. you know?[/say]")
+		saynn("[say=mirri]Будет тебе сделано. Ты совершаешь огромную ошибку. И эта ошибка может стоить тебе... всего.. понимаешь?[/say]")
 
-		saynn("[say=nova]I think I'm fixing a mistake right now. You and I are gonna go pay the warden a visit and see what they have to say.[/say]")
+		saynn("[say=nova]А мне кажется, что прямо сейчас я исправляю ошибку. Мы с тобой заглянем к надзирателю и послушаем, что он скажет.[/say]")
 
-		saynn("An unstoppable force has met an immovable object.. This is not how you saw your walkies going.")
+		saynn("Неудержимая сила столкнулась с неподвижным объектом... Твои прогулки явно шли не по такому сценарию.")
 
-		saynn("Mirri is giving you a sneaky stern look.")
+		saynn("Мирри бросает на тебя хитрый, строгий взгляд.")
 
-		addButton("Do nothing", "Just let it happen", "subwalkies_donothing")
-		addButton("Bark!", "Be a puppy", "subwalkies_barksavepuppy")
+		addButton("Ничего не делать", "Просто позволь этому случиться", "subwalkies_donothing")
+		addButton("Гав!", "Веди себя как щенок", "subwalkies_barksavepuppy")
 	if(state == "subwalkies_donothing"):
 		playAnimation(StageScene.Solo, "defeat", {pc="nova"})
 		removeCharacter("mirri")
 		GM.pc.setLocation("yard_northCorridor")
-		saynn("You decide to see how this will play out.")
+		saynn("Ты решаешь посмотреть, чем всё это закончится.")
 
-		saynn("Mirri frowns at you.. really hard. But you just shrug with your shoulders.")
+		saynn("Мирри хмурится на тебя.. ну очень сильно. Но ты лишь пожимаешь плечами.")
 
 		setFlag("SlaveAuctionModule.customMirriGreeting", "You fuck. You almost made me blow my cover, you stupid bitch. I would have easily made 6 new holes in that guard's face if I wanted to. Ugh, fuck you. I could destroy your whole stupid prison at any point, you know!? I need to calm down, bring me a slave to sell or something.")
-		saynn("[say=nova]So? What is it gonna.. AGH![/say]")
+		saynn("[say=nova]Ну и? Что это будет.. АГХ![/say]")
 
-		saynn("[say=mirri]Shut up.[/say]")
+		saynn("[say=mirri]Заткнись.[/say]")
 
-		saynn("A bright flash blinds you.. Nova hits the floor in an instant.")
+		saynn("Яркая вспышка ослепляет тебя.. Нова мгновенно падает на пол.")
 
-		saynn("The last thing you see is Mirri taking off in a random direction.. before disappearing into thin air.. like a ghost.")
+		saynn("Последнее, что ты видишь — это как Мирри срывается с места в случайном направлении.. а затем растворяется в воздухе.. словно призрак.")
 
-		saynn("[say=nova]Fuck.. My eyes. What the fuck what that.[/say]")
+		saynn("[say=nova]Блядь.. Глаза. Что это, сука, было?![/say]")
 
-		saynn("As you recover, you notice Nova.. on her knees.. seemingly fine.")
+		saynn("Придя в себя, ты замечаешь Нову.. она стоит на коленях.. и, кажется, с ней всё в порядке.")
 
-		saynn("Head is still buzzing like hell.")
+		saynn("В голове всё ещё чертовски гудит.")
 
-		saynn("[say=nova]Shit.. Where is that bitch? Did she disappear or something?[/say]")
+		saynn("[say=nova]Дерьмо.. Где эта сучка? Она что, реально испарилась?[/say]")
 
-		saynn("Nova looks at you.")
+		saynn("Нова смотрит на тебя.")
 
-		saynn("[say=nova]Who is that girl?[/say]")
+		saynn("[say=nova]Что это за девка?[/say]")
 
-		saynn("Probably best to play it dumb. You crawl up to the husky and nuzzle her face.")
+		saynn("Наверное, лучше прикинуться дурачком. Ты подползаешь к хаски и начинаешь ластиться к её мордочке.")
 
-		saynn("[say=pc]W-woof..[/say]")
+		saynn("[say=pc]Гав... гав..[/say]")
 
-		saynn("[say=nova]Adorable. Oh well, newbies these days, holy shit, they seriously need to learn their place.[/say]")
+		saynn("[say=nova]Милота какая. Ну да ладно, нынешние новички — просто пиздец, им реально пора бы уже выучить своё место.[/say]")
 
-		saynn("Nova gives you scritches and pats.")
+		saynn("Нова чешет тебя за ушком и гладит.")
 
-		saynn("[say=nova]You want more walkies?[/say]")
+		saynn("[say=nova]Хочешь ещё погулять?[/say]")
 
-		saynn("You shake your head.")
+		saynn("Ты качаешь головой.")
 
-		saynn("[say=nova]Aww. If you do, just hit me up, I love adorable puppies~. Let's get you out.[/say]")
+		saynn("[say=nova]Оууу. Если захочешь, только скажи, обожаю милых щеночков~. Пойдём, выберемся отсюда.[/say]")
 
-		saynn("Nova helps you to remove the bitchsuit.")
+		saynn("Нова помогает тебе снять сукбит.")
 
-		saynn("[say=nova]Don't get into trouble now. Or do~.[/say]")
+		saynn("[say=nova]Только не нарывайся на неприятности. Хотя... нарывайся~.[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "subwalkies_barksavepuppy"):
 		playAnimation(StageScene.PuppySexOral, "tease", {pc="nova", npc="pc", npcBodyState={naked=true, hard=true}})
-		saynn("Before the things can escalate any further, you decide to get your paws in this conflict. Without thinking much, you let out a loud cute bark, breaking the tension.")
+		saynn("Прежде чем ситуация накалится ещё сильнее, ты решаешь влезть в этот конфликт. Не особо задумываясь, ты издаёшь громкий милый лай, разряжая обстановку.")
 
-		saynn("[say=pc]WOOF![/say]")
+		saynn("[say=pc]ГАВ![/say]")
 
-		saynn("Second bark comes soon after.. and then a few more. You wiggle in your restraints like an excited puppy.")
+		saynn("Вскоре следует второй лай... а затем ещё несколько. Ты дёргаешься в своих путах, словно возбуждённый щенок.")
 
-		saynn("Nova's expression softens, she stops gripping the handle of her weapon and pats you instead.")
+		saynn("Выражение лица Новы смягчается; она разжимает пальцы на рукояти оружия и вместо этого ласково хлопает тебя по боку.")
 
-		saynn("[say=nova]Awww. This hecking pup is so adorable, I can't.[/say]")
+		saynn("[say=nova]Оууу. Этот чертов щенок такой милашка, просто нет слов![/say]")
 
-		saynn("Mirri raises a brow.. but stops reaching for her gun. Her smirk returns.")
+		saynn("Мирри приподнимает бровь, но перестает тянуться к пушке. На ее лице снова играет ухмылка.")
 
-		saynn("[say=mirri]Yeah, {pc.he} needed some walkies.[/say]")
+		saynn("[say=mirri]Да, {pc.he} явно нужно было прогуляться.[/say]")
 
-		saynn("[say=nova]Make sure to treat {pc.him} well~.[/say]")
+		saynn("[say=nova]Смотри, чтобы ты хорошо обращался с {pc.him}~.[/say]")
 
-		saynn("[say=mirri]Oh, of course. That bitch is gonna get my personal treatment~.[/say]")
+		saynn("[say=mirri]О, само собой. Эта сучка получит мой особый подход~.[/say]")
 
-		saynn("You keep up the act.. nuzzling the hand that pats you and barking enthusiastically.")
+		saynn("Ты продолжаешь играть роль... прижимаешься носом к ласковой руке и восторженно лаешь.")
 
-		saynn("[say=nova]But yeah. Make sure you report to the warden later, newbie.[/say]")
+		saynn("[say=nova]Но это точно. И не забудь потом доложить о себе надзирателю, новенький.[/say]")
 
-		saynn("[say=mirri]Of course. I will be sure to do that. It's not like I can just disappear from this place.[/say]")
+		saynn("[say=mirri]Конечно. Обязательно так и сделаю. Не то чтобы у меня был выбор — из этого места просто так не свалишь.[/say]")
 
-		saynn("Nova nods softly.")
+		saynn("Нова мягко кивает.")
 
-		saynn("[say=nova]Yeah-h-h.. Stay cute, puppy.[/say]")
+		saynn("[say=nova]Ага-а-а.. Оставайся таким же милашкой, щеночек.[/say]")
 
-		saynn("The guard gives you both one last glance before getting up.. and continuing her patrol.")
+		saynn("Стражница бросает на вас обоих последний взгляд, прежде чем подняться и продолжить свой патруль.")
 
-		addButton("Continue", "See what happens next", "subwalkies_aftersave")
+		addButton("Продолжить", "Смотреть, что будет дальше", "subwalkies_aftersave")
 	if(state == "subwalkies_aftersave"):
 		playAnimation(StageScene.PuppyDuo, "stand", {pc="mirri", npcBodyState={naked=true, leashedBy="mirri", hard=true}})
 		removeCharacter("nova")
-		saynn("As soon as Nova is gone, Mirri lets out a soft, relieved laugh.")
+		saynn("Как только Нова уходит, Мирри издает тихий, облегченный смешок.")
 
-		saynn("[say=mirri]Huh. That went better than expected.[/say]")
+		saynn("[say=mirri]Хм. Получилось даже лучше, чем ожидалось.[/say]")
 
-		saynn("She leans down and boops you on the nose.")
+		saynn("Она наклоняется и легонько тычет тебя пальцем в нос.")
 
-		saynn("[say=mirri]Love you, puppy, good idea to trick that bitch. I think my lovely bitch deserves something as a reward.. something big.[/say]")
+		saynn("[say=mirri]Люблю тебя, щеночек. Хорошая была идея — обхитрить эту сучку. Думаю, моя лапочка заслужила награду... что-нибудь эдакое.[/say]")
 
-		saynn("Something big.. She tugs on the leash, inviting you to follow back to your cell..")
+		saynn("Что-нибудь эдакое... Она дергает за поводок, приглашая тебя следовать за ней обратно в камеру...")
 
-		addButton("Follow", "See what she will do with you next..", "subpuppy_back")
+		addButton("Следовать", "Посмотрим, что она выкинет с тобой дальше...", "subpuppy_back")
 	if(state == "subpuppy_back"):
 		aimCameraAndSetLocName("market_intro")
-		saynn("As pushes you into the rift that her fancy toys have created.. you end back in her room.")
+		saynn("Она толкает тебя в разлом, созданный её навороченными игрушками... и ты оказываешься снова в её комнате.")
 
-		saynn("Mirri's smirk widens as she jogs to her special wardrobe, her eyes glowing in the dimly-lit space.. Her tail flicks excitedly as she rummages through her wide collection of toys.")
+		saynn("Ухмылка Мирри становится шире, когда она подбегает к своему особому гардеробу; её глаза светятся в полумраке, а хвост возбужденно подергивается, пока она рыщет в своей огромной коллекции игрушек.")
 
-		saynn("[say=mirri]You know, puppy..[/say]")
+		saynn("[say=mirri]Знаешь, щеночек..[/say]")
 
-		saynn("She purrs.. before pulling out a canine-shaped strapon dildo with a thick knot at the base.")
+		saynn("Она мурлычет.. прежде чем вытащить страпон в форме собачьего члена с толстым узлом у основания.")
 
-		saynn("[say=mirri]I think it's time I breed my bitch~.[/say]")
+		saynn("[say=mirri]Думаю, пришло время осеменить мою сучку~.[/say]")
 
-		addButton("Continue", "See what happens next", "subpuppy_putonstrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "subpuppy_putonstrapon")
 	if(state == "subpuppy_putonstrapon"):
 		playAnimation(StageScene.PuppySexOral, "tease", {pc="mirri", npc="pc", npcBodyState={naked=true, hard=true, leashedBy="mirri"}, bodyState={exposedCrotch=true}})
-		saynn("Your heart begins to pound as she straps the harness around her waist, the silicone length now swaying menacingly between her legs, covering up her kitty. Obviously it has that bulbous knot at the base.. what else would Mirri use..")
+		saynn("Твое сердце начинает бешено колотиться, пока она затягивает ремни портупеи на талии; силиконовый ствол теперь угрожающе покачивается между её ног, прикрывая киску. Очевидно, у него тот самый раздутый узел у основания.. что еще могла бы использовать Мирри..")
 
-		saynn("[say=pc]W-woof..[/say]")
+		saynn("[say=pc]Гав... гав..[/say]")
 
-		saynn("She snaps her fingers and points to the floor in front of her.")
+		saynn("Она щелкает пальцами и указывает на пол перед собой.")
 
-		saynn("[say=mirri]Hah. I knew you would like it. Now come here like a good bitch.[/say]")
+		saynn("[say=mirri]Хах. Я знала, что тебе понравится. А теперь иди сюда, хорошая сучка.[/say]")
 
-		saynn("You crawl over, still wearing the pieces of that bitchsuit.. Mirri crouches and grabs a fistful of your hair, forcing your face toward the toy, rubbing the tip of the dildo against your closed lips.")
+		saynn("Ты подползаешь, всё еще в обрывках того костюма сучки.. Мирри приседает и хватает тебя за прядь волос, прижимая твое лицо к игрушке и водя кончиком страпона по твоим сомкнутым губам.")
 
-		saynn("[say=mirri]I can always go in dry if you want.[/say]")
+		saynn("[say=mirri]Если хочешь, я могу войти и на сухую.[/say]")
 
-		saynn("Looks like saying no now is not an option..")
+		saynn("Похоже, сказать «нет» теперь уже не получится..")
 
-		addButton("Suck", "Get that toy wet", "subpuppy_suck")
+		addButton("Сосать", "Намочи эту игрушку", "subpuppy_suck")
 	if(state == "subpuppy_suck"):
 		playAnimation(StageScene.PuppySexOral, "sex", {pc="mirri", npc="pc", npcBodyState={naked=true, hard=true, leashedBy="mirri"}, bodyState={exposedCrotch=true}})
-		saynn("Slowly, you part your lips, feeling the cool silicone press against your tongue. Mirri isn't exactly the soft kind, instantly pushing more of her new length deeper into your mouth, grinning wickedly as the pointy tip triggers your gag reflex.")
+		saynn("Ты медленно приоткрываешь губы, чувствуя, как прохладный силикон упирается в язык. Мирри — вовсе не неженка: она тут же заталкивает свою новую игрушку еще глубже тебе в рот, злорадно ухмыляясь, когда острый кончик провоцирует у тебя рвотный рефлекс.")
 
-		saynn("[say=mirri]Good puppy. Such a lovely puppy.[/say]")
+		saynn("[say=mirri]Хорошая собачка. Какая прелестная собачка.[/say]")
 
-		saynn("She keeps thrusting the dildo in and out of your mouth with no mercy, making you take every inch apart from the knot.. while your tongue works on polishing it, giving the silicone that wet shiny appearance.")
+		saynn("Она безжалостно продолжает вбивать дилдо в твой рот и вынимать его, заставляя принимать каждый дюйм, кроме самого основания... пока твой язык старательно полирует его, придавая силикону влажный, блестящий вид.")
 
-		saynn("[say=mirri]Such a whore too, wow. Your chocking is making me so fucking wet.[/say]")
+		saynn("[say=mirri]И какая же ты шлюшка, вау. От того, как ты давишься, у меня становится так чертовски мокро.[/say]")
 
-		saynn("After a few degrading minutes of forcing you to suck and slurp on the dildo, she pulls out..")
+		saynn("После нескольких минут унизительного сосания и чавканья дилдо, она вытаскивает его...")
 
-		addButton("Present ass", "Mirri will peg you", "subpuppy_ass")
-		addButtonWithChecks("Present pussy", "Mirri will fuck your pussy", "subpuppy_pussy", [], [[ButtonChecks.HasReachableVagina]])
+		addButton("Показать задницу", "Мирри сделает тебе пеггинг", "subpuppy_ass")
+		addButtonWithChecks("Показать киску", "Мирри оттрахает твою киску", "subpuppy_pussy", [], [[ButtonChecks.HasReachableVagina]])
 	if(state == "subpuppy_ass"):
 		playAnimation(StageScene.PuppySexAllFours, "sex", {pc="mirri", npc="pc", bodyState={exposedCrotch=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Mirri jumps behind you and grabs your hips, quickly aligning herself against your exposed {pc.analStretch} tailhole.")
+		saynn("Мирри запрыгивает тебе за спину и хватает за бедра, быстро пристраиваясь к твоему обнаженному {pc.analStretch} анусу.")
 
-		saynn("Without warning, she pushes the dildo inside, making you groan as it stretches you open, your anal star opening wide.")
+		saynn("Без предупреждения она вгоняет дилдо внутрь, заставляя тебя застонать от того, как он растягивает тебя, широко раздвигая твой анус.")
 
-		saynn("[say=mirri]You feel that? Gonna breed your ass.[/say]")
+		saynn("[say=mirri]Чувствуешь? Сейчас я заселю твою задницу.[/say]")
 
-		saynn("She purrs while your inner walls grip the wet toy, your fuckhole clenching around the sudden intruding object.")
+		saynn("Она мурлычет, пока твои внутренние стенки обхватывают влажную игрушку, а дырка сжимается вокруг внезапно вошедшего предмета.")
 
-		saynn("[say=pc]W..woo-of..[/say]")
+		saynn("[say=pc]О..о боже..[/say]")
 
-		saynn("She giggles, enjoying your struggle, her hands gripping your ass tightly as she thrusts deeper, the knot already teasing your rim.")
+		saynn("Она хихикает, наслаждаясь твоей борьбой; её руки крепко сжимают твою задницу, пока она всаживается всё глубже, а узел уже дразнит твой анус.")
 
-		saynn("[say=mirri]That's what a good bitch gets.[/say]")
+		saynn("[say=mirri]Вот что получает хорошая сучка.[/say]")
 
 		if (GM.pc.hasPenis()):
-			saynn("Each thrust is rough and deliberate, the thick toy pressing against your prostate, sending waves of pleasure through your body. You try to stay quiet.. but the sensation is overwhelming, your {pc.penis} stiffens and throbs, leaking pre onto the floor as Mirri rails your ass, the knot teasing but never quite pushing in all the way.")
+			saynn("Каждый толчок грубый и размеренный: толстая игрушка давит на твою простату, посылая волны удовольствия по всему телу. Ты пытаешься вести себя тихо... но ощущения зашкаливают, твой {pc.penis} напрягается и пульсирует, капая предэякулятом на пол, пока Мирри трахает твою задницу, а узел дразнит, но так и не входит до конца.")
 
 		elif (GM.pc.hasVagina()):
-			saynn("Each thrust is rough and deliberate, the thick toy subtly massaging your pleasure spot through the inner wall, sending waves of pleasure through your body. You try to stay quiet.. but the sensation is overwhelming, your pussy dripping juices profusely as Mirri rails your ass, the knot teasing but never quite pushing in all the way.")
+			saynn("Каждый толчок грубый и размеренный: толстая игрушка мягко массирует твою точку удовольствия через внутреннюю стенку, посылая волны наслаждения по всему телу. Ты пытаешься вести себя тихо... но ощущения зашкаливают, твоя киска обильно течет, пока Мирри трахает твою задницу, а узел дразнит, но так и не входит до конца.")
 
 		else:
-			saynn("Each thrust is rough and deliberate, the thick toy pressing against your pleasure spot, sending waves of pleasure through your body. You try to stay quiet.. but the sensation is overwhelming, various lewd noises escape you as Mirri rails your ass, the knot teasing but never quite pushing in all the way.")
+			saynn("Каждый толчок грубый и размеренный: толстая игрушка давит на твою точку удовольствия, посылая волны наслаждения по всему телу. Ты пытаешься вести себя тихо... но ощущения зашкаливают, из тебя вырываются всякие похотливые звуки, пока Мирри трахает твою задницу, а узел дразнит, но так и не входит до конца.")
 
-		addButton("Continue", "See what happens next", "subpuppy_ass_fast")
+		addButton("Продолжить", "Смотреть, что будет дальше", "subpuppy_ass_fast")
 	if(state == "subpuppy_ass_fast"):
 		playAnimation(StageScene.PuppySexAllFours, "fast", {pc="mirri", npc="pc", bodyState={exposedCrotch=true}, npcBodyState={naked=true, hard=true}, npcCum=true})
-		saynn("[say=mirri]You love this, don't you?[/say]")
+		saynn("[say=mirri]Тебе ведь это нравится, правда?[/say]")
 
-		saynn("Mirri purrs louder, her hips slamming against you harder, her breath hot against your back as you rock back and forth on your paws.")
+		saynn("Мирри мурлычет громче, её бёдра с силой вжимаются в тебя, её горячее дыхание обжигает твою спину, пока ты раскачиваешься на своих лапах.")
 
-		saynn("[say=mirri]My little puppy, begging to get knotted.[/say]")
+		saynn("[say=mirri]Мой маленький щеночек, так жаждешь узла.[/say]")
 
 		if (GM.pc.hasPenis()):
-			saynn("You're panting now, the intense pleasure building with every thrust. The way the dildo rubs against your prostate makes it impossible to hold back. Your cock pulses"+str(" in its little cage" if GM.pc.isWearingChastityCage() else "")+", and before you can stop it, you cum hard, ropes of thick {pc.cum} shooting out, splattering onto the cold wooden floor beneath you. Your whole body shudders as you're forced to ride the waves of your orgasm, every second is pure bliss, elevated by the relentless thrusting in your ass.")
+			saynn("Ты тяжело дышишь, интенсивное удовольствие нарастает с каждым толчком. То, как дилдо трётся о твою простату, не даёт сдержаться. Твой член пульсирует"+str(" in its little cage" if GM.pc.isWearingChastityCage() else "")+", и прежде чем ты успеваешь это остановить, ты кончаешь на полную, толчками вылетают густые струи {pc.cum}, разбрызгиваясь по холодному деревянному полу под тобой. Всё твоё тело содрогается, когда тебя накрывает волной оргазма; каждая секунда — чистое блаженство, усиленное неумолимыми толчками в задницу.")
 
 		elif (GM.pc.hasVagina()):
-			saynn("You're panting now, the intense pleasure building with every thrust. The way the fat dildo rubs your g-spot through the inner wall makes it impossible to hold back. Your {pc.vaginaStretch} pussy pulses, and before you can stop it, you cum hard, a shower of your girlcum shooting out, splattering onto the cold wooden floor beneath you. Your whole body shudders as you're forced to ride the waves of your orgasm, every second is pure bliss, elevated by the relentless thrusting in your ass.")
+			saynn("Ты тяжело дышишь, интенсивное удовольствие нарастает с каждым толчком. То, как толстый дилдо трётся о твою точку G через внутреннюю стенку, не даёт сдержаться. Твоя {pc.vaginaStretch} киска пульсирует, и прежде чем ты успеваешь это остановить, ты кончаешь на полную, фонтаном брызжет твоя девичья смазка, разлетаясь по холодному деревянному полу под тобой. Всё твоё тело содрогается, когда тебя накрывает волной оргазма; каждая секунда — чистое блаженство, усиленное неумолимыми толчками в задницу.")
 
 		else:
-			saynn("You're panting now, the intense pleasure building with every thrust. The way the dildo rubs against your sensitive spots makes it impossible to hold back. Your tailhole pulses, and before you can stop it, you cum hard. Your whole body shudders as you're forced to ride the waves of your orgasm, every second is pure bliss, elevated by the relentless thrusting in your ass.")
+			saynn("Ты тяжело дышишь, интенсивное удовольствие нарастает с каждым толчком. То, как дилдо трётся о твои чувствительные точки, не даёт сдержаться. Твоё анусное отверстие пульсирует, и прежде чем ты успеваешь это остановить, ты кончаешь на полную. Всё твоё тело содрогается, когда тебя накрывает волной оргазма; каждая секунда — чистое блаженство, усиленное неумолимыми толчками в задницу.")
 
-		saynn("Mirri's giggling echoes in your ears as she notices your peak.")
+		saynn("В ушах эхом отдается хихиканье Мирри, заметившей твой пик.")
 
-		saynn("[say=mirri]Already, puppy? How pathetic. I'm not even..[/say]")
+		saynn("[say=mirri]Уже, щенок? Как жалко. Я ведь даже еще..[/say]")
 
-		addButton("Continue", "See what happens next", "subpuppy_ass_knot")
+		addButton("Продолжить", "Смотреть, что будет дальше", "subpuppy_ass_knot")
 	if(state == "subpuppy_ass_knot"):
 		playAnimation(StageScene.PuppySexAllFours, "inside", {pc="mirri", npc="pc", bodyState={exposedCrotch=true}, npcBodyState={naked=true, hard=true}, npcCum=true})
 		if (GM.pc.hasPenis()):
-			saynn("With one final push, she forces the whole length of the toy deep into your ass, stretching you to your limits, the knot locking inside you. The pressure sends you over the edge once more, your cock pulsing as another dribble of your seed leaks from your overstimulated body, coupled with a passionate moan.")
+			saynn("Одним финальным толчком она вгоняет игрушку целиком глубоко в твою задницу, растягивая тебя до предела, пока узел застревает внутри. Давление снова заставляет тебя сорваться в экстаз; твой член пульсирует, а из перестимулированного тела вытекает очередная порция семени, сопровождаемая страстным стоном.")
 
 		elif (GM.pc.hasVagina()):
-			saynn("With one final push, she forces the whole length of the toy deep into your ass, stretching you to your limits, the knot locking inside you. The pressure sends you over the edge once more, your pussy clenching as another dribble of your girlcum leaks from your overstimulated body, coupled with a passionate moan.")
+			saynn("Одним финальным толчком она вгоняет игрушку целиком глубоко в твою задницу, растягивая тебя до предела, пока узел застревает внутри. Давление снова заставляет тебя сорваться в экстаз; твоя киска сжимается, а из перестимулированного тела вытекает очередная порция девичьей смазки, сопровождаемая страстным стоном.")
 
 		else:
-			saynn("With one final push, she forces the whole length of the toy deep into your ass, stretching you to your limits, the knot locking inside you. The pressure sends you over the edge once more, your ass clenching hard.")
+			saynn("Одним финальным толчком она вгоняет игрушку целиком глубоко в твою задницу, растягивая тебя до предела, пока узел застревает внутри. Давление снова заставляет тебя сорваться в экстаз, и твоя задница сильно сжимается.")
 
-		saynn("[say=mirri]There we go. Bred like the good bitch that you are.[/say]")
+		saynn("[say=mirri]Вот так. Оплодотворен, как и подобает хорошей сучке.[/say]")
 
-		saynn("She gives a few more slow, grinding thrusts, enjoying every second of your body trembling beneath her.")
+		saynn("Она делает еще несколько медленных, втирающихся толчков, наслаждаясь каждой секундой того, как твое тело дрожит под ней.")
 
-		saynn("[say=mirri]Now give me my toy back, slut~.[/say]")
+		saynn("[say=mirri]А теперь верни мне мою игрушку, шлюшка~.[/say]")
 
-		saynn("Finally, after what feels like an eternity, she pulls out, the knot popping free with a wet noise.")
+		saynn("Наконец, спустя вечность, она вытаскивает игрушку, и узел с влажным звуком освобождается.")
 
 		setFlag("SlaveAuctionModule.customMirriGreeting", "Hello, lovely pup. How is your ass, still sore I hope?")
-		addButton("Continue", "See what happens next", "subpuppy_after_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "subpuppy_after_sex")
 	if(state == "subpuppy_pussy"):
 		playAnimation(StageScene.PuppySexAllFours, "sex", {pc="mirri", npc="pc", bodyState={exposedCrotch=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Mirri jumps behind you and grabs your hips, quickly aligning herself against your exposed {pc.pussyStretch} pussy.")
+		saynn("Мирри запрыгивает тебе на спину и хватает за бедра, быстро пристраиваясь к твоей обнаженной {pc.pussyStretch} киске.")
 
-		saynn("Without warning, she pushes the dildo inside, making you groan as it stretches you open, your needy flower opening wide.")
+		saynn("Без предупреждения она вгоняет дилдо внутрь, заставляя тебя застонать от того, как он растягивает тебя, заставляя твой жаждущий цветок раскрыться широко.")
 
-		saynn("[say=mirri]You feel that? Gonna breed you.[/say]")
+		saynn("[say=mirri]Чувствуешь? Сейчас я тебя осеменю.[/say]")
 
-		saynn("She purrs while your inner walls grip the wet toy, your fuckhole clenching around the sudden intruding object.")
+		saynn("Она мурлычет, пока твои внутренние стенки обхватывают влажную игрушку, а дырка сжимается вокруг внезапно вошедшего предмета.")
 
-		saynn("[say=pc]W..woo-of..[/say]")
+		saynn("[say=pc]О..о боже..[/say]")
 
-		saynn("She giggles, enjoying your struggle, her hands gripping your ass tightly as she thrusts deeper, the knot already teasing your slick folds.")
+		saynn("Она хихикает, наслаждаясь твоей борьбой; её руки крепко сжимают твою задницу, пока она вбивается всё глубже, а узел уже дразнит твои влажные складки.")
 
-		saynn("[say=mirri]That's what a good bitch gets.[/say]")
+		saynn("[say=mirri]Вот что получает хорошая сучка.[/say]")
 
 		if (GM.pc.hasPenis()):
-			saynn("Each thrust is rough and deliberate, the thick toy pressing against your g-spot, sending waves of pleasure through your body. You try to stay quiet.. but the sensation is overwhelming, your {pc.penis} stiffens and throbs, leaking pre onto the floor as Mirri rails your cunt, the knot teasing but never quite pushing in all the way.")
+			saynn("Каждый толчок грубый и размеренный, толстая игрушка давит на твою точку G, посылая волны наслаждения по всему телу. Ты пытаешься не шуметь... но ощущения зашкаливают, твой {pc.penis} напрягается и пульсирует, капая предэякулятом на пол, пока Мирри трахает твою киску, а узел дразнит, но так и не входит до конца.")
 
 		else:
-			saynn("Each thrust is rough and deliberate, the thick toy massaging your pleasure spot hard, sending waves of pleasure through your body. You try to stay quiet.. but the sensation is overwhelming, your pussy dripping juices profusely as Mirri rails it, the knot teasing but never quite pushing in all the way.")
+			saynn("Каждый толчок грубый и размеренный, толстая игрушка с силой массирует твою точку удовольствия, посылая волны наслаждения по всему телу. Ты пытаешься не шуметь... но ощущения зашкаливают, твоя киска обильно течет соками, пока Мирри трахает её, а узел дразнит, но так и не входит до конца.")
 
-		addButton("Continue", "See what happens next", "subpuppy_pussy_fast")
+		addButton("Продолжить", "Смотреть, что будет дальше", "subpuppy_pussy_fast")
 	if(state == "subpuppy_pussy_fast"):
 		playAnimation(StageScene.PuppySexAllFours, "fast", {pc="mirri", npc="pc", bodyState={exposedCrotch=true}, npcBodyState={naked=true, hard=true}, npcCum=true})
-		saynn("[say=mirri]You love this, don't you?[/say]")
+		saynn("[say=mirri]Тебе ведь это нравится, правда?[/say]")
 
-		saynn("Mirri purrs louder, her hips slamming against you harder, her breath hot against your back as you rock back and forth on your paws.")
+		saynn("Мирри мурлычет громче, её бёдра с силой вжимаются в тебя, её горячее дыхание обжигает твою спину, пока ты раскачиваешься на своих лапах.")
 
-		saynn("[say=mirri]My little puppy, begging to get knotted.[/say]")
+		saynn("[say=mirri]Мой маленький щеночек, так жаждешь узла.[/say]")
 
 		if (GM.pc.hasPenis()):
-			saynn("You're panting now, the intense pleasure building with every thrust. The way the dildo rubs against your pleasure spot makes it impossible to hold back. Your cock pulses"+str(" in its little cage" if GM.pc.isWearingChastityCage() else "")+", and before you can stop it, you cum hard, ropes of thick {pc.cum} shooting out, splattering onto the cold wooden floor beneath you, your pussy clenching hard around the silicon shaft. Your whole body shudders as you're forced to ride the waves of your orgasm, every second is pure bliss, elevated by the relentless thrusting.")
+			saynn("Ты уже тяжело дышишь, интенсивное удовольствие нарастает с каждым толчком. То, как дилдо трется о твою точку удовольствия, не дает сдержаться. Твой член пульсирует"+str(" in its little cage" if GM.pc.isWearingChastityCage() else "")+", и прежде чем ты успеваешь это остановить, ты кончаешь на полную, струи густого {pc.cum} вылетают наружу, забрызгивая холодный деревянный пол под тобой, а твоя киска судорожно сжимается вокруг силиконового стержня. Всё твоё тело содрогается, когда тебя накрывает волной оргазма; каждая секунда — чистое блаженство, усиленное этими неумолимыми толчками.")
 
 		else:
-			saynn("You're panting now, the intense pleasure building with every thrust. The way the fat dildo rubs your g-spot makes it impossible to hold back. Your {pc.vaginaStretch} pussy pulses, and before you can stop it, you cum hard, a shower of your girlcum shooting out, splattering onto the cold wooden floor beneath you, your inner walls clench. Your whole body shudders as you're forced to ride the waves of your orgasm, every second is pure bliss, elevated by the relentless thrusting.")
+			saynn("Ты тяжело дышишь, и с каждым толчком удовольствие становится всё невыносимее. То, как жирный дилдо натирает твою точку G, не даёт сдерживаться. Твоя {pc.vaginaStretch} киска пульсирует, и прежде чем ты успеваешь что-то предпринять, ты кончаешь напропалую: фонтан твоей девичьей спермы разлетается брызгами по холодному деревянному полу под тобой, а внутренние стенки сжимаются в спазме. Всё твоё тело содрогается, когда тебя накрывает волной оргазма — каждая секунда это чистейшее блаженство, подстегиваемое этими беспощадными толчками.")
 
-		saynn("Mirri's giggling echoes in your ears as she notices your peak.")
+		saynn("В ушах эхом отдается хихиканье Мирри, заметившей твой пик.")
 
-		saynn("[say=mirri]Already, puppy? How pathetic. I'm not even..[/say]")
+		saynn("[say=mirri]Уже, щенок? Как жалко. Я ведь даже еще..[/say]")
 
-		addButton("Continue", "See what happens next", "subpuppy_pussy_knot")
+		addButton("Продолжить", "Смотреть, что будет дальше", "subpuppy_pussy_knot")
 	if(state == "subpuppy_pussy_knot"):
 		playAnimation(StageScene.PuppySexAllFours, "inside", {pc="mirri", npc="pc", bodyState={exposedCrotch=true}, npcBodyState={naked=true, hard=true}, npcCum=true})
 		if (GM.pc.hasPenis()):
-			saynn("With one final push, she forces the whole length of the toy deep into your slit, stretching you to your limits, the knot locking inside you, the tip breaking into your womb. The pressure sends you over the edge once more, your cock pulsing as another dribble of your seed leaks from your overstimulated body, coupled with a passionate moan.")
+			saynn("Одним финальным рывком она вгоняет игрушку целиком глубоко в твою щель, растягивая тебя до предела; узел застревает внутри, а кончик упирается прямо в матку. От этого давления тебя снова срывает в экстаз: твой член пульсирует, пока из перестимулированного тела вытекает очередная порция семени, сопровождаемая страстным стоном.")
 
 		else:
-			saynn("With one final push, she forces the whole length of the toy deep into your slit, stretching you to your limits, the knot locking inside you, the tip breaking into your womb. The pressure sends you over the edge once more, your pussy clenching hard as another dribble of your girlcum leaks from your overstimulated body, coupled with a passionate moan.")
+			saynn("Одним финальным рывком она вгоняет игрушку целиком глубоко в твою щель, растягивая тебя до предела; узел застревает внутри, а кончик упирается прямо в матку. От этого давления тебя снова срывает в экстаз: твоя киска судорожно сжимается, пока из перестимулированного тела вытекает очередная порция девичьей спермы, сопровождаемая страстным стоном.")
 
-		saynn("[say=mirri]There we go. Bred like the good bitch that you are.[/say]")
+		saynn("[say=mirri]Вот так. Оплодотворен, как и подобает хорошей сучке.[/say]")
 
-		saynn("She gives a few more slow, grinding thrusts, enjoying every second of your body trembling beneath her.")
+		saynn("Она делает еще несколько медленных, втирающихся толчков, наслаждаясь каждой секундой того, как твое тело дрожит под ней.")
 
-		saynn("[say=mirri]Now give me my toy back, slut~.[/say]")
+		saynn("[say=mirri]А теперь верни мне мою игрушку, шлюшка~.[/say]")
 
-		saynn("Finally, after what feels like an eternity, she pulls out, the knot popping free with a wet noise.")
+		saynn("Наконец, спустя вечность, она вытаскивает игрушку, и узел с влажным звуком освобождается.")
 
 		setFlag("SlaveAuctionModule.customMirriGreeting", "Hello, lovely pup. How is your pussy, still sore I hope?")
-		addButton("Continue", "See what happens next", "subpuppy_after_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "subpuppy_after_sex")
 	if(state == "subpuppy_after_sex"):
 		playAnimation(StageScene.PuppyDuo, "stand", {pc="mirri", npcAction="sad", npcBodyState={naked=true, leashedBy="mirri", hard=true}})
-		saynn("Mirri steps back, admiring her work.. while you just sprawl all over the floor. She gives your ass a sharp slap.")
+		saynn("Мирри отступает назад, любуясь своей работой... пока ты просто распластанная по полу. Она отвешивает тебе звонкий шлепок по заднице.")
 
-		saynn("[say=mirri]That's a good puppy. Kitties will always be above pups, you better remember that.[/say]")
+		saynn("[say=mirri]Хорошая собачка. Кошечки всегда будут выше щенков, лучше тебе это запомнить.[/say]")
 
-		saynn("You pant heavily.. until Mirri finally decides to start removing the puppy restraints.")
+		saynn("Ты тяжело дышишь... пока Мирри наконец не решает начать снимать щенячьи оковы.")
 
-		saynn("[say=mirri]Such a mess you left. Was fun though.[/say]")
+		saynn("[say=mirri]Ну и бардак же ты тут устроила. Хотя было весело.[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "dom_about_to_fight"):
 		playAnimation(StageScene.Duo, "stand", {npc="mirri"})
 		if (!getFlag("SlaveAuctionModule.firstTimeDom")):
-			saynn("[say=pc]The more I think about it.. the more I realize. You are the sextoy here, Mirri.[/say]")
+			saynn("[say=pc]Чем больше я об этом думаю... тем больше осознаю. Здесь секс-игрушка — это ты, Мирри.[/say]")
 
-			saynn("Mirri licks her lips, leaning to the side, the outline of her butt highlighted by the dark lights.")
+			saynn("Мирри облизывает губы и наклоняется в сторону, так что в полумраке отчетливо проступают контуры её задницы.")
 
-			saynn("[say=mirri]You can think? That's a new one.[/say]")
+			saynn("[say=mirri]Ты умеешь думать? Это что-то новенькое.[/say]")
 
-			saynn("[say=pc]I'm the brains of this operation, you know. And you're just my puppet, saying what I want you to say.[/say]")
+			saynn("[say=pc]Вообще-то, мозги в этой операции — это я. А ты всего лишь моя марионетка, которая говорит то, что я ей велю.[/say]")
 
-			saynn("She hums and openly licks her teeth now.")
+			saynn("Она мурлычет и теперь открыто облизывает зубы.")
 
-			saynn("[say=mirri]And what should I say now?[/say]")
+			saynn("[say=mirri]И что же мне сказать теперь?[/say]")
 
-			saynn("[say=pc]I submit.[/say]")
+			saynn("[say=pc]Сдаюсь.[/say]")
 
-			saynn("She giggles and takes an offensive stance.")
+			saynn("Она хихикает и принимает вызывающую позу.")
 
-			saynn("[say=mirri]Haha. I love how cute you are, {pc.name}.. Over my dead body, bitch.[/say]")
+			saynn("[say=mirri]Ха-ха. Обожаю, какая ты милашка, {pc.name}... Только через мой труп, сучка.[/say]")
 
 		else:
-			saynn("You put on your dominant stare. Mirri puts on her mean one.")
+			saynn("Ты принимаешь властный вид. Мирри отвечает тебе вызывающим взглядом.")
 
-			saynn("[say=pc]Let's skip the foreplay, baby. You and I know how this will end.[/say]")
+			saynn("[say=pc]Давай пропустим прелюдию, крошка. Мы обе знаем, чем всё закончится.[/say]")
 
-			saynn("[say=mirri]Haha, fuck you. You don't understand, seeing them struggle is the best part.[/say]")
+			saynn("[say=mirri]Ха-ха, иди нахуй. Ты просто не понимаешь: наблюдать за их борьбой — это самое сладкое.[/say]")
 
-			saynn("Both of you raise your fists.")
+			saynn("Вы оба сжимаете кулаки.")
 
-			saynn("[say=pc]Let's see you struggle then.[/say]")
+			saynn("[say=pc]Ну тогда посмотрим, как ты будешь извиваться![/say]")
 
-		addButton("Fight", "Start the fight", "dom_start_fight")
+		addButton("Драться", "Начать бой", "dom_start_fight")
 		if (getFlag("SlaveAuctionModule.mirriCanSkipCombat", false)):
-			addButton("(Skip fight)", "You know that you are stronger already!", "dom_fight_won")
+			addButton("(Пропустить драку)", "Ты понимаешь, что уже сильнее!", "dom_fight_won")
 	if(state == "dom_fight_lost"):
 		playAnimation(StageScene.Duo, "defeat", {npc="mirri"})
-		saynn("You hit the floor, unable to continue fighting. Mirri giggles.")
+		saynn("Ты рушишься на пол, не в силах продолжать бой. Мирри хихикает.")
 
-		saynn("[say=mirri]Wow, you seriously suck ass![/say]")
+		saynn("[say=mirri]Ого, да ты реально полный отстой![/say]")
 
-		saynn("[say=pc]Fuck you..[/say]")
+		saynn("[say=pc]Да пошла ты...[/say]")
 
-		saynn("She stops smiling and puts on mean eyes, her paw reaches out to grab you by the collar.")
+		saynn("Она перестает улыбаться и делает взгляд свирепым, протягивая лапу, чтобы схватить тебя за воротник.")
 
-		saynn("[say=mirri]You're saying that you don't suck ass?[/say]")
+		saynn("[say=mirri]То есть ты хочешь сказать, что не сосёшь жопу?[/say]")
 
-		saynn("[say=pc]I don't, fuck off.[/say]")
+		saynn("[say=pc]Не сосу, отъебись.[/say]")
 
-		saynn("[say=mirri]That's when I grab your hair.. and make your cute face love my thick ass.[/say]")
+		saynn("[say=mirri]И вот тогда я хватаю тебя за волосы... и заставляю твоё милое личико полюбить мою толстую задницу.[/say]")
 
-		addButton("Pull away", "You'd rather not", "endthescene")
+		addButton("Отстраниться", "Ты бы предпочел этого не делать", "endthescene")
 	if(state == "dom_fight_won"):
 		playAnimation(StageScene.Duo, "stand", {npc="mirri", npcAction="defeat"})
-		saynn("Mirri hits the floor, unable to continue fighting.. she quickly begins reaching for her gun. That's why your hand yanks hard on her ponytail.")
+		saynn("Мирри валится на пол, не в силах продолжать бой... она быстро тянется к своему пистолету. Именно поэтому ты резко дергаешь её за хвост.")
 
-		saynn("[say=pc]Don't you dare.[/say]")
+		saynn("[say=pc]Только посмей.[/say]")
 
-		saynn("[say=mirri]Agh.. haha.. Afraid the kitty is gonna make a few new holes in you? Do you know who I am?[/say]")
+		saynn("[say=mirri]Агх.. ха-ха.. Боишься, что киска сделает в тебе пару новых дырочек? Ты хоть знаешь, кто я такая?[/say]")
 
-		saynn("Her paw keeps reaching.. Your second hand lands on her neck.")
+		saynn("Её лапа продолжает тянуться... Твоя вторая рука ложится ей на шею.")
 
-		saynn("[say=pc]You're a spoiled brat.[/say]")
+		saynn("[say=pc]Ты просто избалованная дрянь.[/say]")
 
-		saynn("She pouts and glares up at you with defiance. Her hand pulls out the gun.. but your leg just kicks it, making her send her gun sliding away across the floor.")
+		saynn("Она дует губы и вызывающе смотрит на тебя снизу вверх. Её рука выхватывает пистолет... но ты просто сбиваешь его ногой, и оружие со свистом улетает по полу.")
 
-		saynn("[say=mirri]Oops.. my toy is gone. I can still murder you with just my claws.[/say]")
+		saynn("[say=mirri]Ой.. моя игрушка улетела. Но я всё ещё могу прикончить тебя одними когтями.[/say]")
 
-		saynn("She tilts her head a bit, causing your hand to pull out a few extra red hairs.")
+		saynn("Она слегка наклоняет голову, из-за чего твоя рука выдергивает еще несколько рыжих волосков.")
 
-		saynn("[say=mirri]AlphaCorp slave~.[/say]")
+		saynn("[say=mirri]Рабыня АльфаКорпа~.[/say]")
 
-		saynn("Mirri starts trying to break out, her clawed paws scratching your hands.. but you don't let go.")
+		saynn("Мирри пытается вырваться, царапая твои ладони когтями... но ты не выпускаешь её.")
 
-		saynn("[say=mirri]Take your hands off me, you bitch..[/say]")
+		saynn("[say=mirri]Убери от меня свои клешни, сука..[/say]")
 
-		saynn("What do you wanna do with her?")
+		saynn("Что хочешь с ней сделать?")
 
-		addButton("Nothing", "Just let her go", "dom_nothing")
-		addButtonWithChecks("Hatefuck", "Breed the bitch", "dom_hatefuck", [], [[ButtonChecks.HasReachablePenis]])
-		addButtonWithChecks("Strapon hatefuck", "Use a strapon against this bitch", "dom_straponfuck_pick", [], [[ButtonChecks.HasStraponAndCanWear]])
-		addButtonWithChecks("Rough anal", "Punish her ass with your cock", "dom_anal", [], [[ButtonChecks.HasReachablePenis]])
-		addButton("Spank her", "Punish her for being such a bad girl", "dom_spank")
-		addButton("Auction roleplay", "Pretend to sell Mirri off at an auction", "dom_rp")
+		addButton("Ничего", "Просто отпусти её", "dom_nothing")
+		addButtonWithChecks("Хейтфак", "Отработайте сучку", "dom_hatefuck", [], [[ButtonChecks.HasReachablePenis]])
+		addButtonWithChecks("Хейтфак со страпоном", "Использовать страпон против этой сучки", "dom_straponfuck_pick", [], [[ButtonChecks.HasStraponAndCanWear]])
+		addButtonWithChecks("Грубый анальный секс", "Наказать её задницу своим членом", "dom_anal", [], [[ButtonChecks.HasReachablePenis]])
+		addButton("Отшлепать её", "Накажи её за то, что она такая плохая девочка", "dom_spank")
+		addButton("Ролевая игра: Аукцион", "Притвориться, что продаёшь Мирри на аукционе", "dom_rp")
 	if(state == "dom_nothing"):
 		playAnimation(StageScene.Duo, "stand", {npc="mirri"})
-		saynn("You do what she tells you to do and pull your hands away from her hair and neck.")
+		saynn("Ты делаешь то, что она говорит, и убираешь руки от её волос и шеи.")
 
-		saynn("[say=pc]Get up.[/say]")
+		saynn("[say=pc]Вставай.[/say]")
 
-		saynn("Mirri tilts her head, her eyes confused.")
+		saynn("Мирри наклоняет голову, в её глазах читается замешательство.")
 
-		saynn("[say=pc]Get up, Mirri.[/say]")
+		saynn("[say=pc]Вставай, Мирри.[/say]")
 
-		saynn("[say=mirri]Is this a trick? I will get up and you will throw me?[/say]")
+		saynn("[say=mirri]Это ловушка? Я встану, а ты меня швырнёшь?[/say]")
 
-		saynn("You sigh and pull her up.")
+		saynn("Ты вздыхаешь и поднимаешь её.")
 
-		saynn("[say=pc]You are my bitch. But I changed my mind.[/say]")
+		saynn("[say=pc]Ты моя сучка. Но я передумал.[/say]")
 
-		saynn("She blinks a lot.")
+		saynn("Она часто моргает.")
 
-		saynn("[say=mirri]Oh. What a softie! I won then![/say]")
+		saynn("[say=mirri]Оу. Какая же ты размазня! Значит, я выиграла![/say]")
 
-		saynn("[say=pc]No you didn't.[/say]")
+		saynn("[say=pc]Как не выиграла.[/say]")
 
-		saynn("She points at the scratches on your wrists.")
+		saynn("Она указывает на царапины на твоих запястьях.")
 
-		saynn("[say=mirri]See, I did more damage! You're pathetic, {pc.name}![/say]")
+		saynn("[say=mirri]Видишь, я нанесла больше урона! Ты просто жалкий, {pc.name}![/say]")
 
-		saynn("The anger makes you bite her neck.")
+		saynn("От злости ты вонзаешься зубами в её шею.")
 
-		saynn("[say=mirri]Ow..[/say]")
+		saynn("[say=mirri]Ай!..[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "dom_hatefuck"):
 		playAnimation(StageScene.SexMatingPress, "tease", {pc="pc", npc="mirri", bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("Mirri tries to push herself up but is quickly forced back down by your weight as you pin her beneath you.")
+		saynn("Мирри пытается приподняться, но ты тут же придавливаешь её своим весом, прижимая к земле.")
 
-		saynn("[say=mirri]Get off me, you slave.[/say]")
+		saynn("[say=mirri] Слезай с меня, раб![/say]")
 
-		saynn("You grab her wrists and force them above her head so she can't scratch you. Her legs are spread wide by your body, leaving her utterly exposed. She still struggles against you, her breath coming out in ragged gasps, her feline eyes flashing brightly.")
+		saynn("Ты перехватываешь её запястья и задираешь их над головой, чтобы она не могла тебя исцарапать. Твоё тело разводит её ноги широко в стороны, оставляя её совершенно беззащитной и открытой. Она всё ещё пытается вырваться, тяжело и прерывисто дыша, а её кошачьи глаза ярко блестят.")
 
-		saynn("[say=pc]What else are you gonna say?[/say]")
+		saynn("[say=pc]И что ты еще скажешь?[/say]")
 
-		saynn("Your hand pulls down her panties and grips her throat now instead, making her pull her chin high. Her sex got quite wet after the.. struggle cuddle.")
+		saynn("Твоя рука стягивает с неё трусики и теперь сжимает её горло, заставляя её высоко задрать подбородок. Её киска изрядно промокла после этой... борьбы-обнимашек.")
 
-		saynn("[say=mirri]Bitch.. At least put on a condom if you're going to..[/say]")
+		saynn("[say=mirri]Сучка... Ну хотя бы презерватив надень, если уж собрался...[/say]")
 
-		saynn("[say=pc]What if I don't.[/say]")
+		saynn("[say=pc]А если не надену?[/say]")
 
-		saynn("[say=mirri]I will cut your balls off then, I'm warning you! I ain't having your brats![/say]")
+		saynn("[say=mirri]Тогда я отрежу тебе яйца, предупреждаю! Мне не нужны твои отродья![/say]")
 
-		saynn("You notice a free wrapped condom in one of her pouches.")
+		saynn("Ты замечаешь в одном из её мешочков упакованный презерватив.")
 
-		addButton("Use it", "Use the offered condom and not anger Mirri too much", "dom_hatefuck_usecondom")
-		addButton("Ignore it", "Go in raw", "dom_hatefuck_nocondom")
+		addButton("Используй это", "Использовать предложенный презерватив и не слишком злить Мирри", "dom_hatefuck_usecondom")
+		addButton("Проигнорировать", "Войти без него (всухую)", "dom_hatefuck_nocondom")
 	if(state == "dom_hatefuck_fuck"):
 		playAnimation(StageScene.SexMatingPress, "sex", {pc="pc", npc="mirri", bodyState={exposedCrotch=true, hard=true, condom=usedCondom}, npcBodyState={exposedCrotch=true, hard=true}})
 		if (usedCondom):
-			saynn("Well, you'd rather save your testicles. You grab her offered condom and quickly apply it to your cock. Then, your hand slides down her body and grips the folds of her slick cunt. She is wet, so much wetter than she is letting on, her body betraying her. Mirri tenses, her legs twitching beneath you, her tail wagging actively.")
+			saynn("Что ж, яички тебе дороже. Ты хватаешь предложенный ею презерватив и быстро натягиваешь его на свой член. Затем твоя рука скользит вниз по её телу и обхватывает складки её влажной киски. Она мокрая, куда мокрее, чем пытается показать — тело её предает. Мирри напрягается, её ноги под тобой подергиваются, а хвост активно виляет.")
 
-			saynn("[say=mirri]Good {pc.boy}.. An AlphaCorp slave is not filling me with {pc.his} seed..[/say]")
+			saynn("[say=mirri]Ладно {pc.boy}... Раб АльфаКорпа никак не наполнит меня своим {pc.his} семенем...[/say]")
 
-			saynn("[say=pc]Shut up, fucktoy.[/say]")
+			saynn("[say=pc]Заткнись, шлюшка.[/say]")
 
 		else:
-			saynn("You don't bother with the rubber. Your hand slides down her body and grips the folds of her slick cunt. She is wet, so much wetter than she is letting on, her body betraying her. Mirri tenses, her legs twitching beneath you, her tail wagging actively.")
+			saynn("Ты не паришься из-за резины. Твоя рука скользит вниз по её телу и сжимает складки её влажной киски. Она мокрая, куда мокрее, чем пытается показать — тело её выдает. Мирри напрягается, её ноги под тобой подергиваются, а хвост активно виляет.")
 
-			saynn("[say=mirri]I told you, condom, now! You're not filling me with your seed, I swear-.[/say]")
+			saynn("[say=mirri]Я же сказала, презерватив, живо! Ты не наполнишь меня своим семенем, клянусь...[/say]")
 
-			saynn("[say=pc]Shut up, fucktoy.[/say]")
+			saynn("[say=pc]Заткнись, шлюшка.[/say]")
 
-		saynn("Her words are cut short as you line yourself up with that drippy cunt and thrust deep into her without warning. Her back arches sharply and a shocked gasp escapes her lips. The wet heat of her pussy tightens around you, welcoming you in.")
+		saynn("Её слова обрываются, когда ты пристраиваешься к этой сочащейся киске и без предупреждения глубоко входишь в неё. Её спина резко выгибается, и с губ срывается шокированный вздох. Влажное тепло её пизды сжимается вокруг тебя, принимая тебя внутрь.")
 
-		saynn("[say=mirri]You.. fuc-cker!..[/say]")
+		saynn("[say=mirri]Ты... сук-кин сын!..[/say]")
 
-		saynn("At least this time she isn't wrong, you pound into her, hard and fast, your hands pressed against the cold wooden floor as you drive your {pc.penis} deeper with each thrust.")
+		saynn("По крайней мере, на этот раз она не ошиблась: ты вколачиваешься в неё, жестко и быстро, упираясь руками в холодный деревянный пол и с каждым толчком заходя всё {pc.penis} глубже.")
 
-		saynn("[say=mirri]..is that all you've got? You're pathetic! Can you go HARDER at least?![/say]")
+		saynn("[say=mirri]..и это всё, на что ты способен? Ты жалок! Можешь хотя бы ебать ЖЕСТЧЕ?![/say]")
 
-		saynn("Wow, that's a change. She really likes the mating press it seems.")
+		saynn("Ого, вот это поворот. Похоже, ей реально нравится, когда её прижимают во время спаривания.")
 
-		addButton("Faster", "Rail her pussy harder", "dom_hatefuck_fuck_fast")
+		addButton("Быстрее", "Трахни её киску сильнее", "dom_hatefuck_fuck_fast")
 	if(state == "dom_hatefuck_fuck_fast"):
 		playAnimation(StageScene.SexMatingPress, "fast", {pc="pc", npc="mirri", bodyState={exposedCrotch=true, hard=true, condom=usedCondom}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("Her words only fuel your aggression. You slam into her even harder, your cock ramming deep inside her, kissing her womb and stretching her out with each thrust. Mirri's body shakes beneath you, her breath hitching as you drive her towards the edge and even further, her inner walls suddenly clenching tightly around your shaft.")
+		saynn("Её слова лишь подстегивают твою агрессию. Ты вколачиваешься в неё ещё мощнее, твой член вонзается глубоко внутрь, касаясь самой шейки матки и растягивая её каждым толчком. Тело Мирри дрожит под тобой, её дыхание сбивается, когда ты доводишь её до края и даже дальше, и внезапно её внутренние стенки судорожно сжимаются вокруг твоего ствола.")
 
-		saynn("[say=mirri]Fu-uck! I fucking hate you so much![/say]")
+		saynn("[say=mirri]Бля-а-адь! Как же сильно я тебя ненавижу![/say]")
 
-		saynn("[say=pc]Your pussy tells me a different story. What a slut.[/say]")
+		saynn("[say=pc]Твоя киска говорит об обратном. Ну и шлюха.[/say]")
 
 		if (!usedCondom):
-			saynn("The wild pleasure is flickering in her eyes, the slut is cumming hard. Seems like a good moment to lean in and growl into her ear.")
+			saynn("В её глазах пляшет дикое наслаждение, шлюха кончает вовсю. Кажется, сейчас отличный момент, чтобы наклониться и прорычать ей на ухо.")
 
-			saynn("[say=pc]I'm going to fill you.[/say]")
+			saynn("[say=pc]Я сейчас тебя заполню.[/say]")
 
-			saynn("Her eyes widen, her body trembling beneath you, each your thrust pushing her further into the abyss of dark pleasure.")
+			saynn("Её глаза расширяются, тело под тобой дрожит, и каждый твой толчок уносит её всё глубже в бездну темного наслаждения.")
 
-			saynn("[say=mirri]No, you fucking don't.. I.. will.. I will.. ahh..[/say]")
+			saynn("[say=mirri]Нет, черт возьми, не надо... Я... сейчас... ахх!..[/say]")
 
-			saynn("You pick up the pace and mate with her with a raw animalistic energy.. until your own orgasm begins to draw near..")
+			saynn("Ты ускоряешься и трахаешь её с первобытной животной энергией... пока твой собственный оргазм не начинает подступать совсем близко...")
 
 		else:
-			saynn("The wild pleasure is flickering in her eyes, the slut is cumming hard. Seems like a good moment to lean in and growl into her ear.")
+			saynn("В её глазах пляшет дикое наслаждение, шлюха кончает вовсю. Кажется, сейчас отличный момент, чтобы наклониться и прорычать ей на ухо.")
 
-			saynn("[say=pc]You're nothing but a slave to my cock.[/say]")
+			saynn("[say=pc]Ты всего лишь рабыня моего члена.[/say]")
 
-			saynn("Her eyes widen, her body trembling beneath you, each your thrust pushing her further into the abyss of dark pleasure.")
+			saynn("Её глаза расширяются, тело под тобой дрожит, и каждый твой толчок уносит её всё глубже в бездну темного наслаждения.")
 
-			saynn("[say=mirri]You're a slave, not me.. ah..[/say]")
+			saynn("[say=mirri]Это ты рабыня, а не я... ах...[/say]")
 
-			saynn("You pick up the pace and mate with her with a raw animalistic energy.. until your own orgasm begins to draw near..")
+			saynn("Ты ускоряешься и трахаешь её с первобытной животной энергией... пока твой собственный оргазм не начинает подступать совсем близко...")
 
-		addButton("Cum", "Time to do this", "dom_hatefuck_fuck_cum")
+		addButton("Кончить", "Пора за дело", "dom_hatefuck_fuck_cum")
 	if(state == "dom_hatefuck_fuck_cum"):
 		playAnimation(StageScene.SexMatingPress, "inside", {pc="pc", npc="mirri", bodyState={exposedCrotch=true, hard=true, condom=usedCondom}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("The time comes to ram your cock deep inside her one last time. Mirri's body tightens again, her claws digging into your skin as her pussy clamps down around you.")
+		saynn("Пришло время в последний раз вогнать свой член глубоко в неё. Тело Мирри снова напрягается, её когти впиваются в твою кожу, а её киска сжимается вокруг тебя.")
 
 		if (!usedCondom):
-			saynn("You bury yourself to the hilt, slamming your dick deep into her womb as you proceed to pump her full of your seed. Mirri's back arches violently, her breath hitching hard as her entire body convulses beneath you.")
+			saynn("Ты входишь до самого основания, с силой вбивая член глубоко в её матку и заполняя её своим семенем. Спина Мирри резко выгибается, дыхание прерывается, а всё её тело сотрясается в конвульсиях под тобой.")
 
-			saynn("[say=mirri]You.. F-fuck!.. I love your.. ah.. no..! S-shit!.. I'm f-fucking c-cumming!..[/say]")
+			saynn("[say=mirri]Ты... Б-блядь!.. Я люблю твой... ах... нет..! Ч-черт!.. Я... я сейчас с-с кончу!..[/say]")
 
-			saynn("She lets out a strangled moan, her pussy milking you for every last drop, her body still shaking for a while longer after her new orgasm.")
+			saynn("Она издает сдавленный стон, её киска выжимает из тебя всё до последней капли, а её тело ещё долго содрогается после нового оргазма.")
 
-			saynn("You hold her down as you finish inside her.. and then you just pull out, causing a flood of your {pc.cum} to start leaking out of her used pussy, dripping onto the wooden floor.")
+			saynn("Ты прижимаешь её к себе, кончая внутрь... а затем просто выходишь, из-за чего поток твоей {pc.cum} начинает вытекать из её использованной киски, капая на деревянный пол.")
 
-			saynn("Mean eyes are staring at you. Mirri's chest is rising and falling rapidly.")
+			saynn("На тебя смотрят злобные глаза. Грудь Мирри тяжело и часто вздымается.")
 
-			saynn("[say=pc]What? AlphaCorp slave has just bred you.[/say]")
+			saynn("[say=pc]Что? Рабыня АльфаКорп только что осеменила тебя.[/say]")
 
 			if (canBreed):
-				saynn("[say=mirri]I'm not on the pill anymore, you fuck.. I hate you, stupid. And that was.. that was.. weak.. yeah.. hah..[/say]")
+				saynn("[say=mirri]Я больше не пью таблетки, ублюдок... Ненавижу тебя, тупица. И это было... это было... слабо... да... хах...[/say]")
 
 			else:
-				saynn("[say=mirri]..I hate you, stupid. And that was.. that was.. weak.. yeah.. hah..[/say]")
+				saynn("[say=mirri]..Ненавижу тебя, тупица. И это было.. это было.. слабо.. да.. хах..[/say]")
 
 		else:
-			saynn("You bury yourself to the hilt, slamming your dick deep into her womb as you proceed to pump the condom inside her babymaker full of your seed. Mirri's back arches violently, her breath hitching hard as her entire body convulses beneath you.")
+			saynn("Ты входишь в неё до самого основания, вколачивая член глубоко в её матку, и продолжаешь закачивать своё семя в презерватив, забивая её «машинку для детей» до краёв. Спина Мирри резко выгибается, дыхание сбивается, а всё её тело сотрясает конвульсия под тобой.")
 
-			saynn("[say=mirri]You.. F-fuck!.. I love your.. ah.. no..! S-shit!.. I'm f-fucking c-cumming!..[/say]")
+			saynn("[say=mirri]Ты... Б-блядь!.. Я люблю твой... ах... нет..! Ч-черт!.. Я... я сейчас с-с кончу!..[/say]")
 
-			saynn("She lets out a strangled moan, her pussy milking you for every last drop, her body still shaking for a while longer after her new orgasm.")
+			saynn("Она издает сдавленный стон, её киска выжимает из тебя всё до последней капли, а её тело ещё долго содрогается после нового оргазма.")
 
-			saynn("You hold her down as you finish inside that rubber.. then you carefully pull it out and tie it up before disposing of it")
+			saynn("Ты удерживаешь её, пока кончаешь в резину.. затем осторожно вынимаешь её, завязываешь узел и выбрасываешь")
 
-			saynn("Mean eyes are staring at you. Mirri's chest is rising and falling rapidly.")
+			saynn("На тебя смотрят злобные глаза. Грудь Мирри тяжело и часто вздымается.")
 
-			saynn("[say=pc]What? You are impressed?[/say]")
+			saynn("[say=pc]Что? Ты впечатлён?[/say]")
 
-			saynn("[say=mirri]..You had the brains to use a condom but I hate you, stupid. And that was.. that was.. weak.. yeah.. hah..[/say]")
+			saynn("[say=mirri]..У тебя хватило мозгов использовать презерватив, но всё равно ненавижу тебя, тупица. И это было.. это было.. слабо.. да.. хах..[/say]")
 
-		addButton("Enough", "Enough fucking", "dom_hatefuck_enough")
+		addButton("Хватит", "Хватит трахаться", "dom_hatefuck_enough")
 		if (usedCondom):
-			addButton("Breed", "Screw the condom. Fuck her again without it", "dom_hatefuck2_fuck")
+			addButton("Спариваться", "К чёрту презерватив. Трахни её ещё раз без него", "dom_hatefuck2_fuck")
 		else:
-			addButton("More", "Breed her more for being so cocky", "dom_hatefuck2_fuck")
+			addButton("Еще", "Трахни её ещё сильнее, чтобы проучить за такую дерзость", "dom_hatefuck2_fuck")
 	if(state == "dom_hatefuck_enough"):
-		saynn("[say=pc]That's what you get for being a bitch.[/say]")
+		saynn("[say=pc]Так тебе и надо, сучка.[/say]")
 
-		saynn("Mirri hums.")
+		saynn("Мирри довольно мычит.")
 
-		saynn("[say=mirri]I will keep that in mind..[/say]")
+		saynn("[say=mirri]Я буду иметь это в виду..[/say]")
 
-		saynn("Of course she will. You give her ass a smack and get off her.")
+		saynn("Конечно, она так и сделает. Дашь ей по заднице и пойдешь дальше.")
 
-		saynn("[say=mirri]Ah.[/say]")
+		saynn("[say=mirri]Ах.[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "dom_hatefuck2_fuck"):
 		playAnimation(StageScene.SexBehind, "sex", {pc="pc", npc="mirri", bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("Weak? You will show her weak. Without a word, you grab her by the hair, yanking her up roughly by the ponytail.")
+		saynn("Слабый? Вот сейчас ты покажешь ей, кто тут слабый. Не говоря ни слова, ты хватаешь её за волосы и грубо дергаешь вверх за хвост.")
 
-		saynn("[say=mirri]AGH! THAT'S MY PONYTAIL, YOU FUCK![/say]")
+		saynn("[say=mirri]АГХ! ЭТО МОЙ ХВОСТ, УБЛЮДОК![/say]")
 
-		saynn("The fire is sparking in her eyes once again as she tries to fight you off.")
+		saynn("В её глазах снова вспыхивает огонь, пока она пытается отбиться от тебя.")
 
-		saynn("[say=pc]I'm not done with you yet.[/say]")
+		saynn("[say=pc]Я с тобой ещё не закончил.[/say]")
 
-		saynn("You drag her towards her bed, ignoring the growls and various threats. After throwing her down, you pin her belly-first against the comfy mattress, forcing her into the sheets, her ass raised, her legs spread wide, leaving her dripping"+str(" stuffed" if !usedCondom && !isStrapon else "")+" pussy exposed.")
+		saynn("Игнорируя рычание и прочие угрозы, ты тащишь её к кровати. Швырнув её на матрас, ты придавливаешь её животом вниз, вжимая в мягкую постель; её задница задрана, ноги широко разведены, а её мокрая..."+str(" stuffed" if !usedCondom && !isStrapon else "")+" ...киска выставлена напоказ.")
 
 		if (usedCondom):
 			if (canBreed):
-				saynn("[say=mirri]I'm not on the pill. Use a new rubber! You forgot the fucking condom, you stupid![/say]")
+				saynn("[say=mirri]Я не пью таблетки! Используй новый презерватив! Ты забыл, блядь, кондом, тупица![/say]")
 
 			else:
-				saynn("[say=mirri]Use a new rubber! You forgot the fucking condom, you stupid![/say]")
+				saynn("[say=mirri]Используй новый презерватив! Ты забыл, блядь, кондом, тупица![/say]")
 
-			saynn("[say=pc]I didn't.[/say]")
+			saynn("[say=pc]Не было такого![/say]")
 
-			saynn("[say=mirri]What?! I will.. I will RIP YOUR..[/say]")
+			saynn("[say=mirri]Что?! Я... я тебе сейчас... РАЗОРВУ ТВОЮ...[/say]")
 
 		else:
-			saynn("[say=mirri]Not on my fucking bed, you stupid![/say]")
+			saynn("[say=mirri]Только не на моей гребаной кровати, придурок![/say]")
 
-			saynn("[say=pc]I like your bed. I will fuck you anywhere I want.[/say]")
+			saynn("[say=pc]Мне нравится твоя кровать. Я буду трахать тебя где захочу.[/say]")
 
-			saynn("[say=mirri]I will.. I will RIP YOUR..[/say]")
+			saynn("[say=mirri]Я... я тебе сейчас... РАЗОРВУ ТВОЮ...[/say]")
 
-		saynn("You cut her off my slamming into her from behind, driving your "+str("{pc.penis}" if !isStrapon else "slick strapon")+" deep into her wet heat while yanking on her ponytail, making her entire body jerk and her back arch.")
+		saynn("Ты перебиваешь её, с размаху всаживаясь ей сзади, вонзая свой "+str("{pc.penis}" if !isStrapon else "slick strapon")+" глубоко в её влажную теплую щель и дергая за хвост, отчего всё её тело вздрагивает, а спина выгибается дугой.")
 
-		saynn("[say=mirri]Ah-h!.. Fuck you! D-do you even know who I..[/say]")
+		saynn("[say=mirri]Ах-х!.. Да пошел ты! Т-ты хоть знаешь, кто я...[/say]")
 
-		saynn("[say=pc]You're my cocksleeve.[/say]")
+		saynn("[say=pc]Ты — моя чехол для члена.[/say]")
 
-		saynn("You grip her hips tightly, pulling her back onto your"+str(" rubber" if isStrapon else "")+" cock with every brutal thrust. Her pussy is soaking wet, the slick loud of your bodies colliding filling the room as you take her hard and fast.")
+		saynn("Ты крепко сжимаешь её бедра, притягивая её обратно к своему"+str(" rubber" if isStrapon else "")+" член с каждым жестоким толчком. Её киска насквозь промокла, и влажный, громкий звук столкновения ваших тел наполняет комнату, пока ты входишь в неё жестко и быстро.")
 
-		saynn("[say=mirri]GRR-rr.. ahh.. shit.. You are SO GONNA PAY FOR THIS.[/say]")
+		saynn("[say=mirri]Грр-р.. ах.. черт.. Ты ЕЩЕ ЗАПЛАТИШЬ ЗА ЭТО![/say]")
 
-		saynn("[say=pc]You're still talking shit?[/say]")
+		saynn("[say=pc]Всё еще несёшь херню?[/say]")
 
-		saynn("Rather than pulling on her hair, you suddenly shove her head into her pillow, muffling her speech. Her claws are scratching the sheets as her body rocks with the force of your thrusts, her pussy squeezing your "+str("toy" if isStrapon else "cock")+" each time you ram it into her tight fuckhole."+str(" Going in raw feels so much better." if usedCondom else "")+"")
+		saynn("Вместо того чтобы тянуть её за волосы, ты внезапно вжимаешь её голову в подушку, заглушая её голос. Её когти скребут по простыням, а тело содрогается от силы твоих толчков, её киска сжимает твой "+str("toy" if isStrapon else "cock")+" каждый раз, когда ты вколачиваешь его в её тугое ебало."+str(" Going in raw feels so much better." if usedCondom else "")+"")
 
-		addButton("Faster", "Increase the pressure. Increase the pleasure", "dom_hatefuck2_fast")
+		addButton("Быстрее", "Увеличить напор. Увеличить удовольствие", "dom_hatefuck2_fast")
 	if(state == "dom_hatefuck2_fast"):
 		playAnimation(StageScene.SexBehind, "fast", {pc="pc", npc="mirri", bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("The bed is creaking beneath the force of your movements. You shift your grip from her ponytail, your hand sliding underneath her instead and into her top to squeeze her tits harshly, your fingers digging into her soft flesh and squeeze the hard perky nips.")
+		saynn("Кровать скрипит под напором твоих движений. Ты меняешь хватку, отпуская её хвост, и твоя рука скользит под неё, проникая под топ, чтобы грубо сжать её сиськи; твои пальцы впиваются в мягкую плоть, сдавливая твердые, упругие соски.")
 
-		saynn("Mirri's body keeps jerking under the pressure, her muffled moans turning into broken cries.")
+		saynn("Тело Мирри продолжает дергаться под напором, а её приглушенные стоны превращаются в прерывистые вскрики.")
 
-		saynn("[say=mirri]Gh-h.. Harder![/say]")
+		saynn("[say=mirri]Гх-х.. Сильнее![/say]")
 
-		saynn("She growls through her teeth.")
+		saynn("Рычит сквозь зубы.")
 
-		saynn("[say=mirri]You think.. you're in charge? You.. ahh-h.. fuck! Harder![/say]")
+		saynn("[say=mirri]Думаешь... ты тут главный? Ты... ахх-х... блять! Сильнее![/say]")
 
-		saynn("Looks like her resistance is crumbling with each second. And so you continue to slam into her with unrelenting force, your "+str("silicone cock" if isStrapon else "cock")+" smashing into her womb entrance with each thrust. The slaps echo in the room, mixing with her increasingly frantic moans.")
+		saynn("Похоже, её сопротивление рушится с каждой секундой. И ты продолжаешь вбиваться в неё с неумолимой силой, твой "+str("silicone cock" if isStrapon else "cock")+" с размаху врезается в шейку матки при каждом толчке. Шлепки эхом отдаются в комнате, смешиваясь с её всё более неистовыми стонами.")
 
-		saynn("[say=mirri]Y-yeah.. fuck! I'm fucking close..[/say]")
+		saynn("[say=mirri]Д-да... блять! Я почти кончаю...[/say]")
 
-		saynn("Her body tightens around you, her pussy clenching desperately as her breathing turns shallow. You feel her starting to lose control, her hips bucking back against you, her ass grinding against your hips.")
+		saynn("Её тело сжимается вокруг тебя, киска отчаянно пульсирует, а дыхание становится прерывистым. Ты чувствуешь, как она начинает терять контроль: её бедра выгибаются навстречу тебе, а задница вжимается в твои тазовые кости.")
 
-		saynn("Her juices are coating your "+str("shiny shaft" if isStrapon else "shaft")+" as you pound into her, your hands roaming her body, grabbing the hair, squeezing her tits, pulling her against you with every thrust.")
-
-		if (!isStrapon):
-			saynn("[say=mirri]Grr.. you b-better..[/say]")
-
-			saynn("[say=pc]I ain't pulling..[/say]")
-
-			saynn("[say=mirri]INSIDE! Fill me with your fucking cum, you stupid fuck![/say]")
-
-		else:
-			saynn("[say=mirri]Grr.. you b-better..[/say]")
-
-			saynn("[say=pc]I ain't stopping..[/say]")
-
-			saynn("[say=mirri]RAM IT INSIDE! Fill me with your fucking cock, you stupid fuck![/say]")
-
-		saynn("Her fluffy feline tail wraps around your waist. Cute.")
+		saynn("Её соки покрывают твой "+str("shiny shaft" if isStrapon else "shaft")+" пока ты вколачиваешься в неё, твои руки блуждают по её телу, хватая за волосы, сжимая грудь и притягивая её к себе с каждым новым толчком.")
 
 		if (!isStrapon):
-			addButton("Cum", "Time to breed her", "dom_hatefuck2_cum")
+			saynn("[say=mirri]Грр... ты л-лучше бы...[/say]")
+
+			saynn("[say=pc]Я не собираюсь тормозить...[/say]")
+
+			saynn("[say=mirri]ВНУТРЬ! Залей меня своей ебаной спермой, тупой ублюдок![/say]")
+
 		else:
-			addButton("Orgasm", "Mirri is close", "dom_hatefuck2_cum")
+			saynn("[say=mirri]Грр... ты л-лучше бы...[/say]")
+
+			saynn("[say=pc]Я не остановлюсь...[/say]")
+
+			saynn("[say=mirri]ВХОДИ В МЕНЯ! Набей меня своим ебаным хреном, тупой ублюдок![/say]")
+
+		saynn("Её пушистый кошачий хвост обвивает твою талию. Мило.")
+
+		if (!isStrapon):
+			addButton("Кончить", "Пора её осеменить", "dom_hatefuck2_cum")
+		else:
+			addButton("Оргазм", "Мирри близка к разрядке", "dom_hatefuck2_cum")
 	if(state == "dom_hatefuck2_cum"):
 		playAnimation(StageScene.SexBehind, "inside", {pc="pc", npc="mirri", pcCum=true, bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true, hard=true}})
 		if (!isStrapon):
-			saynn("With a primal growl of your own, you grab her hips tightly and bury yourself deep inside, your cock throbbing inside her babymaker as she arches her back sharply, her eyes going wide as her body convulses under you.")
+			saynn("С первобытным рыком ты крепко сжимаешь её бёдра и входишь в неё до самого упора; твой член пульсирует внутри её «машинки для детей», пока она резко выгибает спину, а её глаза расширяются от конвульсий, сотрясающих тело под тобой.")
 
-			saynn("[say=mirri]NHHh-hh..[/say]")
+			saynn("[say=mirri]НХХх-хх...[/say]")
 
-			saynn("Her pussy clenches hard, pushing you over the edge. Your {pc.penis} starts throbbing and stuffing her cunt full of your seed, your balls tighten up every second as her womb gets pumped full of it again and again..")
+			saynn("Её киска судорожно сжимается, доводя тебя до края. Твой {pc.penis} начинает пульсировать, забивая её щель твоим семенем; твои яйца натягиваются с каждой секундой, пока её утробу раз за разом наполняет горячей струёй...")
 
-			saynn("[say=mirri]..C-cumming.. F-fuck!..[/say]")
+			saynn("[say=mirri]..К-кончаю.. Блядь!..[/say]")
 
-			saynn("Her entire body is shaking violently as the orgasm crashes through her, her stuffed used stretched pussy squirting all over her bed, her juices soaking the sheets beneath her as she loses all control.")
+			saynn("Всё её тело сотрясается в неистовой дрожи, когда оргазм накрывает её с головой; её растянутая, набитая семенем киска извергает соки прямо на кровать, пропитывая простыни, пока она окончательно теряет контроль.")
 
-			saynn("Her moans grow weaker, more spaced out as you stop fucking her, just keeping your cock inside, filling her to the brim. Mirri's face is pressed into the pillow, her eyes looking spaced out from pleasure.")
+			saynn("Её стоны становятся слабее и реже, когда ты перестаёшь трахать её, просто оставляя свой член внутри, заполняя её до самых краёв. Лицо Мирри вжато в подушку, а взгляд расфокусирован от наслаждения.")
 
-			saynn("Finally, you pull out.. Your cock is slick with a mixture of your {pc.cum} and her juices.")
+			saynn("Наконец, ты выходишь... Твой член скользкий от смеси твоего {pc.cum} и её соков.")
 
 		else:
-			saynn("With a primal growl of your own, you grab her hips tightly and bury yourself deep inside, the strapon breaking into her babymaker again as she arches her back sharply, her eyes going wide as her body convulses under you.")
+			saynn("С первобытным рыком ты крепко хватаешь её за бёдра и входишь в неё до самого упора; страпон снова разрывает её «машинку для пелёнок», когда она резко выгибает спину, а её глаза расширяются от того, как её тело содрогается под тобой.")
 
-			saynn("[say=mirri]NHHh-hh..[/say]")
+			saynn("[say=mirri]НХХх-хх...[/say]")
 
-			saynn("Her pussy clenches hard, trying to milk your toy again. Nothing stops you.. so you just continue to thrust at a slow rate, fighting the friction that her walls suddenly have.")
+			saynn("Её киска сильно сжимается, пытаясь снова подоить твою игрушку. Ничто тебя не остановит... и ты просто продолжаешь входить в медленном темпе, преодолевая внезапное сопротивление её стенок.")
 
-			saynn("[say=mirri]..C-cumming.. F-fuck!..[/say]")
+			saynn("[say=mirri]..К-кончаю.. Блядь!..[/say]")
 
-			saynn("Her entire body is shaking violently as the orgasm crashes through her, her used stretched pussy squirting all over her bed, her juices soaking the sheets beneath her as she loses all control.")
+			saynn("Всё её тело сотрясает сильная дрожь, когда на неё обрушивается оргазм; её растянутая, измученная киска заливает кровать фонтаном соков, пропитывая простыни под ней, пока она окончательно теряет контроль.")
 
-			saynn("Her moans grow weaker, more spaced out as you stop fucking her, just keeping your rubber cock inside, filling her. Mirri's face is pressed into the pillow, her eyes looking spaced out from pleasure.")
+			saynn("Её стоны становятся слабее и реже, когда ты перестаёшь трахать её, просто оставляя свой резиновый член внутри, заполняя её. Лицо Мирри вжато в подушку, а взгляд расфокусирован от наслаждения.")
 
-			saynn("Finally, you pull out.. Your strapon is dripping her juices.")
+			saynn("Наконец, ты выходишь... Твой страпон течёт от её соков.")
 
-		saynn("[say=mirri]You.. f-fuck..[/say]")
+		saynn("[say=mirri]Ты... б-блядь...[/say]")
 
-		saynn("[say=pc]What was that? You want more, still? Didn't know Syndicate's whores are so needy.[/say]")
+		saynn("[say=pc]Что это было? Всё ещё хочешь добавки? Не знала, что шлюхи Синдиката такие ненасытные.[/say]")
 
-		addButton("Continue", "See what happens next", "dom_hatefuck2_after")
+		addButton("Продолжить", "Смотреть, что будет дальше", "dom_hatefuck2_after")
 	if(state == "dom_hatefuck2_after"):
 		GM.pc.setLocation("market_nearmirri")
 		aimCameraAndSetLocName("market_nearmirri")
 		playAnimation(StageScene.Duo, "defeat", {npc="mirri", npcAction=["holdpistol", "res://Inventory/UnriggedModels/Pistol/Pistol.tscn"], npcBodyState={exposedCrotch=true}, bodyState={exposedCrotch=true, hard=true}})
-		saynn("Suddenly, she shoves you off, her body springing to life with a surge of energy that catches you completely off guard.")
+		saynn("Внезапно она отталкивает тебя, и её тело оживает, наполняясь такой энергией, что это застаёт тебя врасплох.")
 
-		saynn("Before you can react, she tackle-climbs you, her legs interlocking around your neck.. before she uses her weight to spin around in the air and throw you out into the main corridor, your back slamming into the wall with a heavy thud. Her Syndicate agent training is on full display..")
+		saynn("Прежде чем ты успеваешь среагировать, она налетает на тебя, обхватывая шею ногами... затем, используя инерцию своего веса, она делает кувырок в воздухе и швыряет тебя в главный коридор. Твоя спина с тяжелым глухим звуком врезается в стену. Её подготовка агента Синдиката видна во всем...")
 
-		saynn("While you are disoriented, your ears hear something.. Mirri has just picked something up. Click.. The sound of her heavy boots echoes like heavy heartbeats.")
+		saynn("Пока ты пребываешь в дезориентации, твой слух улавливает какой-то звук... Мирри что-то подобрала. Клик... Звук её тяжелых сапог отдается эхом, словно тяжелое сердцебиение.")
 
-		saynn("You try to get up but can't, collapsing as soon as you raise even a little bit.")
+		saynn("Ты пытаешься подняться, но не можешь — стоит тебе хоть немного приподняться, как ты тут же валишься обратно.")
 
-		saynn("Mirri steps out of the corridor, holding that 12.7mm handgun in her paw. She stops and looks at you, the dim lighting hides everything but her blue glowing eyes.")
+		saynn("Мирри выходит из коридора, сжимая в лапе пистолет калибра 12,7 мм. Она замирает и смотрит на тебя; тусклое освещение скрывает всё, кроме её светящихся голубых глаз.")
 
-		saynn("[say=mirri]You're gonna pay for what you did to me.[/say]")
+		saynn("[say=mirri]Ты еще поплатишься за то, что сделал со мной![/say]")
 
-		saynn("Her finger hovers near the trigger.. her used pussy drips with your cum.")
+		saynn("Её палец замирает у спускового крючка... её использованная киска сочит твоей спермой.")
 
-		saynn("[say=pc]Mirri? Hey, wait.[/say]")
+		saynn("[say=pc]Мирри? Эй, подожди![/say]")
 
-		saynn("Slowly, she begins stepping towards you, a small twisted smirk shining on her mean face.")
+		saynn("Она медленно начинает шагать к тебе, а на её злобном лице играет едва заметная, кривая ухмылка.")
 
-		saynn("[say=pc]We can talk about it?[/say]")
+		saynn("[say=pc]Может, поговорим?[/say]")
 
-		saynn("Is she really going to kill you for breeding her?")
+		saynn("Неужели она действительно собирается убить тебя за то, что ты её оттрахал?")
 
-		addButton("Continue", "See what happens next", "dom_hatefuck3_pin")
+		addButton("Продолжить", "Смотреть, что будет дальше", "dom_hatefuck3_pin")
 	if(state == "dom_hatefuck3_pin"):
 		playAnimation(StageScene.SexStandRide, "tease", {pc="pc", npc="mirri", bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("As you get up and push yourself off the wall, she slams you back into it, her body pressing against yours.")
+		saynn("Когда ты поднимаешься и пытаешься оттолкнуться от стены, она с силой впечатывает тебя обратно, прижимаясь своим телом к твоему.")
 
-		saynn("[say=mirri]Not so fast, AlphaCorp slave..[/say]")
+		saynn("[say=mirri]Не так быстро, раб АльфаКорпа...[/say]")
 
-		saynn("She raises her leg high, displaying an impressive vertical split.. before pressing it against your shoulder, pinning you that way. Her dripping, used pussy is now on full display.")
+		saynn("Она высоко задирает ногу, демонстрируя впечатляющую растяжку шпагатом... а затем упирается ею тебе в плечо, фиксируя тебя таким образом. Её сочная, влажная киска теперь перед тобой во всей красе.")
 
-		saynn("Mirri toys with the gun, her finger on the trigger.")
+		saynn("Мирри вертит в руках пистолет, держа палец на спусковом крючке.")
 
-		saynn("[say=mirri]I'd murder you on the spot.[/say]")
+		saynn("[say=mirri]Я бы прикончила тебя прямо на месте.[/say]")
 
-		saynn("You notice the clear hesitation in her voice.")
-
-		if (!isStrapon):
-			saynn("[say=pc]But you love my cock.[/say]")
-
-			saynn("She squints.. and then pouts. Her pussy is dangerously close to your dick in this position, hovering right above it.")
-
-		else:
-			saynn("[say=pc]But you love getting fucked.[/say]")
-
-			saynn("She squints.. and then pouts. Her pussy is dangerously close to your strapon in this position, hovering right above it.")
-
-		saynn("[say=mirri]I fucking hate you..[/say]")
-
-		saynn("She leans closer to your face, her voice getting lower, almost purring..")
+		saynn("Ты замечаешь явное колебание в её голосе.")
 
 		if (!isStrapon):
-			saynn("[say=mirri]But I wanna drain the fuck out of you too.[/say]")
+			saynn("[say=pc]Но ты ведь обожаешь мой член.[/say]")
+
+			saynn("Она прищуривается... а затем надувает губы. В таком положении её киска опасно близко к твоему члену, она буквально зависла прямо над ним.")
 
 		else:
-			saynn("[say=mirri]But I wanna ride the fuck out of you too.[/say]")
+			saynn("[say=pc]Но ты ведь обожаешь, когда тебя трахают.[/say]")
 
-		saynn("Someone is still horny..")
+			saynn("Она прищуривается... а затем надувает губы. В таком положении её киска опасно близко к твоему страпону, она буквально зависла прямо над ним.")
 
-		addButton("Continue", "See what happens next", "dom_hatefuck3_fuck")
+		saynn("[say=mirri]Блядь, как же ты меня бесишь..[/say]")
+
+		saynn("Она наклоняется ближе к твоему лицу, её голос становится тише, почти превращаясь в мурлыканье..")
+
+		if (!isStrapon):
+			saynn("[say=mirri]Но я тоже хочу выжать из тебя всё дерьмо до последней капли.[/say]")
+
+		else:
+			saynn("[say=mirri]Но я тоже хочу оседлать тебя так, чтобы ты просто сдох.[/say]")
+
+		saynn("Кто-то всё ещё возбужден..")
+
+		addButton("Продолжить", "Смотреть, что будет дальше", "dom_hatefuck3_fuck")
 	if(state == "dom_hatefuck3_fuck"):
 		playAnimation(StageScene.SexStandRide, "sex", {pc="pc", npc="mirri", bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("Mirri slowly sinks herself down onto "+str("your hardening cock" if !isStrapon else "rubber shaft")+", impaling herself with a cute moan. Her pistol falls to the floor, forgotten as she grips your shoulders for support, her claws digging in painfully as her slick love tunnel wraps around your shaft yet again.")
+		saynn("Мирри медленно опускается на "+str("your hardening cock" if !isStrapon else "rubber shaft")+", насаживаясь на тебя с милым стоном. Её пистолет падает на пол, забытый, пока она вцепляется в твои плечи для опоры, больно впиваясь когтями, пока её влажный любовный туннель снова обхватывает твой член.")
 
 		if (!isStrapon):
-			saynn("As soon as she feels your cock getting fully hard, she begins riding you hard, slamming her hips down, letting her wet cunt swallow your length with each thrust.")
+			saynn("Как только она чувствует, что твой член встал на полную мощь, она начинает жестко скакать на тебе, с силой вбивая бедра, позволяя своей мокрой киске заглатывать твою длину при каждом толчке.")
 
 		else:
-			saynn("She begins riding you hard, slamming her hips down, letting her wet cunt swallow that shiny length with each thrust.")
+			saynn("Она начинает жестко скакать на тебе, с силой вбивая бедра, позволяя своей мокрой киске заглатывать этот блестящий член при каждом толчке.")
 
-		saynn("[say=pc]You are one needy slut, you know that?[/say]")
+		saynn("[say=pc]Ты та еще ненасытная шлюха, ты в курсе?[/say]")
 
-		saynn("[say=mirri]..shut up.. ah.. Let me be a good cocksleeve for once.[/say]")
+		saynn("[say=mirri]...заткнись... ах... Дай мне хоть раз побыть хорошей соской для члена...[/say]")
 
-		saynn("Her eyes flashing brightly as she bounces on your"+str(" rubber" if isStrapon else "")+" cock, her hips grinding in desperate circles. As soon as she finds her rhythm, one of her paws slides back to her slit and starts playing with her clit, rubbing it left and right while riding you.")
+		saynn("Её глаза ярко блестят, пока она скачет на твоём"+str(" rubber" if isStrapon else "")+" члене, отчаянно вращая бёдрами. Как только она ловит ритм, одна её лапа соскальзывает к щели и начинает ласкать клитор, растирая его из стороны в сторону прямо во время езды на тебе.")
 
-		saynn("You meet her motions with your own thrusts, plunging your "+str(" toy" if isStrapon else "dick")+" deep inside her with each motion. You hear.. subtle purring.. as you do that. Mirri's body is already shivering with pleasure, her cunt tightening around you, dripping a mix of her juices and your seed.")
+		saynn("Ты отвечаешь на её движения своими толчками, с каждым разом вонзаясь своим "+str(" toy" if isStrapon else "dick")+" глубоко внутрь неё. В этот момент ты слышишь... тихое мурлыканье... Тело Мирри уже дрожит от удовольствия, её киска сжимается вокруг тебя, сочась смесью её соков и твоего семени.")
 
-		saynn("[say=mirri]More.. ah.. I want you more.. stupid AlphaCorp slave..[/say]")
+		saynn("[say=mirri]Ещё... ах... хочу тебя сильнее... тупой раб АльфаКорпа...[/say]")
 
-		addButton("Continue", "See what happens next", "dom_hatefuck3_fast")
+		addButton("Продолжить", "Смотреть, что будет дальше", "dom_hatefuck3_fast")
 	if(state == "dom_hatefuck3_fast"):
 		playAnimation(StageScene.SexStandRide, "fast", {pc="pc", npc="mirri", bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("Feeling extremely eager, she starts bringing herself down onto your "+str("strapon" if isStrapon else "member")+" harder and faster. The wet sound of your bodies colliding fills the hallway.. together with Mirri's purring and moans. She closes her eyes and just pushes herself further..")
+		saynn("Охваченная неистовым желанием, она начинает насаживаться на твой "+str("strapon" if isStrapon else "member")+" всё сильнее и быстрее. В коридоре разносится влажный звук столкновения ваших тел... вперемешку с мурлыканьем и стонами Мирри. Она закрывает глаза и просто подаётся ещё глубже...")
 
 		if (!isStrapon):
-			saynn("[say=mirri]I love your cock.. ah..[/say]")
+			saynn("[say=mirri]Обожаю твой член... ах...[/say]")
 
 		else:
-			saynn("[say=mirri]I love that cock.. ah..[/say]")
+			saynn("[say=mirri]Обожаю этот член... ах...[/say]")
 
-		saynn("[say=pc]More than the rest?[/say]")
+		saynn("[say=pc]Больше, чем остальные?[/say]")
 
-		saynn("[say=mirri]..don't make me pick up that gun..[/say]")
+		saynn("[say=mirri]..не заставляй меня хвататься за пушку..[/say]")
 
 		if (!isStrapon):
-			saynn("Her motions become more and more erratic, her inner walls clenching again and again.. Your balls were drained two times already.. but somehow her pussy manages to push you towards another peak..")
+			saynn("Её движения становятся всё более беспорядочными, а внутренние стенки сжимаются снова и снова.. Твои яйца уже дважды опустели.. но каким-то образом её киска умудряется подталкивать тебя к новому пику..")
 
-			saynn("You feel yourself getting close..")
+			saynn("Ты чувствуешь, что близок...")
 
-			addButton("Cum", "Time to breed her.. again", "dom_hatefuck3_cum")
+			addButton("Кончить", "Пора осеменить её.. снова", "dom_hatefuck3_cum")
 		else:
-			saynn("Her motions become more and more erratic, her inner walls clenching again and again.. She came at least two times already.. but somehow she manages to push herself towards another peak..")
+			saynn("Её движения становятся всё более беспорядочными, а внутренние стенки сжимаются снова и снова.. Она кончила как минимум дважды.. но каким-то образом она умудряется подталкивать себя к новому пику..")
 
-			addButton("Orgasm", "See what happens", "dom_hatefuck3_cum_strapon")
+			addButton("Оргазм", "Посмотреть, что будет", "dom_hatefuck3_cum_strapon")
 	if(state == "dom_hatefuck3_cum"):
 		playAnimation(StageScene.SexStandRide, "inside", {pc="pc", npc="mirri", pcCum=true, bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("With one final motion, she forces your whole length inside her, throwing her head back as a passionate moan leaves her lips.")
+		saynn("Одним последним движением она заглатывает твою длину целиком, запрокидывая голову, а с её губ срывается страстный стон.")
 
-		saynn("[say=mirri]Ahh-..[/say]")
+		saynn("[say=mirri]Ахх-..[/say]")
 
 		if (!isStrapon):
-			saynn("Your balls tense up.. as you begin to release inside her again, your cock being milked by her clenching pussy dry. Her body is convulsing as she rubs her clit to the point of her pussy squirting again, releasing a fountain of fluids onto the wall behind you. Her eyes look wild and unfocussed.")
+			saynn("Твои яйца напрягаются.. когда ты снова начинаешь кончать в неё, а её сжимающаяся киска буквально высасывает твой член досуха. Её тело сотрясает конвульсия, пока она трет клитор, доводя себя до очередного фонтана, который брызжет на стену позади вас. Её взгляд дикий и расфокусированный.")
 
-			saynn("[say=mirri]Yes-ss.. Fill my pussy, you fucker..[/say]")
+			saynn("[say=mirri]Да-а.. Наполни мою киску, ублюдок..[/say]")
 
-			saynn("You do just that, pumping her womb to the brim again. Mirri is so close to you, you can feel her trembling against you, her breath ragged.")
+			saynn("Ты именно так и делаешь, снова наполняя её утробу до краев. Мирри так близко, что ты чувствуешь её дрожь всем телом и слышишь её прерывистое дыхание.")
 
 		else:
-			saynn("Her body is convulsing as she rubs her clit to the point of her pussy squirting again, releasing a fountain of fluids onto the wall behind you. Her eyes look wild and unfocussed.")
+			saynn("Её тело сотрясают конвульсии; она трет клитор до тех пор, пока из её киски снова не бьет фонтан смазки, заливая стену позади тебя. Её взгляд дикий и расфокусированный.")
 
-			saynn("[say=mirri]Yes-ss.. Fill my pussy, you fucker..[/say]")
+			saynn("[say=mirri]Да-а.. Наполни мою киску, ублюдок..[/say]")
 
-			saynn("You would happily do that if your strapon wasn't empty. Mirri is so close to you, you can feel her trembling against you, her breath ragged.")
+			saynn("Ты бы с радостью это сделал, если бы твой страпон не был пустым. Мирри так близко, что ты чувствуешь её дрожь всем телом и её прерывистое дыхание.")
 
-		saynn("As soon as her orgasm starts to fade, she slumps against you, panting heavily as she rides out the aftershocks, her body finally spent.")
+		saynn("Как только оргазм начинает угасать, она тяжело оседает на тебя, часто дыша и проживая последние отголоски разрядки, пока её тело окончательно не обмякает.")
 
-		saynn("A twisted smile spreads across her lips as she finally lets you go, her body sliding off yours.")
+		saynn("Искаженная улыбка расплывается на её губах, когда она, наконец, отпускает тебя, соскальзывая со своего тела.")
 
-		saynn("[say=pc]You're welcome.[/say]")
+		saynn("[say=pc]Не за что.[/say]")
 
-		saynn("[say=mirri]..where are my panties..[/say]")
+		saynn("[say=mirri]..где мои трусики..[/say]")
 
-		saynn("She rushes away to search for them.")
+		saynn("Она бросается на поиски.")
 
 		if (!isStrapon):
 			if (!canBreed):
@@ -1915,832 +1915,832 @@ func _run():
 					setFlag("SlaveAuctionModule.customMirriGreeting", "Found my panties, they somehow ended up under the bed. Oh yeah.. I guess I'm pregnant already so whatever..")
 				else:
 					setFlag("SlaveAuctionModule.customMirriGreeting", "Found my panties, they somehow ended up under the bed. Oh yeah.. If you knocked me up, I swear..")
-		addButton("Continue", "See what happens next", "endthescene_unequipstrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_unequipstrapon")
 	if(state == "dom_straponfuck_pick"):
-		saynn("Which strapon do you want to use?")
+		saynn("Какой страпон хочешь использовать?")
 
 		addStraponButtons()
-		addButton("Back", "You changed your mind", "dom_fight_won")
+		addButton("Назад", "Вы передумали", "dom_fight_won")
 		if (false):
-			addButton("Nope", "You shouldn't see this", "dom_straponfuck_puton")
+			addButton("Неа", "Тебе не стоит этого видеть", "dom_straponfuck_puton")
 	if(state == "dom_straponfuck_start"):
 		playAnimation(StageScene.SexMatingPress, "tease", {pc="pc", npc="mirri", bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("Mirri tries to push herself up but is quickly forced back down by your weight as you pin her beneath you.")
+		saynn("Мирри пытается приподняться, но ты тут же придавливаешь её своим весом, прижимая к земле.")
 
-		saynn("[say=mirri]Get off me, you slave.[/say]")
+		saynn("[say=mirri] Слезай с меня, раб![/say]")
 
-		saynn("You quickly secure a strapon harness around your waist and then grab her wrists and force them above her head so she can't scratch you. Her legs are spread wide by your body, leaving her utterly exposed. She still struggles against you, her breath coming out in ragged gasps, her feline eyes flashing brightly.")
+		saynn("Ты быстро закрепляешь ремень страпона на талии, затем перехватываешь её запястья и задираешь их ей над головой, чтобы она не могла тебя исцарапать. Твоё тело раздвигает её ноги широко, оставляя её совершенно беззащитной. Она всё ещё пытается вырваться, тяжело и рвано дыша, а её кошачьи глаза ярко сверкают.")
 
-		saynn("[say=pc]What else are you gonna say?[/say]")
+		saynn("[say=pc]И что ты еще скажешь?[/say]")
 
-		saynn("Your hand pulls down her panties and grips her throat now instead, making her pull her chin high. Her sex got quite wet after the.. struggle cuddle.")
+		saynn("Твоя рука стягивает с неё трусики и теперь сжимает её горло, заставляя её высоко задрать подбородок. Её киска изрядно промокла после этой... борьбы-обнимашек.")
 
-		saynn("[say=mirri]Bitch.. I fucking hope you didn't load that thing up with cum.[/say]")
+		saynn("[say=mirri]Сучка.. Блядь, надеюсь, ты не набил эту хреновину кончой.[/say]")
 
 		if (straponHasCum):
-			saynn("Little did she know.. you did exactly that.")
+			saynn("Она и не подозревала... что ты сделал именно это.")
 
 		else:
-			saynn("That's not a bad idea. But she lucked out this time.")
+			saynn("А ведь идея неплохая. Но в этот раз ей повезло.")
 
-		saynn("[say=pc]And what if I did.[/say]")
+		saynn("[say=pc]А что, если да?[/say]")
 
-		saynn("[say=mirri]I will shove it up your butt then, I'm warning you! I ain't having no brats![/say]")
+		saynn("[say=mirri]Тогда я засуну его тебе в задницу, предупреждаю! Не хватало мне еще нянчиться с сопляками![/say]")
 
-		saynn("So mouthy, that catgirl..")
+		saynn("Какая дерзкая кошкодевочка...")
 
-		addButton("Fuck her", "Have some fun with that pussy", "dom_straponfuck_fuck")
+		addButton("Трахнуть её", "Повеселись с этой киской", "dom_straponfuck_fuck")
 	if(state == "dom_straponfuck_fuck"):
 		playAnimation(StageScene.SexMatingPress, "sex", {pc="pc", npc="mirri", bodyState={exposedCrotch=true, hard=true, condom=usedCondom}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("Your hand slides down her body and grips the folds of her slick cunt. She is wet, so much wetter than she is letting on, her body betraying her. Mirri tenses, her legs twitching beneath you, her tail wagging actively.")
+		saynn("Твоя рука скользит вниз по её телу и обхватывает складки её влажной щелки. Она мокрая, куда мокрее, чем пытается показать — тело её выдает. Мирри напрягается, её ноги под тобой подергиваются, а хвост активно виляет.")
 
-		saynn("[say=mirri]Put a condom on that thing, I swear-..[/say]")
+		saynn("[say=mirri]Надень на эту штуку презерватив, клянусь!..[/say]")
 
-		saynn("[say=pc]Shut up, fucktoy.[/say]")
+		saynn("[say=pc]Заткнись, шлюшка.[/say]")
 
-		saynn("Her words are cut short as you line yourself up with that drippy cunt and thrust deep into her without warning. Her back arches sharply and a shocked gasp escapes her lips. The wet heat of her pussy tightens around your new rubber cock, welcoming you in.")
+		saynn("Её слова обрываются, когда ты пристраиваешься к этой сочащейся щелке и без предупреждения глубоко входишь в неё. Её спина резко выгибается, а с губ срывается шокированный вздох. Влажное тепло её киски сжимается вокруг твоего нового резинового члена, приветствуя тебя.")
 
-		saynn("[say=mirri]You.. fuc-cker!..[/say]")
+		saynn("[say=mirri]Ты... сук-кин сын!..[/say]")
 
-		saynn("At least this time she isn't wrong, you pound into her, hard and fast, your hands pressed against the cold wooden floor as you drive your toy deeper with each thrust.")
+		saynn("По крайней мере, на этот раз она не ошиблась: ты вколачиваешься в неё, жестко и быстро, упираясь руками в холодный деревянный пол и с каждым толчком загоняя свою игрушку всё глубже.")
 
-		saynn("[say=mirri]Ngh.. h.. Is that all you've got? You're pathetic! Can you go HARDER at least?![/say]")
+		saynn("[say=mirri]Нгх.. х.. И это всё, на что ты способен? Ты жалок! Можешь хотя бы СИЛЬНЕЕ?![/say]")
 
-		saynn("Wow, that's a change. She really likes the mating press it seems.")
+		saynn("Ого, вот это поворот. Похоже, ей реально нравится, когда её прижимают во время спаривания.")
 
-		addButton("Faster", "Rail her pussy harder", "dom_straponfuck_fuck_fast")
+		addButton("Быстрее", "Трахни её киску сильнее", "dom_straponfuck_fuck_fast")
 	if(state == "dom_straponfuck_fuck_fast"):
 		playAnimation(StageScene.SexMatingPress, "fast", {pc="pc", npc="mirri", bodyState={exposedCrotch=true, hard=true, condom=usedCondom}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("Her words only fuel your aggression. You slam into her even harder, the strapon ramming deep inside her, kissing her womb and stretching her out with each thrust. Mirri's body shakes beneath you, her breath hitching as you drive her towards the edge and even further, her inner walls suddenly clenching tightly around your shaft.")
+		saynn("Её слова лишь подстегивают твою агрессию. Ты вбиваешься в неё еще мощнее, страпон глубоко вонзается в неё, касаясь шейки матки и растягивая её с каждым толчком. Тело Мирри дрожит под тобой, её дыхание сбивается, пока ты доводишь её до самого края и даже дальше, и её внутренние стенки внезапно судорожно сжимаются вокруг твоего члена.")
 
-		saynn("[say=mirri]Fu-uck! I fucking hate you so much![/say]")
+		saynn("[say=mirri]Бля-а-адь! Как же сильно я тебя ненавижу![/say]")
 
-		saynn("[say=pc]Your pussy tells me a different story. What a slut.[/say]")
+		saynn("[say=pc]Твоя киска говорит об обратном. Ну и шлюха.[/say]")
 
 		if (straponHasCum):
-			saynn("The wild pleasure is flickering in her eyes, she is incredibly close. Seems like a good moment to lean in and growl into her ear.")
+			saynn("В её глазах пляшет дикое наслаждение, она уже совсем близко. Кажется, сейчас идеальный момент, чтобы наклониться и прорычать ей на ухо.")
 
-			saynn("[say=pc]I did load it with cum.[/say]")
+			saynn("[say=pc]Я набила его кончой.[/say]")
 
-			saynn("Her eyes widen, her body trembling beneath you, each your thrust pushing her further into the abyss of dark pleasure.")
+			saynn("Её глаза расширяются, тело под тобой дрожит, и каждый твой толчок уносит её всё глубже в бездну темного наслаждения.")
 
-			saynn("[say=mirri]No, you fucking don't.. I.. will.. I will.. ahh..[/say]")
+			saynn("[say=mirri]Нет, черт возьми, не надо... Я... сейчас... ахх!..[/say]")
 
-			saynn("You pick up the pace and mate with her with a raw animalistic energy..")
+			saynn("Ты ускоряешься и трахаешь её с первобытной, животной энергией...")
 
 		else:
-			saynn("The wild pleasure is flickering in her eyes, she is incredibly close. Seems like a good moment to lean in and growl into her ear.")
+			saynn("В её глазах пляшет дикое наслаждение, она уже совсем близко. Кажется, сейчас идеальный момент, чтобы наклониться и прорычать ей на ухо.")
 
-			saynn("[say=pc]You're nothing but a slave to my shaft.[/say]")
+			saynn("[say=pc]Ты всего лишь рабыня моего члена.[/say]")
 
-			saynn("Her eyes widen, her body trembling beneath you, each your thrust pushing her further into the abyss of dark pleasure.")
+			saynn("Её глаза расширяются, тело под тобой дрожит, и каждый твой толчок уносит её всё глубже в бездну темного наслаждения.")
 
-			saynn("[say=mirri]You're a slave, not me.. ah..[/say]")
+			saynn("[say=mirri]Это ты рабыня, а не я... ах...[/say]")
 
-			saynn("You pick up the pace and mate with her with a raw animalistic energy..")
+			saynn("Ты ускоряешься и трахаешь её с первобытной, животной энергией...")
 
-		addButton("Orgasm", "Make her cum", "dom_straponfuck_fuck_cum")
+		addButton("Оргазм", "Довести её до оргазма", "dom_straponfuck_fuck_cum")
 	if(state == "dom_straponfuck_fuck_cum"):
 		playAnimation(StageScene.SexMatingPress, "inside", {pc="pc", npc="mirri", bodyState={exposedCrotch=true, hard=true, condom=usedCondom}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("The time comes to ram your rubber shaft deep inside her one last time. Mirri's body tightens again, her claws digging into your skin as her pussy clamps down around you.")
+		saynn("Настаёт момент, чтобы в последний раз вогнать свой резиновый член глубоко в неё. Тело Мирри снова напрягается, её когти впиваются в твою кожу, а киска судорожно сжимает тебя.")
 
 		if (straponHasCum):
-			saynn("You bury yourself to the hilt, slamming your loaded toy deep into her womb as you proceed to pump her full of your seed, the extreme tightness triggers the strapon to release its contents! Mirri's back arches violently, her breath hitching hard as her entire body convulses beneath you.")
+			saynn("Ты входишь до самого основания, с силой вонзая набитую игрушку глубоко в её матку и продолжая заливать её своим семенем; от экстремальной тесноты страпон не выдерживает и извергается! Спина Мирри резко выгибается, дыхание перехватывает, а всё её тело сотрясает конвульсия под тобой.")
 
-			saynn("[say=mirri]You.. F-fuck!.. I love your.. ah.. no..! S-shit!.. I'm f-fucking c-cumming!..[/say]")
+			saynn("[say=mirri]Ты... Б-блядь!.. Я люблю твой... ах... нет..! Ч-черт!.. Я... я сейчас с-с кончу!..[/say]")
 
-			saynn("She lets out a strangled moan, her pussy unwillingly milking your strapon for every last drop of someone's seed, her body still shaking for a while longer after her orgasm.")
+			saynn("Она издаёт сдавленный стон, её киска невольно высасывает из страпона последнюю каплю чужого семени, а её тело ещё долго дрожит после оргазма.")
 
-			saynn("You hold her down as you finish inside her by using that trusty tool.. and then you just pull out, causing a flood of seed to start leaking out of her used pussy, dripping onto the wooden floor.")
+			saynn("Ты прижимаешь её к себе, доводя дело до конца с помощью этого верного инструмента... а затем просто вынимаешь его, из-за чего поток семени начинает вытекать из её использованной киски, капая на деревянный пол.")
 
-			saynn("Mean eyes are staring at you. Mirri's chest is rising and falling rapidly.")
+			saynn("На тебя смотрят злобные глаза. Грудь Мирри тяжело и часто вздымается.")
 
-			saynn("[say=pc]What? AlphaCorp slave has just bred you.[/say]")
+			saynn("[say=pc]Что? Рабыня АльфаКорп только что осеменила тебя.[/say]")
 
 			if (canBreed):
-				saynn("[say=mirri]I'm not on the pill anymore, you fuck.. I hate you, stupid. And that was.. that was.. weak.. yeah.. hah..[/say]")
+				saynn("[say=mirri]Я больше не пью таблетки, ублюдок... Ненавижу тебя, тупица. И это было... это было... слабо... да... хах...[/say]")
 
 			else:
-				saynn("[say=mirri]..I hate you, stupid. And that was.. that was.. weak.. yeah.. hah..[/say]")
+				saynn("[say=mirri]..Ненавижу тебя, тупица. И это было.. это было.. слабо.. да.. хах..[/say]")
 
 		else:
-			saynn("You bury yourself to the hilt, slamming your toy deep into her womb! Luckily it wasn't loaded with any cum. But still, Mirri's back arches violently, her breath hitching hard as her entire body convulses beneath you.")
+			saynn("Ты входишь в неё до самого упора, с силой вбивая свой игрушечный член глубоко ей в матку! К счастью, он не был наполнен спермой. Но всё равно Мирри резко выгибается, её дыхание сбивается, а всё тело сотрясает конвульсия под тобой.")
 
-			saynn("[say=mirri]You.. F-fuck!.. I love your.. ah.. no..! S-shit!.. I'm f-fucking c-cumming!..[/say]")
+			saynn("[say=mirri]Ты... Б-блядь!.. Я люблю твой... ах... нет..! Ч-черт!.. Я... я сейчас с-с кончу!..[/say]")
 
-			saynn("She lets out a strangled moan, her pussy fruitlessly milking your strapon, her body still shaking for a while longer after her orgasm.")
+			saynn("Она издаёт сдавленный стон, её киска тщетно пытается «подоить» твой страпон, а тело ещё какое-то время содрогается после оргазма.")
 
-			saynn("Mean eyes are staring at you. Mirri's chest is rising and falling rapidly.")
+			saynn("На тебя смотрят злобные глаза. Грудь Мирри тяжело и часто вздымается.")
 
-			saynn("[say=pc]What? You are impressed?[/say]")
+			saynn("[say=pc]Что? Ты впечатлён?[/say]")
 
-			saynn("[say=mirri]..You had the brains to not breed me but I still hate you, stupid. And that was.. that was.. weak.. yeah.. hah..[/say]")
+			saynn("[say=mirri]..У тебя хватило мозгов не кончать в меня, но я всё равно тебя ненавижу, придурок. И это было.. это было.. слабо.. да.. хах..[/say]")
 
-		addButton("Enough", "Enough fucking", "dom_hatefuck_enough")
-		addButton("More", "Breed her more for being so cocky", "dom_hatefuck2_fuck")
+		addButton("Хватит", "Хватит трахаться", "dom_hatefuck_enough")
+		addButton("Еще", "Трахни её ещё сильнее, чтобы проучить за такую дерзость", "dom_hatefuck2_fuck")
 	if(state == "dom_anal"):
 		playAnimation(StageScene.SexPinnedBehind, "tease", {pc="pc", npc="mirri", bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("The moment Mirri tries to get up, you're on her, grabbing her by the arm and yanking her roughly to her feet and towards the nearest wall. Her eyes are glaring at you with fury.")
+		saynn("Как только Мирри пытается подняться, ты наваливаешься на неё, хватаешь за руку и грубо рывком поднимаешь на ноги, толкая к ближайшей стене. Её глаза яростно сверкают, глядя на тебя.")
 
-		saynn("[say=mirri]The fuck are you doing?[/say]")
+		saynn("[say=mirri]Какого хрена ты творишь?[/say]")
 
-		saynn("You don't answer. Instead, you slam her against the cold surface, pinning her there with your body. Her face is pressed into the wall as one of your hands grabs her wrists and forces them above her head. She growls, thrashing in your grip.. but she can't break free in her current state.")
+		saynn("Ты не отвечаешь. Вместо этого ты впечатываешь её в холодную поверхность, прижимая своим телом. Её лицо прижато к стене, а одной рукой ты перехватываешь её запястья и задираешь их над головой. Она рычит, извиваясь в твоей хватке... но в нынешнем состоянии ей не вырваться.")
 
-		saynn("[say=pc]What, your toys and armor aren't helping you anymore? This isn't gonna be fun for you, bitch. Not in a slightest.[/say]")
+		saynn("[say=pc]Что, твои игрушки и броня тебе больше не помогают? Сейчас тебе несладко будет, сучка. Вообще ни капельки не весело.[/say]")
 
-		saynn("[say=mirri]Oh yeah? Do your worst, you fucker, I ain't afraid of no AlphaCorp doormat.[/say]")
+		saynn("[say=mirri]Да неужели? Давай, делай что хочешь, ублюдок, я не боюсь всяких там ковриков из АльфаКорп.[/say]")
 
-		saynn("She craves some roughness.. but you want to actually punish her.. yeah, you know exactly what you are gonna do to her.")
+		saynn("Она жаждет грубости... но ты хочешь именно наказать её... да, ты прекрасно знаешь, что именно ты с ней сделаешь.")
 
-		saynn("You spread her legs, one of your hands grabbing her ankle and lifting it high, forcing her to either lose balance and fall or fully expose her ass. She tries to kick.. but the angle leaves her helpless, her curvy body forced into submission.")
+		saynn("Ты раздвигаешь ей ноги, одной рукой хватая её за лодыжку и задирая высоко вверх, вынуждая её либо потерять равновесие и упасть, либо полностью обнажить свою задницу. Она пытается пнуть тебя... но из-за такого ракурса она беспомощна, а её пышное тело вынуждено подчиниться.")
 
-		saynn("[say=mirri]What? You want to take off my boots and touch my feet, you sick-.. HEY![/say]")
+		saynn("[say=mirri]Что? Хочешь снять мои сапоги и пощупать мои ножки, ты больной... ЭЙ![/say]")
 
-		saynn("Her words cut off into a sharp gasp as you press the tip of your cock not against her pussy.. but rather her tight asshole. You can quickly tell from the way her body immediately tenses up.. she hasn't had much experience with this, her muscles clenching reflexively.")
+		saynn("Её слова обрываются резким вдохом, когда ты прижимаешь кончик своего члена не к её киске... а к её тугому анусу. По тому, как её тело мгновенно напряглось, сразу становится ясно: у неё не так много опыта в подобном, её мышцы рефлекторно сжимаются.")
 
-		saynn("[say=mirri]Fuck! You sick.. ah.. Stop! That's the wrong fucking hole! Are you stupid?![/say]")
+		saynn("[say=mirri]Блядь! Ты больной... ах... Стой! Это же, сука, не то отверстие! Ты что, тупой?![/say]")
 
-		saynn("Her curses turn into strained hisses as you push into her tailhole, forcing your cock inside inch by inch. You offer her a slight help by spitting on your dick.. but going in raw otherwise.")
+		saynn("Её ругательства превращаются в натужное шипение, когда ты входишь в её дырочку, дюйм за дюймом проталкивая член внутрь. Ты немного помогаешь ей, плюнув на свой член... но в остальном входишь на сухую.")
 
-		saynn("Mirri is painfully tight, her asshole squeezing around you in resistance. Her back arches, her claws scraping uselessly against the wall, her angry tail bapping you fast.")
+		saynn("Мирри невыносимо узкая, её анус сопротивляется, сжимая тебя. Её спина выгибается, когти бесполезно скребут по стене, а злой хвост начинает быстро хлестать тебя.")
 
-		saynn("[say=mirri]I swear, I will kill you.. ngh..![/say]")
+		saynn("[say=mirri]Клянусь, я убью тебя... нх..![/say]")
 
-		saynn("Threats? You got something better than threats. Action.")
+		saynn("Угрозы? У тебя есть кое-что получше угроз. Действие.")
 
-		addButton("Ram it in", "Ignore her", "dom_anal_fuck")
+		addButton("Всаживай на полную", "Игнорировать её", "dom_anal_fuck")
 	if(state == "dom_anal_fuck"):
 		playAnimation(StageScene.SexPinnedBehind, "sex", {pc="pc", npc="mirri", bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("You shove your {pc.penis} deeper, ignoring her sharp words. Her whole body jolts from the pain and her tail begins to swish even more frantically, trying to stop you. Your hands keep her pinned against the wall, forcing her to stay in place.")
+		saynn("Ты заталкиваешь свой {pc.penis} глубже, игнорируя её колкие слова. Всё её тело вздрагивает от боли, а хвост начинает метаться ещё неистовее, пытаясь тебя остановить. Твои руки удерживают её, прижимая к стене и заставляя оставаться на месте.")
 
-		saynn("[say=mirri]Fuck! This is worse than anything.. I'd rather let you rail my cunt over this![/say]")
+		saynn("[say=mirri]Блядь! Это хуже всего на свете... Да лучше бы ты просто трахал мою киску прямо сейчас![/say]")
 
-		saynn("[say=pc]You sure whine a lot for a Syndicate agent. Are you sure you are Blacktail?[/say]")
+		saynn("[say=pc]Для агента Синдиката ты слишком много ноешь. Ты точно Блэктейл?[/say]")
 
-		saynn("[say=mirri]FUCK YOU![/say]")
+		saynn("[say=mirri]ДА ПОШЕЛ ТЫ![/say]")
 
-		saynn("You're not here to give her what she wants. This is punishment and you intend to make it hurt.")
+		saynn("Ты здесь не для того, чтобы давать ей то, чего она хочет. Это наказание, и ты намерен заставить её страдать.")
 
-		saynn("You drive yourself in hard, forcing almost every inch of your cock into her, filling her tight hole. Mirri lets out a frustrated growl, squirming and wriggling under you.. but it online makes the penetration feel rougher.")
+		saynn("Ты входишь в неё жестко, вгоняя почти каждый дюйм своего члена, заполняя её тесное отверстие. Мирри издает разочарованное рычание, извиваясь и ерзая под тобой... но это лишь делает проникновение еще более грубым.")
 
-		saynn("Her tailhole clenches again and again as you thrust deeper, your hips slamming into her ass at a slow but powerful rate. Her cries of protest mix with hissing and groans of discomfort, her head pressing harder against the wall as she tries to endure it.")
+		saynn("Её анус сжимается снова и снова, пока ты входишь всё глубже, а твои бёдра с медленной, но мощной силой впечатываются в её задницу. Её протестующие крики смешиваются с шипением и стонами дискомфорта, а она сильнее прижимается головой к стене, пытаясь вытерпеть это.")
 
-		saynn("[say=mirri]Goddamit.. slow the fuck down.. I can't.. ngh..[/say]")
+		saynn("[say=mirri]Черт возьми... сбавь темп, блядь... я не могу... нхх...[/say]")
 
-		addButton("Faster", "Do the opposite", "dom_anal_fast")
+		addButton("Быстрее", "Сделать наоборот", "dom_anal_fast")
 	if(state == "dom_anal_fast"):
 		playAnimation(StageScene.SexPinnedBehind, "fast", {pc="pc", npc="mirri", bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("But you don't slow down. Instead, you pound into her with even more force, your grip tight and relentless, bending her body to your will. Her resistance fades into ragged breathing as you fuck her raw, her completely neglected pussy becoming wet and dripping juices onto the floor.")
+		saynn("Но ты не замедляешься. Напротив, ты вколачиваешься в неё с еще большей силой, твоя хватка крепкая и неумолимая, ты подчиняешь её тело своей воле. Её сопротивление сменяется рваным дыханием, пока ты трахаешь её до красноты, а её совершенно заброшенная киска становится влажной, и соки с неё капают на пол.")
 
-		saynn("[say=mirri]I fucking hate you.. ah..[/say]")
+		saynn("[say=mirri]Я чертовски тебя ненавижу... ах...[/say]")
 
-		saynn("Her words are choked out between gasps, her ass clenching around your cock despite her protest. The sound of wet slaps fills the air, accompanied by her complaints and hisses.")
+		saynn("Слова вырываются из неё сквозь судорожные вздохи; несмотря на протесты, её задница сжимает твой член мертвой хваткой. Воздух наполняется звуками влажных шлепков, перемежающимися её жалобами и шипением.")
 
-		saynn("[say=pc]You should thank me for training your butt.[/say]")
+		saynn("[say=pc]Тебе стоит поблагодарить меня за то, что я натренировала твою жопу.[/say]")
 
-		saynn("[say=mirri]Don't you dare cum inside..[/say]")
+		saynn("[say=mirri]Только не вздумай кончать внутрь...[/say]")
 
-		saynn("Sounds like a challenge. Her inner walls are so tight that you are, in fact, not that far from your peak.")
+		saynn("Звучит как вызов. Её внутренние стенки настолько тугие, что ты, по сути, уже совсем близок к пику.")
 
-		addButton("Cum inside", "Stuff her ass full", "dom_anal_cum")
-		addButton("Pull out", "Cum all over her butt", "dom_anal_pullout")
+		addButton("Кончить внутрь", "Забить её задницу до отказа", "dom_anal_cum")
+		addButton("Вытащить", "Кончить ей на задницу", "dom_anal_pullout")
 	if(state == "dom_anal_cum"):
 		playAnimation(StageScene.SexPinnedBehind, "inside", {pc="pc", npc="mirri", pcCum=true, bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("Her whole body jerks when you slam in one final time, burying your cock deep inside her asshole. You hold her there, pressed against the wall.. as your balls begin to tense up. And soon, you start unloading inside her. Your dick throbs, your {pc.cum} floods her insides, and she shudders in disgust, her tail twitching as her tight ass is stuffed full.")
+		saynn("Всё её тело содрогается, когда ты входишь в последний раз, зарываясь членом глубоко в её анус. Ты прижимаешь её к стене, удерживая на месте... пока твои яички начинают напрягаться. И вскоре ты начинаешь извергаться внутрь неё. Твой член пульсирует, твоя {pc.cum} заливает её нутро, и она содрогается от отвращения, а её хвост дергается, пока её тугой анус набивается до краев.")
 
-		saynn("[say=mirri]You.. fucking animal.. ah..[/say]")
+		saynn("[say=mirri]Ты... чертов зверь... ах...[/say]")
 
-		saynn("[say=pc]Well thank you.[/say]")
+		saynn("[say=pc]Ну, спасибо еще.[/say]")
 
-		saynn("She mutters something else weakly.. panting from both pain and exertion. You give her a few more brutal thrusts to make sure your seed is thoroughly planted inside her.. before pulling out, her asshole clenching shut the moment you're out.")
+		saynn("Она что-то слабо бормочет себе под нос, тяжело дыша от боли и напряжения. Ты делаешь еще несколько жестоких толчков, чтобы убедиться, что твоё семя надежно укоренилось внутри... прежде чем вытащить член, после чего её анус тут же плотно смыкается.")
 
-		saynn("Mirri slumps against the wall, trying to catch her breath. She is still dripping wet, her legs trembling, her used asshole twitching from the rough fuck.")
+		saynn("Мирри прислоняется к стене, пытаясь отдышаться. Она всё ещё мокрая насквозь, её ноги дрожат, а использованный анус подергивается после грубого траха.")
 
-		saynn("[say=mirri]..I think I almost came. Shit.[/say]")
+		saynn("[say=mirri]..Кажется, я почти кончила. Черт.[/say]")
 
-		saynn("[say=pc]You wanna admit something?[/say]")
+		saynn("[say=pc]Хочешь кое в чем признаться?[/say]")
 
-		saynn("[say=mirri]Where is my fucking gun?![/say]")
+		saynn("[say=mirri]Где мой гребаный ствол?![/say]")
 
-		saynn("Oops.. Better make your escape now.")
+		saynn("Ой.. Лучше беги сейчас же.")
 
 		setFlag("SlaveAuctionModule.customMirriGreeting", "I'M NOT A FUCKING BUTTSLUT, YOU FUCK! I WOULD RIP YOU TO SHREDS.. but then I'd have to hunt slaves myself.. fuck.")
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "dom_anal_pullout"):
 		playAnimation(StageScene.SexPinnedBehind, "tease", {pc="pc", npc="mirri", pcCum=true, bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("You slam in deep one final time but pull out just before your orgasm, leaving Mirri gasping against the wall. She grunts, her asshole twitching and closing shut instantly.")
+		saynn("Ты входишь глубоко в последний раз, но выходишь прямо перед оргазмом, оставляя Мирри тяжело дышать у стены. Она кряхтит, её анус подергивается и тут же плотно сжимается.")
 
-		saynn("Instead of filling her ass, you cum all over her. Thick ropes of your {pc.cum} splatter across her bare ass with some hitting her blue top and even messing up her twitching feline tail.")
+		saynn("Вместо того чтобы наполнить её задницу, ты кончаешь прямо на неё. Густые струи твоей {pc.cum} разлетаются по её голой заднице, часть попадает на синий топ и даже пачкает её подергивающийся кошачий хвост.")
 
-		saynn("[say=mirri]Ngh.. You..! Bitch! Why the fuck did you do that![/say]")
+		saynn("[say=mirri]Нгх.. Ты..! Сука! Какого хрена ты это сделал![/say]")
 
-		saynn("Her tail lashes angrily, seed dripping from its fur. She looks over her shoulder, her sharp eyes look extremely frustrated.")
+		saynn("Её хвост гневно хлещет из стороны в сторону, с меха капает семя. Она оглядывается через плечо, и её острый взгляд выражает крайнюю степень разочарования.")
 
-		saynn("[say=mirri]You should have.. fuck.. You should have stuffed my ass instead at least..[/say]")
+		saynn("[say=mirri]Тебе следовало.. блять.. Тебе следовало хотя бы забить мою задницу до краев..[/say]")
 
-		saynn("[say=pc]Hah. What a fucking buttslut.[/say]")
+		saynn("[say=pc]Хах. Ну и сраная задротка.[/say]")
 
 		setFlag("SlaveAuctionModule.customMirriGreeting", "I'm not a fucking buttslut. Don't you dare fuck my ass again.")
-		saynn("Mirri slumps against the wall, trying to catch her breath. She is still dripping wet, her legs trembling, her tight asshole still twitching from the rough fuck.")
+		saynn("Мирри прислоняется к стене, пытаясь отдышаться. Она всё ещё мокрая насквозь, её ноги дрожат, а тугой анус всё ещё подёргивается после грубого траха.")
 
-		saynn("[say=mirri]..I think I almost came. Shit.[/say]")
+		saynn("[say=mirri]..Кажется, я почти кончила. Черт.[/say]")
 
-		saynn("[say=pc]You wanna admit something?[/say]")
+		saynn("[say=pc]Хочешь кое в чем признаться?[/say]")
 
-		saynn("[say=mirri]Where is my fucking gun?![/say]")
+		saynn("[say=mirri]Где мой гребаный ствол?![/say]")
 
-		saynn("Oops.. Better make your escape now.")
+		saynn("Ой.. Лучше беги сейчас же.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "dom_rp"):
 		playAnimation(StageScene.SexStart, "start", {npc="mirri"})
-		saynn("An idea comes to your mind.. a mean one.. but it might also be a good way to test Mirri's spirit.")
+		saynn("В голову приходит идея... довольно злая... но это может стать отличным способом проверить дух Мирри.")
 
-		saynn("[say=pc]I know exactly what I will do with you.[/say]")
+		saynn("[say=pc]Я точно знаю, что с тобой сделаю.[/say]")
 
-		saynn("Mirri's eyes look fierce, fueled by her rage. And yet, she puts on a cunning smile.")
+		saynn("В глазах Мирри горит ярость, но при этом на губах играет хитрая ухмылка.")
 
-		saynn("[say=mirri]Oh yeah? Give me a break, I don't wanna laugh too hard![/say]")
+		saynn("[say=mirri]Да неужели? Ой, не смеши меня, а то челюсть сведёт![/say]")
 
-		saynn("You crouch and lean close to her face. She tries to swipe her claws over your cheek but the fight has left her exhausted, you can easily avoid her paw.")
+		saynn("Ты приседаешь и наклоняешься к самому её лицу. Она пытается полоснуть когтями по твоей щеке, но силы покинули её, и ты легко уворачиваешься от её лапы.")
 
-		saynn("[say=pc]How hard should I go on you?[/say]")
+		saynn("[say=pc]Насколько жестко мне в тебя вжариться?[/say]")
 
-		saynn("[say=mirri]Go as hard as you can! Amuse me, AlphaCorp bitch.[/say]")
+		saynn("[say=mirri]Да так, чтоб искры из глаз! Развлеки меня, сучка из АльфаКорп.[/say]")
 
-		saynn("Well, you even got the permission..")
+		saynn("Что ж, разрешение ты даже получил...")
 
-		saynn("You nod and look around. You will need a few things.. and luckily, there is a wardrobe full of those things nearby.")
+		saynn("Ты киваешь и оглядываешься по сторонам. Тебе понадобится несколько вещей... и, к счастью, неподалеку стоит гардероб, полный всего необходимого.")
 
-		addButton("Restraints", "Grab some cuffs and a blindfold", "dom_rp_tie")
+		addButton("Фиксаторы", "Взять наручники и повязку на глаза", "dom_rp_tie")
 	if(state == "dom_rp_tie"):
 		playAnimation(StageScene.SexStart, "start", {npc="mirri", npcBodyState={leashedBy="pc"}})
-		saynn("You rummage through her wardrobe.. Mirri's room looks so clean.. but you can't say the same about her wardrobe, all the restraints are just thrown together into one big pile.")
+		saynn("Ты рыщешь в её гардеробе... Комната Мирри выглядит такой чистой... но то же самое нельзя сказать о её вещах: все средства фиксации свалены в одну огромную кучу.")
 
-		saynn("[say=pc]This could really use a cleanup, you know?[/say]")
+		saynn("[say=pc]Тут явно не помешала бы уборка, знаешь?[/say]")
 
-		saynn("[say=mirri]It's called.. controlled chaos.. you wouldn't understand! Hey, what are you doing?[/say]")
+		saynn("[say=mirri]Это называется... управляемый хаос... тебе не понять! Эй, ты чего творишь?[/say]")
 
-		saynn("You barely find a blindfold and some cuffs that don't have any questionable red stains on them."+str(" You also find a collar.." if addedCollar else "")+"")
+		saynn("Едва ли тебе удается найти повязку и наручники, на которых нет подозрительных красных пятен."+str(" You also find a collar.." if addedCollar else "")+"")
 
-		saynn("After that, you crouch before Mirri again.. and begin securing these toys on her.")
+		saynn("После этого ты снова опускаешься на корточки перед Мирри... и начинаешь закреплять на ней эти игрушки.")
 
-		saynn("[say=pc]I will show you what happens to cocky girls like you.[/say]")
+		saynn("[say=pc]Я покажу тебе, что бывает с такими самоуверенными девчонками, как ты.[/say]")
 
-		saynn("[say=mirri]You're gonna fuck me?! Don't be so boring![/say]")
+		saynn("[say=mirri]Ты собрался меня трахнуть?! Не будь таким занудой![/say]")
 
-		saynn("You smile and grab her wrists before pushing them into the bulky metal cuffs, locking them together. Mirri looks up at you, her feline eyes narrowing, a smirk playing at the corners of her mouth.")
+		saynn("Ты улыбаешься и перехватываешь её запястья, заталкивая их в массивные металлические наручники и защелкивая их. Мирри смотрит на тебя снизу вверх, её кошачьи глаза сужаются, а на губах играет дерзкая ухмылка.")
 
-		saynn("[say=pc]I'm curious how much they are gonna give for you.[/say]")
+		saynn("[say=pc]Мне любопытно, сколько за тебя отвалят.[/say]")
 
-		saynn("While her eyes turn confused, you wrap a blindfold around them, stealing her sense of sight completely. You know very well how tight that cloth is..")
+		saynn("Пока в её глазах читается замешательство, ты повязываешь ей повязку, полностью лишая её зрения. Ты прекрасно знаешь, насколько туго затянут этот лоскут...")
 
-		saynn("[say=mirri]Huh? The heck are you talking about, soft {pc.boy}?[/say]")
+		saynn("[say=mirri]А? О чем ты вообще несешь, неженка {pc.boy}?[/say]")
 
-		saynn("With one swift motion and an incredibly satisfying click, you lock a collar around her neck.. Your hand holds the leash.")
+		saynn("Одним резким движением, сопровождаемым невероятно приятным щелчком, ты застегиваешь ошейник на её шее... Твоя рука сжимает поводок.")
 
-		saynn("[say=mirri]Kinky. Sadly for you, I can take it off with nothing but a condom wrapper. Can't keep me locked forever, no matter how hard you will try.[/say]")
+		saynn("[say=mirri]Извращенец. К твоему сожалению, я могу снять его чем угодно, хоть оберткой от презерватива. Тебе не удержать меня взаперти вечно, как бы ты ни старался.[/say]")
 
-		saynn("[say=pc]That's gonna be a problem for you next owner.[/say]")
+		saynn("[say=pc]Это станет проблемой для твоего следующего владельца.[/say]")
 
-		saynn("She tilts her head.")
+		saynn("Она склоняет голову набок.")
 
-		saynn("[say=mirri]Are you gonna sell me off? No fucking way![/say]")
+		saynn("[say=mirri]Ты что, реально собираешься меня продать? Да ни хера подобного![/say]")
 
-		saynn("Mirri stays silent.. but then she bursts off laughing.")
+		saynn("Мирри молчит... но затем разражается смехом.")
 
-		saynn("[say=mirri]HAHA. You're bullshitting me, I can tell! No way an AlphaCorp slave is gonna stand on my spot and sell me, no one would allow that to happen![/say]")
+		saynn("[say=mirri]ХА-ХА! Ты меня разводишь, я же вижу! Не может быть, чтобы раб АльфаКорпа стоял на моем месте и продавал меня — никто бы такого не допустил![/say]")
 
-		saynn("She is not wrong. But maybe there is a way to convince her.. just enough to scare her off.. bring her ego down a little.")
+		saynn("Она не ошибается. Но, возможно, есть способ убедить её... ровно настолько, чтобы напугать... и немного сбить её спесь.")
 
-		saynn("[say=mirri]You know what? I will play along, just for you~. I was always curious how THEY felt.[/say]")
+		saynn("[say=mirri]Знаешь что? Так и быть, я поиграю по твоим правилам, только ради тебя~. Мне всегда было любопытно, что ОНИ чувствуют.[/say]")
 
-		saynn("[say=pc]That's all that I need.[/say]")
+		saynn("[say=pc]Это всё, что мне нужно.[/say]")
 
-		saynn("You get up and look around..")
+		saynn("Ты встаешь и оглядываешься по сторонам...")
 
-		saynn("That teleporter machine.. hm..")
+		saynn("Этот телепортационный аппарат... хм...")
 
-		saynn("And a laptop.. maybe you can do something with that.")
+		saynn("И ноутбук... может, с ним можно что-то сделать.")
 
-		addButton("Laptop", "Check it", "dom_tp_laptop")
+		addButton("Ноутбук", "Проверить", "dom_tp_laptop")
 	if(state == "dom_tp_laptop"):
 		playAnimation(StageScene.Duo, "stand", {npc="mirri", npcBodyState={leashedBy="pc"}})
-		saynn("You check her laptop.. obviously it's locked.. with a fingerprint scanner.. huh.")
+		saynn("Ты проверяешь её ноутбук... очевидно, он заблокирован... сканером отпечатков пальцев... ну надо же.")
 
-		saynn("[say=pc]Give me your paw.[/say]")
+		saynn("[say=pc]Дай мне свою лапку.[/say]")
 
-		saynn("[say=mirri]Say please?[/say]")
+		saynn("[say=mirri]Скажи «пожалуйста».[/say]")
 
-		saynn("You grab her cuffed paws and press them against the scanner. That unlocks the laptop.")
+		saynn("Ты хватаешь её скованные лапы и прижимаешь их к сканеру. Это разблокирует ноутбук.")
 
-		saynn("[say=mirri]Ohh.. I know what you did. Smart. All the important stuff is locked with a password though. Get fucking wrekt, scrub.[/say]")
+		saynn("[say=mirri]О-о-о... я знаю, что ты наделал. Умно. Но всё самое важное всё равно защищено паролем. Ну всё, лови пиздюлей, мелюзга![/say]")
 
-		saynn("Someone has played too many online games..")
+		saynn("Кто-то переиграл в онлайн-игры...")
 
-		saynn("She is not wrong though, all the interesting files seem to be encrypted.. but you do find some old recordings of the slave auctions.. That might be something that you can use.. You grab the laptop and keep it for now.")
+		saynn("Впрочем, она права: все интересные файлы, похоже, зашифрованы... но тебе попадаются старые записи аукционов рабов... Это может пригодиться. Ты забираешь ноутбук и пока оставляешь его у себя.")
 
-		addButton("Teleport", "Make it seem like you have teleported Mirri somewhere", "dom_tp_tp")
+		addButton("Телепортация", "Сделать вид, что ты телепортировал Мирри куда-то", "dom_tp_tp")
 	if(state == "dom_tp_tp"):
-		saynn("You walk up to the teleport.. and spool it up. It opens the rift to your cell.")
+		saynn("Ты подходишь к телепорту... и запускаешь его. Он открывает разлом прямо к твоей камере.")
 
-		saynn("[say=mirri]Huh? I see the light.[/say]")
+		saynn("[say=mirri]А? Я вижу свет![/say]")
 
-		saynn("You walk past it, holding the leash.. and then turn it off.")
+		saynn("Ты проходишь мимо, держа поводок... а затем выключаешь устройство.")
 
-		saynn("[say=mirri]Did you just teleport us somewhere, you fuck? Where are we? Answer me, bitch! Now![/say]")
+		saynn("[say=mirri]Ты что, только что нас куда-то телепортировала, сука?! Где мы? Отвечай мне, дрянь! Живо![/say]")
 
-		saynn("Yeah, you can just feel the fear flowing through.. but she begins to giggle.")
+		saynn("Да, страх буквально вибрирует в воздухе... но вдруг она начинает хихикать.")
 
-		saynn("[say=mirri]You really thought I would buy that? Pfff, you are even more stupid than I thought. We are exactly where we were, I know that~.[/say]")
+		saynn("[say=mirri]Ты реально думал, что я на это куплюсь? Пфф, ты еще тупее, чем я думала. Мы ровно там же, где и были, я точно знаю~.[/say]")
 
-		saynn("Shit. Maybe you can salvage it.")
+		saynn("Блядь. Может, ещё получится что-то спасти.")
 
-		saynn("[say=pc]Sure, you can think that, future slave.[/say]")
+		saynn("[say=pc]Конечно, можешь так думать, будущая рабыня.[/say]")
 
-		saynn("[say=mirri]Haha, you are trying so hard, it's adorable. Wait, I gotta get back into the role. Ple-e-ease, don't sell me!!! I will do anything![/say]")
+		saynn("[say=mirri]Ха-ха, ты так стараешься, это просто мило. Ой, погоди, надо вернуться в роль. По-о-ожалуйста, не продавай меня!!! Я на всё согласна![/say]")
 
-		saynn("You smack her bare ass.. and pull her towards the auction stage, Mirri's laptop is in your other hand..")
+		saynn("Ты шлёпаешь её по голой заднице... и тянешь к аукционной сцене, при этом в другой руке у тебя ноутбук Мирри...")
 
-		addButton("Auction stage", "Time for the auction!", "dom_tp_stage")
+		addButton("Аукционная сцена", "Время аукциона!", "dom_tp_stage")
 	if(state == "dom_tp_stage"):
 		aimCameraAndSetLocName("market_market")
 		playAnimation(StageScene.HangingDuo, "idle", {pc="mirri", npc="pc", bodyState={exposedCrotch=true}})
-		saynn("You bring Mirri to the Blacktail Market auction stage while making sure to take some extra turns and loops, confusing her about the layout.")
+		saynn("Ты ведёшь Мирри к аукционной сцене на рынке Блэктейл, намеренно делая лишние круги и петли, чтобы она окончательно запуталась в планировке.")
 
-		saynn("Then, when you arrive on the stage, you position her in the middle.")
+		saynn("Затем, когда вы выходите на сцену, ты ставишь её в самый центр.")
 
-		saynn("[say=pc]Hands up.[/say]")
+		saynn("[say=pc]Руки вверх.[/say]")
 
-		saynn("Mirri sticks her tongue out.. so you just force her hands up and then attach chains to her cuffs, making her stand on her toes.")
+		saynn("Мирри высовывает язык... поэтому ты просто силой задираешь ей руки и пристегиваешь цепи к её наручникам, заставляя её стоять на цыпочках.")
 
-		saynn("[say=mirri]That's not a way to treat a lady.[/say]")
+		saynn("[say=mirri]Так не принято обращаться с дамой![/say]")
 
-		saynn("[say=pc]How does the collar feel, lady?[/say]")
+		saynn("[say=pc]Ну как тебе ошейник, миледи?[/say]")
 
-		saynn("[say=mirri]It's tight and heavy! You can take it off now already.[/say]")
+		saynn("[say=mirri]Он тугой и тяжелый! Можешь уже его снять![/say]")
 
-		saynn("[say=pc]I don't care.[/say]")
+		saynn("[say=pc]Мне плевать.[/say]")
 
-		saynn("You can just feel her rolling her eyes.")
+		saynn("Прямо чувствуется, как она закатывает глаза.")
 
-		saynn("Hm.. time to create the right atmosphere. You place the laptop near the closed curtains.. and run the recording of the old auction. It starts with an empty room.. before any bidders have even arrived.. which is perfect.")
+		saynn("Хм... пора создать нужную атмосферу. Ты ставишь ноутбук рядом с задернутыми шторами... и запускаешь запись старого аукциона. Она начинается с пустой комнаты... еще до прихода первых участников... что просто идеально.")
 
-		saynn("[say=mirri]What are you doing?[/say]")
+		saynn("[say=mirri]Что ты делаешь?[/say]")
 
-		saynn("[say=pc]Gathering the crowd. A little auction is about to take place.[/say]")
+		saynn("[say=pc]Собираю толпу. Сейчас начнется небольшой аукцион.[/say]")
 
-		saynn("[say=mirri]Amusing.[/say]")
+		saynn("[say=mirri]Забавно.[/say]")
 
-		saynn("Bidders begin to arrive on that recording.. their boots stepping loudly.")
+		saynn("На записи начинают появляться участники торгов... слышно их громкие шаги.")
 
-		saynn("[say=mirri]Huh? Is that you? Hah, you almost got me. You don't have to slap the floor to fool me, silly.[/say]")
+		saynn("[say=mirri]А? Это ты? Ха, чуть не подловила! Не обязательно хлопать по полу, чтобы разыграть меня, глупыш.[/say]")
 
-		saynn("You begin circling Mirri.. Time to do this.")
+		saynn("Вы начинаете кружить вокруг Мирри... Пора начинать.")
 
-		saynn("[say=pc]WELCOME! Welcome to my little auction![/say]")
+		saynn("[say=pc]ДОБРО ПОЖАЛОВАТЬ! Добро пожаловать на мой маленький аукцион![/say]")
 
-		saynn("[say=mirri]Hi! I'm the future bitch-slave! Please treat me like the fucktoy that I am![/say]")
+		saynn("[say=mirri]Привет! Я ваша будущая сучка-рабыня! Пожалуйста, обращайтесь со мной как с настоящей секс-игрушкой![/say]")
 
-		saynn("You chuckle at her confidence, your hand grabbing Mirri's chin.. while the laptop creates sounds far away.")
+		saynn("Вы посмеиваетесь над её уверенностью, хватая Мирри за подбородок... в то время как из ноутбука доносятся звуки, будто издалека.")
 
-		saynn("[say=mirri]Yeah, cool, you threw something to make that sound. Very smart. Is that what you did?[/say]")
+		saynn("[say=mirri]Ага, круто, ты что-то кинула, чтобы создать этот звук. Очень умно. Так ты и сделала?[/say]")
 
-		saynn("You speak quietly into her ear.")
+		saynn("Вы тихо шепчете ей на ухо.")
 
-		saynn("[say=pc]What do you think, Mirri? What am I doing?[/say]")
+		saynn("[say=pc]Как думаешь, Мирри? Что я сейчас делаю?[/say]")
 
-		saynn("..and then switch back to your loud presenter voice.")
+		saynn("...а затем снова переходите на громкий голос ведущей.")
 
-		saynn("[say=pc]Look at this fine specimen, ladies and gentlemen! She is a mouthy one, that's for sure. But that just means it will be more fun to see her gradually break down![/say]")
+		saynn("[say=pc]Взгляните на этот прекрасный экземпляр, дамы и господа! Она та еще болтушка, это уж точно. Но это лишь значит, что будет еще веселее наблюдать, как она будет постепенно ломаться![/say]")
 
-		saynn("She tries to shake the blindfold off.. but you yank on her ponytail to make her focus.")
+		saynn("Она пытается сбросить повязку на глазах... но ты дергаешь её за хвост, заставляя сосредоточиться.")
 
-		saynn("[say=mirri]Argh.. Is there someone else here?[/say]")
+		saynn("[say=mirri]Аргх... Здесь есть кто-то еще?[/say]")
 
-		saynn("[say=pc]She is a hybrid, as you can see! A very exotic one! Agility of a feline and the practicality of a human. You know, those are actually very valuable on some planets. But it's obviously an acquired taste.[/say]")
+		saynn("[say=pc]Она гибрид, как видите! Очень экзотичный! Ловкость кошачьих и практичность человека. Знаете, на некоторых планетах это ценится очень высоко. Но это, конечно, вопрос вкуса.[/say]")
 
-		saynn("Enough bidders have arrived on the recording.. that they began quietly chatting with each other.")
+		saynn("На записи появилось уже достаточно участников торгов... они начали тихо переговариваться друг с другом.")
 
-		saynn("[say=mirri]You're not.. fooling me.. I am one hundred percent sure that this isn't happening.[/say]")
+		saynn("[say=mirri]Ты не... обманешь меня... Я на все сто уверена, что всё это не по-настоящему.[/say]")
 
-		saynn("[say=pc]Yes, Mirri, you have nothing to worry about.[/say]")
+		saynn("[say=pc]Да, Мирри, тебе не о чем беспокоиться.[/say]")
 
-		saynn("You position yourself behind her.. your hands land on her top.. and yank it down, exposing her {mirri.breasts} to the.. curtains. Your digits begin squeezing and groping her chest, forcing a little moan out of her.")
+		saynn("Ты встаешь позади неё... твои руки ложатся на её топ... и ты резко стягиваешь его вниз, выставляя её {mirri.breasts} на обозрение... публике. Твои пальцы начинают сжимать и ласкать её грудь, вырывая у неё тихий стон.")
 
-		saynn("[say=mirri]Ah..[/say]")
+		saynn("[say=mirri]Ах..[/say]")
 
-		saynn("[say=pc]Just look at those perfect tits.. Super squeezable. Some drugs and she can even become a hucow. I heard that catgirl milk is extremely sweet.[/say]")
+		saynn("[say=pc]Только взгляните на эти идеальные сиськи... Так и просятся, чтобы их сжали. Пару доз наркоты, и из неё можно сделать настоящую корову. Слышал, молоко у кошкодевочек невероятно сладкое.[/say]")
 
-		saynn("[say=mirri]Hey.. easy..[/say]")
+		saynn("[say=mirri]Эй... полегче...[/say]")
 
-		saynn("The chatter becomes louder and louder.. the speakers on that laptop aren't perfect.. but it seems to be enough..")
+		saynn("Гул голосов становится всё громче и громче... динамики на этом ноутбуке не идеальны... но, кажется, этого достаточно...")
 
-		saynn("[say=pc]Yeah.. oh, did someone just bid? I didn't even announce the starting price yet.[/say]")
+		saynn("[say=pc]Да уж.. о, кто-то уже сделал ставку? Я ведь даже стартовую цену не объявила.[/say]")
 
-		saynn("[say=mirri]'Cause you're a dummy..[/say]")
+		saynn("[say=mirri]Потому что ты тупица..[/say]")
 
-		saynn("[say=pc]Let's say.. A thousand credits. Is someone gonna match that?[/say]")
+		saynn("[say=pc]Скажем.. тысяча кредитов. Кто-нибудь готов перебить?[/say]")
 
-		saynn("You hold Mirri in suspense.")
+		saynn("Вы заставляете Мирри томиться в ожидании.")
 
-		saynn("[say=mirri]A thousand, really? I'm Mirri Blacktail! I'm the best Syndicate slaver, I cost millions at least![/say]")
+		saynn("[say=mirri]Тысяча, серьезно? Я же Мирри Блэктейл! Лучшая работорговка Синдиката, я должна стоить как минимум миллионы![/say]")
 
-		saynn("Someone said something on the recording.. perfect timing.")
+		saynn("На записи кто-то что-то сказал.. идеальный момент.")
 
-		saynn("[say=pc]Oh, I see a hand. Interesting. Someone can give me eleven hundred now?[/say]")
+		saynn("[say=pc]О, вижу руку. Интересно. Кто-нибудь даст тысячу сто прямо сейчас?[/say]")
 
-		saynn("[say=mirri]What? You're bullshitting me, there is no one there..[/say]")
+		saynn("[say=mirri]Что? Ты меня разводишь, там же никого нет..[/say]")
 
-		saynn("One of your hands keeps groping her breasts firmly.. while the second one reaches down and pulls down her panties, exposing her cute pink pussy slit.. that looks dry.")
+		saynn("Одна твоя рука продолжает крепко тискать её грудь.. а вторая опускается ниже и стягивает трусики, обнажая её милую розовую щелочку.. которая выглядит сухой.")
 
-		saynn("[say=pc]Who wouldn't want to take a chance on this tight little pussy? She's got zero wear and tear, see? Extremely fuckable.[/say]")
+		saynn("[say=pc]Кто бы не захотел рискнуть и не взял эту тугую киску? Она совсем не поношенная, видите? Чертовски удобная для траха..[/say]")
 
-		saynn("When you spread her folds.. you notice the strings of juices hanging between them.")
+		saynn("Когда ты раздвигаешь её складки... ты замечаешь струйки сока, повисшие между ними.")
 
-		saynn("[say=pc]Oh, what's this? Seems like someone is enjoying the thought of being sold.[/say]")
+		saynn("[say=pc]Ой, это что еще такое? Похоже, кто-то в восторге от мысли о продаже![/say]")
 
-		saynn("[say=mirri]I don't![/say]")
+		saynn("[say=mirri]Вовсе нет![/say]")
 
-		saynn("You smack her ass, the sound echoing around.. together with Mirri's moan of pleasure.")
+		saynn("Ты шлепаешь её по заднице, и звук эхом разносится вокруг... вместе с томным стоном Мирри.")
 
-		saynn("[say=mirri]Ah![/say]")
+		saynn("[say=mirri]Ах![/say]")
 
-		saynn("[say=pc]And just check out that ass. It's begging to be spanked![/say]")
+		saynn("[say=pc]Только посмотрите на эту задницу. Она так и просит, чтобы её отшлепали![/say]")
 
-		saynn("Your digits spread her folds again and one slips inside, gently playing with the cocky slave's pussy.. making the girl squirm on the stage.. while the fake audience watches and makes a lot of noise. A second finger joins the first soon, stretching her tight needy entrance, curling to press against that sensitive spot that leaves her breathless.")
+		saynn("Твои пальцы снова раздвигают её складки, и один из них скользит внутрь, нежно лаская киску этой дерзкой рабыни... заставляя девушку извиваться на подиуме под шум воображаемой толпы. Вскоре к первому пальцу присоединяется второй, растягивая её узкий, жаждущий вход и надавливая на ту самую чувствительную точку, от которой у неё перехватывает дыхание.")
 
-		saynn("[say=pc]Oh, are you making a bid? Nice. Can someone give me twelve hundred now? This slave is worth it, trust me.[/say]")
+		saynn("[say=pc]О, вы делаете ставку? Приятно. Кто-нибудь может дать мне тысячу двести прямо сейчас? Эта рабыня того стоит, поверьте мне.[/say]")
 
-		saynn("[say=mirri]Mmhmm.. ah.. You are not selling me.. I'm pretty sure.. You know how?..[/say]")
+		saynn("[say=mirri]Ммм... ах... Ты ведь не продашь меня... я почти уверена... Знаешь как?..[/say]")
 
-		saynn("Her hips buck slightly form the fingering.. but you keep her firmly in place, your fingers pumping in and out, keeping a steady rhythm.")
+		saynn("Её бедра слегка дергаются от пальцевого секса... но ты крепко удерживаешь её на месте, ритмично работая пальцами внутри.")
 
-		saynn("[say=pc]How?[/say]")
+		saynn("[say=pc]Как именно?[/say]")
 
-		saynn("[say=mirri]You.. wouldn't be able to start the Blacktail Market without my password.. ah..[/say]")
+		saynn("[say=mirri]Ты.. ты бы не смог начать рынок Блэктейл без моего пароля.. ах..[/say]")
 
-		saynn("You lean really close to her ear.. while your fingers fuck her soaking pussy faster, three of them now, thrusting in and out, causing her slit to produce wet noises. Her legs begin to weaken..")
+		saynn("Ты наклоняешься совсем близко к её уху.. пока твои пальцы трахают её мокрую киску всё быстрее — теперь их уже три, они входят и выходят, заставляя её щель издавать влажные звуки. Её ноги начинают слабеть..")
 
-		saynn("[say=pc]Who said that we are at the Blacktail Market..[/say]")
+		saynn("[say=pc]Кто сказал, что мы на рынке Блэктейл..[/say]")
 
-		saynn("Mirri shuts up and just moans and pants, her wet pussy suddenly getting all tight around your digits, the inner walls clenching hard.")
+		saynn("Мирри замолкает, лишь стонет и тяжело дышит; её мокрая киска внезапно сжимается вокруг твоих пальцев, внутренние стенки судорожно пульсируют.")
 
-		saynn("The stage, the lack of vision, the confusion, the sound of the audience, the presenter and the constant rough finger-fucking.. Mirri is so close, you can feel it.")
+		saynn("Сцена, темнота, неразбериха, гул толпы, голос ведущего и этот непрекращающийся грубый пальцевой трах.. Мирри уже на пределе, ты это чувствуешь.")
 
-		saynn("[say=pc]Another bid? Great. Thirteen hundred anyone? Thirteen hundred to the man in black, great choice! Anyone ready to give me fourteen hundred? Look at her squirm, this slave is loving every second! Your collection will get ten times better with this one![/say]")
+		saynn("[say=pc]Еще одна ставка? Великолепно! Кто даст тысячу триста? Тысяча триста человеку в черном, отличный выбор! Кто готов дать тысячу четыреста? Посмотрите, как она извивается, эта рабыня наслаждается каждой секундой! С ней ваша коллекция станет в десять раз круче![/say]")
 
-		saynn("Her moans suddenly become desperate. Her knees give ways as she sags in the cuffs.")
+		saynn("Её стоны внезапно становятся отчаянными. Колени подгибаются, и она повисает на наручниках.")
 
-		saynn("[say=mirri]I.. ah.. I'm not some pathetic slave! I'm slaver! You can't just.. ah.. fu-.. fuck, I'm about to.. You c-can't just sell.. ah-h!..[/say]")
+		saynn("[say=mirri]Я.. ах.. я не какая-то там жалкая рабыня! Я работорговка! Вы не можете просто.. ах.. бля.. блядь, я сейчас.. Вы не можете просто продать.. ах-х!..[/say]")
 
-		saynn("You whisper into her ear.")
+		saynn("Ты шепчешь ей на ушко.")
 
-		saynn("[say=pc]Are you scared, bitch?[/say]")
+		saynn("[say=pc]Чего испугалась, сучка?[/say]")
 
-		saynn("She shakes her head a lot.. before throwing it back.. With a sharp cry, she finally loses control. Her body begins to convulse eagerly around your fingers, her inner walls pulsing in rapid contractions as she cums.")
+		saynn("Она сильно мотает головой.. а затем резко откидывает её назад.. С резким криком она наконец теряет контроль. Её тело начинает жадно содрогаться вокруг твоих пальцев, а внутренние стенки пульсируют в частых конвульсиях, когда она кончает.")
 
-		saynn("[say=mirri]F-fuck you.. ahh.. D-don't.. please.. Ahh!..[/say]")
+		saynn("[say=mirri]Бл*ять... ах... н-не надо... п-пожалуйста... А-ах!..[/say]")
 
-		saynn("[say=pc]THIRTEEN HUNDRED! SOLD![/say]")
+		saynn("[say=pc]ТРИНАДЦАТЬ СОТЕН! ПРОДАНО![/say]")
 
-		saynn("Her body shudders violently as her tight pussy squirts, creating a shiny fountain of transparent juices that splashes over the stage floor.")
+		saynn("Её тело сотрясает сильная дрожь, когда её узкая киска выдает фонтан прозрачного сока, который брызжет прямо на пол сцены.")
 
-		saynn("Mirri gasps, caught between shock and overwhelming pleasure, barely enduring the pleasure waves that flow through her as you continue to push your digits in and out, prolonging her climax until she is reduced to a trembling, helpless mess.")
+		saynn("Мирри задыхается, разрываясь между шоком и всепоглощающим удовольствием; она едва сдерживает волны наслаждения, проходящие сквозь неё, пока ты продолжаешь вгонять и вынимать пальцы, растягивая её оргазм до тех пор, пока она не превращается в дрожащее, беспомощное нечто.")
 
-		saynn("Mirri is panting heavily as she dangles limply from her restraints.")
+		saynn("Мирри тяжело дышит, безвольно повиснув на своих оковах.")
 
-		saynn("[say=pc]You can grab your new slave now.[/say]")
+		saynn("[say=pc]Теперь вы можете забрать свою новую рабыню.[/say]")
 
-		saynn("[say=mirri]D-don't.. I will f-fucking.. k-kill you.. you all.. ah.. f-fuckers.. ALL OF YOU!..[/say]")
+		saynn("[say=mirri]Н-не надо... я вас всех... бл*ть... у-убью... ах... сук... ВСЕХ ВАС!..[/say]")
 
-		addButton("Blindfold", "Take off her blindfold", "dom_rp_blindfold_off")
+		addButton("Повязка на глазах", "Снять повязку", "dom_rp_blindfold_off")
 	if(state == "dom_rp_blindfold_off"):
-		saynn("You untie the blindfold, letting it onto the wet floor.")
+		saynn("Ты развязываешь повязку, и она падает на мокрый пол.")
 
-		saynn("Mirri squints.. and then desperately looks around with her crazy blue eyes. The hall is empty, the curtains aren't even opened.. there is just that laptop playing some recording..")
+		saynn("Мирри прищуривается... а затем отчаянно озирается своими безумными голубыми глазами. Зал пуст, шторы даже не раздвинуты... только этот ноутбук, проигрывающий какую-то запись...")
 
-		saynn("[say=mirri]Wh.. there is.. you.. GRRR![/say]")
+		saynn("[say=mirri]Т-ты... это... ТЬФУ![/say]")
 
-		saynn("You put on your cheeky smile and stand in front of the girl.")
+		saynn("Ты расплываешься в наглой ухмылке и встаешь перед девушкой.")
 
-		saynn("[say=pc]Huh? I thought I didn't fool you.[/say]")
+		saynn("[say=pc]А? Я думала, что не обманула тебя.[/say]")
 
-		saynn("[say=mirri]You fucking.. Of course you didn't.. I knew your plan.. I knew everything.[/say]")
+		saynn("[say=mirri]Чертов... Ну конечно, не обманула... Я знала твой план... Я всё знала![/say]")
 
-		saynn("You chuckle and pinch her hard nipples.")
+		saynn("Ты посмеиваешься и сильно щипаешь её за твердые соски.")
 
-		saynn("[say=mirri]Ah![/say]")
+		saynn("[say=mirri]Ах![/say]")
 
-		saynn("[say=pc]Didn't know simple roleplay can get you so horny.[/say]")
+		saynn("[say=pc]Не знал, что обычный ролеплей может так тебя возбудить.[/say]")
 
-		saynn("She growls louder while you laugh.")
+		saynn("Она рычит громче, пока ты смеешься.")
 
-		saynn("[say=mirri]Shut up. Get me down already..[/say]")
+		saynn("[say=mirri]Заткнись. Спусти меня уже...[/say]")
 
-		saynn("[say=pc]Can I keep the collar on you? Pretty please.[/say]")
+		saynn("[say=pc]А можно оставить на тебе ошейник? Ну пожалуйста![/say]")
 
-		saynn("[say=mirri]Very funny.. No. I am NOT a slave. Unlike you.[/say]")
+		saynn("[say=mirri]Очень смешно.. Нет. Я НЕ рабыня. В отличие от тебя.[/say]")
 
-		saynn("You'd rather not anger the one who can actually sell you off into slavery at any point.")
+		saynn("Тебе лучше не злить ту, которая может в любой момент продать тебя в рабство.")
 
-		addButton("Restraints", "Bring her down", "dom_rp_after")
+		addButton("Фиксаторы", "Свали её!", "dom_rp_after")
 	if(state == "dom_rp_after"):
 		playAnimation(StageScene.Duo, "stand", {npc="mirri"})
-		saynn("You take off her cuffs and the collar.")
+		saynn("Ты снимаешь с неё наручники и ошейник.")
 
-		saynn("Mirri rubs her neck and hisses quietly.")
+		saynn("Мирри потирает шею и тихо шипит.")
 
-		saynn("[say=pc]It was fun to see you scared.[/say]")
+		saynn("[say=pc]Было весело видеть, как ты испугался.[/say]")
 
-		saynn("[say=mirri]I wasn't scared, you bitch.. hmpf.[/say]")
+		saynn("[say=mirri]Я не испугался, сучка.. хмпф.[/say]")
 
-		saynn("She grabs all the restraints and her laptop. But before the leaves, you give her ass a final smack.")
+		saynn("Она забирает все оковы и свой ноутбук. Но перед тем как уйти, ты отвешиваешь ей напоследок звонкий шлепок по заднице.")
 
-		saynn("[say=mirri]Ah. I hate you.[/say]")
+		saynn("[say=mirri]Ах. Ненавижу тебя.[/say]")
 
-		saynn("[say=pc]I thought you loved me.[/say]")
+		saynn("[say=pc]А я думала, ты меня любишь.[/say]")
 
-		saynn("[say=mirri]I can not love a stupid {pc.boy}..[/say]")
+		saynn("[say=mirri]Нельзя любить такого тупицу, как {pc.boy}..[/say]")
 
-		saynn("You chuckle and watch her walk away.")
+		saynn("Ты посмеиваешься, глядя ей вслед.")
 
 		GM.pc.setLocation("market_market")
 		setFlag("SlaveAuctionModule.customMirriGreeting", "You did NOT trick me. I was on top of it! I just played along like I said!")
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "dom_spank"):
 		playAnimation(StageScene.Spanking, "tease", {pc="pc", npc="mirri"})
-		saynn("A little spanking is what that spoiled brat needs.")
+		saynn("Этой избалованной дряни не помешает хорошая порция шлепков.")
 
-		saynn("As you grab Mirri by the hips and pull her closer, her eyes flash with anger, her tail whipping furiously.")
+		saynn("Когда ты хватаешь Мирри за бедра и притягиваешь к себе, её глаза вспыхивают гневом, а хвост начинает яростно хлестать из стороны в сторону.")
 
-		saynn("[say=pc]Pull your ass up, Mirri.[/say]")
+		saynn("[say=pc]Подними свою задницу, Мирри![/say]")
 
-		saynn("[say=mirri]Why would I?![/say]")
+		saynn("[say=mirri]С чего бы это?![/say]")
 
-		saynn("Yeah, you reckon. Rather than ordering, you just firmly plant your hand on your back and press her down into the floor, her arms sprawling out before her and her ass sticking up as a result. Mirri instantly starts to growl, a little blush spreading across her cheeks.")
+		saynn("Ага, так ты и думаешь. Вместо того чтобы просто отдавать приказы, ты решительно упираешься рукой ей в спину и прижимаешь её лицом к полу; её руки беспомощно распластываются перед ней, а задница из-за этого взмывает вверх. Мирри тут же начинает рычать, а на её щеках проступает легкий румянец.")
 
-		saynn("[say=mirri]What are you doing?![/say]")
+		saynn("[say=mirri]Ты что творишь?![/say]")
 
-		saynn("She tries to wiggle out of it.. but the fight left her breathless, causing her to fail. The catgirl is in a very exposed spot, her barely-covered ass on full display, the fabric of her striped panties clings tightly to her sensitive skin, outlining her slit.")
+		saynn("Она пытается вырваться... но силы покидают её, и попытка проваливается. Кошкодевочка оказывается в крайне уязвимом положении: её едва прикрытая задница выставлена на всеобщее обозрение, а ткань полосатых трусиков плотно облегает чувствительную кожу, очерчивая её щелочку.")
 
-		addButton("Spank!", "Make that booty red", "dom_spank_start")
+		addButton("Шлеп!", "Сделай эту попку красной", "dom_spank_start")
 	if(state == "dom_spank_start"):
 		playAnimation(StageScene.Spanking, "spank", {pc="pc", npc="mirri"})
-		saynn("Without a word, you raise your free hand.. before bringing it down hard on her curvy ass, the sharp sound of skin meeting skin echoes around the room. Mirri yelps and hisses, her claws digging into the floor as she jerks forward.")
+		saynn("Не говоря ни слова, ты заносишь свободную руку... а затем с силой опускаешь её на её аппетитные ягодицы; резкий звук столкновения кожи о кожу эхом разносится по комнате. Мирри вскрикивает и шипит, вонзая когти в пол и дергаясь вперед.")
 
-		saynn("[say=mirri]Ow.. Did you just spank my ass?[/say]")
+		saynn("[say=mirri]Ой!.. Ты что, только что отшлепал меня по заднице?[/say]")
 
-		saynn("You help her understand it better by smacking her butt again, making it jiggle while her tail wags. This time she was ready for it so the effect wasn't as strong.")
+		saynn("Ты помогаешь ей лучше это осознать, снова шлепая её по заду, заставляя его колыхаться, пока её хвост виляет из стороны в сторону. На этот раз она была готова, так что эффект оказался не таким сильным.")
 
-		saynn("[say=mirri]Is that all you've got?[/say]")
+		saynn("[say=mirri]И это всё, на что ты способен?[/say]")
 
-		saynn("She chuckles and looks back at you, her lips curling into a teasing smirk.")
+		saynn("Она посмеивается и смотрит на тебя, а её губы растягиваются в дразнящей ухмылке.")
 
-		saynn("[say=mirri]Pathetic. You think a little spanking is going to-..[/say]")
+		saynn("[say=mirri]Жалко. Ты думаешь, пара шлепков заставит меня...[/say]")
 
-		saynn("You cut her off with another strike, much harder this time, feeling her flesh heat beneath your palm, her body recoiling forward again. She stifles a gasp, her tail moving to defend her rear, but you simply pin it down, forcing her ass to stay exposed.")
+		saynn("Ты прерываешь её очередным ударом, на этот раз куда более мощным; ты чувствуешь, как её плоть нагревается под твоей ладонью, а её тело снова подается вперед. Она подавляет вздох, её хвост пытается прикрыться, но ты просто прижимаешь его, заставляя её задницу оставаться открытой.")
 
-		saynn("[say=pc]Bad girl.[/say]")
+		saynn("[say=pc]Плохая девочка.[/say]")
 
-		saynn("[say=mirri]BAD GIRL?! Do you even know who I am?! I am-.. AH![/say]")
+		saynn("[say=mirri]ПЛОХАЯ ДЕВОЧКА?! Ты хоть знаешь, кто я такая?! Я... АХ![/say]")
 
-		saynn("Her worlds are swallowed by another powerful smack. Her body jolts forward, her butt now visible reddened, a little subtle print of your palm visible on it.")
+		saynn("Её слова поглощаются очередным мощным шлепком. Её тело вздрагивает, а задница заметно покраснела, и на ней отчетливо виден след от твоей ладони.")
 
-		saynn("[say=pc]You're a brat that needs to learn her place.[/say]")
+		saynn("[say=pc]Ты просто мелкая дрянь, которой пора выучить своё место.[/say]")
 
-		addButton("More", "Spank the bitch out of her", "dom_spank_harder")
+		addButton("Еще", "Отшлепать эту сучку", "dom_spank_harder")
 	if(state == "dom_spank_harder"):
 		playAnimation(StageScene.Spanking, "fast", {pc="pc", npc="mirri"})
-		saynn("You don't stop, keeping up a steady rhythm of spanks that has her panting, her smut demeanor fading away, giving way to a frustrated snarl. She glares back at you when she can, her stare drilling through you.")
+		saynn("Ты не останавливаешься, продолжая методично шлепать её, отчего она начинает тяжело дышать, а её развратный вид сменяется раздраженным рычанием. Когда она может, она сверлит тебя яростным взглядом, пытаясь прожечь в тебе дыру.")
 
-		saynn("[say=mirri]I will.. gh.. kill you! Or worse! Sell you off to someone.. agh..[/say]")
+		saynn("[say=mirri]Я... гх... убью тебя! Или еще хуже! Продам тебя кому-нибудь... агх...[/say]")
 
-		saynn("You put more authority into each smack against that butt that has gotten quite red by now. You can feel how much it stings.. because it stings your palms too by now.")
+		saynn("Ты вкладываешь всё больше властности в каждый удар по её заднице, которая к этому моменту уже стала ярко-красной. Ты чувствуешь, насколько это больно... потому что твои ладони уже тоже горят от жжения.")
 
-		saynn("[say=pc]Bad girl.[/say]")
+		saynn("[say=pc]Плохая девочка.[/say]")
 
-		saynn("[say=mirri]Shut up with this bad girl shit! Agh.. I'm a Syndicate agent, you're not allowed to.. ah.. fuck, my ass.. not allowed to spank me! You're just a.. FUCK.. grrr-r.. ah.. just an AlphaCorp slave..[/say]")
+		saynn("[say=mirri]Заткнись со своим этим дерьмом про «плохую девочку»! Агх... Я агент Синдиката, тебе не позволено... ах... блядь, моя задница... не позволено меня шлепать! Ты всего лишь... СУКА... гррр-р... ах... всего лишь рабыня АльфаКорп...[/say]")
 
-		saynn("And yet, she is the one squirming under you, each spank making her let out a stifled noise.")
+		saynn("И всё же, именно она извивается под тобой, издавая при каждом шлепке сдавленный звук.")
 
-		saynn("By the last strike, her disobedient glare is still present.. but her hips have a mind of their own, trembling slightly, legs rubbing against each other. Her tail hangs low, flicking angrily every few seconds.")
+		saynn("К последнему удару её непокорный взгляд всё еще на месте... но её бедра живут своей жизнью, слегка подрагивая, а ноги трутся друг о друга. Хвост висит низко, раздраженно дергаясь каждые несколько секунд.")
 
-		saynn("You pull her butt close and let your hands rest on her red skin, feeling the heat radiate from each mark.")
+		saynn("Ты притягиваешь её задницу ближе и кладешь ладони на её покрасневшую кожу, чувствуя, как от каждого отпечатка исходит жар.")
 
-		saynn("[say=pc]How was it?[/say]")
+		saynn("[say=pc]Ну как тебе?[/say]")
 
-		saynn("[say=mirri]That felt great, you fuck.. obviously..[/say]")
+		saynn("[say=mirri]Это было охрененно, ублюдок... очевидно...[/say]")
 
-		saynn("[say=pc]I'm glad.[/say]")
+		saynn("[say=pc]Я рада.[/say]")
 
-		saynn("You finish it off by playing a drum solo on her flushed ass, making the poor catgirl throw her head back and let out a painful noise, several huge waves of sharp sensations rock through her body.")
+		saynn("В завершение ты устраиваешь барабанное соло по её раскрасневшейся заднице, заставляя бедную кошкодевочку запрокинуть голову и издать болезненный стон, пока её тело сотрясают мощные волны острых ощущений.")
 
-		saynn("[say=mirri]Grr.. I will repeat it, is this all you've got, soft {pc.boy}?..[/say]")
+		saynn("[say=mirri]Грр.. Повторю еще раз: это всё, на что ты способен, нежный {pc.boy}?..[/say]")
 
-		addButton("Enough", "She received enough spanks", "dom_spank_enough")
+		addButton("Хватит", "Она получила достаточно шлепков", "dom_spank_enough")
 		if (false):
-			addButton("Breasts", "Give her breasts some love too", "dom_spank_breasts")
-		addButton("Whip pussy", "Focus on her pussy specifically now", "dom_spank_pussy")
+			addButton("Грудь", "Удели немного внимания её груди", "dom_spank_breasts")
+		addButton("Хлестать киску", "Теперь сосредоточься именно на её киске", "dom_spank_pussy")
 	if(state == "dom_spank_enough"):
 		playAnimation(StageScene.Duo, "stand", {pc="pc", npc="mirri"})
-		saynn("You decide that she has earned a breather.")
+		saynn("Ты решаешь, что ей пора перевести дух.")
 
-		saynn("[say=pc]You're barely keeping yourself from collapsing already, Mirri.[/say]")
+		saynn("[say=pc]Ты уже едва держишься на ногах, Мирри.[/say]")
 
-		saynn("[say=mirri]Hmpf.. talk for yourself, soft {pc.boy}.[/say]")
+		saynn("[say=mirri]Хмф.. говори за себя, нежный {pc.boy}.[/say]")
 
-		saynn("She slowly gets up to her legs.. shaky legs.")
+		saynn("Она медленно поднимается на ноги... ноги дрожат.")
 
-		saynn("[say=mirri]Good job. That was.. at least decent by my standards.[/say]")
+		saynn("[say=mirri]Хорошая работа. Это было... по крайней мере, достойно по моим меркам.[/say]")
 
-		saynn("[say=pc]Huh? And what is good by your standards.[/say]")
+		saynn("[say=pc]А? И что же такое «достойно» по твоим меркам?[/say]")
 
-		saynn("[say=mirri]Good is when they scream in agony, begging for you to stop! But you don't, slowly breaking them, one bone at a time.[/say]")
+		saynn("[say=mirri]Достойно — это когда они вопят от агонии, умоляя тебя остановиться! Но ты не останавливаешься, медленно ломая их, по одной косточке за раз.[/say]")
 
-		saynn("[say=pc]You are one crazy bitch, Mirri.[/say]")
+		saynn("[say=pc]Ты просто сумасшедшая сучка, Мирри.[/say]")
 
-		saynn("She smiles.")
+		saynn("Она улыбается.")
 
-		saynn("[say=mirri]Well thank you. I don't break everyone's bones, sometimes I make exceptions for certain people in my life~.[/say]")
+		saynn("[say=mirri]Ну, спасибо. Я ломаю кости не всем подряд, иногда я делаю исключения для определенных людей в моей жизни~.[/say]")
 
-		saynn("That's.. good.")
+		saynn("Это... хорошо.")
 
 		setFlag("SlaveAuctionModule.customMirriGreeting", "I still can't sit on my ass because of you. I need something soft.. like your face!")
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "dom_spank_pussy"):
 		playAnimation(StageScene.GivingBirth, "idle", {pc="mirri"})
-		saynn("[say=pc]You asked for it, bitch.[/say]")
+		saynn("[say=pc]Ты сама напросилась, сучка.[/say]")
 
-		saynn("As you get up and head for her wardrobe of BDSM restraints, Mirri turns herself to her back, her feline eyes curious to see what you're up to.")
+		saynn("Пока ты поднимаешься и направляешься к её гардеробу с БДСМ-атрибутикой, Мирри ложится на спину, и её кошачьи глаза с любопытством следят за каждым твоим движением.")
 
-		saynn("[say=mirri]Ow, my butt..[/say]")
+		saynn("[say=mirri]Ой, задница болит...[/say]")
 
-		saynn("Her eyes widen just a bit as you reach out for a small-looking nine-tailed whip.. Her body tenses as she realizes exactly where you're staring at.")
+		saynn("Её глаза слегка расширяются, когда ты тянешься к небольшому девятихвостому кнуту... Её тело напрягается, когда она понимает, на что именно ты пялишься.")
 
-		saynn("[say=mirri]Don't you dare..[/say]")
+		saynn("[say=mirri]Только посмей..[/say]")
 
-		saynn("You close distance with her, the whip tails land on her thigh and gently brushes it.")
+		saynn("Ты сокращаешь дистанцию, и хвосты кнута опускаются ей на бедро, нежно касаясь кожи.")
 
-		saynn("[say=pc]You're begging me to stop already?[/say]")
+		saynn("[say=pc]Ты уже умоляешь меня остановиться?[/say]")
 
-		saynn("[say=mirri]No, obviously.. AH![/say]")
+		saynn("[say=mirri]Нет, очевидно.. АХ![/say]")
 
-		saynn("The first strike lands squarely on her covered up pussy, sharp and precise. Mirri gasps, her legs reflexively snapping shut as the sting radiates through her.")
+		saynn("Первый удар приходится точно по её прикрытой киске, резкий и точный. Мирри ахает, её ноги рефлекторно сжимаются, когда жгучая боль разливается по телу.")
 
-		saynn("[say=pc]Legs. Now.[/say]")
+		saynn("[say=pc]Ноги. Живо.[/say]")
 
-		saynn("Her mean glare intensifies.. but she does obey, bravely spreading her legs.")
+		saynn("Её свирепый взгляд становится ещё тяжелее... но она подчиняется, храбро раздвигая ноги.")
 
-		saynn("[say=mirri]Do your worst.. AGH![/say]")
+		saynn("[say=mirri]Делай что хочешь.. АГХ![/say]")
 
-		saynn("Her breath hitches as you deliver another whip on her pussy, your strikes relentless. The thin fabric of her panties offers little protection, her tail curling in the air, creating interesting patterns as she is trying to endure the pain.")
+		saynn("У неё перехватывает дыхание, когда ты наносишь очередной удар кнутом по её киске; твои удары беспощадны. Тонкая ткань трусиков почти не защищает, её хвост извивается в воздухе, выписывая причудливые узоры, пока она пытается вытерпеть боль.")
 
-		saynn("[say=pc]Can't handle it? Just say that you're too soft for this, I won't judge.[/say]")
+		saynn("[say=pc]Не справляешься? Просто признай, что ты слишком неженка для этого, я не осужу.[/say]")
 
-		saynn("[say=mirri]Nhh-h.. Fuck you.. keep whipping..[/say]")
+		saynn("[say=mirri]Нгх-х.. Блять тебя.. херачь дальше..[/say]")
 
-		saynn("Her legs are twitching, instinctively trying to close when you raise the whip.")
+		saynn("Ее ноги дергаются, инстинктивно пытаясь сжаться, когда ты замахиваешься плетью.")
 
-		saynn("[say=pc]Panties off.[/say]")
+		saynn("[say=pc]Снимай трусики.[/say]")
 
-		saynn("[say=mirri]Grr.. fine..[/say]")
+		saynn("[say=mirri]Грр.. ладно..[/say]")
 
-		saynn("She is getting a little obedient.")
+		saynn("Она становится немного послушной.")
 
-		addButton("Continue", "See what happens next", "dom_spank_pussy_naked")
+		addButton("Продолжить", "Смотреть, что будет дальше", "dom_spank_pussy_naked")
 	if(state == "dom_spank_pussy_naked"):
 		playAnimation(StageScene.GivingBirth, "birth", {pc="mirri", bodyState={exposedCrotch=true}})
-		saynn("Mirri hooks her clawed digits under the waistband of her fancy panties and pulls them down, fully exposing her sensitive, reddened lips.. there are ever so slightly visible strings of transparent juices hanging between them and the cloth..")
+		saynn("Мирри подцепляет когтистыми пальцами пояс своих изысканных трусиков и стягивает их вниз, полностью обнажая свои чувствительные, покрасневшие губки... между ними и тканью едва заметны тонкие ниточки прозрачного сока..")
 
-		saynn("[say=mirri]Here, whip me, you softie..[/say]")
+		saynn("[say=mirri]Давай, стеги меня, неженка..[/say]")
 
-		saynn("Without hesitation, you raise the whip up.. before bringing it down again, this time directly on her bare skin.")
+		saynn("Без колебаний ты замахиваешься.. а затем обрушиваешь плеть вниз, на этот раз прямо по ее голой коже.")
 
-		saynn("[say=mirri]AH..[/say]")
+		saynn("[say=mirri]АХ..![/say]")
 
-		saynn("Mirri's breath catches, her entire body jerking and then stiffening, her paws clenching into fists against the floor, her pussy reflectively clenching from the sharp impact.")
+		saynn("У Мирри перехватывает дыхание, все ее тело вздрагивает и замирает, лапы сжимаются в кулаки на полу, а киска рефлекторно сжимается от резкого удара.")
 
-		saynn("[say=mirri]Nhh.. harder, you bitch..[/say]")
+		saynn("[say=mirri]Нхх.. сильнее, сучка..[/say]")
 
-		saynn("Another hit lands, and she bites down on her lip, her thighs quiver, her pussy muscles pulsing as multiple thin lines of red appear on her skin, her wet sensitive flower trembling under the relentless assault.")
+		saynn("Очередной удар прилетает в цель, и она закусывает губу; её бёдра дрожат, мышцы киски пульсируют, а на коже проступают тонкие красные полосы; её влажный чувствительный цветок трепещет под этим беспощадным натиском.")
 
-		saynn("[say=mirri]Ah.. F-fuck, that stings.. Nhh-h.. fu-uck..[/say]")
+		saynn("[say=mirri]Ах.. Б-блядь, как жжёт.. Нхх-х.. бля-я-ядь..[/say]")
 
-		saynn("[say=pc]One more?[/say]")
+		saynn("[say=pc]Еще разок?[/say]")
 
-		saynn("She presents you her bruised pussy, the folds and the clit tingling every few seconds, her tailhole clenching too,")
+		saynn("Она подставляет тебе свою избитую киску, складки и клитор покалывает каждые несколько секунд, а анус непроизвольно сжимается.")
 
-		saynn("[say=mirri]..what do you think?[/say]")
+		saynn("[say=mirri]..ну, как тебе?[/say]")
 
-		saynn("Knowing her, she clearly wants more. And so you give it to her by delivering one last whip on that tight slit, the sting of the many tails echoing around the whole room.")
+		saynn("Зная её, она явно хочет добавки. И ты даёшь ей это, нанося последний удар хлыстом по узкой щели; свист множества хвостов эхом разносится по всей комнате.")
 
-		saynn("[say=mirri]AHHhh..[/say]")
+		saynn("[say=mirri]АХХхх..[/say]")
 
-		saynn("A gasp tears from her lips as her muscles spasm hard, her hips bucking involuntarily as she writhes under this weird kind of stimulation. Her bruised pussy releases a little stream of transparent juices before she closes her legs shut, too embarrassed to show her body's reaction.")
+		saynn("С её губ срывается судорожный вздох, мышцы резко спазмируют, а бёдра непроизвольно дёргаются вверх, пока она извивается под этим странным видом стимуляции. Её отбитая киска выпускает тонкую струйку прозрачного сока, прежде чем она плотно сжимает ноги, слишком смущённая реакцией своего тела.")
 
-		saynn("[say=mirri]Mmmmhhh.. s-shit.. t-that's enough.[/say]")
+		saynn("[say=mirri]Ммммххх.. ч-черт.. х-хватит уже.[/say]")
 
-		saynn("[say=pc]Did you just came a little?[/say]")
+		saynn("[say=pc]Ты что, только что кончила?[/say]")
 
-		saynn("[say=mirri]NO? I'm not a painslut.. I'm a Syndicate agent, I am the biggest sadist in the world..[/say]")
+		saynn("[say=mirri]НЕТ? Я не какая-нибудь там мазоманка.. Я агент Синдиката, я самый настоящий садист в мире..[/say]")
 
-		saynn("You crouch and slide your hand between her closed legs, landing it on her bruised heated sex.. and instantly hear her hissing painfully.")
+		saynn("Ты приседаешь и просовываешь руку между её сомкнутых ног, нащупывая её горячую, покрытую синяками киску.. и тут же слышишь её болезненный шипящий вздох.")
 
-		saynn("[say=pc]I'm beginning to think that this Syndicate agent might be living a secret double life.[/say]")
+		saynn("[say=pc]Я начинаю думать, что у этой агентки Синдиката может быть тайная двойная жизнь.[/say]")
 
-		saynn("Mirri pouts.")
+		saynn("Мирри надувает губки.")
 
-		addButton("Enough", "You did enough damage", "dom_spank_whip_enough")
-		addButton("Vaginal fisting", "Suddenly switch to testing how much her pussy can swallow!", "dom_spank_fist")
+		addButton("Хватит", "Ты и так наделал достаточно повреждений", "dom_spank_whip_enough")
+		addButton("Вагинальный фистинг", "Внезапно переходишь к проверке того, сколько может проглотить её киска!", "dom_spank_fist")
 	if(state == "dom_spank_whip_enough"):
 		playAnimation(StageScene.Duo, "stand", {npc="mirri", npcBodyState={exposedCrotch=true}})
-		saynn("You throw the whip away and help her to get up.")
+		saynn("Ты отбрасываешь кнут и помогаешь ей подняться.")
 
-		saynn("Mirri tries to pull her panties up over her whipped folds.. and grunts, her body trembling.")
+		saynn("Мирри пытается натянуть трусики поверх избитых складок плоти.. и кряхтит, всё её тело дрожит.")
 
-		saynn("[say=mirri]Ow.. ah.. fuck.. where is that fucking cream..[/say]")
+		saynn("[say=mirri]Ох.. ах.. бля.. где же эти гребаные сливки..[/say]")
 
-		saynn("[say=pc]Life is pain, huh.[/say]")
+		saynn("[say=pc]Жизнь — это боль, да?[/say]")
 
-		saynn("[say=mirri]Your life will be nothing but pain if I don't find that cream..[/say]")
+		saynn("[say=mirri]Твоя жизнь станет сплошной болью, если я не найду эти сливки..[/say]")
 
-		saynn("Cute threats.")
+		saynn("Милые угрозы.")
 
 		setFlag("SlaveAuctionModule.customMirriGreeting", "I still can't sit on my ass because of you. I need something soft.. like your face!")
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "dom_spank_fist"):
 		playAnimation(StageScene.SexFisting, "tease", {pc="pc", npc="mirri", npcBodyState={exposedCrotch=true}})
-		saynn("Seeing that bruised pussy.. makes you want to test it even further.. and break down more of that stubborn pride of hers while you're at it.")
+		saynn("Вид её припухшей киски... заставляет захотеть испытать её еще сильнее... и заодно сломить остатки её упрямой гордости.")
 
-		saynn("Without explaining anything, you turn Mirri onto all fours again, your fingers land on her dripping slit and begin to tease her, rubbing in slow, deliberate circles around her entrance.")
+		saynn("Ничего не объясняя, ты снова ставишь Мирри на четвереньки; твои пальцы ложатся на её сочащуюся щелочку, и ты начинаешь дразнить её, медленно и намеренно втираясь круговыми движениями вокруг входа.")
 
-		saynn("[say=mirri]Ahh.. hh.. What the fu.. ah.. f-fuck are you doing..[/say]")
+		saynn("[say=mirri]Ах.. хх.. Какого х.. ах.. бля.. что ты творишь..[/say]")
 
-		saynn("[say=pc]Breaking you.[/say]")
+		saynn("[say=pc]Ломаю тебя.[/say]")
 
-		saynn("You slide two digits inside her wet love tunnel, parting her red hot folds in the process which makes her arch her back and yelp.")
+		saynn("Ты вставляешь два пальца в её влажный любовный туннель, раздвигая горячие алые складки, отчего она выгибает спину и вскрикивает.")
 
-		saynn("[say=mirri]You just fucking whipped me there, it hurts..[/say]")
+		saynn("[say=mirri]Ты меня только что просто хлестнул, больно же..[/say]")
 
-		saynn("She gasps as you push deeper, adding another finger, stretching her little by little. The sharp sting of the whip has left her extremely sensitive and vulnerable, each movement of your digits sends electric shivers through her body, her walls clenching around you.")
+		saynn("Она ахает, когда ты входишь глубже, добавляя еще один палец и растягивая её понемногу. Острая боль от ударов бича сделала её невероятно чувствительной и уязвимой; каждое движение твоих пальцев прошивает её тело электрической дрожью, а её стенки судорожно сжимаются вокруг тебя.")
 
-		saynn("[say=mirri]Nhh..[/say]")
+		saynn("[say=mirri]Нхх..[/say]")
 
-		saynn("[say=pc]Ready to give up now?[/say]")
+		saynn("[say=pc]Уже готова сдаться?[/say]")
 
-		saynn("[say=mirri]Fuck you! I love you, keep abusing my cunt, you fuck..[/say]")
+		saynn("[say=mirri]Да пошел ты! Я люблю тебя, продолжай насиловать мою киску, ублюдок..[/say]")
 
-		saynn("Looks like you have scrambled her brains a little with all the spanking and whipping, hah.")
+		saynn("Похоже, ты немного вскружил ей голову всеми этими шлепками и ударами бича, ха.")
 
-		saynn("[say=pc]Syndicate Agent.. more like Syndicate Slut.[/say]")
+		saynn("[say=pc]Агент Синдиката.. скорее, Шлюха Синдиката.[/say]")
 
-		saynn("Slowly and teasingly, you work in the fourth finger too.. and begin to really feel her walls ripple around your fingers. Mirri is squirming around on the floor, her eyes full of bliss.. weird kind of bliss.")
+		saynn("Медленно и дразняще ты вводишь четвертый палец... и начинаешь по-настоящему чувствовать, как её стенки пульсируют вокруг твоих пальцев. Мирри извивается на полу, её глаза полны блаженства... какого-то странного блаженства.")
 
-		saynn("[say=mirri]Nhh.. I hate you.. My cunt is burning.. ghh-h..[/say]")
+		saynn("[say=mirri]Нхх.. Ненавижу тебя.. Моя киска горит.. гхх-х..[/say]")
 
-		saynn("She is wet inside.. extremely wet.. so much that you begin trying to force the whole palm in, stretching her red pussy with your digits as you slip them in and out.")
+		saynn("Внутри она вся мокрая... невероятно мокрая... настолько, что ты начинаешь пытаться втиснуть всю ладонь, растягивая её красную киску пальцами, пока они скользят туда-сюда.")
 
-		saynn("[say=mirri]Shi-it..[/say]")
+		saynn("[say=mirri]Черт..[/say]")
 
-		saynn("Mirri is trembling hard, her claws leaving marks on the wooden floor. Cats do love pain after all..")
+		saynn("Мирри сильно дрожит, её когти оставляют борозды на деревянном полу. Кошки ведь и вправду обожают боль...")
 
-		addButton("Fist", "Shove the whole fist in", "dom_spank_fist_shove")
+		addButton("Кулак", "Засунуть кулак целиком", "dom_spank_fist_shove")
 	if(state == "dom_spank_fist_shove"):
 		playAnimation(StageScene.SexFisting, "sex", {pc="pc", npc="mirri", npcBodyState={exposedCrotch=true}})
-		saynn("With each thrust, you push your fingers deeper.. until finally.. you slip your entire hand inside her, now feeling her slick warmness envelop you completely. Mirri's body instantly shudders around you, her loud cry filling the air while her pussy clenches hard, releasing a little short squirt of fluids.")
+		saynn("С каждым толчком ты проталкиваешь пальцы всё глубже... пока, наконец, не входишь в неё всей кистью, ощущая, как её влажное тепло полностью обволакивает тебя. Тело Мирри мгновенно содрогается, её громкий крик наполняет воздух, а киска судорожно сжимается, выдавая короткую струю смазки.")
 
-		saynn("[say=pc]Look at you, taking it all.[/say]")
+		saynn("[say=pc]Посмотри на себя, принимаешь всё до капли.[/say]")
 
-		saynn("[say=mirri]Mhhhh.. fuuuuuck.. I w-wanna rip your head off.. s-snuggle you to death.. my cu-u-unt..[/say]")
+		saynn("[say=mirri]Мммхх.. бляяяядь.. я х-хочу оторвать тебе голову.. и с-смертельно прижаться к тебе.. моя п-пissя..[/say]")
 
-		saynn("Her tail wraps around your wrist as you begin to pump your fist in and out. Each movement sends her spiraling closer to.. some kind of edge. Her body arches against you, the tension in her bruised stretched pussy rising fast as it starts to make wet noises.")
+		saynn("Её хвост обвивает твоё запястье, когда ты начинаешь ритмично двигать кулаком туда-сюда. Каждое движение приближает её к... какому-то пределу. Её тело выгибается навстречу тебе, напряжение в её избитой, растянутой киске растёт, и она начинает издавать влажные звуки.")
 
-		saynn("[say=mirri]Agh-hh. Ahh.. ahhh.. PUMP THIS WHORE FULL.. AH.. SHIT, I'm CUMMING.. AH..[/say]")
+		saynn("[say=mirri]Агх-хх. Ахх.. аххх.. ЗАЛЁТЬ ЭТОЙ ШЛЮХЕ ПО ГЛУБИНЕ.. АХ.. БЛЯТЬ, Я КОБЖАЮ.. АХ..[/say]")
 
-		saynn("With a final, powerful thrust, you drive your fist in deep.. and then it's like a dam breaking. Mirri cries out, a crazy combination of pain and pleasure flooding her senses.. Her clenching pussy squirts, sending a strong current of fluids onto the floor.. again and again.. until there is nothing left but dry convulsions.")
+		saynn("Последним мощным толчком ты вгоняешь кулак глубоко... и тут плотину прорывает. Мирри вскрикивает — безумная смесь боли и наслаждения захлестывает её чувства... Её сжимающаяся киска брызжет, выплескивая на пол сильный поток жидкости... снова и снова... пока не остаются лишь судорожные конвульсии.")
 
-		saynn("You feel her walls tighten.. and then release.. and then tighten again, pulsing at a slow rate while she is losing herself to these sensations that you're bringing her.")
+		saynn("Ты чувствуешь, как её стенки сжимаются... затем расслабляются... а затем снова сжимаются, пульсируя в медленном ритме, пока она теряет рассудок от ощущений, которые ты ей даришь.")
 
-		saynn("Seeing her rolled up eyes.. yeah.. you know that you have pushed her to her limits now.")
+		saynn("Глядя на её закатившиеся глаза... да... ты понимаешь, что довел её до самого предела.")
 
-		addButton("Enough", "Let her rest now", "dom_spank_fist_shove_enough")
+		addButton("Хватит", "Пусть она теперь отдохнет", "dom_spank_fist_shove_enough")
 	if(state == "dom_spank_fist_shove_enough"):
 		playAnimation(StageScene.Duo, "stand", {npc="mirri", npcBodyState={exposedCrotch=true}})
-		saynn("You yank your fist out.. causing her pussy to clench and pulse again for a bit. Then you just help her to get up onto her legs.")
+		saynn("Ты резко выдергиваешь кулак... отчего её киска на мгновение снова сжимается и пульсирует. Затем ты просто помогаешь ей подняться на ноги.")
 
-		saynn("Mirri is swaying a lot, her thighs are all wet, her bruised, abused pussy still dripping..")
+		saynn("Мирри сильно шатается, её бедра все мокрые, а её избитая, измученная киска всё еще сочит смазку...")
 
-		saynn("[say=mirri]I think I'm in love with you, {pc.name}..[/say]")
+		saynn("[say=mirri]Кажется, я в тебя влюбилась, {pc.name}..[/say]")
 
-		saynn("[say=pc]Yeah, I heard it. You also wanted to rip my head off.[/say]")
+		saynn("[say=pc]Да, я слышал. А еще ты хотела оторвать мне голову.[/say]")
 
-		saynn("[say=mirri]Pff, don't be a pussy cat. I only kill the ones I can't stand.. which is pretty much everyone.. but still! Shit, my ass hurts too still.. Where is that damn cream..[/say]")
+		saynn("[say=mirri]Пфф, не будь такой неженкой. Я убиваю только тех, кого терпеть не могу... а это почти все... но всё равно! Черт, у меня задница тоже до сих пор болит... Где этот гребаный крем...[/say]")
 
 		setFlag("SlaveAuctionModule.customMirriGreeting", "I still can't sit on my ass because of you. I need something soft.. like your face!")
-		saynn("Mirri heads towards her wardrobe.. better to leave her to it now.")
+		saynn("Мирри направляется к своему гардеробу... лучше оставить её сейчас одну.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 func getDebugActions():
 	return [
 	{

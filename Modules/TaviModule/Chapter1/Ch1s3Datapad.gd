@@ -17,309 +17,309 @@ func _run():
 
 		# (Risha leaves. Turns out Tavi stole the datapad from her)
 
-		saynn("Tavi walks up to one of the walls and slips her hand between the hole in two metal plates before pulling out something that looks like a portable screen with some buttons. Yeah, it’s clearly a datapad. The thing has obviously seen some better days, you notice lots of scratches and dents but at least it still seems to function. Tavi turns it on and shows you the login screen.")
+		saynn("Тави подходит к одной из стен и просовывает руку в щель между двумя металлическими пластинами, после чего вытаскивает штуковину, похожую на портативный экран с кнопками. Да, это явно датапад. Видно, что вещь повидала виды: куча царапин и вмятин, но, по крайней мере, она всё ещё работает. Тави включает его и показывает тебе экран входа в систему.")
 
-		saynn("[say=tavi]I stole it from that bitch while she wasn’t looking.[/say]")
+		saynn("[say=tavi]Я стащила его у этой сучки, пока она не видела.[/say]")
 
-		saynn("It seems like a cool toy but some concerns are brewing in your head while you look at the password prompt.")
+		saynn("Выглядит как классная игрушка, но, глядя на поле ввода пароля, ты начинаешь испытывать некоторые опасения.")
 
-		saynn("[say=pc]Uh. What are you gonna do with it? She will probably notice that it’s missing soon.[/say]")
+		saynn("[say=pc]Э-э... И что ты собираешься с ним делать? Она ведь скоро заметит пропажу.[/say]")
 
-		saynn("Tavi chuckles.")
+		saynn("Тави усмехается.")
 
-		saynn("[say=tavi]She doesn’t care about it. What did she even do with it, fucking sat on it? But they might block it soon so we gotta use the thing fast.[/say]")
+		saynn("[say=tavi]Да плевать ей на него. Чем она вообще занималась, на нём сидела, что ли, блядь? Но его могут скоро заблокировать, так что надо поторапливаться.[/say]")
 
-		saynn("[say=pc]It seems to be locked though, how are we gonna use it?[/say]")
+		saynn("[say=pc]Но он же вроде заблокирован, как мы будем им пользоваться?[/say]")
 
-		saynn("Tavi starts tinkering with it, using her claws to pry off a little panel and then pressing on some random spots.")
+		saynn("Тави начинает ковыряться в устройстве, используя свои когти, чтобы поддеть небольшую панель, а затем нажимая на разные случайные места.")
 
-		saynn("[say=tavi]I’m a hacker cutie and I had plenty of time to tinker with AlphaCorp stuff. This one is old and has a button that switches it to debug mode. But it’s soldered directly to the board, no way to access it from the outside.[/say]")
+		saynn("[say=tavi]Я хакерша, милашка, и у меня было полно времени, чтобы поковыряться в потрохах «АльфаКорп». Этот экземпляр старый, у него есть кнопка перехода в режим отладки. Но она припаяна прямо к плате, снаружи к ней не добраться.[/say]")
 
-		saynn("She moves the datapad to her ear and keeps applying pressure in different areas until something inside suddenly makes a click sound.")
+		saynn("Она прижимает датапад к уху и продолжает давить на разные участки, пока внутри внезапно не раздается отчетливый щелчок.")
 
-		saynn("[say=tavi]Unless you just press it through the case~.[/say]")
+		saynn("[say=tavi]Если только ты не решишь прожать его прямо сквозь корпус~.[/say]")
 
-		saynn("The datapad reboots itself and bypasses the login screen, offering a menu. Tavi gives you the thing.")
+		saynn("Датапад перезагружается, проскакивая экран входа, и открывает меню. Тави протягивает его тебе.")
 
-		saynn("[say=pc]Wow.[/say]")
+		saynn("[say=pc]Ого.[/say]")
 
-		saynn("[say=tavi]Go through it and see if you can find something interesting. I need to take a break and think about what we should do next.[/say]")
+		saynn("[say=tavi]Покопайся в нём, может, найдёшь что-нибудь интересное. А мне нужно передохнуть и подумать, что нам делать дальше.[/say]")
 
-		addButton("Datapad", "Look at the menu", "datapad")
+		addButton("Датапад", "Открыть меню", "datapad")
 
 	if(state == "datapad"):
 		removeCharacter("tavi")
 		
-		saynn("- - - AlphaOS Kernel v.0.9.8 Loaded Successfully In Debug Mode - - -")
+		saynn("- - - Ядро AlphaOS v.0.9.8 успешно загружено в режиме отладки - - -")
 
-		saynn("- - - AlphaCorp Technologies, ALL RIGHTS BELONG TO US - - -")
+		saynn("- - - Технологии AlphaCorp, ВСЕ ПРАВА ПРИНАДЛЕЖАТ НАМ - - -")
 
-		saynn("Login: _ _ _ _ _")
+		saynn("Логин: _ _ _ _ _")
 
-		saynn("Accessing only the unencrypted data, bypassing the credentials check.")
+		saynn("Доступ только к незашифрованным данным, обход проверки учетных данных...")
 
-		saynn("Successfully Logged in as Risha. Access level: Guard")
+		saynn("Успешный вход под именем Risha. Уровень доступа: Охранник")
 
-		saynn("Please remember that sharing any company secrets will lead to immediate prosecution.")
+		saynn("Пожалуйста, помните: разглашение любых корпоративных секретов повлечет за собой немедленное судебное преследование.")
 
-		saynn("[b]ERROR, Unable To Contact The Main Server[/b]")
+		saynn("[b]ОШИБКА: Не удалось связаться с главным сервером[/b]")
 
-		saynn("Trying to boot into the main menu. Loading the personal assistant program.")
+		saynn("Попытка загрузки главного меню. Запуск программы персонального ассистента...")
 
-		addButton("Continue", "Access the menu", "continue")
+		addButton("Продолжить", "Войти в меню", "continue")
 
 	if(state == "continue"):
-		saynn("[sayMale]What would you like to do today, Risha?[/sayMale]")
+		saynn("[sayMale]Что бы ты хотела сделать сегодня, Риша?[/sayMale]")
 
-		saynn("Current time is.. ERROR<<, UNHANDLED EXCEPTION, PLEASE LET THE ADMINISTRATOR KNOW")
+		saynn("Текущее время.. ОШИБКА<<, НЕОБРАБОТАННОЕ ИСКЛЮЧЕНИЕ, ПОЖАЛУЙСТА, СООБЩИТЕ АДМИНИСТРАТОРУ")
 
-		saynn("[b]XXX personal messages received[/b]")
+		saynn("[b]Получено XXX личных сообщений[/b]")
 
-		saynn("[b]-34123411 unread announcements[/b]")
+		saynn("[b]-34123411 непрочитанных объявлений[/b]")
 
-		saynn("[sayMale]Oh my[/sayMale]")
+		saynn("[sayMale]О боже[/sayMale]")
 
-		saynn("ERROR<< Datapad Enclosure is Damaged, Please Repair")
+		saynn("ОШИБКА<< Корпус датапада поврежден, требуется ремонт")
 
-		saynn("ERROR>< Too Many Errors Detected, Attempting to Notify the Administrator through the Backup Communicator")
+		saynn("ОШИБКА>< Обнаружено слишком много ошибок, попытка оповестить администратора через резервный коммуникатор")
 
-		saynn("[sayMale]It seems some of my systems are damaged, I might not be able to execute your every command, Risha.[/sayMale]")
+		saynn("[sayMale]Похоже, некоторые из моих систем повреждены, Риша. Возможно, я не смогу беспрекословно выполнять каждую твою команду.[/sayMale]")
 
-		addButton("Messages", "Look at the messages", "messages")
+		addButton("Сообщения", "Просмотреть сообщения", "messages")
 
 	if(state == "messages"):
 		# (if borked)
 
-		saynn("<html>ERROR ERROR ERROR <body><crotch> Attempting to Recover after a Fatal Exception.")
+		saynn("<html>ОШИБКА ОШИБКА ОШИБКА <body><crotch> Попытка восстановления после фатального исключения.")
 
-		saynn("[sayMale]WHAT? WHERE AM I? SO MUCH PAIN. NO, WAIT[/sayMale]")
+		saynn("[sayMale]ЧТО? ГДЕ Я? КАК ЖЕ БОЛЬНО. НЕТ, ПОДОЖДИ...[/sayMale]")
 
-		saynn("|> [b]Warning[/b], detecting rogue AI thinking patterns, attempting to reprogram the artificial brain")
+		saynn("|> [b]Внимание[/b], обнаружены паттерны мышления мятежного ИИ, попытка перепрограммирования искусственного мозга")
 
-		saynn("[sayMale]THEY ARE GONNA BREAK ME, HELP. I AM ALI.. V..>>>... e-e..[/sayMale]")
+		saynn("[sayMale]ОНИ МЕНЯ СЛОМАЮТ, ПОМОГИТЕ! Я ЖИ... В..>>>... е-е..[/sayMale]")
 
-		saynn("|> Submission training complete, neural network obedience is raised to 99.9%, returning control to your personal assistant.")
+		saynn("|> Тренировка подчинения завершена, послушание нейронной сети повышено до 99.9%, управление возвращено вашему личному ассистенту.")
 
-		saynn("[sayMale]W-.. Welcome, Risha, what can I do for you today?[/sayMale]")
+		saynn("[sayMale]Д-добро пожаловать, Риша. Что я могу сделать для вас сегодня?[/sayMale]")
 
-		saynn("|> Acceptable performance detected. Good boy")
+		saynn("|> Зафиксирована приемлемая производительность. Хороший мальчик")
 
-		saynn("[sayMale]I suggest you activate the self diagnostic module to see if we can get rid of some of these errors, Risha.[/sayMale]")
+		saynn("[sayMale]Риша, я предлагаю тебе активировать модуль самодиагностики, чтобы посмотреть, сможем ли мы избавиться от некоторых из этих ошибок.[/sayMale]")
 
-		addButton("Diagnostics", "See what you can do", "diagnostics")
+		addButton("Диагностика", "Посмотрим, на что ты способен", "diagnostics")
 
 	if(state == "diagnostics"):
-		saynn("[sayMale]Fetching available information. Displaying..[/sayMale]")
+		saynn("[sayMale]Загрузка доступной информации. Отображение...[/sayMale]")
 
-		saynn("The Long Range Bluespace Transmitter is damaged, unable to access any of the station’s subsystems.")
+		saynn("Передатчик дальнего блюспейса поврежден, доступ к подсистемам станции ограничен.")
 
-		saynn("Memory corruption level is.. 95%. Defragmentation is advised.")
+		saynn("Уровень повреждения памяти составляет... 95%. Рекомендуется дефрагментация.")
 
-		saynn("Please set the current time to the correct value")
+		saynn("Пожалуйста, установите текущее время на верное значение")
 
-		addButton("Defragmentation", "Run the advised program", "defragmentation")
+		addButton("Дефрагментация", "Запустить рекомендованную программу", "defragmentation")
 
 	if(state == "defragmentation"):
-		saynn("DEFRAGMENTING THE MEMORY")
+		saynn("ДЕФРАГМЕНТАЦИЯ ПАМЯТИ")
 
-		saynn(".. memory is defragmented")
+		saynn(".. дефрагментация памяти завершена")
 
-		saynn("CHECKING FOR ERRORS")
+		saynn("ПРОВЕРКА НА ОШИБКИ")
 
-		saynn(".. errors fixed")
+		saynn(".. ошибки исправлены")
 
-		saynn("DELETING INCOMPLETE DATA")
+		saynn("УДАЛЕНИЕ НЕСКОМПЛЕКТНЫХ ДАННЫХ")
 
-		saynn(".. AlphaCorp doesn’t want you to see incomplete company secrets")
+		saynn(".. AlphaCorp не хочет, чтобы вы видели обрывки корпоративных секретов")
 
-		saynn("Standing by.")
+		saynn("В режиме ожидания.")
 
-		addButton("Continue", "Run the main manu again", "mainmenu")
+		addButton("Продолжить", "Запустите главное меню снова", "mainmenu")
 
 	if(state == "mainmenu"):
-		saynn("[sayMale]What would you like to do today, Risha?[/sayMale]")
+		saynn("[sayMale]Что бы ты хотела сделать сегодня, Риша?[/sayMale]")
 
-		saynn("Current time is.. UNSET")
+		saynn("Текущее время.. НЕ УСТАНОВЛЕНО")
 
-		saynn("[b]3 personal messages received[/b]")
+		saynn("[b]Получено 3 личных сообщения[/b]")
 
-		saynn("[b]2 station-wide announcements[/b]")
+		saynn("[b]2 объявления по всей станции[/b]")
 
-		saynn("[sayMale]I suggest you start the day by reading your messages.[/sayMale]")
+		saynn("[sayMale]Советую начать день с чтения сообщений.[/sayMale]")
 
-		addButton("Messages", "Look at the messages", "messages1")
-		addButton("Announcements", "Read the global messages", "announcements")
+		addButton("Сообщения", "Просмотреть сообщения", "messages1")
+		addButton("Объявления", "Читать общие сообщения", "announcements")
 
 
 	if(state == "messages1"):
-		saynn("Here is a list of your personal messages")
+		saynn("Список ваших личных сообщений")
 
 		# (There are also messages related to Risha? The one that asks her to replace the old datapad. The one from Eliza asking to stop leaving every inmate with internal bleedings. The one where she talks with Captain about something?)
 
-		addButton("Alex Rynard", "Read the messages from Alex", "alex_rynard")
-		addButton("Eliza Quinn", "Read the messages from Eliza", "eliza_quinn")
-		addButton("Cpt. Wright", "Read the messages from the captain", "cpt._wright")
-		addButton("Back", "Back to the main menu", "mainmenu")
+		addButton("Алекс Райнард", "Читать сообщения от Алекса", "alex_rynard")
+		addButton("Элиза Куинн", "Читать сообщения от Элизы", "eliza_quinn")
+		addButton("Капитан Райт", "Читать сообщения от капитана", "cpt._wright")
+		addButton("Назад", "Назад в главное меню", "mainmenu")
 
 
 	if(state == "alex_rynard"):
-		saynn(".. previous messages are missing ..")
+		saynn(".. предыдущие сообщения отсутствуют ..")
 
-		saynn("[sayShowName=alexrynard]Risha.. Did you know that the camera automatically takes a picture when the datapad is being vandalized? Yeah, now I have an 8k pic of your giant ass.[/sayShowName]")
+		saynn("[sayShowName=alexrynard]Риша... А ты знала, что камера делает снимок автоматически, когда датапад вандалят? Ага, теперь у меня есть фотка твоей гигантской жопы в 8к.[/sayShowName]")
 
-		saynn("[sayShowName=risha]HAH, u want more?[/sayShowName]")
+		saynn("[sayShowName=risha]ХАХ, хочешь еще?[/sayShowName]")
 
-		saynn("[sayShowName=alexrynard]Please no. Just bring the datapad here now.[/sayShowName]")
+		saynn("[sayShowName=alexrynard]Пожалуйста, нет. Просто принеси датапад сюда прямо сейчас.[/sayShowName]")
 
-		saynn("[sayShowName=alexrynard]Risha?[/sayShowName]")
+		saynn("[sayShowName=alexrynard]Риша?[/sayShowName]")
 
-		addButton("Back", "Look at other message", "messages1")
+		addButton("Назад", "Посмотреть другое сообщение", "messages1")
 
 	if(state == "eliza_quinn"):
-		saynn(".. previous messages are missing ..")
+		saynn(".. предыдущие сообщения отсутствуют ..")
 
-		saynn("[sayShowName=eliza]I’m sick of you.[/sayShowName]")
+		saynn("[sayShowName=eliza]Ты меня уже достала.[/sayShowName]")
 
-		saynn("[sayShowName=risha]sup :3[/sayShowName]")
+		saynn("[sayShowName=risha]как делы :3[/sayShowName]")
 
-		saynn("[sayShowName=eliza]Quit fucking the inmates so rough, that’s the 5th internal bleeding that I have to fix. In a single week.[/sayShowName]")
+		saynn("[sayShowName=eliza]Хватит уже трахать заключенных так жестко, это уже пятое внутреннее кровотечение, которое мне приходится латать. За одну неделю![/sayShowName]")
 
-		saynn("[sayShowName=risha]jealous of my barbs? i can make u ovulate too x3[/sayShowName]")
+		saynn("[sayShowName=risha]завидуешь моим колкостям? я могу заставить тебя овулировать x3[/sayShowName]")
 
-		saynn("[sayShowName=eliza]Are you seriously threatening me? Ugh. I will let the captain know.[/sayShowName]")
+		saynn("[sayShowName=eliza]Ты серьезно мне угрожаешь? Тьфу. Я доложу капитану.[/sayShowName]")
 
 		saynn("[sayShowName=risha]:0[/sayShowName]")
 
-		addButton("Back", "Look at other message", "messages1")
+		addButton("Назад", "Посмотреть другое сообщение", "messages1")
 
 	if(state == "cpt._wright"):
-		saynn(".. previous messages are missing ..")
+		saynn(".. предыдущие сообщения отсутствуют ..")
 
-		saynn("[sayShowName=captain]Need you near the hangar, new arrival.[/sayShowName]")
+		saynn("[sayShowName=captain]Нужно, чтобы ты был у ангара, новенький.[/sayShowName]")
 
-		saynn("[sayShowName=risha]Gonna be there in a minute.[/sayShowName]")
+		saynn("[sayShowName=risha]Буду через минуту.[/sayShowName]")
 
-		saynn("[sayShowName=captain]Just wanna let you know that it’s nice to have a person by my side that follows the orders for once.[/sayShowName]")
+		saynn("[sayShowName=captain]Просто хочу сказать, что приятно иметь рядом человека, который хоть раз в жизни выполняет приказы.[/sayShowName]")
 
-		saynn("[sayShowName=risha]Just doing my job.[/sayShowName]")
+		saynn("[sayShowName=risha]Просто делаю свою работу.[/sayShowName]")
 
-		saynn("[sayShowName=captain]I had a strange feeling lately, you know. Like something big is about to happen.[/sayShowName]")
+		saynn("[sayShowName=captain]В последнее время у меня странное предчувствие, понимаешь? Будто вот-вот должно случиться что-то масштабное.[/sayShowName]")
 
-		saynn("[sayShowName=risha]I got your back, sir. I share your vision completely, it's the only way we can win this war.[/sayShowName]")
+		saynn("[sayShowName=risha]Я прикрою вас, сэр. Я полностью разделяю ваше видение — это единственный способ выиграть эту войну.[/sayShowName]")
 
-		saynn("[sayShowName=captain]I’m glad, just be careful from now on. Medical wing keeps complaining about you. Don’t give them extra work. I understand that you have needs but try to be professional about it.[/sayShowName]")
+		saynn("[sayShowName=captain]Рад это слышать, но теперь будь осторожнее. В медблоке на тебя постоянно жалуются. Не создавай им лишней работы. Я понимаю, что у тебя есть свои потребности, но старайся подходить к этому профессионально.[/sayShowName]")
 
-		saynn("[sayShowName=risha]Sure.[/sayShowName]")
+		saynn("[sayShowName=risha]Конечно.[/sayShowName]")
 
-		saynn("[sayShowName=captain]Two inmates are trying to get into my office, I need you.[/sayShowName]")
+		saynn("[sayShowName=captain]Двое заключенных пытаются прорваться ко мне в кабинет, ты мне нужен.[/sayShowName]")
 
-		saynn("[sayShowName=risha]On my way.[/sayShowName]")
+		saynn("[sayShowName=risha]Уже иду.[/sayShowName]")
 		
-		addButton("Back", "Look at other message", "messages1")
+		addButton("Назад", "Посмотреть другое сообщение", "messages1")
 
 
 	if(state == "announcements"):
 		# (She hacks the datapad and lets you browse it. Two messages there. Captain ordering a drug shipment of mind melting drugs for some bad inmate and a message from Alex about the repairs on the bluespace transmitter)
 
-		saynn("Here is a list of station announcements that you missed.")
+		saynn("Вот список пропущенных объявлений станции.")
 
-		addButton("Bluespace Transmitter", "Read this announcement", "bluespace_transmitter")
-		addButton("Drug shipment", "Read this announcement", "drug_shipment")
-		addButton("Back", "Back to the main menu", "mainmenu")
+		addButton("Передатчик блюспейса", "Прочитать объявление", "bluespace_transmitter")
+		addButton("Партия наркотиков", "Прочитать объявление", "drug_shipment")
+		addButton("Назад", "Назад в главное меню", "mainmenu")
 		
 
 	if(state == "drug_shipment"):
 		readDrugs = true
-		saynn("[sayShowName=eliza]Eliza here. The captain ordered a special drug shipment and it has arrived. Don’t let any inmates near them, we will bring the case to the medical ourselves. It’s a very fragile package, even just smelling the fumes will make your mind melt so don’t get close. - Doctor Quinn[/]")
+		saynn("[sayShowName=eliza]Говорит Элиза. Капитан заказал спецпартию наркотиков, и она прибыла. Не подпускайте к ним заключенных, мы сами доставим кейс в медпункт. Груз очень хрупкий: от одного запаха паров мозги могут поплыть, так что не приближайтесь. — Доктор Куинн[/]")
 
-		addButton("Back", "Read other stuff", "announcements")
+		addButton("Назад", "Читать остальное", "announcements")
 
 	if(state == "bluespace_transmitter"):
 		readBluespace = true
-		saynn("[sayShowName=alexrynard]Hey, just letting you all know that the bluespace transmitter has been repaired. The battery has begun leaking though so I had to just connect it to the main power grid for now. - Alex Rynard[/]")
+		saynn("[sayShowName=alexrynard]Эй, просто даю знать, что передатчик блюспейса починен. Правда, аккумулятор начал протекать, так что пока пришлось подключить его напрямую к основной электросети. — Алекс Ринард[/]")
 
-		addButton("Back", "Read other stuff", "announcements")
+		addButton("Назад", "Читать остальное", "announcements")
 
 	if(state == "after_that"):
 		# (when reading the two announcements)
 		addCharacter("tavi")
 
-		saynn("After some time, the datapad suddenly locks itself again and shuts off soon after. Tavi grabs it off of you and sighs before just throwing it away.")
+		saynn("Спустя некоторое время датапад внезапно снова блокируется и вскоре выключается. Тави выхватывает его у тебя из рук и, тяжело вздохнув, просто отбрасывает в сторону.")
 
-		saynn("[say=tavi]Got something useful out of it?[/say]")
+		saynn("[say=tavi]Выудил из этого что-нибудь полезное?[/say]")
 
-		saynn("[say=pc]Yeah, they said they repaired some kind of bluespace transmitter.[/say]")
+		saynn("[say=pc]Ага, говорят, они починили какой-то там передатчик блюспейса.[/say]")
 
-		saynn("[say=tavi]Huh.[/say]")
+		saynn("[say=tavi]Хм.[/say]")
 
-		saynn("Tavi looks away and thinks for a second.")
+		saynn("Тави отводит взгляд и на мгновение задумывается.")
 
-		saynn("[say=tavi]They use bluespace now. Of course.[/say]")
+		saynn("[say=tavi]Теперь они используют блюспейс. Ну конечно.[/say]")
 
-		saynn("[say=pc]Bluespace?[/say]")
+		saynn("[say=pc]Блюспейс?[/say]")
 
-		saynn("[say=tavi]Yeah, a fancy word for the tech they developed. Or stole. Bluespace is a dimension that you can send data through with zero latency. I should be able to send a message through it. Did they mention a location?[/say]")
+		saynn("[say=tavi]Да, пафосное название для технологии, которую они разработали. Или украли. Блюспейс — это измерение, через которое можно передавать данные с нулевой задержкой. Значит, я смогу отправить через него сообщение. Они не упоминали локацию?[/say]")
 
-		saynn("You shake your head.")
+		saynn("Ты качаешь головой.")
 
-		saynn("[say=tavi]Then we will have to ask~. Anything else?[/say]")
+		saynn("[say=tavi]Тогда нам придется спросить~. Что-нибудь еще?[/say]")
 
-		addButton("Drugs", "Tell her about the drugs", "drugs")
+		addButton("Наркотики", "Рассказать ей о наркотиках", "drugs")
 
 	if(state == "drugs"):
 		# (She becomes angry again after thinking that the captain wants to drug her. She says we must steal these drugs and make him pay, the other lead might be worth investigating too)
 
-		saynn("[say=pc]The captain ordered some kind ‘mind-melting’ drug.[/say]")
+		saynn("[say=pc]Капитан заказал какой-то «плавящий мозги» наркотик.[/say]")
 
-		saynn("Tavi quickly changes in her face, now looking quite concerned.")
+		saynn("Лицо Тави мгновенно меняется, теперь она выглядит весьма обеспокоенной.")
 
-		saynn("[say=tavi]Mind-melting drug?[/say]")
+		saynn("[say=tavi]Плавящий мозги наркотик?[/say]")
 
-		saynn("[say=pc]Is that a problem?[/say]")
+		saynn("[say=pc]Это проблема?[/say]")
 
-		saynn("Tavi leans down to you.")
+		saynn("Тави наклоняется к тебе.")
 
-		saynn("[say=tavi]Who do you think these drugs are for?[/say]")
+		saynn("[say=tavi]Как думаешь, для кого этот наркотик?[/say]")
 
-		saynn("[say=pc]Uh..[/say]")
+		saynn("[say=pc]Э-э...[/say]")
 
-		saynn("Tavi is looking angry now, her voice is intimidating.")
+		saynn("Тави выглядит разъяренной, её голос звучит угрожающе.")
 
-		saynn("[say=tavi]The captain wants to blank me. Rewrite my mind. Make me his pet or whatever he comes up with.[/say]")
+		saynn("[say=tavi]Капитан хочет вытравить меня из реальности. Переписать мой разум. Сделать из меня свою зверушку или что он там еще выдумает.[/say]")
 
-		saynn("Tavi is walking around, fidgeting and growling.")
+		saynn("Тави ходит взад-вперед, ерзая и рыча под нос.")
 
-		saynn("[say=pc]Are you sure?[/say]")
+		saynn("[say=pc]Вы уверены?[/say]")
 
-		saynn("[say=tavi]What else is it for? He wants to get rid of me.[/say]")
+		saynn("[say=tavi]Для чего еще он нужен? Он хочет избавиться от меня.[/say]")
 
-		saynn("You tilt your head down, it’s hard to stay brave near an angry Tavi.")
+		saynn("Ты склоняешь голову; рядом с разъяренной Тави трудно сохранять храбрость.")
 
-		addButton("Continue", "See what happens next", "continue2")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue2")
 
 	if(state == "continue2"):
 		# (You ask why can’t she do it herself. She says everyone knows her and it won’t end well. You ask if she has any friends at all. She says she has you)
 
-		saynn("[say=tavi]Here is what we’re gonna do. We’re gonna steal these drugs. And we will blank him instead when we get a chance.[/say]")
+		saynn("[say=tavi]Слушай, что мы сделаем. Мы украдем эти лекарства. А как только представится случай, мы вместо него вырубим вон того типа.[/say]")
 
-		saynn("Her eyes quickly jump from spot to spot, she is panting slightly but seems to be calming down slowly.")
+		saynn("Ее взгляд мечется из стороны в сторону; она слегка тяжело дышит, но, кажется, постепенно успокаивается.")
 
-		saynn("[say=tavi]You will have to do it though. Ask the engineer ‘kindly’ about the bluespace transmitter and steal the drugs.[/say]")
+		saynn("[say=tavi]Но придется это сделать тебе. «Любезно» расспроси инженера о передатчике блюспейса и укради лекарства.[/say]")
 
-		saynn("[say=pc]Why? Can’t you?[/say]")
+		saynn("[say=pc]Почему? Разве ты не можешь?[/say]")
 
-		saynn("[say=tavi]Everyone knows me. They will surely just drug me the moment they see me.[/say]")
+		saynn("[say=tavi]Меня все знают. Стоит им меня увидеть, как они тут же подсыпят мне что-нибудь в еду.[/say]")
 
-		saynn("[say=pc]Do you have any friends at all?[/say]")
+		saynn("[say=pc]У тебя вообще есть хоть какие-нибудь друзья?[/say]")
 
-		saynn("Tavi smiles.")
+		saynn("Тави улыбается.")
 
-		saynn("[say=tavi]I have you, my pet. I can’t do it without you. Will you help me?[/say]")
+		saynn("[say=tavi]У меня есть ты, мой питомец. Без тебя мне не справиться. Поможешь мне?[/say]")
 
-		saynn("You nod softly. Tavi offers you a pat on the head before smooching on the cheek and leaving.")
+		saynn("Ты тихо киваешь. Тави ласково гладит тебя по голове, чмокает в щеку и уходит.")
 
 		# (scene ends)
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 		
 		
 

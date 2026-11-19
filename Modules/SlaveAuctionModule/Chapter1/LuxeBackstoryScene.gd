@@ -7,834 +7,834 @@ func _run():
 	if(state == ""):
 		addCharacter("luxewife")
 		playAnimation(StageScene.Duo, "stand", {pc="luxe", npc="luxewife", npcAction="sit"})
-		saynn("[say=luxewife]You look different, Luxe. New haircut?[/say]")
+		saynn("[say=luxewife]Ты выглядишь иначе, Люкс. Новая стрижка?[/say]")
 
-		saynn("Her sarcasm bounces off the spacious living quarters, a warm and familiar room to you. Red trims and dark wooden furniture dominate the space. The centerpiece, a massive bed pressed proudly against one of the walls.. a bed that looks like it belongs in a castle. But there are also less impressive exhibits here.. a desk.. a few chairs.. a wardrobe.. everything you need to live a good wealthy life.")
+		saynn("Её сарказм эхом разносится по просторным жилым покоям — комнате, которая кажется тебе теплой и знакомой. В интерьере доминируют красная отделка и темная деревянная мебель. Центр композиции — массивная кровать, гордо прижатая к одной из стен... кровать, которая словно принадлежит замку. Но здесь есть и менее впечатляющие экспонаты: письменный стол, несколько стульев, шкаф... всё, что нужно для достойной и богатой жизни.")
 
-		saynn("Sitting on the edge of the bed is Aisha, her dark fur sleek and soft. Her amber eyes, wide with curiosity and relief, track your every move. Her tail flicks behind her, betraying her excitement even as her voice carries a playful edge.")
+		saynn("На краю кровати сидит Аиша, её темный мех выглядит гладким и мягким. Её янтарные глаза, широко распахнутые от любопытства и облегчения, следят за каждым твоим движением. Хвост нервно подергивается сзади, выдавая её волнение, даже когда в голосе звучат игривые нотки.")
 
-		saynn("You let the door slide shut behind you with a faint hiss, stepping further into the room.")
+		saynn("Ты позволяешь двери с тихим шипением закрыться за спиной, проходя вглубь комнаты.")
 
-		saynn("[say=luxe]It worked, as you can see.[/say]")
+		saynn("[say=luxe]Как видишь, всё сработало.[/say]")
 
-		saynn("There is some obvious arrogance in your voice but you don't care. You stand still, your imposing frame radiating an amount of confidence that is impossible to ignore.")
+		saynn("В твоем голосе сквозит явное высокомерие, но тебе плевать. Ты стоишь неподвижно, и твоя внушительная фигура излучает такую уверенность, которую невозможно игнорировать.")
 
-		saynn("[say=luxe]I'm different now. But you..[/say]")
+		saynn("[say=luxe]Теперь я другой. А ты...[/say]")
 
-		saynn("Your golden-tipped fur catches the light as you grin.")
+		saynn("Твой мех с золотистыми кончиками ловит свет, пока ты ухмыляешься.")
 
-		saynn("[say=luxe]You look just as sexy, Aisha.[/say]")
+		saynn("[say=luxe]Ты выглядишь так же сексуально, Аиша.[/say]")
 
-		saynn("Her lips twitch into a small smile, her eyes linger on your fur that is glowing faintly as though kissed by fire.")
+		saynn("Её губы дрогнули в легкой улыбке, а взгляд задержался на твоем мехе, который едва заметно светился, словно поцелованный огнем.")
 
-		saynn("[say=luxewife]What a showoff~.[/say]")
+		saynn("[say=luxewife]Ну и выпендрёжник~.[/say]")
 
-		saynn("[say=luxe]Not yet.[/say]")
+		saynn("[say=luxe]Еще нет.[/say]")
 
-		saynn("You slip a cigar from your pocket, letting it rest between your fingers as you step closer. With a deliberate flex of your muscles, the golden tips of your fur ignite in a controlled burst of heat. You press the cigar's end against them.. and light it up.")
+		saynn("Ты достаешь из кармана сигару и, сделав шаг ближе, зажимаешь её между пальцами. Намеренно напрягая мышцы, ты заставляешь золотистые кончики своей шерсти вспыхнуть контролируемым жаром. Ты прижимаешь кончик сигары к ним... и поджигаешь её.")
 
-		saynn("Moments later, you're already savoring the deep inhales, sending lazy plumes of smoke curling into the air.")
+		saynn("Спустя мгновение ты уже наслаждаешься глубокими затяжками, выпуская в воздух ленивые струйки дыма.")
 
-		saynn("[say=luxe]Now I'm a showoff.[/say]")
+		saynn("[say=luxe]Теперь-то я выпендрёжник.[/say]")
 
-		saynn("Aisha giggles, batting away the smoke wafting in her direction.")
+		saynn("Айша хихикает, отмахиваясь от дыма, плывущего в её сторону.")
 
-		saynn("[say=luxewife]You never used to be much of a cigar guy.[/say]")
+		saynn("[say=luxewife]Раньше ты не особо любил сигары.[/say]")
 
-		saynn("[say=luxe]I wasn't. But now, how can I not?[/say]")
+		saynn("[say=luxe]Так и было. Но теперь — как тут устоять?[/say]")
 
-		saynn("[say=luxewife]Cigars are for old people, Luxe. Like your father.[/say]")
+		saynn("[say=luxewife]Сигары — это для стариков, Люкс. Как твой отец.[/say]")
 
-		saynn("You chuckle softly.")
+		saynn("Ты тихо посмеиваешься.")
 
-		saynn("[say=luxe]I'm a dad too, you know.[/say]")
+		saynn("[say=luxe]Вообще-то, я тоже отец, знаешь ли.[/say]")
 
-		saynn("[say=luxewife]Oh, I know~. Trust me, I know that very well.[/say]")
+		saynn("[say=luxewife]О, я знаю~. Поверь мне, я это прекрасно знаю.[/say]")
 
-		saynn("Her teasing lingers in the air.")
+		saynn("Её дразнящий тон всё ещё витает в воздухе.")
 
-		addButton("Continue", "See what happens next", "aisha_hugs")
+		addButton("Продолжить", "Смотреть, что будет дальше", "aisha_hugs")
 	if(state == "aisha_hugs"):
 		playAnimation(StageScene.Hug, "hug", {pc="luxe", npc="luxewife"})
-		saynn("Aisha gets up and gives you a tight hug, her paws exploring your strong back.")
+		saynn("Айша встает и крепко обнимает тебя, её лапки скользят по твоей крепкой спине.")
 
-		saynn("[say=luxewife]So warm.. Sarcasm aside.. Glad you're okay, my love. It's a bit reckless to agree to such untested treatments, don't you think?[/say]")
+		saynn("[say=luxewife]Так тепло.. Если отбросить сарказм.. Я рада, что с тобой всё в порядке, любовь моя. Соглашаться на такие непроверенные процедуры — это немного безрассудно, тебе не кажется?[/say]")
 
-		saynn("[say=luxe]You should think about it too. Golden accents would suit you.[/say]")
+		saynn("[say=luxe]Тебе тоже стоит об этом подумать. Золотые акценты тебе бы подошли.[/say]")
 
-		saynn("You smirk and hug your wife with your free hand, the other one keeps holding the cigar.")
+		saynn("Ты ухмыляешься и обнимаешь жену свободной рукой, при этом вторая всё ещё сжимает сигару.")
 
-		saynn("[say=luxewife]You and your gold..[/say]")
+		saynn("[say=luxewife]Ты и твоё золото..[/say]")
 
-		saynn("[say=luxe]You are my gold, Aisha. You and our kids. I want you all to be safe. And this treatment is already proven to improve your skin's heat resistance. Perfect against those laser-happy AlphaCorp fuckers.[/say]")
+		saynn("[say=luxe]Ты и есть моё золото, Айша. Ты и наши дети. Я хочу, чтобы вы все были в безопасности. А эта процедура уже доказала, что повышает термостойкость кожи. Идеально против этих помешанных на лазерах ублюдков из АльфаКорп.[/say]")
 
-		saynn("Aisha looks away, her voice softening.")
+		saynn("Айша отводит взгляд, её голос смягчается.")
 
-		saynn("[say=luxewife]I don't know, Luxe.. I've heard stories. And besides, I think you got me pregnant again.[/say]")
+		saynn("[say=luxewife]Не знаю, Люкс.. Я слышала разные истории. И к тому же, кажется, ты снова сделал меня беременной.[/say]")
 
-		saynn("Your confident grin falters, just slightly. Your ears flick backward in surprise, and you exhale a slow puff of smoke.")
+		saynn("Твоя уверенная ухмылка слегка дрогнула. Уши удивленно дернулись, и ты медленно выпустил облако дыма.")
 
-		saynn("[say=luxe]Another one? Hah. Woman, you are such an eager breeding bitch. Are we building an army, or are you just trying to make sure I'm outnumbered?[/say]")
+		saynn("[say=luxe]Еще одна? Хах. Женщина, ну ты и жадная сучка-разводчица. Мы что, армию собираем, или ты просто хочешь, чтобы меня окружили твои дети?[/say]")
 
-		saynn("Aisha grabs your hand and puts it over her belly before smiling, her voice cheeky but with a subtle hint of vulnerability..")
+		saynn("Аиша хватает твою руку и прижимает её к своему животу, лукаво улыбаясь, но в её голосе слышны едва уловимые нотки уязвимости.")
 
-		saynn("[say=luxewife]Wo-o-ow. Did the first twenty one kids that I gave you made you lose interest in me? Maybe I should start pegging you instead. Since you seem to be over the whole 'breeding' thing.[/say]")
+		saynn("[say=luxewife]О-о-о-оу. Неужели те двадцать один ребенок, которых я тебе родила, заставили тебя потерять ко мне интерес? Может, мне пора переходить на пеггинг? Раз уж тебе приелось всё это «разведение».[/say]")
 
-		saynn("You laugh, your hand sliding over that belly up to her chin, tilting her face up to meet your gaze.")
+		saynn("Ты смеешься, ведя рукой по её животу вверх к подбородку, и приподнимаешь её лицо, чтобы встретиться с ней взглядом.")
 
-		saynn("[say=luxe]Don't forget who has your key~. And don't be silly, I will never lose interest in you.[/say]")
+		saynn("[say=luxe]Не забывай, у кого твой ключ~. И не глупи, я никогда не потеряю к тебе интерес.[/say]")
 
-		saynn("The cat blushes deeply while your voice drops, now low and intimate as you lean closer to Aisha's ear.")
+		saynn("Кошка густо краснеет, когда твой голос становится низким и интимным, когда ты наклоняешься к самому уху Аиши.")
 
-		saynn("[say=luxe]If you're pregnant, it's because I can't get enough of you, and you know it.[/say]")
+		saynn("[say=luxe]Если ты беременна, то только потому, что мне всё мало тебя, и ты это знаешь.[/say]")
 
-		saynn("[say=luxewife]You always knew how to sweet-talk me into things..[/say]")
+		saynn("[say=luxewife]Ты всегда знала, как заговорить мне зубы и уговорить на что угодно...[/say]")
 
-		saynn("[say=luxe]That's because I love you. And.. you don't need the treatment now if you're unsure. But I really-really want you to be safe.. you will see the benefits, trust me. You will feel indestructible.[/say]")
+		saynn("[say=luxe]Это потому, что я люблю тебя. И... если сомневаешься, можно не делать процедуру прямо сейчас. Но я очень-очень хочу, чтобы ты была в безопасности... ты сама увидишь все плюсы, поверь мне. Ты почувствуешь себя неуязвимой.[/say]")
 
-		saynn("Aisha's laughter fills the room, easing the tension.. She gives you a little kiss on the lips.")
+		saynn("Смех Аиши наполняет комнату, разряжая обстановку... Она дарит тебе легкий поцелуй в губы.")
 
-		saynn("[say=luxewife]Alright, Mr. Indestructible. But don't think I'm going to stop joking about pegging you. It's too much fun.[/say]")
+		saynn("[say=luxewife]Ладно, мистер Неуязвимость. Но не думай, что я перестану шутить про пеггинг. Это слишком весело![/say]")
 
-		saynn("[say=luxe]I'd expect nothing less from you. Speaking of various sexual activities.. You should see my cock, it changed too.[/say]")
+		saynn("[say=luxe]От тебя другого и не ожидалось. Кстати, о всяких сексуальных штучках... Тебе стоит взглянуть на мой член, он тоже изменился.[/say]")
 
-		saynn("Your horny hands begin trying to strip your wife. Aisha moans softly, feeling the warm arms trace her girly curves.. but before the moment can deepen further, she pulls back slightly, her expression becoming more serious.")
+		saynn("Твои разгоряченные руки начинают раздевать жену. Аиша тихо стонет, чувствуя, как теплые ладони очерчивают её девичьи изгибы... но прежде чем момент успевает накалиться, она слегка отстраняется, и её лицо становится более серьезным.")
 
-		saynn("[say=luxewife]I really want to.. But speaking of dicks.. your father wanted to see you.[/say]")
+		saynn("[say=luxewife]Я бы очень хотела... Но раз уж мы заговорили о членах... твой отец хотел тебя видеть.[/say]")
 
-		saynn("You grumble.. but stop.")
+		saynn("Ты ворчишь... но останавливаешься.")
 
-		saynn("[say=luxe]Probably wants to criticize my 'reckless choices' as well. I will handle it.[/say]")
+		saynn("[say=luxe]Наверняка захочет снова раскритиковать мой «безрассудный выбор». Я с этим разберусь.[/say]")
 
-		saynn("You lean down to kiss Aisha's forehead.")
+		saynn("Ты наклоняешься, чтобы поцеловать Аишу в лоб.")
 
-		saynn("[say=luxewife]After that you can come back and handle me, hot guy~.[/say]")
+		saynn("[say=luxewife]А после этого можешь вернуться и заняться мной, горячий парень~.[/say]")
 
-		addButton("Continue", "See what happens next", "dad_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "dad_talk")
 	if(state == "dad_talk"):
 		removeCharacter("luxewife")
 		addCharacter("luxedad")
 		playAnimation(StageScene.Duo, "stand", {pc="luxe", npc="luxedad", npcAction="sit"})
-		saynn("The room hums with the faint sound of the holo-wall flickering in the background, maps of trade routes and starts shifting slowly in a dance of light.")
+		saynn("Комната наполнена едва слышным гулом мерцающей на заднем плане голо-стены, где карты торговых путей и звезд медленно сменяют друг друга в танце света.")
 
-		saynn("You step into the dimly lit office, your golden-tipped fur giving a faint glow, making you stand out more in the bland but rich environment.")
+		saynn("Ты входишь в тускло освещенный кабинет; твой мех с золотистыми кончиками едва заметно светится, из-за чего ты слишком сильно выделяешься на фоне этой скучной, но роскошной обстановки.")
 
-		saynn("[say=luxe]Father?[/say]")
+		saynn("[say=luxe]Отец?[/say]")
 
-		saynn("The old man looks up from his desk, his fingers wrapped around his powerful chin. The age has put its toll on him.. but his eyes are still sharp, the same piercing gaze that you remember staring into as a child.")
+		saynn("Старик поднимает взгляд от стола, обхватив пальцами волевой подбородок. Возраст взял свое... но глаза всё еще острые — тот самый пронзительный взгляд, в который ты завороженно смотрела в детстве.")
 
-		saynn("[say=luxedad]Luxe. Closer. I wanna see my mistakes clearer.[/say]")
+		saynn("[say=luxedad]Люкс. Подойди ближе. Хочу получше разглядеть свои ошибки.[/say]")
 
-		saynn("The words, sharp as ever, make you sigh. You step closer, your boots hitting the polished floor with soft thuds.")
+		saynn("Эти слова, всё такие же колкие, заставляют тебя вздохнуть. Ты делаешь шаг вперед, и твои сапоги глухо стучат по полированному полу.")
 
-		saynn("[say=luxe]Calling me a mistake, huh?[/say]")
+		saynn("[say=luxe]Называешь меня ошибкой, да?[/say]")
 
-		saynn("[say=luxedad]No. But I clearly fucked up somewhere while raising you.[/say]")
+		saynn("[say=luxedad]Нет. Но где-то в процессе твоего воспитания я явно жестко просрался.[/say]")
 
-		saynn("Not the best start, but it could have been worse.")
+		saynn("Начало не самое радужное, но могло быть и хуже.")
 
-		saynn("[say=luxe]I didn't die, as you can see.[/say]")
+		saynn("[say=luxe]Как видишь, я не сдохла.[/say]")
 
-		saynn("[say=luxedad]I'm old, Luxe, but don't mistake me for a fool. It will take more than some questionable drugs to kill a true Blacktail.[/say]")
+		saynn("[say=luxedad]Я стар, Люкс, но не принимай меня за дурака. Чтобы убить истинного Блэктейла, понадобится нечто большее, чем пара сомнительных наркотиков.[/say]")
 
-		saynn("It wasn't exactly a drug injection.. but you know better than to correct your father. He is not exactly wrong either.")
+		saynn("Это не совсем было похоже на инъекцию наркотика... но ты знаешь, что отца лучше не поправлять. Впрочем, он и не так уж неправ.")
 
-		saynn("[say=luxe]What's the problem then?[/say]")
+		saynn("[say=luxe]Так в чем тогда проблема?[/say]")
 
-		saynn("[say=luxedad]I'm old, that's the problem. And I'm only getting older. Soon I will have to stop being the head of our family. Because I will be dead.[/say]")
+		saynn("[say=luxedad]Я старею, вот в чем проблема. И с каждым днем всё сильнее. Скоро мне придется оставить пост главы семьи. Потому что я буду мертв.[/say]")
 
-		saynn("At least he didn't lose his sense of humor yet. You hadn't noticed just how gray his beard had become, how tired the lines of his face now look.")
+		saynn("По крайней мере, он еще не растерял чувство юмора. Ты и не замечала, насколько поседела его борода и какими усталыми стали морщины на его лице.")
 
-		saynn("[say=luxe]So what? You want to tell me which of your million kids is the chosen one? Make it quick then, who do I gotta bow to now?[/say]")
+		saynn("[say=luxe]И что с того? Хочешь сказать, кто из твоих миллиона детей — избранный? Давай быстрее, перед кем мне теперь нужно кланяться?[/say]")
 
-		addButton("Continue", "See what happens next", "dad_getsup")
+		addButton("Продолжить", "Смотреть, что будет дальше", "dad_getsup")
 	if(state == "dad_getsup"):
 		playAnimation(StageScene.Duo, "stand", {pc="luxe", npc="luxedad", npcAction="stand"})
-		saynn("Your father rises from his chair.. no, his throne.. and steps closer to you. His gaze scans you, lingering on the golden glow of your trim.")
+		saynn("Твой отец поднимается со своего кресла... нет, со своего трона... и делает шаг к тебе. Его взгляд сканирует тебя, задерживаясь на золотистом сиянии твоего трима.")
 
-		saynn("[say=luxedad]It's you, Luxe.[/say]")
+		saynn("[say=luxedad]Это ты, Люкс.[/say]")
 
-		saynn("The words land heavy. You blink, tilting your head.")
+		saynn("Эти слова звучат тяжело. Ты моргаешь, слегка наклонив голову.")
 
-		saynn("[say=luxe]Really? Why?[/say]")
+		saynn("[say=luxe]Правда? Но почему?[/say]")
 
-		saynn("[say=luxedad]Do I have to spell it out? Despite your.. recklessness.. You're our best slaver by far. I'm actually proud of how far you've come.[/say]")
+		saynn("[say=luxedad]Мне что, нужно разжевывать? Несмотря на твою... безрассудность... ты наш лучший работорговец, без вариантов. Я даже горжусь тем, чего ты добилась.[/say]")
 
-		saynn("[say=luxe]It's easy, slaves can't run away if you break their ankles.[/say]")
+		saynn("[say=luxe]Все просто: рабы не смогут сбежать, если переломать им лодыжки.[/say]")
 
-		saynn("Your father sighs and looks away.")
+		saynn("Твой отец вздыхает и отводит взгляд.")
 
-		saynn("[say=luxedad]Younglings.. Can't believe I was like this once.[/say]")
+		saynn("[say=luxedad]Мелюзга... Поверить не могу, что я когда-то был таким же.[/say]")
 
-		saynn("[say=luxe]So you're giving me the throne?[/say]")
+		saynn("[say=luxe]Так ты отдаешь мне трон?[/say]")
 
-		saynn("[say=luxedad]It's not a throne. I'm leaving you my power.. and my responsibility. It's not as easy as you think.[/say]")
+		saynn("[say=luxedad]Это не просто трон. Я оставляю тебе свою силу... и свою ответственность. Это не так просто, как ты думаешь.[/say]")
 
-		saynn("[say=luxe]If an old guy can do it, so can I.[/say]")
+		saynn("[say=luxe]Если старик справился, то и я смогу.[/say]")
 
-		saynn("He doesn't rise to your bait, his frown deepening. Straightening his posture, he looms over you despite his age.")
+		saynn("Он не ведется на твою провокацию, лишь хмурится еще сильнее. Выпрямившись, он возвышается над тобой, несмотря на свой возраст.")
 
-		saynn("[say=luxedad]Do you know why we.. Blacktail.. do what we do?[/say]")
+		saynn("[say=luxedad]Знаешь ли ты, почему мы... Блэктейлы... делаем то, что делаем?[/say]")
 
-		saynn("[say=luxe]Why we enslave? To humiliate AlphaCorp and its weak limp-dick leader in front of the whole galaxy.[/say]")
+		saynn("[say=luxe]Зачем мы порабощаем? Чтобы унизить АльфаКорп и их вялого, никчемного предводителя на глазах у всей галактики.[/say]")
 
-		saynn("The look he gives you could carve stone.")
+		saynn("Взгляд, которым он тебя окинул, мог бы кромсать камень.")
 
-		saynn("[say=luxedad]Don't make me regret my decision.[/say]")
+		saynn("[say=luxedad]Не заставляй меня жалеть о принятом решении.[/say]")
 
-		saynn("[say=luxe]C'mon, I'm not stupid.[/say]")
+		saynn("[say=luxe]Да ладно тебе, я же не идиотка.[/say]")
 
-		saynn("The tips of your fur throw some glowing embers.. that fade before they ever touch the floor.")
+		saynn("Кончики твоего меха словно источают светящиеся угольки... которые гаснут, так и не коснувшись пола.")
 
-		saynn("[say=luxedad]Then don't act stupid. This isn't about you anymore. It's about the Syndicate. About what's best for our mission.[/say]")
+		saynn("[say=luxedad]Тогда не строй из себя дурочку. Речь уже не о тебе. Речь о Синдикате. О том, что лучше для нашей миссии.[/say]")
 
-		saynn("His voice hardens, the authority in it pressing down on you like a weight.")
+		saynn("Его голос твердеет, и его властность давит на тебя, словно тяжелый груз.")
 
-		saynn("[say=luxedad]You can't afford to be weak. If you're weak, the Syndicate is weak. Do you understand me?[/say]")
+		saynn("[say=luxedad]Ты не можешь позволить себе слабость. Если слаба ты — слаб и Синдикат. Ты меня понимаешь?[/say]")
 
-		saynn("[say=luxe]C'mon, ..[/say]")
+		saynn("[say=luxe]Ну же...[/say]")
 
-		saynn("Your dad cuts you off.")
+		saynn("Отец перебивает тебя.")
 
-		saynn("[say=luxedad]Do you understand me?[/say]")
+		saynn("[say=luxedad]Ты меня понимаешь?[/say]")
 
-		saynn("[say=luxe]Yes. I understand, Father.[/say]")
+		saynn("[say=luxe]Да. Я понимаю, отец.[/say]")
 
-		saynn("[say=luxedad]I doubt you do. Not yet. But you will. You will get older, you will get wiser. You will make choices you don't want to make. Sacrifices. It's not fun, but we don't have the luxury of weakness.[/say]")
+		saynn("[say=luxedad]Сомневаюсь, что ты это чувствуешь. Пока нет. Но это случится. Ты будешь стареть, будешь становиться мудрее. Ты будешь делать выбор, который тебе совсем не захочется делать. Приносить жертвы. Это не весело, но у нас нет такой роскоши, как слабость.[/say]")
 
-		saynn("You wonder if he chose you just to make your life harder. The responsibility he speaks of feels more like a curse than an honor.")
+		saynn("Ты задаешься вопросом: не выбрал ли он тебя только для того, чтобы усложнить твою жизнь? Ответственность, о которой он говорит, кажется скорее проклятием, чем честью.")
 
-		saynn("[say=luxe]I will try to not disappoint you, Father.[/say]")
+		saynn("[say=luxe]Я постараюсь тебя не разочаровать, отец.[/say]")
 
-		saynn("His chuckle is dry, raspy, and surprisingly warm.")
+		saynn("Его смешок сухой, хриплый, но на удивление теплый.")
 
-		saynn("[say=luxedad]I will be dead, Luxe. I won't care. But the Syndicate can't be disappointed. That's our life's work - freeing this galaxy from AlphaCorp's greedy, blood-soaked hands. If we fail, it will all be for nothing.[/say]")
+		saynn("[say=luxedad]Меня уже не будет в живых, Люкс. И мне будет плевать. Но Синдикат не должен разочароваться. В этом смысл всей нашей жизни — освободить эту галактику из жадных, пропитанных кровью рук АльфаКорп. Если мы потерпим неудачу, всё будет напрасно.[/say]")
 
-		saynn("The speech leaves him hungry for air.")
+		saynn("После этой речи ему не хватает воздуха.")
 
-		saynn("[say=luxe]Our blood won't be spilled for nothing. I swear it.[/say]")
+		saynn("[say=luxe]Наша кровь прольется не зря. Клянусь тебе.[/say]")
 
-		saynn("He nods, subtle but approving.")
+		saynn("Он кивает — едва заметно, но одобрительно.")
 
-		saynn("[say=luxedad]You may go.[/say]")
+		saynn("[say=luxedad]Можешь идти.[/say]")
 
-		saynn("You turn to leave, the weight of his words settling on your shoulders. The moment the door slides shut behind you, though, your thoughts shift. You're still Luxe Blacktail. And right now, there is a certain pregnant wife waiting in your bed.")
+		saynn("Ты разворачиваешься, чтобы уйти, чувствуя, как тяжесть его слов ложится тебе на плечи. Но стоит двери за твоей спиной закрыться, как мысли меняются. Ты всё еще Люкс Блэктейл. И прямо сейчас в твоей постели ждет одна весьма беременная жена.")
 
-		addButton("Continue", "See what happens next", "back_in_room")
+		addButton("Продолжить", "Смотреть, что будет дальше", "back_in_room")
 	if(state == "back_in_room"):
 		removeCharacter("luxedad")
 		playAnimation(StageScene.Solo, "stand", {pc="luxe"})
-		saynn("You return to your quarters, already feeling the heat of anticipation building in your chest. The thought of what's waiting for you behind that door has your tail flicking with impatience. But as you step inside, the excitement freezes.")
+		saynn("Ты возвращаешься в свои покои, уже чувствуя, как в груди нарастает жар предвкушения. От мысли о том, что ждет тебя за этой дверью, хвост нетерпеливо дергается. Но как только ты переступаешь порог, восторг сменяется оцепенением.")
 
-		saynn("Room is empty. Your wife, Aisha, is nowhere to be seen.")
+		saynn("Комната пуста. Твоей жены, Аиши, нигде не видно.")
 
-		saynn("[say=luxe]Where is she?[/say]")
+		saynn("[say=luxe]Где же она?[/say]")
 
-		saynn("The still air offers no answer, but something catches your eye.. a small note resting on the bed.")
+		saynn("Застывший воздух не дает ответа, но твой взгляд за что-то цепляется... на кровати лежит маленькая записка.")
 
-		saynn("You grab and read it.")
+		saynn("Ты хватаешь её и читаешь.")
 
-		saynn("'Will be back soon, don't worry too much, luv u xoxo'.")
+		saynn("'Скоро вернусь, не слишком переживай, люблю тебя, чмок-чмок'.")
 
-		saynn("Fair enough. But it does leave you wondering what could possibly delay your very obligatory breeding session.")
+		saynn("Вполне убедительно. Но всё же невольно задаешься вопросом: что могло задержать твою — самую что ни на есть обязательную — сессию размножения?")
 
-		addButton("Wait", "Wait for Aisha", "wait_for_aisha")
+		addButton("Подождать", "Ждать Аишу", "wait_for_aisha")
 	if(state == "wait_for_aisha"):
 		addCharacter("luxewife2")
-		saynn("The minutes crawl by. The room starts to feel warmer.. damn, they really need better cooling in here. You pace, the anticipation gnawing at your thoughts.. until finally.. after what feels like an eternity, the door slides open.")
+		saynn("Минуты тянутся мучительно долго. В комнате становится всё жарче... черт, им определенно нужно получше охлаждение. Ты меришь комнату шагами, предвкушение грызет твои мысли... пока, наконец, после вечности, дверь не отъезжает в сторону.")
 
-		saynn("And there she is..")
+		saynn("И вот она здесь...")
 
-		saynn("[say=luxewife2]Hey..[/say]")
+		saynn("[say=luxewife2]Эй..[/say]")
 
-		saynn("Did she really..")
+		saynn("Неужели она правда..")
 
-		addButton("Continue", "See what happens next", "aisha_reveal")
+		addButton("Продолжить", "Смотреть, что будет дальше", "aisha_reveal")
 	if(state == "aisha_reveal"):
 		playAnimation(StageScene.Duo, "stand", {pc="luxe", npc="luxewife2"})
-		saynn("Aisha steps inside, her fur glowing faintly with a golden aura. The tips of her black fur shimmer with embers, the glow catching the dim light of the room and making her look almost otherworldly.")
+		saynn("Айша входит внутрь, её мех слабо светится золотистой аурой. Кончики её чёрного меха мерцают, словно угли; это сияние ловит тусклый свет комнаты, придавая ей почти неземной вид.")
 
-		saynn("[say=luxewife2]I thought they'd finish before you got back, but.. it took longer than expected.[/say]")
+		saynn("[say=luxewife2]Я думала, они закончат до твоего возвращения, но.. всё заняло больше времени, чем ожидалось.[/say]")
 
-		saynn("You take her in, eyes scanning every glowing inch of her transformed body. The faint blush on her cheeks has a golden hue, her tail swishing behind her with excitement.")
+		saynn("Ты впитываешь её взглядом, сканируя каждый светящийся дюйм её преображённого тела. Едва заметный румянец на её щеках отливает золотом, а хвост возбуждённо виляет позади неё.")
 
-		saynn("[say=luxe]Wow.[/say]")
+		saynn("[say=luxe]Вау.[/say]")
 
-		saynn("It's all you can manage.")
+		saynn("Это всё, на что тебя хватает.")
 
-		saynn("[say=luxewife2]You're about to get mad at me, aren't you?[/say]")
+		saynn("[say=luxewife2]Ты ведь сейчас собираешься на меня разозлиться, да?[/say]")
 
-		saynn("[say=luxe]You look.. breathtaking.. Aisha.[/say]")
+		saynn("[say=luxe]Ты выглядишь.. захватывающе.. Айша.[/say]")
 
-		saynn("Her shy smile deepens.. and you watch as the gold spreads faintly across her cute cheeks.")
+		saynn("Её робкая улыбка становится шире.. и ты наблюдаешь, как золотистое сияние едва заметно разливается по её милым щечкам.")
 
-		saynn("[say=luxewife2]I didn't expect my blood to change color. It's like.. there is lava flowing through my veins. So strange.[/say]")
+		saynn("[say=luxewife2]Я не ожидала, что цвет моей крови изменится. Это как будто... по моим венам течет лава. Так странно.[/say]")
 
-		addButton("Embrace", "Hug your wife", "do_hug_new_wife")
+		addButton("Обнять", "Обнять жену", "do_hug_new_wife")
 	if(state == "do_hug_new_wife"):
 		playAnimation(StageScene.Hug, "kiss", {pc="luxe", npc="luxewife2"})
-		saynn("You step closer, pulling her into a firm embrace. The glow of her body feels almost electric against yours. Your lips find hers, pressing into a slow, deep kiss.")
+		saynn("Ты делаешь шаг ближе и крепко прижимаешь её к себе. Тепло её тела ощущается почти как электрический разряд. Твои губы находят её губы в медленном, глубоком поцелуе.")
 
-		saynn("[say=luxe]It's not lava, Aisha. It's liquid gold. But I get why you'd think it's lava.[/say]")
+		saynn("[say=luxe]Это не лава, Аиша. Это жидкое золото. Но я понимаю, почему тебе так показалось.[/say]")
 
-		saynn("Her ears fold down as her fluffy tail curls around yours, cuddling it softly.")
+		saynn("Её ушки прижимаются, а пушистый хвост мягко обвивает твой, нежно лаская его.")
 
-		saynn("[say=luxewife2]Enlighten me, love.[/say]")
+		saynn("[say=luxewife2]Просвети меня, любовь моя.[/say]")
 
-		saynn("[say=luxe]Because you are super hot.[/say]")
+		saynn("[say=luxe]Потому что ты чертовски горячая.[/say]")
 
-		saynn("Her amber eyes flash with mischief as her lips curl into a teasing smirk.")
+		saynn("В её янтарных глазах вспыхивает озорство, а губы растягиваются в дразнящей ухмылке.")
 
-		saynn("[say=luxewife2]Also. Do I have to start smoking cigars now?[/say]")
+		saynn("[say=luxewife2]И еще. Мне что, теперь обязательно начать курить сигары?[/say]")
 
-		saynn("[say=luxe]Obviously. It's mandatory.[/say]")
+		saynn("[say=luxe]Само собой. Это обязательная программа.[/say]")
 
-		saynn("Her soft giggle sends sparks of warmth through you. Your hands, unable to wait any longer, slip down her sides, teasing the edge of her pants. Her fur glows brother as your touch grows bolder, the room's dim light unable to compete with the golden hue of her body.")
+		saynn("Её тихий смешок разливается по твоему телу теплом. Твои руки, не в силах больше ждать, скользят вниз по её бокам, дразня край штанов. Её мех сияет, брат, по мере того как твои прикосновения становятся всё смелее, а тусклый свет комнаты не может тягаться с золотистым отливом её тела.")
 
-		saynn("[say=luxewife2]Are you sure it's a good idea.. Right after that treatment..[/say]")
+		saynn("[say=luxewife2]Ты уверен, что это хорошая идея... Сразу после этой процедуры...[/say]")
 
-		saynn("You acknowledge her words.. but keep going anyway, the unbearable wait only made you hornier. Your hands grope her tight ass and slide under her pants.. finding that little locked treasure.. putting pressure on its metal containment.. as well as her needy flower hiding behind.")
+		saynn("Ты соглашаешься с её словами... но всё равно продолжаешь, ведь невыносимое ожидание лишь сильнее раззадорило твою похоть. Твои руки жадно сжимают её тугую задницу и ныряют под штаны... нащупывая то маленькое запертое сокровище... надавливая на его металлическую оболочку, а также на её жаждущий цветок, прячущийся позади.")
 
-		addButton("Continue", "See what happens next", "luxe_undress")
+		addButton("Продолжить", "Смотреть, что будет дальше", "luxe_undress")
 	if(state == "luxe_undress"):
 		playAnimation(StageScene.Grope, "stroke", {pc="luxe", npc="luxewife2", bodyState={naked=true, hard=true}, npcBodyState={naked=true, caged=true}})
-		saynn("[say=luxe]You know.. You are talking to the future head of this family.[/say]")
+		saynn("[say=luxe]Знаешь... Ты говоришь с будущей главой этой семьи.[/say]")
 
-		saynn("Her ears perk, and her grin turns playful.")
+		saynn("Её ушки навостряются, а улыбка становится игривой.")
 
-		saynn("[say=luxewife2]Ohh.. More good news.. Hello, Blacktail leader..[/say]")
+		saynn("[say=luxewife2]О-о... Еще больше хороших новостей... Приветствую, лидер Блэктейл...[/say]")
 
-		saynn("Her paws reach into your pants and finds your glowing hard cock already peeking from its sheath. Her soft digits rub the leaky tip.")
+		saynn("Её лапки ныряют тебе в штаны и находят твой горячий, твердый член, который уже наполовину высунулся из ножен. Её мягкие пальчики потирают сочащийся смазкой кончик.")
 
-		saynn("[say=luxe]And this means that you should always obey me, like a good girl.[/say]")
+		saynn("[say=luxe]А это значит, что ты должен всегда слушаться меня, как послушная девочка.[/say]")
 
-		saynn("She leans in close, her lips brushing against your ear, her voice teasing it.")
+		saynn("Она наклоняется совсем близко, её губы касаются твоего уха, а голос звучит дразняще.")
 
-		saynn("[say=luxewife2]Alright.. I will be your good girl~. But only if you treat me like a bad one..[/say]")
+		saynn("[say=luxewife2]Ладно... Я буду твоей послушной девочкой~. Но только если ты будешь обращаться со мной как с плохой...[/say]")
 
-		saynn("Oh, you're on.")
+		saynn("О, ну держись.")
 
-		saynn("Lots more hot kisses are exchanged while the clothes fall off from the both lovers, revealing all the secrets..")
+		saynn("Одежда спадает с обоих любовников, и они обмениваются множеством жарких поцелуев, обнажая все свои секреты...")
 
-		addButton("Continue", "See what happens next", "sex1_start")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sex1_start")
 	if(state == "sex1_start"):
 		playAnimation(StageScene.SexOverTable, "tease", {pc="luxe", npc="luxewife2", bodyState={naked=true, hard=true}, npcBodyState={naked=true, caged=true}})
-		saynn("Aisha barely has time to gasp as you grab her and turn her around before bending her over the wide dining table.")
+		saynn("Айша едва успевает ахнуть, когда ты хватаешь её, разворачиваешь и нагибаешь над широким обеденным столом.")
 
-		saynn("[say=luxewife2]Ah.. we have a bed, you know..[/say]")
+		saynn("[say=luxewife2]Ах... вообще-то у нас есть кровать...[/say]")
 
-		saynn("[say=luxe]It's too far.[/say]")
+		saynn("[say=luxe]Она слишком далеко.[/say]")
 
-		saynn("She wiggles under your firm grip, her position makes her extremely vulnerable. You slide a hand down her glowing thighs.. before spreading her legs wider.")
+		saynn("Она ерзает под твоей крепкой хваткой; в таком положении она максимально уязвима. Ты ведешь рукой вниз по её сияющим бедрам... а затем раздвигаешь её ноги еще шире.")
 
-		saynn("[say=luxewife2]And you just can't wait, can you..[/say]")
+		saynn("[say=luxewife2]И ты просто не можешь ждать, да?..[/say]")
 
-		saynn("[say=luxe]Neither could you.[/say]")
+		saynn("[say=luxe]Как и ты сама.[/say]")
 
-		saynn("The tail moves out of the way to uncover the golden drippy pussy folds that are now glowing ever so slightly in the faint light.. as well as her tight tailhole and the tip of her own feline cock.. the one that has a metal chastity cage sitting snugly on it, forcing it to be limp no matter what. You run your digits along her folds.. but also the cold metal too, tracing the contours of her cage.. your cage.")
+		saynn("Хвост убирается в сторону, обнажая золотистые, сочащиеся влагой складки киски, которые теперь едва заметно светятся в тусклом свете... а также её узкое анальное отверстие и кончик её собственного кошачьего члена... на котором плотно сидит металлическая девственная клетка, заставляя его оставаться вялым, несмотря ни на что. Ты проводишь пальцами по её складкам... а также по холодному металлу, очерчивая контуры её клетки... твоей клетки.")
 
-		saynn("[say=luxe]Still locked up tight. Just the way I like you.[/say]")
+		saynn("[say=luxe]Всё еще заперта наглухо. Именно такой, как мне нравится.[/say]")
 
-		saynn("Your voice is dripping with satisfaction while Aisha shivers, her checks glowing faintly gold with a blush as she glances behind her with an obedient gaze.")
+		saynn("Твой голос так и сочится удовлетворением, пока Айша вздрагивает, а её щеки светятся слабым золотистым румянцем, когда она послушно оглядывается через плечо.")
 
-		saynn("[say=luxewife2]It's yours to keep locked, always has been, love.. But if you want me to peg you.. ah..[/say]")
+		saynn("[say=luxewife2]Ты можешь держать его запертым сколько угодно, так было всегда, любовь моя... Но если ты хочешь, чтобы я сделала тебе пеггинг... ах...[/say]")
 
-		saynn("Your hand spreads her wetness while the other is resting possessively on the caged shaft. You trip it lightly and give it a teasing squeeze that makes Aisha gasp. The cage quickly grows tighter as her arousal builds, her cock trying to get hard within its unyielding confines.")
+		saynn("Одной рукой ты раздвигаешь её влагалище, а другая властно покоится на клетке, сковывающей член. Ты слегка поддеваешь его и дразняще сжимаешь, заставляя Айшу ахнуть. Клетка быстро становится теснее по мере её возбуждения: её член отчаянно пытается затвердеть в своих неподатливых оковах.")
 
-		saynn("[say=luxe]Already straining. You're so desperate, aren't you?[/say]")
+		saynn("[say=luxe]Уже распирает. Ты ведь такая жаждущая, правда?[/say]")
 
-		saynn("You watch a single bead of pre drip from the cage's tip.")
+		saynn("Ты наблюдаешь, как одинокая капля предэякулята стекает с кончика клетки.")
 
-		saynn("[say=luxewife2]Don't tease..[/say]")
+		saynn("[say=luxewife2]Не дразни так...[/say]")
 
-		saynn("You grin and align yourself, your cock looking hard and ready, the veins glowing brightly, the tip already leaking. You push it against her needy pussy entrance, teasing her just enough to make her squirm and claw at the edge of the table.")
+		saynn("Ты ухмыляешься и пристраиваешься к ней; твой член выглядит твердым и готовым, вены ярко светятся, а кончик уже подтекает. Ты прижимаешься им к её жаждущему входу во влагалище, дразня её ровно настолько, чтобы она начала извиваться и впиваться ногтями в край стола.")
 
-		saynn("[say=luxe]Beg.[/say]")
+		saynn("[say=luxe]Умоляй.[/say]")
 
-		saynn("[say=luxewife2]Please.. ah.. breed me, Luxe..[/say]")
+		saynn("[say=luxewife2]Пожалуйста... ах... оплодотвори меня, Люкс...[/say]")
 
-		saynn("Even though she is probably pregnant.. might as well make sure.")
+		saynn("Даже если она, скорее всего, уже беременна... стоит убедиться в этом наверняка.")
 
-		addButton("Continue", "See what happens next", "sex1_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sex1_sex")
 	if(state == "sex1_sex"):
 		playAnimation(StageScene.SexOverTable, "sex", {pc="luxe", npc="luxewife2", bodyState={naked=true, hard=true}, npcBodyState={naked=true, caged=true}})
-		saynn("That's all you needed to hear. With one powerful impulse, you bury your cock deep inside Aisha, stretching her tight walls and making her cry out. The wooden desk groans beneath you both as you pull back.. before ramming it in again, setting a punishing cycle.")
+		saynn("Этого было достаточно. Одним мощным толчком ты вгоняешь свой член глубоко в Айшу, растягивая её узкие стенки и заставляя её вскрикнуть. Деревянный стол стонет под вашими телами, когда ты отстраняешься... а затем снова с силой вбиваешься в неё, запуская цикл изнурительных толчков.")
 
-		saynn("[say=luxewife2]Ah-h.. you're on fire today..[/say]")
+		saynn("[say=luxewife2]Ах-х.. ты сегодня просто в огне..[/say]")
 
-		saynn("The sound of fur slapping against fur fills the room, as well as the cat's gasps and moans. Your hands grip her waist tightly, your claws digging into her skin as you use your wife on the desk nice and harder, your cock pistoning into her needy pussy. Her glowing furs are like little fire tongues.. sending embers of golden hues that only make you want her more.")
+		saynn("Звуки шлепков меха о мех наполняют комнату, перемежаясь с судорожными вздохами и стонами кошки. Твои руки крепко сжимают её талию, когти впиваются в кожу, пока ты вколачиваешься в свою жену на столе всё сильнее и жестче, твой член ритмично ходит в её жаждущей киске. Её светящийся мех похож на маленькие языки пламени... разбрасывающие золотистые искры, которые лишь сильнее разжигают твою похоть.")
 
-		saynn("Her tail wraps around your waist, seemingly pulling you in. One of your hands goes around her leg and returns to her caged cock, gripping it roughly. You can feel the pressure building in as her arousal surges, her cute feline shaft trying to swole inside, straining painfully against the unyielding metal.")
+		saynn("Её хвост обвивает твою талию, словно пытаясь притянуть тебя ближе. Одна твоя рука обхватывает её ногу и возвращается к её запертому члену, грубо сжимая его. Ты чувствуешь, как давление нарастает по мере того, как её возбуждение зашкаливает, а её милый кошачий ствол пытается раздуться внутри, мучительно натягиваясь на неподатливый металл.")
 
-		saynn("[say=luxe]You're mine.[/say]")
+		saynn("[say=luxe]Ты моя.[/say]")
 
-		saynn("You growl as you squeeze her furry orbs, causing her body to tremble beneath you, her walls clenching hard around your cock.")
+		saynn("Ты рычишь, сжимая её пушистые яички, заставляя её тело дрожать под тобой, а стенки влагалища — судорожно сжиматься вокруг твоего члена.")
 
-		saynn("[say=luxewife2]Ah.. yes.. a-always yours..[/say]")
+		saynn("[say=luxewife2]Ах.. да.. все-всегда твоя..[/say]")
 
-		addButton("Continue", "See what happens next", "sex1_fast")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sex1_fast")
 	if(state == "sex1_fast"):
 		playAnimation(StageScene.SexOverTable, "fast", {pc="luxe", npc="luxewife2", bodyState={naked=true, hard=true}, npcBodyState={naked=true, caged=true}})
-		saynn("The moment you ramp up the pressure and start pounding her pussy harder, her orgasm hits her like a truck, her slit clamping down on your glowing shaft as her juices spill out, wetting your member and dripping onto the desk. At the same time, her caged cock jerks violently, desperate to release. The cage holds firm.. but thin jets of seed begin shooting through the tiny openings, splattering across the wooden surfaces.")
+		saynn("В тот момент, когда ты наращиваешь темп и начинаешь вколачивать свой член в её киску всё сильнее, оргазм накрывает её, словно товарный поезд: её щель судорожно сжимает твой светящийся ствол, а соки хлынут наружу, смазывая твой член и капая на стол. В то же время её запертый в клетку член бешено дергается в отчаянной попытке разрядки. Клетка держит крепко... но сквозь крошечные отверстия начинают бить тонкие струи спермы, разбрызгиваясь по деревянной поверхности.")
 
-		saynn("[say=luxewife2]Ahh-h-h.. Luxe!..[/say]")
+		saynn("[say=luxewife2]Ах-х-х.. Люкс!..[/say]")
 
-		saynn("Aisha cries out, her body shaking uncontrollably, her voice breaking as another gush of her juices coats your cock, her panting becomes more and more audible.")
+		saynn("Айша вскрикивает, её тело сотрясает неконтролируемая дрожь, а голос срывается, когда очередная волна её соков обволакивает твой член; её тяжелое дыхание становится всё громче и громче.")
 
-		saynn("You're not done yet though, your knot has only begun inflating with liquid gold. You grip her tighter and keep thrusting through her climax, determined to make her scream even louder.")
+		saynn("Но ты ещё не закончил — твой узел только начал раздуваться жидким золотом. Ты сжимаешь её крепче и продолжаешь вколачиваться сквозь её пик, решив заставить её кричать ещё громче.")
 
-		saynn("The room gets hotter and hotter.. probably from your and Aisha's fur looking almost like real fire by this point. Your hearts are beating like hell but the heat resistance makes you feel invulnerable.")
+		saynn("В комнате становится всё жарче и жарче... вероятно, из-за того, что ваш мех с Айшей к этому моменту кажется почти настоящим пламенем. Сердца бешено колотятся, но благодаря термостойкости ты чувствуешь себя неуязвимым.")
 
-		addButton("Continue", "See what happens next", "sex1_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sex1_cum")
 	if(state == "sex1_cum"):
 		playAnimation(StageScene.SexOverTable, "inside", {pc="luxe", npc="luxewife2", bodyState={naked=true, hard=true}, npcBodyState={naked=true, caged=true}})
-		saynn("As soon as you feel your peak drawing near, you commit..")
+		saynn("Как только ты чувствуешь, что пик близок, ты отдаешься ему целиком...")
 
-		saynn("With one final, powerful thrust, you bury your cock to the hilt, your swollen knot popping inside that tight pussy, locking you and your lover together. Aisha whimpers as the stretch sends her over the edge again, her golden pussy clenching around you hard. Her cage strains even more as her cock twitches inside, your shaft forcing another few bursts of seed out of her balls.")
+		saynn("Одним финальным, мощным толчком ты засаживаешь член до самого основания, и твой раздувшийся узел с хлопком входит в эту тесную киску, намертво сцепляя тебя с твоей любовницей. Айша скулит, когда растяжение снова отправляет её за край, а её золотистая киска с силой сжимается вокруг тебя. Её клетка натягивается ещё сильнее, пока её член дергается внутри, а твой ствол выдавливает ещё несколько порций спермы из её яичек.")
 
-		saynn("You growl.. as your own cock begins to throb, spurting thick, hot ropes of cum deep inside her. The knot ensures not a drop is wasted while you pump her full of your virile seed, making Aisha's belly looking even more pregnant than it was.")
+		saynn("Ты рычишь... когда твой член начинает пульсировать, выбрасывая густые, горячие струи спермы глубоко в неё. Узел гарантирует, что ни одна капля не будет потрачена впустую, пока ты наполняешь её своим плодовитым семенем, отчего живот Аиши кажется ещё более раздутым и беременным, чем прежде.")
 
-		saynn("[say=luxe]Grr.. good girl.[/say]")
+		saynn("[say=luxe]Грр.. хорошая девочка.[/say]")
 
-		saynn("Aisha is panting heavily, squirming beneath you, her body completely spent and stuffed at the same time, your full length still buried inside her.")
+		saynn("Аиша тяжело дышит, извиваясь под тобой; её тело полностью изнурено и одновременно забито тобой до отказа, пока твоя полная длина всё ещё скрыта внутри неё.")
 
-		saynn("[say=luxewife2]A-always your g-girl.. hahh-h.. t-this is intense.. my h-heart.. b-beating like crazy.[/say]")
+		saynn("[say=luxewife2]В-всегда твоя д-девочка... хахх-х... э-это так интенсивно... моё с-сердце... бьётся как сумасшедшее.[/say]")
 
-		saynn("[say=luxe]Mine's too. Time to rest.[/say]")
+		saynn("[say=luxe]Моё тоже. Пора отдохнуть.[/say]")
 
-		saynn("Carefully, you yank your knot out, causing a fountain of your seed to emerge from her stuff gaping pussy.")
+		saynn("Осторожно ты вырываешь свой узел, заставляя фонтан твоей спермы выплеснуться из её разверзнутой, набитой до краёв киски.")
 
-		addButton("Continue", "See what happens next", "after_sex1")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_sex1")
 	if(state == "after_sex1"):
 		playAnimation(StageScene.SexLotus, "tease", {pc="luxewife2", npc="luxe", bodyState={naked=true, caged=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You pull your wife onto the bed and start cuddling with her.")
+		saynn("Ты притягиваешь жену к себе на кровать и начинаешь обнимать её.")
 
-		saynn("[say=luxewife2]Now I'm p-pregnant for sure..[/say]")
+		saynn("[say=luxewife2]Теперь я точно б-беременна...[/say]")
 
-		saynn("[say=luxe]Good.[/say]")
+		saynn("[say=luxe]Хорошо.[/say]")
 
-		saynn("The atmosphere in the room becomes hazy.. Lots of little steam clouds everywhere. You realize that it's coming from your heavy breaths. Aisha and you, you're both panting.. still.. Your golden fur tips dancing and swaying..")
+		saynn("Атмосфера в комнате становится туманной... Повсюду маленькие облачка пара. Ты понимаешь, что это результат вашего тяжелого дыхания. И ты, и Аиша всё ещё тяжело дышите... Кончики твоего золотистого меха подрагивают и колышутся...")
 
-		saynn("[say=luxewife2]I'm n-not sure if we s-supposed to breathe out s-steam..[/say]")
+		saynn("[say=luxewife2]Я н-не уверена, д-должны ли мы выдыхать п-пар..[/say]")
 
-		saynn("It's concerning.. but probably nothing to worry about. You pull your wife closer.. and realize how crazy her heartbeat actually is.. now that's concerning.")
+		saynn("Это тревожно.. но, скорее всего, не стоит беспокоиться. Ты притягиваешь жену ближе.. и понимаешь, насколько бешено колотится её сердце.. вот это уже действительно тревожно.")
 
-		saynn("[say=luxe]Are you feeling okay, Aisha?[/say]")
+		saynn("[say=luxe]Айша, ты как, в порядке?[/say]")
 
-		saynn("[say=luxewife2]I'm not s-sure.. I think I n-need some fresh air..[/say]")
+		saynn("[say=luxewife2]Я н-не знаю.. кажется, м-мне нужно немного свежего воздуха..[/say]")
 
-		saynn("The golden glow of the room dims slightly as Aisha rolls off the bed, her legs shaky and her breath uneven. You just keep watching her, noticing the quiver in her steps.")
+		saynn("Золотистое сияние комнаты слегка тускнеет, когда Айша сползает с кровати; её ноги дрожат, а дыхание сбивается. Ты просто продолжаешь наблюдать за ней, замечая дрожь в каждом её шаге.")
 
-		saynn("[say=luxe]Aisha?[/say]")
+		saynn("[say=luxe]Айша?[/say]")
 
-		saynn("[say=luxewife2]I'm f-fine..[/say]")
+		saynn("[say=luxewife2]Я в п-порядке..[/say]")
 
-		saynn("She stammers, her hand reaching for the wall to steady herself.")
+		saynn("Она запинается, хватаясь рукой за стену, чтобы удержать равновесие.")
 
-		addButton("Continue", "See what happens next", "aisha_begins_to_die")
+		addButton("Продолжить", "Смотреть, что будет дальше", "aisha_begins_to_die")
 	if(state == "aisha_begins_to_die"):
 		playAnimation(StageScene.SexStart, "start", {pc="luxe", npc="luxewife2", bodyState={naked=true}, npcBodyState={naked=true,caged=true}})
-		saynn("But before Aisha can make it another step, her legs buckle, and she collapses to the floor with a soft thud.")
+		saynn("Но не успевает Айша сделать и шага, как её ноги подкашиваются, и она с глухим звуком валится на пол.")
 
-		saynn("[say=luxe]Aisha![/say]")
+		saynn("[say=luxe]Айша![/say]")
 
-		saynn("You yell while bolting from the bed and kneeling beside her. You cradle her trembling body in your hands, your glowing fur casting flickering light across her weakening features.")
+		saynn("Ты вскрикиваешь, вскакивая с кровати и падая на колени рядом с ней. Ты бережно обхватываешь её дрожащее тело руками, а твой светящийся мех отбрасывает мерцающие блики на её угасающие черты лица.")
 
-		saynn("Her breaths are ragged, her heartbeat erratic against your chest. Your voice becomes desperate.")
+		saynn("Её дыхание прерывистое, сердцебиение в твоей груди бьется беспорядочно. Твой голос становится отчаянным.")
 
-		saynn("[say=luxe]What's happening? Stay with me, Aisha. Stay with me.[/say]")
+		saynn("[say=luxe]Что происходит? Не уходи, Аиша. Держись за меня![/say]")
 
-		saynn("Her amber eyes, dulled now, open to meet yours. She manages a weak smile.. but her trembling hand barely reaches your cheek before falling limply to her side.")
+		saynn("Её янтарные глаза, потускневшие, открываются, встречаясь с твоим взглядом. Ей удается слабо улыбнуться... но её дрожащая рука едва касается твоей щеки, прежде чем безжизненно упасть на бок.")
 
-		saynn("[say=luxewife2]I.. I think t-this.. t-this is it.. for m-me..[/say]")
+		saynn("[say=luxewife2]Я... кажется, э-это... э-это конец... для м-меня...[/say]")
 
-		saynn("Her voice is nothing but whisper now, her words faltering as a cough wracks her body. Her lips part.. and a faint wisp of golden steam escapes.")
+		saynn("Её голос теперь превратился в шепот, слова прерываются от приступов кашля, сотрясающих её тело. Её губы приоткрываются... и наружу вырывается слабая струйка золотистого пара.")
 
-		saynn("Your chest begins to tighten as you feel a strange heat building in her, her glowing fur now almost too bright to look at.")
+		saynn("В груди начинает сдавливать, когда ты чувствуешь, как внутри неё нарастает странный жар, а её светящийся мех становится почти слишком ярким, чтобы на него смотреть.")
 
-		saynn("[say=luxe]No. No, no, NO-NO-NO![/say]")
+		saynn("[say=luxe]Нет. Нет, нет, НЕТ-НЕТ-НЕТ![/say]")
 
-		saynn("Your voice is cracking. You lift her easily and dash towards the door, the golden embers on your fur flicker violently. You step out into the hall and begin shouting.")
+		saynn("Твой голос срывается. Ты легко подхватываешь её и несешься к двери, золотые искры на твоем меху неистово мерцают. Ты вылетаешь в коридор и начинаешь кричать.")
 
-		saynn("[say=luxe]HELP! SOMEONE! SHE NEEDS HELP![/say]")
+		saynn("[say=luxe]НА ПОМОЩЬ! КТО-НИБУДЬ! ЕЙ НУЖНА ПОМОЩЬ![/say]")
 
-		saynn("Aisha's body shudders harder in your arms, her glow intensifying like a fire.. burning out of control. The more you look at her.. the more you feel your own heart beginning to pound harder.. harder and harder..")
+		saynn("Тело Аиши в твоих руках содрогается всё сильнее, её сияние разгорается, словно неуправляемый пожар.. Те чем дольше ты смотришь на неё.. тем отчетливее чувствуешь, как твоё собственное сердце начинает колотиться.. всё быстрее и быстрее..")
 
-		saynn("[say=luxewife2]L-Luxe..[/say]")
+		saynn("[say=luxewife2]Л-Люкс..[/say]")
 
-		saynn("Her whisper is barely audible")
+		saynn("Её шепот едва слышен")
 
-		saynn("You keep looking down at her, your heart breaking as her once-strong body seems to crumble in your hands.")
+		saynn("Ты продолжаешь смотреть на неё, и сердце разрывается от боли, когда её некогда сильное тело, кажется, начинает буквально рассыпаться в твоих руках.")
 
-		saynn("[say=luxewife2]Don't.. talk.. Just h-hold on..[/say]")
+		saynn("[say=luxewife2]Не.. говори.. Просто д-держись..[/say]")
 
-		saynn("Tears are streaming down her cheeks.. before evaporating from the immense heat.. She grips your arm weakly, her claws trembling against your fur.")
+		saynn("Слёзы катятся по её щекам.. и тут же испаряются от нестерпимого жара.. Она слабо сжимает твою руку, её когти дрожат, впиваясь в твой мех.")
 
-		saynn("[say=luxewife2]Y-you.. you have to s-stay calm.. p-please..[/say]")
+		saynn("[say=luxewife2]Т-ты.. ты должен с-сохранять спокойствие.. п-пожалуйста..[/say]")
 
-		saynn("[say=luxe]W-what?..[/say]")
+		saynn("[say=luxe]Ч-что?..[/say]")
 
-		saynn("Your fur shines brightly.. just like Aisha's..")
+		saynn("Твой мех сияет так же ярко.. как и мех Аиши..")
 
-		saynn("[say=luxewife2]If.. if you lose it.. i-it will t-take you too..[/say]")
+		saynn("[say=luxewife2]Если.. если ты потеряешь контроль.. о-он заберет и т-тебя тоже..[/say]")
 
-		saynn("Her voice is fading as more steam escapes her lips, her fur now almost blinding. You can feel it.. she is burning up from the inside..")
+		saynn("Её голос затихает, пока из губ вырывается всё больше пара, а мех сияет так ярко, что слепит глаза. Ты чувствуешь это... она буквально сгорает изнутри...")
 
-		saynn("[say=luxe]No.. I don't want to.. Aisha.. I'm not leaving you..[/say]")
+		saynn("[say=luxe]Нет... я не хочу... Аиша... я не оставлю тебя...[/say]")
 
-		saynn("You refuse to accept her words while her hand tightens slightly, her last ounce of strength focused on you.")
+		saynn("Ты отказываешься верить её словам, пока её рука слегка сжимает твою — она собрала последние остатки сил, чтобы коснуться тебя.")
 
-		saynn("[say=luxewife2]I l-love y-you, L-Luxe.. D-don't let this b-break y-you..[/say]")
+		saynn("[say=luxewife2]Я л-люблю т-тебя, Л-Люкс... П-пожалуйста, не дай этому с-сломить тебя...[/say]")
 
-		saynn("Your body trembles as you fight the urge to scream again, your instincts are begging you to let out your agony. You bite down hard on your own lip, drawing blood.. and trying desperately to stay composed..")
+		saynn("Твоё тело дрожит, пока ты борешься с желанием снова закричать; инстинкты умоляют тебя выплеснуть эту агонию. Ты до боли закусываешь губу, до крови... отчаянно пытаясь сохранить самообладание...")
 
-		saynn("Aisha's body grows hotter, the glow now almost white. Her once-lush fur begins to disintegrate into shimmering golden embers that float into the air. Her eyes meet yours one last time.. filled with love and pain.")
+		saynn("Тело Аиши становится всё горячее, сияние теперь почти белое. Её некогда роскошный мех начинает распадаться на мерцающие золотые угольки, парящие в воздухе. Её глаза встречаются с твоими в последний раз... в них — любовь и боль.")
 
-		saynn("[say=luxewife2]I.. l-love.. y-you..[/say]")
+		saynn("[say=luxewife2]Я... л-люблю... т-тебя...[/say]")
 
-		saynn("[say=luxe]No, Aisha.. Stay with me.. Stay..[/say]")
+		saynn("[say=luxe]Нет, Аиша... Останься со мной... Останься...[/say]")
 
-		saynn("You lose the ability to speak as her body lights up in your hands.. before turning into ash, slipping through your fingers like sand..")
+		saynn("Ты теряешь дар речи, когда её тело вспыхивает прямо в твоих руках... а затем превращается в пепел, просачиваясь сквозь пальцы, словно песок...")
 
-		addButton("Continue", "See what happens next", "aisha_dead")
+		addButton("Продолжить", "Смотреть, что будет дальше", "aisha_dead")
 	if(state == "aisha_dead"):
 		removeCharacter("luxewife2")
 		playAnimation(StageScene.Solo, "kneel", {pc="luxe", bodyState={naked=true}})
-		saynn("You stare down at the empty space where she was, your hands trembling, now streaked with golden dust. The glow of your fur flickers dangerously, the heat within you threatening to boil over.")
+		saynn("Ты во все глаза смотришь на пустое место, где она только что была; твои руки дрожат, испачканные золотой пылью. Сияние твоего меха опасно мерцает, а жар внутри грозит вырваться наружу неконтролируемым потоком.")
 
-		saynn("Don't let this break you..")
+		saynn("Только не дай этому сломить тебя...")
 
-		saynn("You clench your fists, breathing deeply through the burning in your chest. There is rising inferno in your chest, you can feel it..")
+		saynn("Ты сжимаешь кулаки, глубоко вдыхая сквозь жжение в груди. Там, внутри, разгорается настоящий ад, ты кожей это чувствуешь...")
 
-		saynn("Don't let this break you..")
+		saynn("Только не дай этому сломить тебя...")
 
-		saynn("You force yourself to calm down, suppressing that inferno. You grind your teeth as the tears slide down your cheeks.. but you don't scream.. you don't let the grief consume you..")
+		saynn("Ты заставляешь себя успокоиться, подавляя этот внутренний пожар. Сквозь стиснутые зубы ты чувствуешь, как по щекам катятся слезы... но ты не кричишь... ты не позволяешь горю поглотить тебя целиком...")
 
-		saynn("Don't let this break you..")
+		saynn("Только не дай этому сломить тебя...")
 
-		saynn("Instead, you kneel there in silence, the ashes of your wife slipping through your fingers. The air is heavy, the faint smell of burning fur and a lingering golden glow the only reminder of her.")
+		saynn("Вместо этого ты просто стоишь на коленях в тишине, а пепел твоей жены просачивается сквозь пальцы. Воздух кажется тяжелым; лишь слабый запах горелой шерсти и едва уловимое золотистое сияние напоминают о ней.")
 
-		saynn("You focus on your breathing.. your stare emotionless.. not a single word leaves your closed lips. The fire inside you begins to fade.. bit by bit.. but the pain remains strong..")
+		saynn("Ты сосредотачиваешься на дыхании... взгляд твой бесстрастен... с сомкнутых губ не слетает ни единого слова. Огонь внутри начинает затухать... капля за каплей... но боль остается такой же острой...")
 
-		saynn("People begin to surround you.. their faces nothing but blur.. their voices nothing but noise..")
+		saynn("Люди начинают обступать тебя... их лица — лишь размытые пятна... их голоса — лишь невнятный шум...")
 
-		addButton("Continue", "See what happens next", "luxe_griefs")
+		addButton("Продолжить", "Смотреть, что будет дальше", "luxe_griefs")
 	if(state == "luxe_griefs"):
 		playAnimation(StageScene.Solo, "sit", {pc="luxe"})
-		saynn("The next few days blur together.")
+		saynn("Следующие несколько дней сливаются в одну сплошную серую массу.")
 
-		saynn("You sit alone in your quarters in complete silence. The room feels like it has shrunk, closing in on you.")
+		saynn("Ты сидишь в одиночестве в своей камере в полной тишине. Кажется, будто комната сжалась, сдавливая тебя со всех сторон.")
 
-		saynn("Before you, on the desk, sits the urn.. A small, sealed container of polished obsidian with faint golden etchings. You can't take your eyes off of it..")
+		saynn("Перед тобой на столе стоит урна... Маленький, запечатанный сосуд из полированного обсидиана с едва заметной золотой гравировкой. Ты не можешь отвести от него глаз...")
 
-		saynn("You haven't moved for hours.. Maybe weeks.. Time has no meaning.")
+		saynn("Ты не двигаешься уже несколько часов... Может, недель... Время потеряло всякий смысл.")
 
-		saynn("You want to scream. The urge claws at your throat, burns in your chest. It's the only sensation you truly feel.. the suffocating pressure of grief pushing against your ribcage. But you don't. You won't. You didn't have time to promise it to her.. but you promised yourself that you wouldn't..")
+		saynn("Тебе хочется кричать. Этот позыв скребет горло, жжет в груди. Это единственное ощущение, которое ты по-настоящему чувствуешь... удушающее давление горя, давящее на ребра. Но ты не кричишь. Не будешь. У тебя не было времени пообещать ей это... но ты пообещала самой себе, что не позволишь себе слабости...")
 
-		saynn("Your hands rest on your knees, steady, deliberate. Not a single tremor betrays the storm inside you. Your glowing fur tips have dimmer over the past days, now barely casting any light. Even the embers have abandoned you.. mirroring the void in your chest..")
+		saynn("Твои руки лежат на коленях — уверенно, размеренно. Ни единая дрожь не выдает бушующую внутри тебя бурю. Кончики твоей светящейся шерсти за последние дни потускнели и теперь едва излучают свет. Даже угольки покинули тебя... отражая пустоту в твоей груди...")
 
-		saynn("Your breathing is shallow, measured, too even to be real. The rhythm is forced, a performance for no one. Not a single tear falls. You have trained yourself out of that luxury.")
+		saynn("Твое дыхание поверхностное, размеренное, слишком ровное, чтобы быть настоящим. Этот ритм навязан, это перформанс для пустоты. Ни единой слезы не падает. Ты давно лишила себя этой роскоши.")
 
-		saynn("Your jaw tightens. Your gaze hardens.")
+		saynn("Челюсти сжимаются. Взгляд становится жестким.")
 
-		saynn("The emptiness gnaws at you, relentless. It's as if the universe is hollow, stripped of meaning. And yet, you're still here, stuck in it, forced to exist when she doesn't.")
+		saynn("Пустота гложет тебя, неумолимо. Кажется, будто сама вселенная стала полой, лишенной смысла. И все же ты все еще здесь, застрявшая в ней, вынужденная существовать, когда ее больше нет.")
 
-		saynn("Your head tilts back, resting against the chair. You close your eyes, hoping for the bliss of nothingness. But it doesn't come. Her face is there, burned into the darkness behind your eyelids.")
+		saynn("Ты откидываешь голову на спинку стула. Закрываешь глаза, надеясь на блаженство небытия. Но оно не приходит. Ее лицо запечатлено в темноте перед твоими веками.")
 
-		saynn("It's unbearable.. but you have to endure it..")
+		saynn("Это невыносимо... но ты должна это вынести...")
 
-		addButton("Continue", "See what happens next", "dad_tries_help")
+		addButton("Продолжить", "Смотреть, что будет дальше", "dad_tries_help")
 	if(state == "dad_tries_help"):
 		addCharacter("luxedad")
 		playAnimation(StageScene.Solo, "sit", {pc="luxe", npc="luxedad"})
-		saynn("The door slides open. Your father steps into your room, his heavy boots clicking against the floor. He doesn't ask for permission to enter. He doesn't need to.")
+		saynn("Дверь плавно отъезжает в сторону. В комнату входит отец, его тяжелые сапоги гулко стучат по полу. Он не спрашивает разрешения войти. Ему это ни к чему.")
 
-		saynn("He stands behind you, looking at the same urn.")
+		saynn("Он встает позади тебя, глядя на ту же самую урну.")
 
-		saynn("[say=luxedad]My condolences.[/say]")
+		saynn("[say=luxedad]Мои соболезнования.[/say]")
 
-		saynn("A subtle nod is all you can force out of yourself.")
+		saynn("Едва заметный кивок — всё, на что ты способна выдавить из себя.")
 
-		saynn("[say=luxedad]We weren't exactly on the best terms. But she had the heart of a good woman. Of a good mother.[/say]")
+		saynn("[say=luxedad]Мы не то чтобы были в ладах. Но у неё было сердце доброй женщины. Доброй матери.[/say]")
 
-		saynn("Silence settles again, heavy and suffocating. You feel it creeping up your spine, the urge.. eating at you.")
+		saynn("Снова воцаряется тишина, тяжелая и удушающая. Ты чувствуешь, как она ползет вверх по позвоночнику, это желание... оно грызет тебя изнутри.")
 
-		saynn("[say=luxedad]Just know this.. It gets worse before it gets better. You will move on eventually.[/say]")
+		saynn("[say=luxedad]Просто знай одно... Станет еще хуже, прежде чем наступит облегчение. Со временем ты смиришься.[/say]")
 
-		saynn("Move on? The words twist like a knife in your chest.. but you don't respond, feels like you are over it by now indeed.")
+		saynn("Смиришься? Эти слова вонзаются в грудь, словно нож... но ты не отвечаешь; кажется, ты и вправду уже почти всё это переросла.")
 
-		saynn("[say=luxedad]You're still young. There is no shortage of girls, especially for someone with your status.[/say]")
+		saynn("[say=luxedad]Ты еще молода. Девушек предостаточно, особенно для человека твоего статуса.[/say]")
 
-		saynn("His words are so casual, so dismissive. It stings.. makes you feel something that you don't want to feel.")
+		saynn("Его слова звучат так обыденно, так пренебрежительно. Это жалит... заставляя тебя чувствовать то, чего чувствовать совсем не хочется.")
 
-		saynn("[say=luxedad]There are more pressing matters than your personal grief. The mission doesn't stop. Hear me?[/say]")
+		saynn("[say=luxedad]Есть дела поважнее твоей личной скорби. Миссия не ждет. Слышишь меня?[/say]")
 
-		saynn("You take your gaze off of the urn and look at him, your expression is completely blank.")
+		saynn("Ты отрываешь взгляд от урны и смотришь на него; твое лицо выражает полное безразличие.")
 
-		saynn("[say=luxe]I hear you.[/say]")
+		saynn("[say=luxe]Я слышу тебя.[/say]")
 
-		saynn("Your voice is calm, measured. Your father nods, satisfied with the answer. But his gaze lingers on you.")
+		saynn("Твой голос звучит спокойно и размеренно. Отец удовлетворенно кивает, но его взгляд продолжает задерживаться на тебе.")
 
-		saynn("[say=luxedad]Grief makes men soft. It's a weakness we can't afford.[/say]")
+		saynn("[say=luxedad]Скорбь делает мужчин мягкотелыми. А это слабость, которую мы не можем себе позволить.[/say]")
 
-		saynn("You just nod again.")
+		saynn("Ты просто снова киваешь.")
 
-		saynn("Your dad reaches into his pocket and pulls out a small pill bottle with an empty label. With a flick of his digits, he opens it, revealing its contents.. some kind of pills.")
+		saynn("Отец лезет в карман и достает маленький пузырек с таблетками без этикетки. Легким движением пальцев он открывает его, демонстрируя содержимое... какие-то таблетки.")
 
-		saynn("[say=luxedad]These will help against that side-effect of your treatment. R&D did a lot of tests to make sure that these work.[/say]")
+		saynn("[say=luxedad]Это поможет справиться с побочными эффектами твоего лечения. Отдел исследований провел кучу тестов, чтобы убедиться, что они работают.[/say]")
 
-		saynn("He sets the bottle on the desk, next to the urn.")
+		saynn("Он ставит пузырек на стол, рядом с урной.")
 
-		saynn("[say=luxedad]So you won't end up like her.[/say]")
+		saynn("[say=luxedad]Чтобы ты не закончила так же, как она.[/say]")
 
-		saynn("It stings.. Your hand twitches.")
+		saynn("Жжёт... Твоя рука непроизвольно дергается.")
 
-		saynn("Your father steps closer, his voice dropping lower.")
+		saynn("Отец делает шаг ближе, его голос становится тише.")
 
-		saynn("[say=luxedad]You can only get over bad feelings if you actually feel them. But tomorrow, I want you in top shape. This has dragged on for long enough.[/say]")
+		saynn("[say=luxedad]Плохие чувства можно пережить, только если прочувствуешь их до конца. Но завтра ты должен быть в лучшей форме. Это и так тянется слишком долго.[/say]")
 
-		saynn("His words linger in the air, heavy and uninvited.")
+		saynn("Его слова повисают в воздухе — тяжелые и непрошеные.")
 
-		saynn("[say=luxedad]She saved you. Don't waste your second chance, son.[/say]")
+		saynn("[say=luxedad]Она спасла тебя. Не просри свой второй шанс, сын.[/say]")
 
-		saynn("Your father straightens his posture, his gaze softening for just a moment. Then, without another word, he turns and leaves the room.")
+		saynn("Отец выпрямляется, его взгляд на мгновение смягчается. Затем, не проронив больше ни слова, он разворачивается и выходит из комнаты.")
 
-		saynn("The door hisses shut behind him, leaving you alone again.")
+		saynn("Дверь с шипением закрывается за ним, оставляя тебя в одиночестве.")
 
-		saynn("Your eyes are focussed on that pill bottle..")
+		saynn("Твой взгляд прикован к баночке с таблетками...")
 
-		addButton("Continue", "See what happens next", "luxe_very_angry")
+		addButton("Продолжить", "Смотреть, что будет дальше", "luxe_very_angry")
 	if(state == "luxe_very_angry"):
 		removeCharacter("luxedad")
 		playAnimation(StageScene.Solo, "stand", {pc="luxe"})
-		saynn("The silence feels like it's crushing you, growing heavier with every breath.")
+		saynn("Тишина будто давит на тебя, становясь тяжелее с каждым вдохом.")
 
-		saynn("This has dragged on for long enough..")
+		saynn("Это и так тянется слишком долго...")
 
-		saynn("You open the bottle and grab a pill. It's small, unassuming. Without a second thought, you toss it into your mouth and swallow.")
+		saynn("Ты открываешь бутылку и хватаешь таблетку. Маленькая, неприметная. Не раздумывая, ты закидываешь её в рот и глотаешь.")
 
-		saynn("Nothing happens.. for a moment..")
+		saynn("Ничего не происходит... на мгновение...")
 
-		saynn("But then..")
+		saynn("Но тут..")
 
-		saynn("A SCREAM rips from your throat, raw and primal, echoing off the walls.")
+		saynn("ИЗ ТВОЕГО ГЛОТКИ вырывается КРИК — дикий, первобытный, отдающийся эхом от стен.")
 
-		saynn("[say=luxe]AAAAAAAAAA-A-AH.[/say]")
+		saynn("[say=luxe]А-А-А-А-А-А-А-А-А-А-А-А-А-АХ![/say]")
 
-		saynn("You grab the edge of the desk and flip it over in a single, furious motion. The urn.. crashes to the floor.. before shattering into a hundred pieces, the ashes scattering like smoke in the wind.")
+		saynn("Ты хватаешься за край стола и одним яростным движением опрокидываешь его. Урна... с грохотом падает на пол... и разлетается на сотни осколков, а пепел рассеивается, словно дым на ветру.")
 
-		saynn("You don't stop, you can't stop. Your fists slam into the walls, leaving dents and cracks in the wood, the glowing tips of your fur blaze brighter with every punch, embers flickering and sparking around you.")
+		saynn("Ты не останавливаешься, ты не можешь остановиться. Твои кулаки вбиваются в стены, оставляя вмятины и трещины в дереве; светящиеся кончики твоего меха разгораются всё ярче с каждым ударом, а вокруг тебя мечутся и сыплются искры.")
 
-		saynn("Your scream dies down, replaced by heavy, ragged breaths. Your body trembles, your mind nothing but a complete chaos.")
+		saynn("Твой крик затихает, сменяясь тяжелым, рваным дыханием. Тело дрожит, а в голове царит абсолютный хаос.")
 
-		saynn("The chair is next, you grab it and smash it against the double bed.. Splinters fly everywhere, the bed's frame collapsing.")
+		saynn("Следующим идет стул: ты хватаешь его и с размаху разбиваешь о двуспальную кровать... Повсюду летят щепки, каркас кровати рушится.")
 
-		saynn("No matter how much you thrash your room.. it doesn't get any easier to endure the pain.")
+		saynn("Сколько бы ты ни крушила свою комнату... боль не становится легче.")
 
-		saynn("So you step out.. inferno shining brightly in your eyes.")
+		saynn("И вот ты выходишь наружу... а в твоих глазах ярко полыхает адское пламя.")
 
-		addButton("Continue", "See what happens next", "near_cells")
+		addButton("Продолжить", "Смотреть, что будет дальше", "near_cells")
 	if(state == "near_cells"):
 		playAnimation(StageScene.Duo, "stand", {pc="luxe", npc="luxecatgirl", npcAction="kneel"})
 		addCharacter("luxecatgirl")
-		saynn("Luxe's boots are heavy against the metal floor, each step fast and deliberate.")
+		saynn("Сапоги Люкса тяжело стучат по металлическому полу; каждый шаг быстрый и решительный.")
 
-		saynn("He follows the corridors until he finds the 'slave cells'.")
+		saynn("Он идет по коридорам, пока не находит «рабыньи камеры».")
 
-		saynn("The door hisses open, revealing the dimly lit, sterile space. Rows of big metal cages line the walls, each one holding a different soul.. some defiant, others broken.")
+		saynn("Дверь с шипением отъезжает в сторону, открывая тускло освещенное стерильное пространство. Вдоль стен тянутся ряды огромных металлических клеток, и в каждой — отдельная душа... кто-то дерзкий, кто-то сломленный.")
 
-		saynn("Luxe's gaze sharpens as he makes his way down the row.. until he sees her.")
+		saynn("Взгляд Люкса становится острее, пока он идет вдоль ряда... пока он не видит её.")
 
-		saynn("A cute-looking catgirl sits quietly in the corner of her cage-cell, her red fur catching the faint light. Her eyes lift to meet yours, wide and submissive, with a small flicker of curiosity in them. A bulky slave collar is weighting her neck down, a symbol of ownership. Her wrists are resting in her lap, spotting obvious cuff marks.")
+		saynn("Миловидная девочка-кошка тихо сидит в углу своей клетки; её рыжий мех ловит слабые блики света. Она поднимает на тебя глаза — широко раскрытые, покорные, с легким проблеском любопытства. Массивный рабский ошейник оттягивает её шею, служа символом собственности. Её запястья лежат на коленях, и на них отчетливо видны следы от кандалов.")
 
-		saynn("Her red hair cascades over her shoulders, her tail curling tightly around her legs as if trying to make herself seem smaller.")
+		saynn("Рыжие волосы каскадом спадают на плечи, а хвост плотно обвивает ноги, словно она пытается казаться меньше.")
 
-		saynn("The sight turns the fire inside Luxe into a raging firestorm, primal growl vibrating the hot air around him. None of this is gonna be pretty..")
+		saynn("От этого зрелища огонь внутри Люкса превращается в бушующий пожар, и первобытный рык заставляет горячий воздух вокруг него вибрировать. Ничего хорошего из этого не выйдет...")
 
-		addButton("Skip it", "You don't want him to explain it with full details", "skip_it")
-		addButton("Feel it", "(Sexual violence) See what happens next", "feel_it")
+		addButton("Пропустить", "Ты не хочешь, чтобы он расписывал всё в подробностях", "skip_it")
+		addButton("Почувствовать", "(Сексуальное насилие) Посмотрим, что будет дальше", "feel_it")
 	if(state == "skip_it"):
 		playAnimation(StageScene.SexStart, "defeated", {pc="luxe", npc="luxecatgirl"})
-		saynn("Blind rage fuels Luxe as he lashes out on that poor catgirl.")
+		saynn("Слепая ярость овладевает Люксом, когда он обрушивает свой гнев на бедную кошкодевушку.")
 
-		saynn("Screams, begging, whining.. The sounds of this abuse make even the most bratty slaves shut their mouths and hope that their turn won't come.")
+		saynn("Крики, мольбы, скулёж... Звуки этого насилия заставляют замолчать даже самых капризных рабынь, заставляя их лишь надеяться, что их очередь ещё не пришла.")
 
-		saynn("Luxe takes the girl against her will. And then leaves her bleeding unconscious frail frame on the floor.")
+		saynn("Люкс берет девушку против её воли. А затем оставляет её окровавленное, бессознательное и хрупкое тело лежать на полу.")
 
-		saynn("Blood finally extinguishes the uncontrollable fire inside him.")
+		saynn("Кровь наконец гасит неукротимый огонь внутри него.")
 
-		addButton("Continue", "See what happens next", "after_catgirl")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_catgirl")
 	if(state == "feel_it"):
 		playAnimation(StageScene.Choking, "tease", {pc="luxe", npc="luxecatgirl"})
-		saynn("Luxe's broad frame fills the cell entrance, his burning fur tips casting flickering light onto the catgirl's crimson fur. She shrinks back, her collar clinging against the cage as she presses herself against it, her wide eyes fixed on the towering beast before her.")
+		saynn("Широкая фигура Люкса перекрывает вход в камеру; кончики его пылающего меха отбрасывают мерцающие блики на багровую шерсть кошкодевушки. Она вжимается в прутья клетки, едва не задыхаясь от страха, а её широко раскрытые глаза прикованы к возвышающемуся перед ней зверю.")
 
-		saynn("[say=luxecatgirl]P-Please, master.. I will do whatever you want.. Anything.. Just don't hurt me..[/say]")
+		saynn("[say=luxecatgirl]П-пожалуйста, господин... Я сделаю всё, что пожелаете... Всё что угодно... Только не причиняйте мне боли...[/say]")
 
-		saynn("Luxe doesn't answer. His silence is deafening, more terrifying than any growl or roar. He steps forward, his heavy steps echoing through the confined space. The catgirl yelps and presses herself into the corner.. but there is nowhere to run.. Luxe's clawed hand lashes out, grabbing her by the throat and hauling her up to her feet.")
+		saynn("Люкс не отвечает. Его молчание оглушительно и пугает сильнее любого рыка или рева. Он делает шаг вперед, и его тяжелые шаги эхом отдаются в тесном пространстве. Кошкодевушка вскрикивает и вжимается в угол... но бежать некуда... Когтистая лапа Люкса резко выбрасывается вперед, хватая её за горло и рывком поднимая на ноги.")
 
-		saynn("The first strike comes without warning, his free hand collides with her cheek, leaving a bunch of nasty cuts in one swipe, barely avoiding the eyes. A sharp cry escapes her lips, her body convulsing in his grip. Luxe then throws her to the ground with a force that knocks the air from her lungs, her small frame skidding across the cold floor.")
+		saynn("Первый удар наносится без предупреждения: его свободная рука врезается ей в щеку, оставляя глубокие рваные раны одним взмахом, едва не задев глаза. Резкий крик срывается с её губ, тело содрогается в его хватке. Затем Люкс швыряет её на землю с такой силой, что у неё перехватывает дыхание, а её маленькое тельце проезжает по холодному полу.")
 
-		saynn("Before she can recover, he's on her again, his claws digging into her arms as he drags her upright, pinning her against the wall of the cage. Her legs dangle helplessly, her arms desperately trying to free themselves. Luxe doesn't relent, drawing more blood from her by slashing her petite chest before slamming her back against the metal surface.")
+		saynn("Не успевает она прийти в себя, как он снова набрасывается на неё; его когти впиваются в её предплечья, когда он рывком поднимает её вертикально, прижимая к стенке клетки. Её ноги беспомощно болтаются, а руки отчаянно пытаются вырваться. Люкс не знает пощады: он выпускает ещё больше крови, полосуя её миниатюрную грудь, а затем с силой впечатывает её спиной в металл.")
 
-		saynn("The sobbing catgirl gasps for breath, her vision blurring as the force of each strike leaves her dazed. Each strike lands on her with calculated brutality. The last few hits force nasty crack noises out of some of her ribs.")
+		saynn("Рыдающая кошкодевочка судорожно хватает ртом воздух, а перед глазами всё плывёт от силы каждого удара. Каждый удар наносится с расчётливой жестокостью. От последних нескольких попаданий из её рёбер доносится мерзкий хруст.")
 
-		saynn("[say=luxecatgirl]M-Master.. P-Please.. I'll.. kh.. d-do anything.. a-anything..[/say]")
+		saynn("[say=luxecatgirl]Г-господин.. П-пожалуйста.. Я.. кх.. с-сделаю всё.. ч-что угодно..[/say]")
 
-		saynn("Her words fall on deaf ears, Luxe's glowing eyes are fixed on her, his expression cold and devoid of mercy.")
+		saynn("Её слова пролетают мимо ушей: светящиеся глаза Люкса прикованы к ней, а выражение его лица холодно и лишено всякого милосердия.")
 
-		addButton("Continue", "See what happens next", "catgirl_collapses")
+		addButton("Продолжить", "Смотреть, что будет дальше", "catgirl_collapses")
 	if(state == "catgirl_collapses"):
 		playAnimation(StageScene.SexStart, "defeated", {pc="luxe", npc="luxecatgirl"})
-		saynn("Finally, she collapses, her legs giving out beneath her. Luxe lets her fall, her hands barely breaking her fall as she crumples to the floor. Her body trembles uncontrollably, tears streaming down her crimson fur as she looks up at him with desperate, pleading eyes.")
+		saynn("Наконец, её ноги подкашиваются, и она валится на пол. Люкс позволяет ей упасть; она едва успевает выставить руки, чтобы смягчить удар, прежде чем скомкаться на полу. Её тело неудержимо дрожит, с алой шерстки катятся слёзы, пока она смотрит на него отчаянным, умоляющим взглядом.")
 
-		saynn("[say=luxecatgirl]P-please..[/say]")
+		saynn("[say=luxecatgirl]П-пожалуйста..[/say]")
 
-		saynn("Her voice is trembling.")
+		saynn("Её голос дрожит.")
 
-		saynn("Luxe crouches before her, grabbing her by the hips and flipping her onto her back with a single, strong motion. She yelps as her legs are forced apart, her bruised thighs shaking under his iron grip. The catgirl squirms beneath him.. but his weight and power make resistance futile.")
+		saynn("Люкс приседает перед ней, хватает её за бёдра и одним мощным движением переворачивает на спину. Она вскрикивает, когда ей насильно разводят ноги, а её ушибленные бёдра дрожат под его железной хваткой. Кошкодевочка извивается под ним, но его вес и мощь делают любое сопротивление бесполезным.")
 
-		addButton("Continue", "See what happens next", "sex2_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sex2_sex")
 	if(state == "sex2_sex"):
 		playAnimation(StageScene.SexMatingPress, "sex", {pc="luxe", npc="luxecatgirl", bodyState={showPenis=true, hard=true}, npcBodyState={naked=true}})
-		saynn("He doesn't waste time. His cock, already hard and leaking, presses against her entrance. Without warning or preparation, he drives into her with brutal force, his thick shaft stretching her far beyond her limits.")
+		saynn("Он не тратит времени зря. Его член, уже твердый и сочащийся смазкой, упирается в её вход. Без предупреждения и подготовки он вколачивается в неё с брутальной силой, его толстый ствол растягивает её далеко за пределы возможного.")
 
-		saynn("She screams, her head tilting back as her claws scrape uselessly against his chest. The unbearable pain leaves her gasping, her body struggling to adjust to his size.")
+		saynn("Она вскрикивает, запрокидывая голову, а её когти бесполезно скребут по его груди. Невыносимая боль заставляет её задыхаться, пока тело отчаянно пытается подстроиться под его размер.")
 
-		saynn("Luxe begins thrusting, each motion hard and unrelenting. His silence is deafening, the only sounds in the room are the rhythmic slaps of his hips against her and her broken cries.")
+		saynn("Люкс начинает двигаться, каждый толчок жесткий и неумолимый. Его молчание оглушительно; единственные звуки в комнате — это ритмичные шлепки его бедер о её тело и её надрывные стоны.")
 
-		saynn("[say=luxecatgirl]P-please.. khh.. hh.. m-master.. I c-can't.. ah-kh.. too m-much..[/say]")
+		saynn("[say=luxecatgirl]П-пожалуйста.. кхх.. хх.. г-господин.. я н-не могу.. ах-кх.. с-слишком много..[/say]")
 
-		saynn("She sobs, her voice cracking.")
+		saynn("Она рыдает, её голос срывается.")
 
-		addButton("Continue", "See what happens next", "sex2_fast")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sex2_fast")
 	if(state == "sex2_fast"):
 		playAnimation(StageScene.SexMatingPress, "fast", {pc="luxe", npc="luxecatgirl", bodyState={showPenis=true, hard=true}, npcBodyState={naked=true}})
-		saynn("But there is no mercy in Luxe, he moves like a beast possessed, his fur flickering erratically and leaving trails as his glowing cock slams into the poor catgirl over and over. Her body jolts with each thrust, her legs trembling as they remain pinned by the wolf.")
+		saynn("Но в Люксе нет ни капли милосердия; он движется как одержимый зверь, его мех беспорядочно вздрагивает, оставляя шлейфы, пока его светящийся член раз за разом вбивается в бедную кошкодевочку. Её тело содрогается от каждого толчка, а ноги дрожат, оставаясь прижатыми к полу волком.")
 
-		saynn("Her cries grow weaker as the abuse continues, her energy draining under his relentless assault. His claws dig into the skin of her shoulders, leaving more bleeding cuts and scratches.")
+		saynn("Её крики становятся всё слабее по мере продолжения насилия, силы покидают её под его беспощадным напором. Его когти впиваются в её плечи, оставляя всё новые кровоточащие порезы и царапины.")
 
-		saynn("Soon, the girl's body begins to twitch uncontrollably, her pussy clenching around his cock as her orgasm is forced upon her weak body. The sudden climax makes her scream again, her voice echoing off the walls as her juices coat his shaft. But Luxe doesn't stop even thin, he thrusts through her climax, his motions rough and erratic, the veiny orb at the base of his shaft getting bigger.")
+		saynn("Вскоре тело девушки начинает неконтролируемо дергаться, её киска сжимается вокруг его члена, когда оргазм насильно пронзает её слабое тело. Внезапный пик заставляет её снова закричать, и её голос эхом разносится по стенам, пока её соки обволакивают его ствол. Но Люкс не останавливается даже тогда, её тело бьется в экстазе; он продолжает вколачиваться в неё грубыми, беспорядочными толчками, а вздутая венозная шишка у основания его члена становится всё больше.")
 
-		saynn("Her eyes roll back, her head turning to the side as her cries turn to faint gasps.. Her body still quivers beneath him, her legs struggling to stay in position as he keeps her pinned down.")
+		saynn("Её глаза закатываются, голова поворачивается в сторону, а крики сменяются слабыми хрипами... Её тело всё ещё дрожит под ним, а ноги пытаются удержать позицию, пока он продолжает прижимать её к земле.")
 
-		addButton("Continue", "See what happens next", "sex2_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sex2_cum")
 	if(state == "sex2_cum"):
 		playAnimation(StageScene.SexMatingPress, "inside", {pc="luxe", npc="luxecatgirl", pcCum=true, bodyState={showPenis=true, hard=true}, npcBodyState={naked=true}})
-		saynn("Finally, with a deep, guttural growl, Luxe knots the girl, his whole length gets forced inside, the swollen knot locking them together. The tightness is enough to send him off cumming, his throbbing shaft sends thick, hot seed flooding her womb, each pulse pushing her further into overstimulation, making her belly bumpier. Her limp body jerks weakly with every spurt, her eyes slowly closing as the consciousness begins to leave her.")
+		saynn("Наконец, с глубоким гортанным рыком, Люкс завязывается в ней: вся его длина втискивается внутрь, и раздутый узел намертво сцепляет их тела. Тесноты достаточно, чтобы он сорвался на эякуляцию; его пульсирующий член извергает густое горячее семя прямо ей в матку, и каждый толчок погружает её в состояние запредельной стимуляции, отчего её живот становится всё более бугристым. Её обмякшее тело слабо вздрагивает при каждом выбросе, а глаза медленно закрываются, когда сознание начинает покидать её.")
 
-		saynn("Luxe stays inside her, his chest moving as he glares down at the unconscious girl. Her face is streaked with tears, her hair all sorts of messed up, her body littered with bruises, cuts and scratches.")
+		saynn("Люкс остается внутри неё, его грудь тяжело вздымается, пока он свирепо смотрит на потерявшую сознание девушку. Её лицо испачкано слезами, волосы в полном беспорядке, а всё тело покрыто синяками, порезами и царапинами.")
 
-		saynn("For a moment, he remains motionless, the rage in his eyes slowly giving way to something hollow.. The fire inside him starts to die down, leaving only ashes in its wake.")
+		saynn("На мгновение он замирает, и ярость в его глазах медленно уступает место чему-то пустому... Огонь внутри него начинает затухать, оставляя после себя лишь пепел.")
 
-		saynn("Luxe pulls out finally, his cock slipping free as his seed spills from her used body. Her stands, towering over her limb form as she lies sprawled on the cold floor, her chest seemingly still..")
+		saynn("Люкс наконец выдергивается, его член выскальзывает наружу, пока семя вытекает из её изнуренного тела. Он возвышается над её обмякшей фигурой, пока она лежит, раскинувшись на холодном полу, и её грудь, кажется, почти не дышит...")
 
-		saynn("The wolf stumbles back from the girl and empties the contents of his stomach onto the floor.. before walking away, leaving the broken catgirl in the cage.")
+		saynn("Волк отшатывается от девушки и его выворачивает прямо на пол... после чего он уходит, оставляя сломленную кошкодевочку в клетке.")
 
-		addButton("Continue", "See what happens next", "after_catgirl")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_catgirl")
 	if(state == "after_catgirl"):
 		removeCharacter("luxecatgirl")
 		playAnimation(StageScene.Solo, "stand", {pc="luxe", bodyState={naked=true}})
-		saynn("You open your eyes, greeted by the dim glow of your living quarters. A soft hum of machinery runs in the background. The air feels sterile, artificial.. much like the numbness settling in your chest.")
+		saynn("Ты открываешь глаза, встречая тусклое сияние своих жилых покоев. На заднем плане слышится мягкий гул механизмов. Воздух кажется стерильным, искусственным... совсем как оцепенение, поселившееся в твоей груди.")
 
-		saynn("You sit up slowly, head pounding, the aftermath of yesterday's rage still coursing faintly through your veins.")
+		saynn("Ты медленно садишься, голова раскалывается — отголоски вчерашней ярости всё еще едва заметно пульсируют в твоих венах.")
 
-		saynn("[say=luxe]What have you done, you stupid fuck.[/say]")
+		saynn("[say=luxe]Что же ты наделала, тупая сука?[/say]")
 
-		saynn("Feeling the heat beginning to eat you up from the inside.. you calm yourself down.. you're getting quite good at it.")
+		saynn("Чувствуя, как жар начинает пожирать тебя изнутри... ты успокаиваешься... у тебя это начинает неплохо получаться.")
 
-		saynn("Rising to your feet, you stagger toward the adjacent bathroom. The reflective surface of the mirror greets you with an unwelcome sight: it's your face. Messy fur, bags under your glowing eyes.. and a faint streak of dried blood on your cheek.")
+		saynn("Поднявшись на ноги, ты шатаешься в сторону соседней ванной. Зеркальная поверхность встречает тебя неприятным зрелищем: это твое лицо. Всклокоченная шерсть, мешки под светящимися глазами... и слабая полоска засохшей крови на щеке.")
 
-		saynn("You grab a toothbrush and squeeze a line of toothpaste onto its bristles with more force than necessary. The minty smell hits your nostrils, sharp and clean.. in stark contrast to the mess swirling inside you.")
+		saynn("Ты хватаешь зубную щетку и выдавливаешь пасту на щетину с излишним усердием. Мятный запах бьет в ноздри, резкий и чистый... резко контрастируя с тем хаосом, что бушует у тебя внутри.")
 
-		saynn("Brushing your teeth feels automatic, mechanical.. your muscle memory holding you together. The rhythmic scrubbing downs out the fading images of last night.. the girl's screams, her innocent eyes.. her limp body. You spit into the sink and watch the foamy mix swirl down the drain.")
+		saynn("Чистка зубов кажется автоматической, механической... мышечная память удерживает тебя от распада. Ритмичные движения щетки заглушают угасающие образы прошлой ночи... крики девушки, её невинные глаза... её обмякшее тело. Ты сплевываешь в раковину и наблюдаешь, как пенистая смесь уходит в слив.")
 
-		saynn("Your eyes look at the mirror again. For a moment, you see her.. Aisha.. standing behind you, her glowing fur reflecting in the glass.")
+		saynn("Твой взгляд снова падает на зеркало. На мгновение тебе кажется, что она здесь... Аиша... стоит позади тебя, и её светящийся мех отражается в стекле.")
 
-		saynn("[say=luxe]..Aisha![/say]")
+		saynn("[say=luxe]...Аиша![/say]")
 
-		saynn("You blink, and she is gone, leaving only your mean face staring back. You sigh and mutter to yourself.")
+		saynn("Ты моргаешь, и она исчезает, оставляя лишь твое угрюмое лицо, смотрящее на тебя в ответ. Ты вздыхаешь и бормочешь себе под нос.")
 
-		saynn("[say=luxe]Get a grip already.[/say]")
+		saynn("[say=luxe]Соберись уже, черт возьми.[/say]")
 
-		saynn("You rinse your mouth and splash cold water onto your face.")
+		saynn("Ты полощешь рот и плещешь в лицо холодной водой.")
 
-		saynn("Returning to the main room, you find your official attire laid out neatly on the desk. The staff had clearly been here while you slept, repairing the damage, sweeping away the shattered urn, scrubbing the walls clean of ash and soot. Even the faint scent of smoke is gone, replaced with the sterile sting of cleaning agents.")
+		saynn("Вернувшись в главную комнату, ты обнаруживаешь на столе аккуратно разложенную официальную одежду. Персонал явно заходил, пока ты спал: устранил ущерб, вымел осколки урны, отмыл стены от пепла и сажи. Даже слабый запах дыма исчез, сменившись стерильным едким ароматом чистящих средств.")
 
-		saynn("You put on your clothes piece by piece, the familiar fabric going over your body like armor. Each buckle fastened, each clasp secured. The constant reminder of the role you're meant to play. Leader. Commander. The future head of the Blacktail family.")
+		saynn("Ты надеваешь одежду слой за слоем, и знакомая ткань ложится на тело, словно броня. Каждая пряжка застегнута, каждая застежка на месте. Постоянное напоминание о роли, которую тебе суждено играть. Лидер. Командир. Будущий глава семьи Блэктейл.")
 
-		addButton("Continue", "See what happens next", "dad_comes_back")
+		addButton("Продолжить", "Смотреть, что будет дальше", "dad_comes_back")
 	if(state == "dad_comes_back"):
 		addCharacter("luxedad")
 		playAnimation(StageScene.Duo, "stand", {pc="luxe", npc="luxedad"})
-		saynn("Before you gather enough strength to step beyond the suffocating walls of your once-shared sanctuary, the door slides open with its usual sterile hiss. Your father strides in uninvited, his presence filling the room like an unwelcome shadow.")
+		saynn("Прежде чем ты успеваешь набраться сил, чтобы выйти за пределы этих удушающих стен твоего некогда общего убежища, дверь с привычным стерильным шипением отъезжает в сторону. В комнату без приглашения входит отец, и его присутствие заполняет пространство, словно незваная тень.")
 
-		saynn("[say=luxedad]You're up. Good. We've got work to do. Time to start preparing you for your future role.[/say]")
+		saynn("[say=luxedad]Твоя очередь. Хорошо. У нас много работы. Пора начинать подготовку к твоей будущей роли.[/say]")
 
-		saynn("His tone is businesslike, sharp, as if yesterday didn't even happen. You swallow hard, the weight of what you've done still pressing heavily on your chest.")
+		saynn("Его тон деловой и резкий, будто вчерашнего дня и вовсе не было. Ты тяжело сглатываешь; груз содеянного всё еще давит на грудь.")
 
-		saynn("[say=luxe]That slave..[/say]")
+		saynn("[say=luxe]Та рабыня...[/say]")
 
-		saynn("[say=luxedad]Pregnant.[/say]")
+		saynn("[say=luxedad]Беременна.[/say]")
 
-		saynn("His words hit like a sledgehammer.. but he doesn't stop.")
+		saynn("Его слова бьют словно кувалда... но он не останавливается.")
 
-		saynn("[say=luxedad]Broken ribs. Multiple concussions. Lost about half her blood. Torn vaginal canal. Did I mention the pregnancy? Congrats. We, Blacktail, always had quite the virile seed.[/say]")
+		saynn("[say=luxedad]Сломанные ребра. Множественные сотрясения. Потеряла около половины крови. Разрыв влагалища. Я уже упоминал про беременность? Поздравляю. У нас, Блэктейлов, всегда было весьма плодовитое семя.[/say]")
 
-		saynn("The room tilts slightly. You grab the edge of the desk to steady yourself, the reality slamming into you with unrelenting force.")
+		saynn("Комната слегка кренится. Ты хватаешься за край стола, чтобы удержаться на ногах — реальность обрушивается на тебя с неумолимой силой.")
 
-		saynn("Your eyes close instinctively.. but the darkness offers no salvation. Instead, it conjures flashes of your black-furred wife.. a soft face.. amber eyes staring at you.. Then the images of the poor abused catgirl show up instead, flashing fast, twisting your gut violently.")
+		saynn("Глаза инстинктивно закрываются... но темнота не приносит спасения. Вместо этого она вызывает вспышки образа твоей черноволосой жены... нежное лицо... янтарные глаза, смотрящие на тебя... Но затем вместо них проносятся образы той бедной избитой кошкодевки, мелькающие перед глазами и выворачивающие твой живот наизнанку.")
 
-		saynn("[say=luxe]I.. I want her gone. Sell her off.[/say]")
+		saynn("[say=luxe]Я... я хочу, чтобы она исчезла. Продай её.[/say]")
 
-		saynn("Your voice comes out strained, barely above a whisper.")
+		saynn("Твой голос звучит натянуто, едва громче шепота.")
 
-		saynn("[say=luxedad]Sell her off? Are you serious?[/say]")
+		saynn("[say=luxedad]Продать её? Ты серьезно?[/say]")
 
-		saynn("You open your eyes to meet his piercing elderly gaze.")
+		saynn("Ты открываешь глаза и встречаешься с его пронзительным, тяжелым взглядом старика.")
 
-		saynn("[say=luxedad]She's carrying the next Blacktail family member inside her. We don't sell our legacy.[/say]")
+		saynn("[say=luxedad]Внутри неё зреет следующий член семьи Блэктейл. Мы не продаем наше наследие.[/say]")
 
-		saynn("Legacy.. The word tastes like ash in your mouth.")
+		saynn("Наследие... Это слово оседает во рту привкусом пепла.")
 
-		saynn("[say=luxe]I fucked up. I don't want to see her ever again. Get rid of her.[/say]")
+		saynn("[say=luxe]Я облажался. Больше не хочу её видеть. Избавься от неё.[/say]")
 
-		saynn("Your father steps closer, his looming presence filling your vision. His expression hardens, the faintest glimmer of disappointment flickering in his eyes.")
+		saynn("Твой отец делает шаг вперед, его массивная фигура заполняет всё поле твоего зрения. Его лицо каменеет, а в глазах промелькнула слабая искра разочарования.")
 
-		saynn("[say=luxedad]At least keep the child. They didn't ask for this.[/say]")
+		saynn("[say=luxedad]Хотя бы ребенка оставь. Они об этом не просили.[/say]")
 
-		saynn("The truth stings, fueling your guilt. Your jaw tightens, your hands clenched into fists, your fur lighting up a bit.")
+		saynn("Правда жалит, раздувая твое чувство вины. Челюсти сжимаются, кулаки сжимаются сами собой, а мех начинает слегка светиться.")
 
-		saynn("[say=luxe]You want the next Blacktail heir to be from a slave? From a whore?[/say]")
+		saynn("[say=luxe]Ты хочешь, чтобы следующим наследником Блэктейлов был ребенок от рабыни? От шлюхи?[/say]")
 
-		saynn("Your words spill out like venom.. leaving a bitter aftertaste.")
+		saynn("Твои слова вылетают словно яд, оставляя после себя горькое послевкусие.")
 
-		saynn("[say=luxedad]Is that the problem?[/say]")
+		saynn("[say=luxedad]В этом ли проблема?[/say]")
 
-		saynn("You squeeze your eyes shut again, trying to block out his penetrating stare, but it's no use. The images are back.. broken, bleeding, begging.. burning.. dying.. What have you done, you dumb fuck..")
+		saynn("Ты снова зажмуриваешься, пытаясь отгородиться от его пронзительного взгляда, но всё бесполезно. Образы вернулись... сломленные, истекающие кровью, умоляющие... горящие... умирающие... Что же ты наделала, тупая сука...")
 
-		saynn("[say=luxe]Sell. Her. Off.[/say]")
+		saynn("[say=luxe]Продай. Её.[/say]")
 
-		saynn("You leave no room for negotiation in your voice.")
+		saynn("В твоем голосе не остается места для переговоров.")
 
-		saynn("Your father doesn't respond immediately. He studies you in silence, his sharp gaze peeling back the layers you've tried to build around yourself. The pause stretches unbearably, heavy with unspoken judgment.")
+		saynn("Твой отец отвечает не сразу. Он молча изучает тебя, и его острый взгляд слой за слоем снимает ту защиту, которую ты так старательно выстраивала вокруг себя. Пауза затягивается, становясь невыносимой, тяжелой от невысказанного осуждения.")
 
-		saynn("[say=luxedad]Alright. I will see what I can do.[/say]")
+		saynn("[say=luxedad]Хорошо. Посмотрим, что можно сделать.[/say]")
 
-		saynn("He turns away slightly.. but decides to add to his words first.")
+		saynn("Он слегка отворачивается... но прежде решает добавить к своим словам.")
 
-		saynn("[say=luxedad]Before we go, my son..[/say]")
+		saynn("[say=luxedad]Прежде чем мы уйдем, сын мой...[/say]")
 
-		saynn("You glance up, feeling the weight in his tone.")
+		saynn("Ты поднимаешь взгляд, чувствуя тяжесть в его тоне.")
 
-		saynn("[say=luxedad]Tell me. Do you really think you weren't born by a whore?[/say]")
+		saynn("[say=luxedad]Скажи мне. Ты и правда думаешь, что тебя родила не шлюха?[/say]")
 
-		saynn("His words are a dagger to the gut, sharp and painful. He doesn't wait for your answer, his heavy footsteps follow him into the corridor before the door hisses shut behind him.")
+		saynn("Его слова — словно кинжал в живот, острый и болезненный. Он не ждет твоего ответа; тяжелые шаги уносятся в коридор, прежде чем дверь с шипением закрывается за ним.")
 
-		saynn("The silence that follows is unbearable.")
+		saynn("Последовавшая за этим тишина становится невыносимой.")
 
-		saynn("You close your eyes again.. but there is no escape..")
+		saynn("Ты снова закрываешь глаза... но спасения нет...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

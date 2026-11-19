@@ -9,694 +9,694 @@ func _run():
 	if(state == ""):
 		addCharacter("socket")
 		playAnimation(StageScene.Duo, "stand", {npc="socket"})
-		saynn("[say=pc]How is your acclimation going?[/say]")
+		saynn("[say=pc]Как проходит твоя акклиматизация?[/say]")
 
-		saynn("Socket stares into her datapad.")
+		saynn("Сокет уставилась в свой датапад.")
 
-		saynn("[say=socket]Um.. I need to get to the bathroom.[/say]")
+		saynn("[say=socket]Эм.. мне нужно попасть в уборную.[/say]")
 
-		saynn("[say=pc]Sure, I can wait for you here.[/say]")
+		saynn("[say=pc]Конечно, я могу подождать тебя здесь.[/say]")
 
-		saynn("Socket tilts her head at you.")
+		saynn("Сокет вопросительно наклоняет голову.")
 
-		saynn("[say=socket]Not in that way, I need to check the ventilation in the bathroom. Could you please show me where it is?[/say]")
+		saynn("[say=socket]Не в этом смысле! Мне нужно проверить вентиляцию в туалете. Можешь показать, где он?[/say]")
 
-		saynn("Wait..")
+		saynn("Погоди...")
 
-		saynn("[say=pc]You don't know where it is? How do you.. pee.. then?[/say]")
+		saynn("[say=pc]Ты не знаешь, где он? И как же ты тогда... писаешь?[/say]")
 
-		saynn("Socket smiles.")
+		saynn("Сокет улыбается.")
 
-		saynn("[say=socket]I can show you some other time.[/say]")
+		saynn("[say=socket]Я могу показать тебе в другой раз.[/say]")
 
-		saynn("Oh no. She sees your face deforming from disgust and decides to explain herself.")
+		saynn("О нет. Заметив, как твоё лицо искажается от отвращения, она решает объясниться.")
 
-		saynn("[say=socket]A device! I can show you a device that helps with that.. not show how I pee..[/say]")
+		saynn("[say=socket]Устройство! Я могу показать тебе устройство, которое помогает с этим... а не то, как я писаю![/say]")
 
-		saynn("That makes it.. slightly better.")
+		saynn("Это делает всё... чуть лучше.")
 
-		saynn("[say=socket]Although if you want to see me..[/say]")
+		saynn("[say=socket]Хотя, если ты хочешь увидеть меня...[/say]")
 
-		saynn("You grab her hand and pull her towards the lift.")
+		saynn("Ты берешь её за руку и тянешь к лифту.")
 
-		saynn("[say=pc]Let's go![/say]")
+		saynn("[say=pc]Пошли![/say]")
 
-		addButton("Lift", "Enter it", "bring_socket_lift")
+		addButton("Лифт", "Войти", "bring_socket_lift")
 	if(state == "bring_socket_lift"):
 		aimCameraAndSetLocName("mining_elevator")
-		saynn("You and Socket step into the lift. You press the 'cellblock' button and watch as the room begins to move up with a screech.")
+		saynn("Вы с Сокетом заходите в лифт. Ты нажимаешь кнопку «блок камер» и наблюдаешь, как кабина со скрежетом начинает подниматься вверх.")
 
-		saynn("[say=socket]Thanks![/say]")
+		saynn("[say=socket]Спасибо![/say]")
 
-		saynn("[say=pc]Do you really need me though?[/say]")
+		saynn("[say=pc]А я-то тебе точно нужна?[/say]")
 
-		saynn("She nods many times.")
+		saynn("Она часто-часто кивает.")
 
-		saynn("[say=socket]I used to spend most of my time in cyberspace. There are no.. walls there.. you know?[/say]")
+		saynn("[say=socket]Раньше я проводила большую часть времени в киберпространстве. Там нет... стен... понимаешь?[/say]")
 
-		saynn("Makes sense that she is struggling here now.")
+		saynn("Вполне логично, что сейчас ей здесь так тяжело.")
 
-		saynn("[say=pc]What does it look like?[/say]")
+		saynn("[say=pc]И на что же оно похоже?[/say]")
 
-		saynn("[say=socket]Cyberspace? It's handmade by people. So it's pretty. It's like a spider web that you can run through! I have some implants that help me do that. Wanna see?[/say]")
+		saynn("[say=socket]Киберпространство? Оно создано людьми. Поэтому оно прекрасное. Это как паутина, сквозь которую можно проноситься на скорости! У меня есть импланты, которые помогают это делать. Хочешь взглянуть?[/say]")
 
-		saynn("[say=pc]Sure?[/say]")
+		saynn("[say=pc]Уверена?[/say]")
 
-		saynn("Suddenly, Socket does a vertical split, raising her leg high and showing you her private bits in great detail.")
+		saynn("Внезапно Сокет делает вертикальный шпагат, высоко задирая ногу и демонстрируя тебе свои интимные места во всех подробностях.")
 
-		saynn("[say=pc]Uh..[/say]")
+		saynn("[say=pc]Э-э...[/say]")
 
-		saynn("[say=socket]It's in there![/say]")
+		saynn("[say=socket]Оно там![/say]")
 
-		saynn("She casually spreads the petals of her pussy and tries her best to show the depths of it. There is something metal in there.. some kind of.. port.. exactly where her cervix should be.")
+		saynn("Она небрежно разводит лепестки своей киски, изо всех сил стараясь показать её глубину. Там внутри что-то металлическое... какой-то... порт... именно там, где должна быть шейка матки.")
 
-		saynn("[say=pc]What's that in your.. womb.[/say]")
+		saynn("[say=pc]Что это у тебя в... утробе?[/say]")
 
-		saynn("[say=socket]That's the implant![/say]")
+		saynn("[say=socket]Это имплант![/say]")
 
-		saynn("Technically.. She is not wrong. It is implanted into her.")
+		saynn("Технически... она не ошибается. Он вживлен прямо в неё.")
 
-		saynn("[say=pc]Does that mean you can't get pregnant?[/say]")
+		saynn("[say=pc]Значит ли это, что ты не можешь забеременеть?[/say]")
 
-		saynn("Socket blinks many times.")
+		saynn("Сокет часто моргает.")
 
-		saynn("[say=socket]Probably? Is that a problem?[/say]")
+		saynn("[say=socket]Наверное? А это проблема?[/say]")
 
-		saynn("You shrug. Socket lowers her leg and stands near.")
+		saynn("Ты пожимаешь плечами. Сокет опускает ногу и встает рядом.")
 
-		saynn("[say=socket]Most places I worked at prohibit breeding. So it was.. kind of an advantage. Helps against people that really want to stretch the unstretchable too![/say]")
+		saynn("[say=socket]В большинстве мест, где я работала, размножение запрещено. Так что это было... своего рода преимуществом. Помогает против тех, кто очень хочет растянуть то, что растянуть невозможно![/say]")
 
-		saynn("Right.. One uncomfortable talk later, the lift finally arrives.")
+		saynn("Верно... Спустя один неловкий разговор лифт наконец прибывает.")
 
-		addButton("Bathroom", "Show Socket where the bathroom is", "socket_goes_bathroom")
+		addButton("Туалет", "Показать Сокет, где находится туалет", "socket_goes_bathroom")
 	if(state == "socket_goes_bathroom"):
 		aimCameraAndSetLocName("main_bathroom1")
 		playAnimation(StageScene.Duo, "stand", {npc="socket", npcAction="crawl"})
-		saynn("You walk Socket through the main hall and show her where the closest bathroom is. The door opens automatically, inviting you two in.")
+		saynn("Ты ведешь Сокет через главный зал и показываешь ей ближайший туалет. Дверь открывается автоматически, приглашая вас двоих внутрь.")
 
-		saynn("[say=socket]Thanks! Now I just need access to the vent.[/say]")
+		saynn("[say=socket]Спасибо! Теперь мне только нужен доступ к вентиляции.[/say]")
 
-		saynn("Socket begins to follow the walls of the big room, trying to find any covered openings in the walls.")
+		saynn("Сокет начинает обходить стены большой комнаты, пытаясь найти любые закрытые отверстия в стенах.")
 
-		saynn("[say=socket]Where is it..[/say]")
+		saynn("[say=socket]Ну и где же оно...[/say]")
 
-		saynn("At some point she gets on all fours and starts crawling around, pushing her head into each corner.")
+		saynn("В какой-то момент она встает на четвереньки и начинает ползать, заглядывая в каждый угол.")
 
-		saynn("[say=pc]Do you need help or?[/say]")
+		saynn("[say=pc]Тебе помочь, или как?[/say]")
 
-		saynn("[say=socket]I'm good![/say]")
+		saynn("[say=socket]Всё путём![/say]")
 
-		saynn("She crawls under the sinks, wiggling her ass a lot in the process.")
+		saynn("Она забирается под раковины, при этом активно виляя задом.")
 
-		saynn("You notice a panel on one of the walls.. a big metal panel that has an orange trim to it.. a trim that says.. maintenance.. You point at it.")
+		saynn("Ты замечаешь на одной из стен панель... большую металлическую панель с оранжевой окантовкой... на окантовке написано... «техобслуживание»... Ты указываешь на неё.")
 
-		saynn("[say=pc]Is that it?[/say]")
+		saynn("[say=pc]Это она?[/say]")
 
-		saynn("Socket tilts her head.")
+		saynn("Сокет наклоняет голову.")
 
-		saynn("[say=socket]Yep![/say]")
+		saynn("[say=socket]Ага![/say]")
 
-		addButton("Continue", "See what happens next", "socket_approaches_vent")
+		addButton("Продолжить", "Смотреть, что будет дальше", "socket_approaches_vent")
 	if(state == "socket_approaches_vent"):
 		playAnimation(StageScene.Duo, "stand", {npc="socket", flipNPC=true})
-		saynn("Socket gets up and approaches it. She tries to use her access badge to open it.. but the maintenance door only buzzes, the motors inside it spinning loudly and fruitlessly.")
+		saynn("Сокет поднимается и подходит к панели. Она пытается использовать свой пропуск, чтобы открыть её... но дверь техобслуживания лишь гудит, а моторы внутри громко и бесполезно вращаются.")
 
-		saynn("[say=pc]Looks like it got stuck.[/say]")
+		saynn("[say=pc]Похоже, её заклинило.[/say]")
 
-		saynn("[say=socket]Yep! I know what to do.[/say]")
+		saynn("[say=socket]Точно! Я знаю, что делать.[/say]")
 
-		saynn("Socket fetches a giant wrench from her backpack.. and, with one big swing, hits the door.. bonk!")
+		saynn("Сокет достаёт из рюкзака огромный гаечный ключ... и одним мощным замахом бьёт по двери... БАМ!")
 
-		saynn("The wrench bounces off the vent.. but the impact was enough to make something inside it shift and unlock the mechanism. The maintenance door opens, presenting.. a small square vent, slightly above floor..")
+		saynn("Ключ отскакивает от вентиляции... но удара хватило, чтобы внутри что-то сдвинулось и разблокировало механизм. Дверь техобслуживания открывается, открывая взору... небольшой квадратный вентиляционный люк чуть выше уровня пола...")
 
-		saynn("[say=pc]Is that how you solve problems?[/say]")
+		saynn("[say=pc]Так ты решаешь проблемы?[/say]")
 
-		saynn("[say=socket]Yes.[/say]")
+		saynn("[say=socket]Ага.[/say]")
 
-		saynn("If it works, it works..")
+		saynn("Если работает, значит работает...")
 
-		saynn("[say=socket]That's not the task though. Need to check something inside.[/say]")
+		saynn("[say=socket]Но это не совсем то, что нужно. Надо кое-что проверить внутри.[/say]")
 
-		saynn("Socket sticks her head inside the vent and tries to reach something.")
+		saynn("Сокет засовывает голову в вентиляцию, пытаясь до чего-то дотянуться.")
 
-		addButton("Continue", "See what happens next", "socket_gets_stuck")
+		addButton("Продолжить", "Смотреть, что будет дальше", "socket_gets_stuck")
 	if(state == "socket_gets_stuck"):
 		playAnimation(StageScene.SexVent, "tease", {pc="socket", npc="pc"})
-		saynn("Socket reaches further and further, trying to poke something that's far away with her wrench.")
+		saynn("Сокет просовывается всё глубже и глубже, пытаясь ключом поддеть что-то в глубине.")
 
-		saynn("[say=pc]Don't get stuck in it.[/say]")
+		saynn("[say=pc]Смотри не застрянь там.[/say]")
 
-		saynn("[say=socket]I won't![/say]")
+		saynn("[say=socket]Не застряну![/say]")
 
-		saynn("She crawls more and more into it and reaches her wrench out far to tighten some pipe. Seconds later..")
+		saynn("Она забирается всё дальше, вытягивая ключ, чтобы подтянуть трубу. Спустя несколько секунд...")
 
-		saynn("[say=socket]I think I'm stuck.[/say]")
+		saynn("[say=socket]Кажется, я застряла.[/say]")
 
-		saynn("Indeed. Her wide hips got perfectly squeezed by walls of the vent, making it so she can't get out or crawl further.")
+		saynn("Именно. Её широкие бёдра намертво зажало стенками вентиляции, так что она не может ни выбраться, ни проползти дальше.")
 
-		saynn("Too late to say 'I told you so'. Now you gotta decide what you're gonna do with her..")
+		saynn("Слишком поздно говорить «я же говорил». Теперь тебе предстоит решить, что ты будешь с ней делать...")
 
-		addButton("Help her", "Avoid the temptation and help her", "help_socket")
-		addButton("'Help her'", "Pretend to help her", "help_lewd_socket")
+		addButton("Помочь ей", "Устоять перед искушением и помочь ей", "help_socket")
+		addButton("«Помочь ей»", "Притвориться, что помогаешь", "help_lewd_socket")
 	if(state == "help_socket"):
-		saynn("Such a silly fennec, got herself stuck like that.")
+		saynn("Какая глупая феннек, умудрилась так застрять.")
 
-		saynn("Obviously you're not gonna take advantage of that fluffy butt.. and that cute little squeezed pussy.. and the tight-looking tailhole that she doesn't even try to hide with her tail.")
+		saynn("Очевидно же, что ты не собираешься пользоваться этой пушистой попкой... и этой милой, зажатой киской... и этим узким, манящим анусом, который она даже не пытается прикрыть хвостом.")
 
-		saynn("[say=pc]How did you even manage to do that, hold on.[/say]")
+		saynn("[say=pc]Погоди, как ты вообще умудрилась так застрять?[/say]")
 
-		saynn("You squeeze your hands into the space between her hips and the walls of the vent. After that, you proceed to try and pull her out of there..")
+		saynn("Ты просовываешь руки в щель между её бёдрами и стенками вентиляции. После этого ты пытаешься вытянуть её оттуда...")
 
-		saynn("[say=socket]Whatcha doing..[/say]")
+		saynn("[say=socket]Ты что творишь?..[/say]")
 
-		saynn("[say=pc]Helping you?[/say]")
+		saynn("[say=pc]Помочь тебе?[/say]")
 
-		saynn("Her fluffy tail tickles your face as you tug on her hips, trying to free them.")
+		saynn("Её пушистый хвост щекочет тебе лицо, пока ты тянешь её за бёдра, пытаясь освободить её.")
 
-		saynn("[say=socket]Looks like I got myself into quite the situation..[/say]")
+		saynn("[say=socket]Похоже, я попала в переплёт...[/say]")
 
-		saynn("Your hands slide over her wide curves as you try to grab her from different angles. No matter what you do, it doesn't seem to help.")
+		saynn("Твои руки скользят по её широким изгибам, пока ты пытаешься ухватиться за неё под разными углами. Но что бы ты ни делал, это, кажется, не помогает.")
 
-		saynn("That tail is getting really annoying though, the fluff getting into your mouth. You pull on it to try to free Socket but you only make her shudder and let out a painful noise, her legs kick you away. Ouch.")
+		saynn("Этот хвост начинает нереально бесить — пух лезет прямо в рот. Ты дёргаешь за него, пытаясь освободить Сокет, но лишь заставляешь её вздрогнуть и издать болезненный стон, а её ноги тут же отпихивают тебя. Ой!")
 
-		saynn("[say=socket]Ow! Don't do that![/say]")
+		saynn("[say=socket]Ай! Не делай так![/say]")
 
-		saynn("She is awfully picky for someone who is stuck and needs help.")
+		saynn("Она чертовски привередлива для той, кто застрял и нуждается в помощи.")
 
-		addButton("Just keep helping", "Whatever. You have to get her out of there somehow", "socket_help_actually")
-		addButton("Spank her", "Punish her for kicking you", "socket_stuck_spank")
-		addButtonWithChecks("Rail her pussy!", "Really punish her for doing this", "socket_rough_pussy", [], [[ButtonChecks.HasReachablePenis]])
-		addButtonWithChecks("Rail her ass!", "Really-really punish her for doing this", "socket_rough_ass", [], [[ButtonChecks.HasReachablePenis]])
+		addButton("Просто продолжай помогать", "Да ладно уже. Тебе всё равно нужно как-то её оттуда вытащить", "socket_help_actually")
+		addButton("Отшлепать её", "Наказать её за то, что она тебя пнула", "socket_stuck_spank")
+		addButtonWithChecks("Трахнуть её киску!", "По-настоящему наказать её за это", "socket_rough_pussy", [], [[ButtonChecks.HasReachablePenis]])
+		addButtonWithChecks("Оттрахать ей задницу!", "По-настоящему-пренастоящему наказать её за это", "socket_rough_ass", [], [[ButtonChecks.HasReachablePenis]])
 	if(state == "socket_help_actually"):
 		playAnimation(StageScene.Duo, "stand", {npc="socket"})
-		saynn("Oh well, you let the annoying tail tickle your chin as you keep pulling on Socket's butt. You pray that someone won't walk in on you because..")
+		saynn("Ну что ж, ты позволяешь этому раздражающему хвосту щекотать твой подбородок, продолжая тянуть Сокет за задницу. Ты молишься, чтобы никто не зашел к вам, потому что...")
 
-		saynn("[say=nova]Kinky~.[/say]")
+		saynn("[say=nova]Пикантно~.[/say]")
 
-		saynn("One of the guards walks past you two.. of course.")
+		saynn("Один из охранников проходит мимо вас двоих... ну конечно.")
 
-		saynn("[say=socket]Hi-i![/say]")
+		saynn("[say=socket]При-и-вет![/say]")
 
-		saynn("[say=nova]Yes, hai. Don't mind me, carry on.[/say]")
+		saynn("[say=nova]Да, да. Не обращайте на меня внимания, продолжайте.[/say]")
 
-		saynn("One awkward interaction later, you return to it. Your arms are getting tired by now.. just like your lusty eyes are tired of watching that fluffy butt trying to wiggle free.")
+		saynn("Спустя одно неловкое взаимодействие, вы возвращаетесь к делу. Руки уже начинают уставать... так же как и твои похотливые глаза устали наблюдать за тем, как эта пушистая жопка пытается вырваться на свободу.")
 
-		saynn("[say=socket]Oh, I know. My shoulder pads got caught![/say]")
+		saynn("[say=socket]Ой, знаю-знаю. Наплечники зацепились![/say]")
 
-		saynn("Socket lowers her shoulders a bit.. and just casually pulls herself out of the vent, without your help even.")
+		saynn("Сокет слегка опускает плечи... и просто непринужденно вылезает из вентиляции, даже без твоей помощи.")
 
-		saynn("[say=pc]Really?[/say]")
+		saynn("[say=pc]Серьёзно?[/say]")
 
-		saynn("Socket shrugs and closes the maintenance door. Makes you feel like you should have punished her for this..")
+		saynn("Сокет пожимает плечами и закрывает техническую дверь. Из-за этого возникает чувство, что тебе стоило её за это наказать...")
 
-		saynn("[say=socket]My bad![/say]")
+		saynn("[say=socket]Мой косяк![/say]")
 
-		addButton("Continue", "See what happens next", "unlock_fast_travel")
+		addButton("Продолжить", "Смотреть, что будет дальше", "unlock_fast_travel")
 	if(state == "unlock_fast_travel"):
 		GM.pc.setLocation("main_bathroom1")
-		saynn("Socket takes a better look at the vent. Then she pulls out her datapad and takes a look at some kind of map.")
+		saynn("Сокет внимательнее осматривает вентиляцию. Затем она достает свой датапад и изучает какую-то карту.")
 
-		saynn("[say=socket]These vents seem to be all over the prison. Maybe I could overhaul them into a.. a quick transportation system of sorts? I would have to modify each vent and connect them all into a network.. but I think it's doable![/say]")
+		saynn("[say=socket]Похоже, эти вентиляционные шахты пронизывают всю тюрьму. Может, мне стоит переделать их в... своего рода систему быстрого перемещения? Придется модифицировать каждую шахту и соединить их в единую сеть... но, думаю, это реально![/say]")
 
-		saynn("[say=pc]Isn't that a little.. suspicious?[/say]")
+		saynn("[say=pc]А это не слишком ли... подозрительно?[/say]")
 
-		saynn("[say=socket]Suspicious?[/say]")
+		saynn("[say=socket]Подозрительно?[/say]")
 
-		saynn("[say=pc]What would staff think if they'd spot me using these?[/say]")
+		saynn("[say=pc]И что подумает персонал, если заметит, что я ими пользуюсь?[/say]")
 
-		saynn("Socket hums.")
+		saynn("Сокет что-то напевает под нос.")
 
-		saynn("[say=socket]You're right. I guess that limits the list a little. You should be safe if you climb into the one in your cell though![/say]")
+		saynn("[say=socket]Ты права. Думаю, это немного сужает список. Но если заберешься в тот, что в твоей камере, то будешь в безопасности![/say]")
 
-		saynn("[say=pc]Sure. Just make sure I won't get stuck in them.[/say]")
+		saynn("[say=pc]Конечно. Только убедись, что я в них не застряну.[/say]")
 
-		saynn("She giggles and starts jogging away"+str(", her pussy still dripping your seed" if fuckedPussy else "")+".")
+		saynn("Она хихикает и начинает убегать легким бегом"+str(", her pussy still dripping your seed" if fuckedPussy else "")+".")
 
-		saynn("[say=socket]Thanks by the way! I think I can find a way back.[/say]")
+		saynn("[say=socket]Кстати, спасибо! Думаю, я смогу найти дорогу назад.[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "socket_stuck_spank"):
 		playAnimation(StageScene.Duo, "stand", {npc="socket"})
-		saynn("You got really frustrated with how she kicked you.. so you return the favor by smacking her naked ass, making it jiggle!")
+		saynn("Тебя дико взбесило то, как она тебя пинала... поэтому ты отвечаешь тем же: шлепаешь её по голой заднице так, что она начинает колыхаться!")
 
-		saynn("[say=socket]Ouch!..[/say]")
+		saynn("[say=socket]Ай!..[/say]")
 
-		saynn("Socket jerks from the pain so hard that she manages to accidentally free herself. She hits her butt again as she falls onto the floor.")
+		saynn("Сокет так резко дергается от боли, что ей удается случайно освободиться. При падении на пол она снова ударяется задницей.")
 
-		saynn("[say=socket]Ow-w-w..[/say]")
+		saynn("[say=socket]О-о-ой..[/say]")
 
-		saynn("[say=pc]Oh, that worked.[/say]")
+		saynn("[say=pc]О, это сработало.[/say]")
 
-		saynn("[say=socket]If you'd spank me any harder, you'd be punished right now![/say]")
+		saynn("[say=socket]Если бы ты шлепнула меня еще сильнее, тебя бы уже наказали![/say]")
 
-		saynn("Huh? This girl doesn't seem like the kind that would do that.")
+		saynn("А? Да не похоже, чтобы эта девчонка была на такое способна.")
 
-		saynn("[say=pc]My bad. It was you who kicked me.[/say]")
+		saynn("[say=pc]Мой косяк. Это ты меня пнула![/say]")
 
-		saynn("Socket gets up and rubs her butt a bit.")
+		saynn("Сокет поднимается и слегка потирает задницу.")
 
-		saynn("[say=socket]Apology accepted![/say]")
+		saynn("[say=socket]Прощаю![/say]")
 
-		saynn("At least you got her out of there with minimal effort on your side.")
+		saynn("По крайней мере, тебе удалось вытащить её оттуда почти без усилий.")
 
-		addButton("Continue", "See what happens next", "unlock_fast_travel")
+		addButton("Продолжить", "Смотреть, что будет дальше", "unlock_fast_travel")
 	if(state == "socket_rough_pussy"):
 		playAnimation(StageScene.SexVent, "sex", {pc="socket", npc="pc", npcBodyState={exposedCrotch=true,hard=true}})
-		saynn("Fuck it, you're too horny and annoyed not to take advantage of that slut.")
+		saynn("Да к черту всё, ты слишком возбужден и раздражен, чтобы не воспользоваться этой шлюхой.")
 
-		saynn("You take a spot behind her and get a firm grasp on her ass with one hand while the other holds your hard cock ready, your eyes focussed on her pussy slit that she doesn't even try to hide, displaying it proudly for you.")
+		saynn("Ты встаешь позади неё, одной рукой крепко сжимая её задницу, а другой сжимая свой твердый член, готовый к делу; твой взгляд прикован к её щели, которую она даже не пытается скрыть, с гордостью выставляя напоказ.")
 
-		saynn("[say=socket]Ow. How are you gonna pull me out like that?[/say]")
+		saynn("[say=socket]Ой! И как ты собираешься вытаскивать меня вот так?[/say]")
 
-		saynn("Socket doesn't even realize.. but seconds later. You piece her cunt with one rough thrust that sends shivers through her body and makes her gasp. The sudden penetration catches her off-guard, her pussy walls gripping your length tightly!")
+		saynn("Сокет даже не осознает... но спустя секунды ты пронзаешь её киску одним грубым толчком, от которого по её телу пробегает дрожь, а из груди вырывается вздох. Внезапное проникновение застает её врасплох, и стенки её влагалища плотно обхватывают твою плоть!")
 
-		saynn("[say=socket]AH! Hey! Easy!..[/say]")
+		saynn("[say=socket]АХ! Эй! Полегче!..[/say]")
 
-		saynn("[say=pc]Walking around naked like that.. You're a free use slut now, get used to it.[/say]")
+		saynn("[say=pc]Разгуливать вот так нагишом... Теперь ты шлюха общего пользования, привыкай.[/say]")
 
-		saynn("You put both of your hands on her hips and start fucking her while she is completely helpless. Socket tries to kick you off again but you just yank on her tail again while shoving your cock deep inside.")
+		saynn("Ты кладешь обе руки ей на бедра и начинаешь трахать её, пока она совершенно беспомощна. Сокет пытается снова отпихнуть тебя ногами, но ты лишь сильнее дергаешь её за хвост, заталкивая свой член глубоко внутрь.")
 
-		saynn("[say=socket]Nhh![/say]")
+		saynn("[say=socket]Нхх![/say]")
 
-		saynn("She still tries to resist.. but being stuck like that doesn't give her much wiggle room, she is forced to endure your onslaught, her pussy making wet noises as you pound her relentlessly.")
+		saynn("Она всё ещё пытается сопротивляться... но в таком положении у неё не так много пространства для маневра, и ей приходится терпеть твой натиск; её киска издает влажные звуки, пока ты неустанно вколачиваешься в неё.")
 
-		addButton("Faster", "Use that girl for your pleasure", "socket_rough_pussy_fast")
+		addButton("Быстрее", "Использовать эту девчонку для своего удовольствия", "socket_rough_pussy_fast")
 	if(state == "socket_rough_pussy_fast"):
 		playAnimation(StageScene.SexVent, "fast", {pc="socket", npc="pc", npcBodyState={exposedCrotch=true,hard=true}})
 		var removedImplant = getFlag("SocketModule.removedWombImplant", false)
 		if (!removedImplant):
-			saynn("Your hips slap against her butt as you pick up the pace. Whatever Socket has in her womb, it doesn't allow you to penetrate her cervix. But your thrusts are enough to cause a bump on her belly anyway, little desperate moans begin to escape her lips.")
+			saynn("Твои бедра хлопают по её заднице, когда ты ускоряешься. Что бы там ни было в утробе Сокет, это не дает тебе проникнуть в саму шейку матки. Но твоих толчков достаточно, чтобы на её животе появился бугорок, и из её уст начинают вырываться тихие, отчаянные стоны.")
 
 		else:
-			saynn("Your hips slap against her butt as you pick up the pace. Your thrusts are enough to cause a bump on her belly, little desperate moans begin to escape her lips.")
+			saynn("Твои бедра хлопают по её заднице, когда ты ускоряешься. Твоих толчков достаточно, чтобы на её животе появился бугорок, и из её уст начинают вырываться тихие, отчаянные стоны.")
 
-		saynn("[say=socket]Huff.. ah..[/say]")
+		saynn("[say=socket]Хафф.. ах..[/say]")
 
-		saynn("She got tired of resisting and just lets you have it your way with her and her cunt, her inner walls are barely wet.")
+		saynn("Она устала сопротивляться и просто позволяет тебе делать с ней и её щелью всё, что вздумается; её внутренние стенки едва влажные.")
 
-		saynn("[say=socket]You will pay for it![/say]")
+		saynn("[say=socket]Ты за это заплатишь![/say]")
 
-		saynn("[say=pc]Uh huh. Give me even more reasons to leave you like this, slut.[/say]")
+		saynn("[say=pc]Угу. Дай мне еще больше причин оставить тебя в таком состоянии, шлюшка.[/say]")
 
-		saynn("[say=socket]Huff-f..[/say]")
+		saynn("[say=socket]Хафф...[/say]")
 
-		saynn("At some point her moans get louder, her whole body starts to shiver, her pussy gripping your cock again. She feels so tight that you can't hold back anymore..")
+		saynn("В какой-то момент её стоны становятся громче, всё тело начинает дрожать, а её киска снова сжимает твой член. Она кажется такой узкой, что ты больше не можешь сдерживаться...")
 
-		addButton("Cum inside", "Breed the fennec", "socket_rough_pussy_cuminside")
+		addButton("Кончить внутрь", "Оплодотворить феннека", "socket_rough_pussy_cuminside")
 	if(state == "socket_rough_pussy_cuminside"):
 		playAnimation(StageScene.SexVent, "inside", {pc="socket", npc="pc", pcCum=true, npcCum=true, npcBodyState={exposedCrotch=true,hard=true}})
 		var removedImplant = getFlag("SocketModule.removedWombImplant", false)
 		if (!removedImplant):
-			saynn("She can't get pregnant anyway so you just push yourself over the edge with the last slow but rough thrusts, shoving your cock as deep as that pussy allows.")
+			saynn("Она всё равно не может забеременеть, так что ты просто доводишь себя до края последними медленными, но грубыми толчками, заталкивая член так глубоко, насколько позволяет её киска.")
 
 		else:
-			saynn("You really don't want to hold back so you just push yourself over the edge with the last slow but rough thrusts, shoving your cock as deep as that pussy allows.")
+			saynn("Ты действительно не хочешь сдерживаться, поэтому просто доводишь себя до края последними медленными, но грубыми толчками, заталкивая член так глубоко, насколько позволяет её киска.")
 
-		saynn("[say=socket]Oh.. Are you.. ah..[/say]")
+		saynn("[say=socket]Ох... Ты что... ах...[/say]")
 
-		saynn("Socket is still shivering a lot, her pussy squeezing your shaft as you start pumping her full of your spunk.")
+		saynn("Сокет всё еще сильно дрожит, её киска сжимает твой член, пока ты начинаешь заливать в неё свою сперму.")
 
-		saynn("[say=pc]Yes. Why wouldn't I use a stuck whore?[/say]")
+		saynn("[say=pc]Да. А почему бы мне не использовать застрявшую шлюху?[/say]")
 
-		saynn("[say=socket]Huff.. I'm not a whore! I'm.. I'm just stuck![/say]")
+		saynn("[say=socket]Хафф... Я не шлюха! Я... я просто застряла![/say]")
 
-		saynn("You pull your cock out, leaving her stuffed pussy to leak your seed onto her fluffy trembling thighs. Whole bathroom smells of sex now..")
+		saynn("Ты вытаскиваешь свой член, оставляя её набитую киску сочиться твоим семенем на её пушистые дрожащие бёдра. Вся ванная теперь пропахла сексом...")
 
-		saynn("[say=pc]Then I'm sure the next person who sees you will help.[/say]")
+		saynn("[say=pc]Тогда я уверена, что следующий, кто тебя увидит, поможет.[/say]")
 
-		saynn("You slap her ass, making her used slit push out more {pc.cum}.")
+		saynn("Ты шлёпаешь её по заднице, заставляя её размокшую щель выдавливать ещё больше {pc.cum}.")
 
-		saynn("[say=socket]Hey![/say]")
+		saynn("[say=socket]Эй![/say]")
 
-		saynn("And just like that, you leave her there.")
+		saynn("И вот так просто ты оставляешь её там.")
 
-		addButton("Leave", "Time to go", "unlock_fasttravel_rough")
+		addButton("Уйти", "Пора идти", "unlock_fasttravel_rough")
 	if(state == "unlock_fasttravel_rough"):
 		GM.pc.setLocation("main_bathroom1")
-		saynn("Although, before you leave completely, you take one last look at the vent.")
+		saynn("Хотя, прежде чем уйти окончательно, ты бросаешь последний взгляд на вентиляцию.")
 
-		saynn("Hmm.. You have seen many of them throughout the station. They're all probably connected into one network. Maybe you can use them as a.. quick transportation system of sorts. Socket would probably be able to modify them to allow for that.. after she gets out of the precarious state that she is in.")
+		saynn("Хмм... Ты видел много таких по всей станции. Вероятно, все они соединены в одну сеть. Может быть, их можно использовать как своего рода... систему быстрого перемещения. Сокет, вероятно, сможет модифицировать их для этого... как только выберется из того затруднительного положения, в котором оказалась.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "socket_rough_ass"):
 		playAnimation(StageScene.SexVent, "inside", {pc="socket", npc="pc", npcBodyState={exposedCrotch=true,hard=true}})
-		saynn("Fuck it, you're too horny and annoyed not to take advantage of that slut.")
+		saynn("Да к черту всё, ты слишком возбужден и раздражен, чтобы не воспользоваться этой шлюхой.")
 
-		saynn("You take a spot behind her and get a firm grasp on her ass with one hand while the other holds your hard cock ready. Rather than going for that obvious needy cunt, why not try her other hole? It looks much tighter, even when you spread her fluffy buttcheeks.")
+		saynn("Ты встаёшь позади неё, крепко сжимая её задницу одной рукой, а другой сжимаешь свой твёрдый член, готовый к делу. Вместо того чтобы лезть в ту очевидную, жаждущую киску, почему бы не попробовать её другое отверстие? Оно выглядит гораздо более узким, даже когда ты раздвигаешь её пушистые ягодицы.")
 
-		saynn("[say=socket]Ow. How are you gonna pull me out like that?[/say]")
+		saynn("[say=socket]Ой! И как ты собираешься вытаскивать меня вот так?[/say]")
 
-		saynn("Socket doesn't even realize.. but seconds later.. she feels your cock prodding her virgin-tight back entrance. You put more and more pressure on it, spreading the unwilling ring forcefully. The fennec starts squirming and whining as you do that.")
+		saynn("Сокет даже не осознаёт... но секунды спустя... она чувствует, как твой член прощупывает её девственно-узкий задний проход. Ты давишь всё сильнее, силой растягивая непокорное кольцо. Фенек начинает извиваться и скулить, пока ты это делаешь.")
 
-		saynn("[say=socket]AH! Ow!.. Wait! That's the wrong hole![/say]")
+		saynn("[say=socket]АХ! Ой!.. Погоди! Это не то отверстие![/say]")
 
-		saynn("[say=pc]Oh yeah? What are you gonna do? Stop me?[/say]")
+		saynn("[say=pc]Да неужели? И что ты сделаешь? Остановишь меня?[/say]")
 
-		saynn("The more you slide your dick down her clenching asshole, the more she shivers.. and the more she tries to kick you back with her legs. You counter that by slapping her ass, sending it to jiggle. Her ass is dry as a dessert, making the penetration extremely uncomfortable for her.")
+		saynn("Чем сильнее ты вгоняешь свой член в её сжимающееся анус, тем сильнее она дрожит... и тем яростнее пытается отпихнуть тебя ногами. Ты парируешь это, шлепая её по заднице, заставляя её колыхаться. Её анус сухой, как пустыня, из-за чего проникновение становится для неё чертовски дискомфортным.")
 
-		saynn("[say=socket]Arh.. You can fuck the other hole! Please![/say]")
+		saynn("[say=socket]Ах.. Ты можешь трахнуть другую дырочку! Пожалуйста![/say]")
 
-		saynn("[say=pc]I can?[/say]")
+		saynn("[say=pc]Прямо так?[/say]")
 
-		saynn("[say=socket]Yes! Fuck my pussy! Please! I won't resist![/say]")
+		saynn("[say=socket]Да! Трахни мою киску! Пожалуйста! Я не буду сопротивляться![/say]")
 
-		saynn("Wow, what an offer.")
+		saynn("Ого, какое заманчивое предложение.")
 
-		addButton("Ravage her ass", "Ignore her begging and keep going", "socket_rough_ass_keepgoing")
-		addButton("Switch to pussy", "Might as well leave her ass as is", "socket_rouch_ass_pussy")
+		addButton("Разъебать ей анус", "Игнорировать её мольбы и продолжать", "socket_rough_ass_keepgoing")
+		addButton("Переключиться на киску", "Оставить её задницу в покое", "socket_rouch_ass_pussy")
 	if(state == "socket_rough_ass_keepgoing"):
 		playAnimation(StageScene.SexVent, "sex", {pc="socket", npc="pc", npcBodyState={exposedCrotch=true,hard=true}})
-		saynn("Nope, Socket wasn't begging good enough for you to reconsider. You ignore her whining and keep pushing through, slapping and scratching her thighs as she keeps trying to push you back with her legs.")
+		saynn("Нет, Сокет умоляла недостаточно убедительно, чтобы ты передумал. Ты игнорируешь её нытье и продолжаешь вжиматься в неё, хлопая и царапая её бёдра, пока она пытается оттолкнуть тебя своими ногами.")
 
-		saynn("[say=socket]Don't do it, please! Agh!..[/say]")
+		saynn("[say=socket]Не надо, пожалуйста! Агх!..[/say]")
 
-		saynn("With one rough motion, you shove the rest of your length inside, stretching Socket's asshole wide. She is squirming and groaning painfully, her toes curling up in her boots, her tail spazzing out in the air. Despite how painful it is for her.. for you it feels amazing, her tailhole clenching around your cock is all the right ways.")
+		saynn("Одним резким движением ты вталкиваешь остаток своей длины внутрь, широко растягивая анус Сокет. Она корчится и стонет от боли, её пальцы на ногах сжимаются в сапогах, а хвост судорожно дергается в воздухе. Несмотря на то, как ей больно... для тебя это чертовски приятно: её хвостовое отверстие сжимается вокруг твоего члена именно так, как надо.")
 
-		saynn("[say=pc]Someone has to train your ass if you won't do it yourself.[/say]")
+		saynn("[say=pc]Раз ты сама не хочешь дрессировать свою задницу, придётся это сделать кому-то другому.[/say]")
 
-		saynn("[say=socket]Nhh.. it doesn't feel good![/say]")
+		saynn("[say=socket]Нхх.. это совсем не приятно![/say]")
 
-		saynn("Who cares, you're not doing it for her. You let the slut get used to your cock a bit before you start moving your hips, almost pulling out before shoving your full length inside, abusing that dry tailhole for all the pleasure.")
+		saynn("Да какая разница, ты ведь делаешь это не ради неё. Ты даёшь этой шлюхе немного привыкнуть к своему члену, прежде чем начать двигать бёдрами, почти выходя наполовину, а затем с силой вбиваешь всю длину внутрь, выжимая всё удовольствие из этого сухого хвостового отверстия.")
 
-		saynn("[say=socket]Ugh-h.. agh..[/say]")
+		saynn("[say=socket]Угх-х.. агх..[/say]")
 
-		saynn("She knew what she was getting into. Maybe she wanted this to happen. You grab onto her spazzing tail and pull it while thrusting inside her tight asshole, her neglected pussy looking quite lonely under it.")
+		saynn("Она знала, на что шла. Может, она сама этого хотела. Ты хватаешь её дергающийся хвост и тянешь его на себя, одновременно вколачиваясь в её тугой анус; её заброшенная киска выглядит довольно одиноко под всем этим.")
 
-		saynn("It doesn't take long for you to already start feeling the orgasm approaching, Socket's inner walls are just refusing to stop gripping your cock, resulting in a lot of friction. You pound that ass hard, forcing more and more of those little painful noises out of her.")
+		saynn("Вскоре ты уже начинаешь чувствовать приближение оргазма: внутренние стенки Сокет просто отказываются разжиматься, обхватывая твой член, что создает невероятное трение. Ты жестко вколачиваешься в эту задницу, заставляя её издавать всё больше и больше этих тонких болезненных звуков.")
 
-		addButton("Cum inside", "Stuff her ass", "socket_rough_ass_cum")
+		addButton("Кончить внутрь", "Натрахать ей задницу", "socket_rough_ass_cum")
 	if(state == "socket_rough_ass_cum"):
 		playAnimation(StageScene.SexVent, "inside", {pc="socket", npc="pc", pcCum=true, npcCum=true, npcBodyState={exposedCrotch=true,hard=true}})
-		saynn("With one last powerful thrust of your hips, you grunt as your cock starts throbbing and pumping Socket's ass full of your {pc.cum}, its wall milking your balls for each last drop.")
+		saynn("С последним мощным толчком бедер ты издаешь утробный стон: твой член начинает пульсировать, заполняя задницу Сокета своей {pc.cum}, а ее стенки выжимают из твоих яичек каждую последнюю каплю.")
 
-		saynn("[say=socket]Huf-f-f.. You're gonna regret it..[/say]")
+		saynn("[say=socket]Ха-а-а... Ты еще пожалеешь об этом...[/say]")
 
-		saynn("Hearing her say that while she is stuck in that vent puts a smile on your face.")
+		saynn("Слыша эти слова, пока она зажата в вентиляции, ты невольно улыбаешься.")
 
-		saynn("[say=pc]Sure. Just make sure to get some lube first.[/say]")
+		saynn("[say=pc]Конечно. Только сначала не забудь про смазку.[/say]")
 
-		saynn("You pull out, leaving her bruised asshole to pulse and release some of your seed back, creating quite a mess on her thighs.")
+		saynn("Ты выходишь, оставляя ее ушибленный анус пульсировать и извергать обратно часть твоего семени, из-за чего на ее бедрах образуется изрядная лужа.")
 
-		saynn("[say=socket]Now help me.. Please?[/say]")
+		saynn("[say=socket]А теперь помоги мне... Пожалуйста?[/say]")
 
-		saynn("You just spank that ass and proceed to leave.")
+		saynn("Ты просто шлепаешь ее по заднице и направляешься к выходу.")
 
-		saynn("[say=socket]Ow! Hey![/say]")
+		saynn("[say=socket]Ой! Эй![/say]")
 
-		addButton("Leave", "Time to go", "unlock_fasttravel_rough")
+		addButton("Уйти", "Пора идти", "unlock_fasttravel_rough")
 	if(state == "socket_rouch_ass_pussy"):
 		playAnimation(StageScene.SexVent, "sex", {pc="socket", npc="pc", npcBodyState={exposedCrotch=true,hard=true}})
-		saynn("She is begging you, how can you say no?")
+		saynn("Она умоляет тебя, как ты можешь отказать?")
 
-		saynn("So, after a few seconds of deliberating, you pull your cock out of her tight ass and instead shove your it into her pussy, the tip spreading her petals as you slide inside without a warning.")
+		saynn("Итак, после нескольких секунд раздумий, ты вынимаешь член из ее тугой задницы и вместо этого вгоняешь его в ее киску, кончик раздвигает ее лепестки, когда ты без предупреждения входишь внутрь.")
 
-		saynn("[say=socket]Than.. AH![/say]")
+		saynn("[say=socket]Ммм.. АХ![/say]")
 
-		saynn("The sudden penetration makes her jerk her body. You agreed to fuck her pussy.. but you never said that you'd be gentle.")
+		saynn("От внезапного проникновения её тело вздрагивает. Ты согласился трахать её киску... но ты не говорил, что будешь нежным.")
 
-		saynn("Your hands squeeze and grope her ass as you start using her slit, almost pulling out before ramming your dick deep inside, the penetration creating a slight bump on her belly.")
+		saynn("Твои руки сжимают и тискают её задницу, пока ты начинаешь входить в её щель, почти выходя полностью, прежде чем с силой вогнать член глубоко внутрь — от такого проникновения на её животе даже проступает небольшой бугорок.")
 
-		saynn("[say=socket]Ah.. ah..[/say]")
+		saynn("[say=socket]Ах.. ах..[/say]")
 
-		saynn("The more you pound her cunt, the more it gets wet, the less bruises her inner walls receive from you. She doesn't resist anymore, just letting you use her like she is some kind of free use toy.")
+		saynn("Чем сильнее ты долбишь её пизду, тем сильнее она смазывается, и тем меньше синяков оставляют твои толчки на её внутренних стенках. Она больше не сопротивляется, просто позволяя тебе использовать её, словно какую-то бесплатную игрушку.")
 
-		addButton("Faster", "Increase the pace", "socket_rouch_ass_pussy_fast")
+		addButton("Быстрее", "Ускорить темп", "socket_rouch_ass_pussy_fast")
 	if(state == "socket_rouch_ass_pussy_fast"):
 		playAnimation(StageScene.SexVent, "fast", {pc="socket", npc="pc", npcBodyState={exposedCrotch=true,hard=true}})
-		saynn("You increase the pace, your hips slapping against her fluffy butt with a soft noise. More moans begin to escape from Socket, her pussy coating your dick with plenty of juice, allowing you to pound her like that.")
+		saynn("Ты ускоряешься, твои бёдра с мягким звуком шлепают по её пушистой жопке. Из Сокет вырывается всё больше стонов, её киска покрывает твой член обильной смазкой, позволяя тебе так неистово вколачиваться в неё.")
 
-		saynn("[say=socket]You're so rough..[/say]")
+		saynn("[say=socket]Ты такой грубый..[/say]")
 
-		saynn("[say=pc]Want me to switch to your ass again?[/say]")
+		saynn("[say=pc]Хочешь, чтобы я снова переключился на твою задницу?[/say]")
 
-		saynn("[say=socket]No.. ah.. please.. Keep fucking my pussy![/say]")
+		saynn("[say=socket]Нет.. ах.. пожалуйста.. Продолжай трахать мою киску![/say]")
 
-		saynn("You can feel her body starting to shiver, her legs shaking a little.")
+		saynn("Ты чувствуешь, как её тело начинает дрожать, а ноги — слегка подрагивать.")
 
 		saynn("[say=socket]I'm.. I'm..[/say]")
 
-		saynn("You spank her ass when she does, causing her pussy to grip your cock extremely tightly. All the while, you just keep fucking her, your cock pushing through her pulsing wet love-tunnel while she cums.")
+		saynn("Ты шлепаешь её по заднице, когда она кончает, отчего её киска сжимает твой член невероятно туго. Ты продолжаешь трахать её, проталкивая член сквозь её пульсирующий влажный любовный туннель, пока она извергается.")
 
-		saynn("[say=socket]Ah!.. Hh-h..[/say]")
+		saynn("[say=socket]Ах!.. Хх-х..[/say]")
 
-		saynn("It feels so good that you can't hold yourself from grunting as well, your {pc.penis} is twitching, about to release its load..")
+		saynn("Это настолько приятно, что ты не можешь сдержать стонов, а твой {pc.penis} дергается, готовый выплеснуть всё содержимое..")
 
-		addButton("Cum inside", "Stuff that pussy!", "socket_rouch_ass_pussy_cum")
+		addButton("Кончить внутрь", "Забей эту киску!", "socket_rouch_ass_pussy_cum")
 	if(state == "socket_rouch_ass_pussy_cum"):
 		playAnimation(StageScene.SexVent, "inside", {pc="socket", npc="pc", pcCum=true, npcCum=true, npcBodyState={exposedCrotch=true,hard=true}})
-		saynn("While Socket is still experiencing the orgasmic bliss, you ram your dick deep inside and let her pussy bring you over the edge.")
+		saynn("Пока Сокет всё еще пребывает в оргазмическом блаженстве, ты с силой вгоняешь член глубоко внутрь, позволяя её киске довести тебя до края.")
 
-		saynn("More grunting.. followed by your balls tensing up.. your cock releasing its load inside her needy slit in waves, during each throb.")
+		saynn("Снова стоны.. за которыми следует напряжение твоих яичек.. твой член волнами извергает семя в её жаждущую щель при каждом её сокращении.")
 
-		saynn("[say=pc]Using you like the free use slut that you are.[/say]")
+		saynn("[say=pc]Использую тебя как послушную шлюху для свободного использования.[/say]")
 
-		saynn("After properly breeding her cunt, you just stay inside for a little longer, using her as your cock warmer.")
+		saynn("Насытно осеменив её щель, ты остаешься внутри еще ненадолго, используя её как согревалку для своего члена.")
 
-		saynn("[say=socket]Huff.. I will find a way to get back at you![/say]")
+		saynn("[say=socket]Хафф.. Я найду способ отомстить тебе![/say]")
 
-		saynn("Hearing that while she is stuck in there.. is a bit funny.")
+		saynn("Слышать такое, когда она зажата внутри тебя.. даже немного забавно.")
 
-		saynn("[say=pc]You better hope that whoever finds you won't decide to have their way with you too.[/say]")
+		saynn("[say=pc]Тебе лучше надеяться, что тот, кто тебя найдет, не решит тоже поиграть с тобой во все тяжкие.[/say]")
 
-		saynn("[say=socket]What do you mean? Help me to get out![/say]")
+		saynn("[say=socket]В каком смысле? Помоги мне выбраться![/say]")
 
-		saynn("You just slap her ass and pull out, making her used pussy produce a cute little fountain of your {pc.cum}.")
+		saynn("Ты просто шлепаешь её по заднице и выходишь, заставляя её привыкшую к сексу киску выстрелить милым маленьким фонтанчиком твоих {pc.cum}.")
 
-		saynn("Time to go.")
+		saynn("Пора идти.")
 
-		addButton("Leave", "Time to go", "unlock_fasttravel_rough")
+		addButton("Уйти", "Пора идти", "unlock_fasttravel_rough")
 	if(state == "help_lewd_socket"):
-		saynn("Yeah, she got herself into quite a precarious situation. Might as well 'help her'.")
+		saynn("Да уж, она попала в довольно щекотливое положение. Так что, пожалуй, стоит ей «помочь».")
 
-		saynn("You start by putting your hands on her hips and gently caressing them.")
+		saynn("Ты начинаешь с того, что кладешь руки ей на бедра и нежно их поглаживаешь.")
 
-		saynn("[say=pc]What a vulnerable position that you're in.[/say]")
+		saynn("[say=pc]В каком же уязвимом положении ты оказалась.[/say]")
 
-		saynn("[say=socket]Yeah! So unfortunate, right?[/say]")
+		saynn("[say=socket]Ага! Какая жалость, правда?[/say]")
 
-		saynn("You chuckle. Your hands jump on her fluffy butt and follow it curves, your digits digging into her short fur as you start groping her butt.")
+		saynn("Ты посмеиваешься. Твои руки прыгают на её пушистую задницу и скользят по её изгибам, пальцы впиваются в короткий мех, когда ты начинаешь бесцеремонно её мять.")
 
-		saynn("[say=pc]Uh huh. Would be a shame if someone would take advantage of that.[/say]")
+		saynn("[say=pc]Угу. Было бы обидно, если бы кто-нибудь этим воспользовался.[/say]")
 
-		saynn("[say=socket]True, they can do so many wild things while I'm stuck here![/say]")
+		saynn("[say=socket]Верно, они могут творить столько диких вещей, пока я тут застряла![/say]")
 
-		saynn("Your palms reach her inner thighs and begin following them now, sliding up and down along, occasionally cupping the crotch, teasing the pussy folds.")
+		saynn("Твои ладони ложатся на её внутреннюю сторону бёдер и начинают скользить вверх и вниз, время от времени обхватывая промежность и дразня складки её киски.")
 
-		saynn("[say=socket]They could play with me or even use me for their pleasure![/say]")
+		saynn("[say=socket]Они могут играть со мной или даже использовать меня для своего удовольствия![/say]")
 
-		saynn("One of your fingers casually rubs her clit while she says that. Socket's pussy produces such an inviting scent..")
+		saynn("Пока она это говорит, один из твоих пальцев небрежно потирает её клитор. Киска Сокета источает такой манящий аромат...")
 
-		saynn("[say=socket]I wouldn't even be able to look at them, they have full control over what happens..[/say]")
+		saynn("[say=socket]Я бы даже смотреть на них не смогла, ведь они полностью контролируют всё, что происходит...[/say]")
 
-		saynn("While doing all of that, you notice the reason behind why Socket is stuck there. Her shoulder pads got caught by the sticking out edge of the vent. If you push on them a little, you reckon you could get Socket out of there with zero effort.. if you want.")
+		saynn("Занимаясь этим, ты замечаешь причину, по которой Сокет застряла. Её наплечники зацепились за выступающий край вентиляции. Если немного подтолкнуть их, кажется, ты сможешь вытащить Сокет оттуда без малейших усилий... если захочешь.")
 
-		addButton("Save her", "Enough lewding", "help_lewd_save")
-		addButton("Finger her", "Do a little more than just groping", "help_lewd_finger")
-		addButtonWithChecks("Use her pussy", "Might as well enjoy her pussy first", "help_lewd_pussy", [], [[ButtonChecks.HasReachablePenis]])
-		addButtonWithChecks("Use her ass", "Might as well enjoy her ass first", "help_lewd_ass", [], [[ButtonChecks.HasReachablePenis]])
+		addButton("Спасти её", "Хватит раздеваться", "help_lewd_save")
+		addButton("Поласкать её пальцами", "Сделать чуть больше, чем просто ласки", "help_lewd_finger")
+		addButtonWithChecks("Воспользоваться её киской", "Для начала стоит насладиться её киской", "help_lewd_pussy", [], [[ButtonChecks.HasReachablePenis]])
+		addButtonWithChecks("Использовать её задницу", "Сперва стоит как следует насладиться её задницей", "help_lewd_ass", [], [[ButtonChecks.HasReachablePenis]])
 	if(state == "help_lewd_save"):
 		playAnimation(StageScene.Duo, "stand", {npc="socket"})
-		saynn("After properly groping Socket's butt for some time, you decide that it's time to get the poor girl out of there. You reach your hand into the vent and push on her armored shoulder pads in the right place.. causing it to finally release her!")
+		saynn("Потирая задницу Сокет какое-то время, ты решаешь, что пора вызволять бедняжку. Ты просовываешь руку в вентиляцию и нажимаешь на её наплечники в нужном месте... и наконец, замок поддается!")
 
-		saynn("[say=pc]There you go.[/say]")
+		saynn("[say=pc]Вот так-то лучше.[/say]")
 
-		saynn("Socket gets out of it and hums. She uses her paws to swipe off any dust off of her chest and butt.")
+		saynn("Сокет выбирается наружу и довольно мурлычет. Она смахивает лапками пыль со своей груди и задницы.")
 
-		saynn("[say=socket]Thanks for the help! It was quite lonely there.[/say]")
+		saynn("[say=socket]Спасибо за помощь! Там было чертовски одиноко.[/say]")
 
-		addButton("Continue", "See what happens next", "unlock_fast_travel")
+		addButton("Продолжить", "Смотреть, что будет дальше", "unlock_fast_travel")
 	if(state == "help_lewd_finger"):
 		playAnimation(StageScene.SexVent, "finger", {pc="socket", npc="pc"})
-		saynn("Nah, you can always save her later. For now, you might as well do something else.")
+		saynn("Да нет, её всегда можно будет спасти позже. А пока можно заняться чем-нибудь другим.")
 
 		var removedImplant = getFlag("SocketModule.removedWombImplant", false)
 		if (!removedImplant):
-			saynn("Your digits land on her pussy folds and spread them wide, revealing the pink slick tunnel that ends with some kind of.. implant. Luckily, you don't plan to reach that far.")
+			saynn("Твои пальцы ложатся на складки её киски и раздвигают их, обнажая розовый влажный туннель, который заканчивается каким-то... имплантом. К счастью, ты не планируешь лезть так глубоко.")
 
 		else:
-			saynn("Your digits land on her pussy folds and spread them wide, revealing the pink slick tunnel that ends with her tight cervix. Luckily, you don't plan to reach that far.")
+			saynn("Твои пальцы ложатся на складки её киски и раздвигают их, обнажая розовый влажный туннель, ведущий к её тугой шейке матки. К счастью, ты не планируешь лезть так глубоко.")
 
-		saynn("[say=socket]Interesting, I just realized that this vent has a pretty echo.[/say]")
+		saynn("[say=socket]Интересно, я только что заметила, что в этой вентиляции довольно сильное эхо.[/say]")
 
-		saynn("Casually, you slip two of your fingers inside and begin to wiggle them around, her juices dripping onto them.")
+		saynn("Ты непринужденно просовываешь два пальца внутрь и начинаешь ими шевелить, пока её соки стекают на твои руки.")
 
-		saynn("[say=pc]Oh yeah?[/say]")
+		saynn("[say=pc]Да неужели?[/say]")
 
-		saynn("[say=socket]Yeah, just listen. Ha! -Ha.. ha.. a..[/say]")
+		saynn("[say=socket]Да, просто слушай. Ха! — Ха.. ха.. а..[/say]")
 
-		saynn("You keep one of your hands warm using her fluffy butt while the second starts to finger her, your digits sliding in and out, aimed in such a way so they push on her pleasure spot.")
+		saynn("Одной рукой ты согреваешь её пушистую задницу, а второй начинаешь ласкать её пальцами; твои пальцы скользят туда-сюда, целенаправленно надавливая на её точку удовольствия.")
 
-		saynn("[say=pc]That is indeed quite interesting.[/say]")
+		saynn("[say=pc]Это и впрямь довольно любопытно.[/say]")
 
-		saynn("[say=socket]It's probably.. very deep and long.. ah..[/say]")
+		saynn("[say=socket]Он, наверное.. очень глубокий и длинный.. ах..[/say]")
 
-		saynn("Her pussy pulsing around your fingers as you hammer away at her g-spot, juices dripping onto the floor.")
+		saynn("Её киска пульсирует вокруг твоих пальцев, пока ты методично вколачиваешься в её точку G, а соки капают на пол.")
 
-		saynn("[say=pc]Yeah, it would be very fun to explore, don't you think?[/say]")
+		saynn("[say=pc]Да, было бы очень весело всё это исследовать, не находишь?[/say]")
 
-		saynn("[say=socket]Mm-m-h-h.. h-hah..[/say]")
+		saynn("[say=socket]Мм-м-х-х.. х-хах..[/say]")
 
-		saynn("Her legs shiver, her toes in her boots curling up, her tail swaying wildly.")
+		saynn("Её ноги дрожат, пальцы ног в сапожках поджимаются, а хвост бешено мечет из стороны в сторону.")
 
-		saynn("[say=pc]Something is wrong?[/say]")
+		saynn("[say=pc]Что-то не так?[/say]")
 
-		saynn("[say=socket]No.. everything is fine..[/say]")
+		saynn("[say=socket]Нет.. всё в порядке..[/say]")
 
-		saynn("You angle yourself a little more, which allows you to finger-fuck her pussy faster, so fast that it starts to make wet noises and squirt out some transparent fluids occasionally.")
+		saynn("Ты чуть сильнее меняешь угол наклона, что позволяет тебе ебашить пальцами в её киску быстрее — настолько быстро, что она начинает издавать влажные звуки, а из неё время от времени брызжут прозрачные соки.")
 
-		saynn("[say=pc]But you're still stuck, aren't you?[/say]")
+		saynn("[say=pc]Но ты всё ещё застрял, верно?[/say]")
 
-		saynn("[say=socket]Oh yeah.. I am.. I'm.. ah..[/say]")
+		saynn("[say=socket]О да.. я.. я.. ах..[/say]")
 
-		saynn("Suddenly, her whole body tenses up, her legs start to shake, her pussy walls gripping your digits as you start to hear cute moans escaping from the vent, the echo giving them more volume and richness.")
+		saynn("Внезапно всё её тело напрягается, ноги начинают дрожать, а стенки её киски сжимают твои пальцы; из вентиляции доносятся её милые стоны, которые эхо делает более громкими и насыщенными.")
 
-		saynn("[say=pc]I know, the echo is nice.[/say]")
+		saynn("[say=pc]Знаю, эхо здесь приятное.[/say]")
 
-		saynn("The fennec is squirming, constrained by the vent, your digits keep pushing on her g-spot so much that they cause her to.. let go. Her pussy releases a storm of girlcum, creating a big wet puddle and making the fur on her thighs wet too.")
+		saynn("Феннек извивается, зажатая в вентиляции; твои пальцы так настойчиво давят на её точку G, что это заставляет её.. сорваться. Её киска извергает настоящий шторм девичьей смазки, образуя большую влажную лужу и намочив мех на её бёдрах.")
 
-		saynn("[say=socket]Huff..[/say]")
+		saynn("[say=socket]Хафф..[/say]")
 
-		saynn("You wait for Socket to stop shivering.. before carefully pulling the digits out and drying them out against the fluff of her butt.")
+		saynn("Ты ждёшь, пока Сокет перестанет дрожать.. прежде чем осторожно вытащить пальцы и вытереть их о пушистую задницу.")
 
-		saynn("Time to help her.")
+		saynn("Пора ей помочь.")
 
-		addButton("Get her out", "Help Socket", "help_lewd_finger_help")
+		addButton("Вытащить её", "Помощь Сокет", "help_lewd_finger_help")
 	if(state == "help_lewd_finger_help"):
 		playAnimation(StageScene.Duo, "stand", {npc="socket"})
-		saynn("You reach your hand into the vent and push on her armored shoulder pads in the right place.. causing it to finally release her!")
+		saynn("Ты просовываешь руку в вентиляцию и нажимаешь на её бронированные наплечники в нужном месте... наконец-то заставляя её вырваться!")
 
-		saynn("[say=pc]There you go.[/say]")
+		saynn("[say=pc]Вот так-то лучше.[/say]")
 
-		saynn("Socket gets out with your help, her legs still shaking a little.")
+		saynn("С твоей помощью Сокет выбирается наружу, её ноги всё ещё слегка дрожат.")
 
-		saynn("[say=socket]Thanks for the help! It was getting quite hot there.[/say]")
+		saynn("[say=socket]Спасибо за помощь! Там становилось совсем жарковато.[/say]")
 
-		saynn("[say=pc]Hah.[/say]")
+		saynn("[say=pc]Хах.[/say]")
 
-		addButton("Continue", "See what happens next", "unlock_fast_travel")
+		addButton("Продолжить", "Смотреть, что будет дальше", "unlock_fast_travel")
 	if(state == "help_lewd_pussy"):
 		playAnimation(StageScene.SexVent, "inside", {pc="socket", npc="pc", npcBodyState={exposedCrotch=true,hard=true}})
-		saynn("Nah, you can always save her later. For now, you might as well do something else. Looking at Socket stuck in the vent like that.. made you quite hard. Why not let some steam out?")
+		saynn("Да нет, её всегда можно спасти позже. А пока можно заняться чем-нибудь другим. Вид Сокет, застрявшей в вентиляции... заставил тебя не на шутку возбудиться. Почему бы не выпустить пар?")
 
-		saynn("Casually, you position yourself behind her and align your {pc.penis} with her exposed tight lips. Brushing the tip against them doesn't seem to cause any resistance. You feel.. warmth.. radiating from her love tunnel.")
+		saynn("Небрежно устроившись позади неё, ты пристраиваешь свой {pc.penis} к её обнаженным узким губкам. Кончик скользит по ним без малейшего сопротивления. Ты чувствуешь... тепло... исходящее из её любовного туннеля.")
 
-		saynn("[say=socket]It's dirty here, so much dust..[/say]")
+		saynn("[say=socket]Тут так грязно, столько пыли...[/say]")
 
-		saynn("Without any warning, you slowly enter her, your cock spreading her slit wide and coating the walls with its precum. Her legs are closed, meaning her pussy feels tight..")
+		saynn("Без всякого предупреждения ты медленно входишь в неё; твой член широко раздвигает её щелочку, покрывая стенки предэякулятом. Её ноги плотно сжаты, а значит, киска кажется очень узкой...")
 
-		saynn("[say=pc]Oh yeah?[/say]")
+		saynn("[say=pc]Да неужели?[/say]")
 
-		saynn("[say=socket]Yeah, I should have grabbed a cleaner.[/say]")
+		saynn("[say=socket]Да уж, надо было взять тряпку почище.[/say]")
 
-		saynn("Socket seems to be content with you being inside her. She even moves her tail out of the way.")
+		saynn("Похоже, Сокет вполне довольна тем, что ты внутри неё. Она даже убирает хвост в сторону.")
 
-		addButton("Fuck her", "Start moving your hips", "help_lewd_pussy_fuck")
+		addButton("Трахнуть её", "Начать двигать бёдрами", "help_lewd_pussy_fuck")
 	if(state == "help_lewd_pussy_fuck"):
 		playAnimation(StageScene.SexVent, "sex", {pc="socket", npc="pc", npcBodyState={exposedCrotch=true,hard=true}})
 		var removedImplant = getFlag("SocketModule.removedWombImplant", false)
 		if (!removedImplant):
-			saynn("And so you start moving your hips, fucking her at a slow pace, your dick exploring her depths. You don't go too deep so you don't break your dick on whatever she has in her womb.. but it still feels good, her slick pussy walls hug your length nicely.")
+			saynn("И вот ты начинаешь двигать бёдрами, медленно трахая её, пока твой член исследует её глубины. Ты не заходишь слишком глубоко, чтобы не сломать член о то, что у неё там в утробе... но ощущения всё равно чертовски приятные: её влажные стенки киски отлично обхватывают твою плоть.")
 
 		else:
-			saynn("And so you start moving your hips, fucking her at a slow pace, your dick exploring her depths. It feels good, her slick pussy walls hug your length nicely.")
+			saynn("И вот ты начинаешь двигать бёдрами, медленно трахая её, пока твой член исследует её глубины. Это приятно: её влажные стенки киски отлично обхватывают твою плоть.")
 
-		saynn("[say=pc]So you're saying that you're not a dirty girl?[/say]")
+		saynn("[say=pc]То есть ты хочешь сказать, что ты не грязная девчонка?[/say]")
 
-		saynn("[say=socket]Yeah, sure. I prefer to keep everything nice and clean![/say]")
+		saynn("[say=socket]Да, конечно. Я предпочитаю, чтобы всё было мило и чисто![/say]")
 
-		saynn("Her breathing gets a little deeper as you keep thrusting inside, little noises of pleasure escape her, the reverb making them sound richer.")
+		saynn("Её дыхание становится глубже, пока ты продолжаешь входить в неё; из её уст вырываются тихие звуки удовольствия, которые из-за эха кажутся ещё более насыщенными.")
 
-		saynn("[say=pc]Might I ask a personal question?[/say]")
+		saynn("[say=pc]Могу я задать личный вопрос?[/say]")
 
-		saynn("[say=socket]Sure-e![/say]")
+		saynn("[say=socket]Конечно-о![/say]")
 
-		addButton("Faster", "Fuck her faster", "help_lewd_pussy_fast")
+		addButton("Быстрее", "Трахать её быстрее", "help_lewd_pussy_fast")
 	if(state == "help_lewd_pussy_fast"):
 		playAnimation(StageScene.SexVent, "fast", {pc="socket", npc="pc", npcBodyState={exposedCrotch=true,hard=true}})
-		saynn("You grip her hips harder and increase the pace, your hips slapping against her fluffy butt, your cock getting stimulated by her clenching slit.")
+		saynn("Ты крепче сжимаешь её бёдра и ускоряешься; твои бёдра шлепают по её пушистой заднице, а член получает мощную стимуляцию от того, как её щель сжимается вокруг него.")
 
-		saynn("[say=pc]So that means that during sex, you prefer to keep everything.. inside?[/say]")
+		saynn("[say=pc]Значит ли это, что во время секса ты предпочитаешь оставлять всё... внутри?[/say]")
 
-		saynn("[say=socket]Of course.. ah.. internal cumshots are the best. I don't have to groom my fur then![/say]")
+		saynn("[say=socket]Конечно.. ах.. кончать ей внутрь — это лучшее. Тогда мне не нужно вылизывать мех![/say]")
 
-		saynn("Discussing such a lewd topic so casually. Guess you better listen to her and not pull out.")
+		saynn("Обсуждает такую пошлую тему так непринужденно. Похоже, тебе лучше послушать её и не вынимать член.")
 
-		saynn("[say=pc]Makes sense. I will try to avoid making a mess then.[/say]")
+		saynn("[say=pc]Логично. Тогда постараюсь не устроить беспорядок.[/say]")
 
-		saynn("[say=socket]Oh, thank you, you're so nice! Ah..[/say]")
+		saynn("[say=socket]О, спасибо, ты такой милый! Ах..[/say]")
 
-		saynn("You can feel shivers going through her body, her lower part of the body is squirming a bit.. as much as the firm frame of the vent allows it.")
+		saynn("Ты чувствуешь, как по её телу пробегает дрожь, а низ живота слегка ерзает.. насколько это позволяет жесткий каркас вентиляционной шахты.")
 
-		saynn("Your orgasm draws near too..")
+		saynn("Твой оргазм тоже уже близко..")
 
-		addButton("Cum inside", "Breed that fennec", "help_lewd_pussy_cum")
+		addButton("Кончить внутрь", "Оплодотвори эту феннека", "help_lewd_pussy_cum")
 	if(state == "help_lewd_pussy_cum"):
 		playAnimation(StageScene.SexVent, "inside", {pc="socket", npc="pc", pcCum=true, npcCum=true, npcBodyState={exposedCrotch=true,hard=true}})
-		saynn("..and rather than pulling out, you decide to commit to it and thrust deep inside! You hear cute moans and feel a girl squirming before you, her pussy quivering and kneading your cock tightly as you start pumping her full of your {pc.cum}!")
+		saynn("..и вместо того чтобы вынуть член, ты решаешь пойти до конца и всаживаешься глубоко внутрь! Ты слышишь милые стоны и чувствуешь, как девушка извивается перед тобой, а её киска дрожит и сжимает твой член, пока ты начинаешь заливать её своей {pc.cum}!")
 
-		saynn("[say=socket]Ah..[/say]")
+		saynn("[say=socket]Ах..[/say]")
 
-		saynn("The more your {pc.penis} throbs inside her, the more she tries to stand on the tip of her boots, which frees her shoulder pads from being stuck!")
+		saynn("Чем сильнее пульсирует твоя {pc.penis} внутри неё, тем сильнее она пытается встать на цыпочки, из-за чего её наплечники перестают застревать!")
 
-		saynn("[say=socket]Oh.. It worked!.. Ah.. I'm free![/say]")
+		saynn("[say=socket]Ох... Получилось!.. Аах.. Я свободна![/say]")
 
-		saynn("You leave your cock inside, using the girl as a cock warmer.")
+		saynn("Ты оставляешь свой член внутри, используя девушку как грелку для своего достоинства.")
 
-		saynn("[say=pc]Who would have thought.[/say]")
+		saynn("[say=pc]Кто бы мог подумать.[/say]")
 
-		saynn("[say=socket]Yeah, sex is often the solution![/say]")
+		saynn("[say=socket]Да, секс — часто лучшее решение![/say]")
 
-		addButton("Get her out", "Help Socket", "help_lewd_pussy_help")
+		addButton("Вытащить её", "Помощь Сокет", "help_lewd_pussy_help")
 	if(state == "help_lewd_pussy_help"):
 		playAnimation(StageScene.Duo, "stand", {npc="socket"})
-		saynn("After some time, you finally pull out, allowing that stuffed used pussy to start leaking your seed. Then you just help Socket to get out.")
+		saynn("Спустя некоторое время ты наконец выходишь, позволяя этой набитой, использованной киске начать сочиться твоим семенем. Затем ты просто помогаешь Сокет выбраться.")
 
-		saynn("[say=pc]There you go.[/say]")
+		saynn("[say=pc]Вот так-то лучше.[/say]")
 
-		saynn("Socket swipes the dust off her fur, her legs still shaking a little.")
+		saynn("Сокет смахивает пыль со своей шерстки, её ноги всё еще слегка подрагивают.")
 
-		saynn("[say=socket]Thanks for the help! It was getting quite hot there.[/say]")
+		saynn("[say=socket]Спасибо за помощь! Там становилось совсем жарковато.[/say]")
 
-		saynn("[say=pc]Hah.[/say]")
+		saynn("[say=pc]Хах.[/say]")
 
-		addButton("Continue", "See what happens next", "unlock_fast_travel")
+		addButton("Продолжить", "Смотреть, что будет дальше", "unlock_fast_travel")
 	if(state == "help_lewd_ass"):
 		playAnimation(StageScene.SexVent, "tease", {pc="socket", npc="pc", npcBodyState={exposedCrotch=true,hard=true}})
-		saynn("Nah, you can always save her later. For now, you might as well do something else. Looking at Socket stuck in the vent like that.. made you quite hard. Why not let some steam out?")
+		saynn("Да нет, её всегда можно спасти позже. А пока можно заняться чем-нибудь другим. Вид Сокет, застрявшей в вентиляции... заставил тебя не на шутку возбудиться. Почему бы не выпустить пар?")
 
-		saynn("Casually, you position yourself behind her and align your {pc.penis} with her exposed virgin-tight tailhole. But as soon as your member prods her it.. Socket pulls her butt away, her tail covering it.")
+		saynn("Небрежно устроившись позади неё, ты пристраиваешь свой {pc.penis} к её обнаженному, девственно узкому анусу. Но как только твой член касается его... Сокет отводит задницу, прикрывая его хвостом.")
 
-		saynn("[say=socket]Wrong hole![/say]")
+		saynn("[say=socket]Не в то отверстие![/say]")
 
-		saynn("[say=pc]Is it?[/say]")
+		saynn("[say=pc]Неужели?[/say]")
 
-		saynn("She shakes her butt at you.")
+		saynn("Она виляет перед тобой задом.")
 
-		saynn("[say=socket]Yeah, it's not for sex![/say]")
+		saynn("[say=socket]Да, он не для секса![/say]")
 
-		saynn("Huh, what if you go slow though.. You move her tail out of the way and push more pressure on her ass.. but that only makes her push you back with her legs.")
+		saynn("Хм, а что если действовать медленнее... Ты убираешь её хвост в сторону и сильнее надавливаешь на её задницу... но от этого она лишь сильнее упирается в тебя ногами.")
 
-		saynn("[say=socket]Please? You can use the other one![/say]")
+		saynn("[say=socket]Ну пожалуйста? Можешь использовать другой![/say]")
 
-		saynn("You can try to force her.. but you'd have to be rough, the girl seems to be resisting anal a lot.")
+		saynn("Можно попытаться взять её силой... но придётся действовать грубо, кажется, девчонка сильно сопротивляется анальному сексу.")
 
-		addButton("Force anal", "Be rough with her", "socket_rough_ass_keepgoing")
-		addButton("Switch to pussy", "Listen to her", "help_lewd_ass_switch")
+		addButton("Взять аналом", "Быть с ней грубым", "socket_rough_ass_keepgoing")
+		addButton("Переключиться на киску", "Прислушаться к ней", "help_lewd_ass_switch")
 	if(state == "help_lewd_ass_switch"):
 		playAnimation(StageScene.SexVent, "inside", {pc="socket", npc="pc", npcBodyState={exposedCrotch=true,hard=true}})
-		saynn("Sure, you decide to listen to the girl and lower your cock to her pussy. Brushing the tip against her moist petals doesn't seem to cause any resistance this time. You feel.. warmth.. radiating from her love tunnel.")
+		saynn("Конечно, ты решаешь прислушаться к девчонке и опускаешь свой член к её киске. Когда ты проводишь кончиком по её влажным лепесткам, на этот раз сопротивления не чувствуется. Ты ощущаешь... тепло... исходящее из её любовного туннеля.")
 
-		saynn("[say=socket]Thanks.. It's dirty here, so much dust..[/say]")
+		saynn("[say=socket]Спасибо... Тут так грязно, столько пыли...[/say]")
 
-		saynn("Without much warning, you slowly enter her, your cock spreading her slit wide and coating the walls with its precum. Her legs are closed, meaning her pussy feels very tight..")
+		saynn("Без лишних предупреждений ты медленно входишь в неё; твой член широко раздвигает её щель, смазывая стенки предэякулятом. Её ноги плотно сжаты, а значит, киска кажется очень узкой...")
 
-		saynn("[say=pc]Oh yeah?[/say]")
+		saynn("[say=pc]Да неужели?[/say]")
 
-		saynn("[say=socket]Yeah, I should have grabbed a cleaner.[/say]")
+		saynn("[say=socket]Да уж, надо было взять тряпку почище.[/say]")
 
-		saynn("Socket seems to be content with you being inside her. She even moves her tail completely out of the way.")
+		saynn("Похоже, Сокет довольна тем, что ты внутри неё. Она даже полностью убирает хвост с дороги.")
 
-		addButton("Fuck her", "Start moving your hips", "help_lewd_pussy_fuck")
+		addButton("Трахнуть её", "Начать двигать бёдрами", "help_lewd_pussy_fuck")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):
