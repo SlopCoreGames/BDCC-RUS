@@ -7,7 +7,7 @@ func _init():
 	aiScoreMultiplier = 0.2
 	
 func getVisibleName(_context = {}):
-	return "Cuffs hands and legs"
+	return "Сковывает руки и ноги"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -23,7 +23,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	_receiver.getInventory().forceEquipByStoreOtherUnlessRestraint(GlobalRegistry.createItem("inmateanklecuffs"), _attacker)
 	_receiver.addEffect(StatusEffect.Collapsed)
 	
-	var text = "{attacker.name} manages to bring you down to the floor. Then {attacker.he} pulls two sets of cuffs and [b]restraints your arms and legs[/b]! You manage to shake {attacker.him} off but you are still on the floor."
+	var text = "{attacker.name} удается повалить тебя на пол. Затем {attacker.he} достает две пары наручников и [b]стягивает твои руки и ноги[/b]! Тебе удается стряхнуть {attacker.him}, но ты всё еще лежишь на полу."
 	return {
 		text = text
 	}

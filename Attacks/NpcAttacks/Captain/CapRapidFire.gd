@@ -7,7 +7,7 @@ func _init():
 	aiScoreMultiplier = 1.0
 	
 func getVisibleName(_context = {}):
-	return "Rapid Fire"
+	return "Скорострельность"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -21,7 +21,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	
 	var amountOfShots = RNG.randi_range(1, 5) + RNG.randi_range(1, 5)
 	
-	var text = "{attacker.name} fires off a rapid succession of energy shots, hitting {receiver.name} "+str(amountOfShots)+" times. Each impact sends jolts of pain through {receiver.his} body."
+	var text = "{attacker.name} выпускает серию стремительных энергетических выстрелов, поражая {receiver.name} "+str(amountOfShots)+" times. Each impact sends jolts of pain through {receiver.his} body."
 	
 	return {
 		text = text,

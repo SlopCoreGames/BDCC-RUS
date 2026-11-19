@@ -7,7 +7,7 @@ func _init():
 	aiScoreMultiplier = 0.6
 	
 func getVisibleName(_context = {}):
-	return "Disabling shot"
+	return "Обезоруживающий выстрел"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -19,7 +19,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkDodged(_attacker, _receiver, DamageType.Physical)):
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "{attacker.name} fires a disabling shot, hitting {receiver.name}'s legs and causing excruciating pain."
+	var text = "{attacker.name} делает обезоруживающий выстрел, попадая {receiver.name} по ногам и причиняя невыносимую боль."
 	if(!_receiver.hasEffect(StatusEffect.Collapsed)):
 		if(_receiver.addEffect(StatusEffect.Collapsed)):
 			text += " {receiver.name} [b]collapses[/b] after the attack."

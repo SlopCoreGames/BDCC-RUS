@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Attack Fury"
+	return "Яростная атака"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -17,7 +17,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	
 	if(checkDodged(_attacker, _receiver, DamageType.Physical)):
 		if(RNG.chance(50)):
-			var text = "{receiver.name} dodges the attack but {attacker.name}'s lightning-fast reflexes allow {attacker.her} to catch {receiver.name} anyway and throw {receiver.him} into the ground!"
+			var text = "{receiver.name} уклоняется от удара, но молниеносные рефлексы {attacker.name} позволяют {attacker.her} всё равно поймать {receiver.name} и впечатать {receiver.him} в землю!"
 			
 			_receiver.addEffect(StatusEffect.Collapsed)
 			return {
@@ -27,7 +27,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 		
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "{attacker.name} lunges forward with lightning speed, delivering a powerful series of strikes on {receiver.name}'s body."
+	var text = "{attacker.name} с молниеносной скоростью бросается вперед, нанося серию мощных ударов по телу {receiver.name}."
 	
 	if(RNG.chance(30) && _receiver.addEffect(StatusEffect.Bleeding)):
 		text += " Sharp claws caused {receiver.name} to start [color=red]bleeding[/color]."

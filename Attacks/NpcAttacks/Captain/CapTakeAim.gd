@@ -7,13 +7,13 @@ func _init():
 	aiScoreMultiplier = 0.7
 	
 func getVisibleName(_context = {}):
-	return "Take Aim"
+	return "Прицелиться"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
-	var text = "{attacker.name} prepares for the next attack."
+	var text = "{attacker.name} готовится к следующей атаке."
 	text += "\n\n"
 	text += "[say=attacker]"+RNG.pick(["Can't hide from me. I control Everything.", "My aim is always steady.", "How can you not understand? I own you.", "I built this prison with my own tears and blood!"])+"[/say]"
 	

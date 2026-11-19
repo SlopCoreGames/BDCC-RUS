@@ -7,68 +7,68 @@ func _run():
 	if(state == ""):
 		addCharacter("tavi")
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
-		saynn("Tavi is leaning against the wall, her head seems to be busy with some heavy thoughts.")
+		saynn("Тави прислонилась к стене, кажется, она погружена в какие-то тяжелые раздумья.")
 
-		saynn("You approach her and copy her stance.")
+		saynn("Ты подходишь к ней и принимаешь такую же позу.")
 
-		saynn("[say=pc]Whatcha thinking about?[/say]")
+		saynn("[say=pc]О чем задумалась?[/say]")
 
-		saynn("Tavi shrugs.")
+		saynn("Тави пожимает плечами.")
 
-		saynn("[say=tavi]Anything really. My mind is no longer clouded. And now, some things have became quite clear.[/say]")
+		saynn("[say=tavi]Да так, обо всем сразу. Туман в голове рассеялся. И теперь некоторые вещи стали предельно ясными.[/say]")
 
-		saynn("Huh. You raise a brow.")
+		saynn("Хм. Ты вопросительно приподнимаешь бровь.")
 
-		saynn("Tavi pushes herself away from the wall and stands in front of you.")
+		saynn("Тави отталкивается от стены и встает прямо перед тобой.")
 
-		saynn("[say=tavi]I.. I think I should stop creating new escape plans.. The ones I came up with.. Most of them failed.. In the most spectacular ways sometimes.[/say]")
+		saynn("[say=tavi]Мне... мне кажется, пора перестать придумывать новые планы побега... Те, что я сочиняла раньше... Большинство из них провалились... Иногда самым эпичным образом.[/say]")
 
-		saynn("That's.. concerning..")
+		saynn("Это... тревожно...")
 
-		saynn("[say=pc]Are you ready to give up, Tavi? On your dreams?[/say]")
+		saynn("[say=pc]Ты готова сдаться, Тави? Отказаться от своих мечтаний?[/say]")
 
-		saynn("Tavi thinks about it a bit more.")
+		saynn("Тави еще немного задумывается над твоими словами.")
 
-		saynn("[say=tavi]No. But..[/say]")
+		saynn("[say=tavi]Нет.. но..[/say]")
 
-		addButton("Continue", "See what happens next", "tavi_kneels")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_kneels")
 	if(state == "tavi_kneels"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcAction="kneel"})
-		saynn("Slowly, Tavi gets on her knees before you, a clear sign of submission. Or just weakness..")
+		saynn("Тави медленно опускается перед тобой на колени — явный знак покорности. Или просто слабости..")
 
-		saynn("[say=tavi]I want you to be in charge. I want you to choose from now on. Choose what happens with us.. or just me..[/say]")
+		saynn("[say=tavi]Я хочу, чтобы главным был ты. Хочу, чтобы отныне всё решал ты. Выбирай, что будет с нами.. или только со мной..[/say]")
 
-		saynn("Tavi lowers her chin, her ears droop too.")
+		saynn("Тави опускает подбородок, её ушки тоже поникли.")
 
-		saynn("You can't help but to start stroking her head.")
+		saynn("Ты не можешь удержаться и начинаешь гладить её по голове.")
 
-		saynn("[say=pc]You were doing alright.[/say]")
+		saynn("[say=pc]Ты неплохо справлялась.[/say]")
 
-		saynn("[say=tavi]But the captain was always ahead of me..[/say]")
+		saynn("[say=tavi]Но капитан всегда была на шаг впереди меня..[/say]")
 
-		saynn("Tavi slowly looks up until your gazes collide.")
+		saynn("Тави медленно поднимает взгляд, пока ваши глаза не встречаются.")
 
-		saynn("[say=tavi]I trust you.. you know, completely..[/say]")
+		saynn("[say=tavi]Я доверяю тебе.. знаешь, полностью..[/say]")
 
-		saynn("Her words.. make you feel warm inside.")
+		saynn("От её слов внутри разливается приятное тепло.")
 
-		saynn("[say=tavi]If you think we should stop trying to escape.. Then let's just stop. My whole life I've been.. trying to make the world a fair place.. a small, insignificant chunk of it. But I think I was just seeking revenge.[/say]")
+		saynn("[say=tavi]Если ты думаешь, что нам пора перестать пытаться сбежать... Что ж, тогда давай просто остановимся. Всю свою жизнь я пыталась... сделать этот мир справедливым... хотя бы его крошечный, незначительный кусочек. Но, кажется, на самом деле я просто искала мести.[/say]")
 
-		saynn("[say=pc]We got so close last time..[/say]")
+		saynn("[say=pc]В прошлый раз мы были так близки...[/say]")
 
-		saynn("She nods.")
+		saynn("Она кивает.")
 
-		saynn("[say=tavi]We can try again, yeah. The captain would probably not expect it, considering what he did to me. Who knows what will happen if we fail though..[/say]")
+		saynn("[say=tavi]Мы можем попробовать еще раз, да. Капитан, скорее всего, этого не ожидает, учитывая, что он со мной сделал. Но кто знает, что будет, если мы снова провалимся...[/say]")
 
-		saynn("That's fair.")
+		saynn("Справедливо.")
 
-		saynn("[say=pc]I will need to think about it. You can get up, Tavi.[/say]")
+		saynn("[say=pc]Мне нужно об этом подумать. Можешь вставать, Тави.[/say]")
 
-		saynn("She smiles and nuzzles your {pc.masc} thighs.")
+		saynn("Она улыбается и ластится к твоим {pc.masc} бедрам.")
 
-		saynn("[say=tavi]Okay~.[/say]")
+		saynn("[say=tavi]Ладно~.[/say]")
 
-		addButton("Continue", "See what happens next", "start_talking")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talking")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

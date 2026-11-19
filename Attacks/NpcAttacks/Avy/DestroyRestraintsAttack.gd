@@ -7,13 +7,13 @@ func _init():
 	aiScoreMultiplier = 2.0
 	
 func getVisibleName(_context = {}):
-	return "Destroy Restraints"
+	return "Разрушение оков"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
-	var text = "With an overwhelming display of sheer force, {attacker.name} [b]breaks free from every single BDSM restraint[/b] that was confining {attacker.his} body. The chains shatter and the bindings crumble under {attacker.his} unstoppable might, leaving {attacker.name} free and unencumbered."
+	var text = "С сокрушительной мощью, {attacker.name} [b] вырывается из всех БДСМ-оков[/b], сковывавших тело {attacker.his}. Цепи разлетаются вдребезги, а путы рассыпаются под непреклонной силой {attacker.his}, оставляя {attacker.name} на свободе и без всяких преград."
 	text += "\n\n"
 	text += "[say=attacker]"+RNG.pick(["Fuck your shit.", "You think this will stop me? You're so stupid.", "HAHAHA, PATHETIC."])+"[/say]"
 	text += "\n\n"

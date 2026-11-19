@@ -6,13 +6,13 @@ func _init():
 	aiCategory = AICategory.Lust
 	
 func getVisibleName(_context = {}):
-	return "Mommy humiliation"
+	return "Унижение мамочки"
 	
 func getVisibleDesc(_context = {}):
 	return "You shouldn't see this"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
-	var text = "{attacker.name} teasing had an effect on {receiver.name}."
+	var text = "{attacker.name} подразнила {receiver.name}, и это сработало."
 	
 	return {
 		text = text,
@@ -23,7 +23,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	var text = "{attacker.name} straightens her posture and puts {attacker.his} hands under {attacker.his} breasts, emphasizing their size."
+	var text = "{attacker.name} выпрямляет спину и подсовывает руки {attacker.his} под {attacker.his} грудь, подчеркивая её размер."
 	text += "\n\n"
 	text += "[say=attacker]C’mon, quit fighting and let me nurture you with my breasts~. You can call me mommy~[/say]"
 	text += "\n"

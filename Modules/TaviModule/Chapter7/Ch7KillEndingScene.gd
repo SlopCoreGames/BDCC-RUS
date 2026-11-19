@@ -10,879 +10,879 @@ func _run():
 		addCharacter("tavi", ["naked"])
 		addCharacter("captain")
 		playAnimation(StageScene.Duo, "stand", {npc="captain", npcAction="holdpistol", pc="tavi", bodyState={naked=true}})
-		saynn("You just offer Tavi a little smile.. and she understands everything. There is not much left to say anyway..")
+		saynn("Ты лишь слегка улыбаешься Тави... и она всё понимает. Впрочем, говорить больше особо и не о чем...")
 
-		saynn("Tavi turns her head towards the captain.. and establishes direct eye contact. A little mean smile appears between her cheeks as she starts to close distance, bravely stepping forward.. putting all her femininity into each step.. embracing her sexy curves.")
+		saynn("Тави поворачивает голову к капитану... и встречается с ним взглядом. На её лице появляется лукавая, почти дерзкая ухмылка, когда она начинает сокращать дистанцию, смело шагая вперед... вкладывая всю свою женственность в каждый шаг... подчеркивая свои сексуальные изгибы.")
 
-		saynn("The captain sees that and aims his energy gun at her.")
+		saynn("Капитан видит это и наводит на неё свой энергетический пистолет.")
 
-		saynn("[say=captain]Not a step further![/say]")
+		saynn("[say=captain]Ни шагу дальше![/say]")
 
-		saynn("Tavi stops.. seemingly obeying.. but then proceeds her advances.. passing through the fake boundaries.")
+		saynn("Тави останавливается... будто подчиняясь... но затем продолжает наступление, переступая через навязанные границы.")
 
-		saynn("[say=captain]I will kill you if I have to.[/say]")
+		saynn("[say=captain]Если придется, я убью тебя![/say]")
 
-		saynn("[say=tavi]Oh yeah~?[/say]")
+		saynn("[say=tavi]Да неужели~?[/say]")
 
-		saynn("[say=captain]You're not afraid to die?[/say]")
+		saynn("[say=captain]Ты что, смерти не боишься?[/say]")
 
-		saynn("Tavi giggles as she already makes at least a third of the way to him.")
+		saynn("Тави хихикает, уже преодолев добрую треть пути к нему.")
 
-		saynn("[say=tavi]I'm in hell already~.[/say]")
+		saynn("[say=tavi]Да я и так уже в аду~.[/say]")
 
-		saynn("She seductively squeezes her tits with her clawed paws in front of him.. causing the captain to frown.")
+		saynn("Она соблазнительно сжимает грудь когтистыми лапами прямо перед ним... заставляя капитана нахмуриться.")
 
-		saynn("[say=captain]You think I wouldn't kill a slut?[/say]")
+		saynn("[say=captain]Думаешь, я бы не прирезала шлюху?[/say]")
 
-		saynn("[say=tavi]Ooh~. So brave. Stating the obvious. But.. you are a bigger slut here. A slut for power~. The moment you fire, the last barrier will disappear.. And then all bets will be off..[/say]")
+		saynn("[say=tavi]О-о~. Какая смелость. Очевидные вещи. Но... здесь ты куда большая шлюха. Шлюха, жаждущая власти~. В тот миг, когда ты нажмешь на курок, последний барьер рухнет... И тогда всё пойдет прахом...[/say]")
 
-		saynn("Captain shakes his head.. and then raises the hand that holds the projector sphere with Elena in it. His hand is threatening to drop it. You notice the aperture of that sphere opening slightly.. almost like Elena is watching through it..")
+		saynn("Капитан качает головой... а затем поднимает руку, в которой держит проекционную сферу с Еленой внутри. Его рука так и норовит выпустить её. Ты замечаешь, как апертура сферы слегка приоткрывается... будто Елена наблюдает через неё...")
 
-		saynn("[say=captain]You might not care if you die. But you want this gone? What's the big plan, Tavi? You're lost. Which means that you lost.[/say]")
+		saynn("[say=captain]Тебе, может, и плевать на смерть. Но ты хочешь, чтобы всё это исчезло? Какой у тебя грандиозный план, Тави? Ты заблудилась. А значит — ты проиграла.[/say]")
 
-		saynn("Tavi tilts her head.. but doesn't stop advancing.. swaying her hips in the process.")
+		saynn("Тави наклоняет голову... но не прекращает наступать, при этом покачивая бедрами.")
 
-		saynn("[say=tavi]You don't get it..[/say]")
+		saynn("[say=tavi]Ты просто не догоняешь...[/say]")
 
-		saynn("Seeing that nothing works against fearless Tavi.. Captain pulls the trigger.. Tavi closes her eyes. The aperture opens fully..")
+		saynn("Видя, что против бесстрашной Тави ничего не помогает... Капитан жмет на курок... Тави закрывает глаза. Апертура раскрывается полностью...")
 
-		addButton("Continue", "See what happens next", "elena_saves_tavi")
+		addButton("Продолжить", "Смотреть, что будет дальше", "elena_saves_tavi")
 	if(state == "elena_saves_tavi"):
 		playAnimation(StageScene.Duo, "dodge", {npc="captain", npcAction="firepistol", pc="tavi", bodyState={naked=true}})
-		saynn("Moments before the gun fires, the sphere in the captain's hand suddenly lights up, illuminating the whole room with a bright pink flash. A blinding flash that disorients you and messes with the captain's aim, letting Tavi easily dodge the shot.")
+		saynn("За мгновение до выстрела сфера в руке капитана внезапно вспыхивает, заливая всю комнату яркой розовой вспышкой. Ослепительный свет дезориентирует тебя и сбивает прицел капитана, позволяя Тави легко уклониться от пули.")
 
-		saynn("But that flash is also what burns all of that sphere's electronics.. The overloaded matrix burns into ashes.. Captain drops the burning sphere.. letting it smash into a million pieces against the floor..")
+		saynn("Но именно эта вспышка сжигает всю электронику в сфере... Перегруженная матрица превращается в пепел... Капитан роняет пылающую сферу, и та разлетается на миллион осколков о пол...")
 
-		saynn("Tavi's furious eyes flash.. Captain's show.. regret.")
+		saynn("Яростный блеск в глазах Тави... Капитан чувствует... сожаление.")
 
-		addButton("Continue", "See what happens next", "tavi_kills_captain")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_kills_captain")
 	if(state == "tavi_kills_captain"):
 		playAnimation(StageScene.Rekt, "kill", {npc="captain", pc="tavi", bodyState={naked=true}})
-		saynn("Tavi dashes forward, Elena's self-sacrifice allows her to catch up with him.. before suddenly sinking her long sharp claws into his neck, effortlessly tearing through his skin and flesh..")
+		saynn("Тави бросается вперед; самопожертвование Елены позволяет ей настичь его... прежде чем она внезапно вонзает свои длинные острые когти ему в шею, с легкостью разрывая кожу и плоть...")
 
-		saynn("Captain's feet lose the ground as Tavi lifts him high above the floor. She is assuming a powerful stance, her muscles all tensed up.")
+		saynn("Ноги капитана отрываются от земли — Тави высоко задирает его над полом. Она принимает мощную позу, все её мышцы напряжены.")
 
-		saynn("[say=tavi]My dream is seeing you die.[/say]")
+		saynn("[say=tavi]Моя мечта — видеть, как ты умираешь.[/say]")
 
-		saynn("[say=captain]KH-h..[/say]")
+		saynn("[say=captain]Кх-х..[/say]")
 
-		saynn("Tavi's mean eyes inspect the captain's expression in great detail. He is scared.. desperate.. His hand holds onto Tavi's.. unsure if they should try to pull the claws.. or just let them stay there.. lodged into his neck.")
+		saynn("Злобный взгляд Тави пристально изучает выражение лица капитана. Он напуган... он в отчаянии... Его рука сжимает руку Тави... он не знает, стоит ли пытаться вытащить когти... или просто оставить их там... засевшими в его шее.")
 
-		saynn("[say=tavi]Mm-mh~.. I never felt any more alive. Almost as good as fucking~.[/say]")
+		saynn("[say=tavi]Мм-м~.. Я еще никогда не чувствовала себя такой живой. Почти так же охеренно, как во время траха~.[/say]")
 
-		saynn("Some blood begins to stream down her paw.. dripping down onto the carpet. Captain starts gasping for air.. silently..")
+		saynn("По её лапе начинает стекать кровь... капая на ковер. Капитан начинает беззвучно... судорожно хватать ртом воздух...")
 
-		saynn("[say=tavi]Has the cat got your tongue?[/say]")
+		saynn("[say=tavi]Что, язык проглотил?[/say]")
 
-		saynn("Tavi tilts her head slightly and watches the captain suffer..")
+		saynn("Тави слегка наклоняет голову, наблюдая за мучениями капитана...")
 
-		saynn("[say=pc]Tavi, I think we should..[/say]")
+		saynn("[say=pc]Тави, мне кажется, нам стоит..[/say]")
 
-		saynn("She looks at you.. her eyes lusty.")
+		saynn("Она смотрит на тебя.. её глаза полны похоти.")
 
-		saynn("[say=tavi]My bad.. you're right.[/say]")
+		saynn("[say=tavi]Мой косяк.. ты права.[/say]")
 
-		saynn("Tavi returns her gaze back to the captain.. and then tenses her bloody paw hard.. her claws slashing through the dying guy's arteries.. causing a little fountain of pure red blood to spawn..")
+		saynn("Тави вновь переводит взгляд на капитана.. и внезапно напрягает свою окровавленную лапу.. её когти с хрустом рвут артерии умирающего.. вызывая фонтан чистой алой крови..")
 
-		saynn("[say=tavi]This is for Elena, asshole.[/say]")
+		saynn("[say=tavi]Это за Елену, ублюдок.[/say]")
 
-		saynn("Captain is quickly losing strength.. strength to live. There is nothing he can tug at anymore. Nothing he can exploit or abuse. No way to talk himself out of this. He is screwed.. And his last moments.. he is forced to see Tavi and think about what got him killed..")
+		saynn("Капитан стремительно теряет силы.. силы жить. Ему больше не за что зацепиться. Некого эксплуатировать или использовать. Нечем выкрутиться и заболтать смерть. Он в полной заднице.. И в свои последние мгновения.. он вынужден смотреть на Тави и думать о том, что именно привело его к такому финалу..")
 
-		addButton("Continue", "See what happens next", "tavi_drops_captain")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_drops_captain")
 	if(state == "tavi_drops_captain"):
 		playAnimation(StageScene.Rekt, "end", {npc="captain", pc="tavi", bodyState={naked=true}})
 		removeCharacter("captain")
-		saynn("Tavi uses her free paw to rip the little bloody thumbdrive token that the guy is wearing on his neck.. Before letting go of his body, pulling her sharp claws out and letting the blood stream freely.")
+		saynn("Тави свободной лапой вырывает маленький окровавленный токен-флешку, который парень носил на шее.. после чего отпускает его тело, выдергивая острые когти и позволяя крови хлестать вовсю.")
 
-		saynn("Captain collapses.. and loses consciousness as soon as he hits the lowest point of his life. His eyes.. become lifeless.")
+		saynn("Капитан валится на землю.. и теряет сознание, едва достигнув самой низкой точки своей жизни. Его глаза.. становятся безжизненными.")
 
-		saynn("Tavi is towering over his fresh corpse.. She is trying to keep herself composed.. but she is visibly shaking anyway..")
+		saynn("Тави возвышается над его свежим трупом.. Она пытается сохранять самообладание.. но её всё равно заметно трясет..")
 
-		saynn("[say=tavi]Thanks for the torture. We would never get this strong otherwise..[/say]")
+		saynn("[say=tavi]Спасибо за пытки. Иначе нам бы никогда не стать такими сильными..[/say]")
 
-		addButton("Continue", "See what happens next", "talk_about_elena")
+		addButton("Продолжить", "Смотреть, что будет дальше", "talk_about_elena")
 	if(state == "talk_about_elena"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcBodyState={naked=true}})
-		saynn("You carefully approach Tavi.. She looks at her bloody paw.. and then shakes some of the blood off. Her adrenaline begins to wear off.. She starts panting heavily.. So you put a hand on her shoulder.")
+		saynn("Ты осторожно подходишь к Тави... Она смотрит на свою окровавленную лапу... а затем стряхивает часть крови. Адреналин начинает спадать... Она тяжело дышит... И тогда ты кладешь руку ей на плечо.")
 
-		saynn("[say=pc]It's okay.. Everything is over. You did really well.[/say]")
+		saynn("[say=pc]Все хорошо... Все закончилось. Ты отлично справилась.[/say]")
 
-		saynn("She looks at you.. and nods.")
+		saynn("Она смотрит на тебя... и кивает.")
 
-		saynn("[say=tavi]Couldn't have done it without you..[/say]")
+		saynn("[say=tavi]Без тебя бы не справилась...[/say]")
 
-		saynn("Then she looks at the remains of the projector sphere.. Nothing seems to be recoverable.. Just burned metal and glass bits..")
+		saynn("Затем она переводит взгляд на останки проекционной сферы... Кажется, восстанавливать уже нечего... Просто обгоревший металл и осколки стекла...")
 
-		saynn("[say=tavi]And without her..[/say]")
+		saynn("[say=tavi]И без нее...[/say]")
 
-		saynn("A little idea comes into your mind.")
+		saynn("В твоей голове рождается идея.")
 
-		saynn("[say=pc]Don't you have.. a backup? I know that she wouldn't have the same memories but..[/say]")
+		saynn("[say=pc]А у тебя нет... бэкапа? Я знаю, что воспоминания будут не те, но всё же...[/say]")
 
-		saynn("[say=tavi]An old backup.. yeah.. It's in my ship though. A ship that got confiscated by the AlphaCorp.[/say]")
+		saynn("[say=tavi]Старая резервная копия... да... Она на моем корабле. Но корабль конфисковала АльфаКорп.[/say]")
 
-		saynn("You carefully embrace Tavi..")
+		saynn("Ты осторожно обнимаешь Тави...")
 
-		saynn("[say=pc]We will find your ship. I promise you. Right now we gotta find a way to get out of here.[/say]")
+		saynn("[say=pc]Мы найдем твой корабль. Обещаю тебе. Но прямо сейчас нам нужно найти способ выбраться отсюда.[/say]")
 
-		saynn("Tavi inspects the thumbdrive that she got. It seems to have some kind of blue round port on it.. Same one as what your collars have.")
+		saynn("Тави осматривает полученную флешку. Похоже, на ней есть какой-то синий круглый порт... Такой же, как на ваших ошейниках.")
 
-		saynn("[say=tavi]Let's take these off first. We've been his slaves long enough.[/say]")
+		saynn("[say=tavi]Давай сначала снимем это. Мы достаточно долго были его рабынями.[/say]")
 
-		addButton("Collars", "Remove the collars finally", "remove_collars")
+		addButton("Ошейники", "Наконец-то снять ошейники", "remove_collars")
 	if(state == "remove_collars"):
 		playAnimation(StageScene.Hug, "kiss", {npc="tavi", npcBodyState={naked=true}})
-		saynn("Tavi brings the token to your collar.. and a few seconds later there is an audible click as something mechanical inside it unlocks, allowing you to freely take it off..")
+		saynn("Тави подносит токен к твоему ошейнику... и через несколько секунд раздается отчетливый щелчок — что-то механическое внутри разблокируется, позволяя тебе свободно снять его...")
 
-		saynn("Ah.. you almost moan as your neck can finally breathe.. You rub the skin there.. and it feels so good..")
+		saynn("Ах... ты едва не стонешь от облегчения, когда твоя шея наконец-то может дышать... Ты потираешь кожу в этом месте... и это чертовски приятное чувство...")
 
-		saynn("[say=pc]Now let me.[/say]")
+		saynn("[say=pc]Теперь моя очередь.[/say]")
 
-		saynn("You fetch the token from Tavi and press it against her collar.. unlocking it the same way.")
+		saynn("Ты забираешь токен у Тави и прижимаешь его к её ошейнику... он открывается точно так же.")
 
-		saynn("[say=tavi]Ah..[/say]")
+		saynn("[say=tavi]Ах...[/say]")
 
-		saynn("Tavi doesn't hold back and produces a cute little moan. When the second collar hits the floor.. she reaches out to start a deep passionate kiss with you..")
+		saynn("Тави не сдерживается и издает милый, нежный стон. Как только второй ошейник падает на пол... она тянется к тебе, чтобы начать глубокий, страстный поцелуй...")
 
-		saynn("Time seems to have stopped.. For a moment you felt truly free.. Both you and Tavi want more of those moments..")
+		saynn("Время словно остановилось... На мгновение ты почувствовал себя по-настоящему свободным... И ты, и Тави хотите, чтобы такие моменты длились вечно...")
 
-		saynn("[say=tavi]Right. Let's do this~.[/say]")
+		saynn("[say=tavi]Точно. Давай сделаем это~.[/say]")
 
-		addButton("Continue", "See what happens next", "tavi_calls_syndi")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_calls_syndi")
 	if(state == "tavi_calls_syndi"):
 		playAnimation(StageScene.Duo, "holdpistol", {npc="tavi", npcBodyState={naked=true}})
-		saynn("After that kiss, Tavi takes a spot behind the captain's desk and opens his laptop. She uses his token to login and establish an encrypted call..")
+		saynn("После этого поцелуя Тави занимает место за столом капитана и открывает ноутбук. Она использует его токен, чтобы войти в систему и установить зашифрованный канал связи...")
 
-		saynn("Almost instantly, there is an unknown voice coming from the laptop's speakers.")
+		saynn("Почти мгновенно из динамиков ноутбука раздается чей-то неизвестный голос.")
 
-		saynn("[sayMale]Who is this?[/sayMale]")
+		saynn("[sayMale]Кто это?[/sayMale]")
 
-		saynn("[say=tavi]Do you pick me?[/say]")
+		saynn("[say=tavi]Ты выбираешь меня?[/say]")
 
-		saynn("Some time passes.. With nothing being said. The silence is deafening.")
+		saynn("Проходит какое-то время... Никто ничего не говорит. Тишина становится оглушительной.")
 
-		saynn("[sayMale]Yes I do. I will ask again. Who is this?[/sayMale]")
+		saynn("[sayMale]Да. Повторяю вопрос. Кто это?[/sayMale]")
 
-		saynn("Tavi looks at you.. and smiles.")
+		saynn("Тави смотрит на тебя... и улыбается.")
 
-		saynn("[say=tavi]Listen. We need your help. We're inmates in a space station prison. Most.. All of us are from Syndicate. The captain is dead. But we need to get out of here before AlphaCorp gets here.[/say]")
+		saynn("[say=tavi]Слушай. Нам нужна твоя помощь. Мы заключенные в тюрьме на космической станции. Большинство... почти все мы из Синдиката. Капитан мертв. Но нам нужно выбраться отсюда до того, как здесь появится АльфаКорп.[/say]")
 
-		saynn("From Syndicate?.. You raise a brow but Tavi shows you a 'tshh-h' sign.")
+		saynn("Из Синдиката?.. Ты приподнимаешь бровь, но Тави лишь делает жест «тссс».")
 
-		saynn("[sayMale]Huh. We will trust it when we see it. Send the coords.[/sayMale]")
+		saynn("[sayMale]Хм. Поверим, когда увидим. Присылай координаты.[/sayMale]")
 
-		saynn("Tavi quickly punches away at the laptop's keyboard.. quickly looking up the coordinates.")
+		saynn("Тави быстро застучала по клавишам ноутбука, спешно выискивая координаты.")
 
-		saynn("[say=tavi]It's important not to destroy the station or its staff. Do you understand? Everyone needs to be saved. People who don't cooperate should be captured instead.[/say]")
+		saynn("[say=tavi]Важно не уничтожить станцию или её персонал. Понимаешь? Всех нужно спасти. А тех, кто не захочет сотрудничать, лучше просто взять в плен.[/say]")
 
-		saynn("[sayMale]Now you listen. Either you send the coords or get the fuck off the frequency.[/sayMale]")
+		saynn("[sayMale]А теперь слушай сюда. Либо ты шлешь координаты, либо вали нахер с частоты.[/sayMale]")
 
-		saynn("His words.. are not very inspiring. But you don't have much choice anyway. So Tavi carefully tells each number of the space station's coordinates one by one through the world's most expensive telephone.")
+		saynn("Её слова... не особо внушают оптимизм. Но выбора у тебя всё равно немного. И Тави осторожно диктует каждую цифру координат космической станции по одному номеру через самый дорогой телефон в мире.")
 
-		saynn("[sayMale]That's it? Good.[/sayMale]")
+		saynn("[sayMale]Это всё? Хорошо.[/sayMale]")
 
-		saynn("And that's when the call abruptly ends.")
+		saynn("И в этот момент звонок внезапно обрывается.")
 
-		saynn("[say=pc]Are you sure about this, Tavi? They kinda sounded like they weren't gonna save us.[/say]")
+		saynn("[say=pc]Ты уверена в этом, Тави? По голосу было слышно, будто они не собираются нас спасать.[/say]")
 
-		saynn("[say=tavi]They probably won't. They will probably destroy the station.[/say]")
+		saynn("[say=tavi]Скорее всего, так и будет. Скорее всего, они просто разнесут станцию к чертям.[/say]")
 
-		saynn("[say=pc]But.. Then we are screwed?[/say]")
+		saynn("[say=pc]Но... тогда нам крышка?[/say]")
 
-		saynn("[say=tavi]I have an idea~.[/say]")
+		saynn("[say=tavi]У меня есть идея~.[/say]")
 
-		saynn("A little.. object.. grabs your attention. You watch through the window.. and see something moving. Yes, there are moving asteroids there.. But this is something different.. Way smaller.. It's a spaceship. It stops when it notices your space station glued to one of the rocks.. and then suddenly warps away.. creating some kind of blue rift before flying through it. Was that.. a recon ship?")
+		saynn("Какой-то небольшой.. объект.. привлекает ваше внимание. Вы смотрите в иллюминатор.. и видите движение. Да, там движутся астероиды.. Но это нечто иное.. Намного меньше.. Это космический корабль. Он замирает, заметив вашу станцию, прилепленную к одному из камней.. а затем внезапно уходит в варп.. создавая своего рода синий разлом, прежде чем пролететь сквозь него. Был ли это.. разведывательный корабль?")
 
-		saynn("[say=pc]Tavi, they must have confirmed the location.[/say]")
+		saynn("[say=pc]Тави, они наверняка подтвердили координаты.[/say]")
 
-		saynn("[say=tavi]Good~[/say]")
+		saynn("[say=tavi]Хорошо~[/say]")
 
-		saynn("Tavi starts another call and suddenly starts speaking with a very concerned tone.")
+		saynn("Тави совершает еще один вызов и внезапно начинает говорить очень обеспокоенным тоном.")
 
-		saynn("[say=tavi]HEY. I don't have much time! Station's location got compromised! I repeat, Syndicate knows about BDCC![/say]")
+		saynn("[say=tavi]ЭЙ! У меня мало времени! Местоположение станции раскрыто! Повторяю, Синдикат знает о БДКЦ![/say]")
 
-		saynn("A sleepy voice answers.")
+		saynn("Отвечает сонный голос.")
 
-		saynn("[sayMale]..huh? What?.. Who are you? Where is Captain Wright?[/sayMale]")
+		saynn("[sayMale]..а? Что?.. Кто ты? Где капитан Райт?[/sayMale]")
 
-		saynn("Tavi starts pretty much screaming into the laptop.")
+		saynn("Тави практически начинает орать в ноутбук.")
 
-		saynn("[say=tavi]Wake the fuck up, stupid. Station is under Syndicate's attack. We need a whole fleet here, fast![/say]")
+		saynn("[say=tavi]А ну просыпайся, тупица! На станцию напал Синдикат. Нам нужен целый флот, и быстро![/say]")
 
-		saynn("[sayMale]But.. I need confirmation. At least from the captain. State your name and rank.[/sayMale]")
+		saynn("[sayMale]Но... мне нужно подтверждение. Хотя бы от капитана. Назовите имя и звание.[/sayMale]")
 
-		saynn("Suddenly.. more blue rifts open in space.. bigger ones. And then.. Various spaceships of red color begin warping through them.. a lot of ships.. including one that is so huge it immediately collides with one of the asteroids, easily smashing through it, creating a chain reaction that causes other asteroids to bounce off each other.")
+		saynn("Внезапно... в космосе открываются новые синие разломы... еще больше прежних. И затем... сквозь них начинают выходить различные красные космические корабли... их очень много... включая один настолько огромный, что он тут же врезается в один из астероидов, с легкостью разнося его в щепки и вызывая цепную реакцию, от которой остальные астероиды начинают сталкиваться друг с другом.")
 
-		saynn("[say=pc]They're here..[/say]")
+		saynn("[say=pc]Они здесь...[/say]")
 
-		saynn("The big ship aims its giant laser at the station.. And starts charging it..")
+		saynn("Огромный корабль наводит свой гигантский лазер на станцию... и начинает зарядку...")
 
-		saynn("[say=tavi]You are as dumb as I thought. Send a fleet now![/say]")
+		saynn("[say=tavi]Ты тупая, как я и думала. Отправляй флот немедленно![/say]")
 
-		saynn("The giant ship fires its laser canon as soon as it can.. But one of the random flying asteroids saves you, taking the hit and melting into a million little rocks that start hitting the station like an ice hail.")
+		saynn("Гигантский корабль стреляет из лазерной пушки, как только может... Но случайный пролетающий мимо астероид спасает вас: он принимает удар на себя и плавится на миллионы мелких камней, которые начинают обрушиваться на станцию подобно ледяному граду.")
 
-		saynn("Almost immediately, a loud siren activates throughout the whole station and all the lighting becomes red. Everything is shaking..")
+		saynn("Почти мгновенно по всей станции взвывает громкая сирена, и всё освещение становится красным. Всё вокруг содрогается...")
 
-		saynn("[sayOther]WARNING. WARNING. THE STATION'S HULL IS RECEIVING DAMAGE. ENGINEERING STAFF MUST PREVENT DEPRESSURIZATION AT ALL COSTS.[/sayOther]")
+		saynn("[sayOther]ВНИМАНИЕ. ВНИМАНИЕ. ПОВРЕЖДЕН КОРПУС СТАНЦИИ. ИНЖЕНЕРНОМУ СОСТАВУ ПРИЛОЖИТЬ ВСЕ УСИЛИЯ, ЧТОБЫ ПРЕДОТВРАТИТЬ РАЗРЕЖЕНИЕ ВОЗДУХА.[/sayOther]")
 
-		saynn("[say=tavi]Is that enough of a confirmation, fucker?[/say]")
+		saynn("[say=tavi]Этого подтверждения тебе хватит, ублюдок?[/say]")
 
-		saynn("[sayMale]We're sending what we can. Sit tight.[/sayMale]")
+		saynn("[sayMale]Мы отправляем всё, что можем. Сиди смирно.[/sayMale]")
 
-		saynn("Tavi ends the call and looks at you. She looks dead serious. Suddenly, more of these rifts open.. but this time it's the AlphaCorp ships joining in on the fun. Almost instantly, a giant battle begins in the void. It distracts the big ship from targeting the station.. but for how long..")
+		saynn("Тави завершает звонок и смотрит на тебя. Вид у неё предельно серьезный. Внезапно открывается еще больше разломов... но на этот раз в игру вступают корабли АльфаКорпа. Почти мгновенно в пустоте начинается грандиозная битва. Это отвлекает флагман от прицеливания по станции... но надолго ли?..")
 
-		saynn("[say=tavi]They will start boarding us soon. We will only have one shot at this. We must steal one of their ships.[/say]")
+		saynn("[say=tavi]Скоро они начнут абордаж. У нас будет всего один шанс. Мы должны угнать один из их кораблей.[/say]")
 
-		saynn("Sounds like you will need a weapon.. So you grab the captain's energy gun. Looks like it's set to lethal mode already. Good.")
+		saynn("Похоже, тебе понадобится оружие... Ты хватаешь энергетический пистолет капитана. Похоже, он уже переключен в летальный режим. Хорошо.")
 
-		saynn("Many explosions happen outside the station.. explosions that you don't hear. But there are also the ones that you do.. they shake the floor hard. You can already hear the fighting happening throughout the whole station.")
+		saynn("Снаружи станции гремят взрывы... взрывы, которых ты не слышишь. Но есть и те, что долетают до тебя... они заставляют пол неистово дрожать. Ты уже слышишь, как по всей станции разгорается бой.")
 
-		addButton("Follow", "Follow Tavi", "syndi_appears")
+		addButton("Следовать", "Идти за Тави", "syndi_appears")
 	if(state == "syndi_appears"):
 		playAnimation(StageScene.Duo, "holdpistol", {npc="syndiMale", further=true, npcAction=["holdpistol", "res://Inventory/UnriggedModels/EnergyPistol/EnergyPistolRed.tscn"]})
 		aimCameraAndSetLocName("cd_last_intersection")
-		saynn("As you and Tavi step out of the captain's office.. You hear a weird crackling noise.. before a rift opens right in the middle of the corridor, blocking your path and absolutely destroying the carpet underneath.")
+		saynn("Когда вы с Тави выходите из капитанского мостика... ты слышишь странный треск... а затем прямо посреди коридора открывается разлом, преграждая вам путь и в щепки разрывая ковер под собой.")
 
-		saynn("Seconds later, someone walks through it.. Someone very armored. Tavi whispers to you.")
+		saynn("Секунды спустя сквозь него кто-то выходит... Кто-то в тяжелой броне. Тави шепчет тебе на ухо:")
 
-		saynn("[say=tavi]That's our chance..[/say]")
+		saynn("[say=tavi]Это наш шанс...[/say]")
 
-		saynn("Oh. As he turns around, you see his helmet illuminating the corridor with green lighting coming from its visor. When he spots you and Tavi, he immediately reaches for his blaster..")
+		saynn("Ох. Когда он оборачивается, ты видишь, как его шлем заливает коридор зеленым светом из визора. Заметив тебя и Тави, он тут же тянется к бластеру...")
 
-		addButton("Shoot", "Shoot to kill", "pc_kills")
+		addButton("Стреляй", "Стрелять на поражение", "pc_kills")
 	if(state == "pc_kills"):
 		playAnimation(StageScene.Solo, "firepistol")
-		saynn("Swiftly, you aim your energy gun and instinctively pull the trigger.. A bright flash.. followed by a painful scream.. and an armored body hitting the floor.")
+		saynn("Ты молниеносно вскидываешь энергетическую пушку и инстинктивно жмешь на курок... Яркая вспышка... за ней следует мучительный крик... и глухой удар бронированного тела о пол.")
 
-		saynn("Looks like you just took a life. It had to happen at some point, didn't it..")
+		saynn("Похоже, ты только что лишил кого-то жизни. Рано или поздно это должно было случиться, верно?..")
 
-		saynn("Tavi runs up to the fallen Syndicate agent.. and grabs his gun before making sure he is dead.. by shooting him again point-blank.")
+		saynn("Тави подбегает к павшему агенту Синдиката... хватает его пушку и, убедившись, что тот мертв, всаживает в него еще одну пулю в упор.")
 
-		saynn("[say=tavi]Wait, what's this?[/say]")
+		saynn("[say=tavi]Погоди, а это еще что?[/say]")
 
-		saynn("Before moving on, Tavi crouches before him and fetches something from his wrist. A watch of sorts. Its screen displays a big 'Return' button with an icon of a portal.")
+		saynn("Прежде чем идти дальше, Тави приседает перед ним и снимает с его запястья какой-то прибор. Похоже на часы. На экране горит большая кнопка «Возврат» с иконкой портала.")
 
-		saynn("[say=tavi]Is it what I think it is?[/say]")
+		saynn("[say=tavi]Неужели это то, о чем я думаю?[/say]")
 
-		saynn("[say=pc]It must be how they are boarding us.[/say]")
+		saynn("[say=pc]Должно быть, именно так они и десантируются к нам.[/say]")
 
-		saynn("More explosions happen all around you. Screams.. gunfire.. You know that nothing good is happening in the cellblock. But you don't really care either. There are bigger problems..")
+		saynn("Вокруг гремят взрывы. Крики... стрельба... Ты понимаешь, что в блоке камер творится чертовщина. Но тебе, честно говоря, почти плевать. Есть проблемы и посерьезнее...")
 
-		saynn("Soon, another one of those rifts opens.. followed by a full squad of armored Syndicate agents jumping out of it.")
+		saynn("Вскоре открывается очередной разлом, и из него выпрыгивает целый отряд бронированных агентов Синдиката.")
 
-		saynn("They immediately start shooting at you, causing you and Tavi to hide behind one of the pillars. You stick just your hand out and pull the trigger a few times.. Until you hear some collapsing far away. Your kill counter is rising a little too fast for your liking..")
+		saynn("Они тут же открывают по тебе огонь, заставляя тебя и Тави спрятаться за одной из колонн. Ты лишь высовываешь руку и несколько раз нажимаешь на курок... пока издалека не доносится грохот обрушения. Счетчик убийств растет слишком быстро, даже слишком для твоего вкуса...")
 
-		saynn("[say=pc]We won't be able to kill a whole army.[/say]")
+		saynn("[say=pc]Нам не под силу перебить целую армию.[/say]")
 
-		saynn("[say=tavi]Then.. Let's try to escape.[/say]")
+		saynn("[say=tavi]Тогда... давай попробуем сбежать.[/say]")
 
-		saynn("Tavi presses the button on the Syndicate watch.. And seconds later a new bluespace rift opens right in front of you. Its positioning was a little off.. which meant it ate a huge chunk of the pillar that you were hiding behind.. leaving you with no cover.")
+		saynn("Тави нажимает кнопку на часах Синдиката... и спустя секунды прямо перед вами открывается новый разлом блюспейса. Он открылся не совсем удачно... а это значит, что он откусил огромный кусок колонны, за которой вы прятались... оставив вас без укрытия.")
 
-		saynn("[say=tavi]JUMP![/say]")
+		saynn("[say=tavi]ПРЫГАЙ![/say]")
 
-		saynn("Tavi jumps into the rift first.. Disappearing in it..")
+		saynn("Тави прыгает в разлом первой... и исчезает в нем...")
 
-		saynn("Lasers are flying all around you.. Either it's a certain death.. or a not so certain one..")
+		saynn("Вокруг свистят лазерные лучи... Это либо верная смерть, либо смерть не такая уж и верная...")
 
-		addButton("Rift", "Jump into it", "jump_into_syndicate_ship")
+		addButton("Разлом", "Прыгнуть в него", "jump_into_syndicate_ship")
 	if(state == "jump_into_syndicate_ship"):
 		aimCameraAndSetLocName("cd_syndiship")
 		playAnimation(StageScene.Duo, "firepistol", {npc="syndiFemale", npcAction="defeat"})
-		saynn("You jump through the rift a second before it closes.. ending up somewhere else..")
+		saynn("Ты прыгаешь в разлом за секунду до того, как он схлопывается... и оказываешься где-то в другом месте...")
 
-		saynn("Red colors everywhere.. A distinct S symbol.. Yeah, it's a Syndicate ship. You and Tavi seem to be in some kind of teleporter room. In the middle of it is a rift generator attached to a computer.")
+		saynn("Повсюду красный цвет... Характерный символ «S»... Да, это корабль Синдиката. Похоже, вы с Тави оказались в каком-то зале телепортации. Посреди него стоит генератор разлома, подключенный к компьютеру.")
 
-		saynn("[say=tavi]Wow. Makes sense. The watch can't teleport on its own. It just talks with this huge ass machine.[/say]")
+		saynn("[say=tavi]Ого. Логично. Часы сами по себе телепортироваться не могут. Они просто общаются с этой огромной хреновиной.[/say]")
 
-		saynn("You must have been heard because seconds later two Syndicate agents walk in from another compartment. They certainly didn't expect to see you..")
+		saynn("Должно быть, вас услышали, потому что через пару секунд из соседнего отсека входят двое агентов Синдиката. Они явно не ожидали вас увидеть...")
 
-		saynn("Tavi kills one.. And you snipe the other.. adding another kill to your collection.")
+		saynn("Тави убивает одного... А ты снайперским выстрелом убираешь второго... Еще один труп в твою коллекцию.")
 
-		saynn("[say=tavi]Let's see what kind of ship this is.[/say]")
+		saynn("[say=tavi]Посмотрим, что это за корабль.[/say]")
 
-		saynn("You got so used to the same prison interiors.. That this looks genuinely exciting..")
+		saynn("Ты так привык к однообразным интерьерам тюрьмы... что это место кажется по-настоящему захватывающим...")
 
-		addButton("Cockpit", "Explore the ship", "cockpick_tavi")
+		addButton("Кабина пилота", "Исследовать корабль", "cockpick_tavi")
 	if(state == "cockpick_tavi"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcAction="sit", npcBodyState={naked=true}})
-		saynn("The ship seems to be some kind of.. troops transporter. There are only 3 main rooms. A teleporter, a cockpit and a room with benches and empty shelves for equipment.")
+		saynn("Похоже, этот корабль — своего рода транспорт для десанта. Здесь всего три основных помещения: телепорт, кабина пилота и комната со скамьями и пустыми полками для снаряжения.")
 
-		saynn("You two enter the cockpit and.. wow.. you see the damaged space station with two giant fleets fighting around it. Syndicate ships are trying their best to destroy it while AlphaCorp ones are protecting it. You can't hear a single explosion through the vacuum of space.. But the view is truly incredible.")
+		saynn("Вы входите в кабину пилотов и... вау... перед вами поврежденная космическая станция, вокруг которой сражаются два гигантских флота. Корабли Синдиката изо всех сил пытаются ее уничтожить, в то время как корабли АльфаКорп защищают её. В вакууме космоса не слышно ни единого взрыва... но вид просто невероятный.")
 
-		saynn("[say=tavi]We got them riled up, huh? Serves them right.[/say]")
+		saynn("[say=tavi]Ну что, мы их разозлили, а? Так им и надо.[/say]")
 
-		saynn("Tavi sits in the pilot's seat and starts inspecting the controls.")
+		saynn("Тави садится в кресло пилота и начинает осматривать панель управления.")
 
-		saynn("[say=pc]Think you can fly it?[/say]")
+		saynn("[say=pc]Думаешь, сможешь вырулить?[/say]")
 
-		saynn("[say=tavi]I will have to. Not the first time for me at least.[/say]")
+		saynn("[say=tavi]Придется. Для меня это уже не в первый раз.[/say]")
 
-		saynn("She starts pressing random buttons and interacting with switches. All the while you observe the surroundings, hoping that the big ships won't take notice of your small one.")
+		saynn("Она начинает хаотично нажимать на кнопки и щелкать переключателями. Всё это время ты следишь за окружением, надеясь, что огромные корабли не заметят вашу малютку.")
 
-		saynn("When Tavi presses a button.. the ship's engines finally engage.. Allowing Tavi to start moving the ship.")
+		saynn("Когда Тави нажимает на кнопку... двигатели корабля наконец оживают... позволяя ей начать движение.")
 
-		saynn("[say=tavi]Now let's get the fuck out of here.[/say]")
+		saynn("[say=tavi]А теперь — съебаться отсюда нахер.[/say]")
 
-		saynn("You're so close.. You can feel it. Tavi starts the process of warping..")
+		saynn("Ты уже так близко... Ты почти чувствуешь это. Тави запускает процесс варп-прыжка...")
 
-		saynn("[say=tavi]Fuck, the rift generator needs to charge. The big one.[/say]")
+		saynn("[say=tavi]Блять, генератору разлома нужно время на зарядку. Большому генератору.[/say]")
 
-		saynn("Of course it does.")
+		saynn("Ну конечно.")
 
-		saynn("[say=pc]How long?[/say]")
+		saynn("[say=pc]Как долго?[/say]")
 
-		saynn("[say=tavi]About two minutes.[/say]")
+		saynn("[say=tavi]Минут две.[/say]")
 
-		saynn("[say=pc]We should be fine.[/say]")
+		saynn("[say=pc]Все должно быть в порядке.[/say]")
 
-		saynn("The ship hums as it slowly routes all its energy to the rift generator.")
+		saynn("Корабль гудит, медленно перенаправляя всю энергию на генератор разлома.")
 
-		saynn("At the same time.. You begin to notice something. Syndicate's main ship.. A giant battle cruiser one.. Starts to charge its big cannon again.. aiming it at the station.")
+		saynn("В то же самое время... Ты начинаешь что-то замечать. Главный корабль Синдиката... огромный боевой крейсер... снова заряжает свою главную пушку, наводясь прямо на станцию.")
 
-		saynn("[say=pc]You see that?[/say]")
+		saynn("[say=pc]Видишь?[/say]")
 
-		saynn("[say=tavi]I do. And I don't care. Everyone on that station might as well die..[/say]")
+		saynn("[say=tavi]Вижу. И мне плевать. Пусть все на этой станции сдохнут...[/say]")
 
-		saynn("[say=pc]Are you.. sure? There are some good people there.[/say]")
+		saynn("[say=pc]Ты... уверена? Там ведь есть хорошие люди.[/say]")
 
-		saynn("You two silently watch as the big ship prepares to fire. AlphaCorp's chances aren't looking too good in this battle.. They're clearly losing it, their ships get destroyed left and right.")
+		saynn("Вы вдвоем молча наблюдаете за тем, как огромный корабль готовится к выстрелу. Шансы АльфаКорп в этой битве выглядят не очень... Они явно проигрывают, их корабли уничтожают один за другим.")
 
-		saynn("The ship's hum becomes louder and louder.. Less than a minute left before you can escape this hell..")
+		saynn("Гул корабля становится всё громче и громче... Осталось меньше минуты до того, как вы сможете сбежать из этого ада...")
 
-		saynn("Tavi growls.. and then sighs.")
+		saynn("Тави рычит... а затем тяжело вздыхает.")
 
-		saynn("[say=tavi]Fine.. I already destroyed enough space stations for one life.. But how are we gonna save it?[/say]")
+		saynn("[say=tavi]Ладно.. За одну жизнь я уже успела уничтожить немало космических станций.. Но как нам спасти её?[/say]")
 
-		saynn("Gotta think quick.. You look around.. This ship doesn't have any weapons on it.. But it does have two rift generators..")
+		saynn("Надо соображать быстрее.. Ты оглядываешься.. На этом корабле нет никакого оружия.. Но зато есть два рифтовых генератора..")
 
-		saynn("[say=pc]What if we.. Ram it.. At the right time.[/say]")
+		saynn("[say=pc]А что, если мы.. протараним их.. В самый подходящий момент?[/say]")
 
-		saynn("[say=tavi]..and die? I'm not ready to be a hero.[/say]")
+		saynn("[say=tavi]..и сдохнем? Я ещё не готова становиться героем.[/say]")
 
-		saynn("[say=pc]We don't have to be ones..[/say]")
+		saynn("[say=pc]Нам и не обязательно им быть..[/say]")
 
-		saynn("Tavi raises a brow.. and then smiles.")
+		saynn("Тави приподнимает бровь.. а затем улыбается.")
 
-		saynn("[say=tavi]Sounds crazy enough. Let's fucking do this.[/say]")
+		saynn("[say=tavi]Звучит достаточно безумно. Давай сделаем это, блядь![/say]")
 
-		saynn("Tavi grabs the ship's controls.. and starts flying it directly into the main Syndicate battleship. All the while the rift generator is still charging..")
+		saynn("Тави хватает управление кораблем.. и начинает лететь прямо на флагман Синдиката. При этом рифтовый генератор всё ещё заряжается..")
 
-		addButton("Teleporter", "Go back to the teleporter room", "back_to_teleporter")
+		addButton("Телепорт", "Вернуться в зал телепорта", "back_to_teleporter")
 	if(state == "back_to_teleporter"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcBodyState={naked=true}})
-		saynn("You rush back to the room with the teleporter. Tavi starts hacking away at the computer that is connected to the big machine.")
+		saynn("Ты спешишь обратно в комнату с телепортом. Тави вовсю долбит по клавишам компьютера, подключенного к огромной машине.")
 
-		saynn("[say=tavi]But I'm not returning back to the station. Fuck that.[/say]")
+		saynn("[say=tavi]Но я не собираюсь возвращаться на станцию. К черту всё![/say]")
 
-		saynn("The ship's autopilot starts beeping angrily from another compartment. Twenty seconds before the collision..")
+		saynn("Автопилот корабля начинает гневно пищать в соседнем отсеке. Двадцать секунд до столкновения...")
 
-		saynn("[say=pc]We don't really have time to choose.[/say]")
+		saynn("[say=pc]У нас особо нет времени на выбор.[/say]")
 
-		saynn("[say=tavi]Giving up on your dreams already~?[/say]")
+		saynn("[say=tavi]Неужели ты уже сдаешься и отказываешься от своих мечтаний~?[/say]")
 
-		saynn("She masterfully navigates through all the menus.. copying a bluespace frequency of some other Syndicate ship nearby.. before plugging it in as coordinates..")
+		saynn("Она мастерски пробирается сквозь все меню... копируя частоту блюспейса какого-то соседнего корабля Синдиката... а затем вбивает её как координаты...")
 
-		saynn("[say=pc]Are you sure that will work?[/say]")
+		saynn("[say=pc]Ты уверена, что это сработает?[/say]")
 
-		saynn("[say=tavi]Frequency is the position in bluespace.. I think.. I hope.[/say]")
+		saynn("[say=tavi]Частота — это и есть положение в блюспейсе... вроде того... надеюсь.[/say]")
 
-		saynn("Ten.. Nine.. Eight.. Seven.. Six..")
+		saynn("Десять.. Девять.. Восемь.. Семь.. Шесть..")
 
-		saynn("[say=tavi]Be ready.[/say]")
+		saynn("[say=tavi]Приготовься.[/say]")
 
-		saynn("[say=pc]Yes, I don't care.[/say]")
+		saynn("[say=pc]Да мне плевать.[/say]")
 
-		addButton("Rift", "See what's behind", "tp_to_other_ship")
+		addButton("Разлом", "Посмотреть, что там внутри", "tp_to_other_ship")
 	if(state == "tp_to_other_ship"):
 		playAnimation(StageScene.Duo, "firepistol", {npc="syndiMale", npcAction="defeat"})
-		saynn("As soon as the small teleporter opens a rift in bluespace.. you instantly jump inside.. And instantly shoot everyone that you see, effortlessly taking the lives of three unsuspecting agents.")
+		saynn("Как только маленький телепорт разрывает синее пространство... ты мгновенно прыгаешь внутрь... и тут же расстреливаешь всех, кого видишь, без малейших усилий лишая жизни трех ничего не подозревающих агентов.")
 
-		saynn("Tavi joins you seconds after.")
+		saynn("Тави присоединяется к тебе спустя несколько секунд.")
 
-		saynn("[say=tavi]Wow.[/say]")
+		saynn("[say=tavi]Ого...[/say]")
 
-		saynn("At least you're not in the cold space. You can breathe. This ship looks similar to the last one, also having its own teleporter.")
+		saynn("По крайней мере, ты не в ледяном вакууме. Здесь можно дышать. Этот корабль похож на предыдущий, у него тоже есть свой телепорт.")
 
-		addButton("Continue", "See what happens next", "big_boom")
+		addButton("Продолжить", "Смотреть, что будет дальше", "big_boom")
 	if(state == "big_boom"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcBodyState={naked=true}})
-		saynn("You rush into this ship's cockpit.. And see your old ship smashing into the armor of the big Syndicate battleship, barely leaving a dent in it.")
+		saynn("Ты влетаешь в рубку этого корабля... и видишь, как твой старый корабль врезается в броню огромного линкора Синдиката, едва оставив на ней вмятину.")
 
-		saynn("[say=tavi]Uh..[/say]")
+		saynn("[say=tavi]Ух..[/say]")
 
-		saynn("And then, a second later, a huge bluespace rift suddenly spawns right in the middle of it, tearing the frame in half..")
+		saynn("А затем, секунду спустя, прямо посреди него внезапно возникает гигантский разрыв синего пространства, разрывая корпус пополам...")
 
-		saynn("[say=tavi]Oh there we go.[/say]")
+		saynn("[say=tavi]Ну вот, поехали.[/say]")
 
-		saynn("A giant blue explosion covers the whole battleship.. destroying it instantly.. It's like a new sun was born for a few seconds.. illuminating the whole battlefield.. including the bathered space station.. that got caught in between all of this crazy fighting.. but is still somehow in one piece.")
+		saynn("Гигантский синий взрыв накрывает весь линкор... мгновенно уничтожая его... На несколько секунд это выглядит так, будто родилось новое солнце... освещающее всё поле боя... включая избитую космическую станцию, которая застряла в самом центре этой безумной бойни, но каким-то чудом уцелела.")
 
-		saynn("And then.. some time later.. the rift closes, taking a big part of the ship with it.. leaving empty space where there used to be metal.")
+		saynn("А затем... спустя некоторое время... разрыв схлопывается, унося с собой огромную часть корабля... оставляя лишь пустоту там, где только что был металл.")
 
-		saynn("[say=tavi]Fuck me.. Did we do that?[/say]")
+		saynn("[say=tavi]Твою мать... Мы это сделали?[/say]")
 
-		saynn("[say=pc]I think we did..[/say]")
+		saynn("[say=pc]Думаю, да...[/say]")
 
-		saynn("You look at each other.. Tavi's gaze is glued to your lips.. She is so horny.. in more ways than one. But then something attacks your ship, rocking it.")
+		saynn("Вы смотрите друг на друга... Взгляд Тави прикован к твоим губам... Она чертовски возбуждена... причем в самом прямом смысле. Но вдруг что-то атакует ваш корабль, заставляя его содрогнуться.")
 
-		saynn("[say=tavi]Right.. We gotta get out of here.[/say]")
+		saynn("[say=tavi]Точно... Надо убираться отсюда.[/say]")
 
-		saynn("Tavi sits into the pilot's seat again and starts flying the Syndicate ship away, maneuvering it between all the asteroids. Some AlphaCorp ships try to chase you down.. but after charging the bluespace teleporter, you just fly through a rift that takes you to some random point in space..")
+		saynn("Тави снова садится в кресло пилота и начинает уводить корабль Синдиката, маневрируя между астероидами. Несколько кораблей АльфаКорп пытаются пуститься в погоню... но после зарядки блюспейс-телепорта вы просто пролетаете сквозь разлом, который выбрасывает вас в случайную точку космоса...")
 
-		addButton("Continue", "See what happens next", "finally_freedom")
+		addButton("Продолжить", "Смотреть, что будет дальше", "finally_freedom")
 	if(state == "finally_freedom"):
 		playAnimation(StageScene.Hug, "kiss", {npc="tavi", npcBodyState={naked=true}})
-		saynn("You look through the cockpit's glass.. at the empty space. Around you is.. nothing. No rocks.. No space stations.. No other ships.. Just vast empty space.")
+		saynn("Ты смотришь сквозь стекло кабины... в пустоту. Вокруг тебя... ничего. Ни камней... ни космических станций... ни других кораблей... Только бескрайний пустой космос.")
 
-		saynn("[say=tavi]We're free. Hah..[/say]")
+		saynn("[say=tavi]Мы свободны. Хах...[/say]")
 
-		saynn("You both just realize how much you've been panting. The sounds of your hearts beating were hidden behind some kind of white noise.. But now there is nothing.. Freedom..")
+		saynn("Вы оба только сейчас осознаете, как тяжело дышали. Стук ваших сердец скрывался за каким-то белым шумом... Но теперь — тишина... Свобода...")
 
-		saynn("[say=pc]That was.. crazy.[/say]")
+		saynn("[say=pc]Это было... безумие.[/say]")
 
-		saynn("[say=tavi]Was it~? I'd do that again if I could.[/say]")
+		saynn("[say=tavi]Правда~? Я бы повторила это снова, если бы смогла.[/say]")
 
-		saynn("You roll your eyes. Tavi hugs you and kisses you on the lips. She is still completely naked.. allowing you to feel her hard nips poking your chest.")
+		saynn("Ты закатываешь глаза. Тави обнимает тебя и целует в губы. Она всё ещё абсолютно голая... ты чувствуешь, как её твердые соски упираются тебе в грудь.")
 
-		saynn("[say=pc]You're excited, I can feel that.[/say]")
+		saynn("[say=pc]Ты возбужден, я это чувствую.[/say]")
 
-		saynn("[say=tavi]Let's fuck~. Right the fuck now~.[/say]")
+		saynn("[say=tavi]Давай трахнемся~. Прямо здесь и сейчас~.[/say]")
 
-		saynn("And so.. You two start fucking right on that pilot chair.")
+		saynn("И вот... вы двое начинаете трахаться прямо на этом пилотском кресле.")
 
-		saynn("You're finally free.. Free to turn your dreams into reality.")
+		saynn("Ты наконец-то свободен... Свободен превратить свои мечты в реальность.")
 
-		saynn("[b]THE END.[/b]")
+		saynn("[b]КОНЕЦ.[/b]")
 
-		saynn("[b]Violent Escape Ending.[/b]")
+		saynn("[b]Концовка: Кровавый побег.[/b]")
 
 		tookRahi = getFlag("RahiModule.rahiMile8Happened")
 		if (tookRahi):
-			addButton("Continue..", "See what happens to everyone..", "find_rahi")
+			addButton("Продолжить..", "Посмотреть, что будет со всеми..", "find_rahi")
 		else:
-			addButton("Continue..", "See what happens to everyone..", "start_epilogues")
+			addButton("Продолжить..", "Посмотреть, что будет со всеми..", "start_epilogues")
 	if(state == "find_rahi"):
 		playAnimation(StageScene.Solo, "holdpistol")
-		saynn("After a passionate fuck, you finally start flying somewhere. Tavi is behind the controls.. while you get to watch.")
+		saynn("После страстного траха вы наконец-то отправляетесь в полет. Тави сидит за штурвалом... а вам остается только наблюдать.")
 
-		saynn("Suddenly you hear a noise in the teleporter room.. Yes, the same noise of a rift opening.")
+		saynn("Внезапно в телепортационной комнате раздается шум... Да, тот самый звук открывающегося разлома.")
 
-		saynn("[say=tavi]Fuck, did they track us already?[/say]")
+		saynn("[say=tavi]Блядь, неужели они уже выследили нас?[/say]")
 
-		saynn("[say=pc]I will go check it out.[/say]")
+		saynn("[say=pc]Я пойду проверю.[/say]")
 
-		saynn("You hold the energy gun and start carefully stepping towards the teleporter room.. You look from behind the corner.. And see nothing. Just the old dead bodies of the Syndicate agents that you are yet to dispose of.")
+		saynn("Сжимая в руках энергетическую пушку, вы начинаете осторожно пробираться к телепортационной... Вы выглядываете из-за угла... и ничего не видите. Только старые трупы агентов Синдиката, которые вам еще только предстоит утилизировать.")
 
-		saynn("Still, you stay cautious as you start searching the room for anything unusual.. until something fluffy tickles your foot as you walk past one of the benches!")
+		saynn("Тем не менее, вы сохраняете бдительность, обыскивая комнату в поисках чего-то необычного... пока что-то пушистое не щекочет вам ногу, когда вы проходите мимо одной из скамей!")
 
-		addButton("Aim!", "Whatever it is.. take aim", "actual_rahi")
+		addButton("Целься!", "Что бы это ни было... прицелься", "actual_rahi")
 	if(state == "actual_rahi"):
 		addCharacter("rahi")
 		playAnimation(StageScene.Duo, "stand", {npc="rahi"})
-		saynn("You aim at the bench.. and see a brown fluffy tail sticking from underneath it. For some reason that tail feels very familiar.")
+		saynn("Вы наводите ствол на скамью... и видите коричневый пушистый хвост, торчащий из-под нее. Почему-то этот хвост кажется вам очень знакомым.")
 
-		saynn("[say=pc]Kitty? Is that you?[/say]")
+		saynn("[say=pc]Кошечка? Это ты?[/say]")
 
-		saynn("The tail instantly starts shaking.")
+		saynn("Хвост мгновенно начинает дрожать.")
 
-		saynn("[say=rahi]D-don't kill me.. please..[/say]")
+		saynn("[say=rahi]Н-не убивай меня... пожалуйста...[/say]")
 
-		saynn("[say=pc]It's me, kitty. Get out of there. I won't hurt you.[/say]")
+		saynn("[say=pc]Это же я, киса. Вылезай оттуда. Я не причиню тебе боли.[/say]")
 
 		var rahiChildAmount = GM.CS.getChildrenAmountOf("rahi")
 		if (rahiChildAmount > 1):
-			saynn("You help Rahi get from under the bench. She is still wearing her inmate uniform and a collar around her neck. But.. you also notice her holding all her kittens and other cubs in her paws.. Yes, all "+str(rahiChildAmount)+" of them.. All of them are with her.. Somehow..")
+			saynn("Ты помогаешь Рахи выбраться из-под скамьи. На ней всё ещё тюремная роба и ошейник на шее. Но... ты также замечаешь, что она прижимает к себе всех своих котят и других детёнышей... Да, всех "+str(rahiChildAmount)+" всех до единого... Все они с ней... Каким-то образом...")
 
 		elif (rahiChildAmount == 1):
-			saynn("You help Rahi get from under the bench. She is still wearing her inmate uniform and a collar around her neck. But.. you also notice her protecting her only cub in her paws..")
+			saynn("Ты помогаешь Рахи выбраться из-под скамьи. На ней всё ещё тюремная роба и ошейник на шее. Но... ты также замечаешь, что она прижимает к себе своего единственного детёныша...")
 
 		else:
-			saynn("You help Rahi get from under the bench. She is still wearing her inmate uniform and a collar around her neck.")
+			saynn("Ты помогаешь Рахи выбраться из-под скамьи. На ней всё ещё тюремная роба и ошейник на шее.")
 
-		saynn("[say=pc]How did you..[/say]")
+		saynn("[say=pc]Как ты..[/say]")
 
-		saynn("[say=rahi]I found a watch..[/say]")
+		saynn("[say=rahi]Я нашла часы...[/say]")
 
-		saynn("Rahi shows you her wrist that has the Syndicate watch on it. Same one that you and Tavi used.")
+		saynn("Рахи показывает тебе запястье, на котором надеты часы Синдиката. Те самые, что были у тебя и Тави.")
 
-		saynn("[say=pc]Wow. What are the chances?[/say]")
+		saynn("[say=pc]Ого. Каковы шансы?[/say]")
 
-		saynn("[say=rahi]I found a few.. And was peeking just my head in.. Until I found a room with no bad people in it.. No alive bad people..[/say]")
+		saynn("[say=rahi]Я нашла парочку... И заглядывала только одним глазком... Пока не наткнулась на комнату, где нет плохих людей... То есть, живых плохих людей...[/say]")
 
-		saynn("Smart approach. Rahi hugs you.. tightly.. just when Tavi walks in.")
+		saynn("Умный подход. Рахи крепко обнимает тебя... как раз в тот момент, когда входит Тави.")
 
-		saynn("[say=tavi]Aw. Adorable.[/say]")
+		saynn("[say=tavi]Оу. Прелесть какая.[/say]")
 
-		saynn("The brown kitty blushes deeply when she sees a naked horny feline.")
+		saynn("Коричневая кошечка густо краснеет, когда видит обнаженную похотливую кошку.")
 
-		saynn("[say=rahi]Uh..[/say]")
+		saynn("[say=rahi]Э-э...[/say]")
 
-		saynn("[say=tavi]It's okay, I only bite bad kitties~.[/say]")
+		saynn("[say=tavi]Всё хорошо, я кусаю только плохих кошечек~.[/say]")
 
-		saynn("Rahi nods softly.")
+		saynn("Рахи тихонько кивает.")
 
-		saynn("[say=rahi]Where are we anyway..[/say]")
+		saynn("[say=rahi]Кстати, а где мы вообще?..[/say]")
 
-		saynn("Tavi puts on a cunning smile. A smile that tells Rahi that she will stay with them no matter what.")
+		saynn("Тави хитро улыбается. Улыбкой, которая говорит Рахи, что она останется с ними, несмотря ни на что.")
 
-		addButton("Continue..", "See what happens to everyone else..", "start_epilogues")
+		addButton("Продолжить..", "Посмотри, что случилось со всеми остальными...", "start_epilogues")
 	if(state == "start_epilogues"):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("And so.. the "+str("three" if tookRahi else "two")+" brave inmates found a way to escape from one of the most secure prisons in the entire galaxy.. while doing so with incredible style.")
+		saynn("И вот так... "+str("three" if tookRahi else "two")+"отважные заключенные нашли способ сбежать из одной из самых защищенных тюрем во всей галактике... причем сделали это с невероятным шиком.")
 
-		saynn("Captain Wright, driven by his selfish goals, thought he could keep a tight leash on everyone around him. But, turns out, he wasn't ready when that leash suddenly began wrapping around his neck and choking him.")
+		saynn("Капитан Райт, ведомый лишь собственными эгоистичными целями, думал, что сможет держать всех вокруг на коротком поводке. Но оказалось, что он был не готов к тому моменту, когда этот поводок внезапно затянулся на его собственной шее, перекрывая дыхание.")
 
-		saynn("His creation, BDCC, managed to survive through one of the biggest fleet fights between AlphaCorp and Syndicate. It was close.. Too close.. But the balance of power tipped to the right side when Syndicate's biggest battleship got miraculously destroyed by an unknown force.")
+		saynn("Его детище, тюрьма BDCC, сумело пережить один из крупнейших флотильных сражений между АльфаКорп и Синдикатом. Было близко... слишком близко... Но чаша весов склонилась в нужную сторону, когда крупнейший линкор Синдиката был чудесным образом уничтожен неведомой силой.")
 
-		saynn("The prison survived the battle.. but the captain's office wasn't so lucky. His laptop was never recovered.. His body.. never found. His lies.. never uncovered. Only two people in the world know his current status. For everyone else.. Captain Wright is Missing In Action.. Stuck between being a brave hero who saved his station by sacrificing his own life and a biggest villain who sold the location of his station to Syndicate before promptly escaping with the credits.. both sides blissfully unaware that none of them are right..")
+		saynn("Тюрьма пережила битву... но вот кабинету капитана так повезло не было. Его ноутбук так и не нашли... Его тело... тоже. Его ложь... так и не была раскрыта. Лишь два человека в мире знают его истинный статус. Для всех остальных капитан Райт — пропавший без вести... Застрявший где-то между образом отважного героя, спасшего станцию ценой собственной жизни, и величайшего злодея, который продал координаты базы Синдикату, а затем поспешно свалил с наживой... Причем обе стороны пребывают в блаженном неведении о том, что правда не на стороне ни одной из них...")
 
-		saynn("BDCC had to be closed down because its position was compromised. Broken Dreams Correctional Center became no more. All of the inmates and surviving staff got moved to other prisons.. Prisons that don't try to cultivate the next best spies for its captains by letting inmates and staff breed each other. Normal.. prisons.. Boring ones where staff have all the power by default.")
+		saynn("BDCC пришлось закрыть, так как её местоположение было раскрыто. Исправительному центру «Разбитые мечты» пришел конец. Все заключенные и выживший персонал были переведены в другие тюрьмы... В тюрьмы, которые не пытаются взращивать лучших шпионов для своих капитанов, позволяя заключенным и персоналу скрещиваться друг с другом. Обычные... скучные тюрьмы, где власть по умолчанию принадлежит только охране.")
 
-		addButton("Nova", "See what happens to Nova", "ep_nova")
+		addButton("Нова", "Посмотреть, что стало с Новой", "ep_nova")
 	if(state == "ep_nova"):
 		playAnimation(StageScene.Solo, "stand", {pc="nova"})
-		saynn("Nova managed to get through Syndicate's attack mostly unscarred. Her contraband armor set was probably the only one on the whole station that was able to withstand shots from energy weapons.")
+		saynn("Нове удалось пережить атаку Синдиката почти без единой царапины. Вероятно, её комплект контрабандной брони был единственным на всей станции, способным выдержать выстрелы из энергетического оружия.")
 
-		saynn("She didn't try to be a hero and just defended the medical wing with a few other guards, allowing it to function even when the rest of the prison was already captured by the Syndicate.")
+		saynn("Она не пыталась строить из себя героя и просто обороняла медицинское крыло вместе с несколькими другими охранниками, позволяя ему функционировать даже тогда, когда остальная часть тюрьмы уже была захвачена Синдикатом.")
 
-		saynn("And so, for that, Nova got awarded with AlphaCorp's badge of honor, one of the highest awards that a soldier can receive. Nova didn't really care about some fancy pin.. but the hefty sum of credits that came with it certainly did.")
+		saynn("И за это Нова была награждена знаком отличия AlphaCorp — одной из высших наград, которые может получить солдат. Саму Нову не особо волновала эта пафосная финтифлюшка... но вот внушительная сумма кредитов, шедшая в придачу, определенно заставила её улыбнуться.")
 
-		saynn("Now that the captain is gone.. Nova's secrets are gonna stay secrets. She can finally move on and do something else with her life.")
+		saynn("Теперь, когда капитан исчез... секреты Новы останутся секретами. Она наконец-то может двигаться дальше и начать новую жизнь.")
 
-		saynn("And so she bought a personal space biodome in one of the popular galaxies and created her own little farm called Dawfort Creamery.. A perfect little oasis.. One that you and Tavi would certainly visit from time to time.")
+		saynn("И тогда она купила личный космический биокупол в одной из популярных галактик и создала свою маленькую ферму под названием «Сливочная ферма Доуфорт»... Идеальный маленький оазис... В который вы с Тави наверняка заглядывали бы время от времени.")
 
-		addButton("Risha", "See what happens to Risha", "ep_risha")
+		addButton("Риша", "Посмотреть, что стало с Ришей", "ep_risha")
 	if(state == "ep_risha"):
 		playAnimation(StageScene.Solo, "stand", {pc="risha", bodyState={naked=true, hard=true, chains=[["normal", "neck", "scene", "farleft"]]}})
-		saynn("Seeing a challenge before her.. Risha happily accepted it and charged into battle.")
+		saynn("Увидев перед собой вызов... Риша с радостью приняла его и бросилась в бой.")
 
-		saynn("Armed with only her riot gear and a stun baton, she managed to bring a whole squad of Syndicate agents down.. but eventually she got wounded and captured. Syndicate took her as a prisoner of war with intent to exchange her for one of its people sometime in the future. But.. AlphaCorp wasn't that eager to do that.")
+		saynn("Вооружившись лишь спецснаряжением и электрошокером, она умудрилась уложить целый отряд агентов Синдиката... но в итоге получила ранения и попала в плен. Синдикат взял её как военнопленную, намереваясь когда-нибудь обменять на одного из своих людей. Но... АльфаКорп не слишком спешила на сделку.")
 
-		saynn("And so Risha remains in the hands of the Syndicate for now.. enslaved by them.. serving as an unwilling sextoy.")
+		saynn("И вот, Риша пока остается в руках Синдиката... в рабстве... прислуживая им в роли невольной секс-игрушки.")
 
-		saynn("But even in such a dare situation, there is always some.. wiggle room. Eventually, Risha got more and more trust from the Syndicate.. Slowly, she kept climbing the ranks.. rising from her breeding bitch position up to.. a breeding stud.")
+		saynn("Но даже в такой отчаянной ситуации всегда есть... лазейка. Со временем Синдикат стал доверять ей всё больше... Она медленно продвигалась по службе... поднявшись со статуса сучки-нерестницы до... элитного племенного жеребца.")
 
-		saynn("Even after all that, Risha managed to find her place in the world. She was happy. She was still getting fucked and abused occasionally. But that was just making the moments when she gets to have fun that much more enjoyable.")
+		saynn("Даже после всего этого Риша сумела найти своё место в мире. Она была счастлива. Её всё ещё периодически трахали и унижали, но это лишь делало моменты, когда она позволяла себе развлечься, ещё более приятными.")
 
-		addButton("Skar", "See what happened to Skar..", "ep_skar")
+		addButton("Скар", "Посмотрите, что стало со Скаром...", "ep_skar")
 	if(state == "ep_skar"):
 		playAnimation(StageScene.Solo, "stand", {pc="skar"})
-		saynn("Skar got heavily wounded during the attack.. And even then, he kept fighting until AlphaCorp troops finally arrived. Because of him, way more inmates and staff have survived this attack.")
+		saynn("Скар получил тяжелые ранения во время атаки... И даже тогда он продолжал сражаться, пока не подошли войска АльфаКорп. Благодаря ему в этой атаке выжило гораздо больше заключенных и персонала.")
 
-		saynn("His wounds led to even more of his body parts and internal organs replaced with prosthetics. By this point.. he became more of a machine rather than a person.")
+		saynn("Из-за его ран всё больше частей тела и внутренних органов заменялись протезами. К этому моменту... он стал скорее машиной, чем человеком.")
 
-		saynn("After BDCC stopped existing.. Skar had a choice. Quitting all of this and returning to a peaceful life.. Or staying a guard. Either way.. he didn't really fit anywhere. People call him a hero.. But how can a hero live a peaceful life? How can a hero be a pacifist?")
+		saynn("Когда BDCC перестала существовать... перед Скаром встал выбор. Бросить всё это и вернуться к мирной жизни... Или остаться охранником. В любом случае... он не чувствовал себя на своём месте. Люди называют его героем... Но как герой может жить мирно? Как герой может стать пацифистом?")
 
-		saynn("And so he chose to return back to the frontlines. And do what he does best.. follow orders, no matter how suicidal they might be. Did he enjoy violence? Nah, the guy was sick of it. But you can't stop the wars.. if you don't fight them. And AlphaCorp was happy to supply him with an endless supply of wars.")
+		saynn("И тогда он решил вернуться на передовую. Чтобы делать то, что умеет лучше всего... выполнять приказы, какими бы самоубийственными они ни были. Нравилось ли ему насилие? Да нет же, парня уже тошнило от него. Но войны не остановить... если не сражаться в них. А AlphaCorp с радостью снабжала его бесконечным запасом войн.")
 
 		if (getFlag("AlexRynardModule.ch2FinalSceneHappened") && getFlag("ElizaModule.storyCompleted")):
-			addButton("Alex and Eliza", "See what happens with them", "ep_unique_alex_eliza")
+			addButton("Алекс и Элиза", "Посмотреть, что с ними станет", "ep_unique_alex_eliza")
 		else:
-			addButton("Alex Rynard", "See what happens with him", "ep_alex")
+			addButton("Алекс Райнард", "Посмотреть, что с ним станет", "ep_alex")
 	if(state == "ep_unique_alex_eliza"):
 		playAnimation(StageScene.Hug, "hug", {npc="eliza", pc="alexrynard"})
-		saynn("In the heat of the battle, Alex manages to get to and repair Sentinel-X.. his most powerful creation. And that is what saved the core of the station from getting destroyed by Syndicate. After that Alex guided other engineers to repair the hull of the station while he himself masterfully controlled its vents systems to make sure the surviving staff and inmates had at least something to breathe.")
+		saynn("В самый разгар битвы Алексу удаётся добраться до Сентинела-X... своего самого мощного творения, и починить его. Именно это спасло ядро станции от уничтожения Синдикатом. После этого Алекс направлял других инженеров, восстанавливая корпус станции, а сам мастерски управлял системами вентиляции, чтобы у выжившего персонала и заключённых был хоть какой-то кислород.")
 
-		saynn("He never really trusted people, he still doesn't. He much prefers machines for their lack of ability to lie. But during these critical moments, he had to work as a team. And he was good at it..")
+		saynn("Он никогда по-настоящему не доверял людям, да и сейчас не особо. Он гораздо больше предпочитает машины за их неспособность лгать. Но в эти критические моменты ему пришлось работать в команде. И он справился на отлично...")
 
-		saynn("Others were quick to claim credit for saving the station though. He didn't care though, he just said his word and that was it. There was nothing to gain anyway.")
+		saynn("Правда, остальные тут же принялись приписывать себе заслуги по спасению станции. Но ему было плевать: он сказал своё слово, и на этом всё. Всё равно с этого было нечего взять.")
 
-		saynn("Why not fight for it? Alex knew that you were responsible for this, one way or another. Putting so many people under danger just to escape this place.. is understandable.. but unforgivable. Alex began losing his grip again, closing up from everyone and everything. Who is there left to trust anyway? People? Hah, what a funny joke. Machines? Put too much trust into them and they will break you too.")
+		saynn("Почему бы не сражаться за это? Алекс знал, что ты приложила к этому руку, так или иначе. Подставить под удар столько людей лишь ради того, чтобы сбежать из этого места... это объяснимо... но непростительно. Алекс снова начал терять связь с реальностью, закрываясь от всех и всего. Кому вообще еще можно доверять? Людям? Ха, какая смешная шутка. Машинам? Положишься на них слишком сильно — и они сломают тебя.")
 
-		saynn("[say=eliza]Hey.. um.. Do you have a minute?..[/say]")
+		saynn("[say=eliza]Эй.. эм.. У тебя есть минутка?..[/say]")
 
-		saynn("[say=alexrynard]Huh? Why?[/say]")
+		saynn("[say=alexrynard]А? С чего бы это?[/say]")
 
-		saynn("To say the least, the medical wing was a busy place during the attack.. There were a lot more wounded than there were hands to help them. Eliza had to prioritize.. picking certain lives over others.")
+		saynn("Мягко говоря, в медицинском крыле во время атаки было не протолкнуться... Раненых было гораздо больше, чем рук, готовых им помочь. Элизе приходилось расставлять приоритеты... выбирать одни жизни вместо других.")
 
-		saynn("She felt awful. Not because of all the death and suffering.. but because she knew that she could have been more useful.. Eliza did some much science work.. And now, when the situation was testing her, there was nothing she could do.. other than bandaging and injecting people with painkillers. Having access to a great chemistry lab helped.. but drugs can only do so much.")
+		saynn("Она чувствовала себя ужасно. И не из-за всей этой смерти и страданий... а потому что знала, что могла бы быть полезнее... Элиза столько времени посвятила науке... И теперь, когда ситуация подвергла её испытанию, она не могла сделать почти ничего... кроме как накладывать повязки и вкалывать обезболивающее. Наличие отличной химической лаборатории помогало... но лекарства имеют свой предел.")
 
-		saynn("Her bloody paws are still shaking long after it all has ended. It only got slightly better when her shivering figure was embraced by the foxy's arms.")
+		saynn("Её окровавленные лапы всё еще дрожат спустя долгое время после того, как всё закончилось. Стало чуть легче лишь тогда, когда её дрожащую фигуру заключили в объятия лисьи руки.")
 
-		saynn("[say=eliza]I still see it.. so much.. blood.. death..[/say]")
+		saynn("[say=eliza]Я всё еще вижу это.. так много.. крови.. смерти..[/say]")
 
-		saynn("[say=alexrynard]It's okay.. Everything is gonna be okay. Stay strong, Eliza.[/say]")
+		saynn("[say=alexrynard]Всё хорошо.. Всё будет хорошо. Держись, Элиза.[/say]")
 
-		saynn("Tears stream down her cheeks. They made Alex's eyes get watery too.")
+		saynn("Слёзы текут по её щекам. От этого у Алекса тоже заблестели глаза.")
 
-		saynn("[say=eliza]I don't wanna be strong anymore..[/say]")
+		saynn("[say=eliza]Я больше не хочу быть сильной..[/say]")
 
-		saynn("[say=alexrynard]Don't say that.. things will get better.[/say]")
+		saynn("[say=alexrynard]Не говори так.. всё наладится.[/say]")
 
-		saynn("She couldn't let her give up.. which meant.. he couldn't give up himself.")
+		saynn("Она не могла позволить ей сдаться... а значит... он тоже не имел права сдаваться.")
 
-		saynn("They decided to develop something together, to distract themselves from reality. They managed to develop a new prosthetic spine for Alex. One that wasn't bound by metal or wires.. but instead used artificial neurons and half-organic hard tissue. The era of surgical intervention was coming to its end, nanobots, tiny programmable robots made out of organic materials, were used to eat through the old prosthetic spine.. before constructing a new, much better one.")
+		saynn("Они решили заняться общим делом, чтобы хоть как-то отвлечься от реальности. Им удалось разработать новый протез позвоночника для Алекс. Такой, который не был скован металлом или проводами... вместо этого в нем использовались искусственные нейроны и полуорганическая твердая ткань. Эра хирургического вмешательства подходила к концу: наноботы — крошечные программируемые роботы из органических материалов — должны были разъесть старый протез, чтобы на его месте воздвигнуть новый, куда более совершенный.")
 
-		saynn("[say=eliza]Hey, we're not that bad at this nanomachines thing.. Since we're both out of the job.. maybe we could start a company together?[/say]")
+		saynn("[say=eliza]Эй, а мы не так уж плохи в этих наномашинах... Раз уж мы обе остались без работы... может, основали бы компанию вместе?[/say]")
 
-		saynn("[say=alexrynard]What for?[/say]")
+		saynn("[say=alexrynard]Зачем?[/say]")
 
-		saynn("[say=eliza]Just for fun.. For us.. You're good at building stuff.. I'm good at convincing people to buy it.[/say]")
+		saynn("[say=eliza]Просто ради интереса... Для нас двоих... Ты мастерски умеешь создавать вещи, а я мастерски умею убеждать людей их покупать.[/say]")
 
-		saynn("Alex stayed quiet for a while.")
+		saynn("Алекс какое-то время молчала.")
 
-		saynn("[say=alexrynard]Hm.[/say]")
+		saynn("[say=alexrynard]Хм.[/say]")
 
-		saynn("[say=eliza]If you don't feel like it.. or if you don't trust me enough.. It's okay. I can just return to my mother's lab..[/say]")
+		saynn("[say=eliza]Если не хочешь... или если не слишком мне доверяешь... Всё в порядке. Я могу просто вернуться в лабораторию к матери...[/say]")
 
-		saynn("Alex grabs Eliza by the wrist.")
+		saynn("Алекс хватает Элизу за запястье.")
 
-		saynn("[say=alexrynard]You are the only person who I wanna trust.[/say]")
+		saynn("[say=alexrynard]Ты единственный человек, которому я действительно хочу доверять.[/say]")
 
 		if (tookRahi):
-			addButton("Rahi", "See what happened with Rahi", "ep_rahi")
+			addButton("Рахи", "Посмотреть, что случилось с Рахи", "ep_rahi")
 		else:
-			addButton("Jaxon", "See what happened with Jaxon", "ep_jaxon")
+			addButton("Джексон", "Посмотреть, что случилось с Джексоном", "ep_jaxon")
 	if(state == "ep_alex"):
 		playAnimation(StageScene.Solo, "stand", {pc="alexrynard"})
 		if (getFlag("AlexRynardModule.ch2FinalSceneHappened")):
-			saynn("In the heat of the battle, Alex manages to get to and repair Sentinel-X.. his most powerful creation. And that is what saved the core of the station from getting destroyed by Syndicate. After that Alex guided other engineers to repair the hull of the station while he himself masterfully controlled its vents systems to make sure the surviving staff and inmates had at least something to breathe.")
+			saynn("В самый разгар битвы Алексу удаётся добраться до Сентинела-X... своего самого мощного творения, и починить его. Именно это спасло ядро станции от уничтожения Синдикатом. После этого Алекс направлял других инженеров, восстанавливая корпус станции, а сам мастерски управлял системами вентиляции, чтобы у выжившего персонала и заключённых был хоть какой-то кислород.")
 
-			saynn("He never really trusted people, he still doesn't. He much prefers machines for their lack of ability to lie. But during these critical moments, he had to work as a team. And he was good at it..")
+			saynn("Он никогда по-настоящему не доверял людям, да и сейчас не особо. Он гораздо больше предпочитает машины за их неспособность лгать. Но в эти критические моменты ему пришлось работать в команде. И он справился на отлично...")
 
-			saynn("Others were quick to claim credit for saving the station though. He didn't care though, he just said his word and that was it. There was nothing to gain anyway.")
+			saynn("Правда, остальные тут же принялись приписывать себе заслуги по спасению станции. Но ему было плевать: он сказал своё слово, и на этом всё. Всё равно с этого было нечего взять.")
 
-			saynn("Why not fight for it? Alex knew that you were responsible for this, one way or another. Putting so many people under danger just to escape this place.. is understandable.. but unforgivable. Alex began losing his grip again, closing up from everyone and everything. Who is there left to trust anyway? People? Hah, what a funny joke. Machines? Put too much trust into them and they will break you too.")
+			saynn("Почему бы не сражаться за это? Алекс знал, что ты приложила к этому руку, так или иначе. Подставить под удар столько людей лишь ради того, чтобы сбежать из этого места... это объяснимо... но непростительно. Алекс снова начал терять связь с реальностью, закрываясь от всех и всего. Кому вообще еще можно доверять? Людям? Ха, какая смешная шутка. Машинам? Положишься на них слишком сильно — и они сломают тебя.")
 
-			saynn("Eliza found him when he was at his lowest. It took a lot.. force.. to pull Alex up, make him trust at least her. Together, they managed to develop a new prosthetic spine for him. One that wasn't bound by metal or wires.. but instead used artificial neurons and half-organic hard tissue. The era of surgical intervention was coming to its end, nanobots, tiny programmable robots made out of organic materials, were used to eat through the old prosthetic spine.. before constructing a new, much better one.")
+			saynn("Элиза нашла его, когда он был на самом дне. Потребовалось немало... усилий... чтобы вытащить Алекса, заставить его хотя бы ей доверять. Вместе они сумели разработать для него новый протез позвоночника. Такой, который не был скован металлом или проводами... вместо этого в нем использовались искусственные нейроны и полуорганическая твердая ткань. Эра хирургического вмешательства подходила к концу: наноботы — крошечные программируемые роботы из органических материалов — поедали старый протез, чтобы затем выстроить новый, куда более совершенный.")
 
-			saynn("Eliza helped Alex grow a new spine. But, sadly, she had plenty of problems in her life too. Problems that Alex couldn't help her with.")
+			saynn("Элиза помогла Алексу вырастить новый позвоночник. Но, к сожалению, в её жизни тоже хватало проблем. Проблем, с которыми Алекс не мог ей помочь.")
 
-			saynn("At least he could start living again. Maybe it's a good day to start your life from scratch, for the third time.. Alex wiped Sentinel's memory clean.. and stripped him of all the functionality, other than listening, watching and talking. Alex sat near him.. and began tinkering with his prototypes.. just like old times.")
+			saynn("По крайней мере, он смог начать жить заново. Возможно, сегодня отличный день, чтобы начать жизнь с чистого листа... в третий раз. Алекс полностью стер память Сентинелу, лишив его всех функций, кроме способности слушать, смотреть и говорить. Алекс сел рядом с ним... и принялся возиться со своими прототипами... совсем как в старые добрые времена.")
 
 		else:
-			saynn("In the heat of the battle, Alex manages to get to and repair Sentinel-X.. his most powerful creation. And that is what saved the core of the station from getting destroyed by Syndicate. After that Alex guided other engineers to repair the hull of the station while he himself masterfully controlled its vents systems to make sure the surviving staff and inmates had at least something to breathe.")
+			saynn("В самый разгар битвы Алексу удаётся добраться до Сентинела-X... своего самого мощного творения, и починить его. Именно это спасло ядро станции от уничтожения Синдикатом. После этого Алекс направлял других инженеров, восстанавливая корпус станции, а сам мастерски управлял системами вентиляции, чтобы у выжившего персонала и заключённых был хоть какой-то кислород.")
 
-			saynn("He never really trusted people. He much prefers machines for their lack of ability to lie. But during these critical moments, he had to work as a team. And he was good at it..")
+			saynn("Он никогда по-настоящему не доверял людям. Машины ему нравились куда больше из-за их неспособности лгать. Но в эти критические моменты ему приходилось работать в команде. И у него это отлично получалось...")
 
-			saynn("Sadly, being a team leader means you don't really get much credit for your deeds. Seeing the monetary rewards that come with it, others lied about their contribution to this win.. And so Alex gave up trying to convince anyone and closed up completely.")
+			saynn("К сожалению, роль лидера команды означает, что твои заслуги редко признают по достоинству. Глядя на денежное вознаграждение, другие начали лгать о своем вкладе в этот успех... И тогда Алекс перестал пытаться кого-то убеждать и окончательно замкнулся в себе.")
 
-			saynn("Yeah, he still tinkered with androids from time to time. But he could never convince AlphaCorp to restart all of his canceled projects. And without resources.. The best he could do is tinker.")
+			saynn("Да, время от времени он всё ещё возился с андроидами. Но ему так и не удалось убедить АльфаКорп возобновить все его отмененные проекты. А без ресурсов... всё, на что он был способен — это просто ковыряться в железе.")
 
-			saynn("He was trying to create a perfect reality.. but only found himself becoming more broken..")
+			saynn("Он пытался создать идеальную реальность... но в итоге лишь сам становился всё более надломленным...")
 
-		addButton("Eliza", "See what happens to Eliza", "ep_eliza")
+		addButton("Элиза", "Посмотреть, что стало с Элизой", "ep_eliza")
 	if(state == "ep_eliza"):
 		if (!getFlag("ElizaModule.storyCompleted")):
 			playAnimation(StageScene.Solo, "stand", {pc="eliza"})
-			saynn("To say the least, the medical wing was a busy place during the attack.. There were a lot more wounded than there were hands to help them. Eliza had to prioritize.. picking certain lives over others.")
+			saynn("Мягко говоря, в медицинском крыле во время атаки было не протолкнуться... Раненых было гораздо больше, чем рук, готовых им помочь. Элизе приходилось расставлять приоритеты... выбирать одни жизни вместо других.")
 
-			saynn("She felt awful. Not because of all the death and suffering.. but because she knew that she could have been more useful.. Eliza did some much science work.. And now, when the situation was testing her, there was nothing she could do.. other than bandaging and injecting people with simple painkillers.")
+			saynn("Ей было паршиво. И не из-за всей этой смерти и страданий... а из-за осознания того, что она могла бы принести куда больше пользы... Элиза столько занималась наукой... А теперь, когда наступил момент истины, она почти ничего не могла сделать... кроме как перевязывать раны и колоть людям простейшие обезболивающие.")
 
-			saynn("Her bloody paws were shaking by the end of it.. and that shiver never quite went away. She felt like she failed.. failed at what she set out to do in the first place. And so, after BDCC collapsed, she returned back to her mother's lab.. and became an obedient harmless daughter that her mother always wanted her to be.")
+			saynn("К концу всего этого её окровавленные лапы дрожали... и эта дрожь так и не прошла до конца. Ей казалось, что она провалилась... провалила то самое дело, ради которого всё начиналось. И поэтому, когда BDCC рухнул, она вернулась в мамину лабораторию... став той послушной и безобидной дочкой, которой мать всегда хотела её видеть.")
 
 		else:
 			playAnimation(StageScene.Hug, "hug", {npc="eliza", pc="elizaMom"})
-			saynn("To say the least, the medical wing was a busy place during the attack.. There were a lot more wounded than there were hands to help them. Eliza had to prioritize.. picking certain lives over others.")
+			saynn("Мягко говоря, в медицинском крыле во время атаки было не протолкнуться... Раненых было гораздо больше, чем рук, готовых им помочь. Элизе приходилось расставлять приоритеты... выбирать одни жизни вместо других.")
 
-			saynn("She felt awful. Not because of all the death and suffering.. but because she knew that she could have been more useful.. Eliza did some much science work.. And now, when the situation was testing her, there was nothing she could do.. other than bandaging and injecting people with painkillers. Having access to a great chemistry lab helped.. but drugs can only do so much.")
+			saynn("Она чувствовала себя ужасно. И не из-за всей этой смерти и страданий... а потому что знала, что могла бы быть полезнее... Элиза столько времени посвятила науке... И теперь, когда ситуация подвергла её испытанию, она не могла сделать почти ничего... кроме как накладывать повязки и вкалывать обезболивающее. Наличие отличной химической лаборатории помогало... но лекарства имеют свой предел.")
 
-			saynn("Her bloody paws were shaking by the end of it.. and that shiver never quite went away.")
+			saynn("К концу всего этого её окровавленные лапы дрожали... и эта дрожь так и не прошла до конца.")
 
-			saynn("It only got slightly better when she was holding a certain package. It was a small box.. but it sure made her heart beat calmer. Inside it.. was a sleek, new mug.. a mug that proudly says 'Best Daughter'.")
+			saynn("Стало чуть легче только тогда, когда она сжимала в руках один сверток. Это была маленькая коробочка... но от неё сердце забилось спокойнее. Внутри... была новенькая изящная кружка... кружка с гордой надписью «Лучшая дочь».")
 
-			saynn("[say=elizaMom]I should have sent it earlier, I'm sorry.[/say]")
+			saynn("[say=elizaMom]Мне следовало отправить её раньше, прости.[/say]")
 
-			saynn("[say=eliza]It's okay, mom..[/say]")
+			saynn("[say=eliza]Всё в порядке, мам...[/say]")
 
-			saynn("A tight hug. Tears begin to run wild.")
+			saynn("Крепкие объятия. Слезы текут ручьем.")
 
-			saynn("[say=elizaMom]I'm here.. I'm here.. everything is gonna be okay, sweetie..[/say]")
+			saynn("[say=elizaMom]Я здесь.. Я здесь.. всё будет хорошо, милая..[/say]")
 
-			saynn("Eliza's mother took her back under her wing. Less freedom.. but at this point, Eliza just wanted to feel safe.")
+			saynn("Мать Элизы снова взяла её под своё крыло. Свободы стало меньше.. но на данном этапе Элиза просто хотела чувствовать себя в безопасности.")
 
 		if (tookRahi):
-			addButton("Rahi", "See what happened with Rahi", "ep_rahi")
+			addButton("Рахи", "Посмотреть, что случилось с Рахи", "ep_rahi")
 		else:
-			addButton("Jaxon", "See what happened with Jaxon", "ep_jaxon")
+			addButton("Джексон", "Посмотреть, что случилось с Джексоном", "ep_jaxon")
 	if(state == "ep_rahi"):
 		playAnimation(StageScene.Duo, ["holdpistol", "res://Inventory/UnriggedModels/Pistol/Pistol.tscn"], {pc="rahi", npc="rahiRabi"})
-		saynn("Just as you agreed upon, you and Rahi paid her home planet, Ahdomai, a visit. To tie up some loose ends..")
+		saynn("Как вы и договаривались, вы с Рахи навестили её родную планету, Ахдомай. Чтобы закрыть кое-какие старые долги..")
 
-		saynn("Finding her brother wasn't too hard. Pretty much every junkie in the world knew him.")
+		saynn("Найти её брата оказалось не так уж сложно. Его знал практически каждый торчок в этом мире.")
 
-		saynn("It's snowing.. just like that day. Rahi breathes in the cold air.. and slowly exhales. You and Tavi managed to remove the collar from her neck.. but a phantom one is still making her rub her fur occasionally..")
+		saynn("Идёт снег.. точь-в-точь как в тот день. Рахи вдыхает холодный воздух.. и медленно выдыхает. Вам с Тави удалось снять ошейник с её шеи.. но фантомная тяжесть всё ещё заставляет её время от времени потирать мех..")
 
-		saynn("As her brother turns around the corner, Rahi aims a gun at him.")
+		saynn("Когда её брат выходит из-за угла, Рахи наводит на него ствол.")
 
-		saynn("[say=rahi]Missed me, little brother?[/say]")
+		saynn("[say=rahi]Соскучился по мне, братишка?[/say]")
 
-		saynn("His eyes go big. He tries back away.. but that's when he walks into your chest.. You yoink a gun that he has behind his belt and then shove him back.")
+		saynn("Его глаза округляются. Он пытается отступить.. но натыкается прямо на твою грудь.. Ты ловко выхватываешь пистолет из-за его пояса и толкаешь его назад.")
 
-		saynn("[say=rahiRabi]Rahi? I thought you..[/say]")
+		saynn("[say=rahiRabi]Рахи? Я думал, ты..[/say]")
 
-		saynn("[say=rahi]Went away for good? Nah. You got me into a whole lotta trouble. But I pulled through. No thanks to you.[/say]")
+		saynn("[say=rahi]Ушла навсегда? Как бы не так. Ты втянула меня в кучу проблем. Но я выкарабкалась. И совсем не благодаря тебе.[/say]")
 
-		saynn("[say=rahiRabi]Listen.. You share part of the blame too for what happened. But we can fix everything.[/say]")
+		saynn("[say=rahiRabi]Слушай... в том, что произошло, есть и твоя вина. Но мы можем всё исправить.[/say]")
 
-		saynn("As Rahi starts slowly stepping towards her brother, Rabi starts reaching for his gun.. the gun that's not there.")
+		saynn("Когда Рахи начинает медленно шагать к брату, Раби тянется к своему пистолету... к пистолету, которого там нет.")
 
-		saynn("[say=rahi]And how are you planning to do that.. my little brother..[/say]")
+		saynn("[say=rahi]И как же ты планируешь это сделать... мой маленький братик?[/say]")
 
-		saynn("As Rahi cocks her revolver, Rabi suddenly drops to his knees and raises his paws.")
+		saynn("Когда Рахи взводит курок своего револьвера, Раби внезапно падает на колени и вскидывает лапы.")
 
-		saynn("[say=rahiRabi]W-we.. l-listen.. j-just.. don't d-do it..[/say]")
+		saynn("[say=rahiRabi]М-мы... с-слушай... т-только... н-не делай этого...[/say]")
 
-		saynn("Rahi walks up to Rabi real close.. and then puts a gun up against his head..")
+		saynn("Рахи подходит к Раби вплотную... а затем прижимает ствол пистолета к его голове...")
 
-		saynn("[say=rahi]You can start with simple things. Use your words~.[/say]")
+		saynn("[say=rahi]Можешь начать с малого. Просто скажи это словами~.[/say]")
 
-		saynn("He goes through his pockets.. and finds a credit chip. He presents it to Rahi.")
+		saynn("Он шарит по карманам... и находит кредитный чип. Он протягивает его Рахи.")
 
-		saynn("[say=rahiRabi]T-this.. fifty key creds.. fifty thousand.. Five times more than we failed to rob.. Is that gonna be e-enough?[/say]")
+		saynn("[say=rahiRabi]В-вот... пятьдесят койтов... пятьдесят тысяч... В пять раз больше, чем мы не смогли награбить... Этого х-хватит?[/say]")
 
-		saynn("Rahi shows her fangs.. and then grabs Rabi by his clothes.. She leans down closer and closer.. keeping an eye contact.. Her paw squeezing that revolver real tight, pulling attention from what the other one is doing..")
+		saynn("Рахи скалится, обнажая клыки, и хватает Раби за одежду. Она наклоняется всё ближе и ближе, не разрывая зрительного контакта... Её лапа мертвой хваткой сжимает револьвер, отвлекая внимание от того, что делает другая рука...")
 
-		saynn("Rabi starts sobbing.")
+		saynn("Раби начинает рыдать.")
 
-		saynn("[say=rahi]You know.. I was just looking for a simple.. sorry.[/say]")
+		saynn("[say=rahi]Знаешь... я всего лишь искала чего-то простого... прости.[/say]")
 
-		saynn("[say=rahiRabi]Y-yes! I'm sorry! I really am. I'm sorry that it happened.[/say]")
+		saynn("[say=rahiRabi]Д-да! Прости меня! Правда. Прости, что всё так вышло.[/say]")
 
-		saynn("Rahi's expression softens. She pulls the gun away from her brother's head..")
+		saynn("Выражение лица Рахи смягчается. Она отводит пистолет от головы брата...")
 
-		saynn("[say=rahi]Thanks. Keep these creds to yourself. So much death is attached to them. I don't need blood money.[/say]")
+		saynn("[say=rahi]Спасибо. Оставь эти кредиты себе. К ним привязано слишком много смертей. Мне не нужны кровавые деньги.[/say]")
 
-		saynn("Rabi nods many times.")
+		saynn("Раби часто-часто кивает.")
 
-		saynn("[say=rahiRabi]Okay.. okay.. Sorry..[/say]")
+		saynn("[say=rahiRabi]Ладно... ладно... Прости...[/say]")
 
-		saynn("[say=rahi]Take care, brother~.[/say]")
+		saynn("[say=rahi]Береги себя, братишка~.[/say]")
 
-		saynn("Rahi smiles and stands up before walking past him and towards you.")
+		saynn("Рахи улыбается и встает, проходя мимо него к тебе.")
 
-		saynn("[say=rahiRabi]..fucking bitch..[/say]")
+		saynn("[say=rahiRabi]...сука ебаная...[/say]")
 
-		saynn("Rahi stops and looks at you.")
+		saynn("Рахи останавливается и смотрит на тебя.")
 
-		saynn("[say=rahi]Hm.. Give him his gun back. We don't need it either.[/say]")
+		saynn("[say=rahi]Хм.. Верни ему пистолет. Нам он тоже больше не нужен.[/say]")
 
-		saynn("[say=pc]Are you sure?[/say]")
+		saynn("[say=pc]Вы уверены?[/say]")
 
-		saynn("Rahi nods. And so walk up to Rabi and toss his gun back to him.")
+		saynn("Рахи кивает. Вы подходите к Раби и швыряете ему его оружие обратно.")
 
-		saynn("[say=rahiRabi]You're not as pure as you think, sister..[/say]")
+		saynn("[say=rahiRabi]Ты не такая уж святая, сестрица..[/say]")
 
-		saynn("Rabi waits for you to start leaving again.. then he slowly gets up.. and aims the weapon at Rahi's back.")
+		saynn("Раби ждет, когда вы снова развернетесь, чтобы уйти.. затем он медленно поднимается.. и целится Рахи в спину.")
 
-		addButton("Continue", "See what happens next", "rahi_kills_rabi")
+		addButton("Продолжить", "Смотреть, что будет дальше", "rahi_kills_rabi")
 	if(state == "rahi_kills_rabi"):
 		playAnimation(StageScene.Solo, ["firepistol", "res://Inventory/UnriggedModels/Pistol/Pistol.tscn"], {pc="rahi"})
-		saynn("A gunshot.. A gasp..")
+		saynn("Выстрел.. Всхлип..")
 
-		saynn("You turn around and see Rabi holding onto his chest.. before collapsing onto the cold snow.. His dark blood creates a hot puddle around him. Rahi is still aiming her gun at him.. her paw shaking ever so slightly.")
+		saynn("Ты оборачиваешься и видишь, как Раби хватается за грудь, прежде чем рухнуть на холодный снег.. Его темная кровь образует вокруг него горячую лужу. Рахи все еще целится в него.. ее лапа едва заметно дрожит.")
 
-		saynn("[say=pc]You never forgave him, did you?[/say]")
+		saynn("[say=pc]Ты ведь так и не простила его, верно?[/say]")
 
-		saynn("[say=rahi]I did not.. But now it's over.[/say]")
+		saynn("[say=rahi]Не простила.. Но теперь всё кончено.[/say]")
 
-		saynn("Rahi chuckles while watching her dead brother..")
+		saynn("Рахи посмеивается, глядя на своего мертвого брата..")
 
-		saynn("[say=rahi]Feels like I shot myself. My other self.[/say]")
+		saynn("[say=rahi]Такое чувство, будто я застрелилась сама. Своя же копия.[/say]")
 
-		saynn("[say=pc]Is that.. good?[/say]")
+		saynn("[say=pc]Это... хорошо?[/say]")
 
-		saynn("Rahi shrugs and finally lowers the gun.")
+		saynn("Рахи пожимает плечами и, наконец, опускает пистолет.")
 
-		saynn("[say=rahi]It's liberating..[/say]")
+		saynn("[say=rahi]Это освобождает..[/say]")
 
-		saynn("You carefully embrace the feline and share some of your warmth with her. For some reason you feel her pockets being full of something..")
+		saynn("Вы осторожно обнимаете кошку, делясь с ней своим теплом. Почему-то вам кажется, что её карманы чем-то набиты...")
 
-		saynn("[say=pc]C'mon, let's get out of here before the police show up.[/say]")
+		saynn("[say=pc]Давай, пошли отсюда, пока не нагрянула полиция.[/say]")
 
-		saynn("[say=rahi]I stole all the credits that he had in his pockets.. Should I throw them out?..[/say]")
+		saynn("[say=rahi]Я стащила все кредиты из его карманов... Стоит ли их выкинуть?..[/say]")
 
-		saynn("[say=pc]Well.. What would your father say?[/say]")
+		saynn("[say=pc]Ну... И что бы сказал твой отец?[/say]")
 
-		saynn("Rahi looks down at herself.")
+		saynn("Рахи опускает взгляд на себя.")
 
-		saynn("[say=rahi]I'm keeping them..[/say]")
+		saynn("[say=rahi]Я их оставлю себе..[/say]")
 
-		addButton("Jaxon", "See what happened with Jaxon", "ep_jaxon")
+		addButton("Джексон", "Посмотреть, что случилось с Джексоном", "ep_jaxon")
 	if(state == "ep_jaxon"):
 		if (!getFlag("TaviModule.TaviKilledJaxon")):
 			playAnimation(StageScene.Solo, "stand", {pc="jaxontau"})
-			saynn("Jaxon returned to his family.. family who was very happy to see him alive after what happened to the Exodus research space station.")
+			saynn("Джексон вернулся к своей семье... к семье, которая была несказанно рада видеть его живым после всего того, что случилось с исследовательской космической станцией «Экзодус».")
 
-			saynn("But Jaxon wasn't happy. He kept trying to track Tavi down, seeking revenge for his brother. Or at least.. some kind of conclusion. Something.. rather than nothing..")
+			saynn("Но Джексон не был счастлив. Он всё пытался выследить Тави, жаждая мести за брата. Или, по крайней мере... какого-то завершения. Хоть чего-то... вместо этой пустоты.")
 
-			saynn("After years of pointless searching.. He finally gave up.. That day is when he saw a new email in his inbox. He opened it..")
+			saynn("После долгих лет бессмысленных поисков... он наконец сдался. В тот день он увидел новое письмо во входящих. Он открыл его...")
 
-			saynn("[say=tavi]Hey. It's Tavi. I'm alive.. and doing better than ever. Yes, I killed your brother. And I know that you are looking for me. I still stand by everything that I did. Listen, I understand. Family is important and all that. But c'mon, you will never track me down.. without me wanting that. Understand what I mean? You will never get the revenge that you seek, only more pain. So yeah, if you want my suggestion.. nah, fuck you. Do whatever you want, dude, you're older than me. If you wanna talk - let's talk. I can try to explain my actions, you can try to explain to me why I am a bad person. Or.. we can just wait until we both end up in hell. Sounds good? Good. Take care.[/say]")
+			saynn("[say=tavi]Эй. Это Тави. Я жива... и чувствую себя лучше, чем когда-либо. Да, я убила твоего брата. И я знаю, что ты меня ищешь. Я до сих пор стою на своём. Слушай, я всё понимаю. Семья — это важно и всё такое. Но да ладно тебе, ты никогда меня не найдёшь... если только я сама того не захочу. Понимаешь, о чём я? Ты никогда не получишь ту месть, которую ищешь, только еще больше боли. Так что, если хочешь моего совета... да пошёл ты нахер. Делай что хочешь, чувак, ты же старше меня. Если хочешь поговорить — давай поговорим. Я попробую объяснить свои поступки, а ты попробуешь объяснить мне, почему я плохой человек. Или... мы можем просто подождать, пока оба окажемся в аду. Идет? Вот и славно. Береги себя.[/say]")
 
-			saynn("Jaxon sighs.. and deletes it.")
+			saynn("Джексон вздыхает... и удаляет письмо.")
 
 		else:
 			playAnimation(StageScene.Solo, "stand", {pc="tavi"})
-			saynn("Jaxon's wife, Jill, felt destroyed when she found out what happened to him. She decided not to tell the kids and instead only carried the full grief herself.")
+			saynn("Жена Джексона, Джилл, чувствовала себя совершенно раздавленной, когда узнала, что с ним произошло. Она решила не говорить детям, а вместо этого несла всё это горе в себе одна.")
 
-			saynn("She knew that it's a dangerous job.. But he convinced her.. Because of the credits that it would bring.. credits that would give their kids a chance at a good future.")
+			saynn("Она знала, что это опасная работа... Но он убедил её... Ради кредитов, которые это принесёт... кредитов, которые дадут их детям шанс на достойное будущее.")
 
-			saynn("Sadly the credits that she was now earning alone weren't enough. Years were passing.. She did her best to pay for her kids' education.. But she was in the negatives all the time.")
+			saynn("К сожалению, кредитов, которые она теперь зарабатывала в одиночку, не хватало. Шли годы... Она изо всех сил старалась оплатить обучение детей... Но она вечно была в минусе.")
 
-			saynn("Luckily, one day, she saw some random bill came in.. Bill that, for some reason, had a negative number on it. They were billed for -12345 credits. Jill thought it was some kind of error. But the credits were actually there, on her account.")
+			saynn("К счастью, однажды ей пришел какой-то случайный счет... Счет, в котором по какой-то причине стояло отрицательное число. Им выставили счет на -12345 кредитов. Джилл подумала, что это какая-то ошибка. Но кредиты действительно лежали на ее счету.")
 
-			saynn("It was enough for some things.. enough to continue the struggle. Struggle that makes all of us stronger.. right?")
+			saynn("Этого хватало на кое-какие вещи... достаточно, чтобы продолжать борьбу. Борьбу, которая делает всех нас сильнее... верно?")
 
-		addButton("You", "What happens to you..", "ep_you")
+		addButton("Ты", "Что же с тобой происходит...", "ep_you")
 	if(state == "ep_you"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcBodyState={naked=true}})
-		saynn("You and Tavi tracked down every single person who was involved in creating her. You tracked them down.. and killed them.. all of them. Guards and other miscellaneous staff got off mostly easy.. but all the scientists shared the same fate.")
+		saynn("Вы с Тави выследили каждого, кто имел отношение к её созданию. Вы выследили их... и убили... всех до единого. Охранникам и прочему мелкому персоналу досталось в основном легко... но все ученые разделили одну и ту же участь.")
 
-		saynn("Why? They knew exactly what they were doing. They share the blame with the director. Only makes sense for them to share the same consequences. End of story. Yeah, they cried and begged. But you know that under the right conditions, they would do it all again. For credits or for some other reason, it doesn't matter much.")
+		saynn("Почему? Они прекрасно понимали, что делают. Они несут такую же вину, как и директор. Логично, что и последствия у них будут общими. И точка. Да, они плакали и умоляли о пощаде. Но ты ведь знаешь, что при определенных обстоятельствах они бы сделали всё снова. Ради кредитов или по какой-то другой причине — это не так уж важно.")
 
-		saynn("Yeah, there will be more weapons created like Tavi. But now they will think twice before committing to it. Not because Tavi will come after them. After getting her revenge, she couldn't care less about it.. but because history tends to repeat itself.")
+		saynn("Да, подобные Тави оружия будут создаваться и дальше. Но теперь они дважды подумают, прежде чем за это браться. Не потому, что за ними придет Тави — отомстив, ей будет уже плевать... а потому, что история имеет свойство повторяться.")
 
-		saynn("And so.. after tying up all your loose ends.. you and Tavi became bounty hunters. You spy, kill, steal and blackmail people. Not because someone else orders you to.. but because it's fun. And pays well.")
+		saynn("И вот... завязав все концы... вы с Тави стали охотниками за головами. Вы шпионите, убиваете, воруете и шантажируете людей. И не потому, что кто-то отдает приказы... а потому, что это весело. И прибыльно.")
 
-		saynn("Making the world a better place? Good luck with that. Life will get worse for you the more you do something for others. While others will always want more.. they will expect more. It only makes sense to be selfish. And enjoy life while it's given to you by whatever forces.")
+		saynn("Сделать мир лучше? Ну, удачи. Чем больше ты делаешь для других, тем хуже становится твоя жизнь. Остальные всегда будут хотеть большего... и ждать большего. Единственный смысл — быть эгоистом. И наслаждаться жизнью, пока её даруют тебе какие бы то ни было силы.")
 
 		if (tookRahi):
-			saynn("Eventually Rahi became like you. She was always a greedy cat deep inside. And so your views aligned pretty much perfectly.")
+			saynn("В конце концов Рахи стала такой же, как ты. В глубине души она всегда была жадной кошкой. Так что ваши взгляды совпали практически идеально.")
 
-		addButton("Continue", "See what happens next", "ep_end")
+		addButton("Продолжить", "Смотреть, что будет дальше", "ep_end")
 	if(state == "ep_end"):
 		playAnimation(StageScene.Duo, "sit", {npc="tavi", npcBodyState={naked=true}})
-		saynn("You sit on one of the uncomfortable benches, eating a slice of pizza that you bought from one of the warp-throughs that don't care about Syndicate ships."+str(" Rahi does the same.. purring while doing so." if tookRahi else "")+" The first pizza in.. forever. All the while your ship is flying through the vast nothingness. It's.. cool.")
+		saynn("Ты сидишь на одной из неудобных скамеек, поедая кусок пиццы, купленный у одного из тех прыгунов, которым плевать на корабли Синдиката."+str(" Rahi does the same.. purring while doing so." if tookRahi else "")+" Первая пицца за... целую вечность. А твой корабль тем временем летит сквозь бескрайнюю пустоту. Это... круто.")
 
-		saynn("Tavi looks at you and smiles. She is still naked, openly showing you her sexy body.")
+		saynn("Тави смотрит на тебя и улыбается. Она всё еще голая, открыто демонстрируя тебе своё сексуальное тело.")
 
-		saynn("[say=tavi]What are you thinking about?[/say]")
+		saynn("[say=tavi]О чем задумался?[/say]")
 
-		saynn("[say=pc]I wonder.. You said that bluespace frequency can be translated to a position in space, right?[/say]")
+		saynn("[say=pc]Интересно... Ты говорила, что частоту блюспейса можно перевести в координаты в пространстве, верно?[/say]")
 
-		saynn("[say=tavi]Maybe. Big crystals can hijack a range of frequencies while only being on one themselves. But small ones.. yeah, they map one-to-one.[/say]")
+		saynn("[say=tavi]Возможно. Большие кристаллы могут перехватывать диапазон частот, находясь лишь на одной. Но маленькие... да, они соотносятся один к одному.[/say]")
 
-		saynn("[say=pc]Don't you remember the frequency of your old ship? The one with the backup of Elena?[/say]")
+		saynn("[say=pc]Разве ты не помнишь частоту своего старого корабля? Того самого, с бэкапом Елены?[/say]")
 
-		saynn("Tavi's eyes go big. She blinks many times.")
+		saynn("Глаза Тави округляются. Она часто-часто моргает.")
 
-		saynn("[say=pc]Heh. I think I know what we will do next.[/say]")
+		saynn("[say=pc]Хех. Кажется, я знаю, что мы будем делать дальше.[/say]")
 
-		saynn("[say=tavi]It's probably docked to one of the AlphaCorp stations.[/say]")
+		saynn("[say=tavi]Скорее всего, он пришвартован к одной из станций АльфаКорп.[/say]")
 
-		saynn("[say=pc]We will need to prepare for a fight, yeah~.[/say]")
+		saynn("[say=pc]Нам нужно будет подготовиться к бою, ага~.[/say]")
 
-		saynn("Tavi smiles.")
+		saynn("Тави улыбается.")
 
-		saynn("[say=pc]I think I will rest for now though.[/say]")
+		saynn("[say=pc]Но, пожалуй, пока я просто отдохну.[/say]")
 
-		saynn("She chuckles and scritches you under the chin.")
+		saynn("Она посмеивается и чешет тебя под подбородком.")
 
-		saynn("[say=tavi]Food made you sleepy~? Sure, dream away. I will get us where we need to be.[/say]")
+		saynn("[say=tavi]Еда клонит в сон~? Конечно, дремли. А я доставлю нас туда, куда нужно.[/say]")
 
-		saynn("You nod and continue consuming pizza. Your eyes slowly begin to close.. You lie down.."+str(" And let Rahi cuddle up to you" if tookRahi else "")+"")
+		saynn("Ты киваешь и продолжаешь уплетать пиццу. Твои глаза медленно начинают закрываться... Ты ложишься..."+str(" And let Rahi cuddle up to you" if tookRahi else "")+"")
 
-		saynn("You close your eyes.. And begin dreaming.")
+		saynn("Ты закрываешь глаза... И погружаешься в сон.")
 
 		saynn("- - - - - - - - - - -")
 
-		saynn("Thank you for completing BDCC.")
+		saynn("Спасибо за прохождение BDCC!")
 
-		saynn("I hope you liked it <3")
+		saynn("Надеюсь, тебе понравилось <3")
 
-		saynn("You can close the game if you want. Or you can press the button and return back to the prison.")
+		saynn("Можешь закрыть игру, если хочешь. Или нажать на кнопку и вернуться обратно в тюрьму.")
 
-		addButton("Dream", "Broken dreams are still dreams. Heh.", "do_dream")
+		addButton("Мечта", "Разбитые мечты — всё равно мечты. Хех.", "do_dream")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

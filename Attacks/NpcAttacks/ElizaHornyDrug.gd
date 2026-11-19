@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Lust
 	
 func getVisibleName(_context = {}):
-	return "Horny drug"
+	return "Возбуждающий наркотик"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -18,7 +18,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkDodged(_attacker, _receiver, DamageType.Lust)):
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "{attacker.name} manages to stick a syringe into your neck! You feel so warm, your crotch is burning, you can’t stop touching yourself in front of {attacker.name}, you really need to have sex!"
+	var text = "{attacker.name} умудряется вонзить шприц тебе в шею! Тебе становится так жарко, в паху всё горит, ты не можешь перестать ласкать себя на глазах у {attacker.name}, тебе жизненно необходимо заняться сексом!"
 	return {
 		text = text,
 		lust = 20,

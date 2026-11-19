@@ -7,7 +7,7 @@ func _init():
 	aiScoreMultiplier = 0.6
 	
 func getVisibleName(_context = {}):
-	return "Tactical Strike"
+	return "Тактический удар"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -19,7 +19,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkDodged(_attacker, _receiver, DamageType.Physical)):
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "{attacker.name} lunges forward, delivering a powerful blow to {receiver.name}, inflicting significant pain."
+	var text = "{attacker.name} бросается вперед, нанося {receiver.name} мощный удар, причиняющий сильную боль."
 	if(!_receiver.hasEffect(StatusEffect.Stunned)):
 		if(_receiver.addEffect(StatusEffect.Stunned)):
 			text += " The sudden attack [b]stunned[/b] {receiver.name}."

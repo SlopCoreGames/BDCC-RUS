@@ -4,7 +4,7 @@ func _init():
 	id = "Ch6TaviQuest"
 
 func getVisibleName():
-	return "Consequences"
+	return "Последствия"
 
 func getProgress():
 	var result = []

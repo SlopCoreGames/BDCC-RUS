@@ -7,7 +7,7 @@ func _init():
 	aiScoreMultiplier = 0.4
 	
 func getVisibleName(_context = {}):
-	return "Force blindfold"
+	return "Принудительная повязка"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -21,7 +21,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	
 	_receiver.getInventory().forceEquipByStoreOtherUnlessRestraint(GlobalRegistry.createItem("blindfold"), _attacker)
 	
-	var text = "{attacker.name} pounces at you and manages to [b]blindfold you[/b]! You shove {attacker.him} back.\n\n[say=attacker]"+RNG.pick([
+	var text = "{attacker.name} набрасывается на тебя и умудряется [b]завязать тебе глаза[/b]! Ты отталкиваешь {attacker.him} назад.\n\n[say=attacker]"+RNG.pick([
 		"Lights out.",
 		"Enjoy the darkness.",
 		"Say hello to the darkness.",

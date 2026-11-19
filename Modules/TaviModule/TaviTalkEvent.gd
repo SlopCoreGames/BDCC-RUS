@@ -16,7 +16,7 @@ func run(_triggerID, _args):
 	if(checkCharacterBusy("TaviBusy", "Seems like Tavi is not here", "Tavi")):
 		return
 	
-	saynn("You see Tavi sitting on a crate, away from everybody.")
+	saynn("Вы видите Тави: она сидит на ящике, в стороне от всех остальных.")
 	addButtonUnlessLate("Tavi", "Talk to Tavi", "talk")
 
 func getPriority():

@@ -6,13 +6,13 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Breath in and out"
+	return "Вдох и выдох"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
-	var text = "{attacker.name} feels {attacker.his} chest tightening. {attacker.He} uses {attacker.his} turn to close {attacker.his} eyes and steady {attacker.his} breathing."
+	var text = "{attacker.name} чувствует, как {attacker.his} грудь сдавливает. {attacker.He} использует {attacker.his} ход, чтобы закрыть {attacker.his} глаза и выровнять {attacker.his} дыхание."
 	
 	text += "\n\n"
 	text += "[say=attacker]"+RNG.pick([

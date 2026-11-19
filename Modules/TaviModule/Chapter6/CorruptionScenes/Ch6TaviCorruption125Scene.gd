@@ -7,60 +7,60 @@ func _run():
 	if(state == ""):
 		addCharacter("tavi")
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
-		saynn("Things feel different today. As you step into Tavi's room, you find her standing there, smiling. She isn't even naked, huh.")
+		saynn("Сегодня всё ощущается иначе. Когда ты заходишь в комнату Тави, ты видишь, что она стоит там и улыбается. Она даже не раздета, а?")
 
-		saynn("[say=pc]Hey there.[/say]")
+		saynn("[say=pc]Привет.[/say]")
 
-		saynn("Tavi boldly walks up to you, her voice has a seductive tone to it.")
+		saynn("Тави смело подходит к тебе, её голос звучит соблазнительно.")
 
-		saynn("[say=tavi]I wanna show you something.. Look closely.[/say]")
+		saynn("[say=tavi]Я хочу тебе кое-что показать... Присмотрись повнимательнее.[/say]")
 
-		saynn("She moves her paw to her head and then moves her hair aside, uncovering.. small, devilish horns that have emerged on her forehead. What? Were these always there?")
+		saynn("Она подносит лапку к голове и убирает волосы в сторону, обнажая... маленькие дьявольские рожки, прорезавшиеся на лбу. Что? Они что, всегда там были?")
 
-		saynn("[say=pc]Um..[/say]")
+		saynn("[say=pc]Эм..[/say]")
 
-		saynn("[say=tavi]How do they look~?[/say]")
+		saynn("[say=tavi]Ну как они тебе~?[/say]")
 
-		saynn("[say=pc]Like.. horns.[/say]")
+		saynn("[say=pc]Похожи на... рожки.[/say]")
 
-		saynn("Tavi smiles.")
+		saynn("Тави улыбается.")
 
-		saynn("[say=tavi]They sprung up today. I have zero idea why. But you know, I kinda like them~.[/say]")
+		saynn("[say=tavi]Они вылезли только сегодня. Понятия не имею почему. Но, знаешь, они мне даже нравятся~.[/say]")
 
-		saynn("She lets go of the hair, which hides her horns neatly. But for how long will these be invisible?")
+		saynn("Она отпускает волосы, которые аккуратно скрывают её рожки. Но надолго ли они останутся невидимыми?")
 
-		saynn("[say=pc]Is Eliza somehow involved? Did she feed you weird drugs?[/say]")
+		saynn("[say=pc]Элиза как-то к этому причастна? Она подсыпала тебе какие-то странные наркотики?[/say]")
 
-		saynn("Tavi shrugs and starts slowly stepping around you, her tail brushing against your chest.. against your crotch..")
+		saynn("Тави пожимает плечами и начинает медленно обходить тебя кругом, задевая хвостом твою грудь... и твою промежность...")
 
-		saynn("[say=tavi]No, she did not~. But I think her.. treatment.. is what pushed my body.. to start uncovering its true potential~.[/say]")
+		saynn("[say=tavi]Нет, не так~. Но мне кажется, её.. отношение.. заставило моё тело.. начать раскрывать свой истинный потенциал~.[/say]")
 
-		saynn("Tavi stops behind you and wraps her paws around your waist, gently caressing your curves.")
+		saynn("Тави останавливается позади тебя и обвивает лапами твою талию, нежно лаская твои изгибы.")
 
-		saynn("[say=tavi]And you.. You are the real reason I'm changing~. Please keep it up.[/say]")
+		saynn("[say=tavi]А ты.. Ты — настоящая причина моих перемен~. Пожалуйста, не останавливайся.[/say]")
 
-		saynn("She leans in closer to your ear, her touches are so warm..")
+		saynn("Она наклоняется ближе к твоему уху, её прикосновения такие тёплые..")
 
-		saynn("[say=tavi]Keep using me~. Fuck me, lick me, force me.. Corrupt me into your little.. demon.. slut.[/say]")
+		saynn("[say=tavi]Продолжай использовать меня~. Трахай меня, лижи меня, принуждай меня.. Разврати меня, преврати в свою маленькую.. демоницу.. шлюшку.[/say]")
 
-		saynn("Her voice tugs on all sorts of strings.. You feel like you can't say no.. At least not now..")
+		saynn("Её голос задевает все твои струны.. Кажется, ты просто не сможешь сказать «нет».. По крайней мере, не сейчас..")
 
-		addButton("Kiss her", "Her lips are so inviting", "kiss_tavi")
+		addButton("Поцеловать её", "Её губы так и манят", "kiss_tavi")
 	if(state == "kiss_tavi"):
 		playAnimation(StageScene.Hug, "hug", {npc="tavi"})
-		saynn("The voice coming from her lips is so alluring. You can't help but to turn around and kiss Tavi..")
+		saynn("Голос, исходящий от её губ, настолько соблазнителен. Ты не можешь удержаться и оборачиваешься, чтобы поцеловать Тави..")
 
-		saynn("The tall kitty purrs softly. But as soon as you try to end this little interaction, she pulls you in for a deeper kiss, thrusting her.. long.. feline tongue into your mouth and playing with yours, exchanging saliva.")
+		saynn("Высокая кошечка тихо мурлычет. Но как только ты пытаешься закончить это милое взаимодействие, она притягивает тебя для более глубокого поцелуя, вонзая свой.. длинный.. кошачий язык тебе в рот и играя им, обмениваясь слюной.")
 
-		saynn("The more you are kissing.. the more you feel your.. lust.. and pain.. fading.. almost like they're getting sucked away.. replaced by a feeling of exhaustion. Tavi's differently-colored eyes flash brightly, her paws explore your body, her claws gently scratching you.")
+		saynn("Чем дольше вы целуетесь.. тем сильнее ты чувствуешь, как твоё.. вожделение.. и боль.. угасают.. словно их высасывают.. сменяя чувством изнеможения. Разноцветные глаза Тави ярко вспыхивают, её лапы исследуют твоё тело, а когти нежно царапают кожу.")
 
-		saynn("Only after a few minutes, the feline finally satisfies her.. heat. She allows you to end the kiss and then just looks at you, smiling.")
+		saynn("Лишь спустя несколько минут кошка наконец утоляет свою.. жажду. Она позволяет тебе прервать поцелуй и просто смотрит на тебя с улыбкой.")
 
-		saynn("[say=tavi]Whatever it is.. It's clearly meant to be~. When you find yourself in hell, dance with the devil~.[/say]")
+		saynn("[say=tavi]Что бы это ни было.. явно судьба~. Если попал в ад — танцуй с дьяволом~.[/say]")
 
-		saynn("You slowly catch your breath. Wow.")
+		saynn("Ты медленно переводишь дух. Охренеть.")
 
-		addButton("Continue", "See what happens next", "start_talking")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talking")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

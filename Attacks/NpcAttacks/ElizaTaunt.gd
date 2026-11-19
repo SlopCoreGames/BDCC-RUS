@@ -6,13 +6,13 @@ func _init():
 	aiCategory = AICategory.Lust
 	
 func getVisibleName(_context = {}):
-	return "Eliza taunt"
+	return "Насмешка Элизы"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
-	var text = "You feel aroused after thinking about what Eliza said.."
+	var text = "Мысли о том, что сказала Элиза, вызывают у вас возбуждение..."
 	return {
 		text = text,
 		lust = 20,
@@ -22,7 +22,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	var text = "{attacker.name} stops fighting for a moment and offers you a cunning smile instead."
+	var text = "{attacker.name} на мгновение перестает сражаться и вместо этого одаривает вас лукавой улыбкой."
 
 	text += "\n\n"
 	text += "[say=eliza]"+RNG.pick([

@@ -10,18 +10,18 @@ func _run():
 		addCharacter("tavi")
 		aimCameraAndSetLocName("cellblock_red_nearcell")
 		
-		saynn("Tavi stands still near her bed. Her desires for today seem to be satisfied.")
+		saynn("Тави неподвижно стоит у своей кровати. Кажется, сегодня её желания удовлетворены.")
 		
 		if(taviModule.isVirgin()):
 			if(getFlag("TaviModule.Ch6TaviRegrewHymen")):
-				saynn("Tavi still has her regrown virginity.")
+				saynn("У Тави всё ещё восстановленная девственность.")
 			else:
-				saynn("Tavi still has her virginity.")
+				saynn("Тави всё ещё девственница.")
 			
-		sayn("Tavi's corruption is {taviCorruption}")
-		saynn("Tavi's tiredness is "+str(getFlag("TaviModule.Ch6Tiredness", 0)))
+		sayn("Развращённость Тави: {taviCorruption}")
+		saynn("Усталость Тави: "+str(getFlag("TaviModule.Ch6Tiredness", 0)))
 		
-		sayn("Tavi's skills:")
+		sayn("Навыки Тави:")
 		for skillID in taviModule.getAllSkills():
 			var skillInfo = taviModule.getSkillInfo(skillID)
 			if(skillInfo == null):
@@ -38,48 +38,48 @@ func _run():
 				if(taviModule.hasAllSkillsLearnedFully() && (taviModule.getCorruption() <= 0.0 || taviModule.getCorruption() >= 2.0)):
 					addButtonUnlessLate("Final Attack", "Use everything that you and Tavi learned to carry out the last attack.\n\nTo let Tavi help you during the final attack, she needs to be fully trained on all skills and her corruption needs to be either 0% or 200%", "start_final_attack")
 				else:
-					addDisabledButton("Final Attack", "To let Tavi help you during the final attack, she needs to be fully trained on all skills and her corruption needs to be either 0% or 200%")
+					addDisabledButton("Финальная атака", "Чтобы Тави помогла вам в финальной атаке, она должна быть полностью обучена всем навыкам, а уровень её развращённости должен составлять либо 0%, либо 200%")
 			else:
 				if(taviModule.getCorruption() <= 0.0 || taviModule.getCorruption() >= 2.0):
 					addButtonUnlessLate("Final Attack", "Use everything that you and Tavi learned to prepare the last attack.\n\nTavi's corruption needs to be either 0% or 200%", "start_plan_scene")
 				else:
-					addDisabledButton("Final Attack", "Use everything that you and Tavi learned to prepare the last attack.\n\nTavi's corruption needs to be either 0% or 200%")
+					addDisabledButton("Финальная атака", "Используйте всё, чему научились вы и Тави, чтобы подготовить решающий удар.\n\nРазвращённость Тави должна быть либо 0%, либо 200%")
 				
 		if(getFlag("TaviModule.Ch6Tiredness", 0) >= 3):
-			addDisabledButton("Train", "Tavi is too tired")
-			addDisabledButton("Activities", "Tavi is too tired")
+			addDisabledButton("Тренировать", "Тави слишком устала")
+			addDisabledButton("Занятия", "Тави слишком устала")
 		else:
-			addButton("Train", "Train one of Tavi's skills", "train_menu")
-			addButton("Activities", "See what you can do with Tavi", "activities_menu")
+			addButton("Тренировать", "Потренировать один из навыков Тави", "train_menu")
+			addButton("Занятия", "Посмотреть, на что способна Тави", "activities_menu")
 		
 		
-		addButton("Feed something", "Feed something to Tavi", "feedmenu")
-		addButton("Leave", "Enough talking", "endthescene")
+		addButton("Покормить", "Покормить Тави", "feedmenu")
+		addButton("Уйти", "Хватит болтать", "endthescene")
 		
 	if(state == "activities_menu"):
-		saynn("What do you wanna do with Tavi?")
+		saynn("Что ты хочешь сделать с Тави?")
 		
-		addButton("Shower", "Take a shower with Tavi", "do_activity", ["Ch6TaviShowerScene"])
+		addButton("Душ", "Пойти в душ вместе с Тави", "do_activity", ["Ch6TaviShowerScene"])
 		if(taviModule.getOverallCorruptStage() >= 1):
-			addButton("Milking", "Try to milk Tavi's breasts", "do_activity", ["Ch6TaviMilkingScene"])
+			addButton("Дойка", "Попытаться подоить грудь Тави", "do_activity", ["Ch6TaviMilkingScene"])
 		else:
-			addDisabledButton("Milking", "Tavi is not ready for this yet")
+			addDisabledButton("Дойка", "Тави еще не готова к этому")
 		if(taviModule.getOverallCorruptStage() >= 2):
-			addButton("Sleep with you", "Discuss Tavi sleeping in your cell", "do_sleepscene")
+			addButton("Переспать с тобой", "Обсудить то, что Тави спит в твоей камере", "do_sleepscene")
 		if(getFlag("TaviModule.Ch6TaviAndRahiStackSceneHappened")):
-			addButton("Tavi+Rahi", "Ask Tavi to bring Rahi", "do_activity", ["Ch6TaviRahiButtstackScene"])
+			addButton("Тави + Рахи", "Попросить Тави привести Рахи", "do_activity", ["Ch6TaviRahiButtstackScene"])
 		if(getFlag("TaviModule.Ch6CorruptionStage", 0) >= 1):
 			if(taviModule.hasAllSkillsLearnedFully() && getFlag("TaviModule.Ch6CorruptionStage", 0) >= 4):
-				addButton("Magic tricks", "Tavi's new form allows her to do some cool magic tricks..", "do_activity", ["Ch6TaviDemonScene"])
+				addButton("Фокусы", "Новая форма Тави позволяет ей творить крутые магические фокусы...", "do_activity", ["Ch6TaviDemonScene"])
 			else:
-				addDisabledButton("Magic tricks", "Tavi needs to reach 200% corruption and be fully trained on every skill before you can do this")
+				addDisabledButton("Фокусы", "Чтобы сделать это, уровень разврата Тави должен достичь 200%, а все навыки должны быть полностью прокачаны")
 			
-		addButton("Back", "Back to the previous menu", "")
+		addButton("Назад", "Назад в предыдущее меню", "")
 		
 	if(state == "train_menu"):
-		saynn("Which skill do you wanna train?")
+		saynn("Какой навык хочешь прокачать?")
 		
-		sayn("Tavi's skills:")
+		sayn("Навыки Тави:")
 		for skillID in taviModule.getAllSkills():
 			var skillInfo = taviModule.getSkillInfo(skillID)
 			if(skillInfo == null):
@@ -98,7 +98,7 @@ func _run():
 				continue
 			addButton(skillInfo["name"], skillInfo["desc"], "do_skill", [skillInfo])
 		
-		addButton("Back", "Go back", "")
+		addButton("Назад", "Назад", "")
 	
 		
 func _react(_action: String, _args):

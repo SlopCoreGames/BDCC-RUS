@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Taunt (Humiliate)"
+	return "Насмешка (Унижение)"
 	
 func getVisibleDesc(_context = {}):
 	return "You shouldn't see this"

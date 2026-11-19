@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Predator's Rush"
+	return "Рывок хищника"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -20,7 +20,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 		addLuxeRage(_attacker, 0.25)
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "{attacker.name} launches himself at you with terrifying speed, {attacker.his} shoulder slamming into your chest. The impact sends you sprawling, gasping for breath as pain flares through your ribs."
+	var text = "{attacker.name} бросается на тебя с ужасающей скоростью, {attacker.his} плечо врезается тебе прямо в грудь. От удара ты отлетаешь назад, судорожно хватая ртом воздух, пока резкая боль прошивает ребра."
 	
 	if(_receiver.addEffect(StatusEffect.Weakness, [2])):
 		text += " [b]You feel weak![/b]"
@@ -36,7 +36,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	var text = "{attacker.name} crouches low, {attacker.his} muscles tensing like coiled steel. {attacker.His} glowing fur begins to shimmer brighter as {attacker.he} prepares to pounce."
+	var text = "{attacker.name} пригибается к земле, {attacker.his} мышцы напрягаются, словно сжатая стальная пружина. {attacker.His} светящийся мех начинает мерцать ярче, когда {attacker.he} готовится к прыжку."
 
 	return text
 

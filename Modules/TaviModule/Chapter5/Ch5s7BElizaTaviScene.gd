@@ -7,408 +7,408 @@ func _run():
 	if(state == ""):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("You decide not to waste time and ask the doctor outright.")
+		saynn("Ты решаешь не тратить время и спрашиваешь доктора в лоб.")
 
-		saynn("[say=pc]Where is Tavi?[/say]")
+		saynn("[say=pc]Где Тави?[/say]")
 
-		saynn("Eliza smirks as she makes a quick last sip out of her special coffee mug.")
+		saynn("Элиза ухмыляется, делая последний быстрый глоток из своей особенной кружки.")
 
-		saynn("[say=eliza]You came to check on her? She is doing better than expected~.[/say]")
+		saynn("[say=eliza]Пришла проведать её? Она чувствует себя лучше, чем ожидалось~.[/say]")
 
-		saynn("[say=pc]What do you mean?[/say]")
+		saynn("[say=pc]В каком смысле?[/say]")
 
-		saynn("[say=eliza]I think it's best if you see it yourself~.[/say]")
+		saynn("[say=eliza]Думаю, тебе лучше увидеть всё своими глазами~.[/say]")
 
-		saynn("The feline leaves the counter and shows up behind one of the staff-only doors. She offers you to follow her deep into the medical wing.")
+		saynn("Кошка отходит от стойки и направляется к одной из дверей для персонала. Она предлагает тебе пройти вслед за ней вглубь медицинского крыла.")
 
-		addButton("Follow", "See where she brings you", "follow_eliza")
+		addButton("Следовать", "Посмотреть, куда она тебя приведет", "follow_eliza")
 	if(state == "follow_eliza"):
 		aimCameraAndSetLocName("med_milkingroom")
-		saynn("Doctor Quinn convoys you through the white sterile corridors.")
+		saynn("Доктор Куинн ведет тебя через стерильные белые коридоры.")
 
-		saynn("[say=eliza]I was pretty happy when that order came up. Tavi is a.. unique case. But don't worry, I handled it in the best way possible.[/say]")
+		saynn("[say=eliza]Я была довольно рада, когда пришел этот приказ. Тави — это... уникальный случай. Но не волнуйся, я распорядилась всем наилучшим образом.[/say]")
 
-		saynn("What is she talking about..")
+		saynn("О чем она вообще говорит...")
 
-		saynn("You enter some kind.. milking room. Lots of special equipment that is designed just for that. But Eliza brings you further into some secluded space.")
+		saynn("Ты входишь в своего рода доильный зал. Повсюду специальное оборудование, предназначенное именно для этого. Но Элиза ведет тебя дальше, в более уединенное место.")
 
-		saynn("Is that.. Tavi's moans?..")
+		saynn("Это что... стоны Тави?..")
 
-		addButton("Continue", "See what happens next", "tavi_reveal")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_reveal")
 	if(state == "tavi_reveal"):
 		addCharacter("tavi", ["naked"])
 		playAnimation(StageScene.BDSMMachineFuck, "wand", {pc="tavi", bodyState={naked=true, hard=true}})
-		saynn("You walk in and see Tavi.. trapped in some kind of.. machine. Her arms and legs are being held by special mechanical arms while a magic wand is pressed against her exposed pussy, vibrating so much that Tavi can't stop squirming and making those desperate noises.")
+		saynn("Ты входишь и видишь Тави... зажатую в какой-то... машине. Её руки и ноги удерживаются специальными механическими захватами, а к её обнажённой киске прижат магический жезл, который вибрирует так сильно, что Тави не может перестать извиваться и издавать эти отчаянные звуки.")
 
-		saynn("[say=tavi]NGh-h-h!.. Ahh-h-h.. f-f-fh-hk-..[/say]")
+		saynn("[say=tavi]Нгх-х-х!.. Аах-х-х.. ф-ф-фх-к!..[/say]")
 
-		saynn("[say=pc]Tavi![/say]")
+		saynn("[say=pc]Тави![/say]")
 
-		saynn("You try to approach her but Eliza stops you, her other paw is resting on her shock remote.")
+		saynn("Ты пытаешься подойти к ней, но Элиза останавливает тебя; её вторая лапа лежит на пульте дистанционного управления.")
 
-		saynn("[say=eliza]She can't hear you. Earplugs.[/say]")
+		saynn("[say=eliza]Она тебя не слышит. Беруши.[/say]")
 
-		saynn("Yeah.. Tavi looks quite.. spaced out.. Her gaze is constantly directed to some screen that keeps count of her orgasms.. 387.. Wow.. Suddenly Tavi starts arching her back, her green moist pussy pulsating before squirting out some of her juices.. 388.")
+		saynn("Да... Тави выглядит совсем... отсутствующей... Её взгляд постоянно прикован к экрану, который ведёт счёт её оргазмам... 387... Ого... Внезапно Тави выгибает спину, её влажная зелёная киска пульсирует, прежде чем из неё брызжет сок... 388.")
 
-		saynn("Even when the feline tries to look away, the mechanical hand with the screen follows her movements. And if she tries to close her eyes.. the buzzing only gets louder. You notice that the screen also.. praises Tavi?.. For being a good girl.")
+		saynn("Даже когда кошечка пытается отвернуться, механическая рука с экраном следует за её движениями. А если она пытается закрыть глаза... жужжание становится только громче. Ты замечаешь, что экран также... хвалит Тави?.. За то, что она «хорошая девочка».")
 
-		saynn("[say=pc]The fuck are you doing to her?[/say]")
+		saynn("[say=pc]Какого хрена ты с ней творишь?[/say]")
 
-		saynn("[say=eliza]It's called.. Positive enforced reinforcement learning therapy. A real mouthful, I know. It's an experimental tech to improve someone's behavior.[/say]")
+		saynn("[say=eliza]Это называется... терапия методом положительного принудительного подкрепления. Звучит громоздко, знаю. Это экспериментальная технология для улучшения чьего-то поведения.[/say]")
 
-		saynn("Eliza approaches Tavi and pats her on the head. All the while the feline can't stop drooling, her eyes constantly trying to roll up but the toy is forcing her to stay actively engaged. You hear.. words.. coming out of her earplugs.. Tavi is also being forced to listen to something.")
+		saynn("Элиза подходит к Тави и гладит её по голове. При этом кошечка не может перестать пускать слюни, её глаза постоянно пытаются закатиться, но игрушка заставляет её оставаться в активном состоянии. Ты слышишь... слова... доносящиеся из её берушей... Тави тоже заставляют что-то слушать.")
 
-		saynn("[say=tavi]Nghh-h-h.. ah-h-h.. h-h-h.[/say]")
+		saynn("[say=tavi]Нгхх-х-х.. ах-х-х.. х-х-х.[/say]")
 
-		saynn("[say=eliza]And I think it's a success.. Even after a few first hours our patient has already begun showing signs of improvement. Tavi here stopped hissing at me.. No more threats to kill me or anyone else too. Basically she is gonna be less prone to cause conflicts from now on. A perfect trait for an inmate to have. I think this is her.. fifth session already?[/say]")
+		saynn("[say=eliza]И, кажется, это успех.. Даже спустя всего несколько часов наша пациентка уже начала подавать признаки улучшения. Тави перестала шипеть на меня.. Больше никаких угроз прикончить меня или кого-то ещё. По сути, теперь она будет меньше склонна к конфликтам. Идеальная черта для заключенной. Кажется, это уже её.. пятая сессия?[/say]")
 
-		saynn("That is.. wow.. You're not even sure how to react yet. Eliza returns to you with a biggest smile on her head.")
+		saynn("Это.. вау.. Ты даже не знаешь, как на это реагировать. Элиза возвращается к тебе с широчайшей улыбкой на лице.")
 
-		saynn("[say=eliza]There were some complications at first. Did you know that she is still a virgin~? This patient managed to keep herself from having any penetrative sex acts all this time. I think that will change soon though.. But I decided to use external vibrations as a vector of influence instead for now. I would be quite.. humiliated.. if my virginity was taken.. by a machine. What do you think?[/say]")
+		saynn("[say=eliza]Сначала возникли некоторые осложнения. Ты знал, что она всё ещё девственница~? Пациентке удавалось избегать любого проникновения всё это время. Думаю, скоро это изменится.. Но пока я решила использовать внешнюю вибрацию в качестве вектора воздействия. Было бы довольно.. унизительно.. если бы мою девственность забрала.. машина. Что думаешь?[/say]")
 
-		saynn("[say=tavi]KH-h-h!.. AH-hHh!..[/say]")
+		saynn("[say=tavi]КХ-х-х!.. АХ-х-х!..[/say]")
 
-		saynn("Another few orgasms rock Tavi's body. Her poor pussy looks much more green than usually, the sensitive skin there is so irritated by this point that her folds.. are glowing..")
+		saynn("Ещё несколько оргазмов сотрясают тело Тави. Её бедная киска выглядит куда более покрасневшей, чем обычно; чувствительная кожа к этому моменту настолько раздражена, что её складки.. буквально светятся..")
 
-		addButton("Continue", "See what happens next", "tavi_stop_vib")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_stop_vib")
 	if(state == "tavi_stop_vib"):
 		playAnimation(StageScene.BDSMMachineFuck, "tease", {pc="tavi", bodyState={naked=true, hard=true}})
-		saynn("As the screen hits the number 400.. the machine suddenly turns off.. Tavi is still held in place but the magic wand tool stops vibrating and gets retracted away from her pulsing squirting pussy.")
+		saynn("Как только на экране появляется число 400.. машина внезапно выключается.. Тави всё ещё зафиксирована, но магический вибратор перестаёт вибрировать и уходит от её пульсирующей, сочащейся смазкой киски.")
 
-		saynn("Eliza starts freeing Tavi.")
+		saynn("Элиза начинает освобождать Тави.")
 
-		saynn("[say=eliza]Should be it, she is yours now.[/say]")
+		saynn("[say=eliza]На этом всё, теперь она твоя.[/say]")
 
-		saynn("[say=pc]What do you mean?[/say]")
+		saynn("[say=pc]В каком смысле?[/say]")
 
-		saynn("Doctor tries to help Tavi to get up. But her legs are still shaking, causing the tall kitty to drop to her knees before you two.")
+		saynn("Доктор пытается помочь Тави подняться. Но её ноги всё ещё дрожат, из-за чего высокая кошечка падает перед вами на колени.")
 
-		addButton("Continue", "See what happens next", "tavi_on_her_knees")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_on_her_knees")
 	if(state == "tavi_on_her_knees"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcAction="kneel", npcBodyState={naked=true}})
-		saynn("[say=tavi]Ngh-h.. Is that it?.. I can take more.. I wanna take more..[/say]")
+		saynn("[say=tavi]Нгх-х.. Это всё?.. Я могу больше.. Хочу ещё..[/say]")
 
-		saynn("Eliza smiles and pats Tavi on the head.")
+		saynn("Элиза улыбается и гладит Тави по голове.")
 
-		saynn("[say=eliza]I think this patient is no longer.. capable.. of having any control over others. So you might as well grab her leash.. before someone else does. If you know what I mean~.[/say]")
+		saynn("[say=eliza]Думаю, эта пациентка больше не.. способна.. контролировать кого-либо. Так что тебе лучше схватить её поводок.. пока это не сделал кто-то другой. Если ты понимаешь, о чём я~.[/say]")
 
-		saynn("Tavi nuzzles into the pats and slowly calms down after that.. therapy.. her paws sliding over her own curves.. groping her perky tits.. rubbing her wet crotch.. in your clear view.")
+		saynn("Тави прижимается к ласковым рукам и постепенно успокаивается после этой.. терапии.. её лапки скользят по её собственным изгибам.. ощупывают упругую грудь.. потирают мокрый промежность.. прямо у тебя на виду.")
 
-		saynn("[say=tavi]Mur-r-r.. Yes.. Please leash this slutty pet.. and then pin her against something.. and then.. and then..[/say]")
+		saynn("[say=tavi]Мур-р-р.. Да.. Пожалуйста, надень поводок на эту шлюшку.. а потом прижми её к чему-нибудь.. а потом.. а потом..[/say]")
 
-		saynn("Eliza slides some digits into Tavi's mouth before she gets too excited. The purple feline obediently starts sucking on them while looking up at you with her lusty eyes. You can't.. believe.. what they did with Tavi..")
+		saynn("Элиза просовывает пальцы в рот Тави, пока та не перевозбудилась слишком сильно. Послушная фиолетовая кошка начинает сосать их, глядя на тебя своими похотливыми глазами. Ты просто.. не можешь.. поверить.. что они сотворили с Тави..")
 
-		saynn("The doctor grabs a chain leash and offers it to you.")
+		saynn("Доктор берет цепь-поводок и протягивает её тебе.")
 
-		addButton("Attack Eliza", "She did this.. She must pay..", "attack_eliza")
-		addButton("Leash Tavi", "Grab Tavi's leash and leave this place..", "grab_the_leash")
+		addButton("Атаковать Элизу", "Это она сделала.. Она должна заплатить..", "attack_eliza")
+		addButton("Взять Тави на поводок", "Схватить поводок Тави и убраться отсюда...", "grab_the_leash")
 	if(state == "grab_the_leash"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcAction="allfours", further=true, npcBodyState={naked=true, leashedBy="pc"}})
-		saynn("You can't really fix anything now. So might as well just go with the flow.")
+		saynn("Сейчас уже всё равно ничего не исправить. Так что можно просто плыть по течению.")
 
-		saynn("As you fetch the leash from Eliza, Tavi is already crawling up to you, her snout rubbing against your {pc.masc} thigh.")
+		saynn("Пока ты забираешь поводок у Элизы, Тави уже подползает к тебе, притираясь мордочкой к твоему {pc.masc} бедру.")
 
-		saynn("[say=tavi]Will you fuck me?.. Will you fuck me ple-e-ease?.. Pretty please?..[/say]")
+		saynn("[say=tavi]Ты трахнешь меня?.. Ну пожалуйста, трахни меня!.. Ну очень-очень прошу?..[/say]")
 
-		saynn("[say=pc]Let's get you out of here first..[/say]")
+		saynn("[say=pc]Давай сначала вытащим тебя отсюда..[/say]")
 
-		saynn("So strange to see her like this. You click the leash to her collar and grab the other end. Eliza just can't hide how smug she is about this whole situation.")
+		saynn("Так странно видеть её в таком состоянии. Ты защелкиваешь поводок на её ошейнике и берешься за другой конец. Элиза просто не может скрыть своего самодовольства от всей этой ситуации.")
 
-		saynn("[say=pc]Where is her.. uniform?[/say]")
+		saynn("[say=pc]А где её... форма?[/say]")
 
-		saynn("[say=eliza]Oh, her original one got a little torn up. I ordered a new one. It's in her cell.[/say]")
+		saynn("[say=eliza]О, её старая немного порвалась. Я заказала новую. Она в её камере.[/say]")
 
-		saynn("Right.. So Tavi is gonna stay naked for now.. And she can't really stand up because her body is too exhausted..")
+		saynn("Понятно... Значит, Тави пока будет ходить голышом... И она почти не может стоять, потому что её тело слишком измотано...")
 
-		saynn("[say=eliza]Ready? Follow me then~.[/say]")
+		saynn("[say=eliza]Готов? Тогда иди за мной~.[/say]")
 
-		addButton("Follow", "See where Eliza brings you", "follow_to_lobby")
+		addButton("Следовать", "Посмотрим, куда тебя приведёт Элиза", "follow_to_lobby")
 	if(state == "follow_to_lobby"):
 		playAnimation(StageScene.Duo, "walk", {npc="tavi", npcAction="crawl", flipNPC=true, npcBodyState={naked=true, leashedBy="pc"}})
 		removeCharacter("eliza")
 		aimCameraAndSetLocName("med_lobbynw")
-		saynn("Eliza brings you out into the lobby. Leashed Tavi is crawling by your side, catching many gazes from the random nurses. And she doesn't seem.. uncomfortable.")
+		saynn("Элиза выводит тебя в вестибюль. Тави на поводке ползет рядом с тобой, ловя на себе множество взглядов случайных медсестер. И, кажется, она совсем не... смущена.")
 
-		saynn("[say=eliza]That's where I leave you~. Have fun.[/say]")
+		saynn("[say=eliza]На этом всё, оставляю вас~. Развлекайтесь.[/say]")
 
-		saynn("[say=pc]Wait. How do I.. make her act normal again?[/say]")
+		saynn("[say=pc]Погоди. И как мне... заставить её снова вести себя нормально?[/say]")
 
-		saynn("Eliza raises a brow while Tavi puts her head under your hand, making you pet and stroke her.")
+		saynn("Элиза приподнимает бровь, а Тави подставляет голову под твою руку, призывая погладить и потискать её.")
 
-		saynn("[say=eliza]Why though~? Isn't she much more cute and adorable this way? She will do anything you want.[/say]")
+		saynn("[say=eliza]А зачем? Разве так она не стала куда милее и очаровательнее? Она будет делать всё, что ты пожелаешь.[/say]")
 
-		saynn("[say=pc]Yeah, but..[/say]")
+		saynn("[say=pc]Да, но...[/say]")
 
-		saynn("Eliza walks up to you and leans closer to your ear, her voice becoming more intimidating.")
+		saynn("Элиза подходит к тебе и наклоняется к самому уху, её голос становится более внушительным.")
 
-		saynn("[say=eliza]Listen. Tavi was a huge pain in the ass for everyone. She is still Tavi. She has all her memories. And she regrets what she did. But now she has found a better path. You should help her follow it.[/say]")
+		saynn("[say=eliza]Слушай. Тави была жуткой занозой в заднице для всех окружающих. Но она всё та же Тави. У неё остались все её воспоминания. И она жалеет о том, что натворила. Но теперь она нашла лучший путь. Тебе стоит помочь ей по нему идти.[/say]")
 
-		saynn("Right.. Eliza offers you a kind smile and then finally leaves you and Tavi alone.")
+		saynn("Верно... Элиза одаривает тебя доброй улыбкой и, наконец, оставляет тебя и Тави наедине.")
 
-		saynn("[say=tavi]What did miss Eliza say..[/say]")
+		saynn("[say=tavi]Что там сказала мисс Элиза..[/say]")
 
-		saynn("[say=pc]Nothing. Let's go Tavi. You look tired.[/say]")
+		saynn("[say=pc]Ничего. Пошли, Тави. Ты выглядишь уставшей.[/say]")
 
-		saynn("You walk up to the elevator doors and press the button to call it.")
+		saynn("Ты подходишь к дверям лифта и нажимаешь кнопку вызова.")
 
-		saynn("[say=tavi]I wanna hump you while we cuddle~. Should I call you an owner, owner?[/say]")
+		saynn("[say=tavi]Я хочу трахать тебя, пока мы обнимаемся~. Может, мне называть тебя «хозяюшка», хозяюшка?[/say]")
 
-		saynn("[say=pc]I'm not your owner.. You are my owner, Tavi.[/say]")
+		saynn("[say=pc]Я не твоя хозяйка.. Ты мой хозяин, Тави.[/say]")
 
-		saynn("Tavi bleps. It seems.. you will have to be her owner for now..")
+		saynn("Тави облизывается. Похоже.. пока что тебе придется стать её хозяином..")
 
-		addButton("Continue", "See what happens next", "tavi_in_cellblock")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_in_cellblock")
 	if(state == "tavi_in_cellblock"):
 		playAnimation(StageScene.Duo, "walk", {npc="tavi", npcAction="crawl", flipNPC=true, npcBodyState={naked=true, leashedBy="pc"}})
 		aimCameraAndSetLocName("hall_mainentrance")
-		saynn("You walk Tavi into the main hall. The checkpoint guard laughs when he sees her crawling past him. But hearing her hiss at him catches him off-guard. Huh.")
+		saynn("Ты ведешь Тави в главный зал. Охранник на КПП смеется, видя, как она ползет мимо него. Но её шипение застает его врасплох. Хм.")
 
-		saynn("Other inmates are staring at your new pet as well.. It's hard not to when her green shiny privates are on display.. Tavi leaves a little trail of her pussy juices behind her as she crawls near you.")
+		saynn("Другие заключенные тоже пялятся на твою новую питомицу.. Трудно не пялиться, когда её блестящие зеленые киски на виду.. Тави оставляет за собой влажный след из соков своей щелочки, пока ползет рядом с тобой.")
 
-		saynn("[say=tavi]Everyone is looking at me.. They probably want my needy pussy.. Or my tits?.. My long rough tongue?[/say]")
+		saynn("[say=tavi]Все смотрят на меня.. Наверное, они хотят мою жаждущую киску.. Или сиськи?.. Мой длинный шершавый язык?[/say]")
 
-		saynn("Yeah, better pull her out of there before you are surrounded.")
+		saynn("Да, лучше вытащи её оттуда, пока вас не окружили.")
 
-		addButton("Tavi's cell", "Find her cell", "find_tavi_cell")
+		addButton("Камера Тави", "Найти её камеру", "find_tavi_cell")
 	if(state == "find_tavi_cell"):
 		aimCameraAndSetLocName("cellblock_red_nearcell")
 		GM.pc.setLocation("cellblock_red_nearcell")
 		playAnimation(StageScene.Sleeping, "idle", {pc="tavi", bodyState={naked=true}})
 		setFlag("TaviModule.Ch5TaviSavedDay", GM.main.getDays())
-		saynn("You go down to the level where all the cell blocks are and enter the high security one.")
+		saynn("Вы спускаетесь на уровень, где расположены все блоки камер, и заходите в сектор строгого режима.")
 
-		saynn("[say=pc]Where is your cell, Tavi?[/say]")
+		saynn("[say=pc]Где твоя камера, Тави?[/say]")
 
-		saynn("She points at one of the cells. Huh, strange. You don't remember ever being in her cell.")
+		saynn("Она указывает на одну из камер. Хм, странно. Вы не помните, чтобы когда-либо были в её камере.")
 
-		saynn("You enter it and see.. just a normal cell. The only unique thing about it is that.. It's perfectly clean. There is also an inmate uniform waiting on the bed.")
+		saynn("Вы заходите внутрь и видите... обычную камеру. Единственное, что в ней необычного — она идеально чистая. А на кровати ждёт тюремная роба.")
 
-		saynn("[say=pc]Are you ready to talk?[/say]")
+		saynn("[say=pc]Ты готова поговорить?[/say]")
 
-		saynn("[say=tavi]About what.. Did I do something wrong?.. Are you gonna punish your slut?.. Choke her a little bit maybe?..[/say]")
+		saynn("[say=tavi]О чём?.. Я что-то сделала не так?.. Ты собираешься наказать свою сучку?.. Может, немного придушить её?..[/say]")
 
-		saynn("Right.. It's probably best to let Tavi rest another day before asking anything.")
+		saynn("Верно... Пожалуй, лучше дать Тави ещё день отдохнуть, прежде чем о чём-то спрашивать.")
 
-		saynn("[say=pc]Nevermind. I want you to be in your cell, okay? You need rest.[/say]")
+		saynn("[say=pc]Неважно. Я хочу, чтобы ты оставалась в своей камере, ладно? Тебе нужно отдохнуть.[/say]")
 
-		saynn("[say=tavi]Sure, I can do that.. But will you come and play with me soon? I promise to be a good slut![/say]")
+		saynn("[say=tavi]Конечно, я так и сделаю... Но ты ведь скоро придешь поиграть со мной? Обещаю быть послушной шлюшкой![/say]")
 
-		saynn("You sigh and nod. Tavi purrs happily. She climbs onto her bed and just.. flops onto it. Still naked. You pull the blanket over her and tuck her in.")
+		saynn("Ты вздыхаешь и киваешь. Тави довольно мурлычет. Она забирается на кровать и просто... плюхается на неё. Всё ещё голышом. Ты накрываешь её одеялом и укутываешь.")
 
-		saynn("Time to go..")
+		saynn("Пора идти..")
 
-		addButton("Continue", "This was something..", "endthescene")
+		addButton("Продолжить", "Это было нечто...", "endthescene")
 	if(state == "attack_eliza"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("You can't let her get away with it.. So you wait for a good moment and try to grab Eliza. She clearly expected that because her hand reaches out for her shock remote almost instantly.")
+		saynn("Нельзя позволить ей выйти сухой из воды... Ты выжидаешь подходящий момент и пытаешься схватить Элизу. Она явно этого ожидала, потому что её рука почти мгновенно потянулась к пульту шоковой терапии.")
 
-		saynn("Luckily, you managed to slap it out of her paw before she presses anything on it.")
+		saynn("К счастью, тебе удалось выбить его из её лап прежде, чем она успела что-то нажать.")
 
-		saynn("[say=eliza]Hah. You're so angry. Actions come with consequences. Both of you should have learned that already.[/say]")
+		saynn("[say=eliza]Хах. Ты такая злюка. У каждого действия есть последствия. Вам обеим давно пора было это усвоить.[/say]")
 
-		saynn("[say=pc]You're about to learn that too.[/say]")
+		saynn("[say=pc]Сейчас ты это тоже усвоишь.[/say]")
 
-		saynn("Seems it's a fight..")
+		saynn("Похоже, назревает драка...")
 
-		addButton("Fight", "Start the fight", "start_eliza_fight")
+		addButton("Драться", "Начать бой", "start_eliza_fight")
 	if(state == "lost_eliza"):
 		playAnimation(StageScene.Duo, "defeat", {npc="eliza"})
-		saynn("Defeated, you collapse to your knees. Eliza extends her claws and presses them into your shoulder, forcing a painful noise out of you.")
+		saynn("Потерпев поражение, ты падаешь на колени. Элиза выпускает когти и вонзает их тебе в плечо, заставляя издать болезненный стон.")
 
-		saynn("[say=eliza]See, you can't change anything. Relax. Or I will test the therapy on you as well.[/say]")
+		saynn("[say=eliza]Видишь, ты ничего не можешь изменить. Расслабься. Или я протестирую терапию и на тебе тоже.[/say]")
 
-		saynn("She offers you the leash again.. It seems there is no other choice.")
+		saynn("Она снова протягивает тебе поводок... Кажется, другого выбора нет.")
 
-		addButton("Leash Tavi", "Grab Tavi's leash and leave this place..", "grab_the_leash")
+		addButton("Взять Тави на поводок", "Схватить поводок Тави и убраться отсюда...", "grab_the_leash")
 	if(state == "won_eliza"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcAction="defeat"})
-		saynn("Eliza hisses as she hits the floor. She lost. And that gives you the right to do anything with her.")
+		saynn("Элиза шипит, падая на пол. Она проиграла. А это дает тебе право делать с ней всё, что угодно.")
 
-		saynn("[say=eliza]Argh.. It's too late.. Tavi is nothing but a slut now. She is not gonna be our problem ever again.[/say]")
+		saynn("[say=eliza]Арх.. Уже слишком поздно.. Тави теперь просто шлюха. Она больше никогда не будет нашей проблемой.[/say]")
 
-		saynn("Her words fill you with rage.. There is only one thing you can do now to get at least some kind of revenge.. Throw her into the machine she created.")
+		saynn("Её слова наполняют тебя яростью... Теперь есть только один способ хоть как-то отомстить... Бросить её в ту самую машину, которую она сама и создала.")
 
-		saynn("[say=pc]What happened to fixing rather than breaking?[/say]")
+		saynn("[say=pc]А как же принцип «чинить, а не ломать»?[/say]")
 
-		saynn("Doctor pants heavily but she also has a big smirk on her face.")
+		saynn("Доктор тяжело дышит, но на её лице играет широкая ухмылка.")
 
-		saynn("[say=eliza]What about it? She is still Tavi, with all her memories of all the terrible things she did. And trust me, she regrets every single one.[/say]")
+		saynn("[say=eliza]И что с того? Она всё та же Тави, со всеми воспоминаниями о том дерьме, что она творила. И поверь мне, она жалеет о каждом грёбаном моменте.[/say]")
 
-		saynn("You start forcibly taking off Eliza's clothes. She tries to resist but a few slaps on her face make her come around. Underneath her top and long skirt.. are some fancy black lacy undergarments.. that you just pull off.")
+		saynn("Ты начинаешь силой срывать с Элизы одежду. Она пытается сопротивляться, но пара пощёчин приводит её в чувство. Под топом и длинной юбкой обнаруживается изысканное чёрное кружевное бельё... которое ты просто срываешь с неё.")
 
-		saynn("[say=eliza]H-hey! Just fuck your new slut, not me![/say]")
+		saynn("[say=eliza]Эй! Трахни свою новую шлюху, а не меня![/say]")
 
-		saynn("[say=pc]Who said that I will be the one fucking you?[/say]")
+		saynn("[say=pc]А кто сказал, что трахать тебя буду именно я?[/say]")
 
-		addButton("Machine", "Tie Eliza to the machine", "tie_eliza_machine")
+		addButton("Машина", "Привязать Элизу к машине", "tie_eliza_machine")
 	if(state == "tie_eliza_machine"):
 		playAnimation(StageScene.BDSMMachineFuck, "tease", {pc="eliza", bodyState={naked=true}})
-		saynn("You grab and throw Eliza onto the same table that Tavi was on. You quickly secure her wrists and ankles using the mechanical arms, making doctor Quinn completely helpless.")
+		saynn("Вы хватаете Элизу и швыряете её на тот же стол, где лежала Тави. Вы быстро фиксируете её запястья и лодыжки механическими захватами, делая доктора Куинн совершенно беспомощной.")
 
-		saynn("[say=eliza]Stop it! Release me! At once![/say]")
+		saynn("[say=eliza]Прекрати! Отпусти меня! Немедленно![/say]")
 
-		saynn("You find the control panel. Oh wow. There are more buttons that you thought there would be. Enough for you to have all the fun.")
+		saynn("Вы находите панель управления. Ого! Тут кнопок гораздо больше, чем вы ожидали. Хватит на то, чтобы вы могли оторваться по полной.")
 
-		saynn("[say=pc]How about this instead.[/say]")
+		saynn("[say=pc]А как насчет этого?[/say]")
 
-		addButton("Magic wand", "Turn on the machine", "eliza_magic_wand")
+		addButton("Волшебная палочка", "Включить машину", "eliza_magic_wand")
 	if(state == "eliza_magic_wand"):
 		playAnimation(StageScene.BDSMMachineFuck, "wand", {pc="eliza", bodyState={naked=true}})
-		saynn("You press a button that causes the machine to extend its magic wand tool. It wastes no time, pressing it directly against Eliza's pussy before turning the vibrations on.")
+		saynn("Вы нажимаете кнопку, и машина выпускает свой инструмент — «волшебную палочку». Не теряя ни секунды, она прижимается прямо к киске Элизы и включает вибрацию.")
 
-		saynn("[say=eliza]Ah!..[/say]")
+		saynn("[say=eliza]Ах!..[/say]")
 
-		saynn("The feline trembles, trying to struggle against the arms but the machine has her firmly in place. And even if she tries to move out of the way, the magic wand follows her movements, pushing its vibrating sphere firmly against that pink slit.")
+		saynn("Кошечка дрожит, пытаясь вырваться из хватки манипуляторов, но машина держит её мёртвой хваткой. И даже если она пытается увернуться, «волшебная палочка» следует за каждым её движением, с силой вжимая вибрирующий шарик в розовую щелочку.")
 
-		saynn("[say=eliza]No!.. Stop it.. F-fuck!..[/say]")
+		saynn("[say=eliza]Нет!.. Прекрати.. Б-блядь!..[/say]")
 
-		saynn("She is still fighting against the machine, her body straining and contorting in a desperate attempt to escape the overwhelming sensations. But very soon, she begins losing.. More and more moans start escaping from her lips as her sensitive folds become all wet and needy.")
+		saynn("Она всё ещё борется с машиной, её тело напрягается и изгибается в отчаянной попытке сбежать от этого всепоглощающего ощущения. Но очень скоро она начинает сдаваться... Всё больше стонов вырывается из её губ, а её чувствительные складки становятся совсем мокрыми и жаждущими.")
 
-		saynn("[say=pc]You're just a slut. Tell me how to fix Tavi or this will quickly get worse.[/say]")
+		saynn("[say=pc]Ты просто шлюха. Скажи, как исправить Тави, иначе всё очень быстро станет только хуже.[/say]")
 
-		saynn("[say=eliza]Ahaha!.. You can't! She is already fixed! And I'm not!.. I'm not a slut.. Ah-h.. T-this is t-too m-much.. F-fu-uck..[/say]")
+		saynn("[say=eliza]Ахаха!.. Не сможешь! Она уже исправлена! А я — нет!.. Я не шлюха.. Ах-х.. Э-это с-слишком м-много.. Б-блядь..[/say]")
 
-		saynn("Tavi had to go through this. So might as well let the doctor feel the same. You find some buttons that turn on the screen and make it show some kind of hardcore porn for Eliza. If she closes her eyes or looks away, the wand instantly buzzes harder, making it painful even.")
+		saynn("Тави пришлось через это пройти. Так почему бы не дать доктору почувствовать то же самое? Вы находите несколько кнопок, которые включают экран, и на нём начинает транслироваться какое-то хардкорное порно для Элизы. Если она зажмурится или отведёт взгляд, вибратор мгновенно начинает жужжать сильнее, доводя ощущения до болезненных.")
 
-		saynn("[say=eliza]N-no!.. S-stupid.. M-machine.. Ah-h-h!..[/say]")
+		saynn("[say=eliza]Н-нет!.. Г-лупая.. М-машина.. Ах-х-х!..[/say]")
 
-		saynn("You can tell that she is close already, Eliza is squirming a lot. Oh, wait. 'Edging' mode? Interesting. You flick the switch and notice how the vibrations are now carefully controlled by the machine. As soon as it detects that Eliza is about to cum, it instantly lowers the stimulation to the painfully low levels.")
+		saynn("Можно заметить, что она уже на пределе, Элиза сильно ерзает. О, погодите. Режим «Эджинга»? Интересно. Вы щелкаете переключателем и замечаете, что теперь вибрация тщательно контролируется машиной. Как только она распознаёт, что Элиза вот-вот кончит, она мгновенно снижает стимуляцию до почти болезненно низкого уровня.")
 
-		saynn("[say=eliza]Ah!.. I was close!.. F-fuck you!.. P-please!.. I c-can't!..[/say]")
+		saynn("[say=eliza]Ах!.. Я была так близко!.. Б-блядь тебя!.. П-пожалуйста!.. Я н-не могу!..[/say]")
 
-		saynn("[say=pc]Say that you're a slut?[/say]")
+		saynn("[say=pc]Скажи, что ты шлюха?[/say]")
 
-		saynn("[say=eliza]N-no!.. Never!..[/say]")
+		saynn("[say=eliza]Н-нет!.. Никогда!..[/say]")
 
-		saynn("You shrug and let the machine bring her to the edge again. Eliza's pussy is twitching and leaking juices so much.. but she never actually cums. Poor feline is thrashing hard against the arms that restrain her but she can't do anything. She can only endure this torture.")
+		saynn("Ты пожимаешь плечами и позволяешь машине снова довести её до самого края. Пизда Элизы подергивается и так сильно течет... но она всё никак не может кончить. Бедная кошечка отчаянно бьется в удерживающих её руках, но ничего не может поделать. Ей остается только терпеть эту пытку.")
 
-		saynn("[say=eliza]F-fine!.. I'm a slut!.. A whore.. A bitch.. A cunt.. Anyone you want me to be, just let me cum, ple-e-ease!..[/say]")
+		saynn("[say=eliza]Ладно!.. Хорошо!.. Я шлюха!.. Шалава.. Сучка.. Пизда.. Кем угодно, кем захочешь, только дай мне кончить, по-о-ожалуйста!..[/say]")
 
-		saynn("Good enough. You turn off the edging mode and watch Eliza getting forced over her edge in seconds. She finally succumbs to the overpowering sensations, her body convulsing uncontrollably as waves of pleasure are crashing over her.")
+		saynn("Достаточно. Ты выключаешь режим эджинга и наблюдаешь, как Элизу за считанные секунды выбрасывает за грань. Она наконец сдается под натиском всепоглощающих ощущений, её тело неконтролируемо содрогается, когда волны удовольствия обрушиваются на неё.")
 
-		saynn("[say=eliza]Ah-h~!.. Y-yes!.. F-fuck yes!.. So good..[/say]")
+		saynn("[say=eliza]Ах-х~!.. Д-да!.. Бля-а-а, да!.. Так хорошо..[/say]")
 
-		saynn("[say=pc]And we're not gonna stop there. Since you're such a good slut, you deserve all of it.[/say]")
+		saynn("[say=pc]И на этом мы не остановимся. Раз уж ты такая послушная шлюшка, ты заслужила всё до последней капли.[/say]")
 
-		saynn("[say=eliza]W-what?.. N-no!.. It's too much!..[/say]")
+		saynn("[say=eliza]Ч-что?.. Н-нет!.. Это слишком!..[/say]")
 
-		saynn("Huh, what does this button do?")
+		saynn("Хм, а что делает эта кнопка?")
 
-		addButton("Dildo", "Press some button", "eliza_dildo_start")
+		addButton("Дилдо", "Нажать на кнопку", "eliza_dildo_start")
 	if(state == "eliza_dildo_start"):
 		playAnimation(StageScene.BDSMMachineFuck, "sex", {pc="eliza", bodyState={naked=true}})
-		saynn("You press it and a magic wand tool gets retracted.. replaced by something much better.. a dildo! It extends further until the tip finds Eliza's pussy and prods at the wet entrance a few times.")
+		saynn("Ты нажимаешь на неё, и магический жезл убирается.. сменяясь чем-то гораздо лучшим.. дилдо! Он выдвигается дальше, пока кончик не находит пизду Элизы и не начинает несколько раз тыкать в её влажное отверстие.")
 
-		saynn("[say=eliza]H-hey! I-it will break me!..[/say]")
+		saynn("[say=eliza]Эй! О-он же меня разорвет!..[/say]")
 
-		saynn("[say=pc]Good.[/say]")
+		saynn("[say=pc]Умница.[/say]")
 
-		saynn("Eliza gasps as she machine thrusts that pink dildo inside, spreading her slick folds and filling her completely as it delves deep into her inviting depths. A mix of pleasure and anger escaping her lips as the machine starts fucking her relentlessly, forcing that rubber cock inside her again and again..")
+		saynn("Элиза ахает, когда машина с силой вгоняет этот розовый дилдо внутрь, раздвигая её влажные складки и заполняя её целиком, пока он проникает в самые сокровенные глубины. С её губ срывается смесь удовольствия и гнева, когда машина начинает безжалостно трахать её, раз за разом вбивая резиновый член в её нутро.")
 
-		saynn("Eliza's senses get overloaded as the machine pushes her closer to the edge once again. Her pulsating walls are tightening around the rubber shaft before her pussy suddenly produces a fountain of juices.")
+		saynn("Чувства Элизы перегружаются, когда машина снова подталкивает её к самому краю. Её пульсирующие стенки сжимаются вокруг резинового стержня, прежде чем из её киски внезапно бьёт фонтан соков.")
 
-		saynn("[say=eliza]Ngh-h!..[/say]")
+		saynn("[say=eliza]Нгх-х!..[/say]")
 
-		saynn("All this time Tavi is just catching her breath sitting on the floor. She seems quite jealous though.")
+		saynn("Всё это время Тави просто сидит на полу, переводя дух. Впрочем, она выглядит довольно ревнивой.")
 
-		saynn("You're not done yet..")
+		saynn("Ты ещё не закончила...")
 
-		addButton("Faster", "Make the machine fuck Eliza faster", "eliza_dildo_faster")
+		addButton("Быстрее", "Заставить машину трахать Элизу быстрее", "eliza_dildo_faster")
 	if(state == "eliza_dildo_faster"):
 		playAnimation(StageScene.BDSMMachineFuck, "fast", {pc="eliza", bodyState={naked=true}})
-		saynn("You're not walking away until Eliza has truly learned her lesson. You raise the dial that makes the dildo thrust into the doctor's pussy harder and faster. The feline is moaning passionately, making you wonder how much time you still have before someone hears all these noises and stops you.")
+		saynn("Ты не уйдёшь, пока Элиза по-настоящему не усвоит урок. Ты выкручиваешь регулятор, заставляя дилдо входить в киску доктора всё сильнее и быстрее. Кошка страстно стонет, и ты невольно задумываешься, сколько времени у тебя осталось, прежде чем кто-нибудь услышит эти звуки и прервёт вас.")
 
-		saynn("[say=pc]You wanted to cum. You gonna cum.[/say]")
+		saynn("[say=pc]Ты хотела кончить. Ты сейчас кончишь.[/say]")
 
-		saynn("[say=eliza]E-enough-h-h!.. Ah-h-!.. It's too mu-u-uch!..[/say]")
+		saynn("[say=eliza]Х-хватит-т-т!.. А-а-а!.. Это слиш-ш-шком!..[/say]")
 
-		saynn("Her tongue is out. She is drooling actively while her body does its best to struggle against the heartless machine. But the more she tries to free her limbs, the harder the mechanical arms spread them and the deeper that dildo gets rammed down her snatch. You even notice a bump on her crotch appearing as the toy smashes into her cervix.")
+		saynn("Её язык высунут. Она активно пускает слюни, пока её тело изо всех сил пытается бороться с бездушной машиной. Но чем сильнее она пытается освободить конечности, тем жестче механические руки разводят их в стороны, и тем глубже дилдо вколачивается в её щель. Ты даже замечаешь бугорок в её промежности, когда игрушка с силой бьётся о её шейку матки.")
 
-		saynn("Doesn't take long before Eliza arches her back yet again, her pussy squirting all over the dildo that's fucking her non-stop.")
+		saynn("Проходит совсем немного времени, прежде чем Элиза снова выгибает спину, а её киска заливает сквиртом весь фаллоимитатор, который без остановки трахает её.")
 
-		saynn("[say=eliza]F-Fu-uck!..[/say]")
+		saynn("[say=eliza]F-Т-трах!..[/say]")
 
-		saynn("So mouthy.. You realize that the screen that Eliza is forced to watch displays the correct amount of times that she has orgasmed so far: 3. Seems kinda low.. Ohh, what this?")
+		saynn("Какая дерзкая.. Ты замечаешь, что на экране, на который вынуждена смотреть Элиза, отображается точное количество её оргазмов на данный момент: 3. Кажется, маловато.. О, а это что такое?")
 
-		addButton("Double Trouble", "Press a mysterious button", "eliza_dildo_double")
+		addButton("Двойная проблема", "Нажать на таинственную кнопку", "eliza_dildo_double")
 	if(state == "eliza_dildo_double"):
 		playAnimation(StageScene.BDSMMachineFuck, "sexdouble", {pc="eliza", bodyState={naked=true}})
-		saynn("You press a button that causes the dildo to retract.. Letting Eliza rest and catch her breath for just a second.")
+		saynn("Ты нажимаешь на кнопку, из-за чего фаллоимитатор втягивается.. Давая Элизе возможность отдохнуть и перевести дух буквально на секунду.")
 
-		saynn("[say=eliza]F-Finally.. you..[/say]")
+		saynn("[say=eliza]F-Наконец-то.. ты..[/say]")
 
-		saynn("But that was just a little pause because the machine needed to transform a little. The pink rubber dildo gets rammed down her stretched wet cunt yet again.. making the feline gasp.. and at the same time, another dildo prods against her tailhole, trying to align itself.")
+		saynn("Но это была лишь короткая пауза, потомуная машине потребовалось немного перестроиться. Розовый резиновый фаллоимитатор снова с силой вбивается в её растянутую мокрую щель, заставляя кошечку ахнуть.. и в то же самое время другой фаллоимитатор упирается в её анус, пытаясь встать на место.")
 
-		saynn("[say=eliza]H-hey! Not there! NO! AH!..[/say]")
+		saynn("[say=eliza]H-эй! Не туда! НЕТ! АХ!..[/say]")
 
-		saynn("Machines can't hear. The dildo forcefully stretches Eliza's tight-looking anal star and gets rammed inside. The feline tries her best to clench her ass but that only makes the servos of the machine whirl louder as it starts double-penetrating her, stuffing both of her holes with roughly the same rhythm.")
+		saynn("Машины не слышат. Фаллоимитатор с силой растягивает её тугой анус и врывается внутрь. Кошечка изо всех сил пытается сжать задницу, но от этого сервоприводы машины лишь начинают жужжать громче, когда та приступает к двойному проникновению, набивая оба её отверстия в одном грубом ритме.")
 
-		saynn("Even Tavi is a little surprised by.. how capable that feline's holes are.")
+		saynn("Даже Тави слегка удивлена тем... насколько способными оказались дырочки этой кошечки.")
 
-		saynn("[say=eliza]F-fuck.. Fuck me.. Ah..[/say]")
+		saynn("[say=eliza]Бля-а.. Трахните меня.. А-ах..[/say]")
 
-		saynn("Eliza is lacking the earplugs that Tavi had but even just the screen displaying porn and various praising words makes Eliza's defense melt. Her tongue is out yet again as her eyes start rolling up from the overstimulation. Very soon her holes start visible pulsating again as her pussy produces another little gush of juices. It's obvious when her orgasm happens because she starts curling her toes and trying to arch her body.")
+		saynn("У Элизы нет берушей, как у Тави, но даже одного экрана с порнухой и потока хвалебных слов достаточно, чтобы её защита растаяла. Её язык снова высунут, а глаза начинают закатываться от избытка стимуляции. Вскоре её дырочки снова начинают заметно пульсировать, а киска выдает очередную порцию соков. Оргазм наступает очевидно: она начинает поджимать пальцы ног и выгибать тело.")
 
-		saynn("[say=pc]You're a whore, Eliza. You'd love it if it was two actual cocks, didn't you?[/say]")
+		saynn("[say=pc]Ты шлюха, Элиза. Ты бы с удовольствием вставила себе два настоящих члена, верно?[/say]")
 
-		saynn("[say=eliza]NGh-h-h!.. N-n.. No-o.. H-h~..[/say]")
+		saynn("[say=eliza]Нгх-х-х!.. Н-н.. Н-нет.. Х-х~..[/say]")
 
-		saynn("Really? She didn't break yet? Time to push this little experimental machine to its limits then.")
+		saynn("Серьезно? Она еще не сломалась? Что ж, пора выжать из этой маленькой экспериментальной машины всё до предела.")
 
-		addButton("Faster", "Break Eliza", "eliza_dildo_double_fast")
+		addButton("Быстрее", "Сломать Элизу", "eliza_dildo_double_fast")
 	if(state == "eliza_dildo_double_fast"):
 		playAnimation(StageScene.BDSMMachineFuck, "fastdouble", {pc="eliza", bodyState={naked=true}})
-		saynn("You raise an intensity slider to its maximum.. and see how the machine starts plunging its 2 dildos into Eliza with incredible strength. Instead of being forced inside at the same time, they alternate, making sure the feline's stretched holes are never empty.")
+		saynn("Вы выкручиваете ползунок интенсивности на максимум... и смотрите, как машина начинает вколачивать два дилдо в Элизу с невероятной силой. Вместо того чтобы входить одновременно, они работают по очереди, следя за тем, чтобы растянутые дырочки кошечки ни на секунду не оставались пустыми.")
 
-		saynn("[say=eliza]Oh f-fu.. Nh-h-h!.. AH![/say]")
+		saynn("[say=eliza]Ох, бля-а.. Нх-х-х!.. АХ![/say]")
 
-		saynn("Almost instantly, Eliza cums yet again. Her tired body squirming non-stop as loud cries of pleasure escape her lips. They don't even sound like words anymore, just noises.")
+		saynn("Почти мгновенно Элиза снова кончает. Её изможденное тело беспрестанно корчится, а с губ срываются громкие крики наслаждения. Они уже даже не похожи на слова — просто сплошные звуки.")
 
-		saynn("[say=eliza]Nghh.. y-ye..s.. Uh.. Ah.. I c-c..can't..[/say]")
+		saynn("[say=eliza]Нгхх.. д-да.. е-е..с.. Ух.. Аа.. Я н-н..не могу..[/say]")
 
-		saynn("Her body succumbs to this intense fucking, her walls contract around the dildos, gripping them in a desperate attempt to find escape from this overwhelming pleasure.. But there is no escape.. Eliza is forced to endure orgasms happening one after another, ecstasy clouding her mind completely while the room starts smelling of sex..")
+		saynn("Её тело поддается этому интенсивному траху; стенки влагалища сжимаются вокруг дилдо, судорожно вцепляясь в них в отчаянной попытке найти спасение от этого всепоглощающего удовольствия... Но спасения нет... Элизе приходится терпеть оргазмы один за другим; экстаз полностью затуманивает её разум, а в комнате начинает отчетливо пахнуть сексом...")
 
-		saynn("[say=eliza]C-can't s-stop.. c-cumming-g-g.. ngh-h~!..[/say]")
+		saynn("[say=eliza]Н-не могу п-перестать... к-кончать-ч-ч.. нгх-х~!..[/say]")
 
-		saynn("Perfect. The orgasm counter on the screen ticks up roughly every half a minute. By now it has already hit 20.. 21.")
+		saynn("Идеально. Счетчик оргазмов на экране отсчитывает примерно по одному каждые полминуты. К этому моменту он уже достиг отметки 20... 21.")
 
-		saynn("[say=pc]That's for Tavi.[/say]")
+		saynn("[say=pc]Это для Тави.[/say]")
 
-		saynn("The purple kitty is sitting on all fours near you. Is that.. leash in her mouth? She is offering for you to take it.")
+		saynn("Фиолетовая кошечка сидит перед тобой на четвереньках. Неужели это... поводок у неё во рту? Она предлагает тебе взять его.")
 
-		saynn("[say=pc]You're alright, Miss Tavi? Where are your clothes?[/say]")
+		saynn("[say=pc]Вы в порядке, мисс Тави? А где ваша одежда?[/say]")
 
-		saynn("Tavi just bleps.")
+		saynn("Тави просто высунула кончик языка.")
 
-		saynn("[say=pc]Right.. Can you get up?[/say]")
+		saynn("[say=pc]Понятно.. Вы можете встать?[/say]")
 
-		saynn("You try to help her but her legs are still shaky after that huge amount of orgasms she received.")
+		saynn("Ты пытаешься помочь ей, но её ноги всё еще дрожат после того невероятного количества оргазмов, которые она испытала.")
 
-		saynn("[say=tavi]It's okay.. I will crawl.. Should I call you an owner, owner?[/say]")
+		saynn("[say=tavi]Все хорошо.. Я буду ползти.. Должна ли я звать тебя хозяином, хозяин?[/say]")
 
-		saynn("[say=pc]I'm not your owner.. You are my owner, Tavi.[/say]")
+		saynn("[say=pc]Я не твоя хозяйка.. Ты мой хозяин, Тави.[/say]")
 
-		saynn("Tavi bleps again. It seems.. you will have to be her owner for now..")
+		saynn("Тави снова облизывается. Похоже.. тебе придется стать ее хозяином на время..")
 
-		addButton("Leash her", "Put Tavi on a leash", "leash_tavi_after_eliza_fuck")
+		addButton("Надеть поводок", "Надеть на Тави поводок", "leash_tavi_after_eliza_fuck")
 	if(state == "leash_tavi_after_eliza_fuck"):
 		removeCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcAction="allfours", further=true, npcBodyState={naked=true, leashedBy="pc"}})
 		aimCameraAndSetLocName("med_lobbynw")
 		setFlag("TaviModule.Ch5ElizaGotTortured", true)
-		saynn("Since she wants it so much.. Sure. You grab the leash and clip to Tavi's collar, causing her to start purring. This machine sure did mess with her mind..")
+		saynn("Раз уж она так этого хочет.. Ладно. Ты берешь поводок и защелкиваешь его на ошейнике Тави, отчего она начинает довольно мурлыкать. Эта машина явно знатно поломала ей мозги..")
 
-		saynn("You prepare to leave. Eliza is still moaning loudly, her voice starts to sound raspy by this point. Someone will surely find and help her. But she is not your problem.")
+		saynn("Ты собираешься уходить. Элиза все еще громко стонет, к этому моменту ее голос уже звучит хрипло. Кто-нибудь обязательно ее найдет и поможет. Но она — не твоя проблема.")
 
-		saynn("Tavi crawls near as you step in the medical lobby. All the random nurses are looking at you and your new pet.")
+		saynn("Когда ты заходишь в медицинское лобби, Тави подползает поближе. Все медсестры пялятся на тебя и твоего нового питомца.")
 
-		saynn("You ignore their eyes and walk up to the elevator doors before pressing the button to call it.")
+		saynn("Ты игнорируешь их взгляды и подходишь к дверям лифта, нажимая кнопку вызова.")
 
-		saynn("[say=tavi]It looked fun, what you did to Miss Quinn back there.[/say]")
+		saynn("[say=tavi]Выглядело весело то, что ты сделал с мисс Куинн там, в зале.[/say]")
 
-		saynn("Miss Quinn, huh.")
+		saynn("Мисс Куинн, значит.")
 
-		addButton("Continue", "See what happens next", "tavi_in_cellblock")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_in_cellblock")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

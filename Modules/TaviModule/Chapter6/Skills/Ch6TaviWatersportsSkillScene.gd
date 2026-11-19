@@ -16,728 +16,728 @@ func _run():
 	if(state == ""):
 		addCharacter("tavi")
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
-		saynn("You tell Tavi that you want to train her to enjoy pee more because.. you want that.")
+		saynn("Ты говоришь Тави, что хочешь научить её получать больше удовольствия от мочеиспускания, потому что... просто хочешь этого.")
 
-		saynn("Tavi blushes softly.")
+		saynn("Тави слегка краснеет.")
 
 		isCorrupt = getModule("TaviModule").isCorrupt()
 		isPure = getModule("TaviModule").isPure()
 		isNormal = (!isCorrupt && !isPure)
 		isVirgin = getModule("TaviModule").isVirgin()
 		waterSkill = getModule("TaviModule").getSkillScore("taviSkillWatersports")
-		addButton("Lesson 1", "Introduce Tavi to watersports", "lesson1")
+		addButton("Урок 1", "Познакомить Тави с вотерспортом", "lesson1")
 		if (waterSkill > 0):
-			addButton("Lesson 2", "See if Tavi is still up for more watersports", "lesson2")
+			addButton("Урок 2", "Проверить, готова ли Тави к продолжению вотерспорта", "lesson2")
 		if (waterSkill > 1):
-			addButton("Bathroom", "Bring Tavi to the bathroom for some watersports fun", "bathroom")
+			addButton("Туалет", "Отводить Тави в ванную для развлечений с мочеиспусканием", "bathroom")
 			if (waterSkill > 3):
-				addButton("Swallowing", "You feel like peeing now", "swallowing")
+				addButton("Проглатывание", "Ты чувствуешь, что хочешь пописать", "swallowing")
 			else:
-				addDisabledButton("Swallowing", "Tavi needs to be more confident in watersports")
-		addButton("Cancel", "You changed your mind", "cancel_lesson")
+				addDisabledButton("Проглатывание", "Тави нужно стать увереннее в вотерспорте")
+		addButton("Отмена", "Вы передумали", "cancel_lesson")
 	if(state == "lesson1"):
-		saynn("Tavi never really showed much interest towards watersports. Sure, she can use it as a form of humiliation.. But you're kinda curious if you can mold Tavi to become a piss slut herself.")
+		saynn("Тави никогда особо не проявляла интереса к вотерспорту. Конечно, она может использовать это как форму унижения... Но тебе любопытно, сможешь ли ты вылепить из неё настоящую писс-сучку.")
 
-		saynn("Her cell isn't really the best place because of how messy this activity can get. So you invite Tavi to follow you somewhere. A bathroom is a safe choice.")
+		saynn("Её камера не самое подходящее место, учитывая, насколько грязным может стать это занятие. Поэтому ты приглашаешь Тави пойти за тобой. Ванная комната — безопасный выбор.")
 
-		saynn("[say=tavi]Where are we going?[/say]")
+		saynn("[say=tavi]Куда это мы идём?[/say]")
 
-		saynn("You grab her hand and tug her out of her cell.")
+		saynn("Ты берешь её за руку и вытягиваешь из камеры.")
 
-		saynn("[say=tavi]I guess I will find out soon..[/say]")
+		saynn("[say=tavi]Думаю, скоро узнаю...[/say]")
 
-		addButton("Bathrooms", "Bring Tavi to the room with the toilet stalls", "les1_stalls")
+		addButton("Уборные", "Привести Тави в помещение с туалетными кабинками", "les1_stalls")
 	if(state == "les1_stalls"):
 		aimCameraAndSetLocName("main_bathroom1")
-		saynn("You bring Tavi into the prison's bathroom. It's a long, wide corridor-like room where one of the walls has a row of sinks with one big mirror above it while the other wall has a row of stalls followed by a few urinals.")
+		saynn("Ты приводишь Тави в тюремную уборную. Это длинное, широкое помещение, похожее на коридор: вдоль одной стены тянется ряд раковин с большим зеркалом над ними, а вдоль другой — ряд кабинок, за которыми следуют несколько писсуаров.")
 
-		saynn("You bring Tavi into one of the stalls and stand near the door. Each stall only has enough space for a cheap-looking metal toilet.")
+		saynn("Ты заводишь Тави в одну из кабинок и встаешь у двери. В каждой кабинке места хватает лишь для дешевого металлического унитаза.")
 
-		saynn("Tavi looks around, seeing nothing unusual about this place. Then she directs her attention towards you, her gaze shows that she has her suspicions already.")
+		saynn("Тави оглядывается, не замечая в этом месте ничего необычного. Затем она переводит взгляд на тебя, и в её глазах читается явное подозрение.")
 
-		saynn("[say=tavi]A toilet? You want me to pee?[/say]")
+		saynn("[say=tavi]Туалет? Ты хочешь, чтобы я пописала?[/say]")
 
-		saynn("What a smart kitty. You nod and keep staring at her.")
+		saynn("Какая умная кошечка. Ты киваешь и продолжаешь пристально смотреть на неё.")
 
-		saynn("[say=tavi]Alright. Well, can you maybe..[/say]")
+		saynn("[say=tavi]Ладно. Ну, может ты сможешь...[/say]")
 
-		saynn("You shake your head.")
+		saynn("Ты качаешь головой.")
 
-		saynn("[say=pc]It's the first step, Tavi. To get you more comfortable with this stuff.[/say]")
+		saynn("[say=pc]Это первый шаг, Тави. Чтобы ты привыкла к подобному.[/say]")
 
-		saynn("Tavi tilts her head slightly.")
+		saynn("Тави слегка наклоняет голову набок.")
 
-		saynn("[say=tavi]But.. why? It's extremely humiliating and gross. I can understand when..[/say]")
+		saynn("[say=tavi]Но... зачем? Это же дико унизительно и мерзко. Я понимаю, когда...[/say]")
 
-		saynn("Your hand lands on her cheek, your touch gently and understanding. Tavi stops talking and just holds onto your wrist.")
+		saynn("Твоя рука ложится ей на щеку — прикосновение нежное и понимающее. Тави замолкает и просто сжимает твое запястье.")
 
-		saynn("[say=pc]It can also be extremely hot. The ultimate form of submission. Can you do this for me? I won't force you.[/say]")
+		saynn("[say=pc]Но это может быть и чертовски горячо. Высшая форма подчинения. Сможешь сделать это для меня? Я не буду заставлять.[/say]")
 
-		saynn("You say that while blocking the only exit. Tavi looks you into the eyes.. and thinks.")
+		saynn("Ты говоришь это, перекрывая единственный выход. Тави смотрит тебе прямо в глаза... и задумывается.")
 
-		saynn("[say=tavi]I'm not sure..[/say]")
+		saynn("[say=tavi]Я не уверена...[/say]")
 
-		saynn("Well, forcing her now would break any trust.. so, you just nod and step out of the stall. Maybe she will agree some other time.")
+		saynn("Что ж, заставлять её сейчас — значит разрушить всякое доверие... поэтому ты просто киваешь и выходишь из кабинки. Возможно, в другой раз она согласится.")
 
-		saynn("[say=pc]I will wait for you outside.[/say]")
+		saynn("[say=pc]Я буду ждать тебя снаружи.[/say]")
 
-		addButton("Wait", "Wait until Tavi is done peeing", "les1_taviagrees")
+		addButton("Подождать", "Ждать, пока Тави закончит писать", "les1_taviagrees")
 	if(state == "les1_taviagrees"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcAction="sit"})
-		saynn("A few seconds after walking out, you hear Tavi's voice again.")
+		saynn("Спустя несколько секунд после того, как вы вышли, вы снова слышите голос Тави.")
 
-		saynn("[say=tavi]Come back..[/say]")
+		saynn("[say=tavi]Вернись..[/say]")
 
-		saynn("Huh? You step into the stall and notice Tavi hovering just above the toilet seat with her shorts down, her neat"+str(" virgin" if getModule("TaviModule").isVirgin() else "")+" pussy out on display.")
+		saynn("А? Вы заходите в кабинку и замечаете, что Тави зависла прямо над унитазом: шорты спущены, а её аккуратная"+str(" virgin" if getModule("TaviModule").isVirgin() else "")+" киска выставлена напоказ.")
 
-		saynn("You close the door behind. A smile appears on your face from such a cute display. A smile that makes Tavi blush deeply.")
+		saynn("Вы закрываете за собой дверь. От такого милого зрелища на вашем лице появляется улыбка — улыбка, от которой Тави густо краснеет.")
 
-		saynn("[say=tavi]Don't you dare to laugh..[/say]")
+		saynn("[say=tavi]Только посмей посмеяться..[/say]")
 
-		saynn("Tavi's heart is clearly racing so you decide to let her do her thing. She takes a deep breath and spreads her pussy open for you with her digits. Then she closes her eyes and tries to force the urge, her cheek flush with embarrassment.")
+		saynn("Сердце Тави явно бешено колотится, поэтому вы решаете дать ей закончить начатое. Она делает глубокий вдох и пальцами раздвигает свою киску для вас. Затем она закрывает глаза, пытаясь подавить позыв, а её щеки пылают от смущения.")
 
-		saynn("A few seconds later, a small cute noise escapes from Tavi as her pussy suddenly releases a small stream of urine into the toilet. Such a simple act and yet.. so kinky. The sound of the flowing yellow liquid echoes in the small stall, creating a strange but intimate moment.")
+		saynn("Спустя несколько секунд из горла Тави вырывается милый звук: её киска внезапно выпускает тонкую струю мочи в унитаз. Такое простое действие, и всё же... такое пошлое. Звук текущей желтой жидкости эхом отдается в тесной кабинке, создавая странный, но интимный момент.")
 
-		saynn("As the stream subsides, Tavi opens her eyes, meeting your gaze and then instantly looking away. You reach your hand out and give your pet a few headpats of encouragement.")
+		saynn("Когда струя иссякает, Тави открывает глаза, встречается с вами взглядом и тут же отводит глаза. Вы протягиваете руку и ласково гладите свою питомицу, подбадривая её.")
 
-		saynn("[say=pc]You did very well. Thank you.[/say]")
+		saynn("[say=pc]Ты очень хорошо справилась. Спасибо.[/say]")
 
-		saynn("She grabs a piece of toilet paper and rubs her pussy clean before flushing it down the toilet.")
+		saynn("Она берет кусок туалетной бумаги, вытирает киску дочиста и смывает её в унитаз.")
 
-		saynn("[say=pc]How did it feel?[/say]")
+		saynn("[say=pc]Каково это было?[/say]")
 
-		saynn("[say=tavi]Exactly how it looked like..[/say]")
+		saynn("[say=tavi]Именно так всё и выглядело..[/say]")
 
-		saynn("Seems like she is not ready to admit anything. Tavi pulls her shorts up and follows you back to her cell.")
+		saynn("Похоже, она пока не готова во всем признаться. Тави натягивает шорты и следует за тобой обратно к своей камере.")
 
-		saynn("Still, not everything went wrong.")
+		saynn("И всё же, не всё пошло прахом.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "lesson2"):
-		saynn("Some time has passed since the last lesson but the feeling of curiosity still lingers in the air. You notice a subtle shift in Tavi's appearance. Nothing too drastic, her eyes just look slightly more.. confident?")
+		saynn("С момента последнего урока прошло некоторое время, но в воздухе всё еще витает чувство любопытства. Ты замечаешь едва уловимые изменения во внешности Тави. Ничего радикального, просто её взгляд кажется чуть более.. уверенным?")
 
-		saynn("[say=tavi]You know.. I've been thinking..[/say]")
+		saynn("[say=tavi]Знаешь.. я тут подумала..[/say]")
 
-		saynn("Intriguing. Tavi slowly walks up to you, her tail gently swaying behind her.")
+		saynn("Интригующе. Тави медленно подходит к тебе, плавно покачивая хвостом.")
 
-		saynn("[say=tavi]I think I'd like to explore what we did.. a little more.[/say]")
+		saynn("[say=tavi]Думаю, я бы хотела исследовать то, что мы делали.. еще немного.[/say]")
 
-		saynn("She leans in closer to your ear before whispering..")
+		saynn("Она наклоняется ближе к твоему уху и шепчет..")
 
-		saynn("[say=tavi]I wanna pee so much.. I might just wet my shorts if you don't do something about it..[/say]")
+		saynn("[say=tavi]Я так хочу пописать.. кажется, я просто намочу шорты, если ты с этим что-нибудь не сделаешь..[/say]")
 
-		saynn("It's a nice offer.. but you'd rather not make Tavi's cell smell of urine. Better to take her to the bathroom again. You grab her paw and make her follow.")
+		saynn("Предложение заманчивое... но вряд ли тебе захочется, чтобы в камере Тави воняло мочой. Лучше снова отвести её в туалет. Ты берешь её за лапку и заставляешь идти за собой.")
 
-		addButton("Continue", "See what happens next", "les2_taviproblem")
+		addButton("Продолжить", "Смотреть, что будет дальше", "les2_taviproblem")
 	if(state == "les2_taviproblem"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcAction="struggle"})
 		aimCameraAndSetLocName("cellblock_nearcells")
-		saynn("As soon as you step out of the high-security cellblock wing, Tavi suddenly stops and puts her paws on her crotch, her gaze extremely concerned.")
+		saynn("Как только вы выходите из блока камер строгого режима, Тави внезапно замирает, прижимая лапки к промежности с крайне обеспокоенным видом.")
 
-		saynn("[say=pc]Something is wrong, Tavi?[/say]")
+		saynn("[say=pc]Что-то не так, Тави?[/say]")
 
-		saynn("Tavi squirms a lot before doing small short steps towards you.")
+		saynn("Тави сильно ерзает, прежде чем сделать несколько коротких шажков в твою сторону.")
 
-		saynn("[say=tavi]I think I drank too much water.. I wanted it to be a big one..[/say]")
+		saynn("[say=tavi]Кажется, я выпила слишком много воды... Я хотела, чтобы это было по-крупному...[/say]")
 
-		saynn("Heck.")
+		saynn("Черт.")
 
-		saynn("[say=pc]Can you last until the bathroom?[/say]")
+		saynn("[say=pc]Дотерпишь до туалета?[/say]")
 
-		saynn("Tavi nods subtly. Well, the best you can do is walk faster. You grab Tavi's paw more firmly and help her.")
+		saynn("Тави едва заметно кивает. Что ж, лучшее, что ты можешь сделать — это пойти быстрее. Ты крепче берешь Тави за лапку, помогая ей идти.")
 
-		addButton("Bathrooms", "Walk to the bathrooms with Tavi", "les2_rip")
+		addButton("Уборные", "Пойти в туалет вместе с Тави", "les2_rip")
 	if(state == "les2_rip"):
 		addCharacter("alexrynard")
 		playAnimation(StageScene.Duo, "stand", {pc="alexrynard", npc="tavi", npcAction="struggle"})
 		aimCameraAndSetLocName("main_hallroom3")
-		saynn("As you approach the bathrooms.. Tavi gasps.")
+		saynn("Когда вы приближаетесь к туалетам... Тави судорожно вдыхает.")
 
-		saynn("The door is locked shut with a yellow hologram ribbon spinning around it.. a ribbon that says 'maintenance in progress'. Near the door are a few engineers working on something and also Alex who is looking into his datapad.")
+		saynn("Дверь заперта, и вокруг неё вращается жёлтая голографическая лента с надписью «ведутся технические работы». Рядом с дверью копошатся инженеры, а неподалёку стоит Алекс, уткнувшись в свой датапад.")
 
-		saynn("[say=pc]What's happening? We kinda need to use this room.[/say]")
+		saynn("[say=pc]Что происходит? Нам вообще-то нужно попасть в эту комнату.[/say]")
 
-		saynn("The foxy pulls his gaze away from the pad and looks at you two.")
+		saynn("Лисичка отрывает взгляд от планшета и смотрит на вас двоих.")
 
-		saynn("[say=alexrynard]We're doing some quick maintenance. Shouldn't take that long.[/say]")
+		saynn("[say=alexrynard]Проводим быструю техобслуживание. Много времени не займёт.[/say]")
 
-		saynn("Are they serious.. Now of all times? Tavi whines softly while rubbing her legs against each other.")
+		saynn("Они это серьёзно?.. И именно сейчас? Тави тихонько скулит, потирая бедра друг о друга.")
 
-		saynn("[say=pc]How long will it take?[/say]")
+		saynn("[say=pc]И сколько это займёт?[/say]")
 
-		saynn("Foxy looks at the other engineers.")
+		saynn("Лисичка переводит взгляд на остальных инженеров.")
 
-		saynn("[say=alexrynard]We're almost done. About 15 minutes.[/say]")
+		saynn("[say=alexrynard]Почти закончили. Минут пятнадцать.[/say]")
 
-		saynn("Oh no. You begin whispering to Tavi.")
+		saynn("О нет. Ты начинаешь шептать Тави на ушко.")
 
-		saynn("[say=pc]Can you do 15 minutes?[/say]")
+		saynn("[say=pc]Ты сможешь продержаться пятнадцать минут?[/say]")
 
-		saynn("Her eyes look wide and sorry, her ears drooping, her tail covering her crotch. She listens to your question and then shakes her head, almost panicking by this point..")
+		saynn("Её глаза широко распахнуты и полны раскаяния, уши поникли, а хвост прикрывает промежность. Она выслушивает твой вопрос и затем качает головой, уже почти впадая в панику.")
 
-		saynn("[say=alexrynard]The other bathroom still works, can use that one.[/say]")
+		saynn("[say=alexrynard]Другой туалет всё ещё работает, можно воспользоваться им.[/say]")
 
-		saynn("Tavi leans closer to your ear.")
+		saynn("Тави наклоняется ближе к твоему уху.")
 
-		saynn("[say=tavi]That's too far..[/say]")
+		saynn("[say=tavi]Это уже слишком..[/say]")
 
-		saynn("What now..")
+		saynn("Что теперь..")
 
-		addButton("Think more", "Try to come up with a solution for this situation", "les2_solution")
+		addButton("Подумать ещё", "Попытаться найти решение для этой ситуации", "les2_solution")
 	if(state == "les2_solution"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
-		saynn("What a pickle, huh? Literally everything that could go wrong went wrong this time. Tavi whines softly.")
+		saynn("Ну и засада, а? Буквально всё, что могло пойти не так, пошло не так. Тави тихонько скулит.")
 
-		saynn("Hm. You begin to think about how you can solve this problem. Maybe there is some other place that's closer and that has a toilet. You look around.. Nah, not really. You can't think of anything. Tavi is squirming a lot.")
+		saynn("Хм. Ты начинаешь размышлять о том, как решить эту проблему. Может, есть какое-то другое место поблизости, где есть унитаз? Ты оглядываешься.. Да нет же, ничего подходящего. В голову ничего не приходит. Тави заметно ерзает.")
 
-		saynn("Hmm.. Maybe someone here has a bottle.. How would you ask for it even? 'Hey, my pet here is thirsty, do you have some water?'. Nah, that would be extremely suspicious. Tavi carefully steps out of your vision cone, leaning against some wall.")
+		saynn("Хмм.. Может, у кого-нибудь здесь есть бутылка.. Но как вообще об этом попросить? «Эй, моей питомице хочется пить, у вас не найдётся водички?». Не, это будет выглядеть дико подозрительно. Тави осторожно выходит из поля твоего зрения, прислонившись к стене.")
 
-		saynn("Hmmm.. Here is a good idea. Yard. Tavi can pee behind some bush where no one can see her. Yes. Time to tell her.")
+		saynn("Хммм... Есть одна идея. Двор. Тави сможет пописать за кустами, где её никто не увидит. Да. Пора ей об этом сказать.")
 
-		saynn("[say=tavi]Ah..[/say]")
+		saynn("[say=tavi]Ах...[/say]")
 
-		saynn("That was Tavi's moan. You turn your head towards her and see her bracing the concrete wall tightly while her face shows embarrassment.. You can tell why. Her eyes are closed while the cloth around her crotch region quickly becomes damp.. She tries to cover it with her paws but a few seconds later a little stream of yellow piss emerges from under her shorts, flowing down her thighs, making the fur there look wet too..")
+		saynn("Это был стон Тави. Ты поворачиваешь голову и видишь, как она крепко вцепилась в бетонную стену, а на её лице читается жуткое смущение... Причина очевидна. Её глаза закрыты, а ткань в районе промежности стремительно намокает... Она пытается прикрыть это лапами, но спустя пару секунд из-под её шорт начинает сочиться тонкая струйка желтой мочи, стекая по бёдрам и делая мех там влажным...")
 
-		saynn("Alex produces an audible sigh.")
+		saynn("Алекс издает отчетливый вздох.")
 
-		saynn("[say=alexrynard]Really?[/say]")
+		saynn("[say=alexrynard]Серьёзно?[/say]")
 
-		saynn("Seems you weren't the only one who saw that. Tavi realizes that she got spotted.. but she can't stop herself. She is blushing deeply while a puddle of piss under her gets bigger and bigger..")
+		saynn("Похоже, ты не единственный, кто это заметил. Тави понимает, что её спалили... но она не может остановиться. Она заливается густым румянцем, пока лужица мочи под ней становится всё больше и больше...")
 
-		saynn("After she is finally done, Tavi realizes how many eyes are glued to her.. and takes off somewhere, her paws covering her face.")
+		saynn("Когда она наконец заканчивает, Тави осознает, сколько пар глаз приковано к ней... и срывается с места, закрывая лицо лапами.")
 
-		addButton("Follow", "See where Tavi went", "les2_laundry")
+		addButton("Следовать", "Посмотреть, куда ушла Тави", "les2_laundry")
 	if(state == "les2_laundry"):
 		removeCharacter("alexrynard")
 		aimCameraAndSetLocName("main_laundry")
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcBodyState={naked=true}})
-		saynn("You run after Tavi. Using all your senses you realize that she went hiding in the laundry room.")
+		saynn("Ты бежишь за Тави. Задействовав все чувства, ты понимаешь, что она спряталась в прачечной.")
 
-		saynn("Entering it, you see Tavi, completely naked, rubbing the fur on her thighs dry with some random blanket before throwing it into the washing machine, together with her uniform.")
+		saynn("Войдя туда, ты видишь совершенно голую Тави: она вытирает мех на бёдрах каким-то случайным одеялом, после чего закидывает его в стиральную машину вместе со своей формой.")
 
-		saynn("She sees you and lowers her gaze, her paws covering herself.")
+		saynn("Заметив тебя, она опускает взгляд, прикрываясь лапами.")
 
-		saynn("[say=tavi]That was.. very awkward..[/say]")
+		saynn("[say=tavi]Это было... очень неловко...[/say]")
 
-		saynn("[say=pc]Aw. You should calm down, Tavi. Not much we could have done there..[/say]")
+		saynn("[say=pc]Ох... Тебе нужно успокоиться, Тави. Мы мало что могли там сделать..[/say]")
 
-		saynn("She nods and then stays silent for a few seconds while the machine washes her uniform clean.")
+		saynn("Она кивает и замолкает на несколько секунд, пока машина отмывает её униформу.")
 
-		saynn("[say=tavi]I know.. Although.. It was.. kinda..[/say]")
+		saynn("[say=tavi]Знаю.. Хотя.. Это было.. типа того..[/say]")
 
-		saynn("You raise a brow and approach Tavi.")
+		saynn("Ты приподнимаешь бровь и подходишь к Тави.")
 
-		saynn("[say=tavi]Kinda.. kinky? I don't know..[/say]")
+		saynn("[say=tavi]Типа того.. пошло? Даже не знаю..[/say]")
 
-		saynn("You hug her from behind and rest your chin on her shoulder. Tavi purrs softly.")
+		saynn("Ты обнимаешь её сзади и кладешь подбородок ей на плечо. Тави тихонько мурлычет.")
 
-		saynn("[say=pc]It was very kinky. Wetting yourself in public? That's one hell of a stunt. Requires some serious confidence.[/say]")
+		saynn("[say=pc]Это было очень пошло. Намочить штаны на людях? Вот это номер! Тут нужна серьезная уверенность в себе.[/say]")
 
-		saynn("Tavi chuckles.")
+		saynn("Тави усмехается.")
 
-		saynn("[say=tavi]That's not something I thought I would ever do.[/say]")
+		saynn("[say=tavi]Я и подумать не могла, что когда-нибудь сделаю такое.[/say]")
 
-		saynn("You leave a smooch on her shoulder.")
+		saynn("Ты оставляешь поцелуй на её плече.")
 
-		saynn("[say=pc]We can do so much more..[/say]")
+		saynn("[say=pc]Мы можем зайти гораздо дальше..[/say]")
 
-		saynn("[say=tavi]With less eyes.. preferably..[/say]")
+		saynn("[say=tavi]Чем меньше глаз... тем лучше...[/say]")
 
-		saynn("[say=pc]I can always blindfold you~.[/say]")
+		saynn("[say=pc]Я всегда могу завязать тебе глаза~.[/say]")
 
-		saynn("Tavi smiles. The washing machine beeps as it finishes cleaning and drying Tavi's uniform. She grabs it and starts putting it on.")
+		saynn("Тави улыбается. Стиральная машина пиликает, сигнализируя о завершении стирки и сушки формы Тави. Она хватает её и начинает одеваться.")
 
-		saynn("It wasn't really a lesson.. But Tavi still learned something it seems. Time to go back to her cell.")
+		saynn("Это было не совсем похоже на урок... Но, похоже, Тави всё же кое-чему научилась. Пора возвращаться в камеру.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "bathroom"):
 		aimCameraAndSetLocName("main_bathroom1")
-		saynn("You grab Tavi's paw and invite her to follow you.")
+		saynn("Ты берешь Тави за лапу и приглашаешь её следовать за тобой.")
 
-		saynn("[say=tavi]Where are we..?[/say]")
+		saynn("[say=tavi]Куда это мы..?[/say]")
 
-		saynn("[say=pc]Bathroom.[/say]")
+		saynn("[say=pc]В ванную.[/say]")
 
-		saynn("Tavi can already probably guess why.")
+		saynn("Тави, кажется, уже догадывается, зачем.")
 
-		saynn("You and Tavi step into one of the prison's bathrooms. It's pretty spacious. One of the walls has a row of sinks, the other one has toilet stalls and urinals. If you'd walk further, you'd enter the dressing room and the showering area.")
+		saynn("Вы с Тави заходите в одну из тюремных уборных. Она довольно просторная. У одной стены тянется ряд раковин, у другой — кабинки туалетов и писсуары. Если пройти дальше, можно попасть в раздевалку и душевую зону.")
 
-		saynn("What do you want Tavi to do?")
+		saynn("Что ты хочешь, чтобы Тави сделала?")
 
 		if (GM.pc.getInventory().getItemsWithTag(ItemTag.CanPeeInto).size() > 0):
-			addButton("Fill container", "Make Tavi pee into one of your fluid containers", "bathroom_fill_pick")
+			addButton("Наполнить емкость", "Заставить Тави пописать в одну из ваших емкостей", "bathroom_fill_pick")
 		else:
-			addDisabledButton("Fill container", "You don't have any items that Tavi can pee into")
-		addButton("Watch her pee", "Watch Tavi pee", "bathroom_watch_pee")
-		addButton("Golden shower", "Pee on Tavi", "bathroom_goldenshower")
+			addDisabledButton("Наполнить емкость", "У вас нет предметов, в которые Тави могла бы пописать")
+		addButton("Смотреть, как она писает", "Наблюдать, как Тави писает", "bathroom_watch_pee")
+		addButton("Золотой дождь", "Пописать на Тави", "bathroom_goldenshower")
 		if (waterSkill >= 7):
-			addButton("Tie to urinal", "A final challenge for Tavi", "bathroom_urinal")
+			addButton("Привязать к писсуару", "Последнее испытание для Тави", "bathroom_urinal")
 	if(state == "bathroom_fill_pick"):
-		saynn("Pick what container you want Tavi to pee into?")
+		saynn("В какую емкость вы хотите, чтобы Тави пописала?")
 
 		addPeeIntoButtons()
-		addButton("Back", "Never mind", "bathroom")
+		addButton("Назад", "Проехали", "bathroom")
 		if (false):
-			addButton("Nope", "You shouldn't see this", "bathroom_fill")
+			addButton("Неа", "Тебе не стоит этого видеть", "bathroom_fill")
 	if(state == "bathroom_fill"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcAction="sit", npcBodyState={naked=true}})
-		saynn("You give Tavi a "+str(usedItemName)+". She looks at you while tilting her head slightly.")
+		saynn("Ты даешь Тави "+str(usedItemName)+". Она смотрит на тебя, слегка наклонив голову.")
 
-		saynn("[say=tavi]And?..[/say]")
+		saynn("[say=tavi]И?..[/say]")
 
-		saynn("[say=pc]I want you to fill it.[/say]")
+		saynn("[say=pc]Я хочу, чтобы ты наполнила его.[/say]")
 
-		saynn("Tavi blinks many times.")
+		saynn("Тави часто-часто моргает.")
 
-		saynn("[say=tavi]Sure..[/say]")
+		saynn("[say=tavi]Конечно..[/say]")
 
-		saynn("Tavi steps into one of the stalls. And obviously you follow her, closing the stall door behind.")
+		saynn("Тави заходит в одну из кабинок. И ты, само собой, идешь за ней, закрывая дверь.")
 
-		saynn("[say=tavi]You're gonna watch?[/say]")
+		saynn("[say=tavi]Ты будешь смотреть?[/say]")
 
-		saynn("[say=pc]You don't want me to?[/say]")
+		saynn("[say=pc]А ты разве не хочешь?[/say]")
 
-		saynn("Tavi shrugs.")
+		saynn("Тави пожимает плечами.")
 
-		saynn("[say=tavi]You can watch..[/say]")
+		saynn("[say=tavi]Можешь смотреть..[/say]")
 
-		saynn("The feline pulls her shorts down and hovers her pussy above the toilet. Then she brings the "+str(usedItemName)+" close to her pisshole and starts waiting for something.")
+		saynn("Кошка стягивает шорты и зависает киской над унитазом. Затем она подносит "+str(usedItemName)+" близко к своему мочеиспускательному каналу и замирает в ожидании.")
 
-		saynn("A few seconds later, Tavi produces a cute moan and bites her lip as a strong stream of her piss begins to fill the container. She looks pretty cute while doing her best not to spill any of her pee.")
+		saynn("Спустя несколько секунд Тави издает милый стон и прикусывает губу, когда мощная струя её мочи начинает наполнять емкость. Она выглядит чертовски мило, изо всех сил стараясь не пролить ни капли.")
 
-		saynn("[say=tavi]Ah..[/say]")
+		saynn("[say=tavi]Ах...[/say]")
 
-		saynn("After she is done pissing, Tavi hands you the filled "+str(usedItemName)+".")
+		saynn("Закончив писать, Тави протягивает тебе наполненную "+str(usedItemName)+".")
 
-		saynn("[say=tavi]Here..[/say]")
+		saynn("[say=tavi]На..[/say]")
 
-		addButton("Take it", "Grab the container back", "bathroom_fill_take")
-		addButton("Order to drink", "Order Tavi to drink her piss", "bathroom_fill_orderdrink")
+		addButton("Принимай", "Забрать емкость", "bathroom_fill_take")
+		addButton("Приказать выпить", "Приказать Тави выпить её собственную мочу", "bathroom_fill_orderdrink")
 	if(state == "bathroom_fill_take"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
-		saynn("You grab your "+str(usedItemName)+" back and pat Tavi on the head, making her purr.")
+		saynn("Ты забираешь свою "+str(usedItemName)+" и гладишь Тави по голове, заставляя её довольно мурлыкать.")
 
-		saynn("[say=pc]Good job, let's go back.[/say]")
+		saynn("[say=pc]Отлично, пошли обратно.[/say]")
 
-		saynn("She nods and prepares to follow you.")
+		saynn("Она кивает и готовится следовать за тобой.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "bathroom_fill_orderdrink"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
 		if (waterSkill <= 5):
-			saynn("Hmm.. This could be a great way to test Tavi. You don't take the "+str(usedItemName)+" back, instead letting Tavi hold it.")
+			saynn("Хм.. Это может быть отличным способом проверить Тави. Ты не забираешь "+str(usedItemName)+" обратно, а вместо этого позволяешь Тави удержать его.")
 
-			saynn("[say=pc]I want you to drink it.[/say]")
+			saynn("[say=pc]Я хочу, чтобы ты это выпила.[/say]")
 
-			saynn("Tavi's eyes became big, it was clearly an unexpected request.")
+			saynn("Глаза Тави округлились — это явно была неожиданная просьба.")
 
-			saynn("[say=tavi]What?..[/say]")
+			saynn("[say=tavi]Что?..[/say]")
 
-			saynn("[say=pc]Something is not clear?[/say]")
+			saynn("[say=pc]Что-то непонятно?[/say]")
 
-			saynn("Tavi looks down at the "+str(usedItemName)+", that's filled with her piss"+str(" and who knows what else.." if !drankOnlyPiss else "..")+" She hesitates a lot.")
+			saynn("Тави смотрит вниз на "+str(usedItemName)+", наполненный её мочой"+str(" and who knows what else.." if !drankOnlyPiss else "..")+"Она сильно колеблется.")
 
-			saynn("[say=pc]If you don't wanna do it, just tell me.[/say]")
+			saynn("[say=pc]Если не хочешь, просто скажи мне.[/say]")
 
-			saynn("Tavi takes a deep breath, her emotions and feelings conflicting within her. She gazes into your eyes, silently.. until nodding and lifting the "+str(usedItemName)+" to her lips.")
+			saynn("Тави делает глубокий вдох, внутри неё борются эмоции и чувства. Она молча смотрит тебе в глаза... пока наконец не кивает и не подносит "+str(usedItemName)+" к своим губам.")
 
-			saynn("As Tavi takes a small sip, she starts coughing.")
+			saynn("Сделав маленький глоток, Тави начинает кашлять.")
 
-			saynn("[say=pc]Is it that bad? You can stop if..[/say]")
+			saynn("[say=pc]Неужели так плохо? Можешь остановиться, если..[/say]")
 
-			saynn("But then Tavi suddenly parts her lips wide and raises the bottle high, swallowing her piss"+str(" and whatever else was in that container" if !drankOnlyPiss else "")+" at a high rate, trying to avoid thinking about the taste.")
+			saynn("Но вдруг Тави широко распахивает губы и высоко поднимает бутылку, жадно глотая свою мочу,"+str(" and whatever else was in that container" if !drankOnlyPiss else "")+" стараясь не думать о вкусе.")
 
-			saynn("Wow, she empties it. She has to suppress her urge to gag after but she just about manages. Talk about power of will.")
+			saynn("Ого, она выпивает всё до дна. Ей приходится подавлять рвотные позывы, но ей это почти удается. Вот уж действительно сила воли.")
 
-			saynn("[say=pc]Wow.[/say]")
+			saynn("[say=pc]Ого.[/say]")
 
-			saynn("Tavi is panting softly, her eyes.. lusty.")
+			saynn("Тави тихонько дышит, а её глаза... полны похоти.")
 
-			saynn("[say=tavi]That tasted fucking gross..[/say]")
+			saynn("[say=tavi]На вкус — просто гребаная дрянь..[/say]")
 
-			saynn("She hands you the empty container.")
+			saynn("Она протягивает тебе пустую емкость.")
 
-			saynn("[say=tavi]But wouldn't mind repeating some other time..[/say]")
+			saynn("[say=tavi]Но не против было бы повторить это как-нибудь еще..[/say]")
 
-			saynn("Well, after this powerful performance, it's time to go back to her cell.")
+			saynn("Что ж, после такого мощного выступления пора возвращаться к ней в камеру.")
 
 		else:
-			saynn("You don't take the "+str(usedItemName)+" back, instead letting Tavi hold it.")
+			saynn("Ты не забираешь "+str(usedItemName)+" обратно, а вместо этого позволяешь Тави удержать его.")
 
-			saynn("[say=pc]I want you to drink it.[/say]")
+			saynn("[say=pc]Я хочу, чтобы ты это выпила.[/say]")
 
-			saynn("Tavi puts on a cute smile.")
+			saynn("Тави мило улыбается.")
 
-			saynn("[say=tavi]Drink my own piss~? Watch it.[/say]")
+			saynn("[say=tavi]Пить мою собственную мочу~? Смотри не обляпайся.[/say]")
 
-			saynn("Tavi takes a deep breath and then brings the "+str(usedItemName)+" up to her mouth before raising it high and proceeding to eagerly swallow her piss"+str(" and whatever else was in that container" if !drankOnlyPiss else "")+". For some reason, it's quite.. hot.. to see her do this.")
+			saynn("Тави делает глубокий вдох, подносит "+str(usedItemName)+" к самому рту, а затем высоко поднимает её и с жадностью начинает глотать свою мочу"+str(" and whatever else was in that container" if !drankOnlyPiss else "")+". По какой-то причине наблюдать за этим... чертовски возбуждающе.")
 
-			saynn("And wow, she empties it. And even licks her lips after doing it.")
+			saynn("И вау, она выжимает всё до капли. И даже облизывает губы после этого.")
 
-			saynn("[say=tavi]See, easy~.[/say]")
+			saynn("[say=tavi]Видишь, как легко~.[/say]")
 
-			saynn("She hands you the empty container.")
+			saynn("Она протягивает тебе пустую емкость.")
 
-			saynn("[say=tavi]Proud to be your piss-slut.[/say]")
+			saynn("[say=tavi]Горжусь тем, что я твоя писс-сучка.[/say]")
 
-			saynn("Well, after this performance, it's time to go back to her cell.")
+			saynn("Что ж, после такого выступления пора возвращаться в её камеру.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "bathroom_watch_pee"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcAction="sit", npcBodyState={naked=true}})
-		saynn("You bring Tavi into one of the toilet stalls.")
+		saynn("Ты заводишь Тави в одну из кабинок туалета.")
 
-		saynn("[say=pc]I wanna watch you.[/say]")
+		saynn("[say=pc]Я хочу смотреть на тебя.[/say]")
 
 		if (waterSkill <= 5):
-			saynn("Tavi's gaze meets yours, her cheeks blushing, her heart probably beating a little faster than before.")
+			saynn("Взгляд Тави встречается с твоим; её щеки краснеют, а сердце, должно быть, бьется чуть быстрее, чем прежде.")
 
-			saynn("[say=tavi]Watch me pee?[/say]")
+			saynn("[say=tavi]Смотреть, как я писаю?[/say]")
 
-			saynn("You nod. And so Tavi swallows her nerves and slowly pulls down her shorts before positioning herself above the toilet, making sure not to sit on the dirty seat. She feels your gaze on her and gets all shy and cute. And then, after a few seconds of silence, she produces a cute moan while her pussy releases a small stream of urine.")
+			saynn("Ты киваешь. И Тави, пересилив волнение, медленно стягивает шорты и устраивается над унитазом, стараясь не садиться на грязное сиденье. Она чувствует твой взгляд и становится такой застенчивой и милой. А затем, после нескольких секунд тишины, она издает нежный стон, когда из её киски начинает течь тонкая струйка мочи.")
 
-			saynn("The sound of the yellow liquid hitting the water echoes through the whole bathroom while Tavi's cheeks burn with embarrassment. But she pushes through and empties her bladder in front of you completely.")
+			saynn("Звук желтой жидкости, бьющейся о воду, эхом разносится по всей уборной, пока щеки Тави горят от смущения. Но она берет себя в руки и полностью опорожняет мочевой пузырь прямо перед тобой.")
 
-			saynn("As the stream subsides, Tavi flushes the toilet and pulls her shorts back up.")
+			saynn("Когда струя слабеет, Тави смывает воду в унитазе и натягивает шорты обратно.")
 
-			saynn("[say=pc]Good job, proud of you.[/say]")
+			saynn("[say=pc]Молодец, я тобой горжусь.[/say]")
 
-			saynn("[say=tavi]Thank you..[/say]")
+			saynn("[say=tavi]Спасибо...[/say]")
 
-			saynn("That was pretty cute. But it's time to go back to her cell.")
+			saynn("Это было довольно мило. Но пора возвращаться в камеру.")
 
 		else:
-			saynn("Tavi's ears perk up, curiosity dancing in her eyes as she meets your gaze.")
+			saynn("Уши Тави навостряются, а в глазах пляшет любопытство, когда она встречается с тобой взглядом.")
 
-			saynn("[say=tavi]Watch me pee~?[/say]")
+			saynn("[say=tavi]Будешь смотреть, как я писаю~?[/say]")
 
-			saynn("You nod. And so Tavi eagerly pulls her shorts down, exposing her cute pussy to you before positioning it above the toilet, making sure not to sit on the dirty seat. Tavi takes a deep breath, her paw reaches down to her slit and spreads the folds aside, one of the claws is tickling the little pisshole.. until a powerful stream of urine spawns from it.")
+			saynn("Ты киваешь. И Тави с нетерпением стягивает шорты, подставляя тебе свою милую киску, после чего устраивается над унитазом, стараясь не садиться на грязное сиденье. Тави делает глубокий вдох, её лапка тянется к щели и раздвигает складки; один из когтей щекочет крошечное отверстие... пока оттуда не бьет мощная струя мочи.")
 
-			saynn("[say=tavi]Ah~..[/say]")
+			saynn("[say=tavi]Ах~..[/say]")
 
-			saynn("Tavi looks you in the eyes again and bites her lip. She seems to be enjoying your company. She keeps pissing for a while, the sound of her pee hitting the water echoing through the whole bathroom.")
+			saynn("Тави снова смотрит тебе в глаза и прикусывает губу. Кажется, ей очень нравится твоя компания. Она продолжает писать еще какое-то время, и звук струи, бьющей в воду, эхом разносится по всей уборной.")
 
-			saynn("When the stream begins to subside, Tavi catches some of the gross fluid onto her digits and then pulls them to her mouth before licking them thoroughly. She became such a piss slut.. and so fast.. Like she always wanted it.")
+			saynn("Когда поток начинает слабеть, Тави зацепляет пальцами немного этой мерзкой жидкости, подносит их к рту и тщательно вылизывает. Она превратилась в настоящую писсуху... и так быстро... Словно всегда этого хотела.")
 
-			saynn("[say=tavi]Nya~.[/say]")
+			saynn("[say=tavi]Ня~.[/say]")
 
-			saynn("[say=pc]Thank you Tavi.[/say]")
+			saynn("[say=pc]Спасибо, Тави.[/say]")
 
-			saynn("She pulls her shorts up and flushes before receiving a few headpats from you.")
+			saynn("Она натягивает шорты, заливаясь краской, и принимает от тебя несколько поглаживаний по голове.")
 
-			saynn("That was pretty lewd. But it's time to go back to her cell.")
+			saynn("Это было довольно пошло. Но пора возвращаться в её камеру.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "bathroom_goldenshower"):
 		aimCameraAndSetLocName("main_shower1")
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcBodyState={naked=true}, bodyState={naked=true,hard=true}})
-		saynn("[say=pc]Wanna experience a golden shower, Tavi?[/say]")
+		saynn("[say=pc]Хочешь испытать золотой дождь, Тави?[/say]")
 
 		if (waterSkill <= 5):
-			saynn("[say=tavi]Um..[/say]")
+			saynn("[say=tavi]Эм..[/say]")
 
-			saynn("Tavi blushes deeply.")
+			saynn("Тави густо краснеет.")
 
-			saynn("[say=pc]Won't force you.[/say]")
+			saynn("[say=pc]Не буду заставлять.[/say]")
 
-			saynn("[say=tavi]It's okay. I'm curious how it feels.[/say]")
+			saynn("[say=tavi]Всё в порядке. Мне любопытно, каково это на вкус.[/say]")
 
-			saynn("Probably best not to leave any mess. And so you bring her to the dressing room where you both undress and store your clothing. After that, you step into the showering area and make sure that it's empty.")
+			saynn("Пожалуй, лучше не оставлять после себя беспорядок. Поэтому ты ведешь её в раздевалку, где вы обе раздеваетесь и убираете одежду. После этого вы заходите в душевую зону, убедившись, что там никого нет.")
 
-			saynn("[say=tavi]Should be good..[/say]")
+			saynn("[say=tavi]Должно быть, будет неплохо..[/say]")
 
-			saynn("Tavi stands over one of the drain vents and slowly gets on her knees. You approach her and give her scritches behind the ear.")
+			saynn("Тави встает над одним из сливных отверстий и медленно опускается на колени. Ты подходишь к ней и начинаешь чесать её за ушком.")
 
-			saynn("[say=tavi]Piss all over me..[/say]")
+			saynn("[say=tavi]Облей меня мочой..[/say]")
 
-			saynn("Sounds like an invitation.")
+			saynn("Похоже на приглашение.")
 
 		else:
-			saynn("[say=tavi]Sure~.[/say]")
+			saynn("[say=tavi]Ну конечно~.[/say]")
 
-			saynn("That was.. too easy. Tavi sees your confusion and smiles.")
+			saynn("Это было... слишком просто. Тави видит твое замешательство и улыбается.")
 
-			saynn("[say=tavi]Piss on me, please~.[/say]")
+			saynn("[say=tavi]Помочись на меня, пожалуйста~.[/say]")
 
-			saynn("Probably best not to leave any mess. And so you bring her to the dressing room where you both undress and store your clothing. After that, you step into the showering area and make sure that it's empty.")
+			saynn("Пожалуй, лучше не оставлять после себя беспорядок. Поэтому ты ведешь её в раздевалку, где вы обе раздеваетесь и убираете одежду. После этого вы заходите в душевую зону, убедившись, что там никого нет.")
 
-			saynn("[say=tavi]I wouldn't mind getting that bathroom messy.. But oh well..[/say]")
+			saynn("[say=tavi]Я бы не прочь испачкать ту уборную... Но ладно..[/say]")
 
-			saynn("Tavi stands over one of the drain vents and slowly gets on her knees. You approach her and give her scritches behind the ear.")
+			saynn("Тави встает над одним из сливных отверстий и медленно опускается на колени. Ты подходишь к ней и начинаешь чесать её за ушком.")
 
-			saynn("[say=tavi]Piss all over your slut~.[/say]")
+			saynn("[say=tavi]Обсри всё вокруг своей сучки~.[/say]")
 
-			saynn("Sounds like an invitation.")
+			saynn("Похоже на приглашение.")
 
-		addButton("Do it", "Make her real messy", "bathroom_goldenshower_pee")
+		addButton("Сделай это", "Устроить ей настоящий мокрый хаос", "bathroom_goldenshower_pee")
 	if(state == "bathroom_goldenshower_pee"):
 		playAnimation(StageScene.SexOral, "start", {npc="tavi", npcBodyState={naked=true}, bodyState={naked=true,hard=true}})
 		if (GM.pc.isWearingChastityCage()):
-			saynn("You stand near Tavi, waiting for the urge to happen. And so, after some time, a stream of piss emerges from the little hole in your chastity cage!")
+			saynn("Ты стоишь рядом с Тави, ожидая, когда позыв станет нестерпимым. И вот, спустя некоторое время, из маленького отверстия в твоей девственной клетке вырывается струя мочи!")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("You stand near Tavi, waiting for the urge to happen. And so, after some time, a stream of piss emerges from your {pc.penis}!")
+			saynn("Ты стоишь рядом с Тави, ожидая, когда позыв станет нестерпимым. И вот, спустя некоторое время, из твоего {pc.penis} бьет струя мочи!")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("You stand near Tavi, waiting for the urge to happen. And so, after some time, a stream of piss emerges from the little hole of your pussy!")
+			saynn("Ты стоишь рядом с Тави, ожидая, когда позыв станет нестерпимым. И вот, спустя некоторое время, из маленького отверстия твоей киски начинает сочиться струя мочи!")
 
 		else:
-			saynn("You stand near Tavi, waiting for the urge to happen. And so, after some time, a stream of piss emerges from you!")
+			saynn("Ты стоишь рядом с Тави, ожидая, когда позыв станет нестерпимым. И вот, спустя некоторое время, из тебя начинает хлестать струя мочи!")
 
 		if (waterSkill <= 5):
-			saynn("Tavi instantly closes her eyes when the first golden droplets land on her fur and then cascade down her body. You notice shivers running through her spine as the warm liquid marks her with your scent.")
+			saynn("Тави мгновенно зажмуривается, когда первые золотистые капли оседают на её меху и стекают по телу. Ты замечаешь, как по её позвоночнику пробегает дрожь, пока теплая жидкость помечает её твоим запахом.")
 
-			saynn("She is not brave enough to taste it, just holding her mouth shut close, your piss creating fancy patterns when flowing over her glowy spots.")
+			saynn("Ей не хватает смелости попробовать это на вкус — она лишь плотно сжимает губы, пока твоя моча рисует причудливые узоры, стекая по её светящимся пятнам.")
 
-			saynn("[say=pc]Good girl.[/say]")
+			saynn("[say=pc]Хорошая девочка.[/say]")
 
-			saynn("Tavi is purring quietly while you praise her. Eventually, your stream of piss begins to die down. All the while Tavi is kneeling obediently before you, her fur has a strong odor to it now..")
+			saynn("Тави тихо мурлычет, пока ты её хвалишь. В конце концов, струя твоей мочи начинает слабеть. Всё это время Тави послушно стоит перед тобой на коленях, и от её меха уже исходит сильный запах...")
 
-			saynn("[say=pc]How are you feeling?[/say]")
+			saynn("[say=pc]Как ты себя чувствуешь?[/say]")
 
-			saynn("She uses her paw to make sure her lips are clean. She opens her eyes and looks at you.")
+			saynn("Она лапой вытирает губы, проверяя, чистые ли они. Затем она открывает глаза и смотрит на тебя.")
 
-			saynn("[say=tavi]It's.. different.. Very warm though. Can I maybe take a shower now?..[/say]")
+			saynn("[say=tavi]Это... необычно... Но очень тепло. Можно мне теперь в душ?..[/say]")
 
 		else:
-			saynn("Despite how gross the scent is, Tavi produces a cute moan when the first golden droplets land on her fur before cascading down her body. You are marking her.. and she loves it.. even tilting her head back and parting her lips, allowing some of the yellow fluid to land on her tongue.")
+			saynn("Несмотря на то насколько мерзким кажется запах, Тави издаёт милый стон, когда первые золотистые капли падают на её мех, прежде чем скатиться по телу. Ты помечаешь её... и ей это нравится... она даже запрокидывает голову и приоткрывает губы, позволяя частичке желтой жидкости попасть ей на язык.")
 
-			saynn("Tavi's paws slip down to her"+str(" virgin" if getModule("TaviModule").isVirgin() else "")+" slit and rub it idly. Her own juices are mixing up with your piss while streaming over her pussy before pooling underneath her.")
+			saynn("Лапы Тави соскальзывают к её"+str(" virgin" if getModule("TaviModule").isVirgin() else "")+"щели, и она лениво потирает её. Её собственные соки смешиваются с твоей мочой, пока та стекает по её киске и собирается лужицей под ней.")
 
-			saynn("[say=tavi]Yes.. I'm your little piss-slut..[/say]")
+			saynn("[say=tavi]Да... я твоя маленькая ссаная сучка...[/say]")
 
-			saynn("[say=pc]Yes you are. My piss-slut.[/say]")
+			saynn("[say=pc]Да, так и есть. Моя ссаная сучка.[/say]")
 
-			saynn("Tavi is purring quietly while you praise her. Your piss creates fancy patterns when flowing over her glowy spots. Eventually, your stream of piss begins to die down. All the while Tavi is kneeling obediently before you, her fur has a strong odor to it now..")
+			saynn("Тави тихо мурлычет, пока ты её хвалишь. Твоя моча рисует причудливые узоры, стекая по её светящимся пятнам. В конце концов, струя твоей мочи начинает слабеть. Всё это время Тави послушно стоит перед тобой на коленях, и от её меха уже исходит сильный запах...")
 
-			saynn("[say=pc]How are you feeling?[/say]")
+			saynn("[say=pc]Как ты себя чувствуешь?[/say]")
 
-			saynn("She licks her lips and then looks at you. The sight is incredible.")
+			saynn("Она облизывает губы и смотрит на тебя. Зрелище просто невероятное.")
 
-			saynn("[say=tavi]It feels good.. Very.. to be marked by you.[/say]")
+			saynn("[say=tavi]Это так приятно... так приятно... чувствовать твою метку.[/say]")
 
-		addButton("No shower", "Keep Tavi like this", "bathroom_goldenshower_noshower")
-		addButton("Shower", "Might as well let Tavi take a shower", "bathroom_goldenshower_shower")
+		addButton("Без душа", "Оставить Тави в таком виде", "bathroom_goldenshower_noshower")
+		addButton("Душ", "Сходить ей в душ", "bathroom_goldenshower_shower")
 	if(state == "bathroom_goldenshower_noshower"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
-		saynn("You decide that it's best to let Tavi keep that piss on her. You can always let her take a shower later.")
+		saynn("Ты решаешь, что лучше оставить всё как есть и позволить Тави остаться в этой моче. Душ она всегда успеет принять позже.")
 
 		if (waterSkill <= 5):
-			saynn("[say=pc]No shower. I didn't piss on you just to wash it away instantly.[/say]")
+			saynn("[say=pc]Без душа. Я не для того обмочила тебя, чтобы ты тут же всё смыл.[/say]")
 
-			saynn("Tavi lowers her gaze.")
+			saynn("Тави опускает взгляд.")
 
-			saynn("[say=tavi]But.. Yeah, that makes sense.[/say]")
+			saynn("[say=tavi]Но... да, в этом есть смысл.[/say]")
 
-			saynn("You approach the tall feline and try to pat her while avoiding the messy spots. She purrs softly again.")
+			saynn("Ты подходишь к высокой кошкодевочке и пытаешься погладить её, стараясь не задеть мокрые места. Она снова тихонько мурлычет.")
 
-			saynn("[say=tavi]You want your pet to always have your scent.[/say]")
+			saynn("[say=tavi]Вы хотите, чтобы ваш питомец всегда пах вами.[/say]")
 
-			saynn("Tavi gets up and goes back to the dressing room before putting on her uniform over her wet fur.")
+			saynn("Тави встает и возвращается в раздевалку, чтобы натянуть форму поверх своей мокрой шерсти.")
 
-			saynn("Time to go back to her cell.")
+			saynn("Пора возвращаться в камеру.")
 
 		else:
-			saynn("[say=pc]No shower today. You get to keep my scent for a while longer.[/say]")
+			saynn("[say=pc]Сегодня без душа. Так ты сможешь подольше сохранить мой запах.[/say]")
 
-			saynn("Tavi purrs happily.")
+			saynn("Тави довольно мурлычет.")
 
-			saynn("[say=tavi]Thank you~. I will proudly carry it.[/say]")
+			saynn("[say=tavi]Спасибо~. Я буду с гордостью носить его.[/say]")
 
-			saynn("Tavi gets up and goes back to the dressing room before putting on her uniform over her wet fur.")
+			saynn("Тави встает и возвращается в раздевалку, чтобы натянуть форму поверх своей мокрой шерсти.")
 
-			saynn("Time to go back to her cell.")
+			saynn("Пора возвращаться в камеру.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "bathroom_goldenshower_shower"):
 		playAnimation(StageScene.Solo, "stand", {pc="tavi", bodyState={naked=true}})
-		saynn("You decide that it's best to wash it all off before anyone sees Tavi like this. You reach out and turn the water on. Cold water, the only type that is allowed for inmates.")
+		saynn("Вы решаете, что лучше всё смыть, пока никто не увидел Тави в таком виде. Вы протягиваете руку и открываете кран. Холодная вода — единственный тип воды, разрешенный заключенным.")
 
 		if (waterSkill <= 5):
-			saynn("Tavi produces a soft sigh of content when the piss gets washed away down the drain. She gets up, her paws brushing over her fur and wet hair.")
+			saynn("Тави издает мягкий удовлетворенный вздох, когда моча смывается в слив. Она встает, поглаживая лапами свою шерсть и мокрые волосы.")
 
-			saynn("[say=tavi]Thank you. It feels nice but I like being clean.[/say]")
+			saynn("[say=tavi]Спасибо. Это приятно, но я люблю быть чистой.[/say]")
 
-			saynn("Such a cat.")
+			saynn("Ну и кошка.")
 
-			saynn("But even after showering, her fur is still carrying some of your scent. It will take more than that to get it out now.")
+			saynn("Но даже после душа её мех всё ещё хранит твой запах. Теперь потребуется нечто большее, чтобы избавиться от него окончательно.")
 
-			saynn("Tavi steps into the dressing room where she dries herself with a towel before putting on her uniform.")
+			saynn("Тави заходит в раздевалку, где вытирается полотенцем, прежде чем надеть униформу.")
 
-			saynn("Time to return back to her cell.")
+			saynn("Пора возвращаться в камеру.")
 
 		else:
-			saynn("Tavi produces a soft sigh when the piss gets washed away down the drain. She gets up, her paws brushing over her fur and wet hair.")
+			saynn("Тави тихо вздыхает, когда моча смывается в слив. Она поднимается, поглаживая лапками свой мех и мокрые волосы.")
 
-			saynn("[say=tavi]Aw. What if I liked being like that?[/say]")
+			saynn("[say=tavi]Ой... А что, если бы мне понравилось быть в таком состоянии?[/say]")
 
-			saynn("But even after showering, her fur is still carrying some of your scent. It will take more than that to get it out now. Tavi smells her fur and purrs.")
+			saynn("Но даже после душа её мех всё ещё хранит твой запах. Теперь потребуется нечто большее, чтобы избавиться от него окончательно. Тави нюхает свою шерсть и довольно мурлычет.")
 
-			saynn("[say=tavi]At least I still smell like you~.[/say]")
+			saynn("[say=tavi]По крайней мере, от меня всё ещё пахнет тобой~.[/say]")
 
-			saynn("Tavi steps into the dressing room where she dries herself with a towel before putting on her uniform.")
+			saynn("Тави заходит в раздевалку, где вытирается полотенцем, прежде чем надеть униформу.")
 
-			saynn("Time to return back to her cell.")
+			saynn("Пора возвращаться в камеру.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "bathroom_urinal"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcBodyState={naked=true}})
-		saynn("You look around the bathroom. A set of urinals catches your eye. Maybe now is a good time to test how far Tavi has come.")
+		saynn("Ты оглядываешь туалетную комнату. Твой взгляд падает на ряд писсуаров. Может, сейчас самое время проверить, каких успехов добилась Тави.")
 
-		saynn("[say=pc]Hey Tavi. I wonder. Are you up for a challenge?[/say]")
+		saynn("[say=pc]Эй, Тави. Мне вот интересно... Ты готова к испытанию?[/say]")
 
-		saynn("Tavi crosses her arms and meets your gaze with confidence in her eyes. Then she leans closer to your face.")
+		saynn("Тави скрещивает руки на груди и уверенно встречается с тобой взглядом. Затем она наклоняется ближе к твоему лицу.")
 
-		saynn("[say=tavi]Try me~.[/say]")
+		saynn("[say=tavi]Попробуй меня~.[/say]")
 
-		saynn("[say=pc]What if it involves a lot of piss?[/say]")
+		saynn("[say=pc]А если там будет дофига мочи?[/say]")
 
-		saynn("Tavi chuckles and moves her lips to your ear.")
+		saynn("Тави посмеивается и придвигает свои губы к самому твоему уху.")
 
-		saynn("[say=tavi]Try. Me..[/say]")
+		saynn("[say=tavi]Попробуй.. меня..[/say]")
 
-		saynn("She said. Suddenly you grab her by the collar and pull towards one of the urinals.. Tavi puts up a weak defense just for show but you easily overpower her, taking off her uniform and wrenching her arms behind her back.")
+		saynn("Произносит она. Внезапно ты хватаешь её за воротник и тянешь к одному из писсуаров... Тави лишь для вида слабо сопротивляется, но ты легко одолеваешь её, срывая с неё униформу и закидывая ей руки за спину.")
 
-		saynn("[say=pc]I don't wanna hear any complaints later.[/say]")
+		saynn("[say=pc]Чтобы потом не было никаких жалоб.[/say]")
 
-		saynn("[say=tavi]You won't~.[/say]")
+		saynn("[say=tavi]Не будет~.[/say]")
 
-		saynn("[say=pc]You're right.[/say]")
+		saynn("[say=pc]Ты права.[/say]")
 
-		saynn("And with that, you bring a ring gag to her mouth. And that's not the last restraint that you're gonna put on her..")
+		saynn("И после этого ты засовываешь ей в рот кольцевую кляп. И это далеко не последнее ограничение, которое ты на неё наденешь...")
 
-		addButton("Tie Tavi up", "Tie Tavi to the urinal", "bathroom_urinal_tie")
+		addButton("Связать Тави", "Привязать Тави к писсуару", "bathroom_urinal_tie")
 	if(state == "bathroom_urinal_tie"):
 		playAnimation(StageScene.Urinal, "idle", {pc="tavi", bodyState={naked=true}})
-		saynn("Tavi parts her lips, allowing you to put a ring gag on her and secure it behind her head. Then you grab some cuffs and use them to chain Tavi to one of the clean urinals, one limb at a time.. until Tavi is positioned in a very compromising position, her pussy, tits and mouth are all on display.")
+		saynn("Тави размыкает губы, позволяя тебе вставить кольцевой кляп и закрепить его за затылком. Затем ты берешь наручники и, закрепляя по одной конечности, приковываешь Тави к одному из чистых писсуаров... пока она не оказывается в крайне компрометирующей позе, где её киска, сиськи и рот выставлены напоказ.")
 
-		saynn("[say=tavi]Kinky..[/say]")
+		saynn("[say=tavi]Пикантно...[/say]")
 
-		saynn("What do you wanna do with her now?")
+		saynn("Что ты хочешь сделать с ней теперь?")
 
-		addButton("Leave", "Leave Tavi like that for some time", "bathroom_urinal_leave")
-		addButton("Use Tavi", "Use Tavi like she is a piss toilet", "bathroom_urinal_use")
+		addButton("Уйти", "Оставить Тави в таком виде на какое-то время", "bathroom_urinal_leave")
+		addButton("Использовать Тави", "Использовать Тави как писсуар", "bathroom_urinal_use")
 	if(state == "bathroom_urinal_leave"):
 		playAnimation(StageScene.Solo, "stand")
 		removeCharacter("tavi")
-		saynn("Tavi eagerly awaits for you to use her. But instead of doing that, you grab a marker and write 'Piss toilet' on her body.")
+		saynn("Тави с нетерпением ждет, когда ты воспользуешься ею. Но вместо этого ты берешь маркер и пишешь на её теле «Писсуар».")
 
-		saynn("[say=pc]I will be back soon.[/say]")
+		saynn("[say=pc]Скоро я вернусь.[/say]")
 
-		saynn("[say=tavi]Huh?.. When..[/say]")
+		saynn("[say=tavi]А?.. Когда..[/say]")
 
-		saynn("You offer her a smile and pretend you didn't hear the question.")
+		saynn("Ты одариваешь её улыбкой, делая вид, что не расслышал вопроса.")
 
-		saynn("Instead, you just step out of the bathroom and go do some random stuff.")
+		saynn("Вместо этого ты просто выходишь из ванной и отправляешься заниматься всякой всячиной.")
 
-		addButton("Continue", "See what happens next", "bathroom_urinal_leave_return")
+		addButton("Продолжить", "Смотреть, что будет дальше", "bathroom_urinal_leave_return")
 	if(state == "bathroom_urinal_leave_return"):
 		addCharacter("tavi", ["naked"])
 		playAnimation(StageScene.Urinal, "idle", {pc="tavi", bodyState={naked=true}})
-		saynn("After some time, you return back to Tavi and find her.. still chained to the urinal.")
+		saynn("Спустя какое-то время ты возвращаешься к Тави и обнаруживаешь, что она... всё ещё прикована к писсуару.")
 
-		saynn("But it's obvious that people have been using her.. Signs of piss everywhere, Tavi's wet fur, the smell..")
+		saynn("Но очевидно, что ей уже успели попользоваться... Повсюду следы мочи, мокрая шерсть Тави, этот запах...")
 
-		saynn("[say=tavi]You're back..[/say]")
+		saynn("[say=tavi]Ты вернулся..[/say]")
 
-		saynn("[say=pc]Did you enjoy it?[/say]")
+		saynn("[say=pc]Тебе понравилось?[/say]")
 
-		saynn("The corners of Tavi's mouth look raised. She is trying to smile.")
+		saynn("Уголки губ Тави приподняты — она пытается улыбнуться.")
 
-		saynn("[say=pc]You don't have to answer.[/say]")
+		saynn("[say=pc]Можешь не отвечать.[/say]")
 
-		saynn("You hear a soft moan as Tavi suddenly starts peeing, all the extra liquid in her body made her want to relieve herself too. Luckily it all goes straight down the drain of the urinal.")
+		saynn("Ты слышишь тихий стон: Тави внезапно начинает писать — лишняя жидкость в организме заставила её тоже захотеть облегчиться. К счастью, всё стекает прямиком в слив писсуара.")
 
-		saynn("[say=tavi]Ah.. Much better..[/say]")
+		saynn("[say=tavi]Ах.. Так гораздо лучше..[/say]")
 
-		saynn("After that cute scene, you begin to unchain her and then bring her back to her cell.")
+		saynn("После этой милой сцены ты начинаешь расцеплять цепи и отводишь её обратно в камеру.")
 
-		addButton("Continue", "See what happens next", "endthescene_resetequip")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_resetequip")
 	if(state == "bathroom_urinal_use"):
 		if (GM.pc.isWearingChastityCage()):
-			saynn("After chaining Tavi to the urinal, it's time to use her. And so you expose your caged up cock and stand in front of your piss-slut. A few seconds later, a warm stream of urine began landing on Tavi's fur.")
+			saynn("После того как Тави приковали к писсуару, настало время её использовать. Ты выпускаешь свой запертый член и встаешь перед своей ссаной сучкой. Спустя несколько секунд теплая струя мочи начинает падать на мех Тави.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("After chaining Tavi to the urinal, it's time to use her. And so you expose your {pc.penis} and stand in front of your piss-slut. A few seconds later, a warm stream of urine began landing on Tavi's fur.")
+			saynn("После того как Тави приковали к писсуару, настало время её использовать. Ты выпускаешь свой {pc.penis} и встаешь перед своей ссаной сучкой. Спустя несколько секунд теплая струя мочи начинает падать на мех Тави.")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("After chaining Tavi to the urinal, it's time to use her. And so you expose your {pc.pussyStretch} pussy and stand in front of your piss-slut. A few seconds later, a warm stream of urine began landing on Tavi's fur.")
+			saynn("После того как Тави приковали к писсуару, настало время её использовать. Ты выпускаешь свою {pc.pussyStretch} киску и встаешь перед своей ссаной сучкой. Спустя несколько секунд теплая струя мочи начинает падать на мех Тави.")
 
 		else:
-			saynn("After chaining Tavi to the urinal, it's time to use her. And so you expose your pisshole and stand in front of your piss-slut. A few seconds later, a warm stream of urine began landing on Tavi's fur.")
+			saynn("После того как Тави приковали к писсуару, настало время её использовать. Ты выставляешь свой анус и встаешь перед своей ссаной сучкой. Спустя несколько секунд теплая струя мочи начинает падать на мех Тави.")
 
-		saynn("Tavi's breath hitches as the gross liquid begins flowing down her body, her eyes closing briefly as some of the piss lands into her opened mouth. She tugs at her restraints lightly while you focus on filling her, the ring gag makes it so she is forced to taste and swallow everything.")
+		saynn("У Тави перехватывает дыхание, когда мерзкая жидкость начинает стекать по её телу; она на мгновение зажмуривается, когда часть мочи попадает ей в приоткрытый рот. Она слегка дергается в оковах, пока ты сосредоточен на том, чтобы наполнить её — из-за кольцевой кляпы она вынуждена пробовать и глотать всё до капли.")
 
-		saynn("Then she starts squirming when you pull away slightly and instead aim for her tits and belly, your piss following her curves with some flowing between the folds of her pussy, tickling them.")
+		saynn("Затем она начинает извиваться, когда ты слегка отстраняешься и вместо этого целишься ей в грудь и живот; твоя моча следует за изгибами её тела, частично затекая в складки её киски и щекоча их.")
 
-		saynn("[say=tavi]..ah..[/say]")
+		saynn("[say=tavi]..ах..[/say]")
 
-		saynn("As the stream begins to subside, Tavi is left a wet mess, her fur smelling gross.")
+		saynn("Когда струя начинает стихать, Тави остается мокрой и грязной, а от её меха исходит мерзкий запах.")
 
-		saynn("[say=pc]Such a good piss-toilet.[/say]")
+		saynn("[say=pc]Такая хорошая писающая туалетка.[/say]")
 
-		saynn("Tavi purrs and sticks her tongue out through the ring.")
+		saynn("Тави мурлычет и высовывает язык сквозь кольцо.")
 
-		saynn("You let most of the piss to go down the drain before unchaining Tavi and helping her get back to her cell while trying not to touch her too much..")
+		saynn("Ты позволяешь большей части мочи стечь в слив, прежде чем расцепить цепи Тави и помочь ей вернуться в камеру, стараясь при этом не слишком сильно её касаться...")
 
-		addButton("Continue", "See what happens next", "endthescene_resetequip")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_resetequip")
 	if(state == "swallowing"):
 		playAnimation(StageScene.SexOral, "start", {npc="tavi"})
-		saynn("You feel like peeing. But you don't feel like going anywhere. And why would you. You have a perfectly fine Tavi.")
+		saynn("Тебе хочется пописать. Но идти куда-то лень. Да и зачем? У тебя есть вполне подходящая Тави.")
 
-		saynn("[say=pc]Can you do me a favor, Tavi?[/say]")
+		saynn("[say=pc]Сделаешь мне одолжение, Тави?[/say]")
 
-		saynn("The feline walks up to you and offers you a kind smile. Your hand lands on her cheek and caresses gently.")
+		saynn("Кошка подходит к тебе и ласково улыбается. Твоя рука ложится ей на щеку и нежно поглаживает её.")
 
-		saynn("[say=tavi]And what is that gonna be?..[/say]")
+		saynn("[say=tavi]И что же это будет?..[/say]")
 
-		saynn("[say=pc]I don't feel like going to the bathroom today.[/say]")
+		saynn("[say=pc]Мне сегодня неохота идти в туалет.[/say]")
 
-		saynn("Both Tavi and you look down at your crotch. Tavi is biting her lip.")
+		saynn("И ты, и Тави опускаете взгляды на твою ширинку. Тави прикусывает губу.")
 
-		saynn("[say=tavi]Sounds like you need a free mouth.. I might just be able to help with that~.[/say]")
+		saynn("[say=tavi]Похоже, тебе не помешало бы свободное р랑... Кажется, я как раз могу с этим помочь~.[/say]")
 
-		saynn("And so Tavi gets on her knees before you before teasingly parting her lips and showing you the back of her mouth. All the inner walls have a green tint to them.. just like her tongue.")
+		saynn("И вот Тави опускается перед тобой на колени, дразняще приоткрывая губы и показывая тебе заднюю стенку своего рта. Все внутренние стенки имеют зеленоватый оттенок... точь-в-точь как её язык.")
 
-		saynn("[say=pc]Try to not miss a drop.[/say]")
+		saynn("[say=pc]Постарайся не пропустить ни капли.[/say]")
 
-		saynn("Tavi probably understands this more than you. It's her cell on the line after all, not yours.")
+		saynn("Тави, вероятно, понимает это лучше тебя. В конце концов, на кону её камера, а не твоя.")
 
-		addButton("Continue", "See how Tavi will serve you", "swallowing_act")
+		addButton("Продолжить", "Посмотри, как Тави будет тебе служить", "swallowing_act")
 	if(state == "swallowing_act"):
 		if (GM.pc.isWearingChastityCage() || GM.pc.hasReachablePenis()):
 			playAnimation(StageScene.SexOral, "tease", {npc="tavi", bodyState={exposedCrotch=true, hard=true}})
 		else:
 			playAnimation(StageScene.SexOral, "lick", {npc="tavi", bodyState={exposedCrotch=true, hard=true}})
 		if (GM.pc.isWearingChastityCage()):
-			saynn("And so you offer your locked member to Tavi. She sees it and smiles softly before parting her lips wider and closing them around your chastity cage, creating a somewhat tight seal. You feel her warm breathing but the metal prevents any other sensations.")
+			saynn("И вот ты подставляешь свой запертый член Тави. Увидев его, она мягко улыбается, прежде чем шире раскрыть губы и сомкнуть их вокруг твоей клетки целомудрия, создавая довольно плотное кольцо. Ты чувствуешь её теплое дыхание, но металл не дает ощутить ничего больше.")
 
-			saynn("She looks up at you with her obedient eyes while her rough tongue gently tickles your pisshole through the little hole in the cage. And so, after some teasing, you arch your back slightly as a strong stream of your urine reaches Tavi's mouth. She holds onto your legs and does her best to swiftly swallow your golden load in big chunks.")
+			saynn("Она смотрит на тебя своими покорными глазами, пока её шершавый язык нежно щекочет твое отверстие для мочи через маленькую дырочку в клетке. И вот, после небольшого дразнения, ты слегка прогибаешь спину, когда мощная струя мочи достигает рта Тави. Она вцепляется в твои ноги и изо всех сил старается быстро проглотить твою золотую порцию крупными глотками.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("And so you offer your member to Tavi. She sees it and smiles softly before parting her lips wider and closing them around your cock, creating a tight seal. It feels nice and intimate.")
+			saynn("И вот ты подставляешь свой член Тави. Увидев его, она мягко улыбается, прежде чем шире раскрыть губы и сомкнуть их вокруг твоего члена, создавая плотное кольцо. Это ощущается приятно и интимно.")
 
-			saynn("She looks up at you with her obedient eyes while her rough tongue gently tickles your pisshole, inviting you to unleash the torrent of fluids. And so, after some teasing, you arch your back slightly as a strong stream of your urine reaches Tavi's mouth. She holds onto your legs and does her best to swiftly swallow your golden load in big chunks.")
+			saynn("Она смотрит на тебя своими покорными глазами, пока её шершавый язык нежно щекочет твое мочеиспускательное отверстие, приглашая выпустить поток жидкости. И вот, после небольшого дразнения, ты слегка прогибаешься в пояснице, и мощная струя твоей мочи достигает рта Тави. Она вцепляется в твои ноги и изо всех сил старается быстро проглотить твою золотистую порцию крупными глотками.")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("And so you offer your {pc.pussyStretch} pussy to Tavi. She sees your sensitive folds and smiles softly before parting her lips wider and pressing them against yours, creating a tight seal around the urethra. It feels.. nice.")
+			saynn("И вот ты подставляешь свою {pc.pussyStretch} киску Тави. Она видит твои чувствительные складки и мягко улыбается, прежде чем шире раскрыть губы и прижаться ими к твоим, создавая плотное кольцо вокруг уретры. Это ощущается... приятно.")
 
-			saynn("She looks up at you with her obedient eyes while her rough tongue gently tickles your pisshole, inviting you to unleash the torrent of fluids. And so, after some teasing, you arch your back slightly as a strong stream of your urine reaches Tavi's mouth. She holds onto your legs and does her best to swiftly swallow your golden load in big chunks.")
+			saynn("Она смотрит на тебя своими покорными глазами, пока её шершавый язык нежно щекочет твое мочеиспускательное отверстие, приглашая выпустить поток жидкости. И вот, после небольшого дразнения, ты слегка прогибаешься в пояснице, и мощная струя твоей мочи достигает рта Тави. Она вцепляется в твои ноги и изо всех сил старается быстро проглотить твою золотистую порцию крупными глотками.")
 
 		else:
-			saynn("And so you offer your crotch to Tavi. She smiles softly before parting her lips wider and pressing them against your crotch, creating a tight seal around the urethra. It feels.. nice.")
+			saynn("И вот ты подставляешь свою промежность Тави. Она мягко улыбается, прежде чем шире раскрыть губы и прижаться ими к твоей промежности, создавая плотное кольцо вокруг уретры. Это ощущается... приятно.")
 
-			saynn("She looks up at you with her obedient eyes while her rough tongue gently tickles your pisshole, inviting you to unleash the torrent of fluids. And so, after some teasing, you arch your back slightly as a strong stream of your urine reaches Tavi's mouth. She holds onto your legs and does her best to swiftly swallow your golden load in big chunks.")
+			saynn("Она смотрит на тебя своими покорными глазами, пока её шершавый язык нежно щекочет твое мочеиспускательное отверстие, приглашая выпустить поток жидкости. И вот, после небольшого дразнения, ты слегка прогибаешься в пояснице, и мощная струя твоей мочи достигает рта Тави. Она вцепляется в твои ноги и изо всех сил старается быстро проглотить твою золотистую порцию крупными глотками.")
 
-		saynn("Such a good piss-toilet. Your hand lands on her head and gently strokes her hair while her throat is hard at work, swallowing every few seconds while her eyes are closed. Such devotion.. or maybe she just really wants her cell to stay clean?")
+		saynn("Какая послушная писающая касса. Твоя рука ложится ей на голову, нежно поглаживая волосы, пока её горло усердно работает, сглатывая каждые несколько секунд с закрытыми глазами. Какая преданность... или она просто очень хочет, чтобы в её камере было чисто?")
 
-		saynn("After you empty your bladder into your pet's throat, you pull away from her and admire the view. Tavi is panting softly with her tongue out. She swallows the last of your piss and then presents you her empty mouth.")
+		saynn("Опорожнив мочевой пузырь в глотку своей питомицы, ты отстраняешься и любуешься видом. Тави тихо тяжело дышит, высунув язык. Она проглатывает последние капли твоей мочи и подставляет тебе свой пустой рот.")
 
-		saynn("[say=tavi]Thank you.. For using your pet..[/say]")
+		saynn("[say=tavi]Спасибо.. За то, что используешь свою питомицу..[/say]")
 
-		saynn("So obedient. You can't help but to give Tavi pats for doing such a clean job. She truly mastered the craft.")
+		saynn("Такая послушная. Ты не можешь удержаться от того, чтобы не похлопать Тави по голове за такую чистую работу. Она действительно в совершенстве овладела этим искусством.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 func taviSpeak(normalSpeak, corruptSpeak, pureSpeak):
 	if(isCorrupt):
 		return corruptSpeak

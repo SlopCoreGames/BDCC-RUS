@@ -7,13 +7,13 @@ func _init():
 	aiScoreMultiplier = 0.3
 	
 func getVisibleName(_context = {}):
-	return "Drug heal"
+	return "Лечебный препарат"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
-	var text = "{attacker.name}'s eyes glow bright red as {attacker.he} taps into the drug's power, resulting in {attacker.him} getting stronger."
+	var text = "Глаза {attacker.name} ярко вспыхивают красным, когда {attacker.he} черпает силу из наркотика, в результате чего {attacker.him} становится сильнее."
 	
 	_attacker.addPain(-50)
 	_attacker.addStamina(50)

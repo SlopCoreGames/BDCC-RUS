@@ -5,14 +5,14 @@ func _init():
 	category = Category.Special
 	
 func getVisibleName(_context = {}):
-	return "Do nothing"
+	return "Ничего не делать"
 	
 func getVisibleDesc(_context = {}):
 	return "You shouldn't see this"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	return {
-		text = "{attacker.name} wasn't able to attack"
+		text = "{attacker.name} не смог атаковать"
 		}
 	
 func _canUse(_attacker, _receiver, _context = {}):

@@ -13,7 +13,7 @@ func run(_triggerID, _args):
 	if(GM.main.getDays() > GM.main.getModuleFlag("TaviModule", "Tavi_Quest2Day", 0)):
 		addButtonUnlessLate("Tavi", "Wait for Tavi to show up", "talk")
 	else:
-		addDisabledButton("Tavi", "Wait until tomorrow before doing this")
+		addDisabledButton("Тави", "Подожди до завтра, прежде чем делать это")
 
 func getPriority():
 	return 0

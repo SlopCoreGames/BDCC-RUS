@@ -18,14 +18,14 @@ func _init():
 	pass
 	
 func getVisibleName(_context = {}):
-	return "Bad attack"
+	return "Плохая атака"
 	
 func getVisibleDesc(_context = {}):
 	return "Bad attack, let the developer know"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 	return {
-		text = "Bad attack happened, let the developer know",
+		text = "Произошла плохая атака, сообщите разработчику",
 	}
 	
 func _canUse(_attacker, _receiver, _context = {}):

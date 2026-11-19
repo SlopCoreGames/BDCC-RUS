@@ -18,46 +18,46 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
 		if (!getFlag("TaviModule.Ch6TaviSleepInPCCellFirstTime")):
 			setFlag("TaviModule.Ch6TaviSleepInPCCellFirstTime", true)
-			saynn("You've been Tavi's owner for quite some days now and so she learned to trust you more. Maybe it's time to ask if she would like to sleep in your cell with you.")
+			saynn("Ты уже несколько дней являешься владельцем Тави, и она научилась доверять тебе всё больше. Возможно, пришло время спросить, не хочет ли она спать в твоей камере вместе с тобой.")
 
-			saynn("[say=pc]Hey. Do you like sleeping in your cell?[/say]")
+			saynn("[say=pc]Эй. Тебе нравится спать в твоей камере?[/say]")
 
-			saynn("Tavi looks around her dimly-lit allocated space. A small room made out of 4 cold metal walls with red accents everywhere, reminding about who Tavi is.")
+			saynn("Тави оглядывает своё тускло освещённое личное пространство. Маленькая комната, окружённая четырьмя холодными металлическими стенами с красными акцентами повсюду — напоминание о том, кто такая Тави.")
 
 			saynn("[say=tavi]"+str(taviSpeak("It's.. fine. I'm used to sleeping in cells.", "I think hell would have been more comfy for me. But I'm not in a hurry.", "It's.. fine. I'm used to sleeping in cells."))+"[/say]")
 
-			saynn("She looks at you again with a curious gaze.")
+			saynn("Она снова смотрит на тебя с любопытством.")
 
-			saynn("[say=tavi]Makes me wonder why are you asking that?[/say]")
+			saynn("[say=tavi]Интересно, почему ты об этом спрашиваешь?[/say]")
 
-			saynn("[say=pc]How does sleeping in my cell sound to you?[/say]")
+			saynn("[say=pc]Как тебе идея поспать в моей камере?[/say]")
 
-			saynn("Tavi tilts her head slightly. And then smiles softly.")
+			saynn("Тави слегка наклоняет голову, а затем мягко улыбается.")
 
 			saynn("[say=tavi]"+str(taviSpeak("There is not a lot of space on these beds. But I can just be your blanket~.", "You sure you can handle my heat~? I'm one hot kitty.", "There is not a lot of space on these beds. Good thing cats can fit anywhere."))+"[/say]")
 
-			saynn("She walks up closer to you and boops your nose with hers. A very intimate gesture.")
+			saynn("Она подходит ближе и касается твоего носа своим — очень интимный жест.")
 
 			saynn("[say=tavi]"+str(taviSpeak("Sure. If you give me permission, I will sleep with you. Or more~.", "Sure. Just give me permission and I will be all yours~.", "Sure. We can sleep together. Just let me know if you actually want that."))+"[/say]")
 
 		else:
-			saynn("You tell Tavi that you wanna discuss the idea of her sleeping in your cell.")
+			saynn("Ты говоришь Тави, что хочешь обсудить идею того, чтобы она спала в твоей камере.")
 
 			if (getFlag("TaviModule.Ch6TaviAllowedToSleepInPCCell")):
-				saynn("Currently, Tavi [b]will[/b] sleep in your cell during nights if she can.")
+				saynn("В настоящее время Тави [b]будет[/b] спать в твоей камере по ночам, если у неё будет такая возможность.")
 
 				if (getFlag("TaviModule.Ch6TaviAllowedToLewdPCDuringSleep")):
-					saynn("Also, Tavi [b]will[/b] occasionally satisfy her heat using your body.")
+					saynn("Кроме того, Тави [b]будет[/b] время от времени утолять свою течку твоим телом.")
 
 				else:
-					saynn("Tavi [b]will not[/b] try to satisfy her heat using your body.")
+					saynn("Тави [b]не будет[/b] пытаться утолять свою течку твоим телом.")
 
 			else:
-				saynn("Currently, Tavi [b]will not[/b] sleep in your cell during nights or satisfy her heat using your body.")
+				saynn("В данный момент Тави [b]не будет[/b] спать в твоей камере по ночам или утолять свою течку твоим телом.")
 
-		addButton("Allow sleep", "Let Tavi sleep in your cell during nights", "toggle_sleep")
-		addButton("Allow lewd", "Let Tavi occasionally satisfy her heat during the sleep with you", "toggle_lewd")
-		addButton("Leave", "You discussed this enough", "endthescene")
+		addButton("Разрешить сон", "Позволить Тави спать в твоей камере по ночам", "toggle_sleep")
+		addButton("Разрешить похоть", "Позволить Тави время от времени утолять течку во время сна с тобой", "toggle_lewd")
+		addButton("Уйти", "Вы достаточно это обсудили", "endthescene")
 func taviSpeak(normalSpeak, corruptSpeak, pureSpeak):
 	if(isCorrupt):
 		return corruptSpeak

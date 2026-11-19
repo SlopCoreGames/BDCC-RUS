@@ -4,7 +4,7 @@ func _init():
 	id = "TaviQuest2"
 
 func getVisibleName():
-	return "The Syndicate"
+	return "Синдикат"
 
 func getProgress():
 	var result = []

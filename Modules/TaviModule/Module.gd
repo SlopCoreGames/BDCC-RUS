@@ -315,31 +315,31 @@ func getAllSkills():
 func getSkillInfo(skillID):
 	if(skillID == "taviSkillCombat"):
 		return {
-			name = "Combat",
+			name = "Бой",
 			desc = "Teaching Tavi how to stand up for herself",
 			scene = "Ch6TaviCombatSkillScene",
 		}
 	if(skillID == "taviSkillSex"):
 		return {
-			name = "Sex",
+			name = "Секс",
 			desc = "Allowing Tavi to enjoy all the sex that she missed",
 			scene = "Ch6TaviSexSkillScene",
 		}
 	if(skillID == "taviSkillMasochism"):
 		return {
-			name = "Masochism",
+			name = "Мазохизм",
 			desc = "Training Tavi to endure pain better",
 			scene = "Ch6TaviMasochismSkillScene",
 		}
 	if(skillID == "taviSkillPetplay"):
 		return {
-			name = "Petplay",
+			name = "Петплей",
 			desc = "Training Tavi to be a better pet",
 			scene = "Ch6TaviPetplaySkillScene",
 		}
 	if(skillID == "taviSkillWatersports"):
 		return {
-			name = "Watersports",
+			name = "Водные игры",
 			desc = "Training Tavi to enjoy pee",
 			scene = "Ch6TaviWatersportsSkillScene",
 		}

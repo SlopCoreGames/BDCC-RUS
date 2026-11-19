@@ -11,42 +11,42 @@ func _run():
 	if(state == ""):
 		addCharacter("tavi")
 	if(state == ""):
-		saynn("Tavi sits on some machine and then forcibly pulls you to lay on her laps, belly down so she has full access to your rear.")
+		saynn("Тави сидит на каком-то аппарате, а затем силой притягивает тебя к себе, заставляя лечь ей на колени животом вниз, чтобы у неё был полный доступ к твоему заду.")
 
 		if(!GM.pc.isFullyNaked()):
-			saynn("Tavi then tugs off all the layers of your clothing, exposing the butt. Each time you would try to stop her she slaps your arms away.")
+			saynn("Затем Тави срывает с тебя все слои одежды, обнажая задницу. Каждый раз, когда ты пытаешься её остановить, она отшлепывает твои руки.")
 
-		saynn("[say=tavi]Hands behind your back, no covering anything, slut.[/say]")
+		saynn("[say=tavi]Руки за спину, ничего не прикрывать, шлюха![/say]")
 
 		if(GM.pc.hasTail()):
-			saynn("You hear her strict tone and do as she says, saying no would probably only make it worse. You lay still and await for your faith. Tavi also grabs your wagging tail and pulls it out of the way to make sure you won’t use it to protect yourself.")
+			saynn("Услышав её строгий тон, ты повинуешься, понимая, что отказ, скорее всего, сделает только хуже. Ты лежишь неподвижно, ожидая своей участи. Тави также хватает твой виляющий хвост и отводит его в сторону, чтобы ты не использовал его для самозащиты.")
 		else:
-			saynn("You hear her strict tone and do as she says, saying no would probably only make it worse. You lay still and await for your faith.")
+			saynn("Услышав её строгий тон, ты повинуешься, понимая, что отказ, скорее всего, сделает только хуже. Ты лежишь неподвижно, ожидая своей участи.")
 
-		saynn("She puts one hand on your back so you don’t fidget much and then rubs your butt for a bit before suddenly delivering a strong smack to it, so strong that it sends a wave of shivering through your body. It hurts, you yelp and try to escape from her grasp but she pulls you back and quickly gives you another spank, you barely manage to keep your arms crossed behind your back.")
+		saynn("Она кладет одну руку тебе на спину, чтобы ты не ерзал, немного разминает твою задницу, а затем внезапно наносит мощный шлепок — настолько сильный, что по твоему телу проходит волна дрожи. От боли ты вскрикиваешь и пытаешься вырваться из её хватки, но она притягивает тебя обратно и тут же отвешивает еще один шлепок; тебе едва удается удержать руки скрещенными за спиной.")
 
-		saynn("[say=tavi]Bad pet, very. Learn to take a punishment.[/say]")
+		saynn("[say=tavi]Плохая зверушка, очень плохая. Учись принимать наказание![/say]")
 
-		saynn("You brace for the next strike, closing your eyes and tilting your head down. But Tavi teases you, gently groping your ass and letting her palm slide along its surface back and forth in a circle before suddenly giving you a spank, then another, and another. Tavi holds you tight as she gives you a series of firm slaps on the ass, each one causing your butt cheeks to become redder and the feline doesn’t seem to want to stop anytime soon. You cry from pain and try to kick and struggle, the stings are so strong that you start to disobey and cover your butt with your hands but Tavi keeps delivering strikes and slapping your palms away. You stick your tongue out and moan from pain that quickly reaches its peak.")
+		saynn("Ты зажмуриваешься и склоняешь голову, готовясь к следующему удару. Но Тави лишь дразнит тебя: она нежно ощупывает твою задницу, водя ладонью по её поверхности вперед-назад, описывая круги, а затем внезапно отвешивает шлепок, затем еще один, и еще. Тави крепко прижимает тебя к себе, нанося серию звонких шлепков по ягодицам; от каждого из них они становятся всё краснее, и кошка, кажется, не собирается останавливаться в ближайшее время. Ты вскрикиваешь от боли и пытаешься брыкаться и вырываться; жжение настолько сильное, что ты начинаешь неповиноваться и пытаешься прикрыть задницу руками, но Тави продолжает наносить удары, отшлепывая твои ладони в стороны. Ты высунешь язык и стонешь от боли, которая стремительно достигает своего пика.")
 
-		saynn("[say=tavi]Hurts, huh? That's the thing about the punishments, they aren’t supposed to be fun.[/say]")
+		saynn("[say=tavi]Больно, да? В этом-то и суть наказаний — они и не должны быть приятными.[/say]")
 
-		saynn("Eventually, after about 30 spanks, Tavi stops and switches back to caressing your, now fully red, butt.")
+		saynn("В конце концов, после примерно тридцати шлепков, Тави останавливается и возвращается к ласкам твоей теперь уже ярко-красной задницы.")
 
-		saynn("[say=tavi]Wanna misbehave again?[/say]")
+		saynn("[say=tavi]Хочешь снова пошалить?[/say]")
 
-		saynn("You shake your head a lot, Tavi chuckles and gives your rear a squeeze, her other paw switches to stroking your back. It’s calming but your ass is still itchy from how strongly it was spanked.")
+		saynn("Ты интенсивно мотаешь головой; Тави посмеивается и сжимает твой зад, а её другая лапа переходит на поглаживания твоей спины. Это успокаивает, но задница всё еще зудит от того, как сильно её отшлепали.")
 
-		saynn("[say=tavi]Good.[/say]")
+		saynn("[say=tavi]Хорошо.[/say]")
 
 		if(GM.pc.hasReachableVagina()):
-			saynn("Tavi’s digits switch position and gently land on your pussy, they begin carefully rubbing you there. It’s a nice change, you stick your butt up for her and begin to moan softly, such a contrasting sensation feels so much better. You keep your arms behind like a good pet and focus on receiving the pleasure. But Tavi quickly pulls her digits away soon after.")
+			saynn("Пальцы Тави меняются местами и мягко ложатся на твою киску, начиная осторожно потирать её. Это приятная перемена; ты задираешь задницу навстречу её руке и начинаешь тихо стонать — такое контрастное ощущение ощущается куда лучше. Ты послушно держишь руки за спиной, как верный питомец, сосредоточившись на получении удовольствия. Но вскоре Тави резко убирает пальцы.")
 
-			saynn("[say=tavi]Now go.[/say]")
+			saynn("[say=tavi]А теперь иди.[/say]")
 
 		# (scene ends)
 
-		addButton("Continue", "Ow..", "endthescene")
+		addButton("Продолжить", "Ой...", "endthescene")
 
 
 		

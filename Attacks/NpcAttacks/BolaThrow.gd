@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Throw bola"
+	return "Бросок бола"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -18,7 +18,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkDodged(_attacker, _receiver, DamageType.Physical)):
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "The bola wraps around {receiver.name}'s legs and makes {receiver.him} trip!"
+	var text = "Бола обвивает ноги {receiver.name}, заставляя {receiver.him} споткнуться!"
 	_receiver.addEffect(StatusEffect.Collapsed)
 	
 	return {

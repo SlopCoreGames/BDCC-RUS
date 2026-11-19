@@ -13,7 +13,7 @@ func run(_triggerID, _args):
 	if(!getFlag("TaviModule.Ch7PlanningSceneHappened")):
 		return
 		
-	saynn("You can start the final attack right here and right now. But you will be [b]alone[/b] throughout most of it. If you want Tavi's help, check her.")
+	saynn("Ты можешь начать финальную атаку прямо здесь и прямо сейчас. Но большую часть пути ты будешь [b]одна[/b]. Если хочешь помощи Тави, проверь её.")
 		
 	addButtonUnlessLate("Final attack (alone)", "Use everything you learned to get the best possible chance at escaping from this place", "start")
 

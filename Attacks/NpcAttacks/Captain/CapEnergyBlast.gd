@@ -7,7 +7,7 @@ func _init():
 	aiScoreMultiplier = 0.7
 	
 func getVisibleName(_context = {}):
-	return "Energy Blast"
+	return "Энергетический залп"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -19,7 +19,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkDodged(_attacker, _receiver, DamageType.Physical)):
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "{attacker.name} fires a precise shot from {attacker.his} laser pistol, hitting {receiver.name} and causing intense pain."
+	var text = "{attacker.name} делает точный выстрел из своего лазерного пистолета {attacker.his}, попадая в {receiver.name} и причиняя нестерпимую боль."
 	
 	return {
 		text = text,

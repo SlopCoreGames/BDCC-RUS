@@ -6,13 +6,13 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Ferri taunt"
+	return "Насмешка Ферри"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
-	var text = "Ferri's taunting didn't have any effect on you"
+	var text = "Насмешки Ферри на тебя никак не подействовали"
 	return {
 		text = text,
 	}
@@ -21,7 +21,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	var text = "Ferri growls at you and swipes her claws in the air."
+	var text = "Ферри рычит на тебя и полосует воздух когтями."
 
 	text += "\n\n"
 	text += "[say=ferri]"+RNG.pick([

@@ -6,176 +6,176 @@ func _init():
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("You don't find Tavi when you enter her cell. Strangely unusual for her.")
+		saynn("Когда вы входите в её камеру, Тави там нет. Странно, на неё это не похоже.")
 
-		saynn("[say=pc]Tavi?[/say]")
+		saynn("[say=pc]Тави?[/say]")
 
-		saynn("No reaction. Time to go look for her. Hopefully she didn't get herself mindbroken again.")
+		saynn("Никакой реакции. Пора отправиться на её поиски. Надеюсь, она снова не словила ментальный брейк.")
 
-		addButton("Step out", "Look for Tavi in other blocks", "step_out")
+		addButton("Выйти наружу", "Искать Тави в других блоках", "step_out")
 	if(state == "step_out"):
 		aimCameraAndSetLocName("main_stairs_n")
 		GM.pc.setLocation("main_stairs_n")
 		addCharacter("kait")
 		addCharacter("tavi")
 		playAnimation(StageScene.Duo, "stand", {pc="tavi", npc="kait"})
-		saynn("You don't find her in the cell blocks so you head up to the main hall. While you do that, you begin to hear.. cheering.. of a crowd.. near the stocks.")
+		saynn("В жилых блоках вы её не находите, поэтому направляетесь к главному холлу. По пути вы начинаете слышать... ликование... толпы... где-то возле колодок.")
 
-		saynn("As you approach that crowd, you realize that they formed a make-shift arena for Tavi and Kait. There are a few guards, still kitted with the riot gear, watching from afar.. but they don't do anything about this.")
+		saynn("Приблизившись к толпе, вы понимаете, что они соорудили импровизированную арену для Тави и Кейт. Несколько охранников в полном штурмовом снаряжении наблюдают издалека... но они не спешат вмешиваться.")
 
-		saynn("[say=tavi]So this is what it's about? I think you lied to me, Kait.[/say]")
+		saynn("[say=tavi]Так вот в чём дело? Похоже, ты мне наврала, Кейт.[/say]")
 
-		saynn("Kait begins to slowly circle Tavi, her claws out on display. Tavi does the same, turning this into a strange dance.")
+		saynn("Кейт начинает медленно кружить вокруг Тави, выставив когти напоказ. Тави делает то же самое, превращая это в какой-то странный танец.")
 
-		saynn("[say=kait]You really thought I would invite you into my gang? After everything? You're more stupid than I thought, Tavi.[/say]")
+		saynn("[say=kait]Ты реально думала, что я приму тебя в свою банду? После всего, что было? Ты ещё тупее, чем я думала, Тави.[/say]")
 
-		saynn("It seems like they're about to fight.")
+		saynn("Похоже, они вот-вот сойдутся в бою.")
 
-		addButton("Intervene", "Tavi is gonna lose unless you help her", "try_intervene")
+		addButton("Вмешаться", "Тави проиграет, если вы ей не поможете", "try_intervene")
 	if(state == "try_intervene"):
 		playAnimation(StageScene.Duo, "dodge", {pc="tavi", npc="kait", npcAction="punch"})
 		addCharacter("risha")
-		saynn("You try to get through the wall of inmates around the ring but they push you back. Huh. The more you look at them, the more you realize that they are all from the same gang.. Kait's new gang.. Even if Tavi wins, they probably won't let her just walk away..")
+		saynn("Ты пытаешься пробраться сквозь стену заключенных вокруг ринга, но они оттесняют тебя назад. Хм. Чем дольше ты на них смотришь, тем яснее понимаешь, что все они из одной банды... Новой банды Кейт... Даже если Тави победит, они, скорее всего, просто так её не отпустят...")
 
-		saynn("Kait lashes out at Tavi, swiping her claws through the air as the tall kitty dodges out of the way at the last second.")
+		saynn("Кейт бросается на Тави, полосуя воздух когтями, но высокая кошечка успевает уклониться в последний момент.")
 
-		saynn("[say=tavi]You had all the chances in the world to prove that your strategy would work, Kait. And now you're just seeking revenge?[/say]")
+		saynn("[say=tavi]У тебя были все шансы доказать, что твоя стратегия сработает, Кейт. А теперь ты просто ищешь мести?[/say]")
 
-		saynn("Kait attacks again, causing Tavi to get out of the way for the second time. But then one of the gang members grabs her, causing Kait to get a cheap scratch on Tavi's cheek, drawing a few drops of her green blood. Tavi grunts.")
+		saynn("Кейт атакует снова, заставляя Тави увернуться во второй раз. Но тут один из членов банды хватает её, из-за чего Кейт удается нанести дешевую царапину на щеку Тави, пустив несколько капель её зеленой крови. Тави кряхтит от боли.")
 
-		saynn("[say=kait]You used me! I'm not good enough of a slave, right? You will be my slave by the time I'm done with you![/say]")
+		saynn("[say=kait]Ты использовала меня! Я недостаточно хороша в роли рабыни, да? К тому времени, как я с тобой закончу, ты сама станешь моей рабыней![/say]")
 
-		saynn("Tavi breaks free and keeps stepping back while Kait keeps advancing. More guards show up.. and don't do anything at all. Huh. One of them is Risha. She has a little smirk on her face, seeing another brawl between inmates.")
+		saynn("Тави вырывается и продолжает отступать, пока Кейт наступает. Появляется всё больше охранников... и они вообще ничего не делают. Хм. Одна из них — Риша. На её лице играет легкая ухмылка при виде очередной драки между заключенными.")
 
-		saynn("[say=tavi]I taught you everything I know, Kait. Just let go and follow your own path. Stop trying to be with me.. Stop trying to be me.[/say]")
+		saynn("[say=tavi]Я научила тебя всему, что знаю сама, Кейт. Просто отпусти всё и иди своим путем. Хватит пытаться быть со мной... Хватит пытаться быть мной.[/say]")
 
-		saynn("Kait swipes the air again but Tavi manages to avoid that attack too. The tall kitty is already panting though..")
+		saynn("Кейт снова полосует воздух когтями, но Тави удается избежать и этой атаки. Впрочем, высокая кошечка уже тяжело дышит...")
 
-		saynn("[say=tavi]You still.. fight like a girl.[/say]")
+		saynn("[say=tavi]Ты всё еще... дерешься как девчонка.[/say]")
 
-		addButton("Continue", "See what happens next", "tavi_gets_kicked")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_gets_kicked")
 	if(state == "tavi_gets_kicked"):
 		playAnimation(StageScene.Duo, "block", {pc="tavi", npc="kait", npcAction="kick"})
-		saynn("Kait hears her taunting and growls before throwing a strong kick that causes Tavi to grunt, her forearms taking most of the impact.")
+		saynn("Кейт слышит её издевательское рычание и наносит мощный удар ногой; Тави издает стон, принимая основной удар на предплечья.")
 
-		saynn("[say=tavi]Ugh..[/say]")
+		saynn("[say=tavi]Ух..[/say]")
 
-		saynn("[say=kait]Oh yeah? I'm stronger than you, I always was![/say]")
+		saynn("[say=kait]Да неужели? Я сильнее тебя, всегда была![/say]")
 
-		saynn("Kait kicks Tavi again, making her stumble back, almost collapsing already. You can't watch that happen, you try to get through the crowd but the wall of inmates just shoves you back. Tavi notices you and just offers you a subtle shake of her head.. and a little smirk?")
+		saynn("Кейт снова пинает Тави, заставляя ту пошатнуться и едва не рухнуть. Ты не можешь просто смотреть на это и пытаешься прорваться сквозь толпу, но стена из заключенных просто отшвыривает тебя назад. Тави замечает тебя и лишь едва заметно качает головой... и, кажется, слегка ухмыляется?")
 
-		saynn("[say=tavi]Brute force can only get you so far.[/say]")
+		saynn("[say=tavi]Грубая сила — это еще не всё.[/say]")
 
-		saynn("While Kait is absolutely destroying Tavi who is not putting up almost any fight, Risha's expression slowly changes. Her smile is gone, replaced with.. concerns? You never really saw her like this.")
+		saynn("Пока Кейт в пух и прах разносит Тави, которая почти не сопротивляется, выражение лица Риши медленно меняется. Улыбка исчезает, уступая место... беспокойству? Ты никогда раньше не видел её такой.")
 
-		addButton("Continue", "See what happens next", "tavi_collapses")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_collapses")
 	if(state == "tavi_collapses"):
 		playAnimation(StageScene.Duo, "defeat", {pc="tavi", npc="kait", npcAction="kick"})
-		saynn("After a few more well-placed attacks, Tavi is unable to fight anymore. The angry crowd pins her while Kait extends claws on both of her paws and begins approaching bruised Tavi.")
+		saynn("После нескольких точных ударов Тави больше не в силах сражаться. Разъяренная толпа прижимает её к земле, а Кейт выпускает когти на обеих лапах и начинает приближаться к избитой Тави.")
 
-		saynn("[say=kait]I'm sick of you. Pathetic display.[/say]")
+		saynn("[say=kait]Ты мне осточертела. Жалкое зрелище.[/say]")
 
-		saynn("[say=tavi]Gh-h.. Gonna kill me? In front of your whole gang?[/say]")
+		saynn("[say=tavi]Гх-х.. Убьешь меня? Прямо на глазах у всей твоей банды?[/say]")
 
-		saynn("Kait is smiling.")
+		saynn("Кейт улыбается.")
 
-		saynn("[say=kait]I will start with the clothes. You've never been in the stocks, were you?[/say]")
+		saynn("[say=kait]Начну с одежды. Ты ведь никогда не была в колодках, верно?[/say]")
 
-		saynn("Tavi is quietly awaiting her fate. Kait raises her paw, about to tear through the cloth..")
+		saynn("Тави тихо ожидает своей участи. Кейт поднимает лапу, готовясь разорвать ткань..")
 
-		addButton("Continue", "See what happens next", "risha_saves_tavi")
+		addButton("Продолжить", "Смотреть, что будет дальше", "risha_saves_tavi")
 	if(state == "risha_saves_tavi"):
 		playAnimation(StageScene.Duo, "stunbaton", {pc="risha", npc="kait", npcAction="defeat"})
-		saynn("Suddenly Risha rams through the crowd, using her collapsible shield to push inmates out of the way. Kait takes the hit on her side, causing her light frame to be thrown back a few meters.")
+		saynn("Внезапно Риша прорывается сквозь толпу, используя свой складной щит, чтобы расталкивать заключенных. Кейт принимает удар на бок, отчего её легкое тело отбрасывает назад на несколько метров.")
 
-		saynn("[say=risha]Everyone, fuck off! Or I will make you eat dirt from under my boots![/say]")
+		saynn("[say=risha]Все, съебались нахер! Или я заставлю вас жрать грязь из-под моих сапог![/say]")
 
-		saynn("She slams her shield into the floor, causing almost a shockwave-like powerful effect that sends fear into the inmates that weren't affected by her explosive entrance.")
+		saynn("Она с силой бьет щитом об пол, создавая эффект, почти похожий на ударную волну, которая вселяет страх в тех заключенных, кого не зацепило её взрывное появление.")
 
-		saynn("Risha's other paw is holding a fully charged stun baton that sends sparks as she hits it against her shield, causing more powerful impacts. Tavi is on the floor, trying to protect herself.. but Risha is here to protect her it seems.")
+		saynn("В другой лапе у Риши полностью заряженный электрошокер; она бьет им по щиту, высекая искры и усиливая мощь ударов. Тави лежит на полу, пытаясь защититься.. но, похоже, Риша здесь, чтобы защитить её.")
 
-		saynn("[say=kait]No! Fuck you![/say]")
+		saynn("[say=kait]Нет! Да пошли вы нахуй![/say]")
 
-		saynn("Kait quickly recovers and tries to pounce on Risha but that was a huge mistake. The poor lilac receives a healthy dose of shock through her body before she gets shoved away.")
+		saynn("Кейт быстро приходит в себя и пытается прыгнуть на Ришу, но это становится огромной ошибкой. Бедную лиловую получает мощный разряд тока по всему телу, после чего её отшвыривает в сторону.")
 
-		saynn("[say=risha]Anyone else? Bring it on, you stupid sluts. I got plenty to share.[/say]")
+		saynn("[say=risha]Кто-нибудь еще? Валите на меня, тупые сучки. У меня хватит на всех.[/say]")
 
-		saynn("Kait, defeated, gets pulled away by some of her gang members. While the rest.. slowly stepping away, creating more and more holes in the improvised arena.")
+		saynn("Побитая Кейт, уходя на попятную, утягивается своими подругами из банды. Остальные же.. медленно отступают, оставляя всё больше и больше дыр в этой импровизированной арене.")
 
-		saynn("[say=kait]This isn't over! Ugh..[/say]")
+		saynn("[say=kait]Это еще не конец! Ух..[/say]")
 
-		saynn("[say=risha]Yeah-yeah-yeah, bark louder, breeding bitch.[/say]")
+		saynn("[say=risha]Да-да-да, лай громче, сучка-осеменительница.[/say]")
 
-		addButton("Continue", "See what happens next", "risha_talks_to_tavi")
+		addButton("Продолжить", "Смотреть, что будет дальше", "risha_talks_to_tavi")
 	if(state == "risha_talks_to_tavi"):
 		removeCharacter("kait")
 		playAnimation(StageScene.SexStart, "start", {pc="risha", npc="tavi"})
-		saynn("As the crowd disperses, Risha puts away her shield and her weapon before turning towards Tavi. You watch her offering Tavi a helping hand.")
+		saynn("Когда толпа расходится, Риша убирает щит и оружие, после чего поворачивается к Тави. Ты наблюдаешь, как она протягивает Тави руку помощи.")
 
-		saynn("[say=tavi]Why the sudden change of mind..[/say]")
+		saynn("[say=tavi]Почему такая внезапная перемена во взглядах..[/say]")
 
-		saynn("[say=risha]How could I leave my sister in danger.[/say]")
+		saynn("[say=risha]Как я могла оставить сестру в опасности?[/say]")
 
-		saynn("Huh, sister.. Tavi giggles softly.")
+		saynn("Хм, сестра... Тави тихонько хихикает.")
 
-		saynn("[say=tavi]You weren't against the idea of breeding me not that long ago~.[/say]")
+		saynn("[say=tavi]Еще совсем недавно ты была не против того, чтобы осеменить меня~.[/say]")
 
-		saynn("[say=risha]C'mon, I didn't know! Well, the offer still..[/say]")
+		saynn("[say=risha]Да ладно тебе, я же не знала! Ну, предложение все еще..[/say]")
 
-		saynn("Tavi tilts her head and sighs, rolling her eyes.")
+		saynn("Тави наклоняет голову и вздыхает, закатывая глаза.")
 
-		saynn("[say=risha]Fine-e~.[/say]")
+		saynn("[say=risha]Ладно-о~.[/say]")
 
-		saynn("Tavi grabs Risha's hand and stands up with her help. You stand near.")
+		saynn("Тави хватает Ришу за руку и встает с ее помощью. Ты стоишь рядом.")
 
-		addButton("Continue", "See what happens next", "more_talking_with_risha")
+		addButton("Продолжить", "Смотреть, что будет дальше", "more_talking_with_risha")
 	if(state == "more_talking_with_risha"):
 		playAnimation(StageScene.Duo, "stand", {pc="tavi", npc="risha"})
-		saynn("[say=risha]You two really caused some stir. The captain was pretty mad.[/say]")
+		saynn("[say=risha]Вы двое реально навели шороху. Капитан был в ярости.[/say]")
 
-		saynn("Tavi smiles.")
+		saynn("Тави улыбается.")
 
-		saynn("[say=tavi]We only want to get out of here. Fuck the captain.[/say]")
+		saynn("[say=tavi]Мы просто хотим выбраться отсюда. К черту капитана.[/say]")
 
-		saynn("Risha shrugs.")
+		saynn("Риша пожимает плечами.")
 
-		saynn("[say=risha]I won't stop you, sis. But I'd rather not become the enemy of the whole AlphaCorp, you know? There is so much free sex here, it's almost heaven.[/say]")
+		saynn("[say=risha]Я не стану тебе мешать, сестренка. Но мне бы не хотелось стать врагом всей AlphaCorp, понимаешь? Здесь столько бесплатного секса, это почти рай.[/say]")
 
-		saynn("[say=tavi]Sis, huh~?[/say]")
+		saynn("[say=tavi]Сестренка, значит~?[/say]")
 
-		saynn("[say=risha]What? I'm not allowed to call you that?[/say]")
+		saynn("[say=risha]Что? Мне что, нельзя тебя так называть?[/say]")
 
-		saynn("Tavi shrugs and smiles.")
+		saynn("Тави пожимает плечами и улыбается.")
 
-		saynn("[say=risha]I will go find that cocky cat. She needs some more kittens I bet. See you around.[/say]")
+		saynn("[say=risha]Пойду поищу ту заносчивую кошечку. Уверена, ей не помешают новые котята. Еще увидимся.[/say]")
 
-		saynn("Tavi pats Risha on the back before she leaves you two alone.")
+		saynn("Тави хлопает Ришу по спине, прежде чем оставить вас двоих наедине.")
 
-		addButton("Tavi", "Talk with Tavi about what happened", "talk_tavi")
+		addButton("Тави", "Поговорить с Тави о случившемся", "talk_tavi")
 	if(state == "talk_tavi"):
 		removeCharacter("risha")
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
-		saynn("[say=pc]You're alright, Tavi?[/say]")
+		saynn("[say=pc]Ты в порядке, Тави?[/say]")
 
-		saynn("She swipes dirt and dust off her uniform. Her cheek is still bleeding a bit.")
+		saynn("Она смахивает грязь и пыль со своей формы. На щеке всё ещё проступает кровь.")
 
-		saynn("[say=tavi]I'm alright. I think it went pretty well, all things considered.[/say]")
+		saynn("[say=tavi]Всё нормально. Думаю, всё прошло довольно успешно, учитывая обстоятельства.[/say]")
 
-		saynn("[say=pc]Do you wanna go after Kait? She might need to be punished for this.[/say]")
+		saynn("[say=pc]Хочешь пойти за Кейт? За это её стоит наказать.[/say]")
 
-		saynn("Tavi smiles.")
+		saynn("Тави улыбается.")
 
-		saynn("[say=tavi]It's fine, Kait found her path I think. She and her new gang will be alright.[/say]")
+		saynn("[say=tavi]Всё хорошо, Кейт, кажется, нашла свой путь. Она и её новая банда справятся.[/say]")
 
-		saynn("[say=pc]If you say so. What's.. now?[/say]")
+		saynn("[say=pc]Если ты так говоришь. И что... теперь?[/say]")
 
-		saynn("Tavi shrugs.")
+		saynn("Тави пожимает плечами.")
 
-		saynn("[say=tavi]Your call~. If you wanna talk, I will be in my cell. There are too many ears here.[/say]")
+		saynn("[say=tavi]Решай сама~. Если захочешь поговорить, я буду у себя в камере. Здесь слишком много лишних ушей.[/say]")
 
-		saynn("Tavi heads towards her cell.")
+		saynn("Тави направляется к своей камере.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

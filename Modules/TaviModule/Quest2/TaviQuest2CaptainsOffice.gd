@@ -15,167 +15,167 @@ func _run():
 		aimCameraAndSetLocName("cd_captain_office")
 		#playAnimation(StageScene.Solo, "defeat")
 		
-		saynn("The doors close behind you as you enter the captain's office. You look around, speechless. Walls are made out of red wood with an added golden trim, many carpets are covering the floor. The tall ceiling features a grand chandelier in a gothic style. A lot of antique design is incorporated into the furniture, there is even a huge old school radio in the corner. The center of a room is taken by a big wooden desk and a rich chair made out of black leather. Then there are two more smaller chairs before it and a few little tables placed around the room, a bookshelf. The main desk features a golden name plate saying ‘Cpt. Wright’, some writing utensils and a lamp. Everything looks pretty clean.")
+		saynn("Когда вы входите в кабинет капитана, за вашей спиной закрываются двери. Вы оглядываетесь, лишившись дара речи. Стены отделаны красным деревом с золотой каймой, пол устлан множеством ковров. На высоком потолке висит величественная люстра в готическом стиле. В мебель вплетено множество антикварных элементов, а в углу стоит даже огромный старый радиоприемник. Центр комнаты занимает массивный деревянный стол и роскошное кресло из черной кожи. Перед столом стоят еще два кресла поменьше, а по комнате расставлены несколько маленьких столиков и книжный шкаф. На главном столе красуется золотая табличка с надписью «Кап. Райт», лежат письменные принадлежности и стоит лампа. Всё выглядит очень опрятно.")
 
-		saynn("Behind the table you see the captain, just standing there with a book in his hand and reading glasses on.")
+		saynn("За столом вы видите капитана: он просто стоит с книгой в руках и в очках для чтения.")
 
-		saynn("[say=captain]I was thinking about this. Do you know why the wars will never end?[/say]")
+		saynn("[say=captain]Я тут размышлял... Знаешь, почему войны никогда не закончатся?[/say]")
 
-		saynn("[say=tavi]Cut the crap.[/say]")
+		saynn("[say=tavi]Хватит нести херню.[/say]")
 
-		saynn("Tavi swiftly asserts the room and dashes forward but her attempt at jumping over the table was quickly stopped by the captain pressing a button on his remote. Yours and Tavi’s collars send a sudden strong shock through your bodies, you drop to your knees and suffer while watching Tavi doing the same. Captain speaks through his headset.")
+		saynn("Тави стремительно осматривает комнату и бросается вперед, но её попытку перепрыгнуть через стол быстро пресекает капитан, нажав кнопку на пульте. Ваши ошейники посылают резкий мощный разряд тока по телам; вы падаете на колени, корчась от боли, и видите, как то же самое происходит с Тави. Капитан говорит через гарнитуру.")
 
-		saynn("[say=captain]Cuff ‘em up for me.[/say]")
+		saynn("[say=captain]Наденьте на них наручники.[/say]")
 
-		saynn("Two guards come in and apprehend you both. Tavi tries to resist but she is met with more shock that sends her body to squirm around on the floor.")
+		saynn("Входят двое охранников и скручивают вас обоих. Тави пытается сопротивляться, но получает очередной разряд тока, от которого её тело начинает судорожно дергаться по полу.")
 
-		saynn("[say=captain]Thanks, I will handle it from here. At ease.[/say]")
+		saynn("[say=captain]Спасибо, дальше я сам. Свободны.[/say]")
 
-		saynn("One of the guards is Risha, a heavily armored lynx with a mean face.")
+		saynn("Одна из охранниц — Риша, тяжело бронированная рысь с крайне злобной мордой.")
 
-		saynn("[say=risha]Really? I wanted to have some fun though.[/say]")
+		saynn("[say=risha]Серьезно? А я-то хотела немного развлечься.[/say]")
 
-		saynn("[say=captain]Fine, stay.[/say]")
+		saynn("[say=captain]Ладно, оставайся.[/say]")
 
-		saynn("Your hands were cuffed behind your back, you rattle them and realize you can’t escape their bounds.")
+		saynn("Твои руки скованы за спиной; ты трясешь ими и понимаешь, что из этих оков не вырваться.")
 
-		saynn("The captain puts away the book and walks up to restrained Tavi. He looks down at her while she offers him her growl.")
+		saynn("Капитан убирает книгу и подходит к связанной Тави. Он смотрит на неё сверху вниз, пока она скалится ему в ответ.")
 
-		saynn("[say=captain]Anti-war people can’t win any. That’s why. If you wanna win - you pick the strongest side. It’s simple, really.[/say]")
+		saynn("[say=captain]Пацифисты никогда не побеждают. Вот почему. Если хочешь выиграть — выбирай сильнейшую сторону. Всё же просто.[/say]")
 
-		saynn("He helps Tavi to get up, though she shoves him back immediately. Then he helps you too while Risha is watching.")
+		saynn("Он помогает Тави подняться, хотя она тут же отталкивает его. Затем он помогает и тебе, пока Риша наблюдает за вами.")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "continue"):
-		saynn("[say=tavi]I don’t choose sides.[/say]")
+		saynn("[say=tavi]Я не выбираю стороны.[/say]")
 
-		saynn("[say=captain]Then someone will make the choice for you. Listen, Tavi. You’re very lucky to not be spaced after everything that you did. But I don’t take easy paths.[/say]")
+		saynn("[say=captain]Тогда кто-нибудь выберет за тебя. Слушай, Тави. Тебе чертовски повезло, что тебя не вышвырнули в открытый космос после всего, что ты натворила. Но я не привык идти легкими путями.[/say]")
 
-		saynn("[say=tavi]Fuck off.[/say]")
+		saynn("[say=tavi]Отъебись.[/say]")
 
-		saynn("He sits on the corner of his desk and grabs Tavi by the chin. She avoids it and even tries to bite back. The captain sighs.")
+		saynn("Он усаживается на край стола и хватает Тави за подбородок. Она уворачивается и даже пытается укусить его в ответ. Капитан вздыхает.")
 
-		saynn("[say=captain]Gag her.[/say]")
+		saynn("[say=captain]Заткни её кляпом.[/say]")
 
-		saynn("[say=risha]With pleasure. Now don’t move, slutty red.[/say]")
+		saynn("[say=risha]С удовольствием. А теперь не дергайся, шлюшка рыжая.[/say]")
 
-		saynn("Risha produces a ball gag and grabs Tavi by her hair before shoving the ball into her mouth and securing the straps behind her back. She growls and hisses but any word she tries to say now comes out as very muffled.")
+		saynn("Риша достает шариковый кляп и хватает Тави за волосы, прежде чем запихнуть шар ей в рот и затянуть ремни за спиной. Тави рычит и шипит, но любые слова, которые она пытается произнести, выходят лишь невнятным мычанием.")
 
-		saynn("[say=captain]I tried to help you. You will be punished.[/say]")
+		saynn("[say=captain]Я пыталась тебе помочь. Теперь тебя ждет наказание.[/say]")
 
-		addButton("Continue", "See what happens next", "continue1")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue1")
 
 	if(state == "continue1"):
-		saynn("Then he directs his attention at you.")
+		saynn("Затем он переводит взгляд на тебя.")
 
-		saynn("[say=captain]As for you, I think there is still hope. Listen, Tavi is a very manipulative person, your best bet is to avoid her. You know what she did?[/say]")
+		saynn("[say=captain]Что касается тебя, думаю, надежда еще есть. Послушай, Тави — очень манипулятивный тип, твой лучший вариант — держаться от нее подальше. Знаешь, что она натворила?[/say]")
 
-		saynn("[say=pc]Assasination, blackmail, something about destroying a station.[/say]")
+		saynn("[say=pc]Убийства, шантаж, что-то там про уничтожение станции.[/say]")
 
-		saynn("The captain chuckles slightly. Tavi glares at you both while Risha holds her still.")
+		saynn("Капитан слегка посмеивается. Тави сверлит вас обоих яростным взглядом, пока Риша удерживает её на месте.")
 
-		saynn("[say=captain]First, she gathers information. Through social engineering. It could be her presenting herself as a prostitute for hire for example. She doesn’t have to leave her computer, she just uses someone’s photos and pulls all the info out of someone. Then she blackmails them.[/say]")
+		saynn("[say=captain]Сначала она собирает информацию. С помощью социальной инженерии. Например, она может прикинуться проституткой на час. Ей даже не нужно вставать из-за компьютера — она просто берет чьи-то фото и вытягивает из человека всю подноготную. А потом начинает шантажировать.[/say]")
 
-		saynn("Tavi tries to kick the guy but Risha puts the unruly inmate into a choke grab.")
+		saynn("Тави пытается пнуть парня, но Риша хватает строптивую заключенную в удушающий захват.")
 
-		saynn("[say=captain]And it works. The more they chat with her the more data she has against them. And then she orders them to kill her real target. She is like a virus.[/say]")
+		saynn("[say=captain]И это работает. Чем больше они с ней болтают, тем больше данных она собирает против них. А затем она приказывает им убить её настоящую цель. Она словно вирус.[/say]")
 
-		saynn("[say=pc]What if her targets were bad people?[/say]")
+		saynn("[say=pc]А что, если её цели — плохие люди?[/say]")
 
-		saynn("The captain tilts his head down.")
+		saynn("Капитан склоняет голову.")
 
-		saynn("[say=captain]That’s what the prisons are for. That is why I’m here. Justice can not be accomplished through the use of violence. Violence only leads to even more violence.[/say]")
+		saynn("[say=captain]Для этого тюрьмы и нужны. Именно поэтому я здесь. Справедливости нельзя добиться насилием. Насилие лишь порождает еще больше насилия.[/say]")
 
-		saynn("Tavi’s mouth is forced open for so long she starts to drool.")
+		saynn("Рту заставляют так долго держать рот открытым, что у неё начинает течь слюна.")
 
-		saynn("[say=risha]This bitch clearly likes it. Can I fuck her later?[/say]")
+		saynn("[say=risha]Этой сучке явно нравится. Можно мне трахнуть её позже?[/say]")
 
-		saynn("[say=captain]What was her plan anyway? Calling Syndicate? Do you know what the Syndicate is?[/say]")
+		saynn("[say=captain]Какой у неё вообще был план? Вызвать Синдикат? Ты хоть знаешь, что такое Синдикат?[/say]")
 
-		saynn("[say=pc]Not really.[/say]")
+		saynn("[say=pc]Не особо.[/say]")
 
-		saynn("[say=captain]They’re slavers. Capturing planets and entire worlds one by one. Strong people become their army, beatiful ones become their sex slaves. And the rest.. well.. it’s their currency and cheap workforce. AlphaCorp has been at war with them for many years. What do you think would happen to you if they arrive?[/say]")
+		saynn("[say=captain]Это работорговцы. Они захватывают планеты и целые миры, одну за другой. Сильные становятся их армией, красавицы — их секс-рабынями. А остальные... ну... они их валюта и дешевая рабочая сила. АльфаКорп воюет с ними уже много лет. Как думаешь, что бы случилось с тобой, если бы они явились сюда?[/say]")
 
-		saynn("Tavi makes muffled noises and struggles against her restraints. She looks at you and shakes her head rapidly. Risha presses a stun baton to Tavi’s crotch and sends another painful shock through her.")
+		saynn("Тави издает приглушенные звуки и пытается вырваться из оков. Она смотрит на тебя и быстро качает головой. Риша прижимает электрошокер к промежности Тави и посылает еще один болезненный разряд.")
 
-		saynn("[say=risha]This whore is so unruly.[/say]")
+		saynn("[say=risha]Эта шлюха совсем неуправляема.[/say]")
 
-		saynn("The captain stands up and produces a riding crop.")
+		saynn("Капитан встает и достает стековую хлыст.")
 
-		saynn("[say=captain]Bend her over the table.[/say]")
+		saynn("[say=captain]Нагни её над столом.[/say]")
 
-		saynn("Risha chuckles and does as the captain says, bringing Tavi to the desk and bending her forward, providing easy access to her butt for spanking and such. She voices her complaints with lots of muffled incoherable noises.")
+		saynn("Риша усмехается и делает, как сказал капитан: она подводит Тави к столу и наклоняет её вперед, открывая легкий доступ к её заднице для шлепков и прочего. Тави выражает свои протесты кучей невнятных приглушенных звуков.")
 
-		saynn("Captain fidgets with the riding crop in his hands.")
+		saynn("Капитан вертит хлыст в руках.")
 
-		saynn("[say=captain]So. You have a choice. You can let her keep manipulating you, I don’t care that much about some inmate, this whole facility is too big to fail from you two. The second option is, you forget about Tavi. And join my side. I have loyal guards but not that many loyal inmates. You help me, provide me with inside information, do little tasks for me, and I can help you to get out of this prison quicker. What will it be?[/say]")
+		saynn("[say=captain]Итак. У тебя есть выбор. Ты можешь позволить ей и дальше манипулировать тобой — мне плевать на одну заключенную, это заведение слишком велико, чтобы развалиться из-за вас двоих. Второй вариант: ты забываешь о Тави и встаешь на мою сторону. У меня много верных охранников, но не так много преданных заключенных. Ты помогаешь мне, снабжаешь инсайдами, выполняешь мелкие поручения, а я помогаю тебе выбраться из этой тюрьмы побыстрее. Что выберешь?[/say]")
 
-		saynn("Tavi glares at you while awaiting her faith.")
+		saynn("Тави сверлит тебя взглядом, ожидая своей участи.")
 
 		# (Options are Stay with Tavi, Betray Tavi)
 
-		addButton("Stay with Tavi", "You’re not gonna betray her now (Tavi route, you can’t change this choice later)", "stay_with_tavi")
-		addButton("Betray Tavi", "Spying for the captain doesn’t seem like such a bad idea (Good inmate route, you can’t change this choice later)", "betray_tavi")
+		addButton("Остаться с Тави", "Ты не собираешься предавать её сейчас (ветка Тави, этот выбор нельзя изменить позже)", "stay_with_tavi")
+		addButton("Предать Тави", "Шпионить для капитана — не такая уж плохая идея (Путь «хорошей заключенной», этот выбор нельзя будет изменить)", "betray_tavi")
 
 	if(state == "betray_tavi"):
-		saynn("[say=pc]Well. Fine. I will do what you want.[/say]")
+		saynn("[say=pc]Ну ладно. Хорошо. Я сделаю то, что ты хочешь.[/say]")
 
-		saynn("[say=captain]Great. You made a right choice.[/say]")
+		saynn("[say=captain]Отлично. Ты сделала правильный выбор.[/say]")
 
-		saynn("Tavi glares at you, she looks exactly into your eyes. You see pure hatred. Looks like you just made an enemy. Though her evil gaze is quickly broken when the captain raises his riding crop and delivers a powerful strike on Tavi’s butt. She grunts and growls back, she is not here to give the guy satisfaction. Risha holds the feline still when she tries to struggle.")
+		saynn("Тави свирепо смотрит на тебя, впиваясь взглядом прямо в глаза. В них читается чистая ненависть. Похоже, ты только что обрела врага. Впрочем, её злобный взор быстро сменяется, когда капитан заносит хлыст и с силой опускает его на задницу Тави. Она кряхтит и рычит в ответ — она здесь не для того, чтобы доставлять этому парню удовольствие. Риша удерживает кошачью, когда та пытается вырваться.")
 
-		saynn("[say=risha]Keep still, painslut, don’t get too excited.[/say]")
+		saynn("[say=risha]Не дергайся, больнючка, не слишком-то возбуждайся.[/say]")
 
-		saynn("He continues to her crop marks until her butt is glowing green, due to her blood. By the end of it, Tavi is whimpering after every hit and arches her back. She is panting heavily and the captain just chuckles. The captain looks at you.")
+		saynn("Он продолжает хлестать её, пока её задница не начинает буквально светиться зеленью от крови. К концу экзекуции Тави скулит после каждого удара и выгибает спину. Она тяжело дышит, а капитан лишь посмеивается. Затем он переводит взгляд на тебя.")
 
-		saynn("[say=captain]I will find you when I need you. Just enjoy your stay for now.[/say]")
+		saynn("[say=captain]Я найду тебя, когда ты мне понадобишься. А пока просто наслаждайся пребыванием здесь.[/say]")
 
-		saynn("Then he directs his gaze at Risha.")
+		saynn("Затем он переводит взгляд на Ришу.")
 
-		saynn("[say=captain]Drop this inmate at the cellblock, I will finish with Tavi here.[/say]")
+		saynn("[say=captain]Оставь эту зэчку в блоке камер, я закончу с Тави здесь.[/say]")
 
-		saynn("[say=risha]Aww, but captain. I wanted to breed her cute green pussy.[/say]")
+		saynn("[say=risha]О-о-о, ну капитан... А я так хотел оттрахать её милую зеленую киску.[/say]")
 
-		saynn("Tavi buckles and receives a firm spank from the captain.")
+		saynn("Тави кряхтит, когда капитан отвешивает ей звонкий шлепок.")
 
-		saynn("[say=captain]Not in my office. Obey the orders.[/say]")
+		saynn("[say=captain]Не в моем кабинете. Выполняй приказы![/say]")
 
-		saynn("[say=risha]Fine, time to go inmate.[/say]")
+		saynn("[say=risha]Ладно, пора идти, заключенная.[/say]")
 
-		saynn("She leashes you and walks you out the office. Captain continues to deliver more strikes to the rebellious Tavi.")
+		saynn("Она накидывает на тебя поводок и выводит из кабинета. Капитан продолжает нанизывать удары на непокорную Тави.")
 
-		saynn("(( There is no good inmate route yet so you will be brought back to the choice, sorry ))")
-		addButton("Continue", "See what happens next", "continue1")
+		saynn("(( Хорошего пути для заключенного пока нет, так что тебя вернут к выбору, сорян ))")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue1")
 
 	if(state == "stay_with_tavi"):
-		saynn("[say=pc]I’m not gonna betray Tavi and be a spy for you, no way.[/say]")
+		saynn("[say=pc]Я не собираюсь предавать Тави и шпионить в вашу пользу, ни за что![/say]")
 
-		saynn("[say=captain]Well. Then you'll join her.[/say]")
+		saynn("[say=captain]Что ж. Тогда ты пойдешь вслед за ней.[/say]")
 
-		saynn("The captain walks behind you and moves you forward until you’re in line with Tavi. Then he bends you over the desk.")
+		saynn("Капитан идет позади тебя, подгоняя вперед, пока ты не встаешь в один ряд с Тави. Затем он нагибает тебя через стол.")
 
-		saynn("[say=captain]To be frank, I don’t care. I just enjoy seeing inmates squirm and blush.[/sat]")
+		saynn("[say=captain]Честно говоря, мне плевать. Мне просто нравится смотреть, как заключенные корчатся и краснеют.[/sat]")
 
-		saynn("He raises his riding crop and delivers a strike to your {pc.thick} butt. You yelp and try to protect yourself with your cuffed hands. Captain then does the same to Tavi, giving her feline butt a firm blow. She grunts and growls back, she is not here to give the guy satisfaction.")
+		saynn("Он заносит хлыст и наносит удар тебе по {pc.thick} заднице. Ты вскрикиваешь и пытаешься прикрыться скованными руками. Затем капитан делает то же самое с Тави, отвешивая звонкий удар по ее кошачьей попке. Она в ответ рычит и ворчит — она здесь не для того, чтобы доставлять парню удовольствие.")
 
-		saynn("[say=risha]Keep still, painslut, don’t get too excited.[/say]")
+		saynn("[say=risha]Не дергайся, больнючка, не слишком-то возбуждайся.[/say]")
 
-		saynn("He continues to leave you two crop marks until your butts are glowing red. By the end of it, Tavi is whimpering after every hit and arches her back. You both panting heavily and the captain just chuckles.")
+		saynn("Он продолжает отвешивать вам обоим шлепки, пока ваши задницы не наливаются ярко-красным цветом. К концу экзекуции Тави скулит после каждого удара, выгибая спину. Вы оба тяжело дышите, а капитан лишь посмеивается.")
 
-		saynn("[say=captain]Drop them at the cellblock, I think they got their lesson.[/say]")
+		saynn("[say=captain]Сбрось их в блок камер, думаю, урок они усвоили.[/say]")
 
-		saynn("[say=risha]Aww, but captain. I wanted to breed the purple one.[/say]")
+		saynn("[say=risha]Ну капитааан... А я хотела осеменить ту фиолетовую.[/say]")
 
-		saynn("Tavi buckles and receives a firm spank from Risha.")
+		saynn("Тави сгибается, получая от Риши крепкий шлепок.")
 
-		saynn("[say=captain]Not in my office. Obey the orders.[/say]")
+		saynn("[say=captain]Не в моем кабинете. Выполняй приказы![/say]")
 
-		saynn("[say=risha]Fine, time to go, inmates.[/say]")
+		saynn("[say=risha]Ладно, пора по домам, заключенные.[/say]")
 
-		saynn("She leashes you both and walks you out the office. Captain holds his palms together behind his back and watches you all leave.")
+		saynn("Она накидывает на вас обоих поводки и выводит из кабинета. Капитан стоит, сложив ладони за спиной, и провожает вас взглядом.")
 
-		addButton("Continue", "Oww", "continue2")
+		addButton("Продолжить", "Ой-ой!", "continue2")
 
 	if(state == "continue2"):
 		playAnimation(StageScene.Solo, "walk")
@@ -183,13 +183,13 @@ func _run():
 		GM.pc.setLocation("hall_mainentrance")
 		removeCharacter("captain")
 		
-		saynn("Risha brings you back into the cellblock and unleashes you.")
+		saynn("Риша приводит вас обратно в блок камер и отцепляет поводки.")
 
-		saynn("[say=risha]Now get lost before I change my mind.[/say]")
+		saynn("[say=risha]А теперь проваливайте, пока я не передумала![/say]")
 
 		# (scene end)
 
-		addButton("Continue", "That was an adventure", "endthescene")
+		addButton("Продолжить", "Это было приключение", "endthescene")
 
 
 func _react(_action: String, _args):

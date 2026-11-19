@@ -266,7 +266,7 @@ func getLastText():
 func getAllDifficulties():
 	return {
 		0: {
-			name = "Light spanks",
+			name = "Легкие шлепки",
 			actions = ["wait", "lightspank"],
 			amountOfActions = 3,
 			winID = "firstspanks",
@@ -276,7 +276,7 @@ func getAllDifficulties():
 			avoidTargets = [],
 		},
 		1: {
-			name = "Firm spanks",
+			name = "Злобные шлепки",
 			actions = ["wait", "lightspank", "heavyspank"],
 			amountOfActions = 5,
 			winID = "firmspanks",
@@ -286,7 +286,7 @@ func getAllDifficulties():
 			avoidTargets = [3, 5, 10, 15, 20, 6, 9, 14],
 		},
 		2: {
-			name = "Choking",
+			name = "Удушение",
 			actions = ["wait", "heavyspank", "startchoke"],
 			amountOfActions = 4,
 			winID = "afterchoking",
@@ -296,7 +296,7 @@ func getAllDifficulties():
 			avoidTargets = [3, 6, 9, 12, 15, 10, 15, 20, 22, 14],
 		},
 		3: {
-			name = "Temperature play",
+			name = "Температурные игры",
 			actions = ["wait", "lightspank", "pourvax", "ice"],
 			amountOfActions = 5,
 			winID = "afterwax",
@@ -306,7 +306,7 @@ func getAllDifficulties():
 			avoidTargets = [3, 6, 9, 12, 5, 15, 25, 35],
 		},
 		4: {
-			name = "Everything",
+			name = "Всё",
 			actions = ["wait", "lightspank", "heavyspank", "startchoke", "pourvax", "ice"],
 			amountOfActions = 4,
 			winID = "finalcum",
@@ -323,7 +323,7 @@ func getDifficultyAmount():
 func getAllActions():
 	return {
 		"wait": {
-			name = "Wait",
+			name = "Подождать",
 			desc = "Let Tavi rest for one turn. Removes 1 pain",
 			shortdesc = "-1 Pain",
 			pain = -1,
@@ -335,7 +335,7 @@ func getAllActions():
 			],
 		},
 		"lightspank": {
-			name = "Spank lightly",
+			name = "Шлепать слегка",
 			#desc = "Deliver a soft spank on Tavi's rear, adding 7 pain",
 			shortdesc = "+3 Pain",
 			pain = 3,
@@ -348,7 +348,7 @@ func getAllActions():
 			],
 		},
 		"heavyspank": {
-			name = "Spank firmly",
+			name = "Шлепать ощутимо",
 			#desc = "Deliver a firm spank on Tavi's rear, adding 10 pain",
 			shortdesc = "+10 Pain",
 			pain = 10,
@@ -364,7 +364,7 @@ func getAllActions():
 			],
 		},
 		"startchoke": {
-			name = "Start choking",
+			name = "Начать душить",
 			desc = "Start choking Tavi, doing 3 pain every turn until you stop or she loses consciousness",
 			shortdesc = "+3-12 Pain",
 			pain = 3,
@@ -378,7 +378,7 @@ func getAllActions():
 			],
 		},
 		"choke": {
-			name = "Choke more",
+			name = "Сжимай сильнее",
 			desc = "Continue choking Tavi",
 			shortdesc = "+3 Pain",
 			pain = 3,
@@ -395,7 +395,7 @@ func getAllActions():
 		},
 		"stopchoking": {
 			air = 0,
-			name = "Stop",
+			name = "Стой",
 			desc = "Let Tavi breath",
 			shortdesc = "Stop choking",
 			changestate = "",
@@ -407,7 +407,7 @@ func getAllActions():
 			],
 		},
 		"pourvax": {
-			name = "Pour wax",
+			name = "Лить воск",
 			#desc = "Deliver a firm spank on Tavi's rear, adding 10 pain",
 			shortdesc = "+5 Pain",
 			pain = 5,
@@ -423,7 +423,7 @@ func getAllActions():
 			],
 		},
 		"ice": {
-			name = "Ice",
+			name = "Лед",
 			#desc = "Deliver a firm spank on Tavi's rear, adding 10 pain",
 			shortdesc = "Halves the current pain",
 			pain = 0,
@@ -450,15 +450,15 @@ func doSpecialEffect(_actionID):
 func getAllStatusEffects():
 	return {
 		"numb": {
-			name = "Numbness",
+			name = "Онемение",
 			desc = "[color=#00CC00]-50% pain on next strikes[/color]", #Tavi got caught off-guard but her body quickly prepares for the next strike. 
 		},
 		"highpain": {
-			name = "High pain",
+			name = "Сильная боль",
 			desc = "Tavi got pushed past her pain threshold. Another strike will make her [color=red]safeword[/color].",
 		},
 		"wax": {
-			name = "Hot wax",
+			name = "Горячий воск",
 			desc = "[color=red]+100% more pain[/color]",
 		},
 	}

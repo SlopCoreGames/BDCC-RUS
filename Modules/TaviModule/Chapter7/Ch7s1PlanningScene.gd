@@ -18,199 +18,199 @@ func _run():
 		isVirgin = getModule("TaviModule").isVirgin()
 		hasSkills = getModule("TaviModule").hasAllSkillsLearnedFully()
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
-		saynn("You think about it.. There isn't really much of a choice there, is it? Either you're stuck in this prison forever until your last day. Or you at least.. try. You and Tavi did try already. And failed many times.")
+		saynn("Ты размышляешь об этом... Особого выбора всё равно нет, верно? Либо ты застреваешь в этой тюрьме навсегда, до самого последнего вздоха. Либо ты хотя бы... пытаешься. Вы с Тави уже пробовали. И много раз терпели неудачу.")
 
-		saynn("But.. giving up now means all of this was for nothing. Giving up now means accepting that you will never make your dreams come true. Giving up now means accepting their broken dreams as your own.")
+		saynn("Но... сдаться сейчас — значит признать, что всё это было зря. Сдаться сейчас — значит смириться с тем, что твои мечты никогда не сбудутся. Сдаться сейчас — значит принять их разбитые мечты за свои собственные.")
 
 		saynn("[say=tavi]"+str(taviSpeak("Whatcha thinking about, owner?", "Something is wrong, owner?"))+"[/say]")
 
-		saynn("Tavi walks up to you, clearly reading that something heavy is on your mind.")
+		saynn("Тави подходит к тебе, явно видя, что тебя гложут тяжелые мысли.")
 
-		saynn("[say=pc]Time to get out of here, Tavi.[/say]")
+		saynn("[say=pc]Пора выбираться отсюда, Тави.[/say]")
 
-		saynn("Tavi raises a brow and tilts her head slightly to the side"+str(", being careful not to hit you with her horns" if getModule("TaviModule").hasHorns() else "")+".")
+		saynn("Тави приподнимает бровь и слегка наклоняет голову набок."+str(", being careful not to hit you with her horns" if getModule("TaviModule").hasHorns() else "")+".")
 
 		saynn("[say=tavi]"+str(taviSpeak("I'm always up for a good fight~. But, tell me, did something change? What made you want to do it?", "I agree, trust me. But I'm curious. What made you want to do it? Right now I mean."))+"[/say]")
 
 		if (isCorrupt):
-			saynn("Tavi certainly changed, her curves sexy but powerful, her posture assertive and dominant. They thought they could break her. But in the end, she only became stronger. Would be a shame not to take advantage of this.")
+			saynn("Тави определенно изменилась: её изгибы стали сексуальными, но при этом мощными, а осанка — уверенной и доминантной. Они думали, что смогут её сломать. Но в итоге она стала только сильнее. Было бы обидно не воспользоваться этим.")
 
-			saynn("[say=pc]I think that you are ready, Tavi. And so I am.[/say]")
+			saynn("[say=pc]Думаю, ты готова, Тави. И я тоже.[/say]")
 
 		else:
-			saynn("They tried to change Tavi. Tried to make her give up and become an ordinary slut. But they don't even realize that they failed. The element of surprise is on your side. Would be a shame not to take advantage of it.")
+			saynn("Они пытались изменить Тави. Пытались заставить её сдаться и превратиться в обычную шлюху. Но они даже не осознают, что потерпели крах. Эффект неожиданности на твоей стороне. Было бы обидно им не воспользоваться.")
 
-			saynn("[say=pc]I think that you are ready, Tavi. And so I am.[/say]")
+			saynn("[say=pc]Думаю, ты готова, Тави. И я тоже.[/say]")
 
-		saynn("Tavi smiles and crosses her arms"+str(" under her breasts, emphasizing them" if isCorrupt else " while keeping a straight posture")+".")
+		saynn("Тави улыбается и скрещивает руки на груди."+str(" under her breasts, emphasizing them" if isCorrupt else " while keeping a straight posture")+".")
 
-		saynn("[say=tavi]Oh yeah~? You might be right. What would be our next move?[/say]")
+		saynn("[say=tavi]Да неужели~? Может, ты и права. Какой наш следующий шаг?[/say]")
 
-		saynn("That simple question.. Makes you feel in charge. Almost like your roles have switched.. They did, yes. But.. What should you do with all that power? You might still need help from her.. at least for now.")
+		saynn("Этот простой вопрос... Дает ощущение власти. Почти как будто роли поменялись... Так и есть, да. Но... Что ты будешь делать со всей этой мощью? Тебе всё еще может понадобиться её помощь... по крайней мере, пока что.")
 
-		addButton("Brute force", "Tell Tavi that you can just force yourself to the captain", "brute_force")
-		addButton("Something smart?", "Tell Tavi that you should try to do something smart", "smart")
-		addButton("Don't know", "Tell Tavi that you don't know", "dontknow")
+		addButton("Грубая сила", "Сказать Тави, что ты просто возьмешь капитана силой", "brute_force")
+		addButton("Что-нибудь умное?", "Сказать Тави, что стоит попробовать сделать что-то умное", "smart")
+		addButton("Без понятия", "Сказать Тави, что ты не знаешь", "dontknow")
 	if(state == "brute_force"):
-		saynn("The goal is getting to the captain. It always was.")
+		saynn("Цель — добраться до капитана. Так было всегда.")
 
-		saynn("[say=pc]We fight our way in. Like we did the first time.[/say]")
+		saynn("[say=pc]Прорываемся внутрь. Как и в первый раз.[/say]")
 
-		saynn("Tavi hums, thinking too now.")
+		saynn("Тави что-то напевает себе под нос, погруженная в раздумья.")
 
-		saynn("[say=pc]Yeah, we lost that time. But I am stronger now. The captain only understands the language of violence.[/say]")
+		saynn("[say=pc]Да, то время мы упустили. Но теперь я стала сильнее. Капитан понимает только язык насилия.[/say]")
 
-		saynn("Tavi scratches her chin.")
+		saynn("Тави задумчиво чешет подбородок.")
 
-		saynn("[say=tavi]What if they shock us?[/say]")
+		saynn("[say=tavi]А если они нас ударят током?[/say]")
 
-		saynn("[say=pc]We don't let them. We strike first. We strike hard. No mercy. No second thoughts.[/say]")
+		saynn("[say=pc]Мы им не дадим. Мы ударим первыми. Ударим со всей силы. Никакой пощады. Никаких сомнений.[/say]")
 
 		if (isCorrupt):
-			saynn("The feline giggles softly before a cute smile appears on her face. Her sharp fangs and her long claws are all on display.")
+			saynn("Кошка тихонько хихикает, и на её лице расцветает милая улыбка. При этом на виду остаются её острые клыки и длинные когти.")
 
-			saynn("[say=tavi]I like the way you think~. We might have to go see what we're dealing with.[/say]")
+			saynn("[say=tavi]Мне нравится ход твоих мыслей~. Возможно, нам стоит пойти и разузнать, с чем нам предстоит иметь дело.[/say]")
 
 		else:
-			saynn("The feline looks.. skeptical.")
+			saynn("Кошка выглядит... скептически.")
 
-			saynn("[say=tavi]Fights are not really for me anymore. But.. Maybe you are right. Maybe I was wrong. We should go take a look at what we're dealing with.[/say]")
+			saynn("[say=tavi]Драки — это уже не совсем моё. Но... может, ты и прав. Может, я ошибалась. Нам стоит пойти и посмотреть, что там за дела.[/say]")
 
-		saynn("You nod and stand at the cell's exit.")
+		saynn("Ты киваешь и встаешь у выхода из камеры.")
 
-		saynn("[say=pc]Let's go scout out the checkpoint then. Shouldn't be too hard to beat a few guards up.[/say]")
+		saynn("[say=pc]Тогда пошли разведаем контрольно-пропускной пункт. Набить морды паре охранников не должно быть слишком сложно.[/say]")
 
-		addButton("Continue", "See what happens next", "checkpoint")
+		addButton("Продолжить", "Смотреть, что будет дальше", "checkpoint")
 	if(state == "smart"):
-		saynn("The goal is getting to the captain. It always was. The problem is.. how..")
+		saynn("Цель — добраться до капитана. Так было всегда. Проблема в том... как именно...")
 
-		saynn("[say=pc]We do something smart. We must end up with the captain one-on-one again. That is the only way.[/say]")
+		saynn("[say=pc]Нам нужно сделать что-то умное. Опять нужно застать капитана наедине. Это единственный путь.[/say]")
 
-		saynn("Tavi hums, thinking too now.")
+		saynn("Тави что-то напевает себе под нос, погруженная в раздумья.")
 
-		saynn("[say=pc]Most of the guards hate us. But the ones that don't.. they might help us. And that's all we need.[/say]")
+		saynn("[say=pc]Большинство охранников нас ненавидит. Но те, кто не ненавидит... они могут нам помочь. А это всё, что нам нужно.[/say]")
 
 		if (isCorrupt):
-			saynn("The feline looks at herself and then smiles softly.")
+			saynn("Кошка смотрит на себя, а затем мягко улыбается.")
 
-			saynn("[say=tavi]I don't know if anyone likes us. But if they don't, we can make them~.[/say]")
+			saynn("[say=tavi]Не знаю, любит ли нас хоть кто-нибудь. Но если нет, мы заставим их это сделать~.[/say]")
 
 		else:
-			saynn("The feline smiles softly.")
+			saynn("Кошка мягко улыбается.")
 
-			saynn("[say=tavi]You might be right actually. Who would have thought that making friends is a good idea~.[/say]")
+			saynn("[say=tavi]А ведь ты, возможно, права. Кто бы мог подумать, что заводить друзей — это хорошая идея~.[/say]")
 
-		saynn("The only problem is.. it's still not a plan. You need more information for a plan. You stand in the cell's exit and look at Tavi.")
+		saynn("Единственная проблема в том... что это всё ещё не план. Для плана нужно больше информации. Ты стоишь у выхода из камеры и смотришь на Тави.")
 
-		saynn("[say=pc]Let's go on a recon mission.[/say]")
+		saynn("[say=pc]Давай отправимся на разведку.[/say]")
 
-		saynn("[say=tavi]Exciting~.[/say]")
+		saynn("[say=tavi]Заманчиво~.[/say]")
 
-		addButton("Continue", "See what happens next", "checkpoint")
+		addButton("Продолжить", "Смотреть, что будет дальше", "checkpoint")
 	if(state == "dontknow"):
-		saynn("The goal is getting to the captain. It always was. The problem is.. how..")
+		saynn("Цель — добраться до капитана. Так было всегда. Проблема в том... как именно...")
 
-		saynn("[say=pc]I don't really know. We tried everything, didn't we?[/say]")
+		saynn("[say=pc]Даже не знаю. Мы ведь перепробовали всё, верно?[/say]")
 
 		if (isCorrupt):
-			saynn("Tavi hums for a second. But then starts to smile.")
+			saynn("Тави на мгновение задумчиво мычит, но затем на её лице расплывается улыбка.")
 
-			saynn("[say=tavi]Yeah, we did. They think we're defeated too. That means they wouldn't expect us to just walk through the front door again~.[/say]")
+			saynn("[say=tavi]Да, всё. Они думают, что мы разбиты. А это значит, что они не будут ждать, что мы просто возьмём и ворвёмся к ним через парадную дверь~.[/say]")
 
-			saynn("That is.. interesting.")
+			saynn("Это... любопытно.")
 
-			saynn("[say=pc]You think we can fight the entire prison?[/say]")
+			saynn("[say=pc]Ты думаешь, мы сможем сразиться со всей тюрьмой?[/say]")
 
-			saynn("She giggles softly while gently scratching you behind the ear with her sharp claws.")
+			saynn("Она тихо хихикает, нежно почесывая тебя за ухом своими острыми когтями.")
 
-			saynn("[say=tavi]We only have to defeat the strongest ones. Everyone else will run away~.[/say]")
+			saynn("[say=tavi]Нам нужно одолеть только самых сильных. Остальные просто разбегутся~.[/say]")
 
-			saynn("Tavi might be right. But.. You clearly need more info.")
+			saynn("Возможно, Тави права. Но... тебе явно нужно больше информации.")
 
 		else:
-			saynn("Tavi hums for a second. But then starts to smile.")
+			saynn("Тави на мгновение задумчиво мычит, но затем на её лице расплывается улыбка.")
 
-			saynn("[say=tavi]Only the captain is gonna be a real obstacle. Everyone else might just let us walk past.[/say]")
+			saynn("[say=tavi]Настоящей преградой будет только капитан. Остальные, скорее всего, просто дадут нам пройти.[/say]")
 
-			saynn("That's.. awfully optimistic.")
+			saynn("Это... чертовски оптимистично.")
 
-			saynn("[say=pc]What makes you think that?[/say]")
+			saynn("[say=pc]С чего ты это взяла?[/say]")
 
-			saynn("She shrugs.")
+			saynn("Она пожимает плечами.")
 
-			saynn("[say=tavi]The captain is not a good person. Let's hope they understood that by now~.[/say]")
+			saynn("[say=tavi]Капитан — не самый приятный человек. Будем надеяться, они уже это усвоили~.[/say]")
 
-			saynn("Hope is good.. But you still need more info.")
+			saynn("Надеяться — это хорошо... Но тебе всё ещё не хватает информации.")
 
-		saynn("[say=pc]Let's go take a look at the guards then.[/say]")
+		saynn("[say=pc]Тогда пойдём осмотрим охранников.[/say]")
 
-		saynn("Tavi follows you as you head towards the exit.")
+		saynn("Тави следует за тобой, когда вы направляетесь к выходу.")
 
-		addButton("Continue", "See what happens next", "checkpoint")
+		addButton("Продолжить", "Смотреть, что будет дальше", "checkpoint")
 	if(state == "checkpoint"):
 		aimCameraAndSetLocName("hall_mainentrance")
 		GM.pc.setLocation("hall_mainentrance")
-		saynn("You and Tavi exit her cell and head towards the main hall. You walk up the stairs and take a closer look at the checkpoint.")
+		saynn("Вы с Тави выходите из её камеры и направляетесь к главному залу. Вы поднимаетесь по лестнице и присматриваетесь к контрольно-пропускному пункту.")
 
-		saynn("It clearly got.. overhauled a little. The most drastic difference is that there are two guards protecting it now. But there is also some kind of.. array of laser sensors, protecting the only passage. They don't seem to hurt the inmates that walk through.")
+		saynn("Его явно... немного модернизировали. Самое заметное отличие — теперь его охраняют сразу два охранника. А ещё там какая-то... система лазерных датчиков, перекрывающая единственный проход. Похоже, они не причиняют боли заключённым, проходящим сквозь них.")
 
-		saynn("[say=pc]Huh. What do you think that thing is for?[/say]")
+		saynn("[say=pc]Хм. Как думаешь, для чего эта штука нужна?[/say]")
 
-		saynn("[say=tavi]Probably scans your collar.[/say]")
+		saynn("[say=tavi]Скорее всего, сканирует твой ошейник.[/say]")
 
-		saynn("That would mean that wearing guard armor would no longer work. They are learning, huh.")
+		saynn("Это значит, что броня охранника больше не сработает. Они учатся, а?")
 
-		saynn("[say=pc]That complicates things.[/say]")
+		saynn("[say=pc]Это всё усложняет.[/say]")
 
-		saynn("[say=tavi]Does it? You can probably beat two guards.[/say]")
+		saynn("[say=tavi]Правда? Ты наверняка сможешь уложить двоих охранников.[/say]")
 
-		saynn("[say=pc]Sure. But what's next?[/say]")
+		saynn("[say=pc]Конечно. Но что потом?[/say]")
 
-		saynn("Both, you and Tavi, stay quiet. The feline inspects the checkpoint more.")
+		saynn("И ты, и Тави сидите тихо. Кошка внимательнее осматривает контрольно-пропускной пункт.")
 
-		saynn("[say=tavi]They will probably be ready. The captain likes his big chair.[/say]")
+		saynn("[say=tavi]Они, скорее всего, будут наготове. Капитан любит своё уютное кресло.[/say]")
 
-		saynn("No way around this wall, huh? If there are no good options.. just pick the most fun one. Right.")
+		saynn("В обход этой стены не пробраться, да? Если нет нормальных вариантов... просто выбирай самый весёлый. Так.")
 
-		saynn("[say=pc]I guess I will have to fight my way through.[/say]")
+		saynn("[say=pc]Похоже, придётся прорываться с боем.[/say]")
 
-		saynn("[say=tavi]What about me?[/say]")
+		saynn("[say=tavi]А как же я?[/say]")
 
-		saynn("[say=pc]Can you fight?[/say]")
+		saynn("[say=pc]Ты умеешь драться?[/say]")
 
 		if (isCorrupt):
-			saynn("Tavi looks at her sexy body.")
+			saynn("Тави разглядывает её сексуальное тело.")
 
-			saynn("[say=tavi]I think there is something I can do~. You just gotta.. train me enough.[/say]")
+			saynn("[say=tavi]Думаю, я кое-что могу~. Тебе просто нужно... хорошенько меня натренировать.[/say]")
 
-			saynn("[say=pc]That will take time.[/say]")
+			saynn("[say=pc]Но это займет время.[/say]")
 
-			saynn("She nods.")
+			saynn("Она кивает.")
 
-			saynn("[say=tavi]Otherwise I can't help you. I have the body.. but not the skills.[/say]")
+			saynn("[say=tavi]Иначе я не смогу тебе помочь. Тело-то у меня есть.. а вот навыков не хватает.[/say]")
 
 		else:
-			saynn("Tavi looks at herself.. at her paws.")
+			saynn("Тави смотрит на себя.. на свои лапы.")
 
-			saynn("[say=tavi]I'd rather not fight. But I think I can still be useful to you~.[/say]")
+			saynn("[say=tavi]Я бы предпочла не драться. Но, думаю, я все равно смогу быть тебе полезной~.[/say]")
 
-			saynn("You look at the feline, feeling intrigued.")
+			saynn("Ты смотришь на кошку, чувствуя интригу.")
 
-			saynn("[say=tavi]You just gotta.. train me enough.[/say]")
+			saynn("[say=tavi]Тебе просто нужно.. хорошенько меня натренировать.[/say]")
 
-			saynn("[say=pc]That will take time.[/say]")
+			saynn("[say=pc]Но это займет время.[/say]")
 
-			saynn("She nods.")
+			saynn("Она кивает.")
 
-			saynn("[say=tavi]I can talk. But I will need more than that to help you.[/say]")
+			saynn("[say=tavi]Я умею говорить. Но чтобы помочь тебе, мне понадобится нечто большее.[/say]")
 
-		saynn("In the end. It looks like the choice is up to you.. You can just finish this right now by beating these two guards up and whoever comes next. Or.. you can try to be smarter and let Tavi help you.")
+		saynn("В конечном счете, выбор за тобой.. Ты можешь просто покончить с этим прямо сейчас, избив этих двух охранников и всех, кто придет следом. Или же.. ты можешь поступить умнее и позволить Тави помочь тебе.")
 
-		saynn("[say=tavi]You know where to find me, owner.[/say]")
+		saynn("[say=tavi]Вы знаете, где меня искать, хозяин.[/say]")
 
-		saynn("She leans in and smooches you on the cheek before walking away, leaving you alone with your thoughts.")
+		saynn("Она наклоняется и нежно целует вас в щеку, после чего уходит, оставляя вас наедине со своими мыслями.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 func taviFullSpeak(normalSpeak, corruptSpeak, pureSpeak):
 	if(isCorrupt):
 		return corruptSpeak

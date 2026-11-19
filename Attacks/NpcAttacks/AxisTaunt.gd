@@ -6,13 +6,13 @@ func _init():
 	aiCategory = AICategory.Lust
 	
 func getVisibleName(_context = {}):
-	return "Axis taunt"
+	return "Насмешка Аксиса"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
-	var text = "You feel aroused.."
+	var text = "Ты чувствуешь возбуждение..."
 	return {
 		text = text,
 		lust = RNG.randi_range(30, 40),
@@ -22,7 +22,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	var text = "{attacker.name} is flexing {attacker.his} muscles in the clear view of everyone. Wow, {attacker.he} is sexy!"
+	var text = "{attacker.name} вовсю играет {attacker.his} мышцами на виду у всех. Вау, {attacker.he} чертовски сексуальна!"
 
 	text += "\n\n"
 	text += "[say=attacker]"+RNG.pick([

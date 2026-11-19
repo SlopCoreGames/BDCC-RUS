@@ -6,236 +6,236 @@ func _init():
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("Darkness.. All you see is yourself. "+str("Still wearing your uniform.. " if !GM.pc.isFullyNaked() else "")+"Still wearing that firm collar around your neck.")
+		saynn("Тьма... Перед глазами лишь ты сама."+str("Still wearing your uniform.. " if !GM.pc.isFullyNaked() else "")+"На шее всё еще плотно сидит тот самый ошейник.")
 
-		saynn("You look down at your hands and see them covered in bruises, little cuts, wounds..")
+		saynn("Ты смотришь на свои руки и видишь их в синяках, мелких порезах и ранах...")
 
-		saynn("Was it worth it?")
+		saynn("Стоило ли оно того?")
 
-		saynn("[say=pc]Body will heal. I can't stop now.[/say]")
+		saynn("[say=pc]Тело заживет. Сейчас нельзя останавливаться.[/say]")
 
-		saynn("It's not about giving up.. It's about accepting yourself..")
+		saynn("Дело не в том, чтобы сдаться... Дело в том, чтобы принять себя...")
 
-		saynn("[say=pc]Who are you?[/say]")
+		saynn("[say=pc]Кто ты такая?[/say]")
 
-		saynn("No reaction.. Oops, the ground under your feet has disappeared, causing you to start falling.. into the deep abyss..")
+		saynn("Никакой реакции... Ой, земля под ногами исчезла, и ты начинаешь падать... в бездонную пропасть...")
 
-		addButton("Wake up", "Only dead sleep forever", "do_wakeup")
+		addButton("Проснуться", "Только мертвые спят вечно", "do_wakeup")
 	if(state == "do_wakeup"):
 		playAnimation(StageScene.HangingSexFuckmachine, "tease", {bodyState={naked=true}})
 		addCharacter("eliza")
 		addCharacter("tavi", ["naked"])
-		saynn("You slowly open your eyes.. but the darkness doesn't go away. You're blindfolded.. and also chained to the ceiling..")
+		saynn("Ты медленно открываешь глаза... но темнота не уходит. На тебе повязка... и ты прикована цепями к потолку...")
 
-		saynn("[say=tavi]Ngh-h.. ah..[/say]")
+		saynn("[say=tavi]Нгх-х.. ах..[/say]")
 
-		saynn("You hear moans.. a very familiar voice..")
+		saynn("Вы слышите стоны.. очень знакомый голос..")
 
-		saynn("[say=pc]Tavi? What's happening?[/say]")
+		saynn("[say=pc]Тави? Что происходит?[/say]")
 
-		saynn("No response, just more moans. You begin to feel very concerned.")
+		saynn("Ответа нет, только стоны становятся громче. Вы начинаете всерьез беспокоиться.")
 
-		saynn("[say=pc]Tavi?![/say]")
+		saynn("[say=pc]Тави?![/say]")
 
-		saynn("Someone's latex glove brushes over your cheek.")
+		saynn("Чья-то латексная перчатка касается вашей щеки.")
 
-		saynn("[say=eliza]She can't hear you, don't worry.. Your Tavi is being reeducated as we speak.. She is gonna be such a good girl..[/say]")
+		saynn("[say=eliza]Она тебя не слышит, не волнуйся.. Твою Тави прямо сейчас «перевоспитывают».. Она будет такой послушной девочкой..[/say]")
 
-		saynn("You try to shake off the blindfold but it sits too tightly.. And the chains leave you zero wiggle room.. makes you wonder why some restraints have obvious exploitable flaws but these don't..")
+		saynn("Вы пытаетесь стряхнуть повязку, но она сидит слишком плотно.. А цепи не оставляют ни малейшего шанса на движение.. Вы невольно задумываетесь, почему у одних оков всегда есть очевидные уязвимости, а у этих — нет..")
 
-		saynn("[say=pc]What are you doing to her?[/say]")
+		saynn("[say=pc]Что вы с ней делаете?[/say]")
 
-		saynn("[say=eliza]Experimental tech. We don't have a second one for you so we will use something else..[/say]")
+		saynn("[say=eliza]Экспериментальные технологии. Второй установки на тебя нет, так что мы используем кое-что другое..[/say]")
 
-		saynn("What is she talking about? You try to say something but Eliza shoves a rubber ball into your mouth as soon as you open your mouth.")
+		saynn("О чем она говорит? Ты пытаешься что-то сказать, но как только ты открываешь рот, Элиза сует тебе в него резиновый мячик.")
 
-		saynn("[say=eliza]No need for words. Just moan for me, patient~.[/say]")
+		saynn("[say=eliza]Слова не нужны. Просто стони для меня, пациентка~.[/say]")
 
-		saynn("Things are happening very fast.. You hear some kind of machine turning on behind you..")
+		saynn("Все происходит слишком быстро... Позади тебя слышится гул включающегося какого-то аппарата...")
 
 		if (GM.pc.hasReachableVagina()):
-			addButton("Continue", "See what happens next", "pc_punishment_vag")
+			addButton("Продолжить", "Смотреть, что будет дальше", "pc_punishment_vag")
 		else:
-			addButton("Continue", "See what happens next", "pc_punishment_anal")
+			addButton("Продолжить", "Смотреть, что будет дальше", "pc_punishment_anal")
 	if(state == "pc_punishment_vag"):
 		playAnimation(StageScene.HangingSexFuckmachine, "sex", {pcCum=true, bodyState={naked=true, hard=true}})
-		saynn("One second everything is fine and the next your pussy suddenly gets penetrated by some rubber dildo! Without mercy, some kind of machine starts thrusting that toy in and out of your slit, each one sending unexpected shockwaves of pleasure mixed with a tingle of pain through your body.")
+		saynn("Секунду назад все было нормально, и вдруг в твою киску внезапно врывается резиновый дилдо! Безжалостная машина начинает вколачивать игрушку в твою щель; каждый толчок посылает по телу неожиданные волны удовольствия, смешанные с покалывающей болью.")
 
-		saynn("Gasps and muffled moans escape from your lips, harmonizing with Tavi's.")
+		saynn("С твоих губ срываются судорожные вздохи и приглушенные стоны, сливающиеся со стонами Тави.")
 
-		saynn("[say=eliza]That works~. Do you know why we are doing that?[/say]")
+		saynn("[say=eliza]Так-то лучше~. Знаешь, зачем мы это делаем?[/say]")
 
-		saynn("Obviously they just wanna torture you and Tavi.. But the toy is angled in such a way that you can't ignore it, your g-spot is being pounded hard, causing your folds to get wet and your inner walls to clench around the rubber shaft.")
+		saynn("Очевидно, они просто хотят помучить тебя и Тави... Но игрушка расположена так, что игнорировать её невозможно: она наотмашь долбит прямо в твою точку G, отчего складки становятся влажными, а внутренние стенки судорожно сжимаются вокруг резинового стержня.")
 
-		saynn("[say=tavi]F-fu-u.. c-ck.. Ah-h!.. Nh-h-h..[/say]")
+		saynn("[say=tavi]Ах-х... о-ох... А-ах!.. Нгх-х-х..[/say]")
 
-		saynn("[say=eliza]Feelings can motivate us. Feelings like fear, pain or pleasure, doesn't matter.[/say]")
+		saynn("[say=eliza]Чувства могут мотивировать нас. Страх, боль или удовольствие — неважно.[/say]")
 
-		saynn("Blindfolded, gagged and chained up, you are completely helpless, forced to endure the constant onslaught on your pussy.. while you can't do anything about it..")
+		saynn("С завязанными глазами, с кляпом во рту и в цепях, ты совершенно беспомощна, вынужденная терпеть непрекращающийся натиск на свою киску... и ты ничего не можешь с этим поделать...")
 
-		saynn("[say=eliza]A small constant amount of it makes us get used to it. We get numb if you will.[/say]")
-
-		if (GM.pc.isWearingChastityCage()):
-			saynn("Even though you have no say in any of this.. you can't deny that it feels too good.. So good that your caged up cock is leaking precum. Eliza catches some of it onto her paw and does something to it.")
-
-			saynn("[say=eliza]Tasty~. I love leaky patients. Caged-up ones especially~.[/say]")
-
-		elif (GM.pc.hasReachablePenis()):
-			saynn("Even though you have no say in any of this.. you can't deny that it feels too good.. So good that your {pc.penis} is leaking precum. Eliza catches some of it onto her paw and does something to it.")
-
-			saynn("[say=eliza]Tasty~. I love leaky patients.[/say]")
-
-		saynn("Your body is quickly pushed to the brink of ecstasy. Your muscles clenching tightly around the invading object.. as an explosive release rocks through you, causing a muffled loud scream of pleasure to escape your gagged mouth.")
+		saynn("[say=eliza]Небольшое количество этого вещества заставляет нас привыкнуть. Если хочешь, мы просто немеем.[/say]")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Weak strings of {pc.cum} leak out of your locked up dick as it twitches and throbs behind the cage, struggling to get hard.")
+			saynn("Хотя ты ни на что не можешь повлиять... ты не можешь отрицать, что это слишком приятно... Настолько приятно, что твой запертый в клетке член сочится предэякулятом. Элиза смазывает им свою лапу и начинает что-то с ним делать.")
+
+			saynn("[say=eliza]Вкусно~. Обожаю «текучих» пациентов. Особенно тех, кто в клетках~.[/say]")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Strong strings of {pc.cum} fly from the tip of your cock as it twitches and throbs, leaving quite a mess. Probably..")
+			saynn("Хотя ты ни на что не можешь повлиять... ты не можешь отрицать, что это слишком приятно... Настолько приятно, что твой {pc.penis} сочится предэякулятом. Элиза смазывает им свою лапу и начинает что-то с ним делать.")
 
-		saynn("[say=eliza]A spike of sensations at the right time can cause.. a change~. Ohh~. Already.[/say]")
+			saynn("[say=eliza]Вкусно~. Обожаю «текучих» пациентов.[/say]")
 
-		saynn("You're squirming hard after that orgasm.. but the machine didn't stop fucking you.. Oh no..")
+		saynn("Твое тело быстро доводят до грани экстаза. Твои мышцы судорожно сжимаются вокруг вторгшегося объекта... и когда тебя сотрясает взрывной оргазм, из твоего кляпнутого рта вырывается приглушенный, но громкий крик удовольствия.")
 
-		addButton("Continue", "See what happens next", "pc_punishment_vag_more")
+		if (GM.pc.isWearingChastityCage()):
+			saynn("Тонкие струйки {pc.cum} вытекают из твоего запертого члена, который дергается и пульсирует в клетке, отчаянно пытаясь встать колом.")
+
+		elif (GM.pc.hasReachablePenis()):
+			saynn("Густые струи {pc.cum} брызжут из кончика твоего члена, пока он дергается и пульсирует, оставляя после себя настоящий беспорядок. Наверное...")
+
+		saynn("[say=eliza]Всплеск ощущений в нужный момент может вызвать... перемены~. Ох~. Уже.[/say]")
+
+		saynn("После этого оргазма ты отчаянно извиваешься... но машина не перестает трахать тебя... О нет...")
+
+		addButton("Продолжить", "Смотреть, что будет дальше", "pc_punishment_vag_more")
 	if(state == "pc_punishment_vag_more"):
 		playAnimation(StageScene.HangingSexFuckmachine, "fast", {pcCum=true, bodyState={naked=true, hard=true}})
-		saynn("You reached your peak.. but the machine didn't. It suddenly began pounding you even harder, forceful thrusts drove you further, overstimulating you to the point of your pussy suddenly squirting, spawning a rush of fluids that makes the floor wet.")
+		saynn("Ты достигла пика... но машина — нет. Она внезапно начала долбить тебя еще сильнее; мощные толчки вгоняли тебя всё глубже, перестимулируя до такой степени, что твоя киска внезапно кончила струей, извергая поток жидкости, от которого пол стал совсем мокрым.")
 
-		saynn("[say=eliza]Will it be a good change? Hard to predict. That's why I love experimenting~. It's so exciting.[/say]")
+		saynn("[say=eliza]Станет ли это приятным изменением? Трудно предсказать. Именно поэтому я обожаю экспериментировать~. Это так волнующе.[/say]")
 
-		saynn("That wasn't exactly an orgasm.. you realize that when a real second one begins building up inside you again. You feel Eliza's digits stimulating your nipples slightly, adding to the ocean of feelings. Your muffled noises of love become so passionate that they suppress any thought in your head. All you can think about is.. overwhelming pleasure..")
+		saynn("Это был не совсем оргазм... ты понимаешь это, когда внутри тебя начинает нарастать настоящий второй пик. Ты чувствуешь, как пальцы Элизы слегка ласкают твои соски, усиливая этот океан ощущений. Твои приглушенные стоны любви становятся настолько страстными, что вытесняют любые мысли из головы. Всё, о чем ты можешь думать — это... всепоглощающее наслаждение...")
 
-		saynn("Doesn't take long for your body to start quivering yet again, your pussy grasping that rubber rod tightly as it pushes you over the edge. It's too much, your petals spasm uncontrollably as another rush of your transparent fluids gushes forth, making the floor even more wet.")
+		saynn("Твое тело не заставляет себя долго ждать и снова начинает дрожать; твоя киска крепко сжимает резиновый стержень, когда тот толкает тебя за край. Это слишком, твои лепестки неконтролируемо спазмируют, когда новая порция прозрачной смазки вырывается наружу, делая пол еще более мокрым.")
 
-		saynn("[say=eliza]We're just getting started~.[/say]")
+		saynn("[say=eliza]Мы только начинаем~.[/say]")
 
-		saynn("Fuck.. in these moments you begin wonder if all of this was worth it even.. Maybe just sitting still on your ass was always the right choice.. This feels so good though.. So good it's torture..")
+		saynn("Блядь... в такие моменты ты начинаешь задумываться, стоило ли оно того... Может, просто сидеть смирно на своей заднице всегда было правильным выбором... Но это так хорошо... Так хорошо, что это кажется пыткой...")
 
-		addButton("Continue", "See what happens next", "pc_punishment_vag_blur")
+		addButton("Продолжить", "Смотреть, что будет дальше", "pc_punishment_vag_blur")
 	if(state == "pc_punishment_vag_blur"):
-		saynn("It all quickly becomes a blur.. Orgasm after orgasm, that rubber cock is destroying your sense of self.. just like it's destroying your pussy.")
+		saynn("Всё быстро превращается в размытое пятно... Оргазм за оргазмом, этот резиновый член уничтожает твое самосознание... точно так же, как он уничтожает твою киску.")
 
-		saynn("You're drooling uncontrollably.. while you can't.. do.. anything.. but to let your pussy be fucked relentlessly..")
+		saynn("У тебя непроизвольно течет слюна... и ты не можешь... ничего... сделать... кроме как позволять своей киске безжалостно принимать в себя этот член...")
 
-		saynn("Tavi's moans get engraved in your brain. You were so close.. to freedom.. But now it's.. just.. Rough sex.. Being abused.. Breeding or being bred..")
+		saynn("Стоны Тави врезаются тебе в мозг. Ты был так близок.. к свободе.. Но теперь это.. просто.. грубый секс.. Насилие.. Ты либо сам осеменяешь, либо тебя осеменяют..")
 
-		saynn("All your nerves are getting overstimulated.. Making it impossible to think straight.. Please help me.. I wanna cum again and again..")
+		saynn("Все твои нервы на пределе от перестимуляции.. Мысли путаются.. Пожалуйста, помоги мне.. Я хочу кончать снова и снова..")
 
-		addButton("Continue", "See what happens next", "pc_punishment_vag_sybian")
+		addButton("Продолжить", "Смотреть, что будет дальше", "pc_punishment_vag_sybian")
 	if(state == "pc_punishment_vag_sybian"):
 		playAnimation(StageScene.Sybian, "ride", {bodyState={naked=true,hard=true}})
-		saynn("At some point Eliza offers you some mercy.. by switching the fuckmachine to a sybian.. Constant thrusting got replaced by non-stop intense vibrations against your sensitive folds.")
+		saynn("В какой-то момент Элиза проявляет милосердие.. переключая секс-машину на сибиан.. Постоянные толчки сменяются непрерывной интенсивной вибрацией, бьющей по твоим чувствительным складкам.")
 
-		saynn("As you teeter on the brink of another climax, Eliza leans in close, their voice has hints of both command and adoration.")
+		saynn("Когда ты балансируешь на грани очередного оргазма, Элиза наклоняется ближе, и в её голосе слышатся одновременно и приказ, и обожание.")
 
-		saynn("[say=eliza]Surrender to the pleasure and let it consume you~.[/say]")
+		saynn("[say=eliza]Сдайся этому удовольствию и позволь ему поглотить тебя~.[/say]")
 
-		saynn("With a muffled cry, your body shatters into a million fragments of pleasure. Wave after wave of ecstasy crashing over you as your muscles are tensing up and your body arching.")
+		saynn("С приглушенным криком твое тело разлетается на миллион осколков наслаждения. Волна за волной экстаз накрывает тебя, мышцы сводит судорогой, а тело выгибается дугой.")
 
-		saynn("At some point you begin to think that you're about to black out..")
+		saynn("В какой-то момент тебе начинает казаться, что ты вот-вот отключишься..")
 
-		saynn("Poof..")
+		saynn("Пуф..")
 
-		saynn("The cold floor hugs you and presses close.")
+		saynn("Холодный пол обнимает тебя, прижимая к себе.")
 
-		addButton("Continue", "See what happens next", "skip_to_next_day")
+		addButton("Продолжить", "Смотреть, что будет дальше", "skip_to_next_day")
 	if(state == "pc_punishment_anal"):
 		playAnimation(StageScene.HangingSexFuckmachine, "sex", {pcCum=true, bodyState={naked=true, hard=true}})
-		saynn("One second everything is fine and the next your ass suddenly gets penetrated by some rubber dildo! Without mercy, some kind of machine starts thrusting that toy in and out of your star, each one sending unexpected shockwaves of pleasure mixed with a tingle of pain through your body.")
+		saynn("Секунду назад всё было нормально, и вдруг в твою задницу внезапно врывается резиновый дилдо! Безжалостная машина начинает вгонять эту игрушку в твою дырочку, и каждый толчок посылает по телу неожиданные волны удовольствия, смешанные с покалыванием боли.")
 
-		saynn("Gasps and muffled moans escape from your lips, harmonizing with Tavi's.")
+		saynn("С твоих губ срываются судорожные вздохи и приглушенные стоны, сливающиеся со стонами Тави.")
 
-		saynn("[say=eliza]That works~. Do you know why we are doing that?[/say]")
+		saynn("[say=eliza]Так-то лучше~. Знаешь, зачем мы это делаем?[/say]")
 
-		saynn("Obviously they just wanna torture you and Tavi.. But the toy is angled in such a way that you can't ignore it, your pleasure spot is being pounded hard, causing your inner walls to clench around the rubber shaft.")
+		saynn("Очевидно, они просто хотят пытать тебя и Тави... Но игрушка расположена так, что игнорировать её невозможно: твою эрогенную зону долбит с бешеной силой, заставляя внутренние стенки судорожно сжиматься вокруг резинового стержня.")
 
-		saynn("[say=tavi]F-fu-u.. c-ck.. Ah-h!.. Nh-h-h..[/say]")
+		saynn("[say=tavi]Ах-х... о-ох... А-ах!.. Нгх-х-х..[/say]")
 
-		saynn("[say=eliza]Feelings can motivate us. Feelings like fear, pain or pleasure, doesn't matter.[/say]")
+		saynn("[say=eliza]Чувства могут мотивировать нас. Страх, боль или удовольствие — неважно.[/say]")
 
-		saynn("Blindfolded, gagged and chained up, you are completely helpless, forced to endure the constant onslaught on your tailhole.. while you can't do anything about it..")
+		saynn("С повязкой на глазах, кляпом во рту и в цепях, ты абсолютно беспомощен(на) — вынужден(а) терпеть непрекращающийся натиск в задницу, не имея возможности даже дернуться...")
 
-		saynn("[say=eliza]A small constant amount of it makes us get used to it. We get numb if you will.[/say]")
-
-		if (GM.pc.isWearingChastityCage()):
-			saynn("Even though you have no say in any of this.. you can't deny that it feels too good.. So good that your caged up cock is leaking precum. Eliza catches some of it onto her paw and does something to it.")
-
-			saynn("[say=eliza]Tasty~. I love leaky patients. Caged-up ones especially~.[/say]")
-
-		elif (GM.pc.hasReachablePenis()):
-			saynn("Even though you have no say in any of this.. you can't deny that it feels too good.. So good that your {pc.penis} is leaking precum. Eliza catches some of it onto her paw and does something to it.")
-
-			saynn("[say=eliza]Tasty~. I love leaky patients.[/say]")
-
-		saynn("Your body is quickly pushed to the brink of ecstasy. Your muscles clenching tightly around the invading object.. as an explosive release rocks through you, causing a muffled loud scream of pleasure to escape your gagged mouth.")
+		saynn("[say=eliza]Небольшое количество этого вещества заставляет нас привыкнуть. Если хочешь, мы просто немеем.[/say]")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Weak strings of {pc.cum} leak out of your locked up dick as it twitches and throbs behind the cage, struggling to get hard.")
+			saynn("Хотя ты ни на что не можешь повлиять... ты не можешь отрицать, что это слишком приятно... Настолько приятно, что твой запертый в клетке член сочится предэякулятом. Элиза смазывает им свою лапу и начинает что-то с ним делать.")
+
+			saynn("[say=eliza]Вкусно~. Обожаю «текучих» пациентов. Особенно тех, кто в клетках~.[/say]")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Strong strings of {pc.cum} fly from the tip of your cock as it twitches and throbs, leaving quite a mess. Probably..")
+			saynn("Хотя ты ни на что не можешь повлиять... ты не можешь отрицать, что это слишком приятно... Настолько приятно, что твой {pc.penis} сочится предэякулятом. Элиза смазывает им свою лапу и начинает что-то с ним делать.")
 
-		saynn("[say=eliza]A spike of sensations at the right time can cause.. a change~. Ohh~. Already.[/say]")
+			saynn("[say=eliza]Вкусно~. Обожаю «текучих» пациентов.[/say]")
 
-		saynn("You're squirming hard after that orgasm.. but the machine didn't stop fucking you.. Oh no..")
+		saynn("Твое тело быстро доводят до грани экстаза. Твои мышцы судорожно сжимаются вокруг вторгшегося объекта... и когда тебя сотрясает взрывной оргазм, из твоего кляпнутого рта вырывается приглушенный, но громкий крик удовольствия.")
 
-		addButton("Continue", "See what happens next", "pc_punishment_anal_more")
+		if (GM.pc.isWearingChastityCage()):
+			saynn("Тонкие струйки {pc.cum} вытекают из твоего запертого члена, который дергается и пульсирует в клетке, отчаянно пытаясь встать колом.")
+
+		elif (GM.pc.hasReachablePenis()):
+			saynn("Густые струи {pc.cum} брызжут из кончика твоего члена, пока он дергается и пульсирует, оставляя после себя настоящий беспорядок. Наверное...")
+
+		saynn("[say=eliza]Всплеск ощущений в нужный момент может вызвать... перемены~. Ох~. Уже.[/say]")
+
+		saynn("После этого оргазма ты отчаянно извиваешься... но машина не перестает трахать тебя... О нет...")
+
+		addButton("Продолжить", "Смотреть, что будет дальше", "pc_punishment_anal_more")
 	if(state == "pc_punishment_anal_more"):
 		playAnimation(StageScene.HangingSexFuckmachine, "fast", {pcCum=true, bodyState={naked=true, hard=true}})
-		saynn("You reached your peak.. but the machine didn't. It suddenly began pounding you even harder, forceful thrusts drove you further, overstimulating you.")
+		saynn("Ты достиг(ла) пика... но машина — нет. Она внезапно начала долбить еще сильнее; мощные толчки вгоняли тебя всё глубже, вызывая дикую перевозбужденность.")
 
-		saynn("[say=eliza]Will it be a good change? Hard to predict. That's why I love experimenting~. It's so exciting.[/say]")
+		saynn("[say=eliza]Станет ли это приятным изменением? Трудно предсказать. Именно поэтому я обожаю экспериментировать~. Это так волнующе.[/say]")
 
-		saynn("That wasn't exactly an orgasm.. you realize that when a real second one begins building up inside you again. You feel Eliza's digits stimulating your nipples slightly, adding to the ocean of feelings. Your muffled noises of love become so passionate that they suppress any thought in your head. All you can think about is.. overwhelming pleasure..")
+		saynn("Это был не совсем оргазм... ты понимаешь это, когда внутри тебя начинает нарастать настоящий второй пик. Ты чувствуешь, как пальцы Элизы слегка ласкают твои соски, усиливая этот океан ощущений. Твои приглушенные стоны любви становятся настолько страстными, что вытесняют любые мысли из головы. Всё, о чем ты можешь думать — это... всепоглощающее наслаждение...")
 
-		saynn("Doesn't take long for your body to start quivering yet again, your inner walls grasping that rubber rod tightly as it pushes you over the edge. It's too much, your anal muscles spasm uncontrollably.")
+		saynn("Твое тело снова начинает дрожать; внутренние стенки мертвой хваткой вцепляются в резиновый стержень, когда он толкает тебя за край. Это слишком, твои анальные мышцы сводит неконтролируемыми спазмами.")
 
-		saynn("[say=eliza]We're just getting started~.[/say]")
+		saynn("[say=eliza]Мы только начинаем~.[/say]")
 
-		saynn("Fuck.. in these moments you begin wonder if all of this was worth it even.. Maybe just sitting still on your ass was always the right choice.. This feels so good though.. So good it's torture..")
+		saynn("Блядь... в такие моменты ты начинаешь задумываться, стоило ли оно того... Может, просто сидеть смирно на своей заднице всегда было правильным выбором... Но это так хорошо... Так хорошо, что это кажется пыткой...")
 
-		addButton("Continue", "See what happens next", "pc_punishment_anal_blur")
+		addButton("Продолжить", "Смотреть, что будет дальше", "pc_punishment_anal_blur")
 	if(state == "pc_punishment_anal_blur"):
-		saynn("It all quickly becomes a blur.. Orgasm after orgasm, that rubber cock is destroying your sense of self.. just like it's destroying your tailhole.")
+		saynn("Всё быстро превращается в сплошное пятно... Оргазм за оргазмом, этот резиновый член уничтожает твое самосознание... точно так же, как он уничтожает твою задницу.")
 
-		saynn("You're drooling uncontrollably.. while you can't.. do.. anything.. but to let your ass be fucked relentlessly..")
+		saynn("У тебя текут слюни, и ты не можешь... сделать... ничего... кроме как позволять беспрестанно трахать твою задницу...")
 
-		saynn("Tavi's moans get engraved in your brain. You were so close.. to freedom.. But now it's.. just.. Rough sex.. Being abused.. Breeding or being bred..")
+		saynn("Стоны Тави врезаются тебе в мозг. Ты был так близок.. к свободе.. Но теперь это.. просто.. грубый секс.. Насилие.. Ты либо сам осеменяешь, либо тебя осеменяют..")
 
-		saynn("All your nerves are getting overstimulated.. Making it impossible to think straight.. Please help me.. I wanna cum again and again..")
+		saynn("Все твои нервы на пределе от перестимуляции.. Мысли путаются.. Пожалуйста, помоги мне.. Я хочу кончать снова и снова..")
 
-		addButton("Continue", "See what happens next", "pc_punishment_anal_sybian")
+		addButton("Продолжить", "Смотреть, что будет дальше", "pc_punishment_anal_sybian")
 	if(state == "pc_punishment_anal_sybian"):
 		playAnimation(StageScene.Sybian, "ride", {bodyState={naked=true,hard=true}})
-		saynn("At some point Eliza offers you some mercy.. by switching the fuckmachine to a sybian.. Constant thrusting got replaced by non-stop intense vibrations against your taint and sensitive star.")
+		saynn("В какой-то момент Элиза проявляет милосердие... переключая секс-машину в режим сибиана. Постоянные толчки сменяются непрерывной интенсивной вибрацией, бьющей по промежности и чувствительному анусу.")
 
-		saynn("As you teeter on the brink of another climax, Eliza leans in close, their voice has hints of both command and adoration.")
+		saynn("Когда ты балансируешь на грани очередного оргазма, Элиза наклоняется ближе, и в её голосе слышатся одновременно и приказ, и обожание.")
 
-		saynn("[say=eliza]Surrender to the pleasure and let it consume you~.[/say]")
+		saynn("[say=eliza]Сдайся этому удовольствию и позволь ему поглотить тебя~.[/say]")
 
-		saynn("With a muffled cry, your body shatters into a million fragments of pleasure. Wave after wave of ecstasy crashing over you as your muscles are tensing up and your body arching.")
+		saynn("С приглушенным криком твое тело разлетается на миллион осколков наслаждения. Волна за волной экстаз накрывает тебя, мышцы сводит судорогой, а тело выгибается дугой.")
 
-		saynn("At some point you begin to think that you're about to black out..")
+		saynn("В какой-то момент тебе начинает казаться, что ты вот-вот отключишься..")
 
-		saynn("Poof..")
+		saynn("Пуф..")
 
-		saynn("The cold floor hugs you and presses close.")
+		saynn("Холодный пол обнимает тебя, прижимая к себе.")
 
-		addButton("Continue", "See what happens next", "skip_to_next_day")
+		addButton("Продолжить", "Смотреть, что будет дальше", "skip_to_next_day")
 	if(state == "skip_to_next_day"):
 		playAnimation(StageScene.Sleeping, "idle", {bodyState={naked=true}})
 		removeCharacter("eliza")
 		removeCharacter("tavi")
 		GM.pc.setLocation(GM.pc.getCellLocation())
 		aimCameraAndSetLocName(GM.pc.getCellLocation())
-		saynn("You open your eyes.. And actually see something this time. It's your cell.")
+		saynn("Ты открываешь глаза... и на этот раз действительно что-то видишь. Это твоя камера.")
 
-		saynn("Welcome to day "+str(GM.main.getDays())+" of your sentence!")
+		saynn("Добро пожаловать в "+str(GM.main.getDays())+" о твоем сроке!")
 
-		saynn("They probably didn't let Tavi go. Whatever they were testing on her, it was working.")
+		saynn("Тави, скорее всего, так и не отпустили. Что бы они на ней ни тестировали, это работало.")
 
-		addButton("Get up", "Time to do something", "endthescene")
+		addButton("Встать", "Пора что-то предпринять", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

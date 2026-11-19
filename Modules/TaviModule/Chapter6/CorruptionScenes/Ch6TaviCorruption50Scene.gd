@@ -7,72 +7,72 @@ func _run():
 	if(state == ""):
 		addCharacter("tavi")
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
-		saynn("Today feels.. different. You step into Tavi's cell and find her just standing near her bed, her back pressed against one of the walls.")
+		saynn("Сегодня всё как-то... иначе. Ты заходишь в камеру к Тави и видишь, что она просто стоит у кровати, прижавшись спиной к одной из стен.")
 
-		saynn("[say=pc]Hey there, Tavi. You look like..[/say]")
+		saynn("[say=pc]Привет, Тави. Ты выглядишь как..[/say]")
 
-		saynn("She directs her gaze towards you and.. smiles.")
+		saynn("Она переводит на тебя взгляд и... улыбается.")
 
-		saynn("[say=pc]You look like yourself. Almost.[/say]")
+		saynn("[say=pc]Ты выглядишь как обычно. Почти.[/say]")
 
-		saynn("Tavi tilts her head to the side slightly, her little smirk keeps shining brightly.")
+		saynn("Тави слегка наклоняет голову набок, а её легкая ухмылка продолжает сиять.")
 
-		saynn("[say=tavi]I feel better, yeah. Whatever you're doing to me.. it seems to be working.[/say]")
+		saynn("[say=tavi]Я чувствую себя лучше, да. Что бы ты там со мной ни делал... похоже, это работает.[/say]")
 
-		saynn("She pushes herself away from the wall and starts stepping around you, swaying her hips.")
+		saynn("Она отталкивается от стены и начинает обходить тебя, покачивая бедрами.")
 
-		saynn("[say=tavi]And you.. Have you forgotten how to call me already?[/say]")
+		saynn("[say=tavi]А ты... Неужели ты уже забыл, как меня называть?[/say]")
 
-		saynn("[say=pc]Miss Tavi?[/say]")
+		saynn("[say=pc]Мисс Тави?[/say]")
 
-		saynn("She giggles softly, her paw sliding over your shoulder, threatening to sink its claws.")
+		saynn("Она тихо хихикает, и её лапа скользит по твоему плечу, словно вот-вот вонзить когти.")
 
-		saynn("[say=tavi]How about you.. say it fully. On your knees obviously~.[/say]")
+		saynn("[say=tavi]Как насчет того, чтобы... произнести это полностью. И, разумеется, на коленях~.[/say]")
 
-		addButton("Kneel", "Kneel before Tavi", "do_kneel")
-		addButton("Make me", "You're not gonna kneel willingly", "make_me")
+		addButton("Встать на колени", "Встань на колени перед Тави", "do_kneel")
+		addButton("Заставь меня", "Ты не собираешься вставать на колени добровольно", "make_me")
 	if(state == "do_kneel"):
 		playAnimation(StageScene.Duo, "kneel", {npc="tavi"})
-		saynn("You kneel before Tavi and lower your chin.")
+		saynn("Ты опускаешься на колени перед Тави и склоняешь голову.")
 
-		saynn("[say=pc]You are Miss Tavi. And I am your pet.[/say]")
+		saynn("[say=pc]Ты — мисс Тави. А я — твой питомец.[/say]")
 
-		saynn("Her clawed paw grabs you by the chin and makes you look up at her. Her dominant aura is strong.")
+		saynn("Её когтистая лапа хватает тебя за подбородок, заставляя смотреть ей в глаза. Её доминирующая аура ощущается почти физически.")
 
-		saynn("[say=tavi]Much better~. Thank you.[/say]")
+		saynn("[say=tavi]Так-то лучше~. Спасибо.[/say]")
 
-		saynn("She scritches you under the chin.")
+		saynn("Она чешет тебя под подбородком.")
 
-		saynn("[say=tavi]I need to think about our next move.. So for now.. I'm still yours.[/say]")
+		saynn("[say=tavi]Мне нужно обдумать наш следующий шаг... Так что пока... я всё ещё твоя.[/say]")
 
-		saynn("She helps you to get up. It seems, Tavi has managed to overcome her constant heat.. or maybe she is just hiding it really well.")
+		saynn("Она помогает тебе подняться. Похоже, Тави удалось совладать со своей постоянной течкой... или же она просто очень умело её скрывает.")
 
-		addButton("Continue", "See what happens next", "start_talking")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talking")
 	if(state == "make_me"):
 		playAnimation(StageScene.Duo, "defeat", {npc="tavi"})
-		saynn("You decide to test Tavi a little bit.")
+		saynn("Ты решаешь немного протестировать Тави.")
 
-		saynn("[say=pc]Make me.[/say]")
+		saynn("[say=pc]Ну же, заставь меня![/say]")
 
-		saynn("Something flashes in Tavi's eyes as her paws suddenly find their way to your hair. A second later and you're already kneeling before her, your hair strands held firmly by her paw.")
+		saynn("В глазах Тави что-то вспыхивает, и её лапы внезапно вцепляются в твои волосы. Секунда — и ты уже стоишь перед ней на коленях, а она крепко сжимает твои пряди своей лапой.")
 
-		saynn("[say=tavi]Better~?[/say]")
+		saynn("[say=tavi]Так лучше~?[/say]")
 
-		saynn("[say=pc]Ow.. ow ow-ow..[/say]")
+		saynn("[say=pc]Ай... ой-ой-ой...[/say]")
 
-		saynn("Tavi leans in closer, her sharp fangs out on display. The pain makes you quickly change your mind.")
+		saynn("Тави наклоняется ближе, демонстрируя свои острые клыки. От боли ты мгновенно меняешь свое мнение.")
 
-		saynn("[say=pc]You're Miss Tavi. You're my miss. And I'm your pet![/say]")
+		saynn("[say=pc]Вы — мисс Тави. Вы — моя госпожа. А я ваш питомец![/say]")
 
-		saynn("[say=tavi]Much better~. Thank you.[/say]")
+		saynn("[say=tavi]Так-то лучше~. Спасибо.[/say]")
 
-		saynn("She lets go of the hair and scritches you under the chin instead.")
+		saynn("Она отпускает волосы и вместо этого начинает чесать тебя под подбородком.")
 
-		saynn("[say=tavi]I need to think about our next move.. So for now.. I'm still yours.[/say]")
+		saynn("[say=tavi]Мне нужно обдумать наш следующий шаг... Так что пока... я всё ещё твоя.[/say]")
 
-		saynn("It seems, Tavi has managed to overcome her constant heat.. or maybe she is just hiding it really well.")
+		saynn("Похоже, Тави удалось справиться со своей постоянной течкой... или же она просто очень умело её скрывает.")
 
-		addButton("Continue", "See what happens next", "start_talking")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talking")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

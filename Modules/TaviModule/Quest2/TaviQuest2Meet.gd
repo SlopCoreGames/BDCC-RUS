@@ -9,83 +9,83 @@ func _run():
 		addCharacter("tavi")
 		
 	if(state == ""):
-		saynn("You idle around until Tavi shows up, just on time. She walks up to you, her cunning smile greets you.")
+		saynn("Ты слоняешься без дела, пока не появляется Тави — как раз вовремя. Она подходит к тебе, приветствуя своей хитрой улыбкой.")
 
-		saynn("[say=tavi]We can’t reach the top deck without staff access.[/say]")
+		saynn("[say=tavi]Без пропуска персонала нам не добраться до верхней палубы.[/say]")
 
-		saynn("[say=pc]So how are you gonna get it?[/say]")
+		saynn("[say=pc]И как же ты собираешься это сделать?[/say]")
 
-		saynn("The tall feline chuckles and directs her gaze towards the checkpoint, a single guard is standing there. Tavi takes a feminine posture and proceeds to step towards him, putting an extra amount of sway into her hips.")
+		saynn("Высокая кошка усмехается и переводит взгляд на контрольно-пропускной пункт, где стоит одинокий охранник. Тави принимает кокетливую позу и направляется к нему, нарочито покачивая бедрами.")
 
-		addButton("Follow", "See what happens", "follow")
+		addButton("Следовать", "Посмотреть, что будет", "follow")
 
 	if(state == "follow"):
 		aimCameraAndSetLocName("hall_checkpoint")
 		addCharacter("cp_guard")
 		
-		saynn("As Tavi approaches and seemingly tries to walk past, the guard blocks the path and gestures to her to stop. You stand nearby, watching the scene unfolding.")
+		saynn("Когда Тави подходит и делает вид, что хочет пройти мимо, охранник преграждает ей путь и жестом велит остановиться. Ты стоишь неподалеку, наблюдая за разворачивающейся сценой.")
 
-		saynn("[say=cp_guard]Not so fast, sweetheart. Hands on the wall, I’m gonna check you. You both.[/say]")
+		saynn("[say=cp_guard]Не так быстро, милашка. Руки на стену, сейчас я вас проверю. Обоих.[/say]")
 
-		saynn("[say=tavi]No need, officer. I’m clean, outside and inside~.[/say]")
+		saynn("[say=tavi]Нет нужды, офицер. Я чиста — и снаружи, и внутри~.[/say]")
 
-		saynn("She raises her paws, showing no threat, and then leans forward, whispering to his ear.")
+		saynn("Она поднимает лапы, демонстрируя отсутствие угрозы, а затем наклоняется вперед, шепча ему на ухо.")
 
-		saynn("[say=tavi]I don’t even have panties~.[/say]")
+		saynn("[say=tavi]На мне даже трусиков нет~.[/say]")
 
-		saynn("The guard raises his brow as he eyes the red block inmate out. Tavi wasn’t afraid to put herself out, she let him watch. But then the canine frowns and barks at her.")
+		saynn("Охранник вскидывает бровь, оглядывая красноблокную заключенную с ног до головы. Тави не боялась выставлять себя напоказ — она позволила ему смотреть. Но тут пес хмурится и рявкает на неё.")
 
-		saynn("[say=cp_guard]I’m well aware of bullshit reds do, I’m only fucking sluts like you in stocks. Hands on the wall, inmate.[/say]")
+		saynn("[say=cp_guard]Я прекрасно знаю, какое дерьмо творят эти красные. Я трахаю таких шлюх, как ты, только когда они в кандалах. Руки на стену, зэчка![/say]")
 
-		saynn("Tavi just keeps smiling as the guard steps towards her himself and tries to wrench her arms. But as he approaches her, the feline pulls her hands back and instead kicks him in the chest with full force, sending him back a full meter. The guy grunts and swiftly readies his stun baton.")
+		saynn("Тави лишь продолжает улыбаться, когда охранник делает шаг к ней, пытаясь силой вывернуть ей руки. Но как только он приближается, кошка отдергивает руки и вместо этого со всей дури бьет его ногой в грудь, отбрасывая на целый метр назад. Парень кряхтит и быстро наводит на неё электрошокер.")
 
-		saynn("[say=cp_guard]What a bitch![/say]")
+		saynn("[say=cp_guard]Ну и сучка![/say]")
 
-		saynn("He swings at Tavi but she catches his hand and forces it into the nearby wall, disarming the guard. He tries to punch but she keeps him away again, this time causing the guy to drop to his knee. Tavi just stretches and gets into a feminine pose again, straight back, legs together, hands resting on her belt area.")
+		saynn("Он замахивается на Тави, но она перехватывает его руку и с силой впечатывает её в ближайшую стену, обезоруживая охранника. Он пытается ударить её кулаком, но она снова удерживает его на расстоянии, на этот раз заставив парня рухнуть на колено. Тави просто потягивается и снова принимает кокетливую позу: прямая спина, ноги вместе, руки лежат на поясе.")
 
-		saynn("[say=tavi]That’s a bad way to treat a lady~. How about you say sorry~.[/say]")
+		saynn("[say=tavi]Не очень-то вежливо так обращаться с дамой~. Как насчет того, чтобы извиниться~?[/say]")
 
-		saynn("The guard just growls back at her, he swiftly begins to look for his remote. He finally finds it and primes it but as he aims it at the feline, he sees her dashing towards him with a crazy smile and his weapon in her hand. Her swing connects faster, sending a sudden powerful shock through the guard's body and causing him to cry out from pain. He drops his remote and loses his consciousness not long after. You stand behind, having watched all that, looking pretty surprised.")
+		saynn("Охранник лишь рычит в ответ, лихорадочно шаря по карманам в поисках пульта. Наконец он находит его и готовит к работе, но стоит ему нацелиться в кошку, как он видит, что она несется на него с безумной улыбкой, сжимая его же оружие в руках. Её удар оказывается быстрее, пропуская мощный разряд через тело охранника, заставляя его истошно закричать от боли. Он роняет пульт и вскоре теряет сознание. Ты стоишь позади, наблюдая за всем этим с нескрываемым удивлением.")
 
-		saynn("[say=pc]Are you gonna get in trouble for that?[/say]")
+		saynn("[say=pc]Тебе за это не прилетит?[/say]")
 
-		saynn("[say=tavi]Why should I? I’m better than every single one of them. Combined~.[/say]")
+		saynn("[say=tavi]А с чего бы? Я лучше каждого из них. Вместе взятых~.[/say]")
 
-		saynn("She rips the badge off his uniform and heads towards the elevator, inviting you to follow.")
+		saynn("Она срывает жетон с его формы и направляется к лифту, приглашая тебя следовать за ней.")
 
-		addButton("Follow", "Enter the elevator", "follow1")
+		addButton("Следовать", "Войти в лифт", "follow1")
 
 	if(state == "follow1"):
 		aimCameraAndSetLocName("cd_elevator")
 		removeCharacter("cp_guard")
 		
-		saynn("You join Tavi in the elevator, she presses the badge against the control panel and picks the command deck floor. The elevator begins to rise.")
+		saynn("Ты заходишь в лифт вместе с Тави; она прикладывает жетон к панели управления и выбирает этаж командного мостика. Лифт начинает движение вверх.")
 
-		saynn("[say=pc]You think we will be able to call for help?[/say]")
+		saynn("[say=pc]Думаешь, мы сможем позвать на помощь?[/say]")
 
-		saynn("[say=tavi]We should be. The Syndicate would be happy to know where this prison is.[/say]")
+		saynn("[say=tavi]Должны. Синдикат будет только рад узнать, где находится эта тюрьма.[/say]")
 
-		saynn("[say=pc]Syndicate?[/say]")
+		saynn("[say=pc]Синдикат?[/say]")
 
-		saynn("[say=tavi]They’re at war with AlphaCorp. I don’t care about that whole intergalactic conflict bullshit but right now it’s a nice opportunity for me. And you.[/say]")
+		saynn("[say=tavi]Они воюют с АльфаКорпом. Мне плевать на всю эту межгалактическую заваруху, но сейчас для меня это отличная возможность. И для тебя тоже.[/say]")
 
-		saynn("The doors open. Outside area looks quite different from what you are used to in the prison. Many expensive-looking paintings on the walls, red cloth with golden accents everywhere. The tiled floor looks clean and shiny, it’s covered with a long carpet so your feet don’t feel cold as you step. The whole setup screams rich to you, even Tavi looks puzzled at first.")
+		saynn("Двери открываются. Обстановка снаружи сильно отличается от того, к чему ты привык в тюрьме. На стенах — множество дорогих картин, повсюду красная ткань с золотыми акцентами. Плиточный пол выглядит чистым и блестящим, он застелен длинной ковровой дорожкой, так что ноги не чувствуют холода при ходьбе. Всё это буквально кричит о богатстве, даже Тави поначалу выглядит озадаченной.")
 
-		saynn("[say=tavi]Quite the contrast, huh.[/say]")
+		saynn("[say=tavi]Тот еще контраст, а?[/say]")
 
-		saynn("[say=pc]Budget money well spent.[/say]")
+		saynn("[say=pc]Бюджет потрачен не зря.[/say]")
 
-		saynn("You both step out and look around, it seems the place is not guarded very well. Tavi gives you a head pat.")
+		saynn("Вы оба выходите наружу и оглядываетесь: кажется, охрана здесь не слишком бдительная. Тави ласково гладит тебя по голове.")
 
-		saynn("[say=tavi]I will meet you near the captain’s office. Here, use these in case you’re hurt.[/say]")
+		saynn("[say=tavi]Встретимся возле кабинета капитана. Вот, возьми это на случай, если поранишься.[/say]")
 
-		saynn("She hands you some painkillers and then walks away.")
+		saynn("Она протягивает тебе обезболивающее и уходит.")
 
 		# (add painkillers)
 
 		# (scene ends)
 
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 
 func _react(_action: String, _args):

@@ -4,7 +4,7 @@ func _init():
 	id = "TaviAppleQuest"
 
 func getVisibleName():
-	return "Forbidden Fruit (Switch Route)"
+	return "Запретный плод (Переключение маршрута)"
 
 func getProgress():
 	var result = []

@@ -7,7 +7,7 @@ func _init():
 	aiScoreMultiplier = 0.4
 	
 func getVisibleName(_context = {}):
-	return "Lick wounds"
+	return "@@B*@@лизать раны@@T*@@"
 	
 func getVisibleDesc(_context = {}):
 	return "You shouldn't see this"

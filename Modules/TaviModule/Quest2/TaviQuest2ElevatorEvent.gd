@@ -12,7 +12,7 @@ func run(_triggerID, _args):
 	
 	if(GM.pc.getLocation() == "cd_elevator"):
 		return
-	addButton("Command deck", "Where all the higher-ups live", "commanddeck")
+	addButton("Командная палуба", "Там, где живут все верхушки", "commanddeck")
 
 func getPriority():
 	return 0

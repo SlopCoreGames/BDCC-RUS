@@ -30,1221 +30,1221 @@ func _run():
 			var randomPureText = RNG.pick([1, 2, 3, 4])
 			if (randomPureText == 1):
 				playAnimation(StageScene.Duo, "stand", {npc="tavi"})
-				saynn("As you step into Tavi's cell, you find her doing some exercises by her bed. She notices you and smiles warmly.")
+				saynn("Когда вы входите в камеру Тави, вы застаете её за разминкой у кровати. Заметив вас, она тепло улыбается.")
 
-				saynn("[say=tavi]Good morning, {pc.name}.[/say]")
+				saynn("[say=tavi]Доброе утро, {pc.name}.[/say]")
 
-				saynn("Her voice is peaceful, there are no signs of her suffering from constant heat.")
+				saynn("Её голос звучит безмятежно; нет никаких признаков того, что она страдает от постоянной течки.")
 
-				saynn("[say=tavi]Just trying to keep myself in shape. Feline grace doesn't come for free~.[/say]")
+				saynn("[say=tavi]Просто стараюсь держать себя в форме. Кошачья грация достается не даром~.[/say]")
 
-				saynn("You just lean against one the walls and watch Tavi go through her morning routine, mostly consisting of squats and various stretches.")
+				saynn("Вы просто прислоняетесь к стене и наблюдаете за утренней рутиной Тави, которая в основном состоит из приседаний и различных растяжек.")
 
-				saynn("[say=tavi]Life is so much better when I can actually focus. But.. If you want.. I can pretend that I'm in heat~.[/say]")
+				saynn("[say=tavi]Жизнь становится намного лучше, когда я могу сосредоточиться. Но... если хочешь... я могу притвориться, что у меня течка~.[/say]")
 
 			elif (randomPureText == 2):
 				playAnimation(StageScene.Duo, "stand", {npc="tavi", npcAction="sit"})
-				saynn("As you enter Tavi's cell, you find her sitting on her bed.")
+				saynn("Когда вы входите в камеру Тави, вы видите, что она сидит на своей кровати.")
 
-				saynn("[say=pc]Hey there, Tavi.[/say]")
+				saynn("[say=pc]Привет, Тави.[/say]")
 
-				saynn("Her ears perk towards your voice. Tavi looks at you and smiles.")
+				saynn("Её ушки навостряются на ваш голос. Тави смотрит на вас и улыбается.")
 
-				saynn("[say=tavi]Hey there~. Thank you for checking on me so often.[/say]")
+				saynn("[say=tavi]Привет~. Спасибо, что так часто заглядываешь ко мне.[/say]")
 
-				saynn("She spreads her arms wide and arches her back before tensing all her muscles up and producing a cute moan.")
+				saynn("Она широко разводит руки и прогибается в спине, а затем напрягает все мышцы, издавая милый стон.")
 
-				saynn("[say=tavi]Wanna cuddle for a bit? Or.. I can still be your slut if you want. Even if I will have to fake my heat.[/say]")
+				saynn("[say=tavi]Хочешь немного пообниматься? Или... я всё ещё могу быть твоей шлюшкой, если хочешь. Даже если мне придётся имитировать течку.[/say]")
 
 			elif (randomPureText == 3):
 				playAnimation(StageScene.Duo, "stand", {npc="tavi"})
-				saynn("Tavi stands near her bed, there is a.. tasty-looking apple.. in her paw. She rubs it against her shirt and bites into it so much that the juices begin overflowing and dripping down her chin.")
+				saynn("Тави стоит у своей кровати, а в её лапе... аппетитное яблоко... Она трет его о свою футболку и откусывает так жадно, что сок начинает течь по подбородку.")
 
-				saynn("[say=pc]Hey, Tavi. Where'd you get that?[/say]")
+				saynn("[say=pc]Эй, Тави. Где ты его взяла?[/say]")
 
-				saynn("She finally notices you and giggles softly.")
+				saynn("Она наконец замечает тебя и тихонько хихикает.")
 
-				saynn("[say=tavi]Heya. You might not believe it but I don't actually sit on my butt all day~.[/say]")
+				saynn("[say=tavi]Приветик. Может, ты и не поверишь, но я не только на заднице весь день сижу~.[/say]")
 
-				saynn("She slices a small chunk off with her claws of it and offers it to you.")
+				saynn("Она отрезает когтем небольшой кусочек и протягивает его тебе.")
 
-				saynn("[say=tavi]Not suffering from constant heat helps a lot. Thank you for that. Really.[/say]")
+				saynn("[say=tavi]То, что я не страдаю от постоянной течки, очень помогает. Спасибо тебе за это. Правда.[/say]")
 
-				saynn("The feline bites into it a few more times, trying to be less messy this time.")
+				saynn("Кошка откусывает ещё несколько раз, стараясь на этот раз не так сильно пачкаться.")
 
-				saynn("[say=tavi]Speaking off.. Wanna have some fun? I can still act slutty even if I'm not..[/say]")
+				saynn("[say=tavi]Кстати о птичках... Хочешь немного развлечься? Я всё ещё могу вести себя как шлюшка, даже если сейчас не...[/say]")
 
 			elif (randomPureText == 4):
 				playAnimation(StageScene.Sleeping, "idle", {pc="tavi"})
-				saynn("You step in Tavi's cell.. and find her lying on her bed. Your pet seems to be sleeping, huh, her eyes are closed. You decide to approach her and take a better look.")
+				saynn("Ты заходишь в камеру Тави... и видишь, что она лежит на своей кровати. Твоя питомица, похоже, спит — глаза закрыты. Ты решаешь подойти поближе, чтобы рассмотреть её получше.")
 
-				saynn("Tavi is sleeping on her back, not moving, her paws by her sides. If you didn't see her"+str(" pregnant" if getCharacter("tavi").isVisiblyPregnant() else "")+" belly get bigger and smaller, you'd assume she is dead.. because she is That still.")
+				saynn("Тави спит на спине, не шевелясь, лапы лежат по бокам. Если бы ты не видел, как её"+str(" pregnant" if getCharacter("tavi").isVisiblyPregnant() else "")+"живот мерно вздымается и опускается, можно было бы подумать, что она мертва... потому что она пугающе неподвижна.")
 
-				saynn("[say=pc]Tavi?[/say]")
+				saynn("[say=pc]Тави?[/say]")
 
-				saynn("Her ears instantly focus on your voice, her eyes open a second later.")
+				saynn("Её уши мгновенно навостряются на твой голос, а спустя секунду открываются глаза.")
 
-				saynn("[say=tavi]Oh. Hey there.[/say]")
+				saynn("[say=tavi]Ох. Привет.[/say]")
 
-				saynn("[say=pc]You always sleep like that?[/say]")
+				saynn("[say=pc]Ты всегда так спишь?[/say]")
 
-				saynn("Tavi shrugs as she sits down.")
+				saynn("Тави пожимает плечами, садясь на кровати.")
 
-				saynn("[say=tavi]I was squirming a lot before. But now it's better.[/say]")
+				saynn("[say=tavi]До этого я много ерзала. Но сейчас уже лучше.[/say]")
 
-				saynn("The feline offers you a smile.")
+				saynn("Кошка расплывается в улыбке.")
 
-				saynn("[say=tavi]Wanna do something? I can still pretend I'm a horny slut if you want~.[/say]")
+				saynn("[say=tavi]Хочешь чем-нибудь заняться? Если хочешь, я всё ещё могу притворяться похотливой шлюхой~.[/say]")
 
 		elif (isCorrupt):
 			addCharacter("tavi", ["naked"])
 			var randomCorruptText = RNG.pick([1, 2, 3, 4])
 			if (randomCorruptText == 1):
 				playAnimation(StageScene.Sleeping, "idle", {pc="tavi", bodyState={naked=true}})
-				saynn("As you enter Tavi's cell, you find her lying on her bed, her eyes shining with desire while her body squirms sensually.")
+				saynn("Когда вы входите в камеру Тави, вы видите её на кровати: её глаза сияют от желания, а тело соблазнительно извивается.")
 
-				saynn("With an alluring smile, she beckons you closer, her voice laced with a low-pitched purr.")
+				saynn("С манящей улыбкой она манит вас к себе, а её голос звучит низким, мурлыкающим тоном.")
 
-				saynn("[say=tavi]Wouldn't you like to start your day by indulging in.. raw.. passionate.. love-making?..[/say]")
+				saynn("[say=tavi]Не хочешь начать свой день с... первобытного... страстного... секса?..[/say]")
 
-				saynn("Tavi lets one leg to hang off the bed and then uses her long claws to spread her"+str(" virgin" if getModule("TaviModule").isVirgin() else "")+" pussy, showcasing her slick inviting depths.")
+				saynn("Тави свешивает одну ногу с кровати и длинными когтями раздвигает свою"+str(" virgin" if getModule("TaviModule").isVirgin() else "")+" киску, демонстрируя влажную, манящую глубину.")
 
 			elif (randomCorruptText == 2):
 				playAnimation(StageScene.Duo, "stand", {npc="tavi", npcBodyState={naked=true}})
-				saynn("As you step in Tavi's cell, an intoxicating scent hits your senses. The room seems empty at first but that's because Tavi is behind you, cutting off the only exit.")
+				saynn("Как только вы переступаете порог камеры Тави, вас окутывает пьянящий аромат. Сначала комната кажется пустой, но это лишь потому, что Тави уже стоит у вас за спиной, перекрывая единственный выход.")
 
-				saynn("[say=tavi]Hey~.[/say]")
+				saynn("[say=tavi]Эй~.[/say]")
 
-				saynn("Her paws land on {pc.masc} body, caressing it. You can feel her hot breath on your neck.")
+				saynn("Её лапы ложатся на {pc.masc} тело, лаская его. Вы чувствуете её горячее дыхание на своей шее.")
 
-				saynn("[say=tavi]I ache with need.. Don't make me beg..[/say]")
+				saynn("[say=tavi]Я вся горю от желания... Не заставляй меня умолять...[/say]")
 
-				saynn("She bares her fangs and teasingly prods your skin.")
+				saynn("Она скалится, обнажая клыки, и дразняще тычет их в вашу кожу.")
 
-				saynn("[say=tavi]Cause I will~..[/say]")
+				saynn("[say=tavi]Потому что я...~[/say]")
 
 			elif (randomCorruptText == 3):
 				playAnimation(StageScene.Duo, "stand", {npc="tavi", npcBodyState={naked=true}})
-				saynn("As you enter Tavi's cell, her lips curve into a knowing smile. She approaches you and begins stepping around, swaying her hips seductively. Her voice is like a melody, with some dark added notes to it.")
+				saynn("Когда ты входишь в камеру Тави, её губы расплываются в понимающей улыбке. Она подходит к тебе и начинает кружиться, соблазнительно покачивая бёдрами. Её голос звучит как мелодия, в которой слышны низкие, манящие нотки.")
 
-				saynn("[say=tavi]Do you feel the heat that courses through my veins?[/say]")
+				saynn("[say=tavi]Чувствуешь, как жар разливается по моим венам?[/say]")
 
-				saynn("She cups her breasts and teases her green nips with her claws, all in your clear view.")
+				saynn("Она сжимает грудь, дразня свои зелёные соски когтями прямо у тебя на виду.")
 
-				saynn("[say=tavi]It's a fire that only you can quench~.[/say]")
+				saynn("[say=tavi]Это огонь, который сможешь утолить только ты~.[/say]")
 
 			elif (randomCorruptText == 4):
 				playAnimation(StageScene.Hug, "hug", {npc="tavi", npcBodyState={naked=true}})
-				saynn("Tavi embraces you as soon as you enter her cell. She is purring while rubbing her cheek against yours.")
+				saynn("Тави обнимает тебя, едва ты переступаешь порог её камеры. Она довольно мурлычет, притираясь щекой к твоей.")
 
-				saynn("[say=tavi]Wanna fuck me?[/say]")
+				saynn("[say=tavi]Хочешь трахнуть меня?[/say]")
 
 				if (GM.pc.hasPenis()):
-					saynn("She is quite.. bold.. Her paws explore your body, reaching down to your {pc.penis} and teasing it with some strokes.")
+					saynn("Она весьма... смелая... Её лапы исследуют твоё тело, спускаясь к твоему {pc.penis} и дразня его ласкающими движениями.")
 
 				elif (GM.pc.hasReachableVagina()):
-					saynn("She is quite.. bold.. Her paws explore your body, reaching down to your pussy and teasing it with her some rubs.")
+					saynn("Она весьма... смелая... Её лапы исследуют твоё тело, спускаясь к твоей киске и дразня её поглаживаниями.")
 
 				else:
-					saynn("She is quite.. bold.. Her paws explore your body, reaching down to your crotch and teasing it with her some rubs.")
+					saynn("Она весьма... смелая... Её лапы исследуют твоё тело, спускаясь к твоему паху и дразня его поглаживаниями.")
 
-				saynn("[say=tavi]Squeeze my tits really tight? Grab my horns and force me to pleasure you~?[/say]")
+				saynn("[say=tavi]Сжать мои сиськи посильнее? Схватить за рога и заставить меня доставить тебе удовольствие~?[/say]")
 
-				saynn("The feline is smiling while rubbing her whole body against yours.")
+				saynn("Кошка улыбается, потираясь всем телом о тебя.")
 
-				saynn("[say=tavi]Can you see the hunger in my eyes? I want you to use me..[/say]")
+				saynn("[say=tavi]Видишь голод в моих глазах? Я хочу, чтобы ты использовал меня..[/say]")
 
 		else:
 			addCharacter("tavi", ["naked"])
-			saynn("As you enter Tavi's cell, you find her lying on her bed, her breathing heavy and her eyes filled with the mix of desire and need.")
+			saynn("Когда ты входишь в камеру Тави, ты видишь её лежащей на кровати; её дыхание тяжёлое, а глаза полны смеси желания и нужды.")
 
 			var randomText = RNG.pick([1, 2, 3, 4, 5, 6])
 			if (randomText == 1):
-				saynn("The air in the cell is filled with tension as Tavi notices you, her voice is quiet.")
+				saynn("Воздух в камере пропитан напряжением; заметив тебя, Тави говорит тихим голосом.")
 
-				saynn("[say=tavi]I can't take it anymore.. I need you..[/say]")
+				saynn("[say=tavi]Я больше не могу терпеть.. Ты нужен мне..[/say]")
 
-				saynn("She doesn't even care that she is naked and displaying her needy pussy to you. She hopes you see it even.")
+				saynn("Ей даже плевать, что она голая и выставляет перед тобой свою жаждущую киску. Она даже надеется, что ты её заметишь.")
 
 			elif (randomText == 2):
-				saynn("Tavi's gaze wanders over your {pc.masc} body, mostly lingering on your crotch. She purrs with a seductive smile.")
+				saynn("Взгляд Тави блуждает по твоему {pc.masc} телу, задерживаясь в основном на твоей промежности. Она мурлычет с соблазнительной улыбкой.")
 
-				saynn("[say=tavi]Would you help me to satisfy this heat.. I need you to fuck me..[/say]")
+				saynn("[say=tavi]Поможешь ли ты мне унять этот жар.. Мне нужно, чтобы ты оттрахал меня..[/say]")
 
-				saynn("Her paws are idly rubbing her pussy, the clawed digit gently playing with the clit. Tavi doesn't seem to mind you watching.")
+				saynn("Её лапки лениво потирают киску, когтистые пальцы нежно играют с клитором. Кажется, Тави совсем не смущает, что ты наблюдаешь.")
 
 			elif (randomText == 3):
-				saynn("As you approach her, Tavi shifts her body, spreading her legs slightly for you. A silent invitation.. Her soft voice trembles with urgency.")
+				saynn("Когда ты приближаешься к ней, Тави слегка раздвигает ноги, открываясь тебе. Безмолвное приглашение... Её нежный голос дрожит от нетерпения.")
 
-				saynn("[say=tavi]It's happening again.. Every day.. I can't.. I need to cum..[/say]")
+				saynn("[say=tavi]Это происходит снова... Каждый божий день... Я больше не могу... Мне нужно кончить...[/say]")
 
-				saynn("Her body is squirming slightly while you watch. Her pussy is incredibly wet. Seems like that experiment that Eliza did her got her hooked on pleasure.")
+				saynn("Пока ты наблюдаешь, её тело слегка извивается. Её киска невероятно мокрая. Похоже, тот эксперимент Элизы подсадил её на удовольствие.")
 
 			elif (randomText == 4):
 				playedAnim = true
 				playAnimation(StageScene.Hug, "hug", {npc="tavi", npcBodyState={naked=true}})
-				saynn("Tavi gets up off the bed and reaches out to touch your hand before guiding it to her sensitive spot between her legs. Her body arches with pleasure just feeling the contact of your digits on her wet pussy folds. She looks at you with pleading eyes.")
+				saynn("Тави встает с кровати и тянется к твоей руке, прежде чем направить её к своему самому чувствительному месту между ног. Её тело выгибается от наслаждения лишь от одного прикосновения твоих пальцев к складкам её влажной киски. Она смотрит на тебя умоляющим взглядом.")
 
-				saynn("[say=tavi]Fuck me.. Use me.. Do anything to me.. Just let me cum.. I will be your submissive slut..[/say]")
+				saynn("[say=tavi]Трахни меня... Используй меня... Делай со мной что угодно... Только дай мне кончить... Я буду твоей покорной шлюшкой...[/say]")
 
-				saynn("You pull the hand away before Tavi starts humping it. Isn't she a needy girl..")
+				saynn("Ты убираешь руку прежде, чем Тави начинает на неё насаживаться. Какая же она ненасытная девчонка...")
 
 			elif (randomText == 5):
 				playedAnim = true
 				playAnimation(StageScene.Hug, "hug", {npc="tavi", npcBodyState={naked=true}})
-				saynn("With a soft whimper, Tavi gets up and presses her girly body against yours, her paws trailing up your {pc.masc} chest.")
+				saynn("Тихо всхлипнув, Тави поднимается и прижимается своим девичьим телом к твоему, ведя лапками вверх по твоей {pc.masc} груди.")
 
-				saynn("[say=tavi]I can't endure it any longer.. You must fuck me.. Any way you want..[/say]")
+				saynn("[say=tavi]Я больше не могу это терпеть... Ты должен трахнуть меня... Как захочешь...[/say]")
 
-				saynn("Your pet is rubbing her crotch against your leg, spreading her pussy juices. So needy..")
+				saynn("Твоя питомица трется промежностью о твою ногу, размазывая соки своей киски. Такая жаждущая...")
 
 			elif (randomText == 6):
 				playedAnim = true
 				playAnimation(StageScene.Duo, "stand", {npc="tavi", npcAction="kneel", npcBodyState={naked=true}})
-				saynn("Tavi notices you and gets off the bed. Her body trembles with unfulfilled desire as she kneels before you, her paws idly brushing against her curves and rubbing the sensitive spots.")
+				saynn("Заметив тебя, Тави слезает с кровати. Её тело дрожит от неутоленного желания, когда она опускается перед тобой на колени, лениво поглаживая лапками свои изгибы и лаская чувствительные точки.")
 
-				saynn("[say=tavi]I'm so needy.. And I'm yours to take..[/say]")
+				saynn("[say=tavi]Я такая жадная до ласки.. И я вся твоя..[/say]")
 
-				saynn("Her voice sounds almost desperate. That kitty really wants to be fucked..")
+				saynn("Ее голос звучит почти отчаянно. Эта киска реально хочет, чтобы ее трахнули..")
 
 			if (!playedAnim):
 				playAnimation(StageScene.Sleeping, "idle", {pc="tavi", bodyState={naked=true}})
-		addButton("Finger her", "Make Tavi cum with just your fingers", "do_finger")
+		addButton("Поласкать её пальцами", "Довести Тави до оргазма одними пальцами", "do_finger")
 		if (sexSkill > 0):
-			addButtonWithChecks("Lick her out", "Satisfy Tavi's heat by licking her pussy", "do_lick", [], [ButtonChecks.NotOralBlocked])
+			addButtonWithChecks("Вылизать её", "Утолить жажду Тави, вылизывая её киску", "do_lick", [], [ButtonChecks.NotOralBlocked])
 		if (sexSkill > 1):
-			addButtonWithChecks("Tribadism", "Rub pussies with Tavi to satisfy her heat", "do_trib", [], [ButtonChecks.HasReachableVagina])
+			addButtonWithChecks("Трибадизм", "Тереться кисками с Тави, чтобы унять её возбуждение", "do_trib", [], [ButtonChecks.HasReachableVagina])
 		if (sexSkill > 1):
 			if (!isVirgin):
-				addButton("Fuck her", "Rail Tavi to satisfy her heat", "do_fuck_pick")
+				addButton("Трахнуть её", "Жестко трахнуть Тави, чтобы удовлетворить её похоть", "do_fuck_pick")
 			else:
-				addDisabledButton("Fuck her", "Tavi can't be a virgin for this")
+				addDisabledButton("Трахнуть её", "Тави не может быть девственницей при таком раскладе")
 		if (petSkill > 3):
-			addButton("Petplay fuck", "Fuck Tavi while she is wearing a bitchsuit", "do_petplay_fuck_pick")
+			addButton("Секс в стиле петплей", "Трахать Тави, пока она в костюме сучки", "do_petplay_fuck_pick")
 		if (painSkill > 4):
-			addButton("Pussy spanking", "Make Tavi cum from having her pussy smacked", "do_pussy_spank")
+			addButton("Шлепать по киске", "Довести Тави до оргазма, шлепая её по киске", "do_pussy_spank")
 		if (sexSkill > 4):
-			addButton("Anal sex", "Try to satisfy Tavi's heat by fucking her butt", "do_anal_pick")
+			addButton("Анальный секс", "Попробовать утолить жажду Тави, трахнув её в задницу", "do_anal_pick")
 		if (isPure):
-			addButton("Just chill", "Spend some time together instead of fucking", "do_just_chill")
+			addButton("Просто расслабиться", "Провести время вместе вместо секса", "do_just_chill")
 		if (isCorrupt):
-			addButton("Submit to", "Let the demon Tavi take the reigns for a bit", "do_submit")
+			addButton("Подчиниться", "Позволить демонической стороне Тави взять бразды правления на себя", "do_submit")
 	if(state == "do_finger"):
 		playAnimation(StageScene.SexStanding, "tease", {npc="tavi", pc="pc", npcBodyState={naked=true}})
-		saynn("With a firm grip, you pin Tavi against the wall. Her body is already shivering with anticipation. She willingly spreads her long legs and sticks her butt out for you, her tail getting out of the way, exposing the dripping sex..")
+		saynn("Крепко схватив её, ты прижимаешь Тави к стене. Её тело уже дрожит от предвкушения. Она послушно раздвигает длинные ноги и выставляет задницу навстречу, убирая хвост в сторону и обнажая сочащуюся смазкой киску...")
 
-		saynn("Your touch is commanding and yet tender as you decide to tease Tavi a little more and cup her {tavi.breasts}, squeezing them so tight she can't help but to let out a moan. The sensations of your palms brushing against her perky nips is sending shivers down her spine, igniting a hunger for more.")
+		saynn("Твои прикосновения властные, но нежные: ты решаешь еще немного помучить Тави и обхватываешь её {tavi.breasts}, сжимая их так крепко, что она не может сдержать стон. Ощущение твоих ладоней, ласкающих её упругие соски, прогоняет дрожь по её позвоночнику, разжигая жажду наслаждения.")
 
-		saynn("[say=tavi]Ah..[/say]")
+		saynn("[say=tavi]Ах...[/say]")
 
-		saynn("After that, your fingers move lower, between her legs.. until they find her drenched dripping pussy. A blush spreads across Tavi's cheeks, she is so exposed and vulnerable. And yet, she lets you do anything with her..")
+		saynn("После этого твои пальцы скользят ниже, между её ног... пока не находят её промокшую, сочащуюся киску. Щеки Тави заливает румянец — она чувствует себя такой открытой и уязвимой. И всё же, она позволяет тебе делать с ней всё, что угодно...")
 
-		saynn("Without hesitation, you begin rubbing Tavi's pussy, your fingers expertly navigating her slick folds. Her breath gets all heavy and deep as the pleasure waves wash over her. Each stroke brings her closer and closer, a powerful sensation builds within her..")
+		saynn("Без колебаний ты начинаешь ласкать киску Тави, твои пальцы умело скользят по её влажным складкам. Её дыхание становится тяжелым и глубоким, когда волны удовольствия накрывают её. Каждый взмах приближает её всё ближе и ближе, внутри неё нарастает мощное возбуждение...")
 
 		if (isVirgin):
-			saynn("You are careful to avoid her virgin pussy entrance but you give extra attention to the little green clit, swiping left and right with your big thumb until Tavi is squirming before you.")
+			saynn("Ты стараешься не задевать вход в её девственную киску, но уделяешь особое внимание маленькому зеленому клитору, водя большим пальцем влево и вправо, пока Тави не начинает извиваться перед тобой.")
 
 		else:
-			saynn("She is not a virgin so you are free to plunge your digits down her pussy hole and start fingering her slutty sex. Your digits are bent a little, allowing you to hit the g-spot which causes the feline to squirm and moan loudly, her pussy is already squirting out some juices.")
+			saynn("Она не девственница, так что ты волен без стеснения засовывать пальцы в её киску и начинать ласкать эту шлюшку. Твои пальцы слегка согнуты, что позволяет тебе нащупать точку G; от этого кошечка начинает извиваться и громко стонать, а её щелка уже вовсю сочится соками.")
 
-		saynn("[say=tavi]I'm gonna.. I'm..[/say]")
+		saynn("[say=tavi]Сейчас будет.. я..[/say]")
 
-		addButton("Let her cum", "Let Tavi experience another orgasm", "do_finger_cum")
-		addButton("Deny Tavi", "Deny her orgasm", "do_finger_deny")
+		addButton("Дай ей кончить", "Дать Тави испытать еще один оргазм", "do_finger_cum")
+		addButton("Откажи Тави", "Лишить её оргазма", "do_finger_deny")
 	if(state == "do_finger_cum"):
-		saynn("You don't stop rubbing Tavi's pussy until her body starts convulsing in orgasm, the climax is so strong, it makes her legs shake. Her pussy is pulsing and clenching around your digits, a flood of her juices leaves your hand incredibly wet.")
+		saynn("Ты не перестаешь тереть киску Тави, пока её тело не начинает содрогаться в экстазе; оргазм настолько мощный, что у неё подкашиваются ноги. Её щелка пульсирует и сжимается вокруг твоих пальцев, а поток её соков делает твою руку невероятно мокрой.")
 
-		saynn("[say=tavi]Feels so g-good..[/say]")
+		saynn("[say=tavi]Так хоро-о-ошо..[/say]")
 
-		saynn("You then bring the hand to her mouth and Tavi begins eagerly licking her own juices, her long rough tongue tickling your palm.")
+		saynn("Затем ты подносишь руку к её рту, и Тави с жадностью начинает слизывать собственные соки, щекоча твою ладонь своим длинным шершавым языком.")
 
-		saynn("That seems to satisfy Tavi. Probably not for long.")
+		saynn("Кажется, это удовлетворило Тави. Но, вероятно, ненадолго.")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 		if (getModule("TaviModule").getSkillScore("taviSkillWatersports") > 0):
-			addButton("Tickle pisshole", "Tickle Tavi's pisshole and see what happens", "do_finger_tickle")
+			addButton("Пощекотать анус", "Пощекотать анус Тави и посмотреть, что из этого выйдет", "do_finger_tickle")
 	if(state == "do_finger_tickle"):
-		saynn("Tavi thinks this is it. But it was far from over. After she has cleaned your hand, you bring it down to her pussy yet again. But this time.. you focus on a very specific spot.. a little hole that's just below her clit.")
+		saynn("Тави думает, что это конец. Но всё было далеко не так просто. После того как она вытерла твою руку, ты снова подносишь её к её киске. Но на этот раз... ты сосредотачиваешься на очень конкретном месте... маленьком отверстии прямо под клитором.")
 
-		saynn("As you begin rubbing it with your digit, Tavi gasps and jerks to the side.")
+		saynn("Как только ты начинаешь тереть его пальцем, Тави ахает и дергается в сторону.")
 
-		saynn("[say=tavi]That's.. that's where I pee from..[/say]")
+		saynn("[say=tavi]Это же... это же то место, откуда я писаю...[/say]")
 
-		saynn("[say=pc]I know~.[/say]")
+		saynn("[say=pc]Я знаю~.[/say]")
 
-		saynn("[say=tavi]You shouldn't rub that..[/say]")
+		saynn("[say=tavi]Не стоит его тереть...[/say]")
 
-		saynn("She might be right. But she can't stop you. Your second hand keeps Tavi pressed into the wall while the first one proceeds to tickle her urethra instead. Whines of confusion escape the feline while her body squirms and her pussy twitches.")
+		saynn("Возможно, она и права. Но она не может тебя остановить. Твоя вторая рука прижимает Тави к стене, пока первая продолжает щекотать её уретру. Из кошки вырываются растерянные стоны, пока её тело извивается, а киска подергивается.")
 
-		saynn("But you keep tickling that little hole.. until Tavi can't hold it anymore.. A cute desperate moan escapes her as she lets go and starts peeing, a strong stream of her piss hitting the floor.")
+		saynn("Но ты продолжаешь щекотать это маленькое отверстие... пока Тави не перестает сдерживаться... С её губ срывается милый отчаянный стон, когда она расслабляется и начинает писать, и сильная струя мочи бьет прямо на пол.")
 
-		saynn("[say=tavi]Ah-h..[/say]")
+		saynn("[say=tavi]Ах-х...[/say]")
 
-		saynn("[say=pc]Good girl.[/say]")
+		saynn("[say=pc]Хорошая девочка.[/say]")
 
-		saynn("You're praising and patting Tavi while she doesn't care anymore, instead just emptying her bladder.")
+		saynn("Ты хвалишь и похлопываешь Тави, но ей уже плевать — она просто опорожняет свой мочевой пузырь.")
 
-		saynn("[say=tavi]F-fuck.. I w-will clean it up..[/say]")
+		saynn("[say=tavi]Б-блин... Я всё у-уберу...[/say]")
 
-		saynn("After she is done peeing, Tavi steps out of the cell to ask for a mop and a bucket of water. Every fun moment like that requires a lot of cleaning up..")
+		saynn("Закончив справлять нужду, Тави выходит из камеры, чтобы попросить швабру и ведро воды. Каждый такой приятный момент требует долгой уборки...")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 	if(state == "do_finger_deny"):
-		saynn("Tavi is so close to her orgasm, she can feel it. However, you have different plans. To her surprise, you pull your hand away from her dripping pussy, denying her the climax she so desperately craves.")
+		saynn("Тави уже почти на пике оргазма, она буквально чувствует его приближение. Однако у тебя другие планы. К её удивлению, ты убираешь руку от её сочащейся смазкой киски, лишая её долгожданной разрядки, которой она так отчаянно жаждет.")
 
-		saynn("[say=tavi]H-hey..[/say]")
+		saynn("[say=tavi]Эй...[/say]")
 
-		saynn("A mixture of confusion and frustration fills Tavi's eyes as she feels the pleasure slipping away. Her body arches towards you, her paws begin reaching down to her crotch to finish what you have started.. but you catch her wrists and prevent that, causing the feline to start breaking down.")
+		saynn("В глазах Тави смешиваются замешательство и разочарование, когда она чувствует, как удовольствие ускользает. Её тело выгибается навстречу тебе, лапы тянутся к промежности, чтобы закончить начатое... но ты перехватываешь её запястья, не давая этого сделать, отчего кошечка начинает буквально ломаться.")
 
-		saynn("[say=tavi]No-o!.. I need to cum.. Please..[/say]")
+		saynn("[say=tavi]Не-е!.. Мне нужно кончить... Пожалуйста...[/say]")
 
-		saynn("But your touch is firm and your voice is cold. You force Tavi to endure her body cooling down, her desire.. going away.. unfulfilled..")
+		saynn("Но твои прикосновения тверды, а голос холоден. Ты заставляешь Тави терпеть, пока её тело остывает, а желание... угасает... оставаясь неутоленным...")
 
-		saynn("[say=pc]No. You're not allowed to cum, Tavi.[/say]")
+		saynn("[say=pc]Нет. Тебе нельзя кончать, Тави.[/say]")
 
-		saynn("Her body quivers with frustration. She is truly desperate.. But at least her heat seems to be slowly going away.. for now..")
+		saynn("Её тело дрожит от досады. Она в полном отчаянии... Но, по крайней мере, её течка, кажется, медленно проходит... пока что...")
 
-		saynn("[say=tavi]So mean..[/say]")
+		saynn("[say=tavi]Какой же ты злюка...[/say]")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 	if(state == "do_fuck1"):
 		playAnimation(StageScene.SexStanding, "fast", {npc="tavi", pc="pc", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("Without a word, you step forward, quickly closing the distance between you and Tavi before grabbing and pressing her against one of the cell's walls. It only takes a second for you to expose your {pc.penis} and align it with her pussy before thrusting inside!")
+		saynn("Без лишних слов ты делаешь шаг вперед, быстро сокращая дистанцию, хватаешь её и прижимаешь к одной из стен камеры. Тебе требуется всего секунда, чтобы выставить свой {pc.penis} напротив её киски, прежде чем войти в неё одним мощным толчком!")
 
-		saynn("Tavi gasps at the sudden penetration but her wet pussy eagerly accepts you and your cock, allowing you to slide inside her quite easily, already picking up the pace.")
+		saynn("Тави ахает от внезапного проникновения, но её влажная киска жадно принимает тебя и твой член, позволяя тебе довольно легко скользить внутрь, уже ускоряя темп.")
 
-		saynn("[say=tavi]Ngh.. F-fuck..[/say]")
+		saynn("[say=tavi]Нгх.. Б-блядь..[/say]")
 
-		saynn("The horny feline holds onto the cold wall and moans as you take her rough, Tavi's back is pressed against your chest, allowing you to growl softly into her ear.")
+		saynn("Разгоряченная кошка вцепляется в холодную стену и стонет, пока ты берешь её грубо; спина Тави прижата к твоей груди, что позволяет тебе тихо рычать ей прямо в ухо.")
 
-		saynn("She anticipates each thrust with the motion of her body, meeting your cock before your hips slap against her fluffy butt. Both of you quickly approach your peaks..")
+		saynn("Она предвосхищает каждый толчок движениями своего тела, навстречу твоему члену еще до того, как твои бедра хлопают по её пушистой попке. Вы оба быстро приближаетесь к пику...")
 
 		if (getModule("TaviModule").hasWombMark()):
-			saynn("[say=tavi]Breed me!.. Please!.. Make my mark shine brightly![/say]")
+			saynn("[say=tavi]Оплодотвори меня!.. Пожалуйста!.. Пусть моя метка сияет ярко![/say]")
 
 		else:
-			saynn("[say=tavi]I can't get pregnant.. Please..[/say]")
+			saynn("[say=tavi]Я не могу забеременеть.. Пожалуйста..[/say]")
 
-		addButton("Inside", "Cum inside Tavi", "do_fuck1_inside")
-		addButton("Pull out", "You'd rather not", "do_fuck1_pullout")
+		addButton("Внутри", "Кончить в Тави", "do_fuck1_inside")
+		addButton("Вытащить", "Ты бы предпочел этого не делать", "do_fuck1_pullout")
 	if(state == "do_fuck1_inside"):
 		playAnimation(StageScene.SexStanding, "inside", {npc="tavi", pc="pc", pcCum=true, npcCum=true, npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("With a final thrust, you ram your {pc.penis} as deep as that pussy allows before the raw passion takes over. Your member throbs inside Tavi, filling her with your hot sticky {pc.cum} while is busy moaning and gasping, her body trembling with pleasure as she welcomes the flood of your seed.")
+		saynn("Последним мощным толчком ты вбиваешь свой {pc.penis} так глубоко, как только позволяет эта киска, прежде чем первобытная страсть берет верх. Твой член пульсирует внутри Тави, наполняя её горячей липкой {pc.cum}, пока она занята стонами и вскриками, а её тело дрожит от удовольствия, принимая поток твоего семени.")
 
-		saynn("[say=tavi]T-thank you..[/say]")
+		saynn("[say=tavi]С-спасибо..[/say]")
 
-		saynn("As your orgasms begin to fade, so does Tavi's heat. As you pull out, you are presented with a great sight: Tavi holding onto the wall, her stuffed used pussy leaking your seed.")
+		saynn("Когда твоя оргазма начинает утихать, так же спадает и жар Тави. Когда ты выходишь, перед тобой предстает великолепное зрелище: Тави, прижимающаяся к стене, её набитая и использованная киска истекает твоим семенем.")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 		if (getModule("TaviModule").getSkillScore("taviSkillWatersports") > 0):
-			addButton("Piss inside", "It's so warm. Might as well", "do_fuck_piss")
+			addButton("Поссать внутрь", "Так тепло. Можно и...", "do_fuck_piss")
 	if(state == "do_fuck_piss"):
-		saynn("After that orgasm you get a strong desire to pee. And so a naughty idea shows up in your mind. An idea that you decide to act upon.")
+		saynn("После этого оргазма тебя охватывает сильное желание пописать. И тут в голове рождается шальная мысль. Мысль, которую ты решаешь воплотить в жизнь.")
 
-		saynn("You use this moment when you're not fully soft yet and slide your cock inside Tavi's pussy once more. A soft gasp leaves her lips.")
+		saynn("Пользуясь моментом, пока член еще не совсем обмяк, ты снова входишь в киску Тави. С её губ срывается тихий вздох.")
 
-		saynn("[say=tavi]Again?..[/say]")
+		saynn("[say=tavi]Опять?..[/say]")
 
-		saynn("[say=pc]No. The bathroom is too far.[/say]")
+		saynn("[say=pc]Нет. Ванная слишком далеко.[/say]")
 
-		saynn("[say=tavi]Hah?..[/say]")
+		saynn("[say=tavi]Ха?..[/say]")
 
-		saynn("Second later Tavi understands what you mean as your cock releases a stream of warm liquid deep into her, making it so your piss mixes with your seed inside Tavi's womb.")
+		saynn("Секунду спустя Тави понимает, что ты имеешь в виду: твой член выпускает струю теплой жидкости глубоко в неё, так что твоя моча смешивается с семенем прямо в её утробе.")
 
-		saynn("When that happens, Tavi gasps louder and puts one of her paws on her belly, feeling warmth radiating from it.")
+		saynn("Когда это происходит, Тави вскрикивает громче и прижимает одну лапку к животу, чувствуя исходящее оттуда тепло.")
 
-		saynn("[say=tavi]Oh fuck..[/say]")
+		saynn("[say=tavi]Ох, блядь..[/say]")
 
-		saynn("Tavi pants softly as you empty your bladder inside her. Some of it already leaks back but most stays inside, your {pc.cum} helping to keep it contained.")
+		saynn("Тави тихо дышит, пока ты опорожняешь мочевой пузырь внутри неё. Часть жидкости уже вытекает обратно, но большая часть остается внутри, а твой {pc.cum} помогает удержать её.")
 
-		saynn("[say=pc]Good little piss-slut.[/say]")
+		saynn("[say=pc]Хорошая маленькая писсуарша.[/say]")
 
-		saynn("[say=tavi]Huff..[/say]")
+		saynn("[say=tavi]Фух..[/say]")
 
-		saynn("That's one way to solve heat.")
+		saynn("Это тоже способ справиться с течкой.")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 	if(state == "do_fuck1_pullout"):
 		playAnimation(StageScene.SexStanding, "tease", {npc="tavi", pc="pc", pcCum=true, npcCum=true, npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("You fight the urge to breed Tavi and pull your member out as soon as you feel the orgasmic waves take over. Your {pc.penis} is throbbing and shooting {pc.cum} onto the floor while Tavi is busy shivering ever so slightly, her neat pussy wasn't stuffed this time.")
+		saynn("Ты борешься с желанием трахнуть Тави и вытаскиваешь свой член, как только чувствуешь, что накрывают волны оргазма. Твой {pc.penis} пульсирует, извергая {pc.cum} прямо на пол, пока Тави слегка дрожит — на этот раз её аккуратная киска не была заполнена.")
 
-		saynn("[say=tavi]H-huff..[/say]")
+		saynn("[say=tavi]Хх-ах...[/say]")
 
-		saynn("As your orgasm begins to fade, so does Tavi's heat. Heat that got unsatisfied.")
+		saynn("По мере того как твой оргазм угасает, угасает и течка Тави. Течка, которая осталась неудовлетворенной.")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 	if(state == "do_fuck1_strapon"):
 		playAnimation(StageScene.SexStanding, "fast", {npc="tavi", pc="pc", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("Without a word, you step forward, quickly closing the distance between you and Tavi before grabbing and pressing her against one of the cell's walls. It only takes a few seconds for you to secure your strapon and align it with her pussy before thrusting inside!")
+		saynn("Без лишних слов ты делаешь шаг вперед, быстро сокращая дистанцию, хватаешь её и прижимаешь к одной из стен камеры. Тебе требуется всего пара секунд, чтобы закрепить страпон и приставить его к её киске, прежде чем войти внутрь мощным толчком!")
 
-		saynn("Tavi gasps at the sudden penetration but her wet pussy eagerly accepts you and your rubber dildo, allowing you to slide inside her quite easily, already picking up the pace.")
+		saynn("Тави ахает от внезапного проникновения, но её влажная киска жадно принимает тебя и твой резиновый фаллос, позволяя тебе довольно легко скользить внутри, уже наращивая темп.")
 
-		saynn("[say=tavi]Ngh.. F-fuck..[/say]")
+		saynn("[say=tavi]Нгх.. Б-блядь..[/say]")
 
-		saynn("The horny feline holds onto the cold wall and moans as you take her rough, Tavi's back is pressed against your chest, allowing you to growl softly into her ear.")
+		saynn("Разгоряченная кошка вцепляется в холодную стену и стонет, пока ты берешь её грубо; спина Тави прижата к твоей груди, что позволяет тебе тихо рычать ей прямо в ухо.")
 
-		saynn("She anticipates each thrust with the motion of her body, meeting the rubber cock before your hips slap against her fluffy butt. She approaches her peak quite quickly..")
+		saynn("Она предвосхищает каждый толчок движениями своего тела, навстречу резиновому члену, прежде чем твои бёдра с хлопком ударяются о её пушистую задницу. Она довольно быстро приближается к своему пику...")
 
 		if (getModule("TaviModule").hasWombMark()):
-			saynn("[say=tavi]Breed me!.. Please!.. Make my mark shine brightly![/say]")
+			saynn("[say=tavi]Оплодотвори меня!.. Пожалуйста!.. Пусть моя метка сияет ярко![/say]")
 
 		else:
-			saynn("[say=tavi]I can't get pregnant.. Please..[/say]")
+			saynn("[say=tavi]Я не могу забеременеть.. Пожалуйста..[/say]")
 
-		saynn("You only have a toy so you can't really do it either way.. But Tavi still begs you.")
+		saynn("У тебя всего лишь игрушка, так что по-настоящему ты ничего не можешь сделать... Но Тави всё равно умоляет тебя.")
 
-		addButton("Knot", "Ram the whole strapon inside Tavi", "do_fuck1_knot_strapon")
-		addButton("Pull out", "You'd rather not", "do_fuck1_pullout_strapon")
+		addButton("Узел", "Засадить страпон в Тави до самого упора", "do_fuck1_knot_strapon")
+		addButton("Вытащить", "Ты бы предпочел этого не делать", "do_fuck1_pullout_strapon")
 	if(state == "do_fuck1_knot_strapon"):
 		playAnimation(StageScene.SexStanding, "inside", {npc="tavi", pc="pc", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("With a final thrust, you ram the canine cock strapon as deep as that pussy allows before the knot suddenly slips in and the raw passion takes over. Your strapon throbs inside Tavi, filling her with your hot sticky cumlube while is busy moaning and gasping, her body trembling with pleasure as she welcomes the flood of cum-like substance.")
+		saynn("Последним мощным толчком ты вбиваешь собачий страпон так глубоко, как только позволяет её киска, прежде чем узел внезапно входит внутрь, и первобытная страсть берет верх. Твой страпон пульсирует внутри Тави, наполняя её горячей липкой смазкой-спермой, пока она стонет и задыхается, а её тело дрожит от удовольствия, принимая этот поток похожей на сперму субстанции.")
 
-		saynn("[say=tavi]T-thank you..[/say]")
+		saynn("[say=tavi]С-спасибо..[/say]")
 
-		saynn("As your orgasms begin to fade, so does Tavi's heat. As you pull out, you are presented with a great sight: Tavi holding onto the wall, her stuffed used pussy leaking seed.")
+		saynn("Когда твои оргазмы начинают утихать, так же спадает и жажда Тави. Когда ты выходишь, перед тобой предстает великолепное зрелище: Тави, вцепившаяся в стену, а её набитая использованная киска сочит твою сперму.")
 
-		addButton("Continue", "See what happens next", "start_talk_removestrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk_removestrapon")
 	if(state == "do_fuck1_pullout_strapon"):
 		playAnimation(StageScene.SexStanding, "tease", {npc="tavi", pc="pc", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("You fight the urge to knot Tavi and pull the toy out as soon as you feel the orgasmic waves take over her body. The feline squirms and moans as her pussy is trying to grasp what's not there anymore.")
+		saynn("Ты борешься с желанием завязаться узлом в Тави и вытаскиваешь игрушку, как только чувствуешь, что волны оргазма захлестывают её тело. Кошка извивается и стонет, пока её киска пытается ухватить то, чего там больше нет.")
 
-		saynn("[say=tavi]H-huff..[/say]")
+		saynn("[say=tavi]Хх-ах...[/say]")
 
-		saynn("That satisfied her heat, even if not completely.")
+		saynn("Это утолило её жажду, пусть и не полностью.")
 
-		addButton("Continue", "See what happens next", "start_talk_removestrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk_removestrapon")
 	if(state == "do_fuck2"):
 		playAnimation(StageScene.SexMissionary, "fast", {npc="tavi", pc="pc", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("Without hesitation, you pull Tavi towards her bed and throw her on it before pinning her frame with your own body, positioning yourself between her legs and already aligning your {pc.penis} with her needy pussy hole.")
+		saynn("Без колебаний ты тянешь Тави к её кровати и швыряешь её на матрас, прежде чем придавить её тело своим, устраиваясь между её ног и уже прицеливая свой {pc.penis} к её жаждущему отверстию киски.")
 
-		saynn("The feline gasps and arches her back as you enter her in one swift motion, your member pulsing with desire inside her.")
+		saynn("Кошка ахает и выгибает спину, когда ты входишь в неё одним резким движением, и твой член пульсирует от желания внутри неё.")
 
-		saynn("[say=tavi]Ah.. Yes!..[/say]")
+		saynn("[say=tavi]Ах.. Да!..[/say]")
 
-		saynn("Tavi's moans fill the cell as you set a passionate rhythm, thrusting into that wet pussy, stretching her walls and pounding away at the most sensitive spots. All the while your hands hold Tavi's wrist pressed into the bed, your mouth growling softly into her ear before biting into her neck.")
+		saynn("Стоны Тави наполняют камеру, пока ты задаешь страстный ритм, вколачиваясь в эту мокрую киску, растягивая её стенки и долбя по самым чувствительным точкам. При этом твои руки прижимают запястья Тави к кровати, а ты тихо рычишь ей в ухо, прежде чем впиться зубами в её шею.")
 
-		saynn("Soon, both of you begin to reach your climaxes..")
+		saynn("Вскоре вы оба начинаете приближаться к кульминации...")
 
 		if (getModule("TaviModule").hasWombMark()):
-			saynn("[say=tavi]Cum inside!.. Please!.. Make my mark shine brightly![/say]")
+			saynn("[say=tavi]Кончай внутрь!.. Пожалуйста!.. Пусть моя метка сияет ярко![/say]")
 
 		else:
-			saynn("[say=tavi]I can't get pregnant.. You can cum inside..[/say]")
+			saynn("[say=tavi]Я не могу забеременеть.. Можешь кончать внутрь..[/say]")
 
-		addButton("Cum inside", "Breed Tavi", "do_fuck2_inside")
-		addButton("Pull out", "You'd rather not", "do_fuck2_pullout")
+		addButton("Кончить внутрь", "Оплодотворить Тави", "do_fuck2_inside")
+		addButton("Вытащить", "Ты бы предпочел этого не делать", "do_fuck2_pullout")
 	if(state == "do_fuck2_inside"):
 		playAnimation(StageScene.SexMissionary, "inside", {npc="tavi", pc="pc", pcCum=true, npcCum=true, npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("You grunt as your body tenses, your cock throbbing inside Tavi from the intense wave of pleasure building within you. Tavi gasps as you pin her to the bed harder while your sticky {pc.cum} floods Tavi's womb, painting her clenching inner walls.")
+		saynn("Ты кряхтишь, когда всё твоё тело напрягается, а член внутри Тави пульсирует от нарастающей волны неистового удовольствия. Тави ахает, когда ты сильнее прижимаешь её к кровати, и твоя липкая {pc.cum} заливает её утробу, покрывая её судорожно сжимающиеся внутренние стенки.")
 
-		saynn("Your orgasm sends off a chain reaction, causing Tavi's body to start trembling and squirming as she welcomes your seed with an intoxicating eagerness, her insides pulsating around you.")
+		saynn("Твой оргазм запускает цепную реакцию: тело Тави начинает дрожать и извиваться, пока она с пьянящим нетерпением принимает твоё семя, а её нутро пульсирует вокруг тебя.")
 
-		saynn("[say=tavi]T-thank you..[/say]")
+		saynn("[say=tavi]С-спасибо..[/say]")
 
-		saynn("As your orgasms begin to fade, so does Tavi's heat. As you pull out, you are presented with a great sight: Tavi is on her back, her legs spread, her stuffed used pussy leaking your {pc.cum}.")
+		saynn("Когда твои оргазмы начинают затихать, угасает и жажда Тави. Когда ты выходишь, перед тобой предстает великолепное зрелище: Тави лежит на спине, широко разведя ноги, а её набитая использованная киска течет твоей {pc.cum}.")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 		if (getModule("TaviModule").getSkillScore("taviSkillWatersports") > 0):
-			addButton("Piss inside", "It's so warm. Might as well", "do_fuck_piss")
+			addButton("Поссать внутрь", "Так тепло. Можно и...", "do_fuck_piss")
 	if(state == "do_fuck2_pullout"):
 		playAnimation(StageScene.SexMissionary, "tease", {npc="tavi", pc="pc", pcCum=true, npcCum=true, npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("You grunt as your body tenses, your cock throbbing inside Tavi from the intense wave of pleasure building within you. Sensing the impending climax, you pull out just in time, strings of your seed begin landing on Tavi's belly and crotch, making the fur look messy.")
+		saynn("Ты кряхтишь, когда всё твоё тело напрягается, а член внутри Тави пульсирует от нарастающей волны удовольствия. Почувствовав приближение финала, ты вовремя выходишь, и струи твоего семени начинают падать на живот и промежность Тави, из-за чего её мех выглядит грязным.")
 
-		saynn("Tavi huffs as she feels your warm {pc.cum}, her body shivering and squirming. She got denied what she wanted and so her body begins to cool down, losing the heated state.")
+		saynn("Тави тяжело дышит, чувствуя твою теплую {pc.cum}, её тело дрожит и извивается. Она не получила того, чего хотела, и поэтому её тело начинает остывать, теряя состояние возбуждения.")
 
-		saynn("[say=tavi]Huff..[/say]")
+		saynn("[say=tavi]Фух..[/say]")
 
-		saynn("That satisfied her desires, even if not completely.")
+		saynn("Это удовлетворило её желания, пусть и не полностью.")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 	if(state == "do_fuck2_strapon"):
 		playAnimation(StageScene.SexMissionary, "fast", {npc="tavi", pc="pc", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("Without hesitation, you pull Tavi towards her bed and throw her on it before wearing a strapon harness and pinning her frame with your own body, positioning yourself between her legs and already aligning your temporary cock with her needy pussy hole.")
+		saynn("Без колебаний ты тянешь Тави к её кровати и швыряешь её на неё, после чего надеваешь страпон и придавливаешь её тело своим, устраиваясь между её ног и уже приставляя свой временный член к её жаждущему соску.")
 
-		saynn("The feline gasps and arches her back as you enter her in one swift motion, her inner walls try to stop your strapon but you use force to push through her resistance.")
+		saynn("Кошка ахает и выгибает спину, когда ты одним резким движением входишь в неё; её внутренние стенки пытаются остановить страпон, но ты силой преодолеваешь её сопротивление.")
 
-		saynn("[say=tavi]Ah.. Yes!..[/say]")
+		saynn("[say=tavi]Ах.. Да!..[/say]")
 
-		saynn("Tavi's moans fill the cell as you set a passionate rhythm, thrusting into that wet pussy, stretching her walls and pounding away at the most sensitive spots. All the while your hands hold Tavi's wrist pressed into the bed, your mouth growling softly into her ear before biting into her neck.")
+		saynn("Стоны Тави наполняют камеру, пока ты задаешь страстный ритм, вколачиваясь в эту мокрую киску, растягивая её стенки и долбя по самым чувствительным точкам. При этом твои руки прижимают запястья Тави к кровати, а ты тихо рычишь ей в ухо, прежде чем впиться зубами в её шею.")
 
-		saynn("Soon, Tavi reaches her climax..")
+		saynn("Вскоре Тави достигает оргазма...")
 
-		saynn("[say=tavi]Knot me.. Stuff my pussy full![/say]")
+		saynn("[say=tavi]Завяжи меня.. Набей мою киску до отказа![/say]")
 
-		addButton("Knot Tavi", "Do what Tavi wants", "do_fuck2_knot_strapon")
-		addButton("Deny Tavi", "You'd rather not", "do_fuck2_pullout_strapon")
+		addButton("Завязать Тави", "Сделать так, как хочет Тави", "do_fuck2_knot_strapon")
+		addButton("Откажи Тави", "Ты бы предпочел этого не делать", "do_fuck2_pullout_strapon")
 	if(state == "do_fuck2_knot_strapon"):
 		playAnimation(StageScene.SexMissionary, "inside", {npc="tavi", pc="pc", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("You grunt and pin her to the bed harder while using all of your strength to put pressure on Tavi's pussy.. until the fat rubber orb slips inside! The strapon starts throbbing inside the feline from the immense amount of stress that her inner walls put on it. Tavi gasps as hot sticky cum-like substance floods Tavi's womb, painting her inner walls white.")
+		saynn("Ты кряхтишь и прижимаешь её к кровати ещё сильнее, вкладывая все силы, чтобы продавить её пизду... пока жирный резиновый шар не проскальзывает внутрь! Страпон начинает пульсировать внутри кошки от колоссального давления её стенок. Тави ахает, когда горячая липкая субстанция, похожая на сперму, заливает её матку, окрашивая внутренние стенки в белый цвет.")
 
-		saynn("This sends off a chain reaction that causes Tavi's body to start trembling and squirming as she welcomes your seed with an intoxicating eagerness, her insides pulsating around the rubber cock.")
+		saynn("Это запускает цепную реакцию: тело Тави начинает дрожать и извиваться, когда она с пьянящим нетерпением принимает твоё семя, а её нутро пульсирует вокруг резинового члена.")
 
-		saynn("[say=tavi]T-thank you..[/say]")
+		saynn("[say=tavi]С-спасибо..[/say]")
 
-		saynn("As Tavi's orgasm begins to fade, so does her heat. As you pull out, you are presented with a great sight: Tavi is on her back, her legs spread, her stuffed used pussy leaking your {pc.cum}.")
+		saynn("Когда оргазм Тави начинает угасать, вместе с ним проходит и её течка. Когда ты вынимаешь страпон, перед тобой открывается великолепное зрелище: Тави лежит на спине, широко разведя ноги, а её набитая, использованная киска сочится твоим {pc.cum}.")
 
-		addButton("Continue", "See what happens next", "start_talk_removestrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk_removestrapon")
 	if(state == "do_fuck2_pullout_strapon"):
 		playAnimation(StageScene.SexMissionary, "tease", {npc="tavi", pc="pc", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("Instead of trying to knot Tavi with that toy, you just pull it out, denying Tavi's kinky request and causing her to start squirming and resisting. You keep her pinned and let her body start cooling down, losing the heated state.")
+		saynn("Вместо того чтобы пытаться «завязать» Тави этой игрушкой, ты просто вытаскиваешь её, отвергая её извращённую просьбу, отчего она начинает ерзать и сопротивляться. Ты удерживаешь её прижатой, позволяя телу остыть и выйти из состояния возбуждения.")
 
-		saynn("[say=tavi]Huff..[/say]")
+		saynn("[say=tavi]Фух..[/say]")
 
-		saynn("That satisfied her desires, even if not completely.")
+		saynn("Это удовлетворило её желания, пусть и не полностью.")
 
-		addButton("Continue", "See what happens next", "start_talk_removestrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk_removestrapon")
 	if(state == "do_fuck3"):
 		playAnimation(StageScene.SexAllFours, "fast", {npc="tavi", pc="pc", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("With a burst of primal energy, you seize Tavi by the waist and throw her onto the bed. She gasps as you position her on all fours, her eyes shine with an alluring mix of excitement and desire.")
+		saynn("С приливом первобытной энергии ты хватаешь Тави за талию и швыряешь её на кровать. Она ахает, когда ты ставишь её на четвереньки; её глаза сияют манящей смесью азарта и желания.")
 
-		saynn("In a matter of seconds, you position yourself behind her, your {pc.cock} quickly gets aligned with her inviting pussy before spreading her slick folds apart and entering Tavi, making her arch her back and offer all of her body to you.")
+		saynn("В считанные секунды ты оказываешься позади неё; твой {pc.cock} быстро нацеливается на её манящую киску, прежде чем ты раздвигаешь её влажные складки и входишь в Тави, заставляя её выгнуться и подставить тебе всё своё тело.")
 
-		saynn("[say=tavi]Yes, use your pet!.. Ah..[/say]")
+		saynn("[say=tavi]Да, используй своего зверька!.. Ах..[/say]")
 
-		saynn("Tavi moans deeply as you start roughly fucking her, yanking on her tail before thrusting inside which amplifies each motion and makes your cock reach deeper.")
+		saynn("Тави глубоко стонет, когда ты начинаешь грубо трахать её, дергая за хвост перед каждым толчком, что усиливает каждое движение и позволяет твоему члену проникать всё глубже.")
 
-		saynn("Her green spots glow in the dimly lit room that is filled with the sounds of your hips slapping against Tavi's round butt. When you begin to nearing the edge, you tighten your grip on Tavi's hips and tail, your movements becoming more urgent and hers more desperate, her breath hitching as she begs.")
+		saynn("Её зеленые пятна светятся в полумраке комнаты, наполненной звуками шлепков твоих бедер о круглую задницу Тави. Когда ты приближаешься к краю, ты крепче сжимаешь её бедра и хвост; твои движения становятся всё более неистовыми, а её — отчаянными, её дыхание прерывается, когда она начинает умолять.")
 
 		if (getModule("TaviModule").hasWombMark()):
-			saynn("[say=tavi]Don't pull out, please!.. Please!.. Make my mark shine even brighter![/say]")
+			saynn("[say=tavi]Не вынимай, пожалуйста!.. Прошу!.. Сделай так, чтобы моя метка сияла еще ярче![/say]")
 
 		else:
-			saynn("[say=tavi]You don't have to pull out.. Please..[/say]")
+			saynn("[say=tavi]Тебе не обязательно вынимать.. Пожалуйста..[/say]")
 
-		addButton("Cum inside", "Breed Tavi", "do_fuck3_inside")
-		addButton("Pull out", "You'd rather not", "do_fuck3_pullout")
+		addButton("Кончить внутрь", "Оплодотворить Тави", "do_fuck3_inside")
+		addButton("Вытащить", "Ты бы предпочел этого не делать", "do_fuck3_pullout")
 	if(state == "do_fuck3_inside"):
 		playAnimation(StageScene.SexAllFours, "inside", {npc="tavi", pc="pc", pcCum=true, npcCum=true, npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("As Tavi's body reaches the peak, her body tenses, her walls clenching around your cock so much that you can no longer hold back. With a powerful thrust, you ram your {pc.penis} as deep as Tavi's pussy allows before cumming inside, waves of your seed flooding her womb.")
+		saynn("Когда тело Тави достигает пика, она напрягается, её стенки так сильно сжимают твой член, что ты больше не можешь сдерживаться. Мощным толчком ты вбиваешь свой {pc.penis} так глубоко, как только позволяет её киска, и кончаешь внутрь, заливая её матку волнами своей спермы.")
 
-		saynn("[say=tavi]Ah-h.. So much..[/say]")
+		saynn("[say=tavi]Ах-х.. Так много..[/say]")
 
-		saynn("The intense orgasm washes over both of you, Tavi's body continues to quiver and milk your member for all its {pc.cum}, moans continue to slip past her lips.")
+		saynn("Интенсивный оргазм накрывает вас обоих; тело Тави продолжает дрожать, доя твой член во всё его {pc.cum}, а с её губ продолжают срываться стоны.")
 
-		saynn("[say=tavi]T-thank you..[/say]")
+		saynn("[say=tavi]С-спасибо..[/say]")
 
-		saynn("As your orgasms begin to fade, so does Tavi's heat. As you pull out, you see Tavi on all fours, her stuffed used pussy leaking your {pc.cum}, dripping onto her thighs.")
+		saynn("Когда ваши оргазмы начинают угасать, так же проходит и жар Тави. Когда ты выходишь, ты видишь Тави на четвереньках: её набитая использованная киска сочится твоим {pc.cum}, который капает ей на бедра.")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 		if (getModule("TaviModule").getSkillScore("taviSkillWatersports") > 0):
-			addButton("Piss inside", "It's so warm. Might as well", "do_fuck_piss")
+			addButton("Поссать внутрь", "Так тепло. Можно и...", "do_fuck_piss")
 	if(state == "do_fuck3_pullout"):
 		playAnimation(StageScene.SexAllFours, "tease", {npc="tavi", pc="pc", pcCum=true, npcCum=true, npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("You grunt as your body tenses, your cock throbbing inside Tavi from the intense wave of pleasure building within you. Sensing the impending climax, you pull out just in time, your load leaves quite a mess on her bedsheets.")
+		saynn("Ты кряхтишь, когда всё твоё тело напрягается, а член внутри Тави пульсирует от нарастающей волны удовольствия. Почувствовав приближение оргазма, ты вовремя выходишь, и твоя конча щедро заливает её простыни.")
 
-		saynn("Tavi huffs, her body shivering and squirming from the orgasm. But she still got denied what she truly wanted and so her body begins to cool down, losing the heated state.")
+		saynn("Тави тяжело дышит, её тело дрожит и извивается от оргазма. Но она всё ещё не получила того, чего жаждала всем телом, и её жар постепенно начинает спадать.")
 
-		saynn("[say=tavi]Huff..[/say]")
+		saynn("[say=tavi]Фух..[/say]")
 
-		saynn("That satisfied her desires, even if not completely.")
+		saynn("Это удовлетворило её желания, пусть и не полностью.")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 	if(state == "do_fuck3_strapon"):
 		playAnimation(StageScene.SexAllFours, "fast", {npc="tavi", pc="pc", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("With a burst of primal energy, you seize Tavi by the waist and throw her onto the bed. She gasps as you position her on all fours, her eyes shine with an alluring mix of excitement and desire.")
+		saynn("С приливом первобытной энергии ты хватаешь Тави за талию и швыряешь её на кровать. Она ахает, когда ты ставишь её на четвереньки; её глаза сияют манящей смесью азарта и желания.")
 
-		saynn("In a matter of seconds, you position yourself behind her and secure a strapon around your waist that then quickly gets aligned with her inviting pussy before spreading her slick folds apart and entering Tavi, making her arch her back and offer all of her body to you.")
+		saynn("В считанные секунды ты устраиваешься позади неё и закрепляешь страпон на талии, быстро совмещая его с её манящей киской. Разведя её влажные складки, ты входишь в Тави, заставляя её выгнуться спиной и полностью отдаться тебе.")
 
-		saynn("[say=tavi]Yes, use your pet!.. Ah..[/say]")
+		saynn("[say=tavi]Да, используй своего зверька!.. Ах..[/say]")
 
-		saynn("Tavi moans deeply as you start roughly fucking her, yanking on her tail before thrusting inside which amplifies each motion and makes the strapon reach deeper.")
+		saynn("Тави глубоко стонет, когда ты начинаешь грубо трахать её, дергая за хвост перед каждым толчком — это усиливает каждое движение и позволяет страпону проникать ещё глубже.")
 
-		saynn("Her green spots glow in the dimly lit room that is filled with the sounds of your hips slapping against Tavi's round butt. When you feel her nearing the edge, you tighten your grip on Tavi's hips and tail, your movements becoming more quick and hers more desperate, her breath hitching as she begs.")
+		saynn("Её зелёные пятна светятся в полумраке комнаты, наполненной звуками шлепков твоих бёдер о её округлую задницу. Когда ты чувствуешь, что она на грани, ты крепче сжимаешь её бёдра и хвост; твои движения становятся быстрее, её — отчаяннее, а дыхание сбивается от мольбы.")
 
-		saynn("[say=tavi]Harder.. Please..[/say]")
+		saynn("[say=tavi]Сильнее.. Пожалуйста..[/say]")
 
-		addButton("Knot Tavi", "Do what she wants you to do", "do_fuck3_inside_strapon")
-		addButton("Pull out", "You'd rather not knot Tavi", "do_fuck3_pullout_strapon")
+		addButton("Завязать Тави", "Сделать то, что она хочет", "do_fuck3_inside_strapon")
+		addButton("Вытащить", "Ты бы предпочёл не делать узловую пробку в Тави", "do_fuck3_pullout_strapon")
 	if(state == "do_fuck3_inside_strapon"):
 		playAnimation(StageScene.SexAllFours, "inside", {npc="tavi", pc="pc", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("As Tavi's body reaches the peak, her body tenses, her walls clenching around the strapon so much that you can no longer hold back. With a powerful thrust, you ram the rubber cock as deep as Tavi's pussy allows before.. the knot slips inside too, stretching that pussy extremely wide and then stuffing it full of thick cumlube.")
+		saynn("Когда тело Тави достигает пика, она напрягается, а её стенки так сильно сжимают страпон, что ты больше не можешь сдерживаться. Мощным толчком ты вбиваешь резиновую плоть так глубоко, насколько позволяет её киска, прежде чем... узел тоже проскальзывает внутрь, растягивая её до предела и наполняя всё пространство густой смазкой-спермой.")
 
-		saynn("[say=tavi]Ah-h.. Yes!..[/say]")
+		saynn("[say=tavi]Ах-х.. Да!..[/say]")
 
-		saynn("Tavi's body continues to quiver and try to milk the strapon, moans continue to slip past her lips.")
+		saynn("Тело Тави продолжает дрожать, пытаясь «доить» страпон, а с её губ не перестают срываться стоны.")
 
-		saynn("[say=tavi]T-thank you..[/say]")
+		saynn("[say=tavi]С-спасибо..[/say]")
 
-		saynn("As Tavi's orgasm begins to fade, so does her heat. As you pull out, you see Tavi on all fours, her stuffed used pussy leaking, dripping onto her thighs.")
+		saynn("По мере того как оргазм Тави начинает угасать, спадает и её жар. Когда ты вынимаешь игрушку, ты видишь Тави на четвереньках: её набитая, использованная киска сочится, и капли стекают по её бёдрам.")
 
-		addButton("Continue", "See what happens next", "start_talk_removestrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk_removestrapon")
 	if(state == "do_fuck3_pullout_strapon"):
 		playAnimation(StageScene.SexAllFours, "tease", {npc="tavi", pc="pc", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("Instead of trying to knot Tavi with that toy, you just pull it out, denying Tavi's kinky request and causing her to start squirming and resisting. You keep still on all fours and let her body start cooling down, losing the heated state.")
+		saynn("Вместо того чтобы попытаться «завязать» Тави этой игрушкой, ты просто вытаскиваешь её, отвергая её извращенную просьбу, отчего она начинает ерзать и сопротивляться. Ты остаешься неподвижной на четвереньках, позволяя её телу остыть и выйти из состояния возбуждения.")
 
-		saynn("[say=tavi]Huff..[/say]")
+		saynn("[say=tavi]Фух..[/say]")
 
-		saynn("That satisfied her desires, even if not completely.")
+		saynn("Это удовлетворило её желания, пусть и не полностью.")
 
-		addButton("Continue", "See what happens next", "start_talk_removestrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk_removestrapon")
 	if(state == "do_trib"):
 		playAnimation(StageScene.SexTribadism, "sex", {npc="tavi", pc="pc", bodyState={naked=true,hard=true}, npcBodyState={naked=true}})
-		saynn("Without much hesitation, you grab Tavi's hand and bring her to the bed. Then, after a gentle push, naked Tavi ends up on it, her heart probably pounding hard already.")
+		saynn("Без лишних колебаний ты берешь Тави за руку и ведешь к кровати. Затем, после легкого толчка, голая Тави оказывается на постели, и её сердце, должно быть, уже бешено колотится.")
 
-		saynn("[say=pc]Let me do everything..[/say]")
+		saynn("[say=pc]Позволь мне всё сделать..[/say]")
 
-		saynn("You join the feline, positioning yourself on the opposite side of the bed, your legs finding their place between and around Tavi's, your wet pussies kissing each other.")
+		saynn("Ты присоединяешься к кошечке, устраиваясь на противоположной стороне кровати; твои ноги находят место между и вокруг ног Тави, а ваши влажные киски соприкасаются друг с другом.")
 
-		saynn("[say=tavi]Ah..[/say]")
+		saynn("[say=tavi]Ах...[/say]")
 
-		saynn("Soon, you begin to move your body, grinding your crotch against Tavi's with passion that mirrors the intensity of Tavi's heat. The room fills with cute moans.. and also the wet sounds your slits rubbing against each other.")
+		saynn("Вскоре ты начинаешь двигаться, с пылом, зеркально отражающим интенсивность её жара, втираясь промежностью в Тави. Комната наполняется милыми стонами... а также влажными звуками трения ваших щелей друг о друга.")
 
-		saynn("You can feel Tavi's body squirming with need, the heat between her legs becoming more intense the more you grind your sex with hers, exchanging pussy fluids. Tavi tries to match your motions but you pick up the pace, causing the feline to submit and moan loudly.")
+		saynn("Ты чувствуешь, как тело Тави извивается от вожделения; жар между её ног становится всё сильнее по мере того, как вы втираетесь друг в друга, обмениваясь соками кисок. Тави пытается подстроиться под твои движения, но ты ускоряешься, заставляя кошечку подчиниться и громко застонать.")
 
-		saynn("[say=tavi]Please.. I'm so close..[/say]")
+		saynn("[say=tavi]Пожалуйста.. я уже почти..[/say]")
 
-		addButton("Faster", "Make Tavi cum from this", "do_trib_cum")
-		addButton("Deny Tavi", "Deny the pleasure of Tavi's orgasm", "do_trib_deny")
+		addButton("Быстрее", "Довести Тави до оргазма", "do_trib_cum")
+		addButton("Откажи Тави", "Лишить Тави наслаждения от оргазма", "do_trib_deny")
 	if(state == "do_trib_cum"):
 		playAnimation(StageScene.SexTribadism, "fast", {npc="tavi", pc="pc", pcCum=true, npcCum=true, bodyState={naked=true,hard=true}, npcBodyState={naked=true}})
-		saynn("You decide not to stop and double your efforts instead, grabbing Tavi's paw and picking up the pace, your motions smooth even if a little rough.")
+		saynn("Ты решаешь не останавливаться, а, напротив, удваиваешь усилия: хватаешь Тави за лапку и прибавляешь темп, двигаясь плавно, хоть и немного грубо.")
 
-		saynn("[say=tavi]I'm gonna..[/say]")
+		saynn("[say=tavi]Сейчас будет..[/say]")
 
-		saynn("With a passionate noise of love, Tavi's body tenses as a powerful orgasm engulfs her. You continue to rub pussies with her, prolonging Tavi's pleasure and then causing your own climax, throwing your head back and moaning as your sexes pulsate against each other.")
+		saynn("С пылким стоном любви тело Тави напрягается, когда её накрывает мощнейший оргазм. Ты продолжаешь тереться своей киской о её, продлевая её удовольствие, а затем и сам достигаешь пика, откидывая голову назад и стоная, пока ваши члены пульсируют друг в друге.")
 
-		saynn("[say=tavi]Ah!..[/say]")
+		saynn("[say=tavi]Ах!..[/say]")
 
-		saynn("Her breath is deep and quick. Even after both of you pass your peaks, Tavi's body is still buzzing with the aftershocks. You embrace each other and just rest.")
+		saynn("Её дыхание глубокое и прерывистое. Даже когда вы оба прошли через пик, тело Тави всё ещё дрожит от отголосков оргазма. Вы обнимаете друг друга и просто отдыхаете.")
 
-		saynn("[say=tavi]Thank you..[/say]")
+		saynn("[say=tavi]Спасибо...[/say]")
 
-		saynn("Seems Tavi's heat was satisfied for today.")
+		saynn("Похоже, сегодня жара Тави удовлетворена.")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 	if(state == "do_trib_deny"):
 		playAnimation(StageScene.SexTribadism, "tease", {npc="tavi", pc="pc", bodyState={naked=true,hard=true}, npcBodyState={naked=true}})
-		saynn("At the last possible second you suddenly just.. stop moving your hips, denying Tavi her pleasure.")
+		saynn("В самый последний момент ты внезапно просто... замираешь, лишая Тави желанного финала.")
 
-		saynn("[say=tavi]H-hey.. No..[/say]")
+		saynn("[say=tavi]О-ох.. Нет..[/say]")
 
-		saynn("She tries to make herself cum by grinding your crotch but you actively resist that, making Tavi more and more desperate, her noises incredibly cute.")
+		saynn("Она пытается довести себя до оргазма, трудясь о твою промежность, но ты активно сопротивляешься, заставляя Тави впадать в еще большее отчаяние; её звуки невероятно милы.")
 
-		saynn("[say=tavi]I wanna cum so mu-u-uch..[/say]")
+		saynn("[say=tavi]Я так хочу кончить.. о-о-ох..[/say]")
 
-		saynn("But you just shake your head. When she tries to use her paws to help, you catch them and hold them firmly. All the while Tavi's heat slowly goes away, unsatisfied..")
+		saynn("Но ты лишь качаешь головой. Когда она пытается помочь лапками, ты перехватываешь их и крепко держишь. Тем временем её возбуждение медленно угасает, так и не достигнув пика..")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 	if(state == "do_lick"):
 		playAnimation(StageScene.SexOral, "lick", {pc="tavi", npc="pc", bodyState={naked=true}})
-		saynn("Might as well use your tongue to satisfy Tavi. As you kneel before her, that arousing scent of her pussy already makes you eager to taste her.")
+		saynn("С таким же успехом можно использовать язык, чтобы удовлетворить Тави. Когда ты опускаешься перед ней на колени, один лишь возбуждающий запах её киски заставляет тебя жаждать вкусить её.")
 
-		saynn("[say=pc]Stand still.[/say]")
+		saynn("[say=pc]Не двигайся.[/say]")
 
-		saynn("Even though you are the one on your knees here, your authoritative voice causes Tavi to submit. With a nod, she spreads her legs slightly for you and bites her lip, your breath causing her to shiver.")
+		saynn("Несмотря на то, что здесь на коленях стоишь ты, твой властный голос заставляет Тави подчиниться. Кивнув, она слегка разводит ноги для тебя и прикусывает губу, вздрагивая от твоего дыхания.")
 
-		saynn("You proceed to work, your hands holding onto Tavi's legs while your tongue is exploring her sensitive folds, catching her juices while the feline is moaning softly.")
+		saynn("Ты принимаешься за дело: твои руки сжимают ноги Тави, пока язык исследует её чувствительные складки, слизывая соки, пока кошечка тихо стонет.")
 
-		saynn("[say=tavi]Feels so nice..[/say]")
+		saynn("[say=tavi]Так приятно..[/say]")
 
-		saynn("Your skilled tongue moves on to playing with the clit while your lips are pressed against her folds. Tavi can't help but to grab your head as her breath hitches, her desire growing.")
+		saynn("Твой умелый язык переходит к ласкам клитора, пока губы прижаты к её складкам. Тави невольно хватает тебя за голову, её дыхание сбивается, а желание растет.")
 
-		saynn("It doesn't take long for Tavi to start approaching orgasm.. the heat making her quite sensitive.")
+		saynn("Вскоре Тави начинает приближаться к оргазму.. из-за течки она сейчас невероятно чувствительна.")
 
-		addButton("Make her cum", "Let Tavi orgasm yet again", "do_lick_cum")
-		addButton("Deny Tavi", "You can't let her have this orgasm after so many other ones", "do_lick_deny")
+		addButton("Довести её до оргазма", "Дать Тави снова кончить", "do_lick_cum")
+		addButton("Откажи Тави", "Нельзя позволять ей кончать после такого количества оргазмов", "do_lick_deny")
 	if(state == "do_lick_cum"):
 		playAnimation(StageScene.SexOral, "grind", {pc="tavi", npc="pc", bodyState={naked=true}})
-		saynn("As you sense Tavi's climax building, you increase the pace and intensity of your tongue movements while sucking on her clit, providing an immense amount of stimulation.")
+		saynn("Чувствуя, как Тави приближается к пику, ты ускоряешь темп и интенсивность движений языка, одновременно посасывая её клитор и обеспечивая невероятную стимуляцию.")
 
-		saynn("[say=tavi]I'm gonna..[/say]")
+		saynn("[say=tavi]Сейчас будет..[/say]")
 
-		saynn("With a powerful shudder, Tavi gets pushed way past her peak, her body convulsing as her pulsing pussy suddenly squirts juices directly into your face, forcing her scent into you.")
+		saynn("От мощной дрожи Тави проносится далеко за пределы пика; её тело сотрясается, а пульсирующая киска внезапно извергает соки прямо тебе в лицо, заставляя тебя буквально впитывать её запах.")
 
-		saynn("[say=tavi]Ah-h!..[/say]")
+		saynn("[say=tavi]Ах-х!..[/say]")
 
-		saynn("You hold onto her legs tightly while she grinds her slit against your face features, her {tavi.breasts} jiggling, her mouth moaning.")
+		saynn("Ты крепко держишь её за ноги, пока она вжимается своей щелью в твоё лицо, её {tavi.breasts} колышется, а из уст вырываются стоны.")
 
-		saynn("It's only when the orgasm starts to fade, Tavi finally lets you pull away.")
+		saynn("Только когда оргазм начинает угасать, Тави наконец позволяет тебе отстраниться.")
 
-		saynn("[say=tavi]That scratched an itch..[/say]")
+		saynn("[say=tavi]Это уняло зуд...[/say]")
 
-		saynn("She playfully licks your face as you get up.")
+		saynn("Она игриво лижет твоё лицо, пока ты поднимаешься.")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 	if(state == "do_lick_deny"):
 		playAnimation(StageScene.SexOral, "start", {pc="tavi", npc="pc", bodyState={naked=true}})
-		saynn("Tavi is close to her climax.. but you make a firm decision and suddenly stop licking her all together, denying her the release that she so desperately craves.")
+		saynn("Тави уже почти на пике... но ты принимаешь твердое решение и внезапно полностью прекращаешь лизать её, лишая её разрядки, которой она так отчаянно жаждет.")
 
-		saynn("[say=tavi]Why did you.. I was so.. Please..[/say]")
+		saynn("[say=tavi]Почему ты... Я так... Пожалуйста...[/say]")
 
-		saynn("Her body is squirming as she breathes heavily. She is trying to push herself over the edge by grinding her twitching pussy against your face but you use your hands and keep her standing still.")
+		saynn("Её тело извивается, она тяжело дышит. Она пытается довести себя до пика, с силой вжимая свою подергивающуюся киску тебе в лицо, но ты удерживаешь её на месте своими руками.")
 
-		saynn("[say=tavi]No.. Fuck..[/say]")
+		saynn("[say=tavi]Нет... Блять...[/say]")
 
-		saynn("The more she resists, the more her state of heat begins to fade, her arousal lowering, her body cooling down.")
+		saynn("Чем сильнее она сопротивляется, тем быстрее начинает спадать её жар: возбуждение угасает, а тело остывает.")
 
-		saynn("[say=tavi]Huff-f-f..[/say]")
+		saynn("[say=tavi]Хафф... ффф...[/say]")
 
-		saynn("Who said that getting rid of corruption in your mind will be easy..")
+		saynn("Кто сказал, что избавиться от скверны в разуме будет легко?..")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 	if(state == "do_anal"):
 		playAnimation(StageScene.SexFreeStanding, "sex", {npc="tavi", pc="pc", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("You decide to try an unusual way to satisfy Tavi. Without a word, you position yourself behind her and align your {pc.penis} with her back entrance. The feline shivers a little as she feels your member prodding her butt.")
+		saynn("Ты решаешь попробовать необычный способ удовлетворить Тави. Без лишних слов ты устраиваешься позади неё и пристраиваешь свой {pc.penis} к её заднему входу. Кошка слегка вздрагивает, чувствуя, как твой член упирается ей в задницу.")
 
 		if (getModule("TaviModule").isVirgin()):
-			saynn("[say=tavi]Ow.. Are you sure?..[/say]")
+			saynn("[say=tavi]Ой... Ты уверен?..[/say]")
 
 		else:
-			saynn("[say=tavi]Ow.. Wrong hole?..[/say]")
+			saynn("[say=tavi]Ой... Не в то отверстие?..[/say]")
 
-		saynn("You make sure to use some of her arousal as lube. Then, in one fluid motion, you enter Tavi, your cock stretching her tailhole wide as a painful moan escapes her lips. You grab her wrists and pull them behind her back, making her feel helpless as you start fucking her ass, her"+str(" virgin" if getModule("TaviModule").isVirgin() else "")+" pussy only dripping juices more.")
+		saynn("Ты используешь её возбуждение в качестве смазки. Затем одним плавным движением ты входишь в Тави; твой член широко растягивает её анус, и с её губ срывается болезненный стон. Ты хватаешь её за запястья и заводишь их ей за спину, заставляя её почувствовать себя беспомощной, пока начинаешь трахать её в задницу, её"+str(" virgin" if getModule("TaviModule").isVirgin() else "")+" её киска лишь сильнее истекает соками.")
 
-		saynn("[say=tavi]Ah.. fuck it..[/say]")
+		saynn("[say=tavi]Ах.. к черту всё..[/say]")
 
-		saynn("Her inner walls grip your length so well, it's hard not to start thrusting faster. The initial discomfort seems to be eventually gone, replaced by the weird pleasure of her anal ring nerves being stimulated.")
+		saynn("Её внутренние стенки так плотно обхватывают твою длину, что трудно не начать двигаться быстрее. Первоначальный дискомфорт, кажется, окончательно ушел, сменившись странным удовольствием от стимуляции нервных окончаний её ануса.")
 
-		saynn("[say=tavi]Please.. More!..[/say]")
+		saynn("[say=tavi]Пожалуйста.. Еще!..[/say]")
 
-		saynn("Her tight backdoor already brings you close.. but should you try to make her cum too?")
+		saynn("Её узкая задница уже доводит тебя почти до предела... но стоит ли попытаться довести до оргазма и её?")
 
-		addButton("Harder", "Try to make Tavi cum", "do_anal_cum")
-		addButton("Pull out", "You'd rather just cum on her butt", "do_anal_pullout")
+		addButton("Жёстче", "Попытаться довести Тави до оргазма", "do_anal_cum")
+		addButton("Вытащить", "Ты предпочитаешь просто кончить ей на задницу", "do_anal_pullout")
 	if(state == "do_anal_cum"):
 		playAnimation(StageScene.SexFreeStanding, "fast", {npc="tavi", pc="pc", pcCum=true, npcCum=true, npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("You decide to increase your pace, your hips slapping against Tavi's butt as your {pc.penis} gets rammed deep inside her again and again. You angle yourself just right to hit Tavi's pleasure spot through the inner wall that divides her holes, causing her legs to tremble with pleasure.")
+		saynn("Ты решаешь ускориться, твои бедра хлопают по заднице Тави, пока твой {pc.penis} раз за разом вбивается глубоко внутрь неё. Ты выбираешь идеальный угол, чтобы через стенку, разделяющую её отверстия, попадать прямо в точку удовольствия Тави, заставляя её ноги дрожать от наслаждения.")
 
-		saynn("[say=tavi]Ah!.. That feels so good!.. Please!..[/say]")
+		saynn("[say=tavi]Ах!.. Как же хорошо!.. Пожалуйста!..[/say]")
 
-		saynn("Her neglected pussy is twitching and dripping juices non-stop. Tavi would try to rub herself to her orgasm but you keep her arms in a firm hold, only allowing her the anal stimulation.")
+		saynn("Её заброшенная киска непрерывно подергивается и течет. Тави пытается тереться сама о себя, чтобы достичь оргазма, но ты крепко держишь её руки, позволяя ей лишь анальную стимуляцию.")
 
-		saynn("With one final thrust, you shove your member balls deep, causing the inner walls of that ass to start contracting around you, stimulating you back. It only takes a few seconds before you grunt and cum, at the same time as Tavi..")
+		saynn("Последним мощным толчком ты вгоняешь свой член по самую рукоятку, отчего внутренние стенки её задницы начинают судорожно сжиматься вокруг тебя, отвечая на стимуляцию. Проходит всего пара секунд, прежде чем ты, кряхтя, кончаешь — одновременно с Тави...")
 
-		saynn("[say=tavi]Yes-s-s!..[/say]")
+		saynn("[say=tavi]Да-а-а!..[/say]")
 
-		saynn("Her body is shaking while your seed is flooding her nethers. Her pussy is twitching and pulsing around nothing, a fountain of juices hits the floor. Tavi has managed to cum from you fucking her ass.")
+		saynn("Её тело дрожит, пока твоё семя наводняет её нутро. Её киска дергается и пульсирует в пустоте, а струя соков бьет прямо на пол. Тави удалось кончить от того, что ты трахал её в задницу.")
 
-		saynn("After that, you just stand together, your hands supporting her while your breathing returns to normal.")
+		saynn("После этого вы просто стоите, прижавшись друг к другу; ты придерживаешь её руками, пока ваше дыхание постепенно выравнивается.")
 
-		saynn("[say=tavi]That was so.. strange. But t-thank you.. for using your slut's ass..[/say]")
+		saynn("[say=tavi]Это было так... странно. Но с-спасибо тебе.. за то, что использовал задницу своей шлюхи..[/say]")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 		if (getModule("TaviModule").getSkillScore("taviSkillWatersports") > 0):
-			addButton("Piss inside", "It's so warm. Might as well", "do_anal_piss")
+			addButton("Поссать внутрь", "Так тепло. Можно и...", "do_anal_piss")
 	if(state == "do_anal_piss"):
 		playAnimation(StageScene.SexFreeStanding, "inside", {npc="tavi", pc="pc", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("Her inner walls still feel so nice and inviting.. But after that orgasm you kinda wanna pee now. Hm..")
+		saynn("Её внутренние стенки всё еще такие приятные и манящие... Но после такого оргазма тебе вдруг захотелось пописать. Хм...")
 
-		saynn("You decide not to pull out and embrace this moment instead. Tavi is still panting softly while you suddenly release a stream of your warm piss inside her, flooding her guts with your urine that quickly mixes with the seed.")
+		saynn("Ты решаешь не выходить, а вместо этого насладиться моментом. Тави всё еще тихонько дышит, как вдруг ты выпускаешь струю теплой мочи прямо в неё, наполняя её нутро мочой, которая быстро смешивается с твоим семенем.")
 
-		saynn("[say=tavi]Wha.. are you..[/say]")
+		saynn("[say=tavi]Что.. ты..[/say]")
 
-		saynn("[say=pc]Yes, I felt like doing it.[/say]")
+		saynn("[say=pc]Да, мне просто захотелось.[/say]")
 
-		saynn("Tavi huffs but it's too late, you empty your bladder inside her completely. This act certainly makes her feel less like a person and more like an.. object.. a piss-toilet.")
+		saynn("Тави тяжело вздыхает, но уже слишком поздно — ты полностью опорожняешь мочевой пузырь внутри неё. Этот акт определенно заставляет её чувствовать себя не столько человеком, сколько... объектом... писаным толчком.")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 	if(state == "do_anal_pullout"):
 		playAnimation(StageScene.SexFreeStanding, "tease", {npc="tavi", pc="pc", pcCum=true, npcCum=true, npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("Making her cum will certainly spoil Tavi. So, when reaching your climax, you pull out seconds before your cock releases multiple thick strings of {pc.cum}, most of them landing on Tavi's butt and thighs.")
+		saynn("Если заставлять её кончать, Тави точно разбалуется. Поэтому, достигнув пика, ты выходишь за секунду до того, как твой член выбрасывает несколько густых струй {pc.cum}, большинство из которых приземляются на ягодицы и бедра Тави.")
 
-		saynn("Tavi huffs and lets out a whimper as her ass no longer feels your cock pounding it.")
+		saynn("Тави тяжело дышит и издает жалобный стон, когда ее задница перестает чувствовать, как твой член долбит в нее.")
 
-		saynn("[say=tavi]Huff..[/say]")
+		saynn("[say=tavi]Фух..[/say]")
 
-		saynn("You leave a little kiss on Tavi's shoulder as her body begins to cool down, her heated state gradually going away.")
+		saynn("Ты оставляешь легкий поцелуй на плече Тави, пока ее тело начинает остывать, а жар постепенно спадает.")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 	if(state == "do_anal_strapon"):
 		playAnimation(StageScene.SexFreeStanding, "sex", {npc="tavi", pc="pc", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("You decide to try an unusual way to satisfy Tavi. Without a word, you position yourself behind her and secure a strapon harness around your waist before aligning your new rubber cock with her back entrance. The feline shivers a little as she feels something firm prodding her butt.")
+		saynn("Ты решаешь попробовать необычный способ удовлетворить Тави. Без лишних слов ты устраиваешься позади нее и затягиваешь ремни страпона на талии, после чего приставляешь свой новый резиновый член к ее заднему входу. Кошка слегка вздрагивает, чувствуя, как что-то твердое упирается ей в зад.")
 
 		if (getModule("TaviModule").isVirgin()):
-			saynn("[say=tavi]Ow.. Are you sure?..[/say]")
+			saynn("[say=tavi]Ой... Ты уверен?..[/say]")
 
 		else:
-			saynn("[say=tavi]Ow.. Wrong hole?..[/say]")
+			saynn("[say=tavi]Ой... Не в то отверстие?..[/say]")
 
-		saynn("You make sure to use some of her arousal as lube. Then, in one fluid motion, you enter Tavi, your cock stretching her tailhole wide as a painful moan escapes her lips. You grab her wrists and pull them behind her back, making her feel helpless as you start fucking her ass, her"+str(" virgin" if getModule("TaviModule").isVirgin() else "")+" pussy only dripping juices more.")
+		saynn("Ты используешь её возбуждение в качестве смазки. Затем одним плавным движением ты входишь в Тави; твой член широко растягивает её анус, и с её губ срывается болезненный стон. Ты хватаешь её за запястья и заводишь их ей за спину, заставляя её почувствовать себя беспомощной, пока начинаешь трахать её в задницу, её"+str(" virgin" if getModule("TaviModule").isVirgin() else "")+" её киска лишь сильнее истекает соками.")
 
-		saynn("[say=tavi]Ah.. fuck it..[/say]")
+		saynn("[say=tavi]Ах.. к черту всё..[/say]")
 
-		saynn("Her inner walls grip your length so well, it's hard not to start thrusting faster. The initial discomfort seems to be eventually gone, replaced by the weird pleasure of her anal ring nerves being stimulated.")
+		saynn("Её внутренние стенки так плотно обхватывают твою длину, что трудно не начать двигаться быстрее. Первоначальный дискомфорт, кажется, окончательно ушел, сменившись странным удовольствием от стимуляции нервных окончаний её ануса.")
 
-		saynn("[say=tavi]Please.. More!..[/say]")
+		saynn("[say=tavi]Пожалуйста.. Еще!..[/say]")
 
-		saynn("Should you try to make her cum?")
+		saynn("Стоит ли попытаться довести ее до оргазма?")
 
-		addButton("Harder", "Try to make Tavi cum", "do_anal_cum_strapon")
-		addButton("Pull out", "You'd rather just cum on her butt", "do_anal_pullout_strapon")
+		addButton("Жёстче", "Попытаться довести Тави до оргазма", "do_anal_cum_strapon")
+		addButton("Вытащить", "Ты предпочитаешь просто кончить ей на задницу", "do_anal_pullout_strapon")
 	if(state == "do_anal_cum_strapon"):
 		playAnimation(StageScene.SexFreeStanding, "fast", {npc="tavi", pc="pc", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("You decide to increase your pace, your hips slapping against Tavi's butt as your strapon gets rammed deep inside her again and again. You angle yourself just right to hit Tavi's pleasure spot through the inner wall that divides her holes, causing her legs to tremble with pleasure.")
+		saynn("Ты решаешь ускориться; твои бедра хлопают по заднице Тави, пока страпон раз за разом вбивается глубоко внутрь нее. Ты выбираешь идеальный угол, чтобы попадать прямо в точку удовольствия через внутреннюю стенку, разделяющую ее отверстия, отчего ее ноги начинают дрожать от наслаждения.")
 
-		saynn("[say=tavi]Ah!.. That feels so good!.. Please!..[/say]")
+		saynn("[say=tavi]Ах!.. Как же хорошо!.. Пожалуйста!..[/say]")
 
-		saynn("Her neglected pussy is twitching and dripping juices non-stop. Tavi would try to rub herself to her orgasm but you keep her arms in a firm hold, only allowing her the anal stimulation.")
+		saynn("Её заброшенная киска непрерывно подергивается и течет. Тави пытается тереться сама о себя, чтобы достичь оргазма, но ты крепко держишь её руки, позволяя ей лишь анальную стимуляцию.")
 
-		saynn("With one final thrust, you shove the toy in completely, knot and everything, causing the inner walls of that ass to start contracting around it, squeezing it so much that it suddenly starts throbbing. It only takes a few seconds before Tavi cums..")
+		saynn("Одним финальным толчком ты заталкиваешь игрушку целиком, вместе с узлом, заставляя внутренние стенки ануса сжиматься вокруг нее так сильно, что она начинает пульсировать. Проходит всего несколько секунд, и Тави кончает...")
 
-		saynn("[say=tavi]Yes-s-s!..[/say]")
+		saynn("[say=tavi]Да-а-а!..[/say]")
 
-		saynn("Her body is shaking while the dildo starts stuffing her butt with cumlube. Her pussy is twitching and pulsing around nothing, a fountain of juices hits the floor. Tavi has managed to cum from you fucking her ass.")
+		saynn("Ее тело сотрясает дрожь, пока дилдо наполняет ее задницу смазкой. Ее киска дергается и пульсирует в пустоте, а фонтан соков бьет прямо на пол. Тави удалось кончить от того, что ты трахаешь ее в задницу.")
 
-		saynn("After that, you just stand together, your hands supporting her while your breathing returns to normal.")
+		saynn("После этого вы просто стоите, прижавшись друг к другу; ты придерживаешь её руками, пока ваше дыхание постепенно выравнивается.")
 
-		saynn("[say=tavi]That was so.. strange. But t-thank you.. for using your slut's ass..[/say]")
+		saynn("[say=tavi]Это было так... странно. Но с-спасибо тебе.. за то, что использовал задницу своей шлюхи..[/say]")
 
-		addButton("Continue", "See what happens next", "start_talk_removestrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk_removestrapon")
 	if(state == "do_anal_pullout_strapon"):
 		playAnimation(StageScene.SexFreeStanding, "tease", {npc="tavi", pc="pc", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("Making her cum will certainly spoil Tavi. So, instead of going in deeper, you just continue fucking her ass for some time before finally pulling out.")
+		saynn("Если ты доведешь ее до оргазма, это точно избалует Тави. Поэтому вместо того, чтобы входить глубже, ты просто продолжаешь трахать ее в задницу еще какое-то время, прежде чем наконец вытащить страпон.")
 
-		saynn("Tavi huffs and lets out a whimper as her ass no longer feels your strapon pounding it.")
+		saynn("Тави тяжело дышит и издает жалобный стон, когда ее задница перестает чувствовать, как твой страпон долбит в нее.")
 
-		saynn("[say=tavi]Huff..[/say]")
+		saynn("[say=tavi]Фух..[/say]")
 
-		saynn("You leave a little kiss on Tavi's shoulder as her body begins to cool down, her heated state gradually going away.")
+		saynn("Ты оставляешь легкий поцелуй на плече Тави, пока ее тело начинает остывать, а жар постепенно спадает.")
 
-		addButton("Continue", "See what happens next", "start_talk_removestrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk_removestrapon")
 	if(state == "do_just_chill"):
 		playAnimation(StageScene.Cuddling, "idle", {npc="tavi"})
-		saynn("Tavi doesn't suffer from constant heat anymore so why not just cuddle instead.")
+		saynn("Тави больше не мучается от постоянного жара, так почему бы просто не пообниматься?")
 
-		saynn("You pull your pet onto the bed and just embrace her, your chin resting on her shoulder. The feline purrs softly and rests in your hands.")
+		saynn("Ты притягиваешь свою питомицу на кровать и просто обнимаешь её, положив подбородок ей на плечо. Кошечка тихо мурлычет, уютно устраиваясь в твоих руках.")
 
 		if (chillTalk <= 0):
-			saynn("[say=pc]Are you still planning to kill everyone who created you?[/say]")
+			saynn("[say=pc]Ты всё ещё планируешь прикончить всех, кто тебя создал?[/say]")
 
-			saynn("Tavi is quiet. You were about to ask something else but then she cuts you off.")
+			saynn("Тави молчит. Ты уже собирался спросить о чём-то ещё, но она перебивает тебя.")
 
-			saynn("[say=tavi]I don't know. I think I will only know when I see them, you know?[/say]")
+			saynn("[say=tavi]Не знаю. Думаю, я пойму это только тогда, когда увижу их, понимаешь?[/say]")
 
-			saynn("Fair enough. Tavi is quiet for some time again.")
+			saynn("Справедливо. Тави снова на некоторое время замолкает.")
 
-			saynn("[say=tavi]But I'm gonna stop them no matter what it takes. Unless you think I should give up..[/say]")
+			saynn("[say=tavi]Но я остановлю их, чего бы мне это ни стоило. Если только ты не считаешь, что мне стоит сдаться...[/say]")
 
 		elif (chillTalk <= 1):
-			saynn("[say=pc]Are you gonna kill the captain? If the chance arises.[/say]")
+			saynn("[say=pc]Ты убьёшь капитана? Если представится шанс.[/say]")
 
-			saynn("Tavi hums.")
+			saynn("Тави что-то напевает под нос.")
 
-			saynn("[say=tavi]Justice needs to happen. Especially after how he fucked up my mind. But..[/say]")
+			saynn("[say=tavi]Справедливость должна восторжествовать. Особенно после того, как он поимел мне мозги. Но...[/say]")
 
-			saynn("She rubs into you more, her smile is all cute and bright.")
+			saynn("Она прижимается к тебе сильнее, её улыбка такая милая и сияющая.")
 
-			saynn("[say=tavi]I will do what you tell me to do~.[/say]")
+			saynn("[say=tavi]Я буду делать всё, что ты скажешь~.[/say]")
 
 		elif (chillTalk <= 2):
-			saynn("[say=pc]Wanna talk about your.. family?[/say]")
+			saynn("[say=pc]Хочешь поговорить о твоей... семье?[/say]")
 
-			saynn("Tavi sighs.")
+			saynn("Тави вздыхает.")
 
-			saynn("[say=tavi]There is not much to say.[/say]")
+			saynn("[say=tavi]Тут особо не о чем говорить.[/say]")
 
-			saynn("[say=pc]Do you regret it?[/say]")
+			saynn("[say=pc]Ты жалеешь об этом?[/say]")
 
-			saynn("She shrugs.")
+			saynn("Она пожимает плечами.")
 
-			saynn("[say=tavi]I feel like I should. But.. I would regret dying more.[/say]")
+			saynn("[say=tavi]Мне кажется, что должна. Но... смерть заставила бы меня жалеть ещё сильнее.[/say]")
 
-			saynn("Both options seem kinda bad. Such is life.")
+			saynn("Оба варианта кажутся так себе. Но такова жизнь.")
 
-			saynn("[say=pc]Let's just rest.[/say]")
+			saynn("[say=pc]Давай просто отдохнём.[/say]")
 
 		else:
-			saynn("There is not much to discuss anymore. So you just chat about random things.")
+			saynn("Обсуждать больше особо нечего, поэтому вы просто болтаете о всякой всячине.")
 
-		saynn("You spend some time like that, cuddling. And Tavi seems to enjoy it a lot.")
+		saynn("Вы проводите какое-то время в объятиях, просто нежа друг друга. И Тави, кажется, это безумно нравится.")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 	if(state == "cor_facesit"):
 		playAnimation(StageScene.SexFaceSitting, "grind", {pc="tavi", npc="pc", bodyState={naked=true}, npcBodyState={hard=true}})
-		saynn("Tavi's body is radiating with primal heat. As soon as an intrusive thought about letting Tavi solve her heat using your body flows through your mind, she suddenly tackles you to the ground, her eyes glowing with desire.")
+		saynn("Тело Тави буквально излучает первобытный жар. Стоит тебе лишь на мгновение подумать о том, чтобы позволить ей утолить её течку с помощью твоего тела, как она внезапно сбивает тебя с ног, а её глаза светятся от вожделения.")
 
-		saynn("[say=tavi]You're gonna serve me![/say]")
+		saynn("[say=tavi]Ты будешь меня обслуживать![/say]")
 
-		saynn("With a playful grin, the feline swiftly positions herself above your head, letting you see her dripping sex in great detail.. seconds before she lowers herself onto you, straddling your face. The scent is.. intoxicating.. irresistible..")
+		saynn("С игривой ухмылкой кошка быстро устраивается над твоей головой, давая тебе возможность во всех подробностях рассмотреть её сочащуюся киску... всего за секунду до того, как она опускается на тебя, насаживаясь прямо на твоё лицо. Запах... опьяняющий... непреодолимый...")
 
-		saynn("[say=tavi]Lick~.[/say]")
+		saynn("[say=tavi]Лижи~.[/say]")
 
-		saynn("You obey, dragging your tongue over the sensitive wet folds, catching her arousal and swallowing it.. which only drives you to please her better. Her girly thighs are holding your face in place, passionate moans begin to fill the air. Your tongue is expertly tracing her"+str(" virgin" if getModule("TaviModule").isVirgin() else "")+" pussy and focusing on the clit.")
+		saynn("Ты повинуешься, проводя языком по чувствительным влажным складкам, слизывая её возбуждение и заглатывая его... что лишь заставляет тебя стараться ещё сильнее. Её девичьи бёдра фиксируют твоё лицо, воздух наполняется страстными стонами. Твой язык умело исследует её"+str(" virgin" if getModule("TaviModule").isVirgin() else "")+" киску, сосредоточившись на клиторе.")
 
-		saynn("[say=tavi]Mmm~.. Good little toy. So obedient.. Makes me wanna do this..[/say]")
+		saynn("[say=tavi]Ммм~.. Хорошая маленькая игрушка. Такая послушная.. Так и хочется вот этого..[/say]")
 
-		saynn("Tavi puts her paws on your head and begins dragging her wet sex over your face, grinding it. All the while you keep doing your best to lap at her needy slit. Very soon her moans become louder, echoing through the whole with a demonic undertone.")
+		saynn("Тави кладет лапы тебе на голову и начинает втираться своей мокрой киской в твоё лицо, растирая её о тебя. Всё это время ты изо всех сил стараешься слизывать сок из её жаждущей щели. Вскоре её стоны становятся громче, отдаваясь эхом по всей комнате с каким-то демоническим подтоном.")
 
-		saynn("[say=tavi]You can't deny me now~. Even if you wanted to~.[/say]")
+		saynn("[say=tavi]Теперь тебе от меня не отвертеться~. Даже если бы ты очень захотел~.[/say]")
 
-		saynn("She is right.. At this moment she is in charge. And it seems she is about to cum..")
+		saynn("Она права... В этот момент она здесь главная. И, кажется, она вот-вот кончит...")
 
-		addButton("Lick", "Just like her more", "cor_facesit_cum")
+		addButton("Лизать", "Просто нравится ей больше", "cor_facesit_cum")
 	if(state == "cor_facesit_cum"):
 		playAnimation(StageScene.SexFaceSitting, "sit", {pc="tavi", npc="pc", bodyState={naked=true}, npcBodyState={hard=true}})
-		saynn("As Tavi's climax approaches, you begin to feel her muscles tense, her grip on you tightening. Her body is trembling while a series of passionate moans escape her lips.. before she finally reaches her peak.")
+		saynn("По мере приближения оргазма Тави, ты чувствуешь, как напрягаются её мышцы, а хватка становится всё крепче. Её тело дрожит, а с губ срываются череду страстных стонов... пока она наконец не достигает пика.")
 
-		saynn("Tavi's sex pulses and twitches before.. an explosion of juices hits your face. Her slutty moans intervene with heavy panting while her body shivers and trembles above you.")
+		saynn("Влага внутри Тави пульсирует и содрогается, прежде чем... взрыв соков бьёт тебе в лицо. Её похотливые стоны перемежаются с тяжёлым дыханием, пока её тело дрожит и содрогается прямо над тобой.")
 
-		saynn("[say=tavi]Ah~.. Sorry owner. But I really needed this~.[/say]")
+		saynn("[say=tavi]Ах~... Простите, хозяин. Но мне это было просто необходимо~.[/say]")
 
-		saynn("After the orgasm waves stop flowing through her, Tavi raises and takes a look at your wet face.. before giggling.")
+		saynn("Когда волны оргазма утихают, Тави приподнимается и смотрит на твоё мокрое лицо... после чего хихикает.")
 
 		if (getModule("TaviModule").getSkillScore("taviSkillWatersports") <= 0):
-			saynn("She helps you to get up and even licks her own juices off of you.. but there is too much.")
+			saynn("Она помогает тебе подняться и даже пытается слизать с тебя собственные соки... но их слишком много.")
 
-		saynn("At least her eternal heat seems to be satisfied.. for now..")
+		saynn("По крайней мере, её вечный жар, кажется, утолен... на данный момент...")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 		if (getModule("TaviModule").getSkillScore("taviSkillWatersports") > 0):
-			addButton("Lick pisshole", "Tickle Tavi's pisshole with your tongue", "cor_facesit_piss")
+			addButton("Лизать мочевое отверстие", "Пощекотать мочевое отверстие Тави языком", "cor_facesit_piss")
 	if(state == "cor_facesit_piss"):
-		saynn("Instead of just letting her get up, you suddenly grab onto Tavi's wide hips and pull them down towards your face again. But instead of just licking her pussy, you focus on one specific spot.. Tavi's urethra. You begin licking it specifically, trying to cause a reaction.")
+		saynn("Вместо того чтобы просто дать ей встать, ты внезапно хватаешь Тави за широкие бёдра и снова притягиваешь их к своему лицу. Но вместо того чтобы просто лизать её киску, ты сосредотачиваешься на одной конкретной точке... уретре Тави. Ты начинаешь целенаправленно вылизывать её, пытаясь вызвать реакцию.")
 
-		saynn("[say=tavi]Mmhm~.. That tickles. I know what you're trying to do~.[/say]")
+		saynn("[say=tavi]Мммхм~... Щекотно. Я знаю, что ты пытаешься сделать~.[/say]")
 
-		saynn("Tavi doesn't fight you. She instead sits on your face again and traps your head between her thighs. Her paws stroke your wet hair.")
+		saynn("Тави не сопротивляется. Вместо этого она снова усаживается тебе на лицо, зажимая твою голову между своих бёдер. Её лапки ласкают твои мокрые волосы.")
 
-		saynn("[say=tavi]Be a good {pc.boy} and try to swallow it~.[/say]")
+		saynn("[say=tavi]Будь хорошим {pc.boy} и постарайся всё проглотить~.[/say]")
 
-		saynn("And seconds later, a moan escapes from her as she releases a stream of piss from her pisshole directly into your face. It's so warm and wet.. You open your mouth and grab as much as you can. But the sheer amount of piss makes you gag on it, causing Tavi to giggle.")
+		saynn("И спустя секунды из её горла вырывается стон, когда она выпускает струю мочи прямо тебе в лицо. Она такая тёплая и влажная... Ты открываешь рот, стараясь захватить как можно больше. Но из-за огромного количества мочи тебя начинает тошнить, отчего Тави заливисто хихикает.")
 
-		saynn("[say=tavi]Silly little piss-slut~. You can swallow better than that.[/say]")
+		saynn("[say=tavi]Глупая маленькая мочослэтка~. Ты можешь глотать и лучше.[/say]")
 
-		saynn("She keeps pissing all over your face, forcing her gross scent into your skin. You do your best to swallow at least some of her urine but the taste is truly awful. Still, it feels hot to be used like this..")
+		saynn("Она продолжает метить всё твоё лицо, втирая свой резкий запах в твою кожу. Ты изо всех сил стараешься проглотить хотя бы часть её мочи, но вкус просто ужасен. И всё же, это чертовски горячее чувство — быть использованным вот так...")
 
-		saynn("[say=tavi]That's better~. Much better.[/say]")
+		saynn("[say=tavi]Вот так лучше~. Намного лучше.[/say]")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 	if(state == "do_petplay_fuck"):
 		playAnimation(StageScene.PuppySexOral, "tease", {npc="tavi", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("You are feeling kinky today so you decide to quickly grab some puppy restraints and force them on Tavi's paws and legs, making her stand on her knees and elbows.")
+		saynn("Сегодня тебя тянет на извращения, поэтому ты решаешь быстро схватить щенячьи фиксаторы и нацепить их на лапы и ноги Тави, заставляя её встать на колени и локти.")
 
-		saynn("[say=tavi]..woof..[/say]")
+		saynn("[say=tavi]..гав..[/say]")
 
-		saynn("She is bouncing and wiggling while panting softly, her tail wagging a lot. Tavi is already slipping into her puppy mindset.")
+		saynn("Она подпрыгивает и виляет всем телом, тихонько посапывая, а её хвост так и ходит ходуном. Тави уже вовсю погружается в состояние щенка.")
 
-		saynn("[say=tavi]Woof?..[/say]")
+		saynn("[say=tavi]Гав?..[/say]")
 
-		saynn("Your puppy rubs her body against you, teasingly presenting you her sex. The animal heat seems to be driving her up to the wall, making her eager to get fucked raw.")
+		saynn("Твоя сучка трется о тебя всем телом, дразняще подставляя свою киску. Кажется, животная течка доводит её до предела, заставляя жаждать жесткого секса без презерватива.")
 
-		saynn("After restraining your pet, you take a step back and expose your {pc.penis} before crouching and gesturing to Tavi to come closer. She obeys, crawling along the floor until her muzzle bumps into your crotch.")
+		saynn("Сдержав своего питомца, ты делаешь шаг назад и обнажаешь свой {pc.penis}, после чего приседаешь и жестом подзываешь Тави поближе. Она подчиняется, подползая по полу, пока её мордочка не упирается тебе в пах.")
 
-		saynn("[say=tavi]Woof..[/say]")
+		saynn("[say=tavi]Гав...[/say]")
 
-		saynn("Without any input, she starts licking and nuzzling your balls before switching her attention to the erecting shaft.")
+		saynn("Не дожидаясь команд, она начинает лизать и обнюхивать твои яйца, а затем переключает всё внимание на наливающееся напряжением член.")
 
-		saynn("Might as well let her continue.")
+		saynn("Пожалуй, стоит дать ей продолжить.")
 
-		addButton("Continue", "See what happens next", "do_petplay_fuck_bj")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_petplay_fuck_bj")
 	if(state == "do_petplay_fuck_bj"):
 		playAnimation(StageScene.PuppySexOral, "sex", {npc="tavi", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("After getting you hard, Tavi parts her lips and grabs the tip of your cock into her mouth, sucking on it while her tongue works along the length. Her rough feline tongue feels good. And Tavi seems to be enjoying herself too, her rear is swaying a lot as she is rubbing her thighs against each other.")
+		saynn("Доведя тебя до состояния полной готовности, Тави приоткрывает губы и захватывает головку твоего члена ртом, посасывая его, пока её язык ласкает всю его длину. Её шершавый кошачий язык дарит невероятные ощущения. И Тави, похоже, тоже в восторге: её задница активно виляет, а бедра то и дело трутся друг о друга.")
 
-		saynn("If this continues, she might make you cum.. Maybe it's time for the main event.")
+		saynn("Если так пойдет и дальше, она может довести тебя до конча.. Пожалуй, пора переходить к главному.")
 
 		if (!isVirgin):
-			addButton("Fuck Tavi", "Get behind her", "do_petplay_fuck_behind")
+			addButton("Трахать Тави", "Встать сзади неё", "do_petplay_fuck_behind")
 		else:
-			addDisabledButton("Fuck Tavi", "Tavi can't be a virgin for this")
-		addButton("Deepthroat", "Make Tavi deepthroat you instead", "do_petplay_fuck_dt")
+			addDisabledButton("Трахать Тави", "Тави не может быть девственницей при таком раскладе")
+		addButton("Глубокий минет", "Заставить Тави взять тебя глубоким горлом", "do_petplay_fuck_dt")
 	if(state == "do_petplay_fuck_dt"):
 		playAnimation(StageScene.PuppySexOral, "fast", {npc="tavi", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("You can fuck her pussy some other time, that throat is too inviting.")
+		saynn("Её киску можно оттрахать и в другой раз, это горло слишком уж манит.")
 
-		saynn("Your hands grab Tavi's "+str("horns" if getModule("TaviModule").hasHorns() else "head")+" and pull her deeper onto your length, forcibly stretching her tight throat to the point of it bulging.")
+		saynn("Твои руки вцепляются в Тави, "+str("horns" if getModule("TaviModule").hasHorns() else "head")+"и насаживают её глубже на свой член, силой растягивая её узкое горло до тех пор, пока оно не начинает выпирать.")
 
-		saynn("Tavi produces a silent gasp as you proceed to fuck her throat, wet noises escaping from it while your puppy struggles to keep her gag reflex under control. She has no control in fact, the restraints make her completely helpless under your rough touch.")
+		saynn("Тави издает беззвучный всхлип, пока ты трахаешь ей горло; из него доносятся влажные звуки, пока твоя сучка изо всех сил пытается совладать с рвотным рефлексом. На самом деле, она вообще ничего не контролирует — благодаря путам она совершенно беспомощна под твоими грубыми ласками.")
 
-		saynn("It feels so good you let out a few quiet moans, her inner walls clenching around your length as she gags on it. Lonely tears begin streaming down her cheeks. And yet, her eyes show unquestionable loyalty.")
+		saynn("Это настолько охеренно, что ты невольно издаешь тихий стон; её внутренние стенки сжимаются вокруг твоего члена, пока она давится им. По её щекам начинают катиться одинокие слезы. И всё же, в её глазах читается непоколебимая преданность.")
 
-		saynn("The more you fuck her, the closer your peak is..")
+		saynn("Чем сильнее ты её трахаешь, тем ближе твой пик...")
 
-		addButton("Throatpie", "Cum deep inside Tavi's throat", "do_petplay_fuck_throatpie")
-		addButton("Pull out", "Cum on Tavi's face instead", "do_petplay_fuck_bj_pullout")
+		addButton("Глотать всё до капли", "Кончить глубоко в горло Тави", "do_petplay_fuck_throatpie")
+		addButton("Вытащить", "Вместо этого кончить Тави на лицо", "do_petplay_fuck_bj_pullout")
 	if(state == "do_petplay_fuck_throatpie"):
-		saynn("You keep shoving your cock deep down that throat until its tightness pushes you over the edge.")
+		saynn("Ты продолжаешь вбивать свой член глубоко в это горло, пока его теснота не доводит тебя до самого края.")
 
-		saynn("But you don't pull out. Instead, you ram your member fully inside, stealing Tavi's ability to breathe completely! Your length starts throbbing inside her.. as the waves of thick {pc.cum} begin flowing down her walls, straight into her belly.")
+		saynn("Но ты не выходишь. Вместо этого ты вгоняешь свой агрегат до упора, полностью лишая Тави возможности дышать! Твой член начинает пульсировать внутри неё... когда волны густой {pc.cum} начинают стекать по её стенкам прямо в живот.")
 
-		saynn("Tavi's eyes roll up. Her body is getting weaker and weaker.. until she suddenly cums too, her frame shivering wildly while her pussy clenches around the cock that's not there and then squirts, spawning a fountain of transparent juices.")
+		saynn("Глаза Тави закатываются. Её тело становится всё слабее и слабее... пока она внезапно тоже не кончает: её тело сотрясает дикая дрожь, киска судорожно сжимает несуществующий член, а затем она начинает кончать фонтаном прозрачной смазки.")
 
-		saynn("It feels better than any pussy, Tavi's throat is clenching extremely tight around your cock.. But you pull out as soon as you sense her getting too weak.")
+		saynn("Это ощущается лучше, чем любая другая киска — горло Тави невероятно туго обхватывает твой член... Но ты выходишь сразу же, как только чувствуешь, что она становится слишком слабой.")
 
-		saynn("Tavi gasps and flops onto the floor. She starts coughing, sometimes coughing out {pc.cum} that probably went in the wrong pipe.")
+		saynn("Тави ахает и валится на пол. Она начинает кашлять, иногда выплевывая {pc.cum}, которая, вероятно, попала не в то горло.")
 
-		saynn("[say=pc]Good puppy. Such a good puppy.[/say]")
+		saynn("[say=pc]Хорошая собачка. Такая хорошая собачка.[/say]")
 
-		saynn("Tavi is.. lying wasted on the floor, her breath extremely ragged and deep. But this seems to have satisfied her heat, strangely enough.")
+		saynn("Тави... лежит на полу совершенно измотанная, её дыхание тяжёлое и прерывистое. Но, как ни странно, это, похоже, утолило её течку.")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 	if(state == "do_petplay_fuck_bj_pullout"):
 		playAnimation(StageScene.PuppySexOral, "tease", {npc="tavi", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("You keep shoving your cock deep down that throat until its tightness pushes you over the edge.")
+		saynn("Ты продолжаешь вбивать свой член глубоко в это горло, пока его теснота не доводит тебя до самого края.")
 
-		saynn("But then, instead of feeding Tavi, you decide to give her a nice thick slimy facial. Your cock is throbbing in front of her face while strings of your {pc.cum} are landing on it, creating a lewd pattern and marking her fur.")
+		saynn("Но затем, вместо того чтобы накормить Тави, ты решаешь устроить ей сочный, густой и липкий фейсфид. Твой член пульсирует прямо перед её лицом, пока струйки твоей {pc.cum} ложатся на него, создавая похотливый узор и пачкая её мех.")
 
-		saynn("Tavi squints and closes one of her eyes when the seed covers it. Your {pc.cum} begins dripping down her cheeks and chin.")
+		saynn("Тави жмурится и прикрывает один глаз, когда семя заливает его. Твоя {pc.cum} начинает стекать по её щекам и подбородку.")
 
-		saynn("[say=pc]Good puppy. Best puppy.[/say]")
+		saynn("[say=pc]Хорошая собачка. Лучшая собачка.[/say]")
 
-		saynn("She huffs even after your compliments. It seems she didn't get to cum. And these restraints make sure that she can't do it even if she really wanted to. Tavi is forced to wear your seed on her face while her body.. just cools down.")
+		saynn("Она фыркает даже после твоих комплиментов. Похоже, она так и не кончила. А эти оковы гарантируют, что она не сможет этого сделать, даже если очень захочет. Тави вынуждена носить твою сперму на лице, пока её тело... просто остывает.")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 	if(state == "do_petplay_fuck_behind"):
 		playAnimation(StageScene.PuppySexAllFours, "fast", {npc="tavi", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("Enough teasing. You pull away from Tavi and move behind her, already aligning your {pc.penis} with her sex. The feline looks over her shoulder, her tail quickly getting out of the way, giving you full access to her love tunnel.")
+		saynn("Хватит дразниться. Ты отстраняешься от Тави и перемещаешься ей за спину, уже пристраивая свой {pc.penis} к её киске. Кошечка оглядывается через плечо, быстро убирая хвост с дороги, чтобы открыть тебе полный доступ к её любовному туннелю.")
 
-		saynn("[say=tavi]Woof..[/say]")
+		saynn("[say=tavi]Гав...[/say]")
 
-		saynn("One thrust and you're inside. Your hands land on Tavi's hips and command them while your cock spreads open her slit and stretches the inner walls wide. Puppy purrs as she feels your length pulsing inside her.")
+		saynn("Один мощный толчок — и ты внутри. Твои руки ложатся на бёдра Тави, властно направляя их, пока твой член раздвигает её щели и растягивает внутренние стенки. Щенячья девчонка мурлычет, чувствуя, как твоя плоть пульсирует внутри неё.")
 
-		saynn("Your hand grabs her tail and uses it as a leash, pulling, while you are using your pet's body for your pleasure.")
+		saynn("Твоя рука хватает её за хвост, используя его как поводок, пока ты используешь тело своей питомицы для своего удовольствия.")
 
-		saynn("[say=tavi]..Awo.. wo-..o -f..[/say]")
+		saynn("[say=tavi]..Ауу.. во-..о -ф..[/say]")
 
-		saynn("Tavi is trying to squirm but the restraints keep her nice and still for you. Soon enough, you feel your orgasm approaching..")
+		saynn("Тави пытается извиваться, но путы держат её неподвижно, как раз так, как тебе нужно. Вскоре ты чувствуешь приближение оргазма...")
 
-		addButton("Cum inside", "Breed your pet", "do_petplay_fuck_cuminside")
-		addButton("Pull out", "Cum all over your pet's back instead", "do_petplay_fuck_pullout")
+		addButton("Кончить внутрь", "Оплодотворить свою питомицу", "do_petplay_fuck_cuminside")
+		addButton("Вытащить", "Кончить на спину своей питомице вместо этого", "do_petplay_fuck_pullout")
 	if(state == "do_petplay_fuck_cuminside"):
 		playAnimation(StageScene.PuppySexAllFours, "inside", {npc="tavi", pcCum=true, npcCum=true, npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("One rough motion and you shove your whole length inside. Tavi's body is shivering as your thrust pushes her over the edge as well. Her pussy clenching around your throbbing {pc.penis} while strings of thick virile {pc.cum} flood her womb to the brim.")
+		saynn("Одним грубым движением ты вгоняешь всю свою длину внутрь. Тело Тави дрожит, когда твой толчок заставляет её тоже сорваться в экстаз. Её киска сжимается вокруг твоего пульсирующего {pc.penis}, пока струи густой, мужской {pc.cum} наполняют её утробу до самых краев.")
 
-		saynn("[say=tavi]Awoo-o-of~..[/say]")
+		saynn("[say=tavi]Аууу-у-уф~..[/say]")
 
-		saynn("Seems Tavi approves of this, her tail wags into your hand while her slit milks you for all of your seed.")
+		saynn("Похоже, Тави это одобряет: её хвост виляет прямо в твою ладонь, а её киска выжимает из тебя всё до последней капли семени.")
 
-		saynn("[say=pc]Nghrh.. Good puppy.[/say]")
+		saynn("[say=pc]М-м-м.. Хорошая собачка.[/say]")
 
-		saynn("After her orgasm ends, Tavi just flops exhausted, letting the restraints hold her standing. Both of you got your needs satisfied it seems.")
+		saynn("Когда её оргазм стихает, Тави просто обессиленно валится на место, позволяя ремням удерживать её в вертикальном положении. Похоже, вы оба получили то, чего хотели.")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 	if(state == "do_petplay_fuck_pullout"):
 		playAnimation(StageScene.PuppySexAllFours, "tease", {npc="tavi", pcCum=true, npcCum=true, npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("Tavi's body is shivering, feeling the approaching climax, her pussy is clenching around your throbbing {pc.penis} so well.. But you decide to pull out at the last possible second, denying Tavi her orgasm while cumming all over her butt instead.")
+		saynn("Тело Тави дрожит, предчувствуя приближающийся климакс, её киска так сладко сжимает твой пульсирующий {pc.penis}.. Но ты решаешь вытащиться в самый последний момент, лишая Тави оргазма и кончая прямо ей на задницу.")
 
-		saynn("Strings of thick virile {pc.cum} mark her fur. Tavi huffs and stomps a lot, her restraints not leaving her much room to protest.")
+		saynn("Струйки густого, мужского {pc.cum} пачкают её мех. Тави тяжело дышит и много топает лапами, но из-за пут у неё не так много пространства для протеста.")
 
-		saynn("[say=tavi]Huff..[/say]")
+		saynn("[say=tavi]Фух..[/say]")
 
-		saynn("It's cute to see her not breaking character even when she is left unsatisfied. As her body begins to cool, little quiet whines can be heard.")
+		saynn("Мило видеть, как она не выходит из образа, даже когда остаётся неудовлетворённой. Когда её тело начинает остывать, слышны тихие, едва уловимые поскуливания.")
 
-		addButton("Continue", "See what happens next", "start_talk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk")
 	if(state == "do_petplay_strapon"):
 		playAnimation(StageScene.PuppySexOral, "tease", {npc="tavi", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("You are feeling kinky today so you decide to quickly grab some puppy restraints and force them on Tavi's paws and legs, making her stand on her knees and elbows.")
+		saynn("Сегодня тебя тянет на извращения, поэтому ты решаешь быстро схватить щенячьи фиксаторы и нацепить их на лапы и ноги Тави, заставляя её встать на колени и локти.")
 
-		saynn("[say=tavi]..woof..[/say]")
+		saynn("[say=tavi]..гав..[/say]")
 
-		saynn("She is bouncing and wiggling while panting softly, her tail wagging a lot. Tavi is already slipping into her puppy mindset.")
+		saynn("Она подпрыгивает и виляет всем телом, тихонько посапывая, а её хвост так и ходит ходуном. Тави уже вовсю погружается в состояние щенка.")
 
-		saynn("[say=tavi]Woof?..[/say]")
+		saynn("[say=tavi]Гав?..[/say]")
 
-		saynn("Your puppy rubs her body against you, teasingly presenting you her sex. The animal heat seems to be driving her up to the wall, making her eager to get fucked. So why deny her?")
+		saynn("Твоя сучка трётся телом о тебя, дразняще подставляя свою киску. Животный жар, кажется, сводит её с ума, заставляя жаждать траха.")
 
-		saynn("After restraining your pet, you take a step back and secure a strapon harness around your waist before crouching and gesturing to Tavi to come closer. She obeys, crawling along the floor until her muzzle bumps into your new toy.")
+		saynn("Сковав свою питомицу, ты отступаешь на шаг и затягиваешь на талии порно-ремень со страпоном, после чего приседаешь и жестом подзываешь Тави ближе. Она подчиняется, подползая по полу, пока её морда не упирается в твою новую игрушку.")
 
-		saynn("[say=tavi]Woof..[/say]")
+		saynn("[say=tavi]Гав...[/say]")
 
-		saynn("Without any input, she starts licking and nuzzling the rubber length.")
+		saynn("Не дожидаясь команд, она начинает лизать и обнюхивать резиновую плоть.")
 
-		saynn("Might as well let her continue.")
+		saynn("Пожалуй, стоит дать ей продолжить.")
 
-		addButton("Continue", "See what happens next", "do_petplay_strapon_bj")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_petplay_strapon_bj")
 	if(state == "do_petplay_strapon_bj"):
 		playAnimation(StageScene.PuppySexOral, "sex", {npc="tavi", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("After teasing your fake cock for a bit, Tavi parts her lips and grabs its tip into her mouth, sucking softly while her tongue works along the length. You don't feel it since it's just a toy but Tavi seems to be enjoying herself, her rear is swaying a lot as she is rubbing her thighs against each other.")
+		saynn("Немного поразвлекаясь с твоим фаллоимитатором, Тави приоткрывает губы и захватывает его кончик в рот, мягко посасывая и проходя языком по всей длине. Ты почти не чувствуешь этого, ведь это всего лишь игрушка, но Тави явно в восторге: её задница активно виляет, а бёдра трутся друг о друга.")
 
-		saynn("Maybe it's time for the main event.")
+		saynn("Пожалуй, пора переходить к главному блюду.")
 
 		if (!isVirgin):
-			addButton("Fuck Tavi", "Get behind her", "do_petplay_strapon_behind")
+			addButton("Трахать Тави", "Встать сзади неё", "do_petplay_strapon_behind")
 		else:
-			addDisabledButton("Fuck Tavi", "Tavi can't be a virgin for this")
-		addButton("Deepthroat", "Make Tavi deepthroat the toy instead", "do_petplay_strapon_dt")
+			addDisabledButton("Трахать Тави", "Тави не может быть девственницей при таком раскладе")
+		addButton("Глубокий минет", "Заставить Тави глубоко заглотить игрушку", "do_petplay_strapon_dt")
 	if(state == "do_petplay_strapon_dt"):
 		playAnimation(StageScene.PuppySexOral, "fast", {npc="tavi", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("You can strapon her pussy some other time, that throat is too inviting.")
+		saynn("Трахнуть её пизду можно и в другой раз, это горло слишком так и манит.")
 
-		saynn("Your hands grab Tavi's "+str("horns" if getModule("TaviModule").hasHorns() else "head")+" and pull her deeper onto your rubber length, forcibly stretching her tight throat to the point of it bulging.")
+		saynn("Твои руки вцепляются в Тави, "+str("horns" if getModule("TaviModule").hasHorns() else "head")+" и заталкиваешь её глубже на свой резиновый ствол, насильно растягивая её узкое горло до тех пор, пока оно не начинает выпирать.")
 
-		saynn("Tavi produces a silent gasp as you proceed to fuck her throat, wet noises escaping from it while your puppy struggles to keep her gag reflex under control. She has no control in fact, the restraints make her completely helpless under your rough touch.")
+		saynn("Тави издает беззвучный всхлип, пока ты трахаешь ей горло; из него доносятся влажные звуки, пока твоя сучка изо всех сил пытается совладать с рвотным рефлексом. На самом деле, она вообще ничего не контролирует — благодаря путам она совершенно беспомощна под твоими грубыми ласками.")
 
-		saynn("It feels good to be in full control, her inner walls clenching around your strapon as she gags on it. Lonely tears begin streaming down her cheeks. And yet, her eyes show unquestionable loyalty.")
+		saynn("Приятно чувствовать полный контроль, когда её внутренние стенки сжимаются вокруг страпона, пока она давится им. По её щекам начинают течь одинокие слезы. И всё же, в её глазах читается непоколебимая преданность.")
 
-		saynn("You can feel some sensation building in Tavi..")
+		saynn("Ты чувствуешь, как внутри Тави нарастает возбуждение...")
 
-		addButton("Harder", "Test Tavi's limits", "do_petplay_strapon_harder")
-		addButton("Pull out", "Cum on Tavi's face instead", "do_petplay_strapon_bj_pullout")
+		addButton("Жёстче", "Проверить пределы Тави", "do_petplay_strapon_harder")
+		addButton("Вытащить", "Вместо этого кончить Тави на лицо", "do_petplay_strapon_bj_pullout")
 	if(state == "do_petplay_strapon_harder"):
-		saynn("You've been fucking that throat for while. Maybe it's time to stop.")
+		saynn("Ты уже какое-то время трахаешь ей горло. Может, пора остановиться?")
 
-		saynn("But you don't pull out. Instead, you ram the toy fully inside, aside from the knot, stealing Tavi's ability to breathe completely! She is at your complete mercy..")
+		saynn("Но ты не вынимаешь его. Вместо этого ты с силой вбиваешь игрушку внутрь, за самый узел, полностью лишая Тави возможности дышать! Она полностью во власти твоей милости...")
 
-		saynn("Tavi's loyal eyes roll up. Her body is getting weaker and weaker.. until she suddenly cums, her frame shivering wildly while her pussy clenches around the cock that's not there and then squirts, spawning a fountain of transparent juices.")
+		saynn("Преданные глаза Тави закатываются. Её тело становится всё слабее и слабее... пока она внезапно не кончает; её тело сотрясает дикая дрожь, а пизда судорожно сжимается вокруг несуществующего члена, после чего её заливает фонтаном прозрачного сока.")
 
-		saynn("It probably feels better than any pussy, Tavi's throat is clenching extremely tight around that rubber cock.. But you pull out as soon as you sense her getting too weak.")
+		saynn("Вероятно, это ощущается лучше, чем любая пизда — горло Тави невероятно туго обхватывает резиновый член... Но ты вынимаешь его, как только чувствуешь, что она становится слишком слабой.")
 
-		saynn("Tavi gasps and flops onto the floor. She starts coughing a lot.")
+		saynn("Тави ахает и валится на пол. Она начинает сильно кашлять.")
 
-		saynn("[say=pc]Good puppy. Such a good puppy.[/say]")
+		saynn("[say=pc]Хорошая собачка. Такая хорошая собачка.[/say]")
 
-		saynn("Tavi is.. lying wasted on the floor, her breath extremely ragged and deep. But this seems to have satisfied her heat, strangely enough.")
+		saynn("Тави... лежит на полу совершенно измотанная, её дыхание тяжёлое и прерывистое. Но, как ни странно, это, похоже, утолило её течку.")
 
-		addButton("Continue", "See what happens next", "start_talk_removestrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk_removestrapon")
 	if(state == "do_petplay_strapon_bj_pullout"):
 		playAnimation(StageScene.PuppySexOral, "tease", {npc="tavi", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("You decide not to push Tavi too far and instead just gradually slow down until you pull out the toy completely. Tavi is squirming, it seems she had something going.. But now she doesn't have the source of that stimulation.")
+		saynn("Ты решаешь не слишком наседать на Тави и вместо этого просто постепенно замедляешься, пока полностью не вынимаешь игрушку. Тави извивается — кажется, она была уже на грани... но теперь источник стимуляции исчез.")
 
-		saynn("[say=pc]Good puppy. Best puppy.[/say]")
+		saynn("[say=pc]Хорошая собачка. Лучшая собачка.[/say]")
 
-		saynn("She huffs even after your compliments. She didn't get to cum. And these restraints make sure that she can't do it even if she really wanted to. Tavi is forced to endure her body cooling down.")
+		saynn("Она фыркает даже после твоих комплиментов. Она так и не кончила. А эти путы гарантируют, что она не сможет этого сделать, даже если очень захочет. Тави вынуждена терпеть, как её возбуждение постепенно угасает.")
 
-		addButton("Continue", "See what happens next", "start_talk_removestrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk_removestrapon")
 	if(state == "do_petplay_strapon_behind"):
 		playAnimation(StageScene.PuppySexAllFours, "fast", {npc="tavi", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("Enough teasing. You pull away from Tavi and move behind her, already aligning your strapon with her sex. The feline looks over her shoulder, her tail quickly getting out of the way, giving you full access to her love tunnel.")
+		saynn("Хватит дразнить. Ты отстраняешься от Тави и перемещаешься ей за спину, уже прицеливая страпон к её киске. Кошка оглядывается через плечо, быстро убирая хвост в сторону, чтобы открыть тебе полный доступ к её любовному туннелю.")
 
-		saynn("[say=tavi]Woof..[/say]")
+		saynn("[say=tavi]Гав...[/say]")
 
-		saynn("One thrust and you're inside. Your hands land on Tavi's hips and command them while the rubber cock spreads open her slit and stretches the inner walls wide. Puppy purrs as she feels your new length inside her.")
+		saynn("Один мощный толчок — и ты внутри. Твои руки ложатся на бёдра Тави, управляя ими, пока резиновый член раздвигает её щель и растягивает внутренние стенки. Щенок довольно мурлычет, чувствуя твою новую длину внутри себя.")
 
-		saynn("Your hand grabs her tail and uses it as a leash, pulling, while you are throwing your hips forward.")
+		saynn("Твоя рука хватает её за хвост, используя его как поводок, и тянет на себя, пока ты выбрасываешь бёдра вперёд.")
 
-		saynn("[say=tavi]..Awo.. wo-..o -f..[/say]")
+		saynn("[say=tavi]..Ауу.. во-..о -ф..[/say]")
 
-		saynn("Tavi is trying to squirm but the restraints keep her nice and still for you. It doesn't take long for Tavi's moans to start coming out faster.")
+		saynn("Тави пытается извиваться, но путы держат её послушно неподвижной. Вскоре её стоны начинают вырываться всё чаще и быстрее.")
 
-		addButton("Knot Tavi", "Breed your pet", "do_petplay_strapon_cuminside")
-		addButton("Pull out", "Just pull the strapon out", "do_petplay_strapon_pullout")
+		addButton("Завязать Тави", "Оплодотворить свою питомицу", "do_petplay_strapon_cuminside")
+		addButton("Вытащить", "Просто вытащить страпон", "do_petplay_strapon_pullout")
 	if(state == "do_petplay_strapon_cuminside"):
 		playAnimation(StageScene.PuppySexAllFours, "inside", {npc="tavi", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("One rough motion and you shove your whole length inside, including the fat rubber knot. Tavi's body is shivering as your thrust pushes her over the edge as well. Her pussy clenching around your throbbing strapon while strings of cum-like substance flood her womb to the brim. It seems this strapon was loaded..")
+		saynn("Одним грубым движением ты вгоняешь всю свою длину внутрь, включая жирное резиновое уплотнение. Тело Тави дрожит, когда твой толчок доводит и её до самого края. Её киска сжимается вокруг пульсирующего страпона, пока струи семяподобной субстанции наполняют её утробу до самых краёв. Похоже, этот страпон был заряжен...")
 
-		saynn("[say=tavi]Awoo-o-of~..[/say]")
+		saynn("[say=tavi]Аууу-у-уф~..[/say]")
 
-		saynn("Seems Tavi approves of this, her tail wags into your hand while her slit milks the toy for all of its cumlube. Where is Tavi getting so much of it..")
+		saynn("Похоже, Тави это нравится: её хвост виляет, когда она прижимается к твоей руке, а её щель выжимает из игрушки всю смазку до последней капли. Откуда у неё столько этой жижи...")
 
-		saynn("[say=pc]Nghrh.. Good puppy.[/say]")
+		saynn("[say=pc]М-м-м.. Хорошая собачка.[/say]")
 
-		saynn("After her orgasm ends, Tavi just flops exhausted, letting the restraints hold her standing. She got her needs satisfied, it seems.")
+		saynn("Когда оргазм утихает, Тави просто обессиленно обмякает, позволяя ремням удерживать её в вертикальном положении. Похоже, свои потребности она удовлетворила.")
 
-		addButton("Continue", "See what happens next", "start_talk_removestrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk_removestrapon")
 	if(state == "do_petplay_strapon_pullout"):
 		playAnimation(StageScene.PuppySexAllFours, "tease", {npc="tavi", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("Tavi's body is shivering, feeling the approaching climax, her pussy is clenching around your strapon so well.. But you decide to pull out at the last possible second, denying Tavi her orgasm.")
+		saynn("Тело Тави дрожит, она чувствует приближение климакса, её киска так сладко сжимает твой страпон... Но ты решаешь вытащить его в самый последний момент, лишая Тави оргазма.")
 
-		saynn("Tavi huffs and stomps a lot, her restraints not leaving her much room to protest. Her pussy pulsing, showing how close she was.")
+		saynn("Тави тяжело дышит и пытается возмущенно топать, но ремни не дают ей особого простора для протеста. Её киска пульсирует, выдавая то, насколько близко она была к разрядке.")
 
-		saynn("[say=tavi]Huff..[/say]")
+		saynn("[say=tavi]Фух..[/say]")
 
-		saynn("It's cute to see her not breaking character even when she is left unsatisfied. As her body begins to cool, little quiet whines can be heard.")
+		saynn("Мило видеть, как она не выходит из образа, даже когда остаётся неудовлетворённой. Когда её тело начинает остывать, слышны тихие, едва уловимые поскуливания.")
 
-		addButton("Continue", "See what happens next", "start_talk_removestrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_talk_removestrapon")
 	if(state == "do_pussy_spank"):
 		playAnimation(StageScene.GivingBirth, "birth", {pc="tavi", bodyState={naked=true}})
-		saynn("A devious thought comes into your mind. You know a great way to solve that heat problem that would also satisfy her masochistic cravings at the same time.")
+		saynn("В твоей голове рождается коварная мысль. Ты знаешь отличный способ решить проблему её течки, который заодно удовлетворит её мазохистские наклонности.")
 
-		saynn("You push Tavi onto the bed and part her thighs, exposing her intimate area that produces such an alluring scent. A mixture of excitement and curiosity courses through Tavi as your palm lands on her sex and proceeds to rub it softly, she is probably expecting you to make her feel good..")
+		saynn("Ты толкаешь Тави на кровать и раздвигаешь её бедра, обнажая интимную зону, источающую такой манящий аромат. Смесь возбуждения и любопытства проносится сквозь Тави, когда твоя ладонь ложится на её секс и начинает мягко растирать его; она, вероятно, ждет, что ты доставишь ей удовольствие...")
 
-		saynn("[say=pc]This will be painful.[/say]")
+		saynn("[say=pc]Это будет больно.[/say]")
 
-		saynn("Tavi only produces a curious hum when your hand suddenly comes down with a resounding smack, Tavi's loud cry echoing in the cell as you deliver your first spank to her sensitive wet pussy. It wasn't even that powerful of an impact but it really caught her off-guard.")
+		saynn("Тави лишь издает любопытное мычание, когда твоя рука внезапно опускается с звонким шлепком; её громкий вскрик эхом разносится по камере, когда ты наносишь первый шлепок по её чувствительной влажной киске. Удар был не таким уж сильным, но он застал её врасплох.")
 
-		saynn("[say=tavi]Ah! F-fuck!..[/say]")
+		saynn("[say=tavi]Ах! Б-блядь!..[/say]")
 
-		saynn("She closes her thighs instinctively.. But you don't let her get away so easily, forcibly spreading her legs again before delivering another little slap to her pussy folds, causing them to pulse and receive a green glow while the rest of her body squirms from the painful sensations.")
+		saynn("Она инстинктивно сжимает бедра... Но ты не даешь ей так легко отделаться: ты снова силой разводишь её ноги и отвешиваешь еще одну звонкую пощечину по складкам её киски. От этого её плоть начинает пульсировать и светиться зеленым, а всё остальное тело кокетливо извивается от болезненных ощущений.")
 
-		saynn("[say=tavi]Ow!..[/say]")
+		saynn("[say=tavi]Ой!..[/say]")
 
-		saynn("She tries to cover her glowing pussy but you slap her paws away.")
+		saynn("Она пытается прикрыть свою светящуюся киску, но ты отшвыриваешь её лапки в стороны.")
 
-		saynn("[say=pc]No. You're gonna endure it. Like a good painslut.[/say]")
+		saynn("[say=pc]Нет. Ты будешь это терпеть. Как послушная больная сучка.[/say]")
 
-		saynn("The feline is panting already, her legs shivering a little. So you decide to give her a little break and adjust your approach. Your fingers land on her slick petals and gently explore them, rubbing the sensitive flesh. Tavi produces a moan of discomfort while you are teasing her irritated skin.. but you also spot a sizable wet spot forming on the bedsheets underneath her.")
+		saynn("Кошечка уже тяжело дышит, её ноги слегка дрожат. Ты решаешь сделать небольшой перерыв и сменить тактику. Твои пальцы ложатся на её скользкие лепестки и начинают нежно исследовать их, потирая чувствительную плоть. Тави издает стон дискомфорта, пока ты дразнишь её раздраженную кожу... но при этом ты замечаешь, как под ней на простынях образуется приличное влажное пятно.")
 
-		saynn("[say=tavi]Y-yes.. O-okay..[/say]")
+		saynn("[say=tavi]Д-да.. Х-хорошо..[/say]")
 
-		saynn("So cute to see her twitch each time your digits change direction or jump to some other spot. Tavi does not try to close her legs anymore. But she is clearly bracing.. So why make her wait?")
+		saynn("Так мило наблюдать, как она вздрагивает каждый раз, когда твои пальцы меняют направление или перескакивают на другое место. Тави больше не пытается свести ноги. Но она явно готовится... Так зачем заставлять её ждать?")
 
-		saynn("You pick a good moment and start spanking Tavi's pussy again, slightly raising your palm before bringing it down for a weak but stinging impact. And this time, instead of a painful cry, Tavi produces a stifled moan. The more you spank her, the louder and more passionate her noises become. Tavi is grinding her teeth, barely balancing on that scale of enjoyment vs torture.")
+		saynn("Ты выбираешь подходящий момент и снова начинаешь шлепать Тави по киске, слегка приподнимая ладонь, прежде чем обрушить её на неё — удар слабый, но жгучий. И на этот раз вместо болезненного вскрика Тави издает сдавленный стон. Чем больше ты её шлепаешь, тем громче и страстнее становятся её звуки. Тави стискивает зубы, едва балансируя на грани между наслаждением и пыткой.")
 
-		saynn("[say=tavi]Ah.. Ngh-h.. F-fu.. ck..[/say]")
+		saynn("[say=tavi]Ах.. Нгх-х.. Б-бля.. дь..[/say]")
 
-		saynn("Her body is shivering from so much pain.. or.. is she about to cum?")
+		saynn("Её тело дрожит от сильной боли... или... она вот-вот кончит?")
 
-		addButton("Harder", "Make Tavi cum from pain", "do_pussy_spank_cum")
-		addButton("Deny", "Deny Tavi this orgasm", "do_pussy_spank_deny")
+		addButton("Жёстче", "Довести Тави до оргазма через боль", "do_pussy_spank_cum")
+		addButton("Отказать", "Лишить Тави оргазма", "do_pussy_spank_deny")
 	if(state == "do_pussy_spank_deny"):
 		playAnimation(StageScene.GivingBirth, "idle", {pc="tavi", bodyState={naked=true}})
-		saynn("Tavi is clearly expecting some big final slap.. and so you raise your palm.. just to keep it raised like that. Tavi is squinting and bracing, expecting your hand to come down sticking any second.. but it just never does.")
+		saynn("Тави явно ждет мощного финального шлепка... и ты поднимаешь ладонь... но так и оставляешь её в воздухе. Тави щурится и сжимается, ожидая, что твоя рука вот-вот обрушится на неё... но она всё не опускается.")
 
-		saynn("[say=tavi]Are you gonna do it?.. I'm so.. close..[/say]")
+		saynn("[say=tavi]Ну же, сделай это!.. Я уже так.. близко..[/say]")
 
-		saynn("You smile and shake your head. Tavi sees that and starts whining. As her heat slowly goes away unsatisfied, the sensitivity of her bits returns, making pain feel that much stronger.")
+		saynn("Ты улыбаешься и качаешь головой. Тави видит это и начинает ныть. По мере того как её возбуждение медленно угасает, не принеся разрядки, чувствительность её киски возвращается, из-за чего боль ощущается ещё острее.")
 
-		saynn("[say=tavi]Ow-w..[/say]")
+		saynn("[say=tavi]Ой-ой..[/say]")
 
-		saynn("Each time she tries to soothe her skin with her digits, she only ends up hissing and pulling her hand away. It clearly hurts.")
+		saynn("Каждый раз, когда она пытается успокоить кожу пальцами, она лишь шипит от боли и отдергивает руку. Ей явно больно.")
 
-		saynn("[say=tavi]No-o.. I was so clo-o-ose.. Why are you so mean..[/say]")
+		saynn("[say=tavi]Не-е-ет.. Я была так близко-о-о.. Почему ты такой злюка..[/say]")
 
-		saynn("Seems like spanking her slit wasn't mean but not letting her cum? That's the real torture!")
+		saynn("Похоже, шлепать её по щели было еще не так жестоко, как не давать ей кончить? Вот это настоящая пытка!")
 
-		saynn("You leave Tavi to recover after that intense session.")
+		saynn("После такой интенсивной сессии ты оставляешь Тави приходить в себя.")
 
-		addButton("Continue", "That was nice", "start_talk")
+		addButton("Продолжить", "Это было приятно", "start_talk")
 	if(state == "do_pussy_spank_cum"):
-		saynn("With a final, most powerful spank on Tavi's slit, her body gets pushed over the edge, a weird mix of pleasure and pain crashing over her like a tidal wave, her glowing bruises pussy producing a strong uncontrollable fountain of juices.")
+		saynn("Финальный, самый мощный шлепок по щели Тави заставляет её тело сорваться в бездну; странная смесь удовольствия и боли накрывает её подобно приливной волне, а её светящиеся синяками киски извергают мощный, неудержимый фонтан соков.")
 
-		saynn("[say=tavi]Fuck me-e-e..[/say]")
+		saynn("[say=tavi]Трахни меня-а-а..[/say]")
 
-		saynn("The two opposite feelings collide and enhance each other, intensifying her orgasm in ways she never thought were possible. Tavi's lusty eyes roll away, her body trembling and arching itself.")
+		saynn("Два противоположных чувства сталкиваются и усиливают друг друга, делая её оргазм мощнее, чем она могла себе представить. Похотливые глаза Тави закатываются, а тело дрожит и выгибается дугой.")
 
-		saynn("Even after the last waves of her orgasm pass through her, Tavi is still squirming and twitching each time she tries to close her legs, the afterglow making her moan.")
+		saynn("Даже когда последние волны оргазма утихают, Тави всё ещё ерзает и вздрагивает каждый раз, когда пытается свести ноги, а послевкусие заставляет её стонать.")
 
-		saynn("[say=pc]Such a good pain toy.[/say]")
+		saynn("[say=pc]Такая хорошая игрушка для боли.[/say]")
 
-		saynn("[say=tavi]T-thank you..[/say]")
+		saynn("[say=tavi]С-спасибо..[/say]")
 
-		addButton("Enough", "That was nice", "start_talk")
-		addButtonWithChecks("Breed Tavi", "Fuck that bruised pussy", "do_pussy_spank_breed_start", [], [ButtonChecks.HasReachablePenis])
+		addButton("Хватит", "Это было приятно", "start_talk")
+		addButtonWithChecks("Оплодотворить Тави", "Трахнуть эту в синяках", "do_pussy_spank_breed_start", [], [ButtonChecks.HasReachablePenis])
 	if(state == "do_pussy_spank_breed_start"):
 		playAnimation(StageScene.SexMissionary, "tease", {npc="tavi", pc="pc", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("That was enough for Tavi.. but it wasn't enough for you. An even more devious thought comes into your mind as you lean in closer to your pet, your lips finding Tavi's in a deep, lingering kiss. Tavi responds with a soft whimper as you gently spread her legs wider and position yourself between them.")
+		saynn("Для Тави этого было достаточно... но для тебя — нет. Когда ты наклоняешься ближе к своей питомице, в твоей голове рождается ещё более порочная мысль, а твои губы находят губы Тави в глубоком, затяжном поцелуе. Тави отвечает тихим скулением, пока ты осторожно разводишь её ноги шире и устраиваешься между ними.")
 
-		saynn("Tavi's pussy is still sensitive from that series of slaps that her folds received. She jerks when she feels your {pc.penis} pressing against her"+str(" virgin" if getModule("TaviModule").isVirgin() else "")+" entrance. Her shaky eyes lock onto yours while you continue the deep kiss, making Tavi focus on it instead..")
+		saynn("Киска Тави всё ещё сверхчувствительна после серии шлепков, полученных её складками. Она вздрагивает, когда чувствует, как твой {pc.penis} прижимается к её"+str(" virgin" if getModule("TaviModule").isVirgin() else "")+"входу. Её дрожащие глаза встречаются с твоими, пока ты продолжаешь глубокий поцелуй, заставляя Тави сосредоточиться на нём...")
 
-		addButton("Thrust inside", "Fuck Tavi's pussy raw", "do_pussy_spank_breed")
+		addButton("Трахнуть внутрь", "Трахать киску Тави без презерватива", "do_pussy_spank_breed")
 	if(state == "do_pussy_spank_breed"):
 		playAnimation(StageScene.SexMissionary, "fast", {npc="tavi", pc="pc", pcCum=true, npcCum=true, npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
 		if (tookVirginity):
-			saynn("As you slowly enter her.. you quickly encounter Tavi's organic barricade, the last sign of her innocence. Her body visibly tenses the more you put pressure on it.. Seems like this requires some force..")
+			saynn("Пока ты медленно входишь в неё... ты натыкаешься на органический барьер Тави — последний признак её невинности. Её тело заметно напрягается, чем сильнее ты давишь... Похоже, здесь не обойтись без силы...")
 
-			saynn("And so, with one rough motion, you thrust inside! Your member tears through Tavi's hymen, [b]stealing her virginity![/b] Poor Tavi arches her back and produces a muffled cry as two kinds of pain amplify each other inside her mind, her pussy clenching extremely tightly around its first ever cock, some green glowing blood drips onto her sheets.")
+			saynn("И вот, одним резким движением ты входишь внутрь! Твой член разрывает девственную плеву Тави, [b]лишая её невинности![/b] Бедная Тави выгибает спину и издает приглушенный крик, когда два вида боли усиливают друг друга в её сознании, а её киска мертвой хваткой сжимается вокруг своего самого первого члена; на простыни капает светящаяся зеленая кровь.")
 
-			saynn("And all of that while you keep kissing her, your tongues doing a little tango inside Tavi's mouth, exchanging saliva.")
+			saynn("И всё это время ты продолжаешь целовать её, ваши языки исполняют маленькое танго во рту Тави, обмениваясь слюной.")
 
 		else:
-			saynn("And so, with one rough motion, you thrust inside! Poor Tavi arches her back and produces a muffled cry as her irritated skin gets forcibly spread by your cock, her pussy clenching extremely tightly around it while also pulsating in time with her quick breathing.")
+			saynn("И вот, одним резким движением ты входишь внутрь! Бедная Тави выгибает спину и издает приглушенный крик, пока твой член насильно растягивает её раздраженную кожу, а её киска сжимается вокруг него мертвой хваткой, пульсируя в такт её частому дыханию.")
 
-			saynn("And all of that while you keep kissing her, your tongues doing a little tango inside Tavi's mouth, exchanging saliva.")
+			saynn("И всё это время ты продолжаешь целовать её, ваши языки исполняют маленькое танго во рту Тави, обмениваясь слюной.")
 
-		saynn("Quickly, you find a good rhythm, each of your thrusts sending the same kinds of sharp impulses that the pussy spanking did. Finally, you end the kiss, allowing Tavi to start producing painful noises of love, scratching your sadistic itch.")
+		saynn("Вскоре ты ловишь ритм, и каждый твой толчок посылает те же резкие импульсы, что и шлепки по киске. Наконец, ты прерываешь поцелуй, позволяя Тави начать издавать болезненные стоны любви, утоляя твой садистский зуд.")
 
-		saynn("[say=tavi]It h-hurts.. so good..[/say]")
+		saynn("[say=tavi]Б-больно.. но так хорошо..[/say]")
 
-		saynn("Her paws grip onto you, claws digging into your skin as the pleasure within her builds once more. Her bruised"+str(" bleeding" if tookVirginity else "")+" pussy is pulsing around your length until.. with a passionate moan, Tavi's orgasm clouds her mind, her body starts to convulse underneath you. Feeling such tightness, your thrusts only become more urgent and rough, your own release catching up fast..")
+		saynn("Её лапки вцепляются в тебя, когти впиваются в твою кожу, пока удовольствие внутри неё нарастает вновь. Её покрытые синяками"+str(" bleeding" if tookVirginity else "")+" киска пульсирует вокруг твоего члена, пока... со страстным стоном оргазм затуманивает разум Тави, и её тело начинает содрогаться под тобой. Чувствуя такую тесноту, ты лишь ускоряешь и грубее вколачиваешь себя в неё, и твоя собственная разрядка настигает тебя почти мгновенно...")
 
-		saynn("After all this.. pulling out is not an option. As Tavi's walls keep tightening around your member, you decide to just give in to it, your body shuddering as you get pushed way past your edge, your cock is throbbing as it stuffs that awaiting womb full of your {pc.cum}. A load so big that some is already leaking out"+str(", mixing with the green blood" if tookVirginity else "")+".")
+		saynn("После всего этого... выниматься — не вариант. Пока стенки Тави продолжают сжиматься вокруг твоего достоинства, ты решаешь просто отдаться этому чувству; твоё тело дрожит, когда тебя выбрасывает далеко за предел, а член пульсирует, наполняя её ждущую матку твоим {pc.cum}. Заряд настолько огромный, что часть его уже начинает вытекать наружу"+str(", mixing with the green blood" if tookVirginity else "")+".")
 
-		addButton("Continue", "See what happens next", "do_pussy_spank_breed_after")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_pussy_spank_breed_after")
 	if(state == "do_pussy_spank_breed_after"):
 		playAnimation(StageScene.SexMissionary, "inside", {npc="tavi", pc="pc", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("Both of you are breathing heavily. Sensitivity gradually returns to Tavi, making her hiss softly, her bruised pussy got put under a lot of stress today.."+str(" Not to mention getting her virginity stolen.. But that was gonna happen one day either way.." if tookVirginity else "")+"")
+		saynn("Вы оба тяжело дышите. К Тави постепенно возвращается чувствительность, заставляя её тихо шипеть — её отбитая киска сегодня подверглась слишком сильной нагрузке..."+str(" Not to mention getting her virginity stolen.. But that was gonna happen one day either way.." if tookVirginity else "")+"")
 
-		saynn("[say=tavi]Ow.. ow..[/say]")
+		saynn("[say=tavi]Ох... ох...[/say]")
 
-		saynn("[say=pc]You were exceptional, Tavi.[/say]")
+		saynn("[say=pc]Ты была великолепна, Тави.[/say]")
 
-		saynn("Tavi's cheeks blush, she is trying to offer you a smile but can't really hold it, the corners of her mouth shaking a little.")
+		saynn("Щёки Тави заливаются румянцем; она пытается улыбнуться тебе, но не может удержаться, уголки её губ слегка подрагивают.")
 
-		saynn("[say=tavi]T-thank you.. h-h..[/say]")
+		saynn("[say=tavi]С-спасибо... ах... ах...[/say]")
 
-		saynn("You pull out and let Tavi recover. She hisses again as your seed starts leaking out of her used bruised pussy.")
+		saynn("Ты выходишь из неё, давая Тави прийти в себя. Она снова шипит, когда твоё семя начинает вытекать из её измученной, отбитой киски.")
 
-		addButton("Continue", "That was nice", "start_talk")
+		addButton("Продолжить", "Это было приятно", "start_talk")
 func taviSpeak(normalSpeak, corruptSpeak, pureSpeak):
 	if(isCorrupt):
 		return corruptSpeak

@@ -11,94 +11,94 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcAction="kneel"})
 		
-		saynn("You cross your arms and give Tavi a strict gaze of your own.")
+		saynn("Ты скрещиваешь руки на груди и отвечаешь Тави строгим взглядом.")
 
-		saynn("[say=pc]On your knees.[/say]")
+		saynn("[say=pc]На колени.[/say]")
 
-		saynn("She tilts her head at you and frowns.")
+		saynn("Она наклоняет голову набок и хмурится.")
 
-		saynn("[say=tavi]Why in the world would I do that. I’m not your fucking sextoy.[/say]")
+		saynn("[say=tavi]С какого перепугу я должна это делать? Я тебе, блядь, не секс-игрушка![/say]")
 
-		saynn("Tavi is clearly not gonna do it willingly so you decide to help her. You walk up to the downed feline and reach your hand out to try and grab her hair. She tries to push you away but you overpower her and manage to get a good pull on her hair, causing her to hiss and let out a painful groan.")
+		saynn("Очевидно, что Тави не собирается делать это добровольно, поэтому ты решаешь ей «помочь». Ты подходишь к поваленной кошечке и протягиваешь руку, пытаясь схватить её за волосы. Она пытается оттолкнуть тебя, но ты пересиливаешь её и крепко дергаешь за волосы, заставляя её зашипеть и издать болезненный стон.")
 
-		saynn("[say=tavi]Uh, you fucker![/say]")
+		saynn("[say=tavi]Ай, ублюдок![/say]")
 
-		saynn("You pull her head back and forth, she holds onto your hand and grinds her teeth. Your second arm gives her a firm faceslap, calming her down. You’re rough but you clearly have a reason, that red tried to make you her subby pet.")
+		saynn("Ты дергаешь её голову вперед-назад; она вцепляется в твою руку и скрежещет зубами. Второй рукой ты отвешиваешь ей звонкую пощечину, заставляя её немного успокоиться. Ты груб, но у тебя явно есть причина — эта рыжая пыталась сделать из тебя своего послушного питомца.")
 
-		saynn("[say=pc]At this rate you will quickly end up in the medbay. Just kneel, you bitch.[/say]")
+		saynn("[say=pc]При таком раскладе ты быстро окажешься в медпункте. Просто встань на колени, сучка.[/say]")
 
-		saynn("She is still on the floor, trying to break free from your grasp. In the end, Tavi manages to press her leg into you and push you away, it was painful for her but she managed to free herself. But she is still weak so she crawls back a few meters and then takes her time trying to stand up.")
+		saynn("Она всё еще на полу, пытаясь вырваться из твоей хватки. В конце концов Тави удается упереться ногой в тебя и оттолкнуть, — ей было больно, но она сумела освободиться. Однако она всё еще слаба, поэтому она отползает на несколько метров назад, а затем медленно пытается подняться на ноги.")
 
-		addButton("Let her go", "That was enough to teach her a lesson", "let_her_go")
-		addButton("Break Tavi", "Apply extra pressure to make her submit to you. It’s not gonna be pretty", "break_tavi")
+		addButton("Отпустить её", "Этого было достаточно, чтобы преподать ей урок.", "let_her_go")
+		addButton("Сломить Тави", "Надави на неё сильнее, чтобы заставить подчиниться. Это будет не слишком красиво.", "break_tavi")
 
 	if(state == "let_her_go"):
-		saynn("You chuckle and cross your arms again.")
+		saynn("Ты усмехаешься и снова скрещиваешь руки на груди.")
 
-		saynn("[say=pc]Pathetic. You’re weak. Why did they even put you in red.[/say]")
+		saynn("[say=pc]Жалкая. Ты слабачка. Зачем тебя вообще в красный вообще определили?[/say]")
 
-		saynn("Tavi gets up with her help of the nearest wall and glares at you.")
+		saynn("Тави, опираясь на ближайшую стену, поднимается и свирепо смотрит на тебя.")
 
-		saynn("[say=tavi]Go die in a fire.. With the rest of this fucking prison.[/say]")
+		saynn("[say=tavi]Сдохни в огне... Вместе со всей этой гребаной тюрьмой.[/say]")
 
-		saynn("The defeated cat swiftly makes her escape before you change your mind.")
+		saynn("Потерпевшая поражение кошка стремительно сбегает, пока ты не передумал.")
 
-		addButton("Continue", "She got what she deserved anyways", "endthescene")
+		addButton("Продолжить", "Она всё равно получила то, что заслужила.", "endthescene")
 
 	if(state == "break_tavi"):
-		saynn("[say=pc]Where are you going? I’m not done with you yet.[/say]")
+		saynn("[say=pc]Куда это ты собралась? Я с тобой ещё не закончил.[/say]")
 
-		saynn("You slowly walk up to Tavi just in time for her to get up from the floor. You grab her by the collar and shove into the nearest wall, then your hand shifts up and closes around her neck instead, your second hand turns into a fist and threatens to punch her stomach. She growls into your face and tries to take your hand off her neck, her eyes show true hatred.")
+		saynn("Ты медленно подходишь к Тави как раз в тот момент, когда она поднимается с пола. Ты хватаешь её за воротник и впечатываешь в ближайшую стену, затем твоя рука перемещается выше и сжимается на её шее, а вторая рука сжимается в кулак, угрожая ударить её в живот. Она рычит тебе в лицо и пытается содрать твою руку со своей шеи, а в её глазах читается истинная ненависть.")
 
-		saynn("[say=pc]If I will have to break you before you start behaving - I will.[/say]")
+		saynn("[say=pc]Если мне придётся сломать тебя, прежде чем ты начнёшь вести себя прилично — я это сделаю.[/say]")
 
-		saynn("She keeps resisting, such a rebel. You start putting more pressure on her throat, making it harder for her to breathe if not impossible. She snarls back but after you start choking her out with the second hand too she becomes quiet, you start noticing signs of fear in her eyes. You put more mental pressure on her, your voice is strict and clear to make sure she understands.")
+		saynn("Она продолжает сопротивляться, настоящая бунтарка. Ты начинаешь сильнее сдавливать ей горло, из-за чего ей становится всё труднее, а затем и вовсе почти невозможно дышать. Она огрызается, но когда ты начинаешь душить её обеими руками, она затихает; ты начинаешь замечать страх в её глазах. Ты усиливаешь психологическое давление, твой голос звучит строго и четко, чтобы она всё прекрасно поняла.")
 
-		saynn("[say=pc]Think you’re invincible? Nothing stops me from snapping your neck right now, what's another ten years, my sentence is indefinite anyways. Is that how you wanna die?[/say]")
+		saynn("[say=pc]Думаешь, ты непобедима? Ничто не помешает мне сломать тебе шею прямо сейчас. Что такое еще десять лет? Мой срок всё равно неопределенный. Так вот как ты хочешь сдохнуть?[/say]")
 
-		saynn("Tavi looks terrified, as each second passes she loses more and more strength, the corners of her vision darken, her resistance gets weaker. She shakes her head to your question and raises her paws, surrendering.")
+		saynn("Тави выглядит до смерти напуганной; с каждой секундой она теряет всё больше сил, края её зрения темнеют, а сопротивление слабеет. На твой вопрос она качает головой и поднимает лапы, сдаваясь.")
 
-		saynn("[say=pc]Good choice.[/say]")
+		saynn("[say=pc]Правильный выбор.[/say]")
 
-		saynn("You didn’t really give her any choice but oh well, it was you or her. You stop choking her and she falls to the floor, coughing and gasping for air, her breathing is all messed up. She then rubs her neck and looks at you, her eyes don’t show much, just fear.")
+		saynn("На самом деле ты ей выбора не оставлял, но что ж, либо ты, либо она. Ты разжимаешь руки, и она валится на пол, кашляя и жадно хватая ртом воздух, её дыхание сбито. Затем она потирает шею и смотрит на тебя; в её глазах не читается почти ничего, кроме страха.")
 
-		saynn("You step back and point at the floor before you.")
+		saynn("Ты отступаешь на шаг и указываешь на пол перед собой.")
 
-		saynn("[say=pc]Kneel.[/say]")
+		saynn("[say=pc]На колени.[/say]")
 
-		saynn("Tavi tilts her head down and slowly crawls up to the spot before raising herself to her knees, still trying to catch her breath in the process. You lean down and grab her by the chin, she avoids any eye contact.")
+		saynn("Тави склоняет голову и медленно подползает к указанному месту, всё еще пытаясь отдышаться. Ты наклоняешься и берешь её за подбородок; она старается избегать твоего взгляда.")
 
-		saynn("[say=pc]Look at me.[/say]")
+		saynn("[say=pc]Смотри на меня.[/say]")
 
-		saynn("She looks you in the eyes but quickly turns her head away, you pull it back and give her face a slap, she grunts and obeys.")
+		saynn("Она смотрит тебе в глаза, но тут же отворачивается; ты резко дергаешь её голову обратно и даешь ей пощечину — она кряхтит и подчиняется.")
 
-		saynn("[say=pc]I see that you have some willpower, you’re not a simple girl. I will be very strict with you. Strict until you start to obey.[/say]")
+		saynn("[say=pc]Вижу, у тебя есть воля, ты не просто очередная пустышка. Я буду с тобой очень строг. Буду строг до тех пор, пока ты не начнешь беспрекословно подчиняться.[/say]")
 
-		saynn("She sits still and tries not to show her true emotion but her feline tail is betraying her by wagging around.")
+		saynn("Она сидит неподвижно, стараясь не выдавать своих истинных чувств, но кошачий хвост предает её, нервно подергиваясь из стороны в сторону.")
 
-		saynn("[say=tavi]Well. What do you want.[/say]")
+		saynn("[say=tavi]Ну? Чего ты хочешь?[/say]")
 
-		saynn("[say=pc]You belong to me now. Say it.[/say]")
+		saynn("[say=pc]Теперь ты принадлежишь мне. Скажи это.[/say]")
 
-		saynn("She rolls her eyes but the bruises on her neck give her a reminder. She sighs and looks down at the floor.")
+		saynn("Она закатывает глаза, но синяки на шее служат ей напоминанием. Она вздыхает и опускает взгляд в пол.")
 
-		saynn("[say=tavi]I belong to you.[/say]")
+		saynn("[say=tavi]Я принадлежу тебе.[/say]")
 
-		saynn("You give her some scritches behind the ear. Quiet purring can be heard from Tavi.")
+		saynn("Ты слегка почесываешь её за ушком. От Тави доносится тихое, довольное мурчание.")
 
-		saynn("[say=pc]Hands behind back, lean forward on the floor.[/say]")
+		saynn("[say=pc]Руки за спину и наклонись вперед, к полу.[/say]")
 
-		saynn("She thinks about your order but eventually obeys, putting her arms behind and lowering herself a bit. You see her struggling and decide to help by putting your foot on her back and pushing down, forcing her to be pretty much kissing the floor, her voice is muffled.")
+		saynn("Она обдумывает твой приказ, но в итоге подчиняется, заводит руки за спину и слегка приседает. Видя, как ей тяжело, ты решаешь помочь: ставишь ногу ей на спину и надавливаешь, заставляя её почти прижаться лицом к полу; её голос звучит приглушенно.")
 
-		saynn("[say=tavi]Mgh-h. There you go. Enjoying yourself?[/say]")
+		saynn("[say=tavi]Мгх-х... Вот так. Тебе нравится?[/say]")
 
-		saynn("[say=pc]Seeing you like this? Yes. Your behaviour? No.[/say]")
+		saynn("[say=pc]Видеть тебя в таком состоянии? Да. Твое поведение? Нет.[/say]")
 
-		saynn("[say=tavi]You get what you paid for.[/say]")
+		saynn("[say=tavi]Получаешь то, за что заплатил.[/say]")
 
-		saynn("You raise your leg and Tavi sits back on her knees again, looking at you. Seems like that wasn’t enough to fully break her but she definitely shows signs that she can be obedient. You leave her alone and walk away.")
+		saynn("Ты поднимаешь ногу, и Тави снова садится на колени, глядя на тебя. Похоже, этого было недостаточно, чтобы окончательно сломить её, но она определенно подает признаки того, что способна быть послушной. Ты оставляешь её одну и уходишь.")
 
-		addButton("Leave", "She got what she deserved anyways", "endthescene")
+		addButton("Уйти", "Она всё равно получила то, что заслужила.", "endthescene")
 
 
 func _react(_action: String, _args):

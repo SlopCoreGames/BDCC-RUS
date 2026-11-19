@@ -6,13 +6,13 @@ func _init():
 	aiCategory = AICategory.Lust
 	
 func getVisibleName(_context = {}):
-	return "Mean gaze"
+	return "Злобный взгляд"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
-	var text = "{attacker.name} straightens {attacker.his} posture and spreads {attacker.his} arms wide. {attacker.His} voice is alluring but also increadibly mean."
+	var text = "{attacker.name} выпрямляет {attacker.his} осанку и широко разводит {attacker.his} руки. {attacker.His} голос звучит соблазнительно, но в то же время невероятно злобно."
 	text += "\n\n"
 	text += "[say=attacker]"+RNG.pick([
 		"You're mine to toy with. MINE. I will fuck you raw.",

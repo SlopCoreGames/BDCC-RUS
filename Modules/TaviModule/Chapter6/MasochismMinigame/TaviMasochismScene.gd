@@ -12,31 +12,31 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
 		addCharacter("tavi")
 		
-		saynn("In this minigame you need to bring Tavi's pain to the exact target value using the actions that you have.")
+		saynn("В этой мини-игре тебе нужно довести уровень боли Тави до точного целевого значения, используя доступные тебе действия.")
 		
-		saynn("Depending on the difficulty, you're gonna have access to different actions.")
+		saynn("В зависимости от сложности, тебе будут доступны разные действия.")
 		
-		saynn("The minigame is gonna be over after a certain amount of actions or if you hold Tavi's pain above the target pain value for more than one turn.")
+		saynn("Мини-игра закончится после определенного количества ходов или если уровень боли Тави будет превышать целевое значение более одного хода.")
 		
-		saynn("Pick the difficulty")
+		saynn("Выберите сложность")
 		var masochismScore = getModule("TaviModule").getSkillScore("taviSkillMasochism")
 		var difficulties = minigame.getAllDifficulties()
 		for _i in range(difficulties.size()): #masochismScore+1
 			if(masochismScore >= _i || _i == 0):
 				var difficulty = difficulties[_i]
-				addButton(str(_i+1)+". "+difficulty["name"], "Pick this difficulty", "start", [_i])
+				addButton(str(_i+1)+". "+difficulty["name"], "Выбрать эту сложность", "start", [_i])
 			else:
 				var difficulty = difficulties[_i]
-				addDisabledButton(str(_i+1)+". "+difficulty["name"], "Raise Tavi's masochism skill")
+				addDisabledButton(str(_i+1)+". "+difficulty["name"], "Повысить навык мазохизма Тави")
 		
 	if(state == "failturns"):
-		saynn("You couldn't make Tavi reach the target pain level in the required amount of turns.")
+		saynn("Тебе не удалось довести боль Тави до нужного уровня за отведенное количество ходов.")
 	if(state == "failsafeword"):
-		saynn("Tavi hisses and signals you that she is in too much pain. You stop before you actually hurt her.")
+		saynn("Тави шипит, подавая знак, что ей слишком больно. Ты останавливаешься, прежде чем причинить ей реальный вред.")
 		
 	if(state in ["failsafeword", "failturns"]):
-		addButton("Try again", "Reset the minigame", "tryagain")
-		addButton("Give up", "Not worth it", "endthescene")
+		addButton("Попробовать снова", "Сбросить мини-игру", "tryagain")
+		addButton("Сдаться", "Не стоит того", "endthescene")
 	
 	if(state == "playing"):
 		# Show the text of the previous action
@@ -44,12 +44,12 @@ func _run():
 		addButtonAt(14, "Try again", "Reset the minigame", "tryagain")
 	
 	if(state == "youwon"):
-		saynn("Success!")
+		saynn("Успех!")
 		
 		# Replace with continue
-		#addButton("Try again", "Reset the minigame", "tryagain")
-		#addButton("Give up", "Not worth it", "endthescene")
-		addButton("Continue", "See what happens next", "start_outcome")
+		#addButton("Попробовать снова", "Сбросить мини-игру", "tryagain")
+		#addButton("Сдаться", "Не стоит того", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_outcome")
 	
 	if(state in ["playing", "failturns", "failsafeword", "youwon"]):
 		saynn(minigame.getLastText())
@@ -58,20 +58,20 @@ func _run():
 		if(animData.size() >= 3):
 			playAnimation(animData[0], animData[1], animData[2])
 		
-		sayn("Target pain: "+str(Util.roundF(minigame.targetPain, 1)))
-		sayn("Tavi's current pain: "+str(Util.roundF(minigame.pain, 1)))
+		sayn("Целевая боль: "+str(Util.roundF(minigame.targetPain, 1)))
+		sayn("Текущая боль Тави: "+str(Util.roundF(minigame.pain, 1)))
 		if(minigame.air > 0):
-			sayn("Tavi's air: "+str((5 - minigame.air)*20)+"%")
+			sayn("Запас воздуха Тави: "+str((5 - minigame.air)*20)+"%")
 		sayn("")
-		saynn("Actions left: "+str(minigame.actionsLeft))
+		saynn("Осталось действий: "+str(minigame.actionsLeft))
 		var currentEffects = minigame.getEffectsReadable()
 		if(currentEffects.size() > 0):
-			sayn("Current effects:")
+			sayn("Текущие эффекты:")
 			for effect in currentEffects:
 				sayn(effect)
 			sayn("")
 		
-		sayn("Available actions:")
+		sayn("Доступные действия:")
 		var currentActions = minigame.getActionsReadable()
 		for actionID in currentActions:
 			var action = currentActions[actionID]

@@ -14,7 +14,7 @@ func run(_triggerID, _args):
 	if(!getFlag("TaviModule.Ch5FoundPunishedTavi")):
 		return
 	if(GM.main.getDays() <= getFlag("TaviModule.Ch5TaviSavedDay", 0)):
-		addDisabledButton("Tavi", "Give her some rest. Come back tomorrow")
+		addDisabledButton("Тави", "Дай ей отдохнуть. Приходи завтра")
 		return
 	
 	addButtonUnlessLate("Tavi", "Talk to the feline", "talk")

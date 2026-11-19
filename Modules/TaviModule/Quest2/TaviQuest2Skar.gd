@@ -10,96 +10,96 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="skar", npcAction="stand"})
 		
 	if(state == ""):
-		saynn("The captain’s office is in sight. But the door is guarded by one of the guards, clearly a wolf. But you notice that his appearance is quite unique.")
+		saynn("Кабинет капитана уже в поле зрения. Но дверь охраняет один из стражников — явно волк. При этом ты замечаешь, что выглядит он весьма необычно.")
 
-		saynn("Light brown fur, black hair gathered into a careful ponytail, strong build and a medium height, about 1.7 meters tall. What intrigues you is his massive amount of prosthetics, his eyes seem to be fully replaced with white digital irises, the red glowing sclera around them gives the guy a very mean look, his lower jaw is replaced with a bulky angular prosthetic and his arms look like they are armored but they’re actually replaced too. Otherwise he is wearing a set of default guard armor and equipment.")
+		saynn("Светло-коричневый мех, черные волосы, собранные в аккуратный хвост, крепкое телосложение и средний рост, около 1,7 метра. Что тебя интригует, так это огромное количество протезов: его глаза, кажется, полностью заменены на белые цифровые радужки, а светящаяся красная склера вокруг придает парню очень свирепый вид; нижняя челюсть заменена массивным угловатым протезом, а руки выглядят как бронированные, но на самом деле они тоже полностью искусственные. В остальном на нем стандартная броня и снаряжение стражника.")
 
-		saynn("He stands in the way and has clearly noticed you. Though he is not doing much about it, he is just standing still with his arms crossed, probably waiting for you to do the first move.")
+		saynn("Он преграждает путь и явно тебя заметил. Хотя он особо не дергается, а просто стоит, скрестив руки на груди, — вероятно, ждет, когда ты сделаешь первый шаг.")
 
-		addButton("Approach", "See what will happen", "approach")
+		addButton("Подойти", "Посмотреть, что будет", "approach")
 
 	if(state == "approach"):
 		addCharacter("tavi")
 		
-		saynn("You take a few steps towards him. The guy carefully watches your motions and breathes deeply. His voice is low and raspy, it sounds synthesized.")
+		saynn("Ты делаешь несколько шагов к нему. Парень внимательно следит за каждым твоим движением, тяжело дыша. Его голос низкий и хриплый, звучит как синтезированный.")
 
-		saynn("[say=skar]That’s a bad idea.[/say]")
+		saynn("[say=skar]Это плохая идея.[/say]")
 
-		saynn("[say=tavi]You think so?[/say]")
+		saynn("[say=tavi]Думаешь?[/say]")
 
-		saynn("Tavi shows up behind and stops in front of you, the bright smile is still shining on her face as she is eyeing out her next prey. She closes her arms too to mimic the guard’s stance.")
+		saynn("Тави появляется позади и останавливается перед тобой; на её лице всё еще сияет яркая улыбка, пока она высматривает свою следующую добычу. Она тоже скрещивает руки на груди, подражая позе стражника.")
 
-		saynn("[say=tavi]Two versus one, I really don’t like your chances. We just came to chat with our great captain, how about you just let us through? Save your health~. What’s left of it anyways.[/say]")
+		saynn("[say=tavi]Двое против одного? Не очень-то мне нравятся твои шансы. Мы всего лишь пришли поболтать с нашим великим капитаном, так что, может, просто пропустишь нас? Сбережешь свое здоровье... ну, то, что от него осталось.[/say]")
 
-		saynn("The guard keeps staring at Tavi with an emotionless expression, his prosthetic eyes scan her uniform.")
+		saynn("Охранник продолжает бесстрастно пялиться на Тави, а его протезы глаз сканируют её униформу.")
 
-		saynn("[say=skar]Inmate number 12429. A.k.a Tavi. Completed countless assasination contracts, has many records of hacking terminals, exploiting zero-day AlphaOS vulnerabilities in order to steal data and then using it for blackmailing and/or illegally obtaining wealth. Has unproven ties to the full destruction of the research space station “Exodus”.[/say]")
+		saynn("[say=skar]Заключенная номер 12429. Она же Тави. Выполнила бесчисленное количество контрактов на убийство, имеет множество записей о взломе терминалов и эксплуатации уязвимостей нулевого дня в AlphaOS ради кражи данных с последующим шантажом и/или незаконным обогащением. Имеет неподтвержденную причастность к полному уничтожению исследовательской космической станции «Исход».[/say]")
 
-		saynn("Tavi growls at that sudden description, she gives you a quick look and turns her head back to the guy. She walks up very close to the guard and grabs onto his chest armor piece.")
+		saynn("Тави рычит от такого внезапного описания, бросает на тебя быстрый взгляд и снова поворачивается к парню. Она подходит к охраннику вплотную и вцепляется в элемент его нагрудной брони.")
 
-		saynn("[say=tavi]You have zero fucking idea who I am.[/say]")
+		saynn("[say=tavi]Ты, блядь, даже понятия не имеешь, кто я такая.[/say]")
 
-		saynn("[say=skar]Enlighten me.[/say]")
+		saynn("[say=skar]Ну, просвети меня.[/say]")
 
-		saynn("Tavi growls at his cheeky altitude, she frowns and seems to be ready to sink her claws into his flesh. But then she suddenly changes her expression and takes a step back, her growling is now replaced with giggling. The smile shines brightly on her face.")
+		saynn("Тави рычит от его дерзкого тона, хмурится и, кажется, готова вонзить когти в его плоть. Но вдруг выражение её лица меняется, она делает шаг назад, а рычание сменяется хихиканьем. На лице расцветает яркая улыбка.")
 
-		saynn("[say=tavi]I’m just trying to make this world a better place, why can’t I have some fun while doing so~?[/say]")
+		saynn("[say=tavi]Я просто пытаюсь сделать этот мир лучше, так почему бы мне не немного повеселиться в процессе~?[/say]")
 
-		saynn("[say=skar]By killing people?[/say]")
+		saynn("[say=skar]Убивая людей?[/say]")
 
-		saynn("[say=tavi]My paws are totally clean, officer. How can you blame me if all these people suddenly decided to kill themselves or each other? Ah, this digital age is truly wonderful.[/say]")
+		saynn("[say=tavi]Мои лапки абсолютно чисты, офицер. Как вы можете винить меня, если все эти люди вдруг решили покончить с собой или переубивать друг друга? Ах, этот цифровой век поистине чудесен.[/say]")
 
-		saynn("Tavi raises her paws and starts slowly circling around the guy, checking him out from all directions.")
+		saynn("Тави поднимает лапки и начинает медленно обходить парня кругом, разглядывая его со всех сторон.")
 
-		saynn("[say=tavi]And forget that, I see so many old wounds on you. You’re an ex-soldier, it’s obvious. How many people did you kill? Tens? Hundreds? I know, I know. They were all bad people, did bad things, had a very different view of the world, a bad one.[/say]")
+		saynn("[say=tavi]Да и забудь об этом, я вижу на тебе столько старых ран. Ты бывший солдат, это очевидно. Сколько людей ты убил? Десятки? Сотни? Знаю, знаю. Все они были плохими людьми, совершали плохие поступки, у них был совсем другой взгляд на мир — неправильный.[/say]")
 
-		saynn("You hear a quiet growling coming from the guard, he grabs his stun baton and squeezes the handle. Tavi stops in front of him.")
+		saynn("Ты слышишь тихое рычание охранника; он хватает электродубинку и сжимает рукоять. Тави замирает перед ним.")
 
-		saynn("[say=tavi]We’re similar. But we’re also exact opposites. I fight my own wars, you fight the wars of other people. But you know, we still both ended up in this prison. Isn’t that kinda funny~?[/say]")
+		saynn("[say=tavi]Мы похожи. Но в то же время мы полные противоположности. Я веду свои собственные войны, а ты сражаешься в чужих. Но знаешь, в итоге мы оба оказались в этой тюрьме. Разве это не забавно~?[/say]")
 
-		saynn("At that moment, the guard lunges forward and tries to strike the red with his weapon. She, of course, expects it and swiftly gets out of the way, instead leaving a few scratch marks on the guard’s face while doing so. He grunts and covers his wounds.")
+		saynn("В этот момент охранник бросается вперед, пытаясь ударить рыжую своим оружием. Она, разумеется, ожидает этого и ловко уклоняется, успев при этом оставить несколько царапин на лице охранника. Тот кряхтит и прикрывает раны.")
 
-		saynn("[say=tavi]You still have a chance to give up~.[/say]")
+		saynn("[say=tavi]У тебя всё еще есть шанс сдаться~.[/say]")
 
-		saynn("Tavi extends her claws fully and tries to leave another set of scratch but her hands are stopped by his prosthetic arm, the motors audibly whine inside as he stresses it. Tavi tries to take a step back and deliver a powerful kick instead but the guard closes the distance himself and lands a strike with his stun baton, instantly dropping Tavi down to the floor. She cries out from painful shock as her feline body shakes and shivers.")
+		saynn("Тави полностью выпускает когти и пытается оставить еще одну серию царапин, но его протез перехватывает её руки; внутри слышно, как гудят моторы под нагрузкой. Тави пытается отступить и вместо этого нанести мощный удар ногой, но охранник сам сокращает дистанцию и бьет её электродубинкой, мгновенно сбивая Тави с ног. Она вскрикивает от болезненного шока, а её кошачье тело сотрясает дрожь.")
 
-		saynn("Then he looks at you.")
+		saynn("Затем он переводит взгляд на тебя.")
 
-		saynn("Seems like it’s a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Continue", "Time to fight", "fight")
+		addButton("Продолжить", "Пора драться", "fight")
 
 
 	if(state == "lost_fight"):
-		saynn("You lost any will to continue fighting, can’t even find enough strength to stand up. You hear Skar’s stun baton being turned off. Then he walks up to you and fetches cuffs off of his belt. He wrenches your arms and tries to cuff them.")
+		saynn("Воля к борьбе окончательно иссякла, у тебя нет сил даже на то, чтобы просто встать. Ты слышишь, как Скар выключает свой электрошокер. Затем он подходит к тебе и снимает с пояса наручники. Он резко хватает тебя за руки и пытается застегнуть их.")
 
-		saynn("But Tavi suddenly grabs him from behind and kicks the back side of his knees until he is on the ground. Then she tries to disarm him but he holds onto his stun baton very tightly, thanks to his robot arms, so Tavi instead tries to choke him with it, forcing the stick into his neck while pushing her knee into the back of his head. She finds the switch on his weapon and ticks it on, sending a revenge shock through him. The guy grunts and gives up fighting.")
+		saynn("Но Тави внезапно хватает его сзади и пинает под колени, пока он не валится на землю. Затем она пытается обезоружить его, но благодаря своим роботизированным рукам он мертвой хваткой вцепляется в шокер. Тогда Тави пытается придушить его этим самым шокером, вдавливая рукоятку ему в шею и упираясь коленом в затылок. Она нащупывает переключатель на его оружии и щелкает им, пропуская через него ответный разряд тока. Парень кряхтит и перестает сопротивляться.")
 
-		saynn("Tavi helps you to get up.")
+		saynn("Тави помогает тебе подняться.")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "won_fight"):
-		saynn("Exhausted, the guard falls to his knee and drops his weapon. You walk up to Tavi and help her to get up.")
+		saynn("Изможденный, охранник падает на колени и роняет оружие. Ты подходишь к Тави и помогаешь ей встать.")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "continue"):
-		saynn("The guard presses a button on his earpiece and speaks into it.")
+		saynn("Охранник нажимает кнопку на гарнитуре и что-то говорит в нее.")
 
-		saynn("[say=skar]Couldn’t stop them.[/say]")
+		saynn("[say=skar]Не удалось их остановить.[/say]")
 
-		saynn("Tavi looks at him and growls again. She was about to stomp on his chest when the intercom suddenly turns on and the captain’s voice comes through.")
+		saynn("Тави смотрит на него и снова рычит. Она уже собиралась топнуть его по груди, как вдруг включается интерком и раздается голос капитана.")
 
-		saynn("[say=captain]Come in, let’s have a chat.[/say]")
+		saynn("[say=captain]Заходите, нам нужно поговорить.[/say]")
 
-		saynn("[say=tavi]Huh?[/say]")
+		saynn("[say=tavi]А?[/say]")
 
-		saynn("The doors to the captain’s office open wide.")
+		saynn("Двери кабинета капитана широко распахиваются.")
 
-		saynn("[say=tavi]Let’s go then.[/say]")
+		saynn("[say=tavi]Ну, тогда пошли.[/say]")
 
-		addButton("Follow", "Enter the captain’s office", "captainsoffice")
+		addButton("Следовать", "Войти в кабинет капитана", "captainsoffice")
 
 
 func _react(_action: String, _args):

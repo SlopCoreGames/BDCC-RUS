@@ -23,323 +23,323 @@ func _run():
 		isNormal = (!isCorrupt && !isPure)
 		isVirgin = getModule("TaviModule").isVirgin()
 		playAnimation(StageScene.Solo, "stand")
-		saynn("And here you are. Standing before the checkpoint. No need to get Tavi involved, they might just capture and torture her again. Yes.")
+		saynn("И вот ты здесь. Стоишь перед контрольно-пропускным пунктом. Нет смысла втягивать Тави — её могут снова схватить и подвергнуть пыткам. Да, именно так.")
 
-		saynn("You don't have any laser rifles or shiny armor to protect yourself. Just your fists and a strong desire to get out of this place. Or maybe you just wanna make the captain pay for what he did? Does it matter in the end? No.")
+		saynn("У тебя нет ни лазерных винтовок, ни блестящей брони для защиты. Только твои кулаки и жгучее желание выбраться из этого места. А может, ты просто хочешь заставить капитана заплатить за то, что он натворил? Важно ли это в конечном счете? Нет.")
 
-		saynn("Will they be ready? Maybe. But it won't stop you. Time to do this.")
+		saynn("Будут ли они готовы? Возможно. Но это тебя не остановит. Пора действовать.")
 
-		saynn("Checkpoint.. Elevator.. Command deck.. Captain's office. Should be easy.")
+		saynn("КПП... Лифт... Командный мостик... Кабинет капитана. Должно быть несложно.")
 
-		addButton("Checkpoint", "Walk through the main entrance", "checkpoint_firstguard")
+		addButton("КПП", "Пройти через главный вход", "checkpoint_firstguard")
 	if(state == "checkpoint_firstguard"):
 		aimCameraAndSetLocName("hall_checkpoint")
 		playAnimation(StageScene.Duo, "stand", {npc=npc1id})
-		saynn("You step through the sensor array that they got going on and look at the guards. Silently.")
+		saynn("Ты проходишь сквозь сенсорную решетку и молча смотришь на охранников.")
 
-		saynn("[say=npc1]Move it, inmate. Don't waste my time.[/say]")
+		saynn("[say=npc1]Шевелись, зэк! Не трать моё время.[/say]")
 
-		saynn("You shake your head while taking a combat stance. Lashing out at them might give you an edge in the fight.. but the second guard would just drop you with their shock remote.")
+		saynn("Ты качаешь головой, принимая боевую стойку. Нападение может дать тебе преимущество в бою... но второй охранник тут же свалит тебя электрошокером.")
 
-		saynn("[say=npc1]No? You'd rather kiss my dirty boot? Alright.[/say]")
+		saynn("[say=npc1]Нет? Решил лучше поцеловать мой грязный сапог? Ну ладно.[/say]")
 
-		saynn("{npc1.He} gestures to the other guard to just watch while fetching {npc1.his} stun baton out of its holder.")
+		saynn("{npc1.He} жестом показывает другому охраннику просто понаблюдать, пока она достает свой электрошоковый дубинку {npc1.his} из крепления.")
 
-		saynn("Time to fight.")
+		saynn("Пора драться.")
 
-		addButton("Fight", "Start the fight", "fight1_npc")
+		addButton("Драться", "Начать бой", "fight1_npc")
 	if(state == "lost_first_guards"):
 		playAnimation(StageScene.Solo, "defeat")
 		GM.pc.setLocation("hall_mainentrance")
 		aimCameraAndSetLocName("hall_mainentrance")
-		saynn("Defeated, you fall to your knees.")
+		saynn("Потерпев поражение, вы падаете на колени.")
 
-		saynn("The guards laugh at your pathetic attempt. But then they just throw you out into the main hall.")
+		saynn("Охранники смеются над вашей жалкой попыткой, а затем просто выбрасывают вас в главный зал.")
 
-		saynn("Seems you will need to try a little harder than that. Or let Tavi help you.")
+		saynn("Похоже, придется постараться получше. Или позволить Тави помочь вам.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "won_first_guard"):
 		playAnimation(StageScene.Duo, "stand", {npc=npc2id})
-		saynn("When the first guard hits the floor, the second one instantly grabs {npc2.his} shock remote and aims it at you!")
+		saynn("Как только первый охранник падает на пол, второй мгновенно хватает пульт {npc2.his} и наводит его на вас!")
 
-		saynn("[say=npc2]Fun is over, inmate. Time to sleep.[/say]")
+		saynn("[say=npc2]Веселье окончено, заключенный. Пора поспать.[/say]")
 
-		saynn("{npc2.He} presses the button.. but nothing happens.")
+		saynn("{npc2.He} нажимает на кнопку... но ничего не происходит.")
 
-		saynn("[say=npc2]Fucking really? Doesn't matter.[/say]")
+		saynn("[say=npc2]Да вы издеваетесь? Впрочем, неважно.[/say]")
 
-		saynn("The guard grabs {npc2.his} weapon and prepares for a fight.")
+		saynn("Охранник хватает оружие {npc2.his} и готовится к бою.")
 
-		addButton("Fight", "Start the fight", "fight2_npc")
+		addButton("Драться", "Начать бой", "fight2_npc")
 	if(state == "won_second_guard"):
 		playAnimation(StageScene.Duo, "stand", {npc=npc2id, npcAction="defeat"})
-		saynn("Both of the guards are defeated. That's a start.")
+		saynn("Оба охранника повержены. Это уже начало.")
 
-		saynn("You fetch one of the badges from them. It will probably get disabled in a few minutes. But that's all you need to get access to the top floor of the prison.")
+		saynn("Ты забираешь у одного из них бейджик. Скорее всего, через пару минут он перестанет работать, но этого вполне достаточно, чтобы попасть на верхний этаж тюрьмы.")
 
-		saynn("[say=risha]Going somewhere~?[/say]")
+		saynn("[say=risha]Куда-то собралась~?[/say]")
 
-		saynn("A voice stops you.")
+		saynn("Голос заставляет тебя остановиться.")
 
-		addButton("Turn around", "See who is there", "risha_intro")
+		addButton("Обернись", "Посмотреть, кто там", "risha_intro")
 	if(state == "risha_intro"):
 		addCharacter("risha")
 		playAnimation(StageScene.Duo, "stand", {npc="risha"})
-		saynn("It's Risha. She looks around, looking a little surprised.")
+		saynn("Это Риша. Она оглядывается, выглядя слегка удивленной.")
 
-		saynn("[say=pc]Yeah, going up.[/say]")
+		saynn("[say=pc]Да, наверх.[/say]")
 
-		saynn("[say=risha]Alone? Without Tavi?[/say]")
+		saynn("[say=risha]Одна? Без Тави?[/say]")
 
-		saynn("She slowly approaches you. Behind you is the closed elevator. Which means.. She is cornering you.")
+		saynn("Она медленно приближается к тебе. Позади тебя — закрытый лифт. А это значит... она загоняет тебя в угол.")
 
-		saynn("[say=pc]Why are you asking? Afraid she will ambush you? Look behind you then.[/say]")
+		saynn("[say=pc]А почему ты спрашиваешь? Боишься, что она устроит засаду? Тогда оглянись назад.[/say]")
 
-		saynn("Risha doesn't. She just giggles while slowly closing the distance, a stun baton in her hand.")
+		saynn("Риша не отвечает. Она лишь хихикает, медленно сокращая дистанцию с электрошокером в руке.")
 
-		saynn("[say=risha]I was just curious. Cap's orders are to stop you. And I have to obey, I'm afraid. No hard feelings.[/say]")
+		saynn("[say=risha]Мне просто было любопытно. Приказ Капа — остановить тебя. И мне, боюсь, приходится подчиняться. Без обид.[/say]")
 
-		saynn("Seems like it's a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Fight", "Start the fight", "fight3_risha")
+		addButton("Драться", "Начать бой", "fight3_risha")
 	if(state == "lost_risha"):
 		playAnimation(StageScene.Duo, "defeat", {npc="risha"})
 		GM.pc.setLocation("hall_mainentrance")
 		aimCameraAndSetLocName("hall_mainentrance")
-		saynn("You drop to your knees before Risha. It hurts.")
+		saynn("Ты падаешь на колени перед Ришей. Это больно.")
 
-		saynn("The feline leans closer to you.")
+		saynn("Кошка наклоняется к тебе ближе.")
 
-		saynn("[say=risha]Good try. But you're clearly not ready.[/say]")
+		saynn("[say=risha]Хорошая попытка. Но ты явно еще не готов.[/say]")
 
-		saynn("She throws you out and walks off. At least she didn't fuck you. Why did she not fuck you?")
+		saynn("Она вышвыривает тебя и уходит. По крайней мере, она тебя не трахнула. Почему она тебя не трахнула?")
 
-		saynn("Seems you will need to try a little harder than that. Or let Tavi help you.")
+		saynn("Похоже, придется постараться получше. Или позволить Тави помочь вам.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "won_risha"):
 		playAnimation(StageScene.Duo, "stand", {npc="risha", npcAction="defeat"})
-		saynn("Risha hisses as she hits the floor, her bulky armor is now weighing her down rather than protecting her.")
+		saynn("Риша шипит, когда падает на пол; её тяжелая броня теперь скорее тянет её вниз, чем защищает.")
 
-		saynn("Your old badge doesn't seem to work anymore so you steal Risha's one.")
+		saynn("Твой старый жетон, кажется, больше не работает, поэтому ты крадешь жетон Риши.")
 
-		saynn("[say=pc]No hard feelings.[/say]")
+		saynn("[say=pc]Без обид.[/say]")
 
-		saynn("[say=risha]None taken.[/say]")
+		saynn("[say=risha]Взаимно.[/say]")
 
-		saynn("She is panting heavily. There is no time to play with her.. so you just leave her alone.")
+		saynn("Она тяжело дышит. Сейчас не время с ней возиться... так что ты просто оставляешь её одну.")
 
-		saynn("As you head towards the elevator, Risha is no longer there anymore.")
+		saynn("Когда ты направляешься к лифту, Риши там уже нет.")
 
-		addButton("Elevator", "Step into it", "alex_meet")
+		addButton("Лифт", "Войти", "alex_meet")
 	if(state == "alex_meet"):
 		removeCharacter("risha")
 		addCharacter("alexrynard")
 		aimCameraAndSetLocName("hall_elevator")
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard"})
-		saynn("As the elevator doors open, you see.. Alex. His attention was directed to some random prototype in his hands. But he puts it away.")
+		saynn("Когда двери лифта открываются, ты видишь... Алекса. Он был поглощен каким-то случайным прототипом в своих руках, но тут же убирает его.")
 
-		saynn("[say=alexrynard]Gonna stand there? Step in.[/say]")
+		saynn("[say=alexrynard]Так и будешь стоять? Заходи.[/say]")
 
-		saynn("He doesn't seem to be.. hostile. So you step inside the elevator and press the badge against the control panel before selecting the command deck.")
+		saynn("Он не кажется... враждебным. Ты заходишь в лифт и прикладываешь бейдж к панели управления, выбирая командную палубу.")
 
-		saynn("[say=alexrynard]Brave.[/say]")
+		saynn("[say=alexrynard]Смело.[/say]")
 
-		saynn("The doors close with an annoying screech. The elevator begins to move.")
+		saynn("Двери закрываются с раздражающим скрежетом. Лифт начинает движение.")
 
-		saynn("[say=alexrynard]I should really lube these gears up, huh?[/say]")
+		saynn("[say=alexrynard]Надо бы всё-таки смазать эти шестерёнки, а?[/say]")
 
-		saynn("[say=pc]You're not gonna stop me?[/say]")
+		saynn("[say=pc]Ты что, не собираешься меня останавливать?[/say]")
 
-		saynn("The foxy shrugs.")
+		saynn("Лисичка пожимает плечами.")
 
-		saynn("[say=alexrynard]It's not my job. And you seem to have made up your mind. Other guards will try to stop you though.[/say]")
+		saynn("[say=alexrynard]Это не моя забота. Да и ты, похоже, уже всё решила. Хотя другие охранники попытаются тебя остановить.[/say]")
 
-		saynn("[say=pc]I know.[/say]")
+		saynn("[say=pc]Я знаю.[/say]")
 
-		saynn("You two stand side by side. In silence. Only the quiet noise of the elevator moving can be heard.")
+		saynn("Вы стоите плечом к плечу. В тишине. Слышно лишь тихое гудение движущегося лифта.")
 
-		saynn("[say=alexrynard]This prison could use some changes.[/say]")
+		saynn("[say=alexrynard]Этой тюрьме не помешало бы кое-что изменить.[/say]")
 
-		saynn("[say=pc]Changes?[/say]")
+		saynn("[say=pc]Изменить?[/say]")
 
-		saynn("[say=alexrynard]Improvements. Replacements. I don't know. Just don't destroy it, okay? Good people built it. Would be a shame to see all that progress go to waste.[/say]")
+		saynn("[say=alexrynard]Улучшить. Обновить. Не знаю. Просто не разнеси её к чертям, ладно? Её строили хорошие люди. Будет жаль, если весь этот прогресс пойдет прахом.[/say]")
 
-		saynn("[say=pc]I will try.[/say]")
+		saynn("[say=pc]Я попробую.[/say]")
 
-		saynn("He nods.")
+		saynn("Он кивает.")
 
-		saynn("Soon, the elevator doors open. The guy prefers to stay while you step out. You feel like you're getting somewhere.")
+		saynn("Вскоре двери лифта открываются. Парень предпочитает остаться внутри, пока ты выходишь. У тебя возникает чувство, что ты движешься в правильном направлении.")
 
-		addButton("Command deck", "See what happens next", "nova_meet")
+		addButton("Командная палуба", "Смотреть, что будет дальше", "nova_meet")
 	if(state == "nova_meet"):
 		removeCharacter("alexrynard")
 		addCharacter("nova")
 		playAnimation(StageScene.Duo, "stand", {npc="nova"})
 		aimCameraAndSetLocName("cd_near_split")
-		saynn("You step out into the rich man's corridor. Makes sense for the captain to keep himself away from inmates physically as well as mentally.")
+		saynn("Ты выходишь в коридор для богачей. Вполне логично, что капитан старается держаться от заключенных подальше — и физически, и ментально.")
 
-		saynn("Carpets, paintings, wooden furniture. A stark contrast to the cold, dimly lit cells that you almost grew to call home. Still, it lacks any.. passion. Nothing stands out to you.")
+		saynn("Ковры, картины, деревянная мебель. Резкий контраст с холодными, тускло освещенными камерами, которые ты почти успела назвать своим домом. И всё же, здесь нет... страсти. Ничто не цепляет взгляд.")
 
-		saynn("As you step through the corridor, you walk into Nova. She blocks your path.")
+		saynn("Когда ты идешь по коридору, тебе на пути попадается Нова. Она преграждает тебе дорогу.")
 
-		saynn("[say=nova]Well. Here we are.[/say]")
+		saynn("[say=nova]Ну вот. Мы здесь.[/say]")
 
-		saynn("[say=pc]I only need the captain.[/say]")
+		saynn("[say=pc]Мне нужен только капитан.[/say]")
 
-		saynn("[say=nova]I kinda liked everything that we did together. I wish some things were different. But oh well.[/say]")
+		saynn("[say=nova]Мне даже нравилось всё то, что у нас было. Жаль, что всё сложилось не так. Но что ж, бывает.[/say]")
 
-		saynn("Her paw squeezes her stun baton tight. Her armor lights up.")
+		saynn("Её лапа крепко сжимает шоковую дубинку. Её броня начинает светиться.")
 
-		saynn("[say=nova]Captain's order is to stop you. Sorry cutie. I have to do this.[/say]")
+		saynn("[say=nova]Приказ капитана — остановить тебя. Прости, милашка, но у меня нет выбора.[/say]")
 
-		saynn("Seems like it's a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Fight", "Start the fight", "fight4_nova")
+		addButton("Драться", "Начать бой", "fight4_nova")
 	if(state == "lost_nova"):
 		playAnimation(StageScene.Solo, "defeat")
 		GM.pc.setLocation("hall_mainentrance")
 		aimCameraAndSetLocName("hall_mainentrance")
-		saynn("You drop to your knees, defeated by Nova. She puts her baton away and clips a leash to your collar.")
+		saynn("Ты падаешь на колени, побежденная Новой. Она убирает дубинку и пристегивает поводок к твоему ошейнику.")
 
-		saynn("[say=nova]Not today, cutie.[/say]")
+		saynn("[say=nova]Не сегодня, милашка.[/say]")
 
-		saynn("After that, she just brings you back out in the main hall. Makes you wonder why they don't punish you at all. Almost like they are tired of this, just like you and Tavi.")
+		saynn("После этого она просто приводит тебя обратно в главный зал. Невольно задумываешься, почему тебя вообще не наказывают. Такое ощущение, что им всем это осточертело — и тебе, и Тави.")
 
-		saynn("Seems you will need to try a little harder than that. Or let Tavi help you.")
+		saynn("Похоже, придется постараться получше. Или позволить Тави помочь вам.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "won_nova"):
 		playAnimation(StageScene.Duo, "stand", {npc="nova", npcAction="defeat"})
-		saynn("Nova grunts and drops to her knees, unable to continue fighting.")
+		saynn("Нова кряхтит и падает на колени, не в силах продолжать бой.")
 
-		saynn("[say=nova]Ow..[/say]")
+		saynn("[say=nova]Ой...[/say]")
 
-		saynn("No time to chat. You feel like you're very close. As you walk past her, you only hear this.")
+		saynn("Не до разговоров. Кажется, ты уже совсем близко. Когда ты проходишь мимо неё, ты слышишь лишь это.")
 
-		saynn("[say=nova]Good luck..[/say]")
+		saynn("[say=nova]Удачи..[/say]")
 
-		saynn("Huh? You're not sure if that was sarcasm. Sounded pretty genuine.")
+		saynn("А? Ты не уверен, был ли это сарказм. Звучало довольно искренне.")
 
-		saynn("[say=pc]Thanks.[/say]")
+		saynn("[say=pc]Спасибо.[/say]")
 
-		addButton("Continue", "See what happens next", "walk_to_skar")
+		addButton("Продолжить", "Смотреть, что будет дальше", "walk_to_skar")
 	if(state == "walk_to_skar"):
 		removeCharacter("nova")
 		playAnimation(StageScene.Solo, "walk")
 		aimCameraAndSetLocName("cd_last_intersection")
-		saynn("You walk through the soulless corridors, quickly getting closer to the source. There is no fear for some reason. Probably because you got this whole thing figured out. There are no unknowns anymore. No mysteries left to solve. All you have to do is execute.")
+		saynn("Ты идешь по бездушным коридорам, быстро приближаясь к источнику звука. Почему-то страха нет. Наверное, потому что ты уже всё для себя решил. Неизвестных больше не осталось. Никаких тайн, которые нужно разгадать. Всё, что тебе нужно — это действовать.")
 
-		saynn("While approaching the captain's office, a familiar figure blocks your path..")
+		saynn("Когда ты подходишь к кабинету капитана, твой путь преграждает знакомая фигура...")
 
-		addButton("Continue", "See what happens next", "skar_block")
+		addButton("Продолжить", "Смотреть, что будет дальше", "skar_block")
 	if(state == "skar_block"):
 		addCharacter("skar")
 		playAnimation(StageScene.Duo, "stand", {npc="skar"})
-		saynn("Skar, the last guard before you can finally meet with the captain, is leaning against the wall, crossing his prosthetic arms.")
+		saynn("Скар, последний охранник на пути к капитану, прислонился к стене, скрестив свои протезы.")
 
-		saynn("[say=pc]May I?[/say]")
+		saynn("[say=pc]Можно?[/say]")
 
-		saynn("He shakes his head slowly.")
+		saynn("Он медленно качает головой.")
 
-		saynn("[say=pc]I get it.[/say]")
+		saynn("[say=pc]Я понимаю.[/say]")
 
-		saynn("[say=skar]Do you?[/say]")
+		saynn("[say=skar]Правда?[/say]")
 
-		saynn("[say=pc]A little bit. I understand what. I don't quite understand why. Why are you still fighting for him?[/say]")
+		saynn("[say=pc]В какой-то степени. Я понимаю — что. Но не совсем понимаю — почему. Почему ты всё еще сражаешься за него?[/say]")
 
-		saynn("He lowers his gaze.")
+		saynn("Он опускает взгляд.")
 
-		saynn("[say=skar]Stability, I guess.[/say]")
+		saynn("[say=skar]Стабильность, полагаю.[/say]")
 
-		saynn("[say=pc]Stability?[/say]")
+		saynn("[say=pc]Стабильность?[/say]")
 
-		saynn("He flexes his arms and you can hear servos working in them. His prosthetic jaw has a similar quiet whirl as he talks.")
+		saynn("Он напрягает руки, и слышно, как в них работают сервоприводы. Его протез челюсти издает похожее тихое жужжание, когда он говорит.")
 
-		saynn("[say=skar]I've had enough.. adventures.. Wars.[/say]")
+		saynn("[say=skar]С меня хватит... приключений... войн.[/say]")
 
-		saynn("He sighs and looks at you.")
+		saynn("Он вздыхает и смотрит на тебя.")
 
-		saynn("[say=skar]I just wanna live my boring life. I don't want anything to change, it's too late for that.[/say]")
+		saynn("[say=skar]Я просто хочу прожить свою скучную жизнь. Не хочу, чтобы что-то менялось, для этого уже слишком поздно.[/say]")
 
-		saynn("Huh. Is that the true Skar? He sounds like he is.. spent.")
+		saynn("Хм. Это и есть настоящий Скар? Звучит так, будто он... выдохся.")
 
-		saynn("[say=pc]Then why did you give us a chance back then?[/say]")
+		saynn("[say=pc]Тогда почему ты дал нам шанс тогда?[/say]")
 
-		saynn("He shrugs.")
+		saynn("Он пожимает плечами.")
 
-		saynn("[say=skar]I don't know. The captain ordered to stop the riot, not you. I don't care about you.[/say]")
+		saynn("[say=skar]Не знаю. Капитан приказал подавить бунт, а не тебя. На тебя мне плевать.[/say]")
 
-		saynn("Such a soldier, following orders without taking responsibility. Maybe there is a spark of hope in him though.")
+		saynn("Настоящий солдат: исполняет приказы, не беря на себя никакой ответственности. Хотя, может, в нём ещё теплится искра надежды.")
 
-		saynn("[say=pc]Maybe it's time to choose for yourself then? You did it once, why not do it again? Just let me walk through.[/say]")
+		saynn("[say=pc]Может, пришло время выбрать что-то самому? Ты уже делал это однажды, почему бы не повторить? Просто дай мне пройти.[/say]")
 
-		saynn("He shakes his head and blocks the path. That spark fades away. Seeing that you will not get anywhere, you both prepare to fight.")
+		saynn("Он качает головой и преграждает путь. Искра надежды гаснет. Поняв, что просто так тебе не пройти, вы оба готовитесь к бою.")
 
-		addButton("Fight", "Start the fight", "fight5_skar")
+		addButton("Драться", "Начать бой", "fight5_skar")
 	if(state == "skar_lost"):
 		playAnimation(StageScene.Solo, "defeat")
 		GM.pc.setLocation("hall_mainentrance")
 		aimCameraAndSetLocName("hall_mainentrance")
-		saynn("As you get defeated, Skar grabs you by the collar and drags you away.")
+		saynn("Когда ты терпишь поражение, Скар хватает тебя за воротник и тащит за собой.")
 
-		saynn("You were so close. But sadly, you failed this time.")
+		saynn("Ты был так близок. Но, к сожалению, в этот раз тебе не повезло.")
 
-		saynn("[say=skar]It's not worth it. You can't change anything.[/say]")
+		saynn("[say=skar]Это того не стоит. Ты всё равно ничего не сможешь изменить.[/say]")
 
-		saynn("You don't even wanna describe how wrong he is.")
+		saynn("Даже не знаешь, как описать, насколько он ошибается.")
 
-		saynn("Seems you will need to try a little harder than that. Or let Tavi help you.")
+		saynn("Похоже, придется постараться получше. Или позволить Тави помочь вам.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "skar_won"):
 		playAnimation(StageScene.Duo, "stand", {npc="skar", npcAction="defeat"})
-		saynn("Skar grunts as he hits the floor hard.")
+		saynn("Скар кряхтит, тяжело рухнув на пол.")
 
-		saynn("[say=skar]Ugh.. It's not worth it. You can't change anything.[/say]")
+		saynn("[say=skar]Ух... Это того не стоит. Ты всё равно ничего не сможешь изменить.[/say]")
 
-		saynn("[say=pc]If there were less like you, maybe it would have been easier. But I don't plan on giving up no matter what.[/say]")
+		saynn("[say=pc]Будь таких, как ты, поменьше, возможно, всё было бы проще. Но я не собираюсь сдаваться, несмотря ни на что.[/say]")
 
-		saynn("The reinforced door is the last barrier before the captain's office. You steal Skar's badge and try to use it.. but the door refuses to open.")
+		saynn("Укрепленная дверь — последний барьер перед кабинетом капитана. Ты крадешь жетон Скар и пытаешься воспользоваться им... но дверь наотрез отказывается открываться.")
 
-		saynn("[say=pc]Seems like he doesn't even trust his own guards anymore.[/say]")
+		saynn("[say=pc]Похоже, он уже даже собственным охранникам не доверяет.[/say]")
 
-		saynn("Well.. You're kinda stuck here. When suddenly..")
+		saynn("Что ж... Ты вроде как застрял здесь. И вдруг...")
 
-		saynn("[say=tavi]Missed me~?[/say]")
+		saynn("[say=tavi]Соскучился по мне~?[/say]")
 
-		addButton("Continue", "See what happens next", "tavi_joins")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_joins")
 	if(state == "tavi_joins"):
 		addCharacter("tavi")
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcBodyState={naked=isCorrupt}})
-		saynn("That's Tavi's voice. She walks up to the door and starts inspecting the access panel.")
+		saynn("Это голос Тави. Она подходит к двери и начинает изучать панель управления.")
 
-		saynn("[say=pc]How did you end up here?[/say]")
+		saynn("[say=pc]Как ты здесь оказался?[/say]")
 
-		saynn("Tavi smiles. She uses her claw to pry open the outer cover, revealing some protected wiring.")
+		saynn("Тави улыбается. Она поддевает когтем внешнюю крышку, обнажая защищенную проводку.")
 
-		saynn("[say=tavi]Risha told me."+str(" She said she loves how sexy I look now~." if isCorrupt else " Sisters gotta help each other, right~?")+"[/say]")
+		saynn("[say=tavi]Риша рассказала мне."+str(" She said she loves how sexy I look now~." if isCorrupt else " Sisters gotta help each other, right~?")+"[/say]")
 
-		saynn("She can't quite figure what each wire means.. So she steals Skar's stun baton and shoves it into the panel, causing all sorts of sparks to start bursting from it.")
+		saynn("Она не может до конца понять, за что отвечает каждый провод... Поэтому она крадет шоковую дубинку Скар и засовывает её прямо в панель, отчего из неё начинают во все стороны сыпаться искры.")
 
-		saynn("[say=tavi]How could I not be here with you. I wanna help you, owner.[/say]")
+		saynn("[say=tavi]Как же мне не быть здесь, рядом с тобой? Я хочу помочь тебе, хозяин.[/say]")
 
-		saynn("The door blinks non-stop. Its security bolts toggle on and off.. And then the door opens when the right wire gets an impulse sent through it.")
+		saynn("Дверь беспрестанно мигает. Запорные механизмы то срабатывают, то отпускают... И вот, когда по нужному проводу проходит импульс, дверь открывается.")
 
-		saynn("[say=tavi]That's why I like hacking software more. Software and people~. This isn't even a challenge.[/say]")
+		saynn("[say=tavi]Вот почему мне больше нравится взламывать софт. И программы, и людей~. Это даже не вызов.[/say]")
 
-		saynn("And now.. All you can do is walk in. You and Tavi look at each other.")
+		saynn("И теперь... остается только войти. Вы с Тави переглядываетесь.")
 
-		saynn("[say=pc]Ready?[/say]")
+		saynn("[say=pc]Готова?[/say]")
 
 		if (isCorrupt):
-			saynn("[say=tavi]Been waiting my whole life for this~. And I won't pull any punches.[/say]")
+			saynn("[say=tavi]Ждала этого всю свою жизнь~. И бить вполсилы не стану.[/say]")
 
 		else:
-			saynn("[say=tavi]Been waiting my whole life for this.[/say]")
+			saynn("[say=tavi]Ждала этого всю свою жизнь.[/say]")
 
-		addButton("Walk in", "See what's up with the captain", "start_captain_scene")
+		addButton("Войти", "Посмотреть, что там у капитана", "start_captain_scene")
 func taviSpeak(corruptSpeak, pureSpeak):
 	if(isCorrupt):
 		return corruptSpeak

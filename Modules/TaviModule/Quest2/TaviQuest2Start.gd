@@ -9,28 +9,28 @@ func _run():
 		addCharacter("tavi")
 		
 	if(state == ""):
-		saynn("You get Tavi’s attention by getting on your knees and poking her leg.")
+		saynn("Ты привлекаешь внимание Тави, опускаясь на колени и тыкая её в ногу.")
 
-		saynn("[say=pc]What now, Miss?[/say]")
+		saynn("[say=pc]Ну, чего тебе, мисс?[/say]")
 
-		saynn("[say=tavi]We can do some recon.[/say]")
+		saynn("[say=tavi]Мы можем заняться разведкой.[/say]")
 
-		saynn("[say=pc]Recon?[/say]")
+		saynn("[say=pc]Разведкой?[/say]")
 
-		saynn("[say=tavi]Yeah, have you met the captain? What a prick.[/say]")
+		saynn("[say=tavi]Ага. Ты видела капитана? Ну и мудак же он.[/say]")
 
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
-		saynn("[say=tavi]We get to his office, figure out where the communication console is and call my friends.[/say]")
+		saynn("[say=tavi]Добраться до его кабинета, найти консоль связи и позвонить моим друзьям.[/say]")
 
-		saynn("[say=pc]You have friends?[/say]")
+		saynn("[say=pc]У тебя есть друзья?[/say]")
 
-		saynn("You are met with silence. Tavi just softly chuckles after a few seconds.")
+		saynn("В ответ повисает тишина. Спустя пару секунд Тави тихонько посмеивается.")
 
-		saynn("[say=tavi]Meet me tomorrow near the checkpoint. Be prepared, cutie.[/say]")
+		saynn("[say=tavi]Жду тебя завтра у контрольно-пропускного пункта. Будь готова, милашка.[/say]")
 
 		# (new quest added)
-		addButton("Leave", "She got what she deserved anyways", "endthescene")
+		addButton("Уйти", "Она всё равно получила то, что заслужила.", "endthescene")
 
 
 func _react(_action: String, _args):

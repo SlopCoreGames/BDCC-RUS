@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Defensive
 	
 func getVisibleName(_context = {}):
-	return "Weakness drug"
+	return "Слабодействующий препарат"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -18,7 +18,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkDodged(_attacker, _receiver, DamageType.Stamina)):
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "{attacker.name} manages to stick a syringe into your neck! Your muscles refuse to tense up, you suddenly feel very weak!"
+	var text = "{attacker.name} умудряется вонзить шприц тебе в шею! Твои мышцы отказываются напрягаться, и ты внезапно чувствуешь невыносимую слабость!"
 	_receiver.addEffect(StatusEffect.Weakness)
 	return {
 		text = text,

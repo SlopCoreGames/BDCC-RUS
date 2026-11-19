@@ -6,28 +6,28 @@ func _init():
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("You can already feel that something is different, there is no usual arousing scent. And indeed, as you enter Tavi's cell.. you don't find her.")
+		saynn("Ты уже чувствуешь, что что-то не так: привычного возбуждающего аромата нет. И действительно, когда ты входишь в камеру Тави... ты не находишь её там.")
 
-		saynn("[say=pc]Tavi?[/say]")
+		saynn("[say=pc]Тави?[/say]")
 
-		saynn("No reaction. Time to go look for her.")
+		saynn("Никакой реакции. Пора отправиться на её поиски.")
 
-		addButton("Step out", "Look for Tavi in other blocks", "step_out")
+		addButton("Выйти наружу", "Искать Тави в других блоках", "step_out")
 	if(state == "step_out"):
 		aimCameraAndSetLocName("cellblock_nearcells")
 		addCharacter("kait")
 		playAnimation(StageScene.Duo, "stand", {npc="kait"})
-		saynn("You step out of her cell and look around. There are no obvious signs of Tavi, not even a trail of her pussy juices that would lead to her.")
+		saynn("Ты выходишь из её камеры и оглядываешься по сторонам. Никаких явных признаков присутствия Тави, даже следов её кислых соков, которые могли бы вывести тебя на след.")
 
-		saynn("But after your quick search, you suddenly run into Kait. She seems to be.. hurt.. there are obvious scratches on her face, chest and arms. But she is also.. covered in some transparent fluids.")
+		saynn("Но после быстрого осмотра ты внезапно натыкаешься на Кейт. Кажется, она... ранена... на её лице, груди и руках видны явные царапины. Но ещё она... вся покрыта какой-то прозрачной жидкостью.")
 
-		saynn("Kait was heading somewhere, her head lowered. But when she notices you, she can't help but to lash out at you.")
+		saynn("Кейт куда-то шла, низко опустив голову. Но заметив тебя, она не может удержаться от вспышки ярости.")
 
-		saynn("[say=kait]Your Tavi went nuts completely! What did you even do to her?![/say]")
+		saynn("[say=kait]Твоя Тави совсем с катушек съехала! Что ты с ней вообще сделал?![/say]")
 
-		saynn("She growls but then just leaves when too many eyes get glued to her. Huh, Kait has Tavi's scent though. So you must be on the right path.")
+		saynn("Она рычит, но уходит, когда на неё устремляется слишком много взглядов. Хм, но от Кейт пахнет Тави. Значит, ты на верном пути.")
 
-		addButton("Main hall", "See if Tavi is there", "step_main_hall")
+		addButton("Главный зал", "Посмотреть, нет ли там Тави", "step_main_hall")
 	if(state == "step_main_hall"):
 		aimCameraAndSetLocName("main_stairs_n")
 		GM.pc.setLocation("main_stairs_n")
@@ -35,123 +35,123 @@ func _run():
 		addCharacter("tavi", ["naked"])
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {pc="tavi", npc="eliza", bodyState={naked=true}})
-		saynn("You step out into the main hall. Huh. There is a big crowd of inmates near the stocks, forming a make-shift arena. Something is surely happening there.")
+		saynn("Ты выходишь в главный зал. Хм. Возле колодок собралась толпа заключенных, образовав импровизированную арену. Там явно что-то происходит.")
 
-		saynn("As you approach it, you begin to hear doctor Quinn's voice.")
+		saynn("Когда ты приближаешься, до тебя начинают доноситься звуки голоса доктора Куинн.")
 
-		saynn("[say=eliza]And this was your plan? Getting me out here by beating up one of the inmates? You're even more evil than I thought.[/say]")
+		saynn("[say=eliza]И это был твой план? Вытащить меня сюда, избив одну из заключенных? Ты еще более порочна, чем я думала.[/say]")
 
-		saynn("Naked Tavi slowly circles around Eliza while she does the same, making it look like a dance.")
+		saynn("Обнаженная Тави медленно кружит вокруг Элизы, пока та делает то же самое, и это выглядит как танец.")
 
-		saynn("[say=tavi]It's you who is talking about evil, huh~? I might have horns but you are the real devil here~.[/say]")
+		saynn("[say=tavi]Это ты тут рассуждаешь о порочности, а~? Может, у меня и есть рога, но настоящий дьявол здесь — ты~.[/say]")
 
-		saynn("All the eyes seem to be glued to Tavi.. to her curves.. to her dripping sex. And Tavi knows it, so she directs her next sentence to everyone around.")
+		saynn("Кажется, все взгляды прикованы к Тави... к её изгибам... к её сочащейся похотью. И Тави это знает, поэтому обращает свою следующую фразу ко всем присутствующим.")
 
-		saynn("[say=tavi]Grab her if she pulls out a remote. I want a fair fight~.[/say]")
+		saynn("[say=tavi]Хватайте её, если она достанет пульт. Я хочу честного боя~.[/say]")
 
-		saynn("Doctor growls as she looks around. The inmates are basically a wall, not letting anyone in or out. All the while the two continue their little intricate dance.")
+		saynn("Доктор рычит, оглядываясь по сторонам. Заключенные стоят плотной стеной, не давая никому ни войти, ни выйти. А тем временем две женщины продолжают свой замысловатый танец.")
 
-		saynn("[say=eliza]I was following the captain's orders! You did a lot of bad things, Tavi. But you can still give up. We will.. fix.. whatever happened to you.[/say]")
+		saynn("[say=eliza]Я следовала приказам капитана! Ты совершила много плохих поступков, Тави. Но ты еще можешь сдаться. Мы... исправим... всё, что с тобой случилось.[/say]")
 
-		saynn("Tavi's eyes shine brightly as she starts approaching the other feline.")
+		saynn("Глаза Тави ярко сияют, когда она начинает приближаться к другой кошачьей.")
 
-		addButton("Continue", "See what happens next", "first_strike")
+		addButton("Продолжить", "Смотреть, что будет дальше", "first_strike")
 	if(state == "first_strike"):
 		playAnimation(StageScene.Duo, "dodge", {pc="tavi", npc="eliza", npcAction="punch", bodyState={naked=true}})
-		saynn("Tavi's constant smile makes Eliza feel uneasy. As soon as the distance between them gets halved, the doctor extends her claws and leashes out at the naked cat. Tavi sees that and just gracefully avoids her paw.")
+		saynn("Постоянная улыбка Тави заставляет Элизу нервничать. Как только расстояние между ними сокращается вдвое, доктор выпускает когти и бросается на обнаженную кошку. Тави видит это и просто грациозно уклоняется от её лапы.")
 
-		saynn("[say=tavi]You know. I should thank you actually. Without your torturing me.. I would realize my true potential~.[/say]")
+		saynn("[say=tavi]Знаешь, на самом деле мне стоит тебя поблагодарить. Без твоих пыток... я бы не осознала свой истинный потенциал~.[/say]")
 
-		saynn("Eliza growls and tries to scratch Tavi again but she side-steps and does an attack of her own, her claws leaving shallow bleeding marks on Eliza's cheek.")
+		saynn("Элиза рычит и снова пытается полоснуть Тави когтями, но та уклоняется и наносит ответный удар, оставляя на щеке Элизы неглубокие кровоточащие царапины.")
 
-		saynn("[say=eliza]Argh..[/say]")
+		saynn("[say=eliza]Аргх..[/say]")
 
-		saynn("The doctor grunts as she rubs her new wounds. She sees red blood on her paws.")
+		saynn("Доктор кряхтит, потирая свежие раны. На её лапах видна алая кровь.")
 
-		saynn("[say=eliza]You're a monster.[/say]")
+		saynn("[say=eliza]Ты чудовище![/say]")
 
-		saynn("Eliza sounds almost desperate.")
+		saynn("В голосе Элизы слышится почти отчаяние.")
 
-		addButton("Continue", "See what happens next", "throw_vial")
+		addButton("Продолжить", "Смотреть, что будет дальше", "throw_vial")
 	if(state == "throw_vial"):
 		playAnimation(StageScene.Duo, "stand", {pc="tavi", npc="eliza", npcAction="throw", bodyState={naked=true}})
-		saynn("Eliza fetches one of the vials from her belt and throws it towards Tavi. The glass object shatters under her legs.. But Tavi just lets the pink cloud cover her up.")
+		saynn("Элиза достает из-за пояса один из флаконов и швыряет его в Тави. Стеклянный сосуд разбивается у её ног... Но Тави лишь позволяет розовому облаку окутать себя.")
 
-		saynn("[say=eliza]This will use your lust against you! Submit![/say]")
+		saynn("[say=eliza]Это использует твою похоть против тебя! Покорись![/say]")
 
-		saynn("Nothing.. is happening.. for quite some time. As the cloud disappears, it uncovers Tavi.. still standing.. and still smiling.")
+		saynn("Долгое время... ничего не происходит. Когда облако рассеивается, открывается вид на Тави... она всё еще стоит... и всё еще улыбается.")
 
-		saynn("[say=eliza]I don't believe in hell.. But I'm gonna send you back there, whatever it takes.[/say]")
+		saynn("[say=eliza]Я не верю в ад... Но я отправлю тебя обратно, чего бы мне это ни стоило.[/say]")
 
-		saynn("Tavi begins to slowly approach Eliza.. taking her time.. swaying her hips. That's when the doctor gets too desperate, she reaches for her remote and tries to use it. But then a full crowd of inmates stopped her. Some are grabbing her hand, some holding her labcoat, others are yanking on her hair. All the while Tavi just slowly creeps closer and closer, her smile unchanged.")
+		saynn("Тави начинает медленно приближаться к Элизе... не торопясь... покачивая бедрами. В этот момент доктор впадает в истинное отчаяние: она тянется к пульту, пытаясь его активировать, но толпа заключенных останавливает её. Одни хватают её за руки, другие тянут за лабораторный халат, третьи дергают за волосы. А Тави тем временем всё ближе и ближе подползает к ней, и улыбка на её лице ни на миг не сходит.")
 
-		saynn("[say=eliza]S-stop it!.. Let me go. This bitch is gonna kill me![/say]")
+		saynn("[say=eliza]Х-хватит!.. Отпусти меня. Эта сучка меня прикончит![/say]")
 
-		addButton("Continue", "See what happens next", "twist")
+		addButton("Продолжить", "Смотреть, что будет дальше", "twist")
 	if(state == "twist"):
 		playAnimation(StageScene.Duo, "stand", {pc="tavi", npc="eliza", npcAction="kneel", bodyState={naked=true}})
-		saynn("Tavi walks up to Eliza and looks her in the eyes. Then the tall naked kitty just parts her lips and blows.. the same pink smoke.. directly into her face.")
+		saynn("Тави подходит к Элизе и смотрит ей прямо в глаза. Затем высокая голая кошечка лишь приоткрывает губы и выдувает... тот самый розовый дым... ей прямо в лицо.")
 
-		saynn("[say=eliza]Kgh.. gh-h..[/say]")
+		saynn("[say=eliza]Кхх.. гх-х..[/say]")
 
-		saynn("Eliza certainly didn't expect that. She drops her remote and starts coughing.. but then her eyes begin to share the same lustness as Tavi's.")
+		saynn("Элиза явно этого не ожидала. Она роняет пульт и начинает кашлять... но затем в её глазах вспыхивает та же похоть, что и у Тави.")
 
-		saynn("[say=eliza]F-fuck.. me..[/say]")
+		saynn("[say=eliza]Б-блядь.. меня..[/say]")
 
-		saynn("When the crowd lets go of Eliza, she drops to her knees before Tavi. Tall kitty idly puts her paw on that ponytail and pats the doctor.")
+		saynn("Когда толпа отпускает Элизу, она падает на колени перед Тави. Высокая кошечка лениво кладет лапу на её хвост и поглаживает доктора.")
 
-		saynn("[say=tavi]Killing you would be fun..[/say]")
+		saynn("[say=tavi]Убить тебя было бы весело..[/say]")
 
-		saynn("After a few headpats, Tavi turns around and just starts heading away, deciding not to finish her sentence. That's when Eliza sneakily pulls out some syringe and suddenly tries to stab Tavi!")
+		saynn("После нескольких поглаживаний Тави разворачивается и просто уходит, решив не заканчивать фразу. В этот момент Элиза незаметно выхватывает шприц и внезапно пытается вонзить его в Тави!")
 
-		addButton("Continue", "See what happens next", "tavi_almost_kills")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_almost_kills")
 	if(state == "tavi_almost_kills"):
 		playAnimation(StageScene.Hug, "hug", {pc="tavi", npc="eliza", bodyState={naked=true}})
-		saynn("Eliza growls as she almost manages to inject the naked inmate.. But Tavi turns at the last second and sinks her long sharp claws into the doctor's neck.. directly in the middle of her throat. Eliza gasps as she realizes that she can't talk.. or breathe.. blood begins streaming down her neck.. her eyes full of terror.")
+		saynn("Элиза рычит, почти сумев сделать инъекцию голой заключенной... Но в последнюю секунду Тави разворачивается и вонзает свои длинные острые когти в шею доктора... прямо в середину горла. Элиза ахает, осознавая, что не может ни говорить, ни дышать... по шее начинает течь кровь, а её глаза полны ужаса.")
 
-		saynn("[say=eliza]Gh-h.. h.h-h..[/say]")
+		saynn("[say=eliza]Гх-х.. х-х-х..[/say]")
 
-		saynn("Everyone around goes quiet instantly, the crowd is no longer cheering, everyone is just shocked at the display. Tavi casually fetches the syringe from Eliza's paw and puts it back into her belt.")
+		saynn("Все вокруг мгновенно затихают; толпа больше не ликует — все просто в шоке от увиденного. Тави небрежно забирает шприц из лапы Элизы и убирает его обратно в её пояс.")
 
-		saynn("[say=tavi]..And extremely easy.. Just dragging my claws through your neck.. ripping through all of your arteries.. Until there is nothing that can save you anymore..[/say]")
+		saynn("[say=tavi]..И это чертовски просто.. Просто провести когтями по твоей шее.. распороть все твои артерии.. Пока не останется ничего, что могло бы тебя спасти..[/say]")
 
-		saynn("Tavi tilts her head to the side, her smile.. it's the same smile as before.. but now it looks so much more maniacal.. Eliza's lower jaw is shaking.. Tears stream down her cheeks.")
+		saynn("Тави наклоняет голову набок, её улыбка... та же самая, что и раньше... но теперь она выглядит куда более маньякальной. Нижняя челюсть Элизы дрожит, по её щекам текут слезы.")
 
-		saynn("[say=tavi]But.. the punishment must fit the crime. So this will do..[/say]")
+		saynn("[say=tavi]Но.. наказание должно соответствовать преступлению. Так что этого будет достаточно..[/say]")
 
-		saynn("Tavi supports Eliza with her free paw as she pulls her claws out of that neck.. causing a stronger flow of blood to spawn, both dark and bright blood.. That labcoat gets quickly coated with it.. just like her fur.")
+		saynn("Тави поддерживает Элизу свободной лапой, пока вытаскивает когти из её шеи... отчего кровь начинает хлестать сильнее — и темная, и алая... Лабораторный халат мгновенно пропитывается ею, как и её мех.")
 
-		saynn("After that, Tavi leans in and starts.. licking the deep wounds that she caused. And miraculously, they begin to heal. While Tavi is dragging her rough feline tongue over the pierced torn flesh, it gets mended.. until there is no more blood loss.. just a spot without fur.")
+		saynn("После этого Тави наклоняется и начинает... вылизывать глубокие раны, которые сама же и нанесла. И, о чудо, они начинают затягиваться. Пока Тави проводит своим шершавым кошачьим языком по рваной плоти, раны срастаются... пока кровотечение не прекращается совсем, оставляя лишь залысину на меху.")
 
-		saynn("[say=tavi]It only took becoming a monster to finally see my dreams starting to come true. Worthy sacrifice, I think~.[/say]")
+		saynn("[say=tavi]Нужно было лишь стать монстром, чтобы наконец увидеть, как мои мечты начинают сбываться. Думаю, это достойная жертва~.[/say]")
 
-		saynn("When Tavi lets go of Eliza, she is left panting heavily on the floor, her eyes still can't believe that this has happened. A few seconds later, the doctor dashes away, leaving only Tavi in the arena.")
+		saynn("Когда Тави отпускает Элизу, та остается тяжело дышать на полу, всё еще не в силах поверить в случившееся. Спустя несколько секунд доктор убегает прочь, оставляя на арене одну лишь Тави.")
 
-		saynn("The crowd begins to disperse.. Allowing you to get close to her.")
+		saynn("Толпа начинает расходиться... позволяя тебе подойти к ней поближе.")
 
-		addButton("Continue", "See what happens next", "tavi_talks")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_talks")
 	if(state == "tavi_talks"):
 		removeCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcBodyState={naked=true}})
-		saynn("Tavi smiles when she sees you.")
+		saynn("Увидев тебя, Тави улыбается.")
 
-		saynn("[say=pc]What was this about?[/say]")
+		saynn("[say=pc]О чём это была речь?[/say]")
 
-		saynn("[say=tavi]Just tying up some loose ends before..[/say]")
+		saynn("[say=tavi]Просто завязываю кое-какие концы перед тем, как...[/say]")
 
-		saynn("Her smile gets wider as she looks at you.")
+		saynn("Её улыбка становится шире, пока она смотрит на тебя.")
 
-		saynn("[say=pc]Before?[/say]")
+		saynn("[say=pc]Перед чем?[/say]")
 
-		saynn("She leans in and lands a little kiss on your lips. Tastes like blood..")
+		saynn("Она наклоняется и оставляет легкий поцелуй на твоих губах. На вкус как кровь...")
 
-		saynn("[say=tavi]It's your call~. I will be in my cell if you wanna talk.[/say]")
+		saynn("[say=tavi]Решать тебе~. Буду у себя в камере, если захочешь поговорить.[/say]")
 
-		saynn("Tavi slowly walks away, swaying her hips in the process.")
+		saynn("Тави медленно уходит, покачивая бедрами.")
 
-		saynn("Huh.")
+		saynn("Хм.")
 
-		addButton("Continue", "This was something", "endthescene")
+		addButton("Продолжить", "Это было нечто", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

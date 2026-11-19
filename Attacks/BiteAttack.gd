@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Bite"
+	return "Укус"
 	
 func getVisibleDesc(_context = {}):
 	return "60% chance to do "+scaledDmgRangeStr(DamageType.Physical, 15, 20)+" damage and cause bleeding.\n\nCan't miss if the opponent is on the ground.\n\nVery weak against armored opponents"

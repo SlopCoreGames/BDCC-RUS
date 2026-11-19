@@ -11,97 +11,97 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcAction="allfours"})
 		
-		saynn("You pin the rebellious feline to the floor face-down and hold her by the collar. She hisses at you but lays still, seems like your lessons taught her at least something.")
+		saynn("Ты прижимаешь строптивую кошку лицом к полу и держишь её за ошейник. Она шипит на тебя, но лежит смирно — похоже, твои уроки научили её хоть чему-то.")
 
-		saynn("[say=tavi]Can you get off? I will do whatever the fuck you want, just let me get up.[/say]")
+		saynn("[say=tavi]Ты можешь слезть? Я сделаю всё, что ты, блядь, захочешь, только дай мне встать![/say]")
 
-		saynn("You force her face into the cold floor harder and chuckle.")
+		saynn("Ты с силой вдавливаешь её лицом в холодный пол и посмеиваешься.")
 
-		saynn("[say=pc]You won’t need to stand.[/say]")
+		saynn("[say=pc]Вставать тебе не понадобится.[/say]")
 
-		saynn("Tavi tries to struggle and manages to free her arm but you shove a knee into her back. The pain forces the grunt out of her and makes her give up.")
+		saynn("Тави пытается вырваться и ей удается освободить руку, но ты втыкаешь колено ей в спину. От боли она невольно кряхтит и сдается.")
 
-		saynn("[say=tavi]I will shatter that kneecap, gh-h.[/say]")
+		saynn("[say=tavi]Я тебе коленную чашечку в щепки разнесу, гх-х...[/say]")
 
-		saynn("[say=pc]I think I will make you into a good puppy. And pups don’t talk, as you are aware. So shut up. Each word will make it more painful for you. And more fun for me.[/say]")
+		saynn("[say=pc]Думаю, я сделаю из тебя послушную собачку. А щенки, как ты сама знаешь, не болтают. Так что заткнись. Каждое слово будет делать тебе больнее. А мне — веселее.[/say]")
 
-		saynn("[say=tavi]Oh yeah? Think you can handle me?[/say]")
+		saynn("[say=tavi]О да? Думаешь, справишься со мной?[/say]")
 
-		saynn("You grab her arm and wrench it behind her back, applying extra pressure to make it sting. Tavi grunts and growls at you but you keep wrenching it, causing more and more discomfort until Tavi finally gives up. Her tail wags a lot, she is not happy about this.")
+		saynn("Ты хватаешь её за руку и выворачиваешь за спину, усиливая давление, чтобы причинить резкую боль. Тави стонет и рычит на тебя, но ты продолжаешь выкручивать её руку, доводя её до предела, пока она наконец не сдается. Её хвост нервно дергается — она явно не в восторге. ")
 
-		saynn("[say=tavi]..Fine-fine. Fucking stop. I still need my arm.[/say]")
+		saynn("[say=tavi]...Ладно-ладно! Блядь, хватит! Мне еще рука нужна![/say]")
 
-		saynn("You let go of the arm and give her ass a firm slap, causing her to yelp.")
+		saynn("Ты отпускаешь её руку и крепко шлепаешь её по заднице, заставляя её взвизгнуть.")
 
-		saynn("[say=pc]Pups don’t talk, silly. Mhm?[/say]")
+		saynn("[say=pc]Щенки не разговаривают, глупышка. М-м?[/say]")
 
-		saynn("A few seconds pass.")
+		saynn("Проходит несколько секунд.")
 
-		saynn("[say=tavi]..mhm..[/say]")
+		saynn("[say=tavi]..м-м..[/say]")
 
-		saynn("You stop pinning her and stand up. Tavi tries to do the same but you stop her with your leg when she was on all fours. She growls and shows you her capped-off fangs but doesn’t drop a word.")
+		saynn("Ты перестаешь прижимать её и встаешь. Тави пытается сделать то же самое, но ты преграждаешь ей путь ногой, когда она встает на четвереньки. Она рычит, скаля свои клыки, но не проронив ни слова.")
 
-		saynn("[say=pc]Stay like that. On all fours. I won’t stop until I see a good puppy.[/say]")
+		saynn("[say=pc]Так и оставайся. На четвереньках. Я не остановлюсь, пока не увижу послушную собачку.[/say]")
 
-		saynn("Tavi glares up at you. You take your foot off of her and watch her. Tavi considers her options and decides to stay still, her feline tail wags slowly in the air, with snake-like movement. You crouch in front of her and watch her angry eyes.")
+		saynn("Тави свирепо смотрит на тебя снизу вверх. Ты убираешь ногу и наблюдаешь за ней. Тави взвешивает варианты и решает не двигаться; её кошачий хвост медленно покачивается в воздухе, напоминая движения змеи. Ты приседаешь перед ней, глядя в её злые глаза.")
 
-		saynn("[say=pc]Sit.[/say]")
+		saynn("[say=pc]Сидеть![/say]")
 
-		saynn("She frowns but obeys, lowering her butt and sitting on her ankles. She tilts her head down for a second, feeling humiliated.")
+		saynn("Она хмурится, но подчиняется, опуская зад и садясь на пятки. На мгновение она опускает голову, чувствуя себя униженной.")
 
-		saynn("[say=pc]Up.[/say]")
+		saynn("[say=pc]Вверх.[/say]")
 
-		saynn("Tavi takes her time but she stands on all fours again. You reach your hands out and give the feline-pup a few good headpats, your digits reach behind her ears and scratch there. Tavi’s glare softens as the soft blush appears on her face.")
+		saynn("Тави не спешит, но всё же снова встает на четвереньки. Ты протягиваешь руки и хорошенько гладишь эту кошачью щенка, запуская пальцы за её уши и почесывая там. Свирепый взгляд Тави смягчается, а на её щеках проступает нежный румянец.")
 
-		saynn("[say=pc]Voice.[/say]")
+		saynn("[say=pc]Голос![/say]")
 
-		saynn("[say=tavi]What?[/say]")
+		saynn("[say=tavi]Что?[/say]")
 
-		saynn("Your digits stop where they were, near her ears, you hold her head still as you give her a strict look.")
+		saynn("Твои пальцы замирают там, где были, возле её ушей; ты удерживаешь её голову неподвижно, бросая на неё строгий взгляд.")
 
-		saynn("[say=pc]Bark.[/say]")
+		saynn("[say=pc]Гав.[/say]")
 
-		saynn("[say=tavi]I’m not gonna bark, fuck off.[/say]")
+		saynn("[say=tavi]Лаять не буду, отъебись![/say]")
 
-		saynn("Suddenly you grab her by the hair and pull her head down. She grumbles as she is forced to lay on the floor.")
+		saynn("Внезапно ты хватаешь её за волосы и тянешь голову вниз. Она ворчит, когда её заставляют лечь на пол.")
 
-		saynn("[say=pc]You’re gonna bark like a good pup or I’m gonna break you. And then you’re gonna bark.[/say]")
+		saynn("[say=pc]Будешь лаять, как послушная сучка, иначе я тебя сломаю. А потом ты всё равно завою.[/say]")
 
-		saynn("You don’t hear an answer from her. But you also don’t feel her resistance. You let go of her hair and she stays where she was.")
+		saynn("Ответа ты не слышишь. Но и сопротивления тоже не чувствуешь. Ты отпускаешь её волосы, и она остается лежать на месте.")
 
-		saynn("[say=pc]Up.[/say]")
+		saynn("[say=pc]Вверх.[/say]")
 
-		saynn("The feline gets up to all fours again, this time without hesitating. You give her a strict look. Fear and strictness seem to work great against this red.")
+		saynn("Кошка снова встает на четвереньки, на этот раз без колебаний. Ты бросаешь на неё строгий взгляд. Страх и строгость, похоже, отлично действуют на эту рыжую.")
 
-		saynn("[say=pc]Voice.[/say]")
+		saynn("[say=pc]Голос![/say]")
 
-		saynn("Tavi stays quiet for about five seconds and then lets out a quiet bark. You give her a few scritches under the chin.")
+		saynn("Тави молчит секунд пять, а затем издает тихий лай. Ты пару раз чешешь её под подбородком.")
 
-		saynn("[say=pc]Louder.[/say]")
+		saynn("[say=pc]Громче.[/say]")
 
-		saynn("[say=tavi]Woof..[/say]")
+		saynn("[say=tavi]Гав...[/say]")
 
-		saynn("The unwilling puppy tilts her head down and leans into the scritches. You stroke her back, she doesn’t resist.")
+		saynn("Нехотя, но послушно, щенок наклоняет голову и прижимается к твоей руке. Ты гладишь её по спине, и она не сопротивляется.")
 
-		saynn("[say=pc]Good girl. Show me a happy pup.[/say]")
+		saynn("[say=pc]Хорошая девочка. Покажи мне счастливого песика.[/say]")
 
-		saynn("Tavi subtly wiggles her butt for you. You stop crouching and watch the girl. A tall red feline that was quite hostile a few minutes ago is now swaying her hips for you and stays on all fours, pretending to be a puppy. You take a few steps back.")
+		saynn("Тави едва заметно виляет перед собой задом. Ты перестаешь приседать и наблюдаешь за ней. Высокая рыжая кошка, которая еще несколько минут назад была настроена крайне враждебно, теперь виляет бедрами и стоит на четвереньках, притворяясь щенком. Ты делаешь несколько шагов назад.")
 
-		saynn("[say=pc]Come.[/say]")
+		saynn("[say=pc]Ко мне.[/say]")
 
-		saynn("Puppy tilts her head down and starts crawling towards you, her tail is constantly in the air. She approaches you and stops, her head looking up, face showing a mix of anger and embarrassment.")
+		saynn("Щеночек наклоняет голову и начинает ползти к тебе, её хвостик постоянно поднят вверх. Она подходит вплотную и замирает, задрав голову; на её лице читается смесь злости и смущения.")
 
-		saynn("You lean down and give her belly rubs, your palm travels along her curves back and forth and jumps to land a spank on her ass, making the pup squeak.")
+		saynn("Ты наклоняешься и начинаешь чесать ей животик; твоя ладонь скользит по её изгибам туда-сюда, а затем резко опускается, чтобы отвесить звонкий шлепок по заднице, отчего щенок взвизгивает.")
 
-		saynn("[say=pc]Next time don’t be so stubborn and I won’t have to hurt you.[/say]")
+		saynn("[say=pc]В следующий раз не будь такой упрямой, и мне не придётся причинять тебе боль.[/say]")
 
-		saynn("[say=tavi]woof..[/say]")
+		saynn("[say=tavi]гав..[/say]")
 
-		saynn("[say=pc]Now stay, pup.[/say]")
+		saynn("[say=pc]А теперь — сидеть, щенок.[/say]")
 
-		saynn("You smile and headpat the pup a few times before leaving her alone. Tavi tilts her head, probably wondering when she is allowed to stand up.")
+		saynn("Ты улыбаешься и пару раз гладишь щенка по голове, прежде чем оставить её одну. Тави наклоняет голову набок, вероятно, гадая, когда ей наконец разрешат встать.")
 
-		addButton("Leave", "What a cute puppy", "endthescene")
+		addButton("Уйти", "Какая милая собачка", "endthescene")
 
 
 func _react(_action: String, _args):

@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Iron grip"
+	return "Железная хватка"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -20,7 +20,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 		addLuxeRage(_attacker, 0.25)
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "{attacker.name}’s hand clamps around your throat like a vice, cutting off your air as {attacker.he} lifts you off the ground. Your vision swims as {attacker.his} grip tightens, bruising your windpipe before {attacker.he} slams you into the ground."
+	var text = "Рука {attacker.name} смыкается на твоем горле, словно тиски, перекрывая воздух, пока {attacker.he} приподнимает тебя над землей. В глазах все плывет, когда хватка {attacker.his} сжимается еще сильнее, оставляя синяки на трахее, прежде чем {attacker.he} с силой впечатает тебя в землю."
 	return {
 		text = text,
 		pain = 10,
@@ -31,7 +31,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	var text = "{attacker.name}’s eyes narrow as {attacker.he} approaches, {attacker.his} glowing fur tips flaring faintly. His claws flex, ready to seize you."
+	var text = "Глаза {attacker.name} сужаются, когда {attacker.he} приближается, а кончики {attacker.his} начинают слабо светиться. Его когти напрягаются, готовые вцепиться в тебя."
 
 	return text
 

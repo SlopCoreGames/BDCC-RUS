@@ -7,13 +7,13 @@ func _init():
 	aiScoreMultiplier = 0.5
 	
 func getVisibleName(_context = {}):
-	return "Evasive Maneuver"
+	return "Уклоняющийся маневр"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
-	var text = "{attacker.name} crouches low, preparing to evade any incoming attacks."
+	var text = "{attacker.name} пригибается низко к земле, готовясь уклониться от любых входящих атак."
 	
 	_attacker.addEffect(StatusEffect.Evading, [1])
 	return {

@@ -6,7 +6,7 @@ func _init():
 	aiCategory = AICategory.Offensive
 	
 func getVisibleName(_context = {}):
-	return "Enraged Slam"
+	return "Яростный удар"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -20,7 +20,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 		addLuxeRage(_attacker, 0.5)
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "With a furious roar, {attacker.name} grabs you by the arm and hurls you into the nearest wall. The impact leaves cracks in the surface as pain explodes through your body, leaving you gasping and disoriented."
+	var text = "С яростным ревом {attacker.name} хватает тебя за руку и швыряет в ближайшую стену. От удара по поверхности разлетаются трещины, а по твоему телу проносится взрыв боли, заставляя тебя задыхаться и терять ориентацию."
 	
 	if(_receiver.addEffect(StatusEffect.Stunned, [1])):
 		text += " [b]You got stunned![/b]"
@@ -37,7 +37,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	var text = "{attacker.name}’s glowing fur intensifies, the embers brightening as {attacker.he} loses himself to fury. {attacker.His} fists clench as {attacker.his} chest heaves with rage. This one is gonna hurt.."
+	var text = "Свечение меха {attacker.name} становится интенсивнее, угли разгораются ярче, пока {attacker.he} теряет контроль от ярости. Кулаки {attacker.His} сжимаются, а грудь {attacker.his} тяжело вздымается от гнева. Это будет чертовски больно..."
 
 	return text
 

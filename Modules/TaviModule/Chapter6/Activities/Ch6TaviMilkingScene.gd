@@ -24,490 +24,490 @@ func _run():
 		hasMilk = getCharacter("tavi").canBeMilked()
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
 		if (hasMilk):
-			saynn("Tavi's breasts seem to be lactating and so you are thinking about milking your pet.")
+			saynn("Похоже, у Тави началось молоко, и ты всерьез задумываешься о том, чтобы подоить свою питомицу.")
 
-			saynn("Question is how do you wanna do that?")
+			saynn("Вопрос лишь в том, как именно ты хочешь это сделать?")
 
-			saynn("The feline catches your gaze on her chest and crosses her arms, emphasizing her {tavi.breasts} while biting her lip.")
+			saynn("Кошка замечает твой взгляд на своей груди и скрещивает руки, подчеркивая свои {tavi.breasts} и прикусывая губу.")
 
 			saynn("[say=tavi]"+str(taviSpeak("Like 'em?.. You made them like that.", "They keep itching when full.. Wanna change that?", "I think I know why you are staring.."))+"[/say]")
 
 			if (getCharacter("tavi").hasEffect(StatusEffect.SoreNipplesAfterMilking)):
-				addDisabledButton("Hand-Milking", "Give Tavi some rest. Her nipples are still sore")
-				addDisabledButton("Breastfeeding", "Give Tavi some rest. Her nipples are still sore")
-				addDisabledButton("Breast pump", "Give Tavi some rest. Her nipples are still sore")
+				addDisabledButton("Дойка руками", "Дать Тави отдохнуть. Её соски всё ещё болят")
+				addDisabledButton("Кормление грудью", "Дать Тави отдохнуть. Её соски всё ещё болят")
+				addDisabledButton("Молокоотсос", "Дать Тави отдохнуть. Её соски всё ещё болят")
 			else:
-				addButton("Hand-Milking", "Milk Tavi breasts with your hands", "lact_handmilking")
-				addButton("Breastfeeding", "Feed on Tavi's breasts with your mouth", "lact_breastfeeding")
+				addButton("Дойка руками", "Доить грудь Тави руками", "lact_handmilking")
+				addButton("Кормление грудью", "Сосать грудь Тави ртом", "lact_breastfeeding")
 				if (GM.pc.getInventory().getItemsWithTag(ItemTag.BreastPump).size() > 0):
-					addButton("Breast pump", "Use one of your breast pumps on Tavi's chest", "lact_pump_pick")
+					addButton("Молокоотсос", "Использовать один из ваших молокоотсосов на груди Тави", "lact_pump_pick")
 				else:
-					addDisabledButton("Breast pump", "You don't have any breast pumps")
+					addDisabledButton("Молокоотсос", "У вас нет молокоотсосов")
 		else:
-			saynn("Tavi doesn't seem to be lactating so you can't really milk her.")
+			saynn("Тави вроде бы не лактирует, так что доить её особо не получается.")
 
-			saynn("But you can still try, right? Maybe something fun will happen if you keep at it..")
+			saynn("Но ведь можно всё равно попробовать, верно? Может, если не сдаваться, случится что-нибудь эдакое...")
 
-			saynn("The feline catches your gaze on her chest and tilts her head slightly.")
+			saynn("Кошка ловит ваш взгляд на своей груди и слегка наклоняет голову.")
 
 			saynn("[say=tavi]"+str(taviSpeak("Something is wrong? Want me to undress?..", "Your stare makes me wet alone, what's up with that?", "You like staring at me.."))+"[/say]")
 
 			var lastGrope = getFlag("TaviModule.Ch6TaviLastGropeHow", "")
 			if (lastGrope == "grope"):
-				saynn("You remember that you groped Tavi's breasts last time to try to make her lactate. [b]You're pretty sure that trying something else now will be more efficient.[/b]")
+				saynn("Вы помните, как в прошлый раз ощупывали грудь Тави, пытаясь вызвать у неё лактацию. [b]Вы почти уверены, что сейчас стоит попробовать что-то другое, чтобы добиться большего эффекта.[/b]")
 
 			elif (lastGrope == "suck"):
-				saynn("You remember that you sucked on Tavi's breasts last time to try to make her lactate. [b]You're pretty sure that trying something else now will be more efficient.[/b]")
+				saynn("Вы помните, как в прошлый раз сосали грудь Тави, пытаясь вызвать у неё лактацию. [b]Вы почти уверены, что сейчас стоит попробовать что-то другое, чтобы добиться большего эффекта.[/b]")
 
 			elif (lastGrope == "pump"):
-				saynn("You remember that you used a breast pump on Tavi's breasts last time to try to make her lactate. [b]You're pretty sure that trying something else now will be more efficient.[/b]")
+				saynn("Вы помните, как в прошлый раз использовали молокоотсос на груди Тави, пытаясь вызвать у неё лактацию. [b]Вы почти уверены, что сейчас стоит попробовать что-то другое, чтобы добиться большего эффекта.[/b]")
 
-			addButton("Grope Tavi", "Grope Tavi's breasts to make her lactate", "nolact_grope")
+			addButton("Ощупать Тави", "Сжимать грудь Тави, чтобы вызвать лактацию", "nolact_grope")
 			if (getCharacter("tavi").hasEffect(StatusEffect.SoreNipplesAfterMilking)):
-				addDisabledButton("Suck nipples", "Give Tavi some rest, her nipples are still sore")
-				addDisabledButton("Breast pump", "Give Tavi some rest, her nipples are still sore")
+				addDisabledButton("Сосать соски", "Дать Тави отдохнуть, её соски всё ещё болят")
+				addDisabledButton("Молокоотсос", "Дать Тави отдохнуть, её соски всё ещё болят")
 			else:
-				addButton("Suck nipples", "Give some extra attention to Tavi's nipples", "nolact_suck")
+				addButton("Сосать соски", "Уделить особое внимание соскам Тави", "nolact_suck")
 				if (GM.pc.getInventory().getItemsWithTag(ItemTag.BreastPump).size() > 0):
-					addButton("Breast pump", "Use one of your breast pumps on Tavi's chest", "nolact_pump_pick")
+					addButton("Молокоотсос", "Использовать один из ваших молокоотсосов на груди Тави", "nolact_pump_pick")
 				else:
-					addDisabledButton("Breast pump", "You don't have any breast pumps")
-		addButton("Cancel", "You changed your mind", "cancel_activity")
+					addDisabledButton("Молокоотсос", "У вас нет молокоотсосов")
+		addButton("Отмена", "Вы передумали", "cancel_activity")
 	if(state == "nolact_grope"):
 		playAnimation(StageScene.BreastGroping, "tease", {npc="tavi", npcBodyState={naked=true}})
-		saynn("You can just walk up to her and start touching her.. but might as well make it a little more intimate than that.")
+		saynn("Ты можешь просто подойти к ней и начать ласкать... но можно сделать это чуть более интимно.")
 
-		saynn("Tavi purrs when you pull her in for some cuddling. Soft hum of the busy space station seems to fade as you embrace your pet.")
+		saynn("Тави довольно мурлычет, когда ты притягиваешь её к себе для объятий. Мягкий гул оживленной космической станции будто затихает, пока ты обнимаешь свою питомицу.")
 
-		saynn("[say=tavi]Feels nice..[/say]")
+		saynn("[say=tavi]Приятно..[/say]")
 
-		saynn("[say=pc]I could make it even better.[/say]")
+		saynn("[say=pc]Я могу сделать ещё лучше.[/say]")
 
-		saynn("As you cuddle, your hands reach out for Tavi's shirt and gently unbutton it, one button at a time.. Until Tavi's chest is exposed. She seems to trust you somewhat but her digits still cover up her green perky nips, protecting.")
+		saynn("Пока вы обнимаетесь, твои руки тянутся к рубашке Тави и осторожно расстегивают её, пуговицу за пуговицей... пока её грудь не оказывается на виду. Кажется, она тебе доверяет, но её пальцы всё ещё прикрывают её зеленые упругие соски, словно защищая их.")
 
-		saynn("[say=tavi]What are you gonna do?..[/say]")
+		saynn("[say=tavi]И что ты собираешься делать?..[/say]")
 
-		saynn("Your lips leave a little smooch on Tavi's neck. And then another. Your pet tilts her head to the side and gives you better access to her neck. A soft purr escapes from her throat.")
+		saynn("Твои губы оставляют легкий поцелуй на шее Тави. А затем еще один. Твоя питомица склоняет голову набок, подставляясь под твои ласки. Из её горла вырывается мягкое мурлыканье.")
 
-		saynn("[say=pc]Just making you feel good.[/say]")
+		saynn("[say=pc]Просто хочу доставить тебе удовольствие.[/say]")
 
-		saynn("Feeling your signs of affection, Tavi lowers her guard and allows your hands to begin exploring her curves, tracing gentle patterns along her fancy purple fur.")
+		saynn("Чувствуя твою нежность, Тави теряет бдительность и позволяет твоим рукам исследовать изгибы её тела, прорисовывая нежные узоры на её роскошном фиолетовом меху.")
 
-		addButton("Continue", "See what happens next", "nolact_grope_act")
+		addButton("Продолжить", "Смотреть, что будет дальше", "nolact_grope_act")
 	if(state == "nolact_grope_act"):
 		playAnimation(StageScene.BreastGroping, "grope", {npc="tavi", npcBodyState={naked=true}})
-		saynn("Tavi produces a sigh of content. Time to give her a little massage.")
+		saynn("Тави удовлетворенно вздыхает. Самое время сделать ей легкий массаж.")
 
-		saynn("Driven by curiosity, your fingers make their ways to Tavi's {tavi.breasts} and cup them, feeling the weight while your thumbs gently brush over the nipples.")
+		saynn("Движимый любопытством, ты направляешь пальцы к {tavi.breasts} Тави и обхватываешь их ладонями, ощущая их вес, пока большие пальцы нежно поглаживают соски.")
 
 		saynn("[say=tavi]A-..h..[/say]")
 
-		saynn("Tavi's breath hitches for a second as your actions ignite a spark of arousal inside her. Her nipples harden in response to your touch and she arches her back slightly, puffing her chest out more.")
+		saynn("Дыхание Тави на секунду перехватывает, когда твои действия разжигают в ней искру возбуждения. Её соски твердеют от твоих прикосновений, и она слегка прогибает спину, выпячивая грудь вперед.")
 
-		saynn("[say=pc]Feels nice, doesn't it?[/say]")
+		saynn("[say=pc]Приятно, правда?[/say]")
 
-		saynn("Without waiting for an answer, the palms of your hands begin to knead and gently massage her breasts, paying close attention to her nips. Your touch is soft and delicate.. but still firm enough to try to encourage Tavi's mammary glands to start producing milk..")
+		saynn("Не дожидаясь ответа, ты начинаешь разминать и мягко массировать её грудь, уделяя особое внимание соскам. Твои прикосновения мягкие и деликатные... но достаточно уверенные, чтобы попытаться стимулировать молочные железы Тави к выработке молока...")
 
-		saynn("Little moans fill the cell as Tavi's body responds to your groping her breasts. The sensations ripple through her, causing her hips to shift instinctively, her body pressing against yours in search for more contact.")
+		saynn("Камеру наполняют тихие стоны — тело Тави откликается на то, как ты ласкаешь её грудь. Ощущения пробегают по ней волнами, заставляя её бедра инстинктивно двигаться, а тело — прижиматься к твоему в поисках еще большего контакта.")
 
 		if (!beganLactating):
-			saynn("Despite the efforts, Tavi's nips don't produce a single drop of milk. Still, you made some progress at least. And her breasts seem to be more sensitive.")
+			saynn("Несмотря на усилия, из сосков Тави не пробилось ни единой капли молока. Тем не менее, прогресс определенно есть: её грудь стала заметно чувствительнее.")
 
 		else:
-			saynn("A small, surprised gasp escapes Tavi's lips as something strange happens. Little beads of warm milk begin to dribble from her nips, leaving white trails behind.")
+			saynn("От неожиданности у Тави вырывается короткий вздох. Из её сосков начинают капать маленькие капельки тёплого молока, оставляя за собой белые дорожки.")
 
-			saynn("[say=tavi]Ah.. What is..[/say]")
+			saynn("[say=tavi]Ах.. Что это..[/say]")
 
-			saynn("[say=pc]You're lactating, Tavi.[/say]")
+			saynn("[say=pc]У тебя лактация, Тави.[/say]")
 
-			saynn("Seems like your efforts have paid off. [b]Tavi's nipples were stimulated enough to start producing milk![/b]")
+			saynn("Похоже, твои старания окупились. [b]Соски Тави стимулировали настолько, что они начали вырабатывать молоко![/b]")
 
-		saynn("After all that, you just cuddle with Tavi for a little more, helping her recover.")
+		saynn("После всего этого ты ещё немного обнимаешь Тави, помогая ей прийти в себя.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "nolact_suck"):
 		playAnimation(StageScene.BreastFeeding, "tease", {pc="tavi", npc="pc", bodyState={naked=true}})
-		saynn("You help Tavi to lay on her back, her expression a mixture of curiosity and anticipation.")
+		saynn("Ты помогаешь Тави лечь на спину; на её лице читается смесь любопытства и предвкушения.")
 
-		saynn("Gently, you position yourself above her, your hand unbuttoning her shirt one button at a time. Tavi watches with intrigue, your bold actions making her blush a little.")
+		saynn("Мягко ты устраиваешься над ней, расстегивая её рубашку пуговицу за пуговицей. Тави с интересом наблюдает за тобой, а от твоих смелых действий она начинает слегка краснеть.")
 
-		saynn("[say=pc]I will be gentle.[/say]")
+		saynn("[say=pc]Я буду нежным.[/say]")
 
-		saynn("[say=tavi]As gentle as you want..[/say]")
+		saynn("[say=tavi]Настолько нежным, насколько захочешь..[/say]")
 
-		saynn("Finally, you uncover Tavi's rich chest. She bites her lip and looks slightly away, unable to withstand your possessive gaze. At first she crosses her arms under her breasts again.. but that only makes me perk out more. You can't wait to start.")
+		saynn("Наконец, ты обнажаешь пышную грудь Тави. Она прикусывает губу и слегка отводит взгляд, не в силах выдержать твой собственнический взор. Сначала она снова скрещивает руки под грудью... но это лишь заставляет её соски сильнее затвердеть. Тебе не терпится начать.")
 
-		addButton("Latch on", "Starts licking Tavi's nips", "nolact_suck_do")
+		addButton("Присосаться", "Начинает лизать соски Тави", "nolact_suck_do")
 	if(state == "nolact_suck_do"):
 		playAnimation(StageScene.BreastFeeding, "feed", {pc="tavi", npc="pc", bodyState={naked=true}})
-		saynn("Time for the main event. You lean closer to her breasts and open your mouth slightly. Your lips meet her left nipple before your tongue starts to lick the sensitive spot with a sensual, rhythmic motion. That causes Tavi to inhale sharply, her nips harden and her body responds with a little shiver.")
+		saynn("Пришло время главного события. Ты наклоняешься ближе к её груди и слегка приоткрываешь рот. Твои губы касаются её левого соска, прежде чем язык начинает ритмично и чувственно вылизывать это чувствительное место. От этого Тави резко втягивает воздух, её соски твердеют, а тело отзывается легкой дрожью.")
 
-		saynn("[say=tavi]Mm-m..[/say]")
+		saynn("[say=tavi]Мм-м..[/say]")
 
-		saynn("After that, your lips close around the nipple. And so you begin to suckle on it instead of just licking. Tavi's fingers find their way into your hair, stroking and gently urging you to continue. Little soft moans escape her as you imitate a hungry little kitten that wants some milk.")
+		saynn("После этого твои губы смыкаются вокруг соска. И вот ты начинаешь не просто лизать, а сосать его. Пальцы Тави зарываются в твои волосы, поглаживая и мягко подталкивая тебя продолжать. Из её уст вырываются тихие, нежные стоны, пока ты подражаешь голодному котенку, жаждущему молока.")
 
-		saynn("Your exploration continues on her right nipple. This time, you introduce Tavi with gentle nibbles. When your teeth find that little hard nipple and gently squeeze, sparks of pleasure rush through Tavi, causing her to arch her back and pant louder.")
+		saynn("Твои исследования продолжаются на её правом соске. На этот раз ты знакомишься с Тави через легкие покусывания. Когда твои зубы находят этот маленький твердый сосок и нежно сжимают его, по телу Тави проносятся искры удовольствия, заставляя её выгнуться в спине и дышать всё чаще.")
 
-		saynn("[say=tavi]Ah!..[/say]")
+		saynn("[say=tavi]Ах!..[/say]")
 
 		if (!beganLactating):
-			saynn("You keep sucking and nibbling on Tavi's nips, bringing her more and more of these pleasurable waves. But despite the efforts, her breasts don't produce a single drop of milk. Still, you made some progress at least. And her breasts seem to be more sensitive.")
+			saynn("Ты продолжаешь сосать и покусывать соски Тави, вызывая у неё всё новые и новые волны наслаждения. Но, несмотря на усилия, из её груди не пробивается ни единой капли молока. Тем не менее, прогресс определённо есть: её грудь стала заметно чувствительнее.")
 
 		else:
-			saynn("A small, surprised gasp escapes Tavi's lips as something strange happens. Little beads of warm milk begin to dribble from her nips, leaving white trails behind.")
+			saynn("От неожиданности у Тави вырывается короткий вздох. Из её сосков начинают капать маленькие капельки тёплого молока, оставляя за собой белые дорожки.")
 
-			saynn("[say=tavi]Ah.. What is..[/say]")
+			saynn("[say=tavi]Ах.. Что это..[/say]")
 
-			saynn("[say=pc]You're lactating, Tavi.[/say]")
+			saynn("[say=pc]У тебя лактация, Тави.[/say]")
 
-			saynn("Seems like your efforts have paid off. [b]Tavi's nipples were stimulated enough to start producing milk![/b] And so obviously, you lean close to her nips again and taste her milk. It's warm and has a sweet aftertaste.. but you can only catch so much right now. Better let her glands produce more first.")
+			saynn("Похоже, твои старания окупились. [b]Соски Тави были достаточно стимулированы, чтобы начать вырабатывать молоко![/b] И, конечно же, ты снова приникаешь к её соскам, чтобы попробовать молоко на вкус. Оно теплое, с приятным сладковатым послевкусием... но сейчас ты можешь собрать лишь немного. Лучше дать её железам наполниться получше.")
 
-		saynn("After all that, you just cuddle with Tavi for a little more, helping her recover.")
+		saynn("После всего этого ты ещё немного обнимаешь Тави, помогая ей прийти в себя.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "nolact_pump_pick"):
-		saynn("Pick which breast pump you wanna use on Tavi.")
+		saynn("Выбери, какой молокоотсос ты хочешь использовать на Тави.")
 
 		addPumpButtons("nolact_pump")
 		if (false):
-			addButton("Nope", "You shouldn't see this", "nolact_pump")
+			addButton("Неа", "Тебе не стоит этого видеть", "nolact_pump")
 	if(state == "nolact_pump"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcBodyState={naked=true}})
-		saynn("Tavi's cheeks blush when she sees you holding a set of breast pumps.")
+		saynn("Щеки Тави заливаются румянцем, когда она видит в твоих руках набор молокоотсосов.")
 
-		saynn("[say=tavi]But I'm not..[/say]")
+		saynn("[say=tavi]Но я не..[/say]")
 
-		saynn("[say=pc]That's okay, I'm not doing this to actually get milk from you, Tavi.[/say]")
+		saynn("[say=pc]Все в порядке, Тави. Я делаю это не ради того, чтобы по-настоящему сцедить из тебя молоко.[/say]")
 
-		saynn("Tavi nods softly and unbuttons her shirt for you, putting her {tavi.breasts} out on display. You take a moment to admire the forms before carefully positioning the pumps on her delicate green nipples, making sure they fit snugly.")
+		saynn("Тави тихо кивает и расстегивает рубашку, выставляя напоказ свою {tavi.breasts}. Ты на мгновение замираешь, любуясь её формами, прежде чем осторожно приставить молокоотсосы к её нежным зеленым соскам, следя за тем, чтобы они плотно прилегали.")
 
-		saynn("Time to turn them on..")
+		saynn("Пора их включать...")
 
-		addButton("Pumps", "Switch them on", "nolact_pump_do")
+		addButton("Помпы", "Включить", "nolact_pump_do")
 	if(state == "nolact_pump_do"):
 		playAnimation(StageScene.Cuddling, "squirm", {npc="tavi", npcBodyState={naked=true}})
-		saynn("You switch each of the pumps on to their weak setting and just watch.")
+		saynn("Ты переключаешь каждый молокоотсос на слабый режим и просто наблюдаешь.")
 
-		saynn("The feline inhales deeply as the devices on her breasts begin their gentle suction, her nipples hardening immediately from the stimulation.")
+		saynn("Кошка глубоко вдыхает, когда устройства на её груди начинают мягко всасывать кожу, и её соски мгновенно твердеют от стимуляции.")
 
-		saynn("[say=tavi]They pull.. so nice.[/say]")
+		saynn("[say=tavi]Они тянут... так приятно.[/say]")
 
-		saynn("As the pumps continue their rhythmic motions, you settle on Tavi's bed and then pull Tavi close for some cuddling. You rest your chin on her shoulder and look down at Tavi's hard nips getting tugged on fruitlessly.. But it's still quite hot to see them glow and swell under the relentless stimulation.")
+		saynn("Пока насосы продолжают свои ритмичные движения, ты устраиваешься на кровати Тави и притягиваешь её к себе, чтобы обняться. Ты кладешь подбородок ей на плечо и смотришь вниз, на её твердые соски, которые тщетно подвергаются стягиванию... Но наблюдать за тем, как они светятся и набухают под неустанной стимуляцией, всё еще чертовски горячо.")
 
-		saynn("[say=tavi]Ngh-h..[/say]")
+		saynn("[say=tavi]Нгх-х..[/say]")
 
 		if (!beganLactating):
-			saynn("Although Tavi doesn't begin lactating from this, you can feel that you made quite some progress. Her body is responding to the training, her breasts becoming more sensitive.. her pussy more slick.")
+			saynn("Хотя от этого у Тави еще не пошло молоко, ты чувствуешь, что добился заметного прогресса. Её тело откликается на тренировки: грудь становится всё чувствительнее... а киска — всё более влажной.")
 
-			saynn("After some time, you turn off the pumps and carefully remove them from Tavi's breasts, taking extra care to soothe her nips with some gentle rubs and caresses.")
+			saynn("Спустя некоторое время ты выключаешь насосы и осторожно снимаешь их с груди Тави, стараясь при этом успокоить её соски нежными поглаживаниями и ласками.")
 
 		else:
-			saynn("It seems that after some time, Tavi's body finally yields to the persistent stimulation. A warm sudden sensation washes over her. She gasps softly, her eyes widening in surprise.")
+			saynn("Кажется, спустя какое-то время тело Тави наконец поддается упорной стимуляции. Её накрывает внезапное ощущение тепла. Она тихо ахает, и её глаза широко распахиваются от удивления.")
 
-			saynn("[say=tavi]I think I'm..[/say]")
+			saynn("[say=tavi]Кажется, я..[/say]")
 
-			saynn("You quickly realize what's happening and turn off the pumps. The plastic cups that were empty before, now have a few precious drops of milk, a sign that [b]Tavi has begun lactating[/b].")
+			saynn("Ты быстро понимаешь, что происходит, и выключаешь насосы. В пластиковых стаканчиках, которые раньше были пустыми, теперь виднеется несколько драгоценных капель молока — знак того, что [b]Тави начала лактировать[/b].")
 
-			saynn("[say=pc]You're making milk. Such a good girl.[/say]")
+			saynn("[say=pc]У тебя появилось молоко. Такая хорошая девочка.[/say]")
 
-			saynn("Tavi purrs and rubs against your body. You decide not to push more strain on her mammary glands and carefully take off the pumps instead. It's best to let her breasts produce more milk before milking.")
+			saynn("Тави мурлычет и прижимается к тебе всем телом. Ты решаешь не перегружать её молочные железы и вместо этого аккуратно снимаешь насосы. Лучше дать её груди накопить больше молока перед следующим доением.")
 
-		addButton("Continue", "See what happens next", "removepumpandend")
+		addButton("Продолжить", "Смотреть, что будет дальше", "removepumpandend")
 	if(state == "lact_handmilking"):
 		playAnimation(StageScene.BreastGroping, "tease", {npc="tavi", npcBodyState={naked=true}})
-		saynn("Tavi's breasts are full of sweet milk, so much that she finds her breasts itching slightly. So why not help her?")
+		saynn("Грудь Тави полна сладкого молока — настолько, что она начинает чувствовать легкий зуд. Так почему бы тебе не помочь ей?")
 
-		saynn("You get comfy on Tavi's bed and then pull her in close, your hands landing on her shirt and unbuttoning it.")
+		saynn("Ты уютно устраиваешься на кровати Тави и притягиваешь её к себе, кладя руки на её рубашку и расстегивая пуговицы.")
 
-		saynn("[say=tavi]What are you..[/say]")
+		saynn("[say=tavi]Ты что...[/say]")
 
-		saynn("[say=pc]You will see. It will feel good, trust me.[/say]")
+		saynn("[say=pc]Скоро увидишь. Поверь, тебе понравится.[/say]")
 
-		saynn("You rest your chin on her shoulder and look down, seeing her {tavi.breasts} out on full display, her nips looking swollen and possessing a darker shade of green than usual. Tavi's breath hitches with anticipation as your palms land on her chest, your digits sending shivers through her spine.")
+		saynn("Ты кладешь подбородок ей на плечо и смотришь вниз, видя её {tavi.breasts} во всей красе; её соски выглядят припухшими и имеют более темный оттенок, чем обычно. У Тави перехватывает дыхание от предвкушения, когда твои ладони ложатся на её грудь, а пальцы заставляют её тело пробирать дрожь.")
 
-		saynn("Time to do this..")
+		saynn("Пора начинать...")
 
-		addButton("Milk Tavi", "Grope her breasts", "lact_handmilking_do")
+		addButton("Доить Тави", "Сжимать её грудь", "lact_handmilking_do")
 	if(state == "lact_handmilking_do"):
 		playAnimation(StageScene.BreastGroping, "grope", {npc="tavi", npcBodyState={naked=true}})
-		saynn("And so you begin to carefully knead Tavi's breasts, your fingers putting some amount of pressure in different spots. Tavi's eyes close as the sensations begin washing over her.")
+		saynn("И вот ты начинаешь осторожно разминать грудь Тави, с разной силой надавливая пальцами на разные точки. Тави закрывает глаза, когда волна ощущений начинает накрывать её.")
 
-		saynn("You follow her reactions closely as your fingers make their way to her dark areolas before squeezing them slightly, eliciting a cute moan from the feline in the process.")
+		saynn("Ты внимательно следишь за её реакцией, пока твои пальцы скользят к её темным ареолам, а затем слегка сжимают их, заставляя кошечку издать милый стон.")
 
-		saynn("[say=tavi]Ah..[/say]")
+		saynn("[say=tavi]Ах...[/say]")
 
-		saynn("Finally, you begin to feel her warm milk trailing down your digits. Little spurts of milk escape from her nips as you continue kneading and groping her breasts. Tavi seems to be getting wet between her legs, she keeps rubbing her thighs against each other.")
+		saynn("Наконец ты чувствуешь, как её тёплое молоко стекает по твоим пальцам. Маленькие струйки брызжут из её сосков, пока ты продолжаешь разминать и тискать её грудь. Кажется, Тави там, между ног, становится всё мокрее — она то и дело трется бедрами друг о друга.")
 
-		saynn("[say=tavi]I'm making milk..[/say]")
+		saynn("[say=tavi]У меня течёт молоко...[/say]")
 
-		saynn("You catch some of it and lick your digits. So sweet, you can't get enough.")
+		saynn("Ты слизываешь немного молока с пальцев. Оно такое сладкое, что тебе невозможно наесться.")
 
-		saynn("[say=pc]Yes, you are.[/say]")
+		saynn("[say=pc]Да, это так.[/say]")
 
-		saynn("Her breath quickens as your touches become more bold. You alternate between gentle caressing and firm squeezes, drawing out more and more of her sweet nectar.. that she seems to have a lot of.")
+		saynn("Её дыхание учащается, когда твои прикосновения становятся всё смелее. Ты чередуешь нежные ласки с крепкими сжиманиями, выжимая всё больше и больше её сладкого нектара... которого, кажется, у неё предостаточно.")
 
-		saynn("You gotta stop somewhere though. After a few minutes of milking Tavi, you begin to slow down.")
+		saynn("Но нужно же когда-то остановиться. Спустя несколько минут дойки Тави, ты начинаешь замедляться.")
 
-		saynn("[say=tavi]You're stopping?..[/say]")
+		saynn("[say=tavi]Ты останавливаешься?..[/say]")
 
-		saynn("[say=pc]Yeah, I don't want to push you too far.[/say]")
+		saynn("[say=pc]Ага, не хочу тебя слишком сильно изматывать.[/say]")
 
-		saynn("[say=tavi]..why not?[/say]")
+		saynn("[say=tavi]...почему нет?[/say]")
 
-		saynn("Hmm..")
+		saynn("Хмм...")
 
-		addButton("Enough", "Enough milking", "lact_handmilking_enough")
-		addButton("Milk more", "Milk Tavi for all her milk", "lact_handmilking_more")
+		addButton("Хватит", "Дойка окончена", "lact_handmilking_enough")
+		addButton("Доить больше", "Выдоить Тави до последней капли", "lact_handmilking_more")
 	if(state == "lact_handmilking_enough"):
 		playAnimation(StageScene.BreastGroping, "tease", {npc="tavi", npcBodyState={naked=true}})
-		saynn("You kiss Tavi's neck and let her taste her own breast milk.")
+		saynn("Вы целуете Тави в шею и даете ей попробовать её собственное молоко.")
 
-		saynn("[say=pc]Because it will make you sore.[/say]")
+		saynn("[say=pc]Потому что от этого у тебя всё разболится.[/say]")
 
-		saynn("The feline licks her milk and purrs like a happy kitten.")
+		saynn("Кошка слизывает молоко и мурлычет, словно довольный котенок.")
 
-		saynn("[say=tavi]That's fair.[/say]")
+		saynn("[say=tavi]Справедливо.[/say]")
 
-		saynn("And so you spend some time just cuddling like that, Tavi's breasts looking a little less heavy than before.")
+		saynn("И вот вы проводите время, просто обнимаясь; грудь Тави кажется уже не такой тяжелой, как прежде.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "lact_handmilking_more"):
-		saynn("Indeed, why not. If Tavi is asking for more, she will get more. But only if she obeys.")
+		saynn("В самом деле, почему бы и нет. Если Тави просит добавки, она её получит. Но только если будет слушаться.")
 
-		saynn("[say=pc]Try asking better.[/say]")
+		saynn("[say=pc]Попробуй попросить получше.[/say]")
 
-		saynn("Tavi tilts her head at first. But seeing your hands not moving, she huffs.")
+		saynn("Сначала Тави наклоняет голову набок. Но видя, что ваши руки не двигаются, она фыркает.")
 
-		saynn("[say=tavi]Don't stop, please?..[/say]")
+		saynn("[say=tavi]Пожалуйста, не останавливайся?..[/say]")
 
-		saynn("That's something..")
+		saynn("Это уже что-то..")
 
-		saynn("[say=tavi]Milk my tits completely.. Drain them of all their milk..[/say]")
+		saynn("[say=tavi]Выдои мои сиськи досуха.. Выжми из них всё молоко до последней капли..[/say]")
 
-		saynn("Oh wow. You waste no time. Your hands return to Tavi's swollen breasts, kneading and squeezing them harder than before, somehow finding that there is more milk in them. The feline moans and writhes under your firm touch, her body quivering from this strange type of pleasure.")
+		saynn("Ого. Ты не теряешь времени даром. Твои руки снова возвращаются к набухшей груди Тави, разминая и сжимая её ещё сильнее, чем прежде, каким-то образом находя в ней ещё больше молока. Кошка стонет и извивается под твоими уверенными прикосновениями, а её тело дрожит от этого странного рода наслаждения.")
 
-		saynn("[say=tavi]I'm such a slut.."+str(" Pregnant and being milked.." if getCharacter("tavi").isVisiblyPregnant() else "")+"[/say]")
+		saynn("[say=tavi]Какая же я шлюха.."+str(" Pregnant and being milked.." if getCharacter("tavi").isVisiblyPregnant() else "")+"[/say]")
 
-		saynn("And so her milk flows more freely, filling the room with the sweet scent that's mixing with the scent of her arousal. It seems that being milked and humiliated is pushing her closer and closer to the edge with every passing second.")
+		saynn("И вот её молоко течёт всё свободнее, наполняя комнату сладким ароматом, который смешивается с запахом её возбуждения. Кажется, что процесс дойки и унижения с каждой секундой подталкивает её всё ближе и ближе к самому краю.")
 
-		saynn("[say=pc]A slut with big lactating udders.[/say]")
+		saynn("[say=pc]Шлюха с огромными лактирующими вымями.[/say]")
 
-		saynn("You watch carefully as Tavi's climax approaches. Her moans become extremely passionate when you pinch both of her swollen nipples, causing little fountains of milk.. and then it happens.")
+		saynn("Ты внимательно наблюдаешь за тем, как Тави приближается к оргазму. Её стоны становятся невероятно страстными, когда ты сжимаешь оба её набухших соска, вызывая маленькие фонтанчики молока... и тут это случается.")
 
-		saynn("[say=tavi]F-fuck.. y-yes..[/say]")
+		saynn("[say=tavi]Блядь.. д-да..[/say]")
 
-		saynn("A powerful orgasm rushes through Tavi, her body squirming hard under your touch while her pussy is squirting transparent juices all over the bed. So much pressure has built up in her.. Tavi's tits release all of its produced milk.. until there is nothing left.. for now.")
+		saynn("Мощный оргазм прошибает Тави, её тело судорожно извивается под твоими руками, а киска заливает кровать прозрачными соками. Внутри неё накопилось столько давления... Грудь Тави извергает всё произведённое молоко... пока не остаётся совсем ничего... на данный момент.")
 
-		saynn("The feline is left trembling and breathless, her bedsheets looking wet from both, her breast milk and girlcum.")
+		saynn("Кошечка осталась дрожать, задыхаясь, а её простыни выглядели мокрыми от обоих — и от её грудного молока, и от девичьей кончины.")
 
-		saynn("[say=tavi]That felt so fucking good..[/say]")
+		saynn("[say=tavi]Это было так охеренно приятно..[/say]")
 
-		saynn("[say=pc]Soon you will want more.[/say]")
+		saynn("[say=pc]Скоро тебе захочется еще.[/say]")
 
-		saynn("[say=tavi]Probably..[/say]")
+		saynn("[say=tavi]Наверное..[/say]")
 
-		saynn("Tavi rests in your embrace, her sore nips glowing a lot.")
+		saynn("Тави отдыхает в твоих объятиях, её воспаленные соски заметно покраснели.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "lact_breastfeeding"):
 		playAnimation(StageScene.BreastFeeding, "tease", {pc="tavi", npc="pc", bodyState={naked=true}})
-		saynn("For some reason you're getting quite.. hungry.. just from looking at Tavi's chest. Her breasts probably produced quite a lot of milk by now.. So much that her nips are itching. So why not solve both of those problems?")
+		saynn("Почему-то ты начинаешь чувствовать настоящий.. голод.. просто глядя на грудь Тави. Её молочные железы, должно быть, уже наполнились до краев.. Настолько, что соски начинают зудеть. Так почему бы не решить обе проблемы разом?")
 
-		saynn("You invite your pet to lay on the bed while you sit nearby, your hands reaching for her shirt, slowly unbuttoning it.")
+		saynn("Ты приглашаешь свою питомицу лечь на кровать и садишься рядом, протягивая руки к её рубашке и медленно расстегивая пуговицы.")
 
-		saynn("[say=tavi]What are you gonna..[/say]")
+		saynn("[say=tavi]Ты что собираешься..[/say]")
 
-		saynn("[say=pc]Trust me.[/say]")
+		saynn("[say=pc]Доверься мне.[/say]")
 
-		saynn("As you uncover her {tavi.breasts}, she blushes and tries to cover herself and her swollen nipples that have a darker green shade to them than usual. The expression on her face is a mix of anticipation and desire. So she doesn't resist when you carefully pull her paws away from her chest.")
+		saynn("Когда ты обнажаешь её {tavi.breasts}, она краснеет и пытается прикрыться, пряча свои набухшие соски, которые стали заметно темнее обычного. На её лице читается смесь предвкушения и желания, поэтому она не сопротивляется, когда ты осторожно убираешь её лапки от груди.")
 
-		saynn("Your mouth already gets more moist just by watching lonely drops of her milk trailing down from her nips. Your hands gently cupping her aching breasts. It's time..")
+		saynn("Во рту сразу становится влажно, стоит лишь увидеть одинокие капли молока, стекающие по её соскам. Твои руки нежно обхватывают её ноющие груди. Пора..")
 
-		addButton("Suckle", "Suckle on Tavi's nips", "lact_breastfeeding_do")
+		addButton("Сосать", "Сосать соски Тави", "lact_breastfeeding_do")
 	if(state == "lact_breastfeeding_do"):
 		playAnimation(StageScene.BreastFeeding, "feed", {pc="tavi", npc="pc", bodyState={naked=true}})
-		saynn("Tavi gets surprised when you lean close to her chest. But then a shiver of pleasure courses through her when your lips meet one of her nipples and close around it. You begin to suckle on it, trying to pull out the sweet nectar.. and soon enough, you begin to taste her creamy milk on your tongue.")
+		saynn("Тави вздрагивает от неожиданности, когда ты прижимаешься к её груди. Но затем по её телу пробегает дрожь удовольствия, когда твои губы касаются одного из её сосков и обхватывают его. Ты начинаешь сосать его, пытаясь вытянуть сладкий нектар... и вскоре на твоём языке разливается вкус её кремового молока.")
 
-		saynn("[say=tavi]Ah.. w-wow..[/say]")
+		saynn("[say=tavi]Ах.. в-вау..[/say]")
 
-		saynn("You lap her milk with an intoxicating eagerness while Tavi is arching her back, giving you full access to her breasts while her paw lands on your head and strokes your hair.")
+		saynn("Ты жадно слизываешь её молоко, пока Тави выгибает спину, открывая тебе полный доступ к своей груди, а её лапа ложится тебе на голову, поглаживая волосы.")
 
-		saynn("Just suckling isn't enough though, one of your hands roams Tavi's fluffy body before reaching the breast that you're feeding on and kneading it.. kinda like how kittens do with their mother. Tavi's breath gets deep from that as more of her milk reaches your tongue.")
+		saynn("Но просто сосать мало: одна твоя рука блуждает по пушистому телу Тави, прежде чем нащупать грудь, которую ты сейчас пьешь, и начать её разминать... почти как котята делают с матерью. Дыхание Тави становится глубоким, когда всё больше её молока попадает тебе на язык.")
 
-		saynn("[say=tavi]Good.. kitten..[/say]")
+		saynn("[say=tavi]Хороший.. котенок..[/say]")
 
-		saynn("Did she just call you that? Sure. You switch to her other nipple and begin suckling on it too, occasionally squeezing it between your teeth, causing little squirts of milk.")
+		saynn("Она что, только что назвала тебя так? Ну и ладно. Ты переходишь к другому соску и тоже начинаешь его сосать, время от времени слегка прикусывая его зубами, заставляя молоко брызгать струйками.")
 
-		saynn("Tavi can't stay still anymore, she is squirming under your touch, lost in the euphoria. She is moaning softly while her hand strokes your hair more.")
+		saynn("Тави больше не может сидеть смирно; она извивается под твоими прикосновениями, теряясь в эйфории. Она тихо стонет, а её рука всё сильнее и нежнее перебирает твои волосы.")
 
-		saynn("After some time, you decide to stop, letting go of the nipple and licking your lips. The aftertaste is great, Tavi's milk is a real treat.")
+		saynn("Спустя некоторое время ты решаешь остановиться, отпускаешь сосок и облизываешь губы. Послевкусие великолепное — молоко Тави — это настоящее наслаждение.")
 
-		saynn("[say=tavi]Did you.. like it?[/say]")
+		saynn("[say=tavi]Тебе.. понравилось?[/say]")
 
-		saynn("[say=pc]Obviously.[/say]")
+		saynn("[say=pc]Очевидно.[/say]")
 
-		saynn("[say=tavi]Then.. Why stop there?..[/say]")
+		saynn("[say=tavi]Тогда.. почему мы остановились?..[/say]")
 
-		saynn("Tavi squeezes one of her breasts, causing more little squirts of milk to spawn all around her areolas and nipples.")
+		saynn("Тави сжимает одну из своих грудей, из-за чего вокруг ареол и сосков брызжет еще больше струек молока.")
 
-		saynn("The way she looks at you.. it's like she wants to care for you.. to nurture you.")
+		saynn("То, как она на тебя смотрит.. кажется, будто она хочет заботиться о тебе.. вскармливать тебя.")
 
-		addButton("Enough", "You'd rather not bring Tavi pain", "lact_breastfeeding_enough")
-		addButton("More", "Why not let her breastfeed you more", "lact_breastfeeding_more")
+		addButton("Хватит", "Ты бы не хотел причинять Тави боль", "lact_breastfeeding_enough")
+		addButton("Еще", "Почему бы не позволить ей покормить тебя еще?", "lact_breastfeeding_more")
 	if(state == "lact_breastfeeding_enough"):
 		playAnimation(StageScene.BreastFeeding, "tease", {pc="tavi", npc="pc", bodyState={naked=true}})
-		saynn("[say=pc]I'd rather not push you too far.[/say]")
+		saynn("[say=pc]Я бы не хотел слишком сильно тебя давить.[/say]")
 
-		saynn("Tavi produces a soft sigh and nods understanding.")
+		saynn("Тави издает тихий вздох и понимающе кивает.")
 
-		saynn("[say=tavi]You're probably right.[/say]")
+		saynn("[say=tavi]Наверное, ты прав.[/say]")
 
-		saynn("You can always drain her breasts some other time.")
+		saynn("Слить молоко из её груди можно и в другой раз.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "lact_breastfeeding_more"):
 		playAnimation(StageScene.BreastFeeding, "teasealt", {pc="tavi", npc="pc", bodyState={naked=true}})
-		saynn("Well, might as well, since Tavi is offering. But when you begin to lean close to her nipples again, she suddenly stops you.")
+		saynn("Ну, раз Тави сама предлагает, почему бы и нет. Но как только ты снова начинаешь тянуться к её соскам, она внезапно останавливает тебя.")
 
-		saynn("[say=tavi]Can I.. Can I be your mommy?.. Just for now..[/say]")
+		saynn("[say=tavi]Можно мне... можно мне побыть твоей мамочкой?.. Только сейчас..[/say]")
 
-		saynn("That's.. an interesting proposition. Seems like Tavi is enjoying it way too much.")
+		saynn("Это... любопытное предложение. Похоже, Тави это чертовски нравится.")
 
-		saynn("Why not? It can't hurt. As soon as you nod, Tavi suddenly takes control and pushes you to lay on the bed instead while she sits in your lap, her soft gaze shining with affection.")
+		saynn("Почему бы и нет? В этом нет ничего плохого. Стоит тебе кивнуть, как Тави внезапно берет всё в свои руки: она заставляет тебя лечь на кровать, а сама усаживается сверху, глядя на тебя нежным, полным обожания взглядом.")
 
-		saynn("[say=tavi]Don't be afraid..[/say]")
+		saynn("[say=tavi]Не бойся..[/say]")
 
-		saynn("Her breasts are now at your eye level, fully exposed and glistening with lonely drops sliding down her teats.")
+		saynn("Теперь её грудь прямо перед твоими глазами — полностью обнаженная, блестящая от капелек молока, медленно стекающих по соскам.")
 
-		saynn("[say=tavi]Just let me take care of you..[/say]")
+		saynn("[say=tavi]Просто позволь мне позаботиться о тебе..[/say]")
 
-		saynn("With a gentle touch, Tavi cradles your head in her arms, slowly drawing you closer to her dark green nips.")
+		saynn("Нежным движением Тави берет твою голову в свои ладони, медленно поднося её к своим темно-зеленым соскам.")
 
-		addButton("Suckle", "Let Tavi breastfeed you", "lact_breastfeeding_mommy")
+		addButton("Сосать", "Позволить Тави выкормить тебя грудью", "lact_breastfeeding_mommy")
 	if(state == "lact_breastfeeding_mommy"):
 		playAnimation(StageScene.BreastFeeding, "feedalt", {pc="tavi", npc="pc", bodyState={naked=true}})
-		saynn("You need no further invitation, your lips seek out one of her juicy nips, your tongue dancing against the sensitive flesh. You suckle on her nipple and soon enough you begin to taste her sweet milk again.")
+		saynn("Тебе не нужно лишних приглашений: твои губы находят один из её сочных сосков, а язык начинает танцевать по чувствительной плоти. Ты посасываешь сосок, и вскоре снова начинаешь чувствовать вкус её сладкого молока.")
 
-		saynn("[say=tavi]Good.. keep going..[/say]")
+		saynn("[say=tavi]Хорошо.. продолжай..[/say]")
 
-		saynn("Her voice is tender and loving as she gently strokes you and purrs into your ear. Your palms cup her breasts from below and knead them, accelerating the flow.")
+		saynn("Её голос звучит нежно и любяще, пока она ласково поглаживает тебя и мурлычет на ухо. Твои ладони обхватывают её грудь снизу, разминая её и ускоряя приток молока.")
 
-		saynn("[say=tavi]Such a cutie..[/say]")
+		saynn("[say=tavi]Такой милашка..[/say]")
 
-		saynn("She stops purring and instead just hums a little soothing tune. You can't deny, it feels.. good.. to have someone looking after you. Tavi feels it too.. wait.. Is she.. crying?.. There are a few little tears sliding down her cheeks while she nurtures you. Looks like she got quite emotional about this.")
+		saynn("Она перестает мурлыкать и вместо этого начинает тихонько напевать успокаивающую мелодию. Нельзя отрицать, что это.. приятно.. — когда о тебе кто-то заботится. Тави тоже это чувствует.. погоди.. Она что.. плачет?.. По её щекам скатываются несколько слезинок, пока она кормит тебя. Похоже, этот момент стал для неё очень эмоциональным.")
 
-		saynn("You keep suckling on her breasts, sometimes switching from one nipple to another. And after a few minutes, the flow finally begins to slow down. She quickly wipes her tears away when you pull away from her chest.")
+		saynn("Ты продолжаешь посасывать её грудь, иногда переходя с одного соска на другой. Спустя несколько минут поток молока наконец начинает замедляться. Когда ты отрываешься от её груди, она поспешно смахивает слезы.")
 
-		saynn("[say=tavi]Aw. Did you enjoy it?[/say]")
+		saynn("[say=tavi]Оу. Тебе понравилось?[/say]")
 
-		saynn("You nod softly and receive a little smooch on your forehead from Tavi.")
+		saynn("Ты тихо киваешь, и Тави нежно целует тебя в лоб.")
 
-		saynn("[say=tavi]I did too.. Probably way too much..[/say]")
+		saynn("[say=tavi]Мне тоже.. Наверное, слишком сильно..[/say]")
 
-		saynn("That was.. wholesome.")
+		saynn("Это было.. так душевно.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "lact_pump_pick"):
-		saynn("Pick which breast pump you wanna use on Tavi.")
+		saynn("Выбери, какой молокоотсос ты хочешь использовать на Тави.")
 
 		addPumpButtons("lact_pump")
 		if (false):
-			addButton("Nope", "You shouldn't see this", "lact_pump")
+			addButton("Неа", "Тебе не стоит этого видеть", "lact_pump")
 	if(state == "lact_pump"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcBodyState={naked=true}})
-		saynn("You can notice Tavi's impressive teats even under her shirt. They're probably heavy from milk right now so you decide to help Tavi eliminate that burden in the most efficient way possible.")
+		saynn("Даже сквозь рубашку заметны впечатляющие соски Тави. Сейчас они, должно быть, тяжелые от молока, поэтому ты решаешь помочь ей избавиться от этой ноши самым эффективным способом.")
 
-		saynn("But when you produce a set of breast pumps, she blushes deeply.")
+		saynn("Но когда ты достаешь набор молокоотсосов, она густо краснеет.")
 
-		saynn("[say=tavi]I'm not a..[/say]")
+		saynn("[say=tavi]Я не...[/say]")
 
-		saynn("[say=pc]Not a cow? But it's gonna be fun. Trust me.[/say]")
+		saynn("[say=pc]Не корова? Но будет весело. Поверь мне.[/say]")
 
-		saynn("Tavi avoids eye contact for a bit, probably thinking about something. But the weight and itchiness of her chest pushes her to side with you. Tavi begins to unbutton her shirt, putting her {tavi.breasts} out on display.")
+		saynn("Тави на мгновение избегает твоего взгляда, о чем-то задумавшись. Но тяжесть и зуд в груди заставляют её принять твою сторону. Тави начинает расстегивать рубашку, выставляя свои {tavi.breasts} напоказ.")
 
-		saynn("And so you carefully position each pump over her lactating dark nips, the suction cups easily latching on by pushing some air out, creating negative air pressure.")
+		saynn("И вот ты осторожно прикладываешь каждый молокоотсос к её налитым темным соскам; присоски легко присасываются, выкачивая воздух и создавая отрицательное давление.")
 
-		saynn("Tavi looks at them with her cute eyes, unsure how to react about getting used like that.")
+		saynn("Тави смотрит на них своими милыми глазками, не зная, как реагировать на то, что её собираются использовать вот так.")
 
-		saynn("Time to turn them on.")
+		saynn("Пора включать.")
 
-		addButton("Pumps", "Turn the breast pumps on", "lact_pump_on")
+		addButton("Помпы", "Включить молокоотсосы", "lact_pump_on")
 	if(state == "lact_pump_on"):
 		playAnimation(StageScene.Cuddling, "squirm", {npc="tavi", npcBodyState={naked=true}})
-		saynn("And so you flick the switches on the pumps, making them kick into action with a quiet hum. Tavi's breath hitches when she begins to feel the rhythmic suctions. There is no milk yet but you can easily tell how much pressure the pumps put by seeing Tavi's nips get tugged on.")
+		saynn("Ты щелкаешь переключателями, и приборы оживают с тихим гулом. У Тави перехватывает дыхание, когда она начинает чувствовать ритмичное всасывание. Молока пока нет, но по тому, как натягиваются её соски, легко понять, с какой силой работают насосы.")
 
-		saynn("She is barely standing so you pull her in for some cuddles, trying to distract her from her thoughts.")
+		saynn("Она едва держится на ногах, поэтому ты притягиваешь её к себе, чтобы обняться и попытаться отвлечь от её тяжелых мыслей.")
 
-		saynn("[say=pc]See? It's not that bad.[/say]")
+		saynn("[say=pc]Видишь? Всё не так уж плохо.[/say]")
 
-		saynn("[say=tavi]Mhm-m-m.. m-m.. h-ah..[/say]")
+		saynn("[say=tavi]Ммм-ммм.. м-м.. ах..[/say]")
 
-		saynn("Tavi moans softly in your embrace as her dark green nips begin to leak milk. Little white dots appear all throughout her areolas before flowing down her sensitive flesh and getting collected into a neat little bottle.")
+		saynn("Тави тихо стонет в твоих объятиях, пока из её темно-зелёных сосков начинает сочиться молоко. По всей ареоле проступают маленькие белые капли, которые затем стекают по её чувствительной коже и собираются в аккуратную бутылочку.")
 
-		saynn("[say=pc]Good.. The less you worry, the better your milk is gonna be.. So try not to worry..[/say]")
+		saynn("[say=pc]Хорошо.. Чем меньше ты беспокоишься, тем вкуснее будет молоко.. Так что постарайся не переживать..[/say]")
 
-		saynn("You rest your head on Tavi's shoulder and look down at how the pumps slowly draw out the milk from her round breasts. All the while your hands land on her"+str(" pregnant" if getCharacter("tavi").isVisiblyPregnant() else "")+" belly and gently caress it.")
+		saynn("Ты кладешь голову ей на плечо и наблюдаешь за тем, как молокоPump медленно вытягивает жидкость из её округлых грудей. В это время твои руки ложатся ей на"+str(" pregnant" if getCharacter("tavi").isVisiblyPregnant() else "")+"живот и нежно поглаживают его.")
 
-		saynn("[say=tavi]Ah-h.. h-h..[/say]")
+		saynn("[say=tavi]Ах-х.. х-х..[/say]")
 
-		saynn("[say=pc]You don't have to think much in fact.. Just sit there.. And enjoy being a good cow.. Feels good, right?[/say]")
+		saynn("[say=pc]Тебе даже не нужно особо думать.. Просто сиди здесь.. И наслаждайся тем, что ты послушная коровка.. Приятно, правда?[/say]")
 
-		saynn("As the breasts continue to milk Tavi, her moans become more and more cute. She is rubbing her thighs against each other, clearly aroused. Her body is writhing a lot, rubbing against you. Since she didn't answer your question, you move your lips closer to her ear and whisper while your hands threaten to turn off the pumps.")
+		saynn("По мере того как молоко продолжает выкачиваться из груди Тави, её стоны становятся всё более милыми. Она явно возбуждена и трет бедра друг о друга. Её тело извивается, прижимаясь к тебе. Поскольку она так и не ответила на твой вопрос, ты подносишь губы к самому её уху и шепчешь, в то время как твои руки так и норовят выключить насосы.")
 
-		saynn("[say=pc]Feels good, cow?[/say]")
+		saynn("[say=pc]Приятно, коровка?[/say]")
 
-		saynn("[say=tavi]N-ny-yes.. h.h.. P-please..[/say]")
+		saynn("[say=tavi]Д-да.. х.. х.. П-пожалуйста..[/say]")
 
-		saynn("Seems like she is getting close. Do you wanna push her further or stop there and deny her?")
+		saynn("Похоже, она уже близко. Хочешь подстегнуть её или остановиться и заставить её помучиться от нереализованного желания?")
 
-		addButton("Enough", "That was enough milking for one time", "lact_pump_enough")
-		addButton("Milk more", "Let the pumps milk Tavi fully", "lact_pump_more")
+		addButton("Хватит", "На этот раз дойки достаточно", "lact_pump_enough")
+		addButton("Доить больше", "Дать насосам выкачать из Тави всё до последней капли", "lact_pump_more")
 	if(state == "lact_pump_enough"):
-		saynn("You decide to stop there and turn off the pumps anyway.")
+		saynn("Ты всё равно решаешь остановиться и выключаешь насосы.")
 
-		saynn("[say=tavi]Huff-f..[/say]")
+		saynn("[say=tavi]Хафф.. ффф..[/say]")
 
-		saynn("[say=pc]Sorry, Tavi. Your nips are already sore.[/say]")
+		saynn("[say=pc]Прости, Тави. Твои соски уже совсем садят.[/say]")
 
-		saynn("She is squirming in your embrace. But she doesn't fight it. The sensitivity probably slowly returns to her. When you carefully remove the pumps from her breasts, she arches her back from the sudden pressure change.")
+		saynn("Она ерзает в твоих объятиях, но не сопротивляется. Чувствительность, вероятно, постепенно возвращается к ней. Когда ты осторожно снимаешь насосы с её груди, она выгибает спину от резкого перепада давления.")
 
-		saynn("[say=tavi]Ah..[/say]")
+		saynn("[say=tavi]Ах...[/say]")
 
-		saynn("[say=pc]Good kitty.[/say]")
+		saynn("[say=pc]Хорошая кошечка.[/say]")
 
-		saynn("You give the feline some well-earned rest.")
+		saynn("Ты даёшь кошечке заслуженный отдых.")
 
-		addButton("Continue", "See what happens next", "removepumpandend")
+		addButton("Продолжить", "Смотреть, что будет дальше", "removepumpandend")
 	if(state == "lact_pump_more"):
-		saynn("And so you switch the pumps to the maximum setting, allowing them to go ham. Immediately, the quiet hum that they were producing, turns into audible suction noises. Tavi's passionate moans escape her.. while the milk flow increases substantially.")
+		saynn("И вот ты переключаешь насосы на максимальную мощность, давая им волю. Тихий гул, который они издавали, мгновенно сменяется отчетливыми звуками всасывания. Из груди Тави вырываются страстные стоны... а поток молока заметно усиливается.")
 
-		saynn("[say=tavi]Ah!..[/say]")
+		saynn("[say=tavi]Ах!..[/say]")
 
-		saynn("[say=pc]Let go, little cow. Don't hold back.. Being milked is so-so nice.. So nice that you would moo for me, right?[/say]")
+		saynn("[say=pc]Расслабься, моя маленькая коровка. Не сдерживайся... Доить тебя так приятно... Так приятно, что ты ведь будешь мычать для меня, правда?[/say]")
 
-		saynn("With a blissful expression, she begins to emit soft, low moos, her cute voice and the mechanical noises filling the room.")
+		saynn("С блаженным выражением лица она начинает издавать тихое, низкое мычание, и её милый голосок смешивается с механическим шумом, заполняя комнату.")
 
-		saynn("[say=tavi]Moo-o..[/say]")
+		saynn("[say=tavi]Му-у-у...[/say]")
 
-		saynn("No resistance, Tavi is just resting in your hands.. while the pumps pull all of the milk out of her breasts. Her mooing gets combined with her moans, she is quickly reaching her peak..")
+		saynn("Никакого сопротивления — Тави просто покоится в твоих руках... пока насосы вытягивают всё молоко из её груди. Её мычание сливается со стонами, она стремительно приближается к пику...")
 
-		saynn("[say=pc]Cum like a good cow.. Just from being milked..[/say]")
+		saynn("[say=pc]Кончай, как послушная коровка... Просто от того, что тебя доят...[/say]")
 
-		saynn("And so she throws her head back and parts her lips wide, producing loud long moos while her nips suddenly start squirting milk almost non-stop. Tavi's body is squirming hard while her pussy creates a big wet spot on the bedsheets, made entirely out of her juices.")
+		saynn("Она запрокидывает голову и широко раскрывает губы, издавая громкое, протяжное мычание, в то время как её соски внезапно начинают брызгать молоком почти без остановки. Тело Тави сильно извивается, а её киска оставляет огромное мокрое пятно на простынях, состоящее целиком из её соков.")
 
-		saynn("Even after her orgasm, the breast pumps continue their work, drawing out every last drop of Tavi's sweet milk until her udders are fully drained.")
+		saynn("Даже после оргазма молокоотсосы продолжают свою работу, вытягивая каждую последнюю каплю сладкого молока Тави, пока её вымя не опустеет полностью.")
 
-		saynn("[say=tavi]..moo..[/say]")
+		saynn("[say=tavi]...му...[/say]")
 
-		saynn("With a final, satisfied moo, you turn off the pumps and let Tavi relax. She seems to be completely spaced out after that session. So you just cuddle her and whisper good things into her ears.")
+		saynn("С последним удовлетворенным мычанием ты выключаешь насосы и позволяешь Тави расслабиться. Кажется, после этой сессии она совсем улетела в облака. Поэтому ты просто обнимаешь её и шепчешь ей на ушко всякие нежности.")
 
-		saynn("[say=pc]Good kitty.. very good..[/say]")
+		saynn("[say=pc]Хорошая кошечка.. очень хорошая..[/say]")
 
-		saynn("[say=tavi]Mya..[/say]")
+		saynn("[say=tavi]Мяу..[/say]")
 
-		saynn("Eventually she snaps out of it.")
+		saynn("В конце концов она приходит в себя.")
 
-		addButton("Continue", "See what happens next", "removepumpandend")
+		addButton("Продолжить", "Смотреть, что будет дальше", "removepumpandend")
 func taviSpeak(normalSpeak, corruptSpeak, pureSpeak):
 	if(isCorrupt):
 		return corruptSpeak

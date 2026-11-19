@@ -14,181 +14,181 @@ func _run():
 		})
 		
 	if(state == ""):
-		saynn("You are standing under the shower, completely naked, cleaning yourself. You were about done with washing your {pc.breasts} when you felt someone hugging you from behind.")
+		saynn("Ты стоишь под душем, совершенно голая, и моешься. Ты уже почти закончила мыть свои {pc.breasts}, как вдруг почувствовала, что кто-то обнял тебя сзади.")
 
-		saynn("[say=tavi]Hey there~.[/say]")
+		saynn("[say=tavi]О, привет~.[/say]")
 
-		saynn("It’s Tavi. Purple soft paws rub your chest, you can feel her squishy breasts pressing against your back, she doesn’t seem to be wearing anything as well. The tall feline exposes her claws and starts gently dragging them across your {pc.thick} {pc.masc} curves.")
+		saynn("Это Тави. Её мягкие фиолетовые лапки поглаживают твою грудь; ты чувствуешь, как её пружинистая грудь прижимается к твоей спине — похоже, на ней тоже совсем ничего нет. Высокая кошка выпускает когти и начинает нежно проводить ими по изгибам твоих {pc.thick} {pc.masc}.")
 
-		saynn("[say=pc]Miss Tavi?..[/say]")
+		saynn("[say=pc]Мисс Тави?..[/say]")
 
-		saynn("[say=tavi]Surprised? I take showers too sometimes, silly.[/say]")
+		saynn("[say=tavi]Удивлена? Я тоже иногда принимаю душ, глупышка.[/say]")
 
-		saynn("She rests her chin on your shoulder and gazes down at her pet, her paws keep teasing you, brushing over your exposed nips, softly tickling your belly. You let her do it, her touch seems quite pleasant, voice soothing you down. All the while the running water washes over both of you.")
+		saynn("Она кладет подбородок тебе на плечо и смотрит сверху вниз на свою питомицу; её лапки продолжают дразнить тебя, лаская обнаженные соски и мягко щекоча живот. Ты позволяешь ей это делать — её прикосновения кажутся очень приятными, а голос успокаивает. И всё это под шум льющейся воды, омывающей вас обеих.")
 
-		saynn("[say=pc]What do you want, Miss?[/say]")
+		saynn("[say=pc]Чего вы хотите, мисс?[/say]")
 
-		saynn("[say=tavi]Just playing with my pet~[/say]")
+		saynn("[say=tavi]Просто играю со своей питомицей~[/say]")
 
 		# (if has penis)
 		if(GM.pc.hasPenis()):
-			saynn("One of her paws slides down to your {pc.cock} and starts teasing the tip. She then wraps her digits around your shaft and gives it a few strokes, helping you to get hard. You don’t wanna stop her..")
+			saynn("Одна из её лапок скользит вниз к твоей {pc.cock} и начинает дразнить кончик. Затем она обхватывает пальцами твой член и делает несколько движений, помогая тебе затвердеть. Тебе совсем не хочется её останавливать...")
 
 		# (else if has vagina)
 		else:
-			saynn("One of her paws slides down to your slit and starts teasing the clit. She then uses her digits to spread and rub the petals themselves, causing you to become aroused. You don’t wanna stop her..")
+			saynn("Одна из её лапок скользит вниз к твоей щели и начинает дразнить клитор. Затем она раздвигает пальцами лепестки и ласкает их, вызывая у тебя возбуждение. Тебе совсем не хочется её останавливать...")
 
 			# (end)
 
-		saynn("[say=tavi]Feels good, huh~. I wonder. Does my pet like to be humiliated?[/say]")
+		saynn("[say=tavi]Приятно, да~? Интересно... Любит ли моя питомица, когда её унижают?[/say]")
 
 		# (yes, a bit, no)
 
-		addButton("Yes", "This will involve light watersports..", "yes")
-		addButton("No", "You’re not into heavy humiliation", "no")
+		addButton("Да", "Это будет включать легкий вуайеризм и мочеиспускание...", "yes")
+		addButton("No", "Тебе не по душе жесткое унижение", "no")
 
 	if(state == "yes"):
-		saynn("[say=pc]Yes, Miss Tavi..[/say]")
+		saynn("[say=pc]Да, мисс Тави...[/say]")
 
-		saynn("The tall kitty purrs into your ear and lightly tugs on it with her teeth. She seems to be enjoying playing with you.")
-
-		# (if has penis)
-		if(GM.pc.hasPenis()):
-			saynn("Her paw has a grasp on your {pc.cock}, her big finger keeps rubbing the shaft to keep you hard.")
-
-		# (else)
-		else:
-			saynn("Her digits keep your pussy spread with one gently rubbing the entering. You feel yourself becoming wet.")
-
-		saynn("[say=tavi]We’re under a shower.. With drainage underneath us. Tell me, cutie, do you wanna pee?[/say]")
-
-		saynn("That’s a question you didn’t expect. You shiver just from the thought, a deep red blush appears on your face. All the while the feline keeps hugging and teasing you. Seems like running away is not even an option.")
-
-		saynn("[say=pc]I don’t think I do..[/say]")
-
-		saynn("[say=tavi]Aww~. Really though?[/say]")
+		saynn("Высокая кошечка мурлычет тебе в ухо, слегка прикусывая его зубами. Похоже, ей очень нравится с тобой играть.")
 
 		# (if has penis)
 		if(GM.pc.hasPenis()):
-			saynn("Her big thumb switches from rubbing the shaft to teasing the tip, going over exactly the spot where you pee from. It’s like she is.. tickling you there. You can’t help but to start squirming in her hands, the more she does it, the more your urge builds up. Tavi notices your reactions and purrs more deeply, she keeps rubbing your peehole non-stop until you start moaning.")
+			saynn("Её лапа сжимает твой {pc.cock}, а её толстый палец продолжает поглаживать ствол, чтобы ты не терял эрекцию.")
 
 		# (else)
 		else:
-			saynn("Two of her digits hold your pussy open while another one starts teasing the little hole.. the one that is just below the clit, the one you are peeing from.  It’s like she is.. tickling you there. You can’t help but to start squirming in her hands, the more she does it, the more your urge builds up. Tavi notices your reactions and purrs more deeply, she keeps rubbing your peehole non-stop until you start moaning.")
+			saynn("Её пальцы раздвигают твою киску, один из них нежно потирает вход. Ты чувствуешь, как становишься всё мокрее.")
 
-		saynn("[say=tavi]C’mon, just give in~. Do it for me, for your Miss. Nothing bad will happen if you wet yourself in the shower~[/say]")
+		saynn("[say=tavi]Мы под душем... А под нами слив. Скажи мне, милашка, ты хочешь пописать?[/say]")
 
-		addButton("Let it happen", "Listen to your Miss..", "let_it_happen")
-		addButton("Try to hold it", "Use all of your willpower.", "try_to_hold_it")
+		saynn("Это был вопрос, которого ты не ожидала. Ты вздрагиваешь от одной только мысли, а лицо заливает густой румянец. Тем временем кошка продолжает обнимать и дразнить тебя. Кажется, сбежать даже не получится.")
+
+		saynn("[say=pc]Думаю, нет...[/say]")
+
+		saynn("[say=tavi]Оу~. Ты серьезно?[/say]")
+
+		# (if has penis)
+		if(GM.pc.hasPenis()):
+			saynn("Её большой палец переходит от поглаживаний ствола к ласкам головки, проходя именно по тому месту, откуда выходит струя. Она будто... щекочет тебя там. Ты невольно начинаешь ерзать в её руках: чем больше она это делает, тем сильнее нарастает желание. Тави замечает твою реакцию и мурлычет еще громче, не переставая теребить твое отверстие, пока ты не начинаешь стонать.")
+
+		# (else)
+		else:
+			saynn("Два её пальца раздвигают твою киску, а третий начинает дразнить маленькое отверстие... то самое, что прямо под клитором, из которого ты писаешь. Она будто... щекочет тебя там. Ты не можешь не ерзать в её руках: чем больше она это делает, тем сильнее нарастает желание. Тави замечает твою реакцию и довольно урчит, не переставая теребить твою дырочку, пока ты не начинаешь стонать.")
+
+		saynn("[say=tavi]Да ладно тебе, просто сдайся~. Сделай это для меня, для своей Госпожи. Ничего плохого не случится, если ты намочишься прямо в душе~[/say]")
+
+		addButton("Пусть всё идет своим чередом", "Слушайся свою Госпожу...", "let_it_happen")
+		addButton("Попытаться сдержаться", "Использовать всю свою силу воли.", "try_to_hold_it")
 
 
 	if(state == "let_it_happen"):
-		saynn("Your embarrassed gaze directed away, there is only so much teasing you can endure so you decide to let go..")
+		saynn("Ты смущенно отводишь взгляд; прелестей этого дразнения можно вытерпеть лишь до поры до времени, и ты решаешь отпустить контроль...")
 
 		# (if has penis)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("You let out a passionate moan before a stream of piss emerges from your cock. Tavi quickly moves away her thumb but she keeps her other digits wrapped around your chastity cage.")
+			saynn("Ты издаешь страстный стон, и в этот момент из твоего члена вырывается струя мочи. Тави быстро убирает большой палец, но продолжает обхватывать твою девственную клетку остальными пальцами.")
 		elif(GM.pc.hasPenis()):
-			saynn("You let out a passionate moan before a stream of piss emerges from your cock. Tavi quickly moves away her thumb but she keeps her other digits wrapped around your member.")
+			saynn("Ты издаешь страстный стон, и в этот момент из твоего члена вырывается струя мочи. Тави быстро убирает большой палец, но продолжает обхватывать твой член остальными пальцами.")
 
 		# (else)
 		else:
-			saynn("You let out a passionate moan before a stream of piss emerges from your slit. Tavi quickly moves away her finger but she keeps your pussy spread open with the other two.")
+			saynn("Ты издаешь страстный стон, и в этот момент из твоей щели вырывается струя мочи. Тави быстро убирает палец, но продолжает раздвигать твою киску двумя другими.")
 
-		saynn("Tavi chuckles, it’s extremely humiliating but you can’t stop yourself anymore, you just keep pissing while Tavi watches you do it. Luckily all of it quickly gets washed away by the stream of water. On the other hand, your yellow stream is slowly dying down as your bladder becomes empty. You feel.. a sense of relief..")
+		saynn("Тави посмеивается; это чертовски унизительно, но ты уже не можешь остановиться — ты просто продолжаешь мочиться под пристальным взглядом Тави. К счастью, поток воды быстро смывает всё за собой. С другой стороны, твоя желтая струйка постепенно слабеет, так как мочевой пузырь пустеет. Ты чувствуешь... облегчение...")
 
-		saynn("[say=tavi]I see that you enjoyed it~[/say]")
+		saynn("[say=tavi]Вижу, тебе понравилось~[/say]")
 
-		saynn("[say=pc]Nn-no..[/say]")
+		saynn("[say=pc]Н-нет..[/say]")
 
-		saynn("[say=tavi]Don’t lie to me, cutie. Just look at yourself~.[/say]")
+		saynn("[say=tavi]Не ври мне, милашка. Просто посмотри на себя~.[/say]")
 
-		saynn("Maybe she is right, maybe you are this humiliation slut. Tavi puts her hand on your neck, just above the collar. Then she offers you a little kiss on the cheek.")
+		saynn("Может, она и права, может, ты и впрямь такая шлюшка, обожающая унижения. Тави кладет руку тебе на шею, чуть выше воротника, а затем дарит легкий поцелуй в щеку.")
 
-		saynn("[say=tavi]See you around, pet~[/say]")
+		saynn("[say=tavi]Еще увидимся, питомец~[/say]")
 
-		saynn("And with that, Tavi leaves you alone with your thoughts.")
+		saynn("И с этими словами Тави оставляет тебя наедине с твоими мыслями.")
 
 		# (scene ends)
-		addButton("Continue", "That was a thing that happened", "endthescene")
+		addButton("Продолжить", "Это случилось", "endthescene")
 
 	if(state == "try_to_hold_it"):
-		saynn("You gather all of your strength and try to push away the urge. While cheeky Tavi is being relentless, she is rubbing your little peehole, trying to force you to give up. Any time you try to grab her hand she just slaps yours away.")
+		saynn("Ты собираешь все свои силы, пытаясь подавить позыв. Несмотря на всю свою дерзость, Тави действует беспощадно: она потирает твое маленькое отверстие, заставляя тебя сдаться. Каждый раз, когда ты пытаешься перехватить ее руку, она просто отмахивается от твоей.")
 
 		# (if survived)
 
-		saynn("You grunt a lot but you don’t leak a single drop. Tavi sees the efforts you went through and sighs. She stops teasing you.")
+		saynn("Ты много кряхтишь, но не выдаешь ни единой капли. Тави видит твои старания и вздыхает. Она перестает дразнить тебя.")
 
 		# (if dick)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("Instead she switches to teasing. Her paw tugs and pulls on your {pc.cock} until it’s getting more hard under the chastity.")
+			saynn("Вместо этого она переходит к дразнящим ласкам. Её лапка тянет и дергает твой {pc.cock}, пока он не начинает твердеть под девственницей.")
 		elif(GM.pc.hasPenis()):
-			saynn("Instead she switches to stroking you off. Her paw slides along your {pc.cock} until it’s fully hard again.")
+			saynn("Вместо этого она переходит к ласкам рукой. Её лапка скользит по твоему {pc.cock}, пока он снова не станет полностью твердым.")
 
 		# (if else)
 		else:
-			saynn("Instead she switches to fingering you off, her paw rubs your cute slit and spreads it open so a few digits can fit.")
+			saynn("Вместо этого она переходит к пальцевому сексу: её лапка трет твою милую щелочку и раздвигает её, чтобы внутрь могли войти несколько пальцев.")
 
-		saynn("[say=tavi]Awww. But I bet you would enjoy it.[/say]")
+		saynn("[say=tavi]Оооу. Но спорим, тебе бы это понравилось![/say]")
 
 		# (if dick)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("You begin moaning for her. Tavi quickly reaches the full pace, she strokes and tugs on your cage so fast you think you won’t last for much longer. But just when you think you will go over your peak, Tavi suddenly stops, cutting off the supply of instant pleasure and causing you to squirm in desperation. Tavi welcomes it, she holds you still, hand on your cage, stroking it so slowly that it feels like a torture.")
+			saynn("Ты начинаешь стонать, умоляя её. Тави быстро набирает темп; она так быстро трет и дергает твою клетку, что ты думаешь, будто долго не продержишься. Но как раз в тот момент, когда ты вот-вот достигнешь пика, Тави внезапно останавливается, обрывая поток мгновенного наслаждения и заставляя тебя отчаянно извиваться. Тави только рада этому: она удерживает тебя неподвижно, положив руку на клетку и поглаживая её так медленно, что это кажется настоящей пыткой.")
 		elif(GM.pc.hasPenis()):
-			saynn("You begin moaning for her. Tavi quickly reaches the full pace, she strokes you so fast you think you won’t last for much longer. But just when you think you will go over your peak, Tavi suddenly stops, cutting off the supply of instant pleasure and causing you to squirm in desperation. Tavi welcomes it, she holds you still, hand on your cock, stroking you so slowly that it feels like a torture.")
+			saynn("Ты начинаешь стонать, умоляя её. Тави быстро набирает темп; она ласкает тебя так быстро, что ты думаешь, будто долго не продержишься. Но как раз в тот момент, когда ты вот-вот достигнешь пика, Тави внезапно останавливается, обрывая поток мгновенного наслаждения и заставляя тебя отчаянно извиваться. Тави только рада этому: она удерживает тебя неподвижно, положив руку на твой член и поглаживая его так медленно, что это кажется настоящей пыткой.")
 
 		# (else)
 		else:
-			saynn("You begin moaning for her. Tavi shoves a few digits into your slit and quickly reaches the full pace, fingering you so hard that you think that you won’t last for too long. Your snatch starts making wet noises but just when you think you will go over your peak, Tavi suddenly stops, cutting off the supply of instant pleasure and forcing you to start squirming in desperation. Tavi welcomes it, she holds you still, digits in your slit, teasing you to lightly that it feels like a torture.")
+			saynn("Ты начинаешь стонать, умоляя её. Тави засовывает несколько пальцев в твою щелочку и быстро набирает темп, лаская тебя так интенсивно, что ты понимаешь — долго ты не продержишься. Твоя киска начинает издавать влажные звуки, но как раз в тот момент, когда ты чувствуешь, что вот-вот достигнешь пика, Тави внезапно останавливается, обрывая поток мгновенного наслаждения и заставляя тебя отчаянно извиваться. Тави только радуется этому: она удерживает тебя на месте, оставив пальцы в твоей щелочке и дразня тебя так слегка, что это кажется настоящей пыткой.")
 
-		saynn("[say=tavi]That’s what you get, little bitch~[/say]")
+		saynn("[say=tavi]Так тебе и надо, сучка~[/say]")
 
-		saynn("Tavi pulls her hand away, denying you completely. And when you try to reach for your crotch, she catches your arms and wrenches them behind your back. She giggles while you slowly lose your horny mood under the cold water.")
+		saynn("Тави убирает руку, полностью лишая тебя удовольствия. И когда ты пытаешься дотянуться до своего паха, она перехватывает твои руки и заводит их тебе за спину. Она хихикает, пока ты медленно теряешь возбуждение под струями холодной воды.")
 
-		saynn("[say=pc]Why not let me cum, Miss..[/say]")
+		saynn("[say=pc]Почему бы не дать мне кончить, мисс...[/say]")
 
-		saynn("[say=tavi]Because you didn’t even ask~. Too late now, cutie. See you around.[/say]")
+		saynn("[say=tavi]Потому что ты даже не попросила~. Теперь уже поздно, милашка. Еще увидимся.[/say]")
 
-		saynn("She leaves a little kiss on your cheek before leaving the shower room, leaving you alone with your thoughts.")
+		saynn("Она оставляет легкий поцелуй на твоей щеке и выходит из душевой, оставляя тебя наедине со своими мыслями.")
 
 		# (scene ends)
-		addButton("Continue", "That was a thing that happened", "endthescene")
+		addButton("Продолжить", "Это случилось", "endthescene")
 
 	if(state == "no"):
-		saynn("[say=pc]Not really, no..[/say]")
+		saynn("[say=pc]Не совсем, нет...[/say]")
 
-		saynn("[say=tavi]Well it’s a shame that you’re stuck with me then, pet~.[/say]")
+		saynn("[say=tavi]Ну, тогда жаль, что тебе досталась именно я, питомец~.[/say]")
 
 		# (if dick)
 		if(GM.pc.hasReachablePenis()):
-			saynn("She begins stroking you off. Her paw slides along your {pc.cock}, catching any precum and spreading it along the full length.")
+			saynn("Она начинает ласкать тебя рукой. Её лапа скользит вдоль твоего {pc.cock}, собирая предэякулят и размазывая его по всей длине.")
 
 		# (if else)
 		else:
-			saynn("She begins to finger you, her paw rubs your cute slit and spreads it open so a few digits can fit.")
+			saynn("Она начинает играть с тобой пальцами, её лапа потирает твою милую щелочку и раздвигает её, чтобы внутрь могли войти несколько пальцев.")
 
-		saynn("[say=tavi]Because I can be mean when I don’t get what I want~.[/say]")
+		saynn("[say=tavi]Потому что, если я не получаю того, что хочу, я могу быть очень вредной~.[/say]")
 
 		# (if dick)
 		if(GM.pc.hasReachablePenis()):
-			saynn("You can’t hold your moans from escaping. Tavi quickly reaches the full pace, she strokes you so fast you think you won’t last for much longer. But just when you think you will go over your peak, Tavi suddenly stops, cutting off the supply of instant pleasure and causing you to squirm in desperation. Tavi welcomes it, she holds you still, hand on your cock, stroking you so slowly that it feels like a torture.")
+			saynn("Ты не можешь сдержать стоны. Тави быстро входит в полный ритм; она ласкает тебя так интенсивно, что кажется, будто ты вот-вот кончишь. Но как раз в тот момент, когда ты уже на грани пика, Тави внезапно останавливается, обрывая поток мгновенного наслаждения и заставляя тебя отчаянно извиваться. Тави только этого и ждет: она удерживает тебя на месте, положив руку на твой член, и начинает двигаться так медленно, что это кажется настоящей пыткой.")
 
 		# (else)
 		else:
-			saynn("You can’t hold your moans from escaping. Tavi shoves a few digits into your slit and quickly reaches the full pace, fingering you so hard that you think that you won’t last for too long. Your snatch starts making wet noises but just when you think you will go over your peak, Tavi suddenly stops, cutting off the supply of instant pleasure and forcing you to start squirming in desperation. Tavi welcomes it, she holds you still, digits in your slit, teasing you to lightly that it feels like a torture.")
+			saynn("Ты не можешь сдержать стоны. Тави вводит несколько пальцев в твою щель и быстро набирает темп, трахая тебя так жестко, что ты понимаешь — долго ты не продержишься. Твоя киска начинает издавать влажные звуки, но как раз в тот момент, когда ты готов достичь пика, Тави внезапно останавливается, перекрывая приток удовольствия и заставляя тебя отчаянно ерзать. Тави наслаждается этим: она удерживает тебя, оставив пальцы внутри, и дразнит тебя так нежно, что это превращается в пытку.")
 
-		saynn("[say=tavi]That’s what you get, little bitch~[/say]")
+		saynn("[say=tavi]Так тебе и надо, сучка~[/say]")
 
-		saynn("Tavi pulls her hand away, denying you completely. And when you try to reach for your crotch, she catches your arms and wrenches them behind your back. She giggles while you slowly lose your horny mood under the cold water.")
+		saynn("Тави убирает руку, полностью лишая тебя удовольствия. И когда ты пытаешься дотянуться до своего паха, она перехватывает твои руки и заводит их тебе за спину. Она хихикает, пока ты медленно теряешь возбуждение под струями холодной воды.")
 
-		saynn("[say=pc]Why not let me cum, Miss..[/say]")
+		saynn("[say=pc]Почему бы не дать мне кончить, мисс...[/say]")
 
-		saynn("[say=tavi]Because you didn’t even ask~. Too late now, cutie. See you around.[/say]")
+		saynn("[say=tavi]Потому что ты даже не попросила~. Теперь уже поздно, милашка. Еще увидимся.[/say]")
 
-		saynn("She leaves a little kiss on your cheek before leaving the shower room, leaving you alone with your thoughts and a red face.")
+		saynn("Оставив легкий поцелуй на твоей щеке, она выходит из душевой, оставляя тебя наедине с твоими мыслями и пылающим лицом.")
 
 		# (scene ends)
-		addButton("Continue", "That was a thing that happened", "endthescene")
+		addButton("Продолжить", "Это случилось", "endthescene")
 
 
 func _react(_action: String, _args):

@@ -8,27 +8,27 @@ func _run():
 		addCharacter("tavi")
 
 	if(state == ""):
-		saynn("You decide that you wanna try and get on Tavi’s good side. You approach the tall feline, her eyes burn with hatred.")
+		saynn("Вы решаете, что стоит попытаться задобрить Тави. Вы подходите к высокой кошкодевушке, и её глаза буквально горят ненавистью.")
 
-		saynn("[say=pc]What can I do to make you not hate me?[/say]")
+		saynn("[say=pc]Что мне сделать, чтобы ты перестала меня ненавидеть?[/say]")
 
-		saynn("You can hear her growling like she is about to lash out at you.")
+		saynn("Вы слышите её рычание — кажется, она вот-вот набросится на вас.")
 
-		saynn("[say=tavi]Breath the outside air.[/say]")
+		saynn("[say=tavi]Вдохнуть свежий воздух.[/say]")
 
-		saynn("Seems like it won’t be that easy.")
+		saynn("Похоже, всё будет не так просто.")
 
-		addButton("Give up", "It’s not worth it", "give_up")
+		addButton("Сдаться", "Оно того не стоит", "give_up")
 		
 		if(!GM.pc.isGagged()):
-			addButton("Get on your knees", "Try harder, this will involve feet and a lot of humiliation", "get_on_your_knees")
+			addButton("Встать на колени", "Постараться получше (это подразумевает ноги и много унижений)", "get_on_your_knees")
 		else:
-			addDisabledButton("Get on your knees", "You need your mouth to be free for this")
+			addDisabledButton("Встать на колени", "Для этого вам понадобится свободный рот")
 
 	if(state == "give_up"):
-		saynn("You sigh and leave the feline alone. She only seems glad you did that.")
+		saynn("Вы вздыхаете и оставляете кошечку в покое. Кажется, она только рада, что вы так поступили.")
 
-		addButton("Continue", "Huff..", "endthescene")
+		addButton("Продолжить", "Хфф..", "endthescene")
 
 	if(state == "get_on_your_knees"):
 		playAnimation(StageScene.SexFeetPlay, "head", {
@@ -37,67 +37,67 @@ func _run():
 			npcBodyState={hard=true,},
 		})
 		
-		saynn("You get on your knees and crawl up at her, she carefully watches to make sure you’re not doing anything stupid. She still sits on some machine and crosses her legs. You get a good look at her animal toes and soft pads underneath each, they have the same bright green color as her fur markings.")
+		saynn("Вы встаете на колени и подползаете к ней; она внимательно следит за каждым вашим движением, чтобы вы не выкинули какую-нибудь глупость. Она всё так же сидит на каком-то агрегате, скрестив ноги. Вы во всех подробностях разглядываете её звериные пальчики и мягкие подушечки снизу — они такого же ярко-зеленого цвета, как и отметины на её меху.")
 
-		saynn("[say=pc]You can do whatever you want with me..[/say]")
+		saynn("[say=pc]Можешь делать со мной всё, что захочешь..[/say]")
 
-		saynn("[say=tavi]Like sending you straight to medbay?[/say]")
+		saynn("[say=tavi]Типа отправить тебя прямиком в медблок?[/say]")
 
-		saynn("You tilt your head down and attempt to nuzzle her leg. She pushes you away.")
+		saynn("Вы склоняете голову и пытаетесь уткнуться носом в её ногу. Она отталкивает вас.")
 
-		saynn("[say=pc]If that’s what you want.. Miss..[/say]")
+		saynn("[say=pc]Если вы так хотите.. Мисс..[/say]")
 
-		saynn("She huffs and looks away. A few seconds of complete silence. Tavi grinds her teeth, her voice is strict.")
+		saynn("Она фыркает и отводит взгляд. Несколько секунд полной тишины. Тави стискивает зубы, её голос звучит строго.")
 
-		saynn("[say=tavi]You expect me to just forget everything you did?[/say]")
+		saynn("[say=tavi]Ты ждешь, что я просто забуду всё, что ты наделала?[/say]")
 
-		saynn("You shrug and rest your chin on her legs. She glances at the adorable display you’re trying to achieve and sighs. She pushes you back but then shoves her foot into your face, her toe beans rubbing against your nose, lips and cheeks. Tavi directs her attention back to you.")
+		saynn("Вы пожимаете плечами и кладете подбородок ей на ноги. Она бросает взгляд на эту милую сцену, которую вы пытаетесь разыграть, и вздыхает. Она отталкивает вас, но затем сует ступню вам прямо в лицо, так что её подушечки лап трутся о ваш нос, губы и щеки. Тави снова переключает всё своё внимание на вас.")
 
-		saynn("[say=tavi]Lick.[/say]")
+		saynn("[say=tavi]Облизывай.[/say]")
 
-		saynn("You swiftly stick your tongue out and slide it around all the green toe pads while also nuzzling. Feels humiliating to be someone’s toe licker but if that's the only way…")
+		saynn("Ты быстро высовываешь язык и начинаешь водить им по всем зеленым подушечкам на пальцах, одновременно прижимаясь к ним носом. Быть чьей-то облизывательницей пальцев — унизительно, но если это единственный путь...")
 
-		saynn("[say=tavi]Do it better.[/say]")
+		saynn("[say=tavi]Делай это лучше.[/say]")
 
-		saynn("You gently take a hold of her leg and support it while you give each bean a good lick. Then you thrust your tongue between each toe and lick there too. Blush appears on your face, it’s quite arousing. Tavi’s eyes are still mean but you can catch a subtle smirk.")
+		saynn("Ты осторожно берешь её ногу, придерживая её, и хорошенько вылизываешь каждую подушечку. Затем ты просовываешь язык между пальцами, вылизывая и там тоже. Твое лицо заливает румянец, это чертовски возбуждает. Взгляд Тави всё еще суров, но ты замечаешь едва уловимую ухмылку.")
 
-		saynn("She then pulls her leg away and pushes the second one in your face. You immediately start giving it the same treatment, gently massaging with your hands while your tongue traces around the toe pads and between the toes. Tavi’s grin widens.")
+		saynn("Затем она отдергивает ногу и подсовывает тебе вторую прямо в лицо. Ты тут же начинаешь делать то же самое: нежно массируешь её руками, пока язык скользит по подушечкам и между пальцами. Ухмылка Тави становится шире.")
 
-		saynn("[say=tavi]Good. You like doing that?[/say]")
+		saynn("[say=tavi]Хорошо. Тебе нравится этим заниматься?[/say]")
 
-		saynn("You nod eagerly and nuzzle the offered foot. Tavi leans forward and gives you a cold head pat.")
+		saynn("Ты жадно киваешь и прижимаешься к предложенной ступне. Тави наклоняется вперед и холодно похлопывает тебя по голове.")
 
-		saynn("[say=pc]Yes, Miss..[/say]")
+		saynn("[say=pc]Да, мисс...[/say]")
 
-		saynn("[say=tavi]it’s far from me forgiving you.[/say]")
+		saynn("[say=tavi]Это еще далеко не значит, что я тебя простила.[/say]")
 
-		saynn("You give Tavi a confused look. She smiles and suddenly pushes her leg into your chest, causing you to collapse back onto your back. Painful.")
+		saynn("Ты смотришь на Тави в замешательстве. Она улыбается и внезапно толкает ногу тебе в грудь, отчего ты заваливаешься на спину. Болезненно.")
 
-		saynn("[say=pc]Ow..[/say]")
+		saynn("[say=pc]Ой...[/say]")
 
-		saynn("Tavi stands up and stretches in your view. You stay on the floor and watch her come near your head. The tall feline glances down at you.")
+		saynn("Тави встает и потягивается прямо перед тобой. Ты остаешься лежать на полу и наблюдаешь, как она приближается к твоей голове. Высокая кошкодевочка смотрит на тебя сверху вниз.")
 
-		saynn("[say=tavi]Something is wrong?[/say]")
+		saynn("[say=tavi]Что-то не так?[/say]")
 
-		saynn("You shake your head and Tavi smiles. Then she raises one of her legs and puts it on your face, her wet with your saliva green toe pads rubbing against your cheeks. You let out a cute squeak but let her do it, your hands land on her ankle and hold to it. Tavi licks her lips.")
+		saynn("Ты качаешь головой, и Тави улыбается. Затем она поднимает одну ногу и ставит её тебе на лицо; её влажные от твоей слюны зеленые подушечки на пальцах ног трутся о твои щеки. Ты издаешь милый писк, но позволяешь ей это делать, твои руки ложатся на её лодыжку и сжимают её. Тави облизывает губы.")
 
-		saynn("[say=tavi]That’s what I like to see, a submissive little cutie laying under my foot and enjoying {pc.himself}. Open your mouth for me.[/say]")
+		saynn("[say=tavi]Вот это мне нравится: послушная малышка, валяющаяся у моей ноги и наслаждающаяся {pc.himself}. Открой рот для меня.[/say]")
 
-		saynn("You do as she orders you and she sneaks a few of her toes inside.")
+		saynn("Ты подчиняешься её приказу, и она просовывает несколько пальцев тебе в рот.")
 
-		saynn("[say=tavi]Suck~[/say]")
+		saynn("[say=tavi]Соси~[/say]")
 
-		saynn("You close your mouth around the toes and begin gently sucking on them, your tongue is doing its work too, licking the beans, probably creating a tickling sensation for Tavi. She chuckles and slightly wiggles her toes in your mouth. It's humiliating, degrading, but also so hot, your cheeks blush red, your submissive eyes show passion.")
+		saynn("Ты смыкаешь губы вокруг её пальцев и начинаешь нежно посасывать их; твой язык тоже делает своё дело, вылизывая подушечки, что, вероятно, вызывает у Тави щекочущее ощущение. Она посмеивается и слегка шевелит пальцами у тебя во рту. Это унизительно, это принижает тебя, но в то же время это так горячо, что твои щеки краснеют, а в покорных глазах читается страсть.")
 
-		saynn("[say=tavi]Such a silly thing. A silly pet. I will give you another chance. Remember how you look right now the next time you will try to misbehave.[/say]")
+		saynn("[say=tavi]Какая глупенькая. Глупенький питомец. Я дам тебе еще один шанс. Запомни, как ты выглядишь сейчас, чтобы не забыть в следующий раз, когда решишь разбаловаться.[/say]")
 
-		saynn("You nod. Tavi pulls her toes out of your mouth and rubs your saliva into your face, making you look like a subby mess.")
+		saynn("Ты киваешь. Тави вынимает пальцы из твоего рта и размазывает твою слюну по твоему лицу, превращая тебя в жалкое, покорное месиво.")
 		
-		addButton("End", "The humiliation..", "endthescene")
+		addButton("Конец", "Это унижение...", "endthescene")
 		if(GM.pc.hasReachablePenis() || GM.pc.hasReachableVagina()):
-			addButton("I want more", "That amount of humiliation wasn’t enough", "i_want_more")
+			addButton("Хочу еще", "Такого унижения было недостаточно", "i_want_more")
 		else:
-			addDisabledButton("I want more", "You need a pussy or reachable cock for this")
+			addDisabledButton("Хочу еще", "Для этого тебе нужна киска или доступный член")
 
 	if(state == "i_want_more"):
 		playAnimation(StageScene.SexFeetPlay, "crotch", {
@@ -107,44 +107,44 @@ func _run():
 		})
 		
 		if(!GM.pc.isFullyNaked()):
-			saynn("But then she shifts her leg down to your crotch area, her foot rubs it and then sneaks under your clothing.")
+			saynn("Но затем она опускает ногу к твоему паху, ее ступня потирает его, а затем она просовывает ее под твою одежду.")
 		else:
-			saynn("But then she shifts her leg down to your crotch, her foot spreads your legs and traces around your privates.")
+			saynn("Но затем она опускает ногу к твоему паху, ее ступня раздвигает твои ноги и очерчивает контуры твоих причиндалов.")
 
 		if(GM.pc.hasReachablePenis()):
 
-			saynn("Your cock is hard, very hard, all that humiliation has really turned you on. Tavi’s foot presses your shaft into your abdomen and gives it a gentle foot massage. It feels weird but also pleasurable, you open your mouth and let out a little noise, then another, and another. Tall cat chuckles and continues, one of her toes finds the tip of your cock and rubs it specifically, making you squirm.")
+			saynn("Твой член твердый, очень твердый, всё это унижение по-настоящему тебя возбудило. Ступня Тави прижимает твой ствол к животу и делает ему нежный массаж. Это ощущается странно, но приятно; ты приоткрываешь рот и издаешь тихий звук, затем еще один, и еще. Высокая кошка посмеивается и продолжает: один из ее пальцев находит головку твоего члена и начинает специально ее тереть, заставляя тебя извиваться.")
 
-			saynn("[say=tavi]So easy to keep cuties like you under control~[/say]")
+			saynn("[say=tavi]Таких милашек, как ты, так легко держать под контролем~[/say]")
 
-			saynn("You leak pre and Tavi uses her foot to spread it around and then continues to stroke your shaft in such a strange way. But it feels good, you begin to breathe deeply, random shivers appear throughout your body, your cock throbs and twitches, you’re getting kinda close and Tavi feels it.")
+			saynn("У тебя выделяется предэякулят, и Тави использует ступню, чтобы размазать его, а затем продолжает ласкать твой ствол каким-то странным образом. Но это приятно; ты начинаешь глубоко дышать, по всему телу пробегает случайная дрожь, твой член пульсирует и дергается — ты уже почти на пределе, и Тави это чувствует.")
 
 			if(!GM.pc.isFullyNaked()):
-				saynn("[say=tavi]Gonna leave a mess in your pants, huh~?[/say]")
+				saynn("[say=tavi]Устроишь беспорядок в штанах, а~?[/say]")
 			else:
-				saynn("[say=tavi]Gonna leave a mess, huh~?[/say]")
+				saynn("[say=tavi]Оставишь после себя кучу грязи, да~?[/say]")
 
-			saynn("Tavi increases the pressure, her foot strokes your cock with a steady pace, her foot pads are rubbing against your sensitive flesh, you arch your back and squirm harder. It only takes a few more seconds before you let out a passionate moan and cum, your throbbing cock bursting with many spurts of sticky stuff, creating a huge mess, just like Tavi predicted. When you discharge into nothing, Tavi can only offer you a cunning grin, her foot was far away from your cock and didn’t get any cum on it.")
+			saynn("Тави усиливает нажим, её ступня мерно поглаживает твой член; подушечки её пальцев трутся о твою чувствительную плоть, заставляя тебя выгибаться и ерзать всё сильнее. Проходит всего несколько секунд, прежде чем ты издаёшь страстный стон и кончаешь — твой пульсирующий член извергает мощные струи липкой жижи, создавая настоящий беспорядок, как Тави и предсказывала. Когда ты окончательно разряжаешься в пустоту, Тави лишь хитро ухмыляется: её ступня была достаточно далеко от твоего члена, так что она не испачкалась в твоей сперме.")
 
-			saynn("[say=tavi]Very good~. Go clean yourself, cutie. Unless you like being messy, I can understand that too~[/say]")
+			saynn("[say=tavi]Очень хорошо~. Иди умойся, милашка. Хотя, если тебе нравится быть грязнулей, я тоже могу это понять~[/say]")
 
 		elif(GM.pc.hasReachableVagina()):
-			saynn("You’re wet between your legs, very wet, all that humiliation has really turned you on. Tavi’s foot finds your sensitive petals and gently rubs them, it feels strange and weird but also kinda pleasurable, you can’t help but to open your mouth and let out a few cute noises. Tall cat chuckles and continues to do her thing, one of her toes finds your clit and rubs it from side to side, making you squirm.")
+			saynn("Между ног у тебя всё мокро, очень мокро — всё это унижение по-настоящему тебя возбудило. Ступня Тави находит твои чувствительные лепестки и нежно потирает их; ощущения странные и непривычные, но в то же время приятные, и ты невольно приоткрываешь рот, издавая милые звуки. Высокая кошка посмеивается и продолжает своё дело: один из её пальцев находит твой клитор и начинает тереть его из стороны в сторону, заставляя тебя извиваться.")
 
-			saynn("[say=tavi]You like it, huh? I see that you do~[/say]")
+			saynn("[say=tavi]Тебе нравится, да? Вижу, что очень~[/say]")
 
-			saynn("Your pussy leaks more of your female juices, Tavi uses her foot to spread it around your crotch and then resumes rubbing you further, pleasuring you in such a strange way. But it feels good, you breathe deeply and keep moaning for your miss, random shivers appear throughout your body, you’re getting kinda close and Tavi feels it.")
+			saynn("Твоя киска выделяет ещё больше смазки, и Тави использует ступню, чтобы размазать её по твоей промежности, а затем возобновляет ласки, доставляя тебе удовольствие таким странным способом. Но это чертовски приятно: ты глубоко дышишь и продолжаешь стонать для своей госпожи; по всему телу пробегает случайная дрожь — ты уже близка к пику, и Тави это чувствует.")
 
 			if(!GM.pc.isFullyNaked()):
-				saynn("[say=tavi]Gonna cum like that, with your pants, huh~?[/say]")
+				saynn("[say=tavi]Неужели кончишь прямо так, прямо в штаны, а~?[/say]")
 			else:
-				saynn("[say=tavi]Gonna cum like that, huh~?[/say]")
+				saynn("[say=tavi]Так хочешь кончить вот так, да~?[/say]")
 
-			saynn("Tavi increases the pressure, her foot rubs your needy slit at a steady pace, the foot pads are rubbing against your sensitive flesh, you arch your back and squirm harder. It only takes a few more seconds before you let out a passionate moan and cum, your pulsating cunt bursting with your female juices, creating a huge mess, just like Tavi predicted. You sound and look like a quivering mess, a cunning grin flashes on Tavi’s face, she rubs her foot dry against your thighs and then pulls it away.")
+			saynn("Тави усиливает нажим, её ступня размеренно трется о твою жаждущую щель; подушечки пальцев ласкают твою чувствительную плоть, заставляя тебя выгибаться и ерзать всё сильнее. Проходит всего пара секунд, прежде чем ты издаешь страстный стон и кончаешь — твоя пульсирующая киска извергает фонтаны женских соков, устраивая настоящий беспорядок, точь-в-точь как и предсказывала Тави. Ты выглядишь и звучишь как дрожащее от экстаза нечто; на лице Тави промелькнула хитрая ухмылка, она вытирает ступню о твои бедра и убирает ногу.")
 
-			saynn("[say=tavi]Very good~. Go clean yourself, cutie. Unless you like being messy, I can understand that too~[/say]")
+			saynn("[say=tavi]Очень хорошо~. Иди умойся, милашка. Хотя, если тебе нравится быть грязнулей, я тоже могу это понять~[/say]")
 
-		addButton("Continue", "Even greater humiliation..", "endthescene")
+		addButton("Продолжить", "Еще большее унижение...", "endthescene")
 
 
 		

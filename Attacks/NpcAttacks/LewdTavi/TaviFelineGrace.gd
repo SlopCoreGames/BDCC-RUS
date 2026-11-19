@@ -6,14 +6,14 @@ func _init():
 	aiCategory = AICategory.DefensivePain
 	
 func getVisibleName(_context = {}):
-	return "Feline Grace"
+	return "Кошачья грация"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
 	
 func _doAttack(_attacker, _receiver, _context = {}):
 
-	var text = "{attacker.name} moves with feline grace, anticipating {receiver.name}'s next move."
+	var text = "{attacker.name} двигается с кошачьей грацией, предугадывая следующий шаг {receiver.name}."
 	_attacker.addEffect(StatusEffect.Evading, [2, 50])
 	return {
 		text = text,

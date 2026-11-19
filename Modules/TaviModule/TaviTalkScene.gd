@@ -15,191 +15,191 @@ func _run():
 		
 	if(state == ""):
 		if(getModuleFlag("TaviModule", "Tavi_IsAngryAtPlayer")):
-			saynn("You approach the tall feline that stands in the dimly lit space. Her face doesn’t show much emotion but you can tell that she is not happy. She glares at you with her mean eyes.")
+			saynn("Вы подходите к высокой кошкоподобной фигуре, стоящей в полумраке. Её лицо почти не выражает эмоций, но вы понимаете, что она явно не в духе. Она сверлит вас взглядом своих злобных глаз.")
 
-			saynn("[say=tavi]The fuck do you want?[/say]")
+			saynn("[say=tavi]Какого хера тебе нужно?[/say]")
 		else:
-			saynn("You walk up to Tavi, she seems to be sitting on some piece of machinery.")
+			saynn("Вы подходите к Тави; кажется, она сидит на каком-то куске оборудования.")
 
-			saynn("[say=pc]Miss Tavi?[/say]")
+			saynn("[say=pc]Мисс Тави?[/say]")
 
-			saynn("She listens to you and smiles.")
+			saynn("Она слушает вас и улыбается.")
 
-			saynn("[say=tavi]Yes, my personal pet?[/say]")
+			saynn("[say=tavi]Да, мой личный питомец?[/say]")
 
-		addButton("Talk", "Pick a topic to talk about", "talk")
-		addButton("Appearance", "Take a closer look at Tavi", "appearance")
-		addButton("Attack", "This can only go one way", "attack")
+		addButton("Поговорить", "Выберите тему для разговора", "talk")
+		addButton("Внешность", "Рассмотреть Тави поближе", "appearance")
+		addButton("Атаковать", "Это может закончиться только одним способом", "attack")
 		if(getModuleFlag("TaviModule", "Tavi_IsAngryAtPlayer")):
 			var day = getModuleFlag("TaviModule", "Tavi_AngryUntilDay", -10)
 			if(GM.main.getDays() >= day):
-				addButton("Submit", "Try and patch things up", "submit")
+				addButton("Подчиниться", "Попытаться наладить отношения", "submit")
 			else:
-				addDisabledButton("Submit", "Tavi is still angry at you, try again in a day or two")
+				addDisabledButton("Подчиниться", "Тави всё ещё злится на вас, попробуйте снова через день или два")
 		else:
 			# Player is friendly towards Tavi
 			
-			addButton("Punish me", "Ask Tavi to punish you", "askForPunishment")
+			addButton("Накажи меня", "Попросить Тави наказать тебя", "askForPunishment")
 			
 			if(!getModuleFlag("TaviModule", "Tavi_ToldHowToEscape")):
-				addButton("Plot to escape", "Tavi mentioned she can help you to escape", "plot_to_escape")
+				addButton("Замышлять побег", "Тави упомянула, что может помочь тебе сбежать", "plot_to_escape")
 			
 			if(getModuleFlag("TaviModule", "Tavi_NeedsApple") && !getModuleFlag("TaviModule", "Tavi_GotApple")):
 				if(GM.pc.getInventory().hasItemID("appleitem")):
-					addButton("Give apple", "Tavi wants an apple", "give_apple")
+					addButton("Дать яблоко", "Тави хочет яблоко", "give_apple")
 				else:
-					addDisabledButton("Give apple", "You don't have one")
+					addDisabledButton("Дать яблоко", "У тебя его нет")
 					
 			if(GM.QS.isCompleted("TaviAppleQuest") && !getModuleFlag("TaviModule", "Tavi_Quest2Started", false)):
-				addButton("What now", "Ask Tavi what now", "quest2start")
+				addButton("Что теперь?", "Спросить Тави, что дальше", "quest2start")
 		
-		addButton("Leave", "Do something else", "endthescene")
+		addButton("Уйти", "Сделать что-то другое", "endthescene")
 		GM.ES.triggerRun(Trigger.TalkingToNPC, ["tavi"])
 		
 	if(state == "appearance"):
-		saynn("You see a very tall feline, about 2 meters high. Her most unique thing is her fur, it’s of a strange purple color bundled together with bright green spots and lines, which make her very visible in the dark, purple of her belly and maw areas are more light than the rest. She has side swept hair, length is medium, barely reaching her shoulder. The hair is purple as well with a few hair strands behind green. Her eyes are different in color, right one is red and left is green. You can see that the inside of her ears, mouth and tongue are all toxic-green, meaning that that’s the color of her flesh and blood. She seems pretty fit but you don’t spot any pronounced muscles, looks like most of her strength is focused in her legs, the femine hips look curvy. Behind her is a normal feline tail.")
+		saynn("Перед тобой очень высокая кошачьеподобная особа, около двух метров ростом. Её самая уникальная черта — мех: странного фиолетового цвета с яркими зелеными пятнами и полосами, из-за которых её отлично видно в темноте; фиолетовый цвет на животе и в районе пасти светлее, чем на остальном теле. У неё волосы, уложенные набок, средней длины, едва достигающие плеч. Волосы тоже фиолетовые, но с несколькими зелеными прядями сзади. Глаза разного цвета: правый — красный, левый — зеленый. Видно, что внутренняя часть ушей, рот и язык имеют ядовито-зеленый оттенок — значит, таков цвет её плоти и крови. Она выглядит довольно подтянутой, но выраженных мышц не заметно; похоже, основная сила сосредоточена в ногах, а женственные бедра выглядят очень аппетитно. Сзади у неё обычный кошачий хвост.")
 
-		saynn("From what you can tell, her breasts are about D cup size but they don’t look that big considering her height. Her nipples spot that bright green color of her flesh, very exotic.")
+		saynn("Насколько можно судить, её грудь примерно D-го размера, но, учитывая её рост, она не кажется огромной. Соски имеют тот самый ярко-зеленый цвет её плоти — выглядит очень экзотично.")
 
-		saynn("Between her legs is her pussy. The shape looks tight, it’s fair to assume this lady doesn’t do much fucking and managed to avoid the fate of becoming a sex toy like some inmates.")
+		saynn("Между ног у неё киска. По форме она кажется узкой; можно предположить, что эта леди не слишком часто трахается и ей удалось избежать участи стать секс-игрушкой, как некоторым другим заключенным.")
 		
-		addButton("Back", "Go back", "")
+		addButton("Назад", "Назад", "")
 		
 	if(state == "attack"):
 		if(!getModuleFlag("TaviModule", "Tavi_IsAngryAtPlayer")):
-			saynn("[say=pc]I’m sick of being your slave, this ends now.[/say]")
+			saynn("[say=pc]Мне осточертело быть твоей рабыней, этому придет конец![/say]")
 
-			saynn("Tavi tilts her head at you and stands up.")
+			saynn("Тави склоняет голову набок и выпрямляется.")
 
-			saynn("[say=tavi]Really now? Someone finally grew a spine? I will make sure to snap it in half.[/say]")
+			saynn("[say=tavi]Неужели? У кого-то наконец-то выросли яйца? Так и быть, я лично переломаю их пополам.[/say]")
 
-			saynn("Seems like it’s a fight")
+			saynn("Похоже, назревает драка")
 		else:
-			saynn("[say=pc]I’m here to beat you up.[/say]")
+			saynn("[say=pc]Я здесь, чтобы надрать тебе задницу.[/say]")
 
-			saynn("Tavi cracks her knuckles and stretches slightly.")
+			saynn("Тави хрустит костяшками пальцев и слегка разминается.")
 
-			saynn("[say=tavi]Well.. It was a huge mistake and I will prove it.[/say]")
+			saynn("[say=tavi]Ну что ж... Это была огромная ошибка, и я это докажу.[/say]")
 
-			saynn("Seems like it’s a fight")
+			saynn("Похоже, назревает драка")
 			
-		addButton("Continue", "Fight!", "startfight")
+		addButton("Продолжить", "В бой!", "startfight")
 	
 	if(state == "won_fight"):
 		TaviModule.makeTaviAngry()
 		
-		saynn("Defeated Tavi has collapsed onto the floor. She hisses and glares at you.")
+		saynn("Побежденная Тави рухнула на пол. Она шипит и свирепо смотрит на тебя.")
 
-		saynn("[say=tavi]What now, silly thing?[/say]")
+		saynn("[say=tavi]Ну и что теперь, глупышка?[/say]")
 		
 	if(state == "won_fight_lust"):
 		TaviModule.makeTaviAngry()
 		
-		saynn("Defeated Tavi has collapsed onto the floor, you see a slight green blush on her cheeks that she tries to hide.")
+		saynn("Побежденная Тави рухнула на пол; ты замечаешь легкий зеленый румянец на её щеках, который она пытается скрыть.")
 
-		saynn("[say=tavi]What are you gonna do with me now, silly thing..[/say]")
+		saynn("[say=tavi]И что же ты теперь со мной сделаешь, глупышка..[/say]")
 		
 	if(state == "won_fight" || state == "won_fight_lust"):
-		addButtonWithChecks("Dominate Tavi", "Make that bitch submit to you using violence", "dominateTavi", [], [ButtonChecks.NotHandsBlocked])
+		addButtonWithChecks("Доминировать над Тави", "Заставить эту сучку подчиниться силой", "dominateTavi", [], [ButtonChecks.NotHandsBlocked])
 		if(getModuleFlag("TaviModule", "Tavi_Submissiveness", 0) >= 1):
-			addButtonWithChecks("Degrade Tavi", "Force her to act like a puppy", "degradeTavi", [], [ButtonChecks.NotHandsBlocked])
+			addButtonWithChecks("Унизить Тави", "Заставить её вести себя как щеночка", "degradeTavi", [], [ButtonChecks.NotHandsBlocked])
 		else:
-			addDisabledButton("Degrade Tavi", "Tavi needs to be at least a little bit obedient")
-		addDisabledButton("Fuck Tavi", "Not done :(")
+			addDisabledButton("Унизить Тави", "Тави должна быть хотя бы капельку послушной")
+		addDisabledButton("Трахать Тави", "Еще не готово :(")
 		
-		addButton("Continue", "Let her be", "endthescene")
+		addButton("Продолжить", "Оставить её в покое", "endthescene")
 	
 	if(state == "lost_fight"):
-		saynn("You drop onto your knees, lacking any strength to continue.")
+		saynn("Ты падаешь на колени, окончательно обессилев.")
 
-		saynn("[say=tavi]Such a silly thing you are, did you really think you could win?. Guess it’s time to punish you.[/say]")
+		saynn("[say=tavi]Какая же ты дурочка, неужели ты правда думала, что сможешь победить? Похоже, пришло время тебя наказать.[/say]")
 
-		addButton("Continue", "Oh no", "startrandompunishment")
+		addButton("Продолжить", "О нет", "startrandompunishment")
 	
 	#if(state == "submit"):
-	#	saynn("((SUBMITTING SCENE GOES HERE))")
+	#	saynn("((ЗДЕСЬ БУДЕТ СЦЕНА ПОКОРЕНИЯ))")
 		
-	#	addButton("Continue", "You are forgiven", "endthescene")
+	#	addButton("Продолжить", "Ты прощена", "endthescene")
 	
 	if(state == "talk"):
 		if(getModuleFlag("TaviModule", "Tavi_IsAngryAtPlayer")):
-			saynn("[say=pc]Can we talk?[/say]")
+			saynn("[say=pc]Мы можем поговорить?[/say]")
 
-			saynn("She growls at your weak attempt to communicate, her hands are forming fists, her voice sounds strict and annoyed.")
+			saynn("Она рычит на твою слабую попытку заговорить; её руки сжимаются в кулаки, а голос звучит строго и раздражённо.")
 
-			saynn("[say=tavi]You made your choice, I made mine. Don’t fucking waste my time.[/say]")
+			saynn("[say=tavi]Ты сделала свой выбор, я сделала свой. Не трать моё гребаное время.[/say]")
 			
-			addButton("Continue", "Well, you tried", "")
+			addButton("Продолжить", "Ну, ты хотя бы попытался", "")
 		else:
-			saynn("[say=pc]Hey, can I ask you something?[/say]")
+			saynn("[say=pc]Эй, можно тебя кое о чем спросить?[/say]")
 
-			saynn("Tavi lets out a little chuckle.")
+			saynn("Тави издает короткий смешок.")
 
-			saynn("[say=tavi]You can try.[/say]")
+			saynn("[say=tavi]Можешь попробовать.[/say]")
 			
-			addButton("Fur", "Ask about her fur", "fur")
-			addButton("How she got caught", "Ask Tavi how she got arrested", "how_she_got_caught")
-			addButton("Why is she here", "Ask why is she sitting here", "why_is_she_here")
-			addButton("Back", "Go back", "")
+			addButton("Мех", "Спросить про её мех", "fur")
+			addButton("Как её поймали", "Спросить Тави, как её арестовали", "how_she_got_caught")
+			addButton("Почему она здесь?", "Спросить, почему она здесь сидит", "why_is_she_here")
+			addButton("Назад", "Назад", "")
 
 	if(state == "fur"):
-		saynn("[say=pc]Why do you look like that?[/say]")
+		saynn("[say=pc]Почему ты так выглядишь?[/say]")
 
-		saynn("Tavi keeps herself silent for a second, gathering her thoughts.")
+		saynn("Тави на секунду замолкает, собираясь с мыслями.")
 
-		saynn("[say=tavi]Well I didn’t choose it if that’s what you’re asking. It’s a result of many genetic modifications.[/say]")
+		saynn("[say=tavi]Ну, если ты об этом, то сама я это не выбирала. Это результат множества генетических модификаций.[/say]")
 
-		saynn("She looks at her paw, at her digits, then wiggles them a bit before looking back at you.")
+		saynn("Она смотрит на свою лапу, на пальцы, затем слегка шевелит ими, прежде чем снова взглянуть на тебя.")
 
-		saynn("[say=tavi]I was born in a lab. I don’t have a father or a mother, I’m basically a clone with random DNA. That’s why. Satisfying enough?[/say]")
+		saynn("[say=tavi]Меня вырастили в лаборатории. У меня нет ни отца, ни матери — по сути, я просто клон со случайным набором ДНК. Вот почему. Достаточно убедительно?[/say]")
 
-		saynn("You hum to yourself, trying to comprehend that. Lab-made feline, huh.")
+		saynn("Ты что-то напеваешь себе под нос, пытаясь переварить услышанное. Лабораторная кошка, значит.")
 
-		saynn("[say=pc]But what was the point? If you’re here then that means something went horribly wrong.[/say]")
+		saynn("[say=pc]Но в чём был смысл? Если ты здесь, значит, что-то пошло чертовски не так.[/say]")
 
-		saynn("Tavi chuckles and gives you a pat.")
+		saynn("Тави усмехается и похлопывает тебя по плечу.")
 
-		saynn("[say=tavi]If I’m gonna tell you that, the next day I will probably be spaced.[/say]")
+		saynn("[say=tavi]Если я выложу тебе всё как есть, на следующий день меня, скорее всего, выкинут в открытый космос.[/say]")
 
-		saynn("[say=pc]You don’t trust me?[/say]")
+		saynn("[say=pc]Ты мне не веришь?[/say]")
 
-		saynn("Tavi hears your question and puts on a cunning smile.")
+		saynn("Услышав твой вопрос, Тави хитро улыбается.")
 
-		saynn("[say=tavi]I trust you cutie. But some people know how to extract information even if you don’t plan on sharing. Let’s just say that it went better than they expected.[/say]")
+		saynn("[say=tavi]Я тебе верю, милашка. Но есть люди, которые умеют вытягивать информацию, даже если ты не собираешься ею делиться. Скажем так: всё прошло лучше, чем они ожидали.[/say]")
 
-		addButton("Back", "Go back", "talk")
+		addButton("Назад", "Назад", "talk")
 
 	if(state == "how_she_got_caught"):
-		saynn("[say=pc]How did you get caught?[/say]")
+		saynn("[say=pc]Как тебя поймали?[/say]")
 
-		saynn("[say=tavi]Everything was going too well. Got careless. Got caught. That’s about it.[/say]")
+		saynn("[say=tavi]Всё шло слишком гладко. Я расслабилась. И меня поймали. В общем, вот и всё.[/say]")
 
-		saynn("[say=pc]What was going too well?[/say]")
+		saynn("[say=pc]Что это было слишком хорошо?[/say]")
 
-		saynn("Tavi scritches you under the chin.")
+		saynn("Тави чешет тебя под подбородком.")
 
-		saynn("[say=tavi]I’m a hacker, I exploit the weakest link in any system - people. But you know, I’m a person too.[/say]")
+		saynn("[say=tavi]Я хакер, я использую самое слабое звено в любой системе — людей. Но знаешь, я ведь тоже человек.[/say]")
 
-		saynn("You can guess that Tavi was doing her criminal activities over the galactic-wide web and got caught eventually.")
+		saynn("Можно догадаться, что Тави занималась преступлениями в галактической паутине и в конце концов попалась.")
 
-		saynn("[say=pc]You don’t share much.[/say]")
+		saynn("[say=pc]Ты не особо разговорчива.[/say]")
 
-		saynn("[say=tavi]Information is the most valuable thing in today’s world, sweetie.[/say]")
+		saynn("[say=tavi]Информация — самая ценная вещь в современном мире, дорогуша.[/say]")
 
-		saynn("Seems like there is more to uncover but she just doesn’t want to share.")
+		saynn("Похоже, здесь есть что еще раскопать, но она просто не хочет делиться.")
 
-		addButton("Back", "Go back", "talk")
+		addButton("Назад", "Назад", "talk")
 
 	if(state == "why_is_she_here"):
-		saynn("[say=pc]Why are you sitting here, away from everybody?[/say]")
+		saynn("[say=pc]Почему ты сидишь здесь, в стороне от всех?[/say]")
 
-		saynn("Tavi shrugs, it seems like the question caught her off guard.")
+		saynn("Тави пожимает плечами; кажется, этот вопрос застал её врасплох.")
 
-		saynn("[say=tavi]I don’t like crowds. I always worked alone. And you better stop asking those silly questions.[/say]")
+		saynn("[say=tavi]Не люблю толпу. Я всегда работала одна. И тебе лучше перестать задавать эти глупые вопросы.[/say]")
 
-		saynn("She gives your butt a soft smack.")
+		saynn("Она слегка шлепает тебя по заднице.")
 
-		addButton("Back", "Go back", "talk")
+		addButton("Назад", "Назад", "talk")
 
 	if(state == "plot_to_escape"):
 		# (triggers once)
@@ -207,53 +207,53 @@ func _run():
 		setModuleFlag("TaviModule", "Tavi_NeedsApple", true)
 		addMessage("You got a new task")
 
-		saynn("You take a seat on one of the empty ore crates.")
+		saynn("Ты усаживаешься на один из пустых ящиков для руды.")
 
-		saynn("[say=pc]So.. About the whole escape thing. You think it's possible?[/say]")
+		saynn("[say=pc]Так... Насчет этого побега. Думаешь, это реально?[/say]")
 
-		saynn("Tavi shifts closer to you and switches to a more quiet voice.")
+		saynn("Тави придвигается ближе и переходит на полушепот.")
 
-		saynn("[say=tavi]Mmmh~ Someone is eager to help me, huh.[/say]")
+		saynn("[say=tavi]Ммм~ Кто-то очень хочет мне помочь, да?[/say]")
 
-		saynn("[say=pc]Weighing out the options. What are you gonna do about the collar? Can’t they just fry your neck remotely.[/say]")
+		saynn("[say=pc]Взвешиваю варианты. И что ты будешь делать с ошейником? Разве они не могут просто поджарить тебе шею дистанционно?[/say]")
 
-		saynn("You tug on yours, it’s as tight as ever, always reminding you of its existence.")
+		saynn("Ты дергаешь за свой — он сидит так же плотно, как и всегда, постоянно напоминая о своем существовании.")
 
-		saynn("[say=tavi]If there is only one solution then it’s the right solution. We just make the captain take them off.[/say]")
+		saynn("[say=tavi]Если есть только одно решение, значит, оно верное. Нам просто нужно заставить капитана снять их.[/say]")
 
-		saynn("Tavi watches your surprised face.")
+		saynn("Тави наблюдает за твоим удивленным лицом.")
 
-		saynn("[say=pc]And how do you plan on doing that? Begging on your knees?[/say]")
+		saynn("[say=pc]И как ты планируешь это сделать? Встанешь перед ним на колени и начнешь умолять?[/say]")
 
-		saynn("She chuckles and grabs you by the chin.")
+		saynn("Она посмеивается и берет тебя за подбородок.")
 
-		saynn("[say=tavi]Naah~. That’s your job, sweetie. I bet the captain is not as strong as he thinks he is. Given the right.. motivation.. he will let collars from just two inmates slip off.[/say]")
+		saynn("[say=tavi]Да ну,~. Это же твоя работа, сладенький. Бьюсь об заклад, капитан не такой уж сильный, каким хочет казаться. Стоит дать ему правильную... мотивацию... и он позволит ошейникам всего двух заключенных соскользнуть.[/say]")
 
-		saynn("Tavi gently caresses your chin while trying to make eye contact with you.")
+		saynn("Тави нежно поглаживает тебя по подбородку, стараясь поймать твой взгляд.")
 
-		saynn("[say=pc]Maybe.. But what's then.. Transport shuttles can’t even do an FTL jump, the big ship is just gonna destroy us.[/say]")
+		saynn("[say=pc]Может быть... Но что тогда?.. Транспортные шаттлы даже не способны на сверхсветовой прыжок, этот огромный корабль нас просто раздавит.[/say]")
 
-		saynn("[say=tavi]All I need is a computer with access to extranet~ I know people that would be very happy to know the coordinates of this station, in exchange for pulling us out. It’s all about information and the right people, cutie. Look at me.[/say]")
+		saynn("[say=tavi]Все, что мне нужно — это компьютер с доступом к экстранету~ У меня есть люди, которые будут очень рады узнать координаты этой станции в обмен на то, что вытащат нас отсюда. Все дело в информации и нужных людях, милашка. Посмотри на меня.[/say]")
 
-		saynn("She holds your head with her paws and forces eye contact. Little smirk can be seen on her face as she drills you with her gaze.")
+		saynn("Она обхватывает твою голову лапами, заставляя смотреть ей прямо в глаза. На её лице играет легкая ухмылка, пока она сверлит тебя своим взглядом.")
 
-		saynn("[say=tavi]Forget about it for now. I’m trusting you with a lot right now, as you can see. And I trust you to stay shush-shush if they are gonna ask. Sure you can handle it?[/say]")
+		saynn("[say=tavi]Забудь об этом пока что. Как видишь, сейчас я тебе очень сильно доверяю. И верю, что ты будешь держать язык за зубами, если они начнут расспрашивать. Уверен, что справишься?[/say]")
 
-		saynn("You nod subtly. Tavi tilts her head, her paws shift slightly, giving you scritches behind the ears. You can’t help but let out a cute noise from the pleasure. Her voice suddenly switches from soft to strict.")
+		saynn("Ты едва заметно киваешь. Тави наклоняет голову, её лапы слегка двигаются, почесывая тебя за ушами. Ты невольно издаешь милый звук от удовольствия. Внезапно её голос меняется с мягкого на строгий.")
 
-		saynn("[say=tavi]Find me an apple, I’m hungry.[/say]")
+		saynn("[say=tavi]Найди мне яблоко, я проголодалась.[/say]")
 
-		saynn("[say=pc]Um..[/say]")
+		saynn("[say=pc]Эм..[/say]")
 
-		saynn("[say=tavi]Something is wrong, pet?[/say]")
+		saynn("[say=tavi]Что-то не так, питомец?[/say]")
 
-		saynn("You shake your head, Tavi pulls her paws away. You stand up and look around.")
+		saynn("Ты качаешь головой, и Тави убирает лапы. Ты встаешь и оглядываешься по сторонам.")
 
-		saynn("[say=tavi]They grow them in the greenhouses. Consider this your test.[/say]")
+		saynn("[say=tavi]Их выращивают в теплицах. Считай это своим тестом.[/say]")
 
-		saynn("[say=pc]Yes, Miss..[/say]")
+		saynn("[say=pc]Да, мисс...[/say]")
 
-		addButton("Continue", "Continue on your way", "endthescene")
+		addButton("Продолжить", "Продолжить путь", "endthescene")
 
 
 	if(state == "give_apple"):
@@ -265,48 +265,48 @@ func _run():
 				break
 		
 		
-		saynn("You walk up to Tavi and offer her the shiny apple.")
+		saynn("Ты подходишь к Тави и протягиваешь ей блестящее яблоко.")
 
-		saynn("[say=pc]Here, Miss, like you wanted.[/say]")
+		saynn("[say=pc]Вот, мисс, как вы и просили.[/say]")
 
-		saynn("She grabs it, holds it, even breathes on it but then gives it back.")
+		saynn("Она хватает его, держит, даже дышит на него, но в итоге возвращает обратно.")
 
-		saynn("[say=tavi]Good. Keep it. " + ("Bet you went through some things to get it." if pcStoleApple else "Even though you took the easy way to get it.") + "[/say]")
+		saynn("[say=tavi]Хорошо. Оставь себе." + ("Bet you went through some things to get it." if pcStoleApple else "Even though you took the easy way to get it.") + "[/say]")
 
-		saynn("Her words leave you confused. She watches your reaction with great interest.")
+		saynn("Её слова сбивают тебя с толку. Она с огромным интересом наблюдает за твоей реакцией.")
 
-		saynn("[say=pc]But..[/say]")
+		saynn("[say=pc]Но..[/say]")
 
-		saynn("[say=tavi]Kneel before me, little pet.[/say]")
+		saynn("[say=tavi]Встань на колени перед мной, мой маленький питомец.[/say]")
 
-		saynn("You do as she says, slowly lowering yourself onto your knees. She leans down and caresses your cheek, sliding a paw across one. Then she pulls you closer and gives you a sudden quick kiss on the lips. Light blush shows up on your face.")
+		saynn("Ты делаешь всё, как она говорит, медленно опускаясь на колени. Она наклоняется и ласкает твою щеку, проводя по ней лапой. Затем она притягивает тебя ближе и внезапно быстро целует в губы. На твоем лице проступает легкий румянец.")
 
-		saynn("[say=tavi]You wanna be a good pet, right?[/say]")
+		saynn("[say=tavi]Хочешь быть хорошим питомцем, да?[/say]")
 
-		saynn("You nod and blush harder.")
+		saynn("Ты киваешь, и твои щеки краснеют еще сильнее.")
 
-		saynn("[say=tavi]Say it.[/say]")
+		saynn("[say=tavi]Скажи это.[/say]")
 
-		saynn("[say=pc]I wanna be a good pet for my Miss..[/say]")
+		saynn("[say=pc]Я хочу быть хорошим питомцем для своей Госпожи..[/say]")
 
-		saynn("[say=tavi]Good {pc.boy}~. Keep the apple.[/say]")
+		saynn("[say=tavi]Умница {pc.boy}~. Оставь яблоко себе.[/say]")
 
-		saynn("[say=pc]Thank you, Miss..[/say]")
+		saynn("[say=pc]Спасибо, Госпожа..[/say]")
 
-		addButton("Continue", "Continue on your way", "endthescene")
+		addButton("Продолжить", "Продолжить путь", "endthescene")
 		
 	if(state == "askForPunishment"):
-		saynn("You sit on your knees and nuzzle Tavi's legs")
+		saynn("Вы садитесь на колени и прижимаетесь к ногам Тави")
 		
-		saynn("[say=pc]Can you punish me, Miss Tavi?[/say]")
+		saynn("[say=pc]Вы можете наказать меня, Госпожа Тави?[/say]")
 		
-		saynn("[say=tavi]Why would I punish my cutie.[/say]")
+		saynn("[say=tavi]Зачем мне наказывать свою милашку?[/say]")
 		
-		saynn("[say=pc]For all the bad things I did.[/say]")
+		saynn("[say=pc]За все те плохие вещи, что я сделала.[/say]")
 		
-		saynn("[say=tavi]Hmm.[/say]")
+		saynn("[say=tavi]Хмм.[/say]")
 		
-		addButton("Continue", "See what happens", "startrandompunishment")
+		addButton("Продолжить", "Посмотреть, что будет", "startrandompunishment")
 		
 
 func _react(_action: String, _args):

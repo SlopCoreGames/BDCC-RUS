@@ -7,7 +7,7 @@ func _init():
 	aiScoreMultiplier = 0.3
 	
 func getVisibleName(_context = {}):
-	return "Cuffs hands"
+	return "Сковал руки наручниками"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -21,7 +21,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	
 	_receiver.getInventory().forceEquipByStoreOtherUnlessRestraint(GlobalRegistry.createItem("inmatewristcuffs"), _attacker)
 	
-	var text = "{attacker.name} pins you against a wall, then [b]wrenches your arms behind your back and cuffs them[/b]! You manage to break free.\n\n[say=attacker]"+RNG.pick([
+	var text = "{attacker.name} прижимает тебя к стене, а затем [b]с силой заламывает руки за спину и застегивает наручники[/b]! Тебе удается вырваться.\n\n[say=attacker]"+RNG.pick([
 		"Cease resisting.",
 		"Now what are you gonna do?",
 		"Give up, this is your last warning.",

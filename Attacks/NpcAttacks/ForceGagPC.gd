@@ -7,7 +7,7 @@ func _init():
 	aiScoreMultiplier = 0.4
 	
 func getVisibleName(_context = {}):
-	return "Force ballgag"
+	return "Силовое кляпление"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -21,7 +21,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	
 	_receiver.getInventory().forceEquipByStoreOtherUnlessRestraint(GlobalRegistry.createItem("ballgag"), _attacker)
 	
-	var text = "{attacker.name} pounces at you and manages to [b]force a gag into your mouth[/b]! You manage to shove {attacker.him} back.\n\n[say=attacker]"+RNG.pick([
+	var text = "{attacker.name} набрасывается на тебя и умудряется [b]запихнуть кляп тебе в рот[/b]! Тебе удается оттолкнуть {attacker.him} назад.\n\n[say=attacker]"+RNG.pick([
 		"Much better.",
 		"Bite this.",
 		"Behave, inmate.",

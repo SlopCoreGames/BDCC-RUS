@@ -18,1043 +18,1043 @@ func _run():
 	if(state == ""):
 		addCharacter("tavi")
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
-		saynn("You tell Tavi that you want to train her to be a better pet. Because.. It will be very useful in the future. Totally.")
+		saynn("Ты говоришь Тави, что хочешь натренировать её, чтобы она стала лучшей зверушкой. Потому что... это очень пригодится в будущем. Определенно.")
 
-		saynn("Tavi tilts her head slightly. It seems it will be quite a challenge.")
+		saynn("Тави слегка наклоняет голову. Похоже, это будет тот еще вызов.")
 
 		isCorrupt = getModule("TaviModule").isCorrupt()
 		isPure = getModule("TaviModule").isPure()
 		isNormal = (!isCorrupt && !isPure)
 		isVirgin = getModule("TaviModule").isVirgin()
 		petSkill = getModule("TaviModule").getSkillScore("taviSkillPetplay")
-		addButton("Lesson 1", "Introduce Tavi to the idea of petplay", "intro")
+		addButton("Урок 1", "Познакомить Тави с идеей петплея", "intro")
 		if (petSkill > 0):
-			addButton("Lesson 2", "Give Tavi a lesson again pride", "lesson2")
+			addButton("Урок 2", "Снова проучить Тави и усмирить её гордость", "lesson2")
 		if (petSkill > 1):
-			addButton("Lesson 3", "See if Tavi learned anything", "lesson3")
+			addButton("Урок 3", "Проверить, чему научилась Тави", "lesson3")
 		if (petSkill > 2):
-			addButton("Tricks", "Teach puppy Tavi some tricks", "tricks")
+			addButton("Трюки", "Обучить щеночка Тави паре трюков", "tricks")
 			if (petSkill > 3):
-				addButton("Walkies", "Give Tavi some walkies", "walkies")
+				addButton("Прогулка", "Выгулять Тави", "walkies")
 			else:
-				addDisabledButton("Walkies", "Tavi need more petplay experience")
-		addButton("Cancel", "You changed your mind", "cancel_lesson")
+				addDisabledButton("Прогулка", "Тави нужно больше опыта в петплее")
+		addButton("Отмена", "Вы передумали", "cancel_lesson")
 	if(state == "intro"):
-		saynn("You call Tavi and tell her to stand in the middle of the cell.")
+		saynn("Ты зовешь Тави и приказываешь ей встать посреди камеры.")
 
-		saynn("[say=tavi]What's up?[/say]")
+		saynn("[say=tavi]Чего желаешь?[/say]")
 
-		saynn("[say=pc]I'd like to try something new with you. Petplay.[/say]")
+		saynn("[say=pc]Я бы хотела попробовать с тобой кое-что новенькое. Петплей.[/say]")
 
-		saynn("A moment of silence. She raises a brow, her voice low.")
+		saynn("На мгновение воцаряется тишина. Она приподнимает бровь, её голос звучит низко.")
 
-		saynn("[say=tavi]Petplay? Gonna make me bark?[/say]")
+		saynn("[say=tavi]Петплей? Это ты меня заставишь лаять?[/say]")
 
-		saynn("Her face reflects a blend of skepticism.. and curiosity. Her posture is somewhat dominant, her arms crossed. Since her heat is satisfied, she is not as eager to obey as usual.")
+		saynn("На её лице отражается смесь скепсиса и любопытства. Она держится слегка доминантно, скрестив руки на груди. Поскольку её течка удовлетворена, она не так жаждет повиноваться, как обычно.")
 
-		saynn("[say=pc]You don't like that, pet?[/say]")
+		saynn("[say=pc]Тебе не нравится, песик?[/say]")
 
-		saynn("Being called like that makes her lower her gaze for a second.")
+		saynn("От такого обращения она на секунду опускает взгляд.")
 
-		saynn("[say=tavi]I'm not a dog..[/say]")
+		saynn("[say=tavi]Я не собака...[/say]")
 
-		saynn("[say=pc]So if I order you to bark, what will you do?[/say]")
+		saynn("[say=pc]Так что, если я прикажу тебе залаять, что ты сделаешь?[/say]")
 
-		saynn("Tavi thinks about it. And then shrugs.")
+		saynn("Тави задумывается. А затем пожимает плечами.")
 
-		saynn("[say=pc]Bark for me, Tavi.[/say]")
+		saynn("[say=pc]Лай для меня, Тави.[/say]")
 
-		saynn("She squints and hesitates, struggling to get over her pride. Maybe she needs some.. incentive?")
+		saynn("Она щурится и колеблется, пытаясь перебороть свою гордость. Может, ей нужно... подкрепление?")
 
-		addButton("Offer pats", "Tell Tavi that you will give her some pats if she barks", "intro_offerpats")
-		addButton("Threats", "Intimidate Tavi until she submits", "intro_force")
+		addButton("Предложить погладить", "Сказать Тави, что погладишь её, если она гавкнет", "intro_offerpats")
+		addButton("Угрозы", "Запугать Тави, пока она не подчинится", "intro_force")
 	if(state == "intro_offerpats"):
-		saynn("You reach your hand out and make it hover just above Tavi's head. A bit confusing for the grumpy feline.")
+		saynn("Ты протягиваешь руку и замираешь прямо над головой Тави. Это немного сбивает ворчливую кошку с толку.")
 
-		saynn("[say=pc]Want some pats?[/say]")
+		saynn("[say=pc]Хочешь, чтобы тебя погладили?[/say]")
 
-		saynn("Tavi shrugs and nods, her cheeks blushing softly.")
+		saynn("Тави пожимает плечами и кивает, её щеки слегка розовеют.")
 
-		saynn("[say=pc]Then bark. Just once. And you will get all of the pats.[/say]")
+		saynn("[say=pc]Тогда гавкни. Всего один раз. И получишь столько поглаживаний, сколько захочешь.[/say]")
 
-		saynn("Tavi establishes eye contact with you. Her gaze is basically drilling you, trying to make you lower that hand.")
+		saynn("Тави устанавливает с тобой зрительный контакт. Её взгляд буквально сверлит тебя, пытаясь заставить опустить руку.")
 
-		saynn("[say=tavi]I'm not a puppy.[/say]")
+		saynn("[say=tavi]Я тебе не щенок.[/say]")
 
-		saynn("You sigh and pat the air above Tavi.")
+		saynn("Ты вздыхаешь и похлопываешь по воздуху над Тави.")
 
-		saynn("[say=pc]You're not. You're Tavi. But I'm asking you to pretend to be a puppy.[/say]")
+		saynn("[say=pc]Ты и не должна. Ты — Тави. Но я прошу тебя притвориться щеночком.[/say]")
 
-		saynn("The feline hesitates for a moment. Her usual smirk is nowhere to be seen.")
+		saynn("Кошка на мгновение колеблется. Её привычная ухмылка куда-то исчезла.")
 
-		saynn("[say=pc]Bark, bark. Not hard, see?[/say]")
+		saynn("[say=pc]Гав, гав. Несложно, видишь?[/say]")
 
-		saynn("Even though your noises were kinda funny, Tavi is still completely serious. Only her cheeks blush slightly more.")
+		saynn("Хотя твои звуки были довольно забавными, Тави всё ещё предельно серьезна. Только её щеки слегка краснеют.")
 
-		saynn("[say=pc]Well. No pats for you I'm afraid.[/say]")
+		saynn("[say=pc]Ну что ж. Боюсь, поглаживаний не будет.[/say]")
 
-		saynn("As you start pulling your hand away from her, Tavi frowns, her chin shaking a little.")
+		saynn("Когда ты начинаешь убирать руку, Тави хмурится, и её подбородок начинает слегка подрагивать.")
 
-		saynn("[say=tavi]Wait..[/say]")
+		saynn("[say=tavi]Погоди...[/say]")
 
-		saynn("That is a good sign. You stop and wait patiently while Tavi tries to gather her thoughts together.")
+		saynn("Это хороший знак. Ты останавливаешься и терпеливо ждешь, пока Тави пытается собраться с мыслями.")
 
-		saynn("[say=tavi]Actually, never mind.[/say]")
+		saynn("[say=tavi]Хотя нет, забудь.[/say]")
 
-		saynn("Aw. You can tell that there is something here. Tavi didn't outright say no. She just doesn't want to say yes.. willingly? Maybe you need to help her with her pride.")
+		saynn("Оу. Сразу видно, что здесь что-то есть. Тави не сказала прямое «нет». Она просто не хочет говорить «да»... по собственной воле? Возможно, тебе стоит помочь ей усмирить гордость.")
 
-		saynn("At least you planted a seed in her mind.")
+		saynn("По крайней мере, ты заронил зерно сомнения в её сознании.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "intro_force"):
-		saynn("You cross your arms as well, mirroring Tavi's pose.")
+		saynn("Ты тоже скрещиваешь руки на груди, зеркально повторяя позу Тави.")
 
-		saynn("[say=pc]Fine.[/say]")
+		saynn("[say=pc]Ладно.[/say]")
 
-		saynn("Such a short answer makes Tavi.. curious. She is shaking slightly until finally giving up.")
+		saynn("Такой краткий ответ заставляет Тави... заинтриговаться. Она слегка дрожит, пока, наконец, не сдается.")
 
-		saynn("[say=tavi]What do you mean?..[/say]")
+		saynn("[say=tavi]Что ты имеешь в виду?..[/say]")
 
-		saynn("[say=pc]I will just order you next time you're in heat. You're way more likely to do it when your orgasm is on the line.[/say]")
+		saynn("[say=pc]В следующий раз, когда у тебя будет течка, я просто отдам тебе приказ. Когда на кону стоит оргазм, ты с гораздо большей вероятностью подчинишься.[/say]")
 
-		saynn("A mix of emotions travels through Tavi's body. She squints and parts her lips ever so slightly, exposing her fangs.")
+		saynn("Смесь эмоций проносится по телу Тави. Она прищуривается и слегка приоткрывает губы, обнажая клыки.")
 
-		saynn("[say=tavi]You wouldn't..[/say]")
+		saynn("[say=tavi]Ты бы не посмел...[/say]")
 
-		saynn("You smile and show off your own teeth, your arms spread slightly to make you appear bigger.")
+		saynn("Ты улыбаешься, демонстрируя свои зубы, и слегка разводишь руки в стороны, чтобы казаться внушительнее.")
 
-		saynn("[say=pc]Try me, pet. Or just.. bark once. Like a good puppy.[/say]")
+		saynn("[say=pc]Попробуй, питомец. Или просто... гавкни разок. Как послушная собачка.[/say]")
 
-		saynn("She is hesitating hard. Her cheeks are blushing brightly. Her lips tremble as she tries to make a sound.")
+		saynn("Она сильно колеблется. Её щеки пылают ярким румянцем. Губы дрожат, когда она пытается издать хоть какой-то звук.")
 
-		saynn("[say=tavi]..make me.[/say]")
+		saynn("[say=tavi]...заставь меня.[/say]")
 
-		saynn("But she doesn't commit and instead locks up again. Her posture is still stiff. That's the best she is gonna give you. Seems her pride is preventing her from humiliating herself. Maybe you indeed just have to.. make her.")
+		saynn("Но она так и не решается и снова закрывается. Её поза всё ещё скована. Это максимум, на что она способна. Похоже, гордость мешает ей унизиться. Возможно, тебе и впрямь просто нужно... заставить её.")
 
-		saynn("At least you planted a seed in her mind.")
+		saynn("По крайней мере, ты заронил зерно сомнения в её сознании.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "lesson2"):
-		saynn("Time for a second lesson. A great idea came into your mind about how you can fight Tavi's pride so you came prepared. You invite Tavi to the middle of her cell.")
+		saynn("Время для второго урока. Тебе в голову пришла отличная идея о том, как побороть гордость Тави, так что ты пришел подготовленным. Ты приглашаешь Тави на середину её камеры.")
 
-		saynn("[say=pc]Wanna bark for me? It's your last chance.[/say]")
+		saynn("[say=pc]Хочешь облаять меня? Это твой последний шанс.[/say]")
 
-		saynn("Tavi tilts her head, her tail wags annoyed. She instantly slips back into her prideful mindset.")
+		saynn("Тави наклоняет голову, её хвост раздраженно виляет. Она мгновенно возвращается к своему горделивому состоянию.")
 
-		saynn("[say=tavi]Or what? You will walk away again?..[/say]")
+		saynn("[say=tavi]А что? Снова просто развернешься и уйдешь?..[/say]")
 
-		saynn("Well, you did give her a chance.")
+		saynn("Ну, ты ведь дал ей шанс.")
 
-		addButton("Muzzle Tavi", "Force a muzzle on Tavi's head", "les2_muzzle_tavi")
+		addButton("Надеть на Тави намордник", "Силой надеть намордник на Тави", "les2_muzzle_tavi")
 	if(state == "les2_muzzle_tavi"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcAction="struggle_gag"})
-		saynn("You walk up to Tavi.. and begin circling her.. just like she likes to do. The feline instantly realizes that something is gonna happen.")
+		saynn("Ты подходишь к Тави... и начинаешь кружить вокруг неё... в точности так, как она любит. Кошечка мгновенно понимает: сейчас что-то будет.")
 
-		saynn("[say=tavi]I'm not a dog or a puppy..[/say]")
+		saynn("[say=tavi]Я тебе не собака и не щеночек...[/say]")
 
-		saynn("And she was right. As soon as you end up behind her, you yank on her hair to stun her, giving you enough time to put a muzzle on her face and secure it tightly.")
+		saynn("И она была права. Как только ты оказываешься позади неё, ты резко дергаешь её за волосы, чтобы оглушить, и это дает тебе достаточно времени, чтобы нацепить ей на мордашку намордник и плотно его затянуть.")
 
-		saynn("[say=tavi]Argh!.. H-hey![/say]")
+		saynn("[say=tavi]Арх!.. Э-эй![/say]")
 
-		saynn("[say=pc]What about now?[/say]")
+		saynn("[say=pc]А сейчас?[/say]")
 
-		saynn("[say=tavi]Grr-r-r..[/say]")
+		saynn("[say=tavi]Гррр-р-р...[/say]")
 
-		saynn("Tavi growls but then blushes realizing how she looks. Her paws reach for her muzzle and try to pull it off.")
+		saynn("Тави рычит, но тут же краснеет, осознав, как она выглядит. Её лапки тянутся к наморднику в попытке сорвать его.")
 
-		saynn("[say=tavi]I'm not..[/say]")
+		saynn("[say=tavi]Я вовсе не...[/say]")
 
-		saynn("It seems she wants more. And since she is busy with the restraint, you can strike again freely.")
+		saynn("Похоже, она хочет большего. А пока она занята попытками освободиться от пут, ты можешь безнаказанно нападать снова.")
 
-		addButton("Bitchsuit", "Force puppy restraints on Tavi", "les2_bitchsuit")
+		addButton("Костюм сучки", "Надеть на Тави привязи для щенков", "les2_bitchsuit")
 	if(state == "les2_bitchsuit"):
 		playAnimation(StageScene.PuppyDuo, "stand", {npc="tavi"})
-		saynn("You produce some other things that you prepared. And while Tavi is busy, you suddenly grab one of her arms and force a leather restraint on it that forces her forearm to be touching her shoulder.")
+		saynn("Вы достаете другие подготовленные вещи. Пока Тави занята, вы внезапно хватаете её за одну руку и натягиваете кожаный ремень так, что её предплечье оказывается прижатым к плечу.")
 
-		saynn("[say=tavi]H-hey!..[/say]")
+		saynn("[say=tavi]Эй!..[/say]")
 
-		saynn("You do the same to her other arm and then bring her down, forcefully pinning the feline against the floor while you put similar restraints on her legs, forcing her feet to be touching her butt.")
+		saynn("Вы проделываете то же самое с другой рукой, а затем валите её на пол, силой прижимая кошку к земле и надевая похожие ремни на ноги, так что её ступни оказываются у самой задницы.")
 
-		saynn("Tavi didn't want to bark.. so now she is forced to stand on all fours. When you finally let go of her, she starts trying to thrash against her new bitchsuit.. but no matter what, the leather sits too tight, constraining her motions hard.")
+		saynn("Тави не хотела лаять... так что теперь она вынуждена стоять на четвереньках. Когда вы наконец отпускаете её, она начинает отчаянно извиваться в своём новом костюме сучки... но как бы она ни старалась, кожа сидит слишком туго, жестко ограничивая каждое движение.")
 
-		saynn("[say=tavi]What is this..[/say]")
+		saynn("[say=tavi]Что это такое..[/say]")
 
-		saynn("[say=pc]Consequences.[/say]")
+		saynn("[say=pc]Последствия.[/say]")
 
-		saynn("Tavi huffs and awkwardly crawls to her bed, trying to make the restraints slip off against the metal frame. Nope, Tavi is helpless.. And she knows it.")
+		saynn("Тави фыркает и неуклюже ползет к своей кровати, пытаясь соскользнуть ремнями о металлическое изголовье. Но нет, Тави беспомощна... и она это знает.")
 
-		saynn("[say=tavi]I will bark, okay? If you let me out.. of these..[/say]")
+		saynn("[say=tavi]Я буду лаять, ладно? Только если ты выпустишь меня из этих...[/say]")
 
-		saynn("Nah, that would be way too easy. Now you want more.")
+		saynn("Не-а, это было бы слишком просто. Теперь вам хочется большего.")
 
-		saynn("[say=pc]Nu-uh. That ship has warped.[/say]")
+		saynn("[say=pc]Ну уж нет. Этот корабль уже улетел.[/say]")
 
-		saynn("Tavi squints and looks up at you. But from your spot, she looks kinda cute.")
+		saynn("Тави прищуривается и смотрит на тебя снизу вверх. Но с твоей позиции она выглядит довольно мило.")
 
-		saynn("[say=pc]We will see how quickly you can pick up tricks. Then I will think about freeing you. Let's start with 'give paw'.[/say]")
+		saynn("[say=pc]Посмотрим, как быстро ты будешь схватывать команды. Тогда я подумаю о том, чтобы выпустить тебя на волю. Давай начнем с «дай лапу».[/say]")
 
-		saynn("Tavi's gaze tries to drill yours yet again. But right now you have full control over her. She decides to shake her head anyway.")
+		saynn("Тави снова пытается прожечь тебя взглядом. Но сейчас ты полностью контролируешь её. Тем не менее, она всё равно качает головой.")
 
-		saynn("[say=tavi]I'm not a puppy..[/say]")
+		saynn("[say=tavi]Я не щенок...[/say]")
 
-		saynn("Looks like she won't do it. You crouch before her and grab her by the muzzle. Tavi's ears droop, her tail stops wagging.")
+		saynn("Похоже, она не собирается этого делать. Ты приседаешь перед ней и берешь её за мордочку. Уши Тави поникают, а хвост перестает вилять.")
 
-		saynn("[say=pc]Are you sure? Because I swear that you look like one right now.[/say]")
+		saynn("[say=pc]Ты уверена? Потому что клянусь, прямо сейчас ты выглядишь именно так.[/say]")
 
-		saynn("Tavi boops your leg with her elbow.. which is her new paw.")
+		saynn("Тави тычет тебя локтем в ногу... который теперь служит ей лапой.")
 
-		saynn("[say=pc]You think I'm lying? Let's go ask others~.[/say]")
+		saynn("[say=pc]Думаешь, я вру? Давай пойдем и спросим остальных~.[/say]")
 
-		saynn("You produce a leash and clip it to Tavi's collar. She realizes what you want to do with her and tries to resist, pulling back on the leash. She is a tall kitty.. but luckily.. not that strong.")
+		saynn("Ты достаешь поводок и пристегиваешь его к ошейнику Тави. Она понимает, что ты задумал, и пытается сопротивляться, натягивая поводок. Она высокая кошечка... но, к счастью... не такая уж и сильная.")
 
-		saynn("[say=pc]What~? You wanted to be let out, didn't you?[/say]")
+		saynn("[say=pc]Что~? Ты же хотела, чтобы тебя выпустили, разве нет?[/say]")
 
-		saynn("Tavi huffs.")
+		saynn("Тави фыркает.")
 
-		addButton("Walkies", "Take Tavi out on walkies", "les2_walkies")
+		addButton("Прогулка", "Вывести Тави на прогулку", "les2_walkies")
 	if(state == "les2_walkies"):
 		aimCameraAndSetLocName("cellblock_nearcells")
 		playAnimation(StageScene.PuppyDuo, "stand", {npc="tavi", npcAction="sad"})
-		saynn("Tavi tags on the leash, unwilling to go out like this. But the collar keeps putting more and more pressure on her neck until she finally succumbs to it and crawls out into the cellblock.")
+		saynn("Тави упирается на поводке, не желая выходить в таком виде. Но ошейник давит всё сильнее и сильнее на её шею, пока она наконец не сдаётся и не выползает в блок камер.")
 
-		saynn("Lots of reds around. Obviously you and your pet get some curious gazes, some are giggling even, causing Tavi's cheeks to flush. She lowers herself, trying to keep a lowest possible profile.. but her green spots glow in the dark, giving her away.")
+		saynn("Вокруг полно красных лиц. Очевидно, вы с вашей питомицей привлекаете любопытные взгляды, а некоторые даже хихикают, отчего щеки Тави заливаются румянцем. Она пригибается к полу, стараясь стать как можно незаметнее... но её зеленые пятна светятся в темноте, выдавая её с потрохами.")
 
-		saynn("[say=tavi]Everyone is watching.. That's enough..[/say]")
+		saynn("[say=tavi]Все смотрят... Хватит уже...[/say]")
 
-		saynn("[say=pc]Nah, we're not in the park yet.[/say]")
+		saynn("[say=pc]Да ладно, мы еще не в парке.[/say]")
 
-		saynn("[say=tavi]That's very far..[/say]")
+		saynn("[say=tavi]Это слишком далеко...[/say]")
 
-		saynn("You nod and offer her a smile. Tavi isn't happy about it. But being exposed to your fears is one of the best ways to overcome them.")
+		saynn("Вы киваете и ободряюще улыбаетесь ей. Тави это не особо радует. Но столкновение со своими страхами — один из лучших способов их преодолеть.")
 
-		addButton("Yard", "Go visit the yard area", "les2_yard")
+		addButton("Двор", "Отправиться во внутренний дворик", "les2_yard")
 	if(state == "les2_yard"):
 		aimCameraAndSetLocName("yard_northCorridor")
 		playAnimation(StageScene.PuppyDuo, "stand", {npc="tavi", npcAction="walk"})
-		saynn("Tavi holds her chin low as you walk through the prison's corridors. Any inmate's gaze makes her hide inside herself even more. Even you begin to question if this was a good idea.")
+		saynn("Тави прижимает подбородок к груди, пока вы идете по тюремным коридорам. Любой взгляд заключенного заставляет её еще сильнее уходить в себя. Даже вы начинаете сомневаться, была ли это хорошая идея.")
 
-		saynn("Eventually you reach the big open area that's divided into lots of little pathways with tall trimmed bushes, the green yard.")
+		saynn("В конце концов вы выходите на просторную открытую площадку, разделенную множеством узких тропинок между высокими подстриженными кустами — зеленый двор.")
 
-		saynn("[say=pc]Look, isn't the air nice here?[/say]")
+		saynn("[say=pc]Смотри, какой здесь чудесный воздух, а?[/say]")
 
-		saynn("Tavi looks around and nods subtly, her tail is still motionless, her ears glued to her head. She just follows you around while you hold the leash.")
+		saynn("Тави оглядывается и едва заметно кивает; её хвост всё еще неподвижен, а уши плотно прижаты к голове. Она просто следует за вами, пока вы держите поводок.")
 
-		saynn("Suddenly, a voice.")
+		saynn("Внезапно раздается голос.")
 
-		saynn("[say=nova]Ooh~. What an adorable puppy![/say]")
+		saynn("[say=nova]О-о-о~. Какая очаровательная щеночка![/say]")
 
-		addButton("Voice?", "See who it is", "les2_nova")
+		addButton("Голос?", "Посмотри, кто это", "les2_nova")
 	if(state == "les2_nova"):
 		addCharacter("nova")
 		playAnimation(StageScene.PuppySexOral, "tease", {pc="nova", npc="tavi"})
-		saynn("You turn around and see.. Nova. She doesn't seem to be hostile."+str(" Even though you did a lot of bad things to her.. She is mostly focussed on Tavi though." if getFlag("TaviModule.Ch5BlackmailedNova") else "")+"")
+		saynn("Вы оборачиваетесь и видите... Нову. Похоже, она настроена не враждебно."+str(" Even though you did a lot of bad things to her.. She is mostly focussed on Tavi though." if getFlag("TaviModule.Ch5BlackmailedNova") else "")+"")
 
-		saynn("The husky approaches you and crouches before your pet, her paws begin giving Tavi scritches and headpats.")
+		saynn("Хаски подходит к вам и приседает перед вашим питомцем; её лапы начинают чесать Тави и поглаживать её по голове.")
 
-		saynn("[say=nova]You've been naughty lately, weren't you~. But you're still such a cutie. How can I be mad at you?[/say]")
+		saynn("[say=nova]Ты в последнее время была капризной, да~? Но ты всё равно такая милашка. Как на тебя можно злиться?[/say]")
 
-		saynn("Tavi doesn't know how to react. She wants to stay quiet but her senses are being overstimulated, resulting in her making various cute feline noises.")
+		saynn("Тави не знает, как реагировать. Она хочет молчать, но её чувства перегружены, из-за чего она начинает издавать различные милые кошачьи звуки.")
 
-		saynn("[say=tavi]Hu.. huff.. a.. h.. meo.. w..[/say]")
+		saynn("[say=tavi]Ху... хфф... м... мя... у...[/say]")
 
-		saynn("[say=nova]Yes-s~. I wasn't able to train you into a proper puppy but maybe this inmate will succeed.[/say]")
+		saynn("[say=nova]Да-а-а~. Мне не удалось дрессировать тебя как настоящую собачку, но, может, у этой заключенной получится лучше.[/say]")
 
-		saynn("Tavi shakes her head and receives more pats and scritches. Her cheeks are blushing bright green.")
+		saynn("Тави качает головой, подставляясь под новые поглаживания и чесания. Её щеки заливаются ярко-зеленым румянцем.")
 
-		saynn("[say=nova]You're enjoying it~. You just don't wanna admit it. What a silly puppy, denying the fun.[/say]")
+		saynn("[say=nova]Тебе же нравится~. Просто не хочешь в этом признаваться. Какая глупая собачка — отрицать удовольствие.[/say]")
 
-		saynn("Nova looks up at you.")
+		saynn("Нова смотрит на тебя снизу вверх.")
 
-		saynn("[say=nova]C'mon. Let's pet her together~.[/say]")
+		saynn("[say=nova]Давай. Погладим её вместе~.[/say]")
 
-		addButton("Pat Tavi", "Praise the puppy", "les2_praise")
+		addButton("Гладить Тави", "Хвалить собачку", "les2_praise")
 	if(state == "les2_praise"):
 		playAnimation(StageScene.PuppySexOral, "tease", {pc="pc", npc="tavi"})
-		saynn("You join in on the fun and begin patting Tavi into submission together. Double trouble.")
+		saynn("Ты присоединяешься к веселью и начинаешь вместе с Новой гладить Тави, пока та не сдастся. Двойная порция ласки.")
 
-		saynn("Tavi can only endure it for so long before she starts squirming actively. Nova stops patting the girl and instead gives her some bellyrubs, making Tavi arch her back. Loud purring finally starts escaping from her.")
+		saynn("Тави может терпеть лишь до поры до времени, прежде чем начнет активно извиваться. Нова перестает гладить её по голове и переходит к почесыванию животика, отчего Тави выгибает спину. Наконец, из неё вырывается громкое мурлыканье.")
 
-		saynn("[say=nova]Good girl~. Listen to your owner and everything will be alright.[/say]")
+		saynn("[say=nova]Хорошая девочка~. Слушайся свою хозяйку, и всё будет в порядке.[/say]")
 
-		saynn("Nova gets up and pats you on the shoulder before whispering something into your ear.")
+		saynn("Нова поднимается и хлопает тебя по плечу, прежде чем что-то прошептать тебе на ухо.")
 
-		saynn("[say=nova]You're doing great~.[/say]")
+		saynn("[say=nova]Ты отлично справляешься~.[/say]")
 
-		saynn("Huh. And just like that, she returns on her patrol. Seems like she wanted to give a boost of confidence.. to both of you.")
+		saynn("Хм. И вот так просто она возвращается к своему патрулированию. Похоже, она хотела придать уверенности... вам обоим.")
 
-		saynn("Tavi blinks often while looking up at you.")
+		saynn("Тави часто моргает, глядя на тебя снизу вверх.")
 
-		saynn("[say=pc]Wanna say something, puppy?[/say]")
+		saynn("[say=pc]Хочешь что-то сказать, щеночек?[/say]")
 
-		saynn("The feline opens her mouth.. but doesn't say anything. Aw. She shakes her head.")
+		saynn("Кошечка приоткрывает рот... но ничего не говорит. Эх. Она качает головой.")
 
-		saynn("Well, it was worth a try. When you get up and turn away, you hear something.")
+		saynn("Ну, попытка не пытка. Когда ты встаешь и отворачиваешься, ты что-то слышишь.")
 
 		saynn("[say=tavi]..w-..f..[/say]")
 
-		saynn("Huh? You look at Tavi again.")
+		saynn("А? Ты снова смотришь на Тави.")
 
-		saynn("[say=pc]You said something?[/say]")
+		saynn("[say=pc]Ты что-то сказала?[/say]")
 
-		saynn("Tavi doesn't respond and blinks many times again. Oh well.")
+		saynn("Тави не отвечает и снова часто моргает. Ну и ладно.")
 
-		saynn("You hold Tavi's leash firmly while returning back to her cell. At least you got to experience the fresh air.")
+		saynn("Вы крепко держите Тави за поводок, возвращаясь к её камере. По крайней мере, вам удалось подышать свежим воздухом.")
 
-		addButton("Continue", "See what happens next", "endthescene_resetequip")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_resetequip")
 	if(state == "lesson3"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcAction="allfours"})
-		saynn("Well. Time for another lesson in petplay. Tavi is probably won't be eager again so you go ahead and grab some restraints.")
+		saynn("Ну что ж. Пора для очередного урока петплея. Тави вряд ли будет проявлять энтузиазм, так что просто заранее приготовьте какие-нибудь фиксаторы.")
 
-		saynn("But, when you turn around, you notice Tavi crawling on all fours to you..")
+		saynn("Но когда вы оборачиваетесь, то замечаете, что Тави ползет к вам на четвереньках...")
 
-		saynn("[say=tavi]Woof..[/say]")
+		saynn("[say=tavi]Гав...[/say]")
 
-		saynn("She stops by you and nuzzles your legs softly.")
+		saynn("Она останавливается рядом и мягко прижимается носом к вашим ногам.")
 
-		saynn("[say=pc]Oh wow. What a good girl.[/say]")
+		saynn("[say=pc]Ого. Какая хорошая девочка.[/say]")
 
-		saynn("Tavi purrs again while you pat her between the ears. You put the restraints away for now. Seems she doesn't need them. You grab a leash though.")
+		saynn("Тави снова начинает мурлыкать, пока вы гладите её между ушек. Пока что вы откладываете фиксаторы в сторону — похоже, они ей не понадобятся. Впрочем, поводок вы всё же берете.")
 
-		saynn("[say=pc]Hm. Here is a question for you. Do pets usually wear clothes?[/say]")
+		saynn("[say=pc]Хм. У меня к тебе вопрос. Питомцы обычно носят одежду?[/say]")
 
-		saynn("Tavi looks at herself.. and then shakes her head.")
+		saynn("Тави оглядывает себя... а затем качает головой.")
 
-		saynn("[say=pc]Let's fix that?[/say]")
+		saynn("[say=pc]Исправим это?[/say]")
 
-		saynn("The feline hesitates for a second while watching the exit.")
+		saynn("Кошка на секунду замирает, поглядывая на выход.")
 
-		saynn("[say=tavi]Woof..[/say]")
+		saynn("[say=tavi]Гав...[/say]")
 
-		saynn("Maybe you can go easy on her and not pull her out today.")
+		saynn("Может, сегодня не будешь слишком строг с ней и не станешь её вытаскивать?")
 
-		addButton("Undress her", "Make Tavi look more like a proper pet", "les3_undress")
+		addButton("Раздеть её", "Сделать Тави больше похожей на настоящую зверушку", "les3_undress")
 	if(state == "les3_undress"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcAction="allfours", npcBodyState={naked=true}})
-		saynn("You begin unbuttoning her shirt and pulling it off. Tavi doesn't seem to resist, helping you even by pulling her paws out of the sleeves. Then you pull down her shorts, exposing all of Tavi's private bits: her {tavi.breasts}, cute "+str("virgin " if getModule("TaviModule").isVirgin() else "")+"pussy and a tight-looking asshole.")
+		saynn("Ты начинаешь расстегивать её рубашку и стягивать её с плеч. Тави, кажется, совсем не сопротивляется, даже помогая тебе, вытягивая свои лапки из рукавов. Затем ты спускаешь её шорты, обнажая все интимные места Тави: её {tavi.breasts}, милую "+str("virgin " if getModule("TaviModule").isVirgin() else "")+"киску и тугой, аппетитный анус.")
 
-		saynn("You walk around her, admiring your pet from all angles.")
+		saynn("Ты обходишь её кругом, любуясь своей питомицей со всех сторон.")
 
-		saynn("[say=pc]Who is a good girl?[/say]")
+		saynn("[say=pc]Кто у нас хорошая девочка?[/say]")
 
-		saynn("[say=tavi]Woof..[/say]")
+		saynn("[say=tavi]Гав...[/say]")
 
-		saynn("[say=pc]Yes, you are.[/say]")
+		saynn("[say=pc]Да, это так.[/say]")
 
-		saynn("You give her a pat, making her ears go flat again.")
+		saynn("Ты похлопываешь её по голове, отчего её ушки снова прижимаются к голове.")
 
-		saynn("As you present her the item in your hand, Tavi presents you her collar, allowing you to leash her.")
+		saynn("Когда ты протягиваешь ей предмет в руке, Тави подставляет тебе свой ошейник, позволяя надеть на неё поводок.")
 
-		saynn("[say=pc]Let's just walk around the cell.[/say]")
+		saynn("[say=pc]Давай просто погуляем по камере.[/say]")
 
-		saynn("You could force her out again but that didn't work so well last time. Better to be safe and start slow.")
+		saynn("Можно было бы снова заставить её выйти, но в прошлый раз это прошло не очень гладко. Лучше перестраховаться и начать с малого.")
 
-		addButton("Walkies", "Do some walkies around Tavi's cell", "les3_walkies")
+		addButton("Прогулка", "Устроить прогулку по камере Тави", "les3_walkies")
 	if(state == "les3_walkies"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcAction="crawl", npcBodyState={naked=true}})
-		saynn("You begin doing laps around Tavi's cell, following the walls while holding the leash. Tavi crawls by your side. She is quiet but you can notice her swaying her backside quite a bit.")
+		saynn("Вы начинаете нарезать круги по камере Тави, следуя вдоль стен и держа поводок. Тави ползет рядом с вами. Она ведет себя тихо, но вы замечаете, как она довольно сильно виляет задом.")
 
-		saynn("[say=pc]Very good. Aren't you a good puppy?[/say]")
+		saynn("[say=pc]Очень хорошо. Какая же ты послушная собачка![/say]")
 
-		saynn("Tavi's tail twitches after you say that.")
+		saynn("После ваших слов хвост Тави дергается.")
 
-		saynn("[say=pc]Who's a good puppy?[/say]")
+		saynn("[say=pc]Кто у нас хороший щенок?[/say]")
 
-		saynn("Her tail twitches more and more.")
+		saynn("Ее хвост дергается всё сильнее и сильнее.")
 
-		saynn("[say=tavi]Woof.[/say]")
+		saynn("[say=tavi]Гав![/say]")
 
-		saynn("[say=pc]Yes, you are.[/say]")
+		saynn("[say=pc]Да, это так.[/say]")
 
-		saynn("That tail can't keep still and starts wagging while Tavi crawls by your side.")
+		saynn("Хвост никак не может успокоиться и начинает неистово вилять, пока Тави ползет рядом с вами.")
 
-		saynn("After a few laps, she starts whining softly at you.")
+		saynn("Сделав несколько кругов, она начинает тихонько скулить, глядя на вас.")
 
-		saynn("[say=pc]What's the problem?[/say]")
+		saynn("[say=pc]В чем дело?[/say]")
 
-		saynn("Tavi doesn't know how to show it to you. So she flops onto the floor and flips onto her back, showing you her forearms and knees that are now glowing green near the irritated areas. Seems like it's enough crawling for now.")
+		saynn("Тави не знает, как это показать, поэтому она просто плюхается на пол и переворачивается на спину, подставляя вам предплечья и колени, которые теперь светятся зеленым в местах раздражения. Похоже, на сегодня ползания хватит.")
 
-		saynn("[say=pc]You did well, pup.[/say]")
+		saynn("[say=pc]Ты молодец, щеночек.[/say]")
 
-		saynn("You give her some belly rubs, causing Tavi to start purring and wiggling around. You also notice her fur near the crotch getting all wet.")
+		saynn("Ты начинаешь почесывать ей животик, отчего Тави начинает мурлыкать и извиваться. Ты также замечаешь, что шерстка у неё в районе промежности становится совсем мокрой.")
 
-		saynn("[say=pc]You can stop pretending, Tavi.[/say]")
+		saynn("[say=pc]Можешь перестать притворяться, Тави.[/say]")
 
-		saynn("She looks up at you and blinks-blinks.")
+		saynn("Она смотрит на тебя и часто-часто моргает.")
 
-		saynn("[say=tavi]Oh.. okay. Thank you..[/say]")
+		saynn("[say=tavi]Ох.. ладно. Спасибо..[/say]")
 
-		saynn("Such a cutie. Maybe you have to use the puppy restraints, they seem to have padding that helps against bruises and irritation.")
+		saynn("Какая милашка. Возможно, стоит использовать щенячьи фиксаторы — кажется, у них есть мягкая подкладка, которая защищает от синяков и раздражения.")
 
-		saynn("But you feel like you made a lot of progress either way.")
+		saynn("Но ты чувствуешь, что в любом случае добился большого прогресса.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "tricks"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcAction="allfours", npcBodyState={naked=true}})
-		saynn("Tavi's eyes sparkle with curiosity when you call her closer and then point down at the spot just before you.")
+		saynn("Глаза Тави искрятся любопытством, когда ты зовешь её поближе, а затем указываешь на место прямо перед собой.")
 
 		saynn("[say=pc]"+str(RNG.pick(["Good girls get belly rubs.", "I wanna see a good puppy before me.", "I wanna teach you some tricks.", "Ready for some training, puppy?"]))+"[/say]")
 
-		saynn("Tall kitty hesitates for a second. But then she gets on her knees before her.")
+		saynn("Высокая кошечка на секунду колеблется. Но затем она опускается перед тобой на колени.")
 
-		saynn("[say=tavi]Pets don't wear clothes..[/say]")
+		saynn("[say=tavi]Питомцы не носят одежду..[/say]")
 
-		saynn("Her paws unbutton her shirt and then pull down her shorts before she leans forward and stands on all fours, completely naked.")
+		saynn("Её лапки расстегивают пуговицы на рубашке, затем стягивают шорты, после чего она наклоняется вперед и встает на четвереньки, совершенно голая.")
 
-		saynn("You don't wanna hurt her arms and knees so you grab some puppy restraints that have padded inner sides and begin securing it around Tavi's limbs, one by one.. While she patiently awaits, her tail wagging ever so slightly.")
+		saynn("Ты не хочешь повредить ей руки и колени, поэтому берешь щенячьи фиксаторы с мягкой подкладкой внутри и начинаешь по очереди закреплять их на конечностях Тави... Она терпеливо ждет, едва заметно виляя хвостом.")
 
-		addButton("Bitchsuit", "Tie Tavi up", "tricks_bitch")
+		addButton("Костюм сучки", "Связать Тави", "tricks_bitch")
 	if(state == "tricks_bitch"):
 		playAnimation(StageScene.PuppyDuo, "stand", {npc="tavi", npcBodyState={naked=true}})
-		saynn("It took some time.. but you manage to secure the bitchsuit tightly on Tavi, turning her into such an adorable puppy.")
+		saynn("Это заняло некоторое время... но тебе удается плотно натянуть на Тави костюм сучки, превращая её в очаровательного щенка.")
 
-		saynn("Well, time to train her some tricks.")
+		saynn("Что ж, пора обучить её паре трюков.")
 
-		addButton("Fetch", "Order Tavi to bring a ball", "trick_fetch")
-		addButton("Lie down", "Order Tavi to lie down", "trick_liedown")
-		addButton("Sit", "Order Tavi to sit", "trick_sit")
+		addButton("Апорт", "Приказать Тави принести мячик", "trick_fetch")
+		addButton("Лежать", "Приказать Тави лечь", "trick_liedown")
+		addButton("Сесть", "Приказать Тави сесть", "trick_sit")
 	if(state == "trick_fetch"):
 		playAnimation(StageScene.PuppyDuo, "throw", {npc="tavi", npcBodyState={naked=true}})
-		saynn("There aren't really any rubber balls in this prison.. But there are ballgags. You take one from Tavi's stash and disassemble it quickly, removing the leather straps until you're left with just the rubber sphere.")
+		saynn("В этой тюрьме особо нет резиновых мячиков... зато есть кляпы. Ты берешь один из заначек Тави и быстро разбираешь его, снимая кожаные ремни, пока у тебя в руках не остается одна лишь резиновая сфера.")
 
-		saynn("[say=pc]See this?[/say]")
+		saynn("[say=pc]Видишь?[/say]")
 
-		saynn("Tavi tilts her head and raises a brow, looking cute and silly. You make sure Tavi sees the ball as you throw it in the corner of the cell.")
+		saynn("Тави наклоняет голову и приподнимает бровь, выглядя мило и забавно. Ты следишь за тем, чтобы Тави видела мяч, когда бросаешь его в угол камеры.")
 
-		saynn("[say=pc]Go-get-the-ball![/say]")
+		saynn("[say=pc]А ну, принеси мячик![/say]")
 
-		saynn("Tavi tilts her head even more.")
+		saynn("Тави наклоняет голову еще сильнее.")
 
-		saynn("[say=pc]Bring the ball and you will get something.[/say]")
+		saynn("[say=pc]Принесешь мяч — получишь награду.[/say]")
 
-		saynn("That's when Tavi finally begins to see the point. She turns around awkwardly and begins searching for the ball until her ears perk towards a certain direction.")
+		saynn("Именно в этот момент до Тави наконец доходит суть. Она неловко разворачивается и начинает искать мяч, пока её ушки не навостряются в определённую сторону.")
 
-		addButton("Continue", "See what happens next", "trick_fetch_walk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "trick_fetch_walk")
 	if(state == "trick_fetch_walk"):
 		playAnimation(StageScene.PuppyDuo, "stand", {npc="tavi", npcAction="walk", npcBodyState={naked=true}})
-		saynn("Tavi crawls towards the ball on all fours, her motions are a little stiff and unnatural as she is trying to get used to the puppy restraints.")
+		saynn("Тави ползет к мячу на четвереньках; её движения немного скованны и неестественны, так как она всё еще пытается привыкнуть к щенячьей упряжи.")
 
-		saynn("Still, she manages to grab the ball with her mouth before bringing it back to you.")
+		saynn("Тем не менее, ей удается схватить мяч ртом и принести его тебе.")
 
-		saynn("[say=pc]Good girl. Again.[/say]")
+		saynn("[say=pc]Хорошая девочка. Еще раз.[/say]")
 
-		saynn("You throw the ball in a different corner. This time, Tavi's eyes are tracking it somewhat.")
+		saynn("Ты бросаешь мяч в другой угол. На этот раз взгляд Тави уже более-менее следует за ним.")
 
-		saynn("[say=pc]Go get it.[/say]")
+		saynn("[say=pc]А ну, принеси![/say]")
 
-		saynn("And Tavi takes off again, crawling towards the ball before bringing it to you. Her tail is wagging happily each time you praise her.")
+		saynn("Тави снова срывается с места, ползет к мячику, а затем приносит его вам. Каждый раз, когда вы ее хвалите, ее хвост радостно виляет.")
 
-		saynn("[say=pc]Very good. Let's do some more.[/say]")
+		saynn("[say=pc]Очень хорошо. Давай еще немного.[/say]")
 
-		saynn("After a few throws, Tavi begins to sway her hips more while crawling around her cell, her motions becoming more fluid and playful. Even if still heavily limited.")
+		saynn("После нескольких бросков Тави начинает активнее вилять бедрами, пока ползает по камере; ее движения становятся более плавными и игривыми, хоть она все еще сильно ограничена.")
 
-		saynn("After the last throw, Tavi returns the ball back to you and drops it by your feet, panting softly. Her tongue is out and drooling.")
+		saynn("После последнего броска Тави возвращает мяч вам и роняет его у ваших ног, тихонько посапывая. Ее язык высунут, и она пускает слюни.")
 
-		saynn("[say=pc]Adorable. Now. For your reward..[/say]")
+		saynn("[say=pc]Прелесть. А теперь... твоя награда...[/say]")
 
-		addButton("Headpats", "Just pat Tavi and continue training her", "tricks_fetch_pat")
-		addButton("Ballgag", "Make sure she never loses her ball..", "tricks_fetch_ballgag")
+		addButton("Поглаживания по голове", "Просто погладить Тави и продолжить тренировку", "tricks_fetch_pat")
+		addButton("Шарик во рту", "Следи за тем, чтобы она никогда не теряла свой мячик...", "tricks_fetch_ballgag")
 	if(state == "tricks_fetch_pat"):
 		playAnimation(StageScene.PuppySexOral, "tease", {pc="pc", npc="tavi", npcBodyState={naked=true}})
-		saynn("You grab Tavi by the cheeks and nuzzle her face.")
+		saynn("Вы берете Тави за щеки и ласкаете ее лицо своим носом.")
 
-		saynn("[say=pc]Who's a good girl?[/say]")
+		saynn("[say=pc]Кто у нас хорошая девочка?[/say]")
 
-		saynn("Tavi blinks many times and purrs while brushing her face against yours. Your hands give her plenty of headpats and then land behind her ears, scritching and scratching.")
+		saynn("Тави часто моргает и мурлычет, прижимаясь лицом к твоему лицу. Твои руки щедро осыпают её поглаживаниями по голове, а затем забираются за уши, нежно почесывая и массируя кожу.")
 
-		saynn("[say=pc]You are.[/say]")
+		saynn("[say=pc]Ты.[/say]")
 
-		saynn("Tavi wiggles happily, her tail wags a lot.")
+		saynn("Тави радостно виляет всем телом, её хвост ходит ходуном.")
 
-		saynn("[say=tavi]Woof![/say]")
+		saynn("[say=tavi]Гав![/say]")
 
-		addButton("Continue", "See what happens next", "tricks_stand")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tricks_stand")
 	if(state == "tricks_fetch_ballgag"):
 		playAnimation(StageScene.PuppySexOral, "tease", {pc="pc", npc="tavi", npcBodyState={naked=true}})
-		saynn("You grab the ball that Tavi dropped and put it back into her mouth.")
+		saynn("Ты подбираешь мячик, который выронила Тави, и снова засовываешь его ей в рот.")
 
-		saynn("[say=pc]Let's fix this little problem.[/say]")
+		saynn("[say=pc]Давай исправим эту маленькую проблему.[/say]")
 
-		saynn("Tavi lets out a confused puppy noise as you begin attaching the leather straps back to that ball. Then you secure them tightly around her head, so tight that it makes Tavi drool.")
+		saynn("Тави издает растерянный щенячий звук, когда ты начинаешь прикреплять кожаные ремешки обратно к мячу. Затем ты туго затягиваешь их у неё на голове — настолько плотно, что у Тави начинает течь слюна.")
 
-		saynn("[say=pc]See? Now you will never lose your ball.[/say]")
+		saynn("[say=pc]Видишь? Теперь ты никогда не потеряешь свой мячик.[/say]")
 
-		saynn("Tavi tries to drop the ball but can't. It is indeed now in her mouth forever.. or until you decide to take it out.")
+		saynn("Тави пытается выплюнуть мяч, но у неё не получается. Теперь он действительно во рту у неё навечно... по крайней мере, пока ты сама не решишь его вытащить.")
 
-		addButton("Continue", "See what happens next", "tricks_stand")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tricks_stand")
 	if(state == "tricks_stand"):
 		playAnimation(StageScene.PuppyDuo, "stand", {npc="tavi", npcBodyState={naked=true}})
-		saynn("Tavi stands on all fours before you, awaiting your next command patiently.")
+		saynn("Тави стоит перед тобой на четвереньках, терпеливо ожидая следующей команды.")
 
 		if (isGagged):
-			saynn("She also can't stop drooling.")
+			saynn("А ещё она никак не может перестать пускать слюни.")
 
 		if (!didFetch):
-			addButton("Fetch", "Order Tavi to bring a ball", "trick_fetch")
+			addButton("Апорт", "Приказать Тави принести мячик", "trick_fetch")
 		else:
-			addDisabledButton("Fetch", "You already played fetch with Tavi")
-		addButton("Lie down", "Order Tavi to lie down", "trick_liedown")
-		addButton("Sit", "Order Tavi to sit", "trick_sit")
+			addDisabledButton("Апорт", "Вы уже играли с Тави в «апорт»")
+		addButton("Лежать", "Приказать Тави лечь", "trick_liedown")
+		addButton("Сесть", "Приказать Тави сесть", "trick_sit")
 	if(state == "trick_liedown"):
 		playAnimation(StageScene.PuppyDuo, "stand", {npc="tavi", npcAction="sad", npcBodyState={naked=true}})
-		saynn("You point down, inviting Tavi to get even lower.")
+		saynn("Ты указываешь пальцем вниз, предлагая Тави пригнуться ещё ниже.")
 
-		saynn("[say=pc]Lie down.[/say]")
+		saynn("[say=pc]Лежать![/say]")
 
-		saynn("Her bitchsuit restricts her actions quite a bit but she just about manages to lie down. Her tail is wagging though")
+		saynn("Её костюм сучки довольно сильно сковывает движения, но ей всё же удаётся лечь. При этом её хвост вовсю виляет.")
 
-		addButton("Stand", "Order Tavi to get up again", "tricks_stand")
-		addButton("Roll over", "Order Tavi to roll over", "tricks_rollover")
+		addButton("Стоять", "Приказать Тави снова встать", "tricks_stand")
+		addButton("Перевернуться", "Приказать Тави перевернуться на спину", "tricks_rollover")
 	if(state == "tricks_rollover"):
-		saynn("You twirl your finger, trying to tell Tavi to roll over without using words. But she just tilts her head, confused.")
+		saynn("Ты крутишь пальцем, пытаясь без слов показать Тави, чтобы она перевернулась. Но она лишь в замешательстве наклоняет голову.")
 
-		saynn("[say=pc]Roll over, puppy.[/say]")
+		saynn("[say=pc]Вперед, щеночек, перевернись на спинку![/say]")
 
-		saynn("That's clearly not an easy task with all those restraints. Tavi hesitates. But your twil your finger again.")
+		saynn("С таким количеством ограничений это явно непростая задача. Тави колеблется. Но ты снова крутишь пальцем.")
 
-		saynn("[say=pc]C'mon, puppy. Try it.[/say]")
+		saynn("[say=pc]Ну же, щеночек. Попробуй![/say]")
 
-		saynn("Tavi gathers her strength for a few seconds.. and then commits. She purposefully topples herself over, flopping on her side. Then she rolls over to her other side and tries to get up again. That's where the problem arises.")
+		saynn("Тави несколько секунд собирается с силами... и решается. Она намеренно заваливается на бок, плюхаясь на него. Затем она перекатывается на другой бок и снова пытается встать. И вот тут начинаются проблемы.")
 
 		if (petSkill < 6):
-			saynn("Tavi struggles to get enough support. Her limbs just don't bend enough to be able to do this. All she can do is awkwardly flail. At some point she gives up and starts whining.")
+			saynn("Тави изо всех сил пытается найти опору. Её конечности просто не сгибаются достаточно сильно, чтобы это получилось. Всё, что ей удаётся — это неуклюже дрыгать руками и ногами. В какой-то момент она сдаётся и начинает скулить.")
 
-			saynn("[say=pc]Aww.[/say]")
+			saynn("[say=pc]Оууу...[/say]")
 
-			saynn("You're not a monster. Obviously you help her to get up. And then give her some pats for trying.")
+			saynn("Ты не монстр. Разумеется, ты помогаешь ей подняться. А затем поглаживаешь её за старания.")
 
 		else:
-			saynn("Tavi struggles for a bit but then she rests and lets the gravity turn her onto her belly. That's when she can start getting up, one limb at a time.")
+			saynn("Тави немного борется с собой, но затем расслабляется, позволяя гравитации перевернуть её на живот. Теперь она может начать подниматься, по одной конечности за раз.")
 
-			saynn("[say=pc]Good job![/say]")
+			saynn("[say=pc]Молодец![/say]")
 
-			saynn("Even though she is working with a lot of restrictions, Tavi still managed to roll over!")
+			saynn("Несмотря на сильные ограничения, Тави всё же удалось перевернуться!")
 
-		addButton("Continue", "See what happens next", "tricks_stand")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tricks_stand")
 	if(state == "trick_sit"):
 		playAnimation(StageScene.PuppyDuo, "stand", {npc="tavi", npcAction="sit", npcBodyState={naked=true}})
-		saynn("You gesture to your pup, trying to make her sit down.")
+		saynn("Ты жестом приказываешь своему щенку сесть.")
 
-		saynn("[say=pc]Sit![/say]")
+		saynn("[say=pc]Сидеть![/say]")
 
-		saynn("Tavi hears the command and lowers her butt. It looks awkward so she pushes her top part of the body off the floor, sitting straight now, her {tavi.breasts} out on display.")
+		saynn("Тави слышит команду и опускает зад. Это выглядит немного неуклюже, поэтому она приподнимается на руках, выпрямляясь и выставляя свою {tavi.breasts} напоказ.")
 
 		if (isGagged):
-			saynn("Her gag makes her drool onto her chest.")
+			saynn("Из-за кляпа у неё на груди скапливается слюна.")
 
 		else:
-			saynn("She pants softly after accomplishing such a trick.")
+			saynn("Она тихонько дышит, тяжело переводя дух после такого трюка.")
 
-		saynn("[say=pc]Nice, good job.[/say]")
+		saynn("[say=pc]Молодец, отличная работа![/say]")
 
-		addButton("Continue", "See what happens next", "tricks_sitting")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tricks_sitting")
 	if(state == "tricks_sitting"):
 		playAnimation(StageScene.PuppyDuo, "stand", {npc="tavi", npcAction="sit", npcBodyState={naked=true}})
-		saynn("Tavi is sitting on her butt before you, eagerly awaiting commands.")
+		saynn("Тави сидит перед тобой на попе, с нетерпением ожидая новых команд.")
 
-		addButton("Voice", "Order Tavi to bark", "trick_sit_bark")
-		addButton("Give paw", "Order Tavi to give paw", "trick_sit_givepaw")
-		addButton("Sit", "Tell Tavi to sit", "trick_sit_sitdown")
-		addButton("Belly rubs!", "Give Tavi the bellyrubs that she deserves", "trick_order_back")
+		addButton("Голос", "Приказать Тави лаять", "trick_sit_bark")
+		addButton("Дать лапу", "Приказать Тави дать лапу", "trick_sit_givepaw")
+		addButton("Сесть", "Сказать Тави сесть", "trick_sit_sitdown")
+		addButton("Почесать животик!", "Почесать Тави животик так, как она того заслуживает", "trick_order_back")
 	if(state == "trick_sit_bark"):
-		saynn("You decide to test Tavi's vocal activities.")
+		saynn("Вы решаете проверить, на что способна Тави, когда дело касается звуков.")
 
-		saynn("[say=pc]Voice.[/say]")
+		saynn("[say=pc]Голос![/say]")
 
-		saynn("Tavi tilts her head at that command.")
+		saynn("Тави склоняет голову на вашу команду.")
 
-		saynn("[say=tavi]Uh..[/say]")
+		saynn("[say=tavi]Ух..[/say]")
 
-		saynn("You shake your head and tap on Tavi's lips.")
+		saynn("Вы качаете головой и слегка постукиваете по губам Тави.")
 
-		saynn("[say=pc]Show me how a puppy sounds. Voice.[/say]")
+		saynn("[say=pc]Покажи мне, как звучит щенок. Голосом.[/say]")
 
 		if (isGagged):
-			saynn("Since she is gagged, all she can do is try to imitate the noises to the best of her ability. While also drooling actively..")
+			saynn("Поскольку она в кляпе, всё, что ей остается — это изо всех сил пытаться имитировать звуки, при этом активно пуская слюни...")
 
-			saynn("[say=tavi]Uh.. Arf.. Arhf.. Woof.. Woff-f..[/say]")
+			saynn("[say=tavi]Ух.. Гав.. Гав-в.. Вуф.. Вуфф-ф..[/say]")
 
-			saynn("Well, at least she is trying. You give her some pats.")
+			saynn("Ну, по крайней мере, она старается. Вы ласково похлопываете её.")
 
 		else:
-			saynn("[say=tavi]Woof?[/say]")
+			saynn("[say=tavi]Гав?[/say]")
 
-			saynn("You nod and ask her to be louder.")
+			saynn("Вы киваете и просите её звучать громче.")
 
-			saynn("[say=tavi]Woof! Woooof! Awooo![/say]")
+			saynn("[say=tavi]Гав! Гав-гав! А-а-аууу![/say]")
 
-			saynn("The last bit was unnecessary. But at least she is trying. You give her some pats.")
+			saynn("Последний вопль был лишним. Но, по крайней мере, она старается. Ты слегка поглаживаешь её.")
 
-		addButton("Continue", "See what happens next", "tricks_sitting")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tricks_sitting")
 	if(state == "trick_sit_givepaw"):
 		playAnimation(StageScene.PuppyDuo, "stand", {npc="tavi", npcAction="paw", npcBodyState={naked=true}})
-		saynn("You reach your hand out.")
+		saynn("Ты протягиваешь руку.")
 
-		saynn("[say=pc]Give paw, puppy.[/say]")
+		saynn("[say=pc]Дай лапу, щеночек.[/say]")
 
-		saynn("Tavi lets out a confused noise, trying to figure out how she can do that command if her hands are tied up firmly.")
+		saynn("Тави издает растерянный звук, пытаясь сообразить, как она может выполнить команду, если её руки крепко связаны.")
 
-		saynn("[say=pc]C'mon, be a good puppy.[/say]")
+		saynn("[say=pc]Давай же, будь хорошей собачкой.[/say]")
 
-		saynn("Tavi gets all flustered and whiny, struggling to understand what you mean. But then she realizes that her elbow is actually her paw now and raises it.")
+		saynn("Тави начинает смущенно и капризно скулить, пытаясь понять, что ты имеешь в виду. Но затем она осознает, что её локоть теперь — это её лапа, и поднимает его.")
 
-		saynn("[say=tavi]Woof?..[/say]")
+		saynn("[say=tavi]Гав?..[/say]")
 
-		saynn("You shake it and give your puppy some scritches. She seems to be getting into her role now quite well.")
+		saynn("Ты трясешь её «лапой» и чешешь свою собачку. Кажется, она начинает вполне успешно входить в роль.")
 
-		addButton("Continue", "See what happens next", "tricks_sitting")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tricks_sitting")
 	if(state == "trick_sit_sitdown"):
 		playAnimation(StageScene.PuppyDuo, "stand", {npc="tavi", npcBodyState={naked=true}})
-		saynn("[say=pc]Sit, puppy.[/say]")
+		saynn("[say=pc]Место, щеночек![/say]")
 
-		saynn("Tavi tilts her head, trying to figure out what exactly you mean by sitting.")
+		saynn("Тави наклоняет голову набок, пытаясь понять, что именно ты имеешь в виду под командой «сидеть».")
 
-		saynn("[say=pc]On all fours, Tavi.[/say]")
+		saynn("[say=pc]На четвереньки, Тави.[/say]")
 
-		saynn("She gasps and drops down before raising her butt off the floor, her tail wiggling happily.")
+		saynn("Она ахает и опускается на пол, а затем вскидывает задницу, радостно виляя хвостом.")
 
-		addButton("Continue", "See what happens next", "tricks_stand")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tricks_stand")
 	if(state == "trick_order_back"):
 		playAnimation(StageScene.PuppyDuo, "stand", {npc="tavi", npcAction="back", npcBodyState={naked=true}})
-		saynn("You push Tavi onto her back and begin giving her bellyrubs, all of them! Tavi squirms and huffs from so much stimulation.")
+		saynn("Ты опрокидываешь Тави на спину и начинаешь чесать ей животик — везде! Тави извивается и пыхтит от такого количества ласк.")
 
-		saynn("[say=tavi]Woo-of!..[/say]")
+		saynn("[say=tavi]Гав!..[/say]")
 
-		saynn("[say=pc]Such a good girl.[/say]")
+		saynn("[say=pc]Такая хорошая девочка.[/say]")
 
-		saynn("She seems extremely happy, her cheeks glowing green.. just like her wet needy slit between her hind legs.")
+		saynn("Она выглядит невероятно счастливой, её щеки светятся зеленым... прямо как её мокрая, жаждущая щелочка между задних лапок.")
 
-		saynn("[say=pc]The best girl.[/say]")
+		saynn("[say=pc]Лучшая девочка.[/say]")
 
-		saynn("Tavi purrs and moans softly even while you continue to rub her belly, your hands occasionally slipping towards her cute breasts and pussy, giving them some rubs too.")
+		saynn("Тави мурлычет и тихо стонет, пока ты продолжаешь гладить ей живот, время от времени запуская руки к её милым сиськам и киске, чтобы и их немного потискать.")
 
-		saynn("[say=tavi]Woof..[/say]")
+		saynn("[say=tavi]Гав...[/say]")
 
-		saynn("After giving Tavi all the praise, you start taking off her restraints.")
+		saynn("Осыпав Тави всякими похвалами, ты начинаешь снимать с неё путы.")
 
-		saynn("[say=pc]You can snap out of it now, Tavi.[/say]")
+		saynn("[say=pc]Теперь можешь приходить в себя, Тави.[/say]")
 
-		saynn("[say=tavi]Woof~?[/say]")
+		saynn("[say=tavi]Гав~?[/say]")
 
-		saynn("Tavi is smiling. Now it's your turn to tilt your head. She baps your nose with her paw.")
+		saynn("Тави улыбается. Теперь твоя очередь склонить голову набок. Она легонько хлопает тебя по носу своей лапкой.")
 
-		saynn("[say=tavi]Thought I forgot how to talk~? This felt really good though~..[/say]")
+		saynn("[say=tavi]Думала, я уже забыл, как разговаривать~? Но это было чертовски приятно~..[/say]")
 
 		if (isGagged):
-			saynn("Hard to understand what she is saying with that gag. But at least she is saying actual words.. probably.")
+			saynn("С кляпом трудно разобрать, что она говорит. Но, по крайней мере, это вроде как настоящие слова... наверное.")
 
-		saynn("You sigh and hug your puppy.")
+		saynn("Ты вздыхаешь и обнимаешь своего щеночка.")
 
-		addButton("Continue", "That was nice", "endthescene_resetequip")
+		addButton("Продолжить", "Это было приятно", "endthescene_resetequip")
 	if(state == "walkies"):
 		addCharacter("tavi", ["naked"])
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcAction="allfours", npcBodyState={naked=true}})
-		saynn("Time for walkies. As soon as you fetch a leash, Tavi's eyes widen. She takes off her clothes and already stands on all fours near you, her tail wagging playfully.")
+		saynn("Время на прогулку! Стоит тебе только взять поводок, как глаза Тави расширяются. Она скидывает одежду и уже стоит перед тобой на четвереньках, игриво виляя хвостом.")
 
-		saynn("[say=pc]Let's get you prepared, puppy.[/say]")
+		saynn("[say=pc]Давай подготовим тебя, щеночек.[/say]")
 
-		saynn("After grabbing the leash, you also find the puppy restraints and begin putting them on your pet. She went through quite a journey, didn't she.")
+		saynn("Схватив поводок, ты также находишь собачьи ограничители и начинаешь надевать их на свою питомицу. Она прошла через немалый путь, не так ли?")
 
-		addButton("Bitchsuit", "Put the puppy restraints on Tavi", "walkies_bitchsuit")
+		addButton("Костюм сучки", "Надеть на Тави собачьи ограничители", "walkies_bitchsuit")
 	if(state == "walkies_bitchsuit"):
 		playAnimation(StageScene.PuppyDuo, "stand", {npc="tavi", npcBodyState={naked=true}})
-		saynn("You crouch near Tavi and begin putting cone-shaped restraints on her limbs that make her always crawl on her elbows and knees. Apart from that.. Tavi is not gonna wear anything today.")
+		saynn("Ты приседаешь рядом с Тави и начинаешь надевать на её конечности конусообразные фиксаторы, которые заставляют её всегда ползать на локтях и коленях. Помимо этого... сегодня на Тави не будет никакой другой одежды.")
 
-		saynn("[say=pc]We're going on walkies around the prison today.[/say]")
+		saynn("[say=pc]Сегодня мы отправимся на прогулку по тюрьме.[/say]")
 
 		if (petSkill < 6):
-			saynn("Tavi is a little hesitant, her tail stops wagging for a bit.")
+			saynn("Тави немного колеблется, её хвост на мгновение перестает вилять.")
 
-			saynn("[say=pc]You're not comfortable with that, puppy? It's gonna be fun.[/say]")
+			saynn("[say=pc]Тебе неуютно, щеночек? Будет весело![/say]")
 
-			saynn("Tavi listens to your words and nods before presenting her collar, allowing you to clip a leash to it.")
+			saynn("Тави внимательно слушает твои слова и кивает, после чего подставляет свой ошейник, позволяя тебе пристегнуть поводок.")
 
 		else:
-			saynn("Tavi bounces happily, she doesn't seem to mind being naked in public anymore.")
+			saynn("Тави радостно подпрыгивает; кажется, её больше не смущает нагота на людях.")
 
-			saynn("[say=pc]So cute.[/say]")
+			saynn("[say=pc]Такой милашка.[/say]")
 
-			saynn("She purrs and gives you access to her collar, allowing you to clip a leash.")
+			saynn("Она довольно мурлычет и подставляет ошейник, позволяя тебе пристегнуть поводок.")
 
-		saynn("Where do you wanna go?")
+		saynn("Куда хочешь отправиться?")
 
-		addButton("Main hall", "Play catch with Tavi in the main hall", "walkies_mainhall")
-		addButton("Yard", "Take Tavi on a walk around the green yard", "walkies_yard")
-		addButton("Meet Nova", "Show your pet to Nova", "walkies_meetnova")
+		addButton("Главный зал", "Поиграть с Тави в мяч в главном холле", "walkies_mainhall")
+		addButton("Двор", "Вывести Тави на прогулку по зеленому дворику", "walkies_yard")
+		addButton("Встретиться с Новой", "Показать своего питомца Нове", "walkies_meetnova")
 	if(state == "walkies_mainhall"):
 		playAnimation(StageScene.PuppyDuo, "stand", {npc="tavi", npcAction="walk", npcBodyState={naked=true}})
 		aimCameraAndSetLocName("main_stairs_n")
-		saynn("And so you walk out of the cell and proceed to walk towards the stairs that will get you up into the main hall. By your side is Tavi, her eyes fixed on you. You get lots of random gazes from others but the feline doesn't seem to mind, her tail wags excitedly.")
+		saynn("И вот вы выходите из камеры и направляетесь к лестнице, ведущей в главный холл. Рядом с тобой Тави, её взгляд прикован к тебе. На вас сыплются случайные взгляды прохожих, но кошечке, кажется, всё нипочем — её хвост возбужденно виляет.")
 
-		saynn("Getting your pet up the stairs is tricky but you help her with that, one stair at the time.")
+		saynn("Подниматься по лестнице с питомцем непросто, но ты помогаешь ей, преодолевая по одной ступеньке за раз.")
 
-		saynn("As you reach the main platform, you find a relatively empty spot for you and Tavi where you have enough space for what you are about to do.")
+		saynn("Когда вы добираетесь до главной платформы, вы находите относительно пустое место для себя и Тави — пространства вполне достаточно для того, что вы задумали.")
 
-		saynn("Tavi's ears perk as you produce a red rubber ball, clearly taken from one of the ballgags. Then you crouch and quickly unclip the leash, letting Tavi wander further than usual.")
+		saynn("Уши Тави навостряются, когда вы достаете красный резиновый мячик, явно вытащенный из одного из кляпов. Затем вы приседаете и быстро отстегиваете поводок, позволяя Тави гулять чуть свободнее, чем обычно.")
 
-		saynn("[say=pc]Ready?[/say]")
+		saynn("[say=pc]Готова?[/say]")
 
-		saynn("[say=tavi]Woof![/say]")
+		saynn("[say=tavi]Гав![/say]")
 
-		addButton("Throw the ball", "Play fetch with Tavi", "walkies_mainhall_fetch")
+		addButton("Бросить мяч", "Поиграть с Тави в «апорт»", "walkies_mainhall_fetch")
 	if(state == "walkies_mainhall_fetch"):
 		playAnimation(StageScene.PuppyDuo, "throw", {npc="tavi", npcAction="walk", npcBodyState={naked=true}})
-		saynn("You aim somewhere not that far and toss the ball. At the same time, Tavi springs into action, her movements constrained and yet full of enthusiasm and agility as she chases after the ball. A few inmates notice the scene and chuckle.")
+		saynn("Вы прицеливаетесь неподалеку и бросаете мяч. В тот же миг Тави срывается с места; её движения скованы, но полны энтузиазма и ловкости, пока она несется за мячом. Несколько заключенных замечают эту сцену и посмеиваются.")
 
-		saynn("Tavi grabs the ball with her mouth and brings it back to you, her eyes looking proud. You grab it and throw it again.")
+		saynn("Тави хватает мяч ртом и приносит его вам с гордым видом. Вы подхватываете его и бросаете снова.")
 
-		saynn("[say=pc]Go get it, puppy.[/say]")
+		saynn("[say=pc]А ну, принеси, щеночек![/say]")
 
-		saynn("Tavi takes off after it, her tail wagging in sheer delight. More and more inmates join the crowd, watching Tavi retrieve the ball after you throw it, again and again. It seems, Tavi's flashy form combined with her commitment to the role are captivating the audience.")
+		saynn("Тави срывается с места, виляя хвостом от чистого восторга. Всё больше и больше заключенных собирается в толпу, наблюдая, как Тави снова и снова приносит мяч после ваших бросков. Похоже, яркий образ Тави в сочетании с её самоотдачей роли по-настоящему завораживает публику.")
 
-		saynn("Should you let the audience give your pup commands too?")
+		saynn("Стоит ли позволить зрителям тоже отдавать команды вашей сучке?")
 
-		addButton("Yes", "Let other give some orders to Tavi", "walkies_mainhall_yes")
-		addButton("Nah", "Just play more fetch with Tavi", "walkies_mainhall_no")
+		addButton("Да", "Позволить другим отдавать Тави команды", "walkies_mainhall_yes")
+		addButton("Неа", "Просто еще немного поиграть с Тави в «апорт»", "walkies_mainhall_no")
 	if(state == "walkies_mainhall_no"):
 		playAnimation(StageScene.PuppyDuo, "throw", {npc="tavi", npcAction="walk", npcBodyState={naked=true}})
-		saynn("You decide against the idea of inmates giving commands to Tavi. She should listen only to you, she is your pet after all.")
+		saynn("Вы решаете, что заключенным не стоит командовать Тави. В конце концов, она — ваша питомица, и слушать она должна только вас.")
 
-		saynn("Tavi brings the ball back to you a few more times until she starts panting heavily, clearly tired. Still, she did really well so you give her some pats and bellyrubs, making her purr too now.")
+		saynn("Тави еще несколько раз приносит вам мячик, пока не начинает тяжело дышать от усталости. Тем не менее, она справилась отлично, так что вы гладите её и чешете ей пузико, отчего она начинает довольно урчать.")
 
-		saynn("[say=pc]Let's go back.[/say]")
+		saynn("[say=pc]Вернуться назад.[/say]")
 
-		saynn("After such a good walkies session, Tavi is left satisfied. Who knew she would become such a good puppy.")
+		saynn("После такой отличной прогулки Тави остается довольной. Кто бы мог подумать, что из неё выйдет такая послушная щеночек.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "walkies_mainhall_yes"):
 		playAnimation(StageScene.PuppyDuo, "stand", {npc="tavi", npcAction="paw", npcBodyState={naked=true}})
-		saynn("You decide to let others interact with your puppy.")
+		saynn("Вы решаете позволить другим пообщаться с вашей собачкой.")
 
-		saynn("'Voice', one of the inmates orders. Tavi looks back at you with a tilt of her head. You nod and so Tavi barks loudly.")
+		saynn("«Голос!» — командует один из заключенных. Тави смотрит на вас, склонив голову набок. Вы киваете, и Тави громко лает.")
 
-		saynn("[say=tavi]Ruff![/say]")
+		saynn("[say=tavi]Гав![/say]")
 
-		saynn("The inmates chuckle. At the same time, someone else orders 'Lie down!'. And so Tavi immediately drops to the floor, her tail still wagging.")
+		saynn("Заключенные посмеиваются. В этот же момент кто-то другой командует: «Лежать!». И Тави тут же падает на пол, продолжая вилять хвостом.")
 
-		saynn("It's quite wholesome, watching your pup obey the commands of the curious onlookers. The crowd begins to thicken around you two. 'Give paw', someone asks. And so, Tavi extends her paw, letting the inmate shake it and then pat her.")
+		saynn("Это даже как-то умиляет — наблюдать, как твой щенок послушно выполняет команды любопытных зевак. Толпа вокруг вас двоих начинает густеть. «Дай лапу!» — просит кто-то. И Тави протягивает лапку, позволяя заключенному встряхнуть её, а затем и погладить.")
 
-		saynn("And that's how a game of catch gradually evolves into an impromptu puppy training session. Tavi seems to be enjoying herself though, she does every command that doesn't require her to do anything too lewd.")
+		saynn("Так обычная игра в мяч постепенно перерастает в импровизированное занятие по дрессировке щенка. Впрочем, Тави, кажется, в восторге: она выполняет любую команду, если та не требует чего-то слишком пошлого.")
 
-		saynn("By the end of it, Tavi is left panting softly. Inmates give her all the pats and scritches before finally letting you two go back to the cell. Who knew she would become such a good puppy.")
+		saynn("К концу игры Тави тяжело и мягко дышит. Заключенные осыпают её поглаживаниями и чешут за ушком, прежде чем наконец отпустить вас обратно в камеру. Кто бы мог подумать, что из неё выйдет такая послушная сучка.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "walkies_yard"):
 		aimCameraAndSetLocName("main_hallroom6")
 		playAnimation(StageScene.PuppyDuo, "stand", {npc="tavi", npcAction="walk", npcBodyState={naked=true}})
-		saynn("And so you set off towards the yard area. You have to help Tavi climb the stairs because it's too steep but you just about manage.")
+		saynn("И вот вы направляетесь в сторону двора. Тебе приходится помогать Тави подниматься по лестнице, потому что она слишком крутая, но вам это почти удается.")
 
-		saynn("Lots of gazes don't seem to affect Tavi anymore. She is swaying her naked butt seductively while crawling by your side.")
+		saynn("Множество взглядов, кажется, больше не смущают Тави. Ползая рядом с тобой, она соблазнительно покачивает своей голой задницей.")
 
-		addButton("Continue", "See what happens next", "walkies_yard_yard")
+		addButton("Продолжить", "Смотреть, что будет дальше", "walkies_yard_yard")
 	if(state == "walkies_yard_yard"):
 		playAnimation(StageScene.PuppyDuo, "stand", {npc="tavi", npcAction="walk", npcBodyState={naked=true}})
 		aimCameraAndSetLocName("yard_northCorridor")
-		saynn("You enter the area full of green bushes and pathways made out of stones. You hold Tavi's leash while following the little roads. It's certainly nothing compared to big lush planets.. but.. it's still something.")
+		saynn("Вы входите в зону, заросшую зелеными кустами и устланную каменными дорожками. Ты держишь Тави на поводке, следуя по узким тропинкам. Конечно, это ничто по сравнению с огромными пышными планетами... но всё же это неплохо.")
 
-		saynn("Every now and then, Tavi's ears perk and her nose twitches as she investigates all the scents that are lingering in the air. She barks happily as she finds a little pebble that she can kick around with her paws.")
+		saynn("Время от времени уши Тави встают торчком, а нос дергается — она исследует все запахи, витающие в воздухе. Она радостно лает, найдя маленький камешек, который можно гонять лапками.")
 
-		saynn("Eventually you reach a good spot to rest. There is a bench that you can sit on, perfect for some idling.")
+		saynn("В конце концов вы находите отличное место для отдыха. Там стоит скамейка, на которой можно присесть и просто посидеть в тишине.")
 
-		addButton("Rest", "Rest with Tavi", "walkies_yard_rest")
+		addButton("Отдохнуть", "Отдохнуть с Тави", "walkies_yard_rest")
 	if(state == "walkies_yard_rest"):
 		playAnimation(StageScene.PuppyDuo, "sit", {npc="tavi", npcAction="back", npcBodyState={naked=true}})
-		saynn("Time for rest. You sit on the bench and then pull Tavi onto it as well, her head resting on your lap.")
+		saynn("Время отдохнуть. Ты садишься на скамью, а затем подтягиваешь к себе Тави, чтобы она положила голову тебе на колени.")
 
-		saynn("She is purring softly while you proceed to give her bellyrubs.")
+		saynn("Она тихонько мурлычет, пока ты вовсю чешешь ей животик.")
 
-		saynn("[say=pc]Remember how you didn't want to do this at first~?[/say]")
+		saynn("[say=pc]Помнишь, как поначалу ты не хотела этого делать~?[/say]")
 
-		saynn("Tavi blushes, her paw boops you on the nose. But you boop her back many times, making her stick her tongue.")
+		saynn("Тави краснеет и тычет тебя лапкой в нос. Но ты в ответ многократно тыкаешь её в нос, заставляя её смешно высовывать язык.")
 
-		saynn("[say=pc]And now you're the most adorable puppy ever. Doesn't it feel good?[/say]")
+		saynn("[say=pc]А теперь ты — самая милая щеночек на свете. Тебе ведь нравится, правда?[/say]")
 
-		saynn("You dangle the leash in front of her eyes. Tavi nods and lets out a content sigh.")
+		saynn("Ты покачиваешь поводком перед её глазами. Тави кивает и издает удовлетворенный вздох.")
 
-		saynn("[say=pc]Good girl.[/say]")
+		saynn("[say=pc]Хорошая девочка.[/say]")
 
-		saynn("Tavi smiles and closes her eyes, enjoying being your lap warmer. Inmates and staff members walk past you but who cares about them.")
+		saynn("Тави улыбается и закрывает глаза, наслаждаясь тем, что греет твои колени. Мимо проходят заключенные и персонал, но какая к ним разница.")
 
-		saynn("You close your eyes as well and just take a little nap. Various thoughts go through your head. Is this prison bad or good? You have one of the most restrictive collars that have an ability to fry your neck and yet.. you still have a lot of freedom in what you can do.. A little closed-off society that has its own set of rules. A heaven?")
+		saynn("Ты тоже закрываешь глаза и просто немного вздремнешь. В голове крутятся разные мысли. Плохая эта тюрьма или хорошая? На тебе один из самых ограничивающих ошейников, способный поджарить шею, и всё же... у тебя всё еще полно свободы в том, что ты можешь делать... Маленькое закрытое общество со своим сводом правил. Рай?")
 
-		saynn("Nah.. Stopping now would mean all of this was for nothing. But if you're having fun, does anything else matter? Hell..")
+		saynn("Да нет... Остановиться сейчас значило бы, что всё это было зря. Но если тебе весело, то какая, к черту, разница? Черт возьми...")
 
-		saynn("Your hand keeps rubbing your pet's belly.. until you decide to return back to the cell.")
+		saynn("Твоя рука продолжает гладить животик питомицы... пока ты не решаешь вернуться в камеру.")
 
-		saynn("Looks like Tavi enjoyed that trip, her tail is wagging actively even after being exposed to so many eyes.")
+		saynn("Похоже, Тави понравилась эта прогулка: её хвост активно виляет, даже несмотря на то, что на неё пялится столько глаз.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "walkies_meetnova"):
 		aimCameraAndSetLocName("main_hallroom6")
 		playAnimation(StageScene.PuppyDuo, "stand", {npc="tavi", npcAction="walk", npcBodyState={naked=true}})
-		saynn("You bring Tavi into the main hall and begin to search for Nova. Tavi is crawling by your side, looking happy about getting walkies.")
+		saynn("Вы приводите Тави в главный зал и начинаете искать Нову. Тави ползёт рядом с вами, явно радуясь тому, что её вывели «погулять».")
 
-		saynn("You know that the husky guard is usually patrolling the yard area so you head there.")
+		saynn("Вы знаете, что хаски-охранница обычно патрулирует двор, поэтому направляетесь туда.")
 
-		addButton("Continue", "See what happens next", "walkies_meetnova_nova")
+		addButton("Продолжить", "Смотреть, что будет дальше", "walkies_meetnova_nova")
 	if(state == "walkies_meetnova_nova"):
 		aimCameraAndSetLocName("yard_novaspot")
 		addCharacter("nova")
 		playAnimation(StageScene.PuppyDuo, "stand", {pc="nova", npc="tavi", npcAction="paw", npcBodyState={naked=true}})
-		saynn("It doesn't take long for you to stumble into Nova. The guard is resting while leaning against the prison's wall.")
+		saynn("Вскоре вы натыкаетесь на Нову. Охранница отдыхает, прислонившись к тюремной стене.")
 
-		saynn("[say=nova]Ohh![/say]")
+		saynn("[say=nova]Ооо![/say]")
 
-		saynn("The moment she sees Tavi she runs up to her and starts squishing her cheeks and ruffling her fur.")
+		saynn("Как только она видит Тави, она подбегает к ней и начинает тискать её за щечки и взъерошивать шерстку.")
 
-		saynn("[say=nova]Such a good girl![/say]")
+		saynn("[say=nova]Какая хорошая девочка![/say]")
 
-		saynn("Tavi purrs and rubs herself against the guard, her tail wagging happily. Nova looks up at you.")
+		saynn("Тави довольно урчит и трется о охранницу, радостно виляя хвостом. Нова поднимает на вас взгляд.")
 
-		saynn("[say=nova]You did that~?[/say]")
+		saynn("[say=nova]Это ты её так?~[/say]")
 
-		saynn("You nod and look proud. All the while Nova gives your pet headpats and even some treats, spoiling her.")
+		saynn("Вы гордо киваете. Тем временем Нова гладит вашу питомицу по голове и даже угощает лакомствами, изрядно её балуя.")
 
-		saynn("[say=nova]You're an obedient puppy now, aren't you?[/say]")
+		saynn("[say=nova]Теперь ты послушная собачка, верно?[/say]")
 
-		saynn("[say=tavi]Woof![/say]")
+		saynn("[say=tavi]Гав![/say]")
 
-		saynn("[say=nova]Aww-w~. Give paw.[/say]")
+		saynn("[say=nova]Оу-у~. Дай лапу.[/say]")
 
-		saynn("Tavi obediently raises her front paw and rests it in Nova's palm while she shakes it.")
+		saynn("Тави послушно поднимает переднюю лапу и кладет её на ладонь Новы, пока та её трясет.")
 
-		saynn("[say=nova]Any particular reason why you came to me?[/say]")
+		saynn("[say=nova]Есть какая-то особенная причина, по которой ты пришла ко мне?[/say]")
 
-		saynn("A somewhat devious thought comes into your mind. You could.. offer your pet.. to be bred by Nova. Maybe she would agree?")
+		saynn("В голову приходит довольно коварная мысль. Ты могла бы... предложить свою питомицу... чтобы Нова её осеменила. Может, она согласится?")
 
-		addButton("Just showing", "Tell Nova that you are just showing her your puppy", "walkies_meetnova_justshow")
-		addButton("Offer Tavi", "Offer Nova to breed Tavi", "walkies_meetnova_offer")
+		addButton("Просто показываю", "Сказать Нове, что ты просто показываешь ей свою собачку", "walkies_meetnova_justshow")
+		addButton("Предложить Тави", "Предложить Нове осеменить Тави", "walkies_meetnova_offer")
 	if(state == "walkies_meetnova_justshow"):
 		playAnimation(StageScene.PuppyDuo, "kneel", {pc="nova", npc="tavi", npcAction="back", npcBodyState={naked=true}})
-		saynn("[say=pc]Just wanted to show her to you. Since you seem to have some connection.[/say]")
+		saynn("[say=pc]Просто хотела показать её тебе. Раз уж между вами, кажется, есть какая-то связь.[/say]")
 
-		saynn("Nova smiles and pushes Tavi onto her back before proceeding to give her all the bellyrubs. Poor puppy is panting and squirming under the guard's relentless signs of affection.")
+		saynn("Нова улыбается и толкает Тави на спину, после чего принимается вовсю чесать ей животик. Бедная щеночка тяжело дышит и извивается под неустанными ласками охранницы.")
 
-		saynn("[say=nova]Well thank you~. You did what I couldn't. Maybe I can pick up some tips from you~.[/say]")
+		saynn("[say=nova]Ну, спасибо~. Ты сделала то, что не удалось мне. Может, подсмотрю у тебя пару фишек~.[/say]")
 
-		saynn("[say=tavi]Woof! Ruff![/say]")
+		saynn("[say=tavi]Гав! Рррф![/say]")
 
-		saynn("Nova gropes Tavi's breasts but she doesn't seem to mind. The puppy loves it.")
+		saynn("Нова сжимает грудь Тави, но та, кажется, совсем не против. Щеночке это чертовски нравится.")
 
-		saynn("[say=nova]Yeah.. at least this cutie is in good hands.[/say]")
+		saynn("[say=nova]Да уж... по крайней мере, эта милашка в надежных руках.[/say]")
 
-		saynn("The guard helps Tavi to get on all fours and then stands up.")
+		saynn("Охранница помогает Тави встать на четвереньки, а затем выпрямляется во весь рост.")
 
-		saynn("[say=nova]Well, I better get back to it. Captain wouldn't approve of me playing with inmates all day.[/say]")
+		saynn("[say=nova]Ладно, пора возвращаться к делам. Капитан не одобрит, если я буду весь день возиться с заключенными.[/say]")
 
-		saynn("Fair enough. You nod and tug on the leash, inviting your pet to follow you back to her cell.")
+		saynn("Справедливо. Ты киваешь и тянешь за поводок, приглашая свою питомицу следовать за тобой обратно в камеру.")
 
-		saynn("That was a nice walk.")
+		saynn("Прогулка выдалась отличной.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "walkies_meetnova_offer"):
 		playAnimation(StageScene.PuppyDuo, "stand", {pc="nova", npc="tavi", npcBodyState={naked=true}})
-		saynn("[say=pc]I was thinking.. You have a dick, right?[/say]")
+		saynn("[say=pc]Я тут подумала... У тебя ведь есть член, верно?[/say]")
 
-		saynn("Nova smiles and tilts her head ever so slightly.")
+		saynn("Нова улыбается и едва заметно наклоняет голову.")
 
-		saynn("[say=nova]Last time I checked, yes.[/say]")
+		saynn("[say=nova]Насколько я помню, да.[/say]")
 
-		saynn("You tug on the leash, making Tavi turn around. Then you crouch near her butt and spread it, offering Nova a great view of Tavi's wet pussy."+str(" The visible hymen makes It quite evident that she is still a virgin. Tavi gasps as you do that." if isVirgin else "")+"")
+		saynn("Ты тянешь за поводок, заставляя Тави развернуться. Затем ты приседаешь рядом с её задницей и раздвигаешь ягодицы, открывая Нове великолепный вид на мокрую киску Тави."+str(" The visible hymen makes It quite evident that she is still a virgin. Tavi gasps as you do that." if isVirgin else "")+"")
 
-		saynn("[say=pc]Do you wanna fuck my puppy? She could use a breeding or two.[/say]")
+		saynn("[say=pc]Хочешь трахнуть мою щеночку? Ей бы не помешало разок-другой осемениться.[/say]")
 
-		saynn("Nova raises a brow, the view certainly arouses her, making the suit under her armor tense up in her crotch region.")
+		saynn("Нова приподнимает бровь; этот вид определенно возбуждает её, заставляя ткань костюма под броней натянуться в районе промежности.")
 
 		if (isVirgin):
-			saynn("[say=nova]I.. I can't. I don't wanna cause her pain.[/say]")
+			saynn("[say=nova]Я... я не могу. Не хочу причинять ей боль.[/say]")
 
-			saynn("[say=pc]But look at her. This puppy would love your canine cock inside her. Right, Tavi? It only hurts the first time.[/say]")
+			saynn("[say=pc]Но посмотри на неё. Эта щеночка будет в восторге от твоего псачьего члена внутри. Правда, Тави? В первый раз бывает больно, а дальше — всё супер.[/say]")
 
 		else:
-			saynn("[say=nova]I.. I can't. I don't wanna cause her pain.[/say]")
+			saynn("[say=nova]Я... я не могу. Не хочу причинять ей боль.[/say]")
 
-			saynn("[say=pc]But look at her. This puppy would love your canine cock inside her. Right, Tavi? She is not a virgin anymore so you're fine.[/say]")
+			saynn("[say=pc]Но посмотри на неё. Эта щеночка будет в восторге от твоего псачьего члена внутри. Правда, Тави? Она уже не девственница, так что всё будет в самый раз.[/say]")
 
-		saynn("You smack Tavi's butt, making her gasp again.")
+		saynn("Ты шлепаешь Тави по заднице, заставляя её снова ахнуть.")
 
-		saynn("[say=tavi]..woof..[/say]")
+		saynn("[say=tavi]..гав..[/say]")
 
-		saynn("[say=nova]I don't know.. Are you sure? I'd need a condom at least.. I won't go in raw.[/say]")
+		saynn("[say=nova]Даже не знаю... Ты уверена? Мне бы хоть презерватив... Не хочу, чтобы всё было «всухую».[/say]")
 
-		addButtonWithChecks("Best condom", "Give Nova your best condom", "walkies_meetnova_givebestcondom", [], [ButtonChecks.HasCondoms])
-		addButtonWithChecks("Worst condom", "Give Nova your worst condom", "walkies_meetnova_giveworstcondom", [], [ButtonChecks.HasCondoms])
-		addButton("Never mind", "It's fine", "walkies_meetnova_nofuck")
+		addButtonWithChecks("Лучший презерватив", "Дать Нове свой лучший презерватив", "walkies_meetnova_givebestcondom", [], [ButtonChecks.HasCondoms])
+		addButtonWithChecks("Худший презерватив", "Дать Нове свой худший презерватив", "walkies_meetnova_giveworstcondom", [], [ButtonChecks.HasCondoms])
+		addButton("Проехали", "Всё в порядке", "walkies_meetnova_nofuck")
 	if(state == "walkies_meetnova_nofuck"):
-		saynn("[say=pc]Well. It's okay then, don't worry about it.[/say]")
+		saynn("[say=pc]Ну ладно. Тогда всё в порядке, не переживай.[/say]")
 
-		saynn("Nova nods and pats Tavi some more.")
+		saynn("Нова кивает и продолжает похлопывать Тави.")
 
-		saynn("[say=nova]She is a good puppy though, you trained her well.[/say]")
+		saynn("[say=nova]Но она всё равно хорошая щеночек, ты её отлично натренировал.[/say]")
 
-		saynn("Tavi purrs and bounces happily.")
+		saynn("Тави довольно мурлычет и радостно подпрыгивает.")
 
-		saynn("[say=nova]Well, I better get back to it. Captain wouldn't approve of me playing with inmates all day.[/say]")
+		saynn("[say=nova]Ладно, пора возвращаться к делам. Капитан не одобрит, если я буду весь день возиться с заключенными.[/say]")
 
-		saynn("Fair enough. You nod and tug on the leash, inviting your pet to follow you back to her cell.")
+		saynn("Справедливо. Ты киваешь и тянешь за поводок, приглашая свою питомицу следовать за тобой обратно в камеру.")
 
-		saynn("That was a nice walk.")
+		saynn("Прогулка выдалась отличной.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "walkies_meetnova_fuck"):
 		addCharacter("nova", ["naked"])
 		playAnimation(StageScene.PuppySexOral, "tease", {pc="nova", npc="tavi", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("You offer Nova a packaged condom. Tavi looks unsure, her tail covering her slick folds. But she doesn't say no.. Seems she trusts you.")
+		saynn("Вы протягиваете Нове упакованный презерватив. Тави выглядит неуверенно, её хвост прикрывает влажные складки. Но она не говорит «нет»... Похоже, она тебе доверяет.")
 
-		saynn("[say=pc]Pretty please?[/say]")
+		saynn("[say=pc]Ну пожалуйста![/say]")
 
-		saynn("Nova hesitates about it for a second. But then decides to grab the condom after gazing at your leashed pet for a little longer.")
+		saynn("Нова на секунду колеблется. Но, еще немного поглядев на твою питомицу на поводке, всё же решает взять презерватив.")
 
-		saynn("[say=nova]Alright. This place should be quiet enough for this.[/say]")
+		saynn("[say=nova]Ладно. Здесь должно быть достаточно тихо для такого дела.[/say]")
 
-		saynn("Nova takes off her armor pieces and stores them on some bench before unzipping her undersuit, revealing a canine sheath with a red dripping cock already peeking out. The husky crouches before the feline, her length not that far from Tavi's mouth.")
+		saynn("Нова снимает элементы брони и кладет их на скамью, а затем расстегивает молнию комбинезона, обнажая собачью препуциальную сумку, из которой уже наполовину высунулся сочащийся красным член. Хаски приседает перед кошкой, и её плоть оказывается совсем близко к рту Тави.")
 
-		saynn("[say=nova]Would you help me get fully hard, cutie?[/say]")
+		saynn("[say=nova]Поможешь мне встать во весь рост, милашка?[/say]")
 
-		saynn("Tavi goes cross-eyed while looking at the cock so close to her maw. She parts her lips and lets her tongue roll out before sliding it over Nova's length, from the knotted base to the pointy tip, catching a drop of precum in the process.")
+		saynn("У Тави глаза на лоб лезут от вида члена так близко к её пасти. Она приоткрывает губы и выпускает язык, проводя им по всей длине Новы — от утолщенного основания до самого кончика, попутно слизывая каплю предэякулята.")
 
-		saynn("[say=nova]Good girl.. Do you want this?[/say]")
+		saynn("[say=nova]Хорошая девочка... Ты хочешь этого?[/say]")
 
-		saynn("Tavi looks at both of you from her low position.. And nods.")
+		saynn("Тави, находясь в низком положении, смотрит на вас обоих... и кивает.")
 
-		saynn("[say=nova]Alright, let's have some fun..[/say]")
+		saynn("[say=nova]Ладно, давай повеселимся...[/say]")
 
-		saynn("Nova rips the package open and then drags the elastic ring of the condom over her length.")
+		saynn("Нова срывает упаковку и натягивает эластичное кольцо презерватива на свой член.")
 
-		addButton("Watch", "See what happens next", "walkies_meetnova_startfuck")
+		addButton("Смотреть", "Смотреть, что будет дальше", "walkies_meetnova_startfuck")
 	if(state == "walkies_meetnova_startfuck"):
 		playAnimation(StageScene.PuppySexAllFours, "tease", {pc="nova", npc="tavi", npcBodyState={naked=true}, bodyState={naked=true, hard=true, condom=true}})
-		saynn("Nova stands up and crouches behind Tavi this time, her paws landing on her butt and caressing it, a mixture of dominance and tenderness in her touch. Tavi tries to look over her shoulder, her eyes reflecting her eagerness to please.")
+		saynn("Нова встает и на этот раз приседает позади Тави; её лапы ложатся на ягодицы девушки, лаская их — в этих прикосновениях смешались доминирование и нежность. Тави пытается выглянуть через плечо, и в её глазах читается жажда угодить.")
 
-		saynn("[say=nova]You know what to do.[/say]")
+		saynn("[say=nova]Ты знаешь, что делать.[/say]")
 
-		saynn("Tavi responds with a soft whimper before her tail decides to move out of the way, offering the husky full access to her needy holes.")
+		saynn("Тави отвечает тихим скулением, а её хвост тем временем убирается в сторону, открывая хаски полный доступ к её жаждущим отверстиям.")
 
-		saynn("[say=nova]Stay, puppy.[/say]")
+		saynn("[say=nova]Место, щеночек.[/say]")
 
-		saynn("Nova leans in low, her tongue darting out to taste that pussy's juices. Tavi's body reacts by swaying back and forth, following the motions of Nova's head, short noises leaving her throat.")
+		saynn("Нова низко наклоняется, высунув язык, чтобы слизнуть соки из этой киски. Тело Тави откликается, она покачивается в такт движениям головы Новы, издавая из горла короткие звуки.")
 
-		saynn("[say=nova]I will be gentle.[/say]")
+		saynn("[say=nova]Я буду нежной.[/say]")
 
 		if (isVirgin):
-			saynn("The husky starts guiding her cock towards Tavi's virgin hole, its head spreading the folds and quickly finding an organic obstacle that is her hymen. The more Nova puts pressure on it, the more Tavi whines and squirms, her legs shaking.")
+			saynn("Хаски начинает направлять свой член к девственной дырочке Тави; головка раздвигает складки и быстро натыкается на естественное препятствие — её девственную плеву. Чем сильнее Нова давит, тем больше Тави скулит и ерзает, а её ноги начинают дрожать.")
 
-			saynn("Seems like it will be less painful just to ram it in.. And Nova knows it.")
+			saynn("Похоже, будет не так больно, если просто войти одним резким толчком... И Нова это знает.")
 
-			saynn("[say=nova]It will hurt for some time, sweetie.. Love you.[/say]")
+			saynn("[say=nova]Немного поболит, милая... Люблю тебя.[/say]")
 
 		else:
-			saynn("The husky starts guiding her cock towards Tavi's tight hole, its head spreading the folds and already proceeding to stretch the entrance itself. The more Nova puts pressure on it, the more Tavi squirms.")
+			saynn("Хаски начинает направлять свой член к узкому отверстию Тави; головка раздвигает складки, уже растягивая само входное отверстие. Чем сильнее Нова давит, тем сильнее корчится Тави.")
 
-			saynn("[say=nova]Love you, sweetie.[/say]")
+			saynn("[say=nova]Люблю тебя, сладкая.[/say]")
 
-		addButton("Continue", "See what happens next", "walkies_meetnova_fucking")
+		addButton("Продолжить", "Смотреть, что будет дальше", "walkies_meetnova_fucking")
 	if(state == "walkies_meetnova_fucking"):
 		playAnimation(StageScene.PuppySexAllFours, "sex", {pc="nova", npc="tavi", npcBodyState={naked=true}, bodyState={naked=true, hard=true, condom=true}})
 		if (tookVirginity):
-			saynn("Nova grips Tavi's butt firmly while gathering her strength. And then, after a final sigh, she thrusts her hips forward, her knotted cock putting enough pressure on Tavi's hymen to suddenly tear through it, [b]stealing Tavi's virginity![/b]")
+			saynn("Нова крепко сжимает задницу Тави, собираясь с силами. И затем, после последнего вздоха, она резко подается бедрами вперед; её узловатый член давит на плеву так сильно, что та внезапно рвется, [b]забирая девственность Тави![/b]")
 
-			saynn("Tavi gasps and jerks forward from the sudden sharp pain but Nova doesn't let her, pulling her back onto her cock. The feline is whining loudly while her inner walls clench around their first cock, her pussy dripping green toxic-like blood onto the floor.")
+			saynn("Тави ахает и дергается вперед от внезапной острой боли, но Нова не дает ей этого сделать, насаживая её обратно на свой член. Кошка громко скулит, пока её внутренние стенки сжимаются вокруг первого члена, а из киски на пол капает зеленоватая, похожая на токсичную кровь.")
 
-			saynn("[say=nova]There we go. Sorry, hun. It will get better from now, promise.[/say]")
+			saynn("[say=nova]Вот так. Прости, милая. Дальше будет только лучше, обещаю.[/say]")
 
-			saynn("After that, Nova proceeds to slowly pick up the pace, fucking your pet while you hold her leash and watch her face. Tavi is still feeling a lot of discomfort.. but there are also quite a few pleasurable sensations too now.")
+			saynn("После этого Нова постепенно ускоряется, трахая твою питомицу, пока ты держишь её на поводке и наблюдаешь за её лицом. Тави всё ещё чувствует сильный дискомфорт... но теперь к нему примешивается и немало приятных ощущений.")
 
 		else:
-			saynn("Nova grips Tavi's butt firmly while gathering her strength. And then, after a final sigh, she thrusts her hips forward, her knotted cock stretching Tavi's sensitive folds enough to slide inside!")
+			saynn("Нова крепко сжимает задницу Тави, собираясь с силами. И затем, издав последний вздох, она резко подается тазом вперед, и её разбухший узел растягивает чувствительные складки Тави настолько, что он входит внутрь!")
 
-			saynn("Tavi gasps and jerks forward from the sudden motion but Nova doesn't let her, pulling her back onto her cock. The feline is squirming while her inner walls grip that canine length, her pussy dripping juices onto the floor.")
+			saynn("Тави ахает и дергается вперед от резкого движения, но Нова не дает ей этого сделать, насаживая её обратно на свой член. Кошечка извивается, пока её внутренние стенки обхватывают собачью плоть, а киска капает соком прямо на пол.")
 
-			saynn("[say=nova]Such a tight puppy.. Are you sure you're not a virgin?[/say]")
+			saynn("[say=nova]Какая узкая щелочка... Ты уверена, что не девственница?[/say]")
 
-			saynn("After that, Nova proceeds to slowly pick up the pace, fucking your pet while you hold her leash and watch her face. Tavi's reluctance slowly fades away, pleasurable sensations clouding her mind.")
+			saynn("После этого Нова постепенно ускоряется, трахая твою питомицу, пока ты держишь её на поводке и наблюдаешь за её лицом. Нежелание Тави постепенно исчезает, а разум затуманивают приятные ощущения.")
 
-		saynn("Little moans begin to escape from your puppy. And Nova starts to pant softly, the tightness making her more eager to increase the pace, her knot getting bigger until it starts slapping against Tavi's folds.")
+		saynn("Из твоей сучки начинают вырываться тихие стоны. Нова тоже начинает мягко дышать, и от такой тесноты ей всё сильнее хочется ускориться; её узел раздувается всё больше, пока не начинает шлепаться о складки Тави.")
 
-		saynn("[say=nova]Should I knot this little slut?..[/say]")
+		saynn("[say=nova]Может, завязаться в этой маленькой шлюшке?..[/say]")
 
 		if (tookVirginity):
-			saynn("Getting knotted during your first sex? Sounds fun.")
+			saynn("Получить узлом во время первого секса? Звучит весело.")
 
-		addButton("Continue", "See what happens next", "walkies_meetnova_faster")
+		addButton("Продолжить", "Смотреть, что будет дальше", "walkies_meetnova_faster")
 	if(state == "walkies_meetnova_faster"):
 		playAnimation(StageScene.PuppySexAllFours, "fast", {pc="nova", npc="tavi", npcBodyState={naked=true}, bodyState={naked=true, hard=true, condom=true}})
-		saynn("Tavi answers with just a moan, her body trembling while Nova thrusts inside her needy slit. She has gotten so submissive after all the training that you did, her eyes show lust and desire.")
+		saynn("Тави отвечает лишь стоном, её тело дрожит, пока Нова вколачивается в её жаждущую щель. После всех твоих тренировок она стала невероятно покорной, а в её глазах читаются похоть и желание.")
 
-		saynn("Soon, a loud passionate noise of love escapes from your pet, her muscles suddenly tense up, her pussy pulsing around that member.")
+		saynn("Вскоре твой питомец издает громкий страстный стон любви; её мышцы внезапно напрягаются, а киска начинает пульсировать вокруг члена.")
 
-		saynn("[say=nova]Cumming already?.. Ngh.. Such a soft cutie..[/say]")
+		saynn("[say=nova]Уже кончаешь?.. Нгх.. Какая же мягкая милашка..[/say]")
 
-		saynn("There is no point in pulling out since she has that condom on her cock. Nova fights Tavi's clenching pussy, shoving her length inside with more force.. until the knot slips inside too.")
+		saynn("Смысла выходить нет, ведь на её члене презерватив. Нова борется с судорожно сжимающейся киской Тави, с еще большей силой втискивая свою длину внутрь... пока узел тоже не проскальзывает внутрь.")
 
-		addButton("Continue", "See what happens next", "walkies_meetnova_knot")
+		addButton("Продолжить", "Смотреть, что будет дальше", "walkies_meetnova_knot")
 	if(state == "walkies_meetnova_knot"):
 		playAnimation(StageScene.PuppySexAllFours, "inside", {pc="nova", npc="tavi", pcCum=true, npcCum=true, npcBodyState={naked=true}, bodyState={naked=true, hard=true, condom=true}})
 		if (condomBroke):
-			saynn("Nova grunts as she manages to shove her full length inside Tavi, breaking into her womb. The extreme tightness of the puppy's inner walls shoots husky over the edge instantly. She arches her back as cock starts stuffing the condom inside Tavi's womb.. until something snaps.. Oops.. Seems, [b]the condom has broke, spilling all of its contents inside![/b]")
+			saynn("Нова кряхтит, когда ей удается загнать всю длину в Тави, прорываясь прямо в матку. Экстремальная теснота внутренних стенок щенка мгновенно доводит её до хриплого оргазма. Она выгибает спину, когда член начинает заталкивать презерватив в матку Тави... пока что-то не лопается... Ой... Кажется, [b]презерватив порвался, и всё содержимое вылилось внутрь![/b]")
 
-			saynn("Tavi is whining as her pussy gets stretched to the extreme by that knot, her whole body shakes while another orgasm overwhelmes her senses. The amount of seed in her babymaker becomes too much, some of it starts leaking out already, making Nova looking.. quite concerned.")
+			saynn("Тави скулит, так как её киска растянута до предела этим узлом, а всё её тело дрожит от очередного оргазма, захлестнувшего чувства. Количества семени в её «машинке для детей» становится слишком много, часть его уже начинает вытекать, заставляя Нову выглядеть... довольно обеспокоенной.")
 
-			saynn("[say=nova]Hey.. S-something is wrong.[/say]")
+			saynn("[say=nova]Эй.. К-кажется, что-то не так.[/say]")
 
-			saynn("Nova tries to pull out but she is tied together with Tavi too firmly by the knot. Tugging on it only makes Tavi moan more.")
+			saynn("Нова пытается вылезти, но узел слишком крепко связал её с Тави. Попытки потянуть за него заставляют Тави только стонать еще громче.")
 
-			saynn("[say=nova]I think the condom broke..[/say]")
+			saynn("[say=nova]Кажется, презерватив порвался..[/say]")
 
-			saynn("You offer Nova a little smile.")
+			saynn("Ты одариваешь Нову легкой улыбкой.")
 
-			saynn("[say=pc]It's okay~.[/say]")
+			saynn("[say=pc]Всё хорошо~.[/say]")
 
-			saynn("Nova huffs, her cheek red. It's obvious that she still enjoyed it. You crouch before Tavi and pat her.")
+			saynn("Нова фыркает с покрасневшими щеками. Очевидно, что ей всё еще нравится. Ты приседаешь перед Тави и гладишь её.")
 
-			saynn("[say=pc]Such a good little breeding toy.[/say]")
+			saynn("[say=pc]Какая хорошая маленькая игрушка для размножения.[/say]")
 
-			saynn("Tavi purrs softly..")
+			saynn("Тави тихонько мурлычет...")
 
-			saynn("They spend time like this until Nova finally manages to pull her cock out. And indeed, the condom has a gaping hole in it. All of her cum.. is inside Tavi. Oh well.")
+			saynn("Они проводят время так, пока Нова наконец не умудряется вытащить свой член. И действительно, в презервативе зияет огромная дыра. Вся её сперма... внутри Тави. Ну и ладно.")
 
 		else:
-			saynn("Nova grunts as she manages to shove her full length inside Tavi, breaking into her womb. The extreme tightness of the puppy's inner walls shoots husky over the edge instantly. She arches her back as cock starts stuffing the condom inside Tavi's womb.. And luckily, it seems to be durable enough.")
+			saynn("Нова кряхтит, когда ей удается вогнать свой член целиком в Тави, прорываясь прямо в её матку. Экстремальная теснота внутренних стенок «щенка» мгновенно доводит её до предела. Она выгибает спину, когда член начинает заталкивать презерватив внутрь матки Тави... И, к счастью, он кажется достаточно прочным.")
 
-			saynn("Tavi is whining as her pussy gets stretched to the extreme by that knot, her whole body shakes while another orgasm overwhelmes her senses. The amount of seed in her babymaker becomes too much, creating a subtle bump on her belly.")
+			saynn("Тави скулит, когда её киска растягивается до предела этим узлом, а всё её тело дрожит от очередной волны оргазма, захлестывающей чувства. Количества семени в её «машине для детей» становится слишком много, из-за чего на животе появляется едва заметный бугорок.")
 
-			saynn("[say=nova]So good..[/say]")
+			saynn("[say=nova]Так хорошо..[/say]")
 
-			saynn("Nova tries to pull out but she is tied together with Tavi too firmly by the knot. Tugging on it only makes Tavi moan more.")
+			saynn("Нова пытается вылезти, но узел слишком крепко связал её с Тави. Попытки потянуть за него заставляют Тави только стонать еще громче.")
 
-			saynn("[say=nova]I think we will be stuck like this for a while.[/say]")
+			saynn("[say=nova]Думаю, мы так застрянем на какое-то время.[/say]")
 
-			saynn("You offer Nova a little smile.")
+			saynn("Ты одариваешь Нову легкой улыбкой.")
 
-			saynn("[say=pc]It's okay~.[/say]")
+			saynn("[say=pc]Всё хорошо~.[/say]")
 
-			saynn("Nova huffs, her cheek red. It's obvious that she still enjoyed it. You crouch before Tavi and pat her.")
+			saynn("Нова фыркает с покрасневшими щеками. Очевидно, что ей всё еще нравится. Ты приседаешь перед Тави и гладишь её.")
 
-			saynn("[say=pc]Such a good little breeding toy.[/say]")
+			saynn("[say=pc]Какая хорошая маленькая игрушка для размножения.[/say]")
 
-			saynn("Tavi purrs softly..")
+			saynn("Тави тихонько мурлычет...")
 
-			saynn("They spend time like this until Nova finally manages to pull her cock out. She quickly ties up the filled condom and disposes of it.")
+			saynn("Они проводят время вот так, пока Нова наконец не умудряется вытащить свой член. Она быстро завязывает наполненный презерватив и выбрасывает его.")
 
-		addButton("Continue", "See what happens next", "walkies_meetnova_aftercum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "walkies_meetnova_aftercum")
 	if(state == "walkies_meetnova_aftercum"):
 		playAnimation(StageScene.PuppyDuo, "stand", {pc="nova", npc="tavi", npcBodyState={naked=true}, bodyState={naked=true, hard=true}})
-		saynn("Nova pats Tavi too and starts putting on her armor piece by piece.")
+		saynn("Нова тоже похлопывает Тави и начинает надевать свою броню, деталь за деталью.")
 
 		if (condomBroke):
-			saynn("[say=nova]Felt nice.. Too bad the condom snapped. Maybe you should have given me a better one.[/say]")
+			saynn("[say=nova]Было приятно... Жаль только, презерватив лопнул. Может, тебе стоило дать мне вариант получше?[/say]")
 
-			saynn("You shrug and offer her a kind smile. Maybe you were counting on this to happen.")
+			saynn("Ты пожимаешь плечами и одариваешь её доброй улыбкой. Возможно, ты и сам рассчитывал на такой исход.")
 
 		else:
-			saynn("[say=nova]Felt nice, not gonna lie.[/say]")
+			saynn("[say=nova]Не буду врать, было кайфово.[/say]")
 
-			saynn("You offer her a kind smile.")
+			saynn("Ты даришь ей добрую улыбку.")
 
-		saynn("[say=nova]Well, see you around. You too, puppy..[/say]")
+		saynn("[say=nova]Ну, еще увидимся. И тебе удачи, щеночек...[/say]")
 
-		saynn("After that intense session, you tug on the leash, inviting Tavi to follow you back to her cell.")
+		saynn("После этой интенсивной сессии ты тянешь за поводок, приглашая Тави следовать за тобой обратно в её камеру.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 func taviSpeak(normalSpeak, corruptSpeak, pureSpeak):
 	if(isCorrupt):
 		return corruptSpeak

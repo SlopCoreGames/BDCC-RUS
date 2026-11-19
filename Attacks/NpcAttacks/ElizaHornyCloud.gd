@@ -7,7 +7,7 @@ func _init():
 	aiScoreMultiplier = 0.5
 	
 func getVisibleName(_context = {}):
-	return "Horny cloud"
+	return "Похотливое облако"
 	
 func getVisibleDesc(_context = {}):
 	return "Shouldn't see this"
@@ -19,7 +19,7 @@ func _doAttack(_attacker, _receiver, _context = {}):
 	if(checkDodged(_attacker, _receiver, DamageType.Lust)):
 		return genericDodgeMessage(_attacker, _receiver)
 	
-	var text = "The vial breaks under {receiver.name}’s feet and spawns a huge pink cloud! {receiver.name} breathes it in and feels very aroused, it puts {receiver.him} into an artificial heat!"
+	var text = "Флакон разбивается под ногами {receiver.name}, выпуская огромное розовое облако! {receiver.name} вдыхает его и чувствует сильнейшее возбуждение — это погружает {receiver.him} в состояние искусственной течки!"
 	_receiver.addEffect(StatusEffect.ArtificialHeat)
 	return {
 		text = text,

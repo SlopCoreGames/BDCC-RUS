@@ -19,544 +19,544 @@ func _run():
 		addCharacter("tavi")
 		playAnimation(StageScene.Duo, "stand", {npc="captain", npcAction="sit"})
 		aimCameraAndSetLocName("cd_captain_office")
-		saynn("You step into the captain's office. The place hasn't changed much since the last time you were here. Expensive old furniture. A soft carpet makes your feet feel warm. A grand chandelier illuminates the red wood walls that have a golden trim to them.. Rich people like gold..")
+		saynn("Вы входите в кабинет капитана. С вашего последнего визита здесь почти ничего не изменилось. Дорогая старинная мебель. Мягкий ковер приятно согревает ступни. Величественная люстра освещает стены из красного дерева с золотой отделкой... Богачи обожают золото...")
 
-		saynn("In the middle is a desk with a laptop. Sitting behind it is.. the captain. One of his hands holds a projector sphere that has Elena trapped in it. The second hand.. holds his energy pistol.")
+		saynn("Посреди комнаты стоит рабочий стол с ноутбуком. За ним сидит... сам капитан. В одной руке он сжимает проекционный шар, внутри которого заперта Елена. В другой руке... его энергетический пистолет.")
 
-		saynn("[say=captain]And here you are. {pc.name} and Tavi. You came back way faster than I thought you would.[/say]")
+		saynn("[say=captain]И вот вы здесь. {pc.name} и Тави. Вы вернулись гораздо быстрее, чем я ожидал.[/say]")
 
-		saynn("Tavi was about to pounce at the guy.. but the simple act of him aiming the weapon at the sphere makes her stop.")
+		saynn("Тави уже была готова наброситься на него... но тот факт, что он направил оружие на сферу, заставил её замереть.")
 
-		saynn("[say=captain]Thought I would just let you do that? What would you have done to me, Tavi? Kill me? Or do I have to suffer first? How much is enough?[/say]")
+		saynn("[say=captain]Думал, я просто так это позволю? И что бы ты сделала со мной, Тави? Убила? Или мне нужно сначала помучиться? Сколько, по-твоему, будет достаточно?[/say]")
 
-		saynn("The life of her mother seems to be more valuable than the life of the captain.. Even if it's only a copy. You will have to find a way to save it.")
+		saynn("Жизнь её матери, кажется, ценнее жизни капитана... даже если это всего лишь копия. Вам придется найти способ её спасти.")
 
-		saynn("[say=pc]Submit and we won't hurt you. You're cornered, captain.[/say]")
+		saynn("[say=pc]Сдавайтесь, и мы вас не тронем. Вы загнаны в угол, капитан.[/say]")
 
-		saynn("He chuckles.")
+		saynn("Он усмехается.")
 
-		saynn("[say=captain]You think so? Who has the weapon here? The only weapon on this whole station? I do.[/say]")
+		saynn("[say=captain]Вы так думаете? И у кого же здесь оружие? Единственное оружие на всей этой станции? У меня.[/say]")
 
-		saynn("[say=tavi]And yet, we're still standing.[/say]")
+		saynn("[say=tavi]И тем не менее, мы всё еще стоим на ногах.[/say]")
 
-		addButton("Continue", "See what happens next", "cap_stands")
+		addButton("Продолжить", "Смотреть, что будет дальше", "cap_stands")
 	if(state == "cap_stands"):
 		playAnimation(StageScene.Duo, "stand", {npc="captain"})
-		saynn("The captain stands up as well, his hands still threatening to shoot the sphere.")
+		saynn("Капитан тоже встает, всё еще угрожающе держа палец на спуске, нацеленном на сферу.")
 
-		saynn("[say=captain]You are. Because I want you to. I have control over the life of every single person on my station. And I treasure every single one.[/say]")
+		saynn("[say=captain]Ты — потому что я так хочу. В моей власти жизнь каждого чертова человека на этой станции. И каждого из них я лелею.[/say]")
 
-		saynn("He sighs and looks around.")
+		saynn("Он вздыхает и оглядывается по сторонам.")
 
-		saynn("[say=captain]Listen.. Do I look evil? Does this look like the lair of an evil monster?[/say]")
+		saynn("[say=captain]Послушай... Разве я похож на злодея? Разве это место похоже на логово монстра?[/say]")
 
-		saynn("[say=pc]This power that you have. It corrupted you.[/say]")
+		saynn("[say=pc]Эта власть, которой ты обладаешь... она тебя развратила.[/say]")
 
-		saynn("He furrows his brows.")
+		saynn("Он хмурится.")
 
-		saynn("[say=captain]Corrupted? I always knew exactly what I wanted. My dreams haven't changed a bit since I was young.[/say]")
+		saynn("[say=captain]Развратила? Я всегда точно знал, чего хочу. Мои мечты ни капли не изменились с тех пор, как я был молод.[/say]")
 
-		saynn("[say=pc]You found a way to turn justice into slavery. Was that always your dream?[/say]")
+		saynn("[say=pc]Ты нашла способ превратить правосудие в рабство. Это и было твоей мечтой?[/say]")
 
-		saynn("The captain aims his gaze away. He is silent for an eerie amount of time.")
+		saynn("Капитан отводит взгляд. Он молчит пугающе долго.")
 
-		saynn("[say=captain]You wanna talk about that? You're not wrong. But you don't understand it. You and Tavi.[/say]")
+		saynn("[say=captain]Хочешь поговорить об этом? Ты не ошибаешься. Но ты не понимаешь сути. Ни ты, ни Тави.[/say]")
 
-		saynn("Getting into a verbal fight with him.. Might be risky.. But maybe you will be able to prove him wrong instead?")
+		saynn("Ввязаться с ним в словесную перепалку... Рискованно... Но, может, тебе удастся доказать, что он не прав?")
 
-		addButton("Sure", "Try to change the captain's mind", "big_firstquestion")
-		addButton("Just fight", "You didn't come here to talk", "just_came_to_fight")
+		addButton("Конечно", "Попытаться переубедить капитана", "big_firstquestion")
+		addButton("Просто сражаться", "Ты пришел сюда не для разговоров", "just_came_to_fight")
 	if(state == "just_came_to_fight"):
-		saynn("[say=pc]I'd rather just get it over with.[/say]")
+		saynn("[say=pc]Я бы лучше просто покончил с этим.[/say]")
 
-		saynn("[say=captain]Fair. Some do prefer to stay in the dark willingly.[/say]")
+		saynn("[say=captain]Справедливо. Некоторые действительно предпочитают добровольно оставаться во тьме.[/say]")
 
-		saynn("The captain gets into a combat stance, his weapon in his hand.")
+		saynn("Капитан принимает боевую стойку, сжимая оружие в руке.")
 
-		saynn("Looks like it's time to fight.")
+		saynn("Похоже, пришло время сражаться.")
 
-		addButton("Fight", "Start the fight", "start_fight")
+		addButton("Драться", "Начать бой", "start_fight")
 	if(state == "won_captain"):
 		playAnimation(StageScene.Duo, "stand", {npc="captain", npcAction="hurt"})
-		saynn("The captain staggers back and is about to collapse but his desk saves him, giving the wolf something to hold to.")
+		saynn("Капитана пошатывает, он вот-вот упадет, но стол спасает его, давая волку возможность за что-то ухватиться.")
 
-		saynn("[say=captain]That was good.. Very good..[/say]")
+		saynn("[say=captain]Это было неплохо... Очень даже неплохо...[/say]")
 
-		saynn("You try to close distance with him again but the guy still holds the projector sphere at gunpoint. You might not care about it.. But Tavi does, she pulls you back.")
+		saynn("Ты пытаешься снова сократить дистанцию, но парень всё еще держит проекторную сферу на мушке. Тебе, может, на неё и плевать... Но Тави не всё равно, она оттаскивает тебя назад.")
 
-		saynn("[say=captain]I think.. I think I'm beginning to understand something.[/say]")
+		saynn("[say=captain]Кажется... Кажется, я начинаю что-то понимать.[/say]")
 
-		saynn("[say=pc]That you are screwed?[/say]")
+		saynn("[say=pc]Что ты в полной заднице?[/say]")
 
-		saynn("[say=captain]That I was wrong. About you two.[/say]")
+		saynn("[say=captain]Что я ошибалась. Насчет вас двоих.[/say]")
 
-		saynn("Whatever it is he wants to say.. you kinda have to listen.")
+		saynn("Что бы он ни хотел сказать... тебе всё равно придётся выслушать.")
 
-		addButton("Continue", "See what happens next", "won_word_battle")
+		addButton("Продолжить", "Смотреть, что будет дальше", "won_word_battle")
 	if(state == "lost_captain"):
 		removeCharacter("captain")
 		removeCharacter("tavi")
 		playAnimation(StageScene.Solo, "defeat")
-		saynn("Defeated, you collapse.")
+		saynn("Подавленный, ты валишься с ног.")
 
-		saynn("The last thing you hear is..")
+		saynn("Последнее, что ты слышишь, это..")
 
-		saynn("[say=tavi]NO![/say]")
+		saynn("[say=tavi]НЕТ![/say]")
 
-		saynn("Before an energy blast sends you somewhere very dark..")
+		saynn("Прежде чем энергетический разряд отправит тебя в кромешную тьму...")
 
-		addButton("Night night", "Am I alive? Or dead? Or both?..", "lost_coma")
+		addButton("Спокойной ночи", "Я жив? Или мертв? Или и то, и другое?..", "lost_coma")
 	if(state == "lost_coma"):
-		saynn("Well-well-well. What do we have here?")
+		saynn("Ну надо же. И что же у нас тут?")
 
-		saynn("Another failed hero? Or maybe.. a defeated villain. What's the difference anyway?")
+		saynn("Очередной провальный герой? Или, может быть... поверженный злодей. Впрочем, какая разница?")
 
-		saynn("Right. At least {pc.he} has a heart. Heart that stopped beating, yes. But still a heart.")
+		saynn("Точно. По крайней мере, у {pc.he} есть сердце. Сердце, которое перестало биться, да. Но всё же сердце.")
 
-		saynn("Hearts can be restarted. Restarting a mind makes it a different mind.")
+		saynn("Сердце можно перезапустить. Но перезапуск разума делает его уже совсем другим разумом.")
 
-		saynn("Hey, nun. Can you make me some coffee? I'm dying of exhaustion over here.")
+		saynn("Эй, монашка! Сваришь мне кофе? Я тут просто подыхаю от усталости.")
 
-		saynn("Nun?")
+		saynn("Монашка?")
 
-		saynn("Oh. I think {pc.he} is waking up.")
+		saynn("О. Кажется, {pc.he} просыпается.")
 
-		addButton("Open eyes", "See what's behind the dark white curtains", "wakeup_in_med")
+		addButton("Открыть глаза", "Посмотреть, что там за темно-белыми занавесками", "wakeup_in_med")
 	if(state == "wakeup_in_med"):
 		playAnimation(StageScene.Sleeping, "idle", {bodyState={naked=true}})
 		addCharacter("eliza")
 		aimCameraAndSetLocName("medical_hospitalwards")
 		GM.pc.setLocation("med_lobby_start")
 		setFlag("TaviModule.Ch7CaptainSceneHappened", false)
-		saynn("You open your eyes.. Ow.. Being alive sucks.")
+		saynn("Ты открываешь глаза... Ох... Быть живым — та еще хрень.")
 
-		saynn("[say=eliza]Easy there.[/say]")
+		saynn("[say=eliza]Полегче там.[/say]")
 
-		saynn("[say=pc]Where am I..[/say]")
+		saynn("[say=pc]Где я?..[/say]")
 
-		saynn("[say=eliza]Heaven.[/say]")
+		saynn("[say=eliza]В раю.[/say]")
 
-		saynn("Doctor's giggle echoes in your head, causing the headache to get worse.")
+		saynn("В голове эхом отдается смешок врача, отчего головная боль становится только сильнее.")
 
-		saynn("[say=pc]Feels like hell alright..[/say]")
+		saynn("[say=pc]Чертов ад, честное слово...[/say]")
 
-		saynn("[say=eliza]Rude. Here, eat this.[/say]")
+		saynn("[say=eliza]Грубо. На, съешь это.[/say]")
 
-		saynn("She feeds you some painkillers and lets you drink some water. The white sterile walls make your eyes squint.")
+		saynn("Она дает тебе обезболивающее и дает попить воды. От стерильно-белых стен глаза невольно жмурятся.")
 
-		saynn("[say=pc]Where is Tavi?[/say]")
+		saynn("[say=pc]Где Тави?[/say]")
 
-		saynn("Near your bed stands a doctor. She shrugs.")
+		saynn("У твоей кровати стоит врач. Она пожимает плечами.")
 
-		saynn("[say=eliza]If she is not here, she is either dead or in her cell.[/say]")
+		saynn("[say=eliza]Если её здесь нет, значит, она либо сдохла, либо сидит в камере.[/say]")
 
-		saynn("That doctor quickly grabs her datapad and checks something.")
+		saynn("Врач быстро хватает свой датапад и что-то проверяет.")
 
-		saynn("[say=eliza]And looks like she is not dead. So you're in luck~.[/say]")
+		saynn("[say=eliza]И, похоже, она не сдохла. Так что тебе повезло~.[/say]")
 
-		saynn("Welcome to day "+str(GM.main.getDays())+" of your sentence!")
+		saynn("Добро пожаловать в "+str(GM.main.getDays())+" о твоем сроке!")
 
-		addButton("Get up", "Time to get up", "wakeup_in_med_up")
+		addButton("Встать", "Пора вставать", "wakeup_in_med_up")
 	if(state == "wakeup_in_med_up"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("Carefully, you get up, only hitting a few objects in the process.")
+		saynn("Ты осторожно поднимаешься, лишь пару раз задев что-то по пути.")
 
-		saynn("[say=pc]Can I go?[/say]")
+		saynn("[say=pc]Можно мне идти?[/say]")
 
-		saynn("Doctor quickly inspects you.")
+		saynn("Доктор быстро осматривает тебя.")
 
-		saynn("[say=eliza]Go you probably can. How far you can get is another question. Try not to let that happen again~.[/say]")
+		saynn("[say=eliza]Иди, скорее всего, можно. А вот как далеко ты сможешь зайти — это уже другой вопрос. Постарайся больше так не попадаться~.[/say]")
 
-		saynn("[say=pc]What?[/say]")
+		saynn("[say=pc]Что?[/say]")
 
-		saynn("[say=eliza]Try not to die again, patient. Although.. I do like practicing.[/say]")
+		saynn("[say=eliza]Постарайся больше не умирать, пациент. Хотя... мне нравится практиковаться.[/say]")
 
-		saynn("Yeah.. time to go. Looks like you will have to get to the captain again.")
+		saynn("Да... пора идти. Похоже, тебе придется снова идти к капитану.")
 
-		addButton("Leave", "See what happens next", "endthescene")
+		addButton("Уйти", "Смотреть, что будет дальше", "endthescene")
 	if(state == "big_firstquestion"):
-		saynn("[say=pc]Sure.[/say]")
+		saynn("[say=pc]Конечно.[/say]")
 
-		saynn("The captain inhales audibly and lowers his gun before sitting on the corner of his desk, taking a more casual pose. All the while you and Tavi are standing near the entrance.")
+		saynn("Капитан шумно вдыхает и опускает пистолет, после чего садится на край стола, принимая более расслабленную позу. Тем временем вы с Тави стоите у входа.")
 
-		saynn("He looks at you.")
+		saynn("Он смотрит на тебя.")
 
-		saynn("[say=captain]Let me start slow. We, people, have many needs. We have a need to eat, drink, sleep, have sex.. We have a need to socialize too and a few other ones. You know what need we don't have?[/say]")
+		saynn("[say=captain]Давай начну издалека. У нас, людей, много потребностей. Нам нужно есть, пить, спать, заниматься сексом... Нам также нужно общение и еще кое-что. Знаешь, какой потребности у нас нет?[/say]")
 
-		saynn("The captain puts the sphere on the table and leans behind the desk before producing a bottle of cold beer. He opens it with the handle of his gun and takes a good sip.")
+		saynn("Капитан кладет сферу на стол и откидывается на спинку кресла, после чего достает бутылку холодного пива. Он открывает её рукояткой пистолета и делает приличный глоток.")
 
-		saynn("[say=captain]We don't have a need for freedom. Many people are perfectly fine with turning their brains off and letting someone else guide them. Some are ready to give up themselves fully for another person. Sometimes it's not even a person. Any passion can enslave us.[/say]")
+		saynn("[say=captain]У нас нет потребности в свободе. Многим людям вполне комфортно отключить мозги и позволить кому-то другому вести их за собой. Некоторые готовы полностью раствориться в другом человеке. А иногда это даже не человек. Любая страсть может поработить нас.[/say]")
 
-		saynn("He looks at your collars and smiles.")
+		saynn("Он смотрит на твои ошейники и улыбается.")
 
-		saynn("[say=captain]We want to be slaves.[/say]")
+		saynn("[say=captain]Мы хотим быть рабами.[/say]")
 
-		saynn("Better to be very careful with your choice of words..")
+		saynn("Лучше подбирать слова поосторожнее...")
 
-		addButton("Then why don't you put a collar on? What a hypocrite", "say this", "1_putcollar")
-		addButton("Not everyone wants to be a slave. And it doesn't make it legal", "say this", "big_1_noteveryone")
-		addButton("You are just finding excuses to keep sex slaves around", "say this", "1_excuses")
-		addButton("Fuck you. I will never be a slave", "say this", "1_fuckyou")
+		addButton("Тогда почему бы тебе не надеть ошейник? Какая лицемерка", "сказать это", "1_putcollar")
+		addButton("Не все хотят быть рабами. И это не делает всё законным", "сказать это", "big_1_noteveryone")
+		addButton("Ты просто ищешь оправдания, чтобы держать вокруг себя секс-рабов", "сказать это", "1_excuses")
+		addButton("Да пошла ты. Я никогда не стану рабом", "сказать это", "1_fuckyou")
 	if(state == "1_putcollar"):
-		saynn("[say=pc]Then why don't you put a collar on? What a hypocrite. Why don't you try being like us?[/say]")
+		saynn("[say=pc]Так почему бы тебе тогда не надеть ошейник? Какая же ты лицемерка. Почему бы тебе не попробовать стать такой, как мы?[/say]")
 
-		saynn("He rolls his eyes.")
+		saynn("Он закатывает глаза.")
 
-		saynn("[say=captain]Next you're gonna tell me that the world is unfair? Very observant. But also very stupid.[/say]")
+		saynn("[say=captain]Что дальше? Скажешь мне, что мир несправедлив? Очень наблюдательно. Но при этом чертовски тупо.[/say]")
 
-		saynn("He sighs.")
+		saynn("Он вздыхает.")
 
-		saynn("[say=captain]I didn't do any crimes for once. I climbed through ranks. I didn't get any special treatment. I had to fight for my spot under the sun. Why would I even.. I don't even know why I'm trying to explain this to you. You're clearly delusional.[/say]")
+		saynn("[say=captain]В этот раз я не совершала преступлений. Я пробивалась по рангам. Никаких поблажек, никакого особого отношения. Мне пришлось сражаться за свое место под солнцем. С чего бы мне вообще... Да я даже не знаю, зачем пытаюсь тебе это объяснить. Ты явно бредишь.[/say]")
 
-		saynn("He stands up and gets into a combat stance.")
+		saynn("Он встает и принимает боевую стойку.")
 
-		saynn("[say=captain]It was worth a try I guess.[/say]")
+		saynn("[say=captain]Думаю, попытка была не лишней.[/say]")
 
-		saynn("Seems like it's a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Fight", "Start the fight", "start_fight")
+		addButton("Драться", "Начать бой", "start_fight")
 	if(state == "1_excuses"):
-		saynn("[say=pc]You are just finding excuses to try to keep your sex slaves around for longer. You know that it's not legal. And you don't care. You just want your dick sucked.[/say]")
+		saynn("[say=pc]Ты просто ищешь оправдания, чтобы подольше удерживать своих секс-рабынь. Ты прекрасно знаешь, что это незаконно. И тебе плевать. Тебе просто хочется, чтобы тебе сосали член.[/say]")
 
-		saynn("He sighs.")
+		saynn("Он вздыхает.")
 
-		saynn("[say=captain]You don't even understand how wrong you are. Do you see any sex slaves by my side? Look under the desk, there aren't any. I don't think I can even argue with your words. Because.. You're plainly wrong. And you came to me with that? Pathetic.[/say]")
+		saynn("[say=captain]Ты даже не понимаешь, насколько ты неправа. Ты видишь хоть одну рабыню рядом со мной? Загляни под стол — там никого нет. Кажется, мне даже нет смысла спорить с твоими словами. Потому что... ты очевидно ошибаешься. И ты пришла ко мне с этим? Жалкое зрелище.[/say]")
 
-		saynn("He stands up and gets into a combat stance.")
+		saynn("Он встает и принимает боевую стойку.")
 
-		saynn("[say=captain]It was worth a try.[/say]")
+		saynn("[say=captain]Стоило попробовать.[/say]")
 
-		saynn("Seems like it's a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Fight", "Start the fight", "start_fight")
+		addButton("Драться", "Начать бой", "start_fight")
 	if(state == "1_fuckyou"):
-		saynn("[say=pc]Fuck you. I will never be a slave.[/say]")
+		saynn("[say=pc]Да пошел ты. Я никогда не стану рабом.[/say]")
 
-		saynn("The captain tilts his head.")
+		saynn("Капитан наклоняет голову.")
 
-		saynn("[say=captain]You are, though. Look at your neck. Oh right, your huge ego prevents you from seeing anything past your nose.[/say]")
+		saynn("[say=captain]А ведь так и есть. Посмотри на свою шею. Ах да, твое раздутое эго мешает тебе видеть хоть что-то дальше собственного носа.[/say]")
 
-		saynn("He sighs and stands up before getting into a combat stance.")
+		saynn("Он вздыхает и встает, принимая боевую стойку.")
 
-		saynn("[say=captain]Slaves are easy to control. But you wouldn't understand anything about that anyway.[/say]")
+		saynn("[say=captain]Рабами легко управлять. Но тебе всё равно этого не понять.[/say]")
 
-		saynn("Seems like it's a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Fight", "Start the fight", "start_fight")
+		addButton("Драться", "Начать бой", "start_fight")
 	if(state == "big_1_noteveryone"):
-		saynn("[say=pc]Not everyone wants to be a slave. And it doesn't make it legal.[/say]")
+		saynn("[say=pc]Не все хотят быть рабами. И это не делает происходящее законным.[/say]")
 
-		saynn("[say=captain]It is legal. Inmates wearing collars is fully legal. Otherwise we wouldn't be doing it.[/say]")
+		saynn("[say=captain]Это законно. Ношение ошейников заключенными — абсолютно законная процедура. Иначе бы мы этим не занимались.[/say]")
 
-		saynn("You feel like you gotta push him further..")
+		saynn("Чувствуется, что тебе хочется надавить на него еще сильнее...")
 
-		saynn("[say=pc]Did you even hear what I said? I wasn't talking about collars. I was talking about slavery. Collars are just a bi-product of it, a sign of how fucked up and rotten this whole justice system is. Do you really think that it's okay to do that because we are criminals? What about other things?[/say]")
+		saynn("[say=pc]Ты вообще слышал, что я сказала? Я говорила не об ошейниках. Я говорила о рабстве. Ошейники — лишь побочный продукт, знак того, насколько ебанутая и прогнившая вся эта система правосудия. Ты реально думаешь, что так можно только потому, что мы преступники? А как насчет всего остального?[/say]")
 
-		saynn("[say=captain]I think.. I think it is.. yeah..[/say]")
+		saynn("[say=captain]Думаю... думаю, что да... вроде того...[/say]")
 
-		saynn("[say=pc]You're saying that we want to be slaves. No we don't. I don't. Tavi doesn't. Many others don't. People don't. You're just forcing us. Writing it down into laws doesn't make it okay. It makes it worse.[/say]")
+		saynn("[say=pc]Ты хочешь сказать, что мы сами хотим быть рабами. Нет, это не так. Не хочу я. Тави не хочет. Многие другие тоже не хотят. Люди не хотят. Ты просто заставляешь нас. То, что это прописано в законах, не делает это правильным. Это делает всё только хуже.[/say]")
 
-		saynn("The captain stays quiet for a few seconds, sipping his beer.")
+		saynn("Капитан молчит несколько секунд, потягивая пиво.")
 
-		saynn("[say=captain]Forcing? You know.. Here is a truth for you. People don't even understand what they want. Their dreams are stupid, often counterproductive. If given enough freedom, they always gravitate towards the source of the most easy happiness. But wanking all day won't get you far. Without a powerful leader, we are headed for destruction. I am that leader.[/say]")
+		saynn("[say=captain]Принуждение? Знаешь... Вот тебе истина. Люди даже не понимают, чего хотят. Их мечты глупы и зачастую контрпродуктивны. Получив достаточно свободы, они всегда тянутся к источнику самого легкого счастья. Но если только дрочить весь день, далеко не уедешь. Без сильного лидера мы катимся к гибели. И этот лидер — я.[/say]")
 
-		saynn("He sighs and spreads his arms.")
+		saynn("Он вздыхает и разводит руки в стороны.")
 
-		saynn("[say=captain]Everyone is happy here, can't you see? So I must be doing something right.[/say]")
+		saynn("[say=captain]Здесь все счастливы, разве ты не видишь? Значит, я всё делаю правильно.[/say]")
 
-		saynn("He switched the topic.. which means it's you who is doing something right.")
+		saynn("Он сменил тему... а значит, это ты всё делаешь правильно.")
 
-		addButton("Let people do what they want. Even if they want to destroy themselves", "say this", "2_let")
-		addButton("I'm not happy. You need to do better captain", "say this", "2_nothappy")
-		addButton("Oh yeah. Is that why you made it so staff members can lose?", "say this", "big_2_staff")
-		addButton("Leader? You're just a power-hungry asshole", "say this", "2_asshole")
+		addButton("Дай людям делать то, что они хотят. Даже если они хотят себя уничтожить.", "сказать это", "2_let")
+		addButton("Я не счастлив. Тебе нужно постараться получше, капитан.", "сказать это", "2_nothappy")
+		addButton("А, ну да. Так поэтому ты всё устроил так, чтобы персонал тоже мог проигрывать?", "сказать это", "big_2_staff")
+		addButton("Лидер? Ты просто жаждущий власти мудак.", "сказать это", "2_asshole")
 	if(state == "2_let"):
-		saynn("[say=pc]You gotta let people do what they want. Even if they want to destroy themselves.[/say]")
+		saynn("[say=pc]Нужно давать людям делать то, что они хотят. Даже если они хотят себя уничтожить.[/say]")
 
-		saynn("Captain looks at the ceiling.. like he is thinking.")
+		saynn("Капитан смотрит в потолок... будто о чем-то размышляет.")
 
-		saynn("[say=captain]Nah. I don't think I will. Should I even explain why?[/say]")
+		saynn("[say=captain]Да нет. Не думаю. Да и стоит ли объяснять почему?[/say]")
 
-		saynn("He stands up and gets into a combat stance.")
+		saynn("Он встает и принимает боевую стойку.")
 
-		saynn("[say=captain]It was worth a try I guess.[/say]")
+		saynn("[say=captain]Думаю, попытка была не лишней.[/say]")
 
-		saynn("Seems like it's a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Fight", "Start the fight", "start_fight")
+		addButton("Драться", "Начать бой", "start_fight")
 	if(state == "2_nothappy"):
-		saynn("[say=pc]I'm not happy. You need to do better, captain.[/say]")
+		saynn("[say=pc]Я не в восторге. Вам нужно стараться лучше, капитан.[/say]")
 
-		saynn("The guy raises a brow.")
+		saynn("Парень вскидывает бровь.")
 
-		saynn("[say=captain]May I ask how? How well should I treat convicted criminals? With hugs and praise? Give me a break. What I meant is that everyone has a chance to be happy. But they obviously need to put in work. Nothing is free.[/say]")
+		saynn("[say=captain]Можно спросить — как именно? Насколько хорошо мне нужно обращаться с осужденными преступниками? Обнимать и хвалить? Не смеши меня. Я имел в виду, что у каждого есть шанс на счастье. Но им явно нужно приложить усилия. Ничего не дается даром.[/say]")
 
-		saynn("He stands up and gets into a combat stance.")
+		saynn("Он встает и принимает боевую стойку.")
 
-		saynn("[say=captain]It was worth a try I guess.[/say]")
+		saynn("[say=captain]Думаю, попытка была не лишней.[/say]")
 
-		saynn("Seems like it's a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Fight", "Start the fight", "start_fight")
+		addButton("Драться", "Начать бой", "start_fight")
 	if(state == "2_asshole"):
-		saynn("[say=pc]Leader? You're just a power-hungry asshole.[/say]")
+		saynn("[say=pc]Лидер? Да ты просто жаждущий власти мудак.[/say]")
 
-		saynn("The captain sighs and looks at the floor.")
+		saynn("Капитан вздыхает и опускает взгляд в пол.")
 
-		saynn("[say=captain]Power is not a goal. It's a tool. It's a way to achieve a certain goal. How can you not understand that? That's like calling people who are trying to earn more credits greedy.[/say]")
+		saynn("[say=captain]Власть — это не цель. Это инструмент. Способ достичь определенной цели. Как можно этого не понимать? Это всё равно что называть жадными людей, которые пытаются заработать побольше кредитов.[/say]")
 
-		saynn("He stands up and gets into a combat stance.")
+		saynn("Он встает и принимает боевую стойку.")
 
-		saynn("[say=captain]Being a leader also comes with a lot of responsibility. It's not as fun as you think. Takes a lot of will-power to create something. But you wouldn't know that, you're here to destroy.[/say]")
+		saynn("[say=captain]Быть лидером — значит нести огромную ответственность. Это не так весело, как ты думаешь. Нужно иметь железную волю, чтобы что-то создать. Но тебе ли об этом знать — ты здесь, чтобы всё разрушать.[/say]")
 
-		saynn("Seems like it's a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Fight", "Start the fight", "start_fight")
+		addButton("Драться", "Начать бой", "start_fight")
 	if(state == "big_2_staff"):
-		saynn("[say=pc]Oh yeah. Is that why you made it so staff members can lose? Inmates gotta have some fun too, right? Keeps them from starting a wide-spread uprising. It's worth it, right?[/say]")
+		saynn("[say=pc]Ну да. Так поэтому ты всё устроил так, чтобы персонал мог проигрывать? Заключенным тоже нужно хоть какое-то веселье, верно? Это ведь помогает избежать массового восстания. Оно того стоит, а?[/say]")
 
-		saynn("The captain rubs his chin, pondering. Then he sips some more beer.")
+		saynn("Капитан задумчиво потирает подбородок, а затем делает еще один глоток пива.")
 
-		saynn("[say=captain]Only through conflict do we become stronger. That's why I'm talking with you. Instead of just shooting you two and getting it over with.[/say]")
+		saynn("[say=captain]Только через конфликт мы становимся сильнее. Вот почему я разговариваю с тобой, а не просто пристрелил вас обоих, чтобы не возиться.[/say]")
 
-		saynn("There is something there. Something that you can hook onto.")
+		saynn("В его словах что-то есть. Что-то, за что можно зацепиться.")
 
-		saynn("[say=pc]Conflict? How about you train your staff rather than letting them get fucked and learn lessons the hard way?[/say]")
+		saynn("[say=pc]Конфликт? А что если тебе начать тренировать персонал, вместо того чтобы позволять им трахаться и усваивать уроки самым жестким способом?[/say]")
 
-		saynn("The captain stays quiet for some time.")
+		saynn("Капитан на некоторое время замолкает.")
 
-		saynn("[say=captain]Evolution had millions of years and that's the best it came up with. Survival of the fittest. Strong ones take what they want and become stronger by fighting each other. But the weak ones quickly learn to enjoy being taken by the best. It's a win-win really..[/say]")
+		saynn("[say=captain]У эволюции были миллионы лет, и вот лучший результат, которого она добилась. Выживание сильнейших. Сильные берут то, что хотят, и становятся еще сильнее в битвах друг с другом. А слабые быстро учатся получать удовольствие от того, что их берут лучшие. В общем, ситуация выигрышная для всех...[/say]")
 
-		saynn("He sighs and sips again. Hard to tell if he is getting drunk though. But you feel like you are close to the truth.")
+		saynn("Он вздыхает и снова отхлебывает из кружки. Трудно сказать, пьянеет ли он, но у тебя такое чувство, что ты близок к истине.")
 
-		saynn("[say=captain]That's why wars need to continue. That's why we need more soldiers and people who will serve them. Yes, that's why guards also need to sometimes lose and be beat up and even fucked. That's how we achieve progress! That's the only way.[/say]")
+		saynn("[say=captain]Вот почему войны должны продолжаться. Вот почему нам нужно больше солдат и людей, которые будут им служить. Да, именно поэтому стражам тоже нужно иногда проигрывать, получать по морде и даже трахаться. Так мы достигаем прогресса! Это единственный путь.[/say]")
 
-		addButton("Wars need to stop. End of story", "say this", "3_nowars")
-		addButton("Can't we just finance the research projects more? Instead of fueling corruption", "say this", "3_research")
-		addButton("Is that why you are trying to ban androids? They don't fit in your little scheme?", "say this", "big_3_androids")
-		addButton("Oh shut up please. I'm getting sick just listening to you", "say this", "3_shutup")
+		addButton("Войны должны прекратиться. И точка.", "сказать это", "3_nowars")
+		addButton("Разве мы не можем просто больше финансировать исследовательские проекты? Вместо того чтобы подпитывать коррупцию?", "сказать это", "3_research")
+		addButton("Так вот почему ты пытаешься запретить андроидов? Они не вписываются в твой хитрый план?", "сказать это", "big_3_androids")
+		addButton("Ой, да заткнись уже, пожалуйста. Меня уже тошнит от твоих слов.", "сказать это", "3_shutup")
 	if(state == "3_nowars"):
-		saynn("[say=pc]Wars need to stop. They're destructive and painful. No one wins in a war. End of story.[/say]")
+		saynn("[say=pc]Войны должны прекратиться. Они разрушительны и болезненны. В войне не побеждает никто. Точка.[/say]")
 
-		saynn("The captain sighs and shakes his head.")
+		saynn("Капитан вздыхает и качает головой.")
 
-		saynn("[say=captain]World without wars.. Wouldn't that be a perfect utopia? Yes. But you know why wars will never stop? I think I told you already.[/say]")
+		saynn("[say=captain]Мир без войн... Разве это не была бы идеальная утопия? Да. Но знаешь, почему войны никогда не прекратятся? Кажется, я уже говорил тебе это.[/say]")
 
-		saynn("[say=pc]Anti-war people will never win any. But why not?[/say]")
+		saynn("[say=pc]Пацифисты никогда не выиграют ни одну войну. Но почему?[/say]")
 
-		saynn("The captain smiles.")
+		saynn("Капитан улыбается.")
 
-		saynn("[say=captain]They would have to start a war. Starting a war is easy. Anyone with a rock can do it. Ending it.. requires people to give up something. And we really hate giving up.[/say]")
+		saynn("[say=captain]Им самим пришлось бы начать войну. А начать войну — проще простого. Любой дурак с камнем в руках справится. А вот чтобы её закончить... людям нужно чем-то пожертвовать. А мы чертовски не любим расставаться с тем, что имеем.[/say]")
 
-		saynn("He sighs.")
+		saynn("Он вздыхает.")
 
-		saynn("[say=captain]Listen. Conflicts are all around us. They are what makes this life exciting. Conflicts are a disbalance, a contrast between two opinions. Contrast creates feelings. Without feelings.. we would be bored. Or dead. Same thing really.[/say]")
+		saynn("[say=captain]Послушай. Конфликты повсюду вокруг нас. Именно они делают эту жизнь захватывающей. Конфликт — это дисбаланс, контраст между двумя мнениями. Контраст рождает чувства. Без чувств... нам было бы скучно. Или мы были бы мертвы. Впрочем, это почти одно и то же.[/say]")
 
-		saynn("He stands up and gets into a combat stance.")
+		saynn("Он встает и принимает боевую стойку.")
 
-		saynn("[say=captain]So let's fight, shall we. Some people only understand the language of force anyway. And you know that.[/say]")
+		saynn("[say=captain]Так что давай сражаться, а? Некоторые люди всё равно понимают только язык силы. И ты это прекрасно знаешь.[/say]")
 
-		saynn("Seems like it's a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Fight", "Start the fight", "start_fight")
+		addButton("Драться", "Начать бой", "start_fight")
 	if(state == "3_research"):
-		saynn("[say=pc]Can't we just finance the research projects more? Instead of fueling wars and corruption more. We can find answers to all the questions of our universe, we just have to work together.[/say]")
+		saynn("[say=pc]Разве мы не можем просто больше спонсировать исследовательские проекты? Вместо того чтобы подливать масла в огонь войн и коррупции. Мы можем найти ответы на все вопросы нашей вселенной, нужно только работать сообща.[/say]")
 
-		saynn("The captain looks at a window that has a great view of outer space.")
+		saynn("Капитан смотрит в иллюминатор, из которого открывается великолепный вид на открытый космос.")
 
-		saynn("[say=captain]But why? What value do these answers hold? Will they save us? From what?[/say]")
+		saynn("[say=captain]Но зачем? Какой толк от этих ответов? Спасут ли они нас? От чего?[/say]")
 
-		saynn("[say=pc]Our galaxy holds all sorts of secrets. What if something special is in the center? What if we can become immortal. Rewrite time. Transcend.[/say]")
+		saynn("[say=pc]Наша галактика хранит множество тайн. А что, если в самом центре скрыто нечто особенное? Что, если мы сможем обрести бессмертие? Переписать время? Вознестись?[/say]")
 
-		saynn("[say=captain]So.. Satisfying curiosity? What stops me from building more ships instead and destroying or enslaving your little research colony? There is a tangible value in that. Because I can sell you and your property. What you propose is.. worthless.. because the risks of finding nothing are too high.[/say]")
+		saynn("[say=captain]Значит... удовлетворение любопытства? А что мешает мне вместо этого построить больше кораблей и уничтожить или поработить вашу крошечную исследовательскую колонию? В этом есть вполне осязаемая выгода. Ведь я смогу продать и вас, и всё ваше имущество. То же, что предлагаете вы... обесценивается... потому что риск не найти ничего слишком велик.[/say]")
 
-		saynn("He sighs.")
+		saynn("Он вздыхает.")
 
-		saynn("[say=captain]Listen. The way we get motivated to do anything is extremely simple. We wanna do things that make us happy and avoid things that make us unhappy. And the second part is much more powerful.[/say]")
+		saynn("[say=captain]Слушай. То, как нами движет мотивация — штука крайне простая. Мы хотим делать то, что приносит нам счастье, и избегать того, что приносит страдания. И вторая часть куда сильнее первой.[/say]")
 
-		saynn("The captain points at the vast nothingness of space.")
+		saynn("Капитан указывает на безбрежную пустоту космоса.")
 
-		saynn("[say=captain]You know why many species found a way to escape their home planets and start traveling through space? Curiosity only plays an insignificantly small role in that. Fear was the real motivator. Fear that their resources are running out. Fear that they could destroy the planet. Or that the planet will destroy them. There was a threat. A real tangible threat.[/say]")
+		saynn("[say=captain]Знаешь, почему многие виды нашли способ покинуть свои родные планеты и отправиться в космические странствия? Любопытство в этом играет ничтожно малую роль. Настоящим двигателем был страх. Страх, что ресурсы иссякнут. Страх, что они сами могут уничтожить планету. Или что планета уничтожит их. Была угроза. Реальная, осязаемая угроза.[/say]")
 
-		saynn("He stands up and takes a combat stance.")
+		saynn("Он встает и принимает боевую стойку.")
 
-		saynn("[say=captain]Threats make us get up and do things. Lack of a threat means everyone is busy fucking each other all day. And I'm sick of pointless fucking. But you clearly don't understand this. You think promises of fairy tales will motivate people to follow you? Nah, they won't.[/say]")
+		saynn("[say=captain]Угрозы заставляют нас вставать и шевелиться. А когда угроз нет, все только и делают, что трахаются друг с другом целыми днями. И мне уже осточертел этот бессмысленный трах. Но ты явно этого не понимаешь. Думаешь, обещания сказочного будущего заставят людей идти за тобой? Хрен там, не заставят.[/say]")
 
-		saynn("Seems like it's a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Fight", "Start the fight", "start_fight")
+		addButton("Драться", "Начать бой", "start_fight")
 	if(state == "3_shutup"):
-		saynn("[say=pc]Oh, shut up, please. I'm getting sick just listening to you and your crazy ramblings.[/say]")
+		saynn("[say=pc]Ой, да заткнись ты уже, умоляю. Меня уже тошнит от твоих безумных бредней.[/say]")
 
-		saynn("The captain shrugs.")
+		saynn("Капитан пожимает плечами.")
 
-		saynn("[say=captain]Insulting me won't change anything. How about you listen rather than.. Oh, who am I kidding.[/say]")
+		saynn("[say=captain]От того, что ты меня оскорбляешь, ничего не изменится. Может, лучше будешь слушать, а не... Ох, кого я обманываю.[/say]")
 
-		saynn("He stands up and gets into a combat stance.")
+		saynn("Он встает и принимает боевую стойку.")
 
-		saynn("[say=captain]I don't wanna waste my time any longer. It was worth a try I guess.[/say]")
+		saynn("[say=captain]Не хочу больше тратить на тебя время. Пожалуй, попытка того стоила.[/say]")
 
-		saynn("Seems like it's a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Fight", "Start the fight", "start_fight")
+		addButton("Драться", "Начать бой", "start_fight")
 	if(state == "big_3_androids"):
-		saynn("[say=pc]Is that why you are trying to ban androids? They don't fit in your little scheme? Artificial intelligence can fix a lot of our problems.[/say]")
+		saynn("[say=pc]Так вот почему ты пытаешься запретить андроидов? Они не вписываются в твой хлипкий план? Искусственный интеллект может решить кучу наших проблем![/say]")
 
-		saynn("Suddenly, the captain growls and throws the beer bottle away, causing it to shatter. You have clearly struck a nerve.")
+		saynn("Внезапно капитан рычит и швыряет бутылку пива, которая с грохотом разлетается вдребезги. Ты явно задел его за живое.")
 
-		saynn("[say=captain]Artificial thoughts, artificial bodies, artificial goals. Everything about them is artificial. They're fake.[/say]")
+		saynn("[say=captain]Искусственные мысли, искусственные тела, искусственные цели. В них всё искусственное. Они — подделка.[/say]")
 
-		saynn("[say=pc]Androids can serve us. They can fight wars. They can do things a million times faster than we can. Perfectly repeatable and iterable. Isn't that real progress?[/say]")
+		saynn("[say=pc]Андроиды могут служить нам. Они могут воевать. Они могут делать вещи в миллион раз быстрее нас. Идеально воспроизводимые и повторяемые процессы. Разве это не настоящий прогресс?[/say]")
 
-		saynn("He switches from anger and suddenly starts laughing at your words.")
+		saynn("Он резко переходит от ярости к внезапному смеху над твоими словами.")
 
-		saynn("[say=captain]Progress? Artificial brain is only as good as the brain that created it. It can never be better than the real one at anything. And since we're not ideal, artificial brains that we create are always worse. Always! It's not progress. It's a degradation. We could just make more soldiers instead, the process of breeding is perfectly scaleable. My prison proved that![/say]")
+		saynn("[say=captain]Прогресс? Искусственный мозг хорош лишь настолько, насколько хорош мозг его создателя. Он никогда не сможет превзойти настоящий ни в чем. А так как мы сами не идеальны, создаваемые нами искусственные мозги всегда хуже. Всегда! Это не прогресс. Это деградация. Мы могли бы просто штамповать больше солдат — процесс размножения идеально масштабируем. Моя тюрьма это доказала![/say]")
 
-		saynn("The captain is so passionate about this.. He frowns while looking at the projector sphere in his hand.")
+		saynn("Капитан говорит об этом с такой страстью... Он хмурится, глядя на проекционную сферу в своей руке.")
 
-		saynn("[say=captain]Androids are unsafe too. People are predictable. You can project yourself onto someone and figure out why they did something. With a machine.. Who knows. It might be programmed to stab you in the back the next time you turn away. But then people begin to have feelings for these things. It's so wrong. Unnatural..[/say]")
+		saynn("[say=captain]Андроиды тоже небезопасны. Люди предсказуемы. Ты можешь проецировать себя на другого человека и понять, почему он так поступил. А машина... кто знает. Она может быть запрограммирована воткнуть тебе нож в спину, как только ты отвернешься. Но потом люди начинают испытывать к этим штукам чувства. Это так неправильно. Противно, неестественно...[/say]")
 
-		saynn("He looks.. vulnerable. Now could be the time to prove him that he is wrong.")
+		saynn("Он выглядит... уязвимым. Сейчас самое время доказать ему, что он ошибается.")
 
-		addButton("Androids don't have to be perfect. Being different is okay", "say this", "4_perfect")
-		addButton("Times are changing. You can't do anything to stop it. And so you're scared", "say this", "4_times")
-		addButton("I understand. You need more control since androids are a threat", "", "4_understand")
-		addButton("Nice sob story. Did a machine steal your wife and now you're angry?", "", "4_sobstory")
+		addButton("Андроидам не обязательно быть идеальными. Быть другими — это нормально.", "сказать это", "4_perfect")
+		addButton("Времена меняются. Ты ничего не можешь с этим поделать. И поэтому тебе страшно.", "сказать это", "4_times")
+		addButton("Я понимаю. Тебе нужно больше контроля, раз андроиды представляют угрозу.", "", "4_understand")
+		addButton("Классная сопливая история. Какая-то железка увела у тебя жену, и теперь ты злишься?", "", "4_sobstory")
 	if(state == "4_perfect"):
-		saynn("[say=pc]You know.. Androids don't have to be perfect. They never claimed to be. They're different from us. And I think.. that's okay.[/say]")
+		saynn("[say=pc]Знаешь... андроидам не обязательно быть идеальными. Они никогда на это не претендовали. Они отличаются от нас. И я думаю... это нормально.[/say]")
 
-		saynn("The captain furrows his brows.")
+		saynn("Капитан хмурит брови.")
 
-		saynn("[say=captain]Why are we wasting resources on them? It will never pay off.[/say]")
+		saynn("[say=captain]Зачем мы тратим на них ресурсы? Это никогда не окупится.[/say]")
 
-		saynn("[say=pc]Who said that? You? It is paying off already. And that's a fact. Simple tasks being automated everywhere. So you're wrong there.[/say]")
+		saynn("[say=pc]Кто это сказал? Ты? Да всё уже окупается. И это факт. Простые задачи повсюду автоматизируются. Так что в этом ты ошибаешься.[/say]")
 
-		saynn("You look at Tavi. She looks back at you and smiles.")
+		saynn("Вы смотрите на Тави. Она смотрит на вас и улыбается.")
 
-		saynn("[say=pc]The only truth that I know is that nature is always changing. Adapting. Evolving. And you.[/say]")
+		saynn("[say=pc]Единственная истина, которую я знаю, — это то, что природа всегда меняется. Адаптируется. Эволюционирует. И ты тоже.[/say]")
 
-		saynn("You point at the captain.")
+		saynn("Вы указываете на капитана.")
 
-		saynn("[say=pc]You're just afraid that you won't be able to control the androids. You know.. They follow the same rules. They get iterated upon and slowly get better and better. Just like how you.. train.. your staff and inmates here in your prison. But without forced in-fighting and breeding. Without your intervention.[/say]")
+		saynn("[say=pc]Ты просто боишься, что не сможешь контролировать андроидов. Знаешь... они следуют тем же правилам. Они проходят через итерации и становятся всё лучше и лучше. Точно так же, как ты... тренируешь... свой персонал и заключенных здесь, в своей тюрьме. Только без принудительной грызни и размножения. Без твоего вмешательства.[/say]")
 
-		saynn("[say=captain]That's how it always was! Fighting and breeding are the staples of evolution![/say]")
+		saynn("[say=captain]Так было всегда! Борьба и размножение — вот столпы эволюции![/say]")
 
-		saynn("[say=pc]And that makes you angry. You think that your social skills won't matter anymore, just your coding ones. And you're probably shit at coding.[/say]")
+		saynn("[say=pc]И это тебя злит. Ты думаешь, что твои социальные навыки больше не будут иметь значения, важен будет только код. А в кодинге ты, скорее всего, полный дерьмо.[/say]")
 
-		saynn("The captain growls.. but then looks away. You've read him like a book. His words made it easy. The guy is just crazy for power.")
+		saynn("Капитан рычит... но затем отводит взгляд. Вы прочитали его как открытую книгу. Его собственные слова облегчили задачу. Этот парень просто помешан на власти.")
 
-		addButton("Continue", "See what happens next", "won_word_battle")
+		addButton("Продолжить", "Смотреть, что будет дальше", "won_word_battle")
 	if(state == "4_times"):
-		saynn("[say=pc]Times are changing. You can't do anything to stop it. And so you're scared.[/say]")
+		saynn("[say=pc]Времена меняются. Ты ничего не можешь с этим поделать. И поэтому тебе страшно.[/say]")
 
-		saynn("He frowns.")
+		saynn("Он хмурится.")
 
-		saynn("[say=captain]Scared? Me? I have no fears. You saw it yourself.[/say]")
+		saynn("[say=captain]Напуган? Я? Мне неведомы страхи. Ты и сама всё видела.[/say]")
 
-		saynn("[say=pc]I saw your fears, captain. You're afraid of losing power. You traded everything for it. Your morality, empathy, love. You're as good as one of those androids that will come and replace you.[/say]")
+		saynn("[say=pc]Я видела твои страхи, капитан. Ты боишься потерять власть. Ты отдал за неё всё: свою мораль, эмпатию, любовь. Ты уже почти такой же, как те андроиды, что придут и заменят тебя.[/say]")
 
-		saynn("He avoids eye contact as his expression softens.")
+		saynn("Он избегает её взгляда, и выражение его лица смягчается.")
 
-		saynn("[say=pc]Was it worth it? Would you do all of that again if given the chance to rollback all your time as a captain here?[/say]")
+		saynn("[say=pc]Оно того стоило? Сделал бы ты всё снова, если бы представился шанс отмотать всё время твоего командования здесь назад?[/say]")
 
-		saynn("He stays silent for quite a while, probably contemplating his life choices.")
+		saynn("Он долго молчит, вероятно, обдумывая свои жизненные решения.")
 
-		saynn("[say=captain]Yes. It was worth it. I just need a little more.[/say]")
+		saynn("[say=captain]Да. Оно того стоило. Мне просто нужно ещё немного.[/say]")
 
-		saynn("He says that with a cold dark tone in his voice. He is either sick.. or..")
+		saynn("Он говорит это холодным, мрачным тоном. Он либо болен... либо...")
 
-		addButton("Continue", "See what happens next", "won_word_battle")
+		addButton("Продолжить", "Смотреть, что будет дальше", "won_word_battle")
 	if(state == "4_understand"):
-		saynn("[say=pc]I understand. You need more control since androids are a threat.[/say]")
+		saynn("[say=pc]Я понимаю. Тебе нужно больше контроля, раз андроиды представляют угрозу.[/say]")
 
-		saynn("Captain raises his brows.")
+		saynn("Капитан приподнимает брови.")
 
-		saynn("[say=captain]Someone who understands. That's rare. But quite welcomed.[/say]")
+		saynn("[say=captain]Тот, кто понимает... Это редкость. Но весьма желанная.[/say]")
 
-		saynn("[say=pc]I don't agree about everything but..[/say]")
+		saynn("[say=pc]Мы не во всем согласны, но...[/say]")
 
-		saynn("He cuts you off.")
+		saynn("Он перебивает тебя.")
 
-		saynn("[say=captain]You don't have to agree with me. Millions of people can have different opinions and still live in the same society. It's called making compromises. A form of adaptation.[/say]")
+		saynn("[say=captain]Тебе и не обязательно со мной соглашаться. Миллионы людей могут иметь разные мнения и при этом жить в одном обществе. Это называется компромиссом. Формой адаптации.[/say]")
 
-		saynn("He lowers his gaze, inspecting the projector sphere.")
+		saynn("Он опускает взгляд, изучая проекционную сферу.")
 
-		saynn("[say=captain]Androids cheapen the work that we do. They will replace us, they already do. They disturb the balance of work versus reward. People must work for their happiness! Otherwise.. otherwise they won't value it. They won't value anything. Why would I care about my mother if I can manufacture ten of her. Sounds funny and stupid.. but that's where the world is headed.[/say]")
+		saynn("[say=captain]Андроиды обесценивают то, что мы делаем. Они заменят нас, и уже заменяют. Они нарушают баланс между трудом и вознаграждением. Люди должны работать ради своего счастья! Иначе... иначе они не будут его ценить. Они вообще ничего не будут ценить. Зачем мне дорожить матерью, если я могу наклепать десяток таких же? Звучит смешно и глупо... но именно туда катится мир.[/say]")
 
-		saynn("The captain looks out of his window at the void.")
+		saynn("Капитан смотрит в окно на пустоту.")
 
-		saynn("[say=captain]And that's just one of the problems that plagues us. There are many more. But I'm only tackling the ones I can reach.. For now..[/say]")
+		saynn("[say=captain]И это лишь одна из проблем, терзающих нас. Их гораздо больше. Но пока я берусь только за те, что под силу... на данный момент...[/say]")
 
-		addButton("Continue", "See what happens next", "won_word_battle")
+		addButton("Продолжить", "Смотреть, что будет дальше", "won_word_battle")
 	if(state == "4_sobstory"):
-		saynn("[say=pc]Nice sob story. Did a machine steal your wife and now you're angry?[/say]")
+		saynn("[say=pc]Классная слезливая история. Какая-нибудь машина украла твою жену, и теперь ты злишься?[/say]")
 
-		saynn("The captain doesn't say anything for a while. He just looks you in the eyes, his stare drilling you.")
+		saynn("Капитан какое-то время молчит. Он просто смотрит тебе в глаза, и его взгляд буквально сверлит тебя насквозь.")
 
-		saynn("[say=captain]Fuck. You.[/say]")
+		saynn("[say=captain]Да пошел ты.[/say]")
 
-		saynn("Seems like it's a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Fight", "Start the fight", "start_fight")
+		addButton("Драться", "Начать бой", "start_fight")
 	if(state == "won_word_battle"):
-		saynn("The captain sighs and looks at you and Tavi.")
+		saynn("Капитан вздыхает и переводит взгляд с тебя на Тави.")
 
 		if (!wonFight):
-			saynn("[say=captain]We can argue all day.. But your words won't change my opinion and mine won't change yours. Only actions will. So let me do the first step.[/say]")
+			saynn("[say=captain]Мы можем спорить хоть весь день... Но твои слова не изменят моего мнения, а моё — твоего. Только поступки имеют значение. Так что позволь мне сделать первый шаг.[/say]")
 
-			saynn("Looks like you won and he just doesn't wanna admit to it. The captain clears his throat and holsters his gun.")
+			saynn("Похоже, ты победил, он просто не хочет в этом признаваться. Капитан откашливается и убирает пистолет в кобуру.")
 
-		saynn("[say=captain]Listen. You two proved that you are strong and smart. Getting past all my most loyal guards.."+str(" And beating me too.." if wonFight else "")+" I won't lie, it shows that you have what it takes.[/say]")
+		saynn("[say=captain]Слушайте. Вы двое доказали, что вы сильные и умные. Прорваться сквозь всех моих самых верных охранников...[say=captain]"+str(" And beating me too.." if wonFight else "")+" Не буду врать, это показывает, что у вас есть всё необходимое.[/say]")
 
-		saynn("He starts stepping around his desk.")
+		saynn("Он начинает обходить свой стол.")
 
-		saynn("[say=captain]I thought you two are some kind of anomaly. Some kind of problem that needs to be removed or dealt with. But no. You are a perfect synergy. You are exactly what I was looking for.[/say]")
+		saynn("[say=captain]Я думал, вы двое — какая-то аномалия. Какая-то проблема, которую нужно устранить или обуздать. Но нет. Вы — идеальная синергия. Вы именно то, что я искал.[/say]")
 
-		saynn("The fuck does he mean? Tavi looks at you and shakes her head subtly.")
+		saynn("Что, блять, он имеет в виду? Тави смотрит на тебя и едва заметно качает головой.")
 
-		saynn("[say=captain]I created BDCC for a reason. There are many murderers and thieves and prostitutes here, all sorts and qualities. But I'm looking for the best. I've been trying to for years. And I think my search is completed.[/say]")
+		saynn("[say=captain]Я создал BDCC не просто так. Здесь полно убийц, воров и проституток, всякого рода и мастей. Но я ищу лучших. Я искал их годами. И, кажется, мои поиски окончены.[/say]")
 
-		saynn("He points at you and Tavi.")
+		saynn("Он указывает пальцем на тебя и Тави.")
 
-		saynn("[say=captain]Power isn't in numbers, not anymore. Quality is where it is at. I'm not afraid of corporations that have many spies. I'm afraid of corporations that don't.[/say]")
+		saynn("[say=captain]Сила не в количестве, уже не в количестве. Сила — в качестве. Я не боюсь корпораций, у которых полно шпионов. Я боюсь тех, у которых их нет.[/say]")
 
-		saynn("He boldly walks up to you, his hand carefully positioned near his holster, just in case.")
+		saynn("Он смело подходит к тебе, осторожно держа руку возле кобуры — на всякий случай.")
 
-		saynn("[say=captain]I need agents. Not for AlphaCorp, no. For me. Agents that can get things done. Agents like you two. The war that's happening right now wasn't started by me or you. But we can try to make the best out of the situation. We can write history.[/say]")
+		saynn("[say=captain]Мне нужны агенты. Не для «АльфаКорп», нет. Для меня. Агенты, которые умеют доводить дело до конца. Такие, как вы двое. Войну, которая идет сейчас, начали не мы с вами. Но мы можем попытаться извлечь из этой ситуации максимум. Мы можем сами писать историю.[/say]")
 
-		saynn("He looks at you specifically.")
+		saynn("Он смотрит именно на тебя.")
 
-		saynn("[say=captain]You want freedom? You will get it. Credits? Sure, all of them. Sluts? I don't care. I can give you everything you want. I am a man of power. And power doesn't come cheap.[/say]")
+		saynn("[say=captain]Хотите свободы? Вы её получите. Кредиты? Конечно, все до последнего. Шлюх? Мне плевать. Я могу дать вам всё, что пожелаете. Я человек власти. А власть не дается дешево.[/say]")
 
-		saynn("Then he looks at Tavi.")
+		saynn("Затем он переводит взгляд на Тави.")
 
-		saynn("[say=captain]Seeking revenge? I will help you with that. We will track every single person who was responsible for creating you and eliminate them. One by one. Any method. Isn't that your dream? I'm not against that. I'm not against letting you be with Nova and Elena either. Looks like you bonded together pretty well, they could be your family. Family that you always wanted.[/say]")
+		saynn("[say=captain]Жаждете мести? Я помогу вам в этом. Мы выследим каждого, кто приложил руку к вашему созданию, и уничтожим их. Одного за другим. Любым способом. Разве не об этом вы мечтаете? Я только «за». И я не против того, чтобы вы были вместе с Новой и Еленой. Похоже, вы отлично сработались, они могли бы стать вашей семьей. Той самой семьей, о которой вы всегда мечтали.[/say]")
 
-		saynn("Tavi suddenly begins to look extremely puzzled.. Captain's words hit her extremely hard.")
+		saynn("Тави внезапно принимает крайне озадаченный вид. Слова Капитана ударили по ней со всей силы.")
 
-		saynn("[say=captain]All I'm asking back is loyalty. We can stop fighting, you and I. Once and for all. No more being a prisoner, no more sleeping in a cell, no more collars, no more abuse. You will be on my level. You will decide instead of being decided for. You will be my hands. And I will be your mind.[/say]")
+		saynn("[say=captain]Все, о чем я прошу взамен — это верность. Мы можем прекратить эту борьбу, ты и я. Раз и навсегда. Больше никакого статуса заключенной, никакой жизни в камере, никаких ошейников и унижений. Ты будешь на моем уровне. Ты будешь принимать решения, а не ждать, пока их примут за тебя. Ты станешь моими руками, а я — твоим разумом.[/say]")
 
-		saynn("He spreads his arms, like he wants to hug you.")
+		saynn("Он разводит руки, словно хочет тебя обнять.")
 
-		saynn("[say=captain]You went through fire and hell. And now, I'm giving you a chance to dig even deeper. What do you say?[/say]")
+		saynn("[say=captain]Ты прошла через огонь и ад. И теперь я даю тебе шанс копнуть еще глубже. Что скажешь?[/say]")
 
-		saynn("Tavi silently looks at you.")
+		saynn("Тави молча смотрит на тебя.")
 
-		addButton("Continue", "See what happens next", "the_choice")
+		addButton("Продолжить", "Смотреть, что будет дальше", "the_choice")
 	if(state == "the_choice"):
-		saynn("And here you are, standing before your fate. You feel like this will decide everything.")
+		saynn("И вот ты здесь, стоишь перед лицом своей судьбы. Кажется, сейчас решится всё.")
 
-		saynn("What do you choose? Do you accept this deal? Who knows what will happen if you don't..")
+		saynn("Что ты выберешь? Примешь ли эту сделку? Кто знает, что будет, если ты откажешься...")
 
 		if (isCorrupt):
-			addDisabledButton("No", "Tavi is too corrupt for this")
+			addDisabledButton("No", "Тави слишком испорчена для этого")
 		else:
-			addButton("No", "Pure and simple no will do it", "choice_no")
-		addButton("Yes", "Accept to be captain's personal spy", "choice_yes")
+			addButton("No", "Простое и четкое «нет»", "choice_no")
+		addButton("Да", "Согласиться стать личным шпионом капитана", "choice_yes")
 		if (isCorrupt):
-			addButton("Kill", "Let your corrupt Tavi have a say in this", "choice_kill")
+			addButton("Убить", "Пусть твоя порочная Тави тоже выскажется", "choice_kill")
 		else:
-			addDisabledButton("Kill", "Tavi is too pure for this")
+			addDisabledButton("Убить", "Тави слишком чиста для этого")
 func taviSpeak(corruptSpeak, pureSpeak):
 	if(isCorrupt):
 		return corruptSpeak
