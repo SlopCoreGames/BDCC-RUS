@@ -7,7 +7,7 @@ func _run():
 	var tentacles:PlayerSlaveryTentacles = GM.main.PS
 	
 	if(state == ""):
-		saynn("You're free to wander around your cell.")
+		saynn("Ты волен бродить по своей камере.")
 		var roomID:String = GM.pc.location
 		var _roomInfo = GM.world.getRoomByID(roomID)
 		aimCameraAndSetLocName(roomID)

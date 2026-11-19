@@ -15,63 +15,63 @@ func _run():
 
 		# (Return them and you will get more coins and the ability to take off panties?)
 
-		saynn("You suddenly lash out at the engineer and yell.")
+		saynn("Вы внезапно срываетесь на инженера и орете.")
 
-		saynn("[say=pc]What the fuck?[/say]")
+		saynn("[say=pc]Какого хуя?![/say]")
 
-		saynn("Foxy looks you in the eyes and squints.")
+		saynn("Фокси смотрит вам прямо в глаза, прищурившись.")
 
-		saynn("[say=alexrynard]What the fuck what?[/say]")
+		saynn("[say=alexrynard]В каком смысле «какого хуя»?[/say]")
 
-		saynn("You expose your portal panties and show them to him.")
+		saynn("Вы выставляете напоказ свои портальные трусики и демонстрируете их ему.")
 
-		saynn("[say=pc]You said they will only do tests but now I’m getting fucked through them! Is that your idea?![/say]")
+		saynn("[say=pc]Ты говорил, что будут только тесты, но теперь меня через них трахают! Это твоя идея?![/say]")
 
-		saynn("Foxy opens his mouth and looks very-very surprised.")
+		saynn("Фокси открывает рот, выглядя крайне, крайне удивленным.")
 
-		saynn("[say=alexrynard]Oh yeah. Forgot to tell you. Someone stole the prototypes.[/say]")
+		saynn("[say=alexrynard]А, точно. Забыл тебе сказать. Кто-то спер прототипы.[/say]")
 
-		addButton("WHAT", "The fuck", "what")
+		addButton("WHAT", "Пиздец", "what")
 
 	if(state == "what"):
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("[say=pc]What do you mean, where is my fucking pussy?![/say]")
+			saynn("[say=pc]В каком смысле?! Где моя гребаная киска?![/say]")
 
 		# (else)
 		else:
-			saynn("[say=pc]What do you mean, where is my fucking butthole?![/say]")
+			saynn("[say=pc]В смысле, где моя гребаная задница?![/say]")
 
-		saynn("Foxy smirks but then catches himself and just shrugs a few times.")
+		saynn("Фокси ухмыляется, но вовремя берет себя в руки и просто несколько раз пожимает плечами.")
 
-		saynn("[say=alexrynard]Don’t know, probably some inmates found it.[/say]")
+		saynn("[say=alexrynard]Без понятия, наверное, какие-то зэки ее нашли.[/say]")
 
-		saynn("That makes you even more angry, you’re like a bomb that’s about to explode. Foxy sees that and adds.")
+		saynn("Это злит тебя еще сильнее — ты словно бомба, готовая вот-вот взорваться. Заметив это, Фокси добавляет:")
 
-		saynn("[say=alexrynard]Tell you what. If you find the prototypes and return them to me I will give you credits, how about that.[/say]")
+		saynn("[say=alexrynard]Давай так. Если найдешь прототипы и вернешь их мне, я отсыплю тебе кредитов. Как тебе такое предложение?[/say]")
 
-		saynn("You don’t know how to feel about that sudden offer.")
+		saynn("Ты даже не знаешь, как реагировать на это внезапное предложение.")
 
-		saynn("[say=pc]Can’t you.. just turn the panties off?[/say]")
+		saynn("[say=pc]Разве ты не можешь... просто выключить эти трусы?[/say]")
 
-		saynn("Foxy shrugs again and offers you an innocent smile.")
+		saynn("Фокси снова пожимает плечами и одаривает тебя невинной улыбкой.")
 
-		saynn("[say=alexrynard]Can’t, the magnetic locks can be disabled only on the other side. And you really don’t want me to create a singularity by tinkering with them now.[/say]")
+		saynn("[say=alexrynard]Нельзя. Магнитные замки можно отключить только с другой стороны. И тебе очень не хочется, чтобы я создала сингулярность, ковыряясь в них прямо сейчас.[/say]")
 
-		saynn("[say=pc]Great engineering..[/say]")
+		saynn("[say=pc]Великолепная инженерная мысль...[/say]")
 
-		saynn("He grabs you by the collar and pulls your head closer. He frowns.")
+		saynn("Он хватает тебя за воротник и притягивает лицо ближе к своему. Он хмурится.")
 
-		saynn("[say=alexrynard]Hey. You're wearing a piece of technological art, bleeding edge stuff. Have some respect for the craft. A camera just reported a few inmates holding something that looks like a fleshlight in the cellblock, go and get it.[/say]")
+		saynn("[say=alexrynard]Эй. На тебе надето произведение технологического искусства, самая передовая разработка. Прояви хоть каплю уважения к мастерству. Камера только что зафиксировала в блоке несколько заключенных, у которых в руках что-то похожее на мастурбатор. Иди и забери это.[/say]")
 
-		addButton("Fine", "Like you have any other choice", "fine")
+		addButton("Ладно", "Будто у тебя есть выбор", "fine")
 
 	if(state == "fine"):
-		saynn("You agree to his offer and leave. He mentioned something about the cellblock. Might be a good place to start searching.")
+		saynn("Ты соглашаешься на его предложение и уходишь. Он упомянул блок с камерами. Пожалуй, стоит начать поиски оттуда.")
 
 		# (scene ends)
 
-		addButton("Continue", "What can you do", "endthescene")
+		addButton("Продолжить", "Что тут поделаешь", "endthescene")
 
 
 func _react(_action: String, _args):

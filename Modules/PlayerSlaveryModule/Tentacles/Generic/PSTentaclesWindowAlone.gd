@@ -22,43 +22,43 @@ func _run():
 
 	if(state == ""):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("You approach the big reinforced window of your cell that leads into the void.")
+		saynn("Вы подходите к большому армированному окну своей камеры, за которым зияет пустота.")
 
-		saynn("The glass is cold under your fingertips. Beyond it.. nothing but black and tiny dots of light. Stars.")
+		saynn("Стекло холодит кончики пальцев. А там, за ним... лишь чернота и крошечные точки света. Звезды.")
 
-		saynn("You've been a prisoner for so long that the outside world feels like a dream. Something you once knew but can't quite remember.")
+		saynn("Вы в плену так долго, что внешний мир кажется сном. Чем-то, что вы когда-то знали, но уже не можете до конца вспомнить.")
 
-		saynn("There are no planets or moons nearby. And even if there is a sun.. it's probably only visible from the other side.")
+		saynn("Поблизости нет ни планет, ни лун. И даже если где-то есть солнце... его, скорее всего, видно только с другой стороны.")
 
-		saynn("You calm your mind a bit..")
+		saynn("Вы немного успокаиваете разум...")
 
 		if (_tentacles.isNormal() || _tentacles.isSmalll()):
-			saynn("The tentacles are somewhere behind you. You can hear their soft rustle.")
+			saynn("Тентакли где-то позади вас. Вы слышите их мягкое шуршание.")
 
 			if (_tentacles.getPrefer() != _tentacles.EVENT_WINDOW):
-				addButton("Tentacles", "Go get their attention and make them look through the window", "get_attention")
+				addButton("Тентакли", "Привлечь их внимание и заставить посмотреть в окно", "get_attention")
 			else:
-				addDisabledButton("Tentacles", "They already prefer to be mindful..")
-		addButton("Enough", "See what happens next", "endthescene")
+				addDisabledButton("Тентакли", "Они и так предпочитают сохранять осознанность...")
+		addButton("Хватит", "Смотреть, что будет дальше", "endthescene")
 		if (!_tentacles.isNormal() && !_tentacles.isSmalll()):
 			if (_tentacles.isTiny()):
-				addDisabledButton("Tentacles", "They're too small and weak to share this view with..")
+				addDisabledButton("Тентакли", "Они слишком малы и слабы, чтобы разделить этот вид с...")
 			else:
-				addDisabledButton("Someone", "You don't have anyone to share this view with..")
+				addDisabledButton("Кем-то", "Вам не с кем разделить этот вид...")
 	if(state == "get_attention"):
 		_tentacles.doAnim("idle")
 		addCharacter(GM.main.PS.getTentaclesCharID())
-		saynn("You get the attention of the tentacles and invite them to look at the view.")
+		saynn("Вы привлекаете внимание щупалец и предлагаете им тоже взглянуть на пейзаж.")
 
-		saynn("[say=pc]The world is bigger than you think.[/say]")
+		saynn("[say=pc]Мир гораздо больше, чем ты думаешь.[/say]")
 
-		saynn("You're not sure if they could even think the same way that you do.. but it doesn't matter.")
+		saynn("Вы не уверены, способны ли они вообще мыслить так же, как вы... но это не имеет значения.")
 
-		saynn("[say=pc]Each of those small lights is a small world of its own. Not a single person can comprehend how much there is to explore.[/say]")
+		saynn("[say=pc]Каждый из этих огоньков — целый отдельный мир. Ни один человек не способен осознать, как много здесь можно исследовать.[/say]")
 
-		saynn("You spend some more time thinking about it.. and then look at the still tentacles. It looks like you have sparked some.. curiosity in them. For sure.")
+		saynn("Вы еще какое-то время размышляете об этом... а затем переводите взгляд на замершие щупальца. Похоже, вам удалось пробудить в них... любопытство. Определенно.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	var _tentacles:PlayerSlaveryTentacles = GM.main.PS

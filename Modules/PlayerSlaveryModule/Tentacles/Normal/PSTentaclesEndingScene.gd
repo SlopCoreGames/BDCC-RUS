@@ -18,13 +18,13 @@ func _run():
 	var _tentacles:PlayerSlaveryTentacles = GM.main.PS
 
 	if(state == ""):
-		saynn("ENDING ENDING ENDING!!!")
+		saynn("ФИНАЛ ФИНАЛ ФИНАЛ!!!")
 
-		addButton("Okay", "ENOUGH FUN", "doEndSlavery")
+		addButton("Окей", "ХВАТИТ РАЗВЛЕЧЕНИЙ", "doEndSlavery")
 	if(state == "doSleep"):
-		saynn("YOU SLEPT. EVENT HERE MAYBE?")
+		saynn("ТЫ ЗАСНУЛ. ТУТ МОЖЕТ БЫТЬ СОБЫТИЕ?")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	var _tentacles:PlayerSlaveryTentacles = GM.main.PS

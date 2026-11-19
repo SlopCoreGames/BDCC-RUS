@@ -13,37 +13,37 @@ func _run():
 
 		# (He asks if you wanna keep the panties too.)
 
-		saynn("You place the fleshlights onto foxy’s table with a loud thump.")
+		saynn("Ты с громким стуком ставишь флешлайты на стол Фокси.")
 
-		saynn("[say=pc]Here.[/say]")
+		saynn("[say=pc]Вот.[/say]")
 
-		saynn("Foxy raises his brow as he looks at you and then at the sex toys.")
+		saynn("Фокси вскидывает бровь, переводя взгляд с тебя на секс-игрушки.")
 
-		saynn("[say=alexrynard]You found them?[/say]")
+		saynn("[say=alexrynard]Нашла их?[/say]")
 
-		saynn("[say=pc]No thanks to you.[/say]")
+		saynn("[say=pc]Еще бы! Благодаря тебе-то.[/say]")
 
-		saynn("He grabs one and tinkers with its internals, switching off some hidden switch with a screwdriver.")
+		saynn("Он хватает один из них и начинает копаться в его внутренностях, отверткой щелкая каким-то скрытым переключателем.")
 
-		saynn("[say=alexrynard]Here, unlocked.[/say]")
+		saynn("[say=alexrynard]Вот, разблокировал.[/say]")
 
-		saynn("[say=pc]You can’t imagine what I went through.[/say]")
+		saynn("[say=pc]Ты даже не представляешь, через что мне пришлось пройти.[/say]")
 
-		saynn("[say=alexrynard]In fact, I can. You forgot that they are monitored. The data that got collected was quite valuable already for the R&D folks.[/say]")
+		saynn("[say=alexrynard]На самом деле, представляю. Ты забыла, что за ними ведется наблюдение. Собранные данные уже стали весьма ценными для отдела исследований и разработок.[/say]")
 
-		saynn("You can’t help but to frown. Does that mean they monitored your every sexual intercourse and didn’t do anything?")
+		saynn("Ты невольно хмуришься. Значит ли это, что они следили за каждым твоим половым актом и при этом ничего не предпринимали?")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "continue"):
-		saynn("[say=pc]So what now?[/say]")
+		saynn("[say=pc]И что теперь?[/say]")
 
-		saynn("[say=alexrynard]You can keep them if you want. It’s a rough prototype anyway, it served its purpose.[/say]")
+		saynn("[say=alexrynard]Можешь оставить их себе, если хочешь. Это всё равно грубый прототип, он уже выполнил свою задачу.[/say]")
 
-		saynn("You tug at your panties, they don’t seem to be ‘glued’ to your crotch anymore.")
+		saynn("Ты тянешь за свои трусики, и кажется, что они больше не «приклеены» к твоей промежности.")
 
-		addButton("Keep them", "You kinda like them", "keep_them")
-		addButton("Take them off", "(Ends portal panties content) Give him the portal panties", "take_them_off")
+		addButton("Оставь их себе", "Они тебе вроде как нравятся", "keep_them")
+		addButton("Снимай их", "(Конец контента с портальными трусиками) Отдай ему портальные трусики", "take_them_off")
 
 
 	if(state == "keep_them"):
@@ -51,41 +51,41 @@ func _run():
 
 		# (You shrug and secretly excited about that)
 
-		saynn("You sway your {pc.masc} hips to the sides a bit while holding onto the sides of the panties.")
+		saynn("Ты слегка покачиваешь {pc.masc} бедрами из стороны в сторону, держась за края трусиков.")
 
-		saynn("[say=pc]I guess I can keep them.[/say]")
+		saynn("[say=pc]Думаю, они могут остаться у меня.[/say]")
 
-		saynn("The guy shrugs.")
+		saynn("Парень пожимает плечами.")
 
-		saynn("[say=alexrynard]Sure, whatever. There might be more tests done to you then.[/say]")
+		saynn("[say=alexrynard]Ладно, без проблем. Только тогда тебя могут потестить ещё сильнее.[/say]")
 
-		saynn("[say=pc]The tests weren’t too bad. At least I can take them off myself now.[/say]")
+		saynn("[say=pc]Тесты прошли не так уж плохо. По крайней мере, теперь я могу снять их сама.[/say]")
 
-		saynn("[say=alexrynard]We might also ‘lose’ the fleshlights again. You know how it is, scientists can be very forgetful.[/say]")
+		saynn("[say=alexrynard]Мы можем снова «потерять» флешлайты. Сама знаешь, ученые бывают очень забывчивыми.[/say]")
 
-		saynn("He sounds very cunning, smiling even. You sigh and just walk away. Your face is blushing slightly though, maybe that’s exactly what you’re counting on.")
+		saynn("Он звучит очень хитро, даже улыбается. Ты вздыхаешь и просто уходишь, хотя твои щеки слегка розовеют — возможно, именно на это он и рассчитывает.")
 
 		# (scene ends, quest ends)
-		addButton("Continue", "That was easy", "endthescene")
+		addButton("Продолжить", "Это было легко", "endthescene")
 
 	if(state == "take_them_off"):
 		# (You take off the panties and give them to him. He says that it was fun watching some tests)
 
 		# (You blush and walk away)
 
-		saynn("You take off your portal panties and leave on the work table. Foxy shrugs.")
+		saynn("Ты снимаешь портативные трусики и оставляешь их на рабочем столе. Фокси лишь пожимает плечами.")
 
-		saynn("[say=alexrynard]It was entertaining to watch at least.[/say]")
+		saynn("[say=alexrynard]По крайней мере, наблюдать за этим было забавно.[/say]")
 
-		saynn("You pout and blush from his words. You did notice that all the security cameras were pretty much glued to you.")
+		saynn("Ты дуешь губы и краснеешь от его слов. Ты заметила, что все камеры наблюдения практически не сводили с тебя глаз.")
 
-		saynn("[say=alexrynard]I will give the prototype to the medical wing, they might find some use for it.[/say]")
+		saynn("[say=alexrynard]Я отдам прототип в медицинское крыло, там он может пригодиться.[/say]")
 
-		saynn("Instead of answering, you decide to just leave him alone. Free, at last.")
+		saynn("Вместо ответа ты решаешь просто оставить его в покое. Наконец-то свободна.")
 
 		# (scene ends, quest ends)
 
-		addButton("Continue", "That was easy", "endthescene")
+		addButton("Продолжить", "Это было легко", "endthescene")
 
 
 func _react(_action: String, _args):

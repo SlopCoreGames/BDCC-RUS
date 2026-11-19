@@ -23,138 +23,138 @@ func _run():
 	if(state == ""):
 		aimCameraAndSetLocName(_tentacles.LOC_SCIENTISTS)
 		playAnimation(StageScene.Duo, "stand", {pc=GM.main.PS.getScientist1CharID(), npc=GM.main.PS.getScientist2CharID()})
-		saynn("You approach the reinforced window, curious about the noise. On the other side of the thick glass is a brightly lit corridor.. and two figures who are watching you with great interest.")
+		saynn("Вы подходите к армированному окну, привлеченные странным шумом. По ту сторону толстого стекла — ярко освещенный коридор... и две фигуры, которые с огромным интересом наблюдают за вами.")
 
-		saynn("On the right is a wolf with sharp, intelligent eyes. He sips from a steaming mug, his calculating gaze flicking over you.. before he says something to his colleague.")
+		saynn("Справа стоит волк с острым, умным взглядом. Он прихлебывает из дымящейся кружки, его расчетливый взор скользит по вашей фигуре... прежде чем он что-то говорит своему коллеге.")
 
-		saynn("The female cat beside him nods, her attention is split before you and her fancy glowing datapad.")
+		saynn("Сидящая рядом с ним кошка кивает; ее внимание разрывается между вами и ее навороченным светящимся датападом.")
 
-		saynn("Both of them wear white labcoats over their clothes.")
+		saynn("На обоих поверх одежды надеты белые лабораторные халаты.")
 
-		saynn("The intercom lets itself be known by spewing out some static.")
+		saynn("Интерком заявляет о себе, изрыгая статические помехи.")
 
-		saynn("[say=sci1]Welcome to our little paradise.[/say]")
+		saynn("[say=sci1]Добро пожаловать в наш маленький рай.[/say]")
 
-		saynn("You just can't escape them. No matter how much you try.")
+		saynn("От них просто невозможно сбежать. Сколько бы вы ни пытались.")
 
-		saynn("[say=sci1]I hope you don't mind that we skip the friendly introductions. You don't need to know our names. We don't care to know yours.[/say]")
+		saynn("[say=sci1]Надеюсь, вы не против, что мы пропустим дружеское знакомство. Вам не обязательно знать наши имена. А нам нет нужды знать ваши.[/say]")
 
-		saynn("[say=sci2]We did make sure that your vitals are in good condition after the transportation procedure though. You might feel residual dizziness or disorientation, but..[/say]")
+		saynn("[say=sci2]Впрочем, мы позаботились о том, чтобы ваши показатели жизнедеятельности были в норме после процедуры транспортировки. Вы можете ощущать остаточное головокружение или дезориентацию, но...[/say]")
 
-		saynn("Her voice doesn't seem to be as assertive.. so you cut her off.")
+		saynn("Ее голос звучит не так уверенно... поэтому вы перебиваете ее.")
 
-		saynn("[say=pc]I do feel something alright. Where am I? Who are you people?[/say]")
+		saynn("[say=pc]Определенно, я что-то чувствую... Где я? Кто вы такие?[/say]")
 
-		saynn("The guy leans closer, looking down at you.. even through the window.")
+		saynn("Парень наклоняется ближе, заглядывая на тебя даже через окно.")
 
-		saynn("[say=sci1]Don't make the mistake of interrupting a lady. You're not in a position to do so.[/say]")
+		saynn("[say=sci1]Не совершай ошибку, прерывая даму. Ты сейчас не в том положении, чтобы так дерзить.[/say]")
 
-		saynn("He turns his head towards the cat to make sure she is alright. The lady smiles back and lowers her gaze for a second, her hand reaching out to adjust her already-perfect glasses.")
+		saynn("Он поворачивает голову к кошке, проверяя, всё ли с ней в порядке. Дама улыбается ему в ответ и на мгновение опускает взгляд, поправляя рукой свои и без того безупречные очки.")
 
-		saynn("[say=pc]What position am I in then?[/say]")
+		saynn("[say=pc]И в каком же положении я нахожусь?[/say]")
 
-		saynn("[say=sci2]You have been assigned as a primary test subject for a new research initiative.[/say]")
+		saynn("[say=sci2]Тебя назначили основным подопытным для новой исследовательской инициативы.[/say]")
 
-		saynn("[say=pc]I don't remember agreeing to that.[/say]")
+		saynn("[say=pc]Не припомню, чтобы я на это соглашался.[/say]")
 
-		saynn("The wolf takes another slow sip, really taking the time to enjoy his hot brew.")
+		saynn("Волк делает еще один медленный глоток, не спеша наслаждаться горячим напитком.")
 
-		saynn("[say=sci1]Ever seen a lab rat signing a work contract?[/say]")
+		saynn("[say=sci1]Видел когда-нибудь, чтобы лабораторная крыса подписывала трудовой договор?[/say]")
 
-		saynn("You don't even know how to react. He's got you on that one.")
+		saynn("Ты даже не знаешь, как реагировать. В этом он тебя подловил.")
 
-		saynn("The cat taps on her datapad, bringing some random schematics.")
+		saynn("Кошка постукивает по своему датападу, выводя на экран какие-то случайные схемы.")
 
-		saynn("[say=sci2]If you want to know what we do.. This bio-lab is specialized on research that normally would be considered.. off-limits. It's not as bad as you might think it is, I can assure you. Nothing unethical. As long as you do what we tell you to do, you will not be in any danger.[/say]")
+		saynn("[say=sci2]Если хочешь знать, чем мы тут занимаемся... Эта биолаборатория специализируется на исследованиях, которые обычно считаются... запретными. Могу тебя заверить, всё не так плохо, как может показаться. Никакой неэтичности. Пока ты делаешь то, что тебе говорят, тебе ничего не угрожает.[/say]")
 
-		saynn("You sure don't like the sound of that.")
+		saynn("Звучит так, будто тебе это совсем не нравится.")
 
-		saynn("[say=pc]You're running an illegal bio-lab. You are in a constant danger already.[/say]")
+		saynn("[say=pc]Вы управляете нелегальной биолабораторией. Вы и так постоянно в опасности.[/say]")
 
-		saynn("[say=sci2]Actually, it's more nuanced than that. The demand for the scientific work that we do is incredibly high. And the unique positioning of our facility allows us to not be.. constrained.. by any governing organization.[/say]")
+		saynn("[say=sci2]Вообще-то, всё немного тоньше. Спрос на научную работу, которую мы проводим, невероятно высок. А уникальное положение нашего объекта позволяет нам не быть... скованными... никакими правящими организациями.[/say]")
 
-		saynn("[say=sci1]Let me dumb it down for you. Nobody wants to murder the chicken. But they won't say no to chicken meat. There is no nuance, the world needs us, actually.[/say]")
+		saynn("[say=sci1]Давай объясню попроще. Никто не хочет убивать курицу. Но никто не скажет «нет», когда предложат куриное мясо. Никаких тонкостей — миру просто нужны мы.[/say]")
 
-		saynn("These scientists can do what they want.. as long as they do the messy stuff that no one else is willing to deal with. And now you're stuck here with them.")
+		saynn("Эти ученые могут творить что хотят... пока они занимаются всякой грязной работой, за которую никто другой не берется. И теперь ты застряла здесь вместе с ними.")
 
-		saynn("[say=pc]Great.[/say]")
+		saynn("[say=pc]Прелестно.[/say]")
 
-		saynn("[say=sci1]You basically have a bomb collar strapped around your neck already, what do you have to lose?[/say]")
+		saynn("[say=sci1]У тебя на шее и так, по сути, надет ошейник-бомба, так что ты всё равно терять нечего, верно?[/say]")
 
-		saynn("Your hand reaches to tug on your inmate collar.. They sure didn't bother trying to take it off it seems.")
+		saynn("Твоя рука тянется к тюремному ошейнику... Похоже, они даже не потрудились попытаться его снять.")
 
-		saynn("[say=pc]Why didn't you take it off?[/say]")
+		saynn("[say=pc]Почему ты его не сняла?[/say]")
 
-		saynn("[say=sci1]That's just extra risk. As long as you can do your job, I don't care what kinky shit you're into.[/say]")
+		saynn("[say=sci1]Это просто лишний риск. Пока ты справляешься со своей работой, мне плевать, в какое извращенное дерьмо ты там вбилась.[/say]")
 
-		saynn("You can only sigh.")
+		saynn("Вам остаётся только вздохнуть.")
 
-		saynn("[say=pc]Job?[/say]")
+		saynn("[say=pc]Работой?[/say]")
 
-		saynn("[say=sci2]Our current focus is a newly acquired specimen. Our database has some missing entries that we would like to fill. That's all you need to know for now.[/say]")
+		saynn("[say=sci2]Сейчас наше внимание сосредоточено на недавно приобретенном экземпляре. В нашей базе данных есть несколько пустых граф, которые мы хотели бы заполнить. Это всё, что тебе нужно знать на данный момент.[/say]")
 
-		saynn("Specimen? Your confusion doesn't last for long.")
+		saynn("Экземпляре? Твое замешательство длится недолго.")
 
-		addButton("Continue", "See what happens next", "guards_step_in")
+		addButton("Продолжить", "Смотреть, что будет дальше", "guards_step_in")
 	if(state == "guards_step_in"):
 		aimCameraAndSetLocName(_tentacles.LOC_MIDDLE)
 		playAnimation(StageScene.Solo, "stand")
-		saynn("The reinforced door into your cell beeps loudly.. It goes through some kind of.. unsealing process.. hissing with cold air in the process.. before finally opening up.")
+		saynn("Усиленная дверь твоей камеры громко пищит... начинается какой-то процесс... разгерметизации... с шипением холодного воздуха... прежде чем она наконец распахивается.")
 
-		saynn("A few armed guards step inside, all of them carrying pulse rifles and armored bio-hazard suits. Modern versions of plague doctors.")
+		saynn("Внутрь входят несколько вооруженных охранников, все в бронированных костюмах биозащиты и с импульсными винтовками. Современная версия чумных докторов.")
 
-		saynn("They breathe loudly through their gas masks.. and secure the perimeter.. which means.. aiming their weapons at the only possible threat in the room.")
+		saynn("Они громко дышат через свои противогазы... и берут периметр под контроль... а это значит... наводят оружие на единственную возможную угрозу в комнате.")
 
-		saynn("[say=pc]I feel like I'd be more useful alive to you.[/say]")
+		saynn("[say=pc]Мне кажется, живой я была бы для вас полезнее.[/say]")
 
-		saynn("The guards don't answer. And you just wait for what's next, your hands are raised slightly.")
+		saynn("Охранники не отвечают. Ты просто ждешь, что будет дальше, слегка подняв руки.")
 
-		saynn("Soon, another few guards show up, bringing.. some kind of round object with them, on a special flat bed cart.")
+		saynn("Вскоре подходят еще несколько охранников, прикатывая на специальной плоской тележке... какой-то круглый объект.")
 
-		saynn("They bring the cart into the middle of the room.. and press some button on it that gently lowers the weird object down onto the floor.. complete with a little round pedestal.")
+		saynn("Они ввозят тележку в центр комнаты... и нажимают на кнопку, после чего странный объект плавно опускается на пол, покоясь на небольшом круглом постаменте.")
 
-		saynn("After the guards are gone, the door gets sealed again, trapping you with the.. so called.. specimen.")
+		saynn("Когда охранники уходят, дверь снова запечатывается, оставляя тебя наедине с этим... так называемым... образцом.")
 
-		saynn("[say=sci1]Approach it.[/say]")
+		saynn("[say=sci1]Подойти к нему.[/say]")
 
-		saynn("[say=pc]Do I have to?[/say]")
+		saynn("[say=pc]Неужели обязательно?[/say]")
 
-		saynn("Silence.")
+		saynn("Тишина.")
 
-		addButton("Look at it", "Do what they say", "do_approach_egg")
+		addButton("Посмотри на это", "Сделать, как велят", "do_approach_egg")
 	if(state == "do_approach_egg"):
 		GM.pc.setLocation(_tentacles.LOC_MIDDLE)
 		aimCameraAndSetLocName(_tentacles.LOC_MIDDLE)
 		playAnimation(StageScene.SoloBigEgg, "stand")
-		saynn("Carefully, you approach the new round object in the room.")
+		saynn("Ты осторожно приближаешься к новому круглому объекту в комнате.")
 
-		saynn("Soon it becomes obvious what it is.")
+		saynn("Вскоре становится очевидно, что это такое.")
 
-		saynn("[say=pc]It's a fucking alien egg.[/say]")
+		saynn("[say=pc]Это же, блядь, инопланетное яйцо![/say]")
 
-		saynn("Even though you only thought about your choice of words for a few moments, you couldn't be more correct.")
+		saynn("Хотя ты обдумывал свой выбор слов всего несколько мгновений, ты не мог быть прав как никогда.")
 
-		saynn("You're standing near an egg. It's not just a normal egg. This one is huge, spotting an unnatural toxic-green color.. unnatural for normal eggs.")
+		saynn("Ты стоишь рядом с яйцом. И это не просто обычное яйцо. Это чертово гигантское яйцо, покрытое неестественными пятнами ядовито-зеленого цвета... совершенно нетипичного для обычных яиц.")
 
-		saynn("It's resting in.. some kind of gross nest. This nest is composed of multiple purple.. tendrils? They're covered in weird green goo. The whole composition is quite.. nerve-racking.")
+		saynn("Оно покоится в... каком-то мерзком гнезде. Это гнездо состоит из множества фиолетовых... щупалец? Они покрыты странной зеленой слизью. Вся эта картина выглядит довольно... нервно.")
 
-		saynn("You haven't even seen the main bit. The top of the egg seems to have a deep cross-shaped crease on it. You've seen enough movies to know what this is about.")
+		saynn("Ты еще даже не видел самое главное. На верхушке яйца видна глубокая складка в форме креста. Ты пересмотрел достаточно фильмов, чтобы понимать, к чему всё это ведет.")
 
-		saynn("[say=pc]I'm not touching that. Nope.[/say]")
+		saynn("[say=pc]Я не буду это трогать. Вообще нет.[/say]")
 
-		saynn("[say=sci2]We did initial tests. The specimen is currently completely safe.[/say]")
+		saynn("[say=sci2]Мы провели первичные тесты. На данный момент образец абсолютно безопасен.[/say]")
 
-		saynn("[say=pc]Of course you would say that.[/say]")
+		saynn("[say=pc]Ну конечно, ты бы так и сказал.[/say]")
 
-		saynn("[say=sci1]I'm getting tired of this whining. We're going on a break. Have your rest, gather what little bits of bravery that you have together, and focus. When we're gonna be back, prepare to do some actual work.[/say]")
+		saynn("[say=sci1]Мне уже надоело это нытье. Мы уходим на перерыв. Отдохни, собери воедино те крохи храбрости, что у тебя остались, и сосредоточься. Когда мы вернемся, приготовься к настоящей работе.[/say]")
 
-		saynn("And just like that, the intercom turns off. You look through the window.. the scientists aren't there anymore.")
+		saynn("И вот так просто интерком отключается. Ты смотришь в окно... ученых там больше нет.")
 
-		saynn("At least the egg doesn't seem to be moving.. at all. Maybe it's dead already, who knows.")
+		saynn("По крайней мере, яйцо, кажется, вообще не шевелится... Может, оно уже мертвое, кто знает.")
 
-		saynn("You look at your bed..")
+		saynn("Ты смотришь на свою кровать..")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 func supportsShowingPawns() -> bool:
 	return true
 

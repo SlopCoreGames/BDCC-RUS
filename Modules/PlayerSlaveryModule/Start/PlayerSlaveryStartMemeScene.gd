@@ -7,181 +7,181 @@ func _run():
 	if(state == ""):
 		setFlag("PlayerSlaveryModule.foundMeme", true)
 		playAnimation(StageScene.Solo, "stand")
-		saynn("There is a credits chip, just lying on the floor here.")
+		saynn("Прямо здесь на полу валяется кредитный чип.")
 
-		saynn("From the looks of it, this one must contain at least a 100 credits.")
+		saynn("Судя по виду, на нем должно быть как минимум 100 кредитов.")
 
-		addButton("Grab it!", "Free credits!", "grab1")
-		addButton("Leave", "Leave the chip alone", "endthescene")
+		addButton("Хватай!", "Халявные кредиты!", "grab1")
+		addButton("Уйти", "Оставить чип в покое", "endthescene")
 	if(state == "grab1"):
 		playAnimation(StageScene.Solo, "kneel")
-		saynn("Maybe someone has lost this chip. But that's none of your problems.")
+		saynn("Может, кто-то его потерял. Но это не твои проблемы.")
 
-		saynn("You bend down and try to grab the chip.. but it's stuck in place. No wonder no one has bothered to pick it up, the thing feels like it's glued to the floor.")
+		saynn("Ты наклоняешься, чтобы поднять чип... но он словно прирос к месту. Неудивительно, что его никто не трогал — эта штука будто приклеена к полу.")
 
 		if (GM.pc.getStamina() > 0):
-			addButton("Use strength!", "Apply extra force", "grab2")
+			addButton("Использовать силу!", "Приложить больше усилий", "grab2")
 		else:
-			addDisabledButton("Use strength!", "You don't have any stamina")
-		addButton("Give up", "Whatever", "endthescene")
+			addDisabledButton("Использовать силу!", "У тебя закончилась выносливость")
+		addButton("Сдаться", "Да и хрен с ним", "endthescene")
 	if(state == "grab2"):
-		saynn("You keep applying more and more of your strength, trying to pry the chip off of the floor with your digits..")
+		saynn("Ты продолжаешь вкладывать всё больше и больше сил, пытаясь поддеть чип пальцами и оторвать его от пола...")
 
-		saynn("It's hard.. the chip is small so it's hard to get a good grip. You're also afraid you might just snap the thing too. Still, bit by bit, you manage to get leverage.")
+		saynn("Это трудно... чип крошечный, и ухватиться за него сложно. К тому же ты боишься, что можешь просто разломить его пополам. И всё же, шаг за шагом, тебе удается найти точку опоры.")
 
-		saynn("You keep pulling..")
+		saynn("Ты продолжаешь тянуть...")
 
-		saynn("Until suddenly..")
+		saynn("Как вдруг...")
 
-		saynn("The chip gives!")
+		saynn("Чип поддается!")
 
-		saynn("It gives so much, the thing flies out of your hands and straight into one of the vent shafts.")
+		saynn("Он вылетает так резко, что буквально выскальзывает из рук и улетает прямиком в одну из вентиляционных шахт.")
 
-		saynn("Shit.")
+		saynn("Блядь.")
 
-		saynn("You look into it.. it's dark in there. Dark and dirty. There aren't any.. sticks.. around really.")
+		saynn("Ты заглядываешь внутрь... там темно. Темно и грязно. И никаких... палочек... поблизости особо нет.")
 
-		saynn("If you want to get this chip, you will have to bend over and reach into the vent really far..")
+		saynn("Если хочешь достать этот чип, тебе придется наклониться и засунуть руку в вентиляцию по самую плешь...")
 
-		addButton("Reach in!", "You really need those 100 creds", "grab3")
-		addButton("Give up", "It's not worth it", "endthescene")
+		addButton("Суй руку!", "Тебе позарез нужны эти 100 кредитов", "grab3")
+		addButton("Сдаться", "Оно того не стоит", "endthescene")
 	if(state == "grab3"):
 		playAnimation(StageScene.SexVent, "tease", {pc="pc", hideNPC=true})
-		saynn("In pursuit of that chip, you get into that ventilation shaft, reaching your hand out to try to find it.")
+		saynn("В погоне за чипом ты забираешься в вентиляционную шахту, вытягивая руку в надежде нащупать его.")
 
-		saynn("Only now you begin to realize.. that this position is quite vulnerable. What if someone decides to take advantage of you?")
+		saynn("И только сейчас до тебя начинает доходить... что в таком положении ты чертовски уязвима. А что, если кто-нибудь решит тобой воспользоваться?")
 
-		addButton("Keep reaching!", "Give me those sweet credits", "grab4")
-		addButton("Get out", "Better safe than sorry", "grab3_cancel")
+		addButton("Продолжай тянуться!", "Отдай мне эти сладкие кредиты", "grab4")
+		addButton("Выйти", "Береженого бог бережет", "grab3_cancel")
 	if(state == "grab3_cancel"):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("As quickly as you can, you get out of that shaft and swipe off any dirt.")
+		saynn("Как можно быстрее ты выбираешься из шахты и отряхиваешь грязь.")
 
-		saynn("Looking around.. no one really cares about you. The others are mostly watching the arena.")
+		saynn("Оглядываешься по сторонам... всем на тебя плевать. Остальные в основном залипают на арену.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "grab4"):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("You keep reaching.. until you manage to find the chip!")
+		saynn("Ты продолжаешь шарить руками.. пока наконец не нащупываешь чип!")
 
-		saynn("With a sense of triumph, you get out of that vent and swipe off any dirt or dust with your free hand.")
+		saynn("С чувством триумфа ты выбираешься из вентиляции и свободной рукой отряхиваешь грязь и пыль.")
 
-		saynn("From a quick glance.. it seems to be the real deal. You are holding a chip with a hundred credits on it!")
+		saynn("Беглый взгляд.. и кажется, это та самая вещь. В твоих руках чип со сто кредитами!")
 
-		saynn("You begin bringing it closer to your collar so that you can transfer the credits to your account..")
+		saynn("Ты начинаешь подносить его к своему ошейнику, чтобы перевести кредиты на свой счет..")
 
-		saynn("But then the chip miraculously flies out of your hand! You weren't looking so you're not even sure what happened.")
+		saynn("Но вдруг чип чудесным образом вылетает из твоих рук! Ты не смотрел, так что даже не понимаешь, что произошло.")
 
-		addButton("Catch it!", "You're not letting it go that easy", "grab5")
-		addButton("Give up", "Just forget about it", "endthescene")
+		addButton("Поймай его!", "Ты не собираешься так просто его отпускать", "grab5")
+		addButton("Сдаться", "Просто забей на него", "endthescene")
 	if(state == "grab5"):
 		playAnimation(StageScene.Solo, "crawl")
-		saynn("You leap after the chip! But as you catch the thing, it slips out of your hands again.. such a slippery bastard!")
+		saynn("Ты прыгаешь за чипом! Но как только ты его хватаешь, он снова выскальзывает из рук.. ну и скользкая же сволочь!")
 
-		saynn("Both, you and the chip, fall onto the floor.")
+		saynn("И ты, и чип с грохотом валитесь на пол.")
 
-		saynn("So close.. The chip is only a meter or two away.. You crawl after it and grab it.. only for it to slip away yet again. Something is wrong here..")
+		saynn("Так близко.. Чип всего в метре-другом.. Ты ползешь за ним и хватаешь его.. но он снова выскальзывает из рук. Здесь что-то не так..")
 
-		saynn("You do it again, crawling after the chip and grabbing it.. just to feel it get yanked out of your grip.")
+		saynn("Ты пробуешь снова: ползешь за чипом, хватаешь его.. и тут же чувствуешь, как его резко выдергивают из твоих пальцев.")
 
-		saynn("Wait, you have just noticed that there is a very thin wire attached to it. Someone's been pulling on it this whole time, pranking you.. or luring you somewhere.")
+		saynn("Погоди, ты только что заметил, что к нему прикреплена тонкая проволока. Кто-то всё это время тянул за неё, разыгрывая тебя.. или заманивая куда-то.")
 
-		saynn("You begin to get a feeling that this might not end well for you.. Maybe you should stop before things get too far.")
+		saynn("У тебя начинает закрадываться предчувствие, что всё это может закончиться для тебя хреново.. Может, стоит остановиться, пока не стало слишком поздно?")
 
-		addButton("Give up", "Now might be a good time to stop", "grab5_cancel")
-		addButton("Step on it", "Step on the wire and try to get the chip!", "grab5_fail")
+		addButton("Сдаться", "Сейчас — самое время завязывать", "grab5_cancel")
+		addButton("Жми!", "Наступи на проволоку и попытайся схватить чип!", "grab5_fail")
 		if (GM.pc.getInventory().hasItemID("Shiv")):
-			addButton("Use a shiv", "Cut the thin wire with a shiv!", "grab6")
+			addButton("Использовать шило", "Перережь тонкую проволоку шилом!", "grab6")
 		else:
-			addDisabledButton("Shiv", "You don't have a shiv so you can't cut the wire")
+			addDisabledButton("Шило", "У тебя нет заточки, так что перерезать проволоку не получается")
 	if(state == "grab5_cancel"):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("You decide to stop the chase. Whoever designed this prank, they won. It's not worth it anymore.")
+		saynn("Ты решаешь прекратить погоню. Кто бы ни придумал этот розыгрыш, он победил. Оно того больше не стоит.")
 
-		saynn("You get off of the dirty floor.. and continue on your way.")
+		saynn("Ты поднимаешься с грязного пола... и продолжаешь свой путь.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "grab5_fail"):
 		playAnimation(StageScene.Solo, "defeat")
-		saynn("A plan is brewing in your head..")
+		saynn("В твоей голове зреет план...")
 
-		saynn("Instead of chasing after the thing, you get up and walk around it.")
+		saynn("Вместо того чтобы гнаться за этой штукой, ты просто встаешь и обходишь её.")
 
-		saynn("Your eye spots the subtle shine of the thin wire, following the floor.. somewhere unknown.")
+		saynn("Твой глаз замечает едва уловимый блеск тонкой проволоки, тянущейся по полу... куда-то в неизвестность.")
 
-		saynn("You wait for a good moment.. and step on it!")
+		saynn("Ты ждешь подходящего момента... и наступаешь на неё!")
 
-		saynn("The wire slides under your {pc.foot}.. but the chip itself gets caught on it! Bingo!")
+		saynn("Проволока скользит под твоей {pc.foot}... но сам чип зацепляется за неё! Бинго!")
 
-		saynn("But before you can pick it up, the pressure on your {pc.foot} suddenly increases.. Something REALLY strong yanks on the wire.. making the chip swipe you off of your {pc.feet}!")
+		saynn("Но прежде чем ты успеваешь его поднять, давление на твою {pc.foot} внезапно возрастает... Что-то ОЧЕНЬ сильное дергает за проволоку... и чип сбивает тебя с {pc.feet}!")
 
-		saynn("You hit the floor.. again.. ow..")
+		saynn("Ты влетаешь лицом в пол... снова... ой...")
 
-		saynn("The chip gets yanked who knows where..")
+		saynn("Чип выдергивают куда-то в неизвестном направлении...")
 
-		saynn("Maybe if you had a shiv, you'd be able to just cut the wire..")
+		saynn("Может, будь у тебя заточка, ты бы просто перерезал провод...")
 
-		saynn("Or maybe.. this is just a trap.. who knows..")
+		saynn("А может... это просто ловушка... кто знает...")
 
-		saynn("Either way, it's time to go.")
+		saynn("Так или иначе, пора выдвигаться.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "grab6"):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("A great plan is brewing in your head..")
+		saynn("В твоей голове созревает гениальный план...")
 
-		saynn("Instead of going after the chip, you go after the wire!")
+		saynn("Вместо того чтобы охотиться за чипом, ты нацеливаешься на провод!")
 
-		saynn("You wait for a good moment.. and then reach to cut it with your shiv! And, without much trouble, you manage to do so.")
+		saynn("Ты выжидаешь подходящий момент... и тут же тянешься, чтобы перерезать его заточкой! И, без особых проблем, тебе это удается.")
 
-		saynn("With that out of the way, the chip becomes still, allowing you to grab it.")
+		saynn("Теперь, когда с проводом покончено, чип замирает, позволяя тебе его схватить.")
 
-		saynn("It's in your hand now.. it's a little dusty.. but one hundred well-earned credits look great in any condition, really.")
+		saynn("Теперь он у тебя в руке... он немного пыльный... но сто честно заработанных кредитов хороши в любом состоянии, правда.")
 
-		saynn("But..")
+		saynn("Но...")
 
-		saynn("As you look around, you can't shake off a feeling that all of this was some kind of plan.. to trap you.")
+		saynn("Оглядываясь по сторонам, ты не можешь избавиться от ощущения, что всё это было чьим-то планом... планом, чтобы загнать тебя в ловушку.")
 
-		saynn("(( If you continue, you will trigger a soft bad end ))")
+		saynn("(( Если продолжишь, то получишь «мягкую» плохую концовку ))")
 		
-		addButton("Transfer credits", "(Bad end) Transfer the credits onto your account", "grab7")
-		addButton("Cancel", "Stop it right here", "bad6_cancel")
+		addButton("Перевести кредиты", "(Плохая концовка) Перевести кредиты на свой счет", "grab7")
+		addButton("Отмена", "Остановиться прямо здесь", "bad6_cancel")
 	if(state == "bad6_cancel"):
-		saynn("You decide to put the chip back where it was.")
+		saynn("Ты решаешь вернуть чип на место.")
 
-		saynn("It's best to let some other poor soul have it. You had your fun with it.")
+		saynn("Лучше пусть он достанется какой-нибудь другой бедняге. Ты уже вдоволь им повеселился.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "grab7"):
 		playAnimation(StageScene.Solo, "defeat")
-		saynn("No way you're stopping now. You earned every single one of the credits!")
+		saynn("Ты не собираешься останавливаться сейчас. Ты заслужил каждый чертов кредит!")
 
-		saynn("You bring the chip to your collar so that it can be scanned and transferred to your inmate account.")
+		saynn("Ты подносишь чип к своему ошейнику, чтобы его отсканировали и зачислили средства на твой счет заключенного.")
 
-		saynn("Instead.. you hear an angry beep.. followed by a [b]sudden shock[/b] rocking through your whole body, spreading from your neck across your nervous system!")
+		saynn("Но вместо этого... ты слышишь яростный писк... а затем [b]внезапный разряд[/b] прошивает всё твоё тело, распространяясь от шеи по всей нервной системе!")
 
-		saynn("[say=pc]ARGH![/say]")
+		saynn("[say=pc]ААААГХ![/say]")
 
-		saynn("You hit the floor instantly.. Your limbs give out, your body spasming out of control. It hurts.. Everything hurts.")
+		saynn("Ты мгновенно рушишься на пол... Конечности подкашиваются, тело сотрясают неконтролируемые судороги. Больно... Больно везде.")
 
-		saynn("You can live with most of that.. but you realize that you can't really breathe much.. the muscles of your lungs have seized.. your loud scream has left you with no air..")
+		saynn("С этим еще можно как-то смириться... но ты понимаешь, что почти не можешь дышать... мышцы легких свело судорогой... твой громкий крик выжал из тебя весь воздух...")
 
-		saynn("The darkness creeps around the corners of your vision..")
+		saynn("Тьма подкрадывается к самым краям твоего зрения...")
 
-		addButton("Nap time!", "Looks like it was a trap all along..", "grab8")
+		addButton("Время вздремнуть!", "Похоже, это была ловушка с самого начала...", "grab8")
 	if(state == "grab8"):
 		playAnimation(StageScene.Sleeping, "sleep")
-		saynn("Panic settles in.. You force yourself to breathe a tiny bit.. but it's not enough to stay conscious. You black out.")
+		saynn("Накатывает паника... Ты заставляешь себя сделать крошечный вдох... но этого недостаточно, чтобы оставаться в сознании. Ты отключаешься.")
 
-		saynn("The last thing you see.. some blurry figures approaching you.")
+		saynn("Последнее, что ты видишь... какие-то размытые фигуры, приближающиеся к тебе.")
 
-		saynn("[sayFemale]We got {pc.him}, we got {pc.him}! The killer chip prank claims another victim. What now? Can {pc.he} be my bitch?[/sayFemale]")
+		saynn("[sayFemale]У нас есть {pc.him}, у нас есть {pc.him}! Пранк с чипом-убийцей забирает очередную жертву. Что теперь? Может, {pc.he} станет нашей сучкой?[/sayFemale]")
 
-		saynn("[sayMale]No, you got plenty already. This one.. will yield us some real credits instead. I know just the guy.[/sayMale]")
+		saynn("[sayMale]Нет, у тебя их и так полно. А вот эта... принесет нам реальные кредиты. Я знаю одного парня.[/sayMale]")
 
-		saynn("You get dragged off somewhere..")
+		saynn("Тебя куда-то утаскивают...")
 
-		addButton("Continue", "See what happens next", "start_slavery")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_slavery")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

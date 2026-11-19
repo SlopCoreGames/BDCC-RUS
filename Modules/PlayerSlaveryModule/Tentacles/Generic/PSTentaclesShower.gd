@@ -22,84 +22,84 @@ func _run():
 
 	if(state == ""):
 		playAnimation(StageScene.Showering, "body", {pc="pc", bodyState={naked=true}})
-		saynn("You approach the shower and turn it on. The water seems nice and warm.")
+		saynn("Ты подходишь к душу и включаешь воду. Вода кажется приятной и теплой.")
 
-		saynn("No one is watching.. well.. except for the security camera on the opposite wall of the cell. Your best hope is the camera having too low of a resolution to see.. everything.")
+		saynn("Никто не смотрит... ну, разве что камера наблюдения на противоположной стене камеры. Твоя единственная надежда — что у камеры слишком низкое разрешение, чтобы разглядеть... всё.")
 
 		if (_tentacles.isNormal() || _tentacles.isTiny() || _tentacles.isSmalll()):
-			saynn("Oh yeah, there are obviously the tentacles too in the room with you. They don't really have any eyes.. but they can probably somehow sense you showering anyway. Maybe you can even offer them a good view..")
+			saynn("Ах да, в комнате с тобой, конечно же, есть еще и щупальца. У них нет глаз в привычном понимании... но они, вероятно, всё равно чувствуют, что ты моешься. Может, тебе стоит даже предложить им хороший вид?..")
 
 			_tentacles.talk("We are not looking, feel safe.")
-		saynn("You take off your leotard and step under the thin stream, letting it run over your shoulders and down your back.")
+		saynn("Ты снимаешь леотард и встаешь под тонкую струю, позволяя воде стекать по плечам и спине.")
 
-		saynn("There is liquid soap here too. You put some on your hands and start working it into your hair and body.")
+		saynn("Здесь есть и жидкое мыло. Ты наносишь немного на руки и начинаешь втирать его в волосы и тело.")
 
 		if (GM.pc.isEggStuffed()):
-			saynn("You obviously notice how big your belly is.. from all the eggs that are inside you. Your hands carefully rub all across it.")
+			saynn("Ты, конечно же, замечаешь, каким огромным стал твой живот... из-за всех тех яиц, что внутри тебя. Твои руки осторожно скользят по нему.")
 
 			if (_tentacles.isNormal() || _tentacles.isTiny() || _tentacles.isSmalll()):
-				saynn("The tentacles watch you wash your bumpy belly with extra interest. One of them suddenly reaches out to gently rub your belly as well.")
+				saynn("Щупальца с особым интересом наблюдают за тем, как ты моешь свой раздутый живот. Одно из них внезапно тянется к тебе, чтобы тоже нежно погладить твой живот.")
 
 				_tentacles.talk("Sorry, the temptation was too strong for us.")
-		saynn("Steam rises, fogging the windows around you a bit.")
+		saynn("Поднимается пар, слегка затуманивая окна вокруг тебя.")
 
-		saynn("Eventually, you wash yourself clean. You grab a blanket and rub yourself dry.")
+		saynn("В конце концов, ты отмываешься. Ты берешь одеяло и вытираешься.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		if (_tentacles.isNormal() || _tentacles.isSmalll()):
 			if (_tentacles.getPrefer() != _tentacles.EVENT_LEWD):
-				addButton("Masturbate", "Touch yourself while the tentacles are watching..", "do_touch_self")
+				addButton("Подрочить", "Ласкай себя, пока щупальца наблюдают...", "do_touch_self")
 			else:
-				addDisabledButton("Masturbate", "The tentacles already prefer to be lusty..")
+				addDisabledButton("Подрочить", "Щупальца уже предвкушают похоть...")
 	if(state == "do_touch_self"):
 		addCharacter(GM.main.PS.getTentaclesCharID())
 		if (GM.pc.hasReachablePenis()):
 			playAnimation(StageScene.Showering, "stroke", {pc="pc", bodyState={naked=true, hard=true}, cum=true,pcCum=true})
-			saynn("You decide to give the tentacles a small show and start stroking your {pc.penis} while they are watching!")
+			saynn("Ты решаешь устроить щупальцам небольшое шоу и начинаешь ласкать свою {pc.penis} под их пристальными взглядами!")
 
-			saynn("Quiet moans escape your lips as your hand slides back and forth across your hard shaft, your other hand holding onto the wall.")
+			saynn("Тихие стоны срываются с твоих губ, пока рука скользит вперед-назад по твоему твердому члену, а вторая рука вцепляется в стену.")
 
-			saynn("You give the tentacles a quick glimpse.. and see that their tips are becoming slick.. drippy even. The scent of that nectar reaches your senses, making you more eager.")
+			saynn("Ты бросаешь быстрый взгляд на щупальца... и видишь, что их кончики становятся скользкими... даже влажными. Запах этого нектара достигает твоих чувств, разжигая в тебе еще большее желание.")
 
-			saynn("Soon, you push yourself over the edge and grunt as your balls start to pulse, your cock shooting strings of juicy {pc.cum}, painting the wall.")
+			saynn("Вскоре ты доводишь себя до предела и кряхтишь, когда твои яички начинают пульсировать, а член выстреливает струями сочной {pc.cum}, разбрызгивая её по стене.")
 
-			saynn("That felt good.")
+			saynn("Это было приятно.")
 
 		elif (GM.pc.hasReachableVagina()):
 			playAnimation(StageScene.Showering, "rub", {pc="pc", bodyState={naked=true, hard=true}})
-			saynn("You decide to give the tentacles a small show and start rubbing your {pc.pussyStretch} pussy while they are watching!")
+			saynn("Ты решаешь устроить щупальцам небольшое шоу и начинаешь тереть свою {pc.pussyStretch} киску под их пристальными взглядами!")
 
-			saynn("Quiet moans escape your lips as you switch between flicking your clit and fingering your pussy hole, your other hand holding onto the wall.")
+			saynn("Тихие стоны срываются с твоих губ, пока ты то ласкаешь клитор пальцами, то проникаешь в свою киску, а вторая рука вцепляется в стену.")
 
-			saynn("You give the tentacles a quick glimpse.. and see that their tips are becoming slick.. drippy even. The scent of that nectar reaches your senses, making you more eager.")
+			saynn("Ты бросаешь быстрый взгляд на щупальца... и видишь, что их кончики становятся скользкими... даже влажными. Запах этого нектара достигает твоих чувств, разжигая в тебе еще большее желание.")
 
-			saynn("Soon, you push yourself over the edge and let out a raw noise of pleasure as the orgasm comes crashing down, making your legs shake. Your pussy clenches around your digits in erratic ways until the very last wave of ecstasy..")
+			saynn("Вскоре ты доводишь себя до предела и издаешь первобытный звук наслаждения, когда на тебя обрушивается оргазм, заставляя ноги дрожать. Твоя киска хаотично сжимается вокруг пальцев до самой последней волны экстаза...")
 
-			saynn("That felt good.")
+			saynn("Это было приятно.")
 
 		elif (GM.pc.isWearingChastityCage()):
 			playAnimation(StageScene.Showering, "rub", {pc="pc", bodyState={naked=true, hard=true}})
-			saynn("You decide to give the tentacles a small show and reach down to your chastity cage. You play and tug on it while they are watching! You can't really reach your locked dick to stimulate it directly.. but it still feels nice.")
+			saynn("Вы решаете устроить щупальцам небольшое шоу и тянетесь к своей девственной клетке. Вы играете с ней и дергаете её прямо у них на глазах! Дотянуться до запертого члена, чтобы стимулировать его напрямую, не получается... но ощущения всё равно приятные.")
 
-			saynn("Quiet moans escape your lips as your hand desperately tugs on your cage and plays with your balls, your other hand holding onto the wall.")
+			saynn("Тихие стоны срываются с ваших губ, пока рука отчаянно дергает клетку и ласкает яички, а вторая рука вцепилась в стену.")
 
-			saynn("You give the tentacles a quick glimpse.. and see that their tips are becoming slick.. drippy even. The scent of that nectar reaches your senses, making you more eager.")
+			saynn("Ты бросаешь быстрый взгляд на щупальца... и видишь, что их кончики становятся скользкими... даже влажными. Запах этого нектара достигает твоих чувств, разжигая в тебе еще большее желание.")
 
-			saynn("As much as you try.. you can't really make yourself cum.. aw. Still.. It felt good.")
+			saynn("Сколько бы вы ни старались... кончить так и не получается... ох. Но всё равно... было приятно.")
 
 		else:
 			playAnimation(StageScene.Showering, "rub", {pc="pc", bodyState={naked=true, hard=true}})
-			saynn("You decide to give the tentacles a small show and reach your hand between your legs to play with your {pc.analStretch} tailhole while they are watching!")
+			saynn("Вы решаете устроить щупальцам небольшое шоу и запускаете руку между ног, чтобы поиграть со своим {pc.analStretch} анусом прямо у них на глазах!")
 
-			saynn("Quiet moans escape your lips as you switch between rubbing the ring and fingering it, your other hand holding onto the wall.")
+			saynn("Тихие стоны срываются с ваших губ, пока вы переходите от поглаживания кольца к проникновению пальцами, придерживаясь другой рукой за стену.")
 
-			saynn("You give the tentacles a quick glimpse.. and see that their tips are becoming slick.. drippy even. The scent of that nectar reaches your senses, making you more eager.")
+			saynn("Ты бросаешь быстрый взгляд на щупальца... и видишь, что их кончики становятся скользкими... даже влажными. Запах этого нектара достигает твоих чувств, разжигая в тебе еще большее желание.")
 
-			saynn("Soon, you push yourself over the edge and let out a raw noise of pleasure as the orgasm comes crashing down, making your legs shake. Your tailhole clenches around your digits in erratic ways until the very last wave of ecstasy..")
+			saynn("Вскоре вы доводите себя до предела и издаете первобытный звук наслаждения, когда на вас обрушивается оргазм, заставляя ноги дрожать. Ваше отверстие судорожно сжимает пальцы в хаотичном ритме, пока не наступает самая последняя волна экстаза...")
 
-			saynn("That felt good.")
+			saynn("Это было приятно.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	var _tentacles:PlayerSlaveryTentacles = GM.main.PS

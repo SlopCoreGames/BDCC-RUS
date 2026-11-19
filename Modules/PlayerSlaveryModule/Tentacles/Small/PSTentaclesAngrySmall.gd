@@ -42,121 +42,121 @@ func _run():
 	var _tentacles:PlayerSlaveryTentacles = GM.main.PS
 
 	if(state == ""):
-		saynn("You shouldn't see this.")
+		saynn("Этого здесь быть не должно.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "0"):
 		_tentacles.doAnimDuo("whip")
-		saynn("You were minding your own business.. when you suddenly feel one of the tentacles bonking you! Ow.")
+		saynn("Ты занимался своими делами... как вдруг чувствуешь, что один из щупалец отвесил тебе звонкий шлепок! Ой.")
 
-		saynn("You turn around and look at it.")
+		saynn("Ты оборачиваешься, чтобы посмотреть на него.")
 
-		saynn("It seems to be angry because you "+str(_tentacles.getAngryReason())+".. but it quickly calms down after seeing your glare.")
+		saynn("Похоже, оно злится из-за того, что ты "+str(_tentacles.getAngryReason())+".. но оно быстро успокаивается, встретив твой суровый взгляд.")
 
 		_tentacles.talk("We're sorry that we did that.")
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "1"):
 		_tentacles.doAnimDuo("glare")
-		saynn("Your path gets blocked by the tentacles! They don't really have any eyes.. but you can still feel their angry glare. The air itself feels heavy..")
+		saynn("Щупальца преграждают тебе путь! У них вроде бы нет глаз... но ты всё равно кожей чувствуешь их яростный взор. Сам воздух кажется тяжелым...")
 
-		saynn("They are probably upset because you "+str(_tentacles.getAngryReason())+".")
+		saynn("Вероятно, они расстроены тем, что ты "+str(_tentacles.getAngryReason())+".")
 
-		saynn("The monster doesn't touch you or anything.. It simply watches you and silently judges your actions.")
+		saynn("Монстр тебя не трогает... Он просто наблюдает за тобой и молча осуждает каждый твой шаг.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "2"):
 		_tentacles.doAnimDuo("whip2")
-		saynn("The tentacles approach you, twitching slightly as their tips watch you intently.")
+		saynn("Щупальца приближаются к тебе, слегка подергиваясь, а их кончики пристально следят за каждым твоим движением.")
 
-		saynn("[say=pc]What now?[/say]")
+		saynn("[say=pc]И что теперь?[/say]")
 
-		saynn("Suddenly, one of the slender tendrils sneakily reaches out behind you and then smacks your {pc.thick} butt! It doesn't hit too hard.. but it still stings.")
+		saynn("Внезапно один из тонких отростков незаметно подкрадывается сзади и отвешивает тебе звонкий шлепок по {pc.thick} заднице! Не слишком сильно... но всё равно щиплет.")
 
-		saynn("[say=pc]Hey![/say]")
+		saynn("[say=pc]Эй![/say]")
 
-		saynn("You spin around, more surprised than hurt.. but the tendril has already vanished back into the forest of them. The monster doesn't move.. but you can almost sense a feeling of smug satisfaction passing through its swaying tentacles.")
+		saynn("Ты резко оборачиваешься, скорее от удивления, чем от боли... но щупальце уже скрылось в их лесной чаще. Монстр не двигается... но ты почти физически ощущаешь волну самодовольного удовлетворения, проходящую сквозь его колышущиеся отростки.")
 
-		saynn("It looks like they did it because you "+str(_tentacles.getAngryReason())+".")
+		saynn("Похоже, они сделали это потому, что ты "+str(_tentacles.getAngryReason())+".")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "3"):
 		_tentacles.doAnimDuo("poke")
-		saynn("You almost trip as a tentacle loops itself securely around your ankle, anchoring you to the spot.")
+		saynn("Ты чуть не спотыкаешься, когда щупальце плотно обвивает твою лодыжку, намертво пригвоздив тебя к месту.")
 
-		saynn("You look down.. and see more of them approaching and sliding up along your legs and curling around your wrists, binding them. They then tighten their grip.. not enough to hurt, but enough to make their point. They're probably upset because you "+str(_tentacles.getAngryReason())+".")
+		saynn("Ты опускаешь взгляд... и видишь, как новые отростки приближаются, скользят вверх по твоим ногам и обвивают запястья, связывая их. Затем они сжимаются... не настолько сильно, чтобы причинить боль, но достаточно, чтобы показать, кто здесь главный. Вероятно, они рассержены из-за того, что ты "+str(_tentacles.getAngryReason())+".")
 
-		saynn("[say=pc]Really?[/say]")
+		saynn("[say=pc]Серьёзно?[/say]")
 
 		_tentacles.talk("We could do something worse.. but we won't.. for now..")
-		saynn("For a long moment, you're just held there. The tentacles don't squeeze or pull.. they just hold you restrained. Then, as smoothly as they tightened, they loosen and slip away, leaving you alone.")
+		saynn("Долгое время ты просто стоишь, удерживаемая ими. Щупальца не сжимают и не тянут... они просто держат тебя в оковах. Затем, так же плавно, как они сжались, они ослабляют хватку и выскальзывают прочь, оставляя тебя в одиночестве.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "4"):
 		_tentacles.doAnimDuo("whip", {npcAction="hurt"})
-		saynn("Your path gets blocked by the tentacles! They seem upset because you "+str(_tentacles.getAngryReason())+".")
+		saynn("Твой путь преграждают щупальца! Кажется, они расстроены тем, что ты "+str(_tentacles.getAngryReason())+".")
 
-		saynn("[say=pc]So? What are you gonna do?[/say]")
+		saynn("[say=pc]Ну и? И что ты теперь сделаешь?[/say]")
 
-		saynn("The many tendrils vibrate like cobra tails. Then, a single one of them flicks forward, faster than a whipcrack. There is a sharp, sudden pinch at your side.")
+		saynn("Множество щупалец вибрируют, словно хвосты кобр. Затем одно из них резко выбрасывается вперед, быстрее щелчка кнута. Ты чувствуешь резкий, внезапный щипок в боку.")
 
-		saynn("[say=pc]Ow.[/say]")
+		saynn("[say=pc]Ой.[/say]")
 
-		saynn("You jump back and grab onto the spot. Luckily, the tentacle didn't even break the skin. You're not even sure how it did that, the tentacle has no teeth.. but it managed to leave a small mark.")
+		saynn("Ты отпрыгиваешь назад и хватаешься за ушибленное место. К счастью, щупальце даже не прокусило кожу. Ты даже не понимаешь, как это вышло — у него ведь нет зубов... но оно умудрилось оставить след.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "5"):
 		playAnimation(StageScene.TentaclesBondage, "bondage", {plant=true})
-		saynn("You hear a quiet hiss behind you. As you look behind, you see that it's the slick tentacles sliding across the floor.")
+		saynn("Позади тебя слышится тихое шипение. Оглянувшись, ты видишь, что это скользкие щупальца ползут по полу.")
 
-		saynn("Before you can react, a thick, ropy tendril coils around your waist and arms, giving you a sudden tight embrace.")
+		saynn("Прежде чем ты успеваешь среагировать, толстый, жгутообразный отросток обвивает твою талию и руки, внезапно и крепко прижимая тебя к себе.")
 
-		saynn("[say=pc]Wha-![/say]")
+		saynn("[say=pc]Что за!..[/say]")
 
-		saynn("Your protest is cut short as a thinner tentacle presses firmly over your mouth, its tip pushing against your lips. At the same time, another tendril unfurls from above, covering your eyes, plunging you into complete darkness!")
+		saynn("Твой протест обрывается, когда более тонкий щупалец плотно прижимается к твоему рту, упираясь кончиком в губы. В то же самое время другой отросток разворачивается сверху, закрывая тебе глаза и погружая в полную темноту!")
 
-		saynn("All of this is probably happening because you "+str(_tentacles.getAngryReason())+".")
+		saynn("Всё это происходит, скорее всего, потому что ты "+str(_tentacles.getAngryReason())+".")
 
-		saynn("You can't see.. You can barely make a sound beyond a muffled grunt without letting the tentacle into your mouth.. Other tendrils slide over your {pc.masc} body.. not just binding.. but also exploring. Some tie around your thighs, some painfully-squeeze your {pc.breasts}.. and some give your ass a few humiliating spanks.")
+		saynn("Ты ничего не видишь... И едва можешь издать хоть какой-то звук, кроме приглушенного мычания, чтобы не впустить щупальце в рот... Другие отростки скользят по твоему {pc.masc} телу... не просто связывая, но и исследуя. Одни обвиваются вокруг бедер, другие болезненно сжимают твои {pc.breasts}... а некоторые отвешивают твоей заднице несколько унизительных шлепков.")
 
-		saynn("After that.. invasive.. hug.. the tentacles finally back away, letting you see and speak again.")
+		saynn("После этого... бесцеремонного... объятия... щупальца наконец отстраняются, позволяя тебе снова видеть и говорить.")
 
-		saynn("[say=pc]Ow.. fuck..[/say]")
+		saynn("[say=pc]Ох... блядь...[/say]")
 
-		saynn("Your whole body feels sore now.")
+		saynn("Теперь всё твоё тело ноет.")
 
-		saynn("It will probably get even worse if you don't treat them right.. The tentacles are getting really mean.")
+		saynn("Скорее всего, станет еще хуже, если ты не будешь обращаться с ними правильно... Щупальца становятся по-настоящему злыми.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "6"):
 		playAnimation(StageScene.TentaclesChoke, "tease", {plant=true})
-		saynn("The tentacle monster approaches you.. Before you can react, one of the tendrils darts towards your neck and coils around it!")
+		saynn("Тентаклевой монстр приближается к тебе... Прежде чем ты успеваешь среагировать, один из отростков резко бросается к твоей шее и обвивает её!")
 
-		saynn("[say=pc]Hey![/say]")
+		saynn("[say=pc]Эй![/say]")
 
-		saynn("You feel an immediate pressure around your throat. It's not a crushing grip.. but a tight squeeze instead that makes your next breath almost impossible. Your hands fly up to your neck on instinct, trying to pull the angry snake off.. but it just curls around your neck another time to increase its grab.")
+		saynn("Ты чувствуешь мгновенное давление на горло. Это не удушающая хватка, а скорее тугое сжатие, от которого следующий вдох становится почти невозможным. Инстинктивно ты вскидываешь руки к шее, пытаясь стянуть разъяренную змею... но она лишь еще раз обвивается вокруг твоей шеи, усиливая захват.")
 
-		saynn("Dark spots begin to appear at the edge of your vision, little gasps escape your lips. But just when the lightheadedness begins to set in, the tentacle relaxes. Cool air rushes back into your lungs as you start coughing, your hands holding onto your bruised neck.")
+		saynn("Перед глазами начинают плясать темные пятна, с губ срываются короткие всхлипы. Но как только начинает подступать головокружение, щупальце расслабляется. В легкие врывается прохладный воздух, ты начинаешь кашлять, судорожно хватаясь руками за свою посиневшую шею.")
 
-		saynn("[say=pc]..Fuck.. that was tight.[/say]")
+		saynn("[say=pc]Блядь... ну и туго же оно сжало.[/say]")
 
-		saynn("You're not sure if it's even able to snap your neck.. but you don't wanna find that out either. All of this is probably happening because you "+str(_tentacles.getAngryReason())+".")
+		saynn("Ты не уверен, способно ли оно даже сломать тебе шею... но и проверять это на себе желания нет. Всё это происходит, скорее всего, потому что ты "+str(_tentacles.getAngryReason())+".")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "7"):
 		playAnimation(StageScene.TentaclesSex, "tease", {plant=true})
-		saynn("You feel something touching your ankles.. and also your wrists. You look down and see tentacles curling around your limbs!")
+		saynn("Ты чувствуешь, как что-то касается твоих лодыжек... и запястий. Опустив взгляд, ты видишь, как щупальца обвивают твои конечности!")
 
-		saynn("[say=pc]Hey, wait![/say]")
+		saynn("[say=pc]Эй, погодите![/say]")
 
-		saynn("In one smooth, effortless motion, they lift you clear off the floor and suspend you in the air. You'd try to get free.. but more and more tentacles wrap around your body, arms and legs, keeping you completely helpless.")
+		saynn("Одним плавным, непринужденным движением они отрывают тебя от пола и подвешивают в воздухе. Ты пытаешься вырваться... но всё больше и больше щупалец облепляют твое тело, руки и ноги, оставляя тебя совершенно беспомощной.")
 
-		saynn("A thinner, more agile tendril shows up, stopping just inches from your face. It hovers there, vibrating with clear intent. It gradually drifts lower, tracing a slow, threatening line down your chest and stomach while the rest of the tentacles wrench your limbs, sending plenty waves of pain through you!")
+		saynn("Появляется более тонкий и гибкий отросток, замирая в нескольких дюймах от твоего лица. Он парит рядом, вибрируя с явным намерением. Он медленно сползает ниже, проводя угрожающую линию по твоей груди и животу, в то время как остальные щупальца скручивают твои конечности, посылая по телу волны боли!")
 
-		saynn("You growl, your whole body tensing up as your muscles get strained hard. It feels like this will never end.. but eventually it does. Slowly and gradually, the tentacles set you back down to your feet. The tentacles unwind and retreat, leaving you shaky and intimidated.")
+		saynn("Ты рычишь, всё тело напрягается, а мышцы сводит от сильного натяжения. Кажется, что это никогда не закончится... но в конце концов всё стихает. Медленно и постепенно щупальца возвращают тебя на ноги. Они разжимаются и отступают, оставляя тебя дрожащей и подавленной.")
 
-		saynn("They could have done way more than they did.. but it looks like they're not mean enough for that yet.")
+		saynn("Они могли бы сделать куда больше... но, похоже, они ещё недостаточно злые для этого.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	var _tentacles:PlayerSlaveryTentacles = GM.main.PS

@@ -7,7 +7,7 @@ func registerTriggers(es):
 	es.addTrigger(self, Trigger.EnteringRoom, "medical_nursery")
 
 func run(_triggerID, _args):
-	saynn("The nurse behind the counter flicks her gaze towards you as you enter, but quickly returns to her work. Presumably if you had something important, you could just ask or tell her.")
+	saynn("Медсестра за стойкой бросает на тебя мимолетный взгляд, когда ты входишь, но быстро возвращается к своим делам. Полагая, если бы у тебя было что-то важное, ты бы просто спросил или сказал ей об этом.")
 	addButtonUnlessLate("Nurse", "Talk to the nurse", "talk")
 
 func getPriority():

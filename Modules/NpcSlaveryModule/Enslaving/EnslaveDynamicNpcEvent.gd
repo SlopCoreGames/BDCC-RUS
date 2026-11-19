@@ -21,22 +21,22 @@ func run(_triggerID, _args):
 		var canKidnapInfo:Array = getModule("NpcSlaveryModule").canKidnapCharacterReason(character)
 		
 		if(canKidnapInfo[0]):
-			addButton("Kidnap!", "Try to kidnap them into your cell", "dokidnap", [_args[0]])
+			addButton("Похитить!", "Попытаться затащить их в свою камеру", "dokidnap", [_args[0]])
 		else:
-			addDisabledButton("Kidnap!", canKidnapInfo[1] if canKidnapInfo.size() > 1 else "They are not ready to be kidnapped")
+			addDisabledButton("Похитить!", canKidnapInfo[1] if canKidnapInfo.size() > 1 else "Они еще не готовы к похищению")
 	else:
 		if(!getModule("NpcSlaveryModule").canEnslave()):
 			if(_triggerID == Trigger.DefeatedDynamicNPC):
-				addDisabledButton("Enslave!", "Your cell is not big enough for this. Find someone who can upgrade it first.")
+				addDisabledButton("Поработить!", "Твоя камера слишком мала для этого. Сначала найди того, кто сможет её улучшить.")
 			return
 		
 		if(!character.hasEnslaveQuest() ):
 			var canEnslaveInfo:Array = getModule("NpcSlaveryModule").canStartEnslavingCharacterReason(character)
 			
 			if(canEnslaveInfo[0]):
-				addButton("Enslave!", "Try to enslave them", "doenslave", [_args[0]])
+				addButton("Поработить!", "Попытаться поработить их", "doenslave", [_args[0]])
 			else:
-				addDisabledButton("Enslave!", canEnslaveInfo[1] if canEnslaveInfo.size() > 1 else "You can't enslave them currently..")
+				addDisabledButton("Поработить!", canEnslaveInfo[1] if canEnslaveInfo.size() > 1 else "Сейчас ты не можешь их поработить...")
 		
 
 func getPriority():

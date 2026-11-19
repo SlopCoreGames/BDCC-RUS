@@ -26,568 +26,568 @@ func _run():
 
 	if(state == ""):
 		playAnimation(StageScene.Sleeping, "sleep", {pc="pc"})
-		saynn("You try to take another nap.. but now you're not alone in the cell.")
+		saynn("Ты пытаешься вздремнуть еще разок... но теперь в камере ты не один.")
 
-		saynn("At least it looks like the tentacles are still too weak to do anything.. they can't even move.. just resting in its nest.. just like you rest in your bed. Both of you are now the prisoners of this bio-lab. Maybe you should work together..")
+		saynn("По крайней мере, кажется, что щупальца всё еще слишком слабы, чтобы что-то предпринять... они даже не могут пошевелиться... просто лежат в своем гнезде... так же, как ты лежишь в своей кровати. Теперь вы оба — узники этой биолаборатории. Может, вам стоит объединиться...")
 
-		saynn("But then again.. it looks more like a plant than anything else.. How useful can a plant be? Still, it does seem to be somewhat sentient. Maybe it's good that it doesn't have a mouth.. or teeth.")
+		saynn("Но с другой стороны... это больше похоже на растение, чем на что-либо другое. Насколько полезным может быть растение? И всё же, оно кажется каким-то разумным. Может, это даже к лучшему, что у него нет рта... или зубов.")
 
-		saynn("Maybe it's just friendly? Plants just want to live usually. Sure, some of them do feed on bugs and flies.. but you're not an insect, you should be fine.")
+		saynn("Может, оно просто дружелюбное? Растения обычно просто хотят жить. Конечно, некоторые из них питаются жуками и мухами... но ты ведь не насекомое, так что всё должно быть в порядке.")
 
-		saynn("If it decides to leap at you.. you can probably tear it apart.. maybe it knows that? Maybe that's why it didn't do it yet.")
+		saynn("Если оно решит на тебя наброситься... ты, вероятно, сможешь разорвать его на куски... может, оно это знает? Может, поэтому оно до сих пор ничего не сделало.")
 
-		saynn("Thoughts like that keep attacking your mind as you try to nap..")
+		saynn("Подобные мысли продолжают атаковать твой разум, пока ты пытаешься уснуть...")
 
-		addButton("Rest..", "Get some rest", "doRest")
+		addButton("Отдохнуть...", "Немного поспать", "doRest")
 	if(state == "doRest"):
 		playAnimation(StageScene.GivingBirth, "idle", {pc="pc"})
 		aimCameraAndSetLocName("pstent_bed")
 		GM.pc.setLocation("pstent_bed")
 		addCharacter(_tentacles.getScientist1CharID())
 		addCharacter(_tentacles.getScientist2CharID())
-		saynn("Despite all of the thoughts, you manage to get some rest.")
+		saynn("Несмотря на все эти мысли, тебе удается немного вздремнуть.")
 
-		saynn("[say=sci1]Open your eyes, test subject.[/say]")
+		saynn("[say=sci1]Открывай глаза, подопытный.[/say]")
 
-		saynn("Aw, just when you were finally slipping off into a dream land.")
+		saynn("Ох, и это как раз тогда, когда ты наконец-то начал погружаться в мир грёз.")
 
-		saynn("[say=sci2]Science never sleeps.[/say]")
+		saynn("[say=sci2]Наука никогда не спит.[/say]")
 
-		saynn("[say=pc]Sure.. it's not like I have a choice.[/say]")
+		saynn("[say=pc]Ну конечно.. как будто у меня есть выбор.[/say]")
 
-		saynn("[say=sci1]Whine harder and you might just become fine.[/say]")
+		saynn("[say=sci1]Ныть погромче, и, может, тебе станет лучше.[/say]")
 
-		saynn("[say=pc]What?[/say]")
+		saynn("[say=pc]Что?[/say]")
 
-		saynn("You rub your eyes, still trying to come back to senses.")
+		saynn("Ты протираешь глаза, всё ещё пытаясь прийти в себя.")
 
-		saynn("[say=sci2]I'm pretty sure that this was a joke. Whine sounds a lot like 'wine'. You see, as it ferments, the characteristics of..[/say]")
+		saynn("[say=sci2]Я почти уверен, что это была шутка. «Ныть» звучит почти как «вино». Видишь ли, по мере брожения его характеристики..[/say]")
 
-		saynn("[say=pc]I'm getting up.[/say]")
+		saynn("[say=pc]Встаю.[/say]")
 
-		addButton("Get up", "See what happened while you were sleeping", "doGetup")
+		addButton("Встать", "Посмотреть, что произошло, пока ты спал", "doGetup")
 	if(state == "doGetup"):
 		# (( sad tiny tentacles anim
 		playAnimation(StageScene.TentaclesDuo, "sleep", {tentaclesLess=true, tentaclesSizeTiny=true, plant=true, instantSleep=true})
 		aimCameraAndSetLocName("pstent_middle")
 		GM.pc.setLocation("pstent_middle")
 		addCharacter(_tentacles.getTentaclesCharID())
-		saynn("You get up and take a look at the tentacles..")
+		saynn("Ты встаёшь и осматриваешь щупальца...")
 
-		saynn("They look.. pretty bad actually. Even a few hours were enough to make them look all dry and weak. They can barely sway.")
+		saynn("Выглядят они.. довольно паршиво, если честно. Всего пара часов хватило, чтобы они стали сухими и слабыми. Они едва колышутся.")
 
-		saynn("[say=sci2]Perfect. The next test that we need you to perform is..[/say]")
+		saynn("[say=sci2]Идеально. Следующее испытание, которое нам нужно от тебя получить, это..[/say]")
 
-		saynn("[say=pc]Hey.. uhh.. I think it's dying.[/say]")
+		saynn("[say=pc]Эй.. эээ.. мне кажется, оно дохнет.[/say]")
 
-		saynn("You can just see the life force getting siphoned out of that plant. Two of the tentacles look like they gave up by now.. and the last one is desperately trying to lift itself off of the nest.")
+		saynn("Прямо видно, как жизненная сила высасывается из этого растения. Две щупальца, похоже, уже сдались.. а последнее отчаянно пытается оторваться от гнезда.")
 
-		saynn("[say=sci1]What do you mean? Don't make fools out of us, I can clearly see it moving.[/say]")
+		saynn("[say=sci1]В каком смысле? Не делай из нас дураков, я ясно вижу, что оно шевелится.[/say]")
 
-		saynn("[say=pc]You should check your sight then, this thing isn't gonna make another hour.[/say]")
+		saynn("[say=pc]Тогда проверь зрение, эта хрень не протянет и часа.[/say]")
 
-		saynn("A short silence..")
+		saynn("Короткое молчание..")
 
-		saynn("[say=sci1]Again, don't make fools out of us..[/say]")
+		saynn("[say=sci1]Опять же, не делай из нас дураков..[/say]")
 
-		saynn("[say=pc]It's gonna die. And then you're gonna space me. I ain't letting that happen.[/say]")
+		saynn("[say=pc]Оно сдохнет. А потом ты отправишь меня в открытый космос. Я этого не допущу.[/say]")
 
-		addButton("Fridge", "Go check the fridge", "doCheckFridge")
+		addButton("Холодильник", "Сходи проверь холодильник", "doCheckFridge")
 	if(state == "doCheckFridge"):
 		playAnimation(StageScene.Solo, "stand")
 		aimCameraAndSetLocName("pstent_fridge")
 		GM.pc.setLocation("pstent_fridge")
-		saynn("It's a plant.. at least it looks like one.. kinda.. So maybe it just needs to be watered.")
+		saynn("Это растение.. ну, по крайней мере, выглядит как оно.. вроде как.. Так что, может, его просто нужно полить.")
 
-		saynn("You open the fridge and look for a water bottle. Your eye gets caught by a different one that was filled with something white.. The label says 'Milk'.. But who knows what's inside it. You ignore it. Eventually you do manage something that looks water-y..")
+		saynn("Ты открываешь холодильник в поисках бутылки воды. Твой взгляд цепляется за другую бутылку, наполненную чем-то белым... На этикетке написано «Молоко»... Но кто знает, что там на самом деле. Ты отмахиваешься от этой мысли. В конце концов, тебе удается найти что-то, отдаленно напоминающее воду...")
 
-		saynn("After that, you carefully approach the tentacles and pour the bottle's contents onto them.")
+		saynn("После этого ты осторожно подходишь к щупальцам и выливаешь содержимое бутылки на них.")
 
-		saynn("[say=pc]Don't die on me now.[/say]")
+		saynn("[say=pc]Только не сдохни прямо сейчас.[/say]")
 
-		saynn("It certainly helped.. The tentacles now look wet and slick rather than dry.. but they still seem quite weak.")
+		saynn("Это определенно помогло... Теперь щупальца выглядят влажными и скользкими, а не сухими... но они всё еще кажутся довольно слабыми.")
 
-		saynn("You get the camera's attention.")
+		saynn("Ты привлекаешь внимание камеры.")
 
-		saynn("[say=pc]They need something else.[/say]")
+		saynn("[say=pc]Им нужно что-то еще.[/say]")
 
-		saynn("[say=sci1]It's a plant. It needs sun and water. Quit worrying and let's proceed with the testing already.[/say]")
+		saynn("[say=sci1]Это растение. Ему нужны солнце и вода. Хватит ныть, давай уже продолжим тесты.[/say]")
 
-		saynn("[say=sci2]Actually.. According to the calculations, it's not exactly a plant. But also, a plant would be able to get nutrients from the soil.[/say]")
+		saynn("[say=sci2]Вообще-то... согласно расчетам, это не совсем растение. Но даже растению нужны питательные вещества из почвы.[/say]")
 
-		saynn("You let them argue with each other..")
+		saynn("Ты позволяешь им спорить друг с другом...")
 
-		saynn("[say=sci1]So? We're in space, there is no soil here.[/say]")
+		saynn("[say=sci1]И что? Мы в космосе, здесь нет никакой почвы.[/say]")
 
-		saynn("[say=sci2]Again, it's not exactly a plant so that logic doesn't apply here. Perhaps we could try feeding it something.. normal.[/say]")
+		saynn("[say=sci2]Опять двадцать тридцать три... Это не совсем растение, так что такая логика тут не работает. Может, попробуем скормить ему что-нибудь... нормальное?[/say]")
 
-		saynn("Something normal..")
+		saynn("Что-нибудь нормальное...")
 
-		saynn("You open the fridge again and look at the contents..")
+		saynn("Вы снова открываете холодильник и осматриваете содержимое...")
 
-		addButton("Cooked chicken", "Feed it some chicken meet", "1_chicken")
-		addButton("Raw meat", "Feed it a whole steak", "1_meat")
-		addButton("'Milk'", "Feed it that suspicious white fluid", "1_milk")
-		addButton("Broccoli", "Feed it some broccoli", "1_broc")
+		addButton("Готовая курица", "Покормить его курицей", "1_chicken")
+		addButton("Сырое мясо", "Скормать ему целый стейк", "1_meat")
+		addButton("«Молоко»", "Покормить его этой подозрительной белой жидкостью", "1_milk")
+		addButton("Брокколи", "Покормить его брокколи", "1_broc")
 	if(state == "1_chicken"):
 		# (( tiny anim
 		playAnimation(StageScene.TentaclesDuo, "eat", {tentaclesLess=true, tentaclesSizeTiny=true, plant=true, instantSleep=true})
 		
 		aimCameraAndSetLocName("pstent_middle")
 		GM.pc.setLocation("pstent_middle")
-		saynn("You see some chicken.. and decide to feed it to the tentacles.")
+		saynn("Ты замечаешь кусочки курицы... и решаешь скормить их щупальцам.")
 
-		saynn("Carefully, you place it under the weak tentacle.. and watch as it begins to wrap around it. The tentacle then uses its tip to dig into the cooked chicken meat!")
+		saynn("Осторожно подкладываешь мясо под слабое щупальце... и наблюдаешь, как оно начинает обвивать его. Затем щупальце кончиком впивается в кусочек вареной курицы!")
 
-		saynn("[say=pc]It seems to be.. eating it.[/say]")
+		saynn("[say=pc]Похоже, оно... ест.[/say]")
 
-		saynn("[say=sci2]Fascinating.[/say]")
+		saynn("[say=sci2]Завораживающее зрелище.[/say]")
 
-		saynn("Soon, the other two tentacles join too. Together, they quickly strip the meat off of the bones.")
+		saynn("Вскоре к процессу подключаются и два других щупальца. Вместе они быстро обгладывают мясо с костей.")
 
-		saynn("After their meal, the tentacles now look alive again. They actively wiggle and coil around each other, showing off their newly-found energy.")
+		saynn("После трапезы щупальца словно оживают. Они активно извиваются и переплетаются друг с другом, демонстрируя прилив новой энергии.")
 
-		saynn("[say=sci1]Are you done feeding meat to a plant? We have work to do.[/say]")
+		saynn("[say=sci1]Ты закончил кормить растение мясом? У нас есть работа.[/say]")
 
-		saynn("[say=sci2]Actually..[/say]")
+		saynn("[say=sci2]Вообще-то...[/say]")
 
-		saynn("[say=sci1]Shush.[/say]")
+		saynn("[say=sci1]Тсс.[/say]")
 
-		addButton("Continue", "See what happens next", "needMusic")
+		addButton("Продолжить", "Смотреть, что будет дальше", "needMusic")
 	if(state == "1_meat"):
 		# (( tiny anim
 		playAnimation(StageScene.TentaclesDuo, "eat", {tentaclesLess=true, tentaclesSizeTiny=true, plant=true, instantSleep=true})
 		
 		aimCameraAndSetLocName("pstent_middle")
 		GM.pc.setLocation("pstent_middle")
-		saynn("For whatever reason, there is a steak there.. a completely raw, uncooked steak.")
+		saynn("По какой-то причине там лежит стейк... совершенно сырой, необработанный кусок мяса.")
 
-		saynn("You ain't gonna eat it yourself anyway.. so you just grab it and toss it to the tentacles.")
+		saynn("Всё равно ты сам его есть не собираешься... так что ты просто хватаешь его и швыряешь щупальцам.")
 
-		saynn("The raw slab of meat lands with a wet slap on the concrete in front of the nest. One of the tentacles stretches toward it, drawn by the rich, bloody smell.")
+		saynn("Сырой пласт мяса с влажным шлепком падает на бетон перед гнездом. Одно из щупалец тянется к нему, привлеченное густым кровавым запахом.")
 
-		saynn("[say=pc]Either eat it or die.[/say]")
+		saynn("[say=pc]Либо жри, либо дохни.[/say]")
 
-		saynn("The slick tip prods the red flesh at first.. but then, it digs in. Not just wrapping around it, but pressing into the meat itself, as if tasting it from the inside.")
+		saynn("Сначала скользкий кончик просто тычет в красную плоть... но затем он впивается в неё. Он не просто обволакивает мясо, а вжимается в него, словно пробуя на вкус изнутри.")
 
-		saynn("After some time, the other two tentacles join, burrowing into the raw steak. A soft, squelching sound fills the cell as they absorb the nutrients, stripping the steak apart from the inside out.")
+		saynn("Спустя какое-то время к нему присоединяются два других щупальца, зарываясь в сырой стейк. Клетку наполняет мягкий чавкающий звук: они поглощают питательные вещества, разрывая мясо изнутри.")
 
-		saynn("In a few minutes, the steak is gone. Nothing is left but a pale, drained bone..")
+		saynn("Через несколько минут стейк исчезает. Не остается ничего, кроме бледной, обескровленной косточки...")
 
-		saynn("The tentacles rise up, dripping. You'd think that the raw meat would kill a plant.. but no.. they look slightly thicker and stronger instead. They coil and writhe in the air, their color a vibrant, healthy green. They seem.. satisfied. And very, very awake.")
+		saynn("Щупальца поднимаются, сочась влагой. Можно было подумать, что сырое мясо убьет растение... но нет... вместо этого они выглядят чуть толще и сильнее. Они извиваются и корчатся в воздухе, их цвет стал ярко-зеленым и здоровым. Кажется... они сыты. И они очень, очень бодры.")
 
-		saynn("[say=sci1]Are you done feeding meat to a plant? We have work to do.[/say]")
+		saynn("[say=sci1]Ты закончил кормить растение мясом? У нас есть работа.[/say]")
 
-		saynn("[say=sci2]Actually..[/say]")
+		saynn("[say=sci2]Вообще-то...[/say]")
 
-		saynn("[say=sci1]Shush.[/say]")
+		saynn("[say=sci1]Тсс.[/say]")
 
-		addButton("Continue", "See what happens next", "needMusic")
+		addButton("Продолжить", "Смотреть, что будет дальше", "needMusic")
 	if(state == "1_milk"):
 		# (( tiny anim
 		playAnimation(StageScene.TentaclesDuo, "dance", {tentaclesLess=true, tentaclesSizeTiny=true, plant=true, instantSleep=true})
 		
 		aimCameraAndSetLocName("pstent_middle")
 		GM.pc.setLocation("pstent_middle")
-		saynn("You grab the strange milk bottle. You open it and bring your nose to it..")
+		saynn("Ты хватаешь странную бутылку с молоком. Открываешь её и подносишь к носу...")
 
-		saynn("Ooh.. hah.. It hits very strongly. Either this milk went bad.. or it's not milk at all.")
+		saynn("Ох... хах... Запах бьет в нос. Либо это молоко прокисло... либо это вообще не молоко.")
 
-		saynn("[say=pc]What's this?[/say]")
+		saynn("[say=pc]Что это?[/say]")
 
-		saynn("[say=sci2]Hm. It's milk that we sourced from one of the space cafes. It should be safe.[/say]")
+		saynn("[say=sci2]Хм. Это молоко, которое мы раздобыли в одном из космических кафе. Оно должно быть безопасным.[/say]")
 
-		saynn("Right.")
+		saynn("Ясно.")
 
-		saynn("You approach the tentacles and pour the milk over them.")
+		saynn("Вы подходите к щупальцам и выливаете на них молоко.")
 
-		saynn("The thick, creamy liquid splashes over their slick, green skin. For a moment, nothing happens.")
+		saynn("Густая, кремовая жидкость разбрызгивается по их скользкой зеленой коже. На мгновение ничего не происходит.")
 
-		saynn("Then, the three tentacles spring to life. A soft, trembling wave passes through them from base to tip. They begin to move, but not like before. Their motions become slow and sinuous.")
+		saynn("Затем три щупальца оживают. Мягкая, дрожащая волна проходит сквозь них от основания к кончикам. Они начинают двигаться, но уже не так, как раньше. Их движения становятся медленными и извилистыми.")
 
-		saynn("They coil around each other, rubbing the milky substance into their own skin. Their tips, now dripping with the white liquid, reach out toward you. They don't grab.. they can't anyway.. they just brush. One of the tentacles lightly traces your ankle. Another taps gently at your {pc.foot}, leaving a warm, wet spot.")
+		saynn("Они обвиваются друг вокруг друга, втирая молочную субстанцию в собственную кожу. Их кончики, теперь капающие белой жидкостью, тянутся к вам. Они не хватают... во всяком случае, не могут... они просто касаются. Одно из щупалец слегка обводит вашу лодыжку. Другое нежно постукивает по вашему {pc.foot}, оставляя теплое влажное пятно.")
 
-		saynn("The tentacles seem.. energized.. in a way. They sway hypnotically, their movements full of a weak but deliberate longing, all pointed in your direction.")
+		saynn("Щупальца кажутся... заряженными... в каком-то смысле. Они гипнотически покачиваются, их движения полны слабой, но осознанной тоски, направленной прямо на вас.")
 
-		saynn("[say=pc]Looks like they liked it.[/say]")
+		saynn("[say=pc]Похоже, им понравилось.[/say]")
 
-		saynn("[say=sci1]Are you done feeding it? We have work to do.[/say]")
+		saynn("[say=sci1]Ты уже закончил(а) их кормить? Нам нужно работать.[/say]")
 
-		addButton("Continue", "See what happens next", "needMusic")
+		addButton("Продолжить", "Смотреть, что будет дальше", "needMusic")
 	if(state == "1_broc"):
 		# (( tiny anim
 		playAnimation(StageScene.TentaclesDuo, "eat", {tentaclesLess=true, tentaclesSizeTiny=true, plant=true, instantSleep=true})
 		
 		aimCameraAndSetLocName("pstent_middle")
 		GM.pc.setLocation("pstent_middle")
-		saynn("You see broccoli.. and now, for some reason, you can't get rid of a certain thought anymore. You grab it and close the fridge.")
+		saynn("Вы видите брокколи... и теперь, по какой-то причине, от одной определенной мысли уже невозможно избавиться. Вы хватаете её и закрываете холодильник.")
 
-		saynn("[say=pc]Feeding plants.. to a plant.. is that cannibalism?[/say]")
+		saynn("[say=pc]Кормить растения... растениями... это что, каннибализм?[/say]")
 
-		saynn("[say=sci2]Actually, unless you wanna imply that the specimen and broccoli are somehow of the same species, no.[/say]")
+		saynn("[say=sci2]Вообще-то, если только ты не намекаешь, что образец и брокколи — одного вида, то нет.[/say]")
 
-		saynn("Alright.. well.. you carefully put broccoli under the weak tentacle and watch what it will do next.")
+		saynn("Ладно... что ж... ты осторожно подносишь брокколи к слабому щупальцу и наблюдаешь за его реакцией.")
 
-		saynn("The tentacle goes still. Its slick tip prods the green florets gently, as if thinking about it.")
+		saynn("Щупальце замирает. Его скользкий кончик мягко тычется в зеленые соцветия, словно раздумывая.")
 
-		saynn("Then, something begins to happen. The tentacle doesn't wrap around the food. Instead, it presses its tip flat against it. It does something.. and a faint, clear fluid begins to seep from the plant, soaking into the tentacle.")
+		saynn("Затем что-то начинает происходить. Щупальце не обвивает еду, а вместо этого плотно прижимает к ней свой кончик. Оно делает что-то свое... и из растения начинает сочиться слабая прозрачная жидкость, впитываясь в щупальце.")
 
-		saynn("Slowly, the vibrant green of the vegetable begins to pale, as if its color and life are being drawn out. The tentacle itself seems to.. brighten. A deeper, richer shade of green travels up its length.")
+		saynn("Постепенно ярко-зеленый цвет овоща начинает бледнеть, будто из него вытягивают саму жизнь и цвет. Само же щупальце, кажется... становится ярче. По его длине пробегает более глубокий, насыщенный оттенок зелени.")
 
-		saynn("The other two tentacles join, not to tear, but to lay against the broccoli in the same quiet way. They pulse softly, a steady rhythm, as they absorb something from it.")
+		saynn("Два других щупальца присоединяются — не для того, чтобы разорвать добычу, а чтобы так же тихо лечь на брокколи. Они мягко пульсируют в steady ритме, поглощая из растения некую субстанцию.")
 
-		saynn("When they pull away, the broccoli is left pale and wilted. The three tentacles, however, are now quite lively.")
+		saynn("Когда они отстраняются, брокколи остается бледной и вялой. Зато три щупальца теперь выглядят на редкость оживленными.")
 
-		saynn("[say=pc]Looks like they liked it.[/say]")
+		saynn("[say=pc]Похоже, им понравилось.[/say]")
 
-		saynn("[say=sci1]Are you done feeding it? We have work to do.[/say]")
+		saynn("[say=sci1]Ты уже закончил(а) их кормить? Нам нужно работать.[/say]")
 
-		addButton("Continue", "See what happens next", "needMusic")
+		addButton("Продолжить", "Смотреть, что будет дальше", "needMusic")
 	if(state == "needMusic"):
 		# (( tiny idle anim
 		playAnimation(StageScene.TentaclesDuo, "idle", {tentaclesLess=true, tentaclesSizeTiny=true, plant=true})
 		
 		aimCameraAndSetLocName("pstent_middle")
 		GM.pc.setLocation("pstent_middle")
-		saynn("[say=sci2]We wanna test how the specimen will react to a different atmosphere.[/say]")
+		saynn("[say=sci2]Мы хотим проверить, как образец отреагирует на другую атмосферу.[/say]")
 
-		saynn("[say=pc]You mean void? Pretty sure it will kill it.[/say]")
+		saynn("[say=pc]Ты имеешь в виду вакуум? Уверена, он его прикончит.[/say]")
 
-		saynn("[say=sci2]No.[/say]")
+		saynn("[say=sci2]Нет.[/say]")
 
-		saynn("An armed guard steps into your cell and hands you something.")
+		saynn("Вооруженный охранник заходит в твою камеру и протягивает тебе какой-то предмет.")
 
-		saynn("[say=sci2]This is a device that is capable of interacting with your cell's speakers and lights.[/say]")
+		saynn("[say=sci2]Это устройство, способное управлять динамиками и светом в твоей камере.[/say]")
 
-		saynn("You take a closer look.. indeed.. It looks like a remote with a few buttons on it.")
+		saynn("Ты присматриваешься... и вправду... Похоже на пульт с несколькими кнопками.")
 
-		saynn("[say=sci2]The specimen possesses no obvious eyes or ears. We wanna see if it can still somehow see or hear.[/say]")
+		saynn("[say=sci2]У образца нет явных глаз или ушей. Мы хотим проверить, может ли он всё же как-то видеть или слышать.[/say]")
 
 		if (_tentacles.interact1 == "listen"):
-			saynn("[say=pc]Didn't I tell you that it can hear me already?[/say]")
+			saynn("[say=pc]Разве я не говорил вам, что оно уже меня слышит?[/say]")
 
-			saynn("[say=sci1]First of all, it was an egg. But most importantly, you have no science degree, why would we listen to your baseless assumptions?[/say]")
+			saynn("[say=sci1]Во-первых, это было яйцо. Но что еще важнее — у тебя нет ученой степени, с чего бы нам слушать твои беспочвенные предположения?[/say]")
 
-			saynn("You roll your eyes.")
+			saynn("Ты закатываешь глаза.")
 
-		saynn("What music do you wanna play for the tentacles?")
+		saynn("Какую музыку хочешь включить для щупалец?")
 
-		addButton("Heavy metal", "Play some heavy metal", "2_metal")
-		addButton("Soothing ambient", "Play some very calming ambient", "2_ambient")
-		addButton("Drum'n'Bass", "Play some electronic music", "2_dnb")
-		addButton("Smooth jazz", "Play something smooth and intimate", "2_jazz")
+		addButton("Хеви-метал", "Включить хеви-метал", "2_metal")
+		addButton("Успокаивающий эмбиент", "Включить какой-нибудь очень спокойный эмбиент", "2_ambient")
+		addButton("Драм-н-бэйс", "Включить электронную музыку", "2_dnb")
+		addButton("Смус-джаз", "Включить что-нибудь плавное и интимное", "2_jazz")
 	if(state == "2_metal"):
 		# ((tiny dance anim?
 		playAnimation(StageScene.TentaclesDuo, "danceFast", {tentaclesLess=true, tentaclesSizeTiny=true, plant=true})
 		
-		saynn("You choose one of the heavy metal music tracks.. and suddenly the whole cell lights up red.. almost like it's an emergency.")
+		saynn("Вы выбираете один из треков в стиле хеви-метал... и внезапно вся камера заливается красным светом... словно объявлена тревога.")
 
-		saynn("The first thunderous guitar chord hits like a physical blow, a wave of pure noise that vibrates the air in your chest.")
+		saynn("Первый громоподобный гитарный аккорд бьет, словно физический удар — волна чистого шума, от которой вибрирует всё в вашей груди.")
 
-		saynn("The small creature recoils as if struck. Its three tentacles jerk back, coiling into tight, defensive knots. The raw, screaming vocals rip through the room while the red lights begin to flash.")
+		saynn("Маленькое существо отпрядывает, будто от удара. Его три щупальца дергаются назад, сжимаясь в тугие защитные узлы. Дикий, истошный вокал прорезает комнату, пока начинают мигать красные огни.")
 
-		saynn("Eventually, the tentacles uncurl themselves and adapt to the insane music. They begin to thrash, whipping against the concrete in a frantic, angry rhythm that matches the pounding drums.")
+		saynn("В конце концов, щупальца разжимаются и подстраиваются под безумную музыку. Они начинают неистово хлестать по бетону в бешеном, яростном ритме, вторя грохочущим барабанам.")
 
-		saynn("[say=sci2]That's.. certainly a choice.[/say]")
+		saynn("[say=sci2]Это... весьма своеобразный выбор.[/say]")
 
-		saynn("[say=sci1]What?[/say]")
+		saynn("[say=sci1]Что?[/say]")
 
-		saynn("[say=sci2]I SAID.. IT'S A CHOICE.[/say]")
+		saynn("[say=sci2]Я СКАЗАЛА... ЭТО ВЫБОР![/say]")
 
-		saynn("[say=sci1]I still can't hear you.[/say]")
+		saynn("[say=sci1]Ты всё ещё тебя не слышишь.[/say]")
 
-		saynn("You let the track play out.. hoping that it would end faster than you losing your hearing. The tentacles seem to continue thrashing even after the last chord.. looks like you're got them into the right mood.")
+		saynn("Ты позволяешь треку доиграть до конца... надеясь, что он закончится быстрее, чем ты оглохнешь. Щупальца продолжают извиваться даже после последнего аккорда... похоже, ты попала в точку и настроила их на нужный лад.")
 
-		saynn("[say=sci2]Finally.. peace..[/say]")
+		saynn("[say=sci2]Наконец-то... покой...[/say]")
 
-		saynn("[say=sci1]Did this prove anything?[/say]")
+		saynn("[say=sci1]Это хоть что-то доказало?[/say]")
 
-		saynn("[say=sci2]Well.. it can hear. But maybe it was just getting startled by the whole cell vibrating.[/say]")
+		saynn("[say=sci2]Ну... оно слышит. Но, может, оно просто пугалось от того, что вся камера вибрирует.[/say]")
 
-		saynn("[say=sci1]I regret letting this test subject choose anything.[/say]")
+		saynn("[say=sci1]Жалею, что позволила этому подопытному выбирать хоть что-то.[/say]")
 
-		addButton("Continue", "See what happens next", "timeToTest")
+		addButton("Продолжить", "Смотреть, что будет дальше", "timeToTest")
 	if(state == "2_ambient"):
 		# ((tiny slow dance anim?
 		playAnimation(StageScene.TentaclesDuo, "dance", {tentaclesLess=true, tentaclesSizeTiny=true, plant=true})
 		
-		saynn("You find some smooth, soothing ambient music.. and decide to turn it on.")
+		saynn("Ты находишь какую-то плавную, успокаивающую эмбиент-музыку... и решаешь её включить.")
 
-		saynn("The first soft, calming note drifts through the air of the cell. The harsh lab lights seem to be switching towards a warm hue.")
+		saynn("В воздухе камеры разливается первая мягкая, успокаивающая нота. Резкий свет лабораторных ламп, кажется, начинает сменяться на теплый оттенок.")
 
-		saynn("The three tentacles stay still for a bit, almost like they're listening.. After that, they simply begin to sway, a slow, graceful dance in time with the peaceful rhythm.")
+		saynn("Три щупальца на мгновение замирают, словно прислушиваясь... А затем они начинают плавно покачиваться — медленный, грациозный танец в такт умиротворяющему ритму.")
 
-		saynn("Their movements are slow.. smooth. The slick tendrils shine slightly as they do gentle patterns in the air, tracing the shapes of the melodies they hear. Their movement is full of curiosity.")
+		saynn("Их движения медленны... и плавны. Скользкие отростки слегка поблескивают, выписывая в воздухе нежные узоры, повторяя очертания слышимых мелодий. В каждом их движении сквозит любопытство.")
 
-		saynn("A soft, harmonious hum, almost below hearing, resonates from their core, harmonizing with something inside you..")
+		saynn("Из самой их сути исходит мягкий, гармоничный гул, почти на грани слышимости, резонирующий с чем-то глубоко внутри тебя...")
 
-		saynn("[say=sci2]The test proves their hearing ability. Interesting. Makes me wonder why would a plant-like specimen evolve such a trait.[/say]")
+		saynn("[say=sci2]Тест подтверждает их слух. Интересно. Заставляет задуматься, зачем растительному образцу понадобилась такая черта.[/say]")
 
-		saynn("[say=sci1]This doesn't matter to us right now.[/say]")
+		saynn("[say=sci1]Сейчас это не имеет значения.[/say]")
 
-		saynn("Eventually, the track ends.. and the cell's lighting returns back to normal.")
+		saynn("В конце концов трек заканчивается... и освещение в камере возвращается в норму.")
 
-		addButton("Continue", "See what happens next", "timeToTest")
+		addButton("Продолжить", "Смотреть, что будет дальше", "timeToTest")
 	if(state == "2_dnb"):
 		# ((tiny dance anim?
 		playAnimation(StageScene.TentaclesDuo, "danceFast", {tentaclesLess=true, tentaclesSizeTiny=true, plant=true})
 		
-		saynn("You see a drum'n'bass option.. and decide to pick it! The cell's lighting gets all dim..")
+		saynn("Ты видишь вариант с драм-н-бейсом... и решаешь выбрать его! Свет в камере приглушается...")
 
-		saynn("The first sound that fills the room is a precise thump-thump-thump of a deep drum. It's followed instantly by a fast, intricate pattern of sharp, electronic hi-hats, each one spawning a little flash of light. The sound is rapid, clean, and full of energy.")
+		saynn("Первый звук, наполняющий комнату — это четкий, размеренный стук глубокого барабана. За ним мгновенно следует быстрый, замысловатый ритм резких электронных хай-хэтов, каждый из которых рождает маленькую вспышку света. Звук стремительный, чистый и полный энергии.")
 
-		saynn("The plant freezes for some time.. Then, a twitch. A single green tentacle jerks in time with the next bass hit. Another joins it, tapping the air.")
+		saynn("Растение замирает на какое-то время... Затем — дерганье. Одно зеленое щупальце вздрагивает в такт следующему удару баса. К нему присоединяется другое, постукивая в воздухе.")
 
-		saynn("Suddenly, it's moving. The three tentacles aren't just randomly thrashing.. It feels like they're following the melody. They curl and weave around each other in a blur of a dance, moving so fast they almost seem to leave after-images in the flashing light.")
+		saynn("Внезапно они приходят в движение. Три щупальца не просто хаотично извиваются... Кажется, они следуют мелодии. Они сплетаются и кружатся в размытом танце, двигаясь так быстро, что в мерцающем свете за ними почти остаются шлейфы.")
 
-		saynn("They vibrate with the sub-bass, whip with the snares, and slice precise patterns to the rapid percussion. It's learning the beat and is clearly trying to match it.. And you do too, the music is just begging for you to move your butt in tact with it..")
+		saynn("Они вибрируют в такт саб-басу, хлещут под малый барабан и вычерчивают четкие узоры под быстрые перкуссии. Они улавливают ритм и явно пытаются под него подстроиться... И ты тоже, ведь музыка так и умоляет тебя зашевелить своей задницей в такт...")
 
-		saynn("[say=sci2]Fascinating reaction. The specimen is extremely energetic.[/say]")
+		saynn("[say=sci2]Завораживающая реакция. Образец крайне энергичен.[/say]")
 
-		saynn("[say=pc]It's got good taste in music.[/say]")
+		saynn("[say=pc]А у него неплохой музыкальный вкус.[/say]")
 
-		saynn("Eventually, the track ends.. and the cell's lighting returns back to normal.")
+		saynn("В конце концов трек заканчивается... и освещение в камере возвращается в норму.")
 
-		addButton("Continue", "See what happens next", "timeToTest")
+		addButton("Продолжить", "Смотреть, что будет дальше", "timeToTest")
 	if(state == "2_jazz"):
 		# ((tiny slow dance anim?
 		playAnimation(StageScene.TentaclesDuo, "dance", {tentaclesLess=true, tentaclesSizeTiny=true, plant=true})
 		
-		saynn("You pick an option that you like the most..")
+		saynn("Ты выбираешь вариант, который тебе больше всего по душе...")
 
-		saynn("[say=sci2]Deploying smooth jazz.[/say]")
+		saynn("[say=sci2]Включаю мягкий джаз.[/say]")
 
-		saynn("A moment later, the cell is bathed in a soft, warm light. A gentle bassline begins to thump, slow and deep as a heartbeat. A smooth saxophone winds its way through the air, lazy and sweet like honey.")
+		saynn("Мгновение спустя камеру заливает мягкий, теплый свет. Начинает глухо стучать нежная басовая линия, медленная и глубокая, словно сердцебиение. В воздухе лениво и сладко, будто мед, вьется тягучий саксофон.")
 
-		saynn("The three tentacles pick up on the melody and begin their slow, hypnotic sway. They follow the curl of the saxophone's notes and shine under the intimate glow.")
+		saynn("Три щупальца подхватывают мелодию и начинают свое медленное, гипнотическое покачивание. Они следуют за изгибами саксофонных нот, поблескивая в интимном сиянии.")
 
-		saynn("One tentacle extends toward you, not to strike, but to dance. It brushes the air just inches from your ankle, inviting you to join. Another curls loosely around its own length, caressing itself in time with the bass.")
+		saynn("Одно щупальце тянется к тебе — не для удара, а для танца. Оно рассекает воздух в считанных дюймах от твоей лодыжки, приглашая присоединиться. Другое расслабленно обвивается вокруг самого себя, лаская собственную плоть в такт басу.")
 
-		saynn("[say=sci2]Fascinating reaction.[/say]")
+		saynn("[say=sci2]Завораживающая реакция.[/say]")
 
-		saynn("Eventually, the track ends.. and the cell's lighting returns back to normal.")
+		saynn("В конце концов трек заканчивается... и освещение в камере возвращается в норму.")
 
-		addButton("Continue", "See what happens next", "timeToTest")
+		addButton("Продолжить", "Смотреть, что будет дальше", "timeToTest")
 	if(state == "timeToTest"):
 		# (( tiny idle anim
 		playAnimation(StageScene.TentaclesDuo, "idle", {tentaclesLess=true, tentaclesSizeTiny=true, plant=true})
 		
-		saynn("[say=sci2]We don't have much time before our break so let's be quick.[/say]")
+		saynn("[say=sci2]До перерыва осталось не так много времени, так что давай поскорее.[/say]")
 
-		saynn("The doors to your cell open.. revealing a few armed guards who bring in some things.")
+		saynn("Двери твоей камеры открываются... заходят несколько вооруженных охранников, принося с собой кое-какие вещи.")
 
-		saynn("[say=sci2]Here are a few tests you could do. You may pick one of them and see if the specimen will complete it.[/say]")
+		saynn("[say=sci2]Вот несколько тестов, которые можно провести. Выбери один из них и посмотрим, справится ли с ним экземпляр.[/say]")
 
-		saynn("How do you wanna test the tentacles?")
+		saynn("Как именно хочешь протестировать щупальца?")
 
-		addButton("Puzzle", "Offer the tentacles a logic puzzle", "3_puzzle")
-		addButton("Evil robot", "Give it an evil-looking robot toy to play with", "3_toy")
-		addButton("Small ladder", "Let the tentacles climb a small ladder", "3_ladder")
-		addButton("Onahole", "Give it a sextoy and see what it will do with it", "3_onahole")
+		addButton("Головоломка", "Предложить щупальцам логическую задачу", "3_puzzle")
+		addButton("Злой робот", "Дать им поиграть со злобной на вид игрушечной роботом", "3_toy")
+		addButton("Маленькая лестница", "Позволить щупальцам взобраться по маленькой лестнице", "3_ladder")
+		addButton("Онахоле", "Дай ей секс-игрушку и посмотри, что она с ней сделает", "3_onahole")
 	if(state == "3_puzzle"):
 		playAnimation(StageScene.TentaclesDuo, "poke", {tentaclesLess=true, tentaclesSizeTiny=true, plant=true})
 		
-		saynn("One of the things that were brought by guards seems to be a logic puzzle.. It looks like a box with differently-shaped holes in it.. square, circle, triangle and some others. And there are also objects of the same shapes that you are supposed to push through these holes.")
+		saynn("Одна из вещей, принесенных охранниками, кажется логической головоломкой... Это похоже на коробку с отверстиями разной формы: квадратными, круглыми, треугольными и другими. Также есть предметы тех же форм, которые нужно пропихнуть сквозь эти отверстия.")
 
-		saynn("[say=pc]Alright.. Should be simple enough. Try to figure out what to do.[/say]")
+		saynn("[say=pc]Так.. Должно быть довольно просто. Попробуй разобраться, что к чему.[/say]")
 
-		saynn("You offer this box and all the other objects to the tentacles.")
+		saynn("Ты предлагаешь эту коробку и все остальные предметы щупальцам.")
 
-		saynn("At first, they just poke it.. But then one of the tentacles wraps around a cube and curiously lifts it, feeling its weight. Then it lifts the other objects as well, one by one.")
+		saynn("Сначала они просто тыкают в них.. Но затем одно из щупалец обвивает куб и с любопытством поднимает его, прощупывая вес. Затем оно по очереди поднимает и остальные предметы.")
 
-		saynn("After trying every object, the monster decides to bonk the big box with a small cube!")
+		saynn("Перепробовав все предметы, монстр решает стукнуть большим кубом по коробке!")
 
-		saynn("[say=pc]Nope, try again.[/say]")
+		saynn("[say=pc]Нет, попробуй еще раз.[/say]")
 
-		saynn("It bonks the box again.. but now it keeps sliding the cube along the top surface.. back and forth for some time.. until the cube finds a correctly-shaped hole and falls through it.")
+		saynn("Оно снова стучит по коробке.. но теперь оно начинает возить куб по верхней поверхности.. туда-сюда в течение какого-то времени.. пока куб не находит отверстие нужной формы и не проваливается в него.")
 
-		saynn("[say=pc]Good job.[/say]")
+		saynn("[say=pc]Молодец.[/say]")
 
-		saynn("The tentacles grab a second object.. a cylinder.. and start doing the same thing, grinding the object across the surface with all the holes.. This time it doesn't get so lucky because it's holding the cylinder the wrong way.")
+		saynn("Щупальца хватают второй предмет.. цилиндр.. и начинают делать то же самое, скребя им по поверхности со всеми отверстиями.. На этот раз им не так везет, потому что они держат цилиндр не той стороной.")
 
-		saynn("Eventually it gives up and throws the cylinder away.")
+		saynn("В конце концов оно сдается и отшвыривает цилиндр.")
 
-		saynn("[say=sci1]Looks like it failed.[/say]")
+		saynn("[say=sci1]Похоже, не вышло.[/say]")
 
-		saynn("[say=pc]It did one![/say]")
+		saynn("[say=pc]Один готов![/say]")
 
-		saynn("[say=sci2]The specimen does seem to possess the ability to do basic logic puzzles. Further training might improve the results.[/say]")
+		saynn("[say=sci2]Похоже, экземпляр способен решать простейшие логические задачи. Дальнейшие тренировки могут улучшить результаты.[/say]")
 
-		saynn("[say=sci1]It's just brute-forcing the puzzle, there is no logic here, it's a plant. And so it's as dumb as any plant.[/say]")
+		saynn("[say=sci1]Оно просто перебирает варианты наугад, никакой логики, это же растение. А значит, оно тупое, как и любое другое растение.[/say]")
 
-		saynn("You furrow your brows.. but then you hear another object finding its hole. The triangle-shaped one.")
+		saynn("Ты хмуришься... но тут слышишь, как другой предмет нашел свое отверстие. Тот, что в форме треугольника.")
 
-		saynn("[say=pc]See?[/say]")
+		saynn("[say=pc]Видишь?[/say]")
 
-		saynn("You really wanna pat the tentacles.. but you're not sure how.")
+		saynn("Тебе безумно хочется погладить щупальца... но ты не совсем понимаешь, как это сделать.")
 
-		saynn("[say=sci2]Despite being plant-based, it seems to possess a lot of the same traits as we do. Learning is one of them. At least that is my current theory.[/say]")
+		saynn("[say=sci2]Несмотря на растительную природу, оно, кажется, обладает многими нашими чертами. Способность к обучению — одна из них. По крайней мере, такова моя текущая теория.[/say]")
 
-		saynn("[say=sci1]I will need to see more than theory.[/say]")
+		saynn("[say=sci1]Мне нужно нечто большее, чем просто теория.[/say]")
 
-		saynn("You put the box away.")
+		saynn("Вы убираете коробку.")
 
-		addButton("Continue", "See what happens next", "afterAll")
+		addButton("Продолжить", "Смотреть, что будет дальше", "afterAll")
 	if(state == "3_toy"):
 		playAnimation(StageScene.TentaclesDuo, "whip2", {tentaclesLess=true, tentaclesSizeTiny=true, plant=true})
 		
-		saynn("One of the things that were brought is a little humanoid robot.. It looks like it has cool red armor with a slick but also slightly intimidating design. The helmet has 4 robotic eyes.. and its hand is holding a weapon.")
+		saynn("Одной из вещей, которые принесли, оказывается маленький робот-гуманоид... Он выглядит круто: красная броня с обтекаемым, но слегка устрашающим дизайном. У шлема четыре роботизированных глаза, а в руке он сжимает оружие.")
 
-		saynn("[say=pc]Isn't that a toy?[/say]")
+		saynn("[say=pc]Это что, игрушка?[/say]")
 
-		saynn("[say=sci1]It's more than a toy! Watch.[/say]")
+		saynn("[say=sci1]Это больше, чем просто игрушка! Смотри.[/say]")
 
-		saynn("The robot's systems kick into life.. making it stand up. The 4 robotic eyes light up with a scary green color.")
+		saynn("Системы робота оживают, заставляя его подняться. Четыре роботизированных глаза загораются пугающим зеленым светом.")
 
-		saynn("[say=sci2]Full remote control. Composite materials that mimic the ones used in the real space rigs. Advanced gyroscopes and motors that allow for high-frequency stabilization and locomotion. 4 cameras attached to a bluespace receiver, allowing for near-infinite precision and range of operation. A battery pack that will last you at least a week. Completed with a small 5 to 1 replica of an AlphaCorp standard issue laser rifle.[/say]")
+		saynn("[say=sci2]Полное дистанционное управление. Композитные материалы, имитирующие те, что используются в настоящих космических установках. Продвинутые гироскопы и моторы, обеспечивающие высокочастотную стабилизацию и передвижение. Четыре камеры, подключенные к приемнику блюспейса, что позволяет работать с почти бесконечной точностью и на огромных расстояниях. Аккумулятор, которого хватит минимум на неделю. И всё это в комплекте с уменьшенной в 5 раз точной копией стандартной лазерной винтовки AlphaCorp.[/say]")
 
-		saynn("You shrug. The tentacles don't seem to be very interested in the robot either, even when it walks past it a few times.")
+		saynn("Вы пожимаете плечами. Щупальца, кажется, тоже не особо интересуются роботом, даже когда тот несколько раз проходит мимо них.")
 
-		saynn("[say=pc]Fancy toy, sure.[/say]")
+		saynn("[say=pc]Модная игрушка, спору нет.[/say]")
 
-		saynn("[say=sci1]I will show you, fancy.[/say]")
+		saynn("[say=sci1]Сейчас я тебе покажу, «модная».[/say]")
 
-		saynn("Suddenly, the robot raises its laser rifle and aims it at the tentacle monster.")
+		saynn("Внезапно робот вскидывает лазерную винтовку и целится прямо в монстра из щупалец.")
 
-		saynn("[say=pc]Hey![/say]")
+		saynn("[say=pc]Эй![/say]")
 
-		saynn("Before you can do anything, a thin, searing bolt of red energy flashes through the air and strikes the center mass of the tentacle monster.")
+		saynn("Прежде чем ты успеваешь что-либо предпринять, тонкий, обжигающий разряд красной энергии проносится по воздуху и бьет точно в центр туловища щупальцевого монстра.")
 
-		saynn("The effect is instant. A pained, sizzling sound fills the air, and the smell of burnt, sweet plant matter. The three green tentacles snap straight out, throbbing with shock and agony.")
+		saynn("Эффект наступает мгновенно. Воздух наполняется болезненным шипением и запахом горелой сладковатой растительности. Три зеленых щупальца резко выпрямляются, пульсируя от шока и агонии.")
 
-		saynn("Then, only a few moments later, they act..")
+		saynn("А затем, спустя всего несколько мгновений, они начинают действовать...")
 
-		saynn("One tentacle whips forward, wrapping around the rifle's barrel with a crushing grip. You're momentarily deafened by a sharp crack of composite materials breaking.. until the robot's weapon is ripped from its hand, sparks spraying from its ruined housing.")
+		saynn("Одно щупальце хлещет вперед, обвивая ствол винтовки сокрушительной хваткой. Резкий треск ломающегося композита на мгновение оглушает тебя... пока оружие робота не вырывают из рук, обдавая всё вокруг снопом искр из разбитого корпуса.")
 
-		saynn("The other two tentacles strike like angry snakes. They wrap around the robot's legs and yank hard. The advanced gyroscopes whine in protest.. until they fail. The robot crashes onto its back with a heavy metallic thud.")
+		saynn("Два других щупальца бросаются вперед, словно разъяренные змеи. Они обвивают ноги робота и с силой дергают их. Продвинутые гироскопы жалобно стонут в протесте... пока не выходят из строя. Робот с тяжелым металлическим грохотом валится на спину.")
 
-		saynn("It tries to push itself up, its four green eyes flashing.. but it doesn't get the chance. All three tentacles coil around its torso and neck in a furious, squeezing embrace. What comes next is a sickening screech of tearing metal and a final, spectacular shower of white sparks.. until the robot's head gets violently ripped from its body.")
+		saynn("Он пытается приподняться, его четыре зеленых глаза лихорадочно мерцают... но шанса ему не дают. Все три щупальца яростно обвивают его торс и шею в удушающем захвате. За этим следует тошнотворный скрежет рвущегося металла и финальный, эффектный фонтан белых искр... пока голову робота с жестоким хрустом не отрывает от тела.")
 
-		saynn("The headless body goes limp. The tentacles, slick with robot fluid and glowing with fury, hold the spoils of war for a few seconds.. before just tossing the head aside..")
+		saynn("Безголовое тело обмякает. Щупальца, скользкие от машинной смазки и светящиеся от ярости, удерживают трофеи несколько секунд... прежде чем просто отбросить голову в сторону...")
 
-		saynn("[say=sci2]Ooh.. wow..[/say]")
+		saynn("[say=sci2]Ох... вау...[/say]")
 
-		saynn("[say=sci1]What the.. That prototype cost us millions of credits![/say]")
+		saynn("[say=sci1]Что за... Этот прототип стоил нам миллионы кредитов![/say]")
 
-		saynn("The tentacles awkwardly climb into its nest and coil around the wounded one.")
+		saynn("Щупальца неуклюже забираются в гнездо и обвиваются вокруг раненого.")
 
-		saynn("[say=pc]So much for composite materials and advanced gyroscopes.[/say]")
+		saynn("[say=pc]Вот тебе и композитные материалы с продвинутыми гироскопами.[/say]")
 
-		saynn("You can't help but to smile hearing all the grumbling that comes through the intercom.")
+		saynn("Вы невольно улыбаетесь, слушая ворчание, доносящееся из интеркома.")
 
-		saynn("[say=sci2]..try to remain calm..[/say]")
+		saynn("[say=sci2]..постарайся сохранять спокойствие..[/say]")
 
-		saynn("[say=sci1]..no.. did you see what that stupid thing did?[/say]")
+		saynn("[say=sci1]..да нет же.. ты видел, что вытворило это тупое создание?[/say]")
 
-		saynn("[say=sci2]..yeah.. but try to recontextualize everything that happened..[/say]")
+		saynn("[say=sci2]..да.. но попробуй взглянуть на всё случившееся под другим углом..[/say]")
 
-		saynn("[say=sci1]..grr.. fine.[/say]")
+		saynn("[say=sci1]..грр.. ладно.[/say]")
 
-		saynn("All the while the guards walk into the cell and remove the remains of the robot.. being careful to avoid the nest as far as they can.")
+		saynn("Тем временем охранники заходят в камеру и убирают останки робота, стараясь по возможности не задеть гнездо.")
 
-		saynn("[say=sci1]Okay. Test is over.[/say]")
+		saynn("[say=sci1]Ладно. Тест окончен.[/say]")
 
-		addButton("Continue", "See what happens next", "afterAll")
+		addButton("Продолжить", "Смотреть, что будет дальше", "afterAll")
 	if(state == "3_ladder"):
-		saynn("The tentacles probably wouldn't be able to handle a full obstacle course.. they can't even move around still.. but maybe they can try to climb a single thing.")
+		saynn("Щупальца вряд ли справятся с полноценной полосой препятствий... они всё ещё едва могут двигаться... но, возможно, им удастся взобраться хотя бы на что-то одно.")
 
-		saynn("You find a little triangle-shaped ladder.. and place it against the monster.")
+		saynn("Вы находите маленькую треугольную лестницу... и прислоняете её к монстру.")
 
-		saynn("At first, the tentacles don't seem to have much interest in it. They brush lightly against the bars of it.. until one of them decides to wrap around them and push. The ladder seems to be too heavy for it to move..")
+		saynn("Поначалу щупальца, кажется, не проявляют к ней особого интереса. Они лишь слегка касаются перекладин... пока одно из них не решает обвить их и толкнуть. Лестница кажется слишком тяжелой, чтобы сдвинуться с места...")
 
-		saynn("[say=pc]Don't push it. Pull.[/say]")
+		saynn("[say=pc]Не толкай. Тяни.[/say]")
 
-		saynn("You watch it struggle with the ladder.. until it suddenly does what you say and pulls itself closer to it by pulling on the bars. The tentacles manage to lift themselves off of the nest and climb a few horizontal metal bars.")
+		saynn("Вы наблюдаете за его попытками совладать с лестницей... пока оно внезапно не делает то, что вы сказали, и не подтягивается ближе, хватаясь за перекладины. Щупальцам удается оторваться от гнезда и взобраться на несколько горизонтальных металлических прутьев.")
 
-		saynn("[say=sci2]Hm. The specimen seems to possess a very intricate muscle system.[/say]")
+		saynn("[say=sci2]Хм. Похоже, этот экземпляр обладает очень сложной системой мышц.[/say]")
 
-		saynn("Makes you wonder if these muscles can be trained the same way..")
+		saynn("Невольно задумываешься: можно ли натренировать эти мышцы так же, как обычные?..")
 
-		saynn("After some time, the monster gets too tired to hang off of the horizontal bars and so it returns back to the nest.")
+		saynn("Спустя некоторое время монстр слишком устает, чтобы висеть на горизонтальных перекладинах, и возвращается обратно в гнездо.")
 
-		addButton("Continue", "See what happens next", "afterAll")
+		addButton("Продолжить", "Смотреть, что будет дальше", "afterAll")
 	if(state == "3_onahole"):
-		saynn("A certain.. toy.. catches your eyes. A limbless onahole sextoy.. completed with 2 tight holes, a pussy and a butthole.. very lewd.")
+		saynn("Определенная... игрушка... привлекает ваше внимание. Безногая онахоле-секс-игрушка... с двумя тугими отверстиями — киской и анусом... очень похотливая.")
 
-		saynn("[say=pc]Ohh.. I like this.[/say]")
+		saynn("[say=pc]Охх... а это мне нравится.[/say]")
 
-		saynn("[say=sci2]We wanted to see how it will react to.. normal anatomy of a person.[/say]")
+		saynn("[say=sci2]Мы хотели посмотреть, как она отреагирует на... нормальную анатомию человека.[/say]")
 
-		saynn("You hold the toy for a moment, feeling its strange, soft texture. Nothing about this anatomy is normal.. Still, you place it carefully on the floor in front of the three green tentacles.")
+		saynn("Ты на мгновение задерживаешь игрушку в руках, ощущая её странную, мягкую текстуру. В этой анатомии нет ничего нормального... Тем не менее, ты осторожно кладешь её на пол перед тремя зелеными щупальцами.")
 
-		saynn("At first, they are still. Then, one slick tip slowly extends, tapping the silicone surface. It prods, testing the toy. The tentacle draws back, then prods again, a little harder. The other two tentacles join, their tips now gently exploring the curves and ridges of the onahole.")
+		saynn("Сначала они неподвижны. Затем один скользкий кончик медленно вытягивается и постукивает по силиконовой поверхности. Он прощупывает, проверяя игрушку. Щупальце отстраняется, а затем тычет снова, уже чуть сильнее. К нему присоединяются два других, и теперь их кончики нежно исследуют изгибы и рельеф онахоле.")
 
-		saynn("They trace the outlines of the two holes, circling them again and again. A low, interested hum vibrates from the monster.")
+		saynn("Они обводят контуры двух отверстий, кружа вокруг них снова и снова. Изнутри монстра доносится низкое, заинтересованное гудение.")
 
-		saynn("Then, the exploring stops. One of the tips presses firmly against the pussy hole. With a soft, wet sound, it pushes inside. The tentacle slides in smoothly, deeper and deeper, its slick surface shining with a fresh coat of clear, slippery fluid..")
+		saynn("Затем исследования прекращаются. Один из кончиков плотно прижимается к отверстию для киска. С мягким влажным звуком он проталкивается внутрь. Щупальце входит плавно, всё глубже и глубже, а его скользкая поверхность блестит от свежего слоя прозрачной, маслянистой смазки...")
 
-		saynn("Seeing this, the other two tentacles sway with an undying interest. One quickly seeks out the second hole, sliding in with the same wet ease. The third tentacle, with no hole left, wraps tightly around the toy's exterior, squeezing it as the other two keep it stuffed full.")
+		saynn("Видя это, два других щупальца начинают покачиваться с неутолимым интересом. Одно быстро находит второе отверстие, входя в него с такой же влажной легкостью. Третьему щупальцу отверстий уже не осталось, поэтому оно плотно обвивает игрушку снаружи, сжимая её, пока два других продолжают набивать её изнутри.")
 
-		saynn("They thrust ever so slightly.. a slow, instinctive rhythm that grows faster over time.")
+		saynn("Они совершают едва заметные толчки... медленный, инстинктивный ритм, который со временем становится всё быстрее.")
 
-		saynn("[say=sci1]It seems to be quite horny, for sure.[/say]")
+		saynn("[say=sci1]Судя по всему, эта тварь чертовски возбуждена.[/say]")
 
-		saynn("[say=sci2]Not sure if such a term can be applied to this kind of specimen.[/say]")
+		saynn("[say=sci2]Не уверен, применимо ли такое понятие к подобному виду существ.[/say]")
 
-		saynn("After the tentacles are done.. fucking.. the onahole, you grab it and put it away.. its holes are still leaking lube-like juice.")
+		saynn("Когда щупальца заканчивают... трахать... онахоле, ты подбираешь её и убираешь... её отверстия всё еще сочатся смазкой, похожей на сок.")
 
-		saynn("Seeing all of this.. makes you excited.. for some reason..")
+		saynn("Вид всего этого... почему-то приводит тебя в возбуждение...")
 
-		addButton("Continue", "See what happens next", "afterAll")
+		addButton("Продолжить", "Смотреть, что будет дальше", "afterAll")
 	if(state == "afterAll"):
 		# (( Tiny idle anim
 		playAnimation(StageScene.TentaclesDuo, "idle", {tentaclesLess=true, tentaclesSizeTiny=true, plant=true})
 		
-		saynn("The testing seems to be.. over.. at least for now.")
+		saynn("Похоже, тестирование... окончено... по крайней мере, на данный момент.")
 
-		saynn("[say=sci2]You may get some rest now, test subject. We need time to go through all the data.[/say]")
+		saynn("[say=sci2]Теперь можешь немного отдохнуть, подопытный. Нам нужно время, чтобы обработать все данные.[/say]")
 
-		saynn("[say=sci1]I need coffee. As much as I can stuff into myself.[/say]")
+		saynn("[say=sci1]Мне нужно кофе. Столько, сколько смогу в себя влить.[/say]")
 
-		saynn("[say=sci2]Want me to do a capacity measurement? We can calculate exactly how much..[/say]")
+		saynn("[say=sci2]Хочешь, чтобы я провела замер вместимости? Мы сможем рассчитать точно, сколько...[/say]")
 
-		saynn("[say=sci1]No. One more word and I will 3d-print a coffee-buttplug just for you.[/say]")
+		saynn("[say=sci1]Нет. Еще одно слово, и я напечатаю на 3D-принтере кофейную пробку специально для тебя.[/say]")
 
-		saynn("[say=sci2]Actually, there is a chance that it might improve my performance![/say]")
+		saynn("[say=sci2]Вообще-то, есть шанс, что это даже улучшит мои показатели![/say]")
 
-		saynn("[say=sci1]Right, I will need to make a gag first.[/say]")
+		saynn("[say=sci1]Точно, сначала мне нужно будет напечатать кляп.[/say]")
 
 		if (whichStat == _tentacles.STAT_ANGER):
-			saynn("The tentacles are looking in your direction.. standing tall like snakes. Each time you catch their glance, the tendrils vibrate ever so much.")
+			saynn("Щупальца смотрят в твою сторону... вытянувшись, словно змеи. Каждый раз, когда ты ловишь их взгляд, их отростки начинают мелко вибрировать.")
 
-			saynn("They sure seem pretty.. agitated.. after everything.")
+			saynn("Они определенно выглядят довольно... взбудораженными... после всего случившегося.")
 
 		elif (whichStat == _tentacles.STAT_AGILITY):
-			saynn("The tentacles are just resting too now, not even swaying around or curling around each other. Looks like all the exercising has tired them out.")
+			saynn("Щупальца тоже просто отдыхают, они даже не раскачиваются и не переплетаются друг с другом. Похоже, все эти упражнения их измотали.")
 
 		elif (whichStat == _tentacles.STAT_MIND):
-			saynn("The tentacles are just curiously looking around. The talking camera has piqued its interest for a bit.. but the constant arguing quickly tires it out.")
+			saynn("Щупальца просто с любопытством озираются по сторонам. Говорящая камера ненадолго привлекла их внимание... но постоянные споры быстро утомляют их.")
 
-			saynn("[say=pc]They're getting boring, aren't they?[/say]")
+			saynn("[say=pc]Они становятся скучными, не так ли?[/say]")
 
-			saynn("One of the tentacles nods after your words.. or maybe it was just swaying..")
+			saynn("Одно из щупалец кивает в ответ на твои слова... а может, оно просто качнулось...")
 
 		elif (whichStat == _tentacles.STAT_LUST):
-			saynn("The tentacles are just staring at you.. their pointy tips are wet with some kind of transparent fluid.. probably their nectar. It smells nice.. very nice..")
+			saynn("Щупальца просто пялятся на тебя... их острые кончики влажные от какой-то прозрачной жидкости... вероятно, это их нектар. Пахнет приятно... очень приятно...")
 
 		else:
-			saynn("The tentacles are just idly swaying around. They don't seem to be interested in anything in particular. Your tests just left them confused. Maybe they just need more training..")
+			saynn("Щупальца просто лениво покачиваются. Кажется, их ничто не интересует по-настоящему. Твои тесты только запутали их. Может, им просто нужно больше тренировок...")
 
-		saynn("[say=sci2]Anyway.. have a good rest.[/say]")
+		saynn("[say=sci2]В любом случае... хорошего отдыха.[/say]")
 
-		saynn("The voices become quiet.")
+		saynn("Голоса затихают.")
 
-		saynn("[say=sci1]..{pc.he} {pc.isAre} just a disposable test subject, why are you wishing {pc.him} anything.[/say]")
+		saynn("[say=sci1]..{pc.he} {pc.isAre} всего лишь расходный подопытный, зачем ты желаешь {pc.him} чего-то особенного.[/say]")
 
-		saynn("[say=sci2]..uh.. I guess you're right.[/say]")
+		saynn("[say=sci2]..э-э.. полагаю, ты прав(а).[/say]")
 
-		saynn("The camera looks at you again.")
+		saynn("Камера снова направлена на тебя.")
 
-		saynn("[say=sci2]Scratch my last words.[/say]")
+		saynn("[say=sci2]Выцарапай мои последние слова.[/say]")
 
-		saynn("You sigh. Time to go rest.")
+		saynn("Ты вздыхаешь. Пора идти отдыхать.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 func supportsShowingPawns() -> bool:
 	return true
 

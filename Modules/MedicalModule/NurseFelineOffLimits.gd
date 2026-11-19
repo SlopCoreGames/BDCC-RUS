@@ -9,7 +9,7 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="nurse"})
 
 	if(state == ""):
-		saynn("You stumble upon a nurse. You try to hide but it's too late.")
+		saynn("Ты натыкаешься на медсестру. Ты пытаешься спрятаться, но уже слишком поздно.")
 
 		saynn("[say=nurse]"+RNG.pick([
 			"This is a mental ward, you can't be here without a leash.",
@@ -19,9 +19,9 @@ func _run():
 			"Whacha doin’ there.",
 		])+"[/say]")
 
-		saynn("Her voice sounds feminine, even though she is just a nurse she pulls out a stun baton. She looks tall and quite fit, as most felines are.")
+		saynn("Её голос звучит женственно, и хотя она всего лишь медсестра, она выхватывает электрошокер. Она выглядит высокой и довольно подтянутой, как и большинство фелинок.")
 
-		saynn("She waits for a moment to pounce at you.")
+		saynn("Она замирает на мгновение, готовясь к прыжку.")
 
 		saynn("[say=nurse]"+RNG.pick([
 			"Give up and I won't hurt you. Too much",
@@ -30,17 +30,17 @@ func _run():
 			"Time to teach you a lesson.",
 		])+"[/say]")
 
-		saynn("Seems like it’s a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Fight", "Seems like there is no other way", "fight")
+		addButton("Драться", "Похоже, другого пути нет.", "fight")
 
 	if(state == "lost_fight"):
-		saynn("You got defeated by a nurse. Unable to continue fighting, you drop to your knees and await your fate.")
+		saynn("Ты проиграл медсестре. Не в силах продолжать бой, ты падаешь на колени в ожидании своей участи.")
 		
-		addButton("Continue", "See what happens", "getrestrained")
+		addButton("Продолжить", "Посмотреть, что будет", "getrestrained")
 
 	if(state == "getrestrained"):
-		saynn("The nurse walks up to you. She produces some restraint and tries to put it on you!")
+		saynn("Медсестра подходит к тебе. Она достает средства фиксации и пытается надеть их на тебя!")
 
 		saynn("[say=nurse]"+RNG.pick([
 			"Now get out of here.",
@@ -51,14 +51,14 @@ func _run():
 
 		# (scene ends)
 
-		addButton("Continue", "Oh no", "endthescene")
+		addButton("Продолжить", "О нет", "endthescene")
 
 	if(state == "won_fight"):
-		saynn("You pin the defeated nurse to the floor. She doesn’t seem to struggle much.")
+		saynn("Ты прижимаешь поверженную медсестру к полу. Кажется, она особо и не сопротивляется.")
 
 		# (if has hands)
 		if(!GM.pc.hasBlockedHands()):
-			saynn("You use her cuffs to cuff her, rendering her mostly helpless.")
+			saynn("Ты используешь её же наручники, чтобы сковать её, делая её практически беспомощной.")
 
 		saynn("[say=nurse]"+RNG.pick([
 			"Nice moves. What’s your plan?",
@@ -66,20 +66,20 @@ func _run():
 			"A little kiss before you leave?",
 		])+"[/say]")
 
-		addButton("Leave her be", "Just loot her and leave before anyone else sees you", "endthescene")
+		addButton("Оставь её в покое", "Просто обчисти её и свали, пока тебя не заметили", "endthescene")
 
 	if(state == "catchEscapedPC"):
-		saynn("The nurse pins you down to the floor.")
+		saynn("Медсестра прижимает тебя к полу.")
 
-		saynn("[say=nurse]Thought you can escape, test bitch?[/say]")
+		saynn("[say=nurse]Думал, что сможешь сбежать, сучка?[/say]")
 
-		saynn("She forces a straitjacket on you! You try to resist but it’s too late.")
+		saynn("Она силой натягивает на тебя смирительную рубашку! Ты пытаешься сопротивляться, но уже слишком поздно.")
 
-		saynn("[say=nurse]Not so fast, you’re coming with me.[/say]")
+		saynn("[say=nurse]Не так быстро, ты идешь со мной.[/say]")
 
-		saynn("She leashes you and brings you to Eliza. The doctor doesn’t seem to be happy about you.")
+		saynn("Она сажает тебя на поводок и ведет к Элизе. Доктор, похоже, не в восторге от твоего появления.")
 
-		addButton("Oh no", "Escape failed", "oh_no")
+		addButton("О нет", "Побег провалился", "oh_no")
 
 func _react(_action: String, _args):
 

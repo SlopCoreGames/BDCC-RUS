@@ -9,48 +9,48 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		
 	if(state == ""):
-		saynn("Someone knocks on the little window. You look up and see Eliza standing behind the door. Intercom makes a static noise.")
+		saynn("Кто-то стучит в маленькое окошко. Ты поднимаешь взгляд и видишь Элизу за дверью. Интерком издает статический шум.")
 
-		saynn("[say=eliza]Hey there, inmate. I’m here to check on you. Sit still.[/say]")
+		saynn("[say=eliza]Привет, заключенная. Я здесь, чтобы проверить твое состояние. Сиди смирно.[/say]")
 
-		saynn("Door slowly goes through its opening sequence. Doctor Quinn walks in and crouches before you, her hand reaches out and rubs your latex straitjacket. Then her digits trace circles around your exposed {pc.breasts}.")
+		saynn("Дверь медленно открывается. Входит доктор Куинн и приседает перед тобой; она протягивает руку и поглаживает твой латексный смирительный костюм. Затем её пальцы начинают выводить круги вокруг твоего обнаженного {pc.breasts}.")
 
-		saynn("[say=eliza]Look at me. How are you doing?[/say]")
+		saynn("[say=eliza]Посмотри на меня. Как ты себя чувствуешь?[/say]")
 
-		addButton("Behave", "Show how good of an inmate you are", "behave")
-		addButton("Growl at", "How dares she", "growl_at")
+		addButton("Вести себя послушно", "Показать, какая из тебя послушная заключенная", "behave")
+		addButton("Зарычать на", "Как она смеет", "growl_at")
 
 
 	if(state == "behave"):
-		saynn("You watch her touch your chest and offer her a little smile.")
+		saynn("Ты наблюдаешь за тем, как она касается твоей груди, и слегка улыбаешься ей.")
 
-		saynn("[say=pc]I’m feeling well, thank you.[/say]")
+		saynn("[say=pc]Чувствую себя хорошо, спасибо.[/say]")
 
-		saynn("She traces a digit across your cheek and then slides it between your lips. Unsure, you begin to gently suck on it. Eliza eyes you out with her cunning gaze and chuckles.")
+		saynn("Она проводит пальцем по твоей щеке, а затем просовывает его тебе в губы. В нерешительности ты начинаешь осторожно посасывать его. Элиза оглядывает тебя своим хитрым взглядом и посмеивается.")
 
-		saynn("[say=eliza]Wish I could keep you here forever. But. You know. Can’t do that, your mental health seems to be stable enough so I have to let you go.[/say]")
+		saynn("[say=eliza]Хотелось бы мне оставить тебя здесь навсегда. Но... сама понимаешь. Нельзя. Твое психическое состояние кажется достаточно стабильным, так что пора тебя отпускать.[/say]")
 
-		saynn("[say=pc]Tha..[/say]")
+		saynn("[say=pc]Т-та...[/say]")
 
-		saynn("[say=eliza]Shh-h..[/say]")
+		saynn("[say=eliza]Тсссс...[/say]")
 
-		saynn("She pulls her digit and drags it across your other cheek. Eliza softly giggles.")
+		saynn("Она подносит палец и проводит им по твоей другой щеке. Элиза тихонько хихикает.")
 
 		# (if bad behaviour)
 		if(getModuleFlag("MedicalModule", "Mental_PCBehavior", 0.0) < 0.3):
-			saynn("[say=eliza]Your behavior was quite awful, you clearly need more punishments. I will note that in the database. Now let’s go.[/say]")
+			saynn("[say=eliza]Твое поведение было довольно паршивым, тебе явно нужно больше наказаний. Я внесу это в базу данных. А теперь — идем.[/say]")
 
 		# (if medium behavior)
 		elif(getModuleFlag("MedicalModule", "Mental_PCBehavior", 0.0) < 0.7):
-			saynn("[say=eliza]You were pretty helpful and mostly collaborated. Could have been better but oh well. Let’s go.[/say]")
+			saynn("[say=eliza]Ты была довольно полезной и в основном сотрудничала. Могла бы и лучше, но ладно. Пошли.[/say]")
 
 		# (if high behavior)
 		else:
-			saynn("[say=eliza]You’ve been of great help, we need more test subjects like you. Now let’s go.[/say]")
+			saynn("[say=eliza]Ты оказала нам огромную помощь, нам нужно больше таких подопытных, как ты. А теперь — идем.[/say]")
 
-		saynn("She clips a leash to your collar and helps you to get up.")
+		saynn("Она пристегивает поводок к твоему ошейнику и помогает тебе подняться.")
 
-		addButton("Follow", "See where she brings you", "follow")
+		addButton("Следовать", "Посмотреть, куда она тебя приведет", "follow")
 
 	if(state == "follow"):
 		aimCamera("med_lobbyne")
@@ -58,91 +58,91 @@ func _run():
 		setLocationName("Medical lobby")
 		GM.pc.setLocation("med_lobbyne")
 		
-		saynn("Eliza walks you through some corridors and brings you to the exit. She then unlocks your straitjacket and takes it off.")
+		saynn("Элиза ведет тебя по коридорам к выходу. Затем она расстегивает твою смирительную рубашку и снимает ее с тебя.")
 
-		saynn("[say=eliza]Can’t have you walking around with it~[/say]")
+		saynn("[say=eliza]Нельзя же позволить тебе разгуливать в ней~[/say]")
 
-		saynn("She presses the button and invites you to walk into the lobby.")
+		saynn("Она нажимает на кнопку и приглашает тебя войти в вестибюль.")
 
-		addButton("Freedom", "Free, at last", "endthesceneGoodEscape")
+		addButton("Свобода", "Наконец-то на свободу", "endthesceneGoodEscape")
 		
 		# (scene ends)
 
 
 
 	if(state == "growl_at"):
-		saynn("You expose your fangs and growl at her. She grabs you by the chin and forces you to look at her, face expression changes to a mean one.")
+		saynn("Ты скалишь клыки и рычишь на неё. Она хватает тебя за подбородок и заставляет смотреть ей в глаза; выражение её лица становится злобным.")
 
-		saynn("[say=eliza]Right now I’m your only way out of here, silly inmate. So you better behave unless you want your mind shattered. See if I care.[/say]")
+		saynn("[say=eliza]Прямо сейчас я — твой единственный шанс выбраться отсюда, глупый заключённый. Так что веди себя прилично, если не хочешь, чтобы твой разум разлетелся вдребезги. Посмотрим, будет ли мне не всё равно.[/say]")
 
-		saynn("She produces a syringe filled with something unknown and holds it close to your neck.")
+		saynn("Она достаёт шприц с каким-то неизвестным веществом и подносит его к твоей шее.")
 
-		saynn("[say=eliza]Show me you are sorry.[/say]")
+		saynn("[say=eliza]Докажи, что тебе жаль.[/say]")
 
-		addButton("Obey", "You experienced enough drugs", "obey")
-		addButton("Kick her away", "Resist until the end. This probably won’t end well", "kick_her_away")
+		addButton("Повиноваться", "Ты и так перенюхал достаточно всякой дряни", "obey")
+		addButton("Оттолкнуть её", "Сопротивляться до последнего. Скорее всего, это плохо кончится", "kick_her_away")
 		
 
 	if(state == "obey"):
-		saynn("Your rebellious spirit quickly fades, you stop growling and direct your gaze down, away from the doctor's eyes. Eliza sees it and puts the syringe away. She returns to teasing your chest.")
+		saynn("Твой бунтарский дух быстро угасает; ты перестаёшь рычать и опускаешь взгляд, избегая глаз доктора. Элиза замечает это и убирает шприц. Она возвращается к тому, чтобы дразнить твою грудь.")
 
-		saynn("[say=eliza]That’s a good inmate. I will repeat my question. How are you feeling?[/say]")
+		saynn("[say=eliza]Послушная заключенная. Повторю свой вопрос. Как вы себя чувствуете?[/say]")
 
 		# (continue)
-		addButton("Behave", "Show how good of an inmate you are", "behave")
+		addButton("Вести себя послушно", "Показать, какая из тебя послушная заключенная", "behave")
 
 
 	if(state == "kick_her_away"):
-		saynn("You prop yourself against a wall and kick Eliza back. She hisses and staggers back, dropping the syringe in the process. You get into one of the corners and growl at her more. You can’t do much more with that straitjacket on.")
+		saynn("Ты прислоняешься к стене и пинаешь Элизу в ответ. Она шипит и отшатывается, выронив при этом шприц. Ты забиваешься в угол и начинаешь рычать на неё еще сильнее. В смирительной рубашке особо не разгуляешься.")
 
-		saynn("Eliza stands up and swipes her lab coat.")
+		saynn("Элиза выпрямляется и отряхивает свой лабораторный халат.")
 
-		saynn("[say=eliza]Well then.[/say]")
+		saynn("[say=eliza]Ну что ж.[/say]")
 
-		saynn("She glares at you. You roll the syringe away from her and protect it.")
+		saynn("Она свирепо смотрит на тебя. Ты откатываешь шприц подальше от неё, прикрывая его собой.")
 
-		saynn("[say=eliza]Think you are safe? Look around, you’re stuck here on this rock. Together with me. You’re screwed. Wanna know why?[/say]")
+		saynn("[say=eliza]Думаешь, ты в безопасности? Оглянись, ты застряла здесь, на этой скале. Вместе со мной. Тебе крышка. Хочешь знать почему?[/say]")
 
-		saynn("She grabs a remote off her belt and presses some buttons. Your collar beeps and sends a powerful shock through you. Ow! And it doesn’t stop, more and more shocks go through you, sending your body to shake uncontrollably. You can’t help but cry out from pain. Doctor’s eyes burn from excitement.")
+		saynn("Она достает с пояса пульт и нажимает на кнопки. Твой ошейник издает писк и пропускает через тебя мощный разряд тока. Ой! И это не прекращается — удары сыплются один за другим, заставляя твое тело неудержимо содрогаться. Ты невольно вскрикиваешь от боли. Глаза доктора горят от возбуждения.")
 
-		saynn("[say=eliza]Because I love seeing you suffer.[/say]")
+		saynn("[say=eliza]Потому что обожаю смотреть, как ты страдаешь.[/say]")
 
-		saynn("She gives you a small breather, stopping the shocks. Your muscles feel very sore. Eliza steps closer and presses her leg into your {pc.masc} belly, pinning you to the ground. She grins and holds the button on the remote again sending more shocks through your body. You try to arch your back but Eliza pushes you down into the floor.")
+		saynn("Она дает тебе небольшую передышку, прекращая разряды. Мышцы ломит от боли. Элиза подходит ближе и упирается ногой тебе в {pc.masc} живот, прижимая к полу. Она ухмыляется и снова зажимает кнопку на пульте, пуская новые разряды по твоему телу. Ты пытаешься выгнуться, но Элиза вжимает тебя обратно в пол.")
 
-		saynn("[say=eliza]Good thing latex doesn’t conduct electricity.[/say]")
+		saynn("[say=eliza]Хорошо, что латекс не проводит электричество.[/say]")
 
-		addButton("Give up", "It’s too much", "give_up")
-		addButtonWithChecks("Touch her leg", "Use the shock against her", "touch_her_leg", [], [[ButtonChecks.StatCheck, Stat.Vitality, 10]])
+		addButton("Сдаться", "Это уже слишком", "give_up")
+		addButtonWithChecks("Коснуться её ноги", "Использовать шокер против неё", "touch_her_leg", [], [[ButtonChecks.StatCheck, Stat.Vitality, 10]])
 		
 
 	if(state == "give_up"):
-		saynn("You quit resisting and try to show that you are surrendering but she just keeps holding the button down, sending more and more painful sensations through your body. She is laughing seeing you shiver so much. Everything is getting dark, you start to lose consciousness..")
+		saynn("Ты перестаёшь сопротивляться и пытаешься показать, что сдаёшься, но она лишь продолжает удерживать кнопку, посылая всё новые и новые волны боли по твоему телу. Она смеётся, видя, как тебя колотит крупная дрожь. Всё начинает темнеть, ты теряешь сознание...")
 
-		saynn("[say=eliza]Not so fast.[/say]")
+		saynn("[say=eliza]Не так быстро![/say]")
 
-		saynn("Eliza lets go of the button and grabs the syringe off the floor. She then swiftly injects your neck with it. Ow.")
+		saynn("Элиза отпускает кнопку и хватает шприц с пола. Затем она резким движением вонзает его тебе в шею. Ой!")
 
-		saynn("[say=eliza]Now you can pass out.[/say]")
+		saynn("[say=eliza]А теперь можешь отключаться.[/say]")
 
-		saynn("Mind is slowly slipping away.. Thoughts disappear.. Is this what hell feels like.. Or is it heaven..")
+		saynn("Сознание медленно ускользает... Мысли исчезают... Это и есть ад?.. Или это рай?..")
 
-		saynn("[say=eliza]See you around~[/say]")
+		saynn("[say=eliza]Ещё увидимся~[/say]")
 
-		addButton("Sleep time", "That was painful", "endthesceneSleep")
+		addButton("Время сна", "Это было больно", "endthesceneSleep")
 
 		# (scene ends)
 
 
 	if(state == "touch_her_leg"):
-		saynn("Despite all the pain and shock you manage to bend your leg enough to touch Eliza, sending a powerful impulse of electricity through her body too. She lets out a painful cry and drops to the floor, breathing heavily. The remote falls out of her hand and smashes against the floor.")
+		saynn("Несмотря на всю боль и шок, тебе удается подогнуть ногу так, чтобы коснуться Элизы, пропуская через ее тело мощный электрический импульс. Она издает болезненный крик и падает на пол, тяжело дыша. Пульт выпадает из ее рук и с грохотом разбивается о пол.")
 
-		saynn("It’s your chance. You gather all your willpower and get out of the cell. You drag your face across the control panel and start the door closing mechanism, trapping Eliza inside your cell. As soon as she gains her strength back she starts pounding on the door. You hear her voice through the intercom.")
+		saynn("Это твой шанс. Собрав всю волю в кулак, ты выбираешься из камеры. Ты проводишь лицом по панели управления и запускаешь механизм закрытия двери, запирая Элизу внутри твоей камеры. Как только она восстанавливает силы, она начинает колотить в дверь. Ты слышишь ее голос через интерком.")
 
-		saynn("[say=eliza]Hey! What do you think you’re doing. I will break you. Let me out! I will deconstruct your personality into nothing! I will erase your memory and make you into my servant![/say]")
+		saynn("[say=eliza]Эй! Ты что, совсем охренела?! Я тебя уничтожу! Выпусти меня! Я разберу твою личность на атомы! Я сотру твою память и превращу тебя в свою служанку![/say]")
 
-		saynn("You give her last glance and make your escape.")
+		saynn("Ты бросаешь на нее последний взгляд и совершаешь побег.")
 
-		addButton("Run", "She got what she deserved", "run")
+		addButton("Бежать", "Она получила то, что заслужила", "run")
 
 	if(state == "run"):
 		aimCamera("med_lobbyne")
@@ -150,9 +150,9 @@ func _run():
 		setLocationName("Medical lobby")
 		GM.pc.setLocation("med_lobbyne")
 		
-		saynn("Seems like no one knows that you escaped so there aren’t many guards around. You manage to sneak past all of them and make your way back to the medical lobby!")
+		saynn("Похоже, никто еще не знает о твоем побеге, поэтому охраны поблизости немного. Тебе удается проскользнуть мимо всех и пробраться обратно в медицинское лобби!")
 
-		addButton("Escaped", "Freedom!", "endthesceneEscape")
+		addButton("Сбежал", "Свобода!", "endthesceneEscape")
 
 func _react(_action: String, _args):
 

@@ -4,7 +4,7 @@ func _init():
 	id = "PortalPantiesQuest"
 
 func getVisibleName():
-	return "Bluespace panties"
+	return "Трусики из блюспейса"
 
 func getProgress():
 	var result = []

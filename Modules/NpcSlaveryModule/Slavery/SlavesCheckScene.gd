@@ -18,7 +18,7 @@ func _run():
 			addButtonAt(13, "Blacktail Market", "Place where you can sell your slaves", "go_market")
 		addButtonAt(14, "CLOSE", "Enough interactions", "endthescene")
 		
-		saynn("Who do you want to check on?")
+		saynn("За кем ты хочешь проверить?")
 		
 		var slaves = GM.main.getDynamicCharacterIDsFromPool(CharacterPool.Slaves)
 		

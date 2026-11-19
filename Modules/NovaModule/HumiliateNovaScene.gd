@@ -12,110 +12,110 @@ func _run():
 		})
 
 	if(state == ""):
-		saynn("You come up to Nova and quickly snatch her weapon so she can’t use it against you. You then straddle and pin her to the floor, your hands behind ripping the parts of her armor off.")
+		saynn("Ты подходишь к Нове и резко выхватываешь её оружие, чтобы она не смогла применить его против тебя. Затем ты нависаешь над ней, прижимая к полу, и руками срываешь с неё куски брони.")
 
-		saynn("[say=pc]Time for me to play with you.[/say]")
+		saynn("[say=pc]Пришло время поиграть с тобой.[/say]")
 
-		saynn("Nova tries to struggle but she just can’t, you take off her armor and skirt, leaving her only in a skin-tight black suit.")
+		saynn("Нова пытается вырваться, но тщетно; ты снимаешь с неё броню и юбку, оставляя лишь облегающий чёрный костюм.")
 
-		saynn("[say=nova]You won’t be able to get away with this.[/say]")
+		saynn("[say=nova]Тебе это с рук не сойдет![/say]")
 
-		saynn("[say=pc]Oh yeah? Watch me.[/say]")
+		saynn("[say=pc]Да неужели? Ну, смотри.[/say]")
 
-		saynn("You slip two digits into her maw and wiggle them around. You can hear growling from her but that quickly dies down when she sees a turned-on stun baton in your hand.")
+		saynn("Ты засовываешь два пальца ей в пасть и начинаешь ими шевелить. Слышится её рычание, но оно быстро затихает, когда она видит в твоей руке включённую электродубинку.")
 
-		saynn("[say=pc]Suck on them, prove how big of a slut you are.[/say]")
+		saynn("[say=pc]Соси их, докажи, какая ты шлюха.[/say]")
 
-		saynn("Nova gets confused for a second, then a bright red blush appears on her cheeks as obeys and proceeds to lick your digits and suck on them. You slide them in and out deeper and she eagerly gives in and curls her canine tongue around them, her paws holding onto your hand, rendering the guard quite cute.")
+		saynn("Нова на секунду замирает в замешательстве, но затем её щеки заливает ярко-красный румянец; она подчиняется и начинает лизать твои пальцы, посасывая их. Ты вводишь их глубже, и она с жадностью поддается, обвивая их своим собачьим языком, а её лапы вцепляются в твою руку, отчего стражница выглядит чертовски мило.")
 
-		saynn("[say=pc]Good girl.[/say]")
+		saynn("[say=pc]Хорошая девочка.[/say]")
 
-		saynn("[say=nova]Nhyoo..[/say]")
+		saynn("[say=nova]Ннюуу..[/say]")
 
-		saynn("You turn the weapon off and put it away for now and begin to unzip her suit from the bottom, exposing her tight pucker, pink pussy, sheath and eventually a pair of D-cup breasts. The tip of her canine cock poking from the sheath with a singular drop of pre but that's not your target. You give her breasts a smack, causing them to jiggle. Nova whines quietly but resists, trying to shake and push you off. You snatch a pair of handcuffs from her belt and put them on her hands, restraining her.")
+		saynn("Ты выключаешь оружие и откладываешь его в сторону, после чего начинаешь расстегивать её костюм снизу, обнажая её тугую ануску, розовую киску, препуций и, наконец, грудь размера D. Из препуция выглядывает кончик её собачьего члена с одинокой каплей предэякулята, но это не твоя главная цель. Ты шлепаешь её по груди, заставляя её колыхаться. Нова тихо скулит, но сопротивляется, пытаясь стряхнуть и оттолкнуть тебя. Ты хватаешь наручники с её пояса и застегиваешь их на её запястьях, сковывая её движения.")
 
-		saynn("[say=nova]Hee-ey.. You had your fun, quit it..[/say]")
+		saynn("[say=nova]Эй... Ты уже повеселилась, завязывай...[/say]")
 
-		saynn("[say=pc]We’re only just starting, slut.[/say]")
+		saynn("[say=pc]Мы только начинаем, шлюшка.[/say]")
 
-		saynn("You give her milkers another smack and tug on the perky nips, causing her to start squirming under you and making quiet pleasure noises. Her cheeks blush harder and her cock peeks out more, she helplessly tries to break the handcuffs but doesn’t resist in any other way.")
+		saynn("Ты снова шлепаешь её по сиськам и дергаешь за упругие соски, отчего она начинает извиваться под тобой, издавая тихие звуки удовольствия. Её щеки краснеют еще сильнее, а член сильнее вылезает наружу; она беспомощно пытается разорвать наручники, но никак иначе не сопротивляется.")
 
-		saynn("You sneak a hand under her package and spread her needy cunt with two digits, you immediately start to feel arousal dripping down them.")
+		saynn("Ты просовываешь руку под её пах и раздвигаешь двумя пальцами её жаждущую щель, сразу же чувствуя, как по пальцам стекает возбуждение.")
 
-		saynn("[say=pc]Say that you’re a slut.[/say]")
+		saynn("[say=pc]Скажи, что ты шлюшка.[/say]")
 
-		saynn("[say=nova]I’m not! I’m not a slut.. ah..[/say]")
+		saynn("[say=nova]Не шлюшка! Я не шлюшка... ах...[/say]")
 
-		saynn("She moans quietly as you rub her slit. Then you prod the entering and your two digits easily slide in, thanks for her wetness. You wiggle them inside and find a little bump that you hammer at, Nova reacts by arching her back and trying to close her legs, pushing you out. You can see more of her canine cock after your actions and it visibly leaks precum.")
+		saynn("Она тихо стонет, пока ты трешь её щелочку. Затем ты прощупываешь вход, и твои два пальца легко входят внутрь благодаря её влажности. Ты шевелишь ими внутри и нащупываешь небольшой бугорок, по которому начинаешь интенсивно стучать; Нова реагирует на это прогибом спины и попыткой свести ноги, выталкивая тебя. После твоих действий её собачий член виден еще лучше, и из него заметно сочится предэякулят.")
 
-		saynn("[say=pc]Well, you leave me no choice.[/say]")
+		saynn("[say=pc]Ну, тогда у тебя нет выбора.[/say]")
 
-		saynn("You grab her stun baton again and turn it on, it sparks, you can hear it’s intimidating electrical hum and Nova is clearly intimidated already.")
+		saynn("Ты снова хватаешь электрошокер и включаешь его; он искрит, и ты слышишь его пугающий электрический гул — Нова уже явно напугана.")
 
-		saynn("[say=nova]Wait, no, don’t do it, please.[/say]")
+		saynn("[say=nova]Погоди, нет, не надо, пожалуйста![/say]")
 
-		saynn("[say=pc]Say it. Admit that you’re a needy slut that needs to be used daily.[/say]")
+		saynn("[say=pc]Скажи это. Признай, что ты — жадная сучка, которой нужно, чтобы её использовали каждый божий день.[/say]")
 
-		saynn("Nova bites her lip and ponders at your offer. But you don’t give her much time, you move the baton to her thighs and threaten to shock them, she whines and instinctively spreads her legs open for you, exposing her wet cunt again. She swallows audibly.")
+		saynn("Нова прикусывает губу, обдумывая твоё предложение. Но ты не даёшь ей много времени: ты подносишь дубинку к её бёдрам и угрожаешь ударить током. Она скулит и инстинктивно раздвигает ноги, снова подставляя тебе свою мокрую киску. Слышно, как она сглатывает.")
 
-		saynn("[say=nova]I’m.. not..[/say]")
+		saynn("[say=nova]Я... не...[/say]")
 
-		saynn("You see that it’s not working so you change your approach, you turn off the baton again and instead begin brushing its tip along the herm’s curves. You start on the inner side of her hips and slowly guide it towards her slit, she can already guess what you’re trying to do and begins to resist again.")
+		saynn("Видя, что это не работает, ты меняешь тактику: снова выключаешь дубинку и начинаешь водить её кончиком по изгибам герма. Ты начинаешь с внутренней стороны её бёдер и медленно ведёшь к щели; она уже догадывается, что ты задумал, и снова начинает сопротивляться.")
 
-		saynn("[say=pc]If you’re gonna squirm so much I will shock the fuck out of you~[/say]")
+		saynn("[say=pc]Если будешь так сильно дёргаться, я тебя просто током ебну~[/say]")
 
-		saynn("Nova whines but obeys your words and lets you play with her body, her cute pink cunt is wet and creates a wonderful scent in the room, her cock is almost fully hard.")
+		saynn("Нова скулит, но подчиняется, позволяя тебе играть с её телом. Её милая розовая киска мокрая и наполняет комнату чудесным ароматом, а её член почти полностью твёрдый.")
 
-		saynn("You reach her pussy and begin rubbing it with the bulky side of the baton, it quickly gets coated with Nova’s juices. You pin the herm into the floor with one arm and begin prodding at her lady parts, trying to insert the baton like a sextoy. Nova squirms and rattles her handcuffs but keeps her legs spread, she lets out a moan as you finally manage to stretch her pussy lips enough for the fat part of the baton to break in and rest just peacefully slides in. Nova looks both embarrassed and turned on.")
+		saynn("Ты добираешься до её пизды и начинаешь тереть её толстой стороной дубинки, которая быстро покрывается соками Новы. Одной рукой ты прижимаешь герма к полу и начинаешь ковыряться в её женских органах, пытаясь вставить дубинку, словно секс-игрушку. Нова извивается и гремит наручниками, но продолжает держать ноги раздвинутыми; она издаёт стон, когда тебе наконец удаётся растянуть её половые губы настолько, чтобы толстая часть дубинки вошла внутрь и мирно там устроилась. Нова выглядит одновременно смущённой и возбуждённой.")
 
-		saynn("[say=pc]Look at you, such a slut~[/say]")
+		saynn("[say=pc]Посмотри на себя, ну просто сучка~[/say]")
 
-		saynn("She wanted to say something but instead lets out another moan as you begin to move the baton back and forth inside her slit, her soft inside walls are wet enough for the toy to slide and stretch her out. You smirk watching her face expression, her husky eyes shine bright with desire. Her cock is fully out of its sheath and twitches while you fuck her with the improvised toy.")
+		saynn("Она хотела что-то сказать, но вместо этого лишь издала очередной стон, когда ты начал водить дубинкой туда-сюда внутри её щели; её мягкие внутренние стенки достаточно влажные, чтобы игрушка скользила и растягивала её. Ты ухмыляешься, наблюдая за выражением её лица: её затуманенные глаза сияют от желания. Её член полностью вышел из препуция и подергивается, пока ты трахаешь её этой импровизированной игрушкой.")
 
-		saynn("[say=nova]I’m not.. a slut.. ah~..[/say]")
+		saynn("[say=nova]Я не.. шлюха.. ах~..[/say]")
 
-		saynn("[say=pc]Then you’re a bad girl. And bad girls don’t get to cum.[/say]")
+		saynn("[say=pc]Значит, ты плохая девочка. А плохим девочкам кончать не положено.[/say]")
 
-		saynn("You only increase the pace after the girl’s reaction, it seems like the baton has stretched her pussy enough. The guard keeps moaning and biting her lips, she tries to close her legs but stops after you spread them again. You find her pleasure spot and begin to hammer at it, Nova arches her back and squirms heavily, the knot of her cock inflates, showing that she might be quite close.")
+		saynn("После реакции девушки ты только прибавляешь темп — похоже, дубинка растянула её киску как следует. Охранница продолжает стонать и кусать губы; она пытается свести ноги, но останавливается, когда ты снова раздвигаешь их. Ты находишь её точку удовольствия и начинаешь вколачивать в неё дубинку; Нова выгибает спину и сильно ерзает, узел её члена раздувается, показывая, что она уже совсем близко.")
 
-		saynn("[say=pc]Trying to sneakily get off without warning me, huh~? Say it.[/say]")
+		saynn("[say=pc]Пытаешься потихоньку кончить, не предупредив меня, да~? Ну же, скажи это.[/say]")
 
-		saynn("Nova moans loudly while you stuff her cunt, her pussy and cock both pulsate, ready to burst. The herm sounds desperate, she keeps leaking with pre and pussy juices but it’s just not quite enough to cum.")
+		saynn("Нова громко стонет, пока ты забиваешь ей в щель; её киска и член пульсируют, готовые вот-вот лопнуть. Её стоны звучат отчаянно; она продолжает течь предэякулятом и соками, но этого всё еще недостаточно, чтобы кончить.")
 
-		saynn("[say=nova]N-..n-no..[/say]")
+		saynn("[say=nova]Н-..н-нет..[/say]")
 
-		saynn("Seems like it's your choice.")
+		saynn("Похоже, выбор за тобой.")
 
-		addButton("Deny", "She had her chance", "deny")
-		addButton("Turn on baton", "Give her a shocking surprise, will be quite painful for her", "turn_on_baton")
-		addButton("Let her cum", "Let her get it", "let_her_cum")
+		addButton("Отказать", "Она упустила свой шанс", "deny")
+		addButton("Включить дубинку", "Устрой ей шокирующий сюрприз, ей будет довольно больно", "turn_on_baton")
+		addButton("Дай ей кончить", "Дай ей получить это", "let_her_cum")
 
 	if(state == "deny"):
-		saynn("Well, she had her chance, you continue to pound her cunt with the toy but as soon as you feel that she is truly close, that she is about to cum, you just suddenly stop. Nova immediately starts trashing against her restraints and you but you straddle her, pinning to the floor.")
+		saynn("Ну, шанс у неё был. Ты продолжаешь долбить её щель игрушкой, но как только чувствуешь, что она уже на пределе, что вот-вот кончит — ты резко останавливаешься. Нова тут же начинает метаться в путах и пытаться вырваться к тебе, но ты насаживаешься на неё сверху, прижимая к полу.")
 
-		saynn("[say=nova]NO! You can’t! Please! I really wanna cum.. pleaaase..[/say]")
+		saynn("[say=nova]НЕТ! Нельзя! Пожалуйста! Я так хочу кончить.. ну пожааалуйста..[/say]")
 
-		saynn("She keeps moaning and tries to hump you to get off but she is helpless under you, all she can do is desperately struggle while you watch her with a huge grin on your face.")
+		saynn("Она продолжает стонать и пытается сама двигаться тебе навстречу, чтобы кончить, но она беспомощна под тобой; всё, что ей остаётся — это отчаянно извиваться, пока ты наблюдаешь за ней с широкой ухмылкой на лице.")
 
-		saynn("[say=nova]I’m a slut! Yes, I’m a horny needy slut that wants to be used! Fuck me, breed me, just let me cum! Please! Mmmghh..[/say]")
+		saynn("[say=nova]Я шлюха! Да, я похотливая, жадная шлюха, которая хочет, чтобы её использовали! Трахни меня, осемени меня, просто дай мне кончить! Пожалуйста! Мммгхх..[/say]")
 
-		saynn("[say=pc]Too late..[/say]")
+		saynn("[say=pc]Слишком поздно..[/say]")
 
-		saynn("Nova keeps resisting and trying to break free but you keep her still. Then you carefully pull the coated stun baton out, stealing the last hope with it. The herm pants heavily and slowly cools down. You move the stun baton close to her maw and she eagerly begins to lick her own juices off, maybe trying to change your mind. But you just giggle at her while her cock gradually hides into its sheath.")
+		saynn("Нова продолжает сопротивляться, пытаясь вырваться, но ты удерживаешь её на месте. Затем ты осторожно вынимаешь покрытый смазкой электрошокер, лишая её последней надежды. Она тяжело дышит, и её возбуждение медленно спадает. Ты подносишь шокер к её пасти, и она с жадностью начинает слизывать собственные соки, возможно, пытаясь переубедить тебя. Но ты лишь хихикаешь, глядя на неё, пока её член постепенно прячется в препуций.")
 
-		saynn("[say=pc]That’s what you get~[/say]")
+		saynn("[say=pc]Так тебе и надо~[/say]")
 
-		saynn("[say=nova]Huff..[/say]")
+		saynn("[say=nova]Хафф..[/say]")
 
-		saynn("You get up and take a look at her, she made quite a wet mess still, the fur around her cunt is all wet, there is a small puddle of her juices underneath her, her sheath is covered with pre. You think what to do you decide to just leave her here.")
+		saynn("Ты поднимаешься и осматриваешь её: она устроила настоящий мокрый беспорядок. Мех вокруг её киски насквозь промок, под ней образовалась небольшая лужица из её соков, а её влагалище покрыто предэякулятом. Подумав, что делать, ты решаешь просто оставить её здесь.")
 
-		saynn("[say=nova]Hey! At least unhandcuff me! You will pay for this![/say]")
+		saynn("[say=nova]Эй! Хоть наручники сними! Ты за это заплатишь![/say]")
 
-		saynn("[say=pc]Mhm~[/say]")
+		saynn("[say=pc]Ммм~[/say]")
 
 		# (scene ends)
 
-		addButton("Continue", "Time to run", "endthescene")
+		addButton("Продолжить", "Пора валить", "endthescene")
 
 	if(state == "turn_on_baton"):
 		playAnimation(StageScene.SexStart, "defeated", {
@@ -123,48 +123,48 @@ func _run():
 			npcBodyState={exposedCrotch=true,hard=true},
 		})
 		
-		saynn("Since she was so uncooperative, you decide to teach her a lesson.")
+		saynn("Поскольку она была такой строптивой, ты решаешь преподать ей урок.")
 
-		saynn("[say=pc]What if I turn it on right now~? While it’s in your bratty cunt~?[/say]")
+		saynn("[say=pc]А что, если я включу его прямо сейчас~? Пока он внутри твоей капризной киски~?[/say]")
 
-		saynn("Nova’s pupils increase in size, she can’t stop making pleasure noises but she also starts to resist again, trying to get out of her desperate situation.")
+		saynn("Зрачки Новы расширяются, она не может перестать издавать стоны удовольствия, но при этом снова начинает сопротивляться, пытаясь выбраться из этой отчаянной ситуации.")
 
-		saynn("[say=nova]No, wait! I will say it! Hh-h..[/say]")
+		saynn("[say=nova]Нет, подожди! Я скажу! Хх-х..[/say]")
 
-		saynn("You shake your head and don’t stop fucking her with the stun baton, quickly pushing Nova to her climax. You see her arch back and let out a prolonged moan but as soon as you see her start cumming, you turn on the baton to its minimum setting. But even that was enough to send a powerful shock through her sensitive flesh, causing a huge reaction. Nova’s body betrays her, she lets out a loud painful whine, all her muscles tense at once, she tries to break the cuffs and shake you off, her tongue rolls out and her eyes pull up as her rock-hard cock sends a load after load of thick cum into the air, draining her balls fully and her pussy pulsates around the baton and squirts time after time. She was shocked only for a few seconds but it extends and enriches her climax by an order of magnitude. But after that she quickly gets exhausted, all her cum lands back on her, creating a huge mess in the process but she is too busy with other things to mind.")
+		saynn("Ты качаешь головой и не прекращаешь трахать её электрошоковой дубинкой, быстро доводя Нову до пика. Ты видишь, как она выгибается и издает протяжный стон, но как только она начинает кончать, ты переключаешь дубинку на минимальную мощность. Но даже этого хватило, чтобы пустить мощный разряд по её чувствительной плоти, вызвав бурную реакцию. Тело Новы предает её: она издает громкий болезненный скулеж, все её мышцы мгновенно напрягаются, она пытается вырваться из наручников и стряхнуть тебя, её язык вываливается, а глаза закатываются, пока её твердый как камень член выбрасывает порцию за порцией густой спермы в воздух, полностью опустошая яйца, а её киска пульсирует вокруг дубинки и раз за разом извергает смазку. Шок длился всего несколько секунд, но он многократно усилил и продлил её оргазм. Однако после этого она быстро выдыхается; вся её сперма и соки выливаются обратно на неё, создавая жуткий беспорядок, но она слишком занята другим, чтобы обращать на это внимание.")
 
-		saynn("[say=nova]F-fuck-k-k…[/say]")
+		saynn("[say=nova]Бл-л-лядь…[/say]")
 
-		saynn("Your little act discharges the baton so you gently pull it out and throw it to the side, it seems you didn’t fry her insides but it sure was hella painful. You stand up and take a look at the scene, an exhausted husky doesn’t even have enough strength to look at you, she just drools and weakly struggles against the restraints.")
+		saynn("Твой маленький перформанс разряжает дубинку, поэтому ты осторожно вынимаешь её и отбрасываешь в сторону; похоже, ты не поджарил ей внутренности, но было чертовски больно. Ты встаешь и осматриваешь сцену: измотанная хаски не находит в себе сил даже взглянуть на тебя, она просто пускает слюни и слабо брыкается в оковах.")
 
-		saynn("[say=pc]See you around~[/say]")
+		saynn("[say=pc]Еще увидимся~[/say]")
 
-		saynn("And with that, you just leave her there, used and naked. Hopefully staff will find her first rather than some inmate")
+		saynn("И на этом ты просто оставляешь её там — использованную и нагую. Надеешься, что её найдет персонал, а не какой-нибудь заключенный.")
 
 		# (scene ends)
 
 		
-		addButton("Continue", "Time to run", "endthescene")
+		addButton("Продолжить", "Пора валить", "endthescene")
 
 	if(state == "let_her_cum"):
-		saynn("You decide that you will let Nova get her release even though she was very unwilling, just cause you’re so nice and kind. You get a better hold on the baton and increase the pace to your max, fucking the herm with the toy so fast that her cunt starts to make wet sloppy noises. And Nova welcomes it, she sticks her tongue out and makes more hot husky noises.")
+		saynn("Ты решаешь, что позволишь Нове получить разрядку, хоть она и была крайне неохотна — просто потому, что ты такой добрый и милый. Ты крепче перехватываешь дубинку и прибавляешь темп до максимума, трахая сучку этой игрушкой так быстро, что её щелка начинает издавать влажные, хлюпающие звуки. И Нова принимает это: она высовывает язык и издает всё больше горячих, хриплых стонов.")
 
-		saynn("[say=nova]Y-yes.. please.. Don’t stop..[/say]")
+		saynn("[say=nova]Д-да.. пожалуйста.. Не останавливайся..[/say]")
 
-		saynn("It only takes a few more seconds before her throbbing cock suddenly explodes with cum. Wave after wave of the sticky stuff begins to erupt from her canine shaft, creating a mess in the process. Ecstatic feeling overtakes Nova’s body and mind, she squirms and shivers uncontrollably around the baton while moaning passionately, her cunt squirting with her female juices from too much overstimulation, hands trying to rip the handcuff’s chain apart.")
+		saynn("Проходит всего несколько секунд, и её пульсирующий член внезапно взрывается кончей. Волна за волной липкая жижа извергается из её собачьего ствола, разбрызгиваясь повсюду. Экстаз захватывает тело и разум Новы; она беспорядочно извивается и дрожит вокруг дубинки, страстно стоная, а её щелка брызжет женскими соками от чрезмерной стимуляции, пока руки пытаются разорвать цепь наручников.")
 
-		saynn("Nova is like for quite a bit, you help her ride her orgasm and then slowly pull out the improvised toy out of her stretched sensitive cunt and then lick it yourself. Nova is embarrassed but her slutty eyes show that she is also very satisfied. You stand up and take a look at the scene, Nova with all her privates exposed, covered with her own semen and with her stretched cunt drenched with pussy juices.")
+		saynn("Нове это явно нравится: ты помогаешь ей прожить оргазм, а затем медленно вынимаешь самодельную игрушку из её растянутой, чувствительной щелки и сам слизываешь всё с неё. Нова смущена, но её похотливые глазки выдают, что она тоже очень довольна. Ты встаешь и осматриваешь сцену: Нова с полностью обнаженными интимными зонами, покрытая её же спермой, а её растянутая щелка буквально пропитана соками.")
 
-		saynn("[say=pc]You’re still a slut~[/say]")
+		saynn("[say=pc]Ты всё еще та еще шлюшка~[/say]")
 
-		saynn("She huffs at you but as soon as you try to leave, she switches to begging.")
+		saynn("Она фыркает на тебя, но как только ты пытаешься уйти, она переходит к мольбам.")
 
-		saynn("[say=nova]Wait. You can’t leave me like this. What if someone finds me. Hey! Please. Ple-e-ease.[/say]")
+		saynn("[say=nova]Подожди. Ты не можешь оставить меня в таком виде. А вдруг кто-то меня найдет? Эй! Пожалуйста. По-о-ожалуйста![/say]")
 
-		saynn("You decide that it would be too dangerous for you to unlock her so you just throw the key from the handcuffs at her and quickly escape the scene.")
+		saynn("Ты решаешь, что отпирать наручники слишком опасно, поэтому просто швыряешь ключ ей в лицо и поспешно скрываешься с места событий.")
 
 		# (scene ends)
-		addButton("Continue", "Time to run", "endthescene")
+		addButton("Продолжить", "Пора валить", "endthescene")
 
 
 

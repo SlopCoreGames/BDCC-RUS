@@ -13,128 +13,128 @@ func _run():
 		addCharacter("socket")
 		playAnimation(StageScene.Duo, "stand", {npc="socket"})
 		
-		saynn("Socket shows you a list of upgrades that she can do to your cell.")
+		saynn("Розетка показывает список улучшений, которые она может провести в твоей камере.")
 		addButtonAt(14, "Back", "Enough shopping", "endthescene")
 		
 		var howManySlavesSpaces = getModule("NpcSlaveryModule").getSlavesSpace()
 		if(howManySlavesSpaces == 0):
-			sayn("[b]Cell expansion[/b]")
-			sayn("Allows you to keep a single person in your cell. Complete with a metal hook that you can leash them to.")
-			saynn("Cost: "+str(getModule("NpcSlaveryModule").getSlavesSpaceUpgradeCost())+" credits")
-			addButtonWithChecks("Cell expansion", "Pay for this upgrade", "first_expansion", [], [[ButtonChecks.HasCredits, getModule("NpcSlaveryModule").getSlavesSpaceUpgradeCost()]])
+			sayn("[b]Расширение камеры[/b]")
+			sayn("Позволяет держать в камере одного человека. Укомплектовано металлическим крюком, к которому можно пристегнуть рабыню на поводок.")
+			saynn("Цена: "+str(getModule("NpcSlaveryModule").getSlavesSpaceUpgradeCost())+" credits")
+			addButtonWithChecks("Расширение камеры", "Оплатить улучшение", "first_expansion", [], [[ButtonChecks.HasCredits, getModule("NpcSlaveryModule").getSlavesSpaceUpgradeCost()]])
 		else:
-			sayn("[b]Cell expansion[/b]")
-			sayn("Allows you to keep "+str(howManySlavesSpaces+1)+" slaves in your cell.")
-			saynn("Cost: "+str(getModule("NpcSlaveryModule").getSlavesSpaceUpgradeCost())+" credits")
-			addButtonWithChecks("Cell expansion", "Pay for this upgrade", "do_cell_expansion", [], [[ButtonChecks.HasCredits, getModule("NpcSlaveryModule").getSlavesSpaceUpgradeCost()]])
+			sayn("[b]Расширение камеры[/b]")
+			sayn("Позволяет держать в твоей камере "+str(howManySlavesSpaces+1)+" рабынь.")
+			saynn("Цена: "+str(getModule("NpcSlaveryModule").getSlavesSpaceUpgradeCost())+" credits")
+			addButtonWithChecks("Расширение камеры", "Оплатить улучшение", "do_cell_expansion", [], [[ButtonChecks.HasCredits, getModule("NpcSlaveryModule").getSlavesSpaceUpgradeCost()]])
 		var canHaveSlaves = (howManySlavesSpaces > 0)
 		
 		var hasSybian = getFlag("NpcSlaveryModule.hasSybian", false)
 		var sybianPrice = 25
-		sayn("[b]Sybian[/b]")
+		sayn("[b]Сибиан[/b]")
 		if(canHaveSlaves):
-			sayn("Install a sybian in your cell that you can use yourself or as a reward for your slaves.")
+			sayn("Установите сибиан в своей камере — вы сможете использовать её сами или давать в награду своим рабыням.")
 		else:
-			sayn("Install a sybian in your cell.")
-		saynn("Cost: "+((str(sybianPrice)+" credits") if !hasSybian else "Bought!")+"")
+			sayn("Установить сибиан в камере.")
+		saynn("Цена: "+((str(sybianPrice)+" credits") if !hasSybian else "Bought!")+"")
 		if(!hasSybian):
-			addButtonWithChecks("Sybian", "Pay to get a sybian installed in your cell", "pay_upgrade", ["NpcSlaveryModule.hasSybian", sybianPrice, "Sybian machine has been installed in your cell"], [[ButtonChecks.HasCredits, sybianPrice]])
+			addButtonWithChecks("Сибиан", "Оплатить установку сибиана в вашей камере", "pay_upgrade", ["NpcSlaveryModule.hasSybian", sybianPrice, "Sybian machine has been installed in your cell"], [[ButtonChecks.HasCredits, sybianPrice]])
 	
 		var hasHorse = getFlag("NpcSlaveryModule.hasWoodenHorse", false)
 		var horsePrice = 30
-		sayn("[b]Wooden horse[/b]")
+		sayn("[b]Деревянная лошадка[/b]")
 		if(canHaveSlaves):
-			sayn("Install a wooden horse torture device in your cell that you can use to punish your slaves.")
+			sayn("Установите в своей камере пыточный аппарат «деревянная лошадка», чтобы наказывать им своих рабынь.")
 		else:
-			sayn("Install a wooden horse torture device in your cell. For no particular reason.")
-		saynn("Cost: "+((str(horsePrice)+" credits") if !hasHorse else "Bought!")+"")
+			sayn("Установить «деревянную лошадку» в своей камере. Просто так, без особой причины.")
+		saynn("Цена: "+((str(horsePrice)+" credits") if !hasHorse else "Bought!")+"")
 		if(!hasHorse):
-			addButtonWithChecks("Wooden horse", "Pay to get a wooden horse installed in your cell", "pay_upgrade", ["NpcSlaveryModule.hasWoodenHorse", horsePrice, "Wooden horse has been installed in your cell"], [[ButtonChecks.HasCredits, horsePrice]])
+			addButtonWithChecks("Деревянная лошадь", "Оплатить установку «деревянной лошадки» в вашей камере", "pay_upgrade", ["NpcSlaveryModule.hasWoodenHorse", horsePrice, "Wooden horse has been installed in your cell"], [[ButtonChecks.HasCredits, horsePrice]])
 	
 	
 	if(state == "do_cell_expansion"):
-		saynn("You pay Socket the required amount of credits for the cell expansion upgrade.")
+		saynn("Вы платите Сокет необходимую сумму кредитов за расширение камеры.")
 		
-		saynn("She goes ahead and expands the wall of your cell, allowing you to store one more person in it if you so desire!")
+		saynn("Она приступает к расширению стены вашей камеры, позволяя вам при желании поселить в ней ещё одного человека!")
 		
-		saynn("The task takes her about an hour.")
+		saynn("На это у неё уходит около часа.")
 		
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	
 	if(state == "first_expansion"):
-		saynn("The first upgrade looks kinda interesting to you.")
+		saynn("Первое улучшение кажется тебе довольно любопытным.")
 		
-		saynn("[say=pc]Cell expansion?[/say]")
+		saynn("[say=pc]Расширение камеры?[/say]")
 		
-		saynn("Socket nods many times.")
+		saynn("Сокет несколько раз кивает.")
 		
-		saynn("[say=socket]Looking at the prison blueprint, all cells seem to have a big buffer behind them. It's all rock.. But you know, I can clear it out![/say]")
+		saynn("[say=socket]Глядя на чертежи тюрьмы, кажется, что за всеми камерами есть огромный буфер. Там сплошная порода... Но знаешь, я могу всё это расчистить![/say]")
 		
-		saynn("Interesting. Your cell is incredibly cramped currently.")
+		saynn("Интересно. Сейчас твоя камера невероятно тесная.")
 		
-		saynn("[say=pc]Does that upgrade come with an extra bed?[/say]")
+		saynn("[say=pc]А в это улучшение входит дополнительная кровать?[/say]")
 		
-		saynn("Socket looks at her datapad.. and then shakes her head.")
+		saynn("Сокет смотрит в свой датапад... а затем качает головой.")
 		
-		saynn("[say=socket]Nope! It only involves drilling through the asteroid and pushing the wall back a little.[/say]")
+		saynn("[say=socket]Не-а! Это всего лишь бурение астероида и небольшое отодвигание стены назад.[/say]")
 
-		saynn("Here is hope that she won't drill into open space..")
+		saynn("Остаётся надеяться, что она не пробурит дыру в открытый космос...")
 		
-		saynn("[say=socket]So? What do you say?[/say]")
+		saynn("[say=socket]Ну? Что скажешь?[/say]")
 		
-		saynn("Cost is "+str(getModule("NpcSlaveryModule").getSlavesSpaceUpgradeCost())+" credits.")
+		saynn("Стоимость: "+str(getModule("NpcSlaveryModule").getSlavesSpaceUpgradeCost())+" credits.")
 		
-		addButtonWithChecks("Agree", "Pay her the credits", "first_expansion_do_pay", [], [[ButtonChecks.HasCredits, getModule("NpcSlaveryModule").getSlavesSpaceUpgradeCost()]])
-		addButton("Never mind", "You changed your mind", "")
+		addButtonWithChecks("Согласиться", "Отдать ей кредиты", "first_expansion_do_pay", [], [[ButtonChecks.HasCredits, getModule("NpcSlaveryModule").getSlavesSpaceUpgradeCost()]])
+		addButton("Проехали", "Вы передумали", "")
 
 	if(state == "first_expansion_do_pay"):
 		aimCameraAndSetLocName(GM.pc.getCellLocation())
 		GM.pc.setLocation(GM.pc.getCellLocation())
 		
-		saynn("You nod and pay Socket the credits. As you do that, she whips out a giant industrial drill head that consists out of 3 rotating modules with plenty of 'teeth' on each.. Her eyes are burning brightly while she is holding it.")
+		saynn("Ты киваешь и платишь Сокет кредиты. Как только ты это делаешь, она выхватывает гигантское промышленное сверло, состоящее из трех вращающихся модулей с кучей «зубьев» на каждом. Её глаза ярко горят, пока она держит его в руках.")
 		
-		saynn("[say=socket]Yay. Let's go![/say]")
+		saynn("[say=socket]Ура! Погнали![/say]")
 		
-		saynn("You bring Socket to your cell. Huh, other engineers are already there, disassembling the back wall of your cell, revealing the rock behind. Then they help Socket assemble the giant drill.")
+		saynn("Ты приводишь Сокет в свою камеру. Хм, другие инженеры уже там — они разбирают заднюю стенку твоей камеры, обнажая скальную породу. Затем они помогают Сокет собрать гигантское сверло.")
 
-		saynn("[say=pc]Why do we have to use pickaxes if this exists?[/say]")
+		saynn("[say=pc]Зачем нам вообще кирки, если существует такая штука?[/say]")
 		
-		saynn("Socket finishes preparing the drill and then turns it on, making it dig into the rock with a loud growl.")
+		saynn("Сокет заканчивает подготовку сверла и включает его; оно с громким рыком вгрызается в скалу.")
 		
-		saynn("[say=socket]Who says we don't? But sometimes you need a softer touch! This baby can ruin your uranium deposits faster than a giant knotted cock can ruin a virgin pussy! Both will cause a huge explosion too![/say]")
+		saynn("[say=socket]Кто сказал, что не используем? Но иногда нужна более тонкая работа! Эта крошка может разнести твои месторождения урана быстрее, чем гигантский узловатый хер разнесет девственную киску! И то, и другое приведет к мощному взрыву![/say]")
 
-		saynn("Yeah, you can see how it basically just grinds any rock into dust. Any kind of resources would be lost with it.")
+		saynn("Да, сразу видно, как оно просто перемалывает любую породу в пыль. Любые ресурсы будут безвозвратно потеряны.")
 
-		saynn("After the drill has done its work, Socket and other engineers quickly assemble the reinforced wall of your cell again, turning it into a cozy metal box again.")
+		saynn("Когда дрель закончила свою работу, Сокет и другие инженеры быстро восстанавливают укрепленную стену твоей камеры, превращая её снова в уютную металлическую коробку.")
 
-		saynn("[say=socket]There you go. Have fun![/say]")
+		saynn("[say=socket]Ну вот и всё. Развлекайся![/say]")
 		
-		saynn("The engineers pack up the drill and transport it away. Now it's just you and Socket.")
+		saynn("Инженеры упаковывают дрель и уносят её. Теперь вы остались только вдвоем с Сокет.")
 		
-		saynn("[say=socket]Look what you can do now![/say]")
+		saynn("[say=socket]Посмотри, что теперь можно делать![/say]")
 		
-		addButton("Look", "See what happens next", "first_expansion_showchains")
+		addButton("Смотреть", "Смотреть, что будет дальше", "first_expansion_showchains")
 		
 	if(state == "first_expansion_showchains"):
 		playAnimation(StageScene.Duo, "stand", {npc="socket", npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
 		
-		saynn("Socket presents you a chain leash. She clicks one end to her clothing and another to the metal hook on the floor that was previously used as a fulcrum point for the drill.")
+		saynn("Сокет протягивает тебе цепь на поводке. Она пристегивает один конец к своей одежде, а другой — к металлическому крюку на полу, который раньше служил опорой для дрели.")
 
-		saynn("[say=socket]Tada! Isn't this fun? It's like I'm your personal fucktoy now![/say]")
+		saynn("[say=socket]Та-да! Ну разве не весело? Теперь я вроде как твоя личная секс-игрушка![/say]")
 		
-		saynn("She is kinda right.. You walk up to Socket and play with the chain.")
+		saynn("В чем-то она права... Ты подходишь к Сокет и начинаешь играть с цепью.")
 		
-		saynn("[say=pc]So I can keep you now?[/say]")
+		saynn("[say=pc]Значит, теперь ты можешь меня держать?[/say]")
 		
-		saynn("[say=socket]I have a lot to do, maybe some other time! But you can keep the leash if you want.[/say]")
+		saynn("[say=socket]У меня еще полно дел, может, как-нибудь в другой раз! Но если хочешь, можешь оставить поводок себе.[/say]")
 		
-		saynn("She hands you the leash and heads towards the exit.")
+		saynn("Она протягивает тебе поводок и направляется к выходу.")
 		
-		saynn("[say=socket]Take care![/say]")
+		saynn("[say=socket]Береги себя![/say]")
 		
-		saynn("Looks like now you can keep someone in your cell.")
+		saynn("Похоже, теперь ты можешь держать кого-то у себя в камере.")
 		
-		addButton("Continue", "See what happens next", "endthescenenosocket")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescenenosocket")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -4,10 +4,10 @@ func _init():
 	id = "PortalPantiesFleshlight"
 
 func getVisibleName():
-	return "Fleshlight"
+	return "Флешлайт"
 	
 func getDescription():
-	return "A sci-fi looking fleshlight that has buttons on it."
+	return "Флешлайт в научно-фантастическом стиле с кнопками на корпусе."
 
 func getPossibleActions():
 	return [

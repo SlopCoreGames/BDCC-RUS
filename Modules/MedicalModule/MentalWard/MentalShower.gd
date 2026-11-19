@@ -8,7 +8,7 @@ func _run():
 		addCharacter("eliza")
 		
 	if(state == ""):
-		saynn("Eliza enters your cell and crouches before you. She grabs a leash and tries to attach it to your collar.")
+		saynn("Элиза входит в твою камеру и опускается перед тобой на корточки. Она хватает поводок и пытается пристегнуть его к твоему ошейнику.")
 
 		saynn("[say=eliza]"+RNG.pick([
 			"Shower time~.",
@@ -16,18 +16,18 @@ func _run():
 			"Follow me to the shower.",
 		])+"[/say]")
 
-		addButton("Shower!", "Follow Eliza", "shower!")
-		addButton("Resist", "Who knows what she will do to you, you don’t need no shower. Behavior-", "resist")
+		addButton("Душ!", "Идти за Элизой", "shower!")
+		addButton("Сопротивляться", "Кто знает, что она с тобой сделает, так что душ тебе нахрен не сдался. Поведение—", "resist")
 
 	if(state == "resist"):
-		saynn("You growl softly and kick her away. Eliza recoils away and huffs.")
+		saynn("Ты тихо рычишь и отпихиваешь её ногой. Элиза отпрядывает и фыркает.")
 
-		saynn("[say=eliza]Fine, stay like that. See if I care.[/say]")
+		saynn("[say=eliza]Ладно, так и сиди. Посмотрим, насколько мне будет не плевать.[/say]")
 
-		saynn("Eliza leaves your cell and shuts the door.")
+		saynn("Элиза выходит из камеры и закрывает дверь.")
 
 		# (scene ends)
-		addButton("Continue", "Awww", "endthescene")
+		addButton("Продолжить", "Ооооу", "endthescene")
 		
 
 	if(state == "shower!"):
@@ -35,82 +35,82 @@ func _run():
 		playAnimation(StageScene.Solo, "walk")
 		setLocationName("Shower")
 		
-		saynn("She brings you to the shower room. Bland gray floor, tiled walls, a few rows of shower heads.")
+		saynn("Она приводит тебя в душевую. Безликий серый пол, плитка на стенах и несколько рядов душевых леек.")
 
-		saynn("[say=eliza]Can’t have you showering with the straitjacket so I will remove it, mhm?[/say]")
+		saynn("[say=eliza]В смирительной рубашке в душ не пустят, так что я её сниму, ладно?[/say]")
 
-		saynn("You stand still and wait for your arms to be freed. You quickly cover yourself.")
+		saynn("Ты стоишь неподвижно, ожидая, когда твои руки освободят. Ты поспешно прикрываешься.")
 
-		saynn("[say=eliza]There is nothing you can surprise me with~[/say]")
+		saynn("[say=eliza]Тебя уже нечем удивить~[/say]")
 
-		saynn("She puts the straitjacket away for now and turns one of the showers for you, the water seems pleasingly warm.")
+		saynn("Она откладывает смирительную рубашку в сторону и включает тебе один из душей; вода кажется приятно теплой.")
 
 		# (if bad behavior)
 		if(getModuleFlag("MedicalModule", "Mental_PCBehavior", 0.0) < 0.4):
 			if(getModuleFlag("MedicalModule", "Mental_PCBehavior", 0.0) < 0.2):
-				saynn("[say=eliza]Since you’re such a bratty test subject I will be looking at you to make sure you don’t cause any trouble.[/say]")
+				saynn("[say=eliza]Раз уж ты такой капризный подопытный, я буду приглядывать за тобой, чтобы ты не натворил дел.[/say]")
 			else:
-				saynn("[say=eliza]I don't trust you enough so I will be looking at you to make sure you don’t cause any trouble.[/say]")
-			addDisabledButton("Ask to look away", "You don't behave well enough to ask that")
+				saynn("[say=eliza]Я тебе не особо доверяю, так что буду смотреть на тебя во все глаза, чтобы ты не устроил беспорядок.[/say]")
+			addDisabledButton("Попросить отвернуться", "Ты ведешь себя недостаточно хорошо, чтобы просить о таком")
 		else:
-			addButton("Ask to look away", "You don’t want Eliza to watch you", "ask_to_look_away")
-		addButton("Be watched", "Eliza will be watching you taking a shower", "be_watched")
-		addButtonWithChecks("Show", "Give Eliza a little show", "show", [], [[ButtonChecks.SkillCheck, Skill.Exhibitionism, 2]])
+			addButton("Попросить отвернуться", "Ты не хочешь, чтобы Элиза наблюдала за тобой", "ask_to_look_away")
+		addButton("Позволить наблюдать", "Элиза будет наблюдать за тем, как ты принимаешь душ", "be_watched")
+		addButtonWithChecks("Показать", "Устроить Элизе небольшое шоу", "show", [], [[ButtonChecks.SkillCheck, Skill.Exhibitionism, 2]])
 
 	if(state == "ask_to_look_away"):
 		playAnimation(StageScene.Showering, "body", {pc="pc", bodyState={naked=true}})
 		
-		saynn("[say=pc]Can you not watch, please?[/say]")
+		saynn("[say=pc]Может, не будешь смотреть?[/say]")
 
-		saynn("[say=eliza]Sure, if you’re asking so nicely.[/say]")
+		saynn("[say=eliza]Конечно, раз уж ты так мило просишь.[/say]")
 
-		saynn("Eliza turns away and waits for you to be done. You step under the shower head and proceed to wash yourself. Hair, face, shoulders, {pc.breasts}, your {pc.masc} body. You quickly wash your privates too. It’s very refreshing.")
+		saynn("Элиза отворачивается и ждет, пока ты закончишь. Ты встаешь под душ и начинаешь мыться. Волосы, лицо, плечи, {pc.breasts}твое {pc.masc} тело. Ты также быстро обмываешь свои причиндалы. Это очень освежает.")
 
-		addButton("Steal keycard", "Try and pickpocket Eliza, this will be easier the better your behavior is. (Current chance: "+str(round(calculateStealChance()*10.0)/10.0)+"%)", "steal_keycard")
-		addButton("Clean inside", "Wash out anything you have inside your holes", "clean_inside")
-		addButton("Done", "You’re finished showering", "done")
+		addButton("Стибрить ключ-карту", "Попытаться обчистить карманы Элизы; чем лучше ты себя ведешь, тем выше шансы. (Текущий шанс: "+str(round(calculateStealChance()*10.0)/10.0)+"%)", "steal_keycard")
+		addButton("Помыться внутри", "Вымыть всё, что у тебя внутри дырок", "clean_inside")
+		addButton("Готово", "Ты закончил принимать душ", "done")
 		
 	if(state == "steal_keycard_failed"):
 		playAnimation(StageScene.Duo, "defeat", {npc="eliza"})
 		# (if failed)
 
-		saynn("You sneak up to the doctor and try to steal the keycard that she has on her belt.")
+		saynn("Вы подкрадываетесь к врачу и пытаетесь стащить ключ-карту, висящую у неё на поясе.")
 
-		saynn("But the moment you try to get a grasp on it she turns around and catches your hand. She doesn’t seem to be happy. Less than one second passes as she presses a button on her remote, sending a powerful shock impulse to your collar. You grab onto it and fall to your knees. Ow!")
+		saynn("Но как только вы пытаетесь её схватить, она оборачивается и перехватывает вашу руку. Вид у неё явно не радостный. Не проходит и секунды, как она нажимает кнопку на пульте, посылая мощный разряд тока через ваш ошейник. Вы хватаетесь за горло и падаете на колени. Ой!")
 
-		saynn("[say=eliza]That was a very bad idea, inmate.[/say]")
+		saynn("[say=eliza]Это была очень плохая идея, заключенная.[/say]")
 
-		saynn("Eliza pins you to the floor and forces a straitjacket back on you. She then leashes you and shoves you back into your cell so you can think about your behavior.")
+		saynn("Элиза прижимает вас к полу и силой натягивает смирительную рубашку. Затем она надевает на вас поводок и заталкивает обратно в камеру, чтобы вы могли хорошенько обдумать своё поведение.")
 
 		# (scene ends)
-		addButton("Continue", "Oww", "endthescene")
+		addButton("Продолжить", "Ой-ой!", "endthescene")
 
 		# (if succ)
 	if(state == "steal_keycard_succ"):
-		saynn("You sneak up to the doctor and try to steal the keycard that she has on her belt.")
+		saynn("Вы подкрадываетесь к врачу и пытаетесь стащить ключ-карту, висящую у неё на поясе.")
 
-		saynn("The sound of water helps against noise and your good behavior means Eliza isn’t paying as much attention as normally. You manage to snatch her keycard and hide it.. somewhere.")
+		saynn("Шум воды заглушает лишние звуки, а благодаря вашему «хорошему» поведению Элиза не так внимательна, как обычно. Вам удается выхватить её ключ-карту и спрятать её... где-то.")
 
-		addButton("Clean inside", "Wash out anything you have inside your holes", "clean_inside")
-		addButton("Done", "You’re finished showering", "done")
+		addButton("Помыться внутри", "Вымыть всё, что у тебя внутри дырок", "clean_inside")
+		addButton("Готово", "Ты закончил принимать душ", "done")
 
 	if(state == "clean_inside"):
 		playAnimation(StageScene.Showering, "crotch", {pc="pc", bodyState={naked=true}})
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("You spread your {pc.pussyStretch} pussy lips and wait if anything comes out. It all quickly goes down the drain. You then do the same with your butt. At least you don’t have to do this while Eliza is watching.")
+			saynn("Вы раздвигаете свои {pc.pussyStretch} губки и ждете, не выйдет ли чего. Всё быстро утекает в слив. Затем вы делаете то же самое со своей задницей. По крайней мере, вам не приходится делать это под присмотром Элизы.")
 
 		# (else)
 		else:
-			saynn("You spread your butt and wait if anything comes out from your {pc.analStretch}. It all quickly goes down the drain. At least you don’t have to do this while Eliza is watching.")
+			saynn("Вы раздвигаете задницу и ждете, не выйдет ли чего из вашей {pc.analStretch}. Всё быстро утекает в слив. По крайней мере, вам не приходится делать это под присмотром Элизы.")
 
-		addButton("Done", "You’re finished showering", "done")
+		addButton("Готово", "Ты закончил принимать душ", "done")
 
 	if(state == "done"):
-		saynn("You turn off the water, Eliza walks up to you and puts the straitjacket back on you. She then puts a leash on you and walks you back to your cell.")
+		saynn("Вы выключаете воду, подходит Элиза и снова надевает на вас смирительную рубашку. Затем она цепляет поводок и ведет вас обратно в камеру.")
 
 		# (scene finished)
-		addButton("Continue", "You feel fresh", "endthescene")
+		addButton("Продолжить", "Ты чувствуешь свежесть", "endthescene")
 		
 
 	if(state == "be_watched"):
@@ -118,75 +118,75 @@ func _run():
 
 #ACEOREGEXPAC - Experiments Shower has a few lines for being heavily pregnant
 		if(GM.pc.isHeavilyPregnant()):
-			saynn("You step under the shower head and proceed to wash yourself. Hair, face, shoulders, {pc.breasts}, your {pc.masc} body. You can’t cover yourself forever so Eliza catches a few glimpses of your privates.")
-			saynn("With how heavy and burdensome your pregnancy is, you have to really give yourself a stretch and rub down over your belly. It's fine, It's not like you can't do it, just takes longer, but Eliza's gaze does remain firmly on your strained midriff as you work.")
+			saynn("Ты встаешь под душевую лейку и начинаешь мыться. Волосы, лицо, плечи, {pc.breasts}, твое {pc.masc} тело. Ты не можешь прикрываться вечно, так что Элизе удается мельком увидеть твои интимные места.")
+			saynn("Из-за того, насколько тяжелым и обременительным стало твое чрево, тебе приходится хорошенько потянуться и размять живот. Все в порядке, дело не в том, что ты не можешь этого сделать, просто это занимает больше времени, но взгляд Элизы остается прикованным к твоему натянутому животу, пока ты возишься.")
 		else:
-			saynn("You step under the shower head and proceed to wash yourself. Hair, face, shoulders, {pc.breasts}, your {pc.masc} body. You can’t cover yourself forever so Eliza catches a few glimpses of your privates.")
+			saynn("Ты встаешь под душевую лейку и начинаешь мыться. Волосы, лицо, плечи, {pc.breasts}, твое {pc.masc} тело. Ты не можешь прикрываться вечно, так что Элизе удается мельком увидеть твои интимные места.")
 
-		addButton("Clean inside", "Wash out anything you have inside your holes", "clean_inside1")
-		addButton("Done", "You’re finished showering", "done1")
+		addButton("Помыться внутри", "Вымыть всё, что у тебя внутри дырок", "clean_inside1")
+		addButton("Готово", "Ты закончил принимать душ", "done1")
 
 	if(state == "clean_inside1"):
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("You spread your {pc.pussyStretch} pussy lips and wait if anything comes out. It all quickly goes down the drain. You then do the same with your butt. Eliza smirks watching you do that and it makes you blush.")
+			saynn("Ты раздвигаешь свои {pc.pussyStretch} губки киски и ждешь, не выйдет ли что-нибудь. Все быстро уходит в слив. Затем ты делаешь то же самое с задницей. Элиза ухмыляется, наблюдая за этим, отчего ты краснеешь.")
 
 		# (else)
 		else:
-			saynn("You spread your butt and wait if anything comes out from your {pc.analStretch}. It all quickly goes down the drain. Eliza smirks watching you do that and it makes you blush.")
+			saynn("Ты раздвигаешь задницу и ждешь, не выйдет ли что-нибудь из твоей {pc.analStretch}. Все быстро уходит в слив. Элиза ухмыляется, наблюдая за этим, отчего ты краснеешь.")
 
-		addButton("Done", "You’re finished showering", "done1")
+		addButton("Готово", "Ты закончил принимать душ", "done1")
 
 	if(state == "done1"):
-		saynn("You turn off the water, Eliza walks up to you and puts the straitjacket back on you. She then puts a leash on you and walks you back to your cell.")
+		saynn("Вы выключаете воду, подходит Элиза и снова надевает на вас смирительную рубашку. Затем она цепляет поводок и ведет вас обратно в камеру.")
 
 		# (scene end)
-		addButton("Continue", "You feel fresh", "endthescene")
+		addButton("Продолжить", "Ты чувствуешь свежесть", "endthescene")
 		
 #ACEPREGEXPAC - experiments shower lines for being heavily pregnant
 	if(state == "show"):
-		saynn("You notice Eliza staring and decide to do a little performance for her, you get under the shower head and start with slowly swaying your {pc.masc} hips to the sides. Your palms capture some water and then slide along your {pc.thick} body, going over your {pc.breasts} and then giving your butt a little smack. You notice Eliza raising her brow.")
+		saynn("Заметив пристальный взгляд Элизы, ты решаешь устроить для нее небольшое представление: ты встаешь под душ и начинаешь медленно покачивать {pc.masc} бедрами из стороны в сторону. Зачерпнув ладонями воду, ты проводишь ими по своему {pc.thick} телу, скользя по {pc.breasts}, а затем слегка шлепаешь себя по заднице. Ты замечаешь, как Элиза приподнимает бровь.")
 
 		# (if has pussy and cock)
 		if(GM.pc.hasVagina() && GM.pc.hasPenis()):
-			saynn("You do a bold move and bend forward, spreading your legs "+str("showing the underside of your heavy pregnancy between your legs" if GM.pc.isHeavilyPregnant() else "")+"and offering Eliza a good view on your {pc.analStretch} anal ring, {pc.pussyStretch} pussy and a {pc.cock}, the full package!")
+			saynn("Ты решаешься на смелый шаг и наклоняешься вперед, широко расставив ноги"+str("showing the underside of your heavy pregnancy between your legs" if GM.pc.isHeavilyPregnant() else "")+"и демонстрируя Элизе во всей красе твое {pc.analStretch} анусное кольцо, {pc.pussyStretch} киску и {pc.cock} — полный комплект!")
 
 		# (if has just pussy)
 		elif(GM.pc.hasVagina()):
-			saynn("You do a bold move and bend forward, spreading your legs "+str("showing the underside of your heavy pregnancy between your legs" if GM.pc.isHeavilyPregnant() else "")+"and offering Eliza a good view on your {pc.analStretch} anal ring and {pc.pussyStretch} pussy, all your girly bits!")
+			saynn("Ты решаешься на смелый шаг и наклоняешься вперед, широко расставив ноги"+str("showing the underside of your heavy pregnancy between your legs" if GM.pc.isHeavilyPregnant() else "")+"и демонстрируя Элизе во всей красе твое {pc.analStretch} анусное кольцо и {pc.pussyStretch} киску, все твои девчачьи местечки!")
 
 		# (if just cock)
 		elif(GM.pc.hasPenis()):
-			saynn("You do a bold move and bend forward, spreading your legs "+str("showing the underside of your heavy pregnancy between your legs" if GM.pc.isHeavilyPregnant() else "")+"and offering Eliza a good view on your {pc.analStretch} anal ring and a {pc.cock}, all your bits!")
+			saynn("Ты решаешься на смелый шаг и наклоняешься вперед, широко расставив ноги"+str("showing the underside of your heavy pregnancy between your legs" if GM.pc.isHeavilyPregnant() else "")+"и демонстрируя Элизе во всей красе твое {pc.analStretch} анусное кольцо и {pc.cock}, все твои запчасти!")
 
 		# (else)
 		else:
-			saynn("You do a bold move and bend forward, spreading your legs"+str("showing the underside of your heavy pregnancy between your legs" if GM.pc.isHeavilyPregnant() else "")+" and offering Eliza a good view on your {pc.analStretch} anal ring, all your privates!")
+			saynn("Ты решаешься на смелый шаг: наклоняешься вперед, широко расставляя ноги,"+str("showing the underside of your heavy pregnancy between your legs" if GM.pc.isHeavilyPregnant() else "")+"и демонстрируя Элизе во всей красе твое {pc.analStretch} анусное кольцо, все твои интимные места!")
 
-		saynn("Eliza seems to be quite shocked, you look behind and see her blushing. You let out a soft chuckle and sway your {pc.thick} butt more for her while you pretend to clean yourself, water drips down your back.")
+		saynn("Элиза кажется совершенно шокированной; ты оглядываешься и видишь, как она краснеет. Ты тихонько посмеиваешься и начинаешь сильнее покачивать своей {pc.thick} задницей перед ней, делая вид, что моешься, пока вода стекает по твоей спине.")
 
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("You even spread your pussy for her, just to stun her for longer and show that you’re not afraid to show off your body.")
+			saynn("Ты даже раздвигаешь киску перед ней, просто чтобы окончательно сбить её с толку и показать, что не боишься выставлять свое тело напоказ.")
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
 			if(GM.pc.isWearingChastityCage()):
-				saynn("You even rub your cage sneakily until your member is hard behind the chastity.")
+				saynn("Ты даже воровато потираешь свою клетку, пока твой член не встает колом прямо внутри целомудрия.")
 			else:
-				saynn("You even stroke yourself sneakily until your {pc.cock} is fully hard.")
+				saynn("Ты даже воровато ласкаешь себя, пока твой {pc.cock} не станет полностью твердым.")
 
-		saynn("[say=eliza]You certainly are quite something, I gotta say.[/say]")
+		saynn("[say=eliza]Должна сказать, ты та еще штучка![/say]")
 
-		saynn("You giggle and straighten your posture, just continuing showering.")
+		saynn("Ты хихикаешь и выпрямляешься, продолжая мыться.")
 
-		addButton("Done", "You’re finished showering", "done2")
+		addButton("Готово", "Ты закончил принимать душ", "done2")
 
 	if(state == "done2"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
-		saynn("You turn off the water, Eliza walks up to you and puts the straitjacket back on you. She then puts a leash on you and walks you back to your cell.")
+		saynn("Вы выключаете воду, подходит Элиза и снова надевает на вас смирительную рубашку. Затем она цепляет поводок и ведет вас обратно в камеру.")
 		
-		addButton("Continue", "You feel fresh", "endthescene")
+		addButton("Продолжить", "Ты чувствуешь свежесть", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "shower!"):

@@ -34,200 +34,200 @@ func _run():
 		anger = _tentacles.anger
 		if (eventKind == "fridge"):
 			if (anger <= 2):
-				saynn("The tentacles approach the fridge. They stare at it for a bit.. before suddenly smacking it! The hit doesn't really leave any damage, the involved tentacle just bounces off.")
+				saynn("Щупальца приближаются к холодильнику. Они замирают перед ним на мгновение... а затем внезапно хлопают по нему! Удар почти не наносит повреждений, щупальце просто отскакивает от поверхности.")
 
-				saynn("After some time, they try to slap the fridge again.")
+				saynn("Спустя некоторое время они снова пытаются шлепнуть холодильник.")
 
 			elif (anger <= 4):
-				saynn("The tentacles approach the fridge. They tug on the handle a bit.. and get angry after failing to open the door. And so the tendrils start smacking the thing!")
+				saynn("Щупальца подползают к холодильнику. Они немного дергают за ручку... а когда дверь не поддается, они начинают злиться. И тогда отростки принимаются лупить по этой штуковине!")
 
 			elif (anger <= 6):
-				saynn("The tentacles approach the fridge and don't hesitate, already striking it! The heavy object doesn't budge much.. but it does receive new dents. Somehow, it is still humming.")
+				saynn("Щупальца подбираются к холодильнику и, не колеблясь, сразу начинают по нему колотить! Тяжелый предмет почти не шелохнулся... но на нем появились новые вмятины. Каким-то образом он всё еще продолжает гудеть.")
 
-				saynn("Clearly, the tendrils wanna let their anger out on it.")
+				saynn("Очевидно, отростки хотят выплеснуть на него свою ярость.")
 
 			elif (anger <= 8):
-				saynn("The tentacles approach the fridge and start letting their anger out on it. They furiously smash the heavy thing, making the metal groan from the many dents.")
+				saynn("Щупальца подползают к холодильнику и начинают вымещать на нем свой гнев. Они яростно лупят по тяжелой махине, отчего металл стонет под градом вмятин.")
 
 			else:
-				saynn("The tentacles dart toward the fridge like furious snakes and begin to strike it. Within seconds, they're already battering it from every angle, the sounds echoing off the walls. The fridge rocks on its base..")
+				saynn("Щупальца бросаются к холодильнику, словно разъяренные змеи, и начинают наносить удары. Считанные секунды — и они уже колошматили его со всех сторон, а звуки ударов эхом разлетаются по стенам. Холодильник шатается на своем основании...")
 
 		elif (eventKind == "door"):
 			if (anger <= 2):
-				saynn("The tentacles stop near the reinforced door. They seem to be interested in it. One of the tendrils extends and taps it gently. When nothing happens, it taps it again.. a little harder. The door doesn't react.")
+				saynn("Щупальца замирают возле усиленной двери. Похоже, она их заинтересовала. Один из отростков вытягивается и осторожно постукивает по ней. Когда ничего не происходит, он стучит снова... чуть сильнее. Дверь никак не реагирует.")
 
 			elif (anger <= 4):
-				saynn("The tentacles notice the reinforced door and approach it. A few of them press against the cold surface and start exploring it, probably looking for any handles or buttons.")
+				saynn("Щупальца замечают усиленную дверь и приближаются к ней. Несколько штук прижимаются к холодной поверхности, исследуя её — вероятно, в поисках ручек или кнопок.")
 
-				saynn("When they don't find anything, they just start pushing on the door.. but it doesn't budge. They try striking it.. which makes a loud noise.. but leaves no marks.")
+				saynn("Когда они ничего не находят, они просто начинают давить на дверь... но та не поддается. Они пробуют бить по ней... раздается громкий шум... но следов не остается.")
 
 			elif (anger <= 6):
-				saynn("The tentacles throw themselves at the door, looking irritated. They start striking it.. thump.. thump.. thump. Each hit makes a sound but leaves no obvious marks. Above the tendrils, there is a security camera that's watching them.. the tentacles try to hit it too but can't quite reach it.")
+				saynn("Раздраженные щупальца бросаются на дверь. Они начинают наносить удары... бум... бум... бум. Каждый удар сопровождается звуком, но не оставляет явных следов. Над отростками висит камера наблюдения, следящая за ними... щупальца пытаются достать и её, но им никак не удается до неё дотянуться.")
 
-				saynn("Clearly, the tendrils wanna let their anger out on something.")
+				saynn("Очевидно, этим щупальцам просто нужно на ком-то сорвать злость.")
 
 			elif (anger <= 8):
-				saynn("The tentacles approach the reinforced door and start letting their anger out on it. They furiously smash it.. but the metal doesn't dent, absorbing every hit. One tentacles glances up at the security camera and lashes out at it, actually smacking it.")
+				saynn("Щупальца приближаются к усиленной двери и начинают выплескивать на неё свой гнев. Они яростно лупят по ней... но металл не прогибается, поглощая каждый удар. Одно из щупалец задирает взгляд на камеру наблюдения и хлещет по ней, попадая прямо в цель.")
 
-				saynn("They don't seem to be happy at all.")
+				saynn("Похоже, они совсем не в духе.")
 
 			else:
-				saynn("The tentacles approach the reinforced door.. and start attacking it with everything they have. The tendrils whip against the metal surface again and again..")
+				saynn("Щупальца подходят к усиленной двери... и начинают атаковать её изо всех сил. Отростки раз за разом хлещут по металлической поверхности...")
 
-		addButton("Watch", "Just watch them do it", "doWatch")
-		addButton("Stop", "Stop them from doing this", "doStop")
-		addButton("Encourage", "Tell them that they're doing a good job!", "doEncourage")
+		addButton("Смотреть", "Просто наблюдать за ними", "doWatch")
+		addButton("Стой", "Остановить их", "doStop")
+		addButton("Поощрить", "Сказать им, что они отлично справляются!", "doEncourage")
 	if(state == "doWatch"):
 		if (didEncourage):
-			saynn("You decide to encourage the tentacles. Getting them as mad as they can be is what you want.")
+			saynn("Вы решаете подбодрить щупальца. Ваша цель — разозлить их до предела.")
 
-			saynn("[say=pc]Yeah, fuck it up. Let it all out.[/say]")
+			saynn("[say=pc]Да, разнеси его к чертям! Выплесни всё![/say]")
 
 		else:
-			saynn("You decide to just watch and not interfere.")
+			saynn("Вы решаете просто наблюдать и не вмешиваться.")
 
 		if (eventKind == "fridge"):
 			if (anger <= 2):
-				saynn("The tentacles give the fridge a few more hits. But they don't do much damage.. Still, it got them angrier.")
+				saynn("Тентакли наносят холодильнику еще несколько ударов. Но урона немного... Тем не менее, это только сильнее их разозлило.")
 
 			elif (anger <= 4):
-				saynn("The tentacles surround the fridge, their tips vibrating from anger. One of them strikes.. thump.. Then another.. thump.. They're not exactly coordinated about it.. but they're trying. Each hit leaves a small dent.")
+				saynn("Тентакли облепили холодильник, их кончики вибрируют от ярости. Один наносит удар... глухой звук... Затем другой... глухой звук... Они действуют не особо слаженно... но стараются. Каждый удар оставляет небольшую вмятину.")
 
-				saynn("They keep at it for some time before getting tired and giving up. Still, they got a great outlet for their anger.")
+				saynn("Они продолжают в том же духе какое-то время, пока не устают и не сдаются. Тем не менее, они отлично выплеснули свой гнев.")
 
 			elif (anger <= 6):
-				saynn("A tentacle winds up and then delivers a solid crack against the fridge door. A visible dent appears. The tentacle seems surprised.. and then pleased. The others join in, their hits growing stronger.")
+				saynn("Один из тентаклей замахивается и с силой бьет по дверце холодильника. Появляется отчетливая вмятина. Тентакль кажется удивленным... а затем довольно довольным. Остальные присоединяются, и их удары становятся всё сильнее.")
 
-				saynn("By the end of it.. the fridge got quite a few extra dents on it. But it still seems to be working.")
+				saynn("К концу этой заварушки... на холодильнике появилось немало лишних вмятин. Но, кажется, он всё еще работает.")
 
 			elif (anger <= 8):
-				saynn("The tentacles slam the fridge.. again and again.. With force that's enough to make it move. One of the hits slam the fridge's door open.. another one soon hits the freezer from the inside.")
+				saynn("Тентакли лупят по холодильнику... снова и снова... С такой силой, что он начинает двигаться. Один из ударов с грохотом распахивает дверцу... а следующий тут же бьет по морозилке изнутри.")
 
-				saynn("After they're done, you come in and fix the damage.. closing the door and putting all the food back into it. Luckily, they didn't destroy everything..")
+				saynn("Когда они заканчивают, вы заходите и исправляете ущерб... закрываете дверцу и раскладываете всю еду обратно. К счастью, они не разнесли всё в щепки...")
 
 			else:
-				saynn("The tentacles suddenly slam the fridge so hard that it gets toppled to the side, producing a loud boom in the process. The furious tendrils continue to let their rage on it, hitting the metal object again and again, leaving new dents and breaking off anything that can be broken off.. like the handles.")
+				saynn("Тентакли внезапно так сильно бьют по холодильнику, что он опрокидывается на бок с оглушительным грохотом. Яростные отростки продолжают изливать на него свою ярость, раз за разом вбиваясь в металлический корпус, оставляя новые вмятины и отламывая всё, что только можно... например, ручки.")
 
-				saynn("After they're done letting their anger out, they just whip it one last time and quickly slither off, smashing your bed too while they're at it.")
+				saynn("Выплеснув весь гнев, они лишь в последний раз хлестнут по нему и быстро уползут, попутно разнеся еще и твою кровать.")
 
-				saynn("You approach the fridge and get it standing again. It might not be able to cool very well anymore.. so hopefully you won't have to stay here for long.")
+				saynn("Ты подходишь к холодильнику и ставишь его на место. Возможно, он уже не будет так хорошо охлаждать... так что, надеюсь, тебе не придется задерживаться здесь надолго.")
 
 				if (anger >= 10):
-					saynn("The tentacles have gotten extremely mean and angry by now. Hitting fridges is clearly not enough for them anymore. Maybe you will be able to direct their rage to the bio-lab itself..")
+					saynn("К этому моменту щупальца стали невероятно злыми и разъяренными. Удары по холодильникам им явно уже мало. Может, тебе удастся направить их ярость на саму биолабораторию...")
 
 		elif (eventKind == "door"):
 			if (anger <= 2):
-				saynn("The tentacles give the door a few more taps. They try hitting it harder.. but nothing happens. After a moment, they seem to lose interest and slither away, looking quite frustrated.")
+				saynn("Щупальца еще несколько раз постучат по двери. Они пытаются ударить сильнее... но всё без толку. Спустя мгновение они, кажется, теряют интерес и уползают, выглядя весьма разочарованными.")
 
 			elif (anger <= 4):
-				saynn("The tentacles continue to strike the door, sending loud metal bangs to echo around the cell. But the door itself doesn't get damaged in any way.. its armor seems to be too thick.")
+				saynn("Щупальца продолжают лупить по двери, и громкий металлический грохот эхом разносится по камере. Но сама дверь никак не повреждается... её броня кажется слишком толстой.")
 
-				saynn("They keep at it for some time before getting tired and giving up. Still, they got a great outlet for their anger.")
+				saynn("Они продолжают в том же духе какое-то время, пока не устают и не сдаются. Тем не менее, они отлично выплеснули свой гнев.")
 
 			elif (anger <= 6):
-				saynn("The tentacles start delivering a few solid cracks against the reinforced surface.. nothing.. not even a scratch. The monster tries again, even harder this time. Still nothing.")
+				saynn("Щупальца начинают наносить мощные удары по укрепленной поверхности... но ничего... ни единой царапины. Монстр пробует снова, на этот раз еще сильнее. Всё равно безрезультатно.")
 
-				saynn("The lack of any damage really makes the tentacles mad. They slam the door once more and then just slither away.")
+				saynn("Отсутствие каких-либо повреждений по-настоящему бесит щупальца. Они еще раз с силой бьют в дверь и просто уползают прочь.")
 
 			elif (anger <= 8):
-				saynn("The tentacles prepare.. and then slam the door with full force! This kind of impact would have destroyed anything else.. but it only left a small scratch on the metal. Still, it's enough to fuel the tentacles' rage. They throw themselves at the door again, trying to break through.. fruitlessly.")
+				saynn("Щупальца готовятся... и затем с размаху бьют в дверь изо всех сил! Такой удар разнес бы что угодно другое... но на металле осталась лишь небольшая царапина. Тем не менее, этого достаточно, чтобы разжечь ярость щупалец. Они снова бросаются на дверь, пытаясь проломить её... тщетно.")
 
-				saynn("You look around and see a guard watching through one of the windows. He sees your monster trying to break the door.. but doesn't do anything about it. Maybe he knows that it's indestructible..")
+				saynn("Ты оглядываешься и замечаешь охранника, наблюдающего через одно из окон. Он видит, как твое чудовище пытается выломать дверь... но ничего не предпринимает. Может, он знает, что она практически неуязвима...")
 
-				saynn("Eventually, the tentacles give up and slither away.")
+				saynn("В конце концов, щупальца сдаются и уползают прочь.")
 
 			else:
-				saynn("The tentacles pull back.. and then slam the door so hard that the whole cell shakes. Dust rains from the ceiling.. all of the furniture moving slightly.")
+				saynn("Щупальца отпрянули... а затем так сильно ударили в дверь, что вся камера содрогнулась. С потолка посыпалась пыль, а вся мебель слегка подпрыгнула.")
 
-				saynn("This impact.. does actually leave a small dent in the metal. And so the tentacles continue putting their full force into each hit, striking the door again and again.. leaving scratches and dents all over it.")
+				saynn("Этот удар... действительно оставил небольшую вмятину на металле. И тогда щупальца начинают вкладывать всю свою мощь в каждый последующий удар, раз за разом долбя в дверь... оставляя на ней царапины и вмятины.")
 
-				saynn("Still.. at this rate.. this will probably take years. You gotta do something else.")
+				saynn("И всё же... при таком темпе это может занять годы. Тебе нужно придумать что-то другое.")
 
 				if (anger >= 10):
-					saynn("The tentacles have gotten extremely mean and angry by now. Hitting the door is clearly not enough for them anymore. Maybe you will be able to use their rage somehow..")
+					saynn("К этому моменту щупальца стали невероятно злыми и разъяренными. Обычных ударов в дверь им уже явно мало. Возможно, тебе удастся как-то использовать их ярость...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "doStop"):
 		if (anger <= 1):
-			saynn("Before they can land another hit, you step between them and the object.")
+			saynn("Прежде чем они успевают нанести следующий удар, ты вклиниваешься между ними и дверью.")
 
-			saynn("[say=pc]Hey. Chill. No reason to do this.[/say]")
+			saynn("[say=pc]Эй. Остыньте. Нет причин так надрываться.[/say]")
 
-			saynn("The tips droop immediately, looking almost ashamed. They make a sad little gesture.")
+			saynn("Их кончики тут же поникли, выглядя почти стыдливо. Они делают печальный, едва заметный жест.")
 
-			saynn("[say=pc]This isn't the way. Let's find another outlet.[/say]")
+			saynn("[say=pc]Это не выход. Давайте найдем другой способ выплеснуть энергию.[/say]")
 
 			if (_tentacles.mind <= 4):
-				saynn("They might not exactly understand you.. but they can feel your tone. The tentacles give up and slither away.")
+				saynn("Они могут не понимать тебя до конца... но они чувствуют твой тон. Щупальца сдаются и уползают прочь.")
 
 			else:
-				saynn("The tentacles seem to understand you perfectly. They accept your words and just slither away.")
+				saynn("Кажется, щупальца понимают тебя идеально. Они принимают твои слова и просто уползают.")
 
 				_tentacles.talk("We understand..")
 		elif (anger <= 2):
-			saynn("Before they can land another hit, you get in the way and prevent them.")
+			saynn("Прежде чем они успевают нанести следующий удар, ты встаешь на пути и преграждаешь им дорогу.")
 
-			saynn("[say=pc]Save your strength. Really.[/say]")
+			saynn("[say=pc]Прибереги силы. Серьезно.[/say]")
 
-			saynn("They look at you.. and then at the object behind you..")
+			saynn("Они смотрят на тебя... а затем на предмет у тебя за спиной...")
 
-			saynn("[say=pc]I don't want you to be mean. So you better stop.[/say]")
+			saynn("[say=pc]Не хочу, чтобы вы вредничали. Так что лучше остановитесь.[/say]")
 
 			if (_tentacles.mind <= 4):
-				saynn("They might not exactly understand you.. but they can feel your tone. The tentacles give up and slither away.")
+				saynn("Они могут не понимать тебя до конца... но они чувствуют твой тон. Щупальца сдаются и уползают прочь.")
 
 			else:
-				saynn("The tentacles seem to understand you perfectly. They accept your words and just slither away.")
+				saynn("Кажется, щупальца понимают тебя идеально. Они принимают твои слова и просто уползают.")
 
 				_tentacles.talk("We understand..")
 		elif (anger <= 4):
-			saynn("You grab the most aggressive tendril mid-swing.")
+			saynn("Ты перехватываешь самый агрессивный отросток прямо в размахе.")
 
-			saynn("[say=pc]Enough.[/say]")
+			saynn("[say=pc]Достаточно.[/say]")
 
-			saynn("It freezes. The others pause too, just glaring at you now.")
+			saynn("Он замирает. Остальные тоже замирают, теперь просто сверля тебя взглядом.")
 
-			saynn("[say=pc]You're wasting energy. Save it for something that matters.[/say]")
+			saynn("[say=pc]Ты тратишь энергию впустую. Прибереги её для чего-то действительно важного.[/say]")
 
-			saynn("They reluctantly withdraw.. but you can just feel frustration spreading through their tendrils. It looks like they want an outlet.. any kind of outlet.")
+			saynn("Они неохотно отстраняются... но ты кожей чувствуешь, как по их щупальцам разливается разочарование. Похоже, им нужна разрядка... любая разрядка.")
 
 		elif (anger <= 7):
-			saynn("You have to physically insert yourself between the object and the angry tentacles.. which means.. taking a glancing blow in the process. It hurts.")
+			saynn("Тебе приходится буквально вклиниваться между объектом и разъяренными щупальцами... а это значит... получить случайный удар в процессе. Это больно.")
 
-			saynn("[say=pc]STOP.[/say]")
+			saynn("[say=pc]СТОЙТЕ![/say]")
 
-			saynn("The tentacles freeze instantly.")
+			saynn("Щупальца мгновенно замирают.")
 
-			saynn("[say=pc]This isn't who we are. Calm the fuck down.[/say]")
+			saynn("[say=pc]Мы не такие. Успокойтесь, блядь![/say]")
 
-			saynn("The monster pulls its tentacles away.. reluctantly. They're still vibrating with barely contained rage.")
+			saynn("Монстр неохотно убирает свои щупальца... но они всё еще вибрируют от едва сдерживаемой ярости.")
 
-			saynn("[say=pc]Breathe. Focus. Enough of this. We will escape. But this won't help.[/say]")
+			saynn("[say=pc]Дыши. Сосредоточься. Хватит уже. Мы выберемся. Но это не поможет.[/say]")
 
-			saynn("It takes visible effort from them.. but their anger slowly begins to fade. Eventually, they give up and just slither away.")
+			saynn("Им это дается заметно тяжело... но их гнев постепенно начинает утихать. В конце концов, они сдаются и просто уползают прочь.")
 
 		else:
-			saynn("You don't even try to physically stop them.. you'd get crushed as well. Instead, you shout at full volume..")
+			saynn("Ты даже не пытаешься остановить их физически... тебя просто раздавит. Вместо этого ты орешь во всю глотку...")
 
-			saynn("[say=pc]STOP IT. NOW.[/say]")
+			saynn("[say=pc]ХВАТИТ. ЖИВО.[/say]")
 
-			saynn("The tentacles freeze mid-swing, one of them an inch from their target. They turn to you, vibrating with barely contained rage.")
+			saynn("Тентакли замирают на полувзмахе, один из них застывает всего в паре сантиметров от цели. Они поворачиваются к тебе, вибрируя от едва сдерживаемой ярости.")
 
-			saynn("You meet their furious glare. Slowly, carefully, you hold up your empty hands.")
+			saynn("Ты встречаешь их яростный взгляд. Медленно и осторожно ты поднимаешь пустые ладони.")
 
-			saynn("[say=pc]I'm not your enemy.[/say]")
+			saynn("[say=pc]Я не твой враг.[/say]")
 
-			saynn("The rage makes them suddenly whip at your leg. It hurts. But you don't do anything back. You just take the hit and continue holding your hands up.")
+			saynn("От ярости они внезапно хлестят тебя по ноге. Это больно. Но ты не отвечаешь ударом на удар. Ты просто принимаешь удар и продолжаешь держать руки поднятыми.")
 
-			saynn("[say=pc]We will escape. But not like this.[/say]")
+			saynn("[say=pc]Мы сбежим. Но не таким образом.[/say]")
 
-			saynn("They whip your body.. ow.. You grunt and recoil back.. but keep surrendering.")
+			saynn("Они хлещут тебя по телу... ой... Ты кряхтишь и отпрядываешь назад... но продолжаешь демонстрировать покорность.")
 
-			saynn("[say=pc]If you kill me.. then you will be screwed for sure.[/say]")
+			saynn("[say=pc]Если ты убьешь меня... тогда тебе точно настанет пиздец.[/say]")
 
-			saynn("It takes visible effort from them.. but their anger slowly begins to fade. Eventually, they give up and just slither away.")
+			saynn("Им это дается заметно тяжело... но их гнев постепенно начинает утихать. В конце концов, они сдаются и просто уползают прочь.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	var _tentacles:PlayerSlaveryTentacles = GM.main.PS

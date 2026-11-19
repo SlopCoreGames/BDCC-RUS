@@ -29,174 +29,174 @@ func _run():
 		if(!GM.main.getModuleFlag("MedicalModule", "Nursery_Introduced")):
 			GM.main.setModuleFlag("MedicalModule", "Nursery_Introduced", true)
 			
-#			saynn("You approach the nurse and try to get her attention. She drags her gaze away from the screen and looks at you.")
+#			saynn("Вы подходите к медсестре, пытаясь привлечь её внимание. Она отрывает взгляд от экрана и смотрит на вас.")
 			
-			saynn("You wander over to the nurse’s desk, the little name placard says her name is ’Minuette’.")
+			saynn("Вы подходите к столу медсестры; на маленькой именной табличке написано «Минетт».")
 
-			saynn("[say=pc]What’s this room for?[/say]")
+			saynn("[say=pc]Для чего эта комната?[/say]")
 
-			saynn("The nurse barely looks up from her work on her reception computer.")
-			saynn("[say=nurse]This is a nursery, inmate. A place for the prison’s mothers.[/say]")
-			saynn("It’s only then the nurse decides to look you over. Making brief eye contact.")
+			saynn("Медсестра едва отрывается от работы за приёмным компьютером.")
+			saynn("[say=nurse]Это детская, заключенная. Место для матерей из числа твоих сокамерниц.[/say]")
+			saynn("Только тогда медсестра решает вас осмотреть, на мгновение встретившись с вами взглядом.")
 
 			if(GM.pc.isHeavilyPregnant()):
-				saynn("She then eyes you out and notices your pregnant belly.")
-				saynn("[say=nurse]Yeah, you’ll need to come here soon enough.[/say]")
+				saynn("Затем она окидывает вас оценивающим взглядом и замечает ваш беременный живот.")
+				saynn("[say=nurse]Да, тебе скоро тоже придется сюда приходить.[/say]")
 				if(GM.pc.getInmateType() == InmateType.HighSec):
-					saynn("[say=nurse]And, please do me a favor and don’t smash the place like the other Red Block inmates. Please and thank you.[/say]")
+					saynn("[say=nurse]И, пожалуйста, сделай мне одолжение: не разгроми здесь всё, как это делают другие зэчки из Красного блока. Пожалуйста, и заранее спасибо.[/say]")
 			elif(GM.pc.isVisiblyPregnant()):
-				saynn("She then eyes you out and notices your pregnant belly.")
+				saynn("Затем она окидывает вас оценивающим взглядом и замечает ваш беременный живот.")
 				
-				saynn("[say=nurse]You’re too late for birth control and you’re too early to deliver. You’ll need to see me sometime later.[/say]")
+				saynn("[say=nurse]Для контрацепции ты уже опоздала, а для родов еще слишком рано. Загляни ко мне попозже.[/say]")
 				if(GM.pc.getInmateType() == InmateType.HighSec):
-					saynn("[say=nurse]And, please do me a favor and don’t smash the place like the other Red Block inmates. Please and thank you.[/say]")
+					saynn("[say=nurse]И, пожалуйста, сделай мне одолжение: не разгроми здесь всё, как это делают другие зэчки из Красного блока. Пожалуйста, и заранее спасибо.[/say]")
 
 			if(GM.pc.isReadyToGiveBirth()):
-				saynn("She then eyes you out and notices your pregnant belly.")
-				saynn("[say=nurse]You look ready to drop already, if you wanna get that over with just let me know.[/say]")
+				saynn("Затем она окидывает вас оценивающим взглядом и замечает ваш беременный живот.")
+				saynn("[say=nurse]Выглядишь так, будто вот-вот родишь. Если хочешь поскорее с этим покончить — только скажи.[/say]")
 				if(GM.pc.getInmateType() == InmateType.HighSec):
-					saynn("[say=nurse]And, please do me a favor and don’t smash the place like the other Red Block inmates. Please and thank you.[/say]")
-			saynn("Well then. You look around. It looks more like a lobby, a few benches are placed near the white walls. You notice a few pictures there and there, all of them clearly drawn by someone young. There are two other doors, apart from the one that you walked in through.")
+					saynn("[say=nurse]И, пожалуйста, сделай мне одолжение: не разгроми здесь всё, как это делают другие зэчки из Красного блока. Пожалуйста, и заранее спасибо.[/say]")
+			saynn("Ну что ж. Ты оглядываешься по сторонам. Это место больше похоже на вестибюль: у белых стен стоят несколько скамеек. Ты замечаешь кое-какие картинки, и все они явно нарисованы кем-то совсем юным. Помимо той двери, в которую ты вошла, здесь есть еще две.")
 
 		else:
 			var theMission3Out:String = GM.main.MS.getSpecificFlag("Mission3", "nurse", "")
-			saynn("You approach the nurse’s desk again, the same name placard of ’Minuette’ stands atop it. She drags her gaze away from the screen and looks at you.")
+			saynn("Ты снова подходишь к посту медсестры; на столе стоит всё та же табличка с именем «Минетт». Она отрывает взгляд от экрана и смотрит на тебя.")
 
 			# (if player has the perk FertilityProudMom and didn't get an apple today)
 			if(receivedApple):
-				saynn("[say=nurse]Oh hey, your name is on my nice list, I try to make sure that every mom on there gets some kind of benefit in this place, take this.[/say]")
-				saynn("She pulls a fresh apple from under her desk somewhere and hands it off to you.")
+				saynn("[say=nurse]О, привет! Твое имя в моем списке «хороших девочек». Я стараюсь, чтобы каждая мама из этого списка получала здесь хоть какие-то бонусы. На, держи.[/say]")
+				saynn("Она достает откуда-то из-под стола свежее яблоко и протягивает тебе.")
 			
 			elif(GM.pc.isReadyToGiveBirth()):
-				saynn("[say=nurse]You look ready. Let me know if you wanna do it.[/say]")
+				saynn("[say=nurse]Ты выглядишь готовой. Дай знать, если захочешь начать.[/say]")
 			
 			elif(GM.pc.isHeavilyPregnant()):
-				saynn("[say=nurse]Came to give birth?[/say]")
+				saynn("[say=nurse]Пришла рожать?[/say]")
 			
 			# (if ready to give birth)
 			elif(GM.pc.isVisiblyPregnant()):
-				saynn("[say=nurse]If you want help with your pregnancy, let me know.[/say]")
+				saynn("[say=nurse]Если нужна помощь с беременностью — обращайся.[/say]")
 			
 			#"letgo", "reward", "break"
 			elif(theMission3Out == "letgo"):
-				saynn("[say=nurse]Oh.. hi. Do you want something, inmate?[/say]")
+				saynn("[say=nurse]О... привет. Тебе что-то нужно, заключенная?[/say]")
 			elif(theMission3Out == "reward"):
-				saynn("[say=nurse]Oh.. hey there. Do you want something, maybe?..[/say]")
+				saynn("[say=nurse]Ох.. привет. Тебе что-то нужно?..[/say]")
 			elif(theMission3Out == "break"):
-				saynn("[say=nurse]Oh.. H-hello..[/say]")
-				saynn("[say=pc]You should relax, kitty cat.[/say]")
+				saynn("[say=nurse]Ох.. П-привет..[/say]")
+				saynn("[say=pc]Расслабься, кошечка.[/say]")
 			else:
-				saynn("[say=nurse]Need something, inmate?[/say]")
+				saynn("[say=nurse]Что-то нужно, заключенная?[/say]")
 		
 		
-		addButton("How works", "Ask her how everything works", "how_works")
-		addButton("Working here", "Ask her what it’s like working here.", "nursework")
+		addButton("Как это работает", "Спросить её, как всё устроено", "how_works")
+		addButton("Работа здесь", "Спросить её, каково это — работать здесь.", "nursework")
 		
 		if(getModuleFlag("MedicalModule", "Nursery_AskedHowWorks", false)):
 			if(!getModuleFlag("MedicalModule", "Nursery_AskedDatabase", false)):
-				addButton("Database", "Is there really no way to interact with them?", "children")
+				addButton("База данных", "Неужели с ними действительно нельзя взаимодействовать?", "children")
 			else:
-				addButton("Database", "Take a look at your children", "database")
+				addButton("База данных", "Взглянуть на своих деток", "database")
 		
 		if(GM.pc.isPregnant(true, false) && GM.pc.isVisiblyPregnant()):
 			if(!GM.pc.isReadyToGiveBirth()):
-				addButton("Induce birth", "Ask to speed up the process", "induce_birth")
-				addDisabledButton("Give birth", "Too early for this")
+				addButton("Стимулировать роды", "Попросить ускорить процесс", "induce_birth")
+				addDisabledButton("Родить", "Для этого еще слишком рано")
 			else:
-				addDisabledButton("Induce birth", "You already can give birth")
-				addButton("Give birth", "You think it’s time (if fully developed)", "give_birth")
+				addDisabledButton("Стимулировать роды", "Ты уже можешь рожать")
+				addButton("Родить", "Ты думаешь, что пора (если плод полностью развит)", "give_birth")
 		else:
-			addDisabledButton("Induce birth", "You need to be pregnant to do that")
-			addDisabledButton("Give birth", "You need to be pregnant to do that")
+			addDisabledButton("Стимулировать роды", "Для этого нужно быть беременной")
+			addDisabledButton("Родить", "Для этого нужно быть беременной")
 		
 		if(GM.pc.getInventory().hasAnyOffspringEggs()):
-			addButton("Give eggs", "Give away all your offspring eggs so that they can be added into the database.", "give_eggs")
+			addButton("Дать яйцеклетки", "Отдать все свои яйца потомства, чтобы их можно было внести в базу данных.", "give_eggs")
 		else:
-			addDisabledButton("Give eggs", "You don't have any offspring eggs.")
+			addDisabledButton("Дать яйцеклетки", "У вас нет яиц потомства.")
 		
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 		GM.ES.triggerRun(Trigger.TalkingToNPC, ["nurse"])
 
 	if(state == "how_works"):
 		setModuleFlag("MedicalModule", "Nursery_AskedHowWorks", true)
 		
-		saynn("[say=pc]How does this all work?[/say]")
+		saynn("[say=pc]Как всё это устроено?[/say]")
 
-		saynn("The nurse points at one of the doors.")
+		saynn("Медсестра указывает на одну из дверей.")
 
-		saynn("[say=nurse]Inmates get pregnant. We offer help as best we can, and when the time comes, inmates deliver through there.[/say]")
+		saynn("[say=nurse]Заключенные беременеют. Мы помогаем им чем можем, а когда приходит срок, они рожают вот через ту дверь.[/say]")
 
-		saynn("[say=pc]What happens to all the children?[/say]")
+		saynn("[say=pc]А что происходит со всеми детьми?[/say]")
 
-		saynn("[say=nurse]Inmates aren’t allowed to interact with them until their sentence is over and someone clears them to meet them. Too dangerous otherwise. Don’t worry, here they get proper treatment, daycare, school, everything.[/say]")
+		saynn("[say=nurse]Заключенным нельзя контактировать с ними, пока они не отбыли срок и кто-нибудь не даст добро на встречу. Иначе слишком опасно. Не волнуйся, здесь им обеспечивают должный уход, детский сад, школу — всё необходимое.[/say]")
 
-		saynn("Huh. It seems they have the whole system figured out for this.")
+		saynn("Хм. Похоже, они продумали всю систему до мелочей.")
 
-		saynn("[say=pc]Why let inmates get pregnant in the first place? Isn’t that kinda bad?[/say]")
+		saynn("[say=pc]А зачем вообще позволять заключенным беременеть? Разве это не чревато проблемами?[/say]")
 
-		saynn("[say=nurse]That’s AlphaCorp’s policy regarding demography. And besides, the latest experimental drug therapy makes everything perfectly safe.[/say]")
+		saynn("[say=nurse]Такова демографическая политика «АльфаКорп». К тому же, благодаря новейшей экспериментальной лекарственной терапии, всё проходит абсолютно безопасно.[/say]")
 
 		# (if has any womb)
 
-		saynn("You raise your brow.")
+		saynn("Ты вопросительно приподнимаешь бровь.")
 
-		saynn("[say=pc]Wait. But I don’t remember going through any therapies.[/say]")
+		saynn("[say=pc]Погоди. Но я не помню, чтобы проходил через какую-то терапию.[/say]")
 
-		saynn("The nurse looks at your inmate number and starts punching buttons on her old clicky keyboard.")
+		saynn("Медсестра смотрит на твой номер заключенного и начинает яростно стучать по своей старой щелкающей клавиатуре.")
 
-		saynn("[say=nurse]Let me see.. inmate number.. {pc.inmateNumber}. Yes, you went through one during your intake process. It was done by.. Doctor Quinn.[/say]")
+		saynn("[say=nurse]Так, посмотрим... номер заключенного... {pc.inmateNumber}. Да, ты проходил процедуру во время приема. Ее проводил... доктор Куинн.[/say]")
 
-		saynn("You remember being injected with something. But that was for something else. Did Dr. Quinn lie to you?")
+		saynn("Ты помнишь, как тебе что-то вкололи. Но это было для другого. Неужели доктор Куинн тебе соврал?")
 
-		saynn("[say=pc]What [i]exactly[/i] did I get?[/say]")
+		saynn("[say=pc]И что [i]конкретно[/i] мне вкололи?[/say]")
 
-		saynn("[say=nurse]Well.. I’m not [i]supposed[/i] to tell an inmate like you.. but you know, with the amount of crazy and belligerent inmates I have to deal with when they suddenly show and start yelling about a ’certain’ fight they lost or what’s happening to them. It makes my job rather difficult.[/say]")
-		saynn("[say=nurse]And I just so happen to let the information slip in the hopes it makes my job slightly easier..[/say]")
+		saynn("[say=nurse]Ну... мне вообще-то [i]не положено[/i] говорить такому заключенному, как ты... но, знаешь, учитывая количество безумных и агрессивных зэков, с которыми мне приходится иметь дело, когда они внезапно появляются и начинают орать о «недавней» драке или о том, что с ними происходит... это сильно усложняет мою работу.[/say]")
+		saynn("[say=nurse]И так уж вышло, что я позволяю этой информации просочиться наружу в надежде, что это хоть немного облегчит мне жизнь...[/say]")
 		
-		saynn("She motions to lean in closer so she can quickly whisper the answer to you.")
+		saynn("Она жестом предлагает тебе наклониться ближе, чтобы быстро прошептать ответ на ухо.")
 		
-		saynn("[say=nurse]You got one of the experimental variants of AlphaCorp’s Fertility drugs, it should’ve completed by the time you woke up on your first day.[/say]")
-		saynn("[say=nurse]Don’t worry about something [i]entirely[/i] weird happening to you, it still has benefits if you don’t have a uterus, and all the staff get the same treatment for working in deep space, like this prison.[/say]")
-		saynn("[say=nurse]Namely, it should have massively boosted physical protection of your womb and any offspring you make, to the point anything in your womb will survive anything this place will throw at you.[/say]")
-		saynn("[say=nurse]And secondly, it will have altered how your offspring develops, progressing at a rate set by a Corporate Medical Officer. And as much as Corporate is full of idiots, they’re smart enough to not let inmates give birth at random. Once someone starts feeling false contractions, they’ll have to come here to get induced.[/say]")
+		saynn("[say=nurse]Тебе ввели один из экспериментальных вариантов фертильных препаратов от AlphaCorp. К тому моменту, как ты очнулся в свой первый день, действие должно было завершиться.[/say]")
+		saynn("[say=nurse]Не переживай из-за того, что с тобой может случиться какая-то [i]совершенно[/i] дичь. Это даже полезно, если у тебя нет матки, да и весь персонал проходит такую же обработку при работе в глубоком космосе, как в этой тюрьме.[/say]")
+		saynn("[say=nurse]То есть, это должно обеспечить колоссальную физическую защиту твоей утробы и любого потомства, которое ты произведешь, — до такой степени, что всё внутри тебя переживет любые ужасы, которые подкинет это место.[/say]")
+		saynn("[say=nurse]И во-вторых, это изменит процесс развития плода: он будет расти со скоростью, установленной Корпоративным Медицинским Офицером. И хоть Корпорация полна идиотов, они достаточно умны, чтобы не позволять заключенным рожать когда попало. Как только кто-то почувствует ложные схватки, ему придется прийти сюда, чтобы вызвать настоящие.[/say]")
 		
 		if(GM.pc.hasPerk(Perk.StartNoHybrids)):
-			saynn("[say=nurse]You’re also one of the lucky ones whose reproductive system had a reaction to the drug, so now you can never have hybrid offspring.[/say]")
+			saynn("[say=nurse]К тому же, ты одна из везунчиков, чья репродуктивная система среагировала на препарат, так что теперь ты больше никогда не сможешь родить гибрида.[/say]")
 
-		saynn("The nurse pushes you away and returns to her normal voice.")
-		saynn("[say=nurse]That should be everything, inmate.[/say]")
+		saynn("Медсестра отстраняет тебя и возвращается к своему обычному голосу.")
+		saynn("[say=nurse]На этом всё, заключенная.[/say]")
 
-		saynn("Curious.. You rub your chin and look down at your belly.")
+		saynn("Любопытно... Ты потираешь подбородок и смотришь на свой живот.")
 
-		addButton("Continue", "That’s nice", "")
+		addButton("Продолжить", "Приятно", "")
 
 	if(state == "nursework"):
-		saynn("[say=pc]So, what’s it like working here?[/say]")
-		saynn("The nurse looks up at you with tired eyes, clearly mulling over how she should answer your question.")
-		saynn("[say=nurse]I work Labor and Delivery in a prison with already violent and degenerate inmates. A lot of inmates do not handle pregnancy well. Do you need more to get the idea?[/say]")
-		saynn("[say=pc]Uh, No thanks, I get it..[/say]")
-		saynn("[say=nurse]It’s certainly not everyone that comes through here, but I can tell you I’ve seen the worst fights in this place.[/say]")
-		saynn("The nurse returns to her computer work while you mull over her words..")
+		saynn("[say=pc]Так каково это — работать здесь?[/say]")
+		saynn("Медсестра смотрит на тебя усталыми глазами, явно обдумывая, как лучше ответить на твой вопрос.")
+		saynn("[say=nurse]Я работаю в отделении родовспоможения в тюрьме, где и так полно агрессивных и деградировавших заключенных. Многие из них с трудом переносят беременность. Тебе нужно больше подробностей, чтобы уловить суть?[/say]")
+		saynn("[say=pc]Эх, нет, спасибо, я всё понимаю..[/say]")
+		saynn("[say=nurse]Сюда заходят далеко не все, но могу тебе сказать: самые жуткие драки в этом месте случались именно здесь.[/say]")
+		saynn("Медсестра возвращается к работе за компьютером, пока ты обдумываешь её слова...")
 
-		addButton("Continue", "", "")
+		addButton("Продолжить", "", "")
 	if(state == "children"):
 		setModuleFlag("MedicalModule", "Nursery_AskedDatabase", true)
 		
-		saynn("[say=pc]Is there really no way to check my children?[/say]")
+		saynn("[say=pc]Неужели действительно нет способа проверить моих детей?[/say]")
 
-		saynn("[say=nurse]Not directly, no. Each time you or someone else gives birth to your baby, we do add them to the database under your name. I can show you your records.[/say]")
+		saynn("[say=nurse]Напрямую — нет. Каждый раз, когда ты или кто-то другой рожаете ребенка, мы вносим его в базу данных под твоим именем. Я могу показать тебе твои записи.[/say]")
 
-		addButton("Database", "Take a look at your children", "database")
-		addButton("No thanks","You’d rather not","")
+		addButton("База данных", "Взглянуть на своих деток", "database")
+		addButton("Нет, спасибо","Пожалуй, нет","")
 
 	if(state == "database"):
-		saynn("You ask the nurse to show you the database records. She quickly punches some buttons and turns the screen towards you.")
+		saynn("Ты просишь медсестру показать записи в базе данных. Она быстро нажимает несколько клавиш и разворачивает экран к тебе.")
 		
 		if(OPTIONS.getMaxKeepPCKids() > 0 || !OPTIONS.shouldOptimizeKids()):
 			if(GM.CS.getChildren().size() == 0):
-				sayn(" - Nothing found, get to breeding!")
+				sayn(" - Ничего не найдено, живо за размножение!")
 			else:
-				saynn("- Total records found "+str(calculateAmount(true))+":")
+				saynn("- Всего записей найдено: "+str(calculateAmount(true))+":")
 				# (Your children here)
 				
 				var pcChilds := GM.CS.getChildrenRelatedTo("pc")
@@ -204,10 +204,10 @@ func _run():
 			
 		var archivedAmount:int = GM.CS.getArchiveChildCountMotherOrFather("pc")
 		if(archivedAmount <= 0 && !(OPTIONS.getMaxKeepPCKids() > 0 || !OPTIONS.shouldOptimizeKids())):
-			sayn(" - Nothing found, get to breeding!")
+			sayn(" - Ничего не найдено, живо за размножение!")
 		elif(archivedAmount > 0):
 			sayn("")
-			sayn("Archived records ("+str(archivedAmount)+"):")
+			sayn("Архивные записи ("+str(archivedAmount)+"):")
 			
 			var resultTable:String = "[font=res://Fonts/normalconsolefont.tres][table=3][cell]Mother[/cell][cell]Father[/cell][cell]Amount[/cell]"
 			
@@ -233,7 +233,7 @@ func _run():
 		var other:int = calculateAmount(false)
 		if(other > 0):
 			sayn("")
-			saynn("- Unrelated records found "+str(other)+":")
+			saynn("- Найдены несвязанные записи "+str(other)+":")
 		
 			var theOtherChilds := GM.CS.getChildrenNotRelatedTo("pc")
 			outputChildrenRecords(theOtherChilds)
@@ -241,7 +241,7 @@ func _run():
 		var archivedNPCAmount:int = GM.CS.getArchiveChildCountNonPC()
 		if(archivedNPCAmount > 0):
 			sayn("")
-			sayn("Unrelated archived records ("+str(archivedNPCAmount)+"):")
+			sayn("Несвязанные архивные записи ("+str(archivedNPCAmount)+"):")
 			
 			var resultTable:String = "[font=res://Fonts/normalconsolefont.tres][table=3][cell]Mother[/cell][cell]Father[/cell][cell]Amount[/cell]"
 			
@@ -264,105 +264,105 @@ func _run():
 			resultTable += "[/table][/font]"
 			sayn(resultTable)
 			
-		addButton("Continue", "That’s nice", "")
+		addButton("Продолжить", "Приятно", "")
 		
 		
 
 	if(state == "induce_birth"):
-		saynn("[say=pc]Is there a way to speed up the pregnancy even more?[/say]")
+		saynn("[say=pc]Есть ли способ ускорить беременность еще сильнее?[/say]")
 
-		saynn("The nurse nods and then leaves her table, taking an inmate leash from her belt before walking up to you with the clip open.")
+		saynn("Медсестра кивает, отходит от своего стола и достает с пояса поводок для заключенных, после чего подходит к тебе, держа карабин открытым.")
 
-		saynn("[say=nurse]Follow me.[/say]")
+		saynn("[say=nurse]Следуй за мной.[/say]")
 
-		addButton("Follow", "See where she brings you", "follow")
+		addButton("Следовать", "Посмотреть, куда она тебя приведет", "follow")
 
 	if(state == "follow"):
 		playAnimation(StageScene.Sleeping, "sleeping")
-		saynn("She clips the leash to your collar and convoys you into one of the doors. You see a long corridor connecting many rooms. The nurse walks you into one of them, it looks like any ordinary hospital chamber. A bed, a few light sources and some machinery.")
+		saynn("Она пристегивает поводок к твоему ошейнику и ведет тебя к одной из дверей. Перед тобой открывается длинный коридор, соединяющий множество комнат. Медсестра заводит тебя в одну из них; она выглядит как обычная больничная палата: кровать, несколько источников света и какое-то оборудование.")
 
-		saynn("You sit down on the bed and the nurse leashes you to it. Then she produces a loaded injector, it looks like a huge pen but with a needle.")
+		saynn("Ты садишься на кровать, и медсестра пристегивает тебя поводком к ней. Затем она достает заряженный инъектор — он похож на огромную ручку, но с иглой.")
 
-		saynn("[say=nurse]This will speed up the processes in your womb. You will feel very tired so you will be preserved here until tomorrow. After that, I will come and help you give birth.[/say]")
+		saynn("[say=nurse]Это ускорит процессы в твоей утробе. Ты почувствуешь сильную усталость, поэтому тебя оставят здесь до завтра. После этого я приду и помогу тебе принять роды.[/say]")
 
-		saynn("That seems reasonable. You tilt your head to the side and let her inject you. Ow. The injector hisses as it muddies your bloodstream with some unknown to you drug.")
+		saynn("Звучит разумно. Ты склоняешь голову набок, позволяя ей сделать укол. Ой! Инъектор шипит, наполняя твою кровь каким-то неизвестным тебе препаратом.")
 
-		saynn("[say=nurse]Now get some sleep. Don’t worry, the therapy you went through prevents you from giving birth without it being specifically induced.[/say]")
+		saynn("[say=nurse]А теперь поспи немного. Не волнуйся, проведенная тобой терапия гарантирует, что ты не родишь без специальной стимуляции.[/say]")
 
-		saynn("The nurse helps you get settled, putting one of those heart monitors on your finger while another gets wrapped around your bare stomach. She continues to work but since she doesn’t do anything directly to you again you lose all interest.")
+		saynn("Медсестра помогает тебе устроиться поудобнее, надевая один из этих датчиков на палец, а другой обматывая вокруг твоего обнаженного живота. Она продолжает работу, но так как больше она к тебе не прикасается, ты быстро теряешь к ней интерес.")
 
-		saynn("[say=nurse]All set, get some good rest..[/say]")
+		saynn("[say=nurse]Готово, хорошенько отдохни...[/say]")
 
-		saynn("That feels very questionable to you but you already feel the drug effects. You lay down on the bed and try to get some rest. It feels very warm down there, it’s like your womb is sucking all the energy out of you.")
+		saynn("Это кажется тебе весьма сомнительным, но действие препарата уже ощущается. Ты ложишься на кровать и пытаешься вздремнуть. Там, внизу, становится очень жарко — такое чувство, будто матка высасывает из тебя всю энергию.")
 
-		addButton("Sleep", "A nap sounds great about now", "sleep")
+		addButton("Спать", "Вздремнуть сейчас было бы просто идеально", "sleep")
 
 	if(state == "sleep"):
 		playAnimation(StageScene.GivingBirth, "idle", {bodyState={naked=true}})
-		saynn("You sleep in the patient’s bed. It’s not the comfiest but it’s better than nothing.")
+		saynn("Ты засыпаешь в больничной койке. Она не самая удобная, но это лучше, чем ничего.")
 
-		saynn("Welcome to day "+str(GM.main.getDays())+" of your sentence.")
+		saynn("Добро пожаловать в "+str(GM.main.getDays())+" день твоего срока.")
 
-		saynn("As you open your eyes.. you see your own huge belly. Your eyes widen as you give it a explorative touch, and you blink in surprise when you feel it, amazed at just how fast this must have happened. There is no denying it, you are ready to give birth. You can barely sit down.")
+		saynn("Когда ты открываешь глаза... ты видишь свой огромный живот. Твои глаза расширяются, когда ты начинаешь его исследовать, и ты удивленно моргаешь, ощущая его — ты поражена тем, как быстро всё это могло произойти. Отрицать очевидное невозможно: ты готова к родам. Тебе едва удается сесть.")
 
-		saynn("Unsure of what to really do aside from listen to the beeping heart montiors, you simply cradle your large middle with both hands, and simply wait for whatever nurse to show up.")
+		saynn("Не зная, чем еще заняться, кроме как слушать писк кардиомониторов, ты просто обхватываешь свой огромный живот обеими руками и ждешь, когда придет очередная медсестра.")
 
-		saynn("A dull ache in your belly gets worse as you wait, simply enduring it until the same nurse enters your room once again.")
+		saynn("Пока ты ждешь, тупая боль в животе усиливается; ты просто терпишь её, пока в палату снова не входит та же медсестра.")
 		
-		saynn("[say=nurse]Hello again. Time to go, come on, I’ll help you.[/say]")
+		saynn("[say=nurse]Снова здравствуй. Пора вставать, давай, я помогу.[/say]")
 
-		addButton("Continue", "Time to create life", "startbirth")
+		addButton("Продолжить", "Пора давать жизнь", "startbirth")
 
 	if(state == "give_birth"):
-		saynn("[say=pc]I think I’m ready.[/say]")
+		saynn("[say=pc]Думаю, я готова.[/say]")
 
-		saynn("The nurse gives your belly a quick look and then nods.")
+		saynn("Медсестра быстро осматривает твой живот и кивает.")
 
-		saynn("[say=nurse]Well then, follow me.[/say]")
+		saynn("[say=nurse]Ну что ж, иди за мной.[/say]")
 
-		saynn("She takes you through one of the doors into some corridor and then into some room.")
+		saynn("Она ведет тебя через одну из дверей в коридор, а затем в отдельное помещение.")
 
-		addButton("Continue", "Time to create life", "startbirth")
+		addButton("Продолжить", "Пора давать жизнь", "startbirth")
 
 	if(state == "startbirth"):
 		playAnimation(StageScene.GivingBirth, "birth", {bodyState={naked=true}})
 		
-		saynn("You enter the birthing room with the help of the nurse. It’s spacious and has a special bed in the middle, the one that is designed to keep your legs spread. A few nurses come in and out to prepare as you get your collar clipped to the bed. You lay down and await your fate.")
+		saynn("С помощью медсестры ты входишь в родильный зал. Он просторный, а в центре стоит специальная кровать, сконструированная так, чтобы удерживать твои ноги разведенными. Пока к твоему ошейнику пристегивают страховочный ремень, туда и обратно снуют несколько медсестер, готовя всё необходимое. Ты ложишься и ждешь своей участи.")
 
-		saynn("The main nurse gets the birthing process started as soon as it’s confirmed you’re on the appropriate painkillers, letting things get going as the last preperations are made and the majority of the other nurses leave again.")
+		saynn("Как только подтверждается, что ты получила подходящее обезболивающее, старшая акушерка запускает процесс родов, позволяя всему идти своим чередом, пока завершаются последние приготовления и большинство остальных медсестер покидают зал.")
 		
-		saynn("You’re content to just let them do their work while you lay there and take deep breaths while your belly has its first cramps." + (" Someone asks if they need to use the heavy restraints on you but someone else dismisses them." if(GM.pc.getInmateType() == InmateType.HighSec) else "") )
+		saynn("Ты просто позволяешь им делать свою работу, лежа на кровати и делая глубокие вдохи, пока в твоем животе начинаются первые схватки." + (" Someone asks if they need to use the heavy restraints on you but someone else dismisses them." if(GM.pc.getInmateType() == InmateType.HighSec) else "") )
 		
-		saynn("Once your waters break everyone gets settled in. You follow the instructions the main delivery nurse gives you as nature takes its course. And ’Nature’ means incredible pain and discomfort.")
+		saynn("Когда начинаются воды, все окончательно распределяются по местам. Ты следуешь инструкциям старшей акушерки, пока природа берет свое. А под «природой» здесь подразумевается невероятная боль и дискомфорт.")
 		
-		saynn("It feels like many hours as you work to push out your offspring, gradually stretching yourself out.. Life certainly isn’t easy and you feel like you’re about to pass out..")
+		saynn("Кажется, прошли целые часы, пока ты изо всех сил пыталась вытолкнуть свое потомство, постепенно растягиваясь изнутри... Жизнь определенно не сахар, и кажется, ты вот-вот потеряешь сознание от изнеможения...")
 		
 		# (if more than one child)
 		if(bornChildAmount > 1):
-			saynn("But things aren’t always that easy. Even after giving birth to the first child your belly only deflates slightly, still feeling the pain of contractions and the protesting movement of your remaining progeny, you’re clearly not done yet. Huffing and groaning as the pain continues..")
+			saynn("Но не всё так просто. Даже после рождения первого ребенка твой живот лишь слегка спал; ты всё еще чувствуешь схватки и протестующие движения оставшихся внутри плодов — очевидно, ты еще не закончила. Ты тяжело дышишь и стонешь, пока боль не утихает...")
 
-		addButton("Continue", "See what happens", "continue1")
+		addButton("Продолжить", "Посмотреть, что будет", "continue1")
 
 	if(state == "continue1"):
 		playAnimation(StageScene.GivingBirth, "idle", {bodyState={naked=true}})
 		
 		var childStr = "child" + ("ren" if(bornChildAmount>1) else "")
 		
-		saynn("You gave birth to "+str(bornChildAmount)+" "+childStr+"! The nurse congratulates you.")
+		saynn("Ты родила "+str(bornChildAmount)+" "+childStr+"! Медсестра поздравляет тебя.")
 
 		# (Who)
 		sayn(bornChildString)
 
-		saynn("You only get to spend a few minutes with your "+childStr+" before you have to go.")
+		saynn("Тебе удается провести с твоим(ей) "+childStr+" всего несколько минут, прежде чем придется уходить.")
 
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 	
 	if(state == "give_eggs"):
-		saynn("You hand the nurse all of the offspring eggs that you had.")
+		saynn("Ты отдаешь медсестре все свои яйца с потомством.")
 		
 		saynn(bornChildString)
 		
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	
 func calculateAmount(pcKids:bool = true) -> int:
 	var amount:int = 0

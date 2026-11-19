@@ -15,41 +15,41 @@ func _run():
 	if(state == ""):
 		if(!GM.main.getModuleFlag("NovaModule", "Nova_Introduced")):
 			GM.main.setModuleFlag("NovaModule", "Nova_Introduced", true)
-			saynn("You walk up to some guard that seems to be patrolling the yard area. First thing you notice is her canine features and a feminine body. Gray fur and curly tail help you identify her as a husky. She is armored and her armor seems to be quite advanced, even requiring something that looks like a little nuclear power generator on her back. Under it you spot a fancy stealthy bodysuit and a short black skirt.")
+			saynn("Вы подходите к охраннице, которая, кажется, патрулирует двор. Первое, что бросается в глаза — её собачьи черты и женственная фигура. Серая шерсть и пушистый хвост выдают в ней хаски. На ней надет доспех, причем довольно продвинутый — на спине висит штуковина, похожая на маленький ядерный генератор. Под броней вы замечаете стильный скрытный боди и короткую черную юбку.")
 
-			saynn("She is fidgeting with her stun baton when her eyes spot you. She stops her patrol and directs her full attention at you.")
+			saynn("Она вертит в руках электрошокер, когда замечает вас взглядом. Она прекращает патрулирование и переключает всё своё внимание на вас.")
 
 			# (if seen before)
 			if(GM.main.getModuleFlag("NovaModule", "Nova_SawPC")):
-				saynn("[say=nova]I remember you, little rascal.[/say]")
+				saynn("[say=nova]Я тебя помню, мелкий проказник.[/say]")
 
 				# (if humiliated nova)
 				if(GM.main.getModuleFlag("NovaModule", "Nova_GotHumiliatedByPC")):
-					saynn("[say=pc]Yeah, and I remember humiliating you.[/say]")
+					saynn("[say=pc]Ага, а я помню, как унижала тебя.[/say]")
 
-					saynn("[say=nova]Well, you kno-o-ow. You win some, you lose some. Sometimes losing is fun too~[/say]")
+					saynn("[say=nova]Ну, ты же зн-н-наешь. Бывает, выигрываешь, бывает, проигрываешь. А иногда проигрывать даже весело~[/say]")
 
 			# (else)
 			else:
-				saynn("[say=nova]Huh, a new face. I hope you’re behaving~.[/say]")
+				saynn("[say=nova]Хм, новое лицо. Надеюсь, ты ведешь себя прилично~.[/say]")
 
-			saynn("The husky flings her weapon at you and then masterfully catches it before you can realize, what a show off. She is only one step away from you now.")
+			saynn("Хаски эффектно подбрасывает оружие и мастерски ловит его прежде, чем вы успеваете сообразить — ну и выпендрёжщица. Теперь она всего в шаге от вас.")
 
-			saynn("[say=nova]I’m Nova in case you didn’t know, the best guard in this prison. And you..[/say]")
+			saynn("[say=nova]Я Нова, если ты вдруг не знал — лучшая охранница в этой тюрьме. А ты...[/say]")
 
-			saynn("[say=pc]Inmate number {pc.inmateNumber}.[/say]")
+			saynn("[say=pc]Заключенный номер {pc.inmateNumber}.[/say]")
 
-			saynn("[say=nova]Nah, dummy, leave that one to the asshole staff.[/say]")
+			saynn("[say=nova]Не, тупица, оставь это дело придурковатому персоналу.[/say]")
 
-			saynn("She eyes you out as she walks around you with a playful sway to her hips.")
+			saynn("Она оглядывает тебя с ног до головы, игриво покачивая бедрами при ходьбе.")
 
-			saynn("[say=nova]I’m one of the kind ones~.[/say]")
+			saynn("[say=nova]Я из добрых~.[/say]")
 
-			saynn("She stops in front of you and boops you on the nose. She giggles at your confused reaction.")
+			saynn("Она останавливается перед тобой и легонько тычет пальцем в твой нос. Она хихикает, видя твою растерянную реакцию.")
 
 		else:
 			if(getCharacter("nova").isVisiblyPregnant()):
-				saynn("Nova is patrolling the yard area, holding one of her paws on her belly. She notices you and offers you a careful smile.")
+				saynn("Нова патрулирует двор, придерживая одну лапку на животе. Она замечает тебя и одаривает осторожной улыбкой.")
 				
 				saynn("[say=nova]"+RNG.pick([
 					"Huff, so strange to be carrying a litter.",
@@ -59,100 +59,100 @@ func _run():
 					"I’m doing okay, thanks for checking.",
 				])+"[/say]")
 			else:
-				saynn("Nova is patrolling the yard area, like she usually does. She notices you and gives you a careful look.")
+				saynn("Нова патрулирует двор, как обычно. Она замечает тебя и внимательно на тебя смотрит.")
 
-				saynn("[say=nova]What’s up.[/say]")
+				saynn("[say=nova]Ну, привет.[/say]")
 
-		addButton("Talk", "Ask Nova about things", "talk")
-		addButton("Appearance", "Look at Nova", "appearance")
+		addButton("Поговорить", "Расспросить Нову о разном", "talk")
+		addButton("Внешность", "Посмотреть на Нову", "appearance")
 		#ACEPREGEXPAC - Nova can now Dom player while preggers
-		addButton("Lewd", "Offer yourself to Nova", "lewd")
+		addButton("Пошлячить", "Предложить себя Нове", "lewd")
 #		if(!getCharacter("nova").isVisiblyPregnant()):
-#			addButton("Lewd", "Offer yourself to Nova", "lewd")
+#			addButton("Пошлячить", "Предложить себя Нове", "lewd")
 #		else:
-#			addDisabledButton("Lewd", "Can't offer yourself to Nova while she is pregnant")
-		addButton("Leave", "Time to go", "endthescene")
+#			addDisabledButton("Пошлячить", "Нельзя предлагать себя Нове, пока она беременна")
+		addButton("Уйти", "Пора идти", "endthescene")
 		GM.ES.triggerRun(Trigger.TalkingToNPC, ["nova"])
 
 
 	if(state == "appearance"):
-		saynn("Nova is one of the guards, medium height, gray fur, amber eyes. Her hair is somewhat short, not even reaching the shoulders, one of the hair strands has a strong blue tint to it. Long canine muzzle, perky ears, curled up fluffy tail, Nova has all the signs of a husky. She must have pretty strong muscles to be able to wear the power armor that she has. Underneath it is a skin-tight bodysuit and a black short skirt. Her stun baton is attached with a strap to the leg.")
+		saynn("Нова — одна из охранниц, среднего роста, с серой шерстью и янтарными глазами. Волосы у неё довольно короткие, едва доходят до плеч, а одна прядь имеет ярко-синий оттенок. У неё длинная собачья морда, стоячие уши и пушистый закрученный хвост — Нова явно относится к породе хаски. Чтобы носить силовую броню, она должна обладать довольно крепкими мышцами. Под броней на ней облегающий комбинезон и короткая чёрная юбка. К ноге ремнём прикреплён электрошокер.")
 
 #ACEPREGEXPAC - Comment if Nova is heavily preggers
 		if(getCharacter("nova").isHeavilyPregnant()):
-			saynn("Nova is quite clearly pregnant with her bodysuit stretched as tight as it is. Her arm rests atop her stomach, covering her enlarged chest.")
+			saynn("По тому, как натянулся её комбинезон, видно, что Нова явно беременна. Она положила руку на живот, прикрывая пышную грудь.")
 		
 		# (is pregnant, changed to elif by ace)
 		elif(getCharacter("nova").isVisiblyPregnant()):
-			saynn("Nova’s belly is visibly inflated, good thing that her bodysuit is stretchy enough. Her breasts gained an extra size and are probably full of milk.")
+			saynn("Живот Новы заметно раздулся, хорошо, что её комбинезон достаточно эластичный. Её грудь увеличилась в размере и, вероятно, уже полна молока.")
 		
 		# (else)
 		else:
-			saynn("Nova’s breasts are a solid D-cup, encased in a stealthy black material.")
+			saynn("У Новы внушительный размер груди — уверенная чашка D, обтянутая скрывающим детали чёрным материалом.")
 
-		saynn("Sneaking a glance underneath her skirt you can spot both a bulge and an outline of a pussy, this guard is packing quite some heat.")
+		saynn("Если украдкой заглянуть под юбку, можно заметить и бугорок, и очертания киски — у этой охранницы там припрятано кое-что горяченькое.")
 
-		addButton("Back", "Enough watching", "")
+		addButton("Назад", "Хватит пялиться", "")
 
 	if(state == "talk"):
-		saynn("[say=nova]What are you curious about.[/say]")
+		saynn("[say=nova]Что тебя так заинтересовало?[/say]")
 
-		saynn("She raises her brow and crosses her arms.")
+		saynn("Она приподнимает бровь и скрещивает руки на груди.")
 
-		addButton("Kind?", "Is she really kind", "kind?")
-		addButton("Job", "Ask why she is working here", "job")
-		addButton("Body", "Compliment her body", "body")
-		addButton("Back", "Enough talking", "")
+		addButton("Добрая?", "Неужели она и правда добрая?", "kind?")
+		addButton("Работа", "Спросить, почему она здесь работает", "job")
+		addButton("Тело", "Сделать комплимент её телу", "body")
+		addButton("Назад", "Хватит болтать", "")
 
 	if(state == "kind?"):
-		saynn("[say=pc]How are you the kind one?[/say]")
+		saynn("[say=pc]Как тебе удается оставаться такой доброй?[/say]")
 
-		saynn("Nova chuckles and offers you a headpat.")
+		saynn("Нова посмеивается и предлагает погладить тебя по голове.")
 
-		saynn("[say=nova]If any inmate is kind to me then I’m kind to them. I know how rough prison life can be.[/say]")
+		saynn("[say=nova]Если заключенная добра ко мне, то и я добр к ней. Я знаю, какой суровой может быть тюремная жизнь.[/say]")
 
-		saynn("Her paw slides down your cheek and then gets a good grasp on your collar.")
+		saynn("Её лапа скользит по твоей щеке, а затем крепко хватает тебя за воротник.")
 
-		saynn("[say=nova]But if they ever lie to me. Or betray me. I won’t be kind to that, believe me~.[/say]")
+		saynn("[say=nova]Но если они когда-нибудь солгут мне... или предадут... поверь, тогда я доброй уже не буду~.[/say]")
 
-		saynn("She scritches you under the chin and behind the ear.")
+		saynn("Она чешет тебя под подбородком и за ушком.")
 
-		saynn("[say=nova]What it’s gonna be with you, sweetie~?[/say]")
+		saynn("[say=nova]Ну и что же ты выберешь, сладенький~?[/say]")
 
-		saynn("You decide that a respectful silence is good enough for an answer. Nova smiles and licks her fangs.")
+		saynn("Ты решаешь, что уважительного молчания будет достаточно в качестве ответа. Нова улыбается и облизывает свои клыки.")
 
-		addButton("Continue", "Ask something else", "talk")
+		addButton("Продолжить", "Спросить о чем-то другом", "talk")
 
 	if(state == "job"):
-		saynn("[say=pc]So why work here?[/say]")
+		saynn("[say=pc]Так почему ты здесь работаешь?[/say]")
 
-		saynn("Nova looks at her wrists, at her armor.")
+		saynn("Нова смотрит на свои запястья, затем на свою броню.")
 
-		saynn("[say=nova]I didn’t exactly have a choice. But you know, it has some perks. I get to play with so many cuties. Some even call me mommy~.[/say]")
+		saynn("[say=nova]У меня, если честно, не было особого выбора. Но, знаешь, в этом есть свои плюсы. Мне выпадает шанс поиграть с таким количеством милашек. Некоторые даже называют меня мамочкой~.[/say]")
 
-		saynn("You look surprised, Nova chuckles at your reaction.")
+		saynn("Ты выглядишь удивленным, и Нова посмеивается над твоей реакцией.")
 
-		addButton("Continue", "Ask something else", "talk")
+		addButton("Продолжить", "Спросить о чем-то другом", "talk")
 
 	if(state == "body"):
-		saynn("[say=pc]How did you get into such strong shape, are you working out a lot?[/say]")
+		saynn("[say=pc]Как ты пришла в такую отличную форму? Много тренируешься?[/say]")
 
-		saynn("Nova shrugs.")
+		saynn("Нова пожимает плечами.")
 
-		saynn("[say=nova]Sometimes. But nah. It’s a long story, sweetie. I appreciate the compliment~.[/say]")
+		saynn("[say=nova]Иногда. Но нет. Это долгая история, сладкий. Спасибо за комплимент~.[/say]")
 
-		addButton("Continue", "Ask something else", "talk")
+		addButton("Продолжить", "Спросить о чем-то другом", "talk")
 		
 	if(state == "lewd"):
-		saynn("You get closer to Nova and put on a cheeky smile while rubbing against her. You sway your {pc.masc} hips and the husky eventually joins you, her expression shows that she likes it.")
+		saynn("Ты подходишь ближе к Нове и, нагло улыбаясь, начинаешь тереться о неё. Ты покачиваешь {pc.masc} бедрами, иhusky в итоге подхватывает твой ритм, а по её лицу видно, что ей это нравится.")
 		
-		saynn("[say=nova]Someone is horny~?[/say]")
+		saynn("[say=nova]Кто-то возбужден~?[/say]")
 		
 		if(!GM.pc.hasBlockedHands()):
-			saynn("Boldy, you sneak a hand under Nova’s skirt and put it on her crotch. She chuckles softly as you grope the sheath that is hidden under her suit.")
+			saynn("Дерзко, ты просовываешь руку под юбку Новы и кладешь её ей на промежность. Она тихо посмеивается, пока ты ощупываешь её «ножны», скрытые под костюмом.")
 		
-		addButton("Petplay", "Offer to be Nova’s pet for a bit", "petplay")
-		addButton("Never mind", "You don't want anything", "")
+		addButton("Петплей", "Предложить стать питомцем Новы на время", "petplay")
+		addButton("Проехали", "Тебе ничего не нужно", "")
 		
 
 func _react(_action: String, _args):

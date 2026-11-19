@@ -14,9 +14,9 @@ func _init():
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.Sleeping, "sleep", {pc=ownerID, npc="pc", bodyState={naked=true}, npcBodyState={naked=true}})
-		saynn("{npc.name} orders you to sleep together with {npc.him}.")
-		saynn("And so you obey, spending the night on the chest of your owner..")
-		addButton("Continue", "See what happens next", "endthescene")
+		saynn("{npc.name} приказывает тебе переспать с {npc.him}.")
+		saynn("И ты повинуешься, проводя ночь на груди своего хозяина..")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func resolveCustomCharacterName(_charID):
 	if(_charID == "npc"):

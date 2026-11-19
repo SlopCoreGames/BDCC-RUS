@@ -7,7 +7,7 @@ func _init():
 	id = "PortalPanties"
 
 func getVisibleName():
-	return "Portal Panties"
+	return "Портальные трусики"
 	
 func getDescription():
 	var extraDesc = ""
@@ -15,7 +15,7 @@ func getDescription():
 		extraDesc = " Currently they [b]will[/b] also cover the penis."
 	else:
 		extraDesc = " Currently they will [b]NOT[/b] cover the penis."
-	return "Panties with some hi-tec gear attached to them."+extraDesc
+	return "Трусики со встроенным высокотехнологичным оборудованием."+extraDesc
 
 func getClothingSlot():
 	return InventorySlot.UnderwearBottom

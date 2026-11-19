@@ -10,124 +10,124 @@ func _run():
 		addCharacter("eliza")
 		aimCameraAndSetLocName("med_milkingroom")
 		playAnimation(StageScene.Grope, "tease", {pc="pc", npc="eliza", bodyState={naked=true}})
-		saynn("You tell Eliza that you would like to donate your girlcum.")
+		saynn("Вы говорите Элизе, что хотели бы пожертвовать свою девичью сперму.")
 
-		saynn("[say=eliza]Follow me, the process is simple~.[/say]")
+		saynn("[say=eliza]Иди за мной, всё очень просто~.[/say]")
 
-		saynn("Well, why not.")
+		saynn("Ну, почему бы и нет.")
 
-		saynn("Eliza brings you into the big open space and finds a stall that has the required equipment installed.")
+		saynn("Элиза приводит вас в просторное помещение и находит стойло, оснащенное всем необходимым оборудованием.")
 
-		saynn("The centerpiece of this stall is a big grated platform. Below it, you see some kind of funnel, a fluid collector of sorts. In the middle of the platform, there is a sybian machine installed, a kinky seat..")
+		saynn("Центральным элементом этого стойла является большая решетчатая платформа. Под ней видна какая-то воронка — своего рода сборщик жидкости. В центре платформы установлена машина-сибиан, вызывающее сексуальное кресло...")
 
-		saynn("The sybian is equipped with a small dildo and a ridged platform positioned precisely so that your clit would be resting directly upon it. Seeing it.. makes the air feel warmer already.")
+		saynn("Сибиан оснащен небольшим дилдо и ребристой платформой, расположенной так, чтобы ваш клитор лежал прямо на ней. Один только вид этого устройства заставляет воздух вокруг становиться жарче.")
 
-		saynn("[say=eliza]It's better to be naked, trust me~.[/say]")
+		saynn("[say=eliza]Лучше быть без одежды, поверь мне~.[/say]")
 
-		saynn("You strip yourself of all clothes and approach the kinky device.")
+		saynn("Вы сбрасываете с себя всю одежду и приближаетесь к этому порочному устройству.")
 
-		addButton("Sit", "Take a seat on that sybian", "do_sit")
+		addButton("Сесть", "Сесть на сибиан", "do_sit")
 	if(state == "do_sit"):
 		playAnimation(StageScene.Sybian, "idle", {pc="pc", chained=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Slowly, you lower yourself onto that device, allowing the little dildo to part your pussy folds and get buried between your sensitive inner walls.")
+		saynn("Вы медленно опускаетесь на устройство, позволяя маленькому дилдо раздвинуть складки вашей киски и погрузиться между чувствительных внутренних стенок.")
 
-		saynn("[say=pc]Mmm..[/say]")
+		saynn("[say=pc]Ммм..[/say]")
 
-		saynn("Eliza approaches you and suddenly clicks a leash to your collar.")
+		saynn("Элиза подходит к тебе и внезапно защелкивает поводок на твоем ошейнике.")
 
-		saynn("[say=eliza]We don't want you to wiggle yourself off, do we~.[/say]")
+		saynn("[say=eliza]Мы ведь не хотим, чтобы ты вырвалась, правда~?[/say]")
 
-		saynn("Probably not..")
+		saynn("Скорее всего, нет...")
 
-		saynn("Eliza attaches the other end of that tight leash to the floor.. making it so you can't get off that seat anymore.")
+		saynn("Элиза прикрепляет другой конец тугого поводка к полу... теперь ты уже точно не сможешь встать со своего места.")
 
-		saynn("The feline grabs the remote of that device.. and turns one of the dials pretty high..")
+		saynn("Кошечка хватает пульт от устройства... и выкручивает один из регуляторов почти на максимум...")
 
-		addButton("Continue", "See what happens next", "begins_working")
+		addButton("Продолжить", "Смотреть, что будет дальше", "begins_working")
 	if(state == "begins_working"):
 		playAnimation(StageScene.Sybian, "ride", {pc="pc", chained=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("The sybian underneath you roars to life, its dildo begins to vibrate against the walls of your warm, inviting pussy, immediately sending pleasure waves to flow through your limbs.")
+		saynn("Сибиан под тобой с ревом оживает; его фаллос начинает вибрировать внутри твоей теплой, манящей киски, мгновенно посылая волны наслаждения по всему телу.")
 
-		saynn("[say=pc]Mmmhh.. hh..[/say]")
+		saynn("[say=pc]Мммхх.. хх..[/say]")
 
-		saynn("Every muscle in your inner walls contracts reflexively, clenching around that dildo as its rhythmic pulsations make you moan softly. At the same time, the ridged platform positioned near that other toy begins to shift left and right against your clit, its bumps massaging and rubbing one of your most sensitive spots, creating another source of pleasure.")
+		saynn("Все мышцы твоих внутренних стенок рефлекторно сокращаются, сжимая вибратор, пока его ритмичные пульсации заставляют тебя тихо стонать. В то же время ребристая платформа, расположенная рядом с другой игрушкой, начинает двигаться влево-вправо по твоему клитору; её бугорки массируют и натирают одну из твоих самых чувствительных зон, создавая еще один источник экстаза.")
 
-		saynn("[say=pc]Ah.. ah-h..[/say]")
+		saynn("[say=pc]Ах.. ах-х..[/say]")
 
-		saynn("You get wet fast.. your juices coating the dildo and dripping down from the sybian. All the while Eliza just watches, holding and playing with the remote.")
+		saynn("Ты быстро намокаешь... твои соки обволакивают фаллос и стекают по корпусу сибиана. А Элиза просто наблюдает, вертя в руках пульт и играя с ним.")
 
-		saynn("[say=eliza]A little more, yes~?[/say]")
+		saynn("[say=eliza]Еще немного, да~?[/say]")
 
-		saynn("[say=pc]Ah.. mmhh-hah..[/say]")
+		saynn("[say=pc]Ах.. ммхх-хах..[/say]")
 
-		saynn("[say=eliza]Sounds like a yes to me.[/say]")
+		saynn("[say=eliza]Похоже, это значит «да».[/say]")
 
-		saynn("She turns the dial to its second highest setting.. making the dildo inside you vibrate even harder, now reaching and stimulating your g-spot.. Makes you want to throw your head back and moan into the air.. but the chain keeps your chin at a steady level.")
+		saynn("Она поворачивает регулятор на предпоследнее деление... заставляя фаллоимитатор внутри тебя вибрировать еще сильнее, теперь он достигает и стимулирует твою точку G... Тебе хочется запрокинуть голову и стонать во весь голос... но цепь удерживает твой подбородок на одном уровне.")
 
-		saynn("[say=pc]Nnhh-.. mhh.. ahh..[/say]")
+		saynn("[say=pc]Ннхх-.. мхх.. ахх..[/say]")
 
-		saynn("Moans of raw ecstasy spill from your lips as your body writhes in tandem with the sybian's intense vibrations. It's almost unbearable.. your hips buck and quiver uncontrollably, your love tunnel contracting tightly around the dildo.. all the while each attempt to escape this is prevented by the chain.")
+		saynn("Стоны чистого экстаза срываются с твоих губ, пока твое тело извивается в такт интенсивным вибрациям сибиана. Это почти невыносимо... твои бедра беспорядочно дергаются и дрожат, твой любовный туннель плотно сжимается вокруг фаллоимитатора... и всё это время цепь не дает тебе возможности сбежать от этого наслаждения.")
 
-		saynn("Heat builds within you fast..")
+		saynn("Жар внутри тебя нарастает стремительно...")
 
-		saynn("[say=eliza]I think someone is close~.[/say]")
+		saynn("[say=eliza]Кажется, кто-то уже на пределе~.[/say]")
 
-		saynn("She turns the remote's dial to its maximum setting..")
+		saynn("Она поворачивает колесико пульта на максимум...")
 
-		addButton("Orgasm", "See what happens next!", "processCum")
+		addButton("Оргазм", "Смотри, что будет дальше!", "processCum")
 	if(state == "processCum"):
 		playAnimation(StageScene.Sybian, "intense", {pc="pc", pcCum=true, chained=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Before you can realize it, a powerful orgasm is already rocking through your body, making you squirm and quiver around the dildo that vibrates directly against your g-spot, overwhelming your senses.")
+		saynn("Прежде чем ты успеваешь это осознать, мощный оргазм уже сотрясает всё твоё тело, заставляя тебя извиваться и дрожать вокруг дилдо, который вибрирует прямо на твоей точке G, перегружая все твои чувства.")
 
-		saynn("[say=pc]Ah-h-hh!..[/say]")
+		saynn("[say=pc]Ах-х-х!..[/say]")
 
-		saynn("Your pussy spasms and clenches hard.. before releasing a stream of warm, transparent fluid that gushingly sprats out all over the platform.. before pooling into the collector beneath. Your muscles just aren't listening anymore, you're squirting from the overstimulation, your slit gushing out more and more of your girlcum!")
+		saynn("Твоя киска судорожно сжимается.. а затем из неё вырывается поток теплой прозрачной жидкости, которая фонтаном разлетается по платформе.. прежде чем стечь в сборник под ней. Твои мышцы больше тебя не слушаются: ты сквиртишь от запредельной стимуляции, твоя щелочка извергает всё больше и больше твоей девичьей смазки!")
 
-		saynn("Eliza watches the fluid level rising.")
+		saynn("Элиза наблюдает за тем, как поднимается уровень жидкости.")
 
-		saynn("[say=eliza]Great, great~. I bet you could give me more than that.[/say]")
+		saynn("[say=eliza]Отлично, просто отлично~. Бьюсь об заклад, ты можешь дать мне гораздо больше.[/say]")
 
-		saynn("She keeps the dial at its full setting.. meaning that the sybian keeps pushing you further and further into this abyss of pleasure.. until another wave of overstimulation catches up with you. Your muscles tense up uncontrollably as your pussy starts to pulse and squirt, releasing more of that wet fluid into the air.")
+		saynn("Она оставляет регулятор на максимуме.. а значит, сибиан продолжает толкать тебя всё глубже и глубже в эту бездну наслаждения.. пока очередная волна гиперстимуляции не накрывает тебя с головой. Твои мышцы непроизвольно напрягаются, когда киска начинает пульсировать и брызгать, выбрасывая в воздух всё новые порции влажной жидкости.")
 
-		saynn("[say=pc]Mhhhnhh-h-hhahhh.. ahhh-h.. Ahh-h..[/say]")
+		saynn("[say=pc]Мммххнн-х-ххааа.. ахх-х.. Ахх-х..[/say]")
 
-		saynn("Even if you wanted, you can't do anything about it, the sybain keeps milking your pussy for all of its fluids, the dildo pounding your g-spot while the ridged platform is thrashing against your clit, causing another orgasm to overwhelm you!")
+		saynn("Даже если бы ты захотела, ты ничего не сможешь с этим поделать: сибиан продолжает выжимать из твоей киски всю жидкость, дилдо долбит в точку G, а ребристая платформа неистово трется о твой клитор, вызывая новый захлестывающий оргазм!")
 
-		saynn("Your pussy spawns a fountain of girlcum again.. and again.. but much less this time. You keep moaning like a slut.. while your pussy forces out the rest of its fluids with hard, powerful pulses.")
+		saynn("Твоя киска снова и снова извергает фонтан девичьей смазки.. но на этот раз гораздо слабее. Ты продолжаешь стонать как шлюшка.. пока твоя киска выталкивает остатки жидкости мощными, резкими толчками.")
 
-		saynn("[say=pc]Nhh.. I cc-can't.. t-too much.. ahh..[/say]")
+		saynn("[say=pc]Нхх.. я.. я больше не могу.. слишком много.. ахх..[/say]")
 
-		saynn("Your eyes keep rolling up, your tongue is out and drooling. You're holding onto that sybian as tight as you can.. while it constantly stimulates your poor, overstimulated cunt.")
+		saynn("Твои глаза закатываются, язык высунут и течет слюна. Ты вцепилась в сибиян так сильно, как только можешь.. пока она непрестанно стимулирует твою бедную, перестимулированную киску.")
 
-		saynn("Time becomes a blur, the ecstatic waves making your mind go blank.. Your pussy spasms repeatedly, over and over, until there is nothing left to give. Only when the next orgasm draws pretty much nothing from you, is when Eliza finally starts to turn the dial down again.")
+		saynn("Время превращается в размытое пятно, экстатические волны заставляют твой разум опустеть.. Твоя киска спазмирует снова и снова, пока не остается сил отдавать. И только когда следующий оргазм почти ничего из тебя не выжимает, Элиза наконец начинает снова убавлять мощность.")
 
-		saynn("[say=pc]Mhh.. ahh..[/say]")
+		saynn("[say=pc]Ммм.. ахх..[/say]")
 
-		saynn("You're panting.. heavily.. Your crotch is a source of heat that spreads throughout..")
+		saynn("Ты тяжело.. очень тяжело дышишь.. Твой пах — это источник жара, который разливается по всему телу..")
 
-		saynn("[say=eliza]That's what I like to see~. Sorry, the best squirt gets collected only during constant forced orgasms.[/say]")
+		saynn("[say=eliza]Вот это то, что мне нужно~. Прости, лучший сквирт получается только во время постоянных принудительных оргазмов.[/say]")
 
-		saynn("She completely turns off the machine, letting you rest.")
+		saynn("Она полностью выключает аппарат, давая тебе передохнуть.")
 
-		saynn("[say=eliza]You did well. Thank you for your donation~.[/say]")
+		saynn("[say=eliza]Ты молодец. Спасибо за твое пожертвование~.[/say]")
 
-		saynn("You nod.. your body still trembling from the aftershocks.")
+		saynn("Ты киваешь.. твое тело все еще дрожит от отголосков оргазма.")
 
-		addButton("Continue", "See what happens next", "about_to_leave")
+		addButton("Продолжить", "Смотреть, что будет дальше", "about_to_leave")
 	if(state == "about_to_leave"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		GM.pc.setLocation("med_nearmilking")
-		saynn("Eliza helps you to get up. Your legs are still shaky.")
+		saynn("Элиза помогает тебе подняться. Твои ноги все еще подкашиваются.")
 
-		saynn("[say=eliza]Please come again later.[/say]")
+		saynn("[say=eliza]Приходи еще позже.[/say]")
 
-		saynn("You nod.. trying to catch your breathing.")
+		saynn("Ты киваешь... пытаясь восстановить дыхание.")
 
-		saynn("[say=eliza]I need to fill in some paperwork now, I hope you will find your way back to the lobby~.[/say]")
+		saynn("[say=eliza]Теперь мне нужно заполнить кое-какие бумаги, надеюсь, ты не забудешь дорогу обратно в лобби~.[/say]")
 
-		saynn("It's time to go.")
+		saynn("Пора идти.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

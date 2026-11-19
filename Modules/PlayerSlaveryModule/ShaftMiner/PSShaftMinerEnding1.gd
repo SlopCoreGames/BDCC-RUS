@@ -7,256 +7,256 @@ func _run():
 	if(state == ""):
 		addCharacter("psricky")
 		playAnimation(StageScene.Duo, "stand", {npc="psricky"})
-		saynn("You bang on the reinforced voidsteel door until the hinges begin to screech.")
+		saynn("Ты колотишь в усиленную дверь из пустостали, пока петли не начинают истошно визжать.")
 
-		saynn("As it opens, you see Ricky.")
+		saynn("Когда она открывается, ты видишь Рикки.")
 
-		saynn("[say=psricky]Yeah? Oh, it's you, the funny collared one.[/say]")
+		saynn("[say=psricky]А? А, это ты, смешная штучка в ошейнике.[/say]")
 
-		saynn("[say=pc]It's done. I hit the target.[/say]")
+		saynn("[say=pc]Всё готово. Я попал в цель.[/say]")
 
-		saynn("Behind him, you notice his goons loading up his spaceship with final crates of raw, pulsing ore. A distant rumble of engines vibrates the dusty ground.")
+		saynn("За его спиной ты замечаешь, как его головорезы загружают в космический корабль последние ящики с необработанной, пульсирующей рудой. Далекий гул двигателей заставляет пыльную землю вибрировать.")
 
-		saynn("[say=psricky]Job is done, then, eh? Time to share the news with the rest of your cage buddies.[/say]")
+		saynn("[say=psricky]Значит, работа сделана, а? Пора поделиться новостями с остальными твоими сокамерниками по клетке.[/say]")
 
-		saynn("He snaps his fingers, causing some of his goons to approach him.")
+		saynn("Он щелкает пальцами, заставляя своих подручных подойти к нему.")
 
-		saynn("[say=psricky]Line the slaves up for me, will ya?[/say]")
+		saynn("[say=psricky]Выстройте рабов в ряд, а?[/say]")
 
-		addButton("Continue", "See what happens next", "near_cages")
+		addButton("Продолжить", "Смотреть, что будет дальше", "near_cages")
 	if(state == "near_cages"):
 		playAnimation(StageScene.Solo, "stand", {pc="psricky"})
 		aimCameraAndSetLocName("psmine_sleep")
-		saynn("You watch as the armed goons gather all of you up near the big cage, your sleeping spot.")
+		saynn("Ты наблюдаешь, как вооруженные головорезы сгоняют вас всех к большой клетке — вашему месту для сна.")
 
-		saynn("Ricky steps forward, clearing his throat theatrically, catching everyone's attention.")
+		saynn("Рикки делает шаг вперед и театрально откашливается, привлекая к себе всеобщее внимание.")
 
-		saynn("[say=psricky]Enjoying the vacation so far? Well.. I've brought bad news.[/say]")
+		saynn("[say=psricky]Как вам отпуск? Что ж... у меня плохие новости.[/say]")
 
-		saynn("The slaves all look between each other, their gazes concerned.")
+		saynn("Рабы переглядываются, в их глазах читается тревога.")
 
-		saynn("[say=psricky]Everything good has a tendency to end one day. Tragic, isn't it?[/say]")
+		saynn("[say=psricky]Все хорошее когда-нибудь заканчивается. Трагично, не правда ли?[/say]")
 
-		saynn("A collective sigh of relief ripples through the line. Looks like this 'vacation' is over.")
+		saynn("По рядам пробегает коллективный вздох облегчения. Похоже, этот «отпуск» подошел к концу.")
 
-		saynn("[say=psricky]You did this job for me. And for that, you certainly deserve something. Why wouldn't I reward those who got me here? That'd be unfair, cruel, fucked.[/say]")
+		saynn("[say=psricky]Ты сделал эту работу для меня. И за это ты определенно заслуживаешь награду. Почему бы мне не отблагодарить тех, кто привел меня к успеху? Было бы несправедливо, жестоко и просто через жопу.[/say]")
 
-		saynn("Hope is flickering in the slaves' eyes.")
+		saynn("В глазах рабов вспыхивает искорка надежды.")
 
-		saynn("[say=psricky]We'll get to that. First, I've got some actual bad news.[/say]")
+		saynn("[say=psricky]До этого мы еще доберемся. Сначала — настоящие плохие новости.[/say]")
 
-		saynn("He pauses for effect.. and an effect it sure has.")
+		saynn("Он делает паузу для эффекта... и эффект действительно произведен.")
 
-		saynn("[say=psricky]After loading up the spaceship with all that precious ore, I noticed a problem.[/say]")
+		saynn("[say=psricky]Загрузив космический корабль всей этой драгоценной рудой, я заметил одну проблему.[/say]")
 
-		saynn("He casts a quick glance at his crew.")
+		saynn("Он бросает быстрый взгляд на свою команду.")
 
-		saynn("[say=psricky]What's the problem you might ask? Ricky, what's the problem?[/say]")
+		saynn("[say=psricky]Вы спросите: в чем проблема? Рикки, в чем проблема?[/say]")
 
-		saynn("He raises a brow, the silence tugging on the strings of your nerves.")
+		saynn("Он вскидывает бровь, и тишина начинает натягивать ваши нервы, как струны.")
 
-		saynn("[say=psricky]Let me say it straight to ya. We're low on space, barely enough for my people. Sad shit, eh? I guess I made a bit of.. how do you say it.. miscalculation. An oopsie.[/say]")
+		saynn("[say=psricky]Давай скажу прямо. Места мало, едва хватает на моих людей. Паршиво, а? Видать, я немного... как это сказать... просчитался. Ошибочка вышла.[/say]")
 
-		saynn("The pressure rises every second. Ambience turning hostile real quick..")
+		saynn("С каждой секундой давление растет. Атмосфера стремительно становится враждебной...")
 
-		saynn("One of the shaky slaves can't bear it anymore. They take off and bolt for the ship..")
+		saynn("Один из дрожащих рабов больше не выдерживает. Он срывается с места и несется к кораблю...")
 
-		addButton("Continue", "See what happens next", "slave_gets_shot")
+		addButton("Продолжить", "Смотреть, что будет дальше", "slave_gets_shot")
 	if(state == "slave_gets_shot"):
 		playAnimation(StageScene.Solo, ["firepistol", "res://Inventory/UnriggedModels/Pistol/Pistol.tscn"], {pc="psricky"})
-		saynn("Shouts echo as the slave dashes across the hard rock.. then a single, deafening gunshot cracks. The poor lad collapses instantly, blood spilling across their back.")
+		saynn("Крики эхом разносятся над твердыми скалами... и вдруг раздается оглушительный выстрел. Бедняга мгновенно валится на землю, кровь заливает его спину.")
 
-		saynn("Ricky adopts a classic gunslinger stance.. legs apart, revolver still drawn. His goons aim their rifles at you.. fingers twitching on triggers.")
+		saynn("Рикки принимает классическую стойку стрелка: ноги на ширине плеч, револьвер всё еще наготове. Его головорезы целятся в вас, пальцы так и подергиваются на спусковых крючках...")
 
-		saynn("[say=psricky]My bad, really. Now, here's a thought to soften the blow: I wasn't gonna take anyone back on board anyway.[/say]")
+		saynn("[say=psricky]Мой косяк, честно. А теперь, чтобы удар был не таким болезненным, вот вам мысль: я бы всё равно никого обратно на борт не взял.[/say]")
 
-		saynn("He holsters his revolver with a casual snap.")
+		saynn("Он небрежным движением убирает револьвер в кобуру.")
 
-		saynn("[say=psricky]Your reward, right. Curious what it is? This lovely cage right here. I'm generous, eh? Enjoy the rest of your vacation.[/say]")
+		saynn("[say=psricky]Твой награда, ага. Любопытно, что это? Вот эта прелестная клетка прямо здесь. Я щедрый, а? Наслаждайся остатком своего отпуска.[/say]")
 
-		saynn("He gives you all a final nod.. before spitting onto the ground and turning around.")
+		saynn("Он одаривает вас всех прощальным кивком... прежде чем сплюнуть на землю и развернуться.")
 
-		saynn("[say=psricky]Light up everyone who tries to follow us, boys. Time to leave.[/say]")
+		saynn("[say=psricky]Обложите огнем каждого, кто попытается пойти за нами, парни. Пора валить.[/say]")
 
-		saynn("Panic erupts. A handful of braver.. or more desperate.. slaves rush after the goons, pickaxes in hand.")
+		saynn("Вспыхивает паника. Горстка самых смелых... или самых отчаявшихся... рабов бросается вдогонку за громилами, сжимая в руках кирки.")
 
-		saynn("In a blur of a second, gunfire erupts.")
+		saynn("В мгновение ока раздается оглушительная стрельба.")
 
-		saynn("Screams echo, bodies crumple, blood gets spilled fast.")
+		saynn("Эхом разносятся крики, тела валятся на землю, кровь хлещет во все стороны.")
 
-		saynn("Seeing the literal slaughter, there is only one correct choice.")
+		saynn("Видя эту настоящую бойню, остается лишь один верный выбор.")
 
-		addButton("Hide", "Try to hide", "do_hide")
+		addButton("Спрятаться", "Попытаться спрятаться", "do_hide")
 	if(state == "do_hide"):
 		removeCharacter("psricky")
 		playAnimation(StageScene.Solo, "stand")
 		aimCameraAndSetLocName("psmine_hide")
-		saynn("You get away from the bloodshed, cramming yourself against the cold jagged walls of the caves, panting raggedly, heart hammering away as the last gunshots fade into the oppressive silence.")
+		saynn("Вам удается уйти от кровавой резни; вы вжимаетесь в холодные зазубренные стены пещеры, тяжело и рвано дыша, а сердце бешено колотится, пока последние выстрелы затихают в гнетущей тишине.")
 
-		saynn("Around you, a handful of battered survivors slump against the rocky floor, some are clearly wounded.")
+		saynn("Вокруг вас, привалившись к скалистому полу, сидят несколько избитых выживших; некоторые явно ранены.")
 
-		saynn("In the distance, Ricky's spaceship rumbles to life. You and the others watch in stunned horror as it lifts off, its engines churning dust into the air before rising into the dim, red sky. For a moment it hangs there, like a cruel joke of a promise.. before flying off, its silhouette gradually reducing down to a single dot.. before.. gone completely..")
+		saynn("Вдалеке с гулом оживает космический корабль Рикки. Вы и остальные в оцепенении и ужасе наблюдаете, как он взмывает вверх, взбивая двигателями пыль, прежде чем подняться в тусклое красное небо. На мгновение он зависает там, словно жестокая насмешка, обещание... а затем уносится прочь, его силуэт постепенно превращается в крошечную точку... а потом... исчезает совсем...")
 
-		saynn("Slowly, the terrible truth settles in.. you're abandoned. Unarmed. Stranded on this god-forsaken rock of a planet with nothing but desperation for company. Your chest becomes heavier with each breath.")
+		saynn("Медленно наваливается ужасающая правда... вы брошены. Без оружия. Застряли на этой проклятой скале-планете, и единственная ваша компания — отчаяние. С каждым вдохом тяжесть в груди становится всё сильнее.")
 
-		saynn("[say=pc]Fuck.[/say]")
+		saynn("[say=pc]Блядь.[/say]")
 
-		saynn("Beep..")
+		saynn("Бип...")
 
-		saynn("[say=pc]Huh?[/say]")
+		saynn("[say=pc]А?[/say]")
 
-		saynn("You look around, trying to find the source of that beeping.")
+		saynn("Вы озираетесь по сторонам, пытаясь найти источник этого звука.")
 
-		saynn("Beep.. beep..")
+		saynn("Бип... бип...")
 
-		saynn("Your confused stare illuminates the bland surroundings.. but the rest of the lost souls already found the cause.. they back away from you and your beeping collar.")
+		saynn("Ваш растерянный взгляд скользит по безликому окружению... но остальные потерянные души уже нашли причину... они в ужасе отстраняются от вас и вашего пищащего ошейника.")
 
-		saynn("Beep.. beep.. beep-beep-beep..")
+		saynn("Бип... бип... бип-бип-бип...")
 
-		saynn("Oh shit, it's flashing lights. Tiny red lights pulse fast..")
+		saynn("Твою мать, он мигает! Маленькие красные огоньки бешено пульсируют...")
 
-		addButton("Continue", "See what happens next", "pc_gets_shocked")
+		addButton("Продолжить", "Смотреть, что будет дальше", "pc_gets_shocked")
 	if(state == "pc_gets_shocked"):
 		playAnimation(StageScene.Solo, "defeat")
-		saynn("Then, without warning, a jolt of electricity surges through your body.. sharp and searing, like molten knives sliding through your veins. You convulse mid-breath, a strangled scream ripping from your throat.")
+		saynn("Затем, без предупреждения, по вашему телу проходит мощный разряд электричества... резкий и обжигающий, словно расплавленные ножи, скользящие по венам. Вы содрогаетесь на полувздохе, и из горла вырывается сдавленный крик.")
 
-		saynn("The world tilts, your vision fracturing into shards of red and black.. and then.. everything goes dark..")
+		saynn("Мир кренится, зрение рассыпается на осколки красного и черного... а затем... всё погружается во тьму...")
 
-		addButton("Continue", "See what happens next", "everything_dark")
+		addButton("Продолжить", "Смотреть, что будет дальше", "everything_dark")
 	if(state == "everything_dark"):
 		playAnimation(StageScene.Sleeping, "sleep")
-		saynn("Everything is dark..")
+		saynn("Вокруг сплошная тьма...")
 
-		saynn("Very dark..")
+		saynn("Очень темно...")
 
-		saynn("Still dark..")
+		saynn("Все еще темно...")
 
-		saynn("Dark..")
+		saynn("Темнота...")
 
-		addButton("Continue", "See what happens after the darkness..", "got_saved")
+		addButton("Продолжить", "Посмотрите, что случится после этой тьмы...", "got_saved")
 	if(state == "got_saved"):
 		playAnimation(StageScene.GivingBirth, "idle")
 		aimCameraAndSetLocName("intro_interogation")
 		addCharacter("intro_detective")
-		saynn("A faint hiss of recycled air greets you as consciousness seeps back in. You lie on something hard yet oddly cushioned, your limbs heavy as though weighted by steel. Blurred shapes drift in and out of focus.")
+		saynn("Слабое шипение рециркулируемого воздуха приветствует вас, когда сознание начинает возвращаться. Вы лежите на чем-то твердом, но странно мягком; конечности налиты тяжестью, будто на них надеты стальные гири. Размытые очертания то проступают, то снова исчезают.")
 
-		saynn("The sharp scent of antiseptic stings your nostrils.")
+		saynn("Резкий запах антисептика щиплет ноздри.")
 
-		saynn("[say=intro_detective]Thanks, doctor. I will take it from here.[/say]")
+		saynn("[say=intro_detective]Спасибо, доктор. Дальше я сам.[/say]")
 
-		saynn("Familiar voice.. Where did you hear it before?")
+		saynn("Знакомый голос... Где вы его уже слышали?")
 
-		saynn("The vision is blurry.. but you see a silhouette.. well-tailored wolf in a white shirt and grey trousers.")
+		saynn("Зрение затуманено... но вы видите силуэт... элегантно одетый волк в белой рубашке и серых брюках.")
 
-		saynn("He snaps his fingers in front of your face, making your ears perk. After that, he just takes a seat on a chair. You open your eyes fully and look around.. you're in a rolling bed.. comfy. The guy offers you a cool gaze.")
+		saynn("Он щелкает пальцами прямо перед твоим лицом, заставляя тебя вздрогнуть и прислушаться. После этого он просто усаживается на стул. Ты широко открываешь глаза и оглядываешься... ты лежишь в раскладушке... довольно уютно. Парень одаряет тебя холодным взглядом.")
 
-		saynn("[say=intro_detective]You've been brought back under AlphaCorp's protection. You're safe now.[/say]")
+		saynn("[say=intro_detective]Тебя вернули под защиту «АльфаКорп». Теперь ты в безопасности.[/say]")
 
-		saynn("Somehow, you don't feel that much more safe.")
+		saynn("Почему-то чувство безопасности тебя особо не посещает.")
 
-		saynn("[say=pc]Yeah, hello to you too..[/say]")
+		saynn("[say=pc]Да, привет и тебе..[/say]")
 
-		saynn("[say=intro_detective]My name is Jake, IIPF, threat..[/say]")
+		saynn("[say=intro_detective]Меня зовут Джейк. IIPF, угроза..[/say]")
 
-		saynn("It hits you.")
+		saynn("До тебя наконец доходит.")
 
-		saynn("[say=pc]I know who you are.[/say]")
+		saynn("[say=pc]Я знаю, кто ты такая.[/say]")
 
-		saynn("He tilts his head slightly down, brow raised.")
+		saynn("Он слегка наклоняет голову, приподняв бровь.")
 
-		saynn("[say=pc]How did you find me?[/say]")
+		saynn("[say=pc]Как ты меня нашел?[/say]")
 
-		saynn("Jake grabs a few papers and swipes his gaze through them.")
+		saynn("Джейк хватает несколько бумаг и быстро пробегает по ним глазами.")
 
-		saynn("[say=intro_detective]We intercepted your signal.[/say]")
+		saynn("[say=intro_detective]Мы перехватили твой сигнал.[/say]")
 
-		saynn("Your personal escort team, how convenient..")
+		saynn("Твоя личная группа сопровождения, как удобно...")
 
-		saynn("Your hand reaches to tug on your collar.. it's still there.. and it's still sitting just as tight as before.")
+		saynn("Твоя рука тянется к воротнику... он всё ещё на месте... и сидит так же плотно, как и прежде.")
 
-		saynn("[say=pc]Was the shock part really that necessary?[/say]")
+		saynn("[say=pc]Неужели этот шок был действительно так необходим?[/say]")
 
-		saynn("[say=intro_detective]It's for your own protection, really.[/say]")
+		saynn("[say=intro_detective]На самом деле, это для твоей же защиты.[/say]")
 
-		saynn("You let out a bitter laugh.")
+		saynn("Ты издаешь горький смешок.")
 
-		saynn("[say=pc]Of course. What about the others?[/say]")
+		saynn("[say=pc]Ну конечно. А как же остальные?[/say]")
 
-		saynn("Jake's pen hovers over the files as he raises a brow.")
+		saynn("Ручка Джейка замирает над файлами, когда он вскидывает бровь.")
 
-		saynn("[say=intro_detective]Others?[/say]")
+		saynn("[say=intro_detective]Остальные?[/say]")
 
-		saynn("[say=pc]There were other.. people.. on that planet.[/say]")
+		saynn("[say=pc]На той планете были и другие... люди...[/say]")
 
-		saynn("He shuffles his papers and then puts them away.")
+		saynn("Он перебирает бумаги, а затем убирает их.")
 
-		saynn("[say=intro_detective]I'm certain they've been processed accordingly.[/say]")
+		saynn("[say=intro_detective]Я уверен, что всё было обработано надлежащим образом.[/say]")
 
-		saynn("Alright..")
+		saynn("Ладно...")
 
-		saynn("[say=pc]So.. what now?[/say]")
+		saynn("[say=pc]Ну и... что теперь?[/say]")
 
-		saynn("[say=intro_detective]I'm here to assess the failed escape attempt from one of our correctional facilities, do a clinical review of your actions, and perform all of the required legal procedures. I also gotta make sure this.. incident doesn't happen again.[/say]")
+		saynn("[say=intro_detective]Я здесь, чтобы оценить неудачную попытку побега из одного из наших исправительных учреждений, провести клинический разбор ваших действий и выполнить все необходимые юридические процедуры. А еще мне нужно убедиться, что этот... инцидент не повторится.[/say]")
 
-		saynn("[say=pc]Escape attempt? Listen. I got kidnapped by one of the staff! I got sold away on a slave auction.[/say]")
+		saynn("[say=pc]Попытка побега? Слушай! Меня похитил один из сотрудников! Меня продали на рабском аукционе![/say]")
 
-		saynn("He nods subtly after each of your sentences.")
+		saynn("Он едва заметно кивает после каждого вашего предложения.")
 
-		saynn("[say=pc]You don't believe me, do you?[/say]")
+		saynn("[say=pc]Ты мне не веришь, да?[/say]")
 
-		saynn("You glare at him.")
+		saynn("Вы свирепо смотрите на него.")
 
-		saynn("[say=intro_detective]I have no reason to think that any of AlphaCorp's secret facilities are compromised.[/say]")
+		saynn("[say=intro_detective]У меня нет причин полагать, что какие-либо секретные объекты АльфаКорп были скомпрометированы.[/say]")
 
-		saynn("You growl.")
+		saynn("Ты рычишь.")
 
-		saynn("[say=pc]Well, you're dumb as bricks, then.[/say]")
+		saynn("[say=pc]Ну, тогда ты тупой как пробка.[/say]")
 
-		saynn("He stays quiet, his expression barely reacting to your words.")
+		saynn("Он молчит, и на его лице почти не отражается реакция на твои слова.")
 
-		saynn("After a few seconds, he grabs a datapad and starts looking up something.")
+		saynn("Спустя несколько секунд он хватает датапад и начинает что-то искать.")
 
-		saynn("[say=pc]You're not even gonna ask who it was?[/say]")
+		saynn("[say=pc]Ты даже не спросишь, кто это был?[/say]")
 
-		saynn("[say=intro_detective]Any of your claims will lack the most important part. Proof.[/say]")
+		saynn("[say=intro_detective]Любым твоим притязаниям будет не хватать самого важного. Доказательств.[/say]")
 
-		saynn("Nothing you say can change anything. So you just sigh.. and relax in bed. Feels so much better than that cage..")
+		saynn("Что бы ты ни сказала, это ничего не изменит. Поэтому ты просто вздыхаешь... и расслабляешься в постели. Это куда приятнее, чем та клетка...")
 
-		saynn("[say=intro_detective]I'm finishing the required paperwork.[/say]")
+		saynn("[say=intro_detective]Я заканчиваю оформление необходимых бумаг.[/say]")
 
-		saynn("[say=pc]How are you gonna make sure that this doesn't happen?[/say]")
+		saynn("[say=pc]И как ты собираешься гарантировать, что это не повторится?[/say]")
 
-		saynn("[say=intro_detective]Your sentence has been extended - an administrative penalty for the illegal actions.[/say]")
+		saynn("[say=intro_detective]Твой срок продлен — это административное наказание за незаконные действия.[/say]")
 
-		saynn("[say=pc]It's already indefinite anyway.[/say]")
+		saynn("[say=pc]Он и так уже неопределенный.[/say]")
 
-		saynn("He stares at you.. intently.")
+		saynn("Он пристально смотрит на тебя...")
 
-		saynn("[say=intro_detective]I will now invite the officers in.[/say]")
+		saynn("[say=intro_detective]А теперь я приглашу офицеров.[/say]")
 
-		saynn("Next many moments blur into one..")
+		saynn("Следующие мгновения сливаются в одно целое...")
 
-		saynn("The officers cuff you and bring you onto a spaceship.")
+		saynn("Офицеры надевают на тебя наручники и ведут к космическому кораблю.")
 
-		saynn("Soon enough, you're already placing your foot back onto the BDCC's grounds.")
+		saynn("И вот, совсем скоро ты снова ступаешь на земли исправительного центра BDCC.")
 
-		addButton("Continue", "See what happens next", "risha_items")
+		addButton("Продолжить", "Смотреть, что будет дальше", "risha_items")
 	if(state == "risha_items"):
 		aimCameraAndSetLocName(GM.pc.getLocation())
 		playAnimation(StageScene.Duo, "stand", {npc="risha"})
 		removeCharacter("intro_detective")
 		addCharacter("risha")
-		saynn("[say=risha]Here is your shit.[/say]")
+		saynn("[say=risha]Вот твое дерьмо.[/say]")
 
-		saynn("At least.. you don't have to start from zero.")
+		saynn("По крайней мере... тебе не придется начинать с нуля.")
 
-		saynn("[say=risha]Be glad that I decided against just throwing it all out.[/say]")
+		saynn("[say=risha]Радуйся, что я решила не выбрасывать всё это нахер.[/say]")
 
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
-		saynn("You're back in your cell. Home, sweet home.")
+		saynn("Ты снова в своей камере. Дом, милый дом.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

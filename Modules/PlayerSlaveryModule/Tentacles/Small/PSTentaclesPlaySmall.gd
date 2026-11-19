@@ -25,830 +25,830 @@ func _run():
 
 	if(state == ""):
 		_tentacles.doAnimDuo("idle")
-		saynn("The tentacle monster has stopped in the corner where all the toys and puzzles are..")
+		saynn("Тентаклевое чудовище замерло в углу, где лежат все игрушки и головоломки...")
 
-		saynn("It looks like it might wanna play or something.")
+		saynn("Похоже, оно хочет поиграть или типа того.")
 
-		addButton("Puzzle", "Do a puzzle where you have to put objects of various shapes into the correctly-shaped holes", "doPuzzle")
-		addButton("Armwrestling", "Test the tentacle's strength", "doArmwrestling")
-		addButton("Shoo", "Tell tentacles to go away", "say_shoo")
+		addButton("Головоломка", "Собери пазл, где нужно вставлять предметы разных форм в отверстия подходящей формы", "doPuzzle")
+		addButton("Армрестлинг", "Проверить силу щупалец", "doArmwrestling")
+		addButton("Брысь!", "Велеть щупальцам убираться", "say_shoo")
 	if(state == "doBall"):
-		saynn("YOU PLAY BALL!")
+		saynn("ПОИГРАЕМ В МЯЧ!")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "say_shoo"):
-		saynn("You shoo the tentacles away from this corner of the cell!")
+		saynn("Вы прогоняете щупальца прочь из этого угла камеры!")
 
 		_tentacles.talk("Fine. We possess a lot of knowledge already.")
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "a0"):
-		saynn("You offer the tentacles to do some armwrestling.. tentacle-wrestling.")
+		saynn("Вы предлагаете щупальцам перетянуть палочку... то есть, побороться на руках.")
 
-		saynn("They're strong enough to move around so they probably have some strength in them.")
+		saynn("Они достаточно подвижны, так что сила в них явно есть.")
 
-		saynn("You catch the strongest-looking tentacle and set your elbow on one of the nearby tables.")
+		saynn("Ты хватаешь самый мощный на вид щупалец и упираешься локтем в один из ближайших столов.")
 
-		saynn("It looks like the monster is ready.")
+		saynn("Похоже, монстр готов.")
 
-		saynn("[say=pc]Alright, bring it on.[/say]")
+		saynn("[say=pc]Ну давай, нападай![/say]")
 
-		saynn("You barely apply any pressure, and it immediately yields, flopping limply onto the table.")
+		saynn("Ты едва прикладываешь усилие, и щупалец тут же сдается, вяло плюхнувшись на стол.")
 
 		_tentacles.talk("We surrender, we are not strong enough.")
-		saynn("Rather than feeling triumph.. you're worried. The other tentacles in the periphery sway gently, as if confused.")
+		saynn("Вместо триумфа... ты чувствуешь беспокойство. Остальные щупальца на периферии слегка покачиваются, словно в замешательстве.")
 
-		saynn("[say=pc]You're okay?[/say]")
+		saynn("[say=pc]Ты в порядке?[/say]")
 
-		saynn("You release the tentacle, and it pulls back back slowly, looking alright.")
+		saynn("Ты отпускаешь щупалец, и оно медленно отползает назад, выглядя вполне целым.")
 
-		saynn("[say=pc]Let's do multiple of you I guess.[/say]")
+		saynn("[say=pc]Думаю, стоит попробовать сразу с несколькими.[/say]")
 
-		saynn("You catch the tips of a few biggest tentacles and prepare for another armwrestling match.")
+		saynn("Ты хватаешь кончики нескольких самых крупных щупалец, готовясь к новому раунду армрестлинга.")
 
-		saynn("[say=pc]Do it![/say]")
+		saynn("[say=pc]Давай![/say]")
 
-		saynn("You let them take the lead.")
+		saynn("Ты позволяешь им вести игру.")
 
-		saynn("The tentacles start trying to apply pressure.. more and more of it.. but it's barely enough to make you feel anything. It is extremely easy for you to hold them in the same exact spot.")
+		saynn("Щупальца начинают давить... всё сильнее и сильнее... но этого едва хватает, чтобы ты хоть что-то почувствовал. Тебе очень легко удерживать их в одной и той же точке.")
 
-		saynn("And when you begin overpowering them, you actually get concerned.. it feels like you will snap these tentacles any second.. so you stop early.")
+		saynn("И когда ты начинаешь их пересиливать, тебе становится даже не по себе... кажется, что ты вот-вот переломишь эти щупальца в любую секунду... поэтому ты останавливаешься раньше времени.")
 
-		saynn("[say=pc]Alright.. I see.. You need a lot of training. Gotta build your core strength too somehow. Maybe the right meal will help.[/say]")
+		saynn("[say=pc]Ладно... понятно... Тебе нужно много тренироваться. И нужно как-то укрепить мышцы кора. Может, правильное питание поможет.[/say]")
 
-		saynn("The tentacles feel your negative tone and lower their tips.")
+		saynn("Щупальца чувствуют твой негативный настрой и опускают свои кончики.")
 
 		_tentacles.talk("We did our best.")
-		saynn("You just gotta do this more often.")
+		saynn("Тебе просто нужно делать это чаще.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "a1"):
-		saynn("You offer the tentacles to do some armwrestling.. tentacle-wrestling.")
+		saynn("Вы предлагаете щупальцам перетянуть палочку... то есть, побороться на руках.")
 
-		saynn("They're strong enough to move around so they probably have some strength in them.")
+		saynn("Они достаточно подвижны, так что сила в них явно есть.")
 
-		saynn("You catch the strongest-looking tentacle and set your elbow on one of the nearby tables.")
+		saynn("Ты хватаешь самый мощный на вид щупалец и упираешься локтем в один из ближайших столов.")
 
-		saynn("It looks like the monster is ready.")
+		saynn("Похоже, монстр готов.")
 
-		saynn("[say=pc]Alright, let's see if you have some more strength in you now. Go.[/say]")
+		saynn("[say=pc]Ладно, посмотрим, прибавилось ли у тебя сил. Давай.[/say]")
 
-		saynn("You apply some pressure and immediately start winning.. it doesn't look like a single tentacle is strong enough at all.")
+		saynn("Ты надавливаешь, и победа приходит мгновенно... кажется, ни одно из этих щупалец вообще не обладает достаточной силой.")
 
-		saynn("[say=pc]Use more of.. you.[/say]")
+		saynn("[say=pc]Вкладывай в это больше... себя.[/say]")
 
-		saynn("A few more tentacles wrap around your palm, trying to bring it down the opposite way from where you're pulling.")
+		saynn("Еще несколько щупалец обвивают твою ладонь, пытаясь прижать её в сторону, противоположную той, куда ты тянешь.")
 
-		saynn("With the usage of extra tentacles, it sure feels a bit stronger.. but you're still only using about half of your strength.")
+		saynn("С использованием дополнительных щупалец они определенно ощущаются сильнее... но ты всё еще используешь лишь около половины своей силы.")
 
-		addButton("Win!", "Show the tentacles their place by winning the armwrestling match", "a1_win")
-		addButton("Lose", "Give up the match and let the tentacles win", "a1_lose")
-		addButton("Keep it going", "Apply just enough strength to prevent the tentacles from winning", "a1_keep")
+		addButton("Победа!", "Поставить щупальца на место, выиграв в армрестлинге", "a1_win")
+		addButton("Проиграть", "Сдаться в поединке и позволить щупальцам победить", "a1_lose")
+		addButton("Продолжать", "Приложить ровно столько силы, чтобы не дать щупальцам победить", "a1_keep")
 	if(state == "a1_win"):
-		saynn("The tentacles clearly won't be able to win this match.. so you take the lead and overpower them with ease, bringing the whole set of the strongest tentacles down to the table surface.")
+		saynn("Щупальца явно не смогут выиграть этот матч... поэтому ты берешь инициативу в свои руки и с легкостью подавляешь их, впечатывая всю охапку сильнейших щупалец в поверхность стола.")
 
-		saynn("[say=pc]That's how you do it.[/say]")
+		saynn("[say=pc]Вот так-то лучше![/say]")
 
-		saynn("The monster feels your smug aura and whips your butt for it.")
+		saynn("Монстр чувствует твою самодовольную ауру и отвешивает тебе за это звонкий подзатыльник по заднице.")
 
-		saynn("Luckily, it didn't hurt that much. But that also means that the tentacles didn't really get any stronger.")
+		saynn("К счастью, это не было слишком больно. Но это также означает, что щупальца так и не стали намного сильнее.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "a1_lose"):
-		saynn("Maybe the tentacles just need some encouragement.")
+		saynn("Может, щупальцам просто нужно немного подбадривания?")
 
-		saynn("You relax your hand and let the multiple tentacles overpower you. You lose!")
+		saynn("Ты расслабляешь руку и позволяешь множеству щупалец одолеть себя. Ты проиграла!")
 
-		saynn("[say=pc]Aw. Good job, you're so strong![/say]")
+		saynn("[say=pc]Оу. Молодец, ты такая сильная![/say]")
 
 		if (_tentacles.mind <= 3):
-			saynn("The tentacles aren't smart enough to see through your act.. so they sway happily.. But they didn't actually get any stronger from this.")
+			saynn("Щупальцам не хватает ума, чтобы раскусить твою игру... поэтому они довольно покачиваются... Но на самом деле от этого они не стали сильнее.")
 
 		else:
-			saynn("The tentacles are smart enough to see that something is fishy. You get multiple stern looks from their tips.")
+			saynn("Щупальцам хватает ума понять, что здесь что-то нечисто. Ты ловишь на себя несколько суровых взглядов с их кончиков.")
 
 			_tentacles.talk("We understand what you did. No need for that.")
-			saynn("[say=pc]What? I lose, fair and square.[/say]")
+			saynn("[say=pc]Что? Я проиграла, честно и без обмана.[/say]")
 
-			saynn("The tentacles sway annoyed.. and slither away. Looks like they didn't get any stronger from this.")
+			saynn("Щупальца раздраженно покачиваются... и уползают прочь. Похоже, от этого они не стали сильнее.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "a1_keep"):
-		saynn("You decide to apply a small amount of your strength.. enough to keep the tentacles from winning.. but not enough to win yourself.")
+		saynn("Ты решаешь приложить немного своей силы... достаточно, чтобы не дать щупальцам победить... но недостаточно, чтобы победить самой.")
 
-		saynn("It doesn't take too long before the tentacles fail to keep up the pressure and lose anyway.")
+		saynn("Проходит совсем немного времени, и щупальца не выдерживают давления и всё равно проигрывают.")
 
-		saynn("Still, it was a good workout for them!")
+		saynn("Тем не менее, для них это была отличная тренировка!")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "a2"):
-		saynn("You offer the tentacles to do some armwrestling.. tentacle-wrestling.")
+		saynn("Вы предлагаете щупальцам перетянуть палочку... то есть, побороться на руках.")
 
-		saynn("They're strong enough to move around so they probably have some strength in them.")
+		saynn("Они достаточно подвижны, так что сила в них явно есть.")
 
-		saynn("You know that they're not the strongest so you catch a few of the most strong ones and set your elbow on the nearby table.")
+		saynn("Ты понимаешь, что они не самые сильные, поэтому хватаешь парочку самых мощных и упираешься локтем в ближайший стол.")
 
-		saynn("[say=pc]Show me your gains.[/say]")
+		saynn("[say=pc]Покажи мне свои мышцы![/say]")
 
-		saynn("It looks like the monster is ready.")
+		saynn("Похоже, монстр готов.")
 
-		saynn("[say=pc]Go.[/say]")
+		saynn("[say=pc]Давай![/say]")
 
-		saynn("You decide to apply a small amount of your strength.. enough to keep the tentacles from winning.. but not enough to win yourself.")
+		saynn("Ты решаешь приложить немного своей силы... достаточно, чтобы не дать щупальцам победить... но недостаточно, чтобы победить самой.")
 
-		saynn("Why? Well, the reason becomes obvious soon.")
+		saynn("Почему? Что ж, причина станет очевидной очень скоро.")
 
-		saynn("You start panting.. the constant pressure from the tentacles does add up eventually. It starts taking more and more of your strength to keep your hand where it is. All the while, the tentacles stay a constant force, sometimes sneakily switching the used tentacles.")
+		saynn("Ты начинаешь тяжело дышать... постоянное давление щупалец со временем дает о себе знать. Тебе требуется всё больше и больше сил, чтобы удерживать руку на месте. При этом щупальца давят с неизменной силой, иногда незаметно подменяя те, что задействованы в схватке.")
 
-		saynn("By this point, you're not even sure if you can win this match. Your hand is shaking, your muscles are screaming for more oxygen, making you hungrily grab air with your mouth.")
+		saynn("К этому моменту ты уже даже не уверен, сможешь ли победить. Рука дрожит, мышцы буквально вопят о нехватке кислорода, заставляя тебя жадно хватать ртом воздух.")
 
-		saynn("[say=pc]Uh.. draw?[/say]")
+		saynn("[say=pc]Эх... ничья?[/say]")
 
 		_tentacles.talk("A draw would leave both of us unsatisfied.")
-		saynn("The tentacles keep pushing.. and so you start losing, your hand getting overpowered.")
+		saynn("Щупальца продолжают давить... и ты начинаешь сдавать, твоя рука поддается их напору.")
 
-		saynn("That is, until the pool of untouched tentacles runs out. All of them are extremely tired by now.. and so you get a sudden victory! Completely out of nowhere.")
+		saynn("Так продолжается до тех пор, пока не заканчиваются не задействованные щупальца. К этому времени все они изрядно вымотаны... и тут тебя ждет внезапная победа! Совершенно неожиданно.")
 
-		saynn("[say=pc]Phew.. that was a good one.[/say]")
+		saynn("[say=pc]Фух... а это было мощно.[/say]")
 
-		saynn("Both of you have gotten a great workout.")
+		saynn("Вы оба отлично размялись.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "a3"):
-		saynn("You offer the tentacles to do some armwrestling.. tentacle-wrestling.")
+		saynn("Вы предлагаете щупальцам перетянуть палочку... то есть, побороться на руках.")
 
-		saynn("You know that they're not the strongest so you catch a few of the most thick-looking ones and set your elbow on the nearby table.")
+		saynn("Понимая, что они не самые сильные, ты перехватываешь несколько самых толстых щупалец и упираешься локтем в стоящий рядом стол.")
 
-		saynn("[say=pc]Prove me you're not a weakling.[/say]")
+		saynn("[say=pc]Докажи мне, что ты не слабачка![/say]")
 
-		saynn("It looks like the monster is ready.")
+		saynn("Похоже, монстр готов.")
 
-		saynn("[say=pc]Go.[/say]")
+		saynn("[say=pc]Давай![/say]")
 
-		saynn("Oof, the sudden pull almost catches you off-guard. These tentacles sure have gotten stronger.")
+		saynn("Ух, резкий рывок почти застал тебя врасплох. Эти щупальца определенно стали сильнее.")
 
-		saynn("Only using half of your strength isn't enough, you gotta put all of it into this. You grab the table with your other hand and use it as support.")
+		saynn("Использовать лишь половину сил недостаточно, нужно выложиться на полную. Ты хватаешься другой рукой за стол, используя его как опору.")
 
-		saynn("The tentacles keep pushing, their collective pressure gradually wearing you down. A quiet growl starts escaping your lips, adrenaline starts pumping through your blood!")
+		saynn("Щупальца продолжают давить, их общая мощь постепенно изматывает тебя. С твоих губ срывается тихий рык, а в крови начинает закипать адреналин!")
 
-		saynn("You're managing to keep your hand roughly in the middle.. but it sure takes all of what you've got.")
+		saynn("Тебе удается удерживать руку примерно посередине... но это требует от тебя абсолютно всех сил.")
 
-		saynn("Eventually, the tentacles start giving in! They're slipping, their strength running out fast.")
+		saynn("В конце концов, щупальца начинают сдаваться! Они соскальзывают, их силы стремительно иссякают.")
 
 		if (_tentacles.lust < 3):
-			saynn("That's when one of the sneaky ones quietly reaches out.. and suddenly tickles your armpit!")
+			saynn("И тут одно из самых хитрых незаметно подбирается ближе... и внезапно щекочет тебя под мышкой!")
 
-			saynn("[say=pc]AH![/say]")
+			saynn("[say=pc]АХ![/say]")
 
 		else:
 			if (GM.pc.hasReachableVagina()):
-				saynn("That's when one of the sneaky ones quietly reaches out.. and suddenly starts rubbing your pussy!")
+				saynn("И тут одна из самых хитрых тихонько тянется к тебе... и внезапно начинает тереть твою киску!")
 
-				saynn("[say=pc]Ah..[/say]")
+				saynn("[say=pc]Ах..[/say]")
 
 			elif (GM.pc.hasReachablePenis() || GM.pc.isWearingChastityCage()):
-				saynn("That's when one of the sneaky ones quietly reaches out.. and suddenly starts stroking your {pc.penis}!")
+				saynn("И тут одна из самых хитрых тихонько тянется к тебе... и внезапно начинает ласкать твою {pc.penis}!")
 
-				saynn("[say=pc]Ah.[/say]")
+				saynn("[say=pc]Ах.[/say]")
 
 			else:
-				saynn("That's when one of the sneaky ones quietly reaches out.. and suddenly starts rubbing your tailhole!")
+				saynn("И тут одна из самых хитрых тихонько тянется к тебе... и внезапно начинает тереть твой анус!")
 
-				saynn("[say=pc]Ah..[/say]")
+				saynn("[say=pc]Ах..[/say]")
 
-		saynn("This one trick was enough for you to lose your grip and lose the match! The tentacles bring your hand down to the table's surface and pin it!")
+		saynn("Этого одного трюка хватило, чтобы ты потеряла хватку и проиграла матч! Щупальца прижимают твою руку к поверхности стола!")
 
-		saynn("[say=pc]Wow. That was so unfair.[/say]")
+		saynn("[say=pc]Ого. Это было так несправедливо.[/say]")
 
-		saynn("The cheeky tentacles are swaying happily.")
+		saynn("Наглые щупальца довольно покачиваются.")
 
-		saynn("[say=pc]Alright, you win this one. But you're not allowed to do this from now on.[/say]")
+		saynn("[say=pc]Ладно, на этот раз ты победила. Но с этого момента тебе такое делать нельзя![/say]")
 
-		saynn("They nod and set your hand free.")
+		saynn("Они кивают и отпускают твою руку.")
 
 		if (_tentacles.mind > 3):
-			saynn("These tentacles are sure quite smart to be able to come up with this plan.")
+			saynn("Эти щупальца чертовски умны, раз смогли придумать такой план.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "a4"):
-		saynn("You offer the tentacles to do some armwrestling.. tentacle-wrestling.")
+		saynn("Вы предлагаете щупальцам перетянуть палочку... то есть, побороться на руках.")
 
-		saynn("You know that they're not the strongest so you catch a few of the most thick-looking ones and set your elbow on the nearby table.")
+		saynn("Понимая, что они не самые сильные, ты перехватываешь несколько самых толстых щупалец и упираешься локтем в стоящий рядом стол.")
 
-		saynn("[say=pc]Prove me you're not a weakling.[/say]")
+		saynn("[say=pc]Докажи мне, что ты не слабачка![/say]")
 
-		saynn("It looks like the monster is ready.")
+		saynn("Похоже, монстр готов.")
 
-		saynn("[say=pc]Go.[/say]")
+		saynn("[say=pc]Давай![/say]")
 
-		saynn("Your hand hits the table faster than you can say..")
+		saynn("Твоя рука ударяется о стол быстрее, чем ты успеваешь сказать...")
 
-		saynn("[say=pc]Wow![/say]")
+		saynn("[say=pc]Ого![/say]")
 
-		saynn("The strength of the multiple tentacles almost dislocates your shoulder! The tentacles win this one, fair and square.")
+		saynn("Сила множества щупалец едва не выбивает тебе плечо! В этот раз щупальца побеждают — честно и беспощадно.")
 
-		saynn("[say=pc]Ow. Holy..[/say]")
+		saynn("[say=pc]Ой... Мамочки...[/say]")
 
-		saynn("They're bobbing happily. Maybe trying to fight many of them at once was a mistake.. especially now.")
+		saynn("Они довольно покачиваются. Возможно, пытаться сражаться со всеми сразу было ошибкой... особенно сейчас.")
 
-		saynn("[say=pc]Give me your strongest one.[/say]")
+		saynn("[say=pc]Давай самое сильное![/say]")
 
-		saynn("The thickest tentacle of them all lands on the table.")
+		saynn("Самое толстое щупальце из всех ложится на стол.")
 
-		saynn("[say=pc]Alright..[/say]")
+		saynn("[say=pc]Ладно...[/say]")
 
-		saynn("You grab the tendril's tip.. and push your elbow into the sturdy metal surface below it. Knowing what it's capable of, you pre-flex your muscles.")
+		saynn("Ты хватаешь кончик отростка... и упираешься локтем в твердую металлическую поверхность под ним. Зная, на что оно способно, ты заранее напрягаешь мышцы.")
 
-		saynn("[say=pc]Go.[/say]")
+		saynn("[say=pc]Давай![/say]")
 
-		saynn("And so the fight rages on. Your hand and the thick tendril are locked together, trying to subdue each other. The metal table groans under the sudden strain.")
+		saynn("И вот схватка продолжается. Твоя рука и толстое щупальце сцепились в мертвой хватке, пытаясь подавить друг друга. Металлический стол стонет под внезапной нагрузкой.")
 
-		saynn("For a full minute, neither of you budge an inch. Your arm's muscles are tensed up beyond belief. Your breath quickens fast. All the while, the tentacle is doing fine..")
+		saynn("Целую минуту ни один из вас не сдвигается ни на дюйм. Мышцы твоей руки напряжены до предела. Дыхание быстро учащается. И всё это время щупальцу хоть бы хны...")
 
-		saynn("[say=pc]Come.. on..[/say]")
+		saynn("[say=pc]Ну же.. давай..[/say]")
 
-		saynn("Slowly, the balance begins to shift. Not instantly.. bit by bit. Your forearm begins to tremble, the burn in your bicep turning into a full-on fire.")
+		saynn("Медленно равновесие начинает смещаться. Не мгновенно.. а шаг за шагом. Твой предплечье начинает дрожать, а жжение в бицепсе перерастает в настоящий пожар.")
 
-		saynn("You push with everything you have left, a final desperate rally that wins you about twenty degrees.. but the tentacle absorbs it soon after and continues its steady, patient advance.")
+		saynn("Ты выжимаешь из себя всё до последнего, совершая финальный отчаянный рывок, который позволяет тебе выиграть около двадцати градусов.. но щупальце вскоре поглощает это усилие и продолжает свое размеренное, терпеливое наступление.")
 
-		saynn("Your fingers start to curl open, your wrist bending more and more. The fight leaves your muscles strained hard. With a final, gentle yet undeniable pressure, the back of your hand kisses the cool metal.")
+		saynn("Твои пальцы начинают разгибаться, а запястье всё сильнее прогибается. Силы покидают твои напряженные мышцы. С финальным, мягким, но неоспоримым давлением ты касаешься тыльной стороной ладони прохладного металла.")
 
-		saynn("[say=pc]Ah..[/say]")
+		saynn("[say=pc]Ах..[/say]")
 
-		saynn("The tentacle wins!")
+		saynn("Щупальце победило!")
 
-		saynn("Your arm.. is aching from all the abuse that it went through. A shocked laugh escapes your lips.")
+		saynn("Твоя рука.. просто ноет от всего того изнурения, через которое ей пришлось пройти. С твоих губ срывается нервный смешок.")
 
-		saynn("[say=pc]Now I'm the weak one here, huh?[/say]")
+		saynn("[say=pc]Теперь уже я здесь слабачка, да?[/say]")
 
-		saynn("You offer a nod of respect to the victorious tendril. It was a fair fight.. as fair as it could be.")
+		saynn("Ты почтительно киваешь победоносному отростку. Это был честный бой.. насколько это вообще было возможно.")
 
 		_tentacles.talk("Thank you for training our strength.")
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "a5"):
-		saynn("You offer the tentacles to do some armwrestling.. tentacle-wrestling.")
+		saynn("Вы предлагаете щупальцам перетянуть палочку... то есть, побороться на руках.")
 
-		saynn("You know that you're gonna lose. But still.. maybe you can put up somewhat of a challenge.")
+		saynn("Ты понимаешь, что проиграешь. Но всё же.. может, тебе удастся хоть немного сопротивляться.")
 
-		saynn("[say=pc]Let's do this.[/say]")
+		saynn("[say=pc]Ну, погнали.[/say]")
 
-		saynn("The monster offers you one of its tentacles.. not even the strongest one. You grab its tip and press your elbow into the table.")
+		saynn("Монстр протягивает тебе один из своих щупалец... даже не самое мощное. Ты хватаешься за кончик и упираешься локтем в стол.")
 
-		saynn("[say=pc]Go.[/say]")
+		saynn("[say=pc]Давай![/say]")
 
-		saynn("You were bracing for the worst.. but that doesn't happen. Instead, the tentacle just freezes your hand in place. As you try to put more strength into it, the tendril meets your efforts and nullifies them with ease.")
+		saynn("Ты готовился к худшему... но этого не происходит. Вместо этого щупальце просто обездвиживает твою руку. Когда ты пытаешься приложить больше силы, отросток отвечает на твои усилия и с легкостью их сводит на нет.")
 
-		saynn("[say=pc]Is that all you've got?[/say]")
+		saynn("[say=pc]И это всё, на что ты способно?[/say]")
 
-		saynn("Slowly, deliberately, the tentacle begins to press. It's a smooth, controlled descent, the tendril lowering your hand onto the table. You grunt, you brace, you try to twist, but your resistance is meaningless. Your arm is guided down with the sheer force of a hydraulic press.")
+		saynn("Медленно, расчетливо щупальце начинает давить. Это плавное, контролируемое движение: отросток прижимает твою руку к столу. Ты кряхтишь, напрягаешься, пытаешься вывернуться, но твое сопротивление бессмысленно. Твою руку вдавливают вниз с силой гидравлического пресса.")
 
-		saynn("The back of your hand touches the cool surface. The tentacle won!")
+		saynn("Ты чувствуешь тыльной стороной ладони прохладную поверхность. Щупальце победило!")
 
-		saynn("[say=pc]Ah..[/say]")
+		saynn("[say=pc]Ах..[/say]")
 
-		saynn("You slump back, your arm throbbing. The tentacles are offering you a slow clap.")
+		saynn("Ты откидываешься назад, рука пульсирует от напряжения. Щупальца устраивают тебе медленные аплодисменты.")
 
-		saynn("They have gotten quite strong, haven't they? And so fast, too.")
+		saynn("Они стали довольно сильными, не так ли? И так быстро.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "p0"):
-		saynn("You get tentacles' attention and bring them to the box that has lots of differently-shaped holes in it.. along with separate objects of the same shapes.")
+		saynn("Ты привлекаешь внимание щупалец и подносишь их к коробке, в которой полно отверстий разной формы... а рядом лежат предметы таких же форм.")
 
-		saynn("[say=pc]Alright. I want you to try to solve this. You just have to put the objects in their correct holes.[/say]")
+		saynn("[say=pc]Ладно. Я хочу, чтобы ты попробовала решить это. Тебе просто нужно вставить предметы в правильные отверстия.[/say]")
 
-		saynn("The monster has a different idea though.. it just slides its tentacles into every hole of the puzzle box, stuffing it full.")
+		saynn("Однако у монстра другая идея... он просто засовывает свои щупальца в каждое отверстие головоломки, набивая коробку до отказа.")
 
-		saynn("[say=pc]Right..[/say]")
+		saynn("[say=pc]Так..[/say]")
 
-		saynn("Any kind of puzzle might be too hard for it.. especially now. It's just a plant after all.")
+		saynn("Любая головоломка может оказаться для него слишком сложной.. особенно сейчас. В конце концов, это всего лишь растение.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "p1"):
-		saynn("You get tentacles' attention and bring them to the box that has lots of differently-shaped holes in it.. along with separate objects of the same shapes.")
+		saynn("Ты привлекаешь внимание щупалец и подносишь их к коробке, в которой полно отверстий разной формы... а рядом лежат предметы таких же форм.")
 
-		saynn("[say=pc]Alright.. Try to solve this.[/say]")
+		saynn("[say=pc]Ладно.. Попробуй решить это.[/say]")
 
-		saynn("When presented with the puzzle.. the monster just ignores it, swaying around left and right.")
+		saynn("Когда перед ним выставляют головоломку.. монстр просто игнорирует её, покачиваясь из стороны в сторону.")
 
-		saynn("One of the tentacles stumbles upon a cube and reflexively grabs it, giving you some hope..")
+		saynn("Один из щупалец натыкается на куб и рефлекторно хватает его, давая вам каплю надежды..")
 
-		saynn("Unfortunately, the same tentacle just tosses it away after a few seconds.")
+		saynn("К сожалению, это же самое щупальце просто отшвыривает его через несколько секунд.")
 
-		addButton("Explain", "Explain exactly what the tentacles need to do", "p1_explain")
-		addButton("Show", "Show what the tentacles need to do", "p1_show")
-		addButton("Scold", "Punish the tentacles for throwing the cube away", "p1_scold")
+		addButton("Объяснить", "Объяснить щупальцам, что именно нужно делать", "p1_explain")
+		addButton("Показать", "Показать щупальцам, что нужно делать", "p1_show")
+		addButton("Сварка", "Наказать щупальца за то, что они отшвырнули куб", "p1_scold")
 	if(state == "p1_explain"):
-		saynn("You fetch the cube and set it down in front of the tentacles..")
+		saynn("Вы подбираете куб и кладете его перед щупальцами..")
 
-		saynn("[say=pc]You see this? You gotta put this cube..[/say]")
+		saynn("[say=pc]Видишь это? Тебе нужно просунуть этот куб..[/say]")
 
-		saynn("You point at the square hole in the puzzle box.")
+		saynn("Вы указываете на квадратное отверстие в головоломке.")
 
-		saynn("[say=pc]..through this exact hole.[/say]")
+		saynn("[say=pc]..вот именно в это отверстие.[/say]")
 
-		saynn("It's hard to check if the tentacles have understood anything.. they're still just idly swaying around..")
+		saynn("Трудно понять, усвоили ли щупальца хоть что-то.. они всё так же лениво покачиваются из стороны в сторону..")
 
-		saynn("[say=pc]Try it again, please.[/say]")
+		saynn("[say=pc]Попробуй ещё раз, пожалуйста.[/say]")
 
-		saynn("After some silence, the tentacles just lose interest and slither away.")
+		saynn("После недолгого молчания щупальца просто теряют интерес и уползают прочь.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "p1_show"):
-		saynn("You fetch the cube and show it to the tentacles.")
+		saynn("Вы подбираете куб и показываете его щупальцам.")
 
-		saynn("[say=pc]You see this?[/say]")
+		saynn("[say=pc]Видишь это?[/say]")
 
-		saynn("After wiggling the cube left and right for a bit, you seem to catch one of the tentacle's attention. It reaches out and curls around your wrists, tickling it slightly..")
+		saynn("После того как вы немного поводили кубом влево-вправо, кажется, вы привлекли внимание одного из щупалец. Оно тянется к вам и обвивается вокруг запястий, слегка щекоча кожу..")
 
-		saynn("[say=pc]You gotta do this.[/say]")
+		saynn("[say=pc]Тебе нужно это сделать.[/say]")
 
-		saynn("While the tentacle is still wrapped around your wrist, you move your hand to the puzzle box and slide the cube through the square hole.")
+		saynn("Пока щупальце всё ещё обвивает твоё запястье, ты подносишь руку к головоломке и просовываешь куб в квадратное отверстие.")
 
-		saynn("[say=pc]Like this.[/say]")
+		saynn("[say=pc]Вот так.[/say]")
 
-		saynn("Then, you grab a cylinder and offer it to the curious tentacle.")
+		saynn("Затем ты берешь цилиндр и протягиваешь его любопытному щупальцу.")
 
-		saynn("[say=pc]Your turn.[/say]")
+		saynn("[say=pc]Теперь твоя очередь.[/say]")
 
-		saynn("It just plays with the cylinder.. seemingly ignoring your offer.")
+		saynn("Оно просто возится с цилиндром, кажется, совершенно игнорируя твою попытку наладить контакт.")
 
-		saynn("You don't give up though.. you gently guide the tentacle towards the puzzle box.")
+		saynn("Но ты не сдаешься... ты осторожно направляешь щупальце к головоломке.")
 
-		saynn("[say=pc]See the circular hole? Isn't it perfect for this cylinder?[/say]")
+		saynn("[say=pc]Видишь круглое отверстие? Разве этот цилиндр не подходит к нему идеально?[/say]")
 
-		saynn("You try to spell out as hard as you can, now tapping at the area around the circular hole..")
+		saynn("Ты стараешься изо всех сил, на этот раз постукивая по области вокруг круглого отверстия...")
 
-		saynn("The tentacles hear you out.. and then just start smacking the cylinder against the box.. When that tactic doesn't work out, the tentacle gives up and slithers away.")
+		saynn("Щупальце тебя слушает... а затем просто начинает колотить цилиндром по коробке. Когда эта тактика не срабатывает, щупальце сдается и уползает прочь.")
 
-		saynn("It didn't exactly succeed.. but you gotta start off somewhere..")
+		saynn("Успех не был полным... но с чего-то же нужно начинать...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "p1_scold"):
-		saynn("[say=pc]You.. silly tentacles.. just shove the cube through the right hole, is it that hard?[/say]")
+		saynn("[say=pc]Вы.. глупые щупальца.. просто засуньте куб в нужное отверстие, неужели это так сложно?[/say]")
 
-		saynn("The tentacles hear the anger in your voice and react by tossing all of the objects away.")
+		saynn("Щупальца чувствуют гнев в вашем голосе и в ответ разбрасывают все предметы во все стороны.")
 
-		saynn("[say=pc]Really? Ugh..[/say]")
+		saynn("[say=pc]Серьезно? Тьфу..[/say]")
 
-		saynn("Looks like they're not happy.. but so are you.")
+		saynn("Похоже, они не в духе.. но вы и сами не в восторге.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "p2"):
-		saynn("You get tentacles' attention and bring them to the box that has lots of differently-shaped holes in it.. along with separate objects of the same shapes.")
+		saynn("Ты привлекаешь внимание щупалец и подносишь их к коробке, в которой полно отверстий разной формы... а рядом лежат предметы таких же форм.")
 
-		saynn("[say=pc]Alright.. Try to solve this.[/say]")
+		saynn("[say=pc]Ладно.. Попробуй решить это.[/say]")
 
-		saynn("You present the monster to a bunch of differently-shaped objects. It grabs one of them.. a little pyramid.. and starts randomly smacking it against the box!")
+		saynn("Вы подносите монстра к кучке предметов разной формы. Он хватает один из них.. маленькую пирамидку.. и начинает хаотично колотить ею по коробке!")
 
-		addButton("Show", "Show what the tentacles need to do", "p2_show")
-		addButton("Explain", "Try to explain what the tentacles need to do", "p2_explain")
-		addButton("Rile it up", "Put more stress on the tentacles! Try to get it all horny as well", "p2_rile")
+		addButton("Показать", "Показать щупальцам, что нужно делать", "p2_show")
+		addButton("Объяснить", "Попытаться объяснить щупальцам, что нужно делать", "p2_explain")
+		addButton("Раззадорить их", "Надавить на щупальца сильнее! Постарайтесь заодно и их возбудить", "p2_rile")
 	if(state == "p2_show"):
-		saynn("You grab the tentacle that is holding the pyramid.. and guide it to the triangular hole. The tendril still just wants to bash the object against the box.. so you use more force to try to keep it still.")
+		saynn("Вы хватаете щупальце, держащее пирамидку, и направляете его к треугольному отверстию. Отросток всё еще так и норовит грохнуть предмет о коробку.. поэтому вам приходится приложить больше силы, чтобы удержать его на месте.")
 
-		saynn("As you reach the triangular hole, you shake the tentacle until it drops the pyramid straight though it!")
+		saynn("Когда вы подносите его к треугольному отверстию, вы начинаете трясти щупальце, пока оно не выронит пирамидку прямо внутрь!")
 
-		saynn("[say=pc]There you go! Now do it yourself.[/say]")
+		saynn("[say=pc]Вот и всё! Теперь делай это сам.[/say]")
 
-		saynn("You watch as the tentacle carefully curls around a cylinder.. lifts it up.. moves it over the puzzle box.. and drops it..")
+		saynn("Ты наблюдаешь, как щупальце осторожно обвивает цилиндр... поднимает его... подносит к головоломке... и роняет...")
 
-		saynn("Unfortunately, the cylinder was dropped above the same triangular hole.. so it just bounces off.")
+		saynn("К сожалению, цилиндр упал прямо над той же треугольной дырой... так что он просто отскакивает.")
 
-		saynn("The tentacle tries again.. and fails the same way.")
+		saynn("Щупальце пробует снова... и снова терпит неудачу.")
 
-		saynn("[say=pc]Different hole?[/say]")
+		saynn("[say=pc]Другая дырка?[/say]")
 
-		saynn("The tentacle monster gives up before you can persuade it to try again.")
+		saynn("Тентаклевый монстр сдается прежде, чем ты успеваешь убедить его попробовать еще раз.")
 
-		saynn("It doesn't look like it learned anything new..")
+		saynn("Похоже, он так ничего нового и не выучил...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "p2_explain"):
-		saynn("You try to calm the tentacles down by gently stroking them.")
+		saynn("Ты пытаешься успокоить щупальца, нежно поглаживая их.")
 
-		saynn("[say=pc]Easy, easy.. Listen to me.[/say]")
+		saynn("[say=pc]Тише, тише... Послушай меня.[/say]")
 
-		saynn("When the tentacle stops trying to destroy the box, you begin explaining.")
+		saynn("Когда щупальце перестает пытаться разнести ящик в щепки, ты начинаешь объяснять.")
 
-		saynn("[say=pc]You.. are holding a pyramid. It's triangular in shape.[/say]")
+		saynn("[say=pc]Ты... держишь пирамиду. Она треугольной формы.[/say]")
 
-		saynn("You point at the holes in the box.")
+		saynn("Ты указываешь на отверстия в коробке.")
 
-		saynn("[say=pc]Which of these looks the most like the shape in your.. grip? Try to match it.[/say]")
+		saynn("[say=pc]Какое из них больше всего похоже на форму того, что ты... сжимаешь? Попробуй подобрать подходящее.[/say]")
 
-		saynn("You gradually move the tentacle over all the holes.")
+		saynn("Ты постепенно проводишь щупальцем над всеми отверстиями.")
 
-		saynn("Then.. you let it choose by itself.")
+		saynn("Затем... ты позволяешь ему выбрать самому.")
 
-		saynn("[say=pc]Not sure if you have eyes.. wait.. hm..[/say]")
+		saynn("[say=pc]Не уверена, есть ли у тебя глаза... погоди... хм...[/say]")
 
-		saynn("You grab another tentacle and offer it to feel the puzzle box.. and all of its holes.")
+		saynn("Ты хватаешь другое щупальце и подносишь его, чтобы оно прощупало головоломку... и все её отверстия.")
 
-		saynn("[say=pc]Maybe this will help you?[/say]")
+		saynn("[say=pc]Может, это тебе поможет?[/say]")
 
-		saynn("And indeed, it looks like it did. It takes the tentacles some time to feel all the holes..")
+		saynn("И действительно, похоже, что так и есть. Щупальцам требуется некоторое время, чтобы прощупать все отверстия...")
 
-		saynn("It tries to slide the pyramid into the circular hole at first.. but obviously it doesn't fit.")
+		saynn("Сначала оно пытается вставить пирамиду в круглое отверстие... но, очевидно, она туда не лезет.")
 
-		saynn("[say=pc]Right.. well.. almost.[/say]")
+		saynn("[say=pc]Ну.. почти.. почти получилось.[/say]")
 
-		saynn("Just when you were about to lose hope, the tentacle manages to find a triangular hole! It slides the pyramid right through it!")
+		saynn("Как раз когда ты уже готов был потерять надежду, щупальце умудряется нащупать треугольное отверстие! Оно проталкивает пирамидку прямо сквозь него!")
 
-		saynn("Then it grabs a cylinder and starts trying different holes again.. The triangular one doesn't work.. but the circular ones does!")
+		saynn("Затем оно хватает цилиндр и снова начинает пробовать разные отверстия.. Треугольное не подходит.. зато круглое — в самый раз!")
 
-		saynn("[say=pc]Good job. You're learning.[/say]")
+		saynn("[say=pc]Отличная работа. Ты учишься.[/say]")
 
-		saynn("Looks like the both of you have learned something new..")
+		saynn("Похоже, вы оба кое-чему научились..")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "p2_rile"):
-		saynn("You know what the tentacles need.. they need to be inspired!")
+		saynn("Знаешь, чего не хватает щупальцам?.. Им нужно вдохновение!")
 
-		saynn("[say=pc]C'mon, you can do this! I believe in you.[/say]")
+		saynn("[say=pc]Давай, ты сможешь! Я в тебя верю.[/say]")
 
-		saynn("You shake the pyramid that the tentacle is holding.")
+		saynn("Ты трясешь пирамидкой, которую держит щупальце.")
 
-		saynn("[say=pc]See this? This object. This is you! The box is a smoking hot babe! A babe.. that's wearing huge armor.. Armor that has huge gaping holes![/say]")
+		saynn("[say=pc]Видишь это? Этот предмет. Это ты! А коробка — это чертовски горячая красотка! Красотка.. в огромных доспехах.. В доспехах, в которых полно огромных зияющих дыр![/say]")
 
-		saynn("You point at the puzzle box.")
+		saynn("Ты указываешь на головоломку.")
 
-		saynn("[say=pc]Faster! Find the hole that you'd fit through! Stuff that babe full of your.. plant meat. Yeah![/say]")
+		saynn("[say=pc]Быстрее! Ищи дырку, в которую ты пролезешь! Забей эту сучку своим... растительным мясом. Да![/say]")
 
-		saynn("The tentacle, spurred by your energy, begins jabbing the pyramid at random holes in the box. Clack.. Clack.. Clack..")
+		saynn("Подгоняемый твоей энергией, щупалец начинает тыкать пирамидкой в случайные отверстия на коробке. Клац... Клац... Клац...")
 
-		saynn("[say=pc]No! Not that one! Feel it! The shape! Think![/say]")
+		saynn("[say=pc]Нет! Не в это! Чувствуй! Форму! Думай![/say]")
 
-		saynn("You slap the box next to a triangular hole for emphasis. The tentacle recoils, then thrusts again with more precision. It misses, scraping the side.")
+		saynn("Ты хлопаешь по коробке рядом с треугольным отверстием для убедительности. Щупалец отпрядывает, а затем снова делает выпад, но уже более точно. Оно промахивается, скребя по краю.")
 
-		saynn("[say=pc]You're getting cold! Warmer! Warmer![/say]")
+		saynn("[say=pc]Холодно! Теплее! Теплее![/say]")
 
-		saynn("It tries a circular hole. Failure.")
+		saynn("Оно пробует круглое отверстие. Провал.")
 
-		saynn("[say=pc]COLD! Ice cold! Try again![/say]")
+		saynn("[say=pc]ХОЛОДНО! Ледяной холод! Пробуй еще раз![/say]")
 
-		saynn("The tentacle whips back, quivering with focus. It moves slower now, tracing the pyramid's edges, then brings it to the triangular hole. It fits, but at an angle, and gets stuck.")
+		saynn("Щупалец резко отдергивается, дрожа от сосредоточения. Теперь оно движется медленнее, очерчивая края пирамидки, а затем подносит её к треугольному отверстию. Она входит, но под углом и застревает.")
 
-		saynn("[say=pc]PUSH! Don't think, just DO IT! STUFF THAT HORNY BITCH![/say]")
+		saynn("[say=pc]ТОЛКАЙ! Не думай, просто ДЕЛАЙ ЭТО! ЗАПИХНИ В ЭТУ ПОЗОРНУЮ ШЛЮХУ![/say]")
 
-		saynn("The tentacle slams the pyramid through! Great success.")
+		saynn("Щупалец с силой вбивает пирамидку внутрь! Великолепный успех.")
 
-		saynn("[say=pc]YES! AH! That's it! Now the cylinder! STUFF THAT BABE'S OTHER HOLE! GO GO GO![/say]")
+		saynn("[say=pc]ДА! АХ! Вот так! Теперь цилиндр! ЗАПИХАЙ ЭТУ СУЧКУ В ДРУГОЕ ДЫРЯВИСТОЕ ОТВЕРСТИЕ! ДАВАЙ, ДАВАЙ, ДАВАЙ![/say]")
 
-		saynn("Flushed with its first victory, the tentacle snatches the cylinder. It's no longer probing.. it's attacking. It rams the cylinder against the triangular hole. CLANG.")
+		saynn("Разгоряченная первой победой, щупальце хватает цилиндр. Оно больше не прощупывает... оно атакует. Оно с силой вбивает цилиндр в треугольное отверстие. ДЗЫНЬ.")
 
-		saynn("[say=pc]WRONG! You just got it right! Don't get stupid now! You are shaped differently now![/say]")
+		saynn("[say=pc]НЕПРАВИЛЬНО! Только что ты попал в точку! Не тупи теперь! Твоя форма изменилась![/say]")
 
-		saynn("It immediately switches targets, moving with frantic speed. It taps the cylinder against two wrong holes in rapid succession.. before forcing it perfectly through the correct one!")
+		saynn("Оно мгновенно меняет цель, двигаясь с неистовой скоростью. Оно быстро стучит цилиндром по двум неверным отверстиям... прежде чем с силой вогнать его точно в нужное!")
 
-		saynn("[say=pc]HA! FUCK YEAH! You did it! You're a natural! You have stuffed that bitch.[/say]")
+		saynn("[say=pc]ХА! ЕБАТЬ МОЙ ЛИЧ! Ты сделал это! У тебя талант! Ты засадил этой сучке по самые гланды![/say]")
 
-		saynn("The tentacles wave in the air, not with their usual lazy sway, but with a sharp, jittery excitement, their tips are dripping some transparent juices..")
+		saynn("Щупальца колышутся в воздухе — не в своем обычном ленивом ритме, а с резким, дерганым возбуждением, а их кончики сочатся какой-то прозрачной жижей...")
 
-		saynn("They learned.. but also became a little more lusty for hot babes it seemes..")
+		saynn("Они научились... но, кажется, стали еще более похотливыми к горячим красоткам...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "p3"):
-		saynn("You get tentacles' attention and bring them to the box that has lots of differently-shaped holes in it.. along with separate objects of the same shapes.")
+		saynn("Ты привлекаешь внимание щупалец и подносишь их к коробке, в которой полно отверстий разной формы... а рядом лежат предметы таких же форм.")
 
-		saynn("[say=pc]Solve this for me.[/say]")
+		saynn("[say=pc]Реши это для меня.[/say]")
 
-		saynn("The tentacles grab a few of the objects and reach towards the main box.")
+		saynn("Щупальца хватают несколько предметов и тянутся к основному ящику.")
 
-		saynn("It feels like it kinda knows what to do.. the free tentacles start searching for holes.. that are then prodded by differently-shaped objects.")
+		saynn("Кажется, оно уже примерно понимает, что делать... свободные щупальца начинают искать отверстия... в которые затем втыкаются предметы разной формы.")
 
-		saynn("Despite all the training, the tentacles are still just doing it randomly.. Trying to fit a cube into a circular hole.. or a cylinder into a triangle one..")
+		saynn("Несмотря на все тренировки, щупальца всё равно действуют хаотично... Пытаются впихнуть куб в круглое отверстие... или цилиндр в треугольное...")
 
-		saynn("It feels like it's about to give up.. maybe.. who knows. You can't read minds.")
+		saynn("Кажется, они вот-вот сдадутся... а может и нет... кто знает. Читать мысли не умеешь.")
 
-		addButton("Explain", "Give the tentacles an explanation of what it should do", "p3_explain")
-		addButton("Just watch", "Maybe it will figure it out", "p3_watch")
+		addButton("Объяснить", "Объяснить щупальцам, что именно им нужно делать", "p3_explain")
+		addButton("Просто наблюдай", "Может, тогда они соображут", "p3_watch")
 	if(state == "p3_explain"):
-		saynn("You start explaining what the tentacles should do..")
+		saynn("Вы начинаете объяснять щупальцам, что им нужно делать...")
 
-		saynn("[say=pc]You gotta match the object and the hole shape.. If you're holding a cube, you gotta put it through the square hole. If you're holding a cylinder..[/say]")
+		saynn("[say=pc]Нужно подбирать форму предмета под форму отверстия... Если у тебя в руках куб, его надо совать в квадратную дыру. Если цилиндр...[/say]")
 
-		saynn("..but the tentacles quickly get bored by your explanation and slither away.")
+		saynn("...но щупальца быстро устают от твоих объяснений и уползают прочь.")
 
-		saynn("Looks like they already know all of this.")
+		saynn("Похоже, они и так всё это знают.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "p3_watch"):
-		saynn("You decide to just stay quiet and watch the process.")
+		saynn("Вы решаете просто молча наблюдать за процессом.")
 
-		saynn("The tentacles keep failing..")
+		saynn("Щупальца продолжают лажать...")
 
-		saynn("It's hard to fight this feeling.. you really wanna help.. but you don't wanna solve it for them.")
+		saynn("С этим чувством трудно бороться... тебе безумно хочется помочь... но при этом не хочется решать всё за них.")
 
-		saynn("The tendrils just keep trying all the holes.. until they finally manage to fit one of the objects through the correct one!")
+		saynn("Щупальца продолжают прощупывать все отверстия... пока наконец не удается просунуть один из предметов в нужное!")
 
-		saynn("You raise a brow but don't say anything.")
+		saynn("Ты лишь приподнимаешь бровь, но ничего не говоришь.")
 
-		saynn("It takes some more time.. but eventually another object finds the right hole!")
+		saynn("Требуется еще немного времени... но в итоге еще один предмет находит свое отверстие!")
 
-		saynn("The tentacles are on a roll! There are not that many more possibilities left.. so it doesn't take long until the last object gets pushed through!")
+		saynn("Щупальца в ударе! Вариантов осталось совсем немного... так что последний предмет проталкивают внутрь довольно быстро!")
 
-		saynn("[say=pc]Great job![/say]")
+		saynn("[say=pc]Отличная работа![/say]")
 
-		saynn("Even though it wasn't you who solved it.. somehow.. you still get a strong feeling of accomplishment. A shared one.")
+		saynn("Хотя решал не ты... каким-то образом ты всё равно испытываешь сильное чувство удовлетворения. Словно это ваш общий успех.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "p4"):
-		saynn("You get tentacles' attention and bring them to the box that has lots of differently-shaped holes in it.. along with separate objects of the same shapes.")
+		saynn("Ты привлекаешь внимание щупалец и подносишь их к коробке, в которой полно отверстий разной формы... а рядом лежат предметы таких же форм.")
 
-		saynn("Before you can even tell the tentacles what they should do, they already start grabbing all the objects and moving them towards the puzzle box.")
+		saynn("Прежде чем ты успеваешь сказать щупальцам, что им делать, они уже начинают хватать все предметы и тащить их к головоломке.")
 
-		saynn("It doesn't take long before the cube finds a square hole, a cylinder finds a circular hole, a pyramid finds a triangle hole, an arch finds an arch hole..")
+		saynn("Вскоре куб находит квадратное отверстие, цилиндр — круглое, пирамида — треугольное, а арка — арочное...")
 
-		saynn("It does them all!")
+		saynn("Они справляются со всеми!")
 
-		saynn("[say=pc]Wow. Great job.[/say]")
+		saynn("[say=pc]Ого. Отличная работа.[/say]")
 
-		saynn("You can see some real potential now. The tentacles are getting smarter fast.")
+		saynn("Теперь виден настоящий потенциал. Щупальца очень быстро становятся умнее.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "p5"):
-		saynn("You get tentacles' attention and bring them to the box that has lots of differently-shaped holes in it.. along with separate objects of the same shapes.")
+		saynn("Ты привлекаешь внимание щупалец и подносишь их к коробке, в которой полно отверстий разной формы... а рядом лежат предметы таких же форм.")
 
-		saynn("The tentacles see that you brought that puzzle box.. and just stare at you.. silently.")
+		saynn("Щупальца замечают, что ты принесла ту шкатулку-головоломку... и просто смотрят на тебя... молча.")
 
-		saynn("[say=pc]Huh? You don't wanna do this?[/say]")
+		saynn("[say=pc]А? Ты не хочешь этим заниматься?[/say]")
 
-		saynn("They can't talk.. but you do get a strong feeling that they're already bored of such simple puzzles.")
+		saynn("Они не умеют говорить... но тебя не покидает сильное чувство, что им уже наскучили такие простые задачки.")
 
-		saynn("[say=pc]Maybe it's just too hard for you, huh~? You're afraid to fail too much. I see, I can take it away.[/say]")
+		saynn("[say=pc]Может, это просто слишком сложно для тебя, а~? Боишься слишком часто проигрывать. Понимаю, я могу это исправить.[/say]")
 
-		saynn("But before you can do that, the tentacles reach out to yoink all the objects and the puzzle box for itself.")
+		saynn("Но прежде чем ты успеваешь что-то предпринять, щупальца выхватывают все предметы и шкатулку, забирая их себе.")
 
-		saynn("The monster carefully sets down the main box on the floor in front of it.")
+		saynn("Монстр осторожно ставит основную коробку на пол перед собой.")
 
-		saynn("Then it brings the first object.. the cube.. and pushes it through the square hole with ease.")
+		saynn("Затем оно берет первый предмет... куб... и с легкостью проталкивает его в квадратное отверстие.")
 
-		saynn("[say=pc]Alright. But can you do the others?[/say]")
+		saynn("[say=pc]Ладно. Но справишься ли ты с остальными?[/say]")
 
-		saynn("You can see what can only be described as tentacles doing an eye roll.")
+		saynn("Вы видите нечто, что можно описать только как щупальца, закатывающие глаза.")
 
-		saynn("The cylinder is next.. the tentacle brings it to the puzzle box.. and makes it hover above the holes. The cylinder sways left and right a bit, inching closer and closer to the circular hole.")
+		saynn("Следующим идет цилиндр... щупальце подносит его к головоломке... и заставляет парить над отверстиями. Цилиндр слегка покачивается из стороны в сторону, подбираясь всё ближе и ближе к круглому отверстию.")
 
-		saynn("..but then it moves it above the square hole instead.")
+		saynn("...но затем оно перемещает его над квадратным отверстием вместо этого.")
 
-		saynn("[say=pc]Huh?[/say]")
+		saynn("[say=pc]А?[/say]")
 
-		saynn("The tentacle starts lowering the cylinder into the square hole..")
+		saynn("Щупальце начинает опускать цилиндр в квадратное отверстие...")
 
-		saynn("[say=pc]But you had it right the first time.[/say]")
+		saynn("[say=pc]Но ты всё правильно понял с первого раза.[/say]")
 
-		saynn("It keeps doing it..")
+		saynn("Оно продолжает делать то же самое...")
 
-		saynn("[say=pc]Uhm..[/say]")
+		saynn("[say=pc]Эм...[/say]")
 
-		saynn("Miraculously, the cylinder fits through the square hole just fine.")
+		saynn("Чудесным образом цилиндр без проблем проходит сквозь квадратное отверстие.")
 
-		saynn("[say=pc]Right. They just got the same dimensions. But it's incorrect to do that.[/say]")
+		saynn("[say=pc]Ясно. У них просто одинаковые размеры. Но это всё равно неправильно.[/say]")
 
-		saynn("The tentacle grabs a pyramid next and moves it to the puzzle box.")
+		saynn("Следующим щупальце хватает пирамиду и подносит её к головоломке.")
 
-		saynn("The pyramid begins to get lowered into the triangular hole.. but at the last possible second.. the tentacle pushes it through the square hole instead.")
+		saynn("Пирамида начинает опускаться в треугольное отверстие... но в самую последнюю секунду... щупальце проталкивает её в квадратное отверстие вместо нужного.")
 
-		saynn("[say=pc]Are you serious right now? No![/say]")
+		saynn("[say=pc]Ты это серьезно?! Нет![/say]")
 
-		saynn("The tentacle grabs an arch.. and pushes it through the same square hole..")
+		saynn("Щупальце хватает арку... и проталкивает её в то же самое квадратное отверстие...")
 
-		saynn("[say=pc]No! No![/say]")
+		saynn("[say=pc]Нет! Нет![/say]")
 
-		saynn("It grabs another shape.. and then another.. they all fit through the square hole just fine.. The tentacles are clearly bullying you..")
+		saynn("Оно хватает другую фигуру... а затем еще одну... и все они прекрасно проходят сквозь квадратное отверстие... Щупальца явно издеваются над тобой...")
 
-		saynn("[say=pc]Stop it.. this is so wrong.. please..[/say]")
+		saynn("[say=pc]Прекратите... это так неправильно... пожалуйста...[/say]")
 
-		saynn("Another shape.. a half-circle.. there is no way it'd fit anything but a half-circle hole.. but it does.. it fits through the square hole just fine..")
+		saynn("Еще одна фигура... полукруг... он никак не может влезть никуда, кроме полукруглого отверстия... но он влетает... он прекрасно проходит сквозь квадратное отверстие...")
 
 		_tentacles.talk("Too hard for you?")
-		saynn("You feel like you're losing your mind.. you began hearing voices in your head..")
+		saynn("Тебе кажется, что ты сходишь с ума... в твоей голове начинают звучать голоса...")
 
-		saynn("[say=pc]What?[/say]")
+		saynn("[say=pc]Что?[/say]")
 
-		saynn("You look around but there is no one.. just the tentacles.")
+		saynn("Ты оглядываешься по сторонам, но никого нет... только щупальца.")
 
 		_tentacles.talk("Should we stop?")
-		saynn("You blink a lot.")
+		saynn("Ты часто моргаешь.")
 
-		saynn("[say=pc]Uh.. sure?[/say]")
+		saynn("[say=pc]Ну... ладно?[/say]")
 
-		saynn("The tentacles put the puzzle box back where it was.. and slither away.")
+		saynn("Щупальца возвращают головоломку на место... и уползают прочь.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "p6"):
-		saynn("It looks like the tentacles have no interest in doing the puzzle box anymore..")
+		saynn("Похоже, головоломка больше не интересует щупальца...")
 
-		saynn("You look for something else that you can do.. and find a chess board.")
+		saynn("Вы ищете, чем бы еще заняться... и находите шахматную доску.")
 
-		saynn("The wooden surface with a fancy pattern quickly gets the monster's attention.")
+		saynn("Деревянная поверхность с изысканным узором быстро привлекает внимание монстра.")
 
-		saynn("[say=pc]This is chess. It's a game.[/say]")
+		saynn("[say=pc]Это шахматы. Такая игра.[/say]")
 
-		saynn("You set up the whole board with all the pieces.")
+		saynn("Вы расставляете все фигуры на доске.")
 
-		saynn("[say=pc]Different pieces play by different rules. The pawns are the simplest, they can move one square forward..[/say]")
+		saynn("[say=pc]У разных фигур свои правила. Пешки — самые простые, они могут ходить на одну клетку вперед...[/say]")
 
-		saynn("Hearing the word 'square' activates something in the tentacles' brain.. It grabs as many pieces as it can and begins looking for holes to put them in.")
+		saynn("Услышав слово «клетка», в мозгу щупалец что-то щелкает... Оно хватает столько фигур, сколько может, и начинает искать дырки, в которые их можно запихать.")
 
-		saynn("[say=pc]Wait, wait. This is a different thing.[/say]")
+		saynn("[say=pc]Погоди, погоди. Это совсем другое дело![/say]")
 
-		saynn("You try to explain the rules of chess.. but the board is ruined anyway..")
+		saynn("Ты пытаешься объяснить правила шахмат... но доска всё равно безнадёжно испорчена...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "a6"):
 		_tentacles.doAnim("glare", {npcAction="shove"})
-		saynn("Arm-wrestling.. Now that the tentacles are even bigger, you're pretty sure that you can't win no matter how much you try. You just have to use a different strategy, there is no other way.")
+		saynn("Армрестлинг... Теперь, когда щупальца стали ещё больше, ты почти уверен, что не сможешь победить, как бы ни старался. Придётся сменить стратегию, другого пути нет.")
 
-		saynn("What if you just wrestle the tentacles into submission. That's gotta work.")
+		saynn("А что, если просто побороться с ними в рукопашную, чтобы заставить подчиниться? Должно сработать.")
 
-		saynn("With no better plan.. you wait until the tentacles aren't paying attention.. and strike!")
+		saynn("Поскольку лучшего плана нет... ты ждёшь, когда щупальца отвлекутся... и наносишь удар!")
 
-		saynn("You launch yourself at the cluster of tentacles, wrapping your arms around the most thick ones and trying to pin them to the floor. The tentacles barely register, your weight.. it feels like you're trying to wrestle a street lamp. They're just flexing a bit before setting you back on your feet with a gentle push.")
+		saynn("Ты бросаешься на скопление щупалец, обхватывая руками самые толстые и пытаясь прижать их к полу. Щупальца едва замечают твой вес... ощущение такое, будто ты пытаешься побороть уличный фонарь. Они лишь слегка напрягаются, а затем мягким толчком возвращают тебя на ноги.")
 
 		_tentacles.talk("What is this action? We are ready to grab your arm.")
-		saynn("Undeterred, you pivot slightly, spotting a few slender tendrils. You dive towards them, managing to grab two of them, pinning them against the floor with your body weight!")
+		saynn("Не сдаваясь, ты слегка разворачиваешься, заметив несколько тонких отростков. Ты ныряешь к ним и умудряешься схватить сразу два, придавливая их к полу всем своим весом!")
 
-		saynn("[say=pc]Got you![/say]")
+		saynn("[say=pc]Попались![/say]")
 
-		saynn("The thin tentacles squirm for a moment.. and then go limp, submitting. A victory has been achieved!")
+		saynn("Тонкие щупальца на мгновение извиваются... а затем обмякают, покоряясь тебе. Победа достигнута!")
 
 		_tentacles.talk("Is this the new way to train our strength? We understand.")
-		saynn("Something tells you that this isn't over yet..")
+		saynn("Что-то подсказывает тебе, что это ещё не конец...")
 
-		addButton("Continue", "See what happens next", "6_neck")
+		addButton("Продолжить", "Смотреть, что будет дальше", "6_neck")
 	if(state == "6_neck"):
 		playAnimation(StageScene.TentaclesChoke, "chokefast", {plant=true})
-		saynn("A thicker, stronger tentacle.. one of the ones that you tried to tackle first.. slides around your waist. Another loops around your upper chest. With terrifying ease, they lift you straight off the ground.")
+		saynn("Более толстое и сильное щупальце... одно из тех, что ты пытался атаковать первым... обвивается вокруг твоей талии. Другое обвивает грудь выше. С пугающей легкостью они поднимают тебя прямо над землёй.")
 
-		saynn("Then.. a third tendril wraps firmly around your neck.. with that same casual grip..")
+		saynn("Затем.. третий отросток крепко обвивает твою шею.. с той же небрежной хваткой..")
 
-		saynn("[say=pc]Wait.. Ghh. That's my neck! Neck is important.[/say]")
+		saynn("[say=pc]Погоди.. Гхх. Это же моя шея! Шея — это важно![/say]")
 
-		saynn("The pressure isn't crushing.. but it's certainly there, making your breathing particularly hard. Your feet kick uselessly in the air.")
+		saynn("Давление не смертельное.. но оно ощутимо, из-за чего дышать становится чертовски трудно. Твои ноги бесполезно болтаются в воздухе.")
 
-		saynn("[say=pc]Air! Don't cut off my air![/say]")
+		saynn("[say=pc]Воздух! Не перекрывай мне воздух![/say]")
 
-		saynn("You gesture frantically at your throat with your hands.. which also get grabbed by the tentacles into a tight hold.")
+		saynn("Ты лихорадочно хватаешься руками за горло.. но щупальца тут же перехватывают и твои кисти, сжимая их мертвой хваткой.")
 
-		saynn("The corners of your vision begin to fade into darkness.")
+		saynn("Углы твоего зрения начинают застилать сумерки.")
 
-		saynn("[say=pc]Blood! You're cutting out the bloodflow! You won! Gh.. fully..[/say]")
+		saynn("[say=pc]Кровь! Ты перекрываешь кровоток! Ты победила! Гх.. полностью..[/say]")
 
 		_tentacles.talk("Victory.")
-		addButton("Continue", "See what happens next", "6_fall")
+		addButton("Продолжить", "Смотреть, что будет дальше", "6_fall")
 	if(state == "6_fall"):
 		_tentacles.doAnim("idle", {npcAction="defeat"})
-		saynn("All at once, the tentacles finally let go. With no support, you drop to the floor.. ouch.")
+		saynn("Внезапно щупальца наконец разжимаются. Лишившись опоры, ты мешком валишься на пол.. ой.")
 
-		saynn("You cough and rub your neck.")
+		saynn("Ты кашляешь и растираешь шею.")
 
-		saynn("[say=pc]How am I even gonna train you further?[/say]")
+		saynn("[say=pc]Как же я тогда буду дрессировать тебя дальше?[/say]")
 
-		saynn("You'd need someone who is stronger.. but that'd be hard to find.. especially here.")
+		saynn("Тебе понадобится кто-то посильнее... но такого будет трудно найти... особенно здесь.")
 
-		saynn("The tentacles, satisfied with their victory, slither away.")
+		saynn("Удовлетворенные своей победой, щупальца уползают прочь.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "a7"):
 		_tentacles.doAnim("glare")
-		saynn("The moment you approach the tentacles, the air itself in the cell changes.. it gets tense.")
+		saynn("Как только ты приближаешься к щупальцам, сам воздух в камере меняется... он становится напряженным.")
 
-		saynn("The tentacles are ready, they're eagerly awaiting this training session. The armwrestling isn't even on your mind anymore. How to survive is.")
+		saynn("Щупальца готовы, они с нетерпением ждут этой тренировки. О армрестлинге ты уже даже не думаешь. Ты думаешь о том, как выжить.")
 
 		_tentacles.talk("Is it time to train?")
-		saynn("[say=pc]Nope. Not now. We're taking a break.[/say]")
+		saynn("[say=pc]Не-а. Не сейчас. Мы берем перерыв.[/say]")
 
-		saynn("You start stepping away.. a strategic retreat. You don't even make it two steps.")
+		saynn("Ты начинаешь отступать... стратегическое отступление. Но ты не успеваешь сделать и двух шагов.")
 
-		addButton("Continue", "See what happens next", "7_grab")
+		addButton("Продолжить", "Смотреть, что будет дальше", "7_grab")
 	if(state == "7_grab"):
 		playAnimation(StageScene.TentaclesSex, "tease", {plant=true})
-		saynn("A single tendril snaps out, catching your wrist in an instant.")
+		saynn("Одиночный отросток резко вылетает вперед, мгновенно перехватывая твое запястье.")
 
-		saynn("[say=pc]I know that you're stronger![/say]")
+		saynn("[say=pc]Я знаю, что ты сильнее![/say]")
 
 		_tentacles.talk("We wish to train. Sorry, friend.")
-		saynn("Another tentacles join, catching your leg and wrapping around your torso this time! Together, they lift you off the floor.")
+		saynn("Присоединяются другие щупальца: на этот раз они хватают тебя за ногу и обвивают туловище! Вместе они отрывают тебя от пола.")
 
-		saynn("[say=pc]Ah! Just don't grab my neck.[/say]")
+		saynn("[say=pc]Ах! Только не сжимайте мне шею![/say]")
 
-		saynn("The rest of the tentacles join, each one grabbing one of your limbs. It'd be kinda fun.. if it wasn't scary.")
+		saynn("Остальные щупальца присоединяются, каждое вцепляется в твою конечность. Это было бы даже весело... если бы не было так жутко.")
 
-		saynn("Together, all the tentacles begin moving you around the cell, slithering across the floor. At the same time, they also start lifting you higher before lowering you back down.. repeating that motion.")
+		saynn("Сплотившись, все щупальца начинают таскать тебя по камере, скользя по полу. В то же время они начинают поднимать тебя всё выше и выше, а затем снова опускают... повторяя это движение снова и снова.")
 
-		saynn("It's like.. they're using your whole body as a dumbbell.")
+		saynn("Такое ощущение, будто... они используют всё твоё тело как гантель.")
 
-		saynn("[say=pc]Am I really just a piece of gym equipment now to you?[/say]")
+		saynn("[say=pc]Неужели я для тебя теперь просто спортивный инвентарь?[/say]")
 
-		saynn("Looks like you are.. Up. Down. Up. Down. If anyone is watching you through the security camera, they're probably enjoying the show right now.")
+		saynn("Похоже на то... Вверх. Вниз. Вверх. Вниз. Если кто-то и наблюдает за тобой через камеру наблюдения, то сейчас он наверняка получает от шоу истинное удовольствие.")
 
-		saynn("[say=pc]You're strong. Can I get down now?[/say]")
+		saynn("[say=pc]Ты сильная. Можно мне уже спуститься?[/say]")
 
-		saynn("The tentacles hit one of the walls while slithering around.. leaving a dent in it. Huh.")
+		saynn("Скользя по сторонам, щупальца врезаются в одну из стен... оставляя на ней вмятину. Хм.")
 
-		saynn("[say=pc]There could be space behind any wall, be careful.[/say]")
+		saynn("[say=pc]За любой стеной может быть пустота, будь осторожнее.[/say]")
 
-		saynn("They test their own strength and coordination for a bit more.. before finally lowering you down to the floor.")
+		saynn("Они ещё какое-то время проверяют свою силу и координацию... прежде чем наконец опустить тебя на пол.")
 
-		saynn("[say=pc]Uh.[/say]")
+		saynn("[say=pc]Э-э...[/say]")
 
-		saynn("Lifting a single person means they're strong.. but it feels like they still need more training to be able to fight the whole bio-lab worth of armed guards. Hopefully it will all be worth it.")
+		saynn("Поднять одного человека — значит, они сильны... но кажется, им всё ещё нужно потренироваться, чтобы сразиться со всей армией вооружённой охраны биолаборатории. Надеюсь, оно того стоит.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "a8"):
-		saynn("You were thinking about offering a friendly match of armwrestling.. but it looks like the tentacles want another big workout. They sure got strong fast. Makes sense since they don't have the same physiology as you.")
+		saynn("Ты подумывал предложить дружеский поединок на руках... но, похоже, щупальца жаждут другой, более мощной разминки. Они чертовски быстро окрепли. Впрочем, логично, ведь их физиология отличается от твоей.")
 
-		saynn("The many tentacles already begin reaching towards you.. probably to lift you.")
+		saynn("Множество щупалец уже тянутся к тебе... вероятно, чтобы поднять.")
 
-		saynn("[say=pc]Wait![/say]")
+		saynn("[say=pc]Погоди![/say]")
 
-		saynn("The thick green tips pause for a second.")
+		saynn("Толстые зелёные кончики замирают на секунду.")
 
-		saynn("You look around for the heaviest thing in the room. Your bed.. isn't exactly heavy.. the shower.. you'd rather not have it ripped out of the wall.. the fridge.. huh.")
+		saynn("Ты оглядываешься в поисках самого тяжёлого предмета в комнате. Твоя кровать... не особо-то и тяжёлая... душ... не хотелось бы, чтобы его вырвало с корнем из стены... холодильник... хм.")
 
-		saynn("This might be the perfect object. You point at the fridge behind you.")
+		saynn("Это может быть идеальный объект. Ты указываешь на холодильник позади себя.")
 
-		saynn("[say=pc]I bet you wouldn't lift that.[/say]")
+		saynn("[say=pc]Спорим, это ты не поднимешь?[/say]")
 
 		_tentacles.talk("We can certainly try.")
-		saynn("The tentacles take up the offered challenge, their attention shifts from you to the large fridge humming in the corner.")
+		saynn("Щупальца принимают вызов, их внимание переключается с тебя на большой гудящий холодильник в углу.")
 
-		saynn("They slither up to you and inspect it.. by putting its green slimy tendrils all over it.. like its some kind of adult cartoon.")
+		saynn("Они подползают к нему и осматривают... облепляя его своими зелёными склизкими отростками... прямо как в каком-то взрослом мультфильме.")
 
-		saynn("Then, they commit.")
+		saynn("Затем они приступают к делу.")
 
-		saynn("Thick tentacles wrap around the base and sides. With a loud creak from the floor tiles, the fridge gets lifted a few inches off the ground.")
+		saynn("Толстые щупальца обвивают основание и бока. С громким скрипом напольной плитки холодильник приподнимается над землей на несколько дюймов.")
 
-		saynn("[say=pc]Okay, that's something.[/say]")
+		saynn("[say=pc]Ну, это уже что-то.[/say]")
 
-		saynn("That thing was stocked full.. and yet they lifted it. They don't seem to be done either.. They begin to move it, raising it first.. before lowering it back down. The fridge's internals hum louder as they get tested against the shifting gravity.. Luckily the power cord seems to be long enough for the fridge to almost reach the ceiling.")
+		saynn("Этот агрегат был забит до отказа... и всё же они его подняли. И, похоже, они ещё не закончили... Они начинают двигать его, сначала поднимая высоко вверх, а затем опуская обратно. Внутренности холодильника гудят всё громче, пока их проверяют на прочность при смене гравитации... К счастью, шнур питания кажется достаточно длинным, чтобы холодильник почти достал до потолка.")
 
-		saynn("The tentacles keep going through with their new workout routine while you just watch them. You get a feeling.. that if the tentacles would chuck that thing somewhere.. it might do some serious damage.")
+		saynn("Щупальца продолжают свою новую тренировку, пока ты просто наблюдаешь за ними. У тебя возникает чувство... что если эти щупальца швырнут эту махину куда-нибудь... она может нанести серьезный ущерб.")
 
-		saynn("There aren't really any visible muscles in the tentacles.. none that you can see anyway. They just get thicker as they become stronger.. more agile.")
+		saynn("В щупальцах почти не видно мышц... по крайней мере, тех, что можно заметить глазом. Они просто становятся толще по мере того, как становятся сильнее... и маневреннее.")
 
-		saynn("[say=pc]Maybe that's enough?[/say]")
+		saynn("[say=pc]Может, хватит?[/say]")
 
-		saynn("They keep going a bit longer.. and then place the fridge back in its place.")
+		saynn("Они продолжают еще немного... а затем ставят холодильник на место.")
 
-		saynn("Despite all of that, they don't really look tired. They just slither off to somewhere else.")
+		saynn("Несмотря на всё это, они не выглядят уставшими. Они просто уползают куда-то в другое место.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "a9"):
-		saynn("It looks like the tentacles could use another workout. Considering how crazy-strong they've gotten, saying no to them would be a big mistake on your part.")
+		saynn("Похоже, щупальцам не помешала бы еще одна тренировка. Учитывая, какими безумно сильными они стали, отказать им было бы большой ошибкой с твоей стороны.")
 
-		saynn("You see a fridge in the corner of your cell.. and decide to climb it.")
+		saynn("В углу твоей камеры ты замечаешь холодильник... и решаешь на него взобраться.")
 
-		saynn("[say=pc]There is no way you'd lift the fridge now.[/say]")
+		saynn("[say=pc]В одиночку тебе бы этот холодильник точно не поднять.[/say]")
 
-		saynn("The tentacles see that and instantly understand what to do. They slither up to the fridge, slip its strongest tendrils underneath it and get a good grip.. before proceeding to try to lift it.")
+		saynn("Тентакли тут же понимают, что к чему. Они скользят к холодильнику, подсовывают под него свои самые мощные отростки и крепко цепляются... после чего принимаются пытаться его поднять.")
 
-		saynn("With a low sound of the metal being stressed, the entire unit.. with you on top.. begins to rise smoothly into the air. You grip the edges, trying not to fall off.")
+		saynn("С низким гулом напрягаемого металла весь агрегат... вместе с тобой наверху... начинает плавно подниматься в воздух. Ты вцепляешься в края, стараясь не свалиться.")
 
-		saynn("[say=pc]Really?[/say]")
+		saynn("[say=pc]Серьёзно?[/say]")
 
-		saynn("They don't stop and wrap more tentacles around the fridge. Then they just proceed to raise and lower the whole contraption.. Gradually, they get more comfortable with the weight.")
+		saynn("Они не останавливаются и обвивают холодильник новыми щупальцами. Затем они просто начинают поднимать и опускать всю эту конструкцию... Постепенно они привыкают к весу.")
 
-		saynn("They try to raise it as high as they can.. but find their limit. Huh. It looks like the tentacles have reached their top shape. They're as strong as they can be. Any extra training would just lead to diminishing returns.")
+		saynn("Они пытаются поднять его как можно выше... но достигают своего предела. Хм. Похоже, тентакли достигли своего пика. Они стали максимально сильными. Любые дальнейшие тренировки принесут лишь незначительный результат.")
 
 		_tentacles.talk("We.. we are ready.")
-		saynn("[say=pc]Alright. Hm.[/say]")
+		saynn("[say=pc]Ладно. Хм.[/say]")
 
-		saynn("The tentacles keep going for a bit longer.. while you just sit on the edge.")
+		saynn("Тентакли продолжают еще какое-то время... пока ты просто сидишь на краю.")
 
-		saynn("[say=pc]You should be able to smash everything in here now, I bet. But would that be enough?[/say]")
+		saynn("[say=pc]Теперь ты, должно быть, сможешь разнести здесь всё к чертям. Но будет ли этого достаточно?[/say]")
 
-		saynn("You will have to think about it.")
+		saynn("Тебе придется об этом подумать.")
 
-		saynn("After the tentacles get bored, they lower the fridge and set it down into its spot. The tendrils let go and retreat.")
+		saynn("Когда щупальцам становится скучно, они опускают холодильник на его место. Усики разжимаются и уползают прочь.")
 
-		saynn("They certainly seem as dense as they can be too. Any extra thickness would just lead to loss of agility.")
+		saynn("Они и так кажутся максимально плотными. Любая лишняя толщина лишь лишит их маневренности.")
 
-		saynn("After that workout, they just slither away.")
+		saynn("После такой тренировки они просто уползают восвояси.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "a10"):
-		saynn("The tentacles have already reached peak levels of strength and agility.. but you decide to offer them a match of arm-wrestling anyway.")
+		saynn("Щупальца уже достигли пика силы и ловкости... но ты всё равно решаешь предложить им перетянуть руку.")
 
-		saynn("The tentacles offer you their weakest tendril.. And watch as you try to idly bend it to your side of the table.")
+		saynn("Щупальца подставляют тебе свой самый слабый усик... И наблюдают за тем, как ты пытаешься лениво согнуть его в свою сторону через стол.")
 
-		saynn("There is no point in this.. This is a bigger workout for you rather than them. Still, it gives you some time to think about stuff.")
+		saynn("В этом нет никакого смысла... Для тебя это скорее серьезная нагрузка, чем для них. Но зато это дает тебе время немного поразмыслить.")
 
-		saynn("[say=pc]That reinforced glass.. I bet you can smash it now.[/say]")
+		saynn("[say=pc]Это армированное стекло... Спорим, теперь ты можешь его разбить?[/say]")
 
-		saynn("The tentacles get tired of your attempts. They grab you and put you on top of the fridge. And then they start lifting the fridge.. while you're sitting on top.")
+		saynn("Щупальцам надоедают твои попытки. Они хватают тебя и усаживают на холодильник. А затем начинают поднимать холодильник... прямо под тобой.")
 
-		saynn("[say=pc]Yeah, with this. They sure made a huge mistake leaving the fridge like that. But I think we will need more than just raw power.[/say]")
+		saynn("[say=pc]Ага, с этим. Они явно совершили огромную ошибку, оставив холодильник в таком состоянии. Но думаю, нам понадобится не только грубая сила.[/say]")
 
-		saynn("The tentacles go through their routine, raising and lowering the fridge until they get satisfied. There is no obvious change in them while they do this, any new gains are barely visible.")
+		saynn("Щупальца выполняют свою рутину, поднимая и опуская холодильник до тех пор, пока не наедятся. Пока они это делают, в них не заметно никаких явных изменений — любые новые достижения едва различимы глазу.")
 
-		saynn("[say=pc]You probably wouldn't hurt a fly.. unless I make you really angry.[/say]")
+		saynn("[say=pc]Ты, наверное, и мухи не обидишь... если только не разозлишь меня по-настоящему.[/say]")
 
-		saynn("After the tendrils get bored, they just put the fridge back where it was.. In the obvious dent in the floor.")
+		saynn("Когда щупальцам надоедает, они просто возвращают холодильник на место... прямо в ту самую вмятину на полу.")
 
-		saynn("You hop off the fridge and watch the tentacles slither away.")
+		saynn("Ты спрыгиваешь с холодильника и наблюдаешь, как щупальца уползают прочь.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	var _tentacles:PlayerSlaveryTentacles = GM.main.PS

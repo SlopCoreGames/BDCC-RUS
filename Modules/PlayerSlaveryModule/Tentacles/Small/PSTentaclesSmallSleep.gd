@@ -23,132 +23,132 @@ func _run():
 		playAnimation(StageScene.Sleeping, "sleep")
 		biggestStat = _tentacles.getBiggestStat()
 		if (biggestStat == _tentacles.STAT_ANGER):
-			saynn("You climb into your bed and prepare to sleep.")
+			saynn("Ты забираешься в кровать и готовишься ко сну.")
 
-			saynn("You give the tentacles a short glimpse and notice that they've started doing a strange thing.. Only some of the tendrils are actually resting curled-up in the nest.. the rest are still up and watching around.")
+			saynn("Ты бросаешь короткий взгляд на щупальца и замечаешь, что они начали вытворять что-то странное... Только часть отростков действительно свернулась калачиком в гнезде и отдыхает... остальные всё ещё бодрствуют и озираются по сторонам.")
 
-			saynn("After some time, some of them go limp.. and some wake up instead. It's like.. they are rotating.")
+			saynn("Спустя какое-то время одни из них обмякают... а другие, напротив, просыпаются. Такое ощущение, будто... они сменяют друг друга.")
 
-			saynn("Understandable, really. You wouldn't trust anyone in this bio-lab either.")
+			saynn("Вполне понятно. В этой биолаборатории ты бы тоже никому не доверился.")
 
 		elif (biggestStat == _tentacles.STAT_AGILITY):
-			saynn("You climb into your bed.. and start preparing for sleep.")
+			saynn("Ты забираешься в кровать... и начинаешь готовиться ко сну.")
 
-			saynn("When you glance over at the tentacles, you can see them lie completely still, probably already sleeping. They clearly don't have any energy left.")
+			saynn("Когда ты переводишь взгляд на щупальца, то видишь, что они лежат совершенно неподвижно — должно быть, уже спят. У них явно не осталось сил.")
 
-			saynn("[say=pc]Long day, huh, {psTentacles}?[/say]")
+			saynn("[say=pc]Тяжелый выдался денек, а, {psTentacles}?[/say]")
 
-			saynn("A single, thick tendril lifts an inch off the nest in a weak, acknowledging twitch before flopping back down. The rest don't react at all.")
+			saynn("Один толстый отросток слабо дергается, на дюйм приподнимаясь над гнездом в слабом знакe признания, а затем бессильно падает обратно. Остальные никак не реагируют.")
 
-			saynn("You hum softly, settling under your blanket. The only sound from them is a faint, wet rustle as they shift slightly, seeking the most comfortable position in their pile.")
+			saynn("Ты тихонько напеваешь под нос, устраиваясь под одеялом. Единственный звук, исходящий от них — это слабый влажный шорох, когда они слегка шевелятся, пытаясь найти самое удобное положение в своей куче.")
 
-			saynn("[say=pc]Get some rest. You've earned it.[/say]")
+			saynn("[say=pc]Отдохни как следует. Ты это заслужила.[/say]")
 
 		elif (biggestStat == _tentacles.STAT_MIND):
-			saynn("You climb into your bed.. and start preparing for sleep.")
+			saynn("Ты забираешься в кровать... и начинаешь готовиться ко сну.")
 
-			saynn("But no matter how hard you try, you can't seem to actually fall asleep. You just have this unexplainable feeling of.. anxiety.. on your mind.")
+			saynn("Но как бы ты ни старался, уснуть никак не получается. В голове лишь необъяснимое чувство... тревоги.")
 
-			saynn("You look at the tentacles.. and realize that you two are sharing that feeling.")
+			saynn("Ты смотришь на щупальца... и понимаешь, что вы оба разделяете это чувство.")
 
-			saynn("[say=pc]Things will be alright, {psTentacles}. We will find a way out of here.[/say]")
+			saynn("[say=pc]Все будет хорошо, {psTentacles}. Мы найдем выход отсюда.[/say]")
 
-			saynn("They stay still, thinking about your words. The anxiety lessens.. but now a slight confusion replaces it.. There is also a creeping feeling of distrust gaining power. Where did that come from?")
+			saynn("Они замирают, обдумывая твои слова. Тревога утихает... но на смену ей приходит легкое замешательство... А еще — подкрадывающееся чувство недоверия, набирающее силу. Откуда оно взялось?")
 
-			saynn("[say=pc]You don't trust me?[/say]")
+			saynn("[say=pc]Ты мне не веришь?[/say]")
 
-			saynn("The tentacles shake side to side a bit.. and then direct their tips towards the camera.")
+			saynn("Щупальца слегка покачиваются из стороны в сторону... а затем направляют свои кончики прямо на тебя.")
 
-			saynn("[say=pc]Oh. Right.[/say]")
+			saynn("[say=pc]Ох. Точно.[/say]")
 
-			saynn("That's probably where the anxiety comes from.")
+			saynn("Видимо, именно отсюда и берется эта тревога.")
 
-			saynn("[say=pc]We will do what they want us to do for as long as possible.[/say]")
+			saynn("[say=pc]Мы будем делать то, что они хотят, столько, сколько потребуется.[/say]")
 
-			saynn("The confusion is getting stronger again.")
+			saynn("Замешательство снова усиливается.")
 
-			saynn("[say=pc]They're gonna make a mistake. And we're gonna exploit that.[/say]")
+			saynn("[say=pc]Они совершат ошибку. И мы этим воспользуемся.[/say]")
 
-			saynn("Your confidence begins to overpower the confusion and anxiety. Finally, you feel calm again.")
+			saynn("Уверенность начинает брать верх над замешательством и тревогой. Наконец-то ты снова чувствуешь спокойствие.")
 
 			_tentacles.talk("Thank you, we feel better.")
 		else:
-			saynn("You climb into your bed.. and start preparing for sleep. The tentacles are watching you do so.. they're really staring. They're trying to be sneaky about it.. but you can feel their attention.")
+			saynn("Ты забираешься в кровать... и начинаешь готовиться ко сну. Щупальца наблюдают за тобой... они пялятся вовсю. Пытаются делать это незаметно... но ты кожей чувствуешь их внимание.")
 
-			saynn("When they notice your stare, the tendrils pretend that they're not doing anything, just swaying aimlessly. Kinda cute.")
+			saynn("Заметив твой взгляд, отростки делают вид, что ничего особенного не происходит, просто бесцельно покачиваясь. Даже мило.")
 
-			saynn("[say=pc]You're too big to sleep in my bed, {psTentacles}.[/say]")
+			saynn("[say=pc]Ты слишком большая для моей кроватки, {psTentacles}.[/say]")
 
-			saynn("When they hear that, they all collectively droop. Aw.. Some tentacles still have hope, watching you subtly.")
+			saynn("Услышав это, они все разом поникли. Оу... некоторые щупальца всё еще теплятся надеждой, украдкой наблюдая за тобой.")
 
-			saynn("[say=pc]You're just gonna crush me.[/say]")
+			saynn("[say=pc]Ты меня просто раздавишь.[/say]")
 
-			saynn("And now even they have lost any and all hope. They might not understand you exactly.. but they can feel it in your tone.")
+			saynn("И теперь даже у них не осталось ни капли надежды. Возможно, они не понимают тебя до конца... но они чувствуют это по твоему тону.")
 
-			saynn("You hum while tentacles prepare for their own sleep, curling around each other, making a rustling noise.")
+			saynn("Ты напеваешь под нос, пока щупальца готовятся ко сну, сворачиваясь друг вокруг друга с характерным шуршанием.")
 
-			saynn("Time passes but they're still doing it. They're sure taking a while to settle.. You let out a sigh.")
+			saynn("Время идет, а они всё никак не успокоятся. У них уходит целая вечность, чтобы улечься... Ты тяжело вздыхаешь.")
 
-			saynn("[say=pc]Fine-e, come here. Just don't kill me.[/say]")
+			saynn("[say=pc]Ладно-о, иди сюда. Только не придуши меня.[/say]")
 
-			saynn("The tentacles instantly spring up all at once. They gently pull their nest closer until it bumps against the side of your bed. Their bases remain nestled where they were.. but the tendrils themselves flop onto the bed!")
+			saynn("Щупальца мгновенно взмывают вверх одновременно. Они осторожно подтягивают свое гнездо поближе, пока оно не упирается в край твоей кровати. Их основания остаются на прежнем месте... но сами отростки плюхаются прямо на кровать!")
 
-			saynn("Thicker ones carefully slide under the mattress, lifting it a bit. The slender, warm ones wrap around your legs, curl around your waist and get under your pillow.")
+			saynn("Более толстые осторожно проскальзывают под матрас, слегка приподнимая его. Тонкие и теплые обвивают твои ноги, обхватывают талию и забираются под подушку.")
 
-			saynn("They finish by pulling the blanket up over both you and themselves..")
+			saynn("В завершение они натягивают одеяло поверх тебя и самих себя...")
 
-			saynn("Despite there now being way less empty space.. it's still quite comfy.")
+			saynn("Несмотря на то, что свободного места стало гораздо меньше... спать всё равно довольно уютно.")
 
-			saynn("[say=pc]Good night.[/say]")
+			saynn("[say=pc]Спокойной ночи.[/say]")
 
-			saynn("You smooch one of the tentacles.")
+			saynn("Ты нежно чмокаешь одно из щупалец.")
 
-		saynn("Time to sleep.")
+		saynn("Пора спать.")
 
-		addButton("Sleep", "Time to sleep", "doSleep")
+		addButton("Спать", "Пора спать", "doSleep")
 	if(state == "doSleep"):
 		_tentacles.doAnim("idle")
 		if (biggestStat == _tentacles.STAT_ANGER):
-			saynn("A new day arrives..")
+			saynn("Наступает новый день...")
 
-			saynn("As you get up and look at the tentacles.. You realize that they have gotten bigger! They barely fit in their nest now.. there is no way they'd grow further.")
+			saynn("Когда ты встаешь и смотришь на щупальца... ты понимаешь, что они стали больше! Теперь они едва помещаются в своем гнезде... кажется, расти им больше некуда.")
 
-			saynn("They seem to be just as mean as before.")
+			saynn("Кажется, они всё такие же вредные, как и прежде.")
 
 		elif (biggestStat == _tentacles.STAT_AGILITY):
-			saynn("A new day arrives..")
+			saynn("Наступает новый день...")
 
-			saynn("As you get up and look at the tentacles.. You realize that they have gotten bigger! They barely fit in their nest now.. there is no way they'd grow further.")
+			saynn("Когда ты встаешь и смотришь на щупальца... ты понимаешь, что они стали больше! Теперь они едва помещаются в своем гнезде... кажется, расти им больше некуда.")
 
-			saynn("But they can probably get stronger and more agile yet.. all that mass is useless without muscles to lift it.")
+			saynn("Но они, вероятно, еще могут стать сильнее и проворнее... вся эта масса бесполезна без мышц, способных её поднимать.")
 
 		elif (biggestStat == _tentacles.STAT_MIND):
-			saynn("A new day arrives..")
+			saynn("Наступает новый день...")
 
-			saynn("As you get up and look at the tentacles.. You realize that they have gotten bigger! They barely fit in their nest now.. there is no way they'd grow further.")
+			saynn("Когда ты встаешь и смотришь на щупальца... ты понимаешь, что они стали больше! Теперь они едва помещаются в своем гнезде... кажется, расти им больше некуда.")
 
-			saynn("You feel a stronger connection with them too..")
+			saynn("Ты также чувствуешь с ними более тесную связь...")
 
 		else:
-			saynn("A new day arrives..")
+			saynn("Наступает новый день...")
 
-			saynn("Your whole body feels sore for some reason.")
+			saynn("Почему-то всё тело ломит от боли.")
 
-			saynn("You open your eyes.. and realize that the tentacles have gotten bigger! They've been resting on you the whole night.")
+			saynn("Ты открываешь глаза... и понимаешь, что щупальца стали больше! Они покоились на тебе всю ночь.")
 
-			saynn("[say=pc]Ouch.. ow..[/say]")
+			saynn("[say=pc]Ой... ай...[/say]")
 
-			saynn("As the monster wakes up, it of course takes its heavy tendrils off of you. Instead, it rubs your sore limbs.")
+			saynn("Когда монстр просыпается, он, конечно же, убирает с тебя свои тяжелые отростки. Вместо этого он начинает потирать твои затекшие конечности.")
 
-			saynn("[say=pc]..thanks.[/say]")
+			saynn("[say=pc]...спасибо.[/say]")
 
-			saynn("The tentacles barely fit in their nest now.. there is no way they'd grow further.")
+			saynn("Теперь щупальца едва помещаются в своём гнезде... дальше они расти уже не смогут.")
 
-			saynn("They can probably grow more lusty though..")
+			saynn("Хотя они, вероятно, могут стать еще более похотливыми...")
 
-		saynn("Well.. It's a new day.")
+		saynn("Что ж... наступил новый день.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	var _tentacles:PlayerSlaveryTentacles = GM.main.PS

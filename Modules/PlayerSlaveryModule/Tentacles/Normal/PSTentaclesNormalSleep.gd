@@ -22,78 +22,78 @@ func _run():
 	if(state == ""):
 		aimCameraAndSetLocName(_tentacles.getMonsterLoc())
 		biggestStat = _tentacles.getBiggestStat()
-		saynn("It's late now.. the lights of the bio-lab begin to dim, forcing you to start winding down, no matter if you want it or not.")
+		saynn("Уже поздно... свет в биолаборатории начинает тускнеть, заставляя тебя понемногу расслабляться, хочешь ты того или нет.")
 
-		saynn("You go check on {psTentacles}.")
+		saynn("Ты идешь проверить {psTentacles}.")
 
 		if (biggestStat == _tentacles.STAT_ANGER):
 			_tentacles.doAnim("glare")
-			saynn("They look.. angry.. to say the least. Their green pointy tips are always glaring in some direction, threatening to strike at any second.")
+			saynn("Они выглядят... мягко говоря, злыми. Их зеленые заостренные кончики вечно куда-то устремлены, готовые в любую секунду нанести удар.")
 
-			saynn("This could be a bad thing if their anger gets directed towards you.. But this also could be a good thing. Certainly.")
+			saynn("Это может обернуться бедой, если их гнев обрушится на тебя... Но это также может быть и к лучшему. Определенно.")
 
 		elif (biggestStat == _tentacles.STAT_AGILITY):
 			_tentacles.doAnim("idle")
-			saynn("They look.. thick and strong. The tendrils are swaying lazily, clearly tired after all the workouts..")
+			saynn("Они выглядят... толстыми и сильными. Щупальца лениво покачиваются, явно уставшие после всех тренировок...")
 
-			saynn("The tentacles got strong incredibly fast. And the scientists will certainly not expect that. This could be a great opportunity.")
+			saynn("Щупальца окрепли невероятно быстро. И ученые явно этого не ожидают. Это может стать отличной возможностью.")
 
 		elif (biggestStat == _tentacles.STAT_MIND):
 			_tentacles.doAnim("idle")
-			saynn("Over your time with them, you have certainly gotten to know them better. It's like you have some kind of.. psychic bond of sorts. Being alone in this cell would make you much more miserable for sure.")
+			saynn("За то время, что ты проводишь с ними, ты определенно узнал их получше. Это похоже на какую-то... своего рода психическую связь. Будь ты в этой камере совсем одна, тебе было бы куда паршивее.")
 
 			_tentacles.talk("We're doing well, thank you for wondering.")
-			saynn("Huh. Somehow you get a feeling that they're doing well. Knowing that makes you feel better too. Maybe you will find a way out, one day.")
+			saynn("Хм. Почему-то у тебя возникает чувство, что у них всё в порядке. От этого знании тебе тоже становится легче. Может, однажды ты найдешь выход.")
 
 		else:
 			_tentacles.doAnim("idle")
-			saynn("The tentacles are swaying seductively at you. They way their green tips drip with juices.. ghhh.. makes it hard to resist.")
+			saynn("Щупальца соблазнительно покачиваются перед тобой. То, как с их зеленых кончиков капает сок... гххх... перед этим трудно устоять.")
 
-			saynn("Getting your tentacles to be so horny might've not been the best idea.. but who knows.. maybe it was. Lust can be a powerful motivator.")
+			saynn("Довести свои щупальца до такого возбуждения, возможно, было не самой лучшей идеей... но кто знает... может, и не зря. Похоть может быть мощным мотиватором.")
 
-		saynn("But for now.. it's time to get into your bed.")
+		saynn("Но пока что... пора забираться в постель.")
 
-		addButton("Bed", "Get into the bed", "goBed")
+		addButton("Кровать", "Лечь в кровать", "goBed")
 	if(state == "goBed"):
 		aimCameraAndSetLocName(_tentacles.LOC_BED)
 		GM.pc.setLocation(_tentacles.LOC_BED)
 		_tentacles.setMonsterLoc(_tentacles.LOC_MIDDLE)
 		if (biggestStat == _tentacles.STAT_ANGER):
 			playAnimation(StageScene.Sleeping, "sleep", {pc="pc"})
-			saynn("You get into your bed and prepare to sleep.")
+			saynn("Ты забираешься в постель и готовишься ко сну.")
 
-			saynn("A constant feeling of being watched by tentacles doesn't help with that. But at least they only seem to be watching and nothing else.")
+			saynn("Постоянное ощущение, что за тобой наблюдают щупальца, мало помогает расслабиться. Но, по крайней мере, кажется, что они только смотрят и больше ничего не делают.")
 
 		elif (biggestStat == _tentacles.STAT_AGILITY):
 			playAnimation(StageScene.TentaclesCuddle, "cuddle", {plant=true})
-			saynn("Before you can get into your bed, you suddenly get swept up by the tentacles! It looks like they're offering themselves as an alternative for a bed.")
+			saynn("Прежде чем ты успеваешь лечь в кровать, тебя внезапно подхватывают щупальца! Похоже, они предлагают себя в качестве альтернативы постели.")
 
-			saynn("They're not the most comfy.. the texture of the tendrils has gotten quite more hard.. but it's not the worst.")
+			saynn("Они не самые удобные... текстура отростков стала довольно жесткой... но это не самый худший вариант.")
 
 		elif (biggestStat == _tentacles.STAT_MIND):
 			playAnimation(StageScene.Sleeping, "sleep", {pc="pc"})
-			saynn("You get into your bed and prepare to sleep. One of the most thin tentacles join you, laying on top.")
+			saynn("Ты забираешься в кровать и готовишься ко сну. Одно из самых тонких щупалец присоединяется к тебе, укладываясь сверху.")
 
-			saynn("Slowly, you start drifting into the land of dreams. You feel.. at peace.")
+			saynn("Медленно ты начинаешь погружаться в мир грез. Ты чувствуешь... умиротворение.")
 
 		else:
 			playAnimation(StageScene.TentaclesSleepOn, "sleep", {plant=true, bodyState={naked=true}})
-			saynn("Before you can get into your bed, you suddenly get swept up by the tentacles! It looks like they're offering themselves as an alternative for a bed.")
+			saynn("Прежде чем ты успеваешь лечь в кровать, тебя внезапно подхватывают щупальца! Похоже, они предлагают себя в качестве альтернативы постели.")
 
-			saynn("They feel.. incredibly comfy actually.. The tentacles mold into perfect supports.. and proceed to gently tease your body in various spots.")
+			saynn("На самом деле они ощущаются... невероятно уютно... Щупальца принимают форму идеальной опоры и начинают нежно ласкать твое тело в самых разных местах.")
 
-		saynn("Time to sleep..")
+		saynn("Пора спать...")
 
-		addButton("Sleep", "Time to sleep", "doSleep")
+		addButton("Спать", "Пора спать", "doSleep")
 	if(state == "doSleep"):
 		_tentacles.doAnim("sleep", {instantSleep=true})
-		saynn("A new day arrives. And you're still in the bio-lab.")
+		saynn("Наступает новый день. А ты всё еще в биолаборатории.")
 
-		saynn("The tentacles still seem to be sleeping..")
+		saynn("Щупальца, кажется, всё еще спят...")
 
-		saynn("You hear knocking on the glass. It's these clowns again, you almost forgot about them by now.")
+		saynn("Слышится стук в стекло. Опять эти клоуны, ты уже почти и забыл о них.")
 
-		addButton("Window", "Go approach the window", "talk_sci")
+		addButton("Окно", "Подойти к окну", "talk_sci")
 	if(state == "talk_sci"):
 		_tentacles.tpScientistsWindow()
 		aimCameraAndSetLocName(_tentacles.LOC_IMPORTANT)
@@ -101,126 +101,126 @@ func _run():
 		addCharacter(GM.main.PS.getScientist1CharID())
 		addCharacter(GM.main.PS.getScientist2CharID())
 		playAnimation(StageScene.Duo, "stand", {pc=GM.main.PS.getScientist1CharID(), npc=GM.main.PS.getScientist2CharID()})
-		saynn("You approach the window and see the two scientists. Their bodies are outlined by the harsh, cold lights. The guy holds a steaming mug and the girl is clutching a tablet to her chest. They're classy as always.")
+		saynn("Ты подходишь к окну и видишь двух ученых. Их силуэты четко проступают в резком холодном свете ламп. Парень держит дымящуюся кружку, а девушка прижимает к груди планшет. Как всегда, шикуют.")
 
-		saynn("The intercom kicks in with a sharp pop.")
+		saynn("Интерком включается с резким щелчком.")
 
-		saynn("[say=sci2]Hello. How are you feeling, test subject?[/say]")
+		saynn("[say=sci2]Привет. Как самочувствие, подопытный?[/say]")
 
-		saynn("You look around.. the tentacles still seem to be asleep.")
+		saynn("Ты оглядываешься по сторонам... кажется, щупальца всё ещё спят.")
 
-		saynn("[say=pc]How does it look like I'm feeling?[/say]")
+		saynn("[say=pc]На что похоже моё самочувствие?[/say]")
 
-		saynn("[say=sci1]Hm. Well-fed. Rested. Cozy, even. Getting along with that thing?[/say]")
+		saynn("[say=sci1]Хм. Сыт, отдохнул. Даже уютно. Ладишь с этой штуковиной?[/say]")
 
-		saynn("{sci1.He} takes a slow sip from {sci1.his} mug.")
+		saynn("{sci1.He} делает медленный глоток из кружки {sci1.his}.")
 
-		saynn("[say=pc]You bet. What do you want?[/say]")
+		saynn("[say=pc]Ещё бы. Чего тебе?[/say]")
 
-		saynn("[say=sci1]We've come to inform you that this is your happy day.[/say]")
+		saynn("[say=sci1]Мы пришли сообщить, что сегодня твой счастливый день.[/say]")
 
-		saynn("{sci1.He} says that with a corporate smile on {sci1.his} face.")
+		saynn("{sci1.He} говорит это с корпоративной улыбкой на {sci1.his} лице.")
 
-		saynn("[say=sci2]We've completed the research. This specimen.. unfortunately.. hasn't proved to be valuable enough.[/say]")
+		saynn("[say=sci2]Исследование завершено. Этот экземпляр... к сожалению... не оказался достаточно ценным.[/say]")
 
-		saynn("[say=pc]What do you mean?[/say]")
+		saynn("[say=pc]В каком смысле?[/say]")
 
-		saynn("[say=sci1]It's just an alien plant. Space weed. Completely useless. The database already has plenty of them, wasting space on our digital drives.[/say]")
+		saynn("[say=sci1]Это всего лишь инопланетное растение. Космическая трава. Совершенно бесполезная. В базе данных их и так полно, только место на цифровых дисках занимают.[/say]")
 
-		saynn("Another sip.")
+		saynn("Ещё один глоток.")
 
-		saynn("[say=sci2]The data shows no unique properties worth further investment. We will have to terminate this project.[/say]")
+		saynn("[say=sci2]Данные не показывают никаких уникальных свойств, заслуживающих дальнейших инвестиций. Проект придется закрыть.[/say]")
 
-		saynn("[say=pc]Really?[/say]")
+		saynn("[say=pc]Серьёзно?[/say]")
 
-		saynn("Of course they didn't find any unique properties. They got their data way too early.")
+		saynn("Конечно, они не нашли ничего уникального. Они собрали данные слишком рано.")
 
-		saynn("[say=sci1]Hah. Don't tell me you've formed a bond. Sentimentality is always just a path to fatality. Perhaps you two do have more in common than I thought.[/say]")
+		saynn("[say=sci1]Хах. Только не говори мне, что ты привязалась. Сентиментальность — это всегда прямой путь к фатальному исходу. Возможно, у вас двоих действительно больше общего, чем я думал.[/say]")
 
-		saynn("Behind you, the tentacles go unnaturally still.")
+		saynn("Позади тебя щупальца замирают в неестественном оцепенении.")
 
-		saynn("[say=sci2]Our bio-lab needs space for the next project.[/say]")
+		saynn("[say=sci2]Нашей биолаборатории нужно место для следующего проекта.[/say]")
 
-		saynn("[say=pc]What do you mean by terminating? You're just gonna kill it?[/say]")
+		saynn("[say=pc]В каком смысле «закрыть»? Вы что, просто его прикончите?[/say]")
 
-		saynn("[say=sci1]Kill is such an ugly word. I prefer the term.. Decommissioning. Spacing it would be my preferred choice. But I don't like littering. We gotta put more care into our environment.[/say]")
+		saynn("[say=sci1]«Прикончить» — такое уродливое слово. Я предпочитаю термин... Списание. Выбросить его в космос было бы идеальным вариантом, но я не люблю мусорить. К нашей среде нужно относиться бережнее.[/say]")
 
-		saynn("The girl flinches slightly.")
+		saynn("Девушка слегка вздрагивает.")
 
-		saynn("[say=sci2]I've developed a substance that will shut down most of its neural activity. It will still grow.. but it will be completely harmless.[/say]")
+		saynn("[say=sci2]Я разработал вещество, которое подавит большую часть его нейронной активности. Оно продолжит расти... но станет совершенно безобидным.[/say]")
 
-		saynn("[say=sci1]It will serve us as a cute office plant.[/say]")
+		saynn("[say=sci1]Оно будет служить нам в качестве милого офисного растения.[/say]")
 
-		saynn("They really wanna go with that plan.")
+		saynn("Они реально хотят придерживаться этого плана.")
 
-		saynn("[say=pc]What about me? Gonna keep me forever or inject me with that shit too?[/say]")
+		saynn("[say=pc]А как же я? Собираетесь держать меня вечно или тоже вколете в меня это дерьмо?[/say]")
 
-		saynn("[say=sci2]Actually, we have no reason to do so. Your collar has piqued my interest. I've run a traceback of a signal and found a bounty attached to your name. We can just hand you back to the authorities.[/say]")
+		saynn("[say=sci2]Вообще-то, у нас нет для этого причин. Твой ошейник заинтриговал меня. Я проследил сигнал и обнаружил, что за твоим именем закреплена награда. Мы можем просто вернуть тебя властям.[/say]")
 
-		saynn("The guy finishes his coffee.. and then leans closer to the glass.")
+		saynn("Парень допивает кофе... а затем наклоняется ближе к стеклу.")
 
-		saynn("[say=sci1]You have outlived your usefulness. If not for {sci2.his} kindness, you'd be sharing a similar fate. But, luckily, we can extract more value out of you still.[/say]")
+		saynn("[say=sci1]Ты исчерпала свою полезность. Если бы не {sci2.his} доброта, ты бы разделила ту же участь. Но, к счастью, мы всё еще можем извлечь из тебя больше выгоды.[/say]")
 
-		saynn("[say=sci2]In a few minutes, the guards will deliver a syringe into the cell. Your job.. you know what your job is.[/say]")
+		saynn("[say=sci2]Через несколько минут охранники доставят в камеру шприц. Твоя задача... ну, ты сама знаешь, в чем твоя задача.[/say]")
 
-		addButton("Continue", "See what happens next", "syr")
+		addButton("Продолжить", "Смотреть, что будет дальше", "syr")
 	if(state == "syr"):
-		saynn("Just as they said, after some time, the door to your cell opens and a few armed guards enter it, one of them carrying a protected case.")
+		saynn("Как и было сказано, спустя некоторое время дверь твоей камеры открывается, и внутрь входят несколько вооруженных охранников, один из которых несет защищенный кейс.")
 
-		saynn("They place the case on the floor and open with a satisfying hiss that also releases some kind of cold fumes at the same time.")
+		saynn("Они ставят кейс на пол и открывают его с приятным шипением, при котором одновременно вырывается какой-то холодный пар.")
 
-		saynn("Inside.. some kind of injector.")
+		saynn("Внутри... какой-то инъектор.")
 
-		saynn("[say=pc]Why are you telling me to do this?[/say]")
+		saynn("[say=pc]Зачем ты говоришь мне это сделать?[/say]")
 
-		saynn("[say=sci1]Because I want YOU to do this.[/say]")
+		saynn("[say=sci1]Потому что я ХОЧУ, чтобы это сделала ТЫ.[/say]")
 
-		saynn("The guards leave, the door closes behind them.")
+		saynn("Охранники уходят, дверь за ними закрывается.")
 
-		saynn("[say=pc]What if I won't do it?[/say]")
+		saynn("[say=pc]А если я не захочу?[/say]")
 
-		saynn("[say=sci2]If you refuse to do so, we will just have to terminate the speci-..[/say]")
+		saynn("[say=sci2]Если ты откажешься, нам просто придётся терминировать спецы..[/say]")
 
-		saynn("[say=sci1]You will do it. If you refuse.. well.. we can always make an aerosolized version. Isn't that right?[/say]")
+		saynn("[say=sci1]Ты сделаешь это. А если откажешься... ну... мы всегда можем сделать аэрозольную версию. Ведь так?[/say]")
 
-		saynn("{sci1.He} throws a stern look towards {sci1.his} colleague.")
+		saynn("{sci1.He} бросает суровый взгляд на коллегу {sci1.his}.")
 
-		saynn("[say=sci2]It would be possible.. but.. quite unnecessary.[/say]")
+		saynn("[say=sci2]Это было бы возможно.. но.. совершенно излишне.[/say]")
 
-		saynn("[say=sci1]Shut your mouth. It is necessary. And you.[/say]")
+		saynn("[say=sci1]Заткнись. Это необходимо. И ты тоже.[/say]")
 
-		saynn("He look at you.")
+		saynn("Он смотрит на тебя.")
 
-		saynn("[say=sci1]You have time.. until we finish our coffee break. Apparently I also have to have a short talk with my assistant.[/say]")
+		saynn("[say=sci1]У тебя есть время.. пока мы не допьём кофе. Судя по всему, мне ещё нужно перекинуться парой слов с моим ассистентом.[/say]")
 
-		saynn("Knowing them.. you probably have a few more hours.")
+		saynn("Зная их... у тебя, вероятно, есть еще несколько часов.")
 
-		addButton("Continue", "See what happens next", "grabsSyr")
+		addButton("Продолжить", "Смотреть, что будет дальше", "grabsSyr")
 	if(state == "grabsSyr"):
 		aimCameraAndSetLocName(_tentacles.LOC_DOOR)
 		GM.pc.setLocation(_tentacles.LOC_DOOR)
 		removeCharacter(GM.main.PS.getScientist1CharID())
 		removeCharacter(GM.main.PS.getScientist2CharID())
 		playAnimation(StageScene.Solo, "stand")
-		saynn("You approach the opened case and grab the auto-injector syringe. The yellow fluid inside is glowing faintly.")
+		saynn("Ты подходишь к открытому кейсу и берешь шприц-автоинъектор. Желтая жидкость внутри слабо светится.")
 		
-		saynn("Injecting the tentacles with it will strip them of any kind of consciousness.. if you'd to believe the scientists.")
+		saynn("Если верить ученым, инъекция в щупальца лишит их всякого подобия сознания...")
 		
-		addButton("Do it now", "Inject it into the tentacles and be done with it", "doItNow_sure")
-		addButton("Postpone it", "Maybe there is something else you can do..", "postpone")
+		addButton("Сделать это сейчас", "Вколоть всё в щупальца и покончить с этим", "doItNow_sure")
+		addButton("Отложить на потом", "Может, можно сделать что-то еще...", "postpone")
 	if(state == "postpone"):
-		saynn("Nah. You don't wanna do this.")
+		saynn("Да ну. Тебе это не нужно.")
 
-		saynn("You put the injector away.")
+		saynn("Ты убираешь инъектор.")
 
-		saynn("The tentacles have woken up by now.. They're just going through their normal routine.. seemingly unaware that this might be their last day of existence.")
+		saynn("К этому времени щупальца уже проснулись... Они просто занимаются своими обычными делами, даже не подозревая, что это может быть их последний день в жизни.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "doItNow_sure"):
-		saynn("You squeeze the injector in your hand.")
-		saynn("Are you sure?")
-		addButton("Yes", "Inject the tentacles with the drug that will make them mindless", "doItNow")
-		addButton("No", "Maybe there is something else you can do..", "postpone")
+		saynn("Вы сжимаете шприц-инъектор в руке.")
+		saynn("Вы уверены?")
+		addButton("Да", "Вколите щупальцам препарат, который превратит их в бездумных рабов", "doItNow")
+		addButton("No", "Может, можно сделать что-то еще...", "postpone")
 		
 func _react(_action: String, _args):
 	var _tentacles:PlayerSlaveryTentacles = GM.main.PS

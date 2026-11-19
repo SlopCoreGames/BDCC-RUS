@@ -26,56 +26,56 @@ func _run():
 	if(state == ""):
 		biggestStat = _tentacles.getBiggestStat()
 		if (!nomoretime):
-			saynn("You approach {psTentacles}..")
+			saynn("Вы приближаетесь к {psTentacles}..")
 
 		else:
-			saynn("There is no more time left for you to do anything with the tentacles.. The scientists are about to return.")
+			saynn("Времени на что-либо с щупальцами почти не осталось.. Ученые вот-вот вернутся.")
 
-			saynn("You approach {psTentacles}.. Time to make your final choice..")
+			saynn("Вы приближаетесь к {psTentacles}.. Пора сделать свой окончательный выбор..")
 
 		if (biggestStat == _tentacles.STAT_ANGER):
-			saynn("The tentacles look very angry. The tips are glaring at you.")
+			saynn("Щупальца выглядят очень разъяренными. Их кончики буквально сверлят вас взглядом.")
 
 		elif (biggestStat == _tentacles.STAT_AGILITY):
-			saynn("The tentacles look very active, the tendrils all sway eagerly.")
+			saynn("Щупальца выглядят очень активными, все отростки нетерпеливо колышутся.")
 
 		elif (biggestStat == _tentacles.STAT_MIND):
-			saynn("The tentacles look a bit melancholic, the tendrils are all swaying low.")
+			saynn("Щупальца выглядят немного меланхолично, все отростки понуро покачиваются.")
 
 		else:
-			saynn("The tentacles look very horny. The tips are all slick with juices.")
+			saynn("Щупальца выглядят очень похотливыми. Их кончики все блестят от соков.")
 
-		saynn("The injector is still with you. What do you wanna do?")
+		saynn("Инъектор всё еще у вас. Что вы хотите сделать?")
 
 		if (!nomoretime):
-			addButton("Never mind", "You don't wanna do anything just yet", "endthescene")
+			addButton("Проехали", "Вы пока не хотите ничего делать", "endthescene")
 		else:
-			addDisabledButton("Never mind", "This isn't an option.. not anymore")
-		addButton("Inject tentacles", "Inject the tentacles with the injector that will make them into a mindless plant", "do_inject")
+			addDisabledButton("Проехали", "Это больше не вариант..")
+		addButton("Впрыснуть щупальца", "Впрыснуть в щупальца состав, превращающий их в безмозглое растение", "do_inject")
 		if (_tentacles.getStat(_tentacles.STAT_ANGER) >= 10 && _tentacles.getStat(_tentacles.STAT_AGILITY) >= 10):
-			addButton("Murder spree", "Your tentacles are angry and strong enough for you to order them to murder everyone!", "ending_angeragility")
+			addButton("Кровавая баня", "Ваши щупальца настолько разъярены и сильны, что вы можете приказать им перерезать всех вокруг!", "ending_angeragility")
 		else:
-			addDisabledButton("Murder spree", "Your tentacles are either not angry enough (Anger "+str(_tentacles.anger)+"/10) or not strong enough (Agility "+str(_tentacles.agility)+"/10)")
+			addDisabledButton("Кровавая баня", "Вашим щупальцам либо не хватает ярости (Ярость "+str(_tentacles.anger)+"/10), либо не хватает силы (Ловкость "+str(_tentacles.agility)+"/10)")
 		if (_tentacles.getStat(_tentacles.STAT_ANGER) >= 10 && _tentacles.getStat(_tentacles.STAT_MIND) >= 10):
-			addButton("Puppet master", "Your tentacles are angry and smart enough for you to order them to murder everyone!", "ending_angermind")
+			addButton("Кукловод", "Ваши щупальца настолько разъярены и умны, что вы можете приказать им перерезать всех вокруг!", "ending_angermind")
 		else:
-			addDisabledButton("Puppet master", "Your tentacles are either not angry enough (Anger "+str(_tentacles.anger)+"/10) or not smart enough (Mind "+str(_tentacles.mind)+"/10)")
+			addDisabledButton("Кукловод", "Вашим щупальцам либо не хватает ярости (Ярость "+str(_tentacles.anger)+"/10) или недостаточно сообразительны (Интеллект "+str(_tentacles.mind)+"/10)")
 		if (_tentacles.getStat(_tentacles.STAT_ANGER) >= 10 && _tentacles.getStat(_tentacles.STAT_LUST) >= 10):
-			addButton("Breeding grounds", "Your tentacles are angry and lusty enough for you to order them to fuck everyone!", "ending_angerlust")
+			addButton("Размножение", "Твои щупальца настолько разъярены и полны похоти, что ты можешь приказать им трахать всех подряд!", "ending_angerlust")
 		else:
-			addDisabledButton("Breeding grounds", "Your tentacles are either not angry enough (Anger "+str(_tentacles.anger)+"/10) or not lusty enough (Lust "+str(_tentacles.lust)+"/10)")
+			addDisabledButton("Размножение", "Вашим щупальцам либо не хватает ярости (Ярость "+str(_tentacles.anger)+"/10) или недостаточно похотливы (Похоть "+str(_tentacles.lust)+"/10)")
 		if (_tentacles.getStat(_tentacles.STAT_AGILITY) >= 10 && _tentacles.getStat(_tentacles.STAT_MIND) >= 10):
-			addButton("Silent escape", "Your tentacles are strong and smart enough for you to try to escape this biolab silently..", "ending_agilitymind")
+			addButton("Тихий побег", "Твои щупальца достаточно сильны и умны, чтобы попытаться незаметно сбежать из этой биолаборатории...", "ending_agilitymind")
 		else:
-			addDisabledButton("Silent escape", "Your tentacles are either not strong enough (Agility "+str(_tentacles.agility)+"/10) or not smart enough (Mind "+str(_tentacles.mind)+"/10)")
+			addDisabledButton("Тихий побег", "Твоим щупальцам либо не хватает силы (Ловкость "+str(_tentacles.agility)+"/10) или не хватает ума (Интеллект "+str(_tentacles.mind)+"/10)")
 		if (_tentacles.getStat(_tentacles.STAT_AGILITY) >= 10 && _tentacles.getStat(_tentacles.STAT_LUST) >= 10):
-			addButton("Hunt and snare", "Your tentacles are strong and lusty enough for you to make them escape by fucking everyone!", "ending_agilitylust")
+			addButton("Охотиться и ловить", "Твои щупальца настолько сильны и похотливы, что ты можешь заставить их вырваться на свободу, трахая всех подряд!", "ending_agilitylust")
 		else:
-			addDisabledButton("Hunt and snare", "Your tentacles are either not strong enough (Agility "+str(_tentacles.agility)+"/10) or not lusty enough (Lust "+str(_tentacles.lust)+"/10)")
+			addDisabledButton("Охотиться и ловить", "Твоим щупальцам либо не хватает силы (Ловкость "+str(_tentacles.agility)+"/10) или недостаточно похотливы (Похоть "+str(_tentacles.lust)+"/10)")
 		if (_tentacles.getStat(_tentacles.STAT_MIND) >= 10 && _tentacles.getStat(_tentacles.STAT_LUST) >= 10):
-			addButton("Pleasure slaves", "Your tentacles are smart and lusty enough to mindcontrol everyone into sex slaves!", "ending_mindlust")
+			addButton("Рабы удовольствий", "Твои щупальца достаточно умны и похотливы, чтобы подчинить разум каждого и превратить их в секс-рабов!", "ending_mindlust")
 		else:
-			addDisabledButton("Pleasure slaves", "Your tentacles are either not smart enough (Mind "+str(_tentacles.mind)+"/10) or not lusty enough (Lust "+str(_tentacles.lust)+"/10)")
+			addDisabledButton("Рабы удовольствий", "Твои щупальца либо недостаточно умны (Разум "+str(_tentacles.mind)+"/10) или недостаточно похотливы (Похоть "+str(_tentacles.lust)+"/10)")
 
 func _react(_action: String, _args):
 	var _tentacles:PlayerSlaveryTentacles = GM.main.PS

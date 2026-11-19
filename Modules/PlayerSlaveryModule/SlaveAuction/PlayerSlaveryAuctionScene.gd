@@ -29,7 +29,7 @@ func _run():
 		
 		saynn(slaveAuction.getText())
 		
-		addButton("Continue", "See what happens next..", "doContinue")
+		addButton("Продолжить", "Смотри, что будет дальше...", "doContinue")
 
 		if(true):
 			return
@@ -38,13 +38,13 @@ func _run():
 
 		if(slaveAuction.getState() == "act"):
 			if(currentActionType != AuctionActionType.NoType):
-				addButton("Back..", "Go back to the previous menu", "setActionType", [AuctionActionType.NoType])
+				addButton("Назад..", "Назад в предыдущее меню", "setActionType", [AuctionActionType.NoType])
 			else:
-				addButton("Body", "Show actions that showcase the slave's body", "setActionType", [AuctionActionType.Body])
-				addButton("Mind", "Reveal some of the slave's inner info", "setActionType", [AuctionActionType.Mind])
-				addButton("Fetishes", "Pick which fetish of your slave you want to showcase", "setActionType", [AuctionActionType.Fetish])
-				addButton("Personality", "Pick which personality side of your slave you want to showcase", "setActionType", [AuctionActionType.Personality])
-				addButton("Emphasize", "Put extra focus on some of the traits", "setActionType", [AuctionActionType.Emphasize])
+				addButton("Тело", "Показать действия, демонстрирующие тело рабыни", "setActionType", [AuctionActionType.Body])
+				addButton("Разум", "Раскрыть часть внутренней информации о рабыне", "setActionType", [AuctionActionType.Mind])
+				addButton("Фетиши", "Выберите фетиш вашей рабыни, который хотите продемонстрировать", "setActionType", [AuctionActionType.Fetish])
+				addButton("Личность", "Выберите сторону личности вашей рабыни, которую хотите продемонстрировать", "setActionType", [AuctionActionType.Personality])
+				addButton("Акцентировать", "Сделать особый упор на определенных чертах", "setActionType", [AuctionActionType.Emphasize])
 
 		var actions:Array = slaveAuction.getActions()
 		var disabledActions:Array = []
@@ -63,7 +63,7 @@ func _run():
 			addDisabledButton(action.getButtonName(), actionA[0])
 
 		if(slaveAuction.getState() == "ended"):
-			addButton("(Try again)", "Restart the auction in case you don't like the outcome. New auction will have different bidders.", "restart_auction")
+			addButton("(Попробовать снова)", "Перезапустить аукцион, если результат вам не понравился. В новом аукционе будут другие участники.", "restart_auction")
 	
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

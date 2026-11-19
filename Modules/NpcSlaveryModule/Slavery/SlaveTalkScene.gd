@@ -32,8 +32,8 @@ func _run():
 		
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		if(npcSlavery == null):
-			saynn("Something went wrong")
-			addButton("Back", "Enough interactions", "endthescene")
+			saynn("Что-то пошло не так")
+			addButton("Назад", "Взаимодействий достаточно", "endthescene")
 			return
 		npcSlavery.checklevelUp()
 		
@@ -56,45 +56,45 @@ func _run():
 		elif(GM.main.IS.hasPawn(npc.getID())):
 			playAnimation(StageScene.Solo, "stand")
 			
-			saynn("{npc.name} is wandering around the prison somewhere.. Wait until {npc.he} {npc.verb('return')}.")
+			saynn("{npc.name} бродит где-то по тюрьме... Подожди, пока {npc.he} {npc.verb('return')}.")
 			addButtonAt(14, "Back", "Enough interactions", "endthescene")
 			return
 		else:
 			playAnimation(StageScene.Duo, "stand", {npc=npcID, npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
 		
-		saynn(npc.getName()+" is a level "+str(npcSlavery.slaveLevel)+" {npc.slave} ("+npcSlavery.getExperienceStr()+" exp)")
-		#saynn("{npc.He} {npc.isAre} standing still, {npc.his} collar leashed to the floor.")
+		saynn(npc.getName()+" — это уровень "+str(npcSlavery.slaveLevel)+" {npc.slave} ("+npcSlavery.getExperienceStr()+" опыта)")
+		#saynn("{npc.He} {npc.isAre} стоит неподвижно, {npc.his} ошейник привязан к полу.")
 		saynn(npcSlavery.getPerfectIdleMessage())
 		
 		if(!npcSlavery.isMindBroken()):
 			if(npcSlavery.getDespair() > 0.5):
-				saynn("{npc.name} is feeling depressed. Perfect for breaking {npc.his} spirit but it might lead to {npc.him} snapping if you keep it up.")
+				saynn("{npc.name} в депрессии. Идеально, чтобы сломить дух {npc.his}, но если продолжать в том же духе, это может привести к тому, что {npc.him} сорвется.")
 			elif(npcSlavery.getDespair() > 0.8):
-				saynn("[b]{npc.name} looks extremely depressed.[/b] {npc.He} {npc.isAre} close to snapping.")
+				saynn("[b]{npc.name} выглядит крайне подавленным.[/b] {npc.He} {npc.isAre} на грани срыва.")
 			
 			if(npcSlavery.getWorkEfficiency() < 0.2):
-				saynn("{npc.name} looks very tired.")
+				saynn("{npc.name} выглядит очень уставшим.")
 			
 			if(npcSlavery.getObedience() < 0.9 && npc.getInventory().hasRemovableRestraints()):
 				var restraintAmount = npc.getInventory().getEquppedRemovableRestraints().size()
 				if(restraintAmount > 0):
 					if(npcSlavery.getAwareness() < 0.8):
-						saynn("{npc.He} {npc.isAre} wearing "+str(restraintAmount)+" restraint"+("s" if restraintAmount != 1 else "")+" which will help {npc.him} understand {npc.his} place.")
+						saynn("{npc.He} {npc.isAre} носит "+str(restraintAmount)+" restraint"+("s" if restraintAmount != 1 else "")+" что поможет {npc.him} осознать свое место рядом с {npc.his}.")
 					else:
-						saynn("{npc.He} {npc.isAre} wearing "+str(restraintAmount)+" restraint"+("s" if restraintAmount != 1 else "")+" which helps remind {npc.him} of {npc.his} place.")
+						saynn("{npc.He} {npc.isAre} носит "+str(restraintAmount)+" restraint"+("s" if restraintAmount != 1 else "")+" что помогает напоминать {npc.him} о {npc.his} месте.")
 			
 			saynn("{npc.name} "+npcSlavery.getRewardBalanceString())
 		
 		if(getFlag("NpcSlaveryModule.debugSlaveInfo", false)):
-			sayn("[b]DEBUG INFO:[/b]")
+			sayn("[b]ИНФОРМАЦИЯ ДЛЯ ОТЛАДКИ:[/b]")
 			saynn(npcSlavery.getDebugInfo())
 		elif(npc.getInventory().hasEquippedItemWithTag(ItemTag.Hypnovisor)):
-			sayn("The hypnovisor allows you to read {npc.name}'s mind!")
-			sayn("[b]Hypnovisor info:[/b]")
+			sayn("Гипновизор позволяет читать мысли {npc.name}!")
+			sayn("[b]Инфо о гипновизоре:[/b]")
 			saynn(npcSlavery.getMindreaderInfo())
 			
 #		if(false):
-#			sayn("[b]Personality:[/b]")
+#			sayn("[b]Личность:[/b]")
 #			var personality: Personality = npc.getPersonality()
 #			if(personality != null):
 #				var texts = []
@@ -106,7 +106,7 @@ func _run():
 #					texts.append(statName+": "+statValue)
 #				saynn(Util.join(texts, "\n"))
 		
-		sayn("[b]Skills:[/b]")
+		sayn("[b]Навыки:[/b]")
 		for skillID in npcSlavery.slaveSpecializations:
 			var slaveType:SlaveTypeBase = GlobalRegistry.getSlaveType(skillID)
 			if(slaveType == null):
@@ -117,19 +117,19 @@ func _run():
 		sayn("")
 		
 		if(npcSlavery.isReadyToBeLeveledUp()):
-			sayn("In order to level {npc.name} up to slave level "+str(npcSlavery.getLevel()+1)+", make these things happen to {npc.him}:")
+			sayn("Чтобы повысить уровень {npc.name} до уровня рабыни "+str(npcSlavery.getLevel()+1)+", заставьте {npc.him} испытать следующее:")
 			sayn(npcSlavery.getLevelUpHintText())
-			saynn("Leveling your slave up makes training {npc.him} easier and also unlocks new actions.")
+			saynn("Повышение уровня рабыни облегчает тренировки {npc.him} и открывает новые действия.")
 		
 		addButtonAt(12, "Leash", "Leash your slave and see what you can with them around the station", "start_walkies")
 		addButtonWithChecksAt(13, "Forced sex" if npcSlavery.isActivelyResisting() else "Sex", "Start sex with your slave", "do_forced_sex", [], [ButtonChecks.CanStartSex])
 		addButtonAt(14, "Back", "Enough interactions", "endthescene")
 		
-		addButton("Talk", "Tell something to your slave", "talk_menu")
-		addButtonWithChecks("Train", "Train your slave", "do_train", [], [[ButtonChecks.NotLate], [ButtonChecks.NotGagged], [ButtonChecks.NotBlindfolded]])
-		addButton("Reward", "Show a list of rewards", "rewards_menu")
-		addButton("Punish", "Show a list of punishments", "punishments_menu")
-		addButton("Activities", "See what else you can do with this slave", "actions_menu")
+		addButton("Поговорить", "Сказать что-нибудь своей рабыне", "talk_menu")
+		addButtonWithChecks("Тренировать", "Дрессировать рабыню", "do_train", [], [[ButtonChecks.NotLate], [ButtonChecks.NotGagged], [ButtonChecks.NotBlindfolded]])
+		addButton("Награда", "Список наград", "rewards_menu")
+		addButton("Наказать", "Список наказаний", "punishments_menu")
+		addButton("Занятия", "Что еще можно сделать с этой рабыней", "actions_menu")
 		
 		if(npcSlavery.isDoingActivity()):
 			var activity:SlaveActivityBase = npcSlavery.getActivity()
@@ -141,33 +141,33 @@ func _run():
 				addActivityButtons()
 		
 	if(state == "actions_menu"):
-		saynn("What do you want to do with your slave?")
+		saynn("Что вы хотите сделать со своей рабыней?")
 		
 		addButtonsForActionsOfType(SlaveActionBase.Action)
-		addButton("Back", "You changed your mind!", "")
+		addButton("Назад", "Ты передумал!", "")
 
 	if(state == "talk_menu"):
-		saynn("What do you want to tell your slave?")
+		saynn("Что вы хотите сказать своей рабыне?")
 		
 		addButtonsForActionsOfType(SlaveActionBase.Talk)
-		addButton("Back", "You changed your mind!", "")
+		addButton("Назад", "Ты передумал!", "")
 
 	if(state == "rewards_menu"):
-		saynn("How do you want to reward your slave?")
+		saynn("Как вы хотите наградить свою рабыню?")
 		
 		addButtonsForActionsOfType(SlaveActionBase.Reward)
-		addButton("Back", "You changed your mind!", "")
+		addButton("Назад", "Ты передумал!", "")
 
 	if(state == "punishments_menu"):
-		saynn("How do you want to punish your slave?")
+		saynn("Как вы хотите наказать свою рабыню?")
 		
 		addButtonsForActionsOfType(SlaveActionBase.Punishment)
-		addButton("Back", "You changed your mind!", "")
+		addButton("Назад", "Ты передумал!", "")
 
 	if(state == "do_action"):
 		saynn(resultText)
 		
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 
 		var theAction:SlaveActionBase = GlobalRegistry.getSlaveAction(lastActionID)
 		if(theAction != null):
@@ -184,16 +184,16 @@ func _run():
 	if(state == "do_train"):
 		saynn(resultText)
 		
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	
 	if(state == "resisting_action"):
-		saynn("Your slave refuses to obey your orders!")
+		saynn("Ваша рабыня отказывается подчиняться вашим приказам!")
 		
-		saynn("You can still force {npc.him} but {npc.he} obviously won't like it.")
+		saynn("Ты всё ещё можешь заставить {npc.him}, но {npc.he}, очевидно, это не понравится.")
 		
-		saynn("You can also try to beat {npc.him} into submission if you want. Pain brings fear. And fear is a good motivator.")
+		saynn("Если хочешь, ты также можешь попытаться вбить покорность в {npc.him} с помощью побоев. Боль рождает страх. А страх — отличный мотиватор.")
 		
-		saynn("Alternatively, you can just cancel what you wanted to do and get a reason to punish {npc.him} instead!")
+		saynn("Или же ты можешь просто отменить то, что собирался сделать, и получить повод наказать {npc.him} вместо этого!")
 		
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		var cowardness = npcSlavery.personalityScore({PersonalityStat.Coward:1.0}) - 0.25
@@ -207,65 +207,65 @@ func _run():
 		if(npc.hasBoundArms() || npc.hasBlockedHands() || npc.isBitingBlocked()):
 			fightChance *= 0.3
 		if(RNG.chance(fightChance)):
-			addButtonWithChecks("Force", "Force them to do what you want them to do without violence", "resist_hastofight", [], savedButtonChecks)
+			addButtonWithChecks("Заставить", "Заставить их делать то, что тебе нужно, без насилия", "resist_hastofight", [], savedButtonChecks)
 		else:
-			addButtonWithChecks("Force", "Force them to do what you want them to do without violence", "do_force_action", [savedWantedToDo, savedWantedToDoArgs], savedButtonChecks)
-		addButton("Beat up", "Force them through fighting", "resisting_start_fight")
-		addButton("Cancel", "Your slave just earned a punishment!", "forced_sex_let_resist", [false])
+			addButtonWithChecks("Заставить", "Заставить их делать то, что тебе нужно, без насилия", "do_force_action", [savedWantedToDo, savedWantedToDoArgs], savedButtonChecks)
+		addButton("Избить", "Заставить силой (через драку)", "resisting_start_fight")
+		addButton("Отмена", "Твой раб только что заслужил наказание!", "forced_sex_let_resist", [false])
 	
 	if(state == "resisting_actively"):
 		if(activeResistType == "resist_kick"):
 			if(slaveResistedSuc):
 				playAnimation(StageScene.Duo, "hurt", {npc=npcID, npcAction="kick", npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
-				saynn("Your slave kicks back when you're trying to do anything with {npc.him}!"+(" Might be worth it to cuff {npc.his} ankles to prevent that from happening." if RNG.chance(30) else ""))
+				saynn("Твой раб сопротивляется, когда ты пытаешься что-то сделать с {npc.him}!"+(" Might be worth it to cuff {npc.his} ankles to prevent that from happening." if RNG.chance(30) else ""))
 			else:
 				playAnimation(StageScene.Duo, "dodge", {npc=npcID, npcAction="kick", npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
-				saynn("Your slave tried to kick you but {npc.his} restraints helped you avoid it. Still, your slave actively resists anything that you're trying to do with {npc.him}!")
+				saynn("Твой раб попытался пнуть тебя, но оковы {npc.his} помогли избежать удара. Тем не менее, твой раб активно сопротивляется любым твоим действиям с {npc.him}!")
 		elif(activeResistType == "resist_shove"):
 			if(slaveResistedSuc):
 				playAnimation(StageScene.Duo, "hurt", {npc=npcID, npcAction="shove", npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
-				saynn("Your slave shoves you back when you're trying to do anything with {npc.him}!"+(" Might be worth it to cuff {npc.his} wrists to prevent that from happening." if RNG.chance(30) else ""))
+				saynn("Твой раб отталкивает тебя, когда ты пытаешься что-то сделать с {npc.him}!"+(" Might be worth it to cuff {npc.his} wrists to prevent that from happening." if RNG.chance(30) else ""))
 			else:
 				playAnimation(StageScene.Duo, "dodge", {npc=npcID, npcAction="shove", npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
-				saynn("Your slave tried to shove you back but {npc.his} restraints helped you avoid it. Still, your slave actively resists anything that you're trying to do with {npc.him}!")
+				saynn("Твой раб попытался оттолкнуть тебя, но {npc.his} удерживают его от этого. Тем не менее, раб активно сопротивляется любым твоим действиям с {npc.him}!")
 		elif(activeResistType == "resist_scratch"):
 			if(slaveResistedSuc):
 				playAnimation(StageScene.Duo, "hurt", {npc=npcID, npcAction="punch", npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
-				saynn("Your slave scratches you when you're trying to do anything with {npc.him}!"+(" Might be worth it to block {npc.his} hands to prevent that from happening." if RNG.chance(30) else ""))
+				saynn("Твой раб царапает тебя, когда ты пытаешься что-то сделать с {npc.him}!"+(" Might be worth it to block {npc.his} hands to prevent that from happening." if RNG.chance(30) else ""))
 			else:
 				playAnimation(StageScene.Duo, "dodge", {npc=npcID, npcAction="punch", npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
-				saynn("Your slave tried to scratch you but {npc.his} restraints helped you avoid it. Still, your slave actively resists anything that you're trying to do with {npc.him}!")
+				saynn("Твой раб попытался поцарапать тебя, но {npc.his} помогли избежать этого. Тем не менее, раб активно сопротивляется любым твоим действиям с {npc.him}!")
 		elif(activeResistType == "resist_bite"):
 			if(slaveResistedSuc):
 				playAnimation(StageScene.Duo, "hurt", {npc=npcID, npcAction="bite", npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
-				saynn("Your slave bites your hand when you're trying to do anything with {npc.him}!"+(" Might be worth it to gag or muzzle {npc.him} to prevent that from happening." if RNG.chance(30) else ""))
+				saynn("Твой раб кусает тебя за руку, когда ты пытаешься что-то сделать с {npc.him}!"+(" Might be worth it to gag or muzzle {npc.him} to prevent that from happening." if RNG.chance(30) else ""))
 			else:
 				playAnimation(StageScene.Duo, "dodge", {npc=npcID, npcAction="bite", npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
-				saynn("Your slave tried to bite you but {npc.his} leash was too short for {npc.him} to reach you. Still, your slave actively resists anything that you're trying to do with {npc.him}!")
+				saynn("Твой раб попытался укусить тебя, но {npc.his} слишком коротки, чтобы {npc.him} мог до тебя дотянуться. Тем не менее, раб активно сопротивляется любым твоим действиям с {npc.him}!")
 		else:
-			saynn("Your slave actively resists anything that you're trying to do with {npc.him}!")
+			saynn("Твой раб активно сопротивляется любым твоим действиям с {npc.him}!")
 		
-		saynn("You can try to beat {npc.him} into submission if you want. Pain brings fear. And fear is a good motivator. But {npc.he} will obviously fight back..")
+		saynn("Если хочешь, можешь попытаться вбить покорность в {npc.him} силой. Боль рождает страх. А страх — отличный мотиватор. Но {npc.he} явно будет давать отпор...")
 		
-		saynn("Alternatively, you can just cancel what you wanted to do and get a good reason to punish {npc.him} instead!")
+		saynn("Или же ты можешь просто отменить задуманное и получить отличный повод, чтобы наказать {npc.him} вместо этого!")
 		
-		addDisabledButton("Force", "Can't force your slave if they actively fight back")
-		addButton("Beat up", "Force them through fighting", "resisting_start_fight")
-		addButton("Cancel", "Your slave just earned a punishment!", "forced_sex_let_resist", [true])
+		addDisabledButton("Заставить", "Нельзя заставить раба, если он активно сопротивляется")
+		addButton("Избить", "Заставить силой (через драку)", "resisting_start_fight")
+		addButton("Отмена", "Твой раб только что заслужил наказание!", "forced_sex_let_resist", [true])
 	
 	if(state == "resist_hastofight"):
-		saynn("As soon as you put your hand on your slave, {npc.he} pushes you back!")
+		saynn("Стоит тебе только возложить руку на свою рабыню, как {npc.he} отталкивает тебя!")
 		
-		saynn("Looks like you will have to fight your slave.")
+		saynn("Похоже, тебе придется побить свою рабыню.")
 		
-		addButton("Fight", "Start the fight", "start_fight_with_slave")
+		addButton("Драться", "Начать бой", "start_fight_with_slave")
 	
 	if(state == "resist_autobeatup"):
 		playAnimation(StageScene.SexFeetPlay, "pin", {pc="pc", npc=npcID, npcBodyState={leashedBy = "pc"}})
 		
-		saynn("Furious by {npc.his} disobedience, you unleash a torrent of relentless, raw blows upon your slave. After the first impact, {npc.he} already stops trying to fight back.. but you need to really drive the point home, ramming your knee into {npc.his} stomach.")
+		saynn("Разъяренный непослушанием {npc.his}, ты обрушиваешь на нее поток беспощадных, грубых ударов. Уже после первого попадания {npc.he} перестает сопротивляться... но тебе нужно донести смысл до конца, с силой впечатав колено в живот {npc.his}.")
 		
-		saynn("Each strike lands with a sickening thud, bruises and scratches appear throughout {npc.his} bleeding, hurt body.")
+		saynn("Каждый удар отзывается тошнотворным глухим звуком; по кровоточащему, избитому телу {npc.his} расплываются синяки и ссадины.")
 		
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		if(npcSlavery.personalityScore({PersonalityStat.Mean: 1.0}) > 0.3):
@@ -296,28 +296,28 @@ func _run():
 				"Grr.. argh.. ugh..",
 			])+"[/say]")
 		
-		saynn("You chip away at their spirit, breaking down {npc.his} resistance until there's nothing left but fear.")
+		saynn("Ты по крупицам дробишь ее дух, подавляя сопротивление {npc.his} до тех пор, пока не останется ничего, кроме страха.")
 		
-		saynn("You only stop when {npc.he} drops down to the floor. You pin {npc.him} with your leg, showing how defeated {npc.he} really {npc.isAre}.")
+		saynn("Ты останавливаешься только тогда, когда {npc.he} падает на пол. Ты прижимаешь {npc.him} своей ногой, показывая, насколько поверженной и {npc.isAre} является {npc.he}.")
 		
-		saynn("Looks like {npc.he} {npc.isAre} ready for anything.")
+		saynn("Похоже, {npc.he} {npc.isAre} готова ко всему.")
 		
 		addAfterForceButton()
-		addButton("Cancel", "They should resist less at least", "")
+		addButton("Отмена", "Она должна была сопротивляться хотя бы чуть меньше", "")
 	
 	if(state == "won_resistaction"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID, npcAction="defeat", npcBodyState={leashedBy="pc"}})
 		
-		saynn("You won! Beating up your slave made {npc.him} more scared of you.")
+		saynn("Ты победил! Избиение рабыни заставило {npc.him} бояться тебя еще сильнее.")
 		
-		saynn("You grab {npc.his} chain, meaning {npc.he} can't escape what you will do to {npc.him}.")
+		saynn("Ты хватаешь {npc.his} за цепь, а значит, {npc.he} не сбежит от того, что ты сделаешь с {npc.him}.")
 		
 		addAfterForceButton()
-		addButton("Cancel", "They should resist less at least", "")
+		addButton("Отмена", "Она должна была сопротивляться хотя бы чуть меньше", "")
 	
 	if(state == "lost_forcedsex"):
 		playAnimation(StageScene.Duo, "defeat", {npc=npcID, npcBodyState={chains=[["normal", "neck", "scene", "floor"]] } })
-		saynn("You lost. Aw. And it looks like your slave is not planning to just let you walk away free after that..")
+		saynn("Ты проиграл. Оу... И, похоже, твоя рабыня не планирует просто так отпускать тебя на свободу после такого...")
 		
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		if(npcSlavery.personalityScore({PersonalityStat.Mean: 1.0}) > 0.3):
@@ -349,16 +349,16 @@ func _run():
 				"My turn to have som fun.",
 			])+"[/say]")
 		
-		saynn("This deserves a [b]punishment[/b].. will deserve..")
+		saynn("Это заслуживает [b]наказания[/b]... определенно заслуживает...")
 		
-		addButton("Get fucked", "See what they do to you", "start_sex_as_sub")
+		addButton("Получи по полной", "Смотри, что они с тобой сделают", "start_sex_as_sub")
 	
 	if(state == "lost_removedrestraints"):
 		playAnimation(StageScene.Duo, "defeat", {npc=npcID, npcAction="struggle", npcBodyState={chains=[["normal", "neck", "scene", "floor"]] } })
 
-		saynn("You hit the floor, unable to continue fighting.")
+		saynn("Ты рухнул на пол, не в силах продолжать бой.")
 		
-		saynn("While you're trying to recover, your slave has enough time to remove some of {npc.his} restraints! Luckily, the chain prevented {npc.him} from escaping.")
+		saynn("Пока ты пытаешься прийти в себя, у твоей рабыни хватает времени, чтобы ослабить часть {npc.his}оков! К счастью, цепь помешала {npc.him} сбежать.")
 		
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		if(npcSlavery.personalityScore({PersonalityStat.Mean: 1.0}) > 0.3):
@@ -390,16 +390,16 @@ func _run():
 				"Think I will respect you after this?",
 			])+"[/say]")
 		
-		saynn("That surely deserves a punishment.")
+		saynn("Это определенно заслуживает наказания.")
 		
-		addButton("Continue", "That was rough", "")
+		addButton("Продолжить", "Это было жестко", "")
 	
 	if(state == "lost_noaction"):
 		playAnimation(StageScene.Duo, "defeat", {npc=npcID, npcBodyState={chains=[["normal", "neck", "scene", "floor"]] } })
 
-		saynn("You hit the floor, unable to continue fighting.")
+		saynn("Ты рухнул на пол, не в силах продолжать бой.")
 		
-		saynn("While you're trying to recover, your slave.. doesn't exactly know what to do. {npc.He} tugs on the chains a bit.. but they don't budge.")
+		saynn("Пока ты пытаешься прийти в себя, твоя рабыня... не совсем понимает, что делать. {npc.He} слегка дергает за цепи... но те не поддаются.")
 		
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		if(npcSlavery.personalityScore({PersonalityStat.Mean: 1.0}) > 0.3):
@@ -433,9 +433,9 @@ func _run():
 				"So? Gonna listen to me better now?",
 			])+"[/say]")
 		
-		saynn("Your slave has beat you up in a fair fight.. but this still deserves a small punishment.")
+		saynn("Твоя рабыня избила тебя в честном бою... но это все равно заслуживает небольшого наказания.")
 		
-		addButton("Continue", "That was rough", "")
+		addButton("Продолжить", "Это было жестко", "")
 
 func addActivityButtons():
 	var npcSlavery:NpcSlave = npc.getNpcSlavery()
@@ -484,7 +484,7 @@ func addButtonsForActionsOfType(actionsType):
 			addButton(theAction.getVisibleName(), theAction.getFinalVisibleDesc(), "do_action", [theAction.id])
 
 func addAfterForceButton():
-	addButtonWithChecks(savedWantedToDoName, "Do what you wanted to do", savedWantedToDo, savedWantedToDoArgs, savedButtonChecks)
+	addButtonWithChecks(savedWantedToDoName, "Делай то, что хотел", savedWantedToDo, savedWantedToDoArgs, savedButtonChecks)
 
 func checkSlaveResist(resistChance, onlyActiveResist = false):
 	var npcSlavery:NpcSlave = npc.getNpcSlavery()

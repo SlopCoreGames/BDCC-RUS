@@ -20,86 +20,86 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Sleeping, "sleep")
 		var theBiggestStat = _tentacles.getBiggestStat()
-		saynn("It was time to take a nap..")
+		saynn("Пришло время вздремнуть...")
 
 		if (theBiggestStat == _tentacles.STAT_ANGER):
-			saynn("The tentacles still seem to be quite.. upset. They're taking their anger out on the cold floor, tapping it.")
+			saynn("Щупальца всё ещё кажутся довольно... рассерженными. Они вымещают свой гнев на холодном полу, постукивая по нему.")
 
-			saynn("You're not too afraid.. since they're still very much too weak to move around.. You just block the noise by pushing your face into the comfy pillow harder.")
+			saynn("Ты не слишком боишься... ведь они всё ещё слишком слабы, чтобы активно двигаться. Ты просто заглушаешь шум, сильнее вжимаясь лицом в уютную подушку.")
 
 		elif (theBiggestStat == _tentacles.STAT_AGILITY):
-			saynn("The tentacles are already sleeping tightly.. Or so it seems like. They're resting curled on top of each other.. It's kinda cute.")
+			saynn("Щупальца уже крепко спят... По крайней мере, так кажется. Они отдыхают, свернувшись друг на друге... Это даже мило.")
 
-			saynn("You're not afraid of them pouncing you suddenly.. since they're still very much too weak to move around.")
+			saynn("Ты не боишься, что они внезапно на тебя набросятся... ведь они всё ещё слишком слабы, чтобы куда-то перемещаться.")
 
 		elif (theBiggestStat == _tentacles.STAT_MIND):
-			saynn("The tentacles are already sleeping tightly.. Or so it seems like. They're resting curled on top of each other.. It's kinda cute.")
+			saynn("Щупальца уже крепко спят... По крайней мере, так кажется. Они отдыхают, свернувшись друг на друге... Это даже мило.")
 
-			saynn("Somehow, their presence makes you feel safer.")
+			saynn("Каким-то образом их присутствие заставляет тебя чувствовать себя в большей безопасности.")
 
 		elif (theBiggestStat == _tentacles.STAT_LUST):
-			saynn("The tentacles are already sleeping tightly.. Or so it seems like. They're resting curled on top of each other.. It's kinda cute.")
+			saynn("Щупальца уже крепко спят... По крайней мере, так кажется. Они отдыхают, свернувшись друг на друге... Это даже мило.")
 
-			saynn("You're wondering if you can bring them into your bed.. keep them under your sheets.. Eh.. why the heck not.")
+			saynn("Ты гадаешь, можно ли затащить их к себе в кровать... спрятать под одеяло... Эх, а почему бы и нет.")
 
-			saynn("Excited, you get up and carefully scoop up the confused tentacles. They're not too heavy.")
+			saynn("В предвкушении ты встаёшь и осторожно подхватываешь сбитых с толку щупалец. Они не слишком тяжёлые.")
 
-			saynn("[say=pc]Tshh.. all good..[/say]")
+			saynn("[say=pc]Тссс.. всё хорошо..[/say]")
 
-			saynn("You bring them into your bed and let them rest near your chest.")
+			saynn("Вы притягиваете их к себе в постель и позволяете им устроиться рядом с вашей грудью.")
 
-			saynn("[say=pc]There we go..[/say]")
+			saynn("[say=pc]Вот так..[/say]")
 
-			saynn("And now.. you try to sleep.")
+			saynn("И теперь.. вы пытаетесь уснуть.")
 
-			saynn("As it turns out.. the tentacles are very.. tickly.. Their constant touches in various places are making you squirm a bit.")
+			saynn("Как выяснилось.. щупальца очень.. щекотные.. Их постоянные прикосновения в самых разных местах заставляют вас слегка ерзать.")
 
-			saynn("Still.. It feels nice to not be alone.")
+			saynn("И всё же.. приятно чувствовать, что ты не один.")
 
 		else:
-			saynn("The tentacles are already sleeping tightly.. Or so it seems like. They all just picked their own corners of the nest to occupy.")
+			saynn("Щупальца уже крепко спят.. По крайней мере, так кажется. Каждое из них нашло себе уютный уголок в гнезде.")
 
-			saynn("It should be safe for you to sleep")
+			saynn("Теперь можно спокойно спать.")
 
-		addButton("Sleep", "See what happens next", "newday")
+		addButton("Спать", "Смотреть, что будет дальше", "newday")
 	if(state == "newday"):
 		# (( small idle anim
 		playAnimation(StageScene.TentaclesDuo, "idle", {tentaclesSizeSmall=true, plant=true})
 		aimCameraAndSetLocName("pstent_left")
 		GM.pc.setLocation("pstent_left")
-		saynn("It's a new day..")
+		saynn("Наступил новый день..")
 
-		saynn("And the first thing that you notice after waking up.. is that the tentacles aren't in their nest!")
+		saynn("И первое, что вы замечаете после пробуждения.. это то, что щупалец нет в гнезде!")
 
-		saynn("Oh.. They have grown enough to move around.")
+		saynn("О.. Они подросли достаточно, чтобы передвигаться самостоятельно.")
 
-		saynn("The tentacle monster has grown quite a few more tentacles.. and the ones that were there have grown in mass and strength.. allowing it to bring itself out of the nest.")
+		saynn("У щупальцевого монстра выросло еще немало новых отростков... а те, что были раньше, стали массивнее и сильнее... теперь он способен выбраться из своего гнезда.")
 
-		saynn("[say=sci2]You're up, test subject. Good.[/say]")
+		saynn("[say=sci2]Проснулась, подопытная? Хорошо.[/say]")
 
-		saynn("[say=pc]You were here? Why didn't you wake me up earlier?[/say]")
+		saynn("[say=pc]Ты была здесь? Почему не разбудила меня раньше?[/say]")
 
-		saynn("[say=sci2]We wanted to see what it would do to you.[/say]")
+		saynn("[say=sci2]Нам хотелось посмотреть, что оно с тобой сделает.[/say]")
 
-		saynn("[say=sci1]It's your job to be a test dummy. Dummy.[/say]")
+		saynn("[say=sci1]Твоя работа — быть манекеном для тестов. Манекеном.[/say]")
 
-		saynn("Right..")
+		saynn("Понятно...")
 
-		saynn("[say=pc]So what now?[/say]")
+		saynn("[say=pc]И что теперь?[/say]")
 
-		saynn("[say=sci2]We are gonna need a few days to go through all of the collected data. In the meantime, your current task is to look after it.[/say]")
+		saynn("[say=sci2]Нам понадобится несколько дней, чтобы обработать все собранные данные. А пока твоя задача — присматривать за ним.[/say]")
 
-		saynn("[say=sci1]Yeah. If you let the plant die, we won't have a reason to keep you around.[/say]")
+		saynn("[say=sci1]Ага. Если дашь растению сдохнуть, у нас не будет причин тебя держать.[/say]")
 
-		saynn("Somehow you get a feeling that this doesn't mean that you will get set free.")
+		saynn("Тебя не покидает предчувствие, что это вовсе не означает твое освобождение.")
 
-		saynn("You shrug.")
+		saynn("Ты пожимаешь плечами.")
 
-		saynn("[say=sci1]Feed it, train it, entertain it. You know the drill by now.[/say]")
+		saynn("[say=sci1]Корми его, дрессируй, развлекай. Ты уже знаешь правила.[/say]")
 
-		saynn("Should be simple enough.")
+		saynn("Должно быть достаточно просто.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	var _tentacles:PlayerSlaveryTentacles = GM.main.PS

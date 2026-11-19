@@ -35,402 +35,402 @@ func _run():
 	var _tentacles:PlayerSlaveryTentacles = GM.main.PS
 
 	if(state == ""):
-		saynn("You shouldn't see this")
+		saynn("Тебе не стоит этого видеть")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "0"):
 		_tentacles.doAnimDuo("idle")
-		saynn("You approach the tentacles and see them trying to open the fridge.")
+		saynn("Вы подходите к щупальцам и видите, как они пытаются открыть холодильник.")
 
-		saynn("Hard to see it behind the.. forest of tendrils. Either they can't find the handle or they're not strong enough to open the door.")
+		saynn("За этим... лесом из отростков почти ничего не разглядеть. То ли они не могут найти ручку, то ли им не хватает сил, чтобы открыть дверь.")
 
-		saynn("Either way, it looks like they're hungry!")
+		saynn("Так или иначе, похоже, они проголодались!")
 
-		addButton("Chicken", "Give them some chicken", "0_chicken")
-		addButton("Snack", "Give them something random to snack on", "0_snack")
-		addButton("Broccoli", "Feed some broccoli!", "0_broccoli")
-		addButton("Refuse", "Refuse to feed them", "0_refuse")
+		addButton("Курица", "Дать им немного курицы", "0_chicken")
+		addButton("Закуска", "Дать им какую-нибудь случайную закуску", "0_snack")
+		addButton("Брокколи", "Скормить им брокколи!", "0_broccoli")
+		addButton("Отказаться", "Отказаться их кормить", "0_refuse")
 	if(state == "0_chicken"):
 		_tentacles.doAnimDuo("eat")
-		saynn("You're still not sure if feeding any kind of meat to a plant is a good idea..")
+		saynn("Вы всё ещё не уверены, что скармливать мясо растениям — это хорошая идея...")
 
-		saynn("But this ain't your usual kind of plant.")
+		saynn("Но это явно не обычное растение.")
 
-		saynn("You open the fridge yourself and offer the tentacles a roasted chicken. You leave it carefully on the floor and step back.")
+		saynn("Вы сами открываете холодильник и предлагаете щупальцам жареную курицу. Вы осторожно оставляете её на полу и отступаете назад.")
 
-		saynn("[say=pc]There you go. You probably need proteins.[/say]")
+		saynn("[say=pc]Вот, держите. Вам, наверное, нужно больше белка.[/say]")
 
-		saynn("The tentacles happily wrap their tentacles around the chicken and then dig their pointy tips into the meat. You don't see any teeth or mouths even.. but somehow it can just absorb it.")
+		saynn("Щупальца с радостью обвивают курицу, а затем вонзают свои острые кончики в мясо. Вы даже не видите ни зубов, ни ртов... но каким-то образом они просто поглощают её.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "0_snack"):
 		_tentacles.doAnimDuo("eat")
-		saynn("You're not sure what to give to the tentacles.. so you just grab a bag of chips and offer it to them.")
+		saynn("Вы не совсем понимаете, чем накормить щупальца... поэтому просто хватаете пачку чипсов и протягиваете её им.")
 
-		saynn("[say=pc]Want these?[/say]")
+		saynn("[say=pc]Хотите эти?[/say]")
 
-		saynn("You leave the bag on the floor and watch as the tentacles approach it. Maybe you should have opened it first because now they look confused. They can't really absorb the foil wrap.")
+		saynn("Вы оставляете пачку на полу и наблюдаете, как щупальца приближаются к ней. Возможно, стоило сначала открыть её, потому что сейчас они выглядят растерянными. Фольгу они поглотить толком не могут.")
 
-		saynn("Right.. You get the tentacles' attention and bring your hands together before pulling them aside quickly, simulating a motion of opening a bag.")
+		saynn("Точно... Вы привлекаете внимание щупалец и сводите руки вместе, а затем резко разводите их в стороны, имитируя движение открытия пачки.")
 
 		if (_tentacles.mind <= 1):
-			saynn("The tentacles, in their current state, lack any kind of intelligence to understand what your gesture means.. so they just smash the bag.. which causes a small explosion of chips all across the floor.")
+			saynn("Щупальцам в их нынешнем состоянии не хватает интеллекта, чтобы понять ваш жест... поэтому они просто раздавливают пачку, что вызывает небольшой взрыв чипсов по всему полу.")
 
-			saynn("They're not the smartest.. but they still got the snack opened.")
+			saynn("Они не самые умные... но всё же умудрились открыть закуску.")
 
-			saynn("All the tentacles begin picking up the chips and consuming them.")
+			saynn("Все щупальца начинают подбирать чипсы и поедать их.")
 
 		else:
-			saynn("The tentacles lack any fingers to do exactly what you did.. But they attempt it anyway.")
+			saynn("У щупалец нет пальцев, чтобы сделать именно то, что сделала ты... Но они всё равно пытаются.")
 
-			saynn("Two of the tendrils squish the bag between them and then use the tips to grab the foil and spread it open, revealing the chips!")
+			saynn("Два отростка сдавливают пакет между собой, а затем кончиками подцепляют фольгу и раздвигают её, открывая чипсы!")
 
-			saynn("[say=pc]Good job.[/say]")
+			saynn("[say=pc]Молодец.[/say]")
 
-			saynn("The rest of the tentacles delve into the bag and start eating the snack. They rip the bag completely in the process..")
+			saynn("Остальные щупальца ныряют в пакет и начинают жрать закуску. В процессе они разрывают пакет в клочья...")
 
-			saynn("They're not the smartest.. but they're getting there.")
+			saynn("Они не самые сообразительные... но прогресс налицо.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "0_broccoli"):
 		_tentacles.doAnimDuo("eat")
-		saynn("You try to think about what plants usually eat..")
+		saynn("Ты пытаешься вспомнить, чем обычно питаются растения...")
 
-		saynn("They don't really eat anything, do they? They just absorb the light and drink the water that's in their soil.")
+		saynn("Они ведь почти ничего не едят, верно? Просто поглощают свет и пьют воду из почвы.")
 
-		saynn("The tentacles aren't really your usual kind of plant..")
+		saynn("Эти щупальца — не совсем обычное растение...")
 
-		saynn("You find some broccoli and decide to feed it to them. It's a snack.. it has water.. should be good enough.")
+		saynn("Ты находишь брокколи и решаешь скормить её им. Это перекус... в ней есть вода... должно хватить.")
 
-		saynn("The tentacles curl around the cold green bush with a stem.. and crush all the juices out of it.. before absorbing it all through its skin.")
+		saynn("Щупальца обвивают холодный зеленый кочан с черешком... и выжимают из него весь сок... прежде чем впитать всё через кожу.")
 
-		saynn("Interesting.")
+		saynn("Интересно.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "0_refuse"):
 		_tentacles.doAnimDuo("glare")
-		saynn("You refuse to feed the tentacles and just watch them struggle to open the fridge.")
+		saynn("Ты отказываешься кормить щупальца и просто наблюдаешь, как они тщетно пытаются открыть холодильник.")
 
-		saynn("They slide their tentacles all across the cold surface of its door. A few of them stumble upon the handle.. but fail to tug on it with enough force.")
+		saynn("Их щупальца скользят по холодной поверхности дверцы. Несколько из них натыкаются на ручку... но им не хватает силы, чтобы потянуть её.")
 
-		saynn("Eventually, they just start banging their tips against the fridge, clearly becoming frustrated.")
+		saynn("В конце концов, они начинают просто колотить кончиками по холодильнику, явно выказывая раздражение.")
 
-		saynn("They leave a few small dents.. but that's about it.")
+		saynn("Они оставляют несколько небольших вмятин... но на этом всё.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "1"):
 		_tentacles.doAnimDuo("idle")
-		saynn("As you approach the tentacles, you see them grabbing the handle of the fridge and opening it!")
+		saynn("Когда вы приближаетесь к щупальцам, вы видите, как они хватаются за ручку холодильника и открывают его!")
 
-		saynn("They then reach inside.. and grab a bag of chips.")
+		saynn("Затем они просовывают их внутрь... и вытаскивают пачку чипсов.")
 
-		saynn("Snacks probably aren't the best food if you wanna keep them in shape..")
+		saynn("Снеки — не самая лучшая еда, если хочешь держать их в форме...")
 
-		addButton("Let them eat", "Allow them to eat the snack", "1_allow")
-		addButton("Reason", "Try to explain them that the snacks are bad for them", "1_explain")
-		addButton("Yoink it", "Take the bag away from them before they eat it!", "1_yoink")
+		addButton("Дать поесть", "Позволить им съесть закуску", "1_allow")
+		addButton("Разум", "Попытаться объяснить им, что вредная еда им не на пользу", "1_explain")
+		addButton("Хвать!", "Забери у них пакет, пока они его не сожрали!", "1_yoink")
 	if(state == "1_allow"):
 		_tentacles.doAnimDuo("eat")
-		saynn("You decide to allow them to eat the snack.")
+		saynn("Ты решаешь позволить им полакомиться.")
 
 		if (_tentacles.mind <= 3):
-			saynn("They grab the bag.. but now they're not sure how to open it.")
+			saynn("Они хватают пакет... но теперь не знают, как его открыть.")
 
-			saynn("Instead of being smart about it, they just put the bag on the floor and smash it with a tentacle, causing the air pressure to open the bag for them.. while sending the chips all over the floor in the process.")
+			saynn("Вместо того чтобы включить мозги, они просто швыряют пакет на пол и с силой бьют по нему щупальцем. Из-за перепада давления пакет лопается, и чипсы разлетаются по всему полу.")
 
-			saynn("They start snacking on the floor chips.")
+			saynn("Они начинают подбирать и жрать чипсы прямо с пола.")
 
 		elif (_tentacles.mind >= 5):
-			saynn("They grab the bag.. but now they're thinking about how to open it.")
+			saynn("Они хватают пакет... и теперь раздумывают, как бы его вскрыть.")
 
 			_tentacles.talk("Can you open the bag for us?")
-			saynn("For some reason, you get an urge to help them. Without thinking about it, you approach the tentacles and open the bag for them.")
+			saynn("Почему-то тебя так и подмывает помочь. Недолго думая, ты подходишь к щупальцам и открываешь пакет за них.")
 
-			saynn("In return, you get a few chips and a pat on the head. And also a feeling of satisfaction. Worth it.")
+			saynn("В награду ты получаешь пару чипсин и поглаживание по голове. А еще — чувство глубокого удовлетворения. Оно того стоило.")
 
 		else:
-			saynn("They grab the bag.. but now they're thinking about how to open it.")
+			saynn("Они хватают пакет... и теперь раздумывают, как бы его вскрыть.")
 
-			saynn("Eventually, the tentacles figure out to use their tips to pull on the bag until it opens with a nice satisfying pop!")
+			saynn("В конце концов щупальца допирают до мысли, что нужно тянуть кончиками за пакет, пока он не раскроется с приятным, сочным хлопком!")
 
-			saynn("The monster sinks its tendrils into the bag and starts nomming the chips..")
+			saynn("Монстр вонзает свои отростки в пакет и начинает жадно уплетать чипсы...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "1_explain"):
 		_tentacles.doAnimDuo("eat")
-		saynn("You get the tentacles' attention as they grab the bag.")
+		saynn("Вы привлекаете внимание щупалец, когда они хватают пакет.")
 
-		saynn("[say=pc]Hey.. The chips are bad for you. Maybe you should try broccoli instead?[/say]")
+		saynn("[say=pc]Эй... Чипсы — это вредно. Может, тебе стоит попробовать брокколи?[/say]")
 
-		saynn("It feels like they completely ignored you..")
+		saynn("Такое ощущение, что они вас просто проигнорировали...")
 
-		saynn("One of the tentacles smashes the bag against the floor, making all the chips fly out.")
+		saynn("Одно из щупалец с размаху шлепает пакетом об пол, отчего все чипсы разлетаются в разные стороны.")
 
-		saynn("The rest of the tentacles start picking them up and eating them.")
+		saynn("Остальные щупальца начинают подбирать их и поедать.")
 
-		saynn("[say=pc]You like floor chips.. got it.[/say]")
+		saynn("[say=pc]Значит, тебе нравятся чипсы с пола... Понятно.[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "1_explain_yes"):
 		_tentacles.doAnimDuo("idle")
-		saynn("You get the tentacles' attention as they grab the bag.")
+		saynn("Вы привлекаете внимание щупалец, когда они хватают пакет.")
 
-		saynn("[say=pc]Hey.. The chips are bad for you. Maybe you should try broccoli instead?[/say]")
+		saynn("[say=pc]Эй... Чипсы — это вредно. Может, тебе стоит попробовать брокколи?[/say]")
 
-		saynn("The monster stops doing what it has been doing..")
+		saynn("Монстр замирает, прерывая привычное занятие...")
 
 		_tentacles.talk("Perhaps. We will trust you.")
-		saynn("Then, they slowly put the bag back into the fridge.. and grab some broccoli instead.")
+		saynn("Затем они медленно убирают пакет обратно в холодильник... и вместо него берут брокколи.")
 
-		saynn("It's cold.. but it doesn't stop them from crushing it between their tentacles and sucking all the juices that way.")
+		saynn("Овощ холодный... но это не мешает им раздавливать его щупальцами, высасывая весь сок таким образом.")
 
-		saynn("[say=pc]Thank you for listening.[/say]")
+		saynn("[say=pc]Спасибо за внимание.[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "1_yoink"):
 		_tentacles.doAnimDuo("glare")
-		saynn("Before the tentacles can open the bag, you quickly run up to them and yoink it!")
+		saynn("Прежде чем щупальца успевают открыть пакет, ты резко подлетаешь к ним и — хоп! — выхватываешь его!")
 
-		saynn("[say=pc]These are bad for you.[/say]")
+		saynn("[say=pc]Это вредно для здоровья.[/say]")
 
-		saynn("All of the pointy tips instantly stare at you.")
+		saynn("Все острые кончики мгновенно устремляют на тебя свои взгляды.")
 
-		saynn("[say=pc]Uh..[/say]")
+		saynn("[say=pc]Э-э...[/say]")
 
-		saynn("Your next few minutes are spent running away from the tentacles while they attempt to chase you down.")
+		saynn("Следующие несколько минут ты проводишь в попытках убежать от щупалец, которые изо всех сил стараются тебя догнать.")
 
 		if (RNG.chance(_tentacles.agility*15)):
-			saynn("Eventually, one of the tentacles manages to curl around your ankle and make you trip! The bag of chips slides out of your hands and quickly gets picked up by the other tendrils.")
+			saynn("В конце концов, одному из щупалец удается обвить твою лодыжку, заставляя тебя споткнуться! Пакет чипсов выскальзывает из рук и тут же подбирается остальными отростками.")
 
-			saynn("The tentacle monster is enjoying its snack.. while you're busy panting. It's getting fast, that thing..")
+			saynn("Щупальцевой монстр уплетал свой перекус... пока ты тяжело дышишь, пытаясь прийти в себя. А эта тварь становится всё быстрее и быстрее...")
 
 		else:
-			saynn("Eventually, the tentacles give up and just curl around themselves. It looks kinda sad..")
+			saynn("В конце концов щупальца сдаются и просто сворачиваются в кольца. Выглядит как-то грустно..")
 
-			saynn("[say=pc]Fine-e..[/say]")
+			saynn("[say=pc]Ну вот..[/say]")
 
-			saynn("You throw the tentacles some chips and they happily eat them.")
+			saynn("Вы кидаете щупальцам чипсы, и они с удовольствием их поедают.")
 
-		saynn("Both of you got a good workout out of this.")
+		saynn("Вы оба отлично размялись.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "1_yoink_angry"):
 		_tentacles.doAnimDuo("eat")
-		saynn("Before the tentacles can open the bag, you quickly run up to them and yoink it!")
+		saynn("Прежде чем щупальца успевают открыть пакет, ты резко подлетаешь к ним и — хоп! — выхватываешь его!")
 
-		saynn("[say=pc]These are bad for you.[/say]")
+		saynn("[say=pc]Это вредно для здоровья.[/say]")
 
-		saynn("But.. before you can finish that sentence, one of the tentacles already snatches the bag back!")
+		saynn("Но.. не успеваете вы договорить, как одно из щупалец уже выхватывает пакет обратно!")
 
 		_tentacles.talk("Leave the bag to us.")
-		saynn("[say=pc]Really?[/say]")
+		saynn("[say=pc]Серьёзно?[/say]")
 
-		saynn("You try to steal the bag again.. but the tentacles are ready this time.. they hold onto them while you keep pulling.. until the bag suddenly explodes into a beautiful rain of chips.")
+		saynn("Вы пытаетесь снова украсть пакет.. но на этот раз щупальца готовы.. они держат его, пока вы продолжаете тянуть.. пока пакет внезапно не взрывается прекрасным дождем из чипсов.")
 
 		_tentacles.talk("Now look what you have done.")
-		saynn("They sure don't look happy about it, the tentacles are vibrating like cobras..")
+		saynn("Они явно не в восторге: щупальца вибрируют, словно кобры..")
 
-		saynn("Still, they begin picking up the dirty floor chips and eating them.")
+		saynn("И все же они начинают подбирать грязные с пола чипсы и поедать их.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "2"):
 		_tentacles.doAnimDuo("idle")
-		saynn("As you approach the tentacles, you see them grabbing the handle of the fridge and opening it!")
+		saynn("Когда вы приближаетесь к щупальцам, вы видите, как они хватаются за ручку холодильника и открывают его!")
 
-		saynn("They then look inside.. and see a whole roasted chicken just waiting there for them.")
+		saynn("Затем они заглядывают внутрь.. и видят целую жареную курицу, которая только и ждет, чтобы ее съели.")
 
-		addButton("Allow it", "Allow them to eat the chicken!", "2_allow")
-		addButton("Deny", "Prevent them from eating the chicken!", "2_deny")
+		addButton("Позволь ему", "Дать им съесть курицу!", "2_allow")
+		addButton("Отказать", "Не дай им сожрать курицу!", "2_deny")
 	if(state == "2_allow"):
 		_tentacles.doAnimDuo("eat")
-		saynn("Some chicken isn't gonna hurt, the tentacles need all the protein they can get.")
+		saynn("Немного курицы им не повредит, щупальцам нужно как можно больше протеина.")
 
 		if (_tentacles.agility >= 5):
-			saynn("You just watch as the tentacles pull the roasted chicken out.. and then easily rip it apart before squeezing and absorbing the meat. Wow.")
+			saynn("Ты просто наблюдаешь, как щупальца вытягивают жареную курицу... а затем с легкостью разрывают её на куски, прежде чем всасывать мясо. Ого.")
 
-			saynn("They sure got strong.")
+			saynn("А они чертовски сильные.")
 
 		elif (_tentacles.agility >= 3):
-			saynn("You just watch as the tentacles carefully pull the roasted chicken out and hold it above the floor. Multiple tentacles curl around the chicken's wings and legs.. before proceeding to try to tear it apart.")
+			saynn("Ты наблюдаешь, как щупальца осторожно вытягивают жареную курицу и держат её над полом. Несколько щупалец обвивают крылья и ножки... прежде чем начать разрывать её на части.")
 
-			saynn("It takes some time but eventually they manage to do so, ripping the limbs off before absorbing all the meat.")
+			saynn("Это занимает некоторое время, но в итоге им удается это сделать: они отрывают конечности, а затем всасывают всё мясо.")
 
 		else:
-			saynn("You just watch as the tentacles try to awkwardly pull the roasted chicken out. It takes quite a few tentacles to hold it above the floor.. while the rest dig into the meat and begin absorbing it.")
+			saynn("Ты наблюдаешь, как щупальца неуклюже пытаются вытянуть жареную курицу. Требуется целая орава щупалец, чтобы удерживать её над полом... пока остальные вгрызаются в мясо и начинают его поглощать.")
 
-			saynn("Some time later, they finally finished their meal!")
+			saynn("Спустя некоторое время они наконец заканчивают трапезу!")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "2_deny"):
 		_tentacles.doAnimDuo("glare")
-		saynn("You run up to the fridge and close it shut before the tentacles have a chance to grab anything!")
+		saynn("Ты подрываешься к холодильнику и захлопываешь его прежде, чем щупальца успевают что-нибудь схватить!")
 
-		saynn("[say=pc]Nope, you're not eating this.[/say]")
+		saynn("[say=pc]Неа, это ты не будешь есть.[/say]")
 
 		if (_tentacles.agility >= 7):
-			saynn("The many tentacles stare at you.. intently.")
+			saynn("Множество щупалец пристально.. смотрят на тебя.")
 
 			_tentacles.talk("You can't stop us, why are you trying.")
-			saynn("A few tendrils begin reaching out.. but you slap them away.. again and again.. until one of them catches your wrist and holds it in place.")
+			saynn("Несколько отростков начинают тянуться к тебе.. но ты отмахиваешься от них.. снова и снова.. пока один из них не хватает тебя за запястье и не фиксирует его на месте.")
 
-			saynn("The way it's advancing towards you.. makes you think that it's about to do something. The tentacles start curling.. but not around you.. around the fridge.")
+			saynn("То, как оно движется к тебе.. заставляет думать, что оно собирается что-то сделать. Щупальца начинают сворачиваться.. но не вокруг тебя.. а вокруг холодильника.")
 
-			saynn("The monster suddenly lifts it above the floor.. and relocates it so that your body is no longer blocking it.")
+			saynn("Монстр внезапно поднимает его над полом.. и переставляет так, чтобы твое тело больше не преграждало ему путь.")
 
-			saynn("[say=pc]Wow.[/say]")
+			saynn("[say=pc]Ого.[/say]")
 
-			saynn("That's one way to solve a problem..")
+			saynn("Это тоже способ решить проблему..")
 
-			saynn("It looks like the tentacles lost interest in the chicken after this stunt.. they just wanted to do this.")
+			saynn("Похоже, после этого трюка щупальца потеряли интерес к курице.. им просто хотелось вот этого.")
 
 		elif (_tentacles.agility >= 5):
-			saynn("The many tentacles stare at you.. intently.")
+			saynn("Множество щупалец пристально.. смотрят на тебя.")
 
 			_tentacles.talk("We do not wish to harm you.")
-			saynn("A few tendrils begin reaching out.. but you slap them away.. again and again.. until one of them catches your wrist and holds it in place.")
+			saynn("Несколько отростков начинают тянуться к тебе.. но ты отмахиваешься от них.. снова и снова.. пока один из них не хватает тебя за запястье и не фиксирует его на месте.")
 
-			saynn("You try to use your other arm.. but the tentacles catch that one too..")
+			saynn("Ты пытаешься использовать другую руку.. но щупальца хватают и её тоже..")
 
-			saynn("You try to kick the tentacles.. but your leg quickly gets bound by the tendrils as well.")
+			saynn("Ты пытаешься пнуть щупальца.. но твоя нога тоже быстро оказывается опутана отростками.")
 
-			saynn("And so.. you're standing on one leg.. completely helpless.")
+			saynn("И вот... ты стоишь на одной ноге... совершенно беспомощная.")
 
-			saynn("[say=pc]Alright, you win. The chicken is yours.[/say]")
+			saynn("[say=pc]Ладно, ты победила. Курица твоя.[/say]")
 
-			saynn("Hearing that.. the monster just lets you go.. and then slithers away.")
+			saynn("Услышав это... монстр просто отпускает тебя... а затем уползает прочь.")
 
 		else:
-			saynn("The many tentacles stare at you.. A few try to reach out but they're easy to deflect.")
+			saynn("Множество щупалец пялятся на тебя... Несколько пытаются дотянуться, но их легко оттолкнуть.")
 
 			_tentacles.talk("We have a wish for nutrients.")
-			saynn("[say=pc]I don't want you to eat it, okay? Maybe you want something else?[/say]")
+			saynn("[say=pc]Я не хочу, чтобы ты это ела, ясно? Может, ты хочешь чего-то другого?[/say]")
 
-			saynn("Eventually, the monster gives up and just slithers away.")
+			saynn("В конце концов, монстр сдается и просто уползает.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "3"):
 		_tentacles.doAnimDuo("idle")
-		saynn("As you approach the tentacles, you see them grabbing the handle of the fridge and opening it!")
+		saynn("Когда вы приближаетесь к щупальцам, вы видите, как они хватаются за ручку холодильника и открывают его!")
 
-		saynn("They then look inside.. and notice a raw, uncooked steak. And, for some reason, they want it.")
+		saynn("Затем они заглядывают внутрь... и замечают сырой, необработанный стейк. И почему-то они его хотят.")
 
-		saynn("Maybe letting them feel what real meat tastes like isn't the best idea..")
+		saynn("Возможно, дать им почувствовать вкус настоящего мяса — не самая лучшая идея...")
 
-		addButton("Allow it", "Allow them to eat the steak!", "3_allow")
-		addButton("Deny", "Prevent them from eating the meat!", "3_deny")
+		addButton("Позволь ему", "Позволить им съесть стейк!", "3_allow")
+		addButton("Отказать", "Не дать им съесть мясо!", "3_deny")
 	if(state == "3_allow"):
 		_tentacles.doAnimDuo("eat")
-		saynn("..or maybe letting them get familiar with the taste of meat is exactly what you want.")
+		saynn("..или, может быть, дать им привыкнуть к вкусу мяса — это именно то, чего ты хочешь.")
 
 		if (_tentacles.agility >= 5):
-			saynn("You just watch as the tentacles grab the steak.. and then easily rip it apart before squeezing and absorbing all the juices and blood. Wow. They didn't even leave any bones.")
+			saynn("Ты просто наблюдаешь, как щупальца хватают стейк.. а затем с легкостью разрывают его на куски, выжимая и впитывая весь сок и кровь. Ого. Они даже костей не оставили.")
 
 		elif (_tentacles.agility >= 3):
-			saynn("You just watch as the tentacles grab the steak.. and then dig into the meat with its hungry pointy tips, squeezing all the juices and blood out of it before absorbing it.")
+			saynn("Ты просто наблюдаешь, как щупальца хватают стейк.. а затем впиваются в мясо своими голодными острыми кончиками, выжимая из него весь сок и кровь, прежде чем поглотить их.")
 
 		else:
-			saynn("You just watch as the tentacles try to awkwardly pull the steak out. It takes quite a few tentacles to hold it above the floor.. while the rest dig into the meat and begin absorbing it.")
+			saynn("Ты просто наблюдаешь, как щупальца неуклюже пытаются вытащить стейк. Требуется немало щупалец, чтобы удержать его над полом.. пока остальные вгрызаются в мясо и начинают его поглощать.")
 
-			saynn("Some time later, they finally finished their meal! The blood is still dripping from the tips..")
+			saynn("Спустя некоторое время они наконец закончили трапезу! С кончиков всё еще капает кровь..")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "3_deny"):
 		_tentacles.doAnimDuo("glare")
-		saynn("You run up to the fridge and close it shut before the tentacles have a chance to grab anything!")
+		saynn("Ты подрываешься к холодильнику и захлопываешь его прежде, чем щупальца успевают что-нибудь схватить!")
 
-		saynn("[say=pc]Nope, you're not eating this.[/say]")
+		saynn("[say=pc]Неа, это ты не будешь есть.[/say]")
 
 		if (_tentacles.agility >= 7):
-			saynn("The many tentacles stare at you.. intently.")
+			saynn("Множество щупалец пристально.. смотрят на тебя.")
 
 			_tentacles.talk("You can't stop us, why are you trying.")
-			saynn("A few tendrils begin reaching out.. but you slap them away.. again and again.. until one of them catches your wrist and holds it in place.")
+			saynn("Несколько отростков начинают тянуться к тебе.. но ты отмахиваешься от них.. снова и снова.. пока один из них не хватает тебя за запястье и не фиксирует его на месте.")
 
-			saynn("The way it's advancing towards you.. makes you think that it's about to do something. The tentacles start curling.. but not around you.. around the fridge.")
+			saynn("То, как оно движется к тебе.. заставляет думать, что оно собирается что-то сделать. Щупальца начинают сворачиваться.. но не вокруг тебя.. а вокруг холодильника.")
 
-			saynn("The monster suddenly lifts it above the floor.. and relocates it so that your body is no longer blocking it.")
+			saynn("Монстр внезапно поднимает его над полом.. и переставляет так, чтобы твое тело больше не преграждало ему путь.")
 
-			saynn("[say=pc]Wow.[/say]")
+			saynn("[say=pc]Ого.[/say]")
 
-			saynn("That's one way to solve a problem..")
+			saynn("Это тоже способ решить проблему..")
 
-			saynn("It looks like the tentacles lost interest in the meat after this stunt.. they just wanted to do this.")
+			saynn("Похоже, после этого трюка щупальца потеряли интерес к мясу.. им просто хотелось сделать это.")
 
 		elif (_tentacles.agility >= 5):
-			saynn("The many tentacles stare at you.. intently.")
+			saynn("Множество щупалец пристально.. смотрят на тебя.")
 
 			_tentacles.talk("We do not wish to harm you.")
-			saynn("A few tendrils begin reaching out.. but you slap them away.. again and again.. until one of them catches your wrist and holds it in place.")
+			saynn("Несколько отростков начинают тянуться к тебе.. но ты отмахиваешься от них.. снова и снова.. пока один из них не хватает тебя за запястье и не фиксирует его на месте.")
 
-			saynn("You try to use your other arm.. but the tentacles catch that one too..")
+			saynn("Ты пытаешься использовать другую руку.. но щупальца хватают и её тоже..")
 
-			saynn("You try to kick the tentacles.. but your leg quickly gets bound by the tendrils as well.")
+			saynn("Ты пытаешься пнуть щупальца.. но твоя нога тоже быстро оказывается опутана отростками.")
 
-			saynn("And so.. you're standing on one leg.. completely helpless.")
+			saynn("И вот... ты стоишь на одной ноге... совершенно беспомощная.")
 
-			saynn("[say=pc]Alright, you win. The meat is yours.[/say]")
+			saynn("[say=pc]Ладно, ты победил. Мясо твое.[/say]")
 
-			saynn("Hearing that.. the monster just lets you go.. and then slithers away.")
+			saynn("Услышав это... монстр просто отпускает тебя... а затем уползает прочь.")
 
 		else:
-			saynn("The many tentacles stare at you.. A few try to reach out but they're easy to deflect.")
+			saynn("Множество щупалец пялятся на тебя... Несколько пытаются дотянуться, но их легко оттолкнуть.")
 
 			_tentacles.talk("We have a wish for nutrients.")
-			saynn("[say=pc]I don't want you to eat it, okay? Maybe you want something else?[/say]")
+			saynn("[say=pc]Я не хочу, чтобы ты это ела, ясно? Может, ты хочешь чего-то другого?[/say]")
 
-			saynn("Eventually, the monster gives up and just slithers away.")
+			saynn("В конце концов, монстр сдается и просто уползает.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "4"):
 		_tentacles.doAnimDuo("idle")
-		saynn("As you approach the tentacles, you see them grabbing the handle of the fridge and opening it!")
+		saynn("Когда вы приближаетесь к щупальцам, вы видите, как они хватаются за ручку холодильника и открывают его!")
 
-		saynn("They then look inside.. and notice a 'milk' bottle. It has no label.. but you're pretty sure that it's more than just milk.")
+		saynn("Затем они заглядывают внутрь.. и замечают бутылочку с «молоком». На ней нет этикетки.. но ты почти уверен, что это не просто молоко.")
 
-		saynn("For some reason, they really wanna empty that bottle.")
+		saynn("По какой-то причине они очень хотят опустошить эту бутылочку.")
 
-		addButton("Allow it", "Allow them to drink the milk!", "4_allow")
-		addButton("Deny", "Prevent them from eating the meat!", "4_deny")
+		addButton("Позволь ему", "Позволить им выпить молоко!", "4_allow")
+		addButton("Отказать", "Не дать им съесть мясо!", "4_deny")
 	if(state == "4_allow"):
 		_tentacles.doAnimDuo("eat")
-		saynn("What the heck, why not.")
+		saynn("Какого черта, почему бы и нет.")
 
-		saynn("You just watch as the tentacles grab the bottle.. and open it with a precise flick of a tentacle. After that, the monster just pours this milk all over itself, letting the skin of its many tendrils absorb the fluid.")
+		saynn("Ты просто наблюдаешь, как щупальца хватают бутылку... и открывают её точным движением одного из отростков. После этого монстр просто выливает всё молоко на себя, позволяя коже множества своих щупалец впитывать жидкость.")
 
-		saynn("As the milk gets absorbed, a different fluid replaces it. The tentacles sway slowly as they become all shiny and drippy..")
+		saynn("По мере того как молоко впитывается, его заменяет другая жидкость. Щупальца медленно покачиваются, становясь блестящими и сочащимися...")
 
 		if (_tentacles.lust >= 5):
-			saynn("They're extremely lusty already.. but it looks like they just got even more horny.")
+			saynn("Они и так были невероятно похотливыми... но, кажется, их развезло ещё сильнее.")
 
 		elif (_tentacles.lust >= 3):
-			saynn("Whatever it is, it sure makes them look more.. lusty.")
+			saynn("Что бы это ни было, они определенно стали выглядеть более... вожделеющими.")
 
 		else:
-			saynn("It sure made them a bit more.. inviting.")
+			saynn("Они определенно стали выглядеть чуть более... манящими.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "4_deny"):
 		_tentacles.doAnimDuo("glare")
-		saynn("You run to the fridge and close it before the tentacles have a chance to grab the milk bottle.")
+		saynn("Ты подрываешься к холодильнику и захлопываешь его прежде, чем щупальца успевают схватить бутылку молока.")
 
-		saynn("[say=pc]Nope, you're not drinking that stuff. Don't even think about it.[/say]")
+		saynn("[say=pc]Не-а, ты не будешь это пить. Даже не думай об этом![/say]")
 
 		if (_tentacles.lust >= 6):
-			saynn("The tentacles rub you in sensitive places to try to make you move. You let out a few moans.. but stay still.")
+			saynn("Щупальца начинают тереться о твои чувствительные места, пытаясь заставить тебя пошевелиться. Ты издаешь несколько стонов... но продолжаешь лежать неподвижно.")
 
-			saynn("Eventually, they give up and move on.")
+			saynn("В конце концов, они сдаются и переключаются на что-то другое.")
 
 		elif (_tentacles.lust >= 3):
-			saynn("The tentacles gently stroke your hips, inviting you to move aside. Despite all of that, you stand still.")
+			saynn("Щупальца нежно поглаживают твои бёдра, приглашая тебя отодвинуться. Но, несмотря на всё это, ты замираешь на месте.")
 
-			saynn("Eventually, they give up and move on.")
+			saynn("В конце концов, они сдаются и переключаются на что-то другое.")
 
 		else:
-			saynn("The tentacles poke your hips a few times.. but you just stand still.")
+			saynn("Щупальца несколько раз тычут тебя в бёдра... но ты просто стоишь неподвижно.")
 
-			saynn("Eventually, they give up and move on.")
+			saynn("В конце концов, они сдаются и переключаются на что-то другое.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	var _tentacles:PlayerSlaveryTentacles = GM.main.PS

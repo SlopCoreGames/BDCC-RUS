@@ -14,92 +14,92 @@ func resolveCustomCharacterName(_charID):
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.Sybian, "idle", {pc="pc", bodyState={naked=true}})
-		saynn("Feeling horny, you decide to give your sybian machine a try.")
+		saynn("Почувствовав возбуждение, ты решаешь опробовать свой сибиан.")
 
 		if (GM.pc.hasReachableVagina()):
-			saynn("Small silicone dildos slide up your holes as you lower yourself onto it, the soft texture brushing against your sensitive flesh.")
+			saynn("Маленькие силиконовые дилдо скользят в твои отверстия, когда ты опускаешься на него, и мягкая текстура ласкает твою чувствительную плоть.")
 
-			saynn("Your clit rests on a little ridged platform, the sensations sending shivers down your spine already.")
+			saynn("Твой клитор покоится на маленькой ребристой платформе, и от этих ощущений по спине уже пробегает дрожь.")
 
 		elif (GM.pc.isWearingChastityCage()):
-			saynn("Small silicone dildo slides up your tailhole as you lower yourself onto it, the soft texture brushing against your sensitive flesh.")
+			saynn("Маленький силиконовый дилдо скользит в твой анус, когда ты опускаешься на него, и мягкая текстура ласкает твою чувствительную плоть.")
 
-			saynn("Your taint rests on a little ridged platform, the sensations sending shivers down your spine.")
+			saynn("Твой промежность покоится на маленькой ребристой платформе, вызывая дрожь во всем теле.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Small silicone dildo slides up your tailhole as you lower yourself onto it, the soft texture brushing against your sensitive flesh.")
+			saynn("Маленький силиконовый дилдо скользит в твой анус, когда ты опускаешься на него, и мягкая текстура ласкает твою чувствительную плоть.")
 
-			saynn("Your taint rests on a little ridged platform, the sensations sending shivers down your spine and making your cock twitch slightly.")
+			saynn("Твоя промежность покоится на маленькой ребристой платформе, отчего по спине пробегает дрожь, а твой член начинает слегка подергиваться.")
 
 		else:
-			saynn("Small silicone dildo slides up your tailhole as you lower yourself onto it, the soft texture brushing against your sensitive flesh.")
+			saynn("Маленький силиконовый дилдо скользит в твой анус, когда ты опускаешься на него, и мягкая текстура ласкает твою чувствительную плоть.")
 
-			saynn("Your taint rests on a little ridged platform, the sensations sending shivers down your spine.")
+			saynn("Твоя промежность покоится на маленькой ребристой платформе, вызывая дрожь во всем теле.")
 
-		addButton("Turn it on", "Start enjoying the vibrations", "turn_on_slave_check")
+		addButton("Включить", "Начни наслаждаться вибрацией", "turn_on_slave_check")
 	if(state == "slave_wants_help"):
 		playAnimation(StageScene.SybianOral, "idle", {pc="pc", npc=npcID, bodyState={naked=true}})
-		saynn("You grab the sybian's little remote and flick the power switch.")
+		saynn("Ты хватаешь маленький пульт от сибиана и щелкаешь выключателем.")
 
 		if (GM.pc.hasReachableVagina()):
-			saynn("The machine under you kicks into action, the dildos start vibrating inside you at an idly pace.. your pussy slit getting slightly wet around the toys already, the platform under your clit shifts ever so slightly, stimulating you.")
+			saynn("Машина под тобой оживает, дилдо начинают вибрировать внутри тебя в размеренном темпе... твоя щель уже начинает слегка увлажняться вокруг игрушек, а платформа под твоим клитором едва заметно смещается, стимулируя тебя.")
 
 		elif (GM.pc.isWearingChastityCage()):
-			saynn("The machine under you kicks into action, the dildo starts vibrating inside you at an idly pace, it's curved to perfectly massage your little prostate..")
+			saynn("Машина под тобой оживает, дилдо начинает вибрировать внутри тебя в размеренном темпе; он изогнут так, чтобы идеально массировать твою маленькую простату...")
 
-			saynn("Your locked away member tries to get hard but the metal keeps it in check, the platform under your taint shifts ever so slightly, stimulating you.")
+			saynn("Твой запертый член пытается встать, но металл удерживает его в узде, а платформа под твоим промежностью едва заметно смещается, стимулируя тебя.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("The machine under you kicks into action, the dildo starts vibrating inside you at an idly pace, it's curved to perfectly massage your little prostate..")
+			saynn("Машина под тобой оживает, дилдо начинает вибрировать внутри тебя в размеренном темпе; он изогнут так, чтобы идеально массировать твою маленькую простату...")
 
-			saynn("It's enough to make your {pc.penis} drip pre, the platform under your taint shifts ever so slightly, stimulating you.")
+			saynn("Этого достаточно, чтобы твоя {pc.penis} начала течь от предвкушения, а платформа под твоей промежностью едва заметно смещается, стимулируя тебя.")
 
 		else:
-			saynn("The machine under you kicks into action, the dildo starts vibrating inside you at an idly pace.")
+			saynn("Машина под тобой оживает, дилдо начинает вибрировать внутри тебя в размеренном темпе.")
 
-			saynn("It's enough to make you let out a cute sigh, the platform under your taint shifts ever so slightly, stimulating you.")
+			saynn("Этого достаточно, чтобы ты издала милый вздох, а платформа под твоей промежностью едва заметно сместилась, стимулируя тебя.")
 
-		saynn("One of your slaves, {npc.name}, seems to be unable to pull {npc.his} eyes off of you.")
+		saynn("Одна из твоих рабынь, {npc.name}, кажется, не может оторвать от тебя {npc.his} глаз.")
 
-		saynn("You can order {npc.him} to come closer to have some fun with {npc.him}.. or just ride the machine alone.")
+		saynn("Ты можешь приказать {npc.him} подойти поближе, чтобы повеселиться с {npc.him}... или просто оседлать машину в одиночку.")
 
 		var theNpc = getCharacter(npcID)
 		if (theNpc.hasReachablePenis()):
-			addButtonWithChecks("Suck them off", "Suck their cock while riding the sybian", "do_ride_while_suck", [], [[ButtonChecks.NotOralBlocked]])
+			addButtonWithChecks("Отсосать им", "Отсасывать им член, пока скачешь на сибиане", "do_ride_while_suck", [], [[ButtonChecks.NotOralBlocked]])
 		if (theNpc.hasReachableVagina()):
-			addButtonWithChecks("Eat them out", "Lick their pussy while riding the sybian", "do_ride_while_lick", [], [[ButtonChecks.NotOralBlocked]])
-		addButton("Just ride", "Ignore them", "just_ride")
-		addButton("Hump sybian", "Ignore them and hump the sybian", "just_hump")
+			addButtonWithChecks("Отлизать им", "Лизать им киску, пока скачешь на сибиане", "do_ride_while_lick", [], [[ButtonChecks.NotOralBlocked]])
+		addButton("Просто скакать", "Игнорировать их", "just_ride")
+		addButton("Трахнуть сибиан", "Игнорировать их и трахать сибиан", "just_hump")
 		if (GM.pc.hasReachablePenis() && GM.pc.getWornCondom() == null):
-			addButtonWithChecks("Put on a condom", "Wear a condom while doing this", "put_a_condom_on", [], [[ButtonChecks.HasCondoms]])
+			addButtonWithChecks("Надеть презерватив", "Надеть презерватив во время процесса", "put_a_condom_on", [], [[ButtonChecks.HasCondoms]])
 	if(state == "alone_pick_how_ride"):
-		saynn("You grab the sybian's little remote and flick the power switch.")
+		saynn("Ты хватаешь маленький пульт от сибиана и щелкаешь выключателем.")
 
 		if (GM.pc.hasReachableVagina()):
-			saynn("The machine under you kicks into action, the dildos start vibrating inside you at an idly pace.. your pussy slit getting slightly wet around the toys already, the platform under your clit shifts ever so slightly, stimulating you.")
+			saynn("Машина под тобой оживает, дилдо начинают вибрировать внутри тебя в размеренном темпе... твоя щель уже начинает слегка увлажняться вокруг игрушек, а платформа под твоим клитором едва заметно смещается, стимулируя тебя.")
 
 		elif (GM.pc.isWearingChastityCage()):
-			saynn("The machine under you kicks into action, the dildo starts vibrating inside you at an idly pace, it's curved to perfectly massage your little prostate..")
+			saynn("Машина под тобой оживает, дилдо начинает вибрировать внутри тебя в размеренном темпе; он изогнут так, чтобы идеально массировать твою маленькую простату...")
 
-			saynn("Your locked away member tries to get hard but the metal keeps it in check, the platform under your taint shifts ever so slightly, stimulating you.")
+			saynn("Твой запертый член пытается встать, но металл удерживает его в узде, а платформа под твоим промежностью едва заметно смещается, стимулируя тебя.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("The machine under you kicks into action, the dildo starts vibrating inside you at an idly pace, it's curved to perfectly massage your little prostate..")
+			saynn("Машина под тобой оживает, дилдо начинает вибрировать внутри тебя в размеренном темпе; он изогнут так, чтобы идеально массировать твою маленькую простату...")
 
-			saynn("It's enough to make your {pc.penis} drip pre, the platform under your taint shifts ever so slightly, stimulating you.")
+			saynn("Этого достаточно, чтобы твоя {pc.penis} начала течь от предвкушения, а платформа под твоей промежностью едва заметно смещается, стимулируя тебя.")
 
 		else:
-			saynn("The machine under you kicks into action, the dildo starts vibrating inside you at an idly pace.")
+			saynn("Машина под тобой оживает, дилдо начинает вибрировать внутри тебя в размеренном темпе.")
 
-			saynn("It's enough to make you let out a cute sigh, the platform under your taint shifts ever so slightly, stimulating you.")
+			saynn("Этого достаточно, чтобы ты издала милый вздох, а платформа под твоей промежностью едва заметно сместилась, стимулируя тебя.")
 
-		saynn("How do you want to enjoy it?")
+		saynn("Как именно ты хочешь это отыметь?")
 
-		addButton("Just ride", "Ignore them", "just_ride")
-		addButton("Hump sybian", "Ignore them and hump the sybian", "just_hump")
+		addButton("Просто скакать", "Игнорировать их", "just_ride")
+		addButton("Трахнуть сибиан", "Игнорировать их и трахать сибиан", "just_hump")
 		if (GM.pc.hasReachablePenis() && GM.pc.getWornCondom() == null):
-			addButtonWithChecks("Put on a condom", "Wear a condom while doing this", "put_a_condom_on", [], [[ButtonChecks.HasCondoms]])
-		addDisabledButton("Slaves", "You don't have any slaves that can join")
+			addButtonWithChecks("Надеть презерватив", "Надеть презерватив во время процесса", "put_a_condom_on", [], [[ButtonChecks.HasCondoms]])
+		addDisabledButton("Рабыни", "У вас нет рабынь, готовых присоединиться")
 	if(state == "sybian_loop"):
 		var pcArousal = GM.pc.getArousal()
 		var isHighArousal = (pcArousal < 0.5)
@@ -110,60 +110,60 @@ func _run():
 				playAnimation(StageScene.Sybian, "intense", {pc="pc", bodyState={naked=true}})
 			if (isFirstRide):
 				if (GM.pc.hasReachableVagina()):
-					saynn("The machine hums as you begin to ride it with slow, deliberate movements, its toys pleasure your eager holes. Feels good already..")
+					saynn("Машина гудит, когда вы начинаете медленно и размеренно двигаться на ней, её игрушки доставляют удовольствие вашим жадным отверстиям. Уже становится хорошо...")
 
 				elif (GM.pc.hasReachablePenis()):
-					saynn("The machine hums as you begin to ride it with slow, deliberate movements, its toy pleasuring your eager fuckhole, your {pc.penis} twitching and dripping pre. Feels good already..")
+					saynn("Машина гудит, когда вы начинаете медленно и размеренно двигаться на ней, её игрушка ласкает ваше жадное ебало, а ваш {pc.penis} дергается и течет предэякулятом. Уже становится хорошо...")
 
 				else:
-					saynn("The machine hums as you begin to ride it with slow, deliberate movements, its toy pleasuring your eager fuckhole. Feels good already..")
+					saynn("Машина гудит, когда вы начинаете медленно и размеренно двигаться на ней, её игрушка ласкает ваше жадное ебало. Уже становится хорошо...")
 
 			else:
 				if (RNG.chance(33)):
 					if (GM.pc.hasReachableVagina()):
-						saynn("Your pussy clenches around the silicone shaft, the ridges and bumps teasing your sensitive clit with each motion while the anal dildo keeps you feeling stuffed.")
+						saynn("Ваша киска сжимается вокруг силиконового стержня, ребра и бугорки дразнят чувствительный клитор при каждом движении, в то время как анальный дилдо заставляет вас чувствовать себя набитой до отказа.")
 
 					elif (GM.pc.hasReachablePenis()):
-						saynn("Your {pc.analStretch} {anus} clenches around the silicone shaft while your prostate is being stimulated, the ridges and bumps teasing your taint with each motion, your {pc.penis} leaking pre.")
+						saynn("Ваш {pc.analStretch} {anus} сжимается вокруг силиконового стержня, пока ваша простата стимулируется, а ребра и бугорки дразнят промежность при каждом движении, и ваш {pc.penis} сочится предэякулятом.")
 
 					else:
-						saynn("Your {pc.analStretch} {anus} clenches around the silicone shaft while your pleasure spot is being stimulated, the ridges and bumps teasing your taint with each motion.")
+						saynn("Ваш {pc.analStretch} {anus} сжимается вокруг силиконового стержня, пока ваша точка удовольствия стимулируется, а ребра и бугорки дразнят промежность при каждом движении.")
 
 				elif (RNG.chance(33)):
 					if (GM.pc.hasReachableVagina()):
-						saynn("Your hips rock back and forth, driving the vibrating dildos deeper into your slick, eager pussy and {pc.analStretch}, clenching anus as you lose yourself in the throes of pleasure.")
+						saynn("Ваши бедра качаются вперед-назад, вгоняя вибрирующие дилдо глубже в вашу влажную, жадную киску и {pc.analStretch}, а анус сжимается, пока вы теряетесь в экстазе удовольствия.")
 
 					elif (GM.pc.hasReachablePenis()):
-						saynn("Your hips rock back and forth, driving the vibrating dildo deeper into your needy, eager anus as you lose yourself in the throes of pleasure, your {pc.penis} twitching wildly.")
+						saynn("Ваши бедра качаются вперед-назад, вгоняя вибрирующий дилдо глубже в ваш голодный, жадный анус, пока вы теряетесь в экстазе удовольствия, а ваш {pc.penis} дико дергается.")
 
 					else:
-						saynn("Your hips rock back and forth, driving the vibrating dildo deeper into your needy, eager anus as you lose yourself in the throes of pleasure.")
+						saynn("Твои бедра ходят ходуном, вбивая вибрирующий дилдо всё глубже в твой жадный, изголодавшийся анус, пока ты тонешь в пучине наслаждения.")
 
 				else:
 					if (GM.pc.hasReachableVagina()):
-						saynn("The ridged platform presses against your clit, sending waves of pleasure radiating through your body with each pass as you ride the sybian, lost in a haze of ecstasy.")
+						saynn("Ребристая платформа прижимается к твоему клитору, и с каждым движением на сибиане волны удовольствия разливаются по всему телу, погружая тебя в туман экстаза.")
 
 					elif (GM.pc.hasReachablePenis()):
-						saynn("The ridged platform presses against your taint, sending waves of pleasure radiating through your body with each pass as you ride the sybian, lost in a haze of ecstasy.")
+						saynn("Ребристая платформа прижимается к твоему промежности, и с каждым движением на сибиане волны удовольствия разливаются по всему телу, погружая тебя в туман экстаза.")
 
 					else:
-						saynn("The ridged platform presses against your taint, sending waves of pleasure radiating through your body with each pass as you ride the sybian, lost in a haze of ecstasy.")
+						saynn("Ребристая платформа прижимается к твоему промежности, и с каждым движением на сибиане волны удовольствия разливаются по всему телу, погружая тебя в туман экстаза.")
 
 				if (RNG.chance(20)):
-					saynn("Your moans grow louder, filling the air with the sweet sounds of your pleasure.")
+					saynn("Твои стоны становятся всё громче, наполняя воздух сладкими звуками твоего наслаждения.")
 
 				elif (RNG.chance(20)):
-					saynn("Your body can't keep itself from squirming, every movement driving you closer and closer..")
+					saynn("Твое тело не может унять дрожь и ерзанье, каждое движение приближает тебя всё ближе и ближе к пределу...")
 
 				if (pcArousal > 0.8):
 					if (RNG.chance(33)):
-						saynn("Your body trembles with anticipation, the orgasm getting closer and closer.")
+						saynn("Твое тело трепещет от предвкушения, оргазм становится всё ближе и ближе.")
 
 					elif (RNG.chance(33)):
-						saynn("You can feel the tension building within you as you approach the point of no return.")
+						saynn("Ты чувствуешь, как внутри нарастает напряжение, когда ты приближаешься к точке невозврата.")
 
 					else:
-						saynn("Your muscles tense with anticipation, every nerve in your body on fire as you feel yourself on the brink of release.")
+						saynn("Твои мышцы напряжены от предвкушения, каждое нервное окончание в теле будто в огне, когда ты чувствуешь, что стоишь на пороге разрядки.")
 
 		elif (rideMode == "hump"):
 			if (isHighArousal):
@@ -172,60 +172,60 @@ func _run():
 				playAnimation(StageScene.Sybian, "humpfast", {pc="pc", bodyState={naked=true}})
 			if (isFirstRide):
 				if (GM.pc.hasReachableVagina()):
-					saynn("Rather than ride the sybian peacefully, you decide to hump the fuck out of it, the two vibrating dildos sliding inside your slick holes as you ride the machine.")
+					saynn("Вместо того чтобы спокойно скакать на сибиане, ты решаешь вжариться на нем по полной: два вибрирующих дилдо скользят внутри твоих влажных дырочек, пока ты неистово скачешь на машине.")
 
 				elif (GM.pc.hasReachablePenis()):
-					saynn("Rather than ride the sybian peacefully, you decide to hump the fuck out of it, the vibrating dildo sliding inside your needy hole and making your {pc.penis} leak as you ride the machine.")
+					saynn("Вместо того чтобы спокойно кататься на сибиане, ты решаешь вжариться в него вовсю: вибрирующий дилдо скользит внутри твоей жаждущей дырки, заставляя твою {pc.penis} течь, пока ты скачешь на машине.")
 
 				else:
-					saynn("Rather than ride the sybian peacefully, you decide to hump the fuck out of it, the vibrating dildo sliding inside your needy hole as you ride the machine.")
+					saynn("Вместо того чтобы спокойно кататься на сибиане, ты решаешь вжариться в него вовсю: вибрирующий дилдо скользит внутри твоей жаждущей дырки, пока ты скачешь на машине.")
 
 			else:
 				if (RNG.chance(33)):
 					if (GM.pc.hasReachableVagina()):
-						saynn("The vibrating dildos slide in and out of your wet, eager pussy and {pc.analStretch} anus, your hand stimulating your clit.")
+						saynn("Вибрирующие дилдо входят и выходят из твоей влажной, нетерпеливой киски и {pc.analStretch} ануса, пока твоя рука ласкает клитор.")
 
 					elif (GM.pc.hasReachablePenis()):
-						saynn("The vibrating dildos slide in and out of your eager {pc.analStretch} anus, your hand rubbing your {pc.penis}.")
+						saynn("Вибрирующие дилдо входят и выходят из твоего жаждущего {pc.analStretch} ануса, пока твоя рука трет твой {pc.penis}.")
 
 					else:
-						saynn("The vibrating dildos slide in and out of your eager {pc.analStretch} anus, your hand rubbing your taint.")
+						saynn("Вибрирующие дилдо входят и выходят из твоего жаждущего {pc.analStretch} ануса, пока твоя рука трет промежность.")
 
 				elif (RNG.chance(33)):
 					if (GM.pc.hasReachableVagina()):
-						saynn("The silicone shafts plunge deep into your hungry holes, filling you with an insatiable craving for more as you hump the sybian, lost in your own desire.")
+						saynn("Силиконовые стержни глубоко вонзаются в твои голодные дырки, наполняя тебя ненасытной жаждой большего, пока ты скачешь на сибиане, потерявшись в собственном желании.")
 
 					elif (GM.pc.hasReachablePenis()):
-						saynn("The silicone shafts plunge deep into your hungry hole, filling you with an insatiable craving for more as you hump the sybian, your {pc.penis} bobs up and down while you are lost in your own desire.")
+						saynn("Силиконовые стержни глубоко вонзаются в твою голодную дырку, наполняя тебя ненасытной жаждой большего, пока ты скачешь на сибиане, а твоя {pc.penis} ходит вверх-вниз, пока ты растворяешься в своем желании.")
 
 					else:
-						saynn("The silicone shafts plunge deep into your hungry hole, filling you with an insatiable craving for more as you hump the sybian, lost in your own desire.")
+						saynn("Силиконовые стержни глубоко вонзаются в твою голодную дырку, наполняя тебя ненасытной жаждой большего, пока ты скачешь на сибиане, потерявшись в собственном желании.")
 
 				else:
 					if (GM.pc.hasReachableVagina()):
-						saynn("Your {pussy} and {anus} clench around the silicone shafts, milking them for all they're worth as you hump the sybian.")
+						saynn("Твои {pussy} и {anus} сжимаются вокруг силиконовых стержней, высасывая из них всё до последней капли, пока ты скачешь на сибиане.")
 
 					elif (GM.pc.hasReachablePenis()):
-						saynn("Your {pc.analStretch} {anus} clenches around the silicone shaft, milking it for all it's worth as you hump the sybian.")
+						saynn("Твой {pc.analStretch} {anus} сжимается вокруг силиконового стержня, высасывая из него всё до последней капли, пока ты скачешь на сибиане.")
 
 					else:
-						saynn("Your {pc.analStretch} {anus} clenches around the silicone shaft, milking it for all it's worth as you hump the sybian.")
+						saynn("Твой {pc.analStretch} {anus} сжимается вокруг силиконового стержня, высасывая из него всё до последней капли, пока ты скачешь на сибиане.")
 
 				if (RNG.chance(20)):
-					saynn("Your moans grow louder, filling the air with the sweet sounds of your pleasure.. while you keep pushing through and riding that sybian.")
+					saynn("Твои стоны становятся всё громче, наполняя воздух сладкими звуками твоего наслаждения... пока ты продолжаешь усердно двигаться, оседлав сибиан.")
 
 				elif (RNG.chance(20)):
-					saynn("Your body can't keep itself from squirming, every movement driving you closer and closer..")
+					saynn("Твое тело не может унять дрожь и ерзанье, каждое движение приближает тебя всё ближе и ближе к пределу...")
 
 				if (pcArousal > 0.8):
 					if (RNG.chance(33)):
-						saynn("Your body trembles with anticipation, the orgasm getting closer and closer.")
+						saynn("Твое тело трепещет от предвкушения, оргазм становится всё ближе и ближе.")
 
 					elif (RNG.chance(33)):
-						saynn("You can feel the tension building within you as you approach the point of no return.")
+						saynn("Ты чувствуешь, как внутри нарастает напряжение, когда ты приближаешься к точке невозврата.")
 
 					else:
-						saynn("Your muscles tense with anticipation, every nerve in your body on fire as you feel yourself on the brink of release.")
+						saynn("Твои мышцы напряжены от предвкушения, каждое нервное окончание в теле будто в огне, когда ты чувствуешь, что стоишь на пороге разрядки.")
 
 		elif (rideMode == "suck"):
 			if (isHighArousal):
@@ -233,63 +233,63 @@ func _run():
 			else:
 				playAnimation(StageScene.SybianOral, "blowjobfast", {pc="pc", npc=npcID, bodyState={naked=true}, npcBodyState={exposedCrotch=true, hard=true}})
 			if (isFirstRide):
-				saynn("You call {npc.name} to get closer.. before pulling {npc.his} {npc.penis} out and getting it into your mouth, using your tongue to pleasure it..")
+				saynn("Ты зовешь {npc.name} поближе... а затем вытаскиваешь {npc.his} {npc.penis} и отправляешь его в рот, лаская его языком...")
 
 				if (GM.pc.hasReachableVagina()):
-					saynn("At the same time, you begin to ride the humming machine with slow, deliberate movements, its toys pleasuring your eager holes. Feels so good to have all your holes stuffed..")
+					saynn("В то же время ты начинаешь ритмично двигаться на жужжащей машине медленными, размеренными движениями, пока её игрушки доставляют удовольствие твоим жаждущим отверстиям. Так приятно чувствовать, что все твои дырочки забиты...")
 
 				elif (GM.pc.hasReachablePenis()):
-					saynn("At the same time, you begin to ride the humming machine with slow, deliberate movements, its toy pleasuring your eager fuckhole, your {pc.penis} twitching and dripping pre. Feels so good to have all your holes stuffed..")
+					saynn("В то же время ты начинаешь ритмично двигаться на жужжащей машине медленными, размеренными движениями, пока её игрушка ласкает твою жаждущую дырку, а твоя {pc.penis} дергается и течет от предэякулята. Так приятно чувствовать, что все твои дырочки забиты...")
 
 				else:
-					saynn("At the same time, you begin to ride the humming machine with slow, deliberate movements, its toy pleasuring your eager fuckhole. Feels so good to have all your holes stuffed..")
+					saynn("В то же время ты начинаешь ритмично двигаться на жужжащей машине медленными, размеренными движениями, пока её игрушка ласкает твою жаждущую дырку. Так приятно чувствовать, что все твои дырочки забиты...")
 
 			else:
 				if (RNG.chance(33)):
 					if (GM.pc.hasReachableVagina()):
-						saynn("You suck that cock eagerly, dragging your tongue over its length. Your pussy clenches around the silicone shaft, the ridges and bumps teasing your sensitive clit with each motion while the anal dildo keeps you feeling stuffed.")
+						saynn("Ты жадно сосешь этот член, проводя языком по всей его длине. Твоя киска сжимается вокруг силиконового стержня, а выступы и бугорки дразнят твой чувствительный клитор при каждом движении, пока анальный дилдо дает ощущение полной наполненности.")
 
 					elif (GM.pc.hasReachablePenis()):
-						saynn("You suck that cock eagerly, dragging your tongue over its length. Your {pc.analStretch} {anus} clenches around the silicone shaft while your prostate is being stimulated, the ridges and bumps teasing your taint with each motion, your {pc.penis} leaking pre.")
+						saynn("Ты жадно сосешь этот член, проводя языком по всей его длине. Твоя {pc.analStretch} {anus} сжимается вокруг силиконового стержня, пока твоя простата стимулируется, а выступы и бугорки дразнят твою промежность при каждом движении, и твоя {pc.penis} течет от предэякулята.")
 
 					else:
-						saynn("You suck that cock eagerly, dragging your tongue over its length. Your {pc.analStretch} {anus} clenches around the silicone shaft while your pleasure spot is being stimulated, the ridges and bumps teasing your taint with each motion.")
+						saynn("Ты жадно сосёшь этот член, проводя языком по всей его длине. Твой {pc.analStretch} {anus} сжимается вокруг силиконового стержня, пока твоя точка удовольствия стимулируется, а рельефные выступы дразнят твою промежность каждым движением.")
 
 				elif (RNG.chance(33)):
 					if (GM.pc.hasReachableVagina()):
-						saynn("Your hips rock back and forth, driving the vibrating dildos deeper into your slick, eager pussy and {pc.analStretch}, clenching anus as your throat is being stretched by that nice cock.")
+						saynn("Твои бёдра ходят взад-вперед, заталкивая вибрирующие дилдо глубже в твою влажную, жаждущую киску и {pc.analStretch}, сжимающийся анус, пока твое горло растягивается этим классным членом.")
 
 					elif (GM.pc.hasReachablePenis()):
-						saynn("Your hips rock back and forth, driving the vibrating dildo deeper into your needy, eager anus as your throat is being stretched by that nice cock, your {pc.penis} twitching wildly.")
+						saynn("Твои бёдра ходят взад-вперед, заталкивая вибрирующий дилдо глубже в твой голодный, жаждущий анус, пока твое горло растягивается этим классным членом, а твой {pc.penis} дико дёргается.")
 
 					else:
-						saynn("Your hips rock back and forth, driving the vibrating dildo deeper into your needy, eager anus as your throat is being stretched by that nice cock.")
+						saynn("Твои бёдра ходят взад-вперед, заталкивая вибрирующий дилдо глубже в твой голодный, жаждущий анус, пока твое горло растягивается этим классным членом.")
 
 				else:
 					if (GM.pc.hasReachableVagina()):
-						saynn("The ridged platform presses against your clit, sending waves of pleasure radiating through your body with each pass as you ride the sybian and pleasure the cock of your slave at the same time.")
+						saynn("Рельефная платформа прижимается к твоему клитору, посылая волны наслаждения по всему телу с каждым движением, пока ты скачешь на сибиане и одновременно доставляешь удовольствие члену своего раба.")
 
 					elif (GM.pc.hasReachablePenis()):
-						saynn("The ridged platform presses against your taint, sending waves of pleasure radiating through your body with each pass as you ride the sybian and pleasure the cock of your slave at the same time.")
+						saynn("Рельефная платформа прижимается к твоей промежности, посылая волны наслаждения по всему телу с каждым движением, пока ты скачешь на сибиане и одновременно доставляешь удовольствие члену своего раба.")
 
 					else:
-						saynn("The ridged platform presses against your taint, sending waves of pleasure radiating through your body with each pass as you ride the sybian and pleasure the cock of your slave at the same time.")
+						saynn("Рельефная платформа прижимается к твоей промежности, посылая волны наслаждения по всему телу с каждым движением, пока ты скачешь на сибиане и одновременно доставляешь удовольствие члену своего раба.")
 
 				if (RNG.chance(20)):
-					saynn("Your muffled moans grow louder, filling the air with the sweet sounds of your pleasure mixed with the wet slurping.")
+					saynn("Твои приглушенные стоны становятся громче, наполняя воздух сладкими звуками твоего наслаждения, смешанными с влажным хлюпаньем.")
 
 				elif (RNG.chance(20)):
-					saynn("Your body can't keep itself from squirming, every movement driving you closer and closer..")
+					saynn("Твое тело не может унять дрожь и ерзанье, каждое движение приближает тебя всё ближе и ближе к пределу...")
 
 				if (pcArousal > 0.8):
 					if (RNG.chance(33)):
-						saynn("Your body trembles with anticipation, the orgasm getting closer and closer. The cock that you're sucking feels like it's about to burst too..")
+						saynn("Твое тело дрожит от предвкушения, оргазм становится всё ближе и ближе. Член, который ты сосёшь, кажется, тоже вот-вот лопнет...")
 
 					elif (RNG.chance(33)):
-						saynn("You can feel the tension building within you as you approach the point of no return. Just like the cock in your mouth..")
+						saynn("Ты чувствуешь, как внутри нарастает напряжение по мере приближения к точке невозврата. Прямо как член у тебя во рту...")
 
 					else:
-						saynn("Your muscles tense with anticipation, every nerve in your body on fire as you feel yourself on the brink of release. The {npc.penis} is throbbing in your mouth.")
+						saynn("Твои мышцы напряжены от предвкушения, каждая нервная клетка в теле горит, когда ты чувствуешь, что находишься на грани разрядки. {npc.penis} пульсирует у тебя во рту.")
 
 		elif (rideMode == "lick"):
 			if (isHighArousal):
@@ -297,101 +297,101 @@ func _run():
 			else:
 				playAnimation(StageScene.SybianOral, "lickfast", {pc="pc", npc=npcID, bodyState={naked=true}, npcBodyState={exposedCrotch=true, hard=true}})
 			if (isFirstRide):
-				saynn("You call {npc.name} to get closer.. before getting {npc.his} {npc.pussyStretch} pussy exposed and pressing your face into it, your tongue out and ready to please.")
+				saynn("Ты зовешь {npc.name} поближе... а затем, когда {npc.his} {npc.pussyStretch} киска обнажена, ты прижимаешься к ней лицом, высунув язык и готовая доставить удовольствие.")
 
 				if (GM.pc.hasReachableVagina()):
-					saynn("At the same time, you begin to ride the humming machine with slow, deliberate movements, its toys pleasuring your eager holes. Feels so good to have all your holes busy..")
+					saynn("В то же время ты начинаешь ритмично двигаться на жужжащей машине медленными, размеренными движениями, пока её игрушки ласкают твои жаждущие отверстия. Так приятно, когда все твои дырочки заняты...")
 
 				elif (GM.pc.hasReachablePenis()):
-					saynn("At the same time, you begin to ride the humming machine with slow, deliberate movements, its toy pleasuring your eager fuckhole, your {pc.penis} twitching and dripping pre. Feels so good to have all your holes busy..")
+					saynn("В то же время ты начинаешь ритмично двигаться на жужжащей машине медленными, размеренными движениями, пока её игрушка ласкает твою жаждущую дырку, а твой {pc.penis} подергивается и течет от предэякулята. Так приятно, когда все твои дырочки заняты...")
 
 				else:
-					saynn("At the same time, you begin to ride the humming machine with slow, deliberate movements, its toy pleasuring your eager fuckhole. Feels so good to have all your holes busy..")
+					saynn("В то же время ты начинаешь ритмично двигаться на жужжащей машине медленными, размеренными движениями, пока её игрушка ласкает твою жаждущую дырку. Так приятно, когда все твои дырочки заняты...")
 
 			else:
 				if (RNG.chance(33)):
 					if (GM.pc.hasReachableVagina()):
-						saynn("You eat that {pussy} eagerly, dragging your tongue along the petals and licking the clit. Your own pussy clenches around the silicone shaft, the ridges and bumps teasing your sensitive clit with each motion while the anal dildo keeps you feeling stuffed.")
+						saynn("Ты жадно поедаешь этот {pussy}, проводя языком по лепесткам и слизывая смазку с клитора. Твоя собственная киска сжимается вокруг силиконового стержня, а ребра и бугорки дразнят твой чувствительный клитор каждым движением, пока анальный дилдо дает ощущение полной наполненности.")
 
 					elif (GM.pc.hasReachablePenis()):
-						saynn("You eat that {pussy} eagerly, dragging your tongue along the petals and licking the clit. Your {pc.analStretch} {anus} clenches around the silicone shaft while your prostate is being stimulated, the ridges and bumps teasing your taint with each motion, your {pc.penis} leaking pre.")
+						saynn("Ты жадно поедаешь эту {pussy}, проводя языком по лепесткам и вылизывая клитор. Твой {pc.analStretch} {anus} сжимается вокруг силиконового стержня, пока твою простату стимулируют, а выступы и бугорки при каждом движении дразнят твою промежность, и твоя {pc.penis} сочится предэякулятом.")
 
 					else:
-						saynn("You eat that {pussy} eagerly, dragging your tongue along the petals and licking the clit. Your {pc.analStretch} {anus} clenches around the silicone shaft while your pleasure spot is being stimulated, the ridges and bumps teasing your taint with each motion.")
+						saynn("Ты жадно поедаешь эту {pussy}, проводя языком по лепесткам и вылизывая клитор. Твой {pc.analStretch} {anus} сжимается вокруг силиконового стержня, пока твою эрогенную зону стимулируют, а выступы и бугорки при каждом движении дразнят твою промежность.")
 
 				elif (RNG.chance(33)):
 					if (GM.pc.hasReachableVagina()):
-						saynn("Your hips rock back and forth, driving the vibrating dildos deeper into your slick, eager pussy and {pc.analStretch}, clenching anus as your tongue is exploring the inner walls of another wet slit.")
+						saynn("Твои бедра ходят взад-вперед, вгоняя вибрирующие дилдо глубже в твою влажную, жаждущую киску и {pc.analStretch}; твой анус сжимается, пока язык исследует внутренние стенки чужого мокрого разреза.")
 
 					elif (GM.pc.hasReachablePenis()):
-						saynn("Your hips rock back and forth, driving the vibrating dildo deeper into your needy, eager anus as your tongue is exploring the slick inner walls of that {pussy}, your {pc.penis} twitching wildly.")
+						saynn("Твои бедра ходят взад-вперед, вгоняя вибрирующий дилдо глубже в твой голодный, жаждущий анус, пока твой язык исследует скользкие внутренние стенки этой {pussy}, а твой {pc.penis} дико дергается.")
 
 					else:
-						saynn("Your hips rock back and forth, driving the vibrating dildo deeper into your needy, eager anus as your tongue is exploring the slick inner walls of that {pussy}.")
+						saynn("Твои бедра ходят взад-вперед, вгоняя вибрирующий дилдо глубже в твой голодный, жаждущий анус, пока твой язык исследует скользкие внутренние стенки этой {pussy}.")
 
 				else:
 					if (GM.pc.hasReachableVagina()):
-						saynn("The ridged platform presses against your clit, sending waves of pleasure radiating through your body with each pass as you ride the sybian and pleasure your slave's {npc.pussyStretch} {pussy} at the same time.")
+						saynn("Ребристая платформа прижимается к твоему клитору, посылая волны удовольствия по всему телу при каждом движении, пока ты скачешь на сибиане и одновременно ласкаешь {npc.pussyStretch} {pussy} своего раба.")
 
 					elif (GM.pc.hasReachablePenis()):
-						saynn("The ridged platform presses against your taint, sending waves of pleasure radiating through your body with each pass as you ride the sybian and pleasure your slave's {npc.pussyStretch} {pussy} at the same time.")
+						saynn("Ребристая платформа прижимается к твоему промежности, и с каждым движением на сибиане по твоему телу расходятся волны удовольствия, пока ты одновременно ласкаешь {npc.pussyStretch} {pussy} своего раба.")
 
 					else:
-						saynn("The ridged platform presses against your taint, sending waves of pleasure radiating through your body with each pass as you ride the sybian and pleasure your slave's {npc.pussyStretch} {pussy} at the same time.")
+						saynn("Ребристая платформа прижимается к твоему промежности, и с каждым движением на сибиане по твоему телу расходятся волны удовольствия, пока ты одновременно ласкаешь {npc.pussyStretch} {pussy} своего раба.")
 
 				if (RNG.chance(20)):
-					saynn("Your muffled moans grow louder, filling the air with the sweet sounds of your pleasure mixed with the wet slurping.")
+					saynn("Твои приглушенные стоны становятся громче, наполняя воздух сладкими звуками твоего наслаждения, смешанными с влажным хлюпаньем.")
 
 				elif (RNG.chance(20)):
-					saynn("Your body can't keep itself from squirming, every movement driving you closer and closer..")
+					saynn("Твое тело не может унять дрожь и ерзанье, каждое движение приближает тебя всё ближе и ближе к пределу...")
 
 				if (pcArousal > 0.8):
 					if (RNG.chance(33)):
-						saynn("Your body trembles with anticipation, the orgasm getting closer and closer. The pussy that you're licking feels like it's close too..")
+						saynn("Твое тело дрожит от предвкушения, оргазм становится всё ближе и ближе. Киска, которую ты лижешь, кажется, тоже на пределе...")
 
 					elif (RNG.chance(33)):
-						saynn("You can feel the tension building within you as you approach the point of no return. Just like the pussy folds that your lips are pressed against..")
+						saynn("Ты чувствуешь, как внутри нарастает напряжение по мере приближения к точке невозврата. Прямо как складки киски, к которым прижаты твои губы...")
 
 					else:
-						saynn("Your muscles tense with anticipation, every nerve in your body on fire as you feel yourself on the brink of release. The pussy is twitching wildly from your licks.")
+						saynn("Твои мышцы напряжены от предвкушения, каждый нерв в теле горит, когда ты чувствуешь, что находишься на грани разрядки. Киска дико подергивается от твоих языков.")
 
 		if (pcArousal >= 1.0):
-			saynn("You're about to cum..")
+			saynn("Ты сейчас кончишь...")
 
-			addButton("Cum!", "Time to cum", "do_cum")
+			addButton("Кончай!", "Пора кончать", "do_cum")
 		else:
-			addButton("Continue", "See what happens next", "do_next_loop")
+			addButton("Продолжить", "Смотреть, что будет дальше", "do_next_loop")
 	if(state == "do_cum"):
 		if (rideMode == ""):
 			playAnimation(StageScene.Sybian, "ride", {pc="pc", pcCum=true, bodyState={naked=true, hard=true}})
 		elif (rideMode == "hump"):
 			playAnimation(StageScene.Sybian, "hump", {pc="pc", pcCum=true, bodyState={naked=true, hard=true}})
 		if (GM.pc.hasReachableVagina()):
-			saynn("Your entire body trembles with the force of your climax, your pussy and ass spasming around the dildos as you succumb to the overwhelming waves of pleasure crashing over you.")
+			saynn("Все твое тело дрожит от силы оргазма, твоя киска и задница спазмируют вокруг дилдо, пока ты поддаешься сокрушительным волнам нахлынувшего удовольствия.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your entire body trembles with the force of your climax, your ass spasming around the dildo, your taint twitching as you succumb to the overwhelming waves of pleasure crashing over you.")
+			saynn("Все твое тело дрожит от силы оргазма, задница спазмирует вокруг дилдо, а промежность подергивается, пока ты поддаешься сокрушительным волнам нахлынувшего удовольствия.")
 
 		if (rideMode == "suck"):
 			playAnimation(StageScene.SybianOral, "blowjob", {pc="pc", pcCum=true, npc=npcID, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true, hard=true}})
-			saynn("The taste of your slave's hot, thick {npc.cum} fills your mouth as you swallow eagerly, the sensation sending sparks of pleasure shooting through your body.")
+			saynn("Вкус горячих, густых {npc.cum} твоего раба наполняет твой рот, пока ты жадно глотаешь, и это ощущение посылает искры удовольствия по всему твоему телу.")
 
 		elif (rideMode == "lick"):
 			playAnimation(StageScene.SybianOral, "lick", {pc="pc", pcCum=true, npc=npcID, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true, hard=true}})
-			saynn("Your slave's pussy gushes with sweet nectar, her juices coating your face as you eagerly lap at her dripping cunt, lost in the intoxicating taste of her arousal.")
+			saynn("Киска твоей рабыни извергает сладкий нектар; её соки обволакивают твоё лицо, пока ты жадно слизываешь влагу из её сочащейся щели, теряясь в пьянящем вкусе её возбуждения.")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your locked up cock is throbbing while shooting {pc.cum} through the hole in the little chastity cage, your prostate being milked hard!")
+			saynn("Твой запертый член пульсирует, выстреливая {pc.cum} сквозь отверстие в маленькой девственной клетке, пока твою простату нещадно доят!")
 
 		elif (GM.pc.hasReachablePenis() && GM.pc.getWornCondom() != null):
-			saynn("Your {pc.penis} is throbbing while shooting {pc.cum} into the condom, filling it fast as your prostate is being milked hard!")
+			saynn("Твой {pc.penis} пульсирует, выстреливая {pc.cum} в презерватив, который быстро наполняется, пока твою простату нещадно доят!")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your {pc.penis} is throbbing while shooting strings of {pc.cum}, leaving quite a mess on the floor, your prostate being milked hard!")
+			saynn("Твой {pc.penis} пульсирует, выстреливая струями {pc.cum} и оставляя после себя настоящий беспорядок на полу, пока твою простату нещадно доят!")
 
-		saynn("You're left heavily panting after that great orgasm.")
+		saynn("После этого мощного оргазма ты остаешься тяжело дышащим.")
 
-		addButton("Continue", "See what happens next", "endthescene_recovercondom")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_recovercondom")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

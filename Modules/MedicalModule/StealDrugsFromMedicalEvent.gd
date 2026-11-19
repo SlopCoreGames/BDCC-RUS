@@ -8,9 +8,9 @@ func registerTriggers(es):
 	
 func run(_triggerID, _args):
 	if(getFlag("MedicalModule.Medical_StoleDrugsToday")):
-		addDisabledButton("Search", "You already stole drugs here today")
+		addDisabledButton("Искать", "Ты уже воровал здесь лекарства сегодня")
 	else:
-		saynn("There are some drugs you can steal here.")
+		saynn("Здесь можно украсть немного лекарств.")
 		
 		addButtonUnlessLate("Search", "Look around for things to steal", "stealdrugs")
 

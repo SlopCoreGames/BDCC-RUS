@@ -8,171 +8,171 @@ func _run():
 		addCharacter("eliza")
 		
 	if(state == ""):
-		saynn("Eliza walks into your cell and crouches before you. She holds a leash in her hand, her second one holds you by the chin. She seems to be quite excited.")
+		saynn("Элиза заходит в твою камеру и опускается перед тобой на корточки. В одной руке у неё поводок, другой она приподнимает твой подбородок. Кажется, она в предвкушении.")
 
-		saynn("[say=eliza]Ready to be a test subject?[/say]")
+		saynn("[say=eliza]Готов стать подопытным?[/say]")
 
 		# (if normal behaviour)
 		if(getModuleFlag("MedicalModule", "Mental_PCBehavior", 0.0) > 0.5):
-			saynn("[say=pc]Maybe.[/say]")
+			saynn("[say=pc]Возможно.[/say]")
 
-			saynn("[say=eliza]It’s gonna be fun, don’t worry.[/say]")
+			saynn("[say=eliza]Будет весело, не переживай.[/say]")
 
 		# (if low behaviour)
 		else:
-			saynn("[say=pc]Like I have a choice.[/say]")
+			saynn("[say=pc]Как будто у меня есть выбор.[/say]")
 
-			saynn("[say=eliza]Awww. Grumpy because you’re so lonely? Let’s fix that.[/say]")
+			saynn("[say=eliza]О-о-о. Ворчишь, потому что тебе одиноко? Давай это исправим.[/say]")
 
-		saynn("She clips a leash to your collar and tugs you out of your cell. You hastily get up and follow.")
+		saynn("Она пристегивает поводок к твоему ошейнику и тянет тебя из камеры. Ты поспешно встаешь и следуешь за ней.")
 
-		addButton("Follow", "See where she brings you", "follow")
+		addButton("Следовать", "Посмотреть, куда она тебя приведет", "follow")
 
 	if(state == "follow"):
 		aimCamera("med_researchlab")
 		setLocationName("Research lab")
 		
-		saynn("You follow Eliza through some long bright corridors until she brings you into some laboratory, you notice that one of the signs says ‘Bio Incubator’. You see two doors, one of them is a reinforced double-airlock.")
+		saynn("Ты идешь за Элизой по длинным ярко освещенным коридорам, пока она не приводит тебя в лабораторию; ты замечаешь табличку с надписью «Биоинкубатор». Перед тобой две двери, одна из них — усиленный двойной шлюз.")
 
-		saynn("Eliza catches your concerned gaze.")
+		saynn("Элиза ловит твой обеспокоенный взгляд.")
 
-		saynn("[say=eliza]Space is very huge as you probably know. We managed to capture a very unique specimen, we think it traveled to us from another galaxy, we’re speaking million light years away. This is a great opportunity for all of us.[/say]")
+		saynn("[say=eliza]Космос огромен, ты и сам наверняка знаешь. Нам удалось поймать уникальный экземпляр; мы полагаем, он прибыл к нам из другой галактики, в миллионах световых лет отсюда. Это великий шанс для всех нас.[/say]")
 
-		saynn("Your gaze becomes even more concerned, you start looking for an exit to escape through but Eliza still holds your leash.")
+		saynn("Твой взгляд становится еще более тревожным; ты начинаешь искать выход, чтобы сбежать, но Элиза всё еще крепко держит твой поводок.")
 
-		saynn("[say=pc]And what do you want me to do?[/say]")
+		saynn("[say=pc]И что ты хочешь, чтобы я сделал?[/say]")
 
-		saynn("[say=eliza]Your job is simple, just try to establish communication with it. We’re unaware of its abilities but so far it doesn’t seem to be hostile towards anyone.[/say]")
+		saynn("[say=eliza]Твоя задача проста: попытайся наладить с ним контакт. Мы пока не знаем его способностей, но пока что оно вроде как не проявляет агрессии к окружающим.[/say]")
 
-		saynn("She walks you towards the airlocks. The task doesn’t seem too hard. She unleashes you and invites you to step into the testing chamber.")
+		saynn("Она ведет тебя к шлюзу. Задача не кажется слишком сложной. Она выпускает тебя и приглашает войти в испытательную камеру.")
 
-		saynn("[say=eliza]I’m gonna be watching from behind a glass, ready to terminate the experiment if anything goes wrong.[/say]")
+		saynn("[say=eliza]Я буду наблюдать через стекло, готовая прервать эксперимент, если что-то пойдет не так.[/say]")
 
-		saynn("[say=pc]What about the straitjacket?[/say]")
+		saynn("[say=pc]А как же смирительная рубашка?[/say]")
 
-		saynn("[say=eliza]We can’t let you hurt it, you will be fine.[/say]")
+		saynn("[say=eliza]Мы не можем позволить тебе навредить ему, так что всё будет в порядке.[/say]")
 
-		saynn("Great.")
+		saynn("Отлично.")
 
-		addButton("Step in", "See what’s up", "step_in")
+		addButton("Войти", "Посмотреть, что к чему", "step_in")
 
 	if(state == "step_in"):
 		addCharacter("latexParasite")
 		
-		saynn("The airlock closes behind you. White room. No furniture, there is only a big reinforced window. You look around and can’t see anyone, just Eliza behind the glass, taking notes.")
+		saynn("Шлюз за твоей спиной закрывается. Белая комната. Никакой мебели, только огромное армированное окно. Ты оглядываешься по сторонам и никого не видишь, кроме Элизы за стеклом, которая делает записи.")
 
-		saynn("Strange.")
+		saynn("Странно.")
 
-		saynn("Suddenly the shadow on the floor moves slightly. You realize that it’s not actually a shadow, it’s.. something alive. It looks like.. a pile of black goo. Its surface seems very shiny and smooth, almost reflective.")
+		saynn("Внезапно тень на полу слегка шевелится. Ты понимаешь, что это вовсе не тень, а... что-то живое. Оно похоже на... кучу черной жижи. Его поверхность кажется очень блестящей и гладкой, почти зеркальной.")
 
-		saynn("[say=pc]Umm..[/say]")
+		saynn("[say=pc]Ммм...[/say]")
 
-		saynn("It seems to have noticed you and started slowly oozing towards you..")
+		saynn("Кажется, оно заметило тебя и начало медленно подтекать в твою сторону...")
 
-		saynn("You keep stepping away and quickly get yourself into a corner. It gets closer and closer, it’s in your reach now.")
+		saynn("Ты продолжаешь пятиться и в итоге забиваешься в угол. Оно подбирается всё ближе и ближе, и вот оно уже на расстоянии вытянутой руки.")
 
-		saynn("[say=eliza]Don’t be afraid, everything is under control.[/say]")
+		saynn("[say=eliza]Не бойся, всё под контролем.[/say]")
 
-		saynn("Easy for her to say. The dark slimy goo touches your leg. It feels kinda firm, you can feel it starting to envelope around your feet.")
+		saynn("Ей легко говорить. Темная склизкая жижа касается твоей ноги. На ощупь она довольно плотная; ты чувствуешь, как она начинает обволакивать твои стопы.")
 
-		addButton("Resist", "Try and free yourself", "resist")
+		addButton("Сопротивляться", "Попытаться освободиться", "resist")
 
 	if(state == "resist"):
 		playAnimation(StageScene.TentaclesSex, "tease", {bodyState={naked=true, hard=true}})
 		
-		saynn("You try to pull your leg away but the goo doesn’t let you, it keeps your foot still. Oh no. The more you do it, the more you get stuck in it, the black goo starts climbing your legs, coating them with a thick layer of black rubber-like material. Fascinated Eliza watches the process carefully.")
+		saynn("Ты пытаешься выдернуть ногу, но жижа не дает тебе этого сделать, намертво фиксируя стопу. О нет. Чем больше ты дергаешься, тем сильнее застреваешь в ней. Черная жижа начинает ползти вверх по ногам, покрывая их толстым слоем черного, похожего на резину материала. Завороженная Элиза внимательно наблюдает за процессом.")
 
-		saynn("[say=pc]Maybe it’s time to stop?.. I can’t move.[/say]")
+		saynn("[say=pc]Может, пора остановиться?.. Я не могу пошевелиться.[/say]")
 
-		saynn("[say=eliza]I didn’t tell you but it seems to be attracted to our bodily fluids. You know, sweat, saliva, cum. We think it’s some kind of parasite. So far you’re not under any danger, we will continue as far as possible.[/say]")
+		saynn("[say=eliza]Я тебе не говорил, но, похоже, его привлекают наши телесные жидкости. Ну, знаешь, пот, слюна, конча. Мы думаем, что это какой-то паразит. Пока что тебе ничего не угрожает, так что будем продолжать столько, сколько сможем.[/say]")
 
-		saynn("It reaches your knees level and keeps going, you try to free your legs again but can’t even wiggle a toe. The goo starts enveloping around your thighs, it feels warm and completely follows your curves. You can’t close your legs, the goo spreads them apart when you try, it clearly moves towards your crotch. You press yourself into the corner.")
+		saynn("Жижа достигает уровня твоих колен и продолжает ползти вверх; ты снова пытаешься освободить ноги, но не можешь пошевелить даже пальцем. Липкая масса начинает обволакивать твои бедра, она теплая и идеально повторяет каждый изгиб твоего тела. Ты не можешь свести ноги — стоит тебе попытаться, как жижа раздвигает их, явно направляясь к твоей промежности. Ты вжимаешься в угол.")
 
-		saynn("[say=pc]Oh no..[/say]")
+		saynn("[say=pc]О нет...[/say]")
 
-		saynn("A few little black goo-tentacles form, they travel up your legs, one of them slides under your chastity belt and finds your {pc.analStretch} backdoor. It starts prodding it, seeing how easy your anal ring would give in. All the while you can’t even grab it, you’re forced to endure its onslaught on your tailhole. It slowly applies more and more pressure, stretching you out.")
+		saynn("Формируется несколько маленьких черных щупалец из жижи; они ползут вверх по твоим ногам, и одно из них проскальзывает под твой пояс целомудрия, находя твой {pc.analStretch} задний проход. Оно начинает тыкаться в него, проверяя, насколько легко сдастся твое анальное кольцо. Всё это время ты даже не можешь схватить его — тебе остается лишь терпеть этот натиск на свою дырочку. Оно медленно наращивает давление, растягивая тебя.")
 
 		# (if has vagina)
 		if(GM.pc.hasVagina()):
-			saynn("Another alien tentacle reaches your pussy, its pointy tip catches your sensitive clit and starts rubbing it. You can’t help but to bite your lip and let out a little moan, it feels as if a silicon dildo suddenly gained consciousness. You feel yourself becoming more wet, your slit attracts the alien even more, its tentacles trace across your petals and then spread them open. Your {pc.pussyStretch} pussy is exposed and you can’t do anything about it..")
+			saynn("Еще одно инопланетное щупальце достигает твоей киски; его заостренный кончик подцепляет чувствительный клитор и начинает тереться о него. Ты невольно прикусываешь губу и издаешь тихий стон — кажется, будто силиконовый дилдо внезапно обрел сознание. Ты чувствуешь, как становишься всё влажнее; твоя щелочка манит пришельца еще сильнее, его щупальца скользят по твоим лепесткам, а затем раздвигают их. Твоя {pc.pussyStretch} киска полностью обнажена, и ты ничего не можешь с этим поделать...")
 
 		# (if has cock)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("A single tentacle slips under your chastity and has wrapped around your half-erect member. It begins to slide along the length of your {pc.cock}, it’s stroking you hard. You let out a soft moan as a drop of your precum already shines on the tip of your cock. Another tentacle quickly catches that and seemingly just absorbs it. Your cock quickly becomes rock hard, putting a lot of pressure onto your poor cage.")
+			saynn("Одинокий щупалец проскальзывает под твою девственность и обвивает полуэрегированный член. Он начинает скользить вдоль всей длины твоего {pc.cock}, с силой поглаживая тебя. Ты издаешь тихий стон, когда капля предэякулята уже блестит на кончике твоего члена. Еще одно щупальце быстро подхватывает её и, кажется, просто впитывает. Твой член мгновенно становится твердым как камень, создавая сильное давление на твою бедную клетку.")
 		elif(GM.pc.hasPenis()):
-			saynn("A single tentacle has wrapped around your half-erect member. It begins to slide along the length of your {pc.cock}, it’s stroking you hard. You let out a soft moan as a drop of your precum already shines on the tip of your cock. Another tentacle quickly catches that and seemingly just absorbs it. Your cock quickly becomes rock hard")
+			saynn("Одинокое щупальце обвило твой полуэрегированный член. Оно начинает скользить вдоль всей длины твоего {pc.cock}, с силой поглаживая тебя. Ты издаешь тихий стон, когда капля предэякулята уже блестит на кончике твоего члена. Еще одно щупальце быстро подхватывает её и, кажется, просто впитывает. Твой член быстро становится твердым как камень")
 
-		saynn("You catch a glimpse of Eliza’s face, she is blushing. And you feel like you can’t resist at all anymore..")
+		saynn("Ты мельком видишь лицо Элизы — она вся покраснела. И ты чувствуешь, что больше совсем не можешь сопротивляться...")
 
-		addButton("Give in", "Maybe it will let you go sooner if you don’t resist..", "give_in")
+		addButton("Сдаться", "Может быть, оно отпустит тебя быстрее, если ты перестанешь сопротивляться...", "give_in")
 
 	if(state == "give_in"):
 		playAnimation(StageScene.TentaclesSex, "sex", {bodyState={naked=true, hard=true}})
 		
-		saynn("While the tentacles explore you, the latex-y goo continues to envelop more and more of your body. You feel like you can’t stand anymore, you relax and try to fall but the parasite catches you and gently places you down on your knees.")
+		saynn("Пока щупальца исследуют тебя, латексная жижа продолжает окутывать всё больше и больше твоего тела. Ты чувствуешь, что больше не можешь стоять; ты расслабляешься и пытаешься упасть, но паразит подхватывает тебя и мягко опускает на колени.")
 
-		saynn("You sense that the alien parasite started doing something strange, you look behind and see that the goo seems to shape some of it into a pair of black latex cuffs that it locks around ankles. Then they get connected by some more of that goo that quickly turns into a sturdy spreader bar that forces your legs open.")
+		saynn("Ты чувствуешь, что инопланетный паразит начал делать что-то странное. Оглянувшись, ты видишь, что жижа принимает форму черных латексных манжет, которые защелкиваются на твоих лодыжках. Затем они соединяются порцией этой же жижи, которая быстро превращается в прочную распорку, насильно разводящую твои ноги в стороны.")
 
-		saynn("One tentacle manages to slip down your rear. You let out a moan as it stretches your anal ring enough and has now began exploring you from the inside. It feels so strange, you can’t control a thing, you’re just left at the mercy of this alien. But it also feels very good, the tentacle shifts inside you so much..")
+		saynn("Один из щупалец умудряется проскользнуть тебе в задницу. Ты издаешь стон, когда оно растягивает твое анусальное кольцо и начинает исследовать тебя изнутри. Ощущения настолько странные, что ты теряешь контроль над собой, оставаясь во власти этого пришельца. Но в то же время это чертовски приятно — щупальце так активно шевелится внутри тебя...")
 
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("Your pussy is being violated too, another tentacle has found your pussy entering and began prodding at it. It doesn’t take much, you’re so wet that the tentacle manages to slip in with ease and then stretches you out more by becoming fatter. It fills you so well, you look down and see a little bump on your abdomen as the tentacle moves inside you and absorbs your female juices. A second one joines and attached itself to your clit, this one seems to be focused on suction.")
+			saynn("Твою киску тоже насилуют: еще одно щупальце нашло вход и начало прощупывать его. Тебе не нужно особо стараться — ты настолько влажная, что щупальце с легкостью проскальзывает внутрь, а затем растягивает тебя еще сильнее, раздуваясь в объеме. Оно заполняет тебя так плотно, что, когда ты смотришь вниз, то видишь небольшую выпуклость на животе — это щупальце движется внутри тебя, впитывая твою смазку. К нему присоединяется второе, присосавшись к твоему клитору; кажется, это второе сосредоточено именно на сосании.")
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
-			saynn("The tentacle around your cock keeps milking you for your precum, its stroking slowly becomes faster. Another few tentacles reach your ballsack and give it a little squeeze, they wrap around your balls and start kneading them, it feels like nothing you ever experienced.")
+			saynn("Щупальце, обвившее твой член, продолжает выжимать из тебя предэякулят, и его медленные поглаживания становятся всё быстрее. Еще несколько щупалец достигают твоего мошонки и слегка сжимают её; они обволакивают яички и начинают их разминать — это чувство не похоже ни на что, испытанное тобой ранее.")
 
-		saynn("[say=pc]It’s too much..[/say]")
+		saynn("[say=pc]Это слишком..[/say]")
 
-		saynn("Science can’t exist without brave test subjects like you, the goo has covered your whole lower part of the body with a latex-like layer at this point. Your toes, ankles, knees, thighs, it even covered your privates and went down your butt. Latex cuffs prevent you from shutting your legs while quite a few tentacles continue to fuck you, milking you and seemingly becoming stronger by doing so.")
+		saynn("Наука не могла бы существовать без таких смелых подопытных, как ты. К этому моменту слизь покрыла всю твою нижнюю часть тела слоем, напоминающим латекс. Твои пальцы ног, щиколотки, колени, бедра — она покрыла даже твои интимные места и ушла вниз к ягодицам. Латексные манжеты не дают тебе свести ноги, пока множество щупалец продолжают трахать тебя, выжимать из тебя всё до капли и, кажется, становятся от этого только сильнее.")
 
-		addButton("Continue", "See what happens next..", "continue")
+		addButton("Продолжить", "Смотри, что будет дальше...", "continue")
 
 	if(state == "continue"):
-		saynn("The tentacles become so strong they can seemingly support your whole body, they wrap around your belly and raise you above the floor with some holding your legs. Now you feel truly helpless, letting out little moans as it milks you. The black goo spreads to your straitjacket too, it engulves it, turning it completely black. It goes up to your {pc.breasts}, little thin tentacles latch onto your nips and begin tugging on them, trying to stimulate. You can’t stop moaning..")
+		saynn("Щупальца становятся настолько сильными, что, кажется, способны выдержать весь вес твоего тела; они обвивают живот и приподнимают тебя над полом, при этом некоторые обхватывают твои ноги. Теперь ты чувствуешь себя по-настоящему беспомощной, издавая тихие стоны, пока паразит доит тебя. Черная жижа расползается и по смирительной рубашке, поглощая её и окрашивая полностью в черный цвет. Она поднимается к твоим {pc.breasts}, тонкие маленькие щупальца впиваются в соски и начинают тянуть их, пытаясь стимулировать. Ты не можешь перестать стонать...")
 
 		# (if lactating)
 		if(GM.pc.canBeMilked()):
-			saynn("It only takes a few seconds before your breasts start to lactate, squirting with {pc.milk}. The tentacles form pump-like tips and attach themselves to your nipples. Then they start working on your breasts, sucking and doing strong pump motions until eventually creating a stable flow of your {pc.milk}. It all gets absorbed by the parasite, giving it more energy.")
+			saynn("Проходит всего несколько секунд, прежде чем твоя грудь начинает лактировать, брызгая {pc.milk}. Щупальца формируют кончики, похожие на насосы, и присасываются к твоим соскам. Затем они принимаются за твою грудь, сосать и совершать мощные качающие движения, пока, наконец, не создают стабильный поток твоих {pc.milk}. Всё это поглощается паразитом, давая ему еще больше энергии.")
 
-		saynn("The goo coats you up to the neck, it does the same thing with your collar as it did with your straitjacket, covering it in black latex. You notice one of the tentacles going up to your mouth, you stick your tongue out and give it a lick, it tastes like rubber. But it doesn’t stop there, you see the tip of the tentacle being formed into something phallic, it looks like a plug. The tentacle forces that plug into your mouth, it feels rubbery, you can’t bite on it even if you wanted, all you can do now is make muffled moans while it stretches your throat. From the back of the plug form two black straps that wrap around your head and connect behind it, finishing a gag. That tentacle then moves slightly up and produces a blindfold of the same design and wraps it around your eyes, completely stealing your sight. Last thing you saw was Eliza sneakily touching herself between her legs.")
+		saynn("Слизь покрывает тебя до самого горла; она делает с твоим ошейником то же самое, что и со смирительной рубашкой, обволакивая его черным латексом. Ты замечаешь, как один из щупалец тянется к твоему рту; ты высовываешь язык и слизываешь его — на вкус он как резина. Но на этом всё не заканчивается: ты видишь, как кончик щупальца принимает фаллическую форму, становясь похожим на пробку. Щупальце с силой вталкивает эту пробку тебе в рот; она кажется резиновой, и ты не можешь её укусить, даже если очень захочешь. Всё, что тебе остается — это издавать приглушенные стоны, пока она растягивает твое горло. От задней части пробки отделяются две черные полосы, которые обвивают голову и смыкаются сзади, превращаясь в кляп. Затем щупальце слегка приподнимается и формирует повязку на глаза в том же стиле, плотно закрывая их и полностью лишая тебя зрения. Последнее, что ты видел — это как Элиза украдкой ласкает себя между ног.")
 
-		addButton("Isolation", "And pleasure", "isolation")
+		addButton("Изоляция", "И наслаждение", "isolation")
 
 	if(state == "isolation"):
 		playAnimation(StageScene.TentaclesSex, "fast", {pcCum=true, bodyState={naked=true, hard=true}})
 		
-		saynn("Even blindfolded and gagged, you have enough to worry about, the tentacle in your butt had began thrusting in and out at a steady pace, fucking you! Your {pc.analStretch} anus doesn’t even close fast enough before it’s stuffed again. Then a second tentacle joins, they begin pounding your butt interchangeably, stretching you out so much.")
+		saynn("Даже с повязкой на глазах и кляпом во рту, у тебя хватает забот: щупальце в твоей заднице начало ритмично входить и выходить, трахая тебя! Твой {pc.analStretch} анус не успевает даже сомкнуться, как его снова набивают до отказа. Затем подключается второе щупальце, и они начинают по очереди долбить в твою задницу, растягивая тебя до предела.")
 
 		# (if vagina)
 		if(GM.pc.hasVagina()):
-			saynn("The tentacle in your pussy has found your sweet spot, the spot that made your arch your back and moan from pleasure. It began hammering at it, shifting the fat part in and out your cunt, fucking you like that. You feel like you won’t endure it for long, waves of ecstatic pleasure overwhelm your body. You can’t stop cumming, your poor stuffed pussy keeps squirting juices and that only makes the onslaught stronger, the parasite manages to slip another tentacle inside you and past your cervix! It’s fucking your womb and it feels unbelievable.")
+			saynn("Щупальце в твоей киске нащупало ту самую точку — ту, от которой ты выгибаешься дугой и стонешь от наслаждения. Оно начало неистово долбить в неё, двигая жирным концом туда-сюда в твоей щели, трахая тебя напролёт. Кажется, ты долго так не выдержишь: волны экстатического удовольствия захлестывают тело. Ты не можешь перестать кончать; твоя бедняжка, набитая под завязку, продолжает извергать соки, и это лишь усиливает натиск — паразиту удается просунуть еще одно щупальце внутрь, миновав шейку матки! Он трахает твою матку, и это чувство просто невероятно.")
 
 		# (if dick)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("One of the tentacles transforms its tip into a fleshlight and tries to engulf your {pc.cock} with it! You don’t get any direct stimulation but the feeling of your cage being pulled and pushed back and forth feels amazing. It doesn’t take much time before you cum, muffled moans escape from your gagged mouth as your throbbing cock stuffs that fleshlight full of {pc.cum}. It doesn’t stop there, the tentacle in your butt finds your prostate and focuses on it, roughly pounding it. That causes a huge spike of pleasure, your cock shoots {pc.cum} again and again, stuffing that fleshlight to the brim until your balls are completely drained.")
+			saynn("Одно из щупалец превращает свой кончик в плотный фаллоимитатор и пытается поглотить им твой {pc.cock}! Прямой стимуляции нет, но ощущение того, как твою клетку тянут и толкают вперед-назад, просто сводит с ума. Не проходит и пары минут, как ты кончаешь; приглушенные стоны вырываются из твоего кляпа, пока твой пульсирующий член набивает этот фаллоимитатор {pc.cum}. Но на этом всё не заканчивается: щупальце в твоей заднице находит простату и сосредотачивается на ней, грубо вколачиваясь в неё. Это вызывает мощнейший всплеск удовольствия, твой член раз за разом выпускает {pc.cum}, наполняя фаллоимитатор до самых краев, пока твои яйца не опустеют полностью.")
 		elif(GM.pc.hasPenis()):
-			saynn("One of the tentacles transforms its tip into a fleshlight and engulfs your {pc.cock} with it! It feels amazing, the texture on the inside is bumpy and it’s so tight, the fleshlight then gets moved back and forth along your cock, letting you fuck it. It doesn’t take much time before you cum, muffled moans escape from your gagged mouth as your throbbing cock stuffs that fleshlight full of {pc.cum}. It doesn’t stop there, the tentacle in your butt finds your prostate and focuses on it, roughly pounding it. That causes a huge spike of pleasure, your cock shoots {pc.cum} again and again, stuffing that fleshlight to the brim until your balls are completely drained.")
+			saynn("Один из щупалец превращает свой кончик в фаллоимитатор и заглатывает твой {pc.cock}! Ощущения просто невероятные: внутри всё бугристое и такое узкое; этот фаллоимитатор начинает двигаться вперед-назад по твоему члену, позволяя тебе трахать его. Вскоре ты уже не можешь сдерживаться, и из твоего кляпнутого рта вырываются приглушенные стоны, пока твой пульсирующий член наполняет этот фаллоимитатор {pc.cum}. Но на этом всё не заканчивается: щупальце в твоей заднице находит простату и начинает яростно долбить прямо в неё. Это вызывает мощнейший всплеск удовольствия, твой член выпускает {pc.cum} снова и снова, заполняя фаллоимитатор до самых краев, пока твои яички не опустеют полностью.")
 
-		saynn("It feels so good, you can’t stop cumming, your mind slowly slips into obscurity, drowning in a sea of pleasure. As the tentacles milk you more they only get stronger, their onslaught on your holes increases, the plug in your mouth increases in size, it starts stretching and fucking your throat. You’re completely helpless, being held above the floor with your legs spread open. It feels like something will happen any second, something big.")
+		saynn("Это так приятно, что ты не можешь перестать кончать; твой разум медленно уплывает в небытие, утопая в море наслаждения. Чем больше щупальца доят тебя, тем сильнее они становятся, их натиск на твои отверстия усиливается, а пробка во рту разбухает, начиная растягивать и трахать твое горло. Ты совершенно беспомощен, подвешенный над полом с широко разведенными ногами. Кажется, что в любую секунду должно произойти что-то грандиозное.")
 
-		addButton("Let it happen", "Ride it to the end..", "let_it_happen")
+		addButton("Пусть всё идет своим чередом", "Доезжай до самого конца...", "let_it_happen")
 
 	if(state == "let_it_happen"):
 		playAnimation(StageScene.TentaclesSex, "inside", {cum=true, pcCum=true, bodyState={naked=true, hard=true}})
 		
-		saynn("Suddenly your holes are being stuffed with black liquid goo! All the tentacles increase in size, they keep pounding you while cumming inside. Cumming so much that your belly quickly becomes cuminflated, the one in your throat sends goo directly to your belly, quickly filling it. The ones in your butt do the same, stuffing your butt to the brim.")
+		saynn("Внезапно твои дырочки забивает черной жидкой слизью! Все щупальца увеличиваются в размерах, они продолжают долбить тебя, кончая внутрь. Ты кончаешь так много, что твой живот быстро раздувается; то, что во рту, гонит слизь прямиком в желудок, быстро наполняя его. Те, что в заднице, делают то же самое, забивая твой анус до краев.")
 
 		# (if pussy)
 		if(GM.pc.hasVagina()):
-			saynn("Your pussy did not escape it too, the tentacle in your womb explodes with so much goo that it quickly overflows and already starts leaking, painting your inner walls black too.")
+			saynn("Твоя киска тоже не избежала этого: щупальце в твоей утробе взрывается таким количеством слизи, что та быстро переполняет всё внутри и начинает сочиться наружу, окрашивая твои внутренние стенки в черный цвет.")
 
-		saynn("You arch your back and squirm desperately, you can’t stop cumming even now, when the latex parasite is cumming inside you. Muffled moans of pleasure is all you can make through that gag, you can’t even see how you look, you can’t see anything.")
+		saynn("Ты выгибаешь спину и отчаянно извиваешься; ты не можешь перестать кончать даже сейчас, когда латексный паразит кончает внутри тебя. Сквозь кляп вырываются лишь приглушенные стоны наслаждения; ты даже не видишь, как выглядишь, ты вообще ничего не видишь.")
 
-		saynn("The tentacles stop moving. They withdraw out of you, causing a strong flow of that goo out of your holes. You feel that they gently place you on the floor and leave you alone. Seems like the parasite is satisfied. And so are you, you feel so used, so tired..")
+		saynn("Щупальца замирают. Они выходят из тебя, вызывая мощный поток этой слизи из твоих отверстий. Ты чувствуешь, как они осторожно опускают тебя на пол и оставляют одну. Похоже, паразит удовлетворен. Как и ты — ты чувствуешь себя такой использованной, такой уставшей...")
 
-		addButton("Take a nap", "A simple nap always helps", "take_a_nap")
+		addButton("Вздремнуть", "Простой сон всегда помогает", "take_a_nap")
 
 	if(state == "take_a_nap"):
 		aimCamera("medical_paddedcell_player")
@@ -180,21 +180,21 @@ func _run():
 		playAnimation(StageScene.Solo, "kneel")
 		setLocationName("Padded cell")
 		
-		saynn("You wake up somewhere else. You can hear Eliza as she grabs your blindfold and carefully removes it. Then she does the same for the gag. You squint from the bright light and cough out more of that black goo. Eliza giggles. You’re in your padded cell. The doctor continues to take off the restraints that the parasite has produced. Then she grabs a scalpel and carefully splits open the latex suit that’s on you and then takes it off you.")
+		saynn("Ты просыпаешься в другом месте. Ты слышишь Элизу: она берет твою повязку на глазах и осторожно снимает её. Затем она делает то же самое с кляпом. Ты щуришься от яркого света и выкашливаешь порцию черной слизи. Элиза хихикает. Ты в своей мягкой камере. Доктор продолжает снимать путы, созданные паразитом. Затем она берет скальпель, аккуратно разрезает латексный костюм на тебе и снимает его.")
 
-		saynn("[say=eliza]Good job handling that one~, the material that was collected is incredibly rare. It’s durable, great to the touch and stretches to any body size without losing tightness. The only way to get it is to let the parasite milk you.[/say]")
+		saynn("[say=eliza]Отлично справилась~, собранный материал невероятно редок. Он прочный, приятный на ощупь и растягивается под любой размер тела, не теряя плотности. Единственный способ получить его — позволить паразиту подоить тебя.[/say]")
 
-		saynn("[say=pc]Mm-mhm..[/say]")
+		saynn("[say=pc]Мм-мхм..[/say]")
 
-		saynn("You’re still so tired and unable to stop leaking black goo.")
+		saynn("Ты всё еще очень устала, и черная слизь всё никак не перестает сочиться из тебя.")
 
-		saynn("[say=eliza]Have a good rest, test subject~[/say]")
+		saynn("[say=eliza]Хорошего отдыха, подопытный~[/say]")
 
-		saynn("Eliza leaves your cell, leaving you alone..")
+		saynn("Элиза выходит из камеры, оставляя тебя в одиночестве..")
 
 		# (scene ends)
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "follow"):

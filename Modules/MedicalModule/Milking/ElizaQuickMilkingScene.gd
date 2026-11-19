@@ -47,15 +47,15 @@ func _run():
 		addCharacter("eliza")
 		aimCameraAndSetLocName("med_milkingroom")
 		playAnimation(StageScene.Sybian, "intense", {pc="pc", chained=true, bodyState={naked=true, hard=true}})
-		saynn("You ask Eliza to be fully milked.. and you get your wish granted.")
+		saynn("Ты просишь Элизу доить тебя по полной... и твоё желание исполняется.")
 
-		saynn("Eliza sets you up on a sybian.."+str(" With a penis pump stroking your cock and a set of breasts pumps sucking away at your nips.." if (GM.pc.hasReachablePenis() && breastsMilked) else "")+""+str(" With a penis pump stroking your cock and a toy vibrating against your prostate.." if (GM.pc.hasReachablePenis() && !breastsMilked) else "")+""+str(" With a dildo vibrating against your prostate and a set of breast pumps sucking away at your nips.." if (GM.pc.isWearingChastityCage() && breastsMilked) else "")+""+str(" With a dildo vibrating against your prostate.." if (GM.pc.isWearingChastityCage() && !breastsMilked) else "")+""+str(" With a set of breast pumps sucking away at your nips.." if (!penisMilked && breastsMilked) else "")+"")
+		saynn("Элиза усаживает тебя на сибиан..."+str(" With a penis pump stroking your cock and a set of breasts pumps sucking away at your nips.." if (GM.pc.hasReachablePenis() && breastsMilked) else "")+""+str(" With a penis pump stroking your cock and a toy vibrating against your prostate.." if (GM.pc.hasReachablePenis() && !breastsMilked) else "")+""+str(" With a dildo vibrating against your prostate and a set of breast pumps sucking away at your nips.." if (GM.pc.isWearingChastityCage() && breastsMilked) else "")+""+str(" With a dildo vibrating against your prostate.." if (GM.pc.isWearingChastityCage() && !breastsMilked) else "")+""+str(" With a set of breast pumps sucking away at your nips.." if (!penisMilked && breastsMilked) else "")+"")
 
-		saynn("It doesn't take long for you to cum.."+str(" Your pussy gushing from overstimulation, your girlcum collected into the funnel beneath the grated platform.." if vaginaMilked else "")+""+str(" Your {pc.cum} shooting out of your chastity cage, your prostate pulsing.." if GM.pc.isWearingChastityCage() else "")+""+str(" Your throbbing cock filling the penis pump with many spurts of your {pc.cum}.." if GM.pc.hasReachablePenis() else "")+""+str(" Your breasts squirting with {pc.milk}.." if breastsMilked else "")+"")
+		saynn("Тебе не приходится долго ждать, чтобы кончить..."+str(" Your pussy gushing from overstimulation, your girlcum collected into the funnel beneath the grated platform.." if vaginaMilked else "")+""+str(" Your {pc.cum} shooting out of your chastity cage, your prostate pulsing.." if GM.pc.isWearingChastityCage() else "")+""+str(" Your throbbing cock filling the penis pump with many spurts of your {pc.cum}.." if GM.pc.hasReachablePenis() else "")+""+str(" Your breasts squirting with {pc.milk}.." if breastsMilked else "")+"")
 
-		saynn("After the process is done, Eliza brings you back into the lobby..")
+		saynn("Когда всё заканчивается, Элиза отводит тебя обратно в лобби...")
 
-		addButton("Continue", "See what happens next", "endthescene_removestuff")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_removestuff")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

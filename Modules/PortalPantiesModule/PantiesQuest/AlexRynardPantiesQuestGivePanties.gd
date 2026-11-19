@@ -13,42 +13,42 @@ func _run():
 
 		# (He gives you the panties to wear.)
 
-		saynn("You bring the panties that the foxy asked for. He takes them, quickly checks their size and quality.")
+		saynn("Ты приносишь трусики, которые просил этот лис. Он забирает их, быстро проверяя размер и качество.")
 
-		saynn("[say=alexrynard]Yeah, whatever, these will do. Let me prepare them.[/say]")
+		saynn("[say=alexrynard]Да ладно, сойдут. Дай мне их подготовить.[/say]")
 
-		saynn("He puts on a respirator mask and uses a spray paint can to paint them into purple. After that, he uses some kind of special heater that makes the paint dry up pretty much instantly, saving a lot of time.")
+		saynn("Он надевает респиратор и с помощью баллончика с краской перекрашивает их в фиолетовый цвет. После этого он использует какой-то особый нагреватель, который заставляет краску высыхать почти мгновенно, экономя кучу времени.")
 
-		saynn("[say=alexrynard]That way they will be more noticable.[/say]")
+		saynn("[say=alexrynard]Так они будут заметнее.[/say]")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "continue"):
-		saynn("After the panties are sprayed, he starts attaching a few of these disk-like devices directly to the cloth, placing a few in a row across the crotch region. They are quite thin, barrely adding to the thickness of the panties. Foxy then slots a blue crystal into each device, causing them to power on with a slight hum.")
+		saynn("После покраски он начинает крепить к ткани несколько дискообразных устройств, располагая их в ряд в области промежности. Они довольно тонкие и почти не увеличивают толщину трусиков. Затем Лис вставляет в каждое устройство синий кристалл, отчего они включаются с легким гулом.")
 
-		saynn("[say=alexrynard]Seems to work. Now put them on.[/say]")
+		saynn("[say=alexrynard]Вроде работает. Теперь надевай.[/say]")
 
-		saynn("Huh? You raise your brow as you are presented with the panties.")
+		saynn("А? Ты удивленно приподнимаешь бровь, когда тебе протягивают эти трусики.")
 
-		saynn("[say=alexrynard]What?[/say]")
+		saynn("[say=alexrynard]Что?[/say]")
 
-		addButton("Safe?", "Ask what will happen", "safe?")
-		addButton("Put them on", "See what happens", "put_them_on")
+		addButton("Безопасно?", "Спросить, что будет", "safe?")
+		addButton("Надеть их", "Посмотреть, что будет", "put_them_on")
 
 	if(state == "safe?"):
 		# (You ask if its safe)
 
 		# (Foxy asks if you want credits or not)
 
-		saynn("[say=pc]Are you sure it’s safe?[/say]")
+		saynn("[say=pc]Ты уверен, что это безопасно?[/say]")
 
-		saynn("Foxy gets visibly annoyed.")
+		saynn("Фокси заметно раздражается.")
 
-		saynn("[say=alexrynard]Do you want credits or not? Wanna go back to mining rocks?[/say]")
+		saynn("[say=alexrynard]Тебе кредиты нужны или нет? Или хочешь и дальше камни копать?[/say]")
 
-		saynn("He has a point. Might as well test them once.")
+		saynn("В его словах есть смысл. Стоит хотя бы один раз их протестировать.")
 
-		addButton("Put them on", "See what happens", "put_them_on")
+		addButton("Надеть их", "Посмотреть, что будет", "put_them_on")
 
 	if(state == "put_them_on"):
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard", 
@@ -65,93 +65,93 @@ func _run():
 
 		# (The guy says he will keep the fleshlights. You wonder if anyone will have access to them. He says there might be some testing done, nothing too much.)
 
-		saynn("[say=pc]You gonna look?[/say]")
+		saynn("[say=pc]Будешь смотреть?[/say]")
 
-		saynn("[say=alexrynard]You’re holding millions of credits in your hands, of course I’m gonna look.[/say]")
+		saynn("[say=alexrynard]Ты держишь в руках миллионы кредитов, так что, конечно, я буду смотреть![/say]")
 
-		saynn("He might be right but it still makes you frown. Whatever.")
+		saynn("Возможно, он и прав, но всё равно на душе становится не по себе. Ну и ладно.")
 
 		# (if masculine)
 		if(GM.pc.getFemininity() <= 40):
-			saynn("You grab the panties and start putting them on. They don’t really fit your masculine look but they seem to be stretchy enough.")
+			saynn("Ты хватаешь трусики и начинаешь их натягивать. Они не особо вяжутся с твоим маскулинным образом, но вроде тянутся достаточно хорошо.")
 
 		# (if else)
 		else:
-			saynn("You grab the panties and start putting them on. The material seems quite stretchy, allowing for a good fit.")
+			saynn("Ты хватаешь трусики и начинаешь их натягивать. Материал кажется довольно эластичным, поэтому они садятся плотно.")
 
 		# (if has cock and pussy)
 		if(GM.pc.hasPenis() && GM.pc.hasVagina()):
-			saynn("Although, you do feel the cold metal brushing against your dick and pussy, causing some discomfort. The panties also bulge out quite a bit in the front, their shape doesn’t really hide your genitals.")
+			saynn("Правда, ты чувствуешь, как холодный металл касается твоего члена и киски, вызывая некоторый дискомфорт. Спереди трусики сильно выпирают, их форма почти не скрывает твои гениталии.")
 
 		# (else if has cock)
 		elif(GM.pc.hasPenis()):
-			saynn("Although, you do feel the cold metal brushing against your dick, causing some discomfort. The panties also bulge out quite a bit in the front, their shape doesn’t really hide your genitals.")
+			saynn("Хотя ты чувствуешь, как холодный металл касается твоего члена, вызывая некоторый дискомфорт. Трусики также заметно выпирают спереди, их форма почти не скрывает твои гениталии.")
 
 		# (else if has pussy)
 		elif(GM.pc.hasVagina()):
-			saynn("Although, you do feel the cold metal brushing against your pussy, causing some discomfort. But otherwise, they look and feel like normal panties.")
+			saynn("Хотя ты чувствуешь, как холодный металл касается твоей киски, вызывая некоторый дискомфорт. Но в остальном они выглядят и ощущаются как обычные трусики.")
 
 		# (else)
 		else:
-			saynn("Although, you do feel the cold metal brushing against your crotch, causing some discomfort. But otherwise, they look and feel like normal panties.")
+			saynn("Хотя ты чувствуешь, как холодный металл касается твоей промежности, вызывая некоторый дискомфорт. Но в остальном они выглядят и ощущаются как обычные трусики.")
 
-		saynn("You show off the purple panties to the foxy, he seems satisfied enough for now.")
+		saynn("Ты демонстрируешь фиолетовые трусики Лису, и на данный момент он кажется вполне довольным.")
 
-		saynn("[say=pc]What next?[/say]")
+		saynn("[say=pc]Что дальше?[/say]")
 
-		addButton("Continue", "See what happens next", "continue1")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue1")
 
 	if(state == "continue1"):
-		saynn("[say=alexrynard]Now we can start the test.[/say]")
+		saynn("[say=alexrynard]Теперь мы можем начать тест.[/say]")
 
-		saynn("You carefully watch his actions. Foxy grabs a few tube-like objects, they look like cylinders but with a few buttons. You also notice that the top side has some kind of aperture, the same kind that the devices in your panties have. You begin to wonder..")
+		saynn("Ты внимательно следишь за его действиями. Лис хватает несколько трубчатых предметов; они похожи на цилиндры, но с несколькими кнопками. Ты также замечаешь, что с верхней стороны у них есть какое-то отверстие — такое же, как у устройств в твоих трусиках. Ты начинаешь задаваться вопросом...")
 
 		# (if has cock and pussy)
 		if(GM.pc.hasPenis() && GM.pc.hasVagina()):
-			saynn("But just before you can realize what’s going on, the foxy turns on all the tubes, causing them to start humming. And a few seconds later, the apertures on them open, revealing.. your genitals. Yes, one of the tubes seems to have your exact {pc.cock} sticking out of it with the two others showing your pussy and your {pc.analStretch} anus! You look down and realize that you can’t take off your panties anymore, it's like they’re glued to your skin! And the bulge that was once there is now missing.")
+			saynn("Но прежде чем ты успеваешь понять, что происходит, Лис включает все трубки, и они начинают гудеть. А через несколько секунд отверстия на них раскрываются, обнажая... твои гениталии. Да, из одной трубки, кажется, торчит твой самый настоящий {pc.cock}, в то время как две другие показывают твою киску и твой {pc.analStretch} анус! Ты смотришь вниз и понимаешь, что больше не можешь снять трусики — они словно приклеены к коже! А выпуклость, которая была там раньше, бесследно исчезла.")
 
 		# (if has just cock)
 		elif(GM.pc.hasPenis()):
-			saynn("But just before you can realize what’s going on, the foxy turns on all the tubes, causing them to start humming. And a few seconds later, the apertures on them open, revealing.. your genitals. Yes, one of the tubes seems to have your exact {pc.cock} sticking out of it with the two others showing your {pc.analStretch} anus! You look down and realize that you can’t take off your panties anymore, it's like they’re glued to your skin! And the bulge that was once there is now missing.")
+			saynn("Но не успеваешь ты осознать, что происходит, как эта лисичка включает все трубки, и те начинают гудеть. Спустя несколько секунд отверстия на них раскрываются, обнажая... твои гениталии. Да, кажется, из одной трубки торчит твоя {pc.cock}, а из двух других виднеется твой {pc.analStretch} анус! Ты смотришь вниз и понимаешь, что больше не можешь снять трусики — они словно приклеены к коже! А выпуклость, которая была там раньше, бесследно исчезла.")
 
 		# (if has just pussy)
 		elif(GM.pc.hasVagina()):
-			saynn("But just before you can realize what’s going on, the foxy turns on all the tubes, causing them to start humming. And a few seconds later, the apertures on them open, revealing.. your genitals. Yes, one of the tubes seems to have your pussy on top of it and the other one showing off your {pc.analStretch} anus! You look down and realize that you can’t take off your panties anymore, it's like they’re glued to your skin!")
+			saynn("Но не успеваешь ты осознать, что происходит, как эта лисичка включает все трубки, и те начинают гудеть. Спустя несколько секунд отверстия на них раскрываются, обнажая... твои гениталии. Да, кажется, одна трубка накрыта твоей киской, а другая выставляет напоказ твой {pc.analStretch} анус! Ты смотришь вниз и понимаешь, что больше не можешь снять трусики — они словно приклеены к коже!")
 
 		# (if nothing)
 		else:
-			saynn("But just before you can realize what’s going on, the foxy turns on all the tubes, causing them to start humming. And a few seconds later, the apertures on them open, revealing.. your genitals. Yes, the tube seems to be showing off your {pc.analStretch} anus on top of it! You look down and realize that you can’t take off your panties anymore, it's like they’re glued to your skin!")
+			saynn("Но не успеваешь ты осознать, что происходит, как эта лисичка включает все трубки, и те начинают гудеть. Спустя несколько секунд отверстия на них раскрываются, обнажая... твои гениталии. Да, кажется, трубка выставляет напоказ твой {pc.analStretch} анус прямо сверху! Ты смотришь вниз и понимаешь, что больше не можешь снять трусики — они словно приклеены к коже!")
 
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("Your eyes open wide as you see the foxy fidgeting with the tube that has your pussy on it. Alex seems just as fascinated as you, he places a digit on your clit and gives it a rub, causing you to moan. Even though you’re a few steps away. He then spreads your {pc.pussyStretch} pussy folds open and shows off to you how wet they are..")
+			saynn("Твои глаза широко распахиваются, когда ты видишь, как лисичка возится с трубкой, на которой изображена твоя киска. Алекс кажется таким же завороженным, как и ты; он прикладывает палец к твоему клитору и начинает его тереть, заставляя тебя застонать, хотя между вами всё еще пара шагов. Затем он раздвигает твои {pc.pussyStretch} складки киски, демонстрируя тебе, насколько они мокрые...")
 
 		# (else)
 		else:
-			saynn("Your eyes open wide as you see the foxy fidgeting with the tube that has your tailhole on it. Alex seems just as fascinated as you, he places a digit on it before prodding a few times, causing you to moan. Even though you’re a few steps away. He then spreads your {pc.analStretch} anal hole open with two digits and shows it off to you..")
+			saynn("Твои глаза широко распахиваются, когда ты видишь, как лисичка возится с трубкой, на которой изображено твое заднее отверстие. Алекс кажется таким же завороженным, как и ты; он прикладывает к нему палец, а затем несколько раз тычет в него, заставляя тебя застонать, хотя между вами всё еще пара шагов. Затем он раздвигает твой {pc.analStretch} анус двумя пальцами, выставляя его напоказ...")
 
-		saynn("There is no denying it, you have portals in your panties!")
+		saynn("С этим невозможно спорить: в твоих трусиках есть порталы!")
 
-		saynn("[say=pc]Wow..[/say]")
+		saynn("[say=pc]Ого...[/say]")
 
-		saynn("[say=alexrynard]It works, who would have thought. And we didn’t even create a singularity in the process. Do you like your portal panties?[/say]")
+		saynn("[say=alexrynard]Это работает, кто бы мог подумать. И мы даже не создали сингулярность в процессе. Тебе нравятся твои портальные трусики?[/say]")
 
-		saynn("[say=pc]The what panties?[/say]")
+		saynn("[say=pc]Что еще за трусики?[/say]")
 
-		saynn("[say=alexrynard]I think that’s a fitting name, isn’t it? I made sure that you can’t take them off unless I disable them. You know, for safety.[/say]")
+		saynn("[say=alexrynard]Думаю, это подходящее название, не так ли? Я позаботился о том, чтобы ты не могла их снять, пока я их не отключу. Ну, знаешь, для безопасности.[/say]")
 
-		saynn("Yeah, for safety, sure. You look down at your panties and notice a little heart symbol shining through the purple cloth. Probably means that the lock is working.")
+		saynn("Ага, для безопасности, конечно. Ты смотришь вниз на свои трусики и замечаешь маленький символ сердца, светящийся сквозь фиолетовую ткань. Вероятно, это значит, что замок работает.")
 
-		saynn("The foxy fidgets with the tubes, doing some visual inspection on them. The more you look at them the more they remind you of.. fleshlights.")
+		saynn("Лисичка возится с трубками, проводя их визуальный осмотр. Чем дольше ты на них смотришь, тем больше они напоминают тебе... мастурбаторы.")
 
-		saynn("[say=alexrynard]So. Here is my offer. You will wear these panties.[/say]")
+		saynn("[say=alexrynard]Итак. Вот моё предложение. Ты будешь носить эти трусики.[/say]")
 
-		saynn("He then points at the fleshlights. Him having such easy access to your lewd bits makes you clench.")
+		saynn("Затем он указывает на мастурбаторы. От того, что у него такой легкий доступ к твоим похотливым местечкам, ты невольно сжимаешься.")
 
-		saynn("[say=alexrynard]And these things are staying here so we can do some tests. For each ‘test’ you will be given a single work credit. Sounds better than mining?[/say]")
+		saynn("[say=alexrynard]А эти штуковины останутся здесь, чтобы мы могли провести кое-какие тесты. За каждый такой «тест» тебе будут давать одну рабочую кредитку. Звучит получше, чем в шахтах, а?[/say]")
 
-		addButton("Agree", "(Includes noncon) Keep them for now", "agree")
-		addButton("Nah", "(Disables portal panties content) You don’t want them", "nah")
+		addButton("Согласиться", "(Включая принуждение) Оставить их пока что", "agree")
+		addButton("Неа", "(Отключает контент с портативными трусиками) Они тебе не нужны", "nah")
 
 
 	if(state == "agree"):
@@ -159,47 +159,47 @@ func _run():
 
 		# (You leave and the panties events start)
 
-		saynn("[say=pc]Sure, I like credits.[/say]")
+		saynn("[say=pc]Конечно, кредитки мне нравятся.[/say]")
 
-		saynn("Some more concerns spawn in your head.")
+		saynn("В твоей голове всплывает еще несколько опасений.")
 
-		saynn("[say=pc]What kind of tests though?[/say]")
+		saynn("[say=pc]Но что это за тесты?[/say]")
 
-		saynn("Foxy relaxes in his chair and offers you a cunning smile.")
+		saynn("Фокси расслабленно откидывается в кресле и одаривает тебя хитрой улыбкой.")
 
-		saynn("[say=alexrynard]You might get poked or touched. Basic interactions tests, you know. No one is gonna fuck you through one, its too dangerous at this point anyways.[/say]")
+		saynn("[say=alexrynard]Тебя могут тыкать или трогать. Ну, базовые тесты на взаимодействие, понимаешь? Никто не будет трахать тебя через них — на данном этапе это слишком опасно.[/say]")
 
-		saynn("Good to know. Even if you feel slightly disappointed inside. When the foxy grabs the fleshlights and moves them away, you feel the breeze washing over your bits, so exciting.")
+		saynn("Полезно знать. Даже если внутри ты чувствуешь легкое разочарование. Когда лис хватает мастурбаторы и убирает их, ты чувствуешь, как по твоим щелочкам пробегает ветерок — это так волнующе.")
 
-		saynn("[say=alexrynard]Well, you’re free, inmate.[/say]")
+		saynn("[say=alexrynard]Ну что ж, ты свободна, заключенная.[/say]")
 
-		saynn("You nod and make your way out, now wearing some very unique panties.")
+		saynn("Ты киваешь и направляешься к выходу, на тебе теперь надеты весьма уникальные трусики.")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 	if(state == "nah"):
 		# (You disagree and take off the panties before giving them to him)
 
 		# (He says he will find a more willing inmate then.)
 
-		saynn("You think about it more and realize how big of a danger this is. Who knows what these ‘tests’ are.")
+		saynn("Ты задумываешься об этом подробнее и осознаешь, насколько это опасно. Кто знает, что это за «тесты» такие.")
 
-		saynn("[say=pc]I.. I think I will decline your offer.[/say]")
+		saynn("[say=pc]Я... Думаю, я откажусь от твоего предложения.[/say]")
 
-		saynn("Foxy shows no obvious emotion and just shrugs.")
+		saynn("Фокси не проявляет явных эмоций и просто пожимает плечами.")
 
-		saynn("[say=alexrynard]Well, whatever then.[/say]")
+		saynn("[say=alexrynard]Ну, как знаешь.[/say]")
 
-		saynn("He switches off all the fleshlights. They begin their shutdown routine, each one slowly closes its aperture, allowing you to pull your private bits out without a risk of getting injured. That allows you to take off the portal panties and give them back to the foxy.")
+		saynn("Он выключает все флешлайты. Они начинают процедуру завершения работы: отверстие каждого из них медленно сужается, позволяя тебе вытащить свои причиндалы без риска травмироваться. Это дает тебе возможность снять портальные трусики и вернуть их лисице.")
 
-		saynn("[say=alexrynard]I will find a more willing inmate.[/say]")
+		saynn("[say=alexrynard]Я найду более сговорчивую заключенную.[/say]")
 
-		saynn("You leave him with his prototype.")
+		saynn("Ты оставляешь его наедине с его прототипом.")
 
 		# (scene ends)
 
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 
 func _react(_action: String, _args):

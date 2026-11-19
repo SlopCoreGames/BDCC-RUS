@@ -30,420 +30,420 @@ func _run():
 	if(state == ""):
 		_tentacles.doAnimDuo("idle")
 		if (_tentacles.lust <= 0):
-			saynn("The tentacles approach you.. they seem.. interested in you?")
+			saynn("Тентакли приближаются к тебе... кажется... ты их заинтересовал(а)?")
 
-			saynn("A few of them slowly extend toward you.. stopping a foot or so away. Their tips gently sway in the air.. just observing. They make no move to touch.. they're just observing your presence.")
+			saynn("Несколько из них медленно тянутся к тебе... останавливаясь в футе от тела. Их кончики плавно покачиваются в воздухе... просто наблюдая. Они не спешат касаться... они просто изучают твоё присутствие.")
 
 		elif (_tentacles.lust <= 2):
-			saynn("The tentacles approach you.. they seem.. kinda curious.")
+			saynn("Тентакли подплывают ближе... кажется, они... проявляют любопытство.")
 
-			saynn("A few of them drift even closer, almost within brushing distance. Their tips gently sway in the air, observing you and your body. One of the tendrils does a quick light tap on your wrist before quickly retreating.")
+			saynn("Несколько щупалец подбираются ещё ближе, почти касаясь тебя. Их кончики плавно покачиваются в воздухе, разглядывая тебя и твоё тело. Одно из них делает быстрый, легкий тычок по твоему запястью и тут же отстраняется.")
 
 		elif (_tentacles.lust <= 5):
-			saynn("The tentacles approach you, one of them loosely curls around your wrist already.. like it's holding your hand or something.")
+			saynn("Тентакли приближаются к тебе, и один из них уже небрежно обвивает твоё запястье... словно пытается взять тебя за руку.")
 
-			saynn("The rest are just observing your body, their tips are slick with juices while tracing the outer counters of your hips and thighs.. occasionally brushing against them.")
+			saynn("Остальные просто разглядывают твоё тело; их кончики, влажные от соков, очерчивают контуры твоих бёдер и бедер... время от времени задевая их.")
 
-			saynn("They sure seem a lot more touchy now.")
+			saynn("Похоже, теперь они стали куда более навязчивыми.")
 
 		elif (_tentacles.lust <= 8):
-			saynn("The tentacles approach you and eagerly coil around your chest and hips, embracing you. They wrap around your arms and legs too.. not tightly.. but possessively.")
+			saynn("Тентакли подплывают к тебе и с жадностью обвивают грудь и бёдра, заключая в объятия. Они также обхватывают твои руки и ноги... не слишком туго... но очень собственнически.")
 
-			saynn("You feel their slow, exploring strokes along your neck, your thighs, your back.. They're clearly hungry for more contact.")
+			saynn("Ты чувствуешь их медленные, исследующие ласки на своей шее, бёдрах и спине... Очевидно, они жаждут ещё большего контакта.")
 
 		else:
-			saynn("The tentacles surround you in an instant, their tips glide over every part of you with a lusty touch.. curling, caressing, grasping.")
+			saynn("Тентакли мгновенно окружают тебя, их кончики скользят по каждому сантиметру твоего тела с похотливым прикосновением... сворачиваясь, лаская и сжимая.")
 
-			saynn("They're dripping juices and pulsing with warm, slick tension..")
+			saynn("Они сочатся соком и пульсируют от теплого, скользкого напряжения...")
 
 		if (!_tentacles.didRubLustEvent):
-			addButton("Rub", "Gently rub the tentacles", "0")
+			addButton("Тереть", "Нежно потереть щупальца", "0")
 		else:
 			if (_tentacles.lust <= 2):
-				addButton("Stroke tentacle", "Pick one of the tentacles and give it a stroke!", "1")
+				addButton("Погладить щупальце", "Выбери одно из щупалец и ласкай его!", "1")
 			if (_tentacles.lust <= 2):
-				addButton("Kiss tentacle", "Pick one of the tentacles and kiss it!", "2")
+				addButton("Поцеловать щупальце", "Выбери одно из щупалец и поцелуй его!", "2")
 			if (_tentacles.lust >= 2 && _tentacles.lust <= 5):
-				addButton("Let it explore you", "Let the tentacle monster explore your body!", "3")
+				addButton("Позволить ему исследовать тебя", "Позволь монстру с щупальцами исследовать твое тело!", "3")
 			if (_tentacles.lust >= 3):
-				addButton("Bondage", "Let the tentacles play with you and tie you up!", "4")
+				addButton("Бондаж", "Позволь щупальцам поиграть с тобой и связать тебя!", "4")
 			if (_tentacles.lust >= 4):
-				addButton("Light choking", "Let the tentacles choke you a little!", "5")
+				addButton("Легкое удушение", "Пусть щупальца немного тебя придушат!", "5")
 			if (_tentacles.lust >= 5):
-				addButton("Stroke them!", "Stroke the tentacles like a slut and see what happens!", "6")
+				addButton("Погладь их!", "Ласкай щупальца как последняя шлюха и посмотри, что будет!", "6")
 			if (_tentacles.lust >= 5):
-				addButton("Deep kiss", "Kiss one of the tentacles and let it stretch your throat a bit..", "7")
+				addButton("Глубокий поцелуй", "Поцелуй одно из щупалец и дай ему немного растянуть твое горло...", "7")
 			if (_tentacles.lust >= 5 && _tentacles.isNormal()):
-				addButton("Submit", "(Sex) Let the tentacles do whatever they want with you!", "8")
-		addButton("Shoo!", "Tell the tentacles to stop", "say_shoo")
-		addButton("Run!", "The tentacles seem to be interested in you.. why not use that to make them move around more!", "do_jog")
+				addButton("Подчиниться", "(Секс) Позволь щупальцам делать с тобой всё, что им вздумается!", "8")
+		addButton("А ну брысь!", "Приказать щупальцам остановиться", "say_shoo")
+		addButton("Беги!", "Похоже, щупальца тобой заинтересованы... почему бы не использовать это, чтобы заставить их двигаться активнее!", "do_jog")
 	if(state == "do_jog"):
 		if (_tentacles.agility <= 8):
 			_tentacles.doAnim("idle", {npcAction="jog"})
 		else:
 			playAnimation(StageScene.TentaclesCuddle, "cuddle", {plant=true})
 		if (_tentacles.agility <= 2):
-			saynn("You can sense that they're interested in you.. maybe even lusty for you a bit. But before they can touch you.. you start jogging in place.")
+			saynn("Ты чувствуешь, что они тобой заинтересованы... возможно, даже немного вожделеют тебя. Но прежде чем они успевают коснуться тебя... ты начинаешь бежать на месте.")
 
-			saynn("[say=pc]Wanna touch me? You will have to catch me first.[/say]")
+			saynn("[say=pc]Хочешь потрогать меня? Сначала попробуй поймай![/say]")
 
-			saynn("You start a slow jog around the cell. The tentacles pause at first.. clearly confused.. but then attempt to follow.")
+			saynn("Вы начинаете медленно бегать вокруг камеры. Щупальца поначалу замирают... явно в замешательстве... но затем пытаются последовать за вами.")
 
-			saynn("It's almost sad. They slither forward, their movements uncoordinated and sluggish. One tentacle trips over itself, tangling into a knot. Another drags heavily, barely keeping up. By the time you've made one lap, they've moved maybe a few meters.")
+			saynn("Это даже почти жалко. Они скользят вперед, их движения нескоординированы и вялы. Одно щупальце запутывается само в себе, превращаясь в узел. Другое тяжело волочится, едва поспевая за вами. К тому времени, как вы сделаете круг, они продвинутся всего на пару метров.")
 
-			saynn("[say=pc]..Okay.. Lots of work ahead of us.[/say]")
+			saynn("[say=pc]..Ладно.. Нам предстоит еще много работы.[/say]")
 
-			saynn("A tentacle finally reaches you, clearly tired. It weakly pats your ankle.. before giving up. Looks like its lust has been replaced by exhaustion.")
+			saynn("Одно щупальце наконец дотягивается до вас, явно измотанное. Оно слабо хлопает вас по лодыжке... а затем сдается. Похоже, похоть сменилась полным изнеможением.")
 
 		elif (_tentacles.agility <= 4):
-			saynn("They clearly wanna touch you.. but you dodge to the side and begin jogging!")
+			saynn("Они явно хотят прикоснуться к вам... но вы уклоняетесь в сторону и пускаетесь в бег!")
 
-			saynn("[say=pc]I won't let you touch me so easily. Try to keep up with me first.[/say]")
+			saynn("[say=pc]Я не дам вам так просто меня потрогать. Сначала попробуйте не отставать![/say]")
 
-			saynn("They try to chase you.. sort of. Despite them being somewhat strong by now, their movements are still awkward, knocking into the bed and the fridge all the time.. and also into each other too. One overshoots a corner and smacks into the shower. Another tries to cut you off and swipe your leg.. but miscalculates and ends up hitting the floor.")
+			saynn("Они пытаются гнаться за вами... ну, в каком-то смысле. Несмотря на то, что теперь они стали довольно сильными, их движения всё еще неуклюжие: они постоянно врезаются в кровать, в холодильник... и друг в друга тоже. Одно щупальце проскакивает угол и с размаху бьется о душевую кабину. Другое пытается перехватить вас и обвиться вокруг ноги... но промахивается и в итоге шлепается на пол.")
 
-			saynn("Still, they're trying. They're not even close.. but they're trying.")
+			saynn("И всё же, они стараются. Им еще далеко до вас... но они стараются.")
 
 			_tentacles.talk("You.. play.. difficult..")
-			saynn("[say=pc]Move those tendrils, c'mon.[/say]")
+			saynn("[say=pc]Ну же, шевелите своими отростками![/say]")
 
-			saynn("After a few laps, you decide to stop it there. The tentacles eventually catch up.. and just rest against your legs. Their lust is replaced with exhaustion.")
+			saynn("Сделав несколько кругов, ты решаешь на этом остановиться. Щупальца в конце концов догоняют тебя... и просто прижимаются к твоим ногам. Их похоть сменяется изнеможением.")
 
 		elif (_tentacles.agility <= 6):
-			saynn("The tentacles have obvious intentions, their tips reaching to touch you.. and so you decide to use that opportunity and start jogging instead, avoiding their grasp.")
+			saynn("У щупалец явно есть намерения: их кончики тянутся к тебе... и ты решаешь воспользоваться моментом и вместо этого начинаешь бег трусцой, уворачиваясь от их захвата.")
 
-			saynn("[say=pc]Chase me if you want me.[/say]")
+			saynn("[say=pc]Попробуй догони, если хочешь![/say]")
 
-			saynn("They see you trying to escape.. and set off after you. Not exactly graceful.. but somewhat fast.. for a bunch of tentacles. They manage to weave around most of the obstacles, avoiding the bed, the fridge and the table. One of the tendril nearly catches your ankle.. but you manage to hop at the last moment.")
+			saynn("Они видят твою попытку побега... и пускаются в погоню. Не сказать чтобы грациозно... но довольно быстро... для кучи щупалец. Им удается огибать большинство препятствий, минуя кровать, холодильник и стол. Одно из щупалец почти хватает тебя за лодыжку... но в последний момент тебе удается подпрыгнуть.")
 
-			saynn("You laugh, genuinely surprised.")
+			saynn("Ты смеешься, искренне удивленная.")
 
-			saynn("[say=pc]Hey, you almost got me.[/say]")
+			saynn("[say=pc]Эй, вы меня почти поймали![/say]")
 
-			saynn("The tentacles then try to predict your path and set an ambush. They're not that hard to spot.. so you pivot and leave them grasping empty air. Still, it wasn't the worst attempt.")
+			saynn("Затем щупальца пытаются предугадать твой путь и устраивают засаду. Их не так уж трудно заметить... поэтому ты резко меняешь направление, заставляя их хватать пустоту. Тем не менее, попытка была неплохой.")
 
-			saynn("After a few laps around the cell, you decide to end it there. The tentacles eventually catch up and wrap their tips around your ankles and wrists, holding you still.")
+			saynn("Сделав несколько кругов по камере, ты решаешь закончить на этом. Щупальца в конце концов настигают тебя и обвивают кончиками твои лодыжки и запястья, удерживая на месте.")
 
-			saynn("[say=pc]What are you gonna do now?[/say]")
+			saynn("[say=pc]И что ты теперь будешь делать?[/say]")
 
 			_tentacles.talk("We.. will get you.. one day.")
-			saynn("They give your rear a small smack.. and seem to be done with you for now, too tired to continue.")
+			saynn("Они слегка шлепают тебя по заднице... и, кажется, на данный момент с тебя хватит — они слишком устали, чтобы продолжать.")
 
 		elif (_tentacles.agility <= 8):
-			saynn("The tentacles are radiating heat and desire.. and that makes you want to play with them. Rather than giving in, you begin jogging away, doing circles around the cell.")
+			saynn("Щупальца излучают жар и желание... и это заставляет тебя захотеть поиграть с ними. Вместо того чтобы сдаться, ты начинаешь убегать, нарезая круги по камере.")
 
-			saynn("[say=pc]Let's see if you really want me.[/say]")
+			saynn("[say=pc]Посмотрим, действительно ли я тебе нужна.[/say]")
 
-			saynn("The tentacles.. see what you're doing.. and suddenly rush into motion. You don't know what changed.. but they suddenly got very coordinated.. very fluid.. very hungry. The tentacles almost grab your ankles, forcing you to dodge left and right. Then two more appear in front of you, making you leap over them.")
+			saynn("Щупальца... они словно видят, что ты делаешь, и внезапно приходят в движение. Ты не понимаешь, что именно изменилось... но они вдруг стали невероятно скоординированными... плавными... голодными. Щупальца почти хватают тебя за лодыжки, заставляя уворачиваться то влево, то вправо. Затем перед тобой вырастают еще два, вынуждая тебя перепрыгнуть через них.")
 
 			_tentacles.talk("You cannot.. escape..")
-			saynn("This isn't a simple jog anymore.. you really have to run now. It's a full blown chase.")
+			saynn("Это уже не просто легкая пробежка... теперь тебе действительно приходится бежать. Настоящая погоня.")
 
-			saynn("Your heart starts to pound even though you're grinning. Suddenly you feel a tentacle brushing against your shoulder.. and another rubbing against your hip.. teasing you. They can almost grab you.")
+			saynn("Сердце начинает бешено колотиться, хотя ты и скалишься в улыбке. Внезапно ты чувствуешь, как щупальце скользит по твоему плечу... а другое трется о бедро... дразня тебя. Они вот-вот смогут тебя схватить.")
 
-			saynn("[say=pc]Eek![/say]")
+			saynn("[say=pc]Ой![/say]")
 
-			saynn("You make it two more laps around the cell.. before you start getting out of breath. And then.. the tentacles manage to corner you. They have certainly gotten faster..")
+			saynn("Тебе удается сделать еще два круга по камере, прежде чем дыхание начинает сбиваться. И тут... щупальцам удается загнать тебя в угол. Они определенно стали быстрее...")
 
-			saynn("One of the tendrils reaches out.. and brushes you under your chin.")
+			saynn("Один из отростков тянется к тебе... и нежно проводит под подбородком.")
 
 			_tentacles.talk("We caught you.")
-			saynn("A little shiver spreads throughout your body as more tentacles join the first one, touching you in various places..")
+			saynn("Легкая дрожь пробегает по всему телу, когда к первому щупальцу присоединяются остальные, касаясь тебя в самых разных местах...")
 
-			saynn("But then they suddenly boop you on the nose and slither away!")
+			saynn("Но вдруг они просто тыкают тебя в нос и уползают прочь!")
 
 		else:
-			saynn("You know what the tentacles want.. but you're not gonna let them have it so easily! Before they can even react, you're already running.")
+			saynn("Ты знаешь, чего хотят щупальца... но ты не собираешься отдаваться им так просто! Прежде чем они успевают среагировать, ты уже вовсю бежишь.")
 
-			saynn("[say=pc]Too slow, you silly.. ah![/say]")
+			saynn("[say=pc]Слишком медленно, глупышка... ах![/say]")
 
-			saynn("You don't even finish the sentence..")
+			saynn("Ты даже не успеваешь договорить...")
 
-			saynn("The tentacles.. they're just everywhere. A tendril wraps around your ankle mid-step.. not hard enough to trip.. but just enough to make you stumble. Another catches your wrist as you start flailing, completely destroying your balance and causing you to collapse.")
+			saynn("Щупальца... они просто повсюду. Один отросток обвивает твою лодыжку прямо на ходу... не так сильно, чтобы сбить с ног, но достаточно, чтобы ты споткнулась. Другой хватает тебя за запястье, когда ты начинаешь размахивать руками, окончательно лишая тебя равновесия и заставляя рухнуть.")
 
-			saynn("But before you can hit the ground, three more have already coiled around your waist, catching you.. keeping you lifted above the floor.")
+			saynn("Но прежде чем ты успеваешь коснуться пола, еще три уже обвиваются вокруг твоей талии, подхватывая тебя... удерживая в воздухе над полом.")
 
-			saynn("You are floating above the floor, held by many tentacles, your attempt to run away got cut short in only a few seconds.")
+			saynn("Ты паришь над полом, удерживаемая множеством щупалец; твоя попытка сбежать оборвалась всего за несколько секунд.")
 
-			saynn("[say=pc]Okay.. That's not fair.[/say]")
+			saynn("[say=pc]Ладно... Это нечестно![/say]")
 
-			saynn("You can just feel the tentacles pulsing with smug satisfaction, their tips pressing gently against your warm skin, stroking your hips and thighs.")
+			saynn("Ты кожей чувствуешь, как щупальца пульсируют от самодовольного удовлетворения; их кончики нежно прижимаются к твоей теплой коже, лаская бедра и ягодицы.")
 
 			_tentacles.talk("We're simply faster than you now.")
-			saynn("You allow yourself to rest in their embrace. The tentacles are now not just strong.. but also fast. Hopefully this will help.")
+			saynn("Ты позволяешь себе расслабиться в их объятиях. Теперь щупальца не только сильные... но и быстрые. Надеемся, это поможет.")
 
-			saynn("After cuddling you for a bit, the tentacles finally let you down onto the floor.")
+			saynn("Немного потискав тебя, щупальца наконец опускают тебя на пол.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "say_shoo"):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("You shoo the tentacle away from you.")
+		saynn("Ты отмахиваешься от щупальца.")
 
-		saynn("You're not feeling frisky.")
+		saynn("Тебе сейчас совсем не до ласк.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "0"):
 		playAnimation(StageScene.TentaclesStroke, "tease", {plant=true})
-		saynn("You reach out and catch one of the slender tentacles.. It reflexively pulls back when it feels your hand.. but you calm it down with gentle touches.")
+		saynn("Вы протягиваете руку и перехватываете один из тонких щупалец... Оно рефлекторно дергается назад, почувствовав вашу ладонь... но вы успокаиваете его нежными прикосновениями.")
 
-		saynn("[say=pc]Easy now.[/say]")
+		saynn("[say=pc]Тише, тише.[/say]")
 
-		saynn("As you slowly run your digits along its length, the tentacle goes very still and obedient. When that happens, you just keep rubbing it gently.. like you're petting it, feeling its strange vine-like texture. A soft, almost shivering ripple travels down its length in response.")
+		saynn("Когда вы медленно ведете пальцами вдоль его длины, щупальце замирает, становясь послушным. В этот момент вы продолжаете ласкать его... словно гладите какое-то растение, ощущая его странную, похожую на лиану текстуру. В ответ по нему пробегает мягкая, почти дрожащая волна.")
 
-		saynn("You can feel it leaning ever so slightly into the pressure of your hand, a silent request for more.. but you think that it's enough for now.")
+		saynn("Вы чувствуете, как оно едва заметно подается навстречу давлению вашей руки — безмолвная просьба о большем... но вы решаете, что на сегодня хватит.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "1"):
 		playAnimation(StageScene.TentaclesStroke, "stroke", {plant=true})
-		saynn("You catch one of the tentacles with your hands. It gives a startled little twitch, trying to slip free.")
+		saynn("Вы обхватываете одно из щупалец руками. Оно испуганно дергается, пытаясь выскользнуть.")
 
-		saynn("[say=pc]Easy. I'm not gonna hurt you.[/say]")
+		saynn("[say=pc]Спокойно. Я не собираюсь причинять тебе боль.[/say]")
 
-		saynn("You don't grip it very tightly.. you just let it rest against the palm of your hand while your digits are gently massaging it with slow circles over its smooth surface. You can feel the texture getting a bit slick under your touch.. and the tension melts away.")
+		saynn("Вы не сжимаете его слишком крепко... просто позволяете ему лежать на вашей ладони, пока пальцы медленно массируют его гладкую поверхность круговыми движениями. Вы чувствуете, как под вашими пальцами оно становится скользким... и напряжение постепенно тает.")
 
-		saynn("Feeling a bit more brave, you begin to stroke the tentacle along its length.. which makes the whole monster gently sway in response. Your hand is catching some kind of juice that the tentacle is secreting.. it lowers the friction greatly.")
+		saynn("Набравшись смелости, вы начинаете поглаживать щупальце вдоль всей длины... отчего всё чудовище начинает плавно покачиваться в ответ. Ваша рука покрывается какой-то жидкостью, которую выделяет щупальце... она заметно уменьшает трение.")
 
-		saynn("As you stop to ponder about it.. the tip of the tentacle curls back and nudges your hand. It clearly wants more.")
+		saynn("Пока вы погружены в свои мысли... кончик щупальца сворачивается кольцом и подталкивает вашу руку. Очевидно, оно хочет еще.")
 
-		saynn("And so you deliver, giving the tendril a few more long deliberate strokes, from the base to the tip.")
+		saynn("И вы удовлетворяете его желание, делая еще несколько долгих, размеренных движений — от основания до самого кончика.")
 
-		saynn("[say=pc]That's enough for now.[/say]")
+		saynn("[say=pc]На сегодня хватит.[/say]")
 
-		saynn("You release it. The tentacle lingers for a moment, hovering near your hand. You gently push it away.. until the monster decides to move on.")
+		saynn("Ты отпускаешь его. Щупальце на мгновение замирает, зависнув рядом с твоей рукой. Ты осторожно отстраняешь его... пока монстр не решает двигаться дальше.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "2"):
 		playAnimation(StageScene.TentaclesStroke, "fast", {plant=true})
-		saynn("Your gaze settles on one of the more curious tentacles, its tip swaying gently near your shoulder.")
+		saynn("Твой взгляд останавливается на одном из самых любопытных щупалец, кончик которого плавно покачивается возле твоего плеча.")
 
-		saynn("You feel like you wanna do something with it.. And so you lean in and press your lips to its smooth, cool surface. You smooch it!")
+		saynn("Тебе хочется что-то с ним сделать... И ты наклоняешься и прижимаешься губами к его гладкой прохладной поверхности. Ты его чмокаешь!")
 
-		saynn("The tentacle freezes still, surprised. You hold the kiss for a moment longer.. a quiet, closed-mouth touch of your lips.. before pulling back.")
+		saynn("Щупальце замирает от неожиданности. Ты задерживаешь поцелуй еще на мгновение... тихое, нежное прикосновение губ... прежде чем отстраниться.")
 
-		saynn("A slow, deep shiver runs through the tendril's entire length, from the tip you just kissed all the way back to its hidden base.")
+		saynn("Медленная, глубокая дрожь пробегает по всей длине отростка — от самого кончика, который ты только что поцеловала, до самого основания, скрытого в тени.")
 
-		saynn("The tentacle doesn't retreat.. instead, it gently pokes your neck, its tip leaving a little wet smooch of its own. It's being flirty, it's kinda cute.")
+		saynn("Щупальце не отстраняется... вместо этого оно нежно тычется тебе в шею, оставляя на коже свой влажный след. Оно кокетничает, и это даже кажется милым.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "3"):
-		saynn("You're curious what the tentacles will do to you now.. so you present yourself for them.. completely naked. This is certainly unusual.. but you don't feel any fear.")
+		saynn("Тебе любопытно, что эти щупальца сделают с тобой теперь... и ты подставляешься им... совершенно голая. Это определенно необычно... но страха ты не чувствуешь.")
 
-		saynn("The tentacles just watch you from a far at first.. but eventually one of them reaches out to brush against your side with a light touch. You don't pull away.. allowing it to do so. Soon, another joins in. Together, they begin a slow, curious exploration.")
+		saynn("Сначала щупальца просто наблюдают за тобой издалека... но в конце концов одно из них тянется к тебе, слегка касаясь твоего бока. Ты не отстраняешься, позволяя ему это. Вскоре к нему присоединяется другое. Вместе они начинают медленное, любопытное исследование.")
 
-		saynn("They trace the shape of your {pc.thick} waist, the curve of your {pc.masc} hip, gently mapping you out. One of the tentacles slides higher, brushing the underside of your {pc.breasts}, circling them with a soft, playful caress.")
+		saynn("Они очерчивают контуры твоей {pc.thick} талии, изгиб твоих {pc.masc} бедер, бережно изучая тебя. Одно из щупалец скользит выше, лаская нижнюю часть твоих {pc.breasts} мягкими, игривыми движениями.")
 
-		saynn("[say=pc]Mmhh..[/say]")
+		saynn("[say=pc]Мммх..[/say]")
 
-		saynn("The sensations make you moan ever so quietly. The tentacles pulse gently in response, probably feeling encouraged.")
+		saynn("От этих ощущений ты тихонько стонешь. Щупальца мягко пульсируют в ответ, кажется, они воодушевлены.")
 
 		if (GM.pc.hasReachableVagina()):
 			playAnimation(StageScene.TentaclesGrope, "grope", {plant=true, bodyState={naked=true,hard=true}})
-			saynn("One slick tendril joins and dips lower, following the line of your stomach. It brushes, like a feather, over your pussy.. a teasing touch that makes your breath hitch. It doesn't press further, just rests there for a second, sending warmth throughout your whole body.")
+			saynn("Один скользкий отросток опускается ниже, очерчивая линию твоего живота. Он касается твоей киски, словно перышко... дразнящее прикосновение, от которого перехватывает дыхание. Он не давит, а лишь замирает на мгновение, разливая тепло по всему твоему телу.")
 
 		elif (GM.pc.hasReachablePenis()):
 			playAnimation(StageScene.TentaclesGrope, "stroke", {plant=true, bodyState={naked=true,hard=true}})
-			saynn("One slick tendril joins and dips lower, coiling loosely around your thighs before sliding inward. It grazes, ever so softly, against your {pc.penis}.. a slow, casual stroke along your length that sends warmth throughout your whole body.")
+			saynn("Один скользкий отросток опускается ниже, свободно обвивая твои бедра, прежде чем скользнуть внутрь. Он едва ощутимо задевает твою {pc.penis}... медленное, небрежное скольжение вдоль всей длины, от которого всё тело наполняется жаром.")
 
 		else:
 			playAnimation(StageScene.TentaclesGrope, "grope", {plant=true, bodyState={naked=true,hard=true}})
-			saynn("One slick tendril joins and dips lower, following the line of your stomach. It brushes, like a feather, over your crotch.. sliding further between your legs until it stumbles upon your {pc.analStretch} tailhole. It doesn't prod it, just leaving a teasing touch that makes your breath hitch.")
+			saynn("Один скользкий отросток опускается ниже, очерчивая линию твоего живота. Он касается твоей промежности, словно перышко... скользя всё дальше между ног, пока не натыкается на твое {pc.analStretch} заднее отверстие. Он не тычется в него, а лишь оставляет дразнящее прикосновение, от которого у тебя сбивается дыхание.")
 
-		saynn("[say=pc]Ah.. that should be enough for now.[/say]")
+		saynn("[say=pc]Ах.. на сегодня должно хватить.[/say]")
 
-		saynn("After that fun little session, you notice that the rest of the tentacles get all slick and drippy..")
+		saynn("После этой маленькой забавы ты замечаешь, что остальные щупальца стали совсем скользкими и сочащимися смазкой...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "4"):
 		playAnimation(StageScene.TentaclesBondage, "kneel", {plant=true})
-		saynn("You're feeling a bit kinky and the monster can feel it.")
+		saynn("Ты чувствуешь легкую тягу к извращениям, и монстр это чувствует.")
 
-		saynn("A tentacle, one that's thin and more agile than the rest, reaches up beside you and finds your wrists. Before you can answer, it loops itself gently but firmly around one wrist.. and then the other, pulling them together behind your back.")
+		saynn("Щупальце, более тонкое и ловкое, чем остальные, тянется к тебе и находит твои запястья. Прежде чем ты успеваешь ответить, оно мягко, но крепко обвивает одно запястье... а затем и другое, стягивая их вместе за спиной.")
 
-		saynn("Your chest is now pushed forward because of that.. no way to cover yourself.. The hold is secure.. but not fight enough to hurt. It feels nice.")
+		saynn("Твоя грудь теперь выпячена вперед из-за этого... прикрыться невозможно... Захват надежный... но не настолько сильный, чтобы причинять боль. Это приятное чувство.")
 
-		saynn("[say=pc]Have you been practising?[/say]")
+		saynn("[say=pc]Ты что, тренировалась?[/say]")
 
-		saynn("Another slender tentacle reaches up towards your face and brushes against your cheek. It feels very alien.. but still.. The tentacle has a somewhat pleasant warm texture to it. The tendril pulls further, wrapping around the back of your head.. and then gliding over your eyes, blocking the light!")
+		saynn("Еще один тонкий щупалец тянется к твоему лицу и касается щеки. Ощущение очень чужеродное... но всё же... У щупальца довольно приятная теплая текстура. Отросток тянется дальше, обвивая затылок... а затем скользит по глазам, преграждая путь свету!")
 
-		saynn("[say=pc]Ohh.. interesting.[/say]")
+		saynn("[say=pc]Охх... интересно.[/say]")
 
-		saynn("That's not it. A third tentacle presses lightly against your lips. It doesn't force its way in.. just rests there.. a silent, leafy gag. You can still easily breathe through your nose.")
+		saynn("Но это еще не всё. Третье щупальце мягко прижимается к твоим губам. Оно не врывается внутрь... просто лежит там... безмолвный, похожий на лист кляп. Ты всё еще можешь легко дышать через нос.")
 
-		saynn("Some more tentacles join and wrap themselves around your thighs, adding the final touch of restraining your legs, rendering you completely helpless in the end.")
+		saynn("Еще несколько щупалец присоединяются и обвивают твои бедра, нанося финальный удар по твоей свободе и делая тебя в итоге совершенно беспомощной.")
 
-		saynn("[say=pc]Mm-m..[/say]")
+		saynn("[say=pc]Мм-м..[/say]")
 
-		saynn("You're just being held there.. immobilized by a tentacle monster, completely at its mercy. And it feels good. They don't pull or strain.. just simply hold, occasionally bringing your limbs together when you try to move them.")
+		saynn("Тебя просто держат... обездвиженную монстром из щупалец, полностью во власти его милости. И это приятно. Они не тянут и не сжимают изо всех сил... просто держат, время от времени сводя твои конечности вместе, когда ты пытаешься ими пошевелить.")
 
 		_tentacles.talk("We enjoyed it as well.")
-		saynn("Eventually, they loosen up the grip, allowing you to become free again. You pull the green blindfold and gag off and watch as the monster sways happily.")
+		saynn("В конце концов, хватка ослабевает, позволяя тебе снова освободиться. Ты стягиваешь зеленую повязку и кляп, наблюдая за тем, как монстр довольно покачивается.")
 
-		saynn("You give the tentacles some pats.")
+		saynn("Ты слегка похлопываешь щупальца ладонями.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "5"):
 		playAnimation(StageScene.TentaclesChoke, "tease", {plant=true})
-		saynn("The tentacles surround you, their movement smooth and deliberate, gliding over your skin, sending little sparks of warmth all throughout you..")
+		saynn("Щупальца окружают тебя; их движения плавные и размеренные, они скользят по твоей коже, рассылая по всему телу маленькие искры тепла...")
 
-		saynn("[say=pc]Feeling bold? Alright.. let's play.[/say]")
+		saynn("[say=pc]Захотелось дерзости? Что ж... давай поиграем.[/say]")
 
-		saynn("You guide one of the tentacles and bring it up to your neck. It needs no further instruction.. carefully curling around, creating a loose but possessive loop.")
+		saynn("Ты направляешь одно из щупалец к своей шее. Оно не нуждается в дальнейших указаниях... оно осторожно обвивается вокруг, образуя свободную, но властную петлю.")
 
-		saynn("After that, you just give it full control, raising your chin slightly and pulling your hands away.")
+		saynn("После этого ты просто отдаешь ему полный контроль, слегка приподнимая подбородок и убирая руки.")
 
-		saynn("Feeling that, the tentacles begin to slightly increase the pressure, now creating a second collar of sorts around your neck. A collar and a leash..")
+		saynn("Почувствовав это, щупальца начинают слегка усиливать давление, создавая вокруг твоей шеи своего рода второй ошейник. Ошейник и поводок...")
 
-		saynn("Seeing that you don't show any resistance, the tentacle continues to tighten up, now actually constraining your air intake.")
+		saynn("Видя, что ты не сопротивляешься, щупальце продолжает затягиваться, теперь уже реально ограничивая твой приток воздуха.")
 
-		saynn("Your breath hitches.. Another tendril supports the back of your head, holding you gently in place.")
+		saynn("Твое дыхание перехватывает... Еще один отросток поддерживает затылок, мягко удерживая тебя на месте.")
 
-		saynn("Your lips are parted as you're chasing the fading bits of air that you can still catch. Your vision starts to sparkle at the edges.. with a subtle wave of deep darkness fading in behind them.")
+		saynn("Твои губы приоткрыты, ты пытаешься поймать уходящие остатки воздуха. По краям зрения начинают плясать искры... с едва уловимой волной глубокой тьмы, подступающей изнутри.")
 
-		saynn("[say=pc]Hh..[/say]")
+		saynn("[say=pc]Ах...[/say]")
 
-		saynn("The tentacles feel your complete trust.. and put a little more pressure, closing your throat completely. All you can do is silently gasp for oxygen. The spots begin to dance more fiercely in your eyes, the whole cell starts becoming all rainbow-y.. At the same time, the all-consuming darkness creeps further, narrowing your vision to an extremely small circle.")
+		saynn("Щупальца чувствуют твое полное доверие... и сжимаются чуть сильнее, полностью перекрывая горло. Всё, что тебе остается — это беззвучно хватать ртом воздух. Пятна перед глазами начинают плясать всё неистовее, всё вокруг заливает радужными всполохами... И в то же время всепоглощающая тьма подступает всё ближе, сужая твое зрение до крошечного кружка.")
 
 		if (GM.pc.hasReachableVagina()):
-			saynn("Feels good.. Your pussy slit is wet from the extremely high levels of arousal..")
+			saynn("Приятно... Твоя киска совсем промокла от зашкаливающего возбуждения...")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Feels good.. Your cock is throbbing super hard from the extremely high levels of arousal..")
+			saynn("Приятно... Твой член бешено пульсирует от зашкаливающего возбуждения...")
 
 		elif (GM.pc.isWearingChastityCage()):
-			saynn("Feels good.. Your locked away cock is throbbing super hard in its cage from the extremely high levels of arousal.")
+			saynn("Приятно... Твой запертый в клетке член бешено пульсирует от зашкаливающего возбуждения.")
 
-		saynn("Without even realizing it, you go limp.. completely helpless and airless.. suspended only by the tentacles' grip.")
+		saynn("Сама того не замечая, ты обмякаешь... совершенно беспомощная и задыхающаяся... удерживаемая лишь хваткой щупалец.")
 
-		saynn("Only then is when the tentacles finally loosen the grip, making you produce a loud, ragged gasp!")
+		saynn("Только тогда щупальца наконец ослабляют хватку, заставляя тебя издать громкий, рваный вдох!")
 
-		saynn("[say=pc]Ah-h..[/say]")
+		saynn("[say=pc]Ах-х..[/say]")
 
-		saynn("You start hungrily grabbing the air with your mouth. The vision slowly returns to you, your brain gradually recovering from the oxygen deprivation.")
+		saynn("Ты начинаешь жадно хватать ртом воздух. Зрение постепенно возвращается, а мозг постепенно приходит в себя после кислородного голодания.")
 
-		saynn("The tentacles gently set you down onto the floor.")
+		saynn("Щупальца осторожно опускают тебя на пол.")
 
 		_tentacles.talk("We hope that you have enjoyed this.")
-		saynn("[say=pc]That was great.. hah..[/say]")
+		saynn("[say=pc]Это было великолепно... хах...[/say]")
 
-		saynn("You rub your neck.. that is now a bit bruised from all the choking. Still, worth it.")
+		saynn("Ты потираешь шею... она теперь немного в синяках от удушения. Но оно того стоило.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "6"):
 		playAnimation(StageScene.TentaclesGangbang, "stroke", {plant=true, bodyState={naked=true, hard=true}})
-		saynn("The tentacles are swaying around you.. and that makes the air thick with some kind of sweet scent. The tendrils are shiny with a thin, slick sheen.")
+		saynn("Щупальца покачиваются вокруг тебя... отчего воздух становится густым от какого-то сладкого аромата. Их поверхность блестит от тонкого слоя скользкой слизи.")
 
-		saynn("Watching them.. smelling them.. A reckless, hungry impulse takes you. Without a word, you get down to your knees before them.")
+		saynn("Ты наблюдаешь за ними... вдыхаешь их запах... Безрассудный, голодный импульс овладевает тобой. Не говоря ни слова, ты опускаешься перед ними на колени.")
 
-		saynn("You reach out, your hands grabbing two of the nearest tentacles, your digits gripping around their tips while they pulse eagerly in your grasp. You begin to stroke them.. slowly.. following the curvature from their thick bases to their pointy end, your thumbs rubbing circles into their slick skin. A low, shivering shudder runs through the whole mass of them.")
+		saynn("Ты протягиваешь руки и хватаешь две ближайшие щупальца; твои пальцы сжимают их кончики, которые жадно пульсируют в твоей хватке. Ты начинаешь ласкать их... медленно... ведя рукой по изгибу от толстого основания к острому концу, втирая большие пальцы в их скользкую кожу. По всей их массе пробегает низкая, дрожащая судорога.")
 
-		saynn("[say=pc]C'mon, I can take more..[/say]")
+		saynn("[say=pc]Давай, я могу еще..[/say]")
 
-		saynn("One of the thin tentacles presses its dripping tip against the side of your neck, leaving a cool, wet trail as it glides up to your jawline. Another one finds its way between your {pc.breasts}, rubbing softly against them. You gasp, your focus divided between the ones in your hands and the ones beginning to explore.")
+		saynn("Одно из тонких щупалец прижимается своим сочащимся кончиком к твоей шее, оставляя прохладный влажный след, пока скользит вверх к челюсти. Другое находит путь между твоими {pc.breasts}, мягко потираясь о них. Ты ахаешь, твое внимание разрывается между теми, что в твоих руках, и теми, что начинают тебя исследовать.")
 
-		saynn("The thin tentacle becomes very bold and is now brushing against your lips. You don't hesitate and take the slick, pointy tip into your mouth. The taste reminds you of honey a bit. It doesn't thrust, just pulses gently as you start sucking on it, your tongue sliding around it.")
+		saynn("Тонкое щупальце становится совсем наглым и теперь касается твоих губ. Ты не колеблешься и берешь скользкий, острый кончик в рот. Вкус чем-то напоминает мед. Оно не совершает толчков, а лишь нежно пульсирует, пока ты начинаешь сосать его, обводя языком.")
 
-		saynn("[say=pc]Mmh..[/say]")
+		saynn("[say=pc]Ммм..[/say]")
 
 		if (GM.pc.hasReachableVagina()):
-			saynn("Another tentacle finds its way between your thighs, now rubbing against your slick pussy, catching your wetness onto itself and sharing its juices back.")
+			saynn("Еще одно щупальце пробирается между твоих бедер, теперь оно трется о твою влажную киску, собирая твою смазку и отдавая взамен свои соки.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Another tentacle finds its way between your thighs, now rubbing against your dick, catching your pre onto itself and coating your member with its juices instead.")
+			saynn("Еще одно щупальце пробирается между твоих бедер, теперь оно трется о твой член, собирая твою предэякуляцию и покрывая твое достоинство своими соками вместо этого.")
 
 		elif (GM.pc.isWearingChastityCage()):
-			saynn("Another tentacle finds its way between your thighs, now rubbing against your chastity cage, catching the pre that your locked dick is leaking and coating your little cage with its juices instead.")
+			saynn("Еще один щупалец пробирается между твоих бедер, теперь он трется о твою девственную клетку, собирая предэякулят, сочащийся из твоего запертого члена, и вместо этого покрывает твою маленькую клетку своей смазкой.")
 
 		else:
-			saynn("Another tentacles finds its way between your thighs, now rubbing against your tailhole, coating it with a layer of juices.")
+			saynn("Еще одно щупальце находит путь между твоих бедер, теперь оно трется о твое анусное отверстие, покрывая его слоем соков.")
 
-		saynn("Your chest, your crotch, your mouth, your hands.. You're surrounded by tentacles, stroking or being stroked in return. The air fills with soft, wet sounds and your own muffled moans around the green tip in your mouth. Their movements grow more urgent.. their pulsing becoming faster.. all the while you stroke them faster.")
+		saynn("Твоя грудь, пах, рот, твои руки... Ты окружена щупальцами, которые ласкают тебя или получают ласку взамен. Воздух наполняется мягкими влажными звуками и твоими собственными приглушенными стонами вокруг зеленого кончика во рту. Их движения становятся всё более настойчивыми... их пульсация — всё чаще... а ты тем временем ласкаешь их всё быстрее.")
 
-		saynn("It doesn't take long before you feel something building.. some kind of tension in the tentacles. They all begin to throb in unison..")
+		saynn("Вскоре ты чувствуешь, как что-то нарастает... своего рода напряжение в щупальцах. Все они начинают пульсировать в унисон...")
 
-		addButton("Orgasm", "See what happens next", "6_cum")
+		addButton("Оргазм", "Смотреть, что будет дальше", "6_cum")
 	if(state == "6_cum"):
 		playAnimation(StageScene.TentaclesGangbang, "inside", {plant=true, bodyState={naked=true, hard=true}})
-		saynn("They don't just cum.. They give you a whole shower.")
+		saynn("Они не просто кончают... Они устраивают тебе настоящий душ.")
 
-		saynn("[say=pc]Mmmph..![/say]")
+		saynn("[say=pc]Мммф..![/say]")
 
-		saynn("With a series of shuddering convulsions, the tentacles that you were stroking jerk in your grasp. The one in your mouth pushes a little deeper as it pulses.. before releasing a flood of warm, sweet nectar onto your tongue and down your throat.")
+		saynn("Серией содрогающихся конвульсий щупальца, которые ты ласкала, дергаются в твоих руках. То, что во рту, проталкивается чуть глубже, пульсируя... прежде чем излить поток теплого сладкого нектара тебе на язык и в горло.")
 
-		saynn("At the same time, the one against your chest arches and spurts, painting your neck, your chin and your {pc.breasts} in streaks of that shiny honey-like cum..")
+		saynn("В то же самое время то, что прижато к твоей груди, выгибается и извергается, разбрызгивая по твоей шее, подбородку и твоему {pc.breasts} полосы этой блестящей, похожей на мед спермы...")
 
-		saynn("More join, throbbing and releasing, showering your face, your hair, your kneeling body in their sticky, sweet juices.. Your own orgasm overwhelms you, making you squirm and throw your head back, your busy lips producing hot, muffled moans.")
+		saynn("Присоединяются остальные, пульсируя и извергаясь, осыпая твое лицо, волосы и твое стоящее на коленях тело своими липкими сладкими соками... Твой собственный оргазм захлестывает тебя, заставляя извиваться и запрокидывать голову, а твои занятые губы издают горячие, приглушенные стоны.")
 
-		saynn("[say=pc]Mhh-h~..[/say]")
+		saynn("[say=pc]Ммм-х~..[/say]")
 
-		saynn("After they're done getting you drenched and trembling.. the tentacles slowly retract, leaving you on your knees, panting, covered in juices. They sway gently above you, their lust satisfied.. for now.")
+		saynn("Когда они закончат обливать тебя соками и доводят до дрожи... щупальца медленно втягиваются, оставляя тебя стоять на коленях — тяжело дышащую и покрытую липкой влагой. Они плавно покачиваются над тобой, удовлетворенные своей похотью... пока что.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "7"):
 		playAnimation(StageScene.TentaclesDeepthroat, "sex", {plant=true, bodyState={naked=true, hard=true}})
-		saynn("You look at the thick, shiny tentacle swaying before you.. A little bead of juices gathers at its tip and hangs from it for a bit.. before dripping to the floor. A sudden desire heats you up..")
+		saynn("Ты смотришь на толстое, блестящее щупальце, колышущееся прямо перед тобой... На его кончике собирается капелька сока, она на мгновение зависает в воздухе, а затем срывается на пол. Внезапное желание обжигает тебя изнутри...")
 
-		saynn("[say=pc]Come here.[/say]")
+		saynn("[say=pc]Иди сюда.[/say]")
 
-		saynn("You don't just touch it with your hands.. instead, you reach towards it and press your lips to its slick, warm surface. It tastes faintly of honey nectar.. it makes you wanna continue.")
+		saynn("Ты не просто касаешься его руками... вместо этого ты тянешься к нему и прижимаешься губами к его скользкой, теплой поверхности. У него едва уловимый привкус медового нектара... и это заставляет тебя хотеть продолжения.")
 
-		saynn("You leave another little kiss and then open your mouth, letting your tongue slide out to lap at the taste.. and to tease the sensitive tip.")
+		saynn("Ты оставляешь еще один короткий поцелуй, а затем приоткрываешь рот, выпуская язык, чтобы слизывать этот вкус... и дразнить чувствительный кончик.")
 
-		saynn("Feeling a bit more bold, you catch the tip with your lips and let a small part of it into your mouth, your tongue now licking around it and playing with it.")
+		saynn("Став чуть смелее, ты захватываешь кончик губами и позволяешь ему немного войти в рот, обволакивая его языком и играя с ним.")
 
-		saynn("That deep kiss triggers something..")
+		saynn("Этот глубокий поцелуй пробуждает нечто внутри...")
 
-		saynn("With a sudden, eager push, the tentacle slides further past your lips and teeth, over your tongue. You gasp.. but you don't pull away, letting it fill your mouth and do what it wants to you..")
+		saynn("Резким, жадным толчком щупальце проскальзывает глубже твоих губ и зубов, проходя по языку. Ты ахаешь от неожиданности... но не отстраняешься, позволяя ему заполнить твой рот и делать с тобой всё, что оно пожелает...")
 
-		saynn("The tentacle's tip quickly finds the back of your mouth.. and goes even deeper, sliding down your throat, testing how well you can suppress your gag reflex.")
+		saynn("Кончик щупальца быстро находит заднюю стенку твоей глотки... и уходит еще глубже, скользя вниз по горлу и проверяя, насколько успешно ты можешь подавлять рвотный рефлекс.")
 
-		saynn("Your tight throat walls stretch around the invading girth.. your eyes begin watering on their own.")
+		saynn("Стенки твоего узкого горла растягиваются вокруг наглого толчка... и твои глаза невольно начинают слезиться.")
 
-		saynn("Occupying your throat was just the start.. the tentacle begins to move. Slow, probing thrusts at first, rubbing against your inner walls. You can feel every pulse of it.")
+		saynn("То, что он занял твое горло, было лишь началом... щупальце начинает двигаться. Сначала медленные, прощупывающие толчки, трущиеся о твои внутренние стенки. Ты чувствуешь каждую его пульсацию.")
 
-		saynn("Muffled moans try to escape around it, the sound vibrating along its length.. which only makes it eager. The pace quickens, becoming a steady, relentless deep-throating rhythm.")
+		saynn("Приглушенные стоны пытаются вырваться наружу, вибрируя вдоль всей его длины... что только раззадоривает его. Темп ускоряется, превращаясь в размеренный, неумолимый ритм глубокого горлового секса.")
 
-		saynn("Your hands come up to grasp near the base of it.. not to push away.. but to guide it, to take it deeper. There is a visible bump appearing on your neck each time the tentacle goes down your throat.")
+		saynn("Твои руки поднимаются, чтобы обхватить его у основания... не для того, чтобы оттолкнуть... а чтобы направлять, заглатывая его еще глубже. Каждый раз, когда щупальце уходит в твое горло, на шее проступает отчетливый бугорок.")
 
-		saynn("[say=pc]Mmhh.. mmphh.. mhh..[/say]")
+		saynn("[say=pc]Мммх.. ммпх.. мхх..[/say]")
 
-		addButton("Climax", "See what happens next", "7_cum")
+		addButton("Кульминация", "Смотреть, что будет дальше", "7_cum")
 	if(state == "7_cum"):
 		playAnimation(StageScene.TentaclesDeepthroat, "inside", {plant=true, bodyState={naked=true, hard=true}})
-		saynn("As your reflex starts making you gag and choke on it, the tension inside the tentacle begins to rise. The movements become more urgent, less controlled. Then, with a powerful, shuddering thrust, it locks itself deep in your throat.. and begins to pulse hard.")
+		saynn("Когда рефлексы заставляют тебя давиться и задыхаться, напряжение внутри щупальца начинает расти. Движения становятся более порывистыми, менее контролируемыми. Затем, мощным, содрогающимся толчком, оно замирает глубоко в твоем горле... и начинает сильно пульсировать.")
 
-		saynn("Thick, warm, honey-like fluid gets pumped directly into your stomach. Each throbbing pulse is a flood of sweet juices, filling you with a spreading, heavy warmth. The tentacle continues to twitch and pump, ensuring every last drop is deposited deep inside you.. until your belly feels full.")
+		saynn("Густая, теплая, похожая на мед жидкость закачивается прямо тебе в желудок. Каждая пульсация — это поток сладкого сока, наполняющий тебя разливающимся тяжелым теплом. Щупальце продолжает дергаться и качать, стараясь оставить каждую последнюю каплю глубоко внутри тебя... пока твой живот не наполнится до краев.")
 
-		saynn("Finally, spent, it slowly retracts, sliding back out of your throat with a wet pop. As it happens, you instantly start coughing and gasping for air.. the tentacle leaving you panting hard.")
+		saynn("Наконец, извергнув всё, оно медленно втягивается, с влажным хлопком выходя из твоего горла. В этот момент ты тут же начинаешь кашлять и жадно хватать ртом воздух... щупальце оставляет тебя тяжело дышащей.")
 
-		saynn("The tentacle hovers before your eyes, slick with spit and its own juices, giving a satisfied, lazy tremble.")
+		saynn("Щупальце зависает перед твоими глазами, скользкое от слюны и собственного сока, удовлетворенно и лениво подрагивая.")
 
-		saynn("[say=pc]..wow.. fuck..[/say]")
+		saynn("[say=pc]..вау.. блядь..[/say]")
 
-		saynn("That was something..")
+		saynn("Это было нечто...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "8"):
 		_tentacles.doAnimDuo("glare", {npcAction="kneel"})
-		saynn("You decide to present yourself to {psTentacles}, submitting to their will completely.")
+		saynn("Ты решаешь предстать перед {psTentacles}, полностью подчиняясь их воле.")
 
-		saynn("Time to see what they will do to you..")
+		saynn("Пора узнать, что они с тобой сделают...")
 
-		addButton("Continue", "See what happens next", "8_startSex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "8_startSex")
 	if(state == "8_after"):
-		saynn("You had fun with the tentacles..")
+		saynn("Тебе понравилось возиться с щупальцами...")
 
-		saynn("They've certainly only gotten more lusty after this.")
+		saynn("После этого они явно стали еще похотливее.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "8_afterEgged"):
 		playAnimation(StageScene.TFLook, "start")
-		saynn("You had fun with the tentacles..")
+		saynn("Тебе понравилось возиться с щупальцами...")
 
-		saynn("And now, when you look down, you can't help but to notice your belly being quite round.")
+		saynn("И теперь, когда ты смотришь вниз, ты не можешь не заметить, что твой живот стал довольно круглым.")
 
-		saynn("It looks like you got stuffed with eggs! You can feel them shifting inside you slightly as you move..")
+		saynn("Выглядит так, будто тебя набили яйцами! Ты чувствуешь, как они слегка перекатываются внутри тебя при каждом движении...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	var _tentacles:PlayerSlaveryTentacles = GM.main.PS

@@ -10,177 +10,177 @@ func _run():
 		addCharacter("eliza")
 		aimCameraAndSetLocName("med_milkingroom")
 		playAnimation(StageScene.Grope, "tease", {pc="pc", npc="eliza"})
-		saynn("You approach Eliza, asking if she can seed-milk you.")
+		saynn("Вы подходите к Элизе и спрашиваете, может ли она подоить из вас семя.")
 
-		saynn("[say=eliza]Ohh, I think I know what we can do~. Follow me.[/say]")
+		saynn("[say=eliza]Охх, кажется, я знаю, что мы можем сделать~. Иди за мной![/say]")
 
-		saynn("She brings you into one of the empty milking stalls.")
+		saynn("Она заводит вас в одну из пустых доильных кабинок.")
 
-		saynn("[say=eliza]You stay here, I gotta go grab someone![/say]")
+		saynn("[say=eliza]Постой здесь, мне нужно позвать кое-кого![/say]")
 
-		saynn("Huh. Makes you wonder how a third person would help with any of this..")
+		saynn("Хм. Невольно задумываешься, как третий человек поможет во всем этом...")
 
-		addButton("Continue", "See what happens next", "socket_walks_in")
+		addButton("Продолжить", "Смотреть, что будет дальше", "socket_walks_in")
 	if(state == "socket_walks_in"):
 		removeCharacter("eliza")
 		addCharacter("socket")
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {npc="socket", npcAction=["hold_object", "res://Inventory/UnriggedModels/Fleshlight/FleshlightSocketStraw.tscn"]})
-		saynn("Some minutes later, Socket walks into the room, sipping something out of her.. pussy.. through a straw.")
+		saynn("Спустя несколько минут в комнату входит Сокет, потягивая что-то из своей... киски... через трубочку.")
 
-		saynn("[say=socket]Heya![/say]")
+		saynn("[say=socket]Хей![/say]")
 
-		saynn("You raise a brow. Eliza comes back too.")
+		saynn("Вы удивленно приподнимаете бровь. Элиза тоже возвращается.")
 
-		saynn("[say=eliza]I think you two know each other, right?[/say]")
+		saynn("[say=eliza]Кажется, вы двое знакомы, верно?[/say]")
 
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
-		saynn("[say=socket]Yeah, {pc.he} helped me a lot! The least I can do is help back.[/say]")
+		saynn("[say=socket]Да, {pc.he} мне очень помогла! Меньшее, что я могу сделать — это помочь ей в ответ.[/say]")
 
-		saynn("Socket reaches her paw forward, offering you the fleshlight-like device.. that has a portal tuned to her crotch device.")
+		saynn("Сокет протягивает лапу, предлагая тебе устройство, похожее на флешлайт... портал которого настроен на её собственное устройство для клитора.")
 
-		saynn("Eliza grabs it first though.. she spreads the folds open with her digits and looks inside..")
+		saynn("Но Элиза хватает его первой... она раздвигает пальцами складки и заглядывает внутрь...")
 
-		saynn("[say=eliza]Wait, you have it filled with something already.[/say]")
+		saynn("[say=eliza]Погоди, оно у тебя уже чем-то наполнено![/say]")
 
-		saynn("[say=socket]Yep, it's cider. Use the straw, it's tasty![/say]")
+		saynn("[say=socket]Ага, это сидр. Пей через трубочку, очень вкусно![/say]")
 
-		saynn("Eliza sighs.")
+		saynn("Элиза вздыхает.")
 
-		saynn("[say=eliza]Hold on, I'm gonna go wash it I guess.[/say]")
+		saynn("[say=eliza]Так, погоди, я, пожалуй, пойду его помою.[/say]")
 
-		saynn("Eliza leaves you two alone for a bit.")
+		saynn("Элиза оставляет вас двоих наедине ненадолго.")
 
-		saynn("The awkward silence ensues.. but then Socket suddenly starts to squirm.")
+		saynn("Воцаряется неловкая тишина... но вдруг Сокет начинает внезапно ерзать.")
 
-		saynn("[say=socket]Ohh.. so cold.[/say]")
+		saynn("[say=socket]Охх... какое холодное.[/say]")
 
-		saynn("Eliza is washing all the cider out of Socket's pussy..")
+		saynn("Элиза вымывает весь сидр из киски Сокет...")
 
-		saynn("[say=pc]What's the plan exactly?[/say]")
+		saynn("[say=pc]Какой у нас вообще план?[/say]")
 
-		saynn("[say=socket]Why jerk off into a plastic bottle if you have me![/say]")
+		saynn("[say=socket]Зачем дрочить в пластиковую бутылку, если у тебя есть я![/say]")
 
-		saynn("That's.. fair. You have nothing against that.")
+		saynn("Это... справедливо. Ты не против.")
 
-		saynn("Soon, Eliza returns and hands the device back to Socket.")
+		saynn("Вскоре Элиза возвращается и протягивает устройство Сокет.")
 
-		saynn("[say=eliza]Here, it's clean now. We only want seed.[/say]")
+		saynn("[say=eliza]Вот, теперь он чистый. Нам нужно только семя.[/say]")
 
-		saynn("[say=socket]Oki![/say]")
+		saynn("[say=socket]Оки![/say]")
 
-		saynn("Socket's eyes lock onto yours.")
+		saynn("Взгляд Сокет впивается в твои глаза.")
 
-		saynn("[say=socket]I can do everything, just relax![/say]")
+		saynn("[say=socket]Я всё сделаю, просто расслабься![/say]")
 
-		saynn("Sure..")
+		saynn("Конечно...")
 
-		addButton("Continue", "See what happens next", "socket_tease")
+		addButton("Продолжить", "Смотреть, что будет дальше", "socket_tease")
 	if(state == "socket_tease"):
 		playAnimation(StageScene.SexFleshlight, "tease", {npc="socket", socketPussy=true, bodyState={exposedCrotch=true,hard=true}})
-		saynn("Without any hesitation, Socket takes a spot behind you and moves the fleshlight down to your pulsing length, aligning it with the tip.")
+		saynn("Без малейших колебаний Сокет устраивается позади тебя и опускает флешлайт на твой пульсирующий член, совмещая его с отверстием.")
 
-		saynn("She is being slow, just letting your member brush against her folds and prod away at the entrance itself.")
+		saynn("Она действует медленно, позволяя твоему члену скользить по её складкам и слегка надавливая на само входное отверстие.")
 
-		saynn("You can feel the warmness of that slit.. how it twitches when her clit gets touched.. how it gets slick and ready for more.. nothing fake about it..")
+		saynn("Ты чувствуешь тепло этой щели... как она подергивается, когда касаются её клитора... как она становится влажной и готовой к большему... в этом нет ничего искусственного...")
 
-		saynn("Socket sees a drop of precum leaking from the tip of your member. She catches it with the fleshlight and spreads it along her sensitive flesh.")
+		saynn("Сокет замечает каплю предэякулята, сочащуюся с кончика твоего члена. Она подхватывает её мастурбатором и размазывает по своей чувствительной плоти.")
 
-		saynn("[say=socket]Looks like you're ready.[/say]")
+		saynn("[say=socket]Похоже, ты готов.[/say]")
 
-		saynn("Eliza just leans against one of the walls, watching the process with great fascination.")
+		saynn("Элиза просто прислонилась к одной из стен, с огромным интересом наблюдая за процессом.")
 
-		addButton("Continue", "See what happens next", "socket_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "socket_sex")
 	if(state == "socket_sex"):
 		playAnimation(StageScene.SexFleshlight, "sex", {npc="socket", socketPussy=true, bodyState={exposedCrotch=true,hard=true}})
-		saynn("Socket puts more pressure, allowing your {pc.penis} to part the petals of her flower and slide inside her! Her inner walls clench around your shaft nicely, providing some pleasurable friction as she begins to move the fleshlight back and forth.. making you fuck her raw..")
+		saynn("Сокет нажимает сильнее, позволяя твоему {pc.penis} раздвинуть лепестки её цветка и скользнуть внутрь! Её внутренние стенки приятно сжимаются вокруг твоего ствола, создавая приятное трение, пока она начинает двигать мастурбатор вперед-назад... заставляя тебя трахать её до красноты...")
 
-		saynn("She rests her chin on your shoulder and looks down at the action.")
+		saynn("Она кладет подбородок тебе на плечо и смотрит вниз на происходящее.")
 
-		saynn("[say=socket]You have a nice cock. Feels pretty nice inside me.[/say]")
+		saynn("[say=socket]У тебя классный член. Внутри он ощущается очень приятно.[/say]")
 
-		saynn("[say=pc]Yeah.. thanks.[/say]")
+		saynn("[say=pc]Ага... спасибо.[/say]")
 
-		saynn("You meet her motions ever so slightly, your member reaching deep within her, kissing her womb.")
+		saynn("Ты слегка подстраиваешься под её движения, твой член проникает глубоко внутрь, касаясь самой шейки матки.")
 
-		saynn("Soon, you begin to pant. Little grunts escape your lips as Socket just keeps impaling her slit onto your shaft..")
+		saynn("Вскоре ты начинаешь тяжело дышать. С твоих губ срываются короткие стоны, пока Сокет продолжает насаживаться своей щелью на твой член...")
 
-		saynn("[say=socket]I can do it faster. My pussy walls are augmented against most types of damage, including physical.[/say]")
+		saynn("[say=socket]Я могу делать это быстрее. Стенки моей киски усилены против большинства видов повреждений, включая физические.[/say]")
 
-		saynn("[say=pc]So you're like a.. perfect fuckdoll.[/say]")
+		saynn("[say=pc]То есть ты типа... идеальная секс-кукла?[/say]")
 
-		saynn("She giggles softly.")
+		saynn("Она тихо хихикает.")
 
-		saynn("[say=socket]You could say that.[/say]")
+		saynn("[say=socket]Можно и так сказать.[/say]")
 
-		addButton("Continue", "See what happens next", "socket_faster")
+		addButton("Продолжить", "Смотреть, что будет дальше", "socket_faster")
 	if(state == "socket_faster"):
 		playAnimation(StageScene.SexFleshlight, "fast", {npc="socket", socketPussy=true, bodyState={exposedCrotch=true,hard=true}})
-		saynn("Socket increases the pace, dragging that fleshlight back and forth even faster, letting her inner walls to knead your cock as the pleasure makes her clench, her pussy coating your member with a layer of her juices.. while your dick is leaking pre inside her.")
+		saynn("Разъем ускоряет темп, дергая этот флешлайт туда-сюда еще быстрее, позволяя ее внутренним стенкам массировать твой член; от удовольствия она сжимается, покрывая твой агрегат слоем своих соков... в то время как твой член уже подтекает в нее предэякулятом.")
 
-		saynn("[say=socket]This should be enough of a pace![/say]")
+		saynn("[say=socket]Такого темпа должно хватить![/say]")
 
-		saynn("She is panting a bit.. but so do you. Socket is basically making you pound her pussy, slamming the fleshlight deep and hard.. so hard that there is an ever so slightly visible bump appearing on her belly each time.. as your cock pushes on her womb.")
+		saynn("Она немного тяжело дышит... но ты тоже. Разъем, по сути, заставляет тебя вколачивать свой член в ее киску, с силой вгоняя флешлайт глубоко и жестко... настолько сильно, что каждый раз на ее животе проступает едва заметный бугорок... когда твой член давит на ее матку.")
 
-		saynn("With such a perfect pussy, the peak is quickly approaching you.")
+		saynn("С такой идеальной киской пик удовольствия стремительно приближается.")
 
-		saynn("[say=pc]I'm gonna cum.. inside you.[/say]")
+		saynn("[say=pc]Я сейчас кончу... прямо в тебя.[/say]")
 
-		saynn("[say=socket]Make sure you don't waste even a drop! Or Eliza will be angry with us.[/say]")
+		saynn("[say=socket]Следи, чтобы не профукать ни капли! А то Элиза будет на нас злиться.[/say]")
 
-		saynn("Eliza bites her lip.")
+		saynn("Элиза прикусывает губу.")
 
-		saynn("[say=eliza]Oh yeah, I sure will be~.[/say]")
+		saynn("[say=eliza]О да, еще как буду~.[/say]")
 
-		saynn("The slick hotness.. the way her portable fuckhole treats you.. it makes you grunt.")
+		saynn("Эта скользкая жара... то, как её портативная дырка принимает тебя... заставляет тебя кряхтеть.")
 
-		addButton("Orgasm", "Stuff that fleshlight full", "process_cum")
+		addButton("Оргазм", "Забей эту мастурбаторку до краев", "process_cum")
 	if(state == "process_cum"):
 		playAnimation(StageScene.SexFleshlight, "inside", {npc="socket", socketPussy=true, bodyState={exposedCrotch=true,hard=true}})
-		saynn("As soon as her pussy pushes you over the edge, Socket brings the fleshlight down hard, making sure your whole pulsing length is inside her.")
+		saynn("Как только её киска доводит тебя до края, Сокет с силой насаживается на мастурбатор, следя за тем, чтобы вся твоя пульсирующая длина оказалась внутри неё.")
 
-		saynn("[say=pc]Ghh..[/say]")
+		saynn("[say=pc]Гхх..[/say]")
 
-		saynn("You grunt and growl, your body shivering in waves while your cock starts to throb inside her, pumping Socket's inviting slit with thick, creamy {pc.cum}, more and more of it. Her tight inner walls are kneading your shaft, milking your balls for all of their seed.")
+		saynn("Ты кряхтишь и рычишь, твоё тело пробивает дрожь, а член начинает пульсировать внутри неё, выплескивая в манящую щель Сокет всё больше и больше густой, кремовой {pc.cum}. Её тугие внутренние стенки сжимают твой ствол, выжимая из твоих яичек всё до последней капли семени.")
 
-		saynn("[say=pc]Fuck..[/say]")
+		saynn("[say=pc]Блядь..[/say]")
 
-		saynn("[say=socket]That's a big load.. hah.[/say]")
+		saynn("[say=socket]Ну и порция... хах.[/say]")
 
-		saynn("You throw your head back and let the never-ending ecstatic waves flow through you.. your {pc.penis} still filling the fleshlight.")
+		saynn("Ты запрокидываешь голову, позволяя бесконечным волнам экстаза проходить сквозь тебя... а твоя {pc.penis} всё еще наполняет мастурбатор.")
 
-		saynn("[say=pc]Gh..[/say]")
+		saynn("[say=pc]Гх..[/say]")
 
-		saynn("That felt good..")
+		saynn("Это было хорошо...")
 
-		addButton("Continue", "See what happens next", "socket_gives_fleshlight_back")
+		addButton("Продолжить", "Смотреть, что будет дальше", "socket_gives_fleshlight_back")
 	if(state == "socket_gives_fleshlight_back"):
 		playAnimation(StageScene.Duo, "stand", {pc="socket", npc="eliza"})
 		GM.pc.setLocation("med_nearmilking")
-		saynn("Only when Socket is certain for sure that your orgasm has ended, she carefully pulls the fleshlight off of your shaft, making sure to hold it in a way that won't spill anything.")
+		saynn("Только когда Сокет окончательно убеждается, что твой оргазм подошел к концу, она осторожно снимает флешлайт с твоего члена, стараясь держать его так, чтобы ничего не пролилось.")
 
-		saynn("[say=socket]Oh, there is some left on you still![/say]")
+		saynn("[say=socket]Ох, на тебе всё еще кое-что осталось![/say]")
 
-		saynn("She holds the fleshlight under the tip of your cock as her digits grasp it near the base and slide along it, catching any mess and then letting it drip into her stuffed pussy..")
+		saynn("Она подставляет флешлайт под кончик твоего члена, обхватив его пальцами у основания и проводя ими вдоль ствола, собирая всю смазку, а затем позволяя ей стекать прямо в её набитую киску...")
 
-		saynn("After that, she hands the full fleshlight to Eliza.")
+		saynn("После этого она передает полный флешлайт Элизе.")
 
-		saynn("[say=socket]There you go! Wait, where is the straw..[/say]")
+		saynn("[say=socket]Вот и всё! Погоди, а где же соломинка...[/say]")
 
-		saynn("[say=eliza]It's okay, I don't need it.[/say]")
+		saynn("[say=eliza]Всё в порядке, она мне не нужна.[/say]")
 
-		saynn("[say=socket]But I do! Will have to go grab another one.[/say]")
+		saynn("[say=socket]А мне нужна! Придется сходить за другой.[/say]")
 
-		saynn("Eliza smiles and puts the lid onto the fleshlight, covering up the creamed pussy.. while you're trying to catch your breath.")
+		saynn("Элиза улыбается и накрывает флешлайт крышкой, пряча в ней разбухшую от спермы киску, пока ты пытаешься восстановить дыхание.")
 
-		saynn("[say=eliza]Thank you for your donation, I will go get this deposited right away~.[/say]")
+		saynn("[say=eliza]Спасибо за ваш донорский вклад, я сейчас же пойду всё это сдам~.[/say]")
 
-		saynn("You nod..")
+		saynn("Ты киваешь...")
 
-		saynn("It's time to go.")
+		saynn("Пора идти.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

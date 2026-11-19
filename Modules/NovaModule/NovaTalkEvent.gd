@@ -11,11 +11,11 @@ func run(_triggerID, _args):
 		return
 	
 	if(!GM.main.getModuleFlag("NovaModule", "Nova_Introduced")):
-		saynn("You see some guard patrolling this zone")
+		saynn("Вы видите, как по этой зоне патрулирует какой-то охранник")
 	else:
-		saynn("You see Nova patrolling this zone")
+		saynn("Вы видите, как по этой зоне патрулирует Нова")
 	if(GM.main.getModuleFlag("NovaModule", "Nova_NotThereToday", false)):
-		addDisabledButton("Nova", "She is not here today")
+		addDisabledButton("Нова", "Сегодня её здесь нет")
 	else:
 		addButtonUnlessLate("Nova", "Talk to the husky", "talk")
 

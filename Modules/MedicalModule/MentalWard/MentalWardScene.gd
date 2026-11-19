@@ -55,66 +55,66 @@ func _run():
 		playAnimation(StageScene.Solo, "kneel")
 		GM.pc.setLocation("medical_paddedcell_player")
 		
-		saynn("You’re stuck in a mental ward cell with nothing to do. Padded walls surround you, even the bulky door has a soft layer to it. The only thing connecting you to the outside world is a small reinforced window and an air vent that’s far above your reach.")
+		saynn("Ты заперт в камере психиатрического отделения, и делать здесь совершенно нечего. Вокруг — мягкие стены, даже у массивной двери есть защитный слой. Единственное, что связывает тебя с внешним миром — это маленькое укрепленное окошко и вентиляционная решетка высоко под потолком, до которой не дотянуться.")
 		
 		if(GM.pc.hasBlockedHands()):
-			saynn("You sit against a wall, constantly hugging yourself. Maybe this place isn’t that bad.")
+			saynn("Ты сидишь, прислонившись к стене, и постоянно обхватываешь себя руками. Может, это место не такое уж и плохое.")
 		else:
-			saynn("You sit against a wall, not constantly hugging yourself for once.")
-		#addButton("Continue", "Time to go", "endthescene")
+			saynn("Ты сидишь, прислонившись к стене, и на этот раз не пытаешься постоянно обхватить себя руками.")
+		#addButton("Продолжить", "Пора идти", "endthescene")
 		
 		var behavior = getModuleFlag("MedicalModule", "Mental_PCBehavior", 0.0)
 		var sanity = getModuleFlag("MedicalModule", "Mental_PCSanity", 0.0)
 		
-		say("Your behavior: ")
+		say("Твое поведение: ")
 		if(behavior <= 0.1):
-			sayn("Staff thinks your behavior is awful")
+			sayn("Персонал считает твое поведение ужасным")
 		elif(behavior <= 0.3):
-			sayn("You’re constantly being monitored by staff")
+			sayn("За тобой постоянно наблюдает персонал")
 		elif(behavior <= 0.45):
-			sayn("Staff is very careful with you")
+			sayn("Персонал очень осторожен с тобой")
 		elif(behavior <= 0.7):
-			sayn("Staff watches you")
+			sayn("Персонал следит за тобой")
 		elif(behavior <= 0.8):
-			sayn("Staff doesn’t track you very much")
+			sayn("Персонал не особо следит за тобой")
 		elif(behavior <= 0.9):
-			sayn("You’re on very good terms")
+			sayn("Вы в очень хороших отношениях")
 		else:
-			sayn("You’re a perfect test subject")
+			sayn("Ты — идеальный подопытный")
 			
-		say("Your sanity: ")
+		say("Твой рассудок: ")
 		if(sanity <= 0.1):
-			sayn("Completely spaced out")
+			sayn("Полный аут")
 		elif(sanity <= 0.4):
-			sayn("Very low")
+			sayn("Очень низкий")
 		elif(sanity <= 0.6):
-			sayn("Recovering")
+			sayn("Восстанавливается")
 		elif(sanity <= 0.8):
-			sayn("Almost recovered")
+			sayn("Почти восстановился")
 		else:
-			sayn("Clear mind")
+			sayn("Ясный ум")
 			
-		addButton("Wait", "Spend some time idling", "rest")
-		addButton("Struggle", "Try to struggle out of your restraints", "struggle")
+		addButton("Подождать", "Просто постоять без дела", "rest")
+		addButton("Сопротивление", "Попытаться вырваться из пут", "struggle")
 		if(getModuleFlag("MedicalModule", "Mental_HasKeycard", false)):
-			addButton("Escape", "Use the keycard to escape", "doescape")
+			addButton("Побег", "Используй ключ-карту, чтобы сбежать", "doescape")
 	
 	if(state == "sleeping"):
-		saynn("The light in your cell has turned off, signaling that it’s late. You lay down on the padded floor and try to get some sleep.")
+		saynn("Свет в камере погас, сигнализируя о том, что настала поздняя ночь. Ты ложишься на мягкий пол и пытаешься вздремнуть.")
 		
-		addButton("Sleep", "Don’t even have a pillow", "dosleep")
+		addButton("Спать", "Даже подушки нет", "dosleep")
 		
 	if(state == "dosleep"):
-		saynn("You sleep in your cell.")
+		saynn("Ты спишь в своей камере.")
 		
-		saynn("Welcome to day "+str(GM.main.getDays())+" of your sentence")
+		saynn("Добро пожаловать в "+str(GM.main.getDays())+" твоего срока")
 		
-		addButton("Continue", "Time to wake up", "")
+		addButton("Продолжить", "Пора просыпаться", "")
 
 	if(state == "resting"):
-		saynn("You spend some time idling in your cell..")
+		saynn("Ты проводишь время в камере без дела...")
 		
-		addButton("Continue", "Isn't this cell nice", "afterrest")
+		addButton("Продолжить", "А разве эта камера не милашка?", "afterrest")
 
 func _react(_action: String, _args):
 	if(_action == "afterrest"):

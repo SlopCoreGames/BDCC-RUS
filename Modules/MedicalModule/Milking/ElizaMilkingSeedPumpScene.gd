@@ -10,85 +10,85 @@ func _run():
 		addCharacter("eliza")
 		aimCameraAndSetLocName("med_milkingroom")
 		playAnimation(StageScene.Grope, "tease", {pc="pc", npc="eliza", milkTank=true, bodyState={exposedCrotch=true}})
-		saynn("You ask the doctor to milk you for your seed. She nods and brings you into the special room. She picks a stall that has some milking equipment installed..")
+		saynn("Вы просите врача подоить вас ради семени. Она кивает и ведет вас в специальную комнату. Она выбирает стойло, в котором уже установлено доильное оборудование.")
 
-		saynn("You expose your {pc.penis} and wait for her orders. You feel excited a bit, your member is already getting hard..")
+		saynn("Вы обнажаете свой {pc.penis} и ждете её команд. Вы чувствуете легкое возбуждение, ваш член уже начинает твердеть...")
 
-		saynn("[say=eliza]Perfect. Let's lock you in.[/say]")
+		saynn("[say=eliza]Идеально. Давай запрём тебя здесь.[/say]")
 
-		saynn("She gestures for you to get into the right spot.. in front of a long pipe.. that has some cuff-like restraints attached to it. Your eyes also notice a special pump that is connected to a big fluid tank with some flexible tubes.")
+		saynn("Она жестом указывает вам занять нужное место... перед длинной трубой... к которой прикреплены фиксаторы, похожие на манжеты. Ваши глаза также замечают специальный насос, соединенный гибкими трубками с большим резервуаром для жидкости.")
 
-		saynn("Doctor's paw lands on your back and starts putting pressure on it, inviting you to bend forward.")
+		saynn("Лапа доктора ложится вам на спину и начинает надавливать, приглашая вас наклониться вперед.")
 
-		addButton("Bend forward", "Do what she wants you to do", "get_locked")
+		addButton("Наклониться вперед", "Сделать то, что она хочет", "get_locked")
 	if(state == "get_locked"):
 		playAnimation(StageScene.MilkingStallSolo, "start", {pc="pc", npc="eliza", bodyState={exposedCrotch=true, hard=true, chains=[["hoseshort", "penisPump", "scene", "milktank"], ["short", "neck", "scene", "bottompipe"]]}})
-		saynn("You follow the guidance of that paw, slowly bending forward and assuming the final position. You place your wrists in the offered holes for them in the restraints.. and watch as the doctor locks them up. Then, she also pulls out a short chain leash, attaching one end to your collar and the other to the sturdy pipe..")
+		saynn("Вы следуете указаниям этой лапы, медленно наклоняясь вперед и принимая окончательную позу. Вы вставляете запястья в предназначенные для них отверстия в фиксаторах... и наблюдаете, как доктор затягивает их. Затем она также достает короткий поводок на цепи, пристегивая один конец к вашему ошейнику, а другой — к прочной трубе...")
 
-		saynn("[say=eliza]We don't want our bull to run off unmilked, do we~.[/say]")
+		saynn("[say=eliza]Мы ведь не хотим, чтобы наш бычок сбежал недоенным, верно~?[/say]")
 
-		saynn("Fair enough..")
+		saynn("Справедливо...")
 
-		saynn("Eliza grabs that specialized penis pump and kneels near you. Her paws reach out to your {pc.penis}, carefully securing the pump onto your already erect cock. The negative pressure inside it allows it so sit on your crotch without any problems..")
+		saynn("Элиза хватает этот специализированный пенисный насос и опускается перед вами на колени. Её лапы тянутся к вашему {pc.penis}, осторожно закрепляя насос на вашем уже эрегированном члене. Отрицательное давление внутри позволяет ему без проблем плотно прилегать к вашей паху.")
 
-		addButton("Continue", "See what happens next", "do_milk_start")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_milk_start")
 	if(state == "do_milk_start"):
 		playAnimation(StageScene.MilkingStallSolo, "milking", {pc="pc", npc="eliza", bodyState={exposedCrotch=true, hard=true, chains=[["hoseshort", "penisPump", "scene", "milktank"], ["short", "neck", "scene", "bottompipe"]]}})
-		saynn("She turns on the pump and then sits in front of you, just admiring the process.")
+		saynn("Она включает насос и садится перед вами, просто любуясь процессом.")
 
-		saynn("Almost immediately, the pump springs into action. It features a round soft 'pleasure' ring that begins its automated slide along your shaft, firmly hugging your girth.")
+		saynn("Почти мгновенно насос приходит в действие. Он оснащен круглым мягким «удовольственным» кольцом, которое начинает свое автоматическое скольжение вдоль вашего ствола, крепко обхватывая его обхват.")
 
-		saynn("[say=pc]Mhh..[/say]")
+		saynn("[say=pc]Ммм..[/say]")
 
-		saynn("It clearly lacks any.. love.. that a personal touch can give.. but it still feels good, each stroke sends a wave of sensations rippling down your length. Your cock responds with subtle twitches, precum dripping from its tip.")
+		saynn("В этом явно не хватает той... нежности... которую может дать прикосновение рук... но всё равно приятно: каждый толчок посылает волну ощущений по всей длине. Ваш член отвечает едва заметными подергиваниями, а с кончика капает предэякулят.")
 
-		saynn("[say=eliza]Just let it do its job, don't hold back~.[/say]")
+		saynn("[say=eliza]Просто дай ему делать свою работу, не сдерживайся~.[/say]")
 
-		saynn("You nod and just stand as still as you can, allowing the pump to stroke your member..")
+		saynn("Вы киваете и стараетесь стоять как можно неподвижнее, позволяя насосу ласкать ваш член...")
 
-		addButton("Continue", "See what happens next", "do_milk_fast")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_milk_fast")
 	if(state == "do_milk_fast"):
 		playAnimation(StageScene.MilkingStallSolo, "fast", {pc="pc", npc="eliza", bodyState={exposedCrotch=true, hard=true, chains=[["hoseshort", "penisPump", "scene", "milktank"], ["short", "neck", "scene", "bottompipe"]]}})
-		saynn("But stroking is not all that this industrial piece of technology can do. You suddenly feel the pump.. pulling on your cock.. it seems to alternate between syphoning most of the air out, creating a strong negative pressure inside.. and then pumping it back, making you feel like your cock is getting pleasured hard..")
+		saynn("Но поглаживания — это еще не всё, на что способна эта промышленная махина. Внезапно ты чувствуешь, как насос... начинает тянуть твой член... Кажется, он работает в режиме чередования: то высасывает почти весь воздух, создавая мощное отрицательное давление внутри... то накачивает его обратно, заставляя твой член получать невероятно жесткое удовольствие...")
 
-		saynn("Together with that pleasure ring, your legs begin to feel weak, quiet grunts slipping from your lips.. It feels amazing.. like you're fucking the most tight pussy ever.. Your toes curl up as you squirm against the restraints and chains..")
+		saynn("Вместе с этим волной наслаждения твои ноги начинают слабеть, а с губ срываются тихие стоны... Это чертовски приятно... как будто ты трахаешь самую тугую киску в мире... Твои пальцы ног поджимаются, пока ты извиваешься в путах и цепях...")
 
-		saynn("[say=pc]Mghhh-.. mhh..[/say]")
+		saynn("[say=pc]Мгххх... ммм...[/say]")
 
-		saynn("The relentless stroking pushes you closer and closer to your edge. Eliza's smug smile shines brightly as she watches you endure it all. Your balls are twitching more.. you feel like you can't hold back anymore..")
+		saynn("Неумолимые поглаживания подталкивают тебя всё ближе и ближе к краю. Самодовольная улыбка Элизы сияет, пока она наблюдает за твоими мучениями. Твои яйца дергаются всё сильнее... кажется, ты уже не сможешь сдерживаться...")
 
-		addButton("Cum", "Let it happen", "process_cum")
+		addButton("Кончить", "Пусть всё идет своим чередом", "process_cum")
 	if(state == "process_cum"):
 		playAnimation(StageScene.MilkingStallSolo, "cum", {pc="pc", npc="eliza", bodyState={exposedCrotch=true, hard=true, chains=[["hoseshort", "penisPump", "scene", "milktank"], ["short", "neck", "scene", "bottompipe"]]}})
-		saynn("You cum hard.. Your body shudders as your {pc.penis} starts to throb and shoot its load in juicy waves. You pant and grunt heavily while the clear tube of the pump begins to quickly fill with your thick, hot seed.. before it all gets pumped out into the connected fluid tank.")
+		saynn("Ты кончаешь мощно... Твое тело содрогается, когда твой {pc.penis} начинает пульсировать и выбрасывать порции семени сочными волнами. Ты тяжело дышишь и стонешь, пока прозрачная трубка насоса быстро наполняется твоим густым, горячим семенем... прежде чем всё это будет выкачано в подключенный резервуар для жидкости.")
 
-		saynn("[say=eliza]Let it milk you dry.. We need every bit of that seed~.[/say]")
+		saynn("[say=eliza]Позволь ему выдоить тебя досуха... Нам нужна каждая капля твоего семени~.[/say]")
 
-		saynn("[say=pc]Nghh..[/say]")
+		saynn("[say=pc]Нгхх..[/say]")
 
-		saynn("Not like you have a choice in this, the pump just keeps stroking your throbbing cock and pleasuring it with negative pressure, extending your orgasm longer, each motion coaxing out and collecting more of your {pc.cum}.. until your balls begin to feel completely milked dry..")
+		saynn("У тебя всё равно нет выбора: насос продолжает непрерывно ласкать твой пульсирующий член отрицательным давлением, растягивая твой оргазм. Каждое движение выманивает и собирает всё больше твоего {pc.cum}... пока не возникнет ощущение, что твои яйца выдоены до последней капли...")
 
-		saynn("By the end of it, your body feels spent.. a satisfied smile curving Eliza's lips as she watches the seed level in the fluid tank rising from the last bits of your spunk reaching it.")
+		saynn("К концу процесса твоё тело кажется совершенно изнурённым... Элиза довольно улыбается, наблюдая, как уровень семени в резервуаре поднимается от последних капель твоей тягучей жижи.")
 
-		saynn("[say=eliza]Pure.. perfection.[/say]")
+		saynn("[say=eliza]Чистое... совершенство.[/say]")
 
-		saynn("She switches off the pump and begins to undo the restraints..")
+		saynn("Она выключает насос и начинает расстегивать ремни...")
 
-		addButton("Continue", "See what happens next", "undo_restraints")
+		addButton("Продолжить", "Смотреть, что будет дальше", "undo_restraints")
 	if(state == "undo_restraints"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		GM.pc.setLocation("med_nearmilking")
-		saynn("She helps you to get up, unclipping the leash, unlocking the cuffs and taking off the penis pump. Feels weird to be standing straight again.. but your cock not being stroked constantly feels even weirder..")
+		saynn("Она помогает тебе подняться, отстегивая поводок, отпирая наручники и снимая пенисный насос. Странно снова стоять прямо... но то, что твой член больше не подвергается постоянной стимуляции, ощущается ещё страннее...")
 
-		saynn("[say=eliza]Thank you for being such an eager contributor~.[/say]")
+		saynn("[say=eliza]Спасибо, что был таким щедрым донором~.[/say]")
 
-		saynn("After that, she just brings you out into the corridor.")
+		saynn("После этого она просто выводит тебя в коридор.")
 
-		saynn("[say=eliza]Hope you will find your way back, I gotta go fill in some paperwork.[/say]")
+		saynn("[say=eliza]Надеюсь, ты ещё заглянешь к нам, а мне пора заполнить кое-какие бумажки.[/say]")
 
-		saynn("Time to go..")
+		saynn("Пора идти..")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -10,96 +10,96 @@ func _run():
 	if(state == ""):
 		addCharacter("eliza")
 		if (isFirst):
-			saynn("The feline seems to be filling out some reports, barely paying any attention now.")
+			saynn("Кошечка, похоже, заполняет какие-то отчеты, почти не обращая на тебя внимания.")
 
-			saynn("[say=pc]Hey.. uhh.. I want to donate my breast milk.[/say]")
+			saynn("[say=pc]Эй.. эээ.. я хочу сдать свое грудное молоко.[/say]")
 
-			saynn("She doesn't even raise her eyes.")
+			saynn("Она даже глаз от бумаг не поднимает.")
 
-			saynn("[say=eliza]Alright, do you have it on you?[/say]")
+			saynn("[say=eliza]Ладно, оно с собой?[/say]")
 
-			saynn("You tilt your head slightly, unsure what to say.")
+			saynn("Ты слегка наклоняешь голову, не зная, что ответить.")
 
-			saynn("[say=eliza]The fluid container, can I have it?[/say]")
+			saynn("[say=eliza]Контейнер для жидкости, можно мне его взять?[/say]")
 
-			saynn("You scratch behind your head.")
+			saynn("Ты чешешь затылок.")
 
-			saynn("[say=pc]Well, it's in my breasts.[/say]")
+			saynn("[say=pc]Ну, оно у меня в груди.[/say]")
 
-			saynn("Eliza finally pulls her gaze away and looks at your chest. Then it hits her.")
+			saynn("Элиза наконец отрывает взгляд от бумаг и смотрит тебе на грудь. И тут до неё доходит.")
 
-			saynn("[say=eliza]OHHH. You wanna be milked![/say]")
+			saynn("[say=eliza]О-О-О! Ты хочешь, чтобы тебя подоили![/say]")
 
-			saynn("Everyone in the room looks at you.. awkward..")
+			saynn("Все в комнате смотрят на тебя... неловко...")
 
-			saynn("[say=eliza]Sorry. Yeah, you came to the right place~. Follow me, inmate. I'm a professional, don't worry.[/say]")
+			saynn("[say=eliza]Прости. Да, ты пришел по адресу~. Иди за мной, заключенный. Не волнуйся, я профессионал.[/say]")
 
 		else:
-			saynn("You ask Eliza to be milked. She nods and asks you to follow her..")
+			saynn("Ты просишь Элизу подоить тебя. Она кивает и просит тебя следовать за ней...")
 
-		addButton("Follow", "See where she will bring you", "in_heaven")
+		addButton("Следовать", "Посмотреть, куда она вас приведет", "in_heaven")
 	if(state == "in_heaven"):
 		aimCameraAndSetLocName("med_milkingroom")
 		playAnimation(StageScene.Grope, "tease", {pc="pc", npc="eliza", milkTank=true, bodyState={exposedChest=true}})
-		saynn("Doctor brings you into a special room. It seems to have pipes going across its ceiling that connect massive fluid tanks to the stalls.")
+		saynn("Доктор приводит тебя в специальную комнату. Кажется, под потолком здесь проходят трубы, соединяющие массивные резервуары с жидкостью с боксами.")
 
-		saynn("Eliza picks the stall that doesn't have any equipment in it.. just a small empty milk tank.")
+		saynn("Элиза выбирает бокс, в котором нет никакого оборудования... только маленький пустой бак для молока.")
 
-		saynn("[say=eliza]I will need access to your.. you know.[/say]")
+		saynn("[say=eliza]Мне понадобится доступ к твоим... ну, ты понимаешь.[/say]")
 
-		saynn("You expose your {pc.breasts}, as ordered by the feline.")
+		saynn("Ты обнажаешь свои {pc.breasts}, как и велела кошка.")
 
-		saynn("Eliza quickly brings some kind of soft cushion and places it in front of the fluid container. She then gestures for you to kneel on it.")
+		saynn("Элиза быстро приносит какую-то мягкую подушку и кладет ее перед контейнером для жидкости. Затем она жестом предлагает тебе опуститься на нее на колени.")
 
-		addButton("Kneel", "Might as well", "do_kneel")
+		addButton("Встать на колени", "Почему бы и нет", "do_kneel")
 	if(state == "do_kneel"):
 		playAnimation(StageScene.BreastGroping, "tease", {pc="eliza", npc="pc", milkTank=true, npcBodyState={exposedChest=true}})
-		saynn("You obey, positioning yourself on that soft cushion and lowering yourself to your knees. For some reason you feel.. excitement.. growing inside you. Your nips stiffen slightly as you look at the milk tank in front of you.. its lid is off..")
+		saynn("Ты повинуешься, устраиваясь на мягкой подушке и опускаясь на колени. Почему-то ты чувствуешь, как внутри нарастает... возбуждение. Твои соски слегка твердеют, когда ты смотришь на бак для молока перед собой... его крышка снята...")
 
-		saynn("[say=eliza]Let's proceed, try not to squirm too much. Just so we don't waste it.[/say]")
+		saynn("[say=eliza]Давай приступим, старайся не слишком ерзать. Просто чтобы мы всё не перевели впустую.[/say]")
 
-		saynn("The feline kneels behind you. She reaches out and, with delicate precision, cups your breasts with her skilled hands. Her touch is both commanding.. and tender.. her clawed digits exploring the softness of your curves..")
+		saynn("Кошка опускается на колени позади тебя. Она протягивает руки и с изысканной точностью обхватывает твои груди своими умелыми ладонями. Её прикосновения одновременно властные... и нежные... её когтистые пальцы исследуют мягкость твоих изгибов...")
 
-		addButton("Continue", "See what happens next", "do_milk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_milk")
 	if(state == "do_milk"):
 		playAnimation(StageScene.BreastGroping, "grope", {pc="eliza", npc="pc", milkTank=true, npcBodyState={exposedChest=true, hard=true}})
-		saynn("The doctor starts the process slowly, her touch light at first.. just a gentle, rhythmic compression of your soft mounds. Your nipples harden fully from her caresses.. an occasional pinch sends a shudder through your body. The coolness of the air dances along your sensitive flesh as her hands work methodically..")
+		saynn("Доктор начинает процесс медленно, поначалу касаясь тебя легко... лишь мягкое, ритмичное сжимание твоих нежных холмиков. Твои соски полностью твердеют от её ласк... случайное щипка заставляет твоё тело содрогнуться. Прохлада воздуха танцует на твоей чувствительной плоти, пока её руки методично работают...")
 
-		saynn("And soon.. you feel the first few droplets of {pc.milk} emerging from your breasts.. hanging from the nips for a few seconds.. before falling into the milking tank.. the sight makes your heartbeat a little faster.")
+		saynn("И вскоре... ты чувствуешь, как первые капли {pc.milk} проступают из твоей груди... они на несколько секунд повисают на сосках... прежде чем упасть в доильный бак... от этого зрелища твоё сердце начинает биться чуть быстрее.")
 
-		saynn("After that, her paws begin to knead your breasts more firmly.. applying steady pressure and precise, teasing pinches on your stiff nips. You feel a rush of warmth and tingling pleasure spread through you as the droplets increase in numbers.. creating a small flow.. of your {pc.milk}..")
+		saynn("После этого её лапы начинают разминать твою грудь более уверенно... оказывая постоянное давление и совершая точные, дразнящие щипки за твои напряжённые соски. Ты чувствуешь прилив тепла и покалывающее удовольствие, разливающееся по телу, когда капли множатся... образуя небольшую струю... твоих {pc.milk}...")
 
-		saynn("Each squeeze of her palms extracts more of your creamy secretion. It feels good.. your lips slightly parted.. panting softly.. while this doctor keeps milking you.")
+		saynn("Каждое сжатие её ладоней извлекает всё больше твоего кремового секрета. Это приятно... твои губы слегка приоткрыты... ты тихо дышишь... пока эта доктор продолжает тебя доить.")
 
-		saynn("[say=eliza]Feels nice, eh~?[/say]")
+		saynn("[say=eliza]Приятно, да~?[/say]")
 
-		saynn("[say=pc]Y-yes..[/say]")
+		saynn("[say=pc]Д-да..[/say]")
 
-		saynn("The noise of your deep breathing mingles with the sounds of {pc.milk} droplets joining the rest.. the level in that milk tank slowly rising. Eliza's paws seem to work tirelessly.. kneading your {pc.breasts} in ways that keep the flow steady..")
+		saynn("Звук твоего глубокого дыхания смешивается со звуком капель {pc.milk}, присоединяющихся к остальным... уровень в молочном баке медленно растёт. Лапы Элизы, кажется, работают без устали... разминая твои {pc.breasts} так, чтобы поток оставался ровным...")
 
-		saynn("Time seems to stretch.. Your eyes close as you focus on the pleasurable sensations..")
+		saynn("Время словно растягивается.. Твои глаза закрываются, пока ты сосредоточена на приятных ощущениях..")
 
-		saynn("Eventually, the flow of your {pc.milk} begins to subside.. Eliza's rhythmic kneading slows down.. switching to gentle caressing.")
+		saynn("В конце концов, поток твоих {pc.milk} начинает иссякать.. Ритмичное разминание Элизы замедляется.. сменяясь нежным ласканием.")
 
-		addButton("Continue", "See what happens next", "do_milk_process")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_milk_process")
 	if(state == "do_milk_process"):
 		playAnimation(StageScene.BreastGroping, "tease", {pc="eliza", npc="pc", milkTank=true, npcBodyState={exposedChest=true, hard=true}})
 		GM.pc.setLocation("med_nearmilking")
-		saynn("She carefully releases your breasts, after ensuring that the last traces of your {pc.milk} got captured in the reservoir before you.")
+		saynn("Она осторожно отпускает твои груди, убедившись, что последние капли твоего {pc.milk} попали в резервуар перед тобой.")
 
-		saynn("[say=eliza]Thank you for donating your milk. You were incredible.[/say]")
+		saynn("[say=eliza]Спасибо за донорство молока. Ты была великолепна![/say]")
 
-		saynn("The genuine warmth in her tone washes over you.")
+		saynn("Искреннее тепло в её голосе окутывает тебя.")
 
-		saynn("[say=eliza]Please come again when your beaties are full~.[/say]")
+		saynn("[say=eliza]Приходи ещё, когда твои сиськи наполнятся~.[/say]")
 
-		saynn("She then helps you to get up. The milking is done.. so she brings you out into the corridor.")
+		saynn("Затем она помогает тебе подняться. Дойка окончена.. и она выводит тебя в коридор.")
 
-		saynn("[say=eliza]Hope you will find your way back, I gotta go fill in some paperwork.[/say]")
+		saynn("[say=eliza]Надеюсь, ты ещё заглянешь к нам, а мне пора заполнить кое-какие бумажки.[/say]")
 
-		saynn("Time to go..")
+		saynn("Пора идти..")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -8,19 +8,19 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Solo, "stand", {pc="pc"})
 		
-		saynn("There are "+str(GM.main.PSH.getPossibleSlaveriesAmount(false))+" possible player slavery scenarios.")
+		saynn("Доступно "+str(GM.main.PSH.getPossibleSlaveriesAmount(false))+" возможных сценариев рабства игрока.")
 		
-		saynn("You can either let the game choose randomly or pick one yourself.")
+		saynn("Вы можете либо позволить игре выбрать случайный вариант, либо выбрать сценарий самостоятельно.")
 		
-		saynn("Keep in mind that a randomly-picked scenario might include kinks that you might not like.")
+		saynn("Имейте в виду, что в случайно выбранном сценарии могут оказаться кинки, которые вам не понравятся.")
 		
-		addButton("Random scenario", "Leave it all to random chance", "startRandomSlavery")
-		addButton("Pick scenario", "Pick what kind of slavery you want to experience", "pick_menu")
+		addButton("Случайный сценарий", "Предоставить всё случаю", "startRandomSlavery")
+		addButton("Выбрать сценарий", "Выберите вид рабства, который хотите испытать", "pick_menu")
 
 	if(state == "pick_menu"):
-		saynn("Which slavery scenario do you want to experience?")
+		saynn("Какой сценарий рабства вы хотите испытать?")
 		
-		saynn("Unlocked Endings:")
+		saynn("Открытые концовки:")
 		sayn(GM.main.PSH.getEndingsInfo())
 		
 		for slaveryID in GlobalRegistry.getPlayerSlaveryDefs():

@@ -15,8 +15,8 @@ func _reactInit():
 	
 func _run():
 	if(state == ""):
-		saynn("You shouldn't see this ever.")
-		#addButton("Continue", "See what happens next", "endthescene")
+		saynn("Этого вообще не должно было случиться.")
+		#addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

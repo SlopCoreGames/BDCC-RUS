@@ -26,613 +26,613 @@ func _run():
 
 	if(state == ""):
 		playAnimation(StageScene.Sleeping, "sleep", {pc="pc"})
-		saynn("It's not easy to do so while the weird egg is in the same room as you.. but you try to get some rest. It helps that the bed is actually quite comfy.")
+		saynn("Не так-то просто расслабиться, когда в той же комнате находится это странное яйцо... но ты пытаешься хоть немного отдохнуть. К счастью, кровать на удивление удобная.")
 
-		saynn("Some time passes.. You almost doze off.. but then the intercom kicks in again..")
+		saynn("Проходит какое-то время... Ты почти проваливаешься в сон... но тут снова оживает интерком...")
 
-		addButton("Continue", "See what happens next", "scientists_order")
+		addButton("Продолжить", "Смотреть, что будет дальше", "scientists_order")
 	if(state == "scientists_order"):
 		addCharacter(GM.main.PS.getScientist1CharID())
 		addCharacter(GM.main.PS.getScientist2CharID())
 		playAnimation(StageScene.GivingBirth, "idle", {pc="pc"})
-		saynn("[say=sci1]Alright, we're back. You're still alive? That's better than what I expected.[/say]")
+		saynn("[say=sci1]Ладно, мы вернулись. Ты всё еще жив? Это лучше, чем я ожидал.[/say]")
 
-		saynn("You look around. The voice comes from the security camera that is staring at you.")
+		saynn("Ты оглядываешься по сторонам. Голос доносится из камеры наблюдения, которая пристально следит за тобой.")
 
-		saynn("[say=sci2]Yes, it seems the egg didn't hatch yet. But I think we're ready to do the first tests.[/say]")
+		saynn("[say=sci2]Да, похоже, яйцо еще не вылупилось. Но, думаю, мы готовы к первым тестам.[/say]")
 
-		saynn("[say=pc]Tests?[/say]")
+		saynn("[say=pc]Тестам?[/say]")
 
-		saynn("You sit on the edge of your bed.. awaiting your faith.")
+		saynn("Ты сидишь на краю кровати... ожидая своей участи.")
 
-		saynn("[say=sci1]You're a test subject, you do tests, don't be stupid. Now get up and approach the specimen. I really don't like my time being wasted.[/say]")
+		saynn("[say=sci1]Ты подопытный, ты проходишь тесты, не тупи. А теперь вставай и иди к образцу. Терпеть не могу, когда мое время тратят впустую.[/say]")
 
-		saynn("[say=pc]What if I don't wanna do that?[/say]")
+		saynn("[say=pc]А если не хочу?[/say]")
 
-		saynn("[say=sci1]We're just gonna space you and get another test subject in here.[/say]")
+		saynn("[say=sci1]Тогда мы просто пустим тебя в космос, а сюда затащим другого подопытного.[/say]")
 
-		saynn("Looks like there is not much of a choice..")
+		saynn("Похоже, выбора особо нет...")
 
-		saynn("[say=sci1]Start the countdown.[/say]")
+		saynn("[say=sci1]Запустить обратный отсчет.[/say]")
 
-		saynn("[say=sci2]Three.. Two..[/say]")
+		saynn("[say=sci2]Три.. Два..[/say]")
 
-		saynn("[say=pc]Alright, alright..[/say]")
+		saynn("[say=pc]Ладно, ладно..[/say]")
 
-		addButton("Egg", "Go approach the egg", "goApproach")
+		addButton("Яйцо", "Подойти к яйцу", "goApproach")
 	if(state == "goApproach"):
 		# (( Anim with egg
 		playAnimation(StageScene.SoloBigEgg, "stand")
 		aimCameraAndSetLocName("pstent_middle")
 		GM.pc.setLocation("pstent_middle")
-		saynn("Slowly, you get off the bed and start stepping towards the mysterious egg.. Who knows what is inside it.. so you move your legs as quietly as the cold concrete floor allows..")
+		saynn("Медленно, ты сползаешь с кровати и начинаешь шагать к таинственному яйцу... Кто знает, что внутри... поэтому ты переставляешь ноги так тихо, насколько позволяет холодный бетонный пол...")
 
-		saynn("Eventually, you reach it.. Saying anything out loud near it might trigger it somehow.. so you just quietly stare at the camera.")
+		saynn("Наконец, ты доходишь до него... Любое слово, сказанное вслух рядом с ним, может его спровоцировать... поэтому ты просто молча уставился в камеру.")
 
-		saynn("[say=sci2]Describe what you see.[/say]")
+		saynn("[say=sci2]Описать увиденное.[/say]")
 
-		saynn("You squint and furrow your brows.")
+		saynn("Ты прищуриваешься и хмуришь брови.")
 
-		saynn("[say=sci1]Either do what we say or start learning how to breathe void.[/say]")
+		saynn("[say=sci1]Либо делай, что велят, либо учись дышать пустотой.[/say]")
 
-		saynn("You sigh.")
+		saynn("Ты вздыхаешь.")
 
-		saynn("[say=pc]It's an egg. A huge one.[/say]")
+		saynn("[say=pc]Это яйцо. Огромное.[/say]")
 
-		saynn("[say=sci2]We see that. Any small details?[/say]")
+		saynn("[say=sci2]Мы это видим. Есть какие-нибудь детали?[/say]")
 
-		saynn("You start describing what you see.. the egg's surface is quite shiny and slimy.. but also bumpy in some spots. There might be some kind of closed opening at the top.. but you're not brave or stupid enough to stare into it.")
+		saynn("Ты начинаешь описывать увиденное... поверхность яйца довольно блестящая и склизкая... но местами она бугристая. Сверху может быть какое-то закрытое отверстие... но ты не настолько смел или глуп, чтобы всматриваться в него.")
 
-		saynn("The egg is resting in some kind of.. nest. A nest that you could only describe as organic.")
+		saynn("Яйцо покоится в чем-то вроде... гнезда. Гнезда, которое можно описать только как нечто органическое.")
 
-		saynn("The whole thing kinda reminds you of a huge fruit.. like a mango or something.. but way more grotesque..")
+		saynn("Всё это чем-то напоминает огромный фрукт... вроде манго или чего-то подобного... но куда более гротескное...")
 
-		saynn("[say=sci2]Mhm.. mhm.. any movement?[/say]")
+		saynn("[say=sci2]Мгм... мгм... есть какое-нибудь движение?[/say]")
 
-		saynn("You stare at it for some time. It feels like you saw some twitching.. but you're not sure.")
+		saynn("Ты какое-то время пристально смотришь на него. Кажется, будто ты заметил легкое подергивание... но ты не уверен.")
 
-		saynn("[say=pc]I don't know.[/say]")
+		saynn("[say=pc]Даже не знаю.[/say]")
 
-		saynn("[say=sci2]Alright, your next task is to do something with it. Touch it, feel it, anything that can help us.[/say]")
+		saynn("[say=sci2]Ладно, твоя следующая задача — что-нибудь с ним сделать. Потрогай его, прощупай, всё, что поможет нам.[/say]")
 
-		saynn("That's one hell of a task.")
+		saynn("Ну и задачка, черт возьми.")
 
-		saynn("[say=pc]What if there is some.. alive.. thing in there?[/say]")
+		saynn("[say=pc]А что, если там внутри... какое-то... живое существо?[/say]")
 
-		saynn("[say=sci1]We're counting on that.[/say]")
+		saynn("[say=sci1]На это мы и рассчитываем.[/say]")
 
-		saynn("Yeah.. no shit.")
+		saynn("Да уж.. еще бы.")
 
-		saynn("[say=pc]It might kill me.[/say]")
+		saynn("[say=pc]Оно может меня убить.[/say]")
 
-		saynn("[say=sci1]So?[/say]")
+		saynn("[say=sci1]И что?[/say]")
 
-		saynn("You sigh.")
+		saynn("Ты вздыхаешь.")
 
-		saynn("[say=pc]And then it might kill you. All of you.[/say]")
+		saynn("[say=pc]А потом оно может убить тебя. Всех вас.[/say]")
 
-		saynn("[say=sci2]Actually, the chance of it getting to us is statistically insignificant. We're isolated in a safe environment, behind multiple layers of reinforced materials. Even the air to your cell is circulated through a completely disconnected vent system.[/say]")
+		saynn("[say=sci2]Вообще-то, статистическая вероятность того, что оно до нас доберется, ничтожно мала. Мы изолированы в безопасной среде, за множеством слоев армированных материалов. Даже воздух в твою камеру подается через полностью автономную систему вентиляции.[/say]")
 
-		saynn("It's easy to do evil things if you have an evil fortress.")
+		saynn("Творить зло куда проще, когда у тебя есть для этого зловещая крепость.")
 
-		saynn("[say=sci2]I would tell you about all of the advanced materials that were used to create this testing chamber.. but I doubt you would understand any of it. This information is just way too..[/say]")
+		saynn("[say=sci2]Я бы рассказал тебе обо всех тех высокотехнологичных материалах, из которых была создана эта испытательная камера... но сомневаюсь, что ты хоть что-то из этого поймешь. Эта информация просто слишком...[/say]")
 
-		saynn("This scientist suddenly gets shushed by another.")
+		saynn("Одного ученого внезапно затыкает другой.")
 
-		saynn("[say=sci1]Go poke it already. We did some calculations, the egg is safe.[/say]")
+		saynn("[say=sci1]Да ты уже ткни в него. Мы тут всё посчитали, яйцо безопасно.[/say]")
 
-		saynn("Right.. Sure.")
+		saynn("Ладно.. Конечно.")
 
-		addButton("Continue", "See what happens next", "first_choice")
+		addButton("Продолжить", "Смотреть, что будет дальше", "first_choice")
 	if(state == "first_choice"):
-		saynn("What do you wanna do with the egg?")
+		saynn("Что хочешь сделать с яйцом?")
 
-		addButton("Touch it", "Just touch the egg.. see how it feels", "1_touch")
-		addButton("Listen to it", "Put your ear against it.. try to listen to it", "1_listen")
-		addButton("Kick it", "Show that egg who is boss by kicking it", "1_kick")
-		addButton("Rub it", "Caress the egg's contours", "1_rub")
+		addButton("Ткнуть его", "Просто коснуться яйца.. проверить, какое оно на ощупь", "1_touch")
+		addButton("Послушать его", "Прижать ухо к нему.. попытаться прислушаться", "1_listen")
+		addButton("Пнуть его", "Показать этому яйцу, кто здесь босс, хорошенько его пнув", "1_kick")
+		addButton("Потереть его", "Погладить контуры яйца", "1_rub")
 	if(state == "1_touch"):
 		# (( Touch egg anim?
-		saynn("You gather all your strength and poke the egg with your finger!")
+		saynn("Вы собираете все свои силы и тыкаете в яйцо пальцем!")
 
-		saynn("Something inside it reacts to the stimuli.. the whole egg slightly twitches and throbs from your touch. There is certainly something alive in there.. creepy..")
+		saynn("Что-то внутри реагирует на стимул... всё яйцо слегка дергается и пульсирует от вашего прикосновения. Там определенно кто-то живой... жутковато...")
 
-		saynn("[say=sci2]Describe the texture.[/say]")
+		saynn("[say=sci2]Опиши текстуру.[/say]")
 
-		saynn("[say=pc]Cold.. slimy.. It reacted, did you see that?[/say]")
+		saynn("[say=pc]Холодное... склизкое... Оно среагировало, ты видел?[/say]")
 
-		saynn("[say=sci2]Cold? We will have to fix that next.[/say]")
+		saynn("[say=sci2]Холодное? Это нам придется исправить в следующий раз.[/say]")
 
-		saynn("You touch it again.. and see a similar reaction. The egg is pulsing ever so slightly. But otherwise.. It seems peaceful enough.")
+		saynn("Вы касаетесь его снова... и видите похожую реакцию. Яйцо едва заметно пульсирует. Но в остальном... оно кажется довольно спокойным.")
 
-		saynn("[say=pc]Why didn't you just scan it?[/say]")
+		saynn("[say=pc]Почему ты просто не просканировал его?[/say]")
 
-		saynn("[say=sci1]Some species are known to react to magnetic fields.[/say]")
+		saynn("[say=sci1]Известно, что некоторые виды реагируют на магнитные поля.[/say]")
 
-		saynn("[say=pc]Some? So you know what's inside? What is it?[/say]")
+		saynn("[say=pc]Некоторые? Значит, ты знаешь, что внутри? Что это?[/say]")
 
-		saynn("[say=sci1]Don't you like surprises? You will find out soon yourself.[/say]")
+		saynn("[say=sci1]Разве тебе не нравятся сюрпризы? Скоро ты всё поймёшь сам.[/say]")
 
-		saynn("It seems so.")
+		saynn("Похоже на то.")
 
-		addButton("Continue", "See what happens next", "needWarm")
+		addButton("Продолжить", "Смотреть, что будет дальше", "needWarm")
 	if(state == "1_listen"):
 		# (( Listen to egg anim?
 		playAnimation(StageScene.SoloBigEgg, "kneel")
-		saynn("You gather all your strength.. and bring your ear close to the egg's surface.. listening to it.")
+		saynn("Ты собираешь все свои силы... и подносишь ухо к поверхности яйца... прислушиваясь к нему.")
 
-		saynn("You hear.. a very subtle hum.. an extremely quiet murmur. It feels quite peaceful..")
+		saynn("Ты слышишь... едва уловимый гул... чрезвычайно тихий ропот. Это кажется довольно умиротворяющим...")
 
-		saynn("[say=pc]..you hear me?..[/say]")
+		saynn("[say=pc]...ты слышишь меня?..[/say]")
 
-		saynn("The egg reacts.. the hum becomes more pronounced.. the tension inside raises.. and then dies down again.")
+		saynn("Яйцо реагирует... гул становится отчетливее... напряжение внутри нарастает... а затем снова затихает.")
 
-		saynn("[say=pc]..do you understand me?..[/say]")
+		saynn("[say=pc]...ты понимаешь меня?..[/say]")
 
-		saynn("A similar reaction follows.. Whatever it is, it certainly is capable of hearing.. but that's about it.")
+		saynn("Происходит похожая реакция... Что бы это ни было, оно определенно способно слышать... но на этом всё.")
 
-		saynn("[say=sci1]So?[/say]")
+		saynn("[say=sci1]И что?[/say]")
 
-		saynn("[say=pc]It can hear me I think.[/say]")
+		saynn("[say=pc]Думаю, оно меня слышит.[/say]")
 
-		saynn("[say=sci2]Actually, it might just be reacting to the vibrations that get transported by the air molecules.[/say]")
+		saynn("[say=sci2]Вообще-то, оно может просто реагировать на вибрации, передаваемые молекулами воздуха.[/say]")
 
-		saynn("[say=pc]Isn't that what I said?[/say]")
+		saynn("[say=pc]Разве не это я только что сказал?[/say]")
 
-		saynn("[say=sci2]Your statement is quite shallow in comparison.. and thus.. incorrect.[/say]")
+		saynn("[say=sci2]Твое утверждение довольно поверхностно по сравнению с реальностью... а значит... ошибочно.[/say]")
 
-		addButton("Continue", "See what happens next", "needWarm")
+		addButton("Продолжить", "Смотреть, что будет дальше", "needWarm")
 	if(state == "1_kick"):
 		# ((Egg kick anim?
 		playAnimation(StageScene.SoloBigEgg, "kick")
-		saynn("If you destroy the egg, the thing that's inside won't get a chance to hatch and kill you!")
+		saynn("Если ты уничтожишь яйцо, существо внутри не получит шанса вылупиться и прикончить тебя!")
 
-		saynn("So.. feeling brave and angry.. you kick the egg!")
+		saynn("И вот.. поддавшись храбрости и гневу.. ты пинаешь яйцо!")
 
-		saynn("But as soon as your leg connects with it.. your {pc.foot} just bounces off. You try again but your impact delivers no damage still.. the rubbery surface of the egg absorbs it.")
+		saynn("Но как только твоя нога касается его.. твоя {pc.foot} просто отскакивает. Ты пробуешь снова, но удар всё равно не наносит урона.. резиновая поверхность яйца поглощает его.")
 
-		saynn("[say=pc]What the fuck.[/say]")
+		saynn("[say=pc]Какого хера.[/say]")
 
-		saynn("The egg is certainly not happy about it either. You can see it throbbing and pulsing slightly after what you did to it.")
+		saynn("Яйцо явно тоже не в восторге. Можно заметить, как оно слегка пульсирует и вздрагивает после того, что ты с ним сделал.")
 
-		saynn("[say=sci1]If you destroy the specimen, we will destroy you, test subject.[/say]")
+		saynn("[say=sci1]Если ты уничтожишь экземпляр, мы уничтожим тебя, подопытный.[/say]")
 
-		saynn("You growl and clench your fists..")
+		saynn("Ты рычишь и сжимаешь кулаки...")
 
-		saynn("[say=sci2]As long as we can extract value, the specimen must remain intact, yes. Please refrain from trying to damage it.[/say]")
+		saynn("[say=sci2]Пока мы можем извлекать из него пользу, экземпляр должен оставаться целым, это так. Пожалуйста, воздержись от попыток повредить его.[/say]")
 
-		saynn("Whatever.")
+		saynn("Плевать.")
 
-		addButton("Continue", "See what happens next", "needWarm")
+		addButton("Продолжить", "Смотреть, что будет дальше", "needWarm")
 	if(state == "1_rub"):
 		# (( Rub egg anim?
 		playAnimation(StageScene.SoloBigEgg, "kneel")
-		saynn("You suddenly feel.. kind..")
+		saynn("Внезапно ты чувствуешь... доброту...")
 
-		saynn("And so you get closer to the egg and put your hand on it. The surface is very cold.. the poor thing must be shivering in there.")
+		saynn("И вот ты подходишь ближе к яйцу и кладешь на него руку. Поверхность очень холодная... бедняга, должно быть, дрожит там внутри.")
 
-		saynn("Slowly and carefully, you begin caressing the egg, sliding your hand over the bumpy, round exterior walls.")
+		saynn("Медленно и осторожно ты начинаешь ласкать яйцо, проводя рукой по его бугристым круглым стенкам.")
 
-		saynn("As you share a bit of your kindness.. the egg becomes a tiny bit more alive. It's pulsing ever so slightly under your touch..")
+		saynn("По мере того как ты проявляешь каплю доброты... яйцо словно оживает. Оно начинает едва заметно пульсировать под твоими пальцами...")
 
-		saynn("[say=sci1]What are you doing?[/say]")
+		saynn("[say=sci1]Что ты делаешь?[/say]")
 
-		saynn("[say=pc]It just needs some warmth..[/say]")
+		saynn("[say=pc]Ему просто нужно немного тепла...[/say]")
 
-		saynn("[say=sci1]That's not how you do it. You don't just rub the alien egg.[/say]")
+		saynn("[say=sci1]Это делается не так. Нельзя просто вот так гладить инопланетное яйцо.[/say]")
 
-		saynn("[say=pc]Why not?[/say]")
+		saynn("[say=pc]Почему это?[/say]")
 
-		saynn("You don't hear any response for a few seconds.. so you just continue caressing the egg, smiling while doing so.")
+		saynn("Несколько секунд ответа нет... поэтому ты просто продолжаешь ласкать яйцо, довольно улыбаясь.")
 
-		saynn("[say=sci2]Erm.. The effectiveness of such a strategy is unproven.[/say]")
+		saynn("[say=sci2]Эм... Эффективность такой стратегии еще не доказана.[/say]")
 
-		saynn("[say=pc]Sure. But it was fun.[/say]")
+		saynn("[say=pc]Ну и ладно. Зато было весело.[/say]")
 
-		addButton("Continue", "See what happens next", "needWarm")
+		addButton("Продолжить", "Смотреть, что будет дальше", "needWarm")
 	if(state == "needWarm"):
 		# (( egg anim?
 		playAnimation(StageScene.SoloBigEgg, "stand")
 		
-		saynn("[say=sci2]Alright. We have received some data. According to our calculations, the specimen requires a higher internal temperature.[/say]")
+		saynn("[say=sci2]Хорошо. Мы получили кое-какие данные. Согласно нашим расчетам, образцу требуется более высокая внутренняя температура.[/say]")
 
-		saynn("[say=pc]For what?[/say]")
+		saynn("[say=pc]За что?[/say]")
 
-		saynn("[say=sci1]Don't ask questions, test subject. Find a way to warm the egg up.[/say]")
+		saynn("[say=sci1]Не задавай вопросов, подопытный. Найди способ согреть яйцо.[/say]")
 
-		saynn("You look around.. there is a big lamp in the corner of the cell.. that could work.")
+		saynn("Ты оглядываешься.. в углу камеры стоит большая лампа.. она могла бы подойти.")
 
-		saynn("The shower also has access to warm water.. but for that you'd need to move the egg.. you'd have to touch it.")
+		saynn("В душе тоже есть теплая вода.. но для этого придется перенести яйцо.. а значит, придется его коснуться.")
 
-		addButton("Fridge", "Shove the egg into the fridge to teach it a lesson!", "2_fridge")
-		addButton("Lamp", "Use a lamp to warm the egg up", "2_lamp")
-		addButton("Shower", "Use warm water to warm the egg up", "2_shower")
-		addButton("Use your body", "Bring the egg into the bed and cuddle it with your whole body!", "2_cuddle")
+		addButton("Холодильник", "Запихнуть яйцо в холодильник, чтобы проучить его!", "2_fridge")
+		addButton("Лампа", "Использовать лампу, чтобы согреть яйцо", "2_lamp")
+		addButton("Душ", "Использовать теплую воду, чтобы согреть яйцо", "2_shower")
+		addButton("Использовать свое тело", "Притащить яйцо в кровать и прижаться к нему всем телом!", "2_cuddle")
 	if(state == "2_fridge"):
 		aimCameraAndSetLocName("pstent_fridge")
 		playAnimation(StageScene.Solo, "shove")
-		saynn("Warmth? Yeah, you know just the spot.")
+		saynn("Тепло? Да, прямо в самый раз.")
 
-		saynn("You grab the egg and quickly shove it into the fridge before closing it shut!")
+		saynn("Ты хватаешь яйцо и быстро запихиваешь его в холодильник, после чего захлопываешь дверцу!")
 
-		saynn("[say=sci1]What are you doing?[/say]")
+		saynn("[say=sci1]Что ты делаешь?[/say]")
 
-		saynn("[say=pc]Are you blind?[/say]")
+		saynn("[say=pc]Ты что, ослеп?[/say]")
 
-		saynn("The fridge begins shaking! The egg is certainly not happy about this.")
+		saynn("Холодильник начинает трястись! Яйцо явно не в восторге от происходящего.")
 
-		saynn("[say=sci2]A prolonged exposure to low temperatures might lead to a variety of outcomes..[/say]")
+		saynn("[say=sci2]Длительное воздействие низких температур может привести к самым разным последствиям...[/say]")
 
-		saynn("[say=pc]Is death one of them?[/say]")
+		saynn("[say=pc]Смерть — одно из них?[/say]")
 
-		saynn("[say=sci2]Hm.. That is certainly one of the possibilities.[/say]")
+		saynn("[say=sci2]Хм... Это определенно один из вариантов.[/say]")
 
-		saynn("[say=sci1]You heard it. Get the egg out.[/say]")
+		saynn("[say=sci1]Ты слышал. Доставай яйцо.[/say]")
 
-		saynn("You shake your head and just watch the egg thrashing inside the fridge.")
+		saynn("Ты качаешь головой и просто наблюдаешь за тем, как яйцо бьется внутри холодильника.")
 
-		saynn("[say=sci2]I guess it might be interesting to see what happens in this case.[/say]")
+		saynn("[say=sci2]Думаю, будет любопытно посмотреть, что из этого выйдет.[/say]")
 
-		saynn("[say=sci1]Worst case, you're gonna be sleeping in the same fridge.[/say]")
+		saynn("[say=sci1]В худшем случае, вам придётся спать в одном холодильнике.[/say]")
 
-		saynn("You show a middle finger to the camera.")
+		saynn("Вы показываете средний палец в камеру.")
 
-		saynn("[say=sci2]Alright, the specimen needs time now. The test is over. You may rest, test subject.[/say]")
+		saynn("[say=sci2]Ладно, образцу нужно время. Тест окончен. Можете отдыхать, подопытный.[/say]")
 
-		saynn("Hopefully, you will wake up to a nice omelette breakfast.")
+		saynn("Надеюсь, вы проснётесь под вкусный омлет на завтрак.")
 
-		addButton("Sleep", "Go sleep!", "2fridgeSleep")
+		addButton("Спать", "Идите спать!", "2fridgeSleep")
 	if(state == "2fridgeSleep"):
 		aimCameraAndSetLocName("pstent_middle")
 		playAnimation(StageScene.SoloBigEgg, "stand")
-		saynn("You wake up and open the fridge..")
+		saynn("Вы просыпаетесь и открываете холодильник...")
 
-		saynn("The egg seems alive.. very alive actually. In fact, it has visibly grown. Shit.")
+		saynn("Яйцо кажется живым... на самом деле, очень живым. Более того, оно заметно выросло. Блядь.")
 
-		saynn("[say=sci2]Oh, you up, test subject. Perfect. It is time for the next test.[/say]")
+		saynn("[say=sci2]О, вы уже проснулись, подопытный? Прекрасно. Пора переходить к следующему тесту.[/say]")
 
-		saynn("[say=pc]What is it now?[/say]")
+		saynn("[say=pc]Что на этот раз?[/say]")
 
-		saynn("[say=sci2]According to all the data that we have, the specimen is nearing its emergence point.[/say]")
+		saynn("[say=sci2]Согласно всем имеющимся у нас данным, образец близок к моменту выхода из оболочки.[/say]")
 
-		saynn("[say=pc]Emergence?[/say]")
+		saynn("[say=pc]Вылупление?[/say]")
 
-		saynn("You hear a quiet sigh.")
+		saynn("Вы слышите тихий вздох.")
 
-		saynn("[say=sci2]It's about to hatch.[/say]")
+		saynn("[say=sci2]Оно вот-вот вылупится.[/say]")
 
-		saynn("[say=pc]Space that stupid thing, I don't want it to hatch.[/say]")
+		saynn("[say=pc]Прожарь эту тупую хреновину, я не хочу, чтобы оно вылезло.[/say]")
 
-		saynn("[say=sci1]But you will do it. Or else I will make a few guards ask you nicely again.[/say]")
+		saynn("[say=sci1]Но ты это сделаешь. Иначе я заставлю парочку охранников еще раз вежливо тебя попросить.[/say]")
 
-		saynn("You pull the egg out of the fridge.. It's extremely cold to the touch.. and yet.. somehow it is still twitching from your touches. Fuck.")
+		saynn("Вы достаете яйцо из холодильника... Оно ледяное на ощупь... и все же... каким-то образом оно все еще дергается от ваших прикосновений. Блядь.")
 
-		addButton("Continue", "See what happens next", "gottaProvoke")
+		addButton("Продолжить", "Смотреть, что будет дальше", "gottaProvoke")
 	if(state == "2_lamp"):
-		saynn("You grab a lamp that was sitting in the corner of your cell and aim it directly at the egg!")
+		saynn("Вы хватаете лампу, стоявшую в углу камеры, и направляете свет прямо на яйцо!")
 
-		saynn("[say=pc]Will this be enough?[/say]")
+		saynn("[say=pc]Хватит ли этого?[/say]")
 
-		saynn("[say=sci1]Worth a try.[/say]")
+		saynn("[say=sci1]Стоит попробовать.[/say]")
 
-		saynn("The lamp helps to see all the little veins that the egg has.. Being basked in light makes them pump.. whatever it is that they're pumping.. faster.")
+		saynn("Благодаря лампе становятся видны все мелкие прожилки на яйце... Под воздействием света они начинают быстрее качать... хрен знает, что именно они там качают.")
 
-		saynn("[say=sci2]The process will take a few hours. We're gonna take a pause here.[/say]")
+		saynn("[say=sci2]Процесс займет несколько часов. Сейчас мы сделаем перерыв.[/say]")
 
-		saynn("[say=sci1]And you can take a nap.[/say]")
+		saynn("[say=sci1]А ты можешь вздремнуть.[/say]")
 
-		saynn("[say=pc]A pause? You're gonna monitor this thing while I'm sleeping, right?[/say]")
+		saynn("[say=pc]Перерыв? Ты же будешь приглядывать за этой штукой, пока я сплю, верно?[/say]")
 
-		saynn("You don't get an answer, the scientists are probably already enjoying their coffee.")
+		saynn("Ответа нет — ученые, скорее всего, уже вовсю наслаждаются своим кофе.")
 
-		addButton("Sleep", "Go sleep!", "2lampSleep")
+		addButton("Спать", "Идите спать!", "2lampSleep")
 	if(state == "2lampSleep"):
-		saynn("You take a nap.. the comfy bed helps avoid thinking about everything else.")
+		saynn("Ты засыпаешь... удобная кровать помогает не думать обо всем остальном.")
 
-		saynn("[say=sci1]Alright, we're back.[/say]")
+		saynn("[say=sci1]Ну что, мы вернулись.[/say]")
 
-		saynn("[say=sci2]And it is time for the next test.[/say]")
+		saynn("[say=sci2]И пришло время для следующего теста.[/say]")
 
-		saynn("You get off the bed and approach the egg.. It's hard to say.. but it looks like it casts a bigger shadow now.")
+		saynn("Ты слезаешь с кровати и подходишь к яйцу... Трудно сказать наверняка, но кажется, теперь оно отбрасывает более густую тень.")
 
-		saynn("[say=pc]What is it now?[/say]")
+		saynn("[say=pc]Что на этот раз?[/say]")
 
-		saynn("[say=sci2]According to all the data that we have, the specimen is nearing its emergence point.[/say]")
+		saynn("[say=sci2]Согласно всем имеющимся у нас данным, образец близок к моменту выхода из оболочки.[/say]")
 
-		saynn("[say=pc]Emergence?[/say]")
+		saynn("[say=pc]Вылупление?[/say]")
 
-		saynn("You hear a quiet sigh.")
+		saynn("Вы слышите тихий вздох.")
 
-		saynn("[say=sci2]It's about to hatch.[/say]")
+		saynn("[say=sci2]Оно вот-вот вылупится.[/say]")
 
-		saynn("[say=pc]Really?[/say]")
+		saynn("[say=pc]Серьёзно?[/say]")
 
-		saynn("[say=sci1]We have a controlled environment, you have nothing to worry about.[/say]")
+		saynn("[say=sci1]У нас контролируемая среда, так что тебе не о чем беспокоиться.[/say]")
 
-		saynn("These words only make you more worried.")
+		saynn("От этих слов беспокойство только усиливается.")
 
-		addButton("Continue", "See what happens next", "gottaProvoke")
+		addButton("Продолжить", "Смотреть, что будет дальше", "gottaProvoke")
 	if(state == "2_shower"):
 		aimCameraAndSetLocName("pstent_shower")
 		# (( egg shower anim?
-		saynn("Carefully, you lift the egg from its nest.. The thing is heavier than it looks.")
+		saynn("Ты осторожно поднимаешь яйцо из гнезда... Оно тяжелее, чем кажется на первый взгляд.")
 
-		saynn("After that, you gently place it under the shower head.. and turn on the warm water.")
+		saynn("Затем ты аккуратно подставляешь его под душевую лейку... и включаешь теплую воду.")
 
-		saynn("A stream of wetness begins streaming down the curves of the egg. There is no obvious reaction from it.. so maybe it's okay?")
+		saynn("Струи воды начинают стекать по изгибам яйца. Никакой явной реакции не последовало... может, всё в порядке?")
 
-		saynn("[say=pc]That should warm it up.[/say]")
+		saynn("[say=pc]Так оно должно согреться.[/say]")
 
-		saynn("[say=sci1]Probably. Don't set the stream too strong.[/say]")
+		saynn("[say=sci1]Наверное. Только не делай напор слишком сильным.[/say]")
 
-		saynn("[say=pc]Or it might kill it?[/say]")
+		saynn("[say=pc]А вдруг оно от этого сдохнет?[/say]")
 
-		saynn("[say=sci1]No, the water bill.[/say]")
+		saynn("[say=sci1]Нет, просто счет за воду.[/say]")
 
-		saynn("Of course, obviously.")
+		saynn("Ну конечно, это же очевидно.")
 
-		saynn("[say=sci2]You have earned a break, test subject. We will be back soon. You may rest for now.[/say]")
+		saynn("[say=sci2]Ты заслужила перерыв, подопытная. Мы скоро вернемся. А пока можешь отдохнуть.[/say]")
 
-		saynn("Well.. Time to try to take a nap then.")
+		saynn("Что ж... Пора попытаться вздремнуть.")
 
-		addButton("Sleep", "Go sleep!", "2showerSleep")
+		addButton("Спать", "Идите спать!", "2showerSleep")
 	if(state == "2showerSleep"):
 		aimCameraAndSetLocName("pstent_middle")
 		# (( anim egg
-		saynn("You take a nap.. the comfy bed helps avoid thinking about everything else.")
+		saynn("Ты засыпаешь... удобная кровать помогает не думать обо всем остальном.")
 
-		saynn("[say=sci1]Alright, we're back.[/say]")
+		saynn("[say=sci1]Ну что, мы вернулись.[/say]")
 
-		saynn("[say=sci2]And it is time for the next test.[/say]")
+		saynn("[say=sci2]И пришло время для следующего теста.[/say]")
 
-		saynn("You get off the bed and take the egg from under the running water.. it's hard to say but it feels heavier in your hands. You set it back in its nest.")
+		saynn("Ты слезаешь с кровати и забираешь яйцо из-под струи воды... трудно сказать точно, но в руках оно кажется тяжелее. Ты аккуратно кладешь его обратно в гнездо.")
 
-		saynn("[say=pc]What is it now?[/say]")
+		saynn("[say=pc]Что на этот раз?[/say]")
 
-		saynn("[say=sci2]According to all the data that we have, the specimen is nearing its emergence point.[/say]")
+		saynn("[say=sci2]Согласно всем имеющимся у нас данным, образец близок к моменту выхода из оболочки.[/say]")
 
-		saynn("[say=pc]Emergence?[/say]")
+		saynn("[say=pc]Вылупление?[/say]")
 
-		saynn("You hear a quiet sigh.")
+		saynn("Вы слышите тихий вздох.")
 
-		saynn("[say=sci2]It's about to hatch.[/say]")
+		saynn("[say=sci2]Оно вот-вот вылупится.[/say]")
 
-		saynn("[say=pc]Really?[/say]")
+		saynn("[say=pc]Серьёзно?[/say]")
 
-		saynn("[say=sci1]We have a controlled environment, you have nothing to worry about.[/say]")
+		saynn("[say=sci1]У нас контролируемая среда, так что тебе не о чем беспокоиться.[/say]")
 
-		saynn("These words only make you more worried.")
+		saynn("От этих слов беспокойство только усиливается.")
 
-		addButton("Continue", "See what happens next", "gottaProvoke")
+		addButton("Продолжить", "Смотреть, что будет дальше", "gottaProvoke")
 	if(state == "2_cuddle"):
 		# (( cuddle with egg anim??
 		GM.pc.setLocation("pstent_bed")
 		playAnimation(StageScene.SoloBigEgg, "kneel")
 		
 		aimCameraAndSetLocName("pstent_bed")
-		saynn("The egg is feeling so cold.. there is obviously only one solution to this!")
+		saynn("Яйцо такое холодное... тут явно есть только одно решение!")
 
-		saynn("You wrap your arms around it and pick it up! A concerned voice instantly travels through the intercom.")
+		saynn("Ты обхватываешь его руками и прижимаешь к себе! По интеркому тут же раздается обеспокоенный голос.")
 
-		saynn("[say=sci1]What are you doing?[/say]")
+		saynn("[say=sci1]Что ты делаешь?[/say]")
 
-		saynn("[say=pc]I'm warming it up! With my body![/say]")
+		saynn("[say=pc]Я его согреваю! Своим телом![/say]")
 
-		saynn("You walk up to your bed and lie down, the egg still in your arms.")
+		saynn("Ты подходишь к кровати и ложишься, всё еще прижимая яйцо к груди.")
 
-		saynn("[say=sci1]..you really gonna do that?.. kh.. who's decision was it to pick {pc.him}?[/say]")
+		saynn("[say=sci1]..ты серьезно собираешься это сделать?.. хм.. и чье же это было решение — выбрать {pc.him}?[/say]")
 
-		saynn("[say=sci2]Yours.[/say]")
+		saynn("[say=sci2]Твое.[/say]")
 
-		saynn("[say=sci1]Well, you should have stopped me.[/say]")
+		saynn("[say=sci1]Ну, тебе следовало меня остановить.[/say]")
 
-		saynn("[say=sci2]The price to usefulness ratio was the best.[/say]")
+		saynn("[say=sci2]Соотношение цены и полезности было лучшим.[/say]")
 
-		saynn("[say=sci1]But do you see what {pc.he} {pc.isAre} doing? {pc.He} {pc.isAre} hugging the fucking alien egg thing..[/say]")
+		saynn("[say=sci1]Но ты видишь, что делает {pc.he} {pc.isAre}? {pc.He} {pc.isAre} обнимает эту гребаную инопланетную хреновину...[/say]")
 
-		saynn("[say=sci2]Well.. actually.. It's a good way to keep it warm.[/say]")
+		saynn("[say=sci2]Ну.. вообще-то.. Это отличный способ согреть его.[/say]")
 
-		saynn("While they're busy yapping at each other, you're just busy cuddling the cute little egg..")
+		saynn("Пока они заняты тем, что болтают друг с другом, ты просто вовсю обнимаешь это милое маленькое яйцо..")
 
-		saynn("[say=sci1]Alright.. fine.. Do whatever, test subject. Cuddle it, hug it, hump it.. just keep it warm and safe. We will be back in a few hours.[/say]")
+		saynn("[say=sci1]Ладно.. черт с тобой.. Делай что хочешь, подопытный. Обнимай его, тискай, трахай его.. главное, держи в тепле и безопасности. Мы вернемся через пару часов.[/say]")
 
-		saynn("You nod and embrace the egg tighter.")
+		saynn("Ты киваешь и прижимаешь яйцо к себе еще крепче.")
 
-		addButton("Sleep", "Sleep with the egg!", "2cuddleSleep")
+		addButton("Спать", "Поспать с яйцом!", "2cuddleSleep")
 	if(state == "2cuddleSleep"):
 		aimCameraAndSetLocName("pstest_middle")
 		GM.pc.setLocation("pstest_middle")
 		# (( egg anim
 		playAnimation(StageScene.SoloBigEgg, "stand")
-		saynn("You enjoy the egg's company for a while.. until the intercom makes you snap out of your dreams.")
+		saynn("Какое-то время ты наслаждаешься компанией яйца.. пока громкий голос из интеркома не вырывает тебя из сладких грез.")
 
-		saynn("[say=sci1]Alright, we're back. You can put the egg down already.[/say]")
+		saynn("[say=sci1]Так, мы вернулись. Можешь уже отложить яйцо.[/say]")
 
-		saynn("You yawn as you get off your bed and gently place the egg back in its nest.")
+		saynn("Ты зеваешь, сползаешь с кровати и осторожно возвращаешь яйцо в гнездо.")
 
-		saynn("[say=pc]What is it now?[/say]")
+		saynn("[say=pc]Что на этот раз?[/say]")
 
-		saynn("[say=sci2]According to all the data that we have, the specimen is nearing its emergence point.[/say]")
+		saynn("[say=sci2]Согласно всем имеющимся у нас данным, образец близок к моменту выхода из оболочки.[/say]")
 
-		saynn("[say=pc]Emergence?[/say]")
+		saynn("[say=pc]Вылупление?[/say]")
 
-		saynn("You hear a quiet sigh.")
+		saynn("Вы слышите тихий вздох.")
 
-		saynn("[say=sci2]It's about to hatch.[/say]")
+		saynn("[say=sci2]Оно вот-вот вылупится.[/say]")
 
-		saynn("[say=pc]Really?[/say]")
+		saynn("[say=pc]Серьёзно?[/say]")
 
-		saynn("[say=sci1]We have a controlled environment, you have nothing to worry about.[/say]")
+		saynn("[say=sci1]У нас контролируемая среда, так что тебе не о чем беспокоиться.[/say]")
 
-		saynn("You feel a bit excited actually..")
+		saynn("На самом деле, ты чувствуешь легкое возбуждение..")
 
-		addButton("Continue", "See what happens next", "gottaProvoke")
+		addButton("Продолжить", "Смотреть, что будет дальше", "gottaProvoke")
 	if(state == "gottaProvoke"):
 		# (( egg anim
 		playAnimation(StageScene.SoloBigEgg, "stand")
 		aimCameraAndSetLocName("pstent_middle")
 		GM.pc.setLocation("pstent_middle")
-		saynn("[say=sci2]The egg is hatching.. but you might want to.. accelerate the process a bit.[/say]")
+		saynn("[say=sci2]Яйцо начинает вылупляться.. но, возможно, тебе стоит.. немного ускорить процесс.[/say]")
 
-		saynn("[say=pc]What do you mean?[/say]")
+		saynn("[say=pc]В каком смысле?[/say]")
 
-		saynn("[say=sci2]Provoke it in some way.[/say]")
+		saynn("[say=sci2]Как-нибудь спровоцировать его.[/say]")
 
-		saynn("Sounds dangerous..")
+		saynn("Звучит опасно...")
 
-		addButton("Peel it open", "Carefully peel the outer layer off.. revealing what's inside", "3_peel")
-		addButton("Just observe", "You'd rather just let it do its thing", "3_watch")
-		addButton("Embrace it!", "Embrace the egg and use your warmth to accelerate the process", "3_embrace")
-		addButton("Hold it shut", "Do the opposite and hold the egg shut for as long as possible!", "3_holdshut")
+		addButton("Вскрыть его", "Осторожно снять верхний слой... обнажая то, что внутри", "3_peel")
+		addButton("Просто наблюдать", "Ты предпочитаешь просто не мешать ему", "3_watch")
+		addButton("Прижать к себе!", "Прижать яйцо к телу, используя свое тепло, чтобы ускорить процесс", "3_embrace")
+		addButton("Сжать его, не давая открыться", "Сделай наоборот — удерживай яйцо закрытым как можно дольше!", "3_holdshut")
 	if(state == "3_holdshut"):
-		saynn("You're not gonna let it hatch, no way.")
+		saynn("Ты не собираешься давать ему вылупиться, ни за что.")
 		
-		saynn("Swiftly, you put your hands on the egg's top petals that form the cross-shaped crease and start putting pressure on them!")
+		saynn("Резким движением ты кладешь ладони на верхние лепестки яйца, образующие крестообразную складку, и начинаешь давить на них!")
 		
-		saynn("The egg is squirming, you can feel it. A soft, wet crackling noise comes from within.. Whatever is inside is probably quite angry now. More and more cracks appear all throughout it.")
+		saynn("Яйцо извивается, ты чувствуешь это. Изнутри доносится мягкий, влажный хруст... То, что внутри, должно быть, уже в ярости. По всей скорлупе расползается всё больше и больше трещин.")
 		
-		saynn("You do your best to try to keep the shell of the egg intact.. but eventually the green chunks themselves begin to split and fall off.")
+		saynn("Ты изо всех сил стараешься сохранить скорлупу яйца целой... но в конце концов сами зеленые куски начинают раскалываться и отваливаться.")
 		
-		saynn("As much as you try, you just can't hold the egg together anymore.")
+		saynn("Как бы ты ни старался, удержать яйцо воедино больше не получается.")
 		
-		addButton("Continue", "See what happens next", "revealTentacles")
+		addButton("Продолжить", "Смотреть, что будет дальше", "revealTentacles")
 		
 	if(state == "3_peel"):
-		saynn("Alright.. well.. time to help it do its thing.")
+		saynn("Ладно... что ж... пора дать ему сделать то, ради чего оно существует.")
 
-		saynn("You get closer to the egg and begin to carefully peel off its outer layers..")
+		saynn("Ты приближаешься к яйцу и начинаешь осторожно снимать его внешние слои...")
 
-		saynn("It takes some effort.. but once you get going, it becomes easier and easier.")
+		saynn("Это требует усилий... но как только ты входишь в ритм, дело идет всё легче и легче.")
 
-		saynn("Your heart is beating in your chest.. you can feel the egg squirming under your touch.. You can hear something.. some kind of noise that's echoing around the cell..")
+		saynn("Сердце бешено колотится в груди... ты чувствуешь, как яйцо извивается под твоими пальцами... Ты слышишь какой-то звук... какой-то шум, эхом отдающийся по всей камере...")
 
-		saynn("Eventually.. it happens..")
+		saynn("В конце концов... это случается...")
 
-		addButton("Continue", "See what happens next", "revealTentacles")
+		addButton("Продолжить", "Смотреть, что будет дальше", "revealTentacles")
 	if(state == "3_watch"):
-		saynn("The scientists said that the process is already happening.. so you might as well just sit and watch.")
+		saynn("Ученые говорили, что процесс уже запущен... так что остается только сидеть и наблюдать.")
 
-		saynn("It takes some time.. but eventually it begins..")
+		saynn("Это занимает некоторое время... но постепенно всё начинается...")
 
-		saynn("A thin, hairline crack appears on the surface. The egg begins to shake, just a slight tremble at first.. But the shaking grows stronger, making it rock gently on the floor. A soft, wet crackling noise comes from within..")
+		saynn("На поверхности появляется тонкая, как волосок, трещина. Яйцо начинает дрожать — поначалу лишь слегка... Но дрожь усиливается, заставляя его мерно покачиваться на полу. Изнутри доносится мягкий, влажный хруст...")
 
-		saynn("There is a moment of quiet. Then, all at once, the egg breaks open in two halves..")
+		saynn("На мгновение воцаряется тишина. А затем, внезапно, яйцо разламывается надвое...")
 
-		addButton("Continue", "See what happens next", "revealTentacles")
+		addButton("Продолжить", "Смотреть, что будет дальше", "revealTentacles")
 	if(state == "3_embrace"):
-		saynn("Whatever it is that's inside, you are gonna give it the best welcome possible!")
+		saynn("Что бы там ни было внутри, ты устроишь этому существу самый лучший прием!")
 
-		saynn("Without any hesitation, you wrap your arms around the egg, pulling it close against your chest.")
+		saynn("Без малейших колебаний ты обхватываешь яйцо руками, прижимая его крепко к своей груди.")
 
-		saynn("As you hold it tight, the egg begins to shake. A deep, low sound comes from inside, like a soft rumble.")
+		saynn("Пока ты сжимаешь его, яйцо начинает трястись. Изнутри доносится глубокий, низкий звук, похожий на мягкий рокот.")
 
-		saynn("Then, slowly, the egg begins to open up..")
+		saynn("Затем, медленно, яйцо начинает раскрываться...")
 
-		addButton("Continue", "See what happens next", "revealTentacles")
+		addButton("Продолжить", "Смотреть, что будет дальше", "revealTentacles")
 	if(state == "revealTentacles"):
 		# (( Anim with tiny tentacles
 		playAnimation(StageScene.TentaclesDuo, "idle", {tentaclesSizeTiny=true, plant=true, instantSleep=true, tentaclesLess=true})
 		addCharacter(_tentacles.getTentaclesCharID())
-		saynn("Three small, green tentacles slowly uncurl. They are slick and slimy, glistening in the light.")
+		saynn("Три маленьких зеленых щупальца медленно разворачиваются. Они скользкие, слизистые и блестят в лучах света.")
 
-		saynn("You can see them wiggling softly in the air.. feeling the new world. There are no eyes or an obvious mouth.. it looks more like a.. fancy plant. Completely harmless.")
+		saynn("Ты видишь, как они мягко извиваются в воздухе... познавая новый мир. У них нет ни глаз, ни явного рта... это больше похоже на какое-то... изысканное растение. Совершенно безобидное.")
 
-		saynn("[say=sci1]So that's how it looks. Hm, a bit on the weak side.[/say]")
+		saynn("[say=sci1]Так вот как оно выглядит. Хм, слабовато что-то.[/say]")
 
-		saynn("[say=sci2]Incredible. I think it looks kinda cute.[/say]")
+		saynn("[say=sci2]Невероятно. По-моему, оно даже милое.[/say]")
 
-		saynn("The tentacles feel the nest underneath next.. then they touch the cold concrete floor and scan the surroundings.")
+		saynn("Затем щупальца ощупывают гнездо под собой... после чего касаются холодного бетонного пола, сканируя окрестности.")
 
 		if (whichStat == _tentacles.STAT_ANGER):
-			saynn("Eventually, they detect you.. and instantly whip your arm away. Luckily, it didn't hurt much at all.")
+			saynn("В конце концов они замечают тебя... и мгновенно отшвыривают твою руку. К счастью, это почти не было больно.")
 
-			saynn("All at once, the tentacles coil back, stiff and sharp. Their soft tips point straight at you.")
+			saynn("Внезапно щупальца сжимаются, становясь жесткими и острыми. Их мягкие кончики направлены прямо на тебя.")
 
-			saynn("[say=pc]What?[/say]")
+			saynn("[say=pc]Что?[/say]")
 
-			saynn("[say=sci1]Looks like it's angry at you.[/say]")
+			saynn("[say=sci1]Похоже, оно на тебя разозлилось.[/say]")
 
-			saynn("[say=pc]What did I do?[/say]")
+			saynn("[say=pc]Да что я такого сделал?[/say]")
 
-			saynn("The tentacles vibrate ever so slightly.. like a cobra's tail would.")
+			saynn("Щупальца начинают едва заметно вибрировать... совсем как хвост кобры.")
 
-			saynn("[say=pc]I can easily rip you apart, you know that?[/say]")
+			saynn("[say=pc]Знаешь, я ведь могу запросто разорвать тебя на куски![/say]")
 
-			saynn("[say=sci2]A premature termination of such a specimen is gonna bring severe consequences![/say]")
+			saynn("[say=sci2]Преждевременное уничтожение такого экземпляра повлечет за собой серьезные последствия![/say]")
 
-			saynn("Fine.. looks like you will have to live with it. As you calm down.. so does the little plant-like monster.")
+			saynn("Ладно... похоже, тебе придется с этим смириться. По мере того как ты успокаиваешься... успокаивается и этот маленький растениеподобный монстр.")
 
 		elif (whichStat == _tentacles.STAT_AGILITY):
-			saynn("Eventually, they detect you.. one of the tentacles gracefully waves towards your direction.")
+			saynn("В конце концов, они замечают тебя... один из щупалец грациозно машет в твою сторону.")
 
-			saynn("[say=pc]Uh.. hi?[/say]")
+			saynn("[say=pc]Э-э... привет?[/say]")
 
-			saynn("The same tentacle reaches out.. and pokes you hand.")
+			saynn("То же самое щупальце тянется к тебе... и тыкает тебя в руку.")
 
-			saynn("[say=pc]You're not gonna kill me?[/say]")
+			saynn("[say=pc]Ты не собираешься меня убивать?[/say]")
 
-			saynn("To be fair, it probably can't.. even if it tried.")
+			saynn("Справедливости ради, оно, вероятно, и не сможет... даже если очень постарается.")
 
-			saynn("You decide to offer it your hand.. and watch as it uses another tentacle to wrap it around your wrist.")
+			saynn("Ты решаешь протянуть ему руку... и наблюдаешь, как оно использует другое щупальце, чтобы обвить твое запястье.")
 
-			saynn("[say=sci2]Even though it just hatched, the specimen already shows remarkable levels of agility.[/say]")
+			saynn("[say=sci2]Несмотря на то, что экземпляр только что вылупился, он уже демонстрирует поразительный уровень ловкости.[/say]")
 
-			saynn("[say=sci1]Interesting.[/say]")
+			saynn("[say=sci1]Интересно.[/say]")
 
-			saynn("You gently shake the tentacle off. At least it seems friendly enough.")
+			saynn("Ты осторожно стряхиваешь с себя щупальце. По крайней мере, оно кажется довольно дружелюбным.")
 
 		elif (whichStat == _tentacles.STAT_MIND):
-			saynn("They turn toward you. There is no obvious hostility.. no anger.. Only a deep, unsettling stillness. It's like it studies you.")
+			saynn("Они поворачиваются к тебе. В них нет явной враждебности... нет гнева... Только глубокая, тревожная неподвижность. Кажется, будто оно тебя изучает.")
 
-			saynn("You feel something. Not a touch, but.. a pressure. A faint, cool sensation that washes all over you. You blink, and for a split second, your vision gets all blurry.. You don't understand what's happening..")
+			saynn("Ты что-то чувствуешь. Не прикосновение, а... давление. Слабое, прохладное ощущение, которое разливается по всему телу. Ты моргаешь, и на долю секунды зрение затуманивается... Ты не понимаешь, что происходит...")
 
-			saynn("All the while the tentacles just twitch gently, in perfect unison.")
+			saynn("Все это время щупальца лишь слегка подергиваются в идеальном унисоне.")
 
-			saynn("Eventually, the weird feeling fades away. You blink a few more times.")
+			saynn("В конце концов, странное чувство проходит. Ты моргаешь еще несколько раз.")
 
-			saynn("[say=sci1]Why is it not doing anything?[/say]")
+			saynn("[say=sci1]Почему оно ничего не делает?[/say]")
 
-			saynn("[say=sci2]Perhaps it doesn't want to. Hm.. I'm detecting some interference.. Never mind, it's fine now.[/say]")
+			saynn("[say=sci2]Возможно, оно просто не хочет. Хм... фиксирую какие-то помехи... Впрочем, неважно, теперь всё в порядке.[/say]")
 
-			saynn("You silently stare at the tentacles.")
+			saynn("Ты молча смотришь на щупальца.")
 
 		elif (whichStat == _tentacles.STAT_LUST):
-			saynn("Eventually, the three slick, green tentacles detect you.. They sway gently in your direction. A soft, sweet smell fills the air around them, like warm honey. From their glistening tips, a clear, shimmering fluid begins to bead and drip, falling in slow, heavy drops.")
+			saynn("Наконец, три скользких зеленых щупальца замечают тебя... Они плавно покачиваются в твою сторону. Воздух вокруг них наполняется мягким, сладким ароматом, напоминающим теплый мед. На их блестящих кончиках начинают собираться и капать прозрачные, мерцающие капли густой жидкости.")
 
-			saynn("They brush against the air near you, then lightly tap against your arm. The touch is cool and slick, but it lingers. They slide along your skin with a curious, tender slowness, leaving behind a faint, tingling coolness and a trail of that sweet scent.")
+			saynn("Они рассекают воздух рядом с тобой, а затем слегка касаются твоей руки. Прикосновение прохладное и скользкое, но оно затягивает. Они скользят по твоей коже с любопытной, нежной медлительностью, оставляя после себя легкое покалывающее ощущение прохлады и шлейф этого сладкого аромата.")
 
-			saynn("One tentacle curls loosely around your wrist, not to hold you, but simply to rest there, pulsing softly. The creature makes a low, contented hum, a sound that vibrates through its tendrils.")
+			saynn("Один из щупалец небрежно обвивает твое запястье — не чтобы удержать, а просто чтобы пристроиться там, мягко пульсируя. Существо издает низкое, довольное гудение, звук от которого вибрирует в его же отростках.")
 
-			saynn("[say=sci1]It looks like it likes you.[/say]")
+			saynn("[say=sci1]Похоже, ты ему нравишься.[/say]")
 
-			saynn("[say=pc]It sure does..[/say]")
+			saynn("[say=pc]Это точно..[/say]")
 
-			saynn("You let it play with your arm for a bit longer.. but the scientists cut your fun time short.")
+			saynn("Ты позволяешь ему еще немного поиграть с твоей рукой... но ученые быстро прерывают твое развлечение.")
 
 		else:
-			saynn("Eventually, they detect you.. one of the tentacles awkwardly waves towards your direction.")
+			saynn("В конце концов они тебя замечают... и одно из щупалец неуклюже машет в твою сторону.")
 
-			saynn("[say=pc]Uh.. hi?[/say]")
+			saynn("[say=pc]Э-э... привет?[/say]")
 
-			saynn("The same tentacle tries to reach out.. but misses your arm.")
+			saynn("То же самое щупальце пытается дотянуться до тебя... но промахивается мимо руки.")
 
-			saynn("[say=pc]You're not gonna kill me?[/say]")
+			saynn("[say=pc]Ты не собираешься меня убивать?[/say]")
 
-			saynn("To be fair, it probably can't.. even if it tried.")
+			saynn("Справедливости ради, оно, вероятно, и не сможет... даже если очень постарается.")
 
-			saynn("You decide to offer it your hand.. and watch as it tries to use one of its tendrils to wrap around your wrist. It struggles a bit so you help it.")
+			saynn("Ты решаешь протянуть ему ладонь... и наблюдаешь, как оно пытается обвить твое запястье одним из своих отростков. Оно немного тушуется, поэтому ты помогаешь ему.")
 
-			saynn("[say=sci1]It seems to be quite weak.[/say]")
+			saynn("[say=sci1]Кажется, оно довольно слабое.[/say]")
 
-			saynn("[say=sci2]Indeed, perhaps it didn't get the full treatment that it needed during incubation. Or maybe it got the wrong treatment. Still, it should be able to catch up, assuming no further disruptions.[/say]")
+			saynn("[say=sci2]В самом деле, возможно, во время инкубации оно не получило полноценного ухода. Или, может, получила не тот уход. Впрочем, оно должно подтянуться, если больше не будет помех.[/say]")
 
-			saynn("You gently shake the tentacle off. At least it seems friendly enough.")
+			saynn("Ты осторожно стряхиваешь с себя щупальце. По крайней мере, оно кажется довольно дружелюбным.")
 
-		saynn("[say=sci2]Now, test subject, please allow it to rest. We will do further testing later.[/say]")
+		saynn("[say=sci2]А теперь, подопытный, позволь ему отдохнуть. Дальнейшие тесты проведем позже.[/say]")
 
-		saynn("Well.. you're not sure how to feel. At least it's not some blood-hungry creature.")
+		saynn("Ну... даже не знаешь, что и чувствовать. По крайней мере, это не какое-нибудь кровожадное чудовище.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 func supportsShowingPawns() -> bool:
 	return true
 

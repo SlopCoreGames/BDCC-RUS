@@ -60,37 +60,37 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.SexPortal, "tease", {onlyRight=true})
 		
-		saynn("You activate the fleshlight and look at the little screen that it has.")
+		saynn("Вы активируете флешлайт и смотрите на его маленький экран.")
 		
-		saynn("Scanning.. Scanning done. Found "+str(charactersWithPortalPanties.size())+" "+("entities" if charactersWithPortalPanties.size()!=1 else "entity")+" who are currently wearing portal panties in the entire galaxy.")
+		saynn("Сканирование... Сканирование завершено. Найдено "+str(charactersWithPortalPanties.size())+" "+("entities" if charactersWithPortalPanties.size()!=1 else "entity")+" чел(а), носящих портальные трусики во всей галактике.")
 		
-		addButton("Cancel", "You changed your mind", "endthescene")
+		addButton("Отмена", "Вы передумали", "endthescene")
 		
 		if(charactersWithPortalPanties.size() > 0):
 			sayCharacterTable()
 			
-			saynn("Who do you want to connect to?")
+			saynn("К кому вы хотите подключиться?")
 			for character in charactersWithPortalPanties:
 				if(character == null):
 					continue
-				addButton(str(character.getName()), "Connect to this person's portal panties", "connect_to", [character])
+				addButton(str(character.getName()), "Подключиться к портальным трусикам этого человека", "connect_to", [character])
 		else:
-			saynn("Aw. The thing is kinda useless if there is no one wearing portal panties.")
+			saynn("Оу. Эта штука почти бесполезна, если никто не носит портальные трусики.")
 
 	if(state == "connected"):
 		var connectedChar = GlobalRegistry.getCharacter(portalCharID)
 		if(connectedChar != null):
-			saynn("Connected to "+connectedChar.getName()+"'s portal panties.")
+			saynn("Подключено к портальным трусикам "+connectedChar.getName()+".")
 		
-		saynn("Which portal do you want to open through the fleshlight?")
+		saynn("Через какой портал вы хотите открыться с помощью флешлайта?")
 		
-		addButton("Back", "Never mind", "disconnectPortal")
+		addButton("Назад", "Проехали", "disconnectPortal")
 		if(charCanUsePenis(connectedChar)):
-			addButton("Penis", "Show their dick", "openhole", ["penis"])
+			addButton("Пенис", "Показать их член", "openhole", ["penis"])
 		if(charCanUseVagina(connectedChar)):
-			addButton("Vagina", "Show their pussy", "openhole", ["vagina"])
+			addButton("Вагина", "Показать их киску", "openhole", ["vagina"])
 		if(charCanUseAnus(connectedChar)):
-			addButton("Anus", "Show their anus", "openhole", ["anus"])
+			addButton("В анус", "Показать их анус", "openhole", ["anus"])
 
 	if(state == "choose_vagina"):
 		isRepeat = false
@@ -99,19 +99,19 @@ func _run():
 		#var connectedChar = GlobalRegistry.getCharacter(portalCharID)
 
 		if(isPCPortal()):
-			saynn("The fleshlight opens, revealing.. your {pc.vaginaStretch} pussy. Wow, you can see every detail of your own slit in great detail.")
+			saynn("Флешлайт открывается, обнажая... твою {pc.vaginaStretch} киску. Ого, можно рассмотреть каждую деталь твоей собственной щелочки во всех подробностях.")
 		else:
-			saynn("The fleshlight opens, revealing.. someone's {npc.vaginaStretch} {pussy}.")
+			saynn("Флешлайт открывается, обнажая чью-то {npc.vaginaStretch} {pussy}.")
 
-		saynn("What do you want to do with it?")
+		saynn("Что ты хочешь с ней сделать?")
 		
-		addButton("Close", "Close the portal", "disconnectPortal")
-		addButtonWithChecks("Lick it!", "Lick the pussy", "vagina_lick", [], [[ButtonChecks.NotOralBlocked]])
+		addButton("Закрыть", "Закрыть портал", "disconnectPortal")
+		addButtonWithChecks("Полизать!", "Лизать киску", "vagina_lick", [], [[ButtonChecks.NotOralBlocked]])
 		if(GM.pc.hasEffect(StatusEffect.HasCumInsideMouth)):
-			addButtonWithChecks("Spit inside", "Spit whatever your have in your mouth into that pussy", "vagina_lick_spit", [], [[ButtonChecks.NotOralBlocked], [ButtonChecks.ContentEnabled, ContentType.CumStealing]])
+			addButtonWithChecks("Сплевать внутрь", "Сплевать всё, что у тебя во рту, прямо в эту киску", "vagina_lick_spit", [], [[ButtonChecks.NotOralBlocked], [ButtonChecks.ContentEnabled, ContentType.CumStealing]])
 		else:
-			addDisabledButton("Spit inside", "You don't have anything in your mouth")
-		addButtonWithChecks("Fuck it!", "Use your cock to fuck this hole", "vagina_fuck", [], [[ButtonChecks.HasReachablePenis]])
+			addDisabledButton("Сплевать внутрь", "Во рту ничего нет")
+		addButtonWithChecks("Да пошло оно!", "Возьми свой член и трахни это отверстие", "vagina_fuck", [], [[ButtonChecks.HasReachablePenis]])
 		
 	if(state == "vagina_lick"):
 		showFightUI = true
@@ -153,11 +153,11 @@ func _run():
 			extraText = ""
 		
 		if(connectedChar.getArousal() >= 1.0):
-			saynn("That pussy is about to cum!")
+			saynn("Эта киска сейчас кончит!")
 			
-			addButton("Swallow!", "Swallow everything", "vagina_lick_swallow")
+			addButton("Глотай!", "Слизывай всё до последней капли", "vagina_lick_swallow")
 		else:
-			addButton("Lick more", "Really lick it", "vagina_lick")
+			addButton("Лижи сильнее", "Вылизывай как следует", "vagina_lick")
 		
 		isRepeat = true
 	
@@ -178,7 +178,7 @@ func _run():
 				"Suddenly, the {pussy} starts pulsing hard.. before squirting all over your face and tongue, the transparent fluids going down your throat.",
 			]))
 		
-		addButton("Continue", "See what happens next", "choose_vagina")
+		addButton("Продолжить", "Смотреть, что будет дальше", "choose_vagina")
 
 	if(state == "vagina_lick_spit"):
 		playAnimation(StageScene.SexPortalOral, "lick", {onlyRight=isPCPortal(), npc=portalCharID, bodyState={}})
@@ -191,7 +191,7 @@ func _run():
 			saynn(RNG.pick([
 				"You press your lips against your that {pussy}.. and then spit "+(extraText)+" into it.",
 			]))
-		addButton("Continue", "See what happens next", "choose_vagina")
+		addButton("Продолжить", "Смотреть, что будет дальше", "choose_vagina")
 
 
 
@@ -207,19 +207,19 @@ func _run():
 		#var connectedChar = GlobalRegistry.getCharacter(portalCharID)
 
 		if(isPCPortal()):
-			saynn("The fleshlight opens, revealing.. your {pc.analStretch} {asshole}. Wow, you can see every detail of your own star in great detail.")
+			saynn("Флешлайт открывается, обнажая твой {pc.analStretch} {asshole}. Ого, можно рассмотреть каждую деталь твоей собственной звезды во всех подробностях.")
 		else:
-			saynn("The fleshlight opens, revealing.. someone's {npc.analStretch} {asshole}.")
+			saynn("Флешлайт открывается, обнажая чьи-то {npc.analStretch} {asshole}.")
 
-		saynn("What do you want to do with it?")
+		saynn("Что ты хочешь с ней сделать?")
 		
-		addButton("Close", "Close the portal", "disconnectPortal")
-		addButtonWithChecks("Lick it!", "Lick the tailhole", "anus_lick", [], [[ButtonChecks.NotOralBlocked]])
+		addButton("Закрыть", "Закрыть портал", "disconnectPortal")
+		addButtonWithChecks("Полизать!", "Оближи анус", "anus_lick", [], [[ButtonChecks.NotOralBlocked]])
 		if(GM.pc.hasEffect(StatusEffect.HasCumInsideMouth)):
-			addButtonWithChecks("Spit inside", "Spit whatever your have in your mouth into that ass", "anus_lick_spit", [], [[ButtonChecks.NotOralBlocked], [ButtonChecks.ContentEnabled, ContentType.CumStealing]])
+			addButtonWithChecks("Сплевать внутрь", "Сплюнь всё, что у тебя во рту, прямо в эту задницу", "anus_lick_spit", [], [[ButtonChecks.NotOralBlocked], [ButtonChecks.ContentEnabled, ContentType.CumStealing]])
 		else:
-			addDisabledButton("Spit inside", "You don't have anything in your mouth")
-		addButtonWithChecks("Fuck it!", "Use your cock to fuck this hole", "anus_fuck", [], [[ButtonChecks.HasReachablePenis]])
+			addDisabledButton("Сплевать внутрь", "Во рту ничего нет")
+		addButtonWithChecks("Да пошло оно!", "Возьми свой член и трахни это отверстие", "anus_fuck", [], [[ButtonChecks.HasReachablePenis]])
 		
 	if(state == "anus_lick"):
 		showFightUI = true
@@ -261,11 +261,11 @@ func _run():
 			extraText = ""
 		
 		if(connectedChar.getArousal() >= 1.0):
-			saynn("That ass is about to cum!")
+			saynn("Эта жопа сейчас кончит!")
 			
-			addButton("Orgasm", "See what happens next", "anus_lick_swallow")
+			addButton("Оргазм", "Смотреть, что будет дальше", "anus_lick_swallow")
 		else:
-			addButton("Lick more", "Really lick it", "anus_lick")
+			addButton("Лижи сильнее", "Вылизывай как следует", "anus_lick")
 		
 		isRepeat = true
 	
@@ -286,7 +286,7 @@ func _run():
 				"Suddenly, the {asshole} starts pulsing hard, the orgasm making it clench a lot.",
 			]))
 		
-		addButton("Continue", "See what happens next", "choose_anus")
+		addButton("Продолжить", "Смотреть, что будет дальше", "choose_anus")
 
 	if(state == "anus_lick_spit"):
 		playAnimation(StageScene.SexPortalOral, "lick", {onlyRight=isPCPortal(), npc=portalCharID, bodyState={}})
@@ -299,7 +299,7 @@ func _run():
 			saynn(RNG.pick([
 				"You press your lips against your that {asshole}.. and then spit "+(extraText)+" into it.",
 			]))
-		addButton("Continue", "See what happens next", "choose_anus")
+		addButton("Продолжить", "Смотреть, что будет дальше", "choose_anus")
 
 
 
@@ -316,54 +316,54 @@ func _run():
 		var connectedChar = GlobalRegistry.getCharacter(portalCharID)
 		
 		if(isPCPortal()):
-			saynn("The fleshlight opens, revealing.. your {pc.penis}. Wow, you can see every detail of your member.")
+			saynn("Флешлайт открывается, обнажая твой {pc.penis}. Ого, можно рассмотреть каждую деталь твоего члена.")
 		else:
-			saynn("The fleshlight opens, revealing.. someone's {npc.penis}.")
+			saynn("Флешлайт открывается, обнажая чьё-то {npc.penis}.")
 		
-		saynn("What do you want to do with it?")
+		saynn("Что ты хочешь с ней сделать?")
 		
-		addButton("Close", "Close the portal", "disconnectPortal")
+		addButton("Закрыть", "Закрыть портал", "disconnectPortal")
 		if(!connectedChar.isReadyToPenetrate()):
-			addButton("Make it hard", "Prepare that dick for more", "penis_make_hard")
+			addButton("Сделай его твердым", "Подготовь член к большему", "penis_make_hard")
 		else:
-			addButtonWithChecks("Suck it!", "Suck this dick", "penis_suck", [], [[ButtonChecks.NotOralBlocked]])
+			addButtonWithChecks("Соси!", "Соси этот член", "penis_suck", [], [[ButtonChecks.NotOralBlocked]])
 			
 			if(GM.pc.getInventory().getUniqueAmountOf("PortalPantiesFleshlight") >= 2):
-				addButton("Proxy fuck", "Make that cock fuck someone else's hole through the other fleshlight.", "penis_proxyfuck_choose")
+				addButton("Прокси-трах", "Заставь этот член трахать чью-то другую дырку через другой флешлайт.", "penis_proxyfuck_choose")
 			else:
-				addDisabledButton("Proxy fuck", "You need 2 fleshlights to do this")
+				addDisabledButton("Прокси-трах", "Для этого тебе нужно 2 флешлайта")
 			
-			addButtonWithChecks("Ride it", "Position that fleshlight on the floor and ride it!", "penis_ride_choose", [], [[ButtonChecks.HasReachableVaginaOrAnus]])
-			addButtonWithChecks("Masturbate with", "Masturbate using this cock", "penis_masturbate_choose", [], [[ButtonChecks.HasReachableVaginaOrAnus]])
+			addButtonWithChecks("Скачи на нём", "Поставь этот флешлайт на пол и оседлай его!", "penis_ride_choose", [], [[ButtonChecks.HasReachableVaginaOrAnus]])
+			addButtonWithChecks("Мастурбировать с помощью", "Мастурбировать этим членом", "penis_masturbate_choose", [], [[ButtonChecks.HasReachableVaginaOrAnus]])
 			
 	if(state == "penis_make_hard"):
 		playAnimation(StageScene.SexPortalOral, "hold", {onlyRight=isPCPortal(), npc=portalCharID, bodyState={}})
 		
 		if(isPCPortal()):
-			saynn("You wrap your free hand around that cock.. and start stroking it.")
+			saynn("Ты обхватываешь этот член свободной рукой... и начинаешь его ласкать.")
 			
-			saynn("Yep, you're masturbating.. but it's still so weird to see your own dick getting hard before your eyes.")
+			saynn("Да, ты мастурбируешь... но всё равно так странно видеть, как твой собственный член наливается твердостью прямо у тебя на глазах.")
 			
-			saynn("A few soft moans escape from you. There is a drop of precum shining on the tip of your member. Should be good enough..")
+			saynn("С твоих губ срываются тихие стоны. На кончике твоего члена поблескивает капля предэякулята. Должно хватить...")
 		else:
-			saynn("You wrap your free hand around that cock.. and start stroking it.")
+			saynn("Ты обхватываешь этот член свободной рукой... и начинаешь его ласкать.")
 			
-			saynn("Whoever that dick belongs to is probably quite confused. And yet, soon enough, their cock begins to get hard.")
+			saynn("Тот, кому принадлежит этот член, вероятно, в полном замешательстве. И всё же, довольно скоро его член тоже начинает твердеть.")
 			
-			saynn("There is a drop of precum shining on the tip of your member. Should be good enough..")
+			saynn("На кончике твоего члена блестит капля предэякулята. Должно хватить...")
 			
-		addButton("Continue", "See what happens next", "choose_penis")
+		addButton("Продолжить", "Смотреть, что будет дальше", "choose_penis")
 
 	if(state == "penis_masturbate_choose"):
 		showFightUI = true
 		
 		playAnimation(StageScene.SexPortalMasturbation, "tease", {npc=portalCharID, bodyState={exposedCrotch=true, hard=true}})
 		
-		saynn("Where do you want to put this cock?")
+		saynn("Куда ты хочешь засунуть этот член?")
 		
-		addButtonWithChecks("Pussy", "Fuck your pussy with that cock", "penis_masturbate_vagina", [], [[ButtonChecks.HasReachableVagina]])
-		addButtonWithChecks("Ass", "Fuck your ass with that cock", "penis_masturbate_anus", [], [[ButtonChecks.HasReachableAnus]])
-		addButton("Back", "Never mind", "choose_penis")
+		addButtonWithChecks("В киску", "Трахнуть киску этим членом", "penis_masturbate_vagina", [], [[ButtonChecks.HasReachableVagina]])
+		addButtonWithChecks("В задницу", "Трахнуть жопу этим членом", "penis_masturbate_anus", [], [[ButtonChecks.HasReachableAnus]])
+		addButton("Назад", "Проехали", "choose_penis")
 
 
 
@@ -394,11 +394,11 @@ func _run():
 			extraText = ""
 		
 		if(connectedChar.getArousal() >= 1.0):
-			saynn("That cock is about to cum!")
+			saynn("Этот член сейчас кончит!")
 			
-			addButton("Inside!", "Make it cum inside you", "penis_masturbate_vagina_inside")
+			addButton("Внутрь!", "Заставь его кончить в себя", "penis_masturbate_vagina_inside")
 		else:
-			addButton("Ride more", "It feels so good!", "penis_masturbate_vagina")
+			addButton("Скачи активнее", "Это так охеренно!", "penis_masturbate_vagina")
 		
 		isRepeat = true
 
@@ -413,7 +413,7 @@ func _run():
 			"You keep shoving that cock in and out.. until it suddenly starts pumping your {pussy} full of its seed! So much that some of it is already leaking out. Your legs are shaky, your lips let out a few cute moans..",
 		]))
 		
-		addButton("Continue", "See what happens next", "choose_penis")
+		addButton("Продолжить", "Смотреть, что будет дальше", "choose_penis")
 
 
 	if(state == "penis_masturbate_anus"):
@@ -443,11 +443,11 @@ func _run():
 			extraText = ""
 		
 		if(connectedChar.getArousal() >= 1.0):
-			saynn("That cock is about to cum!")
+			saynn("Этот член сейчас кончит!")
 			
-			addButton("Inside!", "Make it cum inside you", "penis_masturbate_anus_inside")
+			addButton("Внутрь!", "Заставь его кончить в себя", "penis_masturbate_anus_inside")
 		else:
-			addButton("Ride more", "It feels so good!", "penis_masturbate_anus")
+			addButton("Скачи активнее", "Это так охеренно!", "penis_masturbate_anus")
 		
 		isRepeat = true
 
@@ -462,7 +462,7 @@ func _run():
 			"You keep shoving that cock in and out.. until it suddenly starts pumping your {ass} full of its seed! So much that some of it is already leaking out. Your legs are shaky, your lips let out a few cute moans..",
 		]))
 		
-		addButton("Continue", "See what happens next", "choose_penis")
+		addButton("Продолжить", "Смотреть, что будет дальше", "choose_penis")
 
 
 
@@ -471,11 +471,11 @@ func _run():
 		
 		playAnimation(StageScene.SexPortalRide, "tease", {npc=portalCharID, bodyState={exposedCrotch=true, hard=true}})
 		
-		saynn("How do you want to ride it?")
+		saynn("Как именно ты хочешь на нем оседлать?")
 		
-		addButtonWithChecks("Pussy", "Ride their cock with your pussy", "penis_ride_vagina", [], [[ButtonChecks.HasReachableVagina]])
-		addButtonWithChecks("Ass", "Ride their cock with your ass", "penis_ride_anus", [], [[ButtonChecks.HasReachableAnus]])
-		addButton("Back", "Never mind", "choose_penis")
+		addButtonWithChecks("В киску", "Оседлать его член своей киской", "penis_ride_vagina", [], [[ButtonChecks.HasReachableVagina]])
+		addButtonWithChecks("В задницу", "Оседлать его член своей жопой", "penis_ride_anus", [], [[ButtonChecks.HasReachableAnus]])
+		addButton("Назад", "Проехали", "choose_penis")
 
 	if(state == "penis_ride_vagina"):
 		showFightUI = true
@@ -505,11 +505,11 @@ func _run():
 			extraText = ""
 		
 		if(connectedChar.getArousal() >= 1.0):
-			saynn("That cock is about to cum!")
+			saynn("Этот член сейчас кончит!")
 			
-			addButton("Inside!", "Make it cum inside you", "penis_ride_vagina_inside")
+			addButton("Внутрь!", "Заставь его кончить в себя", "penis_ride_vagina_inside")
 		else:
-			addButton("Ride more", "It feels so good!", "penis_ride_vagina")
+			addButton("Скачи активнее", "Это так охеренно!", "penis_ride_vagina")
 		
 		isRepeat = true
 
@@ -524,7 +524,7 @@ func _run():
 			"You were so busy riding that {npc.penis} that you didn’t even notice when it began pulsing and cumming inside your {pussy}! Waves after waves of sticky hot seed are filling you up.. while you moan and squirm on top of it.",
 		]))
 		
-		addButton("Continue", "See what happens next", "choose_penis")
+		addButton("Продолжить", "Смотреть, что будет дальше", "choose_penis")
 
 
 
@@ -556,11 +556,11 @@ func _run():
 			extraText = ""
 		
 		if(connectedChar.getArousal() >= 1.0):
-			saynn("That cock is about to cum!")
+			saynn("Этот член сейчас кончит!")
 			
-			addButton("Inside!", "Make it cum inside you", "penis_ride_anus_inside")
+			addButton("Внутрь!", "Заставь его кончить в себя", "penis_ride_anus_inside")
 		else:
-			addButton("Ride more", "It feels so good!", "penis_ride_anus")
+			addButton("Скачи активнее", "Это так охеренно!", "penis_ride_anus")
 		
 		isRepeat = true
 
@@ -575,7 +575,7 @@ func _run():
 			"You were so busy riding that {npc.penis} that you didn’t even notice when it began pulsing and cumming inside your {ass}! Waves after waves of sticky hot seed are filling you up.. while you moan and squirm on top of it.",
 		]))
 		
-		addButton("Continue", "See what happens next", "choose_penis")
+		addButton("Продолжить", "Смотреть, что будет дальше", "choose_penis")
 
 
 
@@ -616,11 +616,11 @@ func _run():
 				]))
 		
 		if(connectedChar.getArousal() >= 1.0):
-			saynn("That cock is about to cum!")
+			saynn("Этот член сейчас кончит!")
 			
-			addButton("Swallow!", "Swallow that load", "penis_suck_swallow")
+			addButton("Глотай!", "Сглотать эту порцию", "penis_suck_swallow")
 		else:
-			addButton("Suck more", "Really suck that cock", "penis_suck")
+			addButton("Сосать сильнее", "По-настоящему отыметь этот член ртом", "penis_suck")
 		
 		isRepeat = true
 	
@@ -641,18 +641,18 @@ func _run():
 				"You shove that {npc.penis} as deep as your {pc.throatStretch} throat allows and just sit still, letting it throb inside and stuff your belly full of thick warm seed.",
 			]))
 		
-		addButton("Continue", "See what happens next", "choose_penis")
+		addButton("Продолжить", "Смотреть, что будет дальше", "choose_penis")
 	
 	if(state == "penis_proxyfuck_choose"):
-		saynn("Who do you want to fuck with the cock that you're holding.")
-		addButton("Back", "You changed your mind", "choose_penis")
+		saynn("С кем ты хочешь трахнуться этим членом, который держишь в руках?")
+		addButton("Назад", "Вы передумали", "choose_penis")
 		
 		sayCharacterTable()
 		
 		for character in charactersWithPortalPanties:
 			if(character == null):
 				continue
-			addButton(str(character.getName()), "Proxy-fuck this person!", "penis_proxyfuck_secondchoose", [character])
+			addButton(str(character.getName()), "Трахнуть этого человека через прокси!", "penis_proxyfuck_secondchoose", [character])
 
 	if(state == "penis_proxyfuck_choose_hole"):
 		if(secondPortalCharID == "pc" && portalCharID == "pc"):
@@ -662,15 +662,15 @@ func _run():
 		
 		var connectedChar = GlobalRegistry.getCharacter(secondPortalCharID)
 		if(connectedChar != null):
-			saynn("Second flehslight is connected to "+connectedChar.getName()+"'s portal panties.")
+			saynn("Второй флешлайт подключен к "+connectedChar.getName()+".")
 		
-		saynn("Which portal do you want to open through the fleshlight?")
+		saynn("Через какой портал вы хотите открыться с помощью флешлайта?")
 		
-		addButton("Back", "Never mind", "disconnectPortal")
+		addButton("Назад", "Проехали", "disconnectPortal")
 		if(charCanUseVagina(connectedChar)):
-			addButton("Vagina", "Use the cock to fuck their pussy", "penis_proxyfuck_vagina", ["vagina"])
+			addButton("Вагина", "Использовать член, чтобы трахнуть их киску", "penis_proxyfuck_vagina", ["vagina"])
 		if(charCanUseAnus(connectedChar)):
-			addButton("Anus", "Use the cock to fuck their anus", "penis_proxyfuck_anus", ["anus"])
+			addButton("В анус", "Используй член, чтобы трахать их анус", "penis_proxyfuck_anus", ["anus"])
 
 	if(state == "penis_proxyfuck_vagina"):
 		showFightUI = true
@@ -763,11 +763,11 @@ func _run():
 			extraText = ""
 		
 		if(connectedChar.getArousal() >= 1.0):
-			saynn("That cock is about to cum!")
+			saynn("Этот член сейчас кончит!")
 			
-			addButton("Orgasm", "See what happens", "penis_proxyfuck_vagina_orgasm")
+			addButton("Оргазм", "Посмотреть, что будет", "penis_proxyfuck_vagina_orgasm")
 		else:
-			addButton("More", "Keeps those toys moving against each other", "penis_proxyfuck_vagina")
+			addButton("Еще", "Это заставляет игрушки тереться друг о друга", "penis_proxyfuck_vagina")
 		
 		isRepeat = true
 
@@ -806,7 +806,7 @@ func _run():
 				"You can’t help but to smile while watching that throbbing {npc.penis} cum inside the helpless twitching {pussy}. You just made two complete strangers breed. Nice.",
 			]))
 	
-		addButton("Continue", "See what happens next", "choose_penis")
+		addButton("Продолжить", "Смотреть, что будет дальше", "choose_penis")
 
 
 
@@ -902,11 +902,11 @@ func _run():
 			extraText = ""
 		
 		if(connectedChar.getArousal() >= 1.0):
-			saynn("That cock is about to cum!")
+			saynn("Этот член сейчас кончит!")
 			
-			addButton("Orgasm", "See what happens", "penis_proxyfuck_anus_orgasm")
+			addButton("Оргазм", "Посмотреть, что будет", "penis_proxyfuck_anus_orgasm")
 		else:
-			addButton("More", "Keeps those toys moving against each other", "penis_proxyfuck_anus")
+			addButton("Еще", "Это заставляет игрушки тереться друг о друга", "penis_proxyfuck_anus")
 		
 		isRepeat = true
 
@@ -945,7 +945,7 @@ func _run():
 				"You can’t help but to smile while watching that throbbing {npc.penis} cum inside the helpless twitching {anus}. You just made two complete strangers fuck. Nice.",
 			]))
 	
-		addButton("Continue", "See what happens next", "choose_penis")
+		addButton("Продолжить", "Смотреть, что будет дальше", "choose_penis")
 
 
 
@@ -991,11 +991,11 @@ func _run():
 			extraText = ""
 		
 		if(GM.pc.getArousal() >= 1.0):
-			saynn("You're about to cum!")
+			saynn("Ты сейчас кончишь!")
 			
-			addButton("Cum inside", "Cum inside them", "vagina_fuck_inside")
+			addButton("Кончить внутрь", "Кончи в них", "vagina_fuck_inside")
 		else:
-			addButton("Fuck more", "Really fuck that hole", "vagina_fuck")
+			addButton("Трахни сильнее", "По-настоящему вжарь в это отверстие", "vagina_fuck")
 		
 		isRepeat = true
 	
@@ -1014,7 +1014,7 @@ func _run():
 				"You grunt softly as your {pc.penis} is throbbing inside that clenching {pussy}.. before stuffing its womb to the brim with your seed. Remote breeding, fuck yeah.",
 			]))
 		
-		addButton("Continue", "See what happens next", "choose_vagina")
+		addButton("Продолжить", "Смотреть, что будет дальше", "choose_vagina")
 
 
 
@@ -1058,11 +1058,11 @@ func _run():
 			extraText = ""
 		
 		if(GM.pc.getArousal() >= 1.0):
-			saynn("You're about to cum!")
+			saynn("Ты сейчас кончишь!")
 			
-			addButton("Cum inside", "Cum inside them", "anus_fuck_inside")
+			addButton("Кончить внутрь", "Кончи в них", "anus_fuck_inside")
 		else:
-			addButton("Fuck more", "Really fuck that hole", "anus_fuck")
+			addButton("Трахни сильнее", "По-настоящему вжарь в это отверстие", "anus_fuck")
 		
 		isRepeat = true
 	
@@ -1081,7 +1081,7 @@ func _run():
 				"You grunt softly as your {pc.penis} is throbbing inside that clenching {anus}.. before stuffing it to the brim with your seed. Remote pounding, fuck yeah.",
 			]))
 		
-		addButton("Continue", "See what happens next", "choose_anus")
+		addButton("Продолжить", "Смотреть, что будет дальше", "choose_anus")
 
 
 

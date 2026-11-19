@@ -8,9 +8,9 @@ func _run():
 	
 	if(state == ""):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("MEOW MEOW!")
+		saynn("МЯУ МЯУ!")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		
 
 func _react(_action: String, _args):

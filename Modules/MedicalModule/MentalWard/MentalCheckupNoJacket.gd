@@ -9,83 +9,83 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		
 	if(state == ""):
-		saynn("You can hear faint footsteps as someone approaches the cells. Because you’re not wearing the straitjacket anymore, you decide to hide so you wouldn’t be seen through the little window. Maybe they will just pass by.")
+		saynn("Вы слышите тихие шаги — кто-то приближается к камерам. Поскольку смирительная рубашка наконец снята, вы решаете спрятаться, чтобы вас не заметили через маленькое окошко. Может, они просто пройдут мимо.")
 
-		saynn("But they don’t. You hear a noise coming through the intercom followed by the doctor’s voice.")
+		saynn("Но нет. Из интеркома доносится шум, а затем раздается голос врача.")
 
-		saynn("[say=eliza]How are we doing, inmate?[/say]")
+		saynn("[say=eliza]Ну как дела, заключенная?[/say]")
 
-		saynn("You don’t respond so she tries to look inside.")
+		saynn("Вы не отвечаете, и тогда она пытается заглянуть внутрь.")
 
-		saynn("[say=eliza]Hm? Where is the inmate?[/say]")
+		saynn("[say=eliza]Хм? А где заключенная?[/say]")
 
-		saynn("She sounds concerned. The door to your cell slowly goes through its opening sequence. She peeks inside and gasps as she spots you.")
+		saynn("В её голосе слышится беспокойство. Дверь вашей камеры начинает медленно открываться. Она заглядывает внутрь и ахает, завидев вас.")
 
-		saynn("[say=eliza]Hey, how did you..[/say]")
+		saynn("[say=eliza]Эй, как ты...[/say]")
 
-		addButton("Attack", "Don’t let her call for backup. Behavior---", "attack")
-		addButton("Surrender", "Say that it’s all a mistake. Behavior-", "surrender")
+		addButton("Атаковать", "Не дайте ей позвать подкрепление. Поведение---", "attack")
+		addButton("Сдаться", "Сказать, что это всё ошибка. Поведение-", "surrender")
 
 	if(state == "attack"):
-		saynn("You try to shove Eliza away but thanks to her feline agility she dodges at the last second.")
+		saynn("Вы пытаетесь оттолкнуть Элизу, но благодаря своей кошачьей ловкости она уворачивается в последний момент.")
 
-		saynn("[say=eliza]Oh, is that how you’re gonna play?[/say]")
+		saynn("[say=eliza]О, так вот как ты решил поиграть?[/say]")
 
-		saynn("Seems like it’s a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Continue", "Fight!", "startfight")
+		addButton("Продолжить", "В бой!", "startfight")
 
 	if(state == "surrender"):
 		playAnimation(StageScene.Duo, "defeated", {npc="eliza"})
 		
-		saynn("You decide to not resist. Eliza pins you down to the floor and forces a straitjacket back on you, locking all the straps tightly.")
+		saynn("Ты решаешь не сопротивляться. Элиза прижимает тебя к полу и снова натягивает на тебя смирительную рубашку, туго затягивая все ремни.")
 
-		saynn("[say=eliza]Silly inmate, what did you think was gonna happen.[/say]")
+		saynn("[say=eliza]Глупая каторжанка, ты правда думал, что всё будет иначе?[/say]")
 
-		saynn("She finishes putting the jacket on and then sits on you. She grabs some injector and sticks it into your neck. Ow. You feel your limbs relaxing..")
+		saynn("Закончив с рубашкой, она усаживается на тебя сверху. Она хватает шприц-инъектор и вонзает его тебе в шею. Ой! Ты чувствуешь, как конечности расслабляются...")
 
-		saynn("[say=eliza]You’re not leaving this place. Not with such awful behavior. And I’m gonna keep sticking you with needles until you start behaving. Or until your mind breaks. Hehe.[/say]")
+		saynn("[say=eliza]Тебе отсюда не сбежать. Не с таким паршивым поведением. И я буду колоть тебя иглами до тех пор, пока ты не станешь послушной. Или пока твой разум не сломается. Хе-хе.[/say]")
 
-		saynn("She stands up but keeps you pinned with her leg.")
+		saynn("Она встает, но продолжает прижимать тебя к полу своей ногой.")
 
-		saynn("[say=eliza]Got it?[/say]")
+		saynn("[say=eliza]Уяснила?[/say]")
 
-		saynn("You have no choice but to nod, you feel like you can’t flex a muscle. So tired.. Eliza leaves your cell and closes the door.")
+		saynn("У тебя нет выбора, кроме как кивнуть; кажется, ты не можешь пошевелить даже мускулом. Такая усталость... Элиза выходит из камеры и закрывает дверь.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 	if(state == "won_fight"):
-		saynn("Unable to fight you any longer, Eliza drops to her knees. But she has not given up yet, she attempts to use her last ace, her hand reaches her belt and fetches a remote from it. You see that and pounce at her, pinning her hands to the floor.")
+		saynn("Поняв, что больше не может с тобой бороться, Элиза опускается на колени. Но она еще не сдалась: она пытается использовать свой последний козырь, ее рука тянется к поясу и достает оттуда пульт. Заметив это, ты набрасываешься на нее, прижимая ее руки к полу.")
 
-		saynn("You straddle her, your hand prevents Eliza from pressing any buttons on the remote. She pants and glances at you with intrigued eyes.")
+		saynn("Ты нависаешь над ней верхом, твоя рука не дает Элизе нажать ни на одну кнопку на пульте. Она тяжело дышит и смотрит на тебя заинтригованным взглядом.")
 
-		saynn("[say=eliza]Mmm-m.. This is quite kinky. You know.. I’m not mad at you, inmate.[/say]")
+		saynn("[say=eliza]Ммм... А это довольно пошло. Знаешь... я вовсе не злюсь на тебя, заключенный.[/say]")
 
-		saynn("You hear loud footsteps coming from another room. Eliza chuckles softly in your grasp.")
+		saynn("Из другой комнаты доносятся громкие шаги. Элиза тихонько хихикает в твоих руках.")
 
-		saynn("[say=eliza]You better run before they find us like this~.[/say]")
+		saynn("[say=eliza]Тебе лучше сбежать, пока нас не застукали в таком виде~.[/say]")
 
-		addButton("Leave her", "Time to run", "leave_her")
-		addButton("Kiss her", "Goodbye gift", "kiss_her")
+		addButton("Оставить её", "Пора валить", "leave_her")
+		addButton("Поцеловать её", "Прощальный подарок", "kiss_her")
 
 	if(state == "kiss_her"):
-		saynn("You suddenly land a kiss on Eliza’s lips. A quite long one. She opens her eyes wide, clearly surprised. She blinks a few times in a row and slowly shuts them, a soft blush appears on her cheeks.")
+		saynn("Ты внезапно целуешь Элизу в губы. Поцелуй получается довольно долгим. Она широко открывает глаза от неожиданности, несколько раз моргает, а затем медленно закрывает их, и на её щеках проступает нежный румянец.")
 
-		saynn("But as quickly as you start the kiss, you also swiftly stop it and make your escape, leaving Eliza on the floor.")
+		saynn("Но так же стремительно, как ты начал поцелуй, ты резко прерываешь его и бросаешься наутёк, оставляя Элизу на полу.")
 
 		# (scene ends)
-		addButton("Continue", "Time to run", "endthesceneEscape")
+		addButton("Продолжить", "Пора валить", "endthesceneEscape")
 		
 
 	if(state == "leave_her"):
-		saynn("You direct your attention to the source of footsteps and Eliza uses that opportunity to free one of her hands and scratch your cheek. Ow! She offers you a cheeky smile. You growl at her")
+		saynn("Ты переводишь взгляд на источник шагов, и Элиза пользуется этой возможностью, чтобы высвободить одну руку и оцарапать тебе щеку. Ой! Она одаривает тебя дерзкой ухмылкой. Ты рычишь на неё.")
 
-		saynn("[say=eliza]You will never understand it. How important science is.[/say]")
+		saynn("[say=eliza]Тебе никогда не понять. Насколько важна наука.[/say]")
 
-		saynn("Footsteps become even louder so you decide to make your escape, leaving Eliza on the floor.")
+		saynn("Шаги становятся еще громче, поэтому ты решаешь сбежать, оставляя Элизу на полу.")
 
 		# (add a bit of pain)
-		addButton("Continue", "Time to run", "endthesceneEscape")
+		addButton("Продолжить", "Пора валить", "endthesceneEscape")
 		# (scene ends)
 
 func _react(_action: String, _args):

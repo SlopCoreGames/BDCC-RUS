@@ -21,67 +21,67 @@ func _run():
 
 	if(state == ""):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("You're standing near a table. There is generally not that much stuff that you can do here..")
+		saynn("Ты стоишь возле стола. В целом, здесь особо разгуляться негде...")
 
 		if (_tentacles.isNormal() || _tentacles.isSmalll()):
-			saynn("But you can do some yoga perhaps.. And if you get the tentacles' attention.. they might get interested too.")
+			saynn("Но, возможно, можно заняться йогой... А если привлечь внимание щупалец... они тоже могут заинтересоваться.")
 
 			if (_tentacles.getPrefer() != _tentacles.EVENT_PLAY):
-				addButton("Yoga", "Do some yoga exercises and try to get the tentacles' attention", "do_yoga")
+				addButton("Йога", "Сделать упражнения из йоги и попытаться привлечь внимание щупалец", "do_yoga")
 			else:
-				addDisabledButton("Yoga", "They tentacles are already preferring to be active..")
+				addDisabledButton("Йога", "Щупальца и так явно настроены на активность...")
 		else:
-			saynn("But you can do some yoga perhaps. Why would you do that?..")
+			saynn("Но, может, стоит заняться йогой? Хотя зачем тебе это?..")
 
-			saynn("Now that you think about it.. yeah.. there is not much reason currently. You can give the security camera something to look at.. but that's about it.")
+			saynn("Если подумать... да... особого смысла сейчас нет. Можно, конечно, дать что-нибудь на виду у камеры наблюдения... но и всё.")
 
-			addButton("Yoga", "Do some yoga exercises", "do_yoga")
-		addButton("Leave", "You changed your mind", "endthescene")
+			addButton("Йога", "Сделать упражнения из йоги", "do_yoga")
+		addButton("Уйти", "Вы передумали", "endthescene")
 	if(state == "do_yoga"):
 		if (_tentacles.isNormal() || _tentacles.isSmalll()):
 			addCharacter(GM.main.PS.getTentaclesCharID())
-		saynn("Nobody said it.. but you might as well do some yoga.")
+		saynn("Никто об этом не говорил... но тебе не помешало бы заняться йогой.")
 
 		var randomPose = RNG.pick(["cobra", "catcow", "dog", "bridge"])
 		playAnimation(StageScene.Yoga, randomPose)
 		if (randomPose == "cobra"):
-			saynn("You find a good clean spot and lower yourself onto your stomach, legs straight behind you, palms near your chest. You press into the floor and begin to lift your chest.")
+			saynn("Ты находишь чистое место и ложишься на живот, вытянув ноги назад и положив ладони возле груди. Ты упираешься в пол и начинаешь приподнимать грудную клетку.")
 
-			saynn("Your back arches. Your shoulders roll back. Your head tilts up toward the ceiling.")
+			saynn("Твоя спина выгибается. Плечи отводятся назад. Голова запрокидывается к потолку.")
 
-			saynn("As much as you can, you hold this pose.. good.. You stop when your muscles begin to feel like they burn a bit.")
+			saynn("Замри в этой позе настолько, насколько сможешь... хорошо... Останавливайся, когда почувствуешь легкое жжение в мышцах.")
 
 		elif (randomPose == "catcow"):
-			saynn("You find a good clean spot and kneel before planting your hands firmly on the floor, getting on all fours. Back is straight, head is neutral. You do a slow breath in..")
+			saynn("Ты находишь чистое место и встаешь на колени, после чего крепко упираешься ладонями в пол, переходя на четвереньки. Спина прямая, голова в нейтральном положении. Ты делаешь медленный вдох...")
 
-			saynn("Then you arch your back, lowering your belly while lifting your chin and chest.")
+			saynn("Затем ты прогибаешь спину, опуская живот и одновременно поднимая подбородок и грудь.")
 
-			saynn("Another breath. Then you do the opposite, rounding your spine upward like a stretching cat, tucking your chin toward your chest.")
+			saynn("Еще один вдох. А затем делаешь всё наоборот: выгибаешь позвоночник вверх, словно потягивающаяся кошка, прижимая подбородок к груди.")
 
-			saynn("You move slowly between these two poses.. making sure to breathe a lot. You stop when your muscles begin to feel like they burn a bit.")
+			saynn("Ты медленно переходишь из одной позы в другую... стараясь дышать глубоко. Останавливайся, когда почувствуешь легкое жжение в мышцах.")
 
 		elif (randomPose == "dog"):
-			saynn("You find a good clean spot and stand straight. From that state, you fold forward, letting your palms meet the cold floor. Then you slowly slide your hands forward and lift your hips while pressing your {pc.feet} as flat as you can with the floor.")
+			saynn("Ты находишь чистое место и выпрямляешься. Из этого положения ты наклоняешься вперед, позволяя ладоням коснуться холодного пола. Затем ты медленно ведешь руками вперед и поднимаешь бедра, прижимая свой {pc.feet} к полу настолько плотно, насколько это возможно.")
 
-			saynn("Your body forms.. a triangle of sorts. Your arms are straight, your back is long, head hanging a bit loose.")
+			saynn("Твое тело образует... своего рода треугольник. Руки прямые, спина вытянута, голова слегка расслаблена.")
 
-			saynn("As much as you can, you hold this pose.. And stop when your muscles begin to feel like they burn a bit.")
+			saynn("Держи эту позу как можно дольше... И останавливайся, когда почувствуешь, что мышцы начинают приятно гореть.")
 
 		else:
-			saynn("You find a good clean spot and kneel.. before planting your {pc.feet} flat on the floor, close to your body. Your arms rest at your sides, palms down. Slowly, you lift your hips toward the ceiling.")
+			saynn("Ты находишь чистое место и опускаешься на колени... а затем кладешь свой {pc.feet} плашмя на пол, вплотную к телу. Руки лежат по бокам, ладонями вниз. Медленно ты поднимаешь бедра к потолку.")
 
-			saynn("Your body forms a smooch arc, starting from your shoulders and going down to your knees. Your chest rises, your thigh muscles tense up. You do slow motions with your hips, stretching further..")
+			saynn("Твое тело образует изящную дугу, начиная от плеч и заканчивая коленями. Грудь приподнимается, мышцы бедер напрягаются. Ты медленно двигаешь бедрами, растягиваясь всё сильнее...")
 
-			saynn("As much as you can, you hold this pose.. And stop when your muscles begin to feel like they burn a bit.")
+			saynn("Держи эту позу как можно дольше... И останавливайся, когда почувствуешь, что мышцы начинают приятно гореть.")
 
 		if (_tentacles.isNormal() || _tentacles.isSmalll()):
-			saynn("You hear some soft rustling behind you..")
+			saynn("Позади тебя слышится мягкий шорох...")
 
-			saynn("The tentacles have stopped not that far away from you, their tips are lifted, angled toward you. They were watching you stretch.")
+			saynn("Тентакли замерли совсем рядом, их кончики приподняты и направлены в твою сторону. Они наблюдали за тем, как ты растягиваешься.")
 
-			saynn("Looks like you got them a bit curious.")
+			saynn("Похоже, ты вызвала у них любопытство.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	var _tentacles:PlayerSlaveryTentacles = GM.main.PS

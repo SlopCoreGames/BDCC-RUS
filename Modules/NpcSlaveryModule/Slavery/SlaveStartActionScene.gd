@@ -37,16 +37,16 @@ func _run():
 		
 		var actionCanStartInfo = action.checkCanDoFinal(mainSlave, pickedSlaves)
 		if(actionCanStartInfo[0]):
-			addButton("Start!", "Do the action", "do_the_action")
+			addButton("Погнали!", "Выполнить действие", "do_the_action")
 		elif(actionCanStartInfo.size() > 1):
-			addDisabledButton("Start!", actionCanStartInfo[1])
+			addDisabledButton("Погнали!", actionCanStartInfo[1])
 		else:
-			addDisabledButton("Start!", "Conditions for this action aren't met!")
+			addDisabledButton("Погнали!", "Условия для этого действия не выполнены!")
 		addButtonAt(14, "Cancel", "You changed your mind", "endthescene_cancel")
 		
-		sayn("Action: "+action.getVisibleName())
+		sayn("Действие: "+action.getVisibleName())
 		if(mainSlave != ""):
-			sayn("Main slave: "+getCharacter(mainSlave).getName())
+			sayn("Главная рабыня: "+getCharacter(mainSlave).getName())
 		
 		var extraSlavesInfo = action.extraSlaves
 		for slaveRoleID in extraSlavesInfo:
@@ -54,12 +54,12 @@ func _run():
 			if(pickedSlaves.has(slaveRoleID)):
 				sayn(extraSlaveEntry["name"]+": "+getCharacter(pickedSlaves[slaveRoleID]).getName())
 			else:
-				sayn(extraSlaveEntry["name"]+": NOT SELECTED")
+				sayn(extraSlaveEntry["name"]+": НЕ ВЫБРАНА")
 		
 			addButton(extraSlaveEntry["name"], extraSlaveEntry["desc"], "pick_extra_menu", [slaveRoleID])
 		
 	if(state == "pick_extra_menu"):
-		saynn("Who do you want to pick?")
+		saynn("Кого хочешь выбрать?")
 		
 		var slaves = GM.main.getDynamicCharacterIDsFromPool(CharacterPool.Slaves)
 		var filteredSlaves = []
@@ -78,13 +78,13 @@ func _run():
 		for charID in filteredSlaves:
 			var character:DynamicCharacter = getCharacter(charID)
 			
-			addButton(character.getName(), "Pick them!", "do_pick_extra", [character])
-		addButton("Back", "Go up to the previous menu", "")
+			addButton(character.getName(), "Выбирай их!", "do_pick_extra", [character])
+		addButton("Назад", "Вернуться в предыдущее меню", "")
 	
 	if(state == "do_the_action"):
 		saynn(resultText)
 		
-		addButton("Continue", "See what happens next", "endthescene_happened")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_happened")
 		
 		var theAction:SlaveActionBase = action
 		if(theAction != null):

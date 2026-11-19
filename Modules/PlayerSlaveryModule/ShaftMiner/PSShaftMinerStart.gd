@@ -6,292 +6,292 @@ func _init():
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.Solo, "kneel")
-		saynn("You get thrown into a metal cage that's inside some spaceship's cargo space. The cage's limited height forces you to keep your head and body low.")
+		saynn("Тебя швыряют в металлическую клетку, расположенную в грузовом отсеке какого-то космического корабля. Из-за низкой высоты клетки тебе приходится постоянно держать голову и тело пригнувшись.")
 
-		saynn("Together with you, are some other unlucky.. travelers. None of them drop a word, their dull stares say everything.")
+		saynn("Вместе с тобой здесь заперты и другие несчастные... путешественники. Никто из них не проронил ни слова, но их тусклые взгляды говорят сами за себя.")
 
-		saynn("This could be a good time to start discussing ways to escape.. but you're not alone here. Surrounding the cage are a few armed goons, all spotting some hi-tech looking rifles. Right.")
+		saynn("Сейчас было бы самое время обсудить план побега... но ты здесь не один. Клетку окружают несколько вооруженных головорезов, и у каждого в руках какие-то высокотехнологичные винтовки. Точно.")
 
-		saynn("You find a corner to stuff yourself into.. and just wait for what's gonna happen next.")
+		saynn("Ты находишь себе угол, забиваешься туда... и просто ждешь, что будет дальше.")
 
-		saynn("Finally, after a few more fresh folks get stuffed into the cage, the spaceship finally begins moving somewhere. There is a small window that you can barely see through.. nothing but space out there. The little colorful stars shift ever so slightly.. or maybe that's just your imagination.")
+		saynn("Наконец, когда в клетку заталкивают еще несколько свежих тел, корабль начинает движение. Есть маленькое окошко, сквозь которое едва что-то видно... снаружи лишь пустота космоса. Крошечные разноцветные звезды едва заметно смещаются... а может, это просто твое воображение.")
 
-		saynn("Most of the other.. slaves.. lack any clothing. Only you, the odd one, have a bulky collar around your neck.")
+		saynn("На большинстве остальных... рабов... почти нет одежды. И только на тебе, белой вороне, на шее красуется массивный ошейник.")
 
-		saynn("Might as well try to take a nap..")
+		saynn("Пожалуй, стоит попытаться вздремнуть...")
 
-		addButton("Continue", "See what happens next", "ricky_intro")
+		addButton("Продолжить", "Смотреть, что будет дальше", "ricky_intro")
 	if(state == "ricky_intro"):
 		addCharacter("psricky")
 		playAnimation(StageScene.Solo, "stand", {pc="psricky"})
-		saynn("You almost manage to disconnect from your enslaved body and enter the dream world..")
+		saynn("Тебе почти удается отключиться от своего порабощенного тела и погрузиться в мир грез...")
 
-		saynn("..but a loud [b]kick[/b] sends everyone in the cage recoiling back.")
+		saynn("...но громкий [b]пинок[/b] заставляет всех в клетке вздрогнуть и отпрянуть.")
 
-		saynn("[say=psricky]Wake up, you lazy cunts! Okay? We're almost there.[/say]")
+		saynn("[say=psricky]А ну, подъем, ленивые суки! Слышали? Мы почти на месте![/say]")
 
-		saynn("His raspy voice is quite annoying.")
+		saynn("Его хриплый голос чертовски раздражает.")
 
-		saynn("You look into the window.. and see a planet. A sharp, rocky planet. If it didn't have a glowing blue-ish ring of atmosphere around it, you could have easily mistaken it for an asteroid.")
+		saynn("Ты смотришь в иллюминатор... и видишь планету. Острую, скалистую планету. Если бы вокруг неё не сияло голубоватое кольцо атмосферы, её легко можно было бы принять за астероид.")
 
-		saynn("[say=psricky]Point your sad muzzles towards me, c'mon. Me, yeah? Mouths shut, eyes at me. To anyone who is new, my name is Ricky, welcome to this little cruise.[/say]")
+		saynn("[say=psricky]А ну же, направьте свои жалкие морды на меня. На меня, да! Рты закрыли, глаза на меня. Для тех, кто здесь впервые — меня зовут Рикки, добро пожаловать в этот маленький круиз.[/say]")
 
-		saynn("Ricky drags his hand over the cage, stroking the cold metal.")
+		saynn("Рикки проводит рукой по клетке, поглаживая холодный металл.")
 
-		saynn("[say=psricky]Consider yourself lucky. Why lucky? I don't like public executions, I don't get off from them like the rest of my friends.[/say]")
+		saynn("[say=psricky]Считайте, что вам повезло. Почему повезло? Я не люблю публичные казни — они не штырят меня так, как остальных моих дружков.[/say]")
 
-		saynn("He waits for any reaction.. and just laughs.")
+		saynn("Он ждет какой-либо реакции... и просто смеется.")
 
-		saynn("[say=psricky]Relax, you dumb fucks. I don't need your cocks and I don't need your holes. Your holes even, mhm? I don't care who you are. What I need is your raw strength. And also your obedience, goes without sayin'. Anyone who wants to get off this ship, let me know now. Anyone wants off?[/say]")
+		saynn("[say=psricky]Расслабьтесь, тупые ублюдки. Мне не нужны ваши члены и не нужны ваши дырки. Даже ваши дырки, м-м? Мне плевать, кто вы такие. Что мне нужно, так это ваша грубая сила. Ну и послушание, само собой. Кто хочет свалить с этого корабля — говорите сейчас. Есть желающие?[/say]")
 
-		saynn("He stares at all of you, his strict eyes searching for any signs of rebellion. His gaze lingers on your neck for some time.")
+		saynn("Он пристально смотрит на вас всех, его суровый взгляд выискивает малейшие признаки бунта. Его взор на какое-то время задерживается на твоей шее.")
 
-		saynn("[say=psricky]Nice toy you got there. Indeed, eh?[/say]")
+		saynn("[say=psricky]Классная игрушка у тебя там. И правда, а?[/say]")
 
-		saynn("Ricky slips his hand between the bars of the cage to tug tightly on your collar.")
+		saynn("Рикки просовывает руку между прутьями клетки, чтобы крепко дернуть тебя за ошейник.")
 
-		saynn("[say=psricky]Good thing I got a jammer. Otherwise you'd be the first one out. First one for sure, see?[/say]")
+		saynn("[say=psricky]Хорошо, что у меня есть глушилка. Иначе ты бы вылетел первым. Точно первым, сечешь?[/say]")
 
-		saynn("The spaceship begins to shake slightly, fire starts dancing behind the window.")
+		saynn("Корабль начинает слегка подрагивать, а за окном пускается в пляс пламя.")
 
-		saynn("[say=psricky]We're landing. Will share more after, okay? I will share alright.[/say]")
+		saynn("[say=psricky]Мы садимся. Расскажу подробнее чуть позже, ладно? Еще как расскажу![/say]")
 
-		saynn("And just like that, he leaves the cargo space.")
+		saynn("И вот так просто он покидает грузовой отсек.")
 
-		addButton("Continue", "See what happens next", "after_landing")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_landing")
 	if(state == "after_landing"):
 		aimCameraAndSetLocName("psmine_exit")
 		playAnimation(StageScene.Duo, "stand", {npc="psricky"})
-		saynn("The landing wasn't the softest.. but you can't complain.")
+		saynn("Посадка была не самой мягкой... но жаловаться всё равно не на что.")
 
-		saynn("Ricky returns as the wide rear door of the spaceship starts going through its opening sequence, revealing.. quite a landscape.")
+		saynn("Рикки возвращается, пока широкая задняя дверь корабля начинает открываться, открывая взору... весьма специфический пейзаж.")
 
-		saynn("It's nothing but black, sharp rock.")
+		saynn("Вокруг лишь черная, острая как бритва скала.")
 
-		saynn("One of the goons opens the cage while the others are standing near, aiming their guns at you.")
+		saynn("Один из громил открывает клетку, пока остальные стоят рядом, целясь в тебя из пушек.")
 
-		saynn("[say=psricky]One by one, no funny shit. No funny, mhm?[/say]")
+		saynn("[say=psricky]Выходи по одному, и без всяких приколов. Без фокусов, м-м?[/say]")
 
-		saynn("Slowly, you step out of the spaceship. Is that your new home? You're standing on a small landing pad, surrounded by tall, prickly mountains of that black rock.")
+		saynn("Медленно ты выходишь из корабля. Неужели это твой новый дом? Ты стоишь на небольшой посадочной площадке, окруженный высокими колючими горами из этой черной породы.")
 
-		saynn("[say=psricky]You know what planet this is? You probably don't, do ya?[/say]")
+		saynn("[say=psricky]Знаешь, что это за планета? Наверняка нет, а?[/say]")
 
-		saynn("Some goons push the cage out of the spaceship and bring it along.")
+		saynn("Какие-то громилы выталкивают клетку из космического корабля и тащат её следом.")
 
-		saynn("[say=psricky]It's called Deadrock. The god wasn't kind to it. Even the god, can you believe it?[/say]")
+		saynn("[say=psricky]Она называется Дедрок. Бог был к ней немилостив. Даже к богу, представляешь?[/say]")
 
-		saynn("Fitting name for such a dead-looking place.")
+		saynn("Подходящее название для такого дохлого места.")
 
-		saynn("[say=psricky]Has so much lava that the sky has turned red. A bloody fuckin' sky, eh?[/say]")
+		saynn("[say=psricky]Тут столько лавы, что небо стало красным. Кровавое, блядь, небо, а?[/say]")
 
-		saynn("Ricky approaches one of the rocky walls.. and slips a stick of dynamite into one of its cracks. He steps back.. and seconds later, a loud explosion creates a hole.")
+		saynn("Рикки подходит к одной из скалистых стен... и сует шашку динамита в одну из трещин. Он отступает... и спустя секунды громкий взрыв пробивает дыру.")
 
-		saynn("[say=psricky]Put that voidsteel barricade there, okay? Slaves, heel, you fuckers.[/say]")
+		saynn("[say=psricky]Ставь вон там ту заграду из пустостали, ясно? Рабы, ко мне, ублюдки![/say]")
 
-		saynn("Time for more exploring..")
+		saynn("Пора исследовать окрестности...")
 
-		addButton("Follow", "Follow the guy", "near_cages")
+		addButton("Следовать", "Идти за парнем", "near_cages")
 	if(state == "near_cages"):
 		aimCameraAndSetLocName("psmine_sleep")
-		saynn("Ricky pulls out his datapad and follows some kind of digital map.")
+		saynn("Рикки достает свой датапад и следует по какой-то цифровой карте.")
 
-		saynn("You don't see any lava here luckily.. but a little bit of it wouldn't hurt, it's so dark you can barely see.")
+		saynn("К счастью, лавы здесь почти нет... хотя капелька не помешала бы, ведь здесь настолько темно, что едва что-то видно.")
 
-		saynn("Eventually, you find a deadend.")
+		saynn("В конце концов, вы упираетесь в тупик.")
 
-		saynn("[say=psricky]Good enough. Put the cage here. Here, you dig?[/say]")
+		saynn("[say=psricky]Сойдет. Ставь клетку здесь. Ну, копай![/say]")
 
-		saynn("The armed goons obey, placing the familiar cage onto the ground.")
+		saynn("Вооруженные головорезы повинуются, водружая знакомую клетку на землю.")
 
-		saynn("Ricky lines you all up.")
+		saynn("Рикки выстраивает вас в шеренгу.")
 
-		saynn("[say=psricky]Listen up. This is where you will all sleep for the duration of this.. vacation. That's right, you won't be here forever. We're gonna do a job. And then we're gonna leave. I wanna be here as much as any one of you do. Let's not waste our time, alright? You waste my time, I will do the same to you.[/say]")
+		saynn("[say=psricky]Слушайте сюда. Здесь вы будете спать на протяжении всего этого... отпуска. Именно так, вы здесь не навсегда. Мы сделаем дело, и потом свалим. Я хочу оказаться здесь не больше, чем любой из вас. Так что не тратьте мое время, ясно? Если вы будете тратить мое время, я сделаю то же самое с вами.[/say]")
 
-		saynn("At least you won't have to spend the rest of your days here. You already begin to miss the prison..")
+		saynn("По крайней мере, вам не придется провести здесь остаток своих дней. Вы уже начинаете скучать по тюрьме...")
 
-		saynn("[say=psricky]What's the job? Simple. You will mine this planet dry for me.[/say]")
+		saynn("[say=psricky]В чем заключается работа? Всё просто. Вы вычерпаете всю руду на этой планете для меня.[/say]")
 
-		addButton("Continue", "See what happens next", "in_caves")
+		addButton("Продолжить", "Смотреть, что будет дальше", "in_caves")
 	if(state == "in_caves"):
 		aimCameraAndSetLocName("psmine_entrance")
-		saynn("Ricky throws a few more sticks of dynamite, creating artificial caves.. until you stumble into some natural ones.. a whole system of them.")
+		saynn("Рикки бросает еще несколько шашек динамита, создавая искусственные пещеры... пока вы не натыкаетесь на естественные — целую систему гротов.")
 
-		saynn("[say=psricky]There we are. See these? These caves are rich with the ore that I need. So rich, it basically grows here. Flowing lava brings more of it every night. Or so I've been told. If you dig too far, you will get a face full of it, got it? Face full of lava, I mean.[/say]")
+		saynn("[say=psricky]Вот оно. Видите? В этих пещерах полно руды, которая мне нужна. Столько, что она тут буквально растет. Каждую ночь потоки лавы приносят еще больше. По крайней мере, мне так говорили. Если закопаетесь слишком глубоко, получите порцию лавы прямо в рожу, уяснили? В смысле, лицо будет в лаве.[/say]")
 
-		saynn("Not like you can escape from this god-forgotten rock of a planet on your own anyway..")
+		saynn("Всё равно ты ведь не сможешь свалить с этой проклятой скалы в одиночку..")
 
-		saynn("He presses some buttons on his datapad and then puts it away.")
+		saynn("Он нажимает несколько кнопок на своем датападе, а затем убирает его.")
 
-		saynn("[say=psricky]This spot right here will be the collection point. Bring the ore here and we will process it, alright? We will supply the tools.[/say]")
+		saynn("[say=psricky]Вот это место будет пунктом сбора. Приноси руду сюда, и мы её переработаем, ладно? Инструменты мы тебе выдадим.[/say]")
 
-		saynn("The armed goons bring an old, rusty minecart out.. and then hand every one of you a pickaxe.")
+		saynn("Вооруженные головорезы выкатывают старую ржавую вагонетку... а затем вручают каждому из вас кирку.")
 
-		saynn("[say=psricky]I'm willing to spend a share of the profits on upgrades. I'm kind, I'm fair, you see? But this part is up to you. Just get the job done. Will be a shame if I will have to execute all of you. A big waste indeed, eh?[/say]")
+		saynn("[say=psricky]Я готов выделять часть прибыли на улучшения. Я ведь добрый, справедливый, понимаешь? Но остальное — на тебе. Просто сделай работу. Будет жаль, если мне придётся казнить вас всех. Настоящая растрата, а?[/say]")
 
-		saynn("He spits onto the ground and tilts his head slightly, his tired stare eyeing you out.")
+		saynn("Он сплевывает на землю и слегка наклоняет голову, оценивающе глядя на тебя своим усталым взглядом.")
 
-		saynn("[say=psricky]So. Questions? You can say a word or two now.[/say]")
+		saynn("[say=psricky]Итак. Вопросы? Теперь можете вставить пару слов.[/say]")
 
-		addButton("How much", "How much ore does he need", "say_howmuch")
-		addButton("Flirt", "Try to flirt with him", "say_flirt")
-		addButton("What's next", "Ask what will happen to you after", "say_after")
-		addButton("Time to work", "Begin working", "time_to_work")
+		addButton("Сколько?", "Сколько руды ему нужно?", "say_howmuch")
+		addButton("Флиртовать", "Попробуй с ним зафлиртовать @@B*@@", "say_flirt")
+		addButton("Что дальше?", "Спросить, что с тобой будет потом", "say_after")
+		addButton("Пора за работу", "Приступить к работе", "time_to_work")
 	if(state == "say_howmuch"):
-		saynn("[say=pc]How much of that ore do you need?[/say]")
+		saynn("[say=pc]Сколько именно этой руды вам нужно?[/say]")
 
-		saynn("[say=psricky]As much as you can. I need roughly 1 million credits, that will pay for everything, including what I paid for you.[/say]")
+		saynn("[say=psricky]Столько, сколько сможешь добыть. Мне нужно примерно миллион кредитов — этого хватит на всё, включая ту сумму, что я отдал за тебя.[/say]")
 
-		saynn("One million credits.. shit.. Hopefully that ore will be a good one.")
+		saynn("Миллион кредитов... черт... Надеюсь, руда окажется стоящей.")
 
-		addButton("How much", "How much ore does he need", "say_howmuch")
-		addButton("Flirt", "Try to flirt with him", "say_flirt")
-		addButton("What's next", "Ask what will happen to you after", "say_after")
-		addButton("Time to work", "Begin working", "time_to_work")
+		addButton("Сколько?", "Сколько руды ему нужно?", "say_howmuch")
+		addButton("Флиртовать", "Попробуй с ним зафлиртовать @@B*@@", "say_flirt")
+		addButton("Что дальше?", "Спросить, что с тобой будет потом", "say_after")
+		addButton("Пора за работу", "Приступить к работе", "time_to_work")
 	if(state == "say_flirt"):
-		saynn("Maybe there is a different offer to be made here..")
+		saynn("Может, здесь можно предложить что-то другое...")
 
-		saynn("Slowly, you step out of line, putting extra sway into your {pc.thick} hips as you close the distance.")
+		saynn("Медленно, выходя из строя, вы нарочито покачиваете своими {pc.thick} бедрами, сокращая дистанцию.")
 
-		saynn("As you get everyone's attention, you do a swift turn and wiggle your naked ass.")
+		saynn("Привлекая всеобщее внимание, вы резко разворачиваетесь и виляете своей голой задницей.")
 
-		saynn("[say=pc]Hey~.. Do you wanna waste such an obedient slave on rock smashing?[/say]")
+		saynn("[say=pc]Эй~.. Неужели ты хочешь тратить такую послушную рабыню на долбежку камней?[/say]")
 
-		saynn("[say=psricky]Offering me a different kind?[/say]")
+		saynn("[say=psricky]Предлагаешь мне другой вариант?[/say]")
 
-		saynn("Your shoulders do a little shrug, your playful eyes purposefully eyes him out.")
+		saynn("Вы слегка пожимаете плечами, а ваши игривые глаза намеренно изучают его.")
 
-		saynn("[say=pc]I don't know, am I?[/say]")
+		saynn("[say=pc]Даже не знаю, неужели?[/say]")
 
-		saynn("[say=psricky]Spread your ass, slave.[/say]")
+		saynn("[say=psricky]Раздвинь зад, рабыня.[/say]")
 
-		saynn("Right here? In front of other slaves? The armed goons?")
+		saynn("Прямо здесь? На глазах у других рабов? На глазах у вооруженных головорезов?")
 
-		addButton("Never mind", "You changed your mind", "cancel_flirt")
-		addButton("Spread ass", "(Anal sex) Might as well..", "do_flirt_spread")
+		addButton("Проехали", "Вы передумали", "cancel_flirt")
+		addButton("Раздвинуть задницу", "(Анальный секс) А почему бы и нет...", "do_flirt_spread")
 	if(state == "cancel_flirt"):
-		saynn("You blink a few times.. and then get back into the line.")
+		saynn("Ты пару раз моргаешь... а затем возвращаешься в строй.")
 
-		saynn("[say=psricky]Alright. Maybe I bought the wrong slave.[/say]")
+		saynn("[say=psricky]Ладно. Может, я и правда купил не ту рабыню.[/say]")
 
-		addButton("How much", "How much ore does he need", "say_howmuch")
-		addButton("What's next", "Ask what will happen to you after", "say_after")
-		addButton("Time to work", "Begin working", "time_to_work")
+		addButton("Сколько?", "Сколько руды ему нужно?", "say_howmuch")
+		addButton("Что дальше?", "Спросить, что с тобой будет потом", "say_after")
+		addButton("Пора за работу", "Приступить к работе", "time_to_work")
 	if(state == "do_flirt_spread"):
 		playAnimation(StageScene.SexFreeStanding, "sex", {pc="psricky", npc="pc", bodyState={showPenis=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("A little too direct of an order perhaps.. but you don't mind.")
+		saynn("Возможно, приказ был слишком прямолинейным... но тебя это не смущает.")
 
-		saynn("Your hands land on your {pc.thick} buttcheeks and spread them for the guy, proudly displaying your {pc.analStretch} anal star.")
+		saynn("Твои руки ложатся на {pc.thick} ягодицы, и ты раздвигаешь их для него, с гордостью демонстрируя свою {pc.analStretch} анусную звездочку.")
 
-		saynn("Your heart is pounding while Ricky's eyes roam over your body.")
+		saynn("Твое сердце бешено колотится, пока взгляд Рикки блуждает по твоему телу.")
 
-		saynn("[say=psricky]Spread your legs. Bend over, eh?[/say]")
+		saynn("[say=psricky]Раздвинь ноги. И наклонись, а?[/say]")
 
-		saynn("A quiet murmur ripples through the onlookers.. while you do as he says, sticking your spread ass out more.")
+		saynn("Среди зрителей проносится тихий шепот... пока ты послушно выполняешь его приказ, еще сильнее выпячивая свою раздвинутую задницу.")
 
-		saynn("Ricky unzips his pants, revealing a hard, swollen cock that has a pronounced knot at the base.")
+		saynn("Рикки расстегивает ширинку, демонстрируя твердый, разбухший член с отчетливым узлом у основания.")
 
-		saynn("Without hesitation, he grips and pulls you onto his hard shaft. Your breath hitches as the pointy tip of his member stretches you wide. His hands catch yours as he drives in.. hard and deep.. filling you deeply.")
+		saynn("Без колебаний он хватает тебя и насаживает на свой твердый ствол. У тебя перехватывает дыхание, когда острое жало его члена широко растягивает тебя. Его руки перехватывают твои, когда он входит... резко и глубоко... заполняя тебя до самых краев.")
 
-		saynn("[say=pc]Mmhh.. ah..[/say]")
+		saynn("[say=pc]Ммм... ах...[/say]")
 
-		saynn("Every rapid pump slams you forward.. before he yanks you back, your moans echoing around the mountains as the other slaves and goons watch you get fucked raw. Ricky knot slaps against your sensitive rim.")
+		saynn("Каждый резкий толчок швыряет тебя вперед... а затем он рывком тянет тебя назад, и твои стоны эхом разносятся по горам, пока остальные рабы и головорезы смотрят, как тебя трахают в мясо. Узел Рикки с силой бьется о твой чувствительный анус.")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your prostate gets smashed again and again.. your poor locked little cock dripping pre onto the cold black rock, putting a desperate amount of pressure onto the metal walls. Surely he will let you be his pet for putting out so much..")
+			saynn("Твою простату разминают снова и снова... твой бедный запертый член сочится предэякулятом на холодный черный камень, создавая отчаянное давление на металлические стенки. Наверняка он позволит тебе стать его питомцем за то, что ты выдаешь столько...")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your prostate gets smashed again and again.. Your own cock bobbing up and down, dripping pre onto the cold black rock. Surely he will let you be his pet for putting out so much..")
+			saynn("Твою простату разминают снова и снова... Твой собственный член подпрыгивает вверх-вниз, капая предэякулятом на холодный черный камень. Наверняка он позволит тебе стать его питомцем за то, что ты выдаешь столько...")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("Even though it's your ass that's getting railed, your pussy is dripping lots, your inner pleasure spots gets stimulated through the walls of your asshole by his fat cock. Surely he will let you be his pet for putting out so much..")
+			saynn("Хотя трахают твою задницу, твоя киска течет вовсю — его толстый член стимулирует твои эрогенные зоны через стенки ануса. Наверняка он позволит тебе стать его питомцем за то, что ты выдаешь столько...")
 
-		addButton("Continue", "See what happens next", "flirt_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "flirt_cum")
 	if(state == "flirt_cum"):
 		playAnimation(StageScene.SexFreeStanding, "fast", {pc="psricky", npc="pc", pcCum=true, bodyState={showPenis=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Finally, with a final forceful push, Ricky slips his swollen knot inside, shoving his full length down your stretched tailhole!")
+		saynn("Наконец, мощным финальным толчком Рикки проталкивает свой разбухший узел внутрь, забивая всю свою длину в твое растянутое отверстие!")
 
-		saynn("His balls are twitching as his throbbing cock floods your needy asshole with a hot, pulsing torrent of cum, full ropes of his seed get pumped inside you, making your belly a little bumpier.")
+		saynn("Его яички подергиваются, когда пульсирующий член заливает твой жаждущий анус горячим, бьющим потоком спермы; целые струи его семени вкачиваются в тебя, отчего твой живот становится слегка бугристым.")
 
-		saynn("[say=pc]Ahh..[/say]")
+		saynn("[say=pc]Ах..[/say]")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your muscles clench instinctively around him. Your prostate gets so much pressure put on it that you can't hold back anymore! Your caged member twitches in its tight cage, shooting weak strings of {pc.cum} onto the ground.")
+			saynn("Твои мышцы инстинктивно сжимаются вокруг него. На простату оказывается такое давление, что ты больше не можешь сдерживаться! Твой запертый член дергается в тесной клетке, выстреливая слабыми струйками {pc.cum} на землю.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your muscles clench instinctively around him. Your prostate gets so much pressure put on it that you can't hold back anymore! Your {pc.penis} twitches and throbs too, wasting its load, shooting strings of {pc.cum} onto the ground.")
+			saynn("Твои мышцы инстинктивно сжимаются вокруг него. На твою простату давит так сильно, что ты больше не можешь сдерживаться! Твой {pc.penis} тоже дергается и пульсирует, выбрасывая порции {pc.cum} прямо на землю.")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("Your muscles clench instinctively around him. Your g-pose gets massaged by his knot so much that you can't hold back anymore! Loud slutty moans escape you as your neglected pussy twitches and squirts, showering the ground with your juices.")
+			saynn("Твои мышцы инстинктивно сжимаются вокруг него. Его узел так неистово массирует твою точку G, что ты больше не можешь сдерживаться! Громкие похотливые стоны вырываются из тебя, пока твоя заброшенная киска дергается и брызжет, заливая землю твоими соками.")
 
 		else:
-			saynn("Your muscles clench instinctively around him. Your pleasure spot gets massaged enough for you to cum hard.")
+			saynn("Твои мышцы инстинктивно сжимаются вокруг него. Твою точку удовольствия массируют так интенсивно, что ты кончаешь на полную катушку.")
 
-		addButton("Continue", "See what happens next", "flirt_after_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "flirt_after_sex")
 	if(state == "flirt_after_sex"):
 		playAnimation(StageScene.Duo, "stand", {npc="psricky"})
-		saynn("After he yanks his knot out, your ass receives a firm smack.")
+		saynn("После того как он вырывает свой узел, ты получаешь крепкий шлепок по заднице.")
 
-		saynn("[say=pc]Ah.. did you like that?[/say]")
+		saynn("[say=pc]Ах.. тебе понравилось?[/say]")
 
-		saynn("[say=psricky]Hole is a hole. See?[/say]")
+		saynn("[say=psricky]Дыра есть дыра. Видишь?[/say]")
 
-		saynn("You pout.. while leaking his seed.")
+		saynn("Ты дуешь губки.. пока из тебя сочатся его семена.")
 
-		saynn("[say=pc]I can do more. But not if I have to mine that stupid ore all day.[/say]")
+		saynn("[say=pc]Я могу больше. Но не если мне приходится добывать эту тупую руду весь день.[/say]")
 
-		saynn("He tilts his head.")
+		saynn("Он наклоняет голову.")
 
-		saynn("[say=psricky]Back in line. Hear me?[/say]")
+		saynn("[say=psricky]В строй! Слышишь меня?[/say]")
 
-		saynn("[say=pc]Really?[/say]")
+		saynn("[say=pc]Серьёзно?[/say]")
 
-		saynn("You clench your fists.. making the goons grip their guns harder.. but Ricky calms them down.")
+		saynn("Ты сжимаешь кулаки.. заставляя громил крепче вцепиться в свои пушки.. но Рикки их успокаивает.")
 
-		saynn("[say=psricky]You got to be my cocksleeve for a bit, didn't ya? Yeah, you did. Back in line.[/say]")
+		saynn("[say=psricky]Пришлось тебе немного побыть моим чехлом для члена, а? Да, именно так. А теперь — в строй![/say]")
 
-		saynn("Oh well..")
+		saynn("Ну, что ж..")
 
-		addButton("How much", "How much ore does he need", "say_howmuch")
-		addButton("What's next", "Ask what will happen to you after", "say_after")
-		addButton("Time to work", "Begin working", "time_to_work")
+		addButton("Сколько?", "Сколько руды ему нужно?", "say_howmuch")
+		addButton("Что дальше?", "Спросить, что с тобой будет потом", "say_after")
+		addButton("Пора за работу", "Приступить к работе", "time_to_work")
 	if(state == "say_after"):
-		saynn("[say=pc]What will happen to us after?[/say]")
+		saynn("[say=pc]Что с нами будет потом?[/say]")
 
-		saynn("[say=psricky]Do you really care, slave?[/say]")
+		saynn("[say=psricky]Тебе реально не всё равно, рабыня?[/say]")
 
-		saynn("[say=pc]Yeah?[/say]")
+		saynn("[say=pc]Да?[/say]")
 
-		saynn("[say=psricky]I will free the slave who earned me the most credits. How about that?[/say]")
+		saynn("[say=psricky]Я освобожу ту рабыню, которая принесет мне больше всего кредитов. Как тебе такое?[/say]")
 
-		saynn("[say=pc]I find that hard to believe.[/say]")
+		saynn("[say=pc]С трудом в это верится.[/say]")
 
-		saynn("[say=psricky]I told ya what you wanna hear, can you shut up now?[/say]")
+		saynn("[say=psricky]Я сказал тебе всё, что ты хотела услышать, так можешь ты уже заткнуться?[/say]")
 
-		addButton("How much", "How much ore does he need", "say_howmuch")
-		addButton("Flirt", "Try to flirt with him", "say_flirt")
-		addButton("What's next", "Ask what will happen to you after", "say_after")
-		addButton("Time to work", "Begin working", "time_to_work")
+		addButton("Сколько?", "Сколько руды ему нужно?", "say_howmuch")
+		addButton("Флиртовать", "Попробуй с ним зафлиртовать @@B*@@", "say_flirt")
+		addButton("Что дальше?", "Спросить, что с тобой будет потом", "say_after")
+		addButton("Пора за работу", "Приступить к работе", "time_to_work")
 	if(state == "time_to_work"):
-		saynn("Ricky stares at all of you for a bit longer.")
+		saynn("Рики еще какое-то время пристально смотрит на вас всех.")
 
-		saynn("[say=psricky]Alright. Go back to the cage now. Work starts tomorrow. No slacking, got it?[/say]")
+		saynn("[say=psricky]Ладно. А теперь — обратно в клетку. Работа начинается завтра. И никакой лени, уяснили?[/say]")
 
-		saynn("He sure likes to make his slaves sleep in a metal cage..")
+		saynn("Ему определенно нравится заставлять своих рабов спать в железной клетке...")
 
-		saynn("Ricky gestures to his goons to escort you while he himself heads back to the ship.")
+		saynn("Рикки жестом приказывает своим громилам сопроводить тебя, а сам направляется обратно к кораблю.")
 
-		addButton("Cage", "Go back and sleep", "go_sleep")
+		addButton("Клетка", "Вернуться и поспать", "go_sleep")
 	if(state == "go_sleep"):
 		removeCharacter("psricky")
 		playAnimation(StageScene.Solo, "stand")
 		aimCameraAndSetLocName("psmine_sleep")
-		saynn("Sleeping in a pile of slaves.. wasn't exactly comfy.. but it's better than nothing.")
+		saynn("Спать в куче рабов... было не то чтобы уютно... но всё же лучше, чем ничего.")
 
-		saynn("When the time comes, one of the goons hits the cage with the side of his gun.")
+		saynn("Когда приходит время, один из громил бьёт по клетке рукояткой пистолета.")
 
-		saynn("Time to see what you can do..")
+		saynn("Пора посмотреть, на что ты способен...")
 
-		addButton("Continue", "Time to hit rocks under the red sun!", "start_gameplay")
+		addButton("Продолжить", "Пора долбить камни под красным солнцем!", "start_gameplay")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -9,7 +9,7 @@ func registerTriggers(es):
 func run(_triggerID, _args):
 	if(getFlag("Mining_IntroducedToMinning") && !getFlag("PortalPantiesModule.Alex_FirstTimeTalked")):
 		if(getFlag("PortalPantiesModule.Alex_BusyDays", 0) > 0):
-			addDisabledButton("Alex", "He is not here today")
+			addDisabledButton("Алекс", "Его сегодня здесь нет")
 		else:
 			addButtonUnlessLate("Alex", "Approach the fox engineer", "alexfirst")
 

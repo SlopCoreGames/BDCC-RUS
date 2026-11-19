@@ -14,7 +14,7 @@ func run(_triggerID, _args):
 			if(GM.pc.getInventory().hasItemID("plainPanties")):
 				addButtonUnlessLate("Give panties", "Give Alex the female panties that he wanted", "givepanties")
 			else:
-				addDisabledButton("Give panties", "You don't have generic female panties in your inventory")
+				addDisabledButton("Отдать трусики", "В твоём инвентаре нет обычных женских трусиков")
 
 		if(getFlag("PortalPantiesModule.Panties_FleshlightsGotStolen") && !getFlag("PortalPantiesModule.Panties_FleshlightsAskedAlex")):
 			addButtonUnlessLate("Panties!", "Ask what the heck is happening", "alexpantieswtf")

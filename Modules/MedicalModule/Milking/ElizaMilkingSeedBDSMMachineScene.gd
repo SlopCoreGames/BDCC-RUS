@@ -11,104 +11,104 @@ func _run():
 		addCharacter("eliza")
 		aimCameraAndSetLocName("med_milkingroom")
 		playAnimation(StageScene.Grope, "tease", {pc="pc", npc="eliza", bodyState={exposedCrotch=true}})
-		saynn("You ask the doctor to seed-milk you. She nods and asks you to follow her into the secluded room that has an advanced-looking table installed in it.")
+		saynn("Вы просите доктора подоить ваше семя. Она кивает и предлагает вам пройти за ней в уединенную комнату, где установлена высокотехнологичная кушетка.")
 
-		saynn("You expose your {pc.penis} and wait for what will happen next.")
+		saynn("Вы обнажаете свой {pc.penis} и замираете в ожидании того, что будет дальше.")
 
-		saynn("[say=eliza]Just stand still for me.[/say]")
+		saynn("[say=eliza]Просто стой смирно.[/say]")
 
-		saynn("You do that while she taps away at a computer's keyboard.")
+		saynn("Вы подчиняетесь, пока она что-то быстро печатает на компьютерной клавиатуре.")
 
-		addButton("Continue", "See what happens next", "pc_gets_grabbed")
+		addButton("Продолжить", "Смотреть, что будет дальше", "pc_gets_grabbed")
 	if(state == "pc_gets_grabbed"):
 		playAnimation(StageScene.BDSMMachineAltFuck, "tease", {pc="pc", bodyState={naked=true,chains=([["hose", "penisPump", "scene", "milkIntake"]] if !hasCage else [])}})
-		saynn("Suddenly, the table's mechanisms spring into lift. Two pairs of grabby manipulators dart towards your limbs.. tightly securing themselves around your wrists and ankles.. before effortlessly lifting you off of the floor and bringing you onto the table, belly-down.")
+		saynn("Внезапно механизмы стола приходят в движение. Две пары захватывающих манипуляторов стремительно тянутся к вашим конечностям... плотно обхватывая запястья и лодыжки... после чего они без усилий поднимают вас с пола и укладывают на стол животом вниз.")
 
-		saynn("Your body is rendered helpless as the manipulators secure your wrists and ankles in place, leaving you completely exposed.. especially your tasty rear, where each inch of your butt is laid bare, your {pc.analStretch} tailhole fully visible..")
+		saynn("Ваше тело становится совершенно беспомощным, пока манипуляторы фиксируют ваши руки и ноги, оставляя вас полностью открытой... особенно вашу аппетитную задницу, где каждый дюйм вашей попы обнажен, а вход в {pc.analStretch} виден как на ладони...")
 
-		saynn("[say=pc]Ah.[/say]")
+		saynn("[say=pc]Ах.[/say]")
 
 		if (!hasCage):
-			saynn("[say=eliza]That's not even everything~.[/say]")
+			saynn("[say=eliza]И это еще далеко не всё~.[/say]")
 
-			saynn("She presses another button and a new manipulator joins the rest. But this one is quite different, it has a pump module attached to its tip. The table transforms a bit, a section under your crotch gets retracted, allowing the manipulator to secure that pump onto your member.. The negative pressure inside invites blood to rush down to your shaft, getting it nice and hard..")
+			saynn("Она нажимает еще одну кнопку, и к остальным присоединяется новый манипулятор. Но этот заметно отличается: к его наконечнику прикреплен вакуумный модуль. Стол немного трансформируется — секция под вашим пахом уходит вниз, позволяя манипулятору закрепить насос на вашем члене... Отрицательное давление заставляет кровь прилить к стволу, делая его на редкость твердым...")
 
-		saynn("With mechanical precision, a motorized.. tool.. slides out from its compartment. Pre-lubed, it makes its way towards your exposed asshole, its surface sprinkled with lots of bumps. You feel it touching your anal ring.. and kneading it, gradually stretching and softening your tight sphincter. That rhythmic, gentle probing makes you arch your back a little.")
+		saynn("С механической точностью из своего отсека выдвигается моторизированный.. инструмент.. Он уже смазан и направляется к твоему обнаженному анусу; его поверхность усыпана множеством бугорков. Ты чувствуешь, как он касается анального кольца.. и разминает его, постепенно растягивая и размягчая твой тугой сфинктер. Это ритмичное, нежное зондирование заставляет тебя слегка прогнуть спину.")
 
-		saynn("[say=pc]Mh..[/say]")
+		saynn("[say=pc]Мм..[/say]")
 
-		addButton("Continue", "See what happens next", "start_fuck")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_fuck")
 	if(state == "start_fuck"):
 		playAnimation(StageScene.BDSMMachineAltFuck, "sex", {pc="pc", bodyState={naked=true,chains=([["hose", "penisPump", "scene", "milkIntake"]] if !hasCage else [])}})
-		saynn("After teasing your rear for a bit, the tool decides to make its deliberate, firm entry into your ass, its bumps quickly finding your prostate and putting pressure on it, causing your {pc.penis} to leak some transparent fluid out..")
+		saynn("Немного поразвлекавшись с твоим задом, инструмент решает совершить уверенное, размеренное проникновение в твою задницу; его бугорки быстро находят твою простату и начинают давить на неё, заставляя твой {pc.penis} выделять прозрачную жидкость..")
 
-		saynn("[say=pc]Ah!..[/say]")
+		saynn("[say=pc]Ах!..[/say]")
 
-		saynn("[say=eliza]Just enjoy the ride~.[/say]")
+		saynn("[say=eliza]Просто наслаждайся поездкой~.[/say]")
 
-		saynn("When it's done sliding inside you, the machine begins retracting the tool.. before plunging it deep inside again, establishing a cycle. A cycle of pounding your ass.")
+		saynn("Когда он заканчивает скользить внутри тебя, машина начинает втягивать инструмент обратно.. а затем снова глубоко вонзает его, устанавливая цикл. Цикл долбёжки в твою задницу.")
 
 		if (!hasCage):
-			saynn("At the same time, the pump module spools up as well, it begins to tug on your cock by sucking most of the air out, creating negative pressure.. before stuffing the air back inside. It feels like you're fucking a hungry fuckhole that wants to suck you in.. There is also a pleasure ring that neatly hugs your hard shaft before proceeding to slide along it, stroking hard..")
+			saynn("В то же самое время разгоняется и насосный модуль: он начинает тянуть твой член, выкачивая почти весь воздух и создавая отрицательное давление.. а затем всасывая воздух обратно. Такое чувство, будто ты трахаешь голодную дырку, которая хочет заглотить тебя целиком.. Также на твоём твердом стволе плотно обхватывает удовольствие кольцо, которое затем скользит вдоль него, интенсивно лаская..")
 
 		else:
-			saynn("As your p-spot gets stimulated so hard, your poor locked away member tries to get hard, blood flowing towards it but quickly encountering the cage that makes any kind of erection impossible. All your cock can do is dribble pre into the fluid collector below while your asshole is getting fucked by that machine..")
+			saynn("Пока твою точку P так сильно стимулируют, твой бедный запертый член пытается встать — кровь приливает к нему, но быстро натыкается на клетку, которая делает любую эрекцию невозможной. Всё, что может твой член — это пускать предэякулят в сборник жидкости внизу, пока машина вовсю трахает твой анус..")
 
-		saynn("Eliza just stands near and watches you with great fascination, her little smile makes yours glow red. The steady, powerful thrusts of that tool creates a storm of pleasurable sensations that cascade through your entire body as heat..")
+		saynn("Элиза просто стоит рядом и с огромным любопытством наблюдает за тобой; от её легкой улыбки твои щеки вспыхивают алым. Мощные, размеренные толчки этого инструмента вызывают шторм приятных ощущений, которые жаркой волной разливаются по всему твоему телу...")
 
-		addButton("Continue", "See what happens next", "process_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "process_cum")
 	if(state == "process_cum"):
 		playAnimation(StageScene.BDSMMachineAltFuck, "fast", {pc="pc", bodyState={naked=true,chains=([["hose", "penisPump", "scene", "milkIntake"]] if !hasCage else [])}})
-		saynn("The tool.. the dildo.. gradually ramps up its pressure on your pleasure button, sliding in and out of your ass at a crazy rate, the lubed-surface allowing it to do so.")
+		saynn("Инструмент... этот дилдо... постепенно наращивает давление на твою точку удовольствия, ввинчиваясь в твою задницу и выходя из неё с безумной скоростью благодаря скользкой поверхности.")
 
-		saynn("[say=pc]Ah.. ahh.. ah..[/say]")
+		saynn("[say=pc]Ах.. ахх.. ах..[/say]")
 
 		if (!hasCage):
-			saynn("The combined stimulation from that dildo and the rhythmic suctions and strokes coming from that penis pump leave you moaning like a slut, your prostate, caught in between all of this, begins to get all big and swollen, the milking makes it produce more and more of that transparent fluid that leaks from your cock.. Your body, straining against the restraints, squirms and convulses as the unyielding pressure builds relentlessly within you..")
+			saynn("Комбинированная стимуляция от этого дилдо, ритмичное всасывание и фрикции пенисного насоса заставляют тебя стонать как последнюю шлюху; твоя простата, зажатая между всеми этими ласками, начинает разбухать и отекать, а доильный процесс заставляет её вырабатывать всё больше и больше той прозрачной жидкости, что сочит из твоего члена... Твое тело, изнывая в путах, корчится и содрогается, пока внутри тебя неумолимо нарастает это нещадное давление...")
 
 		else:
-			saynn("The combined stimulation from that dildo with the tightness coming from your cock trying to get hard in your cage leave you moaning like a slut, your prostate, caught in between all of this, begins to get all big and swollen, the milking makes it produce more and more of that transparent fluid that leaks from your cock.. Your body, straining against the restraints, squirms and convulses as the unyielding pressure builds relentlessly within you..")
+			saynn("Сочетание стимуляции дилдо и того, как твой член пытается встать в тесной клетке, заставляет тебя стонать как последнюю шлюху; твоя простата, зажатая между всеми этими ласками, начинает разбухать и отекать, а доильный процесс заставляет её вырабатывать всё больше и больше той прозрачной жидкости, что сочит из твоего члена... Твое тело, изнывая в путах, корчится и содрогается, пока внутри тебя неумолимо нарастает это нещадное давление...")
 
-		saynn("[say=eliza]Give me all that useless seed, c'mon~."+str(" It's not like you can use it anyway~." if hasCage else "")+"[/say]")
+		saynn("[say=eliza]Отдай мне всё это бесполезное семя, ну же~."+str(" It's not like you can use it anyway~." if hasCage else "")+"[/say]")
 
-		saynn("Soon, the pounding becomes too much to bear. You throw your head back and moan as your member pulses violently, shooting "+str("thick powerful" if !hasCage else "weak")+" spurts of seed"+str(", filling the transparent tube of that penis pump" if !hasCage else " into the fluid collector below")+". The dildo keeps smashing your throbbing prostate, milking more and more of your {pc.cum} out of your twitching balls, your body trembling uncontrollably.")
+		saynn("Вскоре удары становятся невыносимыми. Ты запрокидываешь голову и стонешь, пока твой член бешено пульсирует, изрыгая..."+str("thick powerful" if !hasCage else "weak")+"струи спермы"+str(", filling the transparent tube of that penis pump" if !hasCage else " into the fluid collector below")+". Дильдо продолжает вбиваться в твою пульсирующую простату, выкачивая всё больше и больше твоей {pc.cum} из твоих дергающихся яичек, пока твоё тело сотрясает неконтролируемая дрожь.")
 
-		saynn("[say=pc]Ahh-hh.. mhhnhhh.. nhhh-h..[/say]")
+		saynn("[say=pc]Ааахх.. ммххнн.. нххх-х..[/say]")
 
-		saynn("Your asshole clenches with every surge, your p-spot squeezed to its limits.. pretty much destroyed by that relentless dildo that just keeps pounding you.. until you are left completely dry.. every last drop of your {pc.cum} forced from your cock"+str(" and collected by that pump" if !hasCage else "")+".")
+		saynn("Твой анус сжимается при каждом толчке, твою точку G сдавливает до предела... она практически уничтожена этим неумолимым дильдо, который продолжает долбить тебя.. пока ты не останешься совершенно пустым.. пока каждая последняя капля твоей {pc.cum} не будет выжата из твоего члена"+str(" and collected by that pump" if !hasCage else "")+".")
 
-		addButton("Continue", "See what happens next", "stop_milking")
+		addButton("Продолжить", "Смотреть, что будет дальше", "stop_milking")
 	if(state == "stop_milking"):
 		playAnimation(StageScene.BDSMMachineAltFuck, "inside", {pc="pc", bodyState={naked=true,chains=([["hose", "penisPump", "scene", "milkIntake"]] if !hasCage else [])}})
-		saynn("The dildo stops when there is no more seed to collect.. your orgasm fading away.")
+		saynn("Дильдо останавливается, когда собирать больше нечего.. твой оргазм постепенно угасает.")
 
-		saynn("While panting heavily, you catch Eliza's gaze.. she is biting her lip.")
+		saynn("Тяжело дыша, ты ловишь взгляд Элизы.. она прикусывает губу.")
 
-		saynn("[say=eliza]Amazing~. Felt good?[/say]")
+		saynn("[say=eliza]Потрясающе~. Приятно было?[/say]")
 
-		saynn("Little shudders are still rocking through your spent body.")
+		saynn("Легкая дрожь всё еще сотрясает твое изнеможденное тело.")
 
-		saynn("[say=pc]T-thanks.. Yeah..[/say]")
+		saynn("[say=pc]С-спасибо.. Да..[/say]")
 
-		saynn("[say=eliza]Let's get you out of there~.[/say]")
+		saynn("[say=eliza]Давай вытащим тебя оттуда~.[/say]")
 
-		saynn("She presses a button that causes the machine to retract the dildo, leaving your tailhole to gape for a bit.. beads of lube still hanging between the walls.")
+		saynn("Она нажимает кнопку, и машина втягивает дилдо, заставляя твое анусное отверстие на мгновение широко раскрыться... между стенок всё ещё висят капли смазки.")
 
-		addButton("Continue", "See what happens next", "outside_room")
+		addButton("Продолжить", "Смотреть, что будет дальше", "outside_room")
 	if(state == "outside_room"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		GM.pc.setLocation("med_nearmilking")
-		saynn("Eliza presses a few more buttons that make the table put you down on your feet carefully. Your legs are still shaking..")
+		saynn("Элиза нажимает ещё несколько кнопок, и стол осторожно опускает тебя на ноги. Твои колени всё ещё дрожат...")
 
-		saynn("[say=eliza]Thank you for that great donation~.[/say]")
+		saynn("[say=eliza]Спасибо за такое чудесное пожертвование~.[/say]")
 
-		saynn("You nod.. trying to catch your breathing.")
+		saynn("Ты киваешь... пытаясь восстановить дыхание.")
 
-		saynn("[say=eliza]I need to fill in some paperwork now, I hope you will find your way back to the lobby~.[/say]")
+		saynn("[say=eliza]Теперь мне нужно заполнить кое-какие бумаги, надеюсь, ты не забудешь дорогу обратно в лобби~.[/say]")
 
-		saynn("It's time to go.")
+		saynn("Пора идти.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

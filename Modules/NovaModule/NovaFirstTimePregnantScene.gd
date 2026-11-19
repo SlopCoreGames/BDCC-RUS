@@ -9,120 +9,120 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="nova", npcAction="stand"})
 		
 	if(state == ""):
-		saynn("You wake up in your cell hearing a loud voice closing in on your cell.")
+		saynn("Ты просыпаешься в камере от громкого голоса, приближающегося к твоей двери.")
 
 		saynn("[say=nova]{pc.name}!![/say]")
 
-		saynn("You rub your sleepy eyes and shake your head, trying to wake up faster. Nova rushes into your room, almost screaming.")
+		saynn("Ты потираешь заспанные глаза и трясешь головой, пытаясь быстрее прийти в себя. В комнату влетает Нова, едва не срываясь на крик.")
 
-		saynn("[say=nova]Fucker! Do you know what you did? You knocked me up![/say]")
+		saynn("[say=nova]Ублюдок! Ты хоть понимаешь, что натворил? Ты меня обрюхатил![/say]")
 
-		saynn("Enraged husky reaches for your face, trying to scratch it. You hold her away.")
+		saynn("Разъяренная хаски тянется к твоему лицу, пытаясь расцарапать его. Ты удерживаешь её на расстоянии.")
 
-		saynn("[say=pc]Calm down![/say]")
+		saynn("[say=pc]Успокойся![/say]")
 
-		saynn("[say=nova]Bitch, why would I calm down, you fucking bred me![/say]")
+		saynn("[say=nova]Сука, да как тут успокоишься, ты же меня трахнул и оплодотворил![/say]")
 
-		saynn("Seems like she is being really angry about it.")
+		saynn("Похоже, она действительно в бешенстве.")
 
-		addButton("Talk it out", "Try to calm Nova down without using force", "talk_it_out")
-		addButton("Force", "Force Nova to calm down", "force")
+		addButton("Поговорить", "Попытаться успокоить Нову без применения силы", "talk_it_out")
+		addButton("Заставить", "Заставить Нову успокоиться силой", "force")
 
 	if(state == "force"):
 		playAnimation(StageScene.Cuddling, "idle", {npc="nova"})
 		
-		saynn("She keeps trying to hurt you, the tantrum she threw won’t end on its own so you decide to help her. You catch her arms and forcibly wrench them behind her back, making her yelp. Then you steal the handcuffs off of her armor and cuff her hands behind her back before forcibly putting her onto your lap.")
+		saynn("Она продолжает пытаться причинить тебе боль; её истерика сама собой не утихнет, поэтому ты решаешь помочь. Ты перехватываешь её руки и силой заламываешь их ей за спину, заставляя её взвизгнуть. Затем ты срываешь наручники с её брони и заковываешь её руки за спиной, после чего силой усаживаешь её к себе на колени.")
 
-		saynn("She growls and starts to struggle but you hold her still. You growl into her ear which makes her snap out of it a bit.")
+		saynn("Она рычит и начинает вырываться, но ты удерживаешь её на месте. Ты рычишь ей прямо в ухо, отчего она немного приходит в себя.")
 
-		saynn("[say=pc]Yes, I bred you. And I will happily do it again and again. And you’re gonna be a good girl and carry my litter, you understand?[/say]")
+		saynn("[say=pc]Да, я осеменил тебя. И с радостью буду делать это снова и снова. И ты будешь послушной девочкой и выносишь моё потомство, понимаешь?[/say]")
 
-		saynn("[say=nova]B-But.. No.. That’s not how it should be! Not in this place! Who is gonna take care of the kids![/say]")
+		saynn("[say=nova]Н-но... нет... Всё должно быть иначе! Не в этом месте! Кто будет заботиться о детях?![/say]")
 
-		saynn("She tries to kick your leg and escape your grasp but you only tighten it, you put your hand on her neck and apply enough pressure to make her switch from growling to whining.")
+		saynn("Она пытается пнуть тебя по ноге и вырваться из хватки, но ты лишь сжимаешь объятия крепче; ты кладешь руку ей на шею и давишь достаточно сильно, чтобы её рычание сменилось скулением.")
 
-		saynn("[say=pc]They have a daycare here, you’re gonna be fine. I can’t visit my kids but you can, you will make a great mother, Nova. And I’m gonna keep breeding you.[/say]")
+		saynn("[say=pc]Здесь есть детский сад, ты будешь в порядке. Я не смогу навещать своих детей, а ты сможешь. Ты будешь отличной матерью, Нова. И я не перестану тебя осеменять.[/say]")
 
-		saynn("Her eyes jump all over the room but she seems to be calming down somewhat. You’re still holding her but now it’s more of an embrace rather than keeping her hostage. You nuzzle her exposed neck and nibble on it.")
+		saynn("Её глаза мечутся по комнате, но кажется, она начинает понемногу успокаиваться. Ты всё ещё держишь её, но теперь это больше похоже на объятия, чем на удержание заложницы. Ты прижимаешься носом к её обнаженной шее и слегка покусываешь её.")
 
-		saynn("About 30 seconds of silence pass.")
+		saynn("Проходит около 30 секунд тишины.")
 
-		saynn("[say=nova]My parents.. they.. I don’t know them much.. They wanted a male heir to their company. So much that they gave me away.. to AlphaCorp.. I don’t wanna be like them, I don’t wanna abandon my children..[/say]")
+		saynn("[say=nova]Мои родители... они... я их почти не знаю... Им нужен был наследник для компании. Настолько, что они просто отдали меня... АльфаКорпу... Я не хочу быть как они, я не хочу бросать своих детей...[/say]")
 
-		saynn("[say=pc]You won’t repeat the mistakes of your parents, Nova. You will care about your children, you seem like you will make a great mommy.[/say]")
+		saynn("[say=pc]Ты не повторишь ошибок своих родителей, Нова. Ты будешь заботиться о своих детях, похоже, из тебя выйдет отличная мамочка.[/say]")
 
-		saynn("[say=nova]I.. I guess..[/say]")
+		saynn("[say=nova]Я... наверное...[/say]")
 
-		saynn("Nova looks at you with hope in her eyes.")
+		saynn("Нова смотрит на тебя с надеждой в глазах.")
 
-		saynn("[say=nova]Will you help me?[/say]")
+		saynn("[say=nova]Ты поможешь мне?[/say]")
 
-		saynn("[say=pc]I’m a convict, I can’t do much, my life is ruined. But sure, I won’t forget about you.[/say]")
+		saynn("[say=pc]Я заключенная, я мало что могу сделать, моя жизнь разрушена. Но конечно, я не забуду о тебе.[/say]")
 
-		saynn("You hug her tighter and put your hands on her belly, gently caressing it through her bodysuit. You leave a little kiss on her cheek.")
+		saynn("Ты прижимаешь её к себе крепче и кладешь руки ей на живот, нежно поглаживая его через комбинезон. Затем ты оставляешь легкий поцелуй на её щеке.")
 
-		saynn("[say=nova]I guess I will go.. See you around. Oh, right.[/say]")
+		saynn("[say=nova]Думаю, мне пора... Еще увидимся. Ах, точно.[/say]")
 
-		saynn("She chuckles softly, not realizing that she is still handcuffed. She rattles her chain.")
+		saynn("Она тихо посмеивается, не замечая, что всё еще в наручниках. Она заставляет свои цепи негромко зазвенеть.")
 
-		saynn("[say=nova]Can you?[/say]")
+		saynn("[say=nova]Можешь?[/say]")
 
-		addButton("Uncuff her", "Let her go", "uncuff_her")
+		addButton("Расковать ее", "Отпустить её", "uncuff_her")
 
 	if(state == "uncuff_her"):
-		saynn("You remove cuffs from her hands and let her get up. She looks around the cell and hugs herself. Then she gives you one last look.")
+		saynn("Ты снимаешь наручники с её рук и даешь ей подняться. Она оглядывает камеру и обнимает себя за плечи. Затем она бросает на тебя последний взгляд.")
 
-		saynn("[say=nova]See you.[/say]")
+		saynn("[say=nova]Увидимся.[/say]")
 
-		saynn("Before leaving your cell.")
+		saynn("Прежде чем покинуть камеру.")
 
 		# (scene ends)
-		addButton("Continue", "Continue on your way", "endthescene")
+		addButton("Продолжить", "Продолжить путь", "endthescene")
 
 	if(state == "talk_it_out"):
 		playAnimation(StageScene.Cuddling, "idle", {npc="nova"})
 		
-		saynn("You try to keep her claws away from your face without too much extra force.")
+		saynn("Ты стараешься уберечь лицо от её когтей, не прикладывая при этом излишней силы.")
 
-		saynn("[say=pc]Okay, okay. Let’s talk it out.[/say]")
+		saynn("[say=pc]Ладно, ладно. Давай просто поговорим.[/say]")
 
-		saynn("She manages to free one of her hands and scratch your cheek. Ow. Nova is panting heavily and still growling.")
+		saynn("Ей удаётся высвободить одну руку и полоснуть тебя по щеке. Ой! Нова тяжело дышит и всё ещё рычит.")
 
-		saynn("[say=nova]I never wanted to be a mother. And not in a fucking prison, that’s for sure.[/say]")
+		saynn("[say=nova]Я никогда не хотела быть матерью. И уж точно не в грёбаной тюрьме.[/say]")
 
-		saynn("[say=pc]Why not?[/say]")
+		saynn("[say=pc]Почему это?[/say]")
 
-		saynn("[say=nova]Because.. Who is gonna take care of them..[/say]")
+		saynn("[say=nova]Потому что... кто будет о них заботиться?..[/say]")
 
-		saynn("Nova doesn’t seem to be in the rageful state anymore but you hold her hands just in case. It’s kinda cute actually.")
+		saynn("Нова, кажется, уже не в такой ярости, но ты всё равно держишь её за руки на всякий случай. На самом деле, это даже мило.")
 
-		saynn("[say=pc]You and me. I understand your concerns but this place seems to have everything needed, children will receive the treatment they need in the daycare and you can visit them.[/say]")
+		saynn("[say=pc]Ты и я. Я понимаю твои опасения, но здесь, кажется, есть всё необходимое: дети будут получать нужный уход в детском саду, и ты сможешь их навещать.[/say]")
 
-		saynn("She joins you on the bed while you keep holding hands with her. You can feel how warm her body is.")
+		saynn("Она забирается к тебе на кровать, пока ты продолжаешь держать её за руки. Ты чувствуешь, какая у неё горячая кожа.")
 
-		saynn("[say=nova]I guess you’re right.. It’s just that.. My parents abandoned me. They wanted a male heir for their company. So much that they gave me away to AlphaCorp.. I don’t wanna follow my parent’s steps, I don’t wanna abandon my children..[/say]")
+		saynn("[say=nova]Думаю, ты прав.. Просто.. Родители бросили меня. Им нужен был наследник мужского пола для компании. Настолько, что они просто отдали меня АльфаКорпу.. Я не хочу повторять их ошибок, не хочу бросать своих детей..[/say]")
 
-		saynn("You stop holding her hand and instead wrap it around her waist, the second one lands on her belly and softly caresses it.")
+		saynn("Ты перестаешь держать её за руку и вместо этого обнимаешь её за талию, а вторая рука ложится ей на живот, мягко поглаживая его.")
 
-		saynn("[say=pc]You won’t repeat the mistakes of your parents, Nova. You will care about your children, you seem like you will make a great mommy.[/say]")
+		saynn("[say=pc]Ты не повторишь ошибок своих родителей, Нова. Ты будешь заботиться о своих детях, похоже, из тебя выйдет отличная мамочка.[/say]")
 
-		saynn("[say=nova]I.. Yeah..[/say]")
+		saynn("[say=nova]Да.. Наверное..[/say]")
 
-		saynn("Nova looks at you with hope in her eyes. Then she leans into you and rests her head on your shoulder. She seems to not be afraid to show some weakness.")
+		saynn("Нова смотрит на тебя с надеждой в глазах. Затем она прижимается к тебе и кладет голову тебе на плечо. Кажется, она больше не боится проявлять слабость.")
 
-		saynn("You rest like that for a few minutes, hugging each other. Nova even begins to smile even if just slightly, it seems she starts to grow on the idea of being a mommy.")
+		saynn("Так вы лежите несколько минут, обнимая друг друга. Нова даже начинает слегка улыбаться — похоже, идея стать мамой начинает ей нравиться.")
 
-		saynn("[say=nova]You will care for our pups too, right?[/say]")
+		saynn("[say=nova]Ты ведь тоже будешь заботиться о наших щенках, правда?[/say]")
 
-		saynn("[say=pc]As much as I can. You know, I’m still a convict.[/say]")
+		saynn("[say=pc]Насколько смогу. Знаешь, я всё ещё заключённая.[/say]")
 
-		saynn("[say=nova]Yeah. Guess I will go. See you around.[/say]")
+		saynn("[say=nova]Да. Пожалуй, мне пора. Еще увидимся.[/say]")
 
-		saynn("And with that, she stands up and prepares to leave. You leave her a quick kiss on the lips before she does that. She chuckles.")
+		saynn("С этими словами она встает, собираясь уходить. Прежде чем она сделает это, ты быстро целуешь её в губы. Она тихонько смеется.")
 
 		# (scene ends)
 
-		addButton("Continue", "Continue on your way", "endthescene")
+		addButton("Продолжить", "Продолжить путь", "endthescene")
 		
 
 func _react(_action: String, _args):

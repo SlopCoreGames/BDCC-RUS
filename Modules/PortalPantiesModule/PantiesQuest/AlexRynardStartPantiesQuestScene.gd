@@ -15,48 +15,48 @@ func _run():
 
 		# (Foxy asks you to bring female panties, normal ones)
 
-		saynn("You let out an audible sigh and try to get Foxy’s attention. He seems to be very busy with his current project.")
+		saynn("Ты издаешь отчетливый вздох, пытаясь привлечь внимание Фокси. Похоже, он по уши погряз в своем текущем проекте.")
 
-		saynn("[say=pc]Hey. Just wanted to ask if there is some other way to earn credits.[/say]")
+		saynn("[say=pc]Эй. Просто хотела спросить, есть ли какой-то другой способ заработать кредиты?[/say]")
 
-		saynn("Foxy nods a few times, pretending to pay attention but his eyes are busy reading some manual. You try to pose a little bit, maybe he just needs a little seduction?")
+		saynn("Фокси несколько раз кивает, делая вид, что слушает, но его глаза прикованы к какому-то руководству. Ты решаешь немного попозировать — может, ему просто нужно капельку соблазна?")
 
-		saynn("[say=pc]You know, working in mines all day kinda sucks.[/say]")
+		saynn("[say=pc]Знаешь, вкалывать в шахтах целыми днями — то еще удовольствие.[/say]")
 
-		saynn("Now it's his turn to sigh. He looks at you and your body then barks out a sentence with a sarcastic tone.")
+		saynn("Теперь настала его очередь вздыхать. Он окинул тебя взглядом, задержавшись на твоем теле, а затем резко бросил фразу саркастичным тоном.")
 
-		saynn("[say=alexrynard]You wanna fuck with me in exchange for credits?[/say]")
+		saynn("[say=alexrynard]Ты что, хочешь трахнуться со мной в обмен на кредиты?[/say]")
 
-		saynn("You gasp.")
+		saynn("Ты ахаешь от неожиданности.")
 
-		saynn("[say=pc]No, no, what are you even saying? Of course not.. Unless?[/say]")
+		saynn("[say=pc]Нет-нет, ты о чем вообще? Конечно нет... Если только?..[/say]")
 
-		saynn("He rolls his eyes and shakes his head.")
+		saynn("Он закатывает глаза и качает головой.")
 
-		saynn("[say=alexrynard]Can’t you see I’m busy? I need to test this latest prototype.[/say]")
+		saynn("[say=alexrynard]Не видишь, что я занят? Мне нужно протестировать этот последний прототип.[/say]")
 
-		saynn("[say=pc]Well.. Can I help?[/say]")
+		saynn("[say=pc]Ну... Чем могу помочь?[/say]")
 
-		saynn("[say=alexrynard]How some slutty inmate can even possibly help me test this bluespace matter transfer device.. wait.. hmm..[/say]")
+		saynn("[say=alexrynard]Как какая-то шлюшливая заключенная вообще может помочь мне тестировать этот аппарат для переноса материи через блюспейс... погоди... хмм...[/say]")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "continue"):
-		saynn("The foxy holds one of the devices in his hands, it looks like a flat ring with some kind of aperture in the middle and a slot for some crystal.")
+		saynn("Этот чертяка держит в руках одно из устройств; оно похоже на плоское кольцо с каким-то отверстием посередине и пазом для кристалла.")
 
-		saynn("[say=alexrynard]I have an idea. Bring me some panties. Female ones.[/say]")
+		saynn("[say=alexrynard]У меня есть идея. Принеси мне трусиков. Женских.[/say]")
 
-		saynn("You raise your brow at that sudden strange request. Is this foxy secretly a panty sniffer?")
+		saynn("Ты удивленно вскидываешь бровь от такой внезапной странной просьбы. Неужели этот чертяка втайне нюхальщик трусиков?")
 
-		saynn("[say=pc]Uh. Like, used ones?[/say]")
+		saynn("[say=pc]Э-э. Типа, б/у?[/say]")
 
-		saynn("[say=alexrynard]I need some for the tests, weirdo. New ones, old ones, I don’t care. Just get me some generic panties. Check the laundry.[/say]")
+		saynn("[say=alexrynard]Они нужны мне для тестов, чудик. Новые, старые — мне плевать. Просто принеси мне какие-нибудь обычные трусики. Загляни в прачечную.[/say]")
 
-		saynn("You shrug.")
+		saynn("Ты пожимаешь плечами.")
 
-		saynn("[say=pc]Fine. I will find some.[/say]")
+		saynn("[say=pc]Ладно. Я что-нибудь найду.[/say]")
 
-		addButton("Continue", "That was easy", "endthescene")
+		addButton("Продолжить", "Это было легко", "endthescene")
 
 
 func _react(_action: String, _args):

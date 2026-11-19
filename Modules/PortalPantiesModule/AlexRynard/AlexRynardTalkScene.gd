@@ -14,117 +14,117 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard"})
 
 	if(state == ""):
-		saynn("You approach the engineer foxy. His working place includes a chair but Alex is standing, he seems to be working on something. You sit on the corner of the work table and get his attention.")
+		saynn("Вы подходите к чертовски привлекательному инженеру. На его рабочем месте есть стул, но Алекс стоит — похоже, он чем-то занят. Вы садитесь на край рабочего стола, привлекая его внимание.")
 		
 		if(getFlag("AlexRynardModule.ch2CanEnterEngineering")):
-			saynn("[say=alexrynard]Oh, hey there.[/say]")
+			saynn("[say=alexrynard]О, привет.[/say]")
 		else:
-			saynn("[say=alexrynard]What now?[/say]")
+			saynn("[say=alexrynard]Ну, чего тебе?[/say]")
 
-		addButton("Talk", "Talk about stuff", "talk")
-		addButton("Appearance", "Look at the foxy", "appearance")
+		addButton("Поговорить", "Поболтать о всяком", "talk")
+		addButton("Внешность", "Рассматривать инженера", "appearance")
 		if(GlobalRegistry.getItemIDsByTagSlow(ItemTag.SoldByAlexRynard).size() > 0):
-			addButton("Buy", "See what you can buy from Alex", "buyscene")
+			addButton("Купить", "Посмотреть, что можно купить у Алекса", "buyscene")
 		if(getFlag("AlexRynardModule.ch2FinalSceneHappened", false)):
-			addButton("Feed something", "Feed something to Alex", "feedmenu")
-		addButton("Leave", "That was enough talking", "endthescene")
+			addButton("Покормить", "Покормить Алекса", "feedmenu")
+		addButton("Уйти", "Разговоров было достаточно", "endthescene")
 		GM.ES.triggerRun(Trigger.TalkingToNPC, ["alexrynard"])
 		
 
 	if(state == "talk"):
 		# (if before portal stuff)
 		if(!getFlag("PortalPantiesModule.Panties_AskedAlex")):
-			saynn("[say=pc]Just wanted to ask something.[/say]")
+			saynn("[say=pc]Просто хотел кое-о-чем спросить.[/say]")
 
-			saynn("[say=alexrynard]Gonna waste my time?[/say]")
+			saynn("[say=alexrynard]Опять собираешься тратить мое время?[/say]")
 
-			saynn("Seems like the foxy isn’t in his best mood. Or maybe he is just busy, there is still that prototype on his table.")
+			saynn("Похоже, этот красавчик не в духе. А может, он просто занят — на столе всё еще лежит тот прототип.")
 
-			addButton("Continue", "Oh well", "")
+			addButton("Продолжить", "Ну и ладно", "")
 		# (if portal stuff happened)
 		else:
-			saynn("[say=pc]Just wanted to ask something.[/say]")
+			saynn("[say=pc]Просто хотел кое-о-чем спросить.[/say]")
 
-			saynn("[say=alexrynard]Shoot.[/say]")
+			saynn("[say=alexrynard]Стреляй.[/say]")
 
-			addButton("Engineer", "Ask about his role", "engineer")
-			addButton("Bluespace", "What is bluespace", "bluespace")
-			addButton("Him", "Why is he here", "him")
+			addButton("Инженер", "Спросить о его роли", "engineer")
+			addButton("Блюспейс", "Что такое блюспейс?", "bluespace")
+			addButton("О нём", "Почему он здесь?", "him")
 #ACEPREGEXPAC - New Talk scene about preg
 			if(getFlag("AlexRynardModule.ch2FinalSceneHappened") && GM.pc.isVisiblyPregnant() || (getCharacter("alexrynard").isVisiblyPregnant())):
-				addButton("Pregnancy", "All things related to pregnancy", "pregnancytalk")
+				addButton("Беременность", "Все, что связано с беременностью", "pregnancytalk")
 			else:
-				addDisabledButton("Pregnancy", "Alex should trust you enough.. and you should be pregnant, obviously")
-			addButton("Back", "Enough talking", "")
+				addDisabledButton("Беременность", "Алекс должен начать тебе доверять... и ты, очевидно, должна быть беременна")
+			addButton("Назад", "Хватит болтать", "")
 			
 	if(state == "engineer"):
-		saynn("[say=pc]What do engineers do here?[/say]")
+		saynn("[say=pc]Чем здесь занимаются инженеры?[/say]")
 
-		saynn("Foxy relaxes in his chair.")
+		saynn("Фокси расслабленно откинулся в кресле.")
 
-		saynn("[say=alexrynard]Many things. Obviously we repair anything that’s broken. By inmates or otherwise. We also power the main reactor of the station. Inmates mine enough uranium for the station to be fully self-sustainable.[/say]")
+		saynn("[say=alexrynard]Много чего. Очевидно, мы чиним всё, что сломано. Будь то вещи заключенных или что-то другое. Также мы обеспечиваем энергией главный реактор станции. Заключенные добывают достаточно урана, чтобы станция была полностью автономной.[/say]")
 
-		saynn("Uranium, huh.")
+		saynn("Уран, значит.")
 
-		saynn("[say=pc]What if they don’t?[/say]")
+		saynn("[say=pc]А что, если не будут?[/say]")
 
-		saynn("Foxy offers you a cold smile and then taps at your collar.")
+		saynn("Фокси одаривает тебя холодной улыбкой и слегка постукивает пальцем по твоему ошейнику.")
 
-		saynn("[say=alexrynard]These are our work too. Pretty nice, huh? Default versions of these are pathetic, they can barely keep themselves locked. Ours can track the wearer from the other side of the galaxy and also shock you to death.[/say]")
+		saynn("[say=alexrynard]Это и наша работа тоже. Симпатично, правда? Стандартные версии — просто жалкое зрелище, они едва удерживают замок. Наши же могут отслеживать владельца с другого конца галактики, а заодно и убить тебя током.[/say]")
 
-		saynn("You tug on your collar a little, all the extra functionality didn’t make them any more comfy for sure.")
+		saynn("Ты слегка потягиваешь за ошейник; от кучи дополнительных функций удобнее он точно не стал.")
 
-		saynn("[say=pc]How are they doing that?[/say]")
+		saynn("[say=pc]Как им это удается?[/say]")
 
-		saynn("[say=alexrynard]Bluespace.[/say]")
+		saynn("[say=alexrynard]Блюспейс.[/say]")
 		
-		addButton("Continue", "Ask something else", "talk")
+		addButton("Продолжить", "Спросить о чем-то другом", "talk")
 
 	if(state == "bluespace"):
-		saynn("[say=pc]Uh, what exactly is Bluespace?[/say]")
+		saynn("[say=pc]Э-э, а что именно представляет собой Блюспейс?[/say]")
 
-		saynn("The foxy shows you some kind of dark blue crystal.")
+		saynn("Этот лис показывает тебе какой-то темно-синий кристалл.")
 
-		saynn("[say=alexrynard]It’s another dimension, linked to ours. We can theoretically transfer energy, electromagnetic waves and even matter through it using these crystals.[/say]")
+		saynn("[say=alexrynard]Это другое измерение, связанное с нашим. Теоретически, с помощью этих кристаллов мы можем передавать через него энергию, электромагнитные волны и даже материю.[/say]")
 
-		saynn("Huh. He is talking about teleportation. Can that be your way out?")
+		saynn("Хм. Он говорит о телепортации. Может, это твой способ выбраться?")
 
-		saynn("[say=pc]It’s that easy?[/say]")
+		saynn("[say=pc]Неужели всё так просто?[/say]")
 
-		saynn("[say=alexrynard]No, it’s not ‘that’ easy. Two crystals need to be configured to use the same frequency. And if you fuck up you will spawn a singularity instead.[/say]")
+		saynn("[say=alexrynard]Нет, не «так» просто. Нужно настроить два кристалла на одну и ту же частоту. И если ты всё просрёшь, вместо выхода получишь сингулярность.[/say]")
 
-		saynn("Fascinating. And Terrifying.")
+		saynn("Завораживающе. И пугающе.")
 		
-		addButton("Continue", "Ask something else", "talk")
+		addButton("Продолжить", "Спросить о чем-то другом", "talk")
 
 	if(state == "him"):
-		saynn("[say=pc]You seem smart. How did you end up here, in a space prison?[/say]")
+		saynn("[say=pc]Ты кажешься умной. Как ты оказалась здесь, в космической тюрьме?[/say]")
 
-		saynn("Foxy glances away for a second, you notice his neutral face expression.")
+		saynn("Лис на секунду отводит взгляд, ты замечаешь его бесстрастное лицо.")
 
-		saynn("[say=alexrynard]AlphaCorp sent me here, you don’t exactly get a choice.[/say]")
+		saynn("[say=alexrynard]Меня прислала АльфаКорп, а здесь выбор есть не всегда.[/say]")
 
-		saynn("[say=pc]You don’t seem to be happy about it.[/say]")
+		saynn("[say=pc]Похоже, ты не в восторге от этого.[/say]")
 
-		saynn("He frowns.")
+		saynn("Он хмурится.")
 
-		saynn("[say=alexrynard]I’m fine.[/say]")
+		saynn("[say=alexrynard]Я в порядке.[/say]")
 
-		saynn("He gives you a cold look. Asking the guy about it more will surely only anger him.")
+		saynn("Он бросает на тебя холодный взгляд. Если расспрашивать его дальше, это наверняка только разозлит его.")
 
-		addButton("Continue", "Ask something else", "talk")
+		addButton("Продолжить", "Спросить о чем-то другом", "talk")
 
 	if(state == "appearance"):
-		saynn("The first thing that stands out when you look at the face of Alex Rynard are the two black squares under each of his eyes, a fancy little pattern that is quite unnatural. But otherwise, there is nothing special about him, medium height, strong build, emerald eyes, pointy and long canine muzzle with a black mark on it that all the foxes usually have. His fur is not very unique, white for the belly, cheeks, palms, digi feet and orange for the rest. Near his paws and toes the fur is visibly darker, pretty much losing all of its saturation. His long black hair is made into a careful ponytail.")
+		saynn("Первое, что бросается в глаза при взгляде на лицо Алекса Ринарда, — это два черных квадрата под каждым глазом, замысловатый узор, который выглядит весьма неестественно. В остальном же в нем нет ничего особенного: средний рост, крепкое телосложение, изумрудные глаза и длинная заостренная собачья морда с черной отметиной, которая есть почти у всех лис. Мех не слишком уникальный: белый на животе, щеках, ладонях и пальцах, и оранжевый на остальном теле. Ближе к лапам и подушечкам пальцев мех заметно темнее, почти теряя насыщенность. Его длинные черные волосы собраны в аккуратный хвост.")
 
-		saynn("Alex is wearing his engineer uniform, dark shirt and pants that are made out of some thick material and have a yellow trim to them. His only armor are the shoulder pads that give his outfit a slightly more assertive look. He is wearing a belt with many pouches but not a lot of tools.")
+		saynn("Алекс одет в инженерную форму: темная рубашка и брюки из какого-то плотного материала с желтой окантовкой. Единственный элемент защиты — наплечники, придающие его наряду чуть более решительный вид. На нем пояс с множеством подсумков, но инструментов там немного.")
 
-		saynn("Hard to tell but you do notice his pants bulging out slightly near the crotch, meaning there is probably a sheath with a canine cock hiding behind, all good on that front.")
+		saynn("Трудно сказать наверняка, но ты замечаешь, что в районе паха его штаны слегка выпирают — похоже, там прячется ножны с собачьим членом, так что в этом плане всё отлично.")
 
-		saynn("As he moves around you notice a quiet mechanical hum coming from him.")
+		saynn("Когда он двигается, ты замечаешь исходящее от него тихое механическое гудение.")
 
 		# (scene ends)
-		addButton("Continue", "Enough staring", "")
+		addButton("Продолжить", "Хватит пялиться!", "")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -27,146 +27,146 @@ func _run():
 		biggestStat = _tentacles.getBiggestStat()
 		if (biggestStat == _tentacles.STAT_ANGER):
 			playAnimation(StageScene.TentaclesChoke, "sextease", {plant=true})
-			saynn("The tentacles are slithering past you.. No.. They are slithering towards you.")
+			saynn("Щупальца скользят мимо тебя... Нет... Они скользят прямо к тебе.")
 
-			saynn("You barely have time to react before a thick tendril grabs you and slams you against one of the walls, knocking the air from your lungs! It sure has little care for you.")
+			saynn("Ты едва успеваешь среагировать, как толстый отросток хватает тебя и с силой впечатывает в одну из стен, выбивая весь воздух из легких! Ему явно плевать на твой комфорт.")
 
-			saynn("[say=pc]Agh..[/say]")
+			saynn("[say=pc]Агх..[/say]")
 
-			saynn("Another tendril wraps firmly around your throat.. misplacing your collar a bit while putting pressure, stealing your breathing.")
+			saynn("Еще одно щупальце крепко обвивает твою шею... Слегка задрав воротник, оно сдавливает горло, перекрывая тебе дыхание.")
 
-			saynn("[say=pc]Khh..[/say]")
+			saynn("[say=pc]Кхх...[/say]")
 
-			saynn("Your leg gets grabbed and forced high, exposing more of you.")
+			saynn("Твою ногу хватают и задирают высоко вверх, обнажая тебя еще сильнее.")
 
-			saynn("Being so close to the tentacles.. you notice that some of them have changed slightly. They now have fatter tips.. tips that have little cross-shaped creases.. ovipositors..")
+			saynn("Находясь так близко к щупальцам... ты замечаешь, что некоторые из них слегка изменились. Теперь их кончики стали толще... на них видны небольшие крестообразные складки... яйцеклады...")
 
-			saynn("The tentacles are clearly horny and wanna fuck you..")
+			saynn("Щупальца явно возбуждены и хотят трахнуть тебя...")
 
 		elif (biggestStat == _tentacles.STAT_AGILITY):
 			playAnimation(StageScene.TentaclesCuddle, "breaststease", {plant=true})
-			saynn("The tentacles suddenly dash towards you!")
+			saynn("Щупальца внезапно бросаются к тебе!")
 
-			saynn("They sweep you off of your feet and catch you, holding you suspended effortlessly above the floor. One of the tentacles curls between your legs and rubs against the crotch of your leotard while another traces hot lines across your belly and then teases your nips through the cloth.")
+			saynn("Они подхватывают тебя под ноги, удерживая в воздухе без малейших усилий. Одно щупальце проскальзывает между твоих ног, вжимаясь в пах твоего леотарда, а другое проводит горячие линии по животу, дразня соски сквозь ткань.")
 
-			saynn("[say=pc]What are you trying to do..[/say]")
+			saynn("[say=pc]Что вы пытаетесь сделать...[/say]")
 
-			saynn("Being so close to the tentacles.. you notice that some of them have changed slightly. They now have fatter tips.. tips that have little cross-shaped creases.. ovipositors..")
+			saynn("Находясь так близко к щупальцам... ты замечаешь, что некоторые из них слегка изменились. Теперь их кончики стали толще... на них видны небольшие крестообразные складки... яйцеклады...")
 
-			saynn("The tentacles are clearly horny and wanna fuck you..")
+			saynn("Щупальца явно возбуждены и хотят трахнуть тебя...")
 
 		elif (biggestStat == _tentacles.STAT_MIND):
 			playAnimation(StageScene.TentaclesStroke, "tease", {plant=true})
-			saynn("The tentacles get your attention and then slowly approach you. One of them brings itself close to your face.")
+			saynn("Щупальца приковывают твой взгляд, а затем медленно приближаются. Одно из них подносится почти вплотную к твоему лицу.")
 
-			saynn("[say=pc]Huh?[/say]")
+			saynn("[say=pc]А?[/say]")
 
-			saynn("You meet their gaze.. and suddenly.. the world at the edge of your vision starts going soft.. fading subtly. A warm, throbbing thought fills your mind..")
+			saynn("Ты встречаешься с ними взглядом... и вдруг... мир на периферии зрения начинает расплываться... плавно угасать. Теплую, пульсирующую мысль наполняет твой разум...")
 
 			_tentacles.talk("Obey.")
-			saynn("To obey..")
+			saynn("Повиноваться...")
 
-			saynn("That thought isn't yours.. but it sure feels right at home. Your body really wants to relax against your will.. really wants to submit.")
+			saynn("Эта мысль не твоя... но она кажется такой правильной, такой родной. Твое тело отчаянно хочет расслабиться вопреки твоей воле... очень хочет подчиниться.")
 
-			saynn("Being so close to the tentacles.. you notice that some of them have changed slightly. They now have fatter tips.. tips that have little cross-shaped creases.. ovipositors..")
+			saynn("Находясь так близко к щупальцам... ты замечаешь, что некоторые из них слегка изменились. Теперь их кончики стали толще... на них видны небольшие крестообразные складки... яйцеклады...")
 
-			saynn("The tentacles are clearly horny and wanna fuck you..")
+			saynn("Щупальца явно возбуждены и хотят трахнуть тебя...")
 
 		else:
 			playAnimation(StageScene.TentaclesGrope, "tease", {plant=true})
-			saynn("The tentacles slither towards you.. and suddenly.. they're all around you. They slide over your hips, your {pc.breasts}, your inner thighs. One teases at your lips while another circles your waist and gropes your butt..")
+			saynn("Щупальца скользят к тебе... и вдруг... они уже повсюду. Они скользят по твоим бедрам, твоей {pc.breasts}, по внутренней стороне бедер. Одно дразнит твои губы, в то время как другое обвивает талию и тискает твою задницу...")
 
-			saynn("[say=pc]So.. bold..[/say]")
+			saynn("[say=pc]Какая.. смелая..[/say]")
 
-			saynn("They grope and caress you, never staying still, searching for all of your sensitive spots and rubbing them, pulling soft moans out of you. One tendril curls firmly between your legs and grinds against the crotch part of your leotard.")
+			saynn("Они ласкают и тискают тебя, не замирая ни на секунду, выискивая все твои чувствительные точки и растирая их, вырывая из тебя тихие стоны. Один отросток плотно обвивается между твоих ног, вжимаясь в пах твоего леотарда.")
 
-			saynn("Being so close to the tentacles.. you notice that some of them have changed slightly. They now have fatter tips.. tips that have little cross-shaped creases.. ovipositors..")
+			saynn("Находясь так близко к щупальцам... ты замечаешь, что некоторые из них слегка изменились. Теперь их кончики стали толще... на них видны небольшие крестообразные складки... яйцеклады...")
 
-			saynn("The tentacles are clearly horny and wanna fuck you..")
+			saynn("Щупальца явно возбуждены и хотят трахнуть тебя...")
 
-		addButton("Allow!", "(Sex) Let the tentacles fuck you..", "start_sex")
-		addButton("Wiggle free", "Try to just wiggle free", "do_wiggle_free")
-		addButton("Slap them off!", "Get the tentacles off by attacking them", "do_slap_them")
+		addButton("Позволь!", "(Секс) Позволь щупальцам трахать тебя...", "start_sex")
+		addButton("Вырваться", "Попытаться просто вырваться", "do_wiggle_free")
+		addButton("Отшлепать их!", "Сбросить щупальца, атакуя их", "do_slap_them")
 	if(state == "8_after"):
-		saynn("You had fun with the tentacles..")
+		saynn("Тебе понравилось возиться с щупальцами...")
 
-		saynn("They've certainly only gotten more lusty after this.")
+		saynn("После этого они явно стали еще похотливее.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "8_afterEgged"):
 		playAnimation(StageScene.TFLook, "start")
-		saynn("You had fun with the tentacles..")
+		saynn("Тебе понравилось возиться с щупальцами...")
 
-		saynn("And now, when you look down, you can't help but to notice your belly being quite round.")
+		saynn("И теперь, когда ты смотришь вниз, ты не можешь не заметить, что твой живот стал довольно круглым.")
 
-		saynn("It looks like you got stuffed with eggs! You can feel them shifting inside you slightly as you move..")
+		saynn("Выглядит так, будто тебя набили яйцами! Ты чувствуешь, как они слегка перекатываются внутри тебя при каждом движении...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_wiggle_free"):
 		_tentacles.doAnim("idle")
 		if (biggestStat == _tentacles.STAT_ANGER):
-			saynn("You're not gonna submit to them like that! You use your whole body, squirming and flailing, trying to wiggle free.")
+			saynn("Ты не собираешься так просто им подчиниться! Ты извиваешься всем телом, брыкаешься и корчишься, пытаясь вырваться на свободу.")
 
-			saynn("Eventually, you manage to pry the tentacle away from your neck and then free yourself.")
+			saynn("В конце концов, тебе удается отцепить щупальце от шеи и освободиться.")
 
-			saynn("It was quite a workout.. For you and them both.")
+			saynn("Это была та еще тренировка... И для тебя, и для них.")
 
 		elif (biggestStat == _tentacles.STAT_AGILITY):
-			saynn("You're not gonna submit to them! You use your whole body, squirming and flailing, trying to wiggle free.")
+			saynn("Ты не собираешься им подчиняться! Ты задействуешь всё своё тело, извиваясь и дрыгаясь, пытаясь вырваться на свободу.")
 
-			saynn("Eventually, you manage to escape their strong grasp.")
+			saynn("В конце концов, тебе удается вырваться из их крепких объятий.")
 
-			saynn("It was quite a workout.. For you and them both.")
+			saynn("Это была та еще тренировка... И для тебя, и для них.")
 
 		elif (biggestStat == _tentacles.STAT_MIND):
-			saynn("You channel your whole mind.. the parts that you still control.. to fight the order. No. You don't wanna submit to them.")
+			saynn("Ты направляешь весь свой разум... те части, которые всё еще под твоим контролем... чтобы противостоять их воле. Нет. Ты не хочешь им подчиняться.")
 
-			saynn("And eventually, you manage to escape their control and regain yours.")
+			saynn("И со временем тебе удается вырваться из-под их контроля и вернуть контроль над собой.")
 
-			saynn("Drops of cold sweat appear on your body. It was quite a workout.. For you and them both.")
+			saynn("По твоему телу выступают капли холодного пота. Это была та еще тренировка... И для тебя, и для них.")
 
 		else:
-			saynn("You don't feel like submitting to them.. Gently, you wiggle free and step away from the horny tentacles. They keep trying to pull you in so you use more and more strength.")
+			saynn("Тебе совсем не хочется им подчиняться... Ты осторожно высвобождаешься и отступаешь от похотливых щупалец. Они продолжают пытаться затянуть тебя обратно, поэтому тебе приходится прикладывать всё больше и больше сил.")
 
-			saynn("Eventually, you manage to escape their needy grasp.")
+			saynn("В конце концов, тебе удается вырваться из их жадных объятий.")
 
-			saynn("It was quite a workout.. For you and them both.")
+			saynn("Это была та еще тренировка... И для тебя, и для них.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_slap_them"):
 		_tentacles.doAnim("glare", {npcAction="shove"})
 		if (biggestStat == _tentacles.STAT_ANGER):
-			saynn("How fucking dare it do this to you. You slap the tentacle that holds you.. and then dig your claws into it until the thing finally lets go of your throat, letting you touch the floor.")
+			saynn("Какого хера оно это с тобой делает?! Ты даешь пощечину щупальцу, которое тебя держит... а затем впиваешься в него когтями до тех пор, пока эта тварь наконец не разжимает хватку на твоем горле, позволяя тебе коснуться пола.")
 
-			saynn("You wrestle each of the rebellious tentacles into submission and give more slaps to the ones that were responsible for all of this.")
+			saynn("Ты вступаешь в борьбу с каждым строптивым щупальцем, заставляя их подчиниться, и отвешиваешь еще по паре оплеух тем, что устроили весь этот беспредел.")
 
-			saynn("When do that.. and then raise your fist.. the tentacles back off.")
+			saynn("Сделав это... ты заносишь кулак... и щупальца отступают.")
 
-			saynn("They just glare at you.. clearly very unhappy. Serves them right.")
+			saynn("Они просто сверлят тебя взглядом... явно крайне недовольные. Так им и надо.")
 
 		elif (biggestStat == _tentacles.STAT_AGILITY):
-			saynn("You really don't wanna submit to them.. So you slap all of the eager tentacles away until they let you down to the floor.")
+			saynn("Ты совсем не хочешь им подчиняться... Поэтому ты отшлепываешь все эти навязчивые щупальца, пока они наконец не опускают тебя на пол.")
 
-			saynn("They're strong.. very strong.. but it looks like they still feel pain. So you use that against them and strike them until they fuck off.")
+			saynn("Они сильные... очень сильные... но, похоже, они всё еще чувствуют боль. Ты используешь это против них, лупя их до тех пор, пока они не отъебутся.")
 
-			saynn("The tentacles glare at you.. clearly very unhappy. Serves them right.")
+			saynn("Щупальца сверлят тебя взглядом... явно крайне недовольные. Так им и надо.")
 
 		elif (biggestStat == _tentacles.STAT_MIND):
-			saynn("You channel your whole mind.. the parts that you still control.. to fight the order. No. You don't wanna submit to them.")
+			saynn("Ты направляешь весь свой разум... те части, которые всё еще под твоим контролем... чтобы противостоять их воле. Нет. Ты не хочешь им подчиняться.")
 
-			saynn("It proves to be too hard to resist.. But you manage to make your body slap away the main tentacle, breaking the connection for enough time to step away.")
+			saynn("Сопротивляться оказывается слишком трудно... Но тебе удается заставить свое тело оттолкнуть основное щупальце, разрывая контакт на достаточное время, чтобы сделать шаг в сторону.")
 
 			_tentacles.talk("We did not enjoy that.")
-			saynn("The tentacles glare at you.. clearly very unhappy. Serves them right.")
+			saynn("Щупальца сверлят тебя взглядом... явно крайне недовольные. Так им и надо.")
 
 		else:
-			saynn("You really don't feel like submitting to them. You try to break free.. but the tentacles keep groping and fondling you, pulling you back in.")
+			saynn("Тебе совсем не хочется им подчиняться. Ты пытаешься вырваться... но щупальца продолжают ощупывать и ласкать тебя, затягивая обратно.")
 
-			saynn("It's only when you give a slap to each of the horny tentacles, is when they finally pull away from you and your body.")
+			saynn("Только когда ты отвешиваешь по щелчку каждой из этих похотливых щупалец, они наконец отпускают тебя и твое тело.")
 
-			saynn("The tentacles glare at you.. clearly very unhappy. Serves them right.")
+			saynn("Щупальца сверлят тебя взглядом... явно крайне недовольные. Так им и надо.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	var _tentacles:PlayerSlaveryTentacles = GM.main.PS

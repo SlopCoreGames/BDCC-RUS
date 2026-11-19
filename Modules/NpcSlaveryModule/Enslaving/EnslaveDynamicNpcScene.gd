@@ -21,24 +21,24 @@ func _run():
 
 	if(state == ""):
 		#var npc = GlobalRegistry.getCharacter(npcID)
-		saynn("Do you wanna try to enslave {npc.name}?")
+		saynn("Хочешь попробовать поработить {npc.name}?")
 		
-		saynn("You will have to break {npc.his} spirit and show {npc.him} {npc.his} place first.")
+		saynn("Сначала тебе придется сломить дух {npc.his} и показать {npc.him}, где её {npc.his} место.")
 		
-		saynn("After that, you will need enough space in your cell to store {npc.him}.")
+		saynn("После этого тебе понадобится достаточно места в камере, чтобы разместить там {npc.him}.")
 		
-		saynn("What kind of slave do you want {npc.him} to be?")
+		saynn("Каким рабом ты хочешь видеть {npc.him}?")
 
 		for slaveTypeID in GlobalRegistry.getSlaveTypes():
 			var theSlaveType:SlaveTypeBase = GlobalRegistry.getSlaveType(slaveTypeID)
 			if(!theSlaveType.canEnslaveAs()):
 				continue
 			if(!theSlaveType.canTeach(getCharacter(npcID))):
-				addDisabledButton(theSlaveType.getVisibleName(), "[color=red]Incompatible with this slave[/color]\n"+theSlaveType.getVisibleDesc())
+				addDisabledButton(theSlaveType.getVisibleName(), "[color=red]Несовместимо с этой рабыней[/color]\n"+theSlaveType.getVisibleDesc())
 				continue
 			addButton(theSlaveType.getVisibleName(), theSlaveType.getVisibleDesc(), "try_enslave", [slaveTypeID])
 		
-		addButton("CANCEL", "You changed your mind", "endthescene")
+		addButton("CANCEL", "Вы передумали", "endthescene")
 		
 	if(state == "try_enslave"):
 		playAnimation(StageScene.Choking, "idle", {npc=npcID})
@@ -50,44 +50,44 @@ func _run():
 		if(theSlaveType != null):
 			saynn(theSlaveType.getEnslaveText(theChar))
 		
-		saynn("After glaring at {npc.him}, you get a better idea about how to damage {npc.his} spirit.")
+		saynn("Пристально взглянув на {npc.him}, ты начинаешь лучше понимать, как именно надломить {npc.his} дух.")
 		
-		sayn("Here is what you need to do (You can check the progress inside the personality status effect):")
+		sayn("Вот что тебе нужно сделать (прогресс можно отслеживать в статусе личности):")
 
 		saynn(enslaveQuest.getQuestStartText())
 		
-		addButton("Continue", "Time to do this to them then", "endthescene")
-		addButton("Choke them", "(Reroll) Ask them again nicely", "try_enslave_choke")
-		addButton("CANCEL", "You changed your mind", "stopquest_endthescene")
+		addButton("Продолжить", "Что ж, пора приступать к делу", "endthescene")
+		addButton("Придушить их", "(Переброс) Спросить еще раз вежливо", "try_enslave_choke")
+		addButton("CANCEL", "Вы передумали", "stopquest_endthescene")
 	
 	if(state == "try_enslave_choke"):
 		playAnimation(StageScene.Choking, "choke", {npc=npcID})
 		
-		saynn("You choke {npc.him} which changes things a bit.")
+		saynn("Ты душишь {npc.him}, и это немного меняет дело.")
 		
-		sayn("Here is what you need to do (You can check the progress inside the personality status effect):")
+		sayn("Вот что тебе нужно сделать (прогресс можно отслеживать в статусе личности):")
 		
 		var theChar:DynamicCharacter = getCharacter(npcID)
 		var enslaveQuest:NpcEnslavementQuest = theChar.getEnslaveQuest()
 		saynn(enslaveQuest.getQuestStartText())
 		
-		addButton("Continue", "Time to do this to them then", "endthescene")
-		addButton("Choke more", "(Reroll) Ask them again even more nicely", "try_enslave_chokeevenmore")
-		addButton("CANCEL", "You changed your mind", "stopquest_endthescene")
+		addButton("Продолжить", "Что ж, пора приступать к делу", "endthescene")
+		addButton("Сжимай сильнее", "(Переброс) Спросить еще более вежливо", "try_enslave_chokeevenmore")
+		addButton("CANCEL", "Вы передумали", "stopquest_endthescene")
 		
 	if(state == "try_enslave_chokeevenmore"):
 		playAnimation(StageScene.Choking, "hard", {npc=npcID})
 		
-		saynn("You choke {npc.him} so much {npc.he} {npc.isAre} close to passing out.")
+		saynn("Ты так сильно душишь {npc.him}, что {npc.he} {npc.isAre} почти теряет сознание.")
 		
-		sayn("Here is what you need to do (You can check the progress inside the personality status effect):")
+		sayn("Вот что тебе нужно сделать (прогресс можно отслеживать в статусе личности):")
 		
 		var theChar:DynamicCharacter = getCharacter(npcID)
 		var enslaveQuest:NpcEnslavementQuest = theChar.getEnslaveQuest()
 		saynn(enslaveQuest.getQuestStartText())
 		
-		addButton("Continue", "Time to do this to them then", "endthescene")
-		addButton("CANCEL", "You changed your mind", "stopquest_endthescene")
+		addButton("Продолжить", "Что ж, пора приступать к делу", "endthescene")
+		addButton("CANCEL", "Вы передумали", "stopquest_endthescene")
 		# Cancel quest button here?
 		
 func _react(_action: String, _args):

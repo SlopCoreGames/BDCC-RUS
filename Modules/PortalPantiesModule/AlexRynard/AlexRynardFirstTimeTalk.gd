@@ -9,95 +9,95 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard"})
 
 	if(state == ""):
-		saynn("The engineer was busy tinkering with his datapad when you approached him again.")
+		saynn("Инженер был увлечен ковырянием в своем датападе, когда ты снова подошел к нему.")
 
-		saynn("[say=alexrynard]What else do you want, inmate? Go find some work, I’m busy.[/say]")
+		saynn("[say=alexrynard]Чего тебе еще, заключенная? Иди найди себе работу, я занят.[/say]")
 
-		saynn("[say=pc]The mines aren’t exactly the most fun place to work.[/say]")
+		saynn("[say=pc]На шахтах не так уж весело работать.[/say]")
 
-		saynn("The fox looks at you and shrugs once before returning to his datapad. With such a cold response, you don’t have much of a choice but to leave him alone. But as you make your way, you hear him calling you.")
+		saynn("Лис посмотрел на тебя, пожал плечами и снова уткнулся в датапад. После такого холодного ответа тебе остается только оставить его в покое. Но когда ты уже собираешься уходить, слышишь, как он окликает тебя.")
 
-		saynn("[say=alexrynard]Actually, I have something. Come here.[/say]")
+		saynn("[say=alexrynard]Вообще-то, у меня кое-что есть. Иди сюда.[/say]")
 
-		saynn("These words gave you some faith, you spring back to him and wait patiently. The fox puts his datapad away and points at a metal case near him.")
+		saynn("Эти слова вселили в тебя надежду; ты тут же подлетаешь к нему и терпеливо ждешь. Лис убирает датапад и указывает на металлический кейс рядом с собой.")
 
-		saynn("[say=alexrynard]Grab it and follow me.[/say]")
+		saynn("[say=alexrynard]Хватай его и иди за мной.[/say]")
 
-		saynn("Huh. You’re not sure if you wanna obey him but you can at least look at the case. It’s not too big but it just feels bulky and heavy, spotting lots of sharp angles and a few orange lines to show how dangerous the contents are. You try to pick it up by the handle but struggle.")
+		saynn("Хм. Ты не совсем уверена, стоит ли ему подчиняться, но хотя бы взглянуть на кейс можно. Он не слишком большой, но кажется громоздким и тяжелым; на нем видны острые углы и несколько оранжевых полос, предупреждающих об опасном содержимом. Ты пытаешься поднять его за ручку, но это дается с трудом.")
 
-		saynn("[say=pc]Why is it so heavy?[/say]")
+		saynn("[say=pc]Почему он такой тяжелый?[/say]")
 
-		saynn("[say=alexrynard]Careful with it. And I don’t have all day.[/say]")
+		saynn("[say=alexrynard]Осторожнее с ним. И у меня нет на тебя весь день.[/say]")
 
-		addButton("Obey", "Do as he says", "obey")
-		addButton("Refuse", "You don’t wanna do it", "refuse")
+		addButton("Повиноваться", "Сделать, как он говорит", "obey")
+		addButton("Отказаться", "Ты не хочешь этого делать", "refuse")
 
 
 	if(state == "obey"):
-		saynn("You carefully grab the case and hold it. Foxy shows you the way.")
+		saynn("Ты осторожно берешь кейс и держишь его. Фокси указывает тебе путь.")
 
-		saynn("[say=alexrynard]Follow.[/say]")
+		saynn("[say=alexrynard]Идти за ним.[/say]")
 
-		saynn("[say=pc]Why can’t you do it?[/say]")
+		saynn("[say=pc]Почему ты не можешь сам?[/say]")
 
-		saynn("[say=alexrynard]Saving my back.[/say]")
+		saynn("[say=alexrynard]Берегу спину.[/say]")
 
-		saynn("Huh, you do hear a slight mechanical noise coming from his spine.")
+		saynn("Хм, ты действительно слышишь легкий механический шум, исходящий от его позвоночника.")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "refuse"):
 		playAnimation(StageScene.Duo, "defeat", {npc="alexrynard"})
 		
-		saynn("You raise the case a bit just to drop it after. The foxy sighs audibly and rolls his eyes.")
+		saynn("Ты приподнимаешь кейс лишь для того, чтобы тут же его уронить. Лисенок издает слышимый вздох и закатывает глаза.")
 
-		saynn("[say=pc]I carried enough today, you can do it yourself.[/say]")
+		saynn("[say=pc]Я и так сегодня достаточно таскал, справишься сам.[/say]")
 
-		saynn("[say=alexrynard]Now it’s an order. Pick it up.[/say]")
+		saynn("[say=alexrynard]Теперь это приказ. Поднимай.[/say]")
 
-		saynn("You clench your fist and step towards him just to be met with a sudden shock that drops you to your knees. The guy holds his digit on a remote until he hears a cry of pain coming from your lips. You grab onto your warm collar and pant heavily. Foxy crouches nearby.")
+		saynn("Ты сжимаешь кулак и делаешь шаг к нему, но внезапный разряд тока сбивает тебя с ног, заставляя упасть на колени. Парень держит палец на пульте, пока не слышит твой вскрик боли. Ты хватаешься за свой теплый воротник и тяжело дышишь. Фокси приседает рядом.")
 
-		saynn("[say=alexrynard]I don’t care about your wellbeing, honestly, I don’t. Wanna lose all your credits? Wanna get locked into stocks?[/say]")
+		saynn("[say=alexrynard]Честно говоря, мне плевать на твоё благополучие, реально плевать. Хочешь спустить все кредиты? Хочешь влезть в долги по акциям?[/say]")
 
-		saynn("You shake your head, the path of least resistance seems like the only one at the moment. Foxy pats you on the back.")
+		saynn("Ты качаешь головой — кажется, путь наименьшего сопротивления сейчас единственный вариант. Лисица похлопывает тебя по спине.")
 
-		saynn("[say=pc]Mean fucker..[/say]")
+		saynn("[say=pc]Грёбаный козёл...[/say]")
 
-		saynn("[say=alexrynard]Am I? Huh. You clearly don’t understand who you are yet.[/say]")
+		saynn("[say=alexrynard]Неужели? Хм. Ты явно ещё не понимаешь, кто ты есть на самом деле.[/say]")
 
-		saynn("You finally catch your breath and get up. Picking up that case is even more tricky now that your muscles are all tired. But you just about manage and then follow the foxy. Strange, you hear a slight mechanical noise coming from his spine as he steps.")
+		saynn("Наконец ты переводишь дух и поднимаешься. Поднять этот кейс стало ещё сложнее, когда мышцы совсем забились. Но тебе почти удаётся, и ты следуешь за лисой. Странно, но при каждом его шаге ты слышишь лёгкий механический шум, исходящий от его позвоночника.")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "continue"):
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard"})
 		aimCameraAndSetLocName("eng_workshop")
 		
-		saynn("You carry the case and follow the guy through some corridors. The yellow colors suggest that this area is somehow related to engineering. Indeed, you walk past the lobby and enter some kind of workshop. Lots of tables with spare parts, lots of machinery.")
+		saynn("Ты тащишь кейс и идёшь за парнем по коридорам. Жёлтые стены намекают, что эта зона как-то связана с инженерным делом. И действительно: пройдя мимо вестибюля, вы попадаете в какую-то мастерскую. Повсюду столы с запчастями и куча всякого оборудования.")
 
-		saynn("[say=alexrynard]Leave it here.[/say]")
+		saynn("[say=alexrynard]Оставь его здесь.[/say]")
 
-		saynn("You leave the case on one of the workstations and take a step back.")
+		saynn("Ты оставляешь кейс на одном из рабочих столов и делаешь шаг назад.")
 
-		saynn("[say=pc]You never said what is inside it.[/say]")
+		saynn("[say=pc]Ты так и не сказал, что внутри.[/say]")
 
-		saynn("[say=alexrynard]A bluespace wormhole creation device. A prototype. One of the first stable ones, still needs testing.[/say]")
+		saynn("[say=alexrynard]Устройство для создания червоточин в блюспейсе. Прототип. Один из первых стабильных образцов, но он всё ещё требует испытаний.[/say]")
 
-		saynn("Huh. Instead of leaving, you decide to stay and watch him a bit. Foxy inputs some code to make the case unlock and grabs a few things out of it. Mostly some kind of tube-like devices and a few strange crystals. Foxy then looks at you.")
+		saynn("Хм. Вместо того чтобы уйти, ты решаешь остаться и немного понаблюдать за ним. Фокси вводит какой-то код, чтобы отпереть кейс, и вытаскивает оттуда несколько вещей. В основном это какие-то трубчатые устройства и несколько странных кристаллов. Затем Фокси переводит взгляд на тебя.")
 
-		saynn("[say=alexrynard]Oh yeah, right.[/say]")
+		saynn("[say=alexrynard]Ах да, точно.[/say]")
 
-		saynn("He throws some kind of chip at you. You manage to catch it and look at it from up close.")
+		saynn("Он кидает тебе какой-то чип. Тебе удается поймать его и рассмотреть поближе.")
 
-		saynn("[say=alexrynard]Your credits for the work.[/say]")
+		saynn("[say=alexrynard]Твоя плата за работу.[/say]")
 
-		saynn("Huh, your collar seems to be able to accept such chips. You insert it into the slot and hear it beep, probably transfering credits to your inmate number. It wasn’t much but you are happy either way.")
+		saynn("О, похоже, твой ошейник может принимать такие чипы. Ты вставляешь его в слот и слышишь писк — вероятно, кредиты переводятся на твой номер заключенного. Сумма была небольшая, но ты всё равно довольна.")
 
 		# (receive 2 credits)
 
 		# (scene ends)
 
-		addButton("Continue", "That was easy", "endthescene")
+		addButton("Продолжить", "Это было легко", "endthescene")
 
 
 func _react(_action: String, _args):

@@ -14,54 +14,54 @@ func _run():
 	if(state == ""):
 		if(!GM.QS.isActive("PortalPantiesQuest")):
 			playAnimation(StageScene.Solo, "stand", {bodyState={exposedCrotch=true}})
-			saynn("What do you wanna do with your portal panties?")
+			saynn("Что ты хочешь сделать со своими портальными трусиками?")
 			
 			var currentMode = getFlag("PortalPantiesModule.Panties_Mode", 0)
 			if(currentMode == 0):
-				saynn("Current event frequency: normal")
+				saynn("Текущая частота событий: нормальная")
 			elif(currentMode == 1):
-				saynn("Current event frequency: rare")
+				saynn("Текущая частота событий: редкая")
 			elif(currentMode == 2):
-				saynn("Current event frequency: very rare")
+				saynn("Текущая частота событий: очень редкая")
 			elif(currentMode == -1):
-				saynn("Current event frequency: often")
+				saynn("Текущая частота событий: частая")
 			
 			var item = GM.pc.getInventory().getItemByUniqueID(uniqueItemID)
 			if(item != null):
 				if(item.coversPenis):
-					saynn("Your portal panties will currently also create a portal for your penis."+(" (If you'd had one)" if !GM.pc.hasPenis() else ""))
+					saynn("Твои портальные трусики также будут создавать портал для твоего члена."+(" (If you'd had one)" if !GM.pc.hasPenis() else ""))
 				else:
-					saynn("Your portal panties are not hiding your penis, allowing you to use it."+(" (If you'd had one)" if !GM.pc.hasPenis() else ""))
+					saynn("Твои портальные трусики не скрывают член, позволяя им пользоваться им."+(" (If you'd had one)" if !GM.pc.hasPenis() else ""))
 			
-			addButton("Take off", "Take portal panties off", "takeoff")
-			addButton("Change mode", "Change how often the events are happening", "changemode")
-			addButton("Penis", "Toggle if you want the portal panties to hide your penis or not", "changepenismode")
-			addButton("Nothing", "Don't touch them", "endthescene")
+			addButton("Снять", "Снять портальные трусики", "takeoff")
+			addButton("Сменить режим", "Изменить частоту событий", "changemode")
+			addButton("Пенис", "Включить, если вы хотите, чтобы портальные трусики скрывали ваш член или нет", "changepenismode")
+			addButton("Ничего", "Не трогай их", "endthescene")
 		else:		
-			saynn("You try to take off your portal panties but no matter what you do, the magnetic locks prevent you from doing so.")
+			saynn("Вы пытаетесь снять портальные трусики, но что бы вы ни делали, магнитные замки не дают вам этого сделать.")
 
-			saynn("They seem to only allow being temporarily taken off on very rare occasions.")
+			saynn("Похоже, их удается снять лишь в самых редких случаях.")
 
-			addButton("Continue", "Oh well, what can you do", "endthescene")
+			addButton("Продолжить", "Ну что ж, тут уж ничего не поделаешь", "endthescene")
 	
 	if(state == "changemode"):
-		saynn("How often you want the events to happen")
+		saynn("Как часто должны происходить события")
 		
 		var currentMode = getFlag("PortalPantiesModule.Panties_Mode", 0)
 		if(currentMode == 0):
-			saynn("Current frequency: normal")
+			saynn("Текущая частота: обычная")
 		elif(currentMode == 1):
-			saynn("Current frequency: rare")
+			saynn("Текущая частота: редкая")
 		elif(currentMode == 2):
-			saynn("Current frequency: very rare")
+			saynn("Текущая частота: очень редкая")
 		elif(currentMode == -1):
-			saynn("Current frequency: often")
+			saynn("Текущая частота: частая")
 			
-		addButton("Very rare", "You will be poked very rarely", "setMode", [2])
-		addButton("Rare", "You will be poked sometimes", "setMode", [1])
-		addButton("Normal", "You will be poked sometimes", "setMode", [0])
-		addButton("Often", "You will be poked quite often", "setMode", [-1])
-		addButton("Back", "You don't wanna change the mode", "")
+		addButton("Очень редко", "Тебя будут тыкать крайне редко", "setMode", [2])
+		addButton("Редко", "Тебя будут тыкать время от времени", "setMode", [1])
+		addButton("Обычный", "Тебя будут тыкать время от времени", "setMode", [0])
+		addButton("Часто", "Тебя будут тыкать довольно часто", "setMode", [-1])
+		addButton("Назад", "Ты вряд ли захочешь менять этот режим", "")
 
 func _react(_action: String, _args):
 	if(_action == "setMode"):

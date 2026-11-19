@@ -30,955 +30,955 @@ func _run():
 		addCharacter("psmilkgirl")
 		addCharacter("psmilkguy")
 		playAnimation(StageScene.Duo, "stand", {npc="psmilkguy"})
-		saynn("Before you can exit your cell, the two owners step inside.")
+		saynn("Прежде чем ты успеваешь выйти из камеры, внутрь заходят двое владельцев.")
 
-		saynn("[say=pc]Is it milking time already?[/say]")
+		saynn("[say=pc]Неужели уже время дойки?[/say]")
 
-		saynn("[say=psmilkguy]Well.. not exactly.[/say]")
+		saynn("[say=psmilkguy]Ну.. не совсем.[/say]")
 
-		saynn("A little suspicious. But they seem pretty happy.")
+		saynn("Немного подозрительно. Но они выглядят довольно счастливыми.")
 
-		saynn("[say=psmilkguy]We actually wanted to tell you.. that we have paid all our debts. We're free![/say]")
+		saynn("[say=psmilkguy]Мы вообще-то хотели сказать тебе.. что выплатили все наши долги. Мы свободны![/say]")
 
-		saynn("Sofie nods.")
+		saynn("Софи кивает.")
 
-		saynn("[say=pc]That's nice. I'm happy for you two.[/say]")
+		saynn("[say=pc]Это здорово. Я рад за вас двоих.[/say]")
 
-		saynn("[say=psmilkgirl]Buying you was the right choice. And it was my choice.[/say]")
+		saynn("[say=psmilkgirl]Купить вас было правильным решением. И это был мой выбор.[/say]")
 
-		saynn("[say=psmilkguy]Yeah, yeah. But now we.. kinda don't need you anymore.[/say]")
+		saynn("[say=psmilkguy]Да-да. Но теперь мы.. вроде как больше в тебе не нуждаемся.[/say]")
 
-		saynn("[say=pc]Uh..[/say]")
+		saynn("[say=pc]Э-э...[/say]")
 
-		saynn("Sofie licks her lips and smiles.")
+		saynn("Софи облизывает губы и улыбается.")
 
-		saynn("[say=psmilkgirl]If we were gonna butcher you, we would have brought some knives. Relax, we're gonna set you free.[/say]")
+		saynn("[say=psmilkgirl]Если бы мы собрались пустить тебя на мясо, мы бы прихватили ножи. Расслабься, мы собираемся тебя освободить.[/say]")
 
-		saynn("[say=psmilkguy]We are very grateful. You gave us a chance to start from a clean slate. No more crime from now on. No more milking slaves.[/say]")
+		saynn("[say=psmilkguy]Мы тебе очень благодарны. Ты дал нам шанс начать всё с чистого листа. Больше никакого криминала. Больше никакой дойки рабов.[/say]")
 
-		saynn("Somehow you doubt that they will last much.. but who knows.")
+		saynn("Ты почему-то сомневаешься, что они долго продержатся... но кто знает.")
 
-		saynn("[say=psmilkgirl]I was gonna sell you all at the auction again. But Leo talked me out of it.[/say]")
+		saynn("[say=psmilkgirl]Я вообще-то собиралась снова выставить вас всех на аукцион. Но Лео меня отговорил.[/say]")
 
-		saynn("They smooch each other. She really changed. Indeed.")
+		saynn("Они целуются. Она действительно изменилась. Неужели.")
 
-		saynn("[say=pc]I can't really go anywhere because of my collar.[/say]")
+		saynn("[say=pc]Из-за ошейника мне особо никуда не выбраться.[/say]")
 
-		saynn("[say=psmilkguy]Oh, right. You came with some kind of jamming equipment. Do you wanna stay?[/say]")
+		saynn("[say=psmilkguy]А, точно. Ты пришел с каким-то глушильным оборудованием. Хочешь остаться?[/say]")
 
-		saynn("Sofie squints towards her partner. She clearly wants you to leave.")
+		saynn("Софи прищуривается, глядя на свою напарницу. Очевидно, она хочет, чтобы ты ушел.")
 
-		saynn("[say=pc]I guess there is no point in running for me.[/say]")
+		saynn("[say=pc]Думаю, мне бежать уже нет смысла.[/say]")
 
-		saynn("Back to the prison it is.. At least you're not getting sold into slavery again.")
+		saynn("Значит, обратно в тюрьму... По крайней мере, тебя снова не продадут в рабство.")
 
-		saynn("You say your goodbyes and prepare to leave.")
+		saynn("Вы прощаетесь и собираетесь уходить.")
 
-		addButton("Continue", "See what happens next", "credits_detective")
+		addButton("Продолжить", "Смотреть, что будет дальше", "credits_detective")
 	if(state == "credits_detective"):
 		removeCharacter("psmilkguy")
 		removeCharacter("psmilkgirl")
 		playAnimation(StageScene.Solo, "sit")
 		aimCameraAndSetLocName("intro_interogation")
 		addCharacter("intro_detective")
-		saynn("Hours later.. and you're already sitting in a familiar chair.")
+		saynn("Прошло несколько часов... и вот вы уже сидите в знакомом кресле.")
 
-		saynn("[say=intro_detective]And so you're saying that you don't recall anything about what happened in the last few weeks? And why your collar tracking suddenly began working again?[/say]")
+		saynn("[say=intro_detective]Значит, вы утверждаете, что совершенно не помните, что происходило в последние несколько недель? И почему ваш ошейник-трекер внезапно снова заработал?[/say]")
 
-		saynn("Sterile lights irritate your eyes that long have forgotten how it feels.. to be in a well-lit room.")
+		saynn("Стерильный свет режет глаза, которые уже давно забыли, каково это — находиться в хорошо освещенном помещении.")
 
-		saynn("[say=pc]I don't remember it, yeah.[/say]")
+		saynn("[say=pc]Да, я ничего не помню.[/say]")
 
-		saynn("It'd be very easy to snitch on Leo and Sofie. But what's the point?")
+		saynn("Было бы очень легко настучать на Лео и Софи. Но какой в этом смысл?")
 
-		saynn("[say=intro_detective]Do you remember that you somehow managed to escape one of the most secure prisons in the galaxy?[/say]")
+		saynn("[say=intro_detective]Вы помните, что вам каким-то образом удалось сбежать из одной из самых охраняемых тюрем в галактике?[/say]")
 
-		saynn("[say=pc]Sorry, I just can't seem to remember.[/say]")
+		saynn("[say=pc]Простите, просто никак не получается вспомнить.[/say]")
 
-		saynn("He hums, tapping against the table with his pen. Then he leans a bit closer.")
+		saynn("Он напевает под нос, постукивая ручкой по столу. Затем наклоняется чуть ближе.")
 
-		saynn("[say=intro_detective]Helping me understand what happened is in our best interest. You're giving me nothing and that makes you seem like a bad person. You don't want the judges to think that you're a bad person, do you? Maybe you just made some mistakes, it's understandable. I can help you. But only if you help me first.[/say]")
+		saynn("[say=intro_detective]Помочь мне понять, что произошло — в ваших же интересах. Вы ничего мне не даете, и из-за этого кажетесь плохим человеком. Вы ведь не хотите, чтобы судьи сочли вас плохим человеком, верно? Может, вы просто совершили ошибки, это вполне объяснимо. Я могу помочь вам. Но только если вы сначала поможете мне.[/say]")
 
-		saynn("[say=pc]I know how it will end. Just put me back where I belong.[/say]")
+		saynn("[say=pc]Я знаю, чем всё закончится. Просто верни меня туда, где моё место.[/say]")
 
-		saynn("Jake tilts his head slightly at first.. but then he just nods.")
+		saynn("Джейк сначала слегка наклоняет голову набок... но затем просто кивает.")
 
-		addButton("Continue", "See what happens next", "in_bdcc")
+		addButton("Продолжить", "Смотреть, что будет дальше", "in_bdcc")
 
 	if(state == "end_officer"):
 		playAnimation(StageScene.Duo, "kneel", {npc="psmilkofficer", npcAction="sit", bodyState={leashedBy="psmilkofficer"}})
-		saynn("The officer brings you onto his ship and shows you around. Quite spacious for a ship that doesn't require any extra crew..")
+		saynn("Офицер заманивает тебя на свой корабль и показывает всё вокруг. Довольно просторно для судна, которому не требуется дополнительный экипаж...")
 
-		saynn("There is only one bedroom though.. but you're not complaining.. anything is better than sleeping in the old freezer. And the idea of sleeping with your new owner is actually quite appealing.")
+		saynn("Правда, спальня здесь всего одна... но ты и не жалуешься... что угодно лучше, чем спать в старом морозильнике. Да и мысль о том, чтобы переспать со своим новым владельцем, на самом деле весьма заманчива.")
 
-		saynn("After a quick ship tour, he plants his butt into the captain's chair.. and invites you to kneel nearby.")
+		saynn("После быстрой экскурсии по кораблю он плюхается в капитанское кресло... и приглашает тебя опуститься на колени рядом.")
 
-		saynn("[say=psmilkofficer]Hold tight.[/say]")
+		saynn("[say=psmilkofficer]Держись крепче.[/say]")
 
-		saynn("He guides the ship out of the docks.. and directs it towards the many colorful stars.")
+		saynn("Он выводит корабль из доков... и направляет его к бесчисленным ярким звездам.")
 
-		saynn("Freedom. Well.. kinda.")
+		saynn("Свобода. Ну... вроде как.")
 
-		addButton("Continue", "See what happens next", "officer_choice")
+		addButton("Продолжить", "Смотреть, что будет дальше", "officer_choice")
 	if(state == "officer_choice"):
-		saynn("After setting the course, the autopilot grabs the controls, allowing the officer to focus on something else. He grabs a laptop and starts using it.")
+		saynn("Проложив курс, он включает автопилот, позволяя офицеру переключиться на что-то другое. Он берет ноутбук и принимается за работу.")
 
-		saynn("[say=psmilkofficer]You know.. I've typed a report here. All I have to do is press 'Send'. But I promised to not get them into trouble.[/say]")
+		saynn("[say=psmilkofficer]Знаешь... я уже напечатал здесь отчет. Осталось только нажать «Отправить». Но я обещал не подставлять их.[/say]")
 
-		saynn("You tilt your head.")
+		saynn("Ты наклоняешь голову набок.")
 
-		saynn("[say=psmilkofficer]So I will delete it. But I gotta go visit the toilet first.[/say]")
+		saynn("[say=psmilkofficer]Значит, я его удалю. Но сначала надо сгонять в туалет.[/say]")
 
-		saynn("He gives you a quick headpat.. and gets up, leaving his laptop on his chair.")
+		saynn("Он быстро гладит тебя по голове... а затем встает, оставляя ноутбук на стуле.")
 
-		saynn("When he is gone, you decide to take a peek.")
+		saynn("Когда он уходит, ты решаешь подглядеть.")
 
-		saynn("It's a report about a space cafe.. the one you were in. It explains how its owners are holding illegal slaves and using them to profit. There is some proof attached.. some photos.")
+		saynn("Это отчет о космическом кафе... том самом, в котором ты была. Там объясняется, как его владельцы держат нелегальных рабов и наживаются на них. К отчету приложены доказательства... несколько фотографий.")
 
-		addButton("Send it", "Send the report", "officer_send")
-		addButton("Do nothing", "Just sit still", "officer_nosend")
+		addButton("Отправить", "Отправить отчет", "officer_send")
+		addButton("Ничего не делать", "Просто сидеть смирно", "officer_nosend")
 	if(state == "officer_send"):
-		saynn("You press the giant 'Send' button.")
+		saynn("Ты нажимаешь на огромную кнопку «Отправить».")
 
-		saynn("The screen tells you that the report has been submitted successfully.")
+		saynn("На экране появляется сообщение, что отчет успешно отправлен.")
 
-		saynn("Soon, your owner returns.")
+		saynn("Вскоре твой хозяин возвращается.")
 
-		saynn("[say=psmilkofficer]Hah. Oops. Looks like it got accidentally sent. Oh well. Wasn't me, it's the tech's fault.[/say]")
+		saynn("[say=psmilkofficer]Хах. Ой. Похоже, это отправилось случайно. Ну да ладно. Это не я, это техника виновата![/say]")
 
-		saynn("He closes the laptop and kisses you on the cheek.")
+		saynn("Он закрывает ноутбук и целует тебя в щеку.")
 
-		addButton("Continue", "See what happens next", "officer_goodlife")
+		addButton("Продолжить", "Смотреть, что будет дальше", "officer_goodlife")
 	if(state == "officer_nosend"):
-		saynn("You decide against pressing that button and just wait for your owner to come back.")
+		saynn("Ты решаешь не нажимать на эту кнопку и просто ждешь возвращения своего хозяина.")
 
-		saynn("Soon, he does.")
+		saynn("Вскоре он возвращается.")
 
-		saynn("[say=psmilkofficer]Well, I guess that's the right thing.[/say]")
+		saynn("[say=psmilkofficer]Ну, думаю, так будет правильно.[/say]")
 
-		saynn("He deletes the report and closes his laptop.. before giving you a kiss on the cheek.")
+		saynn("Он удаляет отчет и закрывает ноутбук... прежде чем чмокнуть тебя в щеку.")
 
-		addButton("Continue", "See what happens next", "officer_goodlife")
+		addButton("Продолжить", "Смотреть, что будет дальше", "officer_goodlife")
 	if(state == "officer_goodlife"):
-		saynn("You spend the next few months traveling around the galaxy with your owner. Over time, you learned more about him.. and he learned more about your time at BDCC.")
+		saynn("Следующие несколько месяцев ты проводишь, путешествуя по галактике вместе со своим хозяином. Со временем ты узнала о нем больше... а он узнал больше о твоих временах в исправительном центре BDCC.")
 
-		saynn("His meetings were quite draining.. but at least he knew he could always use you to drain his balls.")
+		saynn("Его совещания ужасно выматывали... но, по крайней мере, он знал, что всегда может использовать тебя, чтобы разрядить свои яйца.")
 
-		saynn("Nobody knew that a high-ranking AlphaCorp officer had a personal pet living on his ship.. officially that is. Unofficially.. people obviously had their suspicions. Why else would his ship need a bluespace signal jammer installed?")
+		saynn("Никто и не подозревал, что у высокопоставленного офицера «АльфаКорп» на корабле живет личный питомец... официально так и было. Неофициально... люди, очевидно, что-то подозревали. Зачем еще на его корабле понадобился установленный глушитель сигналов блюспейса?")
 
-		saynn("Still, it was fun. Like you were living a dream.")
+		saynn("И все же, это было весело. Словно ты жила в прекрасном сне.")
 
-		saynn("Sadly, all good things eventually come to an end and dreams are no exception.")
+		saynn("К сожалению, всему хорошему рано или поздно приходит конец, и мечты — не исключение.")
 
-		saynn("[say=psmilkofficer]I'm sorry, cutie pie. They really are after me. If they find out, I will lose my seat in seconds.. end up out of the street. Or worse.. on a battlefield.[/say]")
+		saynn("[say=psmilkofficer]Прости, милашка. Они и правда охотятся за мной. Если они узнают, я в считанные секунды потеряю свое место... окажусь на улице. Или того хуже... на поле боя.[/say]")
 
-		saynn("You're kneeling near his chair, your usual spot. The wolf is scritching you behind the ears.")
+		saynn("Ты стоишь на коленях у его кресла, на своем привычном месте. Волк почесывает тебя за ушком.")
 
-		saynn("[say=psmilkofficer]I don't care too much about it.. but I don't even want to know what they will do with you. And yeah.. I hate that I can't even show you off to anyone. I hate that you're sitting here all day, in this cage of a ship.[/say]")
+		saynn("[say=psmilkofficer]Меня это не так сильно заботит... но я даже знать не хочу, что они с тобой сделают. И да... меня бесит, что я даже не могу тобой похвастаться. Бесит, что ты сидишь здесь целыми днями, в этой клетке под названием корабль.[/say]")
 
-		saynn("You can see a few lonely tears streaming down his cheeks.")
+		saynn("Ты видишь, как по его щекам катятся одинокие слезы.")
 
-		saynn("[say=psmilkofficer]I could release you.. but your collar will just ping your location to the nearest AlphaCorp patrol. It won't work. Nothing will.[/say]")
+		saynn("[say=psmilkofficer]Я мог бы освободить тебя... но твой ошейник тут же передаст твои координаты ближайшему патрулю АльфаКорп. Это не сработает. Ничего не сработает.[/say]")
 
-		saynn("He looks into your eyes.")
+		saynn("Он заглядывает тебе в глаза.")
 
-		saynn("[say=psmilkofficer]It pains me to say it.. but I think you'd be happier back in your prison. I hope you're not angry at me.[/say]")
+		saynn("[say=psmilkofficer]Мне больно это говорить... но, думаю, в своей тюрьме ты была бы счастливее. Надеюсь, ты не злишься на меня.[/say]")
 
-		saynn("You nuzzle his leg.")
+		saynn("Ты прижимаешься носом к его ноге.")
 
-		saynn("[say=pc]It's okay, really. I'm glad we shared so much time together.[/say]")
+		saynn("[say=pc]Все в порядке, правда. Я рад, что мы провели столько времени вместе.[/say]")
 
-		saynn("His cheeks get even more wet.")
+		saynn("Его щеки становятся еще более влажными.")
 
-		saynn("He nods.")
+		saynn("Он кивает.")
 
-		addButton("Continue", "See what happens next", "officer_back_interogation")
+		addButton("Продолжить", "Смотреть, что будет дальше", "officer_back_interogation")
 	if(state == "officer_back_interogation"):
 		removeCharacter("psmilkofficer")
 		addCharacter("intro_detective")
 		aimCameraAndSetLocName("intro_interogation")
 		playAnimation(StageScene.Solo, "sit")
-		saynn("Hours later, you're already sitting in the familiar chair.. just a little less clothed this time.")
+		saynn("Спустя несколько часов ты уже сидишь в том же знакомом кресле... только на этот раз на тебе чуть меньше одежды.")
 
-		saynn("[say=intro_detective]So you're saying that you don't know how you managed to evade our search for multiple months?[/say]")
+		saynn("[say=intro_detective]То есть ты хочешь сказать, что понятия не имеешь, как тебе удавалось ускользать от наших поисков на протяжении нескольких месяцев?[/say]")
 
-		saynn("[say=pc]Yep.[/say]")
+		saynn("[say=pc]Ага.[/say]")
 
-		saynn("He rolls his pen on his clawed digit.")
+		saynn("Он перекатывает ручку между когтистыми пальцами.")
 
-		saynn("[say=intro_detective]You're not giving me a lot to work with. It's in our best interest to paint the whole picture. The judges, if they see a blindspot, they will assume the worst.[/say]")
+		saynn("[say=intro_detective]Ты даешь мне слишком мало зацепок. Нам обоим выгодно прорисовать картину целиком. Если судьи увидят слепое пятно, они сделают худшие выводы.[/say]")
 
-		saynn("[say=pc]Tell the judges to buy some buttplugs. They will need them.[/say]")
+		saynn("[say=pc]Скажи судьям, чтобы купили себе анальные пробки. Они им скоро понадобятся.[/say]")
 
-		saynn("Jake tilts his head slightly at first.. but then his expression switches to a very mean one.")
+		saynn("Джейк сначала слегка наклоняет голову... но затем его лицо принимает крайне злобное выражение.")
 
-		addButton("Continue", "See what happens next", "in_bdcc")
+		addButton("Продолжить", "Смотреть, что будет дальше", "in_bdcc")
 	if(state == "in_bdcc"):
 		aimCameraAndSetLocName(GM.pc.getLocation())
 		playAnimation(StageScene.Duo, "stand", {npc="risha"})
 		removeCharacter("intro_detective")
 		addCharacter("risha")
-		saynn("A few moments later..")
+		saynn("Спустя несколько мгновений...")
 
-		saynn("[say=risha]Here is your shit.[/say]")
+		saynn("[say=risha]Вот твое дерьмо.[/say]")
 
-		saynn("At least.. you don't have to start from zero.")
+		saynn("По крайней мере... тебе не придется начинать с нуля.")
 
-		saynn("[say=risha]Be glad that I decided against just throwing it all out.[/say]")
+		saynn("[say=risha]Радуйся, что я решила не выбрасывать всё это нахер.[/say]")
 
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
-		saynn("You're back in your cell. Home, sweet home.")
+		saynn("Ты снова в своей камере. Дом, милый дом.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	
 	if(state == "end_annoying"):
 		addCharacter("psmilkgirl")
 		addCharacter("psmilkguy")
 		playAnimation(StageScene.Duo, "defeat", {npc="psmilkgirl", npcAction="shove"})
-		saynn("Before you can fully get up, Sofie rushes into your cell and shoves you back down to the ground. Leo joins too, grabbing Sofie's arm and pulling her away from you.")
+		saynn("Прежде чем ты успеваешь окончательно подняться, Софи влетает в твою камеру и толкает тебя обратно на пол. Лео тоже подрывается следом, хватая Софи за руку и оттаскивая её от тебя.")
 
-		saynn("[say=psmilkguy]Sofie! Stop.[/say]")
+		saynn("[say=psmilkguy]Софи! Стой.[/say]")
 
-		saynn("[say=psmilkgirl]LET ME GO, YOU SPINELESS. I'M GONNA FUCKING KILL THEM.[/say]")
+		saynn("[say=psmilkgirl]ПУСТИ МЕНЯ, ТЫ, БЕСХРЕБЕТ! Я ИХ ВСЕХ, БЛЯТЬ, УБЬЮ![/say]")
 
-		saynn("Wow. Wow-w-w. You get back a few steps, away from the crazy bitch.")
+		saynn("Ого. О-о-обалдеть. Ты отступаешь на пару шагов назад, подальше от этой сумасшедшей сучки.")
 
-		saynn("Leo still tries to hold Sofie.")
+		saynn("Лео всё ещё пытается удержать Софи.")
 
-		saynn("[say=psmilkguy]If you kill {pc.him}, how are we gonna pay our debts? And killing is also.. bad.. you know?[/say]")
+		saynn("[say=psmilkguy]Если ты убьёшь {pc.him}, как мы будем отдавать долги? Да и вообще... убивать — это ведь плохо, понимаешь?[/say]")
 
-		saynn("[say=psmilkgirl]I DON'T EVEN CARE ANYMORE. I JUST HATE THEM. I WANT THEM GONE. DEAD. THROWN OUT INTO SPACE LIKE A PIECE OF THRASH THAT THEY ARE. NOTHING BUT TROUBLE CAME FROM THEM.[/say]")
+		saynn("[say=psmilkgirl]ДА МНЕ УЖЕ ВСЁ РАВНО! ОНИ МЕНЯ ПРОСТО БЕСЯТ! ХОЧУ, ЧТОБЫ ИХ НЕ БЫЛО. МЁРТВЫХ. ЧТОБЫ ИХ ВЫШВЫРНУЛИ В КОСМОС, КАК КУСОК МУСОРА, КОИМ ОНИ И ЯВЛЯЮТСЯ! ОТ НИХ ОДНА ТОЛЬКО ПРОБЛЕМА![/say]")
 
-		saynn("That's not nice..")
+		saynn("Это не очень-то вежливо...")
 
-		addButton("Continue", "See what happens next", "annoy_shittalk")
+		addButton("Продолжить", "Смотреть, что будет дальше", "annoy_shittalk")
 	if(state == "annoy_shittalk"):
 		playAnimation(StageScene.Duo, "stand", {pc="psmilkguy", npc="psmilkgirl"})
-		saynn("Sofie scratches her partner with her claws, trying to break free. The blood gets spilled.. at least it's not yours.")
+		saynn("Софи царапает своего партнера когтями, пытаясь вырваться. Брызжет кровь... по крайней мере, не твоя.")
 
-		saynn("[say=psmilkguy]Ow.. I'm sorry, Sofie. This feeling will pass, just try to relax.. breathe in and out, sweetie, please.[/say]")
+		saynn("[say=psmilkguy]Ой... Прости, Софи. Это чувство скоро пройдет, просто постарайся расслабиться... дыши глубже, милая, ну пожалуйста.[/say]")
 
-		saynn("You look behind the two and realize.. They left the door out of this basement open. This could be your chance.. unless this crazy bitch actually manages to break free.")
+		saynn("Ты оглядываешься за спины двоих и понимаешь... они оставили дверь в этот подвал открытой. Это может быть твой шанс... если только эта сумасшедшая сучка реально не сумеет вырваться.")
 
-		saynn("[say=psmilkgirl]LET ME GO ALREADY, YOU LIMP DICK LOOSER. IT'S ALL YOUR FAULT.[/say]")
+		saynn("[say=psmilkgirl]ДА ОТПУСТИ ТЫ МЕНЯ УЖЕ, ТЫ, ТРЯПКА БЕЗВОЛОСАЯ! ЭТО ВСЁ ТВОЯ ВИНА![/say]")
 
-		saynn("[say=psmilkguy]Don't say that, sweetheart. And we were choosing the slaves together.. we didn't have much of a choice.. remember our financial situation?[/say]")
+		saynn("[say=psmilkguy]Не говори так, дорогая. Мы ведь выбирали рабов вместе... у нас особого выбора и не было... помнишь наше финансовое положение?[/say]")
 
-		saynn("Sofie stops trying to kill you and instead glares at her partner.")
+		saynn("Софи перестает пытаться убить тебя и вместо этого сверлит взглядом своего партнера.")
 
-		saynn("[say=psmilkgirl]SO YOU'RE SAYING I'M TO BLAME? IT'S MY FAULT WE'RE HERE IN THIS SHITHOLE OF A CAFE? I’M THE ONLY ONE WHO KEEPS THIS FAILED BUSINESS STILL RUNNING. ME.[/say]")
+		saynn("[say=psmilkgirl]ТО ЕСТЬ ТЫ ХОЧЕШЬ СКАЗАТЬ, ЧТО ВИНОВАТА Я? ЭТО МОЯ ВИНА, ЧТО МЫ ЗДЕСЬ, В ЭТОМ ДЕРЬМОВОМ КАФЕ? ЭТО Я ЕДИНСТВЕННАЯ, КТО ВСЁ ЕЩЁ ТЯНЕТ ЭТОТ ГОВНЯНЫЙ БИЗНЕС. Я![/say]")
 
-		saynn("[say=psmilkguy]Try to relax, you're not thinking straight. I'm not saying you're to blame. You're not, love.. It's just.. We both share some of it. Also, ouch..[/say]")
+		saynn("[say=psmilkguy]Постарайся расслабиться, ты сейчас не соображаешь. Я не говорю, что виновата ты. Нет, любовь моя... Просто... мы обе в этом отчасти виноваты. И... ой![/say]")
 
-		saynn("Somehow, the guy is still trying to keep himself composed. You're not sure if you should feel sorry or be impressed.")
+		saynn("Каким-то образом парень всё еще пытается сохранять самообладание. Ты не понимаешь, стоит ли тебе его пожалеть или восхититься им.")
 
-		saynn("[say=psmilkgirl]I DON'T SHARE SHIT. THINKING STRAIGHT? YOU'RE THE MOST GAY ONE HERE, BEGGING FOR MY STRAP LIKE A FUCKING SLUT. I SHOULD HAVE JUST MADE YOU ONE OF THE SLAVES. YOU'D BE WAY MORE USEFUL THEN, YOU FUCKING IDIOT.[/say]")
+		saynn("[say=psmilkgirl]Я НИЧЕМ НЕ ДЕЛЮСЬ! НЕ СООБРАЖАЮ? ДА ТЫ ТУТ САМА САМАЯ ГЕЙСКАЯ, УМОЛЯЕШЬ МЕНЯ О СТРАПЕ, КАК ЕБАНАЯ ШЛЮХА! НАДО БЫЛО ПРОСТО СДЕЛАТЬ ТЕБЯ ОДНОЙ ИЗ РАБЫНЬ. ТОГДА ОТ ТЕБЯ БЫЛО БЫ ГОРАЗДО БОЛЬШЕ ПРОКУ, ТЫ, ЕБАНАЯ ТУПАЯ ТРЯПКА![/say]")
 
-		saynn("[say=psmilkguy]Try to calm down, we can talk it through like adults. I really don't like what you're saying, please.[/say]")
+		saynn("[say=psmilkguy]Постарайся успокоиться, мы можем обсудить всё как взрослые люди. Мне очень не нравится то, что ты несешь, пожалуйста.[/say]")
 
-		saynn("It's great that they're busy arguing with each other.. but they're still blocking the only exit.")
+		saynn("Здорово, конечно, что они заняты спорами друг с другом... но они всё ещё перегораживают единственный выход.")
 
-		saynn("[say=psmilkgirl]FUCK YOU. WHAT ARE YOU GONNA DO? HUH? YOU'RE JUST A BETA BITCH, A PUSHOVER, A STRAP-HUNGRY WHORE.[/say]")
+		saynn("[say=psmilkgirl]ДА ПОШЁЛ ТЫ НАХУЙ! И ЧТО ТЫ МНЕ СДЕЛАЕШЬ? А? ТЫ ВСЕГО ЛИШЬ БЕТА-СУЧКА, ТЕРПИЛА, СТРАХОТНАЯ ШЛЮХА, КОТОРАЯ ТОЛЬКО И ЖДЁТ РЕМНЯ.[/say]")
 
-		saynn("[say=psmilkguy]My interests or personality have nothing to do with this.[/say]")
+		saynn("[say=psmilkguy]Мои интересы или характер здесь вообще ни при чём.[/say]")
 
-		saynn("So much yelling makes your ears hurt. Soon they will start bleeding.")
+		saynn("От такого крика уши начинают болеть. Скоро они даже закровоточат.")
 
-		saynn("[say=psmilkgirl]MAN UP ALREADY. FIND SOME FUCKING BALLS AT LEAST, I KNOW YOU CAN'T GROW ANY.[/say]")
+		saynn("[say=psmilkgirl]МУЖИНОЙ СТАНЬ УЖЕ! ХОТЬ ЯЙЦА НАЙДИ, ЕСЛИ ОНИ У ТЕБЯ ЕЩЁ НЕ СДОХЛИ.[/say]")
 
-		saynn("[say=psmilkguy]..At least I'm not the one who gambled all our savings away.[/say]")
+		saynn("[say=psmilkguy]..По крайней мере, я не тот придурок, который профукал все наши сбережения в азартные игры.[/say]")
 
-		saynn("Ooh.")
+		saynn("О-о.")
 
-		addButton("Continue", "See what happens next", "annoy_firstslap")
+		addButton("Продолжить", "Смотреть, что будет дальше", "annoy_firstslap")
 	if(state == "annoy_firstslap"):
 		playAnimation(StageScene.Duo, "stand", {pc="psmilkguy", npc="psmilkgirl", npcAction="defeat"})
-		saynn("[say=psmilkgirl]What? REALLY? TRYING TO PUSH THE BLAME ONTO ME, AGAIN? WHAT A FAILURE OF A MAN.[/say]")
+		saynn("[say=psmilkgirl]Что? РЕАЛЬНО? СНОВА ПЫТАЕШЬСЯ СВАЛИТЬ ВСЁ НА МЕНЯ? НУ И ПРОВАЛ ТЫ КАК МУЖЧИНА.[/say]")
 
-		saynn("A loud slap echoes around the whole freezer.. Sofie grabs onto her red cheek.")
+		saynn("Громкий шлепок эхом разносится по всей морозилке... Софи хватается за свою покрасневшую щеку.")
 
-		saynn("[say=psmilkgirl]Did you just..[/say]")
+		saynn("[say=psmilkgirl]Ты что, только что..[/say]")
 
-		saynn("Another slap makes her other cheek the same color. Sofie collapses down to her knees, her expression.. priceless.")
+		saynn("Еще одна пощечина окрашивает ее вторую щеку в тот же цвет. Софи падает на колени, а выражение ее лица.. просто бесценно.")
 
-		saynn("[say=psmilkguy]Shut your mouth, please. I'm so tired of your screaming.[/say]")
+		saynn("[say=psmilkguy]Заткнись, пожалуйста. Я так устал от твоего визга.[/say]")
 
-		saynn("Sofie is shaking..")
+		saynn("Софи дрожит..")
 
-		saynn("[say=psmilkgirl]You.. YOU LITTLE..[/say]")
+		saynn("[say=psmilkgirl]Ты.. ТЫ, МЕЛКАЯ..[/say]")
 
-		saynn("A third slap.. that one looked like it hurt.")
+		saynn("Третья пощечина.. кажется, эта была особенно болезненной.")
 
-		saynn("[say=psmilkguy]Quiet, I said, just stop shouting to listen to me, for once. I would really hate to use a fucking cattle prod on the love of my life.[/say]")
+		saynn("[say=psmilkguy]Тихо, я сказал! Просто замолчи и послушай меня хоть раз. Мне бы очень не хотелось пускать в ход ебучий электрошокер против любви всей моей жизни.[/say]")
 
-		saynn("Sofie's lips are trembling as she rubs her red cheeks.")
+		saynn("Губы Софи дрожат, пока она растирает свои покрасневшие щеки.")
 
-		saynn("[say=psmilkguy]I tried to be peaceful. I thought that this.. state of yours.. would pass eventually. I thought that it's just the tough times that have caused this. I remember the times where you were acting nice to me.. I cherish those moments. I dreamed of them coming back.[/say]")
+		saynn("[say=psmilkguy]Я пытался быть мирным. Думал, что это.. твое состояние.. со временем пройдет. Думал, это просто трудные времена так на тебя повлияли. Я помню времена, когда ты была ко мне добра.. Я дорожу теми моментами. И мечтал, что они вернутся.[/say]")
 
-		saynn("Slowly, you follow the wall of the cell towards the exit, one step at a time.")
+		saynn("Медленно, шаг за шагом, ты идешь вдоль стены камеры к выходу.")
 
-		saynn("[say=psmilkguy]I'm the dumb one here, I know. You can't find a guy who is more stupid than me. I fucking love you, even though you clearly hate me.[/say]")
+		saynn("[say=psmilkguy]Знаю, тупица здесь — это я. Тебе вряд ли удастся найти кого-то еще более дебильного. Я, блядь, люблю тебя, хотя ты меня явно ненавидишь.[/say]")
 
-		saynn("Love is a powerful force, huh.")
+		saynn("Любовь — великая сила, а?")
 
-		saynn("[say=psmilkguy]I'm not perfect, I made my share of mistakes. I have forgiven you for spending all my savings on gambling. I have even forgiven you for cheating on me with that guy who visits us ever so often and just laughs his ass off behind my back. I agreed to break the law with you and visit that shady-ass Blacktail market. Multiple times. Wow.. What was I thinking?[/say]")
+		saynn("[say=psmilkguy]Я не идеален, наделал кучу ошибок. Я простил тебе то, что ты спустила все мои сбережения на азартные игры. Я даже простил тебе измены с тем типом, который заглядывает к нам время от времени и просто ржет над моей спиной. Я согласился нарушить закон вместе с тобой и потащиться на тот мутный рынок Блэктейл. И не один раз. Ох... О чем я только думал?[/say]")
 
-		saynn("Buying you was clearly their biggest mistake.")
+		saynn("Покупка тебя явно стала их самой большой ошибкой.")
 
-		saynn("[say=psmilkguy]But you.. You have bigger problems, Sofie. You are sick in your head. And there is nothing I can do to change that. I can't help you. I don't want to anymore. I hate you.[/say]")
+		saynn("[say=psmilkguy]Но ты... У тебя проблемы посерьезнее, Софи. У тебя крыша поехала. И я ничего не могу с этим поделать. Я не могу тебе помочь. Да и больше не хочу. Я тебя ненавижу.[/say]")
 
-		saynn("Sofie is just blinking a lot, speechless.")
+		saynn("Софи просто часто моргает, лишившись дара речи.")
 
-		saynn("[say=psmilkguy]I thought the tough times have caused this.. But they just revealed who you really are.[/say]")
+		saynn("[say=psmilkguy]Я думал, это всё из-за тяжелых времен... Но они просто сорвали с тебя маску и показали, кто ты есть на самом деле.[/say]")
 
-		saynn("You get closer and closer to the exit.")
+		saynn("Ты подходишь всё ближе и ближе к выходу.")
 
-		saynn("[say=psmilkguy]Do me a favor. Get some help. But not from me. I'm done. Officially. I'm fucking done dealing with your bullshit.[/say]")
+		saynn("[say=psmilkguy]Сделай мне одолжение. Найди себе помощь. Но не меня. С меня хватит. Официально. С меня, блядь, хватит твоего дерьма.[/say]")
 
-		saynn("[say=psmilkgirl]L-Leo.[/say]")
+		saynn("[say=psmilkgirl]Л-Лео...[/say]")
 
-		saynn("[say=psmilkguy]SHUT UP, Sofie. Shut your whore's mouth. Don't make it worse, you did enough.[/say]")
+		saynn("[say=psmilkguy]ЗАТКНИСЬ, Софи. Заткни свою шлюшью пасть. Не делай хуже, ты и так достаточно натворила.[/say]")
 
-		saynn("They're both busy with each other, barely paying any attention to the surroundings. Now seems like as good of a time as any to make your escape.")
+		saynn("Они оба поглощены друг другом и почти не обращают внимания на то, что происходит вокруг. Сейчас кажется самым подходящим моментом для побега.")
 
-		addButton("Sneak out", "Time to go!", "annoy_sneakout")
+		addButton("Выскользнуть украдкой", "Пора идти!", "annoy_sneakout")
 	if(state == "annoy_sneakout"):
 		removeCharacter("psmilkguy")
 		removeCharacter("psmilkgirl")
 		aimCameraAndSetLocName("pscafe_counter")
 		playAnimation(StageScene.Solo, "stand")
-		saynn("You manage to sneak out of the fridge and head towards the door that they have forgotten to close. You still hear some of the pair arguing.")
+		saynn("Тебе удается незаметно выбраться из холодильника и направиться к двери, которую они забыли закрыть. Ты всё еще слышишь, как пара продолжает препираться.")
 
-		saynn("[say=psmilkguy]If I had my ring, I would have thrown it out into the trash right now. But I pawned it. Just so we'd be able to keep this dream afloat for a little longer. Gosh, I'm so fucking stupid.[/say]")
+		saynn("[say=psmilkguy]Будь у меня кольцо, я бы прямо сейчас швырнула его в мусорку. Но я заложила его. Просто чтобы мы могли еще хоть немного удержать эту мечту на плаву. Боже, какая же я, блядь, тупая.[/say]")
 
-		saynn("As you step out, the bright lights of the small kitchen and the seating area hit you.. It's early morning so there aren't any customers here yet.")
+		saynn("Когда ты выходишь, тебя ослепляет яркий свет маленькой кухни и обеденной зоны. Сейчас раннее утро, так что посетителей еще нет.")
 
-		saynn("You are still naked.. would be nice if you weren't. You look around but all you can find is an apron.. That's better than nothing.")
+		saynn("Ты всё еще голая... было бы здорово, если бы это было не так. Ты оглядываешься по сторонам, но всё, что удается найти — это фартук... Это лучше, чем ничего.")
 
-		saynn("You approach the counter and hop over it. It would be nice to get some credits from the digital cash register.. but it's locked.")
+		saynn("Ты подходишь к прилавку и перепрыгиваешь через него. Было бы неплохо сгрести немного кредитов из цифровой кассы... но она заперта.")
 
-		addButton("Docks", "Head towards the docks", "annoy_docks")
+		addButton("Доки", "Направиться к докам", "annoy_docks")
 	if(state == "annoy_docks"):
 		aimCameraAndSetLocName("pscafe_docks")
-		saynn("With nothing better to do, you head towards the docks.")
+		saynn("От безделья ты направляешься к докам.")
 
-		saynn("It's a small series of corridors, each one ending with a docking port. Not much you can do unless you have a spaceship.. and last time you checked, you didn't..")
+		saynn("Это узкая сеть коридоров, каждый из которых заканчивается стыковочным портом. Многого не сделаешь, если у тебя нет космического корабля... а когда ты проверял в последний раз, его не было...")
 
-		saynn("The best thing you can do.. is just wait really.")
+		saynn("Лучшее, что ты можешь сделать... это просто подождать.")
 
-		addButton("Wait", "See what happens next", "annoy_get_helped")
+		addButton("Подождать", "Смотреть, что будет дальше", "annoy_get_helped")
 	if(state == "annoy_get_helped"):
-		saynn("After some minutes, the first clients actually begin to dock.")
+		saynn("Спустя несколько минут начинают прибывать первые клиенты.")
 
-		saynn("You stop them.. and do your best to explain your situation.. and that you really need a ride somewhere safe.")
+		saynn("Ты останавливаешь их... и изо всех сил пытаешься объяснить свою ситуацию... и то, что тебе позарез нужно добраться куда-нибудь в безопасное место.")
 
-		saynn("The first clients seemingly just ignore you.. probably thinking you're some homeless space junkie. But one kind soul offers to help.")
+		saynn("Первые клиенты, кажется, просто игнорируют тебя... наверняка принимая за какого-то бездомного космического торчка. Но одна добрая душа предлагает помощь.")
 
-		saynn("You board their ship.. and watch through the ship's window as the cafe gets smaller and smaller.")
+		saynn("Ты заходишь на их корабль... и смотришь через иллюминатор, как кафе становится всё меньше и меньше.")
 
-		saynn("Freedom. Or so it seems.")
+		saynn("Свобода. По крайней мере, так кажется.")
 
-		saynn("Sadly, it doesn't last long.")
+		saynn("К сожалению, она длится недолго.")
 
-		saynn("Soon enough, your spaceship gets stopped by one of the AlphaCorp patrols. Somehow, they knew to check you exactly.")
+		saynn("Вскоре твой корабль останавливает один из патрулей АльфаКорп. Каким-то образом они знали, что нужно проверить именно тебя.")
 
-		saynn("One awkward attempt at fighting back later.. and you're in cuffs.")
+		saynn("Одна неуклюжая попытка дать отпор... и вот ты уже в наручниках.")
 
-		addButton("Continue", "See what happens next", "annoy_detective")
+		addButton("Продолжить", "Смотреть, что будет дальше", "annoy_detective")
 	if(state == "annoy_detective"):
 		addCharacter("intro_detective")
 		playAnimation(StageScene.Solo, "sit")
 		aimCameraAndSetLocName("intro_interogation")
-		saynn("[say=intro_detective]And so you're saying that you don't recall anything about what happened in the last few days?[/say]")
+		saynn("[say=intro_detective]То есть ты хочешь сказать, что совершенно не помнишь, что происходило в последние несколько дней?[/say]")
 
-		saynn("Sterile lights irritate your eyes that long have forgotten how it feels.. to be in a well-lit room.")
+		saynn("Стерильный свет режет глаза, которые уже давно забыли, каково это — находиться в хорошо освещенном помещении.")
 
-		saynn("[say=pc]You say days but it could have been weeks or months, I don't remember shit.[/say]")
+		saynn("[say=pc]Ты говоришь «дни», но это могли быть недели или месяцы, черт возьми, я нихера не помню.[/say]")
 
-		saynn("[say=intro_detective]Do you remember that you somehow managed to escape one of the most secure prisons in the galaxy?[/say]")
+		saynn("[say=intro_detective]Вы помните, что вам каким-то образом удалось сбежать из одной из самых охраняемых тюрем в галактике?[/say]")
 
-		saynn("[say=pc]I was in a prison? Wow. I only saw prisons in my nightmares.[/say]")
+		saynn("[say=pc]Я была в тюрьме? Офигеть. Раньше тюрьмы мне только в кошмарах снились.[/say]")
 
-		saynn("He hums, tapping against the table with his pen. Then he leans a bit closer.")
+		saynn("Он напевает под нос, постукивая ручкой по столу. Затем наклоняется чуть ближе.")
 
-		saynn("[say=intro_detective]Helping me understand what happened is in our best interest. You're giving me nothing and that makes you seem like a bad person. You don't want the judges to think that you're a bad person, do you? Maybe you just made some mistakes, it's understandable. I can help you. But only if you help me first.[/say]")
+		saynn("[say=intro_detective]Помочь мне понять, что произошло — в ваших же интересах. Вы ничего мне не даете, и из-за этого кажетесь плохим человеком. Вы ведь не хотите, чтобы судьи сочли вас плохим человеком, верно? Может, вы просто совершили ошибки, это вполне объяснимо. Я могу помочь вам. Но только если вы сначала поможете мне.[/say]")
 
-		saynn("[say=pc]You really need new lines, want me to help you come up with some new ones?[/say]")
+		saynn("[say=pc]Тебе реально нужны новые реплики. Хочешь, помогу тебе что-нибудь придумать?[/say]")
 
-		saynn("Jake tilts his head slightly at first.. but then his expression switches to a very mean one.")
+		saynn("Джейк сначала слегка наклоняет голову... но затем его лицо принимает крайне злобное выражение.")
 
-		addButton("Continue", "See what happens next", "in_bdcc")
+		addButton("Продолжить", "Смотреть, что будет дальше", "in_bdcc")
 
 
 	if(state == "end_breaklock"):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("The padlock isn't holding the door closed anymore.. which means that the freedom is near.")
+		saynn("Навесной замок больше не удерживает дверь... а значит, свобода где-то рядом.")
 
-		saynn("You look through the slit and wait for a good moment..")
+		saynn("Ты заглядываешь в щель и ждешь подходящего момента...")
 
-		saynn("But then..")
+		saynn("Но тут..")
 
-		addButton("Continue", "See what happens next", "lock_pip")
+		addButton("Продолжить", "Смотреть, что будет дальше", "lock_pip")
 	if(state == "lock_pip"):
 		addCharacter("pspip")
 		playAnimation(StageScene.Duo, "stand", {npc="pspip"})
-		saynn("Before you commit, a hand lands on your shoulder and pulls you back.")
+		saynn("Прежде чем ты решишься, чья-то рука ложится тебе на плечо и оттягивает назад.")
 
-		saynn("You were about to throw a punch.. but then you see who it is.")
+		saynn("Ты уже собирался нанести удар... но тут видишь, кто это.")
 
-		saynn("[say=pspip]Tshh. I think this is a dumb idea.[/say]")
+		saynn("[say=pspip]Тссс. По-моему, это тупая затея.[/say]")
 
-		saynn("[say=pc]Getting out of here is a dumb idea? You can stay here if you want, Pip.[/say]")
+		saynn("[say=pc]Свалить отсюда — тупая затея? Можешь оставаться, если хочешь, Пип.[/say]")
 
-		saynn("[say=pspip]No, doing it alone is a dumb idea. One versus two. I wanna help even up the chances.[/say]")
+		saynn("[say=pspip]Нет, тупая затея — это делать всё в одиночку. Один против двоих. Я хочу помочь, чтобы шансы сравнялись.[/say]")
 
-		saynn("That doesn't seem like a bad idea.")
+		saynn("Похоже, идея неплохая.")
 
-		saynn("[say=pc]Alright.[/say]")
+		saynn("[say=pc]Ладно.[/say]")
 
-		saynn("Pip peeks his head out slightly, observing the surroundings.")
+		saynn("Пип слегка высовывает голову, осматриваясь по сторонам.")
 
-		saynn("[say=pspip]The girl is standing behind the counter, the guy is serving the tables. I'm pretty sure that one of them has a cattle prod, usually him. Hurts like shit, enough to bring us down.[/say]")
+		saynn("[say=pspip]Девчонка стоит за стойкой, а парень разносит заказы. Я почти уверен, что у одного из них есть электрошокер, обычно у него. Херачит чертовски больно, вполне хватит, чтобы нас свалить.[/say]")
 
-		saynn("A voice from behind..")
+		saynn("Голос откуда-то сзади...")
 
-		saynn("[say=psmilka]Cattle prod?[/say]")
+		saynn("[say=psmilka]Электрошокер?[/say]")
 
-		addButton("Continue", "See what happens next", "lock_milka")
+		addButton("Продолжить", "Смотреть, что будет дальше", "lock_milka")
 	if(state == "lock_milka"):
 		addCharacter("pspip")
 		playAnimation(StageScene.Duo, "stand", {npc="psmilka", pc="pspip"})
-		saynn("Sneaky Milka makes both of you jump..")
+		saynn("Скрытная Милка заставляет вас обоих подпрыгнуть от неожиданности...")
 
-		saynn("[say=pspip]God dammit Milka.[/say]")
+		saynn("[say=pspip]Твою мать, Милка![/say]")
 
-		saynn("[say=psmilka]Moo? Whatcha doing?[/say]")
+		saynn("[say=psmilka]Му? Вы чего это?[/say]")
 
-		saynn("Her ears perked up curiously.")
+		saynn("Её ушки любопытно навострились.")
 
-		saynn("[say=pspip]We're.. gonna steal some ice-cream. To do that, we need to sneak by the owners without them noticing.[/say]")
+		saynn("[say=pspip]Мы... собираемся стащить мороженое. Чтобы это сделать, нам нужно прокрасться мимо хозяев так, чтобы они ничего не заметили.[/say]")
 
-		saynn("[say=psmilka]Ohh.. Are you trying to escape?[/say]")
+		saynn("[say=psmilka]Ооо... Ты что, пытаешься сбежать?[/say]")
 
-		saynn("Pip looks at you, confused.")
+		saynn("Пип в замешательстве смотрит на тебя.")
 
-		saynn("[say=pc]Yeah.[/say]")
+		saynn("[say=pc]Ага.[/say]")
 
-		saynn("Milka blinks a few times, the corners of her mouth turning down.")
+		saynn("Милка несколько раз моргает, и уголки её губ опускаются.")
 
-		saynn("[say=psmilka]I'm missing my old farm.. I wanna help![/say]")
+		saynn("[say=psmilka]Я скучаю по своей старой ферме... Я хочу помочь![/say]")
 
-		saynn("Pip covers her mouth.")
+		saynn("Пип прикрывает ей рот рукой.")
 
-		saynn("[say=pspip]Tshh, quiet. One of them has a weapon, probably the guy. That cattle prod can bring all of us down.[/say]")
+		saynn("[say=pspip]Тсс, потише. У одного из них оружие, скорее всего, у того парня. Эта электропика может уложить нас всех одним махом.[/say]")
 
-		saynn("A visible shiver runs through Milka.")
+		saynn("Милку заметно передергивает.")
 
-		saynn("[say=psmilka]Cattle prod..[/say]")
+		saynn("[say=psmilka]Электропика...[/say]")
 
-		saynn("She winces just thinking about it.")
+		saynn("Она вздрагивает от одной только мысли об этом.")
 
-		saynn("[say=psmilka]I think I can take it..[/say]")
+		saynn("[say=psmilka]Думаю, я справлюсь..[/say]")
 
-		saynn("[say=pspip]Are you sure, Milka? It will be set to its most painful setting.[/say]")
+		saynn("[say=pspip]Ты уверена, Милка? Выставят самый болезненный режим.[/say]")
 
-		saynn("Milka stares at the walls of this basement for a few long seconds.")
+		saynn("Милка несколько долгих секунд сверлит взглядом стены этого подвала.")
 
-		saynn("[say=psmilka]Yeah..[/say]")
+		saynn("[say=psmilka]Да..[/say]")
 
-		saynn("Having two friends by your sides.. makes this three versus two.")
+		saynn("Когда рядом два друга... это уже три против двух.")
 
-		saynn("[say=pc]Hm. I wonder if we can..[/say]")
+		saynn("[say=pc]Хм. Интересно, сможем ли мы..[/say]")
 
-		saynn("[say=pspip]Change the plan? We might be able to. Here is what I'm thinking..[/say]")
+		saynn("[say=pspip]Изменить план? Возможно. Вот что я думаю..[/say]")
 
-		saynn("You discuss the best way to handle this.. and then.. you get into your positions.")
+		saynn("Вы обсуждаете лучший способ справиться с этим... а затем... занимаете свои позиции.")
 
-		saynn("Time to do this.")
+		saynn("Пора за дело.")
 
-		addButton("Continue", "See what happens next", "lock_start")
+		addButton("Продолжить", "Смотреть, что будет дальше", "lock_start")
 	if(state == "lock_start"):
 		playAnimation(StageScene.Solo, "stand", {pc="psmilka"})
-		saynn("The cafe is going through its normal routine. Customers ordering food and consuming it behind the tables. Sofie is taking in the orders.. before handing them to Leo who prepares and hands them out.")
+		saynn("В кафе идет обычная рутина. Посетители заказывают еду и едят за столиками. Софи принимает заказы, а затем передает их Лео, который их готовит и разносит.")
 
-		saynn("Suddenly, the door at the end of the kitchen opens up.. the one that leads to the basement. It reveals.. a curious busty puppy.")
+		saynn("Внезапно дверь в конце кухни распахивается... та самая, что ведет в подвал. За ней показывается... любопытная пышногрудая щеночка.")
 
-		saynn("[say=psmilka]Moo?[/say]")
+		saynn("[say=psmilka]Му-у?[/say]")
 
-		saynn("She steps out into the kitchen and kicks the broken padlock for a bit.")
+		saynn("Она выходит на кухню и слегка пинает сломанный навесной замок.")
 
-		addButton("Continue", "See what happens next", "lock_sofie")
+		addButton("Продолжить", "Смотреть, что будет дальше", "lock_sofie")
 	if(state == "lock_sofie"):
 		addCharacter("psmilkgirl")
 		playAnimation(StageScene.Duo, "stand", {pc="psmilka", npc="psmilkgirl"})
 		aimCameraAndSetLocName("pscafe_center")
-		saynn("Milka wanders around the kitchen more, sniffing all the various cooking equipment.")
+		saynn("Милка продолжает бродить по кухне, обнюхивая различную кухонную утварь.")
 
-		saynn("It doesn't take long before she gets spotted by Sofie..")
+		saynn("Вскоре её замечает Софи...")
 
-		saynn("[say=psmilkgirl]Hey! No-no-no-no. Bad, the fuck are you doing here.[/say]")
+		saynn("[say=psmilkgirl]Эй! Нет-нет-нет-нет. Плохая! Какого хера ты тут забыла?[/say]")
 
-		saynn("[say=psmilka]Moo-o?[/say]")
+		saynn("[say=psmilka]Му-у-у?[/say]")
 
-		saynn("As Sofie starts creeping towards Milka, she keeps stepping back.. until she ends up back in the basement.")
+		saynn("Пока Софи подкрадывается к Милке, та продолжает пятиться... пока не оказывается обратно в подвале.")
 
-		saynn("[say=psmilkgirl]Did you really break the padlock? What a dumb fucking animal, you need to be taught a good lesson.[/say]")
+		saynn("[say=psmilkgirl]Ты реально сломала замок? Какая же тупая сука, тебе нужно преподать хороший урок.[/say]")
 
-		saynn("She turns around and yells towards the kitchen.")
+		saynn("Она разворачивается и кричит в сторону кухни.")
 
-		saynn("[say=psmilkgirl]Leo! Come here, you lazy fuck.[/say]")
+		saynn("[say=psmilkgirl]Лео! А ну иди сюда, ленивая ты сука![/say]")
 
-		addButton("Continue", "See what happens next", "lock_leo")
+		addButton("Продолжить", "Смотреть, что будет дальше", "lock_leo")
 	if(state == "lock_leo"):
 		addCharacter("psmilkguy")
 		playAnimation(StageScene.Duo, "stand", {pc="psmilka", npc="psmilkguy"})
 		aimCameraAndSetLocName("pscafe_field2")
-		saynn("Leo quickly rushes down to the basement.")
+		saynn("Лео быстро срывается вниз, в подвал.")
 
-		saynn("[say=psmilkguy]Why is the door broken?[/say]")
+		saynn("[say=psmilkguy]Почему дверь сломана?[/say]")
 
-		saynn("[say=psmilkgirl]That's because this dumb bitch broke it.[/say]")
+		saynn("[say=psmilkgirl]Это потому, что эта тупая сучка её разнесла.[/say]")
 
-		saynn("Milka puts on her big puppy eyes, her arms squeezing her breasts.")
+		saynn("Милка строит глазки, как преданный щенок, при этом сжимая руками свою грудь.")
 
-		saynn("[say=psmilka]Moo?..[/say]")
+		saynn("[say=psmilka]Му-у?..[/say]")
 
-		saynn("[say=psmilkgirl]She completely lost her mind by now it seems. Whatever. Hit her with the pain stick. As hard as your tiny balls will let you.[/say]")
+		saynn("[say=psmilkgirl]Похоже, она окончательно съехала с катушек. Ну и хрен с ней. Хлопни её электрошокером. Насколько хватит твоих крошечных яиц.[/say]")
 
-		saynn("Milka shivers when hearing that, she keeps backing away, now stepping onto the grass of the small garden.")
+		saynn("Услышав это, Милка вздрагивает и продолжает пятиться, пока не наступает на траву в маленьком садике.")
 
-		saynn("[say=psmilka]Moo-o![/say]")
+		saynn("[say=psmilka]Му-у-у![/say]")
 
-		saynn("Leo pulls out his cattle prod.. but he deliberates.")
+		saynn("Лео достает электрошокер... но медлит.")
 
-		saynn("[say=psmilkguy]Are you sure, Sofie? I feel like she got the lesson already. Right, Milka?[/say]")
+		saynn("[say=psmilkguy]Ты уверена, Софи? Мне кажется, урок она уже усвоила. Правда, Милка?[/say]")
 
-		saynn("The puppy nods eagerly.")
+		saynn("Щенок нетерпеливо кивает.")
 
-		saynn("[say=psmilkgirl]Hit her or give me the stick and go away already, I'm getting sick of your softness towards mindless animals.[/say]")
+		saynn("[say=psmilkgirl]Либо ударь её, либо отдай мне палку и проваливай, меня уже тошнит от твоей нежности к этим безмозглым животным.[/say]")
 
-		saynn("Leo squeezes the weapon tighter.")
+		saynn("Лео крепче сжимает оружие.")
 
-		saynn("[say=psmilkguy]You're right, Sofie. We gotta punish her.[/say]")
+		saynn("[say=psmilkguy]Ты права, Софи. Её нужно наказать.[/say]")
 
-		saynn("Milka backs herself into a corner.. and moos sadly.. while Leo is approaching her.. and Sofie is watching from behind.")
+		saynn("Милка забивается в угол и печально мычит... пока Лео приближается к ней... а Софи наблюдает из-за спины.")
 
-		saynn("[say=psmilka]Moo-o..[/say]")
+		saynn("[say=psmilka]Му-у-у...[/say]")
 
-		saynn("Leo raises the cattle prod..")
+		saynn("Лео заносит электрошокер...")
 
-		saynn("You gesture to Pip..")
+		saynn("Вы жестом подзываете Пипа...")
 
-		addButton("Continue", "See what happens next", "lock_ambush")
+		addButton("Продолжить", "Смотреть, что будет дальше", "lock_ambush")
 	if(state == "lock_ambush"):
 		playAnimation(StageScene.SexCowgirlChoke, "tease", {pc="psmilkgirl", npc="pspip"})
-		saynn("Pip sneaks up behind Sofie and yanks on her hair, bringing her down to the floor and pinning her in place.")
+		saynn("Пип подкрадывается к Софи со спины, дергает её за волосы, валит на пол и прижимает к нему.")
 
-		saynn("[say=psmilkgirl]ARGH-H! YOU BITCH![/say]")
+		saynn("[say=psmilkgirl]АААГХ! СУКА![/say]")
 
-		saynn("[say=pspip]Got you.[/say]")
+		saynn("[say=pspip]Попалась.[/say]")
 
-		saynn("Leo turns around.. and sees her partner in trouble.")
+		saynn("Лео оборачивается... и видит, что его партнер в беде.")
 
-		addButton("Continue", "See what happens next", "lock_maybefight")
+		addButton("Продолжить", "Смотреть, что будет дальше", "lock_maybefight")
 	if(state == "lock_maybefight"):
 		playAnimation(StageScene.Duo, "stand", {npc="psmilkguy"})
-		saynn("You step out and stand between Leo and Sofie, blocking the path.")
+		saynn("Ты выходишь вперед и встаешь между Лео и Софи, преграждая путь.")
 
-		saynn("[say=pc]What are you gonna do without your girl now?[/say]")
+		saynn("[say=pc]И что ты теперь будешь делать без своей девки?[/say]")
 
-		saynn("Sofie is trying to break free.. but Pip seems to be strong enough to hold her.")
+		saynn("Софи пытается вырваться... но Пип, похоже, достаточно силен, чтобы удерживать её.")
 
-		saynn("[say=psmilkgirl]LEO! GET THIS FUCKER OFF ME! SHOCK HIS FUCKING BALLS OFF![/say]")
+		saynn("[say=psmilkgirl]ЛЕО! СБРОСЬ С МЕНЯ ЭТОГО УБЛЮДКА! УДАРИТЬ ЕГО, БЛЯТЬ, ТОКОМ ПРЯМО ПО ЯЙЦАМ![/say]")
 
-		saynn("Leo's eyes go wide, he squeezes his cattle prod like it's his last hope, switching it to its most painful setting.")
+		saynn("Глаза Лео расширяются; он сжимает электрошокер как свою последнюю надежду, выставляя на самый болезненный режим.")
 
-		saynn("[say=psmilkguy]Let go of her! This will hurt a lot.[/say]")
+		saynn("[say=psmilkguy]Отпусти её! Будет очень больно.[/say]")
 
-		saynn("And since you're naked, you can't even block it. Still, you raise your clenched fists, preparing for a fight.")
+		saynn("И раз уж ты голая, прикрыться тебе нечем. Тем не менее, ты сжимаешь кулаки, готовясь к драке.")
 
-		saynn("[say=pc]Try and hit me then.[/say]")
+		saynn("[say=pc]Ну давай, попробуй попади![/say]")
 
-		saynn("He furrows his brows.. and starts approaching you, his weapon creating scary sparks.")
+		saynn("Он хмурится... и начинает приближаться к тебе, а его оружие высекает пугающие искры.")
 
-		addButton("Continue", "See what happens next", "lock_milkasaves")
+		addButton("Продолжить", "Смотреть, что будет дальше", "lock_milkasaves")
 	if(state == "lock_milkasaves"):
 		playAnimation(StageScene.Duo, "defeat", {pc="psmilka", npc="psmilkguy", npcAction="stunbaton"})
-		saynn("Leo raises the cattle prod and swings his arm to strike you..")
+		saynn("Лео заносит электрошокер и замахивается, чтобы ударить тебя...")
 
-		saynn("But just before it connects with your skin, Milka suddenly gets into the way and takes the hit instead!")
+		saynn("Но прямо перед тем, как разряд коснется твоей кожи, Милка внезапно подставляется под удар вместо тебя!")
 
-		saynn("[say=psmilka]Ahh-hh!..[/say]")
+		saynn("[say=psmilka]А-а-ах!..[/say]")
 
-		saynn("She cries out from pain as she drops onto the floor, the shock making her body convulse, her every muscle has started spazzing uncontrollably.")
+		saynn("Она вскрикивает от боли и падает на пол; от шока её тело сотрясает конвульсия, а каждая мышца начинает неконтролируемо дергаться.")
 
-		saynn("While the guy is confused, you smack the weapon out of his hand and shove him down to the floor!")
+		saynn("Пока парень пребывает в замешательстве, ты выбиваешь оружие из его рук и впечатываешь его в пол!")
 
-		addButton("Continue", "See what happens next", "lock_tieup")
+		addButton("Продолжить", "Смотреть, что будет дальше", "lock_tieup")
 	if(state == "lock_tieup"):
 		playAnimation(StageScene.Hogtied, "idle", {pc="psmilkguy"})
-		saynn("You quickly go through his things and find some zip ties that you use to tie him up. You toss some to Pip and watch as he does the same with Sofie's wrists and ankles.")
+		saynn("Ты быстро обыскиваешь его вещи и находишь пластиковые стяжки, которыми тут же его связываешь. Ты кидаешь еще несколько штук Пипу и наблюдаешь, как он так же стягивает запястья и лодыжки Софи.")
 
-		saynn("[say=psmilkguy]Oh shit..[/say]")
+		saynn("[say=psmilkguy]Ох, блядь...[/say]")
 
-		saynn("[say=psmilkgirl]USELESS! ALL OF YOU! FUCK ME, I'VE NEVER SEEN ANYONE WHO IS MORE PATHETIC THAN YOU, LEO![/say]")
+		saynn("[say=psmilkgirl]БЕСПОЛЕЗНЫЕ! ВСЕ ВЫ! ТВОЮ МАТЬ, ЛЕО, Я ЕЩЕ НИКОГДА НЕ ВИДЕЛ НИКОГО БОЛЕЕ ЖАЛКОГО, ЧЕМ ТЫ![/say]")
 
-		saynn("You rush to Milka and check if she is okay.")
+		saynn("Ты бросаешься к Милке, чтобы проверить, всё ли с ней в порядке.")
 
-		saynn("[say=pc]Milka?..[/say]")
+		saynn("[say=pc]Милка?..[/say]")
 
-		saynn("[say=psmilka]..moo-o.. pain..[/say]")
+		saynn("[say=psmilka]..му-у-у.. больно..[/say]")
 
-		saynn("At least she is breathing. You hug the poor pup.. and notice that her breasts are leaking milk even from a slight pressure.")
+		saynn("По крайней мере, она дышит. Ты обнимаешь бедную малышку... и замечаешь, что её грудь протекает, стоит лишь слегка надавить.")
 
-		saynn("Milka catches some of her milk and laps it up.")
+		saynn("Милка слизывает немного своего молока.")
 
-		saynn("[say=psmilka]..strawberries.. that's so tasty.. hah.. ow..[/say]")
+		saynn("[say=psmilka]..клубничка.. так вкусно.. хах.. ой..[/say]")
 
-		saynn("The more she licks it.. the more her tail starts to wag. She then leans down and noms some grass from the field.")
+		saynn("Чем больше она его слизывает, тем сильнее начинает вилять хвостом. Затем она наклоняется и начинает щипать траву на поле.")
 
-		saynn("[say=psmilka]Moo..[/say]")
+		saynn("[say=psmilka]Му-у..[/say]")
 
-		saynn("Milka is hungry from so much stress. You find a snack in the guy's pockets and give it to her.")
+		saynn("Из-за сильного стресса Милка проголодалась. Ты находишь перекус в карманах парня и даёшь ей.")
 
-		saynn("[say=psmilka]Thank you-u-u-u!..[/say]")
+		saynn("[say=psmilka]Спасибо-о-о-о!..[/say]")
 
-		saynn("She sits down on her butt and starts snacking, already looking much more lively.")
+		saynn("Она плюхается на задницу и принимается за еду, выглядя уже куда более оживленной.")
 
-		saynn("[say=psmilkgirl]I WILL KILL ALL OF YOU, FUCKERS![/say]")
+		saynn("[say=psmilkgirl]Я ВСЕХ ВАС УБЬЮ, СУКИ![/say]")
 
-		saynn("Sofie receives a big smack on the ass from Pip.")
+		saynn("Пип отвешивает Софи мощный шлепок по заднице.")
 
-		saynn("[say=psmilkgirl]OWW![/say]")
+		saynn("[say=psmilkgirl]АЙ![/say]")
 
-		saynn("[say=pspip]Eat the grass if it hurts, slut.[/say]")
+		saynn("[say=pspip]Жри траву, если больно, шлюха.[/say]")
 
-		saynn("[say=psmilkgirl]FUCK YOU![/say]")
+		saynn("[say=psmilkgirl]ДА ПОШЕЛ ТЫ![/say]")
 
-		saynn("She is screaming.. but the walls are thick enough for her to not be heard outside. Their own basement is now working against them.")
+		saynn("Она кричит... но стены достаточно толстые, чтобы ее не было слышно снаружи. Их собственный подвал теперь работает против них.")
 
-		saynn("[say=psmilkguy]Welp.. Can we talk about it? We can discuss letting you go..[/say]")
+		saynn("[say=psmilkguy]Ну что ж... Может, поговорим об этом? Мы можем обсудить твое освобождение...[/say]")
 
-		saynn("Looks like.. both of the owners are defeated!")
+		saynn("Похоже... оба владельца повержены!")
 
-		saynn("[say=pc]Talk about letting us go? Suddenly, you want to do that? You didn't discuss with us if we're okay becoming your milking slaves.[/say]")
+		saynn("[say=pc]Обсудить наше освобождение? Вдруг ты решила об этом позаботиться? Вы ведь даже не спросили, согласны ли мы стать вашими дойными рабынями![/say]")
 
-		saynn("[say=psmilkgirl]WE ARE IN HUGE DEBT, YOU DUMB FUCK! WE HAD TO DO IT![/say]")
+		saynn("[say=psmilkgirl]МЫ В ОГРОМНЫХ ДОЛГАХ, ТЫ, ТУПАЯ СУКА! У НАС НЕ БЫЛО ВЫБОРА![/say]")
 
-		addButton("Continue", "See what happens next", "lock_choicesofie")
+		addButton("Продолжить", "Смотреть, что будет дальше", "lock_choicesofie")
 	if(state == "lock_choicesofie"):
 		playAnimation(StageScene.SexBehind, "tease", {pc="pspip", npc="psmilkgirl", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Sofie is still trying to struggle free so Pip forces her face into the floor instead, his hands stripping her clothes off.")
+		saynn("Софи всё ещё пытается вырваться, поэтому Пип силой вжимает её лицом в пол, попутно сдирая с неё одежду.")
 
-		saynn("[say=pspip]Hey.. how are we gonna punish this bitch?[/say]")
+		saynn("[say=pspip]Эй... и как мы будем наказывать эту сучку?[/say]")
 
-		saynn("[say=psmilkgirl]HANDS OFF.. GGRR.. F-Fuck you..[/say]")
+		saynn("[say=psmilkgirl]Руки прочь... гррр... Б-блядь тебя...[/say]")
 
-		saynn("[say=pspip]You thought you could break me. Maybe I should just break into your womb.[/say]")
+		saynn("[say=pspip]Думал, что сможешь меня сломить? Может, мне стоит самой вломиться в твою утробу?[/say]")
 
-		saynn("[say=psmilkgirl]WHAT? NEVER IN THE MILLION.. AGH..[/say]")
+		saynn("[say=psmilkgirl]ЧТО? НИ ЗА ЧЕРТА НА СВЕТЕ... АГХ...[/say]")
 
-		saynn("Her ass gets slapped firmly.. Pip's cock seems to be getting hard.")
+		saynn("Ей звонко шлепают по заднице... кажется, член Пипа начинает твердеть.")
 
-		saynn("[say=pc]Really? Right in front of her lover?[/say]")
+		saynn("[say=pc]Серьёзно? Прямо на глазах у её любовника?[/say]")
 
-		saynn("[say=psmilkguy]Uhh..[/say]")
+		saynn("[say=psmilkguy]Э-э...[/say]")
 
-		saynn("[say=psmilkgirl]IS THAT ALL YOU CAN SAY? Such a PATHETIC FUCKING MAN. Fine, BREED ME, stud. Make me feel like a woman at least ONCE in my life.[/say]")
+		saynn("[say=psmilkgirl]ЭТО ВСЁ, НА ЧТО ТЫ СПОСОБЕН? Какой ЖАЛКИЙ МУДАК. Ладно, ОСАДИ МЕНЯ, жеребец. Заставь меня почувствовать себя женщиной хотя бы РАЗ в жизни![/say]")
 
-		addButton("Let Pip breed", "Let Pip breed Sofie", "lock_sofie_breed")
-		addButton("Milking machine", "Hook Sofie up to a milking machine instead", "lock_sofie_milking")
+		addButton("Дать Пипу размножиться", "Дать Пипу трахнуть Софи", "lock_sofie_breed")
+		addButton("Доильный аппарат", "Вместо этого подключить Софи к доильному аппарату", "lock_sofie_milking")
 	if(state == "lock_sofie_breed"):
 		playAnimation(StageScene.SexMatingPress, "fast", {pc="pspip", npc="psmilkgirl", pcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You let Pip do it.. seems like a good way to let him get his revenge on her.")
+		saynn("Ты позволяешь Пипу сделать это... кажется, это отличный способ дать ему отомстить ей.")
 
-		saynn("He wastes no time, grabbing Sofie's legs and pinning them into her shoulders.. before plunging his flared horsecock down her snatch.")
+		saynn("Он не теряет времени: хватает Софи за ноги и прижимает их к её плечам... прежде чем вонзить свой раздутый лошадиный член в её щелку.")
 
-		saynn("[say=psmilkgirl]AHhh-h! Such a THICK COCK![/say]")
+		saynn("[say=psmilkgirl]Аххх-х! Какой ТОЛСТЫЙ ЧЛЕН![/say]")
 
-		saynn("Pip starts going at it, pounding the mouthy dragon girl into the ground, her pussy making wet noises as it gets stretched wide by the fat shaft again and again.")
+		saynn("Пип начинает вколачивать её, вбивая болтливую девочку-дракона в землю; её киска издает влажные звуки, когда толстый ствол раз за разом растягивает её до предела.")
 
-		saynn("[say=psmilkgirl]LOOK AT THIS, LOVER! This is how you FUCK A PUSSY! AH!..[/say]")
+		saynn("[say=psmilkgirl]СМОТРИ НА ЭТО, ЛЮБИМКА! Вот как надо ТРАХАТЬ ПИСЮ! АХ!..[/say]")
 
-		saynn("Slutty moans echo around the garden as Pip keeps thrusting inside, really enjoying ravaging that needy slit.")
+		saynn("По саду разносится похотливое стонание, пока Пип продолжает всаживаться в неё, по-настоящему наслаждаясь тем, как он разрывает эту жаждущую щель.")
 
-		saynn("Leo is just watching, rubbing his thighs against each other.")
+		saynn("Лео просто наблюдает, потирая бедра друг о друга.")
 
-		saynn("[say=psmilkguy]Sofie..[/say]")
+		saynn("[say=psmilkguy]Софи..[/say]")
 
-		saynn("It doesn't take long before Pip gets to his peak.. He shoves most of his shaft inside, creating a huge bump on Sofie's belly.. a bump that only starts to inflate more as the stud starts pumping her womb full of his virile seed.. wave after wave.")
+		saynn("Проходит совсем немного времени, и Пип достигает пика.. Он вгоняет почти весь свой член внутрь, создавая огромную выпуклость на животе Софи.. выпуклость, которая начинает раздуваться еще сильнее, когда самец начинает накачивать её утробу своим плодовитым семенем.. волна за волной.")
 
-		saynn("[say=psmilkgirl]AH-hhh.. My clenching pussy.. is milking your cock.. BREED ME! FEELS SO GOOD![/say]")
+		saynn("[say=psmilkgirl]Ах-ххх.. Моя сжимающаяся киска.. доит твой член.. ОСАДИ МЕНЯ! КАК ЖЕ ХОРОШО![/say]")
 
-		saynn("Pip is grunting.. as he drains his balls into the annoying bitch.. while Leo is squirming around on the floor.")
+		saynn("Пип кряхтит.. изливая всё содержимое своих яичек в эту бесячую сучку.. в то время как Лео корчится на полу.")
 
-		saynn("[say=psmilkgirl]Nh-h..[/say]")
+		saynn("[say=psmilkgirl]Нх-х..[/say]")
 
-		saynn("The girl has been dealt with..")
+		saynn("С девчонкой покончено..")
 
-		addButton("Continue", "See what happens next", "lock_choice_leo")
+		addButton("Продолжить", "Смотреть, что будет дальше", "lock_choice_leo")
 	if(state == "lock_choice_leo"):
 		playAnimation(StageScene.SexCowgirlAmazon, "tease", {pc="psmilkguy", npc="psmilka", bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Milka seems to have fully recovered by now.. She unties Leo.. just so she can also strip him of his clothes.")
+		saynn("Милка, похоже, к этому времени полностью восстановилась.. Она развязывает Лео.. только для того, чтобы заодно содрать с него одежду.")
 
-		saynn("[say=psmilka]Hey there, moo~.[/say]")
+		saynn("[say=psmilka]Ну привет, коровка~.[/say]")
 
-		saynn("[say=psmilkguy]Uh.. sorry for.. hitting you.[/say]")
+		saynn("[say=psmilkguy]Ох.. прости, что.. ударила тебя.[/say]")
 
-		saynn("Milka chuckles as she straddles him.")
+		saynn("Милка посмеивается, усаживаясь на него верхом.")
 
-		saynn("[say=psmilka]It's okay~. You can make up for it.[/say]")
+		saynn("[say=psmilka]Все в порядке~. Ты еще сможешь это исправить.[/say]")
 
-		saynn("Sofie is still panting heavily.. but she sees the things that are happening.")
+		saynn("Софи все еще тяжело дышит... но она видит всё, что происходит.")
 
-		saynn("[say=psmilkgirl]Hh.. H-hey! That's my husband! He is a limp-dick asshole.. but he is still mine![/say]")
+		saynn("[say=psmilkgirl]Хх.. Эй! Это мой муж! Он вялый козел.. но он всё равно мой![/say]")
 
-		saynn("Milka smiles as she sees Leo getting hard under her, his cock is brushing against her wet slit..")
+		saynn("Милка улыбается, видя, как Лео возбуждается под ней; его член касается её влажной щели...")
 
-		saynn("[say=psmilkguy]Uh.. Milka..[/say]")
+		saynn("[say=psmilkguy]Ох.. Милка..[/say]")
 
-		saynn("[say=psmilka]Tshhh~..[/say]")
+		saynn("[say=psmilka]Тшшш~..[/say]")
 
-		saynn("She looks at you for approval.")
+		saynn("Она ищет твоего одобрения.")
 
-		addButton("Let Milka ride", "Allow Milka to ride Leo's cock", "lock_milka_breed")
-		addButton("Milking machine", "Hook up Leo into a milking machine instead", "lock_leo_milk")
+		addButton("Дать Милке оседлать его", "Позволить Милке оседлать член Лео", "lock_milka_breed")
+		addButton("Доильный аппарат", "Подключить Лео к доильному аппарату вместо этого", "lock_leo_milk")
 	if(state == "lock_milka_breed"):
 		playAnimation(StageScene.SexCowgirlAmazon, "fast", {pc="psmilkguy", npc="psmilka", pcCum=true, bodyState={naked=true, hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("You decide to let Milka do what she wants to do.")
+		saynn("Вы решаете позволить Милке делать всё, что ей вздумается.")
 
-		saynn("She smiles.. then wraps her digits around Leo's ridged cock.. before guiding it down her pink slit as she lowers herself onto the tip.")
+		saynn("Она улыбается... затем обхватывает пальцами рельефный член Лео... и направляет его в свою розовую щель, медленно опускаясь на самый кончик.")
 
-		saynn("[say=psmilka]Mmh.. moo~.[/say]")
+		saynn("[say=psmilka]Ммм.. му~.[/say]")
 
-		saynn("Milka starts riding the guy.. bouncing up and down on his hard shaft, her big milky breasts jiggling in the process, swollen nips spawning little rivers of her milk..")
+		saynn("Милка начинает скакать на парне... подпрыгивая вверх-вниз на его твердом члене, при этом её огромные молочные груди колышутся, а из набухших сосков текут маленькие ручейки молока...")
 
-		saynn("[say=psmilkguy]Ah.. your pussy.. feels incredible..[/say]")
+		saynn("[say=psmilkguy]Ах.. твоя киска.. ощущается невероятно..[/say]")
 
-		saynn("[say=psmilka]Thank you~. Your cock feels great too![/say]")
+		saynn("[say=psmilka]Спасибо~. Твой член тоже просто супер![/say]")
 
-		saynn("[say=psmilkgirl]YOU DIDN'T EVEN ASK ME, ASSHOLE! I HOPE THAT CUNT IS WORTH IT! Hey!.. No-no-no![/say]")
+		saynn("[say=psmilkgirl]ТЫ ДАЖЕ НЕ СПРОСИЛ МЕНЯ, УБЛЮДОК! НАДЕЮСЬ, ЭТА ПИЗДА ТОГО СТОИТ! Эй!.. Нет-нет-нет![/say]")
 
-		saynn("You gesture to Pip to deal with the noisy bitch.. and so he does, gagging her mouth.")
+		saynn("Вы жестом указываете Пипу разобраться с шумной сукой... и он делает это, затыкая ей рот.")
 
-		saynn("[say=psmilkgirl]MHH-hhh! Mhhh..[/say]")
+		saynn("[say=psmilkgirl]МХХ-ххх! Мххх..[/say]")
 
-		saynn("Milka chuckles as Leo reaches his hand out to cup and grope Milka's full tits.")
+		saynn("Милка посмеивается, когда Лео протягивает руку, чтобы обхватить и начать тискать её полные груди.")
 
-		saynn("[say=psmilka]I'm a good cow, right~?[/say]")
+		saynn("[say=psmilka]Я ведь хорошая коровка, да~?[/say]")
 
-		saynn("[say=psmilkguy]Best one I ever knew.. mhh..[/say]")
+		saynn("[say=psmilkguy]Лучшая из всех, что я знал... ммм...[/say]")
 
-		saynn("Leo throws his head back and moans more as Milka increases the pace, riding him harder, her pussy eagerly swallowing his knotted cock, coating it with her juices.")
+		saynn("Лео запрокидывает голову и стонет всё громче, пока Милка ускоряет темп, насаживаясь на него всё сильнее; её киска жадно заглатывает его разбухший член, обильно смазывая его своими соками.")
 
-		saynn("[say=psmilkguy]Milka.. I.. I'm.. ah-..[/say]")
+		saynn("[say=psmilkguy]Милка... я... я сейчас... ах!..[/say]")
 
-		saynn("[say=psmilka]Breed me~. Moo-o~..[/say]")
+		saynn("[say=psmilka]Оплодотвори меня~. Му-у-у~..[/say]")
 
-		saynn("It doesn't take long before Milka gets what she wants. Leo's balls tense up as his member starts throbbing inside the pup, filling her up with his thick seed.. stuffing more and more into her.")
+		saynn("Вскоре Милка получает то, чего хотела. Яички Лео напрягаются, когда его член начинает пульсировать внутри щели, наполняя её густым семенем... вливая всё больше и больше в неё.")
 
-		saynn("[say=psmilkguy]Nghh-..[/say]")
+		saynn("[say=psmilkguy]Нгхх!..[/say]")
 
-		saynn("All the while, Sofie is forced to watch how her husband is breeding one of her slaves.")
+		saynn("И всё это время Софи вынуждена смотреть, как её муж трахает одну из её рабынь.")
 
-		saynn("[say=psmilka]Pump this pussy full.. good..[/say]")
+		saynn("[say=psmilka]Накачай эту киску до краев... хорош...[/say]")
 
-		saynn("[say=psmilkgirl]Grrr..[/say]")
+		saynn("[say=psmilkgirl]Гррр!..[/say]")
 
-		saynn("And now the guy is handled too. Time to make your escape!")
+		saynn("Теперь и с парнем покончено. Пора сваливать!")
 
-		addButton("Continue", "See what happens next", "lock_about_to_escape")
+		addButton("Продолжить", "Смотреть, что будет дальше", "lock_about_to_escape")
 	if(state == "lock_about_to_escape"):
 		removeCharacter("psmilkguy")
 		removeCharacter("psmilkgirl")
 		aimCameraAndSetLocName("pscafe_docks")
 		playAnimation(StageScene.Duo, "stand", {pc="psmilka", npc="pspip"})
-		saynn("You sneak up through the cafe's seating area and get into the docks, all three of you.")
+		saynn("Вы втроем прокрадываетесь через обеденную зону кафе и выбираетесь к докам.")
 
-		saynn("[say=pc]Well.. what now?[/say]")
+		saynn("[say=pc]Ну.. и что теперь?[/say]")
 
-		saynn("[say=pspip]I found some keys on the guy. I think they are for the shitty spacetruck that's over there.[/say]")
+		saynn("[say=pspip]Я нашел у него ключи. Похоже, от той дерьмовой грузовой тачки вон там.[/say]")
 
-		saynn("It's a real beater.. but it's better than nothing.")
+		saynn("Настоящая развалюха.. но это лучше, чем ничего.")
 
-		saynn("[say=pspip]Where do you wanna go, Milka?[/say]")
+		saynn("[say=pspip]Куда хочешь отправиться, Милка?[/say]")
 
-		saynn("[say=psmilka]Me?.. um.. my farm.[/say]")
+		saynn("[say=psmilka]Я?.. эм.. на мою ферму.[/say]")
 
-		saynn("[say=pspip]Alright. And where would that be?[/say]")
+		saynn("[say=pspip]Ладно. И где же она находится?[/say]")
 
-		saynn("[say=psmilka]I don't.. remember.. I don't remember much, I'm sorry. Not even my real name.[/say]")
+		saynn("[say=psmilka]Я не.. помню.. почти ничего не помню, прости. Даже своего настоящего имени.[/say]")
 
-		saynn("Pip nods.. while Milka's ears lower themselves.")
+		saynn("Пип кивает.. а у Милки опускаются ушки.")
 
-		saynn("[say=pspip]Huh. That makes things a bit complicated..[/say]")
+		saynn("[say=pspip]Хм. Это немного всё усложняет..[/say]")
 
-		saynn("[say=psmilka]I'm sorry..[/say]")
+		saynn("[say=psmilka]Прости..[/say]")
 
-		saynn("Pip pats Milka on the head.")
+		saynn("Пип гладит Милку по голове.")
 
-		saynn("[say=pspip]Don't be. I will help you, we will figure it out.[/say]")
+		saynn("[say=pspip]Не извиняйся. Я помогу тебе, мы во всём разберемся.[/say]")
 
-		saynn("Milka cheers up visibly, her tail wagging.")
+		saynn("Милка заметно приободрилась, её хвост завилял.")
 
-		saynn("[say=psmilka]Don't you have your own things that you have you do?[/say]")
+		saynn("[say=psmilka]А разве у тебя нет своих дел, которыми нужно заняться?[/say]")
 
-		saynn("[say=pspip]Ehh, they can wait.[/say]")
+		saynn("[say=pspip]Эх, они подождут.[/say]")
 
-		saynn("Milka nods. Pip turns towards you.")
+		saynn("Милка кивает. Пип поворачивается к тебе.")
 
-		saynn("[say=pspip]What about you?[/say]")
+		saynn("[say=pspip]А как насчет тебя?[/say]")
 
-		saynn("[say=pc]AlphaCorp is gonna be looking for me. I think I'm screwed either way.[/say]")
+		saynn("[say=pc]АльфаКорп будет меня искать. Думаю, в любом случае мне крышка.[/say]")
 
-		saynn("You tug on your collar.")
+		saynn("Ты дергаешь себя за воротник.")
 
-		saynn("[say=pspip]Yeah, looks like you are in a bigger pickle than my caged cock was.[/say]")
+		saynn("[say=pspip]Да уж, похоже, ты влип похлеще, чем мой запертый член.[/say]")
 
-		saynn("[say=psmilka]But your cock IS a big pickle~.[/say]")
+		saynn("[say=psmilka]Но твой член — это реально огромный огурчик~.[/say]")
 
-		saynn("[say=pspip]Milka..[/say]")
+		saynn("[say=pspip]Милка..[/say]")
 
-		saynn("She giggles and sticks her tongue out. Pip rolls his eyes and sighs.")
+		saynn("Она хихикает и высовывает язык. Пип закатывает глаза и вздыхает.")
 
-		saynn("[say=pspip]Brat.[/say]")
+		saynn("[say=pspip]Дрянь.[/say]")
 
-		addButton("Continue", "See what happens next", "lock_yadayada")
+		addButton("Продолжить", "Смотреть, что будет дальше", "lock_yadayada")
 	if(state == "lock_yadayada"):
 		removeCharacter("pspip")
 		removeCharacter("psmilka")
 		playAnimation(StageScene.Solo, "stand")
-		saynn("And so you ride the spacetruck with them until the first space station. That's where you part your ways and say your goodbyes.")
+		saynn("И вот вы едете в этом космотраке вместе с ними до первой космической станции. Там вы расходитесь и прощаетесь.")
 
-		saynn("It's a good thing that you did.. because soon after one of the AlphaCorp patrols catches you. You couldn't even hide anywhere.. it's like they knew where you were exactly.")
+		saynn("И хорошо, что вы это сделали... потому что вскоре вас перехватывает патруль АльфаКорп. Спрятаться было негде... они будто точно знали, где вы находитесь.")
 
-		addButton("Continue", "See what happens next", "lock_caught")
+		addButton("Продолжить", "Смотреть, что будет дальше", "lock_caught")
 	if(state == "lock_caught"):
 		playAnimation(StageScene.Solo, "sit")
 		aimCameraAndSetLocName("intro_interogation")
 		addCharacter("intro_detective")
-		saynn("Hours later.. and you're already sitting in a familiar chair.")
+		saynn("Прошло несколько часов... и вот вы уже сидите в знакомом кресле.")
 
-		saynn("[say=intro_detective]And so you're saying that you don't recall anything about what happened in the last few weeks? And why your collar tracking suddenly began working again?[/say]")
+		saynn("[say=intro_detective]Значит, вы утверждаете, что совершенно не помните, что происходило в последние несколько недель? И почему ваш ошейник-трекер внезапно снова заработал?[/say]")
 
-		saynn("Sterile lights irritate your eyes that long have forgotten how it feels.. to be in a well-lit room.")
+		saynn("Стерильный свет режет глаза, которые уже давно забыли, каково это — находиться в хорошо освещенном помещении.")
 
-		saynn("[say=pc]I don't remember it, yeah.[/say]")
+		saynn("[say=pc]Да, я ничего не помню.[/say]")
 
-		saynn("It'd be very easy to snitch on Leo and Sofie. But what's the point?")
+		saynn("Было бы очень легко настучать на Лео и Софи. Но какой в этом смысл?")
 
-		saynn("[say=intro_detective]Do you remember that you somehow managed to escape one of the most secure prisons in the galaxy?[/say]")
+		saynn("[say=intro_detective]Вы помните, что вам каким-то образом удалось сбежать из одной из самых охраняемых тюрем в галактике?[/say]")
 
-		saynn("[say=pc]Sorry, I just can't seem to remember.[/say]")
+		saynn("[say=pc]Простите, просто никак не получается вспомнить.[/say]")
 
-		saynn("He hums, tapping against the table with his pen. Then he leans a bit closer.")
+		saynn("Он напевает под нос, постукивая ручкой по столу. Затем наклоняется чуть ближе.")
 
-		saynn("[say=intro_detective]Helping me understand what happened is in our best interest. You're giving me nothing and that makes you seem like a bad person. You don't want the judges to think that you're a bad person, do you? Maybe you just made some mistakes, it's understandable. I can help you. But only if you help me first.[/say]")
+		saynn("[say=intro_detective]Помочь мне понять, что произошло — в ваших же интересах. Вы ничего мне не даете, и из-за этого кажетесь плохим человеком. Вы ведь не хотите, чтобы судьи сочли вас плохим человеком, верно? Может, вы просто совершили ошибки, это вполне объяснимо. Я могу помочь вам. Но только если вы сначала поможете мне.[/say]")
 
-		saynn("[say=pc]How long did you practice that one?[/say]")
+		saynn("[say=pc]И долго ты репетировал эту штуку?[/say]")
 
-		saynn("Jake tilts his head slightly at first.. but then his expression switches to a very mean one.")
+		saynn("Джейк сначала слегка наклоняет голову... но затем его лицо принимает крайне злобное выражение.")
 
-		addButton("Continue", "See what happens next", "in_bdcc")
+		addButton("Продолжить", "Смотреть, что будет дальше", "in_bdcc")
 	if(state == "lock_sofie_milking"):
 		aimCameraAndSetLocName("pscafe_cow")
 		playAnimation(StageScene.BDSMMachineFuck, "fastdouble", {pc="psmilkgirl", pcCum=true, bodyState={naked=true, hard=true, chains=[["hose", "breastpump", "scene", "milkIntake"]]}})
-		saynn("[say=pc]I think it's best we just give her a taste of her own medicine.[/say]")
+		saynn("[say=pc]Думаю, лучше всего будет дать ей попробовать её же лекарство.[/say]")
 
-		saynn("[say=pspip]I think I know what you are talking about.[/say]")
+		saynn("[say=pspip]Кажется, я понимаю, о чем ты говоришь.[/say]")
 
-		saynn("You and Pip pull Sofie onto the advanced milking machine and tightly secure her limbs, making her helpless while all her holes and her tits are nice and exposed.")
+		saynn("Вы с Пипом затаскиваете Софи на продвинутый доильный аппарат и крепко фиксируете её конечности, оставляя её беспомощной, в то время как все её дырочки и сиськи оказываются на виду.")
 
-		saynn("[say=psmilkgirl]What the fuck are you doing? Stop it![/say]")
+		saynn("[say=psmilkgirl]Какого хера вы творите? Прекратите![/say]")
 
-		saynn("You select the most.. intense.. mode.. and let the machine start its work.")
+		saynn("Вы выбираете самый.. интенсивный.. режим.. и позволяете машине приступить к работе.")
 
-		saynn("Two breast pumps get secured around Sofie's tits while two pre-lubed dildos slide dangerously close to her holes, pretty much kissing them.")
+		saynn("Два молокоотсоса плотно обхватывают сиськи Софи, а два заранее смазанных дилдо опасно приближаются к её дырочкам, едва не касаясь их.")
 
-		saynn("[say=psmilkgirl]Don't you dare.. AH![/say]")
+		saynn("[say=psmilkgirl]Только посмейте.. АХ![/say]")
 
-		saynn("Before she can even complain, her holes get forcibly stretched wide open by the tools. The machine proceeds to double-penetrate Sofie's pussy and ass while the pumps start sucking away at her tits, attempting to draw milk.. but fruitlessly so far.")
+		saynn("Прежде чем она успевает возмутиться, инструменты насильно растягивают её отверстия настежь. Машина начинает двойное проникновение в киску и задницу Софи, в то время как молокоотсосы начинают сосать её грудь, пытаясь выжать молоко.. но пока безрезультатно.")
 
-		saynn("[say=psmilkgirl]I'M NOT A FUCKING COW!.. AH-h.. F-fuck!..[/say]")
+		saynn("[say=psmilkgirl]Я вам не гребаная корова!.. АХ-х.. Бля!..[/say]")
 
-		saynn("Milka brings Leo near so he can watch as her partner gets fucked and milked at the same time.")
+		saynn("Милка подводит Лео поближе, чтобы он мог наблюдать за тем, как её партнершу ебут и доят одновременно.")
 
-		saynn("[say=psmilkguy]That's pretty hot..[/say]")
+		saynn("[say=psmilkguy]Это чертовски горячо..[/say]")
 
-		saynn("It doesn't take long before Sofie throws her head back and lets out a cry of passion, her helpless body thrashes against the manipulators while the machine just keeps stimulating her everywhere.")
+		saynn("Проходит совсем немного времени, прежде чем Софи запрокидывает голову и издает страстный крик; ее беспомощное тело бьется в руках манипуляторов, пока машина продолжает стимулировать её повсюду.")
 
-		saynn("[say=psmilkgirl]MHHh.h.. hhh-h.. ah.. Fuck you.. ah..[/say]")
+		saynn("[say=psmilkgirl]М-ммхх.. ххх-хх.. ах.. Сука.. ах..[/say]")
 
-		saynn("Orgasm after orgasm, the mean bitch is slowly loses touch with reality from the constant fucking. Her nips become hard and swollen from getting pumped so much.")
+		saynn("Оргазм за оргазмом, эта стерва медленно теряет связь с реальностью от непрекращающегося траха. Её соски становятся твердыми и распухшими от постоянного нагнетания.")
 
-		saynn("[say=psmilkgirl]S-Stop.. T-This.. I'm N-Not.. A.. C-Cow..[/say]")
+		saynn("[say=psmilkgirl]П-прекрати.. Э-это.. Я н-не.. к-корова..[/say]")
 
-		saynn("Her body betrays her. Suddenly, her nips start squirting with milk! Multiple little rivers spawn from her enlarged buds, flowing down along her areolas before getting collected by the pumps.")
+		saynn("Тело предает её. Внезапно из её сосков начинает хлестать молоко! Множество маленьких струек бьют из набухших бутонов, стекая по ареолам, прежде чем их подхватывают насосы.")
 
-		saynn("[say=pspip]I think the customers will enjoy today's milkshakes a lot.[/say]")
+		saynn("[say=pspip]Думаю, клиентам сегодняшний молочный коктейль очень понравится.[/say]")
 
-		saynn("[say=psmilka]Or ice cream![/say]")
+		saynn("[say=psmilka]Или мороженое![/say]")
 
-		saynn("Sofie moans into the air while her tired body gets milked and her pussy and ass get stuffed again and again.")
+		saynn("Софи стонет в пустоту, пока её изможденное тело доят, а её киску и задницу раз за разом набивают.")
 
-		saynn("[say=pc]Ice cream?[/say]")
+		saynn("[say=pc]Мороженое?[/say]")
 
-		saynn("[say=psmilka]Yeah! Or cheese.[/say]")
+		saynn("[say=psmilka]Ага! Или сыр.[/say]")
 
-		saynn("Thinking about breastmilk cheese.. makes you feel uneasy.")
+		saynn("Мысли о сыре из грудного молока... заставляют почувствовать легкое беспокойство.")
 
-		saynn("Soon, the machine begins to slow down.. Pip helps unlock her. As soon as Sofie steps onto the floor, she just collapses, from exhaustion.")
+		saynn("Вскоре машина начинает замедляться... Пип помогает её освободить. Как только Софи ступает на пол, она просто валится с ног от изнеможения.")
 
-		saynn("[say=psmilkgirl]Nh-h..[/say]")
+		saynn("[say=psmilkgirl]Нх-х..[/say]")
 
-		saynn("The girl has been dealt with..")
+		saynn("С девчонкой покончено..")
 
-		addButton("Continue", "See what happens next", "lock_choice_leo")
+		addButton("Продолжить", "Смотреть, что будет дальше", "lock_choice_leo")
 	if(state == "lock_leo_milk"):
 		playAnimation(StageScene.BDSMMachineAltFuck, "fast", {pc="psmilkguy", bodyState={naked=true, hard=true, chains=[["hose", "penisPump", "scene", "milkIntake"]]}})
 		aimCameraAndSetLocName("pscafe_bull")
-		saynn("[say=pc]Why don't we treat him the way he was treating us?[/say]")
+		saynn("[say=pc]Почему бы нам не обойтись с ним так же, как он обходился с нами?[/say]")
 
-		saynn("[say=psmilka]That works too![/say]")
+		saynn("[say=psmilka]Это тоже сработает![/say]")
 
-		saynn("You and Milka drag Leo onto an advanced milking machine and lock his legs and arms to it, exposing his tight tailhole and ridged knotted cock to its tools.")
+		saynn("Вы с Милкой затаскиваете Лео на продвинутую доильную машину и пристегиваете его руки и ноги, подставляя его тугой анус и ребристый узловатый член под её инструменты.")
 
-		saynn("Milka chooses the most intense milking mode available. And so, the machine springs into life, aligning one of its pre-lubed dildos with Leo's cute butthole. At the same time, another manipulator secures a penis pump around his half-hard member..")
+		saynn("Милка выбирает самый интенсивный режим дойки. И машина оживает, совмещая один из своих предварительно смазанных дилдо с милым задком Лео. В то же время другой манипулятор фиксирует пенисный насос вокруг его полуэрегированного члена...")
 
-		saynn("[say=psmilkguy]Wait.. Are you sure about.. Ah!..[/say]")
+		saynn("[say=psmilkguy]Погоди... Ты уверена насчет... А!..[/say]")
 
-		saynn("The dildo stretches Leo's asshole wide and slides inside, exploring him from the inside, quickly stumbling upon a little sensitive bump.. a bump that it proceeds to massage by fucking his ass!")
+		saynn("Дилдо широко растягивает анус Лео и входит внутрь, исследуя его, и быстро натыкается на маленькую чувствительную шишечку... шишечку, которую он начинает массировать, трахая его в зад!")
 
-		saynn("[say=psmilkguy]Mhh-h.. f-fuck.k..[/say]")
+		saynn("[say=psmilkguy]Ммм-х.. б-блядь...[/say]")
 
-		saynn("His cock gets fully hard in seconds.. before the penis pump engages too, sliding its soft pleasure ring along the ridged surface of his shaft.. up and down..")
+		saynn("Его член наливается полной твердостью за считанные секунды... прежде чем включается пенисный насос, скользя мягким кольцом для удовольствия по ребристой поверхности его ствола... вверх и вниз...")
 
-		saynn("The guy starts moaning.. a lot. His cute noises mix in well with the mechanical hum of the tools as they work on stimulating his prostate and his cock. The tip of his twitching member leaks more and more precum.. before suddenly shooting a thick line of seed! And then another! His cock is throbbing as the pump works hard, milking the rest of his load out and then collecting it.")
+		saynn("Парень начинает стонать... причём долго и громко. Его милые звуки отлично смешиваются с механическим гулом инструментов, которые вовсю стимулируют его простату и член. Кончик его подергивающегося достоинства всё сильнее сочится предэякулятом... пока внезапно не выстреливает густой струёй семени! А затем ещё одной! Его член пульсирует, пока насос усердно работает, выкачивая остатки его порции и собирая её.")
 
-		saynn("[say=psmilkguy]Ahh-h.. T-that feels too good..[/say]")
+		saynn("[say=psmilkguy]Ааахх.. Э-это слишком приятно..[/say]")
 
-		saynn("[say=psmilkgirl]BECAUSE I MARRIED A FUCKING BOTTOM![/say]")
+		saynn("[say=psmilkgirl]ПОТОМУ ЧТО Я ЖЕНАТ НА ЕБУЧЕМ БОТТОМЕ![/say]")
 
-		saynn("Pip quickly gags her mouth with her own panties.")
+		saynn("Пип быстро затыкает себе рот собственными трусиками.")
 
-		saynn("[say=psmilkgirl]MHHhh-hh!.. hhh-hm..[/say]")
+		saynn("[say=psmilkgirl]МХХхх-хх!.. ххх-мм..[/say]")
 
-		saynn("[say=pspip]There is nothing wrong with a bottom, miss. Look at him go.[/say]")
+		saynn("[say=pspip]В боттомах нет ничего плохого, мисс. Посмотрите, как он старается.[/say]")
 
-		saynn("Leo cums again, throwing his head back and moaning as his cock throbs and shoots more of these beautiful strings of seed, stuffing the pump's reservoir. Even between the orgasms, his cock is constantly leaking something.. his prostate is getting smashed hard by the machine.")
+		saynn("Лео снова кончает, запрокидывая голову и стоная, пока его член пульсирует и выбрасывает новые прекрасные струи семени, наполняя резервуар насоса. Даже в перерывах между оргазмами его член постоянно что-то сочится... машина вовсю вколачивается в его простату.")
 
-		saynn("[say=psmilka]The cupcakes today are gonna be extra creamy![/say]")
+		saynn("[say=psmilka]Сегодня капкейки будут особенно кремовыми![/say]")
 
-		saynn("[say=pspip]Customers will certainly want more.[/say]")
+		saynn("[say=pspip]Клиенты точно захотят добавки.[/say]")
 
-		saynn("[say=psmilkgirl]Grrr..[/say]")
+		saynn("[say=psmilkgirl]Гррр!..[/say]")
 
-		saynn("The dildo keeps pounding Leo's ass.. but each orgasm draws out less and less seed from him.. until his balls are left completely dry.")
+		saynn("Дильдо продолжает долбить Лео в задницу... но с каждым оргазмом из него выходит всё меньше и меньше семени... пока его яйца не остаются совершенно сухими.")
 
-		saynn("That's when you turn off the machine and let him rest. Now the guy is handled too. Time to make your escape!")
+		saynn("И вот ты выключаешь аппарат и даешь ему отдохнуть. Теперь и с этим парнем покончено. Пора совершать побег!")
 
-		addButton("Continue", "See what happens next", "lock_about_to_escape")
+		addButton("Продолжить", "Смотреть, что будет дальше", "lock_about_to_escape")
 
 
 func _react(_action: String, _args):

@@ -20,37 +20,37 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
 
 		var npc:BaseCharacter = GlobalRegistry.getCharacter(npcID)
-		saynn("You heavily damaged {npc.name}'s spirit. But that's only the first step. Now you have to kidnap {npc.him} into your cell where you can truly break {npc.him} and make {npc.him} your slave.")
+		saynn("Вы сильно подорвали дух {npc.name}. Но это лишь первый шаг. Теперь вам нужно похитить {npc.him} и затащить в свою камеру, где вы сможете окончательно сломить {npc.him} и сделать {npc.him} своей рабыней.")
 		
-		saynn("Are you sure you want to kidnap {npc.name}?")
+		saynn("Вы уверены, что хотите похитить {npc.name}?")
 		
 		if(npc.getInventory().hasEquippedItemWithTag(ItemTag.AllowsEnslaving)):
 			if(getModule("NpcSlaveryModule").hasFreeSpaceToEnslave()):
 				
 				if(npc.hasEnslaveQuest()):
-					addButton("Do it", "Go through with it", "do_kidnap")
+					addButton("Сделай это", "Сделать это", "do_kidnap")
 				else:
-					saynn("What kind of slave do you want {npc.him} to be?")
+					saynn("Каким рабом ты хочешь видеть {npc.him}?")
 					
 					for slaveTypeID in GlobalRegistry.getSlaveTypes():
 						var theSlaveType:SlaveTypeBase = GlobalRegistry.getSlaveType(slaveTypeID)
 						if(!theSlaveType.canEnslaveAs()):
 							continue
 						if(!theSlaveType.canTeach(getCharacter(npcID))):
-							addDisabledButton(theSlaveType.getVisibleName(), "[color=red]Incompatible with this slave[/color]\n"+theSlaveType.getVisibleDesc())
+							addDisabledButton(theSlaveType.getVisibleName(), "[color=red]Несовместимо с этой рабыней[/color]\n"+theSlaveType.getVisibleDesc())
 							continue
 						addButton(theSlaveType.getVisibleName(), theSlaveType.getVisibleDesc(), "do_kidnap", [slaveTypeID])
 					
 			else:
-				addDisabledButton("Do it", "You don't have enough space in your cell to store them")
+				addDisabledButton("Сделай это", "В вашей камере недостаточно места, чтобы пристроить их")
 		else:
-			addDisabledButton("Do it", "They aren't wearing a collar! You can't kidnap people if you can't leash them")
-		addButton("CANCEL", "You changed your mind", "endthescene")
+			addDisabledButton("Сделай это", "На них нет ошейника! Нельзя похищать людей, если их нельзя посадить на поводок")
+		addButton("CANCEL", "Вы передумали", "endthescene")
 		
 	if(state == "do_kidnap"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID, npcAction="hurt", npcBodyState={leashedBy="pc"}})
 		
-		saynn("{npc.name} is resisting but you just about manage to click a leash to {npc.his} collar!")
+		saynn("{npc.name} сопротивляется, но вам почти удается защелкнуть поводок на ошейнике {npc.his}!")
 		
 		var npc = GlobalRegistry.getCharacter(npcID)
 		var personality:Personality = npc.getPersonality()
@@ -89,16 +89,16 @@ func _run():
 				"What's happening? Where are you taking me? I don't even know you! Let me go, please!",
 			])+"[/say]")
 		
-		saynn("Time to bring {npc.him} back to your cell..")
+		saynn("Пора возвращать {npc.him} в вашу камеру...")
 		
-		addButton("Bring to cell", "Store your slave", "bring_cell")
+		addButton("Притащить в камеру", "Пристроить раба", "bring_cell")
 	
 	if(state == "bring_cell"):
 		aimCameraAndSetLocName(GM.pc.getCellLocation())
 		GM.pc.setLocation(GM.pc.getCellLocation())
 		playAnimation(StageScene.Duo, "stand", {npc=npcID, npcBodyState={chains=[["normal", "neck", "scene", "floor"]]} })
 		
-		saynn("Despite {npc.his} resistance, you bring {npc.name} to your cell and then chain {npc.him} to the floor.")
+		saynn("Несмотря на сопротивление {npc.his}, вы притаскиваете {npc.name} в свою камеру и приковываете {npc.him} цепью к полу.")
 		
 		var npc = GlobalRegistry.getCharacter(npcID)
 		var personality:Personality = npc.getPersonality()
@@ -137,9 +137,9 @@ func _run():
 				"Uh, this isn't right.",
 			])+"[/say]")
 		
-		saynn("Now {npc.he} belongs to you! You just gotta make sure {npc.he} doesn't escape.")
+		saynn("Теперь {npc.he} принадлежит тебе! Главное — следи, чтобы {npc.he} не сбежала.")
 		
-		addButton("Continue", "Great job", "endthescene")
+		addButton("Продолжить", "Отличная работа", "endthescene")
 		
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

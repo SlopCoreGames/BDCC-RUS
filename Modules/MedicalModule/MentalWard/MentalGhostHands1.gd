@@ -8,49 +8,49 @@ func _run():
 		addCharacter("eliza")
 		
 	if(state == ""):
-		saynn("Eliza steps into your cell, looking official, as usual. She casually drinks some coffee while looking at her tablet, not even paying much attention to you yet. After reading something for a bit she finally looks at you.")
+		saynn("Элиза входит в твою камеру, как обычно, с самым официальным видом. Она небрежно потягивает кофе, глядя в планшет и пока почти не обращая на тебя внимания. Немного поводив глазами по тексту, она наконец переводит взгляд на тебя.")
 
-		saynn("[say=eliza]Oh, I have a great one for you. We need to test a new drug. Apparently it has a side effect of causing partial blindness. But we need more data to figure out what ‘partial’ means.[/say]")
+		saynn("[say=eliza]О, у меня есть для тебя кое-что интересное. Нам нужно протестировать новый препарат. Судя по всему, у него есть побочка — частичная слепота. Но нам нужно больше данных, чтобы понять, что именно подразумевается под «частичной».[/say]")
 
-		addButton("Blind?", "Question the safety of such drug", "blind?")
-		addButton("Obey", "(Behavior+) Let the doctor know that you agree to anything", "obey")
+		addButton("Слепота?", "Подвергнуть сомнению безопасность препарата", "blind?")
+		addButton("Повиноваться", "(Поведение+) Дать понять врачу, что ты согласен на всё", "obey")
 
 
 	if(state == "blind?"):
-		saynn("[say=pc]Blindness? I don’t wanna be blind, can’t you test it on someone else.[/say]")
+		saynn("[say=pc]Слепота? Я не хочу ослепнуть, может, протестируете это на ком-нибудь другом?[/say]")
 
-		saynn("Eliza sips more coffee out of her personal mug and fixes her reading glasses before getting closer to you and reaching her paw out to ruffle the hair.")
+		saynn("Элиза делает еще глоток кофе из своей личной кружки и поправляет очки для чтения, прежде чем подойти ближе и протянуть лапу, чтобы взъерошить твои волосы.")
 
 		# (if low behaviour)
 		if(getModuleFlag("MedicalModule", "Mental_PCBehavior", 0.0) <= 0.4):
-			saynn("[say=eliza]Your behavior so far wasn’t the best, patient. I’d suggest you to be a good test subject and let others decide what should and should not be done.[/say]")
+			saynn("[say=eliza]Твое поведение до сих пор было не самым лучшим, пациент. Я бы посоветовала тебе быть послушным подопытным и позволить другим решать, что стоит делать, а что нет.[/say]")
 
-			saynn("You feel strictness in her voice, the doctor is being quite serious. Though, after seeing your suppressed look, a cunning smile returns to her face.")
+			saynn("В её голосе чувствуется строгость — доктор настроена весьма серьезно. Однако, заметив твой подавленный вид, она снова расплывается в лукавой улыбке.")
 
 		# (if high behaviour)
 		else:
-			saynn("[say=eliza]Hmm. It says the effect is temporary. You should be fine, cutie pie.[/say]")
+			saynn("[say=eliza]Хм. Тут сказано, что эффект временный. С тобой всё будет в порядке, милашка.[/say]")
 
-			saynn("The doctor is quite kind to you. Although you still feel some cunning tones in her speech, is she being honest or just trying to calm you down.")
+			saynn("Доктор весьма добра к тебе. Хотя в её речи всё ещё слышны лукавые нотки, говорит ли она правду или просто пытается тебя успокоить?")
 
-		saynn("[say=eliza]No other questions? Good, let me prepare you.[/say]")
+		saynn("[say=eliza]Больше никаких вопросов? Хорошо, тогда давай подготовим тебя.[/say]")
 
-		saynn("Eliza puts out a loud chain leash and clips it to your collar before tugging you out the cell.")
+		saynn("Элиза достаёт длинный цепной поводок, пристегивает его к твоему ошейнику и вытягивает тебя из камеры.")
 
-		addButton("Follow", "See where she brings you", "follow")
+		addButton("Следовать", "Посмотреть, куда она тебя приведет", "follow")
 
 	if(state == "obey"):
-		saynn("You don’t question the legality or safety of such drugs and just tilt your head down, showing your submissive side.")
+		saynn("Ты не ставишь под сомнение законность или безопасность таких препаратов, а лишь склоняешь голову, демонстрируя свою покорность.")
 
-		saynn("[say=pc]Uh.. Yes, doctor Quinn. I’m here to be experimented on..[/say]")
+		saynn("[say=pc]Э-э... Да, доктор Куинн. Я здесь, чтобы стать подопытным...[/say]")
 
-		saynn("Eliza puts on a wide smile and pats you on the head.")
+		saynn("Элиза широко улыбается и ласково хлопает тебя по голове.")
 
-		saynn("[say=eliza]Great, that’s exactly what I wanna hear~. Do you even need sight if I’m just gonna walk you everywhere.[/say]")
+		saynn("[say=eliza]Прекрасно, именно это я и хотела услышать~. А нужно ли тебе зрение, если я и так буду водить тебя повсюду?[/say]")
 
-		saynn("Doctor puts the tablet away and produces a chain leash. You raise your chin, letting her leash you, before standing up and follow her steps like a good test subject.")
+		saynn("Доктор убирает планшет и достаёт цепной поводок. Ты вскидываешь подбородок, позволяя ей привязать себя, а затем встаёшь и послушно следуешь за ней, словно прилежный подопытный.")
 
-		addButton("Follow", "See where she brings you", "follow")
+		addButton("Следовать", "Посмотреть, куда она тебя приведет", "follow")
 
 #ACEPREGEXPAC - ghost hands scene 1, belly rubs
 
@@ -59,160 +59,160 @@ func _run():
 		aimCameraAndSetLocName("med_researchlab")
 		playAnimation(StageScene.Solo, "sit")
 
-		saynn("Eliza brings you into the lab and leashes you to the testing table. The leash is short enough for you not to be able to reach any equipment. You take a seat on the edge of the table and get cozy in your straitjacket while Eliza turns away and walks up to her chemistry station.")
+		saynn("Элиза приводит тебя в лабораторию и пристегивает поводком к исследовательскому столу. Поводок достаточно короткий, чтобы ты не мог дотянуться до оборудования. Ты усаживаешься на край стола, устраиваясь поудобнее в смирительной рубашке, пока Элиза отворачивается и подходит к своему химическому стенду.")
 
-		saynn("[say=eliza]Science is such a complicated field. Hard to find test subjects for. Hard to explain the importance. No one believes you until you solve all their problems.[/say]")
+		saynn("[say=eliza]Наука — такая сложная область. Трудно найти подопытных. Трудно объяснить её важность. Никто не верит тебе, пока ты не решишь все их проблемы.[/say]")
 
-		saynn("Eliza starts prepping, she puts on a respirator mask and some latex gloves. Then she grabs some vial with unknown black substance and mixes it with water and some powder inside another vial. Doctor then puts it into some machine that starts to spin the vials at a very fast speed.")
+		saynn("Элиза начинает подготовку: надевает респиратор и латексные перчатки. Затем она берет флакон с неизвестной черной субстанцией и смешивает его с водой и каким-то порошком в другом флаконе. После этого доктор помещает всё это в аппарат, который начинает вращать флаконы на огромной скорости.")
 
-		saynn("[say=eliza]Everything must be a business, everything must bring money. I’m here because it's fun, money is secondary. But I guess without money there wouldn’t be any science. And without science we wouldn’t be where we are today.[/say]")
+		saynn("[say=eliza]Всё должно быть бизнесом, всё должно приносить деньги. Я здесь, потому что это весело, а деньги — дело вторичное. Но, полагаю, без денег не было бы и науки. А без науки мы бы не достигли того, что имеем сегодня.[/say]")
 
-		saynn("You just nod to her ramblings and watch her carefully filling a syringe with the resulting gray fluid. Doctor makes sure there aren’t any bubbles before walking up to you. More concerns start to flood your mind.")
+		saynn("Вы просто киваете в ответ на её разглагольствования, внимательно наблюдая, как она наполняет шприц полученной серой жидкостью. Доктор проверяет, чтобы в шприце не осталось пузырьков воздуха, прежде чем подойти к вам. В голове начинают роиться тревожные мысли.")
 
-		saynn("[say=eliza]I’ve come a long way since blowing up my parent’s lab. Don’t be afraid~[/say]")
+		saynn("[say=eliza]С тех пор как я взорвала лабораторию своих родителей, я прошла долгий путь. Не бойся~[/say]")
 
-		saynn("She did what.")
+		saynn("Она сделала это.")
 
-		addButton("Get drugged", "Let her inject you and see what happens", "get_drugged")
+		addButton("Принять препарат", "Позволить ей сделать укол и посмотреть, что будет", "get_drugged")
 
 	if(state == "get_drugged"):
 		removeCharacter("eliza")
 		addCharacter("ghostHands")
 		
-		saynn("You close your eyes and feel the syringe needle piercing your skin just above the collar. Then you feel some pressure as the doctor starts injecting the unknown substance into your bloodstream.")
+		saynn("Вы закрываете глаза и чувствуете, как игла шприца пронзает кожу чуть выше ключицы. Затем вы ощущаете давление — доктор начинает вводить неизвестную субстанцию прямо в ваш кровоток.")
 
-		saynn("[say=eliza]Let me know if you feel something. Can open your eyes.[/say]")
+		saynn("[say=eliza]Дай знать, если что-то почувствуешь. Можешь открывать глаза.[/say]")
 
-		saynn("[say=pc]Sure..[/say]")
+		saynn("[say=pc]Конечно..[/say]")
 
-		saynn("You obey and slowly open your eyes. The doctor is not anywhere to be seen even though you swear she was there a second ago. You look around but all you see is the bright lab room and lots of equipment.")
+		saynn("Вы повинуетесь и медленно открываете глаза. Доктора нигде не видно, хотя вы клянетесь, что секунду назад она была здесь. Вы озираетесь по сторонам, но видите лишь ярко освещенную лабораторию и кучу оборудования.")
 
-		saynn("[say=pc]Uhh.. Doctor? Did I pass out?[/say]")
+		saynn("[say=pc]Э-э... Доктор? Я что, отключилась?[/say]")
 
-		saynn("[say=eliza]No, you didn’t.[/say]")
+		saynn("[say=eliza]Нет, не отключилась.[/say]")
 
-		saynn("The voice startles you. There was nothing strange about it instead for the fact that there is no one standing in the direction it came from. You squint at a white wall and see just that, a wall.")
+		saynn("Голос заставляет вас вздрогнуть. В нем не было ничего странного, если не считать того, что в том направлении никого не стоит. Вы щуритесь, глядя на белую стену, и видите лишь её — просто стену.")
 
-		saynn("[say=eliza]Very peculiar reaction~[/say]")
+		saynn("[say=eliza]Какая любопытная реакция~[/say]")
 
-		saynn("[say=pc]I can’t see you, doctor.[/say]")
+		saynn("[say=pc]Доктор, я вас не вижу.[/say]")
 
-		saynn("Slight panic settles into you, you frantically shake your head but can’t find the source of that voice.")
+		saynn("Легкая паника охватывает вас; вы лихорадочно трясете головой, пытаясь отыскать источник голоса.")
 
-		saynn("[say=eliza]Can you see yourself?[/say]")
+		saynn("[say=eliza]А себя ты видишь?[/say]")
 
-		saynn("You look down at yourself. Yeah, everything seems to be there. Your {pc.masc} body, your straitjacket,"+str(" your growing belly," if GM.pc.isVisiblyPregnant() else "")+" a chain leash, the testing table that you’re sitting on, everything.")
+		saynn("Вы опускаете взгляд на себя. Да, вроде всё на месте. Ваше {pc.masc} тело, смирительная рубашка,"+str(" your growing belly," if GM.pc.isVisiblyPregnant() else "")+"цепь-поводок, испытательный стол, на котором вы сидите — всё на месте.")
 
-		saynn("[b]Suddenly, a hand touches your chin[/b]. You jump, making the chain rattle, the hand is half-transparent, lacks any color, and is not attached to anything, just floating! And just as suddenly, the hand disappears into nothingness as it gets pulled away from you.")
+		saynn("[b]Внезапно чья-то рука касается вашего подбородка[/b]. Вы вздрагиваете, заставляя цепи загреметь; рука полупрозрачная, совершенно бесцветная и ни к чему не прикреплена — она просто парит в воздухе! И так же внезапно, как появилась, рука исчезает в небытии, словно её резко отдернули от вас.")
 
-		saynn("[say=pc]Uhhhh.. I might be seeing ghosts. One just touched me..[/say]")
+		saynn("[say=pc]Э-э-э... Кажется, мне мерещатся призраки. Один только что коснулся меня...[/say]")
 
-		saynn("You hear Eliza’s chuckle but you still can’t see her. As far as you’re concerned, you’re alone in this room.")
+		saynn("Вы слышите смешок Элизы, но всё равно не видите её. Насколько вы можете судить, в этой комнате вы одни.")
 
-		saynn("[say=eliza]Ghosts you say? Very interesting~. Let me conduct an experiment.[/say]")
+		saynn("[say=eliza]Призраки, говорите? Очень интересно~. Позвольте мне провести эксперимент.[/say]")
 
-		addButton("Continue", "Spooky", "continue")
+		addButton("Продолжить", "Жутко", "continue")
 
 	if(state == "continue"):
-		saynn("You sit still and try to stay calm as the ghost paw returns, now sliding over your cheek, caressing. At the same time, another ghostly paw materializes out of nothing and slides over the latex of your straitjacket before landing on your {pc.breasts}.")
+		saynn("Вы замираете, стараясь сохранять спокойствие, когда призрачная лапа возвращается — на этот раз она скользит по вашей щеке, лаская её. В то же время из ниоткуда материализуется вторая призрачная лапа: она скользит по латексу вашего смирительного костюма и опускается на вашу {pc.breasts}.")
 
-		saynn("[say=pc]Uhh.. Doctor?[/say]")
+		saynn("[say=pc]Э-э... Доктор?[/say]")
 
-		saynn("This time there is no response. Instead, the ghost paws get more eager. One of them slides over your lips and tries to invite itself in. Unsure of what to do, you slightly open your mouth and feel two transparent digits sneak inside and rest on your tongue. The sensations are quite strange even if somewhat arousing. The second paw boldy gropes your {pc.breasts} and tugs on the nipples before letting go, causing a pleasure spike. For being the ghost hands, these feel quite real.")
+		saynn("На этот раз ответа нет. Вместо этого призрачные лапы становятся настойчивее. Одна из них скользит по вашим губам, пытаясь пробраться внутрь. Не зная, что делать, вы слегка приоткрываете рот и чувствуете, как два прозрачных пальца проскальзывают внутрь и ложатся на ваш язык. Ощущения довольно странные, хотя и в чем-то возбуждающие. Вторая лапа нагло ощупывает вашу {pc.breasts} и дергает за соски, прежде чем отпустить, вызывая всплеск удовольствия. Несмотря на то, что это руки призрака, ощущаются они чертовски реально.")
 
-		saynn("[say=pc]Hh-h!..[/say]")
+		saynn("[say=pc]Ах-х!..[/say]")
 
-		saynn("The paw shushes you and wiggles its digits inside your mouth. Unsure why, you start suckling on them while the second ghost paw reaches down to your chastity belt and unlocking it, exposing more of your privates.")
+		saynn("Лапа приказывает тебе замолчать, шевеля пальцами у тебя во рту. Не понимая зачем, ты начинаешь сосать их, пока вторая призрачная лапа тянется к твоему девственнику, отпирает его и обнажает твои интимные места.")
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
 			if(GM.pc.isWearingChastityCage()):
-				saynn("Your {pc.cock} is already leaking precum after it was released. The ghost paw gets a hold of the balls and kneads them, causing you to let out a muffled moan and try to close your legs. The cage puts so much nice-feeling pressure on your shaft.")
+				saynn("Твой {pc.cock} уже сочится предэякулятом после того, как его освободили. Призрачная лапа обхватывает яички и разминает их, заставляя тебя издать приглушенный стон и попытаться свести ноги. Клетка создает такое приятное давление на твой член.")
 			else:
-				saynn("Your {pc.cock} swiftly springs up after it was released, already leaking precum. The ghost paw gets a hold of the balls and kneads them, causing you to let out a muffled moan and try to close your legs.")
+				saynn("Твой {pc.cock} стремительно вскакивает после освобождения, уже сочится предэякулятом. Призрачная лапа обхватывает яички и разминает их, заставляя тебя издать приглушенный стон и попытаться свести ноги.")
 
 			# (if cock and also pussy)
 			if(GM.pc.hasVagina()):
-				saynn("The paw also gives some attention to your hidden pussy, giving its folds a little rub and spreading it, showing off how much it drips arousal.")
+				saynn("Лапа также уделяет внимание твоей скрытой киске, слегка потирая складки и раздвигая их, демонстрируя, как сильно она течет от возбуждения.")
 
 		# (else if has pussy)
 		elif(GM.pc.hasVagina()):
-			saynn("Your pussy slit is looking wet and needy after it was released, dripping arousal onto the table. The ghost paw spreads its folds open and gives the clit a rub, causing you to let out a muffled moan and try to close your legs.")
+			saynn("Твоя щель выглядит мокрой и жаждущей после освобождения, капая возбуждением прямо на стол. Призрачная лапа раздвигает складки и трет клитор, заставляя тебя издать приглушенный стон и попытаться свести ноги.")
 
 		if(GM.pc.isHeavilyPregnant()):
-			saynn("The paw on your bits traces up over your hips and onto your very obvious pregnancy, feeling over it and massaging all strained and tender curves of your belly. You might've protested if it didnt feel kind of good. And if there weren't fingers in your mouth...")
+			saynn("Лапа, ласкавшая твои яйца, скользит выше по бедрам к твоему явному животу, ощупывая и массируя все натянутые и нежные изгибы твоего живота. Ты бы, возможно, и запротестовал, если бы это не было так приятно. И если бы во рту не было пальцев...")
 
-			saynn("Suddenly feeling the small twinges of movement in your tummy brings you back to what's happening. The paw massaging your gravid form freezes for a second as one of the kicks presses up against it. Once everything dies back down, you are free to receive more belly rubs...")
+			saynn("Внезапное ощущение легких толчков в животе возвращает вас к реальности. Лапа, массирующая ваше беременное тело, на секунду замирает, когда один из пинков упирается прямо в неё. Когда всё стихает, вы снова можете наслаждаться поглаживаниями живота...")
 
 		elif(GM.pc.isVisiblyPregnant()):
-			saynn("The paw on your bits traces up over your hips and onto your rounded out belly bringing attention your early pregnancy, rubbing down the side of your midriff before reaching down and feeling the weight of it. The paw entirely free to give you a belly rub...")
+			saynn("Лапа, ласкающая ваше хозяйство, скользит вверх по бедрам на округлившийся живот, привлекая внимание к вашей ранней беременности; она поглаживает бока, прежде чем спуститься ниже и ощутить его тяжесть. Теперь лапа полностью свободна, чтобы ласкать ваш живот...")
 
 		else:
-			saynn("The paw on your bits traces up over your hips and giving your midriff a rub, pressing into you as you feel the ghostly force behind it...")
+			saynn("Лапа, ласкающая ваше хозяйство, скользит вверх по бедрам, поглаживая живот и вдавливаясь в него, пока вы чувствуете призрачную силу, стоящую за этими движениями...")
 		
-		saynn("You have no idea what’s going on, the ghostly paws do whatever they want to your body and all you can do is squirm on the table and drop muffled moans. Suddenly you feel someone’s lips closing around your nipple and teasing it by squeezing between the fangs. You look down and find nothing, except for a pair of ghostly lips and the teeth.")
+		saynn("Вы понятия не имеете, что происходит: призрачные лапы творят с вашим телом всё, что им вздумается, а вам остается лишь извиваться на столе, издавая приглушенные стоны. Внезапно вы чувствуете, как чьи-то губы смыкаются вокруг вашего соска, дразня его и сжимая между клыками. Вы смотрите вниз и не видите ничего, кроме пары призрачных губ и зубов.")
 
 #Just because this is a preg expansion doesnt mean I can't add milky tits too
 #"Eliza" is the milking lady, she's gotta know how to suck on some tiddy
 #also I gotta lay off the amount of commas in my writing
 		if(GM.pc.canBeMilked()):
-			saynn("Your nipples respond to the ghastly mouth latched to them by leaking fresh milk directly into the semi-transparent maw. A nice surprise that is happily sucked down and disappeared before your eyes. Feeling the strange tongue graze and lap at one of your now swollen nubs stimulating more milk from it... The lips wrapping around your {pc.breasts} and drinking freely in large sucks that seem to stimulate you more than actually draw milk from you. ")
-			saynn("Detaching with a little pop the lips pull away. Not drawing enough milk to make your nipples sore and making all the leftovers run down your milky chest...")
+			saynn("Ваши соски реагируют на призрачный рот, вцепившийся в них, источая свежее молоко прямо в полупрозрачную пасть. Приятный сюрприз: молоко с удовольствием засасывается и исчезает на ваших глазах. Вы чувствуете, как странный язык скользит и облизывает один из ваших теперь уже набухших сосков, стимулируя выделение еще большего количества молока... Губы обхватывают ваш {pc.breasts} и жадно пьют крупными глотками, которые, кажется, больше возбуждают вас, чем просто выцеживают молоко.")
+			saynn("С легким чмокающим звуком губы отрываются от тебя. Сосков не хватает, чтобы они разболелись, но остатки молока стекают по твоей груди...")
 
-		saynn("[say=pc]Wh-h..a..[/say]")
+		saynn("[say=pc]О-ох..а..[/say]")
 
 		# (if cock)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("The paw gags you by sliding its digits in and out, forcing you to focus on sucking them. All the while the second paw wraps its digits around your chastity cage and starts tugging and pushing on it, attempting to stimulate your member.")
+			saynn("Лапа затыкает тебе рот, просовывая пальцы внутрь и наружу, заставляя сосредоточиться на сосании. Тем временем вторая лапа обхватывает твою девственную клетку и начинает дергать и давить на нее, пытаясь стимулировать твой член.")
 		elif(GM.pc.hasPenis()):
-			saynn("The paw gags you by sliding its digits in and out, forcing you to focus on sucking them. All the while the second paw wraps its digits around your shaft and starts stroking it.")
+			saynn("Лапа затыкает тебе рот, просовывая пальцы внутрь и наружу, заставляя сосредоточиться на сосании. Тем временем вторая лапа обхватывает твой член и начинает ласкать его.")
 
 		# (if pussy)
 		elif(GM.pc.hasVagina()):
-			saynn("The paw gags you by sliding its digits in and out, forcing you to focus on sucking them. All the while the second paw slides some digits into your sex and proceeds to finger you.")
+			saynn("Лапа затыкает тебе рот, просовывая пальцы внутрь и наружу, заставляя сосредоточиться на сосании. Тем временем вторая лапа просовывает пальцы в твою киску и начинает пальцевать тебя.")
 
-		saynn("The combined sensations are insane, you arch your back and let out more noises of pleasure. You feel like you won't be able to endure this for long. The ghostly paws and lips hear your noises and only increase their onslaught, eagerly pleasuring you and forcing you over your peak.")
+		saynn("Смесь ощущений просто безумна: ты выгибаешь спину, издавая всё больше стонов удовольствия. Кажется, ты долго так не выдержишь. Призрачные лапы и губы слышат твои звуки и лишь усиливают натиск, жадно доводя тебя до исступления и толкая за грань пика.")
 
-		addButton("Cum!", "This is so strange!", "cum!")
+		addButton("Кончай!", "Это так странно!", "cum!")
 
 	if(state == "cum!"):
-		saynn("You squirm and wiggle on the table uncontrollably while the paws keep you still. More moans escape from your mouth while a powerful orgasm overwhelms you.")
+		saynn("Ты беспорядочно ерзаешь и извиваешься на столе, пока лапы удерживают тебя на месте. Из твоего рта вырывается всё больше стонов, когда тебя накрывает мощнейший оргазм.")
 
 		# (if has cock)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("The paws feel your cock throbbing and just hold onto your chastity cage, letting your dick shoot many strings of your {pc.cum} through it all over the floor underneath.")
+			saynn("Лапы чувствуют, как пульсирует твой член, и просто сжимают твою девственную клетку, позволяя твоему достоинству выстреливать длинными струями {pc.cum} прямо сквозь неё на пол под тобой.")
 		elif(GM.pc.hasPenis()):
-			saynn("The paws feel your cock throbbing and switch to a very slow pace, letting your dick shoot many strings of your {pc.cum} all over the floor underneath without overstimulating it.")
+			saynn("Лапки чувствуют, как пульсирует твой член, и переходят на очень медленный темп, позволяя твоему достоинству выстреливать длинными струями {pc.cum} прямо на пол под тобой, не перестимулируя его слишком сильно.")
 
 		# (else if has pussy)
 		elif(GM.pc.hasVagina()):
-			saynn("The digits focus on your pleasure spot and hammer at it relentlessly, causing your slick pussy walls to start clenching around them. You squirt from so much stimulation, creating a little puddle of your femcum on the floor underneath.")
+			saynn("Пальцы сосредотачиваются на твоей эрогенной зоне и неумолимо вколачиваются в неё, заставляя влажные стенки твоей киски судорожно сжиматься вокруг них. От такой стимуляции тебя пробивает на сквирт, и на полу под тобой образуется небольшая лужица твоего фемкума.")
 
 		# (else)
 		else:
-			saynn("The orgasm is strong, you arch your back harder and can’t stop licking the digits in your mouth.")
+			saynn("Оргазм настолько мощный, что ты выгибаешь спину ещё сильнее и не можешь перестать слизывать пальцы у себя во рту.")
 
-		saynn("Many orgasmic waves later, you’re left a panting wet mess. All the paws and the ghostly lips disappear.")
+		saynn("Спустя множество оргазмических волн ты остаёшься лишь тяжело дышащей, мокрой кучей плоти. Все лапки и призрачные губы исчезают.")
 
-		saynn("[say=pc]Wha-a.. kh-h..[/say]")
+		saynn("[say=pc]Ах... кх-х...[/say]")
 
-		saynn("The Doctor's voice returns but you still can’t see her.")
+		saynn("Голос Доктора возвращается, но ты всё ещё не можешь её увидеть.")
 
-		saynn("[say=eliza]Very good~.[/say]")
+		saynn("[say=eliza]Очень хорошо~.[/say]")
 
-		saynn("[say=pc]What happened..[/say]")
+		saynn("[say=pc]Что произошло...[/say]")
 
-		saynn("[say=eliza]What do you think happened~?..[/say]")
+		saynn("[say=eliza]Как думаешь, что случилось~?..[/say]")
 
-		saynn("You catch your breath and watch how the ghostly paws return just to lock the chastity belt on you again. Then the same paws grab the leash and pull on it, inviting you to get up.")
+		saynn("Ты переводишь дух и наблюдаешь, как призрачные лапки возвращаются лишь для того, чтобы снова застегнуть на тебе пояс верности. Затем те же лапки хватают поводок и тянут за него, приглашая тебя подняться.")
 
-		saynn("[say=eliza]We might need more data later~. Thanks for your cooperation, test subject.[/say]")
+		saynn("[say=eliza]Возможно, позже нам понадобятся дополнительные данные~. Спасибо за сотрудничество, подопытный.[/say]")
 
-		saynn("The same ghost paw then parades you back into your cell before leaving you there, all confused.")
+		saynn("Та же призрачная лапа затаскивает тебя обратно в камеру, после чего оставляет тебя там в полном замешательстве.")
 
 		# (scene ends)
 		
-		addButton("Continue", "What was that", "endthescene")
+		addButton("Продолжить", "Что это сейчас было?", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "follow"):

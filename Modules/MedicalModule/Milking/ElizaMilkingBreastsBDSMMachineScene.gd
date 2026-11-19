@@ -12,262 +12,262 @@ func _run():
 		addCharacter("eliza")
 		aimCameraAndSetLocName("med_milkingroom")
 		playAnimation(StageScene.Grope, "tease", {pc="pc", npc="eliza", milkTank=true, bodyState={naked=true}})
-		saynn("You ask the doctor to milk you. She nods and brings you into the special room. But rather than picking one of the milking stalls, she brings you into a special little secluded space..")
+		saynn("Вы просите доктора подоить вас. Она кивает и ведет вас в специальную комнату. Но вместо того чтобы выбрать одну из доильных кабин, она заводит вас в отдельное, уединенное местечко...")
 
-		saynn("In the center of the room stands a high-tech smart table, its surface cool and clinical.")
+		saynn("В центре комнаты стоит высокотехнологичный смарт-стол с прохладной, стерильной поверхностью.")
 
-		saynn("You expose your {pc.breasts} and wait for her orders.")
+		saynn("Вы обнажаете свою {pc.breasts} и ждете ее команд.")
 
-		saynn("[say=eliza]Perfect. Give me just one second~.[/say]")
+		saynn("[say=eliza]Идеально. Дай мне всего секунду~.[/say]")
 
-		saynn("She approaches some kind of computer and begins pressing buttons on it.")
+		saynn("Она подходит к какому-то компьютеру и начинает нажимать на кнопки.")
 
-		addButton("Continue", "See what happens next", "get_locked")
+		addButton("Продолжить", "Смотреть, что будет дальше", "get_locked")
 	if(state == "get_locked"):
 		playAnimation(StageScene.BDSMMachineFuck, "tease", {pc="pc", bodyState={naked=true, hard=true, chains=[["hoseshort", "breastpump", "scene", "milkIntake"]]}})
-		saynn("Before you can react, the table springs into life, sending out some kinds of robotic manipulators towards you! With precise, calculated movements, they grab your wrists and ankles.. before lifting you off the floor and bringing you onto the table.")
+		saynn("Прежде чем вы успеваете среагировать, стол оживает, выбрасывая в вашу сторону роботизированные манипуляторы! Точными, расчетливыми движениями они захватывают ваши запястья и лодыжки... а затем поднимают вас с пола и укладывают на стол.")
 
-		saynn("[say=eliza]There we go~. Technology is great.[/say]")
+		saynn("[say=eliza]Вот так~. Технологии — это великая вещь.[/say]")
 
-		saynn("You test the grabby arms of the table.. but nah.. all you can do is make the motors inside them whirl a little louder.. your arms and legs are spread wide.. you are completely exposed and helpless.")
+		saynn("Вы пытаетесь сопротивляться захватам стола... но тщетно... всё, что вам удается — это заставить моторы внутри них жужжать чуть громче. Ваши руки и ноги широко разведены... вы полностью обнажены и беспомощны.")
 
-		saynn("Eliza presses a few more buttons.. sending some additional manipulators towards you, these ones fitted with suction cups.. One by one, they press against your sensitive, full breasts.. each cup tightly locking onto your swollen mounds.")
+		saynn("Элиза нажимает еще несколько кнопок... направляя к вам дополнительные манипуляторы, оснащенные присосками... Один за другим они прижимаются к вашей чувствительной, полной груди... каждая присоска плотно обхватывает ваши набухшие полушария.")
 
-		saynn("Instantly, the integrated breast pumps whir to life. You feel a gentle.. but insistent.. tug at your nipples, making them stiff and perky. The rhythmic suctions are making you part your lips and moan softly..")
+		saynn("Мгновенно оживают встроенные молокоотсосы. Вы чувствуете нежное... но настойчивое... тянущее ощущение в сосках, от которого они становятся твердыми и возбужденными. Ритмичное всасывание заставляет вас приоткрывать рот и тихо стонать...")
 
-		saynn("And soon, the pumps begin to draw out warm, creamy {pc.milk} from your breasts.. each pulse of the pumps causes a few precious droplets to spawn at your swollen nips.. and quickly get sucked out into the soft tubes.")
+		saynn("И вскоре насосы начинают вытягивать теплое, кремовое {pc.milk} из твоей груди... каждый импульс насоса заставляет несколько драгоценных капель появиться на твоих набухших сосках... и они тут же всасываются в мягкие трубки.")
 
-		saynn("[say=pc]Mhh..[/say]")
+		saynn("[say=pc]Ммм..[/say]")
 
-		saynn("[say=eliza]Great~. One last thing I forgot, let me set the mood~.[/say]")
+		saynn("[say=eliza]Отлично~. Последняя мелочь, которую я забыла, дай-ка я создам атмосферу~.[/say]")
 
-		saynn("Whatever she did, it made one of the manipulators bring a screen in front of your eyes. This screen begins to display the exact amount of {pc.milk} that was collected from you.. and also lots of encouraging messages..")
+		saynn("Что бы она ни сделала, один из манипуляторов поднес экран прямо к твоим глазам. На экране начинает отображаться точное количество собранного из тебя {pc.milk}... а также множество подбадривающих сообщений...")
 
-		saynn("You're such a good cow..")
+		saynn("Ты такая хорошая коровка...")
 
-		saynn("Keep producing.. Always keep producing..")
+		saynn("Продолжай производить.. Всегда продолжай производить..")
 
-		saynn("From that point on, Eliza is just watching the automated process.. The automated process of you being milked..")
+		saynn("С этого момента Элиза просто наблюдает за автоматизированным процессом... за автоматизированным процессом твоего доения...")
 
-		saynn("It feels great though.. The pumps keep tugging at your hardened nips with calculated pressure, causing more beads of your {pc.milk} to spawn from your nips.. a constant steady flow.. Some of it is just little rivers of creamy fluids.. and some is squirting out with force.. but all of it is neatly collected.")
+		saynn("Но ощущения потрясающие... Насосы продолжают тянуть твои затвердевшие соски с рассчитанным давлением, заставляя всё новые капли твоего {pc.milk} проступать на сосках... постоянный, ровный поток... Часть из этого — просто маленькие ручейки кремовой жидкости... а часть вырывается с силой... но всё это аккуратно собирается.")
 
-		saynn("Let it flow..")
+		saynn("Пусть течет...")
 
-		saynn("Surrender to the rhythm..")
+		saynn("Отдайся этому ритму...")
 
-		saynn("After establishing a good flow, the screen suddenly shows you a choice.. It only asks you to look at your choice.")
+		saynn("Как только поток наладится, на экране внезапно появится выбор... Вам нужно будет просто выбрать один из вариантов.")
 
-		addButton("Wand", "The machine will use its wand tool on your crotch..", "choose_wand")
-		addButtonWithChecks("Vaginal", "The machine will use its dildo tool on your pussy..", "choose_vag", [], [[ButtonChecks.HasReachableVagina]])
-		addButton("Anal", "The machine will use its dildo tool on your ass..", "choose_anal")
-		addButton("Double", "The machine will use two dildos at once..", "choose_double")
+		addButton("Вибростимулятор", "Машина применит свой вибростимулятор к вашей промежности...", "choose_wand")
+		addButtonWithChecks("Вагинальный", "Машина применит свой фаллоимитатор к вашей киске...", "choose_vag", [], [[ButtonChecks.HasReachableVagina]])
+		addButton("Анальный", "Машина применит свой фаллоимитатор к вашей заднице...", "choose_anal")
+		addButton("Двойной", "Машина будет использовать сразу два фаллоимитатора...", "choose_double")
 	if(state == "choose_wand"):
 		playAnimation(StageScene.BDSMMachineFuck, "wand", {pc="pc", bodyState={naked=true, hard=true, pcCum=true, chains=[["hoseshort", "breastpump", "scene", "milkIntake"]]}})
-		saynn("You look at the option that sounds the most interesting.. and soon, a new manipulator gets brought out.")
+		saynn("Вы выбираете вариант, который кажется самым интересным... и вскоре выносят новый манипулятор.")
 
-		saynn("A sleek wand massager gets pressed against your exposed, quivering "+str("pussy" if !isAnal else "tailhole")+". Without delay, it begins to vibrate.. a deep, resonant hum that resonates against your inner sensitive spots."+str(". your prostate." if (isAnal && GM.pc.hasPenis()) else "")+" You can't help but to start moaning a lot, a sudden spike of pleasure is further intensifying the milk flow, your tits are squirting out more little beads of {pc.milk}.")
+		saynn("Гладкий вибромассажер прижимается к вашей обнаженной, дрожащей "+str("pussy" if !isAnal else "tailhole")+"... Без промедления он начинает вибрировать... глубокий, резонирующий гул отзывается в ваших самых чувствительных точках."+str(". your prostate." if (isAnal && GM.pc.hasPenis()) else "")+"Ты не можешь сдержать стонов; внезапный всплеск удовольствия еще сильнее усиливает приток молока, твои сиськи брызжут всё новыми и новыми каплями {pc.milk}.")
 
-		saynn("[say=pc]Mhh.. ahh.. f-fuck..[/say]")
+		saynn("[say=pc]Ммм.. ах.. б-блядь..[/say]")
 
-		saynn("Embrace the sensations.. let your milking be endless.")
+		saynn("Погрузись в эти ощущения.. пусть твое доение будет бесконечным.")
 
-		saynn("Your body is wonderful. You're amazing.")
+		saynn("Твое тело великолепно. Ты просто потрясающая.")
 
-		saynn("Two sources of stimulations combine together.. a constant, relentless suction on your breasts.. and the vibrating pressure against your "+str("slit" if !isAnal else "anal ring and taint")+". It feels so good, your whole body begins trying to squirm, your muscles hardly obey your brain..")
+		saynn("Два источника стимуляции сливаются воедино.. постоянное, неумолимое всасывание твоих грудей.. и вибрирующее давление на твои "+str("slit" if !isAnal else "anal ring and taint")+". Это так приятно, что всё твое тело начинает извиваться, а мышцы почти не слушаются мозга..")
 
-		saynn("Forget everything else.. focus on the milking..")
+		saynn("Забудь обо всем остальном.. сосредоточься на доении..")
 
-		saynn("Good cows make a lot of milk..")
+		saynn("Хорошие коровушки дают много молока..")
 
-		saynn("You close your eyes.. but it's okay.. the messages are still there.. in your head.. It's all you can think about.. Milking.. Milking..")
+		saynn("Ты закрываешь глаза.. но всё в порядке.. сообщения всё еще там.. в твоей голове.. Это всё, о чем ты можешь думать.. Доение.. Доение..")
 
-		saynn("[say=pc]Ah.. ahh..[/say]")
+		saynn("[say=pc]Ах.. ахх..[/say]")
 
-		saynn("Each pump.. each second of these vibrations.. it quickly drives you toward a forced peak.. For some reason, you really wanna make a certain noise.. Fuck it..")
+		saynn("Каждый толчок.. каждая секунда этой вибрации.. всё быстрее и быстрее толкает тебя к вынужденному пику.. По какой-то причине тебе дико хочется издать определённый звук.. Да к чёрту всё..")
 
-		saynn("[say=pc]..moo-o-o~..[/say]")
+		saynn("[say=pc]му-у-у~..[/say]")
 
-		saynn("Almost involuntarily, a powerful orgasm crashes over you. Your body tries to thrash against the manipulators.. but they keep you nice and still, primed for milking.. As you reach the peak, your lactation does too, your breasts erupt with a burst of {pc.milk}, your nips squirting out lots of little fountains of it..")
+		saynn("Почти непроизвольно на тебя обрушивается мощнейший оргазм. Твоё тело пытается вырваться из захватов манипуляторов.. но они держат тебя крепко и неподвижно, готовя к дойке.. В момент пика твоя лактация тоже достигает предела: грудь взрывается потоками {pc.milk}, а соски брызжут целыми фонтанчиками..")
 
-		saynn("No thoughts.. only milking..")
+		saynn("Никаких мыслей.. только дойка..")
 
-		saynn("The message flashes before your eyes..")
+		saynn("Перед глазами вспыхивает сообщение..")
 
-		saynn("No thoughts.. only milking..")
+		saynn("Никаких мыслей.. только дойка..")
 
-		saynn("No thoughts.. only milking..")
+		saynn("Никаких мыслей.. только дойка..")
 
-		saynn("More and more {pc.milk} splashes against the bottom of the suction cups.. your "+str("pussy" if !isAnal else "anus")+" is pulsing wildly while the wand keeps stimulating it.. while the pumps keep pumping your udders.. It feels so fucking good..")
+		saynn("Всё больше и больше {pc.milk} разлетается по дну всасывающих чаш.. твоя "+str("pussy" if !isAnal else "anus")+" дико пульсирует под непрерывной стимуляцией зонда.. пока насосы продолжают выкачивать молоко из твоих вымен.. Это охренительно приятно..")
 
-		saynn("[say=pc]Moo.. moo-o~..[/say]")
+		saynn("[say=pc]Му.. му-у-у~..[/say]")
 
-		saynn("All of the flowing nectar gets swiftly collected.. the machine is working overtime to make sure it doesn't miss a single drop..")
+		saynn("Весь этот текучий нектар стремительно собирается... машина работает на износ, чтобы не упустить ни единой капли...")
 
-		addButton("Continue", "See what happens next", "wand_process")
+		addButton("Продолжить", "Смотреть, что будет дальше", "wand_process")
 	if(state == "wand_process"):
 		playAnimation(StageScene.BDSMMachineFuck, "tease", {pc="pc", bodyState={naked=true, hard=true, chains=[["hoseshort", "breastpump", "scene", "milkIntake"]]}})
-		saynn("When the flow of your {pc.milk} finally begins to subside, so does the stimulation. The wand gets pulled away from your twitching "+str("pussy" if !isAnal else "star")+", the pumps slow down to a crawl, their pulsing becoming gentler and easier on your nips.")
+		saynn("Когда поток твоих {pc.milk} наконец начинает спадать, стимуляция тоже затихает. Насадку отводят от твоих подергивающихся "+str("pussy" if !isAnal else "star")+", насосы замедляются до черепашьего темпа, их пульсация становится мягче и приятнее для твоих сосков.")
 
-		saynn("Your body is left exposed and trembling from the many aftershocks of your orgasms.. your nips feel so sensitive..")
+		saynn("Твое тело остается обнаженным и дрожащим от многочисленных отголосков оргазмов... твои соски кажутся невероятно чувствительными...")
 
-		saynn("Eliza steps forward, admitting the results of the work of the machine.")
+		saynn("Элиза делает шаг вперед, оценивая результаты работы машины.")
 
-		saynn("[say=eliza]Perfection~. Thank you for your humble donation~.[/say]")
+		saynn("[say=eliza]Совершенство~. Спасибо за твое скромное пожертвование~.[/say]")
 
-		saynn("All you can do is nod subtly.. You lean back into the table.. and just pant heavily.. exhaustion begins to win over.")
+		saynn("Все, что тебе остается — это едва заметно кивнуть... Ты откидываешься на стол... и просто тяжело дышишь... усталость начинает брать верх.")
 
-		addButton("Continue", "See what happens next", "after_milking")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_milking")
 	if(state == "after_milking"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		GM.pc.setLocation("med_nearmilking")
 		aimCameraAndSetLocName("med_nearmilking")
-		saynn("Eliza carefully removes the suction cups.. exposing your nips to the cold, sterile air.")
+		saynn("Элиза осторожно снимает всасывающие чаши... подставляя твои соски холодному стерильному воздуху.")
 
-		saynn("She presses a button that carefully puts you down onto the floor. Your legs feel weak.")
+		saynn("Она нажимает кнопку, которая аккуратно опускает тебя на пол. Ноги кажутся ватными.")
 
-		saynn("After that, she just brings you out into the corridor.")
+		saynn("После этого она просто выводит тебя в коридор.")
 
-		saynn("[say=eliza]Come back again soon~. Hope you will find your way back, I gotta go fill in some paperwork.[/say]")
+		saynn("[say=eliza]Приходи еще скорее~. Надеюсь, ты найдешь дорогу назад, а мне пора идти заполнять бумажки.[/say]")
 
-		saynn("Time to go..")
+		saynn("Пора идти..")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "choose_vag"):
 		playAnimation(StageScene.BDSMMachineFuck, "sex", {pc="pc", bodyState={naked=true, hard=true, chains=[["hoseshort", "breastpump", "scene", "milkIntake"]]}})
-		saynn("You look at the option that sounds the most interesting.. and soon, a new manipulator gets brought out.")
+		saynn("Вы выбираете вариант, который кажется самым интересным... и вскоре выносят новый манипулятор.")
 
-		saynn("A sleek rubber dildo gets pressed against your exposed, quivering "+str("pussy" if !isAnal else "tailhole")+", its pre-lubed tip prodding the entrance. As soon as it stretches you enough, it suddenly slides inside!")
+		saynn("Гладкий резиновый дилдо прижимается к твоей обнаженной, дрожащей "+str("pussy" if !isAnal else "tailhole")+", его заранее смазанный кончик прощупывает вход. Как только он растягивает тебя достаточно сильно, он внезапно входит внутрь!")
 
-		saynn("The dildo starts fucking you, thrusting inside, it's ridges and bumps stimulating your inner walls.. while the breast pumps feel an increased flow of your {pc.milk}..")
+		saynn("Дилдо начинает трахать тебя, совершая толчки; его ребра и бугорки стимулируют твои внутренние стенки... в то время как молочные насосы чувствуют усиленный приток твоих {pc.milk}...")
 
-		saynn("[say=pc]Mhh.. ahh..[/say]")
+		saynn("[say=pc]Ммм.. ахх..[/say]")
 
-		saynn("Embrace the sensations.. let your milking be endless.")
+		saynn("Погрузись в эти ощущения.. пусть твое доение будет бесконечным.")
 
-		saynn("Pregnant cows give the most milk.. Breeding is good..")
+		saynn("Беременные коровы дают больше всего молока.. Разведение — это благо..")
 
-		saynn("The dildo keeps pounding you, aligned in such a way that it can hit your pleasure spot with most efficiency.."+str(" your prostate.." if (isAnal && GM.pc.hasPenis()) else "")+""+str(" your g-spot.." if (!isAnal) else "")+"")
+		saynn("Дилдо продолжает долбить тебя, расположенный так, чтобы максимально эффективно попадать в твою точку удовольствия.."+str(" your prostate.." if (isAnal && GM.pc.hasPenis()) else "")+""+str(" your g-spot.." if (!isAnal) else "")+"")
 
-		saynn("Two sources of stimulations combine together.. a constant, relentless suction on your breasts.. and an intense fucking of your "+str("pussy slit" if !isAnal else "{pc.analStretch} anus")+". It feels so good, your whole body begins trying to squirm, your muscles hardly obey your brain..")
+		saynn("Два источника стимуляции сливаются воедино.. постоянное, неумолимое всасывание твоей груди.. и интенсивный трах твоей "+str("pussy slit" if !isAnal else "{pc.analStretch} anus")+". Это так приятно, что всё твое тело начинает извиваться, а мышцы почти не слушаются мозга..")
 
-		saynn("Forget everything else.. focus on breeding.. focus on milking..")
+		saynn("Забудь обо всем остальном.. сосредоточься на размножении.. сосредоточься на доении..")
 
-		saynn("Bred cows make a lot of milk.. Be a good cow..")
+		saynn("Осемененные коровы дают много молока.. Будь хорошей коровкой..")
 
-		saynn("You close your eyes.. but it's okay.. the messages are still there.. in your head.. It's all you can think about.. Breeding.. Milking..")
+		saynn("Ты закрываешь глаза... но всё в порядке... сообщения всё ещё там... в твоей голове... Это всё, о чём ты можешь думать... Разведение... Дойка...")
 
-		saynn("[say=pc]Ah.. ahh..[/say]")
+		saynn("[say=pc]Ах.. ахх..[/say]")
 
-		addButton("Continue", "See what happens next", "vag_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "vag_cum")
 	if(state == "vag_cum"):
 		playAnimation(StageScene.BDSMMachineFuck, "fast", {pc="pc", pcCum=true, cum=true, bodyState={naked=true, hard=true, chains=[["hoseshort", "breastpump", "scene", "milkIntake"]]}})
-		saynn("Each thrust.. each second of this relentless fucking.. it quickly drives you toward a forced peak.. For some reason, you really wanna make a certain noise.. Fuck it..")
+		saynn("Каждый толчок... каждая секунда этого беспощадного траха... быстро толкает тебя к вынужденному пику... По какой-то причине тебе безумно хочется издать определённый звук... К чёрту всё...")
 
-		saynn("[say=pc]..moo-o-o~..[/say]")
+		saynn("[say=pc]му-у-у~..[/say]")
 
-		saynn("Almost involuntarily, a powerful orgasm crashes over you. Your body tries to thrash against the manipulators.. but they keep you nice and still, primed for breeding and milking.. As you reach the peak, your lactation does too, your breasts erupt with a burst of {pc.milk}, your nips squirting out lots of little fountains of it..")
+		saynn("Почти непроизвольно на тебя обрушивается мощный оргазм. Твоё тело пытается вырваться из хватки манипуляторов... но они удерживают тебя неподвижно, подготавливая к разведению и дойке... В момент пика начинается и лактация: твоя грудь извергается потоком {pc.milk}, а соски брызжут множеством маленьких фонтанчиков...")
 
-		saynn("No thoughts.. only milking..")
+		saynn("Никаких мыслей.. только дойка..")
 
-		saynn("The message flashes before your eyes..")
+		saynn("Перед глазами вспыхивает сообщение..")
 
-		saynn("No thoughts.. only breeding..")
+		saynn("Никаких мыслей... только разведение...")
 
-		saynn("No thoughts.. only milking..")
+		saynn("Никаких мыслей.. только дойка..")
 
-		saynn("More and more {pc.milk} splashes against the bottom of the suction cups.. your "+str("pussy" if !isAnal else "anus")+" is pulsing wildly around the throbbing rubber cock that suddenly starts to throb and pump you full of cum-like substance! It feels so fucking good to be bred and milked at the same time..")
+		saynn("Всё больше и больше {pc.milk} разлетается по дну всасывающих чаш.. твоя "+str("pussy" if !isAnal else "anus")+" дико пульсирует вокруг пульсирующего резинового члена, который внезапно начинает дергаться и наполнять тебя семяподобной субстанцией! Это чертовски приятно — когда тебя одновременно и разводят, и доят...")
 
-		saynn("[say=pc]Moo.. moo-o~..[/say]")
+		saynn("[say=pc]Му.. му-у-у~..[/say]")
 
-		saynn("All of the flowing nectar gets swiftly collected.. the machine is working overtime to make sure it doesn't miss a single drop..")
+		saynn("Весь этот текучий нектар стремительно собирается... машина работает на износ, чтобы не упустить ни единой капли...")
 
-		addButton("Continue", "See what happens next", "vag_process")
+		addButton("Продолжить", "Смотреть, что будет дальше", "vag_process")
 	if(state == "vag_process"):
 		playAnimation(StageScene.BDSMMachineFuck, "inside", {pc="pc", bodyState={naked=true, hard=true, chains=[["hoseshort", "breastpump", "scene", "milkIntake"]]}})
-		saynn("When the flow of your {pc.milk} finally begins to subside, so does the stimulation. The slick dildo stays inside your twitching "+str("pussy" if !isAnal else "star")+", the pumps slow their action down to a crawl, their pulsing becoming gentler and easier on your nips.")
+		saynn("Когда поток твоего {pc.milk} наконец начинает спадать, стимуляция тоже затихает. Скользкий дилдо остается внутри твоей подергивающейся "+str("pussy" if !isAnal else "star")+", насосы замедляют свою работу до черепашьего темпа, а их пульсация становится мягче и приятнее для твоих сосков.")
 
-		saynn("Your body is left exposed and trembling from the many aftershocks of your orgasms.. your nips feel so sensitive.."+str(" Your stuffed pussy does too.." if !isAnal else " Your stuffed ass does too..")+"")
+		saynn("Твое тело остается обнаженным и дрожащим от многочисленных отголосков оргазмов... твои соски кажутся невероятно чувствительными..."+str(" Your stuffed pussy does too.." if !isAnal else " Your stuffed ass does too..")+"")
 
-		saynn("Eliza steps forward, admitting the results of the work of the machine.")
+		saynn("Элиза делает шаг вперед, оценивая результаты работы машины.")
 
-		saynn("[say=eliza]Amazing~. Thank you for your humble donation~.[/say]")
+		saynn("[say=eliza]Потрясающе~. Спасибо за твое скромное пожертвование~.[/say]")
 
-		saynn("All you can do is nod subtly.. You lean back into the table.. and just pant heavily.. exhaustion begins to win over.")
+		saynn("Все, что тебе остается — это едва заметно кивнуть... Ты откидываешься на стол... и просто тяжело дышишь... усталость начинает брать верх.")
 
-		addButton("Continue", "See what happens next", "after_milking")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_milking")
 	if(state == "choose_double"):
 		playAnimation(StageScene.BDSMMachineFuck, "sexdouble", {pc="pc", bodyState={naked=true, hard=true, chains=[["hoseshort", "breastpump", "scene", "milkIntake"]]}})
-		saynn("You look at the option that sounds the most interesting.. and soon, a new manipulator gets brought out.. more than one, in fact.")
+		saynn("Ты смотришь на вариант, который кажется самым интересным... и вскоре выносят новый манипулятор... причем даже не один.")
 
 		if (!isAnal):
-			saynn("Two sleek rubber dildos get pressed against your two exposed holes, your quivering pussy and clenched asshole. Their pre-lubed tips are prodding your entrances. As soon as they stretch you out enough, they suddenly slide inside, filling both of your holes at once!")
+			saynn("Два гладких резиновых дилдо прижимаются к твоим двум обнаженным отверстиям — дрожащей киске и сжатому анусу. Их заранее смазанные кончики прощупывают входы. Как только они растягивают тебя достаточно сильно, они внезапно входят внутрь, заполняя оба твоих отверстия одновременно!")
 
-			saynn("The dildoes start to fuck you, thrusting inside at roughly the same pace, double-penetrating you. Their ridges and bumps are stimulating your inner walls.. making it so the breast pumps feel an increased flow of your {pc.milk}..")
+			saynn("Дилдо начинают трахать тебя, совершая толчки примерно с одинаковой скоростью, осуществляя двойное проникновение. Их ребра и бугорки стимулируют твои внутренние стенки... из-за чего молочные насосы ощущают усиленный приток твоих {pc.milk}...")
 
 		else:
-			saynn("Two sleek rubber dildos get pressed against your clenched asshole.. Their pre-lubed tips are already prodding at your tight anal ring, spreading it wider and wider. Your body keeps trying to arch itself while two dildoes are trying to fit into a single hole.. But as soon as they stretch you out enough, they suddenly slide inside, stretching and filling you super hard!")
+			saynn("Два гладких резиновых дилдо прижимаются к твоему сжатому анусу... Их заранее смазанные кончики уже прощупывают твое тугое анальное кольцо, растягивая его всё шире и шире. Твое тело то и дело пытается выгнуться, пока два дилдо пытаются втиснуться в одно отверстие... Но как только они растягивают тебя достаточно сильно, они внезапно входят внутрь, с бешеной силой растягивая и заполняя тебя!")
 
-			saynn("The dildoes start to fuck you, thrusting inside at roughly the same pace, double-penetrating you. You feel like you should feel a lot of pain from such rough stuffing.. but their ridges and bumps are stimulating your inner walls.. making it so the breast pumps feel an increased flow of your {pc.milk} instead..")
+			saynn("Дилдо начинают трахать тебя, совершая толчки примерно с одинаковой скоростью, осуществляя двойное проникновение. Кажется, что от такого грубого наполнения должно быть очень больно... но их ребра и бугорки стимулируют твои внутренние стенки... из-за чего молочные насосы вместо боли ощущают усиленный приток твоих {pc.milk}...")
 
-		saynn("[say=pc]Mhh.. ahh..[/say]")
+		saynn("[say=pc]Ммм.. ахх..[/say]")
 
-		saynn("Embrace the sensations.. let your milking be endless.")
+		saynn("Погрузись в эти ощущения.. пусть твое доение будет бесконечным.")
 
-		saynn("Pregnant cows give the most milk.. Breeding is good..")
+		saynn("Беременные коровы дают больше всего молока.. Разведение — это благо..")
 
 		if (!isAnal):
-			saynn("The tools keep pounding you, aligned in such a way that they can hit all of your pleasure spots with most efficiency.."+str(" your prostate.." if (GM.pc.hasPenis()) else "")+""+str(" your g-spot.." if (!isAnal) else "")+"")
+			saynn("Инструменты продолжают долбить тебя, выстроенные так, чтобы с максимальной эффективностью попадать по всем твоим эрогенным зонам..."+str(" your prostate.." if (GM.pc.hasPenis()) else "")+""+str(" your g-spot.." if (!isAnal) else "")+"")
 
 		else:
-			saynn("The tools keep pounding you, aligned in such a way that they can hit all of your buttons with most efficiency.."+str(" your prostate gets smashed again and again, your {pc.penis} leaking pre non-stop.." if (GM.pc.hasPenis()) else "")+"")
+			saynn("Инструменты продолжают долбить тебя, выстроенные так, чтобы с максимальной эффективностью нажимать на все твои кнопки..."+str(" your prostate gets smashed again and again, your {pc.penis} leaking pre non-stop.." if (GM.pc.hasPenis()) else "")+"")
 
-		saynn("Three sources of stimulations combine together.. a constant, relentless suction on your breasts.. and an intense fucking of your "+str("holes" if !isAnal else "stretched-wide asshole")+". It feels so good, your whole body begins trying to squirm, your muscles hardly obey your brain..")
+		saynn("Три источника стимуляции сливаются воедино... постоянное, неумолимое всасывание твоей груди... и интенсивный трах твоей "+str("holes" if !isAnal else "stretched-wide asshole")+". Это так приятно, что всё твое тело начинает извиваться, а мышцы почти не слушаются мозга..")
 
-		saynn("Forget everything else.. focus on breeding.. focus on milking..")
+		saynn("Забудь обо всем остальном.. сосредоточься на размножении.. сосредоточься на доении..")
 
-		saynn("Bred cows make a lot of milk.. Be a good cow..")
+		saynn("Осемененные коровы дают много молока.. Будь хорошей коровкой..")
 
-		saynn("You close your eyes.. but it's okay.. the messages are still there.. in your head.. It's all you can think about.. Breeding.. Milking..")
+		saynn("Ты закрываешь глаза... но всё в порядке... сообщения всё ещё там... в твоей голове... Это всё, о чём ты можешь думать... Разведение... Дойка...")
 
-		saynn("[say=pc]Ah.. ahh..[/say]")
+		saynn("[say=pc]Ах.. ахх..[/say]")
 
-		addButton("Continue", "See what happens next", "double_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "double_cum")
 	if(state == "double_cum"):
 		playAnimation(StageScene.BDSMMachineFuck, "fastdouble", {pc="pc", pcCum=true, cum=true, bodyState={naked=true, hard=true, chains=[["hoseshort", "breastpump", "scene", "milkIntake"]]}})
-		saynn("Each thrust.. each second of this relentless fucking.. it quickly drives you toward a forced peak.. For some reason, you really wanna make a certain noise.. Fuck it..")
+		saynn("Каждый толчок... каждая секунда этого беспощадного траха... быстро толкает тебя к вынужденному пику... По какой-то причине тебе безумно хочется издать определённый звук... К чёрту всё...")
 
-		saynn("[say=pc]..moo-o-o~..[/say]")
+		saynn("[say=pc]му-у-у~..[/say]")
 
-		saynn("Almost involuntarily, a powerful orgasm crashes over you. Your body tries to thrash against the manipulators.. but they keep you nice and still, primed for breeding and milking.. As you reach the peak, your lactation does too, your breasts erupt with a burst of {pc.milk}, your nips squirting out lots of little fountains of it..")
+		saynn("Почти непроизвольно на тебя обрушивается мощный оргазм. Твоё тело пытается вырваться из хватки манипуляторов... но они удерживают тебя неподвижно, подготавливая к разведению и дойке... В момент пика начинается и лактация: твоя грудь извергается потоком {pc.milk}, а соски брызжут множеством маленьких фонтанчиков...")
 
-		saynn("No thoughts.. only milking..")
+		saynn("Никаких мыслей.. только дойка..")
 
-		saynn("The message flashes before your eyes..")
+		saynn("Перед глазами вспыхивает сообщение..")
 
-		saynn("No thoughts.. only breeding..")
+		saynn("Никаких мыслей... только разведение...")
 
-		saynn("No thoughts.. only milking..")
+		saynn("Никаких мыслей.. только дойка..")
 
-		saynn("More and more {pc.milk} splashes against the bottom of the suction cups.. your "+str("pussy and asshole are" if !isAnal else "gaping asshole is")+" pulsing wildly around the throbbing rubber cocks that suddenly start to throb and pump you full of cum-like substance! It feels so fucking good to be bred and milked at the same time..")
+		saynn("Всё больше и больше {pc.milk} разлетается по дну всасывающих чаш.. твоя "+str("pussy and asshole are" if !isAnal else "gaping asshole is")+" пульсирующей вокруг пульсирующих резиновых членов, которые внезапно начинают дергаться и наполнять тебя спермоподобной субстанцией! Это чертовски приятно — когда тебя одновременно и трахают, и доят...")
 
-		saynn("[say=pc]Moo.. moo-o~..[/say]")
+		saynn("[say=pc]Му.. му-у-у~..[/say]")
 
-		saynn("All of the flowing nectar gets swiftly collected.. the machine is working overtime to make sure it doesn't miss a single drop..")
+		saynn("Весь этот текучий нектар стремительно собирается... машина работает на износ, чтобы не упустить ни единой капли...")
 
-		addButton("Continue", "See what happens next", "double_process")
+		addButton("Продолжить", "Смотреть, что будет дальше", "double_process")
 	if(state == "double_process"):
 		playAnimation(StageScene.BDSMMachineFuck, "insidedouble", {pc="pc", bodyState={naked=true, hard=true, chains=[["hoseshort", "breastpump", "scene", "milkIntake"]]}})
-		saynn("When the flow of your {pc.milk} finally begins to subside, so does the stimulation. The slick dildos stay inside your twitching fuckhole"+str("s" if !isAnal else "")+", the pumps slow their action down to a crawl, their pulsing becoming gentler and easier on your nips.")
+		saynn("Когда поток твоих {pc.milk} наконец начинает спадать, стимуляция тоже затихает. Скользкие дилдо остаются внутри твоего дергающегося отверстия"+str("s" if !isAnal else "")+", насосы замедляют свою работу до черепашьего темпа, а их пульсация становится мягче и приятнее для твоих сосков.")
 
-		saynn("Your body is left exposed and trembling from the many aftershocks of your orgasms.. your nips feel so sensitive.."+str(" Your stuffed pussy and asshole do too.." if !isAnal else " Your double-stuffed ass does too..")+"")
+		saynn("Твое тело остается обнаженным и дрожащим от многочисленных отголосков оргазмов... твои соски кажутся невероятно чувствительными..."+str(" Your stuffed pussy and asshole do too.." if !isAnal else " Your double-stuffed ass does too..")+"")
 
-		saynn("Eliza steps forward, admitting the results of the work of the machine.")
+		saynn("Элиза делает шаг вперед, оценивая результаты работы машины.")
 
-		saynn("[say=eliza]Amazing~. Thank you for your humble donation~.[/say]")
+		saynn("[say=eliza]Потрясающе~. Спасибо за твое скромное пожертвование~.[/say]")
 
-		saynn("All you can do is nod subtly.. You lean back into the table.. and just pant heavily.. exhaustion begins to win over.")
+		saynn("Все, что тебе остается — это едва заметно кивнуть... Ты откидываешься на стол... и просто тяжело дышишь... усталость начинает брать верх.")
 
-		addButton("Continue", "See what happens next", "after_milking")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_milking")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

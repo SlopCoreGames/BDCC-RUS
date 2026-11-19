@@ -12,81 +12,81 @@ func _run():
 		addCharacter("nova")
 		playAnimation(StageScene.Duo, "stand", {npc="nova", npcAction="stand"})
 	if(state == ""):
-		saynn("[say=pc]You’re looking for pets maybe?..[/say]")
+		saynn("[say=pc]Может, ты ищешь питомцев?..[/say]")
 
-		saynn("Nova’s face changes to a more smug one, she is smirking while circling around you. She holds a leash in her hand.")
+		saynn("Лицо Новы становится самодовольным; она ухмыляется, обходя тебя кругом. В руке она держит поводок.")
 
-		saynn("[say=nova]I like pets. Puppies. Or kittens. Which one are you, cutie?[/say]")
+		saynn("[say=nova]Я люблю питомцев. Щеночков. Или кошечек. А ты кто, милашка?[/say]")
 
-		addButton("Meow", "You are a kitty", "meow")
-		addButton("Bark", "You are a puppy", "bark")
+		addButton("Мяу", "Ты — кошечка", "meow")
+		addButton("Гав!", "Ты — щеночек", "bark")
 
 	if(state == "make_noise"):
-		saynn("You blush slightly and decide to voice your choice a little differently.")
+		saynn("Ты слегка краснеешь и решаешь озвучить свой выбор немного иначе.")
 
 		# (if kitty)
 		if(!isPuppy):
-			saynn("[say=pc]Meow![/say]")
+			saynn("[say=pc]Мяу![/say]")
 
-			saynn("[say=nova]Hah. Kitty then. Little brats that like to scratch furniture and disobey commands. Are you gonna be a good kitty for me?[/say]")
+			saynn("[say=nova]Хах. Значит, кошечка. Маленькие засранки, которые любят драть мебель и не слушаться команд. Будешь послушной кошечкой для меня?[/say]")
 
 		# (if puppy)
 		if(isPuppy):
-			saynn("[say=pc]Bark![/say]")
+			saynn("[say=pc]Гав![/say]")
 
-			saynn("[say=nova]Hah. So you’re a puppy. Gonna wiggle your rear and obey my commands like a good pup?[/say]")
+			saynn("[say=nova]Хах. Значит, щеночек. Будешь вилять хвостиком и слушаться моих команд, как хороший песик?[/say]")
 
-		saynn("You nod eagerly at her. The idea of being treated like a pet sounds very appealing.. She stops in front of you and grabs you by the chin. Little scritches that she offers to you cause you to slowly melt, cute animal noises escape from you.")
+		saynn("Ты с энтузиазмом киваешь ей. Идея того, что с тобой будут обращаться как с питомцем, звучит очень заманчиво... Она останавливается перед тобой и берет тебя за подбородок. От её легких почесываний ты начинаешь медленно таять, а из твоей груди вырываются милые звериные звуки.")
 
 		# (if kitty)
 		if(!isPuppy):
-			saynn("You try to imitate the feline purring for Nova and bounce eagerly.")
+			saynn("Ты пытаешься подражать кошачьему мурлыканью для Новы и восторженно подпрыгиваешь.")
 
 		# (if puppy)
 		if(isPuppy):
-			saynn("You stick your tongue out and pant slightly for Nova and bounce eagerly.")
+			saynn("Ты высовываешь язык и слегка тяжело дышишь, как собачка, и восторженно подпрыгиваешь.")
 
 		# (if non naked)
 		if(!GM.pc.isFullyNaked()):
-			saynn("[say=nova]So-o~.. Last time I checked, pets usually don’t wear any clothes, do they~?[/say]")
+			saynn("[say=nova]Так-к-к~.. Насколько я помню, питомцы обычно не носят никакой одежды, верно~?[/say]")
 
-			saynn("You tilt your head slightly. Then you look down at your clothes and back at Nova. You shake your head subtly.")
+			saynn("Ты слегка наклоняешь голову. Затем переводишь взгляд со своей одежды на Нову и обратно. Ты едва заметно качаешь головой.")
 
-			saynn("[say=nova]No, they don’t~[/say]")
+			saynn("[say=nova]Нет, не носят~[/say]")
 
-			saynn("She starts undressing you as you stand completely still. Nova {pc.undressMessageS}. Eventually, you are left with no clothing, your privates are all exposed. But that’s how a pet should look like.")
+			saynn("Она начинает раздевать тебя, пока ты стоишь совершенно неподвижно. Нова {pc.undressMessageS}. В конце концов, ты остаешься без единого клочка одежды, и твои интимные места полностью обнажены. Но именно так и должен выглядеть питомец.")
 
 			# (if non flat breasts)
 			if(GM.pc.hasNonFlatBreasts()):
-				saynn("You cover your {pc.breasts} a bit but Nova is quick to swat your hands away.")
+				saynn("Ты пытаешься немного прикрыть свои {pc.breasts}, но Нова быстро отмахивается от твоих рук.")
 
-				saynn("[say=nova]Much better~[/say]")
+				saynn("[say=nova]Так-то лучше~[/say]")
 
 		# (if naked)
 		if(GM.pc.isFullyNaked()):
-			saynn("[say=nova]You came prepared, I see~. No clothes just like it should be, pets aren’t supposed to wear anything.[/say]")
+			saynn("[say=nova]Вижу, ты подготовился~. Никакой одежды, как и должно быть — питомцы не должны ничего носить.[/say]")
 
-			saynn("Your privates are all exposed but you stand proudly as Nova gives you a few pats on the head. You nod to her words, it’s a fact that pets are usually naked.")
+			saynn("Твои причиндалы полностью на виду, но ты стоишь с гордым видом, пока Нова похлопывает тебя по голове. Ты киваешь в ответ на её слова — это чистая правда, питомцы обычно голышом.")
 
 			# (end)
 
-		saynn("Satisfied with your looks, Nova shows you the chain leash.")
+		saynn("Довольная твоим видом, Нова демонстрирует тебе поводок на цепи.")
 
 		# (if puppy)
 		if(isPuppy):
-			saynn("[say=nova]I’m gonna put you on a leash and you’re gonna let me do it. Mhm?[/say]")
+			saynn("[say=nova]Сейчас я надену на тебя поводок, и ты позволишь мне это сделать. М-м?[/say]")
 
-			saynn("You bark softly and let Nova do it. As she clips the leash to your collar, you can’t help but to look excited, wiggling your butt and panting slightly. Nova smiles and boops noses with you.")
+			saynn("Ты тихо гавкаешь и позволяешь Нове всё сделать. Когда она пристегивает поводок к твоему ошейнику, ты невольно начинаешь возбужденно вилять задницей и слегка тяжело дышать. Нова улыбается и игриво тычется своим носом в твой.")
 
 		# (if kitty)
 		if(!isPuppy):
-			saynn("[say=nova]Even though you’re a kitty, I can’t have you just slacking around. I’m gonna leash you~[/say]")
+			saynn("[say=nova]Хоть ты и кошечка, я не позволю тебе просто бездельничать. Я пристегну тебя на поводок~[/say]")
 
-			saynn("You mewl softly and let Nova do it. As she clips the leash to your collar, you can’t help but to look excited, you nuzzle her hand and continue rubbing against her. Nova smiles and boops your nose.")
+			saynn("Ты тихо мяукаешь и позволяешь Нове всё сделать. Когда она пристегивает поводок к твоему ошейнику, ты невольно начинаешь возбужденно тыкаться носом в её ладонь и продолжаешь тереться об неё. Нова улыбается и игриво тычется своим носом в твой.")
 
-		saynn("[say=nova]Now, get on all fours~. Show me how pets crawl around.[/say]")
+		saynn("[say=nova]А теперь, вставай на четвереньки~. Покажи мне, как ползают питомцы.[/say]")
 
-		addButton("Get on all fours", "Be the good pet for Nova", "get_on_all_fours")
+		addButton("Встать на четвереньки", "Быть послушным питомцем для Новы", "get_on_all_fours")
 
 	if(state == "get_on_all_fours"):
 		playAnimation(StageScene.Duo, "allfours", {
@@ -96,21 +96,21 @@ func _run():
 		})
 		# (if puppy)
 		if(isPuppy):
-			saynn("You bark and take a little step back before lowering yourself to your knees. Then you bend forward and get on all fours. Nova holds your leash while you begin to crawl around her, swaying your {pc.masc} hips a lot in the process.")
+			saynn("Ты гавкаешь и делаешь небольшой шаг назад, прежде чем опуститься на колени. Затем ты наклоняешься вперед и встаешь на четвереньки. Нова держит поводок, пока ты начинаешь ползать вокруг неё, при этом сильно виляя своими {pc.masc} бедрами.")
 
-			saynn("[say=nova]Very good~. Look at you. Such a good little puppy.[/say]")
+			saynn("[say=nova]Очень хорошо~. Посмотри на себя. Такая послушная маленькая собачка.[/say]")
 
 		# (if kitty)
 		if(!isPuppy):
-			saynn("You purr and slowly lower yourself to your knees. You try to show off some feline-like agility as you bend forward and get on all fours. You arch your back as you lower your top part of the body so you can stretch a bit. Then you do a small circle around the husky, crawling very slowly so you can sway your {pc.masc} hips like a sexy kitty.")
+			saynn("Ты мурлычешь и медленно опускаешься на колени. Ты пытаешься продемонстрировать кошачью ловкость, наклоняясь вперед и вставая на четвереньки. Ты прогибаешь спину, опуская верхнюю часть тела, чтобы немного потянуться. Затем ты делаешь небольшой круг вокруг хаски, ползя очень медленно, чтобы покачивать своими {pc.masc} бедрами, словно сексуальная кошечка.")
 
-			saynn("[say=nova]Very good~. Look at you. Such a good little kitty.[/say]")
+			saynn("[say=nova]Очень хорошо~. Посмотри на себя. Такая послушная маленькая кошечка.[/say]")
 
-		saynn("Nova passes the leash between her legs and then tugs on it, creating tension that invites you to move. You crawl between her legs as she lands a smack on your {pc.thick} butt.")
+		saynn("Нова пропускает поводок между ног, а затем дергает за него, создавая натяжение, которое подталкивает тебя к движению. Ты проползаешь между её ног, а она отвешивает звонкий шлепок по твоей {pc.thick} заднице.")
 
-		saynn("[say=nova]Let’s go for a little walk~[/say]")
+		saynn("[say=nova]Пойдем, прогуляемся немножко~[/say]")
 
-		addButton("Follow", "See where Nova brings you", "follow")
+		addButton("Следовать", "Посмотреть, куда Нова тебя приведет", "follow")
 
 	if(state == "follow"):
 		aimCameraAndSetLocName("yard_northCorridor")
@@ -120,38 +120,38 @@ func _run():
 			npcBodyState={},
 		})
 		
-		saynn("Nova tugs gently on the leash to make you follow her, you feel how it makes your bulky collar dig into the neck so you obey her while staying mostly quiet. Pets can’t speak after all.")
+		saynn("Нова слегка тянет за поводок, заставляя тебя следовать за ней; ты чувствуешь, как массивный ошейник впивается в шею, поэтому ты послушно идешь следом, стараясь не шуметь. В конце концов, питомцы не умеют говорить.")
 
-		saynn("You are being walked around the yard. Lots of greenery around, lots of fresh air. You crawl along the stone pathways and wiggling your rear. The husky makes sure that you keep up but each time you slow down, she tugs on the leash, forcing you to move your butt quicker. You slowly get used to crawling like this.")
+		saynn("Тебя выгуливают по двору. Вокруг много зелени и свежего воздуха. Ты ползешь по каменным дорожкам, виляя задом. Хаски следит, чтобы ты не отставала, но каждый раз, когда ты замедляешься, она дергает за поводок, заставляя тебя двигать попой быстрее. Ты постепенно привыкаешь к тому, чтобы ползать вот так.")
 
 		# (if puppy)
 		if(isPuppy):
-			saynn("[say=nova]How is it, puppy, having fun?[/say]")
+			saynn("[say=nova]Ну как, щеночек, весело?[/say]")
 
-			saynn("[say=pc]R-ruff![/say]")
+			saynn("[say=pc]Р-р-гав![/say]")
 
 		# (if kitty)
 		if(!isPuppy):
-			saynn("[say=nova]How is it, kitty, enjoying yourself?[/say]")
+			saynn("[say=nova]Ну как, киса, тебе нравится?[/say]")
 
-			saynn("[say=pc]Mew![/say]")
+			saynn("[say=pc]Мяу![/say]")
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
 			if(GM.pc.isWearingChastityCage()):
-				saynn("To be honest, even just doing this makes you feel horny, your exposed {pc.cock} is trying to get hard while dripping precum onto the stone tiles as you crawl forward. A caged up pet is probably such a good sight.")
+				saynn("Честно говоря, даже от одного этого тебя начинает штырить: твоя обнаженная {pc.cock} пытается встать, а предэякулят капает на каменную плитку, пока ты ползешь вперед. Запертый в клетке питомец — это, должно быть, чертовски приятное зрелище.")
 			else:
-				saynn("To be honest, even just doing this makes you feel horny, your exposed {pc.cock} is hard as a rock and dripping precum onto the stone tiles as you crawl forward.")
+				saynn("Честно говоря, даже от одного этого тебя начинает штырить: твоя обнаженная {pc.cock} стоит колом, а предэякулят капает на каменную плитку, пока ты ползешь вперед.")
 
 			# (if also vagina)
 			if(GM.pc.hasVagina()):
-				saynn("Your slit is wet too, you wouldn’t mind a good breeding about now maybe..")
+				saynn("Твоя щелка тоже вся мокрая, тебе бы сейчас не помешало хорошенько размножиться...")
 
 		# (if just vagina)
 		elif(GM.pc.hasVagina()):
-			saynn("To be honest, even just doing this makes you feel horny, your exposed pussy is shiny wet and drips juices onto the stone tiles as you crawl forward. A good pet breeding session doesn’t seem like that bad of an idea..")
+			saynn("Честно говоря, даже от одного этого тебя начинает штырить: твоя обнаженная киска блестит от влаги, и соки капают на каменную плитку, пока ты ползешь вперед. Хорошая сессия размножения с питомцем кажется не такой уж плохой идеей...")
 
-		addButton("Follow", "Keep walking behind", "follow1")
+		addButton("Следовать", "Продолжать ползти сзади", "follow1")
 
 	if(state == "follow1"):
 		aimCameraAndSetLocName("yard_eastCorridor")
@@ -161,112 +161,112 @@ func _run():
 			npcBodyState={},
 		})
 		
-		saynn("Two orange inmates sit on one of the benches, a guy and a girl. Nova approaches them and tugs on the leash, bringing you closer too. You feel a little embarrassed, all their gazes are instantly glued to you.")
+		saynn("На одной из скамей сидят двое заключенных в оранжевой форме, парень и девушка. Нова подходит к ним и дергает за поводок, подтягивая и тебя. Тебе становится немного неловко — их взгляды мгновенно прикованы к тебе.")
 
 		# (if puppy)
 		if(isPuppy):
-			saynn("[say=nova]Hai there inmates~. Check out this puppy I have here. Puppy, voice.[/say]")
+			saynn("[say=nova]Привет, зэки~. Зацените, какой у меня тут щенок. Щенок, голос![/say]")
 
-			saynn("[say=pc]Bark..[/say]")
+			saynn("[say=pc]Гав..[/say]")
 
 		# (if kitty)
 		if(!isPuppy):
-			saynn("[say=nova]Hai there inmates~. Check out this kitty I have here. Kitty, meow for me.[/say]")
+			saynn("[say=nova]Приветик, зэчки~. Зацените, какой у меня тут котик есть. Кис-кис, мяукни мне![/say]")
 
-			saynn("[say=pc]Meow..[/say]")
+			saynn("[say=pc]Мяу..[/say]")
 
-		saynn("You can’t hide your blush, it feels humiliating for you. But you can’t even crawl away, Nova holds the leash tightly so you just tilt your head down.")
+		saynn("Ты не можешь скрыть румянец — это кажется тебе унизительным. Но и уползти не получается: Нова крепко держит поводок, так что тебе остается только понуро опустить голову.")
 
-		saynn("[sayMale]Oh wow. That’s a nice pet you have there.[/sayMale]")
+		saynn("[sayMale]Ого, а питомец у тебя что надо![/sayMale]")
 
-		saynn("[sayFemale]So obedient. Can I pet {pc.him}?[/sayFemale]")
+		saynn("[sayFemale]Такой послушный. Можно мне погладить {pc.him}?[/sayFemale]")
 
-		saynn("[say=nova]Yeah, go ahead. No biting, pet.[/say]")
+		saynn("[say=nova]Да, валяй. Только не кусайся, малыш.[/say]")
 
-		saynn("The female inmate reaches her hand at you and tries to pet you.")
+		saynn("Заключенная протягивает к тебе руку, пытаясь погладить.")
 
-		addButton("Let it happen", "You like pets, you want pets", "let_it_happen")
+		addButton("Пусть всё идет своим чередом", "Тебе нравятся ласки, ты хочешь, чтобы тебя гладили", "let_it_happen")
 		if(isPuppy):
-			addButton("Growl", "You don’t wanna receive pets from strangers", "hissgrowl")
+			addButton("Рычание", "Ты не хочешь, чтобы тебя гладили незнакомцы", "hissgrowl")
 		else:
-			addButton("Hiss", "You don’t wanna receive pets from strangers", "hissgrowl")
+			addButton("Ш-ш-ш...", "Ты не хочешь, чтобы тебя гладили незнакомцы", "hissgrowl")
 
 	if(state == "let_it_happen"):
 		# (if puppy)
 		if(isPuppy):
-			saynn("You move your head under the hand and stick your tongue out as it pets you. Happy panting escapes from your mouth as you wiggle your butt with excitement. It feels so good! You ruff softly and beg for more pets when the hand stops petting you.")
+			saynn("Ты подставляешь голову под ладонь и высовываешь язык, пока тебя гладят. Из твоего рта вырывается счастливое сопение, а задница возбужденно виляет из стороны в сторону. Это так приятно! Ты тихонько рычишь и умоляешь продолжать, когда рука замирает.")
 
-			saynn("[sayFemale]Gooood puppy[/sayFemale]")
+			saynn("[sayFemale]Хороший щенок[/sayFemale]")
 
-			saynn("You’re still blushing but holy shit, she starts scritching you behind the ear and you can’t help but to moan softly, you lay down and turn onto your back, exposing yourself even more. Both inmates start groping your {pc.masc} body and giving you belly rubs as you wiggle and squirm. Nova chuckles watching you.")
+			saynn("Ты всё еще краснеешь, но, черт возьми, она начинает чесать тебя за ушком, и ты невольно тихонько стонешь. Ты ложишься на спину, еще сильнее подставляясь под ласки. Обе заключенные начинают ощупывать твое {pc.masc} тело и гладить тебя по животу, пока ты извиваешься и ерзаешь. Нова посмеивается, наблюдая за тобой.")
 
 		# (if kitty)
 		if(!isPuppy):
-			saynn("You carefully move your head under the offered hand and let it pet you. You can’t help yourself, quiet feline-like purring escapes from your mouth, you let the hand pet you and then nuzzle it back. It feels so good. You mewl and beg for more pets, pawing at the hand when it stops petting you.")
+			saynn("Ты осторожно подставляешь голову под протянутую руку, позволяя себя гладить. Ты не можешь сдержаться, и из твоего рта вырывается тихое кошачье мурлыканье; ты подставляешься под ласку, а затем ластишься в ответ. Это так приятно. Ты мяукаешь и просишь добавки, царапая лапами руку, когда она перестает тебя гладить.")
 
-			saynn("[sayFemale]Good kitty[/sayFemale]")
+			saynn("[sayFemale]Хорошая киска[/sayFemale]")
 
-			saynn("You’re still blushing but holy shit, she starts scritching you behind the ear and you can’t help but to moan softly, you lay down and turn onto your back, exposing yourself even more. Both inmates start groping your {pc.masc} body and giving you belly rubs as you wiggle and squirm. Nova chuckles watching you.")
+			saynn("Ты всё еще краснеешь, но, черт возьми, она начинает чесать тебя за ушком, и ты невольно тихонько стонешь. Ты ложишься на спину, еще сильнее подставляясь под ласки. Обе заключенные начинают ощупывать твое {pc.masc} тело и гладить тебя по животу, пока ты извиваешься и ерзаешь. Нова посмеивается, наблюдая за тобой.")
 
-		saynn("[say=nova]So adorable.[/say]")
+		saynn("[say=nova]Такой милашка.[/say]")
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
-			saynn("One of the inmates reaches for your {pc.cock} and gently fondles your balls. You feel like you’re ready to cum there and now, your cock is twitching and leaking even more precum. Between the animal noises you begin to produce little moans.")
+			saynn("Одна из заключенных тянется к твоему {pc.cock} и нежно ласкает твои яйца. Кажется, ты готов кончить прямо здесь и сейчас: член дергается и выделяет еще больше смазки. Поверх животных звуков у тебя начинают прорываться тихие стоны.")
 
 			# (if has pussy)
 			if(GM.pc.hasVagina()):
-				saynn("Your pussy and {pc.breasts} receive some attention too, you pant and squirm more as your slit leaks with more of your juices, practically begging to be used.")
+				saynn("Твоя киска и {pc.breasts} тоже получают порцию внимания; ты тяжело дышишь и извиваешься, а из щелочки всё сильнее течёт смазка, словно ты буквально умоляешь, чтобы тебя использовали.")
 
 
 		# (else if has vagina)
 		elif(GM.pc.hasVagina()):
-			saynn("The female inmate reaches for your slit and gently rubs the clit while the guy puts his hands on your {pc.breasts} and gives them a good squeeze.  Between the animal noises you begin to produce little moans, you pant and squirm more as your slit leaks with more of your juices, practically begging to be used.")
+			saynn("Заключённая тянется к твоей щелочке и нежно потирает клитор, пока парень сжимает твои {pc.breasts} крепкими ладонями. Сквозь животные звуки, которые ты издаёшь, начинают прорываться тихие стоны; ты тяжело дышишь и извиваешься, а из щелочки всё сильнее течёт смазка, словно ты буквально умоляешь, чтобы тебя использовали.")
 
-		saynn("[say=nova]And so horny.[/say]")
+		saynn("[say=nova]Какая же ты похотливая.[/say]")
 
-		saynn("When the inmates are done with you, Nova tugs on the leash, forcing you to get up to fall fours again. She then tugs you away, making you flash your ass to the inmates as you crawl away from them.")
+		saynn("Когда заключённые заканчивают с тобой, Нова дёргает за поводок, заставляя тебя подняться и снова встать на четвереньки. Затем она тянет тебя за собой, заставляя тебя демонстрировать свою задницу заключённым, пока ты ползёшь прочь.")
 
-		addButton("Follow", "See where she brings you now", "follow2")
+		addButton("Следовать", "Посмотрим, куда она тебя приведёт теперь", "follow2")
 
 	if(state == "hissgrowl"):
 		# (if puppy)
 		if(isPuppy):
-			saynn("You show your teeth and growl at the unknown hand, showing that you’re not gonna be petted by some strangers. The inmate pulls her hand away, of course.")
+			saynn("Ты скалишься и рычишь на незнакомую руку, показывая, что не позволишь каким-то чужакам гладить себя. Заключённая, разумеется, отдёргивает руку.")
 
-			saynn("[sayFemale]Wow, {pc.he} is a bad pup.[/sayFemale]")
+			saynn("[sayFemale]Ого, {pc.he} — плохая собачка.[/sayFemale]")
 
-			saynn("[say=nova]Huh. Yes, {pc.he} needs to be punished for that.[/say]")
+			saynn("[say=nova]Хм. Да, за это {pc.he} нужно наказать.[/say]")
 
-			saynn("Nova yanks you back a few steps and pushes you down so she can deliver a few powerful spanks to your naked {pc.masc} ass. You begin to whine and whimper as you’re getting punished in front of everyone.")
+			saynn("Нова резко дёргает тебя назад и толкает вниз, чтобы отвесить несколько мощных шлепков по твоей голой {pc.masc} заднице. Ты начинаешь скулить и хныкать, получая наказание на глазах у всех.")
 
-			saynn("[say=nova]You don’t growl at people that wanna pet you, understand?[/say]")
+			saynn("[say=nova]Ты не рычишь на тех, кто хочет тебя погладить, поняла?[/say]")
 
-			saynn("Each second of waiting results in your butt getting spanked again and again, you nod very eagerly and put on sorry puppy eyes for Nova. But ow, your butt is red.")
+			saynn("Каждая секунда ожидания оборачивается тем, что твою задницу шлепают снова и снова; ты усердно киваешь и строишь виноватые глазки, глядя на Нову. Но ох, как же горит твоя задница!")
 
-			saynn("[say=nova]Good~. Maybe you wanted this.[/say]")
+			saynn("[say=nova]Умница~. Может, ты сама этого хотела.[/say]")
 
 		# (if kitty)
 		if(!isPuppy):
-			saynn("You show your fangs and hiss at the unknown hand, you bend your back upwards, showing that you’re not gonna be petted by some strangers. The inmate pulls her hand away, of course.")
+			saynn("Ты скалишь клыки и шипишь на неведомую руку, выгибая спину, показывая, что не позволишь каким-то незнакомцам себя гладить. Заключенная, конечно же, отдергивает руку.")
 
-			saynn("[sayFemale]Wow, {pc.he} is a bad kitty.[/sayFemale]")
+			saynn("[sayFemale]Ого, {pc.he} — плохая кошечка.[/sayFemale]")
 
-			saynn("[say=nova]Huh. Yes, {pc.he} needs to be punished for that.[/say]")
+			saynn("[say=nova]Хм. Да, за это {pc.he} нужно наказать.[/say]")
 
-			saynn("Nova yanks you back a few steps and pushes you down so she can deliver a few powerful spanks to your naked {pc.masc} ass. You begin to whine and whimper as you’re getting punished in front of everyone.")
+			saynn("Нова резко дёргает тебя назад и толкает вниз, чтобы отвесить несколько мощных шлепков по твоей голой {pc.masc} заднице. Ты начинаешь скулить и хныкать, получая наказание на глазах у всех.")
 
-			saynn("[say=nova]You don’t hiss at people that wanna pet you, understand?[/say]")
+			saynn("[say=nova]Нельзя шипеть на тех, кто хочет тебя погладить, поняла?[/say]")
 
-			saynn("Each second of waiting results in your butt getting spanked again and again, you nod very eagerly and put on sorry kitty eyes for Nova. But ow, your butt is red.")
+			saynn("Каждая секунда ожидания оборачивается тем, что твою задницу шлепают снова и снова; ты усердно киваешь и строишь виноватые глазки, глядя на Нову. Но ох, как же горит твоя задница!")
 
-			saynn("[say=nova]Good~. Maybe you wanted this.[/say]")
+			saynn("[say=nova]Умница~. Может, ты сама этого хотела.[/say]")
 
 			# (end)
 
-		saynn("Nova tugs on the leash, forcing you to get up to fall fours again. She then tugs you away, making you flash your ass to the inmates as you crawl away from them.")
+		saynn("Нова дергает за поводок, заставляя тебя подняться и снова встать на четвереньки. Затем она тянет тебя за собой, так что ты демонстрируешь свою задницу заключенным, пока ползешь прочь от них.")
 
-		addButton("Follow", "See where she brings you now", "follow2")
+		addButton("Следовать", "Посмотрим, куда она тебя приведёт теперь", "follow2")
 
 	if(state == "follow2"):
 		aimCameraAndSetLocName("yard_novaspot")
@@ -276,44 +276,44 @@ func _run():
 			npcBodyState={},
 		})
 		
-		saynn("You complete the full circle around the green yard and return to where you started, by the end of it you feel more used to crawling on all fours. Being on a leash makes you happy, you wiggle your butt more and rub your face into Nova’s leg.")
+		saynn("Ты совершаешь полный круг по зеленому двору и возвращаешься в исходную точку; к концу круга ты чувствуешь, что уже привыкла ползать на четвереньках. Нахождение на поводке делает тебя счастливой: ты активнее виляешь задом и трешься мордочкой о ногу Новы.")
 
 		# (if puppy)
 		if(isPuppy):
-			saynn("[say=pc]Bark bark~[/say]")
+			saynn("[say=pc]Гав-гав~[/say]")
 
 		# (if kitty)
 		if(!isPuppy):
-			saynn("[say=pc]Mew meow~[/say]")
+			saynn("[say=pc]Мяу-мяу~[/say]")
 
-		saynn("[say=nova]Huh~? It’s like I should keep you like this. You want something, cutie?[/say]")
+		saynn("[say=nova]А? Такое чувство, будто мне стоит оставить тебя в таком состоянии. Хочешь чего-нибудь, милашка?[/say]")
 
-		addButton("Shake head", "You experienced enough for now", "shake_head")
-		addButton("Oral", "You really wanna suck Nova off", "oral")
-		addButtonWithChecks("Vaginal", "Breed me!", "vaginal", [], [ButtonChecks.HasReachableVagina])
-		addButtonWithChecks("Anal", "Offer your butt!", "anal", [], [ButtonChecks.HasReachableAnus])
+		addButton("Покачать головой", "На данный момент тебе достаточно опыта", "shake_head")
+		addButton("Оральный секс", "Ты очень хочешь отсосать Нове", "oral")
+		addButtonWithChecks("Вагинальный", "Оплодотвори меня!", "vaginal", [], [ButtonChecks.HasReachableVagina])
+		addButtonWithChecks("Анальный", "Предложи свою попку!", "anal", [], [ButtonChecks.HasReachableAnus])
 
 
 
 	if(state == "shake_head"):
-		saynn("You shake your head and raise yourself until you’re kneeling. Nova leans down to you and tugs on your cheeks, making you stick your tongue.")
+		saynn("Ты качаешь головой и приподнимаешься, пока не встаешь на колени. Нова наклоняется к тебе и тянет за щеки, заставляя высунуть язык.")
 
-		saynn("[say=nova]Adorable. You may stand up.[/say]")
+		saynn("[say=nova]Прелестно. Можешь вставать.[/say]")
 
-		saynn("She disconnects the leash from your collar and gives you a few headpats. You stand up and swipe the dirt from your knees.")
+		saynn("Она отстегивает поводок от твоего ошейника и пару раз гладит тебя по голове. Ты встаешь и отряхиваешь грязь с колен.")
 
 		# (if puppy)
 		if(isPuppy):
-			saynn("[say=pc]Bark.. I mean.. thanks..[/say]")
+			saynn("[say=pc]Гав... то есть... спасибо...[/say]")
 
 		# (if kitty)
 		if(!isPuppy):
-			saynn("[say=pc]Meow.. I mean.. thanks..[/say]")
+			saynn("[say=pc]Мяу... то есть... спасибо...[/say]")
 
-		saynn("Nova chuckles and sends you off with a smack on your butt.")
+		saynn("Нова посмеивается и провожает тебя шлепком по заднице.")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 		
 
 #ACEPREGEXPAC - Giving Nova Head while she's pregnant gives a few unique lines
@@ -325,44 +325,44 @@ func _run():
 			npcBodyState={naked=true,hard=true, leashedBy="nova"},
 		})
 		if(getCharacter("nova").isVisiblyPregnant()):
-			saynn("You crawl up to Nova’s legs and put your paws on her thighs, twisting your neck to fit under her pregnant belly. She gasps as you stick your head under her skirt and press your nose against her bulge.")
+			saynn("Ты подползаешь к ногам Новы и кладешь лапы ей на бедра, изгибая шею, чтобы протиснуться под её беременный живот. Она ахает, когда ты засовываешь голову под её юбку и прижимаешься носом к её выпуклости.")
 		else:
-			saynn("You crawl up to Nova’s legs and put your paws on her thighs. She gasps as you stick your head under her skirt and press your nose against her bulge.")
+			saynn("Ты подползаешь к ногам Новы и кладешь лапы ей на бедра. Она ахает, когда ты засовываешь голову под её юбку и прижимаешься носом к её выпуклости.")
 
-		saynn("[say=nova]Someone’s thirsty~?[/say]")
+		saynn("[say=nova]Кто-то хочет пить~?[/say]")
 
 		# (if puppy)
 		if(isPuppy):
-			saynn("[say=pc]Ruff![/say]")
+			saynn("[say=pc]Гав![/say]")
 
 		# (kitty)
 		if(!isPuppy):
-			saynn("[say=pc]Meow~[/say]")
+			saynn("[say=pc]Мяу~[/say]")
 
-		saynn("You wiggle your {pc.thick} ass as you nuzzle her crotch. You feel her cock getting harder under the suit, Nova bites her lip as you try to find the zipper, licking and nibbling around her crotch. She wraps the leash around her hand so you can’t back away anymore even if you wanted.")
+		saynn("Ты виляешь своей {pc.thick} задницей, уткнувшись носом в её промежность. Ты чувствуешь, как её член под костюмом становится тверже; Нова прикусывает губу, пока ты пытаешься нащупать молнию, облизывая и покусывая её пах. Она наматывает поводок на руку, так что ты уже не сможешь отстраниться, даже если захочешь.")
 
-		saynn("[say=nova]Such a silly~[/say]")
+		saynn("[say=nova]Такой глупыш~[/say]")
 
-		saynn("Eventually you stumble upon a hidden zipper with your tongue and tug on it, exposing her red canine cock, it’s so hard that it lifts her skirt up. You press your muzzle against it and let it drip precum onto your face, sniffing her horny scent makes you feel even more aroused. You drag your tongue along the veiny texture of her member and then take the pointy tip in. Nova lets out a few little moans and scritches you behind the ear.")
+		saynn("В конце концов, ты нащупываешь языком спрятанную молнию и тянешь за неё, обнажая её красный собачий член — он настолько твердый, что приподнимает юбку. Ты прижимаешься к нему мордой, позволяя предэякуляту капать тебе на лицо; её возбужденный запах заставляет тебя возбуждаться еще сильнее. Ты проводишь языком по венистой текстуре её члена, а затем берешь в рот самый кончик. Нова издает несколько тихих стонов и чешет тебя за ушком.")
 
 		# (if puppy)
 		if(isPuppy):
-			saynn("[say=nova]Such a good puppy.[/say]")
+			saynn("[say=nova]Такая хорошая щеночка.[/say]")
 
 		# (if kitty)
 		if(!isPuppy):
-			saynn("[say=nova]Such a good kitty.[/say]")
+			saynn("[say=nova]Такая хорошая кошечка.[/say]")
 
-		saynn("You suck a little bit on her cock, getting used to the taste of her precum, you notice her knot slightly inflating already. You stick your tongue out and proceed to drag it across her member as you take more of it in. You stop just before the tip hits the back of your mouth and instead begin moving back and forth, taking you time, sucking Nova’s cock. She looks very aroused, her canine scent was only becoming stronger, she puts her paws on your head and offers you support, pulling your head onto her cock harder.")
+		saynn("Ты слегка посасываешь её член, привыкая к вкусу её предэякулята, и замечаешь, что её узел уже начинает понемногу раздуваться. Ты высовываешь язык и проводишь им по всей длине её достоинства, заглатывая его всё глубже. Ты останавливаешься аккурат перед тем, как головка упрется в заднюю стенку горла, и начинаешь медленно двигаться вперед-назад, неспешно посасывая член Новы. Она выглядит очень возбужденной, её собачий запах становится всё сильнее; она кладет лапы тебе на голову, помогая себе и сильнее прижимая твою голову к своему члену.")
 
-		saynn("[say=nova]Take it, slut~[/say]")
+		saynn("[say=nova]Принимай, сучка~[/say]")
 		if(getCharacter("nova").isVisiblyPregnant()):
-			saynn("You hold your paws on one of her thighs and the underside of her belly so she is free to make use of your mouth hole, she gets a better grasp and applies more pressure, causing her cock to slide deeper into your mouth and stretching your throat out, testing how well you can control your gag reflex. It gets to the point of her knot slapping against your nose as she starts to face-fuck you, throat bulging as you’re getting stretched. Your eyes roll up slightly, lack of air makes it really hard to concentrate. But it feels good, you keep pushing yourself deeper onto her cock and using your tongue to deliver so much pleasure to Nova that she starts to arch her back and moan loudly.")
+			saynn("Ты держишь лапы на одном из её бедер и на нижней части живота, чтобы она могла свободно использовать твой рот; она захватывает тебя увереннее и усиливает нажим, заставляя её член проскальзывать глубже в твой рот и растягивать горло, проверяя, насколько хорошо ты контролируешь рвотный рефлекс. Доходит до того, что её узел начинает хлопать тебя по носу, когда она начинает жестко ебать тебе рот, а твоё горло раздувается от растяжения. Твои глаза слегка закатываются, а из-за нехватки воздуха становится трудно сосредоточиться. Но это чертовски приятно: ты продолжаешь насаживаться всё глубже на её член, лаская Нову языком так искусно, что она начинает выгибать спину и громко стонать.")
 		else:
-			saynn("You hold your paws on her legs so she is free to make use of your mouth hole, she gets a better grasp and applies more pressure, causing her cock to slide deeper into your mouth and stretching your throat out, testing how well you can control your gag reflex. It gets to the point of her knot slapping against your nose as she starts to face-fuck you, throat bulging as you’re getting stretched. Your eyes roll up slightly, lack of air makes it really hard to concentrate. But it feels good, you keep pushing yourself deeper onto her cock and using your tongue to deliver so much pleasure to Nova that she starts to arch her back and moan loudly.")
+			saynn("Ты держишь лапы на её бёдрах, давая ей полную свободу действий; она крепче сжимает их и нажимает сильнее, отчего её член проскальзывает глубже в твой рот, растягивая горло и проверяя, насколько хорошо ты контролируешь рвотный рефлекс. Доходит до того, что её узел начинает хлопать тебя по носу, когда она начинает жестко ебать тебя в рот, а твоё горло раздувается от растяжения. Глаза слегка закатываются, а нехватка воздуха мешает сосредоточиться. Но это чертовски приятно: ты продолжаешь насаживаться всё глубже на её член, лаская Нову языком так искусно, что она начинает выгибать спину и громко стонать.")
 
-		addButton("Take it", "Let her cum down your throat", "take_it")
-		addButton("Outside", "You don’t wanna swallow Nova’s load", "outside")
+		addButton("Принимай", "Позволить ей кончить тебе в горло", "take_it")
+		addButton("Снаружи", "Ты не хочешь глотать Nova's load", "outside")
 
 	if(state == "take_it"):
 		playAnimation(StageScene.SexOral, "fast", {
@@ -371,32 +371,32 @@ func _run():
 			npcBodyState={naked=true,hard=true, leashedBy="nova"},
 		})
 		
-		saynn("It only takes a few more seconds before that knot inflates even more and the whole cock starts throbbing inside your maw, the walls of your tight throat clench around the shaft and try to milk it, Nova moans as she shoves her member as deep as she can before going over the peak. Your belly quickly gets stuffed with her sticky cum, the husky sticks her tongue out and lets out passionate noises as more and more waves of hot semen get pushed into you. So much that some cum finds its way back and stuffs your mouth.")
+		saynn("Проходит всего несколько секунд, прежде чем узел раздувается ещё сильнее, и весь член начинает пульсировать у тебя в пасти; стенки твоего узкого горла сжимаются вокруг ствола, пытаясь «доить» его. Нова стонет, заталкивая свой член так глубоко, как только может, прежде чем достичь пика. Твой живот быстро наполняется её липкой спермой; хаски высовывает язык и издаёт страстные звуки, пока всё новые и новые волны горячего семени вливаются в тебя. Столько, что часть спермы выплескивается обратно и наполняет тебе рот.")
 
-		saynn("[say=nova]Fuck me~[/say]")
+		saynn("[say=nova]Еби меня~[/say]")
 
-		saynn("Your eyes are rolled up, cheeks blushing red, you’re drooling saliva and cum. Nova tries to pull out but you hug her legs and don’t let her, you don’t wanna drop a single drop like a good slutty pet. It’s only when her balls are completely drained, you pull away and start gasping for air.")
+		saynn("Твои глаза закатились, щеки пылают румянцем, изо рта течет слюна вперемешку со спермой. Нова пытается вытащить член, но ты обхватываешь её ноги и не отпускаешь — ты не хочешь упустить ни единой капли, как послушная сучка-питомец. И только когда её яички полностью опустеют, ты отстраняешься, жадно хватая ртом воздух.")
 
-		saynn("You both are panting heavily. You left Nova’s cock in a pretty messy state so you quickly return to it and start licking it clean, gathering all the cum and swallowing it as needed. You clean her meaty stick and offer Nova the view of your empty mouth. She smiles and pats you many times.")
+		saynn("Вы оба тяжело дышите. Ты оставил член Новы в довольно грязном состоянии, поэтому ты быстро возвращаешься к нему и начинаешь вылизывать его дочиста, собирая всю сперму и заглатывая её по мере необходимости. Ты очищаешь её мясистый ствол и демонстрируешь Нове свой пустой рот. Она улыбается и несколько раз ласково хлопает тебя по щекам.")
 
-		saynn("[say=nova]Good little cocksucker pet~[/say]")
+		saynn("[say=nova]Хорошая маленькая сучка-сосальщица~[/say]")
 
-		saynn("She puts away her cock and undoes the leash, letting you stand up.")
+		saynn("Она убирает член и расстегивает поводок, позволяя тебе встать.")
 
 		# (if puppy)
 		if(isPuppy):
-			saynn("[say=pc]Bark..[/say]")
+			saynn("[say=pc]Гав..[/say]")
 
 		# (if kitty)
 		if(!isPuppy):
-			saynn("[say=pc]Meow..[/say]")
+			saynn("[say=pc]Мяу..[/say]")
 
-		saynn("[say=nova]Thanks for sucking my cock, couldn’t have done it without you~[/say]")
+		saynn("[say=nova]Спасибо, что отсосала мне~ без тебя бы не справилась~[/say]")
 
-		saynn("You’re very messy but at least you didn’t add a layer of cum to it. You quickly fix your hair and get ready to leave.")
+		saynn("Ты выглядишь очень неопрятно, но, по крайней мере, не добавил к этому слою еще и спермы. Ты быстро поправляешь волосы и готовишься к выходу.")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 
 	if(state == "outside"):
@@ -407,20 +407,20 @@ func _run():
 			npcBodyState={naked=true,hard=true, leashedBy="nova"},
 		})
 		
-		saynn("It only takes a few more seconds before that knot inflates even more and the whole cock starts throbbing inside your maw, the walls of your tight throat clench around the shaft. You feel like Nova is about to cum any second so you push your hands against her thighs and manage to escape her grasp.")
+		saynn("Проходит всего несколько секунд, прежде чем узел раздувается еще сильнее, и весь член начинает пульсировать у тебя во рту, а стенки твоего узкого горла сжимаются вокруг ствола. Ты чувствуешь, что Нова вот-вот кончит, поэтому упираешься руками в её бедра и умудряешься вырваться из её хватки.")
 
-		saynn("You pull away from her cock and it’s too late for the husky to do anything, she groans as she cums hard, her messy cock throbbing and shooting a line after line of sticky cum that hits your face and hair. You keep your eyes and mouth closed but you still got to taste it, Nova holds your face pressed against her cock as it explodes with more cum. Your head, your neck, your shoulders, {pc.breasts}, all quickly get covered with cum.")
+		saynn("Ты отстраняешься от её члена, но для хаски уже слишком поздно — она стонет от мощного оргазма, её разбухший член пульсирует, выстреливая струями липкой спермы прямо тебе в лицо и волосы. Ты держишь глаза и рот закрытыми, но вкус всё равно чувствуешь; Нова прижимает твоё лицо к своему члену, пока тот взрывается новой порцией семени. Твоя голова, шея, плечи, {pc.breasts} — всё быстро покрывается спермой.")
 
-		saynn("[say=nova]Didn’t wanna swallow and now you’re messy, bitch~[/say]")
+		saynn("[say=nova]Не хотела глотать, а теперь вся в этой жиже, сучка~[/say]")
 
-		saynn("When that’s over, you can only open one eye. You’re a complete mess, cum keeps dripping from you. Nova carefully removes the leash and lets you stand up.")
+		saynn("Когда всё заканчивается, ты можешь открыть лишь один глаз. Ты выглядишь как полный беспорядок, с тебя всё ещё капает сперма. Нова осторожно снимает поводок и позволяет тебе встать.")
 
-		saynn("[say=nova]Hah, I don’t mind, you look like such a cute pet right now~[/say]")
+		saynn("[say=nova]Хах, я не против, сейчас ты выглядишь такой милой домашней зверушкой~[/say]")
 
-		saynn("You’re blushing a lot, opening your mouth right now would mean getting more cum onto your tongue so you decide to stay quiet. You grab your belongings and get ready to leave.")
+		saynn("Ты сильно краснеешь; понимая, что если сейчас откроешь рот, то на язык попадет еще больше спермы, ты решаешь молчать. Ты хватаешь свои вещи и готовишься уходить.")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 		
 
 	if(state == "vaginal"):
@@ -433,22 +433,22 @@ func _run():
 
 		# (if puppy)
 		if(isPuppy):
-			saynn("You ruff playfully and turn around, putting your wet pussy and ass on full display. Nova hums as you eagerly wiggle your {pc.thick} butt and spread your legs more for her. It’s quite visible that the husky is visibly aroused by your actions.")
+			saynn("Ты игриво рычишь и разворачиваешься, выставляя напоказ свою мокрую киску и задницу. Нова довольно мурлычет, пока ты с энтузиазмом виляешь своей {pc.thick} попой и шире раздвигаешь ноги перед ней. Совершенно очевидно, что хаски возбуждена твоими действиями.")
 
-			saynn("[say=nova]Such a needy puppy~[/say]")
+			saynn("[say=nova]Какая жадная до ласки собачка~[/say]")
 
 		# (if kitty)
 		if(!isPuppy):
-			saynn("You purr softly and rub your back against Nova’s legs as you crawl around her. You let the husky catch glimpses of your exposed pussy that is visibly wet. Nova hums as you stop a few steps away from her and lower your chest down to the floor so you can tease your slit in front of her.")
+			saynn("Ты тихо мурлычешь и трешься спиной о ноги Новы, ползая вокруг неё. Ты позволяешь хаски поглядывать на свою обнаженную, заметно влажную киску. Нова издает довольный звук, когда ты останавливаешься в паре шагов от неё и опускаешь грудь на пол, дразня её своей щелочкой прямо перед её глазами.")
 
-			saynn("[say=nova]Such a needy kitty~[/say]")
+			saynn("[say=nova]Какая жадная до ласки кошечка~[/say]")
 
-		saynn("You look behind you and notice Nova’s skirt bulging slightly. She chuckles and lifts it, exposing the undersuit underneath. Her hands catch the hidden zipper and undo it, exposing her hard canine cock that has a drop of precum hanging from its tip already.")
+		saynn("Ты оглядываешься назад и замечаешь, что юбка Новы слегка выпирает. Она посмеивается и приподнимает её, обнажая под собой комбинезон. Её пальцы находят скрытую молнию и расстегивают её, открывая её твердый собачий член, на кончике которого уже дрожит капля предэякулята.")
 
-		saynn("[say=nova]You want this, sweetie~?[/say]")
+		saynn("[say=nova]Хочешь этого, сладенький~?[/say]")
 
-		addButton("Nod", "No protection, you’re feeling very risky", "vaginalNoCondom")
-		addButtonWithChecks("Condom", "Offer your best condom to her", "vaginalCondom", [], [ButtonChecks.HasCondoms])
+		addButton("Кивнуть", "Без защиты, ты настроен очень рискованно", "vaginalNoCondom")
+		addButtonWithChecks("Презерватив", "Предложить ей свой лучший презерватив", "vaginalCondom", [], [ButtonChecks.HasCondoms])
 
 	if(state == "fucking"):
 		playAnimation(StageScene.SexAllFours, "sex", {
@@ -459,47 +459,47 @@ func _run():
 		
 		# (if condom)
 		if(usedCondom):
-			saynn("You quickly rummage through your belongings and produce a packaged condom. You grab it with your mouth and proceed to wiggle your behind while watching Nova, your needy pussy gets more aroused from anticipation.")
+			saynn("Ты быстро рыщешь в своих вещах и достаешь упакованный презерватив. Ты захватываешь его ртом и начинаешь вилять задницей, не сводя глаз с Новы; твоя жаждущая киска возбуждается всё сильнее от предвкушения.")
 
-			saynn("[say=nova]You look so slutty with that thing, aww.[/say]")
+			saynn("[say=nova]С этой штукой ты выглядишь такой шлюшкой, оуу.[/say]")
 
 		# (else)
 		else:
-			saynn("You nod eagerly and just offer Nova the best view of your needy pussy you can give. You stick your tongue out at the husky, with each second you feel more aroused just from anticipation.")
+			saynn("Ты жадно киваешь и стараешься показать Нове самый лучший вид своей жаждущей киски. Ты высовываешь язык перед хаски, и с каждой секундой предвкушение возбуждает тебя всё сильнее.")
 
-			saynn("[say=nova]Well, don’t complain when you get my pups, slut~.[/say]")
+			saynn("[say=nova]Ну, тогда не ной, когда забеременеешь моими щенками, шлюшка~.[/say]")
 
-		saynn("Nova unzips the skirt so it wouldn’t get in the way and takes off some armor pieces too, her bodysuit emphasizes her rich muscle structure. She crouches behind you and licks her digits before shoving a few down your snatch. You moan as she quickly checks how lubricated you are. And she seems very satisfied.")
+		saynn("Нова расстегивает молнию на юбке, чтобы та не мешала, и также снимает несколько элементов брони; её боди подчеркивает её развитую мускулатуру. Она приседает позади тебя и облизывает пальцы, прежде чем засунуть их тебе в щель. Ты стонешь, когда она быстро проверяет, насколько ты смажена. И она выглядит очень довольной.")
 
 		# (if puppy)
 		if(isPuppy):
-			saynn("[say=nova]I’m gonna fuck you doggystyle because that’s what a pup deserves.[/say]")
+			saynn("[say=nova]Я оттрахаю тебя в позе собаки, потому что именно этого заслуживает щенок.[/say]")
 
-			saynn("[say=pc]R-Ruff![/say]")
+			saynn("[say=pc]Р-Ррр-гав![/say]")
 
 		# (if kitty)
 		if(!isPuppy):
-			saynn("[say=nova]I’m a dog so today you’re getting fucked doggystyle, kitty.[/say]")
+			saynn("[say=nova]Раз я собака, то сегодня тебя будут трахать в позе догги, киска.[/say]")
 
-			saynn("[say=pc]M-mew![/say]")
+			saynn("[say=pc]М-мяу![/say]")
 
 		# (if condom)
 		if(usedCondom):
-			saynn("She fetches the condom from your maw and swiftly opens the package. She then takes the rubber and puts it on her cock, stretching it over the whole length of her shaft, its tip already holding some precum.")
+			saynn("Она выхватывает презерватив из твоей пасти и быстро вскрывает упаковку. Затем она берет резинку и натягивает её на свой член, растягивая по всей длине ствола, кончик которого уже покрыт предэякулятом.")
 
-		saynn("Nova doesn’t plan to wait for very long, she puts her paws on your hips and pulls them back while directing her hard veiny cock towards your cunt. You gasp as your pussy petals get forced open and stretched for Nova to shove her dick inside, the amount of natural lube certainly helps.")
+		saynn("Нова не собирается долго ждать: она кладет лапы тебе на бедра и тянет их назад, направляя свой твердый, вздутый венами член прямо к твоей щелке. Ты ахаешь, когда лепестки твоей киски принудительно раздвигаются и растягиваются, чтобы Нова могла вогнать в тебя свой член; обилие естественной смазки определенно помогает.")
 
-		saynn("She is doing it right here, in a place that’s barely secluded, any inmate walking past would probably notice you being fucked by a guard. But you don’t mind, you love both the idea and the execution of it, you hold onto the stone tiles while Nova holds your butt above the floor and uses your cunt for her pleasure.")
+		saynn("Она делает это прямо здесь, в месте, которое едва ли можно назвать уединенным — любой проходящий мимо заключенный наверняка заметит, как охранница трахает тебя. Но тебе плевать, тебе нравится и сама идея, и её воплощение; ты вцепляешься в каменную плитку, пока Нова приподнимает твою задницу над полом, используя твою киску для своего удовольствия.")
 
-		saynn("You try to only make animal noises but the moans do start to slip past your lips, Nova’s cock is about 18 centimeters so she can easily stretch you out. She gets a grasp on your hair and uses it to make you move towards her cock as she thrusts inside, you can feel the bump appearing on your lower belly as she starts pounding at your cervix. You stick your tongue out and start moaning a lot, your pussy leaks more of your juices, creating a little wet spot under you both.")
+		saynn("Ты стараешься издавать только звериные звуки, но стоны всё равно начинают срываться с твоих губ. Член Новы около 18 сантиметров, так что она легко тебя растягивает. Она хватает тебя за волосы и, используя их, тянет тебя навстречу своему члену, когда вбивается внутрь; ты чувствуешь, как на твоем низ живота проступает бугорок, когда она начинает долбить прямо в шейку матки. Ты высунув язык, начинаешь громко стонать, твоя киска выделяет еще больше соков, создавая под вами маленькое мокрое пятно.")
 
-		saynn("Nova’s knot is inflating. You can’t see it but you certainly feel how it’s slapping against your pussy lips each time she pushes her hips forward. Nova’s lips produce some little moans too in between all the panting, it seems she wants to breed you nice and swift.")
+		saynn("Узел Новы раздувается. Ты его не видишь, но отчетливо чувствуешь, как он шлепает по твоим половым губам каждый раз, когда она подается бедрами вперед. Между тяжелыми вздохами Нова издает тихие стоны — похоже, она хочет осеменить тебя как можно скорее.")
 
-		saynn("[say=nova]Ready to be knotted, slut? I’m not gonna stop now.[/say]")
+		saynn("[say=nova]Готова к узлу, сучка? Я сейчас не остановлюсь![/say]")
 
-		saynn("With each her thrusts, your cunt is getting stretched more and more by Nova knot, it already starts to slip in deeper. You drool all over the floor and touch your {pc.breasts} with one hand, pulling on the firm nipple. Your own moans become louder. Fuck, you’re gonna cum.")
+		saynn("С каждым её толчком узел Новы растягивает твою киску всё сильнее, он уже начинает проскальзывать всё глубже. Ты пускаешь слюни на пол и одной рукой трогаешь свой {pc.breasts}, натягивая тугой сосок. Твои собственные стоны становятся громче. Блядь, ты сейчас кончишь.")
 
-		addButton("Cum", "Can’t hold it off forever", "vaginalcum")
+		addButton("Кончить", "Нельзя сдерживаться вечно", "vaginalcum")
 
 	if(state == "vaginalcum"):
 		playAnimation(StageScene.SexAllFours, "fast", {
@@ -509,43 +509,43 @@ func _run():
 			npcBodyState={naked=true,hard=true, leashedBy="nova"},
 		})
 		
-		saynn("Your whole body starts to experience orgasmic convulsions, your legs shake, body shivers, you squirm under Nova while your pussy gets tighter around her cock and starts to squirt. Your inner walls clench around the canine member, milking it while the cervix becomes less rigid and opens up more. Your passionate moans can probably be heard from a long distance so Nova decides to help you and shoves her paw into your mouth for you to suck on.")
+		saynn("Всё твоё тело сотрясают оргазмические конвульсии: ноги дрожат, тело бьет озноб, ты извиваешься под Новой, пока твоя киска сжимается вокруг её члена и начинает брызгать. Внутренние стенки обхватывают собачий орган, высасывая из него всё, пока шейка матки становится мягче и приоткрывается. Твои страстные стоны, должно быть, слышны за версту, поэтому Нова решает помочь тебе и засовывает лапу тебе в рот, чтобы ты могла её сосать.")
 
 		# (if has cock)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("Your cock throbs and shoots a weak line of {pc.cum} through the hole in your chastity cage onto the stone pathway underneath you!")
+			saynn("Твой член пульсирует и выпускает слабую струю {pc.cum} через отверстие в твоей девственной клетке прямо на каменную дорожку под тобой!")
 		elif(GM.pc.hasPenis()):
-			saynn("Your cock throbs and shoots a strong line of {pc.cum} onto the stone pathway underneath you!")
+			saynn("Твой член пульсирует и выпускает мощную струю {pc.cum} прямо на каменную дорожку под тобой!")
 
-		saynn("[say=nova]Oh fuck, your cunt is gonna make me cum.[/say]")
+		saynn("[say=nova]Ох, блядь, от твоей киски я сейчас кончу![/say]")
 
-		saynn("And indeed, Nova puts all her strength into the next thrust and manages to shove her inflated red orb inside you, stretching your slit twice as much as it was before. The pure sensation of getting knotted sends you over the second peak instantly, you cum and squirt again, your pussy pulsates around the orb, trying to squeeze it but it’s no help, Nova’s is completely inside you, its head breaks into your womb.")
+		saynn("И действительно, Нова вкладывает все свои силы в следующий толчок и умудряется затолкнуть свой раздутый красный шар глубоко в тебя, растягивая твою щель вдвое сильнее, чем прежде. Чистое ощущение узла мгновенно выбрасывает тебя на вторую вершину: ты кончаешь и снова заливаешься фонтаном, твоя киска пульсирует вокруг шара, пытаясь сжать его, но всё бесполезно — Нова зашла целиком, и её головка пробивается прямо в твою матку.")
 
 		# (if condom)
 		if(usedCondom && !condomBroke):
-			saynn("Nova can’t pull out or even just move anymore, only about a second passes before she lets out a series of groans and moans as her cock starts filling the condom inside your womb. There is so much, your belly quickly becomes inflated. The husky is experiencing the climax together with you. But then she slaps your ass and holds you pinned to the floor, still with the cock deep inside.")
+			saynn("Нова больше не может ни вытащиться, ни даже просто пошевелиться; проходит всего секунда, прежде чем она издает серию стонов и рыков, когда её член начинает наполнять презерватив внутри твоей матки. Его так много, что твой живот быстро раздувается. Хаски переживает оргазм вместе с тобой. Но затем она хлопает тебя по заднице и прижимает к полу, всё еще удерживая член глубоко внутри.")
 
 		# (if condom broke)
 		if(usedCondom && condomBroke):
-			saynn("Nova can’t pull out or even just move anymore, only about a second passes before she lets out a series of groans and moans as her cock starts filling the condom inside your womb. There is so much, your belly quickly becomes inflated. But you feel kinda strange.. You feel the hot cum freely slashing inside your womb.. [b]Oh no, the condom broke, spilling out all of its contents[/b]. Still, not knowing that, Nova slaps your ass and holds you pinned to the floor, still with the cock deep inside.")
+			saynn("Нова больше не может ни вытащиться, ни даже просто пошевелиться; проходит всего секунда, прежде чем она издает серию стонов и рыков, когда её член начинает наполнять презерватив внутри твоей матки. Его так много, что твой живот быстро раздувается. Но ты чувствуешь что-то странное... Ты чувствуешь, как горячая сперма свободно хлещет внутри твоей матки... [b]О нет, презерватив порвался, и всё содержимое вылилось наружу[/b]. Тем не менее, не зная об этом, Нова хлопает тебя по заднице и прижимает к полу, всё еще удерживая член глубоко внутри.")
 
 		# (if no condom)
 		if(!usedCondom):
-			saynn("Nova can’t pull out or even just move anymore, only about a second passes before she lets out a series of groans and moans as her cock starts filling your womb to the brim with virile cum. There is so much, your belly quickly becomes inflated. The husky is experiencing the climax together with you, moaning loudly and panting. But then she slaps your ass and holds you pinned to the floor, still with the cock deep inside.")
+			saynn("Нова больше не может ни вытащить член, ни даже просто пошевелиться; проходит всего секунда, прежде чем она начинает издавать серию стонов и скулежа, когда её член начинает наполнять твою утробу до самых краев вирильной спермой. Её так много, что твой живот быстро раздувается. Хаски испытывает оргазм вместе с тобой, громко стоная и тяжело дыша. Но затем она хлопает тебя по заднице и прижимает к полу, всё еще удерживая член глубоко внутри.")
 
-		saynn("[say=nova]Good slut~. And now we rest until my knot deflates.[/say]")
+		saynn("[say=nova]Хорошая сучка~. А теперь будем отдыхать, пока мой узел не спадет.[/say]")
 
-		saynn("The knot seems to isolate most of the leakage. You try to escape it but no, you’re stuck together for quite a while. At least it gives you time to catch your breath.")
+		saynn("Кажется, узел удерживает почти всю утечку. Ты пытаешься вырваться, но нет — вы сцеплены на довольно долгое время. По крайней мере, это дает тебе возможность перевести дух.")
 
 		# (if puppy)
 		if(isPuppy):
-			saynn("[say=pc]W-wuf..[/say]")
+			saynn("[say=pc]В-вуф..[/say]")
 
 		# (if kitty)
 		if(!isPuppy):
-			saynn("[say=pc]M-meow..[/say]")
+			saynn("[say=pc]М-мяу..[/say]")
 
-		addButton("Rest", "Aftercare is good, right?", "vagrest")
+		addButton("Отдохнуть", "Последующий уход — это ведь хорошо, да?", "vagrest")
 
 	if(state == "vagrest"):
 		playAnimation(StageScene.SexAllFours, "tease", {
@@ -554,64 +554,64 @@ func _run():
 			npcBodyState={naked=true,hard=true, leashedBy="nova"},
 		})
 		
-		saynn("You both lay down on the floor for about half an hour. Eventually you begin to feel the discomfort of being stretched so much for so long so you whine a bit. Nova pets you and caresses your body.")
+		saynn("Вы оба лежите на полу около получаса. В конце концов ты начинаешь чувствовать дискомфорт от того, что тебя так долго и сильно растягивали, и начинаешь немного поскуливать. Нова гладит тебя и ласкает твоё тело.")
 
-		saynn("[say=nova]It’s okay, sweetie. It’s almost out.[/say]")
+		saynn("[say=nova]Всё хорошо, милая. Он почти вышел.[/say]")
 
 		# (if condom)
 		if(usedCondom && !condomBroke):
-			saynn("After some effort Nova finally manages to pull out her cock. Luckily, all of the cum is still held by the condom inside you. Nova carefully ties it up and pulls it out too.")
+			saynn("После некоторых усилий Нове наконец удается вытащить свой член. К счастью, вся сперма всё еще удерживается презервативом внутри тебя. Нова осторожно завязывает его и тоже вытаскивает.")
 
-			saynn("[say=nova]That’s a nice load~.[/say]")
+			saynn("[say=nova]Классный выплеск~.[/say]")
 
 		# (if condom broke)
 		if(usedCondom && condomBroke):
-			saynn("After some effort Nova finally manages to pull out her cock. But that’s when she realizes that something is wrong, your used cunt is leaking cum a lot, meaning that the condom broke..")
+			saynn("Приложив немало усилий, Нова наконец вытаскивает свой член. Но именно в этот момент она понимает, что что-то не так: твоя использованная киска вовсю течет спермой — похоже, презерватив порвался...")
 
-			saynn("[say=nova]Ohh, tough love, cutie. I think I might have bred you by accident, hope you don’t mind~[/say]")
+			saynn("[say=nova]Ох, суровая любовь, милашка. Кажется, я случайно тебя осеменила, надеюсь, ты не против~[/say]")
 
 			# (if puppy)
 			if(isPuppy):
-				saynn("You perk your ears.")
+				saynn("Ты навострил уши.")
 
-				saynn("[say=pc]BARK?[/say]")
+				saynn("[say=pc]ГАВ?[/say]")
 
 			# (if kitty)
 			if(!isPuppy):
-				saynn("You perk your ears.")
+				saynn("Ты навострил уши.")
 
-				saynn("[say=pc]MEOW?[/say]")
+				saynn("[say=pc]МЯУ?[/say]")
 
-			saynn("[say=nova]The condom broke~[/say]")
+			saynn("[say=nova]Презерватив порвался~[/say]")
 
-			saynn("Oh well, what can you do.")
+			saynn("Ну что ж, тут уж ничего не поделаешь.")
 
 		# (if nothing)
 		if(!usedCondom):
-			saynn("After some effort Nova finally manages to pull out her messy cock. Your used cunt is leaking cum a lot, the husky spanks your ass and the stream increases for a second.")
+			saynn("Приложив усилия, Нова наконец вытаскивает свой испачканный член. Твоя использованная киска обильно течет спермой; хаски шлепает тебя по заднице, и поток на секунду усиливается.")
 
-			saynn("[say=nova]Such a slut~[/say]")
+			saynn("[say=nova]Такая шлюшка~[/say]")
 
 		# (if puppy)
 		if(isPuppy):
-			saynn("[say=pc]Bark..[/say]")
+			saynn("[say=pc]Гав..[/say]")
 
 		# (if kitty)
 		if(!isPuppy):
-			saynn("[say=pc]Meow..[/say]")
+			saynn("[say=pc]Мяу..[/say]")
 
-		saynn("Nova offers you her cock and you quickly clean it for her. Then she puts it away and disconnects the leash from your collar.")
+		saynn("Нова подставляет тебе свой член, и ты быстро вылизываешь его для неё. Затем она убирает его и отстегивает поводок от твоего ошейника.")
 
-		saynn("[say=nova]You may stand up, sweetie.[/say]")
+		saynn("[say=nova]Можешь вставать, сладенькая.[/say]")
 
-		saynn("[say=pc]T-thanks..[/say]")
+		saynn("[say=pc]С-спасибо...[/say]")
 
-		saynn("You stand up and gather your belongings.")
+		saynn("Ты встаешь и собираешь свои вещи.")
 
-		saynn("[say=nova]See you around~[/say]")
+		saynn("[say=nova]Еще увидимся~[/say]")
 
 		# (scene end)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 		
 	if(state == "anal"):
 		playAnimation(StageScene.SexAllFours, "tease", {
@@ -621,41 +621,41 @@ func _run():
 		})
 		# (if puppy)
 		if(isPuppy):
-			saynn("You ruff playfully and crawl around Nova on all fours before stopping before her and turning around so she can see your {pc.masc} butt in full glory. You wiggle it eagerly and spread your rear legs more so she can get a look at your {pc.analStretch} star.")
+			saynn("Ты игриво рычишь и ползаешь вокруг Новы на четвереньках, после чего останавливаешься перед ней и разворачиваешься, чтобы она могла во всей красе рассмотреть твою {pc.masc} задницу. Ты нетерпеливо виляешь ею и сильнее разводишь задние лапы, чтобы она могла разглядеть твою {pc.analStretch} киску.")
 
 			# (if has cock)
 			if(GM.pc.isWearingChastityCage()):
-				saynn("Your chastity cage wiggles too as you do it. You are horny so much that you keep dripping onto the stone floor.")
+				saynn("Твоя клетка целомудрия тоже подрагивает в такт твоим движениям. Ты настолько возбуждена, что смазка продолжает капать на каменный пол.")
 			elif(GM.pc.hasPenis()):
-				saynn("Your {pc.cock} wiggles too as you do it. You are horny so much that you keep dripping onto the stone floor.")
+				saynn("Твоя {pc.cock} задница тоже виляет в такт движениям. Ты настолько возбуждена, что смазка продолжает капать на каменный пол.")
 
 		# (if kitty)
 		if(!isPuppy):
-			saynn("You purr softly and crawl around Nova on all fours, making sure to put as much elegance as you can into your paw and hip movement. Then stop before Nova and teasingly offer her a view of your {pc.analStretch} star. You wiggle your {pc.masc} butt and watch her with your eyes full of desire.")
+			saynn("Ты тихо мурлычешь и ползаешь вокруг Новы на четвереньках, стараясь придавать движениям лап и бедер как можно больше элегантности. Затем ты замираешь перед Новой и дразняще подставляешь ей свою {pc.analStretch} киску. Ты виляешь своей {pc.masc} задницей, глядя на неё глазами, полными желания.")
 
 			# (if has cock)
 			if(GM.pc.isWearingChastityCage()):
-				saynn("Your chastity cage wiggles too as you do it. You are horny so much that you keep dripping onto the stone floor.")
+				saynn("Твоя клетка целомудрия тоже подрагивает в такт твоим движениям. Ты настолько возбуждена, что смазка продолжает капать на каменный пол.")
 			elif(GM.pc.hasPenis()):
-				saynn("Your {pc.cock} wiggles too as you do it. You are horny so much that you keep dripping onto the stone floor.")
+				saynn("Твоя {pc.cock} задница тоже виляет в такт движениям. Ты настолько возбуждена, что смазка продолжает капать на каменный пол.")
 
-		saynn("[say=nova]My little pet wants to be fucked, huh~. How can I say no to that.[/say]")
+		saynn("[say=nova]Моя маленькая зверушка хочет, чтобы её оттрахали, да?~ Как тут можно отказать...[/say]")
 
-		saynn("Nova quickly drops her skirt and finds a hidden zipper on her undersuit that she undoes, exposing her sheath with the red canine cock that’s slightly peeking. Then she wraps the leash around her hand and yanks you closer to her crotch, forcing your face into her ballsack.")
+		saynn("Нова быстро сбрасывает юбку и находит скрытую молнию на своем комбинезоне, расстегивая её и обнажая чехол, из которого слегка выглядывает красный собачий член. Затем она обматывает поводок вокруг руки и резко тянет тебя к своему паху, вжимая твоё лицо в её мошонку.")
 
-		saynn("[say=nova]You better lick me good first cause that’s all the lube you’re getting~[/say]")
+		saynn("[say=nova]Сначала хорошенько меня облизай, потому что это — вся смазка, которую ты получишь~[/say]")
 
-		saynn("You eagerly press your face into the area between the sheath and the balls and give it a good sniff. Then you stick your tongue out and start lapping at her package, your paws rest on her knees while she holds your leash and keeps it deliberately short so you can feel your collar digging into your neck more.")
+		saynn("Ты с жадностью утыкаешься лицом в складку между чехлом и мошонкой, глубоко вдыхая запах. Затем ты высовываешь язык и начинаешь слизывать влагу с её паха; твои лапы лежат на её коленях, пока она держит поводок, намеренно натягивая его так, чтобы ты чувствовал, как ошейник впивается тебе в шею.")
 
-		saynn("The husky pants softly while her dick starts to become harder. You decide to take advantage of that by shoving your tongue between her veiny cock and the ring of the sheath. Nova suddenly moans as you proceed to slide your tongue in that tight space, tracing the thick outline of it and feel it inflate with more blood. You open your mouth and welcome the pointy head, your tongue only works harder, brushing against the cock’s texture at its base as Nova puts her free hand on your head and scritches you behind the ear.")
+		saynn("Хаски тихо дышит, пока её член начинает твердеть. Ты решаешь воспользоваться моментом и просовываешь язык между её вздутым стволом и кольцом чехла. Нова внезапно стонет, когда ты начинаешь водить языком в этом узком пространстве, очерчивая толстый контур и чувствуя, как он наполняется кровью. Ты раскрываешь рот, принимая острый головку, и твой язык работает всё усерднее, лаская текстуру основания члена, пока Нова кладет свободную руку тебе на голову и чешет за ушком.")
 
-		saynn("[say=nova]Fuck~. Such an eager whore.[/say]")
+		saynn("[say=nova]Блядь~. Какая же ты жадная шлюшка.[/say]")
 
-		saynn("You can only smile and proceed to suck on her meaty candy, you make sure to catch all her drops of precum and spread it along the full length while also coating the shaft with your saliva, at this point Nova is fully hard. You get a little carried away and get more of it in your mouth, testing your throat as you try to shove it down your throat but Nova yanks on the leash and pulls you out.")
+		saynn("Тебе остается только улыбаться и приняться сосать её сочную «конфетку». Ты стараешься поймать каждую каплю её предэякулята, размазывая его по всей длине и густо смазывая ствол своей слюной; к этому моменту Нова уже стоит колом. Ты немного увлекаешься и заглатываешь побольше, испытывая горло попытками протолкнуть её поглубже, но Нова резко дергает за поводок, вырывая тебя.")
 
-		saynn("[say=nova]Present me your ass, bitch~[/say]")
+		saynn("[say=nova]А ну-ка покажи мне свою жопку, сучка~[/say]")
 
-		addButton("Do it", "Time for the fun part", "anal_fucking")
+		addButton("Сделай это", "Время для самого веселого", "anal_fucking")
 
 	if(state == "anal_fucking"):
 		playAnimation(StageScene.SexAllFours, "sex", {
@@ -666,57 +666,57 @@ func _run():
 		
 		# (if puppy)
 		if(isPuppy):
-			saynn("You bark softly and lick your lips before doing as told, turning around and raising your ass up for Nova.")
+			saynn("Ты тихо гавкаешь и облизываешь губы, прежде чем подчиниться: разворачиваешься и задираешь задницу перед Новой.")
 
 		# (if kitty)
 		if(!isPuppy):
-			saynn("You meow softly and lick your lips before doing as told, turning around and raising your ass up for Nova.")
+			saynn("Ты тихо мяукаешь и облизываешь губы, прежде чем подчиниться: разворачиваешься и задираешь задницу перед Новой.")
 
-		saynn("She gets on one knee behind you and puts her paws on your {pc.thick} buttcheeks. She gives each one a few firm smacks, causing them to bounce and you to moan in anticipation. Then she spreads them open and takes a good look at your tailhole. You don’t even notice as you spread your legs more, just cause you feel so needy. Nova then stretches open your star with two digits and spits inside.")
-
-		# (if has cock)
-		if(GM.pc.hasPenis()):
-			saynn("You are so aroused that your {pc.cock} is throbbing already and leaking pre, creating a little wet spot underneath.")
-
-		saynn("[say=nova]Hope you like doggystyle, slut~[/say]")
-
-		saynn("Nova holds you still with one hand while the other one directs her cock directly towards your tailhole. She starts slowly, just prodding at your anus and seeing how tight it is. Thankfully, with so much lube you don’t feel any discomfort, you slightly sway your hips and move yourself back, trying to force the penetration but Nova just spanks you again. You’re practically begging to be taken roughly already.")
-
-		saynn("[say=nova]Fine~[/say]")
-
-		saynn("With one steady movement, Nova starts forcing her canine cock down your {pc.analStretch} rearhole. The pointy head finds your pucker resisting at first but with one hard push it stretches your star wide and slides inside with relative ease, preparing your butt for more thick parts of the cock that come soon after.")
+		saynn("Она опускается на одно колено позади тебя и кладет лапы на твои {pc.thick} ягодицы. Она отвешивает каждой по паре звонких шлепков, от которых они подпрыгивают, заставляя тебя стонать в предвкушении. Затем она раздвигает их, чтобы хорошенько рассмотреть твое анусное отверстие. Ты даже не замечаешь, как раздвигаешь ноги еще шире, просто потому что чувствуешь себя такой желанной сучкой. Затем Нова раздвигает твою дырочку двумя пальцами и плюет внутрь.")
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
-			saynn("You arch your back and feel how her {nova.penisSizeStr} cock starts pushing against the bumpy sensitive spot that is your prostate, causing you to let out a passionate moan and drip with more precum.")
+			saynn("Ты настолько возбуждена, что твой {pc.cock} уже пульсирует и сочится предэякулятом, оставляя небольшое влажное пятно под собой.")
+
+		saynn("[say=nova]Надеюсь, тебе нравится догги-стайл, шлюшка~[/say]")
+
+		saynn("Нова удерживает тебя одной рукой, а другой направляет свой член прямо к твоему анусу. Она начинает медленно, лишь слегка прощупывая твое отверстие, проверяя, насколько оно узкое. К счастью, благодаря обилию смазки ты не чувствуешь дискомфорта; ты слегка покачиваешь бедрами и подаешься назад, пытаясь ускорить проникновение, но Нова лишь снова отвешивает тебе шлепок. Ты уже практически умоляешь о том, чтобы с тобой взяли грубо.")
+
+		saynn("[say=nova]Хорошо~[/say]")
+
+		saynn("Одним уверенным движением Нова начинает втискивать свой собачий член в твое {pc.analStretch} заднее отверстие. Заостренная головка поначалу натыкается на сопротивление сфинктера, но одним мощным толчком она растягивает твое кольцо и с относительной легкостью входит внутрь, подготавливая твою задницу к более толстым частям члена, которые последуют следом.")
+
+		# (if has cock)
+		if(GM.pc.hasPenis()):
+			saynn("Ты выгибаешь спину, чувствуя, как ее {nova.penisSizeStr} член начинает давить на ту самую бугристую чувствительную точку — твою простату, заставляя тебя издавать страстный стон и обильно выделять предэякулят.")
 
 		# (if has vagina)
 		if(GM.pc.hasVagina()):
-			saynn("It’s very filling, so much that you feel the inner wall stretching out and pressing on your g-spot, your wet slit looks smaller than it usually is but more spread open instead.")
+			saynn("Ощущение невероятной наполненности: ты чувствуешь, как внутренняя стенка растягивается и давит на твою точку G; твоя влажная щель кажется меньше обычного, но теперь она сильнее раздвинута.")
 
-		saynn("You tilt your head down and keep making noises of pleasure while Nova shoves her cock deeper, until the knot part is stopped by your ring. Fuck it feels great, every time you clench you feel more pleasure from increased friction and feeling of your butt being stretched.")
+		saynn("Ты опускаешь голову, продолжая издавать звуки удовольствия, пока Нова заталкивает свой член всё глубже, пока узел не упирается в твое кольцо. Блядь, это охеренно! Каждый раз, когда ты сжимаешься, ты чувствуешь еще больше кайфа от усиленного трения и ощущения того, как растягивается твоя задница.")
 
-		saynn("[say=nova]You’re a tight slut, milking my cock already~[/say]")
+		saynn("[say=nova]Какая же ты узкая сучка, уже доишь мой член~[/say]")
 
-		saynn("Nova starts pulling her cock out, leaving the empty space behind. Space that you really want to get filled again. You moan eagerly and drag your hips back along with her cock, trying to keep more of it. But just before she withdraws it completely, she instead shoves it back deep with full strength, causing you to fall forward even. It feels, you squirm around the cock and don’t even try to get up, just holding your ass up so Nova can fuck you raw.")
-
-		# (if has cock)
-		if(GM.pc.hasPenis()):
-			saynn("You moan as your p-spot is squeezed so much that your cock leaks some of your {pc.cum}.")
-
-		saynn("[say=nova]Bet you love it~. I do. Breaking little pets down until they’re a complete mess, begging to be stuffed with my cum 24/7.[/say]")
-
-		saynn("She doesn’t stop and switches to ravaging your tailhole at a steady pace, slowly stretching your inner walls to fit her knotted member. You bite your lip and focus on enjoying the pleasurable sensations. You feel Nova’s knot becoming bigger as it fills up with blood, it doesn’t even fit inside you anymore, your tight ring is keeping it out.")
+		saynn("Нова начинает вытягивать свой член, оставляя после себя пустоту. Пустоту, которую тебе безумно хочется заполнить снова. Ты жадно стонешь и подаешься бедрами вслед за ее членом, пытаясь удержать его внутри как можно дольше. Но прямо перед тем, как она полностью выйдет, она, напротив, с силой вгоняет его обратно, так что ты даже подаешься вперед. Ты извиваешься вокруг ее члена и даже не пытаешься встать, просто задираешь задницу, чтобы Нова могла трахать тебя насухую.")
 
 		# (if has cock)
 		if(GM.pc.hasPenis()):
-			saynn("With each her thrust, your poor little prostate is getting pounded again and again, forcing your {pc.cock} to leak more of your {pc.cum}. You’re not even touching yourself and your cock is getting milked just from anal sex.")
+			saynn("Ты стонешь от того, что твою точку удовольствия сдавливает так сильно, что из твоего члена начинает сочиться {pc.cum}.")
 
-		saynn("The husky lands a spank on your butt and stands pulling your ass back for each thrust. You welcome that and help her, moving your hips to meet Nova’s dick, forcing it deeper each time. The knot is putting quite a bit of pressure on your backdoor, you feel it slowly winning over you clenching. Nova starts to grunt and pant heavily, she seems to be quite close. And so are you.")
+		saynn("[say=nova]Спорим, тебе нравится~. А мне — очень. Ломать маленьких питомцев, пока они не превратятся в сплошное месиво, умоляющее забить их моим кончиком 24/7.[/say]")
 
-		saynn("[say=nova]You’re clenching so much~. You must be loving this~[/say]")
+		saynn("Она не останавливается и переходит к методичному разрыванию твоего ануса, медленно растягивая внутренние стенки, чтобы вместить свой узел. Ты закусываешь губу, стараясь сосредоточиться на приятных ощущениях. Ты чувствуешь, как узел Новы увеличивается, наполняясь кровью; он уже едва помещается в тебе, твое узкое кольцо с трудом его удерживает.")
 
-		addButton("Get knotted", "Ohhhh", "anal_get_knotted")
+		# (if has cock)
+		if(GM.pc.hasPenis()):
+			saynn("С каждым ее толчком твою бедную простату долбят снова и снова, заставляя твой {pc.cock} выделять всё больше {pc.cum}. Ты даже не трогаешь себя, но твой член уже доится просто от анального секса.")
+
+		saynn("Хаски отвешивает тебе звонкую пощечину по заднице и, приподняв твои ягодицы, вколачивается в тебя с каждым толчком. Ты только за, помогая ей: ты двигаешь бедрами навстречу члену Новы, заставляя его входить всё глубже. Узел давит на твой задний проход, и ты чувствуешь, как мышцы невольно сжимаются вокруг него. Нова начинает тяжело хрипеть и сопеть — похоже, она уже на пределе. И ты тоже.")
+
+		saynn("[say=nova]Ты так сильно сжимаешься~. Тебе, должно быть, безумно нравится~[/say]")
+
+		addButton("Принять узел", "Ооооох", "anal_get_knotted")
 
 	if(state == "anal_get_knotted"):
 		playAnimation(StageScene.SexAllFours, "fast", {
@@ -726,39 +726,39 @@ func _run():
 			npcBodyState={naked=true,hard=true, leashedBy="nova"},
 		})
 		
-		saynn("Nova puts her hand onto your back and pins you still while she pounds your butt with slow but powerful thrusts, stretching you out even more. Eventually your ring gets stretched so much that her meaty orb slips inside, sending waves of sharp sensations throughout your body. You’re squirming and moaning like a slut, you’re so full.")
+		saynn("Нова кладет руку тебе на спину, прижимая к месту, пока методично и мощно вколачивается в твою задницу, растягивая тебя еще сильнее. В конце концов твое кольцо растягивается настолько, что её мясистая головка проскальзывает внутрь, посылая волны острых ощущений по всему телу. Ты извиваешься и стонешь как последняя шлюшка, ты так заполнена.")
 
 		# (if has cock, say)
 		if(GM.pc.isWearingChastityCage()):
-			saynn("Your metal chastity cage puts a lot of pressure on your poor cock. Your prostate gets milked so much that it sends you over the edge, your cock shoots many weak lines of {pc.cum} that all hit the floor. You have created a mess!")
+			saynn("Твоя металлическая девственная клетка сильно сдавливает твой бедный член. Простату так неистово выжимают, что тебя сносит с катушек: твой член выпускает тонкие струйки {pc.cum}, которые тут же стекают на пол. Ты устроил настоящий беспорядок!")
 		elif(GM.pc.hasPenis()):
-			saynn("Your prostate gets milked so much that it sends you over the edge, your cock shoots many weak lines of {pc.cum} that all hit the floor. You have created a mess!")
+			saynn("Простату так неистово выжимают, что тебя сносит с катушек: твой член выпускает тонкие струйки {pc.cum}, которые тут же стекают на пол. Ты устроил настоящий беспорядок!")
 
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("Your G-spot gets rubbed enough through the inner wall that it causes overstimulation, your cunt squirts with your juices even though it never received any stimulation. You’re such a buttslut!")
+			saynn("Твою точку G так сильно разминает через переднюю стенку, что наступает гиперстимуляция: твоя киска брызжет соками, хотя её даже не трогали. Ну ты и заднеприданная шлюшка!")
 
-		saynn("[say=nova]Oh fuck-k.[/say]")
+		saynn("[say=nova]Ох, бля-я-ядь.[/say]")
 
-		saynn("Nova grunts heavily as she cums too, the sure feeling of your tight insides applying so much pressure on her member causes it to explode with cum, the husky lets out long noises of pleasure while stuffing your butt full of cum with her knot keeping it all nice and secure inside. The orgasmic waves cause all your muscles to flex, including your anal ring, you’re milking Nova’s ball for all her cum!")
+		saynn("Нова тяжело рычит, тоже кончая; ощущение того, как твои тугие внутренности сдавливают её член, заставляет его извергаться сплошным потоком спермы. Хаски издает протяжные стоны наслаждения, забивая твою задницу семенем, пока её узел надежно удерживает всё внутри. Волны оргазма заставляют все твои мышцы сокращаться, включая анальное кольцо — ты буквально выдоишь из яичек Новы всё до последней капли!")
 
-		saynn("When her balls get drained, you both are left feeling like a mess. Nova tries to pull her cock out but it’s stuck too tight.")
+		saynn("Когда её яйца опустошаются, вы оба чувствуете себя полным беспорядком. Нова пытается вытащить свой член, но он застрял слишком плотно.")
 
-		saynn("[say=nova]Bitch, we’re stuck together for a while now~[/say]")
+		saynn("[say=nova]Сучка, кажется, мы теперь застряли друг в друге на какое-то время~[/say]")
 
-		saynn("You pant heavily as you slowly recover from your orgasm.")
+		saynn("Ты тяжело дышишь, медленно приходя в себя после оргазма.")
 
 		# (if puppy)
 		if(isPuppy):
-			saynn("[say=pc]Bark..[/say]")
+			saynn("[say=pc]Гав..[/say]")
 
 		# (if kitty)
 		if(!isPuppy):
-			saynn("[say=pc]Me-eow..[/say]")
+			saynn("[say=pc]Мяу-у..[/say]")
 
-		saynn("You put a hand on your belly and feel that it’s slightly inflated with so much cum and cock in you. You feel like you’re gonna be there for a while so you decide to get into a better pose.")
+		saynn("Ты кладешь руку на живот и чувствуешь, что он слегка раздулся от такого количества спермы и члена внутри. Кажется, так будет продолжаться еще долго, поэтому ты решаешь устроиться поудобнее.")
 
-		addButton("Rest", "Wait until the knot deflates", "analrest")
+		addButton("Отдохнуть", "Подожди, пока узел спадет", "analrest")
 
 	if(state == "analrest"):
 		playAnimation(StageScene.SexAllFours, "tease", {
@@ -767,22 +767,22 @@ func _run():
 			npcBodyState={naked=true,hard=true, leashedBy="nova"},
 		})
 		
-		saynn("Eventually Nova manages to pull out her cock, causing a strong stream of cum from your used butthole, you moan again as Nova offers you her messy cock.")
+		saynn("В конце концов Нове удается вытащить член, из-за чего из твоего использованного ануса начинает хлестать мощная струя спермы; ты снова стонешь, когда Нова подносит тебе свой испачканный член.")
 
-		saynn("[say=nova]Clean it, slut~[/say]")
+		saynn("[say=nova]Вылижи его, шлюшка~[/say]")
 
-		saynn("You do as told, quickly whipping out your tongue and gathering all the cum that you can, moving your tongue along the full length of Nova’s cock and then swallowing what you got. As a reward you get patted. Husky puts away her cock, removes your leash and lets you stand up.")
+		saynn("Ты послушно выполняешь приказ, быстро высунув язык и собирая всю сперму, которую только можешь, проводя языком по всей длине члена Новы и проглатывая добычу. В награду тебя похлопывают. Хаски убирает член, снимает с тебя поводок и позволяет встать.")
 
-		saynn("[say=nova]Had fun?[/say]")
+		saynn("[say=nova]Повеселилась?[/say]")
 
-		saynn("You nod, a red deep blush appears on your face, your butt is gonna be leaking for a while.")
+		saynn("Ты киваешь, лицо заливает густой румянец; кажется, твоя жопа будет течь еще долго.")
 
-		saynn("[say=nova]Good~. Now let me rest before I get too horny looking at you and decide to fuck you again~[/say]")
+		saynn("[say=nova]Хорошая девочка~. А теперь дай мне отдохнуть, пока я окончательно не возбудилась от одного твоего вида и не решила трахнуть тебя снова~[/say]")
 
-		saynn("It doesn’t seem like the worst fate but still, you gather your belongings and prepare to leave.")
+		saynn("Не самый худший исход, но всё же, ты собираешь свои вещи и готовишься уходить.")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 		
 
 func _react(_action: String, _args):

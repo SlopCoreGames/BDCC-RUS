@@ -19,18 +19,18 @@ func _run():
 	var _tentacles:PlayerSlaveryTentacles = GM.main.PS
 
 	if(state == ""):
-		saynn("You open the fridge and see that it's stuffed full. Meat, veggies, fruits, snacks.. it all makes your mouth drool.")
+		saynn("Ты открываешь холодильник и видишь, что он забит до отказа. Мясо, овощи, фрукты, закуски... от одного вида у тебя текут слюнки.")
 
-		saynn("All the food is fresh as it can be.. looks like they're restocking it every day.")
+		saynn("Вся еда максимально свежая... похоже, её пополняют каждый божий день.")
 
-		addButton("Snack", "Eat a snack!", "doEatSnack")
-		addButton("Leave", "Never mind", "endthescene")
+		addButton("Закуска", "Перекусить!", "doEatSnack")
+		addButton("Уйти", "Проехали", "endthescene")
 	if(state == "doEatSnack"):
-		saynn("You grab a bag of chips and open it. Smells nice.")
+		saynn("Ты хватаешь пачку чипсов и открываешь её. Пахнет чертовски вкусно.")
 
-		saynn("After you've finished snacking, you throw the empty bag into the trash bin that's nearby.")
+		saynn("Закончив перекус, ты выбрасываешь пустую пачку в стоящую неподалеку мусорку.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	var _tentacles:PlayerSlaveryTentacles = GM.main.PS

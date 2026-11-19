@@ -21,62 +21,62 @@ func _run():
 		playAnimation(StageScene.SexPortal, "tease", {pc=npcID, npc="pc", bodyState={exposedCrotch=true,hard=true}})
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("You were going somewhere when you suddenly felt some activity in your panties. Someone’s breathing warmly over your pussy which makes it react by twitching ever so slightly and getting moist.")
+			saynn("Ты куда-то шла, как вдруг почувствовала шевеление в трусиках. Кто-то горячо дышит прямо на твою киску, отчего та начинает едва заметно подергиваться и увлажняться.")
 
-			saynn("[say=pc]Oh, again so soon..[/say]")
+			saynn("[say=pc]Ох, неужели уже снова..[/say]")
 
-			saynn("It doesn’t stop there, you feel their digits spreading your sensitive petals and getting shoved inside, causing you to stop doing what you are doing and grab onto your crotch.")
+			saynn("На этом всё не заканчивается: ты чувствуешь, как чьи-то пальцы раздвигают твои чувствительные лепестки и вклиниваются внутрь, заставляя тебя бросить все дела и вцепиться в промежность.")
 
-			saynn("[say=pc]Hey..[/say]")
+			saynn("[say=pc]Эй..[/say]")
 
-			saynn("They are very rough with your slit, fingering it and hammering at your pleasure point until you start moaning quietly.")
+			saynn("Они очень грубо ласкают твою щелочку, перебирая пальцами и вколачиваясь в твою точку удовольствия, пока ты не начинаешь тихонько стонать.")
 
-			saynn("[say=pc]T-That’s not supposed to happen..[/say]")
+			saynn("[say=pc]Э-это не должно было случиться..[/say]")
 
 			# (if has cock)
 			if(GM.pc.hasPenis()):
-				saynn("Your {pc.cock} is hard as a rock but it seems nobody cares about it at the moment, they just want your pussy.")
+				saynn("Твой {pc.cock} твердый как камень, но, кажется, сейчас никого это не волнует — им нужна только твоя киска.")
 
-			saynn("They keep fingering you for a while until you get all wet and needy.")
+			saynn("Они продолжают трахать тебя пальцами, пока ты окончательно не промокнешь и не начнешь умолять о большем.")
 
 		# (if no pussy)
 		else:
-			saynn("You were going somewhere when you suddenly felt some activity in your panties. Someone’s breathing warmly over your tailhole which makes it react by clenching ever so slightly.")
+			saynn("Ты куда-то шла, как вдруг почувствовала шевеление в трусиках. Кто-то горячо дышит прямо на твое анусное отверстие, отчего оно начинает едва заметно сжиматься.")
 
-			saynn("[say=pc]Oh, again so soon..[/say]")
+			saynn("[say=pc]Ох, неужели уже снова..[/say]")
 
-			saynn("It doesn’t stop there, you feel their wet digits prodding at your star and then getting shoved inside, causing you to stop doing what you are doing and grab onto your crotch.")
+			saynn("На этом всё не заканчивается: ты чувствуешь, как чьи-то влажные пальцы прощупывают твою дырочку, а затем вклиниваются внутрь, заставляя тебя бросить все дела и вцепиться в промежность.")
 
-			saynn("[say=pc]Hey..[/say]")
+			saynn("[say=pc]Эй..[/say]")
 
-			saynn("They are very rough with your butt, fingering it and hammering at your pleasure point until you start moaning quietly. At least the digits seem to be coated with lube..")
+			saynn("Они очень грубо обращаются с твоей задницей, перебирая пальцами и долбя в твою точку удовольствия, пока ты не начинаешь тихо стонать. По крайней мере, пальцы, кажется, обильно смазаны лубрикантом...")
 
-			saynn("[say=pc]T-That’s not supposed to happen..[/say]")
+			saynn("[say=pc]Э-это не должно было случиться..[/say]")
 
 			# (if has cock)
 			if(GM.pc.hasPenis()):
-				saynn("Your {pc.cock} is hard as a rock but it seems nobody cares about it at the moment, they just want your ass.")
+				saynn("Твой {pc.cock} твердый как камень, но, кажется, сейчас никого это не волнует — им нужна только твоя жопа.")
 
-			saynn("They keep fingering you for a while until you get all lubed up and needy.")
+			saynn("Они продолжают кромсать тебя пальцами, пока ты окончательно не размокнешь и не начнешь умолять о большем.")
 		
-		addButton("Continue", "See what happens next", "inside")
+		addButton("Продолжить", "Смотреть, что будет дальше", "inside")
 
 
 	if(state == "inside"):
 		playAnimation(StageScene.SexPortal, "inside", {pc=npcID, npc="pc", bodyState={exposedCrotch=true,hard=true}})
 		
 		if(GM.pc.hasVagina()):
-			saynn("But the digits are eventually retracted out of your slit, letting you calm down somewhat. But not for long, now you feel some kind of fleshy object brushing against your folds. Is that a.. cock?")
+			saynn("Но в конце концов пальцы выходят из твоей щели, позволяя тебе немного успокоиться. Но ненадолго: теперь ты чувствуешь, как какой-то плотный объект касается твоих складок. Неужели это... член?")
 
-			saynn("There is no way it’s not, you gasp as you feel it finding your {pc.pussyStretch} pussy hole and stretching it wide open with ease. The cock gets shoved deeper inside, your belly even shows the outline, it's clearly a canine one. And it’s fucking your pussy..")
+			saynn("Это точно он, ты ахаешь, когда чувствуешь, как он находит твою {pc.pussyStretch} киску и с легкостью растягивает её. Член вгоняется всё глубже, на твоем животе даже проступает его контур — это явно собачий член. И он трахает твою киску...")
 		else:
-			saynn("But the digits are eventually retracted out of your {pc.thick} butt, letting you calm down somewhat. But not for long, now you feel some kind of fleshy object brushing against your star. Is that a.. cock?")
+			saynn("Но в конце концов пальцы выходят из твоей {pc.thick} задницы, позволяя тебе немного успокоиться. Но ненадолго: теперь ты чувствуешь, как какой-то плотный объект касается твоего ануса. Неужели это... член?")
 
-			saynn("There is no way it’s not, you gasp as you feel it prodding at your {pc.analStretch} fuckhole and stretching it wide open with ease. The cock gets shoved deeper inside, your belly even shows the outline, it's clearly a canine one. And it’s fucking you in the ass..")
+			saynn("Это точно он, ты ахаешь, когда чувствуешь, как он ковыряет в твоей {pc.analStretch} дырке и с легкостью растягивает её. Член вгоняется всё глубже, на твоем животе даже проступает его контур — это явно собачий член. И он трахает тебя в задницу...")
 
 		
-		addButton("Resist", "That wasn’t supposed to happen", "resist")
-		addButton("Enjoy", "Might as well try to get some pleasure out of this", "enjoy")
+		addButton("Сопротивляться", "Этого не должно было случиться", "resist")
+		addButton("Наслаждайся", "Стоит попытаться извлечь из этого хоть какое-то удовольствие", "enjoy")
 
 	if(state == "resist"):
 		playAnimation(StageScene.SexPortal, "sex", {pc=npcID, npc="pc", bodyState={exposedCrotch=true,hard=true}})
@@ -87,29 +87,29 @@ func _run():
 
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("That doesn’t seem like one of the tests, you didn’t agree to being fucked by someone you can’t even see! You gasp and cover your mouth as the cock starts pounding your pussy rough and fast, treating it like a fuckhole. You really hope nobody can see the outline of a cock sliding up and down across your belly or hear your muffled noises as you try to supress the moans.")
+			saynn("Это совсем не похоже на обычный тест — ты ведь не подписывалась на то, чтобы тебя трахали те, кого ты даже не видишь! Ты ахаешь и прикрываешь рот ладонью, когда член начинает вколачивать тебя в пизду — грубо, быстро, словно ты просто дырка для ебли. Ты отчаянно надеешься, что никто не заметит очертания члена, скользящего под твоим животом, и не услышит твои приглушенные звуки, пока ты пытаешься подавить стоны.")
 
-			saynn("Your free hand grabs onto the portal panties and desperately tries to take them off. Even if you tear the fabric off that will just reveal the portal devices which won’t help you at all. Fuck.")
+			saynn("Свободной рукой ты хватаешься за портальные трусики, отчаянно пытаясь их снять. Но даже если ты разорвешь ткань, это лишь обнажит портальные устройства, которые тебе никак не помогут. Блядь.")
 
-			saynn("You try closing your legs, you try spreading them instead, even clenching just seems to make the cock fuck you more eagerly. More little noises of pleasure are forced out of you as the cock is trying to knot your pussy.")
+			saynn("Ты пытаешься свести ноги, потом пробуешь, наоборот, раздвинуть их, но кажется, что от любого движения член начинает трахать тебя еще неистовее. Из тебя невольно вырываются новые звуки удовольствия, пока член пытается завязать твою пизду узлом.")
 
-			saynn("[say=pc]Please no..[/say]")
+			saynn("[say=pc]Пожалуйста, нет..[/say]")
 
-			saynn("They can’t hear you, all they see is a wet little pussy on a fleshlight that is so easy to fuck. A few rough thrusts and the knot slips past your folds, making so the whole cock is now inside you. That was too much, you are producing a loud moan which catches the attention of anyone who is nearby. You’re trying to make the fact that you’re cumming not too obvious but you think you failed. You put a hand on your belly and feel it.. inflating.. with cum? Yeah, somebody just came inside you.")
+			saynn("Они тебя не слышат — всё, что они видят, это мокрая маленькая пизда на фаллоимитаторе, который так легко трахать. После нескольких грубых толчков узел проскальзывает сквозь твои складки, и теперь весь член целиком внутри тебя. Это было слишком — ты издаешь громкий стон, который привлекает внимание любого, кто находится рядом. Ты пытаешься не слишком явно показывать, что кончаешь, но, кажется, потерпела фиаско. Ты кладешь руку на живот и чувствуешь, как он... раздувается... от спермы? Да, кто-то только что кончил прямо в тебя.")
 
 		# (if no pussy)
 		else:
-			saynn("That doesn’t seem like one of the tests, you didn’t agree to being fucked by someone you can’t even see! You gasp and cover your mouth as the cock starts pounding your tailhole rough and fast, treating it like some fuckhole. You really hope nobody can see the outline of a cock sliding up and down across your belly or hear your muffled noises as you try to supress the moans.")
+			saynn("Это не похоже на один из тестов — ты ведь не подписывалась на то, чтобы тебя трахал кто-то, кого ты даже не видишь! Ты ахаешь и прикрываешь рот ладонью, когда член начинает неистово и быстро долбить в твой анус, словно в обычную дырку для траха. Ты отчаянно надеешься, что никто не заметит очертания члена, скользящего вверх-вниз по твоему животу, и не услышит твои приглушенные звуки, когда ты пытаешься подавить стоны.")
 
-			saynn("Your free hand grabs onto the portal panties and desperately tries to take them off. Even if you tear the fabric off that will just reveal the portal devices which won’t help you at all. Fuck.")
+			saynn("Свободной рукой ты хватаешься за портальные трусики, отчаянно пытаясь их снять. Но даже если ты разорвешь ткань, это лишь обнажит портальные устройства, которые тебе никак не помогут. Блядь.")
 
-			saynn("You try closing your legs, you try spreading them instead, even clenching just seems to make the cock fuck you more eagerly. More little noises of pleasure are forced out of you as the cock is trying to knot your ass.")
+			saynn("Ты пытаешься свести ноги, потом пробуешь, наоборот, раздвинуть их, но кажется, что от этого член начинает трахать тебя еще более жадно. Из тебя невольно вырываются новые звуки удовольствия, пока член пытается завязать твою задницу узлом.")
 
-			saynn("[say=pc]Please no..[/say]")
+			saynn("[say=pc]Пожалуйста, нет..[/say]")
 
-			saynn("They can’t hear you, all they see is a little {pc.analStretch} butthole on a fleshlight that is so easy to fuck. A few rough thrusts and the knot slips in, making so the whole cock is now inside you. That was too much, you are producing a loud moan which catches the attention of anyone who is nearby. You’re trying to make the fact that you’re cumming not too obvious but you think you failed. You put a hand on your belly and feel it.. inflating.. with cum? Yeah, somebody just came inside you.")
+			saynn("Они тебя не слышат, всё, что они видят — это маленькое {pc.analStretch} заднее отверстие на флэшлайте, который так легко трахать. Несколько грубых толчков, и узел проскальзывает внутрь, так что теперь весь член находится в тебе. Это было слишком сильно, и ты издаешь громкий стон, который привлекает внимание любого, кто находится рядом. Ты пытаешься сделать так, чтобы твой оргазм не был слишком очевидным, но, кажется, потерпела фиаско. Ты кладешь руку на живот и чувствуешь, как он... раздувается... от спермы? Да, кто-то только что кончил в тебя.")
 
-		addButton("Continue", "What now", "continue")
+		addButton("Продолжить", "Что теперь?", "continue")
 
 	if(state == "enjoy"):
 		playAnimation(StageScene.SexPortal, "sex", {pc=npcID, npc="pc", bodyState={exposedCrotch=true,hard=true}})
@@ -119,55 +119,55 @@ func _run():
 
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("You bite your lip and whisper lewdly to yourself, your eyes fill with lust.")
+			saynn("Ты закусываешь губу и похотливо шепчешь себе под нос, а твои глаза наполняются вожделением.")
 
-			saynn("[say=pc]Finally they’re doing something fun with my holes~.[/say]")
+			saynn("[say=pc]Наконец-то они занялись моими дырочками чем-нибудь веселым~.[/say]")
 
-			saynn("That doesn’t seem like one of the tests but you don’t even care, you bend forward and hold onto the nearest wall as the cock starts pounding your pussy rough and fast, treating it like a fuckhole. The visible outline of a cock is sliding up and down on your belly, you really hope they won’t stop now.")
+			saynn("Это не похоже на один из тестов, но тебе плевать: ты наклоняешься вперед и хватаешься за ближайшую стену, пока член начинает жестко и быстро долбить в твою киску, обращаясь с ней как с обычной дыркой. По твоему животу вверх-вниз скользит отчетливый контур члена, и ты искренне надеешься, что они не остановятся сейчас.")
 
-			saynn("These are the best panties ever, you moan and squirm like a slut. The canine cock is ravaging your slit and is now trying to shove its knot inside too. You’re not sure if it's gonna fit, your pussy is clenching around the intruding shaft, trying to milk it.")
+			saynn("Это лучшие трусики в мире, стонешь ты, извиваясь как последняя шлюха. Собачий член неистово разрывает твою щель и теперь пытается затолкнуть внутрь еще и свое уплотнение. Ты не уверена, влезет ли оно, но твоя киска судорожно сжимается вокруг вошедшего ствола, пытаясь выдоить его.")
 
-			saynn("[say=pc]Yes.. please.. knot this slutty pussy.[/say]")
+			saynn("[say=pc]Да.. пожалуйста.. наполни эту шлюшью киску своим узлом![/say]")
 
-			saynn("The thrusts become more swift, each time the knot is stretching your folds more until suddenly slipping past them and sliding inside, making so the whole cock is now in. That makes you cum instantly, you throw your head back and moan passionately while the cock starts stuffing your womb with more and more cum, causing your belly to look more bumpy.")
+			saynn("Толчки становятся всё быстрее, каждый раз узел растягивает твои складки всё сильнее, пока внезапно не проскальзывает мимо них и не входит целиком. Это заставляет тебя кончить мгновенно; ты откидываешь голову назад и страстно стонешь, пока член начинает забивать твою матку всё большим количеством спермы, отчего твой живот становится всё более бугристым.")
 
-			saynn("[say=pc]Yes-s-s~..[/say]")
+			saynn("[say=pc]Да-а-а~..[/say]")
 
-			saynn("Who cares if somebody hears your moans, you just got fucked through a portal! And the best part is that you don’t have to clean anything, there is zero mess on your side.")
+			saynn("Какая разница, если кто-то услышит твои стоны, тебя только что оттрахали через портал! И самое лучшее — тебе даже не нужно ничего убирать, с твоей стороны никакого беспорядка.")
 
 		# (if no pussy)
 		else:
-			saynn("You bite your lip and whisper lewdly to yourself, your eyes fill with lust.")
+			saynn("Ты закусываешь губу и похотливо шепчешь себе под нос, а твои глаза наполняются вожделением.")
 
-			saynn("[say=pc]Finally they’re doing something fun with my holes~.[/say]")
+			saynn("[say=pc]Наконец-то они занялись моими дырочками чем-нибудь веселым~.[/say]")
 
-			saynn("That doesn’t seem like one of the tests but you don’t even care, you bend forward and hold onto the nearest wall as the cock starts pounding your butt rough and fast, treating it like a fuckhole. The visible outline of a cock is sliding up and down on your belly, you really hope they won’t stop now.")
+			saynn("Это не похоже на один из тестов, но тебе плевать: ты наклоняешься вперед и хватаешься за ближайшую стену, пока член начинает жестко и быстро долбить в твою задницу, обращаясь с ней как с обычной дыркой. По твоему животу вверх-вниз скользит отчетливый контур члена, и ты искренне надеешься, что они не остановятся сейчас.")
 
-			saynn("These are the best panties ever, you moan and squirm like a slut. The canine cock is ravaging your star and is now trying to shove its knot inside too. You’re not sure if it's gonna fit, your tailhole is clenching around the intruding shaft, trying to milk it.")
+			saynn("Это лучшие трусики в твоей жизни, ты стонешь и извиваешься как последняя шлюха. Собачий член нещадно кромсает твою дырочку и теперь пытается затолкнуть внутрь еще и узел. Ты не уверена, влезет ли он, но твой анус судорожно сжимается вокруг вошедшего ствола, пытаясь выдоить его.")
 
-			saynn("[say=pc]Yes.. please.. knot this slut.[/say]")
+			saynn("[say=pc]Да.. пожалуйста.. завяжи эту шлюху узлом.[/say]")
 
-			saynn("The thrusts become more swift, each time the knot is stretching your {pc.analStretch} anus more until suddenly slipping past it and sliding inside, making so the whole cock is now in. That makes you cum instantly, you throw your head back and moan passionately while the cock starts stuffing your ass with more and more cum, causing your belly to look more bumpy.")
+			saynn("Толчки становятся всё быстрее, с каждым разом узел всё сильнее растягивает твой {pc.analStretch} анус, пока внезапно не проскальзывает внутрь, заставляя весь член войти целиком. Это заставляет тебя кончить мгновенно; ты откидываешь голову назад и страстно стонешь, пока член начинает забивать твою задницу всё большим количеством спермы, отчего твой живот становится бугристым.")
 
-			saynn("[say=pc]Yes-s-s~..[/say]")
+			saynn("[say=pc]Да-а-а~..[/say]")
 
-			saynn("Who cares if somebody hears your moans, you just got fucked through a portal! And the best part is that you don’t have to clean anything, there is zero mess on your side.")
+			saynn("Какая разница, если кто-то услышит твои стоны, тебя только что оттрахали через портал! И самое лучшее — тебе даже не нужно ничего убирать, с твоей стороны никакого беспорядка.")
 
-		addButton("Continue", "What now", "continue")
+		addButton("Продолжить", "Что теперь?", "continue")
 
 	if(state == "continue"):
 		playAnimation(StageScene.SexPortal, "tease", {pc=npcID, npc="pc", bodyState={exposedCrotch=true,hard=true}})
 		
-		saynn("You pant and try to calm down. A few minutes pass, allowing you to gather your thoughts.")
+		saynn("Ты тяжело дышишь, пытаясь успокоиться. Проходит несколько минут, позволяя тебе привести мысли в порядок.")
 
-		saynn("The engineer told you that this wouldn’t happen, they were supposed to only do tests. You feel like you gotta talk with him. Because you feel like this is not gonna stop..")
+		saynn("Инженер говорил тебе, что такого не случится, они должны были проводить только тесты. Тебе кажется, что нужно поговорить с ним. Потому что у тебя есть предчувствие, что это не прекратится...")
 
 		# (You reflect and decide that this isn’t normal)
 
 		# (From now on you’re getting fucked randomly)
 
 		# (scene ends)
-		addButton("Continue", "The heck", "endthescene")
+		addButton("Продолжить", "Твою же мать!", "endthescene")
 
 
 func _react(_action: String, _args):

@@ -79,9 +79,9 @@ func _init():
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.Duo, "stand", {npc=npcMain})
-		saynn("AMBUSH. BUT THIS SHOULDN'T HAPPEN.")
+		saynn("ЗАЛЕТНАЯ! НО ЭТОГО НЕ ДОЛЖНО БЫЛО СЛУЧИТЬСЯ.")
 
-		addButton("Continue", "See what happens next", "show_others")
+		addButton("Продолжить", "Смотреть, что будет дальше", "show_others")
 	
 	if(state == "normaldrugged_stamina"):
 		addCharacter(npcMain)
@@ -89,11 +89,11 @@ func _run():
 		addCharacter(npcExtra2)
 		playAnimation(StageScene.Duo, "hurt", {npc=npcMain})
 		
-		saynn("You’re walking alone, minding your own business.. when someone suddenly collides with you, hard enough to knock you off balance.")
+		saynn("Ты идешь себе спокойно, никого не трогая... как вдруг кто-то налетает на тебя с такой силой, что ты едва не теряешь равновесие.")
 
-		saynn("Before you can react, you feel a sharp sting.. a needle pricking your skin. A strange warmth begins spreading through your veins.")
+		saynn("Прежде чем ты успеваешь среагировать, чувствуешь резкий укол... игла вонзается в кожу. Странное тепло начинает разливаться по твоим венам.")
 		
-		saynn("And now you realize.. you're surrounded by three figures.")
+		saynn("И тут до тебя доходит... ты окружен тремя фигурами.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"What's the rush. Slow down. Remember me?",
@@ -101,11 +101,11 @@ func _run():
 			"You're not looking so hot, pal. Remember me?",
 		])+"[/say]")
 		
-		saynn("It's {npc.him}.. your nemesis. Whatever it was in that syringe.. it makes you feel weaker by the second.")
+		saynn("Это {npc.him}... твой заклятый враг. Что бы ни было в этом шприце, с каждой секундой ты чувствуешь себя всё слабее и слабее.")
 		
 		saynn("[say=npc]"+NemesisReason.getAmbushLine(nemesisReason, getCharacter(npcMain))+"[/say]")
 		
-		saynn("Looks like {npc.he} brought some friends.")
+		saynn("Похоже, {npc.he} притащил с собой дружков.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"You will do as I say. And we won't have any problems.",
@@ -113,9 +113,9 @@ func _run():
 			"Don't be stupid. It's three against one.",
 		])+"[/say]")
 		
-		saynn("Something tells you they won't let you go take a nap to get your strength back..")
+		saynn("Что-то подсказывает тебе, что они не дадут тебе просто прилечь вздремнуть, чтобы восстановить силы...")
 		
-		addButton("Continue", "See what happens next", "show_others")
+		addButton("Продолжить", "Смотреть, что будет дальше", "show_others")
 	
 	if(state == "normalshiv"):
 		addCharacter(npcMain)
@@ -123,9 +123,9 @@ func _run():
 		addCharacter(npcExtra2)
 		playAnimation(StageScene.Duo, "hurt", {npc=npcMain, npcAction="shiv"})
 	
-		saynn("You were on your way when someone slams into your shoulder, nearly spinning you around.")
+		saynn("Ты шел по своим делам, когда кто-то на полном ходу врезался тебе в плечо, едва не развернув тебя на месте.")
 
-		saynn("A sudden, burning pain flares in your side. You glance down and see a thin line of your blood blossoming on your clothes. You got stabbed..")
+		saynn("Внезапная жгучая боль пронзает бок. Ты опускаешь взгляд и видишь, как на одежде расплывается тонкая струйка крови. Тебя ударили ножом...")
 			
 		saynn("[say=npc]"+RNG.pick([
 			"Ohh. That hurt, didn't it?",
@@ -135,11 +135,11 @@ func _run():
 			"Should I do it again?",
 		])+"[/say]")
 		
-		saynn("It's {npc.him}.. your nemesis.. holding a shiv. The stab didn't reach too deep.. but the wound is still bleeding.")
+		saynn("Это {npc.him}... твой заклятый враг... в руках у него заточка. Удар был не слишком глубоким... но рана всё равно кровоточит.")
 		
 		saynn("[say=npc]"+NemesisReason.getAmbushLine(nemesisReason, getCharacter(npcMain))+"[/say]")
 		
-		saynn("Looks like {npc.he} brought some friends.")
+		saynn("Похоже, {npc.he} притащил с собой дружков.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"You will do as I say. And we won't have any problems.",
@@ -147,22 +147,22 @@ func _run():
 			"Don't be stupid. It's three against one.",
 		])+"[/say]")
 		
-		saynn("Something tells you they won't give you a bandage to help stop the blood..")
+		saynn("Что-то подсказывает тебе, что бинта, чтобы остановить кровь, они тебе не дадут...")
 		
-		addButton("Continue", "See what happens next", "show_others")
+		addButton("Продолжить", "Смотреть, что будет дальше", "show_others")
 	
 	if(state == "cellbondage"):
 		playAnimation(StageScene.Sleeping, "sleep")
 	
-		saynn("You lay on your bed and close your eyes.")
+		saynn("Ты ложишься на кровать и закрываешь глаза.")
 		
-		saynn("As your mind drifts away.. a weird feeling starts washing over your body.")
+		saynn("Пока сознание уплывает прочь... странное чувство начинает разливаться по твоему телу.")
 		
-		saynn("Like something is.. touching your limbs.. caressing you.. but now is not the time for that.")
+		saynn("Будто что-то... касается твоих конечностей... ласкает тебя... но сейчас явно не время для этого.")
 		
-		saynn("Hard to tell, everything is pure haze in your head.. but it feels like something is going through your pockets as well. Best to try to get up and see it for yourself.")
+		saynn("Трудно сказать, в голове сплошной туман... но кажется, будто кто-то еще и шарит по твоим карманам. Лучше попытаться встать и увидеть всё своими глазами.")
 		
-		addButton("Continue", "See what happens next", "cellbondage_reveal")
+		addButton("Продолжить", "Смотреть, что будет дальше", "cellbondage_reveal")
 	
 	if(state == "cellbondage_reveal"):
 		addCharacter(npcMain)
@@ -170,7 +170,7 @@ func _run():
 		addCharacter(npcExtra2)
 		playAnimation(StageScene.Duo, "stand", {npc=npcMain})
 		
-		saynn("You get up.. and see three figures surrounding you. The leader steps closer.")
+		saynn("Ты поднимаешься... и видишь, что тебя окружили три фигуры. Лидер делает шаг вперед.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"You were sleeping so soundly, I didn't want to wake you up.",
@@ -178,11 +178,11 @@ func _run():
 			"Nice cell you got here. I left you some gifts. Remember who I am?",
 		])+"[/say]")
 		
-		saynn("It's {npc.him}.. your nemesis. You realize that you're missing some of your items..")
+		saynn("Это {npc.him}... твой заклятый враг. Ты понимаешь, что часть твоих вещей пропала...")
 		
 		saynn("[say=npc]"+NemesisReason.getAmbushLine(nemesisReason, getCharacter(npcMain))+"[/say]")
 		
-		saynn("Looks like {npc.he} brought some friends.")
+		saynn("Похоже, {npc.he} притащил с собой дружков.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"You will do as I say. And we won't have any problems.",
@@ -190,32 +190,32 @@ func _run():
 			"Don't be stupid. It's three against one.",
 		])+"[/say]")
 		
-		saynn("Something tells you they won't give you time to struggle out of your new bondage gear..")
+		saynn("Что-то подсказывает тебе, что они не дадут тебе времени, чтобы вырваться из твоего нового снаряжения для связывания...")
 		
-		addButton("Continue", "See what happens next", "show_others")
+		addButton("Продолжить", "Смотреть, что будет дальше", "show_others")
 	
 	if(state == "canteendrugged_lust"):
 		playAnimation(StageScene.Solo, "sit")
 	
-		saynn("You're busy finishing your meal..")
+		saynn("Ты занят тем, что доедаешь свою порцию...")
 		
-		saynn("But as you do.. you begin to feel something. It suddenly became very hot in here.")
+		saynn("Но пока ты ешь... ты начинаешь что-то чувствовать. В помещении внезапно стало очень жарко.")
 		
 		if(GM.pc.isWearingChastityCage()):
-			saynn("Your locked away cock is getting really tight in its small cage.. You feel so needy all of the sudden.")
+			saynn("Твой запертый член становится совсем тесным в своей маленькой клетке... Внезапно ты чувствуешь такую острую нужду.")
 		elif(GM.pc.hasReachablePenis()):
-			saynn("Your cock is getting hard and drippy.. leaking pre.. You feel so needy all of the sudden.")
+			saynn("Твой член наливается твердостью и начинает сочиться... капает предэякулят... Внезапно ты чувствуешь такую острую нужду.")
 		elif(GM.pc.hasReachableVagina()):
-			saynn("Your pussy is getting wet and sensitive.. you're falling into heat.. you need to do something about it..")
+			saynn("Твоя киска становится влажной и чувствительной... ты впадаешь в течку... тебе нужно что-то с этим делать...")
 		else:
-			saynn("You feel so needy all of the sudden..")
+			saynn("Внезапно ты чувствуешь такую острую нужду...")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"Feeling hot, huh?",
 			"Enjoying the food?",
 		])+"[/say]")
 		
-		addButton("Continue", "See what happens next", "canteendrugged_lust_reveal")
+		addButton("Продолжить", "Смотреть, что будет дальше", "canteendrugged_lust_reveal")
 		
 	if(state == "canteendrugged_lust_reveal"):
 		addCharacter(npcMain)
@@ -223,18 +223,18 @@ func _run():
 		addCharacter(npcExtra2)
 		playAnimation(StageScene.Duo, "stand", {npc=npcMain})
 		
-		saynn("You get up.. and see three figures surrounding you. The leader steps closer.")
+		saynn("Ты поднимаешься... и видишь, что тебя окружили три фигуры. Лидер делает шаг вперед.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"I asked the chef to make your food a little.. spicier.",
 			"I asked the chef to add a little something into your meal.",
 		])+"[/say]")
 		
-		saynn("It's {npc.him}.. your nemesis.")
+		saynn("Это {npc.him}... твой заклятый враг.")
 		
 		saynn("[say=npc]"+NemesisReason.getAmbushLine(nemesisReason, getCharacter(npcMain))+"[/say]")
 		
-		saynn("Looks like {npc.he} brought some friends.")
+		saynn("Похоже, {npc.he} притащил с собой дружков.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"You will do as I say. And we won't have any problems.",
@@ -242,18 +242,18 @@ func _run():
 			"Don't be stupid. It's three against one.",
 		])+"[/say]")
 		
-		saynn("Something tells you they won't give you time to solve your lust problem..")
+		saynn("Что-то подсказывает тебе, что они не дадут тебе времени разобраться со своим вожделением...")
 		
-		addButton("Continue", "See what happens next", "show_others")
+		addButton("Продолжить", "Смотреть, что будет дальше", "show_others")
 		
 	if(state == "showeritems"):
 		playAnimation(StageScene.Showering, "head", {pc="pc", bodyState={naked=true}})
 		
-		saynn("You were taking a normal shower.. washing yourself, letting the water get rid of any filth.")
+		saynn("Ты принимала обычный душ... мылась, позволяя воде смыть с себя всю грязь.")
 
-		saynn("But, for some reason, you get a feeling that you are being [b]watched[/b]..")
+		saynn("Но почему-то у тебя возникает чувство, будто за тобой [b]наблюдают[/b]...")
 		
-		addButton("Continue", "See what happens next", "showeritems_reveal")
+		addButton("Продолжить", "Смотреть, что будет дальше", "showeritems_reveal")
 		
 	if(state == "showeritems_reveal"):
 		addCharacter(npcMain)
@@ -261,7 +261,7 @@ func _run():
 		addCharacter(npcExtra2)
 		playAnimation(StageScene.Duo, "stand", {npc=npcMain})
 		
-		saynn("Suddenly, three figures enter the room and surround you. The leader steps closer.")
+		saynn("Внезапно в комнату входят три фигуры и окружают тебя. Лидер делает шаг ближе.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"Hi. Remember me?",
@@ -269,11 +269,11 @@ func _run():
 			"Hey there. Missed me?",
 		])+"[/say]")
 		
-		saynn("It's {npc.him}.. your nemesis.")
+		saynn("Это {npc.him}... твой заклятый враг.")
 		
 		saynn("[say=npc]"+NemesisReason.getAmbushLine(nemesisReason, getCharacter(npcMain))+"[/say]")
 		
-		saynn("Looks like {npc.he} brought some friends.")
+		saynn("Похоже, {npc.he} притащил с собой дружков.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"You will do as I say. And we won't have any problems.",
@@ -281,37 +281,37 @@ func _run():
 			"Don't be stupid. It's three against one.",
 		])+"[/say]")
 		
-		saynn("You left all your items in the locker. Something tells you they won't let you get to them..")
+		saynn("Ты оставил все свои вещи в шкафчике. Что-то подсказывает тебе, что к ним тебя просто так не подпустят...")
 		
-		addButton("Continue", "See what happens next", "show_others")
+		addButton("Продолжить", "Смотреть, что будет дальше", "show_others")
 	
 	if(state == "show_others"):
 		playAnimation(StageScene.Duo, "stand", {pc=npcExtra1, npc=npcExtra2})
 		
-		saynn("There are others with {npc.him}! You will have to win 3 fights in a row.")
+		saynn("Там есть и другие {npc.him}! Тебе придется выиграть 3 боя подряд.")
 		
-		saynn("Or just let {npc.name} do whatever {npc.he} wants with you. You get a feeling that it won't end well for you though..")
+		saynn("Или просто позволить {npc.name} делать с тобой всё, что захочет {npc.he}. Но у тебя есть предчувствие, что для тебя это плохо кончится...")
 		
 		if(ambushType == "normalshiv"):
-			saynn("You got stabbed.. so you will also start the first fight with a [color=red]huge[/color] bleeding.")
+			saynn("Тебя ударили ножом... так что первый бой начнется с [color=red]сильного[/color] кровотечения.")
 		if(ambushType == "showeritems"):
-			saynn("You got ambushed in a shower room. You will have to fight [b]naked[/b] and with no access to your weapons or other helpful items like painkillers.")
+			saynn("На тебя напали в душевой. Тебе придется сражаться [b]голышом[/b], без оружия и полезных вещей вроде обезболивающих.")
 		if(ambushType == "canteendrugged_lust"):
-			saynn("You will start the fight incredibly horny. If you don't find a way to solve your lust, you will lose.")
+			saynn("Ты начнешь бой в состоянии дикого возбуждения. Если не найдешь способ утолить похоть, то проиграешь.")
 		if(ambushType == "normaldrugged_stamina"):
-			saynn("You feel incredibly tired because of the drug.")
+			saynn("Из-за наркотика ты чувствуешь себя невероятно уставшим.")
 		if(ambushType == "cellbondage"):
-			saynn("Since they went through your pockets, you won't be able to use most items: your weapons and drugs.")
+			saynn("Поскольку они обшарили твои карманы, ты не сможешь использовать большинство вещей: свое оружие и препараты.")
 		
 		sayOutcomeIfFail()
 		
-		addButton("Fight", "You'd rather fight", "first_fight")
-		addButton("Submit", "See what happens..", "do_submit")
+		addButton("Драться", "Лучше сражаться", "first_fight")
+		addButton("Подчиниться", "Посмотреть, что будет...", "do_submit")
 	
 	if(state == "first_fight"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcExtra1})
 		
-		saynn("You prepare to fight back.")
+		saynn("Ты готовишься дать отпор.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"That a dumb decision.",
@@ -320,25 +320,25 @@ func _run():
 			"You're only making it worse for yourself.",
 		])+"[/say]")
 		
-		saynn("{npc.name} decides to let {npc.his} friends soften you up first.")
+		saynn("{npc.name} решает сначала дать {npc.his} друзьям тебя размять.")
 		
-		addButton("Fight", "Start the fight", "start_first_fight")
+		addButton("Драться", "Начать бой", "start_first_fight")
 	
 	if(state == "second_fight"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcExtra2})
 		
-		saynn("You won. The first friend is kissing the floor.")
+		saynn("Ты победил. Первый друг уже вовсю целует пол.")
 		
-		saynn("But you're not free yet.")
+		saynn("Но ты всё ещё не на свободе.")
 		
-		saynn("{npc2.name} approaches you, eager to fight.")
+		saynn("{npc2.name} приближается к тебе, жаждая битвы.")
 		
-		addButton("Fight", "Start the fight", "start_second_fight")
+		addButton("Драться", "Начать бой", "start_second_fight")
 	
 	if(state == "third_fight"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcMain})
 		
-		saynn("Both of {npc.nameS} friends got defeated.")
+		saynn("Оба друга {npc.nameS} повержены.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"Alright. Lets dance.",
@@ -349,14 +349,14 @@ func _run():
 			"I guess it's time to show you your place.",
 		])+"[/say]")
 		
-		saynn("Last fight. It's your nemesis.")
+		saynn("Последний бой. Твой заклятый враг.")
 		
-		addButton("Fight", "Start the fight", "start_third_fight")
+		addButton("Драться", "Начать бой", "start_third_fight")
 	
 	if(state == "won_all_fights"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcMain, npcAction="defeat"})
 		
-		saynn("You won! Your nemesis hits the floor, unable to continue fighting.")
+		saynn("Ты победил! Твой враг рушится на пол, не в силах продолжать бой.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"Hey.. Listen.. Let's talk.",
@@ -364,26 +364,26 @@ func _run():
 			"Fuck you.. whatever..",
 		])+"[/say]")
 		
-		addButton("Leave", "Just leave them be", "decideLeave")
-		addButton("Punish", "Do something fun with them", "startPunish")
+		addButton("Уйти", "Просто оставь их в покое", "decideLeave")
+		addButton("Наказать", "Устрой с ними что-нибудь весёлое", "startPunish")
 	
 	if(state == "decideLeave"):
 		playAnimation(StageScene.Solo, "stand")
 		
-		saynn("{npc.He} {npc.isAre} not worth your time.")
+		saynn("{npc.He} {npc.isAre} не стоят твоего времени.")
 		
-		saynn("After teaching {npc.him} a lesson, you decide to just leave.")
+		saynn("Преподав {npc.him} урок, вы решаете просто уйти.")
 		
-		saynn("Hopefully {npc.he} won't be a problem anymore.")
+		saynn("Надеемся, {npc.he} больше не доставит проблем.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	
 	if(state == "lost_fight"):
 		playAnimation(StageScene.Solo, "defeat")
 		
-		saynn("You lost. Your nemesis has won.")
+		saynn("Вы проиграли. Ваш заклятый враг одержал верх.")
 		
-		saynn("You're on the floor, trying to catch your breath.")
+		saynn("Вы лежите на полу, пытаясь отдышаться.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"That was dumb.",
@@ -394,16 +394,16 @@ func _run():
 			"Time for the fun part.",
 		])+"[/say]")
 		
-		saynn("{npc.name} approaches you and quickly injects your neck with some syringe..")
+		saynn("{npc.name} подходит к вам и быстро вонзает шприц вам в шею...")
 		
-		addButton("Continue", "See what happens next..", "get_knocked_out")
+		addButton("Продолжить", "Смотри, что будет дальше...", "get_knocked_out")
 	
 	if(state == "do_submit"):
 		playAnimation(StageScene.Duo, "kneel", {npc=npcMain})
 		
-		saynn("Fighting.. is not worth it. You decide to submit.")
+		saynn("Сопротивление... того не стоит. Вы решаете подчиниться.")
 		
-		saynn("You get on your knees before {npc.name}.. and wait for {npc.his} next decision.")
+		saynn("Вы встаете на колени перед {npc.name}... и ждете следующего решения {npc.his}.")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"Good {pc.boy}. You won't regret it.",
@@ -412,9 +412,9 @@ func _run():
 			"That was a smart choice. Thank you.",
 		])+"[/say]")
 		
-		saynn("{npc.name} approaches you and quickly injects your neck with some syringe..")
+		saynn("{npc.name} подходит к вам и быстро вонзает шприц вам в шею...")
 		
-		addButton("Continue", "See what happens next", "get_knocked_out")
+		addButton("Продолжить", "Смотреть, что будет дальше", "get_knocked_out")
 	
 	if(state == "get_knocked_out"):
 		removeCharacter(npcMain)
@@ -422,11 +422,11 @@ func _run():
 		removeCharacter(npcExtra2)
 		playAnimation(StageScene.Sleeping, "sleep")
 		
-		saynn("Whatever it is.. it's working fast.")
+		saynn("Что бы это ни было... оно действует очень быстро.")
 		
-		saynn("You collapse completely, your body not responding anymore. Your mind is getting sleepier and sleepier..")
+		saynn("Вы окончательно теряете сознание, тело перестает слушаться. Сон окутывает ваш разум всё сильнее и сильнее...")
 		
-		saynn("The last thing you hear is..")
+		saynn("Последнее, что ты слышишь, это..")
 		
 		saynn("[say=npc]"+RNG.pick([
 			"This is just the beginning.",
@@ -435,9 +435,9 @@ func _run():
 			"We're almost done here. Only one last thing left.",
 		])+"[/say]")
 		
-		saynn("And then everything goes dark..")
+		saynn("А затем всё погружается во тьму..")
 		
-		addButton("Continue", "See what happens next", "start_slavery")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_slavery")
 	
 func _react(_action: String, _args):
 	if(_action == "endthescene"):
@@ -523,9 +523,9 @@ func _react_scene_end(_tag, _result):
 
 func sayOutcomeIfFail():
 	if(willSoftSlavery):
-		saynn("If you lose or submit, you will probably [b]become {npc.name}'s prison bitch[/b]..")
+		saynn("Если ты проиграешь или сдашься, то, скорее всего, [b]станешь тюремной сучкой {npc.name}[/b]..")
 	else:
-		saynn("If you lose or submit, you will probably be [b]sold off on an auction[/b]..")
+		saynn("Если ты проиграешь или сдашься, тебя, скорее всего, [b]продадут на аукционе[/b]..")
 
 func saveData():
 	var data = .saveData()

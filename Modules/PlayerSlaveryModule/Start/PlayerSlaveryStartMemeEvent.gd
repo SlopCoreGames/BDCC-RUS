@@ -7,9 +7,9 @@ func registerTriggers(es):
 	es.addTrigger(self, Trigger.EnteringRoom, "fight_meme")
 
 func run(_triggerID, _args):
-	saynn("You notice that there is a credits chip on the floor here.")
+	saynn("Вы замечаете, что на полу здесь лежит кредитный чип.")
 	
-	addButton("Credits chip", "There is a credits chip on the floor", "credits")
+	addButton("Кредитный чип", "На полу лежит кредитный чип", "credits")
 
 func getPriority():
 	return 11

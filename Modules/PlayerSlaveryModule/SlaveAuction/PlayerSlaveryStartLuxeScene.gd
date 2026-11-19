@@ -14,147 +14,147 @@ func _run():
 		playAnimation(StageScene.GivingBirth, "idle", {pc="pc"})
 		aimCameraAndSetLocName("market_luxe")
 		luxeTimes = getFlag("PlayerSlaveryModule.luxeTimes", 0)
-		saynn("Your head is ringing.. everything throbs in time with your heartbeat.. and not in a good way. The black wood under you offers cold support as your mind slowly comes back to senses.")
+		saynn("В голове звенит... всё пульсирует в такт сердцебиению... и это совсем не приятное чувство. Под тобой — холодная поверхность из черного дерева, помогающая сознанию медленно возвращаться к реальности.")
 
-		saynn("Time to open your eyes.")
+		saynn("Пора открывать глаза.")
 
-		saynn("You force your vision into focus. You're.. in a fancy-looking room. An office desk, rich wooden furniture that spots golden trims, a glowing holo-map.. Wait.. You very much know this room.")
+		saynn("Ты заставляешь зрение сфокусироваться. Ты... в роскошной комнате. Письменный стол, дорогая деревянная мебель с золотой отделкой, светящаяся голо-карта... Погоди... Ты прекрасно знаешь эту комнату.")
 
-		saynn("You try to get up.. but your collar stops you, yanking you back down. You are leashed to one of the floor's hooks.")
+		saynn("Ты пытаешься подняться... но ошейник резко дергает тебя назад. Ты прикован цепью к одному из крюков на полу.")
 
 		if (luxeTimes <= 0):
-			saynn("[say=pc]Shit.[/say]")
+			saynn("[say=pc]Блядь.[/say]")
 
 		else:
-			saynn("[say=pc]Shit. Not again.[/say]")
+			saynn("[say=pc]Блядь. Только не снова.[/say]")
 
-		saynn("[say=luxe]Hm.[/say]")
+		saynn("[say=luxe]Хм.[/say]")
 
-		saynn("You can hear his growly voice.. his steps."+str(" You already know that your fate is sealed.." if luxeTimes >= 1 else "")+"")
+		saynn("Ты слышишь его хриплый голос... и его шаги."+str(" You already know that your fate is sealed.." if luxeTimes >= 1 else "")+"")
 
-		addButton("Continue", "See what happens next", "luxe_comes_in")
+		addButton("Продолжить", "Смотреть, что будет дальше", "luxe_comes_in")
 	if(state == "luxe_comes_in"):
 		playAnimation(StageScene.Duo, "kneel", {npc="luxe", npcAction="sit", bodyState={chains=[["normal", "neck", "scene", "floor"]]} })
 		addCharacter("luxe")
 		if (luxeTimes <= 0):
-			saynn("Luxe steps into the office and just walks past you.")
+			saynn("Люкс входит в кабинет и просто проходит мимо тебя.")
 
-			saynn("[say=pc]Hey, uh.. someone chained me to the floor here.[/say]")
+			saynn("[say=pc]Эй, эм... меня тут кто-то приковал к полу.[/say]")
 
-			saynn("He just sits in his chair. Feels like he didn't notice you.. but he totally did.")
+			saynn("Он просто сидит в своем кресле. Кажется, будто он тебя не заметил... но на самом деле он всё прекрасно понял.")
 
-			saynn("[say=luxe]That was me.[/say]")
+			saynn("[say=luxe]Это был я.[/say]")
 
-			saynn("He? Luxe chained you to the corner of his office?")
+			saynn("Он? Люкс приковал тебя к углу своего кабинета?")
 
-			saynn("[say=pc]What?[/say]")
+			saynn("[say=pc]Что?[/say]")
 
-			saynn("[say=luxe]So that you wouldn't escape.[/say]")
+			saynn("[say=luxe]Чтобы ты не сбежал(ла).[/say]")
 
-			saynn("His voice is calm and cold.. while yours has audible nervous notes.")
+			saynn("Его голос спокоен и холоден... в то время как в твоем отчетливо слышны нотки нервозности.")
 
-			saynn("[say=pc]Escape what? Are you making me your bitch?[/say]")
+			saynn("[say=pc]Сбежать куда? Ты что, решил(а) сделать из меня свою сучку?[/say]")
 
-			saynn("He shakes his head subtly.")
+			saynn("Он едва заметно качает головой.")
 
-			saynn("[say=luxe]I don't need an AlphaCorp slave. Someone else might.[/say]")
+			saynn("[say=luxe]Мне не нужен раб из АльфаКорп. А вот кому-то другому — вполне возможно.[/say]")
 
-			saynn("[say=pc]What are you implying?[/say]")
+			saynn("[say=pc]На что ты намекаешь?[/say]")
 
 		else:
-			saynn("Luxe steps into the office and just walks past you.")
+			saynn("Люкс входит в кабинет и просто проходит мимо тебя.")
 
-			saynn("[say=pc]Hello to you too.[/say]")
+			saynn("[say=pc]И тебе привет.[/say]")
 
-			saynn("He just sits in his chair. Feels like he didn't notice you.. but he totally did.")
+			saynn("Он просто сидит в своем кресле. Кажется, будто он тебя не заметил... но на самом деле он всё прекрасно понял.")
 
-			saynn("[say=luxe]Mhm.[/say]")
+			saynn("[say=luxe]М-м...[/say]")
 
-			saynn("Luxe takes some time to go through his documents.")
+			saynn("Люксу требуется некоторое время, чтобы просмотреть твои документы.")
 
-			saynn("[say=pc]You're gonna sell me?[/say]")
+			saynn("[say=pc]Ты собираешься меня продать?[/say]")
 
-			saynn("He gives you a quick but silent glance. Enough was said.")
+			saynn("Он бросает на тебя быстрый, но молчаливый взгляд. Сказанного было достаточно.")
 
-			saynn("[say=pc]I see..[/say]")
+			saynn("[say=pc]Понятно..[/say]")
 
-		addButton("Continue", "See what happens next", "luxe_leashes_pc")
+		addButton("Продолжить", "Смотреть, что будет дальше", "luxe_leashes_pc")
 	if(state == "luxe_leashes_pc"):
 		playAnimation(StageScene.Duo, "kneel", {npc="luxe", bodyState={leashedBy="luxe"}})
 		if (luxeTimes <= 0):
-			saynn("Luxe gets up and approaches you. One of his powerful hands gets a hold of your hair.. while the second one grabs the chain leash.")
+			saynn("Люкс встает и подходит к тебе. Одной своей мощной рукой он вцепляется тебе в волосы, а второй хватает цепь-поводок.")
 
-			saynn("[say=luxe]We can do it the easy way. Or we can do it the brutal way.[/say]")
+			saynn("[say=luxe]Мы можем сделать всё по-хорошему. Или можем по-жестокому.[/say]")
 
-			saynn("You wince.. trying to pull his digits off only makes him dig his claws into your scalp.")
+			saynn("Ты морщишься... попытка убрать его пальцы лишь заставляет его впиваться когтями в твой скальп.")
 
-			saynn("[say=pc]Gh.. You are selling me? After what I did?[/say]")
+			saynn("[say=pc]Гх... Ты продаешь меня? После всего, что я сделал?[/say]")
 
-			saynn("His hand pulls on your hair more and more, your pain level increasing.")
+			saynn("Его рука тянет тебя за волосы всё сильнее, усиливая боль.")
 
-			saynn("[say=luxe]I'm selling you. Because that's what I do with slaves.[/say]")
+			saynn("[say=luxe]Я продаю тебя. Потому что именно так я и поступаю с рабами.[/say]")
 
-			saynn("His voice rocks through your very core. You are squirming.. the discomfort makes you unable to stay still.. grunts escaping your lips.")
+			saynn("Его голос пробирает тебя до самых костей. Ты ерзаешь... от дискомфорта невозможно усидеть на месте, а с губ срываются невольные стоны.")
 
-			saynn("[say=luxe]The auction is about to start. Up.[/say]")
+			saynn("[say=luxe]Аукцион вот-вот начнется. Вставай.[/say]")
 
 		else:
-			saynn("After Luxe is done with the documents, he gets up and approaches you. One of his powerful hands gets a hold of your hair.. while the second one grabs the chain leash.")
+			saynn("Закончив с документами, Люкс поднимается и подходит к тебе. Одной своей мощной рукой он хватает тебя за волосы, а другой вцепляется в цепь-поводок.")
 
-			saynn("[say=luxe]We can do it the easy way. Or we can do it the brutal way.[/say]")
+			saynn("[say=luxe]Мы можем сделать всё по-хорошему. Или можем по-жестокому.[/say]")
 
-			saynn("You wince.. trying to pull his digits off only makes him dig his claws into your scalp.")
+			saynn("Ты морщишься... попытка убрать его пальцы лишь заставляет его впиваться когтями в твой скальп.")
 
-			saynn("[say=pc]Easy way is fine..[/say]")
+			saynn("[say=pc]Полегче, так и быть...[/say]")
 
-			saynn("His hand pulls on your hair more and more, your pain level increasing.")
+			saynn("Его рука тянет тебя за волосы всё сильнее, усиливая боль.")
 
-			saynn("[say=luxe]I will keep selling you into slavery. Until you learn your place.[/say]")
+			saynn("[say=luxe]Я буду продавать тебя в рабство снова и снова, пока ты не выучишь свое место.[/say]")
 
-			saynn("His voice rocks through your very core. You are squirming.. the discomfort makes you unable to stay still.. grunts escaping your lips.")
+			saynn("Его голос пробирает тебя до самых костей. Ты ерзаешь... от дискомфорта невозможно усидеть на месте, а с губ срываются невольные стоны.")
 
-			saynn("[say=luxe]The auction is about to start. Up.[/say]")
+			saynn("[say=luxe]Аукцион вот-вот начнется. Вставай.[/say]")
 
-		addButton("Follow", "See what happens next", "about_to_start")
+		addButton("Следовать", "Смотреть, что будет дальше", "about_to_start")
 	if(state == "about_to_start"):
 		playAnimation(StageScene.HangingDuo, "idle", {pc="pc", npc="luxe", bodyState={naked=true}})
 		aimCameraAndSetLocName("market_market")
-		saynn("You get up and follow Luxe through the dimly-lit corridors.")
+		saynn("Ты поднимаешься и следуешь за Люксом по тускло освещенным коридорам.")
 
-		saynn("[say=pc]Where are my things?[/say]")
+		saynn("[say=pc]А где мои вещи?[/say]")
 
-		saynn("[say=luxe]AlphaCorp has them. I'm selling people, not running a garage sale.[/say]")
+		saynn("[say=luxe]Они у «АльфаКорп». Я людей продаю, а не устраиваю распродажу хлама в гараже.[/say]")
 
-		saynn("Brutally honest. At least there is a chance of recovering them..")
+		saynn("Жестокая правда. По крайней мере, есть шанс, что их вернут...")
 
-		saynn("He brings you onto a stage.. and positions you in the middle of it. Your wrists get chained high above your head, making you stand on your toes.")
+		saynn("Он выводит тебя на сцену... и ставит в самый центр. Твои запястья заковывают в цепи высоко над головой, заставляя стоять на цыпочках.")
 
-		saynn("Your heart is beating harder as you begin to hear voices appearing behind the thick curtains.")
+		saynn("Сердце колотится всё сильнее, когда за плотными шторами начинают слышаться голоса.")
 
-		saynn("Luxe gets onto a small raised platform.. and waits for the right moment.")
+		saynn("Люкс поднимается на небольшое возвышение... и ждет подходящего момента.")
 
-		saynn("The auction is about to start.. and you are the first lot.")
+		saynn("Аукцион вот-вот начнется... и ты — первый лот.")
 
-		addButton("Auction", "See how it goes", "start_auction")
+		addButton("Аукцион", "Посмотреть, что будет", "start_auction")
 	if(state == "after_auction"):
 		playAnimation(StageScene.Duo, "stand", {npc="luxe", bodyState={leashedBy="luxe"}, flipNPC=true})
-		saynn("Everything has happened so quickly..")
+		saynn("Всё произошло слишком быстро...")
 
-		saynn("Luxe approaches you and lowers the chains before grabbing your leash.")
+		saynn("Люкс подходит к тебе и опускает цепи, прежде чем схватить тебя за поводок.")
 
-		saynn("Your {pc.feet} get fully planted onto the ground. A million thoughts rush through your head.")
+		saynn("Твои {pc.feet} плотно прижимаются к земле. В голове проносится миллион мыслей.")
 
-		saynn("[say=luxe]Move.[/say]")
+		saynn("[say=luxe]Движение.[/say]")
 
-		saynn("Luxe walks you to your new owner.. before handing them the leash.")
+		saynn("Люкс ведет тебя к новому владельцу... а затем вручает ему поводок.")
 
-		saynn("[say=luxe]Good choice. Enjoy the product.[/say]")
+		saynn("[say=luxe]Хороший выбор. Наслаждайтесь товаром.[/say]")
 
-		saynn("The masked figure nods.. and brings you along onto their spaceship.")
+		saynn("Фигура в маске кивает... и забирает тебя с собой на свой космический корабль.")
 
-		saynn("A few minutes later, you are already cruising the stars.. not as a free person.. but as someone's property.")
+		saynn("Спустя несколько минут ты уже несешься сквозь звезды... но не как свободный человек... а как чья-то собственность.")
 
-		addButton("Continue", "See what happens next", "start_slavery")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_slavery")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -54,9 +54,9 @@ func _run():
 		
 		var character:DynamicCharacter = getCharacter(savedCharID)
 		if(character != null && character.isSlaveToPlayer()):
-			addButton("Continue", "See what happens next", "after_event")
+			addButton("Продолжить", "Смотреть, что будет дальше", "after_event")
 		else:
-			addButton("Continue", "See what happens next", "endthescene")
+			addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 			
 		
 func _react(_action: String, _args):
