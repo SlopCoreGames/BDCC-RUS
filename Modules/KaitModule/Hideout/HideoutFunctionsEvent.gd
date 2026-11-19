@@ -14,19 +14,19 @@ func run(_triggerID, _args):
 	
 	if(theRoomID == "hideout_hq" && getFlag("KaitModule.introCompleted")):
 		if(isOnMission):
-			addDisabledButton("Mission Board", "You are already on a mission")
+			addDisabledButton("Доска заданий", "Вы уже выполняете миссию")
 			if(GM.main.MS.canCancelCurrentMission()):
-				addButton("Cancel Mission", "Cancel the current mission", "cancelMission")
+				addButton("Отменить миссию", "Отменить текущую миссию", "cancelMission")
 		elif(isDoingRec):
-			addDisabledButton("Mission Board", "You can't do this while you're recruiting someone")
+			addDisabledButton("Доска заданий", "Вы не можете сделать это, пока вербуете кого-то")
 		else:
-			addButtonWithChecks("Mission Board", "Look at what missions you can do now!", "missionboard", [], [[ButtonChecks.NotLate]])
+			addButtonWithChecks("Доска заданий", "Посмотри, какие миссии тебе доступны сейчас!", "missionboard", [], [[ButtonChecks.NotLate]])
 			if(!checkCharacterBusy("KaitBusy", "Seems like Kait isn't here", "Kait")):
-				addButtonWithChecks("Kait", "Talk with the snow leopard!", "kaittalk", [], [[ButtonChecks.NotLate]])
+				addButtonWithChecks("Кейт", "Поговорить со снежным барсом!", "kaittalk", [], [[ButtonChecks.NotLate]])
 	
 	if(theRoomID == "hideout_near_break_room" && isDoingRec):
 		var theRecName:String = GM.main.RCS.getRecruitName()
-		addButton("Recruit "+str(theRecName), "Make a plan about how you want to recruit "+theRecName, "doRec")
+		addButton("Вербовать"+str(theRecName), "Составь план того, как именно ты хочешь вербовать людей"+theRecName, "doRec")
 	
 func getPriority():
 	return 0

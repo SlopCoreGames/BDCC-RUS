@@ -8,66 +8,66 @@ func _run():
 		addCharacter("eliza")
 		
 	if(state == ""):
-		saynn("[say=pc]You were talking about doing some kind of research. I’d like to volunteer.[/say]")
+		saynn("[say=pc]Вы говорили, что собираетесь провести какое-то исследование. Я бы хотела стать добровольцем.[/say]")
 
-		saynn("Eliza raises her brow and gazes at you with her feline eyes. She puts away her mug and then grabs pen and paper. She starts to slowly fill some form.")
+		saynn("Элиза приподнимает бровь и пристально смотрит на вас своими кошачьими глазами. Она отставляет кружку, берет ручку и бумагу и начинает медленно заполнять бланк.")
 
-		saynn("[say=eliza]Well then. Indeed, we’re always in need of more test subjects. Are you sure?[/say]")
+		saynn("[say=eliza]Что ж. На самом деле, нам всегда не хватает испытуемых. Вы уверены?[/say]")
 
-		saynn("[say=pc]I mean, if it’s safe.[/say]")
+		saynn("[say=pc]В смысле, если это безопасно.[/say]")
 
-		saynn("Eliza chuckles, she is still focused on filling the form.")
+		saynn("Элиза усмехается, всё еще сосредоточенно заполняя форму.")
 
-		saynn("[say=eliza]Computer simulations say it's safe so it must be. We would happily use computers to simulate everything. But you know, a computer can’t simulate a person. A person with feelings, emotions, thoughts and beliefs. That’s still beyond our reach.[/say]")
+		saynn("[say=eliza]Компьютерное моделирование говорит, что это безопасно, так что, должно быть, так и есть. Мы бы с радостью использовали компьютеры, чтобы симулировать всё на свете. Но знаете, компьютер не может симулировать человека. Человека с чувствами, эмоциями, мыслями и убеждениями. Это всё еще за пределами наших возможностей.[/say]")
 
-		saynn("She offers you a filled form and a pen.")
+		saynn("Она протягивает вам заполненный бланк и ручку.")
 
-		saynn("[say=eliza]If you really want this, sign up here. Just keep in mind that you will be kept here for some time after the tests. You know, to monitor you and your vitals. You will be paid, of course.[/say]")
+		saynn("[say=eliza]Если вы действительно этого хотите, распишитесь здесь. Только имейте в виду, что после тестов вас оставят здесь на какое-то время. Ну, чтобы понаблюдать за вами и вашими показателями жизнедеятельности. Вам, конечно, будут платить.[/say]")
 
-		saynn("You quickly skim through the form, everything seems to make sense. Though it does say that the medical wing can not be held accountable for your mental health after the tests.")
+		saynn("Вы быстро пробегаете глазами по форме, всё кажется логичным. Хотя там сказано, что медицинское крыло не несет ответственности за ваше психическое состояние после завершения тестов.")
 
-		saynn("Do you wanna sign it?")
+		saynn("Подпишете?")
 
-		addButton("Sign it", "What’s the worst that can happen, right?", "sign_it")
-		addButton("No", "On second thought..", "no")
+		addButton("Подпиши", "Что худшего может случиться, верно?", "sign_it")
+		addButton("No", "Если подумать...", "no")
 
 	if(state == "no"):
-		saynn("[say=pc]It seems kinda dangerous. I think I will pass.[/say]")
+		saynn("[say=pc]Это кажется каким-то опасным. Пожалуй, я воздержусь.[/say]")
 
-		saynn("Eliza shrugs and quickly destroys the form.")
+		saynn("Элиза пожимает плечами и быстро уничтожает бланк.")
 
-		saynn("[say=eliza]Your loss, inmate. No one ever complained about this research program.[/say]")
+		saynn("[say=eliza]Твоя потеря, заключенный. Никто еще не жаловался на эту исследовательскую программу.[/say]")
 
-		addButton("Continue", "I wonder why", "endthescene")
+		addButton("Продолжить", "Интересно, почему...", "endthescene")
 
 	if(state == "sign_it"):
-		saynn("You sign the paper and hand it back to the doctor. She puts it away and stands up.")
+		saynn("Вы подписываете бумагу и возвращаете её врачу. Она убирает её и встает.")
 
-		saynn("[say=eliza]Wait there, inmate.[/say]")
+		saynn("[say=eliza]Жди здесь, заключенный.[/say]")
 
-		saynn("Eliza steps away from the counter and walks away. You spend some time just looking around, a few nurses watch you.")
+		saynn("Элиза отходит от стойки и уходит. Вы проводите некоторое время, просто оглядываясь по сторонам; за вами наблюдают несколько медсестер.")
 
-		saynn("Eventually, Eliza appears from one of the airlocks and walks up to you, she is clearly holding something in her hand but she hides it behind her back.")
+		saynn("В конце концов, из одного из шлюзов появляется Элиза и подходит к тебе; видно, что в руке она что-то держит, но прячет это за спиной.")
 
-		saynn("[say=eliza]Ready?[/say]")
+		saynn("[say=eliza]Готов?[/say]")
 
-		saynn("[say=pc]Ready for what?[/say]")
+		saynn("[say=pc]К чему это ты готова?[/say]")
 
-		saynn("Ow, she suddenly reaches out and grabs you by the collar just to shove a syringe into your neck and quickly empty it.")
+		saynn("Ой! Она внезапно протягивает руку, хватает тебя за воротник и просто вонзает шприц тебе в шею, быстро опустошая его.")
 
-		saynn("You stumble back and grab onto your collar. The room starts to tilt to the side, lights flickering..")
+		saynn("Ты отшатываешься, хватаясь за воротник. Комната начинает крениться набок, свет мерцает...")
 
-		saynn("[say=pc]W-what.. is that..[/say]")
+		saynn("[say=pc]Ч-что... это...[/say]")
 
-		saynn("Eliza just covers your mouth.")
+		saynn("Элиза просто зажимает тебе рот рукой.")
 
-		saynn("[say=eliza]Shh-h-h..[/say]")
+		saynn("[say=eliza]Тсссс...[/say]")
 
-		saynn("You try to concentrate on her smug face. Your limbs slowly give up.. The gravity pulls you down to your knees.. Everything is so dark all of the sudden.. So.. tired..")
+		saynn("Ты пытаешься сосредоточиться на её самодовольном лице. Твои конечности медленно отказывают... Гравитация тянет тебя к земле, ты падаешь на колени... Внезапно всё становится таким темным... Так... хочется спать...")
 
-		saynn("You drop to the floor and lose your consciousness.")
+		saynn("Ты валишься на пол и теряешь сознание.")
 
-		addButton("Continue", "Life is tough", "continue")
+		addButton("Продолжить", "Жизнь — штука суровая", "continue")
 
 	if(state == "continue"):
 		setLocationName("Padded cell")
@@ -75,52 +75,52 @@ func _run():
 		GM.pc.setLocation("medical_paddedcell_player")
 		playAnimation(StageScene.Solo, "kneel")
 		
-		saynn("You open your eyes.. Everything is so hazy.. You’re on the floor. But the floor is.. so soft..")
+		saynn("Ты открываешь глаза... Всё так туманно... Ты на полу. Но пол такой... мягкий...")
 
-		addButton("Look around", "Where am I?", "look_around")
+		addButton("Осмотреться", "Где я?", "look_around")
 
 	if(state == "look_around"):
-		saynn("You’re in a small room. About two by two meters. Only the ceiling is made out of concrete, walls and floor have a soft layer to them, made out of square cushions, even the door is padded, apart from a little armored window. Are you in a.. asylum?")
+		saynn("Ты в маленькой комнате. Примерно два на два метра. Только потолок бетонный, а стены и пол покрыты мягким слоем из квадратных подушек; даже дверь обита мягким материалом, не считая маленького бронированного окошка. Ты что... в психушке?")
 
-		saynn("Oh no. You try to stand up but suddenly realize.. you’re wearing a latex straitjacket! Your arms are bound in such a way that you’re always hugging yourself, by trying to struggle you only make the latex squeak. You look down at yourself. There are two holes in it, your {pc.breasts} are always out! And your crotch is protected by a bulky chastity belt that’s part of the straitjacket. Overall, you’re completely helpless.")
+		saynn("О нет. Ты пытаешься встать, но внезапно осознаёшь... на тебе латексная смирительная рубашка! Руки стянуты так, что ты постоянно обнимаешь саму себя, а от попыток вырваться латекс лишь противно скрипит. Ты смотришь вниз. В рубашке есть два отверстия, твои {pc.breasts} всегда снаружи! А пах защищён громоздким поясом целомудрия, который является частью смирительной рубашки. В общем, ты совершенно беспомощна.")
 
-		addButton("Sit down", "Where else can you do", "sit_down")
+		addButton("Сесть", "Куда ещё можно...", "sit_down")
 
 	if(state == "sit_down"):
-		saynn("With some extra effort you manage to sit on your butt. With nothing better to do you decide to try and get some attention. Maybe this was a mistake.")
+		saynn("Приложив некоторое усилие, тебе удаётся сесть на задницу. Делать всё равно нечего, и ты решаешь попытаться привлечь к себе внимание. Возможно, это была ошибка.")
 
-		saynn("[say=pc]Hello? Anyone? I’m stuck here.[/say]")
+		saynn("[say=pc]Эй? Есть кто? Я тут застряла![/say]")
 
-		saynn("No one answers you. Although. After about a minute you hear the noise of an intercom.")
+		saynn("Тебе никто не отвечает. Однако спустя примерно минуту ты слышишь шум интеркома.")
 
-		saynn("[say=eliza]Up already? Good. How are we doing, inmate.[/say]")
+		saynn("[say=eliza]Уже проснулась? Хорошо. Как самочувствие, заключенная?[/say]")
 
-		saynn("[say=pc]What’s going on?[/say]")
+		saynn("[say=pc]Что происходит?[/say]")
 
-		saynn("[say=eliza]I told you, you’re gonna be monitored. The tests might be damaging to your mental health, we can’t have you out in the open. So you will spend some time in a closed environment.[/say]")
+		saynn("[say=eliza]Я же сказала, за тобой будут наблюдать. Тесты могут быть пагубны для твоего психического здоровья, мы не можем позволить тебе разгуливать где попало. Так что какое-то время ты проведешь в закрытом пространстве.[/say]")
 
-		saynn("[say=pc]Really? The paper didn’t mention this. The straitjacket and all.[/say]")
+		saynn("[say=pc]Серьезно? В бумагах об этом не упоминалось. Про смирительную рубашку и всё такое.[/say]")
 
-		saynn("[say=eliza]It’s so you don’t hurt yourself. Or us. The tests will begin soon. Enjoy your new cell~.[/say]")
+		saynn("[say=eliza]Это чтобы ты не навредила себе. Или нам. Тесты начнутся скоро. Наслаждайся своей новой камерой~.[/say]")
 
-		saynn("[say=pc]Wait! How long am I stuck here?[/say]")
+		saynn("[say=pc]Подождите! И как долго я здесь застряну?[/say]")
 
-		saynn("[say=eliza]A few days. Or. A few months. It depends on your behavior, inmate. For now I just want you to get some sleep.[/say]")
+		saynn("[say=eliza]Несколько дней. Или... несколько месяцев. Зависит от твоего поведения, заключенная. А пока я просто хочу, чтобы ты поспала.[/say]")
 
-		saynn("The noisy intercom shuts off, leaving you, again, in full silence. You sit against a padded wall, wondering what the doctor ment. Though you soon understand it, the vent that is located on the ceiling of your cell opened up and a thick pink mist began slowly filling the space.")
+		saynn("Шумный интерком отключается, оставляя тебя в полной тишине. Ты сидишь, прислонившись к мягкой стене, гадая, что имела в виду врач. Вскоре ты понимаешь: вентиляционное отверстие в потолке твоей камеры открылось, и пространство начало медленно заполняться густым розовым туманом.")
 
-		saynn("[say=pc]Hey![/say]")
+		saynn("[say=pc]Эй![/say]")
 		
-		saynn("No reaction. As you inevitably breathe some of it, you begin to feel more drowsy.. The padded floor suddenly feels quite.. comfy. Keeping your eyes open is so hard.. Your body gives up on you..")
+		saynn("Никакой реакции. Поскольку ты неизбежно вдыхаешь часть этого тумана, тебя начинает клонить в сон... Мягкий пол внезапно кажется таким... уютным. Удержать глаза открытыми становится всё труднее... Твое тело окончательно сдается...")
 
-		addButton("Sleep", "This place seems comfy enough..", "sleep")
+		addButton("Спать", "А здесь довольно уютно...", "sleep")
 		
 	if(state == "sleep"):
-		saynn("You get some good sleep. You open your eyes and realize that this wasn't a dream. You can't pinch your skin with that straitjacket on but everything is real, you're indeed stuck in a padded cell..")
+		saynn("Ты крепко спишь. Открыв глаза, ты понимаешь, что это был не сон. В смирительной рубашке трудно ущипнуть себя за кожу, но всё реально — ты действительно заперта в мягкой камере...")
 
-		saynn("Welcome to day "+str(GM.main.getDays())+" of your sentence")
+		saynn("Добро пожаловать в "+str(GM.main.getDays())+" твоего срока")
 		
-		addButton("Continue", "What next..", "startmental")
+		addButton("Продолжить", "Что дальше..", "startmental")
 		
 
 

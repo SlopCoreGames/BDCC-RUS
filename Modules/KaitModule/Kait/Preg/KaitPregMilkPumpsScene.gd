@@ -10,185 +10,185 @@ func _run():
 	if(state == ""):
 		addCharacter("kait")
 		playAnimation(StageScene.Duo, "stand", {npc="kait"})
-		saynn("Pick which breast pump do you want to use.. If any.")
+		saynn("Выбери, какой молокоотсос ты хочешь использовать... если вообще хочешь.")
 
-		addButton("Cancel", "You changed your mind", "endthescene")
-		addButton("Use hands", "No pump is gonna be used", "do_pick_nobreastpump")
+		addButton("Отмена", "Вы передумали", "endthescene")
+		addButton("Использовать руки", "Никакая помпа использоваться не будет", "do_pick_nobreastpump")
 		addPumpButtons("do_pick_breastpump")
 		if (false):
-			addButton("Nope", "You shouldn't see this", "do_pick_breastpump")
+			addButton("Неа", "Тебе не стоит этого видеть", "do_pick_breastpump")
 	if(state == "do_milk"):
 		playAnimation(StageScene.Grope, "tease", {pc="kait", npc="pc"})
-		saynn("You give Kait a quick full-body glance.")
+		saynn("Ты быстро и жадно осматриваешь Кейт с ног до головы.")
 
-		saynn("Her shirt is really tight.. her pregnant belly is what's mostly doing it.. but her relatively bigger breasts also don't help.")
+		saynn("Её футболка сидит очень плотно... в основном из-за её беременного живота, но её заметно увеличившаяся грудь тоже не помогает.")
 
-		saynn("You notice two dark, wet spots on the fabric.. right where her chest is.")
+		saynn("Ты замечаешь два тёмных влажных пятна на ткани... прямо там, где у неё грудь.")
 
-		saynn("[say=pc]How are your breasts?[/say]")
+		saynn("[say=pc]Как твоя грудь?[/say]")
 
-		saynn("[say=kait]Itchy.. they feel full.[/say]")
+		saynn("[say=kait]Чешется... и кажется такой налитой.[/say]")
 
-		saynn("[say=pc]I can help with that. C'mon.[/say]")
+		saynn("[say=pc]Я могу с этим помочь. Иди сюда.[/say]")
 
-		saynn("You pull out some breast pumps and show them to her.")
+		saynn("Ты достаёшь молокоотсосы и показываешь их ей.")
 
-		saynn("Her ears perk up, she bites her lip.")
+		saynn("Её ушки приподнимаются, она закусывает губу.")
 
-		saynn("[say=pc]You will have to undress. Can't do it through the cloth.[/say]")
+		saynn("[say=pc]Придется раздеться. Сквозь одежду не получится.[/say]")
 
-		saynn("[say=kait]Alright.[/say]")
+		saynn("[say=kait]Хорошо.[/say]")
 
-		addButton("Continue", "See what happens next", "do_put_pump_on")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_put_pump_on")
 	if(state == "do_put_pump_on"):
 		#addCharacter("kait", ["naked"])
 		playAnimation(StageScene.BreastGroping, "tease", {pc="pc", npc="kait", npcBodyState={hard=true}})
-		saynn("She slowly undoes some buttons and opens her shirt, exposing her swollen breasts. They are heavy and full, resting on her huge belly. Her dark nipples are looking perky and shiny. Perfect.")
+		saynn("Она медленно расстегивает пуговицы и распахивает рубашку, обнажая свои набухшие груди. Они тяжелые и полные, покоятся на ее огромном животе. Ее темные соски выглядят упругими и блестящими. Идеально.")
 
-		saynn("Gently, you cup one of her breasts in your hand, making her inhale softly. You place the first pump's cup over her nipple, making sure it's holding on by itself. Then you do the same for the other. She is watching you, her breathing getting a little faster.")
+		saynn("Вы осторожно берете одну из ее грудей в ладонь, заставляя ее тихо вдохнуть. Вы накрываете сосок первой чашей молокоотсоса, следя за тем, чтобы она держалась сама по себе. Затем делаете то же самое со второй. Она наблюдает за вами, ее дыхание становится чуть чаще.")
 
-		saynn("[say=kait]Okay.. okay.. You can turn them on.[/say]")
+		saynn("[say=kait]Ладно... ладно... Можешь включать.[/say]")
 
-		saynn("So impatient, this kitty.")
+		saynn("Какая нетерпеливая кошечка.")
 
-		saynn("[say=pc]Don't want you to fall. Come here.[/say]")
+		saynn("[say=pc]Не хочу, чтобы ты упала. Иди сюда.[/say]")
 
-		saynn("You embrace the snow leopard from behind and help her land her fluffy butt onto the floor.")
+		saynn("Вы обнимаете снежную леопардицу сзади и помогаете ей опустить свою пушистую попку на пол.")
 
-		saynn("Then, you finally click the switches. A soft whirring starts. The pumps suck all the excess air out, tightly securing themselves around Kait's breasts.. and then they begin their steady rhythm, tugging on Kait's nips. Her back arches slightly.")
+		saynn("Затем вы, наконец, щелкаете переключателями. Начинается мягкое жужжание. Насосы выкачивают весь лишний воздух, плотно обхватывая грудь Кейт... а затем они начинают свой размеренный ритм, потягивая соски Кейт. Ее спина слегка выгибается.")
 
-		saynn("[say=kait]Ah.. mhhm..[/say]")
+		saynn("[say=kait]Ах... ммм...[/say]")
 
-		saynn("You just support her from behind, your hands jump to her fluffy hips.")
+		saynn("Ты просто поддерживаешь её сзади, твои руки ложатся на её пухлые бёдра.")
 
-		saynn("Kait's eyes get shut, her lip gets bitten again. The pumps are fruitlessly tugging away on her chest.. but only for a bit.")
+		saynn("Кейт зажмуривается, она снова прикусывает губу. Насосы тщетно пытаются вытянуть молоко из её груди... но лишь на мгновение.")
 
-		saynn("Soon, the first thin stream of milk starts to flow into the cup. And then the second one joins, pulled from her enlarged nipples.")
+		saynn("Вскоре в чашку начинает течь первая тонкая струйка. А затем к ней присоединяется вторая, вытягиваемая из её набухших сосков.")
 
-		saynn("[say=kait]Ah.. it's so strong..[/say]")
+		saynn("[say=kait]Ах.. оно так сильно идет..[/say]")
 
-		saynn("[say=pc]Too much?[/say]")
+		saynn("[say=pc]Слишком сильно?[/say]")
 
-		saynn("[say=kait]No.. it's good.. very good..[/say]")
+		saynn("[say=kait]Нет.. всё хорошо.. очень хорошо..[/say]")
 
-		saynn("She leans back into you, her tail curling around your waist. You place your chin on her shoulder and just watch her body and her reaction. She is switching between being very tense and relaxed, her lips producing cute little moans as the pumps keep working.")
+		saynn("Она откидывается на тебя, обвивая своим хвостом твою талию. Ты кладешь подбородок ей на плечо и просто наблюдаешь за её телом и реакциями. Её состояние мечется от сильного напряжения к расслаблению, а губы издают милые тихие стоны, пока насосы продолжают свою работу.")
 
-		saynn("The pumps pull more and more of that sweet nectar, filling the bottles bit by bit. The streams of milk that were previously small are now much thicker, steady. Kait is panting softly, squirming in your hands, giving in to the sensations.")
+		saynn("Насосы вытягивают всё больше и больше этого сладкого нектара, наполняя бутылочки капля за каплей. Струйки молока, которые раньше были тонкими, теперь стали гораздо толще и ровнее. Кейт тихонько дышит, ерзая в твоих руках и отдаваясь ощущениям.")
 
-		saynn("[say=kait]Mmm.. can feel it.. pulling it all out.. my nips are so tingly.. ah..[/say]")
+		saynn("[say=kait]Ммм.. чувствую, как оно.. вытягивается.. соски так покалывает.. ах..[/say]")
 
-		saynn("The whole room is filled with the scent of an aroused kitty. As well as the whirring noise of the pumps and the cute little gasps and moans.")
+		saynn("Вся комната наполнена ароматом возбужденной кошечки, а также жужжанием насосов и милыми вздохами и стонами.")
 
-		addButton("Continue", "See what happens next", "do_actually_milk_pumps")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_actually_milk_pumps")
 	if(state == "do_actually_milk_pumps"):
-		saynn("The pumps managed to milk Kait's breasts for "+str(Util.roundF(milkAm))+" ml of milk!")
+		saynn("Насосам удалось сцедить из груди Кейт "+str(Util.roundF(milkAm))+" мл молока!")
 
-		saynn("You hold Kait tight. Her breasts start to look softer, less painfully full. The flow of milk begins to slow down to a trickle.. then to just a few drops.. Her nips look very sensitive.")
+		saynn("Ты крепко прижимаешь Кейт к себе. Её грудь кажется мягче, она больше не выглядит так мучительно налитой. Поток молока замедляется, превращаясь в тонкую струйку... а затем всего лишь в несколько капель... Её соски выглядят очень чувствительными.")
 
-		saynn("[say=pc]I think this is it.[/say]")
+		saynn("[say=pc]Думаю, это всё.[/say]")
 
-		saynn("[say=kait]Mhh.. I think so too.. ah..[/say]")
+		saynn("[say=kait]Ммм... Думаю, ты прав... ах...[/say]")
 
-		saynn("You turn off the pumps and begin to carefully remove them. Kait winces a little as the cool air rushes under the cups, surrounding her dark nips.")
+		saynn("Ты выключаешь насосы и начинаешь осторожно их снимать. Кейт слегка морщится, когда прохладный воздух проникает под чашечки, обволакивая её темные соски.")
 
-		saynn("Kait looks at the result.. lots of milk now sloshing inside the pump's bottles.")
+		saynn("Кейт смотрит на результат... в бутылочках насоса теперь плещется много молока.")
 
-		saynn("[say=kait]I made this.. my body did.. hah..[/say]")
+		saynn("[say=kait]Я сделала это... моё тело сделало это... хах...[/say]")
 
-		saynn("[say=pc]And it will be able to do it again soon.[/say]")
+		saynn("[say=pc]И скоро оно сможет сделать это снова.[/say]")
 
-		saynn("She chuckles.")
+		saynn("Она посмеивается.")
 
-		saynn("[say=kait]Thank you. This is.. exactly what I needed.[/say]")
+		saynn("[say=kait]Спасибо. Это... именно то, что мне было нужно.[/say]")
 
-		saynn("[say=pc]You're welcome.[/say]")
+		saynn("[say=pc]Не за что.[/say]")
 
-		saynn("You put the breast pumps away. The milking is done!")
+		saynn("Ты убираешь молокоотсосы. Сцеживание окончено!")
 
-		addButton("Continue", "See what happens next", "endthescene_getbackpump")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_getbackpump")
 	if(state == "milk_no_pump"):
 		playAnimation(StageScene.GropeBehind, "idle", {pc="kait", npc="pc"})
-		saynn("You give Kait a quick full-body glance.")
+		saynn("Ты быстро и жадно осматриваешь Кейт с ног до головы.")
 
-		saynn("Her shirt is really tight.. her pregnant belly is what's mostly doing it.. but her relatively bigger breasts also don't help.")
+		saynn("Её футболка сидит очень плотно... в основном из-за её беременного живота, но её заметно увеличившаяся грудь тоже не помогает.")
 
-		saynn("You notice two dark, wet spots on the fabric.. right where her chest is.")
+		saynn("Ты замечаешь два тёмных влажных пятна на ткани... прямо там, где у неё грудь.")
 
-		saynn("[say=pc]How are your breasts?[/say]")
+		saynn("[say=pc]Как твоя грудь?[/say]")
 
-		saynn("[say=kait]Itchy.. they feel full.[/say]")
+		saynn("[say=kait]Чешется... и кажется такой налитой.[/say]")
 
-		saynn("[say=pc]I can help with that. Come here.[/say]")
+		saynn("[say=pc]Я могу с этим помочь. Иди сюда.[/say]")
 
-		saynn("You embrace the snow leopard from behind and begin to unbutton her shirt.. one button at a time.")
+		saynn("Ты обнимаешь снежную леопардицу сзади и начинаешь расстегивать её рубашку... пуговицу за пуговицей.")
 
-		addButton("Continue", "See what happens next", "grope_floor")
+		addButton("Продолжить", "Смотреть, что будет дальше", "grope_floor")
 	if(state == "grope_floor"):
 		#addCharacter("kait", ["naked"])
 		playAnimation(StageScene.BreastGroping, "tease", {pc="pc", npc="kait", npcBodyState={hard=true}})
-		saynn("Once you have revealed her chest, you help her to gradually kneel on the floor, her back still against your chest. Better than risking her legs giving up.")
+		saynn("Когда её грудь оказывается на виду, ты помогаешь ей плавно опуститься на колени, прижимая её спиной к своей груди. Так надежнее, чем рисковать тем, что у неё подкосятся ноги.")
 
-		saynn("Once you are done with the shirt, you wrap your arms around her, your hands coming to rest on her swollen breasts. They feel warm and soft under your palms. Kait lets out a soft sigh.")
+		saynn("Закончив с рубашкой, ты обхватываешь её руками, и твои ладони ложатся на её набухшую грудь. Под твоими пальцами она кажется теплой и мягкой. Кейт издает тихий вздох.")
 
-		saynn("[say=kait]This is nice..[/say]")
+		saynn("[say=kait]Это так приятно...[/say]")
 
-		saynn("You start by gently cupping her breasts, just holding them at first. Your digits trace small circles around her nipples, making her shiver in your arms.")
+		saynn("Ты начинаешь с того, что осторожно обхватываешь её грудь, поначалу просто удерживая её. Твои пальцы выписывают маленькие круги вокруг сосков, заставляя её вздрагивать в твоих руках.")
 
-		saynn("[say=kait]They're.. so sensitive..[/say]")
+		saynn("[say=kait]Они такие... чувствительные...[/say]")
 
-		saynn("You keep caressing her curves, your fingers brushing over her nips as they get hard under your touch.")
+		saynn("Ты продолжаешь ласкать её изгибы, проводя пальцами по соскам, которые твердеют под твоими прикосновениями.")
 
-		saynn("[say=pc]Feeling a little better?[/say]")
+		saynn("[say=pc]Стало чуть лучше?[/say]")
 
-		saynn("[say=kait]Sure.. but.. still itchy..[/say]")
+		saynn("[say=kait]Да... но... всё равно чешутся...[/say]")
 
-		saynn("Sounds like an invitation.")
+		saynn("Похоже на приглашение.")
 
-		addButton("Continue", "See what happens next", "do_grope_breasts")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_grope_breasts")
 	if(state == "do_grope_breasts"):
 		playAnimation(StageScene.BreastGroping, "grope", {pc="pc", npc="kait", npcBodyState={hard=true}})
-		saynn("You stop gently caressing her chest and instead start to actually grope them, your fingers kneading the soft breasts, sinking into the fur a bit. Kait instantly lets out a little gasp, pressing her back against you.")
+		saynn("Ты перестаешь нежно ласкать её грудь и вместо этого начинаешь по-настоящему её мять; твои пальцы вжимаются в мягкие молочные железы, слегка погружаясь в мех. Кейт тут же издает короткий вздох, прижимаясь спиной к тебе.")
 
-		saynn("[say=kait]Ohh.. yes.. like that..[/say]")
+		saynn("[say=kait]Охх.. да.. вот так..[/say]")
 
-		saynn("You keep squeezing her breasts, again and again.. until it happens.")
+		saynn("Ты продолжаешь сжимать её грудь, снова и снова... пока это не случается.")
 
-		saynn("A tiny fountain of milk squirts out from one of her nipples. Kait moans.")
+		saynn("Из одного из её сосков вырывается крошечный фонтанчик молока. Кейт стонет.")
 
-		saynn("[say=kait]Ah..[/say]")
+		saynn("[say=kait]Ах..[/say]")
 
-		saynn("You keep going and soon the other nipple spawns a similar fountain. Of course, you keep going, your hands working away at her breasts. Every time you squeeze, another little squirt of milk shoots out, powerful but thin. The more you knead her chest, the more she leaks.")
+		saynn("Ты продолжаешь, и вскоре из второго соска бьет похожий фонтан. Разумеется, ты не останавливаешься, твои руки так и работают над её грудью. Каждый раз, когда ты сжимаешь её, вылетает еще одна маленькая струйка молока — мощная, но тонкая. Чем сильнее ты разминаешь её грудь, тем сильнее она течет.")
 
-		saynn("[say=kait]Mmm.. ah.. hah.. I'm so milky..[/say]")
+		saynn("[say=kait]Ммм.. ах.. хах.. я такая молочная..[/say]")
 
-		saynn("She is squirming a bit now, her breathing getting faster.")
+		saynn("Теперь она начинает немного ерзать, её дыхание учащается.")
 
-		saynn("You keep milking her, your hands massaging.. encouraging the flow.. And it works, Kait's milk is flowing faster, little streaming of it running down from her enlarged, dark areolas, dripping down to the floor. Kait throws her head back and moans into the air.")
+		saynn("Ты продолжаешь доить её, массируя руками... стимулируя поток... И это работает: молоко Кейт течет всё быстрее, тонкие струйки стекают с её увеличившихся темных ареол, капая на пол. Кейт запрокидывает голову и стонет в пустоту.")
 
-		saynn("[say=kait]Feels.. so good.. ah.. mhh.. yes-s..[/say]")
+		saynn("[say=kait]Так.. так приятно.. ах.. ммм.. да-а..[/say]")
 
-		saynn("It continues like that for a while.. You can feel her breasts gradually lose a bit of their volume in your hands, the fullness going away. Your hands get tired but you don't stop.")
+		saynn("Так продолжается какое-то время.. Ты чувствуешь, как её грудь в твоих руках постепенно теряет объём, наполненность уходит. Руки устают, но ты не останавливаешься.")
 
-		saynn("[say=kait]Mhh.. ah..[/say]")
+		saynn("[say=kait]Ммм.. ах..[/say]")
 
-		saynn("Eventually, the flow begins to slow down.. streams turning into rare trickles..")
+		saynn("В конце концов поток начинает замедляться.. струйки превращаются в редкие капли..")
 
-		saynn("[say=kait]I think that's it..[/say]")
+		saynn("[say=kait]Кажется, это всё..[/say]")
 
-		addButton("Continue", "See what happens next", "grope_after")
+		addButton("Продолжить", "Смотреть, что будет дальше", "grope_after")
 	if(state == "grope_after"):
 		playAnimation(StageScene.BreastGroping, "tease", {pc="pc", npc="kait", npcBodyState={naked=true, hard=true}})
-		saynn("You give her breasts one last gentle squeeze.. and then stop.")
+		saynn("Ты делаешь последнее мягкое сжатие её груди.. и останавливаешься.")
 
-		saynn("Kait lets out a sigh of satisfaction.")
+		saynn("Кейт удовлетворенно вздыхает.")
 
-		saynn("[say=kait]So much better.. thank you..[/say]")
+		saynn("[say=kait]Так гораздо лучше.. спасибо..[/say]")
 
-		saynn("You pull your hands away.. but they're still a bit wet with her milk. You quickly lick them clean, why not.. tastes sweet.")
+		saynn("Ты убираешь руки.. но они всё ещё влажные от её молока. Ты быстро слизываешь его, почему бы и нет.. на вкус сладкое.")
 
-		saynn("After that, you help Kait to put the shirt back over her pregnant belly.")
+		saynn("После этого ты помогаешь Кейт натянуть рубашку обратно на её беременный живот.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 func addPumpButtons(go_id):
 	var pumps = GM.pc.getInventory().getItemsWithTag(ItemTag.BreastPump)
 	for pump in pumps:

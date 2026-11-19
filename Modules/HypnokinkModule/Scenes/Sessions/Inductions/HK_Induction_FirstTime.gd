@@ -11,56 +11,56 @@ func _run():
 		addCharacter("vion")
 		playAnimation(StageScene.Duo, "sit", {npc="vion", npcAction="sit"})
 		
-		saynn("[say=vion]Take a seat, please.[/say]")
+		saynn("[say=vion]Присаживайтесь, пожалуйста.[/say]")
 		
-		saynn("You make yourself comfortable on the sofa.")
+		saynn("Вы удобно устраиваетесь на диване.")
 		
-		saynn("[say=vion]Since you're new at this, we'll start with establishing a basic foundation. Try your best to not get distracted and maintain eye contact with me. That's why I've put the couch up against [i]that[/i] wall.[/say]")
+		saynn("[say=vion]Поскольку вы здесь новичок, мы начнем с закладки базового фундамента. Постарайтесь не отвлекаться и удерживать зрительный контакт со мной. Именно поэтому я придвинул диван к [i]той[/i] стене.[/say]")
 
-		saynn("He gestures to the window to your side. It's true, from this angle you can't even see outside the cell.")
+		saynn("Он указывает жестом на окно рядом с вами. Это правда: под таким углом из камеры вообще ничего не видно.")
 
-		saynn("[say=vion]It puts all the distractions behind you, quite literally. Focus back on me, please.[/say]")
+		saynn("[say=vion]Это буквально оставляет все отвлекающие факторы у вас за спиной. Пожалуйста, снова сосредоточьтесь на мне.[/say]")
 
-		saynn("Your attention wandered off during the explanation. You snap your eyes back to Vion's.")
+		saynn("Во время объяснения ваше внимание рассеялось. Вы заставляете себя снова уставиться в глаза Виону.")
 
-		saynn("[say=vion]Better. Understand, at its core hypnosis, or trance, or flow, whatever you want to call it, is simply a heightened state of focus. Ever caught yourself staring out a window for ten minutes straight, just watching the wind blow? It's the same principle.[/say]")
+		saynn("[say=vion]Так-то лучше. Поймите, по своей сути гипноз — или транс, или состояние потока, как вам удобнее называть — это просто повышенная концентрация внимания. Случалось ли вам по десять минут подряд пялиться в окно, просто наблюдая за ветром? Принцип тот же самый.[/say]")
 
-		saynn("{vion.name} crosses his fingers below his chin and leans a bit closer.")
+		saynn("{vion.name} сцепляет пальцы под подбородком и слегка наклоняется вперед.")
 
-		saynn("[say=vion]What we're going to be doing today is building an association between a word and a specific mental state. Like any skill, being a good hypnosis subject takes practice and time. Through repetition, this association will become stronger and stronger over time.[/say]")
+		saynn("[say=vion]Сегодня мы будем выстраивать ассоциацию между словом и определенным ментальным состоянием. Как и любой навык, умение быть хорошим объектом для гипноза требует практики и времени. Благодаря повторениям эта связь со временем будет становиться всё крепче и крепче.[/say]")
 
-		saynn("[say=vion]So let us get started. I want you to consciously try to relax. People often struggle with intentionally remaining still, and I don't expect you to be perfect at it right away. It's okay if you fidget, or need to stretch occasionally.[/say]")
+		saynn("[say=vion]Итак, приступим. Я хочу, чтобы вы сознательно попытались расслабиться. Людям часто трудно заставлять себя сохранять неподвижность, и я не жду, что у вас сразу всё получится идеально. Ничего страшного, если вы будете ерзать или вам захочется иногда потянуться.[/say]")
 
-		saynn("His voice gets softer.")
+		saynn("Его голос становится тише.")
 
-		saynn("[say=vion]The word we will focus on is: sleep. You might have heard of \"trigger words\" before, but I assure you that your brain is perfectly capable of recognizing which contexts are appropriate and desirable. The word will not affect you unless you want it to affect you.[/say]")
+		saynn("[say=vion]Слово, на котором мы сосредоточимся: сон. Возможно, вы уже слышали о \"триггерных словах\" раньше, но уверяю вас, что ваш мозг прекрасно способен распознавать, какие контексты уместны и желанны. Слово не подействует на вас, пока вы сами этого не захотите.[/say]")
 
-		saynn("[say=vion]Now... Do your best to calm your mind. Let your thoughts quiet down. Any distracting, insistent thoughts you will simply acknowledge and move on from. As if you were on the edge of sleep.[/say]")
+		saynn("[say=vion]А теперь... Сделайте всё возможное, чтобы успокоить разум. Позвольте мыслям затихнуть. Любые отвлекающие, навязчивые мысли вы будете просто признавать и отпускать. Словно вы находитесь на самой грани сна.[/say]")
 
-		saynn("Your body grows heavy. Your limbs feel pleasantly numb.")
+		saynn("Ваше тело тяжелеет. В конечностях ощущается приятное онемение.")
 		
-		saynn("[say=vion]You might notice a sense of vertigo. Some subject experience a feeling akin to static in their extremities. Or maybe you are just feeling tired. Either way its perfectly normal. Just sink down. Fall deeper. Even deeper now. Fall into sleep, allowing only the subconcious part of you to remain fully awake.[/say]")
+		saynn("[say=vion]Вы можете почувствовать легкое головокружение. Некоторые испытуемые ощущают нечто похожее на покалывание в конечностях. А может, вы просто устали. В любом случае, это абсолютно нормально. Просто погружайтесь. Падайте глубже. Еще глубже. Погружайтесь в сон, позволяя лишь подсознанию оставаться полностью бодрствующим.[/say]")
 
-		saynn("You do feel so tired, and your eyelids are getting so heavy...")
+		saynn("Вы чувствуете такую усталость, а веки становятся такими тяжелыми...")
 
-		saynn("[say=vion]Let your eyes close. I'm going to count you down now. As I do, imagine you're walking down a staircase. Each number, a step.[/say]")
+		saynn("[say=vion]Позвольте глазам закрыться. Сейчас я начну обратный отсчет. Представляйте, что вы спускаетесь по лестнице. Каждое число — это ступенька.[/say]")
 
-		saynn("[say=vion]Five. Descending down.[/say]")
-		sayn("[say=vion]Four. Mind quiet. Safe and fuzzy.[/say]")
-		sayn("[say=vion]Three. Deeper and deeper.[/say]")
-		sayn("[say=vion]Two. Closer and closer.[/say]")
-		sayn("[say=vion]One. Almost there. And as you reach the final step...[/say]")
-		saynn("[say=vion]Zero. Sleep.[/say]")
+		saynn("[say=vion]Пять. Спуск вниз.[/say]")
+		sayn("[say=vion]Четыре. Разум спокоен. Безопасно и уютно.[/say]")
+		sayn("[say=vion]Три. Всё глубже и глубже.[/say]")
+		sayn("[say=vion]Два. Всё ближе и ближе.[/say]")
+		sayn("[say=vion]Один. Почти у цели. И когда ты делаешь последний шаг...[/say]")
+		saynn("[say=vion]Ноль. Спи.[/say]")
 		
-		saynn("Sleep...")
+		saynn("Спи...")
 
-		saynn("[say=vion]Just sleep.[/say]")
+		saynn("[say=vion]Просто спи.[/say]")
 
-		saynn("[say=vion]There we go.[/say]")
+		saynn("[say=vion]Вот так.[/say]")
 
-		saynn("[say=vion][b]Sleep[/b].[/say]")
+		saynn("[say=vion][b]Спи[/b].[/say]")
 		
-		addButton("Sleep", "", "endthescene")
+		addButton("Спать", "", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

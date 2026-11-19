@@ -7,55 +7,55 @@ func _run():
 	if(state == ""):
 		addCharacter("kait")
 		playAnimation(StageScene.Duo, "stand", {npc="kait"})
-		saynn("You were going back to Tavi with the apple.. when you suddenly got approached by a different feline.")
+		saynn("Ты как раз возвращалась к Тави с яблоком... как вдруг к тебе внезапно подошла другая кошка.")
 
-		saynn("[say=kait]Hey, you![/say]")
+		saynn("[say=kait]Эй, ты![/say]")
 
-		saynn("A swift little snow leopard runs up to you.")
+		saynn("К тебе подбегает шустрая маленькая снежная леопардиха.")
 
-		saynn("[say=kait]I saw what you did back there.[/say]")
+		saynn("[say=kait]Я видела, что ты там устроила.[/say]")
 
-		saynn("[say=pc]What, you're gonna tell on me?[/say]")
+		saynn("[say=pc]Что, решила настучать на меня?[/say]")
 
-		saynn("You assume a.. half-combat-ready posture. But the feline just chuckles softly.")
+		saynn("Ты принимаешь... полубоевую стойку. Но кошка лишь тихо посмеивается.")
 
-		saynn("[say=kait]Hehe, are you scared? Nah. I'm not gonna rat on a fellow trapped soul.[/say]")
+		saynn("[say=kait]Хе-хе, ты что, испугалась? Да нет. Я не собираюсь крысить на такую же запертую душу, как и я.[/say]")
 
-		saynn("The tension gets eased a bit.")
+		saynn("Напряжение немного спадает.")
 
-		saynn("[say=pc]What do you want then?[/say]")
+		saynn("[say=pc]Чего тебе тогда надо?[/say]")
 
-		saynn("[say=kait]I know what you did. And I know why you're doing it too. There is a big chance that you're making a big mistake.[/say]")
+		saynn("[say=kait]Я знаю, что ты сделала. И знаю, зачем ты это делаешь. Есть большой шанс, что ты совершаешь огромную ошибку.[/say]")
 
-		saynn("You can't be sure how much she knows exactly. So better not tell her anything.")
+		saynn("Нельзя быть уверенным, сколько именно ей известно. Так что лучше ничего не говорить.")
 
-		saynn("[say=pc]So?[/say]")
+		saynn("[say=pc]Ну?[/say]")
 
-		saynn("[say=kait]I just wanna offer you something different. I'm assembling a team. We might already have a plan brewing about how to escape this gray box.[/say]")
+		saynn("[say=kait]Я просто хочу предложить тебе кое-что новенькое. Я собираю команду. Возможно, у нас уже зреет план, как свалить из этой серой коробки.[/say]")
 
-		saynn("We? That's interesting.")
+		saynn("«Мы»? Это интересно.")
 
-		saynn("She gives you a quick look from toes to the head.")
+		saynn("Она быстро осматривает тебя с ног до головы.")
 
-		saynn("[say=kait]You seem like you're capable of doing stuff. If you're interested, find me in the underground arena.[/say]")
+		saynn("[say=kait]Похоже, ты на что-то способен. Если интересно, ищи меня на подземной арене.[/say]")
 
-		saynn("[say=pc]Underground arena?[/say]")
+		saynn("[say=pc]На подземной арене?[/say]")
 
-		saynn("[say=kait]Well, that will be your first test then. The entrance is hidden somewhere near the gym. If you manage to get in, we can talk more.[/say]")
+		saynn("[say=kait]Что ж, тогда это будет твоим первым испытанием. Вход спрятан где-то рядом со спортзалом. Если сумеешь пробраться внутрь, поговорим подробнее.[/say]")
 
-		saynn("[say=pc]So now you wanna play hide and seek with me?[/say]")
+		saynn("[say=pc]То есть теперь ты хочешь поиграть со мной в прятки?[/say]")
 
-		saynn("[say=kait]You can continue doing what you're doing if you want, not gonna stop you. But if you want to take matters into your own hands rather than..[/say]")
+		saynn("[say=kait]Можешь и дальше заниматься своими делами, если хочешь, я не стану тебя останавливать. Но если захочешь взять всё в свои руки, а не просто...[/say]")
 
-		saynn("She decided not to finish that sentence.")
+		saynn("Она решила не заканчивать эту фразу.")
 
-		saynn("[say=kait]Then come find me. My name is Kait by the way.[/say]")
+		saynn("[say=kait]Тогда приходи ко мне. Кстати, меня зовут Кейт.[/say]")
 
-		saynn("After that, she turns around and walks away, her fluffy tail swishing low.")
+		saynn("После этого она разворачивается и уходит, плавно покачивая своим пушистым хвостом.")
 
-		saynn("Right. Looks like you have a new choice now..")
+		saynn("Так. Похоже, теперь у тебя появился новый выбор...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

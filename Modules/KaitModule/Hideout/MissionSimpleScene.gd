@@ -21,7 +21,7 @@ func _run():
 		
 		saynn(simpleText)
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		
 
 func _react(_action: String, _args):

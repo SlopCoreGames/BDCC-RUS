@@ -10,31 +10,31 @@ func _run():
 	if(state == ""):
 		addCharacter("avy")
 		playAnimation(StageScene.Duo, "stand", {npc="avy"})
-		saynn("You ask Avy if she wants to have some fun together.")
+		saynn("Вы спрашиваете Эви, не хочет ли она немного развлечься вместе.")
 
-		saynn("[say=avy]Perhaps. Just keep in mind, I'm not a bottom.[/say]")
+		saynn("[say=avy]Возможно. Только имей в виду, я не снизу.[/say]")
 
 		avyLove = GM.main.MS.getAvyLove()
 		if (avyDebug):
 			saynn("avyLove = 99")
 
-		saynn("Avy's love: "+str(avyLove)+"")
+		saynn("Любовь Эви: "+str(avyLove)+"")
 
-		addButton("Never mind", "You changed your mind", "never_mind")
+		addButton("Проехали", "Вы передумали", "never_mind")
 		if (avyLove >= 2):
-			addButton("Get fucked!", "(Love 2+) Let Avy fuck you raw!", "get_fucked")
-			addButton("Suck her off", "(Love 2+) Suck Avy's cock!", "oral_sex")
+			addButton("Дай себя оттрахать!", "(Любовь 2+) Позволь Эви трахнуть тебя без презерватива!", "get_fucked")
+			addButton("Отсосать ей", "(Любовь 2+) Отсосать член Эви!", "oral_sex")
 		if (avyLove >= 3):
-			addButton("Penis pump", "(Love 3+) Put a penis pump on Avy's cock! A penis pump is required", "love_penispump")
+			addButton("Помпа для пениса", "(Любовь 3+) Надеть на член Эви помпу! Требуется помпа для члена", "love_penispump")
 		else:
-			addDisabledButton("Love 3+", "Avy's love 3 or more required")
+			addDisabledButton("Любовь 3+", "Требуется уровень любви Эви 3 или выше")
 	if(state == "never_mind"):
 		aimCameraAndSetLocName(GM.pc.getLocation())
-		saynn("[say=pc]I changed my mind.[/say]")
+		saynn("[say=pc]Я передумала.[/say]")
 
-		saynn("Avy shrugs.")
+		saynn("Эви пожимает плечами.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

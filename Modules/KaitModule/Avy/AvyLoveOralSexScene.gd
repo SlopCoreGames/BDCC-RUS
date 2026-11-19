@@ -7,161 +7,161 @@ func _run():
 	if(state == ""):
 		addCharacter("avy")
 		playAnimation(StageScene.Duo, "stand", {npc="avy"})
-		saynn("You lick your lips while watching Avy's bulging shorts.")
+		saynn("Ты облизываешь губы, не сводя глаз с раздувшихся шорт Эви.")
 
-		saynn("She catches your obvious stare and chuckles.")
+		saynn("Она замечает твой откровенный взгляд и посмеивается.")
 
-		saynn("[say=avy]You're drooling. Need some help with that?[/say]")
+		saynn("[say=avy]У тебя аж слюнки текут. Нужна помощь?[/say]")
 
-		saynn("You return eye contact and smile.")
+		saynn("Ты встречаешься с ней взглядом и улыбаешься.")
 
-		saynn("[say=pc]Yeah, I guess I just wanna suck on something.[/say]")
+		saynn("[say=pc]Да уж, кажется, мне просто хочется что-нибудь пососать.[/say]")
 
-		saynn("The foxy puts her list away and catches your chin, her thumb brushing against your lower lip. You lick it.")
+		saynn("Секс-бомба убирает свой список и берет тебя за подбородок, проводя большим пальцем по нижней губе. Ты слизываешь её.")
 
-		saynn("[say=avy]I've got just the thing. Perfect for sucking. Comes with a choking hazard label though.[/say]")
+		saynn("[say=avy]У меня есть кое-что на этот случай. Идеально подходит для сосания. Правда, на упаковке есть предупреждение об опасности подавиться.[/say]")
 
-		saynn("You nibble on her thumb too a bit.")
+		saynn("Ты также слегка покусываешь её большой палец.")
 
-		saynn("[say=pc]Good.[/say]")
+		saynn("[say=pc]Умница.[/say]")
 
-		saynn("You two are staring at each other, the tension is rising fast..")
+		saynn("Вы смотрите друг другу в глаза, и напряжение между вами стремительно растет...")
 
-		addButton("Continue", "See what happens next", "handjob")
+		addButton("Продолжить", "Смотреть, что будет дальше", "handjob")
 	if(state == "handjob"):
 		addCharacter("avy", ["naked"])
 		aimCameraAndSetLocName("hideout_chill")
 		playAnimation(StageScene.SexHandjob, "fast", {pc="avy", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={hard=true}})
-		saynn("Next moment you know it, you're on your knees in front of Avy, your hand gliding along her hard cock back and forth. You can feel it pulse against your palm softly, a bead of precum already welling up at the tip. You catch it with your thumb and spread it down along her length. Your other hand cups her heavy balls, caressing and feeling their weight.")
+		saynn("В следующий миг ты уже понимаешь, что стоишь на коленях перед Эви, а твоя рука скользит вперед-назад по её твердому члену. Ты чувствуешь, как он мягко пульсирует в ладони, а на кончике уже выступила капля предэякулята. Ты смазываешь её большим пальцем, распределяя по всей длине. Другой рукой ты обхватываешь её тяжелые яйца, лаская их и ощущая их вес.")
 
-		saynn("[say=avy]Mhh-..[/say]")
+		saynn("[say=avy]Ммм...[/say]")
 
-		saynn("You lean in and give her shaft a long, teasing lick from the base of her sheath all the way to the pointy head. Her canine cock twitches when you do that.. followed by a low rumble from above. You keep stroking her and then lick again, tracing the veins near where the knot will be.")
+		saynn("Ты наклоняешься и проводишь длинным, дразнящим языком по её члену — от самого основания влагалища до самой головки. Её собачий член дергается от этого движения, а сверху доносится низкое урчание. Ты продолжаешь ласкать её, а затем снова слизываешь влагу, прослеживая вены там, где скоро вздуется узел.")
 
-		saynn("Avy's fingers brush against your cheek.")
+		saynn("Пальцы Эви слегка касаются твоей щеки.")
 
-		saynn("[say=avy]Feels nice. But I bet you could do more.[/say]")
+		saynn("[say=avy]Приятно. Но бьюсь об заклад, ты можешь больше.[/say]")
 
-		saynn("[say=pc]We're playing by my rules here.[/say]")
+		saynn("[say=pc]Здесь играем по моим правилам.[/say]")
 
-		saynn("[say=avy]Wow, hah. Sure.[/say]")
+		saynn("[say=avy]Ого, хах. Конечно.[/say]")
 
-		saynn("You take the head of her member into your mouth, tasting her pre. Your tongue curls around her length as you begin to sink down..")
+		saynn("Ты берешь головку её члена в рот, пробуя на вкус её предэякулят. Твой язык обвивает её плоть, когда ты начинаешь медленно погружаться...")
 
-		addButton("Continue", "See what happens next", "bj_do")
+		addButton("Продолжить", "Смотреть, что будет дальше", "bj_do")
 	if(state == "bj_do"):
 		playAnimation(StageScene.SexOral, "sex", {pc="avy", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={hard=true}})
-		saynn("You take her cock deeper, letting the tip go past your teeth and brush along your tongue before hitting the back of your mouth. You close your lips around it and suck some of the air out, creating a pleasurable-feeling void-like zone. Your eyes look up at hers as you do that. Avy smiles.")
+		saynn("Ты заглатываешь её член глубже, позволяя кончику пройти сквозь зубы и скользнуть по языку, прежде чем он достигнет задней стенки горла. Ты плотно смыкаешь губы и всасываешь воздух, создавая приятное ощущение вакуума. В этот момент ты смотришь ей прямо в глаза. Эви улыбается.")
 
-		saynn("[say=avy]Not bad. Mmm..[/say]")
+		saynn("[say=avy]Неплохо. Ммм...[/say]")
 
-		saynn("She scritches you behind your ear as you slide your tongue along the veiny underside, coating it with wetness. Then you tilt your head to the side a bit and do it again. Your hands are still gently massaging her balls.")
+		saynn("Она почесывает тебя за ухом, пока ты проводишь языком по вздутым венам снизу, обильно смачивая их. Затем ты слегка наклоняешь голову набок и повторяешь движение. Твои руки всё еще нежно массируют её яички.")
 
-		saynn("After all the teasing, you begin to push yourself, letting her cock to curve down your throat. A gag reflex instantly reminds you of its existence.. but you fight it.. taking her deeper. Avy grips your hair as she feels your throat clenching around her.")
+		saynn("После всех этих дразнилок ты начинаешь насаживаться, позволяя её члену уходить глубоко в горло. Рвотный рефлекс мгновенно напоминает о себе... но ты борешься с ним... принимая её всё глубже. Эви вцепляется в твои волосы, чувствуя, как твоё горло сжимается вокруг неё.")
 
-		saynn("[say=avy]Oh fuck..[/say]")
+		saynn("[say=avy]Ох, бля...[/say]")
 
-		saynn("You hold yourself there for as long as possible.. before you can't endure it anymore. That's when you pull back slowly, letting her member drag along your tongue, savoring the texture and the taste. Then you sink down again, a little further this time, taking her deeper. You hear a low growl rumbling above you.. Avy's breath catching, her hips really want to push to meet your motions.")
+		saynn("Ты замираешь так на столько, на сколько хватает сил... прежде чем больше не сможешь терпеть. Тогда ты медленно отстраняешься, позволяя её члену скользить по твоему языку, смакуя текстуру и вкус. Затем ты снова опускаешься, на этот раз чуть глубже, принимая её всё сильнее. Сверху доносится низкое рычание... дыхание Эви сбивается, а её бёдра так и рвутся навстречу твоим движениям.")
 
-		saynn("[say=avy]Such a tease..[/say]")
+		saynn("[say=avy]Какая дразнилка...[/say]")
 
-		saynn("You hum in response, the vibration making her legs tremble. You do the whole process again, bobbing your head at a steady pace now, gradually stretching your throat to take more of her cock each time. Your tongue keeps tracing the lines along the underside of the shaft and curling around it occasionally. Her fingers go through your hair, brushing.")
+		saynn("Ты мычишь в ответ, и от этой вибрации её ноги начинают дрожать. Ты повторяешь всё заново, теперь уже ритмично двигая головой, постепенно растягивая горло, чтобы с каждым разом принимать больше её члена. Твой язык постоянно очерчивает линии на нижней стороне ствола, время от времени обвивая его. Её пальцы зарываются в твои волосы, лаская их.")
 
-		saynn("Avy's hips start to move, just a little.. a subtle push forward. You match it, going deeper, allowing her cock to fill your throat. You begin to feel the gag reflex fighting you again, your eyes watering. You push through it, taking her as deep as you can, your nose meeting her crotch. Wet slurps and noises of gagging start escaping you.. while Avy is moaning instead, her back arching, her body squirming slightly.")
+		saynn("Бёдра Эви начинают двигаться... едва заметные толчки вперёд. Ты подстраиваешься, заходя глубже и позволяя её члену заполнить всё твоё горло. Ты снова чувствуешь борьбу с рвотным рефлексом, на глазах наворачиваются слёзы. Но ты преодолеваешь его, принимая её так глубоко, как только можешь, пока твой нос упирается в её промежность. Из тебя вырываются влажные хлюпающие звуки и позывы к рвоте... в то время как Эви, напротив, стонет, выгибая спину и слегка извиваясь всем телом.")
 
-		saynn("[say=avy]Mhh~.. I'm gonna take over now.[/say]")
+		saynn("[say=avy]Ммм~... теперь я возьму всё в свои руки.[/say]")
 
-		saynn("If you let her, she will most likely cum inside..")
+		saynn("Если позволишь, она, скорее всего, кончит внутрь...")
 
-		addButton("Let her", "Let Avy fuck your face fast", "let_fast")
-		addButton("Facials", "Keep doing it yourself and make Avy cum all over your face instead", "facials_instead")
+		addButton("Дай ей волю", "Дай Эви трахать твое лицо в быстром темпе", "let_fast")
+		addButton("Фейшиалы", "Продолжай ласкать себя сам, чтобы Эви кончила прямо тебе на лицо", "facials_instead")
 	if(state == "let_fast"):
 		playAnimation(StageScene.SexOralForced, "suckfast", {pc="avy", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={hard=true}})
-		saynn("Her hand catches yours and pulls them above your head, stealing some control from you. With that, she starts rolling her hips back and forth, making her cock slide inside your throat. And this time, she is the one setting the pace.")
+		saynn("Её рука перехватывает твою и заносит над головой, отбирая контроль. С этим она начинает двигать бедрами вперед-назад, заставляя свой член скользить глубоко в твоем горле. И на этот раз темп задает она.")
 
-		saynn("[say=avy]Breathe through your nose. Here we go..[/say]")
+		saynn("[say=avy]Дыши носом. Поехали..[/say]")
 
-		saynn("She goes fast, pulling out until only the head of her member remains inside your mouth.. before thrusting back in with a wet noise, triggering your gag reflex almost instantly. Your throat starts clenching as you choke..")
+		saynn("Она ускоряется, выходя почти полностью, оставляя во рту лишь головку... а затем с влажным звуком влетает обратно, мгновенно вызывая рвотный рефлекс. Твое горло сжимается от удушья...")
 
-		saynn("[say=avy]Mmmf.. yeah..[/say]")
+		saynn("[say=avy]Мммф.. да..[/say]")
 
-		saynn("Your neck bulges slightly with each thrust. Avy keeps increasing the pace, fucking your face raw.. Your eyes are watering again.. but you don't pull away.. you take it, allowing yourself to choke on her shaft, letting her use you.")
+		saynn("Твоя шея слегка вздувается при каждом толчке. Эви наращивает темп, вколачивая свой член тебе в лицо.. Глаза снова наполняются слезами.. но ты не отстраняешься.. ты принимаешь это, позволяя себе захлебываться её членом, давая ей использовать тебя.")
 
-		saynn("Her breathing grows heavier, a low growl building in her chest. Her knot inflates but she doesn't dare to shove it in..")
+		saynn("Её дыхание становится тяжелее, в груди нарастает низкое рычание. Её узел раздувается, но она не решается вогнать его до конца...")
 
-		saynn("[say=avy]Gonna.. fuck.. gonna cum..[/say]")
+		saynn("[say=avy]Сейчас.. бля.. сейчас кончу..[/say]")
 
-		addButton("Continue", "See what happens next", "bj_inside")
+		addButton("Продолжить", "Смотреть, что будет дальше", "bj_inside")
 	if(state == "bj_inside"):
 		playAnimation(StageScene.SexOralForced, "suckinside", {pc="avy", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={hard=true}})
-		saynn("Her cock starts throbbing in your mouth.. And then.. you begin to feel her hot, thick spurts of cum flooding your throat! Avy keeps doing shallow thrusts while pumping her load down your throat, forcing you to swallow as much as you can.")
+		saynn("Её член начинает пульсировать у тебя во рту... А затем... ты чувствуешь, как горячие, густые струи спермы заливают тебе горло! Эви продолжает делать неглубокие толчки, вкачивая в тебя свою порцию, заставляя тебя глотать столько, сколько сможешь.")
 
-		saynn("You can't breathe during this, relying only on what little oxygen you had when she got pushed over the edge. Your throat keeps clenching, milking her balls for every last drop of her seed.")
+		saynn("В этот момент тебе почти нечем дышать, ты полагаешься лишь на те крохи кислорода, что остались у тебя до того, как она сорвалась в оргазм. Твоё горло судорожно сжимается, выцеживая из её яичек каждую последнюю каплю семени.")
 
-		saynn("[say=avy]Ahh.. take it all.[/say]")
+		saynn("[say=avy]Ах.. прими всё до капли.[/say]")
 
-		saynn("She is panting heavily, her orgasm begins to fade.. just like your vision.")
+		saynn("Она тяжело дышит, её оргазм начинает угасать... так же, как и твоё зрение.")
 
-		addButton("Continue", "See what happens next", "bj_inside_after")
+		addButton("Продолжить", "Смотреть, что будет дальше", "bj_inside_after")
 	if(state == "bj_inside_after"):
 		playAnimation(StageScene.SexOralForced, "tease", {pc="avy", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={hard=true}})
-		saynn("Finally, she pulls out, letting you cough and grab air with your mouth. A few lines of her jizz hang between your lips and her softening length. You lick them off and then show what cum you still have in your mouth.")
+		saynn("Наконец она вынимает член, давая тебе возможность закашляться и жадно глотать воздух. Несколько нитей её спермы повисли между твоими губами и её обмякшим стволом. Ты слизываешь их, а затем показываешь, сколько кончины осталось у тебя во рту.")
 
-		saynn("[say=avy]Cute.[/say]")
+		saynn("[say=avy]Мило.[/say]")
 
-		saynn("Then you close your mouth and swallow it, your eyes looking high and spaced out.")
+		saynn("Затем ты закрываешь рот и проглатываешь всё, глядя на неё остекленевшим, отсутствующим взглядом.")
 
-		saynn("[say=avy]Good job. Milked me dry.[/say]")
+		saynn("[say=avy]Молодец. Выдоила меня досуха.[/say]")
 
-		saynn("You smile.")
+		saynn("Ты улыбаешься.")
 
-		saynn("And that was it. You take your time to come back to senses before returning back into the arena.")
+		saynn("На этом всё. Ты не спеша приходишь в себя, прежде чем вернуться на арену.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "facials_instead"):
 		playAnimation(StageScene.SexOral, "fast", {pc="avy", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={hard=true}})
-		saynn("Just as Avy tries to grab your hands and pull them above your head, you yank them back and plant them firmly on her thighs, digging your nails in while giving her angry eyes.")
+		saynn("Как раз в тот момент, когда Эви пытается схватить тебя за руки и закинуть их тебе над головой, ты резко отдергиваешь их и с силой вжимаешь в её бедра, вонзая ногти в кожу и глядя на неё сердитым взглядом.")
 
-		saynn("[say=avy]Ah.. I get it, jeez.[/say]")
+		saynn("[say=avy]Ах.. всё я поняла, ну господи.[/say]")
 
-		saynn("You feel her tense, low growl of frustration. But as you dive back down and take her cock deep into your throat, her growling gets replaced with panting.")
+		saynn("Ты чувствуешь, как она напрягается, слышишь низкое, раздраженное рычание. Но стоит тебе снова нырнуть вниз и заглотить её член по самую глотку, как рычание сменяется тяжелым дыханием.")
 
-		saynn("You hold her member inside your throat for as long as it's comfortable.. before moving your head back, your tongue working every inch of her shaft. You feel her legs trembling a bit, her breathing getting ragged, her hips trying to thrust. But you hold her firmly.")
+		saynn("Ты удерживаешь её член во рту столько, сколько позволяет комфорт, а затем отстраняешься, тщательно вылизывая каждый сантиметр её ствола. Ты чувствуешь, как её ноги начинают подрагивать, дыхание становится рваным, а бедра так и норовят толкнуться навстречу. Но ты крепко держишь её.")
 
-		saynn("[say=avy]Mhh-..[/say]")
+		saynn("[say=avy]Ммм...[/say]")
 
-		saynn("You feel her knot beginning to inflate, swelling against your lips. That's your cue.")
+		saynn("Ты чувствуешь, как её узел начинает раздуваться, упираясь тебе в губы. Это твой знак.")
 
-		addButton("Facials", "Time to receive them!", "facials_cum")
+		addButton("Фейшиалы", "Пора принимать всё до последней капли!", "facials_cum")
 	if(state == "facials_cum"):
 		playAnimation(StageScene.SexHandjob, "sex", {pc="avy", npc="pc", bodyState={naked=true, hard=true}, npcBodyState={hard=true}, pcCum=true})
-		saynn("You pull away with a wet pop, your hand immediately wrapping around her slick, throbbing length. You stroke fast and mercilessly.")
+		saynn("Ты отрываешься от неё с влажным чпоком, и твоя рука тут же обхватывает её скользкий, пульсирующий член. Ты начинаешь двигаться быстро и беспощадно.")
 
-		saynn("[say=avy]Oh fuck.. ahh.[/say]")
+		saynn("[say=avy]Ох, блядь.. ахх.[/say]")
 
-		saynn("Your other hand cups her balls, feeling them tighten.")
+		saynn("Другой рукой ты сжимаешь её яйца, чувствуя, как они подтягиваются.")
 
-		saynn("It doesn't take long before the first thick ropes of her cum land across your cheeks, warm and sticky. The next one hits your lips and splatter across your closed eyes and forehead. You keep stroking Avy off, milking every last spurt as she groans and squirms.")
+		saynn("Вскоре первые густые струи её спермы облепляют твои щеки — теплые и липкие. Следующая порция попадает на губы и разбрызгивается по твоим закрытым глазам и лбу. Ты продолжаешь интенсивно дрочить Эви, выцеживая каждый последний толчок, пока она стонет и извивается.")
 
-		saynn("[say=avy]F-fuck..[/say]")
+		saynn("[say=avy]Б-блядь..[/say]")
 
-		saynn("You wait until she is done.")
+		saynn("Ты ждешь, пока она закончит.")
 
-		saynn("Carefully, you begin opening your eyes, blinking through the mess. A line of her seed drips down from your nose and onto your tongue. You lick your lips and smile at the panting foxy.")
+		saynn("Осторожно, ты начинаешь открывать глаза, моргая сквозь эту кашу. Струйка её семени стекает от твоего носа прямо на язык. Ты облизываешь губы и улыбаешься тяжело дышащей лисичке.")
 
-		saynn("[say=avy]Could have avoided the mess.[/say]")
+		saynn("[say=avy]Можно было и избежать такого беспорядка.[/say]")
 
-		saynn("You wipe a bit of her cum from her cheek.")
+		saynn("Ты вытираешь немного её кончины с её же щеки.")
 
-		saynn("[say=pc]Maybe I like it.[/say]")
+		saynn("[say=pc]Может, мне это даже нравится.[/say]")
 
-		saynn("She laughs, breathless.")
+		saynn("Она смеется, задыхаясь.")
 
-		saynn("[say=avy]Of course you do.[/say]")
+		saynn("[say=avy]Конечно, нравится.[/say]")
 
-		saynn("And that was it. That's how you return back to the arena, all messy and lewd..")
+		saynn("И на этом всё. Вот так ты возвращаешься на арену — весь в соках и выглядящий чертовски похотливо...")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

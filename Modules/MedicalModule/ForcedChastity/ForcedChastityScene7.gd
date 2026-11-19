@@ -65,429 +65,429 @@ func _run():
 		addCharacter("eliza")
 		
 	if(state == ""):
-		saynn("You regain consciousness feeling that someone is chaining your hands above your head. As you open your eyes, you see Eliza’s face from up close while she is focused on your wrists. She is cute, pastel colors really give her that soft look. Slightly blush-y cheeks, careful ponytail, emerald eyes that are worth getting lost in. She is biting her lip, not even realizing that you’re looking at her.")
+		saynn("Ты приходишь в сознание с ощущением, что чьи-то руки сковывают твои запястья цепями над головой. Когда ты открываешь глаза, то видишь совсем рядом лицо Элизы — она сосредоточенно возится с твоими руками. Она милашка, пастельные тона придают ей какой-то нежный вид. Слегка покрасневшие щеки, аккуратный хвост и изумрудные глаза, в которых так и хочется утонуть. Она закусывает губу, даже не замечая, что ты на неё смотришь.")
 
-		saynn("After she is done, doctor Quinn turns around and does a morning stretching routine, arching her back and working her shoulders, shaking slightly, before producing an adorable little moan. She then just sits down on the expensive-looking chair and then just sips her coffee and reads stuff on her datapad.")
+		saynn("Закончив дело, доктор Куинн разворачивается и начинает утреннюю разминку: выгибает спину, разминает плечи, слегка покачиваясь, и при этом издает очаровательный тихий стон. Затем она просто усаживается в дорогое на вид кресло, потягивает кофе и что-то читает в своем датападе.")
 
-		addButton("Make a noise", "Let it be known that you’re awake", "make_a_noise")
+		addButton("Издать звук", "Дать понять, что ты очнулся", "make_a_noise")
 
 	if(state == "make_a_noise"):
 		playAnimation(StageScene.HangingDuo, "idle", {npc="eliza", npcAction="sit", bodyState={naked=true}})
 		
-		saynn("[say=pc]Umm.. Good morning?[/say]")
+		saynn("[say=pc]Ммм... Доброе утро?[/say]")
 
-		saynn("Her ears instantly perk in your direction, soon followed by her eyes looking at you.")
+		saynn("Её уши мгновенно навостряются в твою сторону, а вслед за этим она переводит на тебя взгляд.")
 
-		saynn("[say=eliza]Oh, you’re awake. Morning, indeed.[/say]")
+		saynn("[say=eliza]О, ты проснулся. И вправду, доброе утро.[/say]")
 
-		saynn("Eliza takes her time drinking her morning coffee.")
+		saynn("Элиза не спеша допивает свой утренний кофе.")
 
-		saynn("[say=pc]What are you gonna do to me today?[/say]")
+		saynn("[say=pc]Что ты собираешься делать со мной сегодня?[/say]")
 
-		saynn("She smiles and puts the mug away before getting up and putting on a serious face.")
+		saynn("Она улыбается и отставляет кружку, после чего встает, принимая серьезный вид.")
 
-		saynn("[say=eliza]Today is The Day, patient. So far this experiment is happening for..[/say]")
+		saynn("[say=eliza]Сегодня тот самый день, пациент. На данный момент этот эксперимент длится уже...[/say]")
 
-		saynn("The doctor goes through her many notes.")
+		saynn("Доктор просматривает свои многочисленные записи.")
 
-		saynn("[say=eliza]Uh.. at least a month. Wasn’t tracking it to be honest.[/say]")
+		saynn("[say=eliza]Э-э... как минимум месяц. Если честно, я не особо следила за временем.[/say]")
 
-		saynn("Doctor chuckles softly.")
+		saynn("Доктор тихо посмеивается.")
 
-		saynn("[say=eliza]And believe it or not. This is the last day. Last day of tests. Today you will do exactly what this room was designed for in the first place.[/say]")
+		saynn("[say=eliza]И, веришь или нет, это последний день. Последний день тестов. Сегодня ты будешь делать именно то, для чего эта комната была спроектирована изначально.[/say]")
 
-		saynn("[say=pc]Huh?[/say]")
+		saynn("[say=pc]А?[/say]")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "continue"):
 		playAnimation(StageScene.HangingDuo, "idle", {npc="eliza", bodyState={naked=true}})
 		
-		saynn("[say=eliza]But first, let me read you the results of this little experiment.[/say]")
+		saynn("[say=eliza]Но сначала позволь мне зачитать тебе результаты этого маленького эксперимента.[/say]")
 
-		saynn("Eliza pulls out some processed data on her datapad. You’re still chained up and completely helpless.")
+		saynn("Элиза выводит обработанные данные на своем датападе. Ты всё еще скован цепями и совершенно беспомощен.")
 
 		# (if all obedient first choices)
 		if(firstScenesBadBehaviorAmount <= 0):
-			saynn("[say=eliza]Hm. Even at the start of the experiment your behavior was pretty much perfect. Could mean a few things, maybe this treatment is just that good that just having a cage had an effect on you. Yeah, that must be it.[/say]")
+			saynn("[say=eliza]Хм. Даже в самом начале эксперимента твое поведение было практически идеальным. Это может означать несколько вещей: возможно, это лечение настолько эффективно, что одного наличия клетки было достаточно, чтобы подействовать на тебя. Да, должно быть, так и есть.[/say]")
 
 		# (if some obedient first choices)
 		elif(firstScenesBadBehaviorAmount <= 1):
-			saynn("[say=eliza]Hm. You were showing signs of good behavior but not always. Which is to be expected at the start of the treatment. Still, it was a great starting point to see which direction the dynamic would lead us though.[/say]")
+			saynn("[say=eliza]Хм. Ты демонстрировал признаки хорошего поведения, но не всегда. Что вполне ожидаемо в начале курса. Тем не менее, это была отличная отправная точка, чтобы понять, в каком направлении будет развиваться наша динамика.[/say]")
 
 		# (if almost always misbehaved)
 		else:
-			saynn("[say=eliza]Hm. You misbehaved at pretty much every possible moment. Makes sense since the treatment was forced upon you. What matters is how your behavior changed after that.[/say]")
+			saynn("[say=eliza]Хм. Ты хулиганил практически в любой возможный момент. Это логично, ведь лечение было навязано тебе силой. Важно то, как изменилось твое поведение после этого.[/say]")
 
-		saynn("Eliza scrolls down a bit.")
+		saynn("Элиза прокручивает список чуть ниже.")
 
 		var firstVisitor = Util.capitalizeFirstLetter(getFlag("MedicalModule.Chastity_FirstChosenPerson", "eliza"))
 		var secondVisitor = Util.capitalizeFirstLetter(getFlag("MedicalModule.Chastity_SecondChosenPerson", "risha"))
 
 		# (if optional scenes had zero bad behaviors)
 		if(optionalScenesBadBehaviorAmount <= 0):
-			saynn("[say=eliza]For your.. visitors.. you have chosen "+str(firstVisitor)+" and "+str(secondVisitor)+". Good choices. And you also misbehaved.. exactly zero times. Nice. Maybe treatments that are specially tailored to each patient are the way to go.[/say]")
+			saynn("[say=eliza]Для своих.. посетителей.. ты выбрала "+str(firstVisitor)+" and "+str(secondVisitor)+". Хороший выбор. И при этом ты провинилась.. ровно ноль раз. Мило. Возможно, индивидуально подобранные процедуры для каждого пациента — это именно то, что нужно.[/say]")
 
 		# (if 2 or less)
 		elif(optionalScenesBadBehaviorAmount <= 2):
-			saynn("[say=eliza]For your.. visitors.. you have chosen "+str(firstVisitor)+" and "+str(secondVisitor)+". Good choices. Although, you didn’t show perfect obedience to them. Hmm. Does that mean that specially tailored treatments are not as effective as I thought?[/say]")
+			saynn("[say=eliza]Для своих.. посетителей.. ты выбрала "+str(firstVisitor)+" and "+str(secondVisitor)+". Хороший выбор. Хотя ты не проявила к ним идеального послушания. Хм. Значит ли это, что индивидуальный подход не так эффективен, как я думала?[/say]")
 
 		# (if more)
 		else:
-			saynn("[say=eliza]For your.. visitors.. you have chosen "+str(firstVisitor)+" and "+str(secondVisitor)+". And.. well.. It didn’t go so well. You were disobeying pretty much the whole time. I thought that specially tailored treatments would have a great effect but clearly I was wrong there.[/say]")
+			saynn("[say=eliza]Для своих.. посетителей.. ты выбрала "+str(firstVisitor)+" and "+str(secondVisitor)+". И.. ну.. всё прошло не очень гладко. Ты практически всё время упрямилась. Я думала, что персональное лечение даст отличный эффект, но, очевидно, я ошибалась.[/say]")
 
-		saynn("She scrolls down some more.")
+		saynn("Она прокручивает список еще ниже.")
 
 		if(getFlag("MedicalModule.Chastity_Event4Choice1", "") == "horsecockdildo"):
-			saynn("[say=eliza]When I left the toys for you.. you chose the best one. So glad that you did~.[/say]")
+			saynn("[say=eliza]Когда я оставила тебе игрушки.. ты выбрала лучшую. Так рада, что ты так поступила~.[/say]")
 		elif(getFlag("MedicalModule.Chastity_Event4Choice1", "") == "magicwand"):
-			saynn("[say=eliza]When I left the toys for you.. you chose the magic wand. Which wasn't what I expected at all.[/say]")
+			saynn("[say=eliza]Когда я оставила тебе игрушки.. ты выбрала магический вибратор. Это было совсем не то, чего я ожидала.[/say]")
 		else:
-			saynn("[say=eliza]When I left the toys for you.. you decided to ignore them. That's not bad but you missed some fun that you could have had.")
+			saynn("[say=eliza]Когда я оставила для тебя игрушки... ты решил их проигнорировать. Это не так уж плохо, но ты упустил кучу веселья, которое могло бы получить.@@")
 
-		saynn("She scrolls a bit.")
+		saynn("Она немного пролистывает экран.")
 
 		# (If said that he is obedient and also licked pussy)
 		if(lickedPussy):
-			saynn("[say=eliza]And by the end of the tests.. You were extremely obedient~. Makes my heart and some other body parts warm just thinking about it. Good job me. Or, well, us~.[/say]")
+			saynn("[say=eliza]И к концу тестов... ты был невероятно послушным~. От одной мысли об этом у меня сердце и некоторые другие части тела начинают теплеть. Молодец, я. Ну, то есть, мы~.[/say]")
 
 		# (if said that he is obedient and kneeled but no pussy)
 		elif(kneeledBeforeEliza):
-			saynn("[say=eliza]And by the end of the tests.. You were quite obedient. And you were ready to prove it too.. Not as much as me and my body wanted but it's still something~.[/say]")
+			saynn("[say=eliza]И к концу тестов... ты был довольно послушным. И ты был готов это доказать... Пусть не так сильно, как этого хотели моё тело и я, но это всё равно достижение~.[/say]")
 
 		# (if said that he is obedient but didn’t prove it)
 		elif(claimedToBeObedient):
-			saynn("[say=eliza]And by the end of the tests you were.. somewhat obedient. You weren’t ready to prove it when provoked but at least you admitted that it had an effect on you. That should account for something, right?[/say]")
+			saynn("[say=eliza]И к концу тестов ты был... в какой-то степени послушным. Ты не был готов доказывать это, когда тебя провоцировали, но, по крайней мере, ты признал, что это на тебя действует. Это ведь тоже считается, верно?[/say]")
 
 		# (if didn’t obey at all)
 		else:
-			saynn("[say=eliza]And by the end of the tests you were.. disobedient. Aw. Well, at least those were your words. Your actions can tell a different story.[/say]")
+			saynn("[say=eliza]А к концу тестов ты был... непослушным. Оу. Ну, по крайней мере, это были твои слова. Твои действия могут говорить о другом.[/say]")
 
-		saynn("Doctor presses some buttons and lets the datapad calculate some stuff.")
+		saynn("Доктор нажимает на кнопки, позволяя датападу произвести расчеты.")
 
 		# (if success)
 		if(isSuccessful):
-			saynn("[say=eliza]So. We did a lot of tests. Collected a lot of data. In the end.. This experiment can be considered.. a success! Yay. Apparently there is a strong correlation between lack of penile orgasms and better obedience levels. These results will prove to be extremely helpful when dealing with the most misbehaving inmates, thank you~.[/say]")
+			saynn("[say=eliza]Итак. Мы провели много тестов. Собрали массу данных. В итоге... этот эксперимент можно считать... успехом! Ура. Судя по всему, существует сильная корреляция между отсутствием пенильных оргазмов и повышением уровня послушания. Эти результаты окажутся чрезвычайно полезными при работе с самыми строптивыми заключенными, спасибо~.[/say]")
 
-			saynn("Nice, you feel nice.")
+			saynn("Приятно, ты чувствуешь себя приятно.")
 
 		# (if failed)
 		else:
-			saynn("[say=eliza]So. We did a lot of tests. Collected a lot of data. In the end.. This experiment can be considered.. a failed one. Aww. Well, it was obvious to be honest. Maybe I went too far. Maybe I didn’t go far enough. Or maybe there is just no correlation between blocked penile orgasms and high obedience levels. Oh well. It’s still valuable data.[/say]")
+			saynn("[say=eliza]Итак. Мы провели много тестов. Собрали уйму данных. В конечном счете... этот эксперимент можно считать... неудачным. Оуу. Ну, если честно, это было очевидно. Может, я зашла слишком далеко. А может, недостаточно. Или, может, между блокировкой пенильного оргазма и высоким уровнем послушания просто нет никакой корреляции. Ну и ладно. Данные всё равно ценные.[/say]")
 
-			saynn("Aw. That’s what she gets for forcing chastity on you.")
+			saynn("Оу. Так ей и надо — за то, что навязала тебе целомудрие.")
 
-		addButton("Continue", "See what happens next", "continue1")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue1")
 
 	if(state == "continue1"):
 
-		saynn("Eliza puts the datapad away and looks at you. A cunning smile shines on her face as she reaches for her little amulet on her neck.")
+		saynn("Элиза убирает датапад и смотрит на тебя. На её лице играет хитрая улыбка, когда она тянется к своему маленькому амулету на шее.")
 
-		saynn("[say=eliza]And now for the best part of this whole thing.[/say]")
+		saynn("[say=eliza]А теперь — самая лучшая часть всего этого дела.[/say]")
 
-		saynn("She opens the amulet and takes out the little key that was stored inside before presenting it to you.")
+		saynn("Она открывает амулет и достает спрятанный внутри маленький ключик, прежде чем протянуть его тебе.")
 
-		saynn("[say=pc]You’re gonna unlock my dick?[/say]")
+		saynn("[say=pc]Ты собираешься разблокировать мой член?[/say]")
 
-		saynn("[say=eliza]Nah~. Well, not so fast.[/say]")
+		saynn("[say=eliza]Не-а~. Ну, не так быстро.[/say]")
 
-		saynn("She brings the key closer to your face. You can pretty much smell the metal. But with your arms chained and cuffed you can’t reach it even if you really wanted to. Eliza bathes in your desperation. Freedom never was so close. You’re not sure if you want that freedom but it sure is very close..")
+		saynn("Она подносит ключ почти к самому твоему лицу. Ты буквально чувствуешь запах металла. Но из-за того, что твои руки скованы цепями и наручниками, ты не можешь дотянуться до него, даже если очень захочешь. Элиза буквально купается в твоем отчаянии. Свобода еще никогда не была так близко. Ты сам не уверен, нужна ли она тебе, но она определенно совсем рядом...")
 
-		saynn("[say=eliza]You went through a lot. You’ve been taught how to cum from anal. And to be honest, you’re pretty good at it~. It feels great doesn’t it? Being on the receiving end, enjoying the pleasure waves slowly ramping up until you can’t take it anymore.. Until your prostate just gives up and makes you cum.. I wonder.. Do you really need your cage unlocked~?[/say]")
+		saynn("[say=eliza]Ты через многое прошел. Тебя научили кончать через анал. И, честно говоря, у тебя неплохо получается~. Это ведь потрясающее чувство, правда? Быть принимающей стороной, наслаждаться волнами удовольствия, которые медленно нарастают, пока ты не начнешь задыхаться от них... Пока твоя простата просто не сдастся и не заставит тебя кончить... Интересно... а действительно ли тебе нужно, чтобы клетку открыли~?[/say]")
 
-		saynn("Eliza keeps eye contact with you, smirking. She holds the key with both paws, pretending to twist it.")
+		saynn("Элиза не сводит с тебя глаз, ухмыляясь. Она держит ключ обеими лапками, делая вид, что поворачивает его.")
 
-		saynn("[say=eliza]I’m giving you a choice, {pc.name}. Choice of a lifetime. I can break this key right now. Ensuring that you will never be able to unlock your cage and receive a normal orgasm. You will be forced to only cum from your butt from now on and forever~. You will accept your role as a pure bottom and you will devote yourself and your body to pleasuring other dicks. The girls can peg you to make you cum like a girl too~.[/say]")
+		saynn("[say=eliza]Я даю тебе выбор, {pc.name}. Выбор всей твоей жизни. Я могу сломать этот ключ прямо сейчас. И тогда ты никогда не сможешь отпереть свою клетку и получить нормальный оргазм. Отныне и навсегда ты будешь кончать только в задницу~. Тебе придётся принять свою роль чистокровного низа и посвятить себя и своё тело удовольствию других членов. Девчонки смогут трахать тебя в зад, чтобы ты кончал как девчонка~.[/say]")
 
-		saynn("After that, Eliza moves the key to your crotch, making it hover near your cage.")
+		saynn("После этого Элиза подносит ключ к твоему паху, заставляя его зависнуть рядом с клеткой.")
 
-		saynn("[say=eliza]Or, alternatively.. I can unlock your cage and take it off. This is the unique unbreakable cage that you can’t acquire anywhere else. And I obviously can’t let you keep it if I unlock it. Your dick will be free. But..[/say]")
+		saynn("[say=eliza]Или же... я могу отпереть твою клетку и снять её. Это уникальная, неразрушимая клетка, которую больше нигде не достать. И, очевидно, я не смогу позволить тебе оставить её себе, если отперу. Твой член будет на свободе. Но...[/say]")
 
-		saynn("Eliza tilts her head down, her cheeks blush ever so slightly.")
+		saynn("Элиза слегка наклоняет голову, её щеки едва заметно розовеют.")
 
-		saynn("[say=eliza]I will only do it.. If you breed me after. In fact.. I will only do it if you breed me.. Yes.. I will allow you to fuck my pussy and cum inside.[/say]")
+		saynn("[say=eliza]Я сделаю это только в одном случае... если ты оплодотворишь меня после этого. Вообще... я сделаю это, только если ты меня осеменишь... Да... я позволю тебе трахать мою киску и кончать внутрь.[/say]")
 
-		saynn("Her ears droop slightly.")
+		saynn("Её ушки слегка поникли.")
 
-		saynn("[say=eliza]You must do it.. As a proof.. That you aren’t a bottom. The proof that this experiment didn’t turn you into one. Proof that you are a breeder.. That you are ready to fuck others rather than be a fucktoy yourself..[/say]")
+		saynn("[say=eliza]Ты должен это сделать... В качестве доказательства... Что ты не просто низушка. Доказательства того, что этот эксперимент не превратил тебя в неё. Доказательства того, что ты — осеменитель... Что ты готов трахать других, а не быть просто секс-игрушкой сам...[/say]")
 
-		saynn("[say=pc]What about the kids?..[/say]")
+		saynn("[say=pc]А как же дети?..[/say]")
 
-		saynn("[say=eliza]We have many facilities for that, don’t worry..[/say]")
+		saynn("[say=eliza]Для этого у нас полно условий, не переживай...[/say]")
 
-		saynn("Eliza calms her warm deep breathing and takes a step back, you see her lips forming a little smile.")
+		saynn("Элиза успокаивает свое глубокое теплое дыхание и делает шаг назад; ты видишь, как на ее губах играет легкая улыбка.")
 
-		saynn("[say=eliza]So? What’s your final decision? Ready to accept your role as a bottom? Or.. the other one?.. I will be happy either way~.[/say]")
+		saynn("[say=eliza]Ну так? Какое твое окончательное решение? Готов принять роль низа? Или... другую?.. В любом случае я буду счастлива~.[/say]")
 
 		# (Options are Bottom, Breeder)
 
-		addButton("Bottom", "You want this cage to stay on your dick.. forever..", "bottom")
-		addButton("Breeder", "Tell Eliza to take off your cage. You will breed her", "breeder")
+		addButton("Низ", "Ты хочешь, чтобы эта клетка осталась на твоем члене... навсегда...", "bottom")
+		addButton("Осеменитель", "Приказать Элизе снять клетку. Ты будешь ее осеменять", "breeder")
 
 
 	if(state == "bottom"):
 		setFlag("MedicalModule.Chastity_Event5LockedForever", true)
 		playAnimation(StageScene.Hug, "hug", {npc="eliza", bodyState={naked=true}})
 		
-		saynn("Now it’s your time to blush. You lower your head slightly.")
+		saynn("Теперь настала твоя очередь краснеть. Ты слегка опускаешь голову.")
 
-		saynn("[say=pc]I’m ready to stay bottom forever..[/say]")
+		saynn("[say=pc]Я готов навсегда остаться низом..[/say]")
 
-		saynn("You only get a glance of Eliza’s wide smile as she suddenly brings the key to your face and applies pressure onto it.. [b]snap[/b]! Like a broken dream.. The key snaps in half in her paws, making a metallic noise that you will never forget.. The key snapped right in the middle of its blade, ensuring that none of its parts can be used to unlock your cage now..")
+		saynn("Ты лишь успеваешь мельком увидеть широкую улыбку Элизы, как она внезапно подносит ключ к твоему лицу и с силой прижимает его.. [b]хрусть[/b]! Словно разбитая мечта... Ключ ломается в ее руках с металлическим звуком, который ты никогда не забудешь.. Он переломился ровно посередине стержня, гарантируя, что теперь ни одна из его частей не сможет открыть твою клетку...")
 
-		saynn("So sudden.. You just can’t help it, you let out a quiet moan as your caged up dick shoots a line of precum through the little hole of its cage..")
+		saynn("Так внезапно... Ты просто не можешь сдержаться и тихо стонешь, пока твой запертый в клетке член выдает струю предэякулята сквозь маленькое отверстие клетки...")
 
-		saynn("Eliza puts the broken pieces away and then unchains you from the ceiling. She reaches to hug you before nuzzling your face a lot and purring loudly.")
+		saynn("Элиза убирает обломки, а затем отцепляет тебя от потолочных цепей. Она тянется, чтобы обнять тебя, а затем начинает настойчиво тереться лицом о твоё, громко и довольно мурлыча.")
 
-		saynn("[say=eliza]You did the right thing. We all are looking for our place in life. And I think you just found yours~.[/say]")
+		saynn("[say=eliza]Ты поступил правильно. Все мы ищем своё место в жизни. И мне кажется, ты его только что нашёл~.[/say]")
 
-		saynn("You are breathing heavily.. Your member.. It puts so much pressure on your cage.. desperately trying to fight it.. But it will never win.. Its destiny is to stay locked forever.. Your destiny.. You hug Eliza back.. Are those tears?..")
+		saynn("Твоё дыхание становится тяжёлым... Твой член... Он так сильно давит на клетку... отчаянно пытаясь вырваться... Но он никогда не победит... Его судьба — оставаться запертым навсегда... Твоя судьба... Ты обнимаешь Элизу в ответ... Это что, слёзы?..")
 
-		addButton("Continue", "See what happens next", "continue2")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue2")
 
 	if(state == "continue2"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", bodyState={naked=true}})
 		
-		saynn("About a minute passes.. Time flies.. You finally stop hugging. Your hand reaches out to touch your cage.. yeah, it’s still there..")
+		saynn("Проходит около минуты... Время летит незаметно... Наконец ты перестаёшь обнимать её. Твоя рука тянется к клетке... да, она всё ещё там...")
 
-		saynn("Eliza is still smiling, she seems to be very happy about your decision. Maybe more than you are..")
+		saynn("Элиза всё ещё улыбается, она кажется очень счастливой из-за твоего решения. Возможно, даже больше, чем ты сам...")
 
-		saynn("[say=pc]What.. now?..[/say]")
+		saynn("[say=pc]И что... теперь?..[/say]")
 
-		saynn("[say=eliza]Well, you continue serving your sentence. You continue living. You’re just.. have to cum from anal now~.[/say]")
+		saynn("[say=eliza]Ну, ты продолжаешь отбывать свой срок. Продолжаешь жить. Просто теперь тебе придётся... кончать через анус~.[/say]")
 
-		saynn("You nod slightly.")
+		saynn("Ты слегка киваешь.")
 
-		saynn("[say=pc]What about.. these.. meetings?[/say]")
+		saynn("[say=pc]А как же... эти... встречи?[/say]")
 
-		saynn("[say=eliza]No more of them I’m afraid. I think you’re ready anyway~.[/say]")
+		saynn("[say=eliza]Боюсь, их больше не будет. Думаю, ты в любом случае уже готов~.[/say]")
 
-		saynn("[say=pc]Fair enough..[/say]")
+		saynn("[say=pc]Справедливо..[/say]")
 
-		saynn("She reaches her paw out to scritch you under the chin.")
+		saynn("Она протягивает лапку, чтобы почесать тебя под подбородком.")
 
-		saynn("[say=eliza]Enjoy~. Right now I have to go and submit all the data.[/say]")
+		saynn("[say=eliza]Наслаждайся~. А мне сейчас нужно пойти и отправить все данные.[/say]")
 
-		saynn("[say=pc]Of course.. of course..[/say]")
+		saynn("[say=pc]Конечно.. конечно..[/say]")
 
-		saynn("You grab your clothes and put them on. Eliza is ready to let you out.")
+		saynn("Ты хватаешь одежду и натягиваешь её. Элиза готова тебя выпустить.")
 
 		# (Options are Thank you or Leave)
 
-		addButton("Thank you", "Thank Eliza", "thank_you")
-		addButton("Leave", "Time to go", "leave")
+		addButton("Спасибо", "Поблагодарить Элизу", "thank_you")
+		addButton("Уйти", "Пора идти", "leave")
 
 
 	if(state == "thank_you"):
 		aimCameraAndSetLocName("medical_nearconfessionary")
 		GM.pc.setLocation("medical_nearconfessionary")
 		
-		saynn("[say=pc]Thank you, doctor..[/say]")
+		saynn("[say=pc]Спасибо, доктор..[/say]")
 
-		saynn("Eliza purrs.")
+		saynn("Элиза мурлычет.")
 
-		saynn("[say=eliza]You’re very welcome~.[/say]")
+		saynn("[say=eliza]Всегда пожалуйста~.[/say]")
 
-		saynn("She lets you out into the medical corridor. Time to go..")
+		saynn("Она выпускает тебя в медицинский коридор. Пора идти...")
 
 		# (scene ends)
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 
 	if(state == "leave"):
 		aimCameraAndSetLocName("medical_nearconfessionary")
 		GM.pc.setLocation("medical_nearconfessionary")
 		
-		saynn("She lets you out into the medical corridor. Time to go..")
+		saynn("Она выпускает тебя в медицинский коридор. Пора идти...")
 
-		saynn("[say=eliza]See you around~.[/say]")
+		saynn("[say=eliza]Еще увидимся~.[/say]")
 
 		# (scene ends)
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 
 
 	if(state == "breeder"):
 		setFlag("MedicalModule.Chastity_Event5LockedForever", false)
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", bodyState={naked=true, hard=true}})
 
-		saynn("[say=pc]Chastity is not for everyone. And I certainly don’t wanna stay caged forever. I guess I’m a breeder.[/say]")
+		saynn("[say=pc]Целомудрие подходит не всем. И я точно не хочу вечно сидеть в клетке. Видимо, я просто инкубатор.[/say]")
 
-		saynn("Eliza listens to your words carefully, nodding subtly. She looks slightly to the side.")
+		saynn("Элиза внимательно слушает твои слова, едва заметно кивая. Она слегка отводит взгляд в сторону.")
 
-		saynn("[say=eliza]Well.. no point in keeping that cage on you then..[/say]")
+		saynn("[say=eliza]Ну что ж... тогда нет смысла держать эту клетку на тебе...[/say]")
 
-		saynn("Her paws bring the key down to your cage. She inserts it into the lock and watches you.")
+		saynn("Ее лапки подносят ключ к твоей клетке. Она вставляет его в замок и пристально наблюдает за тобой.")
 
-		saynn("A few seconds of silence. She really is beautiful. Such deep eyes.. Little cute snout.. Careful lips.. Eliza leans closer to yours.. Tilting her head slightly.. And leaves you a little kiss while turning the key. There was a satisfying mechanical click as the cage gets unlocked. Her paw grabs onto the first part and begins removing it. The high pressure that your member is experiencing at the moment.. slowly dies down.. Your {pc.cock} is free.. at last. What’s left of the cage is the cockring and soon Eliza takes it off too.")
+		saynn("Несколько секунд тишины. Она действительно прекрасна. Такие глубокие глаза... Милый аккуратный носик... Чувственные губы... Элиза наклоняется ближе к твоим... Слегка склонив голову... И оставляет тебе легкий поцелуй, одновременно поворачивая ключ. Раздается приятный механический щелчок — замок открыт. Ее лапа подхватывает первую часть конструкции и начинает ее снимать. Сильное давление, которое испытывает твой член, начинает медленно спадать... Твой {pc.cock} наконец-то на свободе. То, что осталось от клетки — это лишь кольцо, которое Элиза вскоре тоже снимает.")
 
-		saynn("Wow.. No more metal fighting against your erection. You’re leaking pre like it's your first time. Your shaft is throbbing and pulsating. All these days of not being able to use it.. Made you so needy.")
+		saynn("Ого... Больше никакого металла, сдавливающего эрекцию. Ты течешь предэякулятом так, будто это твой первый раз. Твой ствол пульсирует и трепещет. Все эти дни воздержания... Сделали тебя невероятно жаждущим.")
 
-		saynn("Eliza sees your hard member and smiles. She only teasingly rubs the tip but that was enough to make you pant. Her paw gropes your balls too. After that, she reaches out for your chains and undoes them, freeing your hands. She seems to trust you a lot. You reach them out towards Eliza but she gracefully avoids your grasp.")
+		saynn("Элиза видит твой стояк и улыбается. Она лишь дразняще потирает головку, но этого достаточно, чтобы ты начал тяжело дышать. Её лапа также нащупывает твои яйца. После этого она тянется к твоим цепям и расстегивает их, освобождая руки. Кажется, она тебе очень доверяет. Ты тянешься к ней, но она грациозно ускользает от твоих рук.")
 
-		saynn("[say=eliza]Not so fast~.[/say]")
+		saynn("[say=eliza]Не так быстро~.[/say]")
 
-		addButton("Continue", "See what happens next", "continue3")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue3")
 
 	if(state == "continue3"):
 		addCharacter("eliza", ["naked"])
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", bodyState={naked=true, hard=true}, npcBodyState={underwear=true}})
 		
-		saynn("Eliza takes a step back from you and begins to undress. Her lab coat hits the couch first. Then she sneaks her claws under her neat top and pulls it up, revealing the nice black bra that encompasses her {eliza.breasts}.")
+		saynn("Элиза делает шаг назад и начинает раздеваться. Сначала на диван падает её лабораторный халат. Затем она просовывает когти под свой аккуратный топ и задирает его, обнажая шикарный черный бюстгальтер, который обхватывает её {eliza.breasts}.")
 
-		saynn("After that she turns away from you, her paws slide down the pastel fur until they stumble upon her knee long skirt. Hips sway to the sides slightly while she is pulling her skirt down, revealing a sexy garter belt with lace patterns and then her panties of a similar design. Her fluffy feline tail is teasingly covering them while she wiggles her butt at you. The contours of her long feline legs are emphasized by the half-transparent tights. The view is quite sexy, you can’t lie.")
+		saynn("Затем она отворачивается от тебя; её лапы скользят вниз по пастельному меху, пока не натыкаются на юбку до колен. Когда она стягивает юбку, её бедра слегка покачиваются, открывая сексуальный кружевной пояс для чулок, а затем и трусики в таком же стиле. Её пушистый кошачий хвост дразняще прикрывает их, пока она виляет перед тобой задом. Контуры её длинных кошачьих ног подчеркнуты полупрозрачными колготками. Зрелище чертовски сексуальное, врать не будешь.")
 
-		saynn("After that she slowly turns around again, presenting herself and biting her lip. Her paw reaches out for your hand and grabs it. You can feel the textured beans of her palm rubbing against your as she pulls you from under your spot.")
+		saynn("После этого она снова медленно поворачивается, демонстрируя себя и покусывая губу. Её лапа тянется к твоей руке и хватает её. Ты чувствуешь, как текстурные подушечки её ладони трутся о твою кожу, когда она вытягивает тебя из твоего места.")
 
-		saynn("[say=eliza]Let me do this first..[/say]")
+		saynn("[say=eliza]Дай-ка я сначала сделаю это..[/say]")
 
-		saynn("She stands on the same spot as you were standing on for the last many sessions. She reaches up and grabs the cuffs with chains attached to them before locking them around her wrists..")
+		saynn("Она стоит на том же самом месте, где все последние сессии стояли вы. Она тянется вверх, хватает наручники с прикрепленными к ним цепями и защелкивает их на своих запястьях.")
 
-		addButton("Continue", "See what happens next", "continue4")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue4")
 
 	if(state == "continue4"):
 		playAnimation(StageScene.HangingDuo, "stand", {pc="eliza", npc="pc", npcBodyState={naked=true, hard=true}, bodyState={underwear=true}})
 		
-		saynn("The cuffs get locked with an audible click, rendering Eliza completely helpless. She tugs on her cuffs to test them but obviously that’s about all she can do. She directs her gaze at you, blushing deeply. Her underwear is on full display.. her body is..")
+		saynn("Наручники защелкиваются с отчетливым щелчком, оставляя Элизу совершенно беспомощной. Она дергает за цепи, проверяя их на прочность, но, очевидно, это всё, что ей под силу. Она устремляет на вас взгляд, густо краснея. Её нижнее белье выставлено напоказ... а её тело...")
 
-		saynn("[say=eliza]Well.. now I’m at your mercy.. breeder..[/say]")
+		saynn("[say=eliza]Ну что ж... теперь я в твоей власти... заводчик...[/say]")
 
-		saynn("Well then, even while being helpless she somehow still manages to get what she wants. But now it's your turn to take. You step closer to her and put your hand on her cheek, gently rubbing her there until you feel purring. While that is happening, you lean closer to her face and deliver a little kiss on her lips. And then another, much longer one. Eliza closes her eyes while you steal her lips for yourself, turning this kiss into a french one, letting your tongue dance against her rough one. Both your hands explore her, going over the cover up mounds and squeezing them before trailing down her sides up and down. You can feel her breathing more and more deeply..")
+		saynn("Что ж, даже будучи беспомощной, ей каким-то образом всё равно удается получать желаемое. Но теперь настала ваша очередь брать. Вы подходите ближе и кладете руку ей на щеку, нежно поглаживая её, пока не чувствуете, как она начинает буквально мурлыкать. В этот момент вы наклоняетесь к её лицу и дарите ей короткий поцелуй в губы. А затем еще один, гораздо более долгий. Элиза закрывает глаза, пока вы присваиваете её губы себе, превращая поцелуй в французский, позволяя своим языкам танцевать друг с другом. Обе ваши руки исследуют её, лаская прикрытые бельем груди и сжимая их, а затем скользя вдоль её боков вверх и вниз. Вы чувствуете, что её дыхание становится всё более глубоким...")
 
-		saynn("You pull away from the kiss and step around her, the girl must be using quite an expensive perfume because her scent is amazing. But as you get behind her and put your chin on her shoulder, you notice some object on the little round table.. A pill bottle. You give Eliza a curious look but she just stares at your lips.")
+		saynn("Вы отстраняетесь от поцелуя и обходите её со спины; должно быть, девушка пользуется очень дорогими духами, потому что её аромат просто божественен. Но когда вы оказываетесь позади неё и кладете подбородок ей на плечо, вы замечаете какой-то предмет на маленьком круглом столике... Баночку с таблетками. Вы бросаете на Элизу любопытный взгляд, но она лишь пристально смотрит на ваши губы.")
 
-		saynn("Interesting, you continue circling Eliza and get a better look at it. Only a single pill inside. Even more curious, you grab the pill bottle and look at the text. It says that these are heat inducing pills, designed to prime a female for a successful impregnation. You look at Eliza but only catch her blushing and tilting her head down.")
+		saynn("Интересно... ты продолжаешь обходить Элизу кругом, чтобы рассмотреть содержимое получше. Внутри всего одна таблетка. Еще любопытнее: ты берешь флакон и читаешь надпись. Оказывается, это таблетки, вызывающие течку, предназначенные для подготовки самки к успешному оплодотворению. Ты переводишь взгляд на Элизу, но видишь лишь, как она заливается краской и покорно склоняет голову.")
 
 		# (Options are Use heat pill, No pill)
 
-		addButton("Use heat pill", "Make Eliza swallow the pill", "use_heat_pill")
-		addButton("No pill", "You don’t need that", "no_pill")
+		addButton("Использовать таблетку течки", "Заставить Элизу проглотить таблетку", "use_heat_pill")
+		addButton("Без таблетки", "Тебе это не нужно", "no_pill")
 
 
 	if(state == "use_heat_pill"):
 		setFlag("MedicalModule.Chastity_Event5GaveElizaDrug", true)
 		
-		saynn("Hmm, why not. You grab the pill and slowly approach the helpless feline. You lean in towards her face again, making it seem like you’re about to kiss her again. Eliza parts her lips and invites your tongue in but instead you slip the pill into her mouth and hold your hand on her chin, closing her jaw before watching her reaction carefully. Doctor’s eyes open wide, she holds eye contact with you, blushing constantly, holding the pill on her tongue.")
+		saynn("Хм, а почему бы и нет. Ты берешь таблетку и медленно приближаешься к беспомощной кошечке. Ты снова склоняешься к её лицу, создавая иллюзию того, что собираешься её поцеловать. Элиза приоткрывает губы, приглашая твой язык, но вместо этого ты подсовываешь ей таблетку в рот и придерживаешь её подбородок, заставляя сомкнуть челюсти, а затем внимательно следишь за её реакцией. Глаза доктора широко распахиваются; она не отводит от тебя взгляда, не переставая краснеть, пока таблетка лежит у неё на языке.")
 
-		saynn("You don’t need to give her any orders though, after a few seconds of deliberating, Eliza closes her eyes and swallows, her throat visibly tensing up and then relaxing.")
+		saynn("Впрочем, приказывать ей не обязательно: спустя несколько секунд раздумий Элиза закрывает глаза и сглатывает — видно, как напрягается, а затем расслабляется её горло.")
 
-		saynn("Seconds pass.. Eliza still holding her eyes closed shut. But her breathing becomes faster. Her scent.. even stronger. You’re pretty sure that this is the scent of a horny feline. A quiet moan escapes past the doctor’s lips. You look down at her lace panties.. and realize how wet they are.. Little drops of her arousal slide down her inner thighs.")
+		saynn("Проходят секунды... Элиза всё еще держит глаза плотно закрытыми. Но её дыхание становится чаще. Её запах... становится ещё сильнее. Ты почти уверен, что это запах возбужденной кошечки. Тихий стон срывается с губ доктора. Ты опускаешь взгляд на её кружевные трусики... и понимаешь, насколько они мокрые... Капли её возбуждения стекают по внутренней стороне бёдер.")
 
-		saynn("Eliza suddenly opens her eyes. They’re full of lust.. She eyes you out, your {pc.masc} body, your {pc.breasts}, your {pc.penis}. Her lips are parted because she can’t stop panting.")
+		saynn("Элиза внезапно открывает глаза. Они полны похоти... Она пожирает тебя взглядом: твое {pc.masc} тело, твою {pc.breasts}, твою {pc.penis}. Ее губы приоткрыты, потому что она не может перестать тяжело дышать.")
 
-		saynn("It’s time..")
+		saynn("Пора...")
 
-		addButton("Vaginal", "Time to breed the little pussy", "vaginal")
+		addButton("Вагинальный", "Пора осеменить эту киску", "vaginal")
 
 	if(state == "no_pill"):
 		setFlag("MedicalModule.Chastity_Event5GaveElizaDrug", false)
 		
-		saynn("You put the pill bottle back on the table, you’re not gonna follow the obvious bread crumbs that Eliza has left you. You’re here to take things into your own hands. Time to make that kitty fall in heat your own way.")
+		saynn("Ты ставишь баночку с таблетками обратно на стол — ты не собираешься вестись на очевидные хлебные крошки, которые Элиза рассыпала перед тобой. Ты здесь, чтобы взять всё в свои руки. Пора заставить эту кошечку войти в течку по-твоему.")
 
-		saynn("You slowly approach the helpless feline and lean in towards her face again, forcing a deep kiss. Your tongue explores her mouth while your hand jumps on her belly and slides down it and then under the cloth of her panties. One of your digits finds the girl’s little clit and teases, doing little circular motions around the sensitive flesh. That makes Eliza produce a stifled moan into your mouth, her body squirms around your hand, her toes curl up.")
+		saynn("Ты медленно приближаешься к беспомощной кошечке и снова наклоняешься к ее лицу, навязывая глубокий поцелуй. Твой язык исследует ее рот, пока рука ложится ей на живот, скользит вниз и ныряет под ткань трусиков. Один из твоих пальцев находит крошечный клитор девушки и начинает дразнить его, совершая легкие круговые движения вокруг чувствительной плоти. От этого Элиза издает приглушенный стон прямо тебе в рот, ее тело извивается вокруг твоей руки, а пальцы ног поджимаются.")
 
-		saynn("You go further, your palm covers her little flower before the two digits spread open her careful petals. She is.. so wet. You capture some of her arousal before spreading it over her pussy lips, rubbing them slowly. Eliza arches her back and moans again while you keep playing with her tongue, bossing around inside her mouth.")
+		saynn("Ты идешь дальше: твоя ладонь накрывает ее маленький цветок, прежде чем два пальца раздвигают ее нежные лепестки. Она... такая мокрая. Ты захватываешь немного ее смазки, а затем распределяешь ее по половым губам, медленно растирая их. Элиза выгибает спину и снова стонет, пока ты продолжаешь играть с ее языком, властвуя у нее во рту.")
 
-		saynn("After getting her ready, you pull away your wet digits and end the kiss before bringing your hand to her mouth. Eliza instantly knows how to react, closing her lips around your digits and suckling her own arousal off of them. Finally, you pull away.")
+		saynn("Подготовив ее, ты вынимаешь влажные пальцы и прерываешь поцелуй, после чего подносишь руку к ее рту. Элиза мгновенно понимает, что делать: она смыкает губы вокруг твоих пальцев, слизывая собственное возбуждение с них. Наконец, ты отстраняешься.")
 
-		saynn("Her eyes are.. full of lust. She eyes you out, your {pc.masc} body, your {pc.breasts}, your {pc.penis}. She can’t stop panting.")
+		saynn("Её глаза... полны похоти. Она пожирает тебя взглядом: твоё {pc.masc} тело, твои {pc.breasts}, твои {pc.penis}. Она не может перестать тяжело дышать.")
 
-		saynn("It’s time..")
+		saynn("Пора...")
 
-		addButton("Vaginal", "Time to breed the little pussy", "vaginal")
+		addButton("Вагинальный", "Пора осеменить эту киску", "vaginal")
 
 	if(state == "vaginal"):
 		playAnimation(StageScene.HangingSex, "tease", {pc="eliza", npc="pc", npcBodyState={naked=true, hard=true}, bodyState={underwear=true}})
 		
-		saynn("Breeding was a recruitment to take off your cage but now it feels more like a well-earned reward. You slowly get out of her sight and then take a spot behind her. As your hand touches the girl’s back, little shivers get sent down her spine, the fluffy tail rubs against your exposed bits. You grab it near the base and let the hand slide down it before slowly moving it aside, revealing more of Eliza’s wet panties. You get closer and push your {pc.penis} against the damp cloth, letting the girl feel your hard rod brushing against her covered up kitty.")
+		saynn("Разведение было способом заслужить право снять клетку, но теперь это кажется заслуженной наградой. Ты медленно выходишь из поля её зрения и устраиваешься позади неё. Когда твоя рука касается спины девушки, по её позвоночнику пробегает дрожь, а пушистый хвост трется о твои обнаженные яйца. Ты хватаешь его у основания и ведешь рукой вниз, прежде чем медленно отвести в сторону, обнажая мокрые трусики Элизы. Ты прижимаешься ближе и вдавливаешь свой {pc.penis} в сырую ткань, давая девушке почувствовать, как твой твердый член упирается в её прикрытую белье киску.")
 
-		saynn("[say=eliza]Mhmm-m..[/say]")
+		saynn("[say=eliza]Мммм-м..[/say]")
 
-		saynn("After that little bit of foreplay, Eliza is left wanting you. So why make her wait any longer. You grab the side of her panties and push aside, revealing a beautiful tight-looking flower. Her pink pussy folds are so-so moist, the room quickly feels with an even stronger odor of her arousal.")
+		saynn("После такой короткой прелюдии Элиза буквально жаждет тебя. Так зачем заставлять её ждать дольше? Ты хватаешь её за края трусиков и раздвигаешь их, открывая взору прекрасный, узкий цветок. Её розовые складки киски влажные, и комнату быстро наполняет еще более сильный запах её возбуждения.")
 
-		saynn("Your hand guides your member while you slowly push your hips forward, letting the head of your shaft bury itself in that gorgeous slit with ease. Eliza is biting her lip and letting out a quite long noise of passion. Her kitty is tight in just the right spots so you push on, sliding more and more of your length inside while her soft inner walls spread around it.")
+		saynn("Твоя рука направляет член, пока ты медленно подаешься тазом вперед, позволяя головке с легкостью погрузиться в эту великолепную щель. Элиза закусывает губу, издавая долгий стон страсти. Её киска обхватывает тебя именно там, где нужно, так что ты продолжаешь насаживаться, проталкивая всё больше и больше своей длины внутрь, пока её мягкие внутренние стенки растягиваются вокруг тебя.")
 
-		saynn("[say=eliza]I love this.. you..[/say]")
+		saynn("[say=eliza]Обожаю это.. ты..[/say]")
 
-		addButton("Faster", "See what happens next", "faster")
+		addButton("Быстрее", "Смотреть, что будет дальше", "faster")
 
 	if(state == "faster"):
 		playAnimation(StageScene.HangingSex, "sex", {pc="eliza", npc="pc", npcBodyState={naked=true, hard=true}, bodyState={underwear=true}})
 		
-		saynn("You don’t rush it but also try to keep things from being too slow by gradually picking up your pace, letting your {pc.cock} slide in and out of Eliza’s dripping kitty. All the while you lean closer to her body and proceed to cover her shoulders and neck with dozens after dozens little kisses. The feline tilts her head to the side slightly, giving you more access to herself. She is mewling quietly as a response, her tail curling up around your belly.")
+		saynn("Ты не торопишься, но и не даешь процессу затянуться, постепенно наращивая темп и позволяя своему {pc.cock} плавно входить и выходить из сочной, влажной киски Элизы. При этом ты прижимаешься к ней всё ближе, осыпая её плечи и шею десятками, сотнями нежных поцелуев. Кошечка слегка наклоняет голову набок, открывая тебе еще больший доступ к себе. В ответ она тихонько мурлычет, а её хвост обвивается вокруг твоего живота.")
 
-		saynn("[say=eliza]Yes.. don’t stop.. please..[/say]")
+		saynn("[say=eliza]Да.. не останавливайся.. пожалуйста..[/say]")
 
-		saynn("Your hands land just under Eliza’s breasts and cup them, your digits slide under the bra and reach for the girl’s perky nipples, teasing them while you continue to gently thrust inside her.")
+		saynn("Твои ладони ложатся прямо под грудь Элизы, обхватывая её; пальцы скользят под бюстгальтер, нащупывая упругие соски и дразня их, пока ты продолжаешь мягко входить в неё.")
 
-		saynn("Both lovers pant passionately with Eliza also producing occasional moans. Very soon you find yourself thrusting your hips at a steady rate, avoiding reaching the girl’s natural barricade but focusing on her pleasure spot. Kisses get replaced with little playful bites, a natural progression of things. You find Eliza’s body squirming before you. But the chains keep her mostly still and helpless. It feels so good when people trust each other so much..")
+		saynn("Оба любовника страстно тяжело дышат, а Элиза время от времени издает стоны. Вскоре ты ловишь ритм и начинаешь двигать бедрами с постоянной скоростью, не доходя до её естественного барьера, но сосредоточившись на её самой чувствительной точке. Поцелуи сменяются легкими игривыми укусами — естественное развитие страсти. Ты чувствуешь, как тело Элизы извивается под тобой, но цепи держат её почти неподвижной и беспомощной. Это чертовски приятное чувство — когда люди так сильно доверяют друг другу...")
 
-		saynn("[say=eliza]I’m.. I’m close.. ah-h.. Please..[/say]")
+		saynn("[say=eliza]Я.. я сейчас.. ахх.. Пожалуйста..[/say]")
 
-		saynn("Eliza tries to look at you, tries to nuzzle your face. You nuzzle her back and continue thrusting inside her needy pussy.")
+		saynn("Элиза пытается посмотреть на тебя, пытается уткнуться носом в твоё лицо. Ты отвечаешь ей тем же, продолжая входить в её жаждущую киску.")
 
-		saynn("[say=eliza]Make me a woman..[/say]")
+		saynn("[say=eliza]Сделай меня женщиной..[/say]")
 
-		saynn("Her words sound so hot. And paired with her pussy walls getting tighter and kneading your member, you find yourself getting close too. Luckily, there is nothing that can stop you..")
+		saynn("Её слова звучат так горячо. А в сочетании с тем, как её стенки сжимаются, массируя твой член, ты понимаешь, что тоже близок к разрядке. К счастью, ничто не может тебя остановить...")
 
-		addButton("Cum inside", "Breed that kitty mew", "cum_inside")
+		addButton("Кончить внутрь", "Оплодотвори эту киску", "cum_inside")
 
 	if(state == "cum_inside"):
 		playAnimation(StageScene.HangingSex, "fast", {pc="eliza", npc="pc", pcCum=true, npcCum=true, npcBodyState={naked=true, hard=true}, bodyState={underwear=true}})
 		
-		saynn("And you don’t plan on stopping too, thrusting faster and faster until your hips begin slapping against the girl’s butt. Your hands squeeze her {eliza.breasts}, your mouth is gently biting her neck to make the kitty feel more at home.")
+		saynn("И ты не собираешься останавливаться: ты входишь всё быстрее и быстрее, пока твои бёдра не начинают с силой шлепать по её заднице. Твои руки сжимают её {eliza.breasts}, а губы нежно покусывают её шею, чтобы кошечка чувствовала себя как дома.")
 
-		saynn("Eliza’s moans become louder and more passionate until she gets pushed over the edge. Her pussy slit pulsates around your cock, making it hard to slide in and out but so much more pleasurable. After a few powerful thrusts you join her, your {pc.cock} bursts with a crazy amount of {pc.cum}, extras that were stored from the days of not getting normal orgasms. And all of that flows inside Eliza, past her cervix, inside her wanting womb.")
+		saynn("Стоны Элизы становятся всё громче и страстнее, пока её не накрывает оргазм. Её киска пульсирует вокруг твоего члена, из-за чего входить и выходить становится сложнее, но в разы приятнее. После нескольких мощных толчков ты достигаешь пика вслед за ней, и твоя {pc.cock} извергает безумное количество {pc.cum} — всё то, что накопилось за дни лишений без нормальных оргазмов. И всё это вливается в Элизу, проходит через шейку матки прямо в её жаждущую утробу.")
 
-		saynn("[say=eliza]Ah~..[/say]")
+		saynn("[say=eliza]Ах~..[/say]")
 
-		saynn("Her pussy walls pretty much milking your balls until they’re dry, many orgasmic waves flash through both lovers' bodies. You cease the hip movements and just enjoy how her warm wet folds treat your member.")
+		saynn("Её стенки буквально выжимают твои яйца досуха, а по телам обоих любовников проносятся волны оргазма. Ты замираешь, переставая двигать бёдрами, и просто наслаждаешься тем, как её теплые влажные складки ласкают твой член.")
 
-		addButton("Continue", "See what happens next", "continue5")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue5")
 
 	if(state == "continue5"):
 		playAnimation(StageScene.HangingSex, "tease", {pc="eliza", npc="pc", npcBodyState={naked=true, hard=true}, bodyState={underwear=true}})
 		
-		saynn("Quiet purring can be heard from Eliza while you hug her, still with your member inside her slit.")
+		saynn("Пока ты обнимаешь её, всё ещё оставаясь внутри её щели, слышится тихое мурлыканье Элизы.")
 
-		saynn("[say=eliza]So.. good..[/say]")
+		saynn("[say=eliza]Так.. хорошо..[/say]")
 
-		saynn("You leave a few little smooches on her neck before slowly pulling out, letting the {pc.cum} to start slowly oozing out of her cute pussy slit.")
+		saynn("Ты оставляешь несколько нежных поцелуев на её шее, прежде чем медленно выскользнуть наружу, позволяя {pc.cum} медленно вытекать из её милой киски.")
 
-		saynn("You both need some time to catch your breath. You step around her and look into her eyes. Her satisfied cunning eyes.")
+		saynn("Вам обоим нужно время, чтобы перевести дух. Ты обходишь её и заглядываешь ей в глаза — в её довольные, хитрые глаза.")
 
-		saynn("[say=eliza]This is better than keeping you locked.. Heh..[/say]")
+		saynn("[say=eliza]Так даже лучше, чем держать тебя взаперти... Хех...[/say]")
 
-		saynn("You smile and then kiss the doctor on the lips again. Eliza blinks a lot and then closes her eyes, allowing you to lead. After about a minute of making out, you finally pull away from her lips and instead focus on uncuffing her paws. Eliza is purring so much..")
+		saynn("Ты улыбаешься и снова целуешь доктора в губы. Элиза часто моргает, а затем закрывает глаза, позволяя тебе вести. После минуты страстных поцелуев ты наконец отрываешься от её губ и переключаешься на то, чтобы снять наручники с её лапок. Элиза так и урчит от удовольствия...")
 
-		addButton("Uncuff her", "Keeping her restrained any longer would be rude", "uncuff_her")
+		addButton("Расковать ее", "Держать её связанной дольше было бы просто невежливо", "uncuff_her")
 
 	if(state == "uncuff_her"):
 		GM.pc.setLocation("medical_nearconfessionary")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcAction="sit", bodyState={naked=true, hard=true}, npcBodyState={underwear=true}})
 		
-		saynn("You uncuff the feline and support her. But she seems to be doing fine, just with a little extra sway to her motions. Eliza smiles while watching {pc.cum} leaking out of her slit. She just shifts the panties back into their place, allowing them to get messy.")
+		saynn("Ты снимаешь наручники с кошечки и придерживаешь её. Но, похоже, она в порядке, разве что её движения стали чуть более расслабленными и покачивающимися. Элиза улыбается, наблюдая, как {pc.cum} вытекает из её щели. Она просто поправляет трусики на место, позволяя им пропитаться соком.")
 
-		saynn("[say=eliza]My shift is just starting.[/say]")
+		saynn("[say=eliza]Моя смена только начинается.[/say]")
 
-		saynn("She then just plops into the chair and relaxes, still purring quietly.")
+		saynn("Затем она просто плюхается в кресло и расслабляется, всё так же тихо урча.")
 
-		saynn("[say=eliza]Well. You proved that I couldn’t change you. But I got something out of this anyway. So I’m not complaining~.[/say]")
+		saynn("[say=eliza]Ну что ж. Ты доказал, что меня не изменить. Но я всё равно получила от этого удовольствие. Так что не жалуюсь~.[/say]")
 
-		saynn("Eliza’s cheeky smile shines bright. You go ahead and grab your belongings.")
+		saynn("На лице Элизы сияет дерзкая улыбка. Ты собираешь свои вещи.")
 
-		saynn("[say=eliza]I guess you’re free to go now. No more sessions with me. How do you feel about that?[/say]")
+		saynn("[say=eliza]Думаю, теперь ты свободна. Больше никаких сеансов со мной. Что ты об этом думаешь?[/say]")
 
-		saynn("[say=pc]It was worth it in the end.[/say]")
+		saynn("[say=pc]В конце концов, это того стоило.[/say]")
 
-		saynn("She chuckles.")
+		saynn("Она посмеивается.")
 
-		saynn("[say=eliza]Of course it was.[/say]")
+		saynn("[say=eliza]Конечно, так и было.[/say]")
 
-		saynn("After that Eliza gets up and lets you out into the corridor. Although just before you can leave, she pulls you in for a last little kiss.")
+		saynn("После этого Элиза поднимается и выпускает тебя в коридор. Но прямо перед тем, как ты успеваешь уйти, она притягивает тебя к себе для последнего мимолетного поцелуя.")
 
-		saynn("[say=eliza]See you around.[/say]")
+		saynn("[say=eliza]Ещё увидимся.[/say]")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 		
 
 func _react(_action: String, _args):

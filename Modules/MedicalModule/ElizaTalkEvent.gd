@@ -11,9 +11,9 @@ func run(_triggerID, _args):
 		return
 	
 	if(getFlag("MedicalModule.Mental_PlayerEscaped") || getFlag("MedicalModule.Eliza_BusyDays", 0) > 0):
-		addDisabledButton("Dr. Quinn", "She is not here")
+		addDisabledButton("Д-р Куинн", "Её здесь нет")
 	else:
-		saynn("A doctor is sitting behind the counter")
+		saynn("За стойкой сидит врач")
 		addButtonUnlessLate("Dr. Quinn", "Talk to the doctor", "talk")
 
 func getPriority():

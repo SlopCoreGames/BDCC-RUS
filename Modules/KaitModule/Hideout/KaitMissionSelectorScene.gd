@@ -4,16 +4,16 @@ func _init():
 	sceneID = "KaitMissionSelectorScene"
 
 func sayMissionInfo(theMission:MissionBase, _isHistory:bool = false):
-	sayn("Name: [b] "+theMission.getName()+"[/b]")
-	sayn("Description: "+theMission.getDescription())
+	sayn("Имя: [b] "+theMission.getName()+"[/b]")
+	sayn("Описание: "+theMission.getDescription())
 	
 	var rewardStr:String = theMission.getRewardString()
 	if(!rewardStr.empty()):
-		sayn("Reward: "+rewardStr)
+		sayn("Награда: "+rewardStr)
 	if(_isHistory):
 		var theChoices:Array = GM.main.MS.getDecisionsStrings(theMission.id)
 		if(!theChoices.empty()):
-			sayn("Decisions:")
+			sayn("Решения:")
 			sayn(Util.join(theChoices, "\n"))
 	sayn("")
 
@@ -21,65 +21,65 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Solo, "stand")
 		
-		saynn("You're standing in front of an improvised mission board. Kait is standing near. What do you wanna do?")
+		saynn("Ты стоишь перед импровизированной доской заданий. Кейт стоит неподалеку. Что будешь делать?")
 
 		#addButtonAt(9, "Kait", "Talk with the snow leopard", "endthescene")
 		addButtonAt(9, "History", "Look at the history of your missions!", "history_menu")
 		addButtonAt(14, "Step away", "You changed your mind", "endthescene")
 		
-		saynn("[b]=== Missions ====[/b]")
+		saynn("[b]=== Миссии ====[/b]")
 		
 		var theMainMissions:Array = GM.main.MS.getAllPossibleMainMissions()
 		if(theMainMissions.empty()):
-			saynn("No main missions left! Wait until the developer makes more..")
+			saynn("Основных миссий больше нет! Жди, пока разработчик добавит новые...")
 		
 		var _i:int = 1
 		for theMission in theMainMissions:
 			sayMissionInfo(theMission)
-			addButton(theMission.getName(), "Start this mission!", "startMission", [theMission.id])
+			addButton(theMission.getName(), "Начать эту миссию!", "startMission", [theMission.id])
 			_i += 1
 		
 		var theSideMissions:Array = GM.main.MS.getAllPossibleSideMissions()
 		if(!theSideMissions.empty()):
-			saynn("[b]=== Side Missions ====[/b]")
+			saynn("[b]=== Побочные миссии ====[/b]")
 			_i = 1
 			for theMission in theSideMissions:
 				sayMissionInfo(theMission)
-				addButton(theMission.getName(), "Start this side mission!", "startMission", [theMission.id])
+				addButton(theMission.getName(), "Начать эту побочную миссию!", "startMission", [theMission.id])
 				_i += 1
 		
-		sayn("[b]Stats[/b]")
+		sayn("[b]Статы[/b]")
 		var theStats:Array = GM.main.MS.getMissionStats()
 		saynn(Util.join(theStats, "\n"))
 	
 	if(state == "history_menu" || state == "replay_menu"):
 		var _isReplay:bool = (state == "replay_menu")
-		addButton("Back", "Go back to the previous menu", "")
-		saynn("[b]=== History ====[/b]")
+		addButton("Назад", "Назад в предыдущее меню", "")
+		saynn("[b]=== История ====[/b]")
 		
 		var theMainMissions:Array = GM.main.MS.getAllCompletedMainMissions()
 		#if(theMainMissions.empty()):
-		#	saynn("No missions left! Wait until the developer makes more..")
+		#	saynn("Миссий больше нет! Ждите, пока разработчик добавит новые..")
 		
 		var _i:int = 1
 		for theMission in theMainMissions:
 			sayMissionInfo(theMission, true)
 			if(_isReplay):
-				addButton(theMission.getName(), "Start this mission!", "replayMission", [theMission.id])
+				addButton(theMission.getName(), "Начать эту миссию!", "replayMission", [theMission.id])
 			_i += 1
 		
 		var theSideMissions:Array = GM.main.MS.getAllCompletedSideMissions()
 		if(!theSideMissions.empty()):
-			saynn("[b]=== Side Missions ====[/b]")
+			saynn("[b]=== Побочные миссии ====[/b]")
 			_i = 1
 			for theMission in theSideMissions:
 				sayMissionInfo(theMission, true)
 				if(_isReplay):
-					addButton(theMission.getName(), "Start this side mission!", "replayMission", [theMission.id])
+					addButton(theMission.getName(), "Начать эту побочную миссию!", "replayMission", [theMission.id])
 				_i += 1
 		
 		if(!_isReplay):
-			addButton("Replay mission", "Choose which mission you want to replay", "replay_menu")
+			addButton("Переиграть миссию", "Выберите миссию, которую хотите переиграть", "replay_menu")
 	
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

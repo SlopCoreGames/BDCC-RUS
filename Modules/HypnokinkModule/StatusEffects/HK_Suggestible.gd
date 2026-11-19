@@ -60,11 +60,11 @@ func getEffectName():
 func getEffectDesc():
 	var text
 	if(!isHypnotized()):
-		text = "You are vulnerable to suggestion."
+		text = "Вы уязвимы к внушению."
 	elif(!isInTrance()):
-		text = "You are hypnotized."
+		text = "Вы загипнотизированы."
 	else:
-		text = "You are fully in trance!"
+		text = "Вы в глубоком трансе!"
 		
 	return text + "\n\n("+str(ceil(stacks))+"%)"
 

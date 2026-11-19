@@ -13,202 +13,202 @@ func _run():
 		didSave = !getFlag("JackiModule.Jacki_StocksPCLostFight", false)
 		playAnimation(StageScene.Solo, "kneel", {pc="jacki"})
 		if (didFuck):
-			saynn("Huh. You look around and suddenly your gaze finds a familiar wolfie. The one that you.. had fun with.. before.")
+			saynn("Хм. Ты оглядываешься по сторонам и вдруг замечаешь знакомую волчицу. Ту самую, с которой ты... повеселился... раньше.")
 
-			saynn("Her name was.. Jacki.. wasn't it? Eh, it doesn't matter much. This time she is looking way less.. constrained.. She is just sitting on one of the yoga mats, her eyes closed. Might as well say hi to her and see her reaction.")
+			saynn("Её звали... Джеки... кажется? Да хрен с ним, неважно. На этот раз она выглядит куда менее... скованной... Она просто сидит на одном из ковриков для йоги с закрытыми глазами. Можно, пожалуй, поздороваться и посмотреть на её реакцию.")
 
 		elif (didSave):
-			saynn("Huh. You look around and suddenly your gaze finds a familiar wolfie. The one that you managed to save from some hungry inmates!")
+			saynn("Хм. Ты оглядываешься по сторонам и вдруг замечаешь знакомую волчицу. Ту самую, которую тебе удалось спасти от голодных заключённых!")
 
-			saynn("Her name was.. Jacki.. wasn't it? Yeah, it must be. She is just sitting on one of the yoga mats, her eyes closed. Might as well check on her and see if she is alright.")
+			saynn("Её звали... Джеки... вроде бы? Да, должно быть так. Она просто сидит на одном из ковриков для йоги с закрытыми глазами. Можно, пожалуй, подойти и проверить, всё ли с ней в порядке.")
 
 		else:
-			saynn("Huh. You look around and suddenly your gaze finds a familiar wolfie. The one that you tried to save.. but couldn't quite do it. Oh well, can't save them all, right?")
+			saynn("Хм. Ты оглядываешься по сторонам и вдруг замечаешь знакомую волчицу. Ту самую, которую ты пытался спасти... но так и не смог. Ну что ж, всех не спасешь, верно?")
 
-			saynn("Her name was.. Jacki.. wasn't it? Yeah, it must be. She is just sitting on one of the yoga mats, her eyes closed. Might as well check on her and see if she is alright.")
+			saynn("Её звали... Джеки... вроде бы? Да, должно быть так. Она просто сидит на одном из ковриков для йоги с закрытыми глазами. Можно, пожалуй, подойти и проверить, всё ли с ней в порядке.")
 
-		addButton("Say Hi", "Talk with the wolfie", "say_hi")
+		addButton("Поздороваться", "Поговорить с волчицей", "say_hi")
 	if(state == "say_hi"):
 		playAnimation(StageScene.Duo, "stand", {npc="jacki", npcAction="kneel"})
 		if (didFuck):
-			saynn("You walk up to her and shake her shoulder. Wolfie instantly jerks to the side, spooked by your sudden gesture.")
+			saynn("Ты подходишь к ней и трясешь за плечо. Волчица мгновенно дергается в сторону, испуганная твоим внезапным жестом.")
 
-			saynn("[say=pc]Well, hello there.[/say]")
+			saynn("[say=pc]Ну, привет.[/say]")
 
-			saynn("She opens her eyes wide.. and then frowns.")
+			saynn("Она широко распахивает глаза... а затем хмурится.")
 
-			saynn("[say=jacki]It's you.[/say]")
+			saynn("[say=jacki]Это ты.[/say]")
 
-			saynn("[say=pc]Aw, you sound disappointed.[/say]")
+			saynn("[say=pc]Оу, по твоему голосу слышно, что ты разочарован.[/say]")
 
-			saynn("She shows off her canine fangs. The wolfie can certainly.. bite.")
+			saynn("Она демонстрирует свои клыки. Эта волчица определенно может... укусить.")
 
-			saynn("[say=jacki]Why wouldn't I be? You fucked me.[/say]")
+			saynn("[say=jacki]А почему бы и нет? Ты же меня трахнул.[/say]")
 
-			saynn("You can't deny that it's a fair point.")
+			saynn("С этим трудно спорить — аргумент весомый.")
 
-			addButton("Threats", "Let the wolfie know where her place is", "do_threat")
-			addButton("Apology", "Try to smooth it out", "do_apology")
+			addButton("Угрозы", "Показать волчице, где её место", "do_threat")
+			addButton("Извинение", "Попытаться сгладить углы", "do_apology")
 		elif (didSave):
-			saynn("You walk up to her, careful not to scare her away.")
+			saynn("Ты подходишь к ней, стараясь не спугнуть.")
 
-			saynn("[say=pc]Hey, it's me.[/say]")
+			saynn("[say=pc]Эй, это я.[/say]")
 
-			saynn("Jacki shivers when she hears someone's voice, her tail puffing up. But then she opens her eyes and.. calms down.")
+			saynn("Услышав чей-то голос, Джеки вздрагивает, а её хвост распушается. Но затем она открывает глаза и... успокаивается.")
 
-			saynn("[say=jacki]Oh. Heya.[/say]")
+			saynn("[say=jacki]О. Привет.[/say]")
 
-			saynn("[say=pc]How are you doing?[/say]")
+			saynn("[say=pc]Как ты?[/say]")
 
-			saynn("Wolfie shrugs.")
+			saynn("Вулфи пожимает плечами.")
 
-			saynn("[say=jacki]I'm okay, thank you. What about you?[/say]")
+			saynn("[say=jacki]У меня всё нормально, спасибо. А у тебя?[/say]")
 
-			saynn("Looks like she is still a little jumpy after that incident.")
+			saynn("Похоже, после того инцидента она всё ещё немного дёрганая.")
 
-			addButton("I'm fine", "Say that you're okay", "say_okay")
-			addButton("I'm horny", "Say that you are quite horny", "say_horny")
+			addButton("Я в порядке", "Сказать, что ты в порядке", "say_okay")
+			addButton("Я возбуждена", "Скажи, что ты чертовски возбуждена", "say_horny")
 		else:
-			saynn("You walk up to her, keeping a fair amount of distance to not scare her away.")
+			saynn("Ты подходишь к ней, соблюдая приличную дистанцию, чтобы не спугнуть.")
 
-			saynn("[say=pc]Hey..[/say]")
+			saynn("[say=pc]Эй..[/say]")
 
-			saynn("Jacki shivers when she hears someone's voice, her tail puffing up. But then she opens her eyes and.. calms down somewhat.")
+			saynn("Джеки вздрагивает, услышав чей-то голос, её хвост распушается. Но затем она открывает глаза и... немного успокаивается.")
 
-			saynn("[say=jacki]Oh. Hi.[/say]")
+			saynn("[say=jacki]О. Привет.[/say]")
 
-			saynn("She seems quite cold to you.")
+			saynn("Она кажется довольно холодной по отношению к тебе.")
 
-			saynn("[say=pc]About last time..[/say]")
+			saynn("[say=pc]Насчет прошлого раза..[/say]")
 
-			saynn("[say=jacki]You did your best, I know. It was just.. not quite enough to save me.[/say]")
+			saynn("[say=jacki]Ты сделал всё, что мог, я знаю. Просто.. этого оказалось недостаточно, чтобы спасти меня.[/say]")
 
-			saynn("That was.. quite direct. Her words make you feel somewhat guilty. But was it even your fault though?")
+			saynn("Это было... довольно прямолинейно. Её слова заставляют тебя почувствовать вину. Но была ли это вообще твоя вина?")
 
-			addButton("Apologize", "Say that you're sorry about it", "say_sorry")
-			addButton("Her fault", "Say that she got herself into that situation", "say_herfault")
+			addButton("Принести извинения", "Скажи, что тебе жаль", "say_sorry")
+			addButton("Её вина", "Скажи, что она сама в это вляпалась", "say_herfault")
 	if(state == "do_threat"):
 		setFlag("JackiModule.jackiAnger", 0.7)
-		saynn("You chuckle softly.")
+		saynn("Ты тихо посмеиваешься.")
 
-		saynn("[say=pc]And I would have done it again. That ass deserves to be used.[/say]")
+		saynn("[say=pc]И я бы сделала это снова. Эта задница просто создана для того, чтобы её использовали.[/say]")
 
-		saynn("Jacki squints and growls at you. She clearly isn't happy about your actions.")
+		saynn("Джеки прищуривается и рычит на тебя. Очевидно, твои действия ей совсем не пришлись по душе.")
 
-		saynn("As you try to reach your hand out and pat her, she snarls at you.")
+		saynn("Когда ты пытаешься протянуть руку, чтобы погладить её, она скалится на тебя.")
 
-		saynn("[say=pc]What? You think your orange uniform will keep you from becoming a slut? Hah.[/say]")
+		saynn("[say=pc]Что? Думаешь, эта оранжевая роба помешает тебе стать шлюхой? Ха![/say]")
 
-		saynn("[say=jacki]Go away already.[/say]")
+		saynn("[say=jacki]Да отвали ты уже.[/say]")
 
-		saynn("You tilt your head slightly and keep eye contact with her for a few seconds. She got the message.")
+		saynn("Ты слегка наклоняешь голову и в течение нескольких секунд не отводишь от неё взгляда. Она поняла намек.")
 
-		saynn("[say=pc]What? You won't let me watch whatever you're doing here?[/say]")
+		saynn("[say=pc]Что? Ты не дашь мне посмотреть, чем ты тут занимаешься?[/say]")
 
-		saynn("[say=jacki]Go. Away.[/say]")
+		saynn("[say=jacki]Свали. Отсюда.[/say]")
 
-		saynn("You look around. Eyes of some inmates are directed towards you, making you feel uneasy. You will make her understand. When the time is right.")
+		saynn("Ты оглядываешься по сторонам. На тебя уставились взгляды некоторых заключенных, отчего на душе становится не по себе. Ты заставишь её всё понять. Когда придёт время.")
 
-		addButton("Step back", "Enough threats", "start_talk")
+		addButton("Отступить назад", "Хватит угроз", "start_talk")
 	if(state == "do_apology"):
 		setFlag("JackiModule.jackiAnger", 0.3)
-		saynn("You lower your head a little and look at the floor.")
+		saynn("Ты слегка опускаешь голову и смотришь в пол.")
 
-		saynn("[say=pc]Well. My bad.[/say]")
+		saynn("[say=pc]Ну... Мой косяк.[/say]")
 
-		saynn("Jacki hears your attempt at an apology.. and huffs.")
+		saynn("Джеки слышит твою попытку извиниться... и фыркает.")
 
-		saynn("[say=jacki]That's all?[/say]")
+		saynn("[say=jacki]И это всё?[/say]")
 
-		saynn("[say=pc]Your ass was just.. too inviting. You know? It's too nice.[/say]")
+		saynn("[say=pc]Твоя задница просто... слишком манящая. Понимаешь? Она слишком классная.[/say]")
 
-		saynn("Your weird compliment confuses the wolfie.")
+		saynn("Твой странный комплимент сбивает волчицу с толку.")
 
-		saynn("[say=pc]Still. I'm sorry.[/say]")
+		saynn("[say=pc]Тише. Прости.[/say]")
 
-		saynn("She sighs.. and still frowns at you. Just a little less than before.")
+		saynn("Она вздыхает... и всё ещё хмурится на тебя. Но уже не так сильно, как раньше.")
 
-		addButton("Step back", "Enough apologies", "start_talk")
+		addButton("Отступить назад", "Хватит извиняться.", "start_talk")
 	if(state == "say_okay"):
 		setFlag("JackiModule.jackiAnger", -0.2)
-		saynn("[say=pc]I'm doing fine. Was just checking if you're alright.[/say]")
+		saynn("[say=pc]У меня всё в порядке. Просто хотел проверить, как ты.[/say]")
 
-		saynn("Jacki offers you a small kind smile.")
+		saynn("Джеки одаривает тебя слабой, доброй улыбкой.")
 
-		saynn("[say=jacki]Yeah. Just preparing to do some yoga.[/say]")
+		saynn("[say=jacki]Да. Просто собираюсь заняться йогой.[/say]")
 
-		saynn("You nod and prepare to leave. But Jacki stops you.")
+		saynn("Ты киваешь и собираешься уходить, но Джеки останавливает тебя.")
 
-		saynn("[say=jacki]You can watch if you want.[/say]")
+		saynn("[say=jacki]Можешь посмотреть, если хочешь.[/say]")
 
-		saynn("Huh. Being kind to her did help her to open up somewhat it seems.")
+		saynn("Хм. Похоже, доброта к ней действительно помогла ей немного раскрыться.")
 
-		addButton("Stay", "See what you can do", "start_talk")
+		addButton("Остаться", "Посмотрим, на что ты способен", "start_talk")
 	if(state == "say_horny"):
 		setFlag("JackiModule.jackiAnger", 0.3)
-		saynn("[say=pc]Yeah, I'm okay too. Just.. horny.. you know?[/say]")
+		saynn("[say=pc]Да, у меня тоже всё норм. Просто... возбуждена... понимаешь?[/say]")
 
-		saynn("Jacki tilts her head and frowns while looking at you.")
+		saynn("Джеки наклоняет голову и хмурится, глядя на тебя.")
 
-		saynn("[say=pc]Do you still have your pussy stitched up? Just curious.[/say]")
+		saynn("[say=pc]У тебя там всё ещё киска зашита? Просто любопытно.[/say]")
 
-		saynn("Oops, that made her growl at you. Looks like the answer is probably yes.")
+		saynn("Ой, от этого она на тебя зарычала. Похоже, ответ скорее «да».")
 
-		saynn("[say=pc]What?[/say]")
+		saynn("[say=pc]Что?[/say]")
 
-		saynn("[say=jacki]I'm not a slut. Go away.[/say]")
+		saynn("[say=jacki]Я не шлюха. Отвали.[/say]")
 
-		saynn("Oh well. She is not a slut right now, Jacki is right on that one.")
+		saynn("Ну что ж. Прямо сейчас она не шлюха, и в этом Джеки права.")
 
-		addButton("Step back", "Enough talking", "start_talk")
+		addButton("Отступить назад", "Хватит болтать", "start_talk")
 	if(state == "say_sorry"):
 		setFlag("JackiModule.jackiAnger", -0.1)
-		saynn("[say=pc]Yeah. Sorry for that. I understand if you would want me to leave.[/say]")
+		saynn("[say=pc]Да. Прости за это. Я пойму, если захочешь, чтобы я ушла.[/say]")
 
-		saynn("You turn around and prepare to leave.. But Jacki stops you.")
+		saynn("Ты разворачиваешься, собираясь уйти... Но Джеки останавливает тебя.")
 
-		saynn("[say=jacki]It's okay. I'm sorry too. Went a little too hard on you.[/say]")
+		saynn("[say=jacki]Всё в порядке. Я тоже прошу прощения. Немного перегнула палку.[/say]")
 
-		saynn("You offer her an understanding smile.")
+		saynn("Ты одариваешь её понимающей улыбкой.")
 
-		saynn("[say=pc]Whatcha doing?[/say]")
+		saynn("[say=pc]Чем занимаешься?[/say]")
 
-		saynn("Jacki looks at herself.")
+		saynn("Джеки разглядывает себя.")
 
-		saynn("[say=jacki]Preparing to do some yoga. You're gonna watch?[/say]")
+		saynn("[say=jacki]Собираюсь заняться йогой. Будешь смотреть?[/say]")
 
-		saynn("[say=pc]I don't know.[/say]")
+		saynn("[say=pc]Даже не знаю.[/say]")
 
-		saynn("Jacki smiles.")
+		saynn("Джеки улыбается.")
 
-		saynn("[say=jacki]I'm not hiding.[/say]")
+		saynn("[say=jacki]Я не прячусь.[/say]")
 
-		saynn("Well, fair enough.")
+		saynn("Ну, справедливо.")
 
-		addButton("Stay", "Enough apologizing", "start_talk")
+		addButton("Остаться", "Хватит извиняться.", "start_talk")
 	if(state == "say_herfault"):
 		setFlag("JackiModule.jackiAnger", 0.3)
-		saynn("[say=pc]Well.. It's kinda your fault though, isn't it?[/say]")
+		saynn("[say=pc]Ну... вообще-то это в какой-то степени твоя вина, разве нет?[/say]")
 
-		saynn("Jacki gets caught a little off guard by your sudden accusation.")
+		saynn("Джеки немного теряется от твоего внезапного обвинения.")
 
-		saynn("[say=jacki]What? What do you mean?[/say]")
+		saynn("[say=jacki]Что? В каком смысле?[/say]")
 
-		saynn("[say=pc]If you didn't pee where you weren't supposed to, all of it wouldn't happen to you.[/say]")
+		saynn("[say=pc]Если бы ты не срала там, где не следует, всего этого бы не случилось.[/say]")
 
-		saynn("Jacki parts her lips but no words come out. She tilts her head.. and then growls instead.")
+		saynn("Джеки приоткрывает губы, но слова не идут. Она наклоняет голову набок... а затем вместо слов издает рычание.")
 
-		saynn("[say=jacki]You mean I should have pissed my pants?[/say]")
+		saynn("[say=jacki]То есть ты хочешь сказать, что мне стоило обосраться в штаны?[/say]")
 
-		saynn("You shrug.")
+		saynn("Ты пожимаешь плечами.")
 
-		saynn("[say=pc]I could have just walked past, you know? But I tried to save you.[/say]")
+		saynn("[say=pc]Я ведь могла просто пройти мимо, понимаешь? Но я попыталась тебя спасти.[/say]")
 
-		saynn("[say=jacki]Yeah, maybe you should have.[/say]")
+		saynn("[say=jacki]Да, пожалуй, так и стоило бы.[/say]")
 
-		saynn("Ouch. She is kinda rude, isn't she? Might be worth teaching her a lesson or two. But her growling makes everyone around look at you. Makes you feel uneasy. Might as well let her calm down.")
+		saynn("Ой. А она довольно грубая, не так ли? Возможно, стоит преподать ей пару уроков. Но из-за её рычания все вокруг начинают пялиться на тебя. От этого становится не по себе. Пожалуй, лучше дать ей остыть.")
 
-		addButton("Step back", "Enough talking", "start_talk")
+		addButton("Отступить назад", "Хватит болтать", "start_talk")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

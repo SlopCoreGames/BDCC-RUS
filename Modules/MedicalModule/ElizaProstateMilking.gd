@@ -12,64 +12,64 @@ func _run():
 	if(state == ""):
 		# (if medium-low)
 		if(GM.pc.getSkillLevel(Skill.Milking) <= 2):
-			saynn("[say=pc]Is it possible to do without touching the cock? Just curious..[/say]")
+			saynn("[say=pc]А можно обойтись без прикосновений к члену? Просто любопытно...[/say]")
 
-			saynn("[say=eliza]Hm? Oh. Yeah, there is a way.[/say]")
+			saynn("[say=eliza]Хм? А, ну да. Есть такой способ.[/say]")
 
 		# (if high milking)
 		else:
-			saynn("[say=pc]I want my prostate milked. It’s the best method by far.[/say]")
+			saynn("[say=pc]Я хочу, чтобы мне подоили простату. Это лучший метод из всех возможных.[/say]")
 
-			saynn("[say=eliza]Can’t say no to that. Let’s not waste any time.[/say]")
+			saynn("[say=eliza]Против такого сложно устоять. Давай не будем терять времени.[/say]")
 
-		saynn("Eliza steps out of the counter and approaches you with a leash in her hand. She clips it to your collar and walks you in. As you traverse the corridors you notice many nurses and other doctors around, some guards too.")
+		saynn("Элиза выходит из-за стойки и подходит к тебе с поводком в руке. Она пристегивает его к твоему ошейнику и ведет за собой. Проходя по коридорам, ты замечаешь вокруг множество медсестер и врачей, а также нескольких охранников.")
 
-		addButton("Follow", "See where she brings you", "follow")
+		addButton("Следовать", "Посмотреть, куда она тебя приведет", "follow")
 
 	if(state == "follow"):
 		aimCamera("med_milkingroom")
 		setLocationName("Milking heaven")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", bodyState={exposedCrotch=true,hard=true}})
 		
-		saynn("She brings you to a room that can only be described as a milking heaven. You notice a huge fluid storage tank and quite a few special milking stalls, not for animals but for humans. Eliza guides you into one of them. The stall itself is just some metal pipes, designed to keep the bull or the cow still, Eliza tied your leash to the stall’s frame.")
+		saynn("Она приводит тебя в комнату, которую можно назвать только райским местом для дойки. Ты замечаешь огромный резервуар для хранения жидкости и немало специальных доильных станков — не для животных, а для людей. Элиза направляет тебя в один из них. Сам станок представляет собой набор металлических труб, предназначенных для того, чтобы держать быка или корову неподвижно; Элиза привязывает твой поводок к раме станка.")
 
 		# (if clothed)
 		if(!GM.pc.isFullyNaked()):
-			saynn("[say=eliza]Let’s get you undressed.[/say]")
+			saynn("[say=eliza]Давай-ка раздевайся.[/say]")
 
-			saynn("She {pc.undressMessageS}. Then she grabs a milk container can and places it just under your {pc.cock}.")
+			saynn("Она {pc.undressMessageS}. Затем она берет емкость для молока и подставляет её прямо под твой {pc.cock}.")
 
 		# (if naked)
 		else:
-			saynn("[say=eliza]You liked being naked, huh. That’s less work for me~.[/say]")
+			saynn("[say=eliza]Тебе нравится быть голышом, да? Значит, мне будет проще~.[/say]")
 
-			saynn("She grabs a milk container can and places it just under your {pc.cock}.")
+			saynn("Она берет емкость для молока и подставляет её прямо под твой {pc.cock}.")
 
 		# (if locked arms)
 		if(GM.pc.hasBlockedHands() || GM.pc.hasBoundArms()):
-			saynn("The doctor was nice enough to remove your restraints for now.")
+			saynn("Доктор была достаточно любезна, чтобы на время снять с тебя ремни.")
 
-		saynn("Then Eliza produces a bottle of lube. She opens it, gets some on her fingers and walks behind you to observe your rear.")
+		saynn("Затем Элиза достает бутылочку лубриканта. Она открывает её, смазывает пальцы и обходит тебя сзади, чтобы рассмотреть твой зад.")
 
-		saynn("[say=eliza]Spread your butt for me, pretty toy~.[/say]")
+		saynn("[say=eliza]Раздвинь булки для меня, моя прелестная игрушка~[/say]")
 
 		# (if low skill)
 		if(GM.pc.getSkillLevel(Skill.Milking) <= 2):
-			saynn("The command is a bit humiliating but you obey, you put your hands on your {pc.masc} buttcheeks and part them, offering Eliza the clear view of your {pc.analStretch} pucker.")
+			saynn("Команда звучит немного унизительно, но ты повинуешься: ты кладешь руки на свои {pc.masc} ягодицы и раздвигаешь их, открывая Элизе четкий вид на свое {pc.analStretch} анусное кольцо.")
 
 		# (if high skill)
 		else:
-			saynn("You eagerly put your hands on your {pc.masc} buttcheeks and part them, giving Eliza a clear view of your {pc.analStretch} pucker.")
+			saynn("Ты с предвкушением кладешь руки на свои {pc.masc} ягодицы и раздвигаешь их, давая Элизе возможность во всех деталях рассмотреть твое {pc.analStretch} анусное кольцо.")
 
-		saynn("Eliza gently pushes on your back to make you lean forward and stick your butt out more. She then carefully traces her lubed up digits around your backdoor, they feel cold but the actions arouses you non the less.")
+		saynn("Элиза мягко толкает тебя в спину, заставляя наклониться вперед и сильнее выставить зад. Затем она осторожно обводит смазанными пальцами твой задний проход; пальцы кажутся прохладными, но это лишь сильнее тебя возбуждает.")
 
-		saynn("[say=eliza]Remember to not hold back, the more passionate you are the better the final product is~[/say]")
+		saynn("[say=eliza]Не сдерживайся, чем больше страсти, тем лучше будет конечный результат~[/say]")
 
-		saynn("She applies lube to the outside of your ring but then she sneaks one finger in, having so much lube makes it effortless for her digit to penetrate you. She makes sure you’re all lubed up inside too before pulling her digit out and quickly cleaning her hands. You put your hands on the metal bar before you bend forward and spread your legs more for the doctor.")
+		saynn("Она наносит смазку на внешнюю сторону твоего кольца, а затем незаметно просовывает один палец внутрь — благодаря обилию лубриканта проникновение дается ей без малейших усилий. Она убеждается, что внутри ты тоже хорошо смазан, после чего вынимает палец и быстро вытирает руки. Ты хватаешься за металлическую перекладину, наклоняешься и шире раздвигаешь ноги для доктора.")
 
-		saynn("[say=eliza]I’m ready. Are you?[/say]")
+		saynn("[say=eliza]Я готова. А ты?[/say]")
 
-		addButton("Get milked", "Let’s do this", "get_milked")
+		addButton("Дай себя подоить", "Давай сделаем это", "get_milked")
 
 	if(state == "get_milked"):
 #		playAnimation(StageScene.SexStanding, "tease", {pc="eliza", npc="pc",
@@ -77,85 +77,85 @@ func _run():
 #		})
 		playAnimation(StageScene.Search, "prod", {pc="pc", npc="eliza", bodyState={naked=true, hard=true}})
 		
-		saynn("You look back and nod softly. Eliza smiles back as she pulls out a little glass dildo, it seems to be slightly curved up, its tip has a sphere shape and it also features a convenient handle.")
+		saynn("Ты оглядываешься и мягко киваешь. Элиза улыбается в ответ, доставая маленький стеклянный дилдо; он кажется слегка изогнутым вверх, его кончик имеет сферическую форму, а также снабжен удобной ручкой.")
 
-		saynn("[say=eliza]This will be plenty for you, don’t worry~[/say]")
+		saynn("[say=eliza]Этого тебе будет вполне достаточно, не переживай~[/say]")
 
-		saynn("The doctor walks up closer to you, she stands slightly to the side from you, her right hand holds the dildo and guides it down to your {pc.masc} butt. She begins to gently prod on your ring, seeing how easy it will give in.")
+		saynn("Доктор подходит ближе, вставая чуть сбоку от тебя; в правой руке она держит дилдо и направляет его к твоей {pc.masc} заднице. Она начинает осторожно прощупывать твое кольцо, проверяя, насколько легко оно поддастся.")
 
-		saynn("Seems like the lube helped a lot, the tip of the dildo stretches your rear hole with ease. You can’t help but to make a little noise of pleasure, your {pc.cock} hardens from so much teasing and anticipation, a drop of precum can be seen on its tip.")
+		saynn("Похоже, смазка очень помогла: кончик дилдо с легкостью растягивает твое заднее отверстие. Ты невольно издаешь тихий звук удовольствия; твой {pc.cock} твердеет от такого дразнения и предвкушения, а на его кончике виднеется капля предэякулята.")
 
-		saynn("Eliza gently wiggles the toy inside you, she rotates it so it curves down and begins to slowly move it back and forth, searching for your pleasure button. It didn’t take too long, as soon as she stumbles upon something that feels different she applies more pressure to it which is met with you arching your back and producing another little moan.")
+		saynn("Элиза осторожно шевелит игрушкой внутри тебя, вращая её так, чтобы она изогнулась вниз, и начинает медленно двигать ею вперед-назад, нащупывая твою точку удовольствия. Это не заняло много времени: как только она натыкается на что-то особенное, она усиливает нажим, отчего ты выгибаешь спину и издаешь очередной тихий стон.")
 
-		saynn("[say=eliza]Oh yeah, there we go~. Feels good, doesn’t it?[/say]")
+		saynn("[say=eliza]О да, вот так~. Приятно, правда?[/say]")
 
 		# (if low)
 		if(GM.pc.getSkillLevel(Skill.Milking) <= 2):
-			saynn("[say=pc]Yes..[/say]")
+			saynn("[say=pc]Да..[/say]")
 
 		# (high)
 		else:
-			saynn("[say=pc]Please don’t stop until I can’t take it anymore. And then some..[/say]")
+			saynn("[say=pc]Пожалуйста, не останавливайся, пока я не буду на пределе. И даже чуть дольше..[/say]")
 
-		saynn("The doctor chuckles softly and gets a better grip on the dildo, she begins to slide it inside you at a modest pace but making sure to hit the same spot again and again, pounding away at your prostate. It only takes some time before your cock starts to leak some white transparent fluid. She hits a very sensitive spot and it feels so arousing, your prostate enlarges a bit and it constantly produces more of that milky fluid that then gets squeezed out with the dildo. And all of it gets collected.")
+		saynn("Доктор тихо посмеивается и перехватывает дилдо поудобнее; она начинает вводить его в тебя в умеренном темпе, но следит за тем, чтобы раз за разом попадать в одну и ту же точку, методично вколачиваясь в твою простату. Проходит совсем немного времени, и из твоего члена начинает сочиться прозрачно-белая жидкость. Она попадает в самую чувствительную точку, и это ощущается настолько возбуждающе, что твоя простата слегка увеличивается и начинает непрерывно вырабатывать всё больше этой молочной жидкости, которую затем выжимает дилдо. И всё это собирается в емкость.")
 
-		saynn("She takes it slow as not to hurt you but fuck it feels good, your whole body starts to shiver, a wave after wave of warmess washes over you, lusty moans begin to escape from your lips. Eliza sees you like this bites her lip, her free hand runs over the curves of your {pc.thick} {pc.masc} body while milking you dry with the other.")
+		saynn("Она действует медленно, чтобы не причинить тебе боли, но, черт возьми, как же это приятно! Всё твоё тело начинает дрожать, волна за волной тепла накрывает тебя, а с губ начинают срываться похотливые стоны. Элиза, видя тебя в таком состоянии, прикусывает губу; её свободная рука скользит по изгибам твоего {pc.thick} {pc.masc} тела, пока другая выжимает из тебя всё до последней капли.")
 
-		saynn("She slowly picks up the pace, the dildo hammers at your p-spot with little mercy, the rare leaks are now an almost constant weak stream, the fluid level of the milk container slowly raises. Eliza didn’t touch your {pc.cock} once but you feel something building up, a pleasurable feeling that is so hard to resist. You pant and moan way more often, your legs want to close but you fight that, you stand still, your anus stuffed, hands on the bar, so you can be milked as efficiently as possible.")
+		saynn("Она постепенно ускоряется, дилдо безжалостно долбит в твою точку P; редкие капли теперь превратились в почти непрерывную слабую струйку, и уровень жидкости в контейнере медленно растет. Элиза ни разу не коснулась твоего {pc.cock}, но ты чувствуешь, как внутри что-то нарастает — это чувство наслаждения, перед которым так трудно устоять. Ты тяжело дышишь и стонешь всё чаще; ноги так и норовят свести вместе, но ты борешься с этим желанием, замирая с набитым анусом и руками на перекладине, чтобы тебя могли подоить максимально эффективно.")
 
-		addButton("Give in completely", "Be an obedient little bull for Eliza", "give_in_completely")
+		addButton("Сдаться полностью", "Будь послушным маленьким бычком для Элизы", "give_in_completely")
 
 	if(state == "give_in_completely"):
 		playAnimation(StageScene.Search, "prodfast", {pc="pc", npc="eliza", pcCum=true, bodyState={naked=true, hard=true}})
 		
-		saynn("Your little prostate becomes hard as a rock and the doctor feels it, she doesn’t offer you any escapes now. Your {pc.cock} throbs and pulsates, you feel more of those warm pleasure waves taking over your body, making you dizzy. Eliza suddenly puts her free hand just above your collar, she grabs your neck and pulls you up slightly, her digits apply a bit of pleasure, you can only notice her cunning smile as she keeps milking you.")
+		saynn("Твоя маленькая простата становится твердой как камень, и доктор это чувствует; теперь она не даст тебе ни единого шанса на спасение. Твой {pc.cock} пульсирует и дергается, ты чувствуешь, как новые волны теплого наслаждения захлестывают твое тело, заставляя голову идти кругом. Элиза внезапно кладет свободную руку тебе чуть выше воротника, хватает за шею и слегка приподнимает тебя; ее пальцы доставляют приятное давление, и ты успеваешь лишь заметить ее хитрую улыбку, пока она продолжает тебя доить.")
 
-		saynn("[say=eliza]Are you a submissive little slut.[/say]")
+		saynn("[say=eliza]Ты ведь маленькая покорная шлюшка, да?[/say]")
 
-		saynn("[say=pc]Y-yes!..[/say]")
+		saynn("[say=pc]Д-да!..[/say]")
 
-		saynn("[say=eliza]Say it.[/say]")
+		saynn("[say=eliza]Скажи это.[/say]")
 
-		saynn("[say=pc]I’m a subby l-little slut..[/say]")
+		saynn("[say=pc]Я маленькая п-покорная шлюшка..[/say]")
 
-		saynn("[say=eliza]Are you close?[/say]")
+		saynn("[say=eliza]Ты уже близко?[/say]")
 
 		if(GM.pc.isWearingChastityCage()):
-			saynn("The pressure in your chastity cage keeps building up, you are being constantly edged, you feel like you only need a bit more to go over the peak. And it feels so good.")
+			saynn("Давление в твоей клетке целомудрия продолжает нарастать; тебя постоянно доводят до грани, и кажется, что осталось всего лишь чуть-чуть, чтобы достичь пика. И это чертовски приятно.")
 		else:
-			saynn("The pressure in your cock keeps building up, you are being constantly edged, you feel like you only need a bit more to go over the peak. And it feels so good.")
+			saynn("Давление в твоем члене продолжает нарастать; тебя постоянно доводят до грани, и кажется, что осталось всего лишь чуть-чуть, чтобы достичь пика. И это чертовски приятно.")
 
-		saynn("[say=pc]Y-yes.. very.. p-please..[/say]")
+		saynn("[say=pc]Д-да.. очень.. п-пожалуйста..[/say]")
 
-		saynn("She now also keeps the pressure on your neck. You really want it. Right now your mind has only one thought, to cum from this. To cum from being fucked with this little glass dildo.")
+		saynn("Теперь она также продолжает давить тебе на шею. Ты этого безумно хочешь. Сейчас в твоей голове лишь одна мысль — кончить от всего этого. Кончить от того, как тебя трахают этим маленьким стеклянным дилдо.")
 
-		saynn("[say=eliza]Well then cum for me, little slut.[/say]")
+		saynn("[say=eliza]Ну же, кончай для меня, маленькая сучка.[/say]")
 
-		saynn("She pounds at your prostate mercilessly, it only takes a few more seconds after hearing the permission for you to suddenly cum. Your whole body starts to shiver and shake uncontrollably, your {pc.cock} shooting a wave after wave of thick {pc.cum} as it throbs, all of it directly into the container. You moan like a slut, your legs really want to give, the only things keeping you up are the dildo in your butt and doctor’s hand. It overwhelms you, your climax doesn’t want to end, you keep trashing against everything but Eliza keeps you still, dildo pounding at your poor prostate.")
+		saynn("Она беспощадно долбит в твою простату; стоит ей услышать разрешение, как проходит всего пара секунд, и ты внезапно кончаешь. Всё твоё тело начинает неудержимо дрожать и колотиться, а твоя {pc.cock} выпускает волну за волной густой {pc.cum}, пульсируя прямо в контейнер. Ты стонешь как последняя шлюха, ноги буквально подкашиваются, и единственное, что удерживает тебя на ногах — это дилдо в заднице и рука доктора. Тебя накрывает с головой, оргазм никак не хочет заканчиваться; ты продолжаешь дёргаться во все стороны, но Элиза удерживает тебя на месте, продолжая вколачивать дилдо в твою бедную простату.")
 
-		saynn("[say=eliza]You think that’s it, huh~[/say]")
+		saynn("[say=eliza]Думал, на этом всё, да?~[/say]")
 
-		saynn("You barely understood her, it only takes you like half a minute before the feeling returns and you suddenly cum again. Your balls get quickly drained by her, many times in a row, your cock squirts more and more of your {pc.cum}. Your breathing is heavy, body exhausted, mind is somewhere else.")
+		saynn("Ты едва успел её понять — проходит всего полминуты, как чувство возвращается, и ты внезапно кончаешь снова. Она быстро опустошает твои яйца, раз за разом, и твой член выстреливает всё бóльшими порциями твоей {pc.cum}. Дыхание тяжёлое, тело измождено, а разум где-то далеко.")
 
-		saynn("She repeats the process a few times, bringing you to the edge and letting you cum, making sure that you’re completely drained. She only stops when she notices that your cock is not leaking anything anymore. She finally pulls out the dildo out of your cute used anus and puts it away.")
+		saynn("Она повторяет процесс несколько раз, доводя тебя до самого края и позволяя кончить, следя за тем, чтобы ты полностью опустел. Она останавливается только тогда, когда замечает, что из твоего члена больше ничего не течёт. Наконец она вынимает дилдо из твоего милого, использованного ануса и убирает его.")
 
-		saynn("Fuck…")
+		saynn("Блядь...")
 
-		saynn("You feel.. satisfied..")
+		saynn("Ты чувствуешь... удовлетворение...")
 
-		saynn("Eliza gives you some time to regain your consciousness and breathing. She takes a look inside the container and then puts a lid on it.")
+		saynn("Элиза даёт тебе немного времени, чтобы прийти в себя и восстановить дыхание. Она заглядывает внутрь контейнера, а затем закрывает его крышкой.")
 
-		saynn("[say=eliza]Not bad~. I think it was worth the effort.[/say]")
+		saynn("[say=eliza]Неплохо~. Думаю, это стоило затраченных усилий.[/say]")
 
-		saynn("[say=pc]m-mhm..[/say]")
+		saynn("[say=pc]м-мхм..[/say]")
 
-		saynn("She grabs your leash and tugs you away from the stalls. You can barely walk.")
+		saynn("Она хватает тебя за поводок и тащит прочь от стойл. Ты едва переставляешь ноги.")
 
 		# (if clothed)
 		if(!GM.pc.isFullyNaked()):
-			saynn("She helps you to put your clothes back on.")
+			saynn("Она помогает тебе снова одеться.")
 
-		addButton("Follow", "Wow", "follow1")
+		addButton("Следовать", "Ого", "follow1")
 
 	if(state == "follow1"):
 		aimCamera("med_nearmilking")
@@ -163,12 +163,12 @@ func _run():
 		GM.pc.setLocation("med_nearmilking")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		
-		saynn("Eliza brings you out into the corridor. She unclips the leash and sends you off.")
+		saynn("Элиза выводит тебя в коридор. Она отстегивает поводок и отправляет тебя восвояси.")
 
-		saynn("[say=eliza]Hope you can find the exit~. I need to do some stuff. Come back again soon~[/say]")
+		saynn("[say=eliza]Надеюсь, ты найдешь выход~. Мне нужно кое-чем заняться. Заходи еще поскорее~[/say]")
 
 		# (scene end)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 		
 
 

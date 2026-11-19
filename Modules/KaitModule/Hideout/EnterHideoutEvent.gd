@@ -21,12 +21,12 @@ func run(_triggerID, _args):
 	
 	if(theRoomID == "hideout_enter"):
 		if(isDoingRec):
-			addDisabledButton("Exit hideout", "Can't exit the hideout until you complete the recruitment!")
+			addDisabledButton("Выйти из убежища", "Нельзя выйти из убежища, пока не завершишь вербовку!")
 		else:
-			addButton("Exit hideout", "Exit your hideout!", "go", ["fight_announcer"])
-			addButton("Exit arena", "Exit your hideout and then also exit the arena! This is faster.", "go", ["gym_secret"])
+			addButton("Выйти из убежища", "Покинуть убежище!", "go", ["fight_announcer"])
+			addButton("Выйти из арены", "Выйти из убежища, а затем и из арены! Так будет быстрее.", "go", ["gym_secret"])
 	elif(theRoomID == "fight_announcer" || theRoomID == "gym_secret"):
-		addButton("Hideout", "Enter the hideout", "go", ["hideout_enter"])
+		addButton("Убежище", "Войти в убежище", "go", ["hideout_enter"])
 	
 func getPriority():
 	return 0

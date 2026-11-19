@@ -7,62 +7,62 @@ func _run():
 	if(state == ""):
 		addCharacter("kait")
 		playAnimation(StageScene.Duo, "stand", {npc="kait"})
-		saynn("Not that much time passes before you get approached by another feline. This one.. is much less colorful and weird.")
+		saynn("Проходит совсем немного времени, прежде чем к тебе подходит другая кошка. Эта... выглядит куда менее ярко и странно.")
 
-		saynn("[say=kait]Hey, you![/say]")
+		saynn("[say=kait]Эй, ты![/say]")
 
-		saynn("A swift little snow leopard runs up to you.")
+		saynn("К тебе подбегает шустрая маленькая снежная леопардиха.")
 		
 		if(getFlag("TaviModule.Tavi_RefusedToSubmit")):
-			saynn("[say=pc]Don't tell me you want me to submit too. I got enough of that already.[/say]")
+			saynn("[say=pc]Только не говори, что ты хочешь, чтобы и я подчинилась. С меня хватит и того, что было раньше.[/say]")
 		else:
-			saynn("[say=pc]Don't tell me you want me to submit too. I don't wanna break another cat.[/say]")
+			saynn("[say=pc]Только не говори, что ты хочешь, чтобы и я подчинилась. Не хочу ломать еще одну кошку.[/say]")
 
-		saynn("She offers you a little smile.")
+		saynn("Она слегка тебе улыбается.")
 
 		if(getFlag("TaviModule.Tavi_RefusedToSubmit")):
-			saynn("[say=kait]Nah, I saw what happened back there. You did good, all things considered. You lost but didn't bend the knee.[/say]")
+			saynn("[say=kait]Да нет, я видела, что там произошло. Ты молодец, учитывая обстоятельства. Проиграла, но не склонила колено.[/say]")
 		else:
-			saynn("[say=kait]Nah, quite the opposite in fact. I saw what you did. Great job, really. That bitch deserved it.[/say]")
+			saynn("[say=kait]Да нет, как раз наоборот. Я видела, что ты сделала. Отличная работа, правда. Эта сучка это заслужила.[/say]")
 
-		saynn("At least she doesn't seem to be hostile.")
+		saynn("По крайней мере, она не кажется враждебной.")
 
-		saynn("[say=pc]Thanks. Is that all?[/say]")
+		saynn("[say=pc]Спасибо. Это всё?[/say]")
 
-		saynn("[say=kait]Do you wanna escape this place?[/say]")
+		saynn("[say=kait]Хочешь сбежать из этого места?[/say]")
 
-		saynn("She tugs on her bulky collar. Yours isn't exactly sitting pretty either.")
+		saynn("Она дергает свой массивный ошейник. Твой тоже сидит не слишком удачно.")
 
-		saynn("[say=pc]Show me a person who doesn't.[/say]")
+		saynn("[say=pc]Покажи мне хоть одного человека, который этого не хочет.[/say]")
 
-		saynn("[say=kait]There are many such doormats, trust me. Sadly, escaping this shithole won't be easy.[/say]")
+		saynn("[say=kait]Поверь мне, таких «тряпок» здесь полно. К сожалению, свалить из этой дыры будет непросто.[/say]")
 
-		saynn("You take a quick look around.")
+		saynn("Ты быстро оглядываешься по сторонам.")
 
-		saynn("[say=pc]I've noticed.[/say]")
+		saynn("[say=pc]Я заметила.[/say]")
 
-		saynn("[say=kait]Maybe even impossible. But we might have a plan brewing.[/say]")
+		saynn("[say=kait]Может, даже невозможно. Но, возможно, у нас уже зреет план.[/say]")
 
-		saynn("We? That's interesting.")
+		saynn("«Мы»? Это интересно.")
 
-		saynn("She gives you a quick look from toes to the head.")
+		saynn("Она быстро осматривает тебя с ног до головы.")
 
-		saynn("[say=kait]If you're interested, find me in the underground arena.[/say]")
+		saynn("[say=kait]Если тебе интересно, ищи меня на подземной арене.[/say]")
 
-		saynn("[say=pc]Underground arena?[/say]")
+		saynn("[say=pc]На подземной арене?[/say]")
 		
 		if(getFlag("TaviModule.Tavi_RefusedToSubmit")):
-			saynn("[say=kait]It will help you improve your fighting skills. The entrance is hidden somewhere near the gym. If you manage to get in, we can talk more~. Name is Kait by the way.[/say]")
+			saynn("[say=kait]Это поможет тебе подтянуть навыки боя. Вход спрятан где-то рядом со спортзалом. Если получится пробраться внутрь, поговорим подробнее~. Кстати, меня зовут Кейт.[/say]")
 		else:
-			saynn("[say=kait]Well, that will be your first test then. The entrance is hidden somewhere near the gym. If you manage to get in, we can talk more~. Name is Kait by the way.[/say]")
+			saynn("[say=kait]Что ж, тогда это станет твоим первым испытанием. Вход спрятан где-то рядом со спортзалом. Если получится пробраться внутрь, поговорим подробнее~. Кстати, меня зовут Кейт.[/say]")
 
-		saynn("[say=pc]Uh huh.[/say]")
+		saynn("[say=pc]Угу.[/say]")
 
-		saynn("Kait waits to see if you'd say something else.. her paw scritches her cheek.")
+		saynn("Кейт замирает в ожидании, гадая, скажешь ли ты что-нибудь еще... она почесывает лапкой щеку.")
 
-		saynn("Then, after a few seconds, she finally turns around and walks away.")
+		saynn("Спустя несколько секунд она наконец разворачивается и уходит.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

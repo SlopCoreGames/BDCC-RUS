@@ -10,9 +10,9 @@ func registerTriggers(es):
 func run(_triggerID, _args):
 	if(getFlag("KaitModule.joinedTeam") && !getFlag("KaitModule.caughtRahi")):
 		if(_args[0] == "rahi"):
-			addButton("Recruit!", "(Dom route) Try to recruit this cat into your team", "rahiIntro")
+			addButton("Вербовка!", "(Путь Дома) Попытаться завербовать эту кошку в свою команду", "rahiIntro")
 		else:
-			addButton("Recruit!", "(Dom route) Try to recruit Rahi into your team", "rahiSlavery")
+			addButton("Вербовка!", "(Путь Дома) Попытаться завербовать Рахи в свою команду", "rahiSlavery")
 
 func getPriority():
 	return 0

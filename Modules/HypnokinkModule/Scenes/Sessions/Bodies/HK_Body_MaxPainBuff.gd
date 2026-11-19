@@ -11,45 +11,45 @@ func _run():
 		addCharacter("vion")
 		playAnimation(StageScene.Duo, "sit", {npc="vion", npcAction="sit"})
 		
-		saynn("[say=vion]Now, onto the subject of this session. Pain.[/say]")
+		saynn("[say=vion]А теперь перейдем к теме этой сессии. Боль.[/say]")
 
-		saynn("[say=vion]Pain can serve us well. It teaches us to avoid harmful situations. It motivates us to avoid danger. It can be a useful companion... but also an unrelenting, demanding one.[/say]")
+		saynn("[say=vion]Боль может служить нам верой и правдой. Она учит нас избегать вредных ситуаций. Она мотивирует нас держаться подальше от опасности. Она может быть полезным спутником... но спутником неумолимым и требовательным.[/say]")
 		
-		saynn("[say=vion]You've likely had the displeasure of experiencing the collar around your neck. Let us use that memory as an example. When you hear a click, you'll feel an echo of that pain.[/say]")
+		saynn("[say=vion]Скорее всего, ты уже познала на себе все «прелести» ошейника на своей шее. Давай используем это воспоминание в качестве примера. Когда ты услышишь щелчок, ты почувствуешь эхо той боли.[/say]")
 
-		saynn("You tense up and try to burrow deeper into the cushions.")
+		saynn("Ты напрягаешься и пытаешься зарыться поглубже в подушки.")
 
-		saynn("[say=vion]Relax. First we need to get you in the right frame of mind. Imagine a slowly flowing river. A calm mind is like a steady stream. But pain can be a raging torrent, threatening to overflow and flood your thoughts.[/say]")
+		saynn("[say=vion]Расслабься. Сначала нам нужно настроить твой разум. Представь медленно текущую реку. Спокойный разум подобен ровному потоку. Но боль может стать бушующим течением, грозящим выйти из берегов и затопить твои мысли.[/say]")
 
-		saynn("[say=vion]Blocking out the pain is daming the river. For a while that works, but eventually that dam will burst and the accumulated pain hits all at once.[/say]")
+		saynn("[say=vion]Попытка заблокировать боль — это всё равно что строить дамбу на реке. Какое-то время это работает, но в конце концов дамбу прорвет, и накопленная боль обрушится на тебя вся разом.[/say]")
 
-		saynn("[say=vion]Instead, when the torrent of pain pours in, simply endure it. Acknowledge it, and allow it to flow past unimpeded.[/say]")
+		saynn("[say=vion]Вместо этого, когда поток боли хлынет внутрь, просто вытерпи его. Признай его присутствие и позволь ему беспрепятственно протечь мимо.[/say]")
 
-		saynn("Click!")
+		saynn("Щелчок!")
 
-		saynn("You shudder as ghostly electricity races down your back.")
+		saynn("Ты вздрагиваешь, когда призрачный разряд электричества проносится по твоей спине.")
 		
-		saynn("[say=pc]Nngh![/say]")
+		saynn("[say=pc]Нгхх!..[/say]")
 
-		saynn("[say=vion]Take deep breaths. In and out.[/say]")
+		saynn("[say=vion]Дыши глубже. Вдох и выдох.[/say]")
 
-		saynn("Click!")
+		saynn("Щелчок!")
 
-		saynn("You force yourself to not clench your teeth and focus on your breathing.")
+		saynn("Ты заставляешь себя не стискивать зубы и концентрируешься на дыхании.")
 
-		saynn("[say=vion]Acknowledge it. Master it. It is simply information your body gives you. It can't dictate your reaction.[/say]")
+		saynn("[say=vion]Прими это. Овладей этим. Это всего лишь информация, которую дает тебе тело. Оно не может диктовать тебе реакцию.[/say]")
 
-		saynn("Click!")
+		saynn("Щелчок!")
 
-		saynn("You breathe slowly. Imaginary pain stabs at your neck, but its gone as soon as it comes.")
+		saynn("Ты дышишь медленно. Воображаемая боль колет шею, но исчезает так же быстро, как и появляется.")
 
-		saynn("[say=vion]Good {pc.boy}... You're doing well.[/say]")
+		saynn("[say=vion]Хорош {pc.boy}... У тебя отлично получается.[/say]")
 
-		saynn("Click!")
+		saynn("Щелчок!")
 
-		saynn("[say=pc]Mmh...[/say]")
+		saynn("[say=pc]Ммм...[/say]")
 		
-		addButton("Continue", "", "endthescene")
+		addButton("Продолжить", "", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

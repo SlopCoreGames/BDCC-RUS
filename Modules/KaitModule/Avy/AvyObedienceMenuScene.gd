@@ -11,37 +11,37 @@ func _run():
 		aimCameraAndSetLocName("hideout_chill")
 		addCharacter("avy")
 		playAnimation(StageScene.Duo, "stand", {npc="avy"})
-		saynn("You ask Avy to follow you because you wanna do something together. She doesn't seem to mind that.")
+		saynn("Вы просите Эви пойти за вами, потому что хотите заняться чем-то вместе. Похоже, она не против.")
 
-		saynn("The chill room seems good enough for this.")
+		saynn("Комната отдыха кажется подходящим местом для этого.")
 
-		saynn("[say=avy]Yeah?[/say]")
+		saynn("[say=avy]Да?[/say]")
 
 		avyObedience = GM.main.MS.getAvyObedience()
 		if (avyDebug):
 			saynn("avyObedience = 99")
 
-		saynn("Avy's obedience: "+str(avyObedience)+"")
+		saynn("Послушание Эви: "+str(avyObedience)+"")
 
-		addButton("Never mind", "You changed your mind", "never_mind")
+		addButton("Проехали", "Вы передумали", "never_mind")
 		if (avyObedience >= 2):
-			addButton("Light domination", "(Obedience 2+) Try to dominate Avy and see what happens", "light_dom")
+			addButton("Легкое доминирование", "(Послушание 2+) Попробуйте подчинить Эви и посмотреть, что из этого выйдет", "light_dom")
 		if (!getFlag("KaitModule.didAvyDomIntro")):
-			addDisabledButton("Oral sex", "You need to dominate Avy first before doing this!")
+			addDisabledButton("Оральный секс", "Прежде чем это сделать, вам нужно сначала подчинить Эви!")
 		else:
 			if (avyObedience >= 2):
-				addButton("Oral sex", "(Obedience 2+) Dominate Avy further and make her serve as your cock sucker or a pussy licker", "oral_sex")
+				addButton("Оральный секс", "(Послушание 2+) Доминировать над Эви еще сильнее: заставить её сосать твой член или лизать твою киску", "oral_sex")
 			if (avyObedience >= 3):
-				addButton("Prostate milking", "(Obedience 3+) Play with Avy's butt and prostate!", "obey_prostatemilk")
+				addButton("Доение простаты", "(Послушание 3+) Поиграть с задницей и простатой Эви!", "obey_prostatemilk")
 			else:
-				addDisabledButton("Obedience 3+", "Avy's obedience 3 or more required")
+				addDisabledButton("Послушание 3+", "Требуется послушание Эви 3 или выше")
 	if(state == "never_mind"):
 		aimCameraAndSetLocName(GM.pc.getLocation())
-		saynn("[say=pc]I changed my mind.[/say]")
+		saynn("[say=pc]Я передумала.[/say]")
 
-		saynn("Avy shrugs. And so you return back.")
+		saynn("Эви пожимает плечами. И ты возвращаешься назад.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

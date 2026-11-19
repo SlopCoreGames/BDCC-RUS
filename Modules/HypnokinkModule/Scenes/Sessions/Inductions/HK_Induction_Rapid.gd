@@ -11,33 +11,33 @@ func _run():
 		addCharacter("vion")
 		playAnimation(StageScene.Duo, "sit", {npc="vion", npcAction="sit"})
 
-		saynn("[say=vion]I think you've had enough practice by now, {pc.name}. Let's try shortcut this time. Sit down, lean back and close your eyes please.[/say]")
+		saynn("[say=vion]Думаю, к этому моменту ты уже достаточно натренировалась, {pc.name}. Давай в этот раз попробуем срезать путь. Садись, откинься на спинку и закрой глаза, пожалуйста.[/say]")
 
-		saynn("{vion.name} sits opposite you as usual. You close your eyes as instructed.")
+		saynn("{vion.name}, как обычно, садится напротив тебя. Ты закрываешь глаза, как тебе и велели.")
 
-		saynn("[say=vion]Good. Relax, get comfortable. Take a deep breath.[/say]")
+		saynn("[say=vion]Хорошо. Расслабься, устройся поудобнее. Сделай глубокий вдох.[/say]")
 
-		saynn("You breathe in.")
+		saynn("Вы вдыхаете.")
 
-		saynn("[say=vion]Now slowly breathe out.[/say]")
+		saynn("[say=vion]А теперь медленно выдыхай.[/say]")
 
-		saynn("You breathe out.")
+		saynn("Ты выдыхаешь.")
 
-		saynn("[say=vion]Now another deep breath in...[/say]")
+		saynn("[say=vion]А теперь еще один глубокий вдох...[/say]")
 
-		saynn("You breathe in...")
+		saynn("Ты вдыхаешь...")
 
-		saynn("[say=vion]And as you exhale...[/say]")
+		saynn("[say=vion]И на выдохе...[/say]")
 
-		saynn("[say=vion][b]Sleep.[/b][/say]")
+		saynn("[say=vion][b]Сон.[/b][/say]")
 
-		saynn("[say=vion]That's it. [b]Sleep.[/b] Fall deep into hypnosis. [b]Sleep.[/b] Go deeper for me. [b]Sleep.[/b] Even deeper. Let the calm mindlessness wash over you. [b]Sleep.[/b][/say]")
+		saynn("[say=vion]Вот так. [b]Спи.[/b] Погружайся в глубокий гипноз. [b]Спи.[/b] Иди глубже для меня. [b]Спи.[/b] Еще глубже. Позволь спокойному беспамятству накрыть тебя с головой. [b]Спи.[/b][/say]")
 
-		saynn("Sleep...")
+		saynn("Спи...")
 
-		saynn("[say=vion][b]Sleep.[/b][/say]")
+		saynn("[say=vion][b]Сон.[/b][/say]")
 		
-		addButton("Sleep", "", "endthescene")
+		addButton("Спать", "", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

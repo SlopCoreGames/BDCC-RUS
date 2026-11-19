@@ -10,11 +10,11 @@ func _run():
 	if(state == ""):
 		addCharacter("kait")
 		playAnimation(StageScene.Duo, "stand", {npc="kait"})
-		saynn("You approach Kait, the snow leopard. She is standing near the mission board, thinking.")
+		saynn("Вы подходите к Кейт, снежному барсу. Она стоит у доски заданий, погруженная в раздумья.")
 
 		var theUniqieLine:String = getFlag("KaitModule.kaitApproach", "")
 		if (theUniqieLine.empty()):
-			saynn("[say=kait]Hey there.[/say]")
+			saynn("[say=kait]Привет.[/say]")
 
 		else:
 			saynn("[say=kait]"+str(theUniqieLine)+"[/say]")
@@ -22,271 +22,271 @@ func _run():
 			setFlag("KaitModule.kaitApproach", "")
 		kaitLove = GM.main.MS.getKaitLove()
 		kaitObedience = GM.main.MS.getKaitObedience()
-		saynn("Kait's love: "+str(kaitLove)+"\nKait's obedience: "+str(kaitObedience)+"")
+		saynn("Любовь Кейт: "+str(kaitLove)+"\nПослушание Кейт: "+str(kaitObedience)+"")
 
-		addButton("Talk", "Ask her something maybe", "talk_menu")
+		addButton("Поговорить", "Может, о чем-нибудь её спросить?", "talk_menu")
 		if (kaitLove >= 2):
-			addButton("Sex", "See what lewd stuff you can do with Kait", "sex_menu")
+			addButton("Секс", "Посмотреть, какой пошлостью можно заняться с Кейт", "sex_menu")
 		else:
-			addDisabledButton("Sex", "Kait's love towards you must be above 2")
+			addDisabledButton("Секс", "Уровень любви Кейт к вам должен быть выше 2")
 		if (kaitObedience >= 2):
-			addButton("Dominate", "See what you can order Kait to do", "dom_menu")
+			addButton("Доминировать", "Посмотреть, что можно приказать Кейт", "dom_menu")
 		else:
-			addDisabledButton("Dominate", "Kait's obedience must be above 2")
+			addDisabledButton("Доминировать", "Уровень послушания Кейт должен быть выше 2")
 		var _isPreg:bool = getCharacter("kait").isVisiblyPregnant()
 		if(_isPreg):
-			addButton("Pregnancy", "See what you can do with a pregnant Kait", "preg_menu")
+			addButton("Беременность", "Посмотреть, что можно сделать с беременной Кейт", "preg_menu")
 		elif(getFlag("KaitModule.kaitGaveBirths", 0) > 0 && getCharacter("kait").canBeMilked()):
-			addButton("Lactation", "See what you can do with a milky Kait", "preg_menu")
+			addButton("Лактация", "Посмотри, что можно сделать с молочной Кейт", "preg_menu")
 		elif(getFlag("KaitModule.kaitGaveBirths", 0) > 0):
-			addDisabledButton("Pregnancy", "Kait isn't pregnant so you can't do these interactions.")
+			addDisabledButton("Беременность", "Кейт не беременна, так что эти взаимодействия недоступны.")
 		if(kaitLove >= 4 || kaitObedience >= 4):
-			addButton("Feed something", "Feed something to Kait", "feedmenu")
+			addButton("Покормить", "Покормить Кейт", "feedmenu")
 		GM.ES.triggerRun(Trigger.TalkingToNPC, ["kait"])
-		addButton("Leave", "Enough chatting", "endthescene")
+		addButton("Уйти", "Хватит болтать", "endthescene")
 	if(state == "sex_menu"):
-		saynn("What kind of sexual activity do you want to do with Kait?")
+		saynn("Какой вид секса ты хочешь с Кейт?")
 
-		addButton("Back", "You changed your mind", "")
+		addButton("Назад", "Вы передумали", "")
 		if (GM.pc.hasReachablePenis() || GM.pc.hasReachableVagina() || GM.pc.isWearingChastityCage()):
-			addButton("69", "(Love 2+) Lick or suck each other off!", "sex_69")
+			addButton("69", "(Любовь 2+) Лизать или сосать друг друга!", "sex_69")
 		else:
-			addDisabledButton("69", "You need private bits to be able to do 69, sorry :(")
-		addButton("Finger her", "(Love 2+) Make that snep cum just from your fingers!", "sex_fingerher")
+			addDisabledButton("69", "Для секса в позе 69 нужны приватные части тела, сорян :(")
+		addButton("Поласкать её пальцами", "(Любовь 2+) Заставь эту сучку кончить одними лишь пальцами!", "sex_fingerher")
 		if (kaitLove >= 3):
-			addButton("Cowgirl sex", "(Love 3+) See if Kait wants to ride you", "sex_cowgirl")
+			addButton("Секс наездницей", "(Любовь 3+) Проверить, хочет ли Кейт оседлать тебя", "sex_cowgirl")
 		else:
-			addDisabledButton("Love 3+", "Kait's love 3 or more required!")
+			addDisabledButton("Любовь 3+", "Требуется уровень любви Кейт 3 или выше!")
 	if(state == "dom_menu"):
-		saynn("How do you wanna dominate Kait?")
+		saynn("Как именно ты хочешь доминировать над Кейт?")
 
-		addButton("Back", "You changed your mind", "")
-		addButton("Light domination", "(Obedience 2+) Try to dominate Kait and see what happens", "dom_light")
+		addButton("Назад", "Вы передумали", "")
+		addButton("Легкое доминирование", "(Послушание 2+) Попытаться подчинить Кейт и посмотреть, что из этого выйдет", "dom_light")
 		if (!getFlag("KaitModule.didKaitDomIntro")):
-			addDisabledButton("Oral sex", "You need to dominate Kait first before doing this!")
+			addDisabledButton("Оральный секс", "Сначала тебе нужно полностью подчинить Кейт, прежде чем делать это!")
 		else:
-			addButton("Oral sex", "(Obedience 2+) Dominate Kait further and make her serve as your cock sucker or a pussy licker", "oral_sex")
+			addButton("Оральный секс", "(Послушание 2+) Доминировать над Кейт еще сильнее, заставляя её сосать твой член или лизать твою киску", "oral_sex")
 			if (kaitObedience >= 3):
-				addButton("Choke-sex", "(Obedience 3+) Choke Kait while also fucking her pussy!", "obey_chokesex")
+				addButton("Секс с удушением", "(Послушание 3+) Душить Кейт, одновременно трахая её в киску!", "obey_chokesex")
 			else:
-				addDisabledButton("Obedience 3+", "Kait's obedience 3 or more required!")
+				addDisabledButton("Послушание 3+", "Требуется уровень послушания Кейт 3 или выше!")
 	if(state == "talk_menu"):
-		saynn("[say=pc]Can I ask you something?[/say]")
+		saynn("[say=pc]Можно тебя кое о чем спросить?[/say]")
 
-		saynn("Her ears perk.")
+		saynn("Её ушки навостряются.")
 
-		saynn("[say=kait]Shoot. We have all the time in the world.[/say]")
+		saynn("[say=kait]Не спеши. У нас полно времени.[/say]")
 
-		addButton("Back", "Enough chat", "")
-		addButton("Kait", "Ask her to tell about herself", "ask_kait")
-		addButton("Crimes", "Ask her what did she do", "ask_crimes")
-		addButton("Freedom", "Ask her what she is gonna do after", "ask_freedom")
-		addButton("Hideout", "Talk about this hideout", "ask_hideout")
-		addButton("Ans and Avy", "Talk about Ans and Avy", "ask_ans_avy")
+		addButton("Назад", "Хватит болтать", "")
+		addButton("Кейт", "Попросить её рассказать о себе", "ask_kait")
+		addButton("Преступления", "Спросить, чем она занималась", "ask_crimes")
+		addButton("Свобода", "Спросить, что она собирается делать дальше", "ask_freedom")
+		addButton("Убежище", "Поговорить об этом убежище", "ask_hideout")
+		addButton("Анс и Эви", "Поговорить об Ансе и Эви", "ask_ans_avy")
 	if(state == "ask_kait"):
-		saynn("[say=pc]Tell me about yourself. Anything.[/say]")
+		saynn("[say=pc]Расскажи о себе. О чём угодно.[/say]")
 
-		saynn("[say=kait]Well.. I'm Kait, in case you forgot. Got born on a planet that has lots of snow. You probably heard about a few of those.[/say]")
+		saynn("[say=kait]Ну.. Я Кейт, если ты вдруг забыл. Родилась на планете, где полно снега. Наверняка о парочке таких слышал.[/say]")
 
-		saynn("[say=pc]Is it a nice planet?[/say]")
+		saynn("[say=pc]Там красиво?[/say]")
 
-		saynn("[say=kait]Sure. Snow is always nice. It hides all the filth and mud.[/say]")
+		saynn("[say=kait]Конечно. Снег — это всегда хорошо. Он скрывает всю грязь и жижу.[/say]")
 
-		saynn("[say=pc]Is there a lot of filth to hide?[/say]")
+		saynn("[say=pc]Там много грязи, которую нужно скрывать?[/say]")
 
-		saynn("[say=kait]When AlphaCorp came, everything went to shit. So.. yeah.[/say]")
+		saynn("[say=kait]Когда пришла АльфаКорп, всё пошло по пизде. Так что.. да.[/say]")
 
-		saynn("[say=pc]I bet.[/say]")
+		saynn("[say=pc]Могу себе представить.[/say]")
 
-		saynn("[say=kait]AlphaCorp's influence expands non-stop. It's just an empire really. And empires always have to have victories. Otherwise they die.[/say]")
+		saynn("[say=kait]Влияние АльфаКорп расширяется без остановки. Это уже настоящая империя. А империям всегда нужны победы. Иначе они дохнут.[/say]")
 
-		saynn("Probably why there is so much propaganda on TV.")
+		saynn("Наверное, поэтому по телеку столько пропаганды.")
 
-		saynn("[say=kait]That's not even the part that makes me mad. We had a chance! But they divided us. AlphaCorp told us we have some fucking magic artifacts hidden in our mountains somewhere. And some of us believed them.[/say]")
+		saynn("[say=kait]И это даже не то, что меня бесит. У нас же был шанс! Но они нас разделили. АльфаКорп заявила, что где-то в наших горах спрятаны какие-то гребаные магические артефакты. И некоторые из нас им поверили.[/say]")
 
-		saynn("[say=pc]Sounds like a great reason to start a giant mining operation on your planet.[/say]")
+		saynn("[say=pc]Звучит как отличный повод развернуть на твоей планете гигантскую добычу ископаемых.[/say]")
 
-		saynn("[say=kait]And thus, filth.[/say]")
+		saynn("[say=kait]И так — грязь.[/say]")
 
-		saynn("A few seconds of silence.")
+		saynn("Несколько секунд тишины.")
 
-		saynn("[say=pc]But maybe those magic artifacts do actually exist?[/say]")
+		saynn("[say=pc]Но вдруг эти магические артефакты реально существуют?[/say]")
 
-		saynn("She laughs.")
+		saynn("Она смеется.")
 
-		saynn("[say=kait]An apple that can control time? A stone that can turn anything it touches into black gold? A ring that can let you control the will of others? Give me a break, they're just feeding off of people's fetishes. Worse than religion, honestly.[/say]")
+		saynn("[say=kait]Яблоко, управляющее временем? Камень, превращающий всё, к чему прикоснешься, в черное золото? Кольцо, позволяющее подчинять волю других? Да бросьте, они просто паразитируют на людских фетишах. Честно говоря, это даже хуже религии.[/say]")
 
-		saynn("She sighs.")
+		saynn("Она вздыхает.")
 
-		saynn("[say=kait]My parents got brainwashed by it all. And that's when I knew that I had to leave, as fast as I fucking could.[/say]")
+		saynn("[say=kait]Моих родителей этим промыли мозги. И именно тогда я поняла, что должна свалить, причем как можно быстрее, блядь.[/say]")
 
-		saynn("[say=pc]Some dreams do come true.[/say]")
+		saynn("[say=pc]Некоторые мечты всё же сбываются.[/say]")
 
-		saynn("She chuckles but then rolls her eyes.")
+		saynn("Она усмехается, но затем закатывает глаза.")
 
-		saynn("[say=kait]Fuck you. I guess I found one of the artifacts then. Invisible monkey paw.[/say]")
+		saynn("[say=kait]Пошел ты. Значит, один из артефактов я всё-таки нашла. Невидимая обезьянья лапка.[/say]")
 
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
-		saynn("[say=pc]What do you want now?[/say]")
+		saynn("[say=pc]Чего тебе опять?[/say]")
 
-		saynn("[say=kait]Leave. Again. Do as much damage as I can in the process.[/say]")
+		saynn("[say=kait]Уходи. Снова. И постарайся на этот раз посильнее меня задеть.[/say]")
 
-		addButton("Continue", "See what happens next", "talk_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "talk_menu")
 	if(state == "ask_crimes"):
-		saynn("[say=pc]So what did you do to end up in this place of all places?[/say]")
+		saynn("[say=pc]Ну и что ты такого натворила, что оказалась именно в этом месте?[/say]")
 
-		saynn("[say=kait]Stuff. I don't have a sad tear-jerking story I'm afraid.[/say]")
+		saynn("[say=kait]Разное. Боюсь, у меня нет какой-нибудь грустной истории, от которой все бы разрыдались.[/say]")
 
-		saynn("[say=pc]You're lilac for a reason. C'mon, I'm curious.[/say]")
+		saynn("[say=pc]Ты сиреневая не просто так. Ну же, мне же любопытно![/say]")
 
-		saynn("She throws her head back and stares at the ceiling.")
+		saynn("Она запрокидывает голову и уставилась в потолок.")
 
-		saynn("[say=kait]You're the only one who even bothered to ask. Well, I guess Ans also did. He is nice.[/say]")
+		saynn("[say=kait]Ты единственный, кто вообще удосужился спросить. Ну, хотя бы Анс спросил. Он милашка.[/say]")
 
-		saynn("Kait stays quiet, thinking.")
+		saynn("Кейт молчит, погрузившись в свои мысли.")
 
-		saynn("[say=kait]I tried to bribe a guy with my ass. Got it stamped with a 'Unsolicited Breeding' charge instead. The worst part? There was no breeding, we didn't get to it even! Total fucking bullshit.[/say]")
+		saynn("[say=kait]Пыталась подкупить одного типа своей задницей. В итоге вместо взятки получила клеймо «Нежелательное разведение». И что самое паршивое? Никакого разведения не было, мы даже до этого не дошли! Полная, блядь, херня.[/say]")
 
-		saynn("[say=pc]Are you mad because you didn't get bred?[/say]")
+		saynn("[say=pc]Ты злишься из-за того, что тебя не осеменили?[/say]")
 
-		saynn("[say=kait]Ye.. well, no. Pfff. I'm not a slut.[/say]")
+		saynn("[say=kait]Ну... да нет. Пфф. Я не шлюха.[/say]")
 
-		saynn("[say=pc]Why did they put you into this prison specifically?[/say]")
+		saynn("[say=pc]Почему тебя засадили именно в эту тюрьму?[/say]")
 
-		saynn("[say=kait]The guy was some big AlphaCorp dude, I dunno. Probably just wanted to get rid of me. I yap too much and don't suck well enough. Locking me here would ensure I don't come back.[/say]")
+		saynn("[say=kait]Этот тип был каким-то важным хреном из «АльфаКорп», не знаю точно. Наверное, просто хотел от меня избавиться. Я слишком много болтаю и сосу недостаточно хорошо. Запереть меня здесь — верный способ сделать так, чтобы я не вернулась.[/say]")
 
-		saynn("Her whiskers twitch a bit, the corners of her mouth curling downwards, her tail wagging sporadically.")
+		saynn("Её усики слегка подергиваются, уголки рта опускаются, а хвост беспорядочно виляет.")
 
-		saynn("[say=kait]Listen.. This whole system, it's all bullshit on top of bullshit. Everyone does what they wanna do, zero care for others. Corrupt pieces of shit left and right.[/say]")
+		saynn("[say=kait]Слушай... Вся эта система — сплошное дерьмо на дерьме. Каждый делает что хочет, всем плевать на остальных. Повсюду одни коррумпированные куски говна.[/say]")
 
-		saynn("[say=pc]You tried to play by their rules and got burned.[/say]")
+		saynn("[say=pc]Ты пыталась играть по их правилам, и в итоге обжеглась.[/say]")
 
-		saynn("[say=kait]There are no rules. You gotta lick feet of the guy who jerks your chain, that's the only rule.[/say]")
+		saynn("[say=kait]Здесь нет правил. Единственное правило — лизать ноги тому, кто держит тебя на поводке.[/say]")
 
-		saynn("You hear growling.")
+		saynn("Ты слышишь рычание.")
 
-		saynn("[say=kait]This world sucks. I could just sit on my ass and do nothing. But I don't wanna do that.[/say]")
+		saynn("[say=kait]Этот мир — полное дерьмо. Можно было бы просто сидеть на жопе ровно и ничего не делать. Но мне этого не хочется.[/say]")
 
-		saynn("She shows her fangs.")
+		saynn("Она скалится, обнажая клыки.")
 
-		saynn("[say=kait]I will make them lick my feet instead. All of them.[/say]")
+		saynn("[say=kait]Я заставлю их вместо этого лизать мои пятки. Всех до единого.[/say]")
 
-		saynn("Kait seems passionate about it.")
+		saynn("Похоже, Кейт горит этой идеей.")
 
-		saynn("[say=pc]That will be hard.[/say]")
+		saynn("[say=pc]Это будет непросто.[/say]")
 
-		saynn("She shrugs, her expression softens.")
+		saynn("Она пожимает плечами, и выражение её лица смягчается.")
 
-		saynn("[say=kait]We can start with the captain of this shithole.[/say]")
+		saynn("[say=kait]Мы можем начать с капитана этой дыры.[/say]")
 
-		addButton("Continue", "See what happens next", "talk_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "talk_menu")
 	if(state == "ask_freedom"):
-		saynn("[say=pc]What are you gonna do after?[/say]")
+		saynn("[say=pc]И что ты будешь делать потом?[/say]")
 
-		saynn("[say=kait]After what?[/say]")
+		saynn("[say=kait]После чего?[/say]")
 
-		saynn("[say=pc]After you get your freedom.[/say]")
+		saynn("[say=pc]После того как обретешь свободу.[/say]")
 
-		saynn("[say=kait]Live? Like a normal person.[/say]")
+		saynn("[say=kait]Жить? Как обычный человек.[/say]")
 
-		saynn("[say=pc]If you escape, you probably won't be able to live like a normal person anymore.[/say]")
+		saynn("[say=pc]Если ты сбежишь, то вряд ли сможешь жить как обычный человек.[/say]")
 
-		saynn("[say=kait]I know. This world sucks. But it's also huge.[/say]")
+		saynn("[say=kait]Знаю. Этот мир — дерьмо. Но он ещё и огромный.[/say]")
 
-		saynn("She looks to the side.")
+		saynn("Она отводит взгляд в сторону.")
 
-		saynn("[say=kait]I will try to find a spot. On some island on some far-away planet that no one cares about. Gonna surf the waves all day. Gonna be sick as fuck.[/say]")
+		saynn("[say=kait]Попробую найти местечко. На каком-нибудь острове на далекой планете, на которую всем насрать. Буду целый день гонять на волнах. Это будет просто охеренно.[/say]")
 
-		saynn("[say=pc]Sounds like a nice dream.[/say]")
+		saynn("[say=pc]Похоже на прекрасный сон.[/say]")
 
-		saynn("[say=kait]Mhm. For now I just have to keep fighting.[/say]")
+		saynn("[say=kait]Мгм. А пока мне просто нужно продолжать сражаться.[/say]")
 
-		saynn("[say=pc]Am I gonna be welcome on your little island?[/say]")
+		saynn("[say=pc]А мне на твоем острове будут рады?[/say]")
 
-		saynn("[say=kait]Well, are you a corporate slave?[/say]")
+		saynn("[say=kait]Ну что, ты что, корпоративный раб?[/say]")
 
-		saynn("[say=pc]Don't think so.[/say]")
+		saynn("[say=pc]Вряд ли.[/say]")
 
-		saynn("[say=kait]Then sure. Bring some snacks with you, will ya?[/say]")
+		saynn("[say=kait]Ну тогда ладно. Только закуски прихвати с собой, идет?[/say]")
 
-		saynn("You chuckle.")
+		saynn("Вы посмеиваетесь.")
 
-		addButton("Continue", "See what happens next", "talk_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "talk_menu")
 	if(state == "ask_hideout"):
-		saynn("[say=pc]What do you think about this hideout?[/say]")
+		saynn("[say=pc]Что думаешь об этом убежище?[/say]")
 
-		saynn("[say=kait]It's nice. Does its job too. As long as I can breathe without an AlphaCorp guard staring at my ass, I'm happy.[/say]")
+		saynn("[say=kait]Миленько. Со своей задачей справляется. Пока я могу дышать, и мне в задницу не пялится охранник из «АльфаКорп», я довольна.[/say]")
 
-		saynn("[say=pc]Oh.[/say]")
+		saynn("[say=pc]Ох.[/say]")
 
-		saynn("Kait squints and then chuckles.")
+		saynn("Кейт прищуривается, а затем посмеивается.")
 
-		saynn("[say=kait]You're not a guard. You don't look like a corporate bitch to me either.[/say]")
+		saynn("[say=kait]Ты не охранник. И на корпоративную сучку ты тоже не похож.[/say]")
 
-		saynn("[say=pc]I guess I have permission then.[/say]")
+		saynn("[say=pc]Значит, полагаю, у меня есть разрешение.[/say]")
 
-		saynn("[say=kait]Pfff. Don't abuse it.[/say]")
+		saynn("[say=kait]Пфф. Смотри не злоупотребляй.[/say]")
 
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
-		saynn("[say=pc]I guess this place is nice for breaking people.[/say]")
+		saynn("[say=pc]Думаю, это место отлично подходит для того, чтобы ломать людей.[/say]")
 
-		saynn("[say=kait]True. It is.[/say]")
+		saynn("[say=kait]Верно. Так и есть.[/say]")
 
-		saynn("[say=pc]Do you like breaking people?[/say]")
+		saynn("[say=pc]Тебе нравится ломать людей?[/say]")
 
-		saynn("[say=kait]Necessary evil. I don't crave power. If AlphaCorp didn't force itself into my life, I would be giving exactly zero fucks about it.[/say]")
+		saynn("[say=kait]Необходимое зло. Я не жажду власти. Если бы АльфаКорп не вломилась в мою жизнь, мне было бы на неё абсолютно насрать.[/say]")
 
-		saynn("[say=pc]So you only started caring once it affected you.[/say]")
+		saynn("[say=pc]Значит, тебе стало не плевать только тогда, когда это коснулось тебя лично.[/say]")
 
-		saynn("[say=kait]I just wanted to live in peace. Are you calling me a hypocrite?[/say]")
+		saynn("[say=kait]Я просто хотела жить в мире. Ты что, называешь меня лицемеркой?[/say]")
 
-		saynn("[say=pc]Making an observation.[/say]")
+		saynn("[say=pc]Просто констатирую факт.[/say]")
 
-		saynn("[say=kait]Yes, I'm not stupid enough to go against a whole ass intergalactic corporation on my own. My bad I guess.[/say]")
+		saynn("[say=kait]Да, я не настолько тупая, чтобы в одиночку идти против целой гребаной межгалактической корпорации. Мой косяк, если хочешь.[/say]")
 
-		saynn("[say=pc]But now you have to.[/say]")
+		saynn("[say=pc]Но теперь у тебя нет выбора.[/say]")
 
-		saynn("[say=kait]We all have to.[/say]")
+		saynn("[say=kait]У нас у всех нет выбора.[/say]")
 
-		addButton("Continue", "See what happens next", "talk_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "talk_menu")
 	if(state == "ask_ans_avy"):
-		saynn("[say=pc]What do you think about Ans and Avy?[/say]")
+		saynn("[say=pc]Что ты думаешь об Ансе и Эви?[/say]")
 
-		saynn("Kait shrugs.")
+		saynn("Кейт пожимает плечами.")
 
-		saynn("[say=kait]Ans seems like a nice guy. Inmates chose him to run the arena so he must be good. I think I trust him.[/say]")
+		saynn("[say=kait]Анс кажется неплохим парнем. Заключенные выбрали его управлять ареной, так что он явно дело знает. Думаю, я ему доверяю.[/say]")
 
-		saynn("[say=pc]Think?[/say]")
+		saynn("[say=pc]Думаешь?[/say]")
 
-		saynn("[say=kait]Yeah, well, I dunno why he would invite Avy into this team.[/say]")
+		saynn("[say=kait]Да так, хрен знает, зачем он позвал Эви в эту команду.[/say]")
 
-		saynn("[say=pc]Probably because she is one of the best at the arena.[/say]")
+		saynn("[say=pc]Наверное, потому что она одна из лучших на арене.[/say]")
 
-		saynn("[say=kait]She is not, trust me. She is just the loudest.[/say]")
+		saynn("[say=kait]Да ни черта она не лучшая, поверь мне. Она просто самая громкая.[/say]")
 
-		saynn("[say=pc]Either way, more fighting hands is better, don't you agree?[/say]")
+		saynn("[say=pc]В любом случае, чем больше рук в бою, тем лучше, не согласен?[/say]")
 
-		saynn("She shrugs again.")
+		saynn("Она снова пожимает плечами.")
 
-		saynn("[say=kait]Maybe.[/say]")
+		saynn("[say=kait]Может быть.[/say]")
 
-		saynn("[say=pc]You hate Avy?[/say]")
+		saynn("[say=pc]Ты ненавидишь Эви?[/say]")
 
-		saynn("[say=kait]Of course I do. Every sane person would.[/say]")
+		saynn("[say=kait]Конечно. Любой здравомыслящий человек бы её возненавидел.[/say]")
 
-		saynn("[say=pc]Can you tell me some of the reasons?[/say]")
+		saynn("[say=pc]Можешь назвать причины?[/say]")
 
-		saynn("[say=kait]She is an arrogant, egoistic bitch. Fights unfairly too. She is gonna betray us one day.[/say]")
+		saynn("[say=kait]Она высокомерная, эгоистичная сука. К тому же дерется нечестно. Рано или поздно она нас предаст.[/say]")
 
-		saynn("[say=pc]I see.[/say]")
+		saynn("[say=pc]Понятно.[/say]")
 
-		saynn("[say=kait]Why is she even helping us? Go ask her that, if you haven't already.[/say]")
+		saynn("[say=kait]С чего это она вообще нам помогает? Иди и спроси её, если ещё не сделал этого.[/say]")
 
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
-		addButton("Continue", "See what happens next", "talk_menu")
+		addButton("Продолжить", "Смотреть, что будет дальше", "talk_menu")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

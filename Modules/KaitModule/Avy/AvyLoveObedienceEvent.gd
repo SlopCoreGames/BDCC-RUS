@@ -14,12 +14,12 @@ func run(_triggerID, _args):
 	var theObedience:int = GM.main.MS.getAvyObedience()
 	
 	if(theLove >= 2):
-		addButton("Sex", "See what lewd stuff you can do with Avy", "lovemenu")
+		addButton("Секс", "Посмотреть, какую похоть можно творить с Эви", "lovemenu")
 	if(theObedience >= 2):
-		addButton("Dominate", "See how you can dominate this dickgirl", "obeymenu")
+		addButton("Доминировать", "Посмотреть, как можно подчинить эту дикгёрл", "obeymenu")
 	
 	if(theLove >= 4 || theObedience >= 4):
-		addButton("Feed something", "Feed something to Avy", "feedmenu")
+		addButton("Покормить", "Что-нибудь скормить Эви", "feedmenu")
 
 func getPriority():
 	return 33

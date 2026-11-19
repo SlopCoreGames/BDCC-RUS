@@ -15,10 +15,10 @@ func run(_triggerID, _args):
 			var amountWon:int = GlobalRegistry.getModule("FightClubModule").getAmountFightersWon()
 			if(amountWon == 3):
 				#if(GM.main.shouldExecuteOnceCodeblocksRun()):
-				saynn("[center][i]Kait is ready to let you join the team now! Go talk with her![/i][/center]")
+				saynn("[center][i]Кейт готова принять тебя в команду! Поговори с ней![/i][/center]")
 		return
 	
-	addButton("Kait", "Talk with the snow leopard lilac", "talk")
+	addButton("Кейт", "Поговорить со снежным барсом-сиренью", "talk")
 	
 func getPriority():
 	return 0

@@ -8,307 +8,307 @@ func _run():
 		aimCameraAndSetLocName("hideout_chill")
 		addCharacter("avy")
 		playAnimation(StageScene.Duo, "stand", {npc="avy"})
-		saynn("Avy's blue eyes, sharp mean, fixate on you.")
+		saynn("Голубые глаза Эви, полные злобы, впиваются в тебя.")
 
-		saynn("[say=avy]So? Why am I here? Make it quick, I've got better things to do, I gotta run the arena.[/say]")
+		saynn("[say=avy]Ну? И зачем я здесь? Давай быстрее, у меня полно дел, надо арену проверять.[/say]")
 
-		saynn("You let the silence stretch for some time.. offering eye contact. Avy's claws tap impatiently against her thigh.")
+		saynn("Ты позволяешь тишине затянуться, не разрывая зрительного контакта. Когти Эви нетерпеливо постукивают по её бедру.")
 
-		saynn("[say=pc]I want you to do something for me, Avy.[/say]")
+		saynn("[say=pc]Я хочу, чтобы ты кое-что сделала для меня, Эви.[/say]")
 
-		saynn("Her ears perk slightly, a mean smirk curls her lips.")
+		saynn("Её уши слегка дергаются, а на губах играет дерзкая ухмылка.")
 
-		saynn("[say=avy]Oh yeah? Personal requests might cost quite a bit, you know. Depends on what you want. Give me the name and I will break 'em.[/say]")
+		saynn("[say=avy]Да неужели? Личные просьбы могут влететь в копеечку, знаешь ли. Зависит от того, чего ты хочешь. Только назови имя, и я сломаю его.[/say]")
 
-		saynn("She cracks her knuckles, tail flicking behind her.")
+		saynn("Она хрустит костяшками пальцев, а её хвост нервно подергивается.")
 
-		saynn("[say=pc]No. No breaking. What I want you to do is just to stand still for me.[/say]")
+		saynn("[say=pc]Нет. Никого ломать не надо. Всё, чего я хочу — чтобы ты просто постояла смирно.[/say]")
 
-		saynn("She tilts her head, confused.")
+		saynn("Она в замешательстве наклоняет голову.")
 
-		saynn("[say=avy]What?[/say]")
+		saynn("[say=avy]Чего?[/say]")
 
-		saynn("[say=pc]You heard my order.[/say]")
+		saynn("[say=pc]Ты услышал мой приказ.[/say]")
 
-		saynn("She blinks, her brows shoot up.")
+		saynn("Она моргает, и её брови взлетают вверх.")
 
-		saynn("[say=avy]Your order. Wow. Cool.[/say]")
+		saynn("[say=avy]Твой приказ. Ого. Круто.[/say]")
 
-		saynn("She scoffs and crosses her arms, her hind paws spread out more, giving the rest of the body more support.")
+		saynn("Она фыркает и скрещивает руки на груди, сильнее расставив задние лапы, чтобы лучше удерживать равновесие.")
 
-		saynn("[say=avy]And why would I do that?[/say]")
+		saynn("[say=avy]И с чего бы мне это делать?[/say]")
 
-		saynn("[say=pc]Because..[/say]")
+		saynn("[say=pc]Потому что...[/say]")
 
-		saynn("You step forward, towards the threatening foxy, still keeping eye contact with her. You stop just a few feet away, close enough to see the subtle twitch in her jaw.")
+		saynn("Ты делаешь шаг вперед, к угрожающей лисице, не разрывая зрительного контакта. Ты останавливаешься всего в паре футов от неё — достаточно близко, чтобы заметить едва уловимое подергивание её челюсти.")
 
-		saynn("[say=pc]..it's a very simple order. But if you do it, you will make me happy.[/say]")
+		saynn("[say=pc]...это очень простой приказ. Но если ты его выполнишь, ты сделаешь меня счастливым.[/say]")
 
-		saynn("Avy bites her lip playfully, a soft, mean chuckle escapes her.")
+		saynn("Эви игриво прикусывает губу, и у неё вырывается тихий, ехидный смешок.")
 
-		saynn("[say=avy]And why would I care about your happiness?[/say]")
+		saynn("[say=avy]А с чего бы мне вообще париться о твоём счастье?[/say]")
 
-		saynn("You cross your arms too, mirroring her stance somewhat.")
+		saynn("Ты тоже скрещиваешь руки на груди, в какой-то степени копируя её позу.")
 
-		saynn("[say=pc]Because then I can reward you in some way. I can call you a good girl, for example.[/say]")
+		saynn("[say=pc]Потому что тогда я смогу тебя как-то вознаградить. Например, назову тебя хорошей девочкой.[/say]")
 
-		saynn("Avy's nose wrinkles. She lets out a sharp laugh.")
+		saynn("Нос Эви морщится. Она издает резкий смешок.")
 
-		saynn("[say=avy]Pff, haha. That sounds so cringey. I will break your fucking kneecaps if you call me that.[/say]")
+		saynn("[say=avy]Пфф, ха-ха. Звучит так кринжово. Если ты меня так назовешь, я тебе, блядь, коленные чашечки проломлю.[/say]")
 
-		saynn("She takes a half-step forward, her playfulness looks a lot like aggressiveness.")
+		saynn("Она делает полшага вперед; её игривость очень напоминает агрессию.")
 
-		saynn("You put on your most strict eyes that you have.")
+		saynn("Ты включаешь свой самый строгий взгляд.")
 
-		saynn("[say=pc]Stay still, Avy. It's not that hard, you know it.[/say]")
+		saynn("[say=pc]Стой смирно, Эви. Это ведь не так уж сложно, ты сама знаешь.[/say]")
 
-		saynn("Avy's jaw tightens, her lips twitching ever so slightly. She holds your stare for a long, tense moment, furrowing her brows. Then, with a huff of air, she plants her rear paws roughly on the same line and goes rigid, letting her arms go limp too.")
+		saynn("Челюсть Эви сжимается, губы едва заметно подергиваются. Она долго и напряженно выдерживает твой взгляд, нахмурив брови. Затем, с шумным выдохом, она грубо ставит задние лапы на ту же линию и замирает, позволяя рукам тоже безвольно повиснуть.")
 
-		saynn("[say=avy]Whatever. Fine. There you go. Happy?[/say]")
+		saynn("[say=avy]Пофиг. Ладно. Вот так. Доволен?[/say]")
 
-		saynn("You put more authority into your voice.")
+		saynn("Ты добавляешь в голос больше властности.")
 
-		saynn("[say=pc]Almost. Look forward. Straight ahead, not at me. And don't move.[/say]")
+		saynn("[say=pc]Почти. Смотри вперед. Прямо перед собой, а не на меня. И не двигайся.[/say]")
 
-		saynn("[say=avy]This is dumb-b-b.[/say]")
+		saynn("[say=avy]Это ту-у-упо.[/say]")
 
-		saynn("She complies, focusing her annoyed stare on the wall behind you. The metal there has some rusty patterns. A single pip runs along the ceiling, dripping occasionally.")
+		saynn("Она подчиняется, уставившись раздраженным взглядом в стену за твоей спиной. На металле видны следы ржавчины. По потолку пробегает одинокая капля, время от времени срываясь вниз.")
 
-		saynn("You wait a few seconds.. and then you begin to circle her, moving around her like a predator circling prey, slowly and gradually. Your eyes begin inspecting her from every angle.")
+		saynn("Ты ждешь несколько секунд... а затем начинаешь обходить её кругом, медленно и постепенно, словно хищник, кружащий вокруг добычи. Твой взгляд начинает изучать её со всех сторон.")
 
-		saynn("Avy's eyes track your movement for a bit, until you end up by her side, out of her sight. Her ears still turn, trying to locate. But she doesn't dare to turn her head.")
+		saynn("Глаза Эви некоторое время следят за твоими движениями, пока ты не оказываешься рядом с ней, вне поля её зрения. Её уши всё еще подергиваются, пытаясь определить твое местоположение, но она не смеет повернуть голову.")
 
-		saynn("You see some things in her posture.")
+		saynn("В её позе читается кое-что важное.")
 
-		saynn("[say=pc]Fix your spine, bring shoulders back, push chest forward, make chin straight, lower your tail, put hands by your sides exactly.[/say]")
+		saynn("[say=pc]Выпрями спину, расправь плечи, подай грудь вперед, держи подбородок ровно, опусти хвост и положи руки по швам — идеально ровно.[/say]")
 
-		saynn("She looks at you and growls, her lips peeling back to show fangs.")
+		saynn("Она смотрит на тебя и рычит, обнажая клыки.")
 
-		saynn("[say=avy]I will fix your spine alright.. Best part is, you won't feel a thing.[/say]")
+		saynn("[say=avy]Ну, с позвоночником я точно разберусь... И самое приятное — ты ничего не почувствуешь.[/say]")
 
-		saynn("You sigh.")
+		saynn("Ты вздыхаешь.")
 
-		saynn("[say=pc]Avy.. Keep looking forward.[/say]")
+		saynn("[say=pc]Эви... Смотри вперед.[/say]")
 
-		saynn("She rolls her eyes and directs her gaze into a wall again. She slowly fixes all the things that you have mentioned, arching her back a bit, pulling her shoulders back, straightening her neck and chin.")
+		saynn("Она закатывает глаза и снова утыкается взглядом в стену. Она медленно исправляет всё, о чём ты упомянул, слегка прогибая спину, отводя плечи назад и выпрямляя шею и подбородок.")
 
-		saynn("Her tail goes low but the very tip still twitches with suppressed aggression.")
+		saynn("Её хвост опускается, но самый кончик всё ещё подёргивается от подавленной агрессии.")
 
-		saynn("[say=pc]That's better. Much better. A little too tense maybe. But that should go away over time.[/say]")
+		saynn("[say=pc]Так-то лучше. Намного лучше. Может, ты немного напряжена. Но со временем это должно пройти.[/say]")
 
-		saynn("She doesn't answer.. but her chest swells with a deeper breath.")
+		saynn("Она не отвечает... но её грудь вздымается от глубокого вдоха.")
 
-		saynn("You keep circling her, now ending up behind her, your {pc.feet} echoing softly against the concrete floor. Your eyes inspect her a little more from this angle. You feel a wild beast trapped in her body, ready to take over at any moment.")
+		saynn("Ты продолжаешь кружить вокруг неё, в итоге оказываясь сзади, и твои {pc.feet} мягко отдаются эхом от бетонного пола. С этого ракурса ты рассматриваешь её ещё пристальнее. Ты чувствуешь, что в её теле заперт дикий зверь, готовый вырваться на волю в любой момент.")
 
-		saynn("And yet, you still dare to approach her from behind, so close that she feels your breath on her shoulder. Her fur stands on its ends instantly.")
+		saynn("И всё же ты осмеливаешься подойти к ней сзади, так близко, что она чувствует твоё дыхание на своём плече. Её шерсть мгновенно встаёт дыбом.")
 
-		saynn("Avy can only endure your presence for a few seconds before her whole body starts to shiver. She gives up and steps forward, quickly turning around, her claws exposed.")
+		saynn("Ави может выносить твоё присутствие лишь несколько секунд, прежде чем всё её тело начинает дрожать. Она сдаётся и делает шаг вперёд, резко разворачиваясь, выпустив когти.")
 
-		saynn("[say=avy]Listen! This is fucking weird. I'm gonna punch you, I swear. Why are you fucking doing this shit?[/say]")
+		saynn("[say=avy]Слушай! Это чертовски странно. Клянусь, я тебе сейчас врежу. Какого хрена ты вообще творишь эту херню?[/say]")
 
-		saynn("Her voice cracks slightly at the end.")
+		saynn("В конце её голос слегка срывается.")
 
-		saynn("[say=pc]I just like how you look, Avy. I really do.[/say]")
+		saynn("[say=pc]Мне просто нравится, как ты выглядишь, Ави. Правда.[/say]")
 
-		saynn("Her lips twitch, her snout does so too.")
+		saynn("Её губы подергиваются, а мордочка — вслед за ними.")
 
-		saynn("[say=avy]Don't say that! I don't care how you think I look! Fuck you.[/say]")
+		saynn("[say=avy]Не говори так! Плевать, как я, по-твоему, выгляжу! Пошел ты нахуй![/say]")
 
-		saynn("Gotta defuse the situation before she goes nuclear on you.")
+		saynn("Нужно разрядить обстановку, пока она не взорвалась как ядерная бомба.")
 
-		saynn("[say=pc]Sorry if I'm making you uncomfortable. Was not my intent.[/say]")
+		saynn("[say=pc]Прости, если заставил тебя чувствовать себя неловко. Я не это имел в виду.[/say]")
 
-		saynn("[say=avy]What was your intent then?![/say]")
+		saynn("[say=avy]А что ты тогда имел в виду?![/say]")
 
-		saynn("Her voice echoes off the concrete walls.")
+		saynn("Её голос эхом разносится от бетонных стен.")
 
-		saynn("[say=pc]For the both of us, to have a good time.[/say]")
+		saynn("[say=pc]Чтобы мы оба отлично провели время.[/say]")
 
-		saynn("[say=avy]Well, I'm not having a good time. I feel fucking weird![/say]")
+		saynn("[say=avy]Ну, мне вот совсем не весело. Я чувствую себя чертовски странно![/say]")
 
-		saynn("Her tail lashes, her claws scraping against her thighs.")
+		saynn("Её хвост хлещет из стороны в сторону, а когти скребут по бедрам.")
 
-		saynn("[say=pc]What makes it weird? Can you describe it please?[/say]")
+		saynn("[say=pc]Что именно кажется странным? Можешь описать?[/say]")
 
-		saynn("[say=avy]I don't fucking know. You're treating me like I'm a fucking princess! I'm not! I'm an evil bad bitch, you know?[/say]")
+		saynn("[say=avy]Да хуй его знает! Ты обращаешься со мной как с какой-то сраной принцессой! Но я не принцесса! Я злая, сука, стерва, сечёшь?[/say]")
 
-		saynn("Looking at her.. it does make sense. Maybe being soft with her isn't the right approach indeed. Hearing good things just seems to be making her feel weird and icky. Huh.. Maybe you can try something else then..")
+		saynn("Глядя на неё... в этом есть смысл. Возможно, нежность с ней — действительно не лучший подход. Похоже, от добрых слов ей становится как-то странно и даже противно. Хм... Может, тогда стоит попробовать что-то другое...")
 
-		saynn("You put on your mean eyes, letting your expression harden. The warmth drains from your gaze, replaced by something cold and commanding.")
+		saynn("Ты делаешь суровый взгляд, позволяя лицу ожесточиться. Тепло уходит из твоего взора, сменяясь чем-то холодным и властным.")
 
-		saynn("[say=pc]Why don't you kneel for me then, bad bitch.[/say]")
+		saynn("[say=pc]Раз так, то почему бы тебе не встать предо мной на колени, сучка?[/say]")
 
-		saynn("She blinks again, her eyes getting wider, her lips half-parted, stare confused at first.")
+		saynn("Она снова моргает, её глаза расширяются, губы полуоткрываются, а взгляд поначалу выражает полное замешательство.")
 
-		saynn("[say=pc]I'm not walking to you. Approach me. And get on your knees. Now.[/say]")
+		saynn("[say=pc]Я не собираюсь идти к тебе. Подойди ко мне. И встань на колени. Живо.[/say]")
 
-		saynn("Your voice carries absolute authority.")
+		saynn("В твоём голосе звучит абсолютная власть.")
 
-		saynn("Avy swallows audibly, her chin goes slightly lower as she does it, her gaze slips off of yours. She looks around, at only the entrance into this room.")
+		saynn("Эви слышно сглатывает, при этом её подбородок слегка опускается, а взгляд соскальзывает с твоего лица. Она оглядывается по сторонам, глядя лишь на вход в комнату.")
 
-		saynn("[say=pc]No one is gonna enter. Only I'm gonna see it. Avy, look at me.[/say]")
+		saynn("[say=pc]Никто не войдёт. Это увидишь только ты. Эви, смотри на меня.[/say]")
 
-		saynn("She blinks again and slowly establishes weak eye contact with you.")
+		saynn("Она снова моргает и медленно устанавливает слабый зрительный контакт с тобой.")
 
-		saynn("[say=pc]Do what I told you, don't annoy me.[/say]")
+		saynn("[say=pc]Делай, что тебе сказали, и не беси меня.[/say]")
 
-		saynn("She takes a step forward. Then another. Her fists are clenched, muscles tensed up, posture aggressive. She is ready to throw a strong hook at any second.")
+		saynn("Она делает шаг вперед. Затем еще один. Кулаки сжаты, мышцы напряжены, поза агрессивная. Она готова в любую секунду всадить мощный хук.")
 
-		addButton("Continue", "See what happens next", "avy_kneels")
+		addButton("Продолжить", "Смотреть, что будет дальше", "avy_kneels")
 	if(state == "avy_kneels"):
 		playAnimation(StageScene.Duo, "stand", {npc="avy", npcAction="kneel"})
-		saynn("She stops in front of you, close enough to touch. Close enough to punch.")
+		saynn("Она останавливается прямо перед тобой — так близко, что можно коснуться. Близко настолько, чтобы ударить.")
 
-		saynn("Slowly, like she is fighting every instinct in her body, Avy lowers herself to her knees. The motion is jerky, reluctant. Her knees hit the concrete with a soft thud.")
+		saynn("Медленно, словно борясь с каждым инстинктом в своем теле, Эви опускается на колени. Ее движения дерганые, неохотные. Колени с мягким стуком ударяются о бетон.")
 
-		saynn("And so, she kneeled.")
+		saynn("И вот, она встала на колени.")
 
-		saynn("Her gaze doesn't know where to direct itself. Looking down beneath her feels too shy. Looking up at you makes her catch your strict dominant gaze. She ends up looking to the side, away from the only entrance.")
+		saynn("Ее взгляд мечется, не зная, куда деться. Смотреть вниз — слишком застенчиво. Смотреть на тебя — значит поймать твой строгий, доминирующий взгляд. В итоге она утыкается взглядом в сторону, подальше от единственного входа.")
 
-		saynn("You admire the great sight. Avy, the bad bitch, is on her knees before you. Willingly.")
+		saynn("Ты любуешься этим великолепным зрелищем. Эви, та самая дерзкая сучка, стоит перед тобой на коленях. И делает это добровольно.")
 
-		saynn("Makes you wanna push her a bit more. Just a bit.")
+		saynn("Так и подмывает поднажать на нее еще немного. Совсем чуть-чуть.")
 
-		saynn("[say=pc]I'm gonna grab your chin. Just to hold it. If you try to bite.. or even just growl.. this session is gonna end instantly. Do you understand that, little bitch?[/say]")
+		saynn("[say=pc]Я возьму тебя за подбородок. Просто чтобы держать. Если попробуешь укусить... или хотя бы просто зарычать... эта сессия закончится мгновенно. Ты меня поняла, мелкая сучка?[/say]")
 
-		saynn("Avy's lips twitch more. She lets the question linger in the air for some time.")
+		saynn("Губы Эви дергаются еще сильнее. Она позволяет вопросу повиснуть в воздухе на какое-то время.")
 
-		saynn("In the end, she gives a single, small but sharp, nod. No words.")
+		saynn("В конце концов, она лишь коротко и резко кивает. Ни слова.")
 
-		saynn("[say=pc]Good.[/say]")
+		saynn("[say=pc]Умница.[/say]")
 
-		saynn("You reach out, your fingers finding her chin and gripping it firmly. Her fur is soft.. but the muscles of her jaws are hard like iron. She flinches at the contact, a tiny shiver running through her.")
+		saynn("Ты протягиваешь руку, пальцами уверенно обхватывая её подбородок. Мех у неё мягкий... но челюстные мышцы твердые, как железо. От твоего прикосновения она вздрагивает, по телу пробегает легкая дрожь.")
 
-		saynn("Next, you use that leverage to turn her head and then make her tilt it up, forcing her to look at you. Her blue gaze is shaky.")
+		saynn("Затем, используя этот рычаг, ты поворачиваешь её голову и заставляешь её задрать подбородок, вынуждая смотреть тебе в глаза. Её голубой взгляд дрожит.")
 
-		saynn("[say=pc]There we go. Not so hard, is it? Just a little bitch on her knees.[/say]")
+		saynn("[say=pc]Вот так. Не так уж и страшно, правда? Просто маленькая сучка на коленях.[/say]")
 
-		saynn("Her nostrils flare. A low sound rumbles in her chest.. but she swallows it down. Her tail curls against the floor.")
+		saynn("Её ноздри раздуваются. В груди рокочет низкий звук... но она подавляет его. Хвост поджимается к полу.")
 
-		saynn("You run your digits along her jawline, feeling the tension in her muscles. Her lips part slightly, showing the tips of her sharp fangs.")
+		saynn("Ты ведешь пальцами вдоль линии её челюсти, чувствуя напряжение в мышцах. Её губы слегка приоткрываются, обнажая кончики острых клыков.")
 
-		saynn("[say=pc]You want to bite me, don't you? Want to sink those pretty fangs into my hand.[/say]")
+		saynn("[say=pc]Ты ведь хочешь укусить меня, да? Хочешь вонзить эти свои прелестные клыки мне в руку.[/say]")
 
-		saynn("She doesn't respond.. but her eyes flicker downward, then back up.")
+		saynn("Она не отвечает... но её взгляд на мгновение опускается вниз, а затем снова возвращается к тебе.")
 
-		saynn("You tighten your grip on her chin, just enough to make her focus.")
+		saynn("Ты сжимаешь её подбородок чуть крепче — ровно настолько, чтобы заставить её сосредоточиться.")
 
-		saynn("[say=pc]But you won't. Because you're a good little bitch who follows orders. Isn't that right?[/say]")
+		saynn("[say=pc]Но ты не укусишь. Потому что ты хорошая маленькая сучка, которая слушается приказов. Ведь так?[/say]")
 
-		saynn("Her breath catches. Her claws scrape against her thighs.")
+		saynn("У неё перехватывает дыхание. Когти скребут по её бёдрам.")
 
-		saynn("[say=avy]..fuck you.[/say]")
+		saynn("[say=avy]...да пошёл ты.[/say]")
 
-		saynn("Her voice.. barely a whisper.")
+		saynn("Её голос... едва слышный шёпот.")
 
-		saynn("[say=pc]What was that? Speak up. I can't hear you when you're mumbling like a pathetic little mutt.[/say]")
+		saynn("[say=pc]Что ты там вякнула? Говори громче. Я не слышу тебя, когда ты мямлишь, как жалкая дворняжка.[/say]")
 
-		saynn("She swallows, her throat getting tight for a second near your grip. Her eyes drop to the floor.")
+		saynn("Она сглатывает, и её горло на мгновение сжимается под твоей хваткой. Её взгляд падает в пол.")
 
-		saynn("[say=avy]..Nothing.[/say]")
+		saynn("[say=avy]...Ничего.[/say]")
 
-		saynn("[say=pc]That's what I thought.[/say]")
+		saynn("[say=pc]Так я и думала.[/say]")
 
-		saynn("You release her chin, stepping back just slightly. She stays on her knees, head angling down after it's no longer supported. Her hands are pressed against her thighs, claws still digging in.")
+		saynn("Ты отпускаешь её подбородок, слегка отступая назад. Она так и остаётся на коленях, голова бессильно склоняется вниз, когда ты перестаёшь её поддерживать. Её ладони прижаты к бёдрам, когти всё ещё впиваются в кожу.")
 
-		saynn("[say=pc]Last order. Paws behind your back.[/say]")
+		saynn("[say=pc]Последний приказ. Лапы за спину.[/say]")
 
-		saynn("She hesitates. A long pause. Then slowly, she moves her paws behind her back and puts them together, palms grabbing onto the opposite elbows. Her shoulders pull back in the process, making the uniform stretch across her breasts.")
+		saynn("Она колеблется. Долгая пауза. Затем медленно она уводит лапы за спину и сцепляет их, хватаясь ладонями за противоположные локти. От этого движения её плечи отводятся назад, заставляя форму натянуться на груди.")
 
-		saynn("Her ears flatten against her head, her cheeks receiving a subtle red glow.")
+		saynn("Её уши прижимаются к голове, а на щеках проступает едва заметный румянец.")
 
-		saynn("[say=pc]Perfect. You know what I see when I look at you like this?[/say]")
+		saynn("[say=pc]Идеально. Знаешь, что я вижу, когда смотрю на тебя вот так?[/say]")
 
-		saynn("She doesn't answer.")
+		saynn("Она не отвечает.")
 
-		saynn("[say=pc]A good girl.[/say]")
+		saynn("[say=pc]Хорошая девочка.[/say]")
 
-		saynn("She freezes, her entire body goes rigid. Her eyes snap wide open, suddenly staring at you.")
+		saynn("Она замирает, всё её тело каменеет. Глаза широко распахиваются, и она резко впивается в тебя взглядом.")
 
-		saynn("[say=avy]Don't.. don't call me that, I told you.[/say]")
+		saynn("[say=avy]Не... не называй меня так, я же говорила.[/say]")
 
-		saynn("Her voice cracks on every word. So far, your kneecaps seem to be fine.")
+		saynn("Её голос срывается на каждом слове. Пока что твои коленки, кажется, в порядке.")
 
-		saynn("[say=pc]Why not? You earned it. You followed my orders. You stood still for me, you knelt, you put your arms where I wanted them to be. That's a good girl in my book.[/say]")
+		saynn("[say=pc]Почему нет? Ты это заслужила. Ты слушалась моих приказов. Ты стояла смирно, ты встала на колени, ты держала руки там, где я хотела. В моих глазах ты — хорошая девочка.[/say]")
 
-		saynn("Avy's breathing becomes ragged, her eyes blinking rapidly. Her jaw works, chewing on the words.")
+		saynn("Дыхание Эви становится прерывистым, она часто-часто моргает. Её челюсть подергивается, словно она пытается прожевать каждое слово.")
 
-		saynn("[say=avy]I am not.. a fucking good girl. I'm evil. I'm terrible. I've done bad things. I've killed people.. I've..[/say]")
+		saynn("[say=avy]Я не... блядь, не хорошая девочка. Я злая. Я ужасная. Я совершала плохие поступки. Я убивала людей... я...[/say]")
 
-		saynn("[say=pc]Avy.[/say]")
+		saynn("[say=pc]Эйви.[/say]")
 
-		saynn("Your voice cuts through her mental downward spiral.")
+		saynn("Твой голос прорезает её ментальную спираль падения.")
 
-		saynn("[say=pc]Look at me.[/say]")
+		saynn("[say=pc]Смотри на меня.[/say]")
 
-		saynn("She turns her head, slowly, meeting your eyes yet again. Her gaze is raw.. vulnerable.")
+		saynn("Она медленно поворачивает голову, снова встречаясь с тобой взглядом. Её взор обнажён и уязвим.")
 
-		saynn("[say=pc]You are a good girl. Right now, at this very moment, you are being a good girl for me. Accept it. Or I'm gonna beat it into you.[/say]")
+		saynn("[say=pc]Ты хорошая девочка. Прямо сейчас, в это самое мгновение, ты ведешь себя как хорошая девочка для меня. Прими это. Или мне придется вбить это в тебя силой.[/say]")
 
-		saynn("Her bottom lip trembles, her ears go low again.")
+		saynn("Её нижняя губа дрожит, уши снова прижимаются.")
 
-		saynn("[say=avy]..I don't.. know..[/say]")
+		saynn("[say=avy]..Я не.. знаю..[/say]")
 
-		saynn("[say=pc]I do.[/say]")
+		saynn("[say=pc]Так точно.[/say]")
 
-		saynn("Her eyes get watery. As much as she wants it, she can't wipe them, her hands are still behind her back.")
+		saynn("В её глазах закипают слёзы. Как бы сильно она ни хотела их смахнуть, она не может — её руки всё ещё заведены за спину.")
 
-		saynn("She swallows, her voice is barely audible.")
+		saynn("Она сглатывает, её голос едва слышен.")
 
-		saynn("[say=avy]..okay.[/say]")
+		saynn("[say=avy]..ладно.[/say]")
 
-		saynn("[say=pc]Good. Good girl.[/say]")
+		saynn("[say=pc]Хорошо. Хорошая девочка.[/say]")
 
-		saynn("Your words still make her growl softly. But she doesn't argue.")
+		saynn("От твоих слов она всё ещё тихо рычит, но спорить не решается.")
 
-		saynn("She just stays there, on her knees, looking up at you with those mean blue eyes.")
+		saynn("Она просто остается стоять на коленях, глядя на тебя своими дерзкими голубыми глазами.")
 
-		saynn("You reach down, tapping on her cheek softly.")
+		saynn("Ты наклоняешься и мягко постукиваешь её по щеке.")
 
-		saynn("[say=pc]We're done for now. You can stand.[/say]")
+		saynn("[say=pc]На сегодня всё. Можешь вставать.[/say]")
 
-		saynn("She stays kneeling for a bit longer, breathing slowly.")
+		saynn("Она ещё какое-то время остается на коленях, медленно дыша.")
 
-		addButton("Continue", "See what happens next", "avy_getsup")
+		addButton("Продолжить", "Смотреть, что будет дальше", "avy_getsup")
 	if(state == "avy_getsup"):
 		playAnimation(StageScene.Duo, "stand", {npc="avy"})
-		saynn("Slowly, Avy rises to her rear paws. Her tail wags once or twice before she forces it still.")
+		saynn("Медленно Эви поднимается на задние лапы. Её хвост виляет пару раз, прежде чем она заставляет его замереть.")
 
-		saynn("You take off your strict eyes, your shoulders relax. You were ready to leave.")
+		saynn("Ты снимаешь маску строгого надзирателя, плечи расслабляются. Ты уже был готов уходить.")
 
-		saynn("[say=avy]Next time, you can be a bit.. rougher.. you know?[/say]")
+		saynn("[say=avy]В следующий раз можешь быть чуть... грубее... понимаешь?[/say]")
 
-		saynn("It seems she still prefers the mean touch to the kind one.")
+		saynn("Кажется, она всё ещё предпочитает грубые прикосновения нежным.")
 
-		saynn("[say=pc]Sure.[/say]")
+		saynn("[say=pc]Конечно.[/say]")
 
-		saynn("[say=avy]And.. thanks.[/say]")
+		saynn("[say=avy]И... спасибо.[/say]")
 
-		saynn("It makes her feel awkward, her face cringing.")
+		saynn("Она чувствует себя неловко, её лицо кривится от смущения.")
 
-		saynn("[say=pc]For what?[/say]")
+		saynn("[say=pc]За что?[/say]")
 
-		saynn("She shrugs violently.")
+		saynn("Она резко пожимает плечами.")
 
-		saynn("[say=avy]I don't fucking know. For.. not being a dick about it.[/say]")
+		saynn("[say=avy]Да хуй его знает. За то... что не вел себя как мудак.[/say]")
 
-		saynn("You smile.")
+		saynn("Ты улыбаешься.")
 
-		saynn("[say=pc]Anytime, Avy.[/say]")
+		saynn("[say=pc]Всегда пожалуйста, Эви.[/say]")
 
-		saynn("You start heading towards the exit.")
+		saynn("Вы направляетесь к выходу.")
 
-		saynn("[say=avy]Hey.[/say]")
+		saynn("[say=avy]Эй.[/say]")
 
-		saynn("You wait.")
+		saynn("Вы ждете.")
 
-		saynn("[say=avy]..and if you tell anyone about this, I'll fucking gut you.[/say]")
+		saynn("[say=avy]..и если хоть кому-то об этом вякнешь, я тебе, блядь, кишки выпущу.[/say]")
 
-		saynn("She swiftly walks past you, her mean eyes are back.")
+		saynn("Она стремительно проходит мимо, её колючий взгляд вернулся.")
 
-		saynn("Your smile is still just as strong.")
+		saynn("Ваша улыбка всё так же сияет.")
 
-		addButton("Continue", "See what happens next", "endscene_back")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endscene_back")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

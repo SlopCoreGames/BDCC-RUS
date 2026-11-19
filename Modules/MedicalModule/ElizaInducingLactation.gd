@@ -8,119 +8,119 @@ func _run():
 		addCharacter("eliza")
 		
 	if(state == ""):
-		saynn("You walk closer to the doctor and lean against the counter.")
+		saynn("Вы подходите ближе к доктору и опираетесь на стойку.")
 
-		saynn("[say=pc]I wanna lactate more..[/say]")
+		saynn("[say=pc]Я хочу лактировать больше...[/say]")
 
-		saynn("Eliza smiles.")
+		saynn("Элиза улыбается.")
 
-		saynn("[say=eliza]Wanna be a good cow, huh~? We can try something.[/say]")
+		saynn("[say=eliza]Хочешь быть послушной коровкой, да~? Мы можем кое-что попробовать.[/say]")
 
-		saynn("Eliza pressed some button under the table and one of the airlocks opened up.")
+		saynn("Элиза нажала на кнопку под столом, и одна из шлюзовых дверей открылась.")
 
-		saynn("[say=eliza]Come in, cutie. I will leash you for safety.[/say]")
+		saynn("[say=eliza]Заходи, милашка. Для безопасности я надену на тебя поводок.[/say]")
 
-		saynn("Without much thought you walk into the staff-only zone. Eliza quickly meets you, clicks a leash to your collar and walks you through the corridors into one of the labs.")
+		saynn("Почти не раздумывая, вы заходите в зону для персонала. Элиза быстро находит вас, защелкивает поводок на вашем ошейнике и ведет по коридорам в одну из лабораторий.")
 
-		addButton("Follow", "See where that brings you", "follow")
+		addButton("Следовать", "Посмотрим, куда это вас приведет", "follow")
 
 	if(state == "follow"):
 		aimCamera("med_researchlab")
 		setLocationName("Research lab")
 		playAnimation(StageScene.Solo, "sit")
 		
-		saynn("You enter a bright white room, this is clearly where testing is done. You spot something that looks like a chemistry table, many lockers and a special table. This table is actually a part of a machine, you spot some kind of sensors on it, a screen with a keyboard and iron hooks that can be used to chain inmates to. Eliza brings to it and attaches the other end of the leash to its hooks, limiting your available reach by a lot.")
+		saynn("Вы входите в ярко-белую комнату — очевидно, здесь проводят испытания. Вы замечаете нечто похожее на химический стол, множество шкафчиков и специальный стол. Этот стол на самом деле является частью машины; на нем видны какие-то датчики, экран с клавиатурой и железные крюки, к которым можно приковать заключенных. Элиза подводит вас к нему и пристегивает другой конец поводка к крюкам, сильно ограничивая вашу подвижность.")
 
-		saynn("[say=eliza]Take a seat.[/say]")
+		saynn("[say=eliza]Присаживайся.[/say]")
 
 		# (if hands or arms blocked)
 		if(GM.pc.hasBlockedHands() || GM.pc.hasBoundArms()):
-			saynn("She is nice enough to remove your arm restraints for now.")
+			saynn("Она проявляет любезность и на время снимает с ваших рук фиксаторы.")
 
-		saynn("Eliza walks towards one of the lockers and starts preparing. You sit on the cold table and watch the doctor. She grabs clean white latex gloves and a respirator-like mask and puts them on. She catches your concerned gaze.")
+		saynn("Элиза направляется к одному из шкафчиков и начинает подготовку. Ты сидишь на холодном столе и наблюдаешь за врачом. Она хватает чистые белые латексные перчатки, надевает респираторную маску и натягивает их. Она ловит твой обеспокоенный взгляд.")
 
-		saynn("[say=eliza]Don’t worry, inmate. Everything we do here should be safe. Safe enough.[/say]")
+		saynn("[say=eliza]Не волнуйся, заключенный. Всё, что мы здесь делаем, должно быть безопасно. Достаточно безопасно.[/say]")
 
-		saynn("It’s not like you were worried but maybe now you should be. Doctor walks up to one of the stations and starts working. She mixes a few unknown chemicals in the beaker, then adds some water and starts heating it up. The fluid inside slowly turns cyan, the lab is filled with a scent of freshness, it’s almost like you can feel the cold breeze wash over your body.")
+		saynn("Не то чтобы ты раньше волновался, но, возможно, теперь стоит. Доктор подходит к одному из рабочих мест и принимается за дело. Она смешивает в мензурке несколько неизвестных химикатов, затем добавляет немного воды и начинает нагревать смесь. Жидкость внутри медленно окрашивается в голубой цвет, лабораторию наполняет аромат свежести — кажется, будто по твоему телу пробегает прохладный ветерок.")
 
 		# (if red)
 		if(GM.pc.getInmateType() == InmateType.HighSec):
-			saynn("[say=eliza]Quite strange for a red to be doing this willingly.[/say]")
+			saynn("[say=eliza]Довольно странно, что «красная» делает это добровольно.[/say]")
 
-			saynn("[say=pc]It’s not really your business.[/say]")
+			saynn("[say=pc]Тебя это не особо касается.[/say]")
 
-			saynn("[say=eliza]It is. I’m the one who controls this, don’t forget.[/say]")
+			saynn("[say=eliza]Еще как касается. Не забывай, что здесь всем заправляю я.[/say]")
 
 		# (if general or pink)
 		else:
-			saynn("[say=eliza]Just curious. Do you feel excited? Is that why you’re here?[/say]")
+			saynn("[say=eliza]Просто любопытно. Ты чувствуешь возбуждение? Поэтому ты здесь?[/say]")
 
-			saynn("[say=pc]I guess I like experimenting.[/say]")
+			saynn("[say=pc]Думаю, мне просто нравится экспериментировать.[/say]")
 
-			saynn("[say=eliza]Life is too short, right? Yeah, that’s my motto too.[/say]")
+			saynn("[say=eliza]Жизнь слишком коротка, верно? Да, это и мой девиз тоже.[/say]")
 
-		saynn("Eventually the brewing is complete, Eliza puts it aside and lets it cool down a bit. Then she filters the result through some kind of mesh and fills a clean single-use syringe with it. She makes sure there are no air bubbles in it and then walks back to you.")
+		saynn("Наконец варка завершается; Элиза отставляет сосуд в сторону, давая ему немного остыть. Затем она процеживает полученную смесь через какую-то сетку и набирает её в чистый одноразовый шприц. Убедившись, что внутри нет пузырьков воздуха, она возвращается к тебе.")
 
-		saynn("[say=eliza]Ready? This should be safe. It’s only gonna make your body produce way more prolactin. It’s the lactation hormone. Well, maybe I also added some aphrodisiacs in the mix. But that’s nothing to worry about.[/say]")
+		saynn("[say=eliza]Готов(а)? Это должно быть безопасно. Твой организм просто начнет вырабатывать гораздо больше пролактина. Это гормон лактации. Ну, может, я еще подмешала туда немного афродизиаков. Но об этом не стоит беспокоиться.[/say]")
 
-		addButton("Sure", "Allow to be injected with some unknown drug", "sure")
+		addButton("Конечно", "Позволить вколоть неизвестный препарат", "sure")
 
 	if(state == "sure"):
 		playAnimation(StageScene.Duo, "sit", {npc="eliza", bodyState={exposedChest=true}})
 		
-		saynn("You nod softly and offer the doctor your shoulder. She quickly disinfects the area just under your collar and moves the syringe close to it. You feel the doctor's breath through the mask.")
+		saynn("Ты тихо киваешь и подставляешь доктору плечо. Она быстро дезинфицирует область чуть ниже воротника и подносит шприц. Ты чувствуешь дыхание врача сквозь маску.")
 
-		saynn("[say=eliza]Don’t move, inmate.[/say]")
+		saynn("[say=eliza]Не двигайся, заключенный(ая).[/say]")
 
-		saynn("You feel a sudden prick, the sharp needle pierces your skin with ease. Ow. You sit still as she slowly increases the pressure on the back of the syringe, injecting more of the glowing cyan drug into your bloodstream. At first you feel normal, just a slight warm feeling but it slowly starts to ramp up. Eliza carefully observes you.")
+		saynn("Ты чувствуешь резкий укол — острая игла с легкостью пронзает кожу. Ой. Ты сидишь неподвижно, пока она медленно давит на поршень шприца, вводя всё больше светящегося голубого препарата в твою кровь. Сначала всё кажется обычным, лишь легкое чувство тепла, но оно начинает постепенно нарастать. Элиза внимательно наблюдает за тобой.")
 
-		saynn("[say=eliza]Doing alright?[/say]")
+		saynn("[say=eliza]Как самочувствие?[/say]")
 
-		saynn("[say=pc]Yeah..[/say]")
+		saynn("[say=pc]Да уж..[/say]")
 
 		# (if has vagina)
 		if(GM.pc.hasReachableVagina()):
-			saynn("Your hand moves down to your crotch. Wow, you’re wet. You sneakily tease yourself, your digits rubbing your clit, trying to battle that warm feeling.")
+			saynn("Твоя рука опускается к паху. Ого, ты уже вся/весь в смазке. Ты украдкой начинаешь ласкать себя, потирая клитор пальцами, пытаясь совладать с этим нарастающим теплом.")
 
 		# (if has cock)
 		elif(GM.pc.hasReachablePenis()):
-			saynn("Wow, you feel your {pc.cock} becoming harder, you sneakily stroke yourself, trying to battle that warm feeling.")
+			saynn("Ого, ты чувствуешь, как твои {pc.cock} твердеют; ты украдкой ласкаешь себя, пытаясь бороться с этим теплом.")
 
 		# (if has clothing)
 		if(!GM.pc.isFullyNaked()):
-			saynn("Your free hand jumps onto your chest, you can feel your {pc.breasts} becoming.. heavier.. nipples.. itching.. Eliza watches as you cup your breasts with your palms, perky stiff nips rub against your hands through the clothing, you notice small wet spots appearing on it.")
+			saynn("Свободная рука взлетает к груди; ты чувствуешь, как твои {pc.breasts} становятся... тяжелее... соски... чешутся... Элиза наблюдает, как ты сжимаешь грудь ладонями; упругие, затвердевшие соски трутся о ладони сквозь одежду, и ты замечаешь, как на ткани проступают маленькие влажные пятна.")
 
 		# (else)
 		else:
-			saynn("Your free hand jumps onto your chest, you can feel your {pc.breasts} becoming.. heavier.. nipples.. itching.. Eliza watches as you cup your breasts with your palms, perky stiff nips rub against your hands.")
+			saynn("Твоя свободная рука непроизвольно взлетает к груди; ты чувствуешь, как твоя {pc.breasts} становится... тяжелее... соски... зудят... Элиза наблюдает за тем, как ты сжимаешь грудь ладонями, и как твои упругие, затвердевшие соски трутся о кожу.")
 
-		saynn("The warm feeling turns into full blown heat.. You squirm and shift around on that table, you grope yourself more, little moans escape from you. You can’t tell exactly but you think you see a slight smirk on the doctor's face through the mask.")
+		saynn("Тепло перерастает в настоящий жар... Ты ерзаешь и ворочаешься на столе, продолжая ласкать себя, из твоих уст срываются тихие стоны. Ты не уверена до конца, но тебе кажется, что сквозь маску на лице доктора промелькнула легкая ухмылка.")
 
-		saynn("[say=eliza]Seems like it’s working~. Gotta make sure.[/say]")
+		saynn("[say=eliza]Похоже, это работает~. Нужно убедиться.[/say]")
 
-		saynn("You breathe deeply, the doctor grabs your hands and pulls them away, exposing your heavy chest. The itching feeling in your nipples returns..")
+		saynn("Ты глубоко вдыхаешь, доктор хватает тебя за руки и убирает их в сторону, обнажая твою тяжелую грудь. Зуд в сосках возвращается снова...")
 
-		saynn("[say=pc]It does.. it works too well..[/say]")
+		saynn("[say=pc]Действительно... работает слишком хорошо...[/say]")
 
-		saynn("[say=eliza]Oh yeah? You wanna be milked like a silly cow that you are~? Gonna moo for me~?[/say]")
+		saynn("[say=eliza]Да неужели? Хочешь, чтобы тебя подоили, как глупую корову~? Будешь мычать для меня~?[/say]")
 
 		# (if clothed)
 		if(!GM.pc.isFullyNaked()):
-			saynn("You blush hard and are unable to hide it. You can feel your full {pc.breasts} leaking through the clothing, a few drops of {pc.milk} slide down the cloth. And that’s without being touched.")
+			saynn("Ты густо краснеешь, и это невозможно скрыть. Ты чувствуешь, как твоя полная {pc.breasts} просачивается сквозь одежду, несколько капель {pc.milk} скользят по ткани. И это даже без прикосновений.")
 
 		# (else)
 		else:
-			saynn("You blush hard and are unable to hide it. You can feel your full {pc.breasts} leaking, a few drops of {pc.milk} slide down your bare chest. And that’s without being touched.")
+			saynn("Ты густо краснеешь, и это невозможно скрыть. Ты чувствуешь, как твоя полная {pc.breasts} протекает, несколько капель {pc.milk} стекают по твоей обнаженной груди. И это даже без прикосновений.")
 
-		saynn("[say=eliza]Well, I call that a great success. The heat should pass in a few hours. You will stop lactating if you don’t get milked at least once every few days. Mhm?[/say]")
+		saynn("[say=eliza]Что ж, я называю это огромным успехом. Жар должен пройти через несколько часов. Лактация прекратится, если тебя не будут доить хотя бы раз в несколько дней. М-м?[/say]")
 
-		saynn("Eliza throws away the used syringe in the special bin, then takes off her gloves and the mask. She grabs your leash again. You can’t sit still, rubbing your crotch against the corner of the table..")
+		saynn("Элиза выбрасывает использованный шприц в специальный контейнер, затем снимает перчатки и маску. Она снова хватает тебя за поводок. Ты не можешь усидеть на месте, потирая пах о край стола...")
 
-		saynn("[say=pc]Thank you..[/say]")
+		saynn("[say=pc]Спасибо...[/say]")
 
-		saynn("[say=eliza]Don’t mention it~[/say]")
+		saynn("[say=eliza]Не за что~[/say]")
 
-		addButton("Leave", "Seems like you’re done here", "leave")
+		addButton("Уйти", "Похоже, на этом всё", "leave")
 
 	if(state == "leave"):
 		playAnimation(StageScene.Solo, "walk")
@@ -128,13 +128,13 @@ func _run():
 		GM.pc.setLocation("med_nearlab")
 		setLocationName("Med corridor")
 		
-		saynn("Eliza brings you out of the lab and then unleashes you.")
+		saynn("Элиза выводит тебя из лаборатории, а затем отпускает.")
 
-		saynn("[say=eliza]I promise you will find the exit yourself, I gotta go fill some papers.[/say]")
+		saynn("[say=eliza]Обещаю, ты найдешь выход сам, а мне нужно пойти заполнить кое-какие бумаги.[/say]")
 
 		# (scene ends)
 
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 		
 
 

@@ -10,130 +10,130 @@ func _run():
 		addCharacter("kait")
 		playAnimation(StageScene.Duo, "stand", {npc="kait"})
 		fromPC = getCharacter("kait").isPregnantFrom("pc")
-		saynn("You get approached by Kait. She walks up slowly, tail low, one paw resting on her belly.")
+		saynn("К тебе подходит Кейт. Она идет медленно, хвост опущен, одна лапа покоится на животе.")
 
-		saynn("[say=kait]Hey..[/say]")
+		saynn("[say=kait]Эй..[/say]")
 
-		saynn("[say=pc]What's up, Kait?[/say]")
+		saynn("[say=pc]Что такое, Кейт?[/say]")
 
-		saynn("She shifts her weight from one rear paw to the other.")
+		saynn("Она переминается с одной задней лапы на другую.")
 
-		saynn("[say=kait]You know what's up.. Look at me.[/say]")
+		saynn("[say=kait]Ты и сам знаешь что.. Посмотри на меня.[/say]")
 
-		saynn("[say=pc]Yeah? You got a rounder belly. Been eating well?[/say]")
+		saynn("[say=pc]Да? Животик стал круглее. Хорошо кушаешь?[/say]")
 
-		saynn("Her tail flicks, her eyes flash.")
+		saynn("Её хвост дергается, а глаза вспыхивают.")
 
-		saynn("[say=kait]No, dummy! I'm pregnant.."+str(" from you.. pretty sure.." if fromPC else "")+"[/say]")
+		saynn("[say=kait]Нет, тупица! Я беременна.."+str(" from you.. pretty sure.." if fromPC else "")+"[/say]")
 
 		if (!fromPC):
-			saynn("[say=pc]Congrats. But it wasn't me."+str(" I don't even have a way to do that." if !GM.pc.hasReachablePenis() else "")+"[/say]")
+			saynn("[say=pc]Поздравляю. Но это был не я."+str(" I don't even have a way to do that." if !GM.pc.hasReachablePenis() else "")+"[/say]")
 
-			saynn("She crosses her arms and looks away.")
+			saynn("Она скрещивает лапы на груди и отводит взгляд.")
 
-			saynn("[say=kait]I know it wasn't you! But you might be responsible for it! You used a cum-loaded strapon on me that one time..[/say]")
+			saynn("[say=kait]Я знаю, что это был не ты! Но ты можешь быть к этому причастен! Ты ведь однажды использовал на мне страпон, полный спермы...[/say]")
 
-			saynn("[say=pc]Does that make me a father suddenly?[/say]")
+			saynn("[say=pc]Это что, делает меня отцом в одночасье?[/say]")
 
-			saynn("Her tail curls around her leg, her ears go flat with her head.")
+			saynn("Её хвост обвивает ногу, а уши прижимаются к голове.")
 
-			saynn("[say=kait]Yes. Well.. No.. I don't know, okay?! You're still responsible.. in a way.[/say]")
+			saynn("[say=kait]Да. Ну... нет... да хрен его знает, ладно?! Ты всё равно в этом виноват... в каком-то смысле.[/say]")
 
 		else:
-			saynn("[say=pc]Congrats. I bred you. Now you are gonna be a mother.[/say]")
+			saynn("[say=pc]Поздравляю. Я тебя осеменил. Теперь ты будешь матерью.[/say]")
 
-			saynn("She blinks. Her ears perk up.. and then droop.. her tail curls around her leg.")
+			saynn("Она моргает. Её уши сначала встают торчком, а затем поникают... хвост обвивает её ногу.")
 
-			saynn("[say=kait]Thanks.. I expected a bit more maybe..[/say]")
+			saynn("[say=kait]Спасибо... Я, может, ожидал чего-то большего...[/say]")
 
-		saynn("[say=pc]What do you want me to do?[/say]")
+		saynn("[say=pc]И чего ты от меня хочешь?[/say]")
 
-		saynn("She hugs her belly and looks down at the floor.")
+		saynn("Она обхватывает свой живот руками и смотрит в пол.")
 
-		saynn("[say=kait]Anything you want.. look after me more.. I don't know.. I'm nervous a bit.[/say]")
+		saynn("[say=kait]Всё, что захочешь... заботься обо мне больше... не знаю... мне немного страшно.[/say]")
 
-		saynn("[say=pc]Is this your first time?[/say]")
+		saynn("[say=pc]Это в первый раз?[/say]")
 
-		saynn("She scratches her cheek and tugs on her collar.")
+		saynn("Она чешет щеку и теребит воротник.")
 
-		saynn("[say=kait]I don't.. remember.[/say]")
+		saynn("[say=kait]Я не... помню.[/say]")
 
-		saynn("[say=pc]What do you mean you don't remember?[/say]")
+		saynn("[say=pc]В смысле «не помнишь»?[/say]")
 
-		saynn("She throws her paws up.")
+		saynn("Она всплескивает лапами.")
 
-		saynn("[say=kait]I wasn't keeping track before, alright?! But now I will..[/say]")
+		saynn("[say=kait]Раньше я не следила за этим, ясно?! Но теперь буду...[/say]")
 
-		saynn("She hugs herself again and waits.")
+		saynn("Она снова обхватывает себя руками и ждет.")
 
-		addButton("Embrace", "Give Kait a warm embrace and tell her that everything is gonna be alright", "embrace_kait")
-		addButton("No time", "Give Kait a cold response", "cold_response")
+		addButton("Обнять", "Крепко обнять Кейт и сказать ей, что всё будет хорошо", "embrace_kait")
+		addButton("Нет времени", "Ответить Кейт холодно", "cold_response")
 	if(state == "cold_response"):
 		playAnimation(StageScene.Grope, "tease", {pc="kait", npc="pc"})
-		saynn("[say=pc]It's great news, Kait. But we gotta focus on our main goal, escaping this place.[/say]")
+		saynn("[say=pc]Это отличная новость, Кейт. Но нам нужно сосредоточиться на главной цели — побеге из этого места.[/say]")
 
-		saynn("Her tail puffs up.")
+		saynn("Её хвост распушается.")
 
-		saynn("[say=kait]You got me pregnant.. potentially.. and this is all you have to say?![/say]")
+		saynn("[say=kait]Ты сделал меня беременной... возможно... и это всё, что ты можешь сказать?![/say]")
 
-		saynn("[say=pc]You are gonna be a great mother, Kait. I might breed you again in the future. And then more. Get used to it.[/say]")
+		saynn("[say=pc]Ты будешь отличной матерью, Кейт. Возможно, я осеменю тебя снова в будущем. И еще не раз. Привыкай.[/say]")
 
-		saynn("She pouts, tail wagging annoyed, her paws are under her belly, supporting.")
+		saynn("Она дуется, раздраженно виляя хвостом; её лапы придерживают живот снизу.")
 
-		saynn("[say=kait]Huff..[/say]")
+		saynn("[say=kait]Хфф...[/say]")
 
-		saynn("[say=pc]Kait. You are a lilac. You are a sex toy. A slut.[/say]")
+		saynn("[say=pc]Кейт. Ты — лиловая. Ты — секс-игрушка. Шлюха.[/say]")
 
-		saynn("She turns her head away.")
+		saynn("Она отворачивает голову.")
 
-		saynn("[say=kait]I'm not a slut..[/say]")
+		saynn("[say=kait]Я не шлюха...[/say]")
 
-		saynn("[say=pc]Uh huh. Focus, Kait.[/say]")
+		saynn("[say=pc]Угу. Соберись, Кейт.[/say]")
 
-		saynn("[say=kait]Fine..[/say]")
+		saynn("[say=kait]Ладно...[/say]")
 
-		saynn("And so she leaves you be.")
+		saynn("И вот она оставляет тебя в покое.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "embrace_kait"):
 		playAnimation(StageScene.GropeBehind, "idle", {pc="kait", npc="pc"})
-		saynn("[say=pc]Come here, kitty cat.[/say]")
+		saynn("[say=pc]Иди сюда, кошечка.[/say]")
 
-		saynn("She steps closer. You put your arms around her and gently embrace her from behind. Your hands land on her belly and caress it, through the cloth. She leans back into you a little.")
+		saynn("Она подходит ближе. Ты обнимаешь её со спины, нежно прижимая к себе. Твои ладони ложатся на её живот, лаская его сквозь ткань. Она слегка откидывается на тебя.")
 
-		saynn("You whisper into her ear.")
+		saynn("Ты шепчешь ей на ушко.")
 
-		saynn("[say=pc]Things are gonna be alright. I'm near. So don't be nervous, okay?[/say]")
+		saynn("[say=pc]Всё будет хорошо. Я рядом. Так что не нервничай, ладно?[/say]")
 
-		saynn("She nods slowly, her tail wraps around your leg now.")
+		saynn("Она медленно кивает, и её хвост обвивает твою ногу.")
 
-		saynn("[say=kait]Okay.[/say]")
+		saynn("[say=kait]Хорошо.[/say]")
 
-		saynn("[say=pc]Inmates aren't allowed to have children for obvious reasons. So they will be taken away. The prison will worry about them.[/say]")
+		saynn("[say=pc]Заключенным нельзя иметь детей по очевидным причинам. Поэтому их заберут. О них будет заботиться тюрьма.[/say]")
 
-		saynn("She puts her paws over yours on her belly.")
+		saynn("Она накрывает твои руки своими лапами на своём животе.")
 
-		saynn("[say=kait]Makes sense..[/say]")
+		saynn("[say=kait]Логично...[/say]")
 
-		saynn("[say=pc]We just have to be careful for now. Maybe don't go out on any missions for now.[/say]")
+		saynn("[say=pc]Сейчас нам просто нужно быть осторожными. Может, пока не стоит ходить на миссии.[/say]")
 
-		saynn("Her ears perk.")
+		saynn("Её ушки навостряются.")
 
-		saynn("[say=kait]Escaping is way more important.[/say]")
+		saynn("[say=kait]Побег куда важнее.[/say]")
 
-		saynn("[say=pc]It can wait.[/say]")
+		saynn("[say=pc]Это может подождать.[/say]")
 
-		saynn("You nuzzle her cheek.. and hear a quiet purr coming back. She relaxes against you.")
+		saynn("Ты ласкаешься к её щеке... и слышишь в ответ тихое мурлыканье. Она расслабляется в твоих руках.")
 
-		saynn("You spend some time like this. Her breathing slows, gets calmer.")
+		saynn("Вы проводите так какое-то время. Её дыхание замедляется и становится ровнее.")
 
-		saynn("[say=kait]Thank you. I feel better.[/say]")
+		saynn("[say=kait]Спасибо. Мне стало лучше.[/say]")
 
-		saynn("[say=pc]Good. Now let's focus.[/say]")
+		saynn("[say=pc]Хорошо. А теперь давай сосредоточимся.[/say]")
 
-		saynn("She steps away and nods.")
+		saynn("Она отстраняется и кивает.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

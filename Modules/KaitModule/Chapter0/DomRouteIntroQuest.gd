@@ -4,7 +4,7 @@ func _init():
 	id = "DomRouteIntroQuest"
 
 func getVisibleName():
-	return "Asserting Yourself (Dom Route)"
+	return "Умение постоять за себя (Рут Дома)"
 
 func getProgress():
 	var result:Array = []

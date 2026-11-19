@@ -9,254 +9,254 @@ func _run():
 	if(state == ""):
 		addCharacter("avy")
 		playAnimation(StageScene.Duo, "stand", {npc="avy"})
-		saynn("Which penis pump do you want to use on Avy?")
+		saynn("Какой насос для пениса ты хочешь использовать на Эви?")
 
 		addPumpButtons()
-		addButton("Cancel", "You changed your mind!", "endthescene")
+		addButton("Отмена", "Ты передумал!", "endthescene")
 		if (false):
-			addButton("Nope", "You shouldn't see this", "pick_pump")
+			addButton("Неа", "Тебе не стоит этого видеть", "pick_pump")
 	if(state == "pick_pump"):
-		saynn("You're keeping the pump out of view for now.")
+		saynn("Пока что ты держишь насос напоказ.")
 
-		saynn("[say=pc]How are you feeling, Avy?[/say]")
+		saynn("[say=pc]Как ты себя чувствуешь, Эви?[/say]")
 
-		saynn("[say=avy]Horny. Especially with you around.[/say]")
+		saynn("[say=avy]Возбужденной. Особенно когда ты рядом.[/say]")
 
-		saynn("You know that she probably won't agree to it. Avy seems quite.. simple.. in her taste of sexual activities. But maybe you can use that against her.")
+		saynn("Ты понимаешь, что она, скорее всего, не согласится. Эви кажется довольно... простой... в своих сексуальных предпочтениях. Но, возможно, ты сможешь использовать это в свою пользу.")
 
-		saynn("[say=pc]I might help with that. Come here.[/say]")
+		saynn("[say=pc]Я могу с этим помочь. Иди сюда.[/say]")
 
-		saynn("You grab her hand and pull her towards the hideout.")
+		saynn("Ты берешь её за руку и тянешь к укрытию.")
 
-		addButton("Continue", "See what happens next", "in_hideout")
+		addButton("Продолжить", "Смотреть, что будет дальше", "in_hideout")
 	if(state == "in_hideout"):
 		aimCameraAndSetLocName("hideout_chill")
 		playAnimation(StageScene.GropeBehind, "idle", {pc="avy", npc="pc", bodyState={exposedCrotch=true, hard=true}})
-		saynn("You find a secluded spot and embrace the foxy, your hands pull her shorts down enough to expose her sheath.. her red cock is already half-hard. She is indeed horny for you. Good.")
+		saynn("Ты находишь укромное местечко и обнимаешь эту лисичку; твои руки стягивают её шорты достаточно низко, чтобы обнажить её чехол... её красный член уже наполовину твердый. Она действительно хочет тебя. Хорошо.")
 
-		saynn("[say=avy]Someone is eager.[/say]")
+		saynn("[say=avy]Кто-то очень нетерпелив.[/say]")
 
-		saynn("[say=pc]Can say the same. I brought a toy today.[/say]")
+		saynn("[say=pc]Могу сказать то же самое. Я принесла сегодня игрушку.[/say]")
 
-		saynn("[say=avy]Toy? I don't do toys. Well, I do. The alive ones. Most of the time.[/say]")
+		saynn("[say=avy]Игрушки? Я не по игрушкам. Ну, то есть, по живым — это да. Чаще всего.[/say]")
 
-		saynn("You show her the penis pump that you brought. A big, long suction chamber that has a pleasure ring mechanism inside it. Fancy thing. But Avy doesn't seem to be sharing your excitement anymore.")
+		saynn("Ты показываешь ей принесенный с собой насос для члена. Большая длинная вакуумная камера с механизмом кольца для стимуляции внутри. Штучка навороченная. Но Эви, похоже, уже не разделяет твоего восторга.")
 
-		saynn("[say=avy]You wanna milk me like I'm a bull? Wow, you're such a weirdo. I think I will pass.[/say]")
+		saynn("[say=avy]Хочешь подоить меня, как быка? Ого, ну ты и извращенец. Пожалуй, я пасу.[/say]")
 
-		saynn("[say=pc]It will feel good, trust me. Do you trust me?[/say]")
+		saynn("[say=pc]Будет очень приятно, поверь мне. Ты мне веришь?[/say]")
 
-		saynn("[say=avy]Sure, quit trying to manipulate me. Why wouldn't I just go grab a slutty liliac to fuck? Lots of them around. Or I could rail you, that sounds way more fun.[/say]")
+		saynn("[say=avy]Конечно, только хватит пытаться мной манипулировать. Почему бы мне просто не пойти и не найти какую-нибудь шлюшку с лиловыми волосами, чтобы трахнуть? Их тут полно. Или я мог бы оттрахать тебя, это звучит куда веселее.[/say]")
 
-		saynn("That was expected. Fucking holes and breaking bones is enough for her. Hard to blame.")
+		saynn("Это было ожидаемо. Ей хватает ебли в дырки и ломания костей. Трудно её винить.")
 
-		saynn("[say=pc]I see. That's okay, I understand.[/say]")
+		saynn("[say=pc]Понятно. Ладно, я понимаю.[/say]")
 
-		saynn("You put the pump away and also pull her shorts back over her cock.. before proceeding to walk away.")
+		saynn("Ты убираешь насос и натягиваешь на её член шорты... после чего собираешься уйти.")
 
-		saynn("You're stopped almost instantly by Avy's hand though.")
+		saynn("Однако рука Эви почти мгновенно тебя останавливает.")
 
-		saynn("[say=avy]No-no-no, you're not going anywhere after saying that. The fuck do you mean?[/say]")
+		saynn("[say=avy]Нет-нет-нет, после таких слов ты никуда не уйдешь. В каком смысле «пасу»?![/say]")
 
-		saynn("She is glaring at you with mean eyes. Poor foxy is furious.")
+		saynn("Она сверлит тебя злобным взглядом. Бедняжка-лисичка в ярости.")
 
-		saynn("[say=pc]Nothing~.[/say]")
+		saynn("[say=pc]Ничего~.[/say]")
 
-		saynn("[say=avy]Don't make me choke it out of you.[/say]")
+		saynn("[say=avy]Не заставляй меня выжимать из тебя это силой.[/say]")
 
-		saynn("The old Avy would already be doing that. You put on a cheeky smile.")
+		saynn("Старая Ави уже давно бы это сделала. Ты лишь дерзко ухмыляешься.")
 
-		saynn("[say=pc]I understood.. that this thing.. is simply not vanilla enough for you. And that's okay~.[/say]")
+		saynn("[say=pc]Я поняла... что эта штуковина... для тебя слишком пресная. И это нормально~.[/say]")
 
-		saynn("Her face.. gets very upset with you. She flashes her fangs. Her eyes squint, probably suspecting foul play.")
+		saynn("Её лицо искажается от раздражения. Она скалится, обнажая клыки. Глаза сужаются — похоже, она подозревает подвох.")
 
-		saynn("[say=avy]Grr.. fuck you.. put the thing on.[/say]")
+		saynn("[say=avy]Ррр... да пошёл ты... просто надень эту хрень.[/say]")
 
-		saynn("You tilt your head slightly, still smiling.")
+		saynn("Ты слегка наклоняешь голову, всё ещё улыбаясь.")
 
-		saynn("[say=pc]What was that?[/say]")
+		saynn("[say=pc]Что это было?[/say]")
 
-		saynn("[say=avy]Put the stupid thing on my cock right now.[/say]")
+		saynn("[say=avy]Надень эту дурацкую штуку на мой член прямо сейчас.[/say]")
 
-		saynn("So easy. You just had to ask her nicely.")
+		saynn("Так просто. Нужно было всего лишь попросить её вежливо.")
 
-		addButton("Continue", "See what happens next", "put_toy_on")
+		addButton("Продолжить", "Смотреть, что будет дальше", "put_toy_on")
 	if(state == "put_toy_on"):
 		playAnimation(StageScene.GropeBehind, "grope", {pc="avy", npc="pc", bodyState={exposedCrotch=true, hard=true}})
-		saynn("And so you embrace her again, expose her cock again, and begin securing the contraption on top of the shaft. One quick flick of the power switch.. and the thing sucks the air out, tightly securing itself on that red rocket.")
+		saynn("И ты снова прижимаешь её к себе, вновь обнажая её член, и начинаешь закреплять устройство на стволе. Один быстрый щелчок выключателя... и прибор высасывает воздух, намертво обхватывая эту красную ракету.")
 
-		saynn("[say=pc]Nice and tight.[/say]")
+		saynn("[say=pc]Приятный и тугой.[/say]")
 
-		saynn("[say=avy]Looks so fucking flimsy. I bet I can snap that thing in half with my cock.[/say]")
+		saynn("[say=avy]Выглядит таким ебаным хлипким. Спорим, я смогу переломить эту хрень своим членом пополам?[/say]")
 
-		saynn("[say=pc]Well, try to do that then. I bet you will cum way before that.[/say]")
+		saynn("[say=pc]Ну так попробуй. Спорим, ты кончишь задолго до того, как это случится.[/say]")
 
-		saynn("[say=avy]You're on. I will break it and pump you full instead.[/say]")
+		saynn("[say=avy] По рукам. Я его сломаю, а вместо этого накачаю тебя до отвала.[/say]")
 
-		saynn("You flick the power switch again.. and the toy starts doing its thing.")
+		saynn("Вы снова щелкаете выключателем... и игрушка начинает свою работу.")
 
-		saynn("The obvious thing that you see is the pleasure ring. It quickly measures the length of Avy's cock.. and then proceeds to slide along it, back and forth, at a fairly slow pace.")
+		saynn("Первое, что бросается в глаза — это кольцо для стимуляции. Оно быстро замеряет длину члена Эви... а затем начинает медленно скользить по нему туда-сюда.")
 
-		saynn("[say=avy]Mmh.. Calling me vanilla.. the audacity of this bitch.[/say]")
+		saynn("[say=avy]Ммм... Называет меня «ванильной»... какая наглость у этой сучки.[/say]")
 
-		saynn("The non-obvious effect is the toy pumping some of the air in and out of that transparent tube, sometimes creating negative pressure inside.. pressure that caresses Avy's member from all sides at once.")
+		saynn("Неочевидный эффект заключается в том, что игрушка выкачивает и закачивает воздух в прозрачную трубку, иногда создавая внутри отрицательное давление... давление, которое ласкает член Эви со всех сторон одновременно.")
 
-		saynn("You just watch.. as the ring continues its slow, deliberate slide along her shaft. Back and forth.")
+		saynn("Вы просто наблюдаете... как кольцо продолжает свое медленное, размеренное скольжение по её стволу. Туда-сюда.")
 
-		saynn("Avy's jaw is clenched tight, her arms are by her sides. She is staring at the pump like it is the most boring thing in the universe.")
+		saynn("Челюсти Эви плотно сжаты, руки по швам. Она смотрит на насос так, будто это самая скучная вещь во вселенной.")
 
-		saynn("[say=avy]This is it? This is what you were so excited about?[/say]")
+		saynn("[say=avy]И это всё? Вот из-за чего ты так носился?[/say]")
 
-		saynn("[say=pc]Just wait.[/say]")
+		saynn("[say=pc]Погоди еще.[/say]")
 
-		saynn("[say=avy]Pathetic.[/say]")
+		saynn("[say=avy]Жалкая.[/say]")
 
-		saynn("Your chin is resting on her shoulder, your hands resting on her hips, digits sliding under her shirt to do lazy circles on her dark fur.")
+		saynn("Твой подбородок покоится на её плече, руки лежат на её бёдрах, а пальцы скользят под рубашку, лениво выписывая круги по её тёмному меху.")
 
-		saynn("The toy keeps working. That red cock is fully hard now, not even touching the walls of the transparent tube. The pleasure ring is still sliding along it, of course, causing a bead of pre to form at the tip. The suction pulls it away quickly.")
+		saynn("Игрушка продолжает работать. Этот красный член теперь стоит во весь рост, даже не касаясь стенок прозрачной трубки. Кольцо для стимуляции, конечно, всё так же скользит по нему, заставляя на кончике собираться каплю предэякулята. Всасывающий эффект тут же её затягивает.")
 
-		saynn("Avy visibly tries to clench, her whole body getting tense, her cock visibly inflating a bit from the influx of blood. The ring just opens up more to account for that, the tube is still completely intact.")
+		saynn("Ави заметно пытается сжаться, всё её тело напрягается, а член на глазах раздувается от прилива крови. Кольцо просто расширяется ещё сильнее, чтобы подстроиться под это, так что трубка остаётся абсолютно целой.")
 
-		saynn("[say=avy]Grr.[/say]")
+		saynn("[say=avy]Гррр.[/say]")
 
-		saynn("[say=pc]Good try.[/say]")
+		saynn("[say=pc]Хорошая попытка.[/say]")
 
-		saynn("She huffs. Her hips shift slightly, just a tiny movement. The pleasure ring finds a sensitive spot that is the pointy head of her member.. making Avy's breath catch for a moment.. before she covers it with a low growl again.")
+		saynn("Она фыркает. Её бёдра слегка смещаются — совсем мимолётное движение. Кольцо находит чувствительную точку — самую головку её члена... отчего у Ави на мгновение перехватывает дыхание... прежде чем она снова прикрывает это низким рычанием.")
 
-		saynn("[say=avy]Grrh.. stupid thing.[/say]")
+		saynn("[say=avy]Гррх... дурацкая штуковина.[/say]")
 
-		saynn("[say=pc]You're doing great.[/say]")
+		saynn("[say=pc]У тебя отлично получается.[/say]")
 
-		saynn("[say=avy]Shut up.[/say]")
+		saynn("[say=avy]Заткнись.[/say]")
 
-		saynn("She tries to clench again, her cock flexing inside the pump. But the outcome doesn't change, the action only pushes more blood down into her length. The tube gets tighter around her.. but that's about it.")
+		saynn("Она снова пытается сжаться, её член напрягается внутри помпы. Но результат не меняется: это действие лишь прогоняет ещё больше крови в ствол. Трубка плотнее обхватывает её... но на этом всё.")
 
-		saynn("[say=avy]Mhh..[/say]")
+		saynn("[say=avy]Ммм..[/say]")
 
-		saynn("More and more pre drips from the cock's tip as the ring keeps forcing it out of her.")
+		saynn("С кончика члена всё сильнее капает предэякулят, пока кольцо продолжает выталкивать его наружу.")
 
-		saynn("[say=pc]Someone's leaking.[/say]")
+		saynn("[say=pc]Кто-то течёт.[/say]")
 
-		saynn("[say=avy]I'm not.. it's just.. fuck off..[/say]")
+		saynn("[say=avy]Я не.. это просто.. отъебись..[/say]")
 
-		saynn("Her voice is losing its.. meanness.. going a bit more high-pitched.")
+		saynn("Её голос теряет свою.. дерзость.. становясь чуть более высоким.")
 
-		addButton("Continue", "See what happens next", "faster_stuff")
+		addButton("Продолжить", "Смотреть, что будет дальше", "faster_stuff")
 	if(state == "faster_stuff"):
 		playAnimation(StageScene.GropeBehind, "gropefast", {pc="avy", npc="pc", bodyState={exposedCrotch=true, hard=true}})
-		saynn("You slide your hands up her sides, feeling the warmth of her body. Your fingers find the buttons on her shirt and undo them, one by one, revealing her breasts. Then, you cup them.")
+		saynn("Ты ведешь руками вверх по её бокам, чувствуя тепло её тела. Твои пальцы находят пуговицы на её рубашке и расстегивают их одну за другой, обнажая грудь. Затем ты обхватываешь её ладонями.")
 
-		saynn("[say=avy]Really?..[/say]")
+		saynn("[say=avy]Серьёзно?..[/say]")
 
-		saynn("[say=pc]If you can handle the pump with ease, what harm is there?[/say]")
+		saynn("[say=pc]Если ты легко справишься с насосом, то что в этом плохого?[/say]")
 
-		saynn("[say=avy]Grr-r..[/say]")
+		saynn("[say=avy]Грр-р..[/say]")
 
-		saynn("Avy's nipples feel incredibly stiff. You just gently play with them, rubbing and tugging. While you do that, her breathing gets faster. The ring keeps sliding down to her base.. then back up.. causing her hips to jerk forward involuntarily.")
+		saynn("Соски Эви невероятно твердые. Ты лишь нежно играешь с ними, потирая и слегка оттягивая. Пока ты это делаешь, её дыхание учащается. Кольцо продолжает скользить вниз к основанию.. а затем обратно.. заставляя её бедра непроизвольно дергаться вперед.")
 
-		saynn("[say=avy]Nngh..[/say]")
+		saynn("[say=avy]Ннгх..[/say]")
 
-		saynn("She bites her lip. Hard.")
+		saynn("Она сильно прикусывает губу.")
 
-		saynn("The pump keeps going.. stimulating that drippy cock in multiple ways. You can see the veins pulsing a bit.. the ring gliding over them all.. over every ridge.")
+		saynn("Помпа продолжает работать.. стимулируя этот сочащийся член самыми разными способами. Видно, как пульсируют вены.. а кольцо скользит по ним.. по каждому выступу.")
 
-		saynn("Avy's body can't seem to stay still anymore, her hips rocking slightly. Little noises are escaping her throat, tiny huffs and half-swallowed groans.")
+		saynn("Тело Эви уже не может оставаться неподвижным, её бёдра слегка покачиваются. Из горла вырываются звуки: тихие вздохи и полузадушенные стоны.")
 
-		saynn("[say=pc]Someone is losing~.[/say]")
+		saynn("[say=pc]Кто-то проигрывает~.[/say]")
 
-		saynn("[say=avy]This is.. nothing.. mh..[/say]")
+		saynn("[say=avy]Это так.. пустяки.. мх..[/say]")
 
-		saynn("[say=pc]Sure.[/say]")
+		saynn("[say=pc]Конечно.[/say]")
 
-		saynn("[say=avy]I've had.. way better..[/say]")
+		saynn("[say=avy]У меня было.. и получше..[/say]")
 
-		saynn("[say=pc]Of course.[/say]")
+		saynn("[say=pc]Ну конечно.[/say]")
 
-		saynn("[say=avy]You're so.. nngh.. annoying..[/say]")
+		saynn("[say=avy]Ты такой.. ннгх.. раздражающий..[/say]")
 
-		saynn("The pump increases its onslaught suddenly, the ring speeding up! Avy's back arches.")
+		saynn("Помпа внезапно усиливает натиск, кольцо ускоряется! Спина Эви выгибается дугой.")
 
-		saynn("[say=avy]A.. ah..[/say]")
+		saynn("[say=avy]А.. ах..[/say]")
 
-		saynn("She slaps a hand over her mouth, trying to cover her moan. Her cock is pulsing visible inside the tube now, throbbing with each her heartbeet. Pre is flowing from her tip.. more and more.")
+		saynn("Она прижимает ладонь ко рту, пытаясь заглушить стон. Её член теперь заметно пульсирует внутри трубки, вздрагивая в такт каждому удару сердца. Из кончика течёт пре.. всё больше и больше.")
 
-		saynn("[say=avy]MMphh.. hh.. f-fuck.. you..[/say]")
+		saynn("[say=avy]Мммф.. хх.. бля.. ты..[/say]")
 
-		saynn("She is panting, her chest going up and down fast while you're teasing her nips still. You squeeze her tits gently and she shivers.")
+		saynn("Она тяжело дышит, её грудь быстро вздымается и опускается, пока ты продолжаешь дразнить её соски. Ты мягко сжимаешь её титы, и она вздрагивает.")
 
-		saynn("[say=avy]S-stop.. f-fucking hell.. you.. bitch-..[/say]")
+		saynn("[say=avy]Х-хватит.. черт подери.. ты.. суч..[/say]")
 
-		saynn("Her voice cracks.")
+		saynn("Её голос срывается.")
 
-		saynn("[say=pc]Don't hold back, silly.[/say]")
+		saynn("[say=pc]Не сдерживайся, глупышка.[/say]")
 
-		saynn("You roll her nipples between your fingers.. and she moans. Her whole body jerks again.")
+		saynn("Ты перекатываешь её соски между пальцами... и она стонет. Всё её тело снова содрогается.")
 
-		saynn("[say=avy]I'm not.. I'm not gonna..[/say]")
+		saynn("[say=avy]Я не.. я не собираюсь..[/say]")
 
-		saynn("But her cock says otherwise. It's twitching constantly now, the pleasure ring stroking every sensitive spot. Her knot is starting to swell.")
+		saynn("Но её член говорит об обратном. Он постоянно подергивается, а кольцо удовольствия ласкает каждую чувствительную точку. Её узел начинает набухать.")
 
-		saynn("[say=avy]No.. wait.. the knot.. f-fuck..[/say]")
+		saynn("[say=avy]Нет.. подожди.. узел.. блядь..[/say]")
 
-		saynn("The ring reaches that fat orb.. and squeezes it. Avy lets out a stifled moan again.")
+		saynn("Кольцо достигает этого жирного шара.. и сжимает его. Ави снова издает сдавленный стон.")
 
-		saynn("[say=avy]Oh fuck.. ah.. oh fuck..[/say]")
+		saynn("[say=avy]Ох блядь.. ах.. о боже, блядь..[/say]")
 
-		saynn("Her hips buck.. her knot is fully inflated by this point.. and the ring keeps squeezing it.")
+		saynn("Ее бедра дергаются.. к этому моменту ее узел раздулся на полную.. а кольцо продолжает его сдавливать.")
 
-		saynn("Her balls begin twitching. Her shaft starts throbbing..")
+		saynn("Ее яички начинают подергиваться. Член начинает пульсировать..")
 
-		saynn("This is it.")
+		saynn("Вот оно.")
 
-		addButton("Continue", "See what happens next", "avy_cums")
+		addButton("Продолжить", "Смотреть, что будет дальше", "avy_cums")
 	if(state == "avy_cums"):
 		playAnimation(StageScene.GropeBehind, "orgasm", {pc="avy", npc="pc", bodyState={exposedCrotch=true, hard=true}})
-		saynn("She cums. Hard.")
+		saynn("Она кончает. Мощно.")
 
-		saynn("[say=avy]Nnnghh-!..[/say]")
+		saynn("[say=avy]Нннгх!..[/say]")
 
-		saynn("Her cock pulses violently inside the pump. Thick ropes of cum shoot from the tip.. making the toy immediately suck it all away into its internal reservoir. Again and again.")
+		saynn("Ее член неистово пульсирует внутри помпы. Густые струи спермы вылетают из кончика.. и игрушка тут же всасывает всё в свой внутренний резервуар. Снова и снова.")
 
-		saynn("Avy's balls get drained.. more and more.. while Avy shudders and gasps, throwing her head back.")
+		saynn("Яички Ави опустошаются.. всё больше и больше.. пока она содрогается и ловит ртом воздух, запрокинув голову.")
 
-		saynn("It keeps going for a while too.. The pump keeps extending her orgasm by milking her further, drawing out every last drop of seed.. until she is completely spent.")
+		saynn("Это продолжается довольно долго... Насос растягивает её оргазм, выжимая из неё всё больше и больше, вытягивая последнюю каплю семени... пока она окончательно не обессилеет.")
 
-		saynn("[say=avy]..hah.. f-fuck.. s-shit..[/say]")
+		saynn("[say=avy]..ах.. б-блядь.. ч-черт..[/say]")
 
-		saynn("Her body slumps against you.")
+		saynn("Её тело обмякает на твоих руках.")
 
-		saynn("You reach down and flick the power switch off.")
+		saynn("Ты тянешься вниз и щелкаешь выключателем.")
 
-		saynn("[say=pc]Told you it would feel good.[/say]")
+		saynn("[say=pc]Говорил же, что будет приятно.[/say]")
 
-		saynn("[say=avy]Fuck you..[/say]")
+		saynn("[say=avy]Блять тебя..[/say]")
 
-		addButton("Take it off", "Take the pump off", "take_pump_back")
+		addButton("Снять устройство", "Снять насос", "take_pump_back")
 	if(state == "take_pump_back"):
 		playAnimation(StageScene.GropeBehind, "idle", {pc="avy", npc="pc"})
-		saynn("You carefully take the pump off of her member..")
+		saynn("Ты осторожно снимаешь насос с её члена...")
 
-		saynn("[say=pc]Nice yield.[/say]")
+		saynn("[say=pc]Хороший улов.[/say]")
 
-		saynn("[say=avy]..fucking.. w-weirdo..[/say]")
+		saynn("[say=avy]..чертов.. у-урод..[/say]")
 
-		saynn("[say=pc]And you're a sore loser, Avy.[/say]")
+		saynn("[say=pc]А ты всё такая же злопамятная, Эви.[/say]")
 
-		saynn("She lets out a nervous chuckle.")
+		saynn("Она нервно посмеивается.")
 
-		saynn("[say=avy]I.. should just have railed your cute ass..[/say]")
+		saynn("[say=avy]Мне.. стоило просто оттрахать твою милую жопку..[/say]")
 
-		saynn("You smirk and pat her on her hip.")
+		saynn("Ты ухмыляешься и хлопаешь её по бедру.")
 
-		saynn("[say=pc]C'mon, go do your stuff now.[/say]")
+		saynn("[say=pc]Да ладно, иди уже, занимайся своими делами.[/say]")
 
-		saynn("[say=avy]I will..[/say]")
+		saynn("[say=avy]Обязательно..[/say]")
 
-		saynn("She is still trying to get her breathing back. You help pull her shorts back over her sheath.")
+		saynn("Она всё ещё пытается восстановить дыхание. Ты помогаешь ей натянуть шорты обратно на её щель.")
 
-		saynn("And so you go back.")
+		saynn("И вот ты возвращаешься.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 func addPumpButtons():
 	var pumps = GM.pc.getInventory().getItemsWithTag(ItemTag.PenisPump)
 	for pump in pumps:

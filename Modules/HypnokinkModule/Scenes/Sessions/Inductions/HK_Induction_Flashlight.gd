@@ -11,47 +11,47 @@ func _run():
 		addCharacter("vion")
 		playAnimation(StageScene.Duo, "sit", {npc="vion", npcAction="sit"})
 		
-		saynn("[say=vion]Now where did I put that...[/say]")
+		saynn("[say=vion]Так, куда же я её дел...[/say]")
 
-		saynn("{vion.name} looks around, searches under his pillow of his bed, then behind one of the sofa's cushions, before finally bending down and rooting under the sofa. He victoriously emerges with a small flashlight in his grasp. You recognize it as the type that comes with some of the mining gear.")
+		saynn("{vion.name} оглядывается по сторонам, заглядывает под свою подушку, затем за диванные подушки, после чего наконец наклоняется и начинает шарить под диваном. Он триумфально выпрямляется, сжимая в руке маленький фонарик. Ты узнаёшь в нём модель, которая обычно идёт в комплекте с шахтёрским снаряжением.")
 
-		saynn("[say=vion]Sit down on the sofa, if you'd please.[/say]")
+		saynn("[say=vion]Присядь на диван, если не трудно.[/say]")
 		
-		saynn("You do so. {vion.name} brings the chair over and seats himself directly opposite of you.")
+		saynn("Ты подчиняешься. {vion.name} подтаскивает стул и садится прямо напротив тебя.")
 
-		saynn("[say=vion]Now this is very simple. All you have to do is follow the light, alright?[/say]")
+		saynn("[say=vion]Сейчас всё очень просто. Тебе нужно всего лишь следить за лучом света, хорошо?[/say]")
 
-		saynn("He turns the flashlight on, then decreases the brightness to the lowest setting. Then he holds it up at arm's length in front of you.")
+		saynn("Он включает фонарик, затем убавляет яркость до самого минимума. После этого он вытягивает руку перед твоим лицом.")
 
-		saynn("[say=pc]Okay. Easy.[/say]")
+		saynn("[say=pc]Так. Легко.[/say]")
 
-		saynn("He raises it slightly, then slowly starts drawing a circle.")
+		saynn("Он слегка приподнимает фонарик и начинает медленно описывать им круги.")
 
-		saynn("[say=vion]Ah, no, keep your head still please. Follow it with just your eyes.[/say]")
-		saynn("[say=vion]Relax your shoulders. Lean into the cushions. No need to be so stiff.[/say]")
+		saynn("[say=vion]Ах, нет, пожалуйста, не двигай головой. Следи только глазами.[/say]")
+		saynn("[say=vion]Расслабь плечи. Откинься на подушки. Не нужно так напрягаться.[/say]")
 
-		saynn("You try your best to relax as your eyes follow the circle as {vion.name} traces it in the air in front of you.")
+		saynn("Ты изо всех сил стараешься расслабиться, пока твои глаза следят за кругом, который {vion.name} чертит в воздухе прямо перед тобой.")
 
-		saynn("[say=vion]Focus on the light. Let the world fade into the background. Round and round it goes...[/say]")
+		saynn("[say=vion]Сосредоточься на свете. Позволь окружающему миру отойти на задний план. Круг за кругом...[/say]")
 
-		saynn("You somewhat drowsily note how your vision seems to blur around the circle.")
+		saynn("В полудреме ты замечаешь, что зрение вокруг круга начинает слегка расплываться.")
 
-		saynn("[say=vion]Now imagine little sparks of brightness dripping off the light, slowly falling towards the center of the circle, tracing spirals in the air as they go.[/say]")
+		saynn("[say=vion]А теперь представь, как от света отделяются крошечные яркие искорки. Они медленно падают к центру круга, выписывая в воздухе спирали.[/say]")
 
-		saynn("Maybe its some optical trick or eye fatigue, but little sparks start to dance across your vision, spiraling down...")
+		saynn("Может, это оптическая иллюзия или усталость глаз, но перед глазами начинают плясать маленькие искорки, закручиваясь в спирали вниз...")
 
-		saynn("[say=vion]In a moment, the light will stop circling. Continue watching it, focusing on it.[/say]")
+		saynn("[say=vion]Через мгновение свет перестанет вращаться. Продолжай смотреть на него, не отрывая взгляда.[/say]")
 
-		saynn("{vion.name} stops the light, holding in steady and still, right in front of your eyes. Then he slowly brings it closer and closer, until your eyes begin to cross...")
+		saynn("{vion.name} останавливает свет, удерживая его неподвижно прямо перед твоими глазами. Затем он медленно подносит его всё ближе и ближе, пока твои глаза не начинают косить...")
 
-		saynn("[say=vion]Excellent, you're doing very well...[/say]")
+		saynn("[say=vion]Отлично, у тебя прекрасно получается...[/say]")
 
-		saynn("He raises the light up, keeping it the same distance from your eyes all the while. It goes past your eyebrows, then your forehead. And as your eyes roll into the back of your head and your eyelids fall closed...")
+		saynn("Он поднимает фонарик выше, сохраняя всё то же расстояние до твоих глаз. Свет проходит над бровями, затем над лбом. И когда твои глаза закатываются, а веки тяжело опускаются...")
 
-		sayn("[say=vion]Now...[/say]")
-		saynn("[say=vion][b]Sleep.[/b][/say]")
+		sayn("[say=vion]А теперь...[/say]")
+		saynn("[say=vion][b]Сон.[/b][/say]")
 		
-		addButton("Sleep", "", "endthescene")
+		addButton("Спать", "", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

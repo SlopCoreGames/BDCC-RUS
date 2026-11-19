@@ -7,101 +7,101 @@ func _run():
 	if(state == ""):
 		addCharacter("rahi")
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcAction="sit"})
-		saynn("[say=pc]I have an offer for you, kitty cat.[/say]")
+		saynn("[say=pc]У меня есть для тебя предложение, кошечка.[/say]")
 
-		saynn("Her ears perk.")
+		saynn("Её ушки навостряются.")
 
-		saynn("[say=rahi]Oh.. meow?[/say]")
+		saynn("[say=rahi]Ох... мяу?[/say]")
 
-		saynn("Sharing all details is maybe not the best idea.")
+		saynn("Вываливать все подробности сразу, пожалуй, не лучшая идея.")
 
-		saynn("[say=pc]We're gathering a team. For something big. We could use your skills.[/say]")
+		saynn("[say=pc]Мы собираем команду. Для кое-чего масштабного. Нам бы пригодились твои таланты.[/say]")
 
-		saynn("You clear your throat as the feline tries to process it, her cheeks getting a bit more red.")
+		saynn("Ты прочищаешь горло, пока кошечка пытается переварить услышанное, и её щеки заливаются румянцем.")
 
-		saynn("[say=pc]Khm.. Your thieving skills.[/say]")
+		saynn("[say=pc]Кхм... Твои навыки воровки.[/say]")
 
-		saynn("That helps to narrow it down for her. But now Rahi gets all tense about it.")
+		saynn("Это помогает ей сузить круг поиска. Но теперь Рахи заметно напряглась.")
 
-		saynn("[say=rahi]Is that gonna be.. safe?[/say]")
+		saynn("[say=rahi]Это будет... безопасно?[/say]")
 
-		saynn("You could lie.. but you probably shouldn't.")
+		saynn("Ты мог бы соврать... но, пожалуй, не стоит.")
 
-		saynn("[say=pc]No, not really. We might be getting ourselves into huge trouble.[/say]")
+		saynn("[say=pc]Нет, не особо. Мы можем вляпаться в жуткие неприятности.[/say]")
 
-		saynn("Rahi tilts her head down, her tail curls around her ankle.")
+		saynn("Рахи склоняет голову, её хвост обвивается вокруг лодыжки.")
 
-		saynn("[say=pc]You can say no.[/say]")
+		saynn("[say=pc]Можешь сказать «нет».[/say]")
 
-		saynn("She stays quiet.")
+		saynn("Она молчит.")
 
-		saynn("Seconds pass, the atmosphere gets thicker.")
+		saynn("Проходят секунды, атмосфера становится всё более густой.")
 
-		saynn("[say=rahi]Well.. why not? It's something else for kitty to do.. And there is nothing for kitty to do if you get into trouble and she does not.[/say]")
+		saynn("[say=rahi]Ну.. почему бы и нет? Кошечке будет чем заняться.. А если ты вляпаешься в неприятности, а она нет, ей будет совсем скучно.[/say]")
 
-		saynn("If she didn't trust you so much, she probably wouldn't agree so easily.")
+		saynn("Если бы она не доверяла тебе так сильно, она бы, наверное, не согласилась так легко.")
 
-		saynn("[say=pc]There is only one extra thing.[/say]")
+		saynn("[say=pc]Есть только одна загвоздка.[/say]")
 
-		saynn("You're not exactly making this offer seem appealing. But sometimes you gotta do what you gotta do.")
+		saynn("Твоё предложение не то чтобы звучит заманчиво. Но иногда приходится делать то, что нужно.")
 
-		saynn("[say=rahi]Meow? What would that be..[/say]")
+		saynn("[say=rahi]Мяу? И что же это будет?..[/say]")
 
-		saynn("[say=pc]I trust you. The rest of the team.. maybe not so much. You might have to go through some.. procedures.[/say]")
+		saynn("[say=pc]Я тебе доверяю. Остальной команде.. может, не так сильно. Тебе, возможно, придётся пройти через некоторые.. процедуры.[/say]")
 
-		saynn("Rahi rubs her snout, the last word making her space out for a second. But she soon regains focus.")
+		saynn("Рахи потирает нос; последнее слово заставляет её на мгновение зависнуть, но вскоре она снова фокусируется.")
 
-		saynn("[say=rahi]Procedures?[/say]")
+		saynn("[say=rahi]Процедуры?[/say]")
 
-		saynn("[say=pc]I'm not yet sure. Might be something simple. Or it might be rough.[/say]")
+		saynn("[say=pc]Пока не уверена. Может, что-то простое. А может, и жесткое.[/say]")
 
-		saynn("This is where she says no and you have to decide if you're gonna force her.")
+		saynn("Здесь она говорит «нет», и тебе нужно решить, собираешься ли ты принуждать её.")
 
-		saynn("[say=rahi]Yeah.. okay. It's kinda.. exciting.. in a way.. meow..[/say]")
+		saynn("[say=rahi]Да.. ладно. Это типа.. волнительно.. в каком-то смысле.. мяу..[/say]")
 
-		saynn("She offers you a smile. You offer her a pat on the head.")
+		saynn("Она одаривает тебя улыбкой. Ты гладишь её по голове.")
 
-		saynn("[say=rahi]Kitty is soft.. but she can try to not be soft too if that's required. Meow! Lead the way..[/say]")
+		saynn("[say=rahi]Кити мягкая.. но она может постараться не быть мягкой, если того потребуют. Мяу! Веди за собой..[/say]")
 
-		saynn("That was easy.")
+		saynn("Это было легко.")
 
-		addButton("Hideout", "Bring Rahi to the hideout", "do_start")
-		addButton("Never mind", "You need to do something else first", "nevermind")
+		addButton("Убежище", "Привести Рахи в убежище", "do_start")
+		addButton("Проехали", "Сначала нужно сделать кое-что другое", "nevermind")
 	if(state == "nevermind"):
-		saynn("[say=pc]I actually need to do something first.[/say]")
+		saynn("[say=pc]Вообще-то, мне сначала нужно кое-что сделать.[/say]")
 
-		saynn("[say=rahi]Okay.. she will be waiting then..[/say]")
+		saynn("[say=rahi]Ладно.. тогда она будет ждать..[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_start"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi"})
 		aimCameraAndSetLocName("fight_nearentrance")
-		saynn("You invite Rahi to follow and so she does, walking by your side.")
+		saynn("Вы приглашаете Рахи следовать за вами, и она послушно идет рядом.")
 
-		saynn("The bulldog that's guarding the entrance near the gym seems to be informed already. He just lets you in.")
+		saynn("Бульдог, охраняющий вход возле спортзала, кажется, уже в курсе дела. Он просто пропускает вас внутрь.")
 
-		saynn("The underground arena reveals its ugly sight to the feline. A whole crowd of prisoners stand around the big cage, cheering the next poor bathered souls to continue fighting it out.")
+		saynn("Подземная арена предстает перед кошечкой во всей своей уродливой красе. Толпа заключенных обступила огромную клетку, скандируя и подбадривая очередные несчастные души, продолжающие кровавую бойню.")
 
-		saynn("Rahi's big kitty eyes are staring at everything around her with naive fascination. It doesn't seem like she ever paid this place a visit.")
+		saynn("Огромные кошачьи глаза Рахи с наивным восторгом рассматривают всё вокруг. Похоже, она здесь еще никогда не бывала.")
 
-		addButton("Continue", "See what happens next", "hideout")
+		addButton("Продолжить", "Смотреть, что будет дальше", "hideout")
 	if(state == "hideout"):
 		aimCameraAndSetLocName("hideout_middle")
-		saynn("You pull Rahi behind the arena and towards the secret entrance in the Announcer's office. It's hidden behind the metal shelves so you take some time to push them aside. As you do, you begin to see some faint signs of light. Huh.")
+		saynn("Вы уводите Рахи за арену, к секретному входу в кабинете комментатора. Он спрятан за металлическими стеллажами, так что вам приходится потратить время, чтобы отодвинуть их. И пока вы это делаете, сквозь щели начинает пробиваться слабый свет. Хм.")
 
-		saynn("This abandoned maintenance corridor looks much less abandoned now, that's for sure. It's still a wreck of a place.. but most of the obvious trash has been cleared up. The half-broken table is not here anymore, the thing got moved.")
+		saynn("Этот заброшенный технический коридор теперь выглядит уже не таким уж и заброшенным, это уж точно. Место всё еще напоминает развалины... но весь явный мусор вроде как убрали. Полусломанного стола тоже нет — его куда-то передвинули.")
 
-		saynn("It looks like someone even managed to get the power going. Probably Kait. And probably still without the insulated gloves.")
+		saynn("Похоже, кому-то даже удалось запустить электричество. Наверняка Кейт. И, скорее всего, всё так же без диэлектрических перчаток.")
 
-		saynn("[say=rahi]..wow..[/say]")
+		saynn("[say=rahi]Ого...[/say]")
 
-		saynn("[say=pc]Welcome.[/say]")
+		saynn("[say=pc]Добро пожаловать.[/say]")
 
-		saynn("[say=rahi]Meow..[/say]")
+		saynn("[say=rahi]Мяу...[/say]")
 
-		saynn("A familiar voice approaches.")
+		saynn("К вам приближается знакомый голос.")
 
-		addButton("Continue", "See what happens next", "kait_finds")
+		addButton("Продолжить", "Смотреть, что будет дальше", "kait_finds")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -4,7 +4,7 @@ func _init():
 	id = "Hypnotize"
 
 func getVisibleName():
-	return "Hypnotize"
+	return "@@B*@@Гипнотизировать@@T*@@"
 
 func generateData(_sexEngine, _domInfo, _subInfo):
 	return []

@@ -13,111 +13,111 @@ func _run():
 		
 		# (Happens randomly when walking through the yard area. Level must be 5 or above)
 
-		saynn("As you traverse the yard area an unknown inmate runs into you. A female wolfy from a general block. She was jogging around following the stone tiles path when she accidentally clips your shoulder and trips as a result.")
+		saynn("Пока ты пересекаешь двор, в тебя врезается какая-то незнакомая заключенная. Это волчица из общего блока. Она бежала трусцой по каменной дорожке, но случайно задела твое плечо и из-за этого споткнулась.")
 
-		saynn("[say=jacki]Oh shit.[/say]")
+		saynn("[say=jacki]Черт![/say]")
 
-		saynn("She doesn’t exactly look threatening, just a fit-looking wolfy. She winces and rubs her head.")
+		saynn("Она не выглядит угрожающе — просто подтянутая волчица. Она морщится и потирает голову.")
 
-		addButton("Help her up", "Be friendly about it", "help_her_up")
-		addButton("Watch it", "Be mean about it", "watch_it")
+		addButton("Помочь ей встать", "Проявить дружелюбие", "help_her_up")
+		addButton("Сделать замечание", "Проявить грубость", "watch_it")
 
 
 	if(state == "help_her_up"):
 		setFlag("JackiModule.Jacki_FirstTimeWasKind", true)
 		playAnimation(StageScene.Duo, "stand", {npc="jacki"})
 		
-		saynn("[say=pc]Are you hurt?[/say]")
+		saynn("[say=pc]Ты не ушиблась?[/say]")
 
-		saynn("You crouch near and quickly look over to see if she has any bruises. She seems fine.")
+		saynn("Ты приседаешь рядом и быстро осматриваешь её на предмет синяков. Похоже, с ней всё в порядке.")
 
-		saynn("[say=jacki]No, I’m good. Thanks.[/say]")
+		saynn("[say=jacki]Нет, всё норм. Спасибо.[/say]")
 
-		saynn("You offer her a hand. She grabs it and gets up with your help.")
+		saynn("Ты протягиваешь ей руку. Она хватает её и с твоей помощью поднимается на ноги.")
 
-		saynn("[say=jacki]Just annoyed. Saw some bullies in the bathroom, be careful there. Can’t even go pee.[/say]")
+		saynn("[say=jacki]Просто бесит всё. Видела в туалете каких-то задир, так что будь осторожнее. Там даже пописать спокойно не дадут.[/say]")
 
-		addButton("Offer help", "Maybe you can go investigate", "offer_help")
-		addButton("Okay", "Good to know", "okay")
+		addButton("Предложить помощь", "Может, тебе стоит разузнать, что там?", "offer_help")
+		addButton("Окей", "Полезно знать", "okay")
 
 
 	if(state == "offer_help"):
-		saynn("[say=pc]I can go take a look. Maybe I can deal with them.[/say]")
+		saynn("[say=pc]Ладно, я схожу гляну. Может, получится с ними разобраться.[/say]")
 
-		saynn("Wolfy shrugs, one of her paws casually rests on her shorts.")
+		saynn("Волфи пожимает плечами, небрежно положив одну лапу на шорты.")
 
-		saynn("[say=jacki]Sure, that would be nice. I gotta run though.[/say]")
+		saynn("[say=jacki]Конечно, было бы здорово. Но мне пора бежать.[/say]")
 
-		saynn("You nod and let her jog away before you lose her silhouette between some tall bushes.")
+		saynn("Ты киваешь и даешь ей убежать, прежде чем её силуэт окончательно скроется в высоких кустах.")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 
 	if(state == "okay"):
-		saynn("[say=pc]I guess I will avoid it for now, thanks.[/say]")
+		saynn("[say=pc]Думаю, пока лучше туда не соваться, спасибо.[/say]")
 
-		saynn("Wolfy offers you a simple smile.")
+		saynn("Волфи одаривает тебя легкой улыбкой.")
 
-		saynn("[say=jacki]You’re welcome. I gotta run though.[/say]")
+		saynn("[say=jacki]Не за что. Но мне пора бежать.[/say]")
 
-		saynn("You nod and let her jog away before you lose her silhouette between some tall bushes.")
+		saynn("Ты киваешь и даешь ей убежать, прежде чем её силуэт окончательно скроется в высоких кустах.")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 
 	if(state == "watch_it"):
 		setFlag("JackiModule.Jacki_FirstTimeWasMean", true)
 		
-		saynn("[say=pc]Watch it, pipsqueak.[/say]")
+		saynn("[say=pc]Смотри куда прешь, мелочь.[/say]")
 
-		saynn("The wolfy looks at you and frowns.")
+		saynn("Волчица смотрит на тебя и хмурится.")
 
-		saynn("[say=jacki]I can say the same to you.[/say]")
+		saynn("[say=jacki]Это я могла бы сказать тебе о том же.[/say]")
 
-		saynn("She proceeds to try to get up.")
+		saynn("Она пытается подняться.")
 
-		addButton("Let her", "Her reaction is acceptable", "let_her")
-		addButton("Pin her", "Show that girl her place", "pin_her")
+		addButton("Дай ей волю", "Её реакция приемлема", "let_her")
+		addButton("Прижать её", "Поставить девчонку на место", "pin_her")
 
 
 	if(state == "let_her"):
 		playAnimation(StageScene.Duo, "stand", {npc="jacki"})
 		
-		saynn("You cross your arms and just watch her get up. The wolfy swipes the dust from her inmate uniform and mostly looks calm.")
+		saynn("Ты скрещиваешь руки на груди и просто наблюдаешь, как она встает. Волчица отряхивает пыль со своей тюремной робы, выглядя при этом довольно спокойной.")
 
-		saynn("[say=pc]I’m telling you, next time I will not let it slide.[/say]")
+		saynn("[say=pc]Говорю тебе, в следующий раз я это так не оставлю.[/say]")
 
-		saynn("[say=jacki]Are you one of those bullies? Your friends have occupied the bathroom, can’t even go pee.[/say]")
+		saynn("[say=jacki]Ты из этих задир? Твои подружки оккупировали туалет, даже поссать зайти невозможно.[/say]")
 
-		saynn("Huh. You have no idea what friends she is talking about. But before you can say anything the wolfy just escapes you, her silhouette disappears between some tall bushes.")
+		saynn("Хм. Ты понятия не имеешь, о каких друзьях она говорит. Но не успеваешь ты вставить и слова, как волчица ускользает от тебя, и её силуэт исчезает в густых кустах.")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 
 	if(state == "pin_her"):
 		setFlag("JackiModule.Jacki_FirstTimeWasMeanPinned", true)
 		
-		saynn("Instead of just letting her get up you shove her before pinning into the cold stone tiles. The wolfy gasps feeling your tight grip on her collar and then snarls at you.")
+		saynn("Вместо того чтобы дать ей подняться, ты толкаешь её, а затем прижимаешь к холодному каменному полу. Волчица ахает, чувствуя твою крепкую хватку на воротнике, и тут же оскаливается на тебя.")
 
-		saynn("[say=pc]You choose the wrong person to be cocky with. I can make you suffer, oh so much.[/say]")
+		saynn("[say=pc]Ты выбрала не того человека, чтобы дерзить. Я могу заставить тебя страдать, еще как сильно.[/say]")
 
-		saynn("These words had an effect on her, instead growling the wolfy just tilts her head down and whimpers quietly.")
+		saynn("Эти слова подействовали на неё: вместо рычания волчица лишь склонила голову и тихо заскулила.")
 
-		saynn("[say=jacki]My bad.[/say]")
+		saynn("[say=jacki]Мой косяк.[/say]")
 
-		saynn("Well that’s probably as good of an apology as you're gonna get. You get up and help the wolfy do the same by pulling on her collar.")
+		saynn("Что ж, пожалуй, это лучшее извинение, на которое ты можешь рассчитывать. Ты поднимаешься и помогаешь волчице встать, потянув её за воротник.")
 
-		saynn("[say=jacki]Ow.. Having a really bad day today. First the bullies in the bathroom. Now this.[/say]")
+		saynn("[say=jacki]Ой... Ну и денёк сегодня. Сначала задиры в туалете, теперь вот это.[/say]")
 
-		saynn("[say=pc]Get used to it.[/say]")
+		saynn("[say=pc]Привыкай.[/say]")
 
-		saynn("The wolfy swipes the dust from her inmate uniform and just jogs away, her silhouette disappears between some tall bushes.")
+		saynn("Волчица отряхивает пыль со своей тюремной робы и просто убегает трусцой, а её силуэт растворяется в высоких кустах.")
 
 		# (end scene)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 
 func _react(_action: String, _args):

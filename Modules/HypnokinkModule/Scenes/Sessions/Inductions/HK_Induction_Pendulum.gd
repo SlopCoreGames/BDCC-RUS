@@ -11,51 +11,51 @@ func _run():
 		addCharacter("vion")
 		playAnimation(StageScene.Duo, "sit", {npc="vion", npcAction="sit"})
 		
-		saynn("[say=vion]Sit down on the sofa, if you'd please.[/say]")
+		saynn("[say=vion]Присядь на диван, если не трудно.[/say]")
 		
-		saynn("You do so. {vion.name} brings the chair over and seats himself directly opposite of you.")
+		saynn("Ты подчиняешься. {vion.name} подтаскивает стул и садится прямо напротив тебя.")
 		
-		saynn("[say=vion]Let's go with a classic, shall we?[/say]")
+		saynn("[say=vion]Давай возьмем классику, идет?[/say]")
 
-		saynn("Vion unwinds a piece of string with a loop on one end and a metal washer on the other. He raises it in front of you at eye-level and begins gently swinging it, slipping into a practiced, soothing demeanor.")
+		saynn("Вион разматывает кусок веревки с петлей на одном конце и металлической шайбой на другом. Он поднимает её перед твоими глазами и начинает плавно раскачивать, принимая привычный, умиротворяющий вид.")
 
-		#saynn("[say=vion]Remember, it's simply a relaxation technique. Have you ever caught yourself staring out the window for what must have been half an hour, watching the rain fall, or maybe the birds fly by? Same principle applies here.[/say]")
+		#saynn("[say=vion]Помни, это всего лишь техника расслабления. Случалось ли тебе залипать в окно минут на тридцать, наблюдая за дождем или пролетающими птицами? Здесь принцип тот же.[/say]")
 		
-		saynn("[say=vion]Now, focus on the pendulum. Follow it with your eyes.[/say]")
+		saynn("[say=vion]А теперь сосредоточься на маятнике. Следи за ним глазами.[/say]")
 
-		#sayn("You feel a bit silly, but nonetheless do as ordered.")
-		saynn("You watch the pendulum as it spins and swings...")
+		#sayn("Ты чувствуешь себя немного глупо, но всё же выполняешь приказ.")
+		saynn("Ты наблюдаешь за тем, как маятник вращается и качается...")
 		
-		sayn("Left.")
-		sayn("                     Right.")
-		sayn("Left.")
-		saynn("                     Right.")
+		sayn("Влево.")
+		sayn("                     Вправо.")
+		sayn("Влево.")
+		saynn("                     Вправо.")
 
-		sayn("[say=vion]Let the noise outside fade into the background.[/say]")
-		sayn("[say=vion]Notice how it glints in the light as it swings and spins.[/say]")
-		sayn("[say=vion]Back and forth. Following the pendulum all the while. Back and forth.[/say]")
-		saynn("[say=vion]Let your breathing slow down. Slow and steady. Deep breaths.[/say]")
+		sayn("[say=vion]Пусть внешний шум уходит на задний план.[/say]")
+		sayn("[say=vion]Заметь, как он поблескивает на свету, раскачиваясь и вращаясь.[/say]")
+		sayn("[say=vion]Туда и обратно. Всё время следя взглядом за маятником. Туда и обратно.[/say]")
+		saynn("[say=vion]Позволь своему дыханию замедлиться. Медленно и размеренно. Глубокие вдохи.[/say]")
 
-		saynn("It does feel good to drift like this. To just for a moment forget your circumstances and relax.")
+		saynn("Так приятно вот так дрейфовать. Просто на мгновение забыть о своих обстоятельствах и расслабиться.")
 
-		sayn("[say=vion]Sink down, into the softness of the cushions.[/say]")
-		sayn("[say=vion]Feeling your head grow heavier, your body tired.[/say]")
-		saynn("[say=vion]Just focus on the sound of my voice.[/say]")
+		sayn("[say=vion]Погружайся в мягкость подушек.[/say]")
+		sayn("[say=vion]Чувствуй, как голова тяжелеет, а тело наполняется усталостью.[/say]")
+		saynn("[say=vion]Просто сосредоточься на звуке моего голоса.[/say]")
 
-		saynn("Your eyelids grow heavy. It becomes a struggle to keep them open.")
+		saynn("Твои веки тяжелеют. Удерживать их открытыми становится всё труднее.")
 
-		sayn("[say=vion]That's alright, you can close your eyes. Just imagine the pendulum in your mind's eye.[/say]")
-		sayn("[say=vion]Back and forth. With every swing you feel yourself growing more relaxed. Drowsier. More sleepy.[/say]")
-		sayn("[say=vion]Relax and allow your awareness to fade away.[/say]")
-		saynn("[say=vion]Your thoughts grow quiet as a calmness washes over you.[/say]")
+		sayn("[say=vion]Всё в порядке, можешь закрыть глаза. Просто представь маятник перед мысленным взором.[/say]")
+		sayn("[say=vion]Туда и обратно. С каждым взмахом ты чувствуешь, как расслабляешься. Всё сильнее. Всё сонливее.[/say]")
+		sayn("[say=vion]Расслабься и позволь своему сознанию угасать.[/say]")
+		saynn("[say=vion]Твои мысли затихают, когда тебя накрывает волна спокойствия.[/say]")
 
-		saynn("Calm...")
-		#saynn("[fade start=4 length=12]This is nice...[/fade]")
+		saynn("Спокойствие...")
+		#saynn("[fade start=4 length=12]Как же хорошо...[/fade]")
 
-		sayn("[say=vion]Fall deeper now...[/say]")
-		saynn("[say=vion][b]Sleep.[/b][/say]")
+		sayn("[say=vion]Погружайся глубже...[/say]")
+		saynn("[say=vion][b]Сон.[/b][/say]")
 		
-		addButton("Sleep", "", "endthescene")
+		addButton("Спать", "", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

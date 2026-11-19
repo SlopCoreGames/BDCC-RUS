@@ -13,202 +13,202 @@ func _run():
 	if(state == ""):
 		playAnimation(StageScene.Duo, "stand", {npc="gymbully"})
 		
-		saynn("You walk into the bathroom and the first thing that you notice are three inmates. One of them, a girl, sits on the long counter with all the sinks. Another guy is relieving himself using one of the urinals. And the main guy just kinda standing in the middle, you can’t walk past him even if you wanted to. They all have uniforms with red colors but also red bands tied around their foreheads.")
+		saynn("Ты заходишь в уборную, и первое, что бросается в глаза — это трое заключенных. Одна девчонка сидит на длинной раковине. Какой-то парень справляет нужду в одной из кабинок. А главный тип просто стоит посредине — даже если захочешь, мимо него не пройдешь. На всех форма с красными элементами, а еще у них на лбах повязаны красные ленты.")
 
 		# (if have seen them before)
 		if(getFlag("GymModule.Gym_BullyGangIntroduced")):
-			saynn("You realize that you have seen them before.. They are the same group that hangs around the gym area, taking credits from inmates that wanna use the equipment.")
+			saynn("Ты понимаешь, что уже видел их раньше... Это та самая шайка, которая ошивается у спортзала и отжимает кредиты у тех, кто хочет позаниматься на тренажерах.")
 
-		saynn("The girl seems to be toying with something.. Something sharp. She notices you and a cunning smile appears on her canine face.")
+		saynn("Девчонка, кажется, вертит в руках что-то острое... Она замечает тебя, и на её хищном личике расплывается коварная ухмылка.")
 
-		saynn("[say=gymbully3]Look! Another one![/say]")
+		saynn("[say=gymbully3]Смотрите! Еще один![/say]")
 
-		saynn("The main guy of the group directs his attention to you.")
+		saynn("Предводитель группы переводит на тебя взгляд.")
 
 		# (if has seen before)
 		if(getFlag("GymModule.Gym_BullyGangIntroduced")):
-			saynn("[say=gymbully]Oh, look who we have here. A familiar face. This bathroom costs 5 creds today. Pay up or leave.[/say]")
+			saynn("[say=gymbully]О, гляньте, кто это у нас. Знакомое личико. Вход в этот туалет сегодня стоит 5 кредитов. Плати или вали отсюда.[/say]")
 
 		# (else)
 		else:
-			saynn("[say=gymbully]Welcome. This bathroom costs 5 creds today. You can pay. Or you can leave.[/say]")
+			saynn("[say=gymbully]Добро пожаловать. Вход в уборную сегодня стоит 5 кредитов. Можешь заплатить. А можешь свалить.[/say]")
 
-		saynn("[say=gymbully3]Yeah, bitch. Pay up or go piss somewhere else![/say]")
+		saynn("[say=gymbully3]Ага, сучка. Плати или иди ссы в другом месте![/say]")
 
-		saynn("Huh. They don’t seem very friendly.")
+		saynn("Хм. Не особо-то они дружелюбные.")
 
-		addButton("Approach", "You’re not afraid of them", "approach")
-		addButton("Leave", "You don’t feel like showering or going to the toilet anyway", "leave")
+		addButton("Подойти", "Но ты их не боишься.", "approach")
+		addButton("Уйти", "Всё равно не особо хочется ни в душ идти, ни в туалет.", "leave")
 
 	if(state == "leave"):
 		setFlag("JackiModule.BathroomBulliesSceneWillHappen", true)
 		aimCameraAndSetLocName("gym_nearbathroom")
 		GM.pc.setLocation("gym_nearbathroom")
 		
-		saynn("Instead of answering them you decide that it’s best to leave.")
+		saynn("Вместо того чтобы отвечать им, ты решаешь, что лучше просто уйти.")
 
-		saynn("[say=gymbully3]Pfff, what a pussy.[/say]")
+		saynn("[say=gymbully3]Пфф, ну и тряпка.[/say]")
 
-		saynn("Well, at least you still have your credits.")
+		saynn("Ну, по крайней мере, кредиты всё ещё при тебе.")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 
 	if(state == "approach"):
-		saynn("Instead of pussying out you decide to approach them. The guy that was pissing finishes his deeds before joining the other two. He seems to be against the idea of washing hands. The girl has a huge grin on her face as she gets up onto the long counter and walks across it before jumping off behind you, she seems to be holding a weapon of sorts.")
+		saynn("Вместо того чтобы струсить, ты решаешь подойти к ним. Парень, который только что справлял нужду, заканчивает свои дела и присоединяется к остальным двоим. Похоже, он против того, чтобы мыть руки. У девчонки на лице расплывается широкая ухмылка: она запрыгивает на длинную столешницу, проходит по ней и спрыгивает прямо за твоей спиной; кажется, в руках у неё какое-то оружие.")
 
-		saynn("[say=gymbully]So? Does our offer interest you, kiddo?[/say]")
+		saynn("[say=gymbully]Ну что? Наше предложение тебя интересует, малявка?[/say]")
 
-		saynn("You’re unsure what to say. Credits are quite valuable. The girl behind you makes sure there is no one outside the bathroom.")
+		saynn("Ты не знаешь, что сказать. Кредиты — штука ценная. Девчонка позади тебя проверяет, нет ли кого снаружи туалета.")
 
-		saynn("[say=gymbully3]We’re all alone~.[/say]")
+		saynn("[say=gymbully3]Мы здесь совсем одни~.[/say]")
 
-		saynn("[say=gymbully]If our rates do not seem appealing, you can pay up differently.[/say]")
+		saynn("[say=gymbully]Если наши расценки кажутся тебе не слишком заманчивыми, можно заплатить и по-другому.[/say]")
 
-		saynn("Differently? You give the sleazy guy a questioning look.")
+		saynn("По-другому? Ты бросаешь вопросительный взгляд на этого скользкого типа.")
 
-		saynn("[say=gymbully3]By being a toilet yourself![/say]")
+		saynn("[say=gymbully3]Став унитазом![/say]")
 
-		saynn("The girl behind you bursts from laughing. You’re not sure if she is being serious but the guy makes it clear.")
+		saynn("Девушка позади тебя взрывается смехом. Ты не уверен, серьезно она или нет, но парень дает понять всё без слов.")
 
-		saynn("[say=gymbully]Yeah. Being a meat toilet for an hour will give you access to this bathroom as well.[/say]")
+		saynn("[say=gymbully]Ага. Побудешь мясным унитазом часок — и этот туалет тоже станет тебе доступен.[/say]")
 
-		saynn("Wow. You’re not sure if you wanna ask what that entails.")
+		saynn("Ого. Ты даже не уверен, стоит ли спрашивать, что именно это подразумевает.")
 
 		# (options are Attack, Pay 5 creds, Leave)
 
-		addButtonWithChecks("Pay 5 creds", "Pay them to make them leave maybe", "pay_5_creds", [], [[ButtonChecks.HasCredits, 5]])
-		addButton("Attack", "Make them regret it", "attack1")
-		addButton("Submit", "Become the meat toilet", "submit")
-		addButton("Leave", "Try to leave", "leave1")
+		addButtonWithChecks("Заплатить 5 кредитов", "Заплатить им, чтобы они, может, ушли", "pay_5_creds", [], [[ButtonChecks.HasCredits, 5]])
+		addButton("Атаковать", "Заставить их пожалеть об этом", "attack1")
+		addButton("Подчиниться", "Стать мясным унитазом", "submit")
+		addButton("Уйти", "Попытаться уйти", "leave1")
 
 
 	if(state == "pay_5_creds"):
 		# (needs 5 creds)
 
-		saynn("[say=pc]What was the price?[/say]")
+		saynn("[say=pc]Какая там была цена?[/say]")
 
-		saynn("The main guy smiles.")
+		saynn("Главный герой улыбается.")
 
-		saynn("[say=gymbully]5 credits.[/say]")
+		saynn("[say=gymbully]5 кредитов.[/say]")
 
-		saynn("You hand him a chip with 5 work credits.")
+		saynn("Вы протягиваете ему чип номиналом в 5 рабочих кредитов.")
 
-		saynn("[say=pc]Now can you leave this bathroom please?[/say]")
+		saynn("[say=pc]А теперь можешь свалить из этой уборной, а?[/say]")
 
-		saynn("[say=gymbully]..per minute.[/say]")
+		saynn("[say=gymbully]..в минуту.[/say]")
 
-		saynn("Huh? You tilt your head slightly, trying to understand his words.")
+		saynn("А? Вы слегка наклоняете голову, пытаясь понять его слова.")
 
-		saynn("[say=gymbully]The rate of using this bathroom is 5 credits per minute. You’ve been standing here for about.. 4 minutes. Yes. So you owe us 15 more, kiddo.[/say]")
+		saynn("[say=gymbully]Тариф на использование этого туалета — 5 кредитов в минуту. Ты тут стоишь уже около... 4 минут. Ага. Так что с тебя еще 15, малёк.[/say]")
 
-		saynn("The fuck is he talking about.")
+		saynn("О чем, блять, он вообще говорит?")
 
-		saynn("[say=gymbully3]Hahaha, look at {pc.him}. Confused as fuck. Pay, paypig![/say]")
+		saynn("[say=gymbully3]Ха-ха-ха, гляньте на {pc.him}. Запутался в трех соснах, ебать! Плати, платежка![/say]")
 
-		addButtonWithChecks("Pay 15 creds", "Well, might as well", "pay_15_creds", [], [[ButtonChecks.HasCredits, 15]])
-		addButton("Attack", "Make them regret it", "returncredtisandattack")
-		addButton("Leave", "Try to leave", "leave1")
+		addButtonWithChecks("Заплатить 15 кредитов", "Ну, почему бы и нет", "pay_15_creds", [], [[ButtonChecks.HasCredits, 15]])
+		addButton("Атаковать", "Заставить их пожалеть об этом", "returncredtisandattack")
+		addButton("Уйти", "Попытаться уйти", "leave1")
 
 	if(state == "pay_15_creds"):
 		# (needs 15 creds)
 		setFlag("JackiModule.BathroomBulliesPayed", true)
 
-		saynn("You hand the guy the chip with 15 more credits. He seems satisfied enough.")
+		saynn("Вы протягиваете парню чип еще на 15 кредитов. Похоже, он вполне доволен.")
 
-		saynn("[say=gymbully]My pleasure.[/say]")
+		saynn("[say=gymbully]Не за что.[/say]")
 
-		saynn("[say=gymbully3]Good pay pig~.[/say]")
+		saynn("[say=gymbully3]Хорошая свинья~.[/say]")
 
-		saynn("They let you pass them. You can’t help but to feel ripped off. But at least you weren’t turned into a meat toilet.")
+		saynn("Они пропускают вас. Вас не покидает чувство, что вас обдирают как липку. Но, по крайней мере, вас не превратили в мясной туалет.")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 
 	if(state == "returncredtisandattack"):
 		# (gives back 5 creds)
 		playAnimation(StageScene.Duo, "stand", {npc="gymbully3"})
 
-		saynn("Instead of giving him what he wants, you steal the chip with your credits back and then kick the guy. He collapses onto the floor and grunts.")
+		saynn("Вместо того чтобы отдать ему то, что он хочет, вы забираете чип со своими кредитами и пинаете парня. Он падает на пол, кряхтя от боли.")
 
-		saynn("[say=gymbully]Ugh. Well, that wasn’t nice.[/say]")
+		saynn("[say=gymbully]Уф. Ну, это было не очень вежливо.[/say]")
 
-		saynn("The second guy that was silent before now suddenly begins to step towards you but the girl stops him.")
+		saynn("Второй парень, который до этого молчал, внезапно делает шаг к вам, но девушка его останавливает.")
 
-		saynn("[say=gymbully3]Let me handle this one~. Hey, pay pig. Turn the fuck around before I stabbed you in the back.[/say]")
+		saynn("[say=gymbully3]Дай я с этим разберусь~. Эй, свинья, а ну развернулась, блядь, пока я тебе спину не распорола![/say]")
 
-		saynn("You see that the girl is holding a shiv. A makeshift weapon that seems quite sharp.")
+		saynn("Вы замечаете, что в руке у девушки шило — самодельное оружие, которое выглядит довольно острым.")
 
-		saynn("The fight is inevitable.")
+		saynn("Драка неизбежна.")
 
 		# (fight button)
-		addButton("Fight", "Begin the fight", "startfight")
+		addButton("Драться", "Начать бой", "startfight")
 
 	if(state == "leave1"):
 		playAnimation(StageScene.Duo, "stand", {npc="gymbully3"})
 		
-		saynn("You feel that you’re done with this situation and try to leave. But the girl doesn’t let you, she holds a shiv! A makeshift sharp weapon.")
+		saynn("Ты чувствуешь, что с этой ситуацией покончено, и пытаешься уйти. Но девчонка не дает тебе этого сделать — в руках у неё шило! Самодельное острое оружие.")
 
-		saynn("[say=gymbully3]Where do you think you’re going? We’re not done with you yet, pay piggy~.[/say]")
+		saynn("[say=gymbully3]Куда это ты собралась? Мы с тобой еще не закончили, плати, свинка~.[/say]")
 
-		saynn("[say=gymbully]Yeah, we can’t let you go now I’m afraid.[/say]")
+		saynn("[say=gymbully]Да, боюсь, сейчас мы тебя просто так не отпустим.[/say]")
 
-		saynn("The crazy girl moves the blade to her face and licks it before giggling.")
+		saynn("Сумасшедшая девчонка подносит лезвие к лицу и облизывает его, хихикая.")
 
-		saynn("[say=gymbully3]Let me handle this one~.[/say]")
+		saynn("[say=gymbully3]Дай я с ней разберусь~.[/say]")
 
-		saynn("The fight is inevitable.")
+		saynn("Драка неизбежна.")
 
 		# (fight and submit buttons)
 
-		addButton("Fight", "Begin the fight", "startfight")
+		addButton("Драться", "Начать бой", "startfight")
 
 	if(state == "attack1"):
 		playAnimation(StageScene.Duo, "stand", {npc="gymbully3"})
 		
 		# (same at attack before but without giving the player 5 credits back)
-		saynn("Instead of giving him what he wants, you kick the guy. He collapses onto the floor and grunts.")
+		saynn("Вместо того чтобы дать ему то, что он хочет, ты пинаешь парня. Он валится на пол, кряхтя от боли.")
 
-		saynn("[say=gymbully]Ugh. Well, that wasn’t nice.[/say]")
+		saynn("[say=gymbully]Уф. Ну, это было не очень вежливо.[/say]")
 
-		saynn("The second guy that was silent before now suddenly begins to step towards you but the girl stops him.")
+		saynn("Второй парень, который до этого молчал, внезапно делает шаг к вам, но девушка его останавливает.")
 
-		saynn("[say=gymbully3]Let me handle this one~. Hey, pay pig. Turn the fuck around before I stabbed you in the back.[/say]")
+		saynn("[say=gymbully3]Дай я с этим разберусь~. Эй, свинья, а ну развернулась, блядь, пока я тебе спину не распорола![/say]")
 
-		saynn("You see that the girl is holding a shiv. A makeshift weapon that seems quite sharp.")
+		saynn("Вы замечаете, что в руке у девушки шило — самодельное оружие, которое выглядит довольно острым.")
 
-		saynn("The fight is inevitable.")
+		saynn("Драка неизбежна.")
 
-		addButton("Fight", "Begin the fight", "startfight")
+		addButton("Драться", "Начать бой", "startfight")
 
 	if(state == "if_won"):
 		setFlag("JackiModule.BathroomBulliesWon", true)
 		
-		saynn("The girl falls to her knees and drops the weapon. You quickly grab it and point at the other gang members. They seem to be somewhat intimidated by it.")
+		saynn("Девушка падает на колени, выронив оружие. Ты быстро подхватываешь его и направляешь на остальных членов банды. Похоже, они слегка струсили.")
 
-		saynn("[say=gymbully3]Fucker![/say]")
+		saynn("[say=gymbully3]Сука![/say]")
 
-		saynn("[say=gymbully]Fine-fine. You won this one. We will be leaving momentarily.[/say]")
+		saynn("[say=gymbully]Ладно-ладно. В этот раз ты победила. Мы скоро уйдем.[/say]")
 
-		saynn("[say=gymbully3]I will claw {pc.his} eyes out![/say]")
+		saynn("[say=gymbully3]Я тебе {pc.his}глаза выцарапаю![/say]")
 
-		saynn("The guys grab the defeated girl under her armpits and drag her away while she cusses at you.")
+		saynn("Парни хватают побежденную девчонку под мышки и утаскивают её, пока она сыплет в твой адрес проклятиями.")
 
-		saynn("Well, that solved the problem. Now where is that wolfy?")
+		saynn("Ну вот, проблема решена. А где эта волчица?")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 
 	if(state == "if_lost"):
 		setFlag("JackiModule.BathroomBulliesLost", true)
 		
-		saynn("Since you lost the fight you can only submit to them now and see what happens.")
+		saynn("Раз уж ты проиграла бой, теперь тебе остается только подчиниться и посмотреть, что будет дальше.")
 
 		# (submit button)
-		addButton("Submit", "Become the meat toilet", "submit")
+		addButton("Подчиниться", "Стать мясным унитазом", "submit")
 
 
 	if(state == "submit"):
@@ -219,97 +219,97 @@ func _run():
 
 		# (they do their thing and let you go)
 
-		saynn("You raise your hands up slightly.")
+		saynn("Ты слегка поднимаешь руки.")
 
-		saynn("[say=pc]Fine.. I submit.[/say]")
+		saynn("[say=pc]Ладно... Я сдаюсь.[/say]")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "continue"):
 		playAnimation(StageScene.Urinal, "idle", {bodyState={naked=true}})
 		
 		# (if has clothing)
 		if(!GM.pc.isFullyNaked()):
-			saynn("Immediately the second guy grabs your arms before wrenching them behind your back while the girl {pc.undressMessageS}, exposing all your private bits. She then puts her shiv near your neck, threatening.")
+			saynn("В тот же миг второй парень хватает тебя за руки и резко заводит их за спину, пока девчонка {pc.undressMessageS}обнажает все твои интимные места. Затем она подносит заточку к твоему горлу, угрожая.")
 		# (else)
 		else:
-			saynn("Immediately the second guy grabs your arms before wrenching them behind your back while the girl puts the shiv near your neck, threatening.")
+			saynn("В тот же миг второй парень хватает тебя за руки и резко заводит их за спину, пока девчонка подносит заточку к твоему горлу, угрожая.")
 
-		saynn("[say=gymbully3]Good choice~. Now say ahh-h~[/say]")
+		saynn("[say=gymbully3]Хороший выбор~. А теперь скажи «а-а-а»~[/say]")
 
-		saynn("You are happy to say no but the sharp tip of her weapon pokes you and reminds of its existence. You open your mouth and feel a ring gag being pushed past your lips a few seconds later, making you unable to close it anymore.")
+		saynn("Ты рад бы сказать «нет», но острый кончик её оружия тычет в тебя, напоминая о своём существовании. Ты открываешь рот и через несколько секунд чувствуешь, как между губ проталкивают кольцо кляпа, после чего сомкнуть челюсти уже невозможно.")
 
-		saynn("[say=gymbully]Now tie {pc.him} to the most clean one.[/say]")
+		saynn("[say=gymbully]А теперь привяжите {pc.him} к самому чистому писсуару.[/say]")
 
-		saynn("His goons pull you towards the urinals before using some stolen chains to tie your collar and wrists to one of the tubes. Then they pin you to the cold ceramic urinal before pulling you down to make you sit. After that they add extra chains under your knees that make you raise your legs and expose your private bits to anyone.")
+		saynn("Её шестерки тащат тебя к писсуарам, а затем с помощью украденных цепей приковывают твой ошейник и запястья к одной из труб. После этого они прижимают тебя к холодной керамике, а затем заставляют сесть, нагнувшись вперед. В довершение всего они накидывают дополнительные цепи под колени, из-за чего твои ноги задираются вверх, выставляя твою киску на всеобщее обозрение.")
 
-		saynn("All you can do is say incoherent things while they check out the result. You tug on one of the chains but it doesn’t give, you are stuck helpless.")
+		saynn("Всё, что ты можешь — это невнятно бормотать, пока они разглядывают результат. Ты дергаешься, пытаясь натянуть одну из цепей, но та не поддается — ты беспомощно зажат.")
 
-		saynn("[say=gymbully3]Yeah, squirm all you want, meat toilet~. Who’s first?[/say]")
+		saynn("[say=gymbully3]Давай, извивайся сколько влезет, туалетная плоть~. Кто первый?[/say]")
 
-		saynn("[say=gymbully]You two have fun with {pc.him}, I’m fine.[/say]")
+		saynn("[say=gymbully]Вы двое развлекайтесь с {pc.him}, а я в порядке.[/say]")
 
-		addButton("Cum toilet", "Have them cum all over you", "cum_toilet")
-		addButtonWithChecks("Piss toilet", "Have them piss all over you", "piss_toilet", [], [[ButtonChecks.ContentEnabled, ContentType.Watersports]])
+		addButton("Кончальный унитаз", "Пусть они кончают на тебя", "cum_toilet")
+		addButtonWithChecks("Писсуар", "Пусть они обмочат тебя всю", "piss_toilet", [], [[ButtonChecks.ContentEnabled, ContentType.Watersports]])
 
 
 	if(state == "cum_toilet"):
 		setFlag("JackiModule.BathroomBulliesBecameCumToilet", true)
 		
-		saynn("The second guy pulls his canine cock out while the girl exposes her pussy. You can’t help but to drool while they both begin masturbating right in front of you.")
+		saynn("Второй парень вытаскивает свой клыкастый член, пока девчонка демонстрирует свою киску. Ты не можешь удержаться от слюнотечения, когда они оба начинают мастурбировать прямо перед твоим носом.")
 
-		saynn("[say=gymbully3]Oh yeah~. Hope you’re ready, little cum toilet.[/say]")
+		saynn("[say=gymbully3]О да~. Надеюсь, ты готов, маленький спермобак.[/say]")
 
-		saynn("The girl cums first, she fingers her pussy with two digits until it starts making wet noises and squirting transparent juices all over you. A few seconds later the guy starts to grunt as his throbbing cock shoots many strings of cum that land on your face and naked body.")
+		saynn("Девчонка кончает первой: она вставляет два пальца в свою киску, пока та не начинает издавать влажные звуки и брызгать прозрачной смазкой прямо на тебя. Спустя несколько секунд парень начинает кряхтеть, и его пульсирующий член выстреливает струями спермы, которые летят тебе на лицо и обнаженное тело.")
 
-		saynn("You try to turn your head away but some cum and juices still end up landing on your tongue, letting you taste them.")
+		saynn("Ты пытаешься отвернуться, но капли спермы и соков всё равно попадают тебе на язык, позволяя прочувствовать их вкус.")
 
-		saynn("[say=gymbully3]Fuck yeah~.[/say]")
+		saynn("[say=gymbully3]Твою мать, да~![/say]")
 
-		addButton("Continue", "See what happens next", "continue1")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue1")
 
 	if(state == "continue1"):
-		saynn("An entire hour passes during which various people come up to you, expose their cock or pussy and then masturbate before cumming all over you.")
+		saynn("Проходит целый час, в течение которого к тебе подходят разные люди, выставляют напоказ свои члены или киски, а затем мастурбируют, кончая прямо на тебя.")
 
-		saynn("By the end of it you look like nothing but a cum-drenched dumpster of a toilet.")
+		saynn("К концу этого безумия ты выглядишь как ходячая помойка, залитая спермой.")
 
-		saynn("Eventually the gang walks up to you and finally unchains you.")
+		saynn("В конце концов банда подходит к тебе и наконец срывает цепи.")
 
-		saynn("[say=gymbully3]You’re free to use the bathroom now. You look like you need it~[/say]")
+		saynn("[say=gymbully3]Теперь ты волен пользоваться туалетом. Судя по виду, тебе это необходимо~[/say]")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 
 	if(state == "piss_toilet"):
 		# (needs waterspots content)
 		setFlag("JackiModule.BathroomBulliesBecamePissToilet", true)
 
-		saynn("The second guy pulls his canine cock out while the girl exposes her pussy. You can’t help but to drool while they both begin looming over you, waiting for their urges to come.")
+		saynn("Второй парень вытаскивает свой клыкастый член, пока девчонка раздвигает щелки своей киски. Ты невольно пускаешь слюни, когда они оба начинают нависать над тобой, ожидая, когда их позывы возьмут верх.")
 
-		saynn("[say=gymbully3]Oh yeah~. Hope you’re ready, little piss toilet.[/say]")
+		saynn("[say=gymbully3]О да~. Надеюсь, ты готов, маленький писсуар![/say]")
 
-		saynn("Oh no, are they really gonna do it? The girl lets out a moan first, a strong stream of piss spawns from her piss hole and lands on you. She directs it to make sure your face, hair and {pc.masc} body all receive the golden shower.")
+		saynn("О нет, неужели они реально это сделают? Девушка издает стон первой, и из ее дырочки бьет мощная струя мочи, попадая прямо на тебя. Она направляет ее так, чтобы твое лицо, волосы и {pc.masc} тело полностью залило золотым дождем.")
 
-		saynn("A few seconds later the guy’s cock joins the girl’s pussy, a second stream of gross yellow fluid hits your chest and lower part of the body. Piss already drips from you as you try to avoid it getting into your mouth. But that’s really tough, impossible in fact, some of the pee lands on your tongue, very gross.")
+		saynn("Спустя несколько секунд к девичьей киске присоединяется член парня, и вторая струя мерзкой желтой жидкости обрушивается на твою грудь и нижнюю часть тела. Моча уже стекает по тебе, пока ты пытаешься не дать ей попасть в рот. Но это чертовски трудно, почти невозможно: часть мочи попадает тебе на язык, это просто омерзительно.")
 
-		saynn("They piss for a while, their scent is forced into you and will be very hard to wash away.")
+		saynn("Они писают довольно долго, их запах буквально впитывается в тебя, и его будет очень трудно смыть.")
 
-		saynn("[say=gymbully3]Fuck yeah~.[/say]")
+		saynn("[say=gymbully3]Твою мать, да~![/say]")
 
-		addButton("Continue", "See what happens next", "continue2")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue2")
 
 	if(state == "continue2"):
-		saynn("An entire hour passes during which various people come up to you, expose their cock or pussy and then piss all over you.")
+		saynn("Проходит целый час, в течение которого к тебе подходят разные люди, выставляют напоказ свои члены или киски и просто обсирают тебя мочой.")
 
-		saynn("By the end of it you look like nothing but a piss-drenched dumpster of a toilet.")
+		saynn("К концу всего этого ты выглядишь как ходячая помойка, залитая мочой.")
 
-		saynn("Eventually the gang walks up to you and finally unchains you, making sure to avoid touching your body.")
+		saynn("В конце концов банда подходит к тебе и наконец освобождает от цепей, стараясь при этом не касаться твоего тела.")
 
-		saynn("[say=gymbully3]You’re free to use the bathroom now. You look like you need it~[/say]")
+		saynn("[say=gymbully3]Теперь ты волен пользоваться туалетом. Судя по виду, тебе это необходимо~[/say]")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 
 func _react(_action: String, _args):

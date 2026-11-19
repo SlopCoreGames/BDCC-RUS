@@ -9,135 +9,135 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		
 	if(state == ""):
-		saynn("It’s an early morning, you hear someone approaching your cell, the sound of an intercom resonates in your ears. You hear Eliza yawning and then catching herself.")
+		saynn("Раннее утро. Вы слышите, как кто-то приближается к вашей камере, а в ушах отдается звук интеркома. Вы слышите, как Элиза зевает, а затем тут же прикрывает рот рукой.")
 
 		# (if bad behavior)
 		if(getModuleFlag("MedicalModule", "Mental_PCBehavior", 0.0) < 0.3):
-			saynn("[say=eliza]How is the unwilling test subject doing? Plan on behaving today?[/say]")
+			saynn("[say=eliza]Ну как поживает наш невольный подопытный? Планируешь сегодня вести себя хорошо?[/say]")
 
 		# (if medium behavior)
 		elif(getModuleFlag("MedicalModule", "Mental_PCBehavior", 0.0) < 0.8):
-			saynn("[say=eliza]Good morning, inmate. Doing fine? Good.[/say]")
+			saynn("[say=eliza]Доброе утро, заключенный. Как самочувствие? Вот и славно.[/say]")
 
 		# (if best heavior)
 		else:
-			saynn("[say=eliza]How is my favorite test subject doing? Can’t wait to do more with you.[/say]")
+			saynn("[say=eliza]Как поживает мой любимый подопытный? Жду не дождусь, когда мы продолжим наши опыты.[/say]")
 
-		saynn("Eliza opens the door and enters your cell, she seems to be holding something. Some kind of candy.")
+		saynn("Элиза открывает дверь и входит в вашу камеру; кажется, она что-то держит в руках. Что-то вроде конфеты.")
 		
-		saynn("[say=eliza]Gonna give you a treat if you behave, how ‘bout that.[/say]")
+		saynn("[say=eliza]Если будешь паинькой, угощу тебя чем-нибудь вкусненьким, как тебе такая идея?[/say]")
 		
-		addButton("Continue", "Interesting", "continue")
+		addButton("Продолжить", "Интересно", "continue")
 	
 	if(state == "continue"):
-		saynn("She crouches before you and observes you, your bound body, your exposed {pc.breasts}. Then she grabs your head and looks into your eyes.")
+		saynn("Она опускается перед вами на корточки и начинает осматривать вас: ваше связанное тело, ваши обнаженные {pc.breasts}. Затем она берет вас за голову и заглядывает прямо в глаза.")
 
 		# (if low sanity)
 		if(getModuleFlag("MedicalModule", "Mental_PCSanity", 0.0) < 0.7):
-			saynn("[say=eliza]Still recovering but I do see some progress. Although, for now, you are still marked as ‘insane’ in our database. Just to be on the safe side~[/say]")
+			saynn("[say=eliza]Ты всё еще в процессе восстановления, но прогресс налицо. Хотя пока что в нашей базе ты всё еще числишься как «безумный». Просто на всякий случай~[/say]")
 
 		# (if high sanity)
 		else:
-			saynn("[say=eliza]Eye pupils look fine, body temperature is good, mental health seems fine. It’s probably safe to let you go but you know~. Research, who is other than us gonna do it.[/say]")
+			saynn("[say=eliza]Зрачки в норме, температура тела в порядке, психическое состояние кажется стабильным. Наверное, тебя уже можно выпускать, но сама понимаешь... Исследования — кто, если не мы?[/say]")
 
-		saynn("She stands up and takes some time punching the data into her tablet, still holding the candy with her other hand. Then she directs her attention back at you.")
+		saynn("Она встает и какое-то время усердно вбивает данные в планшет, все еще сжимая конфету в другой руке. Затем она снова переводит взгляд на тебя.")
 
-		saynn("[say=eliza]If you want that treat.. well.. I wanna see you act as a good puppy. Or a kitty, I don’t mind cute kitties.[/say]")
+		saynn("[say=eliza]Если хочешь эту вкусняшку... ну... я хочу увидеть, как ты ведешь себя как послушная собачка. Или как кошечка, я не против милых кошечек.[/say]")
 
-		addButton("Bark", "Act like a good puppy", "bark")
-		addButton("Meow", "Act like a good kitty", "meow")
-		addButton("Moo?", "Act like a good cow", "moo")
-		addButton("Growl at", "You’re not some kind of animal. Behavior-", "growl_at")
+		addButton("Гав!", "Вести себя как послушная собачка", "bark")
+		addButton("Мяу", "Вести себя как послушная кошечка", "meow")
+		addButton("Му?", "Вести себя как послушная коровка", "moo")
+		addButton("Зарычать на", "Ты же не какое-то там животное. Твое поведение—", "growl_at")
 
 	if(state == "bark"):
-		saynn("You feel slightly humiliated but you really want that treat. You look away and bark a few times.")
+		saynn("Ты чувствуешь легкое унижение, но чертовски хочешь эту вкусняшку. Ты отводишь взгляд и несколько раз гавкаешь.")
 
-		saynn("[say=pc]Bark, bark, bark..[/say]")
+		saynn("[say=pc]Гав, гав, гав...[/say]")
 
-		saynn("A cheeky grin flashes on Eliza’s face. She scritches you behind the ear and you can’t stop your leg from kicking the floor. You blush hard.")
+		saynn("На лице Элизы промелькнула дерзкая ухмылка. Она чешет тебя за ушком, и ты не можешь удержать ногу от непроизвольного постукивания по полу. Ты заливаешься густым румянцем.")
 
-		saynn("[say=eliza]Who’s a good puppy~?[/say]")
+		saynn("[say=eliza]Кто у нас такой хороший песик~?[/say]")
 
-		saynn("You’re making confused noises! Who is she talking about? You tilt your head to the side.")
+		saynn("Ты издаешь смущенные звуки! О ком она говорит? Ты в замешательстве наклоняешь голову набок.")
 
-		saynn("[say=pc]Mee-e?..[/say]")
+		saynn("[say=pc]Мяу?..[/say]")
 
-		saynn("Eliza puts hands on your cheeks and gives you more scritches.")
+		saynn("Элиза берет тебя за щеки и продолжает щекотать за ушком.")
 
-		saynn("[say=eliza]Of course it’s you~.[/say]")
+		saynn("[say=eliza]Конечно же, это ты~.[/say]")
 
-		saynn("Then she opens the candy bar and feeds it to you. You open your mouth and eagerly nom it while she showers you with headpats.")
+		saynn("Затем она разворачивает батончик и скармливает его тебе. Ты открываешь рот и с жадностью уплетаешь лакомство, пока она осыпает тебя поглаживаниями по голове.")
 
-		saynn("[say=eliza]That’s a good puppy. Gonna go check other patients.[/say]")
+		saynn("[say=eliza]Хороший песик. Пойду проверю других пациентов.[/say]")
 
-		saynn("She leaves your cell and closes the door, leaving you alone again. At least you got that treat.")
+		saynn("Она выходит из камеры и закрывает дверь, оставляя тебя в одиночестве. По крайней мере, ты получил вкусняшку.")
 
 		# (scene ends)
-		addButton("Continue", "That wasn't so bad", "endthescene")
+		addButton("Продолжить", "Было не так уж и плохо", "endthescene")
 
 	if(state == "meow"):
-		saynn("You feel slightly humiliated but you really want that treat. You tilt your head down.")
+		saynn("Ты чувствуешь легкое унижение, но лакомство тебе безумно хочется. Ты склоняешь голову.")
 
-		saynn("[say=pc]Meow?.. mew..[/say]")
+		saynn("[say=pc]Мяу?.. мяв..[/say]")
 
-		saynn("A cheeky grin flashes on Eliza’s face. She boops your nose and watches you go cross-eyed. Then she strokes your head, your chest, your {pc.breasts}. You imitate a feline purr for her, just cause it feels good..")
+		saynn("На лице Элизы промелькнула дерзкая ухмылка. Она щелкает тебя по носу, наблюдая, как у тебя глаза разъезжаются в разные стороны. Затем она гладит тебя по голове, по груди, по твоему {pc.breasts}. Ты имитируешь кошачье мурлыканье специально для неё, просто потому что это приятно..")
 
-		saynn("[say=eliza]That’s a good kitty cat. Would snuggle you for hours but I gotta go check on others.[/say]")
+		saynn("[say=eliza]Хорошая кошечка. Я бы тискала тебя часами, но мне пора проверить остальных.[/say]")
 
-		saynn("She opens the candy and places it into your mouth. You nom it eagerly and purr louder. Eliza offers you scritches and then continues on her way, closing your cell and leaving you alone.")
+		saynn("Она разворачивает конфету и кладет её тебе в рот. Ты жадно её уплетаешь и мурлычешь всё громче. Элиза чешет тебя за ушком и идет дальше, закрывая твою камеру и оставляя тебя в одиночестве.")
 
 		# (scene ends)
-		addButton("Continue", "That wasn't so bad", "endthescene")
+		addButton("Продолжить", "Было не так уж и плохо", "endthescene")
 
 		
 
 	if(state == "moo"):
-		saynn("You feel slightly humiliated but you really want that treat. You push your chest out and produce a cute animal noise.")
+		saynn("Ты чувствуешь легкое унижение, но лакомство тебе безумно хочется. Ты выпячиваешь грудь и издаешь милый звериный звук.")
 
-		saynn("[say=pc]Moo.. moo-o..[/say]")
+		saynn("[say=pc]Му.. му-у-у..[/say]")
 
-		saynn("Eliza raises her brow and chuckles.")
+		saynn("Элиза удивленно вскидывает бровь и посмеивается.")
 
-		saynn("[say=eliza]You’re a cow, huh~. Let’s check.[/say]")
+		saynn("[say=eliza]Ты у нас коровка, да?~ Давай проверим.[/say]")
 
-		saynn("She puts her hands on your {pc.breasts} and gives them a firm squeeze, her fingers wrap around your nipples and tug on them, trying to milk you. It feels good, you can’t stop moans from escaping your lips.")
+		saynn("Она кладет руки на твои {pc.breasts} и крепко сжимает их; её пальцы обхватывают соски и тянут их, словно пытаясь подоить. Это приятно, и ты не можешь сдержать стонов, срывающийся с твоих губ.")
 
 		# (if can milk)
 		if(GM.pc.canBeMilked()):
-			saynn("And soon enough, drips of {pc.milk} began streaming down your breasts, you’re lactating. Eliza catches some of your {pc.milk} and licks her digits. You moo again..")
+			saynn("И вскоре по твоей груди потекли капли {pc.milk} — ты начала лактацию. Элиза слизывает часть твоих {pc.milk}, облизывая пальцы. Ты снова мычишь...")
 
-			saynn("[say=eliza]Tasty. I should add this into my morning coffee~.[/say]")
+			saynn("[say=eliza]Вкусно. Надо будет добавлять это в мой утренний кофе~.[/say]")
 
 		# (if can’t milk)
 		else:
-			saynn("She did manage to squeeze a very small amount of your milk but nowhere near enough. Still, you moo again for her.")
+			saynn("Ей удалось выдавить совсем немного молока, но этого явно мало. И всё же, ты снова мычишь для неё.")
 
-			saynn("[say=eliza]Hmm.. Should work on these more sometime.[/say]")
+			saynn("[say=eliza]Хм.. Надо будет поработать над ними получше как-нибудь.[/say]")
 
-		saynn("She opens the candy and places it into your mouth. You nom it eagerly and moo for her.")
+		saynn("Она разворачивает конфету и кладет её тебе в рот. Ты с жадностью её жуешь и мычишь для неё.")
 
-		saynn("[say=eliza]Gonna go check on others, sit tight, moo~[/say]")
+		saynn("[say=eliza]Пойду проверю остальных, сиди смирно, му~[/say]")
 
-		saynn("She leaves your cell and closes the door, leaving you alone again. At least you got that treat.")
+		saynn("Она выходит из камеры и закрывает дверь, оставляя тебя в одиночестве. По крайней мере, ты получил вкусняшку.")
 
 		# (scene ends)
-		addButton("Continue", "That wasn't so bad", "endthescene")
+		addButton("Продолжить", "Было не так уж и плохо", "endthescene")
 
 		
 
 	if(state == "growl_at"):
-		saynn("You show Eliza your fangs and growl at her. She tilts her head to the side and shakes it.")
+		saynn("Ты скалишься Элизе, показывая клыки, и рычишь на неё. Она наклоняет голову набок и качает ею.")
 
-		saynn("[say=eliza]That’s not a cute puppy I was asking for. You’re showing me a spoiled bitch.[/say]")
+		saynn("[say=eliza]Я не милого щенка просила. Ты показываешь мне избалованную сучку.[/say]")
 
-		saynn("She seems very upset with you. She bares her claws and gives your skin a swift scratch. Ow.")
+		saynn("Она кажется очень рассерженной на тебя. Она выпускает когти и резко царапает твою кожу. Ой!")
 
-		saynn("[say=eliza]No candy for you then, brat.[/say]")
+		saynn("[say=eliza]Значит, никаких конфет тебе, мелкая.[/say]")
 
-		saynn("Eliza stands up and leaves your cell. The door slowly closes behind her.")
+		saynn("Элиза встает и выходит из твоей камеры. Дверь за ней медленно закрывается.")
 
 		# (scene end)
-		addButton("Continue", "Ow", "endthescene")
+		addButton("Продолжить", "Ow", "endthescene")
 
 func _react(_action: String, _args):
 

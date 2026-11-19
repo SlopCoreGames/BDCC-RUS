@@ -13,69 +13,69 @@ func _run():
 		GM.pc.setLocation("medical_near_pccell")
 		setLocationName("Near cells")
 		
-		saynn("Eliza holds your leash, you try to look brave even with that straitjacket on.")
+		saynn("Элиза держит поводок; ты пытаешься выглядеть храбрым, даже несмотря на смирительную рубашку.")
 
-		saynn("[say=eliza]So silly..[/say]")
+		saynn("[say=eliza]Такой глупенький..[/say]")
 
-		saynn("Eliza walks circles around you, your eyes track her while you try to get that latex restraint off. She gives your {pc.thick} ass a firm swat. You whine from pain and stop.")
+		saynn("Элиза ходит вокруг тебя кругами; твои глаза следят за ней, пока ты пытаешься стянуть латексное крепление. Она дает звонкую пощечину по твоей {pc.thick} заднице. Ты скулишь от боли и затихаешь.")
 
-		saynn("[say=eliza]Stand still.[/say]")
+		saynn("[say=eliza]Стой смирно.[/say]")
 
-		saynn("She slowly wraps the leash around your neck, above the collar, cold chain links press on your throat with pressure that gradually increases. She stops in front of you and looks you into your eyes.")
+		saynn("Она медленно обматывает поводок вокруг твоей шеи, поверх ошейника; холодные звенья цепи давят на горло, и это давление постепенно нарастает. Она останавливается прямо перед тобой и заглядывает тебе в глаза.")
 
-		saynn("[say=eliza]I’m giving you one chance. Get on your knees and promise to behave.[/say]")
+		saynn("[say=eliza]Даю тебе один шанс. Встань на колени и пообещай вести себя прилично.[/say]")
 
-		saynn("You can feel her hot breath, deep growling as she decides what to do with you. You feel very uneasy, uncomfortable.")
+		saynn("Ты чувствуешь её горячее дыхание и глубокое рычание, пока она решает, что с тобой делать. Тебе становится очень не по себе, ты чувствуешь дискомфорт.")
 
-		addButton("Submit", "Behave for once", "submit")
-		addButton("Resist", "She will torture you..", "resist")
+		addButton("Подчиниться", "Веди себя хоть раз прилично", "submit")
+		addButton("Сопротивляться", "Она будет тебя пытать..", "resist")
 
 	if(state == "submit"):
-		saynn("You get on your knees like she ordered you.")
+		saynn("Ты встаешь на колени, как она и приказала.")
 
-		saynn("[say=pc]I will behave, I promise.[/say]")
+		saynn("[say=pc]Я буду вести себя хорошо, обещаю![/say]")
 
-		saynn("Eliza slowly unwraps the leash and gives you a cold head pat.")
+		saynn("Элиза медленно разматывает поводок и холодно, почти пренебрежительно, хлопает тебя по голове.")
 
-		saynn("[say=eliza]Much better. I will still do this though.[/say]")
+		saynn("[say=eliza]Так-то лучше. Но я всё равно это сделаю.[/say]")
 
-		saynn("She grabs some syringe off of her belt and injects you with it. You suddenly feel very sleepy..")
+		saynn("Она достает с пояса шприц и вводит тебе содержимое. Внезапно тебя накрывает сильнейшая сонливость...")
 
-		addButton("Sleep", "Time to go bye bye", "sleep1")
+		addButton("Спать", "Пора засыпать, сладких снов.", "sleep1")
 
 	if(state == "resist"):
-		saynn("You have made up your mind, you’re not gonna listen to some insane bitch. Eliza exhales audibly as she keeps wrapping more of the leash around your neck.")
+		saynn("Ты всё решил: ты не собираешься слушать какую-то безумную сучку. Элиза тяжело вздыхает, продолжая наматывать поводок на твою шею.")
 
-		saynn("[say=eliza]Brain can survive up to 10 minutes without any oxygen. After that the damage is irreversible.[/say]")
+		saynn("[say=eliza]Мозг может обходиться без кислорода до 10 минут. После этого повреждения становятся необратимыми.[/say]")
 
-		saynn("[say=pc]You're gonna kill me?[/say]")
+		saynn("[say=pc]Ты что, собралась меня убить?[/say]")
 
-		saynn("[say=eliza]If one little meaningless life needs to be taken away in order to push science further - so be it. Millions can benefit from the death of a single test subject..[/say]")
+		saynn("[say=eliza]Если ради прогресса науки нужно забрать одну маленькую, никчемную жизнь — да будет так. Смерть одного подопытного принесет пользу миллионам...[/say]")
 
-		saynn("[say=pc]You’re not gonna do it.[/say]")
+		saynn("[say=pc]У тебя не получится.[/say]")
 
-		saynn("[say=eliza]See if I care.[/say]")
+		saynn("[say=eliza]Посмотрим, волнует ли это меня.[/say]")
 
-		saynn("Suddenly she grabs your collar with one hand while using the other to pull on the leash, the chain links bury themselves into your skin, leaving many painful bruises and little cuts. You realize that you can’t breathe, you can’t even produce a cry, the leash is choking you.")
+		saynn("Внезапно она одной рукой хватает тебя за воротник, а другой тянет за поводок; звенья цепи впиваются в твою кожу, оставляя болезненные синяки и мелкие порезы. Ты понимаешь, что не можешь дышать, не можешь даже вскрикнуть — поводок душит тебя.")
 
-		saynn("[say=eliza]I’ve devoted my whole life to this, I will make any sacrifice for the greater good.[/say]")
+		saynn("[say=eliza]Я посвятила этому всю свою жизнь, я принесу любую жертву ради высшего блага.[/say]")
 
-		saynn("Her mean eyes watch you struggle for air, you can’t even protect yourself, your arms are bound by that straitjacket. Eliza tilts her head to the side slightly, she has a face of a maniac.")
+		saynn("Её злобные глаза наблюдают за твоей борьбой за воздух; ты даже не можешь защититься, ведь твои руки скованы смирительной рубашкой. Элиза слегка наклоняет голову набок — у неё лицо настоящего маньяка.")
 
-		saynn("Seconds pass, one by one, each one making you weaker and weaker.. Corners of your vision darken.. heart beats like hell.. Eliza drills you with her gaze.")
+		saynn("Секунды проходят одна за другой, каждая делает тебя всё слабее и слабее... Края зрения темнеют... сердце колотится как бешеное... Элиза сверлит тебя взглядом.")
 
-		addButton("Continue", "Is that how you die?..", "continue")
+		addButton("Продолжить", "Неужели это твоя смерть?..", "continue")
 
 	if(state == "continue"):
-		saynn("Eliza growls and lets go of the leash. It unwraps itself enough to let you breathe, you drop to your knees, coughing and gasping for air.")
+		saynn("Элиза рычит и отпускает поводок. Он разматывается достаточно, чтобы ты мог вздохнуть; ты падаешь на колени, кашляя и жадно хватая ртом воздух.")
 
-		saynn("[say=eliza]I’m not a murderer, this kind of suffering doesn’t bring joy to me.[/say]")
+		saynn("[say=eliza]Я не убийца, подобные страдания не приносят мне радости.[/say]")
 
-		saynn("She pulls out a syringe and injects you with it. It makes you feel sleepy..")
+		saynn("Она достает шприц и делает тебе укол. От него тебя начинает клонить в сон...")
 
-		saynn("[say=eliza]Think about your behavior, I will see you tomorrow.[/say]")
+		saynn("[say=eliza]Подумай над своим поведением, увидимся завтра.[/say]")
 
-		addButton("Sleep", "Time to go bye bye", "sleep1")
+		addButton("Спать", "Пора засыпать, сладких снов.", "sleep1")
 
 	if(state == "sleep1"):
 		aimCamera("medical_paddedcell_player")
@@ -83,12 +83,12 @@ func _run():
 		playAnimation(StageScene.Solo, "kneel")
 		setLocationName("Padded cell")
 		
-		saynn("You wake up in your padded cell. You have a little headache, such a familiar feeling.")
+		saynn("Ты просыпаешься в своей мягкой камере. В голове немного побаливает — до боли знакомое чувство.")
 
-		saynn("Welcome to day "+str(GM.main.getDays())+" of your sentence")
+		saynn("Добро пожаловать в "+str(GM.main.getDays())+" твоего срока")
 		# (scene ends)
 		
-		addButton("Continue", "What next..", "startmental")
+		addButton("Продолжить", "Что дальше..", "startmental")
 		
 
 

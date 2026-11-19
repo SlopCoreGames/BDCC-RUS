@@ -7,177 +7,177 @@ func _run():
 	if(state == ""):
 		addCharacter("avy")
 		playAnimation(StageScene.Duo, "stand", {npc="avy"})
-		saynn("[say=pc]Can I ask you something? About what we're doing.[/say]")
+		saynn("[say=pc]Можно тебя кое о чем спросить? О том, чем мы тут занимаемся.[/say]")
 
-		saynn("Avy puts the arena list away and directs her attention towards you.")
+		saynn("Эви убирает список арен и переводит взгляд на тебя.")
 
-		saynn("What do you wanna ask?")
+		saynn("О чем хочешь спросить?")
 
-		addButton("Back", "Enough chat", "endthescene")
-		addButton("Avy", "Ask her to tell about herself", "ask_avy")
-		addButton("Kait", "Ask about Kait", "ask_kait")
-		addButton("Why help", "Why is Avy helping the team", "ask_why_help")
-		addButton("Appearance", "Comment on Avy's bulging shorts", "ask_penis")
-		addButton("Past", "Ask her about her past", "ask_past")
-		addButton("Future", "Ask her about the future", "ask_future")
+		addButton("Назад", "Хватит болтать", "endthescene")
+		addButton("Эви", "Попросить её рассказать о себе", "ask_avy")
+		addButton("Кейт", "Спросить о Кейт", "ask_kait")
+		addButton("Зачем помогаешь?", "Почему Эви помогает команде?", "ask_why_help")
+		addButton("Внешность", "Прокомментировать её туго натянутые шорты", "ask_penis")
+		addButton("Прошлое", "Спросить о её прошлом", "ask_past")
+		addButton("Будущее", "Спросить о её будущем", "ask_future")
 	if(state == "ask_avy"):
-		saynn("[say=pc]Tell me something about yourself.[/say]")
+		saynn("[say=pc]Расскажи мне что-нибудь о себе.[/say]")
 
-		saynn("[say=avy]Mean bitch. Evil. Will break your bones and walk away laughing. Will dislocate slut's jaws with my knot.[/say]")
+		saynn("[say=avy]Злая сука. Настоящее зло. Переломает тебе все кости и уйдет, заливаясь смехом. Выбьет шлюхе челюсть своим узлом.[/say]")
 
-		saynn("[say=pc]Nice to meet you.[/say]")
+		saynn("[say=pc]Приятно познакомиться.[/say]")
 
-		saynn("[say=avy]I know how to leave a lasting impression.[/say]")
+		saynn("[say=avy]Я знаю, как оставить неизгладимое впечатление.[/say]")
 
-		saynn("[say=pc]So you know that you're evil.[/say]")
+		saynn("[say=pc]Значит, ты и сама понимаешь, что ты — зло.[/say]")
 
-		saynn("She chuckles.")
+		saynn("Она посмеивается.")
 
-		saynn("[say=avy]Some try to justify their actions. I'm just having fun.[/say]")
+		saynn("[say=avy]Кто-то пытается оправдать свои поступки. А я просто развлекаюсь.[/say]")
 
-		saynn("[say=pc]Are you really that different from AlphaCorp guards then?[/say]")
+		saynn("[say=pc]Так ты и правда так сильно отличаешься от охранников АльфаКорп?[/say]")
 
-		saynn("[say=avy]Of course. I'm not greedy. I'd rather have your hole than your wallet.[/say]")
+		saynn("[say=avy]Разумеется. Я не жадная. Мне куда нужнее твоя дырка, чем твой кошелек.[/say]")
 
-		saynn("[say=pc]Fair.[/say]")
+		saynn("[say=pc]Справедливо.[/say]")
 
-		saynn("[say=avy]Sorry if I'm disappointing you, sweetheart. I just really don't give a fuck.[/say]")
+		saynn("[say=avy]Прости, если разочаровываю тебя, милашка. Просто мне реально глубоко похуй.[/say]")
 
-		saynn("[say=pc]I appreciate the honesty.[/say]")
+		saynn("[say=pc]Ценю твою честность.[/say]")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "ask_kait"):
-		saynn("[say=pc]You and Kait.[/say]")
+		saynn("[say=pc]Ты и Кейт.[/say]")
 
-		saynn("[say=avy]Predator and prey.[/say]")
+		saynn("[say=avy]Хищник и жертва.[/say]")
 
-		saynn("[say=pc]Right.[/say]")
+		saynn("[say=pc]Понятно.[/say]")
 
-		saynn("[say=avy]She is soft. Acts tough. Breaks easily.[/say]")
+		saynn("[say=avy]Она мягкая. Строит из себя крутую. Но ломается на раз-два.[/say]")
 
-		saynn("[say=pc]Do you hate her?[/say]")
+		saynn("[say=pc]Ты её ненавидишь?[/say]")
 
-		saynn("Avy shrugs.")
+		saynn("Эви пожимает плечами.")
 
-		saynn("[say=avy]As much as one hates a punching bag.[/say]")
+		saynn("[say=avy]Настолько же, насколько ненавидят боксёрскую грушу.[/say]")
 
-		saynn("[say=pc]That's who she is to you?[/say]")
+		saynn("[say=pc]Так она для тебя?[/say]")
 
-		saynn("[say=avy]I didn't write the rules, you know. This is just nature.[/say]")
+		saynn("[say=avy]Знаешь, это не я правила придумала. Это просто природа.[/say]")
 
-		saynn("[say=pc]Nature? We're out in outer space, this place has very little to do with nature.[/say]")
+		saynn("[say=pc]Природа? Мы вообще-то в открытом космосе, это место имеет мало общего с природой.[/say]")
 
-		saynn("[say=avy]And yet I'm at the top of this food chain.[/say]")
+		saynn("[say=avy]И всё же, в этой пищевой цепочке я на вершине.[/say]")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "ask_why_help"):
-		saynn("[say=pc]Why are you helping us?[/say]")
+		saynn("[say=pc]Почему ты нам помогаешь?[/say]")
 
-		saynn("[say=avy]Ans asked me.[/say]")
+		saynn("[say=avy]Анс попросила.[/say]")
 
-		saynn("[say=pc]You couldn't have said no.[/say]")
+		saynn("[say=pc]Ты бы не смогла отказать.[/say]")
 
-		saynn("[say=avy]I could have.[/say]")
+		saynn("[say=avy]Еще как смогла.[/say]")
 
-		saynn("[say=pc]And yet you didn't.[/say]")
+		saynn("[say=pc]И всё же не отказала.[/say]")
 
-		saynn("[say=avy]And yet I didn't.[/say]")
+		saynn("[say=avy]И всё же не отказала.[/say]")
 
-		saynn("Avy sure doesn't wanna answer this.")
+		saynn("Ави явно не хочет на это отвечать.")
 
-		saynn("[say=pc]Why not?[/say]")
+		saynn("[say=pc]Почему это?[/say]")
 
-		saynn("She rolls her eyes, her tail does an annoyed flick.")
+		saynn("Она закатывает глаза, а её хвост раздражённо дёргается.")
 
-		saynn("[say=avy]It'd be rude to the old guy. But it also sounded fun.[/say]")
+		saynn("[say=avy]Было бы грубо по отношению к старику. Но звучало это тоже весело.[/say]")
 
-		saynn("[say=pc]Fun?[/say]")
+		saynn("[say=pc]Весело?[/say]")
 
-		saynn("[say=avy]I get to turn AlphaCorp bitches into my bitches.[/say]")
+		saynn("[say=avy]Я смогу превратить сучек из АльфаКорп в своих личных сучек.[/say]")
 
-		saynn("[say=pc]Do you hate AlphaCorp?[/say]")
+		saynn("[say=pc]Ты ненавидишь АльфаКорп?[/say]")
 
-		saynn("[say=avy]Sure.[/say]")
+		saynn("[say=avy]Конечно.[/say]")
 
-		saynn("[say=pc]You don't sound passionate about it.[/say]")
+		saynn("[say=pc]Ты не звучишь так, будто тебя это по-настоящему задевает.[/say]")
 
-		saynn("[say=avy]'Cause I'm not? It's pointless, they won. AlphaCorp controls more than half of all the systems or whatever.[/say]")
+		saynn("[say=avy]А разве должно? Это бессмысленно, они победили. АльфаКорп контролирует больше половины всех систем или типа того.[/say]")
 
-		saynn("[say=pc]If it's pointless, why are you helping us?[/say]")
+		saynn("[say=pc]Если это бессмысленно, зачем ты тогда нам помогаешь?[/say]")
 
-		saynn("[say=avy]I told you why.[/say]")
+		saynn("[say=avy]Я же сказала почему.[/say]")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "ask_penis"):
-		saynn("[say=pc]You have tits.[/say]")
+		saynn("[say=pc]У тебя есть сиськи.[/say]")
 
-		saynn("[say=avy]I do.[/say]")
+		saynn("[say=avy]Есть.[/say]")
 
-		saynn("Avy crosses her arms.")
+		saynn("Эви скрещивает руки на груди.")
 
-		saynn("[say=pc]And bulging shorts.[/say]")
+		saynn("[say=pc]И шорты натянуты до предела.[/say]")
 
-		saynn("[say=avy]You're very observant. Yes, I got born with a dick instead of a cunt.[/say]")
+		saynn("[say=avy]Ты очень наблюдательна. Да, я родилась с членом вместо киски.[/say]")
 
-		saynn("[say=pc]Nothing wrong with that.[/say]")
+		saynn("[say=pc]В этом нет ничего плохого.[/say]")
 
-		saynn("[say=avy]Uh huh.[/say]")
+		saynn("[say=avy]Угу.[/say]")
 
-		saynn("[say=pc]So you can breed but you can't be bred.[/say]")
+		saynn("[say=pc]Значит, ты можешь осеменять, но тебя саму не осеменить.[/say]")
 
-		saynn("[say=avy]Tragic, huh?[/say]")
+		saynn("[say=avy]Трагично, да?[/say]")
 
-		saynn("[say=pc]Not really. Your cock fits you. You and your personality.[/say]")
+		saynn("[say=pc]Не особо. Твой член тебе подходит. Тебе и твоему характеру.[/say]")
 
-		saynn("[say=avy]Is that a weird attempt at a compliment?[/say]")
+		saynn("[say=avy]Это что, такая странная попытка сделать комплимент?[/say]")
 
-		saynn("[say=pc]Sure.[/say]")
+		saynn("[say=pc]Конечно.[/say]")
 
-		saynn("[say=avy]My cock fits in many things. Just gotta apply enough strength. And strength is one thing I don't lack.[/say]")
+		saynn("[say=avy]Мой член пролезет во что угодно. Нужно только приложить достаточно силы. А силы мне точно не занимать.[/say]")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "ask_past"):
-		saynn("[say=pc]Do you remember your life before prison?[/say]")
+		saynn("[say=pc]Ты помнишь свою жизнь до тюрьмы?[/say]")
 
-		saynn("Avy crosses her arms.")
+		saynn("Эви скрещивает руки на груди.")
 
-		saynn("[say=avy]Why are you asking?[/say]")
+		saynn("[say=avy]А почему ты спрашиваешь?[/say]")
 
-		saynn("[say=pc]Just curious.[/say]")
+		saynn("[say=pc]Просто любопытно.[/say]")
 
-		saynn("[say=avy]Why are you curious then?[/say]")
+		saynn("[say=avy]Ну и почему же тебе любопытно?[/say]")
 
-		saynn("[say=pc]C'mon, Avy. I wonder if you had a hard life. I wonder how you ended up here.[/say]")
+		saynn("[say=pc]Да ладно тебе, Эви. Мне вот интересно, была ли у тебя тяжелая жизнь. Интересно, как ты здесь оказалась.[/say]")
 
-		saynn("[say=avy]Keep wondering.[/say]")
+		saynn("[say=avy]Ну, гадай дальше.[/say]")
 
-		saynn("Right. Looks like she doesn't wanna share.")
+		saynn("Ясно. Похоже, делиться она не хочет.")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "ask_future"):
-		saynn("[say=pc]What are you gonna do after this?[/say]")
+		saynn("[say=pc]Что будешь делать после всего этого?[/say]")
 
-		saynn("[say=avy]I'm gonna be managing the arena, don't ask stupid questions.[/say]")
+		saynn("[say=avy]Буду управлять ареной, не задавай глупых вопросов.[/say]")
 
-		saynn("[say=pc]You understood it in a stupid way, Avy. What are you gonna do after you get out? I'm sure you have dreams.[/say]")
+		saynn("[say=pc]Ты всё поняла по-идиотски, Эви. Чем займешься, когда выйдешь? Уверена, у тебя есть мечты.[/say]")
 
-		saynn("[say=avy]I'd rather not waste time on pointless shit like dreaming.[/say]")
+		saynn("[say=avy]Я бы предпочла не тратить время на всякую бесполезную херню вроде мечтаний.[/say]")
 
-		saynn("[say=pc]Not a dreamer, huh?[/say]")
+		saynn("[say=pc]Значит, не мечтательница, да?[/say]")
 
-		saynn("[say=avy]I'm stuck here forever. You as well.[/say]")
+		saynn("[say=avy]Я застряла здесь навсегда. И ты тоже.[/say]")
 
-		saynn("[say=pc]If we overthrow the captain, you will be free. Just like me.[/say]")
+		saynn("[say=pc]Если мы свергнем капитана, ты станешь свободной. Как и я.[/say]")
 
-		saynn("[say=avy]Doubt it.[/say]")
+		saynn("[say=avy]Сомневаюсь.[/say]")
 
-		saynn("[say=pc]Why?[/say]")
+		saynn("[say=pc]Почему?[/say]")
 
-		saynn("[say=avy]Get real.[/say]")
+		saynn("[say=avy]Спустись на землю.[/say]")
 
-		saynn("Right.")
+		saynn("Ясно.")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

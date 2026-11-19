@@ -7,71 +7,71 @@ func _run():
 	if(state == ""):
 		addCharacter("kait")
 		playAnimation(StageScene.Duo, "stand", {npc="kait"})
-		saynn("You approach a familiar snow leopard that's wearing lilac colors. Looks like she is wearing a fresh uniform actually.. makes sense. She looks a bit beat up still.")
+		saynn("Ты подходишь к знакомой снежной леопарду в сиреневых тонах. Похоже, на ней на самом деле свежая форма... впрочем, логично. Выглядит она всё ещё слегка побитой.")
 
-		saynn("[say=pc]Hey there. I managed to find you. That fight was rough.[/say]")
+		saynn("[say=pc]Эй. Всё-таки я тебя нашла. Драка была жесткой.[/say]")
 
-		saynn("Her round ears perk towards your voice.")
+		saynn("Её круглые ушки навострились на твой голос.")
 
 		if (getFlag("KaitModule.bredByAviArena")):
-			saynn("[say=kait]Yeah.. Avy.. that stupid bitch. At least I cleaned her cum out as fast as I could.[/say]")
+			saynn("[say=kait]Да уж... Эви... эта тупая сучка. По крайней мере, я вытерла её сперму так быстро, как только смогла.[/say]")
 
-			saynn("[say=pc]Does that happen often?[/say]")
+			saynn("[say=pc]Это часто случается?[/say]")
 
-			saynn("[say=kait]That was my first loss. I knew what I signed up for I guess.[/say]")
+			saynn("[say=kait]Это было моё первое поражение. Наверное, я знала, на что подписываюсь.[/say]")
 
-			saynn("First loss.. but already a big one.")
+			saynn("Первое поражение... но уже такое крупное.")
 
 		else:
-			saynn("[say=kait]Yeah.. Avy.. that stupid bitch. At least I didn't get fucked, that would have been humiliating. Some kind soul decided to save me.[/say]")
+			saynn("[say=kait]Да... Эви... эта тупая сучка. По крайней мере, меня не трахнули, а это было бы унизительно. Какая-то добрая душа решила меня спасти.[/say]")
 
-			saynn("You decide not to tell her who that soul was.. not yet at least.")
+			saynn("Ты решаешь не говорить ей, кто именно был этой душой... по крайней мере, пока что.")
 
-			saynn("[say=pc]Does that happen often?[/say]")
+			saynn("[say=pc]Это часто случается?[/say]")
 
-			saynn("[say=kait]Getting saved? Not really. Usually the crowd only makes it worse. I knew what I signed up for I guess.[/say]")
+			saynn("[say=kait]Спасение? Не совсем. Обычно толпа только всё усугубляет. Наверное, я и сама знала, на что подписываюсь.[/say]")
 
-			saynn("The crowd wants a good show.")
+			saynn("Толпа жаждет хорошего шоу.")
 
-		saynn("[say=pc]But yeah.. here I am.[/say]")
+		saynn("[say=pc]Но да... вот я и здесь.[/say]")
 
-		saynn("[say=kait]You did it. Nice.[/say]")
+		saynn("[say=kait]Ты справился. Неплохо.[/say]")
 
-		saynn("[say=pc]I did your test.[/say]")
+		saynn("[say=pc]Я прошла твой тест.[/say]")
 
-		saynn("Kait offers you a cute smile. Her bruises make her hiss soon after.")
+		saynn("Кейт мило тебе улыбается, но тут же шипит от боли из-за синяков.")
 
-		saynn("[say=kait]Good job.[/say]")
+		saynn("[say=kait]Хорошая работа.[/say]")
 
-		saynn("But now there is only silence.")
+		saynn("Но теперь воцарилась тишина.")
 
-		saynn("[say=pc]So?[/say]")
+		saynn("[say=pc]Ну?[/say]")
 
-		saynn("[say=kait]Well..[/say]")
+		saynn("[say=kait]Ну что ж..[/say]")
 
-		saynn("[say=pc]Well?[/say]")
+		saynn("[say=pc]Ну?[/say]")
 
-		saynn("She rubs her snout.")
+		saynn("Она потирает мордочку.")
 
-		saynn("[say=kait]You gotta be able to stand for yourself. I don't need total doormats.[/say]")
+		saynn("[say=kait]Ты должна уметь постоять за себя. Мне не нужны бесхребетные тряпки.[/say]")
 
-		saynn("[say=pc]You saying I'm a doormat?[/say]")
+		saynn("[say=pc]Ты намекаешь, что я тряпка?[/say]")
 
-		saynn("You got past the bulldog.. but that might not be enough for her it seems.")
+		saynn("Ты миновала «бульдога»... но, похоже, для неё этого может оказаться недостаточно.")
 
-		saynn("[say=kait]No. Well.. There is a way to find that out. See the arena?[/say]")
+		saynn("[say=kait]Нет. Ну... есть способ это выяснить. Видишь арену?[/say]")
 
-		saynn("Right.")
+		saynn("Ясно.")
 
-		saynn("[say=kait]Follow my steps. If you win a few fights, that will be enough for me.[/say]")
+		saynn("[say=kait]Повторяй за мной. Если выиграешь несколько боев, этого будет достаточно.[/say]")
 
-		saynn("[say=pc]I have to fight in the arena?[/say]")
+		saynn("[say=pc]Мне что, придется драться на арене?[/say]")
 
-		saynn("[say=kait]Yeah? How do you think we're gonna overthrow the captain? We're gonna fight for it. A lot. Until he is our bitch! If you don't wanna fight, that's fine too. Just don't waste my time then, pretty please.[/say]")
+		saynn("[say=kait]А как, по-твоему, мы свергнем капитана? Нам придется за это сражаться. И много. Пока он не станет нашей сучкой! Если не хочешь драться — ладно. Только не трать моё время, умоляю.[/say]")
 
-		saynn("If you wanna join the rebellion, you gotta become a rebel.")
+		saynn("Если хочешь примкнуть к восстанию, тебе придется стать бунтаркой.")
 
-		addButton("Continue", "See what happens next", "startTalkScene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "startTalkScene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

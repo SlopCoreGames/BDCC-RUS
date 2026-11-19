@@ -26,3850 +26,3850 @@ func _run():
 		soundScore = getModule("JackiModule").getSkillScore("jackiSkillSounding")
 		addCharacter("jacki")
 		if (anger < 0.0):
-			saynn("Jacki's kindness: "+str(Util.roundF(-anger*100.0, 1))+"% ("+str(getModule("JackiModule").getAngerText())+")")
+			saynn("Доброта Джеки: "+str(Util.roundF(-anger*100.0, 1))+"% ("+str(getModule("JackiModule").getAngerText())+")")
 
 		else:
-			saynn("Jacki's anger: "+str(Util.roundF(anger*100.0, 1))+"% ("+str(getModule("JackiModule").getAngerText())+")")
+			saynn("Гнев Джеки: "+str(Util.roundF(anger*100.0, 1))+"% ("+str(getModule("JackiModule").getAngerText())+")")
 
-		saynn("Jacki's corruption: "+str(Util.roundF(corruption*100.0, 1))+"% ("+str(getModule("JackiModule").getCorruptionText())+")"+("\nJacki is broken, her anger will now go down from mean actions." if (corruption >= 1.0 && anger >= 0.0) else ""))
+		saynn("Развращенность Джеки: "+str(Util.roundF(corruption*100.0, 1))+"% ("+str(getModule("JackiModule").getCorruptionText())+")"+("\nJacki is broken, her anger will now go down from mean actions." if (corruption >= 1.0 && anger >= 0.0) else ""))
 
-		saynn("Jacki's lust: "+str(Util.roundF(lust*100.0, 1))+"% ("+str(getModule("JackiModule").getLustText())+")"+("\nJacki is so lusty that any lewd action will now corrupt her." if (lust >= 1.0 && corruption < 1.0) else ""))
+		saynn("Похоть Джеки: "+str(Util.roundF(lust*100.0, 1))+"% ("+str(getModule("JackiModule").getLustText())+")"+("\nJacki is so lusty that any lewd action will now corrupt her." if (lust >= 1.0 && corruption < 1.0) else ""))
 
 		playAnimation(StageScene.Solo, "kneel", {pc="jacki", bodyState={underwear=hasUnderwear}})
 		if (anger >= 0.1):
-			saynn("Jacki is"+str(" extremely" if anger > 0.5 else "")+" angry at you so it's best for you not to come too close to her. Not until you decide to act.")
+			saynn("Джеки "+str(" extremely" if anger > 0.5 else "")+"рассержена на тебя, так что лучше не подходи к ней слишком близко. По крайней мере, пока ты не решишь действовать.")
 
-			saynn("You take a spot in some shadow and just watch her exercise.")
+			saynn("Ты забиваешься в тень и просто наблюдаешь за её тренировкой.")
 
 		elif (anger >= -0.1):
-			saynn("Jacki is not angry at you. But you're also weren't exactly kind to her. So it's best to stay some distance away. Until you decide to do something.")
+			saynn("Джеки не злится на тебя. Но и ты не был с ней особенно ласков. Так что лучше держаться на расстоянии. Пока не решишь что-нибудь предпринять.")
 
-			saynn("You take a spot near some tall bush and just watch her exercise.")
+			saynn("Ты устраиваешься возле высокого куста и просто наблюдаешь за её тренировкой.")
 
 		else:
-			saynn("You walk up to Jacki. She smiles"+str(" very kindly" if anger < -0.5 else "")+" when she sees you.")
+			saynn("Ты подходишь к Джеки. Она улыбается"+str(" very kindly" if anger < -0.5 else "")+" когда видит тебя.")
 
-			saynn("[say=jacki]Hey there. Wruff.[/say]")
+			saynn("[say=jacki]О, привет. Гав![/say]")
 
-			saynn("She seems to be doing some exercises.")
+			saynn("Кажется, она делает какие-то упражнения.")
 
 		if (corruption >= 1.0):
-			saynn("The way she acts is extremely slutty. Bending over often and showing off her ass to anyone who wishes to even glance at it.")
+			saynn("Ведет она себя крайне похотливо. Постоянно наклоняется, выставляя свою задницу напоказ любому, кто решит на нее взглянуть.")
 
 		elif (corruption > 0.7):
-			saynn("The way she acts is quite slutty. Each time she bends over, she catches a few hungry glances from other inmates.")
+			saynn("Ведет она себя довольно шлюхоподобно. Каждый раз, когда она наклоняется, она ловит на себе несколько голодных взглядов других заключенных.")
 
 		elif (corruption > 0.4):
-			saynn("You notice Jacki acting a bit more.. provocative. Often attracting some extra glances from inmates around.")
+			saynn("Ты замечаешь, что Джеки стала вести себя чуть более... провокационно. Она то и дело притягивает лишние взгляды окружающих заключенных.")
 
 		elif (corruption > 0.2):
-			saynn("Jacki is a little more brave with what kinds of poses she chooses.")
+			saynn("Джеки стала смелее в выборе поз.")
 
 		if (lust >= 1.0):
-			saynn("There is always a visible damp spot on Jacki's shorts where her stitched up pussy is. She is dripping like a slut. You can't walk past without sensing her lusty scent.")
+			saynn("На шортах Джеки всегда заметно влажное пятно там, где у нее зашитая киска. Она течет как настоящая шлюха. Невозможно пройти мимо, не почувствовав ее возбуждающий запах.")
 
 		elif (lust > 0.7):
-			saynn("When Jacki bends, her pussy leaves a wet spot on her shorts that fades away after some time. And the smell of juices is quite arousing.")
+			saynn("Когда Джеки наклоняется, ее киска оставляет на шортах мокрое пятно, которое со временем исчезает. А запах ее соков чертовски возбуждает.")
 
 		elif (lust > 0.4):
-			saynn("You get a slight lusty scent from Jacki. Occasionally you notice the outline of her pussy")
+			saynn("От Джеки исходит легкий аромат похоти. Время от времени ты замечаешь очертания ее киски сквозь ткань.")
 
 		elif (lust > 0.2):
-			saynn("You get a slight lusty scent from Jacki.")
+			saynn("От Джеки исходит легкий, возбуждающий аромат.")
 
 		var isEnslaved = getFlag("JackiModule.Jacki_ch2GotEnslaved", false)
 		if (isEnslaved):
 			var slaveText = getFlag("JackiModule.Jacki_ch2SlaveText", "")
 			if (slaveText != ""):
-				saynn("Jacki belongs to you. And she knows it. That tattoo on her ass that says '"+str(slaveText )+"' is a constant reminder.")
+				saynn("Джеки принадлежит тебе. И она это знает. Та татуировка на её заднице, гласящая «"+str(slaveText )+"», служит постоянным напоминанием.")
 
 			else:
-				saynn("Jacki belongs to you. And she knows it.")
+				saynn("Джеки принадлежит тебе. И она это знает.")
 
 		if (anger >= -0.1 || isEnslaved || lust >= 1.0):
-			addButton("Perv", "Watch her do yoga from a far", "do_perv")
+			addButton("Первый", "Наблюдать за её йогой издалека", "do_perv")
 			if (!isEnslaved && lust < 1.0):
-				addButton("Gift", "Offer a gift that Jacki might forgive you for. In case you want that", "pick_gift")
-			addButton("Follow", "See what Jacki usually does after yoga", "do_creepfollow")
+				addButton("Подарок", "Вручить подарок, который Джеки, возможно, за него простит. Если тебе это нужно", "pick_gift")
+			addButton("Следовать", "Посмотреть, чем Джеки обычно занимается после йоги", "do_creepfollow")
 		if (anger < -0.1 || isEnslaved):
-			addButton("Watch", "Watch her do yoga", "kind_watch")
-			addButton("Gift", "Gift Jacki something", "pick_gift")
+			addButton("Смотреть", "Наблюдать за её йогой", "kind_watch")
+			addButton("Подарок", "Подарить Джеки что-нибудь", "pick_gift")
 			if (anger < -0.3):
-				addButton("Jogging", "Offer Jacki to jog together", "kind_jog")
+				addButton("Бег", "Предложить Джеки побегать вместе", "kind_jog")
 			else:
-				addDisabledButton("Jogging", "Jacki doesn't trust you enough")
+				addDisabledButton("Бег", "Джеки еще недостаточно тебе доверяет")
 		if (!isEnslaved):
 			if (anger <= -1.0 && corruption >= 1.0 && lust >= 1.0):
-				addButton("Enslave", "Make that wolfie your bitch", "do_enslave_jacki")
+				addButton("Поработить", "Сделать эту волчицу своей сучкой", "do_enslave_jacki")
 			else:
-				addDisabledButton("Enslave", "Jacki's kindness, corruption and lust must be at 100%")
+				addDisabledButton("Поработить", "Доброта, развращенность и похоть Джеки должны быть на уровне 100%")
 		else:
-			addButton("Memories", "Replay some of the scenes", "memories_menu")
+			addButton("Воспоминания", "Пересмотреть некоторые сцены", "memories_menu")
 		if(lust >= 1.0 || corruption >= 1.0):
-			addButton("Feed something", "Feed something to Jacki", "feedmenu")
-		addButton("Leave", "Never mind", "endthescene")
+			addButton("Покормить", "Покормить Джеки", "feedmenu")
+		addButton("Уйти", "Проехали", "endthescene")
 	if(state == "memories_menu"):
-		saynn("Pick which scene you wanna see again.")
+		saynn("Выбери сцену, которую хочешь пересмотреть.")
 
-		addButton("Back", "Never mind", "")
-		addButton("Stocks scene", "The scene where you can fuck Jacki in stocks", "mem_stocks")
-		addButton("Punching bag", "The scene where you have to save Jacki from Risha", "mem_punch")
-		addButton("Urinal scene", "The scene where you have to save Jacki from the bullies", "mem_urinal")
+		addButton("Назад", "Проехали", "")
+		addButton("Сцена в колодках", "Сцена, где можно трахнуть Джеки в колодках", "mem_stocks")
+		addButton("Груша", "Сцена, где нужно спасти Джеки от Риши", "mem_punch")
+		addButton("Сцена у писсуара", "Сцена, где нужно спасти Джеки от хулиганов", "mem_urinal")
 	if(state == "do_perv"):
-		saynn("You sneakily sit on one of the benches near the yoga mats which puts you in a prime position to watch Jacki do yoga.")
+		saynn("Ты незаметно усаживаешься на одну из скамеек рядом с ковриками для йоги, оказываясь в идеальной позиции, чтобы наблюдать за тем, как Джеки занимается йогой.")
 
 		if (corruption < 0.2):
 			if (RNG.chance(50)):
 				playAnimation(StageScene.Yoga, "camel", {pc="jacki", bodyState={underwear=hasUnderwear}})
-				saynn("She chooses a pretty tame camel pose that focuses mostly on bending the back.")
+				saynn("Она выбирает довольно спокойную позу верблюда, которая в основном фокусируется на прогибе в спине.")
 
-				saynn("And so Jacki gets on her knees, pulls her chest high and extends her paws backwards as she arches her back, creating quite an enticing curve. Her fit butt is raised enticingly, drawing your attention like a magnet. She closes her eyes.")
+				saynn("И вот Джеки опускается на колени, высоко выпячивает грудь и отводит лапы назад, прогибая спину так, что образуется чертовски соблазнительный изгиб. Её подтянутая задница приподнята в манящем жесте, притягивая твоё внимание словно магнит. Она закрывает глаза.")
 
-				saynn("As she holds the pose, a little suspicion spawns in her mind. It's like she feels someone watching her. But at the same time, she has to actively maintain this graceful pose or she will fall.")
+				saynn("Пока она замерла в этой позе, в её голове рождается лёгкое подозрение. Ей кажется, будто кто-то на неё смотрит. Но в то же время ей приходится изо всех сил удерживать эту грациозную позу, иначе она просто рухнет.")
 
-				saynn("Her breathing gets deeper. At this point you are watching her closely. Maybe you can do more?")
+				saynn("Её дыхание становится глубже. В этот момент ты пристально наблюдаешь за ней. Может, ты можешь сделать что-то ещё?")
 
 			else:
 				playAnimation(StageScene.Yoga, "warrior", {pc="jacki", bodyState={underwear=hasUnderwear}})
-				saynn("She chooses a pretty tame pose, just to practice a bit. Her bare hind paws are firmly planted on the mat, one leg extended back, while the other is bent at a right angle, forming a strong 'warrior' pose. She raises her arms over her head and presses her paws together.")
+				saynn("Она выбирает довольно спокойную позу, просто чтобы немного размяться. Её голые задние лапы плотно прижаты к мату, одна нога вытянута назад, а другая согнута под прямым углом, образуя уверенную позу «воина». Она поднимает руки над головой и сжимает лапы вместе.")
 
-				saynn("Her eyes are closed as seeks inner peace and balance.. breathing deeply..")
+				saynn("Её глаза закрыты, она ищет внутренний покой и баланс... глубоко дыша...")
 
-				saynn("As she holds this pose, a sense of calm envelops her.. But not for long.. as a feeling of someone watching her is getting brought up in her mind again and again. A feeling that doesn't wanna go away.")
+				saynn("Пока она держит эту позу, её окутывает чувство спокойствия... Но ненадолго... потому что ощущение чьего-то взгляда снова и снова всплывает в её сознании. Чувство, которое никак не хочет уходить.")
 
-				saynn("Her breathing deepens, and she does her best to maintain the warrior's poise with utmost concentration. Maybe you can do more?")
+				saynn("Её дыхание становится тяжелее, и она изо всех сил старается сохранять выправку воина с предельной концентрацией. Может, ты можешь сделать что-то ещё?")
 
 		elif (corruption < 0.5):
 			if (RNG.chance(50)):
 				playAnimation(StageScene.Yoga, "dog", {pc="jacki", bodyState={underwear=hasUnderwear}})
-				saynn("It's obvious that something about Jacki is changing because she chose a slightly more lewd yoga pose today. A downward-facing dog.")
+				saynn("Очевидно, что в Джеки что-то меняется, ведь сегодня она выбрала чуть более похотливую позу для йоги. «Собака мордой вниз».")
 
-				saynn("The elegance in her movements is still there but you can just.. feel the difference. Jacki slowly and carefully stretches her body into the posture. Her tail, long and fluffy, sways gently behind her as she raises her hips high.")
+				saynn("Элегантность её движений никуда не делась, но ты прямо... чувствуешь разницу. Джеки медленно и осторожно растягивается, принимая позу. Её длинный и пушистый хвост плавно покачивается сзади, когда она высоко поднимает бёдра.")
 
-				saynn("This pose makes you wish that the wolfie was wearing something more tight. Like spandex. But still, you are able to see the roundness of her fit ass quite clearly. That butt was sculpted by years of exercises.")
+				saynn("Глядя на эту позу, хочется, чтобы на этой волчице было что-то более облегающее. Ну, типа спандекса. Но даже так, округлость её подтянутой задницы видна очень отчетливо. Эта жопа была вылеплена годами тренировок.")
 
-				saynn("Jacki is probably still feeling someone watching her. But it's like she doesn't care. She proudly raises her tail as she holds the pose, her bare feet and paws pressed firmly into the mat, her back arches in perfect alignment. Is that a moan you hear coming from her?")
+				saynn("Джеки, вероятно, всё ещё чувствует чей-то взгляд. Но, кажется, ей плевать. Она гордо задирает хвост, замирая в позе; её босые ступни и лапы плотно прижаты к мату, а спина выгнута в идеальную дугу. Тебе не послышался стон, исходящий от неё?")
 
 			else:
 				playAnimation(StageScene.Yoga, "cobra", {pc="jacki", bodyState={underwear=hasUnderwear}})
-				saynn("It's obvious that something about Jacki is changing because she chose a slightly more lewd yoga pose today. A cobra pose.")
+				saynn("Очевидно, что в Джеки что-то меняется, ведь сегодня она выбрала чуть более похотливую позу для йоги. Позу кобры.")
 
-				saynn("The gracefulness in her movements is still present.. but there is also an undeniable sensuality to her motions. Jacki lies flat on the mat and begins to slowly and carefully extend her body into the right posture.")
+				saynn("Грациозность её движений всё ещё на месте... но в её движениях появилась неоспоримая чувственность. Джеки ложится плашмя на мат и начинает медленно и осторожно вытягивать тело, принимая нужную позу.")
 
-				saynn("Her fluffy tail sways behind her as she raises her torso, arching her back while pressing her paws into the mat. This pose accentuates the natural curves of her body quite well.")
+				saynn("Её пушистый хвост покачивается сзади, когда она поднимает торс, прогибая спину и упираясь лапами в мат. Эта поза отлично подчеркивает естественные изгибы её тела.")
 
-				saynn("This pose makes you wish that the wolfie was wearing something more tight. Like spandex. But still, you are able to see the roundness of her fit ass quite clearly. That butt was sculpted by years of exercises.")
+				saynn("Глядя на эту позу, хочется, чтобы на этой волчице было что-то более облегающее. Ну, типа спандекса. Но даже так, округлость её подтянутой задницы видна очень отчетливо. Эта жопа была вылеплена годами тренировок.")
 
-				saynn("Jacki is probably still feeling someone watching her. But it's like she doesn't care. She proudly raises her tail as she holds the pose.")
+				saynn("Джеки, вероятно, всё ещё чувствует на себе чей-то взгляд. Но, кажется, ей всё равно. Она гордо задирает хвост, замирая в позе.")
 
 		else:
 			if (RNG.chance(50)):
 				playAnimation(StageScene.Yoga, "catcow", {pc="jacki", bodyState={underwear=hasUnderwear}})
-				saynn("Jacki gracefully gets on all fours, preparing to do a cat-cow yoga pose. Her fit slim curves are on full display. "+str("It seems she even found a uniform that is a few sizes smaller than she is supposed to wear, allowing the cloth to tightly wrap around her nice butt and small tits." if !hasUnderwear else "It seems the sporty underwear that you gave her are helping with that.")+"")
+				saynn("Джеки грациозно опускается на четвереньки, готовясь к йога-позе «кошка-корова». Её подтянутые, стройные изгибы предстают во всей красе."+str("It seems she even found a uniform that is a few sizes smaller than she is supposed to wear, allowing the cloth to tightly wrap around her nice butt and small tits." if !hasUnderwear else "It seems the sporty underwear that you gave her are helping with that.")+"")
 
-				saynn("The wolfie arches her back as low as she can, her modest chest pressing forward, her gaze directed high up. Just like her tail. Jacki is shivering and moaning softly, her ass wiggling a bit.. so inviting.")
+				saynn("Волчица прогибает спину настолько низко, насколько может; её скромная грудь подаётся вперёд, а взгляд устремлён высоко вверх. Прямо как хвост. Джеки дрожит и тихонько стонет, а её задница слегка подергивается... так и манит.")
 
-				saynn("With a sinful sway of her hips, Jacki transitions to the second pose. Her back gently curves, her ass loses some of its perceived volume.. But it's still a great butt.")
+				saynn("Грешным покачиванием бёдер Джеки переходит ко второй позе. Её спина плавно выгибается, задница кажется чуть менее объёмной... но это всё равно охрененная задница.")
 
-				saynn("Yet again, Jacki is panting and moaning softly as she tries to hold the pose. Eventually her neediness wins over, causing her to wiggle again, her tail wagging seductively.")
+				saynn("Джеки снова тяжело дышит и тихо стонет, пытаясь удержать позу. В конце концов, её потребность в ласке берёт верх, заставляя её снова вилять задом, а хвост — соблазнительно дёргаться.")
 
-				saynn("[say=jacki]Ngh..[/say]")
+				saynn("[say=jacki]Нгх..[/say]")
 
 			else:
 				playAnimation(StageScene.Yoga, "bridge", {pc="jacki", bodyState={underwear=hasUnderwear}})
-				saynn("Jacki positions herself on the mod, preparing to do the 'bridge' pose. Her lithe fluffy body is on full display, her clothes emphasizing her slim curves and accentuating her figure.")
+				saynn("Джеки устраивается на мате, готовясь к позе «мостик». Её гибкое пушистое тело выставлено напоказ, а одежда подчёркивает стройные изгибы и акцентирует внимание на фигуре.")
 
-				saynn("She begins to arch her back as much as she can, her modest chest being pushed forward, her gaze directed upwards. The wolfie can't help but to moan softly, her alluring butt gently wiggling in a way that's impossible to ignore.")
+				saynn("Она начинает прогибать спину изо всех сил, выпячивая вперёд свою скромную грудь и устремляя взгляд вверх. Волчица не может сдержать тихого стона, а её манящая задница соблазнительно подергивается так, что игнорировать это просто невозможно.")
 
-				saynn("[say=jacki]Ngh..[/say]")
+				saynn("[say=jacki]Нгх..[/say]")
 
-		addButton("Leave", "That was enough watching", "endthescene")
-		addButton("Spank", "Give that ass a sudden spank", "perv_spank")
+		addButton("Уйти", "Наблюдений было достаточно.", "endthescene")
+		addButton("Отшлепать", "Внезапно шлепнуть её по заднице", "perv_spank")
 	if(state == "perv_spank"):
-		saynn("That ass is too enticing. You decide to walk up to her and deliver a firm smack that resonates through the whole gym area.")
+		saynn("Эта задница слишком соблазнительна. Ты решаешь подойти к ней и отвесить звонкий шлепок, эхо от которого разносится по всему спортзалу.")
 
 		if (corruption < 0.3):
-			saynn("Jacki gasps in surprise and breaks out of her pose. She then whips her head around until she sees you. Her eyes are flashing with pain and frustration.")
+			saynn("Джеки вскрикивает от неожиданности и сбивается с позы. Она резко оборачивается, пока не натыкается на тебя взглядом. В её глазах мечутся искры боли и раздражения.")
 
-			saynn("[say=jacki]What do you think you're doing?[/say]")
+			saynn("[say=jacki]Ты что, охренел?![/say]")
 
-			saynn("Her voice is trembling with a mixture of anger and.. something else. You offer her a devilish grin.")
+			saynn("Её голос дрожит от смеси гнева и... чего-то ещё. В ответ ты лишь расплываешься в дьявольской ухмылке.")
 
-			saynn("[say=pc]Couldn't resist.[/say]")
+			saynn("[say=pc]Не удержался.[/say]")
 
-			saynn("[say=jacki]Huff.[/say]")
+			saynn("[say=jacki]Пффф.[/say]")
 
-			addButton("Leave", "Enough spanking", "endthescene")
+			addButton("Уйти", "Хватит шлепков", "endthescene")
 		else:
-			saynn("Jacki moans suddenly. Which is not entirely surprising for you. But it is for her. She looks at you while trying to hide her blush.")
+			saynn("Джеки внезапно издает стон. Для тебя это не стало большой неожиданностью, но для неё — вполне. Она смотрит на тебя, пытаясь скрыть пылающий румянец.")
 
-			saynn("[say=jacki]Hey.. What do you think you are doing..[/say]")
+			saynn("[say=jacki]Эй... Ты что это творишь?..[/say]")
 
-			saynn("Her voice is trembling with anger.. but also nervousness. You offer her a devilish grin.")
+			saynn("Её голос дрожит от гнева... но в нём слышится и нервозность. Ты отвечаешь ей дьявольской ухмылкой.")
 
-			saynn("[say=pc]That ass was just too good to pass up.[/say]")
+			saynn("[say=pc]Эта задница была слишком хороша, чтобы пройти мимо.[/say]")
 
-			saynn("[say=jacki]Well suck it if you like it so much..[/say]")
+			saynn("[say=jacki]Ну так соси её, если тебе так уж нравится...[/say]")
 
-			saynn("Is that.. an invitation?")
+			saynn("Это что... приглашение?")
 
-			addButton("Nah", "Enough spanking", "endthescene")
-			addButton("Suck her ass", "Might as well", "perv_suckass")
-			addButton("No u", "Make her suck your ass instead", "perv_makehersuckass")
+			addButton("Неа", "Хватит шлепков", "endthescene")
+			addButton("Отсосать у неё", "Почему бы и нет", "perv_suckass")
+			addButton("Нет, ты", "Заставить её сосать у тебя", "perv_makehersuckass")
 	if(state == "perv_makehersuckass"):
 		playAnimation(StageScene.SexRimming, "tease", {npc="jacki", pc="pc", bodyState={exposedCrotch=true}})
-		saynn("It is a good proposal from her. But you have decided to alter it a bit.")
+		saynn("Это было заманчивое предложение с её стороны. Но ты решил его немного изменить.")
 
-		saynn("[say=pc]No you.[/say]")
+		saynn("[say=pc]Нет, ты.[/say]")
 
-		saynn("Jacki only manages to say..")
+		saynn("Джеки лишь выдавливает из себя...")
 
-		saynn("[say=jacki]Huh?[/say]")
+		saynn("[say=jacki]А?[/say]")
 
-		saynn("..before you get a hold of her ponytail and yank her down to her knees.")
+		saynn("..прежде чем ты схватишь её за хвост и силой повалишь на колени.")
 
-		saynn("[say=jacki]Ow.. hey..[/say]")
+		saynn("[say=jacki]Ой.. эй..[/say]")
 
-		saynn("You silence her vocal protests by pulling her muzzle closer before shoving your {pc.thick} butt directly into her face! The wolfie is.. confused to say the least.. She doesn't even know how to react.")
+		saynn("Ты затыкаешь её протесты, прижимая её морду ближе, а затем вжимаешь свою {pc.thick} задницу ей прямо в лицо! Волчица.. мягко говоря.. в замешательстве.. Она даже не знает, как на это реагировать.")
 
-		saynn("[say=pc]Suck.[/say]")
+		saynn("[say=pc]Соси.[/say]")
 
-		saynn("[say=jacki]Umm..[/say]")
+		saynn("[say=jacki]Эмм..[/say]")
 
-		saynn("You clearly need to teach her a little.")
+		saynn("Ей явно нужно преподать небольшой урок.")
 
-		addButton("Force", "Apply some force", "perv_makehersuckass_force")
+		addButton("Заставить", "Приложить силу", "perv_makehersuckass_force")
 	if(state == "perv_makehersuckass_force"):
 		playAnimation(StageScene.SexRimming, "fast", {npc="jacki", pc="pc", bodyState={exposedCrotch=true,hard=true}})
-		saynn("You yank on her hair again, pushing her head into your {pc.masc} butt more, causing her muzzle to spread your buttcheeks and her snout to touch your {pc.analStretch} star. You can feel her warm breath on your sensitive bits.. and that makes you more eager to continue..")
+		saynn("Ты снова дергаешь её за волосы, сильнее вдавливая её голову в свою {pc.masc} задницу; от этого её морда раздвигает твои ягодицы, а нос упирается в твою {pc.analStretch} звезду. Ты чувствуешь её теплое дыхание на своих чувствительных местах.. и это заставляет тебя желать продолжения еще сильнее..")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your poor cock is getting hard in its little cage.. well, trying to..")
+			saynn("Твой бедный член начинает твердеть в своей маленькой клетке.. ну, по крайней мере, пытается..")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your {pc.penis} is quickly getting hard, a drop of precum hanging from its tip.")
+			saynn("Твой {pc.penis} быстро твердеет, на кончике повисает капля предэякулята.")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("Even though you press her muzzle against your anus, your pussy slit becomes aroused too, your folds shining wet.")
+			saynn("Хотя она прижимается мордой к твоему анусу, твоя киска тоже возбуждается, а складки блестят от влаги.")
 
-		saynn("Jacki winces from pain, huffing and puffing more. She tries to pull away.. but she can't do that without losing some of her hair in the process.")
+		saynn("Джеки морщится от боли, тяжело и часто дыша. Она пытается отстраниться... но не может сделать этого, не вырвав при этом клок шерсти.")
 
-		saynn("[say=pc]Need another invitation?[/say]")
+		saynn("[say=pc]Нужно еще одно приглашение?[/say]")
 
-		saynn("You look behind you and see Jacki's red face. She finally decides to flick her tongue out and give your anus a few little licks. All the while all sorts of inmates around are doing their exercises, most of them not caring, but some eyes already have noticed you two.")
+		saynn("Ты оглядываешься и видишь раскрасневшееся лицо Джеки. Наконец она решает высунуть язык и несколько раз слегка лизнуть твой анус. Тем временем вокруг занимаются упражнениями другие заключенные: большинству плевать, но некоторые глаза уже заметили вас двоих.")
 
-		saynn("[say=pc]You can do better. Suck on it, slut.[/say]")
+		saynn("[say=pc]Ты можешь лучше. Соси его, шлюха.[/say]")
 
-		saynn("Jacki huffs again.. but then she presses her lips against your skin more and starts to gently suck, creating negative pressure with her mouth around your tailhole while also still prodding it with her canine tongue.")
+		saynn("Джеки снова тяжело вздыхает... но затем она плотнее прижимается губами к твоей коже и начинает нежно посасывать, создавая вакуум ртом вокруг твоего ануса и одновременно прощупывая его своим клыкастым языком.")
 
-		saynn("And that starts to feel.. quite good. You use your digits to scratch her head while she keeps rimming you, switching between sucking and licking. Your tailhole reacts to the teasing by clenching and twitching.")
+		saynn("И это начинает ощущаться... довольно приятно. Ты скребешь её по голове пальцами, пока она продолжает тебя риммить, чередуя посасывание и лизание. Твой анус реагирует на эти ласки, сжимаясь и подергиваясь.")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Your locked away cock is dripping pre a lot.. Without being able to stimulate it, what Jacki does feels so much better..")
+			saynn("Твой запертый член сильно течет... И раз ты не можешь стимулировать его сам, то то, что делает Джеки, ощущается куда лучше...")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Your hard cock is twitching too.. from just how good this feels.")
+			saynn("Твой твердый член тоже подергивается... просто от того, насколько это охеренно.")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("Your dripping pussy folds twitch too.. from just how good this feels.")
+			saynn("Твои сочащиеся соками складки киски тоже подергиваются... просто от того, насколько это охрененно.")
 
-		saynn("[say=pc]There we go. I knew you had it in you.[/say]")
+		saynn("[say=pc]Вот так. Я знала, что ты на это способна.[/say]")
 
-		saynn("Jacki closes her eyes from embarrassment.. and just continues, giving your asshole little kisses before prodding it with her tongue more.. until the tip slips inside. The wolfie starts to wiggle her tongue inside, exploring your inner walls.")
+		saynn("Джеки зажмуривается от смущения... и просто продолжает, осыпая твой анус короткими поцелуями, а затем еще сильнее прощупывая его языком... пока самый кончик не проскальзывает внутрь. Волчица начинает активно шевелить языком внутри, исследуя твои внутренние стенки.")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("She quickly finds your swole prostate.. and begins focusing on it, kneading and rubbing it. And her doing that makes your legs shake, your poor cock putting an immense amount of pressure onto its cage.")
+			saynn("Она быстро находит твою разбухшую простату... и начинает сосредоточенно на нее давить, разминая и растирая её. От её действий твои ноги начинают дрожать, а твой бедный член с огромной силой давит на клетку.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("She quickly finds your swole prostate.. and begins focusing on it, kneading and rubbing it. And her doing that makes your legs shake, your cock is leaking more transparent stuff while throbbing..")
+			saynn("Она быстро находит твою разбухшую простату... и начинает сосредоточенно на нее давить, разминая и растирая её. От её действий твои ноги начинают дрожать, а из твоего члена всё сильнее сочится прозрачная смазка, пока он пульсирует...")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("Her strong tongue manages to find and massage your g-spot through the inner wall, making your legs shake. Moans are escaping from you while your pussy is dripping more juices..")
+			saynn("Её сильный язык умудряется нащупать и массировать твою точку G через внутреннюю стенку, отчего твои ноги начинают подкашиваться. Из тебя вырываются стоны, а киска всё сильнее заливает всё вокруг соками...")
 
-		saynn("Quite a few eyes are directed towards you.. but Jacki doesn't care, she keeps lapping at your inner walls, bringing you so much pleasure that you already feel close..")
+		saynn("На тебя устремлено немало взглядов... но Джеки плевать, она продолжает вылизывать твои внутренние стенки, доставляя тебе столько удовольствия, что ты уже чувствуешь, что близок к разрядке...")
 
-		saynn("[say=pc]Such a good slut..[/say]")
+		saynn("[say=pc]Какая же ты хорошая шлюшка...[/say]")
 
-		addButton("Cum", "Feels too good", "perv_makehersuckass_cum")
+		addButton("Кончить", "Слишком хорошо", "perv_makehersuckass_cum")
 	if(state == "perv_makehersuckass_cum"):
 		playAnimation(StageScene.SexRimming, "sex", {npc="jacki", pc="pc", pcCum=true, bodyState={exposedCrotch=true,hard=true}})
-		saynn("You don't even have to encourage her anymore, Jacki is treating your ass so well.. that you can't hold back anymore..")
+		saynn("Тебе даже не нужно её подгонять, Джеки так ласкает твою задницу... что ты уже не в силах сдерживаться...")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("You arch your back and let out a cute passionate moan as your locked throbbing cock starts shooting weak lines of {pc.cum} through the little hole of the metal cage. Your hand grips Jacki's hair harder, bringing her some discomfort.. while you feel amazing..")
+			saynn("Ты выгибаешь спину и издаешь милый страстный стон, когда твой зажатый, пульсирующий член начинает выпускать слабые струйки {pc.cum} сквозь маленькую дырочку металлической клетки. Твоя рука сильнее вцепляется в волосы Джеки, причиняя ей легкий дискомфорт... в то время как ты чувствуешь себя просто божественно...")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("You arch your back and grunt as your {pc.penis} starts to throb and shoot thick lines of {pc.cum}, one after another. Your hand grips Jacki's hair harder, bringing her some discomfort.. while you feel amazing..")
+			saynn("Ты выгибаешь спину и кряхтишь, когда твой {pc.penis} начинает пульсировать и выпускать густые струи {pc.cum}, одну за другой. Твоя рука сильнее вцепляется в волосы Джеки, причиняя ей легкий дискомфорт... в то время как ты чувствуешь себя просто божественно...")
 
 		elif (GM.pc.hasReachableVagina()):
-			saynn("You arch your back and let out a cute passionate moan while your neglected pussy releases a fountain of juices. You squirt while moaning loudly, your hand grips Jacki's hair harder, bringing her some discomfort.. while you feel amazing..")
+			saynn("Ты выгибаешь спину и издаешь милый страстный стон, пока твоя заброшенная киска извергает фонтан соков. Ты кончаешь с громким стоном, твоя рука сильнее вцепляется в волосы Джеки, причиняя ей легкий дискомфорт... в то время как ты чувствуешь себя просто божественно...")
 
 		else:
-			saynn("You arch your back and moan loudly while a powerful orgasm is overwhelming your body. Your hand grips Jacki's hair harder, bringing her some discomfort.. while you feel amazing..")
+			saynn("Ты выгибаешь спину и громко стонешь, когда мощный оргазм накрывает твое тело. Твоя рука сильнее вцепляется в волосы Джеки, причиняя ей легкий дискомфорт... в то время как ты чувствуешь себя просто божественно...")
 
-		saynn("After that great time.. you finally let go of her hair.")
+		saynn("После этого великолепного момента... ты наконец отпускаешь ее волосы.")
 
-		saynn("[say=pc]Nhh.. What a good slut.[/say]")
+		saynn("[say=pc]Ннх... Какая хорошая шлюшка.[/say]")
 
-		saynn("[say=jacki]Huff..[/say]")
+		saynn("[say=jacki]Хафф...[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "perv_suckass"):
 		playAnimation(StageScene.SexRimming, "fast", {npc="pc", pc="jacki", bodyState={exposedCrotch=true}})
-		saynn("And so you suddenly pull Jacki's shorts and force your face between her fluffy buns, spreading them wide, allowing you to whip your tongue out and start licking her tailhole.")
+		saynn("И вот ты внезапно стягиваешь шорты Джеки и прижимаешься лицом к ее пушистым булкам, раздвигая их пошире, чтобы высунуть язык и начать вылизывать ее анус.")
 
-		saynn("That was.. unexpected.. to say the least. Jacki gasps as she feels your tongue caressing her sensitive ring.")
+		saynn("Это было... мягко говоря, неожиданно. Джеки ахает, чувствуя, как твой язык ласкает ее чувствительное колечко.")
 
-		saynn("[say=jacki]H-hey..[/say]")
+		saynn("[say=jacki]Эй... эй![/say]")
 
-		saynn("She tries to pry you off her sweaty rear so you wrap your arms around her legs and just keep lapping away at her ass, ignoring all the eyes of others that are glued to you. They're just jealous of the treat that you have found.")
+		saynn("Она пытается отцепить тебя от своей потной задницы, пока ты обхватываешь её ноги руками и продолжаешь жадно вылизывать её жопу, игнорируя взгляды окружающих, прикованные к вам. Они просто завидуют тому лакомству, которое ты отыскал.")
 
-		saynn("[say=jacki]Stop licking.. that's my dirty asshole.. fuck..[/say]")
+		saynn("[say=jacki]Хватит лизать... это моя грязная дырка... блядь...[/say]")
 
-		saynn("You listen to her.. and switch from licking to sucking, pressing your mouth against her wet star and letting your lips brush against her skin in a very teasing manner. Little smooches that you deliver causes the wolfie to suddenly start squirming.")
+		saynn("Ты прислушиваешься к ней... и переходишь от лизания к посасыванию, прижимаясь ртом к её влажному анусу и дразняще касаясь губами её кожи. От этих коротких поцелуев волчица внезапно начинает ерзать.")
 
-		saynn("[say=jacki]Oh fuck..[/say]")
+		saynn("[say=jacki]Ох, блядь...[/say]")
 
-		saynn("It's hard to see.. but her stitched up cunt is getting wet from this. So you must be on the right track. Her paw lands on your head and keeps trying to pull you away.. but you're stronger.")
+		saynn("Разглядеть трудно... но её заштопанная киска намокает от этого. Значит, ты на верном пути. Её лапа ложится тебе на голову, пытаясь оттащить тебя... но ты сильнее.")
 
-		saynn("The slut is blushing, little moans escape from her when you decide to use your tongue again, thrusting it inside and exploring there, lapping away at the inner walls of her asshole.")
+		saynn("Шлюшка краснеет, из её горла вырываются тихие стоны, когда ты снова решаешь пустить в ход язык, проникая внутрь и исследуя её, вылизывая внутренние стенки её ануса.")
 
-		saynn("[say=jacki]Fucking asswhore.. ah..[/say]")
+		saynn("[say=jacki]Чертова жопошлюха... ах...[/say]")
 
-		saynn("At this point you're not sure who she is referring to.")
+		saynn("В этот момент ты уже не уверен, о ком именно она говорит.")
 
-		saynn("After a few minutes of ass sucking, you decide to pull your tongue out and give that ass a final smack.")
+		saynn("После нескольких минут сосания задницы ты решаешь высунуть язык и напоследок звонко шлепнуть её по жопе.")
 
-		saynn("[say=jacki]Ah..[/say]")
+		saynn("[say=jacki]Ах...[/say]")
 
-		saynn("[say=pc]Slut.[/say]")
+		saynn("[say=pc]Шлюха.[/say]")
 
-		addButton("Kiss her", "Make it even more humiliating for her", "perv_suckass_kiss")
-		addButton("Enough", "That was enough lewding for one time", "endthescene")
+		addButton("Поцеловать её", "Сделай это еще более унизительным для нее", "perv_suckass_kiss")
+		addButton("Хватит", "На один раз развращения хватит", "endthescene")
 	if(state == "perv_suckass_kiss"):
 		playAnimation(StageScene.Hug, "kiss", {npc="jacki", npcBodyState={underwear=hasUnderwear}})
-		saynn("You get up and suddenly initiate a kiss, forcibly pulling the wolfie close and letting your lips collide.")
+		saynn("Ты резко встаешь и инициируешь поцелуй, силой притягивая волчицу к себе и сталкивая свои губы с ее губами.")
 
-		saynn("[say=jacki]H-hey!.. Mmh!..[/say]")
+		saynn("[say=jacki]Э-эй!.. Ммм!..[/say]")
 
-		saynn("You slip your tongue into her mouth and let her get a taste of her own ass. And that only makes the wolf blush even harder.")
+		saynn("Ты просовываешь язык ей в рот, давая ей на вкус ее собственный зад. И от этого волчица краснеет еще сильнее.")
 
-		saynn("In the end, she manages to push you back.")
+		saynn("В конце концов, ей удается оттолкнуть тебя.")
 
 		if (anger > 0.4):
-			saynn("[say=jacki]Fucking.. creep..[/say]")
+			saynn("[say=jacki]Чертов.. извращенец..[/say]")
 
 		else:
-			saynn("[say=jacki]Fucking.. ngh..[/say]")
+			saynn("[say=jacki]Блядь.. нх..[/say]")
 
-		saynn("You giggle and leave her alone for now.")
+		saynn("Ты хихикаешь и на время оставляешь ее в покое.")
 
-		addButton("Enough", "That was enough lewding for one time", "endthescene")
+		addButton("Хватит", "На один раз развращения хватит", "endthescene")
 	if(state == "pick_gift"):
-		saynn("What do you wanna gift Jacki? She might react differently depending on her corruption and lust.")
+		saynn("Что ты хочешь подарить Джеки? Её реакция может меняться в зависимости от уровня её развращенности и похоти.")
 
-		addButton("Never mind", "You don't wanna gift anything", "")
-		addButtonWithChecks("Apple", "Gift Jacki an apple", "gift_apple", [], [[ButtonChecks.HasItemID, "appleitem"]])
-		addButtonWithChecks("Energy drink", "Gift Jacki an energy drink", "gift_energydrink", [], [[ButtonChecks.HasItemID, "EnergyDrink"]])
-		addButtonWithChecks("Lube", "Gift Jacki a tube of lube", "gift_lube", [], [[ButtonChecks.HasItemID, "lube"]])
-		addButtonWithChecks("5 credits", "Gift Jacki 5 credits", "gift_5credits", [], [[ButtonChecks.HasCredits, 5]])
-		addButtonWithChecks("Heat pill", "Gift Jacki a little pill", "gift_heatpill", [], [[ButtonChecks.HasItemID, "HeatPill"]])
+		addButton("Проехали", "Ты не хочешь ничего дарить", "")
+		addButtonWithChecks("Яблоко", "Подарить Джеки яблоко", "gift_apple", [], [[ButtonChecks.HasItemID, "appleitem"]])
+		addButtonWithChecks("Энергетик", "Подарить Джеки энергетик", "gift_energydrink", [], [[ButtonChecks.HasItemID, "EnergyDrink"]])
+		addButtonWithChecks("Смазка", "Подарить Джеки тюбик смазки", "gift_lube", [], [[ButtonChecks.HasItemID, "lube"]])
+		addButtonWithChecks("5 кредитов", "Подарить Джеки 5 кредитов", "gift_5credits", [], [[ButtonChecks.HasCredits, 5]])
+		addButtonWithChecks("Таблетка возбуждения", "Подарить Джеки таблетку", "gift_heatpill", [], [[ButtonChecks.HasItemID, "HeatPill"]])
 		if (!getFlag("JackiModule.jackiReceivedHorsecockDildo")):
-			addButtonWithChecks("Horsecock dildo", "Gift Jacki a whole ass dildo", "gift_horsecockdildo", [], [[ButtonChecks.HasItemID, "HorsecockDildo"]])
+			addButtonWithChecks("Дилдо «Лошадиный член»", "Подарить Джеки огромный дилдо", "gift_horsecockdildo", [], [[ButtonChecks.HasItemID, "HorsecockDildo"]])
 		if (!getModule("JackiModule").shouldWearSportsBra()):
-			addButtonWithChecks("Sporty Top", "Gift Jacki a sporty top for her to wear during exercises", "gift_sportybra", [], [[ButtonChecks.HasItemID, "sportyTop"]])
+			addButtonWithChecks("Спортивный топ", "Подарить Джеки спортивный топ, чтобы она могла заниматься в нём упражнения", "gift_sportybra", [], [[ButtonChecks.HasItemID, "sportyTop"]])
 		if (!getModule("JackiModule").shouldWearSportsShorts()):
-			addButtonWithChecks("Sporty Briefs", "Gift Jacki some sporty shorts for her to wear during exercises", "gift_sportyshorts", [], [[ButtonChecks.HasItemID, "sportyBriefs"]])
+			addButtonWithChecks("Спортивные трусики", "Подарить Джеки спортивные шорты для тренировок", "gift_sportyshorts", [], [[ButtonChecks.HasItemID, "sportyBriefs"]])
 	if(state == "gift_sportybra"):
 		playAnimation(StageScene.Duo, "stand", {npc="jacki"})
-		saynn("Since the wolfie likes to do exercises so much, you thought that you might as well give her some better clothing for that. Jacki gets a little surprised when you offer her a sporty top made out of some stretchy material.")
+		saynn("Раз уж этой волчице так нравится заниматься спортом, вы решили, что ей не помешает нормальная одежда для тренировок. Джеки слегка удивляется, когда вы предлагаете ей спортивный топ из эластичной ткани.")
 
 		if (anger > 0):
-			saynn("[say=jacki]Huh? Is this a part of some kind of plan?[/say]")
+			saynn("[say=jacki]А? Это часть какого-то плана?[/say]")
 
-			saynn("You shake your head and just give her the top. No strings attached.")
+			saynn("Вы качаете головой и просто отдаёте ей топ. Без всяких подвохов.")
 
-			saynn("[say=jacki]Well.. Thanks I guess.[/say]")
+			saynn("[say=jacki]Ну.. Спасибо, наверное.[/say]")
 
-			saynn("Looks like she likes it. Maybe that will make her less mad towards you.")
+			saynn("Похоже, ей нравится. Может, это заставит её злиться на тебя чуть меньше.")
 
 		else:
-			saynn("[say=jacki]Oh? Oh wow. Uh.. Do I have to pay?[/say]")
+			saynn("[say=jacki]О? Ого. Э-э.. А мне нужно платить?[/say]")
 
-			saynn("You shake your head and just give her the top. No strings attached.")
+			saynn("Вы качаете головой и просто отдаёте ей топ. Без всяких подвохов.")
 
-			saynn("[say=jacki]Thank you! You're very kind.[/say]")
+			saynn("[say=jacki]Спасибо! Ты очень добр.[/say]")
 
-			saynn("Looks like she likes it.")
+			saynn("Похоже, ей нравится.")
 
 		if (!getModule("JackiModule").shouldWearSportsShorts()):
-			saynn("Jacki would still need the sporty briefs as well if you wanna see her wear this.")
+			saynn("Джеки всё равно понадобятся спортивные трусики, если хочешь увидеть на ней это.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "gift_sportyshorts"):
 		playAnimation(StageScene.Duo, "stand", {npc="jacki"})
-		saynn("Since the wolfie likes to do exercises so much, you thought that you might as well give her some better clothing for that. Jacki gets a little surprised when you offer her some sporty briefs made out of some stretchy material.")
+		saynn("Раз уж эта волчица так любит упражняться, ты решил, что стоит подобрать ей подходящую одежду для тренировок. Джеки слегка удивляется, когда ты предлагаешь ей спортивные трусики из эластичного материала.")
 
 		if (anger > 0):
-			saynn("[say=jacki]Huh? What? You think this will excuse you after everything you did?[/say]")
+			saynn("[say=jacki]А? Что? Думаешь, это всё исправит после всего, что ты натворил?[/say]")
 
-			saynn("You shake your head and just give her the briefs. No strings attached.")
+			saynn("Ты качаешь головой и просто протягиваешь ей трусики. Без всяких условий.")
 
-			saynn("[say=jacki]Well.. Okay.. I guess.[/say]")
+			saynn("[say=jacki]Ну.. Ладно.. Пожалуй.[/say]")
 
-			saynn("Looks like she likes it. Maybe that will make her less mad towards you.")
+			saynn("Похоже, ей нравится. Может, это заставит её злиться на тебя чуть меньше.")
 
 		else:
-			saynn("[say=jacki]Oh? Is that for me?[/say]")
+			saynn("[say=jacki]О? Это мне?[/say]")
 
-			saynn("You shake your head and just give her the top. No strings attached.")
+			saynn("Вы качаете головой и просто отдаёте ей топ. Без всяких подвохов.")
 
-			saynn("[say=jacki]Thanks! I needed something like these.[/say]")
+			saynn("[say=jacki]Спасибо! Как раз то, что мне было нужно.[/say]")
 
-			saynn("Looks like she likes it.")
+			saynn("Похоже, ей нравится.")
 
 		if (!getModule("JackiModule").shouldWearSportsBra()):
-			saynn("Jacki would still need the sporty top as well if you wanna see her wear this.")
+			saynn("Джеки всё ещё понадобится спортивный топ, если хочешь увидеть её в этом.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "gift_apple"):
 		playAnimation(StageScene.Duo, "stand", {npc="jacki"})
 #lol. - ace
-		saynn("You offer Jacki an apple in this trying time.")
+		saynn("В этот непростой момент вы предлагаете Джеки яблоко.")
 
 		if (anger > 0.0):
-			saynn("[say=jacki]What is this?[/say]")
+			saynn("[say=jacki]Что это?[/say]")
 
-			saynn("[say=pc]Just thought you might be hungry for some vitamins.[/say]")
+			saynn("[say=pc]Просто подумал, что тебе не помешают витамины.[/say]")
 
-			saynn("She grabs it and takes a closer look.")
+			saynn("Она хватает его и присматривается повнимательнее.")
 
-			saynn("[say=jacki]Is it poisoned or something?[/say]")
+			saynn("[say=jacki]Оно что, отравлено?[/say]")
 
-			saynn("You raise a brow. But then shake your head.")
+			saynn("Вы приподнимаете бровь, но затем качаете головой.")
 
-			saynn("[say=jacki]I don't even know what to expect from you.[/say]")
+			saynn("[say=jacki]Даже не знаю, чего от тебя ждать.[/say]")
 
-			saynn("She rubs the apple against the cloth and then takes a careful bite. And then another. And another. The fruit seems alright.")
+			saynn("Она трет яблоко о ткань, а затем делает осторожный укус. Потом еще один. И еще. Фрукт кажется вполне сносным.")
 
-			saynn("[say=jacki]Well.. Thanks?[/say]")
+			saynn("[say=jacki]Ну... спасибо?[/say]")
 
-			saynn("You nod.")
+			saynn("Ты киваешь.")
 
 		else:
-			saynn("[say=jacki]Is that for me?[/say]")
+			saynn("[say=jacki]Это мне?[/say]")
 
-			saynn("[say=pc]Yeah. Vitamins for a sporty wolfie.[/say]")
+			saynn("[say=pc]Ага. Витамины для спортивной волчицы.[/say]")
 
-			saynn("You hand her the apple and watch her rub it against the cloth before taking a bite with her sharp claws. And then another. Some juices flowing down her maw.")
+			saynn("Ты протягиваешь ей яблоко и наблюдаешь, как она протирает его о ткань, прежде чем откусить кусочек своими острыми когтями. Затем еще один. Сок стекает по её пасти.")
 #behold, the most tiny little change ever - ace
 			if (getCharacter("jacki").isVisiblyPregnant()):
-				saynn("[say=jacki]I've been so hungry lately.[/say]")
+				saynn("[say=jacki]Я в последнее время такая голодная.[/say]")
 
-			saynn("[say=jacki]Thankies![/say]")
+			saynn("[say=jacki]Спасибочки![/say]")
 
-			saynn("You nod.")
+			saynn("Ты киваешь.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "gift_energydrink"):
 		playAnimation(StageScene.Duo, "stand", {npc="jacki"})
-		saynn("You offer Jacki an unopened energy drink of some generic brand that everyone here drinks.")
+		saynn("Ты предлагаешь Джеки закрытую банку энергетического напитка какого-то безвестного бренда, который пьют здесь все.")
 
 		if (anger > 0.0):
-			saynn("She is looking extremely skeptical.")
+			saynn("Она смотрит на тебя крайне скептически.")
 
-			saynn("[say=jacki]Is that like a bribe? Or is there piss in there or something?[/say]")
+			saynn("[say=jacki]Это типа взятка? Или там внутри моча или типа того?[/say]")
 
-			saynn("You shake your head and show her that the can wasn't tampered with. She carefully takes it and pops it open before sniffing the contents.")
+			saynn("Ты качаешь головой, показывая ей, что банку никто не трогал. Она осторожно берет её и открывает, прежде чем принюхаться к содержимому.")
 
-			saynn("[say=jacki]Doesn't smell like piss..[/say]")
+			saynn("[say=jacki]Не пахнет мочой..[/say]")
 
-			saynn("She takes a refreshing gulp and sighs.")
+			saynn("Она делает освежающий глоток и удовлетворенно вздыхает.")
 
-			saynn("[say=jacki]Thanks.[/say]")
+			saynn("[say=jacki]Спасибо.[/say]")
 
-			saynn("Even though she doesn't like you, she can still appreciate a kind gesture it seems.")
+			saynn("Похоже, даже если ты ей не нравишься, она всё же способна оценить добрый жест.")
 
 		else:
-			saynn("She smiles when she sees you.")
+			saynn("Увидев тебя, она улыбается.")
 
-			saynn("[say=jacki]Oh, thank you! Do I have to..[/say]")
+			saynn("[say=jacki]О, спасибо! Мне нужно его..[/say]")
 
-			saynn("[say=pc]Free.[/say]")
+			saynn("[say=pc]Выпить?[/say]")
 
-			saynn("She nods and grabs the can before opening it and taking a sip.")
+			saynn("Она кивает, забирает банку, открывает её и делает глоток.")
 
-			saynn("[say=jacki]Thank you. I needed that.[/say]")
+			saynn("[say=jacki]Спасибо. Мне это было нужно.[/say]")
 
-			saynn("What a kind wolfie.")
+			saynn("Какой добрый волчонок.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "gift_lube"):
 		playAnimation(StageScene.Duo, "stand", {npc="jacki"})
-		saynn("You decide to give Jacki a little tube of lube. An item that seems to be.. essential.. in this prison.")
+		saynn("Вы решаете дать Джеки тюбик смазки. Предмет, который кажется... жизненно необходимым... в этой тюрьме.")
 
 		if (corruption > 0.8):
-			saynn("Jacki looks at it and smiles.")
+			saynn("Джеки смотрит на него и улыбается.")
 
-			saynn("[say=jacki]Yay. Is that for me?[/say]")
+			saynn("[say=jacki]Ура! Это мне?[/say]")
 
-			saynn("You nod and hand her the item.")
+			saynn("Вы киваете и протягиваете ей предмет.")
 
-			saynn("[say=jacki]With all the fucking my fuckholes are always so stretched. This is perfect against that. Thank you~. Wruff.[/say]")
+			saynn("[say=jacki]Из-за этого ебучего траха все мои дырки вечно растянуты. Это будет в самый раз. Спасибо~. Гав![/say]")
 
-			saynn("That's.. pretty direct. But you don't mind.")
+			saynn("Довольно... прямолинейно. Но вас это не смущает.")
 
 		elif (anger > -0.1):
-			saynn("Jacki looks at it.. and then at you.. her brow raised.")
+			saynn("Джеки смотрит на тюбик... а затем на вас, приподняв бровь.")
 
-			saynn("[say=jacki]Are you implying something?[/say]")
+			saynn("[say=jacki]Ты на что-то намекаешь?[/say]")
 
-			saynn("You shake your head. After some deliberating, Jacki decides to take it.")
+			saynn("Вы качаете головой. Немного подумав, Джеки решает взять подарок.")
 
-			saynn("[say=jacki]Okay.. well.. thanks?[/say]")
+			saynn("[say=jacki]Ну... ладно... спасибо?[/say]")
 
-			saynn("You nod and just leave.")
+			saynn("Вы киваете и просто уходите.")
 
 		else:
-			saynn("Jacki looks at it.")
+			saynn("Джеки смотрит на это.")
 
-			saynn("[say=jacki]Oh?[/say]")
+			saynn("[say=jacki]О?[/say]")
 
-			saynn("You explain that it helps against excessive stretching.. which obviously happens a lot when you exercise.")
+			saynn("Вы объясняете, что это помогает против чрезмерного растяжения... которое, очевидно, часто случается во время тренировок.")
 
-			saynn("[say=jacki] Oh. Well thank you. You're so kind.[/say]")
+			saynn("[say=jacki] О. Ну, спасибо. Ты такой добрый.[/say]")
 
-		saynn("From now on her holes should be less loose by about 50%.")
+		saynn("Отныне её дырочки должны стать примерно на 50% менее свободными.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "gift_5credits"):
 		playAnimation(StageScene.Duo, "stand", {npc="jacki"})
-		saynn("Everybody likes credits, right? You walk up to Jacki and offer her a chip that contains five of them.")
+		saynn("Все любят кредиты, верно? Вы подходите к Джеки и предлагаете ей чип номиналом в пять кредитов.")
 
 		if (corruption > 0.5):
-			saynn("Jacki looks at it.. and frowns at first.")
+			saynn("Джеки смотрит на него... и сначала хмурится.")
 
-			saynn("[say=jacki]What is this?[/say]")
+			saynn("[say=jacki]Что это?[/say]")
 
-			saynn("[say=pc]Credits.[/say]")
+			saynn("[say=pc]Кредиты.[/say]")
 
-			saynn("[say=jacki]I'm not a slut.. But.. How much is there?[/say]")
+			saynn("[say=jacki]Я не шлюха... Но... Сколько там?[/say]")
 
-			saynn("Oh. Huh. Did your little offer intrigued her?")
+			saynn("О. Хм. Неужели твое предложение её заинтриговало?")
 
-			saynn("[say=pc]Enough not to work for a few days in the mines.[/say]")
+			saynn("[say=pc]Достаточно, чтобы не работать в шахтах несколько дней.[/say]")
 
-			saynn("She huffs and raises her chin high. But her eyes keep looking at the credits in your hand.")
+			saynn("Она фыркает и высоко задирает подбородок, но её взгляд то и дело возвращается к кредитам в твоей руке.")
 
-			saynn("[say=jacki]Gimme.[/say]")
+			saynn("[say=jacki]Давай сюда.[/say]")
 
-			addButton("Just give", "Give her the credits for no return", "gift_credits_free")
-			addButtonWithChecks("Hand job", "Ask for a favor first", "gift_credits_handjob", [], [ButtonChecks.HasReachablePenis])
+			addButton("Просто отдать", "Отдать ей кредиты безвозмездно", "gift_credits_free")
+			addButtonWithChecks("Ручной секс", "Сначала попросить об услуге", "gift_credits_handjob", [], [ButtonChecks.HasReachablePenis])
 		elif (anger > -0.1):
-			saynn("Jacki looks at it.. and then frowns."+str(" Even though you do notice a slight hesitation at first." if corruption > 0.2 else "")+"")
+			saynn("Джеки смотрит на них... а затем хмурится."+str(" Even though you do notice a slight hesitation at first." if corruption > 0.2 else "")+"")
 
-			saynn("[say=jacki]What is this?[/say]")
+			saynn("[say=jacki]Что это?[/say]")
 
-			saynn("[say=pc]Credits.[/say]")
+			saynn("[say=pc]Кредиты.[/say]")
 
-			saynn("[say=jacki]Yeah, I'm not stupid. Is this some kind of bribe?[/say]")
+			saynn("[say=jacki]Да уж, я не дура. Это что, какая-то взятка?[/say]")
 
-			saynn("She snarls at you.")
+			saynn("Она огрызается на тебя.")
 
-			saynn("[say=jacki]Or are you treating me like a prostitute?[/say]")
+			saynn("[say=jacki]Или ты решил обойтись со мной как с проституткой?[/say]")
 
-			saynn("Well, looks like giving her credits was too obvious. Or maybe she is just not corrupted enough.")
+			saynn("Что ж, похоже, давать ей кредиты было слишком очевидным ходом. А может, она просто еще не до конца испорчена.")
 
-			addButton("Continue", "See what happens next", "endthescene")
+			addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		else:
-			saynn("Jacki looks at it.. and then frowns slightly."+str(" Even though you do notice a slight hesitation at first." if corruption > 0.2 else "")+"")
+			saynn("Джеки смотрит на них... а затем слегка хмурится."+str(" Even though you do notice a slight hesitation at first." if corruption > 0.2 else "")+"")
 
-			saynn("[say=jacki]This kinda feels like you're trying to pay me for something.[/say]")
+			saynn("[say=jacki]Такое чувство, будто ты пытаешься мне за что-то заплатить.[/say]")
 
-			saynn("You shrug while Jacki gets in a very defensive position, her arms crossed under her small chest.")
+			saynn("Ты пожимаешь плечами, пока Джеки принимает оборонительную позу, скрестив руки под своей маленькой грудью.")
 
-			saynn("[say=jacki]I'm not one of those purple inmates that walk around. You know? I'm not a prostitute.[/say]")
+			saynn("[say=jacki]Я не одна из тех фиолетововолосых зэчек, что шастают тут повсюду. Понимаешь? Я не шлюха.[/say]")
 
-			saynn("Well, looks like Jacki is not into you being her sugar mommy/daddy.")
+			saynn("Что ж, похоже, Джеки не в восторге от того, что ты хочешь стать её спонсором.")
 
-			addButton("Continue", "See what happens next", "endthescene")
+			addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "gift_credits_free"):
-		saynn("You give her the credits and the wolfie happily takes them. She presses the chip against the collar, transferring them to her inmate account.")
+		saynn("Ты отдаешь ей кредиты, и волчица с радостью их принимает. Она прижимает чип к ошейнику, переводя деньги на свой тюремный счет.")
 
 		if (corruption > 0.8):
-			saynn("After that she even kisses you on the check real fast.")
+			saynn("После этого она даже быстро чмокает тебя в щеку.")
 
-		saynn("[say=jacki]But I'm not a slut, okay?[/say]")
+		saynn("[say=jacki]Но я не шлюха, ясно?[/say]")
 
-		saynn("[say=pc]Sure~.[/say]")
+		saynn("[say=pc]Ну конечно~.[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "gift_credits_handjob"):
 		playAnimation(StageScene.SexHandjob, "tease", {pc="pc", npc="jacki", bodyState={naked=true, hard=true}})
-		saynn("Jacki leans to take the chip but your hand suddenly raises it high out of her reach. The wolfie pouts.")
+		saynn("Джеки наклоняется, чтобы забрать чип, но ты внезапно вскидываешь руку высоко вверх, так что ей не достать. Волчица обиженно дует губы.")
 
-		saynn("[say=jacki]Give![/say]")
+		saynn("[say=jacki]Отдай![/say]")
 
-		saynn("[say=pc]Not so fast. I want something back.[/say]")
+		saynn("[say=pc]Не так быстро. Я хочу что-нибудь взамен.[/say]")
 
-		saynn("[say=jacki]What?[/say]")
+		saynn("[say=jacki]Что?[/say]")
 
-		saynn("Your gaze moves down to your crotch."+str(" A crotch that has a visible bump, outlining your boner." if !GM.pc.isFullyNaked() else "")+" Jacki follows your gaze.. and pouts more.")
+		saynn("Твой взгляд опускается к твоему паху."+str(" A crotch that has a visible bump, outlining your boner." if !GM.pc.isFullyNaked() else "")+"Джеки прослеживает за твоим взглядом... и дует губы еще сильнее.")
 
-		saynn("[say=jacki]..fine.[/say]")
+		saynn("[say=jacki]..ладно.[/say]")
 
-		saynn("You and Jacki hide behind some tall green bushes where nobody can see you. A somewhat private spot.")
+		saynn("Вы с Джеки прячетесь за высокими зелеными кустами, где вас никто не увидит. Довольно уединенное местечко.")
 
-		saynn("Jacki slowly lowers herself down to her knees and awkwardly pulls your {pc.penis} out. She can't hide a slight blush from the sight.. and the situation that she has found herself in.")
+		saynn("Джеки медленно опускается на колени и неловко вытягивает твой {pc.penis}. Она не может скрыть легкий румянец от увиденного... и от ситуации, в которой оказалась.")
 
-		saynn("You wiggle the chip in front of her face.")
+		saynn("Ты поигрываешь чипом прямо перед её лицом.")
 
-		saynn("[say=pc]Use your mouth maybe?[/say]")
+		saynn("[say=pc]Может, воспользуешься ртом?[/say]")
 
-		saynn("[say=jacki]No.[/say]")
+		saynn("[say=jacki]Нет.[/say]")
 
-		saynn("The slut still has some sense of dignity left, huh.")
+		saynn("У этой шлюхи всё же осталось хоть какое-то чувство собственного достоинства, а.")
 
-		addButton("Continue", "See how Jacki treats you", "gift_credits_hj_do")
+		addButton("Продолжить", "Посмотри, как Джеки к тебе относится", "gift_credits_hj_do")
 	if(state == "gift_credits_hj_do"):
 		playAnimation(StageScene.SexHandjob, "sex", {pc="pc", npc="jacki", bodyState={naked=true, hard=true}})
-		saynn("And so Jacki wraps her digits around the shaft of your member, getting a feel for it. She raises a brow when she senses how your heart is pumping blood through it. Your member is only getting more hard and twitchy from that grasp.")
+		saynn("И вот Джеки обхватывает пальцами твой член, привыкая к нему на ощупь. Она удивленно приподнимает бровь, чувствуя, как сильно в нем пульсирует кровь. От её хватки твой член становится только тверже и сильнее дергается.")
 
-		saynn("Jacki keeps watching it pulse as she starts stroking it with short repetitive motions. The wolfie is clearly not an expert at this.. but she is trying.")
+		saynn("Джеки продолжает наблюдать за пульсацией, начиная совершать короткие повторяющиеся движения. Волчица явно не эксперт в этом деле... но она старается.")
 
-		saynn("[say=pc]You can do better than that.[/say]")
+		saynn("[say=pc]Ты можешь лучше.[/say]")
 
-		saynn("She frowns.. but then listens, stroking your cock a little faster, causing a drop of pre to hang off of its tip. Your smile makes her pout.")
+		saynn("Она хмурится... но затем продолжает слушать, поглаживая твой член всё быстрее, отчего на кончике повисает капля предэякулята. Твоя улыбка заставляет её надуть губы.")
 
-		saynn("[say=jacki]What?..[/say]")
+		saynn("[say=jacki]Что?..[/say]")
 
-		saynn("[say=pc]Awfully obedient for not a slut.[/say]")
+		saynn("[say=pc]Слишком послушная для той, кто не считает себя шлюхой.[/say]")
 
-		saynn("It starts to feel good real quick. Looks like teasing the wolfie makes her more eager to prove you wrong, her paw working your dick real fast now.")
+		saynn("Приятное ощущение накрывает очень быстро. Похоже, дразнить волчицу — значит заставлять её ещё сильнее стремиться доказать твою неправоту: теперь её лапа работает над твоим членом на бешеной скорости.")
 
-		saynn("[say=pc]NGh..[/say]")
+		saynn("[say=pc]Нгх..[/say]")
 
-		saynn("[say=jacki]I just want the credits. I'm not a slut.[/say]")
+		saynn("[say=jacki]Мне просто нужны кредиты. Я не шлюха.[/say]")
 
-		saynn("[say=pc]Uh huh~. Will you agree to receive a nice facial?[/say]")
+		saynn("[say=pc]Угу~. А если ты согласишься на классный фациал?[/say]")
 
-		saynn("[say=jacki]Of course not.. I still need to exercise![/say]")
+		saynn("[say=jacki]Конечно нет.. мне ещё нужно потренироваться![/say]")
 
-		saynn("A little groan escapes your lips. Your legs are getting weaker as your cock starts twitching and throbbing more in her paw.")
+		saynn("С твоих губ срывается тихий стон. Ноги слабеют, а член в её ладони начинает всё сильнее подёргиваться и пульсировать.")
 
-		saynn("[say=pc]What if I double those creds~?[/say]")
+		saynn("[say=pc]А что, если я удвою сумму~?[/say]")
 
-		saynn("She instantly gets quiet. Looks like she is deliberating and just needs a little push. Just like you..")
+		saynn("Она мгновенно замолкает. Похоже, она раздумывает и ей просто нужен небольшой толчок. Прямо как тебе...")
 
-		addButtonWithChecks("Double creds", "Give her twice as much credits and see what she will do", "gift_creds_hj_double", [], [[ButtonChecks.HasCredits, 10]])
-		addButton("Just cum", "Five creds is enough", "gift_creds_hj_cum")
+		addButtonWithChecks("Двойная ставка", "Дай ей в два раза больше кредитов и посмотри, что будет", "gift_creds_hj_double", [], [[ButtonChecks.HasCredits, 10]])
+		addButton("Просто кончи", "Пяти кредитов достаточно", "gift_creds_hj_cum")
 	if(state == "gift_creds_hj_cum"):
 		playAnimation(StageScene.SexHandjob, "tease", {pc="pc", npc="jacki", pcCum=true, bodyState={naked=true, hard=true}})
-		saynn("You decide not to sweeten the deal, the girl is receiving enough already. But you also decide not to warn her.")
+		saynn("Ты решаешь не подслащивать сделку — девушка и так получает достаточно. Но ты также решаешь её не предупреждать.")
 
-		saynn("And so, suddenly, strings of thick {pc.cum} get pushed out of your {pc.penis} as your orgasm takes over. Jacki gasps as she fails to dodge the first few, causing her to receive some onto her muzzle and hair.")
+		saynn("И вот, внезапно, толстые струи {pc.cum} вырываются из твоей {pc.penis}, когда тебя накрывает оргазм. Джеки ахает, не успев увернуться от первых порций, и часть твоей смазки попадает ей на мордочку и волосы.")
 
-		saynn("[say=jacki]H-hey!..[/say]")
+		saynn("[say=jacki]Э-эй!..[/say]")
 
-		saynn("Hah. Obviously she pulls away after that, avoiding the rest of your load. But it felt good either way.")
+		saynn("Хах. Очевидно, после этого она отстраняется, избегая остальной части твоей порции. Но в любом случае это было приятно.")
 
-		saynn("[say=jacki]You could have told me![/say]")
+		saynn("[say=jacki]Мог бы и сказать![/say]")
 
-		saynn("You shrug and smile.")
+		saynn("Ты лишь пожимаешь плечами и улыбаешься.")
 
-		saynn("[say=pc]My bad~. Catch.[/say]")
+		saynn("[say=pc]Виновата~. Лови![/say]")
 
-		saynn("You give the wolfie exactly zero time to react before throwing the chip at her, causing it to bounce off her snout and land into your {pc.cum} on the floor.")
+		saynn("Ты не даешь волчице ни секунды на реакцию и швыряешь ей чип; он отскакивает от её мордочки и падает прямо в твою {pc.cum} на полу.")
 
-		saynn("[say=pc]Oops.[/say]")
+		saynn("[say=pc]Ой![/say]")
 
-		saynn("[say=jacki]Grr-r-r..[/say]")
+		saynn("[say=jacki]Ррр-р-р...[/say]")
 
-		saynn("You watch her deliberate for a bit. But eventually she succumbs to the greed and picks up the chip, getting some of your seed onto her paws too.")
+		saynn("Ты наблюдаешь, как она колеблется. Но в конце концов жадность берет верх, и она подбирает чип, испачкав лапы в твоём семени.")
 
-		saynn("[say=pc]Good slut.[/say]")
+		saynn("[say=pc]Хорошая шлюшка.[/say]")
 
-		saynn("[say=jacki]Huff! Now I have to go wash..[/say]")
+		saynn("[say=jacki]Хафф! Теперь мне нужно идти мыться...[/say]")
 
-		saynn("[say=pc]It's not that much, it's fine~.[/say]")
+		saynn("[say=pc]Да ладно, ничего страшного~.[/say]")
 
-		saynn("[say=jacki]You think so? Fine..[/say]")
+		saynn("[say=jacki]Думаешь? Ну ладно...[/say]")
 
-		saynn("Jacki gets up and walks away swiftly.")
+		saynn("Джеки встает и быстро уходит.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "gift_creds_hj_double"):
 		playAnimation(StageScene.SexHandjob, "tease", {pc="pc", npc="jacki", pcCum=true, bodyState={naked=true, hard=true}})
-		saynn("Everything has a price. You flash Jacki the second chip of the same value. And she seems to understand everything without you saying anything.")
+		saynn("У всего есть своя цена. Ты демонстрируешь Джеки второй чип такой же номинальной стоимости, и она, кажется, всё понимает без лишних слов.")
 
-		saynn("Why? Because she positions herself right in front of your cock and raises her chin high while closing her eyes. All the while her paw keeps stroking you more and more.. Until the orgasm takes over.")
+		saynn("Почему? Да потому что она встает прямо перед твоим членом и высоко задирает подбородок, зажмурив глаза. И всё это время её лапа продолжает тереть тебя всё сильнее и сильнее... Пока оргазм не берет верх.")
 
-		saynn("Strings of your thick {pc.cum} begin landing on Jacki's face.. and she welcomes them with a strong posture, allowing your load to leave a sticky mess on her muzzle. You grunt softly as you watch her receive it all like a champ.")
+		saynn("Струи твоего густого {pc.cum} начинают падать на лицо Джеки... и она принимает их с гордо поднятой головой, позволяя твоему семени оставить липкий след на её мордочке. Ты тихо рычишь, наблюдая за тем, как она принимает всё до последней капли, словно чемпионка.")
 
-		saynn("[say=pc]Good little slut.[/say]")
+		saynn("[say=pc]Хорошая маленькая шлюшка.[/say]")
 
-		saynn("Some of it lands on her shoulders and clothing of course. And now she can't even open her eyes or mouth either.")
+		saynn("Конечно, часть попадает ей на плечи и одежду. Теперь она не может открыть даже глаза или рот.")
 
-		saynn("[say=jacki]Huff..[/say]")
+		saynn("[say=jacki]Хафф...[/say]")
 
-		saynn("You drop the two credit chips in front of her, causing her to start searching for them blindly.")
+		saynn("Ты бросаешь перед ней две кредитные чипы, заставляя её вслепую начать их искать.")
 
-		saynn("[say=pc]Thank you. You can always just wipe it with your paws.[/say]")
+		saynn("[say=pc]Спасибо. Можешь просто вытереть это лапами.[/say]")
 
-		saynn("She huffs again. And just like that, you leave her be.")
+		saynn("Она снова фыркает. И вот так просто ты оставляешь её одну.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "gift_heatpill"):
 		playAnimation(StageScene.Duo, "stand", {npc="jacki"})
-		saynn("A pill can fix a lot of problems. So you decide to give Jacki one that would make all her current problems seem silly.")
+		saynn("Таблетка может решить кучу проблем. Поэтому ты решаешь дать Джеки такую, на фоне которой все её нынешние беды покажутся сущим пустяком.")
 
 		if (corruption <= 0.5):
-			saynn("[say=jacki]Huh?[/say]")
+			saynn("[say=jacki]А?[/say]")
 
-			saynn("She grabs the pill and looks at it.")
+			saynn("Она хватает таблетку и разглядывает её.")
 
-			saynn("[say=jacki]What is it for?[/say]")
+			saynn("[say=jacki]От чего она?[/say]")
 
-			saynn("[say=pc]Can't tell. Just try it.[/say]")
+			saynn("[say=pc]Не знаю. Просто попробуй.[/say]")
 
-			saynn("Jacki tilts her head slightly. And then gives you the unknown pill back.")
+			saynn("Джеки слегка наклоняет голову. А затем возвращает тебе неизвестную таблетку.")
 
-			saynn("[say=jacki]I'm not a test subject. Please don't use me to test your drugs.[/say]")
+			saynn("[say=jacki]Я тебе не подопытный кролик. Пожалуйста, не надо тестировать на мне свои наркотики.[/say]")
 
-			saynn("That's fair. Seems like she won't eat it willingly in her current state. Oh well.")
+			saynn("Справедливо. Похоже, в её нынешнем состоянии она не станет глотать её добровольно. Ну да ладно.")
 
-			addButton("Continue", "See what happens next", "endthescene")
+			addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		else:
-			saynn("[say=jacki]Umm..[/say]")
+			saynn("[say=jacki]Эмм..[/say]")
 
-			saynn("She grabs the pill and looks at it.")
+			saynn("Она хватает таблетку и разглядывает её.")
 
-			saynn("[say=jacki]What is it for?[/say]")
+			saynn("[say=jacki]От чего она?[/say]")
 
-			saynn("[say=pc]Can't tell. Just try it.[/say]")
+			saynn("[say=pc]Не знаю. Просто попробуй.[/say]")
 
-			saynn("Jacki tilts her head slightly while looking at you.")
+			saynn("Джеки слегка наклоняет голову, глядя на тебя.")
 
-			saynn("[say=jacki]Ah, what the hell, why not.[/say]")
+			saynn("[say=jacki]А, к черту, почему бы и нет.[/say]")
 
-			saynn("And then throw the pill into her mouth.")
+			saynn("И закидывает таблетку ей прямо в рот.")
 
-			saynn("Nothing is different at first. But as the drug starts circulating in her bloodflood, the wolfie suddenly starts to act a little differently. She feels a need to start rubbing her body against yours while a little soft moan escapes her lips.")
+			saynn("Сначала ничего не меняется. Но как только препарат начинает разноситься по кровотоку, волчица внезапно начинает вести себя иначе. Она чувствует непреодолимое желание тереться своим телом о твоё, а с её губ срывается тихий, мягкий стон.")
 
-			saynn("[say=jacki]Thankies~.[/say]")
+			saynn("[say=jacki]Спасёбки~.[/say]")
 
-			saynn("Looks like it worked. Maybe she is going to be more eager now.")
+			saynn("Похоже, сработало. Может, теперь она будет куда более жадной.")
 
-			addButton("Continue", "See what happens next", "endthescene")
+			addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "gift_horsecockdildo"):
 		playAnimation(StageScene.Duo, "stand", {npc="jacki"})
-		saynn("Go big or go home. You offer Jacki a giant horsecock dildo.")
+		saynn("Или пан, или пропал. Ты предлагаешь Джеки гигантский фаллоимитатор в форме лошадиного члена.")
 
 		if (corruption > 0.5 || lust > 0.5):
-			saynn("Her eyes go wide.")
+			saynn("Её глаза округляются.")
 
-			saynn("[say=jacki]Wow.. Why is it so fucking big.[/say]")
+			saynn("[say=jacki]Охренеть... Почему оно такое, блядь, огромное?[/say]")
 
-			saynn("Huh? Her answer is a bit different from what you would expect from a kind shy wolfie.")
+			saynn("А? Её ответ немного отличается от того, чего ожидаешь от доброй и застенчивой волчицы.")
 
-			saynn("[say=pc]It's a gift. Do you want it?[/say]")
+			saynn("[say=pc]Это подарок. Хочешь его?[/say]")
 
-			saynn("She blushes deeply as you catch her blatantly staring at it, drooling even.")
+			saynn("Она густо краснеет, когда ты ловишь её на том, что она во все глаза пялится на него, да ещё и пуская слюни.")
 
-			saynn("[say=jacki]Uhm.. Why would I? But you can leave it here on the floor if you don't need it.. Maybe somebody would like to have such a big flared horsecock shoved up their dirty asshole..[/say]")
+			saynn("[say=jacki]Эм... С чего бы это мне? Но ты можешь оставить его здесь на полу, если он тебе не нужен... Может, кто-нибудь захочет, чтобы в его грязную дырку засунули такой огромный раздутый конский член...[/say]")
 
-			saynn("Wow. You decide not to argue any further and just place the toy on the floor tiles.")
+			saynn("Ого. Ты решаешь не спорить дальше и просто кладешь игрушку на кафельный пол.")
 
-			saynn("Jacki stands on the mat and pretends to do some exercises while looking high at the ceiling. But as soon as you leave the space, you hear someone's rear paws sprinting away.")
+			saynn("Джеки встает на коврик и делает вид, что выполняет упражнения, глядя куда-то в потолок. Но как только ты выходишь из комнаты, ты слышишь, как чьи-то задние лапы стремительно убегают прочь.")
 
-			saynn("When you turn around.. there is no toy anymore. Or Jacki. She only returns a few minutes later and pretends like nothing has happened.")
+			saynn("Когда ты оборачиваешься... игрушки уже нет. Как и Джеки. Она возвращается лишь спустя несколько минут и делает вид, будто ничего не произошло.")
 
-			addButton("Continue", "See what happens next", "endthescene")
+			addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 		else:
-			saynn("Her eyes instantly go wide.")
+			saynn("Её глаза мгновенно округляются.")
 
-			saynn("[say=jacki]Wha.. The fuck?[/say]")
+			saynn("[say=jacki]Чё... Какого хера?[/say]")
 
-			saynn("[say=pc]It's a gift.[/say]")
+			saynn("[say=pc]Это подарок.[/say]")
 
-			saynn("She blushes while looking at that giant girthy shaft with a flared tip. But then shakes her head.")
+			saynn("Она краснеет, глядя на этот гигантский толстый ствол с расширенной головкой. Но затем качает головой.")
 
-			saynn("[say=jacki]Listen. I appreciate the gesture. But I'm not that desperate. You know?[/say]")
+			saynn("[say=jacki]Слушай. Я ценю жест. Но я не настолько отчаялась. Понимаешь?[/say]")
 
-			saynn("Not yet she isn't.")
+			saynn("Пока что нет.")
 
-			addButton("Continue", "See what happens next", "endthescene")
+			addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 #ACEPREGEXPAC - Jacki has preg descriptors
 #good lord there's a buncha stuff in here, Jacki's stuff might take a minute
 #at least it makes packing the mod together more simple
 #for the "look at Jacki do yoga" scenes watch/perv, you can only see 2 scenes in perv, and watch allows for all of them, so I pick this one to preg-ify
 #
 	if(state == "kind_watch"):
-		saynn("You ask Jacki if you can just watch her do yoga.")
+		saynn("Вы спрашиваете Джеки, можно ли вам просто посмотреть, как она занимается йогой.")
 
 		if (lust < 0.2 || RNG.chance(25)):
-			saynn("[say=jacki]Oh. Uh. Sure. Why not. I'm not the best at it.[/say]")
+			saynn("[say=jacki]О. Э-э. Конечно. Почему бы и нет. Я не самый профи в этом деле.[/say]")
 
-			saynn("You sit on the nearest bench and watch Jacki go through a series of yoga poses.")
+			saynn("Вы садитесь на ближайшую скамью и наблюдаете, как Джеки выполняет серию поз йоги.")
 
 			if (RNG.chance(50)):
 				playAnimation(StageScene.Yoga, "camel", {pc="jacki"})
-				saynn("The last one interests you the most. Her lithe body gracefully arches backwards, her paws reaching for her legs. The way she stretches is quite captivating."+str(" This pose must be quite hard having to carry around a pregnancy but Jacki seems to be fine with it." if getCharacter("jacki").isVisiblyPregnant() else "")+"")
+				saynn("Последняя поза интересует вас больше всего. Её гибкое тело изящно прогибается назад, лапы тянутся к ногам. То, как она растягивается, чертовски завораживает."+str(" This pose must be quite hard having to carry around a pregnancy but Jacki seems to be fine with it." if getCharacter("jacki").isVisiblyPregnant() else "")+"")
 
 			else:
 				playAnimation(StageScene.Yoga, "warrior", {pc="jacki", bodyState={underwear=hasUnderwear}})
-				saynn("The last one interests you the most. Her lithe body gracefully arches backwards, her paws reaching high up"+str(" while stumbling a bit from trying to keep balance with her pregnancy." if getCharacter("jacki").isVisiblyPregnant() else ". ")+"The way she stretches is quite captivating.")
+				saynn("Последняя поза интересует вас больше всего. Её гибкое тело изящно прогибается назад, лапы тянутся высоко вверх."+str(" while stumbling a bit from trying to keep balance with her pregnancy." if getCharacter("jacki").isVisiblyPregnant() else ". ")+"То, как она растягивается, чертовски завораживает.")
 
-			saynn("[say=pc]Oh, I think you're pretty good.[/say]")
+			saynn("[say=pc]О, по-моему, у тебя неплохо получается![/say]")
 
-			saynn("[say=jacki]You think so?.. Ah..[/say]")
+			saynn("[say=jacki]Думаешь?.. Ах..[/say]")
 
-			saynn("The wolfie starts to pant softly the longer she holds this pose. So strong. And yet. So vulnerable.")
+			saynn("Чем дольше волчица удерживает эту позу, тем тише начинает её дыхание, переходя в мягкое сопение. Такая сильная. И всё же... такая уязвимая.")
 
-			saynn("She keeps standing like this for some time, blushing when your gazes collide. As Jacki finally eases out of this pose, her breathing makes her chest rise and fall. A modest and yet still feminine chest.")
+			saynn("Она стоит так какое-то время, краснея каждый раз, когда ваши взгляды встречаются. Когда Джеки наконец выходит из этой позы, её грудь тяжело вздымается и опускается от частого дыхания. Скромная, но всё же женственная грудь.")
 
-			saynn("[say=jacki]Thanks for watching.. wruff..[/say]")
+			saynn("[say=jacki]Спасибо, что смотришь... рррф..[/say]")
 
-			saynn("You just chuckle.")
+			saynn("Ты лишь тихо посмеиваешься.")
 
 		elif (lust < 0.5 || RNG.chance(25)):
-			saynn("[say=jacki]Of course~. I like when you watch me, wruff.[/say]")
+			saynn("[say=jacki]Конечно же~. Мне нравится, когда ты наблюдаешь за мной, рррф.[/say]")
 
-			saynn("You sit on the nearest bench and watch the wolfie go through a series of yoga poses, warming up on simple ones before proceeding to do one special one.")
+			saynn("Ты садишься на ближайшую скамью и наблюдаешь, как волчица выполняет серию поз йоги, разминаясь на простых упражнениях, прежде чем перейти к одной особенной позе.")
 
 			if (RNG.chance(50)):
 				playAnimation(StageScene.Yoga, "dog", {pc="jacki"})
-				saynn("This time she decides to put the most focus on the pose called 'downward-facing dog'. Her hips rise high into the air"+str(", rounded belly tucked between her legs," if getCharacter("jacki").isVisiblyPregnant() else "")+" while her hands are pressed firmly into the mat. She maintains this pose, the curves of her fit butt full on display, while gazing towards the ground.")
+				saynn("На этот раз она решает сосредоточиться на позе под названием «собака мордой вниз». Её бёдра высоко взмывают в воздух."+str(", rounded belly tucked between her legs," if getCharacter("jacki").isVisiblyPregnant() else "")+" пока её ладони крепко прижаты к коврику. Она замирает в этой позе, демонстрируя все изгибы своей подтянутой задницы и глядя куда-то в пол.")
 
-				saynn("[say=pc]Very nice.[/say]")
+				saynn("[say=pc]Очень хорошо.[/say]")
 
-				saynn("[say=jacki]Thanks.. ah..[/say]")
+				saynn("[say=jacki]Спасибо.. ах..[/say]")
 
-				saynn("While stretching all her limbs out like that, she can't help but to produce a soft moan. And that, combined with sticking her butt out so provocatively, makes her all blushy.")
+				saynn("Растягивая все конечности, она невольно издает тихий стон. И это, в сочетании с тем, как вызывающе она выставляет задницу, заставляет её залиться румянцем.")
 
 			else:
 				playAnimation(StageScene.Yoga, "cobra", {pc="jacki"})
-				saynn("This time she decides to put the most focus on the pose called cobra. She is lying on the floor, her paws are pressed firmly into the mat as she proceeds to arch her back as much as she can. She maintains this pose, the curves of her fit butt and modest breasts are all on display.")
+				saynn("На этот раз она решает сосредоточиться на позе под названием «кобра». Она лежит на полу, её лапы плотно прижаты к мату, пока она старается прогнуться в спине как можно сильнее. Она замирает в этой позе, выставляя напоказ изгибы своей подтянутой задницы и скромной груди.")
 
 				if(getCharacter("jacki").isVisiblyPregnant()):
-					saynn("Jacki has to squish her rounded out belly into the mat in order to reach the pose and giving her a bit of trouble. Softly moaning as she tries to arch her back a bit more than usual.")
+					saynn("Джеки приходится вжимать свой округлый животик в коврик, чтобы принять позу, что дается ей с небольшим трудом. Она тихо стонет, пытаясь прогнуться в спине чуть сильнее, чем обычно.")
 				
-				saynn("[say=pc]Very nice.[/say]")
+				saynn("[say=pc]Очень хорошо.[/say]")
 
-				saynn("[say=jacki]Thanks.. ah..[/say]")
+				saynn("[say=jacki]Спасибо.. ах..[/say]")
 
-				saynn("While stretching like that, she can't help but to produce a soft moan. And that makes her all blushy.")
+				saynn("Растягиваясь таким образом, она не может сдержать мягкого стона. И от этого она вся краснеет.")
 
-			saynn("As Jacki finally eases out of this pose, her breathing makes her chest rise and fall. A modest and yet still feminine chest.")
+			saynn("Когда Джеки наконец выходит из этой позы, её грудь тяжело вздымается и опускается от дыхания. Скромная, но всё же женственная грудь.")
 
-			saynn("[say=jacki]Well. Hope you liked the view, wruff.[/say]")
+			saynn("[say=jacki]Ну что. Надеюсь, тебе понравился вид, гав~.[/say]")
 
-			saynn("You smile and nod.")
+			saynn("Ты улыбаешься и киваешь.")
 
 		else:
-			saynn("[say=jacki]I thought you would never ask, wruff~.[/say]")
+			saynn("[say=jacki]Я думала, ты никогда не спросишь, гав~.[/say]")
 
-			saynn("You take a comfortable seat, watching Jacki begin her yoga practice.")
+			saynn("Ты удобно устраиваешься в кресле, наблюдая за тем, как Джеки начинает свою йогу.")
 
-			saynn("She starts with some basic yoga poses, moving gracefully through her routine, starting off with simple stretching and ending at something quite.. lewd.")
+			saynn("Она начинает с базовых поз, грациозно двигаясь по своей программе: от простой растяжки до чего-то весьма... непристойного.")
 
 			if (RNG.chance(50)):
 				playAnimation(StageScene.Yoga, "catcow", {pc="jacki", bodyState={underwear=hasUnderwear}})
-				saynn("Jacki stands on all fours and then bends her back low while sticking her butt provocatively, emphasizing the curves of her rear. Even her fluffy tail moves out of the way to let you see her pinched clothing hugging her crotch tightly.")
+				saynn("Джеки встает на четвереньки, а затем низко прогибает спину, вызывающе выпячивая задницу и подчеркивая изгибы своих ягодиц. Даже её пушистый хвост расступается в стороны, позволяя тебе рассмотреть, как тесная одежда обтягивает её промежность.")
 
-				saynn("After that she bends her back in the other direction, arching it instead, completing the cat-cow pose. Little moans occasionally escape from her as she moves from one pose to another.")
+				saynn("После этого она прогибает спину в другую сторону, выгибая её дугой и завершая позу «кошка-корова». Время от времени, когда она переходит из одной позы в другую, у неё вырываются тихие стоны.")
 				
 				if(getCharacter("jacki").isVisiblyPregnant()):
-					saynn("As she stretches and flexes her back Jacki puts one of her paws on her belly, holding it as she continues through her routine. Unsure how that helps but looks like it makes Jacki happy.")
+					saynn("Растягивая и разминая спину, Джеки кладет одну лапу на живот, придерживая его и продолжая упражнения. Непонятно, чем это помогает, но, похоже, Джеки от этого только приятнее.")
 
 			else:
 				playAnimation(StageScene.Yoga, "bridge", {pc="jacki", bodyState={underwear=hasUnderwear}})
-				saynn("Jacki lies on her back before using her hind paws to raise her butt provocatively high. She arches her back as much as she can, her pose emphasizing the curves of her rear. Little moans occasionally escape from her as she tries to hold it.")
+				saynn("Джеки ложится на спину, а затем задними лапами вызывающе высоко задирает задницу. Она выгибает спину настолько сильно, насколько может, акцентируя внимание на изгибах своего тыла. Время от времени она тихо стонет, пытаясь удержать позу.")
 				if(getCharacter("jacki").isVisiblyPregnant()):
-					saynn("As you watch you notice that this post quite prominently displays that Jacki is carrying a litter. Not sure if she knows but she continues regardless.")
+					saynn("Наблюдая за ней, ты замечаешь, что эта поза отчетливо выдает: Джеки ждет потомство. Неизвестно, знает ли она об этом сама, но продолжает заниматься, несмотря ни на что.")
 
-			saynn("[say=jacki]Always makes me feel like I'm in heat..[/say]")
+			saynn("[say=jacki]От этого я всегда чувствую себя в течке...[/say]")
 
-			saynn("A bold statement. But a welcomed one.")
+			saynn("Смелое заявление. Но весьма приятное.")
 
-			saynn("[say=pc]You're doing great.[/say]")
+			saynn("[say=pc]У тебя отлично получается.[/say]")
 
-			saynn("[say=jacki]Wruff~.[/say]")
+			saynn("[say=jacki]Врррфф~.[/say]")
 
-		addButton("Enough", "That was cute", "endthescene")
+		addButton("Хватит", "Это было мило", "endthescene")
 		if (anger < -0.3):
-			addButton("Yoga together", "Ask to do some exercises together", "kind_yoga_together")
+			addButton("Заняться йогой вместе", "Предложить вместе сделать пару упражнений", "kind_yoga_together")
 		else:
-			addDisabledButton("Yoga together", "Jacki needs to trust you more")
+			addDisabledButton("Заняться йогой вместе", "Джеки нужно больше тебе доверять")
 		if (anger < -0.5):
-			addButton("Offer massage", "Offer Jacki a massage to relax her muscles", "kind_massage")
+			addButton("Предложить массаж", "Предложить Джеки массаж, чтобы расслабить мышцы", "kind_massage")
 		else:
-			addDisabledButton("Offer massage", "Jacki needs to trust you more")
+			addDisabledButton("Предложить массаж", "Джеки нужно больше тебе доверять")
 	if(state == "kind_yoga_together"):
 		playAnimation(StageScene.Solo, "allfours")
-		saynn("A little cute idea comes into your mind.")
+		saynn("В голову приходит одна милая идея.")
 
-		saynn("[say=pc]Can we do something together?[/say]")
+		saynn("[say=pc]Может, займемся чем-нибудь вместе?[/say]")
 
 		if (lust > 0.7):
-			saynn("[say=jacki]We can do many things together, wruff~.[/say]")
+			saynn("[say=jacki]Мы можем заняться очень многими вещами вместе, ррр-мяу~.[/say]")
 
-			saynn("The wolfie is quite horny, huh.")
+			saynn("Волчица явно возбуждена, а.")
 
-			saynn("[say=pc]I mean.. yoga.[/say]")
+			saynn("[say=pc]В смысле... йогой.[/say]")
 
-			saynn("[say=jacki]Oh. Sure.[/say]")
+			saynn("[say=jacki]О. Конечно.[/say]")
 
 		else:
-			saynn("[say=jacki]Sure. I can show you a few poses.[/say]")
+			saynn("[say=jacki]Конечно. Я могу показать тебе пару поз.[/say]")
 
-		saynn("Her eyes light up. Jacki invites you to the middle of the mat and shows you a few simple exercises that warm up your muscles.")
+		saynn("Ее глаза загораются. Джеки приглашает тебя на середину коврика и показывает несколько простых упражнений для разминки мышц.")
 
-		saynn("[say=jacki]Let's do the cat-cow. Get on all fours.[/say]")
+		saynn("[say=jacki]Давай сделаем «кошку-корову». Вставай на четвереньки.[/say]")
 
-		saynn("A bit kinky to hear that from her. But you obey, planting your hands and knees onto the soft mat. Jacki helps you, positioning your neck and limbs to avoid any possible overstretching.")
+		saynn("Слышать такое от нее даже немного пикантно. Но ты подчиняешься, упираясь ладонями и коленями в мягкий коврик. Джеки помогает тебе, поправляя шею и конечности, чтобы избежать чрезмерного растяжения.")
 
-		saynn("[say=jacki]Imagine a hissy cat. They stick their backs up.[/say]")
+		saynn("[say=jacki]Представь разъяренную кошку. Она выгибает спину дугой.[/say]")
 
-		saynn("You do just that. Jacki angles your head so you would be looking down.")
+		saynn("Ты именно это и делаешь. Джеки наклоняет твою голову так, чтобы ты смотрела вниз.")
 
-		saynn("[say=jacki]Great, wruff~. Now imagine a cow who wants to moo very loudly. Lower your belly as low as you can and have your chin high.[/say]")
+		saynn("[say=jacki]Отлично, гав~. А теперь представь корову, которая хочет громко замычать. Опусти живот как можно ниже, а подбородок задери повыше.[/say]")
 
-		saynn("She is being very helpful. Makes you wonder how far she would go.")
+		saynn("Она очень старается помочь. Невольно задумываешься, как далеко она может зайти.")
 
-		addButton("Try your best", "Do the pose as best as you can", "kind_yoga_togehter_try")
-		addButton("Slack purposefully", "Do it badly so Jacki has to help you more", "kind_yoga_togehter_slack")
+		addButton("Постараться изо всех сил", "Принять позу как можно лучше", "kind_yoga_togehter_try")
+		addButton("Намеренно расслабиться", "Сделать всё из рук вон плохо, чтобы Джеки пришлось помогать тебе больше", "kind_yoga_togehter_slack")
 	if(state == "kind_yoga_togehter_try"):
 		playAnimation(StageScene.Yoga, "catcow")
-		saynn("You do your best to follow the instructions, slowly transitioning from one pose to another and back, making sure to arch your back and move your head when needed.")
+		saynn("Ты изо всех сил стараешься следовать инструкциям, медленно переходя из одной позы в другую и обратно, не забывая прогибать спину и двигать головой, когда нужно.")
 
-		saynn("[say=jacki]Aw. Very good![/say]")
+		saynn("[say=jacki]Оу. Очень хорошо![/say]")
 
-		saynn("And looks like you are doing it correctly. Jacki only occasionally fixes your posture.")
+		saynn("И, похоже, ты всё делаешь правильно. Джеки лишь изредка поправляет твою осанку.")
 
-		saynn("It's exhausting.. but strangely liberating. You feel better now.")
+		saynn("Это изматывает... но приносит странное чувство свободы. Сейчас тебе стало лучше.")
 
-		saynn("[say=pc]Thanks.[/say]")
+		saynn("[say=pc]Спасибо.[/say]")
 
-		saynn("You're panting by the end of it. Jacki smiles kindly.")
+		saynn("К концу тренировки ты тяжело дышишь. Джеки ласково улыбается.")
 
-		saynn("[say=jacki]You're welcome.[/say]")
+		saynn("[say=jacki]Не за что.[/say]")
 
-		saynn("Nothing about this training session was lewd. But maybe it doesn't have to be?")
+		saynn("В этой тренировке не было ничего неприличного. Но, может, так оно и должно быть?")
 
-		addButton("Continue", "That was nice", "endthescene")
+		addButton("Продолжить", "Это было приятно", "endthescene")
 	if(state == "kind_yoga_togehter_slack"):
 		playAnimation(StageScene.ButtStack, "idle", {pc="pc", npc="jacki"})
-		saynn("You follow her instructions.. but not quite exactly. You don't bend and arch your back enough no matter how much Jacki points it out.")
+		saynn("Ты следуешь её инструкциям... но не совсем точно. Как бы Джеки ни указывала на это, ты всё равно недостаточно прогибаешь спину.")
 
-		saynn("At some point the wolfie gets too tired of you failing it.")
+		saynn("В какой-то момент волчице надоедает то, как ты лажаешь.")
 
-		saynn("[say=jacki]Huff.. It's very easy. Let me show.[/say]")
+		saynn("[say=jacki]Хафф... Это очень просто. Давай покажу.[/say]")
 
-		saynn("She suddenly stands on top of you, lowering herself onto your back while still being on all fours.")
+		saynn("Она внезапно встаёт прямо на тебя, опускаясь на твою спину, всё ещё стоя на четвереньках.")
 
-		saynn("[say=jacki]Let's bend very low.[/say]")
+		saynn("[say=jacki]Давай прогнёмся пониже.[/say]")
 
 		if (lust < 0.5 && corruption < 0.5):
-			saynn("Jacki guides your movement, her form brushing against yours as she helps you get into the 'cow' pose. The friction of your bodies rubbing against each other creates a little intimate feeling.. A feeling that becomes evident to Jacki a bit too late.")
+			saynn("Джеки направляет твои движения, её тело прижимается к твоему, пока она помогает тебе принять позу «коровы». Трение ваших тел создает интимную атмосферу... Чувство, которое Джеки осознает чуть позже, чем следовало бы.")
 
-			saynn("[say=jacki]Oh. Um..[/say]")
+			saynn("[say=jacki]Ох. Эм..[/say]")
 
-			saynn("When she realizes how kinky it must look from the side, Jacki gets off you and clears her throat while blushing softly.")
+			saynn("Когда она понимает, как извращенно всё это выглядит со стороны, Джеки слезает с тебя и, слегка покраснев, откашливается.")
 
-			saynn("[say=jacki]You're doing good.. much better now.. yeah..[/say]")
+			saynn("[say=jacki]У тебя отлично получается.. уже гораздо лучше.. да..[/say]")
 
-			saynn("You can tell everything just by her voice.")
+			saynn("По её голосу можно понять абсолютно всё.")
 
-			saynn("[say=pc]You mounting me helped, thank you~.[/say]")
+			saynn("[say=pc]То, что ты сел на меня, помогло, спасибо~.[/say]")
 
-			saynn("That's when Jacki's face goes fully red.")
+			saynn("В этот момент лицо Джеки становится пунцовым.")
 		#PREGEXPACNOTE - minor changes to 'i need help with yoga' scene, probably could add more differences
 		elif (getCharacter("jacki").isVisiblyPregnant()):
-			saynn("Jacki huffs as she guides your movement, her form pushing against yours as she helps you get into the 'cow' pose. The friction of your bodies rubbing against each other creates a little intimate feeling.. A feeling that both of you seem to welcome.")
+			saynn("Джеки тяжело дышит, направляя твои движения; её тело прижимается к твоему, пока она помогает тебе принять позу «коровы». Трение ваших тел создает интимную атмосферу... Чувство, которое, кажется, нравится вам обоим.")
 
-			saynn("[say=jacki]Very good.. wruff..[/say]")
+			saynn("[say=jacki]Очень хорошо.. рррф..[/say]")
 
-			saynn("Even though this is probably looking quite.. kinky.. and pretty heavy actually.. from the side.. Jacki continues to guide you into the right pose with her own body. Pressing down into your back with her belly.")
+			saynn("Несмотря на то, что со стороны всё это выглядит довольно... извращенно... и даже весьма жестко... Джеки продолжает направлять тебя, принимая нужную позу своим телом и наваливаясь животом на твою спину.")
 
-			saynn("[say=jacki]Sometimes a good mounting can fix everything..[/say]")
+			saynn("[say=jacki]Иногда хорошая оседланность может всё исправить..[/say]")
 
-			saynn("She isn't even trying to hide it, is she. You can feel her subtly humping you, her pregnant body grinding against your back and her crotch spreading the lewd scent coming from her constrained desperate flower to you.")
+			saynn("Она даже не пытается это скрывать, верно? Ты чувствуешь, как она едва заметно толчками движется на тебе, как её беременное тело прижимается к твоей спине, а её промежность разносит тебе по ветру порочный аромат, исходящий от её зажатого, отчаявшегося цветка.")
 
-			saynn("[say=jacki]There we go..[/say]")
+			saynn("[say=jacki]Вот так..[/say]")
 
-			saynn("Both of you pant softly while remaining intertwined in this.. weird kind of embrace.. for a while longer.")
+			saynn("Вы оба тихонько дышите, ещё какое-то время оставаясь переплетёнными в этом.. странном своего рода объятии.")
 
-			saynn("[say=pc]Thank you, wolfie.[/say]")
+			saynn("[say=pc]Спасибо, волчонок.[/say]")
 
-			saynn("She licks your ear and gets off you.")
+			saynn("Она лижет тебя в ухо и слезает с тебя.")
 			
 		else:
-			saynn("Jacki guides your movement, her form brushing against yours as she helps you get into the 'cow' pose. The friction of your bodies rubbing against each other creates a little intimate feeling.. A feeling that both of you seem to welcome.")
+			saynn("Джеки направляет твои движения, её тело касается твоего, пока она помогает тебе принять позу «коровы». Трение ваших тел друг о друга создает ощущение интимности.. ощущение, которое, кажется, приветствуют оба.")
 
-			saynn("[say=jacki]Very good.. wruff..[/say]")
+			saynn("[say=jacki]Очень хорошо.. рррф..[/say]")
 
-			saynn("Even though this is probably looking quite.. kinky.. from the side.. Jacki continues to guide you into the right pose with her own body.")
+			saynn("Хотя со стороны это, вероятно, выглядит довольно.. извращённо.. Джеки продолжает направлять тебя своим телом, помогая принять нужную позу.")
 
-			saynn("[say=jacki]Sometimes a good mounting can fix everything..[/say]")
+			saynn("[say=jacki]Иногда хорошая оседланность может всё исправить..[/say]")
 
-			saynn("She isn't even trying to hide it, is she. You can feel her subtly humping you, her crotch spreading the lewd scent coming from her constrained desperate flower to you.")
+			saynn("Она даже не пытается это скрывать, верно? Ты чувствуешь, как она едва заметно толчками движется на тебе, а её промежность разносит тебе по ветру порочный аромат, исходящий от её зажатого, отчаявшегося цветка.")
 
-			saynn("[say=jacki]There we go..[/say]")
+			saynn("[say=jacki]Вот так..[/say]")
 
-			saynn("Both of you pant softly while remaining intertwined in this.. weird kind of embrace.. for a while longer.")
+			saynn("Вы оба тихонько дышите, ещё какое-то время оставаясь переплетёнными в этом.. странном своего рода объятии.")
 
-			saynn("[say=pc]Thank you, wolfie.[/say]")
+			saynn("[say=pc]Спасибо, волчонок.[/say]")
 
-			saynn("She licks your ear and gets off you.")
+			saynn("Она лижет тебя в ухо и слезает с тебя.")
 
-		addButton("Continue", "That was lewd", "endthescene")
+		addButton("Продолжить", "Это было пошло", "endthescene")
 	if(state == "kind_massage"):
 		playAnimation(StageScene.Massage, "back", {npc="jacki"})
-		saynn("After that yoga practice session the wolfie is probably feeling tensed up. So you decide to offer some help.")
+		saynn("После этой сессии йоги волчица, должно быть, чувствует сильное напряжение. Поэтому ты решаешь предложить свою помощь.")
 
-		saynn("[say=pc]Would you want a little massage, Jacki? To help you relax.[/say]")
+		saynn("[say=pc]Хочешь небольшой массаж, Джеки? Чтобы помочь тебе расслабиться.[/say]")
 
-		saynn("[say=jacki]Oh.. That actually sounds kinda nice.[/say]")
+		saynn("[say=jacki]Ох.. А это звучит довольно заманчиво.[/say]")
 
-		saynn("There aren't really any spots for that.. so you just help her lie down on the mat."+str(" It's a bit awkward with Jacki's pregnancy but you manage to help get her in a good position." if getCharacter("jacki").isVisiblyPregnant() else "")+" Then you kneel nearby and put your hands on her back.")
+		saynn("Здесь не особо много места для этого... так что ты просто помогаешь ей лечь на коврик."+str(" It's a bit awkward with Jacki's pregnancy but you manage to help get her in a good position." if getCharacter("jacki").isVisiblyPregnant() else "")+"Затем ты опускаешься на колени рядом и кладешь руки ей на спину.")
 
-		saynn("You begin simple, kneading the tension away from her shoulders and then doing the same to her shoulder plates and the back muscles.")
+		saynn("Ты начинаешь с простого: разминаешь напряжение в её плечах, а затем проходишься тем же самым по лопаткам и мышцам спины.")
 
-		saynn("[say=jacki]You can be.. a little harder if you want.[/say]")
+		saynn("[say=jacki]Можешь... нажимать посильнее, если хочешь.[/say]")
 
-		saynn("She likes it a little rougher huh? You listen to her and put a little more pressure into your massage.")
+		saynn("Значит, ей нравится пожестче? Ты прислушиваешься к ней и добавляешь больше давления во время массажа.")
 
-		saynn("Jacki sighs in pleasure enjoying the sensations of your strong hands working their magic on her tense muscles. After dealing with the shoulders, your hands slide lower to her waist, your fingers lightly grazing her sides, your thumbs tracing the contours of her spine.")
+		saynn("Джеки довольно вздыхает, наслаждаясь тем, как твои сильные руки творят магию с её зажатыми мышцами. Разобравшись с плечами, твои руки скользят ниже к её талии; пальцы слегка касаются боков, а большие пальцы очерчивают контуры её позвоночника.")
 
-		saynn("[say=jacki]That feels good..[/say]")
+		saynn("[say=jacki]Так хорошо..[/say]")
 
-		saynn("Hm. Kneading her there has an opposite effect of growing the tension instead. The good kind of tension. It's like Jacki has a lot of.. sensual energy.. that is stored deep within her.")
+		saynn("Хм. Разминание её ягодиц лишь усиливает напряжение, а не снимает его. Причем это приятное напряжение. Кажется, внутри Джеки скрыто огромное количество... чувственной энергии...")
 
-		saynn("She arches her back slightly as a quiet moan escapes her lips.. an invitation for you to explore further.")
+		saynn("Она слегка прогибается в пояснице, и с её губ срывается тихий стон... приглашение исследовать её дальше.")
 
-		saynn("Your hands continue to wander, gradually sliding lower and lower across her curves until you begin to knead and caress her firm rear. That wiggly tail moves out of the way, giving you full access to her butt.")
+		saynn("Твои руки продолжают блуждать, постепенно спускаясь всё ниже по её изгибам, пока ты не начинаешь разминать и ласкать её упругую задницу. Её виляющий хвостик убирается в сторону, открывая тебе полный доступ к её ягодицам.")
 
-		saynn("[say=jacki]Wruff..[/say]")
+		saynn("[say=jacki]Вруфф...[/say]")
 
-		saynn("You can feel.. heat.. radiating from her crotch. But you don't dare to go there.. just caressing her thighs instead, sometimes rubbing their inner side too. More little moans can be heard as you are nearing the end of that sensual massage.")
+		saynn("Ты чувствуешь... жар... исходящий от её промежности. Но ты не решаешься зайти так далеко... лишь ласкаешь её бёдра, иногда поглаживая их внутреннюю сторону. С каждым твоим движением, приближающим этот чувственный массаж к финалу, слышны всё новые тихие стоны.")
 
-		saynn("[say=pc]Did you like it, wolfie?[/say]")
+		saynn("[say=pc]Тебе понравилось, волчонка?[/say]")
 
-		saynn("[say=jacki]Yeah.. that feels really good..[/say]")
-		addButton("Continue", "That was lewd", "endthescene")
-		addButtonWithChecks("Forced anal fuck", "Betray Jacki and have have rough sex with her right there", "kind_massage_forcedfuck", [], [ButtonChecks.HasReachablePenis])
-		addButton("Forced fisting", "Betray Jacki and fist her ass right there", "kind_massage_forcedfisting")
+		saynn("[say=jacki]Да... это чертовски приятно...[/say]")
+		addButton("Продолжить", "Это было пошло", "endthescene")
+		addButtonWithChecks("Принудительный анальный секс", "Предать Джеки и трахнуть её прямо здесь, грубо и жестко", "kind_massage_forcedfuck", [], [ButtonChecks.HasReachablePenis])
+		addButton("Принудительный фистинг", "Предать Джеки и оттрахать ей задницу прямо здесь", "kind_massage_forcedfisting")
 #PREGEXPACNOTE - Jacki preg fuck in massage
 		if (getFlag("JackiModule.Jacki_ch2GotPussyFreed")) && (getCharacter("jacki").isVisiblyPregnant()):
-			addDisabledButton("Pregnant Sex", "[Ace Preg Expac] Soon. -Ace")
+			addDisabledButton("Секс во время беременности", "[Ace Preg Expac] Скоро. — Эйс")
 	if(state == "kind_massage_forcedfuck"):
 		playAnimation(StageScene.SexBehind, "fast", {npc="jacki", bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("Since the wolfie is not suspecting anything.. Now is the perfect time to strike.")
+		saynn("Раз волчица ничего не подозревает... Сейчас идеальный момент для удара.")
 
-		saynn("With a sudden, forceful movement, you pin Jacki against the mat, pushing one hand into her back while the second is already pulling her shorts down. She yelps and instinctively arches her back, trying to look behind her as you already expose her ass. She realizes your evil intentions way too late.")
+		saynn("Резким, мощным движением ты прижимаешь Джеки к мату, вжимая одну руку ей в спину, а второй уже стягиваешь с неё шорты. Она вскрикивает и инстинктивно выгибает спину, пытаясь оглянуться назад, пока ты уже обнажаешь её задницу. Она осознаёт твои гнусные намерения слишком поздно.")
 
-		saynn("[say=jacki]What are you![/say]")
+		saynn("[say=jacki] Да что ты творишь![/say]")
 
-		saynn("[say=pc]Shut up, whore.[/say]")
+		saynn("[say=pc] Заткнись, шлюха.[/say]")
 
-		saynn("The bitch still has her cunt stitched up and hidden behind a rich red bush of pubic hair so you opt to go for her other hole.. her dirty asshole that seems to be {jackiButt}."+str(" Which gives you a good reason to stretch that ring more." if buttScore < 5 else " Which makes you wonder why is that buttslut even resisting.")+"")
+		saynn("У этой сучки киска всё ещё зашита и спрятана за густыми красными зарослями лобковых волос, поэтому ты решаешь взяться за другую дырочку... её грязный анус, который кажется весьма {jackiButt}."+str(" Which gives you a good reason to stretch that ring more." if buttScore < 5 else " Which makes you wonder why is that buttslut even resisting.")+"")
 
-		saynn("[say=jacki]Somebody! Help![/say]")
+		saynn("[say=jacki] Помогите! Кто-нибудь![/say]")
 
-		saynn("You expose your {pc.penis} after pulling Jacki's shorts down and then use that free hand to force her muzzle into the floor, muffling her calls for help. All the while you give every wanna-be hero an evil glance.. which seems to calm them down. While other hungry eyes are watching you with great interest.")
+		saynn("Стянув шорты с Джеки, ты обнажаешь свой {pc.penis}, а затем свободной рукой вжимаешь её мордашку в пол, заглушая крики о помощи. При этом ты бросаешь злобные взгляды на каждого потенциального героя... что, кажется, их успокаивает. В то время как другие голодные глаза наблюдают за тобой с огромным интересом.")
 
-		saynn("After that, you quickly align yourself with her ass.. before forcing yourself inside, your cock violating her ass and stretching her anal star painfully wide, forcing a moan of discomfort out of the wolfie.")
+		saynn("После этого ты быстро пристраиваешься к её заднице... и с силой входишь внутрь, насилуя её анус и болезненно растягивая его анальное кольцо, заставляя волчицу издать стон дискомфорта.")
 
 		if (buttScore < 5):
-			saynn("[say=pc]Ngh. What a tight bitch.[/say]")
+			saynn("[say=pc]Нгх... Какая же тугая сучка.[/say]")
 
 		else:
-			saynn("[say=pc]How many horsecocks can fit in there? More than one it feels.[/say]")
+			saynn("[say=pc]Сколько лошадиных членов туда влезет? Кажется, больше одного.[/say]")
 
-		saynn("And so you start fucking her at a furious pace, your hips slapping against her fluffy buttchecks as you shove your dick in and out. This raw brutal act causes Jacki to squirm and resist out of desperation, her moans and gasps turning into pleas for mercy. The amount of roughness that you apply while pounding her ass makes her start sobbing.")
+		saynn("И вот ты начинаешь трахать её в бешеном темпе, твои бёдра с хлопком впечатываются в её пушистые ягодицы, пока ты вгоняешь член то в неё, то из неё. Этот грубый, первобытный акт заставляет Джеки корчиться и отчаянно сопротивляться, а её стоны и вдохи превращаются в мольбы о пощаде. От той жесткости, с которой ты долбишь её в задницу, она начинает всхлипывать.")
 
-		saynn("[say=jacki]Stop.. please!..[/say]")
+		saynn("[say=jacki]Прекрати... пожалуйста!..[/say]")
 
-		saynn("It was so-o-o worth it to pretend to be her friend for some time. The slut is clenching so hard that you can't keep yourself from grunting. Betrayal? Pff. You're just turning Jacki into who she is supposed to be.. a cock-addicted slut.")
+		saynn("Оно того стоило — притворяться её подругой всё это время. Шлюха сжимает тебя так сильно, что ты не можешь сдержать рычания. Предательство? Пфф. Ты просто помогаешь Джеки стать той, кем она должна быть... зависимой от члена шлюхой.")
 
-		saynn("[say=pc]Keep clenching whore, I'm close.[/say]")
+		saynn("[say=pc]Сжимай сильнее, блядь, я почти кончаю![/say]")
 
-		saynn("Her asshole isn't exactly lubed which leads to some wear and tear.. but who cares when you are having such a good time. If she doesn't like it.. why is her ass practically sucking your cock in?")
+		saynn("Её анус не особо смазан, что приводит к некоторому трению и разрывам... но какая разница, когда тебе так хорошо? Если ей это не нравится... тогда почему её задница практически засасывает твой член?")
 
-		addButton("Cum inside", "Give that slut what she deserves", "kind_massage_forcedfuck_cum")
+		addButton("Кончить внутрь", "Дай этой шлюхе то, что она заслуживает", "kind_massage_forcedfuck_cum")
 	if(state == "kind_massage_forcedfuck_cum"):
 		playAnimation(StageScene.SexBehind, "inside", {npc="jacki", pcCum=true, npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("After a few last rough thrusts, that clenching ass easily pushes you over the edge. Jacki's body quivers under you as you shove your throbbing {pc.penis} deep inside and start flooding her guts full of your sticky {pc.cum}.")
+		saynn("После нескольких последних мощных толчков эта сжимающаяся задница легко доводит тебя до края. Тело Джеки дрожит под тобой, когда ты заталкиваешь свой пульсирующий {pc.penis} глубоко внутрь и начинаешь заливать её нутро своей липкой {pc.cum}.")
 
-		saynn("When the orgasm is over, you pull out and stop pinning the wolfie. And she is just.. sobbing.. while her used {jackiButt} asshole is leaking your seed. All the accumulated trust.. shattered.. her body bruised.")
+		saynn("Когда оргазм стихает, ты выходишь, переставая прижимать волчицу к себе. И она просто... рыдает... пока её использованный {jackiButt} анус сочит твоё семя. Всё накопленное доверие... вдребезги... её тело в синяках.")
 
-		saynn("[say=jacki]H-huff..[/say]")
+		saynn("[say=jacki]Х-хафф...[/say]")
 
-		saynn("[say=pc]You're nothing but a buttslut.[/say]")
+		saynn("[say=pc]Ты всего лишь залупница.[/say]")
 
-		saynn("But not all is bad. Maybe now she will understand her real place in this prison.")
+		saynn("Но не всё так плохо. Может, теперь она поймет своё истинное место в этой тюрьме.")
 
-		saynn("You give her some rest.")
+		saynn("Ты даешь ей немного отдохнуть.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "kind_massage_forcedfisting"):
 		playAnimation(StageScene.SexFisting, "sex", {npc="jacki", npcBodyState={exposedCrotch=true}})
-		saynn("Since the wolfie is not suspecting anything.. Now is the perfect time to strike.")
+		saynn("Раз волчица ничего не подозревает... Сейчас идеальный момент для удара.")
 
-		saynn("With a sudden, forceful movement, you pin Jacki against the mat, pushing one hand into her back while the second is already pulling her shorts down. She yelps and instinctively arches her back, trying to look behind her as you already expose her ass. She realizes your evil intentions way too late.")
+		saynn("Резким, мощным движением ты прижимаешь Джеки к мату, вжимая одну руку ей в спину, а второй уже стягиваешь с неё шорты. Она вскрикивает и инстинктивно выгибает спину, пытаясь оглянуться назад, пока ты уже обнажаешь её задницу. Она осознаёт твои гнусные намерения слишком поздно.")
 
-		saynn("[say=jacki]What are you![/say]")
+		saynn("[say=jacki] Да что ты творишь![/say]")
 
-		saynn("[say=pc]Shut up, whore.[/say]")
+		saynn("[say=pc] Заткнись, шлюха.[/say]")
 
-		saynn("The bitch still has her cunt stitched up and hidden behind a rich red bush of pubic hair so you opt to go for her other hole.. her dirty asshole that seems to be {jackiButt}."+str(" Which gives you a good reason to stretch that ring more." if buttScore < 5 else " Which makes you wonder why is that buttslut even resisting.")+"")
+		saynn("У этой сучки киска всё ещё зашита и спрятана за густыми красными зарослями лобковых волос, поэтому ты решаешь взяться за другую дырочку... её грязный анус, который кажется весьма {jackiButt}."+str(" Which gives you a good reason to stretch that ring more." if buttScore < 5 else " Which makes you wonder why is that buttslut even resisting.")+"")
 
-		saynn("[say=jacki]Somebody! Help![/say]")
+		saynn("[say=jacki] Помогите! Кто-нибудь![/say]")
 
-		saynn("You didn't even do anything yet! What a whiny bitch. But it's about time. Inmates around are watching.. but one stern glance is enough to scare away any wanna-be heroes.")
+		saynn("Ты еще даже ничего толком не сделал! Какая же нытикшая сучка. Но самое время. Окружающие заключенные наблюдают... но одного сурового взгляда достаточно, чтобы распугать любых недоделанных героев.")
 
-		saynn("You start by prodding her asshole with a few digits. She is clenching tightly.. but you are stronger, violating her ass with three fingers at once, stretching her sorry hole somewhat wide. The wolfie surely doesn't like that, she is squirming like hell.")
+		saynn("Ты начинаешь с того, что прощупываешь её анус несколькими пальцами. Она плотно сжимается... но ты сильнее, бесцеремонно втискивая в её зад сразу три пальца и довольно широко растягивая её жалкое отверстие. Волчице это явно не нравится, она чертовски сильно извивается.")
 
-		saynn("[say=jacki]Nghh!..[/say]")
+		saynn("[say=jacki]Нгхх!..[/say]")
 
-		saynn("[say=pc]Quit resisting, bitch.[/say]")
+		saynn("[say=pc]Хватит сопротивляться, сучка.[/say]")
 
-		saynn("A few firm spanks makes the girl whine and sob.. but also not move as much. Which lets you start working her ass out and adding another digit.. and then another.. until your whole palm is now forcibly going into Jacki's ass.")
+		saynn("Несколько крепких шлепков заставляют девчонку скулить и всхлипывать... но при этом она начинает меньше дергаться. Это позволяет тебе продолжить разминать её зад и вставлять еще один палец... а затем еще один... пока вся твоя ладонь насильно не входит в задницу Джеки.")
 
-		saynn("[say=jacki]T-too much..[/say]")
+		saynn("[say=jacki]Слишком много..[/say]")
 
-		saynn("It was too much indeed, Jacki's asshole looks stretched comically wide. At the same time you also notice a little wet spot appearing on the mat underneath, creating from juices that drip from her stitched up cunt. Bitch might actually be enjoying it.")
+		saynn("Действительно, слишком много: анус Джеки выглядит комично растянутым. В то же время ты замечаешь небольшое влажное пятно на мате под ней — сок, капающий из её заштопанной киски, образует лужицу. Эта сучка, похоже, реально получает удовольствие.")
 
-		saynn("Which is why you start moving your hand in and out, fisting that wolfie's firm butt, leaving it pretty much empty before stuffing it full seconds later.")
+		saynn("Именно поэтому ты начинаешь двигать рукой туда-сюда, вбивая кулак в упругую задницу волчицы, почти полностью опустошая её, чтобы спустя секунды снова набить её до отказа.")
 
-		saynn("Jacki huffs and whines louder, her asshole struggling to keep up with your onslaught.")
+		saynn("Джеки тяжело дышит и скулит всё громче, её анус едва справляется с твоим натиском.")
 
-		saynn("[say=pc]Too much? I think it's just right for a buttslut like you.[/say]")
+		saynn("[say=pc]Слишком много? По-моему, в самый раз для такой жопошлепки, как ты.[/say]")
 
-		saynn("The most you pound her ass, the closer she gets to something.. her inner walls gripping your fist so well..")
+		saynn("Чем сильнее ты долбишь её в зад, тем ближе она оказывается к чему-то... её внутренние стенки так крепко сжимают твой кулак...")
 
-		addButton("Forced orgasm", "See what happens next", "kind_massage_forcedfisting_cum")
+		addButton("Принудительный оргазм", "Смотреть, что будет дальше", "kind_massage_forcedfisting_cum")
 	if(state == "kind_massage_forcedfisting_cum"):
 		playAnimation(StageScene.SexFisting, "tease", {npc="jacki", npcCum=true, npcBodyState={exposedCrotch=true}})
-		saynn("Suddenly, Jacki starts arching her back and crying out loudly as her stretched asshole is pulsing around your hand. You're not sure if this is an orgasm.. or something caused by you overstimulating her.. but it's sure a welcomed addition.")
+		saynn("Внезапно Джеки выгибает спину и громко вскрикивает, пока её растянутый анус пульсирует вокруг твоей руки. Ты не уверен, оргазм ли это... или результат твоей гиперстимуляции... но это определенно приятное дополнение.")
 
-		saynn("When that is over, you pull your fist out and stop pinning the wolfie. While she is just.. sobbing.. her {jackiButt} asshole is struggling to close completely. All the accumulated trust.. shattered.. her body bruised.")
+		saynn("Когда всё заканчивается, ты вытаскиваешь кулак и перестаешь вжимать волчицу в мат. Пока она просто... рыдает... её {jackiButt} анус никак не может полностью сомкнуться. Всё накопленное доверие... разбито вдребезги... её тело в синяках.")
 
-		saynn("[say=jacki]H-huff..[/say]")
+		saynn("[say=jacki]Х-хафф...[/say]")
 
-		saynn("[say=pc]You're nothing but a buttslut.[/say]")
+		saynn("[say=pc]Ты всего лишь залупница.[/say]")
 
-		saynn("But not all is bad. Maybe now she will understand her real place in this prison.")
+		saynn("Но не всё так плохо. Может, теперь она поймет своё истинное место в этой тюрьме.")
 
-		saynn("You give her some rest.")
+		saynn("Ты даешь ей немного отдохнуть.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "kind_jog"):
 		playAnimation(StageScene.Duo, "stand", {npc="jacki"})
-		saynn("Being in a prison does limit your range of available activities a lot. But luckily jogging is something that doesn't require much, just some empty space.")
+		saynn("Жизнь в тюрьме сильно ограничивает выбор занятий. Но, к счастью, для пробежки не нужно многого — всего лишь немного свободного места.")
 
-		saynn("[say=pc]Wonder if you would like to jog together?[/say]")
+		saynn("[say=pc]Интересно, не хочешь ли ты пробежаться вместе?[/say]")
 
-		saynn("[say=jacki]Oh. Sure.[/say]")
+		saynn("[say=jacki]О. Конечно.[/say]")
 
-		saynn("Jacki gets up from the mat and invites you to follow her to her usual route.")
+		saynn("Джеки поднимается с мата и предлагает тебе составить ей компанию на её привычном маршруте.")
 
-		addButton("Jog", "Jog with Jacki", "jog_do")
+		addButton("Бег", "Бежать с Джеки", "jog_do")
 	if(state == "jog_do"):
 		aimCameraAndSetLocName("yard_eastCorridor")
 		playAnimation(StageScene.Duo, "jog", {npc="jacki", npcAction="jog", flipNPC=true})
-		saynn("And so you two begin jogging around the only green area of the prison. The air here is nice and fresh.")
+		saynn("Так вы вдвоём отправляетесь на пробежку по единственному зелёному уголку тюрьмы. Воздух здесь приятный и свежий.")
 
 		if(getCharacter("jacki").isVisiblyPregnant()):
-			saynn("Jacki is a bit slower than her regular self. The both of you jogging next to each other as the repetitive scenery of the yard passes around the two of you.")
+			saynn("Джеки бежит чуть медленнее, чем обычно. Вы бежите плечом к плечу, пока мимо проносятся однообразные пейзажи тюремного двора.")
 		else:
-			saynn("Jacki leads the way so you just jog behind her. You run past some rocks and even trees.")
+			saynn("Джеки задаёт темп, и ты просто бежишь следом за ней. Вы пробегаете мимо камней и даже деревьев.")
 
-		saynn("The more the wolfie jogs, the more you begin to notice something. She is panting way more than you would expect her to do. The fabric of her clothes rubbing against her sensitive spots might be the reason..")
+		saynn("Чем дольше волчица бежит, тем больше ты начинаешь замечать. Она тяжело дышит — гораздо сильнее, чем можно было ожидать. Возможно, причина в том, что ткань её одежды натирает её чувствительные места...")
 
-		saynn("Since you're not jogging that fast, you can also try to chat.")
+		saynn("Поскольку вы не бежите слишком быстро, можно попробовать поболтать.")
 
-		addButton("Skip chat", "You'd rather not chat", "jog_afterchat")
-		addButton("This is nice", "Say this", "jog_chat_nice")
-		addButton("Why is she here", "Ask how Jacki has ended up here", "jog_chat_whyprison")
-		addButton("Chastity piercings", "Ask Jacki about her chastity piercings", "jog_chat_chastitypiercings")
+		addButton("Пропустить разговор", "Ты не настроен на болтовню", "jog_afterchat")
+		addButton("Это мило", "Скажите это", "jog_chat_nice")
+		addButton("Почему она здесь?", "Спросить, как Джеки здесь оказалась", "jog_chat_whyprison")
+		addButton("Пирсинг целомудрия", "Спросить Джеки о её пирсинге целомудрия", "jog_chat_chastitypiercings")
 	if(state == "jog_chat_nice"):
-		saynn("[say=pc]This is nice, isn't it?[/say]")
+		saynn("[say=pc]Здесь мило, правда?[/say]")
 
-		saynn("[say=jacki]Yeah, it is.. wruff.. I like that I get to do this.[/say]")
+		saynn("[say=jacki]Да, мило.. рррф.. Мне нравится, что я могу этим заниматься.[/say]")
 
-		saynn("You jog past some little artificial waterfall. The sound of running water helps calm you both down.")
+		saynn("Ты пробегаешь мимо небольшого искусственного водопада. Шум бегущей воды помогает вам обоим успокоиться.")
 
-		saynn("[say=jacki]This prison has been growing on me. As sad as that might sound.[/say]")
+		saynn("[say=jacki]Эта тюрьма начинает мне нравиться. Как бы печально это ни звучало.[/say]")
 
-		saynn("[say=pc]What about the fact that you got put into stocks?[/say]")
+		saynn("[say=pc]А как насчет того факта, что тебя засунули в колодки?[/say]")
 
-		saynn("[say=jacki]Eh, it was kinda kinky.[/say]")
+		saynn("[say=jacki]Эх, это было даже немного пикантно.[/say]")
 
-		saynn("Huh.")
+		saynn("Хм.")
 
-		addButton("Continue", "See what happens next", "jog_afterchat")
+		addButton("Продолжить", "Смотреть, что будет дальше", "jog_afterchat")
 	if(state == "jog_chat_whyprison"):
-		saynn("[say=pc]How did you end up here, Jacki? What crime did you do?[/say]")
+		saynn("[say=pc]Как ты здесь оказалась, Джеки? Какое преступление ты совершила?[/say]")
 
-		saynn("[say=jacki]Me? I didn't do anything. I like to think that I'm a friendly person.[/say]")
+		saynn("[say=jacki]Я? Да я ничего такого не делала. Мне кажется, что я довольно дружелюбный человек.[/say]")
 
-		saynn("A kind friendly innocent wolfie huh.")
+		saynn("Добрая, дружелюбная, невинная волчица, значит.")
 
-		saynn("[say=pc]So why did AlphaCorp decide to send you into the middle of nowhere?[/say]")
+		saynn("[say=pc]Так почему же АльфаКорп решила забросить тебя в эту глухомань?[/say]")
 
-		saynn("She stops for a second to think. And then just shrugs and continues jogging.")
+		saynn("Она на секунду замирает, чтобы подумать. А затем просто пожимает плечами и продолжает бег.")
 
-		saynn("[say=jacki]Dunno. One day I wake up and there were photos on my bed of me fucking with some old guy. He had a white uniform. I honestly never saw him even once in my life.[/say]")
+		saynn("[say=jacki]Без понятия. В один прекрасный день я просыпаюсь, а на моей кровати лежат фотки, где я трахаюсь с каким-то стариком. На нем была белая униформа. Честное слово, я его в жизни ни разу не видела![/say]")
 
-		saynn("You think to yourself.. could be drugs.. could be image manipulation.. or maybe she actually did it.")
+		saynn("Ты думаешь про себя... это могли быть наркотики... фотошоп... или, может, она и правда это сделала.")
 
-		saynn("[say=jacki]There also was a note. It told me to come to a certain place alone or these would be posted everywhere.[/say]")
+		saynn("[say=jacki]Там еще была записка. В ней говорилось, что я должна прийти в определенное место одна, иначе эти фотки развесят повсюду.[/say]")
 
-		saynn("[say=pc]Sounds like someone was trying to blackmail you. Did you do it?[/say]")
+		saynn("[say=pc]Похоже, кто-то пытался тебя шантажировать. Ты согласилась?[/say]")
 
-		saynn("[say=jacki]Nah, I just went to the police. But when they saw the photos.. It made me wish that I did.[/say]")
+		saynn("[say=jacki]Не-а, я просто пошла в полицию. Но когда они увидели фотки... В тот момент я пожалела, что не согласилась.[/say]")
 
-		saynn("[say=pc]Why?[/say]")
+		saynn("[say=pc]Почему?[/say]")
 
-		saynn("[say=jacki]I got charged with.. don't remember exactly.. I think it was.. unsolicited breeding.. or something like that. I obviously never did that.[/say]")
+		saynn("[say=jacki]Меня обвинили в... точно не помню... кажется, в... нежелательном разведении... или типа того. Хотя я этого точно не делала.[/say]")
 
-		saynn("Breeding is illegal now? Looks like somebody just wanted to earn an extra star. Makes sense why she is here then and not in a normal prison.")
+		saynn("Разведение теперь вне закона? Похоже, кто-то просто захотел заработать лишнюю звезду. Тогда понятно, почему она здесь, а не в обычной тюрьме.")
 
-		saynn("[say=pc]I see.[/say]")
+		saynn("[say=pc]Понятно.[/say]")
 
-		saynn("[say=jacki]I'm not even that special.[/say]")
+		saynn("[say=jacki]Да я даже не такая уж особенная.[/say]")
 
-		addButton("Continue", "See what happens next", "jog_afterchat")
+		addButton("Продолжить", "Смотреть, что будет дальше", "jog_afterchat")
 	if(state == "jog_chat_chastitypiercings"):
-		saynn("[say=pc]Couldn't help but to notice your unique piercings. Why do you have them?[/say]")
+		saynn("[say=pc]Не могла не заметить твои необычные пирсинги. Зачем они тебе?[/say]")
 
-		saynn("[say=jacki]It's a long story..[/say]")
+		saynn("[say=jacki]Это долгая история...[/say]")
 
-		saynn("You can try to ask to hear it. But obviously that story is not gonna be the prettiest..")
+		saynn("Можешь попытаться выпросить её. Но, очевидно, история будет не самой приятной...")
 
-		addButton("Listen to story", "(Genital torture) Ask Jacki to tell you what happened", "jog_chat_asklistenfull")
-		addButton("Short version", "You're fine with a story without much details", "jog_chat_asklistenshort")
+		addButton("Слушать историю", "(Генитальная пытка) Попросить Джеки рассказать, что случилось", "jog_chat_asklistenfull")
+		addButton("Короткая версия", "Тебя устраивает история без лишних подробностей", "jog_chat_asklistenshort")
 	if(state == "jog_chat_asklistenfull"):
-		saynn("[say=pc]I wanna hear it. The whole story.[/say]")
+		saynn("[say=pc]Хочу услышать всё. Всю историю до мельчайших деталей.[/say]")
 
 		if (anger > -0.8):
-			saynn("[say=jacki]Sorry. It's also kinda intimate, you know?[/say]")
+			saynn("[say=jacki]Прости. Это всё как-то слишком интимно, понимаешь?[/say]")
 
-			saynn("Looks like Jacki doesn't trust you enough yet.")
+			saynn("Похоже, Джеки тебе ещё не доверяет.")
 
-			addButton("Continue", "See what happens next", "jog_afterchat")
+			addButton("Продолжить", "Смотреть, что будет дальше", "jog_afterchat")
 		else:
 			playAnimation(StageScene.Duo, "sit", {npc="jacki", npcAction="sit"})
-			saynn("Jacki stops near the closest bench and sits down.")
+			saynn("Джеки останавливается возле ближайшей скамьи и садится.")
 
-			saynn("[say=jacki]Okay. I think I trust you enough to share it.[/say]")
+			saynn("[say=jacki]Ладно. Думаю, я могу тебе довериться и рассказать.[/say]")
 
-			saynn("You approach her and sit near. All the while Jacki is gathering courage.")
+			saynn("Ты подходишь к ней и садишься рядом. Всё это время Джеки собирается с духом.")
 
-			saynn("[say=jacki]It happened during my intake. There was a doctor..[/say]")
+			saynn("[say=jacki]Это случилось во время моего оформления. Там был врач...[/say]")
 
-			saynn("You can't help but to get immersed in her story immediately..")
+			saynn("Ты невольно сразу погружаешься в её рассказ...")
 
-			addButton("See it", "See it with your own eyes", "jacki_piercing_story_start")
+			addButton("Вижу", "Увидеть это своими глазами", "jacki_piercing_story_start")
 	if(state == "jog_chat_asklistenshort"):
-		saynn("[say=pc]You don't have to tell me everything. Just a.. short version is fine.[/say]")
+		saynn("[say=pc]Тебе не обязательно рассказывать всё до мельчайших подробностей. Просто... вкратце.[/say]")
 
 		if (anger > -0.8):
-			saynn("[say=jacki]Sorry. It's also kinda intimate, you know?[/say]")
+			saynn("[say=jacki]Прости. Это всё как-то слишком интимно, понимаешь?[/say]")
 
-			saynn("Looks like Jacki doesn't trust you enough yet.")
+			saynn("Похоже, Джеки тебе ещё не доверяет.")
 
-			addButton("Continue", "See what happens next", "jog_afterchat")
+			addButton("Продолжить", "Смотреть, что будет дальше", "jog_afterchat")
 		else:
-			saynn("Jacki stops for a second and turns towards you.")
+			saynn("Джеки на секунду замирает и поворачивается к тебе.")
 
-			saynn("[say=jacki]I think I can tell you.[/say]")
+			saynn("[say=jacki]Думаю, я могу тебе рассказать.[/say]")
 
-			saynn("She looks down at her body.")
+			saynn("Она опускает взгляд на своё тело.")
 
-			saynn("[say=jacki]Some doctor chose me for some program.. Something about.. obedience training? She was kinda mean. And so I returned the favor.[/say]")
+			saynn("[say=jacki]Какой-то врач выбрала меня для одной программы... Что-то вроде... тренировки послушания? Она была довольно стервой. Ну, и я ответила ей тем же.[/say]")
 
-			saynn("[say=pc]Did she choose you randomly?[/say]")
+			saynn("[say=pc]Она выбрала тебя случайно?[/say]")
 
-			saynn("[say=jacki]I don't know. She wanted to inject me with something. Said it against STDs? I wasn't planning on fucking here with anyone, you know? I made that very clear.[/say]")
+			saynn("[say=jacki]Не знаю. Она хотела вколоть мне что-то. Сказала, что это от ЗППП? А я ведь не планировала тут ни с кем трахаться, понимаешь? Я ей это ясно дала.[/say]")
 
-			saynn("Jacki looks away for a second.")
+			saynn("Джеки на мгновение отводит взгляд.")
 
-			saynn("[say=jacki]She said that my plans are not gonna last long. And then she stitched my pussy with those piercings.. even added a fancy little bell on a chain.[/say]")
+			saynn("[say=jacki]Она сказала, что мои планы долго не продержатся. А потом она зашила мою киску этими пирсингами... даже добавила изящный маленький колокольчик на цепочке.[/say]")
 
-			saynn("[say=pc]I see.[/say]")
+			saynn("[say=pc]Понятно.[/say]")
 
 			if (lust > 0.5):
-				saynn("[say=jacki]She was right.. You can't imagine how much I wanna be.. Anyway..[/say]")
+				saynn("[say=jacki]Она была права... Ты и представить не можешь, как сильно мне хочется... Впрочем...[/say]")
 
 			else:
-				saynn("[say=jacki]So far it feels like she might be right.. Anyway..[/say]")
+				saynn("[say=jacki]Пока что кажется, что она может быть права... В общем...[/say]")
 
-			saynn("Makes you wonder how chastity can make someone eager to be fucked?")
+			saynn("Заставляет задуматься: как целомудрие может сделать кого-то таким жаждущим траха?),")
 
-			saynn("After sharing that little story, she gets up and returns to jogging.")
+			saynn("Поделившись этой маленькой историей, она встает и возвращается к бегу.")
 
-			addButton("Continue", "See what happens next", "jog_afterchat")
+			addButton("Продолжить", "Смотреть, что будет дальше", "jog_afterchat")
 	if(state == "jacki_piercing_story_start"):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {pc="jacki", npc="eliza"})
 		aimCameraAndSetLocName("intro_medicalarea")
-		saynn("Chained up Jacki follows the arrows on the floor that direct her towards the special little medical area. Closed drawers, lots of lights, sterile white wall and floor materials, a medical table.")
+		saynn("Скованная цепями Джеки следует по стрелкам на полу, которые ведут её к специальному небольшому медицинскому блоку. Закрытые ящики, много света, стерильно-белые стены и пол, медицинская кушетка.")
 
-		saynn("Inside she also finds a doctor, a new face for her. The loud clang of chains made that doctor aware of the inmate long ago before the wolfie even stepped into the area.")
+		saynn("Там она также встречает врача — новое лицо для неё. Громкий лязг цепей заставил врача заметить заключенную задолго до того, как волчица вообще вошла в зону.")
 
-		saynn("[say=jacki]Um.. Hi?[/say]")
+		saynn("[say=jacki]Эм... Привет?[/say]")
 
-		saynn("[say=eliza]You can call me Doctor Quinn. Take a seat, patient.[/say]")
+		saynn("[say=eliza]Можете звать меня доктор Куинн. Присаживайтесь, пациентка.[/say]")
 
-		addButton("Sit down", "Might as well obey", "jacki_piercing_story_sit")
+		addButton("Сесть", "Пожалуй, стоит подчиниться", "jacki_piercing_story_sit")
 	if(state == "jacki_piercing_story_sit"):
 		playAnimation(StageScene.Duo, "sit", {pc="jacki", npc="eliza"})
-		saynn("Jacki awkwardly climbs onto the special sturdy-looking table and sits on it.")
+		saynn("Джеки неловко забирается на специальный, выглядящий весьма прочным стол и садится на него.")
 
-		saynn("[say=eliza]First, a quick visual check.[/say]")
+		saynn("[say=eliza]Для начала — быстрый визуальный осмотр.[/say]")
 
-		saynn("Doctor grabs a penlight and shines it into the wolfie's eyes, testing her reflexes. Then she checks the girl's fangs to make sure they're not too sharp. She quickly trims her claws too.")
+		saynn("Доктор берет фонарик и светит волчице в глаза, проверяя рефлексы. Затем она осматривает клыки девушки, чтобы убедиться, что они не слишком острые. Также она быстро подстригает ей когти.")
 
-		saynn("[say=eliza]Mhm. Now.. I have ran out of Spacecillin pills so an injection will have to do.[/say]")
+		saynn("[say=eliza]М-м. Так... У меня закончились таблетки «Спейселлина», так что придется обойтись инъекцией.[/say]")
 
-		saynn("[say=jacki]Huh?[/say]")
+		saynn("[say=jacki]А?[/say]")
 
-		saynn("Doctor quickly puts on some white latex gloves and grabs a syringe full of some white drug. Jacki leans away when that sharp needle moves closer and closer to her.")
+		saynn("Доктор быстро натягивает белые латексные перчатки и берет шприц, наполненный каким-то белым препаратом. Джеки инстинктивно отстраняется, когда острая игла подносится всё ближе и ближе.")
 
-		saynn("[say=jacki]I don't like drugs. What is it?[/say]")
+		saynn("[say=jacki]Не люблю я всякие лекарства. Что это?[/say]")
 
-		saynn("The feline sighs, her free paw sneakily reaches for a shock remote already.")
+		saynn("Кошка вздыхает, а её свободная лапа тем временем незаметно тянется к пульту управления шокером.")
 
-		saynn("[say=eliza]Very strong antibiotics. Works against most current STDs.[/say]")
+		saynn("[say=eliza]Очень сильные антибиотики. Действуют почти на все современные ЗППП.[/say]")
 
-		saynn("That only confuses the wolfie more.. and makes her avoid the needle harder.")
+		saynn("Это только еще больше запутывает волчицу... и заставляет её еще сильнее вжиматься, стараясь избежать укола.")
 
-		saynn("[say=jacki]STDs? Why would I need protection against STDs in a prison? Most of them are transferred through sexual acts.[/say]")
+		saynn("[say=jacki]ЗППП? С какой стати мне нужна защита от ЗППП в тюрьме? Большинство из них передаются через секс.[/say]")
 
-		saynn("Doctor tilts her head and looks at Jacki with very mean strict eyes.")
+		saynn("Доктор наклоняет голову и смотрит на Джеки очень злым, строгим взглядом.")
 
-		saynn("[say=eliza]And you think you won't have any?[/say]")
+		saynn("[say=eliza]И ты думаешь, что не подхватишь что-нибудь?[/say]")
 
-		saynn("[say=jacki]Yes, obviously I don't plan to fuck with anyone here. Um.. What kind of prison is this?! Get that syringe away from me![/say]")
+		saynn("[say=jacki]Да, очевидно, что я не планирую здесь ни с кем трахаться. Эм... Что это вообще за тюрьма такая?! Убери от меня этот шприц![/say]")
 
-		saynn("Doctor's mean eyes don't go away.. But the little smile is added on top.")
+		saynn("Злой взгляд доктора никуда не девается... но к нему добавляется легкая ухмылка.")
 
-		saynn("[say=eliza]Your plans will have to change.[/say]")
+		saynn("[say=eliza]Твоим планам придется измениться.[/say]")
 
-		saynn("The feline gets tired of arguing with the wolfie.. and suddenly presses a button that sends a powerful shock through Jacki's collar.")
+		saynn("Кошечке надоедает спорить с волчицей... и она внезапно нажимает на кнопку, которая посылает мощный разряд тока через ошейник Джеки.")
 
-		saynn("[say=jacki]ARGH!!..[/say]")
+		saynn("[say=jacki]АААГХ!!..[/say]")
 
-		saynn("Poor wolfie cries out from extreme pain before collapsing and losing consciousness..")
+		saynn("Бедная волчица вскрикивает от невыносимой боли, прежде чем рухнуть и потерять сознание...")
 
-		addButton("Continue", "See what happens to the wolfie next", "jacki_piercing_story_table")
+		addButton("Продолжить", "Посмотри, что случится с волчицей дальше", "jacki_piercing_story_table")
 	if(state == "jacki_piercing_story_table"):
 		playAnimation(StageScene.BDSMMachineFuck, "tease", {pc="jacki", bodyState={naked=true}, noDildos=true})
-		saynn("As Jacki opens her eyes.. She realizes that she is now lying on the table, her arms and legs firmly held by some mechanical arms that also keep her whole body still.")
+		saynn("Когда Джеки открывает глаза... Она понимает, что лежит на столе, а её руки и ноги крепко зажаты механическими захватами, которые удерживают всё её тело в неподвижности.")
 
-		saynn("All of the muscles hurt..")
+		saynn("Все мышцы ноют...")
 
-		saynn("[say=jacki]What the..[/say]")
+		saynn("[say=jacki]Какого хрена..[/say]")
 
-		saynn("Jacki also realizes that she is completely naked, her small tits, pussy and ass are all on display. Doctor Quinn is standing nearby.. with an empty used syringe. The feline disposes of it.")
+		saynn("Джеки также осознаёт, что она абсолютно голая: её маленькая грудь, киска и задница выставлены напоказ. Рядом стоит доктор Куинн... с пустым использованным шприцем. Кошка выбрасывает его.")
 
-		saynn("[say=eliza]Things go so much smoother when you use a little bit of force.[/say]")
+		saynn("[say=eliza]Всё проходит гораздо глаже, когда прикладываешь немного силы.[/say]")
 
-		saynn("[say=jacki]You.. bitch..[/say]")
+		saynn("[say=jacki]Ты... сучка..[/say]")
 
-		saynn("[say=eliza]What? I don't make the rules. You will get fucked in here, trust me. Maybe you will even become someone's favorite slut. That's just how this place works. Don't blame me for that.[/say]")
+		saynn("[say=eliza]Что? Я не устанавливала правила. Тебя здесь будут трахать, поверь мне. Может, ты даже станешь чьей-то любимой шлюшкой. Так уж устроено это место. И не вини в этом меня.[/say]")
 
-		saynn("[say=jacki]I am not fucking with anyone here..[/say]")
+		saynn("[say=jacki]Я тут ни с кем не вожусь..[/say]")
 
-		saynn("Doctor grabs her datapad and pulls up some records.")
+		saynn("Доктор хватает свой датапад и открывает записи.")
 
-		saynn("[say=eliza]Wait. Shouldn't you be a lilac? Your recorded crime is.. Unsolicited breeding with AlphaCorp's official. Wow. How many pups did you make already?[/say]")
+		saynn("[say=eliza]Погоди. Разве ты не сиреневая? Твоё преступление... Несанкционированное разведение с официальным лицом АльфаКорп. Ого. И сколько щенков ты уже нарожала?[/say]")
 
-		saynn("AlphaCorp?")
+		saynn("АльфаКорп?")
 
-		saynn("[say=jacki]I never! I got blackmailed, okay? I am innocent![/say]")
+		saynn("[say=jacki]Ни за что! Меня шантажировали, ясно?! Я невиновна![/say]")
 
-		saynn("[say=eliza]I see. Obviously you are~. Hm.. I think I can help you.. let's try something interesting.. Yes-s..[/say]")
+		saynn("[say=eliza]Понятно. Очевидно, что ты~. Хм... Думаю, я смогу тебе помочь... давай попробуем кое-что интересненькое... Да-а-а...[/say]")
 
-		saynn("Doctor Quinn goes ahead and searches through some drawers until she finds some.. tools.")
+		saynn("Доктор Куинн принимается копаться в ящиках, пока не находит кое-какие... инструменты.")
 
-		saynn("[say=jacki]What are you gonna do?[/say]")
+		saynn("[say=jacki]И что ты собираешься делать?[/say]")
 
-		saynn("The feline presents Jacki something that looks like a.. piercing gun.. and a bunch of little metal rings. Just looking at all that makes the wolfie shiver.")
+		saynn("Кошечка протягивает Джеки штуковину, похожую на... пистолет для пирсинга... и кучу маленьких металлических колечек. От одного взгляда на всё это волчицу пробирает дрожь.")
 
-		saynn("[say=eliza]I enrolled you into the obedience training research program. I usually do it for male bits.. but we can try female ones too, right~?[/say]")
+		saynn("[say=eliza]Я записала тебя в исследовательскую программу по тренировке послушания. Обычно я занимаюсь мужскими причиндалами... но мы можем попробовать и с женскими, верно~?[/say]")
 
-		saynn("The tone of her voice.. It doesn't mean anything good for Jacki.")
+		saynn("Тон её голоса... Это не сулит Джеки ничего хорошего.")
 
-		saynn("[say=jacki]What the hell are you talking about?[/say]")
+		saynn("[say=jacki]О чем, черт возьми, ты говоришь?[/say]")
 
-		saynn("[say=eliza]I'm just helping you~.[/say]")
+		saynn("[say=eliza]Я просто помогаю тебе~.[/say]")
 
-		saynn("She pressed some button on the table.. that caused the mechanical arms to forcibly spread Jacki's legs further, giving the doctor full access to her unshaved crotch..")
+		saynn("Она нажала на какую-то кнопку на столе... отчего механические манипуляторы с силой развели ноги Джеки еще шире, открывая доктору полный доступ к её небритой промежности...")
 
-		saynn("The feline starts leaning in closer and closer, that piercing tool is being brought closer and closer to the exposed pussy..")
+		saynn("Кошка начинает наклоняться всё ближе и ближе, поднося этот пронзающий инструмент всё ближе к обнаженной киске...")
 
-		saynn("[say=jacki]H-hey.. No.. wait![/say]")
+		saynn("[say=jacki]Эй... Нет... подожди![/say]")
 
-		saynn("Doctor Quinn isn't a monster obviously.. She takes some time to disinfect the area with some alcohol wipes first.. before using her free paw to bring the girl's pussy lips together.. pressing the tool against the sensitive flesh.. and then pulling the trigger..")
+		saynn("Доктор Куинн, очевидно, не монстр... Сначала она тратит время на дезинфекцию зоны спиртовыми салфетками... а затем свободной лапой сводит половые губы девушки вместе... прижимая инструмент к чувствительной плоти... и нажимает на спуск...")
 
-		addButton("Continue", "Ow", "jacki_piercing_story_piercings")
+		addButton("Продолжить", "Ow", "jacki_piercing_story_piercings")
 	if(state == "jacki_piercing_story_piercings"):
 		playAnimation(StageScene.BDSMMachineFuck, "wand", {pc="jacki", bodyState={naked=true}, noDildos=true})
-		saynn("Jacki yelps loudly as the tool pierces her labia in two places and also inserts a little metal ring through the two new holes at the same time..")
+		saynn("Джеки громко вскрикивает, когда инструмент пронзает её губы в двух местах и одновременно вставляет маленькое металлическое кольцо в оба новых отверстия...")
 
-		saynn("[say=jacki]Argh! What the fuck are you doing?![/say]")
+		saynn("[say=jacki]Аргх! Какого хера ты творишь?![/say]")
 
-		saynn("[say=eliza]What does it feel like~?[/say]")
+		saynn("[say=eliza]Ну, и каково это на вкус~?[/say]")
 
-		saynn("Doctor Quinn moves the tool a little higher.. and presses the trigger again, causing it to pierce through the two layers of sensitive flesh yet again before inserting another metal ring that connects them both.")
+		saynn("Доктор Куинн поднимает инструмент чуть выше... и снова нажимает на спуск, заставляя его вновь пронзить два слоя чувствительной плоти, прежде чем вставить еще одно металлическое кольцо, соединяющее их оба.")
 
-		saynn("[say=jacki]Gh-h.. Like you're ripping my cunt out!..[/say]")
+		saynn("[say=jacki]Гх-х... Будто из меня киску вырывают!..[/say]")
 
-		saynn("[say=eliza]Hah. Nah. You didn't want to be fucked right? I'm helping you~.[/say]")
+		saynn("[say=eliza]Хах. Да нет же. Ты ведь не хотела, чтобы тебя трахали, верно? Я тебе помогаю~.[/say]")
 
-		saynn("She repeats her action.. making another two new holes in Jacki's labia and forcing them closed with a little ring.")
+		saynn("Она повторяет свое действие... проделав еще два новых отверстия в половых губах Джеки и стянув их маленьким колечком.")
 
-		saynn("[say=jacki]Ugh.. Helping me how exactly?![/say]")
+		saynn("[say=jacki]Ух... И как именно ты мне помогаешь?![/say]")
 
-		saynn("[say=eliza]By stitching your little pussy up permanently~. Much better than those bulky chastity belts~. And sexier too.[/say]")
+		saynn("[say=eliza]Зашивая твою крошечную киску навсегда~. Куда лучше этих громоздких поясов целомудрия~. И куда сексуальнее.[/say]")
 
-		saynn("Permanently!? The pain becomes worse and worse.. It feels like Jacki's pussy is burning.. And yet, Doctor Quinn keeps stitching it up with more of those rings.. until her pussy looks like an.. extremely virgin slit.. but with extra fancy piercings.")
+		saynn("Навсегда?! Боль становится всё сильнее и сильнее... Кажется, будто киска Джеки горит... И всё же доктор Куинн продолжает прошивать её этими колечками... пока её щель не начинает выглядеть как... девственно чистая прорезь... но с кучей навороченного пирсинга.")
 
-		saynn("[say=jacki]Fuck me-e-e.. It hurts..[/say]")
+		saynn("[say=jacki]Бля-я-ядь... Как же больно...[/say]")
 
-		saynn("[say=eliza]It does? Good. You always could have just done what I wanted. You would have kept your cunt then. But this is more fun arguably.[/say]")
+		saynn("[say=eliza]Правда? Хорошо. Ты всегда могла просто делать то, что я хочу. Тогда бы ты сохранила свою щель. Но так, пожалуй, куда веселее.[/say]")
 
-		saynn("Jacki pants heavily.. resisting those mechanical arms is impossible.. She is forced to endure it..")
+		saynn("Джеки тяжело дышит... сопротивляться механическим рукам невозможно... Она вынуждена терпеть это...")
 
-		saynn("[say=eliza]See? Now you won't ever be fucked~. Well, vaginally. That pussy is now reserved exclusively for that AlphaCorp higher-up~.[/say]")
+		saynn("[say=eliza]Видишь? Теперь тебя больше никогда не оттрахают~. Ну, по крайней мере, вагинально. Эта киска теперь зарезервирована исключительно для того шишки из «АльфаКорп»~.[/say]")
 
-		saynn("[say=jacki]F-fuck.. y-you..[/say]")
+		saynn("[say=jacki]Б-бля... т-ты...[/say]")
 
-		saynn("[say=eliza]Oh? You want more? I can do more~.[/say]")
+		saynn("[say=eliza]О? Хочешь еще? Я могу сделать еще~.[/say]")
 
-		saynn("Jacki's eyes turn big.. The pain near her crotch region makes her whine constantly.. her pussy looking extremely irritated. And yet, the doctor goes ahead and presses the tool against the girl's sensitive clit.")
+		saynn("Глаза Джеки округляются... Боль в районе промежности заставляет её постоянно поскуливать... её киска выглядит крайне раздраженной. И всё же, доктор продолжает прижимать инструмент к чувствительному клитору девушки.")
 
-		saynn("Ow.. One second later.. And Jacki arches her back before letting out a gut-wrenching scream.. Her poor tortured pussy starts pulsing and even squirting juices onto the table.")
+		saynn("Ой!.. Секунду спустя... Джеки выгибается в спине, издавая душераздирающий крик... Её бедная, истерзанная киска начинает пульсировать и даже брызгать соками прямо на стол.")
 
-		saynn("[say=eliza]Ohh~. Are you orgasming from pain? Fascinating~.[/say]")
+		saynn("[say=eliza]Охх~. Неужели ты испытываешь оргазм от боли? Поразительно~.[/say]")
 
-		saynn("And now, Jacki's clit has a ring going through it too. Doctor Quinn tugs on it, causing the exhausted wolfie to squirm more.")
+		saynn("Теперь сквозь клитор Джеки продет еще и кольцо. Доктор Куинн тянет за него, заставляя изможденную волчицу корчиться еще сильнее.")
 
-		saynn("[say=jacki]W-Why..[/say]")
+		saynn("[say=jacki]П-почему..[/say]")
 
-		saynn("[say=eliza]Why do we do anything? To become happy. Seeing this.. makes me happy~.[/say]")
+		saynn("[say=eliza]Зачем мы вообще что-то делаем? Чтобы стать счастливыми. Вид этого... делает меня счастливой~.[/say]")
 
-		saynn("The feline goes ahead and attaches a little bell on a chain to her clit ring.. before also plugging the little urethra hole with a very small dildo-like object.. something that would normally make Jacki gasp.. but for now she doesn't even care.")
+		saynn("Кошка берет и прикрепляет к кольцу на клиторе маленький колокольчик на цепочке... а затем закупоривает отверстие мочеиспускательного канала крошечным объектом, похожим на дилдо... обычно это заставило бы Джеки ахнуть от неожиданности, но сейчас ей уже плевать.")
 
-		saynn("[say=eliza]Aw. Don't look so sad. I'm sure you will be happy too. When you decide to start fucking~. Too bad you will have to use your other holes now.[/say]")
+		saynn("[say=eliza]Ой. Не выгляди такой грустной. Уверена, ты тоже будешь счастлива. Когда решишь начать трахаться~. Жаль только, что теперь тебе придется использовать другие дырочки.[/say]")
 
-		saynn("Jacki is so exhausted.. her vision starts turning darker and darker.. until the world fades away..")
+		saynn("Джеки настолько истощена... её зрение становится всё темнее и темнее... пока мир окончательно не угасает...")
 
-		addButton("End of story", "That was intense", "jacki_piercing_story_end")
+		addButton("Конец истории", "Это было мощно", "jacki_piercing_story_end")
 	if(state == "jacki_piercing_story_end"):
 		removeCharacter("eliza")
 		playAnimation(StageScene.Duo, "sit", {npc="jacki", npcAction="sit"})
 		aimCameraAndSetLocName("yard_eastCorridor")
 		GM.pc.setLocation("yard_eastCorridor")
-		saynn("[say=jacki]So yeah. That's about it. My first experiences here weren't exactly pleasant.[/say]")
+		saynn("[say=jacki]Ну вот так. В общем, всё так. Мои первые впечатления от этого места были не самыми приятными.[/say]")
 
-		saynn("Getting your pussy stitched up like that? Obviously no one would like that.")
+		saynn("Когда тебе так зашивают киску? Очевидно, что никому такое не понравится.")
 
-		saynn("[say=jacki]But I'm getting used to it, you know?[/say]")
+		saynn("[say=jacki]Но я потихоньку привыкаю, понимаешь?[/say]")
 
-		saynn("[say=pc]To the prison life?[/say]")
+		saynn("[say=pc]К тюремной жизни?[/say]")
 
-		saynn("[say=jacki]To that too. The worst thing is that I can't even rub it out.. I have to seek.. alternative ways to.. you know.. But I can't find any..[/say]")
+		saynn("[say=jacki]И к этому тоже. Худшее то, что я даже не могу сама себе потереть... Приходится искать... альтернативные способы... ну, ты понимаешь... Но пока ничего не получается...[/say]")
 
-		saynn("Seems you can try helping her with that.")
+		saynn("Похоже, ты можешь попробовать помочь ей с этим.")
 
-		saynn("[say=jacki]Talking about it made me kinda exhausted. I will go rest, okay?[/say]")
+		saynn("[say=jacki]Разговоры об этом меня как-то вымотали. Пойду прилягу, ладно?[/say]")
 
-		saynn("[say=pc]Sure. Take care.[/say]")
+		saynn("[say=pc]Конечно. Отдыхай.[/say]")
 
-		saynn("Jacki gets up and starts jogging away.. leaving a little wet trail behind.")
+		saynn("Джеки встает и начинает медленно уходить на пробежку, оставляя за собой влажный след.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "jog_afterchat"):
 		aimCameraAndSetLocName("yard_northCorridor")
 		GM.pc.setLocation("yard_northCorridor")
 		if (lust < 0.2):
 			playAnimation(StageScene.Duo, "stand", {npc="jacki"})
-			saynn("By the end of your jogging session, Jacki is panting softly. She leans against one of the big rocks and holds her other paw on her thigh, rubbing it.")
+			saynn("К концу пробежки Джеки тихонько дышит, тяжело сбившись с ног. Она прислоняется к одному из больших камней, положив одну лапу на бедро и потирая его.")
 
-			saynn("[say=jacki]Ooh.. These can be quite exhausting, huh?[/say]")
+			saynn("[say=jacki]Ох.. Это может быть довольно изматывающе, а?[/say]")
 
-			saynn("You panting slightly too but not that much.")
+			saynn("Ты тоже слегка запыхался, но не так сильно, как она.")
 
-			saynn("[say=jacki]Fresh air is nice, isn't it? I like this place.[/say]")
+			saynn("[say=jacki]Свежий воздух — это здорово, правда? Мне здесь нравится.[/say]")
 
-			saynn("She pulls out a plastic bottle filled with fresh water and raises it high above her head, catching some into her mouth while the rest streams down her fur and cools down her body. The wet fabric starts gluing to her body, emphasizing her {jacki.breasts}.")
+			saynn("Она достает пластиковую бутылку с чистой водой и поднимает её высоко над головой, ловя капли ртом, пока остальная вода струится по её меху, охлаждая тело. Мокрая ткань начинает облеплять её тело, подчеркивая её {jacki.breasts}.")
 
-			saynn("[say=jacki]Ah.. So good.. Well. It was nice chatting with you. But I think I will return back now.[/say]")
+			saynn("[say=jacki]Ах.. Как же хорошо.. Ну что ж. Было приятно поболтать. Но, думаю, мне пора возвращаться.[/say]")
 
 		elif (lust < 0.4):
 			playAnimation(StageScene.Duo, "stand", {npc="jacki"})
-			saynn("By the end of that jogging session, Jacki is clearly exhausted. She is huffing and sticking her tongue out,  her paws traveling all over her waist and sides.")
+			saynn("К концу этой пробежки Джеки явно измотана. Она тяжело дышит, высунув язык, а её лапы то и дело скользят по талии и бокам.")
 
-			saynn("[say=jacki]Damn.. Why is it so hot here all of the sudden..[/say]")
+			saynn("[say=jacki]Черт.. Почему здесь вдруг стало так жарко..[/say]")
 
-			saynn("Hot? You don't really feel that. The temperature is the same as it always was. Looks like Jacki is talking about a different kind of heat. You notice her sneaking off and leaning against one of the trees.")
+			saynn("Жарко? Ты особо не замечаешь разницы. Температура такая же, как и всегда. Похоже, Джеки говорит о совсем другом виде жара. Ты замечаешь, как она ускользает и прислоняется к одному из деревьев.")
 
-			saynn("Jacki's paws sneak out of your sight between her thighs. You can hear bell jingling noises..")
+			saynn("Лапы Джеки скрываются из виду между её бедер. Ты слышишь тихий звон колокольчиков...")
 
-			saynn("[say=jacki]I'm so.. Huff..[/say]")
+			saynn("[say=jacki]Ох... Хафф...[/say]")
 
-			saynn("After some alone time, Jacki returns to you, her cheeks blushing. She takes a few good gulps out of her personal plastic bottle and empties the rest onto her head, trying to cool down.")
+			saynn("Немного побыв наедине с собой, Джеки возвращается к тебе с раскрасневшимися щеками. Она делает несколько жадных глотков из своей пластиковой бутылки, а остатки выливает себе на голову, пытаясь остыть.")
 
-			saynn("[say=jacki]It was nice to chat with you. I will go now. Wruff.[/say]")
+			saynn("[say=jacki]Было приятно поболтать. Пойду я. Вруфф![/say]")
 
 		elif (lust < 0.8):
 			playAnimation(StageScene.Duo, "stand", {npc="jacki"})
-			saynn("Jacki is panting softly after that jogging session. She empties her water bottle onto herself and produces a cute moan.")
+			saynn("После пробежки Джеки тихонько пыхтит. Она выливает воду из бутылки на себя и издает милый стон.")
 
-			saynn("[say=jacki]Damn heat.. Or whatever it is..[/say]")
+			saynn("[say=jacki]Черт, ну и жара... Или что это вообще такое...[/say]")
 
-			saynn("After that her paws sneak under her clothing, cupping her {jacki.breasts} and playing with the piercings between her legs. Her cheeks blush red as she does that.. she is clearly ashamed.. but can't stop herself.")
+			saynn("После этого её лапки незаметно проскальзывают под одежду, сжимая {jacki.breasts} и лаская пирсинг между ног. Её щеки заливаются румянцем — она явно стыдится... но не может остановиться.")
 
-			saynn("[say=jacki]It won't go away..[/say]")
+			saynn("[say=jacki]Это никак не проходит...[/say]")
 
-			saynn("Looks like her paws alone are not enough because of those chastity piercings. Maybe you can offer her some solutions?")
+			saynn("Похоже, одних лапок ей не хватает из-за этого целомудренного пирсинга. Может, предложишь ей какое-нибудь решение?")
 
 		else:
 			playAnimation(StageScene.Duo, "stand", {npc="jacki"})
-			saynn("Jacki is moaning softly as her clothing keeps getting caught by the piercings while she jogs around. At some point she can't continue anymore and stops by some tree. Her paws instantly slide under her shorts and start rubbing her sensitive parts.")
+			saynn("Джеки тихо стонет: во время бега её одежда то и дело цепляется за пирсинг. В какой-то момент она больше не может продолжать и останавливается у дерева. Её лапки тут же ныряют под шорты, начиная теребить чувствительные места.")
 
-			saynn("[say=jacki]I'm so needy..[/say]")
+			saynn("[say=jacki]Как же меня всё тянет...[/say]")
 
-			saynn("She looks you in the eyes.. while there is zero shame in hers. She pulls her shorts down for you even, exposing her unshaved crotch which features a rich red bush that's hiding her stitched up pussy slit. Looks like she gave up shaving it after some time completely.")
+			saynn("Она смотрит тебе прямо в глаза... и в её взгляде ни капли стыда. Она даже спускает шорты, обнажая небритую промежность с густым рыжеватым пушком, который скрывает её зашитую щель. Похоже, через какое-то время она окончательно забила на бритьё.")
 
-			saynn("Jacki plays with the little jingly bell and tugs on it, causing her to moan.")
+			saynn("Джеки играет с маленьким звенящим колокольчиком и тянет за него, отчего из её горла вырывается стон.")
 
 			if (corruption < 0.6 || RNG.chance(50)):
-				saynn("[say=jacki]Wanna help me maybe?.. My cunt is useless.. but you can fuck my dirty asshole if you want..[/say]")
+				saynn("[say=jacki]Может, поможешь мне?.. Моя киска совсем бесполезна... но ты можешь оттрахать мою грязную дырочку, если хочешь..[/say]")
 
-				saynn("So direct. Looks like the lust is making her extremely eager.")
+				saynn("Какая прямолинейность. Похоже, похоть доводит её до крайнего возбуждения.")
 
 			else:
-				saynn("[say=jacki]Fuck me.. Any way you can.. As rough as you can.. Use me like the whore that I am..[/say]")
+				saynn("[say=jacki]Трахни меня.. Как угодно.. Как можно грубее.. Используй меня, как настоящую шлюху..[/say]")
 
-				saynn("So naughty.")
+				saynn("Какая шалунья.")
 
-		addButton("Nod", "Enough is enough", "jog_afterchat_nod")
-		addButton("Shower", "Offer her to go take a refreshing shower", "jog_afterchat_shower")
+		addButton("Кивнуть", "Хватит", "jog_afterchat_nod")
+		addButton("Душ", "Предложить ей освежиться в душе", "jog_afterchat_shower")
 #ACEPREGEXPAC - remember to write shower sex
 		if (getFlag("JackiModule.Jacki_ch2GotPussyFreed")):
-			addDisabledButton("Shower Breeding", "[Ace Preg Expac] Soon. -Ace")
-		addButton("Ask to jog more", "Ask to jog even more together", "jog_afterchat_askmore")
+			addDisabledButton("Разведение в душе", "[Ace Preg Expac] Скоро. — Эйс")
+		addButton("Попросить её побегать ещё", "Предложить побегать вместе еще немного", "jog_afterchat_askmore")
 		if (lust >= 0.4):
-			addButton("Lick her", "Try to make Jacki cum by licking and rubbing her stiched up pussy", "jog_try_piercings")
-			addButton("Sounding", "Jacki still has that little dildo in her urerthra..", "jog_sounding")
+			addButton("Облизать её", "Попытаться довести Джеки до оргазма, облизывая и лаская её зашитую киску", "jog_try_piercings")
+			addButton("Звуки (Sounding)", "В уретре у Джеки всё еще торчит тот маленький дилдо...", "jog_sounding")
 		if (lust >= 0.8):
-			addButtonWithChecks("Rough anal", "Fuck Jacki's ass", "jog_anal_fuck", [], [ButtonChecks.HasReachablePenis])
-			addButtonWithChecks("Strapon anal", "Fuck Jacki's ass with a strapon", "jog_anal_strapon_pick", [], [ButtonChecks.HasStraponAndCanWear])
+			addButtonWithChecks("Грубый анальный секс", "Трахать Джеки в зад", "jog_anal_fuck", [], [ButtonChecks.HasReachablePenis])
+			addButtonWithChecks("Анальный секс со страпоном", "Трахать Джеки в зад страпоном", "jog_anal_strapon_pick", [], [ButtonChecks.HasStraponAndCanWear])
 		if (getFlag("JackiModule.Jacki_ch2GotPussyFreed")):
-			addButtonWithChecks("Breed her", "Fuck Jacki's pussy", "jog_breed_fuck", [], [ButtonChecks.HasReachablePenis])
+			addButtonWithChecks("Оплодотворить её", "Трахать Джеки в киску", "jog_breed_fuck", [], [ButtonChecks.HasReachablePenis])
 	if(state == "jog_afterchat_shower"):
-		saynn("[say=pc]Wanna go take a shower? You know, to wash all that sweat away.[/say]")
+		saynn("[say=pc]Хочешь сходить в душ? Ну, знаешь, чтобы смыть весь этот пот.[/say]")
 
-		saynn("Jacki raises her arm and suddenly sniffs her armpit.")
+		saynn("Джеки поднимает руку и внезапно принюхивается к своей подмышке.")
 
-		saynn("[say=jacki]Yeah.. I could use one. I'm still afraid of the bullies so I don't visit it often..[/say]")
+		saynn("[say=jacki]Да.. не помешало бы. Я всё ещё побаиваюсь задир, так что хожу туда нечасто..[/say]")
 
-		saynn("Could be why she has such a.. anyway.")
+		saynn("Возможно, поэтому от неё так.. впрочем, неважно.")
 
-		saynn("You and Jacki head to the showers.")
+		saynn("Вы с Джеки направляетесь в душевую.")
 
-		addButton("Showers", "See what's there", "jog_afterchat_shower_do")
+		addButton("Душевая", "Посмотреть, что там есть", "jog_afterchat_shower_do")
 	if(state == "jog_afterchat_shower_do"):
 		aimCameraAndSetLocName("main_shower2")
 		GM.pc.setLocation("main_shower2")
 		addCharacter("jacki", ["naked"])
-		saynn("You enter the dressing room.")
+		saynn("Вы входите в раздевалку.")
 
 		if (corruption < 0.4):
 			playAnimation(StageScene.Showering, "body", {pc="jacki", bodyState={naked=true}})
 			#playAnimation(StageScene.Duo, "stand", {npc="jacki", bodyState={naked=true}, npcBodyState={naked=true}})
-			saynn("Jacki quickly takes off her clothes and puts them in the locker. She runs past you while covering herself up using her paws and tail. You follow.")
+			saynn("Джеки быстро скидывает одежду и убирает её в шкафчик. Она пробегает мимо тебя, прикрываясь лапами и хвостом. Ты следуешь за ней.")
 
-			saynn("She doesn't seem to be eager to.. shower together. So you stand under separate shower heads and just wash yourselves in peace.")
+			saynn("Похоже, она не особо горит желанием.. принимать душ вместе. Так что вы встаете под разные лейки и просто спокойно моетесь.")
 
-			saynn("After you both are done, Jacki waves to you and heads to the dressing room. Looks like she is not corrupted enough to do more.")
+			saynn("Когда вы оба закончили, Джеки машет тебе рукой и направляется в раздевалку. Похоже, она ещё недостаточно испорчена для чего-то большего.")
 
 		else:
 			playAnimation(StageScene.ShoweringDuo, "shower", {pc="jacki", npc="pc", bodyState={naked=true}, npcBodyState={naked=true}})
 			#playAnimation(StageScene.SexStanding, "tease", {npc="jacki", pc="pc", bodyState={naked=true}, npcBodyState={naked=true}})
-			saynn("Jacki takes off her clothes and waits for you to do the same, standing near. After that, you head further, entering the showering area.")
+			saynn("Джеки раздевается и ждёт, пока ты сделаешь то же самое, стоя рядом. После этого вы проходите дальше, в саму душевую зону.")
 
-			saynn("You stand under one of the shower heads.")
+			saynn("Ты стоишь под одной из душевых леек.")
 
-			saynn("[say=jacki]Could you rub me a little?..[/say]")
+			saynn("[say=jacki]Можешь немного размять меня?..[/say]")
 
-			saynn("[say=pc]Sure.[/say]")
+			saynn("[say=pc]Конечно.[/say]")
 
-			saynn("And so she joins you, offering you her back. You gently knead it while water washing any dirt off of you two.")
+			saynn("И она присоединяется к тебе, подставляя спину. Ты нежно разминаешь её, пока вода смывает с вас обоих грязь.")
 
-			saynn("[say=jacki]Wruff..[/say]")
+			saynn("[say=jacki]Вруфф...[/say]")
 
-			saynn("Your hands rub her shoulders, sides, waist.. When you are done with that, her tail boops your hands towards the directions of her butt. So you proceed to knead it too, groping and squeezing her buttcheeks.")
+			saynn("Твои руки скользят по её плечам, бокам, талии... Когда ты заканчиваешь, её хвост подталкивает твои руки в сторону задницы. И ты принимаешься разминать и её, ощутимо нащупывая и сжимая её ягодицы.")
 
-			saynn("[say=jacki]So nice.. Thank you.[/say]")
+			saynn("[say=jacki]Так приятно.. Спасибо.[/say]")
 
-			saynn("She does the same to you, kneading your back and {pc.masc} ass. In a friendly way.")
+			saynn("Она делает то же самое с тобой, разминая твою спину и {pc.masc} задницу. По-дружески.")
 
-			saynn("You and Jacki return to the dressing room clean and refreshed.")
+			saynn("Вы с Джеки возвращаетесь в раздевалку чистыми и посвежевшими.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "jog_afterchat_nod"):
-		saynn("You nod.")
+		saynn("Ты киваешь.")
 
-		saynn("[say=pc]Take care.[/say]")
+		saynn("[say=pc]Береги себя.[/say]")
 
-		saynn("Jacki offers you a kind smile.")
+		saynn("Джеки одаривает тебя доброй улыбкой.")
 
-		saynn("[say=jacki]You too![/say]")
+		saynn("[say=jacki]И ты тоже![/say]")
 
-		saynn("..before walking away.")
+		saynn("..прежде чем уйти.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "jog_afterchat_askmore"):
-		saynn("[say=pc]Can't we maybe jog a little more? I would really like to do it with you.[/say]")
+		saynn("[say=pc]Может, побегаем ещё немного? Мне бы очень хотелось сделать это вместе с тобой.[/say]")
 
-		saynn("Jacki rubs her wet muzzle and looks puzzled by your offer.")
+		saynn("Джеки протирает свою мокрую мордочку, выглядя озадаченной твоим предложением.")
 
-		saynn("[say=jacki]Ooh.. You planning to run a marathon or something?[/say]")
+		saynn("[say=jacki]Ого... Ты что, марафон планируешь пробежать?[/say]")
 
-		saynn("[say=pc]Pretty please?[/say]")
+		saynn("[say=pc]Ну пожалуйста![/say]")
 
-		saynn("One eye contact is enough to make her melt.")
+		saynn("Одного взгляда глаза в глаза достаточно, чтобы она растаяла.")
 
-		saynn("[say=jacki]Alright.. Let's jog some more.[/say]")
+		saynn("[say=jacki]Ладно... Давай ещё побегаем.[/say]")
 
-		addButton("Jog", "Jog together with Jacki", "jog_afterchat_jogmore")
+		addButton("Бег", "Побегать вместе с Джеки", "jog_afterchat_jogmore")
 	if(state == "jog_afterchat_jogmore"):
 		aimCameraAndSetLocName("yard_firstroom")
 		GM.pc.setLocation("yard_firstroom")
 		playAnimation(StageScene.Duo, "jog", {npc="jacki", npcAction="jog", flipNPC=true})
-		saynn("And so you continue jogging with Jacki. There is not much to chat about anymore so you just enjoy the scenery.")
+		saynn("И вот вы продолжаете бег с Джеки. Обсуждать уже особо нечего, поэтому вы просто наслаждаетесь пейзажем.")
 
-		saynn("But the wolfie is not sharing your love to the lush environment at the moment. She is busy panting and huffing as she jogs around the yard while also swaying her hips more widely.")
+		saynn("Но волчица сейчас явно не разделяет твою любовь к живописным окрестностям. Она занята тем, что тяжело дышит и сопит во время бега по двору, при этом всё сильнее виляя бедрами.")
 
-		saynn("[say=jacki]Huff.. uff..[/say]")
+		saynn("[say=jacki]Хафф... уфф...[/say]")
 
-		saynn("[say=pc]All good Jacki?[/say]")
+		saynn("[say=pc]Все пучком, Джеки?[/say]")
 
-		saynn("[say=jacki]Y-yeah.. I'm okay.[/say]")
+		saynn("[say=jacki]Д-да.. Я в норме.[/say]")
 
-		saynn("She gives you a thumbs up and does her best to keep up with the pace.")
+		saynn("Она показывает большой палец вверх и изо всех сил старается не отставать от твоего темпа.")
 
-		saynn("This jog gives you some energy back.")
+		saynn("Эта пробежка немного восстановила твои силы.")
 
-		addButton("Continue", "See what happens next", "jog_afterbigjog")
+		addButton("Продолжить", "Смотреть, что будет дальше", "jog_afterbigjog")
 	if(state == "jog_afterbigjog"):
 		playAnimation(StageScene.Duo, "stand", {npc="jacki"})
-		saynn("At some point Jacki just has to stop. She grabs onto the nearest tree and starts panting heavily.")
+		saynn("В какой-то момент Джеки приходится остановиться. Она хватается за ближайшее дерево и начинает тяжело дышать.")
 
-		saynn("[say=pc]If you need something..[/say]")
+		saynn("[say=pc]Если тебе что-то нужно..[/say]")
 
-		saynn("[say=jacki]I'm good.. trust me.. Just have to get my breath back.[/say]")
+		saynn("[say=jacki]Все хорошо.. поверь мне.. Просто нужно перевести дух.[/say]")
 
-		saynn("The wolfie leans against that tree harder and looks at you with hungry eyes. But then she quickly snaps out of it and pulls out her plastic bottle.")
+		saynn("Волчица сильнее прижимается к дереву и смотрит на тебя голодными глазами. Но затем она быстро приходит в себя и достает свою пластиковую бутылку.")
 
-		saynn("She does the same motion, bringing it high above her muzzle and waiting for the refreshing fluid to hit her tongue and fur.. but nothing comes out..")
+		saynn("Она делает то же самое движение, задирая бутылку высоко над мордой в ожидании, когда освежающая жидкость коснется её языка и шерсти... но ничего не вытекает...")
 
-		saynn("[say=jacki]Aw.[/say]")
+		saynn("[say=jacki]Оу...[/say]")
 
-		saynn("She looks at you again.")
+		saynn("Она снова смотрит на тебя.")
 
-		saynn("[say=jacki]Hate to ask but. Maybe you have something to clench the thirst?[/say]")
+		saynn("[say=jacki]Неловко спрашивать, но... Может, у тебя найдется что-нибудь, чтобы утолить жажду?[/say]")
 
-		saynn("Looks like you can give her one of your plastic bottles if you have any filled ones.")
+		saynn("Похоже, ты можешь дать ей одну из своих пластиковых бутылок, если у тебя есть наполненные.")
 
-		addButton("Nah", "You won't give her anything", "jog_afterbigjog_nobottle")
+		addButton("Неа", "Ничего ей не давать", "jog_afterbigjog_nobottle")
 		addPlasticBottleButtons()
 		if (false):
-			addButton("Nope", "You shouldn't see this", "jog_afterbigjog_givebottle")
+			addButton("Неа", "Тебе не стоит этого видеть", "jog_afterbigjog_givebottle")
 	if(state == "jog_afterbigjog_nobottle"):
-		saynn("[say=pc]Nah, sorry. I've got nothing.[/say]")
+		saynn("[say=pc]Да нет, прости. У меня пусто.[/say]")
 
-		saynn("She sighs and nods.")
+		saynn("Она вздыхает и кивает.")
 
-		saynn("[say=jacki]Okay.. well.. I'm gonna go refill my bottle then. Take care.[/say]")
+		saynn("[say=jacki]Ладно... ну... тогда пойду наполню свою бутылку. Счастливо![/say]")
 
-		saynn("And just like that, the exhausted wolfie walks away, her thirst unclenched.")
+		saynn("И вот так, изможденная волчица уходит, так и не утолив жажду.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "jog_afterbigjog_givebottle"):
 		playAnimation(StageScene.Duo, "stand", {npc="jacki"})
-		saynn("You give Jacki the "+str(usedItemName)+" and she quickly tries to clench her thirst with it, raising it high above her muzzle and catching the contents onto her tongue and face, her eyes closed.")
+		saynn("Ты даешь Джеки "+str(usedItemName)+" и она тут же пытается утолить жажду, задирая бутылку высоко над мордой и ловя содержимое языком и лицом, зажмурив глаза.")
 
 		if (plasticBottleFluidID == "Milk"):
-			saynn("Even though it's not water in that bottle but breast milk.. Jacki still empties it completely and gets some onto her fur too.")
+			saynn("И пусть в бутылке не вода, а грудное молоко... Джеки всё равно выпивает её до капли, испачкав при этом свою шерсть.")
 
-			saynn("[say=jacki]Ah! So sweet and refreshing. Where did you get milk here? I love the taste.[/say]")
+			saynn("[say=jacki]Ах! Какое сладкое и освежающее. Откуда вы тут взяли молоко? Обожаю этот вкус![/say]")
 
-			saynn("You decide that it's best to not tell her the origin of that milk.")
+			saynn("Вы решаете, что лучше не говорить ей, откуда на самом деле взялось это молоко.")
 
-			saynn("[say=jacki]Well, either way, thank you! That helped a lot! I'm gonna go now though.[/say]")
+			saynn("[say=jacki]Ну, в любом случае, спасибо! Это очень помогло! Ладно, я побежала![/say]")
 
-			saynn("You nod and let Jacki jog away.")
+			saynn("Вы киваете, и Джеки убегает на пробежку.")
 #PREGEXPACNOTE - Yknow, I thought adding pregnancy to a character whose owner isnt really into it would be bad, but after reading the watersports scenes, I realized nothing I could add would be worse.
 #I know watersports mainly gets it's kick from humiliation, but I still really dont get why. -ace
 		elif (plasticBottleFluidID == "Piss"):
 			if (waterLevel <= 2):
-				saynn("You decided to be very naughty today and gave Jacki a bottle of piss..")
+				saynn("Сегодня вы решили пошалить и дали Джеки бутылку мочи...")
 
-				saynn("As soon as she makes the first gulp, Jacki realizes that something is wrong and tries to spew everything out. But it's too late, she even gets some of the yellow smelly fluid onto her fur.")
+				saynn("Как только она делает первый глоток, Джеки понимает, что что-то не так, и пытается всё выплюнуть. Но уже поздно: часть желтой вонючей жижи успевает попасть ей на шерсть.")
 
-				saynn("[say=jacki]Gross! The fuck is this? Piss?![/say]")
+				saynn("[say=jacki]Фу! Что это за хрень?! Моча?![/say]")
 
-				saynn("You pretend that it was just a mistake.")
+				saynn("Вы притворяетесь, что это была просто ошибка.")
 
-				saynn("[say=pc]Oops.. I think I gave you the wrong bottle. My bad.[/say]")
+				saynn("[say=pc]Ой... Кажется, я дала тебе не ту бутылку. Мой косяк![/say]")
 
-				saynn("[say=jacki]Urgh.. Why do you even have that..[/say]")
+				saynn("[say=jacki]Фу-у... И зачем тебе вообще такая дрянь?..[/say]")
 
-				saynn("She spills the rest of the contents onto the floor.. And walks away.")
+				saynn("Она выливает остатки на пол... И уходит.")
 
-				saynn("Maybe you can make her get used to the taste if you try hard enough..")
+				saynn("Может, если постараться, у тебя получится приучить её к этому вкусу...")
 
 			elif (waterLevel <= 5):
-				saynn("You decided to be very naughty today and gave Jacki a bottle of piss..")
+				saynn("Сегодня вы решили пошалить и дали Джеки бутылку мочи...")
 
-				saynn("Jacki sighs when she makes the first gulp.. and then just keeps swallowing it.. probably just to spite you.")
+				saynn("Джекки вздыхает, сделав первый глоток... а затем просто продолжает глотать... скорее всего, просто чтобы позлить тебя.")
 
-				saynn("[say=jacki]Gross.. I can feel that it's piss from the second I start drinking it.[/say]")
+				saynn("[say=jacki]Мерзость... Я чувствую, что это моча, с самой первой секунды, как начинаю пить.[/say]")
 
 				if (waterLevel  == 5):
-					saynn("[say=pc]Then why do you keep drinking it?[/say]")
+					saynn("[say=pc]Тогда почему ты продолжаешь его пить?[/say]")
 
-					saynn("The blush appears on Jacki's face.")
+					saynn("На лице Джекки проступает румянец.")
 
-					saynn("[say=jacki]Because.. Just because.. I'm thirsty, okay?[/say]")
+					saynn("[say=jacki]Потому что... Просто потому что... Я хочу пить, ясно?![/say]")
 
-					saynn("Jacki covers her wet piss-marked face and walks away.")
+					saynn("Джекки закрывает лицо, мокрое от мочи, и уходит.")
 
 				else:
-					saynn("She growls at you.")
+					saynn("Она рычит на тебя.")
 
-					saynn("[say=jacki]Gave me piss instead of water again, very funny..[/say]")
+					saynn("[say=jacki]Опять вместо воды дала мне мочу, очень смешно...[/say]")
 
-					saynn("Makes you wonder why she drinks it at all then. Is her thirst that strong?")
+					saynn("Заставляет задуматься, зачем она вообще это пьет. Неужели она настолько хочет пить?")
 
 			else:
-				saynn("Judging from the yellow color, It's obviously not water in that bottle.. But it's like doesn't care, she eagerly swallows the warm piss while also receiving a little golden shower in the process.")
+				saynn("Судя по желтому цвету, в этой бутылке явно не вода... Но ей как будто плевать: она жадно глотает теплую мочу, попутно принимая на себя легкий золотой дождь.")
 
-				saynn("[say=jacki]Ah~.. Refreshing..[/say]")
+				saynn("[say=jacki]Ах~.. Освежает..[/say]")
 
-				saynn("Surprising. Jacki notices your confused stare.")
+				saynn("Удивительно. Джеки замечает твой недоуменный взгляд.")
 
-				saynn("[say=jacki]What? It's better than nothing. Thank you.[/say]")
+				saynn("[say=jacki]Что? Это лучше, чем ничего. Спасибо.[/say]")
 
-				saynn("Well, looks like you accidentally turned Jacki into a piss slut. Oh well.")
+				saynn("Ну, похоже, ты случайно превратил Джеки в писс-сучку. Что ж, бывает.")
 
-				saynn("She walks away, proudly wearing that gross scent.")
+				saynn("Она уходит, с гордостью неся на себе этот мерзкий запах.")
 
 		elif (plasticBottleFluidID == "GirlCum"):
-			saynn("It's not water in that bottle.. but its transparency fools Jacki enough for her to empty the whole thing. Her face is now covered in girlcum..")
+			saynn("В этой бутылке не вода... но прозрачность вводит Джеки в заблуждение, и она осушает её до дна. Теперь её лицо покрыто девичьей спермой...")
 
-			saynn("[say=jacki]A little salty.. but it's not bad. What was in it?[/say]")
+			saynn("[say=jacki]Немного солоновато... но неплохо. Что там было?[/say]")
 
-			saynn("You decide that it's best if she doesn't know what was in that bottle..")
+			saynn("Ты решаешь, что лучше бы ей не знать, что именно было в этой бутылке...")
 
-			saynn("[say=jacki]Well, either way, thank you! That helped a lot! I'm gonna go now though.[/say]")
+			saynn("[say=jacki]Ну, в любом случае, спасибо! Это очень помогло! Ладно, я побежала![/say]")
 
-			saynn("You nod and let Jacki jog away.")
+			saynn("Вы киваете, и Джеки убегает на пробежку.")
 
 		elif (plasticBottleFluidID == "Water"):
-			saynn("Jacki empties half the bottle and pours the rest on her face.")
+			saynn("Джеки выпивает половину бутылки, а остальное выливает себе на лицо.")
 
-			saynn("[say=jacki]Ah.. that feels good..[/say]")
+			saynn("[say=jacki]Ах.. как же приятно..[/say]")
 
-			saynn("You smile and grab the bottle back.")
+			saynn("Ты улыбаешься и забираешь бутылку обратно.")
 
-			saynn("[say=jacki]Thank you! That helped a lot! I'm gonna go now though.[/say]")
+			saynn("[say=jacki]Спасибо! Это очень помогло! Но мне пора идти.[/say]")
 
-			saynn("You nod and let Jacki jog away.")
+			saynn("Вы киваете, и Джеки убегает на пробежку.")
 
 		elif (plasticBottleFluidID == "Cum"):
-			saynn("Thick sticky cum starts flowing down Jacki's tongue as she gulps it all up.. She understands what it is way too late..")
+			saynn("Густая липкая сперма начинает стекать по языку Джеки, пока она всё проглатывает.. Она понимает, что это такое, слишком поздно..")
 
-			saynn("[say=jacki]Salty.. Um.. Is that.. What I think it is?[/say]")
+			saynn("[say=jacki]Соленовато.. Хм.. Это что.. То, о чем я думаю?[/say]")
 
-			saynn("She opens her eyes and sees that she is now covered in seed.")
+			saynn("Она открывает глаза и видит, что теперь вся покрыта семенем.")
 
 			if (corruption > 0.7):
-				saynn("[say=jacki]You know.. I actually kinda like it.. Lots of protein. Thank you. I'm gonna go now~.[/say]")
+				saynn("[say=jacki]Знаешь.. А мне даже вроде как нравится.. Куча белка. Спасибо. Пойду я~.[/say]")
 
-				saynn("She licks her lips and walks away proudly.")
+				saynn("Она облизывает губы и гордо уходит.")
 
 			else:
-				saynn("[say=jacki]Why did you.. Give me that.. Urgh..[/say]")
+				saynn("[say=jacki]Зачем ты.. Дал мне это.. Ух..[/say]")
 
-				saynn("She coughs and then dashes away! Probably wasn't the best idea. But oh well.")
+				saynn("Она кашляет и тут же убегает! Пожалуй, идея была так себе. Но ладно, с кем не бывает.")
 
 		else:
-			saynn("It's not water in that bottle.. It's some strange fluid. Jacki starts coughing after drinking it.")
+			saynn("В этой бутылке не вода... Какая-то странная жидкость. После глотка Джеки начинает кашлять.")
 
-			saynn("[say=jacki]That's a weird taste.. Can't even describe it.. Are you sure it's drinkable even?[/say]")
+			saynn("[say=jacki]Какой странный вкус... Даже не знаю, как описать... Ты уверена, что это вообще можно пить?[/say]")
 
-			saynn("You shrug.")
+			saynn("Ты пожимаешь плечами.")
 
-			saynn("[say=jacki]Oh well. Thanks I guess. I'm gonna go now though.[/say]")
+			saynn("[say=jacki]Ну ладно. Спасибо, наверное. Но мне пора идти.[/say]")
 
-			saynn("You nod and let Jacki jog away.")
+			saynn("Вы киваете, и Джеки убегает на пробежку.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "jog_try_piercings"):
 		playAnimation(StageScene.SexOral, "lick", {pc="jacki", npc="pc", bodyState={exposedCrotch=true}})
-		saynn("[say=pc]I can try to help you.[/say]")
+		saynn("[say=pc]Я могу попытаться тебе помочь.[/say]")
 
-		saynn("[say=jacki]Wruff![/say]")
+		saynn("[say=jacki]Вруфф![/say]")
 
-		saynn("You find a secluded place and get on your knees before the wolfie. As you pull her shorts down, you reveal her unremovable chastity piercings that hold her wet pussy closed shut, preventing any direct penetration. Above it is an untrimmed red bush of pubes.")
+		saynn("Вы находите уединенное место, и ты опускаешься на колени перед волчицей. Когда ты стягиваешь с неё шорты, открываются её несъемные пирсинги целомудрия, которые плотно смыкают её влажную киску, не давая возможности для прямого проникновения. Над ними виднеется густой, нестриженый рыжевато-красный пушок.")
 
-		saynn("Certainly a very unique view.")
+		saynn("Определенно, зрелище весьма уникальное.")
 
-		saynn("[say=jacki]Do you like how my useless cunt looks?..[/say]")
+		saynn("[say=jacki]Тебе нравится, как выглядит моя бесполезная щелка?..[/say]")
 
-		saynn("Sure. You nod and bring your mouth close to it. You catch the little cyan bell that's hanging from her clit and tug on it with your teeth, causing her to bite her lip.")
+		saynn("Конечно. Ты киваешь и подносишь рот ближе к ней. Ты захватываешь зубами маленький голубой колокольчик, свисающий с её клитора, и слегка тянешь за него, заставляя её закусить губу.")
 
-		saynn("[say=jacki]Ngh-h..[/say]")
+		saynn("[say=jacki]Нгх-х..[/say]")
 
-		saynn("So sensitive. Her stitched-up pussy starts dripping juices onto your nose the more you play with her bell. After it, you roll your tongue out and start dragging it over her constrained folds, trying to lick between the little metal rings that hold her labia closed")
+		saynn("Какая чувствительная. Чем больше ты играешь с её клитором, тем сильнее её зашитая киска начинает сочиться соком прямо тебе на нос. После этого ты вытягиваешь язык и начинаешь водить им по её стянутым складкам, пытаясь слизывать сок между маленькими металлическими колечками, которые удерживают её губки сомкнутыми.")
 
-		saynn("Moans begin to escape from the wolfie, she spreads her legs more for you, her paws land on her small breasts and knead them while you are lapping up her juices.")
+		saynn("Из волчицы начинают вырываться стоны; она раздвигает ноги ещё шире, а её лапы ложатся на маленькую грудь и сжимают её, пока ты слизываешь её соки.")
 
-		saynn("[say=jacki]Mgh-h..[/say]")
+		saynn("[say=jacki]Мгх-х..[/say]")
 
-		saynn("A few minutes pass. No matter how much you eat her out, she can't reach her orgasm, always just hovering near it instead.")
+		saynn("Проходит несколько минут. Сколько бы ты её ни отыгрывал, она никак не может достичь оргазма, постоянно зависая в шаге от него.")
 
-		saynn("[say=jacki]Huff..[/say]")
+		saynn("[say=jacki]Хафф...[/say]")
 
-		saynn("Looks like stimulating her pussy alone won't be enough. And you obviously can't stop now..")
+		saynn("Похоже, одной стимуляции киски будет недостаточно. И ты явно не можешь остановиться сейчас...")
 
-		addButton("Finger ass", "Finger Jacki's ass as the same time as licking her", "jog_try_piercings_finger")
+		addButton("Пальцы в анус", "Трахать Джеки пальцами в задницу, одновременно лизая её", "jog_try_piercings_finger")
 		if (buttScore >= 4):
-			addButton("Anal fisting", "Focus fully on her ass", "jog_try_piercings_fisting")
+			addButton("Анальный фистинг", "Полностью сосредоточиться на её заднице", "jog_try_piercings_fisting")
 		else:
-			addDisabledButton("Anal fisting", "Jacki needs her ass to be trained more first")
+			addDisabledButton("Анальный фистинг", "Сначала Джеки нужно получше натренировать свою задницу")
 	if(state == "jog_try_piercings_finger"):
-		saynn("Your hands are free anyway so you decide to start groping Jacki's ass while you keep dragging your tongue over her closed folds. She doesn't seem to mind, her tail even moves out of the way.")
+		saynn("Твои руки всё равно свободны, поэтому ты решаешь начать ласкать задницу Джеки, продолжая водить языком по её сомкнутым складкам. Кажется, она не против — её хвост даже убирается с дороги.")
 
-		saynn("[say=jacki]Wruff..[/say]")
+		saynn("[say=jacki]Вруфф...[/say]")
 
-		saynn("That does seem to help so you continue, holding her ass spread while the second hand slides closer and closer to her asshole. As your digits begin to prod it, you begin to feel that it is {jackiButt}.")
+		saynn("Это, похоже, помогает, так что ты продолжаешь: одной рукой раздвигаешь её ягодицы, а вторая всё ближе и ближе подбирается к её анусу. Когда твои пальцы начинают прощупывать его, ты чувствуешь, что он {jackiButt}.")
 
-		saynn("[say=jacki]Ohh.. Interested in my ass, are you..[/say]")
+		saynn("[say=jacki]Охх.. Заинтересовался моей задницей, да?..[/say]")
 
 		if (buttScore >= 5):
-			saynn("Her ass is very trained by now so slipping a few digits in doesn't prove to be difficult. Jacki bites her lip again when you manage to fit.. almost your whole palm in that deep stretched asshole..")
+			saynn("Её задница уже достаточно натренирована, так что вставить несколько пальцев не составляет труда. Джеки снова кусает губу, когда тебе удаётся втиснуть... почти всю ладонь в этот глубокий, растянутый анус...")
 
 		elif (buttScore >= 2):
-			saynn("Her ass is somewhat trained by now already so slipping two digits at once is not too difficult. Jacki bites her lip again as you test her asshole more by trying to fit another one.. but two is enough for now.")
+			saynn("Её задница уже немного натренирована, поэтому вставить сразу два пальца не слишком сложно. Джеки снова кусает губу, когда ты продолжаешь исследовать её анус, пытаясь втиснуть ещё один... но двух пока достаточно.")
 
 		else:
-			saynn("Her ass is not very trained so slipping even a single digit inside proves to be difficult. But after massaging her ring enough, you manage to work your way into her tailhole, making Jacki bite her lip hard.")
+			saynn("Её задница не очень натренирована, поэтому даже один палец просунуть трудно. Но после того как ты хорошенько размял её кольцо, тебе удаётся пробраться в её дырочку, заставляя Джеки сильно прикусить губу.")
 
-		saynn("And just by fingering her butt a little bit, Jacki is already moaning more passionately than before, her stitched-up pussy twitching as you explore her inner walls. Her own paws squeeze her little tits harder.")
+		saynn("Стоит тебе лишь немного поиграть её задницей, как Джеки начинает стонать куда страстнее, чем раньше, а её зашитая киска дёргается, пока ты исследуешь её внутренние стенки. Её собственные лапки сильнее сжимают её маленькие титьки.")
 
-		saynn("[say=jacki]Fuck-k~.. Harder.. I need this so much..[/say]")
+		saynn("[say=jacki]Бля-а-а~.. Сильнее.. Мне это так нужно..[/say]")
 
-		saynn("So needy. You keep lapping her pussy up while your digits slide in and out of her {jackiButt} ass, never letting her star to close up completely. You can feel that she is close.. so you close your teeth around her bell again and tug on her clit, causing Jacki to suddenly arch her back and produce a loud scream of passion.")
+		saynn("Какая же она ненасытная. Ты продолжаешь слизывать её соки, пока твои пальцы входят и выходят из её {jackiButt} ануса, не давая её сфинктеру полностью сомкнуться. Ты чувствуешь, что она на пределе... и снова обхватываешь её клитор зубами, слегка потянув за него, отчего Джеки резко выгибается и издает громкий стон страсти.")
 
-		saynn("[say=jacki]AGH-H!.. ah.. Fuck me-e-e!..[/say]")
+		saynn("[say=jacki]АААГХ-Х!.. ах.. Трахни меня-а-а!..[/say]")
 
-		saynn("Her tortured pussy suddenly showers you with Jacki's girlcum, her anus clenching around your fingers so tightly that it cuts off the blood flow to them for a few seconds.")
+		saynn("Её разгоряченная киска внезапно осыпает тебя фонтаном Джеки, а её анус так сильно сжимается вокруг твоих пальцев, что на несколько секунд перекрывает им кровоток.")
 
-		saynn("[say=jacki]Yeah-h-h~.. That did it.. Fuck I'm such a slut..[/say]")
+		saynn("[say=jacki]Да-а-а~.. Вот это да.. Бля, ну и шлюха же я..[/say]")
 
-		saynn("As you pull away from her crotch, Jacki pulls you in for a little short kiss.")
+		saynn("Когда ты отстраняешься от её промежности, Джеки притягивает тебя к себе для короткого поцелуя.")
 
-		saynn("[say=jacki]Thank you~. I needed that. Wruff.. I will be at my spot..[/say]")
+		saynn("[say=jacki]Спасибо~. Мне это было нужно. Врфф... Я буду на своём месте..[/say]")
 
-		saynn("She pulls her shorts up and quickly runs off.")
+		saynn("Она натягивает шорты и быстро убегает.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "jog_try_piercings_fisting"):
 		playAnimation(StageScene.SexFisting, "tease", {npc="jacki", npcBodyState={exposedCrotch=true}})
-		saynn("Time to switch focus entirely. You put Jacki on all fours and take a spot behind her, your hands already groping and kneading that fluffy butt. A single spank makes Jacki throw her head back and moan.")
+		saynn("Пора полностью сменить фокус. Ты ставишь Джеки на четвереньки и устраиваешься позади неё, уже вовсю ощупывая и разминая её пушистую попку. От одного лишь шлепка Джеки запрокидывает голову и стонет.")
 
-		saynn("[say=jacki]Wrufff~.[/say]")
+		saynn("[say=jacki]Врррфф~.[/say]")
 
-		saynn("Your digits find her {jackiButt} tailhole and begin to gently trace around it. With deliberate care, you start to insert a single digit, avoiding putting too much pressure. When that's in, you also add a second, slowly stretching Jacki's asshole wider inch by inch, sending waves of pleasure through her body.")
+		saynn("Твои пальцы находят её {jackiButt} анальное отверстие и начинают осторожно обводить его контур. С нарочитой тщательностью ты вводишь один палец, стараясь не давить слишком сильно. Когда он оказывается внутри, ты добавляешь второй, медленно растягивая её анус дюйм за дюймом, посылая волны удовольствия по всему её телу.")
 
-		saynn("[say=jacki]More.. harder.. Ruin this asshole~.[/say]")
+		saynn("[say=jacki]Ещё.. сильнее.. Разорви этого козла~.[/say]")
 
-		saynn("So mouthy. You slide in two more digits at once, causing the wolfie to gasp and wag her tail playfully, her anal ring clenching around your intruding fingers. You wiggle your digits inside, trying to fit the last one.. but it proves to be a challenge without some lube. Maybe it's better not to ruin anything yet.")
+		saynn("Какая дерзкая. Ты сразу вставляешь еще два пальца, заставляя волчицу ахнуть и игриво вилять хвостом, а её анус сжимается вокруг твоих бесцеремонных пальцев. Ты шевелишь ими внутри, пытаясь втиснуть последний.. но без смазки это оказывается непростой задачей. Возможно, пока лучше ничего не порвать.")
 
-		saynn("Instead of pushing through, you pull your hand away and collect some of her arousal instead, rubbing it around her ring and coating your digits with it.")
+		saynn("Вместо того чтобы давить, ты убираешь руку и собираешь немного её возбуждения, размазывая его вокруг её кольца и смазывая им свои пальцы.")
 
-		saynn("[say=jacki]Fuck.. I'm so needy..[/say]")
+		saynn("[say=jacki]Блядь.. как же меня всё хочет..[/say]")
 
-		saynn("[say=pc]Because you're a buttslut.[/say]")
+		saynn("[say=pc]Потому что ты — задницелюбная сучка.[/say]")
 
-		saynn("[say=jacki]Wruff~.[/say]")
+		saynn("[say=jacki]Врррфф~.[/say]")
 
-		addButton("Fist", "Insert the whole fist now", "jog_try_piercings_fisting_fist")
+		addButton("Кулак", "Вставить кулак целиком", "jog_try_piercings_fisting_fist")
 	if(state == "jog_try_piercings_fisting_fist"):
 		playAnimation(StageScene.SexFisting, "inside", {npc="jacki", npcBodyState={exposedCrotch=true}})
-		saynn("After lubing your fingers up, you return, quickly stretching her asshole with four before proceeding to add the last one. Jacki lowers her head and moans as you manage to slide the whole palm inside, all your digits completely surrounded by the warm inner walls of her ass.")
+		saynn("Смазав пальцы, ты возвращаешься, быстро растягивая её анус четырьмя пальцами, прежде чем добавить последний. Джеки опускает голову и стонет, когда тебе удается просунуть всю ладонь внутрь, и все твои пальцы оказываются полностью окружены теплыми внутренними стенками её задницы.")
 
-		saynn("[say=jacki]Yes-s-s~.. Stretch my dirty fuckhole..[/say]")
+		saynn("[say=jacki]Да-а-а~.. Растягивай мою грязную дырочку..[/say]")
 
-		saynn("Her body is quivering as it slowly gets used to the size of your hand. You can feel it each time she clenches.. and she clenches a lot, her neglected pussy dripping juices onto the ground.")
+		saynn("Её тело дрожит, пока она медленно привыкает к размеру твоей руки. Ты чувствуешь это каждое мгновение, когда она сжимается.. а сжимается она часто, и её заброшенная киска капает соком прямо на пол.")
 
-		addButton("Thrusts", "Start thrusting your fist in and out", "jog_try_piercings_fisting_thrusts")
+		addButton("Толчки", "Начни входить и выходить кулаком", "jog_try_piercings_fisting_thrusts")
 	if(state == "jog_try_piercings_fisting_thrusts"):
 		playAnimation(StageScene.SexFisting, "sex", {npc="jacki", npcBodyState={exposedCrotch=true}})
-		saynn("You turn your hand into a fist to make it even bigger and begin moving it inside Jacki's ass, causing her body to tighten even more around your wrist, new intense pleasure waves washing over her.")
+		saynn("Ты сжимаешь руку в кулак, чтобы сделать его еще больше, и начинаешь двигать им внутри задницы Джеки; её тело сжимается вокруг твоего запястья еще сильнее, а её накрывают новые волны интенсивного удовольствия.")
 
-		saynn("[say=jacki]Fuck yeah.. I can probably take an entire horsecock..[/say]")
+		saynn("[say=jacki]Да, черт возьми.. Кажется, я смогла бы принять целый лошадиный член..[/say]")
 
-		saynn("[say=pc]I bet you can, whore.[/say]")
+		saynn("[say=pc]Спорим, что смогла бы, шлюха.[/say]")
 
-		saynn("Oh wow, calling her dirty names makes her squirm and clench again. But you push through the resistance of her ass, fisting the wolfie so much she sticks her tongue out and starts to drool.")
+		saynn("Ого, от грязных слов она снова начинает извиваться и сжиматься. Но ты прорываешься сквозь сопротивление её ануса, так глубоко вбивая кулак в волчицу, что она высунула язык и начала пускать слюни.")
 
-		saynn("Her moans quickly become more urgent, her need for any kind of release pushing her body to meet your motions, letting you explore and stretch her out deeply. Judging from her pussy twitching and the frequency of her muscles tensing.. you can tell that she is close.")
+		saynn("Её стоны быстро становятся более настойчивыми; жажда разрядки заставляет её тело подстраиваться под твои движения, позволяя тебе исследовать её и растягивать максимально глубоко. Судя по тому, как подергивается её киска и как часто напрягаются мышцы... можно сказать, что она уже близко.")
 
-		addButton("Faster", "Make that wolfie cum", "jog_try_piercings_fisting_faster")
+		addButton("Быстрее", "Довести волчицу до оргазма", "jog_try_piercings_fisting_faster")
 	if(state == "jog_try_piercings_fisting_faster"):
 		playAnimation(StageScene.SexFisting, "fast", {npc="jacki", npcBodyState={exposedCrotch=true}})
-		saynn("At some point her tailhole gets so stretched, it allows you to ramp up the pace, thrusting your first in and out while the poor wolfie is gripping tightly onto the ground.")
+		saynn("В какой-то момент её анус растягивается настолько, что это позволяет тебе нарастить темп, совершая резкие толчки кулаком туда-сюда, пока бедняжка-волчица мертвой хваткой вцепляется в землю.")
 
-		saynn("[say=jacki]NGhh-hgGh!..[/say]")
+		saynn("[say=jacki]Нгхх-хгГх!..[/say]")
 
-		saynn("Her stiched up pussy is pulsing hard.. before releasing a strong stream of her girlcum. She arches her back as you shove your fist as deep as that ass allows.. which turned out to be extremely deep.")
+		saynn("Её заштопанная киска сильно пульсирует... перед тем как выпустить мощную струю девичьей кончи. Она выгибает спину, когда ты вгоняешь кулак так глубоко, насколько позволяет эта задница... а она оказалась чертовски глубокой.")
 
-		saynn("[say=jacki]I'm s-such a buttslut-t-t-t..[/say]")
+		saynn("[say=jacki]Я т-т-такая жопошлёпка-а-а..[/say]")
 
-		saynn("She is right about that. While she is busy orgasming from her butt, you just grope her rear more with your free hand. As you withdraw your hands, her body is still trembling. Jacki pants heavily as her destroyed asshole is struggling to close fully.")
+		saynn("Она права. Пока она занята оргазмом от заднего прохода, ты продолжаешь тискать её зад свободной рукой. Когда ты убираешь руки, её тело всё ещё дрожит. Джеки тяжело дышит, а её раздолбанный анус никак не может полностью сомкнуться.")
 
-		saynn("[say=pc]You're welcome.[/say]")
+		saynn("[say=pc]Не за что.[/say]")
 
-		saynn("[say=jacki]Thank you-u-u-u.. ah.. wruff-f-f..[/say]")
+		saynn("[say=jacki]Спас-с-сибо.. ах.. рррр-аффф..[/say]")
 
-		saynn("You spank her butt for the last time and get up, leaving her to rest there.")
+		saynn("Ты в последний раз шлёпаешь её по заднице и встаёшь, оставляя её отдыхать.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "jog_breed_fuck"):
 		playAnimation(StageScene.SexAllFours, "tease", {npc="jacki", bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("After you received that key to her piercings, it only makes sense to do this more. You find a secluded spot where you put Jacki on all fours. You pull her shorts down and begin to slowly unlock each padlock that holds her pussy folds together.")
+		saynn("После того как ты получил ключ от её пирсинга, логично делать это чаще. Ты находишь укромное местечко и ставишь Джеки на четвереньки. Ты стягиваешь с неё шорты и начинаешь медленно отпирать каждый навесной замок, который удерживает складки её киски вместе.")
 
-		saynn("[say=jacki]Fuck, I can't wait~.[/say]")
+		saynn("[say=jacki]Блядь, не могу дождаться~.[/say]")
 
-		saynn("After you are finished unlocking her slit, Jacki is already dripping juices onto the ground.")
+		saynn("Когда ты заканчиваешь отпирать её щель, Джеки уже вовсю капает соками на землю.")
 
-		addButton("Fuck", "Start fucking her", "jog_breed_fuck_start")
+		addButton("Блядь", "Начать трахать её", "jog_breed_fuck_start")
 	if(state == "jog_breed_fuck_start"):
 		playAnimation(StageScene.SexAllFours, "sex", {npc="jacki", bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("One of your hands reaches out and pulls on her ponytail while the other one quickly aligns your {pc.penis} with her needy cunt. One rough thrust spreads Jacki's sensitive folds and stretches her pussy hole enough for you to slide inside.")
+		saynn("Одной рукой ты хватаешь её за хвост, а другой быстро пристраиваешь свой {pc.penis} к её жаждущей киске. Один грубый толчок раздвигает чувствительные складки Джеки и растягивает её вход настолько, что ты можешь войти внутрь.")
 
-		saynn("[say=jacki]Nghh-h!..[/say]")
+		saynn("[say=jacki]Нгхх-х!..[/say]")
 
-		saynn("You smack her fluffy ass, making her clench harder while you fuck her.")
+		saynn("Ты шлепаешь её по пушистой заднице, заставляя её сжиматься ещё сильнее, пока ты трахаешь её.")
 
-		saynn("[say=pc]You like having your pussy fucked?[/say]")
+		saynn("[say=pc]Тебе нравится, когда твою киску трахают?[/say]")
 
-		saynn("[say=jacki]Y-yes! Wruff!![/say]")
+		saynn("[say=jacki]Д-да! Вруфф!![/say]")
 
-		saynn("You smack her butt again and pull on her hair more, making Jacki moan.")
+		saynn("Ты снова шлепаешь её по заднице и сильнее тянешь за волосы, заставляя Джеки стонать.")
 
-		saynn("[say=pc]More than your ass?[/say]")
+		saynn("[say=pc]Больше, чем твою жопу?[/say]")
 
-		saynn("[say=jacki]Oh.. Both are nice..[/say]")
+		saynn("[say=jacki]Ох.. И то, и другое приятно..[/say]")
 
-		saynn("Her answer makes you think like she is still a buttslut at heart. You grab her tail near the base with four digits while the big thumb is prodding her {jackiButt} asshole.")
+		saynn("Её ответ наводит на мысль, что в душе она всё ещё задроченная жопошлёпка. Ты обхватываешь её хвост у основания четырьмя пальцами, пока большой палец прощупывает её {jackiButt} анус.")
 
-		addButton("Faster", "Fuck her faster", "jog_breed_fuck_faster")
+		addButton("Быстрее", "Трахать её быстрее", "jog_breed_fuck_faster")
 	if(state == "jog_breed_fuck_faster"):
 		playAnimation(StageScene.SexAllFours, "fast", {npc="jacki", bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("The faster you pound her slutty pussy, the louder she moans. Fingering her tailhole at the same time makes the poor wolfie squirm and shiver, both her holes pulsing.. until she cums.")
+		saynn("Чем быстрее ты долбишь её шлюшью киску, тем громче она стонет. Одновременная стимуляция её анального отверстия заставляет бедную волчицу извиваться и дрожать, а оба её отверстия пульсируют... пока она не кончает.")
 
-		saynn("Jacki arches her back and sticks her tongue out more, her body shuddering, her slick inner walls gripping your shaft.")
+		saynn("Джеки прогибается в спине и еще сильнее высунула язык; ее тело содрогается, а влажные внутренние стенки сжимают твой член.")
 
-		saynn("[say=jacki]Nghh-h! You're fucking my pussy rough![/say]")
+		saynn("[say=jacki]Нгхх-х! Ты так жестко трахаешь мою киску![/say]")
 
-		saynn("The extreme tightness that her slit provides makes you eager to continue thrusting deep inside until your own orgasm begins to draw near..")
+		saynn("Невероятная теснота ее щели заставляет тебя жадно вколачивать член всё глубже и глубже, пока приближается твой собственный оргазм...")
 
-		addButton("Cum inside", "Breed Jacki", "jog_breed_fuck_cuminside")
-		addButton("Pull out", "Pull your cock out just before you cum", "jog_breed_fuck_pullout")
+		addButton("Кончить внутрь", "Оплодотворить Джеки", "jog_breed_fuck_cuminside")
+		addButton("Вытащить", "Вытащить член прямо перед концом", "jog_breed_fuck_pullout")
 	if(state == "jog_breed_fuck_cuminside"):
 		playAnimation(StageScene.SexAllFours, "inside", {npc="jacki", pcCum=true, npcCum=true, bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("You commit to it, shoving your cock as deep as that wolfie's pussy allows, breaking into her womb before cumming inside, your {pc.cum} stuffing her full to the brim. Your hands keep tugging on her hair and tail, making Jacki feel pain too as you breed her.")
+		saynn("Ты решаешься на это и вгоняешь свой член так глубоко, насколько позволяет киска этой волчицы, пробиваясь к самой матке, прежде чем кончить внутрь; твоя {pc.cum} наполняет её до самых краев. Твои руки продолжают тянуть её за волосы и хвост, заставляя Джеки чувствовать боль, пока ты оплодотворяешь её.")
 
-		saynn("[say=jacki]Ngh-h-h! I'm such a whore![/say]")
+		saynn("[say=jacki]Нгх-х-х! Какая же я шлюха![/say]")
 
-		saynn("You both are left panting after that quick fuck. You pull out and let Jacki rest on the ground while her used pussy leaking your seed. You grab the key and begin to close up the padlocks, making her pussy folds look like a very tight slit again.")
+		saynn("После этого быстрого траха вы оба тяжело дышите. Ты выходишь, позволяя Джеки отдохнуть на земле, пока её использованная киска сочится твоим семенем. Ты берешь ключ и начинаешь застегивать замки, отчего складки её киски снова выглядят как очень узкая щель.")
 
-		saynn("Jacki seems to be satisfied. Time to go.")
+		saynn("Похоже, Джеки удовлетворена. Пора идти.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "jog_breed_fuck_pullout"):
 		playAnimation(StageScene.SexAllFours, "tease", {npc="jacki", pcCum=true, bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("You decide against breeding that wolfie and pull out just before your cock starts throbbing and covering that ass with strings of your thick {pc.cum}. One of your hands keep tugging on her hair, making Jacki feel pain too as you mark her.")
+		saynn("Ты решаешь не оплодотворять волчицу и вытаскиваешь член как раз перед тем, как он начинает пульсировать, заливая её задницу струями твоей густой {pc.cum}. Одной рукой ты продолжаешь тянуть её за волосы, заставляя Джеки чувствовать боль, пока ты метишь её.")
 
-		saynn("[say=jacki]Ngh-h-h! I'm such a cum whore![/say]")
+		saynn("[say=jacki]Нгх-х-х! Какая же я конская сучка![/say]")
 
-		saynn("You both are left panting after that quick fuck. Jacki rests on the ground while you begin to close up the padlocks, making her pussy folds look like a very tight slit again.")
+		saynn("Вы оба тяжело дышите после этого быстрого траха. Джеки лежит на земле, пока ты застегиваешь навесные замки, отчего складки её киски снова выглядят как очень узкая щелочка.")
 
-		saynn("Jacki seems to be satisfied. Time to go.")
+		saynn("Похоже, Джеки удовлетворена. Пора идти.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "jog_anal_fuck"):
 		playAnimation(StageScene.SexStanding, "tease", {npc="jacki", bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("No need to ask permission anymore. You're here to take it.")
+		saynn("Больше нет нужды спрашивать разрешения. Ты здесь, чтобы брать своё.")
 
-		saynn("With a firm grasp on Jacki's hair, you pin her against the cold surface of some rock, your other hand already yanking her shorts down and aligning your cock.")
+		saynn("Крепко схватив Джеки за волосы, ты прижимаешь её к холодной поверхности скалы, а другой рукой уже срываешь с неё шорты, наводя свой член на цель.")
 
-		saynn("The bitch's cunt is out of reach. But that doesn't mean she doesn't have any fuckable holes. In fact, her asshole has much more.. potential.. Potential to be stretched and abused.")
+		saynn("Киска этой сучки пока недосягаема. Но это не значит, что у неё нет других дырок, в которые можно вставиться. На самом деле, её анус обладает куда большим... потенциалом... Потенциалом быть растянутым и изнасилованным.")
 
-		saynn("Jacki is whining softly while you keep her muzzle pressed against stone.. and yet her slit is as wet as it can be.")
+		saynn("Джеки тихо скулит, пока ты прижимаешь её мордашку к камню... и всё же её щелочка мокрая как никогда.")
 
-		saynn("[say=jacki]Ngh..[/say]")
+		saynn("[say=jacki]Нгх..[/say]")
 
-		saynn("You growl into her ear as your {pc.penis} is already prodding her {jackiButt} tailhole.")
+		saynn("Ты рычишь ей в ухо, пока твой {pc.penis} уже прощупывает её {jackiButt} анус.")
 
 		if (buttScore <= 1):
-			saynn("[say=pc]Why are you still so tight, slut? We're gonna change that.[/say]")
+			saynn("[say=pc]Почему ты всё ещё такая тугая, шлюха? Мы это исправим.[/say]")
 
-			saynn("Her anus ring is clenched hard, making penetration pretty much impossible. But nothing is impossible with some force. You use some of her pussy juices as lube and start trying to shove your member down that pucker with thrusting motions, making Jacki gasp and squirm under you.")
+			saynn("Кольцо её ануса сильно сжато, что делает проникновение почти невозможным. Но с силой нет ничего невозможного. Ты используешь её же смазку, чтобы начать втискивать свой член в это сфинктерное кольцо резкими толчками, заставляя Джеки ахать и извиваться под тобой.")
 
-			saynn("[say=pc]Stop clenching already.[/say]")
+			saynn("[say=pc]Хватит уже сжиматься![/say]")
 
-			saynn("[say=jacki]You're tearing my asshole.. Ah!.. Fuck~..[/say]")
+			saynn("[say=jacki]Ты разрываешь мою дырку... А!.. Бля~..[/say]")
 
 		elif (buttScore <= 3):
-			saynn("[say=pc]Still so tight. You need your ass pounded more.[/say]")
+			saynn("[say=pc]Всё ещё такая узкая. Тебе нужно, чтобы твою задницу хорошенько оттрахали.[/say]")
 
-			saynn("Her anus ring is clenching hard enough to make penetration pretty tricky. But as you rub some of her pussy juices into her pucker, it relaxes enough for you to start making progress. But Jacki is still squirming under you as you work on stretching on her tailhole.")
+			saynn("Её анус сжимается так сильно, что проникновение даётся с трудом. Но когда ты втираешь её же смазку из киски в сфинктер, мышцы расслабляются достаточно, чтобы ты мог продвигаться дальше. Тем не менее, Джеки всё ещё извивается под тобой, пока ты усердно растягиваешь её дырочку.")
 
-			saynn("[say=pc]Stop clenching already.[/say]")
+			saynn("[say=pc]Хватит уже сжиматься![/say]")
 
-			saynn("[say=jacki]You're tearing my asshole.. Ah!.. Fuck~..[/say]")
+			saynn("[say=jacki]Ты разрываешь мою дырку... А!.. Бля~..[/say]")
 
 		elif (buttScore <= 6):
-			saynn("[say=pc]Oh yeah. You're almost a proper buttslut by now.[/say]")
+			saynn("[say=pc]О да. К этому моменту ты уже почти настоящая жопошлюха.[/say]")
 
-			saynn("After all that training that you did with her butt, her anus ring is now eagerly stretching to accommodate your size. Still, you use some of her pussy juices as lube in order to avoid harming her inner walls too much.. Even if it looks like that's exactly what she wants, Jacki is squirming under you as you work on stretching her out.")
+			saynn("После всех тренировок, которые ты проводил с её задницей, её анус теперь жадно растягивается, чтобы принять твой размер. Тем не менее, ты используешь её же смазку, чтобы не слишком повредить внутренние стенки... И хотя кажется, что она именно этого и хочет, Джеки продолжает извиваться под тобой, пока ты растягиваешь её.")
 
-			saynn("[say=pc]Oh yeah, you love this, don't you.[/say]")
+			saynn("[say=pc]О да, тебе это чертовски нравится, правда?[/say]")
 
-			saynn("[say=jacki]You're tearing my asshole.. Ah!.. Fuck~..[/say]")
+			saynn("[say=jacki]Ты разрываешь мою дырку... А!.. Бля~..[/say]")
 
 		else:
-			saynn("[say=pc]What a buttslut.[/say]")
+			saynn("[say=pc]Ну и жопошлюха.[/say]")
 
-			saynn("Her ass is so trained by now, her anus ring is basically sucking you in. You don't even need to use any lube, the slut's inner walls lube themselves up just from her being horny. Jacki is squirming as you easily stretch her out.")
+			saynn("Её задница настолько натренирована, что анус буквально засасывает тебя внутрь. Тебе даже не нужна смазка — внутренние стенки этой шлюхи увлажняются сами собой от одного лишь возбуждения. Джеки извивается, пока ты с лёгкостью растягиваешь её.")
 
-			saynn("[say=pc]Oh yeah, you love this, don't you.[/say]")
+			saynn("[say=pc]О да, тебе это чертовски нравится, правда?[/say]")
 
-			saynn("[say=jacki]You're tearing my asshole.. Ah!.. Fuck~..[/say]")
+			saynn("[say=jacki]Ты разрываешь мою дырку... А!.. Бля~..[/say]")
 
-		addButton("Ram it in", "Start fucking Jacki", "jog_anal_fuck_inside")
+		addButton("Всаживай на полную", "Трахнуть Джеки", "jog_anal_fuck_inside")
 	if(state == "jog_anal_fuck_inside"):
 		playAnimation(StageScene.SexStanding, "sex", {npc="jacki", bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true}})
 		if (buttScore <= 1):
-			saynn("As you smack her ass, Jacki's tailhole pulses open enough for you to force yourself inside, stretching that ring so wide, the wolfie is producing a cry and scratching the rock in front of her with her claws.")
+			saynn("Когда ты шлепаешь её по заднице, её анус пульсирует и раскрывается достаточно широко, чтобы ты мог войти внутрь, растягивая это кольцо так сильно, что волчица начинает стонать и скрести когтями скалу перед собой.")
 
-			saynn("[say=jacki]Ah!..[/say]")
+			saynn("[say=jacki]Ах!..[/say]")
 
 		elif (buttScore <= 3):
-			saynn("Carefully, you fight through the resistance of Jacki's tight tailhole, forcing yourself inside, slowly but steadily. The wolfie is only moaning and scratching the rock in front of her with her claws as her ring gets stretched wide.")
+			saynn("Осторожно, преодолевая сопротивление тугого ануса Джеки, ты медленно, но верно втискиваешься внутрь. Волчица лишь стонет и скребет когтями скалу перед собой, пока её кольцо растягивается до предела.")
 
-			saynn("[say=jacki]Ah..[/say]")
+			saynn("[say=jacki]Ах...[/say]")
 
 		elif (buttScore <= 6):
-			saynn("Jacki's ass is trained enough so you just put a little more pressure and slide your cock inside down that needy hole. The wolfie is moaning softly, her paws gripping the rock in front of her.")
+			saynn("Задница Джеки достаточно натренирована, так что тебе стоит лишь слегка надавить, и твой член скользит в это жаждущее отверстие. Волчица тихо стонет, вцепившись лапами в скалу перед собой.")
 
-			saynn("[say=jacki]Ah.. nice..[/say]")
+			saynn("[say=jacki]Ах.. хорошо..[/say]")
 
 		else:
-			saynn("Jacki's ass is so trained that you allow yourself to just ram it in, your hips slapping against her fluffy butt as your cock gets plunged deep down that wet needy hole. The wolfie loves it, moaning sluttily and spreading her legs more for you.")
+			saynn("Задница Джеки настолько натренирована, что ты позволяешь себе просто всадить в неё член, твои бедра хлопают по её пушистой попе, пока член глубоко погружается в это влажное, голодное отверстие. Волчице это нравится: она похотливо стонет и раздвигает ноги еще шире для тебя.")
 
-			saynn("[say=jacki]Fuck~..[/say]")
+			saynn("[say=jacki]Бля~..[/say]")
 
-		saynn("You don't wait for her to start begging and already start moving your hips, one of your hands keeps her back pressed against the rock while the second one yanks on her tail to make her meet your thrusts with her ass.")
+		saynn("Ты не ждешь, пока она начнет умолять, и сразу начинаешь двигать бедрами; одной рукой ты прижимаешь её спину к скале, а второй дергаешь её за хвост, заставляя её подставлять задницу под твои толчки.")
 
-		saynn("[say=pc]Such a great fucktoy.[/say]")
+		saynn("[say=pc]Какая же ты охеренная секс-игрушка.[/say]")
 
-		saynn("Your dirty language only makes the needy wolfie produce more noises of eagerness, her neglected pussy dripping juices as you rail her {jackiButt} ass.")
+		saynn("Твои грязные словечки заставляют голодного волчицу издавать всё больше восторженных звуков, а её заброшенная киска течет от возбуждения, пока ты вколачиваешься в её {jackiButt} задницу.")
 
-		saynn("You hold her firmly as your thrusts are growing more powerful. Jacki's slutty moans fill the space, probably causing passing inmates to question what's going on in this little secluded spot.")
+		saynn("Ты крепко держишь её, пока твои толчки становятся всё мощнее. Шлюшкие стоны Джеки заполняют всё пространство, заставляя случайных заключенных гадать, что же происходит в этом укромном уголке.")
 
-		saynn("It doesn't take long for you to start feeling your orgasm approaching you. The way that fuckhole wraps around your dick is just too good. You can't get her pregnant since.. obviously.. but you can still pull out just to make a mess if you want.")
+		saynn("Вскоре ты начинаешь чувствовать приближение оргазма. То, как эта дырка обхватывает твой член, — это просто запредельно. Ты не можешь забеременеть от неё... ну, очевидно... но ты всё ещё можешь кончить внутрь или вытащить вовремя, чтобы устроить настоящий беспорядок.")
 
-		addButton("Cum inside", "Stuff that asshole", "jog_anal_fuck_cuminside")
-		addButton("Pull out", "Make a mess on Jacki's back", "jog_anal_fuck_pullout")
+		addButton("Кончить внутрь", "Набить эту задницу", "jog_anal_fuck_cuminside")
+		addButton("Вытащить", "Устроить беспорядок на спине Джеки", "jog_anal_fuck_pullout")
 	if(state == "jog_anal_fuck_cuminside"):
 		playAnimation(StageScene.SexStanding, "inside", {npc="jacki", pcCum=true, npcCum=true, bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("No reason to pull gives you a good reason to do the opposite. As your powerful thrusts continue, Jacki's body starts to tremble with overwhelming pleasure. She cums just from having her ass railed.. while you cum from her inner walls stimulating your shaft to the point of no return..")
+		saynn("Отсутствие повода не кончить дает тебе отличный повод сделать наоборот. Пока твои мощные толчки продолжаются, тело Джеки начинает дрожать от неистового удовольствия. Она кончает просто от того, что ты трахаешь её в задницу... в то время как ты кончаешь от того, что её внутренние стенки стимулируют твой член до точки невозврата...")
 
-		saynn("[say=jacki]Yes-s!.. Cum inside that whore's ass![/say]")
+		saynn("[say=jacki]Да-а-а!.. Кончай в задницу этой шлюхи![/say]")
 
-		saynn("Your cock throbs as it stuffs her butt full of your sticky seed. Her legs are shaking, just like her tail and arms.")
+		saynn("Твой член пульсирует, наполняя её задницу своим липким семенем. Её ноги дрожат, так же как хвост и лапы.")
 
-		saynn("[say=jacki]Nghh-h!..[/say]")
+		saynn("[say=jacki]Нгхх-х!..[/say]")
 
-		saynn("As your orgasm ends, you pull out, leaving her wrecked ass to gape and leak your {pc.cum} proudly.")
+		saynn("Когда оргазм стихает, ты выходишь, оставляя её раздолбанную задницу широко раскрытой, с гордо вытекающей из неё твоей {pc.cum}.")
 
-		saynn("But luckily her ass is not gonna stay like that forever. Jacki moans as her pulsing star eventually closes up, trapping all your jizz inside.")
+		saynn("Но, к счастью, её задница не будет оставаться такой вечно. Джеки стонет, когда её пульсирующая дырочка постепенно сжимается, удерживая всю твою сперму внутри.")
 
-		saynn("[say=pc]You're welcome.[/say]")
+		saynn("[say=pc]Не за что.[/say]")
 
-		saynn("[say=jacki]Wruff-f-f..[/say]")
+		saynn("[say=jacki]Рррф-ф-ф..[/say]")
 
-		saynn("You leave the slut alone and walk away.")
+		saynn("Ты оставляешь шлюху в покое и уходишь.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "jog_anal_fuck_pullout"):
 		playAnimation(StageScene.SexStanding, "tease", {npc="jacki", pcCum=true, npcCum=true, bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("No reason to pull out.. but you don't need a good reason. As your powerful thrusts continue, Jacki's body starts to tremble with overwhelming pleasure. She cums just from having her ass railed.. while you pull your cock out just before her clenching tailhole brings you over the edge.")
+		saynn("Причин вынимать нет... но они тебе и не нужны. Пока твои мощные толчки продолжаются, тело Джеки начинает дрожать от неистового удовольствия. Она кончает просто от того, что ты трахаешь ей задницу... и ты вынимаешь свой член как раз перед тем, как её сжимающееся анусное отверстие доводит тебя до края.")
 
-		saynn("[say=jacki]Oh fuck-k..[/say]")
+		saynn("[say=jacki]Ох, бля-я-я..[/say]")
 
-		saynn("The wolfie is busy cumming while your {pc.penis} throbs and shoots your sticky seed all over her ass and back, marking her fur with your {pc.cum}.")
+		saynn("Волчица занята оргазмом, пока твой {pc.penis} пульсирует и извергает липкое семя ей на задницу и спину, помечая её мех твоим {pc.cum}.")
 
-		saynn("As your orgasm ends, you just proceed to admire Jacki's pulsing asshole struggling to close up. She is panting heavily.")
+		saynn("Когда оргазм заканчивается, ты просто замираешь, любуясь пульсирующим анусом Джеки, который пытается сомкнуться. Она тяжело дышит.")
 
-		saynn("[say=jacki]You could have.. inside..[/say]")
+		saynn("[say=jacki]Ты мог бы.. внутрь..[/say]")
 
-		saynn("[say=pc]I choose where to cum, slut. Enjoy.[/say]")
+		saynn("[say=pc]Я сама выбираю, куда кончать, шлюха. Наслаждайся.[/say]")
 
-		saynn("[say=jacki]Huff..[/say]")
+		saynn("[say=jacki]Хафф...[/say]")
 
-		saynn("You leave the messy slut alone and walk away.")
+		saynn("Ты оставляешь грязную шлюху в покое и уходишь.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "jog_anal_strapon_pick"):
-		saynn("Pick what strapon you wanna use to rail Jacki's ass.")
+		saynn("Выбери страпон, которым хочешь трахать Джеки в задницу.")
 
 		addStraponButtons()
 		if (false):
-			addButton("Nope", "You shouldn't see this", "jog_anal_strapon")
+			addButton("Неа", "Тебе не стоит этого видеть", "jog_anal_strapon")
 	if(state == "jog_anal_strapon"):
 		playAnimation(StageScene.SexStanding, "tease", {npc="jacki", bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("No need to ask permission anymore. You're here to take it.")
+		saynn("Больше нет нужды спрашивать разрешения. Ты здесь, чтобы брать своё.")
 
-		saynn("You quickly secure a strapon around your waist and then, with a firm grasp on Jacki's hair, you pin her against the cold surface of some rock, your other hand already yanking her shorts down and aligning your rubber toy.")
+		saynn("Ты быстро закрепляешь страпон на талии, а затем, крепко схватив Джеки за волосы, прижимаешь её к холодной поверхности скалы; твоя вторая рука уже стягивает с неё шорты, подготавливая резиновую игрушку к входу.")
 
-		saynn("The bitch's cunt is out of reach. But that doesn't mean she doesn't have any fuckable holes. In fact, her asshole has much more.. potential.. Potential to be stretched and abused.")
+		saynn("Киска этой сучки пока недосягаема. Но это не значит, что у неё нет других дырок, в которые можно вставиться. На самом деле, её анус обладает куда большим... потенциалом... Потенциалом быть растянутым и изнасилованным.")
 
-		saynn("Jacki is whining softly while you keep her muzzle pressed against stone.. and yet her slit is as wet as it can be.")
+		saynn("Джеки тихо скулит, пока ты прижимаешь её мордашку к камню... и всё же её щелочка мокрая как никогда.")
 
-		saynn("[say=jacki]Ngh..[/say]")
+		saynn("[say=jacki]Нгх..[/say]")
 
-		saynn("You growl into her ear as your strapon is already prodding her {jackiButt} tailhole.")
+		saynn("Ты рычишь ей в самое ухо, пока твой страпон уже вовсю тычется в её {jackiButt} анус.")
 
 		if (buttScore <= 1):
-			saynn("[say=pc]Why are you still so tight, slut? We're gonna change that.[/say]")
+			saynn("[say=pc]Почему ты всё ещё такая тугая, шлюха? Мы это исправим.[/say]")
 
-			saynn("Her anus ring is clenched hard, making penetration pretty much impossible. But nothing is impossible with some force. You use some of her pussy juices as lube and start trying to shove your rubber member down that pucker with thrusting motions, making Jacki gasp and squirm under you.")
+			saynn("Её сфинктер сильно сжат, что делает проникновение практически невозможным. Но с силой возможно всё. Ты используешь её же смазку, выделившуюся из киски, и начинаешь пытаться впихнуть свой резиновый член в это узкое отверстие резкими толчками, заставляя Джеки ахать и извиваться под тобой.")
 
-			saynn("[say=pc]Stop clenching already.[/say]")
+			saynn("[say=pc]Хватит уже сжиматься![/say]")
 
-			saynn("[say=jacki]You're tearing my asshole.. Ah!.. Fuck~..[/say]")
+			saynn("[say=jacki]Ты разрываешь мою дырку... А!.. Бля~..[/say]")
 
 		elif (buttScore <= 3):
-			saynn("[say=pc]Still so tight. You need your ass pounded more.[/say]")
+			saynn("[say=pc]Всё ещё такая узкая. Тебе нужно, чтобы твою задницу хорошенько оттрахали.[/say]")
 
-			saynn("Her anus ring is clenching hard enough to make penetration pretty tricky. But as you rub some of her pussy juices into her pucker, it relaxes enough for you to start making progress. But Jacki is still squirming under you as you work on stretching on her tailhole.")
+			saynn("Её анус сжимается так сильно, что проникновение даётся с трудом. Но когда ты втираешь её же смазку из киски в сфинктер, мышцы расслабляются достаточно, чтобы ты мог продвигаться дальше. Тем не менее, Джеки всё ещё извивается под тобой, пока ты усердно растягиваешь её дырочку.")
 
-			saynn("[say=pc]Stop clenching already.[/say]")
+			saynn("[say=pc]Хватит уже сжиматься![/say]")
 
-			saynn("[say=jacki]You're tearing my asshole.. Ah!.. Fuck~..[/say]")
+			saynn("[say=jacki]Ты разрываешь мою дырку... А!.. Бля~..[/say]")
 
 		elif (buttScore <= 6):
-			saynn("[say=pc]Oh yeah. You're almost a proper buttslut by now.[/say]")
+			saynn("[say=pc]О да. К этому моменту ты уже почти настоящая жопошлюха.[/say]")
 
-			saynn("After all that training that you did with her butt, her anus ring is now eagerly stretching to accommodate the size of your toy. Still, you use some of her pussy juices as lube in order to avoid harming her inner walls too much.. Even if it looks like that's exactly what she wants, Jacki is squirming under you as you work on stretching her out.")
+			saynn("После всех тех тренировок её задницы, её анус теперь жадно растягивается, стараясь принять размер твоей игрушки. Тем не менее, ты всё равно используешь её смазку, чтобы не слишком повредить внутренние стенки... И хотя кажется, что она именно этого и хочет, Джеки продолжает ерзать под тобой, пока ты усердно растягиваешь её.")
 
-			saynn("[say=pc]Oh yeah, you love this, don't you.[/say]")
+			saynn("[say=pc]О да, тебе это чертовски нравится, правда?[/say]")
 
-			saynn("[say=jacki]You're tearing my asshole.. Ah!.. Fuck~..[/say]")
+			saynn("[say=jacki]Ты разрываешь мою дырку... А!.. Бля~..[/say]")
 
 		else:
-			saynn("[say=pc]What a buttslut.[/say]")
+			saynn("[say=pc]Ну и жопошлюха.[/say]")
 
-			saynn("Her ass is so trained by now, her anus ring is basically sucking your strapon in. You don't even need to use any lube, the slut's inner walls lube themselves up just from her being horny. Jacki is squirming as you easily stretch her out.")
+			saynn("Её задница уже настолько натренирована, что анус буквально засасывает твой страпон внутрь. Тебе даже не нужна смазка — внутренние стенки этой шлюхи увлажняются сами собой от одного лишь возбуждения. Джеки извивается, пока ты с лёгкостью растягиваешь её.")
 
-			saynn("[say=pc]Oh yeah, you love this, don't you.[/say]")
+			saynn("[say=pc]О да, тебе это чертовски нравится, правда?[/say]")
 
-			saynn("[say=jacki]You're tearing my asshole.. Ah!.. Fuck~..[/say]")
+			saynn("[say=jacki]Ты разрываешь мою дырку... А!.. Бля~..[/say]")
 
-		addButton("Ram it in", "Start fucking Jacki", "jog_anal_strapon_inside")
+		addButton("Всаживай на полную", "Трахнуть Джеки", "jog_anal_strapon_inside")
 	if(state == "jog_anal_strapon_inside"):
 		playAnimation(StageScene.SexStanding, "sex", {npc="jacki", bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true}})
 		if (buttScore <= 1):
-			saynn("As you smack her ass, Jacki's tailhole pulses open enough for you to force yourself inside, stretching that ring so wide, the wolfie is producing a cry and scratching the rock in front of her with her claws.")
+			saynn("Когда ты шлепаешь её по заднице, её анус пульсирует и раскрывается достаточно широко, чтобы ты мог войти внутрь, растягивая это кольцо так сильно, что волчица начинает стонать и скрести когтями скалу перед собой.")
 
-			saynn("[say=jacki]Ah!..[/say]")
+			saynn("[say=jacki]Ах!..[/say]")
 
 		elif (buttScore <= 3):
-			saynn("Carefully, you fight through the resistance of Jacki's tight tailhole, forcing yourself inside, slowly but steadily. The wolfie is only moaning and scratching the rock in front of her with her claws as her ring gets stretched wide.")
+			saynn("Осторожно, преодолевая сопротивление тугого ануса Джеки, ты медленно, но верно втискиваешься внутрь. Волчица лишь стонет и скребет когтями скалу перед собой, пока её кольцо растягивается до предела.")
 
-			saynn("[say=jacki]Ah..[/say]")
+			saynn("[say=jacki]Ах...[/say]")
 
 		elif (buttScore <= 6):
-			saynn("Jacki's ass is trained enough so you just put a little more pressure and slide your rubber cock inside down that needy hole. The wolfie is moaning softly, her paws gripping the rock in front of her.")
+			saynn("Задница Джеки уже достаточно натренирована, так что ты просто чуть сильнее надавливаешь и вгоняешь свой резиновый член в это прожорливое отверстие. Волчица тихо стонет, вцепившись лапами в скалу перед собой.")
 
-			saynn("[say=jacki]Ah.. nice..[/say]")
+			saynn("[say=jacki]Ах.. хорошо..[/say]")
 
 		else:
-			saynn("Jacki's ass is so trained that you allow yourself to just ram it in, your hips slapping against her fluffy butt as your rubber cock gets plunged deep down that wet needy hole. The wolfie loves it, moaning sluttily and spreading her legs more for you.")
+			saynn("За попа Джекки так натренирована, что ты позволяешь себе просто вколачивать в неё член; твои бёдра хлопают по её пушистой заднице, пока твой резиновый член глубоко погружается в это мокрое, жаждущее отверстие. Волчица в восторге: она похотливо стонет и раздвигает ноги ещё шире, подставляясь под тебя.")
 
-			saynn("[say=jacki]Fuck~..[/say]")
+			saynn("[say=jacki]Бля~..[/say]")
 
-		saynn("You don't wait for her to start begging and already start moving your hips, one of your hands keeps her back pressed against the rock while the second one yanks on her tail to make her meet your thrusts with her ass.")
+		saynn("Ты не ждешь, пока она начнет умолять, и сразу начинаешь двигать бедрами; одной рукой ты прижимаешь её спину к скале, а второй дергаешь её за хвост, заставляя её подставлять задницу под твои толчки.")
 
-		saynn("[say=pc]Such a great fucktoy.[/say]")
+		saynn("[say=pc]Какая же ты охеренная секс-игрушка.[/say]")
 
-		saynn("Your dirty language only makes the needy wolfie produce more noises of eagerness, her neglected pussy dripping juices as you rail her {jackiButt} ass.")
+		saynn("Твои грязные словечки заставляют голодного волчицу издавать всё больше восторженных звуков, а её заброшенная киска течет от возбуждения, пока ты вколачиваешься в её {jackiButt} задницу.")
 
-		saynn("You hold her firmly as your thrusts are growing more powerful. Jacki's slutty moans fill the space, probably causing passing inmates to question what's going on in this little secluded spot.")
+		saynn("Ты крепко держишь её, пока твои толчки становятся всё мощнее. Шлюшкие стоны Джеки заполняют всё пространство, заставляя случайных заключенных гадать, что же происходит в этом укромном уголке.")
 
-		saynn("You don't really feel much stimulation from the strapon other than it pressing on your crotch. But you can sure feel the friction increasing as Jacki's hungry ass is wrapping around your toy tightly. It looks like she is about to cum.")
+		saynn("От страпона ты не чувствуешь особого возбуждения, кроме давления на промежность. Но ты определённо ощущаешь, как усиливается трение, когда голодная задница Джекки плотно обхватывает твою игрушку. Похоже, она вот-вот кончит.")
 
-		addButton("Make her cum", "Stuff that asshole", "jog_anal_strapon_cum")
+		addButton("Довести её до оргазма", "Набить эту задницу", "jog_anal_strapon_cum")
 	if(state == "jog_anal_strapon_cum"):
 		playAnimation(StageScene.SexStanding, "inside", {npc="jacki", pcCum=true, npcCum=true, bodyState={exposedCrotch=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("No reason to pull gives you a good reason to do the opposite. As your powerful thrusts continue, Jacki's body starts to tremble with overwhelming pleasure. She cums just from having her ass railed..")
+		saynn("Если нет причин выходить, то есть отличный повод делать наоборот. Пока твои мощные толчки продолжаются, тело Джекки начинает дрожать от невыносимого удовольствия. Она кончает просто от того, что ты трахаешь её в задницу...")
 
-		saynn("[say=jacki]Yes-s!.. Cum inside that whore's ass![/say]")
+		saynn("[say=jacki]Да-а-а!.. Кончай в задницу этой шлюхи![/say]")
 
-		saynn("All the buttfucking seems to be messing with her mind. Her legs are shaking, just like her tail and arms.")
+		saynn("Похоже, этот анус-трах окончательно сводит её с ума. Её ноги дрожат так же сильно, как хвост и руки.")
 
-		saynn("[say=jacki]Nghh-h!..[/say]")
+		saynn("[say=jacki]Нгхх-х!..[/say]")
 
-		saynn("As her orgasm ends, you pull out, leaving her wrecked ass to gape..")
+		saynn("Когда её оргазм затихает, ты выходишь, оставляя её задницу развороченной и зияющей...")
 
-		saynn("But luckily her ass is not gonna stay like that forever. Jacki moans as her pulsing star eventually closes up.")
+		saynn("Но, к счастью, её задница не останется такой навсегда. Джекки стонет, когда её пульсирующее отверстие постепенно смыкается.")
 
-		saynn("[say=pc]You're welcome.[/say]")
+		saynn("[say=pc]Не за что.[/say]")
 
-		saynn("[say=jacki]Wruff-f-f..[/say]")
+		saynn("[say=jacki]Рррф-ф-ф..[/say]")
 
-		saynn("You leave the slut alone and walk away.")
+		saynn("Ты оставляешь шлюху в покое и уходишь.")
 
-		addButton("Continue", "See what happens next", "endthescene_unequpstrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_unequpstrapon")
 	if(state == "jog_sounding"):
 		playAnimation(StageScene.Duo, "stand", {npc="jacki"})
 		if (soundScore <= 0):
-			saynn("Jacki's pussy has those piercings in it that hold it shut.. but you wonder if you can still reach one of her little holes.. her urethra in particular.")
+			saynn("В киске Джекки есть пирсинг, который удерживает её закрытой... но ты гадаешь, сможешь ли ты всё же добраться до одного из её маленьких отверстий... в частности, до мочеиспускательного канала.")
 
-			saynn("[say=pc]Have you heard of sounding?[/say]")
+			saynn("[say=pc]Ты когда-нибудь слышал о зондировании?[/say]")
 
-			saynn("[say=jacki]The what?[/say]")
+			saynn("[say=jacki]О чём?[/say]")
 
-			saynn("Huh. Jacki has absolutely zero experience in this.. So you might have to start slow.")
+			saynn("Хм. У Джекки абсолютно нулевой опыт в этом деле... Так что, возможно, тебе придётся начать медленно.")
 
-			saynn("[say=pc]Would you be interested in that?[/say]")
+			saynn("[say=pc]Тебя бы это заинтересовало?[/say]")
 
-			saynn("[say=jacki]Anything that can make this feeling go away..[/say]")
+			saynn("[say=jacki]Всё, что поможет избавиться от этого чувства...[/say]")
 
-			addButton("Sounding intro", "Introduce Jacki to sounding", "jog_sounding_intro")
+			addButton("Вступительный звук", "Знакомство Джеки с зондированием", "jog_sounding_intro")
 		elif (soundScore <= 2):
-			saynn("Jacki has some sounding experience.. but not that much yet. Gives you a good reason to train her urethra a little.")
+			saynn("У Джеки есть небольшой опыт зондирования... но пока не очень большой. Это дает отличный повод немного потренировать её уретру.")
 
-			saynn("[say=pc]Let's do some sounding.[/say]")
+			saynn("[say=pc]Давай займемся зондированием.[/say]")
 
-			saynn("[say=jacki]Oh?[/say]")
+			saynn("[say=jacki]О?[/say]")
 
 		elif (soundScore <= 5):
-			saynn("Jacki is getting quite experienced in sounding. This might be a good opportunity to test her limits and play with her urethra.")
+			saynn("Джеки становится довольно опытной в зондировании. Это может быть хорошей возможностью проверить её пределы и поиграть с её уретрой.")
 
-			saynn("[say=pc]Let's do some sounding.[/say]")
+			saynn("[say=pc]Давай займемся зондированием.[/say]")
 
-			saynn("[say=jacki]Oh, you're gonna stretch out my little hole~?[/say]")
+			saynn("[say=jacki]Ох, ты собираешься растянуть мою дырочку~?[/say]")
 
-			saynn("She seems to be liking that idea.")
+			saynn("Похоже, эта идея ей по душе.")
 
 		else:
-			saynn("Jacki is probably a total slut for sounding by now. As soon as you say..")
+			saynn("Джеки, похоже, уже окончательно превратилась в настоящую шлюху, раз так жаждет звуков. Стоит тебе только сказать...")
 
-			saynn("[say=pc]Let's do some..[/say]")
+			saynn("[say=pc]Давай устроим немного..[/say]")
 
-			saynn("She already cuts you off with..")
+			saynn("Она тут же перебивает тебя:")
 
-			saynn("[say=jacki]OH! You're gonna fuck my little pisshole~? Stretch it wide and deep~?[/say]")
+			saynn("[say=jacki]ОХ! Ты собираешься трахнуть мой крошечный писхоул~? Растяни его широко и глубоко~?[/say]")
 
-			saynn("The wolfie can't live without sounding anymore it seems.")
+			saynn("Похоже, эта волчица больше не может жить без стонов.")
 
 		if (soundScore >= 1):
-			addButton("Dildo", "Play with the toy in her urethra", "jog_sounding_dildo")
+			addButton("Дилдо", "Поиграть с игрушкой в её уретре", "jog_sounding_dildo")
 			if (soundScore >= 3):
-				addButton("Finger", "Try to use a finger instead", "jog_sounding_finger")
+				addButton("Пальцем", "Попробовать использовать палец вместо этого", "jog_sounding_finger")
 			else:
-				addDisabledButton("Finger", "Jacki is not ready for this yet")
-		addButton("Never mind", "You changed your mind", "endthescene")
+				addDisabledButton("Пальцем", "Джеки ещё не готова к этому")
+		addButton("Проехали", "Вы передумали", "endthescene")
 	if(state == "jog_sounding_intro"):
 		playAnimation(StageScene.GivingBirth, "idle", {pc="jacki", bodyState={exposedCrotch=true}})
-		saynn("You and Jacki find a secluded spot behind some tall bushes. You think about it a bit and realize that a blindfold might help to keep the wolfie calm.")
+		saynn("Вы с Джеки находите укромное местечко за высокими кустами. Немного подумав, ты понимаешь, что повязка на глазах поможет утихомирить волчицу.")
 
-		saynn("[say=pc]I'm gonna blindfold you, alright?[/say]")
+		saynn("[say=pc]Я завяжу тебе глаза, ладно?[/say]")
 
-		saynn("[say=jacki]Um.. sure.[/say]")
+		saynn("[say=jacki]Ммм... давай.[/say]")
 
-		saynn("She didn't even ask why. But you feel like you should explain anyway.")
+		saynn("Она даже не спросила «зачем». Но тебе кажется, что стоит всё же объясниться.")
 
-		saynn("[say=pc]I want you to focus on how it will feel, not how it will look.[/say]")
+		saynn("[say=pc]Я хочу, чтобы ты сосредоточилась на ощущениях, а не на том, как всё выглядит.[/say]")
 
-		saynn("Jacki nods, allowing you to tie a little piece of cloth around her eyes. Then you help her to get down on some stone tiles before pulling her shorts down. The first thing that you see is her red bush of pubic hair that she clearly keeps untrimmed.")
+		saynn("Джеки кивает, позволяя тебе повязать на её глазах небольшой лоскут ткани. Затем ты помогаешь ей опуститься на каменную плитку и стягиваешь с неё шорты. Первое, что ты видишь — её густой рыжий кустик волос, который она явно не стрижёт.")
 
-		saynn("[say=pc]You're not shaving, wolfie?[/say]")
+		saynn("[say=pc]Ты что, не бреешься, волчица?[/say]")
 
-		saynn("[say=jacki]I've given up, piercings make it too hard.. but I kinda like the look now. Fits the whole.. useless cunt thing..[/say]")
+		saynn("[say=jacki]Я забила... из-за пирсинга это слишком сложно... но сейчас мне вроде даже нравится такой вид. Подходит под образ... бесполезной пизды...[/say]")
 
-		saynn("Looks like she is slowly getting used to that. But that's besides the point. You spread Jacki's legs more, uncovering the moist stitched up slit. As you caress Jacki's inner sides of her thighs, she starts to wiggle a little, her breath getting deeper.")
+		saynn("Похоже, она понемногу к этому привыкает. Но сейчас не до того. Ты раздвигаешь ноги Джеки шире, обнажая влажную, зашитую щель. Пока ты ласкаешь внутреннюю сторону её бёдер, она начинает слегка ерзать, а её дыхание становится глубже.")
 
-		saynn("[say=pc]I'm gonna start touching.[/say]")
+		saynn("[say=pc]Сейчас я начну трогать.[/say]")
 
-		saynn("[say=jacki]Wruff..[/say]")
+		saynn("[say=jacki]Вруфф...[/say]")
 
-		saynn("She is probably still confused about what sounding even is. Your digits land on her folds and gently part her labia as much as the metal rings allow.. which is not very much. Still, your action reveals her urethral opening.. that still seems to have a little rod stuck in it. A rod that is attached by a little chain to her clit ring. Touching it makes the wolfie squirm more.")
+		saynn("Она, вероятно, всё ещё не до конца понимает, что такое саундинг. Твои пальцы ложатся на её складки и осторожно раздвигают половые губы настолько, насколько позволяют металлические кольца... то есть, не особо сильно. Тем не менее, твоё действие обнажает её мочеиспускательное отверстие... в котором, похоже, всё ещё торчит небольшой стержень. Стержень, прикреплённый маленькой цепочкой к кольцу на клиторе. От прикосновения к нему волчица начинает ерзать ещё сильнее.")
 
-		saynn("[say=pc]You are still wearing it in your urethra?[/say]")
+		saynn("[say=pc]Ты всё ещё носишь его в уретре?[/say]")
 
-		saynn("[say=jacki]Um.. I can't throw it out because it's connected.. but it also makes too much noise when left out to dangle.. So.. yeah. Why?[/say]")
+		saynn("[say=jacki]Эм... я не могу его выкинуть, потому что он присоединён... но он ещё и слишком сильно звенит, когда просто болтается... Так что... да. А что?[/say]")
 
-		saynn("So Jacki does have experience. She just doesn't know it yet.")
+		saynn("Значит, у Джеки всё-таки есть опыт. Она просто сама об этом ещё не знает.")
 
-		addButton("Rod", "Focus on it", "jog_sounding_intro_rod")
+		addButton("Стержень", "Сосредоточиться на нём", "jog_sounding_intro_rod")
 	if(state == "jog_sounding_intro_rod"):
 		playAnimation(StageScene.GivingBirth, "birth", {pc="jacki", bodyState={exposedCrotch=true}})
-		saynn("Without saying anything, you grab onto that little chain.. and begin to tug on it, gently pulling the rod out. Jacki is quick to whine.")
+		saynn("Ничего не говоря, ты хватаешься за эту маленькую цепочку... и начинаешь тянуть, осторожно вытягивая стержень. Джеки тут же начинает скулить.")
 
-		saynn("[say=jacki]Nhh!.. My.. hole.[/say]")
+		saynn("[say=jacki]Нхх!.. Моё... отверстие.[/say]")
 
-		saynn("Obviously what you're doing is quite dangerous.. so you are taking it very slow.")
+		saynn("Очевидно, что то, что ты делаешь, довольно опасно... поэтому ты действуешь очень медленно.")
 
-		saynn("[say=pc]Tell me if it hurts too much.[/say]")
+		saynn("[say=pc]Скажи, если будет слишком больно.[/say]")
 
-		saynn("[say=jacki]It's.. I can certainly feel it.. moving inside.[/say]")
+		saynn("[say=jacki]Оно... я определенно чувствую, как оно... шевелится внутри.[/say]")
 
-		saynn("Plop. As you pull it out completely, you realize that the rod has the shape of a small canine dildo. It's small, smaller than your pinky finger even.. but still has a little knot at its base. Jacki is certainly quite kinky if she pulls it out each time she needs to pee.")
+		saynn("Шлеп. Когда ты вытаскиваешь его полностью, ты понимаешь, что стержень по форме напоминает маленький собачий дилдо. Он крошечный, даже меньше твоего мизинца... но у него все равно есть небольшое утолщение у основания. Джеки определенно любит поизвращаться, если она достает его каждый раз, когда ей хочется пописать.")
 
-		saynn("[say=jacki]So what are you gonna..[/say]")
+		saynn("[say=jacki]Так что ты собираешься...[/say]")
 
-		saynn("You cut her off by aligning the little dildo with her urethra again and proceeding to prod her sensitive spot.")
+		saynn("Ты прерываешь её, снова совмещая маленький дилдо с её уретрой и начиная тыкать в её чувствительную точку.")
 
-		saynn("[say=jacki]Ah..[/say]")
+		saynn("[say=jacki]Ах...[/say]")
 
-		saynn("There is no rush, you take your time, massaging the entering with the pointy tip.. until the little hole allows it inside. Such a simple action.. and yet it makes Jacki's toes curl, her paws holding onto the stone tiles tightly.")
+		saynn("Спешить некуда, ты не торопишься, массируя вход острым кончиком... пока маленькое отверстие не позволит ему войти внутрь. Такое простое действие... и все же от него пальцы ног Джеки сводит судорогой, а лапки крепко вцепляются в каменную плитку.")
 
-		saynn("With small deliberate pushes, you slide that dildo deeper within Jacki's urethra. Being unable to see makes her focus on the tactile sensations more.")
+		saynn("Небольшими, расчетливыми толчками ты проталкиваешь дилдо глубже в уретру Джеки. Из-за того, что она ничего не видит, она сильнее концентрируется на тактильных ощущениях.")
 
-		saynn("Slowly, you slide inside almost the full length.. apart from the knot. But with a little extra pressure, it slips inside too, causing Jacki to arch her back a little in the process.")
+		saynn("Медленно ты вводишь его почти на всю длину... за исключением утолщения. Но с небольшим дополнительным нажимом оно проскальзывает внутрь, заставляя Джеки в этот момент слегка выгнуться в спине.")
 
-		saynn("[say=jacki]Aw fuck~.. Feels so different when someone else does it..[/say]")
+		saynn("[say=jacki]Ах, бля~~... совсем другие ощущения, когда это делает кто-то другой...[/say]")
 
-		saynn("You continue, slowly withdrawing the toy before working it back inside, each motion sending waves of weird sensations through Jacki's body.. but not the unpleasant kind. Her moans and desperate whimpers fill the space..")
+		saynn("Ты продолжаешь: медленно вытаскиваешь игрушку, а затем снова вводишь её; каждое движение посылает волны странных ощущений по телу Джеки... но не неприятных. Её стоны и отчаянные всхлипы заполняют пространство...")
 
-		saynn("[say=jacki]Please.. harder.. I so wanna..[/say]")
+		saynn("[say=jacki]Пожалуйста... сильнее... я так хочу...[/say]")
 
-		saynn("Despite what she says, you can already notice the skin becoming red near her urethra.. so you slide the little dildo fully inside and call it there.")
+		saynn("Несмотря на её слова, уже заметно, что кожа возле уретры краснеет... так что ты задвигаешь маленький дилдо до самого конца и замираешь.")
 
-		saynn("[say=pc]Not today.[/say]")
+		saynn("[say=pc]Не сегодня.[/say]")
 
-		saynn("[say=jacki]Aw..[/say]")
+		saynn("[say=jacki]Ах..[/say]")
 
-		saynn("You pat the wolfie and help her to get up, your hands untying her blindfold.")
+		saynn("Ты похлопываешь волчицу по боку и помогаешь ей подняться, развязывая руками её повязку на глазах.")
 
-		addButton("Continue", "See what happens next", "endthescene_freejackieyes")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_freejackieyes")
 	if(state == "jog_sounding_dildo"):
 		playAnimation(StageScene.GivingBirth, "idle", {pc="jacki", bodyState={exposedCrotch=true}})
-		saynn("You and Jacki find a secluded place behind some tall bushes and prepare yourself for this. Jacki pulls her shorts down and spreads her legs for you, exposing her wet pussy slit that is forced closed with some unremovable chastity piercings.")
+		saynn("Вы с Джеки находите укромное местечко за высокими кустами и готовитесь к делу. Джеки спускает шорты и раздвигает ноги, обнажая влажную щель, которую плотно сжимают несъемные пирсинги целомудрия.")
 
-		saynn("[say=pc]So eager.[/say]")
+		saynn("[say=pc]Такая нетерпеливая.[/say]")
 
-		saynn("[say=jacki]Here.. I'm usually using this.[/say]")
+		saynn("[say=jacki]Вот.. Обычно я использую это.[/say]")
 
-		saynn("She hands you a little tube of water-based lube. Huh. That will certainly help. You take a spot between her legs and use your digits to carefully spread Jacki's labia as much as her piercings allow, exposing the little plugged urethra.")
+		saynn("Она протягивает тебе тюбик лубриканта на водной основе. Хм. Это точно поможет. Ты устраиваешься между её ног и осторожно раздвигаешь пальцами половые губы Джеки настолько, насколько позволяют пирсинги, обнажая маленькое отверстие уретры.")
 
-		saynn("You carefully pull that dildo-shaped sounding rod out and apply some lube to it. The wolfie watches intently, her anticipation growing with each passing moment.. just like the wetness of her pussy.")
+		saynn("Ты аккуратно вынимаешь зонд в форме дилдо и смазываешь его лубрикантом. Волчица пристально наблюдает, и её предвкушение растет с каждым мгновением... так же, как и влажность её киски.")
 
-		addButton("Continue", "See what happens next", "jog_sounding_dildo_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "jog_sounding_dildo_cum")
 	if(state == "jog_sounding_dildo_cum"):
 		playAnimation(StageScene.GivingBirth, "birth", {pc="jacki", bodyState={exposedCrotch=true}})
 		if (soundScore <= 1):
-			saynn("Jacki's little hole is still quite tight so sliding the toy in it takes some patience. You start off slow, working in just the pointy tip at first, before proceeding to slide it deeper and deeper.")
+			saynn("Дырочка Джеки всё еще довольно тугая, поэтому введение игрушки требует терпения. Ты начинаешь медленно, сначала вводя лишь острый кончик, а затем проталкивая его всё глубже и глубже.")
 
 		elif (soundScore <= 3):
-			saynn("Jacki's little needy hole is a bit trained by now, allowing you to slide the dildo-shaped rod inside with relative ease. Still, this hole wasn't really designed to be stretched so stretching it will take some time.")
+			saynn("Маленькое ненасытное отверстие Джеки уже немного натренировано, что позволяет тебе с относительной легкостью вводить стержень в форме дилдо. Тем не менее, это отверстие изначально не предназначалось для таких растяжений, так что процесс займет некоторое время.")
 
 		else:
 
-			saynn("Jacki's little needy pisshole is quite stretchy by now so sliding the dildo-shaped rod inside was quite easy, her urethra is just begging to be stretched wide.")
+			saynn("Маленькое ненасытное мочеиспускательное отверстие Джеки к этому моменту стало довольно эластичным, поэтому вводить стержень в форме дилдо было довольно легко; её уретра буквально умоляет о том, чтобы её растянули пошире.")
 
-		saynn("Jacki's body welcomes the intrusion, she lets out a cute moan, her breath becomes deep as you slide the toy further inside her.")
+		saynn("Тело Джеки приветствует вторжение; она издает милый стон, а её дыхание становится глубоким, пока ты проталкиваешь игрушку всё глубже внутрь.")
 
-		saynn("[say=jacki]Yeah~.[/say]")
+		saynn("[say=jacki]Даа~..[/say]")
 
-		saynn("You begin to fuck her urethra with the little dildo, creating a rhythm that stimulates her in the most unusual way. Jacki's hips are rocking in time with your actions, the sensations are causing her to start moaning again and again.")
+		saynn("Ты начинаешь трахать её уретру маленьким дилдо, задавая ритм, который стимулирует её самым необычным образом. Бедра Джеки покачиваются в такт твоим движениям, а от ощущений она начинает стонать снова и снова.")
 
 		if (lust > 0.9):
-			saynn("[say=jacki]Ah~.. Keep doing it.. keep fucking the hole that was never supposed to be fucked~.[/say]")
+			saynn("[say=jacki]Ах~.. Продолжай.. продолжай трахать это отверстие, которое вообще-то не должно было быть для этого предназначено~.[/say]")
 
 		else:
-			saynn("[say=jacki]Ah.. Feels so good..[/say]")
+			saynn("[say=jacki]Ах.. Как же хорошо..[/say]")
 
-		saynn("Her pussy twitches more and more, her muscles tensing up as you keep pleasuring her.. arguably wrong.. hole. And yet, she is actively squirming while her orgasm is approaching her, building like a tidal wave..")
+		saynn("Её киска всё сильнее подергивается, мышцы напрягаются, пока ты продолжаешь доставлять ей удовольствие... в это, пожалуй, «неправильное» отверстие. И всё же она активно извивается, пока оргазм приближается к ней, накрывая словно приливной волной...")
 
-		saynn("[say=jacki]Fuck-k~..[/say]")
+		saynn("[say=jacki]Бля-а-а~..[/say]")
 
-		saynn("As the climax crashes over Jacki, her body starts shaking from the immense pleasure. You use this moment to slide the full length of the toy inside, including the little knot, and holding it there. Getting so deeply stimulated makes Jacki throw her head back and grab onto the ground tightly, her urethra pulsating, probably trying to squirt something out.. but the dildo prevents it.")
+		saynn("Когда на Джеки обрушивается оргазм, её тело начинает дрожать от невероятного наслаждения. Ты пользуешься этим моментом, чтобы загнать игрушку целиком, включая маленький узел, и зафиксировать её внутри. От такой глубокой стимуляции Джеки запрокидывает голову и крепко вцепляется в землю; её уретра пульсирует, словно пытаясь вытолкнуть струю... но дилдо преграждает ей путь.")
 
-		saynn("[say=pc]Good girl.[/say]")
+		saynn("[say=pc]Хорошая девочка.[/say]")
 
-		saynn("When Jacki finally comes down from her orgasmic high, you offer her some headpats")
+		saynn("Когда Джеки наконец выходит из экстаза, ты ласково гладишь её по голове.")
 
-		saynn("[say=jacki]Wruff-f-f.. Thank you-u-u..[/say]")
+		saynn("[say=jacki]Врррфф.. Спасибо-о-о..[/say]")
 
-		saynn("And just like that, you leave the wolfie alone to rest and come back to senses.")
+		saynn("И вот так просто ты оставляешь волчицу отдыхать и приходить в себя.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "jog_sounding_finger"):
 		playAnimation(StageScene.GivingBirth, "idle", {pc="jacki", bodyState={exposedCrotch=true}})
-		saynn("Jacki's urethra is quite trained by now, allowing you to try something more.. kinky.")
+		saynn("Уретра Джеки уже достаточно натренирована, что позволяет тебе попробовать что-нибудь более.. пошленькое.")
 
-		saynn("You bring her into a secluded place and position her on the ground. Jacki pulls her shorts down and spreads her legs for you, exposing her bush and the stitched-up pussy slit. You spread her folds as much as the piercings allow and carefully withdraw the canine cock-shaped sounding rod out of her pisshole and let it dangle on its chain.")
+		saynn("Ты приводишь её в уединённое место и укладываешь на землю. Джеки стягивает шорты и раздвигает ноги, обнажая пушок и зашитую щель киски. Ты раздвигаешь её складки настолько широко, насколько позволяют пирсинги, и осторожно вынимаешь из мочеиспускательного канала зонд в форме собачьего члена, позволяя ему болтаться на цепочке.")
 
-		saynn("[say=jacki]Wruff?[/say]")
+		saynn("[say=jacki]Вррфф?[/say]")
 
-		saynn("No need for lube when the wolfie is so needy. You gather some of her arousal onto your digits and begin rubbing her little hole, trying to insert your index finger. It's way bigger than that toy that was in there so Jacki is suddenly squirming a lot.")
+		saynn("Когда волчица так жаждет близости, смазка ни к чему. Ты собираешь немного её возбуждения на пальцах и начинаешь тереть её маленькое отверстие, пытаясь вставить указательный палец. Он куда больше той игрушки, что была внутри, поэтому Джеки внезапно начинает сильно ерзать.")
 
-		saynn("[say=jacki]Nh-h.. kinky.. Yeah.. keep stretching it..[/say]")
+		saynn("[say=jacki]Нх-х.. пошло.. Да.. продолжай растягивать её..[/say]")
 
-		addButton("Continue", "See what happens next", "jog_sounding_finger_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "jog_sounding_finger_cum")
 	if(state == "jog_sounding_finger_cum"):
 		playAnimation(StageScene.GivingBirth, "birth", {pc="jacki", bodyState={exposedCrotch=true}})
-		saynn("Soon enough, you manage to work inside the tip of your digit, making that urethra look unnaturally stretched. But you don't stop there, gradually applying more pressure until you manage to slide your finger inside completely.")
+		saynn("Вскоре тебе удается просунуть кончик пальца внутрь, отчего мочеиспускательное отверстие выглядит неестественно растянутым. Но ты не останавливаешься и постепенно усиливаешь нажим, пока палец не входит внутрь полностью.")
 
-		saynn("[say=jacki]Nghh-h-h.. fuck me..[/say]")
+		saynn("[say=jacki]Нгхх-х-х.. трахни меня..[/say]")
 
-		saynn("And fuck her you do, wiggling that finger inside and proceeding to move it back and forth, fingering Jacki's pisshole. Her body responds by squirming and creating an arch, little moans escaping her muzzle.")
+		saynn("И ты трахаешь её, шевеля пальцем внутри и двигая им вперед-назад, лаская анус Джеки. Её тело отзывается на это, она извивается и выгибается, а из её мордочки вырываются тихие стоны.")
 
-		saynn("That's not what this hole is supposed to be for.. but you don't care. You keep pounding it at an increasing pace, making Jacki's pussy twitch and her anus clench. That hole is extremely sensitive.. its inner walls are clenching around your finger so tightly you have to fight the friction.")
+		saynn("Вообще-то это отверстие не для этого.. но тебе плевать. Ты продолжаешь вколачивать палец всё быстрее, отчего киска Джеки дергается, а её анус сжимается. Это отверстие невероятно чувствительно.. его внутренние стенки обхватывают твой палец так туго, что тебе приходится бороться с трением.")
 
-		saynn("[say=pc]Come on, slut. Cum for me.[/say]")
+		saynn("[say=pc]Давай, шлюшка. Кончи для меня.[/say]")
 
-		saynn("[say=jacki]F-fuck!.. Fuck-fuck-k..[/say]")
+		saynn("[say=jacki]Б-бля!.. Бля-бля-я!..[/say]")
 
-		saynn("As Jacki reaches the peak, her body shudders with the force of her orgasm. You stimulate her so much that a burst of transparent juices pushes your finger out as Jacki squirts all over the floor. It's an explosive release that leaves her gasping for air and trembling hard.")
+		saynn("Когда Джеки достигает пика, её тело содрогается от силы оргазма. Ты стимулируешь её так интенсивно, что поток прозрачного сока выталкивает твой палец наружу, когда Джеки кончает прямо на пол. Это взрывной выброс, после которого она тяжело дышит и сильно дрожит.")
 
-		saynn("You continue to gently stimulate around her pisshole that is now struggling to close, pulsing instead under your touch.")
+		saynn("Ты продолжаешь мягко ласкать её анус, который теперь никак не может сомкнуться, пульсируя под твоими пальцами.")
 
-		saynn("[say=jacki]That felt so good.. I wouldn't mind you tearing my little hole completely~.[/say]")
+		saynn("[say=jacki]Это было так хорошо.. я бы не возражала, если бы ты разорвал мою дырочку к чертям~.[/say]")
 
-		saynn("So lusty..")
+		saynn("Какая похоть..")
 
-		saynn("[say=pc]Good little slut. I'd rather preserve your ability to hold in piss.[/say]")
+		saynn("[say=pc]Хорошая маленькая шлюшка. Пожалуй, лучше сохраню тебе способность терпеть мочу.[/say]")
 
-		saynn("[say=jacki]Aw-w.. Wruff..[/say]")
+		saynn("[say=jacki]Ав-в.. Рррф..[/say]")
 
-		saynn("And just like that, you leave the wolfie alone to rest and come back to senses.")
+		saynn("И вот так просто ты оставляешь волчицу отдыхать и приходить в себя.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_creepfollow"):
 		playAnimation(StageScene.Solo, "stand", {pc="jacki"})
-		saynn("You decide to wait until Jacki stops doing exercises and gets up. She quickly wipes any dirt and dust off her clothes and heads somewhere.")
+		saynn("Ты решаешь подождать, пока Джеки закончит упражнения и встанет. Она быстро смахивает пыль и грязь со своей одежды и направляется куда-то прочь.")
 
 		if (!getFlag("JackiModule.jackiGotFollowed")):
-			saynn("You don't really know yet what Jacki usually does when she is not at the gym area.")
+			saynn("Ты пока толком не знаешь, чем Джеки обычно занимается, когда не находится в спортзале.")
 
 		else:
-			saynn("You know the rough route that Jacki usually takes when she is jogging. And you can take advantage of that if you want.")
+			saynn("Тебе известен примерный маршрут, по которому Джеки обычно бегает трусцой. И ты можешь воспользоваться этим, если захочешь.")
 
-		addButton("Just watch", "Observe Jacki", "do_creepfollow_follow")
+		addButton("Просто наблюдай", "Наблюдать за Джеки", "do_creepfollow_follow")
 		if (getFlag("JackiModule.jackiGotFollowed")):
-			addButton("Block path", "Find a good spot to block Jacki's path", "do_creepfollow_block")
-		addButton("Nevermind", "Let Jacki go whenever she wants", "endthescene")
+			addButton("Преградить путь", "Найти подходящее место, чтобы перегородить Джеки дорогу", "do_creepfollow_block")
+		addButton("Проехали", "Дать Джеки идти куда она хочет", "endthescene")
 	if(state == "do_creepfollow_follow"):
 		playAnimation(StageScene.Solo, "jog", {pc="jacki"})
 		aimCameraAndSetLocName("yard_eastCorridor")
 		GM.pc.setLocation("yard_eastCorridor")
-		saynn("You quietly follow Jacki, trying to stay in the shadows of tall greenery when can. After leaving the gym, Jacki switches from a normal walk to a jog. Huh, looks like this is her way of staying fit.")
+		saynn("Ты тихо следуешь за Джеки, стараясь при необходимости держаться в тени высокой зелени. Покинув спортзал, Джеки переходит с обычного шага на бег трусцой. Хм, похоже, это её способ поддерживать форму.")
 
-		saynn("Or maybe this just gives her a small semblance of freedom. Either way, you step behind as fast as you can without raising suspicion.")
+		saynn("А может, это просто дает ей иллюзию свободы. Так или иначе, ты стараешься держаться позади так быстро, как только можешь, не вызывая подозрений.")
 
-		saynn("Jacki's lithe figure gracefully follows the stone pathways as she moves through the yard. Devious thoughts come into your mind as you watch her body move. Bad thoughts? Come on, the slut clearly wants it herself. Otherwise she wouldn't be jogging past all those secluded or isolated spots..")
+		saynn("Гибкая фигура Джеки грациозно скользит по каменным дорожкам во дворе. Глядя на то, как двигается её тело, ты ловишь себя на порочных мыслях. Плохие мысли? Да ладно, эта шлюшка явно сама этого хочет. Иначе она бы не трусила мимо всех этих укромных и уединенных мест...")
 
 		if (corruption > 0.4):
-			saynn("And yeah, you do notice that Jacki is swaying her ass a little wider than usual.")
+			saynn("И да, ты замечаешь, что Джеки виляет задом чуть сильнее, чем обычно.")
 
 		if (lust > 0.7):
-			saynn("Occasionally you notice little wet spots on the stone pathway.. clearly Jacki's.")
+			saynn("Время от времени на каменной дорожке попадаются маленькие влажные пятнышки... явно принадлежащие Джеки.")
 
-		saynn("At some point you begin to think that Jacki senses your presence behind her back. She trusts her intuition and increases her pace, her tail flicking with a mixture of uneasy and.. curiosity.")
+		saynn("В какой-то момент тебе начинает казаться, что Джеки чувствует твое присутствие за спиной. Она доверяет своей интуиции и ускоряет шаг, а её хвост нервно подергивается, выражая смесь беспокойства и... любопытства.")
 
-		saynn("Well. That should be enough info to figure out her route. Jacki is going on a second lap anyway.")
+		saynn("Ну что ж. Этого должно хватить, чтобы вычислить её маршрут. В любом случае, Джеки пойдет на второй круг.")
 
 		if (getFlag("JackiModule.jackiReceivedHorsecockDildo")):
-			saynn("Wait. Is that moans that you hear?")
+			saynn("Погоди. Это что, стоны?")
 
-		addButton("Leave", "Enough being creepy", "endthescene")
+		addButton("Уйти", "Хватит быть маньяком", "endthescene")
 		if (getFlag("JackiModule.jackiReceivedHorsecockDildo")):
-			addButton("Moans", "Follow them", "do_creepfollow_horsedildo")
+			addButton("Стоны", "Идти на звук", "do_creepfollow_horsedildo")
 		else:
-			addDisabledButton("Moans", "Jacki needs to have a horsecock dildo")
+			addDisabledButton("Стоны", "Джеки нужен фаллос-лошадка")
 	if(state == "do_creepfollow_horsedildo"):
 		aimCameraAndSetLocName("yard_vaulthere")
 		GM.pc.setLocation("yard_vaulthere")
 		playAnimation(StageScene.Solo, "struggle", {pc="jacki", bodyState={exposedCrotch=true}})
-		saynn("You follow the faint noises that are coming from some secluded corner of the yard.. until you stumble upon something quite interesting.")
+		saynn("Вы идете на слабые звуки, доносящиеся из какого-то уединенного уголка двора... пока не натыкаетесь на кое-что весьма любопытное.")
 
-		saynn("It's Jacki. You catch her during the moment when her shorts are pulled. She hasn't spotted you yet luckily, allowing you to see what she is doing.")
+		saynn("Это Джеки. Вы застаете её в тот момент, когда её шорты натянуты вверх. К счастью, она вас еще не заметила, что позволяет вам понаблюдать за тем, что она делает.")
 
-		saynn("The wolfie is in the middle of fun times it seems. She is trying her best to rub her pussy but the chastity piercings make it very awkward to rub her folds.")
+		saynn("Похоже, волчица в самом разгаре веселья. Она изо всех сил пытается тереться своей киской, но из-за пирсинга целомудрия ласкать складки становится чертовски неудобно.")
 
-		saynn("[say=jacki]Huff..[/say]")
+		saynn("[say=jacki]Хафф...[/say]")
 
-		saynn("And since her clit is pierced and has two little chains dangling from it, rubbing it doesn't bring that much pleasure either. Jacki is wet.. and desperate.")
+		saynn("А так как её клитор проколот и к нему прикреплены две маленькие цепочки, трение тоже не приносит особого удовольствия. Джеки вся мокрая... и она в отчаянии.")
 
-		saynn("After some time, she gives up and starts moving rocks around, uncovering.. a stash. A stash that has your gift in it.. the giant horsecock.")
+		saynn("Спустя какое-то время она сдается и начинает разгребать камни, обнаруживая... тайник. Тайник, в котором спрятан ваш подарок... гигантский фаллос-лошадка.")
 
-		saynn("Jacki sighs.. and places it on the floor, its wobbly tip already makes her mind rush.")
+		saynn("Джеки вздыхает... и кладет его на землю; от одного вида его колышущегося кончика у неё уже кружится голова.")
 
-		addButton("Continue", "See what happens next", "do_creepfollow_horsedildo_start")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_creepfollow_horsedildo_start")
 	if(state == "do_creepfollow_horsedildo_start"):
 		playAnimation(StageScene.HorsecockDildoSex, "tease", {pc="jacki", bodyState={exposedCrotch=true}})
 		if (buttScore <=2):
-			saynn("After placing the hefty toy on the ground, Jacki positions her body above it. At first, she lets the big flared tip brush against her pussy.. but the piercings are relentless, keeping her pussy closed no matter how hard she tries.")
+			saynn("Положив тяжелую игрушку на землю, Джеки располагается над ней. Сначала она позволяет широкому расширяющемуся кончику лишь слегка касаться её киски... но пирсинг неумолим, удерживая её плоть закрытой, как бы сильно она ни старалась.")
 
-			saynn("[say=jacki]I guess I have to..[/say]")
+			saynn("[say=jacki]Думаю, мне придется...[/say]")
 
-			saynn("And so she shifts and angles her body a bit such that now her other hole is being prodded by the giant dildo.. her {jackiButt} asshole.")
+			saynn("И тогда она сдвигается и наклоняет тело так, чтобы теперь гигантский дилдо начал тыкаться в её другое отверстие... в её {jackiButt} анус.")
 
-			saynn("Jacki spreads her legs more.. and begins trying to lower herself onto the giant rubber shaft. It proves to be quite a challenge, her pucker is clenching tightly when Jacki is forcibly trying to stretch it so wide.")
+			saynn("Джеки раздвигает ноги еще шире... и пытается опуститься на гигантский резиновый ствол. Это оказывается непростой задачей: её анус судорожно сжимается, пока Джеки изо всех сил пытается растянуть его как можно шире.")
 
-			saynn("[say=jacki]Ngh-h.. come on-n-n.. I need this..[/say]")
+			saynn("[say=jacki]Нгх-х... ну же-е-е... мне это нужно...[/say]")
 
-			saynn("The girl is trying, she truly does. But each time her asshole begins to stretch to accommodate that flared tip.. the discomfort is making her whine and pull away instead.")
+			saynn("Девушка старается, правда старается. Но каждый раз, когда её задница начинает растягиваться, чтобы принять этот расширяющийся наконечник... дискомфорт заставляет её скулить и отстраняться.")
 
-			saynn("[say=jacki]Huff..[/say]")
+			saynn("[say=jacki]Хафф...[/say]")
 
-			saynn("Jacki gives up. Looks like she will need her butt trained first.. or a set of helping hands.")
+			saynn("Джеки сдается. Похоже, ей сначала нужно натренировать задницу... или ей понадобятся помогающие руки.")
 
-			addButton("Leave", "No need to make it worse", "endthescene")
-			addButton("Apply force", "Step in and force Jacki to take that toy", "do_creepfollow_horsedildo_force")
+			addButton("Уйти", "Не стоит делать хуже", "endthescene")
+			addButton("Приложить силу", "Вступить в дело и заставить Джеки принять игрушку", "do_creepfollow_horsedildo_force")
 		elif (buttScore <= 6):
-			saynn("After placing the hefty toy on the ground, Jacki positions her body above it. She knows well enough that she won't be able to ride it with her pussy so she aligns it with her {jackiButt} asshole.")
+			saynn("Положив тяжелую игрушку на пол, Джеки устраивается над ней. Она прекрасно понимает, что не сможет насадиться на неё киской, поэтому совмещает её со своим {jackiButt} анусом.")
 
-			saynn("[say=jacki]Here goes nothing..[/say]")
+			saynn("[say=jacki]Была не была...[/say]")
 
-			saynn("She angles herself a little better.. and begins trying to lower herself onto the big ass toy. It proves to be quite a challenge, her pucker is clenching tightly when Jacki is forcibly trying to stretch it so wide. But, inch by inch, Jacki is slowly stretching herself wider..")
+			saynn("Она немного подстраивает угол... и начинает медленно опускаться на огромную игрушку. Это оказывается настоящим испытанием: её сфинктер плотно сжимается, пока Джеки пытается насильно растянуть его. Но дюйм за дюймом, Джеки медленно растягивается всё сильнее...")
 
-			addButton("Continue", "See what happens next", "do_creepfollow_horsedildo_ride")
-			addButton("Apply force", "Step in and force Jacki to take that toy", "do_creepfollow_horsedildo_force")
+			addButton("Продолжить", "Смотреть, что будет дальше", "do_creepfollow_horsedildo_ride")
+			addButton("Приложить силу", "Вступить в дело и заставить Джеки принять игрушку", "do_creepfollow_horsedildo_force")
 		else:
-			saynn("After placing the hefty toy on the ground, Jacki positions her body above it. She guides the flared tip straight to her {jackiButt} asshole, angling her body just right.")
+			saynn("Положив тяжелую игрушку на пол, Джеки устраивается над ней. Она направляет расширенный кончик прямо в свой {jackiButt} анус, выверяя угол наклона тела.")
 
-			saynn("[say=jacki]Here goes everything~.[/say]")
+			saynn("[say=jacki]Ну, погнали~![/say]")
 
-			addButton("Continue", "See what happens next", "do_creepfollow_horsedildo_ride")
-			addButton("Apply force", "Step in and force Jacki to take that toy", "do_creepfollow_horsedildo_force")
+			addButton("Продолжить", "Смотреть, что будет дальше", "do_creepfollow_horsedildo_ride")
+			addButton("Приложить силу", "Вступить в дело и заставить Джеки принять игрушку", "do_creepfollow_horsedildo_force")
 	if(state == "do_creepfollow_horsedildo_force"):
 		playAnimation(StageScene.HorsecockDildoSex, "inside", {pc="jacki", bodyState={exposedCrotch=true}})
-		saynn("She will never sit on it like this.. so you decide to help.")
+		saynn("Она никогда не сядет на него вот так... поэтому ты решаешь помочь.")
 
-		saynn("Swiftly but silently, you approach Jacki from behind.. and slip one hand around her waist while the second one grabs her by the hair.")
+		saynn("Быстро и бесшумно ты подкрадываешься к Джеки сзади... одной рукой обхватываешь её за талию, а другой крепко хватаешь за волосы.")
 
-		saynn("[say=jacki]Eep![/say]")
+		saynn("[say=jacki]Ой![/say]")
 
-		saynn("Jacki jerks to the side, spooked by your sudden appearance. But you pull her back.")
+		saynn("Джеки вздрагивает от неожиданности из-за твоего внезапного появления, но ты притягиваешь её обратно к себе.")
 
-		saynn("[say=pc]Where do you think you're going?[/say]")
+		saynn("[say=pc]Ты куда это собралась?[/say]")
 
-		saynn("[say=jacki]H-hey!.. Let me go. What are you doing?![/say]")
+		saynn("[say=jacki]Эй!.. Отпусти! Ты что творишь?![/say]")
 
-		saynn("[say=pc]Helping you with my gift.[/say]")
+		saynn("[say=pc]Помогаю тебе с моим подарком.[/say]")
 
-		saynn("Her eyes become wide when you proceed to pull her body down, applying stretching to overcome the tightness of Jacki's {jackiButt} asshole.")
+		saynn("Её глаза расширяются, когда ты начинаешь надавливать, заставляя её тело опускаться и растягивая её тугой {jackiButt} анус.")
 
-		saynn("[say=jacki]Ah.. H-hey.. w-wait! It hurts.. Somebody![/say]")
+		saynn("[say=jacki]Ах.. П-привет.. п-погоди! Больно.. Кто-нибудь![/say]")
 
-		saynn("A loud cry for help tries to escape from her.. but one of your hands lands on her muzzle and holds it shut.")
+		saynn("Громкий крик о помощи рвется наружу, но одна твоя рука накрывает её пасть, заставляя замолчать.")
 
-		saynn("[say=pc]Shut up, whore. I'm only helping you.[/say]")
+		saynn("[say=pc]Заткнись, шлюха. Я же тебе помогаю.[/say]")
 
-		saynn("[say=jacki]Nh-h-h!!..[/say]")
+		saynn("[say=jacki]Нх-х-х!!..[/say]")
 
-		saynn("Looks like the amount of force that you are applying isn't enough. Jacki's asshole is stretching but the flared tip is still too thick for her to take. You don't stop putting more pressure though, causing Jacki to start squirming and flailing her arms.")
+		saynn("Похоже, силы, которую ты прикладываешь, недостаточно. Анус Джеки растягивается, но расширенный кончик всё еще слишком велик, чтобы она могла его принять. Однако ты не прекращаешь давить, отчего Джеки начинает извиваться и размахивать руками.")
 
-		saynn("And soon enough, the fat flared part pops inside. Having even just it inside Jacki makes her asshole look incredibly stretched and have a red tint, her pulsing pussy getting squished down.")
+		saynn("И вскоре жирная расширенная часть с характерным звуком входит внутрь. От одного только этого внутри Джеки её анус выглядит невероятно растянутым и приобретает красный оттенок, а её пульсирующая киска оказывается прижатой снизу.")
 
-		saynn("[say=pc]There we fucking go. I knew that there is a buttslut in you.[/say]")
+		saynn("[say=pc]Вот так-то, блядь. Я знала, что в тебе сидит задрочка.[/say]")
 
-		saynn("Tears stream down Jacki's cheeks. She is whining as you keep 'helping' her take more of that giant shaft. Poor wolfie is shaking.. until her pussy suddenly squirts all over the ground, the crazy mix of sensations causing an overstimulation.")
+		saynn("Слёзы текут по щекам Джеки. Она скулит, пока ты продолжаешь «помогать» ей принимать этот гигантский ствол. Бедная волчица дрожит... пока её киска внезапно не заливает фонтаном на пол — безумная смесь ощущений вызывает перестимуляцию.")
 
-		saynn("[say=pc]Enjoy.[/say]")
+		saynn("[say=pc]Наслаждайся.[/say]")
 
-		saynn("And just like that, you pull your hands away, keeping Jacki sitting on the toy. It's not fully inside yet.. but at least some of it is.")
+		saynn("И вот так просто ты убираешь руки, оставляя Джеки сидеть на игрушке. Она еще не вошла до конца... но как минимум часть уже внутри.")
 
-		saynn("[say=jacki]Huff-f-f.. my ass.. so stretched..[/say]")
+		saynn("[say=jacki]Уффф... задница... так растянута...[/say]")
 
-		saynn("Jacki gradually pulls herself up.. until the flared tip slips out with a wet 'plop' noise, leaving her irritated asshole to gape.")
+		saynn("Джеки постепенно натягивается вверх... пока расширенный кончик не выскальзывает с влажным звуком «чпок», оставляя её раздраженное анусное отверстие широко раскрытым.")
 
-		saynn("Time to go.")
+		saynn("Пора идти.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_creepfollow_horsedildo_ride"):
 		playAnimation(StageScene.HorsecockDildoSex, "sex", {pc="jacki", bodyState={exposedCrotch=true}})
-		saynn("A cute stifled moan escapes Jacki's lips as the horsecock dildo suddenly stretches her anal ring for her to sit on it. Her body is shaking as she is struggling to get used to this feeling of being full.")
+		saynn("Милый, сдавленный стон срывается с губ Джеки, когда конская фаллоимитатор внезапно растягивает её анальное кольцо, заставляя её сесть на него. Её тело дрожит, пока она пытается привыкнуть к этому ощущению наполненности.")
 
-		saynn("[say=jacki]Fuck-k.. wish it was a real one..[/say]")
+		saynn("[say=jacki]Бля-я-я... хоть бы он был настоящим...[/say]")
 
-		saynn("And so she proceeds to ride that silicon shaft with her ass, pulling herself up just to bring her body down onto it. Her pussy is looking quite squished in the process, the toy's size is taking up all the space.")
+		saynn("И вот она начинает скакать на этом силиконовом стержне задом, подтягиваясь вверх лишь для того, чтобы снова опуститься на него всем весом. Её киска при этом выглядит довольно сплющенной — размер игрушки занимает всё доступное пространство.")
 
-		saynn("Pretty bold of her to do this in the yard where anyone can spot her. But maybe she likes the thrill that comes with that. The girl is certainly becoming quite horny and putting up an incredible show.")
+		saynn("Довольно смело с её стороны делать это во дворе, где любой может её заметить. Но, возможно, ей нравится этот азарт. Девушка явно разгоняется и устраивает невероятное шоу.")
 
-		saynn("More stifled moans escape from Jacki, her legs begin to shake again, her pussy pulsing.. until a shower of girlcum bursts from it.")
+		saynn("Из Джеки вырывается всё больше сдавленных стонов, её ноги снова начинают дрожать, а киска пульсирует... пока из неё не вырывается целый фонтан девичьей смазки.")
 
-		saynn("[say=jacki]Yes-s-s-s~..[/say]")
+		saynn("[say=jacki]Да-а-а-а~..[/say]")
 
-		saynn("The wolfie throws her head back and lets her tailhole try to clench around the giant shaft, most of which is inside her.")
+		saynn("Волчица запрокидывает голову, позволяя своему анусу попытаться сжаться вокруг гигантского ствола, большая часть которого находится внутри неё.")
 
-		saynn("Only when her anal orgasm is over and her senses begin to return to her, Jacki leans her body forward, causing the toy to slip out with a 'plop' noise when it gets tilted to its side.")
+		saynn("Только когда её анальный оргазм заканчивается и чувства начинают возвращаться, Джеки наклоняет тело вперед, из-за чего игрушка с влажным звуком «чпок» выскальзывает, когда та наклоняется набок.")
 
-		saynn("Time to go before she spots you.")
+		saynn("Пора уходить, пока она тебя не заметила.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_creepfollow_block"):
 		playAnimation(StageScene.Duo, "stand", {npc="jacki"})
 		aimCameraAndSetLocName("yard_vaulthere")
 		GM.pc.setLocation("yard_vaulthere")
-		saynn("You let Jacki follow her normal route while you yourself head straight for one of the secluded spots.. Spots that she usually passes. It's a dead end.. which is perfect.")
+		saynn("Ты позволяешь Джеки идти её привычным маршрутом, а сам направляешься прямиком к одному из укромных мест... Туда, где она обычно проходит. Это тупик... а значит, всё идеально.")
 
-		saynn("The shadow between some tall bushes is your best friend. A few minutes later you hear a familiar noise of someone's hindpaws stepping on a stonepath at a pace that's faster than normal walking. Good.")
+		saynn("Тень между высокими кустами — твой лучший друг. Спустя пару минут ты слышишь знакомый звук: чьи-то задние лапы стучат по каменной дорожке быстрее, чем при обычной ходьбе. Хорошо.")
 
-		saynn("You wait for them to rush past you before stepping out and blocking the path. Yeah, it's Jacki.")
+		saynn("Ты ждёшь, пока она пронесётся мимо, а затем выходишь и преграждаешь ей путь. Да, это Джеки.")
 
-		saynn("She runs into you on her way back.")
+		saynn("Она натыкается на тебя на обратном пути.")
 
 		if (corruption > 0.95):
-			saynn("[say=jacki]Oh, hey there, wruff~. I thought you would never force me again~.[/say]")
+			saynn("[say=jacki]О, привет, гав~. Я уж думала, ты больше никогда не заставишь меня~.[/say]")
 
-			saynn("Looks like you corrupted the girl into liking this..")
+			saynn("Похоже, ты испортил девчонку, и теперь ей это нравится...")
 
 		elif (corruption > 0.6):
-			saynn("[say=jacki]Let's.. let's just get it over with.[/say]")
+			saynn("[say=jacki]Давай... давай просто покончим с этим.[/say]")
 
-			saynn("Looks like she understands what you are gonna do. Will she resist though?")
+			saynn("Похоже, она понимает, что ты собираешься делать. Но будет ли она сопротивляться?")
 
 		else:
-			saynn("Jacki gives you a strange look and tries to jog past.. but you are like a wall.")
+			saynn("Джеки бросает на тебя странный взгляд и пытается пробежать мимо... но ты стоишь перед ней как стена.")
 
 			if (!getFlag("JackiModule.jackiFirstTimeBlocked")):
 				setFlag("JackiModule.jackiFirstTimeBlocked", true)
-				saynn("[say=jacki]Um.. what are you doing?[/say]")
+				saynn("[say=jacki]Эм.. ты что делаешь?[/say]")
 
-				saynn("Her voice sounds frustrated.")
+				saynn("Её голос звучит разочарованно.")
 
-				saynn("[say=jacki]Were you following me? Why are you so interested in where I jog?[/say]")
+				saynn("[say=jacki]Ты что, следил за мной? С чего вдруг такой интерес к моим пробежкам?[/say]")
 
 			else:
-				saynn("[say=jacki]You.. again..[/say]")
+				saynn("[say=jacki]Ты.. опять..[/say]")
 
-				saynn("She sounds desperate.. But she knew that this would happen again.")
+				saynn("Она звучит отчаянно.. Но она знала, что это случится снова.")
 
-				saynn("[say=jacki]Can we not maybe?..[/say]")
+				saynn("[say=jacki]Может, не будем?..[/say]")
 
-		addButton("Grab", "Grab Jacki by the neck", "do_grab")
-		addButton("Let her go", "You changed your mind", "do_grab_letgo")
+		addButton("Схватить", "Схватить Джеки за шею", "do_grab")
+		addButton("Отпустить её", "Вы передумали", "do_grab_letgo")
 	if(state == "do_grab_letgo"):
 		playAnimation(StageScene.Solo, "jog", {pc="jacki"})
-		saynn("At the last possible moment.. you decide to change your mind and let Jacki go by stepping out of her way.")
+		saynn("В самый последний момент.. ты решаешь передумать и даешь Джеки пройти, просто отступив с её пути.")
 
 		if (corruption > 0.95):
-			saynn("[say=jacki]Aw.. You're not gonna pound my ass or stretch my pisshole?[/say]")
+			saynn("[say=jacki]Оу.. Ты что, не собираешься оттрахать меня в зад или растянуть мою дырочку?[/say]")
 
-			saynn("She sounds.. genuinely disappointed.")
+			saynn("Она звучит.. искренне разочарованной.")
 
-			saynn("[say=jacki]Not even some choking?..[/say]")
+			saynn("[say=jacki]Даже не придушишь?..[/say]")
 
-			saynn("You shake your head and just invite Jacki to jog away. She sighs and obeys.")
+			saynn("Ты качаешь головой и просто предлагаешь Джеки пробежаться. Она вздыхает и подчиняется.")
 
 		elif (corruption > 0.3):
-			saynn("[say=jacki]Oh.. you're not gonna force me? Why not?[/say]")
+			saynn("[say=jacki]Ох.. ты не собираешься меня заставлять? Почему нет?[/say]")
 
-			saynn("She blushes when realizes what she said.")
+			saynn("Она краснеет, осознав, что только что ляпнула.")
 
-			saynn("[say=jacki]I mean.. What changed your mind?[/say]")
+			saynn("[say=jacki]В смысле.. Что изменило твоё мнение?[/say]")
 
-			saynn("You're obviously not gonna explain yourself. So you just let her jog away.")
+			saynn("Очевидно, объясняться она не станет. Так что ты просто позволяешь ей убежать на пробежку.")
 
 		else:
-			saynn("Jacki quickly walks past and then switches to jogging.")
+			saynn("Джеки быстро проходит мимо, а затем переходит на бег.")
 
-			saynn("[say=jacki]..what a creep.[/say]")
+			saynn("[say=jacki]..ну и извращенец.[/say]")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_grab"):
 		addCharacter("jacki", ["naked"])
 		playAnimation(StageScene.Choking, "idle", {npc="jacki", npcBodyState={exposedCrotch=true}})
-		saynn("You suddenly grab Jacki by the neck, your hand squeezing her throat just above the collar. All the while she tries to pull your hands off her neck with so little strength.. that she might as well just be suggesting you.")
+		saynn("Ты внезапно хватаешь Джеки за шею, сжимая пальцами её горло чуть выше воротника. При этом она пытается отцепить твои руки от своей шеи с таким малым усилием.. что это больше похоже на приглашение.")
 
 		if (corruption > 0.95):
-			saynn("[say=jacki]Force m-me..[/say]")
+			saynn("[say=jacki]Заставь м-меня..[/say]")
 
 		elif (corruption > 0.6):
-			saynn("[say=jacki]Not t-too rough..[/say]")
+			saynn("[say=jacki]Н-не слишком грубо..[/say]")
 
-			saynn("It seems the wolfie knows that this won't end well. She does her best to pry your digits off her neck.")
+			saynn("Похоже, волчица понимает, что всё закончится плохо. Она изо всех сил пытается отцепить твои пальцы от своей шеи.")
 
 		else:
-			saynn("[say=jacki]Hey.. L-let go.. I'm gonna scream..[/say]")
+			saynn("[say=jacki]Эй.. П-пусти.. Я сейчас заору..[/say]")
 
-			saynn("Not while you choke her, she is not. She does her best to pry your digits off her neck and even uses her legs to kick you.")
+			saynn("Пока ты её душишь, вряд ли она сможет промолчать. Она отчаянно пытается сбросить твои пальцы с шеи и даже начинает пинать тебя ногами.")
 
-		saynn("While she is busy resisting, you use your other hand to forcibly pull her shorts down, exposing Jacki's red bush between her legs as well as her stitched up pussy that has a bell dangling from her clit piercing and also a little something in her urethra.")
+		saynn("Пока она занята сопротивлением, ты свободной рукой с силой стягиваешь с неё шорты, обнажая густой рыжий пушок между ног Джеки, а также её зашитую киску, в клитор которой вставлен колокольчик, и кое-что ещё в её уретре.")
 
-		saynn("None of this is gonna be pretty..")
+		saynn("Вряд ли всё это будет выглядеть красиво..")
 
-		addButton("Anal fisting", "Make that slut take your whole fist", "do_grab_fisting")
-		addButtonWithChecks("Anal", "Fuck Jacki's ass", "do_grab_anal", [], [ButtonChecks.HasReachablePenis])
-		addButtonWithChecks("Strapon anal", "Fuck Jacki's ass with a strapon", "do_grab_strapon_pick", [], [ButtonChecks.HasStraponAndCanWear])
-		addButton("Sounding", "Jacki has something in her pisshole..", "do_grab_sounding")
+		addButton("Анальный фистинг", "Заставь эту шлюху принять твой кулак целиком", "do_grab_fisting")
+		addButtonWithChecks("Анальный", "Трахать Джеки в зад", "do_grab_anal", [], [ButtonChecks.HasReachablePenis])
+		addButtonWithChecks("Анальный секс со страпоном", "Трахать Джеки в зад страпоном", "do_grab_strapon_pick", [], [ButtonChecks.HasStraponAndCanWear])
+		addButton("Звуки (Sounding)", "В мочеиспускательном канале Джеки что-то есть..", "do_grab_sounding")
 		if (soundScore >= 2):
-			addButtonWithChecks("Urethra fuck", "There is still a way to fuck her pussy even if it's stiched up.. It just won't be pretty", "do_grab_urethra_fuck", [], [ButtonChecks.HasReachablePenis])
+			addButtonWithChecks("Уретральный секс", "Её киску всё ещё можно трахнуть, даже если она зашита.. Просто это будет не очень эстетично", "do_grab_urethra_fuck", [], [ButtonChecks.HasReachablePenis])
 		else:
-			addDisabledButton("Urethra fuck", "Jacki's needs more experience with sounding or this will kill her")
+			addDisabledButton("Уретральный секс", "Джеки нужно больше опыта в звуках, иначе она просто сдохнет")
 	if(state == "do_grab_fisting"):
 		playAnimation(StageScene.SexFisting, "tease", {npc="jacki", npcBodyState={exposedCrotch=true}})
-		saynn("Enough playing around. You throw Jacki onto the ground and holds her in place with one hand.. while the second reaches for her wolf tail and yanks it high.")
+		saynn("Хватит игр. Ты швыряешь Джеки на пол и прижимаешь её одной рукой к земле, а второй хватаешь её волчий хвост и резко тянешь вверх.")
 
-		saynn("The wolfie whines as you put her {jackiButt} ass on full display. Then you forcibly make her spread her legs more, giving you more access.")
+		saynn("Волчица скулит, когда ты выставляешь её {jackiButt} задницу на всеобщее обозрение. Затем ты силой заставляешь её раздвинуть ноги шире, чтобы получить лучший доступ.")
 
 		if (buttScore <= 3):
-			saynn("Prodding Jacki's tailhole with a few digits makes her squirm.. She is clenching tight, preventing any penetration.")
+			saynn("Когда ты начинаешь ковырять в анусе Джеки пальцами, она начинает извиваться... Она сжимается так сильно, что любое проникновение становится почти невозможным.")
 
 		elif (buttScore <= 6):
-			saynn("Prodding Jacki's tailhole with a few digits makes her squirm.. She is clenching tight but her asshole is somewhat used to being penetrated by now.")
+			saynn("Когда ты начинаешь ковырять в анусе Джеки пальцами, она начинает извиваться... Она всё ещё сильно сжимается, но её задница уже немного привыкла к проникновениям.")
 
 		else:
-			saynn("Prodding Jacki's tailhole with a few digits makes her squirm.. She is making her best attempts to clench.. but her asshole is loose you can probably fit more than one fist in there.. and it's even lubricating itself in response to the stimulation.")
+			saynn("Когда ты начинаешь ковырять в анусе Джеки пальцами, она начинает извиваться... Она изо всех сил пытается сжаться... но её анус уже довольно расслаблен — туда, пожалуй, влезет даже больше одного кулака... и он даже начинает смазываться в ответ на стимуляцию.")
 
 		if (buttScore <= 0):
 			if (corruption > 0.5):
-				saynn("[say=jacki]Ohh.. What are you gonna do to my virgin asshole..[/say]")
+				saynn("[say=jacki]Охх... И что же ты сделаешь с моим девственным анусом?..[/say]")
 
 			else:
-				saynn("[say=jacki]H-hey! I don't do butt stuff![/say]")
+				saynn("[say=jacki]Эй! Я не занимаюсь аналом![/say]")
 
 		elif (buttScore <= 3):
 			if (corruption > 0.5):
-				saynn("[say=jacki]Are you gonna stretch my tight asshole more?[/say]")
+				saynn("[say=jacki]Ты собираешься растянуть мою тугую дырочку ещё сильнее?[/say]")
 
 			else:
-				saynn("[say=jacki]H-hey! That's my ass![/say]")
+				saynn("[say=jacki]Эй! Это моя задница![/say]")
 
 		elif (buttScore <= 6):
 			if (corruption > 0.5):
-				saynn("[say=jacki]If you keep this up I will become a buttslut..[/say]")
+				saynn("[say=jacki]Если ты так и будешь продолжать, из меня получится настоящая жопошлёпка..[/say]")
 
 			else:
-				saynn("[say=jacki]H-hey! Stop! My ass is trained enough already..[/say]")
+				saynn("[say=jacki]Эй! Стой! Моя задница и так уже достаточно натренирована..[/say]")
 
 		else:
 			if (corruption > 0.5):
-				saynn("[say=jacki]Shove your whole fist into this buttslut![/say]")
+				saynn("[say=jacki]Засунь весь свой кулак в эту жопошлёпку![/say]")
 
 			else:
-				saynn("[say=jacki]H-hey! You already made my ass loose, what more do you want..[/say]")
+				saynn("[say=jacki]Эй! Ты и так уже разболтал мне задницу, чего тебе ещё надо..[/say]")
 
 		if (buttScore <= 3):
-			saynn("Inserting fingers one by one? Fuck that. You quickly spit on your clenched fist and start trying to stretch Jacki's asshole with it. The anal ring is extremely tight which makes this process hard.. but you keep pushing through her resistance.. All the while Jacki is arching her back, her legs shaking, whining escapes from her muzzle.")
+			saynn("Вставлять пальцы по одному? К чёрту это. Ты быстро плюёшь на свой сжатый кулак и начинаешь пытаться растянуть анус Джеки им. Анальное кольцо экстремально тугое, что усложняет процесс.. но ты продолжаешь продавливать её сопротивление.. Всё это время Джеки выгибает спину, её ноги дрожат, а из пасти вырываются стоны.")
 
 		elif (buttScore <= 6):
-			saynn("Inserting fingers one by one? Fuck that. You quickly spit on your clenched fist and start trying to stretch Jacki's asshole with it. Her anal ring is used to small penetrations.. but a whole fist is still too much for it.. Jacki is whining while her legs are shaking")
+			saynn("Вставлять пальцы по одному? К чёрту это. Ты быстро плюёшь на свой сжатый кулак и начинаешь пытаться растянуть анус Джеки им. Её анальное кольцо привыкло к небольшим проникновениям.. но целый кулак всё ещё слишком много для него.. Джеки скулит, а её ноги дрожат.")
 
 		else:
-			saynn("Inserting fingers one by one? Fuck that. You gather some of Jacki's arousal onto your fist and start trying to stretch her asshole with it. And surprisingly, you don't feel much resistance. Moans escape from Jacki as you slowly work that fist in, inch by inch..")
+			saynn("Вставлять пальцы по одному? К чёрту это. Ты собираешь немного смазки из возбуждения Джеки на свой кулак и начинаешь пытаться растянуть её анус им. И, на удивление, ты не чувствуешь сильного сопротивления. Из Джеки вырываются стоны, пока ты медленно втискиваешь кулак, дюйм за дюймом..")
 
-		addButton("Continue", "See what happens next", "do_grab_fisting_fisting")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_grab_fisting_fisting")
 	if(state == "do_grab_fisting_fisting"):
 		if (buttScore <= 6):
 			playAnimation(StageScene.SexFisting, "sex", {npc="jacki", npcBodyState={exposedCrotch=true}})
 		else:
 			playAnimation(StageScene.SexFisting, "fast", {npc="jacki", npcBodyState={exposedCrotch=true}})
 		if (buttScore <= 3):
-			saynn("A loud cry escapes from Jacki as her asshole gives you enough leeway to shove your whole fist and hand inside it. Poor wolfie is whining and whimpering as you proceed to puppeteer her, forcing your hand even deeper while the second one is holding her in place.")
+			saynn("Громкий крик вырывается из Джеки, когда её анус даёт тебе достаточно свободы, чтобы засунуть внутрь весь кулак вместе с кистью. Бедная волчица скулит и хнычет, пока ты управляешь ею, как марионеткой, заталкивая руку ещё глубже, пока вторая рука удерживает её на месте.")
 
-			saynn("She is clenching tight.. but you keep adding more pressure, forcing your way through her resistance.")
+			saynn("Она сильно сжимается.. но ты продолжаешь давить сильнее, прорываясь сквозь её сопротивление.")
 
-			saynn("[say=jacki]Fu-uck-k.. you're tearing my ass..[/say]")
+			saynn("[say=jacki]Бл*ять... ты мне всю задницу разрываешь...[/say]")
 
-			saynn("And yeah.. you notice some minor bleeding already. Doing this to an untrained butt will tend to do that.. Still, it's just extra lube in the end.")
+			saynn("И да... ты уже замечаешь небольшое кровотечение. Если так поступать с нетренированной жопой, такое вполне ожидаемо... Но в конечном счете это просто лишняя смазка.")
 
 		elif (buttScore <= 6):
-			saynn("A loud cry escapes from Jacki as you manage to stretch her asshole enough to shove your whole fist and hand inside. Poor wolfie is whining and whimpering from the discomfort caused by your roughness. Your second hand is holding her pinned while you make her get used to this painful feeling.")
+			saynn("Громкий крик вырывается из груди Джеки, когда тебе удается растянуть её анус настолько, что ты проталкиваешь внутрь весь кулак целиком. Бедная волчица скулит и хнычет от дискомфорта, вызванного твоей грубостью. Второй рукой ты прижимаешь её, заставляя привыкнуть к этому болезненному ощущению.")
 
-			saynn("It's not as bad as it could be, training Jacki's ass did make it somewhat stretchy. She is clenching tight.. but you keep adding more pressure, forcing your way through her resistance.")
+			saynn("Все не так плохо, как могло бы быть: тренировки задницы Джеки сделали её довольно эластичной. Она сильно сжимается... но ты продолжаешь давить, прорываясь сквозь её сопротивление.")
 
-			saynn("[say=jacki]Fu-uck-k.. you're tearing my ass..[/say]")
+			saynn("[say=jacki]Бл*ять... ты мне всю задницу разрываешь...[/say]")
 
 		else:
-			saynn("A passionate cry escapes from Jacki as you work your whole fist into her asshole, stretching it extremely wide. Poor wolfie is whining and whimpering from the discomfort caused by your roughness. Your second hand is holding her pinned while you slide your forearm inside too.")
+			saynn("Страстный крик срывается с губ Джеки, когда ты вгоняешь весь кулак в её анус, растягивая его до невероятных пределов. Бедная волчица скулит и хнычет от дискомфорта, вызванного твоей грубостью. Второй рукой ты удерживаешь её, пока проталкиваешь внутрь еще и предплечье.")
 
-			saynn("And wow, her trained asshole is practically sucking you in. She is trying to clench.. but you find almost no resistance.")
+			saynn("И вау, её натренированный анус практически засасывает тебя внутрь. Она пытается сжаться... но ты почти не чувствуешь сопротивления.")
 
-			saynn("[say=jacki]Fuck-k~.. you're tearing my ass..[/say]")
+			saynn("[say=jacki]Бл*ять~... ты мне всю задницу разрываешь...[/say]")
 
-		saynn("After showing your hand inside, you begin moving it back and forth, fucking Jacki's {jackiButt} ass like that. It doesn't take long for the poor wolfie to start shivering and squirming, her noises getting louder and longer.")
+		saynn("Засунув руку по локоть, ты начинаешь двигать ею вперед-назад, таким образом трахая {jackiButt} задницу Джеки. Вскоре бедная волчица начинает дрожать и извиваться, а её стоны становятся всё громче и протяжнее.")
 
-		saynn("It's so hot inside her at the moment. Soon enough, her useless pussy suddenly starts squirting all over the ground, her inner walls kneading your hand.")
+		saynn("Внутри неё сейчас так жарко. Вскоре её бесполезная киска внезапно начинает заливать всё вокруг сквиртом, а внутренние стенки судорожно сжимают твою руку.")
 
-		saynn("[say=jacki]NGhGhh-h!..[/say]")
+		saynn("[say=jacki]Нгхх-гхх!..[/say]")
 
-		saynn("Looks like the wolfie is quickly losing touch with reality, her body about to flop before you catch her and put her chest on the floor carefully.")
+		saynn("Похоже, волчица быстро теряет связь с реальностью; её тело вот-вот обмякнет, но ты успеваешь подхватить её и осторожно опустить её грудь на пол.")
 
-		addButton("Pull fist out", "Enough fisting", "do_grab_fisting_enoughfist")
+		addButton("Вытащить кулак", "Хватит фистинга", "do_grab_fisting_enoughfist")
 	if(state == "do_grab_fisting_enoughfist"):
 		playAnimation(StageScene.SexAllFours, "teaseflop", {npc="jacki", pc="pc", npcBodyState={exposedCrotch=true}})
-		saynn("As you pull your wet fist out of her ass, that stretched ring is left gaping wide open. Jacki moans each time she tries to close it.")
+		saynn("Когда ты вытаскиваешь мокрый кулак из её задницы, растянутое кольцо остается широко раскрытым. Джеки стонет каждый раз, когда пытается его сомкнуть.")
 
-		saynn("[say=jacki]Nhh-h..[/say]")
+		saynn("[say=jacki]Нхх-х..[/say]")
 
-		saynn("Her eyes show.. a weird kind of bliss.")
+		saynn("В её глазах читается... какое-то странное блаженство.")
 
-		saynn("[say=pc]What a whore.[/say]")
+		saynn("[say=pc]Ну и шлюха.[/say]")
 
-		saynn("Looks like it will take her a while to recover after that. So you leave her at that.")
+		saynn("Похоже, ей понадобится немало времени, чтобы прийти в себя после такого. Так что ты оставляешь её в покое.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_grab_anal"):
 		playAnimation(StageScene.SexBehind, "tease", {npc="jacki", bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("That girl is not walking away unbroken. You stop choking her.. just so you can push her down and then pin her with the weight of your own {pc.thick} body. One of your hands holds her face pressed into the ground while the second already aligns your {pc.penis} with her {jackiButt} asshole.")
+		saynn("Эта девчонка не уйдет отсюда целой и невредимой. Ты перестаешь душить ее... просто чтобы прижать ее к полу и придавить весом своего собственного {pc.thick} тела. Одной рукой ты вжимаешь ее лицо в землю, а вторая уже нацеливает твой {pc.penis} прямо в ее {jackiButt} анус.")
 
 		if (buttScore <= 0):
-			saynn("Jacki feels your cock prodding her super tight star.. and does her best to resist, trying to crawl away from under you.")
+			saynn("Джеки чувствует, как твой член тычется в ее тугую дырочку... и изо всех сил пытается сопротивляться, пытаясь уползти из-под тебя.")
 
-			saynn("[say=jacki]H-hey.. I don't do butt stuff.. please..[/say]")
+			saynn("[say=jacki]Эй... я не занимаюсь анальным... пожалуйста...[/say]")
 
-			saynn("Sounds like not your problem. You just smack her against the floor to keep her from resisting while also putting more strain on her virgin asshole.")
+			saynn("Похоже, это не твоя забота. Ты просто шлепаешь ее об пол, чтобы она не сопротивлялась, попутно сильнее растягивая ее девственный анус.")
 
-			saynn("[say=pc]Shut up and quit clenching.[/say]")
+			saynn("[say=pc]Заткнись и перестань сжиматься![/say]")
 
-			saynn("[say=jacki]Ow.. ah.. N-no..[/say]")
+			saynn("[say=jacki]Ой... ах... Н-нет...[/say]")
 
-			saynn("Well, she asked for it.")
+			saynn("Ну, она сама напросилась.")
 
 		elif (buttScore <= 3):
-			saynn("Jacki feels your cock prodding her tight star.. and keeps resisting, trying to crawl away from under you. She has some experience but it's obvious that she isn't eager to receive more today.")
+			saynn("Джеки чувствует, как твой член тычется в ее узкую дырочку... и продолжает сопротивляться, пытаясь уползти из-под тебя. У нее есть некоторый опыт, но очевидно, что сегодня она не горит желанием принимать в себя что-то еще.")
 
-			saynn("[say=jacki]H-hey.. Not my butt.. please..[/say]")
+			saynn("[say=jacki]Эй... только не в задницу... пожалуйста...[/say]")
 
-			saynn("It's not like she got any other holes to fuck between her legs. You just smack her against the floor to keep her from resisting while also putting more strain on her tight asshole.")
+			saynn("Не то чтобы у нее были другие дырки между ног, чтобы их трахать. Ты просто шлепаешь ее об пол, чтобы она не сопротивлялась, попутно сильнее растягивая ее тугой анус.")
 
-			saynn("[say=pc]Shut up and quit clenching.[/say]")
+			saynn("[say=pc]Заткнись и перестань сжиматься![/say]")
 
-			saynn("[say=jacki]Ow.. ah.. N-no..[/say]")
+			saynn("[say=jacki]Ой... ах... Н-нет...[/say]")
 
-			saynn("Well, she asked for it.")
+			saynn("Ну, она сама напросилась.")
 
 		elif (buttScore <= 6):
-			saynn("Jacki feels your cock prodding her anal star that received some training by now. But having a stretched asshole doesn't make her resist any less than before. The whore is trying to throw you off her.. but she isn't strong enough.")
+			saynn("Джеки чувствует, как твой член упирается в её анус, который к этому моменту уже прошел определенную подготовку. Но даже растянутая дырка не заставляет её сопротивляться меньше, чем раньше. Шлюха пытается сбросить тебя с себя... но она недостаточно сильна.")
 
-			saynn("[say=jacki]That's my asshole.. please..[/say]")
+			saynn("[say=jacki]Это мой анус... пожалуйста...[/say]")
 
-			saynn("She is not wrong. But she sure is annoying. You smack her against the floor to keep her from resisting while also putting more strain on her dirty asshole.")
+			saynn("Она не ошибается. Но она чертовски раздражает. Ты шлепаешь её об пол, чтобы она не сопротивлялась, и одновременно сильнее растягиваешь её грязную дырку.")
 
-			saynn("[say=pc]Shut up and quit clenching.[/say]")
+			saynn("[say=pc]Заткнись и перестань сжиматься![/say]")
 
-			saynn("[say=jacki]Ow.. ah.. N-no..[/say]")
+			saynn("[say=jacki]Ой... ах... Н-нет...[/say]")
 
-			saynn("Well, she asked for it.")
+			saynn("Ну, она сама напросилась.")
 
 		else:
-			saynn("Jacki's ass is trained extremely well, her sensitive star obediently stretching while your cock is prodding it. But having a stretched asshole doesn't make her resist any less than before. The whore is trying to throw you off her.. but she isn't strong enough.")
+			saynn("Задница Джеки натренирована великолепно: её чувствительное сфинктерное кольцо послушно растягивается под напором твоего члена. Но даже растянутый анус не мешает ей сопротивляться. Шлюха пытается сбросить тебя... но сил ей не хватает.")
 
-			saynn("[say=jacki]My asshole.. getting forcibly stretched.. So rough.. ah..[/say]")
+			saynn("[say=jacki]Мой анус... его насильно растягивают... Так грубо... ах...[/say]")
 
-			saynn("Almost like she gets off it. Maybe constant ass-fucking has finally gotten to her head. You smack her against the floor to keep her from resisting while also putting more strain on her dirty asshole.")
+			saynn("Такое ощущение, будто ей это даже нравится. Возможно, постоянный трах в задницу наконец-то вскружил ей голову. Ты шлепаешь её об пол, чтобы подавить сопротивление и еще сильнее растянуть её грязную дырку.")
 
-			saynn("[say=pc]Shut up and quit clenching.[/say]")
+			saynn("[say=pc]Заткнись и перестань сжиматься![/say]")
 
-			saynn("[say=jacki]Ow.. ah.. N-no..[/say]")
+			saynn("[say=jacki]Ой... ах... Н-нет...[/say]")
 
-			saynn("Well, she asked for it.")
+			saynn("Ну, она сама напросилась.")
 
-		addButton("Ram it in", "Fuck that asshole", "do_grab_anal_ramitin")
+		addButton("Всаживай на полную", "Трахнуть этот анус", "do_grab_anal_ramitin")
 	if(state == "do_grab_anal_ramitin"):
 		playAnimation(StageScene.SexBehind, "sex", {npc="jacki", bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true}})
 		if (buttScore <= 0):
-			saynn("Your hands maintain a firm grasp on her body as you keep guiding your cock into her with increasing power. Poor Jacki is whining and squirming while her virgin-like asshole is being forcibly spread wide open.")
+			saynn("Твои руки крепко сжимают её тело, пока ты с нарастающей силой вгоняешь член в неё. Бедняжка Джеки скулит и извивается, пока её почти девственный анус насильно разрывают на ширину.")
 
-			saynn("[say=jacki]It h-hurts..[/say]")
+			saynn("[say=jacki]Б-больно...[/say]")
 
-			saynn("Good. You ram the rest of the length inside, causing Jacki to gasp and attempt to arch her back.. a loud cry escapes her lungs shortly after.")
+			saynn("Хорошо. Ты вгоняешь оставшуюся длину до упора, заставляя Джеки ахнуть и попытаться выгнуться в пояснице... спустя мгновение из её груди вырывается громкий крик.")
 
-			saynn("[say=jacki]Agh!.. you fuck..[/say]")
+			saynn("[say=jacki]Ах!.. сука..[/say]")
 
-			saynn("You pull your cock a bit back just to ram it inside yet again, sending another powerful impulse through that wolfie, her legs and arms shaky, her toes curling.")
+			saynn("Ты слегка оттягиваешь член назад, чтобы снова с силой вогнать его внутрь, посылая очередную мощную волну импульса этой волчице; её руки и ноги дрожат, а пальцы ног поджимаются.")
 
-			saynn("Jacki is whining and clinging onto the stone tiles as you keep fucking her ass, gradually stretching her inner walls to accommodate your size. There is some bleeding as your cock is bruising her from the inside.. but that just provides extra lube.")
+			saynn("Джеки скулит и вцепляется в каменную плитку, пока ты продолжаешь трахать её в задницу, постепенно растягивая её внутренние стенки под свой размер. Идет немного крови, так как твой член оставляет внутри синяки... но это лишь служит дополнительной смазкой.")
 
 		elif (buttScore <= 3):
-			saynn("Your hands maintain a firm grasp on her body as you keep guiding your cock into her with increasing power. Poor Jacki is whining and squirming while her tight asshole is being forcibly spread wide open.")
+			saynn("Твои руки крепко держат её тело, пока ты направляешь член внутрь с нарастающей силой. Бедная Джеки скулит и извивается, пока её узкую задницу насильно растягивают настежь.")
 
-			saynn("[say=jacki]Fuck.. my ass..[/say]")
+			saynn("[say=jacki]Блядь.. моя задница..[/say]")
 
-			saynn("You get tired of it and suddenly ram the rest of the length inside, making Jacki gasp and produce a loud painful cry, her inner walls clenching around your cock tightly.")
+			saynn("Тебе надоедает медлить, и ты внезапно вгоняешь всю длину до упора, заставляя Джеки ахнуть и издать громкий болезненный крик, а её внутренние стенки плотно сжимаются вокруг твоего члена.")
 
-			saynn("[say=jacki]AGH!..[/say]")
+			saynn("[say=jacki]АГХ!..[/say]")
 
-			saynn("You pull your cock a bit back just to ram it inside yet again, sending another powerful impulse through that wolfie, her legs and arms shaky, her toes curling.")
+			saynn("Ты слегка оттягиваешь член назад, чтобы снова с силой вогнать его внутрь, посылая очередную мощную волну импульса этой волчице; её руки и ноги дрожат, а пальцы ног поджимаются.")
 
-			saynn("Jacki is whining and clinging onto the stone tiles as you keep fucking her ass, gradually stretching her inner walls to accommodate your size. At least there is no bleeding, Jacki's ass seems to be somewhat stretchy by now.")
+			saynn("Джеки скулит и вцепляется в каменную плитку, пока ты продолжаешь трахать её в задницу, постепенно растягивая её внутренние стенки под свой размер. По крайней мере, крови нет — кажется, задница Джеки уже стала довольно эластичной.")
 
 		elif (buttScore <= 6):
-			saynn("Your hands maintain a firm grasp on her body as you keep guiding your cock into her with increasing power. Then, a few seconds later, you ram your whole length inside, making Jacki gasp and produce a loud noise that is a mix between pain and.. pleasure.")
+			saynn("Твои руки крепко сжимают её тело, пока ты продолжаешь вбивать свой член в неё с нарастающей силой. Спустя несколько секунд ты входишь в неё на всю длину, заставляя Джеки ахнуть и издать громкий звук — смесь боли и... наслаждения.")
 
-			saynn("[say=jacki]Fuck!.. Agh!.. my ass..[/say]")
+			saynn("[say=jacki]Бля!.. Агх!.. моя задница..[/say]")
 
-			saynn("Her inner walls clench around your cock tightly as you keep forcing your {pc.penis} deeper and deeper, testing the limits of that buttslut. More little noises escape from the girl, her legs and arms shaky, her toes curling.")
+			saynn("Её внутренние стенки плотно обхватывают твой член, пока ты продолжаешь заталкивать свой {pc.penis} всё глубже и глубже, проверяя на прочность эту задроченную жопку. Из девушки вырываются всё новые звуки, её руки и ноги дрожат, а пальцы ног поджимаются.")
 
-			saynn("Jacki is whining and clinging onto the stone tiles as you keep fucking her ass, gradually stretching her inner walls to accommodate your size. Jacki's ass is quite stretchy by now.. but still tight enough to make you feel good.")
+			saynn("Джеки скулит и вцепляется в каменную плитку, пока ты трахаешь её в зад, постепенно растягивая её стенки, чтобы они приняли твой размер. К этому моменту задница Джеки уже довольно эластична... но всё ещё достаточно тугая, чтобы ты получал кайф.")
 
 		else:
-			saynn("Since that ass is so stretchy, you easily ram your whole length inside, making Jacki gasp and produce a loud noise that is a mix between pain and.. passion.")
+			saynn("Поскольку эта жопка такая растяжимая, ты с лёгкостью входишь в неё на всю длину, заставляя Джеки ахнуть и издать громкий звук — смесь боли и... страсти.")
 
-			saynn("[say=jacki]Fuck!.. Agh!.. my ass.. so stretched..[/say]")
+			saynn("[say=jacki]Бля!.. Агх!.. моя задница.. так растянута..[/say]")
 
-			saynn("Her inner walls still clench around your cock as you keep forcing your {pc.penis} deeper and deeper, testing the limits of that buttslut. More little noises escape from the girl, her legs and arms shaky, her toes curling.")
+			saynn("Её внутренние стенки всё ещё сжимают твой член, пока ты продолжаешь заталкивать свой {pc.penis} всё глубже и глубже, проверяя на прочность эту задроченную жопку. Из девушки вырываются всё новые звуки, её руки и ноги дрожат, а пальцы ног поджимаются.")
 
-			saynn("Jacki is whining and clinging onto the stone tiles as you keep pounding her ass relentlessly.")
+			saynn("Джеки скулит и вцепляется в каменную плитку, пока ты безжалостно вколачиваешь свой член в её задницу.")
 
-		addButton("Faster", "Fuck her faster", "do_grab_anal_faster")
+		addButton("Быстрее", "Трахать её быстрее", "do_grab_anal_faster")
 	if(state == "do_grab_anal_faster"):
 		playAnimation(StageScene.SexBehind, "fast", {npc="jacki", bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("Each your thrust is forceful and unrelenting, designed to fuck Jacki into the ground. By this point she isn't resisting anymore.. there is no point.. Jacki is just whining quietly as your hips slap against her fluffy butt.")
+		saynn("Каждый твой толчок мощный и неумолимый, словно ты хочешь вбить Джеки в самый пол. К этому моменту она уже не сопротивляется... в этом нет смысла... Джеки лишь тихо скулит, пока твои бёдра с хлопком впечатываются в её мягкую попку.")
 
 		if (corruption > 0.7):
-			saynn("[say=jacki]So fucking g-good.. ngh-h..[/say]")
+			saynn("[say=jacki]Блядь, как же п-приятно.. ахх..[/say]")
 
 		else:
-			saynn("[say=jacki]Nghh-h..[/say]")
+			saynn("[say=jacki]Нгххх..[/say]")
 
-		saynn("Her body is trembling.. until she cums. Her neglected pussy is pulsing against the piercings and creates a puddle of girlcum on the ground. Her painful cry of ecstasy grow louder, her walls gripping your cock tightly.")
+		saynn("Её тело дрожит.. пока она не кончает. Её заброшенная киска пульсирует на пирсинге, заливая пол лужей девичьей смазки. Её болезненные крики экстаза становятся всё громче, а стенки влагалища сжимают твой член мертвой хваткой.")
 
-		saynn("Looks like you are close too..")
+		saynn("Похоже, ты тоже уже на пределе..")
 
-		addButton("Cum inside", "Stuff that ass", "do_grab_anal_cuminside")
-		addButton("Pull out", "Rather not stuff that ass", "do_grab_anal_pullout")
+		addButton("Кончить внутрь", "Засадить в эту жопу", "do_grab_anal_cuminside")
+		addButton("Вытащить", "Пожалуй, не буду засаживать в эту жопу", "do_grab_anal_pullout")
 	if(state == "do_grab_anal_cuminside"):
 		playAnimation(StageScene.SexBehind, "inside", {npc="jacki", pcCum=true, npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("Fuck it. You ram your cock deep into that ass and let her clenching anal ring push you over the hill. Grunts and growls escape from you.. as you stuff your thick load into Jacki's ass, painting her guts white.")
+		saynn("К черту всё. Ты с силой вгоняешь свой член глубоко в её задницу, позволяя сжимающемуся анусу довести тебя до пика. Из твоей груди вырываются хрипы и рычание.. когда ты вливаешь свою густую порцию прямо в задницу Джеки, заливая ей все кишки белой жижей.")
 
-		saynn("She is still whining and sobbing softly.. You give her rear a loud smack, making her clench more.")
+		saynn("Она всё еще тихо скулит и всхлипывает.. Ты звонко шлепаешь её по заднице, заставляя её сжаться еще сильнее.")
 
-		saynn("[say=jacki]Ah..[/say]")
+		saynn("[say=jacki]Ах...[/say]")
 
-		saynn("[say=pc]What a whore.[/say]")
+		saynn("[say=pc]Ну и шлюха.[/say]")
 
 		if (corruption > 0.9):
-			saynn("[say=jacki]T-thank you.. nh-h..[/say]")
+			saynn("[say=jacki]С-спасибо.. ахх..[/say]")
 
-			saynn("Looks like you have corrupted her into a complete buttslut by now.")
+			saynn("Похоже, к этому моменту ты окончательно превратил её в настоящую жопошлепку.")
 
 		else:
-			saynn("[say=jacki]N-no..[/say]")
+			saynn("[say=jacki]Н-нет..[/say]")
 
-			saynn("Looks like she still needs more forced fucking.")
+			saynn("Похоже, ей всё ещё нужно больше принудительного траха.")
 
-		saynn("After that great pounding, you finally pull your cock out, leaving that {jackiButt} asshole to gape and leak your seed. Jacki is panting heavily, her anal ring pulsing at the rate of her heartbeat.")
+		saynn("После этой мощной долбежки ты наконец вынимаешь свой член, оставляя этот {jackiButt} анус широко раззявленным и сочащимся твоим семенем. Джеки тяжело дышит, и её анальное кольцо пульсирует в такт сердцебиению.")
 
-		saynn("Time to go.")
+		saynn("Пора идти.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_grab_anal_pullout"):
 		playAnimation(StageScene.SexBehind, "tease", {npc="jacki", pcCum=true, npcCum=true, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("You pull your cock out at the last possible moment before your shaft starts throbbing and unleashing its load all over Jacki's fluffy ass.")
+		saynn("Ты вытаскиваешь член в самый последний момент, прежде чем твой ствол начнет пульсировать и извергнуть всю порцию прямо на пушистую задницу Джеки.")
 
-		saynn("She is still whining and sobbing softly.. You give her rear a loud smack, making her clench more.")
+		saynn("Она всё еще тихо скулит и всхлипывает.. Ты звонко шлепаешь её по заднице, заставляя её сжаться еще сильнее.")
 
-		saynn("[say=jacki]Ah..[/say]")
+		saynn("[say=jacki]Ах...[/say]")
 
-		saynn("[say=pc]What a whore.[/say]")
+		saynn("[say=pc]Ну и шлюха.[/say]")
 
 		if (corruption > 0.9):
-			saynn("[say=jacki]T-thank you.. nh-h..[/say]")
+			saynn("[say=jacki]С-спасибо.. ахх..[/say]")
 
-			saynn("Looks like you have corrupted her into a complete buttslut by now.")
+			saynn("Похоже, к этому моменту ты окончательно превратил её в настоящую жопошлепку.")
 
 		else:
-			saynn("[say=jacki]N-no..[/say]")
+			saynn("[say=jacki]Н-нет..[/say]")
 
-			saynn("Looks like she still needs more forced fucking.")
+			saynn("Похоже, ей всё ещё нужно больше принудительного траха.")
 
-		saynn("After that great pounding, you leave that {jackiButt} asshole to gape and get up. Jacki is panting heavily, her anal ring pulsing at the rate of her heartbeat.")
+		saynn("После этой мощной долбежки ты оставляешь этот {jackiButt} анус раззявленным и встаешь. Джеки тяжело дышит, и её анальное кольцо пульсирует в такт сердцебиению.")
 
-		saynn("Time to go.")
+		saynn("Пора идти.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_grab_strapon_pick"):
-		saynn("Pick what strapon you wanna use to rail Jacki's ass.")
+		saynn("Выбери страпон, которым хочешь трахать Джеки в задницу.")
 
 		addStraponButtons2()
 		if (false):
-			addButton("Nope", "You shouldn't see this", "do_grab_strapon")
+			addButton("Неа", "Тебе не стоит этого видеть", "do_grab_strapon")
 	if(state == "do_grab_strapon"):
 		playAnimation(StageScene.SexBehind, "tease", {npc="jacki", bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("That girl is not walking away unbroken. You stop choking her.. just so you can push her down, put a strapon harness around your waist, and then pin her with the weight of your own {pc.thick} body. One of your hands holds her face pressed into the ground while the second already aligns your new toy with her {jackiButt} asshole.")
+		saynn("Эта девчонка не уйдет отсюда целой и невредимой. Ты перестаешь душить её... только для того, чтобы повалить её на пол, нацепить страпон на пояс и придавить её весом своего {pc.thick} тела. Одной рукой ты прижимаешь её лицо к земле, а второй уже прицеливаешь свою новую игрушку к её {jackiButt} анусу.")
 
 		if (buttScore <= 0):
-			saynn("Jacki feels your strapon prodding her super tight star.. and does her best to resist, trying to crawl away from under you.")
+			saynn("Джеки чувствует, как страпон тычет в её супер-узкое сфинктерное кольцо... и изо всех сил пытается сопротивляться, пытаясь уползти из-под тебя.")
 
-			saynn("[say=jacki]H-hey.. I don't do butt stuff.. please..[/say]")
+			saynn("[say=jacki]Эй... я не занимаюсь анальным... пожалуйста...[/say]")
 
-			saynn("Sounds like not your problem. You just smack her against the floor to keep her from resisting while also putting more strain on her virgin asshole.")
+			saynn("Похоже, это не твоя забота. Ты просто шлепаешь ее об пол, чтобы она не сопротивлялась, попутно сильнее растягивая ее девственный анус.")
 
-			saynn("[say=pc]Shut up and quit clenching.[/say]")
+			saynn("[say=pc]Заткнись и перестань сжиматься![/say]")
 
-			saynn("[say=jacki]Ow.. ah.. N-no..[/say]")
+			saynn("[say=jacki]Ой... ах... Н-нет...[/say]")
 
-			saynn("Well, she asked for it.")
+			saynn("Ну, она сама напросилась.")
 
 		elif (buttScore <= 3):
-			saynn("Jacki feels your strapon prodding her tight star.. and keeps resisting, trying to crawl away from under you. She has some experience but it's obvious that she isn't eager to receive more today.")
+			saynn("Джеки чувствует, как страпон тычет в её узкое сфинктерное кольцо... и продолжает сопротивляться, пытаясь уползти из-под тебя. У неё есть некоторый опыт, но очевидно, что сегодня она не горит желанием принимать добавку.")
 
-			saynn("[say=jacki]H-hey.. Not my butt.. please..[/say]")
+			saynn("[say=jacki]Эй... только не в задницу... пожалуйста...[/say]")
 
-			saynn("It's not like she got any other holes to fuck between her legs. You just smack her against the floor to keep her from resisting while also putting more strain on her tight asshole.")
+			saynn("Не то чтобы у нее были другие дырки между ног, чтобы их трахать. Ты просто шлепаешь ее об пол, чтобы она не сопротивлялась, попутно сильнее растягивая ее тугой анус.")
 
-			saynn("[say=pc]Shut up and quit clenching.[/say]")
+			saynn("[say=pc]Заткнись и перестань сжиматься![/say]")
 
-			saynn("[say=jacki]Ow.. ah.. N-no..[/say]")
+			saynn("[say=jacki]Ой... ах... Н-нет...[/say]")
 
-			saynn("Well, she asked for it.")
+			saynn("Ну, она сама напросилась.")
 
 		elif (buttScore <= 6):
-			saynn("Jacki feels your strapon prodding her anal star that received some training by now. But having a stretched asshole doesn't make her resist any less than before. The whore is trying to throw you off her.. but she isn't strong enough.")
+			saynn("Джеки чувствует, как твой страпон ковыряет её анус — сфинктер уже достаточно натренирован. Но даже растянутая дырка не заставляет её сопротивляться меньше, чем раньше. Шлюха пытается сбросить тебя с себя... но она недостаточно сильна.")
 
-			saynn("[say=jacki]That's my asshole.. please..[/say]")
+			saynn("[say=jacki]Это мой анус... пожалуйста...[/say]")
 
-			saynn("She is not wrong. But she sure is annoying. You smack her against the floor to keep her from resisting while also putting more strain on her dirty asshole.")
+			saynn("Она не ошибается. Но она чертовски раздражает. Ты шлепаешь её об пол, чтобы она не сопротивлялась, и одновременно сильнее растягиваешь её грязную дырку.")
 
-			saynn("[say=pc]Shut up and quit clenching.[/say]")
+			saynn("[say=pc]Заткнись и перестань сжиматься![/say]")
 
-			saynn("[say=jacki]Ow.. ah.. N-no..[/say]")
+			saynn("[say=jacki]Ой... ах... Н-нет...[/say]")
 
-			saynn("Well, she asked for it.")
+			saynn("Ну, она сама напросилась.")
 
 		else:
-			saynn("Jacki's ass is trained extremely well, her sensitive star obediently stretching while your strapon is prodding it. But having a stretched asshole doesn't make her resist any less than before. The whore is trying to throw you off her.. but she isn't strong enough.")
+			saynn("Задница Джеки натренирована просто великолепно: её чувствительный сфинктер послушно растягивается под толчками твоего страпона. Но даже растянутая дырка не заставляет её сопротивляться меньше, чем раньше. Шлюха пытается сбросить тебя с себя... но она недостаточно сильна.")
 
-			saynn("[say=jacki]My asshole.. getting forcibly stretched.. So rough.. ah..[/say]")
+			saynn("[say=jacki]Мой анус... его насильно растягивают... Так грубо... ах...[/say]")
 
-			saynn("Almost like she gets off it. Maybe constant ass-fucking has finally gotten to her head. You smack her against the floor to keep her from resisting while also putting more strain on her dirty asshole.")
+			saynn("Такое ощущение, будто ей это даже нравится. Возможно, постоянный трах в задницу наконец-то вскружил ей голову. Ты шлепаешь её об пол, чтобы подавить сопротивление и еще сильнее растянуть её грязную дырку.")
 
-			saynn("[say=pc]Shut up and quit clenching.[/say]")
+			saynn("[say=pc]Заткнись и перестань сжиматься![/say]")
 
-			saynn("[say=jacki]Ow.. ah.. N-no..[/say]")
+			saynn("[say=jacki]Ой... ах... Н-нет...[/say]")
 
-			saynn("Well, she asked for it.")
+			saynn("Ну, она сама напросилась.")
 
-		addButton("Ram it in", "Fuck that asshole", "do_grab_strapon_ramitin")
+		addButton("Всаживай на полную", "Трахнуть этот анус", "do_grab_strapon_ramitin")
 	if(state == "do_grab_strapon_ramitin"):
 		playAnimation(StageScene.SexBehind, "sex", {npc="jacki", bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true}})
 		if (buttScore <= 0):
-			saynn("Your hands maintain a firm grasp on her body as you keep guiding your rubber cock into her with increasing power. Poor Jacki is whining and squirming while her virgin-like asshole is being forcibly spread wide open.")
+			saynn("Твои руки крепко держат её тело, пока ты с нарастающей силой вгоняешь в неё свой резиновый член. Бедная Джеки скулит и извивается, пока её почти девственный анус насильно разрывают на ширину.")
 
-			saynn("[say=jacki]It h-hurts..[/say]")
+			saynn("[say=jacki]Б-больно...[/say]")
 
-			saynn("Good. You ram the rest of the length inside, causing Jacki to gasp and attempt to arch her back.. a loud cry escapes her lungs shortly after.")
+			saynn("Хорошо. Ты вгоняешь оставшуюся длину до упора, заставляя Джеки ахнуть и попытаться выгнуться в пояснице... спустя мгновение из её груди вырывается громкий крик.")
 
-			saynn("[say=jacki]Agh!.. you fuck..[/say]")
+			saynn("[say=jacki]Ах!.. сука..[/say]")
 
-			saynn("You pull your toy a bit back just to ram it inside yet again, sending another powerful impulse through that wolfie, her legs and arms shaky, her toes curling.")
+			saynn("Ты слегка оттягиваешь игрушку назад, чтобы снова с размаху вогнать её внутрь, посылая очередной мощный импульс этой волчице; её руки и ноги дрожат, а пальцы ног поджимаются.")
 
-			saynn("Jacki is whining and clinging onto the stone tiles as you keep fucking her ass, gradually stretching her inner walls to accommodate the size of your strapon. There is some bleeding as it is bruising her from the inside.. but that just provides extra lube.")
+			saynn("Джеки скулит и вцепляется в каменную плитку, пока ты трахаешь её в зад, постепенно растягивая её внутренние стенки, чтобы они приняли размер твоего страпона. Идет небольшая кровь, так как он оставляет внутренние синяки... но это лишь служит дополнительной смазкой.")
 
 		elif (buttScore <= 3):
-			saynn("Your hands maintain a firm grasp on her body as you keep guiding your rubber cock into her with increasing power. Poor Jacki is whining and squirming while her tight asshole is being forcibly spread wide open.")
+			saynn("Твои руки крепко держат её тело, пока ты с нарастающей силой вгоняешь в неё свой резиновый член. Бедная Джеки скулит и извивается, пока её узкий анус насильно разрывают на ширину.")
 
-			saynn("[say=jacki]Fuck.. my ass..[/say]")
+			saynn("[say=jacki]Блядь.. моя задница..[/say]")
 
-			saynn("You get tired of it and suddenly ram the rest of the length inside, making Jacki gasp and produce a loud painful cry, her inner walls clenching around your toy tightly.")
+			saynn("Тебе это надоедает, и ты внезапно вбиваешь оставшуюся длину до упора, заставляя Джеки ахнуть и издать громкий болезненный крик, пока её внутренние стенки плотно сжимаются вокруг твоей игрушки.")
 
-			saynn("[say=jacki]AGH!..[/say]")
+			saynn("[say=jacki]АГХ!..[/say]")
 
-			saynn("You pull that cock a bit back just to ram it inside yet again, sending another powerful impulse through that wolfie, her legs and arms shaky, her toes curling.")
+			saynn("Ты чуть оттягиваешь свой член назад, чтобы снова с силой вогнать его внутрь, посылая очередной мощный импульс этой волчице; её руки и ноги дрожат, а пальцы ног сводит судорогой.")
 
-			saynn("Jacki is whining and clinging onto the stone tiles as you keep fucking her ass, gradually stretching her inner walls to accommodate your new size. At least there is no bleeding, Jacki's ass seems to be somewhat stretchy by now.")
+			saynn("Джеки скулит и вцепляется в каменную плитку, пока ты продолжаешь трахать её в задницу, постепенно растягивая её внутренние стенки под свой новый размер. По крайней мере, крови нет — похоже, задница Джеки уже стала довольно эластичной.")
 
 		elif (buttScore <= 6):
-			saynn("Your hands maintain a firm grasp on her body as you keep guiding your rubber cock into her with increasing power. Then, a few seconds later, you ram your whole length inside, making Jacki gasp and produce a loud noise that is a mix between pain and.. pleasure.")
+			saynn("Твои руки крепко сжимают её тело, пока ты с нарастающей силой направляешь свой резиновый член в неё. Спустя пару секунд ты вбиваешь его целиком, заставляя Джеки ахнуть и издать громкий звук, в котором смешались боль и... наслаждение.")
 
-			saynn("[say=jacki]Fuck!.. Agh!.. my ass..[/say]")
+			saynn("[say=jacki]Бля!.. Агх!.. моя задница..[/say]")
 
-			saynn("Her inner walls clench around your toy tightly as you keep forcing it deeper and deeper, testing the limits of that buttslut. More little noises escape from the girl, her legs and arms shaky, her toes curling.")
+			saynn("Её внутренние стенки плотно обхватывают твою игрушку, пока ты продолжаешь втискивать её всё глубже и глубже, проверяя на прочность эту задрочку. Из девушки вырываются новые звуки, её руки и ноги дрожат, а пальцы ног поджимаются.")
 
-			saynn("Jacki is whining and clinging onto the stone tiles as you keep fucking her ass, gradually stretching her inner walls to accommodate your size. Jacki's ass is quite stretchy by now.. but still tight enough to make you feel good.")
+			saynn("Джеки скулит и вцепляется в каменную плитку, пока ты трахаешь её в зад, постепенно растягивая её стенки, чтобы они приняли твой размер. К этому моменту задница Джеки уже довольно эластична... но всё ещё достаточно тугая, чтобы ты получал кайф.")
 
 		else:
-			saynn("Since that ass is so stretchy, you easily ram your whole rubber length inside, making Jacki gasp and produce a loud noise that is a mix between pain and.. passion.")
+			saynn("Поскольку её задница такая растяжимая, ты с лёгкостью вгоняешь всю свою резиновую длину внутрь, заставляя Джеки ахнуть и издать громкий звук, в котором смешались боль и... страсть.")
 
-			saynn("[say=jacki]Fuck!.. Agh!.. my ass.. so stretched..[/say]")
+			saynn("[say=jacki]Бля!.. Агх!.. моя задница.. так растянута..[/say]")
 
-			saynn("Her inner walls still clench around your toy as you keep forcing it deeper and deeper, testing the limits of that buttslut. More little noises escape from the girl, her legs and arms shaky, her toes curling.")
+			saynn("Её внутренние стенки всё ещё сжимают твою игрушку, пока ты продолжаешь втискивать её всё глубже и глубже, проверяя на прочность эту задрочку. Из девушки вырываются новые звуки, её руки и ноги дрожат, а пальцы ног поджимаются.")
 
-			saynn("Jacki is whining and clinging onto the stone tiles as you keep pounding her ass relentlessly.")
+			saynn("Джеки скулит и вцепляется в каменную плитку, пока ты безжалостно вколачиваешь свой член в её задницу.")
 
-		addButton("Faster", "Fuck her faster", "do_grab_strapon_faster")
+		addButton("Быстрее", "Трахать её быстрее", "do_grab_strapon_faster")
 	if(state == "do_grab_strapon_faster"):
 		playAnimation(StageScene.SexBehind, "fast", {npc="jacki", bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("Each your thrust is forceful and unrelenting, designed to fuck Jacki into the ground. By this point she isn't resisting anymore.. there is no point.. Jacki is just whining quietly as your hips slap against her fluffy butt.")
+		saynn("Каждый твой толчок мощный и неумолимый, словно ты хочешь вбить Джеки в самый пол. К этому моменту она уже не сопротивляется... в этом нет смысла... Джеки лишь тихо скулит, пока твои бёдра с хлопком впечатываются в её мягкую попку.")
 
 		if (corruption > 0.7):
-			saynn("[say=jacki]So fucking g-good.. ngh-h..[/say]")
+			saynn("[say=jacki]Блядь, как же п-приятно.. ахх..[/say]")
 
 		else:
-			saynn("[say=jacki]Nghh-h..[/say]")
+			saynn("[say=jacki]Нгххх..[/say]")
 
-		saynn("Her body is trembling.. until she cums. Her neglected pussy is pulsing against the piercings and creates a puddle of girlcum on the ground. Her painful cry of ecstasy grow louder, her walls gripping your strapon tightly.")
+		saynn("Её тело дрожит... пока она не кончает. Её заброшенная киска пульсирует на пирсинге, оставляя на полу лужицу девичьей смазки. Её болезненный крик экстаза становится всё громче, а стенки плотно обхватывают твой страпон.")
 
-		addButton("Continue", "See what happens next", "do_grab_strapon_pullout")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_grab_strapon_pullout")
 	if(state == "do_grab_strapon_pullout"):
 		playAnimation(StageScene.SexBehind, "tease", {npc="jacki", bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("No point in keeping that rubber cock inside her anymore. You pull it out and rub it dry between her buttcheeks, humiliating that slut more.")
+		saynn("Нет смысла больше держать этот резиновый член внутри неё. Ты вытаскиваешь его и вытираешь насухо между её ягодицами, ещё сильнее унижая эту шлюху.")
 
-		saynn("She is still whining and sobbing softly.. You give her rear a loud smack, making her clench more.")
+		saynn("Она всё еще тихо скулит и всхлипывает.. Ты звонко шлепаешь её по заднице, заставляя её сжаться еще сильнее.")
 
-		saynn("[say=jacki]Ah..[/say]")
+		saynn("[say=jacki]Ах...[/say]")
 
-		saynn("[say=pc]What a whore.[/say]")
+		saynn("[say=pc]Ну и шлюха.[/say]")
 
 		if (corruption > 0.9):
-			saynn("[say=jacki]T-thank you.. nh-h..[/say]")
+			saynn("[say=jacki]С-спасибо.. ахх..[/say]")
 
-			saynn("Looks like you have corrupted her into a complete buttslut by now.")
+			saynn("Похоже, к этому моменту ты окончательно превратил её в настоящую жопошлепку.")
 
 		else:
-			saynn("[say=jacki]N-no..[/say]")
+			saynn("[say=jacki]Н-нет..[/say]")
 
-			saynn("Looks like she still needs more forced fucking.")
+			saynn("Похоже, ей всё ещё нужно больше принудительного траха.")
 
-		saynn("After that great pounding, you leave that {jackiButt} asshole to gape and get up. Jacki is panting heavily, her anal ring pulsing at the rate of her heartbeat.")
+		saynn("После этой мощной долбежки ты оставляешь этот {jackiButt} анус раззявленным и встаешь. Джеки тяжело дышит, и её анальное кольцо пульсирует в такт сердцебиению.")
 
-		saynn("Time to go.")
+		saynn("Пора идти.")
 
-		addButton("Continue", "See what happens next", "endthescene_unequpstrapon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_unequpstrapon")
 	if(state == "do_grab_sounding"):
 		if (soundScore <= 0):
-			saynn("The girl's pussy hole is obviously out of question, the metal rings are holding it shut. But what about the other hole that's just under her clit? You use your digits to spread those folds as much as the piercings allow and notice that she already has something in there.")
+			saynn("Про её киску явно можно забыть — металлические кольца держат её плотно закрытой. Но как насчёт другого отверстия, что прямо под клитором? Ты раздвигаешь складки пальцами настолько, насколько позволяют пирсинги, и замечаешь, что там уже что-то есть.")
 
-			saynn("[say=jacki]Hey, don't touch there.. Agh![/say]")
+			saynn("[say=jacki]Эй, не трогай там... Агх![/say]")
 
-			saynn("You pull out a little dildo-shaped sounding rod that is connected to the clit ring by a little chain. This dildo is smaller than your pinky finger.. but still has a knot at the base.")
+			saynn("Ты вытаскиваешь небольшой зонд в форме дилдо, соединённый с кольцом на клиторе тонкой цепочкой. Этот дилдо меньше твоего мизинца... но у него всё равно есть утолщение у основания.")
 
-			saynn("[say=pc]You are into fucking your urethra, huh?[/say]")
+			saynn("[say=pc]Тебе нравится трахать свой уретральный канал, да?[/say]")
 
-			saynn("[say=jacki]What? No! Stop it, please..[/say]")
+			saynn("[say=jacki]Что? Нет! Прекрати, пожалуйста...[/say]")
 
-			saynn("She says no but what you see paints a different picture. One of your hands still holds her throat while the second one presses it's index finger against that little hole and starts to prod the opening, trying to work itself in.")
+			saynn("Она говорит «нет», но то, что ты видишь, рисует совсем другую картину. Одной рукой ты всё ещё сжимаешь её горло, а указательным пальцем второй руки ты давишь на это маленькое отверстие и начинаешь прощупывать вход, пытаясь втиснуться внутрь.")
 
-			saynn("[say=jacki]Ngh-h! It hurts!..[/say]")
+			saynn("[say=jacki]Нгх-х! Больно!..[/say]")
 
-			saynn("You manage to slip just the tip of your finger.. while tearing through her sensitive flesh in the moment, causing a little bleeding. Looks like she hasn't trained that hole enough.. so might as well help her.")
+			saynn("Тебе удаётся просунуть лишь самый кончик пальца... разрывая в этот момент её чувствительную плоть, из-за чего выступает немного крови. Похоже, она недостаточно тренировала это отверстие... так что самое время ей помочь.")
 
-			saynn("You catch that dangling little dildo and press it against her urethra instead. Jacki throws her head back as you force it inside her bruised hole and proceed to slide it inside back and forth.")
+			saynn("Ты подхватываешь этот болтающийся дилдо и вместо пальца прижимаешь его к её уретре. Джеки запрокидывает голову, когда ты силой вталкиваешь его в её избитое отверстие и начинаешь двигать им туда-сюда.")
 
-			saynn("[say=jacki]Ngh-h!..[/say]")
+			saynn("[say=jacki]Нгх-х!..[/say]")
 
-			saynn("Her stitched-up pussy responds swiftly by twitching, her muscles tensing up actively. That little hole is incredibly tight but with some extra force you manage to shove the little knot it as well, knot-fucking that pisshole and causing more bleeding.")
+			saynn("Её зашитая киска мгновенно отзывается судорожным подёргиванием, мышцы активно напрягаются. Это крошечное отверстие невероятно узкое, но приложив дополнительное усилие, тебе удаётся протолкнуть туда ещё и маленький узелок, насилуя её сфинктер и вызывая ещё большее кровотечение.")
 
-			saynn("Soon enough, a painful cry escapes her lips as her pisshole pushes the dildo out with a strong stream of transparent fluids. Jacki is squirting while her body is shaking under your relentless onslaught.")
+			saynn("Вскоре из её уст вырывается болезненный крик, когда её мочевое отверстие выталкивает дилдо мощным потоком прозрачной жидкости. Джеки кончает струёй, пока её тело содрогается под твоим беспощадным натиском.")
 
-			saynn("[say=jacki]Fuck..[/say]")
+			saynn("[say=jacki]Блядь..[/say]")
 
-			saynn("She is panting heavily, her little pisshole pulsing with the afterglow of that strange climax. You decide to leave her urethra in the state that you found it in and plug it with the little rod, causing Jacki to whine.")
+			saynn("Она тяжело дышит, её маленькое отверстие пульсирует от послевкусия этого странного оргазма. Ты решаешь оставить её уретру в том состоянии, в котором нашёл, и заткнуть её маленьким стержнем, заставляя Джеки жалобно заскулить.")
 
 		elif (soundScore <= 2):
-			saynn("You spread Jacki's cunt and see that the little dildo-rod is still shoved into her pussy. She shivers as you tug on it.")
+			saynn("Ты раздвигаешь киску Джеки и видишь, что маленький стержень-дилдо всё ещё торчит в её пизде. Она вздрагивает, когда ты тянешь за него.")
 
-			saynn("[say=jacki]Hey.. ah.. please.. not that..[/say]")
+			saynn("[say=jacki]Эй.. ах.. пожалуйста.. только не так..[/say]")
 
-			saynn("That was a weak attempt at begging. So you purposefully yank the rod out, causing Jacki to arch her back and let out a painful cry, her pisshole twitching, the skin around it looking a bit red.")
+			saynn("Это была слабая попытка взмолиться. Поэтому ты намеренно резко вырываешь стержень, заставляя Джеки выгнуться дугой и издать болезненный крик; её отверстие дёргается, а кожа вокруг него выглядит слегка покрасневшей.")
 
-			saynn("[say=jacki]F-fuck..[/say]")
+			saynn("[say=jacki]Б-бля..[/say]")
 
-			saynn("You decide to test that hole with your digit, kneading and prodding it. The tip of your digit slides in somewhat easily but after that it encounters very tight inner walls, almost like a barricade.")
+			saynn("Ты решаешь проверить это отверстие пальцем, разминая и прощупывая его. Кончик пальца входит довольно легко, но затем натыкается на очень тугие внутренние стенки, похожие на баррикаду.")
 
-			saynn("So after fingering it for a bit, you switch back to the knotted urethra rod and use it instead, sliding it inside Jacki's hole, fucking it like that.")
+			saynn("Поманив её пальцами какое-то время, ты переключаешься обратно на узловатый уретральный стержень и используешь его, вгоняя внутрь дырочки Джеки и трахая её таким образом.")
 
-			saynn("[say=jacki]It hurts-s..[/say]")
+			saynn("[say=jacki]Больно-о..[/say]")
 
-			saynn("You're not sure if that's true. Jacki is whining.. but also moaning occasionally, her body responds by making her constrained pussy wet. You keep choking her at the same time, adding to the sensations.")
+			saynn("Ты не уверен, правда ли это. Джеки скулит... но время от времени и стонет, а её тело реагирует, делая её зажатую киску влажной. Ты продолжаешь одновременно придушивать её, усиливая ощущения.")
 
-			saynn("And soon enough, Jacki reaches some kind of peak. Her body starts convulsing with the force of her orgasm, leaving her trembling and gasping for breath. A stream of her girlcum pushes the rod out of her pisshole as she squirts, her whole body is quivering under your onslaught.")
+			saynn("И вскоре Джеки достигает своего пика. Её тело начинает содрогаться от силы оргазма, оставляя её дрожащей и хватающей ртом воздух. Поток её девичьей смазки выталкивает стержень из мочеиспускательного канала во время её сквирта, а всё её тело мелко дрожит под твоим натиском.")
 
-			saynn("[say=jacki]Nhh-h-h!..[/say]")
+			saynn("[say=jacki]Нхх-х-х!..[/say]")
 
-			saynn("After that powerful moment, Jacki is left breathless, the fur on her thighs wet from her arousal. You decide to plug her little hole after training it, making Jacki moan again.")
+			saynn("После этого мощного момента Джеки остается без дыхания, а мех на её бедрах намок от возбуждения. Ты решаешь заткнуть её маленькую дырочку после тренировки, заставляя Джеки снова застонать.")
 
-			saynn("[say=pc]Slut.[/say]")
+			saynn("[say=pc]Шлюха.[/say]")
 
 		else:
 		#elif (soundScore <= 4):
-			saynn("You spread Jacki's cunt and see that the little dildo-rod is still shoved into her pussy. She shivers as you tug on it.")
+			saynn("Ты раздвигаешь киску Джеки и видишь, что маленький стержень-дилдо всё ещё торчит в её пизде. Она вздрагивает, когда ты тянешь за него.")
 
-			saynn("[say=jacki]Hey.. ah.. you stretched that hole enough already..[/say]")
+			saynn("[say=jacki]Эй.. ах.. ты и так уже достаточно растянул это отверстие..[/say]")
 
-			saynn("That is for you to decide. You purposefully yank the rod out, causing Jacki to arch her back and let out a painful cry, her pisshole twitching. After that, you quickly move your digits to her urethral opening and begin kneading it with your index finger.")
+			saynn("Это решать тебе. Ты намеренно резко выдергиваешь стержень, заставляя Джеки выгнуться спиной и издать болезненный крик, пока её мочеиспускательный канал судорожно дергается. После этого ты быстро переносишь пальцы к её уретральному отверстию и начинаешь разминать его указательным пальцем.")
 
-			saynn("[say=jacki]F-fuck..[/say]")
+			saynn("[say=jacki]Б-бля..[/say]")
 
-			saynn("Gradually, the muscles there relax enough for you to slip the tip of your finger inside. You're not happy with that though, you keep wiggling it inside and stretching the wet inner walls while Jacki is whining and huffing.")
+			saynn("Постепенно мышцы там расслабляются достаточно, чтобы ты мог просунуть кончик пальца внутрь. Впрочем, ты этим не доволен: ты продолжаешь шевелить им внутри, растягивая влажные внутренние стенки, пока Джеки скулит и тяжело дышит.")
 
-			saynn("[say=jacki]My pisshole is burning..[/say]")
+			saynn("[say=jacki]Моя дырочка горит..[/say]")
 
-			saynn("Doesn't sound like a problem to you. You keep fingering her urethra, gradually working in more of your finger, spreading the fleshy walls. After that you just switch to finger-fucking it, pulling your digit out just to slide it fully inside.")
+			saynn("Для тебя это не кажется проблемой. Ты продолжаешь возиться её пальцем в уретре, постепенно проталкивая его всё глубже и растягивая плотные стенки. После этого ты просто переходишь к полноценному фингер-траху, вытаскивая палец лишь для того, чтобы снова с силой вогнать его внутрь.")
 
-			saynn("[say=jacki]Ah-h!..[/say]")
+			saynn("[say=jacki]Ах-х!..[/say]")
 
-			saynn("Clearly it brings a lot of discomfort to her. But at the same time, her pussy is only getting more wet, dripping juices onto the floor while your second hand keeps lightly choking the girl.")
+			saynn("Очевидно, что это причиняет ей массу дискомфорта. Но в то же время её киска становится всё более мокрой, соки капают прямо на пол, пока твоя вторая рука слегка сжимает горло девушки.")
 
-			saynn("Jacki's shaky eyes keep rolling up, her maw opened, her tongue drooling. She is blushing deeply while you finger her hole.. hole that is not supposed to be fingered at all. And yet, the slut is squirming actively, little moans keep escaping from her.")
+			saynn("Дрожащие глаза Джеки закатываются, рот приоткрыт, с языка течет слюна. Она заливается густым румянцем, пока ты ковыряешься в её дырочке... в дырочке, в которую вообще-то не должны совать пальцы. И всё же, эта шлюшка активно извивается, из неё то и дело вырываются тихие стоны.")
 
-			saynn("And soon, the sensations become overwhelming. Jacki is producing a long passionate cry while her pussy squirts, pushing your digit out and showering your hand with her juices.")
+			saynn("Вскоре ощущения становятся запредельными. Джеки издает долгий страстный крик, когда её киска начинает кончать, выталкивая твой палец и заливая твою руку её соками.")
 
-			saynn("You decide to slap that pussy with your palm while she is still cumming, causing Jacki to jerk and produce another cry, her pussy pulses and squirts a little more.")
+			saynn("Ты решаешь шлепнуть ладонью по её киске прямо в момент оргазма, отчего Джеки вздрагивает и вскрикивает снова, а её влагалище пульсирует и выдает еще порцию смазки.")
 
 			if (corruption > 0.5):
-				saynn("[say=jacki]F-f-fu-uck!.. Feels so fucking good!..[/say]")
+				saynn("[say=jacki]Б-б-блядь!.. Как же охеренно!..[/say]")
 
-				saynn("Her corruption is messing with her mind it seems.")
+				saynn("Похоже, её развращенность начинает туманить ей разум.")
 
 			else:
-				saynn("[say=jacki]F-f-fu-uck!..[/say]")
+				saynn("[say=jacki]Б-б-блядь!..[/say]")
 
-			saynn("Even after that powerful orgasm, Jacki is still quivering from the afterglow, her little stretched pisshole twitching. You plug it back and let go of the girl's neck.")
+			saynn("Даже после такого мощного оргазма Джеки всё еще дрожит от послевкусия, а её растянутое отверстие мочеиспускательного канала подергивается. Ты снова вставляешь палец внутрь и ослабляешь хватку на её шее.")
 
 			if (corruption > 0.9):
-				saynn("[say=jacki]T-thank you for.. stretching my pisshole..[/say]")
+				saynn("[say=jacki]С-спасибо, что... растянул мою дырочку...[/say]")
 
-				saynn("So cute. You can't help but to smack her ass.")
+				saynn("Такая милашка. Ты просто не можешь удержаться, чтобы не шлепнуть её по заднице.")
 
-		saynn("That was fun. But it's time to go.")
+		saynn("Было весело. Но пора двигаться дальше.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_grab_urethra_fuck"):
 		playAnimation(StageScene.Choking, "tease", {npc="jacki", bodyState={exposedCrotch=true,hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("You feel like you trained that pisshole enough.. so it's time to have actual fun with it.")
+		saynn("Кажется, ты уже достаточно потренировал эту дырочку... пора заняться с ней настоящим делом.")
 
-		saynn("Jacki's eyes widen as you expose your {pc.penis} and guide it towards her slit.")
+		saynn("Глаза Джеки расширяются, когда ты обнажаешь свой {pc.penis} и направляешь его к её щели.")
 
-		saynn("[say=jacki]H-hey.. what are you..[/say]")
+		saynn("[say=jacki]Эй... ты что...[/say]")
 
-		saynn("Her question is answered when the tip of your member finds her urethra and begins putting pressure on it. That instantly causes Jacki to start resisting. She pulls her body away and starts trying to pry your fingers off her neck..")
+		saynn("Вопрос получает ответ, когда кончик твоего члена находит её уретру и начинает давить на неё. Это мгновенно заставляет Джеки сопротивляться. Она отстраняется всем телом и пытается отодрать твои пальцы от своей шеи...")
 
-		saynn("[say=jacki]N-no! Not there! F-fuck off!.. You will kill me![/say]")
+		saynn("[say=jacki]Н-нет! Не туда! Б-блядь, отвали!.. Ты же меня убьешь![/say]")
 
-		saynn("[say=pc]If you want roughness so much..[/say]")
+		saynn("[say=pc]Раз уж тебе так хочется грубости...[/say]")
 
-		saynn("You smack Jacki against one of the rocks, sending a painful impulse through her back. After that you increase the pressure on her throat, choking the wolfie hard. She opens her mouth.. but no noises can come out anymore.")
+		saynn("Ты впечатываешь Джеки в одну из скал, отчего по её спине проходит болезненный импульс. После этого ты усиливаешь хватку на её горле, крепко сдавливая шею волчицы. Она открывает рот... но звуки больше не вырываются наружу.")
 
-		saynn("[say=pc]I can kill you anyway, see?[/say]")
+		saynn("[say=pc]Я всё равно могу тебя убить, видишь?[/say]")
 
-		saynn("Her eyes turn desperate, tears stream down her cheeks. You align your cock with her pisshole again and start trying to penetrate it. Her little hole is incredibly tight no matter how trained it is.. but you don't stop applying more pressure. Jacki gasps silently as her hole that was never supposed to be stretched is getting stretched open wide..")
+		saynn("В её глазах читается отчаяние, по щекам текут слёзы. Ты снова приставляешь свой член к её мочеиспускательному каналу и начинаешь пытаться войти в него. Её крошечное отверстие невероятно узкое, как бы она его ни тренировала... но ты продолжаешь давить всё сильнее. Джеки беззвучно ахает, когда её дырочка, которую вовсе не планировали растягивать, начинает широко раскрываться...")
 
-		addButton("Ram it in", "Time to have fun", "do_grab_urethra_fuck_ram")
+		addButton("Всаживай на полную", "Пора повеселиться", "do_grab_urethra_fuck_ram")
 	if(state == "do_grab_urethra_fuck_ram"):
 		playAnimation(StageScene.Choking, "inside", {npc="jacki", bodyState={exposedCrotch=true,hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("Somehow, miraculously, you manage to shove some of your cock inside that little hole. Jacki's eyes roll up from the unimaginative pain that she can't even explain. Her urethra is looking unnaturally stretched with the sensitive skin being very red and bleeding in a few places. This is the definition of sticking it up the wrong hole.. but it feels so good, the tightness is making you grunt.")
+		saynn("Каким-то чудом тебе удаётся протолкнуть часть члена в это маленькое отверстие. Глаза Джеки закатываются от неописуемой боли, которую она даже не может объяснить. Её уретра выглядит неестественно растянутой, чувствительная кожа покраснела и местами кровоточит. Это и есть то самое определение — «засунуть не в ту дырку»... но ощущения чертовски хороши, от этой тесноты ты невольно рычишь.")
 
-		saynn("[say=pc]Such a tight bitch.[/say]")
+		saynn("[say=pc]Какая же узкая сучка.[/say]")
 
-		saynn("You see that Jacki is about to black out and relax the grip on her neck, letting her breath. The poor wolfie is gasping and whining, her body squirming non-stop.")
+		saynn("Ты видишь, что Джеки вот-вот отключится, и ослабляешь хватку на её шее, давая ей вздохнуть. Бедная волчица тяжело дышит и скулит, её тело непрестанно извивается.")
 
-		addButton("Fuck", "Start moving", "do_grab_urethra_fuck_move")
+		addButton("Блядь", "Начать двигаться", "do_grab_urethra_fuck_move")
 	if(state == "do_grab_urethra_fuck_move"):
 		playAnimation(StageScene.Choking, "sex", {npc="jacki", bodyState={exposedCrotch=true,hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("Penetrating that pisshole was fun.. but you want more. And so you begin to move your hips gently, pulling your cock back just to slide it inside again, trying to shove it a little deeper each time. That sends new waves of weird sensations through Jacki, pretty much her whole body is fighting this.")
+		saynn("Проникновение в мочеиспускательный канал было забавным... но тебе хочется большего. И ты начинаешь плавно двигать бёдрами, то вынимая член, то снова вставляя его, стараясь каждый раз загнать его чуть глубже. Это посылает новые волны странных ощущений по всему телу Джеки, которое буквально борется с этим вторжением.")
 
-		saynn("[say=jacki]H-hurts-s-s..[/say]")
+		saynn("[say=jacki]Б-больно-о-о...[/say]")
 
-		saynn("Yeah, you notice some blood smears on your dick as you start fucking her.. but that blood just acts like lube, making it easier for you to start ramping up the pace.")
+		saynn("Да, ты замечаешь следы крови на своём члене, когда начинаешь её трахать... но эта кровь работает как смазка, позволяя тебе легче наращивать темп.")
 
-		saynn("[say=pc]Maybe your cunt isn't so useless after all.[/say]")
+		saynn("[say=pc]Может, твоя киска не такая уж и бесполезная.[/say]")
 
-		saynn("[say=jacki]Nghh-h-h..[/say]")
+		saynn("[say=jacki]Нгхх-х-х..[/say]")
 
-		saynn("Very soon Jacki throws her head back, her body is shaking as her body goes through some kind of weird climax. Climax during which she can't stop whining. And then another one not even a minute later. The painful stimulation is making Jacki stick her tongue out and drool, her eyes defocus.")
+		saynn("Вскоре Джеки запрокидывает голову, её тело сотрясает дрожь от какого-то странного оргазма. Во время этого пика она не может перестать скулить. А уже через минуту наступает следующий. От болезненной стимуляции Джеки высунула язык и пускает слюни, а взгляд её расфокусирован.")
 
-		saynn("All the while you are having the time of your life, fucking one of the most tight holes that you ever fucked. The pleasure is so strong that you have already reached the edge..")
+		saynn("Всё это время ты наслаждаешься жизнью, трахая одно из самых узких отверстий, что тебе когда-либо попадались. Наслаждение настолько сильное, что ты уже на самом пределе...")
 
-		saynn("Obviously you're not gonna miss the chance to creampie her.. This might be the closest you get to breeding her.")
+		saynn("Очевидно, ты не упустишь шанс кончить ей внутрь... Возможно, это самое близкое к полноценному осеменению, на что ты сможешь рассчитывать.")
 
-		addButton("Cum inside", "Breed Jacki's pisshole", "do_grab_urethra_fuck_cum")
+		addButton("Кончить внутрь", "Осеменить мочевой канал Джеки", "do_grab_urethra_fuck_cum")
 	if(state == "do_grab_urethra_fuck_cum"):
 		playAnimation(StageScene.Choking, "inside", {npc="jacki", pcCum=true, npcCum=true, bodyState={exposedCrotch=true,hard=true}, npcBodyState={exposedCrotch=true}})
-		saynn("You welcome that orgasm and shove your cock as deep as that pisshole allows. Moans leave your mouth as your throbbing member starts stuffing Jacki's bladder full of your thick virile {pc.cum}..")
+		saynn("Ты навстречу принимаешь этот оргазм и вгоняешь свой член так глубоко, насколько позволяет её мочевой канал. С твоих губ срываются стоны, когда твой пульсирующий орган начинает наполнять мочевой пузырь Джеки твоей густой, мощной {pc.cum}..")
 
-		saynn("[say=jacki]Nh-h-h!.. M-my.. p-pisshole..[/say]")
+		saynn("[say=jacki]Нх-х-х!.. М-моё.. м-мочевое..[/say]")
 
-		saynn("So strange. And yet. So good. As you pull out, Jacki's stretched fuckhole starts leaking your seed, mixed with her blood. Yeah.. Jacki will need that hole patched up after what you did.")
+		saynn("Так странно. И всё же... так хорошо. Когда ты выходишь, растянутое отверстие Джеки начинает подтекать твоим семенем, смешанным с её кровью. Да уж... Джеки придётся заштопать эту дырку после того, что ты с ней сделал.")
 
-		saynn("[say=jacki]Nh-h.. ow-w..[/say]")
+		saynn("[say=jacki]Нх-х.. ой-й..[/say]")
 
-		saynn("Is that your problem though? Well.. not really.. but it would be nice if this slut didn't somehow die. So you should probably help her a bit.")
+		saynn("Но разве в этом твоя проблема? Ну... не совсем... но было бы неплохо, если бы эта сучка каким-то образом не сдохла. Так что тебе стоит ей немного помочь.")
 
-		addButton("Medical", "Bring Jacki there", "bring_jacki_to_medical")
+		addButton("Медпункт", "Привести Джеки туда", "bring_jacki_to_medical")
 	if(state == "bring_jacki_to_medical"):
 		aimCameraAndSetLocName("med_lobby_start")
 		GM.pc.setLocation("med_lobby_start")
 		playAnimation(StageScene.Solo, "stand")
-		saynn("And so you grab Jacki and forcibly pull her behind you while she leaves a red and white trail behind her.")
+		saynn("И вот ты хватаешь Джеки и силой тащишь её за собой, пока она оставляет за собой красно-белый след.")
 
-		saynn("[say=jacki]Ow-ow.. f-fuck..[/say]")
+		saynn("[say=jacki]Ой-ой... б-блядь...[/say]")
 
-		saynn("[say=pc]If you tell anyone about who did this, it's gonna get worse.[/say]")
+		saynn("[say=pc]Если кому-то расскажешь, кто это сделал, станет только хуже.[/say]")
 
-		saynn("[say=jacki]O-okay..[/say]")
+		saynn("[say=jacki]Х-хорошо...[/say]")
 
-		saynn("You bring her to the medical wing and give her to the nurses. People here are used to this kind of stuff.. but even they look surprised when they see what someone managed to do with Jacki's urethra.")
+		saynn("Ты приводишь её в медблок и отдаёшь медсёстрам. Местные привыкли к подобному... но даже они выглядят удивлёнными, когда видят, что кому-то удалось сотворить с уретрой Джеки.")
 
-		saynn("When asked, you just say that you found her like this. Problem solved. Jacki won't die now.")
+		saynn("На вопросы ты просто отвечаешь, что нашёл её в таком состоянии. Проблема решена. Теперь Джеки не умрёт.")
 
-		saynn("Surely this redeems you. Yes.")
+		saynn("Определённо, это тебя искупает. Да.")
 
-		saynn("Time to go.")
+		saynn("Пора идти.")
 
-		addButton("Continue", "See what happens next", "endthescene_removeurethracum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene_removeurethracum")
 	if(state == "do_enslave_jacki"):
 		playAnimation(StageScene.Duo, "stand", {npc="jacki"})
-		saynn("After everything that happened.. you feel like Jacki is finally ready. You walk up to her and catch her slutty gaze.")
+		saynn("После всего случившегося... кажется, Джеки наконец-то готова. Ты подходишь к ней и ловишь её похотливый взгляд.")
 
-		saynn("[say=pc]How is this little whore doing?[/say]")
+		saynn("[say=pc]Ну как там наша маленькая шлюшка?[/say]")
 
-		saynn("Calling her dirty words only makes her more eager to get up and turn around for you, presenting her butt. Her paws spread and the tail sways out of the way.")
+		saynn("От грязных слов она становится только сильнее — ей так и хочется развернуться к тебе задом. Её лапы раздвигаются, а хвост так и норовит уйти с дороги.")
 
-		saynn("[say=jacki]I'm doing good! Do you wanna use this ass? Wruff~.[/say]")
+		saynn("[say=jacki]У меня всё супер! Хочешь использовать эту жопку? Рррр~![/say]")
 
-		saynn("Always so eager. Almost too eager.")
+		saynn("Вечно она такая нетерпеливая. Даже слишком.")
 
-		saynn("[say=pc]Nah, I wanted to tell you something else.[/say]")
+		saynn("[say=pc]Да нет, я хотел сказать тебе кое-что другое.[/say]")
 
-		saynn("[say=jacki]Oh?[/say]")
+		saynn("[say=jacki]О?[/say]")
 
-		saynn("Your hand reaches for her ponytail and yanks on it, causing pain to Jacki. And yet, she still somehow manages to sound slutty.")
+		saynn("Твоя рука тянется к её хвосту и резко дергает его, причиняя Джеки боль. И всё же, она умудряется звучать при этом чертовски похотливо.")
 
-		saynn("[say=jacki]Ah-h~..[/say]")
+		saynn("[say=jacki]Ах-х~..[/say]")
 
-		saynn("[say=pc]I wanna make you mine.[/say]")
+		saynn("[say=pc]Я хочу сделать тебя своей.[/say]")
 
-		saynn("Jacki's pupils visibly increase, her tail starts wagging on its own.")
+		saynn("Зрачки Джеки заметно расширяются, а хвост начинает вилять сам по себе.")
 
-		saynn("[say=jacki]You do? You wanna make me your personal buttslut??[/say]")
+		saynn("[say=jacki]Правда? Хочешь сделать меня своей личной жопошлюхой??[/say]")
 
-		saynn("Suddenly you hear a different voice.")
+		saynn("Вдруг ты слышишь другой голос.")
 
-		saynn("[say=eliza]Oh hey. I've been looking for you.. two.[/say]")
+		saynn("[say=eliza]О, привет. Я как раз искала вас... двоих.[/say]")
 
-		addButton("Continue", "See what happens next", "do_enslave_eliza")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_enslave_eliza")
 	if(state == "do_enslave_eliza"):
 		addCharacter("eliza")
 		playAnimation(StageScene.Duo, "stand", {pc="jacki", npc="eliza"})
-		saynn("You turn your head and see a cute feline doctor. She smiles while your hand is still holding Jacki's hair tightly.")
+		saynn("Ты поворачиваешь голову и видишь милую кошкодевочку-врача. Она улыбается, пока твоя рука всё ещё крепко сжимает волосы Джеки.")
 
-		saynn("[say=eliza]Doctor Quinn here. Did I arrive at the wrong time?[/say]")
+		saynn("[say=eliza]Доктор Куинн на связи. Я не слишком вовремя пришла?[/say]")
 
-		saynn("[say=jacki]Hey, doctor. I'm being made into a personal fucktoy~.[/say]")
+		saynn("[say=jacki]О, доктор. Меня тут делают личной секс-игрушкой~.[/say]")
 
-		saynn("She said it so proudly. Absolutely zero shame.")
+		saynn("Она сказала это с такой гордостью. Вообще без капли стыда.")
 
-		saynn("[say=eliza]I kinda heard that, sorry~.[/say]")
+		saynn("[say=eliza]Что-то вроде того, извините~.[/say]")
 
-		saynn("Jacki doesn't seem to be mad at the feline. Huh.")
+		saynn("Джеки, кажется, совсем не злится на кошку. Хм.")
 
-		saynn("[say=pc]Why are you here, doctor?[/say]")
+		saynn("[say=pc]Что вы здесь забыли, доктор?[/say]")
 
-		saynn("Doctor Quinn looks around and shrugs.")
+		saynn("Доктор Куинн оглядывается по сторонам и пожимает плечами.")
 
-		saynn("[say=eliza]I wanted to check something. But now I wanna help you instead~.[/say]")
+		saynn("[say=eliza]Я хотела кое-что проверить. Но теперь вместо этого я хочу тебе помочь~.[/say]")
 
-		saynn("The feline slowly approaches you two. She reaches her hand out and pats Jacki, causing her to bark happily.")
+		saynn("Кошка медленно приближается к вам двоим. Она протягивает руку и гладит Джеки, отчего та радостно лает.")
 
-		saynn("[say=eliza]Jacki is so much more obedient lately. I check on her occasionally. To make sure her piercings are not tampered with. Before you, I had to be.. a little forceful.[/say]")
+		saynn("[say=eliza]Джеки в последнее время стала куда послушнее. Время от времени я проверяю её. Чтобы убедиться, что с её пирсингом никто не баловался. До тебя мне приходилось действовать... чуть более решительно.[/say]")
 
-		saynn("[say=jacki]Eliza was trying to break me~. But she couldn't.[/say]")
+		saynn("[say=jacki]Элиза пыталась сломить меня~. Но у неё ничего не вышло.[/say]")
 
-		saynn("The feline chuckles softly as she scritches the wolfie under the chin.")
+		saynn("Кошка тихо посмеивается, почесывая волчицу под подбородком.")
 
-		saynn("[say=eliza]That's a little extreme. Nah, I was seeking a little more obedience, you know? It's an experiment.[/say]")
+		saynn("[say=eliza]Это уже слишком. Да нет, я просто стремилась к чуть большему послушанию, понимаешь? Это эксперимент.[/say]")
 
-		saynn("Doctor Quinn looks at you now.")
+		saynn("Доктор Куинн теперь смотрит на тебя.")
 
-		saynn("[say=eliza]And it looks like female chastity doesn't really work on its own. There is always gotta be someone to help.. accelerate.. the process. So.. Thank you for that~. Invaluable data right there.[/say]")
+		saynn("[say=eliza]И, похоже, женское воздержание само по себе работает не очень эффективно. Всегда должен быть кто-то, кто поможет... ускорить... процесс. Так что... спасибо тебе за это~. Это бесценные данные.[/say]")
 
-		saynn("[say=pc]So.. sounds like your experiment is over. Are you gonna remove Jacki's piercings?[/say]")
+		saynn("[say=pc]Значит... похоже, твой эксперимент окончен. Ты собираешься снять пирсинг с Джеки?[/say]")
 
-		saynn("Doctor Quinn raises a brow.")
+		saynn("Доктор Куинн вскидывает бровь.")
 
-		saynn("[say=eliza]You know.. Let's talk about that in a different place. Follow me.[/say]")
+		saynn("[say=eliza]Знаешь... давай обсудим это в другом месте. Иди за мной.[/say]")
 
-		saynn("Here's hoping she doesn't decide to do something similar to you.")
+		saynn("Остается надеяться, что она не решит выкинуть что-нибудь эдакое, как ты.")
 
-		addButton("Follow", "See where she brings you", "do_enslave_follow")
+		addButton("Следовать", "Посмотреть, куда она тебя приведет", "do_enslave_follow")
 	if(state == "do_enslave_follow"):
 		aimCameraAndSetLocName("medical_confessionary")
-		saynn("You follow the feline through the whole prison until you end up in the medical wing. Doctor Quinn walks you through the staff-only doors and then invites you to enter a special room.")
+		saynn("Ты следуешь за этой кошечкой через всю тюрьму, пока вы не оказываетесь в медицинском крыле. Доктор Куинн проводит тебя через двери для персонала и приглашает войти в специальную комнату.")
 
-		saynn("It's.. dimly lit. Your feet instantly feel the soft carpet. There is a big chair, sofa, and a little dorky table. But the cozy furniture is contrasted by a few metal racks and hooks.. clearly designed for heavy bondage. If you didn't know this prison, you might as well think that it's some sort of torture room.")
+		saynn("Там... полумрак. Ноги мгновенно погружаются в мягкий ковер. В комнате стоят большое кресло, диван и какой-то нелепы, дурацкий столик. Но уютная мебель контрастирует с несколькими металлическими стойками и крюками... явно предназначенными для жесткого бондажа. Если бы ты не знал эту тюрьму, ты бы решил, что это какая-то комната для пыток.")
 
-		saynn("[say=eliza]Alright. I will need you here, in this spot, Jacki.[/say]")
+		saynn("[say=eliza]Хорошо. Джеки, тебе нужно будет встать вот здесь, на этом месте.[/say]")
 
-		saynn("The feline points at the spot right under one of those metal hooks.")
+		saynn("Кошечка указывает на место прямо под одним из тех металлических крюков.")
 
-		saynn("[say=pc]What are you..[/say]")
+		saynn("[say=pc]Что ты...[/say]")
 
-		saynn("[say=eliza]Don't worry~.[/say]")
+		saynn("[say=eliza]Не волнуйся~.[/say]")
 
-		saynn("Her saying that only makes you worry. But Jacki does exactly as told, positioning herself in the told spot.")
+		saynn("От её слов ты волнуешься еще сильнее. Но Джеки делает именно то, что ей велели, занимая указанное место.")
 
-		saynn("[say=eliza]Alright. Now..[/say]")
+		saynn("[say=eliza]Отлично. А теперь...[/say]")
 
-		addButton("Continue", "See what happens next", "do_enslave_choice")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_enslave_choice")
 	if(state == "do_enslave_choice"):
 		playAnimation(StageScene.HangingDuo, "idle", {npc="pc", pc="jacki", bodyState={naked=true}})
-		saynn("Doctor undresses the wolfie and then grabs two cuffs before putting them on Jacki's wrists. These cuffs already have chains that are attached to the hook at the ceiling. All the doctor has to do now is tighten them up, causing Jacki to pull her paws up and stand on her toes.")
+		saynn("Доктор раздевает волчицу, затем хватает наручники и застегивает их на запястьях Джеки. К этим наручникам уже прикреплены цепи, ведущие к крюку на потолке. Теперь доктору остается только затянуть их, отчего Джеки приходится подтянуть лапы и встать на цыпочки.")
 
-		saynn("[say=jacki]Wruff~. Kinky.[/say]")
+		saynn("[say=jacki]Ррр~. Пикантно.[/say]")
 
-		saynn("She talks with you while doing a quick visual check of Jacki's body and her piercings.")
+		saynn("Она болтает с тобой, попутно проводя быстрый визуальный осмотр тела Джеки и её пирсинга.")
 
-		saynn("[say=eliza]You know.. Jacki did tell me about you. How wet she becomes the moment you appear anywhere close. Right, Jacki?[/say]")
+		saynn("[say=eliza]Знаешь... Джеки рассказывала мне о тебе. О том, как она течет, стоит тебе только появиться где-то рядом. Правда, Джеки?[/say]")
 
-		saynn("[say=jacki]Yes.. I'm wet right now in fact..[/say]")
+		saynn("[say=jacki]Да... если честно, я уже вся мокрая...[/say]")
 
-		saynn("The feline chuckles and then looks at you.")
+		saynn("Кошка посмеивается, а затем переводит взгляд на тебя.")
 
-		saynn("[say=eliza]Me and Jacki didn't really start on the right foot. But thanks to you, we are friends now~.[/say]")
+		saynn("[say=eliza]Мы с Джеки не сразу поладили. Но благодаря тебе мы теперь подруги~.[/say]")
 
-		saynn("[say=jacki]Wruff..[/say]")
+		saynn("[say=jacki]Вруфф...[/say]")
 
-		saynn("[say=pc]So..[/say]")
+		saynn("[say=pc]Так вот...[/say]")
 
-		saynn("She nods-nods and quickly grabs some things. Tools and such.")
+		saynn("Она кивает и быстро хватает кое-какие вещи. Инструменты и прочее.")
 
-		saynn("[say=eliza]I wonder. Jacki. Do you want those piercings removed?[/say]")
+		saynn("[say=eliza]Интересно. Джеки, ты хочешь снять этот пирсинг?[/say]")
 
-		saynn("[say=jacki]My cunt is useless and I'm totally okay with that.. I remember missing it at first.. But I got forcibly trained to be a buttslut and I love it~.[/say]")
+		saynn("[say=jacki]Моя киска бесполезна, и меня это вполне устраивает... Поначалу я даже скучала по ней... Но меня насильно дрессировали быть задроткой-попой, и теперь я просто обожаю это~.[/say]")
 
-		saynn("The feline hums and grabs some extra tools. Then she returns to you.")
+		saynn("Кошка мурлычет и берет дополнительные инструменты. Затем она возвращается к тебе.")
 
-		saynn("[say=eliza]Well.. I was thinking of not doing this. But since you helped me and Jacki so much, I wanna give you a choice.[/say]")
+		saynn("[say=eliza]Ну... вообще-то я думала этого не делать. Но раз уж ты так сильно помог мне и Джеки, я хочу дать тебе выбор.[/say]")
 
-		saynn("She presents you some kind of.. little padlocks.. and a key.")
+		saynn("Она протягивает тебе какие-то... маленькие замочки... и ключ.")
 
-		saynn("[say=eliza]Jacki likes her piercings. So we'd rather keep them. But I can replace her current permanent ones with these. With them on, you, and only you, will be able to temporarily.. unlock.. Jacki's pussy at any time.[/say]")
+		saynn("[say=eliza]Джеки любит свои пирсинги. Так что мы бы предпочли их оставить. Но я могу заменить её нынешние постоянные украшения на эти. С ними ты, и только ты, сможешь временно... отпереть... киску Джеки в любое время.[/say]")
 
-		saynn("Huh. That would probably mean Jacki will lose her buttslut status. After that, the doctor presents you something else.. in her paws are a piercing tool, a tattoo gun and some piercings.")
+		saynn("Хм. Это, вероятно, будет означать, что Джеки потеряет статус задротки-попы. После этого доктор преподносит тебе кое-что еще... в её лапах инструмент для пирсинга, тату-машинку и несколько украшений.")
 
-		saynn("[say=eliza]Or, in case you want Jacki to keep her current piercings, I can offer you an opportunity to add some extra piercings to Jacki's body. Her nips are still not pierced and there is also a good spot for an extra one on her pussy~.[/say]")
+		saynn("[say=eliza]Или, если ты хочешь, чтобы Джеки оставила свои нынешние пирсинги, я могу предложить тебе возможность добавить ей еще несколько украшений. Её соски всё еще не проколоты, а на киске тоже есть отличное место для лишнего пирсинга~.[/say]")
 
-		saynn("That explains the piercings..")
+		saynn("Это объясняет пирсинг...")
 
-		saynn("[say=pc]What's the tattoo gun for?[/say]")
+		saynn("[say=pc]А для чего тату-машинка?[/say]")
 
-		saynn("[say=eliza]Oh, well.. from what I've gathered, Jacki is not a fan of branding. But for you she can make an exception, right Jacki?[/say]")
+		saynn("[say=eliza]О, ну... насколько я поняла, Джеки не фанатка клеймения. Но ради тебя она может сделать исключение, правда, Джеки?[/say]")
 
-		saynn("[say=jacki]Anything, yes.. wruff.. I'm your slave~.[/say]")
+		saynn("[say=jacki]Что угодно, да.. рррф.. я твоя рабыня~.[/say]")
 
-		saynn("[say=eliza]Good girl. So yeah, you can tattoo something on her butt if you want. Anything you want really. Just know that there would be no way of removing it.[/say]")
+		saynn("[say=eliza]Хорошая девочка. Так что да, ты можешь набить ей тату на заднице, если хочешь. Вообще что угодно. Только знай, что смыть её будет невозможно.[/say]")
 
-		saynn("[say=pc]Can I choose both?[/say]")
+		saynn("[say=pc]А можно выбрать оба варианта?[/say]")
 
-		saynn("The feline raises a brow and puts on a cute cunning smile.")
+		saynn("Кошка приподнимает бровь и расплывается в милой, лукавой улыбке.")
 
-		saynn("[say=eliza]I know you like stretching things but my gratitude can only span so long~.[/say]")
+		saynn("[say=eliza]Я знаю, что ты любишь растягивать удовольствие, но моя благодарность не может длиться вечно~.[/say]")
 
-		saynn("So this is it, huh. This is where you decide.")
+		saynn("Значит, вот оно что. Вот здесь тебе и предстоит решить.")
 
-		addButton("Free pussy", "Replace her permanent chastity piercings with the unlockable ones", "do_enslave_freepussy")
-		addButton("Extra piercings", "Just add some extra piercings to Jacki's body", "do_enslave_extrapiercings")
-		addButton("Piercings+Branding", "Add extra piercings to Jacki's body and brand her as your slave", "do_enslave_brand")
+		addButton("Свободная киска", "Заменить её постоянные пирсинги целомудрия на разблокируемые", "do_enslave_freepussy")
+		addButton("Дополнительный пирсинг", "Просто добавить Джеки несколько лишних проколов", "do_enslave_extrapiercings")
+		addButton("Пирсинг и брендирование", "Добавить Джеки дополнительные проколы и заклеймить её как свою рабыню", "do_enslave_brand")
 	if(state == "do_enslave_extrapiercings"):
-		saynn("Well, might as well keep Jacki as a buttslut forever.")
+		saynn("Ну, можно оставить Джеки вечной залупой для задниц.")
 
-		saynn("[say=pc]Give me the piercing tool.[/say]")
+		saynn("[say=pc]Дай мне инструмент для пирсинга.[/say]")
 
-		saynn("The feline smiles and hands you the tool loaded with 3 piercings.")
+		saynn("Кошка улыбается и протягивает тебе инструмент, заряженный на 3 прокола.")
 
-		saynn("You walk up to Jacki and look at her small chest.")
+		saynn("Ты подходишь к Джеки и смотришь на её маленькую грудь.")
 
-		saynn("[say=pc]Time to leave my mark on you.[/say]")
+		saynn("[say=pc]Пора оставить на тебе мой след.[/say]")
 
-		saynn("[say=jacki]Wruff.. making this whore squirm, owner..[/say]")
+		saynn("[say=jacki]Рррф... заставить эту шлюху извиваться, хозяин...[/say]")
 
-		saynn("She is already getting into the role, huh. You bring the tool to one of her hard perky nipples.. and pull the trigger.. causing it to make a little hole in it and wire the fancy piercing through it.")
+		saynn("Она уже вживается в роль, а? Ты подносишь инструмент к одному из её твердых, упругих сосков... и нажимаешь на спуск... пробивая маленькое отверстие и пропуская сквозь него изящное украшение.")
 
-		saynn("Jacki gasps and recoils away instinctively.. but it's too late. Her nipple now has a fancy little ring with a cyan gem. You move the tool to her other nipple.. and press the trigger again, adding a piercing there too.")
+		saynn("Джеки ахает и инстинктивно отстраняется... но уже поздно. В её соске теперь красуется изящное колечко с голубым камнем. Ты переводишь инструмент на другой сосок... и снова нажимаешь на спуск, добавляя пирсинг и туда.")
 
-		saynn("[say=jacki]Ah!.. F-fuck.. My nips burn~.[/say]")
+		saynn("[say=jacki]Ах!.. Б-блядь.. Соски так и горят~.[/say]")
 
-		saynn("[say=pc]Good.[/say]")
+		saynn("[say=pc]Умница.[/say]")
 
-		saynn("You look at the doctor.")
+		saynn("Вы смотрите на доктора.")
 
-		saynn("[say=pc]Where was the other good spot?[/say]")
+		saynn("[say=pc]Где была еще одна классная точка?[/say]")
 
-		saynn("The feline takes a spot behind Jacki.. and then points at her ass.. at that small area between her anus and her pussy.")
+		saynn("Кошка занимает место позади Джеки... а затем указывает на её задницу... на ту маленькую область между анусом и киской.")
 
-		saynn("[say=pc]Her taint?[/say]")
+		saynn("[say=pc]Её промежность?[/say]")
 
-		saynn("Jacki gets more wet just from hearing that. She bites her lip.")
+		saynn("Джеки становится еще мокрее только от этих слов. Она прикусывает губу.")
 
-		saynn("[say=pc]Alright. Tail up, slut. This is gonna hurt.[/say]")
+		saynn("[say=pc]Ладно. Хвост вверх, сучка. Будет больно.[/say]")
 
-		saynn("Wolfie obediently moves the tail, giving you full access to her {jackiButt} ass.")
+		saynn("Волфи послушно поднимает хвост, открывая вам полный доступ к её {jackiButt} заднице.")
 
-		saynn("This requires you to be careful. You move the tool to her anal ring and angle it towards her stiched-up pussy.. As you pull the trigger, Jacki lets out a powerful cry. The tool puts a big ring right through the inner wall that divides her two holes, now looking like a little bridge between the two.")
+		saynn("Тут нужно быть осторожным. Вы подносите инструмент к анальному кольцу и направляете его к её зашитой киске... Когда вы нажимаете на спуск, Джеки издает мощный крик. Инструмент пробивает большое кольцо прямо сквозь внутреннюю стенку, разделяющую её два отверстия, которая теперь выглядит как маленький мостик между ними.")
 
-		saynn("[say=jacki]Ah, fuck-k!.. My ass..[/say]")
+		saynn("[say=jacki]Ах, бля-я-ядь!.. Моя задница!..[/say]")
 
-		saynn("Now you see why the feline chained her up. Jacki is squirming actively, thrashing against her restraints.")
+		saynn("Теперь понятно, почему кошечка приковала её цепями. Джеки активно извивается, пытаясь вырваться из оков.")
 
-		saynn("[say=pc]You are now my slave. Understand?[/say]")
+		saynn("[say=pc]Теперь ты мой раб. Понимаешь?[/say]")
 
-		saynn("[say=jacki]Ngh-h.. Y-yes~. I'm your personal buttslut slave. Fuck me any time you want~. As rough as you want~.[/say]")
+		saynn("[say=jacki]Нгх-х.. Д-да~. Я твоя личная рабыня-попатряс~. Трахни меня, когда захочешь~. Насколько захочешь, хоть до боли~.[/say]")
 
-		saynn("That's the spirit. You begin to unchain the wolfie.")
+		saynn("Вот это настрой. Ты начинаешь расцеплять цепи волчицы.")
 
-		addButton("Continue", "See what happens next", "do_enslave_end")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_enslave_end")
 	if(state == "do_enslave_end"):
 		aimCameraAndSetLocName("med_lobby_start")
 		GM.pc.setLocation("med_lobby_start")
 		playAnimation(StageScene.Hug, "hug", {npc="jacki"})
-		saynn("Doctor Quinn guides you back into the medical lobby after you unchain the wolfie.")
+		saynn("Доктор Куинн ведет тебя обратно в медицинское лобби после того, как ты освободила волчицу.")
 
-		saynn("Jacki decides to suddenly hug you tightly. She seems to be happy with your choice. So you hug her back.")
+		saynn("Джеки внезапно решает крепко тебя обнять. Кажется, она довольна твоим выбором. И ты обнимаешь её в ответ.")
 
-		saynn("[say=jacki]Wruf-f-f~. Thank you, for everything.[/say]")
+		saynn("[say=jacki]Вруф-ф-ф~. Спасибо тебе... за всё.[/say]")
 
-		saynn("[say=pc]It's nothing really.[/say]")
+		saynn("[say=pc]Да пустяки, на самом деле.[/say]")
 
-		saynn("[say=jacki]I will be your obedient whore forever~.[/say]")
+		saynn("[say=jacki]Я буду твоей послушной шлюхой вечно~.[/say]")
 
-		saynn("The feline giggles softly and leaves you two be.")
+		saynn("Кошечка тихо хихикает и оставляет вас двоих наедине.")
 
-		saynn("You spend some time like that, hugging.")
+		saynn("Вы какое-то время так и стоите, обнимая друг друга.")
 
-		saynn("[say=jacki]I will be where I usually am if you wanna come find me~.[/say]")
+		saynn("[say=jacki]Если захочешь меня найти, я буду на своем обычном месте~.[/say]")
 
-		saynn("[say=pc]Good.[/say]")
+		saynn("[say=pc]Умница.[/say]")
 
-		saynn("You end the hug and smack her ass firmly, sending her off.")
+		saynn("Вы прерываете объятия и крепко шлепаете её по заднице, отправляя её по делам.")
 
 		saynn("- - - - - -")
 
-		saynn("(( This is where Jacki's content ends. Thank you for playing <3 ))")
-		addButton("Continue", "See what happens next", "endthescene")
+		saynn("(( На этом контент Джеки заканчивается. Спасибо за игру <3 ))")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_enslave_brand"):
-		saynn("Well, might as well keep Jacki as a buttslut forever and also brand her as your property.")
+		saynn("Что ж, можно оставить Джеки вечной задомёдницей и заодно клеймить её как свою собственность.")
 
-		saynn("[say=pc]Give me the tools.[/say]")
+		saynn("[say=pc]Давай инструменты.[/say]")
 
-		saynn("The feline smiles and hands you the piercing tool loaded with 3 piercings.")
+		saynn("Кошка улыбается и протягивает тебе инструмент для пирсинга, заряженный на 3 прокола.")
 
-		saynn("You walk up to Jacki and look at her small chest.")
+		saynn("Ты подходишь к Джеки и смотришь на её маленькую грудь.")
 
-		saynn("[say=pc]Time to leave my mark on you.[/say]")
+		saynn("[say=pc]Пора оставить на тебе мой след.[/say]")
 
-		saynn("[say=jacki]Wruff.. making this whore squirm, owner..[/say]")
+		saynn("[say=jacki]Рррф... заставить эту шлюху извиваться, хозяин...[/say]")
 
-		saynn("She is already getting into the role, huh. You bring the tool to one of her hard perky nipples.. and pull the trigger.. causing it to make a little hole in it and wire the fancy piercing through it.")
+		saynn("Она уже вживается в роль, а? Ты подносишь инструмент к одному из её твердых, упругих сосков... и нажимаешь на спуск... пробивая маленькое отверстие и пропуская сквозь него изящное украшение.")
 
-		saynn("Jacki gasps and recoils away instinctively.. but it's too late. Her nipple now has a fancy little ring with a cyan gem. You move the tool to her other nipple.. and press the trigger again, adding a piercing there too.")
+		saynn("Джеки ахает и инстинктивно отстраняется... но уже поздно. В её соске теперь красуется изящное колечко с голубым камнем. Ты переводишь инструмент на другой сосок... и снова нажимаешь на спуск, добавляя пирсинг и туда.")
 
-		saynn("[say=jacki]Ah!.. F-fuck.. My nips burn~.[/say]")
+		saynn("[say=jacki]Ах!.. Б-блядь.. Соски так и горят~.[/say]")
 
-		saynn("[say=pc]Good.[/say]")
+		saynn("[say=pc]Умница.[/say]")
 
-		saynn("You look at the doctor.")
+		saynn("Вы смотрите на доктора.")
 
-		saynn("[say=pc]Where was the other good spot?[/say]")
+		saynn("[say=pc]Где была еще одна классная точка?[/say]")
 
-		saynn("The feline takes a spot behind Jacki.. and then points at her ass.. at that small area between her anus and her pussy.")
+		saynn("Кошка занимает место позади Джеки... а затем указывает на её задницу... на ту маленькую область между анусом и киской.")
 
-		saynn("[say=pc]Her taint?[/say]")
+		saynn("[say=pc]Её промежность?[/say]")
 
-		saynn("Jacki gets more wet just from hearing that. She bites her lip.")
+		saynn("Джеки становится еще мокрее только от этих слов. Она прикусывает губу.")
 
-		saynn("[say=pc]Alright. Tail up, slut. This is gonna hurt.[/say]")
+		saynn("[say=pc]Ладно. Хвост вверх, сучка. Будет больно.[/say]")
 
-		saynn("Wolfie obediently moves the tail, giving you full access to her {jackiButt} ass.")
+		saynn("Волфи послушно поднимает хвост, открывая вам полный доступ к её {jackiButt} заднице.")
 
-		saynn("This requires you to be careful. You move the tool to her anal ring and angle it towards her stiched-up pussy.. As you pull the trigger, Jacki lets out a powerful cry. The tool puts a big ring right through the inner wall that divides her two holes, now looking like a little bridge between the two.")
+		saynn("Тут нужно быть осторожным. Вы подносите инструмент к анальному кольцу и направляете его к её зашитой киске... Когда вы нажимаете на спуск, Джеки издает мощный крик. Инструмент пробивает большое кольцо прямо сквозь внутреннюю стенку, разделяющую её два отверстия, которая теперь выглядит как маленький мостик между ними.")
 
-		saynn("[say=jacki]Ah, fuck-k!.. My ass..[/say]")
+		saynn("[say=jacki]Ах, бля-я-ядь!.. Моя задница!..[/say]")
 
-		saynn("Now you see why the feline chained her up. Jacki is squirming actively, thrashing against her restraints. That's when the feline doctor offers you the tattoo gun.")
+		saynn("Теперь ты понимаешь, почему кошка приковала её цепями. Джеки активно извивается, брыкаясь в своих оковах. В этот момент кошка-доктор предлагает тебе тату-машинку.")
 
-		saynn("[say=eliza]What are you gonna write on her ass? I can give some suggestions~.[/say]")
+		saynn("[say=eliza]Что ты собираешься написать у неё на заднице? Могу подкинуть пару идей~.[/say]")
 
 		addSlaveTattooNames()
 		if (false):
-			addButton("Error", "You shouldn't see this", "do_enslave_brand_pick")
-		addButton("CUSTOM", "Type in your own tattoo", "do_enslave_brand_type")
+			addButton("Ошибка", "Тебе не стоит этого видеть", "do_enslave_brand_pick")
+		addButton("CUSTOM", "Введите текст вашей татуировки", "do_enslave_brand_type")
 	if(state == "do_enslave_brand_type"):
-		saynn("Type what you want to tattoo on Jacki's ass:")
+		saynn("Напишите, что вы хотите набить на заднице Джеки:")
 
 		addTextbox("jacki_tattoo")
-		addButton("Confirm", "You made your choice", "do_enslave_brand_dotype")
-		addButton("Back", "Never mind", "do_enslave_brand")
+		addButton("Подтвердить", "Вы сделали выбор", "do_enslave_brand_dotype")
+		addButton("Назад", "Проехали", "do_enslave_brand")
 	if(state == "do_enslave_brand_pick"):
-		saynn("And so, after making your choice, you bring the tattoo gun to Jacki's ass and begin to leave a tattoo on it, branding your slave.")
+		saynn("И вот, сделав выбор, вы подносите тату-машинку к заднице Джеки и начинаете выводить татуировку, клеймя свою рабыню.")
 
-		saynn("[say=jacki]Nhh-h-h![/say]")
+		saynn("[say=jacki]Нхх-х-х![/say]")
 
-		saynn("Jacki whines and squirms as you slowly write '"+str(getFlag("JackiModule.Jacki_ch2SlaveText", "buttslut"))+"' on her. The feline doctor is helping you by holding the wolfie still.")
+		saynn("Джеки скулит и извивается, пока вы медленно выводите на ней «"+str(getFlag("JackiModule.Jacki_ch2SlaveText", "buttslut"))+"». Кошка-доктор помогает вам, стараясь не шевелиться.")
 
-		saynn("After some time, you finish the work. It looks glorious, exactly how you wished it to look. Jacki will now carry your mark forever.")
+		saynn("Спустя некоторое время работа закончена. Выглядит великолепно, именно так, как вы и мечтали. Теперь Джеки будет вечно носить ваше клеймо.")
 
-		saynn("[say=pc]You are now my slave. Understand?[/say]")
+		saynn("[say=pc]Теперь ты мой раб. Понимаешь?[/say]")
 
-		saynn("Jacki is still panting softly, recovering from having new piercings and being branded.")
+		saynn("Джеки всё еще тихонько дышит, приходя в себя после новых пирсингов и клеймения.")
 
-		saynn("[say=jacki]Ngh-h.. Y-yes~. I'm your personal buttslut slave. Fuck me any time you want~. As rough as you want~.[/say]")
+		saynn("[say=jacki]Нгх-х.. Д-да~. Я твоя личная рабыня-попатряс~. Трахни меня, когда захочешь~. Насколько захочешь, хоть до боли~.[/say]")
 
-		saynn("That's the spirit. You begin to unchain the wolfie.")
+		saynn("Вот это настрой. Ты начинаешь расцеплять цепи волчицы.")
 
-		addButton("Continue", "See what happens next", "do_enslave_end")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_enslave_end")
 	if(state == "do_enslave_freepussy"):
 		playAnimation(StageScene.HangingDuo, "idle", {npc="eliza", pc="jacki", bodyState={naked=true}})
-		saynn("Obviously, you'd rather help the wolfie enjoy life to its fullest.")
+		saynn("Очевидно, вам больше хочется помочь этой волчице насладиться жизнью по полной.")
 
-		saynn("[say=pc]Remove her chastity piercings.[/say]")
+		saynn("[say=pc]Снять её девственные пирсинги.[/say]")
 
-		saynn("The feline smiles and nods before grabbing some special tool that looks like pliers and approaches Jacki.")
+		saynn("Кошка улыбается и кивает, после чего берет какой-то особый инструмент, похожий на плоскогубцы, и подходит к Джеки.")
 
-		saynn("[say=eliza]Try not to move, dear.[/say]")
+		saynn("[say=eliza]Постарайся не двигаться, дорогая.[/say]")
 
-		saynn("[say=jacki]Wruff.[/say]")
+		saynn("[say=jacki]Рррф.[/say]")
 
-		saynn("She brings the tool to the metal rings that hold Jacki's pussy closed and begins to carefully cut through them, one ring at a time. She keeps the clit piercing, the bell and the little urethra rod untouched though. After pulling each ring out, she replaces them with small padlocks that are roughly the same size and shape but now they each have a keyhole.")
+		saynn("Она подносит инструмент к металлическим кольцам, которые удерживают киску Джеки закрытой, и начинает осторожно перекусывать их, по одному кольцу за раз. При этом она не трогает пирсинг клитора, колокольчик и тонкий стержень в уретре. Вытащив каждое кольцо, она заменяет их маленькими навесными замками, примерно такого же размера и формы, но теперь у каждого есть замочная скважина.")
 
-		saynn("The feline makes sure each one can be unlocked with the special key.. before handing it to you.")
+		saynn("Кошка проверяет, что каждый замок можно открыть специальным ключом... после чего протягивает его тебе.")
 
-		saynn("[say=eliza]Don't break it~.[/say]")
+		saynn("[say=eliza]Только не сломай его~.[/say]")
 
-		saynn("[say=pc]I won't.[/say]")
+		saynn("[say=pc]Не стану.[/say]")
 
-		saynn("The feline giggles and then looks at Jacki and her chains.")
+		saynn("Кошка хихикает, а затем переводит взгляд на Джеки и её цепи.")
 
-		saynn("[say=eliza]Since Jacki is still chained up.. maybe you would like to try her pussy~? I can look away if you want.[/say]")
+		saynn("[say=eliza]Раз уж Джеки всё ещё в цепях... может, ты хочешь попробовать её киску~? Если хочешь, я могу отвернуться.[/say]")
 
 		if (!GM.pc.hasReachablePenis()):
-			saynn("[say=pc]I can't really..[/say]")
+			saynn("[say=pc]Ну, не знаю...[/say]")
 
-			saynn("The feline nods-nods and quickly grabs some strapon harness and offers it to you. This one has a knotted canine dildo installed. Jacki bites her lip when she sees it.")
+			saynn("Кошка закивала и быстро схватила стрэп-он гартер, протягивая его тебе. В этот раз в него был вставлен узловатый фаллос в форме собачьего члена. Увидев это, Джеки закусила губу.")
 
-			saynn("[say=eliza]You can use this~.[/say]")
+			saynn("[say=eliza]Можешь воспользоваться этим~.[/say]")
 
-			saynn("Looks like she is offering..")
+			saynn("Похоже, она предлагает...")
 
-			addButton("Strapon pussy", "Strapon Jacki's pussy with the offered toy", "do_enslave_strapon")
+			addButton("Страпон-вагина", "Трахнуть Джеки страпоном, который она предложила", "do_enslave_strapon")
 		else:
-			saynn("Huh. Jacki bites her lip when she hears that.")
+			saynn("Хм. Услышав это, Джеки прикусывает губу.")
 
-			addButton("Fuck Jacki", "Fuck Jacki's pussy while she is still chained", "do_enslave_fuck")
-		addButton("No fucking", "It's fine", "do_enslave_nofuck")
+			addButton("Трахнуть Джеки", "Трахать Джеки в пизду, пока она всё ещё в цепях", "do_enslave_fuck")
+		addButton("Никакого секса", "Всё в порядке", "do_enslave_nofuck")
 	if(state == "do_enslave_nofuck"):
 		playAnimation(StageScene.HangingDuo, "idle", {npc="pc", pc="jacki", bodyState={naked=true}})
-		saynn("You shake your head.")
+		saynn("Ты качаешь головой.")
 
-		saynn("[say=pc]It's fine, really. Thank you.[/say]")
+		saynn("[say=pc]Всё в порядке, правда. Спасибо.[/say]")
 
-		saynn("You walk up to Jacki and present the key to her pussy.")
+		saynn("Ты подходишь к Джеки и преподносишь ей ключ к её пизде.")
 
-		saynn("[say=pc]You are now my slave. Understand?[/say]")
+		saynn("[say=pc]Теперь ты мой раб. Понимаешь?[/say]")
 
-		saynn("Jacki pants softly, getting heated just watching it.")
+		saynn("Джеки тихонько дышит, заводясь лишь от одного взгляда на это.")
 
-		saynn("[say=jacki]Ngh-h.. Y-yes~. I'm your personal slave. You control my holes and can fuck me any time as rough as you want~.[/say]")
+		saynn("[say=jacki]Нгх-х.. Д-да~. Я твоя личная рабыня. Ты распоряжаешься всеми моими дырками и можешь трахать меня когда угодно и так грубо, как захочешь~.[/say]")
 
-		saynn("That's the spirit. You begin to unchain the wolfie.")
+		saynn("Вот это настрой. Ты начинаешь расцеплять цепи волчицы.")
 
-		addButton("Continue", "See what happens next", "do_enslave_end")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_enslave_end")
 	if(state == "do_enslave_fuck"):
 		playAnimation(StageScene.HangingSex, "tease", {pc="jacki", npc="pc", npcBodyState={naked=true, hard=true}, bodyState={naked=true}})
-		saynn("Why not? You walk up closer to Jacki and bring the key to her pussy. As you unlock each padlock that holds her pussy folds together, little moans escape from the wolfie, her slit dripping juices onto your digits.")
+		saynn("Почему бы и нет? Ты подходишь ближе к Джеки и подносишь ключ к её киске. Пока ты отпираешь каждый замок, удерживающий складки её плоти, из пасти волчицы вырываются тихие стоны, а её щелка смачно орошает твои пальцы соком.")
 
-		saynn("[say=jacki]You wished to breed this slutty cunt for so long, didn't you~.[/say]")
+		saynn("[say=jacki]Ты ведь так долго хотел осеменить эту шлюшью щель, не так ли~?[/say]")
 
-		saynn("Since she is so cocky, you can't help but to slap her pussy lightly. But even that small impact is enough to make Jacki arch her back and gasp.")
+		saynn("Раз уж она такая дерзкая, ты не можешь удержаться и слегка шлепаешь её по киске. Но даже этого легкого удара достаточно, чтобы Джеки выгнулась спиной и ахнула.")
 
-		saynn("[say=jacki]Ah.. fuck~..[/say]")
+		saynn("[say=jacki]Ах.. бля~~..[/say]")
 
-		saynn("After unlocking her pussy, you position yourself behind her and expose your {pc.penis} before thrusting it between her thighs, dangerously close to the unbound flower.")
+		saynn("Раскрыв её киску, ты устраиваешься позади неё и выставляешь свой {pc.penis}, прежде чем втиснуть его между её бедер, опасно близко к распустившемуся цветку.")
 
-		saynn("[say=pc]You are my slave. Understand?[/say]")
+		saynn("[say=pc]Ты моя рабыня. Поняла?[/say]")
 
-		saynn("[say=jacki]I don't know, am I~?[/say]")
+		saynn("[say=jacki]Даже не знаю, а разве нет~?[/say]")
 
-		saynn("Ohh. She is being quite brave for someone in such a vulnerable position.")
+		saynn("Ох. Она ведет себя довольно смело для той, кто находится в столь уязвимом положении.")
 
-		addButton("Penetrate", "Start fuckin'", "do_enslave_fuck_penetrate")
+		addButton("Проникнуть", "Начать трах", "do_enslave_fuck_penetrate")
 	if(state == "do_enslave_fuck_penetrate"):
 		playAnimation(StageScene.HangingSex, "sex", {pc="jacki", npc="pc", npcBodyState={naked=true, hard=true}, bodyState={naked=true}})
-		saynn("And so you align your cock directly with her pussy hole.. and thrust inside. Jacki moans passionately while her slit finally gets penetrated after so much chastity time. Her inner walls are slick and tight, kneading their first cock in a great while.")
+		saynn("И вот ты нацеливаешь свой член прямо в её киску... и входишь внутрь. Джеки страстно стонет, когда её щель наконец-то пробивают после столь долгого времени в целомудрии. Её внутренние стенки влажные и тугие, они жадно обхватывают твой член, который они не чувствовали целую вечность.")
 
-		saynn("[say=jacki]Fuck, this is amazing~..[/say]")
+		saynn("[say=jacki]Бля, это просто охрененно~..[/say]")
 
-		saynn("Your hand lands on her ass and spreads it, giving full access to Jacki's {jackiButt} anus. You decide to prod and rub it with your thumb, letting Jacki feel some familiar sensations as you fuck her.")
+		saynn("Твоя рука ложится на её задницу и раздвигает ягодицы, открывая полный доступ к {jackiButt} анусу Джеки. Ты решаешь потыкать в него и потереть большим пальцем, заставляя Джеки ощущать знакомые ощущения, пока ты её трахаешь.")
 
-		saynn("Chains dangle as you go balls deep on Jacki's cunt. Her wetness allows you to easily reach her cervix and start hammering away at it, sending shivers through her spine.")
+		saynn("Цепи звенят, когда ты заходишь в Джеки по самые яйца. Её влажность позволяет тебе легко добраться до шейки матки и начать молотить по ней, посылая дрожь по всему её позвоночнику.")
 
-		saynn("[say=jacki]Nhh-h~!..[/say]")
+		saynn("[say=jacki]Нхх-х~!..[/say]")
 
-		addButton("Faster", "Fuck her faster", "do_enslave_fuck_faster")
+		addButton("Быстрее", "Трахать её быстрее", "do_enslave_fuck_faster")
 	if(state == "do_enslave_fuck_faster"):
 		playAnimation(StageScene.HangingSex, "fast", {pc="jacki", npc="pc", npcBodyState={naked=true, hard=true}, bodyState={naked=true}})
-		saynn("You increase the pace, fucking that needy slit faster and harder, your hips slamming against her fluffy butt. Loud slutty moans echo around the room, Jacki's tongue is out and drooling.")
+		saynn("Ты ускоряешься, трахая эту голодную щель всё быстрее и жестче, твои бедра с силой впечатываются в её мягкую задницу. Громкие шлюшкие стоны эхом разносятся по комнате, язык Джеки высунут и течет слюна.")
 
-		saynn("[say=jacki]I'm.. I'm.. Nh-h-h!..[/say]")
+		saynn("[say=jacki]Я.. я сейчас.. Нх-х-х!..[/say]")
 
-		saynn("With such an onslaught, it doesn't take long for Jacki to reach her peak. She throws her head back and cries out from pleasure while her unconstrained pussy gets all tight around your cock. At the same time, her cervix does the opposite and becomes softer, allowing you to slowly stretch the little hole with each thrust.")
+		saynn("При таком натиске Джеки не заставит себя долго ждать и достигает пика. Она запрокидывает голову и вскрикивает от удовольствия, пока её освобожденная киска судорожно сжимается вокруг твоего члена. В то же время её шейка матки делает обратное — становится мягче, позволяя тебе медленно растягивать это маленькое отверстие каждым толчком.")
 
-		saynn("Stimulations are so intense that Jacki squirts, pushing the little urethra rod out of her pisshole, followed by a strong stream of transparent juices.")
+		saynn("Стимуляция настолько интенсивная, что Джеки кончает струей, выталкивая крошечный уретральный стержень из своей дырочки, за которым следует мощный поток прозрачного сока.")
 
-		saynn("[say=jacki]I'm your slave! Ah~! Your bitch, your little whore, your plaything, cocksleeve, slut~.[/say]")
+		saynn("[say=jacki]Я твоя рабыня! Ах~! Твоя сучка, твоя маленькая шлюшка, твоя игрушка, твоя куколка для члена, шлюха~.[/say]")
 
-		saynn("Such a dirty slut. Makes you wonder if you should make her even more dirty on the inside or outside. You're close..")
+		saynn("Такая грязная сучка. Так и хочется гадать: стоит ли сделать её ещё грязнее внутри или снаружи. Ты уже на пределе...")
 
-		addButton("Inside", "Cum inside Jacki's womb", "do_enslave_fuck_cuminside")
-		addButton("Pull out", "Cum all over her butt instead", "do_enslave_fuck_pullout")
+		addButton("Внутри", "Кончить прямо в матку Джеки", "do_enslave_fuck_cuminside")
+		addButton("Вытащить", "Кончить вместо этого на её задницу", "do_enslave_fuck_pullout")
 	if(state == "do_enslave_fuck_cuminside"):
 		playAnimation(StageScene.HangingSex, "inside", {pc="jacki", npc="pc", pcCum=true, npcCum=true, npcBodyState={naked=true, hard=true}, bodyState={naked=true}})
-		saynn("Why hold back now? Jacki is yours.")
+		saynn("Зачем сдерживаться сейчас? Джеки принадлежит тебе.")
 
-		saynn("Her pussy is basically milking your cock already anyway, pushing you over the edge. You welcome that, shoving your dick deep inside, breaking into Jacki's womb.")
+		saynn("Её киска и так уже практически доит твой член, подталкивая тебя к краю. Ты принимаешь этот вызов, засаживая член глубоко внутрь и прорываясь прямо в матку Джеки.")
 
-		saynn("[say=jacki]AH-Hh-h!..[/say]")
+		saynn("[say=jacki]АХ-Хх-х!..[/say]")
 
-		saynn("She throws her head back again and squirts while your throbbing member begins to shove its load directly into that babymaker, claiming and marking it with your {pc.cum}!")
+		saynn("Она снова запрокидывает голову и кончает струей, пока твой пульсирующий член начинает вбивать порцию семени прямо в эту «машинку для детей», заявляя права и помечая её своим {pc.cum}!")
 
-		saynn("Jacki is squirming as much as those chains allow, she moans each time your dick pulses and fills her up more.")
+		saynn("Джеки извивается так сильно, насколько позволяют цепи, и стонет каждый раз, когда твой член пульсирует, заполняя её всё сильнее.")
 
-		saynn("[say=jacki]F-fuck.. so much..[/say]")
+		saynn("[say=jacki]Блядь.. так много..[/say]")
 
-		saynn("After breeding that pussy properly, you pull out, letting it drip your seed.")
+		saynn("Настояв как следует в этой киске, ты выходишь, позволяя своей сперме стекать по ней.")
 
-		saynn("[say=pc]Good little breeding bitch.[/say]")
+		saynn("[say=pc]Хорошая сучка для размножения.[/say]")
 
-		saynn("[say=jacki]Wruff-f..[/say]")
+		saynn("[say=jacki]Врррф-ф..[/say]")
 
-		addButton("Continue", "See what happens next", "do_enslave_fuck_afterfuck")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_enslave_fuck_afterfuck")
 	if(state == "do_enslave_fuck_pullout"):
 		playAnimation(StageScene.HangingSex, "tease", {pc="jacki", npc="pc", pcCum=true, npcCum=true, npcBodyState={naked=true, hard=true}, bodyState={naked=true}})
-		saynn("There is no need to breed her. A big belly will only ruin her slim curves.")
+		saynn("Её вовсе не обязательно осеменять. Большой живот только испортит её стройные изгибы.")
 
-		saynn("Her pussy is basically milking your cock already anyway, pushing you over the edge. You catch that moment and pull moments before your member starts to throb and shoot thick {pc.cum} all over that fluffy ass!")
+		saynn("Впрочем, её киска уже практически доит твой член, доводя тебя до предела. Ты ловишь этот момент и вырываешься за мгновение до того, как твой агрегат начнет пульсировать и извергать густую {pc.cum} прямо на эту пушистую задницу!")
 
-		saynn("[say=jacki]Wruf-f-f~.. Yes.. Turn me into a cum dumpster~.[/say]")
+		saynn("[say=jacki]Врррф-ф-ф~.. Да.. Сделай из меня помойку для кончи~.[/say]")
 
-		saynn("You grunt while marking that fur with your seed. Jacki's pussy is still twitching after her own intense orgasm. The wolfie is panting softly.")
+		saynn("Ты кряхтишь, помечая эту шерсть своей спермой. Киска Джеки всё еще подергивается после её собственного мощного оргазма. Волчица тихонько дышит, тяжело переводя дух.")
 
-		saynn("[say=pc]Good little fucktoy.[/say]")
+		saynn("[say=pc]Хорошая маленькая траховая игрушка.[/say]")
 
-		saynn("[say=jacki]Thank you~.[/say]")
+		saynn("[say=jacki]Спасибо~.[/say]")
 
-		addButton("Continue", "See what happens next", "do_enslave_fuck_afterfuck")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_enslave_fuck_afterfuck")
 	if(state == "do_enslave_fuck_afterfuck"):
 		playAnimation(StageScene.HangingDuo, "idle", {npc="pc", pc="jacki", bodyState={naked=true}})
-		saynn("After that great fuck, you return back to the position before her.")
+		saynn("После этого великолепного траха ты возвращаешься в исходную позицию.")
 
-		saynn("[say=pc]So? Who are you.[/say]")
+		saynn("[say=pc]Ну? И кто ты такая?[/say]")
 
-		saynn("[say=jacki]I'm.. I'm your slave~. Use me, abuse me, all you want~.[/say]")
+		saynn("[say=jacki]Я... я твоя рабыня~. Используй меня, насилуй меня, как пожелаешь~.[/say]")
 
-		saynn("[say=pc]Good.[/say]")
+		saynn("[say=pc]Умница.[/say]")
 
-		saynn("You grab the key and begin to slowly lock her pussy padlocks again, forcing her folds to stay closed together again.")
+		saynn("Ты берешь ключ и начинаешь медленно снова защелкивать замки на её киске, заставляя складки плотно сомкнуться.")
 
-		saynn("[say=pc]Your pussy is mine now.[/say]")
+		saynn("[say=pc]Теперь твоя киска принадлежит мне.[/say]")
 
-		saynn("[say=jacki]Yes.. All my holes are..[/say]")
+		saynn("[say=jacki]Да... Все мои дырочки...[/say]")
 
-		saynn("That's the spirit. You begin to unchain the wolfie.")
+		saynn("Вот это настрой. Ты начинаешь расцеплять цепи волчицы.")
 
-		addButton("Continue", "See what happens next", "do_enslave_end")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_enslave_end")
 	if(state == "do_enslave_strapon"):
 		playAnimation(StageScene.HangingSex, "tease", {pc="jacki", npc="pc", npcBodyState={naked=true, hard=true}, bodyState={naked=true}})
-		saynn("Why not? You grab the offered strapon harness and secure it around your waist.")
+		saynn("Почему бы и нет? Ты берешь предложенную порно-шлейку и закрепляешь её на талии.")
 
-		saynn("Then you walk up closer to Jacki and bring the key to her pussy. As you unlock each padlock that holds her pussy folds together, little moans escape from the wolfie, her slit dripping juices onto your digits.")
+		saynn("Затем ты подходишь ближе к Джеки и подносишь ключ к её киске. Когда ты отпираешь каждый замок, удерживающий складки её плоти, из пасти волчицы вырываются тихие стоны, а её щелка смачно сочится соком на твои пальцы.")
 
-		saynn("[say=jacki]You wished to fuck this slutty cunt for so long, didn't you~.[/say]")
+		saynn("[say=jacki]Ты ведь так долго хотел трахнуть эту шлюшковатую киску, верно~?[/say]")
 
-		saynn("Since she is so cocky, you can't help but to slap her pussy lightly. But even that small impact is enough to make Jacki arch her back and gasp.")
+		saynn("Раз уж она такая дерзкая, ты не можешь удержаться и слегка шлепаешь её по киске. Но даже этого легкого удара достаточно, чтобы Джеки выгнулась спиной и ахнула.")
 
-		saynn("[say=jacki]Ah.. fuck~..[/say]")
+		saynn("[say=jacki]Ах.. бля~~..[/say]")
 
-		saynn("After unlocking her pussy, you position yourself behind her and thrust your new rubber cock between her thighs, dangerously close to the unbound flower.")
+		saynn("Отперев её киску, ты устраиваешься позади неё и втискиваешь свой новый резиновый член между её бедер, опасно близко к освобожденному цветку.")
 
-		saynn("[say=pc]You are my slave. Understand?[/say]")
+		saynn("[say=pc]Ты моя рабыня. Поняла?[/say]")
 
-		saynn("[say=jacki]I don't know, am I~?[/say]")
+		saynn("[say=jacki]Даже не знаю, а разве нет~?[/say]")
 
-		saynn("Ohh. She is being quite brave for someone in such a vulnerable position.")
+		saynn("Ох. Она ведет себя довольно смело для той, кто находится в столь уязвимом положении.")
 
-		addButton("Penetrate", "Start fuckin'", "do_enslave_strapon_penetrate")
+		addButton("Проникнуть", "Начать трах", "do_enslave_strapon_penetrate")
 	if(state == "do_enslave_strapon_penetrate"):
 		playAnimation(StageScene.HangingSex, "sex", {pc="jacki", npc="pc", npcBodyState={naked=true, hard=true}, bodyState={naked=true}})
-		saynn("And so you align that strapon directly with her pussy hole.. and thrust inside. Jacki moans passionately while her slit finally gets penetrated after so much chastity time. Her inner walls are slick and tight, kneading their first cock in a great while. It's not exactly a real cock.. but it's good enough.")
+		saynn("И вот ты совмещаешь страпон прямо с её отверстием... и входишь внутрь. Джеки страстно стонет, когда её щелка наконец получает проникновение после столь долгого воздержания. Её внутренние стенки скользкие и тугие, жадно обхватывая первый член за долгое время. Это не совсем настоящий член... но этого вполне достаточно.")
 
-		saynn("[say=jacki]Fuck, this is amazing~..[/say]")
+		saynn("[say=jacki]Бля, это просто охрененно~..[/say]")
 
-		saynn("Your hand lands on her ass and spreads it, giving full access to Jacki's {jackiButt} anus. You decide to prod and rub it with your thumb, letting Jacki feel some familiar sensations as you fuck her.")
+		saynn("Твоя рука ложится на её задницу и раздвигает ягодицы, открывая полный доступ к {jackiButt} анусу Джеки. Ты решаешь потыкать в него и потереть большим пальцем, заставляя Джеки ощущать знакомые ощущения, пока ты её трахаешь.")
 
-		saynn("Chains dangle as you go balls deep on Jacki's cunt. Her wetness allows you to easily reach her cervix and start hammering away at it, sending shivers through her spine.")
+		saynn("Цепи звенят, когда ты заходишь в Джеки по самые яйца. Её влажность позволяет тебе легко добраться до шейки матки и начать молотить по ней, посылая дрожь по всему её позвоночнику.")
 
-		saynn("[say=jacki]Nhh-h~!..[/say]")
+		saynn("[say=jacki]Нхх-х~!..[/say]")
 
-		addButton("Faster", "Fuck her faster", "do_enslave_strapon_faster")
+		addButton("Быстрее", "Трахать её быстрее", "do_enslave_strapon_faster")
 	if(state == "do_enslave_strapon_faster"):
 		playAnimation(StageScene.HangingSex, "fast", {pc="jacki", npc="pc", npcBodyState={naked=true, hard=true}, bodyState={naked=true}})
-		saynn("You increase the pace, fucking that needy slit faster and harder, your hips slamming against her fluffy butt. Loud slutty moans echo around the room, Jacki's tongue is out and drooling.")
+		saynn("Ты ускоряешься, трахая эту голодную щель всё быстрее и жестче, твои бедра с силой впечатываются в её мягкую задницу. Громкие шлюшкие стоны эхом разносятся по комнате, язык Джеки высунут и течет слюна.")
 
-		saynn("[say=jacki]I'm.. I'm.. Nh-h-h!..[/say]")
+		saynn("[say=jacki]Я.. я сейчас.. Нх-х-х!..[/say]")
 
-		saynn("With such an onslaught, it doesn't take long for Jacki to reach her peak. She throws her head back and cries out from pleasure while her unconstrained pussy gets all tight around your rubber cock. At the same time, her cervix does the opposite and becomes softer, allowing you to slowly stretch the little hole with each thrust.")
+		saynn("При таком натиске Джеки не заставит себя долго ждать — она быстро достигает пика. Она запрокидывает голову и вскрикивает от наслаждения, пока её расслабленная киска плотно обхватывает твой резиновый член. В то же время её шейка матки делает обратное — она размягчается, позволяя тебе с каждым толчком медленно растягивать это маленькое отверстие.")
 
-		saynn("Stimulations are so intense that Jacki squirts, pushing the little urethra rod out of her pisshole, followed by a strong stream of transparent juices.")
+		saynn("Стимуляция настолько интенсивная, что Джеки кончает струей, выталкивая крошечный уретральный стержень из своей дырочки, за которым следует мощный поток прозрачного сока.")
 
-		saynn("[say=jacki]I'm your slave! Ah~! Your bitch, your little whore, your plaything, cocksleeve, slut~.[/say]")
+		saynn("[say=jacki]Я твоя рабыня! Ах~! Твоя сучка, твоя маленькая шлюшка, твоя игрушка, твоя куколка для члена, шлюха~.[/say]")
 
-		saynn("Such a dirty slut. Makes you want to be rougher..")
+		saynn("Такая грязная сучка. Так и хочется быть пожёстче...")
 
-		addButton("Knot her", "Knot Jacki's pussy", "do_enslave_strapon_knot")
+		addButton("Завязаться в ней", "Завязать узел в киске Джеки", "do_enslave_strapon_knot")
 	if(state == "do_enslave_strapon_knot"):
 		playAnimation(StageScene.HangingSex, "inside", {pc="jacki", npc="pc", npcBodyState={naked=true, hard=true}, bodyState={naked=true}})
-		saynn("Why hold back now? Jacki is yours.")
+		saynn("Зачем сдерживаться сейчас? Джеки принадлежит тебе.")
 
-		saynn("You pull that rubber cock almost fully out.. just to shove it fully inside moments later. The fat rubber orb puts a crazy amount of pressure on her slit.. until suddenly slipping inside, the tip breaking into Jacki's womb.")
+		saynn("Ты вытаскиваешь этот резиновый член почти полностью... лишь для того, чтобы мгновение спустя вогнать его до самого конца. Жирная резиновая сфера оказывает безумное давление на её щель... пока внезапно не проскальзывает внутрь, и кончик не прорывается в матку Джеки.")
 
-		saynn("[say=jacki]AH-Hh-h!..[/say]")
+		saynn("[say=jacki]АХ-Хх-х!..[/say]")
 
-		saynn("She throws her head back again and squirts while her slit clenches around your toy, making thrusting pretty much impossible.")
+		saynn("Она снова запрокидывает голову и кончает струей, пока её щель судорожно сжимается вокруг твоей игрушки, делая фрикции практически невозможными.")
 
-		saynn("Jacki is squirming as much as those chains allow, she moans each time you try to tug your strapon out. There is a visible bump on her belly, caused by the toy.")
+		saynn("Джеки извивается так сильно, насколько позволяют цепи, и стонет каждый раз, когда ты пытаешься вытащить страпон. На её животе отчетливо виден бугорок от игрушки.")
 
-		saynn("[say=jacki]F-fuck.. so big..[/say]")
+		saynn("[say=jacki]Ф-ф... как же огромно...[/say]")
 
-		saynn("You let that girl enjoy the feeling of being full for some time.. before finally yanking that knotted toy out.")
+		saynn("Ты даёшь девчонке немного насладиться чувством наполненности... прежде чем наконец вырвать завязавшуюся игрушку.")
 
-		saynn("[say=pc]Good little bitch.[/say]")
+		saynn("[say=pc]Хорошая маленькая сучка.[/say]")
 
-		saynn("[say=jacki]Ah! Wruff-f..[/say]")
+		saynn("[say=jacki]Ах! Врррф-ф...[/say]")
 
-		addButton("Continue", "See what happens next", "do_enslave_fuck_afterfuck")
+		addButton("Продолжить", "Смотреть, что будет дальше", "do_enslave_fuck_afterfuck")
 func addPlasticBottleButtons():
 	var items = GM.pc.getInventory().getItemsWithTag(ItemTag.PlasticBottle)
 	for item in items:
@@ -3892,7 +3892,7 @@ func addSlaveTattooNames():
 	var possible = ["Buttslut", str(GM.pc.getName())+"'s slut", str(GM.pc.getName())+"'s whore", str(GM.pc.getName())+"'s Slave", "Cum In My Ass", "Slave", str(GM.pc.getName())+"'s Bitch"]
 
 	for t in possible:
-		addButton(t, "Tattoo this on Jacki's ass", "do_enslave_brand_pick", [t])
+		addButton(t, "Набей это на заднице у Джеки", "do_enslave_brand_pick", [t])
 
 
 func _react(_action: String, _args):

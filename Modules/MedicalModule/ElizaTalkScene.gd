@@ -17,46 +17,46 @@ func _run():
 		if(!GM.main.getModuleFlag("MedicalModule", "Eliza_IntroducedMedical")):
 			GM.main.setModuleFlag("MedicalModule", "Eliza_IntroducedMedical", true)
 			
-			saynn("Medical wing lobby looks bright, the walls are made out of white concrete and are well-lit by many fluorescent lights. Behind the counter you see a doctor, a familiar face, the one who processed you on the day of your arrival. She is sitting on an office chair and sipping coffee. Her mug seems to be a personal one, your gaze catches the words ‘best mom’ written on it.")
+			saynn("Вестибюль медицинского крыла выглядит ярко: стены из белого бетона залиты светом множества люминесцентных ламп. За стойкой вы видите врача — знакомое лицо, та самая женщина, что оформляла вас в день прибытия. Она сидит в офисном кресле и потягивает кофе. Кружка у неё, похоже, личная — ваш взгляд цепляется за надпись «Лучшая мама».")
 
-			saynn("She yawns and then notices your presence. She shifts in her chair and quickly fixes her loose hair bang.")
+			saynn("Она зевает, а затем замечает ваше присутствие. Поерзав в кресле, она поспешно поправляет выбившуюся прядь волос.")
 
-			saynn("[say=eliza]Hey there, inmate. Need something?[/say]")
+			saynn("[say=eliza]О, привет, заключенный. Что-то нужно?[/say]")
 
-			saynn("[say=pc]Just wandering around.[/say]")
+			saynn("[say=pc]Да так, просто брожу по коридорам.[/say]")
 
-			saynn("[say=eliza]Well this is the medical wing, a place where the inmates get fixed, one way or another. I’m just one of the doctors, name is doctor Quinn in case you forgot.[/say]")
+			saynn("[say=eliza]Ну, это медицинское крыло — место, где заключенных латают, так или иначе. Я всего лишь один из врачей, меня зовут доктор Куинн, на случай если ты забыл.[/say]")
 
-			saynn("You look around, the wide counter separates the lobby itself from the staff-only area. On both ends of the lobby there are two airlocks with panels that seem to require special access. There is also a way to another room.")
+			saynn("Вы оглядываетесь: широкая стойка отделяет вестибюль от зоны для персонала. С обоих концов вестибюля расположены два шлюза с панелями, которые, кажется, требуют специального доступа. Также есть проход в другую комнату.")
 
-			saynn("[say=eliza]Without special permission you’re only allowed to stay in the lobby. And the nursery.[/say]")
+			saynn("[say=eliza]Без специального разрешения тебе разрешено находиться только в вестибюле. И в детской.[/say]")
 
-			saynn("[say=pc]Nursery?[/say]")
+			saynn("[say=pc]В детской?[/say]")
 
-			saynn("[say=eliza]Yeah. Do you need something, inmate?[/say]")
+			saynn("[say=eliza]Ага. Тебе что-то нужно, заключенный?[/say]")
 		else:
-			saynn("You approach the counter and are greeted by the familiar feline face. The doc seems to always be sipping coffee out of her mug.")
+			saynn("Вы подходите к стойке, и вас встречает знакомая кошачья мордашка. Кажется, доктор всегда прихлёбывает кофе из своей кружки.")
 
-			saynn("[say=eliza]Dr. Quinn here. Need something?[/say]")
+			saynn("[say=eliza]На связи доктор Куинн. Что-то нужно?[/say]")
 		
 		if(getModule("ElizaModule").canTFEliza()):
 			addButtonAt(14, "TF menu", "Tell Eliza to use or stop using certain transformation drugs!", "openTFMenu")
 		
-		addButton("Talk", "Ask her some questions", "talk")
-		addButton("Appearance", "Take a closer look", "appearance")
+		addButton("Поговорить", "Задать ей несколько вопросов", "talk")
+		addButton("Внешность", "Рассмотреть поближе", "appearance")
 		if(getModuleFlag("MedicalModule", "Med_pcKnowsAboutTests")):
-			addButton("Research", "You're curious about the experiments", "research")
+			addButton("Исследовать", "Вас любопытствуют эксперименты", "research")
 		else:
-			addDisabledButton("Research", "Talk about it with Eliza first")
+			addDisabledButton("Исследовать", "Сначала обсудить это с Элизой")
 		if(getModuleFlag("MedicalModule", "Med_pcKnowsAboutMilking")):
-			addButton("Milking", "See how you can be milked", "milking_menu")
+			addButton("Дойка", "Выяснить, как вас можно подоить", "milking_menu")
 			
 #			if(GM.pc.hasPerk(Perk.MilkNoSoreNipples) || (!getModuleFlag("MedicalModule", "Med_wasMilkedToday", false) && !GM.pc.hasEffect(StatusEffect.SoreNipplesAfterMilking))):
-#				addButton("Milking", "Ask to be milked", "milking")
+#				addButton("Дойка", "Попросить, чтобы вас подоили", "milking")
 #			else:
-#				addDisabledButton("Milking", "Give yourself some rest")
+#				addDisabledButton("Дойка", "Дать себе немного отдохнуть")
 		else:
-			addDisabledButton("Milking", "Talk about it with Eliza first")
+			addDisabledButton("Дойка", "Сначала обсудить это с Элизой")
 		
 		var isHurt = false
 		if(GM.pc.getPainLevel() > 0.5 || GM.pc.hasEffect(StatusEffect.Wounded) || GM.pc.hasEffect(StatusEffect.StretchedPainfullyPussy) || GM.pc.hasEffect(StatusEffect.StretchedPainfullyAnus)):
@@ -64,236 +64,236 @@ func _run():
 			
 		if(isHurt):
 			if(!getFlag("MedicalModule.Medical_FirstTimeHealedHappened")):
-				addButtonWithChecks("I'm hurt", "Ask for medical help", "firsttimecryo", [], [ButtonChecks.NotGagged])
+				addButtonWithChecks("Мне больно", "Попросить медицинской помощи", "firsttimecryo", [], [ButtonChecks.NotGagged])
 			else:
-				addButtonWithChecks("I'm hurt", "Ask for medical help", "healmenu", [], [ButtonChecks.NotGagged])
+				addButtonWithChecks("Мне больно", "Попросить медицинской помощи", "healmenu", [], [ButtonChecks.NotGagged])
 		else:
-			addDisabledButton("I'm hurt", "You're not hurt enough to ask for medical help")
+			addDisabledButton("Мне больно", "Ты не настолько ранен, чтобы просить помощи")
 			
 		if(getModule("ElizaModule").canSexEliza()):
-			addButton("Sex!", "Have some fun with Eliza", "start_sex_menu")
-			addButton("Feed something", "Feed something to Eliza", "feedmenu")
+			addButton("Секс!", "Развлечься с Элизой", "start_sex_menu")
+			addButton("Покормить", "Покормить Элизу", "feedmenu")
 			
-		addButton("Leave", "Do something else", "endthescene")
+		addButton("Уйти", "Сделать что-то другое", "endthescene")
 		GM.ES.triggerRun(Trigger.TalkingToNPC, ["eliza"])
 		
 	if(state == "healmenu"):
-		saynn("[say=pc]Uh.. doc. I don’t feel too good. Can you fix me again?[/say]")
+		saynn("[say=pc]Ох.. док. Что-то мне нехорошо. Можете меня снова подлатать?[/say]")
 		
-		saynn("Eliza steps from behind the counter and approaches you, doing a quick visual check.")
+		saynn("Элиза выходит из-за стойки и подходит к тебе, быстро осматривая с ног до головы.")
 		
-		saynn("[say=eliza]I can, but.. Only the first time was free I’m afraid.[/say]")
+		saynn("[say=eliza]Могу, но... боюсь, что бесплатным был только первый раз.[/say]")
 		
-		saynn("You raise your brow.")
+		saynn("Ты вопросительно приподнимаешь бровь.")
 		
-		saynn("[say=eliza]Yeah, it pains me too. But now I will have to take 10 credits for each use of the cryopod. Inmates were abusing free healing too much.[/say]")
+		saynn("[say=eliza]Да, мне самой жаль. Но теперь за каждое использование криокапсулы придётся платить 10 кредитов. Заключённые слишком уж злоупотребляли бесплатным лечением.[/say]")
 		
-		saynn("[say=pc]I see.[/say]")
+		saynn("[say=pc]Понятно.[/say]")
 		
-		saynn("[say=eliza]But if your damage is only related to your private bits, I can do a different approach. That one only costs 5 credits.[/say]")
+		saynn("[say=eliza]Но если твои повреждения касаются только твоих «интимных мест», я могу предложить другой вариант. Это обойдётся всего в 5 кредитов.[/say]")
 		
 		if(GM.pc.getCredits() < 10):
-			saynn("Eliza takes a quick look at your records through her datapad.")
+			saynn("Элиза быстро просматривает твои медицинские записи на своём датападе.")
 		
-			saynn("[say=eliza]And if you don’t have enough credits still.. I have the permission to make inmate accounts go into the negatives. In case things are very bad.[/say]")
+			saynn("[say=eliza]А если кредитов всё равно не хватит... у меня есть разрешение уводить счета заключённых в минус. На случай, если дела совсем плохи.[/say]")
 		
-		addButton("Cryopod", "Pay 10 credits and receive a cryopod treatment that heals most wounds and damage", "cryopodsimple")
+		addButton("Криокапсула", "Заплатить 10 кредитов и пройти процедуру в криокапсуле, которая заживляет большинство ран и повреждений", "cryopodsimple")
 		if(GM.pc.hasEffect(StatusEffect.StretchedPainfullyPussy) || GM.pc.hasEffect(StatusEffect.StretchedPainfullyAnus)):
-			addButtonWithChecks("Heal privates", "Pay 5 credits and receive an 'injection' of healing gel into your privates", "healinggel", [], [ButtonChecks.HasReachableAnus])
+			addButtonWithChecks("Подлечить хозяйство", "Заплатите 5 кредитов и получите «инъекцию» заживляющего геля прямо в свои причиндалы", "healinggel", [], [ButtonChecks.HasReachableAnus])
 		else:
-			addDisabledButton("Heal privates", "Your private bits didn't sustain any damage")
-		addButton("Never mind", "You're fine", "")
+			addDisabledButton("Подлечить хозяйство", "Ваши интимные места не получили никаких повреждений")
+		addButton("Проехали", "С вами всё в порядке", "")
 		
 #ACEPREGEXPAC - Eliza has pregnancy descriptors if you oogle her
 #I might change this depending on whats in Eliza content but until then, whatever.
 #that "make me a woman" line at the breeder ending of chastity content has to be a hint, right?
 	if(state == "appearance"):
 		if(getCharacter("eliza").isHeavilyPregnant()):
-			saynn("Doctor Eliza Quinn is a tired looking doctor, standing tall for a feline at around 1.8 meters tall. Her fur colors are pastel yellow with some white and pink accents, long hair tied back into a pony tail. She wears glasses with a white lab coat pinned with her name badge and an underlayer of a green top and black knee length skirt held with a belt of medical equipment.")
+			saynn("Доктор Элиза Куинн выглядит уставшей; для кошки она довольно высокая — около 1,8 метра. Её мех пастельно-жёлтого цвета с белыми и розовыми акцентами, длинные волосы собраны в хвост. Она носит очки и белый лабораторный халат с именным бейджем, под которым видны зелёная кофта и чёрная юбка до колен, перехваченная поясом с медицинским оборудованием.")
 			
-			saynn("Her top gives an effort to at least cover her late term pregnancy but still rides up to give a small view of her tummy at a glance. Her enlarged breasts also strain against the fabic of her top.")
+			saynn("Её кофта изо всех сил пытается скрыть её позднюю беременность, но всё равно задирается, позволяя мельком увидеть животик. Её увеличившиеся груди также натягивают ткань топа.")
 			
-			saynn("You’re too afraid to stick your head under her skirt but there isnt a bulge concealed betweem her legs...")
+			saynn("Вы слишком боитесь засунуть голову ей под юбку, но между её ног не видно никакого бугорка...")
 			
-			saynn("Overall, she looks like a cute feline doctor.")
+			saynn("В целом, она выглядит как милая кошка-врач.")
 		elif(getCharacter("eliza").isVisiblyPregnant()):
-			saynn("Doctor Quinn looks like your typical doctor, she is pretty tall for a feline, about 1.8 meters tall, her fur is of a pastel yellow color with some white and pink accents. Her long hair is made into a ponytail. She is wearing glasses and a white labcoat with her badge attached to it. Under it you can spot a green top and a black knee length skirt. You do spot her wearing some dark transparent tights. She seems to be carrying quite a bit of equipment in her pockets and on her belt, mostly medical stuff but also a shock remote.")
+			saynn("Доктор Куинн похожа на типичного врача: она довольно высокая для кошки, около 1,8 метра, её мех пастельно-жёлтого цвета с белыми и розовыми акцентами. Длинные волосы собраны в хвост. На ней очки и белый халат с прикрепленным бейджем. Под ним можно заметить зелёную кофту и чёрную юбку до колен. Также заметно, что на ней надеты тёмные прозрачные колготки. Кажется, в её карманах и на поясе полно снаряжения — в основном медицинского, но также там есть пульт для шокера.")
 			
-			saynn("All the covering of her clothing can't hide the roundness of her belly giving away that she's pregnant, with a bust that's starting to stretch the limits of a D-cup.")
+			saynn("Даже плотная одежда не может скрыть округлившийся живот, выдающий её беременность, а её грудь уже начинает едва сдерживать размер D-cup.")
 			
-			saynn("You’re too afraid to stick your head under her skirt but you can’t see a bulge between her legs.")
+			saynn("Ты слишком боишься засунуть голову ей под юбку, чтобы разглядеть, есть ли у неё между ног бугорок.")
 			
-			saynn("Overall, she looks like a cute feline doctor.")
+			saynn("В целом, она выглядит как милая кошка-врач.")
 		else:
-			saynn("Doctor Quinn looks like your typical doctor, she is pretty tall for a feline, about 1.8 meters tall, her fur is of a pastel yellow color with some white and pink accents. Her long hair is made into a ponytail. She is wearing glasses and a white labcoat with her badge attached to it. Under it you can spot a green top and a black knee length skirt. You do spot her wearing some dark transparent tights. She seems to be carrying quite a bit of equipment in her pockets and on her belt, mostly medical stuff but also a shock remote.")
+			saynn("Доктор Куинн похожа на типичного врача: она довольно высокая для кошки, около 1,8 метра, её мех пастельно-жёлтого цвета с белыми и розовыми акцентами. Длинные волосы собраны в хвост. На ней очки и белый халат с прикрепленным бейджем. Под ним можно заметить зелёную кофту и чёрную юбку до колен. Также заметно, что на ней надеты тёмные прозрачные колготки. Кажется, в её карманах и на поясе полно снаряжения — в основном медицинского, но также там есть пульт для шокера.")
 
-			saynn("Covered by all that clothing you can guess that her bust is a modest C-cup.")
+			saynn("Под всей этой одеждой можно лишь догадываться, что её грудь — скромный C-cup.")
 
-			saynn("You’re too afraid to stick your head under her skirt but you can’t see a bulge between her legs.")
+			saynn("Ты слишком боишься засунуть голову ей под юбку, чтобы разглядеть, есть ли у неё между ног бугорок.")
 
-			saynn("Overall, she looks like a cute feline doctor.")
+			saynn("В целом, она выглядит как милая кошка-врач.")
 		
-		addButton("Back", "Go back", "")
+		addButton("Назад", "Назад", "")
 		
 	if(state == "talk"):
-		saynn("[say=pc]Can I ask you something?[/say]")
+		saynn("[say=pc]Можно тебя кое о чем спросить?[/say]")
 
-		saynn("Doctor shifts in her chair slightly and looks at you.")
+		saynn("Доктор слегка ерзает в кресле и смотрит на тебя.")
 
-		saynn("[say=eliza]Go ahead, inmate.[/say]")
+		saynn("[say=eliza]Давай, заключенный.[/say]")
 		
-		addButton("Best mom?", "Ask her why she has that mug", "best_mom?")
-		addButton("Work", "What kind of stuff happens here", "work")
+		addButton("Лучшая мама?", "Спросить, почему у неё такое лицо", "best_mom?")
+		addButton("Работать", "Что здесь вообще происходит", "work")
 		if(getModuleFlag("MedicalModule", "Med_pcKnowsAboutWork")):
-			addButton("Pregnancies", "Ask about how the childbirth is handled", "pregnancies")
-			addButton("Research", "Ask about what are they researching here", "talkresearch")
+			addButton("Беременности", "Спросить о том, как проходят роды", "pregnancies")
+			addButton("Исследовать", "Спросить, что здесь исследуют", "talkresearch")
 		else:
-			addDisabledButton("Pregnancies", "You don't know about this yet")
-			addDisabledButton("Research", "You don't know about this yet")
+			addDisabledButton("Беременности", "Вы об этом пока ничего не знаете")
+			addDisabledButton("Исследовать", "Вы об этом пока ничего не знаете")
 		if(getModuleFlag("MedicalModule", "Med_pcKnowsAboutBreeding")):
-			addButton("Milking", "What’s up with that", "talkmilking")
+			addButton("Дойка", "Что это вообще за дела?", "talkmilking")
 		else:
-			addDisabledButton("Milking", "You don't know about this yet")
+			addDisabledButton("Дойка", "Вы об этом пока ничего не знаете")
 
-		addButton("Back", "Go back", "")
+		addButton("Назад", "Назад", "")
 
 #ACEPREGEXPAC - Eliza gives a different response if you comment on her best mom mug
 	if(state == "best_mom?"):
 		if (getCharacter("eliza").isVisiblyPregnant()):
-			saynn("[say=pc]Your mug. Are you a mother?[/say]")
+			saynn("[say=pc]Твоя кружка. Ты мать?[/say]")
 			
-			saynn("Eliza looks at her own coffee mug and sighs audibly.")
+			saynn("Элиза смотрит на свою кружку с кофе и тяжело вздыхает.")
 			
-			saynn("[say=eliza]For now, at least. I'll try to enjoy it while I can.[/say]")
+			saynn("[say=eliza]По крайней мере, пока что. Постараюсь наслаждаться этим, пока есть возможность.[/say]")
 			
-			saynn("That sounded... not the best. Probably not a good idea to keep bringing it up.")
+			saynn("Звучало это... не очень оптимистично. Пожалуй, не стоит постоянно поднимать эту тему.")
 			
 			#addMessage("[Whatever Rahi has planned for Eliza's content, I dont know it. Sorry. -Ace]")
 			
-			addButton("Continue", "Continue talking", "talk")
+			addButton("Продолжить", "Продолжить разговор", "talk")
 		elif(GM.CS.getChildrenAmountOfOnlyMother("eliza") > 0):
-			saynn("[say=pc]Your mug. Are you a mother?[/say]")
+			saynn("[say=pc]Твоя кружка. Ты мать?[/say]")
 
-			saynn("Doctor looks at her own coffee mug and sighs audibly.")
+			saynn("Доктор смотрит на свою кружку с кофе и тяжело вздыхает.")
 
-			saynn("[say=eliza]Obviously not.. wait. I guess I am now. Hah. I had this mug before.[/say]")
+			saynn("[say=eliza]Очевидно, что нет... погоди. Кажется, теперь да. Хах. У меня уже была такая кружка.[/say]")
 
-			saynn("Seems like that item is related to some sad memories.")
+			saynn("Похоже, этот предмет связан с какими-то грустными воспоминаниями.")
 
-			addButton("Continue", "Continue talking", "talk")
+			addButton("Продолжить", "Продолжить разговор", "talk")
 		else:
-			saynn("[say=pc]Your mug. Are you a mother?[/say]")
+			saynn("[say=pc]Твоя кружка. Ты мать?[/say]")
 
-			saynn("Doctor looks at her own coffee mug and sighs audibly.")
+			saynn("Доктор смотрит на свою кружку с кофе и тяжело вздыхает.")
 
-			saynn("[say=eliza]Kinda rude to ask that. But.. No, I’m not. And it’s a long story.[/say]")
+			saynn("[say=eliza]Грубовато, конечно, спрашивать такое. Но... нет, не такая. И это долгая история.[/say]")
 
-			saynn("Seems like that item is related to some sad memories.")
+			saynn("Похоже, этот предмет связан с какими-то грустными воспоминаниями.")
 
-			addButton("Continue", "Continue talking", "talk")
+			addButton("Продолжить", "Продолжить разговор", "talk")
 
 	if(state == "work"):
 		setModuleFlag("MedicalModule", "Med_pcKnowsAboutWork", true)
 		
-		saynn("[say=pc]Inmates that are beaten up badly end up here?[/say]")
+		saynn("[say=pc]Сюда попадают заключенные, которых сильно избили?[/say]")
 
-		saynn("Doctor fixes her glasses position with a single finger.")
+		saynn("Доктор поправляет очки одним пальцем.")
 
-		saynn("[say=eliza]Well, yeah. We do treat physical traumas here but also much more than that. We do surgeries, dental work, taking care of the pregnancies and the kids. We have a mental ward for the ones who need that kind of help. And we also do research work here as a side business.[/say]")
+		saynn("[say=eliza]Ну да. Мы лечим не только физические травмы, но и гораздо большее. У нас проводят операции, лечат зубы, ведут беременных и следят за детьми. Есть даже психиатрическое отделение для тех, кому нужна такая помощь. А еще мы тут занимаемся научными исследованиями в качестве подработки.[/say]")
 
-		saynn("Wow, that’s quite a lot.")
+		saynn("Ого, это довольно много.")
 
-		addButton("Continue", "Continue talking", "talk")
+		addButton("Продолжить", "Продолжить разговор", "talk")
 
 	if(state == "pregnancies"):
 		setModuleFlag("MedicalModule", "Med_pcKnowsAboutBreeding", true)
 		
-		saynn("[say=pc]What happens to the inmates that become pregnant?[/say]")
+		saynn("[say=pc]А что происходит с заключенными, которые беременеют?[/say]")
 
-		saynn("[say=eliza]Inmates are allowed to give birth but they can’t keep their children. For obvious reasons. We can help to accelerate the development of the child, modern tech allows for that. After the birth, they are taken away. But they do receive proper treatment. Care, education, work, all of that. They get a chance for a normal life.[/say]")
+		saynn("[say=eliza]Заключенным разрешено рожать, но оставить детей себе они не могут. По очевидным причинам. Мы можем помочь ускорить развитие плода — современные технологии позволяют это сделать. После родов детей забирают. Но им обеспечивают должный уход: питание, образование, работа — всё необходимое. У них есть шанс на нормальную жизнь.[/say]")
 
-		saynn("Doctor looks away at a wall for a second, her face shows little emotion.")
+		saynn("Доктор на секунду отводит взгляд на стену, на её лице почти нет эмоций.")
 
-		saynn("[say=eliza]You don’t have to worry about any of that, inmate. Inmates that are lactating can help donate their milk here if they want to.[/say]")
+		saynn("[say=eliza]Тебе не о чем беспокоиться, заключенная. Те, кто кормит грудью, могут по желанию сдавать молоко здесь.[/say]")
 
-		saynn("[say=pc]So you’re saying inmates can be fucked and bred and it’s not discouraged?[/say]")
+		saynn("[say=pc]То есть вы хотите сказать, что заключенных можно трахать и плодить, и это даже не считается чем-то предосудительным?[/say]")
 
-		saynn("Doctor frowns at you.")
+		saynn("Доктор хмурится, глядя на тебя.")
 
-		saynn("[say=eliza]You lost any human rights when you ended up here, inmate. Sterilizing everyone would be too costly.[/say]")
+		saynn("[say=eliza]Когда ты оказалась здесь, ты лишилась всех прав человека, заключенная. Стерилизовать всех подряд было бы слишком накладно.[/say]")
 
-		saynn("Now that’s a system, of course inmates are gonna breed with each other if given the chance. And it doesn’t seem like the prison has any financial problems from what you can tell.")
+		saynn("Вот это система! Конечно, заключенные будут плодиться друг с другом, если представится случай. И, судя по всему, у тюрьмы нет никаких финансовых проблем.")
 
-		addButton("Continue", "Continue talking", "talk")
+		addButton("Продолжить", "Продолжить разговор", "talk")
 
 	if(state == "talkresearch"):
 		setModuleFlag("MedicalModule", "Med_pcKnowsAboutTests", true)
 		
-		saynn("[say=pc]What types of research are you doing here?[/say]")
+		saynn("[say=pc]Какие исследования вы здесь проводите?[/say]")
 
-		saynn("Doctor’s eyes show excitement after that question.")
+		saynn("После этого вопроса в глазах доктора вспыхивает азарт.")
 
-		saynn("[say=eliza]Many in fact. Here, in the lab, we synthesize new types of medicine and medical drugs. That is actually my job primarily. But we also do prototype tech testing and other kinds of experiments that are usually banned in normal environments.[/say]")
+		saynn("[say=eliza]Множество. Здесь, в лаборатории, мы синтезируем новые виды лекарств и медикаментов. Вообще-то, это моя основная работа. Но мы также тестируем прототипы технологий и проводим другие эксперименты, которые обычно запрещены в обычных условиях.[/say]")
 
-		saynn("You take a second to process all that. Drugs? Tests? All of that sounds very concerning.")
+		saynn("Тебе требуется секунда, чтобы переварить услышанное. Лекарства? Тесты? Всё это звучит весьма тревожно.")
 
-		saynn("[say=pc]What do you mean banned? You talking about using inmates as guinea pigs? How safe is all that?[/say]")
+		saynn("[say=pc]В смысле «запрещены»? Вы что, говорите об использовании заключенных в качестве подопытных морских свинок? Насколько всё это безопасно?[/say]")
 
-		saynn("Doctor exhales and sips some more coffee before answering.")
+		saynn("Доктор выдыхает и делает еще глоток кофе, прежде чем ответить.")
 
-		saynn("[say=eliza]We have all the paperwork, everything is fully legal. AlphaCorp pays top coin for any breakthroughs. Safety and morality concerns are not your problems, inmate. For each successful test you will be paid with work credits, enough to cover the risks.[/say]")
+		saynn("[say=eliza]У нас на всё есть бумаги, всё абсолютно законно. «АльфаКорп» платит огромные бабки за любые прорывные открытия. Вопросы безопасности и морали — не твоя забота, заключенный. За каждый успешный тест тебе будут платить рабочими кредитами — их хватит, чтобы окупить все риски.[/say]")
 
-		saynn("Well at least it’s not for free, you will be paid with currency that has no value literally anywhere else, wow!")
+		saynn("Ну, по крайней мере, это не бесплатно... Тебе будут платить валютой, которая буквально нигде больше ничего не стоит, офигеть!")
 
-		addButton("Continue", "Continue talking", "talk")
+		addButton("Продолжить", "Продолжить разговор", "talk")
 
 	if(state == "talkmilking"):
 		setModuleFlag("MedicalModule", "Med_pcKnowsAboutMilking", true)
 		
-		saynn("[say=pc]If I’m lactating I can donate milk here?[/say]")
+		saynn("[say=pc]Если у меня идет лактация, я могу сдавать здесь молоко?[/say]")
 
-		saynn("Doctor smiles.")
+		saynn("Доктор улыбается.")
 
-		saynn("[say=eliza]Yes, we have an array of milking stations here. We can collect milk, seed, male and female pre-ejaculate. You will be paid of course but some do it just cause they enjoy it.[/say]")
+		saynn("[say=eliza]Да, у нас здесь целый ряд станций для дойки. Мы можем собирать молоко, семя, мужской и женский преэякулят. Тебе, конечно, будут платить, но некоторые делают это просто ради удовольствия.[/say]")
 
-		saynn("[say=pc]Well, that’s nice, I guess.[/say]")
+		saynn("[say=pc]Ну, это мило, наверное.[/say]")
 
-		addButton("Continue", "Continue talking", "talk")
+		addButton("Продолжить", "Продолжить разговор", "talk")
 		
 	if(state == "research"):
-		saynn("[say=pc]So how can I help?[/say]")
+		saynn("[say=pc]Так чем я могу помочь?[/say]")
 
-		saynn("Eliza chuckles.")
+		saynn("Элиза посмеивается.")
 
-		saynn("[say=eliza]By offering yourself, of course. Because I do need some test subjects. Here is the list of what types of research we are doing.[/say]")
+		saynn("[say=eliza]Конечно же, предложив себя. Потому что мне действительно нужны подопытные. Вот список видов исследований, которыми мы занимаемся.[/say]")
 
-		saynn("Eliza shows you a list with options.")
+		saynn("Элиза показывает вам список вариантов.")
 		
-		#addDisabledButton("Drug testing", "Test a random drug with random effect. The paper says that these shouldn't have any long-lasting effects.")
-		addButton("Induce lactation", "She will probably use some kind of drug on you. At least it’s free", "induce_lactation")
-		addButton("Experiments", "Ask to be experimented on. This will probably include being a test subject for medical drugs that have unknown properties and also testing new prototypes (Warning, the scenes will include a lot of drug use, non-permanent transformations and mind-altering experiences)", "startexperiments")
+		#addDisabledButton("Тестирование препаратов", "Протестировать случайный препарат со случайным эффектом. В бумагах сказано, что долгосрочных последствий быть не должно.")
+		addButton("Индукция лактации", "Она, скорее всего, введет тебе какой-нибудь препарат. По крайней мере, это бесплатно.", "induce_lactation")
+		addButton("Эксперименты", "Попроси провести над тобой эксперименты. Скорее всего, это подразумевает роль подопытного для медицинских препаратов с неизвестными свойствами, а также тестирование новых прототипов (Внимание: сцены включают много употребления веществ, временных трансформаций и опытов, меняющих сознание)", "startexperiments")
 		
 		if(!getFlag("MedicalModule.PC_ReceivedPermanentCage")):
 			if(!GM.pc.hasReachablePenis()):
-				addDisabledButton("Obedience training", "(forced chastity content) You need a reachable penis to be able to start this program")
+				addDisabledButton("Тренировка послушания", "(контент с принудительным целомудрием) Чтобы начать эту программу, у тебя должен быть доступный для использования пенис")
 			else:
-				addButton("Obedience training", "(forced chastity content) One of the booklets says that there is a new research going on that claims to improve low obedience levels of inmates", "startobedient")
+				addButton("Тренировка послушания", "(контент с принудительным целомудрием) В одной из брошюр говорится о новом исследовании, целью которого является повышение низкого уровня послушания у заключенных", "startobedient")
 		else:
-			addDisabledButton("Obedience training", "(forced chastity content) You're already enrolled into this program")
+			addDisabledButton("Тренировка послушания", "(контент с принудительным целомудрием) Ты уже записан на эту программу")
 		
 		if(!getFlag("ElizaModule.s0hap")):
-			addButton("Lab Assistant", "Ask to become Eliza's lab assistant, maybe she could use one", "startlabassist")
+			addButton("Лаборантка", "Попроси стать лаборантом Элизы — возможно, ей как раз не хватает помощника", "startlabassist")
 		
-		#addDisabledButton("Prototype testing", "Test bleeding-edge hi-tech machines or devices")
-		addButton("Back", "You're not interested", "")
+		#addDisabledButton("Тестирование прототипов", "Испытать ультрасовременные высокотехнологичные машины или устройства")
+		addButton("Назад", "Тебе не интересно", "")
 
 
 	if(state == "milking_menu"):
-		saynn("[say=pc]I’m interested. You were talking about the possibility of donating milk and cum?[/say]")
+		saynn("[say=pc]Мне интересно. Ты говорила о возможности донации молока и спермы?[/say]")
 
-		saynn("The feline puts the mug away and stands up from the chair.")
+		saynn("Кошка убирает кружку и встает со стула.")
 
-		saynn("[say=eliza]Yes, we can always use more. How would you like to be milked.[/say]")
+		saynn("[say=eliza]Да, лишним не будет. Как бы ты хотела, чтобы тебя подоили?[/say]")
 		
 		if(getModule("ElizaModule").hasLabAccess()):
 			sayTanksVolume()
@@ -301,177 +301,177 @@ func _run():
 		if(!GM.pc.hasSoreNipples()):
 			if(GM.pc.canBeMilked()):
 				if(canBeMilked()):
-					addButton("Milk..", "Show the ways Eliza can milk your breasts", "milk_breasts_menu")
+					addButton("Молоко..", "Показать способы, которыми Элиза может доить твою грудь", "milk_breasts_menu")
 				else:
-					addDisabledButton("Milk..", "Your breasts are not full enough to be milked")
+					addDisabledButton("Молоко..", "Твоя грудь недостаточно полная, чтобы её доили")
 			else:
-				addDisabledButton("Milk..", "Your breasts can't be milked")
+				addDisabledButton("Молоко..", "Твои сиськи нельзя доить")
 		else:
-			addDisabledButton("Milk..", "Your nips are sore, give your breasts a rest!")
+			addDisabledButton("Молоко..", "Соски болят, дай груди отдохнуть!")
 		if(GM.pc.canBeSeedMilked()):
 			if(canBeSeedMilked()):
-				addButton("Seed..", "Show the ways Eliza can milk your penis", "milk_penis_menu")
+				addButton("Семя..", "Показать, как Элиза может доить твой член", "milk_penis_menu")
 			else:
-				addDisabledButton("Seed..", "Your balls are not full enough to be seed-milked")
+				addDisabledButton("Семя..", "Твои яйца недостаточно полны для сбора семени")
 		else:
-			addDisabledButton("Seed..", "There is no way to seed-milk you..")
+			addDisabledButton("Семя..", "Способов доить твоё семя нет..")
 		if(GM.pc.hasReachableVagina()):
 			if(!getFlag("MedicalModule.Milked_Pussy", false)):
-				addButton("Girlcum..", "Show the ways Eliza can milk your pussy", "milk_vagina_menu")
+				addButton("Девичья конча..", "Показать, как Элиза может доить твою киску", "milk_vagina_menu")
 			else:
-				addDisabledButton("Girlcum..", "You already milked your pussy today, give it a break!")
+				addDisabledButton("Девичья конча..", "Ты и так уже доила свою киску сегодня, дай ей отдохнуть!")
 		else:
-			addDisabledButton("Girlcum..", "You don't have a reachable vagina in order for Eliza to milk it")
+			addDisabledButton("Девичья конча..", "Твоя вагина находится вне зоны досягаемости, чтобы Элиза могла её подоить")
 		if(GM.main.SCI.hasMilkingTier3()):
 			if(!getFlag("MedicalModule.Milked_Breasts", false) && !getFlag("MedicalModule.Milked_Penis", false) && !getFlag("MedicalModule.Milked_Pussy", false)):
-				addButton("Quick milking", "Ask Eliza to milk everything at once and fast!", "do_start_milking_scene_quick")
+				addButton("Быстрое доение", "Попросить Элизу подоить всё разом и максимально быстро!", "do_start_milking_scene_quick")
 			else:
-				addDisabledButton("Quick milking", "You can only use this option if you haven't been milked any other way today")
+				addDisabledButton("Быстрое доение", "Этот вариант доступен только если тебя еще не доили сегодня каким-либо другим способом")
 		else:
-			addDisabledButton("Quick milking", "You need to become Eliza's assistant and upgrade the lab enough to use this option.")
+			addDisabledButton("Быстрое доение", "Тебе нужно стать ассистентом Элизы и достаточно прокачать лабораторию, чтобы использовать этот вариант.")
 		
-		addButton("Back", "Go back", "")
+		addButton("Назад", "Назад", "")
 
 	if(state == "milk_breasts_menu"):
-		saynn("How do you want Eliza to milk your {pc.breasts}?")
+		saynn("Как именно Элиза должна подоить твой {pc.breasts}?")
 		
 		if(getModule("ElizaModule").hasLabAccess()):
 			sayTanksVolume()
 
-		addButton("Hand-milking", "Let Eliza milk your breasts with her hands", "do_start_milking_scene_breasts", ["ElizaMilkingBreastsHandScene"])
+		addButton("Ручное доение", "Позволить Элизе доить твою грудь руками", "do_start_milking_scene_breasts", ["ElizaMilkingBreastsHandScene"])
 		if(GM.main.SCI.hasMilkingTier1()):
-			addButton("Stall Hand-milking", "Let Eliza milk your breasts with her hands while in a milking stall", "do_start_milking_scene_breasts", ["ElizaMilkingBreastsStallScene"])
-			addButton("Breast pumps", "Let Eliza use industrial breast pumps on you", "do_start_milking_scene_breasts", ["ElizaMilkingBreastsPumpsScene"])
+			addButton("Ручное доение в стойле", "Позволить Элизе доить твою грудь руками, находясь в стойле для доения", "do_start_milking_scene_breasts", ["ElizaMilkingBreastsStallScene"])
+			addButton("Молочные насосы", "Позволить Элизе использовать промышленные молочные насосы на тебе", "do_start_milking_scene_breasts", ["ElizaMilkingBreastsPumpsScene"])
 		else:
-			addDisabledButton("Stall Hand-milking", "You need to become Eliza's assistant and upgrade the lab enough to use this option.")
-			addDisabledButton("Breast pumps", "You need to become Eliza's assistant and upgrade the lab enough to use this option.")
+			addDisabledButton("Ручное доение в стойле", "Тебе нужно стать ассистентом Элизы и достаточно прокачать лабораторию, чтобы использовать этот вариант.")
+			addDisabledButton("Молочные насосы", "Тебе нужно стать ассистентом Элизы и достаточно прокачать лабораторию, чтобы использовать этот вариант.")
 		if(GM.main.SCI.hasMilkingTier2()):
-			addButton("Milking machine", "Let Eliza use a milking machine to milk your breasts", "do_start_milking_scene_breasts", ["ElizaMilkingBreastsBDSMMachineScene"])
+			addButton("Доильный аппарат", "Позволить Элизе использовать доильный аппарат для твоей груди", "do_start_milking_scene_breasts", ["ElizaMilkingBreastsBDSMMachineScene"])
 		else:
-			addDisabledButton("Milking machine", "You need to become Eliza's assistant and upgrade the lab enough to use this option.")
+			addDisabledButton("Доильный аппарат", "Тебе нужно стать ассистентом Элизы и достаточно прокачать лабораторию, чтобы использовать этот вариант.")
 		
-		addButton("Back", "Go back", "milking_menu")
+		addButton("Назад", "Назад", "milking_menu")
 
 	if(state == "milk_penis_menu"):
-		saynn("How do you want Eliza to milk your {pc.penis}?")
+		saynn("Как именно Элиза должна доить твой {pc.penis}?")
 		
 		if(getModule("ElizaModule").hasLabAccess()):
 			sayTanksVolume()
 			
-		addButtonWithChecks("Hand-milking", "Let Eliza milk your cock with her hands", "do_start_milking_scene_seed", ["ElizaMilkingSeedHandScene"], [[ButtonChecks.HasReachablePenis]])
-		addButton("Prostate milking", "Let Eliza milk your cock by milking your prostate directly with her fingers", "do_start_milking_scene_seed", ["ElizaMilkingProstateHandScene"])
+		addButtonWithChecks("Ручное доение", "Позволить Элизе доить твой член руками", "do_start_milking_scene_seed", ["ElizaMilkingSeedHandScene"], [[ButtonChecks.HasReachablePenis]])
+		addButton("Доение простаты", "Позволить Элизе доить твой член, массируя простату её пальцами", "do_start_milking_scene_seed", ["ElizaMilkingProstateHandScene"])
 		if(GM.main.SCI.hasMilkingTier1()):
-			addButtonWithChecks("Penis pump", "Let Eliza milk your cock with an industrial penis pump", "do_start_milking_scene_seed", ["ElizaMilkingSeedPumpScene"], [[ButtonChecks.HasReachablePenis]])
-			addButton("Strapon milking", "Let Eliza milk your cock by pegging your butt with a strapon, milking your prostate that way", "do_start_milking_scene_seed", ["ElizaMilkingProstateStraponScene"])
+			addButtonWithChecks("Помпа для пениса", "Позволить Элизе доить твой член с помощью промышленного пенис-пампа", "do_start_milking_scene_seed", ["ElizaMilkingSeedPumpScene"], [[ButtonChecks.HasReachablePenis]])
+			addButton("Доение страпоном", "Позволить Элизе доить твой член, используя страпон для стимуляции простаты", "do_start_milking_scene_seed", ["ElizaMilkingProstateStraponScene"])
 		else:
-			addDisabledButton("Penis pump", "You need to become Eliza's assistant and upgrade the lab enough to use this option.")
-			addDisabledButton("Strapon milking", "You need to become Eliza's assistant and upgrade the lab enough to use this option.")
+			addDisabledButton("Помпа для пениса", "Тебе нужно стать ассистентом Элизы и достаточно прокачать лабораторию, чтобы использовать этот вариант.")
+			addDisabledButton("Доение страпоном", "Тебе нужно стать ассистентом Элизы и достаточно прокачать лабораторию, чтобы использовать этот вариант.")
 		if(GM.main.SCI.hasMilkingTier2()):
-			addButtonWithChecks("Pawjob", "Let Eliza milk your cock by with her hind paws", "do_start_milking_scene_seed", ["ElizaMilkingSeedPawjobScene"], [[ButtonChecks.HasReachablePenis]])
+			addButtonWithChecks("Павджоб", "Позволить Элизе доить твой член её задними лапами", "do_start_milking_scene_seed", ["ElizaMilkingSeedPawjobScene"], [[ButtonChecks.HasReachablePenis]])
 			if(getFlag("SocketModule.h5completed", false)):
-				addButtonWithChecks("Fleshlight", "Let Eliza invite someone else to milk your cock with a fleshlight", "do_start_milking_scene_seed", ["ElizaMilkingSeedFleshlightScene"], [[ButtonChecks.HasReachablePenis]])
+				addButtonWithChecks("Флешлайт", "Позволить Элизе позвать кого-нибудь ещё, чтобы они доили твой член флешлайтом", "do_start_milking_scene_seed", ["ElizaMilkingSeedFleshlightScene"], [[ButtonChecks.HasReachablePenis]])
 			else:
-				addDisabledButton("Fleshlight", "You need to complete Socket's storyline to unlock this option. You will also need your cock to be reachable")
-			addButton("Milking machine", "Let Eliza milk your cock with milking machine. Includes prostate stimulation", "do_start_milking_scene_seed", ["ElizaMilkingSeedBDSMMachineScene"])
+				addDisabledButton("Флешлайт", "Чтобы разблокировать этот вариант, нужно завершить сюжетную линию Сокета. Также твой член должен быть в зоне досягаемости")
+			addButton("Доильный аппарат", "Позволить Элизе подоить твой член с помощью доильного аппарата. Включает стимуляцию простаты", "do_start_milking_scene_seed", ["ElizaMilkingSeedBDSMMachineScene"])
 		else:
-			addDisabledButton("Pawjob", "You need to become Eliza's assistant and upgrade the lab enough to use this option.")
-			addDisabledButton("Fleshlight", "You need to become Eliza's assistant and upgrade the lab enough to use this option.")
-			addDisabledButton("Milking machine", "You need to become Eliza's assistant and upgrade the lab enough to use this option.")
+			addDisabledButton("Павджоб", "Тебе нужно стать ассистентом Элизы и достаточно прокачать лабораторию, чтобы использовать этот вариант.")
+			addDisabledButton("Флешлайт", "Тебе нужно стать ассистентом Элизы и достаточно прокачать лабораторию, чтобы использовать этот вариант.")
+			addDisabledButton("Доильный аппарат", "Тебе нужно стать ассистентом Элизы и достаточно прокачать лабораторию, чтобы использовать этот вариант.")
 			
-		addButton("Back", "Go back", "milking_menu")
+		addButton("Назад", "Назад", "milking_menu")
 
 	if(state == "milk_vagina_menu"):
-		saynn("How do you want Eliza to milk your pussy?")
+		saynn("Как именно Элиза должна доить твою киску?")
 		
 		if(getModule("ElizaModule").hasLabAccess()):
 			sayTanksVolume()
 		
-		addButton("Sybian", "Let Eliza use a sybian machine to extract girlcum out of your pussy", "do_start_milking_scene_girlcum", ["ElizaMilkingGirlcumSybianScene"])
+		addButton("Сибиан", "Позволить Элизе использовать вибратор Sybian, чтобы выжать девичью кончу из твоей киски", "do_start_milking_scene_girlcum", ["ElizaMilkingGirlcumSybianScene"])
 		
-		addButton("Back", "Go back", "milking_menu")
+		addButton("Назад", "Назад", "milking_menu")
 
 	if(state == "milk"):
 		# (First time scene)
 		if(!getModuleFlag("MedicalModule", "Med_milkingMilkFirstTime")):
 			setModuleFlag("MedicalModule", "Med_milkingMilkFirstTime", true)
-			saynn("[say=pc]I want my breasts to be milked..[/say]")
+			saynn("[say=pc]Я хочу, чтобы мои сиськи подоили..[/say]")
 
-			saynn("The doctor steps away from the counter and walks behind some wall just to appear a few seconds later from one of the airlocks. She walks up to you and starts observing you.")
+			saynn("Доктор отходит от стойки и скрывается за стеной, чтобы спустя несколько секунд появиться из одного из шлюзов. Она подходит к тебе и начинает пристально осматривать.")
 
 			# (if has forever flat breasts)
 			if(!GM.pc.hasNonFlatBreasts()):
-				saynn("[say=eliza]Sadly I can’t really milk you, your {pc.breasts} have too small milk production glands. You would need your breasts enlarged first.[/say]")
+				saynn("[say=eliza]К сожалению, я не смогу тебя подоить, у твоих {pc.breasts} слишком маленькие молочные железы. Сначала нужно увеличить грудь.[/say]")
 
-				saynn("Aww.")
+				saynn("Оууу.")
 
-				addButton("Continue", "Okay", "")
+				addButton("Продолжить", "Окей", "")
 				return
 			# (scene ends)
 
 			# (if has breasts)
 
-			saynn("[say=eliza]Hmm.. May I?[/say]")
+			saynn("[say=eliza]Хмм.. Можно?[/say]")
 
-			saynn("You don’t quite understand what she means but you nod anyway. Eliza puts her hands under your {pc.breasts} and gets a feel for their weight. Then she starts to firmly squeeze them. You can’t help but to let out a little moan.")
+			saynn("Ты не совсем понимаешь, что она имеет в виду, но всё равно киваешь. Элиза подсовывает руки под твои {pc.breasts}, проверяя их вес. Затем она начинает их крепко сжимать. Ты невольно издаешь тихий стон.")
 
 			var breasts:BodypartBreasts = GM.pc.getBodypart(BodypartSlot.Breasts)
 			# (if lactating and clothed)
 			
 			if(breasts.getProducedFluidAmount() > 0.1):
 				if(!GM.pc.isFullyNaked()):
-					saynn("Her efforts weren’t useless, after a bit of breast kneading, you notice two little damp spots appearing on your clothing roughly where your nips are.")
+					saynn("Её усилия не прошли даром: после небольшого разминания груди ты замечаешь два влажных пятнышка на одежде примерно там, где находятся твои соски.")
 
-					saynn("[say=eliza]Oh yes. These are some juicy milk jugs you got there. We can do it.[/say]")
+					saynn("[say=eliza]О да. А у тебя тут сочные молочные бутылочки. Мы справимся.[/say]")
 
 				# (if lactating and naked)
 				else:
-					saynn("Her efforts weren’t useless, after a bit of breast kneading, you notice your nipples starting to leak milk.")
+					saynn("Её усилия не прошли даром: после небольшого разминания груди ты замечаешь, что из сосков начинает сочиться молоко.")
 
-					saynn("[say=eliza]Oh yes. These are some juicy milk jugs you got there. We can do it.[/say]")
+					saynn("[say=eliza]О да. А у тебя тут сочные молочные бутылочки. Мы справимся.[/say]")
 			else:
 			# (if not lactating)
 
-				saynn("But no matter how hard she tried she couldn’t squeeze a single drop of milk. Though your nipples feel perky stiff now.")
+				saynn("Но как бы она ни старалась, ей не удавалось выдавить ни единой капли. Хотя твои соски теперь ощущаются твердыми и возбужденными.")
 
-				saynn("[say=eliza]Well, you’re not lactating right now so it would be a waste of effort. But. You have options. Pregnancy is an obvious choice. While pregnant your breasts will increase in size and start to lactate on their own. If you don’t like that or can’t get pregnant - we can always induce it. With some meds. You know, even males can lactate.[/say]")
+				saynn("[say=eliza]Ну, сейчас ты не лактируешь, так что это будет пустой тратой сил. Но... у тебя есть варианты. Беременность — очевидный выбор. Пока ты будешь беременна, грудь увеличится в размерах и начнет вырабатывать молоко сама собой. Если тебе это не нравится или не получается забеременеть — мы всегда можем вызвать лактацию. С помощью лекарств. Знаешь, даже мужчины могут кормить грудью.[/say]")
 				
-				addButton("Continue", "Okay", "")
+				addButton("Продолжить", "Окей", "")
 				return
 		else:
 			# (not first time)
 			var breasts:BodypartBreasts = GM.pc.getBodypart(BodypartSlot.Breasts)
 
-			saynn("[say=pc]I want my breasts to be milked..[/say]")
+			saynn("[say=pc]Я хочу, чтобы мои сиськи подоили..[/say]")
 
-			saynn("Eliza takes a quick look at you.")
+			saynn("Элиза быстро оглядывает тебя.")
 
 			# (if not lactating and empty breasts)
 			if(breasts.getProducedFluidAmount() < 0.1):
-				saynn("[say=eliza]Well, you gotta be lactating for that I’m afraid.[/say]")
-				addButton("Continue", "Okay", "")
+				saynn("[say=eliza]Ну, боюсь, для этого нужно, чтобы у тебя уже шла лактация.[/say]")
+				addButton("Продолжить", "Окей", "")
 				return
 			# (scene end)
 
 			# (if has milk)
 
-			saynn("[say=eliza]Alright, inmate. Any preferences?[/say]")
+			saynn("[say=eliza]Ладно, заключенный. Есть какие-нибудь предпочтения?[/say]")
 			
-			sayn("Amount of milk donated: "+str(floor(getModuleFlag("MedicalModule", "Med_milkMilked", 0.0)))+" ml")
-			saynn("Amount of times milked: "+str(getModuleFlag("MedicalModule", "Med_milkedMilkTimes", 0)))
+			sayn("Количество сданного молока: "+str(floor(getModuleFlag("MedicalModule", "Med_milkMilked", 0.0)))+" ml")
+			saynn("Количество доек: "+str(getModuleFlag("MedicalModule", "Med_milkedMilkTimes", 0)))
 			
 		if(GM.pc.canBeMilked()):
-			addButton("Hand milking", "You’re not very picky, the old-fashioned way will do just fine", "milk_handmilk")
+			addButton("Дойка руками", "Ты не особо привередлив, старый добрый способ вполне подойдет", "milk_handmilk")
 		else:
-			addDisabledButton("Hand milking", "You can't be milked right now")
+			addDisabledButton("Дойка руками", "Сейчас тебя не доят")
 		if(getModuleFlag("MedicalModule", "Med_milkedMilkTimes", 0) >= 1 && getModuleFlag("MedicalModule", "Med_milkMilked", 0.0) > 0.0):
 			if(GM.pc.canBeMilked()):
-				addButton("Milking pumps", "An automated way of milking sounds nice", "milk_pumps")
+				addButton("Доильные насосы", "Автоматизированная дойка звучит заманчиво", "milk_pumps")
 			else:
-				addDisabledButton("Milking pumps", "You can't be milked right now")
-		addDisabledButton("Milking (Vaginal)", "not done")
-		addDisabledButton("Milking (Anal)", "not done")
-		addDisabledButton("Extreme milking", "not done")
-		addButton("Never mind", "You changed your mind", "")
+				addDisabledButton("Доильные насосы", "Сейчас тебя не доят")
+		addDisabledButton("Дойка (вагинальная)", "не завершено")
+		addDisabledButton("Дойка (анальная)", "не завершено")
+		addDisabledButton("Экстремальная дойка", "не завершено")
+		addButton("Проехали", "Вы передумали", "")
 
 		
 
@@ -479,51 +479,51 @@ func _run():
 		# (first time)
 		if(!getModuleFlag("MedicalModule", "Med_milkingSeedFirstTime")):
 			setModuleFlag("MedicalModule", "Med_milkingSeedFirstTime", true)
-			saynn("[say=pc]I wanna be cock-milked.[/say]")
+			saynn("[say=pc]Я хочу, чтобы меня подоили.[/say]")
 
-			saynn("The doctor steps away from the counter and walks behind some wall just to appear a few seconds later from one of the airlocks. She walks up to you and starts observing you, focusing mostly on your crotch.")
+			saynn("Доктор отходит от стойки и скрывается за стеной, чтобы спустя пару секунд появиться из одного из шлюзов. Она подходит к тебе и начинает осматривать, сосредоточив всё внимание на твоей промежности.")
 
 			# (if has reachable cock)
 			if(GM.pc.hasReachablePenis()):
-				saynn("[say=eliza]Yes, that can be arranged, we always need more genetic material.[/say]")
+				saynn("[say=eliza]Да, это можно устроить, нам всегда нужно больше генетического материала.[/say]")
 
-				saynn("She offers you a cheeky smile.")
+				saynn("Она одаривает тебя лукавой улыбкой.")
 			else:
 				# (if has non-reachable cock)
 
-				saynn("[say=eliza]I see that you’re wearing chastity. That limits the options but we can still do it, the stimulation is just gonna be.. indirect.. if you know what I mean.[/say]")
+				saynn("[say=eliza]Вижу, ты в целомудрии. Это ограничивает варианты, но мы всё равно можем это сделать, просто стимуляция будет... косвенной... если понимаешь, о чём я.[/say]")
 
-				saynn("She offers you a cheeky smile.")
+				saynn("Она одаривает тебя лукавой улыбкой.")
 		else:
 			# (if not first time)
 
-			saynn("[say=pc]I wanna be cock-milked.[/say]")
+			saynn("[say=pc]Я хочу, чтобы меня подоили.[/say]")
 
-			saynn("Eliza gives you a quick look.")
+			saynn("Элиза бросает на тебя быстрый взгляд.")
 
-			saynn("[say=eliza]We can certainly do that~.[/say]")
+			saynn("[say=eliza]Мы вполне можем это устроить~.[/say]")
 			
-			sayn("Amount of seed donated: "+str(floor(getModuleFlag("MedicalModule", "Med_seedMilked", 0.0)))+" ml")
-			saynn("Amount of times seed milked: "+str(getModuleFlag("MedicalModule", "Med_milkedSeedTimes", 0)))
+			sayn("Количество сданного семени: "+str(floor(getModuleFlag("MedicalModule", "Med_seedMilked", 0.0)))+" ml")
+			saynn("Количество доек: "+str(getModuleFlag("MedicalModule", "Med_milkedSeedTimes", 0)))
 			
 			
 		if(GM.pc.canBeSeedMilked()):
 			if(GM.pc.hasReachablePenis()):
-				addButton("Hand milking", "Why deny the woman’s touch..", "milk_handseedmilk")
+				addButton("Дойка руками", "Зачем отказываться от женских рук...", "milk_handseedmilk")
 			else:
-				addDisabledButton("Hand milking", "You need your cock to be free for this..")
+				addDisabledButton("Дойка руками", "Для этого тебе нужно освободить свой член...")
 			
-			addButton("Prostate milking", "Alternative method that doesn’t even require free access to your dick..", "milk_prostatemilking")
+			addButton("Доение простаты", "Альтернативный метод, который даже не требует свободного доступа к твоему херу...", "milk_prostatemilking")
 		else:
-			addDisabledButton("Hand milking", "You can't be milked right now")
-			addDisabledButton("Prostate milking", "You can't be milked right now")
-		addDisabledButton("Pump", "not done")
-		addButton("Never mind", "You changed your mind", "")
+			addDisabledButton("Дойка руками", "Сейчас тебя не доят")
+			addDisabledButton("Доение простаты", "Сейчас тебя не доят")
+		addDisabledButton("Помпа", "не завершено")
+		addButton("Проехали", "Вы передумали", "")
 
 func sayTanksVolume():
 	var storedFluids:Dictionary = GM.main.SCI.getStoredFluidsWithDefauls()
 	
-	sayn("Fluid tanks contents:")
+	sayn("Содержимое резервуаров с жидкостью:")
 	for fluidID in storedFluids:
 		var fluidAmount:float = storedFluids[fluidID]
 		var fluidLimit:float = GM.main.SCI.getStoredFluidLimit(fluidID)

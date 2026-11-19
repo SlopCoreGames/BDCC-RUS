@@ -7,182 +7,182 @@ func _run():
 	if(state == ""):
 		addCharacter("announcer")
 		playAnimation(StageScene.Duo, "stand", {npc="announcer"})
-		saynn("[say=pc]Can I ask you a few things? If you have time.[/say]")
+		saynn("[say=pc]Можно тебя кое о чем спросить? Если есть время.[/say]")
 
-		saynn("He nods.")
+		saynn("Он кивает.")
 
-		saynn("[say=announcer]Be my guest.[/say]")
+		saynn("[say=announcer]Валяй.[/say]")
 
-		addButton("Back", "Enough chat", "endthescene")
-		addButton("Ans", "Ask him to talk about himself", "ask_ans")
-		addButton("Arena", "Ask him about this place", "ask_arena")
-		addButton("Avy", "Ask him about Avy", "ask_avy")
-		addButton("Future", "Ask him about what he is gonna do if she gets out", "ask_future")
-		addButton("Earth", "Ask him about his home planet", "ask_planet")
+		addButton("Назад", "Хватит болтать", "endthescene")
+		addButton("Ans", "Попросить его рассказать о себе", "ask_ans")
+		addButton("Арена", "Спросить его об этом месте", "ask_arena")
+		addButton("Эви", "Спросить его об Эви", "ask_avy")
+		addButton("Будущее", "Спросить, что он будет делать, если она выйдет на свободу", "ask_future")
+		addButton("Земля", "Спросить его о родной планете", "ask_planet")
 		if (getModule("KaitModule").hasHideoutAccess()):
-			addButton("Team", "Ask what he thinks about the hideout what you're doing", "ask_team")
+			addButton("Team", "Спросить, что он думает о вашем убежище", "ask_team")
 	if(state == "ask_ans"):
-		saynn("[say=pc]Can you tell me something about yourself?[/say]")
+		saynn("[say=pc]Можешь рассказать что-нибудь о себе?[/say]")
 
-		saynn("[say=announcer]You probably know me well already, I am the voice of this arena.[/say]")
+		saynn("[say=announcer]Ты, вероятно, уже хорошо меня знаешь — я голос этой арены.[/say]")
 
-		saynn("[say=pc]Are you also its creator?[/say]")
+		saynn("[say=pc]Ты также и её создательница?[/say]")
 
-		saynn("[say=announcer]The space existed long before we found it, a relic of prison's past. We have just made it our home.[/say]")
+		saynn("[say=announcer]Это пространство существовало задолго до того, как мы его нашли — реликт прошлого тюрьмы. Мы просто сделали его своим домом.[/say]")
 
-		saynn("[say=pc]We?[/say]")
+		saynn("[say=pc]Мы?[/say]")
 
-		saynn("[say=announcer]Collective we. People. I was just one of them.[/say]")
+		saynn("[say=announcer]Коллективное «мы». Люди. Я была лишь одной из них.[/say]")
 
-		saynn("[say=pc]So you're one of the founders, still.[/say]")
+		saynn("[say=pc]Значит, ты всё-таки одна из основательниц.[/say]")
 
-		saynn("[say=announcer]I guess. I got chosen to run it. I'm sure my voice and appearance played a good part in it. But also my management skills. Fighting abilities are not my virtue though.[/say]")
+		saynn("[say=announcer]Полагаю, что так. Меня выбрали для управления этим местом. Уверена, мой голос и внешность сыграли важную роль. Но также и мои управленческие навыки. Хотя боевые способности — не самая моя сильная сторона.[/say]")
 
-		saynn("Being both smart and attractive is a rare combo still.")
+		saynn("Быть одновременно умной и привлекательной — всё ещё редкое сочетание.")
 
-		saynn("[say=pc]Are the other founders still around?[/say]")
+		saynn("[say=pc]Другие основатели всё ещё где-то рядом?[/say]")
 
-		saynn("[say=announcer]Most of them rather not associate themselves with this place, for one reason or another.[/say]")
+		saynn("[say=announcer]Большинство из них, по той или иной причине, предпочитают не иметь с этим местом ничего общего.[/say]")
 
-		saynn("Interesting.")
+		saynn("Интересно.")
 
-		saynn("[say=pc]Where are you from?[/say]")
+		saynn("[say=pc]Откуда ты родом?[/say]")
 
-		saynn("[say=announcer]I come from a little barely-known planet called Earth.[/say]")
+		saynn("[say=announcer]Я с маленькой, почти никому не известной планеты под названием Земля.[/say]")
 
-		saynn("[say=pc]Earth? What's it like today?[/say]")
+		saynn("[say=pc]Земля? И как она сегодня?[/say]")
 
-		saynn("[say=announcer]You don't wanna know.[/say]")
+		saynn("[say=announcer]Тебе лучше не знать.[/say]")
 
-		saynn("But maybe you can still ask him about it. There is a lot you can ask him in fact.")
+		saynn("Но, возможно, ты всё же сможешь расспросить его об этом. На самом деле, спросить можно о многом.")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "ask_arena"):
-		saynn("[say=pc]Why make this place into an arena?[/say]")
+		saynn("[say=pc]Зачем превращать это место в арену?[/say]")
 
-		saynn("[say=announcer]People need a way to let their anger out. I'm happy to be able to provide the means to do so.[/say]")
+		saynn("[say=announcer]Людям нужен способ выплеснуть свой гнев. И я рад, что могу предоставить им для этого средства.[/say]")
 
-		saynn("His eyes scan the whole place.")
+		saynn("Его взгляд сканирует всё помещение.")
 
-		saynn("[say=announcer]And the arena is just the main attraction. But not the only one.[/say]")
+		saynn("[say=announcer]И арена — это лишь главное развлечение. Но далеко не единственное.[/say]")
 
-		saynn("[say=pc]You're talking about the prostitution spot?[/say]")
+		saynn("[say=pc]Ты про бордель говоришь?[/say]")
 
-		saynn("[say=announcer]Prostitution is a word that got tainted over the years. At least in the place that I come from. But of course, I'm a pimp so my views are gonna be skewed because of it, be mindful of that.[/say]")
+		saynn("[say=announcer]Слово «проституция» за эти годы сильно подпортили. По крайней мере, там, откуда я родом. Но, конечно, я сутенер, так что мой взгляд может быть предвзятым, учитывай это.[/say]")
 
-		saynn("Makes sense for a pimp to make a prostitution spot here, in his lair.")
+		saynn("Логично, что сутенер устроил бордель прямо здесь, в своем логове.")
 
-		saynn("[say=pc]I also see a slutwall.[/say]")
+		saynn("[say=pc]Еще я вижу стену шлюх.[/say]")
 
-		saynn("[say=announcer]Yeah. People expressed their desire. Who am I to say no?[/say]")
+		saynn("[say=announcer]Ага. Люди выражают свои желания. И кто я такой, чтобы им отказывать?[/say]")
 
-		saynn("[say=pc]You don't like it?[/say]")
+		saynn("[say=pc]Тебе не нравится?[/say]")
 
-		saynn("[say=announcer]Different strokes for different folks. I guess I'm not a fan of people punching each other either. But people need to get it out of their system, one way or another. Without all of this, people get grumpy and restless. Then they get hostile and desperate.[/say]")
+		saynn("[say=announcer]О вкусах не спорят. Наверное, я тоже не фанат того, чтобы люди лупили друг друга. Но людям нужно выплескивать это из себя, так или иначе. Без всего этого они становятся ворчливыми и беспокойными. А потом — враждебными и отчаявшимися.[/say]")
 
-		saynn("Makes sense.")
+		saynn("Логично.")
 
-		saynn("[say=pc]Do you think the staff knows about this arena?[/say]")
+		saynn("[say=pc]Как думаешь, персонал знает об этой арене?[/say]")
 
-		saynn("[say=announcer]I have little doubts that they do.[/say]")
+		saynn("[say=announcer]Мало сомневаюсь, что знают.[/say]")
 
-		saynn("[say=pc]Why didn't they do anything about it?[/say]")
+		saynn("[say=pc]Почему же они ничего с этим не делают?[/say]")
 
-		saynn("[say=announcer]Your guess is as good as mine. Maybe they're afraid.[/say]")
+		saynn("[say=announcer]Тут я гадаю так же, как и ты. Может, они просто боятся.[/say]")
 
-		saynn("It is the arena after all, it will have a lot of good fighters.")
+		saynn("В конце концов, это арена, здесь наверняка будет много отличных бойцов.")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "ask_avy"):
-		saynn("[say=pc]Avy is helping you?[/say]")
+		saynn("[say=pc]Эви тебе помогает?[/say]")
 
-		saynn("[say=announcer]Yeah, she took a lot off of my shoulders, I'm grateful to her for that. Having her around puts my mind at ease.[/say]")
+		saynn("[say=announcer]Да, она взяла на себя кучу дел, и я ей за это очень благодарен. Когда она рядом, мне становится спокойнее.[/say]")
 
-		saynn("[say=pc]She doesn't exactly seem friendly.[/say]")
+		saynn("[say=pc]Она не особо похожа на дружелюбную особу.[/say]")
 
-		saynn("[say=announcer]She has her many sides. We all do.[/say]")
+		saynn("[say=announcer]У неё много разных сторон. Как и у всех нас.[/say]")
 
-		saynn("[say=pc]You're saying that she has a good side too?[/say]")
+		saynn("[say=pc]То есть ты хочешь сказать, что у неё есть и светлая сторона?[/say]")
 
-		saynn("[say=announcer]I'm not the one to judge what is good and what is bad. So far I have no regrets.[/say]")
+		saynn("[say=announcer]Не мне судить, что хорошо, а что плохо. Пока что я ни о чём не жалею.[/say]")
 
-		saynn("[say=pc]There must have been some reason why you chose her still?[/say]")
+		saynn("[say=pc]Но ведь была же какая-то причина, по которой ты всё-таки выбрал её?[/say]")
 
-		saynn("[say=announcer]If she didn't tell you that reason yet, I'd rather do the same then. I hope you can understand my position.[/say]")
+		saynn("[say=announcer]Если она тебе ещё не открыла эту причину, то я бы предпочел поступить так же. Надеюсь, ты понимаешь мою позицию.[/say]")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "ask_future"):
-		saynn("[say=pc]What are you gonna do if you get out of here?[/say]")
+		saynn("[say=pc]И что ты собираешься делать, когда выберешься отсюда?[/say]")
 
-		saynn("[say=announcer]I'm old. And I'm only getting older every day.[/say]")
+		saynn("[say=announcer]Я старею. И с каждым днем становлюсь всё старше.[/say]")
 
-		saynn("[say=pc]Still, who knows. We might have a good chance if we play our cards right.[/say]")
+		saynn("[say=pc]И всё же, кто знает. У нас может быть отличный шанс, если всё разыграть правильно.[/say]")
 
-		saynn("[say=announcer]My future is very much linked with my past. I don't have a safe home to come back to anymore. I will have to be on the run. Constantly. AlphaCorp does not forget or forgive.[/say]")
+		saynn("[say=announcer]Моё будущее неразрывно связано с моим прошлым. У меня больше нет безопасного дома, куда можно было бы вернуться. Мне придется постоянно быть в бегах. АльфаКорп не забывает и не прощает.[/say]")
 
-		saynn("[say=pc]Do you have any dreams?[/say]")
+		saynn("[say=pc]У тебя есть мечты?[/say]")
 
-		saynn("[say=announcer]I do. In fact, I have many.[/say]")
+		saynn("[say=announcer]Есть. На самом деле, их много.[/say]")
 
-		saynn("[say=pc]Care to share a few?[/say]")
+		saynn("[say=pc]Не хочешь поделиться парой штук?[/say]")
 
-		saynn("[say=announcer]Hah. You know how it is, baby. If you share them, they won't happen.[/say]")
+		saynn("[say=announcer]Хах. Сама знаешь, детка, как это бывает. Если ими делишься, они не сбываются.[/say]")
 
-		saynn("[say=pc]At least you're hopeful.[/say]")
+		saynn("[say=pc]По крайней мере, ты не теряешь надежды.[/say]")
 
-		saynn("[say=announcer]Sure, if you put it like this.[/say]")
+		saynn("[say=announcer]Конечно, если смотреть на это так.[/say]")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "ask_planet"):
-		saynn("[say=pc]Can you tell me more about Earth? I'm curious.[/say]")
+		saynn("[say=pc]Можешь рассказать мне побольше о Земле? Мне любопытно.[/say]")
 
-		saynn("[say=announcer]It used to be a nice little planet. Now it's just pure wasteland, for as far as an eye can see. An eye or a satellite.[/say]")
+		saynn("[say=announcer]Раньше это была милая маленькая планета. Теперь же — сплошная пустошь, куда ни глянь. Куда ни глянь глаз или спутник.[/say]")
 
-		saynn("[say=pc]A wasteland? How did that happen?[/say]")
+		saynn("[say=pc]Пустошь? Как же так вышло?[/say]")
 
-		saynn("[say=announcer]It's a long story. Maybe one day you will get to hear it. Need the right mood for it, you know?[/say]")
+		saynn("[say=announcer]Это долгая история. Может, когда-нибудь и ты её услышишь. Тут нужно подходящее настроение, понимаешь?[/say]")
 
-		saynn("[say=pc]How did you manage to escape Earth?[/say]")
+		saynn("[say=pc]Как тебе удалось сбежать с Земли?[/say]")
 
-		saynn("[say=announcer]Rockets. Big bulky rockets. Ones that can barely lift five hundred souls a pop.[/say]")
+		saynn("[say=announcer]Ракеты. Огромные, неповоротливые ракеты. Те, что едва могут поднять по пятьсот душ за раз.[/say]")
 
-		saynn("[say=pc]There is no way you had enough of them.[/say]")
+		saynn("[say=pc]Не может быть, чтобы их хватило на всех.[/say]")
 
-		saynn("[say=announcer]You bet. Most of us are still down there, probably killing each other for what little scraps of normal life that are left.[/say]")
+		saynn("[say=announcer]И не говори. Большинство из нас всё ещё там, наверняка грызут друг другу глотки за жалкие крохи нормальной жизни, что ещё остались.[/say]")
 
-		saynn("[say=pc]Sounds terrible. Glad you managed to escape.[/say]")
+		saynn("[say=pc]Звучит ужасно. Рада, что тебе удалось спастись.[/say]")
 
-		saynn("[say=announcer]Me and my girls, we all did.[/say]")
+		saynn("[say=announcer]Мы с девчонками — все сбежали.[/say]")
 
-		saynn("[say=pc]How did you manage to pull that off?[/say]")
+		saynn("[say=pc]Как тебе удалось провернуть такое?[/say]")
 
-		saynn("[say=announcer]If you live a life of a pimp long enough, you begin to acquire connections with powerful people. If you treat your girls well, these connections will strengthen. Call it team effort, I wouldn't be here without my girls.[/say]")
+		saynn("[say=announcer]Если проживешь жизнь сутенёра достаточно долго, то начнешь обрастать связями с влиятельными людьми. Если будешь хорошо заботиться о своих девчонках, эти связи станут только крепче. Назови это командной работой — без моих девочек меня бы здесь не было.[/say]")
 
-		saynn("Power of combined leverage. Smart.")
+		saynn("Сила комбинированного рычага. Умно.")
 
-		saynn("[say=announcer]But also.. As you can see, I'm here now, in this prison. So not everything went as smoothly as I'd hoped. Apparently pimps are not welcome here, in space. Still, I'm happy that they're safe now, at least.[/say]")
+		saynn("[say=announcer]Но и еще... Как видите, теперь я здесь, в этой тюрьме. Так что не всё прошло так гладко, как мне хотелось бы. Оказывается, сутенёрам здесь, в космосе, не рады. И всё же, я рада, что теперь они хотя бы в безопасности.[/say]")
 
-		saynn("Your connections only have so much reach it seems.")
+		saynn("Похоже, возможности твоих связей не безграничны.")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 	if(state == "ask_team"):
-		saynn("[say=pc]What do you think about us trying to take over this prison?[/say]")
+		saynn("[say=pc]Что думаешь, если мы попробуем захватить эту тюрьму?[/say]")
 
-		saynn("[say=announcer]I wouldn't join if I thought badly about it, baby. I think it must be done.[/say]")
+		saynn("[say=announcer]Я бы не вступала в это, если бы думала о нем плохо, малыш. Я считаю, что так должно быть.[/say]")
 
-		saynn("[say=pc]You will probably lose your arena then.[/say]")
+		saynn("[say=pc]Тогда ты, скорее всего, проиграешь на арене.[/say]")
 
-		saynn("[say=announcer]Hah, the whole world is gonna become my arena then. So I'm not too attached to it. At least I'd like to think so.[/say]")
+		saynn("[say=announcer]Ха, ну значит, весь мир станет моей ареной. Так что я к нему не особо привязан. По крайней мере, мне хочется так думать.[/say]")
 
-		saynn("[say=pc]We're gonna overthrow the captain.[/say]")
+		saynn("[say=pc]Мы свергнем капитана.[/say]")
 
-		saynn("[say=announcer]I'm not a fighter type. I wish we could talk it through.[/say]")
+		saynn("[say=announcer]Я не из тех, кто лезет в драку. Хотелось бы, чтобы мы могли просто всё обсудить.[/say]")
 
-		saynn("[say=pc]There is no talking it through, they have full power over us.[/say]")
+		saynn("[say=pc]Тут разговорами не поможешь, вся власть у них.[/say]")
 
-		saynn("[say=announcer]Indeed, that they do.[/say]")
+		saynn("[say=announcer]Это уж точно.[/say]")
 
-		addButton("Continue", "See what happens next", "")
+		addButton("Продолжить", "Смотреть, что будет дальше", "")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

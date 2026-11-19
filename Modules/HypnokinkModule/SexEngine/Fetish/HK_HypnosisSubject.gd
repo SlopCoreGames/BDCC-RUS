@@ -4,7 +4,7 @@ func _init():
 	id = Fetish.HypnosisSubject
 
 func getVisibleName():
-	return "Hypnosis (subject)"
+	return "Гипноз (объект)"
 
 func getGoals(_sexEngine, _domFetishHolder, _dom, _sub):
 	var possible = []

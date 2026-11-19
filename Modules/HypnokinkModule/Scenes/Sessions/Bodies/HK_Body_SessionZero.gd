@@ -11,97 +11,97 @@ func _run():
 		addCharacter("vion")
 		playAnimation(StageScene.Duo, "sit", {npc="vion", npcAction="sit"})
 		
-		saynn("[say=vion]Think about how you're feeling. No need to say anything, just consider it.[/say]")
+		saynn("[say=vion]Подумай о том, что ты сейчас чувствуешь. Не обязательно говорить вслух, просто прислушайся к себе.[/say]")
 
-		saynn("You feel oddly floaty, but calm and relaxed. On some level, you are aware enough to know you can wake up at any time if you need to, but you also feel no desire to do so. In fact, you want to play along, and stay in this comfortable, dreamy slumber...")
+		saynn("Ты чувствуешь странную легкость, но при этом тебе спокойно и расслабленно. На каком-то уровне ты осознаешь, что можешь проснуться в любой момент, если потребуется, но желания делать это совсем нет. Напротив, тебе хочется подыграть и остаться в этом уютном, дремотном забытьи...")
 
-		saynn("[say=vion]That's good. Now let's try some simple exercises, shall we? Nod for me.[/say]")
+		saynn("[say=vion]Вот и славно. А теперь давай попробуем выполнить несколько простых упражнений, идет? Кивни мне.[/say]")
 
-		saynn("You nod...")
+		saynn("Ты киваешь...")
 
-		saynn("[say=vion]There's a good {pc.boy}~[/say]")
+		saynn("[say=vion]Вот так, молодец {pc.boy}~[/say]")
 		
-		saynn("[say=vion]When I tell you to, you'll open your eyes. You'll stay nice and hypnotized, and as soon as I tell you to drop you'll close them again and fall even deeper. Nod.[/say]")
+		saynn("[say=vion]Когда я скажу, ты откроешь глаза. Ты останешься в приятном гипнотическом трансе, а как только я скомандую «отпускай», ты снова зажмуришься и погрузишься еще глубже. Кивни.[/say]")
 
-		saynn("You nod...")
+		saynn("Ты киваешь...")
 
-		saynn("[say=vion]Good. Open your eyes.[/say]")
+		saynn("[say=vion]Хорошо. Открывай глаза.[/say]")
 		
-		saynn("You drowsily open your eyes, but before you have a chance to focus them on anything in particular-")
+		saynn("Ты сонно открываешь глаза, но не успеваешь еще сфокусировать взгляд на чем-то конкретном, как вдруг—")
 		
-		saynn("[say=vion]And drop.[/say]")
+		saynn("[say=vion]А теперь — расслабься.[/say]")
 		
-		saynn("And your eyelids fall closed.")
+		saynn("И твои веки тяжело опускаются.")
 		
-		saynn("[say=vion]Good {pc.boy}. Now that I've got your undivided attention, let us establish some ground rules, shall we?[/say]")
+		saynn("[say=vion]Умница {pc.boy}. Теперь, когда ты полностью в моем распоряжении, давай установим несколько базовых правил, идет?[/say]")
 
-		saynn("[say=vion]What you need to understand is that hypnosis can't make you do anything you're unwilling to... but what you're unwilling to do depends on your inhibitions and boundaries.[/say]")
+		saynn("[say=vion]Тебе нужно понять одну вещь: гипноз не может заставить тебя делать то, к чему ты сам не готов... но то, к чему ты «не готов», зависит от твоих внутренних запретов и границ.[/say]")
 
-		saynn("[say=vion]Inhibitions can be broken. Boundaries can be expanded. Given enough time, hypnosis can lead you places where you'd never have dared go before your journey started.[/say]")
+		saynn("[say=vion]Запреты можно сломать. Границы можно расширить. Если дать достаточно времени, гипноз может завести тебя в такие места, куда ты бы и не осмелился заглянуть до начала этого путешествия.[/say]")
 		
-		saynn("[say=vion]Get it? Nod if you do.[/say]")
+		saynn("[say=vion]Понимаешь? Кивни, если да.[/say]")
 
-		saynn("You nod...")
+		saynn("Ты киваешь...")
 
-		saynn("[say=vion]Good~[/say]")
+		saynn("[say=vion]Хорошо~[/say]")
 
-		saynn("[say=vion]With that in mind, tell me, what are your expectations for these sessions? And be honest, with yourself as well as with me~[/say]")
+		saynn("[say=vion]Учитывая это, скажи мне: чего ты ждешь от этих сеансов? И будь честен — как с самим собой, так и со мной~[/say]")
 
-		saynn("[say=pc]Mmh...[/say]")
+		saynn("[say=pc]Ммм...[/say]")
 
-		saynn("[say=vion]Take your time, no need to rush answering.[/say]")
+		saynn("[say=vion]Не торопись, не нужно отвечать сразу.[/say]")
 
-		addButton("Decide", "Think about it", "meta_desc")
+		addButton("Решить", "Подумать об этом", "meta_desc")
 	if(state == "meta_desc"):
-		saynn("Make a choice of how {vion.name} will approach your sessions.")
+		saynn("Выбери, каким образом {vion.name} будет проводить твои сеансы.")
 
-		saynn("A caring approach will result in slower Hypnosis skill xp gain, but {vion.name} will always make sure to snap you out of hypnosis and the buffs gained will last longer.")
+		saynn("Заботливый подход приведет к более медленному получению опыта навыка Гипноза, но {vion.name} всегда будет следить за тем, чтобы мягко вывести тебя из транса, а полученные баффы будут длиться дольше.")
 
-		saynn("A mean approach will result in rapid Hypnosis skill xp gain, but you will be left in a vulnerable mental state after your sessions, with your buffs expiring quickly to encourage frequent returns.")
+		saynn("Грубый подход обеспечит быстрый прирост опыта навыка Гипноза, но после сеансов вы останетесь в уязвимом ментальном состоянии, а ваши баффы будут быстро заканчиваться, чтобы стимулировать частые возвращения.")
 
-		saynn("The professional approach offers a healthy balance.")
+		saynn("Профессиональный подход предлагает здоровый баланс.")
 
-		saynn("While the content of specific sessions will always depend primarily on that session's topic, {vion.name} may be more (or less) likely to use specific phrasing depending on your choice.")
+		saynn("Хотя содержание конкретных сеансов всегда будет зависеть прежде всего от их темы, {vion.name} может чаще (или реже) использовать определенные фразы в зависимости от вашего выбора.")
 
-		saynn("Your choice can be changed later by repeating Session Zero.")
+		saynn("Ваш выбор можно будет изменить позже, повторно пройдя «Нулевой сеанс».")
 
-		addButton("Caring", "Escapism from indefinite imprisonment please", "good")
-		addButton("Professional", "Trust the professional to do his job", "neutral")
-		addButton("Fuck me up", "Adult novella hypno-villain sounds good actually", "evil")
+		addButton("Заботливый", "Эскапизм от бесконечного заключения, пожалуйста", "good")
+		addButton("Профессиональный", "Доверься профи, пусть делает свою работу", "neutral")
+		addButton("Выеби меня в хлам", "Гипно-злодей из эротического романа — а это звучит неплохо", "evil")
 	if(state == "good"):
-		saynn("[say=pc]I... just want to stop hurting.[/say]")
+		saynn("[say=pc]Я... просто хочу, чтобы боль прекратилась.[/say]")
 
-		saynn("[say=vion]I understand. Life isn't easy at the best of times, and these are hardly the best of times for of you, are they?[/say]")
+		saynn("[say=vion]Я понимаю. Жизнь и так не сахар, а для тебя сейчас времена совсем уж не сахарные, верно?[/say]")
 
-		saynn("He gently pats you on the head.")
+		saynn("Он мягко гладит тебя по голове.")
 
-		saynn("[say=vion]I'll take care to ensure that time you spend with me is pleasant and safe.[/say]")
+		saynn("[say=vion]Я позабочусь о том, чтобы время, проведенное со мной, было приятным и безопасным.[/say]")
 		
-		addButton("Continue", "", "endthescene")
+		addButton("Продолжить", "", "endthescene")
 
 	if(state == "neutral"):
-		saynn("[say=pc]I... think you'll know best.[/say]")
+		saynn("[say=pc]Я... думаю, тебе виднее.[/say]")
 
-		saynn("[say=vion]Trusting my professionalism? Some might argue that's a dangerous game in a prison full of deviants...[/say]")
+		saynn("[say=vion]Доверяешь моему профессионализму? Кто-то сказал бы, что в тюрьме, полной извращенцев, это опасная игра...[/say]")
 
-		saynn("He rests a hand on your shoulder.")
+		saynn("Он кладет руку тебе на плечо.")
 		
-		saynn("[say=vion]Don't you worry though, your mind is in good hands with me.[/say]")
+		saynn("[say=vion]Но не переживай, твой разум в надежных руках.[/say]")
 		
-		addButton("Continue", "", "endthescene")
+		addButton("Продолжить", "", "endthescene")
 
 	if(state == "evil"):
-		saynn("[say=pc]I... want you to break me. Bend me to your will. Turn my mind into mush.[/say]")
+		saynn("[say=pc]Я... хочу, чтобы ты сломала меня. Покорила своей волей. Превратила мой разум в кашу.[/say]")
 
-		saynn("[say=vion]Ah, I see.[/say]")
+		saynn("[say=vion]Ах, вот оно что.[/say]")
 
-		saynn("[say=vion]I consider myself a professional, {pc.name}. That being said...[/say]")
+		saynn("[say=vion]Я считаю себя профессионалом, {pc.name}. Но при этом...[/say]")
 
-		saynn("He hooks a claw under your collar, leans closer, and whispers in your ear.")
+		saynn("Он подцепляет когтем твой воротник, наклоняется ближе и шепчет тебе на ухо.")
 
-		saynn("[say=vion]I don't mind [i]occasionally[/i] indulging the fantasies of an eager hypnoslut~[/say]")
+		saynn("[say=vion]Я не против [i]время от времени[/i] потакать фантазиям жадной гипно-сучки~[/say]")
 		
-		addButton("Continue", "", "endthescene")
+		addButton("Продолжить", "", "endthescene")
 
 
 func _react(_action: String, _args):

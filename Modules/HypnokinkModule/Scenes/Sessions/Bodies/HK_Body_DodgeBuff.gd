@@ -11,41 +11,41 @@ func _run():
 		addCharacter("vion")
 		playAnimation(StageScene.Duo, "sit", {npc="vion", npcAction="sit"})
 		
-		saynn("[say=vion]Focus on your legs for me. Flex your toes.[/say]")
+		saynn("[say=vion]Сосредоточься на своих ногах. Пошевели пальцами ног.[/say]")
 
-		saynn("You slowly wiggle your toes.")
+		saynn("Ты медленно шевелишь пальцами ног.")
 
-		saynn("[say=vion]Tense your legs. Lock them in place, as rigid as steel. Don't curl up, just tense in place.[/say]")
+		saynn("[say=vion]Напряги ноги. Зафиксируй их, сделай их жесткими, как сталь. Не сгибай их, просто напряги на месте.[/say]")
 
-		saynn("You tense the muscles in your legs. Like forcing a spring to coil up.")
+		saynn("Ты напрягаешь мышцы ног. Словно заставляешь пружину сжиматься.")
 
-		saynn("[say=vion]Tense even more, until its almost painful. Now hold it. Feel that tension.[/say]")
+		saynn("[say=vion]Напрягайся еще сильнее, пока не почувствуешь почти болезненное усилие. А теперь застынь. Почувствуй это напряжение.[/say]")
 
-		saynn("[say=vion]You carry some of this tension with you all day, every day. You don't even notice its there. But when you bring it to the surface like this...[/say]")
+		saynn("[say=vion]Ты носишь часть этого напряжения в себе весь день, каждый божий день. Ты даже не замечаешь его присутствия. Но когда ты выводишь его на поверхность вот так...[/say]")
 
-		saynn("Your legs almost feel like they're vibrating. Your toes curl. The tension builds, and builds...")
+		saynn("Твои ноги словно начинают вибрировать. Пальцы ног поджимаются. Напряжение растет и растет...")
 
-		saynn("[say=vion]Now... Release all of it. Let it dissolve and fade away.[/say]")
+		saynn("[say=vion]А теперь... Отпусти всё. Позволь ему раствориться и исчезнуть.[/say]")
 
-		saynn("Your legs relax more than you ever thought possible as the tension dissipates in an instant, and is replaced by a fuzzy, pleasant numbness.")
+		saynn("Твои ноги расслабляются сильнее, чем ты когда-либо могла себе представить: напряжение мгновенно рассеивается, сменяясь приятным, туманным онемением.")
 
-		saynn("[say=vion]Good. Isn't that better? Now the same with your arms. Tense them up. Ball your hands into fists. Tighter.[/say]")
+		saynn("[say=vion]Хорошо. Так ведь лучше? А теперь то же самое с руками. Напряги их. Сожми ладони в кулаки. Сильнее![/say]")
 
-		saynn("You squeeze hard. Your hands shake as if you were struggling against invisible restraints.")
+		saynn("Ты сжимаешься изо всех сил. Твои руки дрожат, будто ты пытаешься вырваться из невидимых оков.")
 
-		saynn("[say=vion]Build it up. Put as much effort into holding still as you can.[/say]")
+		saynn("[say=vion]Напрягайся. Вкладывай в это неподвижное состояние столько усилий, сколько сможешь.[/say]")
 
-		saynn("Your jaw tightens. Twitches and tremors travel up your arms, along your shoulders and down your back.")
+		saynn("Челюсти сжимаются. Дрожь и судороги пробегают по рукам, поднимаются к плечам и спускаются вниз по спине.")
 
-		saynn("[say=vion]And... release. Let it all flow out.[/say]")
+		saynn("[say=vion]А теперь... расслабься. Позволь всему этому вытечь из тебя.[/say]")
 
-		saynn("Your arms drop by your side, suddenly relaxed and light as a feather. You sigh as tension weren't even aware of leaves your body.")
+		saynn("Твои руки бессильно опускаются вдоль тела, внезапно ставшие расслабленными и легкими, как перышко. Ты вздыхаешь, чувствуя, как напряжение, о котором ты даже не подозревал, покидает твое тело.")
 
-		saynn("[say=vion]Perfect.[/say]")
+		saynn("[say=vion]Идеально.[/say]")
 
-		saynn("[say=vion]Feel how limber your body can be, how effortless it can be to flex and stretch...[/say]")
+		saynn("[say=vion]Почувствуй, насколько податливым может быть твое тело, насколько легко ему напрягаться и растягиваться...[/say]")
 		
-		addButton("Continue", "", "endthescene")
+		addButton("Продолжить", "", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

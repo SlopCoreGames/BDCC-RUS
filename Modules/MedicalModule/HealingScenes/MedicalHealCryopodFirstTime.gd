@@ -9,133 +9,133 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcAction="sit"})
 		
 	if(state == ""):
-		saynn("You lean over the counter and hold onto it.")
+		saynn("Ты опираешься на стойку, вцепившись в неё руками.")
 
-		saynn("[say=pc]I’m not doing well, doc. I think I need help.[/say]")
+		saynn("[say=pc]Мне несладко, док. Кажется, мне нужна помощь.[/say]")
 
-		saynn("Eliza quickly springs off her chair and walks behind the wall before appearing from one of the doors. She steps up to you and starts looking for any obvious damage.")
+		saynn("Элиза резко вскакивает со стула, скрывается за перегородкой и тут же появляется из одной из дверей. Она подходит к тебе и начинает осматривать на предмет явных повреждений.")
 
-		saynn("[say=eliza]Where does it hurt?[/say]")
+		saynn("[say=eliza]Где болит?[/say]")
 
-		saynn("[say=pc]Just.. inside.[/say]")
+		saynn("[say=pc]Просто... внутри.[/say]")
 
-		saynn("Eliza nods and grabs you by the collar before tugging you somewhere.")
+		saynn("Элиза кивает, хватает тебя за воротник и тянет за собой.")
 
-		saynn("[say=eliza]Hold on, we will fix you right up.[/say]")
+		saynn("[say=eliza]Погоди, сейчас мы тебя подлатаем.[/say]")
 
-		addButton("Continue", "See where she brings you", "continue")
+		addButton("Продолжить", "Посмотреть, куда она тебя приведет", "continue")
 
 	if(state == "continue"):
 		aimCameraAndSetLocName("med_researchlab")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcAction="stand", bodyState={naked=true}})
 		
-		saynn("Eliza brings you into the lab, a very sterile room with lots of expensive equipment around. And doctor Quinn brings to one such hi-tech machine.")
+		saynn("Элиза заводит тебя в лабораторию — стерильное помещение, заставленное кучей дорогостоящего оборудования. Доктор Куинн подводит тебя к одной из таких высокотехнологичных машин.")
 
-		saynn("It’s.. massive, occupying the whole corner of the lab. It consists of a computer and a huge cylindrical pod with glass walls that easily reaches the ceiling. The pod seems to be big enough to fit a person.")
+		saynn("Она... массивная, занимает весь угол лаборатории. Это компьютер и огромная цилиндрическая капсула со стеклянными стенками, уходящая почти под самый потолок. Капсула кажется достаточно просторной, чтобы в неё поместился человек.")
 
-		saynn("[say=eliza]Latest and greatest. Well, for prisons anyway.[/say]")
+		saynn("[say=eliza]Последняя модель, самая топовая. Ну, по крайней мере, для тюрем.[/say]")
 
-		saynn("Doctor goes ahead and grabs something that looks like a breathing mask.")
+		saynn("Доктор берет что-то, напоминающее дыхательную маску.")
 
 		# (if has clothes)
 		if(!GM.pc.isFullyNaked()):
-			saynn("[say=eliza]Take off your clothes, patient. And let me put this on you.[/say]")
+			saynn("[say=eliza]Раздевайтесь, пациент. И позвольте мне надеть это на вас.[/say]")
 
-			saynn("Well, it seems to be necessary so you don’t argue with the doc. You {pc.undressMessage}. You leave all your belongings and a neat pile and let Eliza put the mask on your face.")
+			saynn("Что ж, похоже, это необходимо, чтобы вы не спорили с доктором. Вы {pc.undressMessage}. Вы оставляете все свои вещи аккуратной стопкой и позволяете Элизе надеть маску вам на лицо.")
 
 		# (else)
 		else:
-			saynn("[say=eliza]You’re naked, good. Let me put this on you.[/say]")
+			saynn("[say=eliza]Вы голышом, отлично. Позвольте мне надеть это на вас.[/say]")
 
-			saynn("You leave all your belongings and a neat pile and let Eliza put the mask on your face.")
+			saynn("Вы оставляете все свои вещи аккуратной стопкой и позволяете Элизе надеть маску вам на лицо.")
 
 		# (end)
 
-		saynn("Eliza opens the door of a pod and invites you inside.")
+		saynn("Элиза открывает дверь криокапсулы и приглашает вас внутрь.")
 
-		saynn("[say=eliza]It will feel weird at first.[/say]")
+		saynn("[say=eliza]Сначала будет странное ощущение.[/say]")
 
-		saynn("Huh. Maybe you should have asked if it’s safe first. But at this point you’re ready to do anything to make the pain go away. You don’t even mind your private bits being exposed.")
+		saynn("Хм. Возможно, стоило сначала спросить, безопасно ли это. Но на данный момент вы готовы на всё, лишь бы боль утихла. Вас даже не смущает, что ваши интимные места выставлены напоказ.")
 
-		addButton("Step inside", "Step inside the glass pod and let Eliza do her magic", "step_inside")
+		addButton("Войти внутрь", "Шагните внутрь стеклянной капсулы и позвольте Элизе сотворить свое волшебство", "step_inside")
 
 	if(state == "step_inside"):
 		playAnimation(StageScene.Cryopod, "idle", {bodyState={naked=true}})
 		
-		saynn("You exhale audibly through the mask and step inside before turning around and face the feline. Doctor Quinn presses a button on the computer and a long thin tube extends from the pod’s ceiling. Eliza reaches for it and then connects it to your mask. This air.. so fresh.")
+		saynn("Вы громко выдыхаете через маску и заходите внутрь, после чего разворачиваетесь лицом к кошкодевушке. Доктор Куинн нажимает кнопку на компьютере, и с потолка капсулы опускается длинная тонкая трубка. Элиза тянется к ней и подсоединяет её к вашей маске. Этот воздух... такой свежий.")
 
-		saynn("[say=eliza]Now stand still for me.[/say]")
+		saynn("[say=eliza]А теперь постой смирно.[/say]")
 
-		saynn("Easy enough. Eliza closes the pod’s glass door and presses a button that secures it. Now you are trapped inside, great. After that she presses another button and the pod begins to fill with something.. some kind of warm blue fluid. It’s not water, it doesn’t act anywhere close to water. The level climbs.. feet, knees, thighs, crotch.. ah, it tickles you there.. belly.. chest.. ow, it tickles again.. You’re not sure if you should panic or not but Eliza seems calm.")
+		saynn("Проще простого. Элиза закрывает стеклянную дверцу капсулы и нажимает кнопку фиксации. Ну вот, теперь ты заперт внутри, блеск. Затем она нажимает еще одну кнопку, и капсула начинает наполняться чем-то... какой-то теплой голубой жидкостью. Это не вода, ведет она себя совсем не так, как вода. Уровень поднимается... ступни, колени, бедра, пах... ах, там так щекотно... живот... грудь... ой, опять щекочет... Ты не понимаешь, стоит ли паниковать, но Элиза кажется совершенно спокойной.")
 
-		saynn("[say=eliza]This fluid is much heavier than you.. You will see what I mean, patient.[/say]")
+		saynn("[say=eliza]Эта жидкость гораздо тяжелее тебя... Скоро поймешь, о чем я, пациент.[/say]")
 
-		saynn("As it begins to reach your neck, you can’t help but to raise your chin high and close your eyes. But at the same time.. you begin to feel.. lighter? Your toes are no longer touching the floor of that pod. You’re floating.")
+		saynn("Когда она начинает достигать шеи, ты невольно задираешь подбородок и закрываешь глаза. Но в то же время... ты начинаешь чувствовать... легкость? Твои пальцы ног больше не касаются дна капсулы. Ты паришь.")
 
-		saynn("Your breathing mask seems to be leak-proof, the liquid slowly fills the whole pod but you can still breathe air. You slowly open your eyes and realize that you can kinda look through the fluid, even if it's kinda muddy. You can’t hear Eliza anymore though. You’re left to float in the tank. And it tickles..")
+		saynn("Твоя дыхательная маска, кажется, герметична: жидкость медленно заполняет всю капсулу, но ты всё еще можешь дышать воздухом. Ты медленно открываешь глаза и понимаешь, что сквозь жидкость можно что-то разглядеть, хоть она и кажется мутноватой. Однако Элизу больше не слышно. Ты остался дрейфовать в танке. И это щекотно...")
 
-		addButton("Continue", "See what happens next", "continue1")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue1")
 
 	if(state == "continue1"):
-		saynn("You realize that your eyes were closed. Oh. Did you fall asleep? You look around and realize that Eliza isn’t there anymore. How much time has passed? Who knows. But it feels nice, the heavy fluid cushions your whole body.. While tickling your private bits and skin around any bruises that you might have.")
+		saynn("Ты понимаешь, что твои глаза были закрыты. Ох. Неужели ты уснул? Оглядевшись, ты понимаешь, что Элизы больше нет рядом. Сколько времени прошло? Кто знает. Но это приятное чувство: тяжелая жидкость обволакивает всё твое тело... щекоча твои интимные места и кожу вокруг возможных синяков.")
 
-		saynn("So sleepy..")
+		saynn("Так хочется спать...")
 
-		addButton("Continue", "See what happens next", "continue2")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue2")
 
 	if(state == "continue2"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcAction="stand", bodyState={naked=true}})
 		
-		saynn("You open your eyes again when you feel some kind of vibrations. You see Eliza knocking on the glass. She stares at you and your body before gesturing ‘OK’ and pressing a button on the computer. The fluid level slowly starts to go down, letting you feel the floor again. Your body is slowly getting heavier as the liquid is no longer supporting it.")
+		saynn("Ты снова открываешь глаза, когда чувствуешь какую-то вибрацию. Видишь, как Элиза стучит по стеклу. Она пристально смотрит на тебя, затем на твоё тело, после чего показывает жест «ОК» и нажимает кнопку на компьютере. Уровень жидкости начинает медленно падать, и ты снова чувствуешь опору под ногами. Твоё тело постепенно тяжелеет, так как жидкость больше не поддерживает его.")
 
-		saynn("[say=eliza]Should be good as new.[/say]")
+		saynn("[say=eliza]Теперь будешь как новенький.[/say]")
 
-		saynn("Your legs feel weak at first. Wow, that was probably the comfiest you felt ever since ending up here. Eliza waits for the fluid to be gone completely before pressing a button to open the door. This blue stuff is so heavy that it doesn’t stick to your body, you feel dry instantly.")
+		saynn("Сначала ноги кажутся слабыми. Вау, пожалуй, это было самое комфортное состояние с тех пор, как ты здесь оказался. Элиза ждёт, пока жидкость сойдёт полностью, прежде чем нажать кнопку открытия двери. Эта синяя жижа настолько плотная, что не липнет к телу — ты мгновенно становишься сухим.")
 
-		saynn("Then Eliza enters the tube and removes your breathing mask, letting you breathe normally. Aw, this air is not that good in comparison. The whole lab smells of pharmacy.")
+		saynn("Затем Элиза заходит в капсулу и снимает с тебя дыхательную маску, позволяя дышать как обычно. Эх, этот воздух не так хорош по сравнению с тем. Вся лаборатория пропитана запахом аптеки.")
 
-		saynn("[say=pc]What is this thing?[/say]")
+		saynn("[say=pc]Что это за штука?[/say]")
 
-		saynn("Eliza throws you your belongings and waits for you to be ready.")
+		saynn("Элиза бросает тебе твои вещи и ждёт, пока ты будешь готов.")
 
-		saynn("[say=eliza]It’s a Cryopod.[/say]")
+		saynn("[say=eliza]Это криопод.[/say]")
 
-		saynn("[say=pc]Cryopod?[/say]")
+		saynn("[say=pc]Криопод?[/say]")
 
-		saynn("[say=eliza]Mends broken tissue and bones, removes any irritation. Cheap in comparison to a real surgeon. But you know, a machine doesn’t care what to mend and how, it just does it.[/say]")
+		saynn("[say=eliza]Заживляет повреждённые ткани и кости, убирает любое раздражение. Дешевле, чем настоящий хирург. Но знаешь, машине плевать, что именно и как чинить, она просто делает свою работу.[/say]")
 
-		saynn("You tilt your head slightly.")
+		saynn("Ты слегка наклоняешь голову.")
 
-		saynn("[say=pc]So it can mend bones wrong?[/say]")
+		saynn("[say=pc]Значит, она может неправильно срастить кости?[/say]")
 
-		saynn("Eliza chuckles.")
+		saynn("Элиза посмеивается.")
 
-		saynn("[say=eliza]You don’t wanna see the monstrosities it creates sometimes.[/say]")
+		saynn("[say=eliza]Тебе лучше не видеть тех чудовищ, которых оно иногда создает.[/say]")
 
-		saynn("You raise your brow and begin to touch your chest in different places. Eliza chuckles again.")
+		saynn("Ты удивленно приподнимаешь бровь и начинаешь ощупывать разные места на груди. Элиза снова посмеивается.")
 
-		saynn("[say=eliza]Relax~. Worst case we break your ribs and let them mend again.[/say]")
+		saynn("[say=eliza]Расслабься~. В худшем случае мы сломаем тебе ребра, а потом дадим им срастись заново.[/say]")
 
-		saynn("That.. okay.")
+		saynn("Это... звучит приемлемо.")
 
-		addButton("Continue", "See what happens next", "continue3")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue3")
 
 	if(state == "continue3"):
 		aimCameraAndSetLocName("med_lobbymain")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcAction="stand"})
 		
-		saynn("After that Eliza just brings you back into the lobby. You realize that at least a few hours have passed since you were here last time.")
+		saynn("После этого Элиза просто выводит тебя обратно в лобби. Ты понимаешь, что с твоего последнего визита прошло как минимум несколько часов.")
 
-		saynn("[say=eliza]Well. That should be it. I realized that I forgot to ask if you feel better.[/say]")
+		saynn("[say=eliza]Ну вот. Вроде всё. Только сейчас я поняла, что забыла спросить, стало ли тебе лучше.[/say]")
 
-		saynn("[say=pc]Yeah.. I’m good.[/say]")
+		saynn("[say=pc]Да.. вроде норм.[/say]")
 
-		saynn("Eliza softly taps you on the shoulder.")
+		saynn("Элиза мягко хлопает тебя по плечу.")
 
-		saynn("[say=eliza]Try to not get in trouble again.[/say]")
+		saynn("[say=eliza]Постарайся больше не влипать в неприятности.[/say]")
 
 		# (scene ends)
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 		
 
 

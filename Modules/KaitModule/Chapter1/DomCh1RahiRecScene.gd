@@ -13,126 +13,126 @@ func _run():
 		knowsRahi = getFlag("RahiModule.Rahi_AskedName", false)
 		enslavedRahi = getFlag("RahiModule.rahi5SceneHappened", false)
 		if (!knowsRahi):
-			saynn("[say=pc]I have a question for you, Rahi.[/say]")
+			saynn("[say=pc]У меня к тебе вопрос, Рахи.[/say]")
 
-			saynn("The feline's ears perk.")
+			saynn("Ушки кошки навострились.")
 
-			saynn("[say=rahi]How.. meow.. how do you know that name?[/say]")
+			saynn("[say=rahi]Как... мяу... откуда ты знаешь это имя?[/say]")
 
-			saynn("You plant one of your hands on her shoulder and try to establish eye contact. The brown feline isn't so willing to do so, just brushing her tail instead.")
+			saynn("Ты кладешь руку ей на плечо, пытаясь поймать её взгляд. Коричневошерстная кошка не особо спешит смотреть в глаза, лишь лениво водит хвостом.")
 
-			saynn("[say=pc]I just do. That's not important. What's important is what you can do for me.[/say]")
+			saynn("[say=pc]Просто знаю. Это не важно. Важно то, что ты можешь для меня сделать.[/say]")
 
-			saynn("Rahi keeps her chin low, her shoulder twitching ever so slightly.")
+			saynn("Рахи держит подбородок низко, её плечо едва заметно вздрагивает.")
 
-			saynn("[say=rahi]What would that be..[/say]")
+			saynn("[say=rahi]И что же это будет?..[/say]")
 
 		else:
-			saynn("[say=pc]I have a question for you, Rahi.[/say]")
+			saynn("[say=pc]У меня к тебе вопрос, Рахи.[/say]")
 
-			saynn("The feline's ears perk.")
+			saynn("Ушки кошки навострились.")
 
-			saynn("[say=rahi]She doesn't like that name..[/say]")
+			saynn("[say=rahi]Ей не нравится это имя...[/say]")
 
-			saynn("You plant one of your hands on her shoulder and try to establish eye contact. The brown feline isn't so willing to do so, just brushing her tail instead.")
+			saynn("Ты кладешь руку ей на плечо, пытаясь поймать её взгляд. Коричневошерстная кошка не особо спешит смотреть в глаза, лишь лениво водит хвостом.")
 
-			saynn("[say=pc]But it's your name. Doesn't matter though, I need to know something.[/say]")
+			saynn("[say=pc]Но это же твоё имя. Впрочем, неважно, мне нужно кое-что узнать.[/say]")
 
-			saynn("Rahi keeps her chin low, her shoulder twitching ever so slightly.")
+			saynn("Рахи держит подбородок низко, её плечо едва заметно вздрагивает.")
 
-			saynn("[say=rahi]What would that be..[/say]")
+			saynn("[say=rahi]И что же это будет?..[/say]")
 
-		saynn("[say=pc]Do you want to get out of here?[/say]")
+		saynn("[say=pc]Ты хочешь выбраться отсюда?[/say]")
 
-		saynn("Her blue eyes sneakily inspect your body.")
+		saynn("Её голубые глаза воровато осматривают твоё тело.")
 
-		saynn("[say=rahi]Oh.. you wanna do something with her? In your cell?..[/say]")
+		saynn("[say=rahi]Ох... ты хочешь что-то с ней замутить? Прямо в камере?..[/say]")
 
-		saynn("You sigh.")
+		saynn("Ты вздыхаешь.")
 
-		saynn("[say=pc]No. Do you wanna get out of this prison?[/say]")
+		saynn("[say=pc]Нет. Ты хочешь выбраться из этой тюрьмы?[/say]")
 
-		saynn("Rahi gives up inspecting your body and instead leans back, her head tilted, the tip of her ponytail resting on her far shoulder.")
+		saynn("Рахи перестаёт разглядывать твоё тело и вместо этого откидывается назад, склонив голову так, что кончик её хвоста ложится на противоположное плечо.")
 
-		saynn("[say=rahi]Why?[/say]")
+		saynn("[say=rahi]Почему?[/say]")
 
-		saynn("She genuinely sounds confused. You can try to explain it.. but she might be a lost cause already.")
+		saynn("В её голосе слышится искреннее замешательство. Можешь попытаться объяснить... но, возможно, она уже безнадёжна.")
 
-		saynn("[say=pc]Here is the deal. My team needs a thief. And you were recommended. You are gonna come with me now, nice and quiet. Understand?[/say]")
+		saynn("[say=pc]Слушай сюда. Моей команде нужен вор. И тебя порекомендовали. Так что сейчас ты пойдёшь со мной, тихо и спокойно. Понял?[/say]")
 
-		saynn("Rahi blinks a lot, gradually leaning away as you get closer. Your hand increases the grip on her shoulder, preventing any dumb ideas.")
+		saynn("Рахи часто моргает, постепенно отклоняясь назад, когда ты приближаешься. Твоя рука сильнее сжимает её плечо, пресекая любые глупые идеи.")
 
-		saynn("[say=rahi]Uh.. um.. She is not sure this is a g-good idea.. Kitty doesn't trust you, sorry-y.. meow-w..[/say]")
+		saynn("[say=rahi]Э-э.. ну.. Она не уверена, что это хорошая и-дея.. Китти тебе не доверяет, сорри-и.. мяу-у..[/say]")
 
-		saynn("What a scaredy cat. You can either try to get her trust.. which will probably take forever.. or maybe you can just grab her..")
+		saynn("Ну и трусиха. Ты можешь либо попытаться завоевать её доверие... на что, скорее всего, уйдет целая вечность... либо просто схватить её...")
 
-		saynn("[say=rahi]She will yell for help..[/say]")
+		saynn("[say=rahi]Она закричит о помощи..[/say]")
 
-		saynn("Right. You might need a ballgag to shut her up first. Surely, the guards here have a few. Just gotta beat one up.")
+		saynn("Точно. Сначала тебе может понадобиться шарик-кляп, чтобы она заткнулась. У охраны здесь наверняка есть парочка. Нужно только кого-нибудь из них отлупить.")
 		
 		setFlag("KaitModule.needBallgag", true)
 		
 		if (hasItemID("ballgag")):
-			addButton("Make her", "Put a ballgag on Rahi so she doesn't cry for help and bring her forcefully", "ballgag")
+			addButton("Сделай её", "Надеть на Рахи шарик-кляп, чтобы она не звала на помощь, и силой увести её", "ballgag")
 		else:
-			addDisabledButton("Make her", "You need a ballgag in your inventory to be able to bring her in without her yelling.\n\nSurely, the guards here have a few. Just gotta beat one up.")
-		addButton("Let her be", "Let kitty be for now", "let_her_be")
+			addDisabledButton("Сделай её", "Чтобы увести её без криков, в твоём инвентаре должен быть шарик-кляп.\n\nУ охраны здесь наверняка есть парочка. Нужно только кого-нибудь из них отлупить.")
+		addButton("Оставить её в покое", "Пока что не трогать киску", "let_her_be")
 	if(state == "let_her_be"):
-		saynn("[say=pc]Alright. Sit tight.[/say]")
+		saynn("[say=pc]Ладно. Сиди смирно.[/say]")
 
-		saynn("[say=rahi]Meow..[/say]")
+		saynn("[say=rahi]Мяу...[/say]")
 
-		saynn("As you step back, Rahi returns to stroking her tail.")
+		saynn("Когда ты отступаешь, Рахи возвращается к поглаживанию своего хвоста.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "ballgag"):
 		playAnimation(StageScene.Choking, "idle", {pc="pc", npc="rahi"})
-		saynn("[say=pc]Yell? We can't have that.[/say]")
+		saynn("[say=pc]Кричать? Нам это не нужно.[/say]")
 
-		saynn("Your hand produced a ballgag.. a default option for situations like this. Rahi's eyes go wide, her eyes flattening.")
+		saynn("Твоя рука извлекла кляп-шарик... стандартный вариант для подобных ситуаций. Глаза Рахи расширяются, а взгляд становится остекленевшим.")
 
-		saynn("She tries to jerk her head away and start audibly protesting.. but your hand catches her collar and pulls her close while the other hand slides the rubber ball between her teeth before she can clamp her jaw shut.")
+		saynn("Она пытается дернуть головой и начать громко протестовать... но твоя рука хватает её за воротник и притягивает к себе, а другая рука успевает просунуть резиновую сферу ей между зубов прежде, чем она успевает плотно сжать челюсти.")
 
-		saynn("[say=rahi]N-no-mmph-..[/say]")
+		saynn("[say=rahi]Н-нет... ммф!..[/say]")
 
-		saynn("Muffled noises keep escaping the feline, she claws at your wrist a few times before you growl into her ear.")
+		saynn("Из кошечки продолжают вырываться приглушенные звуки; она несколько раз вцепляется когтями в твое запястье, прежде чем ты рычишь ей прямо в ухо.")
 
-		saynn("[say=pc]It can get much worse.[/say]")
+		saynn("[say=pc]Всё может стать гораздо хуже.[/say]")
 
-		saynn("That's when she goes mostly still, trembling a bit.. but smart enough not to fight.")
+		saynn("В этот момент она почти замирает, слегка дрожа... но она достаточно умна, чтобы не сопротивляться.")
 
-		saynn("[say=pc]That's better.[/say]")
+		saynn("[say=pc]Так-то лучше.[/say]")
 
-		saynn("You grab her by the collar and pull her off of the bench, inviting her to follow.")
+		saynn("Ты хватаешь её за воротник и тянешь с лавки, приглашая следовать за собой.")
 
-		addButton("Hideout", "Bring kitty to your hideout", "in_arena")
+		addButton("Убежище", "Притащить киску в свое убежище", "in_arena")
 	if(state == "in_arena"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi"})
 		aimCameraAndSetLocName("fight_nearentrance")
-		saynn("The underground arena reveals its ugly sight to the gagged feline. A whole crowd of prisoners stand around the big cage, cheering the next poor bathered souls to continue fighting it out.")
+		saynn("Подземная арена предстает во всей своей уродливой красе перед кляпом во рту кошачьей девицы. Толпа заключенных окружила огромную клетку, радостно вопя и подбадривая очередную пару несчастных, избитых до полусмерти бойцов, продолжающих схватку.")
 
-		saynn("Rahi's big kitty eyes are staring at everything around her with naive fascination. It doesn't seem like she ever paid this place a visit.")
+		saynn("Огромные кошачьи глаза Рахи с наивным восторгом рассматривают всё вокруг. Похоже, она здесь еще никогда не бывала.")
 
-		addButton("Continue", "See what happens next", "hideout")
+		addButton("Продолжить", "Смотреть, что будет дальше", "hideout")
 	if(state == "hideout"):
 		aimCameraAndSetLocName("hideout_middle")
-		saynn("You pull Rahi behind the arena and towards the secret entrance in the Announcer's office. It's hidden behind the metal shelves so you take some time to push them aside. As you do, you begin to see some faint signs of light. Huh.")
+		saynn("Вы уводите Рахи за арену, к секретному входу в кабинете комментатора. Он спрятан за металлическими стеллажами, так что вам приходится потратить время, чтобы отодвинуть их. И пока вы это делаете, сквозь щели начинает пробиваться слабый свет. Хм.")
 
-		saynn("This abandoned maintenance corridor looks much less abandoned now, that's for sure. It's still a wreck of a place.. but most of the obvious trash has been cleared up. The half-broken table is not here anymore, the thing got moved.")
+		saynn("Этот заброшенный технический коридор теперь выглядит уже не таким уж и заброшенным, это уж точно. Место всё еще напоминает развалины... но весь явный мусор вроде как убрали. Полусломанного стола тоже нет — его куда-то передвинули.")
 
-		saynn("It looks like someone even managed to get the power going. Probably Kait. And probably still without the insulated gloves.")
+		saynn("Похоже, кому-то даже удалось запустить электричество. Наверняка Кейт. И, скорее всего, всё так же без диэлектрических перчаток.")
 
-		saynn("There is no point in keeping Rahi gagged anymore.. so you take the gag back.")
+		saynn("Смысла держать Рахи с кляпом больше нет... и ты его снимаешь.")
 
-		saynn("[say=rahi]..wow..[/say]")
+		saynn("[say=rahi]Ого...[/say]")
 
-		saynn("[say=pc]Not gonna scream anymore?[/say]")
+		saynn("[say=pc]Больше не собираешься кричать?[/say]")
 
-		saynn("[say=rahi]Meow..[/say]")
+		saynn("[say=rahi]Мяу...[/say]")
 
-		saynn("A familiar voice approaches.")
+		saynn("К вам приближается знакомый голос.")
 
-		addButton("Continue", "See what happens next", "kait_finds")
+		addButton("Продолжить", "Смотреть, что будет дальше", "kait_finds")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -10,32 +10,32 @@ func _run():
 		
 	if(state == ""):
 		aimCameraAndSetLocName("med_researchlab")
-		saynn("You let Eliza deduct enough credits for the cryopod treatment. She brings you into the lab and prepares the machine. You give her all your belongings, put on the breathing mask and enter the pod. Eliza presses some buttons and the hi-tech machine begins doing its magic, replacing the air inside with a blue heavy fluid.")
+		saynn("Вы позволяете Элизе списать достаточно кредитов за процедуру в криокамере. Она проводит вас в лабораторию и готовит аппарат. Вы отдаете ей все свои вещи, надеваете дыхательную маску и ложитесь в капсулу. Элиза нажимает несколько кнопок, и высокотехнологичная машина начинает творить свою магию, замещая воздух внутри плотной голубой жидкостью.")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "continue"):
 		playAnimation(StageScene.Cryopod, "idle", {bodyState={naked=true}})
 		
-		saynn("Very soon you find yourself floating above the floor, fully submerged. The strange liquid tickles you in all the random spots, including your private bits.")
+		saynn("Вскоре вы обнаруживаете, что полностью погружены в жидкость и парите над полом. Странная субстанция щекочет вас во всех самых неожиданных местах, включая ваши интимные зоны.")
 
-		saynn("It feels so comfy.. Your eyes close as your mind drifts away into the subconsciousness. All the while your wounds are slowly being healed.")
+		saynn("Это ощущается так уютно... Ваши глаза закрываются, а сознание уплывает куда-то в подсознание. Тем временем ваши раны медленно затягиваются.")
 
-		addButton("Continue", "See what happens next", "continue1")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue1")
 
 	if(state == "continue1"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcAction="stand", bodyState={naked=true}})
 		aimCameraAndSetLocName("med_nearlab")
 		GM.pc.setLocation("med_nearlab")
 		
-		saynn("Time passes swiftly. Eventually Eliza wakes you up and turns off the machine before getting you out, healed and refreshed.")
+		saynn("Время летит незаметно. В конце концов Элиза будит вас и выключает машину, после чего извлекает вас — полностью исцеленного и восстановившего силы.")
 
-		saynn("[say=eliza]You’re welcome~.[/say]")
+		saynn("[say=eliza]Не за что~.[/say]")
 
-		saynn("Doctor Quinn brings you out into the corridor before letting you go.")
+		saynn("Доктор Куинн выводит вас в коридор, прежде чем отпустить.")
 
 		# (scene ends)
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 		
 
 

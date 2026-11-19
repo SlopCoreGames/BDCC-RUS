@@ -17,10 +17,10 @@ func run(_triggerID, _args):
 	
 
 	if(GM.main.getDays() < getFlag("JackiModule.jackiBusyUntil", -1)):
-		saynn("Looks like Jacki is not here today.")
-		addDisabledButton("Jacki", "She is not here today. Come back some other day")
+		saynn("Похоже, Джеки сегодня нет.")
+		addDisabledButton("Джеки", "Её сегодня нет. Приходи в другой раз.")
 		return
-	saynn("Looks like Jacki is doing yoga here.")
+	saynn("Похоже, Джеки здесь занимается йогой.")
 	addButtonUnlessLate("Jacki", "Talk to the wolfie", "talk")
 
 func getPriority():

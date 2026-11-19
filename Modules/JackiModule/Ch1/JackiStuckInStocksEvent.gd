@@ -8,7 +8,7 @@ func registerTriggers(es):
 
 func run(_triggerID, _args):
 	if(!getFlag("JackiModule.Jacki_StocksSceneHappened") && getFlag("JackiModule.Jacki_FirstTimeEncountered")):
-		saynn("You notice someone locked in one of the pillories. Someone who you recognize. A female guard is standing near them.")
+		saynn("Вы замечаете кого-то, запертого в одном из колодок. Это человек, которого вы узнаёте. Рядом с ним стоит женщина-охранница.")
 
 		addButtonUnlessLate("Inmate", "(chastity piercings, urethra penetration) See what is happening there", "jackiscene")
 

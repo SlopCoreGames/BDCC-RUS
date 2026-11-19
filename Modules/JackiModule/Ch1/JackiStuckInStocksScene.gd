@@ -20,25 +20,25 @@ func _run():
 
 		# (Jacki is locked into the stocks and also gagged for growling)
 
-		saynn("You decide that now would be a good time to approach. An inmate is forcibly bent forward with their legs spread wide with a metal bar that connects the cuffs on their ankles. Their head and arms are forced into locked metal stocks, rendering the inmate pretty much helpless.")
+		saynn("Ты решаешь, что сейчас — самое подходящее время, чтобы подойти поближе. Заключенная насильно согнута вперед, ее ноги широко разведены и скованы металлической перекладиной, соединяющей кандалы на лодыжках. Ее голова и руки зажаты в стационарных металлических колодах, что делает ее практически беспомощной.")
 
-		saynn("She is that clumsy inmate that has ran into you not that long ago! You take a better look. She is a girl, clearly a wolf. Dark fur with a gray belly and some brown accents. You also spot some white details like her palms, the digi feet as well as the tip of her tail. On her head there is a careful ponytail with the tips of her hair being bright red. She is spotting an inmate uniform with orange trim, designating this particular inmate to be from a general pop block.")
+		saynn("Это та самая неуклюжая заключенная, которая совсем недавно в тебя врезалась! Ты присматриваешься получше. Это девушка, явно волчица. Темный мех с серым животом и коричневатыми акцентами. Также заметны белые детали: ладони, подушечки на лапах и кончик хвоста. Волосы собраны в аккуратный хвост, кончики которого ярко-красные. На ней тюремная роба с оранжевой отделкой, что означает, что она из общего блока.")
 
-		saynn("Standing beside her is one of the guards, a cat. She seems to be making sure the inmate wolfy is locked tight.")
+		saynn("Рядом с ней стоит одна из охранниц, кошка. Похоже, она проверяет, надежно ли заперта волчица.")
 
-		saynn("[say=femaleguard_feline]Not so cocky now, huh?[/say]")
+		saynn("[say=femaleguard_feline]Что, уже не такая дерзкая, а?[/say]")
 
-		saynn("There is a red rubber ball in the inmate’s mouth preventing her from saying anything, all you hear is some muffled whining.")
+		saynn("Во рту у заключенной красный резиновый мяч, не дающий ей ничего сказать — слышно лишь приглушенное поскуливание.")
 
-		saynn("[say=jacki]Mhfhhf-f..[/say]")
+		saynn("[say=jacki]Мхффхф-ф..[/say]")
 
-		saynn("What follows after that is a firm smack on the inmate’s fit-looking ass.")
+		saynn("Следом за этим раздается звонкая пощечина по подтянутой заднице заключенной.")
 
-		saynn("[say=femaleguard_feline]Is what I thought. Let’s see who is gonna be first.[/say]")
+		saynn("[say=femaleguard_feline]Так я и думала. Посмотрим, кто будет первой.[/say]")
 
-		saynn("The cat stands up and looks around. Your gazes collide.")
+		saynn("Кошка выпрямляется и оглядывается. Ваши взгляды встречаются.")
 
-		addButton("Ask", "Ask why the wolfie is locked up", "ask")
+		addButton("Спросить", "Спросить, почему волчица заперта в колодах", "ask")
 
 	if(state == "ask"):
 		playAnimation(StageScene.Duo, "stand", {npc="femaleguard_feline"})
@@ -50,62 +50,62 @@ func _run():
 
 		# (guard pulls down Jacki’s shorts, exposing the chastity piercings. She then connects a little ‘dildo on a chain’ to jacki’s piercings and forces it into her urethra, punishment for peeing)
 
-		saynn("Before you can ask your question the guard points at you and gestures to come closer.")
+		saynn("Прежде чем ты успеваешь задать вопрос, охранница указывает на тебя и жестом приглашает подойти ближе.")
 
-		saynn("[say=femaleguard_feline]Hey, you. Inmate number whatever-whatever. Wanna have some fun with this bitch?[/say]")
+		saynn("[say=femaleguard_feline]Эй, ты. Заключенная номер сколько-там-сколько. Хочешь немного развлечься с этой сучкой?[/say]")
 
-		saynn("You hear the inmate getting slightly more nervous and fidgety. She is facing away from you so she has to awkwardly try to tilt her head to get even a single glimpse of who is behind her. Her fluffy canine tail is trying to cover her butt.")
+		saynn("Ты слышишь, как заключенная начинает нервничать и ерзать. Она стоит к тебе спиной, поэтому ей приходится неуклюже наклонять голову, чтобы хоть мельком увидеть, кто стоит за спиной. Её пушистый собачий хвост пытается прикрыть задницу.")
 
-		saynn("[say=pc]What did she do?[/say]")
+		saynn("[say=pc]Что она сделала?[/say]")
 
-		saynn("The guard catches the girl’s tail before yanking it away so she can deliver another smack on her butt. More muffled whining can be heard.")
+		saynn("Охранница перехватывает хвост девушки, а затем резко оттягивает его в сторону, чтобы отвесить ей еще одну оплеуху по заднице. Слышится приглушенное поскуливание.")
 
-		saynn("[say=femaleguard_feline]Don’t hide your ass, girl. She? I was doing my usual patrol when I saw her peeing in the yard. Yeah, can you believe it? The bitch was squating behind a bush with her pants down and her own bush exposed, clearly enjoying herself. Fucking slut.[/say]")
+		saynn("[say=femaleguard_feline]Не прячь свою жопу, девка. Она? Я была на своем обычном обходе, когда увидела, как она справляет нужду во дворе. Да, можете поверить? Эта сучка сидела на корточках за кустом, штаны спущены, всё её естество на виду — явно наслаждалась процессом. Грёбаная шлюха.[/say]")
 
-		addButton("Illegal?", "Ask what about it was against the law", "illegal?")
+		addButton("Незаконно?", "Спросить, что именно в этом было противозаконным", "illegal?")
 
 	if(state == "illegal?"):
 		playAnimation(StageScene.Stocks, "idle", {pc="jacki", bodyState={exposedCrotch=true}})
 		addCharacter("jacki", ["naked"])
 		
-		saynn("[say=pc]Peeing is illegal now?[/say]")
+		saynn("[say=pc]Теперь срать под открытым небом — это уже преступление?[/say]")
 
-		saynn("The guard crosses her arms.")
+		saynn("Охранница скрещивает руки на груди.")
 
-		saynn("[say=femaleguard_feline]In public. Yes, obviously. Would you wanna step into someone’s piss puddle when crawling around on all fours?[/say]")
+		saynn("[say=femaleguard_feline]На людях. Ну да, очевидно. Ты бы сама захотела влезть в чью-то лужу из мочи, когда ползаешь на четвереньках?[/say]")
 
-		saynn("After making the point, the strict cat chuckles to herself.")
+		saynn("Подчеркнув свою мысль, строгая кошка тихонько посмеивается про себя.")
 
-		saynn("[say=femaleguard_feline]Hah. I mean, I don’t care if some inmate does that. But the smell. Gross. Oh, you have reminded me of something. I have a little present that would be a perfect punishment for this bitch.[/say]")
+		saynn("[say=femaleguard_feline]Хах. В смысле, мне плевать, если какая-нибудь зэчка так сделает. Но запах... Мерзость. О, ты напомнил мне кое о чем. У меня есть маленький подарок, который станет идеальным наказанием для этой сучки.[/say]")
 
-		saynn("You just stand nearby and watch as the guard approaches the locked up wolfy and proceeds to pull down her inmate shorts, exposing the nice ass. Wolfy proceeds to react the only way she can, by wiggling and making more muffled noises. Her tail tries to cover her again but the guard yanks on it again, surely causing some discomfort.")
+		saynn("Ты просто стоишь рядом и наблюдаешь, как охранница подходит к запертой волчице и стягивает с неё тюремные шорты, обнажая аппетитную задницу. Волчица реагирует единственным возможным способом: дрыгается и издает всё более приглушенные звуки. Её хвост пытается снова прикрыться, но охранница резко дергает за него, явно причиняя ей дискомфорт.")
 
-		saynn("The first thing you notice are.. the piercings. Quite a lot of them. In fact, the girl’s slit is pretty much stitched shut with many rows of piercing rings that have little cyan gems on them. One slightly bigger ring is piercing her clit and has a little chain and a dangly cyan ball toy dangling from it. The view is.. quite interesting for sure.")
+		saynn("Первое, что бросается в глаза... это пирсинг. Его довольно много. На самом деле, щель девушки практически зашита рядами колец, украшенных маленькими голубыми камнями. Чуть более крупное кольцо протыкает её клитор, к нему прикреплена цепочка с подвеской в виде голубого шарика. Зрелище... определенно любопытное.")
 
-		saynn("[say=pc]Did you do her like that?[/say]")
+		saynn("[say=pc]Ты так её трахал?[/say]")
 
-		saynn("[say=femaleguard_feline]Oh, I wish. The bitch probably did that to herself so no one would fuck her. But she forgot about the other holes. Including this one.[/say]")
+		saynn("[say=femaleguard_feline]О, если бы. Эта сучка, небось, сама так сделала, чтобы её никто не ебал. Но она забыла про остальные дырки. Включая вот эту.[/say]")
 
-		saynn("The guard produces something that looks like a white rubber knotted dildo. But it’s a very small one. About the size of a pinky finger. The cat licks it once and then presses it against the wolfy’s pussy hole. But not the big one.. the hole that she pisses from, her urethra. The girl arches her back and struggles against the stocks but they don’t offer any give. The cat doesn’t plan on giving up too, she applies more pressure onto that piss hole until it stretches her enough to house the little white dildo, knot included. A loud muffled noise that sounds like a moan escapes from the gagged girl.")
+		saynn("Охранница достает нечто, похожее на белый резиновый узловатый дилдо. Но он совсем крошечный. Размером примерно с мизинец. Кошка один раз лижет его, а затем прижимает к кискам волчицы. Но не к той, большая... а к той дырочке, из которой она писает — к уретре. Девушка выгибает спину и пытается вырваться из колодок, но те не поддаются. Кошка тоже не собирается сдаваться: она сильнее надавливает на мочеиспускательный канал, пока тот не растягивается достаточно, чтобы принять маленький белый дилдо вместе со всеми узлами. Из рта закутанной в кляп девушки вырывается громкий приглушенный звук, похожий на стон.")
 
-		saynn("[say=jacki]Mff-f-f-f-fff..[/say]")
+		saynn("[say=jacki]Мфф-ф-ф-ф-ффф..[/say]")
 
-		saynn("[say=femaleguard_feline]There you fucking go. No peeing for you, bitch.[/say]")
+		saynn("[say=femaleguard_feline]Вот так, сучка. Теперь никакого мочеиспускания, блядь.[/say]")
 
-		saynn("The guard chuckles and spanks the girl again which causes her tight-looking tailhole to clench and the little plug to be pushed out slightly but nowhere near enough to escape.")
+		saynn("Охранница посмеивается и снова шлепает девушку, отчего её туго сжатое анусное отверстие судорожно сокращается, и маленькая пробка слегка выталкивается наружу, но всё равно не может выбраться.")
 
-		saynn("[say=femaleguard_feline]So, wanna fuck her? Free use for everyone, this inmate needs to be taught a lesson. And please, don’t try to be a white knight, the slut knew what she was doing is punishable.[/say]")
+		saynn("[say=femaleguard_feline]Ну что, хотите её трахнуть? Свободное использование для всех — этой заключенной нужно преподать урок. И, пожалуйста, не пытайтесь строить из себя белых рыцарей: эта шлюха прекрасно знала, что за её выходки последует наказание.[/say]")
 
-		saynn("The kitty firmly plops her paw on the girl’s ass again but squeezes one of the buttcheeks tightly instead of spanking, making the wolfy squeak.")
+		saynn("Кошечка снова уверенно хлопает лапой по заднице девушки, но вместо шлепка крепко сжимает одну из ягодиц, заставляя волчицу пискнуть.")
 
-		saynn("[say=femaleguard_feline]Tell you what. I will even throw a work credit to your inmate number. Good deeds must be rewarded~[/say]")
+		saynn("[say=femaleguard_feline]Знаете что? Я даже зачислю рабочий кредит на ваш номер заключенной. Добрые дела должны вознаграждаться~[/say]")
 
 		# (Options are Anal, Anal Fingering and Lie. There is also Just leave option that disables Jacki content forever)
 
-		addButtonWithChecks("Anal", "(noncon) Use the offered girl for your pleasure", "anal", [], [ButtonChecks.HasReachablePenis])
-		addButton("Anal fingering", "Use your fingers to test that girl’s ass", "anal_fingering")
-		addButton("Lie", "Attempt to save the girl", "lie")
-		addButton("Just leave", "(Removes further Jacki content) You don’t wanna use her or save her", "just_leave")
+		addButtonWithChecks("Анальный", "(некон) Использовать предложенную девушку для своего удовольствия", "anal", [], [ButtonChecks.HasReachablePenis])
+		addButton("Анальный фингерринг", "Использовать пальцы, чтобы исследовать задницу этой девки", "anal_fingering")
+		addButton("Лгать", "Попытаться спасти девчонку", "lie")
+		addButton("Просто уйти", "(Убирает дальнейший контент с Джеки) Ты не хочешь ни трахать её, ни спасать", "just_leave")
 
 
 	if(state == "anal"):
@@ -114,140 +114,140 @@ func _run():
 		setFlag("JackiModule.Jacki_StocksPunishedByPC", true)
 		setFlag("JackiModule.Jacki_StocksFuckedByPC", true)
 
-		saynn("[say=pc]Sure, she looks hot and that ass does need a lesson or two.[/say]")
+		saynn("[say=pc]Ну конечно, выглядит она горячо, а её заднице не помешает пара уроков.[/say]")
 
-		saynn("The guard kitty chuckles while you approach the wolfy from behind and expose your {pc.cock}. As you get a grip on her tail and pull it away, you hear the girl whimpering.")
+		saynn("Стражница-кошечка хихикает, пока ты подкрадываешься к волчице сзади и обнажаешь свой {pc.cock}. Когда ты хватаешь её за хвост и оттягиваешь его, ты слышишь жалобный скулёж девушки.")
 
-		saynn("[say=femaleguard_feline]Shush, whining won’t save you.[/say]")
+		saynn("[say=femaleguard_feline]Тсс, нытьём себя не спасешь.[/say]")
 
-		saynn("The guard then looks at you and your dick before biting her lip.")
+		saynn("Затем стражница смотрит на тебя и на твой член, прикусив губу.")
 
-		saynn("[say=femaleguard_feline]Want me to prepare you maybe? I’m not a slut but you know, no need to go dry on her.[/say]")
+		saynn("[say=femaleguard_feline]Может, мне тебя подготовить? Я не шлюха, но, знаешь ли, не стоит засыхать прямо на ней.[/say]")
 
-		addButton("Sure", "Let the guard suck you", "sure")
-		addButton("Spit", "Just spit into that asshole and say it’s enough", "spit")
+		addButton("Конечно", "Дать стражнице отсосать", "sure")
+		addButton("Сплюнуть", "Просто плюнь ей в эту дырку и скажи, что хватит", "spit")
 
 
 	if(state == "sure"):
-		saynn("[say=pc]Yeah, sure. She should only leak cum and not blood.[/say]")
+		saynn("[say=pc]Ага, конечно. Пусть течет только сперма, а не кровь.[/say]")
 
-		saynn("The guard swiftly takes off her gloves before getting on her knees before you. Her naked paw grabs your {pc.cock} and supports it while she starts licking the tip with her rough-textured tongue. As you gradually get hard, she holds your shaft on her tongue while gently kneading your balls. A drop of precum lands on the guard’s tongue and she swallows it. You hear faint purring.")
+		saynn("Охранница быстро срывает перчатки и встает перед тобой на колени. Ее голая лапа обхватывает твой {pc.cock}, поддерживая его, пока она начинает слизывать капли с головки своим шершавым языком. По мере того как ты постепенно наливаешься твердостью, она удерживает ствол на языке, нежно разминая твои яйца. Капля предэякулята попадает ей на язык, и она ее проглатывает. Ты слышишь тихое мурлыканье.")
 
-		saynn("When your cock is fully erected, the guard parts her lips wide before letting your member past her teeth and down her tight throat. All the while the tongue keeps working on your dick, coating it with saliva and making you exhale audibly. You offer the kitty a pat on the head but she only frowns at you before moving her head away.")
+		saynn("Когда твой член полностью встает, охранница широко раздвигает губы, пропуская твой агрегат между зубов глубоко в свое узкое горло. Все это время ее язык продолжает работать над твоим членом, покрывая его слюной и заставляя тебя громко выдыхать. Ты пытаешься погладить кошечку по голове, но она лишь хмурится на тебя, прежде чем отстраниться.")
 
-		saynn("[say=femaleguard_feline]There, nice and hard. Go rough on that bitch now.[/say]")
+		saynn("[say=femaleguard_feline]Вот так, красавец, весь в струну. А теперь жестко возьми эту сучку.[/say]")
 
 		# (continue button here)
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "spit"):
-		saynn("[say=pc]Nah, I know how to lube her up.[/say]")
+		saynn("[say=pc]Не, я знаю, как ее смазать.[/say]")
 
-		saynn("You put your paws on the girl’s ass and spread it wide before spitting directly into her star as she clenches it. That makes the inmate wolfy eek. The sight of her pucker and closed tight-looking cunt is quite arousing, your cock swiftly starts to fill with blood.")
+		saynn("Ты кладешь лапы на задницу девчонки и раздвигаешь ее пошире, после чего плюешь прямо ей в анус, когда она сжимается. От этого заключенная волчица издает тонкий писк. Вид ее сморщенной и плотно сомкнутой киски чертовски возбуждает, и твой член начинает стремительно наполняться кровью.")
 
-		saynn("[say=femaleguard_feline]I mean, it’s better than nothing~. Let me help.[/say]")
+		saynn("[say=femaleguard_feline]Ну, это лучше, чем ничего~. Дай-ка я помогу.[/say]")
 
-		saynn("While you’re busy getting yourself hard, the guard kitty puts her paws onto that inviting ass and spreads it again before pressing her maw against that tight anus and even kissing before spitting on it and using her tongue to spread the saliva around the clenching star. Wow, that’s hot, your dick hardens fast.")
+		saynn("Пока ты занят тем, что доводишь себя до стояка, кошка-охранница кладет лапки на эту манящую задницу и снова раздвигает ягодицы, прежде чем прижаться мордочкой к тугому анусу, даже целуя его, а затем обслюнявливая и размазывая слюну языком по сжимающемуся колечку. Ох, как же это горячо, твой член твердеет на глазах.")
 
-		saynn("[say=femaleguard_feline]What? I’m just helping. Go rough on that bitch now~.[/say]")
+		saynn("[say=femaleguard_feline]Что? Я просто помогаю. Давай, возьми эту сучку грубо~.[/say]")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "continue"):
 		playAnimation(StageScene.StocksSex, "sex", {pc="jacki", npc="pc", bodyState={exposedCrotch=true}, npcBodyState={exposedCrotch=true, hard=true}})
 		
-		saynn("After the ‘lube’ has been applied, it’s time for action. The wolfy trembles and wiggles her ass, trying to struggle against the metal frame. But all it does is make her clit bell jingle.")
+		saynn("Когда «смазка» нанесена, пора приступать к делу. Волчица дрожит и виляет задом, пытаясь вырваться из металлических тисков. Но от этого лишь сильнее звенят колокольчики на её клиторе.")
 
-		saynn("You get a good grasp on that fluffy tail near the base and move it away while guiding your {pc.cock} towards the clenching tight flesh-colored ring with another. There is no need for foreplay, the tip of your cock kisses that star and proceeds to try to stretch it. The wolfy mumbles something incoherent while her body squirms.")
+		saynn("Ты крепко хватаешь этот пушистый хвост у основания и отводишь его в сторону, направляя свой {pc.cock} к сжимающемуся плотному кольцу телесного цвета. В прелюдии нет нужды: головка твоего члена касается этой «звездочки» и начинает растягивать её. Волчица бормочет что-то невнятное, пока её тело извивается.")
 
-		saynn("The guard just watches it all happen.")
+		saynn("Охранница просто наблюдает за происходящим.")
 
-		saynn("[say=femaleguard_feline]What? Is the bitch really that tight? I won’t believe that she never got fucked in the ass.[/say]")
+		saynn("[say=femaleguard_feline]Что? Неужели эта сучка реально такая узкая? Не верится, что ей еще ни разу не трахали в задницу.[/say]")
 
-		saynn("As the pressure on the girl’s asshole increases, her toes begin to curl up, little muffled whines escape from her mouth while she shakes her head a lot, as best as the stocks allow.")
+		saynn("По мере того как давление на анус девушки усиливается, её пальцы на ногах начинают поджиматься, из рта вырываются приглушенные стоны, а сама она отчаянно мотает головой — насколько позволяют тиски.")
 
-		saynn("But she can’t clench forever, finally you feel her butt giving up and relaxing enough for you to shove your cock deep into her ass in one wide motion. It seems that this sent a powerful impulse of sharp sensations through her whole body, the poor wolfy is whining and shaking while the plug in her urethra shifts back and forth from her clenching. She is tight, her soft inner walls wrap around your shaft and give a pleasurable-feeling massage. Her anus got so stretched that the ring is now looking red, the skin there is irritated.")
+		saynn("Но она не может сжиматься вечно; наконец ты чувствуешь, как её задница сдаётся и расслабляется достаточно, чтобы ты одним широким движением вогнал свой член глубоко ей в анус. Похоже, это вызвало мощный импульс острых ощущений по всему её телу — бедная волчица скулит и дрожит, пока пробка в её уретре ходит туда-сюда от её спазмов. Она очень узкая, её мягкие внутренние стенки обволакивают твой ствол, создавая приятный массаж. Её анус так растянулся, что кольцо теперь выглядит красным, а кожа там раздражена.")
 
-		saynn("[say=pc]Fuck, she is tight.[/say]")
+		saynn("[say=pc]Блядь, какая же она узкая.[/say]")
 
-		saynn("The guard kitty walks around the stocks and approaches the wolfy from the front. She leans in to scritch the helpless inmate under the chin.")
+		saynn("Кошечка-охранница обходит колодки и подходит к волчице спереди. Она наклоняется, чтобы почесать беспомощную заключенную под подбородком.")
 
-		saynn("[say=femaleguard_feline]Does it hurt?[/say]")
+		saynn("[say=femaleguard_feline]Больно?[/say]")
 
-		saynn("The wolfy nods subtly before tilting her head down.")
+		saynn("Волчица едва заметно кивает, прежде чем опустить голову.")
 
-		saynn("[say=femaleguard_feline]You need your dirty ass to be trained then~[/say]")
+		saynn("[say=femaleguard_feline]Значит, твоей грязной заднице нужно обучение~[/say]")
 
-		saynn("After that cute exchange, you let the girl’s tailhole get used to your size before proceeding to retract your cock, leaving empty space. But you don’t pull out completely, instead you thrust your cock deep inside a second later again, causing some more shakiness in the girl’s legs. And then you continue these slow powerful thrusts with your hips, ravaging wolfy’s ass while holding onto her handy tail like it’s a leash.")
+		saynn("После этого милого диалога ты даешь отверстию у хвоста девушки привыкнуть к твоему размеру, прежде чем начать выходить, оставляя пустоту. Но ты не выходишь полностью; вместо этого секунду спустя ты снова мощно входишь внутрь, заставляя ноги девушки затрястись еще сильнее. И затем ты продолжаешь эти медленные, мощные толчки бедрами, терзая задницу волчицы и держась за её пушистый хвост, словно за поводок.")
 
-		saynn("Her whining eventually subsides, even the most rough thrusts only force a short noise of discomfort out of the girl.")
+		saynn("Её скуление в конце концов затихает; даже самые грубые толчки вызывают у девушки лишь короткие звуки дискомфорта.")
 
-		saynn("[say=femaleguard_feline]Her eyes are closed, the bitch fucking loves it~. Let me look at your stitched up cunt.[/say]")
+		saynn("[say=femaleguard_feline]Её глаза закрыты, эта сучка просто в восторге~. Дай-ка я рассмотрю твою заштопанную киску.[/say]")
 
-		saynn("The guard walks around the stocks again while you continue fucking that inmate in the ass, using her tight fuckhole for your entertaiment. The kitty steps behind you and crouches to look between your legs at the girl’s slit.")
+		saynn("Стражник снова обходит колодки, пока ты продолжаешь трахать заключенную в зад, используя её узкую дырочку для своего развлечения. Кошка заходит тебе за спину и приседает, чтобы заглянуть между твоих ног прямо в щель девчонки.")
 
-		saynn("[say=femaleguard_feline]Oh yeah, she is fucking wet~. Great view from here.[/say]")
+		saynn("[say=femaleguard_feline]О да, она чертовски мокрая~. Отсюда отличный вид.[/say]")
 
-		saynn("Hearing all that probably made the girl feel embarrassed because you feel her ass clenching around your length. But you fight her resistance and shove your cock in and out at a full-force while your balls slap against her piercings and the dangling toy. It all quickly brings you close to your orgasm.")
+		saynn("От всех этих звуков девчонка, должно быть, смутилась, потому что ты чувствуешь, как её задница сжимается вокруг твоего члена. Но ты преодолеваешь её сопротивление и с силой вгоняешь свой член туда и обратно, пока твои яйца хлопают по её пирсингу и свисающей игрушке. Всё это быстро подводит тебя к оргазму.")
 
-		addButton("Cum inside", "Stuff that ass with your cum", "cum_inside")
-		addButton("Pull out", "Make a mess on that wolfy’s back and ass instead", "pull_out")
+		addButton("Кончить внутрь", "Залить эту задницу своим конём", "cum_inside")
+		addButton("Вытащить", "Вместо этого устроить погром на спине и заднице этой волчицы", "pull_out")
 
 
 	if(state == "cum_inside"):
 		playAnimation(StageScene.StocksSex, "fast", {pc="jacki", npc="pc", pcCum=true, npcCum=true, bodyState={exposedCrotch=true}, npcBodyState={exposedCrotch=true, hard=true}})
 		
-		saynn("Your orgasm is close and you welcome it, your hand yanks on that tail hard while you ram your cock as deep as that tight clenching asshole allows. Her inner walls start to milk you while your dick shoots long strings of your warm sticky {pc.cum} deep into her ass, stuffing her guts full of your seed.")
+		saynn("Оргазм уже близко, и ты навстречу ему: твоя рука резко дергает её за хвост, пока ты вбиваешь свой член так глубоко, насколько позволяет это туго сжимающееся анусное отверстие. Её внутренние стенки начинают буквально доить тебя, пока твой член выстреливает длинными струями теплого липкого {pc.cum} глубоко ей в задницу, набивая её кишки твоим семенем.")
 
-		saynn("[say=femaleguard_feline]Oh yeah, give her that sweet nectar~.[/say]")
+		saynn("[say=femaleguard_feline]О да, дай ей этот сладкий нектар~.[/say]")
 
-		saynn("You hear little muffled moans coming from her gagged maw as her body squirms around your dick hard. She cums so hard that the little rubber plug in her urethra finally gets pushed out followed by a strong stream of her transparent female juices that the guard was lucky enough to avoid.")
+		saynn("Ты слышишь приглушенные стоны, доносящиеся из её завязанного рта, пока её тело судорожно извивается вокруг твоего члена. Она кончает так сильно, что маленькая резиновая пробка в её уретре наконец вылетает, а за ней следует мощная струя её прозрачных женских соков, которой стражнику повезло избежать.")
 
-		saynn("[say=pc]Nghh..[/say]")
+		saynn("[say=pc]Нгхх..[/say]")
 
-		saynn("[say=jacki]Mmff-f.. mf-f-f..[/say]")
+		saynn("[say=jacki]Мммф-ф.. мф-ф-ф..[/say]")
 
-		saynn("[say=femaleguard_feline]Oh, rude. That was a present.[/say]")
+		saynn("[say=femaleguard_feline]Ой, грубо. Это же был подарок.[/say]")
 
-		saynn("Some of the seed is already leaking back and dripping onto the girl’s thighs and floor, her dark fur doesn’t hide the mess at all.")
+		saynn("Часть семени уже вытекает обратно и капает на бедра девушки и на пол; её темный мех совсем не скрывает этот беспорядок.")
 
-		saynn("After your climax comes to its end, you just quickly pull out, leaving the used asshole to gape and offering you a great view of how her inner walls struggle to close up before finally doing it.")
+		saynn("Когда твой оргазм подходит к концу, ты просто быстро выдергиваешь член, оставляя использованное анус широко раскрытым, что открывает тебе отличный вид на то, как её внутренние стенки изо всех сил пытаются сомкнуться, прежде чем наконец это сделать.")
 
 		# (Continue button here)
-		addButton("Continue", "See what happens next", "continue1")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue1")
 
 	if(state == "pull_out"):
 		playAnimation(StageScene.StocksSex, "tease", {pc="jacki", npc="pc", npcCum=true, bodyState={exposedCrotch=true}, npcBodyState={exposedCrotch=true, hard=true}})
 		
-		saynn("Your orgasm is close and you welcome it. But instead of stuffing the girl’s guts you decide to pull out and cum all over her ass. String of warm sticky {pc.cum} land onto the wolfy’s shirt, back, tail, ass. Some even land on that gaping pulsating star and then drip down over her wet stitched up pussy and messing up her thighs.")
+		saynn("Оргазм уже близко, и ты жаждешь его. Но вместо того чтобы забить нутро девушки, ты решаешь вытащить член и кончить прямо на её задницу. Струи теплой липкой {pc.cum} попадают на рубашку, спину, хвост и задницу волчицы. Некоторые даже попадают на эту пульсирующую зияющую дыру, а затем стекают по её влажной зашитой киске, пачкая бедра.")
 
-		saynn("[say=femaleguard_feline]Aww. I would have totally stuffed her ass if I could.[/say]")
+		saynn("[say=femaleguard_feline]О-оу. Если бы я могла, я бы точно забила ей задницу до отказа.[/say]")
 
-		saynn("[say=pc]Nghh..[/say]")
+		saynn("[say=pc]Нгхх..[/say]")
 
-		saynn("You hear little muffled moans coming from her gagged maw as her body starts to squirm when the orgasm is finally overwhelming her. She cums so hard that the little rubber plug in her urethra finally gets pushed out followed by a strong stream of her transparent female juices that the guard was lucky enough to avoid.")
+		saynn("Ты слышишь приглушенные стоны, доносящиеся из её кляпнутого рта, когда её тело начинает корчиться от нахлынувшего оргазма. Она кончает так сильно, что маленькая резиновая пробка в её уретре наконец вылетает, и за ней следует мощная струя её прозрачного женского сока, которую охраннику повезло избежать.")
 
-		saynn("[say=jacki]Mmff-f.. mf-f-f..[/say]")
+		saynn("[say=jacki]Мммф-ф.. мф-ф-ф..[/say]")
 
-		saynn("[say=femaleguard_feline]Oh, rude. That was a present.[/say]")
+		saynn("[say=femaleguard_feline]Ой, грубо. Это же был подарок.[/say]")
 
-		saynn("The girl’s dark fur doesn’t hide the {pc.cum} at all, her whole lower part of the body looks extremely messy.")
+		saynn("Темный мех девушки совсем не скрывает {pc.cum}, вся её нижняя часть тела выглядит крайне неопрятно.")
 
-		saynn("As her orgasm is coming to its end, her used asshole is left to gape while also offering you a great view of how her inner walls struggle to close up before finally doing it.")
+		saynn("Когда её оргазм подходит к концу, её раздолбанный анус остается широко раскрытым, открывая тебе великолепный вид на то, как её внутренние стенки отчаянно пытаются сомкнуться, прежде чем наконец это сделать.")
 
-		addButton("Continue", "See what happens next", "continue1")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue1")
 
 	if(state == "continue1"):
-		saynn("The guard presses a few buttons on her datapad, transferring a work credit.")
+		saynn("Охранница нажимает несколько кнопок на своём датападе, переводя рабочий кредит.")
 
-		saynn("[say=femaleguard_feline]Good job, you made her such a mess already~[/say]")
+		saynn("[say=femaleguard_feline]Молодец, ты уже превратил её в настоящую жижу~[/say]")
 
-		saynn("[say=pc]Yeah, she is a great fuck.[/say]")
+		saynn("[say=pc]Да, трахаться с ней — одно удовольствие.[/say]")
 
-		saynn("You put your cock away and prepare to leave. Being curious you look from the other side of the stocks and see the wolfy panting and blushing hard as she notices you. Cute.")
+		saynn("Ты убираешь член и готовишься уходить. Из любопытства ты заглядываешь с другой стороны колодок и видишь, как волчица тяжело дышит и заливается краской, заметив тебя. Мило.")
 
 		# (scene ends here)
-		addButton("Leave", "Job well done", "endthescene")
+		addButton("Уйти", "Работа выполнена!", "endthescene")
 
 	if(state == "anal_fingering"):
 		playAnimation(StageScene.StocksSex, "tease", {pc="jacki", npc="pc", bodyState={exposedCrotch=true}})
@@ -256,79 +256,79 @@ func _run():
 		setFlag("JackiModule.Jacki_StocksFingeredByPC", true)
 		
 		if(!GM.pc.hasPenis()):
-			saynn("[say=pc]I don’t really have anything to stuff her ass with, I guess I will use my hands.[/say]")
+			saynn("[say=pc]У меня особо нет ничего, чем можно было бы забить ей задницу, так что, пожалуй, воспользуюсь руками.[/say]")
 
-			saynn("The guard chuckles.")
+			saynn("Охранница посмеивается.")
 
-			saynn("[say=femaleguard_feline]Sure, that works. Want my stun baton stick maybe~?[/say]")
+			saynn("[say=femaleguard_feline]Ну, пойдет. Может, хочешь взять мой электрошокер~?[/say]")
 
-			saynn("Oh that would be too much. You shake your head while the wolfy audibly disagrees with that offer.")
+			saynn("О, это уже слишком. Ты качаешь головой, в то время как волчица издает отчетливый звук несогласия с этим предложением.")
 
 		# (else)
 		else:
-			saynn("[say=pc]I have a dick but I’d rather use my hand for this one.[/say]")
+			saynn("[say=pc]У меня есть член, но в этот раз я лучше воспользуюсь рукой.[/say]")
 
-			saynn("The guard chuckles")
+			saynn("Охранник посмеивается")
 			
 			if(GM.pc.isWearingChastityCage()):
-				saynn("[say=femaleguard_feline]Are you sure it's not because you're wearing a cage~? But sure. I can offer my stun baton stick~[/say]")
+				saynn("[say=femaleguard_feline]Ты уверена, что дело не в том, что на тебе надета клетка~? Но ладно. Могу предложить свой электрошокер~[/say]")
 			else:
-				saynn("[say=femaleguard_feline]Sure, whatever floats your boat. I can offer my stun baton stick~[/say]")
+				saynn("[say=femaleguard_feline]Конечно, как хочешь. Могу предложить свой электрошокер~[/say]")
 
-			saynn("Oh that would be too much. You shake your head while the wolfy audibly disagrees with that offer.")
+			saynn("О, это уже слишком. Ты качаешь головой, в то время как волчица издает отчетливый звук несогласия с этим предложением.")
 
 		# (end if)
 
-		saynn("You take the spot behind the wolf and grab her tail before forcibly moving it out of the way. You lick the fingers of your second hand and move to the girl’s tailhole, gently prodding at it. That makes the inmate wiggle and huff at you so you smack her ass yourself before forcing a single finger into her ass. The sudden sharp sensations make the poor wolfy whine and shake while the plug in her urethra shifts back and forth from her clenching.")
+		saynn("Ты встаешь за спину волчицы и хватаешь её за хвост, силой отодвигая его в сторону. Ты облизываешь пальцы свободной руки и подбираешься к анусу девушки, осторожно прощупывая его. От этого заключенная начинает ерзать и фыркать на тебя, так что ты сам отвешиваешь ей подзатыльник по заднице, прежде чем с силой впихнуть один палец ей в дырку. От резкого ощущения бедняжка-волчица начинает скулить и дрожать, а пробка в её уретре ходит туда-сюда из-за её судорожных сжатий.")
 
-		saynn("[say=pc]She is tight, her dirty ass is basically sucking my finger in.[/say]")
+		saynn("[say=pc]Она такая узкая, её грязная задница буквально засасывает мой палец.[/say]")
 
-		saynn("[say=femaleguard_feline]Is that so, huh?[/say]")
+		saynn("[say=femaleguard_feline]Вот как, да?[/say]")
 
-		saynn("You wiggle your finger inside the girl’s butt and rub your saliva into her soft inner walls, making them slick. You feel the wolfy wiggling her rear less while you explore her ass, she almost stopped whining at this point. Your second digit joins and.. slides in somewhat easy.")
+		saynn("Ты шевелишь пальцем внутри задницы девушки, втирая слюну в её мягкие внутренние стенки, делая их скользкими. Ты чувствуешь, что волчица ерзает задом всё меньше, пока ты исследуешь её анус; к этому моменту она почти перестала скулить. Твой второй палец присоединяется и... входит уже довольно легко.")
 
-		saynn("But you want more. The third one causes the girl to make some noises of discomfort but you force it in anyway. Her star is looking quite stretched now, the flesh there is somewhat irritated.")
+		saynn("Но тебе хочется большего. Третий палец заставляет девушку издавать звуки дискомфорта, но ты всё равно впихиваешь его внутрь. Её «звездочка» выглядит изрядно растянутой, а плоть там выглядит слегка раздраженной.")
 
-		saynn("The guard kitty walks around the stocks and approaches the wolfy from the front. She leans in to scritch the helpless inmate under the chin.")
+		saynn("Кошечка-охранница обходит колодки и подходит к волчице спереди. Она наклоняется, чтобы почесать беспомощную заключенную под подбородком.")
 
-		saynn("[say=femaleguard_feline]Do you like it?[/say]")
+		saynn("[say=femaleguard_feline]Тебе нравится?[/say]")
 
-		saynn("The wolfy doesn’t answer, instead just tilting her head down and avoiding eye contact. You notice that her stitched up slit is getting moist.")
+		saynn("Волчица не отвечает, лишь опускает голову, избегая зрительного контакта. Ты замечаешь, что её зашитая щель становится влажной.")
 
-		saynn("[say=femaleguard_feline]You just need your ass trained~[/say]")
+		saynn("[say=femaleguard_feline]Тебе просто нужно подтянуть свою жопку~[/say]")
 
-		saynn("You begin to shift your digits inside the girl back and forth, gently fingering her tight ass and making her insides more slick. Your other hand lets go of the tail to see what it will do. It keeps itself to the side, giving you full freedom. You use that free hand to play with the dangling bell. You tug on it slightly and are met with little muffled moans coming from the girl’s gagged mouth.")
+		saynn("Ты начинаешь водить пальцами внутри девушки, нежно лаская её тугое анус и делая её нутро всё более влажным. Твоя вторая рука отпускает хвост, чтобы посмотреть, что тот будет делать. Хвост остается сбоку, давая тебе полную свободу. Ты используешь эту свободную руку, чтобы поиграть с болтающимся колокольчиком. Ты слегка тянешь за него и слышишь приглушенные стоны, доносящиеся из кляпа во рту девушки.")
 
-		saynn("[say=femaleguard_feline]Her eyes are closed, the bitch fucking loves it~.[/say]")
+		saynn("[say=femaleguard_feline]Глаза её закрыты, эта сучка просто в восторге~.[/say]")
 
-		saynn("You continue pushing your digits in and out while the girl makes more noises of pleasure, your free digits land on her clit directly and play with it by rubbing in small circular motions. Very soon the girl starts panting more and more, her pussy dripping juices onto the floor.")
+		saynn("Ты продолжаешь вводить и выводить пальцы, пока девушка издает всё больше звуков наслаждения; твои свободные пальцы ложатся прямо на её клитор, лаская его круговыми движениями. Вскоре девушка начинает дышать всё чаще и чаще, а её киска начинает сочиться соком прямо на пол.")
 
-		addButton("Make her cum", "Let her enjoy her anal orgasm", "make_her_cum")
+		addButton("Довести её до оргазма", "Дать ей насладиться анальным оргазмом", "make_her_cum")
 
 	if(state == "make_her_cum"):
-		saynn("You continue pumping your digits in and out, abusing that tight fuckhole so much that it starts to make wet noises. The girl tries to clench but you push through while also playing with her sensitive clit. But when you feel that the wolfy is getting close, you pull your digits away from her pussy, stealing that source of pleasure while focusing on fingering her ass harder.")
+		saynn("Ты продолжаешь вбивать пальцы туда-сюда, так сильно насилуя это тугое отверстие, что оно начинает издавать влажные звуки. Девушка пытается сжаться, но ты прорываешься сквозь её мышцы, одновременно лаская её чувствительный клитор. Но как только ты чувствуешь, что волчица близка к пику, ты резко убираешь пальцы из её киски, лишая её источника удовольствия и сосредотачиваясь на более жестком пальцевании её ануса.")
 
-		saynn("That confuses the wolfy, she still makes muffled lusty noises while her body wants to squirm. She is so close that she seems desperate for some attention to her locked away pussy. But you give her no easy way out and manage to push her over the edge with only the anal fingering. The wolfy lets out some very passionate muffled moans while she drools and her locked legs shiver. She cums so hard that the little rubber plug in her urethra finally gets pushed out followed by a strong stream of her transparent female juices.")
+		saynn("Это сбивает волчицу с толку: она продолжает издавать приглушенные похотливые звуки, хотя всё её тело так и просится, чтобы его потискали. Она настолько близка к пику, что кажется, будто она отчаянно жаждет внимания к своей запертой киске. Но ты не даешь ей легкого пути к разрядке и умудряешься довести её до края лишь анальным фингеррингом. Волчица издает страстные приглушенные стоны, пуская слюни, а её зажатые ноги начинают дрожать. Она кончает так сильно, что маленькая резиновая пробка в её уретре наконец вылетает, и следом за ней вырывается мощная струя прозрачного женского сока.")
 
-		saynn("[say=jacki]Mmff-f.. mf-f-f..[/say]")
+		saynn("[say=jacki]Мммф-ф.. мф-ф-ф..[/say]")
 
-		saynn("[say=femaleguard_feline]Oh, rude. That was a present.[/say]")
+		saynn("[say=femaleguard_feline]Ой, грубо. Это же был подарок.[/say]")
 
-		saynn("You keep your digits inside while she cums and feel how the inner walls close tight around them, like they are trying to milk a cock. After her orgasm fades out, you pull your digits out and rub your hands dry against that fluffy butt before giving it the last few smacks. The wolfy wiggles her slightly red ass while panting heavily into her gag, her tailhole quickly closes after you retractring your digits.")
+		saynn("Ты не вынимаешь пальцы, пока она кончает, и чувствуешь, как внутренние стенки плотно сжимаются вокруг них, словно пытаясь доить член. Когда оргазм утихает, ты вынимаешь пальцы и вытираешь руки о её пушистую задницу, прежде чем отвесить ей пару последних шлепков. Волчица дрыгает своей слегка покрасневшей попой, тяжело дыша сквозь кляп, а её анус быстро сжимается после того, как ты убираешь пальцы.")
 
-		addButton("Continue", "See what happens next", "continue2")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue2")
 
 	if(state == "continue2"):
-		saynn("The guard presses a few buttons on her datapad, transferring a work credit to your inmate account.")
+		saynn("Охранница нажимает несколько кнопок на своем датападе, переводя рабочий кредит на твой счет заключенного.")
 
-		saynn("[say=femaleguard_feline]Finger-fucking is fucking in my book, you still made her look like a mess. Good job, inmate.[/say]")
+		saynn("[say=femaleguard_feline]Фингер-трах — это полноценный трах, по-моему. Ты всё равно довел её до состояния полной распутицы. Хорошая работа, зек.[/say]")
 
-		saynn("[say=pc]Yeah, thanks, it was fun teaching her.[/say]")
+		saynn("[say=pc]Ага, спасибо, было весело её учить.[/say]")
 
-		saynn("You prepare to leave. Being curious you look from the other side of the stocks and see the wolfy panting and blushing hard as she notices you. Cute.")
+		saynn("Ты готовишься уходить. Из любопытства ты заглядываешь с другой стороны колодок и видишь, как волчица тяжело дышит и заливается краской, заметив тебя. Мило.")
 
 		# (scene ends here)
-		addButton("Leave", "Job well done", "endthescene")
+		addButton("Уйти", "Работа выполнена!", "endthescene")
 
 
 	if(state == "lie"):
@@ -349,91 +349,91 @@ func _run():
 
 		# (if won - you escape with Jacki. She thanks you)
 
-		saynn("You scratch behind your head and look away, thinking. You gotta save the girl somehow.")
+		saynn("Ты чешешь затылок и задумчиво отводишь взгляд. Тебе нужно как-то спасти девчонку.")
 
-		saynn("[say=pc]I think I will just watch for now.[/say]")
+		saynn("[say=pc]Думаю, пока я просто понаблюдаю.[/say]")
 
-		saynn("The guard chuckles while watching your unsure posture.")
+		saynn("Охранница посмеивается, глядя на твою неуверенную позу.")
 
-		saynn("[say=femaleguard_feline]Oh, you are one of them, huh~? Sure, you can watch.[/say]")
+		saynn("[say=femaleguard_feline]О, так ты один из этих, да~? Ну конечно, можешь смотреть.[/say]")
 
-		saynn("Some time passes but luckily there are not that many inmates around, maybe the time is bad. The guard is getting somewhat annoyed.")
+		saynn("Проходит какое-то время, но, к счастью, поблизости не так много заключенных — может, время неудачное. Охранница начинает понемногу раздражаться.")
 
-		saynn("[say=femaleguard_feline]Well shit. I will just go find some walking dicks to fuck her. Lazy fuckers probably still sleeping.[/say]")
+		saynn("[say=femaleguard_feline]Ну блядь. Пойду поищу каких-нибудь ходячих хуёв, чтобы трахнуть её. Ленивые ублюдки, небось, ещё спят.[/say]")
 
-		saynn("That might be your chance! The guard kitty leaves the stocks area and heads towards the cellblock. The wolfy in the stocks sighs audibly.")
+		saynn("Это может быть твой шанс! Кошечка-охранница покидает зону колодок и направляется в сторону жилого блока. Волчица в колодках издает отчетливый вздох.")
 
-		addButton("Help", "Try to unlock the girl", "help")
+		addButton("Помочь", "Попытаться освободить девушку", "help")
 
 	if(state == "help"):
 		playAnimation(StageScene.StocksSexOral, "tease", {pc="jacki", npc="pc", bodyState={exposedCrotch=true}})
 		
 		addCharacter("jacki")
-		saynn("You act fast, the first thing you do is run up to the locked wolfy and crouch behind her. Your hands quickly removed the wide metal rod that held the girl’s legs spread, it didn’t require a key luckily. Wolfy produces a confused noise while you pull her pants back up to cover her cute butt.")
+		saynn("Ты действуешь быстро: первым делом подбегаешь к запертой волчице и приседаешь позади неё. Твои руки ловко вынимают широкий металлический стержень, удерживавший её ноги разведенными; к счастью, ключ не понадобился. Волчица издает растерянный звук, пока ты натягиваешь её штаны обратно, чтобы прикрыть её милую попку.")
 
-		saynn("Then you walk around and try to take off the ball gag. Luckily that one is also just held by some straps and buckles. When the wolfy gets her drooling maw free, she closes and opens it a few times.")
+		saynn("Затем ты обходишь её с другой стороны и пытаешься снять кляп-шарик. К счастью, он тоже держится всего лишь на ремешках и пряжках. Когда волчица освобождает свою текущую пасть, она несколько раз сжимает и разжимает челюсти.")
 
-		saynn("[say=jacki]Uh.. you sure it’s a good idea?[/say]")
+		saynn("[say=jacki]Эм... ты уверена, что это хорошая идея?[/say]")
 
-		saynn("[say=pc]You’d rather get passed around?[/say]")
+		saynn("[say=pc]Ты лучше предпочтешь, чтобы тебя передавали из рук в руки?[/say]")
 
-		saynn("She doesn’t answer, just kinda looking to the side.")
+		saynn("Она не отвечает, просто как-то смотрит в сторону.")
 
-		addButton("Stocks", "Gotta get those unlocked somehow", "stocks")
+		addButton("Колодки", "Надо как-то их разблокировать.", "stocks")
 
 	if(state == "stocks"):
 		addCharacter("gymbully")
 		addCharacter("gymbully2")
 		
-		saynn("The metal stocks. You tug on the frame but it doesn’t even budge. You try to break the lock that holds the two pieces locked together but that one doesn’t give too. Finally you begin to make progress when you find a little hinge that doesn’t seem to be properly screwed in.")
+		saynn("Металлические колодки. Ты тянешь за раму, но она даже не шелохнется. Ты пытаешься сломать замок, скрепляющий две части, но и он не поддается. Наконец, дело начинает двигаться, когда ты находишь маленькую петлю, которая, кажется, плохо прикручена.")
 
-		saynn("[say=gymbully]Wha’cha doin’ there, kiddo?[/say]")
+		saynn("[say=gymbully]Чего это ты там ковыряешься, малец?[/say]")
 
 		# (if toilet bullies scene happened)
 		if(getFlag("JackiModule.BathroomBulliesSceneHappened")):
-			saynn("Oh shit. These are the same two inmates that you saw in the bathroom, the same gang but missing the crazy girl this time.")
+			saynn("О черт. Это те же две заключенные, которых ты видел в туалете — та же банда, но на этот раз без той сумасшедшей девчонки.")
 
 		# (else)
 		else:
-			saynn("Oh shit. The first two inmates have arrived, both are from a red block and they also seem to be from the same gang too.")
+			saynn("О черт. Пришли первые две заключенные, обе из красного блока, и, похоже, тоже из той же банды.")
 
-		saynn("[say=pc]Not your problem, go away.[/say]")
+		saynn("[say=pc]Не твоё дело, проваливай.[/say]")
 
-		saynn("[say=gymbully]Why would I? We got a word that a girl here needs to be punished. But it seems somebody wants to be a hero?[/say]")
+		saynn("[say=gymbully]С чего бы это? До нас дошли слухи, что одну девчонку здесь нужно проучить. Но, похоже, кто-то возомнил себя героем?[/say]")
 
-		saynn("You try to rip off the hinge but you need more time. And time is what you’re lacking.")
+		saynn("Ты пытаешься вырвать петлю, но тебе нужно больше времени. А времени тебе как раз и не хватает.")
 
-		saynn("[say=gymbully]Well, ‘trying’ is a better word. And failing at that. How ‘bout you step aside, pal.[/say]")
+		saynn("[say=gymbully]Ну, «пытаешься» — это более точное слово. Причем с треском проваливаешься. Так что подвинься-ка, приятель.[/say]")
 
 		# (Options are Attack, Break stocks (needs str 10+), Use a restraint key, Seduce and kick in the balls (sexiness 6+))
 
-		addButton("Intimidate", "That seems like the best way of handling it", "attack")
-		addButtonWithChecks("Break stocks", "Use your raw strength", "break_stocks", [], [[ButtonChecks.StatCheck, Stat.Strength, 10]])
+		addButton("Запугивание", "Похоже, это лучший способ справиться с ситуацией", "attack")
+		addButtonWithChecks("Сломать колодки", "Использовать грубую силу", "break_stocks", [], [[ButtonChecks.StatCheck, Stat.Strength, 10]])
 		if(GM.pc.getInventory().hasItemID("restraintkey")):
-			addButton("Use a restraint key", "Unlock the stocks with the universal key that you have", "use_a_restraint_key")
+			addButton("Использовать ключ от фиксаторов", "Отпереть колодки универсальным ключом, который у тебя есть", "use_a_restraint_key")
 		else:
-			addDisabledButton("Use a restraint key", "You don't have one")
-		addButtonWithChecks("Seduce", "Use your prettiness to get close to them and kick them in the balls", "seduce", [], [[ButtonChecks.StatCheck, Stat.Sexiness, 6]])
+			addDisabledButton("Использовать ключ от фиксаторов", "У тебя его нет")
+		addButtonWithChecks("Соблазнить", "Воспользоваться своей красоткой, чтобы подобраться поближе, и пнуть их в яйца", "seduce", [], [[ButtonChecks.StatCheck, Stat.Sexiness, 6]])
 
 
 	if(state == "attack"):
 		playAnimation(StageScene.Duo, "stand", {npc="gymbully"})
 		
-		saynn("Well, since they are clearly not gonna fuck off that easy, you stop tinkering with the stocks and then stand in their path.")
+		saynn("Ну, раз они явно не собираются так просто отъебываться, ты перестаешь возиться с колодками и встаешь у них на пути.")
 
-		saynn("[say=pc]I’m not gonna let you touch her.[/say]")
+		saynn("[say=pc]Я не дам тебе к ней прикоснуться![/say]")
 
-		saynn("The guy chuckles. The one behind him chuckles too but silently. The wolfy in stocks perks at the conversation behind.")
+		saynn("Парень усмехается. Тот, что стоит за ним, тоже тихо посмеивается. Волчара в колодках оживляется, услышав разговор за спиной.")
 
-		saynn("[say=gymbully]Big mistake, buddy. You’re going against the whole prison AND its inhabitants. Just so you can hog the girl for yourself? Brave. And stupid. But very brave.[/say]")
+		saynn("[say=gymbully]Большая ошибка, приятель. Ты идешь против всей тюрьмы И всех её обитателей. И всё только ради того, чтобы заграбастать девчонку себе? Смело. И глупо. Но очень смело.[/say]")
 
-		saynn("He raises his hands and clenches his fists.")
+		saynn("Он поднимает руки и сжимает кулаки.")
 
-		saynn("[say=gymbully]Well, bring it on then. We will fuck the girl when you lose. Sounds fair?[/say]")
+		saynn("[say=gymbully]Ну, так давай, нападай. Когда ты проиграешь, мы трахнем девчонку. Справедливо?[/say]")
 
-		addButton("Fight", "Begin the fight", "startfight")
+		addButton("Драться", "Начать бой", "startfight")
 		if(getFlag("JackiModule.Jacki_ch2GotEnslaved")):
-			addButton("Skip fight", "(Memories) Skip the fight and pretend that you won", "if_won")
+			addButton("Пропустить бой", "(Воспоминания) Пропустить бой и притвориться, что ты победил", "if_won")
 
 
 
@@ -441,19 +441,19 @@ func _run():
 		setFlag("JackiModule.Jacki_StocksPCWonFight", true)
 		setFlag("JackiModule.Jacki_StocksSavedByPC", true)
 		
-		saynn("The guy hits the floor, unable to continue fighting. His friend shows his fangs and seems to be ready to pick the fight but the main guy stops him.")
+		saynn("Парень падает на пол, не в силах продолжать бой. Его дружок скалится, явно готовый ввязаться в драку, но главный его останавливает.")
 
-		saynn("[say=gymbully]Let {pc.him} have the girl. There is a huge chance that {pc.he} {pc.is} making a mistake.[/say]")
+		saynn("[say=gymbully]Отдай {pc.him} девчонку. Есть огромный шанс, что {pc.he} {pc.is} совершает ошибку.[/say]")
 
-		saynn("The defeated guy slowly gets up and swipes dust from himself.")
+		saynn("Проигравший медленно поднимается и отряхивает пыль с себя.")
 
-		saynn("[say=gymbully]You will see, pal. There is a reason why people end up here, in this prison.[/say]")
+		saynn("[say=gymbully]Увидишь, дружок. Есть причина, по которой люди оказываются здесь, в этой тюрьме.[/say]")
 
-		saynn("[say=pc]I’m not your pal, get the fuck out of here.[/say]")
+		saynn("[say=pc]Я тебе не кореш, так что съебись отсюда нахер.[/say]")
 
-		saynn("He nods and leaves you two alone. His friend follows. Finally, some time.")
+		saynn("Он кивает и оставляет вас двоих наедине. Его друг следует за ним. Наконец-то, хоть немного времени.")
 
-		addButton("Help", "You gotta save her before more come", "help1")
+		addButton("Помочь", "Тебе нужно спасти её, пока не пришло ещё больше народа.", "help1")
 
 	if(state == "help1"):
 		removeCharacter("gymbully")
@@ -464,50 +464,50 @@ func _run():
 		# (knows name = true)
 		setFlag("JackiModule.Jacki_PCKnowsName", true)
 
-		saynn("You return to the stocks and continue trying to open them.")
+		saynn("Ты возвращаешься к колодкам и продолжаешь пытаться их открыть.")
 
-		saynn("[say=jacki]Uh.. thanks.[/say]")
+		saynn("[say=jacki]Э-э... спасибо.[/say]")
 
-		saynn("[say=pc]Don’t mention it.[/say]")
+		saynn("[say=pc]Не за что.[/say]")
 
-		saynn("Finally the stocks give in enough for the girl to free her arms and head. She straightens her posture and looks at you. A few seconds of silence.")
+		saynn("Наконец колодки поддаются достаточно, чтобы девушка смогла освободить руки и голову. Она выпрямляется и смотрит на тебя. Несколько секунд тишины.")
 
-		saynn("[say=jacki]I’m Jacki. These guys were blocking the path to the bathroom so I had to..[/say]")
+		saynn("[say=jacki]Я Джеки. Эти придурки перегородили путь к туалету, так что мне пришлось...[/say]")
 
-		saynn("[say=pc]It’s okay. You should run, Jacki. Before the guard or more inmates show up.[/say]")
+		saynn("[say=pc]Всё нормально. Тебе пора бежать, Джеки. Пока не объявился охранник или другие заключённые.[/say]")
 
-		saynn("She looks around.")
+		saynn("Она оглядывается по сторонам.")
 
-		saynn("[say=jacki]I guess you’re right.[/say]")
+		saynn("[say=jacki]Думаю, ты права.[/say]")
 
-		saynn("Jacki quickly jogs away. What a day.")
+		saynn("Джеки быстро убегает вдаль. Ну и денек.")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 	if(state == "if_lost"):
 		playAnimation(StageScene.StocksSpitroast, "tease", {pc="jacki", npc="gymbully", npc2="gymbully2", bodyState={exposedCrotch=true}, npcBodyState={exposedCrotch=true,hard=true}, npc2BodyState={exposedCrotch=true,hard=true}})
 		setFlag("JackiModule.Jacki_StocksPCLostFight", true)
 		
-		saynn("You lost the fight. Unable to continue, you drop to your knees while the guy looks down at you.")
+		saynn("Вы проиграли бой. Не в силах продолжать, вы падаете на колени, пока парень смотрит на вас сверху вниз.")
 
-		saynn("[say=gymbully]Well. Don’t be sad. It was gonna happen, sooner or later.[/say]")
+		saynn("[say=gymbully]Ну чего ты. Не грусти. Рано или поздно это всё равно бы случилось.[/say]")
 
-		saynn("The wolfy whimpers in the background, knowing what comes next.")
+		saynn("На заднем плане скулит волчица, понимая, что будет дальше.")
 
-		saynn("[say=gymbully]I will give you a chance to leave, how ‘bout that.[/say]")
+		saynn("[say=gymbully]Дам тебе шанс свалить, как тебе такое предложение?[/say]")
 
-		addButton("Leave", "You don’t wanna watch it", "leave")
-		addButton("Stay", "(noncon) See what happens next", "stay")
+		addButton("Уйти", "Вы не хотите на это смотреть", "leave")
+		addButton("Остаться", "(некон) Посмотреть, что будет дальше", "stay")
 
 
 	if(state == "leave"):
-		saynn("You don’t have enough strength in you to continue fighting so you have to just slowly get up and leave the scene.")
+		saynn("У вас не хватает сил продолжать бой, поэтому вам остается только медленно подняться и уйти.")
 
-		saynn("At least you know that you did your best.")
+		saynn("По крайней мере, вы знаете, что сделали всё, что могли.")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 	if(state == "stay"):
 		addCharacter("jacki", ["naked"])
@@ -522,58 +522,58 @@ func _run():
 
 		# (after sex you save her)
 
-		saynn("Well, might as well see what they will do with the girl. You crawl closer to the stocks and look at her face. She is obviously terrified.")
+		saynn("Что ж, можно и посмотреть, что они сделают с девчонкой. Вы подползаете ближе к колодкам и заглядываете ей в лицо. Она явно в ужасе.")
 
-		saynn("[say=jacki]Uh..[/say]")
+		saynn("[say=jacki]Эх..[/say]")
 
-		saynn("The main guy approaches the wolfy and unceremoniously yanks her shorts down, exposing the tight looking tailhole and a stitched up pussy. Wolfy eeks.")
+		saynn("Главный парень подходит к волчице и бесцеремонно стягивает с неё шорты, обнажая тугое отверстие для хвоста и зашитую киску. Волчица взвизгивает.")
 
-		saynn("[say=gymbully]Oh yeah, the cat wasn’t bullshitting, her cunt is useless. I will fuck her throat and you pound her ass then. She is hot but I’m not touching her dirty hole.[/say]")
+		saynn("[say=gymbully]О да, кошка не пиздела — её щелка бесполезна. Тогда я буду трахать ей в глотку, а ты будешь долбить её в зад. Она горячая, но в её грязную дырку я соваться не стану.[/say]")
 
-		saynn("The second dude replaces the first and pulls his canine dick out, already rubbing it between the girl’s slim buttcheeks. While the first dude reaches under and yanks on the shirt next, ripping it open and exposing the girl’s b-cup breasts and pierced nipples.")
+		saynn("Второй мужик сменяет первого и вытаскивает свой собачий член, уже потирая его между узких ягодиц девушки. Тем временем первый парень запускает руку под одежду и тянет за футболку, разрывая её и обнажая грудь девушки размера B с проколотыми сосками.")
 
-		saynn("[say=gymbully]Why are your tits so small, girl.[/say]")
+		saynn("[say=gymbully]Чего это у тебя сиськи такие мелкие, девка?[/say]")
 
-		saynn("But before she can answer that question, the guy exposes his cock and pushes it into her face, brushing his veiny shaft against the fur of her cheeks and leaking pre onto her forehead.")
+		saynn("Но прежде чем она успевает ответить, парень выставляет свой член и сует его ей в лицо, водя вздутым венозным стволом по меху её щек и пачкая лоб предэякулятом.")
 
-		saynn("[say=gymbully]Open your mouth, girl. Don’t make it difficult for yourself.[/say]")
+		saynn("[say=gymbully]Открывай рот, малявка. Не усложняй себе жизнь.[/say]")
 
-		saynn("Of course she doesn’t. She shakes her head and shows off her fangs to the guy. But at the same time the guy behind her aligns his cock with her hole and starts to apply pressure, trying to penetrate her ass. That makes the wolfy extremely wiggly, she whines and whimpers while helplessly thrashing against the metal stocks.")
+		saynn("Конечно, она не открывает. Она качает головой, скаля к парню клыки. Но в это же время парень позади неё пристраивает свой член к её дырке и начинает давить, пытаясь войти в задницу. От этого волчица начинает дико извиваться; она скулит и хнычет, беспомощно брыкаясь в металлических колодах.")
 
-		saynn("[say=gymbully]I guess you like it rough.[/say]")
+		saynn("[say=gymbully]Похоже, ты любишь пожестче.[/say]")
 
-		saynn("The guy wraps his paws around the girl’s muzzle and holds her nostrils blocked. At the same time the guy behind her forces himself in, his cock manages to stretch that tight asshole enough to slide in which makes the wolfy gasp. But her opening her mouth is soon followed by another knotted cock getting shoved past her teeth and down her throat.")
+		saynn("Парень обхватывает мордочку девушки лапами, зажимая ей ноздри. В то же время стоящий сзади мужик втискивается в неё; его член умудряется растянуть это тугое анусное отверстие настолько, чтобы проскользнуть внутрь, отчего волчица судорожно вдыхает. Но за тем, как она открывает рот, тут же следует другой узловатый член, который вбивается ей за зубы и проталкивается глубоко в глотку.")
 
-		saynn("[say=jacki]Mhf-f-f!..[/say]")
+		saynn("[say=jacki]Мхф-ф-ф!..[/say]")
 
-		saynn("[say=gymbully]Yeah, biting will end badly for ya. How is her ass feeling? Tight as well?[/say]")
+		saynn("[say=gymbully]Да, если начнешь кусаться, тебе плохо кончится. Как там её зад? Тоже узкий?[/say]")
 
-		saynn("The silent guy nods while proceeding to fuck her ass, rocking his hips back and forth while his cock stretches her poor star so much that it looks red-ish.")
+		saynn("Молчаливый парень кивает, продолжая трахать её в зад, раскачивая бедрами вперед-назад так сильно, что бедняжка-попа растягивается до красноватого оттенка.")
 
-		saynn("The first guy starts to move his hips too while still holding his paws above and under the girl’s muzzle, applying some pressure. You notice little tears already streaming down the wolfy’s cheeks as she is being spitroasted, she can’t stop gagging and choking while a cock gets rammed down her throat time after time. She is still mostly dry, her pussy is only slightly moist and the little dildo in her pisshole sometimes shifts a little.")
+		saynn("Первый парень тоже начинает двигать бедрами, всё еще удерживая лапы над и под мордочкой девушки и слегка надавливая. Ты замечаешь, как по щекам волчицы уже текут слезки — пока её разрывают в «шпигуне», она не может перестать давиться и задыхаться, когда член раз за разом вбивается ей в глотку. Она всё еще почти сухая, её киска лишь слегка влажная, а маленький дилдо в её дырочке для мочи иногда слегка смещается.")
 
-		saynn("[say=gymbully]Gag around my dick more, girl. Make me cum.[/say]")
+		saynn("[say=gymbully]Обхватывай мой член сильнее, девочка. Заставь меня кончить.[/say]")
 
-		addButton("Continue", "See what happens next", "bullies_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "bullies_cum")
 
 	if(state == "bullies_cum"):
 		playAnimation(StageScene.StocksSpitroast, "fast", {pc="jacki", npc="gymbully", npc2="gymbully2", pcCum=true, npcCum=true, bodyState={exposedCrotch=true}, npcBodyState={exposedCrotch=true,hard=true}, npc2BodyState={exposedCrotch=true,hard=true}})
 		
-		saynn("You notice their knots inflating and they both struggle to force them in. The girl’s ass is being stretched too much already, to the point of the soft flesh looking irritated. And her jaw can’t open wide enough. But they both continue pounding her holes until the orgasms overwhelm them roughly at the same time.")
+		saynn("Ты замечаешь, как их узлы раздуваются, и оба изо всех сил пытаются протолкнуть их внутрь. Задница девушки уже слишком сильно растянута, до такой степени, что мягкая плоть выглядит раздраженной. А челюсть не может открыться достаточно широко. Но они оба продолжают долбить её дырки, пока оргазмы грубо не накрывают их обоих одновременно.")
 
-		saynn("The main guy rams his cock as deep as that girl’s throat allows before proceeding to grunt while his cock starts to visibly pulsate inside her mouth and shoot cum deep down it. At the same time the guy behind arches his back and thrusts his cock deep inside too and cums while the girl’s tailhole tries to clench around it, milking it for all its cum. You see bright red blush on that poor wolfy’s cheeks.")
+		saynn("Главный герой вгоняет свой член так глубоко, насколько позволяет горло девчонки, а затем начинает хрипло стонать, пока его член заметно пульсирует у неё во рту, извергая сперму глубоко внутрь. В то же время парень сзади прогибается в пояснице и тоже глубоко всаживает свой член, кончая в неё, пока её анус пытается сжиматься вокруг него, высасывая всё до последней капли. Ты видишь ярко-красный румянец на щеках этой бедной волчицы.")
 
-		saynn("[say=gymbully]Nghh. So fucking tight.[/say]")
+		saynn("[say=gymbully]Нгхх... Блядь, как же тесно![/say]")
 
-		saynn("[say=jacki]Mhfff-f-ff!!..[/say]")
+		saynn("[say=jacki]Мхффф-ф-фф!!..[/say]")
 
-		saynn("She is being pumped with so much cum that some already starts to leak back, dripping from her chin and ass. After the guys are done fucking her, they pull their cocks out, leaving the wolfy to gasp and cough while her used tailhole tries to quickly close up. A smack on the ass makes it twitch and shoot a small string of that sticky stuff out. Lewd.")
+		saynn("Её заливает таким количеством спермы, что часть уже начинает вытекать обратно, стекая с её подбородка и задницы. Когда парни заканчивают трахать её, они вынимают свои члены, оставляя волчицу жадно хватать ртом воздух и кашлять, пока её использованное анальное отверстие пытается быстро сомкнуться. Шлепок по заднице заставляет его дернуться, и из него вылетает тонкая струйка этой липкой жижи. Пошло.")
 
-		saynn("[say=gymbully]I’m spent. Let’s leave this doggy for others to fuck.[/say]")
+		saynn("[say=gymbully]Я всё. Оставим эту сучку другим, пусть трахают.[/say]")
 
-		saynn("And just like that, they leave the wolfy alone. She is panting heavily.")
+		saynn("И вот так просто они оставляют волчицу одну. Она тяжело дышит.")
 
-		addButton("Help her", "Well, you should be able to save her now", "help_her")
+		addButton("Помочь ей", "Ну, теперь ты должен смочь её спасти.", "help_her")
 
 	if(state == "help_her"):
 		removeCharacter("gymbully")
@@ -581,37 +581,37 @@ func _run():
 		addCharacter("jacki")
 		playAnimation(StageScene.Duo, "stand", {npc="jacki"})
 		
-		saynn("You get up and approach the stocks. You’re still feeling weak after losing but you just about manage to unlock the stocks and open them. The wolfy slides down onto her knees and coughs more. You help her put her shorts on, they are ruined with cum already anyway.")
+		saynn("Ты встаешь и подходишь к колодкам. После поражения ты всё еще чувствуешь слабость, но тебе почти удается отпереть и открыть их. Волчица сползает на колени и продолжает кашлять. Ты помогаешь ей натянуть шорты, которые всё равно уже безнадежно испачканы спермой.")
 
-		saynn("[say=pc]You’re alright?[/say]")
+		saynn("[say=pc]Ты в порядке?[/say]")
 
-		saynn("She catches her breath a little and glances at you.")
+		saynn("Она немного переводит дух и бросает на тебя взгляд.")
 
-		saynn("[say=jacki]Yeah.. They were so rough.[/say]")
+		saynn("[say=jacki]Да уж... Они были такими грубыми.[/say]")
 
-		saynn("You nod and help her to get up.")
+		saynn("Вы киваете и помогаете ей подняться.")
 
-		saynn("[say=pc]You gotta run before more come.[/say]")
+		saynn("[say=pc]Тебе нужно бежать, пока не пришло еще больше народу.[/say]")
 
-		saynn("[say=jacki]I guess you’re right. Thanks for helping.[/say]")
+		saynn("[say=jacki]Думаю, ты права. Спасибо за помощь.[/say]")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 	if(state == "break_stocks"):
 		# (needs 10 str)
 		addCharacter("jacki")
 		playAnimation(StageScene.Duo, "stand", {npc="jacki"})
 
-		saynn("You’re not letting some fuckers use this wolfy, you tense your muscles up and begin applying pressure onto the top parts of the stocks, brute-forcing the problem. You let out an angry intimidating scream while the metal slowly starts to bend. The wolfy manages to free her paw, then her head, and then another paw.")
+		saynn("Вы не собираетесь позволять каким-то ублюдкам использовать эту волчицу; вы напрягаете мышцы и начинаете давить на верхнюю часть колодок, решая проблему грубой силой. Вы издаете яростный, устрашающий крик, пока металл начинает медленно гнуться. Волчице удается освободить лапу, затем голову, а затем и вторую лапу.")
 
-		saynn("The gang members watch you with opened mouths while you look at them and flex your arms.")
+		saynn("Члены банды смотрят на вас с открытыми ртами, пока вы смотрите на них и играете мускулами рук.")
 
-		saynn("[say=gymbully]Yeah, fuck that.[/say]")
+		saynn("[say=gymbully]Да, к черту всё это.[/say]")
 
-		saynn("The guys quickly flee while you bring the girl into the nearest private place.")
+		saynn("Парни быстро смываются, пока вы уводите девушку в ближайшее укромное место.")
 
-		addButton("Bathroom", "Bring her into the safe place", "bathroom")
+		addButton("Туалет", "Отводить её в безопасное место", "bathroom")
 
 	if(state == "bathroom"):
 		removeCharacter("gymbully")
@@ -623,20 +623,20 @@ func _run():
 		# (knows name = true)
 		setFlag("JackiModule.Jacki_PCKnowsName", true)
 
-		saynn("You and the wolfy enter the bathroom. There is no one around. She looks at you.")
+		saynn("Вы с волчицей заходите в туалет. Вокруг никого нет. Она смотрит на вас.")
 
-		saynn("[say=jacki]Thank you, I think they would have fucked me. I’m Jacki.[/say]")
+		saynn("[say=jacki]Спасибо, мне кажется, они бы меня поимели. Я Джеки.[/say]")
 
-		saynn("[say=pc]Don’t mention it. You’re okay?[/say]")
+		saynn("[say=pc]Не за что. Ты в порядке?[/say]")
 
-		saynn("[say=jacki]Yeah. They were blocking the bathroom before so I had to..[/say]")
+		saynn("[say=jacki]Да. Они до этого перегораживали туалет, так что мне пришлось...[/say]")
 
-		saynn("[say=pc]It’s okay. Avoid this area for now.[/say]")
+		saynn("[say=pc]Все хорошо. Пока старайся обходить это место стороной.[/say]")
 
-		saynn("She nods and carefully leaves the bathroom before jogging away. What a day.")
+		saynn("Она кивает и осторожно выходит из туалета, после чего убегает легким бегом. Ну и денек.")
 
 		# (scene ends)
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 
 
 	if(state == "use_a_restraint_key"):
@@ -644,12 +644,12 @@ func _run():
 		addCharacter("jacki")
 		playAnimation(StageScene.Duo, "stand", {npc="jacki"})
 
-		saynn("You think fast and realize that you have a key that is universal for any restraint. You quickly produce one and stuff it into the padlock that holds the stocks together before unlocking them. The key breaks in the process but you manage to free the girl.")
+		saynn("Ты быстро соображаешь и понимаешь, что у тебя есть универсальный ключ для любых оков. Ты быстро достаешь его и засовываешь в навесной замок, удерживающий колодки, и открываешь их. В процессе ключ ломается, но тебе удается освободить девушку.")
 
-		saynn("The guys are still there and they aren’t happy. So you swiftly grab the wolfy and run with her towards the nearest safe place. No time to talk.")
+		saynn("Парни все еще там, и они явно не в духе. Поэтому ты стремительно хватаешь волчицу и бежишь с ней к ближайшему безопасному месту. Сейчас не время для разговоров.")
 
 		# (bathroom button)
-		addButton("Bathroom", "Bring her into the safe place", "bathroom")
+		addButton("Туалет", "Отводить её в безопасное место", "bathroom")
 
 
 	if(state == "seduce"):
@@ -657,35 +657,35 @@ func _run():
 		addCharacter("jacki")
 		playAnimation(StageScene.Duo, "stand", {npc="gymbully"})
 
-		saynn("[say=pc]Why don’t you guys use me instead~[/say]")
+		saynn("[say=pc]А почему бы вам, парни, не использовать меня вместо неё~[/say]")
 
-		saynn("You step towards them and try to show off your {pc.masc} body. Their eyes are glued to you and you do notice their shorts bulging so you must be on the right track. The main guy looks at the silent one.")
+		saynn("Ты делаешь шаг к ним, пытаясь продемонстрировать свое {pc.masc} тело. Их взгляды прикованы к тебе, и ты замечаешь, как у них раздуваются ширинки — значит, ты на верном пути. Главный из них смотрит на молчаливого парня.")
 
-		saynn("[say=gymbully]Wha’cha think? We can lock {pc.him} in the stocks too, there are free ones.[/say]")
+		saynn("[say=gymbully]Ну, что скажешь? Мы можем запереть {pc.him} в колодки, там как раз есть свободные.[/say]")
 
-		saynn("The other guy nods but before they turn their heads back, you dash forward and kick the main dude in the balls. He cries out from pain and flops onto his knees while holding onto his crotch.")
+		saynn("Второй парень кивает, но прежде чем они успевают повернуть головы, ты бросаешься вперед и со всей дури бьешь главного по яйцам. Тот вскрикивает от боли и валится на колени, судорожно хватаясь за пах.")
 
-		saynn("[say=gymbully]B-Bitch! Fuck![/say]")
+		saynn("[say=gymbully]Сука! Блядь![/say]")
 
-		saynn("And before the second one can react you do the same to him, dropping him to his knees too. That brought you just enough time to unlock the stocks and free the wolfy. You both quickly run towards the nearest private place.")
+		saynn("И прежде чем второй успевает среагировать, ты делаешь то же самое с ним, заставляя его тоже рухнуть на колени. Этого времени тебе как раз хватает, чтобы отпереть колодки и освободить волчицу. Вы оба быстро бежите в сторону ближайшего укромного места.")
 
 		# (bathroom button here)
-		addButton("Bathroom", "Bring her into the safe place", "bathroom")
+		addButton("Туалет", "Отводить её в безопасное место", "bathroom")
 
 
 	if(state == "just_leave"):
 		setFlag("JackiModule.Jacki_ContentDisabled", true)
 		
-		saynn("[say=pc]Nah, I will let someone else do it. Not my type.[/say]")
+		saynn("[say=pc]Не, пусть это сделает кто-нибудь другой. Не в моем вкусе.[/say]")
 
-		saynn("The guard shrugs.")
+		saynn("Охранник пожимает плечами.")
 
-		saynn("[say=femaleguard_feline]Sure, whatever you say.[/say]")
+		saynn("[say=femaleguard_feline]Ладно, как скажешь.[/say]")
 
-		saynn("You nod and leave them be.")
+		saynn("Ты киваешь и оставляешь их в покое.")
 
 		# (end scene)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 
 func _react(_action: String, _args):

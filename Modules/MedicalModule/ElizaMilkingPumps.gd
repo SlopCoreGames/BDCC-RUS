@@ -12,121 +12,121 @@ func _run():
 	if(state == ""):
 		# (if low-medium)
 		if(GM.pc.getSkillLevel(Skill.Milking) <= 4):
-			saynn("[say=pc]I wanna donate my milk.[/say]")
+			saynn("[say=pc]Я хочу сдать молоко.[/say]")
 
 		# (if high)
 		else:
-			saynn("[say=pc]Please, I really need my udders milked. They start to itch if I don’t.[/say]")
+			saynn("[say=pc]Пожалуйста, мне очень нужно подоить вымя. Если этого не сделать, оно начинает чесаться.[/say]")
 
-		saynn("[say=eliza]That can be arranged. Follow me, inmate.[/say]")
+		saynn("[say=eliza]Это можно устроить. Иди за мной, заключенная.[/say]")
 
-		saynn("Eliza leaves her counter and gets you on a leash.")
+		saynn("Элиза отходит от прилавка и надевает на тебя поводок.")
 
-		addButton("Follow", "See where she will bring you", "follow")
+		addButton("Следовать", "Посмотреть, куда она вас приведет", "follow")
 
 	if(state == "follow"):
 		aimCamera("med_milkingroom")
 		setLocationName("Milking heaven")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", bodyState={exposedChest=true}})
 		
-		saynn("You enter the space that is designed for milking activities, Eliza guides you into one of the stalls and ties your leash to one of the metal bars. You look around, the room has a moody warm feel to it, the lighting here is not as bright.")
+		saynn("Ты входишь в помещение, предназначенное для дойки; Элиза заводит тебя в одну из клеток и привязывает твой поводок к одной из металлических перекладин. Ты оглядываешься: в комнате царит уютная, но мрачноватая атмосфера, а освещение здесь не слишком яркое.")
 
 		# (if tied up)
 		if(GM.pc.hasBlockedHands() || GM.pc.hasBoundArms()):
-			saynn("Eliza was nice enough to remove your restraints for now.")
+			saynn("Элиза была достаточно добра и на время сняла с тебя остальные оковы.")
 
 		# (if clothed)
 		if(!GM.pc.isFullyNaked()):
-			saynn("She shows you to hold onto the bar in front of you and you do that while she {pc.undressMessageS}. You’re left to stand naked while she grabs some things.")
+			saynn("Она велит тебе держаться за перекладину перед собой, и ты повинуешься, пока она {pc.undressMessageS}. Тебя оставляют стоять нагой, пока она идет за снаряжением.")
 
 		# (else)
 		else:
-			saynn("She shows you to hold onto the bar in front of you and you do that. She leaves you to stand naked while she grabs some things.")
+			saynn("Она велит тебе держаться за перекладину перед собой, и ты повинуешься. Она оставляет тебя стоять нагой, пока идет за снаряжением.")
 
-		saynn("[say=eliza]Hand milking has some charm to it but this is way more efficient~.[/say]")
+		saynn("[say=eliza]В ручном доении есть свое очарование, но этот способ куда эффективнее~.[/say]")
 
-		saynn("You notice her holding a pair of breast pumps and all the other necessary bits like soft tubes and fittings.")
+		saynn("Ты замечаешь, что в руках у неё пара молокоотсосов и все остальные необходимые принадлежности: мягкие трубки и переходники.")
 
 		# (if low-medium)
 		if(GM.pc.getSkillLevel(Skill.Milking) <= 4):
-			saynn("[say=pc]Very industrial..[/say]")
+			saynn("[say=pc]Выглядит очень индустриально...[/say]")
 
-			saynn("[say=eliza]If it works for cows, why wouldn’t we use it on humans.[/say]")
+			saynn("[say=eliza]Если это работает для коров, то почему бы не использовать это на людях?[/say]")
 
 		# (if high)
 		else:
-			saynn("[say=pc]Yes, please, my milky jugs need some good pumping. Moo![/say]")
+			saynn("[say=pc]Да, пожалуйста, моим молочным кувшинам не помешает хорошая накачка. Му![/say]")
 
-			saynn("[say=eliza]That’s the spirit.[/say]")
+			saynn("[say=eliza]Вот это настрой![/say]")
 
-		saynn("You push your chest forward, Eliza starts putting the pumps on your {pc.breasts}, suction cups firmly attach themselves to your nipples, already tugging on them. Then the doctor attaches the tubes and connects them to the pipes that run through the whole room.")
+		saynn("Ты подаешься грудью вперед, и Элиза начинает надевать насосы на твои {pc.breasts}; присоски плотно присасываются к твоим соскам, уже начиная их тянуть. Затем доктор подсоединяет трубки к магистральным трубам, проходящим через всю комнату.")
 
-		saynn("[say=eliza]There we go, all you have to do is stand still. But don’t forget to moo~, it helps with the milk quality. Ready?[/say]")
+		saynn("[say=eliza]Вот так, всё, что тебе нужно — это стоять смирно. Но не забывай мычать~, это помогает качеству молока. Готова?[/say]")
 
-		addButton("Get milked", "Moo!", "get_milked")
+		addButton("Дай себя подоить", "Му!", "get_milked")
 
 	if(state == "get_milked"):
-		saynn("You nod to the doc, she switches the pumps on and takes a step back. They start off slow, gently stimulating your nips with a rapid but weak pumping rhythm. It feels very arousing, you hold onto the bar and rub your legs together as the pumps slowly ramp up their strength.")
+		saynn("Ты киваешь доктору, она включает насосы и делает шаг назад. Сначала они работают медленно, нежно стимулируя твои соски быстрым, но слабым ритмом. Это чертовски возбуждает; ты вцепляешься в поручень и сжимаешь бедра, пока насосы постепенно наращивают мощность.")
 
 		# (if low-medium)
 		if(GM.pc.getSkillLevel(Skill.Milking) <= 4):
-			saynn("[say=pc]Moo-o..[/say]")
+			saynn("[say=pc]Му-у-у...[/say]")
 
 		# (if high)
 		else:
-			saynn("[say=pc]Moo-o![/say]")
+			saynn("[say=pc]Му-у-у![/say]")
 
-		saynn("Eliza bites her lip as she watches you. First few drops of {pc.milk} get collected. The pumps don’t stop, they switch to a more slow mode but each pump is much more deep and powerful, causing a steady flow to establish. You arch your back slightly, subtle moans escape from your lips. Doctor makes sure everything is working and then slides her palm over your {pc.thick} curves. She gives your butt a playful smack.")
+		saynn("Элиза закусывает губу, наблюдая за тобой. Первые капли {pc.milk} уже собираются. Насосы не останавливаются, они переходят в более медленный режим, но каждый толчок становится гораздо глубже и мощнее, вызывая устойчивый поток молока. Ты слегка прогибаешься в пояснице, с твоих губ срываются тихие стоны. Доктор убеждается, что всё работает исправно, а затем проводит ладонью по твоим {pc.thick} изгибам, игриво шлепнув тебя по заднице.")
 #ACEPREGEXPAC - Eliza comments on her pregnant, possibly milky state
 		if(getCharacter("eliza").isVisiblyPregnant()):
-			saynn("[say=eliza]Good cow~. I wanna hear you moo for me.[/say]")
-			saynn("You see eliza rub her rounded out midriff as she seemingly study your reaction as the pumps milk your {pc.breasts}")
-			saynn("[say=eliza]I might have to try this later...")
+			saynn("[say=eliza]Хорошая коровка~. Хочу услышать, как ты мычишь для меня.[/say]")
+			saynn("Вы видите, как Элиза поглаживает свой округлившийся живот, словно изучая вашу реакцию, пока насосы доят ваш {pc.breasts}")
+			saynn("[say=eliza]Может, мне стоит попробовать это попозже...")
 		else:
-			saynn("[say=eliza]Good cow~. I wanna hear you moo for me.[/say]")
+			saynn("[say=eliza]Хорошая коровка~. Хочу услышать, как ты мычишь для меня.[/say]")
 
-		saynn("You lean forward and let out a cute moo without controlling it, your mind starts to feel hazy. Pleasure from milking overflows your mind, you squirm and wiggle your butt while the pumps restlessly pump {pc.milk} from your {pc.breasts}.")
+		saynn("Ты подаешься вперед и непроизвольно издаешь милое «му», а в голове начинает все туманиться. Наслаждение от дойки переполняет твой разум; ты ерзаешь и виляешь попой, пока насосы беспокойно выкачивают {pc.milk} из твоих {pc.breasts}.")
 
 		# (if has pussy)
 		if(GM.pc.hasVagina()):
-			saynn("Your wet cunt makes you feel needy, you look around, maybe there is a bull here somewhere that can fuck you senseless. Your wetness drips down from your slit and creates a little puddle underneath you. You came but the orgasm gets lost in that sea of pleasure..")
+			saynn("Твоя мокрая киска заставляет тебя чувствовать себя жаждущей; ты оглядываешься по сторонам, надеясь, что где-то здесь есть бык, который трахнет тебя до беспамятства. Влага стекает из твоей щели, образуя под тобой маленькую лужицу. Ты кончила, но оргазм просто растворился в этом море удовольствия..")
 
-		saynn("Fuck, it’s so hot, being milked like some kind of farm animal. No thoughts.. No hard decisions.. You feel your mind slipping into bliss.. Stand still and be milked hard, that’s what you want right now.. You open your mouth and stick your tongue out, moaning and panting, every few seconds a moo noise escapes from you, your eyes show lust and desire. You don’t even notice that the doctor is gone to do something else, you just want this to continue.")
+		saynn("Блядь, как же жарко, когда тебя доят, словно какое-то фермерское животное. Никаких мыслей... Никаких сложных решений... Ты чувствуешь, как разум погружается в блаженство... Просто стой смирно и позволяй себя интенсивно доить, это ведь именно то, чего ты хочешь прямо сейчас... Ты открываешь рот и высовываешь язык, стоная и тяжело дыша, каждые несколько секунд у тебя вырывается мычание, а в глазах читается похоть и вожделение. Ты даже не замечаешь, что доктор отошел по делам, ты просто хочешь, чтобы это продолжалось.")
 
-		addButton("Moo", "Give in completely..", "moo")
+		addButton("Мууу", "Отдайся этому полностью..", "moo")
 
 	if(state == "moo"):
-		saynn("Time passes.. Who knows how much.. All you hear is the sound of pumps suckling on your {pc.breasts}, slowing down as they start to run out of charge. You are drooling and mooing, feeling completely spaced out.")
+		saynn("Время идет.. Кто знает, сколько.. Всё, что ты слышишь, это звук насосов, сосков которых всасываются в твой {pc.breasts}, замедляющийся по мере того, как у них начинает садиться заряд. Ты пускаешь слюни и мычишь, чувствуя полную отрешенность.")
 
-		saynn("Eventually the doctor comes back. She snaps her fingers in front of your face.")
+		saynn("В конце концов возвращается доктор. Она щелкает пальцами прямо перед твоим лицом.")
 
-		saynn("[say=eliza]Oh yeah, look at you. Such a slut for milking. Let’s see.[/say]")
+		saynn("[say=eliza]О да, посмотри на себя. Такая шлюшка, обожающая доение. Ну-ка, посмотрим...[/say]")
 
-		saynn("Eliza turns off the pumps and checks how much milk you made.")
+		saynn("Элиза выключает насосы и проверяет, сколько молока ты выдала.")
 
 		# (if less < 400)
 		if(howMuchMilked < 400.0):
-			saynn("[say=eliza]Not that much, hmm. Maybe you need bigger melons.[/say]")
+			saynn("[say=eliza]Не так уж много, хм. Может, тебе нужны дыньки побольше?[/say]")
 
 		# (if > 400)
 		elif(howMuchMilked < 900.0):
-			saynn("[say=eliza]Not bad. That will do nicely.[/say]")
+			saynn("[say=eliza]Неплохо. Сойдет.[/say]")
 
 		# (if a lot)
 		else:
-			saynn("[say=eliza]Oh nice, very good. Enough to make some nice profit.[/say]")
+			saynn("[say=eliza]О, мило, очень хорошо. Хватит, чтобы получить неплохую прибыль.[/say]")
 
-		saynn("You moan as she takes off the breast pumps, your nips feel so sensitive. You can hardly stand without holding to something, Eliza clips a leash to your collar and brings you out.")
+		saynn("Ты стонешь, когда она снимает молокоотсосы — соски становятся невероятно чувствительными. Тебе трудно стоять, не держась за что-нибудь; Элиза пристегивает поводок к твоему ошейнику и выводит тебя наружу.")
 
 		# (if clothed)
 		if(!GM.pc.isFullyNaked()):
-			saynn("She grabs your clothes also and gives them to you.")
+			saynn("Она также хватает твою одежду и протягивает тебе.")
 
-		saynn("[say=eliza]You will snap out of it. I’m sure~. Let’s go, little cow.[/say]")
+		saynn("[say=eliza]Ты быстро придешь в себя. Я уверена~. Пошли, коровка.[/say]")
 
-		saynn("[say=pc]Moo..[/say]")
+		saynn("[say=pc]Му-у..[/say]")
 
-		addButton("Follow", "Moo-o-o..", "follow1")
+		addButton("Следовать", "Му-у-у...", "follow1")
 
 	if(state == "follow1"):
 		aimCamera("med_nearmilking")
@@ -134,14 +134,14 @@ func _run():
 		GM.pc.setLocation("med_nearmilking")
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		
-		saynn("Eliza walks you out of the milking room and unleashes you.")
+		saynn("Элиза выводит тебя из доильного зала и отпускает.")
 
-		saynn("[say=eliza]Gonna go now, my shift is still going. Just find the exit.[/say]")
+		saynn("[say=eliza]Пойду я, у меня смена ещё не закончилась. Просто ищи выход.[/say]")
 
-		saynn("Eliza spanks you lightly and goes on her way.")
+		saynn("Элиза слегка шлепает тебя и уходит своей дорогой.")
 
 		# (scene ends)
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 		
 
 

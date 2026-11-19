@@ -8,316 +8,316 @@ func _run():
 		#aimCameraAndSetLocName("hideout_chill")
 		addCharacter("kait")
 		playAnimation(StageScene.Duo, "stand", {npc="kait"})
-		saynn("[say=pc]Hey. Do you wanna have some fun?[/say]")
+		saynn("[say=pc]Эй. Хочешь немного развлечься?[/say]")
 
-		saynn("Kait raises a brow, her ears perk up, tail wrapping around her waist.")
+		saynn("Кейт приподнимает бровь, её ушки навостряются, а хвост обвивает талию.")
 
-		saynn("[say=kait]What kind of fun are we talking about? Watching TV? Beating up a guard or two? Jig puzzle solving?[/say]")
+		saynn("[say=kait]О каких именно развлечениях речь? Посмотрим телик? Побьем парочку охранников? Или соберем пазл?[/say]")
 
-		saynn("She looks at you with big curious eyes.")
+		saynn("Она смотрит на тебя своими большими любопытными глазами.")
 
-		saynn("[say=pc]The kind where I get to hear your hot noises.[/say]")
+		saynn("[say=pc]О тех, при которых я буду слушать твои горячие стоны.[/say]")
 
-		saynn("The snow leopard smirks and tilts her head a bit, her hips swaying to support that.")
+		saynn("Снежная леопардица ухмыляется и слегка наклоняет голову, покачивая бедрами в подтверждение своих слов.")
 
-		saynn("[say=kait]Oh yeah~? But what if I won't make any hot noises?[/say]")
+		saynn("[say=kait]О да~? А что, если я не буду издавать никаких горячих звуков?[/say]")
 
-		saynn("[say=pc]I think you will.[/say]")
+		saynn("[say=pc]Думаю, еще как будешь.[/say]")
 
-		saynn("Kait stays quiet for a bit. She bites her lip teasingly, her smirk turning into a sly smile.")
+		saynn("Кейт на мгновение замолкает. Она игриво прикусывает губу, а её ухмылка превращается в лукавую улыбку.")
 
-		saynn("[say=kait]Try me then~.[/say]")
+		saynn("[say=kait]Ну так попробуй~.[/say]")
 
-		saynn("Oh, it's on.")
+		saynn("Ну, держись.")
 
-		addButton("Continue", "See what happens next", "kait_grab")
+		addButton("Продолжить", "Смотреть, что будет дальше", "kait_grab")
 	if(state == "kait_grab"):
 		playAnimation(StageScene.ShoweringDuo, "teasehug", {pc="kait", npc="pc", noShower=true})
-		saynn("[say=pc]Come here then.[/say]")
+		saynn("[say=pc]Ну, иди сюда.[/say]")
 
-		saynn("You reach out and grab her wrist, pulling her towards you. She lets out a little yelp of surprise as she stumbles forward.. before crashing against your {pc.masc} chest, her paws grabbing onto your shoulders, her muzzle meeting yours.")
+		saynn("Ты протягиваешь руку и хватаешь её за запястье, притягивая к себе. Она издает короткий вскрик от неожиданности, спотыкается и врезается тебе в {pc.masc} грудь; её лапы вцепляются в твои плечи, а мордочка встречается с твоей.")
 
-		saynn("[say=kait]Oh, hello there, beautiful.[/say]")
+		saynn("[say=kait]О, привет, красавица.[/say]")
 
-		saynn("[say=pc]Takes one to know one.[/say]")
+		saynn("[say=pc]Своя видна издалека.[/say]")
 
-		saynn("You turn her around, one arm wrapping snugly around her waist, her back pressing against your chest. The fluffy tail is quick to curl around your leg, brushing against your ankle. You meet no resistance.. and so you continue.")
+		saynn("Ты разворачиваешь её, крепко обхватив одной рукой за талию, так что её спина прижимается к твоей груди. Пушистый хвост тут же обвивает твою ногу, щекоча лодыжку. Сопротивления нет... и ты продолжаешь.")
 
-		saynn("One of your hands undoes a few of her shirt's buttons and slides up her belly, feeling her soft fur between your digits. Her breathing gets deeper as you trace her fit curves, feeling the outlines of her ribs even. Your digits are working higher and higher until you cup one of her breasts, giving it a slight squeeze.")
+		saynn("Одной рукой ты расстегиваешь несколько пуговиц на её рубашке и ведешь вверх по животу, ощущая мягкий мех между пальцами. Её дыхание становится глубже, пока ты обводишь её подтянутые изгибы, чувствуя даже очертания рёбер. Твои пальцы ползут всё выше и выше, пока ты не накрываешь одну из её грудей, слегка сжимая её.")
 
-		saynn("[say=kait]Heh.. is that supposed to make me moan?[/say]")
+		saynn("[say=kait]Хех... это что, должно заставить меня застонать?[/say]")
 
-		saynn("You pinch her nipple and gently rub it after. It makes Kait gasp, her back arching slightly, leaning more into you. She did gasp but that's not quite a noise.. just loud breathing.")
+		saynn("Ты щипаешь её за сосок, а затем нежно растираешь его. Кейт ахает, её спина слегка выгибается, и она сильнее прижимается к тебе. Это был скорее вздох, чем стон... просто шумное, прерывистое дыхание.")
 
-		saynn("[say=kait]Hah.. good try.[/say]")
+		saynn("[say=kait]Хах... неплохая попытка.[/say]")
 
-		saynn("[say=pc]Stay quiet all you want, kitty cat.[/say]")
+		saynn("[say=pc]Можешь молчать сколько влезет, кошечка.[/say]")
 
-		saynn("[say=kait]I will.[/say]")
+		saynn("[say=kait]Буду.[/say]")
 
-		saynn("Your second hand joins too, squeezing her other breast, your digits playing with both her nips. You feel them getting stiff under your touch. Your chin is resting on her shoulder, looking down at her chest, seeing those dark nips getting teased. Kait gently nuzzles your cheek, her breath hitching occasionally, her tail still wrapped around your leg.")
+		saynn("Твоя вторая рука тоже подключается, сжимая её вторую грудь; твои пальцы ласкают оба соска. Ты чувствуешь, как они твердеют под твоими прикосновениями. Твой подбородок покоится на её плече, пока ты смотришь на её грудь, наблюдая, как дразнят эти темные соски. Кейт нежно прижимается щекой к твоей, её дыхание время от времени сбивается, а хвост всё еще обвивает твою ногу.")
 
-		saynn("[say=pc]Still good?[/say]")
+		saynn("[say=pc]Всё ещё хорошо?[/say]")
 
-		saynn("[say=kait]..Mhm. Easy.[/say]")
+		saynn("[say=kait]..Мгм. Продолжай.[/say]")
 
-		saynn("Her voice certainly sounds a little higher.")
+		saynn("Её голос определённо стал чуть выше.")
 
-		saynn("One of your hands moves down. You don't go straight for the main deal.. that would be too quick. Instead, you let your fingers dance along the waistband of her shorts, tracing her hip bones through the fabric. Kait sucks in a breath, her belly tightening. You take your time, teasing her breasts and waist, enjoying the little shivers running through her body.")
+		saynn("Одна из твоих рук сползает вниз. Ты не спешишь переходить сразу к самому главному... это было бы слишком быстро. Вместо этого ты позволяешь пальцам танцевать вдоль пояса её шорт, очерчивая косточки бёдер сквозь ткань. Кейт резко вдыхает, её живот напрягается. Ты не торопишься, дразня её грудь и талию, наслаждаясь легкой дрожью, пробегающей по её телу.")
 
-		saynn("[say=kait]You're.. taking your sweet time, aren't you..[/say]")
+		saynn("[say=kait]Ты... не торопишься, да?..[/say]")
 
-		saynn("[say=pc]It's your sweet time that I'm taking.[/say]")
+		saynn("[say=pc]Это ты не торопишься, а я наслаждаюсь моментом.[/say]")
 
-		saynn("[say=kait]Hah.[/say]")
+		saynn("[say=kait]Хах.[/say]")
 
-		saynn("You land a little kiss on her neck.. then another few. It makes her start purring.. until she catches herself and seizes that.")
+		saynn("Ты оставляешь легкий поцелуй на её шее... затем еще несколько. От этого она начинает довольно урчать... пока не ловит себя на этом и не берет себя в руки.")
 
-		saynn("[say=pc]I can allow purring.[/say]")
+		saynn("[say=pc]Мурчание — это даже мило.[/say]")
 
-		saynn("You deliver another smooch.. and feel the vibrations return.")
+		saynn("Ты снова прижимаешься губами к её коже... и чувствуешь, как вибрация возвращается.")
 
-		addButton("Continue", "See what happens next", "in_shorts")
+		addButton("Продолжить", "Смотреть, что будет дальше", "in_shorts")
 	if(state == "in_shorts"):
 		playAnimation(StageScene.ShoweringDuo, "rub", {pc="kait", npc="pc", noShower=true})
-		saynn("You let your hand finally dip below her waistband, your fingers quickly stumbling upon the damp fabric. Kait lets out another quiet gasp as your digits start parting her slick pussy folds. You let your middle finger slide between them.. not quite entering her.. just tracing the length of her slit. Up and down along it. The feline lets out a shaky exhale through her nose.. her mouth open.. her legs trembling just the tiniest bit.")
+		saynn("Наконец ты просовываешь руку под пояс её белья, и твои пальцы быстро натыкаются на влажную ткань. Кейт издает очередной тихий вздох, когда твои пальцы начинают раздвигать её влажные складки. Ты вводишь средний палец между ними... не слишком глубоко... просто очерчивая длину её щели. Вверх и вниз. Кошка издает прерывистый выдох носом... её рот приоткрыт... а ноги едва заметно дрожат.")
 
-		saynn("[say=pc]Feels good, doesn't it?[/say]")
+		saynn("[say=pc]Приятно, правда?[/say]")
 
-		saynn("[say=kait]Maybe..[/say]")
+		saynn("[say=kait]Может быть...[/say]")
 
-		saynn("Your digits slide up to her clit and give it a few rubs, flicking it left and right. The sound that Kait makes can only be described as a mix between a whimper and a stifled growl. The more you play with her cute little bean, the more she shivers. Your other hand is still busy groping her breasts and tugging on her nips.")
+		saynn("Твои пальцы скользят выше к её клитору, лаская его и потирая из стороны в сторону. Звук, который издает Кейт, можно описать лишь как нечто среднее между скулением и сдавленным рычанием. Чем больше ты играешь с её милой маленькой бусинкой, тем сильнее она дрожит. Твоя другая рука всё еще занята тем, что тискает её грудь и дергает за соски.")
 
-		saynn("[say=pc]I hear something.[/say]")
+		saynn("[say=pc]Я что-то слышу.[/say]")
 
-		saynn("She shakes her head and swallows audibly.")
+		saynn("Она качает головой и издает отчетливый глоток.")
 
-		saynn("[say=kait]Doesn't count![/say]")
+		saynn("[say=kait]Это не считается![/say]")
 
-		saynn("Sure. Time to test her.")
+		saynn("Конечно. Пора её проверить.")
 
-		saynn("You push her further, two of your digits spreading her sensitive folds.. while another two slide inside her entrance.. straight into her tight, wet sex. Her hips buck a bit.. but she stays quiet. You push further still, now pumping your digits in and out of her snatch with a steady rhythm. Her cunt starts squeezing around you, her mouth closes shut while a muffled sound of pleasure tries to escape it.")
+		saynn("Ты проникаешь глубже, раздвигая двумя пальцами её чувствительные складки, в то время как ещё два скользят внутрь её входа... прямиком в её узкую, мокрую киску. Её бёдра слегка дёргаются, но она молчит. Ты проталкиваешь пальцы ещё глубже, теперь ритмично работая ими внутри её щели. Её пизда начинает сжиматься вокруг тебя, она плотно сжимает губы, пытаясь подавить приглушённый стон наслаждения.")
 
 		saynn("[say=kait]M.. m..[/say]")
 
-		saynn("[say=pc]Makin' noises again.[/say]")
+		saynn("[say=pc]Опять ты издаёшь эти звуки.[/say]")
 
-		saynn("[say=kait]Hmpf.. I'm totally fine..[/say]")
+		saynn("[say=kait]Хмф... Со мной всё в полном порядке...[/say]")
 
-		saynn("You feel her get even wetter, your fingers getting coated by her juices.")
+		saynn("Ты чувствуешь, как она становится ещё мокрее, а твои пальцы покрываются её соками.")
 
-		saynn("[say=pc]You're saying you can take more?[/say]")
+		saynn("[say=pc]Хочешь сказать, что можешь принять ещё больше?[/say]")
 
-		saynn("[say=kait]..y-yeah.[/say]")
+		saynn("[say=kait]..д-да.[/say]")
 
-		saynn("And so you start pumping your digits in and out of her pussy faster, so fast that it starts making wet noises. At the same time, you curl your fingertips, trying to find that secret spot deep in her slit. When you do, you start hammering away at it specifically.")
+		saynn("И тогда ты начинаешь двигать пальцами в её киске всё быстрее и быстрее, так, что раздаются отчетливые влажные шлепки. Одновременно с этим ты сгибаешь кончики пальцев, пытаясь нащупать ту самую секретную точку глубоко в её щели. И когда ты находишь её, то начинаешь методично и жёстко вбиваться именно туда.")
 
-		saynn("Kait's legs start shaking and almost give out. She leans into you more, her paws grabbing onto your sides.")
+		saynn("Ноги Кейт начинают дрожать и почти подкашиваются. Она сильнее прижимается к тебе, вцепляясь лапками в твои бока.")
 
-		saynn("[say=kait]H-h.. hey.. e-easy..[/say]")
+		saynn("[say=kait]Эй... э-эй... полегче...[/say]")
 
-		saynn("But you just keep fucking her with your digits, relentlessly. Kait's breathing is coming in short gasps, her tail spazzing out around your ankle. She arches her back more and throws her head back, her mouth still shut, lips holding in all the noises.")
+		saynn("Но ты продолжаешь неустанно трахать её своими пальцами. Дыхание Кейт становится прерывистым, её хвост судорожно обвивает твою лодыжку. Она сильнее выгибает спину и запрокидывает голову, всё ещё плотно сжимая губы, чтобы не выдать ни звука.")
 
-		saynn("[say=pc]Getting hard to stay quiet, huh?[/say]")
+		saynn("[say=pc]Тяжело сохранять молчание, да?[/say]")
 
-		saynn("She speaks through her teeth.")
+		saynn("Она говорит сквозь стиснутые зубы.")
 
-		saynn("[say=kait]Grhh.. I'm.. g-good.. I'm f-fine..[/say]")
+		saynn("[say=kait]Гррх.. Я.. в-всё.. я в по-порядке..[/say]")
 
-		saynn("She is holding onto you hard.. her pussy clenching around your digits, hips swaying left and right, lots of random shivers rocking through her. You pinch her nipple again and feel her whole body jolt.")
+		saynn("Она крепко вцепилась в тебя... её киска сжимается вокруг твоих пальцев, бёдра ходят ходуном из стороны в сторону, а по телу пробегает череда случайных дрожей. Ты снова щипаешь её за сосок и чувствуешь, как всё её тело вздрагивает.")
 
-		saynn("[say=pc]You're so wet for me, Kait.[/say]")
+		saynn("[say=pc]Ты такая мокрая для меня, Кейт.[/say]")
 
-		saynn("[say=kait]S-shush.. I'm.. I'm.. f..[/say]")
+		saynn("[say=kait]Т-тсс.. Я.. я.. ф..[/say]")
 
-		saynn("Her voice goes so high, it cracks.")
+		saynn("Её голос взлетает так высоко, что срывается.")
 
-		saynn("[say=kait]F-f.. f-fi..[/say]")
+		saynn("[say=kait]Ф-ф.. ф-фи..[/say]")
 
-		saynn("Her pussy clenching rhythmically around your digits, her whole body goes rigid. She tries to finish her word but only allows a muffled whimper to escape through her nose.")
+		saynn("Её киска ритмично сжимается вокруг твоих пальцев, и всё её тело каменеет. Она пытается договорить слово, но из носа вырывается лишь приглушённый скулёж.")
 
-		saynn("It's happening. You feel it coming before she does.")
+		saynn("Это происходит. Ты чувствуешь приближение разрядки раньше, чем она сама.")
 
-		saynn("Kait's body convulses against you, her hips bucking wildly as a gush of her transparent juices washes over your fingers, soaking her shorts and dripping down her thighs in the process. She lets out a strangled, choked sound.. still desperate to stay quiet even while her eyes roll back from the pure ecstasy of the orgasm.")
+		saynn("Тело Кейт содрогается в твоих руках, её бёдра дико дёргаются, когда мощный поток её прозрачного сока омывает твои пальцы, пропитывая шорты и стекая по её бёдрам. Она издаёт сдавленный, хриплый звук... всё ещё отчаянно пытаясь не шуметь, даже когда её глаза закатываются от чистого экстаза оргазма.")
 
-		saynn("Her face shows pure pleasure while her legs are shaking so hard she nearly collapses, only staying upright because of your support.")
+		saynn("На её лице — чистейшее наслаждение, а ноги дрожат так сильно, что она едва не валится с ног, удерживаясь только благодаря твоей поддержке.")
 
-		saynn("[say=kait]Hhh.. hhhhhnn..[/say]")
+		saynn("[say=kait]Ахх.. ххххмм..[/say]")
 
-		saynn("She is still fighting it. Even now, as her pussy is squirting and pulsing around your fingers, she is trying to hold back. Her teeth are clenched, her jaw tight, little whimpers escaping despite her best efforts.")
+		saynn("Она всё ещё сопротивляется. Даже сейчас, когда её киска содрогается и пульсирует вокруг твоих пальцев, она пытается сдержаться. Зубы сжаты, челюсть напряжена, и, несмотря на все усилия, из неё всё равно вырываются тихие всхлипы.")
 
-		saynn("Kait thinks you will stop now.. She thinks that she won. Hah.")
+		saynn("Кейт думает, что ты сейчас остановишься... Она думает, что победила. Ха.")
 
-		saynn("You don't stop.")
+		saynn("Но ты не останавливаешься.")
 
-		saynn("You keep pumping, keep hammering away at her G-spot.. you keep fucking her with your fingers. Her second orgasm builds fast, her body still extremely sensitive.")
+		saynn("Ты продолжаешь качать, продолжаешь вбиваться прямо в её точку G... ты продолжаешь трахать её пальцами. Её второй оргазм нарастает стремительно, её тело всё ещё запредельно чувствительно.")
 
-		saynn("[say=kait]W-wait.. I.. I can't..[/say]")
+		saynn("[say=kait]По-погоди.. я.. я больше не смогу..[/say]")
 
-		saynn("[say=pc]You can. You're doing so well.[/say]")
+		saynn("[say=pc]Сможешь. У тебя отлично получается.[/say]")
 
-		saynn("Your thumb flicks her clit rapidly when it finds a time. Kait cries out the beginning of a moan.. but she quickly cuts it off with a gasp.")
+		saynn("Когда твой большой палец находит её клитор, ты начинаешь быстро им водить. Кейт вскрикивает, начиная стонать... но тут же резко обрывает звук судорожным вздохом.")
 
-		saynn("[say=pc]Pretty sure that was a moan, young lady.[/say]")
+		saynn("[say=pc]Почти уверена, что это был стон, юная леди.[/say]")
 
-		saynn("[say=kait]N-No.. oh f-fuck..[/say]")
+		saynn("[say=kait]Н-нет... о, бл*ть...[/say]")
 
-		saynn("She shakes her head.. but her body betrays her. Her pussy clenches hard again, her back arching as she cums for the second time. And this time, she completely fails..")
+		saynn("Она качает головой... но тело предает её. Её киска снова сильно сжимается, а спина выгибается в мощном втором оргазме. И на этот раз она полностью теряет контроль...")
 
-		saynn("[say=kait]AHHH! F-fuck![/say]")
+		saynn("[say=kait]АААХХ! Бл*ть![/say]")
 
-		saynn("A desperate cry of pleasure fills the room, long and passionate. And then more. Kait throws her head back and moans while her juices are gushing again, soaking through her shorts completely, creating a puddle on the floor. Her body convulses, her eyes rolling back, mouth open and panting, tongue rolling out.")
+		saynn("Комнату наполняет отчаянный, долгий и страстный крик наслаждения. А затем — еще один. Кейт запрокидывает голову и стонет, пока её соки снова бьют фонтаном, насквозь пропитывая шорты и образуя лужицу на полу. Её тело сотрясают конвульсии, глаза закатываются, рот открыт в тяжелом дыхании, а язык вываливается наружу.")
 
-		saynn("[say=kait]Ah.. ahh-.. ah.. ahh-.. p-please.. ah.. my p-pussy.. ahh..[/say]")
+		saynn("[say=kait]Ах.. ахх-.. ах.. ахх-.. п-пожалуйста.. ах.. моя к*ска.. ахх..[/say]")
 
-		saynn("[say=pc]There it is.[/say]")
+		saynn("[say=pc]Вот оно как.[/say]")
 
-		saynn("You stop fingering her, just holding your digits inside her, waiting until all the orgasmic waves pass through her.")
+		saynn("Ты перестаешь ласкать её пальцами, просто оставляя их внутри, ожидая, пока все волны оргазма пройдут сквозь неё.")
 
-		saynn("[say=kait]Huff.. hah..[/say]")
+		saynn("[say=kait]Хуф.. хах..[/say]")
 
-		saynn("She is left a panting wet mess, her head lazily resting against yours.")
+		saynn("Она осталась тяжело дышащей, влажной и изнеможденной, лениво прислонившись головой к твоему плечу.")
 
-		saynn("[say=pc]You did your best.[/say]")
+		saynn("[say=pc]Ты сделал всё, что мог.[/say]")
 
-		saynn("[say=kait]Mhh..[/say]")
+		saynn("[say=kait]Ммм..[/say]")
 
-		saynn("Slowly, you pull the wet digits out of her sex and bring them up to her mouth, letting them rest on her tongue.")
+		saynn("Медленно ты вынимаешь влажные пальцы из её киски и подносишь их к её рту, позволяя им лечь на её язык.")
 
-		saynn("Kait is quick to start sucking on them, little moans still escaping her while she tastes herself.")
+		saynn("Кейт тут же принимается ими сосать, издавая тихие стоны, пока она пробует саму себя на вкус.")
 
-		saynn("[say=pc]Did you enjoy that?[/say]")
+		saynn("[say=pc]Тебе понравилось?[/say]")
 
-		saynn("She nods her head subtly.. her tongue cleaning your digits.. her mouth swallowing occasionally.")
+		saynn("Она едва заметно кивает... её язык вылизывает твои пальцы... она время от времени заглатывает их.")
 
-		saynn("[say=pc]Good. Very good.[/say]")
+		saynn("[say=pc]Хорошо. Очень хорошо.[/say]")
 
-		saynn("When Kait is done.. she also lets out a breathless laugh.")
+		saynn("Когда Кейт заканчивает... она издает прерывистый, сдавленный смешок.")
 
-		saynn("[say=kait]Hah.. f-fuck.. I guess I failed.[/say]")
+		saynn("[say=kait]Хах.. б-блядь.. кажется, я провалилась.[/say]")
 
-		saynn("[say=pc]In the most spectacular way possible.[/say]")
+		saynn("[say=pc]Самым фееричным образом из всех возможных.[/say]")
 
-		saynn("She playfully jabs her elbow into you.")
+		saynn("Она игриво тычет вас локтем.")
 
-		saynn("You chuckle and let her get back to senses.")
+		saynn("Вы посмеиваетесь, давая ей прийти в себя.")
 
-		saynn("Enough fun for now.")
+		saynn("На сегодня веселья достаточно.")
 
-		addButton("Continue", "See what happens next", "endthescene")
-		addButtonWithChecks("Watersports..", "Maybe she can help clear your hole", "watersports", [], [[ButtonChecks.ContentEnabled, ContentType.Watersports]])
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
+		addButtonWithChecks("Вотерспортс...", "Может, она поможет очистить твою дырочку?", "watersports", [], [[ButtonChecks.ContentEnabled, ContentType.Watersports]])
 	if(state == "watersports"):
-		saynn("But then you think about it.. Maybe there is more fun to be had.")
+		saynn("Но потом вы задумываетесь... Возможно, впереди еще немало интересного.")
 
-		saynn("Kait's body is still trembling a bit, your arms supporting her.")
+		saynn("Тело Кейт всё еще слегка дрожит, пока вы поддерживаете её руками.")
 
-		saynn("[say=pc]Not quite done with you yet.[/say]")
+		saynn("[say=pc]Она еще не до конца с вами расправилась.[/say]")
 
-		saynn("She lets out a tired chuckle.")
+		saynn("Она издает усталый смешок.")
 
-		saynn("[say=kait]Oh yeah? I don't think I can survive another..[/say]")
+		saynn("[say=kait]Да неужели? Не думаю, что переживу еще один такой раунд...[/say]")
 
-		saynn("You don't let her finish, your hand slides down under your waistband and finds a very specific spot. Below her clit and above her pussy entrance.")
+		saynn("Вы не даете ей договорить: ваша рука скользит под пояс брюк и находит ту самую точку — прямо под клитором, над входом во влагалище.")
 
-		saynn("The tiny little opening.")
+		saynn("Крошечное маленькое отверстие.")
 
-		saynn("The one that makes her gasp when you start rubbing.")
+		saynn("То самое, от которого она ахает, когда ты начинаешь его тереть.")
 
-		saynn("[say=kait]W-wait.. what are you?..[/say]")
+		saynn("[say=kait]П-погоди.. что ты?..[/say]")
 
-		saynn("[say=pc]You wanna pee, Kait?[/say]")
+		saynn("[say=pc]Хочешь пописать, Кейт?[/say]")
 
-		saynn("[say=kait]W-wha.. why are you asking?[/say]")
+		saynn("[say=kait]Ч-что.. почему ты спрашиваешь?[/say]")
 
-		saynn("You don't answer.. instead you start tickling that little hole of hers.. more and more. The cat's body tenses up fast.")
+		saynn("Ты не отвечаешь.. вместо этого ты начинаешь всё сильнее и сильнее щекотать её маленькую дырочку.. всё сильнее. Тело кошки мгновенно напрягается.")
 
-		saynn("[say=kait]Wait.. that tickles.. p-please stop![/say]")
+		saynn("[say=kait]Погоди.. это щекотно.. п-пожалуйста, перестань![/say]")
 
-		saynn("[say=pc]C'mon, I know you want to. I can feel the pressure.[/say]")
+		saynn("[say=pc]Да ладно, я же знаю, что ты хочешь. Я чувствую это давление.[/say]")
 
-		saynn("Her pussy muscles all tense up as well, she is clenching hard, trying to prevent the thing that you are trying to make happen.")
+		saynn("Мышцы её киски тоже напрягаются; она сильно сжимается, пытаясь предотвратить то, что ты пытаешься заставить её сделать.")
 
-		saynn("Kait's breath hitches, her paws grab onto yours.")
+		saynn("У Кейт перехватывает дыхание, её лапки вцепляются в твои руки.")
 
-		saynn("[say=kait]S-stop.. That's.. you're gonna..[/say]")
+		saynn("[say=kait]П-прекрати.. Это.. ты сейчас..[/say]")
 
-		saynn("Even though she holds your hands still, you're still free to tickle her urethra. You do it more and more.. you feel it twitch. Kait is squirming hard.")
+		saynn("Хотя она всё ещё сжимает твои руки, ты волен продолжать щекотать её уретру. Ты делаешь это всё настойчивее... чувствуешь, как она вздрагивает. Кейт отчаянно извивается.")
 
-		saynn("[say=pc]Just let go, Kait.[/say]")
+		saynn("[say=pc]Просто расслабься, Кейт.[/say]")
 
-		saynn("[say=kait]NO.. No.. I'm not.. mhh.. hh..[/say]")
+		saynn("[say=kait]НЕТ.. Нет.. я не.. ммм.. хх..[/say]")
 
-		saynn("Her voice cracks, her whole body trembling, the orgasms have left her weak and sensitive. She doesn't have the energy to fight properly.")
+		saynn("Её голос срывается, всё тело дрожит; оргазмы выжали из неё все силы, сделав её слабой и сверхчувствительной. У неё просто нет энергии, чтобы сопротивляться по-настоящему.")
 
-		saynn("And so you keep tickling her little hole. Soft circles and gentle taps.")
+		saynn("И ты продолжаешь щекотать её маленькое отверстие. Мягкие круговые движения и нежные постукивания.")
 
-		saynn("[say=pc]You sure about that?[/say]")
+		saynn("[say=pc]Ты в этом уверена?[/say]")
 
-		saynn("[say=kait]Y-yes.. I can't.. mhh.. I don't wanna..[/say]")
+		saynn("[say=kait]Д-да.. я не могу.. ммм.. я не хочу..[/say]")
 
-		saynn("[say=pc]I'm pretty sure you do wanna.[/say]")
+		saynn("[say=pc]А по-моему, ты очень даже хочешь.[/say]")
 
-		saynn("She shakes her head violently, her teeth clenching. All her muscles are straining, every fiver of her being trying to keep control.")
+		saynn("Она яростно качает головой, стиснув зубы. Все её мышцы напряжены, каждая клеточка её существа пытается сохранить контроль.")
 
-		saynn("[say=pc]It's okay, Kait. Let go.[/say]")
+		saynn("[say=pc]Все в порядке, Кейт. Отпусти.[/say]")
 
-		saynn("Her body jerks.")
+		saynn("Ее тело вздрагивает.")
 
-		saynn("A small spurt escapes.")
+		saynn("Вырывается небольшая струйка.")
 
-		saynn("Kait gasps, her eyes full of panic.")
+		saynn("Кейт ахает, ее глаза полны паники.")
 
-		saynn("[say=kait]N-no.. no no no..[/say]")
+		saynn("[say=kait]Н-нет.. нет-нет-нет..[/say]")
 
-		saynn("You keep tickling her little urethra..")
+		saynn("Ты продолжаешь щекотать ее крошечное мочеиспускательное отверстие...")
 
-		saynn("The next spurt is bigger.")
+		saynn("Следующий выброс оказывается сильнее.")
 
-		saynn("[say=kait]P-please.. the shorts.. at least..[/say]")
+		saynn("[say=kait]П-пожалуйста.. шорты.. хотя бы их..[/say]")
 
-		saynn("[say=pc]Nope. You will need to wash them anyway, they're soaked in your scent.[/say]")
+		saynn("[say=pc]Не-а. Тебе все равно придется их стирать, они насквозь пропитались твоим запахом.[/say]")
 
-		saynn("Her face is red from humiliation. She opens her mouth to protest again but all that comes out a strangled whimper.")
+		saynn("Ее лицо багровеет от унижения. Она снова открывает рот, чтобы возразить, но вместо этого из нее вырывается лишь сдавленный всхлип.")
 
-		saynn("And then.. she fails completely.")
+		saynn("И затем... она окончательно теряет контроль.")
 
-		saynn("A hot stream of golden piss shoots from her tiny hole, splashing into her already wet shorts, running down her thighs and dripping onto the floor. Kait is pissing herself.. right there.. in your arms.")
+		saynn("Горячая струя золотистой мочи бьет из ее крошечного отверстия, заливая и без того мокрые шорты, стекая по бедрам и капая на пол. Кейт описалась... прямо здесь... у тебя на руках.")
 
-		saynn("And through it all, she lets out the most beautiful moan you've ever heard. Full of desperation and relief.")
+		saynn("И сквозь всё это она издает самый прекрасный стон, который ты когда-либо слышал. Стон, полный отчаяния и облегчения.")
 
-		saynn("[say=kait]Ahhhh..[/say]")
+		saynn("[say=kait]Аааахх..[/say]")
 
-		saynn("Your digits hold her pussy folds spread while the stream just keeps going, her mouth hanging open while she is making a mess.. and clearly enjoying herself, judging from her face.")
+		saynn("Твои пальцы раздвигают складки ее киски, пока струя продолжает хлестать; ее рот приоткрыт, она вовсю пачкает всё вокруг... и, судя по ее лицу, явно получает от этого удовольствие.")
 
-		saynn("[say=kait]Mmhhh.. that's f-fucking gross.. I'm p-peeing myself.. can't stop..[/say]")
+		saynn("[say=kait]Мммхх.. это так бл*дь мерзко.. я п-писаюсь.. не могу остановиться..[/say]")
 
-		saynn("[say=pc]So cute.[/say]")
+		saynn("[say=pc]Такой милашка.[/say]")
 
-		saynn("You give her a gentle kiss on the cheek.")
+		saynn("Ты нежно целуешь ее в щеку.")
 
-		saynn("[say=kait]Huff-f..[/say]")
+		saynn("[say=kait]Хафф-ф..[/say]")
 
-		saynn("Her stream finally begins to slow down.. turning into a trickle.. before ending completely.")
+		saynn("Наконец струя начинает замедляться... превращаясь в тонкую струйку... перед тем как полностью иссякнуть.")
 
-		saynn("She lets out a breathless, broken laugh. Her eyes look down at the puddle she created.")
+		saynn("Она издает прерывистый, сдавленный смешок. Ее взгляд опускается на образовавшуюся лужицу.")
 
-		saynn("[say=kait]This is.. maybe kinda hot.. but still fucking gross..[/say]")
+		saynn("[say=kait]Это... вроде как даже горячо... но всё равно, блядь, противно..[/say]")
 
-		saynn("[say=pc]Good girl.[/say]")
+		saynn("[say=pc]Хорошая девочка.[/say]")
 
-		saynn("As you take a step back and watch.. Kait sighs..")
+		saynn("Пока ты отступаешь на шаг и наблюдаешь... Кейт вздыхает...")
 
-		saynn("[say=kait]I hope no one sees me.. or smells me..[/say]")
+		saynn("[say=kait]Хоть бы никто не увидел... или не учуял..[/say]")
 
-		saynn("And just like that she runs off.")
+		saynn("И вот так просто она убегает.")
 
-		saynn("You help clean up the mess in the meantime.")
+		saynn("Тем временем ты помогаешь прибраться после этого беспорядка.")
 
-		saynn("When she returns, she seems fine again, her shorts clean.")
+		saynn("Когда она возвращается, она кажется снова нормальной, её шорты чистые.")
 
-		saynn("Now this.. was fun.")
+		saynn("А вот это... было весело.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

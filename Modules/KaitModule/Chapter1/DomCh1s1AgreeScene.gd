@@ -11,417 +11,417 @@ func _run():
 		GM.pc.setLocation("fight_announcer")
 		addCharacter("kait")
 		playAnimation(StageScene.Duo, "stand", {npc="kait"})
-		saynn("[say=pc]I think I might just accept your offer.[/say]")
+		saynn("[say=pc]Думаю, я, пожалуй, приму твоё предложение.[/say]")
 
-		saynn("[say=kait]Haha. Yes. Perfect. You made the right choice, trust me. We will turn them all into our subby bitches. We will make them all beg![/say]")
+		saynn("[say=kait]Ха-ха! Да! Идеально! Поверь, ты сделал правильный выбор. Мы превратим их всех в наших послушных сучек. Мы заставим их всех умолять![/say]")
 
-		saynn("You nod. Kait seems excited. Maybe a bit too much. You haven't done anything yet so you keep a serious face.")
+		saynn("Ты киваешь. Кейт кажется восторженной. Возможно, даже слишком. Ты ведь ещё ничего не сделал, так что сохраняешь серьёзное лицо.")
 
-		saynn("[say=kait]Since I started this whole thing.. that means.. I'm gonna be in charge. Yeah?[/say]")
+		saynn("[say=kait]Раз уж я всё это заварила... значит... главной буду я. Да?[/say]")
 
-		saynn("She doesn't sound entirely sure about it. Her feline eyes look slightly anxious, waiting for your answer. Her tail is alert too. You take a better look at her. The feline.. is kinda small. She doesn't look very strong either. Got a loud mouth though.")
+		saynn("Звучит так, будто она не до конца в этом уверена. Её кошачьи глазки смотрят с лёгким беспокойством в ожидании твоего ответа. Хвост тоже напряжён. Ты присматриваешься к ней получше. Эта кошка... она довольно мелкая. И сильной её тоже не назовёшь. Зато рот у неё громкий.")
 
-		saynn("[say=pc]You're gonna tell me the plan first. And then we will see.[/say]")
+		saynn("[say=pc]Сначала ты расскажешь мне план. А там посмотрим.[/say]")
 
-		saynn("Kait blinks and looks around. So many ears. So many loud noises.")
+		saynn("Кейт моргает и оглядывается по сторонам. Так много ушей. Так много шума.")
 
-		saynn("[say=kait]Fine. But not here.[/say]")
+		saynn("[say=kait]Ладно. Но не здесь.[/say]")
 
-		addButton("Continue", "See what happens next", "near_hideout")
+		addButton("Продолжить", "Смотреть, что будет дальше", "near_hideout")
 	if(state == "near_hideout"):
 		aimCameraAndSetLocName("fight_announcer")
-		saynn("Behind the raised platform, there is a doorframe, half-hidden in shadow. Kait walks through it and invites you to follow.")
+		saynn("За возвышением стоит дверной проём, наполовину скрытый в тени. Кейт проходит сквозь него и приглашает тебя следовать за ней.")
 
-		saynn("You do.")
+		saynn("Ты идёшь за ней.")
 
-		saynn("You enter the Announcer's office. This room clearly was a maintenance space of some sorts before.. maybe even a storage bay. But now someone has shoved a make-shift desk, a chair and a few shelves into it. It was cramped and dim.. but also cozy in a weird way.")
+		saynn("Вы входите в кабинет Диктора. Судя по всему, раньше это помещение служило техническим отсеком или даже складом. Но теперь кто-то втиснул сюда самодельный стол, стул и несколько полок. В комнате тесно и тускло, но в то же время она кажется по-своему уютной.")
 
-		saynn("[say=kait]Ans has been kind enough to let me use his secret room.[/say]")
+		saynn("[say=kait]Диктор был достаточно добр, чтобы разрешить мне пользоваться его секретной комнатой.[/say]")
 
-		saynn("You look around. There is only enough space for the two of you to stand without bumping into each other. Only a single metal wall was separating you from the chaos of the arena outside.")
+		saynn("Вы оглядываетесь. Места здесь хватает лишь для того, чтобы вы двое могли стоять, не задевая друг друга. От хаоса арены снаружи вас отделяет лишь одна металлическая стена.")
 
-		saynn("[say=pc]This room isn't exactly secret, is it?[/say]")
+		saynn("[say=pc]Эта комната не то чтобы совсем уж секретная, верно?[/say]")
 
-		saynn("Kait snorts softly and nods towards the far corner.")
+		saynn("Кейт тихо фыркает и кивает в сторону дальнего угла.")
 
-		saynn("[say=kait]That one is.[/say]")
+		saynn("[say=kait]А вот та — вполне.[/say]")
 
-		saynn("You followed her gaze. Kait moves some of the janky-looking shelves made out of metal panels.. uncovering an airlock door.")
+		saynn("Вы прослеживаете за её взглядом. Кейт отодвигает несколько шатких полок, сделанных из металлических панелей, и обнаруживает дверь шлюза.")
 
-		saynn("You approach it. The door has huge dents and a bunch of torn-off panels. The wiring is all exposed too.. like someone has tried to hack it. It has certainly seen better days. There is a small window on it.. but it's really hard to see what's behind. It's all dark and dusty.")
+		saynn("Вы подходите ближе. На двери видны огромные вмятины и куча оторванных панелей. Проводка тоже вся наружу... будто кто-то пытался её взломать. Вид у неё, мягко говоря, потрепанный. В двери есть маленькое окошко, но разглядеть, что за ним, почти невозможно — там сплошная темнота и пыль.")
 
-		saynn("[say=pc]Is that your job?[/say]")
+		saynn("[say=pc]Это твоя работа?[/say]")
 
-		saynn("[say=kait]Some of it, sure. Don't ask me how many times it shocked me. I think I started to like it by the end.[/say]")
+		saynn("[say=kait]Отчасти, конечно. Только не спрашивай, сколько раз она меня била током. Кажется, к концу смены мне даже начало это нравиться.[/say]")
 
-		saynn("[say=pc]Could have stolen some insulated gloves.[/say]")
+		saynn("[say=pc]Можно было стащить пару утепленных перчаток.[/say]")
 
-		saynn("[say=kait]Uh..[/say]")
+		saynn("[say=kait]Э-э...[/say]")
 
-		saynn("She scratches behind her head.")
+		saynn("Она чешет затылок.")
 
-		saynn("[say=pc]Or let someone else from your team steal it.[/say]")
+		saynn("[say=pc]Или позволить кому-то из своей команды стащить их.[/say]")
 
-		saynn("[say=kait]Uhh-h-h-h..[/say]")
+		saynn("[say=kait]Э-э-э-э...[/say]")
 
-		saynn("[say=pc]You have a team, right?[/say]")
+		saynn("[say=pc]У тебя ведь есть команда, верно?[/say]")
 
-		saynn("[say=kait]Yes, of course. We will talk about it. But first..[/say]")
+		saynn("[say=kait]Да, конечно. Мы это обсудим. Но сначала...[/say]")
 
-		saynn("You raise a brow and watch as Kait grabs a long metal bar and shoves it into a crack between the two unpowered doors.")
+		saynn("Вы приподнимаете бровь и наблюдаете, как Кейт хватает длинный металлический лом и вставляет его в щель между двумя обесточенными дверями.")
 
-		saynn("[say=kait]I managed to raise the bolts and cut off the power. Now we just need to force it open. Care to help?[/say]")
+		saynn("[say=kait]Мне удалось поднять болты и вырубить питание. Теперь осталось только выломать дверь. Поможешь?[/say]")
 
-		addButton("Help", "Help Kait to force-open the door", "help_force_open")
+		addButton("Помочь", "Помочь Кейт выломать дверь", "help_force_open")
 	if(state == "help_force_open"):
-		saynn("Might as well. You join Kait and grasp the same metal bar. Kait is holding the tip while you're pushing just next to it. The stick is about a meter long so there is enough space.. but it's quite greasy and old, its cold ridges are biting into your palms.")
+		saynn("Почему бы и нет. Вы присоединяетесь к Кейт и беретесь за тот же металлический лом. Кейт держит за конец, а вы давите рядом. Стержень длиной около метра, так что места хватает... но он довольно жирный и старый, а его холодные ребра впиваются вам в ладони.")
 
-		saynn("Kait's fluffy paws brush against yours as you adjust your grip.")
+		saynn("Пушистые лапки Кейт задевают твои руки, пока ты поудобнее перехватываешь рукоять.")
 
-		saynn("[say=kait]On my three.[/say]")
+		saynn("[say=kait]На счет три.[/say]")
 
-		saynn("You brace.")
+		saynn("Ты напрягаешься.")
 
-		saynn("[say=kait]One.[/say]")
+		saynn("[say=kait]Раз.[/say]")
 
-		saynn("The bar starts creaking under pressure.")
+		saynn("Перекладина начинает скрипеть под давлением.")
 
-		saynn("[say=kait]Two.[/say]")
+		saynn("[say=kait]Два.[/say]")
 
-		saynn("Kait leans into it, her body tensing up.")
+		saynn("Кейт подается вперед, всё её тело напрягается.")
 
-		saynn("[say=kait]Three![/say]")
+		saynn("[say=kait]Три![/say]")
 
-		saynn("Together, you push.")
+		saynn("Вы толкаете изо всех сил.")
 
-		saynn("The door withstands your action with a loud metallic groan that rattles through the whole frame. Somewhere inside it, something gave a little.. but then got caught again. Kait's paws slip and she slides head-first into your side.")
+		saynn("Дверь выдерживает натиск с громким металлическим стоном, от которого дрожит вся рама. Где-то внутри что-то поддалось... но тут же застряло снова. Лапки Кейт соскальзывают, и она влетает тебе прямо в бок.")
 
-		saynn("[say=kait]Ah![/say]")
+		saynn("[say=kait]Ах![/say]")
 
-		saynn("A small chuckle escapes her.")
+		saynn("Она тихонько посмеивается.")
 
-		saynn("[say=pc]Again. Get a better grip.[/say]")
+		saynn("[say=pc]Опять. Хватай покрепче.[/say]")
 
-		saynn("[say=kait]I know! Shush. I got this.[/say]")
+		saynn("[say=kait]Да знаю я! Замолчи. Сейчас всё получится.[/say]")
 
-		saynn("Having a crowbar would probably be much better for this. But you don't see any toolboxes around.")
+		saynn("Для этого дела подошёл бы лом, но поблизости нет ни одного ящика с инструментами.")
 
-		saynn("You both reset, shoulders almost touching now as you look for better leverage.")
+		saynn("Вы оба перегруппировались, теперь ваши плечи почти соприкасаются, пока вы ищете, за что бы ухватиться получше.")
 
-		saynn("Then.. you try again. The metal screeches, the door begins to budge. You feel Kait's paws begin to shake and shiver as her strength gets tested. Eventually, she grunts and gives up, panting heavily.")
+		saynn("Затем... вы пробуете снова. Металл скрежещет, дверь начинает поддаваться. Вы чувствуете, как лапки Кейт начинают дрожать от напряжения. В конце концов, она кряхтит и сдаётся, тяжело дыша.")
 
-		saynn("[say=kait]Stupid thing![/say]")
+		saynn("[say=kait]Дурацкая железка![/say]")
 
-		saynn("[say=pc]You're probably doing something wrong. Let's trade places.[/say]")
+		saynn("[say=pc]Ты, наверное, что-то делаешь не так. Давай поменяемся местами.[/say]")
 
-		saynn("[say=kait]Nu huh![/say]")
+		saynn("[say=kait]Ну хрена себе![/say]")
 
-		saynn("You ignore the cat and nudge her out of the way, forcing her to put her paws where yours were while you grab onto the bar's end. After some fidgeting, you find that the metal bar seems to have more leverage if you push it the other way.")
+		saynn("Ты игнорируешь кошку и бесцеремонно отодвигаешь её в сторону, заставляя её поставить лапы на то же место, где были твои, пока ты хватаешься за край перекладины. Повозившись немного, ты понимаешь, что металлическая штанга идет легче, если толкать её в другую сторону.")
 
-		saynn("[say=pc]Pull instead of pushing. Go![/say]")
+		saynn("[say=pc]Тяни вместо того, чтобы толкать. Давай![/say]")
 
-		saynn("You do the same, putting your whole weight into it as you start trying to pull the stick towards you, greeting your teeth in the process.")
+		saynn("Ты делаешь то же самое, вкладывая весь свой вес в попытку потянуть штангу на себя, отчего зубы невольно скрежещут.")
 
-		saynn("[say=kait]Gr-r..[/say]")
+		saynn("[say=kait]Гр-р-р...[/say]")
 
-		saynn("[say=pc]Pull I said.[/say]")
+		saynn("[say=pc]Я сказал — тяни![/say]")
 
-		saynn("Something starts giving.. you can feel it. The feline concentrates, her fluffy tail grabbing onto your leg and using it for support.")
+		saynn("Что-то начинает поддаваться... ты это чувствуешь. Кошка сосредоточилась, обхватив своим пушистым хвостом твою ногу, чтобы использовать её как опору.")
 
-		saynn("Second after second of painful grunts.. the metal digging into your hands.")
+		saynn("Секунда за секундой, полная болезненного кряхтения... металл впивается в твои ладони.")
 
-		saynn("And then.. the doors finally submit. A strip of darkness begins to widen between them.")
+		saynn("И вот... двери наконец сдаются. Между ними начинает расширяться полоска темноты.")
 
-		saynn("Kait lets out a triumphant sigh.")
+		saynn("Кейт издает торжествующий вздох.")
 
-		saynn("[say=kait]There![/say]")
+		saynn("[say=kait]Есть![/say]")
 
-		saynn("The airlock doors don't resist anymore as you spread the halves more.")
+		saynn("Двери шлюза больше не сопротивляются, когда ты разводишь половинки еще шире.")
 
-		saynn("Kait steps back and wipes her paws on a random rag. You do the same. The feline peeks her head inside, her tail erected high.")
+		saynn("Кейт отступает назад и вытирает лапы о какую-то попавшуюся тряпку. Ты делаешь то же самое. Кошка просовывает голову внутрь, высоко задрав хвост.")
 
-		saynn("[say=kait]After you?[/say]")
+		saynn("[say=kait]После тебя?[/say]")
 
-		addButton("Step inside", "See what's out there", "go_inside")
+		addButton("Войти внутрь", "Посмотреть, что там снаружи", "go_inside")
 	if(state == "go_inside"):
 		aimCameraAndSetLocName("hideout_enter")
-		saynn("You get yourself through the gap between the doors and step further.")
+		saynn("Ты протискиваешься сквозь щель между дверями и проходишь глубже.")
 
-		saynn("It's dark.. but your eyes slowly begin to adapt.")
+		saynn("Темно... но твои глаза постепенно начинают привыкать.")
 
-		saynn("The room.. was about what you'd expect it to be. It's another abandoned maintenance tunnel.")
+		saynn("Комната... оказалась ровно такой, как ты и ожидал. Еще один заброшенный технический туннель.")
 
-		saynn("Abandoned is a bad word for it. It's a total derelict of a room. Empty storage crates littered the floor.. a warped metal table was leaning against one of the walls, one leg snapped clean off. Empty bins, cracked panels, overturned shelves.. and all of it is covered with a thick layer of dust. It is impossible to take a single step without tripping over something.")
+		saynn("«Заброшенный» — это еще мягко сказано. Это полнейшая руина. Пол усеян пустыми ящиками для хранения... у стены прислонен покореженный металлический стол с отломанной до основания ножкой. Пустые контейнеры, треснувшие панели, перевернутые стеллажи... и всё это покрыто толстым слоем пыли. Здесь невозможно сделать и шага, чтобы не споткнуться о какой-нибудь хлам.")
 
-		saynn("No one had been here in a long time.")
+		saynn("Здесь давно никто не бывал.")
 
-		saynn("Kait walks up to you from behind and pauses near your shoulder, her eyes catching the scarce glimpses of light, making them glow.")
+		saynn("Кейт подходит к тебе со спины и замирает у твоего плеча; ее глаза ловят скудные проблески света, отчего они начинают светиться.")
 
-		saynn("[say=kait]Yeah. We've got work to do.[/say]")
+		saynn("[say=kait]Да. Нам нужно взяться за дело.[/say]")
 
-		saynn("She steps in further, kicking aside some fallen panels to make space. She crouches, grabs the edge of one of the heavy shelves.. and begins to drag it with a harsh scrape of metal against metal.")
+		saynn("Она проходит вглубь, отпинывая упавшие панели, чтобы освободить место. Присев, она хватает край одной из тяжелых полок... и начинает тащить её с резким скрежетом металла о металл.")
 
-		saynn("You decide to join in and start helping her.")
+		saynn("Вы решаете присоединиться и начать помогать ей.")
 
-		saynn("Together you shove one shelf out of the way, then another. Dust lifts into the air, causing the feline to cover her muzzle with her fuzzy tail tip.")
+		saynn("Вместе вы отодвигаете одну полку, затем другую. В воздух поднимается пыль, заставляя кошкоделку прикрывать мордочку кончиком своего пушистого хвоста.")
 
-		saynn("[say=pc]So what's the plan?[/say]")
+		saynn("[say=pc]Так какой план?[/say]")
 
-		saynn("[say=kait]We clean it all up. And then it will be our base of operations. Isn't that cool?[/say]")
+		saynn("[say=kait]Мы всё тут вычистим. И тогда это станет нашей операционной базой. Круто же, а?[/say]")
 
-		saynn("[say=pc]Cool, sure. I was asking about the bigger picture.[/say]")
+		saynn("[say=pc]Круто, конечно. Но я вообще-то о более масштабных вещах спрашивал.[/say]")
 
-		saynn("[say=kait]We.. uh-h.. Yeah, I have a very good plan. We just.. dominate everyone![/say]")
+		saynn("[say=kait]Мы... э-э-э... Да! У меня есть отличный план. Мы просто... будем доминировать над всеми![/say]")
 
-		saynn("You barely listen as you collect some of the broken panels and other debris. Storing it all on the shelves seems to be the best solution for now. Then your mind processes what she said.")
+		saynn("Вы едва слушаете её, собирая обломки панелей и другой мусор. Складывать всё это на полки кажется сейчас лучшим решением. И тут до вашего сознания наконец доходят её слова.")
 
-		saynn("[say=pc]Huh?[/say]")
+		saynn("[say=pc]А?[/say]")
 
-		saynn("Kait's eyes glow in the dark room.")
+		saynn("Глаза Кейт светятся в полумраке комнаты.")
 
-		saynn("[say=kait]Yeah! Every single person in this prison. Either they join us. Or we make them! At some point we will have more influence than the captain himself! And that's.. when we make him our bitch![/say]")
+		saynn("[say=kait]Да! Каждый гребаный человек в этой тюрьме! Либо они примкнут к нам, либо мы их заставим! В какой-то момент наше влияние станет больше, чем у самого капитана! И вот тогда... тогда мы сделаем его своей сучкой![/say]")
 
-		saynn("Ambitious. It sounds nice in theory. But the more you think about it, the more glaring holes you notice.")
+		saynn("Амбициозно. В теории звучит неплохо. Но чем больше об этом думаешь, тем больше замечаешь зияющих дыр.")
 
-		saynn("[say=pc]This sounds.. crazy.[/say]")
+		saynn("[say=pc]Это звучит... безумно.[/say]")
 
-		saynn("[say=kait]I know, right?[/say]")
+		saynn("[say=kait]И не говори![/say]")
 
-		saynn("You move empty crates around and then start attaching the broken leg back to the table.")
+		saynn("Ты переставляешь пустые ящики, а затем приступаешь к тому, чтобы прикрепить сломанную ножку обратно к столу.")
 
-		saynn("[say=pc]Not in a good way. There are hundreds of inmates. Maybe thousands.[/say]")
+		saynn("[say=pc]И не в хорошем смысле. Тут сотни заключенных. Может, тысячи.[/say]")
 
-		saynn("[say=kait]Well.. we focus on the big fish then! The rest will follow.[/say]")
+		saynn("[say=kait]Ну... тогда сосредоточимся на крупной рыбе! Остальное подтянется.[/say]")
 
-		saynn("At this point, you stop helping and just look at her.")
+		saynn("На этом этапе ты перестаешь помогать и просто смотришь на неё.")
 
-		saynn("[say=pc]You haven't even thought your plan through.[/say]")
+		saynn("[say=pc]Ты ведь даже толком не продумала свой план.[/say]")
 
-		saynn("Kait swipes the dust away from her face and then rubs her snout.")
+		saynn("Кейт смахивает пыль с лица, а затем трет мордочку.")
 
-		saynn("[say=kait]Pff. Once we have this base of operations set up, we can start grinding over the details. Don't be a doubter, I've had enough of it already.[/say]")
+		saynn("[say=kait]Пфф. Как только мы обустроим эту базу, начнем допиливать детали. Не будь скептиком, а то меня и так уже хватает.[/say]")
 
-		saynn("Maybe there is a good reason to be one with her.")
+		saynn("Может, для того чтобы стать с ней единым целым, есть веская причина.")
 
-		saynn("[say=pc]So who's the rest of the team?[/say]")
+		saynn("[say=pc]Так кто остальные члены команды?[/say]")
 
-		saynn("[say=kait]Well..[/say]")
+		saynn("[say=kait]Ну что ж..[/say]")
 
-		saynn("She stays quiet and just moves more broken stuff out of the way.")
+		saynn("Она молчит и просто убирает с пути обломки.")
 
-		saynn("[say=pc]Kait?[/say]")
+		saynn("[say=pc]Кейт?[/say]")
 
-		saynn("[say=kait]Um.. uh-h..[/say]")
+		saynn("[say=kait]Эм.. ну.. а..[/say]")
 
-		saynn("You approach her and grab her by the shoulder. The cat tenses up, fur standing up.")
+		saynn("Ты подходишь к ней и берешь за плечо. Кошка напрягается, шерсть на её теле встает дыбом.")
 
-		saynn("[say=pc]Use your words.[/say]")
+		saynn("[say=pc]Говори словами.[/say]")
 
-		saynn("She looks at you for a few seconds.. and then averts her gaze.")
+		saynn("Она смотрит на тебя несколько секунд... а затем отводит взгляд.")
 
-		saynn("[say=kait]So far we have.. me.. you.. and Ans. It's not much but it's a start, no?[/say]")
+		saynn("[say=kait]Пока что у нас есть.. я.. ты.. и Анс. Не густо, но для начала сойдет, а?[/say]")
 
-		saynn("Right. There is no team. And there is no plan either. It's all just a dream. It's a nice dream, sure. But it's still just a dream.")
+		saynn("Верно. Никакой команды нет. И плана тоже нет. Всё это лишь сон. Приятный сон, конечно. Но всё же это всего лишь сон.")
 
-		saynn("She wants to turn away but you pull her back, your hand grabbing onto her collar and yanking on it.")
+		saynn("Она хочет отвернуться, но ты тянешь её назад, хватая рукой за воротник и дергая на себя.")
 
-		saynn("[say=pc]Are you just wasting my time?[/say]")
+		saynn("[say=pc]Ты что, просто тратишь моё время?[/say]")
 
-		saynn("In a flash of rage, she sinks her clawed digits into your hand and pries it off, now with a few small wounds.")
+		saynn("Вспышка ярости — и она вонзает свои когтистые пальцы в твою руку, с силой отрывая её, оставляя несколько мелких ран.")
 
-		saynn("You were about to assume a combat stance.. but then her expression softens, rage fading away.")
+		saynn("Ты уже собирался принять боевую стойку... но вдруг её взгляд смягчается, а ярость утихает.")
 
-		saynn("[say=kait]Listen.. well.. At least I'm trying, okay? If you wanna sit on your ass all day, be my guest. I wanna be free.[/say]")
+		saynn("[say=kait]Слушай... ну... По крайней мере, я пытаюсь, ясно? Если хочешь весь день пялиться в потолок — дело твоё. А я хочу быть свободной.[/say]")
 
-		saynn("Kitty bares her fangs.")
+		saynn("Китти скалится, обнажая клыки.")
 
-		saynn("[say=kait]But not before I make them regret..[/say]")
+		saynn("[say=kait]Но не раньше, чем заставлю их пожалеть о содеянном...[/say]")
 
-		saynn("Maybe there is some spirit in this one.")
+		saynn("А в этом есть искра жизни.")
 
-		saynn("[say=pc]Three people isn't gonna be enough to take over this prison.[/say]")
+		saynn("[say=pc]Троих человек не хватит, чтобы захватить эту тюрьму.[/say]")
 
-		saynn("[say=announcer]Make it four.[/say]")
+		saynn("[say=announcer]Считай, что четверо.[/say]")
 
-		addButton("Continue", "See what happens next", "ans_comes_in")
+		addButton("Продолжить", "Смотреть, что будет дальше", "ans_comes_in")
 	if(state == "ans_comes_in"):
 		playAnimation(StageScene.Duo, "stand", {npc="kait", pc="avy"})
 		addCharacter("announcer")
 		addCharacter("avy")
-		saynn("Announcer steps into the dark room first, cane tapping softly against the metal floor.")
+		saynn("Диктор первым входит в тёмную комнату, его трость мягко постукивает по металлическому полу.")
 
-		saynn("Right behind him comes another shape. Avy, the mean dark fox who you can barely see.")
+		saynn("Сразу за ним появляется еще один силуэт. Это Эви — та самая злющая темная лисица, которую едва разглядеть.")
 
-		saynn("[say=avy]What a shithole, wow.[/say]")
+		saynn("[say=avy]Ну и дыра, просто охренеть.[/say]")
 
-		saynn("It's hard to mistake her for anyone else though.")
+		saynn("Впрочем, ее ни с кем не спутаешь.")
 
-		saynn("Kait instantly puffs up and blocks the way for the pair, her brows furrowed.")
+		saynn("Кейт тут же ощетинивается и преграждает им путь, нахмурив брови.")
 
-		saynn("[say=kait]Ans? Why did you bring her?[/say]")
+		saynn("[say=kait]Анс? И зачем ты ее притащил?[/say]")
 
-		saynn("The feline's voice raises in pitch, her tail wagging behind.")
+		saynn("Голос кошки становится выше, а хвост начинает вилять.")
 
-		saynn("The Announcer rolls his shoulders and leans against the cane.")
+		saynn("Диктор разминает плечи и опирается на трость.")
 
-		saynn("[say=announcer]I trust her. She is a good fighter.[/say]")
+		saynn("[say=announcer]Я ей доверяю. Она отличный боец.[/say]")
 
-		saynn("[say=kait]No, she is not.. She is also a total bitch.[/say]")
+		saynn("[say=kait]Да нет же, не отличный... Она еще и та еще сучка.[/say]")
 
-		saynn("Avy's ears twitch, she lets out a low growl and strides forward until she pretty much bumps foreheads with Kait. The cat is half-a-head smaller though.")
+		saynn("Уши Эви дергаются, она издает низкое рычание и шагает вперед, пока почти не упирается лбом в Кейт. Впрочем, кошка чуть ниже ее ростом.")
 
-		saynn("[say=avy]Wow, look who's talking. You're pretty mouthy for a weakling.[/say]")
+		saynn("[say=avy]Ой, посмотрите, кто это говорит. Много чести для такой слабачки.[/say]")
 
-		saynn("Kait growls, her claws extending, tail lashing. All the while, Avy is smiling.")
+		saynn("Кейт рычит, выпуская когти, её хвост так и ходит ходуном. А Ви при этом лишь улыбается.")
 
-		saynn("[say=kait]I know how you've gotten so high on the fighter list.[/say]")
+		saynn("[say=kait]Я знаю, как ты пробилась на самый верх в списке бойцов.[/say]")
 
-		saynn("[say=avy]Because I'm a good fighter, just like how Ans said. The best one even. Much better than you.[/say]")
+		saynn("[say=avy]Потому что я отличный боец, как и говорила Аньс. Лучшая из лучших. Куда лучше тебя.[/say]")
 
-		saynn("The situation gets tense fast as they start shoving each other back with increasing power.")
+		saynn("Обстановка накаляется мгновенно: они начинают толкать друг друга, с каждым разом всё сильнее.")
 
-		saynn("[say=announcer]Ladies..[/say]")
+		saynn("[say=announcer]Дамы...[/say]")
 
-		saynn("[say=kait]Why shouldn't I scratch your face to bits right now?[/say]")
+		saynn("[say=kait]И почему бы мне прямо сейчас не разодрать твоё личико в клочья?[/say]")
 
-		saynn("[say=avy]Why shouldn't I smash you against the wall?[/say]")
+		saynn("[say=avy]А почему бы мне не впечатать тебя в стену?[/say]")
 
-		saynn("Fangs flash, the claws are out. The growling is bouncing off the metal walls.")
+		saynn("Сверкают клыки, когти выпущены. Рычание гулким эхом отдаётся от металлических стен.")
 
-		addButton("Continue", "See what happens next", "fake_out")
+		addButton("Продолжить", "Смотреть, что будет дальше", "fake_out")
 	if(state == "fake_out"):
 		playAnimation(StageScene.Duo, "stand", {npc="announcer", pc="avy"})
-		saynn("Then a sharp crack.")
+		saynn("А затем раздаётся резкий хлопок.")
 
-		saynn("[say=announcer]Babes![/say]")
+		saynn("[say=announcer]Девчонки![/say]")
 
-		saynn("Ans lowers his cane.")
+		saynn("Энс опускает свою трость.")
 
-		saynn("[say=announcer]Let's all take a pill of chill. You will have faces to scratch and walls to smash against. For now, endure each other. Focus.[/say]")
+		saynn("[say=announcer]Давайте все немного расслабимся. У вас еще будет время поцарапать друг другу рожи и побиться об стены. А пока — терпите друг друга. Сосредоточьтесь.[/say]")
 
-		saynn("The girls give each other some more sharp glances.. and then both take a step back. A small one, just enough.")
+		saynn("Девушки обмениваются еще несколькими колкими взглядами... а затем обе делают шаг назад. Небольшой, но достаточный.")
 
-		saynn("[say=avy]I heard you had no plan.[/say]")
+		saynn("[say=avy]Я слышал, у вас нет плана.[/say]")
 
-		saynn("[say=announcer]Then our first step is to come up with a plan.[/say]")
+		saynn("[say=announcer]Значит, наш первый шаг — придумать план.[/say]")
 
-		saynn("Kait looks around and sighs.")
+		saynn("Кейт оглядывается и вздыхает.")
 
-		saynn("[say=kait]Right.. Well.. We need more hands and heads. {pc.Name} is right.[/say]")
+		saynn("[say=kait]Так.. Ну.. Нам нужно больше рук и светлых голов. {pc.Name} прав(а).[/say]")
 
-		saynn("[say=avy]No. Our top priority must be cleaning this shithole up. Before I break my leg and then cough my lungs out.[/say]")
+		saynn("[say=avy]Нет. Наш главный приоритет — вычистить это дерьмовое место. Пока я не переломал себе все ноги и не выкашлял легкие.[/say]")
 
-		saynn("[say=announcer]We can do both. Perfect, girls.[/say]")
+		saynn("[say=announcer]Мы можем сделать и то, и другое. Идеально, девочки.[/say]")
 
-		saynn("Avy tilts her head at you all.")
+		saynn("Эви с любопытством склоняет голову набок, глядя на вас.")
 
-		saynn("[say=avy]Both? How exactly are you planning to trick bitches into following you, huh? Go around begging people? This prison is full of psychos and brats.[/say]")
+		saynn("[say=avy]Обоих? И как именно ты планируешь развести сучек, чтобы они пошли за тобой, а? Будешь ходить и клянчить? Эта тюрьма полна психопаток и мелких засранок.[/say]")
 
-		saynn("The guy taps the cane against the floor idly, thinking.")
+		saynn("Парень задумчиво постукивает тростью по полу.")
 
-		saynn("[say=announcer]I'd prefer to talk them in indeed. Anything can happen if you put the right words in the right combination.[/say]")
+		saynn("[say=announcer]Я бы предпочел именно уговорить их. Если подобрать правильные слова, можно добиться чего угодно.[/say]")
 
-		saynn("Not everything can be done with words.")
+		saynn("Не всё можно решить словами.")
 
-		saynn("[say=avy]How will you know who is good and who's not? Useless ones will lie to you and then weigh us down.[/say]")
+		saynn("[say=avy]А как ты узнаешь, кто нормальная, а кто нет? Бесполезные дуры будут тебе врать, а потом тянуть нас на дно.[/say]")
 
-		saynn("Kait hums and scritches her chin.")
+		saynn("Кейт что-то напевает под нос, почесывая подбородок.")
 
-		saynn("[say=kait]What if.. what if we can get our paws on a datapad with the inmate database.. Could that help?[/say]")
+		saynn("[say=kait]А что если... что если нам удастся раздобыть датапад с базой заключенных?.. Это бы помогло?[/say]")
 
-		saynn("[say=avy]The thing will get remotely wiped in seconds, you dumb cat.[/say]")
+		saynn("[say=avy]Эту хреновину дистанционно сотрут за считанные секунды, тупая кошка.[/say]")
 
-		saynn("Kait's ears go flat for a second.")
+		saynn("Уши Кейт на мгновение прижимаются к голове.")
 
-		saynn("[say=kait]Propose something then. Right now you're the useless one here.[/say]")
+		saynn("[say=kait]Тогда предлагай что-нибудь. Сейчас бесполезный здесь именно ты.[/say]")
 
-		saynn("[say=avy]I don't fucking know, it's a dumb plan to begin with.[/say]")
+		saynn("[say=avy]Да хуй его знает, это и так была тупая затея.[/say]")
 
-		saynn("A datapad.")
+		saynn("Датапад.")
 
-		saynn("That little rectangular thing they all seem to use for everything important. It probably would not control much on its own.. But it might indeed be useful if it can pull up records, names, locations, plans..")
+		saynn("Та маленькая прямоугольная хреновина, которую все используют для всего важного. Сам по себе он вряд ли на что-то повлияет... Но он может пригодиться, если позволит вытащить записи, имена, локации или планы...")
 
-		saynn("[say=announcer]Worth a shot. Anyone here can pickpocket?[/say]")
+		saynn("[say=announcer]Стоит попробовать. Кто-нибудь здесь умеет карманно воровать?[/say]")
 
-		saynn("[say=kait]Not really.[/say]")
+		saynn("[say=kait]Не особо.[/say]")
 
-		saynn("[say=avy]I can beat up a guard and take it.[/say]")
+		saynn("[say=avy]Я могу отмутузить охранника и забрать его.[/say]")
 
-		saynn("[say=pc]I could try but I might get caught.[/say]")
+		saynn("[say=pc]Я бы попробовала, но меня могут поймать.[/say]")
 
-		saynn("Ans hums.")
+		saynn("Анс что-то напевает.")
 
-		saynn("[say=announcer]Too risky. Does anyone know a good thief then?[/say]")
+		saynn("[say=announcer]Слишком рискованно. Тогда знает кто-нибудь толкового вора?[/say]")
 
-		saynn("Avy's eyes light up.")
+		saynn("Глаза Эйви загораются.")
 
-		saynn("[say=avy]You know what? I do, in fact, know one. Name is.. uh.. Rahi. Yes.[/say]")
+		saynn("[say=avy]Знаешь что? У меня и впрямь есть одна на примете. Имя... э-э... Рахи. Да.[/say]")
 
-		saynn("[say=kait]Rahi? Who the fuck is Rahi?[/say]")
+		saynn("[say=kait]Рахи? Что это еще за хуйня такая — Рахи?[/say]")
 
 		knowsRahi = getFlag("RahiModule.Rahi_AskedName", false)
 		enslavedRahi = getFlag("RahiModule.rahi5SceneHappened", false)
 		if (enslavedRahi):
-			saynn("Oh yeah, you know her. You know her very well in fact.")
+			saynn("О да, ты ее знаешь. Более того, ты ее очень даже хорошо знаешь.")
 
 		elif (knowsRahi):
-			saynn("That name sounds familiar..")
+			saynn("Это имя звучит знакомо...")
 
 		else:
-			saynn("You can't say that you know who that is either.")
+			saynn("Ты ведь тоже не можешь сказать, что не знаешь, кто это.")
 
-		saynn("[say=avy]Usually wastes her time on the bench near the stocks. Total doormat. We break her in. And make her work for us.[/say]")
-
-		if (enslavedRahi):
-			saynn("She is not exactly a bench cat anymore.. but that doesn't change much.")
-
-		saynn("[say=announcer]Perfect. Someone should go and start recruiting her. While the rest of us clean this place up.[/say]")
+		saynn("[say=avy]Обычно она просиживает штаны на скамье рядом с колодками. Настоящая тряпка. Мы ее приручим. И заставим работать на нас.[/say]")
 
 		if (enslavedRahi):
-			saynn("Obviously, since Rahi belongs to you already, you should be the one who talks with her.")
+			saynn("Она уже не совсем «скамеечная кошечка»... но это мало что меняет.")
+
+		saynn("[say=announcer]Идеально. Кто-нибудь должен пойти и начать вербовку, пока остальные будут прибираться здесь.[/say]")
+
+		if (enslavedRahi):
+			saynn("Очевидно, раз Рахи уже принадлежит тебе, то именно тебе и стоит с ней поговорить.")
 
 		else:
-			saynn("Since you don't exactly have a passion for cleaning.. might as well do the other task.")
+			saynn("Раз уж уборка — явно не твоя страсть... тогда лучше займись другой задачей.")
 
-		saynn("[say=pc]I will go grab and bring her.[/say]")
+		saynn("[say=pc]Я схожу и приведу её.[/say]")
 
-		saynn("[say=announcer]Sounds like a plan. We will need to clean up here.. make a spot where we can talk with her.[/say]")
+		saynn("[say=announcer]Звучит как план. Нам нужно тут прибраться... подготовить место, где мы сможем с ней поговорить.[/say]")
 
-		saynn("Who knows, maybe a creepy dark maintenance tunnel is exactly the right place for that?")
+		saynn("Кто знает, может, жуткий темный технический туннель — это как раз то, что нужно?")
 
-		saynn("[say=pc]You think she won't just join us?[/say]")
+		saynn("[say=pc]Думаешь, она просто не захочет к нам присоединиться?[/say]")
 
-		saynn("[say=announcer]She might. Gotta make sure her heart and mind is with us, not just her leash.[/say]")
+		saynn("[say=announcer]Может и захочет. Но нужно убедиться, что её сердце и разум будут с нами, а не только поводок.[/say]")
 
 		if (enslavedRahi):
-			saynn("That will be easy, you already know it.")
+			saynn("Это будет легко, ты и сам это знаешь.")
 
 		else:
-			saynn("If she is just as weak as she is described, that shouldn't be too hard.")
+			saynn("Если она действительно такая слабачка, как о ней говорят, это не должно составить труда.")
 
-		saynn("[say=avy]Like I said, we gotta break her in.[/say]")
+		saynn("[say=avy]Как я уже сказал, нам нужно её приручить.[/say]")
 
-		saynn("Ans nods towards her.")
+		saynn("Энс кивает в её сторону.")
 
-		saynn("[say=announcer]Thanks, Avy.[/say]")
+		saynn("[say=announcer]Спасибо, Эви.[/say]")
 
-		saynn("This makes the foxy raise her chin high and glare at the cat again.")
+		saynn("От этих слов лисица задирает подбородок и снова сверлит кошку взглядом.")
 
-		saynn("[say=avy]See? I'm mega useful.[/say]")
+		saynn("[say=avy]Видишь? Я мега-полезная.[/say]")
 
-		saynn("Kait rolls her eyes, her tail is still unhappy.")
+		saynn("Кейт закатывает глаза, её хвост всё ещё выражает недовольство.")
 
-		saynn("[say=kait]Whatever, one strike and you're out.[/say]")
+		saynn("[say=kait]Неважно, одна ошибка — и ты вылетела.[/say]")
 
-		saynn("[say=avy]One strike and you're gonna be out, lilac slut.[/say]")
+		saynn("[say=avy]Одна ошибка — и ты вылетишь, сиреневая шлюшка.[/say]")
 
-		saynn("Kait's fists are clenched again.. but Ans is quick to lower them for her.")
+		saynn("Кулаки Кейт снова сжимаются... но Энс быстро опускает их за неё.")
 
-		saynn("[say=announcer]Let's start cleaning up.[/say]")
+		saynn("[say=announcer]Давай начнём уборку.[/say]")
 
-		saynn("And for you, it's time to pay that Rahi a visit.")
+		saynn("А тебе самое время навестить ту Рахи.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

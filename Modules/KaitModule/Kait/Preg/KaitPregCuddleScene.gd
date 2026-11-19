@@ -12,400 +12,400 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="kait"})
 		fromPC = getCharacter("kait").isPregnantFrom("pc")
 		howManyBirths = getFlag("KaitModule.kaitGaveBirths", 0)
-		saynn("[say=pc]I wanna spend some time with you. Wanna cuddle?[/say]")
+		saynn("[say=pc]Я хочу провести немного времени с тобой. Пообнимаемся?[/say]")
 
-		saynn("[say=kait]Sounds good![/say]")
+		saynn("[say=kait]Звучит здорово![/say]")
 
-		saynn("You invite Kait to follow you.")
+		saynn("Вы приглашаете Кейт пойти за вами.")
 
 		if (howManyBirths > 4):
-			saynn("Kait gave birth "+str(howManyBirths)+" times. Which scene variation do you want to see?")
+			saynn("Кейт рожала "+str(howManyBirths)+" раз(а). Какую вариацию сцены вы хотите увидеть?")
 
-			addButton("First time", "The first time Kait got pregnant", "0")
-			addButton("Second time", "The second time Kait got pregnant", "1")
-			addButton("Third time", "The third time Kait got pregnant", "2")
-			addButton("Fourth time", "The fourth time Kait got pregnant", "3")
-			addButton("Fifth time", "The fifth time Kait got pregnant", "4")
+			addButton("Первый раз", "Первый раз, когда Кейт забеременела", "0")
+			addButton("Второй раз", "Второй раз, когда Кейт забеременела", "1")
+			addButton("Третий раз", "Третий раз, когда Кейт забеременела", "2")
+			addButton("Четвертый раз", "Четвертый раз, когда Кейт забеременела", "3")
+			addButton("Пятый раз", "Пятый раз, когда Кейт забеременела", "4")
 		else:
-			addButton("Continue", "See what happens next", "pick_cuddle")
+			addButton("Продолжить", "Смотреть, что будет дальше", "pick_cuddle")
 	if(state == "0"):
 		playAnimation(StageScene.Cuddling, "idle", {pc="pc", npc="kait"})
 		aimCameraAndSetLocName("yard_waterfall")
-		saynn("You bring Kait to the spot that has a nice artificial waterfall and a few benches dotted around. You use one of them for cuddling.")
+		saynn("Вы приводите Кейт к месту с симпатичным искусственным водопадом и несколькими расставленными вокруг скамейками. Вы используете одну из них, чтобы обняться.")
 
-		saynn("Kait is now in your hands, watching the running water. It's soft sound is filling the air.")
+		saynn("Теперь Кейт в ваших руках; она наблюдает за бегущей водой. Мягкий шум воды наполняет воздух.")
 
-		saynn("[say=kait]It's nice here..[/say]")
+		saynn("[say=kait]Здесь так хорошо..[/say]")
 
-		saynn("[say=pc]Yeah.[/say]")
+		saynn("[say=pc]Ага.[/say]")
 
-		saynn("[say=kait]It's an ugly prison. So any pocket of.. nature.. as fake as it might be.. is still gonna be standing out.[/say]")
+		saynn("[say=kait]Эта тюрьма такая уродливая. Так что любой островок.. природы.. каким бы искусственным он ни был.. всё равно будет выделяться.[/say]")
 
-		saynn("You put your chin on her shoulder and wrap your arms around her. Your hands find her bumpy belly and start to caress it in slow circles. She is purring quietly, leaning into you.")
+		saynn("Вы кладете подбородок ей на плечо и обнимаете её. Ваши руки находят её бугристый живот и начинают медленно поглаживать его круговыми движениями. Она тихо мурлычет, прижимаясь к вам.")
 
-		saynn("[say=pc]How are you feeling? About becoming a mother? For the first time too.. potentially.[/say]")
+		saynn("[say=pc]Как ты себя чувствуешь? Ну, насчет материнства? Тем более что, возможно, впервые..[/say]")
 
-		saynn("Her paws rest on top of yours.")
+		saynn("Ее лапы ложатся поверх твоих.")
 
-		saynn("[say=kait]I'm not.. a huge fan.. actually.[/say]")
+		saynn("[say=kait]Если честно.. я не в восторге..[/say]")
 
-		saynn("[say=pc]Why not?[/say]")
+		saynn("[say=pc]Почему это?[/say]")
 
-		saynn("She shifts slightly, her ear flicking.")
+		saynn("Она слегка шевелится, дернув ухом.")
 
-		saynn("[say=kait]I don't know. It's scary I guess.[/say]")
+		saynn("[say=kait]Даже не знаю. Наверное, это пугает.[/say]")
 
-		saynn("[say=pc]Shouldn't have gotten pregnant then.[/say]")
+		saynn("[say=pc]Значит, не стоило тогда беременеть.[/say]")
 
-		saynn("She turns her head to give you a look. You respond by rubbing her belly more, making her shiver.")
+		saynn("Она поворачивает голову, бросая на тебя взгляд. В ответ ты начинаешь гладить ее живот еще интенсивнее, заставляя ее вздрогнуть.")
 
-		saynn("[say=kait]Hah. You're very supportive. Sex is fun, you know? How can I say no to sex..[/say]")
+		saynn("[say=kait]Хах. Ну ты и поддержка. Секс — это же весело, понимаешь? Как тут можно сказать «нет» сексу..[/say]")
 
-		saynn("[say=pc]Condoms?[/say]")
+		saynn("[say=pc]Презервативы?[/say]")
 
-		saynn("[say=kait]They're.. boring.. they make it less pleasurable too.[/say]")
+		saynn("[say=kait]Они такие.. скучные.. и удовольствия от них меньше.[/say]")
 
-		saynn("[say=pc]Pretty sure that's not true.[/say]")
+		saynn("[say=pc]Почти уверена, что это не так.[/say]")
 
-		saynn("She huffs and wiggles against you, her fluffy tail flicking.")
+		saynn("Она фыркает и ерзает на тебе, подергивая своим пушистым хвостом.")
 
-		saynn("[say=kait]Well to me they do! I'd rather have an extra risk rather than have less pleasure. Don't deny me the fun of feeling warm stuff being pumped into me..[/say]")
+		saynn("[say=kait]Ну, как по мне — так да! Я лучше рискну лишний раз, чем буду получать меньше удовольствия. Не лишай меня радости чувствовать, как в меня вкачивают что-то теплое...[/say]")
 
-		saynn("You chuckle.")
+		saynn("Вы посмеиваетесь.")
 
-		saynn("[say=pc]I won't, I won't.[/say]")
+		saynn("[say=pc]Не буду, не буду.[/say]")
 
-		saynn("Some time passes. You feel her belly rise and fall with each breath.")
+		saynn("Проходит некоторое время. Ты чувствуешь, как её живот мерно поднимается и опускается при каждом вдохе.")
 
-		saynn("[say=kait]I guess I'm afraid of.. the process. It's gonna be painful.[/say]")
+		saynn("[say=kait]Наверное, я боюсь... самого процесса. Это будет больно.[/say]")
 
-		saynn("[say=pc]It might be, yeah. But if we bring you to the nursery, they will help with that.[/say]")
+		saynn("[say=pc]Возможно, да. Но если мы отвезем тебя в детское отделение, там тебе помогут.[/say]")
 
-		saynn("[say=kait]Nursery.. of course they have a nursery here..[/say]")
+		saynn("[say=kait]Детское отделение... ну конечно, здесь же наверняка есть детское отделение...[/say]")
 
-		saynn("[say=pc]It will be okay.[/say]")
+		saynn("[say=pc]Все будет хорошо.[/say]")
 
-		saynn("[say=kait]Alright..[/say]")
+		saynn("[say=kait]Ладно...[/say]")
 
-		saynn("She nuzzles her head against your neck, still purring softly.")
+		saynn("Она прижимается носом к твоей шее, всё еще тихонько мурлыча.")
 
-		saynn("[say=kait]You're warm..[/say]")
+		saynn("[say=kait]Ты такой теплый..[/say]")
 
-		saynn("[say=pc]So are you.[/say]")
+		saynn("[say=pc]Ты тоже.[/say]")
 
-		saynn("You just spend the rest of the free time like that, cuddling each other.")
+		saynn("Оставшуюся часть свободного времени вы просто провели так, обнимая друг друга.")
 
-		saynn("After that, you return back to the hideout.")
+		saynn("После этого вы возвращаетесь в убежище.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "1"):
 		playAnimation(StageScene.Cuddling, "idle", {pc="pc", npc="kait"})
 		aimCameraAndSetLocName("yard_waterfall")
-		saynn("You bring Kait to the spot that has a nice artificial waterfall and a few benches dotted around. You use one of them for cuddling.")
+		saynn("Вы приводите Кейт к месту с симпатичным искусственным водопадом и несколькими расставленными вокруг скамейками. Вы используете одну из них, чтобы обняться.")
 
-		saynn("Kait is now in your hands, watching the running water. It's sound has a nice calming effect.")
+		saynn("Теперь Кейт в твоих руках, она наблюдает за бегущей водой. Её звук действует на неё успокаивающе.")
 
-		saynn("[say=pc]Second time being pregnant? How do you feel after the first one?[/say]")
+		saynn("[say=pc]Беременность во второй раз? Как ты себя чувствовала после первой?[/say]")
 
-		saynn("[say=kait]Well.. I mean.. giving birth was the most painful part.[/say]")
+		saynn("[say=kait]Ну.. то есть.. самым болезненным были роды.[/say]")
 
-		saynn("[say=pc]Was it that bad?[/say]")
+		saynn("[say=pc]Неужели всё было настолько плохо?[/say]")
 
-		saynn("She leans her head back against your shoulder. You stroke her hair, your fingers raking through the short dark strands.")
+		saynn("Она откидывает голову тебе на плечо. Ты гладишь её по волосам, пропуская пальцы сквозь короткие темные пряди.")
 
-		saynn("[say=kait]They injected me with something so I didn't really feel much. I was more scared than pained I think.[/say]")
+		saynn("[say=kait]Мне что-то вкололи, так что особо ничего не чувствовалось. Думаю, мне было скорее страшно, чем больно.[/say]")
 
-		saynn("[say=pc]And now you are a mother. Officially.[/say]")
+		saynn("[say=pc]И вот теперь ты мать. Официально.[/say]")
 
-		saynn("[say=kait]I am.. yeah.. Crazy to think about that.[/say]")
+		saynn("[say=kait]Я... да... Даже думать об этом странно.[/say]")
 
-		saynn("[say=pc]How do you feel about that?[/say]")
+		saynn("[say=pc]Что ты об этом думаешь?[/say]")
 
-		saynn("She places her paws on her belly, looking down at it. You cover her paws with your hands, squeezing gently.")
+		saynn("Она кладет лапы на живот, глядя на него сверху вниз. Ты накрываешь её лапы своими руками, нежно сжимая их.")
 
-		saynn("[say=kait]It's weird. I didn't really care about that. I wanna escape this shitty place, not get rooted to it.[/say]")
+		saynn("[say=kait]Это странно. Мне вообще было плевать на это. Я хочу свалить из этого дерьмового места, а не пустить здесь корни.[/say]")
 
-		saynn("[say=pc]You don't wanna escape now?[/say]")
+		saynn("[say=pc]А теперь не хочешь сбежать?[/say]")
 
-		saynn("[say=kait]Escaping is very much top priority. I hope that my kids.. shit, that's so weird to say.. I hope they get a better future.[/say]")
+		saynn("[say=kait]Побег — это сейчас главный приоритет. Надеюсь, что мои дети... блядь, так странно это говорить... надеюсь, у них будет лучшее будущее.[/say]")
 
-		saynn("[say=pc]Gonna abandon them?[/say]")
+		saynn("[say=pc]Собираешься их бросить?[/say]")
 
-		saynn("She squirms a little in your embrace.")
+		saynn("Она слегка ерзает в твоих объятиях.")
 
-		saynn("[say=kait]Listen.. I don't fucking now.."+str(" They're your kids too, you know.." if fromPC else "")+"[/say]")
+		saynn("[say=kait]Слушай.. я, блядь, сама не знаю..[say=kait]"+str(" They're your kids too, you know.." if fromPC else "")+"[/say]")
 
-		saynn("You nod subtly.")
+		saynn("Ты едва заметно киваешь.")
 
-		saynn("You stay quiet, both of you, just watching the waterfall. You reach up and give her shoulders some rubs. She melts into your touch, a low purr starting in her chest.")
+		saynn("Вы оба молчите, просто глядя на водопад. Ты протягиваешь руку и начинаешь разминать ей плечи. Она тает под твоими пальцами, и в её груди начинает зарождаться тихое мурлыканье.")
 
-		saynn("[say=kait]Thanks for.. not abandoning me.[/say]")
+		saynn("[say=kait]Спасибо, что.. не бросил меня.[/say]")
 
-		saynn("[say=pc]Don't mention it.[/say]")
+		saynn("[say=pc]Не стоит благодарности.[/say]")
 
-		saynn("[say=kait]I was always gonna be a bad mother. I wanna fuck shit up, not raise kids.[/say]")
+		saynn("[say=kait]Я всегда была сукрой матерью. Я хочу трахать всё подряд, а не детей растить.[/say]")
 
-		saynn("[say=pc]Is that why you're pregnant again?[/say]")
+		saynn("[say=pc]Так вот почему ты снова беременна?[/say]")
 
-		saynn("She elbows you softly.")
+		saynn("Она мягко толкает тебя локтем.")
 
-		saynn("[say=kait]Oh, shut your mouth. I'm pregnant because I like sex.. and I like you..[/say]")
+		saynn("[say=kait]Ой, завали ебало. Я беременна, потому что люблю секс.. и потому что ты мне нравишься..[/say]")
 
-		saynn("[say=pc]Maybe pulling out is an option then?[/say]")
+		saynn("[say=pc]Может, тогда стоит попробовать прерванный акт?[/say]")
 
-		saynn("[say=kait]Mmm.. no~. It's not. Not with me.[/say]")
+		saynn("[say=kait]Ммм.. нет~. Не стоит. Только не со мной.[/say]")
 
-		saynn("She turns her head to give you a playful look.")
+		saynn("Она поворачивает голову, бросая на тебя игривый взгляд.")
 
-		saynn("[say=pc]Well.. if you like creampies.. get ready to be good at baking then.[/say]")
+		saynn("[say=pc]Ну... если тебе нравятся заварные кремы... готовься стать мастером выпечки![/say]")
 
-		saynn("She hums, trying to understand your words.")
+		saynn("Она что-то напевает под нос, пытаясь осмыслить твои слова.")
 
-		saynn("[say=kait]That.. was a weird one.[/say]")
+		saynn("[say=kait]Это было... странно.[/say]")
 
-		saynn("[say=pc]Worth a try.[/say]")
+		saynn("[say=pc]Стоит попробовать.[/say]")
 
-		saynn("[say=kait]Maybe I'm a weird one.[/say]")
+		saynn("[say=kait]Может, это я странная.[/say]")
 
-		saynn("Aren't we all weird? A deaf question falls onto silent ears.")
+		saynn("Разве мы все не странные? Глухой вопрос падает в тишину.")
 
-		saynn("You just spend the rest of the free time like that, cuddling each other.")
+		saynn("Оставшуюся часть свободного времени вы просто провели так, обнимая друг друга.")
 
-		saynn("After that, you return back to the hideout. Time well spent.")
+		saynn("После этого вы возвращаетесь в убежище. Время потрачено не зря.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "2"):
 		playAnimation(StageScene.SexChair, "tease", {pc="pc", npc="kait"})
 		aimCameraAndSetLocName("yard_waterfall")
-		saynn("You bring Kait to the spot that has a nice artificial waterfall and a few benches dotted around. You use one of them for cuddling.")
+		saynn("Вы приводите Кейт к месту с симпатичным искусственным водопадом и несколькими расставленными вокруг скамейками. Вы используете одну из них, чтобы обняться.")
 
-		saynn("Kait is now in your hands, watching the running water.")
+		saynn("Теперь Кейт в твоих руках, она наблюдает за бегущей водой.")
 
-		saynn("[say=kait]You know what.. I wanna sit in your lap![/say]")
+		saynn("[say=kait]Знаешь что... я хочу посидеть у тебя на коленях![/say]")
 
-		saynn("And so she does, landing her soft butt on your legs and putting her paws on your shoulders, facing you now.")
+		saynn("И она делает именно это: усаживается своей мягкой попой тебе на колени и кладет лапки тебе на плечи, теперь уже лицом к тебе.")
 
-		saynn("[say=kait]I hope I'm not too heavy~.[/say]")
+		saynn("[say=kait]Надеюсь, я не слишком тяжелая~.[/say]")
 
-		saynn("She was light to begin with.. so even with a full belly she is still not too much for you.")
+		saynn("Сама по себе она была легкой... так что даже с полным животом она всё еще не слишком тяжела для тебя.")
 
-		saynn("[say=pc]You're fine. Little lap cat.[/say]")
+		saynn("[say=pc]Всё в порядке. Маленькая кошечка на коленях.[/say]")
 
-		saynn("[say=kait]I'm anything but little. I'm quite.. round.. currently.[/say]")
+		saynn("[say=kait]Я какая угодно, только не маленькая. Сейчас я довольно... круглая.[/say]")
 
-		saynn("She unbuttons her shirt from below, a proud little smile on her face.")
+		saynn("Она начинает расстегивать рубашку снизу вверх с гордой маленькой улыбкой на лице.")
 
-		saynn("[say=pc]And how do you feel about that? Which pregnancy is it for you?[/say]")
+		saynn("[say=pc]И как ты к этому относишься? Какая это по счету беременность?[/say]")
 
-		saynn("[say=kait]Third one.. of the ones that I counted.. pretty sure.[/say]")
+		saynn("[say=kait]Третья... из тех, что я насчитала... вроде того.[/say]")
 
-		saynn("You raise a brow.")
+		saynn("Вы вопросительно приподнимаете бровь.")
 
-		saynn("[say=pc]Some you didn't count?[/say]")
+		saynn("[say=pc]А были те, что ты не насчитала?[/say]")
 
-		saynn("[say=kait]I got here because of an 'unsolicited breeding' charge, you know..[/say]")
+		saynn("[say=kait]Вообще-то, я здесь из-за обвинения в «нежелательном разведении», знаешь ли...[/say]")
 
-		saynn("[say=pc]So you were pregnant before the prison? You have kids outside?[/say]")
+		saynn("[say=pc]Значит, ты была беременна еще до тюрьмы? У тебя есть дети на воле?[/say]")
 
-		saynn("She looks away, her ears flattening with her head. She is clearly not too comfortable talking about this.")
+		saynn("Она отводит взгляд, прижимая уши к голове. Очевидно, ей не слишком комфортно об этом говорить.")
 
-		saynn("[say=kait]No.. no kids.. I.. don't know.. Listen, it's a weird story.. They.. the AlphaCorp people.. they might have ended my pregnancy early.. if I had one..[/say]")
+		saynn("[say=kait]Нет... детей нет... Я... не знаю... Слушай, это странная история... Эти... люди из «АльфаКорп»... они могли прервать мою беременность раньше срока... если она у меня была...[/say]")
 
-		saynn("You start to gently knead her sides, your fingers sneaking under her shirt to dig into her soft fur.")
+		saynn("Ты начинаешь мягко разминать её бока, просовывая пальцы под рубашку, чтобы погрузиться в её мягкий мех.")
 
-		saynn("[say=pc]But you did get pregnant?[/say]")
+		saynn("[say=pc]Но ты всё-таки беременела?[/say]")
 
-		saynn("[say=kait]I don't fucking know.. I know. It's fucked up. I don't know if I was pregnant or not. I don't know if they ended my pregnancy early. I was honestly too fucked-up to care at that point.. I can tell you what I know but you're gonna think that I'm a slut.[/say]")
+		saynn("[say=kait]Да блядь, не знаю! Знаю, это полный пиздец. Я не знаю, была ли я беременна или нет. Не знаю, прервали они её или нет. Честно говоря, в тот момент мне было настолько хреново, что было уже плевать... Я могу рассказать тебе то, что знаю, но ты точно решишь, что я шлюха.[/say]")
 
-		saynn("She avoids any eye contact, her paws tighten slightly on your shoulders.")
+		saynn("Она избегает любого зрительного контакта, её лапы чуть сильнее сжимают твои плечи.")
 
-		saynn("[say=pc]I promise I won't.[/say]")
+		saynn("[say=pc]Обещаю, что нет.[/say]")
 
-		saynn("She sighs.")
+		saynn("Она вздыхает.")
 
-		saynn("[say=kait]I seduced an AlphaCorp official to try to get off my home planet. We had some stuff.. that strong stuff that sends you into another dimension. And then.. maybe we fucked, maybe we didn't.. but I woke up and I'm in front of a judge who says that I'm going away for 'unsolicited breeding'.[/say]")
+		saynn("[say=kait]Я соблазнила чиновника из «АльфаКорп», чтобы попытаться свалить со своей родной планеты. У нас было кое-что... та самая мощная дрянь, от которой улетаешь в другое измерение. А потом... может, мы трахнулись, а может, и нет... но я очнулась перед судьей, который заявил, что меня отправляют за решетку за «несанкционированное размножение».[/say]")
 
-		saynn("[say=pc]One hell of a night it was.[/say]")
+		saynn("[say=pc]Ну и ночка выдалась, черт возьми.[/say]")
 
-		saynn("[say=kait]Yeah.. shit. So? Do you think I'm a slut?[/say]")
+		saynn("[say=kait]Да уж... блядь. Ну и? Думаешь, я шлюха?[/say]")
 
-		saynn("[say=pc]Maybe a little.[/say]")
+		saynn("[say=pc]Может, самую малость.[/say]")
 
-		saynn("[say=kait]Oh fuck you! Hah.[/say]")
+		saynn("[say=kait]Да пошёл ты! Ха-ха.[/say]")
 
-		saynn("She swats at your chest playfully. When she tries to do it again, you catch her paw. She blushes.")
+		saynn("Она игриво хлопает тебя по груди. Когда она пытается сделать это снова, ты перехватываешь её лапку. Она краснеет.")
 
-		saynn("[say=pc]I'm not the one carrying the third litter.[/say]")
+		saynn("[say=pc]Вообще-то, это не я вынашиваю уже третье потомство.[/say]")
 
-		saynn("[say=kait]I love fucking, okay?[/say]")
+		saynn("[say=kait]Да потому что я люблю трахаться, ясно?[/say]")
 
-		saynn("[say=pc]Fucking? Or being bred?[/say]")
+		saynn("[say=pc]Трахаться? Или когда тебя трахают?[/say]")
 
-		saynn("Another sigh.")
+		saynn("Очередной вздох.")
 
-		saynn("[say=kait]Fucking.. I think.. I'd be an awful mother. Well.. I am an awful mother already. Shit.[/say]")
+		saynn("[say=kait]Трахаться... Думаю... из меня вышла бы ужасная мать. Ну, впрочем... я и так уже ужасная мать. Чёрт.[/say]")
 
-		saynn("[say=pc]If you like fucking, why not do something else rather than get creampied?[/say]")
+		saynn("[say=pc]Если тебе так нравится трахаться, почему бы не заняться чем-то другим, вместо того чтобы просто получать залитку в щель?[/say]")
 
-		saynn("[say=kait]Like what?[/say]")
+		saynn("[say=kait]Например, чем?[/say]")
 
-		saynn("[say=pc]Anal?[/say]")
+		saynn("[say=pc]Анальный?[/say]")
 
-		saynn("[say=kait]Anal? Anal.. Do I look like a buttslut to you?[/say]")
+		saynn("[say=kait]Анал? Анал... Я что, похожа на задрочку в задницу?[/say]")
 
-		saynn("[say=pc]Maybe a little.[/say]")
+		saynn("[say=pc]Может, самую малость.[/say]")
 
-		saynn("[say=kait]I will smother you with my huge milky tits![/say]")
+		saynn("[say=kait]Я задушу тебя своей огромной молочной грудью![/say]")
 
-		saynn("Not the worst way to die. But some would disagree.")
+		saynn("Не самый худший способ сдохнуть. Хотя некоторые могут поспорить.")
 
-		saynn("[say=pc]You have a nice ass. I bet it can take some good dick.[/say]")
+		saynn("[say=pc]У тебя классная жопа. Бьюсь об заклад, она может принять отличный член.[/say]")
 
-		saynn("[say=kait]Anal stuff takes more preparation.. With pussy you just rub it a bit and you're good to go..[/say]")
+		saynn("[say=kait]Для анала нужно больше подготовки... С киской можно просто немного потереться, и всё готово...[/say]")
 
-		saynn("[say=pc]Ah, so you have experience.[/say]")
+		saynn("[say=pc]А, так у тебя есть опыт.[/say]")
 
-		saynn("[say=kait]Shush, you![/say]")
+		saynn("[say=kait]Тсс, замолчи![/say]")
 
-		saynn("She makes you shush with a kiss on your lips. Your hands get under her shirt and caress the fur of her sides.")
+		saynn("Она заставляет тебя замолчать, целуя в губы. Твои руки пробираются под её рубашку, лаская мех на её боках.")
 
-		saynn("[say=kait]Take this.[/say]")
+		saynn("[say=kait]На, возьми это.[/say]")
 
-		saynn("Another few kisses land on your cheeks and your neck.")
+		saynn("Ещё несколько поцелуев оседают на твоих щеках и шее.")
 
-		saynn("[say=kait]And this.. and this..[/say]")
+		saynn("[say=kait]И это... и это...[/say]")
 
-		saynn("[say=pc]You are so getting pregnant again after this litter.[/say]")
+		saynn("[say=pc]После этого выводка ты точно снова забеременеешь.[/say]")
 
-		saynn("[say=kait]Don't threaten me with a good time~.[/say]")
+		saynn("[say=kait]Не пугай меня таким удовольствием~.[/say]")
 
-		saynn("You just spend the rest of the free time like that, cuddling and kissing each other.")
+		saynn("Вы просто проводите всё оставшееся свободное время вот так — обнимаясь и целуясь.")
 
-		saynn("After that, you return back to the hideout.")
+		saynn("После этого вы возвращаетесь в убежище.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "3"):
 		playAnimation(StageScene.SexChair, "tease", {pc="pc", npc="kait"})
 		aimCameraAndSetLocName("yard_waterfall")
-		saynn("You bring Kait to the spot that has a nice artificial waterfall and a few benches dotted around. You use one of them for cuddling.")
+		saynn("Вы приводите Кейт к месту с симпатичным искусственным водопадом и несколькими расставленными вокруг скамейками. Вы используете одну из них, чтобы обняться.")
 
-		saynn("Kait is now in your hands, watching the running water.")
+		saynn("Теперь Кейт в твоих руках, она наблюдает за бегущей водой.")
 
-		saynn("[say=kait]I like your lap.[/say]")
+		saynn("[say=kait]Мне нравятся твои колени.[/say]")
 
-		saynn("And so she does, landing her soft butt on your legs and putting her paws on your shoulders. She was light to begin with.. so even with a full belly she is still not too much for you.")
+		saynn("И она делает именно это: усаживается своей мягкой попой тебе на ноги и кладет лапки тебе на плечи. Изначально она была легкой... так что даже с полным животом она всё еще не слишком тяжелая для тебя.")
 
-		saynn("[say=kait]I'm pregnant again, lookies.[/say]")
+		saynn("[say=kait]Смотри-ка, я снова беременна![/say]")
 
-		saynn("She arches her back, emphasizing her round mound and bigger breasts. The fabric of her shirt is having to stretch to contain her.")
+		saynn("Она прогибает спину, выпячивая свой округлый живот и увеличившуюся грудь. Ткань её футболки едва сдерживает её формы, натягиваясь до предела.")
 
-		saynn("[say=pc]You seem to be happy about it.[/say]")
+		saynn("[say=pc]Похоже, ты этим довольна.[/say]")
 
-		saynn("[say=kait]Yep~. I like having a big belly.. Can't wait to be giving birth to new kittens or so..[/say]")
+		saynn("[say=kait]Ага~. Мне нравится мой большой живот... Жду не дождусь, когда начну рожать новых котят или кого-то в этом роде...[/say]")
 
-		saynn("[say=pc]Too bad you can't even interact with them.[/say]")
+		saynn("[say=pc]Жаль, что ты даже взаимодействовать с ними не можешь.[/say]")
 
-		saynn("[say=kait]Yeah.. but maybe that's for the best. I can get fucked as much as I want and I don't have to pay the price for it~.[/say]")
+		saynn("[say=kait]Да уж... но, может, оно и к лучшему. Меня могут трахать сколько угодно, и за это не нужно платить никакой цены~.[/say]")
 
-		saynn("The way she talks about it.. doesn't sit right with you.")
+		saynn("То, как она об этом говорит... не оставляет приятного осадка.")
 
-		saynn("[say=pc]You're right. You would be a bad mother.[/say]")
+		saynn("[say=pc]Ты права. Из тебя вышла бы хреновая мать.[/say]")
 
-		saynn("She pouts. You kiss her frown away.")
+		saynn("Она дуется. Ты целуешь её, чтобы развеять хмурость.")
 
-		saynn("[say=kait]Aw, buzzkill. Don't remind me of that, I already know it.[/say]")
+		saynn("[say=kait]Ой, ну вот, обломал. Не напоминай мне об этом, я и так это знаю.[/say]")
 
-		saynn("[say=pc]Giving life also comes with responsibility.[/say]")
+		saynn("[say=pc]Давать жизнь — это ещё и ответственность.[/say]")
 
-		saynn("She rolls her eyes.")
+		saynn("Она закатывает глаза.")
 
-		saynn("[say=kait]AlphaCorp seems to be fine with taking this responsibility. And so if I can put more strain on their medical facilities.. it only makes sense to abuse this.[/say]")
+		saynn("[say=kait]Похоже, «АльфаКорп» не против взять эту ответственность на себя. Так что если я смогу сильнее нагрузить их медцентры... то глупо этим не воспользоваться.[/say]")
 
-		saynn("[say=pc]It feels like you're justifying your reckless actions.[/say]")
+		saynn("[say=pc]Такое чувство, будто ты оправдываешь свою безрассудность.[/say]")
 
-		saynn("She leans closer, her warm breath touching against your ear.")
+		saynn("Она наклоняется ближе, и её теплое дыхание касается твоего уха.")
 
-		saynn("[say=kait]I just love getting bred! Is that such a bad thing? I just want you to pump my needy puss with that thick virile cum.. please..[/say]")
+		saynn("[say=kait]Обожаю, когда меня трахают! Неужели это так плохо? Я просто хочу, чтобы ты накачивал мою жаждущую киску своей густой, мощной спермой... ну пожалуйста...[/say]")
 
-		saynn("It hits you. You realize what is up with her.")
+		saynn("До тебя доходит. Ты осознаёшь, что с ней не так.")
 
-		saynn("[say=pc]How old are you?[/say]")
+		saynn("[say=pc]Сколько тебе лет?[/say]")
 
-		saynn("[say=kait]Twenty. Roughly. Why?[/say]")
+		saynn("[say=kait]Двадцать. Примерно. А что?[/say]")
 
-		saynn("She is just.. very young. Young and a bit silly. Being here, in this prison, doesn't help either. She never had to actually nurture her kids.")
+		saynn("Она просто... совсем молоденькая. Юная и немного глупенькая. Нахождение здесь, в этой тюрьме, тоже не помогает. Ей никогда не приходилось по-настоящему нянчиться с детьми.")
 
-		saynn("[say=pc]We do have to get out of this place. As fast as possible. Before you get addicted to this.[/say]")
+		saynn("[say=pc]Нам нужно выбраться отсюда. Как можно скорее. Пока ты не подсел на это.[/say]")
 
-		saynn("[say=kait]Addicted to what? I can stop any time~. Condoms, pulling out or anal, so many ways.[/say]")
+		saynn("[say=kait]Подсел на что? Я могу завязать в любой момент~. Презервативы, прерванный акт или анал — столько способов![/say]")
 
-		saynn("[say=pc]Uh huh.[/say]")
+		saynn("[say=pc]Угу.[/say]")
 
-		saynn("[say=kait]Do you want to stretch my tight little tailhole sometime~?[/say]")
+		saynn("[say=kait]Хочешь как-нибудь растянуть мою тугую дырочку сзади~?[/say]")
 
-		saynn("She wiggles her rear against your lap.")
+		saynn("Она виляет задом, притираясь к твоим коленям.")
 
-		saynn("[say=pc]We will see. Let's just cuddle, Kait.[/say]")
+		saynn("[say=pc]Посмотрим. Давай просто пообнимаемся, Кейт.[/say]")
 
-		saynn("She gives you a smooch on the lips. You hold her close.")
+		saynn("Она нежно целует тебя в губы. Ты крепко прижимаешь её к себе.")
 
-		saynn("[say=kait]You're cute. I love your lap.[/say]")
+		saynn("[say=kait]Ты такой милашка. Обожаю сидеть у тебя на коленях.[/say]")
 
-		saynn("You just spend the rest of the free time like that, cuddling and kissing each other.")
+		saynn("Вы просто проводите всё оставшееся свободное время вот так — обнимаясь и целуясь.")
 
-		saynn("After that, you return back to the hideout.")
+		saynn("После этого вы возвращаетесь в убежище.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "4"):
 		playAnimation(StageScene.SexLotus, "tease", {pc="kait", npc="pc"})
 		aimCameraAndSetLocName("yard_waterfall")
-		saynn("You bring Kait to the spot that has a nice artificial waterfall and a few benches dotted around. You use one of them for cuddling.")
+		saynn("Вы приводите Кейт к месту с симпатичным искусственным водопадом и несколькими расставленными вокруг скамейками. Вы используете одну из них, чтобы обняться.")
 
-		saynn("Kait is now in your hands, watching the running water.")
+		saynn("Теперь Кейт в твоих руках, она наблюдает за бегущей водой.")
 
-		saynn("[say=pc]So many times you got bred.[/say]")
+		saynn("[say=pc]Тебя так много раз осеменяли...[/say]")
 
-		saynn("[say=kait]Yeah~. I lost count by now. Maybe carrying a litter is my true purpose in life.[/say]")
+		saynn("[say=kait]Да~. Я уже сбилась со счета. Может, вынашивать помёты — это и есть моё истинное предназначение в жизни.[/say]")
 
-		saynn("[say=pc]What about escaping this place?[/say]")
+		saynn("[say=pc]А как насчёт того, чтобы сбежать отсюда?[/say]")
 
-		saynn("[say=kait]This place is the obstacle. We have to overcome it, of course.[/say]")
+		saynn("[say=kait]Это место — наше главное препятствие. И мы должны его преодолеть, само собой.[/say]")
 
-		saynn("[say=pc]Good. I was getting afraid that you were gonna give up.[/say]")
+		saynn("[say=pc]Хорошо. А то я уже начала бояться, что ты сдашься.[/say]")
 
-		saynn("[say=kait]No-no. We make the captain our bitch. We escape. But after that.. breeding for days~.[/say]")
+		saynn("[say=kait]Нет-нет. Мы сделаем капитана своей сучкой. Сбежим. Но после этого... будем трахаться днями напролёт~.[/say]")
 
-		saynn("She nuzzles into your neck, purring loudly.")
+		saynn("Она утыкается тебе в шею, громко мурлыча.")
 
-		saynn("[say=pc]What makes you like breeding so much? Tell me, Kait.[/say]")
+		saynn("[say=pc]Почему тебе так нравится, когда тебя трахают? Расскажи мне, Кейт.[/say]")
 
-		saynn("[say=kait]I love the warm fuzzy feeling in my belly.. when I get fucked and stuffed full of cum..[/say]")
+		saynn("[say=kait]Обожаю это теплое, щекочущее чувство в животе... когда в меня трахаются и набивают меня семенем до краев...[/say]")
 
-		saynn("She shivers against you.")
+		saynn("Она дрожит, прижимаясь к тебе.")
 
-		saynn("[say=kait]I love the risk.. am I on my safe days? Or am in heat and about to get another litter pumped into me.. I love knots.. I love barbs.. I love flared cocks.. the human ones are fun too~.[/say]")
+		saynn("[say=kait]Обожаю этот риск... в безопасные ли мои дни? Или я в течке, и в меня вот-вот вкачают очередное потомство... Обожаю узлы... Обожаю шипы... Обожаю расширяющиеся члены... Человеческие тоже забавные~.[/say]")
 
-		saynn("[say=pc]You sure are one lusty snow leopard.[/say]")
+		saynn("[say=pc]А ты та еще похотливая снежная леопардиха.[/say]")
 
-		saynn("[say=kait]Is that bad~?[/say]")
+		saynn("[say=kait]Это плохо~?[/say]")
 
-		saynn("[say=pc]No. It's not bad.[/say]")
+		saynn("[say=pc]Нет. Это не плохо.[/say]")
 
-		saynn("[say=kait]Breed me all you want~. Get my tits all big and milky..[/say]")
+		saynn("[say=kait]Оплодотворяй меня сколько хочешь~. Сделай так, чтобы мои сиськи раздулись и наполнились молоком...[/say]")
 
-		saynn("She takes your hand and places it on her chest. You can feel the slight swell, the warmth.")
+		saynn("Она берет твою руку и кладет ее себе на грудь. Ты чувствуешь легкую припухлость и тепло.")
 
-		saynn("[say=kait]Get my pussy dripping with that virile seed.. Cum inside me.. again and again.. to make sure that I'm pregnant for sure.. I don't wanna be able to walk straight the next day.[/say]")
+		saynn("[say=kait]Хочу, чтобы моя киска текла от этого мощного семени... Кончай в меня... снова и снова... чтобы наверняка забеременеть... Хочу, чтобы на следующий день я едва могла ходить прямо.[/say]")
 
-		saynn("You pull her closer.. and kiss her. She kisses you back, her paws cupping your face. Your hands explore her body, caressing her curves. You can feel the heat radiating from her, one hand slides down her belly, dipping lower, feeling the damp warmth between her legs through her shorts.")
+		saynn("Ты притягиваешь ее ближе и целуешь. Она отвечает на поцелуй, обхватив твое лицо лапами. Твои руки исследуют ее тело, лаская изгибы. Ты чувствуешь исходящий от нее жар; одна твоя рука скользит вниз по ее животу, опускаясь ниже, ощущая влажное тепло между ее ног сквозь шорты.")
 
-		saynn("You get a feeling that you heard and saw everything you could during these cuddles. Kait is now obsessed about pregnancy, she won't say anything different if you get her knocked up again.")
+		saynn("У тебя возникает чувство, что во время этих нежностей ты увидел и услышал всё, что только можно. Кейт теперь просто помешана на беременности, и она не скажет ничего другого, если ты снова её обрюхатишь.")
 
-		saynn("And so you just spend the rest of the free time like that, cuddling and kissing each other.")
+		saynn("И вот так вы и проводите остаток свободного времени — обнимаясь и целуясь.")
 
-		saynn("After that, you return back to the hideout.")
+		saynn("После этого вы возвращаетесь в убежище.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

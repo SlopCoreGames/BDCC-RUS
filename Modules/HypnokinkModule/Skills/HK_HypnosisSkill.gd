@@ -5,7 +5,7 @@ func _init():
 	var _s = connect("levelChanged", self, "_on_levelChanged")
 
 func getVisibleName():
-	return "Hypnosis"
+	return "Гипноз"
 
 func getVisibleDescription():
 	return "Shows the control you display over your own subconscious."

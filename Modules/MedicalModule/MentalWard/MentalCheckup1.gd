@@ -11,81 +11,81 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 		
 	if(state == ""):
-		saynn("You hear a static noise as the intercom turns on.")
+		saynn("Вы слышите статический шум — включается интерком.")
 
 		# (if best behaviour)
 		if(getModuleFlag("MedicalModule", "Mental_PCBehavior", 0.0) >= 0.8):
-			saynn("[say=eliza]How is my cutie doing?[/say]")
+			saynn("[say=eliza]Как поживает моя милашка?[/say]")
 
-			saynn("[say=pc]Yeah, I’m doing good.[/say]")
+			saynn("[say=pc]Да, у меня всё хорошо.[/say]")
 
 		# (if medium behaviour)
 		elif(getModuleFlag("MedicalModule", "Mental_PCBehavior", 0.0) >= 0.3):
-			saynn("[say=eliza]How are we doing, test subject?[/say]")
+			saynn("[say=eliza]Ну как успехи, подопытный?[/say]")
 
-			saynn("[say=pc]I’m okay.[/say]")
+			saynn("[say=pc]Я в порядке.[/say]")
 
 		# (if bad behaviour)
 		else:
-			saynn("[say=eliza]Are you gonna behave today, inmate? Still there?[/say]")
+			saynn("[say=eliza]Будешь сегодня вести себя хорошо, заключенная? Ты там?[/say]")
 
-			saynn("[say=pc]Sure, whatever.[/say]")
+			saynn("[say=pc]Конечно, без проблем.[/say]")
 
-		saynn("[say=eliza]I will open the door in a second, I want you to stand away from it.[/say]")
+		saynn("[say=eliza]Сейчас открою дверь, только отойди от неё подальше.[/say]")
 
-		saynn("Eliza takes a look through the little window to make sure you’re there and then starts the door opening sequence. It’s bulky so it takes some time to unlock all the mechanical locks after which the main motors kick in and the door slowly opens, revealing the outside corridor with Eliza blocking the door frame.")
+		saynn("Элиза заглядывает в маленькое окошко, чтобы убедиться, что вы на месте, а затем запускает процесс открытия двери. Механизм громоздкий, поэтому требуется время, чтобы отщелкнуть все замки, после чего включаются основные моторы, и дверь медленно отъезжает, открывая вид на коридор, где в дверном проеме стоит Элиза.")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "continue"):
-		saynn("[say=eliza]Let’s check on your behavior. I can’t let unwilling test subjects anywhere close to the equipment.[/say]")
+		saynn("[say=eliza]Давай проверим твое поведение. Я не могу позволить непокорным подопытным приближаться к оборудованию.[/say]")
 
-		saynn("Eliza enters the cell, she is wearing her normal white labcoat, long skirt and a green top. She has a digitigrade posture, her bare feet have big animal toes, black transparent thighs cover her legs. She is sipping coffee, clearly it’s a part of her routine.")
+		saynn("Элиза входит в камеру; на ней привычный белый халат, длинная юбка и зеленый топ. У нее пальцеходящая походка, на босых ногах — крупные звериные пальцы, а бедра скрыты черными прозрачными чулками. Она потягивает кофе — очевидно, это часть ее ежедневной рутины.")
 
-		saynn("The doctor is watching you, sitting there, against a wall, helpless with that straitjacket on. She fixes her glasses and puts on a cunning grin.")
+		saynn("Доктор наблюдает за тобой. Ты сидишь у стены, беспомощный в своей смирительной рубашке. Она поправляет очки и расплывается в лукавой ухмылке.")
 
-		saynn("[say=eliza]Crawl to me. Kneel before me.[/say]")
+		saynn("[say=eliza]Поползи ко мне. Преклонись передо мной.[/say]")
 
-		addButton("Obey", "Do as she orders. Behavior+", "obey")
-		addButton("Refuse", "You are not gonna do that! Behavior-", "refuse")
+		addButton("Повиноваться", "Сделать, как она приказала. Поведение+", "obey")
+		addButton("Отказаться", "Ты не собираешься этого делать! Поведение-", "refuse")
 
 	if(state == "refuse"):
-		saynn("You shake your head.")
+		saynn("Ты качаешь головой.")
 
-		saynn("[say=pc]I won’t do that.[/say]")
+		saynn("[say=pc]Я не буду этого делать.[/say]")
 
 		# (if was good behavior)
 		if(savedBehavior >= 0.8):
-			saynn("[say=eliza]Why is that? Is my cutie being a brat? Well then, no pets for you.[/sat]")
+			saynn("[say=eliza]Почему же? Моя милашка капризничает? Ну что ж, тогда никаких вкусняшек.[/sat]")
 
 		# (if medium)
 		elif(savedBehavior >= 0.3):
-			saynn("[say=eliza]That’s disappointing. Guess you don’t want head pats from me.[/say]")
+			saynn("[say=eliza]Какое разочарование. Видимо, поглаживаний по голове ты не хочешь.[/say]")
 
 		# (if bad behaviour)
 		else:
-			saynn("[say=eliza]I know you wouldn’t. Too stubborn.[/say]")
+			saynn("[say=eliza]Так и знала. Слишком упрямая.[/say]")
 
-		saynn("[say=eliza]Gonna check others now. You stay right here.[/say]")
+		saynn("[say=eliza]Теперь проверю остальных. А ты сиди здесь и не рыпайся.[/say]")
 
-		saynn("Eliza leaves you alone and presses the button to shut the door.")
+		saynn("Элиза оставляет тебя в одиночестве и нажимает на кнопку, чтобы закрыть дверь.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 	if(state == "obey"):
 		playAnimation(StageScene.Duo, "kneel", {npc="eliza"})
 		
-		saynn("You lay on the floor and wiggle towards Eliza’s legs. She smirks watching you struggle with your bound hands. You prop yourself up using a nearby wall and get on your knees. You tilt your head down, showing obedience.")
+		saynn("Ты ложишься на пол и подползаешь к ногам Элизы. Она ухмыляется, наблюдая за твоими мучениями со связанными руками. Опершись о ближайшую стену, ты встаешь на колени и склоняешь голову, демонстрируя покорность.")
 
-		saynn("[say=eliza]Very good~.[/say]")
+		saynn("[say=eliza]Очень хорошо~.[/say]")
 
-		saynn("Eliza leans down and lays her hand on your head. She pets you and scritches behind the ear.")
+		saynn("Элиза наклоняется и кладет руку тебе на голову. Она гладит тебя, почесывая за ушком.")
 
-		saynn("[say=eliza]Gonna go check on others now.[/say]")
+		saynn("[say=eliza]А теперь пойду проверю остальных.[/say]")
 
-		saynn("Eliza leaves the cell and presses the button to close the door.")
+		saynn("Элиза выходит из камеры и нажимает на кнопку, чтобы закрыть дверь.")
 		
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 

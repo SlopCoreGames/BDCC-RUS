@@ -11,29 +11,29 @@ func _run():
 		addCharacter("vion")
 		playAnimation(StageScene.Duo, "sit", {npc="vion", npcAction="sit"})
 		
-		saynn("[say=vion]Forget for a moment where you are. Let your physical body fade from your thoughts. Disassociate from the present. As your current surroundings fade from your thoughts, instead imagine yourself in a worn, yet well maintained airlock. There is a pleasant scent in the air, familiar but not distracting.[/say]")
+		saynn("[say=vion]На мгновение забудь, где ты находишься. Позволь своему физическому телу раствориться в мыслях. Отстранись от настоящего. Пока окружающая обстановка тускнеет в твоем сознании, представь вместо неё потрёпанный, но хорошо ухоженный шлюз. В воздухе стоит приятный аромат — знакомый, но не отвлекающий.[/say]")
 
-		saynn("You do your best to envision the scene. Little details form and fade at the edges of your imagination as your focus slides over them. A familiar display on that wall. A spacesuit rack on the other. A seat in the corner. A control panel next to the door.")
+		saynn("Ты изо всех сил стараешься визуализировать эту сцену. Мелкие детали то возникают, то исчезают на периферии твоего воображения, пока твой фокус скользит по ним. Знакомый дисплей на стене. Стойка для скафандров с другой стороны. Кресло в углу. Панель управления рядом с дверью.")
 
-		saynn("[say=vion]At your side, there's a sturdy storage box. Take all your cares and your worries, all your troubles and anxieties, and place them in the box. They'll be safe in there until you need to take up their burden again. Until that time comes, you can just leave them in there.[/say]")
+		saynn("[say=vion]Рядом с тобой стоит прочный ящик для хранения. Возьми все свои заботы и тревоги, все свои беды и опасения и сложи их в этот ящик. Там они будут в безопасности до тех пор, пока тебе снова не придётся нести это бремя. А пока — просто оставь их там.[/say]")
 
-		saynn("You watch yourself as you store your problems deep within the box, one at a time. They are misshapen, dark things, and you are careful not to cut yourself on their sharp edges. In they go, one after another, and soon enough your hands are empty and the box is full.")
+		saynn("Ты наблюдаешь за тем, как убираешь свои проблемы глубоко в ящик, одну за другой. Это бесформенные темные существа, и ты стараешься не порезаться об их острые края. Они уходят внутрь, одно за другим, и вскоре твои руки пустеют, а ящик наполняется.")
 
-		saynn("[say=vion]Now... close the lid.[/say]")
+		saynn("[say=vion]А теперь... закрой крышку.[/say]")
 
-		saynn("It snaps shut with a satisfying click, the edges hissing as they self-seal until the contents are needed again.")
+		saynn("Она захлопывается с приятным щелчком, а края шипят, герметизируясь до тех пор, пока содержимое снова не понадобится.")
 
-		saynn("[say=vion]Already the memories of your problems are fading away, dissapearing from your mind. Now, push the box aside and leave it behind. You don't need it right now. It's time to step outside for a while.[/say]")
+		saynn("[say=vion]Воспоминания о твоих проблемах уже начинают тускнеть, исчезая из твоего разума. Теперь отодвинь ящик и оставь его позади. Сейчас он тебе не нужен. Пришло время ненадолго выйти наружу.[/say]")
 
-		saynn("You open a locker and take out a zero-g pack. You put it on, then reach for the gravity controls and flip the switch. Your body grow lighter, then weightless. Soon enough you're gently floating. The airlock cycles, venting the air. The door in front of you opens.")
+		saynn("Вы открываете шкафчик и достаете пакет для нулевой гравитации. Надев его, вы тянетесь к панели управления и щелкаете переключателем. Ваше тело становится легче, а затем и вовсе теряет вес. Вскоре вы уже плавно парите в воздухе. Шлюз срабатывает, стравливая воздух, и дверь перед вами открывается.")
 
-		saynn("[say=vion]Go outside, out into that empty space, deeper into a relaxing trance. Floating away. Whichever part of the universe you always wanted to visit, there you are.[/say]")
+		saynn("[say=vion]Выходите наружу, в эту бесконечную пустоту, погружаясь всё глубже в расслабляющий транс. Уплывая прочь. В ту самую часть вселенной, которую вы всегда мечтали посетить, — вы уже там.[/say]")
 		
-		saynn("You look around, taking in the sights.")
+		saynn("Вы оглядываетесь по сторонам, впитывая увиденное.")
 		
-		saynn("[say=vion]Here, in the void, nothing can reach you. Nothing can trouble you. You'll return in time, but that time is not now. For now... just relax. Free and content. Just drift.[/say]")
+		saynn("[say=vion]Здесь, в пустоте, ничто не может до вас дотянуться. Ничто не может вас потревожить. Вы вернетесь, но не сейчас. А пока... просто расслабьтесь. Свободные и довольные. Просто дрейфуйте по течению.[/say]")
 		
-		addButton("Continue", "", "endthescene")
+		addButton("Продолжить", "", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

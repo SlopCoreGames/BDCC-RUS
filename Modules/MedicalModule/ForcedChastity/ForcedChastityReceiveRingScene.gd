@@ -6,20 +6,20 @@ func _init():
 func _run():
 	
 	if(state == ""):
-		saynn("The sleep was alright. Finally you’re not afraid that you will wake up somewhere else. But as you open your eyes you realize that someone left a few things on your pillow.")
+		saynn("Сон был вполне неплохим. Наконец-то исчез этот страх, что ты проснешься где-то в другом месте. Но, открыв глаза, ты понимаешь, что кто-то оставил на твоей подушке несколько вещей.")
 
-		saynn("You get up and get a better look. One of the things seems to be.. a ring? Yeah, it looks like a simple metal ring that goes on your finger. There is also a note that came with it.")
+		saynn("Ты поднимаешься, чтобы рассмотреть их получше. Одна из вещей кажется... кольцом? Да, похоже на обычное металлическое кольцо на палец. А рядом лежит записка.")
 
-		addButton("Read note", "See what it says", "read_note")
+		addButton("Прочитать записку", "Посмотреть, что там написано", "read_note")
 
 	if(state == "read_note"):
-		saynn("\"Accept this gift as a little token of my appreciation. Hope it will be a good reminder of your choice <3.\n\n- Dr. Quinn\"")
+		saynn("\"Прими этот подарок как скромный знак моей признательности. Надеюсь, он станет хорошим напоминанием о твоем выборе <3.\n\n— Доктор Куинн\"")
 
-		saynn("Huh. That’s kinda sweet. She also left a chip with some credits. You grab the ring and prepare for the day.")
+		saynn("Хм. Даже мило. Она также оставила чип с кредитами. Ты берешь кольцо и готовишься к новому дню.")
 
 		# (scene ends)
 
-		addButton("Continue", "Huh", "endthescene")
+		addButton("Продолжить", "Хм", "endthescene")
 		
 
 

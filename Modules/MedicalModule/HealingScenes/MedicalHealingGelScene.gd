@@ -12,77 +12,77 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcAction="stand"})
 		
 	if(state == ""):
-		saynn("[say=pc]Yeah, I think I will need the healing gel treatment..[/say]")
+		saynn("[say=pc]Да, кажется, мне всё-таки понадобится процедура с заживляющим гелем...[/say]")
 
-		saynn("Eliza raises her brow and glances at your lower part of the body.")
+		saynn("Элиза приподнимает бровь и бросает взгляд на твою нижнюю часть тела.")
 
-		saynn("[say=eliza]Had a rough night, huh? Let’s go fix that.[/say]")
+		saynn("[say=eliza]Тяжелая выдалась ночка, а? Давай-ка всё исправим.[/say]")
 
-		saynn("She clips a leash to your collar and escorts you somewhere.")
+		saynn("Она пристегивает поводок к твоему ошейнику и ведет тебя за собой.")
 
-		addButton("Follow", "See where she brings you", "follow")
+		addButton("Следовать", "Посмотреть, куда она тебя приведет", "follow")
 
 	if(state == "follow"):
 		playAnimation(StageScene.BDSMMachineFuck, "tease", {bodyState={naked=true, hard=true}})
 		aimCameraAndSetLocName("med_researchlab")
 		
-		saynn("You and the doctor enter the lab, a sterile looking space with no shortage of expensive equipment. Eliza brings you into the middle of the room where some kind of hi-tech table is placed. It has a computer attached to it and a bunch of extra hardware that you don’t even recognize.")
+		saynn("Вы с доктором входите в лабораторию — стерильное помещение, заставленное дорогим оборудованием. Элиза подводит тебя к центру комнаты, где стоит какой-то высокотехнологичный стол. К нему подключен компьютер и куча дополнительного железа, которое ты даже не можешь опознать.")
 
 		# (if has clothes)
 		if(!GM.pc.isFullyNaked()):
-			saynn("[say=eliza]You can give me your clothes. Then lay down on your back and spread your legs.[/say]")
+			saynn("[say=eliza]Можешь снимать одежду. Затем ложись на спину и раздвинь ноги.[/say]")
 
 		# (else)
 		else:
-			saynn("[say=eliza]Lay down on your back for me and spread your legs.[/say]")
+			saynn("[say=eliza]Ложись на спину и раздвинь ноги.[/say]")
 
 		# (if FIRST TIME)
 		if(isFirstTime()):
-			saynn("[say=pc]What are you gonna do?[/say]")
+			saynn("[say=pc]И что ты собираешься делать?[/say]")
 
-			saynn("Eliza picks up on your concerned tone and smiles.")
+			saynn("Элиза замечает твой обеспокоенный тон и улыбается.")
 
-			saynn("[say=eliza]Almost nothing. I’m not qualified even if I wanted to.[/say]")
+			saynn("[say=eliza]Почти ничего. Даже если бы я захотела, у меня нет нужной квалификации.[/say]")
 
-			saynn("That sounds even more scary.")
+			saynn("Это звучит еще более пугающе.")
 
-			saynn("[say=pc]Huh?[/say]")
+			saynn("[say=pc]А?[/say]")
 
-			saynn("The doctor taps you on your shoulder.")
+			saynn("Врач хлопает вас по плечу.")
 
-			saynn("[say=eliza]Relax. The machine will do everything. With the precision of the world’s best surgeon. Now do what I told you to do.[/say]")
+			saynn("[say=eliza]Расслабьтесь. Машина сделает всё сама. С точностью лучшего хирурга в мире. А теперь делайте то, что я сказала.[/say]")
 
 		# (END FIRST TIME)
 
 		# (if has clothes)
 		if(!GM.pc.isFullyNaked()):
-			saynn("You weigh your options and decide that the machine’s touch is probably better rather than having to suffer with the constant pain. You {pc.undressMessage} before giving all your belongings to Eliza. Then you lie down on the table and spread your legs, exposing your damaged private bits.")
+			saynn("Вы взвешиваете все «за» и «против» и решаете, что прикосновения машины, скорее всего, лучше, чем вечные мучения от боли. Вы {pc.undressMessage}, прежде чем отдать все свои вещи Элизе. Затем вы ложитесь на стол и раздвигаете ноги, обнажая свои поврежденные интимные места.")
 
 		# (else)
 		else:
-			saynn("You weigh your options and decide that the machine’s touch is probably better rather than having to suffer with the constant pain. You give all your belongings to Eliza and then lie down on the table before spreading your legs and exposing your damaged private bits.")
+			saynn("Вы взвешиваете все «за» и «против» и решаете, что прикосновения машины, скорее всего, лучше, чем вечные мучения от боли. Вы отдаете все свои вещи Элизе, ложитесь на стол, а затем раздвигаете ноги, обнажая свои поврежденные интимные места.")
 
-		saynn("[say=eliza]Alright, yeah. I see some damage. Let’s try to fix it. But first.[/say]")
+		saynn("[say=eliza]Так, ну да. Вижу повреждения. Давай попробуем их исправить. Но сначала...[/say]")
 
-		saynn("Eliza grabs your wrists and puts cuffs on them. Cuffs that are chained to the table’s little hooks. Then she does the same with your ankles, rendering you pretty much helpless. And your legs are now held spread.")
+		saynn("Элиза хватает вас за запястья и надевает наручники. Наручники, которые пристегиваются цепями к маленьким крючкам на столе. Затем она делает то же самое с вашими лодыжками, делая вас практически беспомощной. Теперь ваши ноги широко разведены.")
 
 		# (if FIRST TIME)
 		if(isFirstTime()):
-			saynn("[say=pc]Why? Is this really necessary?[/say]")
+			saynn("[say=pc]Зачем? Это действительно необходимо?[/say]")
 
-			saynn("[say=eliza]Yep~.[/say]")
+			saynn("[say=eliza]Ага~.[/say]")
 
 		# (ELSE)
 		else:
-			saynn("[say=pc]I can just try to be still?[/say]")
+			saynn("[say=pc]А если я постараюсь не шевелиться?[/say]")
 
-			saynn("[say=eliza]No you can’t~.[/say]")
+			saynn("[say=eliza]Нет, не получится~.[/say]")
 
 		# (END FIRST TIME)
 
-		saynn("Eliza presses a button on the computer..")
+		saynn("Элиза нажимает кнопку на компьютере...")
 
-		addButton("Continue", "See what happens next", "continue")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue")
 
 	if(state == "continue"):
 		if(GM.pc.hasReachableVagina()):
@@ -90,119 +90,119 @@ func _run():
 		else:
 			playAnimation(StageScene.BDSMMachineFuck, "inside", {cum=true, bodyState={naked=true, hard=true}})
 		
-		saynn("You hear hydraulic motors working as the table brings some kind of tool out. You look down and see a sturdy metal arm with.. some kind of phallic object attached to it. Looks like a blue dildo that has a transparent tube running through it. And the tip of that tube is leaking something.. The arm is hovering between your legs.")
+		saynn("Вы слышите гул гидравлических моторов: стол выдвигает какой-то инструмент. Вы опускаете взгляд и видите прочную металлическую штангу, к которой прикреплен... какой-то фаллической объект. Похоже на синий дилдо, сквозь который проходит прозрачная трубка. И из кончика этой трубки что-то сочится... Штанга зависла прямо между ваших ног.")
 
 		# (if has pussy)
 		if(GM.pc.hasReachableVagina()):
-			saynn("[say=eliza]Oh, right, I forgot.[/say]")
+			saynn("[say=eliza]Ох, точно, я и забыла.[/say]")
 
-			saynn("Eliza presses another button a second similar dildo shows up, same size, same blue color.")
+			saynn("Элиза нажимает еще одну кнопку, и появляется второй точно такой же дилдо — того же размера и того же синего цвета.")
 
 		# (end)
 
 		# (if FIRST TIME)
 		if(isFirstTime()):
-			saynn("[say=eliza]There we go~. Don’t be afraid. These are the healing gel.. dispensers.[/say]")
+			saynn("[say=eliza]Вот так~. Не бойся. Это... дозаторы целебного геля.[/say]")
 
-			saynn("[say=pc]Uhhh. Are you sure?[/say]")
+			saynn("[say=pc]Э-э-э. Ты уверена?[/say]")
 
 		# (ELSE)
 		else:
-			saynn("[say=eliza]There we go~. Don’t be afraid. These are the healing gel.. dispensers.[/say]")
+			saynn("[say=eliza]Вот так~. Не бойся. Это... дозаторы целебного геля.[/say]")
 
-			saynn("[say=pc]Yeah, I remember..[/say]")
+			saynn("[say=pc]Да, я помню...[/say]")
 
 		# (END FIRST TIME)
 
 		# (if has pussy)
 		if(GM.pc.hasReachableVagina()):
-			saynn("Eliza chuckles and starts pressing more buttons. The arms bring the long phallic objects to your holes. When the tips touch your sensitive flesh you can’t help but to flinch away. They’re cold!")
+			saynn("Элиза посмеивается и продолжает нажимать на кнопки. Механические руки подносят длинные фаллосы к вашим отверстиям. Когда их кончики касаются вашей чувствительной плоти, вы невольно вздрагиваете. Они холодные!")
 
 		# (else)
 		else:
-			saynn("Eliza chuckles and starts pressing more buttons. The arm brings the long phallic object to your hole. When the tip touches your sensitive flesh you can’t help but to flinch away. It’s cold!")
+			saynn("Элиза посмеивается и продолжает нажимать на кнопки. Механическая рука подносит длинный фаллос к вашему отверстию. Когда его кончик касается вашей чувствительной плоти, вы невольно вздрагиваете. Он холодный!")
 
 		# (if FIRST TIME)
 		if(isFirstTime()):
-			saynn("[say=eliza]It will help, trust me.[/say]")
+			saynn("[say=eliza]Это поможет, поверь мне.[/say]")
 
 		# (ELSE)
 		else:
-			saynn("[say=eliza]Best part.[/say]")
+			saynn("[say=eliza]Самое лучшее.[/say]")
 
 		# (END FIRST TIME)
 
 		# (if has pussy)
 		if(GM.pc.hasReachableVagina()):
-			saynn("At this point you’re not sure if this is actually designed to heal your holes or if Eliza just wants to torture you. Blue dildos press against your irritated damaged flesh again and this time they don’t pull away, making you squirm from sudden sensations. But the more they rub against your privates, the less pain you feel, they must be coated with something. But before you get used to them completely, they both suddenly penetrate you and slide inside, making everything numb and cold inside too. You can’t help but to let out a moan and arch your back when that happens.. These damn cuffs seem to be so strong.")
+			saynn("На этом этапе ты уже не понимаешь, предназначено ли это средство на самом деле для заживления твоих дырок, или Элиза просто хочет тебя помучить. Синие дилдо снова прижимаются к твоей раздраженной, поврежденной плоти, и на этот раз они не отстраняются, заставляя тебя корчиться от внезапных ощущений. Но чем сильнее они трутся о твои интимные места, тем меньше боли ты чувствуешь — должно быть, они чем-то смазаны. Но прежде чем ты успеваешь к ним полностью привыкнуть, они оба внезапно проникают в тебя и скользят внутрь, отчего всё внутри становится онемевшим и холодным. Ты невольно стонешь и выгибаешь спину, когда это происходит... Эти чертовы наручники кажутся такими прочными.")
 
 		# (else)
 		else:
-			saynn("At this point you’re not sure if this is actually designed to heal your butt or if Eliza just wants to torture you. Blue dildo presses against your irritated damaged flesh again and this time it doesn’t pull away, making you squirm from sudden sensations. But the more it rubs against your hole, the less pain you feel, it must be coated with something. But before you get used to this completely, it suddenly penetrates you and slides inside, making everything numb and cold inside too. You can’t help but to let out a moan and arch your back when that happens.. These damn cuffs seem to be so strong.")
+			saynn("На этом этапе ты уже не понимаешь, предназначено ли это средство на самом деле для заживления твоей задницы, или Элиза просто хочет тебя помучить. Синий дилдо снова прижимается к твоей раздраженной, поврежденной плоти, и на этот раз он не отстраняется, заставляя тебя корчиться от внезапных ощущений. Но чем сильнее он трется о твою дырку, тем меньше боли ты чувствуешь — должно быть, он чем-то смазан. Но прежде чем ты успеваешь к этому полностью привыкнуть, он внезапно проникает в тебя и скользит внутрь, отчего всё внутри становится онемевшим и холодным. Ты невольно стонешь и выгибаешь спину, когда это происходит... Эти чертовы наручники кажутся такими прочными.")
 
-		saynn("[say=eliza]Apples won’t keep me away~.[/say]")
+		saynn("[say=eliza]Яблоки меня не отпугнут~.[/say]")
 
 		# (if has pussy)
 		if(GM.pc.hasReachableVagina()):
-			saynn("At least they seem to just rest inside you, slowly numbing more and more of your lower part of the body. Your holes are constantly stretched by these dildo-like tools but you don’t feel any discomfort. Which is a nice change.")
+			saynn("По крайней мере, кажется, что они просто отдыхают внутри тебя, постепенно всё сильнее и сильнее онемение нижней части твоего тела. Твои дырочки постоянно растянуты этими похожими на дилдо инструментами, но ты не чувствуешь никакого дискомфорта. И это приятная перемена.")
 
-			saynn("[say=eliza]We need to heal you from the inside too.[/say]")
+			saynn("[say=eliza]Нам нужно залечить тебя и изнутри тоже.[/say]")
 
-			saynn("Eliza lets you rest like that for a bit before pressing something else. The bases of the dildos suddenly begin to inflate with something, it’s like they are growing knots. And at the same time the arms start applying more pressure onto your holes, trying to force the fat orbs inside too. They are struggling at first but the machine has no mercy, it whirls louder and louder until finally squeezing both knots inside you!")
+			saynn("Элиза дает тебе немного полежать в таком состоянии, прежде чем нажать на что-то еще. Основания дилдо внезапно начинают раздуваться, словно на них нарастают узлы. И в то же самое время манипуляторы начинают сильнее давить на твои отверстия, пытаясь затолкать внутрь эти жирные сферы. Сначала они с трудом проталкиваются, но у машины нет пощады: она жужжит всё громче и громче, пока, наконец, не втискивает оба узла внутрь тебя!")
 
 			# (if has penis)
 			if(GM.pc.hasPenis()):
-				saynn("Your {pc.penis} throbs and then shoots out a load, your prostate enjoyed being smashed a little too much. Eliza chuckles.")
+				saynn("Твой {pc.penis} пульсирует, а затем выбрасывает порцию — твоей простате слишком уж понравилось, когда её так вжимают. Элиза посмеивается.")
 
-			saynn("You arch your back harder, squirming while the dildos begin stuffing your holes with something. Something cold and sticky. One of them is pressed directly against your womb entering, painting the insides. The other one stuffs your guts full of this unknown stuff too. And since the knots prevent any leakage, your belly quickly begins to look somewhat inflated.. Eliza takes note of that.")
+			saynn("Ты сильнее выгибаешь спину, ерзая, пока дилдо начинают забивать твои дырочки чем-то... чем-то холодным и липким. Один из них прижимается прямо к твоей матке, входя внутрь и заполняя всё пространство. Другой тоже забивает твои кишки этой неведомой субстанцией. А так как узлы не дают содержимому вытекать, твой живот быстро начинает выглядеть довольно раздутым... Элиза замечает это.")
 
-			saynn("[say=eliza]That’s the healing gel~, don’t worry. There were only a few accidents where real cum got used instead.[/say]")
+			saynn("[say=eliza]Это целебный гель~, не волнуйся. Было всего несколько случаев, когда вместо него по ошибке использовали настоящую сперму.[/say]")
 
-			saynn("Even though your holes are being stretched a lot, you only feel a slight tickling down there. Whatever it is, it seems to be doing its job, soothing the pain and healing your bits.")
+			saynn("Хотя твои дырочки изрядно растягиваются, ты чувствуешь лишь легкое щекотание там, внизу. Что бы это ни было, оно явно справляется со своей задачей, притупляя боль и заживляя твои нежные места.")
 
 		# (else)
 		else:
-			saynn("At least it seems to just rest inside you, slowly numbing more and more of your lower part of the body. Your hole is constantly stretched by this dildo-like tool but you don’t feel any discomfort. Which is a nice change.")
+			saynn("По крайней мере, кажется, что оно просто покоится внутри тебя, постепенно всё сильнее онемение нижней части твоего тела. Твоя дырка постоянно растянута этим инструментом, похожим на дилдо, но ты не чувствуешь никакого дискомфорта. И это приятная перемена.")
 
-			saynn("[say=eliza]We need to heal you from the inside too.[/say]")
+			saynn("[say=eliza]Нам нужно залечить тебя и изнутри тоже.[/say]")
 
-			saynn("Eliza lets you rest like that for a bit before pressing something else. The base of the dildo suddenly begins to inflate with something, it’s like it’s growing a knot. And at the same time the arm starts applying more pressure onto your hole, trying to force the fat orb inside. The arm is struggling at first but the machine has no mercy, it whirls louder and louder until finally squeezing the knot inside you!")
+			saynn("Элиза дает тебе немного отдохнуть в таком состоянии, прежде чем нажать на что-то еще. Основание дилдо внезапно начинает раздуваться, словно у него растет узел. И в то же время манипулятор начинает сильнее давить на твою дырку, пытаясь втиснуть внутрь жирный шар. Сначала рука сражается с сопротивлением, но у машины нет пощады: она жужжит всё громче и громче, пока наконец не втискивает узел в тебя!")
 
 			# (if has penis)
 			if(GM.pc.hasPenis()):
-				saynn("Your {pc.penis} throbs and then shoots out a load, your prostate enjoyed being smashed a little too much. Eliza chuckles.")
+				saynn("Твой {pc.penis} пульсирует, а затем выбрасывает порцию — твоей простате слишком уж понравилось, когда её так вжимают. Элиза посмеивается.")
 
-			saynn("You arch your back harder, squirming while the dildo begins stuffing your hole with something. Something cold and sticky. It stuffs your guts full of this stuff. And since the knot prevents any leakage, your belly quickly begins to look somewhat inflated.. Eliza takes note of that.")
+			saynn("Ты сильнее выгибаешь спину, ерзая и корчась, пока дилдо забивает твою дырку чем-то... чем-то холодным и липким. Эта дрянь заполняет твои внутренности до отказа. А так как узел не дает содержимому вытекать, твой живот быстро начинает раздуваться. Элиза замечает это.")
 
-			saynn("[say=eliza]That’s the healing gel~, don’t worry. There were only a few accidents where real cum got used instead.[/say]")
+			saynn("[say=eliza]Это целебный гель~, не волнуйся. Было всего несколько случаев, когда вместо него по ошибке использовали настоящую сперму.[/say]")
 
-			saynn("Even though your hole is being stretched a lot, you only feel a slight tickling down there. Whatever it is, it seems to be doing its job, soothing the pain and healing your bits.")
+			saynn("Хотя твои дырочки изрядно растягиваются, ты чувствуешь лишь легкое щекотание там, внизу. Что бы это ни было, оно явно справляется со своей задачей, притупляя боль и заживляя твои нежные места.")
 
-		addButton("Continue", "See what happens next", "continue1")
+		addButton("Продолжить", "Смотреть, что будет дальше", "continue1")
 
 	if(state == "continue1"):
 		playAnimation(StageScene.Duo, "stand", {npc="eliza", npcAction="stand"})
 		
 		# (if has pussy)
 		if(GM.pc.hasReachableVagina()):
-			saynn("You’re left to rest like that for about ten minutes before Eliza presses the button to deflate the knots and retract the dildos out of your holes. And as they are being pulled out, the last of the healing gel pours onto your pussy and ass, creating a lewd mess.")
+			saynn("Тебя оставляют в таком состоянии примерно на десять минут, прежде чем Элиза нажимает на кнопку, чтобы сдуть узлы и извлечь дилдо из твоих дырок. И пока они выходят, остатки заживляющего геля вытекают на твою киску и задницу, создавая похотливое месиво.")
 
 		# (else)
 		else:
-			saynn("You’re left to rest like that for about ten minutes before Eliza presses the button to deflate the knot and retract the dildo out of your hole. And as it's being pulled out, the last of the healing gel pours onto your crotch and ass, creating a lewd mess.")
+			saynn("Тебя оставляют в таком состоянии примерно на десять минут, прежде чем Элиза нажимает на кнопку, чтобы сдуть узел и извлечь дилдо из твоей дырки. И пока он выходит, остатки заживляющего геля вытекают на твою промежность и задницу, создавая похотливое месиво.")
 
-		saynn("[say=eliza]There you go. Try to avoid rough sex if you can. Unless you want more of this~.[/say]")
+		saynn("[say=eliza]Вот и всё. Постарайся избегать грубого секса, если сможешь. Если только ты не хочешь добавки~.[/say]")
 
-		saynn("Eliza uncuffs your hands and legs before giving you your belongings back. All the while you’re still leaking healing gel..")
+		saynn("Элиза снимает наручники с твоих рук и ног, а затем возвращает твои вещи. При этом из тебя всё еще сочится заживляющий гель...")
 
-		saynn("You get up and look at the mess on the table.")
+		saynn("Ты встаешь и смотришь на беспорядок на столе.")
 
-		saynn("[say=eliza]Don’t worry, I will clean it up. I opened the door for you. Take care, patient.[/say]")
+		saynn("[say=eliza]Не волнуйся, я всё уберу. Я открыла тебе дверь. Береги себя, пациентка.[/say]")
 
-		saynn("Well, that was something. But it’s time to go. You walk out into the corridor.")
+		saynn("Что ж, это было нечто. Но пора идти. Ты выходишь в коридор.")
 
 		# (scene ends)
-		addButton("Leave", "Time to go", "endthescene")
+		addButton("Уйти", "Пора идти", "endthescene")
 		
 
 
