@@ -8,329 +8,329 @@ func _run():
 		addCharacter("captain")
 		addCharacter("tavi")
 		playAnimation(StageScene.Duo, "stand", {npc="captain"})
-		saynn("Captain Wright steps into the room followed by a horde of guards, at least a dozen. They form a wall, blocking the only exit for you and Tavi. Many flashlights light you up.")
+		saynn("В комнату входит капитан Райт, а за ней — целая толпа охранников, не меньше дюжины. Они выстраиваются стеной, перекрывая вам с Тави единственный выход. Множество фонариков направлены прямо на вас.")
 
-		saynn("Tavi straightens her posture and takes a step back, standing just in front of you now. The captain points at two of the guards and gestures them towards Alex. They quickly grab the broken engineer and pull him out of the room. There is a small pool of blood where he was.")
+		saynn("Тави выпрямляется и делает шаг назад, становясь прямо перед тобой. Капитан указывает на двух охранников и жестом посылает их к Алексу. Те быстро хватают избитого инженера и утаскивают его из комнаты. Там, где он стоял, остается небольшая лужица крови.")
 
-		saynn("[say=pc]How the hell did you know about this?[/say]")
+		saynn("[say=pc]Какого черта ты об этом знала?[/say]")
 
-		saynn("You'd understand if you were spotted by a patrol or something. But this isn't just a patrol, much more than that.")
+		saynn("Тебя можно понять, если бы тебя заметил патруль или что-то в этом роде. Но это не просто патруль, всё куда серьезнее.")
 
-		saynn("[say=captain]A little birdie told me.[/say]")
+		saynn("[say=captain]Птичка напела.[/say]")
 
-		saynn("Tavi turns her head towards you, her brows furrowed, her tail wagging. But her voice is low enough that only you hear her.")
+		saynn("Тави поворачивает к тебе голову; её брови нахмурены, а хвост виляет. Но она говорит достаточно тихо, чтобы её слышал только ты.")
 
-		saynn("[say=tavi]Kait.[/say]")
+		saynn("[say=tavi]Кейт.[/say]")
 
-		saynn("She looks back at the captain.")
+		saynn("Затем она снова переводит взгляд на капитана.")
 
-		saynn("[say=captain]A little late but it seems I didn't miss much. Stay there, guards, I didn't get a chance to handle situations like these in so many years.[/say]")
+		saynn("[say=captain]Немного поздновато, но, похоже, я не пропустила ничего интересного. Стоять, стража! У меня столько лет не было возможности разобраться с подобными ситуациями.[/say]")
 
-		saynn("An entire team of guards is watching your every move. So you don't. The captain starts circling the blue crystal, the opposite direction from you.")
+		saynn("Целая команда охранников следит за каждым твоим движением. Поэтому ты не отвлекаешься. Капитан начинает обходить синий кристалл, двигаясь в противоположную от тебя сторону.")
 
-		saynn("[say=captain]You disabled the bluespace transmitter. Huh. That was pretty smart, I will admit. Getting here using nothing but your brain and your power of will.[/say]")
+		saynn("[say=captain]Ты отключила передатчик блюспейса. Хм. Признаю, это было довольно умно. Добраться сюда, полагаясь лишь на свой мозг и силу воли.[/say]")
 
-		saynn("He holds his hands behind his back.")
+		saynn("Он держит руки за спиной.")
 
-		saynn("[say=captain]I can respect when people are ready to apply so much effort to accomplish something.[/say]")
+		saynn("[say=captain]Я уважаю людей, которые готовы приложить столько усилий, чтобы чего-то добиться.[/say]")
 
-		saynn("Then he switches directions, now closing distance. You notice that Tavi is ever so slightly moving her paw behind her back.")
+		saynn("Затем он меняет направление, сокращая дистанцию. Вы замечаете, что Тави едва заметно водит лапой за спиной.")
 
-		saynn("[say=tavi]Thanks.[/say]")
+		saynn("[say=tavi]Спасибо.[/say]")
 
-		saynn("[say=captain]What was the full plan though? You thought the collars would just unlock themselves and fall off? That would be rather silly on my part. I trust you think better of me.[/say]")
+		saynn("[say=captain]Но каков был полный план? Ты думала, ошейники просто сами расстегнутся и упадут? С моей стороны это было бы довольно глупо. Надеюсь, ты обо мне думаешь лучше.[/say]")
 
-		saynn("The captain continues to slowly approach you two. The guards stand still, each one holding a stun baton. Tavi holds something in her paw.. And she is smiling..")
+		saynn("Капитан продолжает медленно приближаться к вам двоим. Охранники стоят неподвижно, каждый с электрошоковой дубинкой в руках. Тави что-то сжимает в лапе... И она улыбается...")
 
-		saynn("[say=captain]Yes. We lost the ability to pacify you. And look at what you did the moment we lost full control over you.[/say]")
+		saynn("[say=captain]Да. Мы потеряли возможность усмирять вас. И посмотрите, что вы выкинули в тот самый миг, когда мы утратили полный контроль.[/say]")
 
-		saynn("Captain approaches the pool of Alex's blood and slowly crouches, examining it. Some of it already drips through the holes in the catwalk.")
+		saynn("Капитан подходит к луже крови Алекса и медленно приседает, изучая её. Часть крови уже капает сквозь отверстия в решетчатом настиле.")
 
-		saynn("[say=captain]So much pointless violence. Was it worth it? I doubt so.[/say]")
+		saynn("[say=captain]Столько бессмысленного насилия. Стоило ли оно того? Сомневаюсь.[/say]")
 
-		saynn("[say=pc]You don't strike me as a pacifist, captain.[/say]")
+		saynn("[say=pc]Вы не кажетесь мне пацифистом, капитан.[/say]")
 
-		saynn("[say=captain]I said pointless.[/say]")
+		saynn("[say=captain]Я сказал — бессмысленно.[/say]")
 
-		saynn("Captain shakes his head and gets up before stepping around the blood, still holding his hands behind his back. He is not that far from you two now.. You notice a drug vial hidden in Tavi's paw.. she is slowly unscrewing the lid with her claw..")
+		saynn("Капитан качает головой и встает, обходя лужу крови; руки он всё еще держит за спиной. Сейчас он уже совсем близко к вам двоим... Ты замечаешь пузырек с наркотиком, спрятанный в лапе Тави... она медленно отвинчивает крышку когтем...")
 
-		saynn("[say=tavi]You're right, captain.[/say]")
+		saynn("[say=tavi]Вы правы, капитан.[/say]")
 
-		saynn("He stops and directs his attention towards Tavi.")
+		saynn("Он останавливается и переводит взгляд на Тави.")
 
-		saynn("[say=tavi]Everything must have a reason.[/say]")
+		saynn("[say=tavi]У всего должна быть причина.[/say]")
 
-		saynn("This time it's Tavi's turn to slowly step forward. She halves the distance, there are only about 2 little steps left.. She probably knows what she is doing..")
+		saynn("На этот раз очередь медленно сделать шаг вперед дошла до Тави. Она сокращает дистанцию, осталось всего пара коротких шагов... Похоже, она прекрасно понимает, что делает...")
 
-		saynn("[say=tavi]I can tell you my reasons. I can share. I won't hold anything back.[/say]")
+		saynn("[say=tavi]Я могу поведать тебе свои причины. Могу поделиться. Ничего не утаю.[/say]")
 
-		saynn("[say=captain]I'm interested, really. Excited even. But let's figure out what we're gonna do with you two first.[/say]")
+		saynn("[say=captain]Мне это интересно, правда. Даже любопытно. Но давай сначала решим, что нам делать с вами обоими.[/say]")
 
-		saynn("The tension couldn't be higher.. The guy searches through his pouches, looking for some cuffs. But suddenly one of the guards steps out of the line.")
+		saynn("Напряжение достигло предела... Парень шарит по своим подсумкам в поисках наручников. Но вдруг один из охранников выходит из строя.")
 
-		saynn("[say=nova]Captain! Can I? Please! I know the tall cat well~.[/say]")
+		saynn("[say=nova]Капитан! Можно мне? Пожалуйста! Я ведь отлично знаю эту высокую кошку~.[/say]")
 
-		saynn("The captain turns around and looks at Nova. He is busy, now would be the perfect moment.. But Tavi is standing still.. she looks.. almost paralyzed.. Her eyes..")
+		saynn("Капитан оборачивается и смотрит на Нову. Он занят, и сейчас был бы идеальный момент... Но Тави стоит неподвижно... она выглядит... почти парализованной... Её глаза...")
 
-		saynn("[say=captain]Be my guest, Nova. For some reason I have a bad feeling about trying to cuff them myself.[/say]")
+		saynn("[say=captain]Валяй, Нова. Почему-то у меня нехорошее предчувствие насчет того, чтобы надевать наручники на них самому.[/say]")
 
-		saynn("Tavi whispers..")
+		saynn("Тави шепчет...")
 
-		saynn("[say=tavi]..Oh no..[/say]")
+		saynn("[say=tavi]..О нет..[/say]")
 
-		addButton("Continue", "See what happens next", "nova_bully_tavi")
+		addButton("Продолжить", "Смотреть, что будет дальше", "nova_bully_tavi")
 	if(state == "nova_bully_tavi"):
 		addCharacter("nova")
 		playAnimation(StageScene.Duo, "stand", {pc="tavi", npc="nova"})
-		saynn("It's a husky, wearing some kind of advanced set of armor. She starts approaching you two while the captain retreats back to his guards.")
+		saynn("Это Хаски, на ней какой-то продвинутый комплект брони. Она начинает приближаться к вам двоим, пока капитан отступает к своим охранникам.")
 
-		saynn("[say=tavi]We don't have to do this.[/say]")
+		saynn("[say=tavi]Нам не обязательно это делать.[/say]")
 
-		saynn("[say=nova]Do what~?[/say]")
+		saynn("[say=nova]Что именно~?[/say]")
 
-		saynn("Husky holds her personalized stun baton, this one has seen some battles based on all the scratches.")
+		saynn("Хаски сжимает свой именной электрошокер; судя по царапинам, этот парень уже повидал немало сражений.")
 
-		saynn("[say=tavi]Humiliating me won't end well for you.[/say]")
+		saynn("[say=tavi]Унижение меня не закончится для тебя добром.[/say]")
 
-		saynn("[say=nova]Oh~? You're threatening me? Wanna try me, Tavi~?[/say]")
+		saynn("[say=nova]О~? Ты мне угрожаешь? Хочешь проверить меня на прочность, Тави~?[/say]")
 
-		saynn("Tavi frowns, her free paw extends its claws. Her other paw still holds the vial that she needs to somehow hide. You try to intervene by stepping forward and blocking Tavi from Nova but the husky stops you by pointing her weapon.")
+		saynn("Тави хмурится, её свободная лапа выпускает когти. В другой лапе она всё ещё сжимает флакон, который ей нужно как-то спрятать. Ты пытаешься вмешаться, делая шаг вперёд, чтобы заслонить Тави от Новы, но хаски останавливает тебя, направив на тебя оружие.")
 
-		saynn("[say=nova]Stay there, cutie, I will get to you after I'm done with your friend~.[/say]")
+		saynn("[say=nova]Стой на месте, милашка, я доберусь до тебя сразу после того, как закончу с твоей подружкой~.[/say]")
 
-		saynn("[say=tavi]What do you want, Nova?[/say]")
+		saynn("[say=tavi]Чего ты хочешь, Нова?[/say]")
 
-		saynn("She lowers her weapon and looks at Tavi, her curled up tail wagging slightly.")
+		saynn("Она опускает оружие и смотрит на Тави, при этом её свернутый хвост слегка виляет.")
 
-		saynn("[say=nova]Oh, I want many things~.[/say]")
+		saynn("[say=nova]О, я хочу очень многого~.[/say]")
 
-		saynn("Tavi hums and raises her paws before bringing them behind her head, clearly surrendering. Nova can't help but to chuckle.")
+		saynn("Тави что-то напевает под нос и поднимает лапы, а затем заводит их за голову, явно сдаваясь. Нова не может сдержать смешка.")
 
-		saynn("[say=nova]You make it too easy, sweetheart. I guess there is a subby slut in you after all~.[/say]")
+		saynn("[say=nova]Ты слишком лёгкая добыча, сладенькая. Похоже, в тебе всё-таки сидит покорная шлюшка~.[/say]")
 
-		saynn("The guards behind the captain chuckle. Tavi glares at the husky while her paws begin to sneakily push the vial under her collar, concealing the dangerous item. Inmate collars don't leave your neck much space but that might be an advantage here. After she is done, she offers the husky a kind smile.")
+		saynn("Охранники за спиной капитана посмеиваются. Тави свирепо смотрит на хаски, пока её лапы незаметно заталкивают флакон под ошейник, скрывая опасный предмет. Ошейники заключённых плотно прилегают к шее, но здесь это может стать преимуществом. Закончив, она одаривает хаски ласковой улыбкой.")
 
-		saynn("[say=tavi]Well come here and cuff me then~.[/say]")
+		saynn("[say=tavi]Ну так подойди и надень на меня наручники~.[/say]")
 
-		saynn("As soon as Nova takes another step, Tavi lowers her paws a bit, spooking the guard. Having the bluespace transmitter disabled allows her to do that.")
+		saynn("Как только Нова делает ещё один шаг, Тави слегка опускает лапы, пугая охранницу. То, что передатчик блюспейса отключён, позволяет ей провернуть такой трюк.")
 
-		saynn("[say=nova]You've always been a huge brat, Tavi.[/say]")
+		saynn("[say=nova]Ты всегда была той еще мелкой дрянью, Тави.[/say]")
 
-		addButton("Continue", "See what happens next", "tavi_defeat")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_defeat")
 	if(state == "tavi_defeat"):
 		playAnimation(StageScene.Duo, "kneel", {pc="tavi", npc="nova"})
-		saynn("Tavi doesn't wait for another chance, she suddenly leaps forward and tries to sink her claws into the husky! But Tavi's paw collides with the tip of Nova's stun baton at the last moment. They're both stuck in this position, trying to overpower each other while keeping eye contact.")
+		saynn("Тави не ждет второго шанса: она внезапно бросается вперед, пытаясь вонзить когти в хаски! Но в последний момент лапа Тави сталкивается с кончиком электрошокера Новы. Они замирают в этой позе, пытаясь одолеть друг друга и не разрывая зрительного контакта.")
 
-		saynn("[say=nova]What happened to calling me Mommy, sweetheart?[/say]")
+		saynn("[say=nova]А куда делось это «мамочка», милая?[/say]")
 
-		saynn("Tavi suddenly changes her expression, the smirk quickly fades away.")
+		saynn("Выражение лица Тави резко меняется, ухмылка быстро исчезает.")
 
-		saynn("[say=nova]We had so much fun together, you and I.[/say]")
+		saynn("[say=nova]Нам же было так весело вместе, тебе и мне.[/say]")
 
-		saynn("[say=tavi]Don't say that![/say]")
+		saynn("[say=tavi]Не говори так![/say]")
 
-		saynn("[say=nova]What? Am I lying? Call me a liar then. But you know well enough that it would be a lie.[/say]")
+		saynn("[say=nova]Что? Разве я вру? Ну так назови меня лгуньей. Но ты-то прекрасно понимаешь, что это будет ложью.[/say]")
 
-		saynn("Tavi grits her teeth, she is growling. But her ears.. they're drooping. Her whole posture switches to a less confident one.")
+		saynn("Тави стискивает зубы, она рычит. Но её уши... они поникли. Вся её поза стала менее уверенной.")
 
-		saynn("[say=tavi]Fuck.. you..[/say]")
+		saynn("[say=tavi]Блять... ты...[/say]")
 
-		saynn("[say=nova]You were so happy being my little cutie, Tavi. What happened? Listen. It's okay to be weak sometimes, mommy will help you get through tough times. That's what mommies are for.[/say]")
+		saynn("[say=nova]Тебе так нравилось быть моей маленькой милашкой, Тави. Что случилось? Послушай. Это нормально — иногда быть слабой, мамочка поможет тебе пережить трудные времена. Для этого мамочки и нужны.[/say]")
 
-		saynn("Tavi's eyes get watery. Are those tears? But she desperately continues trying to sink her claws into Nova's neck. She suddenly uses her other paw to scratch the guard's cheek, leaving a few bleeding wounds. Nova yelps.")
+		saynn("Глаза Тави наполняются влагой. Неужели это слезы? Но она отчаянно продолжает пытаться вонзить когти в шею Новы. Внезапно она использует другую лапу, чтобы полоснуть охранницу по щеке, оставляя несколько кровоточащих ран. Нова вскрикивает.")
 
-		saynn("[say=tavi]Look what you made me do..[/say]")
+		saynn("[say=tavi]Смотри, что ты со мной сделала...[/say]")
 
-		saynn("Nova rubs her cheek and sees blood on her paw. Her voice is not so playful now.")
+		saynn("Нова потирает щеку и видит кровь на своей лапе. Её голос уже не звучит так игриво.")
 
-		saynn("[say=nova]Is that how you wanna act? Tavi's all grown up now? Such a brave girl.[/say]")
+		saynn("[say=nova]Так ты решила вести себя? Тави совсем взрослая стала? Какая смелая девочка.[/say]")
 
-		saynn("She shoves Tavi back slightly and raises her weapon, about to strike. Tavi braces herself. A few seconds of silence.")
+		saynn("Она слегка отталкивает Тави и поднимает оружие, готовясь нанести удар. Тави внутренне сжимается. Несколько секунд тишины.")
 
-		saynn("[say=nova]So all of that was for nothing. All the things we did together. Might as well be forgotten. That's it I guess.[/say]")
+		saynn("[say=nova]Значит, всё это было зря. Всё, что мы делали вместе. Можно просто забыть об этом. Наверное, на этом всё.[/say]")
 
-		saynn("Nova chooses not to strike and lowers her weapon instead. She then turns around and proceeds to step away. You notice a few tears forming under her eyes too.")
+		saynn("Нова решает не наносить удар и вместо этого опускает оружие. Затем она разворачивается и начинает уходить. Вы замечаете, что у неё тоже на глазах наворачиваются слезы.")
 
-		saynn("[say=tavi]..Wait. Nova![/say]")
+		saynn("[say=tavi]...Погоди. Нова![/say]")
 
-		saynn("[say=nova]There is nothing left for me to say.[/say]")
+		saynn("[say=nova]Мне больше нечего сказать.[/say]")
 
-		saynn("Tavi shakes. You saw her cunning, angry, exposed. But you never saw her so weak. She suddenly drops to her knees and struggles to keep herself from crying.")
+		saynn("Тави дрожит. Вы видели её хитрой, злой, разоблаченной. Но вы никогда не видели её такой слабой. Она внезапно падает на колени, изо всех сил стараясь не разрыдаться.")
 
-		saynn("[say=tavi]..I'm sorry..[/say]")
+		saynn("[say=tavi]Прости меня...[/say]")
 
-		saynn("Nova stops. You catch her little smile as she looks back over her shoulder. All the guards look surprised. The captain claps quietly.")
+		saynn("Нова замирает. Ты замечаешь её мимолётную улыбку, когда она оглядывается через плечо. Все охранники выглядят удивлёнными. Капитан тихо хлопает в ладоши.")
 
-		saynn("[say=nova]Thank you, cutie.[/say]")
+		saynn("[say=nova]Спасибо, милашка.[/say]")
 
-		addButton("Protect Tavi", "You can't let this continue", "protect_tavi")
-		addButton("Surrender", "No point in fighting", "surrender")
+		addButton("Защитить Тави", "Нельзя это так оставлять", "protect_tavi")
+		addButton("Сдаться", "Нет смысла бороться", "surrender")
 	if(state == "surrender"):
 		setFlag("TaviModule.Ch3SurrenderedToNova", true)
 		playAnimation(StageScene.Duo, "stand", {npc="nova"})
-		saynn("Nova turns around and approaches you now. You raise your hands.")
+		saynn("Нова разворачивается и направляется к тебе. Ты поднимаешь руки.")
 
 		if (getFlag("NovaModule.Nova_Introduced") || getFlag("NovaModule.Nova_SawPC")):
-			saynn("[say=nova]Good choice, cutie~.[/say]")
+			saynn("[say=nova]Хороший выбор, милашка~.[/say]")
 
 		else:
-			saynn("[say=nova]Don't remember seeing you before. With Tavi especially. But you picked the right choice~.[/say]")
+			saynn("[say=nova]Что-то не припомню тебя раньше. Особенно рядом с Тави. Но ты сделала правильный выбор~.[/say]")
 
-		saynn("[say=pc]No need for more humiliation.[/say]")
+		saynn("[say=pc]Хватит с неё унижений.[/say]")
 
-		saynn("Nova chuckles as her paws produce some cuffs before locking them around your hands.")
+		saynn("Нова усмехается, достает из закромов наручники и защелкивает их на твоих запястьях.")
 
-		saynn("[say=nova]Humiliation~? Is it really humiliation if we both were enjoying it? Do you need a mommy by the way~?[/say]")
+		saynn("[say=nova]Унижение~? А разве это унижение, если нам обоим было в кайф? Кстати, тебе мамочка нужна~?[/say]")
 
-		saynn("[say=pc]I'm fine for now. I have bigger problems for now it seems.[/say]")
+		saynn("[say=pc]Пока что я в порядке. Похоже, у меня сейчас есть проблемы посерьезнее.[/say]")
 
-		saynn("Nova produces another pair of cuffs and starts locking them around Tavi's hands. The tall kitty has her head tilted down, her eyes watch Nova's heavy boots. The guard scritches the feline under her chin.")
+		saynn("Нова достает еще одну пару наручников и начинает застегивать их на руках Тави. Высокая кошечка склонила голову, не сводя глаз с тяжелых сапог Новы. Охранница почесывает кошачью мордашку под подбородком.")
 
-		saynn("[say=nova]Yeah, any misbehaving needs a fitting punishment, someone here knows that very well. But I will let the captain know that you two were very compliant~.[/say]")
+		saynn("[say=nova]Да, любое непослушание требует достойного наказания, и кто-то здесь это прекрасно знает. Но я передам капитану, что вы двое были очень послушными~.[/say]")
 
-		saynn("Nova leashes both of you and brings you out of the room. It seems the engineers quickly fixed all the damage that you two caused because the light on your and Tavi's collars began working very soon.")
+		saynn("Нова надевает на вас обоих поводки и выводит из комнаты. Похоже, инженеры быстро устранили все повреждения, которые вы устроили, потому что индикаторы на твоем ошейнике и ошейнике Тави вскоре снова загорелись.")
 
-		saynn("While following Nova through all the corridors you can't throw this thought out of your head that all of this might have been for nothing. But asking Tavi now wouldn't be the best choice.")
+		saynn("Следуя за Новой по коридорам, ты никак не можешь избавиться от мысли, что всё это могло быть напрасным. Но спрашивать об этом Тави сейчас — не лучшая идея.")
 
-		addButton("Continue", "See what happens next", "ending_surrendered")
+		addButton("Продолжить", "Смотреть, что будет дальше", "ending_surrendered")
 	if(state == "ending_surrendered"):
 		playAnimation(StageScene.HangingDuo, "idle", {npc="tavi", npcAction="kneel", bodyState={naked=true}, npcBodyState={naked=true}})
 		removeCharacter("nova")
 		removeCharacter("captain")
 		aimCameraAndSetLocName("solitary_cell")
-		saynn("You and Tavi got brought somewhere. Somewhere dark. Your hands got cuffed to something rigid. Tavi's hands too. Nova then just leaves you two alone.")
+		saynn("Вас с Тави привели куда-то. В какое-то темное место. Ваши руки пристегнули к чему-то жесткому. Руки Тави — тоже. После чего Нова просто оставляет вас двоих наедине.")
 
-		saynn("[say=pc]What was..[/say]")
+		saynn("[say=pc]Что это было...[/say]")
 
-		saynn("Tavi cuts you off.")
+		saynn("Тави перебивает тебя.")
 
-		saynn("[say=tavi]Let's just.. rest.. Save any questions for tomorrow.. I'm tired..[/say]")
+		saynn("[say=tavi]Давай просто.. отдохнем.. Оставим вопросы на завтра.. Я так устала..[/say]")
 
-		saynn("[say=pc]Okay..[/say]")
+		saynn("[say=pc]Ладно..[/say]")
 
-		saynn("Well, might as well. The dim lighting doesn't let you see much but it sure makes you sleepy.")
+		saynn("Что ж, пожалуй, так и сделаем. При тусклом свете много не разглядишь, зато в сон клонит нещадно.")
 
-		saynn("It was a hard day.. You close your eyes and almost instantly fall asleep.")
+		saynn("День выдался тяжелым.. Ты закрываешь глаза и почти мгновенно проваливаешься в сон.")
 
-		addButton("Sleepy time", "Night night", "startSolitary")
+		addButton("Время поспать", "Спокойной ночи", "startSolitary")
 	if(state == "protect_tavi"):
 		setFlag("TaviModule.Ch3ProtectedTavi", true)
 		playAnimation(StageScene.Duo, "stand", {npc="nova"})
-		saynn("You make a call out towards Nova.")
+		saynn("Ты окликаешь Нову.")
 
-		saynn("[say=pc]You enjoy it, don't you?[/say]")
+		saynn("[say=pc]Тебе ведь нравится, правда?[/say]")
 
-		saynn("The husky turns out and tilts her head slightly. You take a spot between her and Tavi.")
+		saynn("Хаски оборачивается и слегка наклоняет голову. Ты устраиваешься между ней и Тави.")
 
-		saynn("[say=tavi]Don't..[/say]")
+		saynn("[say=tavi]Не надо..[/say]")
 
-		saynn("[say=nova]Excuse you?[/say]")
+		saynn("[say=nova]Прошу?[/say]")
 
-		saynn("[say=pc]Breaking inmates. Degrading and humiliating them. Abusing them verbally and through actions, manipulating until they're ready to serve whatever desires you have.[/say]")
+		saynn("[say=pc]Ломать заключенных. Унижать и деградировать их. Изводить их словесно и делом, манипулируя ими до тех пор, пока они не будут готовы исполнять любые твои прихоти.[/say]")
 
-		saynn("Nova frowns, her amber eyes drilling you.")
+		saynn("Нова хмурится, сверля тебя своими янтарными глазами.")
 
-		saynn("[say=nova]You couldn't be more wrong.[/say]")
+		saynn("[say=nova]Как бы не так.[/say]")
 
-		saynn("You notice that the captain has his brow raised, he's been just carefully watching and observing the scene. But now he seemingly calls a few guards to him.")
+		saynn("Вы замечаете, что капитан приподнял бровь — он внимательно и осторожно наблюдал за происходящим. Но теперь он, кажется, подзывает к себе нескольких охранников.")
 
-		saynn("[say=pc]You think I'm blind? Or stupid? I won't let you do this to Tavi.[/say]")
+		saynn("[say=pc]Думаете, я слепая? Или тупая? Я не позволю вам так обращаться с Тави.[/say]")
 
-		saynn("[say=nova]I don't think that, sweetie. I think you should ask her yourself when you get a chance.[/say]")
+		saynn("[say=nova]Не думаю, милочка. Думаю, тебе стоит спросить её об этом самой, когда представится случай.[/say]")
 
-		saynn("Nova grabs her stun baton again and holds a warrior's pose, slightly swaying her girly hips.")
+		saynn("Нова снова хватает электрошокер и принимает боевую стойку, слегка покачивая своими девичьими бедрами.")
 
-		saynn("[say=nova]But first. I think you owe me an apology.[/say]")
+		saynn("[say=nova]Но сначала. Думаю, ты задолжала мне извинения.[/say]")
 
-		saynn("You shake your head and raise your fists, clearly not ready to give in.")
+		saynn("Вы качаете головой и сжимаете кулаки, явно не собираясь сдаваться.")
 
-		saynn("[say=nova]Well then.[/say]")
+		saynn("[say=nova]Ну что ж.[/say]")
 
-		saynn("Nova brings up a little screen that she has on her wrist. She presses a few buttons, causing the reactor on her back to engage. Her armor is now fully active.")
+		saynn("Нова выводит на запястье небольшой экран. Она нажимает несколько кнопок, и реактор на её спине оживает. Её броня полностью активирована.")
 
-		saynn("[say=nova]If a brat needs to be taught a lesson..[/say]")
+		saynn("[say=nova]Если мелкой дряни нужно преподать урок...[/say]")
 
-		saynn("[say=captain]Nova, let others handle it.[/say]")
+		saynn("[say=captain]Нова, позволь остальным разобраться.[/say]")
 
-		saynn("The captain suddenly sends a few guards towards you. Luckily, the catwalk is only wide enough for them to be able to fight you on at a time.")
+		saynn("Капитан внезапно посылает в твою сторону нескольких охранников. К счастью, мостки настолько узкие, что они могут сражаться с тобой только по одному.")
 
-		saynn("[say=nova]Aww, really?[/say]")
+		saynn("[say=nova]Ой, да ладно вам?[/say]")
 
-		saynn("The first guard approaches you..")
+		saynn("Первый охранник приближается к тебе...")
 
-		addButton("Fight", "Start the fight", "first_fight")
+		addButton("Драться", "Начать бой", "first_fight")
 	if(state == "lost_to_guard"):
 		setFlag("TaviModule.Ch3DefeatedByGuard", true)
-		saynn("You got defeated by the guard. Unable to continue, you fall to your knees and then hit the floor. The captain walks up to you and crouches nearby. All the while Nova goes ahead and cuffs Tavi's paws.")
+		saynn("Охранник одолел тебя. Не в силах продолжать, ты падаешь на колени, а затем шлепаешься на пол. Капитан подходит к тебе и приседает рядом. Тем временем Нова берет инициативу в свои руки и заковывает лапы Тави в наручники.")
 
-		saynn("[say=captain]Your passion is commendable, inmate.[/say]")
+		saynn("[say=captain]Твоя страсть похвальна, заключенная.[/say]")
 
-		saynn("[say=pc]T-thanks..[/say]")
+		saynn("[say=pc]С-спасибо...[/say]")
 
-		saynn("[say=captain]That's why you must be kept here, in BDCC.[/say]")
+		saynn("[say=captain]Именно поэтому тебя нужно держать здесь, в BDCC.[/say]")
 
-		saynn("Nova then straddles your chest and starts cuffing your hands too. She gives your cheeks some taps.")
+		saynn("Затем Нова усаживается верхом тебе на грудь и начинает сковывать твои руки. Она слегка шлепает тебя по щекам.")
 
-		saynn("[say=nova]Yeah, like Tavi.[/say]")
+		saynn("[say=nova]Ну, как Тави.[/say]")
 
-		saynn("Nova leashes both of you and brings you out of the room. It seems the engineers quickly fixed all the damage that you two caused because the light on your and Tavi's collars began working very soon.")
+		saynn("Нова надевает на вас обоих поводки и выводит из комнаты. Похоже, инженеры быстро устранили все повреждения, которые вы устроили, потому что индикаторы на твоем ошейнике и ошейнике Тави вскоре снова загорелись.")
 
-		saynn("While following Nova through all the corridors you can't throw this thought out of your head that all of this might have been for nothing. But asking Tavi now wouldn't be the best choice.")
+		saynn("Следуя за Новой по коридорам, ты никак не можешь избавиться от мысли, что всё это могло быть напрасным. Но спрашивать об этом Тави сейчас — не лучшая идея.")
 
-		addButton("Continue", "See what happens next", "ending_surrendered")
+		addButton("Продолжить", "Смотреть, что будет дальше", "ending_surrendered")
 	if(state == "won_first_guard"):
-		saynn("You defeated the first guard! They get quickly dragged away while another one starts approaching you.")
+		saynn("Вы одолели первого охранника! Его быстро утаскивают прочь, а к вам уже спешит следующий.")
 
-		saynn("The captain crosses his arms.")
+		saynn("Капитан скрещивает руки на груди.")
 
-		addButton("Fight", "Start the fight", "second_fight")
+		addButton("Драться", "Начать бой", "second_fight")
 	if(state == "won_second_guard"):
-		saynn("The second guard got defeated by your hand. They quickly get replaced by another one. How many of them are there?")
+		saynn("Второй охранник повержен вашей рукой. Его тут же сменяет другой. Сколько их там вообще?")
 
-		saynn("The captain scratches his chin.")
+		saynn("Капитан чешет подбородок.")
 
-		saynn("[say=nova]When is it gonna be my turn?[/say]")
+		saynn("[say=nova]Ну когда уже настанет моя очередь?[/say]")
 
-		saynn("[say=captain]Patience, Nova.[/say]")
+		saynn("[say=captain]Терпение, Нова.[/say]")
 
-		addButton("Fight", "Start the fight", "third_fight")
+		addButton("Драться", "Начать бой", "third_fight")
 	if(state == "won_third_guard"):
 		playAnimation(StageScene.Duo, "stand", {npc="nova"})
-		saynn("The third guard falls to their knees, unable to fight a second longer. And it seems.. that's all of the guards that were brave enough to try to fight you. But Nova is still there, smiling. She glances at the captain and receives a nod from him.")
+		saynn("Третий охранник падает на колени, не в силах сражаться дольше секунды. И, похоже... это все охранники, которым хватило смелости бросить вам вызов. Но Нова всё еще здесь, и она улыбается. Она бросает взгляд на капитана и получает от него одобрительный кивок.")
 
-		saynn("Tavi looks spaced out, just holding her head low.")
+		saynn("Тави выглядит отрешенной, просто низко опустив голову.")
 
-		saynn("[say=nova]Your streak ends with me, sweetheart.[/say]")
+		saynn("[say=nova]Твоя серия побед закончится на мне, дорогуша.[/say]")
 
-		addButton("Fight", "Start the fight", "nova_fight")
+		addButton("Драться", "Начать бой", "nova_fight")
 	if(state == "won_nova"):
 		setFlag("TaviModule.Ch3DefeatedNova", true)
 		playAnimation(StageScene.Duo, "defeat", {npc="captain", npcAction="firepistol"})
-		saynn("Nova kneels before you. Before she can react you grab her stun stick and smack her. The armor absorbs some of the shock but not everything, the husky grunts.")
+		saynn("Нова преклоняет перед тобой колени. Прежде чем она успевает среагировать, ты выхватываешь её электрошокер и бьешь ею. Броня поглощает часть разряда, но не весь, и девушка хрипло стонет.")
 
-		saynn("[say=pc]This is for what you did to Tavi.[/say]")
+		saynn("[say=pc]Это тебе за то, что ты сделала с Тави![/say]")
 
-		saynn("Weapon in hand, no ability to shock you through the collar, you might actually have a slight chance. But no, the captain pulls out his weapon, some kind of energy gun, and points it at you.")
+		saynn("Оружие в руках, и ошейник больше не может тебя шокировать — возможно, у тебя появился призрачный шанс. Но нет, капитан достает свое оружие, какой-то энергетический пистолет, и наводит его на тебя.")
 
-		saynn("[say=captain]I suggest you drop the weapon and surrender, inmate.[/say]")
+		saynn("[say=captain]Советую бросить пушку и сдаться, заключенная.[/say]")
 
-		saynn("[say=pc]Or what? You're gonna shoot me right here?[/say]")
+		saynn("[say=pc]И что? Прямо здесь в меня выстрелишь?[/say]")
 
-		saynn("The captain listens to your words and nods to the side slightly before aiming at your leg and pulling the trigger. The gun shoots out a beam of electricity that hits your foot, causing a lot of pain. You drop to your knees and cry out from pain.")
+		saynn("Капитан выслушивает твои слова, слегка кивает кому-то в сторону, а затем целится тебе в ногу и жмет на курок. Пистолет выпускает луч электричества, который бьет прямо в стопу, вызывая дикую боль. Ты падаешь на колени, вскрикивая от мучений.")
 
-		saynn("[say=pc]Ugh. Fuck off with that gun.[/say]")
+		saynn("[say=pc]Ух... Да пошел ты со своим пушкалом![/say]")
 
-		saynn("You don't drop the stick, instead attempting to make another swing at the guard. The captain shrugs and shoots you right in the chest. Your whole body locks up. The beam makes you grit your teeth while every muscle in your body tenses up uncontrollably. And the guy is persistent, he holds the trigger for way longer this time.")
+		saynn("Ты не бросаешь шокер, а вместо этого пытаешься снова замахнуться на охранника. Капитан лишь пожимает плечами и стреляет тебе прямо в грудь. Всё твое тело сводит судорогой. От луча зубы скрежещут, а каждая мышца неконтролируемо напрягается. И этот ублюдок не унимается — на этот раз он держит курок гораздо дольше.")
 
-		saynn("[say=captain]Your passion is commendable, inmate.[/say]")
+		saynn("[say=captain]Твоя страсть похвальна, заключенная.[/say]")
 
-		saynn("You can barely hear the captain. Your conciseness starts to fade away..")
+		saynn("Голос капитана доносится как будто издалека. Сознание начинает ускользать...")
 
-		saynn("[say=captain]That's why you must be kept here, in BDCC.[/say]")
+		saynn("[say=captain]Именно поэтому тебя нужно держать здесь, в BDCC.[/say]")
 
-		saynn("He sees that you're getting weaker and stops. And as you collapse, everything goes dark..")
+		saynn("Заметив, что ты слабеешь, он прекращает стрельбу. И когда ты валишься с ног, всё погружается во тьму...")
 
-		addButton("Sleepy time", "Night night", "startSolitary")
+		addButton("Время поспать", "Спокойной ночи", "startSolitary")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

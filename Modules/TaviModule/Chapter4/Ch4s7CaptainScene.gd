@@ -11,739 +11,739 @@ func _run():
 		playAnimation(StageScene.HangingDuo, "idle", {npc="tavi", npcAction="kneel", bodyState={naked=true}, npcBodyState={naked=true}})
 		aimCameraAndSetLocName("solitary_cell")
 		addCharacter("tavi", ["naked"])
-		saynn("You, the real you, blink a few times. Tavi's story was so immersive that you forgot that you two are still stuck in solitary, naked and with your hands cuffed.")
+		saynn("Ты, твое истинное «я», несколько раз моргаешь. История Тави была настолько захватывающей, что ты на миг забываешь: вы двое всё еще заперты в одиночке, голые и в наручниках.")
 
-		saynn("Tavi looks down at her purple body with green glowing spots. Then she looks at you.")
+		saynn("Тави переводит взгляд на свое фиолетовое тело с мерцающими зелеными пятнами. Затем она смотрит на тебя.")
 
-		saynn("[say=tavi]So. What do you think? Am I a monster for what I did?[/say]")
+		saynn("[say=tavi]Ну? Что думаешь? Я монстр из-за того, что натворила?[/say]")
 
-		addButton("Kinda", "That was pretty fucked up", "say_yes")
-		addButton("No", "Tavi did what she had to do", "say_no")
+		addButton("Вроде того", "Это было реально жестко", "say_yes")
+		addButton("No", "Тави сделала то, что должна была", "say_no")
 	if(state == "say_yes"):
 		setFlag("TaviModule.Ch4SaidTaviIsMonster", true)
-		saynn("[say=pc]That was pretty fucked up, you destroyed an entire space station.[/say]")
+		saynn("[say=pc]Это было реально жестко, ты же уничтожила целую космическую станцию.[/say]")
 
-		saynn("Tavi tilts her head down again. She is quiet for a few seconds.")
+		saynn("Тави снова склоняет голову. Несколько секунд она молчит.")
 
-		saynn("[say=tavi]I'd say that I had no choice.[/say]")
+		saynn("[say=tavi]Я бы сказала, что у меня не было выбора.[/say]")
 
-		saynn("You pick up her subtle smile.")
+		saynn("Ты замечаешь её едва уловимую улыбку.")
 
-		saynn("[say=tavi]But that would be a lie.[/say]")
+		saynn("[say=tavi]Но это было бы ложью.[/say]")
 
-		saynn("She looks at you, her eyes shine brightly in the dim cell.")
+		saynn("Она смотрит на тебя, и её глаза ярко сияют в полумраке камеры.")
 
-		saynn("[say=tavi]I don't regret a single thing, cutie. Seeing that station collapse under its own weight.. It's a highlight of my life.[/say]")
+		saynn("[say=tavi]Я ни о чём не жалею, милашка. Видеть, как эта станция рушится под собственным весом... Это один из самых ярких моментов в моей жизни.[/say]")
 
-		saynn("[say=pc]A lot of people died, how can that be a highlight?[/say]")
+		saynn("[say=pc]Погибло столько людей, как это может быть ярким моментом?[/say]")
 
-		saynn("Tavi rattles her chains.")
+		saynn("Тави гремит своими цепями.")
 
-		saynn("[say=tavi]Because I had no other highlights, okay?![/say]")
+		saynn("[say=tavi]Потому что у меня больше не было никаких ярких моментов, ясно?![/say]")
 
-		saynn("She frowned at you. But then quickly calms down. Tavi throws her head back, staring at the ceiling.")
+		saynn("Она нахмурилась, глядя на тебя, но быстро успокоилась. Тави запрокинула голову, уставившись в потолок.")
 
-		saynn("[say=tavi]My entire life is a mess. Partly because the world is a mess. Our dreams guide us. After that our choices define us. But what should you do if the world only gives you bad ones?[/say]")
+		saynn("[say=tavi]Вся моя жизнь — сплошной бардак. Отчасти потому, что и мир вокруг — бардак. Нами движут мечты. А затем нас определяют наши поступки. Но что делать, если мир подкидывает тебе только хреновые варианты?[/say]")
 
-		saynn("You hear quiet clapping coming from the corridor, someone is approaching.")
+		saynn("Из коридора доносятся тихие хлопки — кто-то приближается.")
 
-		addButton("Continue", "See what happens next", "captain_walks_in")
+		addButton("Продолжить", "Смотреть, что будет дальше", "captain_walks_in")
 	if(state == "say_no"):
 		setFlag("TaviModule.Ch4SaidTaviIsMonster", false)
-		saynn("[say=pc]You did what you had to do to survive. I would have probably done the same.[/say]")
+		saynn("[say=pc]Ты сделала то, что должна была сделать, чтобы выжить. Наверное, я бы поступила так же.[/say]")
 
-		saynn("Tavi offers you a soft smile, her eyes shine brightly in the dim cell.")
+		saynn("Тави мягко улыбается тебе, её глаза ярко сияют в полумраке камеры.")
 
-		saynn("[say=tavi]Yeah, well. Try to avoid being like me, cutie.[/say]")
+		saynn("[say=tavi]Ну, да. Старайся не становиться такой же, как я, милашка.[/say]")
 
-		saynn("[say=pc]Why so?[/say]")
+		saynn("[say=pc]Это ещё почему?[/say]")
 
-		saynn("[say=tavi]I would say that I had no choice. But that would be a lie. I made many choices before that.[/say]")
+		saynn("[say=tavi]Я бы сказала, что у меня не было выбора. Но это было бы ложью. До этого момента я сделала немало решений.[/say]")
 
-		saynn("Her smile is still there but it looks more ominous combined with her dark tone.")
+		saynn("Улыбка всё ещё играет на её губах, но в сочетании с мрачным тоном она кажется зловещей.")
 
-		saynn("[say=tavi]And I don't regret a single thing. Seeing that station collapse under its own weight.. It's a highlight of my life.[/say]")
+		saynn("[say=tavi]И я ни о чём не жалею. Видеть, как эта станция рушится под собственным весом... Это один из самых ярких моментов в моей жизни.[/say]")
 
-		saynn("[say=pc]Wow.[/say]")
+		saynn("[say=pc]Ого.[/say]")
 
-		saynn("[say=tavi]Now I want everyone who worked on that station to die. Just so there can be less people like me.[/say]")
+		saynn("[say=tavi]Теперь я хочу, чтобы каждый, кто работал на той станции, сдох. Просто чтобы таких, как я, стало поменьше.[/say]")
 
-		saynn("[say=pc]You.. you can't stop that, I don't think.[/say]")
+		saynn("[say=pc]Ты... думаю, тебе это не остановить.[/say]")
 
-		saynn("Tavi tilts her head slightly.")
+		saynn("Тави слегка наклоняет голову набок.")
 
-		saynn("[say=tavi]I can surely try. You know.. Each kill.. makes me feel something inside. Something that I can't quite describe. Like I'm getting closer to the truth. And that feeling beats not feeling anything at all.[/say]")
+		saynn("[say=tavi]А я определённо попробую. Знаешь... каждое убийство... заставляет меня что-то чувствовать внутри. Что-то, что трудно описать. Будто я становлюсь ближе к истине. И это чувство куда лучше, чем полное оцепенение.[/say]")
 
-		saynn("[say=pc]I guess..[/say]")
+		saynn("[say=pc]Наверное..[/say]")
 
-		saynn("You hear quiet clapping coming from the corridor, someone is approaching.")
+		saynn("Из коридора доносятся тихие хлопки — кто-то приближается.")
 
-		addButton("Continue", "See what happens next", "captain_walks_in")
+		addButton("Продолжить", "Смотреть, что будет дальше", "captain_walks_in")
 	if(state == "captain_walks_in"):
 		addCharacter("captain")
 		playAnimation(StageScene.HangingDuo, "idle", {npc="captain", bodyState={naked=true}})
-		saynn("Captain Wright approaches your cell. You're still divided by a thick glass panel but it seems to have a few small holes.")
+		saynn("Капитан Райт подходит к твоей камере. Вас всё ещё разделяет толстая стеклянная панель, но в ней, кажется, есть несколько небольших отверстий.")
 
-		saynn("[say=captain]That was a very sad story, Tavi.[/say]")
+		saynn("[say=captain]Это была очень грустная история, Тави.[/say]")
 
-		saynn("Tavi instantly shows off her fangs, she keeps her legs shut. Even though the captain's voice seems genuine.")
+		saynn("Тави мгновенно скалится, демонстрируя клыки, и плотно сжимает ноги. Несмотря на то, что голос капитана звучит искренне.")
 
-		saynn("[say=captain]I'm being serious. But, sadly, your methods do go against the AlphaCorp's laws. Which is why you're here, in my possession. I hope at least that part seems fair to you.[/say]")
+		saynn("[say=captain]Я серьезно. Но, к сожалению, твои методы идут вразрез с законами АльфаКорп. Именно поэтому ты здесь, в моей власти. Надеюсь, хотя бы эта часть кажется тебе справедливой.[/say]")
 
-		saynn("[say=tavi]Slavery used to be legal. Well, it still is, I guess. Eavesdropping can get you in trouble, captain.[/say]")
+		saynn("[say=tavi]Раньше рабство было законным. Ну, наверное, оно и сейчас законно. Подслушивать — дело опасное, капитан.[/say]")
 
-		saynn("He chuckles softly.")
+		saynn("Он тихо посмеивается.")
 
-		saynn("[say=captain]It's you who is gonna tell me that? And besides, I didn't learn it from you. Your last little infiltration mission has left me quite a surprise. A very helpful surprise.[/say]")
+		saynn("[say=captain]Это ты собираешься мне это говорить? И вообще, я научилась этому не у тебя. Твоя последняя маленькая инфильтрация стала для меня настоящим сюрпризом. Очень полезным сюрпризом.[/say]")
 
-		saynn("[say=tavi]What are you talking about?[/say]")
+		saynn("[say=tavi]О чем ты вообще говоришь?[/say]")
 
-		saynn("[say=captain]Let me show you rather than trying to explain.[/say]")
+		saynn("[say=captain]Позволь мне лучше показать, чем пытаться объяснить.[/say]")
 
-		saynn("He produces some kind of spherical object. Seems to be a projector of sorts. He finds a button on it and presses it..")
+		saynn("Он достает какой-то сферический предмет. Похоже на своего рода проектор. Он находит на нем кнопку и нажимает её...")
 
-		addButton("Continue", "See what happens next", "elena_appears")
+		addButton("Продолжить", "Смотреть, что будет дальше", "elena_appears")
 	if(state == "elena_appears"):
 		addCharacter("elena")
 		playAnimation(StageScene.HangingDuo, "idle", {npc="elena", bodyState={naked=true}})
-		saynn("The projector constructs a hologram in the air. A hologram.. of Elena.")
+		saynn("Проектор выстраивает в воздухе голограмму. Голограмму... Елены.")
 
-		saynn("[say=elena]Tavi, they found the ship! I tried to triangulate your position but they were faster..[/say]")
+		saynn("[say=elena]Тави, они нашли корабль! Я пыталась вычислить твои координаты, но они оказались быстрее...[/say]")
 
-		saynn("Tavi's face shows a constant emotion. A mix of regret and anger.")
+		saynn("На лице Тави застыла смесь эмоций — смесь сожаления и ярости.")
 
-		saynn("[say=tavi]It's.. it's fine, Elena. I'm glad you're okay. Don't tell them anything.[/say]")
+		saynn("[say=tavi]Все... все хорошо, Елена. Я рад, что ты в порядке. Ничего им не говори.[/say]")
 
-		saynn("[say=elena]I'm sorry, Tavi.. I couldn't..[/say]")
+		saynn("[say=elena]Прости, Тави... Я не смогла...[/say]")
 
-		addButton("Continue", "See what happens next", "elena_goes_away")
+		addButton("Продолжить", "Смотреть, что будет дальше", "elena_goes_away")
 	if(state == "elena_goes_away"):
 		removeCharacter("elena")
 		playAnimation(StageScene.HangingDuo, "idle", {npc="captain", bodyState={naked=true}})
-		saynn("The captain presses the button on the projector, causing the hologram to fade away.")
+		saynn("Капитан нажимает на кнопку проектора, и голограмма начинает медленно таять.")
 
-		saynn("[say=captain]Your little personal assistant was quite useful, she helped us to solve a lot of mysteries. We finally know everything that you. And I know more about you now. I like learning the past lives of inmates here.[/say]")
+		saynn("[say=captain]Твоя маленькая личная помощница была весьма полезна, она помогла нам раскрыть немало тайн. Теперь мы наконец-то знаем о тебе всё. И я теперь знаю о тебе гораздо больше. Мне нравится изучать прошлое здешних заключенных.[/say]")
 
-		saynn("Tavi goes quiet. But you can't stay silent anymore.")
+		saynn("Тави замолкает. Но ты больше не можешь молчать.")
 
-		saynn("[say=pc]Before ordering to kill them? Or brainwashing? Breeding? What is your favorite fetish, captain?[/say]")
+		saynn("[say=pc]Прежде чем отдать приказ убить их? Или промыть мозги? Или начать разведение? Какой у тебя любимый фетиш, капитан?[/say]")
 
-		saynn("He directs his attention to you now. And he looks surprised after your words.")
+		saynn("Теперь он переводит взгляд на тебя. И твои слова заставляют его выглядеть искренне удивленным.")
 
-		saynn("[say=captain]Killing? No. Taking away someone's life is the worst thing you can do. It is necessary sometimes, yes. But, as a captain of BDCC, I strive to do better.[/say]")
+		saynn("[say=captain]Убивать? Нет. Лишать кого-то жизни — это худшее, что можно сделать. Иногда это необходимо, да. Но как капитан БДКЦ, я стремлюсь к большему.[/say]")
 
-		saynn("He crosses his arms.")
+		saynn("Он скрещивает руки на груди.")
 
-		saynn("[say=captain]Most of you can never be integrated into a normal society ever again because of your past deeds. Doesn't mean we should give up on you. But the process of redemption should start with understanding.[/say]")
+		saynn("[say=captain]Большинство из вас из-за своих прошлых деяний уже никогда не смогут вернуться в нормальное общество. Но это не значит, что на вас нужно ставить крест. Просто процесс искупления должен начинаться с понимания.[/say]")
 
-		saynn("[say=pc]And what if they won't understand? You will brainwash them and start from scratch? Sounds so scummy.[/say]")
+		saynn("[say=pc]А что, если они не захотят понимать? Вы тогда начнете их промывать мозги и начинать всё с чистого листа? Звучит довольно гнусно.[/say]")
 
-		saynn("Captain gets quiet for a few seconds, his canine eyes watching you and Tavi. He leans against the glass, getting closer to you.")
+		saynn("Капитан на несколько секунд замолкает, сверля тебя и Тави своими волчьими глазами. Он прислоняется к стеклу, наклоняясь ближе к тебе.")
 
-		saynn("[say=captain]Brainwashing? Hah. Where did you get that idea from? Brainwashing kills the soul. No. I prefer to show people why they are wrong and hope that they change.[/say]")
+		saynn("[say=captain]Промывка мозгов? Хах. С чего ты это взяла? Промывка мозгов убивает душу. Нет. Я предпочитаю показывать людям, в чем они неправы, и надеяться, что они изменятся.[/say]")
 
-		saynn("Huh? Is he lying? You look at Tavi. She rolls her eyes. You have the proof that he is lying but telling him about it would.. spoil the surprise.")
+		saynn("А? Он что, врет? Ты смотришь на Тави. Она закатывает глаза. У тебя есть доказательства его лжи, но если ты скажешь ему об этом... это испортит сюрприз.")
 
-		saynn("[say=captain]As for breeding.. Let me ask you something. Why do you think I decided to allow any kinds of sexual acts here, in BDCC?[/say]")
+		saynn("[say=captain]Что касается размножения... Позволь спросить тебя кое о чем. Как ты думаешь, почему я решил разрешить здесь, в БДКЦ, любые виды сексуальных актов?[/say]")
 
-		addButton("No idea", "You don't know why", "breed_noidea")
-		addButton("Can't control", "Because they can't control it", "breed_cantcontrol")
-		addButton("For fun", "Because why not", "breed_forfun")
-		addButton("Punishments", "Sexual torture is used as punishments", "breed_punishments")
+		addButton("Понятия не имею", "Ты не знаешь почему", "breed_noidea")
+		addButton("Не могут контролировать", "Потому что сами не могут это контролировать", "breed_cantcontrol")
+		addButton("Ради забавы", "А почему бы и нет", "breed_forfun")
+		addButton("Наказания", "В качестве наказаний используется сексуальная пытка", "breed_punishments")
 	if(state == "breed_noidea"):
-		saynn("[say=pc]I can only guess.[/say]")
+		saynn("[say=pc]Могу только догадываться.[/say]")
 
-		saynn("The captain smiles.")
+		saynn("Капитан улыбается.")
 
-		saynn("[say=captain]Whatever your guess is, it's probably not wrong. BDCC is a very.. disconnected place, as you have already learned. That allows me to.. take some liberties with how I run things.[/say]")
+		saynn("[say=captain]Каким бы ни было твоё предположение, оно, скорее всего, верно. БДКЦ — место очень... обособленное, как ты уже успела понять. Это позволяет мне... позволять себе некоторые вольности в управлении.[/say]")
 
-		saynn("He looks around, at all the dark concrete that your cell is made out of.")
+		saynn("Он оглядывается на темный бетон, из которого сложена твоя камера.")
 
-		addButton("Continue", "See what happens next", "captain_explains")
+		addButton("Продолжить", "Смотреть, что будет дальше", "captain_explains")
 	if(state == "breed_cantcontrol"):
-		saynn("[say=pc]Because there is no way for you to control it? You're not as good of a leader, right?[/say]")
+		saynn("[say=pc]Потому что ты не в силах это контролировать? Ты не такой уж и хороший лидер, верно?[/say]")
 
-		saynn("The captain smiles.")
+		saynn("Капитан улыбается.")
 
-		saynn("[say=captain]Chastity belts and cages do exist, no sex policy could have been easily enforced if I wanted to. But no. BDCC is a very.. disconnected place, as you have already learned. That allows me to.. take some liberties with how I run things.[/say]")
+		saynn("[say=captain]Пояса целомудрия и клетки существуют; если бы я захотела, политику отсутствия секса было бы легко насаждать. Но нет. БДСС — очень... обособленное место, как ты уже успел понять. Это позволяет мне... позволять себе некоторые вольности в управлении.[/say]")
 
-		saynn("He smartly skips your comment about his leadership skills and just looks around, at all the dark concrete that your cell is made out of.")
+		saynn("Он предусмотрительно пропускает твой комментарий о его лидерских качествах и просто оглядывается по сторонам, на темный бетон, из которого сделана твоя камера.")
 
-		addButton("Continue", "See what happens next", "captain_explains")
+		addButton("Продолжить", "Смотреть, что будет дальше", "captain_explains")
 	if(state == "breed_forfun"):
-		saynn("[say=pc]You enjoy sex? Breeding helpless inmates? Or do you just like watching?[/say]")
+		saynn("[say=pc]Тебе нравится секс? Скрещивать беспомощных заключенных? Или тебе просто нравится наблюдать?[/say]")
 
-		saynn("The captain smiles.")
+		saynn("Капитан улыбается.")
 
-		saynn("[say=captain]I.. I don't have sex with inmates or staff. I won't deny though, I got a little bit spoiled by all the inmates who beg to be my pets. There is something nice about seeing them humiliate themselves. But only because it's fun to see them being happy.[/say]")
+		saynn("[say=captain]Я... я не сплю с заключенными или персоналом. Но не буду отрицать, все эти заключенные, умоляющие стать моими питомцами, меня немного избаловали. Есть что-то приятное в том, чтобы видеть, как они унижаются. Но только потому, что мне нравится видеть их счастливыми.[/say]")
 
-		saynn("He scratches behind his head.")
+		saynn("Он чешет затылок.")
 
-		saynn("[say=captain]BDCC is a very.. disconnected place, as you have already learned. That allows me to.. take some liberties with how I run things.[/say]")
+		saynn("[say=captain]БДСС — очень... обособленное место, как ты уже успел понять. Это позволяет мне... позволять себе некоторые вольности в управлении.[/say]")
 
-		addButton("Continue", "See what happens next", "captain_explains")
+		addButton("Продолжить", "Смотреть, что будет дальше", "captain_explains")
 	if(state == "breed_punishments"):
-		saynn("[say=pc]You use it as a punishment? The staff can go ahead and have fun with someone unruly against their will? Helps to keep staff morale high and inmate's will low?[/say]")
+		saynn("[say=pc]Ты используешь это как наказание? Персонал может спокойно развлекаться с непокорным заключенным против его воли? Это помогает поддерживать боевой дух персонала и подавлять волю заключенных?[/say]")
 
-		saynn("The captain smiles.")
+		saynn("Капитан улыбается.")
 
-		saynn("[say=captain]I won't lie, you got me there. Staff do use it as a punishment sometimes. But sex can be used for so much more than that. It can help to keep inmates happy too. Happy, not suppressed. BDCC is a very.. disconnected place, as you have already learned. That allows me to.. take some liberties with how I run things.[/say]")
+		saynn("[say=captain]Не буду лгать, ты подловил меня. Персонал действительно иногда использует это как наказание. Но секс может служить гораздо большему, чем просто кара. Он может помогать и заключенным чувствовать себя счастливыми. Счастливыми, а не подавленными. БДСС — очень... обособленное место, как ты уже успел понять. Это позволяет мне... позволять себе некоторые вольности в управлении.[/say]")
 
-		addButton("Continue", "See what happens next", "captain_explains")
+		addButton("Продолжить", "Смотреть, что будет дальше", "captain_explains")
 	if(state == "captain_explains"):
-		saynn("[say=captain]This prison is not a heaven and it's not trying to be. But, I think, the ability to.. have intimate moments.. balances things out. And it brings value to AlphaCorp.[/say]")
+		saynn("[say=captain]Эта тюрьма — не рай, и она не пытается им стать. Но, по-моему, возможность... проводить время наедине... уравновешивает всё остальное. И это приносит выгоду АльфаКорпу.[/say]")
 
-		saynn("[say=pc]What do you mean?[/say]")
+		saynn("[say=pc]В каком смысле?[/say]")
 
-		saynn("The captain stares you in the eyes.")
+		saynn("Капитан пристально смотрит тебе в глаза.")
 
-		saynn("[say=captain]It's a self-regulating machine. The balance.. is at its core. Convicted criminals here are able to offset their bad deeds.. by doing things that they enjoy. And giving value back to the society in the process.[/say]")
+		saynn("[say=captain]Это саморегулирующаяся машина. Баланс... лежит в самой её основе. Осужденные здесь могут компенсировать свои грехи... тем, что приносит им удовольствие. И при этом отдавать ценность обществу.[/say]")
 
-		saynn("Tavi suddenly realizes something.")
+		saynn("Тави внезапно что-то осознает.")
 
-		saynn("[say=tavi]I get it. You're making soldiers out of inmate's kids. Different space station, same fucking thing.[/say]")
+		saynn("[say=tavi]Я понял. Вы делаете солдат из детей заключенных. Другая космическая станция — та же самая гребаная херня.[/say]")
 
-		saynn("The captain lets Tavi yell at him. The feline growls and struggles against the chains harder. The captain continues to speak with a normal voice, even if with a slightly more cunning tone.")
+		saynn("Капитан позволяет Тави выкрикивать всё, что тот хочет. Кошка рычит и сильнее рвется в цепях. Капитан продолжает говорить обычным голосом, хотя в его тоне проскальзывает едва заметная хитринка.")
 
-		saynn("[say=captain]As much as it might seem like that, it's really not, Tavi. I'm not making soldiers out of anyone. Yes, we do have the facilities here that allow us to teach the new generations. We teach kids all sorts of professions. Doctors, engineers, scientists, pilots and of course soldiers too. They have a choice, Tavi. We don't take away their childhood, we make it as best as we can.[/say]")
+		saynn("[say=captain]Как бы это ни казалось, на самом деле всё не так, Тави. Я не делаю солдат из кого бы то ни было. Да, у нас есть условия, позволяющие обучать новые поколения. Мы учим детей самым разным профессиям. Врачи, инженеры, ученые, пилоты и, конечно же, солдаты. У них есть выбор, Тави. Мы не отнимаем у них детство, мы стараемся сделать его максимально полноценным.[/say]")
 
-		saynn("Tavi continues to snarl at the captain even if not as eagerly.")
+		saynn("Тави продолжает скалиться на капитана, хоть и уже не так яростно.")
 
-		saynn("[say=captain]You all heard it a million times, the war calls for more heroes, it's true. But once AlphaCorp wins, all of these kids will be free to do whatever they want with their lives. They won't be.. constrained.. by what their parents did. All of them will be valuable members of society. Each one will have a great future ahead.[/say]")
+		saynn("[say=captain]Вы все слышали это миллион раз: война требует новых героев, и это правда. Но как только «АльфаКорп» победит, все эти дети станут свободны делать со своей жизнью всё, что захотят. Они не будут... скованы... тем, что совершили их родители. Каждый из них станет ценным членом общества. У каждого впереди будет великое будущее.[/say]")
 
-		saynn("[say=pc]What if it doesn't? What if the war is never gonna end?[/say]")
+		saynn("[say=pc]А что, если нет? Что, если война никогда не закончится?[/say]")
 
-		saynn("The captain shrugs.")
+		saynn("Капитан пожимает плечами.")
 
-		saynn("[say=captain]That's why we need every advantage we can get. But my methods are entirely ethical. It's pretty much how nature works. Although, we do try to keep kids away from their parents. For obvious reasons.[/say]")
+		saynn("[say=captain]Вот почему нам нужно любое преимущество, которое только можно получить. Но мои методы абсолютно этичны. В сущности, природа работает именно так. Хотя мы и стараемся держать детей подальше от родителей. По вполне очевидным причинам.[/say]")
 
-		saynn("The captain looks at Tavi next.")
+		saynn("Затем капитан переводит взгляд на Тави.")
 
-		saynn("[say=captain]I'm giving you one last chance, Tavi. After that I will have to do something with you, this can't go on like this. It might look like I'm trying to tell you to give up on your dreams. But. It's not about giving up, Tavi. It's about accepting yourself.[/say]")
+		saynn("[say=captain]Я даю тебе последний шанс, Тави. После этого мне придётся что-то с тобой сделать, так продолжаться не может. Может показаться, будто я пытаюсь заставить тебя отказаться от своих мечтаний. Но... дело не в отказе, Тави. Дело в принятии самого себя.[/say]")
 
-		saynn("Tavi glares at him. All the while the captain looks at someone you can't see and gestures to them to step closer.")
+		saynn("Тави свирепо смотрит на него. Тем временем капитан смотрит на кого-то невидимого для тебя и жестом приглашает подойти ближе.")
 
-		addButton("Continue", "See what happens next", "skar_walkin")
+		addButton("Продолжить", "Смотреть, что будет дальше", "skar_walkin")
 	if(state == "skar_walkin"):
 		playAnimation(StageScene.HangingDuo, "idle", {npc="skar", bodyState={naked=true}})
 		addCharacter("skar")
-		saynn("Skar walks in while also bringing some kind of contraption. The main part of this contraption is a long.. seat.. of an uncomfortable triangular shape.")
+		saynn("Входит Скар, неся с собой какую-то конструкцию. Основная часть этой штуковины — длинное... сиденье... неудобной треугольной формы.")
 
-		saynn("[say=captain]A few hours on a wooden horse should make you both reconsider your behavior. Skar here will ensure you understand the reasons behind your punishment. In case it isn't obvious. Right, Skar?[/say]")
+		saynn("[say=captain]Пара часов на «деревянной лошадке» должна заставить вас обоих пересмотреть своё поведение. Скар позаботится о том, чтобы вы осознали причины своего наказания. На случай, если это не слишком очевидно. Верно, Скар?[/say]")
 
-		saynn("[say=skar]Yeah, sir. I can do that.[/say]")
+		saynn("[say=skar]Да, сэр. Я справлюсь.[/say]")
 
-		saynn("Tavi doesn't look too happy about it. But seeing Skar does make her strangely inspired.")
+		saynn("Тави выглядит не слишком довольной. Но вид Скарра, кажется, странным образом вдохновляет её.")
 
-		saynn("[say=tavi]Gonna torture us now? Until we break?[/say]")
+		saynn("[say=tavi]Теперь будешь нас пытать? Пока мы не сломаемся?[/say]")
 
-		saynn("The captain smiles.")
+		saynn("Капитан улыбается.")
 
-		saynn("[say=captain]Who said this is designed to break you? This is justice, Tavi. You know that word well.[/say]")
+		saynn("[say=captain]Кто сказал, что это создано, чтобы ломать тебя? Это правосудие, Тави. Тебе это слово хорошо знакомо.[/say]")
 
-		saynn("He taps Skar on the shoulder and whispers something to him before leaving.")
+		saynn("Он хлопает Скарра по плечу и шепчет ему что-то на ухо, прежде чем уйти.")
 
-		addButton("Continue", "See what happens next", "skar_prepares")
+		addButton("Продолжить", "Смотреть, что будет дальше", "skar_prepares")
 	if(state == "skar_prepares"):
 		removeCharacter("captain")
 		playAnimation(StageScene.Duo, "stand", {pc="tavi", npc="skar", bodyState={naked=true}})
-		saynn("Skar presses something and the whole glass wall begins to slowly lower itself down. He then rolls in the wooden horse and begins to secure it so it doesn't move around anymore.")
+		saynn("Скар нажимает на кнопку, и вся стеклянная стена начинает медленно опускаться. Затем он подкатывает деревянную лошадь и начинает закреплять её, чтобы она больше не шаталась.")
 
-		saynn("He is working quietly.")
+		saynn("Он работает тихо.")
 
-		saynn("[say=tavi]You heard everything, didn't you, Skar?[/say]")
+		saynn("[say=tavi]Ты ведь всё слышал, да, Скар?[/say]")
 
-		saynn("He doesn't answer and just unchains your hands from the ceiling before bringing you to the wooden horse. He is strong and your hands are still cuffed so you can't do anything but obey the cold touch of his prosthetic arms.")
+		saynn("Он не отвечает, лишь отцепляет твои руки от потолочных цепей и подводит тебя к деревянной лошади. Он силен, а твои руки всё еще в наручниках, так что тебе остается только подчиняться холодному прикосновению его протезов.")
 
-		saynn("[say=tavi]Wanna share your thoughts about it~? I'm very curious, trust me.[/say]")
+		saynn("[say=tavi]Не хочешь поделиться своими мыслями на этот счет~? Мне ужасно любопытно, поверь мне.[/say]")
 
-		saynn("He lowers the wooden horse enough for you to just get on it. Your legs can still reach the floor easily so you just use them for support. His powerful arms then chain your ankles and your wrists to the contraption.")
+		saynn("Он опускает деревянную лошадь достаточно низко, чтобы ты могла на неё взобраться. Твои ноги всё еще легко достают до пола, так что ты используешь их для опоры. Затем его мощные руки приковывают твои лодыжки и запястья к конструкции.")
 
-		saynn("[say=tavi]I can start first if you want.[/say]")
+		saynn("[say=tavi]Если хочешь, я могу начать первой.[/say]")
 
-		saynn("After being done with you, Skar approaches Tavi and crouches before her. The feline winks at him, she is still naked and her paws are cuffed to the wall, forcing her to present herself for the guy.")
+		saynn("Закончив с тобой, Скар подходит к Тави и опускается перед ней на корточки. Кошка подмигивает ему; она всё ещё голая, а её лапы прикованы к стене, что заставляет её выставлять себя перед парнем напоказ.")
 
-		saynn("[say=tavi]I'm sorry that my body doesn't consist of 60% prosthetic parts.[/say]")
+		saynn("[say=tavi]Прости, что моё тело не на 60% состоит из протезов.[/say]")
 
-		saynn("[say=skar]It's fine.[/say]")
+		saynn("[say=skar]Всё в порядке.[/say]")
 
-		saynn("[say=tavi]No, really. I should be looking like you by this point. With all sorts of battle scars and missing limbs.[/say]")
+		saynn("[say=tavi]Нет, серьёзно. К этому моменту я должна была выглядеть как ты. Со всякими боевыми шрамами и отсутствующими конечностями.[/say]")
 
-		saynn("Skar tries not to react and just unchains Tavi from the wall before bringing you to the same wooden horse and positioning her near you. His hands chain her ankles and wrists to the contraption too.")
+		saynn("Скар старается не подавать виду и просто отцепляет Тави от стены, после чего подводит её к той же деревянной лошадке и устраивает рядом с тобой. Его руки приковывают её лодыжки и запястья к этому приспособлению.")
 
-		saynn("[say=tavi]But as you can see, I'm fine. And I'm happy. You know why?[/say]")
+		saynn("[say=tavi]Но, как видишь, со мной всё отлично. И я счастлива. Знаешь почему?[/say]")
 
-		saynn("[say=skar]You destroyed an entire space station, killing everyone who worked there?[/say]")
+		saynn("[say=skar]Ты уничтожила целую космическую станцию, убив всех, кто там работал?[/say]")
 
-		saynn("[say=tavi]I stopped a soldier factory, Skar. I didn't follow any orders. And because of that, I wasn't forced to see my squad get wiped out on the battlefield because of some old guy's mistake.[/say]")
+		saynn("[say=tavi]Я остановила завод по производству солдат, Скар. Я не следовала приказам. И благодаря этому мне не пришлось смотреть, как мой отряд вырезают на поле боя из-за ошибки какого-то старика.[/say]")
 
-		saynn("Skar's arms make a whole lotta mechanical noise as he clenches his fists.")
+		saynn("Руки Скара издают кучу механического шума, когда он сжимает кулаки.")
 
-		saynn("[say=tavi]Oh wow. That was a wild guess. But you know, a lot of the war stories are similar. Friends losing friends, one by one or all at the same time. And when there are no friends around anymore, you begin to lose yourself.[/say]")
+		saynn("[say=tavi]Ого. Это была смелая догадка. Но знаешь, многие военные истории похожи. Друзья теряют друзей, одного за другим или всех разом. А когда друзей вокруг больше не остается, начинаешь терять саму себя.[/say]")
 
-		saynn("He continues to contain himself as best as he can. And he seems to succeed, his arms relaxing before he proceeds to raise the main part of the wooden horse, making it so you have to stand on your toes, both you and Tavi.")
+		saynn("Он продолжает изо всех сил сдерживаться. И, кажется, ему это удается: его руки расслабляются, прежде чем он начинает поднимать основную часть деревянной лошади, из-за чего и тебе, и Тави приходится вставать на цыпочки.")
 
-		addButton("Continue", "See what happens next", "skar_raises_horse")
+		addButton("Продолжить", "Смотреть, что будет дальше", "skar_raises_horse")
 	if(state == "skar_raises_horse"):
 		playAnimation(StageScene.WoodenHorseDuo, "idle", {npc="tavi", bodyState={naked=true}, npcBodyState={naked=true}})
 		if (GM.pc.hasVagina()):
-			saynn("The triangle-shaped seat gets pressed against your sensitive lady parts. You can still just about reach the floor but you really have to put effort into standing on your toes. The moment you slip up, the sharp edge begins to put stress on your pussy lips, spreading them and then digging into the sensitive part.")
+			saynn("Треугольное сиденье вжимается в твою чувствительную киску. Ты еще почти достаешь до пола, но приходится изрядно напрягаться, чтобы стоять на цыпочках. Стоит тебе оступиться, как острый край начинает давить на половые губы, растягивая их, а затем впиваясь в самые чувствительные места.")
 
 		else:
-			saynn("The triangle-shaped seat gets pressed against your taint. You don't possess a pussy but it still provides enough discomfort for you"+str(" and your {pc.penis}" if GM.pc.hasPenis() else "")+". You can still just about reach the floor but you really have to put effort into standing on your toes. The moment you slip up, the sharp edge begins to put stress on your taint, bringing pain.")
+			saynn("Треугольное сиденье прижимается к твоему промежности. У тебя нет киски, но это все равно доставляет немало дискомфорта."+str(" and your {pc.penis}" if GM.pc.hasPenis() else "")+". Ты еще почти достаешь до пола, но приходится изрядно напрягаться, чтобы стоять на цыпочках. Стоит тебе оступиться, как острый край начинает давить на промежность, причиняя боль.")
 
-		saynn("You look at Tavi, she has to suffer a similar fate, her {tavi.breasts} bob slightly as her green glowing petals are being pressured by the wooden horse. She stares at you with her eyes full of hope.")
+		saynn("Ты смотришь на Тави — ей суждено пережить ту же участь; её {tavi.breasts} слегка покачивается, когда деревянная лошадь давит на её светящиеся зеленым лепестки. Она смотрит на тебя глазами, полными надежды.")
 
-		saynn("[say=tavi]Ow. You're not gonna tell us anything? You enjoy torture so much?[/say]")
+		saynn("[say=tavi]Ой. Ты нам ничего не расскажешь? Тебе что, так нравится пытать?[/say]")
 
-		saynn("[say=skar]I don't.[/say]")
+		saynn("[say=skar]Нет.[/say]")
 
-		saynn("[say=tavi]Oh? Well, you probably aren't afraid of me. Or my cutie here. But you're afraid of my words, aren't you? You don't wanna listen to me. You know why?[/say]")
+		saynn("[say=tavi]О? Ну, меня ты, наверное, не боишься. Или мою милашку. Но моих слов ты боишься, верно? Ты не хочешь меня слушать. Знаешь почему?[/say]")
 
-		saynn("Skar presses a button causing the wooden horse to raise its seat even more.")
+		saynn("Скар нажимает на кнопку, заставляя сиденье деревянной лошадки подняться еще выше.")
 
-		addButton("Continue", "See what happens next", "skar_tortures")
+		addButton("Продолжить", "Смотреть, что будет дальше", "skar_tortures")
 	if(state == "skar_tortures"):
 		playAnimation(StageScene.WoodenHorseDuo, "lightstruggle", {npc="tavi", bodyState={naked=true}, npcBodyState={naked=true}})
 		if (GM.pc.hasVagina()):
-			saynn("The sharp edge digs into your pussy more. Fuck, you almost can't escape it anymore. You try to struggle but that just makes things worse, any motion causes you to lose touch with the ground and begin to put your full weight on the frame. You're getting somewhat wet from the little stimulation that you're getting but that doesn't help much, the discomfort is rising.")
+			saynn("Острый край сильнее впивается в твою киску. Блядь, ты уже почти не можешь от него освободиться. Ты пытаешься вырваться, но от этого становится только хуже: любое движение заставляет тебя терять опору под ногами, и ты начинаешь давить всем весом на раму. От этой слабой стимуляции ты уже понемногу намокаешь, но это мало помогает — дискомфорт только нарастает.")
 
 		else:
-			saynn("The sharp edge digs into your taint area more. Fuck, you almost can't escape it anymore. You try to struggle but that just makes things worse, any motion causes you to lose touch with the ground and begin to put your full weight on the frame. You're getting somewhat hard from the little stimulation that you're getting but that doesn't help much, the discomfort is rising.")
+			saynn("Острый край сильнее впивается в твою промежность. Блядь, ты уже почти не можешь от него освободиться. Ты пытаешься вырваться, но от этого становится только хуже: любое движение заставляет тебя терять опору под ногами, и ты начинаешь давить всем весом на раму. От этой слабой стимуляции ты уже понемногу возбуждаешься, но это мало помогает — дискомфорт только нарастает.")
 
-		saynn("All the while Tavi uses her natural height advantage and stays still. She still has to endure her pussy being put under stress but she seems to just about manage, only biting her lip sometimes. But she understands that with each second the situation gets worse for both of you.")
+		saynn("Все это время Тави, пользуясь своим естественным ростом, старается не шевелиться. Ей всё еще приходится терпеть давление на киску, но она вроде бы справляется, лишь изредка закусывая губу. Она понимает, что с каждой секундой ситуация становится всё хуже для вас обеих.")
 
-		saynn("[say=tavi]Because deep inside you know.. that I'm right.. But you're holding onto your old set of lies because they're more familiar to you.. Listen, it's never too late to pick new ones.. Mine are better..[/say]")
+		saynn("[say=tavi]Потому что в глубине души ты знаешь... что я права... Но ты цепляешься за свой старый набор лжи, потому что он тебе привычнее... Послушай, никогда не поздно выбрать новый... Мой будет лучше...[/say]")
 
-		saynn("Skar suddenly smacks Tavi's ass with his metal palm, causing the feline to yelp and to lose traction with the ground too. The guard then raises the wooden horse even more. The torture begins..")
+		saynn("Скар внезапно хлопает Тави металлической ладонью по заднице, отчего кошка вскрикивает и теряет опору под ногами. Затем охранник еще выше задирает деревянную лошадь. Пытка начинается...")
 
-		addButton("Continue", "See what happens next", "more_torture")
+		addButton("Продолжить", "Смотреть, что будет дальше", "more_torture")
 	if(state == "more_torture"):
 		playAnimation(StageScene.WoodenHorseDuo, "struggle", {npc="tavi", npcAction="lightstruggle", bodyState={naked=true}, npcBodyState={naked=true}})
 		if (GM.pc.hasVagina()):
-			saynn("You throw your head back and let out a stifled noise as your pussy gets put under a lot of stress. You can't sit still, it's impossible, your body tries to struggle but that only leads to your pussy sliding over the sharp edge and getting stimulated more. And all the chains means you can't escape this precarious situation so easily, you're forced to endure the pain.")
+			saynn("Ты запрокидываешь голову и издаешь сдавленный звук, когда твоя киска подвергается сильному давлению. Ты не можешь усидеть на месте, это невозможно: тело пытается вырваться, но от этого лишь сильнее насаживается киска на острый край, получая еще больше стимуляции. А из-за цепей не так-то просто сбежать из этого шаткого положения — тебе приходится терпеть боль.")
 
 		else:
-			saynn("You throw your head back and let out a stifled noise as your taint gets put under a lot of stress. You can't sit still, it's impossible, your body tries to struggle but that only leads to your perineum area sliding over the sharp edge and getting stimulated more. And all the chains means you can't escape this precarious situation so easily, you're forced to endure the pain.")
+			saynn("Ты запрокидываешь голову и издаешь сдавленный звук, когда твоя промежность подвергается сильному давлению. Ты не можешь усидеть на месте, это невозможно: тело пытается вырваться, но от этого лишь сильнее насаживается область промежности на острый край, получая еще больше стимуляции. А из-за цепей не так-то просто сбежать из этого шаткого положения — тебе приходится терпеть боль.")
 
-		saynn("Tavi produces a quiet moan, her tits bounce a little each time she dares to move a little. Her pussy coats the sharp edge under her with her juices. Her facial expression gets less and less confident and more sorry by the second.")
+		saynn("Тави тихо стонет, ее сиськи слегка подпрыгивают каждый раз, когда она осмеливается хоть немного пошевелиться. Ее киска покрывается соками, стекающими на острый край под ней. С каждой секундой выражение ее лица становится всё менее уверенным и всё более жалким.")
 
-		saynn("Skar just crosses his arms.")
+		saynn("Скар просто скрещивает руки на груди.")
 
-		saynn("[say=skar]Wars are unavoidable, Tavi.[/say]")
+		saynn("[say=skar]Войны неизбежны, Тави.[/say]")
 
-		saynn("[say=tavi]They.. are.. fuck.. What happened to.. using words.. instead of weapons.. Just.. Fucking.. communicate more.. Ease it up a little.. maybe?..[/say]")
+		saynn("[say=tavi]Они... блядь... Что случилось с тем, чтобы... использовать слова... вместо оружия... Просто... чертова... общайтесь больше... Сбавьте обороты... может?..[/say]")
 
-		saynn("[say=skar]Some people only understand force.[/say]")
+		saynn("[say=skar]Некоторые люди понимают только силу.[/say]")
 
-		saynn("[say=tavi]Drones.. Virtual fights.. Online battles.. Otherwise.. more kids will go through the same.. as you.. Same war stories..[/say]")
+		saynn("[say=tavi]Дроны.. Виртуальные бои.. Онлайн-сражения.. Иначе.. еще больше детей пройдут через то же самое.. что и ты.. Те же истории войны..[/say]")
 
-		saynn("Skar looks at Tavi. But then lowers his gaze. All the while Tavi is busy panting and trying to not fidget too much. You're both failing at that though, the torture machine does its job, bringing your privates lots of discomfort and pain.")
+		saynn("Скар смотрит на Тави. Но затем опускает взгляд. Все это время Тави занята лишь тем, что тяжело дышит и пытается не слишком ерзать. Впрочем, у вас обоих плохо получается — машина для пыток делает свое дело, доставляя твоим причиндалам массу дискомфорта и боли.")
 
-		addButton("Continue", "See what happens next", "skar_gets_confused")
+		addButton("Продолжить", "Смотреть, что будет дальше", "skar_gets_confused")
 	if(state == "skar_gets_confused"):
-		saynn("A few minutes pass. But it feels like forever. A few hours of this? What is the captain thinking?")
+		saynn("Проходит несколько минут. Но кажется, будто прошла вечность. Несколько часов в таком состоянии? О чем только думает капитан?")
 
-		saynn("Tavi is unable to taunt the guy anymore, she only hisses and groans as her pussy begins to shine brighter, the sensitive skin there got very irritated by now. She desperately tries to pull herself up by the chains but that only makes it worse when eventually has to let go and have her pussy tortured harder.")
+		saynn("Тави больше не в силах подначивать парня; она лишь шипит и стонет, пока её киска начинает сиять всё ярче — чувствительная кожа там уже порядком раздражена. Она отчаянно пытается подтянуться на цепях, но это делает только хуже, когда ей приходится в итоге отпускать их, и её киску начинают пытать еще сильнее.")
 
-		saynn("She had the right idea though. You probably can escape that way but first you gotta loosen the cuffs.")
+		saynn("Впрочем, идея была верной. Скорее всего, так ты и сможешь сбежать, но сначала нужно ослабить наручники.")
 
-		saynn("Skar is leaning against the wall with his hands crossed, not paying too much attention. Now would be the best time to escape.. Or give up completely.")
+		saynn("Скар прислонился к стене, скрестив руки на груди, и не особо обращает на тебя внимание. Сейчас — лучший момент для побега.. Или для того, чтобы окончательно сдаться.")
 
 		if (GM.pc.hasVagina()):
-			saynn("You gotta do it fast though.. Your pussy is beginning to feel irritated too.")
+			saynn("Только делать это нужно быстро.. Твоя киска тоже начинает зудеть от раздражения.")
 
 		else:
-			saynn("You gotta do it fast though.. The skin of your taint is beginning to feel irritated too.")
+			saynn("Только делать это нужно быстро.. Кожа на твоей промежности тоже начинает нестерпимо чесаться.")
 
-		addButton("Continue", "See what happens next", "woodenhorse_loop")
+		addButton("Продолжить", "Смотреть, что будет дальше", "woodenhorse_loop")
 	if(state == "woodenhorse_loop"):
 		playAnimation(StageScene.WoodenHorseDuo, "lightstruggle", {npc="tavi", npcAction="lightstruggle", bodyState={naked=true}, npcBodyState={naked=true}})
 		var pcPain = GM.pc.getPainLevel()
 		if (pcPain <= 0.2):
 			if (GM.pc.hasVagina()):
-				saynn("You feel your weight working against you, your sensitive slit is being put under a lot of pressure, causing discomfort. At least you can still kinda endure it. But for how much longer no one knows.")
+				saynn("Ты чувствуешь, как собственный вес работает против тебя: твоя чувствительная щелочка оказывается под сильным давлением, вызывая дискомфорт. По крайней мере, ты еще можешь это как-то терпеть. Но сколько еще — никто не знает.")
 
 			else:
-				saynn("You feel your weight working against you, your taint area is being put under a lot of pressure, causing discomfort. At least you can still kinda endure it. But for how much longer no one knows.")
+				saynn("Ты чувствуешь, как собственный вес давит на тебя; область промежности находится под сильным давлением, вызывая дискомфорт. По крайней мере, ты всё ещё можешь это терпеть. Но сколько — никто не знает.")
 
 		elif (pcPain <= 0.4):
 			if (GM.pc.hasVagina()):
-				saynn("The discomfort is quickly rising, even the most simple motions echo back with your pussy getting more sore. You're enduring it as best as you can. Tavi is holding on too but you can hear her hissing occasionally.")
+				saynn("Дискомфорт стремительно нарастает: даже самые простые движения отзываются новой порцией боли в твоей киске. Ты терпишь как можешь. Тави тоже держится, но ты время от времени слышишь её шипение.")
 
 			else:
-				saynn("The discomfort is quickly rising, even the most simple motions echo back with your crotch getting more sore. You're enduring it as best as you can. Tavi is holding on too but you can hear her hissing occasionally.")
+				saynn("Дискомфорт стремительно нарастает: даже самые простые движения отзываются новой порцией боли в паху. Ты терпишь как можешь. Тави тоже держится, но ты время от времени слышишь её шипение.")
 
 		elif (pcPain <= 0.6):
 			if (GM.pc.hasVagina()):
-				saynn("It might seem like your pussy is getting stimulated while you fidget back and forth on that torture device but in reality the pain and discomfort are overpowerting any pleasure by a long shot. Random noises like cries and pleading escape from your mouth. Your slit looks quite irritated.")
+				saynn("Может показаться, что пока ты ерзаешь на этом пыточном устройстве, твоя киска получает стимуляцию, но на деле боль и дискомфорт с лихвой перекрывают любое удовольствие. Из твоего рта то и дело вырываются случайные звуки: стоны и мольбы. Твоя щель выглядит довольно раздраженной.")
 
 			else:
-				saynn("It might seem like your crotch area is getting stimulated while you fidget back and forth on that torture device but in reality the pain and discomfort are overpowerting any pleasure by a long shot. Random noises like cries and pleading escape from your mouth. The skin on your taint looks quite irritated.")
+				saynn("Может показаться, что пока ты ерзаешь на этом пыточном устройстве, твоя промежность получает стимуляцию, но на деле боль и дискомфорт с лихвой перекрывают любое удовольствие. Из твоего рта то и дело вырываются случайные звуки: стоны и мольбы. Кожа в области промежности выглядит довольно раздраженной.")
 
 		elif (pcPain <= 0.8):
 			if (GM.pc.hasVagina()):
-				saynn("This is getting too much for you real fast. The constant pain that's coming from your pussy causes you to start arching your back which in turn brings more awful sensations. If you weren't begging before, you feel like you will start doing that soon. Tavi is not doing any better, her pussy slit got so irritated that it drips green glowing blood onto the frame.")
+				saynn("Это слишком быстро становится для тебя невыносимым. Постоянная боль, исходящая из твоей киски, заставляет тебя выгибать спину, что, в свою очередь, приносит еще более ужасные ощущения. Если ты еще не умоляла о пощаде, то чувствуешь, что скоро начнешь это делать. Тави не лучше: ее щель настолько раздражена, что с нее на каркас капает светящаяся зеленая кровь.")
 
 			else:
-				saynn("This is getting too much for you real fast. The constant pain that's coming from your taint causes you to start arching your back which in turn brings more awful sensations. If you weren't begging before, you feel like you will start doing that soon. Tavi is not doing any better, her pussy slit got so irritated that it drips green glowing blood onto the frame.")
+				saynn("Это слишком быстро становится для тебя невыносимым. Постоянная боль, исходящая из твоей промежности, заставляет тебя выгибать спину, что, в свою очередь, приносит еще более ужасные ощущения. Если ты еще не умоляла о пощаде, то чувствуешь, что скоро начнешь это делать. Тави не лучше: ее щель настолько раздражена, что с нее на каркас капает светящаяся зеленая кровь.")
 
 		else:
 			if (GM.pc.hasVagina()):
-				saynn("The pain is almost unbearable, it's so bad that you can't even rest anymore. But at least you feel like it won't get any worse from now on. You grit your teeth while your pussy lips basically get cut by the sharp edge of that wooden horse. Tavi's eyes roll up while she grits her teeth too, she has given up resisting a long time ago, just counting seconds, hoping that this torture will end soon.")
+				saynn("Боль почти невыносима, настолько сильна, что ты уже не можешь даже расслабиться. Но, по крайней мере, кажется, что дальше будет не хуже. Ты стискиваешь зубы, пока губы твоей киски практически разрезаются острым краем этой деревянной лошади. Глаза Тави закатываются, и она тоже стискивает зубы; она давно перестала сопротивляться и просто считает секунды, надеясь, что эта пытка скоро закончится.")
 
 			else:
-				saynn("The pain is almost unbearable, it's so bad that you can't even rest anymore. But at least you feel like it won't get any worse from now on. You grit your teeth while your taint area basically gets cut by the sharp edge of that wooden horse. Tavi's eyes roll up while she grits her teeth too, she has given up resisting a long time ago, just counting seconds, hoping that this torture will end soon.")
+				saynn("Боль почти невыносима, настолько сильная, что ты уже не можешь даже просто лежать. Но, по крайней мере, кажется, что хуже уже не будет. Ты стискиваешь зубы, пока острая кромка деревянной лошадки буквально вгрызается в твою промежность. Глаза Тави закатываются, она тоже сжимает зубы; она давно перестала сопротивляться и просто считает секунды, надеясь, что эта пытка скоро закончится.")
 
 		if (pcPain < 1.0):
-			addButton("Rest", "Try to rest and get some stamina back", "do_rest")
+			addButton("Отдохнуть", "Попытаться отдохнуть и восстановить выносливость", "do_rest")
 		else:
-			addDisabledButton("Rest", "Too painful!")
+			addDisabledButton("Отдохнуть", "Слишком больно!")
 		if (GM.pc.getStamina() > 0):
-			addButton("Struggle", "Resist your restraints", "do_struggle")
+			addButton("Сопротивление", "Сопротивляться путам", "do_struggle")
 		else:
-			addDisabledButton("Struggle", "You don't have any strength left to struggle")
+			addDisabledButton("Сопротивление", "У тебя не осталось сил, чтобы бороться")
 		if (!GM.pc.hasBoundArms() && !GM.pc.hasBoundLegs()):
-			addButton("Escape", "You can try to escape!", "do_escape")
+			addButton("Побег", "Ты можешь попытаться сбежать!", "do_escape")
 		else:
-			addDisabledButton("Escape", "Your must free your arms and legs")
-		addButton("Give up", "Accept that you won't escape", "do_giveup")
+			addDisabledButton("Побег", "Тебе нужно освободить руки и ноги")
+		addButton("Сдаться", "Принять то, что побега не будет", "do_giveup")
 	if(state == "do_rest"):
 		playAnimation(StageScene.WoodenHorseDuo, "idle", {npc="tavi", npcAction="lightstruggle", bodyState={naked=true}, npcBodyState={naked=true}})
-		saynn("You rest a few minutes, trying to be completely motionless. But the sharp edge of that device is a really bad seat, it keeps bringing you pain and discomfort either way.")
+		saynn("Ты отдыхаешь несколько минут, стараясь не шевелиться. Но острый край этого устройства — чертовски неудобное сиденье: он продолжает причинять боль и дискомфорт, как бы ты ни старалась.")
 
-		addButton("Continue", "See what happens next", "woodenhorse_loop")
+		addButton("Продолжить", "Смотреть, что будет дальше", "woodenhorse_loop")
 	if(state == "do_escape"):
 		playAnimation(StageScene.Duo, "stand", {npc="skar"})
-		saynn("You managed to loosen up the cuffs enough for you to escape them! You quickly pull yourself up using the chains and get off the damn torture machine. That's a huge relief for your body.")
+		saynn("Тебе удалось ослабить наручники настолько, что ты смогла вырваться! Быстро подтянувшись на цепях, ты слезаешь с этой чертовой пыточной машины. Твое тело ощущает колоссальное облегчение.")
 
-		saynn("You would save Tavi.. But Skar is still there, he saw what you did. And from his glare and deep breathing you can deduct that he isn't happy.")
+		saynn("Ты бы спас Тави... Но Скар всё ещё там, он видел, что ты натворил. И по его взгляду и тяжелому дыханию можно понять, что он явно не в восторге.")
 
-		saynn("[say=skar]Can't run forever. You will just die tired.[/say]")
+		saynn("[say=skar]Вечно не убегаешь. Просто сдохнешь от усталости.[/say]")
 
-		saynn("[say=pc]Just let us go and you won't get hurt.[/say]")
+		saynn("[say=pc]Просто отпусти нас, и ты не пострадаешь.[/say]")
 
-		saynn("[say=skar]No.[/say]")
+		saynn("[say=skar]Нет.[/say]")
 
-		saynn("Seems like it's a fight.")
+		saynn("Похоже, назревает драка.")
 
-		addButton("Fight", "Start the fight", "fight_skar")
+		addButton("Драться", "Начать бой", "fight_skar")
 	if(state == "if_lost"):
 		playAnimation(StageScene.WoodenHorseDuo, "struggle", {npc="tavi", npcAction="lightstruggle", bodyState={naked=true}, npcBodyState={naked=true}})
-		saynn("You lost the battle. Skar quickly throws you back onto the wooden horse and cuffs your arms and legs, leaving you pretty much zero room for struggling.")
+		saynn("Ты проиграл битву. Скар быстро швыряет тебя обратно на деревянную лошадь и сковывает руки и ноги наручниками, практически лишая возможности сопротивляться.")
 
-		saynn("[say=pc]Fuck, argh..[/say]")
+		saynn("[say=pc]Блядь, агрх...[/say]")
 
-		saynn("And with no strength to struggle, all you can do is give up and let your crotch be tortured..")
+		saynn("И, не имея сил бороться, тебе остается только сдаться и позволить пытать свою промежность...")
 
-		addButton("Give up", "Oh well", "do_giveup")
+		addButton("Сдаться", "Ну и ладно", "do_giveup")
 	if(state == "if_won"):
 		playAnimation(StageScene.Duo, "stand", {npc="skar", npcAction="defeat"})
-		saynn("Skar hits the floor, defeated by your hand. You instantly go to Tavi and lower the torture machine before unchaining her paws and ankles. The feline cries out from pain as her slit no longer makes any contact with the sharp edge of that seat. Her pussy looks wounded to the point of it dripping green blood onto the floor.")
+		saynn("Скар падает на пол, поверженный твоей рукой. Ты тут же бросаешься к Тави и опускаешь пыточную машину, прежде чем расстегнуть её лапы и лодыжки. Кошка вскрикивает от боли, когда её щель перестает соприкасаться с острым краем сиденья. Её киска выглядит израненной — из неё на пол капает зеленая кровь.")
 
-		saynn("[say=tavi]Ugh.. Thank you, cutie.[/say]")
+		saynn("[say=tavi]Ух... Спасибо, милашка.[/say]")
 
-		saynn("Naked Tavi tackles Skar and cuffs his arms with his own restraints, rendering him helpless.")
+		saynn("Обнаженная Тави набрасывается на Скара и сковывает его руки его же собственными оковами, делая его беспомощным.")
 
-		saynn("[say=tavi]You can't stop us.[/say]")
+		saynn("[say=tavi]Тебе нас не остановить.[/say]")
 
-		saynn("[say=skar]The consequences will catch up with you.[/say]")
+		saynn("[say=skar]Последствия всё равно тебя настигнут.[/say]")
 
-		saynn("[say=tavi]Hah. I am the consequences.[/say]")
+		saynn("[say=tavi]Хах. Я и есть последствия.[/say]")
 
-		saynn("[say=skar]And now you just wanna watch the world burn?[/say]")
+		saynn("[say=skar]И теперь ты просто хочешь смотреть, как мир горит в огне?[/say]")
 
-		saynn("[say=tavi]I just wanna be happy, Skar. I know that you're too stubborn to change your mind, don't worry. What should we do with him, cutie?[/say]")
+		saynn("[say=tavi]Я просто хочу быть счастливой, Скар. Знаю, ты слишком упрям, чтобы передумать, так что не переживай. Что нам с ним делать, милашка?[/say]")
 
-		saynn("Tavi looks at the wooden horse. Then she looks at you and winks while smiling.")
+		saynn("Тави смотрит на деревянную лошадку. Затем она смотрит на тебя и, улыбаясь, подмигивает.")
 
-		addButton("Just leave", "No need to torture him", "just_leave")
-		addButton("Wooden horse", "Throw Skar onto the wooden horse", "torture_skar")
+		addButton("Просто уйти", "Нет нужды его пытать", "just_leave")
+		addButton("Деревянная лошадь", "Бросить Скара на деревянную лошадку", "torture_skar")
 	if(state == "just_leave"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
-		saynn("[say=pc]We should just leave, no need to humiliate him.[/say]")
+		saynn("[say=pc]Нам стоит просто уйти, не нужно его унижать.[/say]")
 
-		saynn("[say=tavi]Aw, if you say so. It was only fair. He is a soldier who just follows orders without taking responsibility.[/say]")
+		saynn("[say=tavi]Ой, ну раз ты так говоришь... Но это было справедливо. Он всего лишь солдат, который тупо следует приказам, не беря на себя никакой ответственности.[/say]")
 
-		saynn("Tavi finds her uniform in one of the bins outside and proceeds to cuff Skar to her old spot.")
+		saynn("Тави находит свою форму в одном из контейнеров снаружи и приковывает Скара наручниками к её старому месту.")
 
-		saynn("[say=skar]I'm not.[/say]")
+		saynn("[say=skar]Вовсе нет.[/say]")
 
-		saynn("Tavi caresses his cheek lightly.")
+		saynn("Тави слегка ласкает его по щеке.")
 
-		saynn("[say=tavi]Then turn your head on already. Hearts and minds, friend.[/say]")
+		saynn("[say=tavi]Ну так поверни уже голову. Завоевывай сердца и умы, дружище.[/say]")
 
-		saynn("Tavi gets up and grabs your hand before proceeding to find the exit out of this place.")
+		saynn("Тави встает и берет тебя за руку, после чего отправляется на поиски выхода из этого места.")
 
-		addButton("Continue", "See what happens next", "tavi_pc_escape")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_pc_escape")
 	if(state == "tavi_pc_escape"):
 		aimCameraAndSetLocName("hall_ne_corner")
 		GM.pc.setLocation("hall_ne_corner")
 		playAnimation(StageScene.Hug, "hug", {npc="tavi"})
 		removeCharacter("skar")
-		saynn("You and Tavi follow a series of corridors, looking for an exit out of this section of the station. Most of the doors don't open for you because you obviously lack access. After a few close ones where you almost got caught, you two stumble upon a catwalk that hangs over the main hall.")
+		saynn("Вы с Тави идете по ряду коридоров, пытаясь найти выход из этой секции станции. Большинство дверей не поддаются, так как у вас явно нет нужного уровня доступа. После нескольких опасных моментов, когда вас чуть не поймали, вы натыкаетесь на технический мостик, нависающий над главным залом.")
 
-		saynn("[say=tavi]Perfect.[/say]")
+		saynn("[say=tavi]Идеально.[/say]")
 
-		saynn("[say=pc]Uh.. Isn't that a little too high?[/say]")
+		saynn("[say=pc]Э-э... А это не слишком высоко?[/say]")
 
-		saynn("Yeah, it was. But Tavi seems to know her ways around. She just jumps onto one of the concrete pillars and hugs it before sliding down. You follow her and do the same, it looked scarier than it was.")
+		saynn("Да, так и было. Но Тави, похоже, знает здесь каждый закоулок. Она просто запрыгивает на одну из бетонных колонн, обхватывает её руками и съезжает вниз. Ты следуешь за ней и делаешь то же самое; на деле всё оказалось не так страшно, как выглядело.")
 
-		saynn("Tavi waits for you to slide down and comes to give you a tight hug.")
+		saynn("Тави ждет, пока ты спустишься, и крепко тебя обнимает.")
 
-		saynn("[say=tavi]You should stop saving me. Next time it's my turn to take one for the team. Okay, cutie?[/say]")
+		saynn("[say=tavi]Тебе пора перестать меня спасать. В следующий раз моя очередь подставиться под удар. Договорились, милашка?[/say]")
 
-		saynn("[say=pc]Yes, Miss Tavi.[/say]")
+		saynn("[say=pc]Слушаюсь, мисс Тави.[/say]")
 
-		saynn("[say=tavi]I need to come up with the next plan. I have a task for you in the meantime..[/say]")
+		saynn("[say=tavi]Мне нужно придумать следующий план. А пока у меня есть для тебя задание...[/say]")
 
-		saynn("[say=pc]Don't you remember what the captain said? Last chance and all.[/say]")
+		saynn("[say=pc]Ты разве не помнишь, что сказала капитан? Последний шанс и всё такое.[/say]")
 
-		saynn("[say=tavi]Yeah. I do. You wanna give up?[/say]")
+		saynn("[say=tavi]Да. Помню. Ты что, хочешь сдаться?[/say]")
 
-		saynn("You stay silent for a second and then shake your head. Tavi smiles.")
+		saynn("Ты на секунду замолкаешь, а затем качаешь головой. Тави улыбается.")
 
-		saynn("[say=tavi]I want you to find Kait. And I want you to teach her a lesson, your choice how. Okay, cutie?[/say]")
+		saynn("[say=tavi]Я хочу, чтобы ты нашла Кейт. И хочу, чтобы ты преподала ей урок — как именно, решать тебе. Идет, милашка?[/say]")
 
-		saynn("[say=pc]Where can I find her?[/say]")
+		saynn("[say=pc]Где мне её искать?[/say]")
 
-		saynn("[say=tavi]Well, she is a lilac slut. Catch her in the lilac block during the morning. And please, be rough with her subby ass.[/say]")
+		saynn("[say=tavi]Ну, она та ещё сиреневая шлюшка. Лови её в сиреневом блоке утром. И, пожалуйста, не церемонься с её субмиссивной задницей.[/say]")
 
-		saynn("And just like that, you're free. Relatively speaking. Tavi scritches you under the chin before leaving and heading to her usual spot.")
+		saynn("И вот так просто ты свободна. Относительно говоря. Тави чешет тебя под подбородком, прежде чем уйти на своё привычное место.")
 
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 	if(state == "torture_skar"):
 		setFlag("TaviModule.Ch4TorturedSkar", true)
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
-		saynn("[say=pc]Let's see how he likes being on the other side.[/say]")
+		saynn("[say=pc]Посмотрим, каково ему будет оказаться на другой стороне.[/say]")
 
-		saynn("[say=tavi]I bet he is really heavy with all that metal junk.[/say]")
+		saynn("[say=tavi]Спорим, со всем этим металлическим хламом он весит целую тонну.[/say]")
 
-		saynn("Tavi finds her uniform in one of the bins outside and proceeds to take off Skar's armor and uniform. The guy growls to himself.")
+		saynn("Тави находит свою форму в одном из контейнеров снаружи и принимается снимать с Скара доспехи и одежду. Парень тихо рычит себе под нос.")
 
-		saynn("[say=skar]I was following the captain's orders.[/say]")
+		saynn("[say=skar]Я просто следовал приказам капитана.[/say]")
 
-		saynn("[say=tavi]Yeah-yeah-yeah, give me your pants already.[/say]")
+		saynn("[say=tavi]Да-да-да, просто отдай мне свои штаны уже.[/say]")
 
-		addButton("Continue", "See what happens next", "begin_skar_torture")
+		addButton("Продолжить", "Смотреть, что будет дальше", "begin_skar_torture")
 	if(state == "begin_skar_torture"):
 		setFlag("TaviModule.Ch4TaviKnowsSkarsName", true)
 		playAnimation(StageScene.WoodenHorseSolo, "idle", {pc="skar", bodyState={naked=true,hard=true}})
-		saynn("With your help, Tavi manages to throw Skar onto the wooden horse. She quickly forces his hands and legs into the cuffs while you attach chains to them and tighten them up. Skar barely reaches the floor with his toes, just like you were before, he is already fidgeting uncomfortably.")
+		saynn("С твоей помощью Тави удается забросить Скара на деревянную лошадку. Она быстро застегивает наручники на его руках и ногах, пока ты прикрепляешь к ним цепи и затягиваешь их. Носки ног Скара едва касаются пола — точно так же, как твои раньше, — и он уже нетерпеливо ерзает, чувствуя дискомфорт.")
 
-		saynn("You take a closer look, the guy has so many more old scars and bruises under his clothing, the missing fur around these spots makes it obvious.")
+		saynn("Ты присматриваешься повнимательнее: под одеждой у парня полно старых шрамов и синяков, и отсутствие меха вокруг этих мест делает их совсем заметными.")
 
-		saynn("[say=tavi]What's your real name, Skar?[/say]")
+		saynn("[say=tavi]Как твое настоящее имя, Скар?[/say]")
 
-		saynn("He grunts softly, trying to get used to this position, his muscles working hard.")
+		saynn("Он тихо кряхтит, пытаясь привыкнуть к такому положению; его мышцы напряжены до предела.")
 
-		saynn("[say=skar]..why ask that.[/say]")
+		saynn("[say=skar]..зачем спрашиваешь?[/say]")
 
-		saynn("[say=tavi]Just curious if you have one. Or if you ever had one at all.[/say]")
+		saynn("[say=tavi]Просто любопытно, есть ли оно у тебя. Или было ли оно вообще когда-нибудь.[/say]")
 
-		saynn("[say=skar]Echo, pre-war name. UGh.[/say]")
+		saynn("[say=skar]Эхо, довоенное имя. Тьфу.[/say]")
 
-		addButton("Continue", "See what happens next", "skar_torture_start")
+		addButton("Продолжить", "Смотреть, что будет дальше", "skar_torture_start")
 	if(state == "skar_torture_start"):
 		playAnimation(StageScene.WoodenHorseSolo, "lightstruggle", {pc="skar", bodyState={naked=true,hard=true}})
-		saynn("He tries to pull himself up using his mechanical arms but the moment he lets go, his full package gets smacked against the triangular seat followed by his taint receiving the rest of the stress.")
+		saynn("Он пытается подтянуться на своих механических руках, но стоит ему отпустить опору, как его хозяйство с размаху впечатывается в треугольное сиденье, а следом всё напряжение принимает на себя его промежность.")
 
-		saynn("Tavi slowly raises the wooden horse, making it so the guy can't stand on his toes anymore. The naked wolf can't help but to start fidgeting harder.")
+		saynn("Тави медленно приподнимает деревянную лошадку, лишая парня возможности встать на цыпочки. Голый волк невольно начинает ерзать ещё сильнее.")
 
-		saynn("[say=tavi]The wolf named Echo, huh. I like it. Better than being called something toxic.[/say]")
+		saynn("[say=tavi]Волк по имени Эхо, значит? Мне нравится. Куда лучше, чем какое-нибудь токсичное дерьмо.[/say]")
 
-		saynn("Tavi directs her attention to you.")
+		saynn("Тави переводит взгляд на тебя.")
 
-		saynn("[say=tavi]Wanna humiliate him a little bit more?[/say]")
+		saynn("[say=tavi]Хочешь унизить его ещё немного?[/say]")
 
-		saynn("[say=pc]What do you have in mind?[/say]")
+		saynn("[say=pc]Что у тебя на уме?[/say]")
 
-		saynn("[say=tavi]That red rocket he has seems hard, just imagine..[/say]")
+		saynn("[say=tavi]Его красная ракета кажется такой твёрдой, только представь...[/say]")
 
-		saynn("Skar grunts and tries to close his legs but there is nothing he can do, each attempt to resist brings him pain.")
+		saynn("Скар кряхтит и пытается свести ноги, но всё бесполезно — каждая попытка сопротивления приносит лишь боль.")
 
-		addButton("Torture harder", "You'd rather have him experience more pain", "torture_skar_harder")
-		addButton("Stroke him", "Relief at least some of the guy's tension", "stroke_skar")
+		addButton("Пытать сильнее", "Ты хочешь, чтобы он испытал еще больше боли", "torture_skar_harder")
+		addButton("Погладить его", "Снять хотя бы часть напряжения парня", "stroke_skar")
 	if(state == "stroke_skar"):
 		playAnimation(StageScene.WoodenHorseSolo, "struggle", {pc="skar", bodyState={naked=true,hard=true}})
-		saynn("[say=pc]Huh, sounds fun.[/say]")
+		saynn("[say=pc]Хм, звучит весело.[/say]")
 
-		saynn("You reach for the guy's impressive member and wrap your digits around it. His balls are resting on the triangle which means they aren't resting at all and are under some stress too. You rub the pointy tip, squeezing a drop of precum before spreading it across the whole length.")
+		saynn("Ты тянешься к внушительному члену парня и обхватываешь его пальцами. Его яички лежат на треугольнике, а значит, они не просто висят, а находятся под некоторым напряжением. Ты растираешь острое жало, выдавливая каплю предэякулята, а затем распределяешь её по всей длине.")
 
-		saynn("Tavi's cunning smile shines while she watches Skar struggle with two problems at once now. Skar arches his back and grunts loudly, his body shifting slightly back and forth.")
+		saynn("Хитрая улыбка Тави сияет, пока она наблюдает за тем, как Скар пытается справиться сразу с двумя проблемами. Скар выгибает спину и громко рычит, его тело слегка дергается вперед-назад.")
 
-		saynn("[say=pc]You like that, don't you?[/say]")
+		saynn("[say=pc]Тебе ведь нравится, да?[/say]")
 
-		saynn("[say=skar]Very fun.. ugh..[/say]")
+		saynn("[say=skar]Очень весело... ох...[/say]")
 
-		saynn("[say=tavi]Probably more fun than being a mindless guard, eh?[/say]")
+		saynn("[say=tavi]Наверное, веселее, чем быть безмозглым охранником, а?[/say]")
 
-		saynn("Skar growls slightly so you stroke his cock faster, making him pant instead. The orb near the base of his member starts inflating with blood, the tip leaking more precum with each motion.")
+		saynn("Скар слегка рычит, поэтому ты начинаешь ласкать его член быстрее, заставляя его вместо этого тяжело дышать. Шарик у основания члена начинает раздуваться от крови, а кончик выделяет всё больше смазки с каждым движением.")
 
-		saynn("[say=pc]C'mon, you wanna cum I can feel it.[/say]")
+		saynn("[say=pc]Давай же, ты хочешь кончить, я прямо чувствую.[/say]")
 
-		saynn("The guy throws his head back and lets out passionate noises, his body probably confused from all the pain and pleasure that it's receiving at the same time. But you keep stroking him further until his shaft starts throbbing and twitching, he is so close.")
+		saynn("Парень запрокидывает голову и издает страстные звуки; его тело, должно быть, в замешательстве от смеси боли и удовольствия, которые он получает одновременно. Но ты продолжаешь ласкать его до тех пор, пока его ствол не начинает пульсировать и подергиваться — он уже совсем близко.")
 
-		addButton("Let him cum", "Might as well", "make_skar_cum")
-		addButton("Deny him", "Be very mean with him", "deny_skar_cum")
+		addButton("Дай ему кончить", "Почему бы и нет", "make_skar_cum")
+		addButton("Откажи ему", "Будь с ним пожестче", "deny_skar_cum")
 	if(state == "make_skar_cum"):
 		playAnimation(StageScene.WoodenHorseSolo, "lightstruggle", {pc="skar", pcCum=true, bodyState={naked=true,hard=true}})
-		saynn("You feel his rocket throbbing more and more. But you don't stop, you keep jacking him off until moans start escaping out of his mouth. The guy arches his back again while his canine dick bursts with thick ropes of seed, painting the wooden horse that's underneath him with white.")
+		saynn("Ты чувствуешь, как его «ракета» пульсирует всё сильнее. Но ты не останавливаешься, продолжая ласкать его рукой, пока из его рта не начинают вырываться стоны. Парень снова выгибает спину, когда его собачий член извергает густые струи семени, заливая белым всё деревянное седло под ним.")
 
-		saynn("But each pleasure wave also brings more pain with it as the guy's body struggles to contain the sensations, his perineum area is not particularly happy about it all.")
+		saynn("Но каждая волна наслаждения приносит с собой и боль, так как тело парня с трудом справляется с ощущениями — его промежность явно не в восторге от происходящего.")
 
-		saynn("[say=skar]Fuck..[/say]")
+		saynn("[say=skar]Блядь..[/say]")
 
-		saynn("[say=tavi]Good~. I'm curious, do you think that we are mean?[/say]")
+		saynn("[say=tavi]Хорошая девочка~. Мне любопытно, ты правда считаешь нас злюками?[/say]")
 
-		saynn("[say=skar]Whatever answer that satisfies you is my answer.[/say]")
+		saynn("[say=skar]Любой ответ, который тебя устроит, и будет моим.[/say]")
 
-		saynn("[say=tavi]Good boy.[/say]")
+		saynn("[say=tavi]Умница.[/say]")
 
-		saynn("Tavi begins to lower the wooden horse. But only enough for his feet to be touching the floor again.")
+		saynn("Тави начинает опускать деревянное седло. Но лишь настолько, чтобы его ноги снова коснулись пола.")
 
-		saynn("[say=tavi]You earned this.[/say]")
+		saynn("[say=tavi]Ты это заслужила.[/say]")
 
-		saynn("Skar huffs audibly and just keeps standing on his toes, his mind probably already trying to come up with explanations for all of this.")
+		saynn("Скар громко фыркает и продолжает стоять на цыпочках; его разум, должно быть, уже лихорадочно ищет оправдания всему этому.")
 
-		saynn("Tavi grabs your hand before proceeding to find the exit out of this place.")
+		saynn("Тави хватает тебя за руку, прежде чем отправиться на поиски выхода из этого места.")
 
-		addButton("Continue", "See what happens next", "tavi_pc_escape")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_pc_escape")
 	if(state == "deny_skar_cum"):
-		saynn("You feel that Skar is close and deny him completely, your hand squeezes his shaft, preventing his cum from leaking even if it wanted to. And Skar, having his release stolen, is not too happy, he starts thrashing against his restraints which only makes his situation worse, his crotch looking quite bruised already.")
+		saynn("Ты чувствуешь, что Скар близок, и полностью лишаешь его разрядки: твоя рука сжимает его член, не давая конче вырваться наружу, даже если бы он того захотел. Скар, у которого украли оргазм, не в восторге — он начинает метаться в своих путах, что только ухудшает ситуацию, а его пах уже выглядит довольно припухшим.")
 
-		saynn("[say=skar]Arghh-h.. Fu-uck..[/say]")
+		saynn("[say=skar]Аааагхх.. Бля-а-адь..[/say]")
 
-		saynn("[say=pc]You wanna cum? Well too bad.[/say]")
+		saynn("[say=pc]Хочешь кончить? Ну уж нет, не тут-то было.[/say]")
 
-		saynn("You're not moving your hand no matter how hard he tries to resist. His attempts to hump your hand only result in him dragging his taint over the sharp edge.")
+		saynn("Ты не убираешь руку, как бы сильно он ни пытался сопротивляться. Его попытки вжиматься в твою ладонь лишь приводят к тому, что он насаживается промежностью на острый край.")
 
-		saynn("[say=tavi]Oh wow, you're even more mean than me. Poor pup~[/say]")
+		saynn("[say=tavi]Ого, да ты даже злее меня. Бедный щенок~[/say]")
 
-		saynn("[say=pc]That will be a lesson for trying to stop us, twice.[/say]")
+		saynn("[say=pc]Это будет ему уроком за то, что пытался помешать нам — причем дважды.[/say]")
 
-		saynn("Tavi begins to lower the wooden horse. But only enough for his feet to be touching the floor again.")
+		saynn("Тави начинает опускать деревянное седло. Но лишь настолько, чтобы его ноги снова коснулись пола.")
 
-		saynn("[say=tavi]Let's not torture him too much.[/say]")
+		saynn("[say=tavi]Давай не будем пытать его слишком сильно.[/say]")
 
-		saynn("Skar huffs audibly and just keeps standing on his toes, his mind probably already trying to come up with explanations for all of this.")
+		saynn("Скар громко фыркает и продолжает стоять на цыпочках; его разум, должно быть, уже лихорадочно ищет оправдания всему этому.")
 
-		saynn("Tavi grabs your hand before proceeding to find the exit out of this place.")
+		saynn("Тави хватает тебя за руку, прежде чем отправиться на поиски выхода из этого места.")
 
-		addButton("Continue", "See what happens next", "tavi_pc_escape")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_pc_escape")
 	if(state == "torture_skar_harder"):
 		playAnimation(StageScene.WoodenHorseSolo, "struggle", {pc="skar", bodyState={naked=true,hard=true}})
-		saynn("[say=pc]I have a better idea.[/say]")
+		saynn("[say=pc]У меня есть идея получше.[/say]")
 
-		saynn("Instead of touching him, you find some extra weights that you begin attaching to Skar's ankles. That forces his crotch to put even more weight onto the sharp triangular edge, his perineum area is almost getting crushed by that, you can hear him grunting more.")
+		saynn("Вместо того чтобы трогать его, ты находишь дополнительные утяжелители и начинаешь прикреплять их к лодыжкам Скара. Это заставляет его пах еще сильнее давить на острый треугольный край; его промежность буквально раздавливает, и ты слышишь, как он стонет всё громче.")
 
-		saynn("[say=tavi]Oh wow, that's mean~[/say]")
+		saynn("[say=tavi]Ого, как жестоко~[/say]")
 
-		saynn("He can't help but to struggle more, thrashing against his restraints. But in doing so, he is only forced to endure more pain.")
+		saynn("Он не может не сопротивляться, извиваясь в своих путах. Но тем самым он лишь заставляет себя терпеть еще большую боль.")
 
-		saynn("[say=pc]That's what he gets for going against us, twice.[/say]")
+		saynn("[say=pc]Так ему и надо — он дважды пошел против нас.[/say]")
 
-		saynn("Tavi begins to lower the wooden horse. But only enough for his feet to be touching the floor again.")
+		saynn("Тави начинает опускать деревянное седло. Но лишь настолько, чтобы его ноги снова коснулись пола.")
 
-		saynn("[say=tavi]I understand your anger. But let's not torture him too much.[/say]")
+		saynn("[say=tavi]Я понимаю твой гнев. Но давай не будем пытать его слишком сильно.[/say]")
 
-		saynn("Skar huffs audibly and just keeps standing on his toes, his mind probably already trying to come up with explanations for all of this.")
+		saynn("Скар громко фыркает и продолжает стоять на цыпочках; его разум, должно быть, уже лихорадочно ищет оправдания всему этому.")
 
-		saynn("Tavi grabs your hand before proceeding to find the exit out of this place.")
+		saynn("Тави хватает тебя за руку, прежде чем отправиться на поиски выхода из этого места.")
 
-		addButton("Continue", "See what happens next", "tavi_pc_escape")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_pc_escape")
 	if(state == "do_giveup"):
 		playAnimation(StageScene.WoodenHorseDuo, "struggle", {npc="tavi", npcAction="lightstruggle", bodyState={naked=true}, npcBodyState={naked=true}})
 		setFlag("TaviModule.Ch4TortureEnd", "gaveup")
-		saynn("This is too much. But it seems both you and Tavi have lost the will to struggle.")
+		saynn("Это уже слишком. Но кажется, и ты, и Тави окончательно потеряли волю к сопротивлению.")
 
 		if (GM.pc.hasVagina()):
-			saynn("Your sensitive pussy lips and clit are both irritated to the point of this being extremely painful. What felt kinda kinky at first is now a torture. Desperate, you hump the contraption, spreading your pussy juices over it.")
+			saynn("Твои чувствительные половые губы и клитор настолько раздражены, что это становится невыносимо болезненным. То, что поначалу казалось чем-то эротично-извращенным, превратилось в настоящую пытку. В отчаянии ты начинаешь тереться о приспособление, размазывая свои соки по нему.")
 
 		else:
-			saynn("Your sensitive taint area is irritated to the point of this being extremely painful. What felt kinda kinky at first is now a torture. Desperate, you hump the contraption, trying to avoid the same spot receiving all the stress.")
+			saynn("Твоя чувствительная зона промежности настолько раздражена, что это становится запредельно болезненным. То, что поначалу казалось чем-то эротично-извращенным, превратилось в настоящую пытку. В отчаянии ты начинаешь тереться о приспособление, пытаясь избежать давления на одну и ту же точку.")
 
-		saynn("Tavi is breathing deeply, her belly twitching sometimes and her breasts bouncing slightly as a result. Poor feline's eyes are watery, she hisses occasionally while her tail wags very annoyed between all the spikes of pain.")
+		saynn("Тави тяжело дышит, её живот время от времени вздрагивает, а грудь слегка подпрыгивает в такт дыханию. У бедной кошечки на глазах наворачиваются слезы; она время от времени шипит, а её хвост раздраженно дергается между вспышками боли.")
 
-		saynn("Time passes..")
+		saynn("Проходит время...")
 
-		addButton("Continue", "See what happens", "torture_happens")
+		addButton("Продолжить", "Посмотреть, что будет", "torture_happens")
 	if(state == "torture_happens"):
-		saynn("One hour later, you almost.. got used to it. The pain is still there but you both learned to work around it, to live with it. Your private bits are receiving more damage but what can you do?")
+		saynn("Прошел час, и ты почти... привыкла к этому. Боль никуда не делась, но вы обе научились справляться с ней, жить с ней. Твои интимные места страдают всё сильнее, но что тут поделаешь?")
 
-		saynn("Skar sees that and grabs some weights before proceeding to attach them to your legs. Ow, they're heavy, too heavy. The suffering continues as you're now also fighting against extra weight in addition to your bodies.")
+		saynn("Скар замечает это и хватает гири, прежде чем прикрепить их к твоим ногам. Ох, они тяжелые, слишком тяжелые. Страдания продолжаются: теперь тебе приходится бороться не только с собственным телом, но и с лишним весом.")
 
-		saynn("Tavi would glare at the wolf but she is just too weak for that. The room gets filled with noises of pain and suffering yet again.")
+		saynn("Тави хотела бы свирепо взглянуть на волчицу, но она слишком слаба для этого. Комната снова наполняется звуками боли и мучений.")
 
-		addButton("Continue", "See what happens next", "torture_ends")
+		addButton("Продолжить", "Смотреть, что будет дальше", "torture_ends")
 	if(state == "torture_ends"):
-		saynn("More time passes, who knows how much.. You're both exhausted to the point of just being still again.")
+		saynn("Проходит еще больше времени, кто знает сколько... Вы обе измотаны до такой степени, что можете только неподвижно лежать.")
 
-		saynn("Finally, Skar lowers the wooden horse, letting your legs touch the floor. Oww.. Any change in position brings in more bad sensations. But at least your crotch is not under pressure anymore.")
+		saynn("Наконец, Скар опускает деревянную лошадку, позволяя твоим ногам коснуться пола. О-о-ой... Любое изменение положения приносит новую волну неприятных ощущений. Но, по крайней мере, на твою промежность больше не давит.")
 
-		saynn("Skar slowly unchains you both, leaving the cuffs.")
+		saynn("Скар медленно расцепляет цепи, оставляя наручники на вас.")
 
-		saynn("[say=tavi]Ah.. Done.. already?.. I can do this all day..[/say]")
+		saynn("[say=tavi]Ах... Уже?.. Да я могу так весь день...[/say]")
 
-		saynn("[say=skar]You served your punishment.[/say]")
+		saynn("[say=skar]Наказание исполнено.[/say]")
 
-		saynn("[say=tavi]This won't stop us.[/say]")
+		saynn("[say=tavi]Это нас не остановит.[/say]")
 
-		saynn("[say=skar]Then you will suffer the consequences each time.[/say]")
+		saynn("[say=skar]Тогда каждый раз вы будете расплачиваться за последствия.[/say]")
 
-		saynn("[say=tavi]Hah.. fuck.. Even smiling hurts. I am the consequences, okay?[/say]")
+		saynn("[say=tavi]Хах... блядь... Даже улыбаться больно. Я и есть последствия, ясно?[/say]")
 
-		saynn("[say=skar]You wanna watch the world burn?[/say]")
+		saynn("[say=skar]Хочешь смотреть, как мир горит в огне?[/say]")
 
-		saynn("[say=tavi]I just wanna be happy, Skar.. I know that you're too stubborn to change your mind, don't worry. Just let us go already..[/say]")
+		saynn("[say=tavi]Я просто хочу быть счастливой, Скар... Знаю, ты слишком упрям, чтобы передумать, не переживай. Просто отпусти нас уже...[/say]")
 
-		addButton("Continue", "See what happens next", "skar_lets_you_go")
+		addButton("Продолжить", "Смотреть, что будет дальше", "skar_lets_you_go")
 	if(state == "skar_lets_you_go"):
 		playAnimation(StageScene.Hug, "hug", {npc="tavi"})
 		aimCameraAndSetLocName("hall_mainentrance")
 		GM.pc.setLocation("hall_mainentrance")
 		removeCharacter("skar")
-		saynn("Skar helps you get down and then uncuffs you. As much as you would love to punch him, you know that you will instantly lose and probably serve another hour as a wooden horse rider.")
+		saynn("Скар помогает тебе спуститься, а затем снимает наручники. Как бы тебе ни хотелось врезать ему, ты понимаешь, что мгновенно проиграешь и, скорее всего, проведешь еще час, скача на «деревянной лошадке».")
 
-		saynn("Tavi hisses while putting on her uniform, her shorts instantly receive a green blood stain.")
+		saynn("Тави шипит, натягивая форму; её шорты мгновенно покрываются пятном зеленой крови.")
 
-		saynn("[say=tavi]Aww, hell.[/say]")
+		saynn("[say=tavi]Ох, черт.[/say]")
 
-		saynn("The guy then puts you both on a leash and proceeds to tug you out of this room. Tavi follows even if unwillingly. You do as well, getting choked by your collar is the last thing you want.")
+		saynn("Затем парень сажает вас обоих на поводок и начинает вытягивать из комнаты. Тави следует за ним, хоть и неохотно. Ты делаешь то же самое, ведь меньше всего на свете тебе хочется, чтобы тебя душил ошейник.")
 
-		saynn("Skar drags you through some corridors before ending up near the checkpoint.")
+		saynn("Скар тащит тебя по коридорам, пока вы не оказываетесь возле контрольно-пропускного пункта.")
 
-		saynn("[say=skar]Off you go, inmates.[/say]")
+		saynn("[say=skar]Шагом марш, зэки.[/say]")
 
-		saynn("[say=tavi]Thank you, friend.[/say]")
+		saynn("[say=tavi]Спасибо, дружище.[/say]")
 
-		saynn("Both you and Tavi are still panting softly. The guard leaves, letting you finally let it all out.")
+		saynn("Вы с Тави всё ещё тихонько дышите, пытаясь восстановить дыхание. Охранник уходит, позволяя вам наконец-то расслабиться.")
 
-		saynn("[say=pc]That didn't turn out well.[/say]")
+		saynn("[say=pc]Получилось не очень удачно.[/say]")
 
-		saynn("[say=tavi]It didn't begin well to be honest.[/say]")
+		saynn("[say=tavi]Честно говоря, всё началось не с лучшей стороны.[/say]")
 
-		saynn("[say=pc]Will you give up now?[/say]")
+		saynn("[say=pc]Ты что, уже сдаёшься?[/say]")
 
-		saynn("Tavi comes closer to give you a tight hug.")
+		saynn("Тави подходит ближе и крепко тебя обнимает.")
 
-		saynn("[say=tavi]I appreciate you trying to save us. Even if it doesn't always work out. Next time it's my turn to take one for the team. Okay, cutie?[/say]")
+		saynn("[say=tavi]Спасибо, что пытаешься нас спасти. Даже если не всё всегда идёт по плану. В следующий раз моя очередь подставиться под удар. Идёт, милашка?[/say]")
 
-		saynn("[say=pc]Yes, Miss Tavi.[/say]")
+		saynn("[say=pc]Слушаюсь, мисс Тави.[/say]")
 
-		saynn("[say=tavi]The captain won't stop us that easily. But I need to come up with the next plan. I have a task for you in the meantime..[/say]")
+		saynn("[say=tavi]Капитан нас так просто не остановит. Но мне нужно придумать следующий план. А пока у меня есть для тебя небольшое задание...[/say]")
 
-		saynn("[say=pc]What is it?[/say]")
+		saynn("[say=pc]Что такое?[/say]")
 
-		saynn("[say=tavi]I want you to find Kait. And I want you to teach her a lesson, your choice how. Okay, cutie?[/say]")
+		saynn("[say=tavi]Я хочу, чтобы ты нашла Кейт. И хочу, чтобы ты преподала ей урок — как именно, решать тебе. Идет, милашка?[/say]")
 
-		saynn("[say=pc]Where can I find her?[/say]")
+		saynn("[say=pc]Где мне её искать?[/say]")
 
-		saynn("[say=tavi]Well, she is a lilac slut. Catch her in the lilac block during the morning. And please, be rough with her subby ass.[/say]")
+		saynn("[say=tavi]Ну, она та ещё сиреневая шлюшка. Лови её в сиреневом блоке утром. И, пожалуйста, не церемонься с её субмиссивной задницей.[/say]")
 
-		saynn("And just like that, you're free. Relatively speaking. Tavi scritches you under the chin before leaving and heading to her usual spot.")
+		saynn("И вот так просто ты свободна. Относительно говоря. Тави чешет тебя под подбородком, прежде чем уйти на своё привычное место.")
 
-		addButton("Continue", "Time to go", "endthescene")
+		addButton("Продолжить", "Пора идти", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -6,511 +6,511 @@ func _init():
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.Solo, "sit")
-		saynn("Right. This office is placed near the assembly lab, there must be something on this computer that controls it.")
+		saynn("Так. Этот кабинет находится рядом со сборочной лабораторией, значит, в этом компьютере должно быть что-то, что ею управляет.")
 
-		saynn("You look through the data that it displays first. Oh, here is the [b]collar frequency that Tavi needs[/b]. It's just a series of letters and numbers so you try to remember it.")
+		saynn("Сначала ты просматриваешь отображаемые данные. О, вот она, [b]частота ошейника, которая нужна Тави[/b]. Это просто набор букв и цифр, так что ты пытаешься его запомнить.")
 
-		saynn("Then you go through the files. Documents, documents, more documents.. most of it is useless to you right now.")
+		saynn("Затем ты перебираешь файлы. Документы, документы, еще куча документов... большую часть из них сейчас можно считать бесполезной.")
 
-		saynn("You do find some kind of dashboard that seems to show the current state of the assembly line.")
+		saynn("Наконец ты находишь своего рода панель управления, которая, похоже, показывает текущее состояние сборочной линии.")
 
-		addButton("Dashboard", "Take a look at it", "thedashboard")
+		addButton("Панель управления", "Взглянуть", "thedashboard")
 	if(state == "thedashboard"):
-		saynn("ASSEMBLY LINE STATUS")
+		saynn("СТАТУС СБОРОЧНОЙ ЛИНИИ")
 
-		saynn("- Current Power Status: OFFLINE")
+		saynn("- Текущее состояние питания: ОТКЛЮЧЕНО")
 
-		saynn("- Maintenance Alert: Critical")
+		saynn("- Оповещение о техобслуживании: Критическое")
 
-		saynn("- Last Maintenance: 255 days ago")
+		saynn("- Последнее обслуживание: 255 дней назад")
 
-		saynn("- Urgent Repairs Required: Electrical Systems")
-
-		saynn("-=-=-=-")
-
-		saynn("PRODUCTION ACTIVITY")
-
-		saynn("- Paused Active Projects: 1")
-
-		saynn("- Pending Projects: 12")
-
-		saynn("- Completed Projects: 3")
+		saynn("- Требуется срочный ремонт: Электрические системы")
 
 		saynn("-=-=-=-")
 
-		saynn("LAB ENVIRONMENTAL CONTROL")
+		saynn("ПРОИЗВОДСТВЕННАЯ ДЕЯТЕЛЬНОСТЬ")
 
-		saynn("- Temperature: Stable (23°C)")
+		saynn("- Приостановленные активные проекты: 1")
 
-		saynn("- Humidity: Moderate (56%)")
+		saynn("- Ожидающие проекты: 12")
 
-		saynn("- Air Quality: Acceptable")
+		saynn("- Завершенные проекты: 3")
 
-		saynn("- Ventilation: Operational")
+		saynn("-=-=-=-")
+
+		saynn("КОНТРОЛЬ СРЕДЫ ЛАБОРАТОРИИ")
+
+		saynn("- Температура: Стабильная (23°C)")
+
+		saynn("- Влажность: Умеренная (56%)")
+
+		saynn("- Качество воздуха: Приемлемое")
+
+		saynn("- Вентиляция: Работает")
 
 		saynn("-=-=-=-")
 
 		saynn("NOTIFICATIONS")
 
-		saynn("- 9+ unread messages ready to be played")
+		saynn("- 9+ непрочитанных сообщений готовы к воспроизведению")
 
-		saynn("- Power to the assembly line is currently disabled. To enable it back, touch this notification")
+		saynn("- Питание сборочной линии сейчас отключено. Чтобы включить его снова, коснись этого уведомления")
 
-		addButton("Paused Projects", "Take a look at the paused project", "look_paused_project")
-		addButton("Completed Projects", "Take a look at the completed projects", "look_completed_projects")
-		addButton("Unread messages", "Listen to the messages", "look_unread_messages")
+		addButton("Приостановленные проекты", "Взглянуть на приостановленный проект", "look_paused_project")
+		addButton("Завершенные проекты", "Взглянуть на завершенные проекты", "look_completed_projects")
+		addButton("Непрочитанные сообщения", "Прослушать сообщения", "look_unread_messages")
 		if (getFlag("TaviModule.Ch5EnabledLabPower")):
-			addButton("Leave", "Enough poking around", "start_sentinel_intro")
+			addButton("Уйти", "Хватит копаться", "start_sentinel_intro")
 		else:
-			addButton("Enable power", "Press the notification that will enable the power", "do_enable_power")
-			addButton("Leave", "Enough poking around", "endthescene")
+			addButton("Включить питание", "Нажми на уведомление, чтобы включить питание", "do_enable_power")
+			addButton("Уйти", "Хватит копаться", "endthescene")
 	if(state == "look_paused_project"):
-		saynn("Current Active Projects: 1")
+		saynn("Текущие активные проекты: 1")
 
-		saynn("Project name: Sentinel-X")
+		saynn("Название проекта: Sentinel-X")
 
-		saynn("Job: Advanced Android Guard")
+		saynn("Специализация: Продвинутый андроид-охранник")
 
-		saynn("Unique Traits: A latex-based protective layer that allows for self-healing")
+		saynn("Уникальные черты: Защитный слой на основе латекса, обеспечивающий самовосстановление")
 
-		saynn("Stage of Completion: Awaits final assembly. Paused due to power outage.")
+		saynn("Стадия завершения: Ожидает финальной сборки. Приостановлено из-за отключения питания.")
 
-		addButton("Back", "Look at something else", "thedashboard")
+		addButton("Назад", "Посмотреть что-нибудь другое", "thedashboard")
 	if(state == "look_completed_projects"):
-		saynn("Completed Projects: 3")
+		saynn("Завершенные проекты: 3")
 
-		saynn("Project name: Project [cuss]Rahi[/cuss]")
+		saynn("Название проекта: Проект [cuss]Рахи[/cuss]")
 
-		saynn("Job: [cuss]Universal Feline Android[/cuss]")
+		saynn("Специализация: [cuss]Универсальный андроид-кошка[/cuss]")
 
-		saynn("Description: [cuss]CLASSIFIED INFORMATION[/cuss]")
+		saynn("Описание: [cuss]СЕКРЕТНАЯ ИНФОРМАЦИЯ[/cuss]")
 
-		saynn("Project status: Scrapped")
-
-		saynn("-=-=-=-")
-
-		saynn("Project name: Project Nur-A")
-
-		saynn("Job: Nurse Android")
-
-		saynn("Description: Second attempt at creating a fully autonomous artificial brain. Nur-A is designed as a highly upgradable base that can be expanded to fill almost any medical role.")
-
-		saynn("Project status: Scrapped")
+		saynn("Статус проекта: Списан")
 
 		saynn("-=-=-=-")
 
-		saynn("Project name: [cuss]CLASSIFIED[/cuss]")
+		saynn("Название проекта: Проект «Нур-А»")
 
-		saynn("Job: [cuss]CLASSIFIED[/cuss]")
+		saynn("Роль: Андроид-медсестра")
 
-		saynn("Description: [cuss]CLASSIFIED[/cuss]")
+		saynn("Описание: Вторая попытка создания полностью автономного искусственного мозга. «Нур-А» спроектирована как высокомодульная база, которую можно расширять для выполнения практически любой медицинской роли.")
 
-		saynn("Project status: Successful")
+		saynn("Статус проекта: Списан")
 
-		addButton("Dashboard", "Take a look at it", "thedashboard")
+		saynn("-=-=-=-")
+
+		saynn("Название проекта: [cuss]ЗАСЕКРЕЧЕНО[/cuss]")
+
+		saynn("Роль: [cuss]ЗАСЕКРЕЧЕНО[/cuss]")
+
+		saynn("Описание: [cuss]ЗАСЕКРЕЧЕНО[/cuss]")
+
+		saynn("Статус проекта: Успешно")
+
+		addButton("Панель управления", "Взглянуть", "thedashboard")
 	if(state == "look_unread_messages"):
-		saynn("You get scared a little because the computer begins playing recorded voice messages as soon as you press that button. And voices.. all seem to be quite familiar.")
+		saynn("Тебя пробирает легкий страх: стоит тебе нажать на кнопку, как компьютер начинает проигрывать записи голосовых сообщений. И эти голоса... они кажутся тебе до боли знакомыми.")
 
-		saynn("[say=alexrynard]Captain. Are you being serious?[/say]")
+		saynn("[say=alexrynard]Капитан, вы это серьезно?[/say]")
 
-		saynn("[say=captain]Yes.[/say]")
+		saynn("[say=captain]Да.[/say]")
 
-		saynn("[say=alexrynard]But we spent so much time on it. Time AND resources. Are now you're telling us to just.. stop. When we're at the finish line. Everything is almost working, we got the workflow down, that was the hardest part. Can I ask why?![/say]")
+		saynn("[say=alexrynard]Но мы потратили на это столько времени. И времени, И ресурсов. И теперь вы говорите нам просто... остановиться? Когда мы уже у самой финишной черты! Всё почти работает, мы отладили рабочий процесс, а это было самым сложным. Можно узнать, почему?![/say]")
 
-		saynn("[say=captain]I understand why you are upset, I truly do. But this is my final decision.[/say]")
+		saynn("[say=captain]Я понимаю, почему вы расстроены, правда понимаю. Но это моё окончательное решение.[/say]")
 
-		saynn("[say=alexrynard]This just doesn't make any sense. This can lift so much pressure off of our current staff. Guards, nurses, engineers.. even chiefs. Any kind of hard manual labor can be automated with ease. Androids are the future, how can you not understand?[/say]")
+		saynn("[say=alexrynard]Это же просто лишено всякого смысла! Это снимет такую нагрузку с нашего персонала. Охранников, медсестер, инженеров... даже начальников. Любой тяжелый физический труд можно легко автоматизировать. Андроиды — это будущее, как вы можете этого не понимать?[/say]")
 
-		saynn("[say=captain]Androids are.. unreliable.[/say]")
+		saynn("[say=captain]Андроиды... ненадежны.[/say]")
 
-		saynn("[say=alexrynard]Sure, they will break a lot at first. But with enough time they will become extremely reliable. They don't need food or sleep. Only power and occasional repair.[/say]")
+		saynn("[say=alexrynard]Конечно, поначалу они будут часто ломаться. Но со временем они станут чрезвычайно надежными. Им не нужна еда или сон. Только энергия и периодический ремонт.[/say]")
 
-		saynn("[say=captain]I'm not talking about repairs. Androids can not be trusted. They can not be controlled.[/say]")
+		saynn("[say=captain]Я говорю не о ремонте. Андроидам нельзя доверять. Их невозможно контролировать.[/say]")
 
-		saynn("[say=alexrynard]..what? But.. It's literally the opposite. Androids won't lie to you, there is no reason not to trust them ever. And they are literally made to be controlled, you can program them to do anything. I'm sorry, captain, but I don't understand your logic at all.[/say]")
+		saynn("[say=alexrynard]..что? Но... всё же ровно наоборот! Андроиды не станут вам лгать, им нет причин не доверять. И они буквально созданы для того, чтобы ими управляли — вы можете запрограммировать их на что угодно. Простите, капитан, но ваша логика ускользает от меня.[/say]")
 
-		saynn("[say=captain]Have you noticed that after spending time with a person.. You begin to know them more? You learn what they like, dislike, what they can do and what they will never do, their limits, how they act and react. Some say that you can.. read a person. And even change them a little.[/say]")
+		saynn("[say=captain]Ты замечал, что когда проводишь с человеком много времени... ты начинаешь узнавать его лучше? Ты узнаешь, что ему нравится, что нет, на что он способен, а чего никогда не сделает, понимаешь его пределы, то, как он действует и реагирует. Говорят, что человека можно... прочитать. И даже немного изменить.[/say]")
 
-		saynn("[say=alexrynard]With all due respect. What does that have to do with androids?[/say]")
+		saynn("[say=alexrynard]При всем уважении. Какое это имеет отношение к андроидам?[/say]")
 
-		saynn("[say=captain]I can not read an android's mind. It's a black box. And if I can not do that.. What control do I have over it then? Let me give you an example. I, the captain, have upsetted you right now. What would stop you from reprogramming all those androids to attack my guards and me on sight?[/say]")
+		saynn("[say=captain]Я не могу прочитать мысли андроида. Это «черный ящик». А если я не могу этого сделать... то какой контроль у меня над ним остается? Давай приведу пример. Допустим, я, капитан, сейчас тебя разозлил. Что помешает тебе перепрограммировать всех этих андроидов, чтобы они нападали на моих охранников и на меня при первом же появлении?[/say]")
 
-		saynn("[say=alexrynard]but..[/say]")
+		saynn("[say=alexrynard]Но...[/say]")
 
-		saynn("[say=captain]An android will lie to you perfectly. A real person.. you can always tell. Trust me. I worked with people all my life. People. Are. Predictable. And being predictable is what makes you controllable. These bots? They're not. They're a danger.[/say]")
+		saynn("[say=captain]Андроид будет лгать тебе идеально. Настоящего человека... ты всегда почувствуешь. Поверь мне. Я всю жизнь работал с людьми. Люди. Предсказуемы. А предсказуемость — это то, что делает тебя управляемым. Эти же боты? Они — нет. Они опасны.[/say]")
 
-		saynn("[say=alexrynard]But then why? Why all of this? Why create an entire robotics lab? Why scan brains? Why make prototypes?[/say]")
+		saynn("[say=alexrynard]Но тогда зачем? Зачем всё это? Зачем создавать целую робототехническую лабораторию? Зачем сканировать мозги? Зачем делать прототипы?[/say]")
 
-		saynn("[say=captain]So you can write a report for AlphaCorp that will tell them that this initiative has failed. Because it was flawed to begin with.[/say]")
+		saynn("[say=captain]Чтобы ты могла написать отчет для «АльфаКорп», в котором будет сказано, что эта инициатива провалилась. Потому что она была порочной с самого начала.[/say]")
 
-		saynn("[say=alexrynard]You want me to tell them that my life-long project is a failed initiative?..[/say]")
+		saynn("[say=alexrynard]Вы хотите, чтобы я сказала им, что проект всей моей жизни — это провальная затея?..[/say]")
 
-		saynn("[say=captain]Run the report by me before you send it. I might wanna make some changes.[/say]")
+		saynn("[say=captain]Покажи мне отчет, прежде чем отправлять. Возможно, я захочу внести кое-какие правки.[/say]")
 
-		saynn("The voice messages end there.")
+		saynn("Голосовые сообщения на этом заканчиваются.")
 
-		addButton("Dashboard", "Take a look at it", "thedashboard")
+		addButton("Панель управления", "Взглянуть", "thedashboard")
 	if(state == "do_enable_power"):
 		setFlag("TaviModule.Ch5EnabledLabPower", true)
-		saynn("As you tap on the unhappy red notification, it suddenly turns green and then disappears. That was.. kinda easy.")
+		saynn("Когда ты тапаешь по несчастному красному уведомлению, оно внезапно становится зеленым и исчезает. Это было... довольно просто.")
 
-		saynn("A few seconds later you begin to hear a low-pitched hum coming from the assembly lab. Hopefully the protective glass lockers can now be accessed.")
+		saynn("Спустя несколько секунд из сборочной лаборатории начинает доноситься низкий гул. Будем надеяться, что теперь можно будет добраться до защищенных стеклянных шкафчиков.")
 
-		addButton("Continue", "See what happens next", "thedashboard")
+		addButton("Продолжить", "Смотреть, что будет дальше", "thedashboard")
 	if(state == "start_sentinel_intro"):
 		playAnimation(StageScene.Solo, "stand")
 		aimCameraAndSetLocName("eng_assemblylab")
 		GM.pc.setLocation("eng_assemblylab")
-		saynn("You quickly glance through all the documents for the last time, looking for any codes for the keypads. There doesn't seem to be any sadly. But, worst case, you just find something to smash the reinforced glass.")
+		saynn("Ты в последний раз быстро пробегаешь глазами все документы в поисках кодов от кнопочных панелей. К сожалению, ничего похожего не находится. Но, в худшем случае, ты просто найдешь чем разбить закаленное стекло.")
 
-		saynn("Time to leave.")
+		saynn("Пора уходить.")
 
-		saynn("You get up and sneakily slip back into the lab, hoping that others won't notice that the abandoned room is suddenly powered up again.")
+		saynn("Ты встаешь и украдкой проскальзываешь обратно в лабораторию, надеясь, что остальные не заметят, что в заброшенной комнате внезапно снова появилось электричество.")
 
-		saynn("And wow, this room is actually massive. High ceilings are illuminated from the glow of proper lighting, giving the whole lab a cold blue tint. It's kinda pretty actually.")
+		saynn("И вау, эта комната на самом деле огромная. Высокие потолки освещены ярким светом, который придает всей лаборатории холодный синий оттенок. На самом деле, это даже довольно красиво.")
 
-		saynn("But as you step closer to the lockers that now have little red lights on them, you realize.. that something else is happening. The assembly line has sprung to life! Conveyors have begun moving unfinished parts from one machine to another until some kind of mechanical arms grab each one and then weld them together, creating some kind of.. metal skeleton?")
+		saynn("Но когда ты подходишь ближе к шкафчикам, на которых теперь горят маленькие красные огоньки, ты понимаешь... что происходит что-то еще. Сборочная линия ожила! Конвейеры начали перемещать незавершенные детали от одной машины к другой, пока какие-то механические манипуляторы не подхватывают каждую из них и не сваривают их вместе, создавая некий... металлический скелет?")
 
-		addButton("Continue", "See what happens next", "sentinel_wakesup")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sentinel_wakesup")
 	if(state == "sentinel_wakesup"):
 		setFlag("TaviModule.Ch5SentinelXHappened", true)
 		addCharacter("sentinelx")
 		playAnimation(StageScene.Duo, "stand", {npc="sentinelx"})
-		saynn("Who knows what will happen next so you hide behind one of the machines and just peek your head out. With each passing moment, the arms get closer and closer to finishing the assembly of some kind of mechanical skeleton.. until they're finally done.")
+		saynn("Кто знает, что будет дальше, поэтому ты прячешься за одной из машин и просто выглядываешь. С каждой секундой манипуляторы всё ближе и ближе подходят к завершению сборки какого-то механического скелета... пока, наконец, не заканчивают работу.")
 
-		saynn("As the last arm inserts some kind of power cell into its frame, the skeleton.. suddenly wakes up, the empty eye holes of its metal skull shining blue.")
+		saynn("Когда последняя клешня вставляет какой-то энергоэлемент в корпус, скелет... внезапно оживает, а пустые глазницы его металлического черепа начинают светиться синим.")
 
-		saynn("It's obviously some kind of.. android. But it still looks.. unfinished.. like it's missing its skin that is supposed to hide all of its internals.")
+		saynn("Очевидно, это какой-то... андроид. Но он всё ещё выглядит... незаконченным... будто у него не хватает кожи, которая должна скрывать все внутренности.")
 
-		saynn("But then this android gets up and looks around. Seeing no one.. the machine just starts speaking to itself.")
+		saynn("Но затем этот андроид поднимается и оглядывается. Не обнаружив никого вокруг... машина просто начинает разговаривать сама с собой.")
 
-		saynn("[say=sentinelx]Core systems activated. Internal diagnostics complete. Warning, powercell is at 23% capacity. Initializing the Sentinel-X protocol..[/say]")
+		saynn("[say=sentinelx]Основные системы активированы. Внутренняя диагностика завершена. Внимание: заряд энергоэлемента составляет 23%. Инициализация протокола «Страж-X»...[/say]")
 
-		saynn("Suddenly the empty space inside the machine.. has begun shrinking.. being filled with something quite shiny.. black goo? In fact, every component receives this shiny black finish to it. Contours of the machine slowly become more.. natural-looking. The animal skull now looks like a proper wolf muzzle, completed with a ponytail and a set of perky canine ears.")
+		saynn("Внезапно пустота внутри машины... начинает сжиматься... заполняясь чем-то блестящим... чёрной жижей? На самом деле, каждый компонент покрывается этим блестящим чёрным слоем. Контуры машины постепенно становятся более... естественными. Череп животного теперь выглядит как настоящая волчья морда, дополненная хвостом и парой стоячих собачьих ушей.")
 
-		saynn("The android flexes its new artificial muscles while a canine tail appears behind it, constructed out of the same black goo material which gives it a cool drippy look. Between its legs there is also a sheath now, completed with a pair of black shiny balls.")
+		saynn("Андроид напрягает свои новые искусственные мышцы, в то время как сзади появляется собачий хвост, сделанный из той же чёрной блестящей жижи, что придаёт ему крутой «стекающий» вид. Между ног у него теперь тоже красуется чехол, дополненный парой чёрных блестящих яиц.")
 
-		saynn("[say=sentinelx]Shield layer has reached its optimal thickness. Fetching equipment and preparing for station-wide patrol.[/say]")
+		saynn("[say=sentinelx]Защитный слой достиг оптимальной толщины. Сбор снаряжения и подготовка к патрулированию станции.[/say]")
 
-		saynn("Huh. It's like they forgot to disable its debug output, allowing you to read its mind. But.. at the same time.. it's a miracle that this android is functional at all. You decide to just wait it out instead of engaging it.")
+		saynn("Хм. Такое ощущение, будто они забыли отключить отладочный вывод, и теперь можно буквально читать его мысли. Но... в то же время... это просто чудо, что этот андроид вообще функционирует. Ты решаешь не вступать в контакт, а просто подождать.")
 
-		saynn("It seems you will have to do something after all. You notice the android approaching one of the glass lockers, opening it just by looking at its keypad and then grabbing.. the prototype grenades that you need.. Fuck.")
+		saynn("Похоже, всё-таки придётся что-то предпринять. Ты замечаешь, как андроид подходит к одному из стеклянных шкафов, открывает его одним лишь взглядом на панель управления, а затем хватает... те самые прототипы гранат, которые тебе нужны... Блять.")
 
-		saynn("The machine then begins to just.. absorb them? It basically just sticks them into its chest and waits for the black goo to pull them deeper into itself. You must stop it!")
+		saynn("Затем машина начинает их просто... поглощать? Она буквально вжимает их себе в грудь и ждёт, пока чёрная жижа затянет их поглубже внутрь. Тебе нужно её остановить!")
 
-		addButton("Intervene", "Try to stop it", "sentinel_try_stop")
+		addButton("Вмешаться", "Попытаться остановить её", "sentinel_try_stop")
 	if(state == "sentinel_try_stop"):
 		playAnimation(StageScene.Duo, "throw", {npc="sentinelx"})
-		saynn("You grab a wrench from one of the workbenches and throw it towards the android!")
+		saynn("Ты хватаешь гаечный ключ с одного из верстаков и швыряешь его в андроида!")
 
-		saynn("[say=pc]Hey![/say]")
+		saynn("[say=pc]Эй![/say]")
 
-		saynn("The wrench hits the machine directly into the back of its head.. and sticks to it.")
+		saynn("Ключ попадает машине прямо в затылок... и намертво к нему прилипает.")
 
-		saynn("[say=sentinelx]Unauthorized physical interaction detected. Searching for potential threats.[/say]")
+		saynn("[say=sentinelx]Обнаружено несанкционированное физическое взаимодействие. Поиск потенциальных угроз.[/say]")
 
-		saynn("Black goo coats the wrench.. and then just spits it back. The android turns around, it's blue eyes noticing you.")
+		saynn("Чёрная жижа обволакивает ключ... а затем просто выплевывает его обратно. Андроид оборачивается, и его голубые глаза фиксируют тебя.")
 
-		saynn("[say=sentinelx]Target acquired. Unauthorized presence detected. Initiating threat assessment.[/say]")
+		saynn("[say=sentinelx]Цель захвачена. Обнаружено несанкционированное присутствие. Инициация оценки угроз.[/say]")
 
-		saynn("The machine scans you. And then assumes a combat stance.")
+		saynn("Машина сканирует тебя. А затем принимает боевую стойку.")
 
-		saynn("[say=sentinelx]Unauthorized intruder in restricted area. Prepare for confrontation.[/say]")
+		saynn("[say=sentinelx]Несанкционированное проникновение в закрытую зону. Приготовиться к столкновению.[/say]")
 
-		saynn("Well.. Time to authorize yourself.")
+		saynn("Ну что ж... Пора выписать тебе разрешение.")
 
-		addButton("Fight", "Start the fight", "do_fight_sentinel")
+		addButton("Драться", "Начать бой", "do_fight_sentinel")
 	if(state == "won_sentinelx"):
 		playAnimation(StageScene.Duo, "stand", {npc="sentinelx", npcAction="defeat", npcBodyState={hard=true}})
-		saynn("The android falls to its knees before you, seemingly unable to continue fighting. Its protective layer doesn't look quite so shiny anymore, there is a visible.. dent.. in its chest.")
+		saynn("Андроид падает перед тобой на колени, кажется, он больше не в силах сражаться. Его защитный слой уже не выглядит таким блестящим — на груди отчетливо видна... вмятина.")
 
-		saynn("[say=sentinelx]Structural integrity compromised. Vulnerability exposed.[/say]")
+		saynn("[say=sentinelx]Структурная целостность нарушена. Уязвимость обнаружена.[/say]")
 
-		saynn("You can just about make out the outlines of the prototype grenades. You can try forcing your hand in there and ripping them out but who knows what will happen to the machine.")
+		saynn("Ты едва можешь различить очертания прототипных гранат. Можно попытаться засунуть туда руку и вырвать их, но кто знает, что тогда станет с машиной.")
 
-		saynn("[say=sentinelx]Attempting to redirect intruder's attention as a last counter-measure.[/say]")
+		saynn("[say=sentinelx]Попытка переключить внимание нарушителя в качестве последней контрмеры.[/say]")
 
-		saynn("Huh. You notice that the android's sheath becomes more defined as a perfectly black canine shaft gets erected between its legs. It looks smooth and shiny with only pulsing blue veins adding more texture to it. There is already a visible black pearl-shaped drop hanging off its tip..")
+		saynn("Хм. Ты замечаешь, как очертания паха андроида становятся всё отчетливее: между ног встает идеально черный член. Он выглядит гладким и блестящим, и лишь пульсирующие синие вены придают ему текстуру. На самом кончике уже висит заметная черная капля, похожая на жемчужину...")
 
-		addButton("Rip grenades out", "Who cares. It's just a machine.", "sentinel_ripgrenades")
-		addButton("Ride it..", "Well. Might as well", "sentinel_pickride")
-		addButton("Submit to", "Let it take control for a bit..", "sentinel_submit_to")
+		addButton("Вырвать гранаты", "Да какая разница. Это всего лишь машина.", "sentinel_ripgrenades")
+		addButton("Оседлать его...", "Ну что ж. Пожалуй, стоит попробовать.", "sentinel_pickride")
+		addButton("Подчиниться", "Пусть на время возьмет контроль над тобой...", "sentinel_submit_to")
 	if(state == "sentinel_ripgrenades"):
 		playAnimation(StageScene.SexStart, "defeated", {npc="sentinelx"})
-		saynn("Nah, the android's dirty tricks won't work on you. After crouching before it, you press your hand against its chest.. and apply more and more pressure.. until your digits begin disappearing into its shiny layer. Black goo already starts to coat your wrist so you gotta act quick!")
+		saynn("Хотя нет, грязные трюки андроида на тебе не сработают. Присев перед ним, ты прижимаешь ладонь к его груди... и давишь всё сильнее и сильнее... пока твои пальцы не начинают погружаться в его блестящий слой. Черная жижа уже начинает обволакивать твое запястье, так что действовать нужно быстро!")
 
-		saynn("[say=sentinelx]Warning. Core component is critically damaged. Estimated time before complete shutdown: 30 seconds.[/say]")
+		saynn("[say=sentinelx]Внимание. Критическое повреждение основного компонента. Расчетное время до полного отключения: 30 секунд.[/say]")
 
-		saynn("Oops. Well, what can you do? Your hand catches something that vague resembles a grenade and yanks it out! As soon as you do that, the machine.. just goes limp in your hands, its latex layer losing its tension and just dripping off, exposing the broken metal skeleton that's underneath. Blue lights in its eyes quickly fade..")
+		saynn("Ой. Ну, что поделаешь? Твоя рука нащупывает нечто, отдаленно напоминающее гранату, и ты резко выдергиваешь её! Как только ты это делаешь, машина... просто обмякает в твоих руках, её латексный слой теряет натяжение и начинает стекать, обнажая сломанный металлический скелет под ним. Синий свет в глазах быстро гаснет...")
 
-		saynn("Kinda grim.")
+		saynn("Мрачновато.")
 
-		saynn("But at least you now have what Tavi needs. Great. Time to go.")
+		saynn("Но, по крайней мере, теперь у тебя есть то, что нужно Тави. Отлично. Пора валить.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "sentinel_pickride"):
-		saynn("How do you wanna ride it?")
+		saynn("Как именно ты хочешь на нем оседлать?")
 
-		addButtonWithChecks("Pussy", "Ride the android's cock with your pussy", "sentinel_ride_pussy", [], [ButtonChecks.HasReachableVagina])
-		addButton("Ass", "Ride the android's cock with your ass", "sentinel_ride_ass")
+		addButtonWithChecks("В киску", "Оседлать член андроида киской", "sentinel_ride_pussy", [], [ButtonChecks.HasReachableVagina])
+		addButton("В задницу", "Оседлать член андроида попой", "sentinel_ride_ass")
 	if(state == "sentinel_ride_pussy"):
 		playAnimation(StageScene.SexCowgirl, "tease", {npc="pc", pc="sentinelx", bodyState={exposedCrotch=true,hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Might as well have some fun and see what this android can do..")
+		saynn("Можно и развлечься, посмотреть, на что способна эта андроидка...")
 
-		saynn("As you expose your {pc.pussyStretch} pussy and straddle its frame.. your thighs already feel the cold touch of the latex teasing them.")
+		saynn("Когда ты раздвигаешь свою {pc.pussyStretch} киску и усаживаешься верхом на её корпус... твои бёдра уже ощущают холодное прикосновение дразнящего их латекса.")
 
-		saynn("[say=sentinelx]Switching to service top mode. Warning, powercell is at 7% capacity.[/say]")
+		saynn("[say=sentinelx]Переход в режим обслуживающего топа. Внимание: заряд силового элемента составляет 7%.[/say]")
 
-		saynn("Better make those 7% count then. Your digits receive a thin layer of latex on them as you get a grasp on the android's cock and guide it towards your inviting pussy slit while also slowly lowering yourself onto it..")
+		saynn("Что ж, тогда стоит выжать из этих 7% максимум. Твои пальцы покрываются тонким слоем латекса, когда ты обхватываешь андроидский член и направляешь его к своей манящей щели, медленно опуска everсь на него...")
 
-		addButton("Continue", "See what happens next", "sentinel_ride_pussy_go")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sentinel_ride_pussy_go")
 	if(state == "sentinel_ride_pussy_go"):
 		playAnimation(StageScene.SexCowgirl, "sex", {npc="pc", pc="sentinelx", bodyState={exposedCrotch=true,hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("That black canine member.. feels cold.. but only at first. As it coats your sensitive petals with its sticky shiny precum, your pussy entrance gets spread open with ease, allowing you to bury that shaft inside you..")
+		saynn("Этот чёрный собачий член... кажется холодным... но лишь поначалу. Когда он покрывает твои чувствительные лепестки липкой блестящей смазкой, вход в киску с лёгкостью растягивается, позволяя тебе заглотить этот ствол целиком...")
 
-		saynn("You begin to ride it, allowing its cock to explore you deeper and deeper. You notice that the latex layer is slowly expanding onto you.. Feels weird.. you feel little electrical impulses piercing your sensitive flesh.. stimulating it.. almost corrupting even..")
+		saynn("Ты начинаешь скакать на ней, позволяя члену проникать всё глубже и глубже. Ты замечаешь, что слой латекса медленно расползается по твоему телу... Странное чувство... ты ощущаешь, как крошечные электрические импульсы пронзают твою чувствительную плоть... стимулируя её... и даже почти развращая...")
 
-		saynn("It feels so good that moans begin escaping your lips. You place your hands on the machine's chest and feel your digits slowly phasing through and also receiving this latex layer that slowly expands further, giving your limbs a shiny new appearance.")
+		saynn("Это настолько приятно, что с твоих губ начинают срываться стоны. Ты кладешь руки на грудь машины и чувствуешь, как твои пальцы медленно проходят сквозь неё, одновременно покрываясь слоем латекса, который продолжает расширяться, придавая твоим конечностям новый блестящий вид.")
 
-		saynn("[say=sentinelx]Transformation protocols disallowed, powercell capacity is critically low.[/say]")
+		saynn("[say=sentinelx]Протоколы трансформации запрещены: заряд силового элемента критически низок.[/say]")
 
-		saynn("At least it won't turn you into one of itself.. Wait, it could do that?! These thoughts get forgotten instantly when you begin to feel android's knot inflating and already slapping against your folds, on the verge of being able to fit inside you..")
+		saynn("По крайней мере, оно не превратит тебя в одного из своих.. Погоди, оно может?! Эти мысли мгновенно вылетают из головы, когда ты начинаешь чувствовать, как андроидский узел раздувается и уже вовсю долбится в твои складки, готовый вот-вот войти в тебя целиком..")
 
-		addButton("Ride it faster", "Might as well see how it will cum..", "sentinel_ride_pussy_cum")
+		addButton("Скачи на нем быстрее", "С таким же успехом можно посмотреть, как он кончит..", "sentinel_ride_pussy_cum")
 	if(state == "sentinel_ride_pussy_cum"):
 		playAnimation(StageScene.SexCowgirl, "fast", {npc="pc", pc="sentinelx", pcCum=true, npcCum=true, bodyState={exposedCrotch=true,hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Even though the android can't transform you.. it can still surely try.. Almost your whole body is now coated in this black shiny latex-like goo.. That keeps stimulating you with little bursts of electricity, making you more eager to ride it. Only your womb seems to still be untouched..")
+		saynn("Пусть андроид и не может трансформировать тебя.. но он определенно может попытаться.. Почти всё твое тело теперь покрыто этой черной блестящей липкой субстанцией, похожей на латекс.. Она постоянно стимулирует тебя короткими разрядами электричества, заставляя тебя еще сильнее жаждать ритмичных движений. Кажется, только твоя матка всё еще остается нетронутой..")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Weirdly enough, instead of just coating your chastity cage, the black goo chooses to construct a little.. sphere around it.. and creating such a high amount of air pressure in it that your cock just.. gets forced to be limp.")
+			saynn("Как ни странно, вместо того чтобы просто покрыть твою клетки целомудрия, черная жижа решает сформировать вокруг нее маленькую.. сферу.. создавая внутри такое высокое давление, что твой член просто.. вынужден стать вялым.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Weirdly enough, instead of just coating your {pc.penis}, the black goo chooses to construct a little.. sphere around it.. and creating such a high amount of air pressure in it that your cock just.. gets forced to be limp.")
+			saynn("Как ни странно, вместо того чтобы просто покрыть твой {pc.penis}, черная жижа решает сформировать вокруг него маленькую.. сферу.. создавая внутри такое высокое давление, что твой член просто.. вынужден стать вялым.")
 
-		saynn("Very soon you find yourself bouncing on that cock while rubbing your body that feels so different.. Even your {pc.breasts} are all encased in this latex material that seems to.. make your nipples extremely sensitive.")
+		saynn("Вскоре ты обнаруживаешь, что скачешь на этом члене, потирая свое тело, которое ощущается совсем иначе.. Даже твои {pc.breasts} полностью заключены в этот латексный материал, который, кажется.. делает твои соски невероятно чувствительными.")
 
-		saynn("[say=sentinelx]Orgasm imminent. Nanobot assimilation sequence initialized. DNA infusion primed and commencing.[/say]")
+		saynn("[say=sentinelx]Оргазм близок. Инициализирована последовательность ассимиляции наноботов. Инфузия ДНК подготовлена и начинается.[/say]")
 
-		saynn("Wait? Did it lie?! You weren't planning to become an android today.. But it feels so fucking good.. Too late to back off now..")
+		saynn("Погоди? Оно соврало?! Ты ведь не планировала становиться андроидом сегодня.. Но это чертовски приятно.. Теперь уже поздно отступать..")
 
-		saynn("A loud moan escapes your lips as the android's knot slips inside you, locking you two together. Your body shivers as the android starts pumping you full of some kind of thick sticky black goo.. claiming your womb and coating its walls.. It feels like it's about to.. start changing you..")
+		saynn("Громкий стон срывается с твоих губ, когда узел андроида входит в тебя, намертво сцепляя вас двоих. Твое тело дрожит, когда андроид начинает наполнять тебя какой-то густой, липкой черной жижей... захватывая твою матку и покрывая её стенки... Кажется, она вот-вот... начнет менять тебя...")
 
-		addButton("Continue", "See what happens next", "sentinel_ride_pussy_debait")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sentinel_ride_pussy_debait")
 	if(state == "sentinel_ride_pussy_debait"):
 		playAnimation(StageScene.SexCowgirl, "inside", {npc="pc", pc="sentinelx", bodyState={exposedCrotch=true,hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("[say=sentinelx]Warning.. Powercell loses charge in 3.. 2.. 1..[/say]")
+		saynn("[say=sentinelx]Внимание... Заряд энергоэлемента иссякнет через 3.. 2.. 1..[/say]")
 
-		saynn("But then the machine suddenly turns off and goes limp. All the sensations that the new latex coating was giving you.. gone completely..")
+		saynn("Но вдруг машина внезапно отключается и обмякает. Все ощущения, которые давало тебе новое латексное покрытие... исчезают без следа...")
 
-		saynn("In fact, this shiny rubber-like material has lost its sticky properties and begins dripping off of you.. revealing your actual self. Phew.")
+		saynn("Более того, этот блестящий резиноподобный материал потерял свою липкость и начинает стекать с тебя... обнажая твой истинный облик. Фух.")
 
-		saynn("As you get up, this same black goo begins dripping out of your used spread pussy.. it will probably take a while because your womb is full of it.. The android was talking about some kind of DNA infusion.. making you wonder if this substance.. is virile.")
+		saynn("Когда ты поднимаешься, эта же черная жижа начинает вытекать из твоей раздвинутой, использованной киски... это, вероятно, займет немало времени, потому что твоя матка полна ею... Андроид говорил о какой-то инфузии ДНК... заставляя тебя гадать, насколько это вещество... плодовито.")
 
-		addButton("Continue", "See what happens next", "after_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_sex")
 	if(state == "sentinel_ride_ass"):
 		playAnimation(StageScene.SexCowgirl, "tease", {npc="pc", pc="sentinelx", bodyState={exposedCrotch=true,hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Might as well have some fun and see what this android can do..")
+		saynn("Можно и развлечься, посмотреть, на что способна эта андроидка...")
 
-		saynn("As you expose your {pc.thick} ass and straddle its frame.. your thighs already feel the cold touch of the latex teasing them.")
+		saynn("Когда ты оголяешь свою {pc.thick} задницу и усаживаешься верхом на его корпус... твои бедра уже ощущают холодное прикосновение дразнящего их латекса.")
 
-		saynn("[say=sentinelx]Switching to service top mode. Warning, powercell is at 7% capacity.[/say]")
+		saynn("[say=sentinelx]Переход в режим обслуживающего топа. Внимание: заряд силового элемента составляет 7%.[/say]")
 
-		saynn("Better make those 7% count then. Your digits receive a thin layer of latex on them as you get a grasp on the android's cock and guide it towards your inviting asshole while also slowly lowering yourself onto it.. The black goo is usually quite sticky but the.. precum?.. that its cock is producing is slippery instead, allowing you to use it as lube.")
+		saynn("Что ж, тогда стоит выжать максимум из этих 7%. Твои пальцы покрываются тонким слоем латекса, когда ты обхватываешь член андроида и направляешь его в свою манящую дырочку, медленно опускаясь на него... Черная жижа обычно довольно липкая, но... предэякулят?.. который выделяет его член, наоборот, скользкий, что позволяет использовать его как смазку.")
 
-		addButton("Continue", "See what happens next", "sentinel_ride_ass_go")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sentinel_ride_ass_go")
 	if(state == "sentinel_ride_ass_go"):
 		playAnimation(StageScene.SexCowgirl, "sex", {npc="pc", pc="sentinelx", bodyState={exposedCrotch=true,hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("That black canine member.. feels cold.. but only at first. As it coats your sensitive flesh with its shiny precum, your anal entrance gets spread open with ease, allowing you to bury that shaft inside you..")
+		saynn("Этот черный собачий член... он холодный... но лишь поначалу. Когда он покрывает твою чувствительную плоть своим блестящим предэякулятом, твой анус с легкостью растягивается, позволяя тебе заглотить этот ствол целиком...")
 
-		saynn("You begin to ride it, allowing its cock to explore you deeper and deeper. You notice that the latex layer is slowly expanding onto you.. Feels weird.. you feel little electrical impulses piercing your sensitive flesh.. stimulating it.. almost corrupting even..")
+		saynn("Ты начинаешь скакать на ней, позволяя члену проникать всё глубже и глубже. Ты замечаешь, что слой латекса медленно расползается по твоему телу... Странное чувство... ты ощущаешь, как крошечные электрические импульсы пронзают твою чувствительную плоть... стимулируя её... и даже почти развращая...")
 
-		saynn("It feels so good that moans begin escaping your lips. You place your hands on the machine's chest and feel your digits slowly phasing through and also receiving this latex layer that slowly expands further, giving your limbs a shiny new appearance.")
+		saynn("Это настолько приятно, что с твоих губ начинают срываться стоны. Ты кладешь руки на грудь машины и чувствуешь, как твои пальцы медленно проходят сквозь неё, одновременно покрываясь слоем латекса, который продолжает расширяться, придавая твоим конечностям новый блестящий вид.")
 
-		saynn("[say=sentinelx]Transformation protocols disallowed, powercell capacity is critically low.[/say]")
+		saynn("[say=sentinelx]Протоколы трансформации запрещены: заряд силового элемента критически низок.[/say]")
 
-		saynn("At least it won't turn you into one of itself.. Wait, it could do that?! These thoughts get forgotten instantly when you begin to feel android's knot inflating and already slapping against your ring, on the verge of being able to fit inside you..")
+		saynn("По крайней мере, он не превратит тебя в одного из своих... Погоди, он может это сделать?! Эти мысли мгновенно вылетают из головы, когда ты начинаешь чувствовать, как узел андроида раздувается и уже бьется о твое кольцо, готовый войти в тебя...")
 
-		addButton("Ride it faster", "Might as well see how it will cum..", "sentinel_ride_ass_cum")
+		addButton("Скачи на нем быстрее", "С таким же успехом можно посмотреть, как он кончит..", "sentinel_ride_ass_cum")
 	if(state == "sentinel_ride_ass_cum"):
 		playAnimation(StageScene.SexCowgirl, "fast", {npc="pc", pc="sentinelx", pcCum=true, npcCum=true, bodyState={exposedCrotch=true,hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("Even though the android can't transform you.. it can still surely try.. Almost your whole body is now coated in this black shiny latex-like goo.. That keeps stimulating you with little bursts of electricity, making you more eager to ride it. Only your depths seem to still be untouched..")
+		saynn("Хотя андроид и не может трансформировать тебя... он определенно может попытаться... Почти всё твое тело теперь покрыто этой черной блестящей липкой субстанцией, похожей на латекс... Она продолжает стимулировать тебя короткими разрядами электричества, заставляя тебя еще сильнее желать оседлать его. Кажется, только твоя глубина всё еще остается нетронутой...")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Weirdly enough, instead of just coating your chastity cage, the black goo chooses to construct a little.. sphere around it.. and creating such a high amount of air pressure in it that your cock just.. gets forced to be limp.")
+			saynn("Как ни странно, вместо того чтобы просто покрыть твою клетки целомудрия, черная жижа решает сформировать вокруг нее маленькую.. сферу.. создавая внутри такое высокое давление, что твой член просто.. вынужден стать вялым.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Weirdly enough, instead of just coating your {pc.penis}, the black goo chooses to construct a little.. sphere around it.. and creating such a high amount of air pressure in it that your cock just.. gets forced to be limp.")
+			saynn("Как ни странно, вместо того чтобы просто покрыть твой {pc.penis}, черная жижа решает сформировать вокруг него маленькую.. сферу.. создавая внутри такое высокое давление, что твой член просто.. вынужден стать вялым.")
 
-		saynn("Very soon you find yourself bouncing on that cock while rubbing your body that feels so different.. Even your {pc.breasts} are all encased in this latex material that seems to.. make your nipples extremely sensitive.")
+		saynn("Вскоре ты обнаруживаешь, что скачешь на этом члене, потирая свое тело, которое ощущается совсем иначе.. Даже твои {pc.breasts} полностью заключены в этот латексный материал, который, кажется.. делает твои соски невероятно чувствительными.")
 
-		saynn("[say=sentinelx]Orgasm imminent. Nanobot assimilation sequence initialized. DNA infusion primed and commencing.[/say]")
+		saynn("[say=sentinelx]Оргазм близок. Инициализирована последовательность ассимиляции наноботов. Инфузия ДНК подготовлена и начинается.[/say]")
 
-		saynn("Wait? Did it lie?! You weren't planning to become an android today.. But it feels so fucking good.. Too late to back off now..")
+		saynn("Погоди? Оно соврало?! Ты ведь не планировала становиться андроидом сегодня.. Но это чертовски приятно.. Теперь уже поздно отступать..")
 
-		saynn("A loud moan escapes your lips as the android's knot slips inside you, locking you two together. Your body shivers as the android starts pumping you full of some kind of thick sticky black goo.. claiming your insides and coating the inner walls.. It feels like it's about to.. start changing you..")
+		saynn("Громкий стон срывается с твоих губ, когда узел андроида входит в тебя, намертво сцепляя вас двоих. Твое тело дрожит, когда андроид начинает наполнять тебя какой-то густой, липкой черной жижей... захватывая твои внутренности и покрывая стенки кишечника... Кажется, он вот-вот... начнет менять тебя...")
 
-		addButton("Continue", "See what happens next", "sentinel_ride_ass_debait")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sentinel_ride_ass_debait")
 	if(state == "sentinel_ride_ass_debait"):
 		playAnimation(StageScene.SexCowgirl, "inside", {npc="pc", pc="sentinelx", bodyState={exposedCrotch=true,hard=true}, npcBodyState={naked=true, hard=true}})
-		saynn("[say=sentinelx]Warning.. Powercell loses charge in 3.. 2.. 1..[/say]")
+		saynn("[say=sentinelx]Внимание... Заряд энергоэлемента иссякнет через 3.. 2.. 1..[/say]")
 
-		saynn("But then the machine suddenly turns off and goes limp. All the sensations that the new latex coating was giving you.. gone completely..")
+		saynn("Но вдруг машина внезапно отключается и обмякает. Все ощущения, которые давало тебе новое латексное покрытие... исчезают без следа...")
 
-		saynn("In fact, this shiny rubber-like material has lost its sticky properties and begins dripping off of you.. revealing your actual self. Phew.")
+		saynn("Более того, этот блестящий резиноподобный материал потерял свою липкость и начинает стекать с тебя... обнажая твой истинный облик. Фух.")
 
-		saynn("As you get up, this same black goo begins dripping out of your used spread tailhole.. it will probably take a while because you're full of it.. The android was talking about some kind of DNA infusion.. making you wonder if this substance.. is virile.")
+		saynn("Когда ты поднимаешься, эта же черная жижа начинает вытекать из твоего использованного, растянутого ануса... Скорее всего, это займет какое-то время, потому что ты полна её до краев... Андроид говорил о какой-то инфузии ДНК... заставляя тебя гадать, насколько эта субстанция... плодовита.")
 
-		addButton("Continue", "See what happens next", "after_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_sex")
 	if(state == "sentinel_submit_to"):
 		playAnimation(StageScene.SexMissionary, "tease", {pc = "sentinelx", npc="pc", bodyState={exposedCrotch=true,hard=true}})
-		saynn("You can just retrieve what you need from the android.. but now you're kinda curious about what it would do to you..")
+		saynn("Ты можешь просто взять от андроида то, что тебе нужно... но теперь тебе чертовски любопытно, что он может с тобой сделать...")
 
-		saynn("And so instead of doing anything to it, you just lie down on the floor and wait for it to recover.")
+		saynn("И поэтому вместо того, чтобы что-то предпринять, ты просто ложишься на пол и ждешь, пока он придет в себя.")
 
-		saynn("[say=sentinelx]Distraction successful. Intruder's status: completely submissive. Securing.[/say]")
+		saynn("[say=sentinelx]Отвлечение прошло успешно. Статус нарушителя: полная покорность. Фиксация.[/say]")
 
-		saynn("Wow, rude. You almost change your mind but then the machine pins you to the floor, its hands grabbing yours and.. forming some kind of organic-looking handcuffs around your wrists, made entirely out of latex.")
+		saynn("Ого, как грубо. Ты почти успеваешь передумать, но в этот момент машина прижимает тебя к полу; её манипуляторы хватают твои руки и... образуют вокруг запястий некое подобие органических наручников, сделанных целиком из латекса.")
 
-		saynn("[say=sentinelx]Administering a fitting punishment.[/say]")
+		saynn("[say=sentinelx]Применение подобающего наказания.[/say]")
 
-		saynn("Huh. You would ask the machine about the punishment but then it grabs your face.. and produces a ball made out of this same rubber material before pushing it into your mouth and securing it with some latex straps.")
+		saynn("Хм. Ты бы спросила машину о наказании, но она хватает тебя за лицо... и достает шар из того же резинового материала, после чего запихивает его тебе в рот и закрепляет латексными ремнями.")
 
-		saynn("You would think that this is it but then it covers your eyes and forms some kind of.. mask.. around your whole face.. a mask that blocks any vision and only lets you breathe through your nose stills. You are now completely helpless.")
+		saynn("Ты думаешь, что на этом всё, но затем она закрывает тебе глаза и формирует нечто вроде... маски... на всё лицо... маски, которая полностью блокирует зрение, оставляя возможность дышать только через нос. Теперь ты совершенно беспомощна.")
 
-		saynn("[say=sentinelx]First step completed.[/say]")
+		saynn("[say=sentinelx]Первый этап завершен.[/say]")
 
-		saynn("That was only the first step? What's next then..")
+		saynn("Это был только первый этап? Что же дальше...")
 
-		addButtonWithChecks("Vaginal", "It will fuck your pussy..", "sentinel_submit_pussy", [], [ButtonChecks.HasReachableVagina])
-		addButton("Anal", "It will fuck your ass..", "sentinel_submit_ass")
+		addButtonWithChecks("Вагинальный", "Оно оттрахает твою киску...", "sentinel_submit_pussy", [], [ButtonChecks.HasReachableVagina])
+		addButton("Анальный", "Оно оттрахает твою жопу...", "sentinel_submit_ass")
 		if (GM.pc.hasReachableVagina()):
-			addButton("Random", "Let it pick", "sentinel_submit_random")
+			addButton("Случайно", "Пусть выберет", "sentinel_submit_random")
 	if(state == "lost_sentinelx"):
 		playAnimation(StageScene.SexMissionary, "tease", {pc = "sentinelx", npc="pc", bodyState={exposedCrotch=true,hard=true}})
-		saynn("Defeated, you fall to your knees. But then the sticky android pins you to the floor!")
+		saynn("Поверженная, ты падаешь на колени. Но тут же липкий андроид прижимает тебя к полу!")
 
-		saynn("[say=sentinelx]Confrontation ended successfully. Intruder's status: completely submissive. Securing.[/say]")
+		saynn("[say=sentinelx]Противостояние успешно завершено. Статус нарушительницы: полная покорность. Фиксация...[/say]")
 
-		saynn("Wow, rude. You try to hit the android more but its hands catch yours and.. begin forming some kind of organic-looking handcuffs around your wrists, made entirely out of latex.")
+		saynn("Ого, как грубо. Ты пытаешься ударить андроида сильнее, но его руки перехватывают твои и... начинают формировать вокруг твоих запястий некое подобие органических наручников, сделанных целиком из латекса.")
 
-		saynn("[say=sentinelx]Administering a fitting punishment.[/say]")
+		saynn("[say=sentinelx]Применение подобающего наказания.[/say]")
 
-		saynn("Huh. You would ask the machine about the punishment but then it grabs your face.. and produces a ball made out of this same rubber material before pushing it into your mouth and securing it with some latex straps.")
+		saynn("Хм. Ты бы спросила машину о наказании, но она хватает тебя за лицо... и достает шар из того же резинового материала, после чего запихивает его тебе в рот и закрепляет латексными ремнями.")
 
-		saynn("You would think that this is it but then it covers your eyes and forms some kind of.. mask.. around your whole face.. a mask that blocks any vision and only lets you breathe through your nose stills. You are now completely helpless.")
+		saynn("Ты думаешь, что на этом всё, но затем она закрывает тебе глаза и формирует нечто вроде... маски... на всё лицо... маски, которая полностью блокирует зрение, оставляя возможность дышать только через нос. Теперь ты совершенно беспомощна.")
 
-		saynn("[say=sentinelx]First step completed.[/say]")
+		saynn("[say=sentinelx]Первый этап завершен.[/say]")
 
-		saynn("That was only the first step? What's next then..")
+		saynn("Это был только первый этап? Что же дальше...")
 
-		addButtonWithChecks("Vaginal", "It will fuck your pussy..", "sentinel_submit_pussy", [], [ButtonChecks.HasReachableVagina])
-		addButton("Anal", "It will fuck your ass..", "sentinel_submit_ass")
+		addButtonWithChecks("Вагинальный", "Оно оттрахает твою киску...", "sentinel_submit_pussy", [], [ButtonChecks.HasReachableVagina])
+		addButton("Анальный", "Оно оттрахает твою жопу...", "sentinel_submit_ass")
 		if (GM.pc.hasReachableVagina()):
-			addButton("Random", "Let it pick", "sentinel_submit_random")
+			addButton("Случайно", "Пусть выберет", "sentinel_submit_random")
 	if(state == "sentinel_submit_pussy"):
 		playAnimation(StageScene.SexMissionary, "tease", {pc = "sentinelx", npc="pc", bodyState={exposedCrotch=true,hard=true}, npcBodyState={exposedCrotch=true,hard=true}})
-		saynn("The android positions itself between your legs, your thighs feeling the cold rubber touch.. The machine aligns its canine member against your sensitive folds and lets the tip cover your flesh with this latex material by brushing against it. Wait.. It's spreading..")
+		saynn("Андроид устраивается между твоих ног, и твои бедра ощущают холодное прикосновение резины... Машина прижимает свой клыкастый член к твоим чувствительным складкам и легким движением покрывает твою плоть этим латексным материалом. Погоди... Он растекается...")
 
-		saynn("It goes both ways, up from your thighs and down from your mask, slowly coating your whole body with this shiny layer.. You can feel it because this layer sends little electrical impulses through your skin.. stimulating.. almost corrupting.")
+		saynn("Он движется в обе стороны: вверх от бедер и вниз от маски, медленно покрывая всё твоё тело этим блестящим слоем... Ты чувствуешь это, потому что слой посылает крошечные электрические импульсы сквозь твою кожу... стимулируя... почти развращая.")
 
-		saynn("It feels so good that you try to moan. But as you fail at that, the ballgag starts to coat your throat too..")
+		saynn("Это настолько приятно, что ты пытаешься застонать. Но так как не получается, кляп-шарик начинает покрывать и твое горло тоже...")
 
-		saynn("[say=sentinelx]Transformation protocols disallowed, powercell capacity is critically low.[/say]")
+		saynn("[say=sentinelx]Протоколы трансформации запрещены: заряд силового элемента критически низок.[/say]")
 
-		saynn("At least it won't turn you into one of itself.. Wait, it could do that?! These thoughts get forgotten instantly when you feel the android's canine cock spreading your pussy and forcing itself inside!")
+		saynn("По крайней мере, он не превратит тебя в одного из своих... Погоди, он может это сделать?! Эти мысли мгновенно вылетают из головы, когда ты чувствуешь, как клыкастый член андроида раздвигает твою киску и втискивается внутрь!")
 
-		addButton("Continue", "Feel what happens next", "sentinel_submit_pussy_fuck")
+		addButton("Продолжить", "Почувствуй, что будет дальше", "sentinel_submit_pussy_fuck")
 	if(state == "sentinel_submit_pussy_fuck"):
 		playAnimation(StageScene.SexMissionary, "fast", {pc = "sentinelx", npc="pc", bodyState={exposedCrotch=true,hard=true}, npcBodyState={exposedCrotch=true,hard=true}})
-		saynn("Even though the android can't transform you.. it can still surely try.. Gradually, your whole body gets coated in this black shiny latex-like goo.. Which keeps stimulating you with little bursts of electricity, adding to the sensations of being fucked by an android's cock. Only your womb seems to still be untouched..")
+		saynn("Даже если андроид не может трансформировать тебя... он определенно может попытаться... Постепенно всё твоё тело покрывается этой черной блестящей латексной жижей... которая продолжает стимулировать тебя короткими разрядами электричества, усиливая ощущения от того, как андроид трахает тебя своим членом. Кажется, нетронутой остается только твоя матка...")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Weirdly enough, instead of just coating your chastity cage, the black goo chooses to construct a little.. sphere around it.. and creating such a high amount of air pressure in it that your cock just.. gets forced to be limp.")
+			saynn("Как ни странно, вместо того чтобы просто покрыть твою клетки целомудрия, черная жижа решает сформировать вокруг нее маленькую.. сферу.. создавая внутри такое высокое давление, что твой член просто.. вынужден стать вялым.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Weirdly enough, instead of just coating your {pc.penis}, the black goo chooses to construct a little.. sphere around it.. and creating such a high amount of air pressure in it that your cock just.. gets forced to be limp.")
+			saynn("Как ни странно, вместо того чтобы просто покрыть твой {pc.penis}, черная жижа решает сформировать вокруг него маленькую.. сферу.. создавая внутри такое высокое давление, что твой член просто.. вынужден стать вялым.")
 
-		saynn("Very soon you find yourself squirming hard while the machine holds you pinned, ramming its shaft deep inside.. The mask, gag and handcuffs make you unable to resist even if you wanted to.. but all the stimulation makes it so pleasurable, your inner walls clenching around that cock hard.. So much that its knot begins to grow and inflate..")
+		saynn("Вскоре ты начинаешь неистово извиваться, пока машина удерживает тебя, с силой вбивая свой ствол глубоко внутрь... Маска, кляп и наручники лишают тебя возможности сопротивляться, даже если бы ты очень захотела... но от такой стимуляции становится так охеренно приятно, что твои внутренние стенки судорожно сжимаются вокруг этого члена... Настолько сильно, что его узел начинает расти и раздуваться...")
 
-		saynn("[say=sentinelx]Orgasm imminent. Nanobot assimilation sequence initialized. DNA infusion primed and commencing.[/say]")
+		saynn("[say=sentinelx]Оргазм близок. Инициализирована последовательность ассимиляции наноботов. Инфузия ДНК подготовлена и начинается.[/say]")
 
-		saynn("Wait? Did it lie?! You weren't planning to become an android today.. But it feels so fucking good.. It's not like you can say no now anyway..")
+		saynn("Погоди? Она соврала?! Ты не планировала становиться андроидом именно сегодня... Но это чертовски приятно... Впрочем, ты всё равно уже не можешь сказать «нет»...")
 
-		addButton("Continue", "See what happens next", "sentinel_submit_pussy_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sentinel_submit_pussy_cum")
 	if(state == "sentinel_submit_pussy_cum"):
 		playAnimation(StageScene.SexMissionary, "inside", {pc = "sentinelx", npc="pc", pcCum=true, npcCum=true, bodyState={exposedCrotch=true,hard=true}, npcBodyState={exposedCrotch=true,hard=true}})
-		saynn("A loud muffled noise escapes your lips as the android's knot slips inside you, locking you two together. Your body shivers as the android starts pumping you full of some kind of thick sticky black goo.. claiming your insides and stuffing your womb to the brim.. It feels like it's about to.. start changing you..")
+		saynn("Громкий приглушенный звук срывается с твоих губ, когда узел андроида входит в тебя до упора, намертво сцепляя вас двоих. Твое тело дрожит, когда андроид начинает закачивать в тебя какую-то густую липкую черную жижу... захватывая твои внутренности и забивая матку до самых краев... Кажется, она вот-вот... начнет тебя менять...")
 
-		saynn("You arch your back as best as your restraints allow and cum hard, every thought in your head is only about how good this feels. Maybe being like.. it.. won't be the worst thing that happened in your life..")
+		saynn("Ты выгибаешь спину так сильно, как позволяют путы, и кончаешь на полную катушку; в голове нет ни одной мысли, кроме того, как же это охеренно. Возможно, стать такой... как оно... не будет самым худшим событием в твоей жизни...")
 
-		saynn("[say=sentinelx]Warning.. Powercell loses charge in 3.. 2.. 1..[/say]")
+		saynn("[say=sentinelx]Внимание... Заряд энергоэлемента иссякнет через 3.. 2.. 1..[/say]")
 
-		saynn("But then the machine suddenly turns off and goes limp. All the sensations that the new latex coating was giving you.. gone completely..")
+		saynn("Но вдруг машина внезапно отключается и обмякает. Все ощущения, которые давало тебе новое латексное покрытие... исчезают без следа...")
 
-		saynn("In fact, this shiny rubber-like material has lost its sticky properties and begins dripping off of you.. revealing your actual self. Phew. You suddenly realize that your throat is full of this stuff and begin coughing it all out. The handcuffs around your wrist melt, allowing you to free yourself.")
+		saynn("На самом деле, этот блестящий резиноподобный материал потерял свою липкость и начинает стекать с тебя... обнажая твое истинное естество. Фух. Ты внезапно понимаешь, что твое горло забито этой дрянью, и начинаешь ее выкашливать. Наручники на твоих запястьях плавятся, позволяя тебе освободиться.")
 
-		saynn("That was.. wow. You're still trying to catch your breath while trying to push this machine off you.")
+		saynn("Это было... вау. Ты всё еще пытаешься отдышаться, пытаясь сбросить с себя эту машину.")
 
-		saynn("As you get up, this same black goo begins dripping out of your used spread pussy.. it will probably take a while because you're full of it.. The android was talking about some kind of DNA infusion.. making you wonder if this substance.. is virile.")
+		saynn("Когда ты поднимаешься, та же самая черная жижа начинает сочиться из твоей раздолбанной киски... это, вероятно, займет немало времени, потому что ты полна ею до краев... Андроид говорил о какой-то инфузии ДНК... и ты невольно задаешься вопросом: а не является ли эта субстанция... фертильной?")
 
-		addButton("Continue", "See what happens next", "after_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_sex")
 	if(state == "sentinel_submit_ass"):
 		playAnimation(StageScene.SexMissionary, "tease", {pc = "sentinelx", npc="pc", bodyState={exposedCrotch=true,hard=true}, npcBodyState={exposedCrotch=true,hard=true}})
-		saynn("The android positions itself between your legs, your thighs feeling the cold rubber touch.. The machine aligns its canine member against your backdoor and lets the tip cover your flesh with this latex material by brushing against it. Wait.. It's spreading..")
+		saynn("Андроид устраивается между твоих ног, и твои бедра ощущают прикосновение холодного каучука... Машина прижимает свой клыкастый член к твоей заднице и позволяет кончику покрыть твою плоть этим латексным материалом, слегка проводя по ней. Погоди... Она растекается...")
 
-		saynn("It goes both ways, up from your thighs and down from your mask, slowly coating your whole body with this shiny layer.. You can feel it because this layer sends little electrical impulses through your skin.. stimulating.. almost corrupting.")
+		saynn("Он движется в обе стороны: вверх от бедер и вниз от маски, медленно покрывая всё твоё тело этим блестящим слоем... Ты чувствуешь это, потому что слой посылает крошечные электрические импульсы сквозь твою кожу... стимулируя... почти развращая.")
 
-		saynn("It feels so good that you try to moan. But as you fail at that, the ballgag starts to coat your throat too..")
+		saynn("Это настолько приятно, что ты пытаешься застонать. Но так как не получается, кляп-шарик начинает покрывать и твое горло тоже...")
 
-		saynn("[say=sentinelx]Transformation protocols disallowed, powercell capacity is critically low.[/say]")
+		saynn("[say=sentinelx]Протоколы трансформации запрещены: заряд силового элемента критически низок.[/say]")
 
-		saynn("At least it won't turn you into one of itself.. Wait, it could do that?! These thoughts get forgotten instantly when you feel the android's canine cock spreading your anal ring and forcing itself inside!")
+		saynn("По крайней мере, она не превратит тебя в подобие себя... Стоп, она может это сделать?! Эти мысли мгновенно вылетают из головы, когда ты чувствуешь, как клыкастый член андроида растягивает твое анальное кольцо и с силой врывается внутрь!")
 
-		addButton("Continue", "Feel what happens next", "sentinel_submit_ass_fuck")
+		addButton("Продолжить", "Почувствуй, что будет дальше", "sentinel_submit_ass_fuck")
 	if(state == "sentinel_submit_ass_fuck"):
 		playAnimation(StageScene.SexMissionary, "fast", {pc = "sentinelx", npc="pc", bodyState={exposedCrotch=true,hard=true}, npcBodyState={exposedCrotch=true,hard=true}})
-		saynn("Even though the android can't transform you.. it can still surely try.. Gradually, your whole body gets coated in this black shiny latex-like goo.. Which keeps stimulating you with little bursts of electricity, adding to the sensations of being fucked by an android's cock. Only your deep nethers seem to still be untouched..")
+		saynn("Даже если андроид не может трансформировать тебя... он определенно может попытаться... Постепенно всё твое тело покрывается этой черной блестящей жижей, похожей на латекс... которая продолжает стимулировать тебя короткими разрядами электричества, усиливая ощущения от того, как андроид трахает тебя своим членом. Кажется, только твои самые глубины всё еще остаются нетронутыми...")
 
 		if (GM.pc.isWearingChastityCage()):
-			saynn("Weirdly enough, instead of just coating your chastity cage, the black goo chooses to construct a little.. sphere around it.. and creating such a high amount of air pressure in it that your cock just.. gets forced to be limp.")
+			saynn("Как ни странно, вместо того чтобы просто покрыть твою клетки целомудрия, черная жижа решает сформировать вокруг нее маленькую.. сферу.. создавая внутри такое высокое давление, что твой член просто.. вынужден стать вялым.")
 
 		elif (GM.pc.hasReachablePenis()):
-			saynn("Weirdly enough, instead of just coating your {pc.penis}, the black goo chooses to construct a little.. sphere around it.. and creating such a high amount of air pressure in it that your cock just.. gets forced to be limp.")
+			saynn("Как ни странно, вместо того чтобы просто покрыть твой {pc.penis}, черная жижа решает сформировать вокруг него маленькую.. сферу.. создавая внутри такое высокое давление, что твой член просто.. вынужден стать вялым.")
 
-		saynn("Very soon you find yourself squirming hard while the machine holds you pinned, ramming its shaft deep inside.. The mask, gag and handcuffs make you unable to resist even if you wanted to.. but all the stimulation makes it so pleasurable, your inner walls clenching around that cock hard.. So much that its knot begins to grow and inflate..")
+		saynn("Вскоре ты начинаешь неистово извиваться, пока машина удерживает тебя, с силой вбивая свой ствол глубоко внутрь... Маска, кляп и наручники лишают тебя возможности сопротивляться, даже если бы ты очень захотела... но от такой стимуляции становится так охеренно приятно, что твои внутренние стенки судорожно сжимаются вокруг этого члена... Настолько сильно, что его узел начинает расти и раздуваться...")
 
-		saynn("[say=sentinelx]Orgasm imminent. Nanobot assimilation sequence initialized. DNA infusion primed and commencing.[/say]")
+		saynn("[say=sentinelx]Оргазм близок. Инициализирована последовательность ассимиляции наноботов. Инфузия ДНК подготовлена и начинается.[/say]")
 
-		saynn("Wait? Did it lie?! You weren't planning to become an android today.. But it feels so fucking good.. It's not like you can say no now anyway..")
+		saynn("Погоди? Она соврала?! Ты не планировала становиться андроидом именно сегодня... Но это чертовски приятно... Впрочем, ты всё равно уже не можешь сказать «нет»...")
 
-		addButton("Continue", "See what happens next", "sentinel_submit_ass_cum")
+		addButton("Продолжить", "Смотреть, что будет дальше", "sentinel_submit_ass_cum")
 	if(state == "sentinel_submit_ass_cum"):
 		playAnimation(StageScene.SexMissionary, "inside", {pc = "sentinelx", npc="pc", pcCum=true, npcCum=true, bodyState={exposedCrotch=true,hard=true}, npcBodyState={exposedCrotch=true,hard=true}})
-		saynn("A loud muffled noise escapes your lips as the android's knot slips inside you, locking you two together. Your body shivers as the android starts pumping you full of some kind of thick sticky black goo.. claiming your insides and painting your guts black.. It feels like it's about to.. start changing you..")
+		saynn("Громкий приглушенный стон срывается с твоих губ, когда узел андроида входит в тебя, намертво сцепляя вас двоих. Твое тело дрожит, когда андроид начинает наполнять тебя какой-то густой, липкой черной жижей... захватывая твою нутрянку и окрашивая твои внутренности в черный цвет... Кажется, она вот-вот... начнет менять тебя...")
 
-		saynn("You arch your back as best as your restraints allow and cum hard, every thought in your head is only about how good this feels. Maybe being like.. it.. won't be the worst thing that happened in your life..")
+		saynn("Ты выгибаешь спину так сильно, как позволяют путы, и кончаешь на полную катушку; в голове нет ни одной мысли, кроме того, как же это охеренно. Возможно, стать такой... как оно... не будет самым худшим событием в твоей жизни...")
 
-		saynn("[say=sentinelx]Warning.. Powercell loses charge in 3.. 2.. 1..[/say]")
+		saynn("[say=sentinelx]Внимание... Заряд энергоэлемента иссякнет через 3.. 2.. 1..[/say]")
 
-		saynn("But then the machine suddenly turns off and goes limp. All the sensations that the new latex coating was giving you.. gone completely..")
+		saynn("Но вдруг машина внезапно отключается и обмякает. Все ощущения, которые давало тебе новое латексное покрытие... исчезают без следа...")
 
-		saynn("In fact, this shiny rubber-like material has lost its sticky properties and begins dripping off of you.. revealing your actual self. Phew. You suddenly realize that your throat is full of this stuff and begin coughing it all out. The handcuffs around your wrist melt, allowing you to free yourself.")
+		saynn("На самом деле, этот блестящий резиноподобный материал потерял свою липкость и начинает стекать с тебя... обнажая твое истинное естество. Фух. Ты внезапно понимаешь, что твое горло забито этой дрянью, и начинаешь ее выкашливать. Наручники на твоих запястьях плавятся, позволяя тебе освободиться.")
 
-		saynn("That was.. wow. You're still trying to catch your breath while trying to push this machine off you.")
+		saynn("Это было... вау. Ты всё еще пытаешься отдышаться, пытаясь сбросить с себя эту машину.")
 
-		saynn("As you get up, this same black goo begins dripping out of your used spread tailhole.. it will probably take a while because you're full of it.. The android was talking about some kind of DNA infusion.. making you wonder if this substance.. is virile.")
+		saynn("Когда ты поднимаешься, эта же черная жижа начинает вытекать из твоего использованного, растянутого ануса... Скорее всего, это займет какое-то время, потому что ты полна её до краев... Андроид говорил о какой-то инфузии ДНК... заставляя тебя гадать, насколько эта субстанция... плодовита.")
 
-		addButton("Continue", "See what happens next", "after_sex")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_sex")
 	if(state == "after_sex"):
 		removeCharacter("sentinelx")
 		playAnimation(StageScene.Solo, "stand")
-		saynn("You take a look at the android.. and realize that its protective layer is dripping away too, revealing the metal skeleton underneath.. and also the grenades that Tavi needed! Perfect.")
+		saynn("Ты осматриваешь андроида... и понимаешь, что его защитный слой тоже облезает, обнажая металлический скелет... а под ним — те самые гранаты, которые были нужны Тави! Идеально.")
 
-		saynn("You yank some out of its chest cavity and prepare to leave. It seems this machine won't wake up anytime soon.. or ever.")
+		saynn("Ты вырываешь несколько штук из его грудной клетки и готовишься уходить. Похоже, эта машина в ближайшее время не проснется... да и вообще когда-нибудь проснется.")
 
-		saynn("Time to go.")
+		saynn("Пора идти.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

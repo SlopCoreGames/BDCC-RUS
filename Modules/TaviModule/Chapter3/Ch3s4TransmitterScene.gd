@@ -7,271 +7,271 @@ func _run():
 	if(state == ""):
 		addCharacter("tavi")
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
-		saynn("You return back to Tavi, she seems to have everything under control still. Both engineers are conscious but also have their mouths taped shut. Tavi's foot is pressed into one of their backs. That engineer seems content with his position. The second one squirms and glares.")
+		saynn("Вы возвращаетесь к Тави; кажется, у неё всё ещё всё под контролем. Оба инженера в сознании, но их рты заклеены скотчем. Тави упёрлась ногой в спину одного из них. Этот инженер, похоже, вполне доволен своим положением. Второй же извивается и сверлит её яростным взглядом.")
 
-		saynn("[say=tavi]I see that you succeeded. Good job.[/say]")
+		saynn("[say=tavi]Вижу, у тебя получилось. Хорошая работа.[/say]")
 
-		saynn("The lights on the big wide door blink orange.")
+		saynn("Огни на массивной широкой двери мигают оранжевым.")
 
-		saynn("[say=pc]Yeah, I had some complications. But I managed to hack the console.[/say]")
+		saynn("[say=pc]Да уж, возникли кое-какие осложнения. Но мне удалось взломать консоль.[/say]")
 
-		saynn("Tavi raises a brow.")
+		saynn("Тави приподнимает бровь.")
 
-		saynn("[say=tavi]Oh wow, one day you will be better than me at this.[/say]")
+		saynn("[say=tavi]Ого, когда-нибудь ты будешь разбираться в этом лучше меня.[/say]")
 
-		saynn("She removes her foot from one of the guys. He looks pleadingly up at her. Tall kitty leans down to him and scritches under the chin.")
+		saynn("Она убирает ногу с одного из парней. Тот умоляюще смотрит на неё снизу вверх. Высокая кошечка наклоняется к нему и чешет его под подбородком.")
 
-		saynn("[say=tavi]Gonna miss me, handsome~? Thanks for being a good boy unlike your colleague here.[/say]")
+		saynn("[say=tavi]Будешь скучать по мне, красавчик~? Спасибо, что был послушным мальчиком, в отличие от твоего коллеги.[/say]")
 
-		saynn("Tavi approaches the console and presses a few buttons. The door's pistons and hydraulic systems hum to life as it begins to open, a thick plume of smoke escaping from between the edges. It sure takes its time, the sound of grinding gears and hissing hydraulics resonates in the air as the door continues to open, revealing more and more of the room beyond.")
+		saynn("Тави подходит к консоли и нажимает несколько кнопок. Поршни и гидравлика двери оживают с гулом, и когда дверь начинает открываться, из щелей вырывается густое облако дыма. Процесс явно не быстрый: в воздухе разносится скрежет шестерней и шипение гидравлики, пока дверь продолжает отползать в сторону, открывая всё больше пространства за ней.")
 
-		saynn("[say=tavi]Well then. Shall we~?[/say]")
+		saynn("[say=tavi]Ну что ж. Пройдёмся~?[/say]")
 
-		addButton("Let's go", "Enter the new space", "enter_transmitter")
+		addButton("Погнали", "Войти в новое пространство", "enter_transmitter")
 	if(state == "enter_transmitter"):
 		aimCameraAndSetLocName("eng_bluespacetransmitter")
-		saynn("[say=pc]Let's do this.[/say]")
+		saynn("[say=pc]Ну, погнали.[/say]")
 
-		saynn("The door finally opens with a loud clunk, blue light shines from out of the opening. You and Tavi step inside.")
+		saynn("Дверь наконец открывается с громким лязгом, и из проема льется синий свет. Вы с Тави делаете шаг внутрь.")
 
-		saynn("You find yourself standing in a vast, spherical chamber. The walls are constructed from a gleaming metallic material, and in the center of the room sits a massive blue crystal, encased in a protective holder and shielded by a thick layer of reinforced glass that also dims the light that's coming from it. A catwalk circles the room, providing access to various consoles and control panels that are connected to the contraption in the middle with fat isolated cables.")
+		saynn("Вы оказываетесь в огромном сферическом зале. Стены выполнены из сияющего металлического материала, а в центре комнаты покоится массивный синий кристалл, заключенный в защитный держатель и огражденный толстым слоем армированного стекла, которое приглушает исходящий от него свет. По периметру зала проходит технический мостик, дающий доступ к различным консолям и пультам управления, соединенным с центральным механизмом толстыми изолированными кабелями.")
 
-		saynn("[say=tavi]Wow.[/say]")
+		saynn("[say=tavi]Ого...[/say]")
 
-		saynn("The crystal is huge, almost the size of a person. You barely look at it for longer than a few seconds. But when you look through it.. it's like you're looking into another dimension. You both take a few seconds to marvel at the beauty. The light it produces is so bright. And yet.. so soft.. illuminating the whole room.")
+		saynn("Кристалл огромен, почти размером с человека. Вы едва успеваете рассмотреть его пару секунд, но когда вы смотрите сквозь него... кажется, будто вы заглядываете в другое измерение. Вы оба замираете на мгновение, любуясь этой красотой. Свет, который он излучает, невероятно яркий, но при этом... такой мягкий... заливающий всю комнату.")
 
-		saynn("[say=tavi]The heart of the whole station.[/say]")
+		saynn("[say=tavi]Сердце всей станции.[/say]")
 
-		saynn("Tavi steps on the catwalk and looks through all the control panels before pointing at one.")
+		saynn("Тави ступает на мостик и осматривает панели управления, прежде чем указать на одну из них.")
 
-		saynn("[say=tavi]This one manages power it seems. And we will need a lot of it. Find a way to increase the current flow while I set everything up.[/say]")
+		saynn("[say=tavi]Эта, похоже, управляет питанием. А нам понадобится много энергии. Найди способ увеличить силу тока, пока я всё настрою.[/say]")
 
-		saynn("[say=pc]Yes, Miss Tavi.[/say]")
+		saynn("[say=pc]Слушаюсь, мисс Тави.[/say]")
 
-		addButton("Control panel", "Increase the power input towards the crystal", "power_up")
+		addButton("Панель управления", "Увеличить подачу энергии к кристаллу", "power_up")
 	if(state == "power_up"):
-		saynn("You stand near the panel and try to understand what means what. There are many dials, knobs and buttons but most of the labels have been scratched off with time.")
+		saynn("Вы стоите у панели, пытаясь разобраться, что к чему. Здесь полно дисков, ручек и кнопок, но большинство надписей со временем стерлось.")
 
-		saynn("[say=pc]This thing doesn't come with instructions.[/say]")
+		saynn("[say=pc]К этой штуковине инструкцию забыли приложить.[/say]")
 
-		saynn("Tavi is busy looking into the console, her digits dancing away at the bulky keyboard.")
+		saynn("Тави увлеченно копается в консоли, ее пальцы так и летают по громоздкой клавиатуре.")
 
-		saynn("[say=tavi]Well, try everything, cutie. We can't stop now.[/say]")
+		saynn("[say=tavi]Ну, давай, пробуй всё подряд, милашка. Сейчас нельзя останавливаться.[/say]")
 
-		saynn("Right. What's the worst thing that can happen anyway? You start turning the knobs one by one and seeing what happens. Nothing mostly. But after playing with one of the sliders you notice that the glow coming from the crystal changes, the higher you crank it the more light begins to pulsate.")
+		saynn("Верно. В конце концов, что худшее может случиться? Вы начинаете по очереди крутить ручки, проверяя реакцию. В основном ничего не происходит. Но когда вы возитесь с одним из ползунков, замечаете, что свечение кристалла меняется: чем сильнее вы его выкручиваете, тем интенсивнее начинает пульсировать свет.")
 
-		saynn("[say=pc]This must be it.[/say]")
+		saynn("[say=pc]Должно быть, это оно.[/say]")
 
-		saynn("[say=tavi]Gre-e-eat. I'm almost done too. This thing supports multi-broadcast. Every single Syndicate station in the entire galaxy is gonna hear us. AlphaCorp thought they could steal this tech and not have it backfire on them.[/say]")
+		saynn("[say=tavi]Пре-е-екрасно. Я тоже почти закончила. Эта штука поддерживает многоканальное вещание. Нас услышит каждая станция Синдиката во всей галактике. АльфаКорп думали, что смогут украсть эту технологию и не получить по шапке.[/say]")
 
-		addButton("Raise power", "Route more power to the bluespace crystal", "raise_power")
+		addButton("Повысить мощность", "Направить больше энергии на блюспейс-кристалл", "raise_power")
 	if(state == "raise_power"):
-		saynn("You move the slider up until the panel starts beeping angrily at you. You try to keep it happy, balancing the power draw.")
+		saynn("Ты двигаешь ползунок вверх, пока панель не начинает сердито пищать. Ты пытаешься удержать её в равновесии, балансируя потребление энергии.")
 
-		saynn("[say=pc]I think we're ready.[/say]")
+		saynn("[say=pc]Думаю, мы готовы.[/say]")
 
-		saynn("Tavi finishes typing on the keyboard and looks at you. That cunning smile. The same one that she used on you before. This smile is impossible to forget.")
+		saynn("Тави заканчивает печатать на клавиатуре и смотрит на тебя. Эта хитрая улыбка. Та самая, которой она пользовалась раньше. Эту улыбку невозможно забыть.")
 
-		saynn("[say=tavi]Yes, we are, cutie.[/say]")
+		saynn("[say=tavi]Да, мы готовы, милашка.[/say]")
 
-		saynn("Her eyes exude a fierce determination and an unwavering drive. Her conviction is palpable, and her passion burns like a fire within her.")
+		saynn("В её глазах читается яростная решимость и непоколебимый драйв. Её убежденность почти осязаема, а страсть горит внутри неё, словно огонь.")
 
-		saynn("She looks back at the screen and presses the last key. The crystal, you can hear its hum as it starts drawing in more power. The shiny walls reflect light all over the room, creating cool patterns everywhere. Beautiful. Mesmerizing.")
+		saynn("Она снова переводит взгляд на экран и нажимает последнюю клавишу. Кристалл... ты слышишь его гул, когда он начинает поглощать всё больше энергии. Блестящие стены отражают свет по всей комнате, создавая повсюду причудливые узоры. Красиво. Завораживающе.")
 
-		saynn("A few seconds later the speakers of Tavi's console coughed up some noises that sounded more like static. The microphone that was near them starts creating a little feedback loop until Tavi pulls it closer to her. It's working. It must.")
+		saynn("Спустя несколько секунд динамики консоли Тави выдали звуки, больше похожие на статические помехи. Микрофон рядом с ними начинает создавать небольшую петлю обратной связи, пока Тави не подтягивает его ближе к себе. Работает. Должно работать.")
 
-		saynn("Tavi looks at you again and then brings her lips closer to the mic.")
+		saynn("Тави снова смотрит на тебя, а затем подносит губы к микрофону.")
 
-		saynn("[say=tavi]Anyone hears me?[/say]")
+		saynn("[say=tavi]Меня кто-нибудь слышит?[/say]")
 
-		saynn("Silence. Only a low static hum. These seconds feel like forever.")
+		saynn("Тишина. Лишь низкий гул статики. Эти секунды кажутся вечностью.")
 
-		addButton("Continue", "See what happens next", "after_asking")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_asking")
 	if(state == "after_asking"):
-		saynn("[sayMale]Can you repeat that?[/sayMale]")
+		saynn("[sayMale]Можешь повторить?[/sayMale]")
 
-		saynn("The sudden voice startles both of you. Yes! You're ready to cheer. Someone hears you. Tavi instantly cuts them off.")
+		saynn("Внезапный голос заставляет вас обоих вздрогнуть. Да! Вам хочется закричать от радости. Но кто-то вас услышал, и Тави мгновенно обрывает лишнее.")
 
-		saynn("[say=tavi]I'm a prisoner on a space station under AlphaCorp's control. Broken Dreams Correctional Center. I don't have much time. Can you triangulate my position?[/say]")
+		saynn("[say=tavi]Я заключенная на космической станции под контролем «АльфаКорп». Исправительный центр «Разбитые мечты». У меня мало времени. Ты можешь триангулировать мое местоположение?[/say]")
 
-		saynn("The suspense is killing you. Both of you. Tavi sounds the most serious she has ever been. She holds the mic and stares at the speakers.")
+		saynn("Напряжение зашкаливает. Вы оба замерли. Тави звучит серьезнее, чем когда-либо. Она сжимает микрофон и пристально смотрит на динамики.")
 
-		saynn("[sayMale]Uhh.. Again, I didn't catch that.[/sayMale]")
+		saynn("[sayMale]Э-э... Опять же, я не совсем понял.[/sayMale]")
 
-		saynn("[say=tavi]What? Why not?[/say]")
+		saynn("[say=tavi]Что? Почему?[/say]")
 
-		saynn("Tavi brings the mic to her lips and repeats the same sentence, as clear as possible. Something is not right.")
+		saynn("Тави подносит микрофон к губам и повторяет ту же фразу, стараясь говорить максимально четко. Что-то здесь не так.")
 
-		saynn("A few more seconds pass.")
+		saynn("Проходит еще несколько секунд.")
 
-		saynn("[sayMale]You're coming in completely garbled. Check your encryption keys.[/sayMale]")
+		saynn("[sayMale]Твой сигнал идет сплошными помехами. Проверь ключи шифрования.[/sayMale]")
 
-		saynn("You see something in Tavi's eyes. A realization. And fear.")
+		saynn("Ты видишь что-то в глазах Тави. Осознание. И страх.")
 
-		saynn("[say=tavi]The.. encryption keys?.. Fuck..[/say]")
+		saynn("[say=tavi]Ключи... шифрования?.. Блядь...[/say]")
 
-		saynn("You're still trying to regulate the power to that hungry crystal. It's kinda warm here. And the heat only goes up.")
+		saynn("Ты всё ещё пытаешься регулировать подачу энергии к этому голодному кристаллу. Здесь как-то жарковато. И температура только растёт.")
 
-		saynn("[say=pc]What's happening, Tavi?[/say]")
+		saynn("[say=pc]Что происходит, Тави?[/say]")
 
-		saynn("Tavi steps away from the console. Her muscles tensed up. Eyes open wide. Hands clenched into fists.")
+		saynn("Тави отходит от консоли. Её мышцы напряжены. Глаза широко распахнуты. Кулаки сжаты.")
 
-		saynn("[say=tavi]We can hear them because the console has Syndicate's encryption keys stored. But they don't have ours.[/say]")
+		saynn("[say=tavi]Мы слышим их, потому что на консоли хранятся ключи шифрования Синдиката. Но наших ключей у них нет.[/say]")
 
-		saynn("[say=pc]Can we do something?![/say]")
+		saynn("[say=pc]Мы можем что-нибудь сделать?![/say]")
 
-		saynn("[say=tavi]We can exchange keys. But we gotta have them in the first place.[/say]")
+		saynn("[say=tavi]Мы можем обменяться ключами. Но для этого они должны быть у нас в руках.[/say]")
 
-		saynn("[say=pc]And who has them?[/say]")
+		saynn("[say=pc]И у кого они?[/say]")
 
-		saynn("Tavi looks at you, her eyes full of hatred.")
+		saynn("Тави смотрит на тебя, и её глаза полны ненависти.")
 
-		saynn("[say=tavi]The captain.[/say]")
+		saynn("[say=tavi]У капитана.[/say]")
 
-		saynn("Tavi is shaking, you can hear her gritting her teeth. This sure didn't go according to plan. You're almost ready to give up.")
+		saynn("Тави дрожит, слышно, как она скрежещет зубами. Всё явно пошло не по плану. Ты уже почти готов сдаться.")
 
-		saynn("You both are standing still. Paralyzed. Discouraged. Defeated.")
+		saynn("Вы оба стоите неподвижно. Парализованные. Обескураженные. Побежденные.")
 
-		addButton("Continue", "This is bad", "tavi_rage")
+		addButton("Продолжить", "Дело дрянь", "tavi_rage")
 	if(state == "tavi_rage"):
-		saynn("Suddenly Tavi springs back to the console and starts furiously typing again.")
+		saynn("Внезапно Тави бросается обратно к консоли и снова начинает яростно стучать по клавишам.")
 
-		saynn("[say=tavi]No, I won't give up that easily.[/say]")
+		saynn("[say=tavi]Нет, я так просто не сдамся![/say]")
 
-		saynn("Her voice rings with determination. She stops for a second to remember something and then continues to type in command after command.")
+		saynn("Её голос звенит от решимости. Она на секунду замирает, вспоминая что-то, а затем продолжает вводить команду за командой.")
 
-		saynn("[say=tavi]Not after everything. Keep the power stable, cutie.[/say]")
+		saynn("[say=tavi]Только не после всего, что было. Держи питание в норме, милашка.[/say]")
 
-		saynn("[say=pc]What are you gonna do? We need to get to the captain you said.[/say]")
+		saynn("[say=pc]И что ты собралась делать? Ты же сама сказала, что нам нужно добраться до капитана.[/say]")
 
-		saynn("[say=tavi]Fuck the captain. I know a ship that we can talk to with our encryption keys.[/say]")
+		saynn("[say=tavi]К чёрту капитана! Я знаю один корабль, с которым мы сможем связаться через наши ключи шифрования.[/say]")
 
-		saynn("She types in the frequency and presses the key to start the live voice transmission again. The crystal glows bright. Tavi leans into the microphone and waits for the static to go away. It does.")
+		saynn("Она вводит частоту и нажимает клавишу, чтобы снова запустить прямую голосовую трансляцию. Кристалл ярко вспыхивает. Тави наклоняется к микрофону и ждёт, пока исчезнут помехи. Они исчезают.")
 
-		saynn("[say=tavi]Hey. Do you hear me? Please. I'm trapped here, AlphaCorp's prison.[/say]")
+		saynn("[say=tavi]Эй. Ты меня слышишь? Пожалуйста. Я заперта здесь, в тюрьме АльфаКорп.[/say]")
 
-		saynn("Silence. More time passes. Tavi stares into the speaker, her paw gripping that mic tightly.")
+		saynn("Тишина. Проходит еще немного времени. Тави пристально смотрит на динамик, крепко сжимая микрофон лапой.")
 
-		saynn("[say=elena]..Tavi?.. Is that you?[/say]")
+		saynn("[say=elena]..Тави?.. Это ты?[/say]")
 
-		saynn("A clear female voice comes through. A voice that you never heard before.")
+		saynn("Раздается чистый женский голос. Голос, который ты никогда раньше не слышал.")
 
-		addButton("Continue", "Hope?", "alex_walksin")
+		addButton("Продолжить", "Надежда?", "alex_walksin")
 	if(state == "alex_walksin"):
 		addCharacter("alexrynard")
 		playAnimation(StageScene.Duo, "defeat", {pc = "tavi", npc="alexrynard"})
-		saynn("But before Tavi can answer, her collar suddenly engages and shocks the wearer. Tavi lets out an angry growl as she grabs onto her collar and tries to fight it.")
+		saynn("Но прежде чем Тави успевает ответить, её ошейник внезапно срабатывает, ударяя её током. Тави издает яростный рык, хватаясь за ошейник и пытаясь сопротивляться разряду.")
 
-		saynn("[say=alexrynard]I'm giving you a single second to get the fuck down on the floor.[/say]")
+		saynn("[say=alexrynard]Даю тебе ровно одну секунду, чтобы ты, блять, рухнул на пол.[/say]")
 
-		saynn("You turn around and see the engineer that was blocking your path not that long ago. You gotta do something because he now aims the shock remote straight at you, waiting for it to be able to send another signal. And he isn't happy.")
+		saynn("Ты оборачиваешься и видишь инженера, который совсем недавно преграждал тебе путь. Нужно что-то предпринять, потому что теперь он целится в тебя пультом управления шокером, ожидая возможности отправить следующий сигнал. И он явно не в духе.")
 
-		saynn("You stumble a step back and almost trip over the power control panel. Huh. Gotta think fast.")
+		saynn("Ты отступаешь на шаг, едва не споткнувшись о панель управления питанием. Хм. Нужно соображать быстро.")
 
-		addButton("Turn off power", "Cut off power to the bluespace transmitter completely", "turn_power_off")
-		addButton("Full power", "Create a huge power spike", "power_spike")
+		addButton("Выключить питание", "Полностью обесточить передатчик блюспейса", "turn_power_off")
+		addButton("Полная мощность", "Создать мощный скачок напряжения", "power_spike")
 	if(state == "turn_power_off"):
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard"})
 		setFlag("TaviModule.Ch3TurnedOffPower", true)
-		saynn("Without even looking at it, you find the slider that controls the power and yank it down to zero. Just in time for the foxy's remote to send another signal but to your collar this time. You shut your eyes and brace.")
+		saynn("Даже не глядя, ты находишь ползунок управления мощностью и резко дергаешь его в ноль. Как раз в тот момент, когда пульт лисички должен был отправить очередной сигнал, но на этот раз — твоему ошейнику. Ты зажмуриваешься и готовишься к удару.")
 
-		saynn("Unfortunately for Alex, the transmission didn't happen. You open your eyes and notice that the little light on yours and Tavi's collars isn't on. The foxy huffs.")
+		saynn("К несчастью для Алекс, передача не состоялась. Ты открываешь глаза и замечаешь, что маленькие огоньки на твоем и Тави ошейниках не горят. Лисичка раздраженно фыркает.")
 
-		saynn("[say=alexrynard]Touching my shit was a bad idea. A level of bad that earns you a few extra charges.[/say]")
+		saynn("[say=alexrynard]Трогать моё дерьмо было плохой идеей. Настолько плохой, что тебе за это прилетит пара лишних обвинений.[/say]")
 
-		saynn("Tavi is hissing and panting, trying to get up but failing. But she is not ready to give up just yet and that means so is you.")
+		saynn("Тави шипит и тяжело дышит, пытаясь подняться, но у неё не выходит. Однако она еще не готова сдаваться, а значит, не готов и ты.")
 
-		saynn("[say=tavi]Fuck him up.[/say]")
+		saynn("[say=tavi]Разнеси его в щепки.[/say]")
 
 		if (getFlag("TaviModule.ch3AlexDefeatedHim")):
-			saynn("[say=alexrynard]Give me a break.[/say]")
+			saynn("[say=alexrynard]Дай мне передохнуть.[/say]")
 
 		else:
-			saynn("[say=alexrynard]You couldn't do it before. Think you can win now?[/say]")
+			saynn("[say=alexrynard]Раньше у тебя не получалось. Думаешь, теперь победишь?[/say]")
 
-		saynn("Alex puts the remote away and gets ready for a fight.")
+		saynn("Алекс убирает пульт и готовится к драке.")
 
-		addButton("Fight", "Fight the foxy", "fight_foxy")
+		addButton("Драться", "Сразиться с этой лисицей", "fight_foxy")
 	if(state == "if_won_alex"):
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard", npcAction="defeat"})
-		saynn("Alex grunts loudly as he hits the floor, defeated. He grabs onto the nearby railing and tries to pull himself up, the servos in his spine working overtime.")
+		saynn("Алекс громко кряхтит, когда поверженный падает на пол. Он хватается за ближайшее ограждение и пытается подтянуться, при этом сервоприводы в его позвоночнике работают на пределе возможностей.")
 
-		saynn("But that's when Tavi jumps on him and shoves him back onto the floor before delivering multiple hits to his back, each one more violent than the last one. You hear growling, cries of pain and metal screeching. The guy's back creates sparks while Tavi continues to break him and is seemingly not planning to stop any time soon.")
+		saynn("Но в этот момент Тави прыгает на него и впечатывает обратно в пол, после чего начинает наносить серию ударов по его спине, и каждый следующий оказывается яростнее предыдущего. Слышится рычание, крики боли и скрежет металла. Спина парня высекает искры, пока Тави продолжает ломать его, и, похоже, не собирается останавливаться в ближайшее время.")
 
-		saynn("[say=alexrynard]Hh-h..[/say]")
+		saynn("[say=alexrynard]Ах-х..[/say]")
 
-		saynn("Hatred shines in Tavi's eyes. The poor guy is grunting louder and louder. Until he starts getting weaker. You can't let Tavi kill him.")
+		saynn("В глазах Тави горит ненависть. Бедняга стонет всё громче и громче, пока не начинает слабеть. Ты не можешь позволить Тави прикончить его.")
 
-		saynn("You grab onto the tall cat's shit and pull her away but she just glares at you before kicking you away and returning to beating the poor engineer up.")
+		saynn("Ты хватаешь эту высокую кошку за её дерьмо и оттаскиваешь от него, но она лишь свирепо смотрит на тебя, прежде чем отпихнуть тебя ногой и вернуться к избиению бедного инженера.")
 
-		saynn("[say=pc]Tavi! Stop![/say]")
+		saynn("[say=pc]Тави! Стой![/say]")
 
-		saynn("Adrenaline flows through your blood as you jump on her and throw her off Alex. The cat hisses and bares her fangs and claws, seemingly about to attack you too.")
+		saynn("Адреналин ударяет в кровь, когда ты прыгаешь на неё и сбрасываешь с Алекса. Кошка шипит, скаля клыки и когти, явно собираясь напасть и на тебя тоже.")
 
-		saynn("[say=captain]I would listen to {pc.him} if I were you.[/say]")
+		saynn("[say=captain]На твоем месте я бы послушала {pc.him}.[/say]")
 
-		saynn("Suddenly, a voice.")
+		saynn("Внезапно раздается голос.")
 
-		addButton("Continue", "See what happens next", "captain_appears")
+		addButton("Продолжить", "Смотреть, что будет дальше", "captain_appears")
 	if(state == "if_lost_alex"):
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard", npcAction="defeat"})
-		saynn("You hit the floor, no more fighting for you. Alex does some neck cracking as he slowly approaches you, improvised cuffs in his hands.")
+		saynn("Ты рушишься на пол, силы окончательно покидают тебя. Алекс, похрустывая шеей, медленно приближается, сжимая в руках самодельные наручники.")
 
-		saynn("[say=alexrynard]It's over.[/say]")
+		saynn("[say=alexrynard]Всё кончено.[/say]")
 
-		saynn("But just before he crouches, Tavi jumps on him and makes him take the painful fall before proceeding to deliver multiple hits to his back, each one more violent than the last one. You hear growling, cries of pain and metal screeching. The guy's back creates sparks while Tavi continues to break him and is seemingly not planning to stop any time soon.")
+		saynn("Но прежде чем он успевает присесть, Тави прыгает на него, заставляя болезненно рухнуть на землю, и начинает остервенело лупить его по спине — каждый удар всё яростнее предыдущего. Ты слышишь рычание, вопли боли и скрежет металла. Спина парня высекает искры, пока Тави продолжает ломать его, и, кажется, останавливаться она не собирается.")
 
-		saynn("[say=alexrynard]Hh-h..[/say]")
+		saynn("[say=alexrynard]Ах-х..[/say]")
 
-		saynn("Hatred shines in Tavi's eyes. The poor guy is grunting louder and louder. Until he starts getting weaker. You can't let Tavi kill him.")
+		saynn("В глазах Тави горит ненависть. Бедняга стонет всё громче и громче, пока не начинает слабеть. Ты не можешь позволить Тави прикончить его.")
 
-		saynn("You grab onto the tall cat's shit and pull her away but she just glares at you before kicking you away and returning to beating the poor engineer up.")
+		saynn("Ты хватаешь эту высокую кошку за её дерьмо и оттаскиваешь от него, но она лишь свирепо смотрит на тебя, прежде чем отпихнуть тебя ногой и вернуться к избиению бедного инженера.")
 
-		saynn("[say=pc]Tavi! Stop![/say]")
+		saynn("[say=pc]Тави! Стой![/say]")
 
-		saynn("Adrenaline flows through your blood as you jump on her and throw her off Alex. The cat hisses and bares her fangs and claws, seemingly about to attack you too.")
+		saynn("Адреналин ударяет в кровь, когда ты прыгаешь на неё и сбрасываешь с Алекса. Кошка шипит, скаля клыки и когти, явно собираясь напасть и на тебя тоже.")
 
-		saynn("[say=captain]I would listen to {pc.him} if I were you.[/say]")
+		saynn("[say=captain]На твоем месте я бы послушала {pc.him}.[/say]")
 
-		saynn("Suddenly, a voice.")
+		saynn("Внезапно раздается голос.")
 
-		addButton("Continue", "See what happens next", "captain_appears")
+		addButton("Продолжить", "Смотреть, что будет дальше", "captain_appears")
 	if(state == "power_spike"):
 		playAnimation(StageScene.Duo, "stand", {npc="alexrynard", npcAction="defeat"})
 		setFlag("TaviModule.Ch3SpikedPower", true)
-		saynn("Without even looking at it, you find the slider that controls the power and yank as high as you can. The control panel screams at you but you don't give a damn and just hold it high. A bright flash happens, blinding all of you. Followed by every single electrical device around you turning off.")
+		saynn("Даже не глядя, ты нащупываешь ползунок управления мощностью и рвешь его вверх до упора. Панель управления буквально визжит перед глазами, но тебе плевать — ты держишь его на максимуме. Происходит яркая вспышка, ослепляющая всех вокруг, а следом за ней все электроприборы в округе разом вырубаются.")
 
-		saynn("Alex cries out from pain as he falls onto the floor, the shock remote hits the floor soon after and shatters.")
+		saynn("Алекс вскрикивает от боли, падая на пол; вслед за ним на землю летит и разлетается вдребезги пульт шокера.")
 
-		saynn("[say=pc]Don't get up.[/say]")
+		saynn("[say=pc]Не вздумай вставать.[/say]")
 
-		saynn("[say=alexrynard]Ugh.. Touching my shit was a bad idea.[/say]")
+		saynn("[say=alexrynard]Уф... Трогать моё дерьмо было плохой идеей.[/say]")
 
-		saynn("The crystal is still illuminating the room, letting you see. Tavi's green spots on her fur are even more visible now. The console near her is dead. She catches her breath and then gets up, her eyes glaring at the defeated guy.")
+		saynn("Кристалл всё еще освещает комнату, позволяя хоть что-то видеть. Зеленые пятна на меху Тави теперь видны еще отчетливее. Консоль рядом с ней мертва. Переведя дух, она поднимается, сверля взглядом поверженного парня.")
 
-		saynn("[say=pc]Tavi?[/say]")
+		saynn("[say=pc]Тави?[/say]")
 
-		saynn("Her gaze fixated on him. She clenches her fists as she starts approaching him. All the while the guy tries to get up using the nearest railing as support.")
+		saynn("Её взгляд приковался к нему. Сжимая кулаки, она начинает медленно приближаться. Тем временем парень пытается подняться, опираясь на ближайшие перила.")
 
-		saynn("[say=alexrynard]..a level of bad that earns you a few extra charges.[/say]")
+		saynn("[say=alexrynard]..та степень дерьма, за которую тебе влепят парочку дополнительных обвинений.[/say]")
 
-		saynn("Tavi jumps on him and shoves him back onto the floor before delivering multiple hits to his back, each one more violent than the last one. You hear growling, cries of pain and metal screeching. The guy's back creates sparks while Tavi continues to break him and is seemingly not planning to stop any time soon.")
+		saynn("Тави прыгает на него и впечатывает обратно в пол, после чего начинает наносить серию ударов по его спине, и каждый следующий оказывается яростнее предыдущего. Слышны рычание, крики боли и скрежет металла. От ударов Тави со спины парня летят искры; кажется, она не собирается останавливаться в ближайшее время.")
 
-		saynn("[say=alexrynard]Hh-h..[/say]")
+		saynn("[say=alexrynard]Ах-х..[/say]")
 
-		saynn("Hatred shines in Tavi's eyes. The poor guy is grunting louder and louder. Until he starts getting weaker. You can't let Tavi kill him.")
+		saynn("В глазах Тави горит ненависть. Бедняга стонет всё громче и громче, пока не начинает слабеть. Ты не можешь позволить Тави прикончить его.")
 
-		saynn("You grab onto the tall cat's shit and pull her away but she just glares at you before kicking you away and returning to beating the poor engineer up.")
+		saynn("Ты хватаешь эту высокую кошку за её дерьмо и оттаскиваешь от него, но она лишь свирепо смотрит на тебя, прежде чем отпихнуть тебя ногой и вернуться к избиению бедного инженера.")
 
-		saynn("[say=pc]Tavi! Stop![/say]")
+		saynn("[say=pc]Тави! Стой![/say]")
 
-		saynn("Adrenaline flows through your blood as you jump on her and throw her off Alex. The cat hisses and bares her fangs and claws, seemingly about to attack you too.")
+		saynn("Адреналин ударяет в кровь, когда ты прыгаешь на неё и сбрасываешь с Алекса. Кошка шипит, скаля клыки и когти, явно собираясь напасть и на тебя тоже.")
 
-		saynn("[say=captain]I would listen to {pc.him} if I were you.[/say]")
+		saynn("[say=captain]На твоем месте я бы послушала {pc.him}.[/say]")
 
-		saynn("Suddenly, a voice.")
+		saynn("Внезапно раздается голос.")
 
-		addButton("Continue", "See what happens next", "captain_appears")
+		addButton("Продолжить", "Смотреть, что будет дальше", "captain_appears")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

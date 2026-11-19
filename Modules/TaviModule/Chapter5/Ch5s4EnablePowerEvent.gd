@@ -8,12 +8,12 @@ func registerTriggers(es):
 	
 func run(_triggerID, _args):
 	if(getFlag("TaviModule.Ch5NewPlanSceneHappend") && !getFlag("TaviModule.Ch5SearchedLabFirstTime")):
-		saynn("You get a feeling that this computer might be useful.. But you gotta check the adjacent room first.")
+		saynn("Появляется предчувствие, что этот компьютер может пригодиться... Но сначала нужно заглянуть в соседнюю комнату.")
 		
-		addDisabledButton("Mission", "Check the other room first")
+		addDisabledButton("Миссия", "Сначала проверить соседнюю комнату")
 	
 	if(getFlag("TaviModule.Ch5NewPlanSceneHappend") && getFlag("TaviModule.Ch5SearchedLabFirstTime") && !getFlag("TaviModule.Ch5EnabledLabPower")):
-		addButton("Mission", "Search for the prototype grenade", "startscene")
+		addButton("Миссия", "Поищи прототип гранаты", "startscene")
 
 func getPriority():
 	return 0

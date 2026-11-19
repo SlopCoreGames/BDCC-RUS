@@ -8,7 +8,7 @@ func registerTriggers(es):
 	
 func run(_triggerID, _args):
 	if(getFlag("TaviModule.Ch5NewPlanSceneHappend") && !getFlag("TaviModule.Ch5SearchedLabFirstTime")):
-		addButton("Mission", "Search for the prototype grenade", "startscene")
+		addButton("Миссия", "Поищи прототип гранаты", "startscene")
 
 func getPriority():
 	return 0

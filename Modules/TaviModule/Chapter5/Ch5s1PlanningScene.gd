@@ -14,198 +14,198 @@ func _run():
 	if(state == ""):
 		addCharacter("tavi")
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
-		saynn("As you slowly open your eyes.. a sudden gasp escapes your lips when you see Tavi creepily staring at you with a little smile on her face.")
+		saynn("Когда ты медленно открываешь глаза... у тебя невольно вырывается вздох: Тави с жутковатой улыбкой на лице во все глаза пялится на тебя.")
 
-		saynn("[say=pc]W-what the fuck, Tavi..[/say]")
+		saynn("[say=pc]Ч-что за херня, Тави...[/say]")
 
-		saynn("You are still in your bed. Tavi is looming over your bed for a bit longer but then straightens her posture and chuckles softly.")
+		saynn("Ты всё ещё в постели. Тави ещё какое-то время нависает над тобой, но затем выпрямляется и тихонько посмеивается.")
 
-		saynn("[say=tavi]What? I wasn't watching you sleep. And even if I was.. watching your pets sleep is considered normal, okay?[/say]")
+		saynn("[say=tavi]Что? Я не подглядывала за тем, как ты спишь. Ну, даже если и так... наблюдать за своими питомцами — это же нормально, ясно?[/say]")
 
-		saynn("You slowly get up and rub your eyes.")
+		saynn("Ты медленно поднимаешься и протираешь глаза.")
 
-		saynn("[say=tavi]I got a plan.[/say]")
+		saynn("[say=tavi]У меня есть план.[/say]")
 
-		addButton("Another one?", "Which one is it already?", "another_one")
-		addButton("Plan?", "Ask about the plan", "ask_plan")
+		addButton("Опять?", "Да какой на этот раз?", "another_one")
+		addButton("План?", "Спросить про план", "ask_plan")
 	if(state == "another_one"):
-		saynn("[say=pc]Another one? Listen, Tavi.. or Miss Tavi, whoever..[/say]")
+		saynn("[say=pc]Еще один? Послушай, Тави... или мисс Тави, как бы там ни было...[/say]")
 
-		saynn("She flicks your nose.")
+		saynn("Она щелкает тебя по носу.")
 
-		saynn("[say=tavi]I am your Miss, yes.[/say]")
+		saynn("[say=tavi]Твоя «мисс», именно так.[/say]")
 
-		saynn("The tall feline leans closer, her face showing little emotion apart from the little smile. Seeing her eyes staring at you.. sends shivers down your spine. But then Tavi sighs and lowers her chin.")
+		saynn("Высокая кошка наклоняется ближе, на её лице почти нет эмоций, кроме легкой улыбки. От её пристального взгляда по твоей спине пробегает дрожь. Но затем Тави вздыхает и опускает подбородок.")
 
-		saynn("[say=tavi]And I can't do this without you.[/say]")
+		saynn("[say=tavi]И я не справлюсь без тебя.[/say]")
 
-		saynn("Tavi reaches one of her paws out and tugs at your collar a little. It's still sitting firmly around your neck.. Too firmly.. The smile disappears.")
+		saynn("Тави протягивает лапу и слегка тянет тебя за воротник. Он всё еще плотно сидит на шее... слишком плотно... Улыбка исчезает.")
 
-		saynn("[say=tavi]I just.. Don't want others to be like me.. I've never had a choice of who I wanna be.. Never had a proper childhood even.. We all deserve to have at least some choice, cutie..[/say]")
+		saynn("[say=tavi]Я просто... не хочу, чтобы другие были как я... У меня никогда не было выбора, кем мне быть... Даже нормального детства не было... Мы все заслуживаем хотя бы малейшей возможности выбирать, милашка...[/say]")
 
-		saynn("Hard to argue with that.")
+		saynn("С этим трудно спорить.")
 
-		saynn("[say=pc]What if somebody likes having no choice?[/say]")
+		saynn("[say=pc]А что, если кому-то нравится не иметь выбора?[/say]")
 
-		saynn("[say=tavi]That's their choice, cutie.[/say]")
+		saynn("[say=tavi]Тогда это их выбор, милашка.[/say]")
 
-		saynn("Tavi's little smile is there again like it always was.")
+		saynn("На лице Тави снова играет та самая легкая улыбка, как и всегда.")
 
-		saynn("[say=tavi]Wanna hear what I came up with? I think this plan is the best one yet..[/say]")
+		saynn("[say=tavi]Хочешь послушать, что я придумала? Мне кажется, этот план — лучший из всех..[/say]")
 
-		addButton("Sure", "Listen to Tavi's plan", "ask_plan")
+		addButton("Конечно", "Выслушать план Тави", "ask_plan")
 	if(state == "ask_plan"):
 		playAnimation(StageScene.Duo, "sit", {npc="tavi"})
-		saynn("[say=pc]Well, let me hear it..[/say]")
+		saynn("[say=pc]Ну, давай, излагай..[/say]")
 
-		saynn("Tavi looks around to make sure there is no one around. Then she offers you a chair.")
+		saynn("Тави оглядывается по сторонам, проверяя, нет ли кого рядом, а затем предлагает тебе присесть.")
 
-		saynn("[say=tavi]We.. just pay the captain a visit.[/say]")
+		saynn("[say=tavi]Нам нужно... просто навестить капитана.[/say]")
 
-		saynn("You cough a little. Is she offering a suicide mission?")
+		saynn("Ты слегка покашливаешь. Она что, предлагает самоубийственную миссию?")
 
-		saynn("[say=pc]Wasn't that the first plan?[/say]")
+		saynn("[say=pc]Разве это не был наш самый первый план?[/say]")
 
-		saynn("Tavi nods and chuckles.")
+		saynn("Тави кивает и посмеивается.")
 
-		saynn("[say=tavi]But now we know more. About everything.[/say]")
+		saynn("[say=tavi]Но теперь мы знаем больше. Обо всём.[/say]")
 
-		saynn("[say=pc]I don't know about that, Tavi..[/say]")
+		saynn("[say=pc]Даже не знаю, Тави...[/say]")
 
-		saynn("You try to stand up but Tavi keeps you seated by holding onto your collar. The thing is still sitting around your neck as firm as it was before..")
+		saynn("Ты пытаешься встать, но Тави удерживает тебя на месте, вцепившись в воротник. Эта штука всё так же плотно сидит на твоей шее, как и прежде...")
 
-		saynn("[say=tavi]These collars are our biggest weakness.[/say]")
+		saynn("[say=tavi]Эти ошейники — наша самая большая слабость.[/say]")
 
-		saynn("[say=pc]Yeah, they can shock us at any moment.[/say]")
+		saynn("[say=pc]Да, они могут ударить нас током в любой момент.[/say]")
 
-		saynn("Tavi winks.")
+		saynn("Тави подмигивает.")
 
-		saynn("[say=tavi]They won't if we jam the bluespace signal.[/say]")
+		saynn("[say=tavi]Не смогут, если мы заглушим сигнал блюспейса.[/say]")
 
-		saynn("Huh. They indeed couldn't shock you while the transmitter was out.")
+		saynn("Хм. И правда, пока передатчик не работает, они не смогут тебя ударить.")
 
-		saynn("[say=pc]The captain probably increased the security near the transmitter. They will expect us.[/say]")
+		saynn("[say=pc]Капитан, скорее всего, усилил охрану возле передатчика. Они будут нас ждать.[/say]")
 
-		saynn("[say=tavi]We don't need to touch that one~. All we need is a bigger bluespace crystal than the one in our collars. You know where we can get that~?[/say]")
+		saynn("[say=tavi]К тому нам прикасаться не обязательно~. Всё, что нам нужно — это кристалл блюспейса покрупнее того, что в наших ошейниках. Знаешь, где можно раздобыть такой~?[/say]")
 
-		saynn("Huh. There aren't that many things that use bluespace.. The only other one that comes to your mind is..")
+		saynn("Хм. Не так уж много вещей используют блюспейс... Единственное, что приходит на ум, это...")
 
-		saynn("[say=pc]Datapads.[/say]")
+		saynn("[say=pc]Датапады.[/say]")
 
-		saynn("Tavi pats you on the head.")
+		saynn("Тави похлопывает тебя по голове.")
 
-		saynn("[say=tavi]Exactly. We will need one datapad.. A bluespace frequency for the collars.. And some grenades.[/say]")
+		saynn("[say=tavi]Именно. Нам понадобится один датапад... Частота блюспейса для ошейников... И пара гранат.[/say]")
 
-		saynn("You raise a brow and tilt your head to the side. Tavi sees your confusion and giggles.")
+		saynn("Ты приподнимаешь бровь и склоняешь голову набок. Тави замечает твое замешательство и хихикает.")
 
-		saynn("[say=tavi]Not the normal grenades. Aphrodisiac ones. Guards use small ones but I know that there is a prototype version with a bigger range.[/say]")
+		saynn("[say=tavi]Не обычные гранаты. Афродизиаковые. Охранники используют маленькие, но я знаю, что есть прототип с бóльшим радиусом действия.[/say]")
 
-		saynn("That's an interesting list.")
+		saynn("Интересный список.")
 
-		saynn("[say=tavi]Can you get that for me, cutie?[/say]")
+		saynn("[say=tavi]Сможешь раздобыть это для меня, милашка?[/say]")
 
 		addAskButtons()
 	if(state == "ask_datapad"):
 		askedDatapad = true
-		saynn("[say=pc]Where can I get a working datapad? Last one didn't last for too long.[/say]")
+		saynn("[say=pc]Где мне достать рабочий датапад? Прошлый долго не протянул.[/say]")
 
-		saynn("Tavi rubs her chin, thinking.")
+		saynn("Тави задумчиво потирает подбородок.")
 
-		saynn("[say=tavi]Technically.. we don't need the full datapad.. I can make a little signal jammer using the crystal and some electronic parts. So just get one in any condition. As for where..[/say]")
+		saynn("[say=tavi]Технически... нам не нужен целый датапад... Я могу сделать небольшой глушитель сигнала, используя кристалл и кое-какие электронные детали. Так что просто найди любой, в любом состоянии. А насчет того, где...[/say]")
 
-		saynn("The feline looks at the ceiling of your cell, thinking even harder.")
+		saynn("Кошка уставилась в потолок вашей камеры, погрузившись в еще более глубокие раздумья.")
 
-		saynn("[say=tavi]You can try to beat up guards until you find one.. or..[/say]")
+		saynn("[say=tavi]Можешь попробовать избить охранников, пока не найдешь нужного... или...[/say]")
 
-		saynn("A wide smile appears on Tavi's face.")
+		saynn("На лице Тави расплывается широкая улыбка.")
 
-		saynn("[say=tavi]Or you can find Nova. I'm pretty sure she has one.[/say]")
+		saynn("[say=tavi]Или можешь найти Нову. Я почти уверена, что у неё есть один.[/say]")
 
-		saynn("Nova? The husky that humiliated Tavi? Interesting.")
+		saynn("Нова? Та самая хаски, что унизила Тави? Интересно.")
 
-		saynn("[say=tavi]She won't give it to you willingly of course.[/say]")
+		saynn("[say=tavi]Конечно, просто так она тебе его не отдаст.[/say]")
 
-		saynn("Tavi leans in closer to your ear.")
+		saynn("Тави наклоняется ближе к вашему уху.")
 
-		saynn("[say=tavi]But feel free to be a little rough with her. That puppy will love it, trust me.[/say]")
+		saynn("[say=tavi]Но не стесняйся, будь с ней чуть пожестче. Этой сучке только в радость, поверь мне.[/say]")
 
-		saynn("Tavi straightens her posture again, still smiling wide.")
+		saynn("Тави снова выпрямляется, всё так же широко улыбаясь.")
 
-		saynn("[say=tavi]Datapads have cameras by the way~. Might come handy to stop her from coming after you.[/say]")
+		saynn("[say=tavi]Кстати, в датападах есть камеры~. Может пригодиться, чтобы она не вздумала на тебя охотиться.[/say]")
 
 		addAskButtons()
 	if(state == "ask_freq"):
 		askedFreq = true
-		saynn("[say=pc]Collar frequency? Where can I get that?[/say]")
+		saynn("[say=pc]Частота ошейника? Где мне её достать?[/say]")
 
-		saynn("[say=tavi]Check the computers in engineering. I saw it while we were trying to communicate with the Syndicate.. But I don't remember it.. It's just a string of letters and numbers.[/say]")
+		saynn("[say=tavi]Проверь компьютеры в инженерном отсеке. Я видела её, когда мы пытались связаться с Синдикатом... Но точно не помню... Это просто набор букв и цифр.[/say]")
 
 		if (askedGrenades):
-			saynn("So both the grenades and the frequency are somewhere in engineering.. Good. Makes it a little easier.")
+			saynn("Значит, и гранаты, и частота где-то в инженерном... Хорошо. Так даже проще.")
 
 		else:
-			saynn("Right. The engineering..")
+			saynn("Точно. Инженерный...")
 
 		addAskButtons()
 	if(state == "ask_grenades"):
 		askedGrenades = true
-		saynn("[say=pc]Why would you need those grenades? And where can I get them?[/say]")
+		saynn("[say=pc]Зачем тебе эти гранаты? И где мне их найти?[/say]")
 
-		saynn("[say=tavi]They will be perfect to cause a little.. panic. You will see. As for where..[/say]")
+		saynn("[say=tavi]Они идеально подойдут, чтобы устроить небольшую... панику. Вот увидишь. А насчёт того, где...[/say]")
 
-		saynn("Tavi hums and rubs her feline snout.")
+		saynn("Тави что-то напевает под нос и трет свою кошачью мордочку.")
 
-		saynn("[say=tavi]Since it's still a prototype.. It must be somewhere in engineering. You will have to look around for them, cutie.[/say]")
+		saynn("[say=tavi]Раз это всё ещё прототип... значит, оно должно быть где-то в инженерном. Тебе придётся поискать их, милашка.[/say]")
 
 		if (askedFreq):
-			saynn("So both the grenades and the frequency are somewhere in engineering.. Good. Makes it a little easier.")
+			saynn("Значит, и гранаты, и частота где-то в инженерном... Хорошо. Так даже проще.")
 
 		else:
-			saynn("Right. The engineering..")
+			saynn("Точно. Инженерный...")
 
 		addAskButtons()
 		if (false):
-			addButton("Nothing", "You shouldn't see this", "accept_task")
+			addButton("Ничего", "Тебе не стоит этого видеть", "accept_task")
 	if(state == "accept_task"):
 		playAnimation(StageScene.Duo, "stand", {npc="tavi"})
-		saynn("[say=pc]Alright, I will try to get all of that.[/say]")
+		saynn("[say=pc]Ладно, я постараюсь всё это разузнать.[/say]")
 
-		saynn("As you get up, Tavi walks up closer to you and scrtiches you behind the ear. Such a simple gesture.. But her feline claws always feel so good..")
+		saynn("Когда ты поднимаешься, Тави подходит ближе и начинает чесать тебя за ушком. Такой простой жест... Но её кошачьи когти всегда приносят такое удовольствие...")
 
-		saynn("[say=tavi]Such a good little pet..[/say]")
+		saynn("[say=tavi]Какой послушный питомец...[/say]")
 
-		saynn("[say=pc]Can't you help me though, Miss Tavi?..[/say]")
+		saynn("[say=pc]Но неужели ты не можешь мне помочь, мисс Тави?..[/say]")
 
-		saynn("[say=tavi]I'm afraid not. I shouldn't get anywhere close to Nova after.. the last time. And engineering.. you know it better than I do by this point..[/say]")
+		saynn("[say=tavi]Боюсь, что нет. Мне не стоит приближаться к Нове после... того случая. Да и инженерное дело... к этому моменту ты знаешь об этом лучше меня...[/say]")
 
-		saynn("That's fair. You lean into the scritches.")
+		saynn("Справедливо. Ты подставляешься под её почесушки.")
 
-		saynn("[say=pc]What about Kait.. I did talk to her and..[/say]")
+		saynn("[say=pc]А как же Кейт... Я говорил с ней, и...[/say]")
 
-		saynn("She cuts you off.")
+		saynn("Она перебивает тебя.")
 
-		saynn("[say=tavi]Is that problem solved, cutie?[/say]")
+		saynn("[say=tavi]С этой проблемой уже покончено, милашка?[/say]")
 
-		saynn("You nod softly.")
+		saynn("Ты тихо киваешь.")
 
-		saynn("[say=tavi]Then don't worry about her for now, she can't stop us.[/say]")
+		saynn("[say=tavi]Тогда пока не беспокойся о ней, она нам не помешает.[/say]")
 
-		saynn("Tavi gives you a big hug and prepares to leave your cell. She stops near the entrance and looks at you.")
+		saynn("Тави крепко обнимает тебя и готовится выйти из камеры. У самого выхода она останавливается и смотрит на тебя.")
 
-		saynn("[say=tavi]We're close. I can feel it. This time everything is gonna be different.[/say]")
+		saynn("[say=tavi]Мы уже близко. Я прямо чувствую это. В этот раз всё будет иначе.[/say]")
 
-		saynn("The feline steps out of your cell. And that means.. it's time for you to go too.")
+		saynn("Кошка выходит из твоей камеры. А это значит... тебе тоже пора выдвигаться.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 func addAskButtons():
 	if(!askedDatapad):
-		addButton("Datapad?", "Ask where you can get the datapad", "ask_datapad")
+		addButton("Датапад?", "Спросить, где достать датапад", "ask_datapad")
 	if(!askedFreq):
-		addButton("Frequency?", "Ask where you can find out the bluespace frequency", "ask_freq")
+		addButton("Частота?", "Спросить, где узнать частоту блюспейса", "ask_freq")
 	if(!askedGrenades):
-		addButton("Grenades?", "Ask where you can get the grenades", "ask_grenades")
+		addButton("Гранаты?", "Спросить, где достать гранаты", "ask_grenades")
 	if(askedDatapad && askedFreq && askedGrenades):
-		addButton("Continue", "See what happens next", "accept_task")
+		addButton("Продолжить", "Смотреть, что будет дальше", "accept_task")
 
 
 func _react(_action: String, _args):

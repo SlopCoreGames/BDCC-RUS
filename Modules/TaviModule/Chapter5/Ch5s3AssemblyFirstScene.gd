@@ -6,25 +6,25 @@ func _init():
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("Right.. Looking at this room.. this might be the one where they keep all their unfinished prototypes.")
+		saynn("Так... Глядя на эту комнату... похоже, именно здесь они хранят все свои незавершенные прототипы.")
 
-		saynn("As you cautiously step further into the dimly lit assembly lab, a sense of.. unease washes over you. The cluttered workstations scattered throughout this big open space all have some abandoned projects that had been left behind. You see tools, spare parts and a sea of unfinished.. creations. But that's not what you're looking for.")
+		saynn("Когда вы осторожно углубляетесь в тускло освещенную сборочную лабораторию, вас охватывает чувство... тревоги. По всему этому огромному открытому пространству разбросаны заваленные хламом рабочие станции с брошенными проектами. Вы видите инструменты, запасные части и целое море незавершенных... творений. Но вы ищете не это.")
 
-		saynn("Your gaze shifts to the middle of the lab that has a long assembly line going from one end of the room to another. As you follow it, you notice.. androids.. broken bodies, severed limbs and disembodied heads, all just left on the assembly line catching dust. Huh. Lack of a strong light source makes this area look.. outright creepy. At least none of the equipment seems to be powered.")
+		saynn("Ваш взгляд перемещается к центру лаборатории, где через всю комнату тянется длинная сборочная линия. Проходя вдоль неё, вы замечаете... андроидов... разбитые тела, отрубленные конечности и обезглавленные туловища — всё это просто брошено на конвейере и покрывается пылью. Хм. Из-за нехватки яркого света это место выглядит... чертовски жутко. По крайней мере, кажется, что оборудование обесточено.")
 
-		saynn("As you reach the end of the assembly line you notice a special zone that claims to be the 'equipment testing area'. Rows of special glass lockers followed by a small shooting range. Right, this might be your best bet.")
+		saynn("Дойдя до конца сборочной линии, вы замечаете специальную зону, обозначенную как «зона тестирования оборудования». Ряды специальных стеклянных шкафов, за которыми следует небольшой стрелковый тир. Что ж, это может быть ваш лучший шанс.")
 
-		addButton("Search", "Look for the prototype that you need", "search_prototype")
+		addButton("Искать", "Найдите нужный прототип", "search_prototype")
 	if(state == "search_prototype"):
-		saynn("It's.. hard to see much. But you look into each glass locker. None of them seem to have actual ranged weapons, it's mostly just barebone versions of specialized equipment like hydraulic clamps, drills, extinguishers, that sort of stuff.. None of it seems to have any way to be used by a person, probably why there are so many exposed wires on each.")
+		saynn("Тут... трудно что-то разглядеть. Но вы заглядываете в каждый стеклянный шкаф. Кажется, в них нет настоящего стрелкового оружия — в основном лишь базовые версии специализированного оборудования вроде гидравлических зажимов, дрелей, огнетушителей и тому подобного... Ни одно из них не выглядит пригодным для использования человеком, вероятно, поэтому у каждого так много торчащих проводов.")
 
-		saynn("Right, you find something that looks.. vaguely like grenades, inside one of these lockers. But trying to open it.. you can't. There seems to be a keypad attached to each one of these.. and none of them work without power.")
+		saynn("Так, в одном из этих шкафчиков ты находишь что-то, отдаленно напоминающее гранаты. Но попытаться открыть его... не получается. Похоже, к каждому из них прикреплена кодовая панель... и ни одна не работает без электричества.")
 
-		saynn("After some time.. you give up. All these androids.. make you feel like you are being watched constantly.")
+		saynn("Спустя какое-то время... ты сдаешься. Из-за всех этих андроидов кажется, будто за тобой постоянно наблюдают.")
 
-		saynn("It seems you will need to find a way to turn on the power first. Maybe you will find codes for these keypads as well.")
+		saynn("Похоже, сначала нужно найти способ включить питание. Возможно, тогда ты найдешь и коды к этим панелям.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

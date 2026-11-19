@@ -9,11 +9,11 @@ func registerTriggers(es):
 func run(_triggerID, _args):
 	if(getFlag("TaviModule.Ch5NewPlanSceneHappend") && !getFlag("TaviModule.Ch5StoleDatapadFromNova") && !getFlag("TaviModule.Ch5StoleDatapadFromGuard")):
 		if(getFlag("TaviModule.Ch5LastGuardLooted", "") == _args[0]):
-			addDisabledButton("Datapad", "You already checked them")
+			addDisabledButton("Датапад", "Ты уже проверял их")
 		else:
 			var character = getCharacter(_args[0])
 			if(character.getCharacterType() == CharacterType.Guard):
-				addButton("Datapad", "See if they have a datapad", "checkdatapad", [_args[0]])
+				addButton("Датапад", "Посмотри, нет ли у них датапада", "checkdatapad", [_args[0]])
 
 func getPriority():
 	return 0

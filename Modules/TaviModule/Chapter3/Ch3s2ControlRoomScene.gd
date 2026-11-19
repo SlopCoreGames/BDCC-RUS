@@ -6,22 +6,22 @@ func _init():
 func _run():
 
 	if(state == ""):
-		saynn("This room is filled with consoles and blinking lights. You quickly scan the labels, looking for the one that controls the station’s schedules. You spot a promising one and make your way over, keeping an eye out for any engineers or guards that might come in.")
+		saynn("Эта комната забита консолями и мигающими огоньками. Ты быстро пробегаешь глазами по надписям в поисках той, что управляет расписанием станции. Заметив многообещающую панель, ты направляешься к ней, поглядывая по сторонам, чтобы не попасться на глаза инженерам или охранникам.")
 
-		saynn("You reach an old-looking console that has a screen with a green back-lit and a visible scanline going through it every few seconds. There is a fancy clicky keyboard you can use but what command should you type?")
+		saynn("Ты подходишь к старой консоли с экраном, подсвеченным зеленым светом, по которому каждые несколько секунд пробегает полоса сканирования. Здесь есть шикарная щелкающая клавиатура, но какую команду стоит ввести?")
 
-		saynn("Time to do some hacking.")
+		saynn("Пора заняться хакингом.")
 
-		addButton("Screen", "Look at the screen", "screen")
+		addButton("Экран", "Посмотреть на экран", "screen")
 
 
 	if(state == "after_completed"):
 		setFlag("TaviModule.ch3CompletedDoorHack", true)
 		
-		saynn("Seems like you did it. No way to check but to go back to Tavi. You carefully scan the room for the last time. Nothing interesting apart from another console you might try tinkering with, this one seems to be connected to a big safe that’s inside a wall.")
+		saynn("Похоже, у тебя получилось. Проверить наверняка можно только вернувшись к Тави. Ты в последний раз внимательно осматриваешь комнату. Ничего интересного, кроме еще одной консоли, с которой можно было бы поковыряться — кажется, она подключена к большому сейфу, встроенному в стену.")
 
 		# (scene ends)
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 
 func _react(_action: String, _args):
 	if(_action == "screen"):

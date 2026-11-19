@@ -9,313 +9,313 @@ func _run():
 		addCharacter("jaxontau")
 		addCharacter("directortau")
 		playAnimation(StageScene.Duo, "holdpistol", {npc="rishatau"})
-		saynn("You stand opposite of Risha, a few meters away from her. She smiles at you. And so you smile back, tightly gripping your training energy pistol.")
+		saynn("Вы стоите напротив Риши, в нескольких метрах от неё. Она улыбается вам. И вы улыбаетесь в ответ, крепко сжимая в руке тренировочный энергетический пистолет.")
 
-		saynn("Suddenly Risha lunges forward at you, like a bull, sticking her powerful shoulder forward.")
+		saynn("Внезапно Риша бросается на вас, словно бык, выставив вперед свое мощное плечо.")
 
-		addButton("Aim gun", "Try to shoot her before she reaches you", "st1_aimgun")
-		addButton("Dodge", "She is strong but you are faster. Try to avoid her attack", "st1_dodge")
+		addButton("Нацелить пистолет", "Попытаться выстрелить в неё до того, как она до вас доберется", "st1_aimgun")
+		addButton("Уклонение", "Она сильна, но вы быстрее. Попытаться уклониться от атаки", "st1_dodge")
 	if(state == "st1_aimgun"):
 		playAnimation(StageScene.Duo, "defeat", {npc="rishatau"})
-		saynn("You raise your energy gun and try to aim it at Risha but it is too late to shoot, the lynx hits you like a truck, causing you to fly into the wall behind and drop your weapon.")
+		saynn("Вы вскидываете энергетический пистолет, пытаясь прицелиться в Ришу, но стрелять уже слишком поздно — рысь врезается в вас, как грузовик, отчего вы отлетаете к стене позади и роняете оружие.")
 
-		saynn("Ow, that wasn’t the best start. But Risha has a huge advantage over you. You slide down to the floor while the lynx chuckles. Both Jaxon and the director stand still and watch the scene unfold.")
+		saynn("Ох, начало не самое удачное. У Риши огромное преимущество. Вы сползаете по стене на пол, пока рысь посмеивается. И Джаксон, и директор замерли, наблюдая за происходящим.")
 
-		saynn("[say=jaxontau]Learn to read your opponent, Tavi. Risha is no match for you, strength-wise.[/say]")
+		saynn("[say=jaxontau]Учись читать противника, Тави. В плане силы Риша тебе не ровня.[/say]")
 
-		saynn("[say=rishatau]Don’t listen to him. You can do it, Tavi~.[/say]")
+		saynn("[say=rishatau]Не слушай его. Ты справишься, Тави~.[/say]")
 
-		saynn("She aims the gun at you. And she is very close.")
+		saynn("Она наводит на вас пистолет. И она очень близко.")
 
-		addButton("Disarm her", "She stands awfully close to you", "st2_gun")
-		addButton("Make her trip", "Use your legs", "st2_trip")
+		addButton("Обезоружить её", "Она стоит пугающе близко к тебе", "st2_gun")
+		addButton("Подставить ей подножку", "Использовать ноги", "st2_trip")
 	if(state == "st1_dodge"):
 		playAnimation(StageScene.Duo, "defeat", {npc="rishatau"})
-		saynn("Rather than trying to shoot her now, you decide to wait for a good moment before quickly sidestepping to the side, making Risha miss you.")
+		saynn("Вместо того чтобы стрелять прямо сейчас, ты решаешь дождаться подходящего момента, а затем резко уходишь в сторону, заставляя Ришу промахнуться.")
 
-		saynn("What you didn’t realize is that Risha is a stubborn girl, she quickly pushes off the wall and lunges at you again, easily bringing you down with one rough shove. You drop your weapon before hitting the floor.")
+		saynn("Чего ты не учел, так это того, что Риша — упрямая девчонка: она мгновенно отталкивается от стены и снова бросается на тебя, легко сбивая с ног одним грубым толчком. Прежде чем приземлиться на пол, ты выронил оружие.")
 
-		saynn("Ow, that wasn’t the best start. But Risha has a huge advantage over you.")
+		saynn("Ой, начало не самое удачное. У Риши огромное преимущество.")
 
-		saynn("[say=jaxontau]Can’t dodge everything, Tavi. Risha is a cat too, she is both agile and strong.[/say]")
+		saynn("[say=jaxontau]От всего не увернешься, Тави. Риша тоже своего рода кошка — она и ловкая, и сильная.[/say]")
 
-		saynn("[say=rishatau]Don’t listen to him. You can do it, Tavi~.[/say]")
+		saynn("[say=rishatau]Не слушай его. Ты справишься, Тави~.[/say]")
 
-		saynn("She aims the gun at you. And she is very close.")
+		saynn("Она наводит на вас пистолет. И она очень близко.")
 
-		addButton("Disarm her", "She stands awfully close to you", "st2_gun")
-		addButton("Make her trip", "Use your legs", "st2_trip")
+		addButton("Обезоружить её", "Она стоит пугающе близко к тебе", "st2_gun")
+		addButton("Подставить ей подножку", "Использовать ноги", "st2_trip")
 	if(state == "st2_gun"):
 		playAnimation(StageScene.Duo, "firepistol", {npc="rishatau"})
-		saynn("You expect her to shoot. And that makes it easier to react. As soon as you see Risha’s finger tightening around the trigger, you dodge to the side and then reach forward, slapping her hand and stealing her gun. Only the tip of your ear got slightly scorched by her shot, leaving a slight burn mark.")
+		saynn("Ты ждешь выстрела. И это облегчает реакцию. Как только ты замечаешь, что палец Риши напрягается на спусковом крючке, ты уходишь в сторону, а затем резко подаешься вперед, хлопаешь её по руке и выхватываешь пистолет. Только кончик твоего уха слегка опалило её выстрелом, оставив небольшой ожог.")
 
-		saynn("Risha growls and tries to grab you but you are faster, aiming her own gun at her and shooting the lynx right in the chest. Risha hisses and recoils away while her leotard receives a little hole.")
+		saynn("Риша рычит и пытается схватить тебя, но ты быстрее: ты наводишь её же пушку на неё саму и стреляешь рыси прямо в грудь. Риша шипит и отпрядывает, а на её леотарде появляется небольшая дырочка.")
 
-		saynn("Risha tries to grab you again but this time it was very easy to predict, you avoid her hands and rush to the other side of the room.")
+		saynn("Риша снова пытается схватить тебя, но на этот раз это было очень легко предугадать: ты уворачиваешься от её рук и бросаешься на другой конец комнаты.")
 
-		saynn("[say=rishatau]Run all you can, Tavi. You will just be tired when you lose.[/say]")
+		saynn("[say=rishatau]Беги сколько влезет, Тави. Ты просто выдохнешься к тому моменту, когда проиграешь.[/say]")
 
-		saynn("Risha just looks at you, trying to predict your next move.")
+		saynn("Риша просто смотрит на тебя, пытаясь предугадать твой следующий шаг.")
 
-		addButton("Aim at chest", "Aim at the center of mass", "st3_aimchest")
-		addButton("Aim at legs", "Aim at Risha’s legs", "st3_aimlegs")
+		addButton("Целиться в грудь", "Целиться в центр масс", "st3_aimchest")
+		addButton("Целиться в ноги", "Целиться в ноги Риши", "st3_aimlegs")
 	if(state == "st3_aimchest"):
 		playAnimation(StageScene.Duo, "firepistol", {npc="rishatau", npcAction="shove"})
-		saynn("You aim the gun at Risha. She sees that and instantly dashes towards you again while blocking with her powerful arms. You shoot once and hit one of her wrists. Sadly, that wasn’t enough to stop her.")
+		saynn("Ты наводишь пистолет на Ришу. Заметив это, она мгновенно снова бросается на тебя, выставив вперед свои мощные руки для блока. Ты стреляешь один раз и попадаешь ей в запястье. К сожалению, этого оказалось недостаточно, чтобы её остановить.")
 
-		saynn("Risha grunts but she was fast enough to grab you by the neck. She quickly tightens her grip, making breathing harder and causing you to drop your gun. She glares at you while shaking her free hand, the one that got damaged.")
+		saynn("Риша кряхтит, но она оказалась достаточно быстрой, чтобы вцепиться тебе в шею. Она резко сжимает хватку, из-за чего дышать становится всё труднее, а пистолет выпадает из твоих рук. Она свирепо смотрит на тебя, встряхивая поврежденной рукой.")
 
-		saynn("[say=rishatau]Nice try. I wonder if you’re into being choked.[/say]")
+		saynn("[say=rishatau]Неплохая попытка. Интересно, тебе нравится, когда тебя душат?[/say]")
 
-		saynn("[say=jaxontau]Sometimes you gotta play dirty, Tavi.[/say]")
+		saynn("[say=jaxontau]Иногда приходится играть грязно, Тави.[/say]")
 
-		addButton("Claw at", "Use your claws on her hand", "st4_clawat")
-		addButton("Kick crotch", "Use your free legs to deliver a low blow", "st4_kickballls")
+		addButton("Вцепиться когтями в", "Использовать когти на её руке", "st4_clawat")
+		addButton("Удар в пах", "Ударить свободной ногой снизу", "st4_kickballls")
 	if(state == "st4_clawat"):
 		playAnimation(StageScene.Duo, "stand", {npc="rishatau", npcAction="defeat"})
-		saynn("The lack of air quickly makes you weaker. And more desperate. But you’re not ready to give just yet. You extend your claws and sink them into Risha’s hand before leaving many scratches.")
+		saynn("Нехватка воздуха быстро лишает тебя сил. И делает тебя более отчаянным. Но ты еще не готов сдаваться. Ты выпускаешь когти и вонзаешь их в руку Риши, оставляя глубокие царапины.")
 
-		saynn("Risha grunts and hisses as you do that. Her grip gets lowered enough for you to break free and fall to your knees, coughing and gasping for air. All the while Risha is left with both of her arms wounded. You both see the gun on the ground and decide to go for it.")
+		saynn("Риша кряхтит и шипит от боли. Её хватка ослабевает настолько, что ты успеваешь вырваться и упасть на колени, кашляя и жадно хватая ртом воздух. При этом обе руки Риши изранены. Вы оба замечаете пистолет на полу и решаете броситься к нему.")
 
-		saynn("But you were first, successfully grabbing it first and then shooting Risha in the chest. And again. And again. Risha blocks a few shoots with her wounded arms so you aim for her legs, causing the lynx to quickly collapse onto the floor.")
+		saynn("Но ты оказался быстрее: ты успешно перехватываешь оружие и стреляешь Рише в грудь. И снова. И снова. Риша прикрывается ранеными руками от нескольких выстрелов, поэтому ты целишься ей в ноги, заставляя рысь повалиться на пол.")
 
-		saynn("[say=rishatau]Argh! Enough![/say]")
+		saynn("[say=rishatau]Аргх! Хватит![/say]")
 
-		saynn("You press your foot into her chest and aim at her head. She raises her arms. But Jaxon quickly snatches the gun from your hands.")
+		saynn("Ты упираешься ногой ей в грудь, целясь прямо в голову. Она вскидывает руки, но Джексон быстро выхватывает пистолет из твоих рук.")
 
-		saynn("[say=jaxontau]Hey. You did good, Tavi.[/say]")
+		saynn("[say=jaxontau]Эй. Ты молодец, Тави.[/say]")
 
-		addButton("Continue", "See what happens next", "tavi_gonna_lose")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_gonna_lose")
 	if(state == "st4_kickballls"):
 		playAnimation(StageScene.Duo, "stand", {npc="rishatau", npcAction="defeat"})
-		saynn("The lack of air quickly makes you weaker. And more desperate. But you’re not ready to give just yet. Your hands try to pry her digits off of your neck but that proves to be impossible. So you go for the low blow and ram your knee into Risha’s crotch.")
+		saynn("Нехватка воздуха быстро лишает тебя сил. И вгоняет в отчаяние. Но ты еще не готова сдаваться. Твои руки пытаются разжать её пальцы на твоей шее, но это оказывается невозможно. Тогда ты решаешь ударить ниже и с силой втыкаешь колено Рише прямо в промежность.")
 
-		saynn("She yelps and lets go of your neck before dropping to her knees and grabbing onto her damaged goods.")
+		saynn("Она вскрикивает и разжимает руки, после чего падает на колени, хватаясь за свое пострадавшее хозяйство.")
 
-		saynn("[say=rishatau]You little.. bitch.. Ugh..[/say]")
+		saynn("[say=rishatau] Ах ты... сучка... Ух...[/say]")
 
-		saynn("Her pain gives you enough time to recover your breathing and grab the dropped gun off the floor. You hold Risha at gunpoint.")
+		saynn("Её боль дает тебе достаточно времени, чтобы восстановить дыхание и подобрать с пола выпавший пистолет. Теперь ты держишь Ришу на мушке.")
 
-		saynn("[say=rishatau]Fine.. I give up.[/say]")
+		saynn("[say=rishatau]Ладно... Сдаюсь.[/say]")
 
-		saynn("Jaxon walks up to you and fetches the gun from your hands.")
+		saynn("Джексон подходит к тебе и забирает пистолет из твоих рук.")
 
-		saynn("[say=jaxontau]Hey. You did good, Tavi.[/say]")
+		saynn("[say=jaxontau]Эй. Ты молодец, Тави.[/say]")
 
-		addButton("Continue", "See what happens next", "tavi_gonna_lose")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_gonna_lose")
 	if(state == "st3_aimlegs"):
 		playAnimation(StageScene.Duo, "firepistol", {npc="rishatau", npcAction="defeat"})
-		saynn("You aim the gun at Risha. She sees that and instantly dashes towards you again while blocking with her powerful arms. But instead of her chest, you aim for her legs. And so your first shot causes Risha to hit the floor.")
+		saynn("Ты целишься в Ришу. Заметив это, она мгновенно снова бросается на тебя, выставляя вперед свои мощные руки для защиты. Но вместо груди ты целяешься ей в ноги. И твой первый выстрел заставляет Ришу рухнуть на пол.")
 
-		saynn("Risha grunts and rubs her little burn mark near her ankle.")
+		saynn("Риша кряхтит и потирает маленький ожог возле лодыжки.")
 
-		saynn("[say=pc]Just give up already.[/say]")
+		saynn("[say=pc]Да просто сдавайся уже.[/say]")
 
-		saynn("[say=jaxontau]Don’t be merciful, Tavi. The enemy is not gonna spare you.[/say]")
+		saynn("[say=jaxontau]Не проявляй милосердия, Тави. Враг тебя щадить не будет.[/say]")
 
-		saynn("Risha spots the gun. The other gun. The one that you started with, lying there, on the floor, not that far from her. She dives for it.")
+		saynn("Риша замечает пистолет. Тот самый, второй. Тот, с которым ты начинала, он лежит там, на полу, совсем рядом с ней. Она бросается к нему.")
 
-		addButton("Aim at her", "Make Risha regret it", "st4_shootrisha")
-		addButton("Aim at gun", "Shoot the gun away from her", "st4_shootgun")
+		addButton("Целиться в неё", "Заставить Ришу пожалеть об этом", "st4_shootrisha")
+		addButton("Целиться в пистолет", "Выстрелить, чтобы выбить пистолет из-под неё", "st4_shootgun")
 	if(state == "st4_shootrisha"):
 		playAnimation(StageScene.Duo, "firepistol", {npc="rishatau", npcAction="kneel"})
-		saynn("You agree with the guy and pull the trigger a few more times. One weak energy energy blast hits Risha’s arm, another one hits her back. The lynx stops trying to reach for the gun and raises her hands.")
+		saynn("Ты соглашаешься с парнем и нажимаешь на курок еще несколько раз. Один слабый энергетический разряд попадает Рише в руку, другой — в спину. Рысь перестает тянуться к пистолету и поднимает руки.")
 
-		saynn("[say=rishatau]Fine.. I give up.[/say]")
+		saynn("[say=rishatau]Ладно... Сдаюсь.[/say]")
 
-		saynn("You keep the weapon aimed at her while approaching the other gun and picking it up, leaving no chances.")
+		saynn("Ты продолжаешь держать её на мушке, пока подбираешь другой пистолет, не оставляя ей ни единого шанса.")
 
-		saynn("Jaxon walks up to you and fetches the guns.")
+		saynn("Джексон подходит к тебе и забирает пушки.")
 
-		saynn("[say=jaxontau]Hey. You did very well, Tavi.[/say]")
+		saynn("[say=jaxontau]Эй. Ты отлично справилась, Тави.[/say]")
 
-		addButton("Continue", "See what happens next", "tavi_gonna_lose")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_gonna_lose")
 	if(state == "st4_shootgun"):
 		playAnimation(StageScene.Duo, "firepistol", {npc="rishatau", npcAction="kneel"})
-		saynn("You decide to spare the lynx from more pain and instead aim for the gun. One highly-precise shot sends the gun flying away from Risha. She grumbles. And since there is nothing else she can do, Risha raises her hands.")
+		saynn("Ты решаешь избавить рысь от лишней боли и вместо этого целишься в пистолет. Один сверхточный выстрел отбрасывает пушку подальше от Риши. Она ворчит, и, поскольку ей больше ничего не остается, Риша поднимает руки.")
 
-		saynn("[say=rishatau]Fine.. I give up.[/say]")
+		saynn("[say=rishatau]Ладно... Сдаюсь.[/say]")
 
-		saynn("You keep the weapon aimed at her while approaching the other gun and picking it up, leaving no chances.")
+		saynn("Ты продолжаешь держать её на мушке, пока подбираешь другой пистолет, не оставляя ей ни единого шанса.")
 
-		saynn("Jaxon walks up to you and fetches the guns.")
+		saynn("Джексон подходит к тебе и забирает пушки.")
 
-		saynn("[say=jaxontau]You will have to learn to kill at some point, Tavi. But you did very well.[/say]")
+		saynn("[say=jaxontau]В какой-то момент тебе всё равно придется научиться убивать, Тави. Но ты справилась очень хорошо.[/say]")
 
-		addButton("Continue", "See what happens next", "tavi_gonna_lose")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_gonna_lose")
 	if(state == "st2_trip"):
 		playAnimation(StageScene.Duo, "stand", {npc="rishatau"})
-		saynn("You decide to use your legs to help you by sweeping Risha off her feet. She wasn’t expecting to hit the floor so soon, her gun gets tossed away somewhere far.")
+		saynn("Ты решаешь использовать ноги и сбиваешь Ришу с ног подсечкой. Она не ожидала так быстро приземлиться, и её пистолет улетает куда-то вдаль.")
 
-		saynn("You gotta act fast while you’re ahead. You straddle Risha and begin choking her out, applying pressure to her throat, making breathing harder. This quickly becomes dirty.")
+		saynn("Пока есть преимущество, нужно действовать быстро. Ты нависаешь над Ришей и начинаешь душить её, сдавливая горло и мешая ей дышать. Всё быстро перерастает в грязную возню.")
 
-		saynn("But Risha begins to pry your paws off of her neck quite easily, using her sheer strength.")
+		saynn("Но Риша, используя свою чистую силу, довольно легко начинает срывать твои лапы со своей шеи.")
 
-		saynn("[say=rishatau]You’re more kinky than I thought, Tavi.[/say]")
+		saynn("[say=rishatau]А ты куда более извращенка, чем я думала, Тави.[/say]")
 
-		saynn("Suddenly Risha throws you off away from her and towards the bed. You both get up onto your feet but the lynx is already walking towards you with a smile on her face.")
+		saynn("Внезапно Риша отшвыривает тебя от себя прямо на кровать. Вы обе вскакиваете на ноги, но рысь уже идет к тебе с ухмылкой на лице.")
 
-		saynn("[say=jaxontau]Use everything you can, Tavi. Every fight is a fight for survival.[/say]")
+		saynn("[say=jaxontau]Используй всё, что можешь, Тави. Каждый бой — это битва за выживание.[/say]")
 
-		addButton("Jump over", "That bed can give you a good point to jump over Risha", "st3_jumpbed")
-		addButton("Tease", "Change tactics completely", "st3_tease")
+		addButton("Перепрыгнуть", "Та кровать может стать отличной точкой, чтобы перепрыгнуть через Ришу", "st3_jumpbed")
+		addButton("Подразнить", "Полностью сменить тактику", "st3_tease")
 	if(state == "st3_jumpbed"):
-		saynn("There is no way you can win against Risha in a head-on fight, you quickly learned that. And all the guns are scattered on the floor, you notice one behind the lynx. But she blocks you from getting to it. She corners you.")
+		saynn("Ты быстро понял, что в лобовом столкновении Рише не устоять. Все пушки разбросаны по полу, и ты замечаешь одну за рысью. Но она не дает тебе добраться до неё. Она загоняет тебя в угол.")
 
-		saynn("[say=rishatau]You’re so quiet. Cat got your tongue~?[/say]")
+		saynn("[say=rishatau]Что ты такая тихая? Язык проглотила~?[/say]")
 
-		saynn("But instead of answering, you get on Risha’s bed and leap over her head in one beautiful motion before doing a graceful land and roll. Your paws grab the energy gun and aim it at the lynx.")
+		saynn("Но вместо ответа ты запрыгиваешь на кровать Риши и одним изящным движением перелетаешь через её голову, после чего грациозно приземляешься и перекатываешься. Твои лапы хватают энергетический пистолет, и ты наводишь его на рысь.")
 
-		saynn("[say=rishatau]Hey! You little..[/say]")
+		saynn("[say=rishatau]Эй! Ах ты, мелкая...[/say]")
 
-		saynn("Risha pivots and rushes towards you. Without too much hesitation, you pull the trigger. And then again and again, sending weak blasts of energy towards Risha. She absorbs the first one but each next makes her less eager to fight you. The gun in your paws heats up until it refuses to shoot anymore.")
+		saynn("Риша разворачивается и бросается на тебя. Не слишком долго колеблясь, ты жмешь на курок. И снова, и снова, посылая в сторону Риши слабые энергетические заряды. Она поглощает первый, но каждый следующий заставляет её всё меньше хотеть драться. Пистолет в твоих лапах раскаляется до тех пор, пока не перестает стрелять.")
 
-		addButton("Throw gun", "Throw the gun at Risha", "st4_throwgun")
-		addButton("Kick", "Risha seems weak enough for you to just kick her", "st4_finishingkick")
+		addButton("Бросить пистолет", "Кинуть пистолет в Ришу", "st4_throwgun")
+		addButton("Удар ногой", "Риша кажется достаточно слабой, чтобы просто пнуть её.", "st4_finishingkick")
 	if(state == "st4_throwgun"):
 		playAnimation(StageScene.Duo, "throw", {npc="rishatau", npcAction="defeat"})
-		saynn("You see that the weapon needs some cooling before it can fire again. You obviously have no time for that so you just throw the thing at Risha, aiming for her head. The lynx didn’t see it coming.")
+		saynn("Ты замечаешь, что оружию нужно немного остыть, прежде чем оно сможет выстрелить снова. Очевидно, что времени на это нет, поэтому ты просто швыряешь пушку в Ришу, целясь ей в голову. Рысь не ожидала такого.")
 
-		saynn("Bonk.")
+		saynn("Бам.")
 
-		saynn("The muscular cat gets confused, she loses balance and collapses shortly after. That gives you enough time to go grab the second gun and pin Risha to the floor.")
+		saynn("Мускулистая кошка теряет равновесие от неожиданности и вскоре валится на пол. Это дает тебе достаточно времени, чтобы схватить второй пистолет и прижать Ришу к полу.")
 
-		saynn("[say=rishatau]Fine. I give.[/say]")
+		saynn("[say=rishatau]Ладно. Сдаюсь.[/say]")
 
-		saynn("Jaxon walks up to you and fetches the gun.")
+		saynn("Джексон подходит к тебе и подбирает пистолет.")
 
-		saynn("[say=jaxontau]Good job, Tavi, you were very resourceful.[/say]")
+		saynn("[say=jaxontau]Хорошая работа, Тави, ты проявила смекалку.[/say]")
 
-		addButton("Continue", "See what happens next", "tavi_gonna_lose")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_gonna_lose")
 	if(state == "st4_finishingkick"):
 		playAnimation(StageScene.Duo, "kick", {npc="rishatau", npcAction="defeat"})
-		saynn("The last shot wasn’t enough. And the gun is all out of juice. But Risha also doesn’t seem to be that threatening now. You get a good run-up and jump before shoving both of your legs into the lynx’s chest, executing a perfect dropkick.")
+		saynn("Последнего выстрела оказалось недостаточно, да и патроны в пистолете закончились. Но и Риша сейчас не кажется такой уж угрожающей. Ты делаешь разбег и прыгаешь, вбивая обе ноги в грудь рыси — идеальный дропкик.")
 
-		saynn("Risha grunts as she recoils back and falls to her knees, seemingly defeated by your stunt. Your kick forced all the air out of her lungs, making her pant heavily. All the while you quickly get up off the floor and go find another gun.")
+		saynn("Риша кряхтит, отлетая назад и падая на колени, кажется, твой трюк её окончательно выбил из колеи. Удар выбил из её легких весь воздух, заставив её тяжело дышать. Тем временем ты быстро вскакиваешь с пола и отправляешься на поиски другого оружия.")
 
-		saynn("[say=rishatau]Fine.. I give..[/say]")
+		saynn("[say=rishatau]Ладно... сдаюсь...[/say]")
 
-		saynn("Jaxon walks up to you and fetches the gun.")
+		saynn("Джексон подходит к тебе и подбирает пистолет.")
 
-		saynn("[say=jaxontau]Good job, Tavi, your kicks are something else.[/say]")
+		saynn("[say=jaxontau]Молодец, Тави, твои пинки — это нечто.[/say]")
 
-		addButton("Continue", "See what happens next", "tavi_gonna_lose")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_gonna_lose")
 	if(state == "st3_tease"):
-		saynn("There is no way you can win against Risha in a head-on fight, you quickly learned that. And all the guns are scattered on the floor, you notice one behind the lynx. But she blocks you from getting to it. She corners you.")
+		saynn("Ты быстро понял, что в лобовом столкновении Рише не устоять. Все пушки разбросаны по полу, и ты замечаешь одну за рысью. Но она не дает тебе добраться до неё. Она загоняет тебя в угол.")
 
-		saynn("[say=rishatau]You’re so quiet. Cat got your tongue~?[/say]")
+		saynn("[say=rishatau]Что ты такая тихая? Язык проглотила~?[/say]")
 
-		saynn("When all choices are bad, you gotta follow your heart. Means that it’s time for some experimentation. Instead of trying to fight back, you put on a kind but cunning smile and spread your arms, offering a hug.")
+		saynn("Когда все варианты плохи, нужно слушать сердце. А это значит — пора переходить к экспериментам. Вместо того чтобы пытаться отбиться, ты надеваешь добрую, но хитрую улыбку и широко разводишь руки, предлагая себя в объятия.")
 
-		saynn("[say=pc]No, my tongue is still here, see~.[/say]")
+		saynn("[say=pc]Нет, мой язык всё ещё при мне, видишь~?[/say]")
 
-		saynn("You stick out your tongue while Risha puts her paws on you before pinning you to the nearest wall. You offer no resistance, instead putting one paw on her breasts and another on her crotch, teasing both. That makes the lynx confused. Jaxon and the director are now paying way more attention than they were.")
+		saynn("Ты высовываешь язык, пока Риша кладет на тебя свои лапы, прежде чем прижать к ближайшей стене. Ты не оказываешь сопротивления, а вместо этого кладешь одну лапу ей на грудь, а другую — на промежность, дразня её везде. Это сбивает рысь с толку. Джексон и директор теперь уделяют вам куда больше внимания, чем раньше.")
 
-		saynn("[say=rishatau]What are you doing, Tavi?[/say]")
+		saynn("[say=rishatau]Что ты творишь, Тави?[/say]")
 
-		saynn("You lean in towards Risha’s ear and purr playfully into it.")
+		saynn("Ты наклоняешься к самому уху Риши и игриво мурлычешь в него.")
 
-		saynn("[say=pc]If you let me win, I might just offer you a fun time~.[/say]")
+		saynn("[say=pc]Если позволишь мне победить, я могу устроить тебе очень веселое время~.[/say]")
 
-		saynn("Risha raises her brow. All the while your paws continue to knead her bits, causing her nips to get stiffer and her package to put more pressure on the leotard. Her paws lower pressure on you.")
+		saynn("Риша приподнимает бровь. Тем временем твои лапы продолжают разминать её плоть, отчего соски твердеют, а её хозяйство всё сильнее давит на леотард. Её лапы ослабляют хватку.")
 
-		saynn("[say=rishatau]Is that a promise?[/say]")
+		saynn("[say=rishatau]Это обещание?[/say]")
 
-		saynn("You continue smiling while slowly prying her paws off of you. Then you look at the bed nearby and wink to Risha while biting your lip. The lynx deliberates a bit but then turns her head towards the observers. Now seems to be the best time to attack.")
+		saynn("Ты продолжаешь улыбаться, медленно отрывая её лапы от себя. Затем ты переводишь взгляд на стоящую рядом кровать и, прикусив губу, подмигиваешь Рише. Рысь немного колеблется, но затем поворачивает голову к наблюдателям. Похоже, сейчас лучший момент для атаки.")
 
-		addButton("Kick crotch", "Make it sting hard", "s4_kickcrotchtease")
-		addButton("Grab gun", "Rush for the gun while Risha is confused", "s4_grabguntease")
+		addButton("Удар в пах", "Сделать так, чтобы ей было по-настоящему больно", "s4_kickcrotchtease")
+		addButton("Схватить пушку", "Рвануть к пушке, пока Риша в замешательстве", "s4_grabguntease")
 	if(state == "s4_kickcrotchtease"):
 		playAnimation(StageScene.Duo, "kick", {npc="rishatau", npcAction="defeat"})
-		saynn("Your paws slide back to Risha’s breasts before catching onto her hard nips with your claws. And as soon as the lynx directs her attention back at you to complain, you shove your knee between her legs, causing a huge spike of pain for the poor cat.")
+		saynn("Твои лапы скользят обратно к груди Риши, и ты цепляешься когтями за её твердые соски. И как только рысь переводит на тебя взгляд, чтобы возмутиться, ты втыкаешь колено ей между ног, вызывая у бедной кошки резкий всплеск боли.")
 
-		saynn("[say=rishatau]You litt-.. fuck..[/say]")
+		saynn("[say=rishatau]Мелкая.. блять..[/say]")
 
-		saynn("Risha grabs onto her crotch and yelps. You offer her no support so the lynx swiftly collapses onto the floor. You see that Jaxon is wincing too.")
+		saynn("Риша хватается за промежность и вскрикивает. Ты не спешишь ей помогать, так что рысь стремительно валится на пол. Ты замечаешь, что Джексон тоже морщится от боли.")
 
-		saynn("[say=jaxontau]That was rough, Tavi.[/say]")
+		saynn("[say=jaxontau]Грубовато, Тави.[/say]")
 
-		saynn("You take your time and pick up one of the guns off the floor before approaching Risha again.")
+		saynn("Ты не торопишься, подбираешь одну из пушек с пола, а затем снова приближаешься к Рише.")
 
-		saynn("[say=rishatau]Bitch.. so unfair. Ugh.[/say]")
+		saynn("[say=rishatau]Сучка.. так несправедливо. Ух.[/say]")
 
-		saynn("[say=pc]Tell me about it.[/say]")
+		saynn("[say=pc]И не говори.[/say]")
 
-		saynn("You offer the cat a cheeky smile. Jaxon walks up to you and fetches the gun.")
+		saynn("Ты дерзко улыбаешься кошке. К тебе подходит Джексон и подбирает пистолет.")
 
-		saynn("[say=jaxontau]Good job, Tavi. You saw Risha’s weakness.[/say]")
+		saynn("[say=jaxontau]Отличная работа, Тави. Ты разглядела слабое место Риши.[/say]")
 
-		addButton("Continue", "See what happens next", "tavi_gonna_lose")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_gonna_lose")
 	if(state == "s4_grabguntease"):
 		playAnimation(StageScene.Duo, "aimpistol", {npc="rishatau", npcAction="kneel"})
-		saynn("You take the chance and shove Risha away before diving for the energy gun on the floor. The lynx stumbles and falls onto her bed before you aim the gun at her. The cat quickly understands that she is screwed if she moves.")
+		saynn("Ты пользуешься моментом и отталкиваешь Ришу, прежде чем нырнуть за энергетическим пистолетом на полу. Рысь спотыкается и падает на свою кровать, а ты уже целишься в неё. Кошка быстро понимает: если она шелохнется — ей крышка.")
 
-		saynn("[say=rishatau]Fuck. You lied. Such a buzzkill.[/say]")
+		saynn("[say=rishatau]Блядь. Ты соврала. Сплошное разочарование.[/say]")
 
-		saynn("[say=pc]Never fight if you’re horny, Risha.[/say]")
+		saynn("[say=pc]Никогда не лезь в драку, когда ты в возбуждении, Риша.[/say]")
 
-		saynn("Risha raises her paws and kneels.")
+		saynn("Риша поднимает лапы и встает на колени.")
 
-		saynn("[say=rishatau]I fight because I’m horny, Tavi.[/say]")
+		saynn("[say=rishatau]Я дерусь именно потому, что хочу трахаться, Тави.[/say]")
 
-		saynn("You offer the cat a cheeky smile. Jaxon walks up to you and fetches the gun.")
+		saynn("Ты дерзко улыбаешься кошке. К тебе подходит Джексон и подбирает пистолет.")
 
-		saynn("[say=jaxontau]Good job, Tavi. You saw Risha’s weakness.[/say]")
+		saynn("[say=jaxontau]Отличная работа, Тави. Ты разглядела слабое место Риши.[/say]")
 
-		addButton("Continue", "See what happens next", "tavi_gonna_lose")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_gonna_lose")
 	if(state == "tavi_gonna_lose"):
 		playAnimation(StageScene.Duo, "defeat", {npc="rishatau"})
-		saynn("The director claps softly in the background. You feel prideful. But suddenly Risha grabs onto your leg and twists it painfully before overpowering you and pinning onto the floor. You cry out from pain as she wrenches your arm behind your back, seemingly about to make it pop out of its socket.")
+		saynn("На заднем плане тихо хлопает в ладоши директор. Ты чувствуешь гордость. Но внезапно Риша вцепляется тебе в ногу и с болью выкручивает её, после чего одолевает тебя и прижимает к полу. Ты вскрикиваешь от боли, когда она заводит твою руку за спину, явно собираясь вывихнуть ей сустав.")
 
-		saynn("[say=pc]Fuck! AGH![/say]")
+		saynn("[say=pc]Блядь! А-а-агх![/say]")
 
-		saynn("[say=rishatau]Never lose your focus, Tavi.[/say]")
+		saynn("[say=rishatau]Никогда не теряй концентрацию, Тави.[/say]")
 
-		saynn("[say=jaxontau]True. That’s gonna be a lesson for you. Alright, you two can stop.[/say]")
+		saynn("[say=jaxontau]Верно. Это будет тебе уроком. Ладно, вы двое, можете завязывать.[/say]")
 
-		saynn("Risha looks you in the eyes and puts on an evil smile. You two are kinda close and she has full control at the moment. But in the end she lets go of your arm and gets up before offering you a helping hand.")
+		saynn("Риша смотрит тебе прямо в глаза и хищно улыбается. Вы вроде как близки, и сейчас она полностью тебя контролирует. Но в конце концов она отпускает твою руку и поднимается, протягивая тебе ладонь, чтобы помочь встать.")
 
-		saynn("You decide not to decline the help and use it to get up off the floor.")
+		saynn("Ты решаешь не отказываться от помощи и опираешься на неё, чтобы подняться с пола.")
 
-		addButton("Continue", "See what happens next", "after_fight")
+		addButton("Продолжить", "Смотреть, что будет дальше", "after_fight")
 	if(state == "after_fight"):
 		playAnimation(StageScene.Duo, "stand", {npc="rishatau"})
 		removeCharacter("directortau")
-		saynn("Risha gently pats you on your shoulder. You swipe your leotard and fix your hair. As you do that, you catch the director’s gaze. He was silent this whole time.")
+		saynn("Риша мягко хлопает тебя по плечу. Ты отряхиваешь своё трико и поправляешь волосы. В этот момент ты ловишь на себе взгляд директора. Всё это время он хранил молчание.")
 
-		saynn("Jaxon walks up to him.")
+		saynn("Джаксон подходит к нему.")
 
-		saynn("[say=jaxontau]So, wanna look at more of AlphaCorp’s best future soldiers?[/say]")
+		saynn("[say=jaxontau]Ну что, хочешь взглянуть на лучших будущих солдат «АльфаКорп»?[/say]")
 
-		saynn("[say=directortau]No.[/say]")
+		saynn("[say=directortau]Нет.[/say]")
 
-		saynn("Jaxon scratches behind his head.")
+		saynn("Джексон чешет затылок.")
 
-		saynn("[say=jaxontau]Right. I heard you’re staying here until tomorrow, we still have time.[/say]")
+		saynn("[say=jaxontau]Верно. Я слышала, ты остаешься здесь до завтра, так что у нас еще есть время.[/say]")
 
-		saynn("[say=directortau]I saw enough. I will be in my quarters.[/say]")
+		saynn("[say=directortau]Достаточно увиденного. Я буду у себя в каюте.[/say]")
 
-		saynn("[say=jaxontau]Of course, Sir.[/say]")
+		saynn("[say=jaxontau]Конечно, сэр.[/say]")
 
-		saynn("His voice has way more bass than when hearing him through the speakers. And just like that, he leaves the room.")
+		saynn("Его голос звучит куда басовитее, чем когда слышишь его через динамики. И вот так просто он выходит из комнаты.")
 
-		saynn("Risha whispers into your ear.")
+		saynn("Риша шепчет тебе на ухо.")
 
-		saynn("[say=rishatau]That guy creeps me out.[/say]")
+		saynn("[say=rishatau]Этот парень меня пугает.[/say]")
 
-		saynn("[say=pc]Yeah.. I get a feeling he doesn’t like me.[/say]")
+		saynn("[say=pc]Да уж... У меня такое чувство, что ты ему не нравишься.[/say]")
 
-		saynn("[say=rishatau]Relax, very soon we won’t need to see his face ever again.[/say]")
+		saynn("[say=rishatau]Расслабься, скоро нам больше не придется видеть его рожу.[/say]")
 
-		saynn("Jaxon returns to you two.")
+		saynn("Джексон возвращается к вам двоим.")
 
-		saynn("[say=jaxontau]Okay ladies. Enough murmuring to each other. Follow me, Tavi.[/say]")
+		saynn("[say=jaxontau]Так, дамы. Хватит шептаться. Тави, за мной![/say]")
 
-		saynn("[say=pc]Sure. See you, Risha.[/say]")
+		saynn("[say=pc]Конечно. Увидимся, Риша.[/say]")
 
-		saynn("The lynx nods and does some stretches as you prepare to leave.")
+		saynn("Рысь кивает и делает несколько разминочных упражнений, пока ты собираешься уходить.")
 
-		addButton("Follow", "See where he brings you", "follow_jaxon")
+		addButton("Следовать", "Посмотреть, куда он тебя приведет", "follow_jaxon")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

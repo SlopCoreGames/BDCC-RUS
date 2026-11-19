@@ -4,7 +4,7 @@ func _init():
 	id = "Ch5TaviQuest"
 
 func getVisibleName():
-	return "Toxic Blood Line"
+	return "Линия токсичной крови"
 
 func getProgress():
 	var result = []

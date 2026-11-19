@@ -9,671 +9,671 @@ func _init():
 func _run():
 	if(state == ""):
 		addCharacter("kait")
-		saynn("It's early morning, most of the inmates are just waking up. Especially lilacs, their lifestyle makes them stay up during nights, to provide entertainment and such. You look around, searching for a snow leopard that somewhat ruined your last mission.")
+		saynn("Раннее утро, большинство заключенных только начинают просыпаться. Особенно сиреневые — их образ жизни подразумевает бодрствование по ночам, чтобы развлекать остальных и всё такое. Ты озираешься по сторонам в поисках той самой снежной леопардихи, которая изрядно подпортила тебе твою последнюю миссию.")
 
-		saynn("Here she is, the kitty has just left her spacious cell and is doing stretches, such a cat. Gotta act quick while she is still around.")
+		saynn("Вот и она. Киса только что вышла из своей просторной камеры и разминается — ну вылитая кошка. Нужно действовать быстро, пока она не ушла.")
 
-		addButton("Confront", "Ask Kait why she decided to betray you and Tavi", "confront_kait")
+		addButton("Противостояние", "Спросить Кейт, почему она решила предать тебя и Тави", "confront_kait")
 	if(state == "confront_kait"):
 		playAnimation(StageScene.Duo, "stand", {npc="kait"})
-		saynn("Kait was in the process of yawning when you suddenly shove her back into her cell and then pin her against the wall. The lilac cat gasps when you do that.")
+		saynn("Кейт как раз собиралась зевнуть, когда ты внезапно заталкиваешь её обратно в камеру и прижимаешь к стене. Сиреневая кошка ахает от неожиданности.")
 
-		saynn("[say=kait]Wha..[/say]")
+		saynn("[say=kait]Что..[/say]")
 
-		saynn("[say=pc]Why did you snitch on us?[/say]")
+		saynn("[say=pc]Какого хрена ты на нас настучала?[/say]")
 
-		saynn("Kait blinks a lot, her paws try to free herself but it's not that hard to keep her pinned.")
+		saynn("Кейт часто моргает, её лапы пытаются вырваться, но удержать её прижатой не так уж и сложно.")
 
-		saynn("[say=kait]The heck is your problem? Tavi's cell is too cramped?[/say]")
+		saynn("[say=kait]В чём вообще твоя проблема? В камере Тави слишком тесно?[/say]")
 
-		saynn("You shake her.")
+		saynn("Ты встряхиваешь её.")
 
-		saynn("[say=pc]Talk already.[/say]")
+		saynn("[say=pc]Давай, выкладывай.[/say]")
 
-		saynn("Kait's annoyed eyes flash brightly.")
+		saynn("В раздраженных глазах Кейт вспыхивает огонек.")
 
-		saynn("[say=kait]What? Did your last mission fail? What a shame. Tavi is probably already looking for a new pet.[/say]")
+		saynn("[say=kait]Что? Твоя последняя миссия провалилась? Какая жалость. Тави, наверное, уже ищет себе нового питомца.[/say]")
 
-		saynn("Kait raises her knee and gently presses it into your stomach before applying a fair amount of strength to push you back, escaping your grasp.")
+		saynn("Кейт поднимает колено и мягко упирается им тебе в живот, а затем с заметной силой толкает тебя, вырываясь из твоих объятий.")
 
-		saynn("[say=kait]I have no idea what you're talking about, don't try to pull me into your problems. And get out of my cell.[/say]")
+		saynn("[say=kait]Понятия не имею, о чем ты несешь. Не пытайся втянуть меня в свои проблемы. И проваливай из моей камеры.[/say]")
 
-		saynn("You gotta be a little bit more persuasive if you want the answers.")
+		saynn("Тебе придется быть более убедительным, если хочешь получить ответы.")
 
-		addButton("Kind", "Ask her again nicely", "ask_nicely")
-		addButton("Rough", "Try to force the answer out of her", "ask_rough")
+		addButton("Добрый", "Спросить ее еще раз вежливо", "ask_nicely")
+		addButton("Грубо", "Попытаться выбить ответ силой", "ask_rough")
 	if(state == "ask_nicely"):
-		saynn("You decide not to pin her again. But you do stand near the doorframe.")
+		saynn("Ты решаешь не прижимать ее снова, но встаешь у дверного проема.")
 
-		saynn("[say=pc]Okay, let's start again. Listen, the captain somehow knew what we were up to. And you were the latest person who saw us. I'm not blaming you yet but I'd like an explanation.[/say]")
+		saynn("[say=pc]Ладно, давай начнем сначала. Слушай, капитан каким-то образом узнал, что мы задумали. И ты была последней, кто нас видел. Я пока тебя не виню, но мне нужны объяснения.[/say]")
 
-		saynn("Kait raises a brow and crosses her arms.")
+		saynn("Кейт вскидывает бровь и скрещивает руки на груди.")
 
-		saynn("[say=kait]Again, shame that your plans got busted. But I'm the last person who would want to screw over others like that.[/say]")
+		saynn("[say=kait]Опять же, жаль, что твои планы провалились. Но я точно не из тех, кто любит вот так подставлять других.[/say]")
 
-		saynn("[say=pc]You are angry at Tavi though.[/say]")
+		saynn("[say=pc]Но на Тави ты всё равно злишься.[/say]")
 
-		saynn("Kait growls softly.")
+		saynn("Кейт тихо рычит.")
 
-		saynn("[say=kait]I have a reason, okay? Bitch talks about communication and trust. And then fucking ghosts me out of nowhere.[/say]")
+		saynn("[say=kait]У меня есть причина, ясно?! Эта сучка распинается о доверии и общении, а потом, блядь, просто исчезает без предупреждения![/say]")
 
-		saynn("Hard to tell if she is lying. Well, she isn't lying about Tavi ghosting her. Maybe she just didn't have anything to do with it. Beating her up probably won't accomplish anything but to make you and Tavi feel better.")
+		saynn("Трудно сказать, лжёт она или нет. Ну, насчёт того, что Тави её «загостила», она не врёт. Может, она тут вообще ни при чём. Наброситься на неё — вряд ли принесёт что-то, кроме облегчения для тебя и Тави.")
 
-		addButton("Be rough", "Might as well try the rough approach", "ask_rough")
-		addButton("Leave", "Admit that she doesn't know anything", "try_to_leave")
+		addButton("Быть грубым", "Можно попробовать действовать грубо", "ask_rough")
+		addButton("Уйти", "Признать, что она ничего не знает", "try_to_leave")
 	if(state == "ask_rough"):
-		saynn("The cat is practically asking for it. You pounce at her and push her against the wall, your arm is wrapped around her neck, pressing on her throat just above the collar. Your rough grip makes her stand on her toes.")
+		saynn("Кошка практически напрашивается. Ты набрасываешься на неё и прижимаешь к стене, обхватив шею рукой и надавливая на горло чуть выше воротника. От твоей грубой хватки она вынуждена встать на цыпочки.")
 
-		saynn("[say=pc]There is no way the captain would have been able to prepare that ambush without you.[/say]")
+		saynn("[say=pc]Капитан никак не смогла бы подготовить ту засаду без тебя.[/say]")
 
-		saynn("Kait hisses and tries to pry your arm off.")
+		saynn("Кейт шипит и пытается сбросить твою руку.")
 
-		saynn("[say=pc]You are his pet now, aren't you? Your slutty mouth whispering to him everything that happens in the prison.[/say]")
+		saynn("[say=pc]Теперь ты её питомец, верно? Твой шлюшкин ротик шепчет ему всё, что происходит в тюрьме.[/say]")
 
-		saynn("[say=kait]Why the fuck.. argh.. would I do that?[/say]")
+		saynn("[say=kait]Какого хера.. аргх.. я бы стала это делать?[/say]")
 
-		saynn("Kait tries to kick you again but this time you're ready, you leave her legs zero room to do anything. The cat's tail is wagging.")
+		saynn("Кейт снова пытается пнуть тебя, но на этот раз ты готов — ты не оставляешь её ногам ни малейшего шанса. Кошачий хвост довольно виляет.")
 
-		saynn("[say=pc]Because you hate Tavi for what she did. You wanted revenge. Isn't that right, slut?[/say]")
+		saynn("[say=pc]Потому что ты ненавидишь Тави за то, что она сделала. Ты жаждал мести. Ведь так, шлюшка?[/say]")
 
-		saynn("You tighten the grip around her neck, Kait starts to gasp for air.")
+		saynn("Ты сильнее сжимаешь её шею, и Кейт начинает судорожно хватать ртом воздух.")
 
-		saynn("[say=kait]Let go.. I will.. tell..[/say]")
+		saynn("[say=kait]Отпусти.. я всё.. расскажу..[/say]")
 
-		saynn("Can you trust her though?")
+		saynn("Но можно ли ей верить?")
 
-		addButton("Beat her up", "Make her tell you everything by force", "beat_kait_up")
-		addButton("Stop choking", "Listen to what she has to say", "stop_choking_kait")
+		addButton("Избить её", "Выбить из неё всё правдой", "beat_kait_up")
+		addButton("Перестать душить", "Выслушать, что она скажет", "stop_choking_kait")
 	if(state == "stop_choking_kait"):
-		saynn("You relax your grip, letting the cat breathe. But you still hold her by the collar, Kait looks way more.. willing.. already.")
+		saynn("Ты ослабляешь хватку, давая кошке вздохнуть. Но ты всё ещё держишь её за ошейник; Кейт выглядит куда более... податливой... уже сейчас.")
 
-		saynn("[say=pc]Spill it.[/say]")
+		saynn("[say=pc]Выкладывай.[/say]")
 
-		saynn("[say=kait]I.. I had nothing.. to do with that.[/say]")
+		saynn("[say=kait]Я.. я не имела к этому.. никакого отношения.[/say]")
 
-		saynn("You furrow your brows again and are about to choke her again when she stops you.")
+		saynn("Ты снова хмуришься и уже собираешься снова придушить её, но она останавливает тебя.")
 
-		saynn("[say=kait]But.. I understand you, okay? I do have my problems with Tavi. But ratting you two out to the captain.. that would be stupid on my part, don't you think?[/say]")
+		saynn("[say=kait]Но.. я ведь понимаю тебя, ладно? У меня тоже есть свои терки с Тави. Но настучать на вас двоих капитану.. это было бы глупо с моей стороны, не находишь?[/say]")
 
-		saynn("[say=pc]Then how did he know?[/say]")
+		saynn("[say=pc]Тогда откуда он узнал?[/say]")
 
-		saynn("Kait shrugs as best as her position allows.")
+		saynn("Кейт пожимает плечами настолько, насколько позволяет её положение.")
 
-		saynn("[say=kait]I want to escape this prison as much as you and Tavi do. And I need all the friends that I could get. I don't need enemies.[/say]")
+		saynn("[say=kait]Я хочу сбежать из этой тюрьмы так же сильно, как ты и Тави. И мне нужны все возможные друзья. Враги мне ни к чему.[/say]")
 
-		saynn("You think about it for a second. So far her story does line up. Maybe Tavi was wrong. Maybe someone else ratted you out. Better ask her again.")
+		saynn("Ты задумываешься на секунду. Пока что её история сходится. Может, Тави ошибался. Может, кто-то другой на вас настучал. Лучше переспросить.")
 
-		saynn("You take a step back, letting Kait catch her breath. She rubs her neck.")
+		saynn("Ты делаешь шаг назад, давая Кейт перевести дух. Она потирает шею.")
 
-		saynn("[say=kait]Do I look like I'm the captain's pet? I demand my golden pet bed and my golden pet bowl then.[/say]")
+		saynn("[say=kait]Я что, похожа на любимицу капитана? Тогда требую золотую лежанку и золотую миску![/say]")
 
-		saynn("[say=pc]You do look like you would make a good pet though.[/say]")
+		saynn("[say=pc]Хотя, выглядишь ты и правда как отличная домашняя зверушка.[/say]")
 
-		saynn("[say=kait]PFf-f. No you.[/say]")
+		saynn("[say=kait]Пффф. Сама ты такая.[/say]")
 
-		addButton("Leave", "Admit that she doesn't know anything", "try_to_leave")
+		addButton("Уйти", "Признать, что она ничего не знает", "try_to_leave")
 	if(state == "try_to_leave"):
-		saynn("[say=pc]Fine, you don't know anything about it.[/say]")
+		saynn("[say=pc]Ладно, всё равно ты в этом ни черта не смыслишь.[/say]")
 
-		saynn("You prepare to leave but this time it's Kait who suddenly stops you.")
+		saynn("Ты собираешься уходить, но на этот раз Кейт внезапно тебя останавливает.")
 
-		saynn("[say=kait]Leaving already~?[/say]")
+		saynn("[say=kait]Уже уходишь~?[/say]")
 
-		saynn("You glare at Kait. She offers you a cunning smile, her fluffy tail wags a lot behind her back.")
+		saynn("Ты свирепо смотришь на Кейт. Она отвечает тебе хитрой улыбкой, а её пушистый хвост вовсю виляет за спиной.")
 
-		saynn("[say=kait]Now it's my time to ask questions. Right after I get my apology.[/say]")
+		saynn("[say=kait]Теперь настало моё время задавать вопросы. Сразу после того, как получу свои извинения.[/say]")
 
-		saynn("She extends her claws and wiggles her girly rear slightly, like a cat that is about to pounce at its prey. It seems she won't just let you go now.")
+		saynn("Она выпускает когти и слегка покачивает своей девчачьей попкой, словно кошка перед прыжком на добычу. Похоже, просто так она тебя теперь не отпустит.")
 
-		saynn("[say=pc]You're trying to be like Tavi way too much.[/say]")
+		saynn("[say=pc]Ты слишком сильно пытаешься подражать Тави.[/say]")
 
-		saynn("[say=kait]Hey! I'm not! I'm not into feet stuff for once.[/say]")
+		saynn("[say=kait]Эй! Вообще-то нет! На этот раз меня не особо прессуют всякие фишки с пятками.[/say]")
 
-		saynn("[say=pc]Way more submissive though.[/say]")
+		saynn("[say=pc]Зато в остальном я куда покорнее.[/say]")
 
-		saynn("Kait bares her fangs and growls.")
+		saynn("Кейт скалится, обнажая клыки, и рычит.")
 
-		saynn("[say=kait]I will show you. You will be worshiping every inch of my body when I'm done with you.[/say]")
+		saynn("[say=kait]Я тебе сейчас покажу. Когда я с тобой закончу, ты будешь боготворить каждый дюйм моего тела.[/say]")
 
-		saynn("Seems like she wants to fight.")
+		saynn("Похоже, она хочет подраться.")
 
-		addButton("Fight", "Start the fight", "fight_kait")
-		addButton("Run!", "Try to escape the fight", "run_from_fight")
+		addButton("Драться", "Начать бой", "fight_kait")
+		addButton("Беги!", "Попытаться сбежать из драки", "run_from_fight")
 	if(state == "run_from_fight"):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("Since you're standing near the door, you just take off and escape before Kait can do her first blow. You only hear Kait taunting you.")
+		saynn("Так как ты стоишь рядом с дверью, ты просто срываешься с места и убегаешь прежде, чем Кейт успевает нанести первый удар. Ты слышишь лишь её издевательский смех вслед.")
 
-		saynn("[say=kait]What a pussy![/say]")
+		saynn("[say=kait]Ну и трусишка![/say]")
 
-		saynn("Well, at least you avoided the fight. Even if you didn't learn much, it's pretty safe to say that Kait had nothing to do with it.")
+		saynn("Ну, по крайней мере, ты избежал драки. Пусть ты и не много узнал, но можно с уверенностью сказать, что Кейт тут была ни при чём.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "if_won"):
 		setFlag("TaviModule.Ch4KaitFoundBug", true)
 		playAnimation(StageScene.Duo, "stand", {npc="kait", npcAction="defeat"})
-		saynn("Kait collapses after losing the fight. But as she does that, you hear.. a noise. Like something metallic has just hit the floor and bounced a few times.")
+		saynn("Кейт падает без сил после поражения. Но в этот момент ты слышишь... какой-то звук. Будто что-то металлическое упало на пол и несколько раз подпрыгнуло.")
 
-		saynn("[say=pc]What was that?[/say]")
+		saynn("[say=pc]Что это было?[/say]")
 
-		saynn("The feline grunts, trying to get up but failing. You look around and spot.. an object. A very small one, about the size and shape of a coin. But it seems to have some circuitry inside. It sounded like it fell out of Kait's collar.")
+		saynn("Кошка кряхтит, пытаясь подняться, но безуспешно. Ты оглядываешься и замечаешь... предмет. Совсем крошечный, размером и формой напоминает монетку. Но, кажется, внутри него есть какая-то микросхема. Похоже, он выпал из ошейника Кейт.")
 
-		saynn("[say=kait]Argh..[/say]")
+		saynn("[say=kait]Аргх..[/say]")
 
-		saynn("You pick up the unknown object. Kati's eyes go big when she sees that coin-shaped little device.")
+		saynn("Ты поднимаешь неизвестный предмет. Глаза Кейт расширяются, когда она видит это маленькое устройство в форме монетки.")
 
-		saynn("[say=kait]What the..[/say]")
+		saynn("[say=kait]Что за...[/say]")
 
-		saynn("[say=pc]You clearly know what this is. Explain before I break some of your bones.[/say]")
+		saynn("[say=pc]Ты явно понимаешь, что это такое. Объяснись, пока я не переломала тебе кости.[/say]")
 
-		saynn("[say=kait]It's a.. uhm. Looks like a bug..[/say]")
+		saynn("[say=kait]Это... э-э... Похоже на жучка...[/say]")
 
-		saynn("Huh? Is she a spy?")
+		saynn("А? Она что, шпионка?")
 
-		saynn("[say=pc]And you've been carrying it all this time?[/say]")
+		saynn("[say=pc]И ты таскала его с собой всё это время?[/say]")
 
-		saynn("Her eyes jump from spot to spot in panic. She then suddenly snatches it out of your hand and smashes against the floor.")
+		saynn("Её глаза панически мечутся из стороны в сторону. Затем она внезапно выхватывает его из твоей руки и с силой швыряет об пол.")
 
-		saynn("[say=kait]I'm as surprised as you, okay?![/say]")
+		saynn("[say=kait]Да я удивлена не меньше тебя, ясно?![/say]")
 
-		saynn("[say=pc]Why do I get a feeling that you're lying?[/say]")
+		saynn("[say=pc]Почему у меня такое чувство, будто ты лжешь?[/say]")
 
-		saynn("[say=kait]Why would I need a fucking bug in my collar to rat on you?[/say]")
+		saynn("[say=kait]Нахрена мне сраный жучок в ошейнике, чтобы тебя сдать?[/say]")
 
-		saynn("You can feel genuine passion from her, the cat is truly upset. But in the end, it seems you getting caught was still her fault, whether she had anything to do with it or not.")
+		saynn("Ты чувствуешь её искреннюю страсть, кошка действительно расстроена. Но в конечном счете, кажется, что в том, что тебя поймали, всё равно виновата она — причастна она к этому или нет.")
 
-		addButton("Leave", "This answer satisfies you", "leave_kait")
-		addButton("To stocks", "Punish the cat by locking her into the stocks", "start_stocks_kait")
+		addButton("Уйти", "Этот ответ тебя удовлетворяет", "leave_kait")
+		addButton("В колодки", "Наказать кошку, заковав её в колодки", "start_stocks_kait")
 	if(state == "beat_kait_up"):
 		setFlag("TaviModule.Ch4KaitFoundBug", true)
 		setFlag("TaviModule.Ch4KaitGotBeatenUp", true)
 		playAnimation(StageScene.SexStart, "start", {npc="kait"})
-		saynn("The bitch had plenty of time to tell you everything, stopping now would just let her confuse you more with her cunning tactics.")
+		saynn("У этой сучки было полно времени, чтобы выложить тебе всё, так что если остановиться сейчас, она лишь сильнее запутает тебя своей хитростью.")
 
-		saynn("Instead of letting go, you slam the lilac against the wall behind her before delivering a punch to her stomach, forcing all the air out of her.")
+		saynn("Вместо того чтобы отпустить её, ты с силой впечатываешь сирень в стену позади неё, а затем наносишь удар в живот, выбивая из неё весь воздух.")
 
-		saynn("[say=kait]UGh, you fucker!..[/say]")
+		saynn("[say=kait]Агх, ублюдок!..[/say]")
 
-		saynn("She extends her claws and lunges at you. Her speed allowed her to scratch your shoulder once but when her second attempt happened, you managed to catch her wrist, bend to an uncomfortable angle and then run it claws-first into the metal wall behind her. Ow, you hear something inside her palm shattering, a few claws cracking. A loud cry tries to escape from the cat but you were quick to cover her mouth.")
+		saynn("Она выпускает когти и бросается на тебя. Благодаря своей скорости ей удается один раз полоснуть тебя по плечу, но когда она идет на второй заход, тебе удается перехватить её запястье, вывернуть под неудобным углом и с силой вжать когтями в металлическую стену позади неё. О, ты слышишь, как внутри её ладони что-то хрустнуло — пара когтей треснула. Кошка пытается издать громкий крик, но ты быстро зажимаешь ей рот рукой.")
 
-		saynn("[say=pc]What was that? I think I misheard, right?[/say]")
+		saynn("[say=pc]Что это было? Кажется, мне послышалось, да?[/say]")
 
-		saynn("Kait hisses into your hand, you protect yourself from her second clawed paw with your shoulder but you know that she is about to do something silly, probably with using her legs. So when you notice her hips tensing up, you just stomp on her right foot which turned out to be her dominant one. The poor cat produces a stifled cry and bites into your hand, causing you to stagger back, letting go of her.")
+		saynn("Кейт шипит, впиваясь в твою ладонь. Ты прикрываешься плечом от её второй когтистой лапы, понимая, что она затевает какую-то глупость — скорее всего, собирается использовать задние лапы. Заметив, как напряглись её бёдра, ты просто наступаешь ей на правую ногу, которая оказалась ведущей. Бедная кошка издаёт приглушённый вскрик и вцепляется тебе в руку, заставляя тебя пошатнуться и разжать пальцы.")
 
-		saynn("Kait yelps and loses balance before hitting the floor. Something metallic hits the floor and bounces a few times. When you prepare for another stomp, the cat gets into a fetal position, protecting herself.")
+		saynn("Кейт взвизгивает и теряет равновесие, прежде чем рухнуть на пол. Что-то металлическое с грохотом падает и несколько раз подпрыгивает. Когда ты готовишься нанести ещё один удар ногой, кошка сворачивается калачиком, пытаясь защититься.")
 
-		saynn("[say=kait]Stop!.. Please! Agh..[/say]")
+		saynn("[say=kait]Прекрати!.. Пожалуйста! Агх..[/say]")
 
-		saynn("Your hand reaches for her collar and pulls her up before pushing her against the wall.")
+		saynn("Твоя рука хватает её за ошейник и рывком поднимает вверх, а затем прижимает к стене.")
 
-		saynn("[say=pc]Talk.[/say]")
+		saynn("[say=pc]Говори.[/say]")
 
-		saynn("A few tears run down Kait's cheeks, she looks around for some help but it's all lilacs outside of her cell.")
+		saynn("По щекам Кейт катятся слёзы; она оглядывается в поисках помощи, но за пределами её камеры — лишь пустота коридоров.")
 
-		saynn("[say=kait]I hate Tavi, okay?! I wanted to escape with her!.. I heard your plans, yes. And I was.. upset.. to put it lightly. Fuck, it hurts..[/say]")
+		saynn("[say=kait]Я ненавижу Тави, ясно?! Я хотела сбежать вместе с ней!.. Да, я слышала твои планы. И я была... мягко говоря, расстроена. Блядь, как же больно..[/say]")
 
-		saynn("[say=pc]It can hurt a lot more.[/say]")
+		saynn("[say=pc]Может быть гораздо больнее.[/say]")
 
-		saynn("Kait tilts her head down.")
+		saynn("Кейт понуро опускает голову.")
 
-		saynn("[say=kait]But whatever happened with you and the captain, I had nothing to do with that! Please![/say]")
+		saynn("[say=kait]Но что бы там ни случилось между тобой и капитаном, я тут ни при чём! Пожалуйста![/say]")
 
-		saynn("So confusing, the cat has no reason to lie. But maybe that's her tactic. You look around for that metallic object that fell seemingly out of Kait's collar and find it. Looks like a.. a coin. A black rubber coin that has some circuitry inside. You present it to the cat.")
+		saynn("Всё так запутанно... У кошки нет причин лгать. Но, может, это её тактика? Ты оглядываешься в поисках того металлического предмета, который будто выпал из ошейника Кейт, и находишь его. Похоже на... на монету. Чёрная резиновая монета, внутри которой видны какие-то микросхемы. Ты протягиваешь её кошке.")
 
-		saynn("[say=pc]The fuck is this then?[/say]")
+		saynn("[say=pc]Это ещё что за херня?[/say]")
 
-		saynn("Kait directs her gaze towards the object. Her pupils dilate.")
+		saynn("Кейт устремляет взгляд на предмет. Её зрачки расширяются.")
 
-		saynn("[say=kait]It's.. it's a.. bug.. I think..[/say]")
+		saynn("[say=kait]Это... это... жучок... кажется...[/say]")
 
-		saynn("[say=pc]It was in your collar. Means you're the captain's spy.[/say]")
+		saynn("[say=pc]Он был в твоём ошейнике. Значит, ты шпионка капитана.[/say]")
 
-		saynn("[say=kait]I.. I'm.. I had.. no idea.. about it.[/say]")
+		saynn("[say=kait]Я... я... я даже не... не знала об этом...[/say]")
 
-		saynn("You throw the coin onto the floor before stomping on it, causing sparks. Kait covers her face with her paw that's not broken yet. Hissing can be heard from her each time she tries to move a muscle, the cat must be in huge pain. Some painkillers would help to prolong the.. fun.")
+		saynn("Ты швыряешь монету на пол и с силой топчешь её, высекая искры. Кейт закрывает лицо той лапой, которая ещё не сломана. Каждый раз, когда она пытается пошевелиться, слышится шипение — кошка явно испытывает жуткую боль. Немного обезболивающего помогло бы продлить это... веселье.")
 
 		if (GM.pc.getInventory().hasItemID("painkillers")):
-			addButton("To stocks", "Drug the kitty up and throw her into stocks", "use_painkillers_and_go_stocks")
+			addButton("В колодки", "Накачать кошечку наркотиками и бросить в колодки", "use_painkillers_and_go_stocks")
 		else:
-			addDisabledButton("To stocks", "You don't have any painkillers")
-		addButton("Leave", "She suffered enough", "leave_kait")
+			addDisabledButton("В колодки", "У тебя нет обезболивающего")
+		addButton("Уйти", "С неё хватит", "leave_kait")
 	if(state == "leave_kait"):
-		saynn("Now that the bug is destroyed, the kitty shouldn't be able to spy you on anymore. It's probably a good idea to go tell Tavi about that.")
+		saynn("Теперь, когда жучок уничтожен, кошечка больше не сможет за вами шпионить. Наверное, стоит пойти и рассказать об этом Тави.")
 
-		saynn("You walk out of Kait's cell, leaving her on the floor.")
+		saynn("Вы выходите из камеры Кейт, оставляя её лежать на полу.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "if_lost"):
 		setFlag("TaviModule.Ch4LostToKait", true)
 		playAnimation(StageScene.SexCowgirl, "tease", {npc="kait", pc="pc"})
-		saynn("Kait manages to pin you to the floor after you have lost. She straddles you and presses your hands against the cold surface.")
+		saynn("После поражения Кейт умудряется прижать вас к полу. Она усаживается верхом и прижимает ваши руки к холодной поверхности.")
 
-		saynn("[say=kait]Got you! Say that you're sorry already![/say]")
+		saynn("[say=kait]Попался! Ну же, скажи, что тебе жаль![/say]")
 
-		saynn("[say=pc]I'm sorry that you're a spy?[/say]")
+		saynn("[say=pc]Мне жаль, что ты шпионка?[/say]")
 
-		saynn("She frees one hand and slaps your face.")
+		saynn("Она освобождает одну руку и дает вам звонкую пощечину.")
 
-		saynn("[say=kait]I'm not! I'm against AlphaCorp, just like you. But if you're gonna go against me.. If you're gonna steal Tavi..[/say]")
+		saynn("[say=kait]Да не шпион я! Я против АльфаКорп, как и ты. Но если ты собираешься идти против меня... если ты собираешься увести у меня Тави...[/say]")
 
-		saynn("[say=pc]So that's what it's about.[/say]")
+		saynn("[say=pc]Так вот в чём дело.[/say]")
 
-		saynn("Kait furrows her brows, her fluffy tail bonks your legs while wagging.")
+		saynn("Кейт хмурит брови, а её пушистый хвост так и лупит вас по ногам, когда она виляет им.")
 
-		saynn("[say=kait]Shut up or I will make you.. in fact..[/say]")
+		saynn("[say=kait]Заткнись, а то я заставлю тебя... вообще-то...[/say]")
 
-		addButton("Face sitting", "She will sit on your face", "punish_facesitting")
-		addButtonWithChecks("Cowgirl anal", "She will ride your cock", "punish_rideanal", [], [ButtonChecks.HasReachablePenis])
+		addButton("Фейсситтинг", "Она сядет тебе на лицо", "punish_facesitting")
+		addButtonWithChecks("Анал в позе наездницы", "Она будет скакать на твоем члене", "punish_rideanal", [], [ButtonChecks.HasReachablePenis])
 	if(state == "punish_facesitting"):
 		playAnimation(StageScene.SexFaceSitting, "sit", {pc="kait", npc="pc", bodyState={exposedCrotch=true}})
-		saynn("[say=kait]In fact I should just do this.[/say]")
+		saynn("[say=kait]Вообще-то, мне стоит просто сделать это.[/say]")
 
-		saynn("Kait raises her body a bit before crawling forward and sitting on your head. She pushes her shorts directly into your face, muffling any vocal protests from you. Her strong ankles keep your arms pinned.")
+		saynn("Кейт слегка приподнимается, а затем подползает вперед и усаживается тебе на голову. Она вжимает свои шорты прямо тебе в лицо, заглушая любые твои вокальные протесты. Ее крепкие лодыжки прижимают твои руки, не давая пошевелиться.")
 
-		saynn("Any attempt to struggle just results in you brushing your face against the girl's pussy through the clothing. Kait doesn't seem to mind though.")
+		saynn("Любая попытка вырваться приводит лишь к тому, что ты начинаешь тереться лицом о ее киску сквозь ткань шорт. Впрочем, Кейт, кажется, это только забавляет.")
 
-		saynn("[say=kait]Ah. Much better. You know, in moments like these, I almost can forgive her.[/say]")
+		saynn("[say=kait]Ах. Так-то лучше. Знаешь, в такие моменты я почти могу ее простить.[/say]")
 
-		saynn("She giggles and raises herself so she can pull her shorts down, exposing her pretty pussy slit that is already clouding your mind with its scent. A second later Kait just plops herself back onto your face, spreading her juices around.")
+		saynn("Она хихикает и приподнимается, чтобы стянуть шорты, обнажая свою прелестную щелочку, чей аромат уже затуманивает твой разум. Секунду спустя Кейт просто плюхается обратно тебе на лицо, размазывая по тебе свою смазку.")
 
-		saynn("[say=kait]Nah~. Fuck that bitch~.[/say]")
+		saynn("[say=kait]Не-а~. Трахни эту сучку~.[/say]")
 
-		addButton("Continue", "See what happens next", "kait_cums_facesitting")
+		addButton("Продолжить", "Смотреть, что будет дальше", "kait_cums_facesitting")
 	if(state == "kait_cums_facesitting"):
 		playAnimation(StageScene.SexFaceSitting, "grind", {pc="kait", npc="pc", bodyState={exposedCrotch=true}})
-		saynn("Kait doesn't stop there, she begins dragging her sensitive petals over your face, using every bump for her pleasure. Breathing is hard when your nostrils are blocked by someone's wet slit but you do get just enough air not to suffocate. You do hear some cute noises coming from the cat through, she is moaning while riding your face.")
+		saynn("Кейт не останавливается на достигнутом: она начинает возить своими чувствительными лепестками по твоему лицу, используя каждую неровность для своего удовольствия. Дышать тяжело, когда ноздри забиты чьей-то влажной щелью, но воздуха хватает ровно столько, чтобы не задохнуться. Ты слышишь милые звуки, исходящие от кошки — она стонет, оседлав твое лицо.")
 
-		saynn("[say=kait]I will be stronger than she is~. My team will be better than hers.[/say]")
+		saynn("[say=kait]Я буду сильнее неё~. Моя команда будет лучше её.[/say]")
 
-		saynn("She arches her back and uses your {pc.breasts} as support while continues to slowly pick up the pace. You feel her flower getting more moist, she is really forcing her scent onto you. You can't help but to stick your tongue a bit and let her drag her pussy over it.")
+		saynn("Она выгибает спину, используя твой {pc.breasts} как опору, и продолжает медленно наращивать темп. Ты чувствуешь, как её цветок становится всё более влажным — она буквально навязывает тебе свой аромат. Ты не можешь удержаться и слегка высовываешь язык, позволяя ей возить киской прямо по нему.")
 
-		saynn("[say=kait]Like, look what I'm doing to her pet already. Ah~. Tavi is next~.[/say]")
+		saynn("[say=kait]Смотри, что я уже делаю с её питомцем. А~. Тави будет следующей~.[/say]")
 
-		saynn("Very soon Kait's moans become more prominent, the lilac keeps brushing her crotch over your lips until the climax begins to catch up with her. The kitty is panting heavily while grinding your face, you can feel faint spasms of her pussy muscles.")
+		saynn("Вскоре стоны Кейт становятся всё громче; сиреневая кошка продолжает тереться промежностью о твои губы, пока оргазм не начинает настигать её. Кошечка тяжело дышит, втираясь лицом в твое лицо, и ты чувствуешь легкие спазмы её мышц.")
 
-		saynn("[say=kait]Get ready.. pet..[/say]")
+		saynn("[say=kait]Готовься... питомец...[/say]")
 
-		saynn("Suddenly she lets out a passionate moan before her cute pussy begins to shower your face with her female juices. The snow leopard arches her back further while her legs lock up around your head and her paws grab tightly onto your {pc.breasts}.")
+		saynn("Внезапно она издает страстный стон, после чего её милая киска начинает осыпать твоё лицо женскими соками. Снежная леопардица выгибает спину ещё сильнее, её ноги сжимаются вокруг твоей головы, а лапы крепко вцепляются в твой {pc.breasts}.")
 
-		saynn("Some of her hot arousal inevitably ends up in your mouth. So humiliating. But also kinda nice.")
+		saynn("Часть её горячего возбуждения неизбежно попадает тебе в рот. Как унизительно. Но в то же время... довольно приятно.")
 
-		addButton("Continue", "See what happens next", "kait_getsup_after_facesitting")
+		addButton("Продолжить", "Смотреть, что будет дальше", "kait_getsup_after_facesitting")
 	if(state == "kait_getsup_after_facesitting"):
 		playAnimation(StageScene.Duo, "stand", {npc="kait"})
-		saynn("After resting a bit on your face, Kait finally gets up and puts her shorts back on.")
+		saynn("Немного отдохнув на твоем лице, Кейт наконец поднимается и натягивает шорты обратно.")
 
-		saynn("[say=kait]This answers my questions~. Now go get a shower or something before I decide to use your face again for something else.[/say]")
+		saynn("[say=kait]Это отвечает на все мои вопросы~. А теперь иди в душ или типа того, пока я не решила использовать твое лицо для чего-нибудь еще.[/say]")
 
-		saynn("You leave her cell and try to hide your wet face from all the lilacs. Some do smirk at you, probably not the rarest sight here.")
+		saynn("Ты выходишь из её камеры, пытаясь спрятать свое мокрое лицо от всех сиреневых глазок. Некоторые из них ухмыляются тебе вслед — вероятно, зрелище здесь не самое редкое.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "punish_rideanal"):
 		playAnimation(StageScene.SexFaceSitting, "sit", {pc="kait", npc="pc", bodyState={exposedCrotch=true}})
-		saynn("[say=kait]In fact I should just do this.[/say]")
+		saynn("[say=kait]Вообще-то, мне стоит просто сделать это.[/say]")
 
-		saynn("Kait raises her body a bit before crawling forward and sitting on your head. She pushes her shorts directly into your face, muffling any vocal protests from you. Her strong ankles keep your arms pinned.")
+		saynn("Кейт слегка приподнимается, а затем подползает вперед и усаживается тебе на голову. Она вжимает свои шорты прямо тебе в лицо, заглушая любые твои вокальные протесты. Ее крепкие лодыжки прижимают твои руки, не давая пошевелиться.")
 
-		saynn("Any attempt to struggle just results in you brushing your face against the girl's pussy through the clothing. Kait doesn't seem to mind though.")
+		saynn("Любая попытка вырваться приводит лишь к тому, что ты начинаешь тереться лицом о ее киску сквозь ткань шорт. Впрочем, Кейт, кажется, это только забавляет.")
 
-		saynn("[say=kait]Ah. Much better. You know, in moments like these, I almost can forgive her.[/say]")
+		saynn("[say=kait]Ах. Так-то лучше. Знаешь, в такие моменты я почти могу ее простить.[/say]")
 
-		saynn("She giggles and raises herself so she can pull her shorts down, exposing her pretty pussy slit that is already clouding your mind with its scent. Seeing her flower from so close arouses you almost instantly, your {pc.penis} is getting harder.")
+		saynn("Она хихикает и приподнимается, чтобы стянуть шорты, обнажая свою прелестную щелочку, чей аромат уже затуманивает твой разум. Вид её цветка так близко мгновенно возбуждает тебя, твой {pc.penis} становится всё тверже.")
 
-		saynn("[say=kait]Nah~. Fuck that bitch~.[/say]")
+		saynn("[say=kait]Не-а~. Трахни эту сучку~.[/say]")
 
-		saynn("Kait notices how.. eager you are.. and decides to change her plans. She looks down at you, smiling.")
+		saynn("Кейт замечает, насколько ты... нетерпелив... и решает изменить свои планы. Она смотрит на тебя сверху вниз, улыбаясь.")
 
-		saynn("[say=kait]You like my pussy? I'm afraid you won't get it because you've been so bad, you will have to settle for the second best~.[/say]")
+		saynn("[say=kait]Тебе нравится моя киска? Боюсь, ты её не получишь, потому что ты был очень плохим мальчиком, так что придется довольствоваться вторым сортом~.[/say]")
 
-		addButton("Anal", "See what happens next", "kait_prepares_to_ride_anal")
+		addButton("Анальный", "Смотреть, что будет дальше", "kait_prepares_to_ride_anal")
 	if(state == "kait_prepares_to_ride_anal"):
 		playAnimation(StageScene.SexCowgirl, "tease", {npc="kait", pc="pc", npcBodyState={naked=true}, bodyState={exposedCrotch=true, hard=true}})
-		saynn("Kait straddles your crotch again, using one of her paws to keep you pinned and another to expose and get a hold of your member, her soft feline digits slide over the veiny texture, making you more lusty.")
+		saynn("Кейт снова усаживается тебе на пах, одной лапой прижимая тебя, а другой обнажая и обхватывая твой член; её мягкие кошачьи пальчики скользят по вздутым венам, разжигая в тебе еще больше похоти.")
 
-		saynn("The cat's pussy is in your clear view, Kait raises herself but instead of guiding your shaft to her slit, she instead goes for her tailhole, letting the tip of your dick to leak pre onto her tight-looking pink star.")
+		saynn("Кошачья киска прямо перед твоими глазами. Кейт приподнимается, но вместо того, чтобы направить твой ствол в щелочку, она выбирает свое анусное отверстие, позволяя кончику твоего члена пачкать предэякулятом её тугую розовую «звездочку».")
 
-		saynn("[say=kait]Would Tavi let you do that to her~. I'm clearly better.[/say]")
+		saynn("[say=kait]Разве Тави позволила бы тебе такое~? Я явно лучше.[/say]")
 
-		saynn("Kait proceeds to slowly lower herself onto your {pc.penis}. She parts her lips and pants slightly as her tailhole twitches even from just being prodded. But kitty is insatiable, she keeps putting more pressure onto her cute butthole until..")
+		saynn("Кейт начинает медленно опускаться на твой {pc.penis}. Она приоткрывает губы и слегка тяжело дышит, пока её анус подергивается даже от одного лишь прикосновения. Но кошечка ненасытна: она продолжает давить своим милым задним проходом всё сильнее и сильнее, пока...")
 
-		addButton("Continue", "See what happens next", "kait_rides_anal")
+		addButton("Продолжить", "Смотреть, что будет дальше", "kait_rides_anal")
 	if(state == "kait_rides_anal"):
 		playAnimation(StageScene.SexCowgirl, "sex", {npc="kait", pc="pc", npcBodyState={naked=true}, bodyState={exposedCrotch=true, hard=true}})
-		saynn("..until finally letting your shaft inside. Kait bites her lip while holding onto your {pc.masc} body, her neglected pussy dripping juices onto you. She slowly lowers herself until her soft fluffy buttcheeks reach your hips. You pick up on her warm breathing.")
+		saynn("..пока, наконец, не впускает твой член внутрь. Кейт прикусывает губу, вцепившись в твоё {pc.masc} тело, а её запущенная киска сочится соками прямо на тебя. Она медленно опускается, пока её мягкие пушистые ягодицы не достигают твоих бёдер. Ты чувствуешь её горячее дыхание.")
 
-		saynn("[say=kait]So nice~. I should focus on playing with this cute pet instead.[/say]")
+		saynn("[say=kait]Так приятно~. Пожалуй, мне стоит сосредоточиться на игре с этим милым питомцем.[/say]")
 
-		saynn("Kait begins to ride your cock, gradually raising her lower part of the body and then doing the opposite, letting your shaft explore her from the inside. Her pucker is tight but it seems being a feline lets her get away with it, this kitty is stretchy if you will.")
+		saynn("Кейт начинает скакать на твоём члене, постепенно поднимая таз и опускаясь обратно, позволяя твоему стволу исследовать её изнутри. Её анус тугой, но, похоже, кошачья натура позволяет ей это — эта киска весьма растяжима, если можно так выразиться.")
 
-		saynn("She catches you staring at her wet dripping snatch and giggles.")
+		saynn("Она замечает твой пристальный взгляд на свою мокрую, сочащуюся киску и хихикает.")
 
-		saynn("[say=kait]I'm such a buzzkill, right~? You wanted to breed me and here I am, making you fuck my asshole. Maybe you should have joined my team instead~.[/say]")
+		saynn("[say=kait]Я такая зануда, да~? Ты хотел оплодотворить меня, а в итоге приходится трахать мой зад. Может, тебе стоило примкнуть к моей команде~?[/say]")
 
 		if (getCharacter("kait").isVisiblyPregnant()):
-			saynn("[say=pc]You're already pregnant, breeding you won't make your belly any bigger.[/say]")
+			saynn("[say=pc]Ты уже беременна, так что от осеменения твой живот станет разве что чуть больше.[/say]")
 
-			saynn("[say=kait]You.. you're not wrong. Comes with the job.[/say]")
+			saynn("[say=kait]Ты.. ты в чём-то права. Это часть работы.[/say]")
 
-		saynn("Kait closes her eyes and focuses on the pleasure, little moans escape from her while she slowly rides your cock. Her free paw lands on her {kait.breasts} and gives them a good squeeze.")
+		saynn("Кейт закрывает глаза, сосредоточившись на удовольствии; тихие стоны срываются с её губ, пока она медленно скачет на твоём члене. Её свободная лапка ложится на её {kait.breasts} и с силой сжимает их.")
 
-		saynn("It feels good, your body tries to meet the cat's motions but she pins you to the floor and giggles while doing this on her terms.")
+		saynn("Это чертовски приятно; твоё тело пытается подстроиться под движения кошки, но она прижимает тебя к полу и хихикает, диктуя свои правила игры.")
 
-		saynn("[say=kait]You gonna cum in my ass, you cute~? I better cum too, you know.[/say]")
+		saynn("[say=kait]Ты же кончишь мне в зад, милашка~? Тогда и мне стоит кончить, знаешь ли.[/say]")
 
-		saynn("Her paw moves from her breasts to her crotch, her digits playing with her clit. Very soon her moans become more audible, Kait rides your cock faster and faster while pleasuring herself.")
+		saynn("Её лапа скользит от груди к промежности, пальцы начинают ласкать клитор. Вскоре её стоны становятся громче; Кейт трахает твой член всё быстрее и быстрее, одновременно доводя себя до исступления.")
 
-		addButton("Cum!", "Fill her ass up", "cum_kait_riding_anal")
+		addButton("Кончай!", "Забей ей в задницу", "cum_kait_riding_anal")
 	if(state == "cum_kait_riding_anal"):
 		playAnimation(StageScene.SexCowgirl, "inside", {npc="kait", pc="pc", pcCum=true, npcCum=true, npcBodyState={naked=true}, bodyState={exposedCrotch=true, hard=true}})
-		saynn("You grip tightly onto the floor while your whole body enters the orgasmic state, your {pc.penis} throbs and twitches inside Kait until finally bursting with {pc.cum}. Kait arches her back and squirms around your member while you stuff her cute fluffy butt to the brim. She makes some very passionate noises. Both her holes are pulsating, her anus milking your cock while her pussy squirts juices all over your body.")
+		saynn("Ты крепко вцепляешься в пол, пока всё твоё тело пронзает оргазм; твой {pc.penis} пульсирует и дергается внутри Кейт, пока наконец не извергается {pc.cum}. Кейт выгибает спину и извивается вокруг твоего члена, пока ты забиваешь её милую пушистую попку до самых краев. Она издает страстные звуки. Оба её отверстия пульсируют: анус доит твой член, а киска заливает всё твоё тело соками.")
 
-		saynn("[say=kait]Yeah, cum inside the snow leopard's ass like a good pet~.[/say]")
+		saynn("[say=kait]Да, кончай в задницу этой снежной леопардихе, как послушный питомец~.[/say]")
 
-		saynn("Kait rides the rest of her climax with your dick inside her. After that, she just bites her lip again and proceeds to moan softly, enjoying the sensations.")
+		saynn("Кейт доезжает на остатках своего оргазма, пока твой член всё еще внутри неё. После этого она снова прикусывает губу и начинает тихо стонать, наслаждаясь ощущениями.")
 
-		saynn("Some of the seed already begins to leak back, creating a little mess. Eventually Kait gets up and spreads her buttcheeks for you, showing off her gaping creamed tailhole as it slowly closes.")
+		saynn("Часть семени уже начинает вытекать обратно, создавая небольшую лужицу. В конце концов Кейт встает и раздвигает ягодицы перед тобой, демонстрируя зияющее, залитое кремом отверстие хвоста, которое медленно стягивается.")
 
-		addButton("Continue", "See what happens next", "kait_getsup_after_riding")
+		addButton("Продолжить", "Смотреть, что будет дальше", "kait_getsup_after_riding")
 	if(state == "kait_getsup_after_riding"):
 		playAnimation(StageScene.Duo, "stand", {npc="kait"})
-		saynn("After quickly catching her breath, Kait puts her shorts back on.")
+		saynn("Быстро переведя дух, Кейт натягивает шорты обратно.")
 
-		saynn("[say=kait]This answers my questions~. Now go away before I make you clean all of the mess that you caused.[/say]")
+		saynn("[say=kait]Это отвечает на мои вопросы~. А теперь проваливай, пока я не заставила тебя отмывать весь тот беспорядок, что ты тут устроил.[/say]")
 
-		saynn("You leave her cell and try to hide your blush. Some do smirk at you, probably not the rarest sight here.")
+		saynn("Ты выходишь из её камеры, пытаясь скрыть румянец. Некоторые смотрят на тебя с ухмылкой — вероятно, здесь это зрелище не самое редкое.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "start_stocks_kait"):
 		setFlag("TaviModule.Ch4KaitIntoStocks", true)
 		aimCameraAndSetLocName("main_punishment_spot")
 		GM.pc.setLocation("main_punishment_spot")
 		playAnimation(StageScene.Duo, "stand", {npc="kait", npcBodyState={naked=true}})
-		saynn("You grab Kait by the collar and begin to pull her out of her cell and towards the main hall. The snow leopard does try to struggle but overall obeys your grasp.")
+		saynn("Ты хватаешь Кейт за воротник и начинаешь вытаскивать её из камеры в сторону главного зала. Снежная леопардица пытается сопротивляться, но в целом подчиняется твоей хватке.")
 
-		saynn("[say=kait]Where are you pulling me..[/say]")
+		saynn("[say=kait]Куда ты меня тащишь...[/say]")
 
-		saynn("[say=pc]Stocks.[/say]")
+		saynn("[say=pc]На склад.[/say]")
 
-		saynn("[say=kait]Hey! I told you everything![/say]")
+		saynn("[say=kait]Эй! Я же тебе всё рассказала![/say]")
 
-		saynn("[say=pc]Did you?[/say]")
+		saynn("[say=pc]Правда?[/say]")
 
-		saynn("As you begin to walk up the stairs that lead into the main hall, Kait grabs onto the corner and refuses to let go.")
+		saynn("Когда ты начинаешь подниматься по лестнице, ведущей в главный зал, Кейт вцепляется в угол и отказывается отпускать.")
 
-		saynn("[say=kait]If you leave me there, others will use me..[/say]")
+		saynn("[say=kait]Если ты оставишь меня там, другие будут использовать меня...[/say]")
 
-		saynn("You stop and turn around before leaning closer to Kait's head and staring into her eyes.")
+		saynn("Ты останавливаешься, оборачиваешься и, наклонившись к самому лицу Кейт, пристально смотришь ей в глаза.")
 
-		saynn("[say=pc]You don't like it?[/say]")
+		saynn("[say=pc]Тебе не нравится?[/say]")
 
-		saynn("[say=kait]Not against my will, no..[/say]")
+		saynn("[say=kait]Только не против моей воли, нет...[/say]")
 
-		saynn("[say=pc]Maybe you should have thought about that before attacking me?[/say]")
+		saynn("[say=pc]Может, тебе стоило подумать об этом, прежде чем нападать на меня?[/say]")
 
-		saynn("Kait pouts but after a few tugs on her collar, she finally lets go and follows you, her head tilted down, fluffy tail stuck between her legs.")
+		saynn("Кейт дует губы, но после нескольких легких рывков за ошейник она наконец отпускает тебя и идет следом, опустив голову, а её пушистый хвост поджат между ног.")
 
-		saynn("[say=pc]You've been rude to me, rude to Tavi. Been spying on us. And now you complain when the consequences come? You know, I get a feeling that you wanted this to happen.[/say]")
+		saynn("[say=pc]Ты вел себя грубо со мной, грубо с Тави. Шпионил за нами. А теперь жалуешься, когда приходят последствия? Знаешь, у меня такое чувство, что ты сам этого хотел.[/say]")
 
-		saynn("You reach the main platform that has all the punishment equipment. You approach a free set of stocks and present them to Kait.")
+		saynn("Вы выходите на главную платформу, где расположено всё оборудование для наказаний. Вы подходите к свободным колодкам и протягиваете их Кейт.")
 
-		saynn("[say=pc]Undress.[/say]")
+		saynn("[say=pc]Раздевайся.[/say]")
 
-		saynn("[say=kait]Hey..[/say]")
+		saynn("[say=kait]Эй..[/say]")
 
-		saynn("[say=pc]You want your uniform torn? Be my guest.[/say]")
+		saynn("[say=pc]Хочешь, чтобы твою форму разорвали в клочья? Пожалуйста, валяй.[/say]")
 
-		saynn("Kait looks around. Obviously there are inmates around, it's one of the most crowded places in the whole prison. She tilts her head down again and proceeds to unbutton her shirt and take it off, exposing her {kait.breasts}. Kait covers herself in shame.")
+		saynn("Кейт оглядывается. Очевидно, что вокруг полно заключенных — это одно из самых людных мест во всей тюрьме. Она снова склоняет голову и принимается расстегивать рубашку, снимая её и обнажая свою {kait.breasts}. Кейт стыдливо прикрывается.")
 
-		saynn("[say=pc]Continue. Don't tell me you're not a slut, the proof is on you.[/say]")
+		saynn("[say=pc]Продолжай. Только не говори мне, что ты не шлюшка, все доказательства на тебе.[/say]")
 
-		saynn("She furrows her brows at you.")
+		saynn("Она хмурится, глядя на тебя.")
 
-		addButton("Force her", "Help Kait undress and get into the stocks", "force_kait_to_undress")
+		addButton("Прижать её к стенке / Заставить её", "Помочь Кейт раздеться и залезть в колодки", "force_kait_to_undress")
 	if(state == "force_kait_to_undress"):
 		addCharacter("kait", ["naked"])
 		playAnimation(StageScene.Stocks, "idle", {pc="kait", bodyState={naked=true}})
-		saynn("Instead of waiting for her to come around to it, you reach your hands out and pull her shorts down, forcibly exposing the cat's fluffy crotch that has a cute pink pussy slit hiding in the middle. Kait tries to close her legs and cover all her bits, her tail wags a lot.")
+		saynn("Вместо того чтобы ждать, пока она сама решится, ты протягиваешь руки и сдергиваешь с неё шорты, насильно обнажая пушистую кошачью промежность, в центре которой прячется милая розовая щелочка. Кейт пытается свести ноги, чтобы прикрыться, её хвост при этом сильно виляет.")
 
-		saynn("[say=kait]Meanie.. You are just like Tavi..[/say]")
+		saynn("[say=kait]Грубиян... Ты точь-в-точь как Тави...[/say]")
 
-		saynn("[say=pc]Means you're enjoying it. C'mon.[/say]")
+		saynn("[say=pc]Значит, тебе нравится. Да ладно тебе![/say]")
 
-		saynn("Kait huffs. You pull her closer and hold the stocks open for her. Snow leopard slowly bends forward, placing her neck into the opening in the middle of the lower bar. You grab her paws and place them into the correct spots one by one. Naked kitty still uses her tail to hide her bits.")
+		saynn("Кейт фыркает. Ты притягиваешь её ближе и удерживаешь колодки открытыми. Снежная леопардица медленно наклоняется вперед, подставляя шею в отверстие посередине нижней планки. Ты берешь её лапы и по одной вставляешь в нужные пазы. Голая кошечка всё еще пытается прикрыться хвостом.")
 
-		saynn("You lower the top part and lock the stocks, trapping the feline in there. Kait is forced to stay bent, sticking her naked butt for anyone. You try to move her tail out of the way but it quickly returns. So you smack her tight ass once, making it jiggle.")
+		saynn("Ты опускаешь верхнюю часть и запираешь колодки, заманивая кошку в ловушку. Кейт вынуждена оставаться в наклоне, выставив свою голую задницу на всеобщее обозрение. Ты пытаешься убрать её хвост с пути, но он тут же возвращается на место. Тогда ты звонко шлепаешь её по тугой попке, заставляя её затрястись.")
 
-		saynn("[say=pc]Quit that.[/say]")
+		saynn("[say=pc]Прекрати это![/say]")
 
-		saynn("Kait obeys, pulling her tail to the side, exposing her pussy and the tight-looking pink pucker to you and anyone around.")
+		saynn("Кейт подчиняется, отводя хвост в сторону и обнажая перед тобой и всеми окружающими свою киску и тугую розовую дырочку.")
 
-		saynn("[say=kait]What now..[/say]")
+		saynn("[say=kait]Ну и что теперь...[/say]")
 
-		addButton("Leave", "Leave Kait for others to use", "kait_freeuse")
-		addButtonWithChecks("Breed her", "Breed Kait's pussy", "start_breed_kait", [], [ButtonChecks.HasReachablePenis])
-		addButtonWithChecks("Pussy grind", "Use her face for your pleasure", "start_grinding_kait", [], [ButtonChecks.HasReachableVagina])
+		addButton("Уйти", "Оставить Кейт на растерзание другим", "kait_freeuse")
+		addButtonWithChecks("Оплодотворить её", "Трахать Кейт в киску", "start_breed_kait", [], [ButtonChecks.HasReachablePenis])
+		addButtonWithChecks("Тереться о киску", "Использовать её лицо для своего удовольствия", "start_grinding_kait", [], [ButtonChecks.HasReachableVagina])
 	if(state == "use_painkillers_and_go_stocks"):
 		setFlag("TaviModule.Ch4KaitIntoStocks", true)
 		aimCameraAndSetLocName("main_punishment_spot")
 		GM.pc.setLocation("main_punishment_spot")
 		playAnimation(StageScene.Duo, "stand", {npc="kait", npcBodyState={naked=true}})
-		saynn("You'd love to punish that cat more for how she got you and Tavi into trouble. For how rude she was. But Kait doesn't seem to be doing too well, her wounds bring her lots of pain. So you produce a painkillers pill before bringing it to Kait's maw.")
+		saynn("Тебе бы очень хотелось наказать эту кошку за то, что она втянула тебя и Тави в неприятности. За её дерзость. Но Кейт, похоже, не слишком хорошо себя чувствует — её раны причиняют ей сильную боль. Поэтому ты достаёшь таблетку обезболивающего и подносишь её к пасти Кейт.")
 
-		saynn("[say=kait]What is that..[/say]")
+		saynn("[say=kait]Что это такое..[/say]")
 
-		saynn("[say=pc]You're gonna swallow it.[/say]")
+		saynn("[say=pc]Ты её проглотишь.[/say]")
 
-		saynn("Kait shuts her mouth and shakes her head.")
+		saynn("Кейт плотно сжимает рот и качает головой.")
 
-		saynn("[say=pc]Or you're gonna lose your teeth and swallow it.[/say]")
+		saynn("[say=pc]Или ты выплюнешь ей зубы, а потом всё равно проглотишь.[/say]")
 
-		saynn("That changes things a bit. She is still unwilling, you try to push the pill past her fangs but she is hissing annoyed at you. So you grab her half-broken paw and bend it more, forcing a cry out of the cat. That was enough for you to throw the pill in there and to close her mouth so she doesn't spit it out.")
+		saynn("Это немного меняет дело. Она всё ещё сопротивляется; ты пытаешься пропихнуть таблетку сквозь её клыки, но она лишь раздражённо шипит на тебя. Тогда ты хватаешь её полусломанную лапу и сгибаешь её сильнее, заставляя кошку вскрикнуть. Этого оказалось достаточно, чтобы закинуть таблетку внутрь и тут же закрыть ей рот, чтобы она не выплюнула её.")
 
-		saynn("[say=pc]Swallow. You're an expert at that.[/say]")
+		saynn("[say=pc]Глотай. Ты в этом деле эксперт.[/say]")
 
-		saynn("She pouts but eventually you hear an audible gulp. While is busy with that, you tear-open her shirt, exposing her {kait.breasts} and causing all the buttons to scatter throughout the floor. Kait tries to cover herself but that only makes her vulnerable to her shorts being pulled down and stolen, exposing her fluffy white crotch with a cute pussy slit in the middle.")
+		saynn("Она дуется, но в конце концов ты слышишь отчетливый глоток. Пока она занята этим, ты с треском разрываешь её рубашку, обнажая её {kait.breasts}, отчего все пуговицы разлетаются по полу. Кейт пытается прикрыться, но это лишь делает её беззащитной: ты стягиваешь с неё шорты и забираешь их, обнажая её пушистую белую промежность с милой щелочкой киски посередине.")
 
-		saynn("After that you just grab her by the collar and proceed to pull her out of her cell, parading her naked through the prison, heading towards the main hall.")
+		saynn("После этого ты просто хватаешь её за воротник и тащишь из камеры, выставляя её на показ нагишом перед всей тюрьмой по пути к главному залу.")
 
-		saynn("[say=kait]Hey.. Where are you pulling me..[/say]")
+		saynn("[say=kait]Эй.. Куда ты меня тащишь..[/say]")
 
-		saynn("[say=pc]Stocks.[/say]")
+		saynn("[say=pc]На склад.[/say]")
 
-		saynn("[say=kait]Why.. I told you everything..[/say]")
+		saynn("[say=kait]Почему.. Я же всё тебе рассказала..[/say]")
 
-		saynn("[say=pc]You need to be punished for what you did.[/say]")
+		saynn("[say=pc]За то, что ты наделала, тебя нужно наказать.[/say]")
 
-		saynn("You bring her out into the big hall and then climb the main platform. Lots of inmates are already staring at you and your girl.")
+		saynn("Ты выводишь её в большой зал и поднимаешься на главную платформу. Множество заключенных уже пялятся на тебя и твою девчонку.")
 
-		addButton("Stocks", "Throw her into the stocks", "kait_force_rough_stocks")
+		addButton("Колодки", "Бросить её в колодки", "kait_force_rough_stocks")
 	if(state == "kait_force_rough_stocks"):
 		addCharacter("kait", ["naked"])
 		playAnimation(StageScene.Stocks, "idle", {pc="kait", bodyState={naked=true}})
-		saynn("You find a free set of stocks and bring Kait to them. She doesn't seem to be wanting to bend so you give her a little incentive by pulling on her short hair. The cat hisses but eventually gives in, aligning her neck with the opening in the stocks and placing her paws into the smaller ones. You shut the top panel on her and lock the stocks, trapping the feline in there.")
+		saynn("Ты находишь свободные колодки и приводишь к ним Кейт. Похоже, она не особо хочет наклоняться, поэтому ты даёшь ей небольшой стимул, потянув за её короткие волосы. Кошка шипит, но в конце концов сдаётся, подставляя шею под отверстие в колодках и засовывая лапы в маленькие отверстия. Ты закрываешь верхнюю панель и запираешь колодки, заманивая кошку в ловушку.")
 
-		saynn("[say=kait]You are just like Tavi..[/say]")
+		saynn("[say=kait]Ты точь-в-точь как Тави..[/say]")
 
-		saynn("[say=pc]Means you're enjoying it.[/say]")
+		saynn("[say=pc]Значит, тебе это нравится.[/say]")
 
-		saynn("Naked kitty is forced to stay bent, sticking her naked butt for anyone. But she still uses her tail to hide her bits. You try to move her tail out of the way but it quickly returns. So you smack her tight ass once, making it jiggle.")
+		saynn("Голая кошечка вынуждена оставаться в наклоне, выставляя свою голое задницу на всеобщее обозрение. Но она всё равно использует хвост, чтобы прикрывать свои прелести. Ты пытаешься отодвинуть её хвост в сторону, но он тут же возвращается на место. Тогда ты шлёпаешь её по тугой заднице, заставляя её затрястись.")
 
-		saynn("[say=pc]Quit that.[/say]")
+		saynn("[say=pc]Прекрати это![/say]")
 
-		saynn("Kait obeys, pulling her tail to the side, exposing her pussy and the tight-looking pink pucker to you and anyone around.")
+		saynn("Кейт подчиняется, отводя хвост в сторону и обнажая перед тобой и всеми окружающими свою киску и тугую розовую дырочку.")
 
-		saynn("[say=kait]What now..[/say]")
+		saynn("[say=kait]Ну и что теперь...[/say]")
 
-		addButton("Leave", "Leave Kait for others to use", "kait_freeuse")
-		addButtonWithChecks("Breed her", "Breed Kait's pussy", "start_breed_kait", [], [ButtonChecks.HasReachablePenis])
-		addButtonWithChecks("Pussy grind", "Use her face for your pleasure", "start_grinding_kait", [], [ButtonChecks.HasReachableVagina])
+		addButton("Уйти", "Оставить Кейт на растерзание другим", "kait_freeuse")
+		addButtonWithChecks("Оплодотворить её", "Трахать Кейт в киску", "start_breed_kait", [], [ButtonChecks.HasReachablePenis])
+		addButtonWithChecks("Тереться о киску", "Использовать её лицо для своего удовольствия", "start_grinding_kait", [], [ButtonChecks.HasReachableVagina])
 	if(state == "kait_freeuse"):
 		addCharacter(first_npc_id)
 		addCharacter(second_npc_id)
 		playAnimation(StageScene.StocksSpitroast, "tease", {pc="kait", npc=first_npc_id, npc2=second_npc_id, bodyState={naked=true}})
-		saynn("[say=pc]Time for the others to fuck you.[/say]")
+		saynn("[say=pc]Пришло время остальным трахнуть тебя.[/say]")
 
-		saynn("[say=kait]Hey.. No..[/say]")
+		saynn("[say=kait]Эй.. Нет..[/say]")
 
-		saynn("As you step away from the stocks, inmates with hungry eyes already lineup to use Kait.")
+		saynn("Как только ты отходишь от колодок, заключенные с голодными глазами уже выстраиваются в очередь, чтобы трахнуть Кейт.")
 
-		addButton("Watch", "See what happens", "watch_others_breed_kait")
-		addButton("Leave", "You'd rather not watch that", "leave_before_others_breed")
-		addButton("Protect", "You changed your mind", "protect_kait")
+		addButton("Смотреть", "Посмотреть, что будет", "watch_others_breed_kait")
+		addButton("Уйти", "На это лучше не смотреть", "leave_before_others_breed")
+		addButton("Защитить", "Вы передумали", "protect_kait")
 	if(state == "protect_kait"):
 		setFlag("TaviModule.Ch4KaitStocksProtected", true)
 		playAnimation(StageScene.Stocks, "idle", {pc="kait", bodyState={naked=true}})
 		removeCharacter(first_npc_id)
 		removeCharacter(second_npc_id)
-		saynn("[say=pc]Actually, I changed my mind. Get the fuck away from her.[/say]")
+		saynn("[say=pc]Вообще-то, я передумал. Свалили нахуй от неё![/say]")
 
-		saynn("You push any inmates away from Kait and protect her. The queue is obviously not happy.")
+		saynn("Ты расталкиваешь заключенных, защищая Кейт. Очередь явно не в восторге.")
 
-		saynn("[say=pc]Anyone has a problem with that?[/say]")
+		saynn("[say=pc]У кого-то есть проблемы?[/say]")
 
-		saynn("You catch angry glares from people. But no one seems to be brave enough to step out. Luckily there are other sluts to fuck so the crowd slowly disperses.")
+		saynn("Ты ловишь на себе гневные взгляды, но, кажется, никто не решается выступить против. К счастью, вокруг полно других шлюх, которыми можно заняться, так что толпа постепенно рассеивается.")
 
-		saynn("[say=kait]Uh.. you gonna unlock me?[/say]")
+		saynn("[say=kait]Эй... ты меня разлочишь?[/say]")
 
-		saynn("[say=pc]No. Serve your punishment.[/say]")
+		saynn("[say=pc]Нет. Отбывай наказание.[/say]")
 
-		saynn("You smack the cat's ass for the last time and prepare to leave. At least you got her punished for what she did, Tavi should be happy.")
+		saynn("Ты в последний раз шлепаешь кошку по заднице и готовишься уходить. По крайней мере, ты наказал её за то, что она натворила, Тави должна быть довольна.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "leave_before_others_breed"):
 		setFlag("TaviModule.Ch4KaitStocksUsedByOthers", true)
-		saynn("You turn away and leave the place, letting the inmates do whatever they want with the cat. At least you got her punished for what she did, Tavi should be happy.")
+		saynn("Ты отворачиваешься и уходишь, позволяя заключенным делать с кошкой всё, что им вздумается. По крайней мере, ты наказал её за то, что она натворила, Тави должна быть довольна.")
 
-		addButton("Continue", "See what happens next", "endthescene")
+		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "watch_others_breed_kait"):
 		setFlag("TaviModule.Ch4KaitStocksUsedByOthers", true)
 		playAnimation(StageScene.StocksSpitroast, "sex", {pc="kait", npc=first_npc_id, npc2=second_npc_id, bodyState={naked=true}, npcBodyState={exposedCrotch=true, hard=true}, npc2BodyState={exposedCrotch=true, hard=true}})
-		saynn("Two first inmates already expose their cocks and align themselves. When Kait tries to voice her protest, they just force their cocks inside her at roughly the same time. They don't stop there, already fucking both her mouth and pussy.")
+		saynn("Двое первых заключенных уже выставили свои члены и выстроились в ряд. Когда Кейт пытается возразить, они просто с силой вгоняют свои члены в неё почти одновременно. На этом они не останавливаются, вовсю трахая ей и рот, и киску.")
 
-		saynn("Behind them there is already a little queue, it seems Kait will have a lot of fun today.")
+		saynn("Позади них уже выстроилась небольшая очередь; похоже, Кейт сегодня будет весело проводить время.")
 
-		saynn("Muffled garbled noises can be heard coming from Kait's throat while her pussy makes wet sounds instead, the inmates quickly pick up the pace while the poor feline is forced to endure the onslaught.")
+		saynn("Из горла Кейт доносятся приглушённые невнятные звуки, в то время как её киска издаёт влажное хлюпанье; заключённые быстро наращивают темп, заставляя бедную кошечку терпеть этот натиск.")
 
-		addButton("Continue", "See what happens next", "kait_gets_bred_by_inmates")
+		addButton("Продолжить", "Смотреть, что будет дальше", "kait_gets_bred_by_inmates")
 	if(state == "kait_gets_bred_by_inmates"):
 		playAnimation(StageScene.StocksSpitroast, "fast", {pc="kait", pcCum=true, npcCum=true, npc=first_npc_id, npc2=second_npc_id, bodyState={naked=true}, npcBodyState={exposedCrotch=true, hard=true}, npc2BodyState={exposedCrotch=true, hard=true}})
-		saynn("Inmates reach their peak speed and soon enough cum begins to flow into Kait's holes. Her own body desperately tries to squirm while the two dicks stuff her full of seed. Kait's eyes roll up as some of the cum gets shot out of her nostrils. Lewd.")
+		saynn("Заключённые достигают пика скорости, и вскоре сперма начинает заливать отверстия Кейт. Её собственное тело отчаянно пытается извиваться, пока два члена набивают её семенем под завязку. Глаза Кейт закатываются, а часть спермы вылетает прямо из её ноздрей. Пошло.")
 
-		saynn("Soon after that, the inmates pull out. And others take their place.. You think you saw everything, time to go.")
+		saynn("Вскоре после этого заключённые выходят. И на их место встают другие... Думаешь, ты видел всё? Пора продолжать.")
 
-		addButton("Continue", "Time to leave", "endthescene")
+		addButton("Продолжить", "Пора уходить", "endthescene")
 	if(state == "start_breed_kait"):
 		setFlag("TaviModule.Ch4KaitStocksPunishedByPC", true)
 		playAnimation(StageScene.StocksSex, "tease", {npc="pc", pc="kait", bodyState={naked=true}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("[say=pc]So eager. I won't keep you waiting then.[/say]")
+		saynn("[say=pc]Такая жаждущая. Что ж, не буду заставлять тебя ждать.[/say]")
 
-		saynn("[say=kait]Meow?..[/say]")
+		saynn("[say=kait]Мяу?..[/say]")
 
-		saynn("You get behind Kait and run your hands over her white fluffy butt before giving it another smack. Then you spread her butt and drag your digits over your petals, noticing that they're slightly wet.")
+		saynn("Ты встаёшь позади Кейт и проводишь руками по её белоснежной пушистой попке, прежде чем отвесить ей ещё один шлепок. Затем ты раздвигаешь её ягодицы и проводишь пальцами по лепесткам, замечая, что они слегка влажные.")
 
 		if (getCharacter("kait").isVisiblyPregnant()):
-			saynn("[say=pc]Could use another breeding even if you're pregnant already.[/say]")
+			saynn("[say=pc]Можно было бы ещё раз осеменить её, даже если она уже беременна.[/say]")
 
 		else:
-			saynn("[say=pc]Pussy practically begging to be bred.[/say]")
+			saynn("[say=pc]Киска практически умоляет о том, чтобы её трахнули.[/say]")
 
-		saynn("[say=kait]Hey.. Ah..[/say]")
+		saynn("[say=kait]Эй.. Ах..[/say]")
 
-		saynn("You forcefully spread her pussy lips and slide two fingers inside. Her soft inner walls wrap around your digits nicely. And that feline scent also makes you quite aroused. Without any extra foreplay, you pull your digits out before exposing your {pc.penis} and aligning it with the girl's slutty slit. The tip of your member rubs against the petals.")
+		saynn("Ты силой раздвигаешь её половые губы и вставляешь внутрь два пальца. Её мягкие внутренние стенки приятно обхватывают твои пальцы. А этот кошачий аромат лишь сильнее раззадоривает тебя. Не тратя время на лишнюю прелюдию, ты вынимаешь пальцы, обнажаешь свой {pc.penis} и приставляешь его к её похотливой щели. Головка твоего члена трется о нежные лепестки.")
 
-		saynn("[say=kait]Not so rough at least?..[/say]")
+		saynn("[say=kait]Хотя бы не так грубо?..[/say]")
 
-		addButton("Fuck her", "Why be gentle with a bound girl", "kait_begin_stocks_fuck")
+		addButton("Трахнуть её", "Зачем быть нежным с пойманной в ловушку девушкой?", "kait_begin_stocks_fuck")
 	if(state == "kait_begin_stocks_fuck"):
 		playAnimation(StageScene.StocksSex, "sex", {npc="pc", pc="kait", bodyState={naked=true}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("Instead of answering her, you just pull your hips forward, forcing your shaft to spread the girl's slit until your balls slap against her crotch. Kait gasps when you penetrate her pussy so fast. You give her a second to get used to your size before proceeding to move your lower part of the body, little back and forth motion. One of your hands dig into the fluffy butt while another holds onto her tail like it's a handle.")
+		saynn("Вместо ответа ты просто подаешься тазом вперед, заставляя свой член раздвигать её щель до тех пор, пока твои яички не шлепнутся о её промежность. Кейт ахает от того, как быстро ты входишь в её киску. Ты даешь ей секунду, чтобы привыкнуть к твоему размеру, прежде чем начать двигаться — неспешными движениями вперед-назад. Одна твоя рука впивается в её пушистую задницу, а другая сжимает её хвост, словно рукоять.")
 
-		saynn("[say=kait]Ah.. I'm not a slut..[/say]")
+		saynn("[say=kait]Ах.. Я не шлюха..[/say]")
 
-		saynn("[say=pc]Sure.[/say]")
+		saynn("[say=pc]Конечно.[/say]")
 
-		saynn("[say=kait]Fuck you..[/say]")
+		saynn("[say=kait]Да пошел ты..[/say]")
 
-		saynn("Stifled noises of pleasure escape from Kait's mouth, her pussy feels tight around your cock. She tries to escape your onslaught but this is the battle that she can't win. As she tries to stomp on your feet, you pull on her tail with enough strength to raise her rear off the floor while still trusting inside, stretching out her wet cunt.")
+		saynn("Из рта Кейт вырываются сдавленные стоны удовольствия, её киска плотно обхватывает твой член. Она пытается спастись от твоего натиска, но это битва, в которой ей не победить. Когда она пытается топтать твои ноги, ты с силой тянешь её за хвост, так что её задница отрывается от пола, пока ты всё еще внутри, растягивая её влажную щель.")
 
-		saynn("[say=kait]Agh.. Don't you dare.. inside..[/say]")
+		saynn("[say=kait]Агх.. Только не смей.. так глубоко..[/say]")
 
-		saynn("[say=pc]Who's gonna stop me? Who's gonna stop the queue of inmates after me? Bitch, enjoy being the sextoy that you are, you're very good at it.[/say]")
+		saynn("[say=pc]И кто меня остановит? Кто остановит очередь из заключенных за мной? Сучка, наслаждайся тем, что ты секс-игрушка, у тебя это отлично получается.[/say]")
 
-		saynn("You pick up the pace, tugging on the tail before forcing yourself deeper, your {pc.cock} smashing against the girl's natural barricade. You notice her legs shaking slightly in the air.")
+		saynn("Ты ускоряешься, дергая за хвост и заставляя себя входить еще глубже, пока твоя {pc.cock} с грохотом врезается в естественную преграду девушки. Ты замечаешь, как ее ноги в воздухе начинают слегка дрожать.")
 
-		addButton("Inside", "Breed that slut", "cum_inside_kait")
+		addButton("Внутри", "Трахни эту шлюху", "cum_inside_kait")
 	if(state == "cum_inside_kait"):
 		playAnimation(StageScene.StocksSex, "tease", {npc="pc", pc="kait", pcCum=true, npcCum=true, bodyState={naked=true}, npcBodyState={exposedCrotch=true, hard=true}})
-		saynn("Suddenly Kait lets out a muffled moan, her whole body shivers while her pussy gets tight around your cock, too tight for you to just endure it. You pound her cunt a few more times before your own orgasm overwhelms you, strings after strings of {pc.cum} stuff the cat's womb, quickly overflowing it. Your dick keeps throbbing inside the slut's pulsating cunt, your balls are being milked dry.")
+		saynn("Внезапно Кейт издает приглушенный стон, все ее тело содрогается, а киска сжимается вокруг твоего члена так сильно, что тебе становится почти невыносимо. Ты еще несколько раз вколачиваешься в ее щель, прежде чем тебя накрывает оргазм; струя за струей {pc.cum} заполняет матку кошки, быстро переливаясь через край. Твой член продолжает пульсировать внутри бьющейся в конвульсиях щели этой сучки, а твои яички выжимаются досуха.")
 
 		if (GM.pc.hasVagina()):
-			saynn("Your legs shake too, your own pussy squirts all over the floor, the stimulation was too much!")
+			saynn("Твои ноги тоже дрожат, а твоя собственная киска заливает пол сквиртом — стимуляция была слишком мощной!")
 
-		saynn("You let go of the tail and yank your cock a few seconds later, letting the last waves of {pc.cum} land on the girl's fluffy ass and back. Her fur if white but the seed is still clearly visible, especially where her dark dots are.")
+		saynn("Спустя несколько секунд ты отпускаешь хвост и резко выдергиваешь член, позволяя последним волнам {pc.cum} осесть на пушистой заднице и спине девушки. Ее мех белый, но семя отчетливо видно, особенно на темных пятнах.")
 
-		saynn("[say=kait]Huff.. you.. fucker..[/say]")
+		saynn("[say=kait]Хафф... ты... ублюдок...[/say]")
 
-		saynn("[say=pc]You still have high spirits? Don't worry, that's temporary.[/say]")
+		saynn("[say=pc]Все еще бодрячком? Не переживай, это временно.[/say]")
 
-		saynn("Kait pants heavily, she looks around as best as she can and realizes that she is quite screwed indeed. As you smack her girly ass again, her gaping slit leaks some of the seed back.")
+		saynn("Кейт тяжело дышит, она пытается оглядеться как может и понимает, что она действительно в полной заднице. Когда ты снова шлепаешь ее по девчачьей попке, из ее зияющей щели вытекает часть семени.")
 
-		saynn("[say=pc]Enjoy.[/say]")
+		saynn("[say=pc]Наслаждайся.[/say]")
 
-		addButton("Leave", "Leave Kait for others to use", "kait_freeuse")
+		addButton("Уйти", "Оставить Кейт на растерзание другим", "kait_freeuse")
 	if(state == "start_grinding_kait"):
 		setFlag("TaviModule.Ch4KaitStocksPunishedByPC", true)
 		playAnimation(StageScene.StocksSexOral, "tease", {npc="pc", pc="kait", bodyState={naked=true}, npcBodyState={exposedCrotch=true}})
-		saynn("[say=pc]So eager. I won't keep you waiting then.[/say]")
+		saynn("[say=pc]Такая жаждущая. Что ж, не буду заставлять тебя ждать.[/say]")
 
-		saynn("[say=kait]Meow?..[/say]")
+		saynn("[say=kait]Мяу?..[/say]")
 
-		saynn("You stand in front of Kait and expose your {pc.pussyStretch} pussy for her. The feline can barely move her neck so she can't even look up at you or just look away. You grab her by the hair and shove your slit into her face.")
+		saynn("Ты встаешь перед Кейт и подставляешь ей свою {pc.pussyStretch} киску. Кошка едва может пошевелить шеей, поэтому она не может ни посмотреть на тебя, ни отвернуться. Ты хватаешь ее за волосы и вжимаешь свою щель ей прямо в лицо.")
 
-		saynn("[say=pc]Lick. Stick your tongue out.[/say]")
+		saynn("[say=pc]Лижи. Высунь язык.[/say]")
 
-		saynn("But you only hear her snarling back. So you're left with no choice but to pull on her hair harder, causing lots of pain. Poor kitty hisses and squirms as much as stocks allow.")
+		saynn("Но в ответ ты слышишь лишь её рычание. Так что у тебя не остается выбора, кроме как посильнее дернуть её за волосы, причиняя сильную боль. Бедная кошечка шипит и извивается настолько, насколько позволяют колодки.")
 
-		saynn("[say=kait]Fuck you..[/say]")
+		saynn("[say=kait]Да пошел ты..[/say]")
 
-		saynn("[say=pc]Is that how you're gonna talk?[/say]")
+		saynn("[say=pc]Ты так со мной разговаривать будешь?[/say]")
 
-		addButton("Grind", "Grind your pussy against that slut's face", "start_grinding_kaits_face")
+		addButton("Тереться", "Тереться своей киской о лицо этой сучки", "start_grinding_kaits_face")
 	if(state == "start_grinding_kaits_face"):
 		playAnimation(StageScene.StocksSexOral, "pussy", {npc="pc", pc="kait", bodyState={naked=true}, npcBodyState={exposedCrotch=true}})
-		saynn("The slut is clearly not willing to do what you want. So you just take what you want with force. One of your hands holds the girl's maw closed while you drag your crotch over her face back and forth. You hear more growling but you don't care, you continue grinding that bitch's face, spreading your female juices all over it.")
+		saynn("Сучка явно не желает делать то, что ты хочешь. Поэтому ты просто берешь своё силой. Одной рукой ты зажимаешь ей пасть, пока твоя промежность ходит туда-сюда по её лицу. Слышится всё более яростное рычание, но тебе плевать — ты продолжаешь втираться в лицо этой стервы, размазывая по нему свои соки.")
 
-		saynn("[say=pc]Nothing but a sextoy. Quit trying to be someone you're not.[/say]")
+		saynn("[say=pc]Всего лишь секс-игрушка. Хватит пытаться быть той, кем ты не являешься.[/say]")
 
-		saynn("Kait's ears droop as she hears that. Her spirits are still high but she realizes that she is helpless under your onslaught. You continue brushing your slit over her feline maw, forcing your scent into that fur. Feels good, little moans escape from you. You giggle seeing the girl's fluffy tail wagging so much. Behind the stocks there is already a big queue lining up.")
+		saynn("Услышав это, Кейт понуро опускает ушки. Её дух всё ещё бодр, но она осознает свою беспомощность под твоим натиском. Ты продолжаешь возить своей щелью по её кошачьей мордочке, заставляя её впитывать твой запах. Это приятно, и у тебя вырываются тихие стоны. Ты хихикаешь, видя, как сильно виляет пушистый хвост девушки. За колодками уже выстроилась длинная очередь.")
 
-		saynn("[say=pc]If only you could have seen what awaits you.[/say]")
+		saynn("[say=pc]Если бы ты только знала, что тебя ждет.[/say]")
 
-		saynn("Kait is huffing and puffing while you pick the pace, the stimulation is enough to arouse you but you also idly rub your clit, pushing yourself closer to your climax.")
+		saynn("Кейт тяжело дышит, пока ты ускоряешь темп; стимуляции достаточно, чтобы возбудить тебя, но ты также лениво потираешь свой клитор, приближая себя к оргазму.")
 
-		saynn("[say=pc]Get ready.. bitch..[/say]")
+		saynn("[say=pc]Готовься... сучка...[/say]")
 
-		addButton("Cum", "Squirt all over that face", "squirt_over_kaits_face")
+		addButton("Кончить", "Залей всё её лицо", "squirt_over_kaits_face")
 	if(state == "squirt_over_kaits_face"):
 		playAnimation(StageScene.StocksSexOral, "pussy", {npc="pc", pc="kait", pcCum=true, npcCum=true, bodyState={naked=true}, npcBodyState={exposedCrotch=true}})
-		saynn("You continue pushing yourself further and further, more moans escape from your lips, until you finally get yourself over the peak. A powerful orgasm overwhelms your body and mind, making your legs and arms shake, your pussy gushing femcum all over that face.")
+		saynn("Ты продолжаешь входить всё глубже и глубже, из твоих уст вырывается всё больше стонов, пока ты наконец не достигаешь пика. Мощный оргазм захлестывает твое тело и разум, заставляя ноги и руки дрожать, а твоя киска извергает фонтаны соков прямо ей на лицо.")
 
-		saynn("All the while Kait is just keeping her eyes and mouth closed. But this you're doing the opposite, forcing her mouth open so some of the juices flow inside.")
+		saynn("Всё это время Кейт держит глаза и рот закрытыми. Но ты делаешь всё наоборот, силой разжимая ей рот, чтобы часть соков стекала внутрь.")
 
-		saynn("[say=pc]Oo-oh.. Such a good slut.[/say]")
+		saynn("[say=pc]О-о-ох... Такая хорошая шлюшка.[/say]")
 
-		saynn("You hear more soft growling. You rub your wet pussy against that fur a little more before taking a step back.")
+		saynn("Ты слышишь низкое рычание. Ты еще немного трешь свою мокрую киску о её мех, прежде чем отступить на шаг.")
 
-		saynn("[say=pc]Bitch, if I walk behind you and I see a wet cunt..[/say]")
+		saynn("[say=pc]Сучка, если я пройду позади тебя и увижу мокрую щелку...[/say]")
 
-		saynn("You do that and, sure enough, Kait's slit is nothing but a waterfall of her juices. You give her girly ass a few smacks until it's red and then slide your hand over that slit, catching some of her fluids.")
+		saynn("Ты делаешь это, и, конечно же, щель Кейт превращается в настоящий водопад из её соков. Ты отвешиваешь пару шлепков её девчачьей попке, пока та не краснеет, а затем проводишь рукой по её щели, собирая часть влаги.")
 
-		saynn("Then you return back to her face and let her sniff her own arousal.")
+		saynn("Затем ты возвращаешься к её лицу, позволяя ей вдыхать аромат собственного возбуждения.")
 
-		saynn("[say=pc]LICK.[/say]")
+		saynn("[say=pc]ОЛИЖИ.[/say]")
 
-		saynn("Kait huffs and sticks her rough feline tongue out before tasting her juices. You force your wet fingers inside that maw and let her clean them.")
+		saynn("Кейт фыркает и высовывает свой шершавый кошачий язык, чтобы попробовать соки на вкус. Ты засовываешь свои влажные пальцы ей в пасть, заставляя её их вылизать.")
 
-		saynn("[say=pc]Good slut, I wanna see this more. Keep the bitchiness to yourself.[/say]")
+		saynn("[say=pc]Хорошая шлюшка, хочу видеть это почаще. И держи свою стервозность при себе.[/say]")
 
-		addButton("Leave", "Leave Kait for others to use", "kait_freeuse")
+		addButton("Уйти", "Оставить Кейт на растерзание другим", "kait_freeuse")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

@@ -9,10 +9,10 @@ func registerTriggers(es):
 	
 func run(_triggerID, _args):
 	if(GM.QS.isActive("Ch3TaviQuest") && !getFlag("TaviModule.ch3CompletedDoorHack") && getFlag("TaviModule.ch3StartedInfiltration")):
-		addButtonWithChecks("Control panels", "You gotta find a way to turn on the maintenance protol", "start", [], [ButtonChecks.NotHandsBlocked, ButtonChecks.NotArmsRestrained, ButtonChecks.NotBlindfolded])
+		addButtonWithChecks("Панели управления", "Нужно найти способ включить протокол техобслуживания", "start", [], [ButtonChecks.NotHandsBlocked, ButtonChecks.NotArmsRestrained, ButtonChecks.NotBlindfolded])
 	if(getFlag("TaviModule.ch3CompletedDoorHack") && !getFlag("TaviModule.ch3CompletedSafeHack")):
-		saynn("There is a safe here that you can also try to hack")
-		addButtonWithChecks("Safe", "Look at the safe and the console", "safe", [], [ButtonChecks.NotHandsBlocked, ButtonChecks.NotArmsRestrained, ButtonChecks.NotBlindfolded])
+		saynn("Здесь есть сейф, который тоже можно попытаться взломать")
+		addButtonWithChecks("Сейф", "Осмотреть сейф и консоль", "safe", [], [ButtonChecks.NotHandsBlocked, ButtonChecks.NotArmsRestrained, ButtonChecks.NotBlindfolded])
 	
 func getPriority():
 	return 0

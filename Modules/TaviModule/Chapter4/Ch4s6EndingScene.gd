@@ -6,189 +6,189 @@ func _init():
 func _run():
 	if(state == ""):
 		aimCameraAndSetLocName("tau_elevator")
-		saynn("You get back into the elevator that brought you there and find a button claiming that it will bring you straight to the spaceship hangars. But you quickly learn that the claims are just that, claims. You hear another distant explosion before the lift grinds to a halt, the fancy lighting gets replaced with intimidating emergency red.")
+		saynn("Вы возвращаетесь в лифт, который привез вас сюда, и обнаруживаете кнопку, обещающую доставить вас прямиком в ангары космических кораблей. Но вскоре выясняется, что это обещание — всего лишь пустой звук. Прежде чем лифт скрежещущей остановкой замирает, вы слышите еще один далекий взрыв, а роскошное освещение сменяется пугающим красным светом аварийных ламп.")
 
-		saynn("And this time there is no kind voice on the intercom to tell you exactly what’s happening. Everyone you ever knew is dead or very far away.")
+		saynn("И на этот раз по внутренней связи не раздается добрый голос, объясняющий, что именно происходит. Все, кого вы когда-либо знали, либо мертвы, либо очень далеко.")
 
-		saynn("Well, no point in waiting, the situation is only gonna get worse from now on. Smoke begins to pour in through all the little gaps of the elevator. Good thing you still have that gas mask.")
+		saynn("Что ж, ждать нет смысла, дальше ситуация будет только ухудшаться. Сквозь все щели в лифте начинает просачиваться дым. Хорошо, что у вас все еще есть противогаз.")
 
-		addButton("Doors", "Force the doors to open", "tavi_forces_doors")
+		addButton("Двери", "Силой открыть двери", "tavi_forces_doors")
 	if(state == "tavi_forces_doors"):
 		aimCameraAndSetLocName("tau_nearelevators")
-		saynn("The doors seem to be unpowered so you extend your claws and force them into the gap in the middle. Ow, the broken hand reminds you of its status. But you just about manage.")
+		saynn("Похоже, на дверях пропало питание, поэтому вы выпускаете когти и вставляете их в щель посередине. Ох, сломанная рука тут же напоминает о себе болью. Но вам почти удается.")
 
-		saynn("Well, this is the floor where your room is. Life always finds an unexpected way to remind you of your past. This time there are fires everywhere though. And the automatic fire extinguishing systems don’t seem to want to engage. Probably because you killed the one who controlled them. But the high temperature isn’t even the worst of your problems. The oxygen is.")
+		saynn("Ну вот, вы на этаже, где находится ваша комната. Жизнь всегда находит неожиданный способ напомнить о прошлом. Вот только на этот раз повсюду пожары. И автоматические системы пожаротушения, кажется, отказываются работать. Вероятно, потому что вы прикончили того, кто ими управлял. Но высокая температура — это еще не самая большая ваша проблема. Проблема в кислороде.")
 
-		saynn("Breathing is pretty much impossible. So you put the gas mask on. It has an oxygen tank with it which should last enough for you to find that ship.")
+		saynn("Дышать практически невозможно. Поэтому вы надеваете противогаз. К нему прилагается кислородный баллон, которого должно хватить, чтобы вы успели добраться до корабля.")
 
-		saynn("You proceed to step through the familiar corridors, looking for.. something. A maintenance tunnel, a ladder, a canteen, anything. You remember there being some kind of room on the other side of this corridor. Maybe it will save you. Maybe not. All the while the station continues to burn around you, some of the metal pillars melt right before your eyes.")
+		saynn("Вы продолжаете шагать по знакомым коридорам, высматривая... что-то. Технический туннель, лестницу, столовую — хоть что-нибудь. Вы помните, что по ту сторону этого коридора должно быть какое-то помещение. Может, оно спасет вас. А может, и нет. Тем временем станция продолжает пылать вокруг вас, и прямо на глазах некоторые металлические колонны начинают плавиться.")
 
-		saynn("This wasn’t looking good..")
+		saynn("Дела выглядели не очень...")
 
-		addButton("Continue", "See what happens next", "tavi_starts_dying")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_starts_dying")
 	if(state == "tavi_starts_dying"):
 		aimCameraAndSetLocName("tau_nearrisharoom")
-		saynn("You’re pretty sure the air pressure begins to plummet as the station is leaking oxygen left and right. And with it, the void gradually consumes the corridors instead. It’s not a good feeling, your whole body begins to.. hurt.")
+		saynn("Вы почти уверены, что давление воздуха начинает стремительно падать — станция протекает, кислород уходит направо и налево. А вместе с ним пустота постепенно поглощает и сами коридоры. Ощущение паршивое: всё ваше тело начинает... ныть.")
 
-		saynn("You walk past Risha’s room, it’s illuminated by scary red lights. So many dead bodies around. It’s the time when the living are jealous of the dead. But you must push on, there it is at the end of this corridor, you can almost see it..")
+		saynn("Вы проходите мимо комнаты Риши, освещенной жутким красным светом. Повсюду столько трупов. Это то самое время, когда живые начинают завидовать мертвым. Но вы должны идти дальше — вот она, в конце коридора, вы уже почти видите её...")
 
-		saynn("Explosions behind you, probably one of the elevators lost its grip and decided to crash into the bottom floor, at least the gravity generator is still working.")
+		saynn("Позади гремят взрывы — вероятно, один из лифтов сорвался с креплений и решил рухнуть на нижний ярус; по крайней мере, гравитационный генератор всё еще работает.")
 
-		addButton("Continue", "See what happens next", "tavi_almost_dies")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_almost_dies")
 	if(state == "tavi_almost_dies"):
 		aimCameraAndSetLocName("taviflashback_nearalien")
 		playAnimation(StageScene.Solo, "allfours")
-		saynn("The whole corridor looks.. bent. Or maybe that’s just your imagination. But at least the fires aren’t a problem, they all extinguished themselves because..")
+		saynn("Весь коридор кажется каким-то... перекошенным. А может, это просто воображение. Но, по крайней мере, огонь больше не проблема — все пламя само собой погасло, потому что...")
 
-		saynn("There is no air around you anymore, only cold vacuum. It’s so cold that the blood in your veins begins to freeze. You drop to your knees and grunt into the mask. Fuck. Right.. No time to panic. You push through the pain and crawl forward, every meter seems like a huge achievement now.")
+		saynn("Вокруг больше нет воздуха, только холодный вакуум. Так холодно, что кровь в жилах начинает замерзать. Вы падаете на колени и хрипите в маску. Блять. Точно... Сейчас не время для паники. Превозмогая боль, вы ползете вперед, и каждый метр теперь кажется великим достижением.")
 
-		saynn("You don’t hear any explosions anymore, just the vibrations. Your heart beats extremely loudly though.")
+		saynn("Взрывов больше не слышно, только вибрация. Но сердце колотится чертовски громко.")
 
-		saynn("With such slow progress you can’t help but to calculate how much more you need to suffer through. And you realize. You’re about halfway.. With no way of knowing if the room at the end of this corridor even has anything.")
+		saynn("При таком медленном прогрессе невольно начинаешь подсчитывать, сколько еще мучений впереди. И тут до тебя доходит. Ты прошел примерно половину... И нет никакой уверенности, что в конце этого коридора тебя вообще что-то ждет.")
 
-		addButton("Continue", "See what happens next", "tavi_prepares_to_die")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_prepares_to_die")
 	if(state == "tavi_prepares_to_die"):
-		saynn("After crawling about 1 meter in the last thirty seconds your body.. gives up on you. Another painful noise escapes from your lips as you collapse onto the cold floor..")
+		saynn("Проползши около метра за последние тридцать секунд, твое тело... просто сдается. С твоих губ срывается очередной болезненный стон, когда ты валишься на холодный пол...")
 
-		saynn("Your gas mask receives a crack on its glass in the process. Hah. Maybe you will die from a lack of oxygen first after all.")
+		saynn("В этот момент на стекле противогаза появляется трещина. Хах. Может, ты все-таки сдохнешь от нехватки кислорода раньше.")
 
-		saynn("The muscles, they don’t wanna listen anymore. You’re still breathing. And your heart still beats. But the blood just fails to transport the oxygen. So.. cold..")
+		saynn("Мышцы... они больше не слушаются. Ты все еще дышишь. Сердце все еще бьется. Но кровь просто не может донести кислород. Так... холодно...")
 
-		saynn("You wonder how warm hell is gonna be.")
+		saynn("Интересно, насколько жарко будет в аду?")
 
-		saynn("The borders of your vision begin to darken. And with that, the rest of the colors go all rainbow. You must be hallucinating..")
+		saynn("Края зрения начинают темнеть. А следом все остальные цвета расплываются радужным пятном. Похоже, у тебя начались галлюцинации...")
 
-		saynn("Then something shiny appears. Shiny and black, like the void that slowly kills you.")
+		saynn("И тут появляется что-то блестящее. Блестящее и черное, словно сама пустота, которая медленно тебя убивает.")
 
-		saynn("It seems to have spotted you.")
+		saynn("Кажется, оно тебя заметило.")
 
-		addButton("Continue", "See what happens next", "tavi_gets_saved")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_gets_saved")
 	if(state == "tavi_gets_saved"):
 		addCharacter("latexParasite")
-		saynn("Whatever it is, it’s crawling towards you now. Is that what you think it is?..")
+		saynn("Что бы это ни было, оно уже ползет к тебе. Ты ведь думаешь, что это именно оно?...")
 
-		saynn("It’s that.. black goo.. the one that attacked you before. Did it come back to finish the job?")
+		saynn("Это та самая... черная жижа... которая напала на тебя раньше. Неужели она вернулась, чтобы закончить начатое?")
 
-		saynn("The parasite goo approaches your hand.. and begins to.. wrap around it, seemingly consuming it. You try to shake off the alien creature but this time you can’t do anything to stop it.")
+		saynn("Паразитическая слизь подбирается к твоей руке... и начинает... обвивать её, словно пожирая. Ты пытаешься стряхнуть инопланетное существо, но на этот раз ты бессильна.")
 
-		saynn("More and more of your arm gets coated with a layer of black shiny goo, almost latex-like.")
+		saynn("Всё больше и больше твоя рука покрывается слоем черной блестящей жижи, почти похожей на латекс.")
 
-		saynn("[say=pc]What are you?..[/say]")
+		saynn("[say=pc]Что ты такое?..[/say]")
 
-		saynn("As it reaches the shoulder, the goo begins to spread to your other limbs, coating your back, chest and your other arm. It’s.. tickling you. But at the same time.. Being tickled is better than having your oxygen evaporated through your skin.")
+		saynn("Достигнув плеча, жижа начинает расползаться по остальным конечностям, покрывая твою спину, грудь и вторую руку. Она... щекочет тебя. Но в то же время... щекотка куда лучше, чем ощущение, будто кислород испаряется прямо сквозь твою кожу.")
 
-		saynn("The goo coats your crotch, you feel it tickling your girly bits. Luckily the goo seems to respect the damaged leotard and doesn’t absorb it. Then the goo starts working on your tail and the legs, creating a layer of shiny black material around them too.")
+		saynn("Жижа обволакивает твою промежность, и ты чувствуешь, как она щекочет твои девчачьи местечки. К счастью, слизь словно уважает твой потрепанный купальник и не впитывает его. Затем жижа принимается за твой хвост и ноги, создавая вокруг них такой же слой блестящего черного материала.")
 
-		saynn("The rest of the goo spreads itself over your head and the gas mask with a layer thin enough for you to be able to see through it.")
+		saynn("Оставшаяся часть жижи распределяется по твоей голове и противогазу тонким слоем, через который ты всё еще можешь видеть.")
 
-		addButton("Continue", "See what happens next", "tavi_saved")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_saved")
 	if(state == "tavi_saved"):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("Whatever the goo did, it saved you from dying. You slowly begin to move again, crawling a bit before getting up. You take a look at your new suit, it’s so shiny.")
+		saynn("Что бы эта жижа ни сделала, она спасла тебе жизнь. Ты медленно начинаешь двигаться, немного поползая, прежде чем подняться на ноги. Ты осматриваешь свой новый костюм — он такой блестящий.")
 
-		saynn("[say=pc]Wow. Thank you.[/say]")
+		saynn("[say=pc]Ого. Спасибо.[/say]")
 
-		saynn("The station is still dying around you though. So you continue on your way. You see the door at the end of the corridor.")
+		saynn("Однако станция вокруг тебя всё еще умирает. Так что ты продолжаешь свой путь. В конце коридора ты видишь дверь.")
 
-		addButton("Continue", "See what happens next", "tavi_boom")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_boom")
 	if(state == "tavi_boom"):
 		playAnimation(StageScene.Solo, "defeat")
 		aimCameraAndSetLocName("tau_endofcorridor")
-		saynn("You approach the door, it says that behind it is a maintenance corridor. Perfect for you to be able to sneak between the floors of the station.")
+		saynn("Вы подходите к двери; на табличке сказано, что за ней находится технический коридор. Идеальное место, чтобы незаметно перемещаться между этажами станции.")
 
-		saynn("But as you open the door, a powerful stream of air blows you back a few meters, soon followed by an explosion that throws you even further. Ow.")
+		saynn("Но как только вы открываете дверь, мощный поток воздуха отбрасывает вас на несколько метров назад, а следом за ним следует взрыв, который швыряет вас еще дальше. Ой.")
 
-		saynn("You quickly get up again before another explosion happens. You heard that one quite well, it made a huge hole in the wall of the station. The wall that was separating you.. from space.")
+		saynn("Вы быстро вскакиваете, пока не прогремел следующий взрыв. Этот вы услышали очень отчетливо — он проделал огромную дыру в стене станции. В той самой стене, что отделяла вас... от открытого космоса.")
 
-		saynn("The newly escaped air searches for more freedom. While also inviting you to visit the vast open space. But the goo saves you by gluing your hind legs to the floor.")
+		saynn("Вырвавшийся наружу воздух жадно ищет свободу, словно приглашая вас отправиться в бескрайнее пространство. Но липкая жижа спасает вам жизнь, намертво приклеив ваши задние лапы к полу.")
 
-		saynn("It feels like the station is completely collapsing at this point. More and more explosions happen all around you. Closer and closer. And if you stay here, you’re gonna be blown to pieces.")
+		saynn("Кажется, станция окончательно разваливается на части. Вокруг гремят взрывы, всё ближе и ближе. Если останетесь здесь, вас просто разнесет в клочья.")
 
-		addButton("Space!", "Jump into space", "tavi_escapes")
+		addButton("Космос!", "Прыгнуть в космос", "tavi_escapes")
 	if(state == "tavi_escapes"):
 		playAnimation(StageScene.Cryopod, "idle", {nopod=true})
 		aimCameraAndSetLocName("tau_openspace")
-		saynn("You take off and run towards the hole in the wall before jumping through. You try to grab onto the station’s outer shell but one of the explosions hits you like a truck and alters your trajectory, flinging you out into the void. Oh no. The last thing you see before losing consciousness is the image of your home station getting smaller. Such a beautiful station.")
+		saynn("Вы срываетесь с места и бежите к дыре в стене, прежде чем прыгнуть в неё. Вы пытаетесь ухватиться за внешнюю обшивку станции, но один из взрывов бьет вас, словно грузовик, меняя траекторию и выбрасывая в пустоту. О нет. Последнее, что вы видите перед тем, как потерять сознание — это как ваша родная станция становится всё меньше и меньше. Какая же она была красивая.")
 
-		saynn("You see the void. Nothingness. But there is still no fitting place for you.")
+		saynn("Перед глазами — пустота. Ничто. Но подходящего места для вас всё еще нет.")
 
-		saynn("As you begin to come back to your senses, you realize that your arm is reaching towards some solar panels without you doing that, the black goo has formed a sticky rope that has leashed you to them.")
+		saynn("Начиная приходить в себя, вы понимаете, что ваша рука сама собой тянется к каким-то солнечным панелям: черная жижа сплелась в липкую веревку, которая привязала вас к ним.")
 
-		saynn("You look at the station.. So much damage. It has already split in half but there are still more and more explosions.")
+		saynn("Ты смотришь на станцию... Столько повреждений. Она уже разломилась пополам, но взрывы продолжают греметь один за другим.")
 
-		saynn("[say=pc]Uh.. what now?..[/say]")
+		saynn("[say=pc]Ох... и что теперь?..[/say]")
 
-		saynn("You’re holding onto a rope that connects you to the station that slowly collapses upon itself before your very eyes. All the while your oxygen tank is running out.")
+		saynn("Ты вцепилась в канат, соединяющий тебя со станцией, которая медленно рушится прямо у тебя на глазах. И всё это время твой кислородный баллон стремительно пустеет.")
 
-		saynn("One of the debris.. Has a strange golden trim all around it. Wait.. Gold? You take a closer look.")
+		saynn("Один из обломков... По его краям проходит странная золотистая кайма. Погоди... Золото? Ты присматриваешься внимательнее.")
 
-		saynn("It’s a spaceship! Floating away from the station on its own. That must be it! But.. How do you get to it?..")
+		saynn("Это космический корабль! Он дрейфует прочь от станции сам по себе. Должно быть, это он! Но... как до него добраться?..")
 
-		addButton("Slingshot yourself", "Take the plunge", "tavi_slingshot")
+		addButton("Использовать эффект рогатки", "Рискнуть всем", "tavi_slingshot")
 	if(state == "tavi_slingshot"):
 		aimCameraAndSetLocName("tau_openspace2")
-		saynn("It’s now or never. You tug on the sticky rope with all your might, pulling yourself towards the solar panels before pushing off of them with your legs, slingshotting yourself in roughly the correct direction.")
+		saynn("Сейчас или никогда. Ты изо всех сил тянешь липкий канат, подтягиваясь к солнечным панелям, а затем отталкиваешься от них ногами, запуская себя в нужном направлении, словно из рогатки.")
 
-		saynn("The goo lets go of the panels, leaving you no longer tethered to anything. You have one chance at this.")
+		saynn("Слизь отрывается от панелей, и ты больше ничем не привязана. У тебя есть только один шанс.")
 
-		saynn("Never did you think that this quiet morning would end up with you drifting through open space while avoiding the debris of your home.")
+		saynn("Ты и представить не могла, что это тихое утро закончится тем, что ты будешь дрейфовать в открытом космосе, уворачиваясь от обломков своего дома.")
 
-		saynn("You’re definitely catching up with the ship.. You just need to grab onto it.. You reach your paw forward..")
+		saynn("Ты определенно настигаешь корабль... Нужно просто ухватиться за него... Ты протягиваешь лапу вперед...")
 
-		addButton("Continue", "See what happens next", "tavi_grabs_onto_ship")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_grabs_onto_ship")
 	if(state == "tavi_grabs_onto_ship"):
 		aimCameraAndSetLocName("tau_directorship")
 		playAnimation(StageScene.Solo, "stand")
-		saynn("The metal is slippery! But the goo got you, reaching out and gluing your paws to it. Yes! You begin crawling around the ship’s outer shell, looking for an entrance. You stumble upon the docking port.")
+		saynn("Металл скользкий! Но слизь подхватывает тебя, вытягиваясь и приклеивая твои лапы к поверхности. Да! Ты начинаешь ползти по обшивке корабля в поисках входа. И вот, ты натыкаешься на стыковочный порт.")
 
-		saynn("You try to open it with your hands but fail. The goo does a smart thing and slips between the doors before forcibly opening them by inflating the part that is inside the gap. Yes! You throw yourself inside and close the doors behind.")
+		saynn("Ты пытаешься открыть его руками, но безуспешно. Слизь действует с умом: она просачивается между створками, а затем силой раздвигает их, раздуваясь внутри зазора. Есть! Ты влетаешь внутрь и захлопываешь за собой двери.")
 
-		saynn("You can stand again, the ship has power. All the lights turn on one by one. The interior is fancy. It’s surely the director’s ship. There is not too much space but it seems to have every room that’s required for long-term space travel. The cockpit has a comfy chair and a few screens.")
+		saynn("Ты снова можешь стоять — у корабля есть питание. Огни зажигаются один за другим. Интерьер выглядит роскошно. Это наверняка корабль директора. Места не так уж много, но, похоже, здесь есть всё необходимое для длительных космических путешествий. В кабине пилота стоит удобное кресло и несколько экранов.")
 
-		saynn("[say=pc]Wow. I’m alive.. Fuck..[/say]")
+		saynn("[say=pc]Ох... Я жива... Блядь...[/say]")
 
-		saynn("There is air here too. So the black goo begins sliding off of your body, exposing the leotard underneath.")
+		saynn("Здесь тоже есть воздух. Черная слизь начинает сползать с твоего тела, обнажая под ней леотард.")
 
-		addButton("Continue", "See what happens next", "latexParasite_leaves")
+		addButton("Продолжить", "Смотреть, что будет дальше", "latexParasite_leaves")
 	if(state == "latexParasite_leaves"):
 		removeCharacter("latexParasite")
 		playAnimation(StageScene.Solo, "sit")
-		saynn("You look at the shiny goo. It seems to be slowly creeping towards the exit.")
+		saynn("Ты смотришь на блестящую слизь. Кажется, она медленно ползет к выходу.")
 
-		saynn("[say=pc]You’re not gonna stay?[/say]")
+		saynn("[say=pc]Ты не останешься?[/say]")
 
-		saynn("The goo wiggles side to side.")
+		saynn("Слизь виляет из стороны в сторону.")
 
-		saynn("[say=pc]You saved my life you know. Many times. Sorry for hurting you.[/say]")
+		saynn("[say=pc]Ты ведь знаешь, ты спасла мне жизнь. Много раз. Прости, что причинила тебе боль.[/say]")
 
-		saynn("The goo vibrates happily. And then it proceeds to slip between the doors of the docking port before jumping into the open space.")
+		saynn("Слизь довольно вибрирует. А затем она просачивается между створками стыковочного порта и прыгает в открытый космос.")
 
-		saynn("[say=pc]Huh. I should leave too.[/say]")
+		saynn("[say=pc]Хм. Пожалуй, мне тоже пора сваливать.[/say]")
 
-		saynn("You step into the cockpit and sit on the chair. Your paws begin pressing random buttons to see what will happen. One of them engages the engines. Then you find the slider that controls their power and raise it until the ship begins to move. Away from the destroyed space station. And towards.. Who cares, the world is so big, there is no way you won’t stumble upon something interesting.")
+		saynn("Ты заходишь в кокпит и плюхаешься в кресло. Твои лапы начинают хаотично нажимать на кнопки, просто чтобы посмотреть, что будет. Одна из них заводит двигатели. Затем ты находишь ползунок управления мощностью и тянешь его вверх, пока корабль не начинает движение. Прочь от разрушенной космической станции. И навстречу... Да какая разница, мир такой огромный, ты просто не сможешь не наткнуться на что-нибудь интересное.")
 
-		addButton("Continue", "See what happens next", "tavi_tricks_elena")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_tricks_elena")
 	if(state == "tavi_tricks_elena"):
 		addCharacter("elena")
-		saynn("A few hours pass.")
+		saynn("Проходит несколько часов.")
 
-		saynn("You already feel at home. One of the screens above your chair shows lots of commands scrolling down. And another one shows one of AlphaCorp’s extranet websites with so many new things for you to learn.")
+		saynn("Ты уже чувствуешь себя как дома. На одном из экранов над креслом бесконечным потоком бегут команды. А на другом открыт один из сайтов экстранета AlphaCorp — столько всего нового еще предстоит изучить.")
 
-		saynn("You sit in the chair, drinking orange juice that you found in the fridge.")
+		saynn("Ты сидишь в кресле и потягиваешь апельсиновый сок, который нашла в холодильнике.")
 
-		saynn("[say=pc]So, ready to tell me everything?[/say]")
+		saynn("[say=pc]Ну что, готова выложить мне всё как на духу?[/say]")
 
-		saynn("[say=elena]I deleted everything, Tavi! You won’t get a single name out of me.[/say]")
+		saynn("[say=elena]Я всё удалила, Тави! С тебя не вытянуть ни единого имени![/say]")
 
-		saynn("[say=pc]Well, it’s good that I made a few extra backups before turning you on~.[/say]")
+		saynn("[say=pc]Что ж, хорошо, что перед тем как тебя включить, я сделала несколько дополнительных бэкапов~.[/say]")
 
-		saynn("[say=elena]What? Why.. no..[/say]")
+		saynn("[say=elena]Что? Почему... нет...[/say]")
 
-		saynn("[say=pc]You know. I think this is the beginning of a very fruitful relationship, Elena~.[/say]")
+		saynn("[say=pc]Знаешь, мне кажется, это начало очень плодотворных отношений, Елена~.[/say]")
 
-		saynn("And that.. is how Tavi’s story.. began. But that’s where Tavi stopped telling it to you.")
+		saynn("И так.. началась.. история Тави. Но на этом Тави решила.. закончить свой рассказ.")
 
-		addButton("Continue", "See what happens next", "end_flashback")
+		addButton("Продолжить", "Смотреть, что будет дальше", "end_flashback")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

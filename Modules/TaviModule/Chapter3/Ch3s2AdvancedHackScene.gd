@@ -6,24 +6,24 @@ func _init():
 func _run():
 
 	if(state == ""):
-		saynn("You take a look at a sturdy safe. It doesn’t even have your usual twists and nobs, it’s just a heavy-looking metal box with a door that doesn’t even have a handle. But you notice some wires connecting it to one of the consoles here. Cutting them obviously wouldn’t accomplish anything so you have to hack the console if you want to see what’s inside.")
+		saynn("Ты осматриваешь массивный сейф. У него даже нет привычных ручек или дисков — просто тяжелый металлический ящик с дверцей, у которой нет даже ручки. Но ты замечаешь провода, соединяющие его с одной из консолей. Очевидно, что просто перерезать их ничего не даст, так что, если хочешь заглянуть внутрь, придется взломать консоль.")
 
-		saynn("You get a feeling that this safe doesn’t have anything too important but it could be a nice practice for your hacking skills. This console is probably much harder to hack though.")
+		saynn("У тебя есть предчувствие, что в этом сейфе нет ничего сверхважного, но это может стать отличной тренировкой для твоих навыков взлома. Впрочем, эта консоль, скорее всего, окажется куда сложнее.")
 
-		saynn("Do you wanna try hacking this console?")
+		saynn("Хочешь попробовать взломать эту консоль?")
 
-		addButton("Yes", "Try to hack it", "screen")
-		addButton("Nah", "You did enough hacking", "endthescene")
+		addButton("Да", "Попробовать взломать", "screen")
+		addButton("Неа", "Хватит взлома", "endthescene")
 
 
 	if(state == "after_completed"):
 		setFlag("TaviModule.ch3CompletedDoorHack", true)
 		
-		saynn("Success! You hear mechanical noises coming from the safe as the gears inside begin to turn against each other, slowly opening the door and revealing you the contents..")
+		saynn("Успех! Из сейфа доносятся механические звуки: внутренние шестерни начинают вращаться, медленно отворяя дверцу и являя тебе содержимое...")
 
 		# (scene ends)
-		addButton("Look", "See what’s inside", "endthescene")
-		#addButton("Look at", "See what’s inside", "look_at")
+		addButton("Смотреть", "Посмотреть, что внутри", "endthescene")
+		#addButton("Осмотреть", "Посмотреть, что внутри", "look_at")
 
 func _react(_action: String, _args):
 	if(_action == "screen"):

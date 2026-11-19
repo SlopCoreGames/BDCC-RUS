@@ -8,509 +8,509 @@ func _run():
 		addCharacter("jaxontau")
 		playAnimation(StageScene.Duo, "stand", {npc="jaxontau"})
 		aimCameraAndSetLocName("taviroom_near")
-		saynn("You follow Jaxon as you walk through the corridors back to your room.")
+		saynn("Вы идете вслед за Джексоном по коридорам обратно к своей комнате.")
 
-		saynn("[say=pc]Why is that guy so.. cold?[/say]")
+		saynn("[say=pc]Почему этот парень такой... холодный?[/say]")
 
-		saynn("Jaxon chuckles softly.")
+		saynn("Джексон тихо посмеивается.")
 
-		saynn("[say=jaxontau]That’s what time does to people, Tavi. The director has to make a lot of tough decisions every day.[/say]")
+		saynn("[say=jaxontau]Это время с людьми делает, Тави. Директору приходится каждый день принимать много трудных решений.[/say]")
 
-		saynn("[say=pc]Decisions? You’re saying he won’t just send us as meat to the frontlines?[/say]")
+		saynn("[say=pc]Решений? Ты хочешь сказать, что он не отправит нас просто как пушечное мясо на передовую?[/say]")
 
-		saynn("You approach your room. The guard stops and looks at you, his hand rests on your shoulder.")
+		saynn("Вы подходите к своей комнате. Охранник останавливается и смотрит на тебя, положив руку тебе на плечо.")
 
-		saynn("[say=jaxontau]I trust him not to, Tavi. It’s his life project after all.[/say]")
+		saynn("[say=jaxontau]Я верю, что он этого не сделает, Тави. В конце концов, это дело всей его жизни.[/say]")
 
-		saynn("[say=pc]Yeah, this station has been my entire life so far too.[/say]")
+		saynn("[say=pc]Да, эта станция и до сих пор была всей моей жизнью.[/say]")
 
-		saynn("He tilts his head a bit and puts his hands on your cheek, making you look at him.")
+		saynn("Он слегка наклоняет голову и кладет ладони тебе на щеки, заставляя посмотреть ему в глаза.")
 
-		saynn("[say=jaxontau]A huge war is happening, Tavi. And we need the best weapons we can get.[/say]")
+		saynn("[say=jaxontau]Идет огромная война, Тави. И нам нужно лучшее оружие, которое только можно достать.[/say]")
 
-		saynn("You tilt your head down.")
+		saynn("Ты склоняешь голову.")
 
-		saynn("[say=pc]I know..[/say]")
+		saynn("[say=pc]Знаю..[/say]")
 
-		saynn("[say=jaxontau]We all will collectively exhale once the Syndicate is defeated.. Have a good rest, Tavi.[/say]")
+		saynn("[say=jaxontau]Мы все вздохнем с облегчением, когда Синдикат будет разбит.. Хорошего отдыха, Тави.[/say]")
 
-		saynn("He opens the airlock to your room and invites you inside. You just nod and step into your room. Still the same white sterile room. At least you had some fun today.")
+		saynn("Он открывает шлюз твоей комнаты и приглашает тебя войти. Ты просто киваешь и заходишь внутрь. Всё та же стерильно-белая комната. По крайней мере, сегодня ты хоть немного развлеклась.")
 
-		addButton("Bed", "Time for some rest", "get_on_bed")
+		addButton("Кровать", "Пора отдохнуть", "get_on_bed")
 	if(state == "get_on_bed"):
 		addCharacter("jaxonbrothertau")
 		playAnimation(StageScene.Duo, "stand", {pc="jaxontau", npc="jaxonbrothertau"})
-		saynn("You approach your bed and grab the trusty datapad. Then you lie down and open random hacking articles, the best way to kill time for you.")
+		saynn("Ты подходишь к кровати и берешь свой верный датапад. Затем ложишься и открываешь статьи по хакингу вразнобой — для тебя это лучший способ убить время.")
 
-		saynn("You notice Jaxon walking past your room. And as he does that, he meets with another guard. You can’t help but to get curious because they instantly go for a hug.")
+		saynn("Ты замечаешь, как Джаксон проходит мимо твоей комнаты. И в этот момент он встречает другого охранника. Ты невольно начинаешь любопытствовать, потому что они тут же бросаются обниматься.")
 
-		saynn("The room is soundproof. And Elena told you not to play around with intercom spoofing. But you’re so-o-o curious about what they’re talking about, it’s killing you..")
+		saynn("Комната звукоизолирована. И Елена предупреждала тебя не баловаться со спуфингом интеркома. Но тебе так-к-к любопытно, о чем они говорят, что это просто сводит тебя с ума..")
 
-		addButton("Eavesdrop", "Listen in on their conversation", "eavesdrop")
+		addButton("Подслушать", "Подслушать их разговор", "eavesdrop")
 	if(state == "eavesdrop"):
-		saynn("You grab your datapad and run the intercom spoofing program.")
+		saynn("Ты хватаешь датапад и запускаешь программу для взлома интеркома.")
 
-		saynn("[say=jaxontau]How is life treating you brother? How many girls did you fuck already~?[/say]")
+		saynn("[say=jaxontau]Ну как жизнь, брат? Сколько девок уже оттрахал~?[/say]")
 
-		saynn("[say=jaxonbrothertau]Oh fuck off, Jaxon. Everyone keeps turning me down, these bitches.[/say]")
+		saynn("[say=jaxonbrothertau]Да отъебись ты, Джексон. Все эти сучки только и делают, что отшивают меня.[/say]")
 
-		saynn("Jaxon chuckles and taps on the other guard’s shoulder.")
+		saynn("Джексон посмеивается и хлопает другого охранника по плечу.")
 
-		saynn("[say=jaxontau]Don’t be so mean, the girls here just wanna work without you annoying them constantly. I’m sure you will find someone.[/say]")
+		saynn("[say=jaxontau]Да не будь ты таким злюкой, девчонки здесь просто хотят работать, чтобы ты не донимал их постоянно. Уверен, ты еще найдешь кого-нибудь.[/say]")
 
-		saynn("[say=jaxonbrothertau]Uh huh. Eventually. You already have kids, man. I don’t want kids. But fuck. Call me jealous. I don’t wanna die alone.[/say]")
+		saynn("[say=jaxonbrothertau]Ага, когда-нибудь. У тебя уже дети есть, мужик. А я детей не хочу. Но, блядь... зови меня завистником. Просто не хочется сдохнуть в одиночестве.[/say]")
 
-		saynn("Jaxon tilts his head down.")
+		saynn("Джексон понуро опускает голову.")
 
-		saynn("[say=jaxontau]Yeah.. So sad that I can’t see my kids that much lately. I loved playing with them, seeing them happy makes my heart warm.[/say]")
+		saynn("[say=jaxontau]Да уж... Так грустно, что в последнее время я почти не вижу своих детей. Обожаю с ними играть, когда они счастливы, у меня прямо сердце теплеет.[/say]")
 
-		saynn("[say=jaxonbrothertau]How old are they, by the way? 6 and 4 if I remember right?[/say]")
+		saynn("[say=jaxonbrothertau]Кстати, сколько им лет? Шесть и четыре, если не ошибаюсь?[/say]")
 
-		saynn("Jaxon smiles like only a father can. You look around your white feature-less room.")
+		saynn("Джексон улыбается так, как умеют только отцы. Ты оглядываешь свою белую безликую комнату.")
 
-		saynn("[say=jaxontau]My girl turned 7 last week. They grow so fast. I sent Jill some credits to buy her a present. She chose a dress. I have the picture here, she looks so nice in it, look at that smile.[/say]")
+		saynn("[say=jaxontau]Дочке на прошлой неделе исполнилось семь. Растут так быстро. Я скинул Джилл немного кредитов на подарок. Она выбрала платье. Вот фото, она в нем такая милашка, только посмотри на эту улыбку![/say]")
 
-		saynn("Jaxon pulls up a picture on his datapad that you can’t quite see. You only see that the girl’s dress is red. You look at your white leotard.")
+		saynn("Джексон выводит на свой датапад фотографию, которую ты не можешь разглядеть до конца. Ты видишь лишь, что платье на девушке красное. Ты переводишь взгляд на своё белое леотардо.")
 
-		saynn("[say=jaxonbrothertau]Cool. Totally. Why are you here and not with them I wonder.[/say]")
+		saynn("[say=jaxonbrothertau]Круто. Вообще зашибись. Интересно, почему ты здесь, а не с ними?[/say]")
 
-		saynn("[say=jaxontau]You know why, bro. This job pays very well. I want my wife and kids to live a good life, man. Unlike the life that we got.[/say]")
+		saynn("[say=jaxontau]Сам знаешь, бро. Эта работа чертовски хорошо платит. Я хочу, чтобы у моей жены и детей была достойная жизнь, чувак. Не такая, как у нас сейчас.[/say]")
 
-		saynn("From that moment you let go of the datapad and turn away, to stare at the wall. Inside you there is this lump of resentment, weighing you down. You try to keep your eyes dry, now is not the time for this. There is never a good time for this..")
+		saynn("В этот момент ты отпускаешь датапад и отворачиваешься, уставившись в стену. Внутри тебя комом растёт обида, придавливая к земле. Ты стараешься не давать глазам намокнуть — сейчас не время для этого. Впрочем, подходящего момента не бывает никогда...")
 
-		saynn("You gotta be strong, Tavi..")
+		saynn("Нужно быть сильной, Тави...")
 
-		saynn("Time to take a nap..")
+		saynn("Пора вздремнуть...")
 
-		addButton("Sleep", "Maybe tomorrow will be better", "take_a_nap")
+		addButton("Спать", "Может, завтра будет лучше.", "take_a_nap")
 	if(state == "take_a_nap"):
 		addCharacter("directortau")
 		removeCharacter("jaxontau")
 		playAnimation(StageScene.Duo, "stand", {pc = "directortau", npc="jaxonbrothertau"})
-		saynn("At least the bed is nice, you swiftly slip into the land of dreams.")
+		saynn("По крайней мере, кровать удобная, и ты быстро проваливаешься в царство снов.")
 
-		saynn("Rest helps you reset your mind, all the draining thoughts are put away on the backburner. You feel.. calm.")
+		saynn("Отдых помогает перезагрузить разум, все изматывающие мысли отходят на второй план. Ты чувствуешь... спокойствие.")
 
-		saynn("A noise makes your feline ears perk.. a voice. Is it time to rise?")
+		saynn("Какой-то звук заставляет твои кошачьи ушки дернуться... голос. Неужели пора вставать?")
 
-		saynn("[say=jaxonbrothertau]My brother is responsible for this block, why don’t you ask him?[/say]")
+		saynn("[say=jaxonbrothertau]За этот блок отвечает мой брат, так почему бы тебе не спросить у него?[/say]")
 
-		saynn("Oh, the spoofing program is still on, messing with your sleep. Probably better to turn it off before Elena spots you again. Without even opening your eyes, your paws grab the datapad and blindly search for the little cross in the corner, damn touch displays.")
+		saynn("О, программа спуфинга всё ещё работает, сбивая твой сон. Наверное, лучше выключить её, пока Елена снова тебя не застукала. Даже не открывая глаз, ты нащупываешь лапой датапад и слепо ищешь маленький крестик в углу — чертовы сенсорные дисплеи.")
 
-		saynn("[say=directortau]I believe that your brother wouldn’t be able to.. carry through.. with this task. He has a level of attachment to her.[/say]")
+		saynn("[say=directortau]Полагаю, твой брат не смог бы... довести... это дело до конца. Он слишком привязан к ней.[/say]")
 
-		saynn("You’re still drowsy, your head struggles to make sense out of what you’re hearing. You slowly open your eyes and see the director and Jaxon’s brother standing behind the glass of your room.")
+		saynn("Сонливость всё ещё берет своё, голова с трудом пытается осмыслить услышанное. Ты медленно открываешь глаза и видишь директора и брата Джексона, стоящих по ту сторону стекла твоей комнаты.")
 
-		saynn("[say=directortau]A level of attachment that would cloud his head, preventing him from seeing the bigger picture.[/say]")
+		saynn("[say=directortau]Такая привязанность, которая затуманивает ему разум, мешая увидеть общую картину.[/say]")
 
-		saynn("[say=jaxonbrothertau]What’s the task though?[/say]")
+		saynn("[say=jaxonbrothertau]Но в чём заключается задача?[/say]")
 
-		saynn("Your paw stops searching for the close button. A few seconds of silence pass. Director steps closer to the other guy.")
+		saynn("Твоя лапа перестаёт искать кнопку закрытия. Проходит несколько секунд тишины. Директор делает шаг ближе к другому парню.")
 
-		saynn("[say=directortau]I’m marking Project Toxic Virus as a failed one.[/say]")
+		saynn("[say=directortau]Я помечаю проект «Токсичный вирус» как провальный.[/say]")
 
-		saynn("[say=pc]Huh?..[/say]")
+		saynn("[say=pc]А?..[/say]")
 
-		saynn("The sleepiness quickly fades away. You carefully track the director’s every word from now on.")
+		saynn("Сонливость мгновенно улетучивается. Отныне ты внимательно ловишь каждое слово директора.")
 
-		saynn("[say=jaxonbrothertau]Isn’t that project the ugly cat over there?[/say]")
+		saynn("[say=jaxonbrothertau]Разве этот проект — не та самая уродливая кошка вон там?[/say]")
 
-		saynn("[say=directortau]Yes. I wouldn’t call her ugly but the value that can be extracted from her isn’t enough to cover the costs.[/say]")
+		saynn("[say=directortau]Да. Я бы не назвала её уродливой, но выгоды от неё столько, что едва хватит на покрытие расходов.[/say]")
 
-		saynn("[say=jaxonbrothertau]So what do you want to be done, Sir?[/say]")
+		saynn("[say=jaxonbrothertau]Так что вы хотите, чтобы было сделано, сэр?[/say]")
 
-		saynn("You’re not even sure how to react yet. Are they gonna let you go? Or..")
+		saynn("Ты даже не знаешь, как реагировать. Тебя отпустят? Или...")
 
-		saynn("[say=directortau]All results need to be destroyed.[/say]")
+		saynn("[say=directortau]Все результаты должны быть уничтожены.[/say]")
 
-		saynn("Your heart sinks. You sit on the bed and begin nervously fidget around. Your mind is racing. What should you do? You still have time, you gotta do something. But you’re just in an empty room. On a space station that no longer welcomes you.")
+		saynn("Сердце уходит в пятки. Ты садишься на кровать и начинаешь нервно ерзать. Мысли скачут. Что же делать? Время еще есть, нужно что-то предпринять. Но ты заперта в пустой комнате. На космической станции, которая тебе больше не рада.")
 
-		saynn("[say=jaxonbrothertau]Destroyed?[/say]")
+		saynn("[say=jaxonbrothertau]Уничтожены?[/say]")
 
-		saynn("[say=directortau]Yes, your task is to deal with Tavi. Leave no traces of her body ever existing.[/say]")
+		saynn("[say=directortau]Да, твоя задача — разобраться с Тави. Сделай так, чтобы не осталось ни единого следа того, что её тело когда-либо существовало.[/say]")
 
-		saynn("You hear a soft but evil chuckle.")
+		saynn("Ты слышишь тихий, но зловещий смешок.")
 
-		saynn("[say=jaxonbrothertau]Sure, I can do that. But I have a question.[/say]")
+		saynn("[say=jaxonbrothertau]Конечно, я справлюсь. Но у меня есть вопрос.[/say]")
 
-		saynn("The datapad! You grab it and begin trying to manipulate the room controls. Maybe you can lock the doors, close the windows. There is gotta be something. But no, it looks like they patched out all the exploits that you were using. You have zero control. They only left this stupid spoofing exploit. You begin to panic.")
+		saynn("Датапад! Ты хватаешь его и начинаешь лихорадочно пытаться взломать управление комнатой. Может, получится запереть двери или закрыть окна? Должно же быть хоть что-то! Но нет, похоже, они пофиксили все уязвимости, которыми ты пользовалась. У тебя полный ноль контроля. Они оставили только этот дурацкий эксплойт для спуфинга. Тебя начинает бить паника.")
 
-		saynn("[say=directortau]Yes?[/say]")
+		saynn("[say=directortau]Да?[/say]")
 
-		saynn("[say=jaxonbrothertau]Can I have some.. fun.. with her first? Who cares if the body is gonna be burned to ashes anyways, right?[/say]")
+		saynn("[say=jaxonbrothertau]Можно мне сначала немного... развлечься с ней? Какая разница, если тело всё равно сгорит дотла, а?[/say]")
 
-		saynn("[say=directortau]I don’t care, just get the task done.[/say]")
+		saynn("[say=directortau]Мне плевать, просто выполни задачу.[/say]")
 
-		saynn("The guard chuckles louder as he begins to slowly approach your cell, holding his energy pistol. Time slows down, you begin to see everything in its miniscule details.")
+		saynn("Охранник смеется еще громче и начинает медленно приближаться к твоей камере, сжимая в руке энергетический пистолет. Время словно замедляется, и ты начинаешь замечать каждую мельчайшую деталь.")
 
-		saynn("Your heart beats insanely fast. Yours and director’s gazes collide. He sees fear in your big open eyes. He steps closer to the intercom.")
+		saynn("Сердце бешено колотится. Твой взгляд встречается со взглядом директора. Он видит страх в твоих широко распахнутых глазах. Он делает шаг ближе к интеркому.")
 
-		saynn("[say=directortau]I know you can hear me, Tavi. You’re a smart girl. Too smart for your own good. You might not like my decision. But AlphaCorp has been built on hard decisions. In the end, you’re just a weapon, a tool in the corporation’s hand. And when the tool does not satisfy the requirements anymore, you gotta replace it. The war machine must work at its peak efficiency.[/say]")
+		saynn("[say=directortau]Я знаю, что ты меня слышишь, Тави. Ты умная девочка. Слишком умная для своего же блага. Тебе может не понравиться моё решение. Но АльфаКорп строилась на жестких решениях. В конечном счете, ты всего лишь оружие, инструмент в руках корпорации. А когда инструмент перестает отвечать требованиям, его нужно заменить. Военная машина должна работать на пике своей эффективности.[/say]")
 
-		saynn("These words are like a knife cutting through your whole life.. You get up, your legs and arms are shaking. There is gotta be something that will save you.. Maybe you can hide in the shower and wait for Jaxon or Elena. Maybe you can..")
+		saynn("Эти слова вонзаются в твою жизнь, словно нож... Ты встаешь, руки и ноги дрожат. Должно же быть что-то, что спасет тебя... Может, спрятаться в душе и ждать Джексона или Елену? А может, ты сможешь...")
 
-		addButton("Continue", "See what happens next", "tavi_gets_shot")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_gets_shot")
 	if(state == "tavi_gets_shot"):
 		removeCharacter("directortau")
 		playAnimation(StageScene.Duo, "defeat", {npc="jaxonbrothertau", npcAction="firepistol"})
-		saynn("Suddenly the airlock to your room opens and the guard aims his pistol at you before pulling the trigger without much thought. The strong laser beam goes straight through the datapad that you’re holding, making a hole in it, before hitting you in the chest, leaving a nasty scorch mark.")
+		saynn("Внезапно шлюз твоей комнаты распахивается, и охранник, не особо задумываясь, наводит на тебя пистолет и жмет на курок. Мощный лазерный луч прошивает насквозь датапад, который ты держишь в руках, оставляя в нем дыру, а затем попадает тебе в грудь, оставляя скверный ожог.")
 
-		saynn("You let out a cry before collapsing onto the floor. The pain is immeasurable, it echoes through both your mind and heart. The sudden understanding that this is how it’s gonna end for you is settling in your head, corrupting your every thought.")
+		saynn("Ты вскрикиваешь и валишься на пол. Боль невыносима, она отдается эхом и в разуме, и в сердце. В голове начинает оседать внезапное осознание того, что именно так всё и закончится, отравляя каждую твою мысль.")
 
-		saynn("The director sees you on the floor and furrows his brows before nodding to himself and leaving the scene shortly after.")
+		saynn("Директор видит тебя на полу, хмурит брови, затем кивает самому себе и вскоре покидает сцену.")
 
-		saynn("[say=pc]P-please.. J-Just let me go, no one will know..[/say]")
+		saynn("[say=pc]П-пожалуйста.. П-просто отпусти меня, никто не узнает..[/say]")
 
-		saynn("The guard laughs as he slowly steps closer to you. He puts his gun away behind his belt before producing some cuffs instead.")
+		saynn("Охранник смеется, медленно приближаясь к тебе. Он убирает пушку за пояс, а вместо неё достает наручники.")
 
-		saynn("[say=jaxonbrothertau]That’s the point, cat. Everyone will know how good of a guard I am, doing hard tasks without asking hard questions.[/say]")
+		saynn("[say=jaxonbrothertau]В этом-то и суть, кошечка. Все узнают, какой из меня отличный охранник — выполняю грязную работу, не задавая лишних вопросов.[/say]")
 
-		saynn("You try to crawl away but the pain.. You’re in literal agony. Maybe.. Maybe your pills will soften the suffering that you’re going through? You try to pull out the pill bottle but the guard sees it and kicks your paw with his boot, causing all the pills to scatter throughout the whole floor. Fuck..")
+		saynn("Ты пытаешься отползти, но боль... Ты в буквальном аду. Может... может, таблетки хоть немного смягчат страдания? Ты пытаешься выхватить пузырек с лекарством, но охранник замечает это и пинает твою лапу сапогом, отчего все таблетки разлетаются по всему полу. Блять...")
 
-		addButton("Continue", "See what happens next", "tavi_gets_cuffed")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_gets_cuffed")
 	if(state == "tavi_gets_cuffed"):
 		playAnimation(StageScene.SexMissionary, "tease", {pc="jaxonbrothertau", npc="pc"})
-		saynn("You grunt as he forcefully wrenches your paws behind your back before cuffing them together with cuffs, rendering you even more helpless. Then he begins to remove some pieces of his armor.")
+		saynn("Ты кряхтишь, когда он силой заламывает твои лапы за спину и стягивает их наручниками, делая тебя еще более беспомощной. Затем он начинает снимать элементы своей брони.")
 
-		saynn("[say=jaxonbrothertau]I heard that your cunt wasn’t used even once. Time for you to grow up.[/say]")
+		saynn("[say=jaxonbrothertau]Я слышал, что твою киску ни разу еще не использовали. Пора тебе повзрослеть.[/say]")
 
-		saynn("The unfairness of this whole situation, it angers you. But the desperation and pain are winning over by a long shot. You are trying to resist but the guy easily overpowers you and pins you to the cold floor before forcefully spreading your legs and working on exposing his cock.")
+		saynn("Несправедливость всей этой ситуации приводит тебя в ярость. Но отчаяние и боль берут верх с огромным отрывом. Ты пытаешься сопротивляться, но парень легко одолевает тебя и прижимает к холодному полу, прежде чем с силой раздвинуть твои ноги, готовясь выпустить свой член.")
 
-		saynn("Is that how Tavi is gonna die? Betrayed and abused. That can’t be right.. But what choices do you have now? The room.. is soundproof. The guy forces himself on you, his hard dick already rubbing against your leotard, the last little barrier that keeps him from having it his way with you.")
+		saynn("Неужели это то, как Тави умрет? Преданная и изнасилованная. Это не может быть правдой... Но какой у тебя сейчас выбор? Комната... звукоизолирована. Парень навязывает тебе себя, его твердый член уже трется о твое леотардо — последний барьер, мешающий ему взять тебя так, как он хочет.")
 
-		saynn("Your mind is telling you that ”YOU GOTTA DO SOMETHING, TAVI!”. In desperation, you kick that fucker off of you but that just makes him more eager. You try to struggle out of the cuffs, rattling the chain while hitting them against the floor. No give.. The guy slaps your face and reaches out to shift the leotard’s crotch part to the side, already guiding his cock.. Tears begin to stream down your cheeks.")
+		saynn("Твой разум кричит: «НУЖНО ЧТО-ТО ДЕЛАТЬ, ТАВИ!». В отчаянии ты пинаешь этого ублюдка, но это лишь раззадоривает его. Ты пытаешься вырваться из наручников, гремя цепью и ударяя ею о пол. Бесполезно... Парень дает тебе пощечину и тянется к тебе, сдвигая ластовицу леотардо в сторону и уже направляя свой член... По твоим щекам начинают катиться слезы.")
 
-		saynn("[say=jaxonbrothertau]Stupid bitch.[/say]")
+		saynn("[say=jaxonbrothertau]Тупая сучка.[/say]")
 
-		saynn("All your choices led up to this exact moment. Of nothingness. But did you really do anything to combat this unfair life, Tavi? Or were you just going along with the flow, picking the best out of the worst options that you were given? Maybe.. Maybe it’s time to do something about that? Maybe it’s time to change?")
+		saynn("Все твои решения вели именно к этому моменту. К пустоте. Но действительно ли ты что-то сделала, чтобы бороться с этой несправедливой жизнью, Тави? Или ты просто плыла по течению, выбирая лучшее из худших вариантов, которые тебе доставались? Может быть... может, пришло время что-то с этим сделать? Может, пора измениться?")
 
-		addButton("Resist", "It’s now or never.", "tavi_understands")
-		addDisabledButton("Give up", "Never")
+		addButton("Сопротивляться", "Сейчас или никогда.", "tavi_understands")
+		addDisabledButton("Сдаться", "Никогда")
 	if(state == "tavi_understands"):
-		saynn("All your memories rush through your head. You always dreamed of becoming a soldier for AlphaCorp. But now you realize, it’s all lies.. it’s them who made you want that. And the unfairness of all of this..")
+		saynn("Все воспоминания проносятся в голове. Ты всегда мечтала стать солдатом «АльфаКорп». Но теперь ты понимаешь — всё это ложь... это они внушили тебе это желание. И вся эта несправедливость...")
 
-		saynn("With all your might, you kick the guy off of you again to buy you some time. You’re crawling away, looking around while trying to break the cuffs against the floor. You hear something clicking inside them but that’s not enough. Your wounds hurt like hell but you don’t give a fuck. You’re literally doing everything you can. The guy pins you again.")
+		saynn("Из последних сил ты снова пинаешь парня, чтобы выиграть время. Ты ползешь прочь, озираясь по сторонам и пытаясь разбить наручники о пол. Ты слышишь какой-то щелчок внутри них, но этого мало. Раны чертовски болят, но тебе на это глубоко насрать. Ты буквально делаешь всё возможное. Парень снова прижимает тебя к земле.")
 
-		saynn("[say=jaxonbrothertau]If you want rough, fine. Don’t complain later, whore.[/say]")
+		saynn("[say=jaxonbrothertau]Хочешь пожестче? Ладно. Только потом не ной, шлюха.[/say]")
 
-		saynn("He puts his hands around your neck and starts choking you out. You grit your teeth while you try to kick him off again but this time it doesn’t work, his knees hold your legs pinned too. You’re stuck in one spot, your green toxic blood quickly losing oxygen due to your struggling.")
+		saynn("Он обхватывает твою шею руками и начинает душить. Ты стискиваешь зубы, пытаясь снова сбросить его, но на этот раз не выходит — его колени намертво прижимают твои ноги. Ты застряла на месте, и твоя зеленая токсичная кровь быстро теряет кислород из-за твоей борьбы.")
 
-		saynn("If only the cuffs weren’t there.. You bash them against the floor.. again and again.. But the metal, no matter how much you smash it, won’t change. It’s you who’s gotta change..")
+		saynn("Если бы только не эти наручники... Ты бьешь ими о пол... снова и снова... Но металл, сколько его ни бей, не поддается. Это тебе придется измениться...")
 
-		saynn("As your last ditch effort, you begin to desperately try to pull your paw out of the cuff. The stupid big finger is in the way. You let out a silent deafening scream as you push through, continuing to pull the hand out. Something inside your paw snaps with a nasty crack, one of the bones. And then again. But.. You’re making progress. Almost instantly, you apply all the strength that you have left in you and yank the hand out of the cuff! Something inside your palm is broken but that’s nothing compared to the pain of your heart.")
+		saynn("В качестве последней отчаянной попытки ты начинаешь изо всех сил вырывать лапу из наручника. Этот тупой огромный палец всё мешает. Ты издаешь беззвучный, оглушительный крик, продолжая проталкивать руку наружу. Внутри лапы с мерзким хрустом ломается кость. А затем еще одна. Но... прогресс есть. Почти мгновенно ты вкладываешь все оставшиеся силы и с рывком вырываешь руку из кандалов! В ладони что-то сломано, но это ничто по сравнению с болью в твоем сердце.")
 
-		saynn("Time for you to grow up. Close your eyes if you’re not ready for this.")
+		saynn("Пора повзрослеть. Закрой глаза, если еще не готов.")
 
-		addButton("Do it", "It’s now.", "tavi_kills_dude")
+		addButton("Сделай это", "Пора.", "tavi_kills_dude")
 	if(state == "tavi_kills_dude"):
 		removeCharacter("jaxonbrothertau")
 		playAnimation(StageScene.Solo, "stand")
-		saynn("The fake dreams of your own fake reality shatter like glass. You extend the claws of your broken paw and force them into the guard’s neck with one rage-filled motion. You look him directly into the eyes as you force your claws deeper, making sure to do as much damage as possible. The guy gasps as the blood starts gushing out of his neck, following the contours of your digits before proceeding to drip down onto the floor, creating a puddle.")
+		saynn("Лживые грезы твоей собственной фальшивой реальности разлетаются вдребезги, словно стекло. Ты выпускаешь когти сломанной лапы и одним яростным движением вонзаешь их в шею охранника. Ты смотришь ему прямо в глаза, заставляя когти входить всё глубже, стремясь нанести как можно больше повреждений. Парень судорожно хватает ртом воздух, когда из его шеи начинает хлестать кровь; она обтекает твои пальцы, а затем стекает на пол, образуя лужу.")
 
-		saynn("His grip on your throat weakens, letting you breathe. But you’re not done yet. You sink your claws as deep as possible before dragging your paw to the side, tearing through his flesh and arteries, sealing the guy’s fate. As he gets weaker, you get stronger, recovering back some of your strength.")
+		saynn("Его хватка на твоем горле слабеет, давая тебе возможность вздохнуть. Но ты еще не закончил. Ты вонзаешь когти как можно глубже, а затем с силой ведешь лапой в сторону, разрывая его плоть и артерии и предрешая его судьбу. Чем слабее становится он, тем сильнее становишься ты, постепенно восстанавливая свои силы.")
 
-		saynn("Finally, you pull your claws out. The guy gasps a few more times and goes limp. You kick him away. You breathe heavily while looking at the ceiling. Your white leotard.. your sterile white room.. your hands.. all covered in blood.")
+		saynn("Наконец ты выдергиваешь когти. Парень еще пару раз судорожно вздыхает и обмякает. Ты отпихиваешь его ногой. Тяжело дыша, ты уставилась в потолок. Твое белое леотардо... твоя стерильно-белая комната... твои руки... всё залито кровью.")
 
-		saynn("Your heart still beats like hell. But before the realization of what happened sinks in, the airlock suddenly gets locked shut and the air vents open up wide before proceeding to fill the room with some kind of yellow gas.")
+		saynn("Сердце всё еще колотится как бешеное. Но не успеваешь ты осознать масштаб случившегося, как шлюз внезапно блокируется, а вентиляционные отверстия распахиваются, наполняя комнату каким-то желтым газом.")
 
-		saynn("You use the bed as support while getting up, the constant pain makes you hiss. The intercom kicks in.")
+		saynn("Ты опираешься на кровать, пытаясь подняться; от постоянной боли невольно вырывается шипение. Включается интерком.")
 
-		saynn("[say=elena]Code red, code red. Usage of lethal weapons is allowed. Locking all cells. Delivering pacifying gas. Please stand by and allow the staff to apprehend you if you got caught outside of your cell.[/say]")
+		saynn("[say=elena]Код красный, код красный. Разрешено использование летального оружия. Блокировка всех камер. Подача успокоительного газа. Пожалуйста, ожидайте; если вы оказались вне своей камеры, позвольте персоналу задержать вас.[/say]")
 
-		saynn("Soon followed by another transmission.")
+		saynn("Вскоре следует еще одна передача.")
 
-		saynn("[say=directortau]One of you killed a guard and is now trying to escape. Stay. In. Your. Cells. And allow the gas to put you to sleep. Anyone disobeying my orders will be killed on sight. Guards, I order you to go into Tavi’s cell and stop her by any means necessary![/say]")
+		saynn("[say=directortau]Кто-то из вас убил охранника и пытается сбежать. Сидеть. В. Камерах. И позволить газу усыпить вас. Любой, кто ослушается моих приказов, будет убит на месте. Охрана, приказываю: войти в камеру Тави и остановить её любыми средствами![/say]")
 
-		saynn("He sounds annoyed. But you have bigger problems. The gas is indeed slowly messing with your head, making you drowsy. That bed suddenly looks very inviting.")
+		saynn("Он звучит раздраженно. Но у тебя проблемы посерьезнее. Газ действительно начинает туманить разум, вызывая сонливость. Кровать вдруг кажется невероятно заманчивой.")
 
-		saynn("[say=pc]Fuck..[/say]")
+		saynn("[say=pc]Блядь..[/say]")
 
-		saynn("You look around. Your datapad is destroyed. But maybe.. The dead guard must have one. Yes!")
+		saynn("Ты оглядываешься. Твой датапад уничтожен. Но, может быть... У убитого охранника должен быть свой. Да!")
 
-		saynn("Time is running out. You hold your breath and plunge into the gas to grab the guy’s datapad. Shit, it’s locked. Quick, think.. You find the button that switches it into the debug mode. Menus, options, buttons.. You log into the station’s network using one of the stolen passwords. Airvents.. overriding settings.. turning off sleep-toxin gas.. enabling emergency air scrubbing.. success.. cell airlocks.. emergency unlock.. opening.. success.")
+		saynn("Время на исходе. Затаив дыхание, ты ныряешь в облако газа, чтобы схватить датапад парня. Блядь, он заблокирован. Быстро, думай... Ты находишь кнопку переключения в режим отладки. Меню, настройки, кнопки... Ты входишь в сеть станции, используя один из украденных паролей. Вентиляция... переопределение настроек... отключение газа-снотворного... запуск аварийной очистки воздуха... успех... воздушные шлюзы камер... аварийная разблокировка... открываются... успех.")
 
-		saynn("Two more guards show up, they look at you through the glass. They see the dead body of their colleagues and frown. They just watch you for now.")
+		saynn("Появляются еще два охранника, они смотрят на тебя через стекло. Увидев трупы своих коллег, они хмурятся. Пока они просто наблюдают за тобой.")
 
-		saynn("The gas has stopped pouring into the room. Most of it escapes through the open airlock. You can breathe again. There is no way you can kill every guard.. on your own.. Right, the intercom menu, global transmission button.. click.. You begin speaking into the datapad, fast and loudly.")
+		saynn("Газ перестал наполнять комнату. Большая его часть уходит через открытый шлюз. Можно снова дышать. Ты врядне сможешь перебить всех охранников... в одиночку... Точно, меню интеркома, кнопка глобальной трансляции... клик... Ты начинаешь говорить в датапад, быстро и громко.")
 
-		saynn("[say=pc]I’m the one the director is trying to kill! He is gonna kill us all if we stay still. I opened your rooms, you gotta escape while you can! Hear me? Escape, now![/say]")
+		saynn("[say=pc]Это меня директор пытается убить! Если будем сидеть на месте, он перебьет нас всех! Я открыла ваши камеры, нужно бежать, пока есть возможность! Слышите меня? Бегите, живо![/say]")
 
-		saynn("The intercom instantly answers.")
+		saynn("Интерком отвечает мгновенно.")
 
-		saynn("[say=directortau]DON’T LISTEN TO HER. GUARDS, KILL EVERYONE WHO DOESN’T SURRENDER. ANYONE WHO MAKES A STEP OUT OF THEIR CELL MUST BE STOPPED. KILL EVERYONE IF YOU HAVE TO.[/say]")
+		saynn("[say=directortau]НЕ СЛУШАЙТЕ ЕЁ! ОХРАНА, УБИВАЙТЕ ВСЕХ, КТО НЕ СДАСТСЯ! ЛЮБОГО, КТО СДЕЛАЕТ ШАГ ИЗ КАМЕРЫ, — ОСТАНОВИТЬ НАПОЛ! ЕСЛИ ПРИДЕТСЯ, ПОРЬТЕ ВСЕХ ПОДРЯД![/say]")
 
-		saynn("The two guards proceed to rush towards the open entrance to your room. Fuck!")
+		saynn("Двое охранников бросаются к открытому входу в твою камеру. Сука!")
 
-		addButton("Energy gun", "You must kill them", "tavi_grabs_energy_gun")
+		addButton("Энергетическая пушка", "Тебе придется их убить", "tavi_grabs_energy_gun")
 	if(state == "tavi_grabs_energy_gun"):
 		playAnimation(StageScene.Solo, "firepistol")
-		saynn("No time to prepare, you reach for the dead guard’s energy pistol and grab it. Too late though, one of the guards sprints into the room and opens fire, forcing you to dive behind the body and let the dead armor absorb the energy blasts.")
+		saynn("Времени на подготовку нет, ты хватаешь энергетический пистолет мёртвого охранника. Но поздно: один из стражников врывается в комнату и открывает огонь, вынуждая тебя нырнуть за тело, чтобы броня покойника приняла на себя энергетические разряды.")
 
-		saynn("You peek your paw with the gun out and pull the trigger. Not even a second later you hear someone’s body hit the floor. Your kill counter was rising a little too fast for your liking but, strangely enough, you didn’t mind at that time.")
+		saynn("Ты осторожно высовываешь лапу с пистолетом и жмёшь на курок. Не проходит и секунды, как ты слышишь, как чьё-то тело рухнуло на пол. Счетчик убийств рос слишком быстро, что тебя даже немного напрягало, но, как ни странно, в тот момент тебе было почти всё равно.")
 
-		saynn("You slowly get up, aiming your gun at the airlock just to get shot completely out of nowhere. A loud cry escapes from your lips while you hit the floor again, your shoulder took most of the damage. Where is he?!")
+		saynn("Ты медленно поднимаешься, целясь в шлюз, как вдруг в тебя стреляют совершенно внезапно. С губ срывается громкий вскрик, и ты снова валишься на пол — плечо приняло на себя основной удар. Где он, черт возьми?!")
 
-		saynn("[say=pc]Grr-r.[/say]")
+		saynn("[say=pc]Грр-р![/say]")
 
-		saynn("The glass panel! The fucker is looking at you through the transparent wall. You quickly take your aim and fire back. Multiple energy blasts pass through the glass panel like it’s not even there and hit the guy. Many misses but there was one lucky hit directly on his head, causing the guy to flop awkwardly, his eyes already lifeless.")
+		saynn("Стеклянная панель! Этот ублюдок смотрит на тебя сквозь прозрачную стену. Ты быстро прицеливаешься и даёшь очередь в ответ. Множество энергетических зарядов прошивают стекло так, будто его и нет, и попадают в парня. Много промахов, но один счастливчик пришёлся прямо ему в голову — мужик нелепо задергался, и его глаза тут же остекленели.")
 
-		addButton("Continue", "See what happens next", "grab_pill")
+		addButton("Продолжить", "Смотреть, что будет дальше", "grab_pill")
 	if(state == "grab_pill"):
 		aimCameraAndSetLocName("taviroom_near")
-		saynn("You give yourself a few seconds of rest but the wounds remind you of their existence. It feels like all your 9 lives got used up right there, you were living on borrowed time. You pick up one of the strange pills off the ground and look at it.")
+		saynn("Ты даёшь себе несколько секунд передышки, но раны постоянно напоминают о себе. Кажется, будто все твои девять жизней только что закончились, и ты жив лишь по чистой случайности. Ты поднимаешь с пола одну из странных таблеток и разглядываешь её.")
 
-		saynn("But before you can make a decision, you begin to hear noises of a fight happening outside. Screams and grunts, all sorts of impacts. You store the pill for later and get up.")
+		saynn("Но не успеваешь ты принять решение, как снаружи доносятся звуки схватки. Крики, стоны, звуки ударов — всё подряд. Ты убираешь таблетку, чтобы приберечь её на потом, и поднимаешься на ноги.")
 
-		saynn("As you make your way out of your old room, you realize that the whole station is overtaken by chaos. Doctors and scientists run past you while the guards fight with AlphaCorp’s future soldiers. For once, you think that might get out of here alive.")
+		saynn("Когда ты выбираешься из своей старой комнаты, ты понимаешь, что всю станцию охватил хаос. Мимо тебя на бегу проносятся врачи и ученые, а охранники вступают в схватку с будущими солдатами «АльфаКорп». Впервые тебе кажется, что ты сможешь выбраться отсюда живым.")
 
-		saynn("The nice voice over the station-wide intercom tells you everything you needed to know.")
+		saynn("Приятный голос из громкоговорителей, транслируемых по всей станции, сообщает всё, что тебе нужно знать.")
 
-		saynn("[say=elena]Warning. Due to the mass riot, the evacuation is currently in progress. Level 3 staff must proceed to the escape pods. Follow the markings and signs to get to them. Security personnel must stay and contain the riot.[/say]")
+		saynn("[say=elena]Внимание. В связи с массовым бунтом объявлена эвакуация. Персоналу третьего уровня необходимо проследовать к спасательным капсулам. Ориентируйтесь по разметке и указателям. Сотрудникам службы безопасности необходимо оставаться на местах для подавления беспорядков.[/say]")
 
-		saynn("You’re hiding behind one of the corners, licking your wounds wasn’t enough to stop the pain. But it seems your best choice to escape this home of yours is through the usage of someone with a level 3 access card. And you’re not the only one who understood that, most of the guards stopped fighting and instead began chasing after the lab coats, probably hoping to get out of this place. You’d do the same. But. You still have one thing you need to do.")
+		saynn("Ты прячешься за углом; просто зализывать раны было недостаточно, чтобы унять боль. Но, похоже, твой лучший шанс сбежать из этого дома — найти кого-то с картой доступа третьего уровня. И ты не единственный, кто это понял: большинство охранников бросили драку и принялись гоняться за «белыми халатами», надеясь выбраться отсюда. Ты бы поступил так же. Но... тебе всё еще нужно кое-что сделать.")
 
-		addButton("Continue", "See what happens next", "tavi_walks")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_walks")
 	if(state == "tavi_walks"):
 		aimCameraAndSetLocName("taviflashback_nearalien")
 		addCharacter("latexParasite")
-		saynn("You wait a bit for this corridor to clear up before rushing in the direction opposite to everyone’s rush. The pain was returning again, stronger than ever. But it seems like you just stumbled upon a jackpot, one of the doctors is lying dead. His pockets seem to be looted but the belt is untouched. You look through it and find a stimpack, a loaded medical injector. You get a feeling that your death will catch up with you before you can get a chance to finish reading the list of contraindications so you just stick that thing into your neck and let it inject.. something.. into your bloodstream.")
+		saynn("Ты немного ждешь, пока коридор опустеет, прежде чем броситься в сторону, противоположную общему потоку людей. Боль возвращается, становясь сильнее, чем когда-либо. Но, похоже, ты только что сорвал джекпот: один из врачей лежит мертвым. Его карманы, кажется, обчистили, но пояс остался нетронутым. Ты заглядываешь в него и находишь стимпак — заряженный медицинский инъектор. У тебя возникает предчувствие, что смерть настигнет тебя раньше, чем ты успеешь дочитать список противопоказаний, поэтому ты просто вонзаешь эту штуку себе в шею и позволяешь ей впрыснуть... что-то... прямо в кровоток.")
 
-		saynn("Luckily, it seems to be something good. It didn’t magically regenerate your scorched flesh and broken bones but at least the pain was at acceptable levels. And just when you were ready to continue your adventure, something pounced on your leg and stopped you.")
+		saynn("К счастью, похоже, это было что-то полезное. Оно не восстановило магическим образом твою обожженную плоть и сломанные кости, но, по крайней мере, боль утихла до приемлемого уровня. И как раз в тот момент, когда ты был готов продолжить свое приключение, что-то прыгнуло тебе на ногу и заставило замереть.")
 
-		saynn("Oh fuck, it was the dark shiny goo. The alien parasite has escaped its room and probably decided that you are a nice snack. It feels tickly as the thing starts coating more and more of you with itself.")
+		saynn("О блядь, это та самая темная блестящая жижа. Инопланетный паразит сбежал из своей камеры и, вероятно, решил, что ты — отличный перекус. Ты чувствуешь щекотку, когда эта тварь начинает покрывать тебя всё большим слоем своего тела.")
 
-		addButton("Kick it off", "Save the ammo", "kick_goo_off")
-		addButton("Shoot it", "You’d rather not get consumed by it", "shoot_goo")
+		addButton("Сбросить его", "Сэкономить патроны", "kick_goo_off")
+		addButton("Пристрелить", "Ты бы предпочел не быть им сожранным", "shoot_goo")
 	if(state == "kick_goo_off"):
-		saynn("Now is really not the time to babysit an alien, you jump and stomp on it a few times before trying to kick the substance off of your leg by smashing it against walls. The parasite feels your hostility and reluctantly slides off before leaving you alone.")
+		saynn("Сейчас явно не время нянчиться с пришельцем; ты подпрыгиваешь и несколько раз топчешь его, а затем пытаешься стряхнуть субстанцию с ноги, впечатывая её в стены. Паразит чувствует твою агрессию и неохотно соскальзывает, оставляя тебя в покое.")
 
-		saynn("No matter, time to increase your pace if you wanna get to the director before this whole station gets destroyed by its inhabitants.")
+		saynn("Неважно, пора прибавить шагу, если хочешь добраться до директора раньше, чем все это станцию разнесут её обитатели.")
 
-		addButton("Continue", "Continue on your way", "find_risha")
+		addButton("Продолжить", "Продолжить путь", "find_risha")
 	if(state == "shoot_goo"):
-		saynn("Now is really not the time to babysit an alien, you aim your gun at the black goo before pulling the trigger. The alien absorbs the shots completely, no scorch marks are visible. You land a few more careful blasts until the parasite reluctantly slides off and leaves you alone.")
+		saynn("Сейчас явно не время нянчиться с пришельцем. Ты целишься в черную жижу и жмешь на курок. Инопланетная дрянь полностью поглощает выстрелы — ни единого следа от ожогов. Ты наносишь еще несколько осторожных залпов, пока паразит неохотно не сползает прочь, оставляя тебя в покое.")
 
-		saynn("No matter, time to increase your pace if you wanna get to the director before this whole station gets destroyed by its inhabitants.")
+		saynn("Неважно, пора прибавить шагу, если хочешь добраться до директора раньше, чем все это станцию разнесут её обитатели.")
 
-		addButton("Continue", "Continue on your way", "find_risha")
+		addButton("Продолжить", "Продолжить путь", "find_risha")
 	if(state == "find_risha"):
 		removeCharacter("latexParasite")
 		addCharacter("rishatau")
 		aimCameraAndSetLocName("tau_nearrisharoom")
-		saynn("You walk past Risha’s room and notice that it’s filled with that yellow gas. It’s hard to see through all that mist but you think that you see Risha in there.. unconscious.. Her airlock didn’t properly unlock and the air vents are still pushing gas into the room, lots of it. You get a bad feeling that she will die soon, if not from overdose then from lack of oxygen.")
+		saynn("Проходя мимо комнаты Риши, ты замечаешь, что она заполнена желтым газом. Сквозь этот туман трудно что-то разглядеть, но тебе кажется, что там, внутри... лежит Риша... без сознания... Её шлюз не открылся до конца, а вентиляционные отверстия всё еще качают в комнату газ, и его там предостаточно. У тебя нехорошее предчувствие: она скоро сдохнет — если не от передозировки, то от нехватки кислорода.")
 
-		saynn("The glass has some cracks in it, the poor lynx probably tried to break it before falling asleep so you decide to pick up where she left off. You hit it with the handle of your gun but it just bounces off. You try to kick the glass but alas, no new cracks are formed. You keep trying though, you can’t let Risha die in there. You wouldn’t be able to forgive yourself.")
+		saynn("На стекле видны трещины — бедняжка-рысь, должно быть, пыталась разбить его перед тем, как провалиться в сон, так что ты решаешь закончить начатое. Ты бьешь по стеклу рукояткой пистолета, но удар просто отскакивает. Пытаешься пнуть стекло, но, увы, новых трещин не появляется. Ты продолжаешь попытки — нельзя дать Рише там задохнуться. Ты себе этого никогда не простишь.")
 
-		saynn("Suddenly a voice.")
+		saynn("Внезапно раздается голос.")
 
-		saynn("[say=jaxontau]Put your hands up.. Tavi..[/say]")
+		saynn("[say=jaxontau]Руки вверх... Тави...[/say]")
 
-		addButton("Turn around", "See who that is", "tavi_vs_jaxon")
+		addButton("Обернись", "Посмотреть, кто это", "tavi_vs_jaxon")
 	if(state == "tavi_vs_jaxon"):
 		addCharacter("jaxontau")
 		playAnimation(StageScene.Duo, "stand", {npc="jaxontau", npcAction="holdpistol"})
-		saynn("You went too far to surrender now. You instantly turn around and aim the energy gun at.. Jaxon. He aims back at you with tears in his eyes. His hands are shaking.")
+		saynn("Ты зашла слишком далеко, чтобы сдаваться сейчас. Ты резко разворачиваешься и наводишь энергетический пистолет на... Джексона. Он целится в тебя в ответ, и его глаза полны слез. Его руки дрожат.")
 
-		saynn("[say=pc]Gonna shoot me, Jaxon? Why the hesitation?[/say]")
+		saynn("[say=pc]Что, стрелять будешь, Джексон? Чего ты медлишь?[/say]")
 
-		saynn("[say=jaxontau]Tavi.. I saw what you did.. my brother.. murdered.. by you.[/say]")
+		saynn("[say=jaxontau]Тави... Я видел, что ты сделала... мой брат... убит... тобой.[/say]")
 
-		saynn("You put on your mean eyes, your finger tightening around the trigger. Blood is still dripping from your hands. Your leotard is not looking as pristine as it once did, so there are many holes and other damage on it.")
+		saynn("Ты делаешь свой самый свирепый взгляд, сильнее сжимая палец на спусковом крючке. С твоих рук всё еще капает кровь. Твое леотардо выглядит уже далеко не так безупречно, как раньше: оно в дырах и других повреждениях.")
 
-		saynn("[say=pc]I don’t regret it. The fucker had it coming, trust me.[/say]")
+		saynn("[say=pc]И я ни о чем не жалею. Этот ублюдок сам напросился, поверь мне.[/say]")
 
-		saynn("[say=jaxontau]Look what happened to you.. You can’t change the way the world works, Tavi. But you can still surrender.. Enough pointless violence, enough deaths.[/say]")
+		saynn("[say=jaxontau]Посмотри, во что ты превратилась... Ты не можешь изменить законы этого мира, Тави. Но ты всё еще можешь сдаться... Хватит бессмысленного насилия, хватит смертей.[/say]")
 
-		saynn("He lowers his gun. Now it’s time for your paws to begin shaking.")
+		saynn("Он опускает пистолет. Теперь настала твоя очередь — твои лапки начинают дрожать.")
 
-		saynn("[say=pc]I won’t stop. Not until the director is dead. He wanted to kill me, Jaxon. I didn’t turn out to be useful enough so he wanted to completely wipe me and any signs of my existence out. And either you join and help me. Or I will have to..[/say]")
+		saynn("[say=pc]Я не остановлюсь. Пока директор не сдохнет. Он хотел убить меня, Джексон. Я оказалась недостаточно полезной, и он решил стереть меня и все следы моего существования. Так что либо ты примыкаешь ко мне и помогаешь, либо мне придется...[/say]")
 
-		saynn("He wipes his tears off and looks down at this gun.")
+		saynn("Он вытирает слезы и смотрит на свой пистолет.")
 
-		saynn("[say=jaxontau]No. I can’t let you do that, Tavi. I’m sorry. The director is a powerful man. My family.. my brother..[/say]")
+		saynn("[say=jaxontau]Нет. Я не могу позволить тебе это сделать, Тави. Прости. Директор — очень могущественный человек. Моя семья... мой брат...[/say]")
 
-		saynn("Suddenly he begins aiming his gun at you. You must react first.")
+		saynn("Внезапно он начинает целиться в тебя из пистолета. Нужно среагировать первым.")
 
-		addButton("Aim at head", "Leave him no chance", "kill_jaxon")
-		addButton("Aim at hands", "Aim for his gun", "spare_jaxon")
+		addButton("Целиться в голову", "Не давать ему шанса", "kill_jaxon")
+		addButton("Целиться в руки", "Целиться в его пистолет", "spare_jaxon")
 	if(state == "kill_jaxon"):
 		setFlag("TaviModule.TaviKilledJaxon", true)
 		playAnimation(StageScene.Solo, "firepistol")
 		removeCharacter("jaxontau")
-		saynn("You both aim energy guns at each other roughly at the same time.")
+		saynn("Вы оба почти одновременно вскидываете энергетические пистолеты, целясь друг в друга.")
 
-		saynn("The energy pistol sends out a powerful blast.")
+		saynn("Энергетический пистолет выпускает мощный заряд.")
 
-		saynn("Followed by a complete silence.")
+		saynn("За этим следует полная тишина.")
 
-		saynn("Until the thump of a body hitting the floor deafens you.")
+		saynn("Пока глухой звук упавшего на пол тела не оглушает тебя.")
 
-		saynn("A nasty hole right in the middle of Jaxon’s forehead. Clean shot. No blood.")
+		saynn("Ужасная дыра прямо посреди лба Джексона. Чистый выстрел. Ни капли крови.")
 
-		saynn("You lower the gun. You miss the guy already.")
+		saynn("Ты опускаешь пушку. Ты уже начинаешь скучать по этому парню.")
 
-		saynn("But. Enough sentimentality, you can mourn dead friends later. Right now you gotta focus on saving Risha. You realize that the guy’s badge can probably be useful. Your hand reaches out to fetch it. Level 3 access. Oh-h.")
+		saynn("Но... хватит сентиментальности, оплакать мертвых друзей успеешь позже. Сейчас нужно сосредоточиться на спасении Риши. Ты понимаешь, что жетон парня может пригодиться. Твоя рука тянется, чтобы забрать его. Доступ 3-го уровня. О-о-о.")
 
-		saynn("You also find a gas mask plus oxygen tank combo on him. That will be more than useful.")
+		saynn("Также ты находишь у него комплект из противогаза и кислородного баллона. Это будет более чем полезно.")
 
-		addButton("Save Risha", "Use the card on her room", "save_risha")
+		addButton("Спасти Ришу", "Использовать карту на её комнате", "save_risha")
 	if(state == "spare_jaxon"):
 		setFlag("TaviModule.TaviKilledJaxon", false)
 		playAnimation(StageScene.Solo, "defeat")
 		removeCharacter("jaxontau")
-		saynn("You both aim energy guns at each other roughly at the same time.")
+		saynn("Вы оба почти одновременно вскидываете энергетические пистолеты, целясь друг в друга.")
 
-		saynn("The energy pistol sends out a powerful blast.")
+		saynn("Энергетический пистолет выпускает мощный заряд.")
 
-		saynn("Followed by..")
+		saynn("А затем...")
 
-		saynn("BOOM!")
+		saynn("БУМ!")
 
-		saynn("Your shot hits Jaxon’s gun in its battery, causing an explosion that was powerful enough to send you flying back. Ow, your back didn’t particularly enjoy that ride. Station’s automatic fire extinguisher system kicks in, killing the fire before it can get big.")
+		saynn("Твой выстрел попадает в аккумулятор пушки Джексона, вызывая взрыв такой силы, что тебя отбрасывает назад. Ох, твоя спина явно не в восторге от такой поездки. Срабатывает автоматическая система пожаротушения станции, гася пламя, пока оно не разгорелось по-настоящему.")
 
-		saynn("The room’s glass received a few extra cracks. But wow, even that didn’t break it. You slowly get up and run up to Jaxon.")
+		saynn("Стекла в комнате покрылись новыми трещинами. Но черт возьми, даже это не разнесло всё в щепки. Ты медленно поднимаешься и бежишь к Джексону.")
 
-		saynn("His condition seems.. not ideal. Unconscious. But breathing. His armor took most of the hit. Good.")
+		saynn("Его состояние выглядит... не очень. Без сознания. Но дышит. Броня приняла на себя основной удар. Хорошо.")
 
-		saynn("But you can worry about him later. Right now you gotta focus on saving Risha. You realize that the guy’s badge can probably be useful. Your hand reaches out to fetch it. Level 3 access. Oh-h.")
+		saynn("Но об этом можно будет побеспокоиться позже. Сейчас тебе нужно сосредоточиться на спасении Риши. Ты понимаешь, что значок этого парня может пригодиться. Твоя рука тянется, чтобы забрать его. Доступ третьего уровня. О-о-о.")
 
-		saynn("You also find a gas mask plus oxygen tank combo on him. That will be more than useful.")
+		saynn("Также ты находишь у него комплект из противогаза и кислородного баллона. Это будет более чем полезно.")
 
-		addButton("Save Risha", "Use the card on her room", "save_risha")
+		addButton("Спасти Ришу", "Использовать карту на её комнате", "save_risha")
 	if(state == "save_risha"):
 		aimCameraAndSetLocName("tau_nearrisharoomdoor")
 		addCharacter("rishatau")
 		playAnimation(StageScene.SexStart, "start", {npc="rishatau"})
-		saynn("The airlock, your paw presses the badge against its keypad panel until you hear the beep. The door starts slowly opening, letting the heavy yellow gas out in the process. Every second counts, you quickly put on the gas mask and rush inside before pulling Risha out. She is heavy as fuck but you just about manage.")
+		saynn("Шлюз. Твоя лапа прижимает значок к панели с кнопками, пока не раздается писк. Дверь начинает медленно открываться, выпуская наружу тяжелый желтый газ. Каждая секунда на счету; ты быстро натягиваешь противогаз и влетаешь внутрь, прежде чем вытащить Ришу. Она тяжелая, блять, просто пиздец, но тебе это почти удается.")
 
-		saynn("She is.. breathing? Or is she? You press two digits against her throat and feel.. something. Her heartbeat is there but it seems irregular. You take off the gas mask and begin to do CPR, just like they taught you.")
+		saynn("Она... дышит? Или нет? Ты прижимаешь два пальца к её горлу и чувствуешь... что-то. Сердцебиение есть, но оно кажется неритмичным. Ты снимаешь противогаз и начинаешь делать искусственное дыхание, прямо как учили.")
 
-		saynn("Very soon Risha starts coughing yellow gas and gasping for air. Phew. Her head rests on your lap as she slowly opens her eyes.")
+		saynn("Вскоре Риша начинает кашлять желтым газом и жадно хватать ртом воздух. Фух. Её голова покоится у тебя на коленях, пока она медленно открывает глаза.")
 
-		saynn("[say=rishatau]Ow.. Did I drink too much on our first date?[/say]")
+		saynn("[say=rishatau]Ой... Неужели я перебрала на нашем первом свидании?[/say]")
 
-		saynn("[say=pc]No, silly.[/say]")
+		saynn("[say=pc]Нет, глупышка.[/say]")
 
-		saynn("[say=rishatau]Sure feels like it. What’s going on, Ta?[/say]")
+		saynn("[say=rishatau]По ощущениям — именно так. Что происходит, Та?[/say]")
 
-		saynn("Risha looks around and sees the signs of battle and Jaxon’s body. The voice over the station-wide intercom cuts off your attempts at any explanations.")
+		saynn("Риша оглядывается и видит следы битвы и тело Джексона. Голос из громкоговорителей по всей станции обрывает твои попытки что-либо объяснить.")
 
-		saynn("[say=elena]The evacuation is in progress. Level 3 staff, please proceed to the escape pods. The guards are ordered to stay and deal with any threats.[/say]")
+		saynn("[say=elena]Начинается эвакуация. Персоналу третьего уровня просьба проследовать к спасательным капсулам. Охране приказано оставаться на местах и устранять любые угрозы.[/say]")
 
-		saynn("[say=rishatau]I see, the fucker went mental.[/say]")
+		saynn("[say=rishatau]Ясно, этот ублюдок окончательно слетел с катушек.[/say]")
 
-		saynn("[say=pc]Yeah, he wanted to kill me. I wanna explain to him why he is wrong.[/say]")
+		saynn("[say=pc]Да, он хотел меня прикончить. И я хочу объяснить ему, почему он ошибается.[/say]")
 
-		saynn("Risha slowly gets up and raises an eyebrow at your bloody damaged leotard and the wounds underneath.")
+		saynn("Риша медленно поднимается, вскидывая бровь при виде твоего окровавленного, изорванного леотарда и ран под ним.")
 
-		saynn("[say=rishatau]Wow. You need help?[/say]")
+		saynn("[say=rishatau]Ого. Тебе помочь?[/say]")
 
-		saynn("You think about it for a second. Then you hand Risha the guy’s badge.")
+		saynn("Ты на секунду задумываешься, а затем протягиваешь Рише жетон парня.")
 
-		saynn("[say=pc]No. That’s my problem to deal with. You should get out of here. Take this, level 3 access. Get to the escape pods, I doubt there are many left.[/say]")
+		saynn("[say=pc]Нет. Это моя проблема. Тебе пора убираться отсюда. Возьми это, уровень доступа — третий. Дуй к спасательным капсулам, сомневаюсь, что их там еще много.[/say]")
 
-		saynn("[say=rishatau]You sure? Are you aware that you will probably die?[/say]")
+		saynn("[say=rishatau]Ты уверена? Ты хоть понимаешь, что, скорее всего, сдохнешь?[/say]")
 
-		saynn("You tilt your head down.")
+		saynn("Ты склоняешь голову.")
 
-		saynn("[say=pc]Yeah. Don’t worry about me, Risha. Get the fuck out of here while you still can.[/say]")
+		saynn("[say=pc]Да. Не беспокойся обо мне, Риша. Вали отсюда нахер, пока еще есть шанс.[/say]")
 
-		addButton("Continue", "See what happens next", "risha_reacts_to_jaxon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "risha_reacts_to_jaxon")
 	if(state == "risha_reacts_to_jaxon"):
 		aimCameraAndSetLocName("tau_nearrisharoom")
 		playAnimation(StageScene.Duo, "stand", {npc="rishatau"})
 		if (getFlag("TaviModule.TaviKilledJaxon")):
-			saynn("You and Risha step into the big corridor. The lynx walks up to the lifeless body.")
+			saynn("Вы с Ришей выходите в широкий коридор. Рысь подходит к безжизненному телу.")
 
-			saynn("[say=rishatau]Brutal. Is that your work?[/say]")
+			saynn("[say=rishatau]Жестоко. Это твоих рук дело?[/say]")
 
-			saynn("[say=pc]Yeah, he made his choice. I made mine.[/say]")
+			saynn("[say=pc]Да. Он сделал свой выбор. Я сделал свой.[/say]")
 
-			saynn("Risha raises her eyebrows again.")
+			saynn("Риша снова вскидывает брови.")
 
-			saynn("[say=rishatau]You’re stronger than I thought, Tavi.[/say]")
+			saynn("[say=rishatau]Ты сильнее, чем я думала, Тави.[/say]")
 
-			saynn("[say=pc]Leave while you still can.[/say]")
+			saynn("[say=pc]Уходи, пока еще можешь.[/say]")
 
-			saynn("[say=rishatau]Yeah. I hope our paths will cross one day, Ta.[/say]")
+			saynn("[say=rishatau]Да. Надеюсь, наши пути еще пересекутся однажды, Та.[/say]")
 
-			saynn("After that, Risha quickly jogs away, looking for the escape pods.")
+			saynn("После этого Риша быстро убегает вприпрыжку, высматривая спасательные капсулы.")
 
-			saynn("You’re alone. Different circumstances, same feeling. It almost feels like the status quo hasn’t changed that much. But you did. You look down at your paws covered in dry blood. Then you look at the dead body of your ex friend.")
+			saynn("Ты одна. Обстоятельства другие, а чувство то же самое. Кажется, будто статус-кво почти не изменился. Но изменилась ты. Ты смотришь на свои лапы, покрытые засохшей кровью. Затем переводишь взгляд на мертвое тело своего бывшего друга.")
 
-			saynn("[say=pc]I hope not.[/say]")
+			saynn("[say=pc]Надеюсь, что нет.[/say]")
 
 		else:
-			saynn("You and Risha step into the big corridor. The lynx walks up to the unconscious body.")
+			saynn("Вы с Ришей входите в широкий коридор. Рысь подходит к лежащему без сознания телу.")
 
-			saynn("[say=rishatau]I was always jealous of that armor. Is he dead?[/say]")
+			saynn("[say=rishatau]Я всегда завидовала этой броне. Он мертв?[/say]")
 
-			saynn("[say=pc]He is alive. But I don’t know for how much longer and what’s gonna kill him first, his wounds or the station collapsing on him.[/say]")
+			saynn("[say=pc]Он жив. Но не знаю, надолго ли, и что прикончит его первым: раны или обрушивающаяся на него станция.[/say]")
 
-			saynn("Risha humms. She then reaches to grab the guy’s hands before pulling him up and onto her back into a fireman’s carry. You can see Risha’s muscles working hard.")
+			saynn("Риша что-то напевает под нос. Затем она хватает парня за руки и закидывает его себе на спину, перекинув через плечо, как пожарный. Видно, как напрягаются мышцы Риши.")
 
-			saynn("[say=pc]You sure you can do it?[/say]")
+			saynn("[say=pc]Ты уверена, что справишься?[/say]")
 
-			saynn("[say=rishatau]Oh, I’ve carried heavier bitches~. I hope our paths will cross one day, Ta. Gotta go now.[/say]")
+			saynn("[say=rishatau]Ой, да я и сучек потяжелее таскала~. Надеюсь, наши пути еще пересекутся, Та. Ладно, мне пора.[/say]")
 
-			saynn("After that Risha leaves, looking for the escape pods.")
+			saynn("После этого Риша уходит на поиски спасательных капсул.")
 
-			saynn("You’re alone. Different circumstances, same feeling. It almost feels like the status quo hasn’t changed that much. But you did. You look down at your paws covered in dry blood.")
+			saynn("Ты одна. Обстоятельства другие, а чувство то же самое. Кажется, будто статус-кво почти не изменился. Но изменилась ты. Ты смотришь на свои лапы, покрытые засохшей кровью.")
 
-			saynn("[say=pc]I hope not.[/say]")
+			saynn("[say=pc]Надеюсь, что нет.[/say]")
 
-		addButton("Continue", "See what happens next", "tavi_looks_for_director")
+		addButton("Продолжить", "Смотреть, что будет дальше", "tavi_looks_for_director")
 	if(state == "tavi_looks_for_director"):
 		playAnimation(StageScene.Solo, "holdpistol")
 		removeCharacter("rishatau")
 		aimCameraAndSetLocName("tau_nearelevators")
-		saynn("You check the charge of your energy gun. Enough for one person. Or a one man army.")
+		saynn("Ты проверяешь заряд своего энергопистолета. Хватит на одного человека. Или на целую армию из одного бойца.")
 
-		saynn("You began looking for your target, following the many corridors that you have never seen before. Signs of quick battles everywhere, modern weapons are brutally efficient are taking away your life. But you’re still breathing.")
+		saynn("Ты начинаешь искать свою цель, пробираясь по многочисленным коридорам, которых раньше никогда не видела. Повсюду следы стремительных схваток; современное оружие беспощадно эффективно, отнимая жизни, но ты всё еще дышишь.")
 
-		saynn("Was it blind luck? Can you really dare to call yourself lucky after all of this?")
+		saynn("Была ли это слепая удача? Можешь ли ты всерьез называть себя везучей после всего, что произошло?")
 
-		saynn("Some time passes.")
+		saynn("Проходит некоторое время.")
 
-		saynn("Going after the person you owe your whole existence to. You wonder if having no future is better than having one that feels like a hellish nightmare. No, screw that. Enough of other people telling you what to do. You will carve out your own future or die trying.")
+		saynn("Ты идешь за тем, кому обязана самим своим существованием. Ты гадаешь: что лучше — отсутствие будущего или будущее, которое кажется адским кошмаром? Нет, к черту всё это. Хватит с тебя того, что другие указывают тебе, что делать. Ты либо сама выгрызешь себе будущее, либо умрешь в попытке.")
 
-		saynn("The intercom coughs out some static followed by a familiar voice.")
+		saynn("Интерком выдает порцию статики, за которой следует знакомый голос.")
 
-		saynn("[say=directortau]Tavi. I’m talking to you. I know you’re not dead yet. The last escape pod has left the station, you’re stuck here. With me.[/say]")
+		saynn("[say=directortau]Тави. Я с тобой разговариваю. Знаю, ты еще не сдохла. Последняя спасательная капсула покинула станцию, так что ты застряла здесь. Со мной.[/say]")
 
-		saynn("You stop and carefully observe the surroundings. At least one of you has escaped this hellhole. Now it was time for you to dig deeper and find the devil himself.")
+		saynn("Ты замираешь, внимательно осматриваясь по сторонам. По крайней мере, кому-то из вас удалось сбежать из этой дыры. Теперь пришло время копнуть глубже и найти самого дьявола.")
 
-		saynn("[say=directortau]I won’t leave my station like all these rats did. And I know you wanna kill me. So let me make it easier for you.[/say]")
+		saynn("[say=directortau]Я не брошу свой пост, как все эти крысы. И я знаю, что ты хочешь меня прикончить. Так что давай облегчим тебе задачу.[/say]")
 
-		saynn("You get startled by one of the elevators suddenly opening its doors, inviting you in. With the lack of better options, you decide to follow through on his promise and step inside. The elevator doors close before the machine proceeds to elevate you.")
+		saynn("Тебя пугает внезапно открывшаяся дверь одного из лифтов, словно приглашая войти. Не имея лучшего выбора, ты решаешь сдержать его обещание и заходишь внутрь. Двери лифта закрываются, и механизм начинает подъем.")
 
-		saynn("[say=directortau]Find me in my quarters. Just know that I will defend myself.[/say]")
+		saynn("[say=directortau]Найди меня в моих покоях. Но знай: я буду защищаться.[/say]")
 
-		saynn("After all that, you’re back to obeying others. The irony is not lost on you. But, for once, you seem.. content.. with your decisions.")
+		saynn("После всего случившегося ты снова возвращаешься к подчинению другим. Ирония ситуации тебя не покидает. Но, кажется, на этот раз ты... довольна... своим решением.")
 
-		addButton("Continue", "See what happens", "after_lift")
+		addButton("Продолжить", "Посмотреть, что будет", "after_lift")
 	if(state == "after_lift"):
 		aimCameraAndSetLocName("tau_elevator")
-		saynn("You were wondering if you’d see an entire squad of guns pointed at you when the doors opened. At least the director didn’t seem like the type of guy who would lie to you. And you can’t help but to respect that.")
+		saynn("Ты гадала, не окажется ли перед тобой целый отряд с нацеленными на тебя стволами, когда двери откроются. По крайней мере, директор не был похож на человека, который станет тебе врать. И ты невольно начинаешь это уважать.")
 
-		saynn("You can’t let your feelings take over though. Your hand produces the single pill that you saved for this special occasion. Something inside you really wonders if these aren’t just painkillers. But maybe that’s just your damaged body hoping for some relief.")
+		saynn("Однако нельзя позволять чувствам брать верх. Твоя рука достает ту самую единственную таблетку, которую ты берегла для особого случая. Что-то внутри тебя подсказывает, что это могут быть всего лишь обезболивающие. Но, возможно, это просто твое измученное тело жаждет облегчения.")
 
-		saynn("Your hand throws the pill into your mouth. It tastes.. good. Did they add sugar to it?")
+		saynn("Ты закидываешь таблетку в рот. На вкус она... приятная. Неужели туда добавили сахар?")
 
-		saynn("[say=pc]I guess it’s time to find out.[/say]")
+		saynn("[say=pc]Похоже, пора выяснить, что будет дальше.[/say]")
 
-		saynn("The elevator doors open into another corridor. A much cleaner and fancier one. You must be on the right track.")
+		saynn("Двери лифта открываются, открывая вид на другой коридор. Куда более чистый и роскошный. Похоже, ты на верном пути.")
 
-		addButton("Step out", "See where it brings you", "tavi_near_directorroom")
+		addButton("Выйти наружу", "Посмотреть, куда это приведет", "tavi_near_directorroom")
 	if(state == "tavi_near_directorroom"):
 		aimCameraAndSetLocName("tau_neardirector")
-		saynn("You step out into the corridor. It’s a dark one. But. Your legs feel the nice carpet underneath you. Paintings with fancy golden frames cover up the walls. Paintings of people who died a long time ago.")
+		saynn("Ты выходишь в коридор. Здесь довольно темно. Но под ногами ощущается мягкий ковер. Стены увешаны картинами в изысканных золотых рамах. На полотнах — люди, давно ушедшие в мир иной.")
 
-		saynn("No guards or any other staff, not even a secretary. Every bad guy needs a cute secretary to help keep a balance. You’re still on high alert though, stepping slowly towards some big doors. The guy sure likes gold, golden colors are everywhere. You stealthily approach the end of the corridor.")
+		saynn("Ни охраны, ни персонала, ни даже секретарши. Каждому злодею нужна миловидная секретарша, чтобы поддерживать баланс. Тем не менее, ты не теряешь бдительности, медленно двигаясь к массивным дверям. Этот парень явно помешан на золоте — золотой цвет здесь повсюду. Ты крадущейся походкой приближаешься к концу коридора.")
 
-		saynn("You feel ready.")
+		saynn("Ты чувствуешь, что готов(а)")
 
-		addButton("Break in", "Time to pay the director a visit", "tavi_visits_director")
+		addButton("Вломиться", "Пора нанести директору визит", "tavi_visits_director")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):

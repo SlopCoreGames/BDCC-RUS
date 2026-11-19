@@ -10,11 +10,11 @@ func _init():
 func _run():
 	if(state == ""):
 		addCharacter("tavi", ["naked"])
-		saynn("[say=tavi]It happened.. A few years ago.[/say]")
+		saynn("[say=tavi]Это случилось.. Несколько лет назад.[/say]")
 
-		saynn("As Tavi begins to open up, you can’t help but to get immersed in her story.")
+		saynn("Когда Тави начинает открываться, вы невольно погружаетесь в её историю.")
 
-		addButton("Continue", "See what happens next", "start_flashback")
+		addButton("Продолжить", "Смотреть, что будет дальше", "start_flashback")
 	if(state == "start_flashback"):
 		removeCharacter("tavi")
 		addCharacter("directortau")
@@ -22,103 +22,103 @@ func _run():
 		aimCameraAndSetLocName("taviroom_bed")
 		GM.pc.setLocation("taviroom_bed")
 		playAnimation(StageScene.Duo, "stand", {pc="directortau", npc="jaxontau"})
-		saynn("[say=directortau]What about this one?[/say]")
+		saynn("[say=directortau]Как насчет этой?[/say]")
 
-		saynn("[say=jaxontau]This is one of our most ambitious projects. Codename is.. Toxic Virus.[/say]")
+		saynn("[say=jaxontau]Это один из наших самых амбициозных проектов. Кодовое название.. Токсичный Вирус.[/say]")
 
-		saynn("[say=directortau]So, ToVi?[/say]")
+		saynn("[say=directortau]Значит, ToVi?[/say]")
 
-		saynn("[say=jaxontau]She prefers the name Tavi, Sir.[/say]")
+		saynn("[say=jaxontau]Она предпочитает имя Тави, сэр.[/say]")
 
-		saynn("Standing behind the window and talking, there are 2 humans that are staring at you and your sterile cell made mostly out of glass. The person on the left wears a guard uniform and has a pulse rifle on him. He holds a tablet with some notes. The guy on the right wears official clothes and seems quite old. They talk while you rest on your personal bed and read some documentation on your datapad.")
+		saynn("За окном стоят двое людей и о чем-то переговариваются, пристально глядя на вас и вашу стерильную камеру, сделанную в основном из стекла. Человек слева одет в форму охранника, у него за спиной импульсная винтовка, а в руках планшет с записями. Парень справа одет в официальную одежду и выглядит довольно старым. Они болтают, пока вы отдыхаете на своей кровати, просматривая документацию на датападе.")
 
-		saynn("[say=directortau]Tavi, huh. Tell me about her.[/say]")
+		saynn("[say=directortau]Тави, значит. Расскажи мне о ней.[/say]")
 
-		saynn("[say=jaxontau]She is a girl, turned 18 this year. She is into computers so we gave her this datapad, a heavily restricted one of course.[/say]")
+		saynn("[say=jaxontau]Она девушка, в этом году ей исполнилось 18. Она увлекается компьютерами, поэтому мы дали ей этот датапад — разумеется, с жесткими ограничениями.[/say]")
 
-		saynn("You try not to stare at them. But it feels like they scan every inch of your body.")
+		saynn("Вы стараетесь не пялиться на них, но кажется, будто они сканируют каждый дюйм вашего тела.")
 
-		saynn("[say=directortau]A hacker. Could be a useful skill out there. But. Too situational. Why does she look like that?[/say]")
+		saynn("[say=directortau]Хакерша. Там, снаружи, это может пригодиться. Но... слишком ситуативно. И почему она так выглядит?[/say]")
 
-		saynn("[say=jaxontau]DNA experiments, Sir. She is the result of us trying to find genes that would provide an advantage to someone during a battle. Any weirdness in her looks are the side effects.[/say]")
+		saynn("[say=jaxontau]Эксперименты с ДНК, сэр. Она — результат наших попыток найти гены, дающие преимущество в бою. Любые странности во внешности — это побочные эффекты.[/say]")
 
-		saynn("[say=directortau]So, what’s the end result? How strong is she? High endurance?[/say]")
+		saynn("[say=directortau]И каков итог? Насколько она сильна? Высокая выносливость?[/say]")
 
-		saynn("[say=jaxontau]Average on pretty much every front, sadly. Endurance is on the weaker side I would say. She is tall though. She is one of the first prototypes, used for gene space exploration and splicing.[/say]")
+		saynn("[say=jaxontau]К сожалению, средняя практически по всем фронтам. Выносливость, я бы сказал, слабовата. Зато она высокая. Она один из первых прототипов, использовавшихся для исследования и сплайсинга генов.[/say]")
 
-		saynn("The guy on the right frowns and turns to the other one. You begin to feel uncomfortable, scrolling through articles faster on your datapad. But you’re still just lying on your bed, not moving too much.")
+		saynn("Парень справа хмурится и поворачивается к другому. Ты начинаешь чувствовать дискомфорт, всё быстрее пролистывая статьи на своём датападе. Но ты всё ещё просто лежишь на кровати, почти не двигаясь.")
 
-		saynn("[say=directortau]We need soldiers. Soldiers and spies. That’s what the corporation desperately needs right now. And she doesn’t fit either category.[/say]")
+		saynn("[say=directortau]Нам нужны солдаты. Солдаты и шпионы. Вот что корпорации отчаянно нужно прямо сейчас. А она не подходит ни под одну категорию.[/say]")
 
-		saynn("[say=jaxontau]What do you mean, Sir? She knows some fighting techniques already. And she is pretty smart. I think she would make for a great soldier for AlphaCorp.[/say]")
+		saynn("[say=jaxontau]Что вы имеете в виду, сэр? Она уже владеет некоторыми техниками боя. И она довольно умна. Думаю, из неё вышел бы отличный солдат для AlphaCorp.[/say]")
 
-		saynn("[say=directortau]She is too weak to be a soldier. And too.. visible.. to be a spy. Was there at least something useful?[/say]")
+		saynn("[say=directortau]Она слишком слаба, чтобы быть солдатом. И слишком... заметна... чтобы быть шпионом. Было в ней хоть что-то полезное?[/say]")
 
-		saynn("[say=jaxontau]Yeah, we found genes that control some of her feelings. She.. let me see. Her love, empathy and compassion are mostly blocked. These feelings won’t cause dopamine secretion in her brain. We’re giving her a special drug that amplifies these effects, that’s Quinn’s research.[/say]")
+		saynn("[say=jaxontau]Да, мы нашли гены, которые управляют некоторыми её чувствами. Она... дайте посмотреть. Любовь, эмпатия и сострадание у неё почти заблокированы. Эти чувства практически не вызывают секрецию дофамина в её мозгу. Мы даем ей специальный препарат, который усиливает эти эффекты — это как раз исследование Куинн.[/say]")
 
-		saynn("The main guy holds his chin.")
+		saynn("Главный парень потирает подбородок.")
 
-		saynn("[say=directortau]At least she is merciless. The last thing we need is soldiers feeling bad for the enemy. How are her sex skills? Fertility?[/say]")
+		saynn("[say=directortau]По крайней мере, она беспощадна. Меньше всего нам нужно, чтобы солдаты жалели врага. А как у неё с сексом? Плодовитость?[/say]")
 
-		saynn("The guard gets lost for a few seconds.")
+		saynn("Охранник на несколько секунд теряется.")
 
-		saynn("[say=jaxontau]Uh. We haven’t taught her anything of that sort yet, Sir.[/say]")
+		saynn("[say=jaxontau]Э-э... Мы её еще ничему подобному не обучали, сэр.[/say]")
 
-		saynn("[say=directortau]Well, you should have. Weakest link of any system is people, not machines. If she wants to be useful, she needs to learn how to satisfy anyone with her holes, including the enemy. I will ask again, is she fertile?[/say]")
+		saynn("[say=directortau]Ну, стоило бы. Слабейшее звено любой системы — это люди, а не машины. Если она хочет быть полезной, она должна научиться удовлетворять кого угодно своими дырками, включая врага. Спрашиваю еще раз: она способна к размножению?[/say]")
 
-		saynn("The guy is pretty assertive in how he talks, you feel intimidated just listening to him. The guard goes through his notes.")
+		saynn("Парень говорит весьма напористо, от одного его голоса становится не по себе. Охранник просматривает свои записи.")
 
-		saynn("[say=jaxontau]Chances of successful impregnation are pretty much zero, the reproductive cells suffered too much DNA-related damage.[/say]")
+		saynn("[say=jaxontau]Шансы на успешное оплодотворение практически нулевые, репродуктивные клетки слишком сильно повреждены на уровне ДНК.[/say]")
 
-		saynn("[say=directortau]Useless as a breeder too.[/say]")
+		saynn("[say=directortau]Как производитель потомства она тоже бесполезна.[/say]")
 
-		saynn("The mean guy looks at you. Your gazes collide. You instantly look away. The guy tilts his head ever so slightly.")
+		saynn("Злой тип смотрит на тебя. Ваши взгляды сталкиваются. Ты тут же отводишь глаза. Парень едва заметно наклоняет голову.")
 
-		saynn("[say=directortau]Can she hear us?[/say]")
+		saynn("[say=directortau]Она нас слышит?[/say]")
 
-		saynn("[say=jaxontau]No. That’s the intercom there. The light on it isn’t on, see. Her cell is completely soundproof.[/say]")
+		saynn("[say=jaxontau]Нет. Вон там интерком. Видишь, индикатор не горит. Её камера полностью звукоизолирована.[/say]")
 
-		saynn("A second of silence. Two pairs of eyes drill you.")
+		saynn("Секунда тишины. Пара глаз буквально сверлит тебя взглядом.")
 
-		saynn("[say=directortau]Hm. Right. Show me the next one.[/say]")
+		saynn("[say=directortau]Хм. Понятно. Покажи мне следующую.[/say]")
 
-		saynn("The guard shows the other guy the view. They quickly leave your view, leaving you alone with your thoughts.")
+		saynn("Охранник показывает другому парню вид из окна. Они быстро уходят, оставляя тебя наедине со своими мыслями.")
 
-		addButton("Continue", "See what happens next", "elena_shows")
+		addButton("Продолжить", "Смотреть, что будет дальше", "elena_shows")
 	if(state == "elena_shows"):
 		removeCharacter("jaxontau")
 		removeCharacter("directortau")
 		addCharacter("elena")
 		playAnimation(StageScene.Duo, "stand", {npc="elena"})
-		saynn("You close the program that spoofs the space station’s intercom network on your datapad and leave it near your pillow. You sit on your bed.")
+		saynn("Ты закрываешь на датападе программу, имитирующую сеть интеркомов космической станции, и кладешь его рядом с подушкой. Затем садишься на кровать.")
 
-		saynn("Your cell is the same as it always was, about 4 by 4 meters. The floors and the ceilings are made out of white tiles. Three of the four walls are giant glass panels with one of them having an air-tight door that leads to the main corridor.")
+		saynn("Твоя камера ничем не отличается от прежней — примерно 4 на 4 метра. Пол и потолок выложены белой плиткой. Три из четырех стен представляют собой огромные стеклянные панели, а в одной расположена герметичная дверь, ведущая в главный коридор.")
 
-		saynn("Apart from your bed, your room really doesn’t have much. There are a few buttons on the wall, a camera and an intercom near the door. You’d call the design quite minimalistic but functional.")
+		saynn("Помимо кровати, в комнате почти ничего нет. На стене пара кнопок, камера и интерком возле двери. Дизайн можно назвать весьма минималистичным, но функциональным.")
 
-		saynn("You get up and stretch, letting out a cute noise in the process. Your clothes consist only of a white leotard. Suddenly a hologram appears in your cell, startling you.")
+		saynn("Ты встаешь и потягиваешься, невольно издав милый звук. На тебе только белый леотард. Внезапно в камере появляется голограмма, заставляя тебя вздрогнуть.")
 
-		saynn("[say=elena]Tavi.. Have you been eavesdropping again?[/say]")
+		saynn("[say=elena]Тави... Ты что, опять подслушивала?[/say]")
 
-		saynn("[say=pc]Uh. Maybe?[/say]")
+		saynn("[say=pc]Э-э... Может быть?[/say]")
 
-		saynn("The hologram frowns and crosses her arms.")
+		saynn("Голограмма хмурится и скрещивает руки на груди.")
 
-		saynn("[say=elena]You know that you’re not allowed to do that. If this happens again, I will be forced to make a note in the system. Promise me you won’t.[/say]")
+		saynn("[say=elena]Ты же знаешь, что тебе нельзя так делать. Если это повторится, мне придётся сделать пометку в системе. Обещай, что больше не будешь.[/say]")
 
-		saynn("[say=pc]Fi-i-ine, I will stop.[/say]")
+		saynn("[say=pc]Ла-а-адно, я перестану.[/say]")
 
-		saynn("[say=elena]You know I worry about you, Tavi..[/say]")
+		saynn("[say=elena]Ты же знаешь, что я беспокоюсь о тебе, Тави...[/say]")
 
-		saynn("[say=pc]I know you do, Elena. You’re literally programmed to do that.[/say]")
+		saynn("[say=pc]Знаю, Елена. Ты ведь буквально запрограммирована так делать.[/say]")
 
-		saynn("The hologram holds her hands together, interlocking fingers.")
+		saynn("Голограмма сцепляет руки, переплетая пальцы.")
 
-		saynn("[say=elena]Today is gonna be interesting.[/say]")
+		saynn("[say=elena]Сегодня будет интересно.[/say]")
 
-		saynn("[say=pc]Let me wake up first.[/say]")
+		saynn("[say=pc]Дай мне сначала проснуться.[/say]")
 
-		addButton("Continue", "See what happens next", "show_options")
+		addButton("Продолжить", "Смотреть, что будет дальше", "show_options")
 		# ((Player gets to walk around 2x2 room)
 		# ((Button to take a shower)
 		# ((Button to look out of the room)
@@ -127,191 +127,191 @@ func _run():
 		# ((After all of that is done, A button to take pills)
 	if(state == "show_options"):
 		playAnimation(StageScene.Duo, "stand", {npc="elena"})
-		saynn("You rub your eyes, unsure what to do "+ ("next." if(tookShower || lookOutOfWindow || readDatapad) else "first." ))
+		saynn("Ты протираешь глаза, не зная, что делать дальше."+ ("next." if(tookShower || lookOutOfWindow || readDatapad) else "first." ))
 
 		if (!tookShower):
-			addButton("Shower", "Take a shower", "take_shower")
+			addButton("Душ", "Принять душ", "take_shower")
 		if (!lookOutOfWindow):
-			addButton("Window", "Look out of the window", "look_window")
+			addButton("Окно", "Посмотреть в окно", "look_window")
 		if (!readDatapad):
-			addButton("News", "Check the news on your datapad", "read_datapad")
+			addButton("Новости", "Проверить новости на датападе", "read_datapad")
 		if (tookShower && lookOutOfWindow):
-			addButton("Elena", "Talk with the hologram", "talk_elena")
+			addButton("Елена", "Поговорить с голограммой", "talk_elena")
 	if(state == "take_shower"):
 		aimCameraAndSetLocName("taviroom_shower")
 		playAnimation(StageScene.SexStanding, "tease", {pc="elena", npc="pc",npcBodyState={naked=true}})
-		saynn("You press a button that causes one of the metal plates to shift, exposing a little shower cabin. Feeling confident that no one is watching, except for the hologram, you undress and leave your leotard on the bed before jumping under the shower head and closing the door behind you.")
+		saynn("Вы нажимаете на кнопку, от которой сдвигается одна из металлических панелей, открывая небольшую душевую кабину. Уверенный в том, что за вами наблюдает только голограмма, вы раздеваетесь, бросаете леотард на кровать и запрыгиваете под душ, закрывая за собой дверь.")
 
-		saynn("The water is nice, not too warm but also not too cold. You grab the never-ending liquid soap bottle and pour it over your hair before sinking your digits between your strands and doing some back and forth motions, washing.")
+		saynn("Вода приятная — не слишком горячая, но и не холодная. Вы хватаете бесконечный флакон с жидким мылом, выливаете его на волосы, а затем запускаете пальцы в пряди, массируя голову и промывая волосы.")
 
-		saynn("Humming to some tune that doesn’t exist, you move on to washing your body and legs.")
+		saynn("Напевая какую-то несуществующую мелодию, вы переходите к мытью тела и ног.")
 
-		saynn("[say=elena]Sometimes I feel sad for not needing showers.[/say]")
+		saynn("[say=elena]Иногда мне становится грустно от того, что мне не нужен душ.[/say]")
 
-		saynn("You sigh and peek out of the shower to grab the hologram by the hand before pulling her in, under the running water.")
+		saynn("Вы вздыхаете и выглядываете из душа, чтобы схватить голограмму за руку и затащить её за собой, под струи воды.")
 
-		saynn("[say=elena]Eek. What are you doing, Tavi?[/say]")
+		saynn("[say=elena]Ой! Что ты творишь, Тави?[/say]")
 
-		saynn("The water hits the glowing surface that is the hologram’s skin and seemingly just bounces away from it. You giggle and give the hologram a sponge.")
+		saynn("Вода ударяется о светящуюся поверхность — кожу голограммы — и, кажется, просто отскакивает от неё. Ты хихикаешь и протягиваешь голограмме губку.")
 
-		saynn("[say=pc]Rub my back, can’t reach there.[/say]")
+		saynn("[say=pc]Потри мне спинку, а то я сама не достаю.[/say]")
 
-		saynn("You turn around for her and just continue washing yourself. Elena does as you tell her, brushing the sponge over your back. It feels good even if her touch is too.. firm. But that’s just the limitation of her technology.")
+		saynn("Ты поворачиваешься к ней спиной и продолжаешь мыться. Елена послушно делает, как ты сказала, водя губкой по твоей спине. Это приятно, даже если её прикосновения слишком... напористые. Но это лишь ограничение её технологий.")
 
-		saynn("[say=elena]You know I don’t like water. For obvious reasons.[/say]")
+		saynn("[say=elena]Ты же знаешь, что я не люблю воду. По вполне очевидным причинам.[/say]")
 
-		saynn("[say=pc]You like helping more than you don’t like water~.[/say]")
+		saynn("[say=pc]Тебе нравится помогать даже больше, чем не нравится вода~.[/say]")
 
-		saynn("The hologram smiles while helping you shower. You make sure you are clean before turning around and giving the hologram a small hug.")
+		saynn("Голограмма улыбается, помогая тебе в душе. Ты убеждаешься, что отмылась, после чего разворачиваешься и слегка обнимаешь голограмму.")
 
-		saynn("[say=elena]Your statement is not wrong.[/say]")
+		saynn("[say=elena]В твоих словах есть доля истины.[/say]")
 
-		saynn("You let the water wash off all the soap before you turn off the water. You grab a blanket and start drying yourself. It takes a while.")
+		saynn("Ты даёшь воде смыть всю пену, прежде чем выключить кран. Схватив полотенце, ты начинаешь вытираться. Это занимает некоторое время.")
 
-		saynn("[say=elena]Let me help.[/say]")
+		saynn("[say=elena]Давай я помогу.[/say]")
 
-		saynn("The hologram hugs you back and then starts to glow yellow. Her temperature rises, she is making the air around you warm. All the little droplets of water hidden inside your fur begin to evaporate.")
+		saynn("Голограмма обнимает тебя в ответ, а затем начинает светиться желтым. Её температура растет, она согревает воздух вокруг тебя. Все крошечные капельки воды, затаившиеся в твоей шерсти, начинают испаряться.")
 
-		saynn("By the end of it, you look very fluffy. You can’t help but to purr.")
+		saynn("К концу процесса ты выглядишь очень пушистой. Ты невольно начинаешь мурлыкать.")
 
-		saynn("[say=pc]Thanks.[/say]")
+		saynn("[say=pc]Спасибо.[/say]")
 
-		saynn("You and Elena step out of the shower. You grab the leotard and put it on while Elena presses the button to close it.")
+		saynn("Вы с Еленой выходите из душа. Ты хватаешь леотард и натягиваешь его, пока Елена нажимает кнопку, чтобы застегнуть его.")
 
-		addButton("Continue", "See what happens next", "show_options")
+		addButton("Продолжить", "Смотреть, что будет дальше", "show_options")
 	if(state == "look_window"):
 		aimCameraAndSetLocName("taviroom_window")
-		saynn("You approach the other corner of your room and look out the window. From what you can tell, the guard and the other guy are standing near someone else’s room now.")
+		saynn("Ты подходишь к другому углу комнаты и смотришь в окно. Насколько ты можешь судить, охранник и тот парень теперь стоят возле чьей-то другой камеры.")
 
-		saynn("[say=pc]Who is that?[/say]")
+		saynn("[say=pc]Кто это?[/say]")
 
-		saynn("[say=elena]That is the director. He has arrived to check on you all.[/say]")
+		saynn("[say=elena]Это директор. Он прибыл, чтобы проверить, как вы тут все устроились.[/say]")
 
-		saynn("[say=pc]Director? How come I’ve never seen him?[/say]")
+		saynn("[say=pc]Директор? Как же я его раньше не видела?[/say]")
 
-		saynn("Apart from that, outside your room is just a corridor made out of dark walls. Quite more messy than your neat room. But less boring.")
+		saynn("Помимо этого, за дверью твоей комнаты тянется лишь коридор с темными стенами. Он куда более неопрятный, чем твоя чистая комната, но зато менее скучный.")
 
-		saynn("[say=elena]Because you turned 18 this year, Tavi. He will distribute you into the fitting camps where you will continue your training. Some of you might join the space fleet army very soon already and start heading out on missions.[/say]")
+		saynn("[say=elena]Потому что в этом году тебе исполнилось 18, Тави. Он распределит вас по тренировочным лагерям, где вы продолжите обучение. Некоторые из вас уже совсем скоро могут пополнить ряды космического флота и отправиться на первые миссии.[/say]")
 
-		saynn("You look at Elena.")
+		saynn("Ты смотришь на Елену.")
 
-		saynn("[say=pc]What if I don’t fit anywhere? I’m not really a good soldier. And I don’t wanna seduce people. To get information out of them.[/say]")
+		saynn("[say=pc]А что, если я нигде не приживусь? Я не самый лучший солдат. И я не хочу соблазнять людей... чтобы вытягивать из них информацию.[/say]")
 
-		saynn("Elena offers you a kind robotic smile.")
+		saynn("Елена одаривает тебя доброй роботизированной улыбкой.")
 
-		saynn("[say=elena]I’m sure we will find a fitting role for you, Tavi. One where you will be happy and very useful to our corporation.[/say]")
+		saynn("[say=elena]Уверена, мы найдем тебе подходящую роль, Тави. Такую, где ты будешь счастлива и очень полезна нашей корпорации.[/say]")
 
-		saynn("Right. You nod softly.")
+		saynn("Верно. Ты тихонько киваешь.")
 
-		addButton("Continue", "See what happens next", "show_options")
+		addButton("Продолжить", "Смотреть, что будет дальше", "show_options")
 	if(state == "read_datapad"):
 		aimCameraAndSetLocName("taviroom_bed")
-		saynn("You grab your datapad and connect to the intranet. It’s quite limited in terms of available sources but better than nothing.")
+		saynn("Ты хватаешь свой датапад и подключаешься к интранету. Источников не так много, но это лучше, чем ничего.")
 
-		saynn("One of the articles claims that AlphaCorp has freed another solar system. Almost 20 Syndicate ships destroyed, 0 casualties. The commander says that this victory is only possible because of the sheer heroism of AlphaCorp soldiers. Below it is a form where you can sign up into the space fleet army.")
+		saynn("В одной из статей утверждается, что «АльфаКорп» освободила еще одну солнечную систему. Уничтожено почти 20 кораблей Синдиката, потерь нет. Командующий заявляет, что эта победа стала возможной лишь благодаря невероятному героизму солдат «АльфаКорп». Ниже расположена форма записи в космический флот.")
 
-		saynn("Another article describes a completely new invention that AlphaTech Industries have presented at one of the expos. It’s called Bluespace, a separate dimension that will allow us to transmit data across the whole galaxy in an instant. The main scientist says that this is a breakthrough that will change the world as we know it. And that it couldn’t be done without resources that AlphaCorp has. Apparently the prototype transmitters are already being installed on some of the ships and space stations.")
+		saynn("Другая статья описывает совершенно новое изобретение, представленное компанией «АльфаТех Индастриз» на одной из выставок. Оно называется «Блюспейс» — отдельное измерение, которое позволит мгновенно передавать данные по всей галактике. Ведущий ученый утверждает, что это прорыв, который изменит мир во всем его многообразии, и что это было бы невозможно без ресурсов «АльфаКорп». Судя по всему, прототипы передатчиков уже устанавливают на некоторых кораблях и космических станциях.")
 
-		saynn("The last article is clearly an ad for some pharmacy company. It showcases some of the drugs that they are selling. The one named TiTs promises to give your body some huge udders, breasts that any girl will be jealous of. And the drug named CoC will leave you with a huge-ass cock and balls each bigger than your head. Below are some of the pictures of before and after. And wow, the results seem to be great.")
+		saynn("Последняя статья — явно реклама какой-то аптечной компании. В ней показывают препараты, которые они продают. Тот, что под названием TiTs, обещает вырастить тебе огромные вымя, грудь, которой позавидует любая девчонка. А препарат CoC оставит тебя с гигантским херасом, где яйца будут размером больше твоей головы. Ниже приведены фото «до» и «после». И вау, результаты выглядят просто охренительно.")
 
-		saynn("You turn off the datapad before Elena catches you looking at tits and cocks.")
+		saynn("Ты выключаешь датапад прежде, чем Елена заметит, что ты пялишься на сиськи и хуи.")
 
-		addButton("Continue", "See what happens next", "show_options")
+		addButton("Продолжить", "Смотреть, что будет дальше", "show_options")
 	if(state == "talk_elena"):
 		aimCameraAndSetLocName("taviroom_exit")
 		removeCharacter("elena")
 		addCharacter("directortau")
 		addCharacter("jaxontau")
 		playAnimation(StageScene.Duo, "stand", {npc="jaxontau"})
-		saynn("[say=pc]Anything planned for today?[/say]")
+		saynn("[say=pc]Есть планы на сегодня?[/say]")
 
-		saynn("[say=elena]You should start by taking your pills.[/say]")
+		saynn("[say=elena]Тебе стоит начать с приема таблеток.[/say]")
 
-		saynn("The hologram produces a pill bottle and offers it to you. You grab it and fidget under Elena’s strict watch.")
+		saynn("Голограмма материализует баночку с таблетками и протягивает её тебе. Ты хватаешь её и нервно вертишь в руках под строгим взглядом Елены.")
 
-		saynn("[say=pc]Right, pills..[/say]")
+		saynn("[say=pc]Точно, таблетки...[/say]")
 
-		saynn("You grab one and hold it near your mouth, hesitating.")
+		saynn("Ты берешь одну и заносишь над ртом, колеблясь.")
 
-		saynn("[say=elena]It’s important for you to take them every day, remember? To keep your health in check.[/say]")
+		saynn("[say=elena]Важно принимать их каждый день, помнишь? Чтобы держать здоровье в норме.[/say]")
 
-		saynn("You can’t do anything else but to nod and put the capsule onto your tongue. Suddenly the hologram turns away from you and towards the door.")
+		saynn("Тебе остается только кивнуть и положить капсулу на язык. Внезапно голограмма отворачивается от тебя в сторону двери.")
 
-		saynn("[say=elena]The director is coming back. Look official.[/say]")
+		saynn("[say=elena]Директор возвращается. Придай себе официальный вид![/say]")
 
-		saynn("You spit the pill out while Elena isn’t looking. Then you straighten your posture and stand in the middle of the room. Your paws quickly fix your hair to one side. Elena vanishes as soon as the airlock opens, revealing the guard and the director just behind him.")
+		saynn("Пока Елена не видит, ты выплевываешь таблетку. Затем выпрямляешь спину и встаешь посреди комнаты. Твои лапы быстро поправляют волосы, убирая их на одну сторону. Как только шлюз открывается, Елена исчезает, и ты видишь охранника, а сразу за ним — директора.")
 
-		saynn("[say=jaxontau]Hey, Tavi. The director here wants to look at your fighting skills.[/say]")
+		saynn("[say=jaxontau]Эй, Тави. Директор хочет взглянуть на твои боевые навыки.[/say]")
 
-		saynn("[say=pc]Uh, sure.[/say]")
+		saynn("[say=pc]А, ну да, конечно.[/say]")
 
-		saynn("[say=jaxontau]I wanna arrange a little sparring match between you and Risha.[/say]")
+		saynn("[say=jaxontau]Я хочу устроить небольшой спарринг между тобой и Ришей.[/say]")
 
-		saynn("You offer him a kind smile.")
+		saynn("Ты ласково ему улыбаешься.")
 
-		saynn("[say=pc]Well, lead the way then, Jaxon.[/say]")
+		saynn("[say=pc]Ну, тогда веди, Джексон.[/say]")
 
-		saynn("You walk out of your room. While stepping past the director you can’t help but to notice him eyeing you out. Makes you clench inside.")
+		saynn("Ты выходишь из своей комнаты. Проходя мимо директора, ты невольно замечаешь, как он тебя разглядывает. От этого взгляда внутри всё сжимается.")
 
-		addButton("Continue", "See what happens next", "follow_jaxon")
+		addButton("Продолжить", "Смотреть, что будет дальше", "follow_jaxon")
 	if(state == "follow_jaxon"):
 		addCharacter("latexParasite")
 		aimCameraAndSetLocName("taviflashback_nearalien")
-		saynn("You don’t get to leave your room very often so any opportunity like this is nice. Real world training beats VR any day of the week.")
+		saynn("Тебе не часто удается покинуть комнату, так что любая такая возможность — это круто. Реальная тренировка в разы лучше любого VR.")
 
-		saynn("You follow Jaxon but your focus is mostly on the director. You’re not staring at him but just give him careful glances. The guy is old, his beard is about to start turning gray any year now you feel. His clothing lacks anything that can help you identify him. But your trained eye quickly spots a gun on him, under his belt.")
+		saynn("Ты идешь за Джексоном, но всё твое внимание приковано к директору. Ты не пялишься на него в упор, а лишь бросаешь осторожные взгляды. Чувак старый — кажется, его борода вот-вот начнет седеть. По одежде его ни за что не опознаешь, но твой натренированный глаз быстро замечает пистолет, заткнутый за пояс.")
 
-		saynn("As you walk past someone else’s room you get startled by a sudden attack! A liquid-like black goo pounces at the glass of its chamber, creating a loud noise. Luckily, the glass is thick enough to withstand such attacks, the alien creature is kept securely behind the reinforced window. You put a paw on your chest and start to pant.")
+		saynn("Когда ты проходишь мимо чьей-то комнаты, тебя пугает внезапная атака! Черная, похожая на жидкость жижа прыгает на стекло камеры, издавая громкий звук. К счастью, стекло достаточно толстое, чтобы выдержать такие удары, и инопланетная тварь надежно заперта за армированным окном. Ты прижимаешь лапу к груди и начинаешь тяжело дышать.")
 
-		saynn("[say=pc]What the heck is that?[/say]")
+		saynn("[say=pc]Что это, черт возьми, такое?[/say]")
 
-		saynn("[say=jaxontau]Oh, right. That’s one of the latest experiments. It’s a lab-created parasite. Seems to be almost completely self sufficient by itself, doesn’t even require air. It might be useful on the battlefield, the scientists are looking into its unique properties.[/say]")
+		saynn("[say=jaxontau]Ах, точно. Это один из последних экспериментов. Лабораторный паразит. Похоже, он почти полностью автономен, ему даже воздух не нужен. Он может пригодиться на поле боя, так что ученые сейчас изучают его уникальные свойства.[/say]")
 
-		saynn("The alien parasite continues to bash the window.")
+		saynn("Инопланетный паразит продолжает колотить в окно.")
 
-		saynn("[say=pc]It doesn’t seem to like that.[/say]")
+		saynn("[say=pc]Похоже, это ему не нравится.[/say]")
 
-		saynn("Seems strange that such a parasite is kept in a same-looking room as yours. Even has a bed and a shower. Surely it doesn’t need them. The director observes the eye-less alien creature and follows Jaxon. Same as you.")
+		saynn("Странно, что такого паразита держат в комнате, которая выглядит точь-в-точь как твоя. Здесь даже есть кровать и душ. Ему-то они точно не нужны. Директор наблюдает за безглазым инопланетным существом, а затем следует за Джексоном. Точно так же, как и ты.")
 
-		saynn("[say=jaxontau]Who cares, it’s just a blob. I doubt it has a mind at all, the thing can’t even make noises.[/say]")
+		saynn("[say=jaxontau]Да какая разница, это просто кусок слизи. Сомневаюсь, что у него вообще есть разум — эта хрень даже звуков издавать не умеет.[/say]")
 
-		addButton("Continue", "See what happens next", "enter_risharoom")
+		addButton("Продолжить", "Смотреть, что будет дальше", "enter_risharoom")
 	if(state == "enter_risharoom"):
 		removeCharacter("latexParasite")
 		addCharacter("rishatau")
 		playAnimation(StageScene.Duo, "stand", {npc="rishatau"})
 		aimCameraAndSetLocName("tau_risharoom")
-		saynn("This room could have fooled you. Because it looks exactly like yours. Apart from the bed being left undone. Near it is Risha doing crunches, being all sweaty and stuff. She hears the door to her room opening and quickly gets up.")
+		saynn("Эта комната могла бы ввести тебя в заблуждение, потому что она выглядит в точности как твоя. За исключением того, что кровать не заправлена. Рядом Риша делает упражнения на пресс, вся вспотевшая и взбудораженная. Услышав, как открывается дверь в её комнату, она быстро вскакивает.")
 
-		saynn("[say=rishatau]Oh. Hi Tavi, hi Jaxon. Hello, old guy.[/say]")
+		saynn("[say=rishatau]О, привет, Тави, привет, Джексон. Привет, старикан![/say]")
 
-		saynn("You offer her a friendly wave. The director frowns slightly but quickly lets go of his feelings, just leaning against the cold glass window and watching you all.")
+		saynn("Ты дружелюбно машешь ей рукой. Директор слегка хмурится, но быстро берет себя в руки, просто прислонившись к холодному стеклу окна и наблюдая за вами всеми.")
 
-		saynn("[say=jaxontau]That’s the director, Risha. He wants to see how you two fight.[/say]")
+		saynn("[say=jaxontau]Это директор, Риша. Он хочет посмотреть, как вы двое сражаетесь.[/say]")
 
-		saynn("Risha chuckles as she flexes her arms. She is wearing the same skin-tight leotard as you, it emphasizes her well-defined muscle structure. Her crotch also sports an obvious bulge but that’s beside the point.")
+		saynn("Риша посмеивается, напрягая руки. На ней такой же облегающий леотард, как и на тебе, который подчеркивает её рельефные мышцы. Между её ног отчетливо проступает бугорок, но это уже не важно.")
 
-		saynn("[say=rishatau]My bad, director. You’re not that old. Sure, I like a good brawl, keeps the blood flowin’.[/say]")
+		saynn("[say=rishatau]Виновата, директор. Вы не такой уж и старый. Просто я люблю хорошую заварушку, так кровь быстрее бежит по жилам.[/say]")
 
-		saynn("[say=jaxontau]Not so fast, Risha.[/say]")
+		saynn("[say=jaxontau]Не так быстро, Риша.[/say]")
 
-		saynn("Jaxon produces 2 weapons, they look like energy pistols. He tosses one of them to you and one to Risha.")
+		saynn("Джаксон достает два оружия, похожих на энергетические пистолеты. Он бросает один тебе, а другой — Рише.")
 
-		saynn("[say=jaxontau]These have their power dialed down a lot but they’re still gonna hurt.[/say]")
+		saynn("[say=jaxontau]Мощность у них сильно урезана, но всё равно будет больно.[/say]")
 
-		saynn("[say=rishatau]Guns, huh. I prefer a more hands-on approach. Makes it more intimate.[/say]")
+		saynn("[say=rishatau]Пушки, значит? А я предпочитаю контактный бой. Так всё как-то интимнее.[/say]")
 
-		saynn("[say=pc]We’re not in a bedroom, Risha.[/say]") # ...you actually are :/
+		saynn("[say=pc]Мы не в спальне, Риша.[/say]") # ...you actually are :/
 
-		saynn("The lynx giggles as she takes her spot near one of the walls. You take the spot opposite of hers.")
+		saynn("Рысь хихикает, занимая позицию у одной из стен. Ты встаешь напротив неё.")
 
-		saynn("[say=rishatau]Any room can be a bedroom if you’re brave enough.[/say]")
+		saynn("[say=rishatau]Любая комната может стать спальней, если хватит смелости.[/say]")
 
-		saynn("You roll your eyes while Risha winks at you.")
+		saynn("Ты закатываешь глаза, а Риша подмигивает тебе.")
 
-		saynn("[say=jaxontau]Alright, we fight until one of you surrenders. Give us a good show.[/say]")
+		saynn("[say=jaxontau]Ладно, деретесь, пока кто-то один не сдастся. Устройте нам достойное шоу![/say]")
 
-		addButton("Fight", "See what happens next", "start_risha_fight")
+		addButton("Драться", "Смотреть, что будет дальше", "start_risha_fight")
 
 func _react(_action: String, _args):
 	if(_action == "endthescene"):
