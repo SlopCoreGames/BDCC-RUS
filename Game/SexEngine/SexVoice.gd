@@ -36,7 +36,7 @@ static func domReactToSubBodypart(_bodypart, _sexEngine, _domInfo, _subInfo) -> 
 		if(likesBigBreasts > 0.2):
 			if(domIsAngry || domIsMean):
 				possible.append_array([
-					"Well, well, well, look at the size of those things! I bet you could feed the whole space station with those "+RNG.pick(["melons", "tits", "giant tits", "breasts", "giant breasts"])+".",
+					"Well, well, well, look at the size of those things! I bet you could feed the whole space station with those "+RNG.pick(["melons", "tits", "гигантские сиськи", "breasts", "гигантская грудь"])+".",
 					"Wow, didn't think it was possible for someone to have such big "+RNG.pick(["tits", "breasts", "melons"])+". You must get a lot of attention with those.",
 					"I don't know if I should be impressed or intimidated by those massive mammaries of yours.",
 					"I bet those babies have their own gravitational field.",
@@ -70,7 +70,7 @@ static func domReactToSubBodypart(_bodypart, _sexEngine, _domInfo, _subInfo) -> 
 					"Large "+RNG.pick(["tits", "breasts"])+" are a hassle and only get in the way.",
 					"Oh wow. I prefer a more natural and understated look.",
 					"I don't like "+RNG.pick(["giant", "large"])+" "+RNG.pick(["tits", "breasts"])+". They're just too much for me.",
-					RNG.pick(["Giant", "Large"])+" "+RNG.pick(["tits", "breasts"])+" just don't do it for me, sadly.",
+					RNG.pick(["Гигантский", "Большой"])+" "+RNG.pick(["tits", "breasts"])+" just don't do it for me, sadly.",
 					"Huge knockers are a bit much for my taste.",
 				])
 		
@@ -96,8 +96,8 @@ static func domReactToSubBodypart(_bodypart, _sexEngine, _domInfo, _subInfo) -> 
 		elif(likesAverageBreasts < -0.2):
 			if(domIsAngry || domIsMean):
 				possible.append_array([
-					"I can't believe some people are satisfied with such mediocre "+RNG.pick(["chest size", "tits", "breasts"])+". It's truly pathetic.",
-					"Why would anyone settle for average "+RNG.pick(["chest size", "tits", "breasts"])+"? It's like they don't even care about having any sex appeal at all.",
+					"I can't believe some people are satisfied with such mediocre "+RNG.pick(["размер груди", "tits", "breasts"])+". It's truly pathetic.",
+					"Why would anyone settle for average "+RNG.pick(["размер груди", "tits", "breasts"])+"? It's like they don't even care about having any sex appeal at all.",
 					"Your "+RNG.pick(["tits", "breasts"])+" are so... average. Don't know what I expected.",
 					"I'd rather be flat-chested than have average "+RNG.pick(["tits", "breasts"])+". At least that would be a unique and interesting look, unlike this dull and boring average size.",
 				])
@@ -161,7 +161,7 @@ static func domReactToSubBodypart(_bodypart, _sexEngine, _domInfo, _subInfo) -> 
 		if(likesTightAnus > 0.3):
 			possible.append_array([
 				"Your tight "+RNG.pick(["anus", "tailhole", "ass", "butt", "butthole"])+" is quite enticing, won't lie.",
-				RNG.pick(["Nice", "Great"])+" "+RNG.pick(["butt", "butthole", "ass"])+" you have. I like my fuckholes tight.",
+				RNG.pick(["Приятно", "Отлично"])+" "+RNG.pick(["butt", "butthole", "ass"])+" you have. I like my fuckholes tight.",
 				"Ohh. Your "+RNG.pick(["anus", "tailhole", "ass", "butt", "butthole"])+" is so tight and perfect.",
 			])
 		elif(likesTightAnus < -0.3):
@@ -181,7 +181,7 @@ static func domReactToSubBodypart(_bodypart, _sexEngine, _domInfo, _subInfo) -> 
 		elif(likesLooseAnus < -0.3):
 			possible.append_array([
 				"Why would anyone want their "+RNG.pick(["anus", "tailhole", "ass", "butt", "butthole"])+" to look like that?",
-				"I don't get the appeal of having a "+RNG.pick(["stretched out", "gaping"])+" "+RNG.pick(["anus", "tailhole", "ass", "butt", "butthole"]),
+				"I don't get the appeal of having a "+RNG.pick(["растянутая", "gaping"])+" "+RNG.pick(["anus", "tailhole", "ass", "butt", "butthole"]),
 				"How many dicks did you had in that "+RNG.pick(["anus", "tailhole", "ass", "butt", "butthole"])+"? Looks so loose.",
 				"Not a fan of loose-looking "+RNG.pick(["anuses", "buttholes", "butts", "asses"])+".",
 				"Not sure how attractive "+RNG.pick(["stretched", "loose"])+" "+RNG.pick(["anuses", "buttholes", "butts", "asses"])+" look.",
@@ -194,9 +194,9 @@ static func domReactToSubBodypart(_bodypart, _sexEngine, _domInfo, _subInfo) -> 
 		
 		if(likesTightVagina > 0.3):
 			possible.append_array([
-				"Your tight "+RNG.pick(["pussy", "slit", "pussy slit"])+" is quite enticing, won't lie.",
-				RNG.pick(["Nice", "Great"])+" "+RNG.pick(["pussy", "slit", "pussy slit"])+" you have. I like tight ones.",
-				"Ohh. Your "+RNG.pick(["pussy", "slit", "pussy slit"])+" is so tight and perfect.",
+				"Your tight "+RNG.pick(["pussy", "slit", "щель киски"])+" is quite enticing, won't lie.",
+				RNG.pick(["Приятно", "Отлично"])+" "+RNG.pick(["pussy", "slit", "щель киски"])+" you have. I like tight ones.",
+				"Ohh. Your "+RNG.pick(["pussy", "slit", "щель киски"])+" is so tight and perfect.",
 			])
 		elif(likesTightVagina < -0.3):
 			possible.append_array([
@@ -207,16 +207,16 @@ static func domReactToSubBodypart(_bodypart, _sexEngine, _domInfo, _subInfo) -> 
 		
 		if(likesLooseVagina > 0.3):
 			possible.append_array([
-				"Your stretched "+RNG.pick(["snatch", "pussy", "pussy slit"])+" is quite hot, won't lie.",
+				"Your stretched "+RNG.pick(["snatch", "pussy", "щель киски"])+" is quite hot, won't lie.",
 				"Huh, your "+RNG.pick(["pussy", "vulva"])+" looks extra plump, love it.",
 				"Oh, I'm a fan of loose gaping "+RNG.pick(["cunts", "pussies", "slits"])+".",
 				"Oh yeah, that "+RNG.pick(["pussy", "slit", "cunt"])+" can fit a lot of "+RNG.pick(["dicks", "cocks"])+".",
 			])
 		elif(likesLooseVagina < -0.3):
 			possible.append_array([
-				"Why would anyone want their "+RNG.pick(["labia", "pussy", "pussy slit", "pussy folds"])+" to look like that?",
-				"I don't get the appeal of having a "+RNG.pick(["stretched out", "gaping"])+" "+RNG.pick(["pussy", "slit", "kitty slit"]),
-				"How many dicks did you had in that "+RNG.pick(["cunt", "pussy slit", "pussy"])+"? Looks so loose.",
+				"Why would anyone want their "+RNG.pick(["labia", "pussy", "щель киски", "складки киски"])+" to look like that?",
+				"I don't get the appeal of having a "+RNG.pick(["растянутая", "gaping"])+" "+RNG.pick(["pussy", "slit", "щелочка"]),
+				"How many dicks did you had in that "+RNG.pick(["cunt", "щель киски", "pussy"])+"? Looks so loose.",
 				"Not a fan of loose-looking "+RNG.pick(["pussies", "vaginas", "slits", "cunts"])+".",
 				"Not sure how attractive "+RNG.pick(["stretched", "loose"])+" "+RNG.pick(["pussies", "cunts", "slits"])+" look.",
 			])
@@ -259,7 +259,7 @@ static func domReactToSubBodypart(_bodypart, _sexEngine, _domInfo, _subInfo) -> 
 		
 		if(likesBigCock > 0.1):
 			possible.append_array([
-				"Oh wow, that's one impressive "+RNG.pick(["dick", "cock", "monster of a cock"]),
+				"Oh wow, that's one impressive "+RNG.pick(["dick", "cock", "монструозный член"]),
 				"I can't believe how big you are. I'm impressed.",
 				"I didn't think they came that big. Wow.",
 				"I bet that's a lot of fun to play with.",

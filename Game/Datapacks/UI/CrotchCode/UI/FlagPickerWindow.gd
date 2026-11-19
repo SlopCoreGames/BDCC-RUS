@@ -72,7 +72,7 @@ func updateSourcesList():
 	source_list.clear()
 	for sourceData in sources:
 		if(sourceData[1] == "g"):
-			source_list.add_item("GAME FLAGS")
+			source_list.add_item("ИГРОВЫЕ ФЛАГИ")
 		else:
 			source_list.add_item(sourceData[0])
 		

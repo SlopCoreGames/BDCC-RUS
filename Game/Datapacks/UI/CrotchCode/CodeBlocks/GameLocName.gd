@@ -22,7 +22,7 @@ func execute(_contex:CodeContex):
 		return ""
 	
 	if(GM.world == null || !is_instance_valid(GM.world)):
-		return "!LOC NAME HERE!"
+		return "!ИМЯ ЗДЕСЬ!"
 	var room = GM.world.getRoomByID(amValue)
 	if(room == null):
 		throwError(_contex, "Room with the id "+str(amValue)+" wasn't found!")

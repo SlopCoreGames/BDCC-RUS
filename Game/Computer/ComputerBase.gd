@@ -48,7 +48,7 @@ func inputCommand(_commandString:String):
 	return lastOutput
 
 func reactToCommand(_command:String, _args:Array, _commandStringRaw:String):
-	return "Hello world"
+	return "Привет, мир!"
 
 func markFinished(theargs = []):
 	ended = true

@@ -19,8 +19,8 @@ func _init():
 	sexReactionPullOut = SexReaction.BeggingToPullOutAnal
 	isVag = false
 	
-	activityName = "Anal"
-	activityDesc = "Fuck their ass!"
+	activityName = "Анальный"
+	activityDesc = "Трахни им жопу!"
 	
 func getGoals():
 	if(currentPose == POSE_CHOKEFUCK):

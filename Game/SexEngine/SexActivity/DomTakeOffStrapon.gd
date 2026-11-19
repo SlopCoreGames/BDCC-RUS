@@ -5,8 +5,8 @@ func _init():
 	startedByDom = true
 	startedBySub = false
 	
-	activityName = "Take off strapon"
-	activityDesc = "Taking off the strapon"
+	activityName = "Снять страпон"
+	activityDesc = "Снимает страпон"
 	activityCategory = ["Undress"]
 
 func getGoals():
@@ -39,9 +39,9 @@ func getStartActions(_sexEngine: SexEngine, _domInfo: SexDomInfo, _subInfo: SexS
 	var subTakeOffScore = 1.0 - domSubStraponGoalScore
 	
 	if(!_sexEngine.hasTag(_domInfo.charID, SexActivityTag.PenisUsed) && dom.isWearingStrapon()):
-		addStartAction(["dom"], "Take off strapon", "Take off your strapon", domTakeOffScore, {A_CATEGORY: ["Undress"]})
+		addStartAction(["dom"], "Снять страпон", "Сними свой страпон", domTakeOffScore, {A_CATEGORY: ["Undress"]})
 	if(!_sexEngine.hasTag(_subInfo.charID, SexActivityTag.PenisUsed) && sub.isWearingStrapon()):
-		addStartAction(["sub"], "Take off sub strapon", "Take off sub's strapon", subTakeOffScore, {A_CATEGORY: ["Undress"]})
+		addStartAction(["sub"], "Снять страпон саба", "Снять страпон саба", subTakeOffScore, {A_CATEGORY: ["Undress"]})
 
 func getTags(_indx:int) -> Array:
 	if(_indx == DOM_0):
@@ -57,7 +57,7 @@ func startActivity(_args):
 			GlobalRegistry.getCharacter("pc").getInventory().addItem(strapon)
 		else:
 			getDom().getInventory().removeEquippedItem(strapon)
-		addText("{dom.You} {dom.youVerb('take')} off {dom.yourHis} strapon.")
+		addText("{dom.You} {dom.youVerb('take')} {dom.yourHis} страпон.")
 		return
 	
 	if(_args[0] == "sub"):
@@ -67,5 +67,5 @@ func startActivity(_args):
 			GlobalRegistry.getCharacter("pc").getInventory().addItem(strapon)
 		else:
 			getSub().getInventory().removeEquippedItem(strapon)
-		addText("{dom.You} {dom.youVerb('take')} off {sub.your} strapon.")
+		addText("{dom.You} {dom.youVerb('take')} {sub.your} страпон.")
 		return

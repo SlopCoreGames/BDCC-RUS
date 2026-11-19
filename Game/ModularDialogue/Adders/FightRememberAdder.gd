@@ -28,13 +28,13 @@ func canBeUsed(_id:String, _args:Dictionary, _form) -> bool:
 func getText(_id:String, _args:Dictionary):
 	if(_id in ["GuardCaughtOffLimits", "AttackReact"]):
 		return [
-			"Wait, didn't I beat you up the other day?",
-			"Wait, didn't I beat you up the other day? You want more?",
-			"I remember beating you up the other day. You came back for more?",
+			"Погоди, разве я не отделал тебя на днях?",
+			"Погоди, разве я не отделал тебя на днях? Хочешь добавки?",
+			"Помню, как в прошлый раз всыпал тебе люлей. Снова приперся?",
 		]
 	if(_id == "AttackStart"):
 		return [
-			"I'm gonna do this until you learn your place.",
+			"Буду делать это до тех пор, пока ты не поймешь свое место.",
 		]
 	
 	return []

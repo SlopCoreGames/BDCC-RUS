@@ -25,8 +25,8 @@ func getAvaiablePoses() -> Array:
 func _init():
 	id = "TentaclesStrokePenis"
 	
-	activityName = "Stroke penis"
-	activityDesc = "Make them feel good"
+	activityName = "Ласкать член"
+	activityDesc = "Дать им почувствовать блаженство"
 	activityCategory = ["Fuck"]
 
 func getGoals():
@@ -86,36 +86,36 @@ func startActivity(_args):
 	if(exposedThings.size() > 0):
 		genitalsText = "exposed "+Util.humanReadableList(exposedThings)
 	
-	addText("The tentacles grab {sub.you}. One tendril slides down to {sub.yourHis} "+genitalsText+".")
+	addText("Тентакли обхватывают {sub.you}. Один отросток скользит вниз к {sub.yourHis} "+genitalsText+".")
 
 func handjob_processTurn():
 	stimulateStrokePenis(DOM_0, SUB_0, I_NORMAL, SPEED_MEDIUM)
 
 	addText(RNG.pick([
-		"The tentacle strokes {sub.yourHis} {sub.penisShort}.",
-		"The tentacles slides along {sub.yourHis} {sub.penisShort}.",
-		"The tentacle slides along {sub.yourHis} {sub.penisShort} back and forth, stroking it.",
-		"The tentacle rubs the head of {sub.yourHis} {sub.penisShort} in circles.",
-		"The tentacle traces the veins on {sub.yourHis} {sub.penisShort} with its tip.",
-		"The tentacle keeps stroking {sub.yourHis} {sub.penisShort} in a steady, teasing rhythm.",
+		"Щупальце ласкает {sub.yourHis} {sub.penisShort}.",
+		"Щупальца скользят по {sub.yourHis} {sub.penisShort}.",
+		"Щупальце скользит вперед-назад по {sub.yourHis} {sub.penisShort}, лаская его.",
+		"Щупальце круговыми движениями растирает головку {sub.yourHis} {sub.penisShort}.",
+		"Щупальце кончиком обводит вены на {sub.yourHis} {sub.penisShort}.",
+		"Щупальце продолжает ласкать {sub.yourHis} {sub.penisShort} в размеренном, дразнящем ритме.",
 	]))
 	
 	if(isCloseToCumming(SUB_0) && RNG.chance(30)):
 		addText(RNG.pick([
-			"{sub.You} {sub.youAre} about to cum!",
-			"{sub.You} {sub.youAre} being kept on edge.",
-			"{sub.Your} {sub.penisShort} is twitching and throbbing.",
-			"{sub.Your} {sub.penisShort} is leaking pre a lot.",
-			"{sub.You} {sub.youAre} barely keeping {sub.yourself} from cumming.",
-			"{sub.You} reached {sub.yourHis} peak!",
+			"{sub.You} {sub.youAre} вот-вот кончит!",
+			"{sub.You} {sub.youAre} доводят до предела.",
+			"{sub.Your} {sub.penisShort} дергается и пульсирует.",
+			"{sub.Your} {sub.penisShort} обильно сочится предэякулятом.",
+			"{sub.You} {sub.youAre} едва сдерживает {sub.yourself}, чтобы не кончить.",
+			"{sub.You} достигла {sub.yourHis} пика!",
 		]))
 	elif(isReadyToFuck(SUB_0) && RNG.chance(20)):
 		addText(RNG.pick([
-			"{sub.Your} {sub.penisShort} is leaking "+RNG.pick(["pre", "precum", "arousal"])+".",
-			"{sub.YourHis} {sub.penisType}'s tip glistens with fresh pre.",
-			"{sub.Your} {sub.penisType} is so hard, slick with arousal.",
-			"{sub.Your} {sub.penisShort} is pulsing, begging for more touch.",
-			"{sub.Your} shaft is throbbing with need.",
+			"{sub.Your} {sub.penisShort} уже сочится "+RNG.pick(["pre", "precum", "arousal"])+".",
+			"головка {sub.YourHis} {sub.penisType} блестит от свежей смазки.",
+			"{sub.Your} {sub.penisType} такой твердый и скользкий от возбуждения.",
+			"{sub.Your} {sub.penisShort} пульсирует, умоляя о новых ласках.",
+			"Ствол {sub.Your} пульсирует от жажды.",
 		]))
 
 
@@ -129,21 +129,21 @@ func processTurn():
 func getActions(_indx:int):
 	if(_indx == DOM_0):
 		if(getSub().hasPenis()):
-			addAction("cupballs", 0.2, "Cup balls", "Play with the their balls a bit")
+			addAction("cupballs", 0.2, "Сжать яички в ладонях", "Немного поиграть с яичками")
 		#if(getSub().hasVagina()):
 		#	addAction("rubclit", 0.2, "Rub clit", "Play with the their clit a bit")
 		if(getState() == ""):
 			if(getSub().hasReachablePenis()):
 				if(hasBodypartUncovered(SUB_0, S_PENIS)):
-					addAction("startHandjob", getContinueSexScore(DOM_0, SUB_0, S_PENIS, S_HANDS) - getStopScore(), "Stroke cock", "Get their cock ready by stroking it")
+					addAction("startHandjob", getContinueSexScore(DOM_0, SUB_0, S_PENIS, S_HANDS) - getStopScore(), "Ласкать член", "Подготовить член, поглаживая его")
 			#if(getSub().hasReachableVagina()):
 			#	addAction("startpussylick", 1.0, "Lick pussy", "Start licking their pussy")
 
 		if(getSubInfo().isReadyToCum() && !getSubInfo().canDoActions()):
-			addAction("subcum", 1.0, "Orgasm", "Let the sub cum", {A_PRIORITY: 1001})
+			addAction("subcum", 1.0, "Оргазм", "Дай сабке кончить", {A_PRIORITY: 1001})
 		
 		if(getState() != ""):
-			addAction("pause", getPauseSexScore(DOM_0, SUB_0, S_PENIS, S_HANDS), "Pause", "Pause the stroking")
+			addAction("pause", getPauseSexScore(DOM_0, SUB_0, S_PENIS, S_HANDS), "Пауза", "Приостановить ласки")
 		
 		for pose in getAvaiablePoses():
 			if(pose == altPose):
@@ -151,22 +151,22 @@ func getActions(_indx:int):
 			if(!POSES.has(pose)):
 				continue
 			var poseName:String = POSES[pose]["name"]
-			addAction("switchpose", 0.0, poseName, "Change pose", {A_CATEGORY: ["Switch pose"], A_ARGS: [pose]})
+			addAction("switchpose", 0.0, poseName, "Сменить позу", {A_CATEGORY: ["Switch pose"], A_ARGS: [pose]})
 		
-		addAction("stop", getStopScore() - (10.0 if shouldShowCumAnim else 0.0), "Stop sex", "Stop the sex activity")
+		addAction("stop", getStopScore() - (10.0 if shouldShowCumAnim else 0.0), "Прекратить секс", "Прекратить секс")
 	
 	if(_indx == SUB_0):
-		addAction("pullaway", getResistScore(SUB_0), "Pull away", "Try to pull away", {A_CHANCE: getResistChance(SUB_0, DOM_0, RESIST_ORAL_FOCUS, 30.0, 25.0)})
+		addAction("pullaway", getResistScore(SUB_0), "Отстраниться", "Попытаться отстраниться", {A_CHANCE: getResistChance(SUB_0, DOM_0, RESIST_ORAL_FOCUS, 30.0, 25.0)})
 		if(getState() in ["blowjob", "lickingcock", "licking", "tonguefucking", "handjob"]):
-			addAction("moan", getComplyScore(SUB_0)/3.0, "Moan", "Show how much you like it")
+			addAction("moan", getComplyScore(SUB_0)/3.0, "Стон", "Покажи, как тебе это нравится")
 			
 			if(isReadyToCumHandled(SUB_0)):
-				addAction("subcum", 1.0, "Cum!", "You're about to cum and there is nothing you can do about it", {A_PRIORITY: 1001})
+				addAction("subcum", 1.0, "Кончай!", "Ты вот-вот кончишь, и с этим уже ничего не поделаешь", {A_PRIORITY: 1001})
 
 func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "pause"):
 		state = ""
-		addText("The tentacles pause the action.")
+		addText("Тентакли замирают.")
 	if(_id == "subcum"):
 		shouldShowCumAnim = true
 		satisfyGoals()
@@ -180,7 +180,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		return
 	if(_id == "rubclit"):
 		var text = RNG.pick([
-			"{dom.You} "+RNG.pick(["{dom.youVerb('rub')}", "{dom.youVerb('tease')}", "{dom.youVerb('play')} with"])+" {sub.yourHis} clit a bit, providing some extra stimulation.",
+			"{dom.You} "+RNG.pick(["{dom.youVerb('rub')}", "{dom.youVerb('tease')}", "{dom.youVerb('play')} with"])+" немного ласкает клитор {sub.yourHis}, обеспечивая дополнительную стимуляцию.",
 		])
 		stimulate(DOM_0, S_HANDS, SUB_0, S_VAGINA, I_HIGH, Fetish.OralSexGiving, SPEED_VERYSLOW)
 		#getSubInfo().stimulateArousalZone(0.05, BodypartSlot.Vagina, 0.2)
@@ -191,7 +191,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "startHandjob"):
 		setState("handjob")
 		addTextPick([
-			"A tentacle wraps around {sub.your} {sub.penisShort} and proceeds to stroke it!",
+			"Щупальце обвивает {sub.your} {sub.penisShort} и начинает ритмично ласкать его!",
 		])
 		stimulate(DOM_0, S_MOUTH, SUB_0, S_PENIS, I_TEASE, Fetish.OralSexGiving, SPEED_SLOW)
 		react(SexReaction.AboutToHandjobSub)
@@ -211,17 +211,17 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		if(exposedThings.size() > 0):
 			genitalsText = "exposed "+Util.humanReadableList(exposedThings)
 			
-		addText("The tentacle pulls away from {sub.yourHis} "+genitalsText+".")
+		addText("Тентакль отрывается от {sub.yourHis} "+genitalsText+".")
 	if(_id == "switchpose"):
 		var newPose:int = _action["args"][0]
-		addText("{dom.You} {dom.youVerb('switch', 'switches')} pose!")
+		addText("{dom.You} {dom.youVerb('switch', 'switches')} поза!")
 		altPose = newPose
 		return
 	if(_id == "pullaway"):
 		addResistanceIfPlayer(_indx)
 		var successChance:float = getResistChance(SUB_0, DOM_0, RESIST_ORAL_FOCUS, 30.0, 25.0)
 		if(RNG.chance(successChance)):
-			addText("{sub.You} {sub.youVerb('pull')} away from {dom.you}.")
+			addText("{sub.You} {sub.youVerb('pull')} от {dom.you}.")
 			getDomInfo().addAnger(0.3)
 			if(getState() != ""):
 				setState("")
@@ -229,26 +229,26 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 				endActivity()
 			return
 		else:
-			addText("{sub.You} {sub.youVerb('try', 'tries')} to pull away from {dom.you} but {sub.youVerb('fail')}.")
+			addText("{sub.You} {sub.youVerb('try', 'tries')} попытаться отстраниться от {dom.you}, но {sub.youVerb('fail')}.")
 			getDomInfo().addAnger(0.1)
 			reactSub(SexReaction.ActivelyResisting, [50])
 			return
 	if(_id == "moan"):
 		if(state in ["licking", "tonguefucking", "lickingcock", "blowjob"]):
 			var text:String = RNG.pick([
-				"{sub.You} "+RNG.pick(["{sub.youVerb('let')} out a moan", "{sub.youVerb('moan')}", "{sub.youVerb('produce')} a moan", "{sub.youVerb('make')} a noise of pleasure"])+" while ",
+				"{sub.You} "+RNG.pick(["{sub.youVerb('let')} стонет", "{sub.youVerb('moan')}", "{sub.youVerb('produce')} стон", "{sub.youVerb('make')} звук удовольствия"])+" while ",
 			])
 			if(getSub().isGagged()):
 				text = RNG.pick([
-					"{sub.You} "+RNG.pick(["{sub.youVerb('let')} out a muffled moan", "{sub.youVerb('try', 'tries')} to moan", "{sub.youVerb('produce')} a muffled moan", "{sub.youVerb('make')} a muffled noise of pleasure"])+" while ",
+					"{sub.You} "+RNG.pick(["{sub.youVerb('let')} издает приглушенный стон", "{sub.youVerb('try', 'tries')} застонать", "{sub.youVerb('produce')} приглушенный стон", "{sub.youVerb('make')} приглушенный звук удовольствия"])+" while ",
 				])
 			if(getState() == "licking"):
 				text += RNG.pick([
-					"{dom.you} {dom.youAre} licking {sub.yourHis} "+RNG.pick(["pussy", "sensitive folds", "kitty", "petals", "wet pussy"])+".",
+					"{dom.you} {dom.youAre} licking {sub.yourHis} "+RNG.pick(["pussy", "чувствительные складки", "kitty", "petals", "мокрая киска"])+".",
 				])
 			if(getState() == "tonguefucking"):
 				text += RNG.pick([
-					"{dom.you} {dom.youAre} tongue-fucking {sub.yourHis} "+RNG.pick(["pussy", "sensitive folds", "kitty", "petals", "wet pussy"])+".",
+					"{dom.you} {dom.youAre} tongue-fucking {sub.yourHis} "+RNG.pick(["pussy", "чувствительные складки", "kitty", "petals", "мокрая киска"])+".",
 				])
 			if(getState() == "lickingcock"):
 				text += RNG.pick([
@@ -262,11 +262,11 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		else:
 			if(getSub().isGagged()):
 				addTextPick([
-					"{sub.You} "+RNG.pick(["{sub.youVerb('let')} out a muffled moan","{sub.youVerb('moan')}", "{sub.youVerb('produce')} a muffled moan", "{sub.youVerb('make')} a muffled noise of pleasure"])+".",
+					"{sub.You} "+RNG.pick(["{sub.youVerb('let')} издает приглушенный стон","{sub.youVerb('moan')}", "{sub.youVerb('produce')} приглушенный стон", "{sub.youVerb('make')} приглушенный звук удовольствия"])+".",
 				])
 			else:
 				addTextPick([
-					"{sub.You} "+RNG.pick(["{sub.youVerb('let')} out a moan","{sub.youVerb('moan')}", "{sub.youVerb('produce')} a moan", "{sub.youVerb('make')} a noise of pleasure"])+".",
+					"{sub.You} "+RNG.pick(["{sub.youVerb('let')} стонет","{sub.youVerb('moan')}", "{sub.youVerb('produce')} стон", "{sub.youVerb('make')} звук удовольствия"])+".",
 				])
 		moan(SUB_0)
 		return

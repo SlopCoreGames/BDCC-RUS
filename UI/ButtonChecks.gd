@@ -384,11 +384,11 @@ static func getPrefix(checks: Array):
 			
 		if(reason == PerkCheck):
 			var perk: PerkBase = GlobalRegistry.createPerk(args[1])
-			result += "["+perk.getVisibleName()+" perk]"
+			result += "[перк: "+perk.getVisibleName()+"]"
 			
 		if(reason == ContentEnabled):
 			var contentName = ContentType.getVisibleName(args[1])
-			result += "["+str(contentName)+" content]"
+			result += "[контент: "+str(contentName)+"]"
 	
 	if(result != ""):
 		result += " "

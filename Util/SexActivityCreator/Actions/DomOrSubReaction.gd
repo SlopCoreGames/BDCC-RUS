@@ -18,16 +18,16 @@ func getArgs():
 		"who": {
 			"type": "dropdown",
 			"value": who,
-			"text": "Who",
+			"text": "Кто",
 			"values": [
-				["dom", "Dom"],
-				["sub", "Sub"],
+				["dom", "Доминант"],
+				["sub", "Сабмиссив"],
 			],
 		},
 		"reactionType": {
 			"type": "dropdown",
 			"value": reactionType,
-			"text": "Reaction type",
+			"text": "Тип реакции",
 			"values": SexReaction.getAllStrings(),
 		},
 		"chance": {

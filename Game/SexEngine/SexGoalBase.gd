@@ -66,25 +66,25 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 	return "{sub.You} {sub.youVerb('beg')} {dom.you} to '"+getVisibleName()+"'."
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
-	return "Please?"
+	return "Ну пожалуйста?"
 
 func getBegAgreeDialogue() -> String:
 	return RNG.pick([
-		"Sure.",
-		"Sounds good.",
-		"Alright, let's do it.",
-		"Hm. Okay, let's do it.",
-		"Sure, let's see.",
-		"Why not, let's do it.",
-		"Okay, I hear you.",
+		"Конечно.",
+		"Звучит неплохо.",
+		"Ладно, давай.",
+		"Хм. Окей, погнали.",
+		"Конечно, посмотрим, что из этого выйдет.",
+		"Почему бы и нет, давай.",
+		"Ладно, я тебя услышала.",
 	])
 
 func getBegDenyDialogue() -> String:
 	return RNG.pick([
-		"Nope. I don't want to.",
-		"I don't want to do that.",
-		"No, I'm not doing that.",
-		"No. Just no.",
+		"Не-а. Не хочу.",
+		"Не хочу этого делать.",
+		"Нет, я на это не подпишусь.",
+		"Нет. Просто нет.",
 	])
 
 func getBegDomFetishes() -> Dictionary:

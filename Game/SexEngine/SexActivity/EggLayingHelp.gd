@@ -10,8 +10,8 @@ var eggsOut:Array = [] #Array of EggLaid
 func _init():
 	id = "EggLayingHelp"
 	
-	activityName = "Egg laying"
-	activityDesc = "Help them to lay eggs since they clearly need it!"
+	activityName = "Откладывание яиц"
+	activityDesc = "Помоги им, им явно нужна поддержка!"
 	activityCategory = []
 
 func getGoals():
@@ -47,7 +47,7 @@ func getTags(_indx:int) -> Array:
 	return []
 
 func startActivity(_args):
-	addText("{dom.You} {dom.youVerb('prepare')} to help {sub.you} lay eggs!")
+	addText("{dom.You} {dom.youVerb('prepare')}, чтобы помочь {sub.you} отложить яйца!")
 	#react(SexReaction.AboutToBeatUp)
 
 func onActivityEnd():
@@ -60,34 +60,34 @@ func processTurn():
 	
 	if(eggsOutAm > 0):
 		if(eggsLeftAm > 0):
-			addText("{sub.You} {sub.youHave} laid "+str(eggsOutAm)+" egg"+("s" if eggsOutAm != 1 else "")+". {sub.YouHe} can still lay "+str(eggsLeftAm)+" more egg"+("s" if eggsLeftAm != 1 else "")+".")
+			addText("{sub.You} {sub.youHave} laid "+str(eggsOutAm)+" egg"+("s" if eggsOutAm != 1 else "")+". {sub.YouHe} всё ещё может отложить "+str(eggsLeftAm)+" ещё яиц"+("s" if eggsLeftAm != 1 else "")+".")
 		else:
 			addText("{sub.You} {sub.youHave} laid "+str(eggsOutAm)+" egg"+("s" if eggsOutAm != 1 else "")+".")
 	if(eggsLeftAm <= 0):
 		if(getSub().isEggStuffed()):
-			addText("There are no eggs left that {sub.you} can lay currently..")
+			addText("На данный момент {sub.you} больше нечего откладывать...")
 		else:
-			addText("There are no eggs left that {sub.you} can lay..")
+			addText("У {sub.you} больше не осталось яиц для откладывания...")
 	
 
 	
 func getActions(_indx:int):
 	if(_indx == DOM_0):
-		addAction("stop", 1.0 if !getSub().isReadyToLayEggs() else 0.0, "Stop helping", "Enough egg laying..")
+		addAction("stop", 1.0 if !getSub().isReadyToLayEggs() else 0.0, "Перестать помогать", "Хватит уже этих яиц...")
 		
 		#if(true || getSub().isReadyToLayEggs()):
 		if(hasBodypartUncovered(SUB_0, BodypartSlot.Anus)):
-			addAction("egg", 1.0 if getSub().menstrualCycle.isReadyToLayEggsCanContinue() else 0.0, "Help lay", "Help them to lay an egg!", {A_PRIORITY: 5})
+			addAction("egg", 1.0 if getSub().menstrualCycle.isReadyToLayEggsCanContinue() else 0.0, "Помочь отложить", "Помоги им отложить яйцо!", {A_PRIORITY: 5})
 		#addAction("addegg", 1.0, "ADD EGG", "ADD TEST EGG PLEASE REMOVE ME!", {A_PRIORITY: 3})
 		if(!eggsOut.empty()):
-			addAction("stealeggs", 0.0, "Steal eggs!", "Steal all of the eggs that they have currently laid", {A_PRIORITY: 4})
+			addAction("stealeggs", 0.0, "Воруй яйца!", "Стибрить все яйца, которые они уже успели отложить", {A_PRIORITY: 4})
 		
 	if(_indx == SUB_0):
 		#var escapeScore:float = 0.0 + getSubInfo().getResistScoreSmooth() * 0.2 - getSubInfo().fetishScore({Fetish.BeingBred: 0.5})
-		addAction("escape", getResistScore(SUB_0), "Resist", "Try to resist this", {A_CHANCE: getResistChance(SUB_0, DOM_0, RESIST_LEGS_FOCUS, 20.0, 0.0)})
+		addAction("escape", getResistScore(SUB_0), "Сопротивляться", "Попробуй только сопротивляйся", {A_CHANCE: getResistChance(SUB_0, DOM_0, RESIST_LEGS_FOCUS, 20.0, 0.0)})
 
 		if(isReadyToCumHandled(SUB_0)):
-			addAction("cum", 1.0, "Cum!", "You're gonna cum.", {A_PRIORITY: 1001})
+			addAction("cum", 1.0, "Кончай!", "Ты сейчас кончишь.", {A_PRIORITY: 1001})
 
 func doAction(_indx:int, _actionID:String, _action:Dictionary):
 	if(_actionID == "addegg"):
@@ -96,14 +96,14 @@ func doAction(_indx:int, _actionID:String, _action:Dictionary):
 		var theEggTime:int = 0
 		var theOrifice:int = OrificeType.Vagina
 		theMenstrualCycle.addTentacleEgg(getDomID(), theTentacleType, theEggTime, theOrifice)
-		addText("EGG ADDED!")
+		addText("ЯЙЦО ДОБАВЛЕНО!")
 	
 	if(_actionID == "stealeggs"):
 		shouldDeleteEggs = true
 		
 		var theAmToSteal:int = eggsOut.size()
 		var theListStr:String = EggLaid.generateOneLineList(eggsOut)
-		addText("{dom.You} picked up "+theListStr+"!")
+		addText("{dom.You} подобрала "+theListStr+"!")
 		
 		if(getDom().isPlayer()):
 			for theEgg in eggsOut:
@@ -130,7 +130,7 @@ func doAction(_indx:int, _actionID:String, _action:Dictionary):
 			react(SexReaction.EggsStolen, [100.0], [SUB_0])
 			GM.main.RS.addAffection(getSubID(), getDomID(), -0.02*theAmToSteal)
 		else:
-			addText("{sub.You} {sub.youVerb('don', 'doesn')}'t seem to mind much.")
+			addText("{sub.You} {sub.youVerb('don', 'doesn')} вроде не особо против.")
 	
 	if(_actionID == "egg"):
 		eggTypeOrColor = BigEggType.Plant
@@ -140,7 +140,7 @@ func doAction(_indx:int, _actionID:String, _action:Dictionary):
 			
 		var anEgg:EggLaid = getSub().menstrualCycle.laySingleEgg()
 		if(!anEgg):
-			addText("{sub.You} {sub.youVerb('try', 'tries')} to lay an egg but nothing comes out..")
+			addText("{sub.You} {sub.youVerb('try', 'tries')} пытается отложить яйцо, но ничего не выходит..")
 			moan(SUB_0)
 			return
 		
@@ -148,9 +148,9 @@ func doAction(_indx:int, _actionID:String, _action:Dictionary):
 		
 		eggTypeOrColor = anEgg.getEggColorOrType()
 		addTextPick([
-			"{dom.You} {dom.youVerb('support')} {sub.you} as a "+anEgg.getName()+" slides out of {sub.yourHis} "+getNameHole(SUB_0, anEgg.getBodypart())+", landing softly onto the floor below.",
-			"{dom.You} {dom.youVerb('help')} {sub.you}. The "+anEgg.getName()+" emerges slowly, {sub.yourHis} "+getNameHole(SUB_0, anEgg.getBodypart())+" stretching around it before releasing it with a wet pop.",
-			"{dom.You} {dom.youVerb('hold')} {sub.you} as {sub.youHe} {sub.youHeVerb('strain')} {sub.yourHis} "+getNameHole(SUB_0, anEgg.getBodypart())+" muscles. A soft grunt escapes {sub.youHim} as the "+anEgg.getName()+" finally comes out, dropping with a quiet plop.",
+			"{dom.You} {dom.youVerb('support')} {sub.you} as a "+anEgg.getName()+" выскальзывает из {sub.yourHis} "+getNameHole(SUB_0, anEgg.getBodypart())+", мягко опускаясь на пол внизу.",
+			"{dom.You} {dom.youVerb('help')} {sub.you}. The "+anEgg.getName()+" медленно появляется, {sub.yourHis} "+getNameHole(SUB_0, anEgg.getBodypart())+" растягиваются вокруг него, а затем он выходит с влажным хлопком.",
+			"{dom.You} {dom.youVerb('hold')} {sub.you} as {sub.youHe} {sub.youHeVerb('strain')} {sub.yourHis} "+getNameHole(SUB_0, anEgg.getBodypart())+" мышцы. {sub.youHim} издает тихий стон, когда "+anEgg.getName()+" наконец выходит, с негромким шлепком падая вниз.",
 		])
 		moan(SUB_0)
 		
@@ -167,7 +167,7 @@ func doAction(_indx:int, _actionID:String, _action:Dictionary):
 		
 	if(_actionID == "stop"):
 		endActivity()
-		addText("{dom.You} {dom.youVerb('have', 'has')} stopped helping {sub.you}.")
+		addText("{dom.You} {dom.youVerb('have', 'has')} перестал помогать {sub.you}.")
 	
 	if(_actionID == "escape"):
 		var canEscapeAtAll:bool = true
@@ -177,7 +177,7 @@ func doAction(_indx:int, _actionID:String, _action:Dictionary):
 			canEscapeAtAll = false
 		
 		if(canEscapeAtAll && RNG.chance(getResistChance(SUB_0, DOM_0, RESIST_LEGS_FOCUS, 20.0, 0.0))):
-			addText("{sub.You} {sub.youVerb('pull')} away from {dom.you}.")
+			addText("{sub.You} {sub.youVerb('pull')} от {dom.you}.")
 			getDomInfo().addAnger(0.3)
 			if(state != ""):
 				state = ""
@@ -185,7 +185,7 @@ func doAction(_indx:int, _actionID:String, _action:Dictionary):
 				endActivity()
 		else:
 			addTextPick([
-				"{sub.You} desperately {sub.youVerb('try', 'tries')} to pull away from {dom.you}.",
+				"{sub.You} отчаянно {sub.youVerb('try', 'tries')}, пытаясь отстраниться от {dom.you}.",
 			])
 			getDomInfo().addAnger(0.03)
 		reactSub(SexReaction.Resisting, [50])

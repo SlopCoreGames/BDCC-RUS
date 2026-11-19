@@ -5,8 +5,8 @@ func _init():
 	startedByDom = false
 	startedBySub = true
 	
-	activityName = "Offer"
-	activityDesc = "Sub offering something to the dom"
+	activityName = "Предложение"
+	activityDesc = "Саб предлагает что-то дому"
 	activityCategory = []
 
 func getGoals():

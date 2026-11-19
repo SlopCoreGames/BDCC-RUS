@@ -27,41 +27,41 @@ func canBeUsed(_id:String, _args:Dictionary, _form) -> bool:
 func getText(_id:String, _args:Dictionary):
 	if(_id == "AttackStart"):
 		return [
-			"I don't care that you're pregnant.",
-			"I don't care about your belly.",
+			"Мне плевать, что ты беременна.",
+			"Меня не волнует твой живот.",
 		]
 	if(_id == "GuardFrisk"):
 		return [
-			"I will be careful with the belly.",
+			"Я буду осторожен с твоим животиком.",
 		]
 	if(_id == "ReactGETTING_FUCKED"):
 		return [
-			"Pregnant but still getting fucked!",
+			"Беременная, но всё равно трахается!",
 		]
 	if(_id == "ReactCOVERED_IN_CUM"):
 		return [
-			"Pregnant but still hungry for cum..",
-			"Pregnant but still eager..",
+			"Беременная, но всё так же жаждет спермы...",
+			"Беременная, но всё так же хочет...",
 		]
 	if(_id == "HelpRestraintsAgree"):
 		return [
-			"Nice belly..",
+			"Классный животик...",
 		]
 	if(_id == "SlutwallAddTip"):
 		return [
-			"Buy your kids something with this, whore.",
+			"Купи детям чего-нибудь на эти деньги, шлюха.",
 		]
 	if(_id == "ProstitutionOffer"):
 		return [
-			"Oh, you're working even while pregnant. What a slut..",
+			"О, ты работаешь даже будучи беременной. Ну и шлюха...",
 		]
 	if(_id == "AskKeyGive"):
 		return [
-			"You're a future mother after all.",
+			"В конце концов, ты будущая мать.",
 		]
 	if(_id in ["PunishAboutToStocks", "TalkSexOfferAccept"]):
 		return [
-			"Careful with the belly.",
+			"Осторожнее с животиком.",
 		]
 	return [
 	]

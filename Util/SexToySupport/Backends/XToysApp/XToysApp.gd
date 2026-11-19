@@ -127,7 +127,7 @@ func _process(_delta:float):
 			JSON.print(_data)
 		)
 		if(DEBUG_XTOYSAPP):
-			logDebug("Sent: "+str(_data))
+			logDebug("Отправлено: "+str(_data))
 		requestTimer = REQUEST_TIME_DELAY
 		requestQueue.erase(theRequestID)
 

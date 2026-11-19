@@ -16,7 +16,7 @@ func getArgs():
 		"storedTexts": {
 			"type": "bigstring",
 			"value": storedTexts,
-			"text": "Texts",
+			"text": "Тексты",
 		},
 	}
 

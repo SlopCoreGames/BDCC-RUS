@@ -9,8 +9,8 @@ func _init():
 	startedByDom = true
 	startedBySub = false
 	
-	activityName = "Wear breast pump on sub"
-	activityDesc = "Milk them with a breast pump!"
+	activityName = "Надеть молокоотсос на подчиненную"
+	activityDesc = "Дои её молокоотсосом!"
 	activityCategory = ["Breasts", "Breast Pump on sub"]
 
 func getGoals():
@@ -105,51 +105,51 @@ func milkingSub_processTurn():
 		var howMuchCollectedStr:String = str(Util.roundF(howMuchCollected, 1))+" ml"
 				
 		text += RNG.pick([
-			"The breast pump milks {sub.your} {sub.breasts} for "+howMuchCollectedStr+" of {sub.milk}.",
-			"The breast pump milks {sub.your} {sub.breasts} for "+howMuchCollectedStr+" of {sub.milk}.",
+			"Молокоотсос доит {sub.your} {sub.breasts} в течение "+howMuchCollectedStr+" of {sub.milk}.",
+			"Молокоотсос доит {sub.your} {sub.breasts} в течение "+howMuchCollectedStr+" of {sub.milk}.",
 		])
 		
 		if(pumpItem.getFluids().isFull()):
-			text += " The pump is full!"
+			text += " Насос полон!"
 		elif(RNG.chance(20)):
 			var howMuchInPump = pumpItem.getFluids().getFluidAmount()
 			
-			text += " The pump now has "+str(Util.roundF(howMuchInPump, 1))+" ml in it."
+			text += " Теперь в насосе "+str(Util.roundF(howMuchInPump, 1))+" мл."
 			
 		sendSexEvent(SexEvent.BreastsPumpMilked, DOM_0, SUB_0, {loadSize=howMuchCollected, madeLactate=false})
 	else:
 		text += RNG.pick([
-			"The breast pump stimulates {sub.your} {sub.breasts}.",
-			"The breast pump stimulates {sub.your} {sub.breasts} but doesn't draw any milk out.",
-			"The breast pump tries to milk {sub.your} {sub.breasts} but {sub.youHe} {sub.youAreHeIs} not lactating.",
+			"Молокоотсос стимулирует {sub.your} {sub.breasts}.",
+			"Молокоотсос стимулирует {sub.your} {sub.breasts}, но молоко не идет.",
+			"Молокоотсос пытается подоить {sub.your} {sub.breasts}, но {sub.youHe} {sub.youAreHeIs} не лактирует.",
 		])
 		var suddenlyLactate = false
 		if(getSub().stimulateLactation()):
 			suddenlyLactate = true
 			text += RNG.pick([
-				" {sub.You} suddenly [b]began lactating[/b]! {sub.Milk} is leaking from {sub.yourHis} nipples.",
+				" У {sub.You} внезапно [b]началось молокоотделение[/b]! {sub.Milk} протекает из сосков {sub.yourHis}.",
 			])
 		sendSexEvent(SexEvent.BreastsPumpMilked, DOM_0, SUB_0, {loadSize=0.0, madeLactate=suddenlyLactate})
 	
 	var _isSore:bool = getSub().hasEffect(StatusEffect.SoreNipplesAfterMilking)
 	if(!noticedSore && _isSore):
 		noticedSore = true
-		text += " {sub.YourHis} nipples [b]got sore[/b] from so much milking!"
+		text += " Соски {sub.YourHis} [b]разболелись[/b] от такого долгого доения!"
 	
 	if(_isSore):
 		var howMuchPainAdd = RNG.randi_range(2, 5)
 		getSubInfo().addPain(howMuchPainAdd)
 		sendSexEvent(SexEvent.PainInflicted, DOM_0, SUB_0, {pain=howMuchPainAdd,isDefense=false,intentional=false})
 		text += RNG.pick([
-			" {sub.YourHis} sore nipples hurt!",
-			" {sub.YourHis} sore nipples hurt from being milked so much!",
-			" {sub.YourHis} nipples are sore!",
+			" Болят воспаленные соски {sub.YourHis}!",
+			" Соски {sub.YourHis} ноют от того, что их так долго доили!",
+			" Соски {sub.YourHis} садят!",
 		])
 	elif(RNG.chance(30)):
 		text += RNG.pick([
-			" {sub.YourHis} nipples itch.",
-			" {sub.YourHis} nipples get tugged on.",
-			" {sub.YourHis} nipples tingle.",
+			" Соски {sub.YourHis} чешутся.",
+			" Соски {sub.YourHis} дергают.",
+			" Соски {sub.YourHis} покалывает.",
 		])
 	
 	addText(text)
@@ -159,17 +159,17 @@ func milkingSub_processTurn():
 func getActions(_indx:int):
 	if(_indx == DOM_0):
 		if(getState() in ["milkingSub"]):
-			addAction("stopMilking", (0.1 if timesMilked > 3 else 0.0), "Stop milking "+getSub().getName(), "Take off the breast pumps from "+getSub().getName(), {A_PRIORITY: 0})
+			addAction("stopMilking", (0.1 if timesMilked > 3 else 0.0), "Прекратить доение "+getSub().getName(), "Снять молокоотсосы с "+getSub().getName(), {A_PRIORITY: 0})
 	if(_indx == SUB_0):
-		addAction("moo", fetish(SUB_0, Fetish.Lactation)*0.3, "Moo", "Do the cute noise", {A_PRIORITY: 0})
+		addAction("moo", fetish(SUB_0, Fetish.Lactation)*0.3, "Мууу", "Издавать милые звуки", {A_PRIORITY: 0})
 
 		if(isReadyToCumHandled(SUB_0)):
-			addAction("cum", 1.0, "Cum!", "You're gonna cum.", {A_PRIORITY: 1001})
+			addAction("cum", 1.0, "Кончай!", "Ты сейчас кончишь.", {A_PRIORITY: 1001})
 	
 func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "stopMilking"):
 		var text:String = ""
-		text += "{dom.You} {dom.youVerb('take')} off the breast pumps from {sub.your} tits!"
+		text += "{dom.You} {dom.youVerb('take')} снимает молокоотсосы с {sub.your} сисек!"
 		
 		var pumpItem = getSub().getInventory().getEquippedItemByUniqueID(pumpID)
 		if(pumpItem != null):
@@ -188,10 +188,10 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		if(getSub().isGagged()):
 			muffled = " muffled"
 		addTextPick([
-			"{sub.You} {sub.youVerb('produce')} a cute"+muffled+" moo noise.",
-			"{sub.You} {sub.youVerb('imitate')} a cute"+muffled+" cow moo.",
-			"{sub.You} {sub.youVerb('moo')} while {sub.yourHis} {sub.breasts} are being milked.",
-			"{sub.You} {sub.youVerb('moo')} while breast pumps work on {sub.yourHis} breasts.."
+			"{sub.You} {sub.youVerb('produce')} милое"+muffled+" мычание.",
+			"{sub.You} {sub.youVerb('imitate')} милое"+muffled+" коровье «му».",
+			"{sub.You} {sub.youVerb('moo')}, пока {sub.yourHis} {sub.breasts} доят.",
+			"{sub.You} {sub.youVerb('moo')}, пока молокоотсосы работают на {sub.yourHis} груди..."
 		])
 		moan(SUB_0, SexReaction.SubMoos)
 		return

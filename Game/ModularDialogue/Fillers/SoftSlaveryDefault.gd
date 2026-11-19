@@ -252,1982 +252,1982 @@ func getFormIDs() -> Array:
 func getText(_id:String, _args:Dictionary):
 	if(_id == "SoftSlaveryOffer"):
 		return [
-			"Hey. Wanna become my slave? I could use one.",
-			"You look like you'd make for a good slave. What do you say?",
-			"I need someone to serve me. Want to be my prison slave?",
-			"How'd you like to be my personal slave? I promise I'll use you well.",
-			"You seem like you need an owner. I could take good care of a slave such as yourself.",
-			"Looking for an owner? I could use a slave.",
-			"You look like you'd obey well. Want to be my slave?",
-			"I need a new toy. Wanna volunteer to be my personal slave?",
+			"Эй. Хочешь стать моей рабыней? Мне бы не помешала одна.",
+			"Выглядишь как отличная кандидатка в рабыни. Что скажешь?",
+			"Мне нужен кто-то, кто будет меня обслуживать. Хочешь стать моей тюремной рабыней?",
+			"Как насчет того, чтобы стать моей личной рабыней? Обещаю, я буду использовать тебя с толком.",
+			"Похоже, тебе нужен хозяин. Я бы позаботился о такой рабыне, как ты.",
+			"Ищешь хозяина? Мне как раз нужна рабыня.",
+			"Похоже, ты будешь послушной. Хочешь стать моей рабыней?",
+			"Мне нужна новая игрушка. Не хочешь добровольно стать моей личной рабыней?",
 		]
 	if(_id == "SoftSlaveryOfferYes"):
 		return [
-			"Good choice. Follow me.",
-			"Smart decision. Come with me.",
-			"Excellent. You won't regret this.. much. Follow.",
-			"I knew you'd agree. Let's go.",
-			"Good. I'll enjoy training you. Come.",
-			"Welcome to your new life. Don't fall behind.",
-			"Excellent. I've been needing someone to use.",
-			"I'll take good care of you.. Follow.",
+			"Хороший выбор. Иди за мной.",
+			"Умное решение. Иди за мной.",
+			"Отлично. Ты об этом не пожалеешь... почти. Иди за мной.",
+			"Я знала, что ты согласишься. Пошли.",
+			"Хорошо. Мне понравится тебя дрессировать. Иди сюда.",
+			"Добро пожаловать в твою новую жизнь. Не отставай.",
+			"Превосходно. Мне как раз нужен был, кого можно использовать.",
+			"Я буду о тебе хорошо заботиться... Иди за мной.",
 		]
 	if(_id == "SoftSlaveryPCOffer"):
 		return [
-			"Do you need a slave by any chance? I can serve.",
-			"I'm looking for an owner. Would you take me?",
-			"Could you use a slave? I'm available.",
-			"I want to serve someone. Would you own me?",
-			"Need someone to obey your every command? I volunteer.",
-			"I'd make a good slave for you. Interested?",
-			"Would you consider making me your property? I wanna be a prison bitch..",
-			"I'm offering myself to be your slave. What do you say?",
-			"I need an owner. Would you take me as your slave?",
+			"Тебе случайно не нужна рабыня? Я готова служить.",
+			"Я ищу хозяина. Возьмешь меня себе?",
+			"Тебе не пригодилась бы рабыня? Я свободна.",
+			"Я хочу кому-нибудь служить. Станешь моим хозяином?",
+			"Нужен кто-то, кто будет беспрекословно выполнять каждое твоё желание? Я вызываюсь добровольцем.",
+			"Из меня вышла бы отличная рабыня для тебя. Интересует?",
+			"Не хочешь сделать меня своей собственностью? Хочу быть тюремной сучкой...",
+			"Я предлагаю себя в рабство. Что скажешь?",
+			"Мне нужен хозяин. Возьмёшь меня себе в рабы?",
 		]
 	if(_id == "SoftSlaveryPCOfferYes"):
 		return [
-			"Yes, I could use a slave like you. Follow me.",
-			"Perfect timing. I was just thinking I needed some property.",
-			"Glad you asked. I accept. Come with me.",
-			"Excellent. I've been looking for someone to play with.",
-			"Yes. I think we'll have fun together.. follow.",
-			"I accept your offer. Let's get you prepared.",
-			"Good. I could use someone to serve my needs.",
-			"Yes. I'll enjoy making you mine. Come.",
+			"Да, такая рабыня, как ты, мне бы не помешала. Иди за мной.",
+			"Идеальный момент. Я как раз думал, что мне не хватает собственности.",
+			"Рад, что ты спросила. Согласен. Иди за мной.",
+			"Отлично. Я как раз искал, с кем бы поиграть.",
+			"Да. Думаю, нам будет весело вместе... за мной.",
+			"Я принимаю твоё предложение. Давай подготовим тебя.",
+			"Хорошо. Мне как раз не помешал бы кто-то, кто будет потакать моим желаниям.",
+			"Да. Мне понравится сделать тебя своей собственностью. Иди сюда.",
 		]
 	if(_id == "SoftSlaveryPCOfferNo"):
 		return [
-			"No, I'm not looking for a slave.",
-			"I don't need any slaves right now.",
-			"Not interested in owning anyone at the moment.",
-			"I'll pass. Not in the market for slaves.",
-			"No thanks. I prefer being alone.",
+			"Нет, я не ищу раба.",
+			"Сейчас мне не нужны рабы.",
+			"На данный момент владение кем-либо меня не интересует.",
+			"Я, пожалуй, откажусь. Рабы сейчас не в моем вкусе.",
+			"Нет, спасибо. Я предпочитаю быть в одиночестве.",
 		]
 	if(_id == "SoftSlaveryIntro1Willing"):
 		return [
-			"Now let's talk.",
-			"Good.",
-			"Perfect.",
-			"Let's go over the rules.",
-			"Time for your first lesson in obedience.",
-			"Now we discuss how you'll serve me.",
-			"Let me explain your new purpose.",
+			"А теперь давай поговорим.",
+			"Хорошо.",
+			"Идеально.",
+			"Давай разберем правила.",
+			"Пора усвоить твой первый урок послушания.",
+			"Теперь обсудим, как именно ты будешь мне служить.",
+			"Позволь мне объяснить твое новое предназначение.",
 		]
 	
 	if(_id == "SoftSlaveryIntro1"):
 		return [
-			"You're up? Good.",
-			"Look at me. I know you're not sleeping.",
-			"You came back to your senses? Good.",
-			"Hey there. Feeling okay? Good. Good.",
-			"Hello, sleepyhead. Time to wake up.",
-			"Open your eyes. Now.",
-			"Wake up. This isn't the time to be dazed.",
-			"Finally awake. Listen closely now.",
-			"Open your eyes and show me you're breathing.",
-			"Good, you're awake. Stay that way.",
-			"Finally awake, I see.",
-			"Eyes open already? Perfect.",
-			"Good, you're awake. Was starting to get bored.",
-			"Sleeping beauty finally decided to join us.",
-			"There you are. I was wondering how long you'd stay out.",
+			"Твоя очередь? Отлично.",
+			"Смотри на меня. Я знаю, что ты не спишь.",
+			"Пришла в себя? Хорошо.",
+			"Эй, ты как? В норме? Вот и славно, славно.",
+			"Привет, соня. Пора просыпаться.",
+			"Открой глаза. Живо.",
+			"Проснись. Сейчас не время витать в облаках.",
+			"Наконец-то очнулась. А теперь слушай внимательно.",
+			"Открой глаза и покажи мне, что ты дышишь.",
+			"Хорошо, ты в сознании. Так и оставайся.",
+			"Вижу, наконец-то пришла в себя.",
+			"Уже открыла глазки? Идеально.",
+			"Хорошо, ты очнулась. А то я уже начал скучать.",
+			"Спящая красавица наконец-то соизволила к нам присоединиться.",
+			"Вот ты где. Интересно, как долго ты еще проспишь.",
 		]
 	if(_id == "SoftSlaveryIntro2"):
 		return [
-			"From this point on, you are now my {main.npcSlave}. Understand?",
-			"Listen carefully, {main.npcSlave}. You are now mine. Do you hear me?",
-			"You are my {main.npcSlave} now. Learn your place and don't forget it. Hear me?",
-			"You're no longer free. You're mine, {main.npcSlave}. Understand?",
-			"Listen carefully, {main.npcSlave}. You are now mine. Do you hear me?",
-			"Let's make this clear from the start. You belong to me now. You are my {npc.npcSlave}. Hear me?",
-			"Your old life is over. You're my {npc.npcSlave} now. Do you understand that?",
+			"С этого момента ты — моя {main.npcSlave}. Поняла?",
+			"Слушай внимательно, {main.npcSlave}. Теперь ты принадлежишь мне. Слышишь?",
+			"Теперь ты моя {main.npcSlave}. Знай свое место и не забывай об этом. Слышишь?",
+			"Свобода закончилась. Теперь ты моя, {main.npcSlave}. Понимаешь?",
+			"Слушай внимательно, {main.npcSlave}. Теперь ты принадлежишь мне. Слышишь?",
+			"Давай проясним всё с самого начала. Теперь ты принадлежишь мне. Ты моя {npc.npcSlave}. Слышишь?",
+			"Твоя прошлая жизнь окончена. Теперь ты моя {npc.npcSlave}. Ты это понимаешь?",
 		]
 	if(_id == "SoftSlaveryIntro3"):
 		return [
-			"You will do as I say. Otherwise, we will have a problem.",
-			"Do as I order and nothing will happen. Refuse, and you'll regret it.",
-			"Obey me without question. That's how you'll stay out of trouble. I will punish you if I have to.",
-			"Try to resist and you'll find out why you shouldn't.",
-			"I don't tolerate disobedience. I will punish you if I have to.",
-			"This means that you will do exactly what I tell to do. Or I will punish you.",
-			"Every command I give, you obey. Unless you enjoy getting punished.",
-			"Your only job is to obey me. Fail, and you'll be punished.",
-			"Say no to me, and I'll break you until you beg to say yes.",
+			"Ты будешь делать всё, что я скажу. Иначе у нас возникнут проблемы.",
+			"Делай, что велено, и всё будет хорошо. Откажешься — пожалеешь.",
+			"Повинуйся мне беспрекословно. Только так ты избежишь неприятностей. А если придется, я тебя накажу.",
+			"Попробуй только сопротивляться — и быстро поймешь, почему этого не стоит делать.",
+			"Я не терплю неповиновения. Если придется, я тебя проучу.",
+			"Это значит, что ты будешь делать в точности то, что я велю. Или я тебя накажу.",
+			"Каждой моей команде ты подчиняешься беспрекословно. Если, конечно, тебе не нравится получать наказания.",
+			"Твоя единственная задача — слушаться меня. Ошибешься — и тебя накажут.",
+			"Скажешь мне «нет», и я буду ломать тебя до тех пор, пока ты не начнешь умолять о «да».",
 		]
 	if(_id == "SoftSlaveryIntroEND"):
 		return [
-			"I will be checking on you ever so often. Don't forget who you belong to.",
-			"I'll be watching you. Don't forget who owns you.",
-			"I'll check on you from time to time. You're mine, don't forget.",
-			"I will be seeing you regularly. Remember your place.",
-			"I will check on you every so often. Keep that in mind.",
-			"I will stop by. Make sure you behave.",
-			"There is no escaping me. I'll check in on you every few days.",
-			"No point in hiding, I will find you, every few days. You're mine now, remember that.",
-			"You'll see me often. Each time, expect to serve me in some way.",
-			"I'll be checking my {npc.npcSlave} frequently. Make sure you're ready to be used.",
+			"Я буду заглядывать к тебе время от времени. Не забывай, кому ты принадлежишь.",
+			"Я буду следить за тобой. Не забывай, кто твой хозяин.",
+			"Буду заходить к тебе время от времени. Ты моя, не забывай об этом.",
+			"Мы будем видеться регулярно. Помни свое место.",
+			"Я буду проверять тебя время от времени. Имей это в виду.",
+			"Я буду заходить. И постарайся вести себя прилично.",
+			"От меня не сбежать. Я буду заглядывать к тебе каждые несколько дней.",
+			"Скрываться бесполезно, я буду находить тебя каждые несколько дней. Теперь ты моя собственность, помни об этом.",
+			"Ты будешь видеть меня часто. И каждый раз готовься как-то мне служить.",
+			"Я буду часто проверять свою {npc.npcSlave}. Так что будь готова к тому, что тебя будут использовать.",
 		]
 
 	if(_id == "SoftSlaveryChangeName"):
 		return [
-			"How should I call my {npc.npcSlave} then?",
-			"What name do you want me to give you, {npc.npcSlave}?",
-			"Pick a name. I'll use it when I speak to you.",
-			"Give me a name and I might remember it.",
+			"Как же мне тогда называть мою {npc.npcSlave}?",
+			"Какое имя ты хочешь, чтобы я тебе дал, {npc.npcSlave}?",
+			"Выбери имя. Я буду называть тебя так, когда захочу поговорить.",
+			"Дай мне имя, и, может быть, я его запомню.",
 		]
 	if(_id == "SoftSlaveryChangeNameEND"):
 		return [
-			"Alright. You will now be my {npc.npcSlave}.",
-			"Fine. From now on you're my {npc.npcSlave}.",
-			"So it is. You belong to me as my {npc.npcSlave}.",
+			"Ладно. Отныне ты — моя {npc.npcSlave}.",
+			"Хорошо. С этого момента ты — моя {npc.npcSlave}.",
+			"Да будет так. Ты принадлежишь мне как моя {npc.npcSlave}.",
 		]
 
 	if(_id == "SoftSlaveryAttackReaction"):
 		return [
-			"You're gonna regret it.",
-			"Thought you could hit me? Bad choice.",
-			"That was a mistake you'll pay for.",
-			"Don't test me. I won't forget this.",
-			"That little outburst? It won't end well for you.",
-			"You just sealed your own fate.",
+			"Ты об этом еще пожалеешь.",
+			"Думал, сможешь меня ударить? Плохой выбор.",
+			"Это была ошибка, за которую ты еще поплатишься.",
+			"Не испытывай меня. Я этого не забуду.",
+			"Эта твоя вспышка? Тебе она еще аукнется.",
+			"Ты только что сама подписала себе приговор.",
 		]
 	if(_id == "SoftSlaveryAttackLost"):
 		return [
-			"Ugh.. so? You're still my {npc.npcSlave}.",
-			"You lost. You're still my {npc.npcSlave}.",
-			"That didn't change a thing.. you're mine, {npc.npcSlave}.",
-			"Try as you might, you're still my {npc.npcSlave}.",
-			"Pathetic. You're still my {npc.npcSlave}.",
-			"No escape. You're still my {npc.npcSlave}.",
-			"That's it? You're still my {npc.npcSlave}.",
-			"You fail, as expected. Still my {npc.npcSlave}.",
-			"Brave, but useless. You're still my {npc.npcSlave}.",
-			"Give up the act. You're still my {npc.npcSlave}."
+			"Уф... ну и что? Ты всё равно моя {npc.npcSlave}.",
+			"Ты проиграла. Ты всё равно моя {npc.npcSlave}.",
+			"Это ничего не изменило... ты всё равно моя, {npc.npcSlave}.",
+			"Как бы ты ни старалась, ты всё равно моя {npc.npcSlave}.",
+			"Жалкое зрелище. Ты всё ещё моя {npc.npcSlave}.",
+			"Побега не будет. Ты всё ещё моя {npc.npcSlave}.",
+			"И это всё? Ты всё ещё моя {npc.npcSlave}.",
+			"Ты облажалась, как и ожидалось. Всё ещё моя {npc.npcSlave}.",
+			"Храбрая, но бесполезная. Ты всё ещё моя {npc.npcSlave}.",
+			"Бросай этот спектакль. Ты всё ещё моя {npc.npcSlave}."
 		]
 	if(_id == "SoftSlaveryAttackWon"):
 		return [
-			"And now.. I'm gonna punish you.",
-			"Now you'll learn your place.",
-			"I don't forgive mistakes. Prepare yourself.",
-			"Now it's time you pay for that.",
-			"I'll make an example of you.",
-			"You wanted this. Now take what's coming.",
+			"А теперь... я тебя накажу.",
+			"Теперь ты узнаешь своё место.",
+			"Я не прощаю ошибок. Готовься.",
+			"Пришло время платить по счетам.",
+			"Ты станешь для всех примером.",
+			"Ты сама этого хотела. Теперь получай по заслугам.",
 		]
 
 	if(_id == "SoftSlaveryAskedFreedom"):
 		return [
-			"I guess I can. No point in me bugging you any further. You already know you are my {npc.npcSlave}. Do you really want that, though?",
-			"Hmm. I could free you. But you remember what being my {npc.npcSlave} means, right? Are you sure you want out?",
-			"I suppose I could stop keeping tabs. You know you're mine, {npc.npcSlave}. Are you certain you want freedom?",
-			"Fine. I can grant it. But don't act surprised when the world treats you differently now that you're not my {npc.npcSlave}. You still sure?",
-			"I might let you go. You understand what you're giving up if you leave my protection, {npc.npcSlave}? Think on it.",
-			"That's an option. I can stop claiming you as my {npc.npcSlave}. But ask yourself if that's what you truly want.",
+			"Пожалуй, так и сделаю. Нет смысла больше докучать тебе. Ты и так знаешь, что ты моя {npc.npcSlave}. Но действительно ли ты этого хочешь?",
+			"Хм. Я могла бы освободить тебя. Но ты ведь помнишь, что значит быть моей {npc.npcSlave}, верно? Ты уверена, что хочешь на волю?",
+			"Думаю, я могла бы перестать следить за каждым твоим шагом. Ты и так знаешь, что ты моя, {npc.npcSlave}. Ты точно уверена, что хочешь свободы?",
+			"Ладно. Я могу это сделать. Но не строй из себя удивленную, когда мир начнет относиться к тебе иначе, раз уж ты больше не моя {npc.npcSlave}. Ты всё еще уверена?",
+			"Возможно, я отпущу тебя. Ты понимаешь, от чего отказываешься, покидая мою защиту, {npc.npcSlave}? Подумай хорошенько.",
+			"Такой вариант есть. Я могу перестать называть тебя своей {npc.npcSlave}. Но спроси себя, действительно ли это то, чего ты хочешь.",
 		]
 	if(_id == "SoftSlaveryAskedFreedomPay"):
 		return [
-			"I'm willing to let you go. But only if you pay me <CREDITS> first.",
-			"I'll sell you your freedom for <CREDITS>. Pay up and you're free.",
-			"Freedom isn't free. <CREDITS> and you're no longer my {npc.npcSlave}. That's the price.",
-			"I can accept <CREDITS> for your release. Otherwise, you're staying.",
-			"Your freedom costs <CREDITS>. That's my only offer.",
+			"Я готова тебя отпустить. Но только если ты сначала заплатишь мне <CREDITS>.",
+			"Я продам тебе твою свободу за <CREDITS>. Плати — и ты свободна.",
+			"Свобода не дается даром. <CREDITS> — и ты больше не моя {npc.npcSlave}. Такова цена.",
+			"Я готов принять <CREDITS> за твой выкуп. В противном случае — остаешься здесь.",
+			"Твоя свобода стоит <CREDITS>. Это мое единственное предложение.",
 		]
 	if(_id == "SoftSlaveryAskedFreedomEND"):
 		return [
-			"Alright, well. Go away then.",
-			"Fine. Leave. And don't come back.",
-			"Very well. You're dismissed. Go.",
-			"Suit yourself. Be gone.",
-			"Okay. Off with you then.",
-			"That's it. Walk away and don't expect me to help.",
-			"Good. Go. Make your own way now.",
-			"Go on, get out of my sight."
+			"Ну ладно. Тогда проваливай.",
+			"Ладно. Уходи. И не вздумай возвращаться.",
+			"Очень хорошо. Свободна. Иди.",
+			"Как хочешь. Исчезни с глаз моих.",
+			"Окей. Ну, тогда ступай.",
+			"Вот и всё. Уходи и не жди, что я стану тебе помогать.",
+			"Хорошо. Иди. Теперь сама по себе.",
+			"Давай, проваливай с глаз моих."
 		]
 
 	if(_id == "SoftSlaveryTalkStart"):
 		return [
-			"What do you want, {npc.npcSlave}?",
-			"Speak. What is it you want, {npc.npcSlave}?",
-			"You better have a good reason for interrupting me, {npc.npcSlave}.",
-			"Make it quick, {npc.npcSlave}.",
-			"Don't waste my time. What do you want, {npc.npcSlave}?",
+			"Чего тебе надо, {npc.npcSlave}?",
+			"Говори. Чего ты хочешь, {npc.npcSlave}?",
+			"Надеюсь, у тебя есть веская причина меня прерывать, {npc.npcSlave}.",
+			"Живее, {npc.npcSlave}.",
+			"Не трать мое время. Чего тебе надо, {npc.npcSlave}?",
 		]
 
 	if(_id == "SoftSlaveryProtectedByFriendStart"):
 		return [
-			"Hey, what are you doing with {pc.name}?",
-			"Hands off {pc.name}. The fuck are you doing with {pc.him}?",
-			"You there! You best leave {pc.name} alone.",
-			"What the fuck are you doing with {pc.name}? Let {npc.him} go.",
+			"Эй, ты что творишь с {pc.name}?",
+			"Руки прочь от {pc.name}. Какого хуя ты делаешь с {pc.him}?",
+			"Эй ты! Лучше оставь {pc.name} в покое.",
+			"Какого хуя ты творишь с {pc.name}? Отпусти {npc.him}.",
 		]
 	if(_id == "SoftSlaveryProtectedByFriendResponse"):
 		return [
-			"It's none of your business. Step aside.",
-			"Mind your own affairs and walk away.",
-			"Don't stick your nose where it doesn't belong.",
-			"This doesn't concern you. Move on.",
-			"Keep off. I said step aside.",
-			"Back away before I make you.",
-			"You're asking for trouble. Move.",
-			"Enough. Get out of my way."
+			"Не твоё дело. Свали с дороги.",
+			"Занимайся своими делами и проваливай.",
+			"Не суй свой нос куда не просят.",
+			"Тебя это не касается. Иди дальше.",
+			"Не лезь. Я сказал, отойди.",
+			"Отойди, пока я тебя не заставил.",
+			"Нарываешься на неприятности. Свали.",
+			"Хватит. Уйди с моей дороги."
 		]
 	if(_id == "SoftSlaveryProtectedByFriendAllGoodResp"):
 		return [
-			"Alright. Whatever then.",
-			"Fine. Carry on, then.",
-			"Suit yourself. Just stay out of trouble.",
-			"Very well. Continue what you were doing.",
-			"Fine by me. Don't bother me again.",
+			"Ладно. Как хочешь.",
+			"Ладно. Продолжай, раз так.",
+			"Как хочешь. Только не нарывайся.",
+			"Очень хорошо. Продолжай то, чем занимался.",
+			"Меня устраивает. И больше не донимай меня.",
 		]
 	if(_id == "SoftSlaveryProtectedByFriendLost"):
 		return [
-			"Now go away while you still can.",
-			"Get out of here while you still have the chance.",
-			"Run along. Don't push your luck.",
-			"Go the fuck away now. Don't make me regret it.",
-			"Disappear from sight before things get worse.",
+			"А теперь проваливай, пока можешь.",
+			"Сваливай отсюда, пока есть шанс.",
+			"Свободен. Не искушай судьбу.",
+			"Блядь, просто свали уже. Не заставляй меня пожалеть об этом.",
+			"Исчезни с глаз, пока всё не стало еще хуже.",
 		]
 	if(_id == "SoftSlaveryProtectedByFriendWonThank"):
 		return [
-			"You're welcome.",
-			"No problem.",
-			"Don't mention it.",
-			"Glad I could help.",
-			"That's what I do. You're welcome.",
+			"Не за что.",
+			"Без проблем.",
+			"Не за что.",
+			"Рада, что смогла помочь.",
+			"Это моя работа. Всегда пожалуйста.",
 		]
 
 	if(_id == "SoftSlaveryChokeOutStart"):
 		return [
-			"I'm so fucking mad. I need a toy to abuse and you seem good enough, {npc.npcSlave}.",
-			"I'm fucking mad. And you're in the wrong place at the wrong time, {npc.npcSlave}.",
-			"My temper needs an outlet. Stay still or I will make it worse, {npc.npcSlave}.",
-			"I need to let off steam. And you seem good enough, {npc.npcSlave}.",
+			"Я просто в бешенстве. Мне нужна игрушка, чтобы выплеснуть злость, и ты, кажется, отлично подойдешь, {npc.npcSlave}.",
+			"Я чертовски зла. И ты оказался не в то время и не в том месте, {npc.npcSlave}.",
+			"Моему темпераменту нужен выход. Стой смирно, иначе я сделаю только хуже, {npc.npcSlave}.",
+			"Мне нужно выпустить пар. И ты, кажется, вполне годишься, {npc.npcSlave}.",
 		]
 	if(_id == "SoftSlaveryChokeOutEndured"):
 		return [
-			"I feel better now. You did what was needed, {npc.npcSlave}.",
-			"I'm calmer. You can go do your shit, {npc.npcSlave}.",
-			"That helped. Don't think it earns you anything more than staying alive.",
-			"Choking you helped. Now go away, {npc.npcSlave}.",
-			"I'm satisfied for the moment. You were quite helpful, {npc.npcSlave}."
+			"Теперь мне лучше. Ты сделал всё, что было нужно, {npc.npcSlave}.",
+			"Я успокоилась. Можешь идти заниматься своими делами, {npc.npcSlave}.",
+			"Это помогло. Но не думай, что это даст тебе больше, чем просто право остаться в живых.",
+			"То, что ты меня придушила, помогло. А теперь свали, {npc.npcSlave}.",
+			"На данный момент я удовлетворена. Ты был весьма полезен, {npc.npcSlave}."
 		]
 	if(_id == "SoftSlaveryChokeOutPCWon"):
 		return [
-			"Ugh. Why are you such a bitch?",
-			"Ugh. Stubborn bitch, aren't you?",
-			"Hmph. You beat me this time. Don't get cocky.",
-			"Tougher than I thought. You'll pay for this later.",
-			"Fine. You won the round. But you are still my {npc.npcSlave}.",
-			"Don't celebrate. I will remember this.",
-			"Okay. You had your moment. You're still mine.",
+			"Уф. Ну почему ты такая сука?",
+			"Уф. Упрямая сучка, а?",
+			"Хмф. В этот раз ты меня сделал. Только не зазнавайся.",
+			"Тверже, чем я думала. Ты еще за это заплатишь.",
+			"Ладно. Раунд за тобой. Но ты всё равно мой {npc.npcSlave}.",
+			"Не радуйся раньше времени. Я это запомню.",
+			"Окей. Твой звездный час прошел. Ты всё еще мой.",
 		]
 	if(_id == "SoftSlaveryChokeOutPCLost"):
 		return [
-			"Such a weak {npc.npcSlave}. Can't even take some fucking abuse.",
-			"You couldn't stay conscious. Weak.",
-			"My bad. Made you fold.",
+			"Такой слабый {npc.npcSlave}. Даже не может вынести немного гребаного унижения.",
+			"Ты даже не смогла оставаться в сознании. Слабачка.",
+			"Мой косяк. Заставил тебя обмякнуть.",
 		]
 	if(_id == "SoftSlaveryChokeOutPCLostSex"):
 		return [
-			"Get over here.",
-			"Let's see..",
-			"Time to have some fun.",
-			"I can't help myself.",
+			"А ну, иди сюда.",
+			"Посмотрим...",
+			"Пора повеселиться.",
+			"Ничего не могу с собой поделать.",
 		]
 
 	if(_id == "SoftSlaveryFuckStart"):
 		return [
-			"I wanna fuck my {npc.npcSlave}. Come here.",
-			"I'm horny and I wanna fuck you. Get over here, {npc.npcSlave}.",
-			"Come to me, I wanna fuck you, {npc.npcSlave}.",
-			"I need something to fuck. Don't make me call you twice, {npc.npcSlave}.",
+			"Хочу трахнуть свою {npc.npcSlave}. Иди сюда.",
+			"Я возбужден и хочу трахнуть тебя. Живо ко мне, {npc.npcSlave}.",
+			"Иди ко мне, я хочу трахнуть тебя, {npc.npcSlave}.",
+			"Мне нужно во что-нибудь вставиться. Не заставляй меня звать тебя дважды, {npc.npcSlave}.",
 		]
 	if(_id == "SoftSlaveryFuckResultGood"):
 		return [
-			"Not bad for a {npc.npcSlave}. I will be back when I'm horny again.",
-			"You handled me well. I will return when I'm horny again..",
-			"You're pretty fun to fuck, {npc.npcSlave}.",
-			"Decent effort, {npc.npcSlave}. I suppose it will do for now.",
+			"Неплохо для {npc.npcSlave}. Вернусь, когда снова захочу трахаться.",
+			"Ты неплохо со мной справилась. Вернусь, когда снова захочу трахаться.",
+			"С тобой довольно весело трахаться, {npc.npcSlave}.",
+			"Неплохая попытка, {npc.npcSlave}. Пожалуй, на первое время сойдет.",
 		]
 	if(_id == "SoftSlaveryFuckResultOkay"):
 		return [
-			"That was okay. Can't you moan a little louder, {npc.npcSlave}? I will be back when I'm horny again.",
-			"Not terrible. But you can moan better, I'm sure.",
-			"You scratched the itch. But that's about it, {npc.npcSlave}.",
-			"Acceptable. There is room for improvement, {npc.npcSlave}.",
+			"Нормально. Не можешь стонать погромче, {npc.npcSlave}? Вернусь, когда снова захочется.",
+			"Не так уж плохо. Но уверен, что стонать ты можешь лучше.",
+			"Ты уняла зуд. Но на этом всё, {npc.npcSlave}.",
+			"Приемлемо. Но есть куда расти, {npc.npcSlave}.",
 		]
 	if(_id == "SoftSlaveryFuckResultBad"):
 		return [
-			"That was awful. Are you trying to make me mad, {npc.npcSlave}?",
-			"You suck, {npc.npcSlave}. Not even in a good way.",
-			"Why are you so terrible at fucking? Do you need more training?",
-			"Useless. You made this unpleasant for both of us.",
+			"Это было ужасно. Ты что, пытаешься меня взбесить, {npc.npcSlave}?",
+			"Ты отстой, {npc.npcSlave}. Причем даже не в хорошем смысле.",
+			"Почему ты так хреново трахаешься? Тебе нужно больше тренировок?",
+			"Бесполезная. Ты сделала это неприятным занятием для нас обоих.",
 		]
 
 	if(_id == "SoftSlaveryFuckNemesisApproach"):
 		return [
-			"Well-well-well, what do we have here?",
-			"Look who wandered into my sight. Interesting.",
-			"Well, well. This could be fun.",
-			"Fancy meeting you here.",
-			"Oh hey. Never thought things would turn out like this.",
+			"Ну надо же, надо же, надо же... И что это у нас тут?",
+			"Смотрите-ка, кто это забрел в поле моего зрения. Интересно.",
+			"Ну, ну. Это может быть весело.",
+			"Какая неожиданная встреча.",
+			"О, привет. Никогда бы не подумал, что всё обернется именно так.",
 		]
 	if(_id == "SoftSlaveryFuckNemesisAsk"):
 		return [
-			"What's your problem?",
-			"You want something or just causing a scene?",
-			"Talk fast. I have a slave to fuck.",
-			"What do you want? Get lost."
+			"В чем твоя проблема?",
+			"Тебе что-то нужно или ты просто решил устроить сцену?",
+			"Говори быстрее. У меня раб ждет, когда его оттрахают.",
+			"Чего тебе? Проваливай."
 		]
 	if(_id == "SoftSlaveryFuckNemesisAnswer"):
 		return [
-			"I have a proposition. Your slave crossed me. Wanna punish {pc.him} together?",
-			"Your slave caused me trouble. Wanna help me teach {pc.him} a lesson?",
-			"{pc.He} screwed me. Fancy a little payback together?",
-			"Your slave crossed the line. Want to help me put {pc.him} back?",
-			"I have a score to settle with your slave. You in?",
-			"Your slave made a huge mistake. Wanna punish {pc.him} together?",
+			"У меня есть предложение. Твой раб меня подставил. Хочешь наказать {pc.him} вместе?",
+			"Твой раб доставил мне кучу проблем. Поможешь мне проучить {pc.him}?",
+			"{pc.He} меня подставил(а). Не хочешь устроить небольшую месть вместе?",
+			"Твой раб перешел черту. Поможешь мне поставить {pc.him} на место?",
+			"Мне нужно свести счеты с твоим рабом. Ты в деле?",
+			"Твой раб совершил огромную ошибку. Хочешь наказать {pc.him} вместе?",
 		]
 	if(_id == "SoftSlaveryFuckNemesisYes"):
 		return [
-			"Sure. Let's do it.",
-			"Fine. Together then.",
-			"Hm. Alright. Anything to make this {npc.npcSlave} learn {npc.his} place faster.",
-			"You wanna fuck this {npc.npcSlave} together? Hm. This might be fun.",
-			"Right. Sounds good. Let's teach {npc.him} another lesson.",
+			"Конечно. Давай сделаем это.",
+			"Ладно. Тогда вместе.",
+			"Хм. Хорошо. Что угодно, лишь бы этот {npc.npcSlave} быстрее выучил свое {npc.his} место.",
+			"Хочешь трахнуть этого {npc.npcSlave} вместе со мной? Хм. Это может быть весело.",
+			"Ладно. Звучит неплохо. Давай преподадим {npc.him} еще один урок.",
 		]
 	if(_id == "SoftSlaveryFuckNemesisNo"):
 		return [
-			"No. {pc.He} {pc.isAre} mine.",
-			"I'll handle {pc.him} myself. {pc.He} {pc.isAre} my property.",
-			"No. Keep your hands off. {pc.He} belongs to me.",
-			"Don't interfere. {pc.He} {pc.isAre} under my control.",
-			"No. {pc.He} {pc.isAre} mine to deal with.",
-			"I won't share {npc.him}. {pc.He} {pc.isAre} mine.",
-			"Back off. {pc.He} {pc.isAre} mine to fuck with.",
+			"Нет. {pc.He} {pc.isAre} моя.",
+			"С {pc.him} я разберусь сам. {pc.He} {pc.isAre} моя собственность.",
+			"Нет. Руки прочь. {pc.He} принадлежит мне.",
+			"Не вмешивайся. {pc.He} {pc.isAre} под моим контролем.",
+			"Нет. {pc.He} {pc.isAre} моя, и решать только мне.",
+			"Я не собираюсь делиться {npc.him}. {pc.He} {pc.isAre} моя.",
+			"Свали в туман. {pc.He} {pc.isAre} моя, чтобы трахать её.",
 		]
 
 	if(_id == "SoftSlaveryFuckJealousStart"):
 		return [
-			"Hey! That's my {npc1.npcSlave}! The fuck are you doing with {pc.him}?",
-			"Hey. That {npc1.npcSlave} is mine. What the fuck is happening?",
-			"Hey, you got a problem? That {npc1.npcSlave} belongs to me.",
-			"What do you think you're doing with my {npc1.npcSlave}?",
-			"Hey. You picked the wrong person to mess with. That's my {npc1.npcSlave}.",
+			"Эй! Это моя {npc1.npcSlave}! Какого хера ты творишь с {pc.him}?",
+			"Эй. Эта {npc1.npcSlave} — моя. Какого хера тут происходит?",
+			"Эй, есть проблемы? Эта {npc1.npcSlave} принадлежит мне.",
+			"Ты что это творишь с моим {npc1.npcSlave}?",
+			"Эй. Ты выбрал не того человека, чтобы с ним связываться. Это мой {npc1.npcSlave}.",
 		]
 	if(_id == "SoftSlaveryFuckJealousFight"):
 		return [
-			"Huh? Get lost. That {npc.npcSlave} is mine.",
-			"That's my {npc.npcSlave}. Now get lost or you will regret it.",
-			"Go away, this {npc.npcSlave} belongs to me.",
+			"А? Проваливай. Этот {npc.npcSlave} мой.",
+			"Это мой {npc.npcSlave}. А теперь свали, иначе пожалеешь.",
+			"Отвали, этот {npc.npcSlave} принадлежит мне.",
 		]
 	if(_id == "SoftSlaveryFuckJealousOwnerWon"):
 		return [
-			"This is my {npc.npcSlave}. Do you understand that now?",
-			"See? I told you. {pc.He} {pc.isAre} mine. Remember that.",
-			"You lost. This {npc.npcSlave} stays with me. Loser.",
-			"Clear enough? {pc.He} {pc.verb('belong')} to me.",
+			"Это мой {npc.npcSlave}. Теперь до тебя дошло?",
+			"Видишь? Я же говорил(а). {pc.He} {pc.isAre} мой/моя. Запомни это.",
+			"Ты проиграл(а). Этот {npc.npcSlave} остается со мной. Лузер.",
+			"Теперь достаточно ясно? {pc.He} {pc.verb('belong')} мой/моя.",
 		]
 	if(_id == "SoftSlaveryFuckJealousOwnerWonFuck"):
 		return [
-			"Shouldn't have come here. Now you're gonna be my fucktoy too.",
-			"You brought this on yourself, little fucktoy. I'll make sure you regret it.",
-			"Wrong place, wrong time. But I'm not done with you yet. Come here, both of you.",
-			"You made a huge mistake. Time to make you my second bitch.",
-			"You chose to screw with me. Prepare to be fucked, together with my {npc.npcSlave}.",
-			"I'm horny and both of you will now deal with it."
+			"Зря ты сюда приперся/приперлась. Теперь ты тоже станешь моей/моим игрушкой для траха.",
+			"Ты сама на это напросилась, мелкая шлюшка. Я заставлю тебя об этом пожалеть.",
+			"Не то место, не то время. Но я с тобой еще не закончил. А ну, идите сюда, оба.",
+			"Ты совершила огромную ошибку. Пора сделать тебя моей второй сучкой.",
+			"Ты сама решила со мной поиграть. Готовься к траху, причем вместе с моим {npc.npcSlave}.",
+			"Я возбужден, и теперь вам обоим придется с этим разбираться."
 		]
 	if(_id == "SoftSlaveryFuckJealousOwnerLostOffer"):
 		return [
-			"Hey! Hear me out. How about we.. share this {npc.npcSlave} together?",
-			"Wait! Before you do anything.. I have an idea. What if we just share this {npc.npcSlave} together?",
-			"Stop! Before you do anything.. The {npc.npcSlave} could serve us both.. how about that?",
+			"Эй! Послушайте меня. Как насчет того, чтобы... разделить этот {npc.npcSlave} на двоих?",
+			"Погоди! Прежде чем вы что-то сделаете... у меня есть идея. Что если мы просто разделим этот {npc.npcSlave} вместе?",
+			"Стой! Прежде чем вы начнете... {npc.npcSlave} мог бы послужить нам обоим... как вам такая идея?",
 		]
 	if(_id == "SoftSlaveryFuckJealousOwnerLostOffer2"):
 		return [
-			"It's the slave's fault that {pc.he} didn't tell us about each other, right? So why not punish {pc.him} instead?",
-			"The slave didn't tell us about each other. So let's punish {pc.him} for it. Yeah?",
-			"That bitch slave never told me that {pc.he} {pc.has} another fucking owner. Wanna punish {pc.him} for that?",
-			"The slave kept secrets. So let's make {pc.him} regret that?",
+			"Это ведь вина раба, что {pc.he} не сказал нам друг о друге, верно? Так почему бы не наказать вместо этого {pc.him}?",
+			"Раб не сказал нам друг о друге. Так что давайте накажем за это {pc.him}. А?",
+			"Эта сука-рабыня так и не сказала мне, что у {pc.he} {pc.has} еще один ебаный хозяин. Хочешь наказать {pc.him} за это?",
+			"Рабыня хранила секреты. Так заставим ли мы {pc.him} пожалеть об этом?",
 		]
 	if(_id == "SoftSlaveryFuckJealousOwnerLostOfferAgree"):
 		return [
-			"You might be right.",
-			"Perhaps that's fair.",
-			"Hmm. That could work.",
-			"I can see the logic in that.",
-			"Maybe we should do it your way.",
+			"Возможно, ты прав(а).",
+			"Пожалуй, это справедливо.",
+			"Хм. Это может сработать.",
+			"В этом есть своя логика.",
+			"Может, стоит поступить по-твоему?",
 		]
 	if(_id == "SoftSlaveryFuckJealousOwnerLostOfferAgree2"):
 		return [
-			"Let's have some fun.",
-			"Let's break this bitch.",
-			"Fine. Let's do it.",
+			"Давай повеселимся.",
+			"Давай сломаем эту суку.",
+			"Ладно. Сделаем это.",
 		]
 	if(_id == "SoftSlaveryFuckJealousOwnerLostOfferNope"):
 		return [
-			"Huh. You're funny. I think I will just fuck both of you.",
-			"You are so desperate. Only makes me wanna fuck you harder. Both of you.",
-			"Your begging won't work, loser. I will fuck you both.",
-			"Great idea. I will change just one piece. You will be the one getting fucked.",
+			"Ха. А ты забавный/забавная. Думаю, я просто трахну вас обоих.",
+			"Ты такая отчаявшаяся. Это только заставляет меня хотеть трахать тебя еще сильнее. Обеих вас.",
+			"Твои мольбы не сработают, неудачница. Я оттрахаю вас обеих.",
+			"Отличная идея. Изменю всего одну деталь. Трахать будут тебя.",
 		]
 
 	if(_id == "SoftSlaverySlutwallStart"):
 		return [
-			"Today I feel like fucking you in the slutwall. Stay still while I leash you.",
-			"The slutwall is waiting for you. Hold still, {npc.npcSlave}.",
-			"Come here. I'm gonna shove you into the slutwall today. Don't struggle, {npc.npcSlave}.",
-			"You're gonna be my fucktoy in the slutwall today. Show me your neck.",
-			"Today I feel like fucking you in the slutwall. Hold still, {npc.npcSlave}.",
-			"Be a good {npc.npcSlave} and obey while I bring you to the slutwall.",
+			"Сегодня мне хочется трахнуть тебя в шлюх-стене. Не дергайся, пока я надену на тебя поводок.",
+			"Шлюх-стена ждет тебя. Не двигайся, {npc.npcSlave}.",
+			"Иди сюда. Сегодня я запихну тебя в шлюх-стену. Не брыкайся, {npc.npcSlave}.",
+			"Сегодня ты будешь моей секс-игрушкой в шлюх-стене. Покажи мне свою шею.",
+			"Сегодня мне хочется трахнуть тебя в шлюх-стене. Замри, {npc.npcSlave}.",
+			"Будь хорошей {npc.npcSlave} и слушайся, пока я веду тебя к шлюх-стене.",
 		]
 	if(_id == "SoftSlaverySlutwallLocked"):
 		return [
-			"Now that you're locked in.. Let's have some fun.",
-			"Great view. Got you right where I want you.",
-			"Helpless and exposed. Just the way I like it.",
-			"Chained up and exposed. Let's have some fun.",
+			"Ну вот, теперь ты заперта... Давай повеселимся.",
+			"Вид просто загляденье. Ты именно там, где мне нужно.",
+			"Беспомощная и открытая всем взглядам. Как раз то, что я люблю.",
+			"В цепях и на виду. Давай повеселимся.",
 		]
 	if(_id == "SoftSlaveryStocksStart"):
 		return [
-			"Today I feel like fucking you in the stocks while everyone is watching. Stay still while I leash you.",
-			"The stocks are waiting for you. Hold still, {npc.npcSlave}.",
-			"Come here. I'm gonna shove you into the stocks today. Don't struggle, {npc.npcSlave}.",
-			"You're gonna be my fucktoy in the stocks today. And everyone is gonna see it. Show me your neck.",
-			"Today I feel like fucking you in the stocks while everyone is watching. Hold still, {npc.npcSlave}.",
-			"Be a good {npc.npcSlave} and obey while I bring you to the stocks.",
+			"Сегодня мне хочется трахнуть тебя в колодках на глазах у всех. Не дергайся, пока я надену на тебя поводок.",
+			"Колодки уже заждались тебя. Не шевелись, {npc.npcSlave}.",
+			"Иди сюда. Сегодня я запихну тебя в колодки. Не брыкайся, {npc.npcSlave}.",
+			"Сегодня ты будешь моей секс-игрушкой в колодках. И все это увидят. Покажи мне свою шею.",
+			"Сегодня мне хочется трахнуть тебя в колодках на глазах у всех. Не дергайся, {npc.npcSlave}.",
+			"Будь хорошей {npc.npcSlave} и слушайся, пока я веду тебя к колодкам.",
 		]
 	if(_id == "SoftSlaveryStocksLocked"):
 		return [
-			"Don't even try to wriggle free. Let's have some fun.",
-			"Locked and on display. Perfect.",
-			"Helpless and exposed. Just the way I like it.",
-			"Now that you're locked in.. Let's have some fun.",
+			"Даже не пытайся вырваться. Давай повеселимся.",
+			"Заперта и на витрине. Идеально.",
+			"Беспомощная и открытая всем взглядам. Как раз то, что я люблю.",
+			"Ну вот, теперь ты заперта... Давай повеселимся.",
 		]
 	if(_id == "SoftSlaveryGiveCreditsStart"):
 		return [
-			"I'm short on credits, I need exactly <CREDITS> right now. Be a good {npc.npcSlave} and give them to me.",
-			"I need <CREDITS> immediately. Hand them over, {npc.npcSlave}.",
-			"You're going to give me <CREDITS> now. Don't make me ask twice.",
-			"I want <CREDITS> from you. C'mon, I'm waiting.",
-			"<CREDITS>. Hand 'em over. Do what you're told, {npc.npcSlave}.",
-			"Give me <CREDITS>, now. Consider it your purpose.",
-			"I decided that you owe me <CREDITS>. Give them to me now.",
-			"Be useful and give me <CREDITS> right this moment. No excuses.",
+			"У меня не хватает кредитов, мне нужно ровно <CREDITS> прямо сейчас. Будь хорошей {npc.npcSlave} и отдай их мне.",
+			"Мне нужны <CREDITS> немедленно. Живо отдавай, {npc.npcSlave}.",
+			"Ты сейчас же отдашь мне <CREDITS>. Не заставляй меня просить дважды.",
+			"Я хочу получить от тебя <CREDITS>. Ну же, я жду.",
+			"<CREDITS>. Живо отдавай. Делай, что велят, {npc.npcSlave}.",
+			"Дай мне <CREDITS>, сейчас же. Считай это своим предназначением.",
+			"Я решила, что ты должна мне <CREDITS>. Отдавай их немедленно.",
+			"Будь полезной и отдай мне <CREDITS> прямо в эту секунду. И никаких оправданий.",
 		]
 	if(_id == "SoftSlaveryGiveCreditsTake"):
 		return [
 			"Thanks. Good {npc.npcSlave}.",
-			"That's better. Maybe you'll be useful after all.",
-			"Good. Obeying is better than being punished.",
-			"Mhm. I will find a better use for them anyway.",
-			"Okay. You would have wasted them anyway.",
-			"I appreciate that. Stay useful.",
-			"Nice. Don't forget who's in charge.",
+			"Так-то лучше. Может, от тебя всё-таки будет толк.",
+			"Хорошо. Повиноваться лучше, чем получать наказание.",
+			"Мгм. В любом случае, я найду им применение получше.",
+			"Ладно. Ты бы всё равно их растратила впустую.",
+			"Ценю это. Оставайся полезной.",
+			"Приятно. Только не забывай, кто здесь главный.",
 		]
 	if(_id == "SoftSlaveryGiveCreditsShort"):
 		return [
-			"Bullshit. Guess I'll have to punish you.",
-			"Really? You're asking to be punished.",
-			"Short? You disappoint me. Prepare to be punished.",
-			"Pathetic. You're asking for punishment."
+			"Херня какая-то. Похоже, придётся тебя наказать.",
+			"Серьёзно? Ты сама напрашиваешься на наказание.",
+			"Коротко? Ты разочаровываешь меня. Готовься к наказанию.",
+			"Жалкое зрелище. Ты просто умоляешь о наказании."
 		]
 
 	if(_id == "SoftSlaveryMarkingStart"):
 		return [
-			"I feel like marking my {npc.npcSlave}. So stand still while I do this.",
-			"Hold still. This will remind you who you belong to.",
-			"Don't flinch. I wanna leave some marks on my {npc.npcSlave}.",
-			"Stay still now. I'm going to make sure everyone knows who you are and who you belong to.",
-			"Look at me and don't move. I wanna mark you, like property.",
-			"Come here and stay quiet. You're not leaving until I'm done marking you."
+			"Так и хочется пометить мою {npc.npcSlave}. Так что стой смирно, пока я это делаю.",
+			"Не дергайся. Это напомнит тебе, кому ты принадлежишь.",
+			"Не вздрагивай. Хочу оставить пару меток на моей {npc.npcSlave}.",
+			"А теперь замри. Я сделаю так, чтобы все знали, кто ты и кому принадлежишь.",
+			"Смотри на меня и не двигайся. Хочу пометить тебя, как собственность.",
+			"Иди сюда и веди себя тихо. Ты никуда не уйдешь, пока я не закончу тебя метить."
 		]
 	if(_id == "SoftSlaveryMarkingEnough"):
 		return [
-			"That should be enough. Looks great.",
-			"Good. That'll do. Can't mistake you now.",
-			"Perfect. Such a nice marked {npc.npcSlave}.",
-			"Enough for now. Not bad, eh?",
-			"Done. Looks pretty hot I think.",
-			"Clean lines. Dirty language. Fits a {npc.npcSlave} like you.",
+			"Должно хватить. Выглядит отлично.",
+			"Хорошо. Сойдет. Теперь тебя не перепутаешь.",
+			"Идеально. Такая милая помеченная {npc.npcSlave}.",
+			"На сегодня хватит. Неплохо, а?",
+			"Готово. По-моему, выглядит чертовски горячо.",
+			"Четкие линии. Грязные слова. Тебе, {npc.npcSlave}, самое то.",
 		]
 	if(_id == "SoftSlaveryMarkingAnother"):
 		return [
-			"Another one?",
-			"Want me to add more? I will.",
-			"Think that's enough? I don't.",
-			"I wanna add another.",
-			"You want another? I do. Stay still.",
-			"I could keep going.. actually.. I will.",
-			"These bodywritings make you look so slutty. Let's add another.",
-			"You squirmed. So I'm adding another.",
-			"You moved too much. I guess I have to scribble some more words on you.",
-			"One more won't hurt. Stay still.",
-			"Bodywritings are hot. So you're getting another one.",
+			"Опять?",
+			"Хочешь, чтобы я добавила еще? Добавлю.",
+			"Думаешь, этого достаточно? А вот и нет.",
+			"Хочу добавить еще одну.",
+			"Хочешь еще? А я — да. Не дергайся.",
+			"Я могла бы продолжать... собственно... так и сделаю.",
+			"С этими надписями ты выглядишь такой шлюхой. Давай добавим еще одну.",
+			"Ты дернулась. Так что я добавлю еще одну.",
+			"Ты слишком много ерзала. Похоже, придется нацарапать на тебе еще пару слов.",
+			"Еще одна не повредит. Замри.",
+			"Надписи на теле — это горячо. Так что сейчас ты получишь еще одну.",
 		]
 	if(_id == "SoftSlaveryMarkingNoStart"):
 		return [
-			"Whatever, I guess I'm not marking you.",
-			"Fine. Might as well leave you unmarked for now.",
-			"Not today then. Consider yourself lucky.",
-			"Alright. No bodywritings this time. Don't get comfortable, {npc.npcSlave}.",
-			"Hmm. Maybe another day. You still belong to me.",
-			"Be glad I'm not feeling it today.",
+			"Плевать, значит, пока не буду тебя помечать.",
+			"Ладно. Пусть пока останешься чистенькой.",
+			"Значит, не сегодня. Считай, что тебе повезло.",
+			"Хорошо. В этот раз без надписей. Но не расслабляйся, {npc.npcSlave}.",
+			"Хм. Может, в другой раз. Ты всё равно принадлежишь мне.",
+			"Радуйся, что сегодня у меня нет на это настроения.",
 		]
 	if(_id == "SoftSlaveryMarkingNo"):
 		return [
-			"Alright. I guess this is enough for now.",
-			"Fine. We're done for now. You look pretty slutty.",
-			"Enough for today. Behave and I might not add more.",
-			"That'll do. Perfect.",
-			"I'm done, fine. I hope everyone will see these.",
-			"Okay. For the time being, you're marked enough."
+			"Ладно. Пожалуй, на сегодня хватит.",
+			"Ладно, на этом закончим. Выглядишь чертовски похотливо.",
+			"На сегодня достаточно. Веди себя хорошо, и, может, я не стану добавлять новых.",
+			"Сойдет. Идеально.",
+			"Ладно, я закончила. Надеюсь, все это увидят.",
+			"Хорошо. На данный момент тебя достаточно отметили."
 		]
 	if(_id == "SoftSlaveryMarkingNoFail"):
 		return [
-			"Don't anger me. My {npc.npcSlave} needs to be marked.",
-			"Don't push your luck, {npc.npcSlave}. Either you're getting marked or I will punish you.",
-			"You test me and I won't stop at one bodywriting. Stand still and accept them.",
-			"Keep your mouth shut, it's up to me to decide. You're getting marked.",
+			"Не зли меня. Моему {npc.npcSlave} нужны метки.",
+			"Не искушай судьбу, {npc.npcSlave}. Либо ты получаешь метки, либо я тебя накажу.",
+			"Продолжишь испытывать меня — и одной татуировки тебе не обойдется. Стой смирно и принимай их.",
+			"Рот закрой, решать мне. Ты получишь метки.",
 		]
 	if(_id == "SoftSlaveryMarkingBegYes"):
 		return [
-			"You are being so cute, begging me. How can I say no?",
-			"You look pathetic begging. Fine. I can be merciful.",
-			"Your pleading amuses me. Sure, just this time.",
-			"Begging me, huh. That's cute.",
+			"Ты такая милашка, когда умоляешь. Как мне можно отказать?",
+			"Выглядишь жалко, когда просишь. Ладно. Так и быть, проявлю милосердие.",
+			"Твои мольбы меня забавляют. Ладно, только в этот раз.",
+			"Умоляешь меня, да? Мило.",
 		]
 	if(_id == "SoftSlaveryMarkingBegYes2"):
 		return [
-			"That's enough then.",
-			"Alright. We're done here.",
-			"You earned temporary mercy.",
-			"Okay. This time I will let you off.",
+			"Тогда на этом всё.",
+			"Ладно. Мы закончили.",
+			"Ты заслужил временную милость.",
+			"Ладно. На этот раз я тебя отпущу.",
 		]
 	if(_id == "SoftSlaveryMarkingBegNo"):
 		return [
-			"If you're gonna beg, do it on your knees.",
-			"Down to your knees. Just begging is not enough.",
-			"Who begs like that? Do it on your knees.",
-			"You wanna beg? Get down to your knees first.",
-			"Beg like proper slaves do it. On your knees.",
+			"Если уж собираешься умолять, делай это на коленях.",
+			"На колени. Одних мольб недостаточно.",
+			"Кто так умоляет? Встань на колени.",
+			"Хочешь умолять? Сначала встань на колени.",
+			"Умоляй как подобает настоящей рабыне. На коленях.",
 		]
 	if(_id == "SoftSlaveryMarkingBegNo2"):
 		return [
-			"Kneel, now.",
-			"You heard me? Kneel.",
-			"Kneel. Don't make me repeat that.",
-			"Kneel. Show that you mean it.",
-			"Kneel. Don't waste my time.",
+			"На колени, живо.",
+			"Слышала? На колени.",
+			"На колени. Не заставляй меня повторять.",
+			"На колени. Докажи, что ты не просто так это делаешь.",
+			"На колени. Не трать моё время.",
 		]
 	if(_id == "SoftSlaveryMarkingBegCredits"):
 		return [
-			"Good. Now give me 5 credits or I will leave some ink on you.",
-			"Want me to stop? Pay 5 credits. Otherwise.. you know.",
-			"Hand over 5 credits or I'm leaving some writings on you.",
-			"Now give me 5 credits and I will let you go. Maybe.",
+			"Хорошо. А теперь дай мне 5 кредитов, иначе я оставлю на тебе пару чернильных пятен.",
+			"Хочешь, чтобы я остановилась? Плати 5 кредитов. Иначе... сама понимаешь.",
+			"Живо гони 5 кредитов, или я распишу тебя чернилами.",
+			"А теперь дай мне 5 кредитов, и, может быть, я тебя отпущу. Может быть.",
 		]
 	if(_id == "SoftSlaveryMarkingBegCreditsGive"):
 		return [
-			"Thanks. These are more useful to me anyway.",
-			"Good. That's the price of your subbiness.",
-			"Accepted. I'll take that and forget the rest.",
-			"Nice. Your money buys you a favor.",
-			"Those will do. Keep them coming if you value comfort.",
+			"Спасибо. Мне они всё равно нужнее.",
+			"Хорошо. Такова цена твоей покорности.",
+			"Принято. Заберу это и забуду об остальном.",
+			"Приятно. Твои деньги покупают тебе услугу.",
+			"Сойдет. Продолжай в том же духе, если ценишь комфорт.",
 		]
 	if(_id == "SoftSlaveryMarkingBegCreditsGive2"):
 		return [
-			"I guess that's it then.",
-			"That settles it for now.",
-			"Alright. We're done. For now.",
-			"Good. Leave before I change my mind.",
+			"Ну, тогда на этом всё.",
+			"На данный момент вопрос решен.",
+			"Ладно. Мы закончили. Пока что.",
+			"Хорошо. Убирайся, пока я не передумала.",
 		]
 	if(_id == "SoftSlaveryMarkingBegNoMarked"):
 		return [
-			"That's what you get. Enjoy the marks.",
-			"So be it. Wear them as a reminder.",
-			"You asked for it. Now live with the marks.",
-			"Markings suit you. They'll help keep you in line.",
-			"Don't cry about it. This is on you.",
-			"This is your consequence. Wear these proudly.",
-			"You wanted to act up. Now look at yourself.",
-			"Consider it your punishment. Don't complain."
+			"Так тебе и надо. Наслаждайся метками.",
+			"Да будет так. Носи их как напоминание.",
+			"Ты сама напросилась. Теперь живи с этими метками.",
+			"Метки тебе идут. Они помогут держать тебя в узде.",
+			"Не ной. Ты сама это заслужила.",
+			"Это твоя расплата. Носи их с гордостью.",
+			"Ты хотела буянить? Ну вот, посмотри на себя.",
+			"Считай это наказанием. И не вздумай жаловаться."
 		]
 	if(_id == "SoftSlaveryMarkingBegFoot"):
 		return [
-			"Good. Now kiss my {npc.foot}, worship me if you don't want to get inked.",
-			"Okay. Now kiss my {npc.foot}. Be a good {pc.boy} or I will do it.",
-			"Now humiliate yourself for me a bit. Kiss my {npc.foot}. Now.",
-			"Think you're done? Kiss my {npc.foot} first. I need to be worshipped.",
+			"Хорошо. А теперь поцелуй мой {npc.foot}. Поклоняйся мне, если не хочешь, чтобы тебя зататуировали.",
+			"Ладно. А теперь поцелуй мой {npc.foot}. Будь послушной {pc.boy}, иначе мне придется заставить тебя.",
+			"А теперь немного унизься для меня. Поцелуй мой {npc.foot}. Живо!",
+			"Думаешь, на этом всё? Сначала поцелуй мой {npc.foot}. Мне нужно поклонение.",
 		]
 	if(_id == "SoftSlaveryMarkingBegFootKiss"):
 		return [
-			"Pathetic. Doing anything to avoid the bodywritings, huh?",
-			"That's such a great view. Nice. Keep it up.",
-			"Seeing you like this is nice. Just perfect.",
-			"Feels nice. Keep going.",
-			"Humiliation suits you. Keep kissing.",
+			"Жалкое зрелище. Делаешь всё, лишь бы избежать клеймения, да?",
+			"Какой отличный вид. Хорошо. Так держать.",
+			"Видеть тебя в таком состоянии — одно удовольствие. Просто идеально.",
+			"Приятно чувствуется. Продолжай.",
+			"Унижение тебе к лицу. Целуй дальше.",
 		]
 	if(_id == "SoftSlaveryMarkingBegFootKiss2"):
 		return [
-			"I guess that's it then.",
-			"That settles it for now.",
-			"Alright. We're done. For now.",
-			"Good. Leave before I change my mind.",
+			"Ну, тогда на этом всё.",
+			"На данный момент вопрос решен.",
+			"Ладно. Мы закончили. Пока что.",
+			"Хорошо. Убирайся, пока я не передумала.",
 		]
 	if(_id == "SoftSlaveryMarkingBegHumiliation"):
 		return [
-			"Good. Now admit that you are my {npc.npcSlave}. Nothing but my property.",
-			"Okay. Now I wanna hear you admitting to being a {npc.npcSlave}. My {npc.npcSlave}. Say it loudly.",
-			"Right. Now I wanna hear you humiliate yourself. Admit that you belong to me. Admit that you are a {npc.npcSlave}.",
-			"Next. I want you to say something loudly. Admit that you are my {npc.npcSlave}. You belong to me. Mean every word.",
+			"Хорошо. А теперь признай, что ты моя {npc.npcSlave}. Всего лишь моя собственность.",
+			"Ладно. Теперь я хочу услышать, как ты признаешься, что ты {npc.npcSlave}. Моя {npc.npcSlave}. Скажи это громко.",
+			"Так. Теперь я хочу, чтобы ты унизилась. Признай, что ты принадлежишь мне. Признай, что ты {npc.npcSlave}.",
+			"Следующее. Я хочу, чтобы ты сказала это во весь голос. Признай, что ты моя {npc.npcSlave}. Что ты принадлежишь мне. Вкладывай в каждое слово смысл.",
 		]
 	if(_id == "SoftSlaveryMarkingBegHumiliation2"):
 		return [
-			"What? A little louder.",
-			"Louder. I want to hear it.",
-			"Not loud enough. Say it again.",
-			"Raise your voice. I didn't hear anything.",
-			"Make it audible. Don't mumble.",
-			"Again, but with feeling this time.",
-			"Louder. I want everyone to hear.",
-			"Don't be shy. Say it like you mean it.",
-			"Say it again and make it believable.",
+			"Что? Чуть громче!",
+			"Громче. Я хочу это слышать.",
+			"Недостаточно громко. Повтори.",
+			"Повысь голос. Я вообще ничего не услышала.",
+			"Говори разборчиво. Не мямли.",
+			"Еще раз, но на этот раз с чувством.",
+			"Громче. Я хочу, чтобы все слышали.",
+			"Не стесняйся. Говори так, будто действительно это чувствуешь.",
+			"Повтори еще раз, и чтобы это звучало убедительно.",
 		]
 	if(_id == "SoftSlaveryMarkingBegHumiliation3"):
 		return [
-			"That's much better. Glad you agree with me.",
-			"Good. Finally some sense out of you.",
-			"That's the tone I wanted to hear.",
-			"Now that's acceptable. Keep that attitude.",
-			"Better. Maybe you'll behave now.",
-			"That will do. Remember what you said.",
-			"Good. Your words mean something now.",
-			"That's acceptable. Carry on with that in mind.",
+			"Так-то лучше. Рада, что ты со мной согласна.",
+			"Хорошо. Наконец-то до тебя дошло.",
+			"Именно такой тон я и хотел услышать.",
+			"Вот это уже приемлемо. Сохраняй такой настрой.",
+			"Лучше. Может, теперь ты будешь вести себя прилично.",
+			"Сойдет. И не забывай, что ты только что сказала.",
+			"Хорошо. Теперь твои слова что-то значат.",
+			"Приемлемо. Продолжай в том же духе, помня об этом.",
 		]
 	if(_id == "SoftSlaveryMarkingBegHumiliation4"):
 		return [
-			"I guess that's it then.",
-			"That settles it for now.",
-			"Alright. We're done. For now.",
-			"Good. Leave before I change my mind.",
+			"Ну, тогда на этом всё.",
+			"На данный момент вопрос решен.",
+			"Ладно. Мы закончили. Пока что.",
+			"Хорошо. Убирайся, пока я не передумала.",
 		]
 	if(_id == "SoftSlaveryMarkingNotDone"):
 		return [
-			"Actually.. you know what.. I'm not done with you just yet.",
-			"Hold on. I have another thing I wanna do with you.",
-			"Wait. We're not done actually. I have something else I wanna do with you.",
-			"I lied. This isn't over yet.",
-			"Actually.. There is something else we can do. Yes.",
+			"Вообще-то... знаешь что... я с тобой еще не закончил.",
+			"Погоди. Есть еще кое-что, что я хочу с тобой сделать.",
+			"Стой. На самом деле мы еще не закончили. У меня есть еще кое-что на тебя.",
+			"Я соврал. Это еще не конец.",
+			"Вообще-то... есть ещё кое-что, что мы можем сделать. Да.",
 		]
 	if(_id == "SoftSlaveryMarkingNotDoneStocks"):
 		return [
-			"This is just so you don't run away now.",
-			"Consider it insurance.",
-			"I don't want you to squirm while I do this.",
-			"This will make sure you don't squirm. We don't want me to mess up, do we?",
-			"This will help you stand still for me. Yes.",
+			"Это просто для того, чтобы ты не вздумала сбежать.",
+			"Считай это страховкой.",
+			"Не хочу, чтобы ты дёргалась, пока я это делаю.",
+			"Так ты точно не будешь ерзать. Мы ведь не хотим, чтобы я всё испортил, верно?",
+			"Это поможет тебе стоять смирно. Да.",
 		]
 	if(_id == "SoftSlaveryMarkingNotDoneStocks2"):
 		return [
-			"Perfect. This is art.",
-			"Neat. It looks exactly how I wanted.",
-			"Perfect. It suits you.",
-			"Good. It reads well to anyone who sees it.",
-			"Perfect. This will last.",
+			"Идеально. Это искусство.",
+			"Аккуратно. Выглядит именно так, как я и хотел.",
+			"Прекрасно. Тебе очень идёт.",
+			"Хорошо. Любой, кто это увидит, оценит.",
+			"Идеально. Это надолго.",
 		]
 	if(_id == "SoftSlaveryMarkingNotDoneUrinal"):
 		return [
-			"Gonna mark you real good.",
-			"I wanna mark my {npc.npcSlave} with this.",
-			"That's the proper way to mark someone, don't you think?",
-			"See this? About to mark you..",
+			"Сейчас я тебя как следует помечу.",
+			"Хочу пометить свою {npc.npcSlave} этим.",
+			"Вот так и нужно помечать людей, не находишь?",
+			"Видишь это? Сейчас буду метить тебя...",
 		]
 	if(_id == "SoftSlaveryMarkingNotDoneUrinal2"):
 		return [
 			"Mmhh.. Good {npc.npcSlave}.",
-			"That felt good. Oh, you are looking so lewd.",
-			"Hah. You look great, such a slut.",
-			"You liked it, didn't you? Hah.",
-			"Yes.. good.. wear it proudly, slut.",
+			"Приятно было. Ох, ну и похотливый же у тебя вид.",
+			"Хах. Выглядишь отлично, настоящая шлюшка.",
+			"Тебе ведь понравилось, а? Хах.",
+			"Да... хорошо... носи это с гордостью, шлюшка.",
 		]
 
 	if(_id == "SoftSlaveryParadeAroundStart"):
 		return [
-			"I wanna parade you around the prison. And show off my {npc.npcSlave}.",
-			"I'm taking you out for everyone to see. Let me leash you and don't cause trouble.",
-			"It's time to walk you around the prison and let others look. Show your neck, {npc.npcSlave}.",
-			"I'm leashing you. We're doing a little walk around the prison for the others to see.",
-			"I need your neck. I'm gonna parade you around the prison today.",
+			"Хочу выставить тебя напоказ по всей тюрьме. Чтобы все видели мою {npc.npcSlave}.",
+			"Я выведу тебя на всеобщее обозрение. Дай мне надеть на тебя поводок и не вздумай капризничать.",
+			"Пора прогуляться по тюрьме, чтобы остальные на тебя посмотрели. Выставь шею, {npc.npcSlave}.",
+			"Надеваю на тебя поводок. Мы немного прогуляемся по тюрьме, чтобы остальные тебя увидели.",
+			"Мне нужна твоя шея. Сегодня я устрою тебе настоящий парад по всей тюрьме.",
 		]
 	if(_id == "SoftSlaveryParadeAroundFirst"):
 		return [
-			"Like it so far? We're just getting started.",
-			"How do you feel, {npc.npcSlave}? We're only at the first stop.",
-			"See their eyes looking at you? This is only the beginning.",
-			"Enjoying the attention? There's plenty more, we're just getting started.",
-			"This is only the warm-up. Keep up, {npc.npcSlave}.",
+			"Нравится? Это мы еще только разминаемся.",
+			"Ну как ощущения, {npc.npcSlave}? А ведь мы только на первой остановке.",
+			"Видишь, как они на тебя пялятся? И это только начало.",
+			"Наслаждаешься вниманием? Дальше будет еще больше, мы только начали.",
+			"Это всего лишь разминка. Не отставай, {npc.npcSlave}.",
 		]
 	if(_id == "SoftSlaveryParadeAroundMore"):
 		return [
-			"Good. Let's continue.",
-			"Another stop. We're not done yet.",
-			"Take a short breather and let's go.",
-			"Are you tired yet? There is still more spots to show you off at.",
-			"Ready to continue? Not enough people have seen you yet.",
-			"See their eyes? They're looking at you. Let's continue.",
-			"I bet you like being paraded around like that.",
-			"It's pretty fun to show off my {npc.npcSlave} like that, not gonna lie.",
+			"Хорошо. Продолжим.",
+			"Еще одна остановка. Мы еще не закончили.",
+			"Немного передохни, и погнали дальше.",
+			"Ты что, уже устала? Тебе еще столько мест нужно показать.",
+			"Готова продолжать? Тебя еще недостаточно многие видели.",
+			"Видишь их глаза? Они все смотрят на тебя. Идем дальше.",
+			"Спорим, тебе нравится, когда тебя вот так выставляют напоказ.",
+			"Не буду врать, выставлять мою {npc.npcSlave} вот так — сплошное удовольствие.",
 		]
 	if(_id == "SoftSlaveryParadeAroundLast"):
 		return [
-			"One more time. I want everyone to see you.",
-			"This is the last round. Make it memorable.",
-			"Final one. Show that you're proud.",
-			"One last stop. Don't slow down.",
-			"Last spot left. Don't embarrass me now.",
-			"We're nearly done. Don't hide anything.",
+			"Еще разок. Я хочу, чтобы тебя увидел каждый.",
+			"Это последний раунд. Сделай так, чтобы это запомнилось.",
+			"Последний раз. Покажи, что ты гордишься собой.",
+			"Последняя остановка. Не вздумай замедляться.",
+			"Последнее место осталось. Не позорь меня сейчас.",
+			"Мы почти закончили. И не вздумай что-то скрывать.",
 		]
 	if(_id == "SoftSlaveryParadeAroundFree"):
 		return [
-			"Perfect. You're free for now, {npc.npcSlave}.",
-			"Alright. For the moment, you're free.",
-			"You did as told. Go. But don't stray far, {npc.npcSlave}.",
-			"That's enough for today. You're free until I find you again.",
-			"Good. Off with you. And remember your place.",
-			"You're done for now. Keep out of trouble.",
-			"You're free until I need you again.",
+			"Идеально. Пока что ты свободен, {npc.npcSlave}.",
+			"Ладно. На данный момент ты свободен.",
+			"Ты сделал всё, как велено. Иди. Но не отходи далеко, {npc.npcSlave}.",
+			"На сегодня хватит. Ты свободен, пока я снова тебя не найду.",
+			"Хорошо. Свободен. И не забывай своё место.",
+			"На сегодня ты закончил. Не навлекай на себя неприятностей.",
+			"Ты свободен, пока я снова в тебе не понадоблюсь.",
 		]
 	if(_id == "SoftSlaveryParadeAroundEatGagged"):
 		return [
-			"Too bad you can't eat, {npc.npcSlave}. I will though.",
-			"Can't bite? I'll eat for the both of us.",
-			"You'll wait while I eat. That's the rule.",
-			"Sit and watch me eat. Maybe later you'll get something.",
+			"Жаль, что ты не можешь есть, {npc.npcSlave}. А я буду.",
+			"Не можешь укусить? Значит, я съем всё за двоих.",
+			"Будешь ждать, пока я ем. Таково правило.",
+			"Сиди и смотри, как я ем. Может, позже и тебе что-нибудь перепадёт.",
 		]
 	if(_id == "SoftSlaveryParadeAroundEat"):
 		return [
-			"Let's take a break. Enjoy your meal, {npc.npcSlave}.",
-			"Sit down and eat what's given to you.",
-			"Time for a short rest. Eat your portion.",
-			"Here's your food. Don't waste it.",
-			"Eat now. We'll be moving again soon.",
+			"Давай сделаем перерыв. Приятного аппетита, {npc.npcSlave}.",
+			"Садись и ешь то, что тебе дали.",
+			"Время короткого отдыха. Скушай свою порцию.",
+			"Вот твоя еда. Не вздумай её переводить впустую.",
+			"Ешь сейчас. Скоро мы снова выдвинемся.",
 		]
 	if(_id == "SoftSlaveryParadeAroundPlatform"):
 		return [
-			"Gonna lock you into one of these if you don't behave.",
-			"Stocks are pretty fun, don't you think? Yeah.",
-			"This is where you will end up if you don't behave.",
-			"Misbehave and I will shove you into one of these.",
-			"Do you like public use, {npc.npcSlave}? Hah.",
+			"Если не будешь вести себя прилично, запру тебя в одной из этих штук.",
+			"Колодки — это довольно весело, не находишь? Ага.",
+			"Вот где ты окажешься, если будешь плохо себя вести.",
+			"Начнешь капризничать — и я запихну тебя в один из этих.",
+			"Тебе нравится публичное использование, {npc.npcSlave}? Ха.",
 		]
 	if(_id == "SoftSlaveryParadeAroundShower"):
 		return [
-			"Can't let you stay messy all the time.",
-			"You're due for a wash. Don't struggle.",
-			"I want you to be presentable. A quick wash it is.",
-			"Stand under the water. I'm washing you.",
+			"Нельзя же тебе вечно ходить в таком грязном виде.",
+			"Тебе пора помыться. Не брыкайся.",
+			"Хочу, чтобы ты выглядел прилично. Быстро сполоснись.",
+			"Встань под воду. Я тебя помою.",
 		]
 
 	if(_id == "SoftSlaveryThreesomeStart"):
 		return [
-			"I brought a friend today. You're gonna service both of us.",
-			"Got company. You'll be pleasing two masters today. Understand?",
-			"Double the trouble for you today. We're gonna use you together.",
-			"I brought a friend today. Make sure we're both satisfied.",
+			"Сегодня я привела друга. Обслуживать будешь нас обоих.",
+			"У нас гости. Сегодня будешь ублажать сразу двух хозяев. Понял?",
+			"Сегодня проблем будет вдвое больше. Мы используем тебя вдвоем.",
+			"Сегодня я привела подругу. Постарайся, чтобы мы обе остались довольны.",
 		]
 	if(_id == "SoftSlaveryPunishCredits"):
 		return [
-			"I will take some of that.",
-			"Consider this a tax for your disobedience.",
-			"This is mine now. Call it a lesson fee.",
-			"Payment for my trouble. Don't make me take more.",
-			"Your credits look better in my pocket.",
-			"This should cover my frustration.",
-			"Not enough to buy your freedom, but it might buy my mercy.",
+			"Частичку этого я заберу себе.",
+			"Считай это налогом за свое непослушание.",
+			"Теперь это моё. Назови это платой за урок.",
+			"Оплата за мои мучения. Не заставляй меня брать больше.",
+			"Твои кредиты куда лучше смотрятся в моем кармане.",
+			"Этого должно хватить, чтобы унять мое раздражение.",
+			"Этого не хватит, чтобы выкупить твою свободу, но может хватить, чтобы купить мое милосердие.",
 		]
 	if(_id == "SoftSlaveryPunishCredits2"):
 		return [
-			"If I can't have your obedience, I will at least have some of your credits. Obey or I will have to do something much worse.",
-			"Obey or it will get much worse for you.",
-			"This is nothing. Obey or I will have to start punishing you for real.",
-			"Next time I will take more than credits.",
+			"Если уж мне не достается твоя покорность, то хотя бы часть твоих кредитов будет моей. Слушайся, иначе мне придется сделать кое-что куда более хреновое.",
+			"Повинуйся, иначе тебе станет гораздо хуже.",
+			"Это еще цветочки. Слушайся, или мне придется начать наказывать тебя по-настоящему.",
+			"В следующий раз я возьму не только кредитами.",
 		]
 	if(_id == "SoftSlaveryPunishRipClothes"):
 		return [
-			"That's enough for you? Yeah? Obey or I will have to do something much worse.",
-			"Had your fun? Now start obeying before I really lose my temper.",
-			"Did you enjoy your little rebellion? You want something much worse? Start obeying.",
-			"Still feel brave? Next time I'll give you something real to cry about.",
-			"Finished with being a brat? Good. Now start obeying or suffer the consequences.",
-			"Got it out of your system? Start obeying.",
+			"Тебе уже хватит? Да? Тогда подчиняйся, иначе мне придется придумать кое-что похуже.",
+			"Навеселе? А теперь начинай слушаться, пока я окончательно не вышел из себя.",
+			"Понравился твой маленький бунт? Хочешь чего-то посерьезнее? Начни подчиняться.",
+			"Все еще чувствуешь себя смелым? В следующий раз дам тебе реальный повод поплакать.",
+			"Закончил капризничать? Хорошо. Теперь начинай слушаться, или готовься к последствиям.",
+			"Выпустил пар? Теперь — слушаться.",
 		]
 	if(_id == "SoftSlaveryPunishRoughSex"):
 		return [
-			"Fuck it. If you don't wanna obey, I will make you.",
-			"Fine. We'll do this the hard way.",
-			"You had your chance. Now you'll learn the hard way.",
-			"Disobedience earns punishment. Don't fucking struggle.",
-			"You chose pain. And I will not disappoint.",
-			"Your resistance just made this much worse for you.",
-			"Should have obeyed. Now you'll pay the price.",
-			"You just ran out of choices. Welcome to your consequences, {npc.npcSlave}.",
-			"Fine. We'll do this the hard way. Your body will obey even if your mind won't.",
-			"You're going to learn your place one way or another.",
-			"I enjoy breaking stubborn ones like you. Makes the victory sweeter.",
-			"Think you can say no to me? Let's see how long that attitude lasts.",
-			"Every time you fight back, I'll just get rougher. Your choice.",
-			"You exist for my pleasure. Time for a reminder.",
+			"Да к черту всё. Если не хочешь подчиняться сама, я тебя заставлю.",
+			"Ладно. Будем делать это по-плохому.",
+			"Твой шанс был. Теперь ты узнаешь, что такое суровая реальность.",
+			"Непослушание карается наказанием. Не, блядь, не дергайся.",
+			"Ты сама выбрала боль. И я тебя не разочарую.",
+			"Твое сопротивление только сделало всё в разы хуже.",
+			"Нужно было слушаться. Теперь придется платить по счетам.",
+			"Твой выбор исчерпан. Добро пожаловать к расплате, {npc.npcSlave}.",
+			"Ладно. Будем делать это по-плохому. Твое тело подчинится, даже если разум будет против.",
+			"Ты выучишь свое место, так или иначе.",
+			"Мне нравится ломать таких упрямыхцев, как ты. Так победа слаще.",
+			"Думаешь, сможешь мне отказать? Посмотрим, надолго ли тебя хватит.",
+			"Каждый раз, когда будешь сопротивляться, я буду действовать всё грубее. Выбор за тобой.",
+			"Ты существуешь для моего удовольствия. Пора напомнить тебе об этом.",
 		]
 	if(_id == "SoftSlaveryPunishRoughSexPCWon"):
 		return [
-			"Ugh.. I'm not done with you.",
-			"This isn't over. Not by a long shot.",
-			"You'll pay for that. Mark my words..",
-			"Enjoy your moment. It won't last. I'm still your owner.",
-			"You just made everything worse for yourself.",
-			"Big mistake. Huge.",
-			"This changes nothing. You're still mine.",
+			"Тьфу... Я с тобой ещё не закончил(а).",
+			"Это ещё не всё. Далеко не всё.",
+			"Ты за это заплатишь. Помяни моё слово...",
+			"Наслаждайся моментом. Он не будет долгим. Я всё ещё твой хозяин.",
+			"Ты только что сделала всё только хуже для себя.",
+			"Большая ошибка. Огромная.",
+			"Это ничего не меняет. Ты всё равно моя.",
 		]
 	if(_id == "SoftSlaveryPunishRoughSexEnded"):
 		return [
-			"Obey next time. Or I will have to do something much worse.",
-			"Let that be a lesson. Next time will be worse.",
-			"Consider yourself warned. My patience has limits.",
-			"That was a taste. Next time I won't hold back.",
-			"Remember this feeling. It gets much worse.",
-			"You got off easy. Don't make me prove it.",
-			"That was your free lesson. The next one costs.",
-			"Let that be a lesson. My patience has limits.",
-			"Remember how this felt. It can always get worse.",
-			"That was just a taste of what disobedience earns you.",
-			"I hope you learned something today. For your sake.",
-			"Your body belongs to me. Don't make me remind you again.",
-			"This was mercy compared to what comes next.",
-			"I own every inch of you. Time you started acting like it.",
+			"В следующий раз слушайся. Или мне придётся сделать кое-что куда похуже.",
+			"Пусть это будет уроком. В следующий раз всё будет жестче.",
+			"Считай, что ты предупрежден. Моё терпение не безгранично.",
+			"Это была лишь разминка. В следующий раз я не стану сдерживаться.",
+			"Запомни это чувство. Дальше будет гораздо хуже.",
+			"Тебе ещё повезло. Не заставляй меня доказывать обратное.",
+			"Это был твой бесплатный урок. Следующий будет стоить дорого.",
+			"Пусть это будет уроком. Моё терпение не бесконечно.",
+			"Запомни это ощущение. Всё может стать куда хуже.",
+			"Это лишь малая часть того, что ждёт тебя за непослушание.",
+			"Надеюсь, ты сегодня чему-то научилась. Ради собственного же блага.",
+			"Твое тело принадлежит мне. Не заставляй меня напоминать об этом снова.",
+			"Это была милость по сравнению с тем, что ждет тебя впереди.",
+			"Каждый дюйм твоего тела принадлежит мне. Пора бы тебе уже начать вести себя соответственно.",
 		]
 	if(_id == "SoftSlaveryPunishSlutwall"):
 		return [
-			"Follow or I will break your legs and pull you along the floor.",
-			"Walk to the slutwall yourself or I'll drag you there by the leash.",
-			"Move your feet or I'll make sure you can't.",
-			"Follow nicely or I'll break something and you'll follow anyway.",
-			"The slutwall awaits. You can go willingly or unwillingly.",
-			"Come along quietly or I'll give you real reason to scream.",
-			"Don't make this harder than it has to be. Walk.",
+			"Иди за мной, иначе я переломаю тебе ноги и потащу по полу.",
+			"Топай к стене для шлюх сама, или я притащу тебя туда на поводке.",
+			"Шевели ногами, иначе я сделаю так, что ты вообще не сможешь ходить.",
+			"Веди себя смирно, или я что-нибудь сломаю, но ты всё равно пойдешь.",
+			"Стена для шлюх ждет. Можешь идти по доброй воле, а можешь — против.",
+			"Иди тихо, или я дам тебе реальный повод для криков.",
+			"Не усложняй всё, чем можешь. Шагай.",
 		]
 	if(_id == "SoftSlaveryPunishSlutwallLock"):
 		return [
-			"Enjoy being used.",
-			"Enjoy all the free public use, slut.",
-			"Make yourself useful for once.",
-			"Finally serving your purpose as a free cum dumpster.",
-			"This is what you're good for. Being fucked for free.",
-			"Welcome to your new function. Try to be bratty now.",
-			"At least you're good for something.",
-			"This is all you're worth.",
-			"Embrace your purpose, {npc.npcSlave}.",
+			"Наслаждайся тем, что тебя используют.",
+			"Наслаждайся тем, что тебя может юзать любой встречный, шлюха.",
+			"Хоть раз принеси от себя пользу.",
+			"Наконец-то ты служишь своему предназначению — бесплатной помойке для спермы.",
+			"Вот для чего ты годишься. Чтобы тебя трахали даром.",
+			"Добро пожаловать в твою новую роль. И попробуй только еще поумничать.",
+			"Хотя бы на это ты годна.",
+			"Это всё, чего ты стоишь.",
+			"Прими свое предназначение, {npc.npcSlave}.",
 		]
 
 	if(_id == "SoftSlaveryPunishStocks"):
 		return [
-			"Follow or I will break your legs and pull you along the floor.",
-			"Move it, or I'll drag you by your hair.",
-			"Walk or I'll make you crawl the whole way.",
-			"Come quietly or I'll chain you and make you walk on your knees.",
-			"Either you walk to the stocks on your own, or I'll carry you there broken.",
+			"Иди за мной, иначе я переломаю тебе ноги и потащу по полу.",
+			"Шевелись, а то за волосы потащу.",
+			"Иди сама, или заставлю ползти весь путь.",
+			"Иди смирно, или заковывай в цепи и заставлю идти на коленях.",
+			"Либо ты сама дойдешь до колодок, либо я дотащу тебя туда поломанную.",
 		]
 	if(_id == "SoftSlaveryPunishStocksLock"):
 		return [
-			"I'm sick of you. Gonna find someone else to use you.",
-			"You're worthless to me right now. Let's see if others find you more entertaining.",
-			"Since you refuse to serve me properly, you'll serve as a fucktoy anyone who wants you.",
-			"Your defiance earns you public use. Hope you enjoy being everyone's toy.",
-			"Too stubborn? Let's see how you handle being public property for a bit.",
-			"If you won't be my obedient slave, you'll be everyone's whore.",
-			"Time to make you useful to someone, since you're useless to me.",
-			"Your body's still good for something.. even if it's just being a public fucktoy.",
-			"Since you can't behave, you'll learn your place under strangers.",
+			"Ты мне уже осточертела. Найду себе кого-нибудь другого на твое место.",
+			"Сейчас ты для меня бесполезна. Посмотрим, найдут ли другие тебя поинтереснее.",
+			"Раз уж ты отказываешься служить мне как следует, будешь служить секс-игрушкой любому, кто захочет.",
+			"Твое неповиновение обрекает тебя на общественное пользование. Надеюсь, тебе понравится быть чьей-то игрушкой на виду у всех.",
+			"Слишком упрямая? Посмотрим, как ты справишься с ролью общей собственности.",
+			"Если не хочешь быть моей послушной рабыней, будешь шлюхой для всех подряд.",
+			"Пора сделать тебя полезной для кого-то другого, раз уж для меня ты бесполезна.",
+			"Твое тело всё еще на что-то годно... пусть даже только на роль публичной шлюхи.",
+			"Раз ты не умеешь вести себя прилично, научишься знать свое место перед чужаками.",
 		]
 	if(_id == "SoftSlaveryPunishStocksAsk"):
 		return [
-			"Is {pc.he} free to use?",
-			"This one available for a quick fuck?",
-			"Is your whore open for fucking?",
-			"Mind if I use your fucktoy?",
-			"Your slave looks like {pc.he} needs some attention. Can I?",
-			"Can I have a turn with your slave?",
-			"This slave available for use?",
+			"{pc.he} свободна для использования?",
+			"Эта доступна для быстрого траха?",
+			"Твоя шлюха открыта для секса?",
+			"Не против, если я воспользуюсь твоей игрушкой?",
+			"Твоя рабыня выглядит так, будто {pc.he} нуждается во внимании. Можно?",
+			"Можно мне тоже по очереди с твоей рабыней?",
+			"Эта рабыня доступна для использования?",
 		]
 	if(_id == "SoftSlaveryPunishStocksAskNope"):
 		return [
-			"Nope. <CREDITS> credits first and then you can do whatever you want with {pc.him}.",
-			"Not for free. <CREDITS> credits first.",
-			"Everything has a price. <CREDITS> and {pc.he} {pc.isAre} all yours.",
-			"<CREDITS> credits and you can break {pc.him} however you like.",
-			"Pay <CREDITS> credits and use {pc.him} as your personal toy.",
-			"Not giving {pc.him} away. <CREDITS> credits for a single use.",
+			"Не-а. Сначала <CREDITS> кредитов, а потом можешь делать с {pc.him} всё, что захочешь.",
+			"Не бесплатно. Сначала <CREDITS> кредитов.",
+			"У всего есть цена. <CREDITS> кредитов, и {pc.he} будет полностью в твоём {pc.isAre} распоряжении.",
+			"<CREDITS> кредитов, и ты сможешь ломать {pc.him} как тебе вздумается.",
+			"Заплати <CREDITS> кредитов и используй {pc.him} как свою личную игрушку.",
+			"{pc.him} просто так не отдаю. <CREDITS> кредитов за одно использование.",
 		]
 	if(_id == "SoftSlaveryPunishStocksAskNoBuy"):
 		return [
-			"What if I don't wanna pay?",
-			"I'm not paying for used goods.",
-			"Too expensive for damaged property.",
-			"That's more than this slave is worth.",
-			"Not paying that for your disobedient whore.",
-			"Your slave isn't worth that much.",
-			"Your price is too high for broken merchandise.",
-			"This one looks used up already. Why pay?",
-			"I'd rather take {pc.him} by force than pay.",
+			"А если я не хочу платить?",
+			"Я не собираюсь платить за подержанный товар.",
+			"Слишком дорого для повреждённого имущества.",
+			"Это больше, чем стоит эта рабыня.",
+			"Не стану платить столько за твою непослушную шлюху.",
+			"Твоя рабыня не стоит таких денег.",
+			"Цена слишком высока для бракованного товара.",
+			"Эта выглядит уже совсем изношенной. Зачем платить?",
+			"Я скорее возьму {pc.him} силой, чем буду платить.",
 		]
 	if(_id == "SoftSlaveryPunishStocksAskNoBuy2"):
 		return [
-			"Go away then.",
-			"Then fuck off, cheapskate.",
-			"No credits, no fuck. Simple. Go away.",
-			"Then stop wasting my time. Go away.",
-			"Get lost if you can't pay.",
-			"Poor people shouldn't bother slave owners. Go away.",
-			"Come back when you have real credits.",
-			"Then you get nothing. Leave.",
+			"Ну и вали тогда.",
+			"Тогда съебись, скряга.",
+			"Нет кредитов — нет секса. Всё просто. Проваливай.",
+			"Тогда хватит тратить моё время. Сгинь.",
+			"Раз не можешь платить — катись отсюда.",
+			"Беднякам не стоит докучать хозяевам рабов. Проваливай.",
+			"Возвращайся, когда у тебя будут настоящие кредиты.",
+			"Тогда ты не получишь ничего. Сваливай.",
 		]
 	if(_id == "SoftSlaveryPunishStocksAskNoBuy3"):
 		return [
-			"I don't wanna do that either.",
-			"I'm not leaving empty-handed.",
-			"Maybe I'll just take what I want.",
-			"Your slave looks tempting enough to fuck you up.",
-			"I think I'll help myself anyway.",
-			"Your property looks like it needs proper use.",
-			"Maybe I'll use {pc.him} and let you watch.",
-			"I don't take no for an answer.",
-			"This slave's going to get used one way or another.",
+			"Я тоже этого не хочу.",
+			"Я не уйду с пустыми руками.",
+			"Может, я просто возьму то, что захочу.",
+			"Твой раб выглядит достаточно соблазнительно, чтобы трахнуть тебя.",
+			"Думаю, я всё равно возьму своё.",
+			"Твоя собственность явно нуждается в должном использовании.",
+			"Может, я возьму {pc.him}, а ты будешь смотреть.",
+			"Ответ «нет» меня не интересует.",
+			"Эту рабыню всё равно используют, так или иначе.",
 		]
 	if(_id == "SoftSlaveryPunishStocksAskSure"):
 		return [
-			"Sure.",
-			"Fine by me.",
-			"There you go.",
-			"Here. Should be enough.",
-			"Should be good.",
+			"Конечно.",
+			"Меня устраивает.",
+			"Вот, держи.",
+			"На, должно хватить.",
+			"Вроде сойдёт.",
 		]
 	if(_id == "SoftSlaveryPunishStocksAfterSex"):
 		return [
-			"You better obey next time. I'm serious. Thanks for being such a good whore. Enjoy your stay.",
-			"See how much better life is when you're useful? Now stay put and think about your place.",
-			"That's what you're good for. Remember this feeling next time you consider disobedience.",
-			"You served your purpose well. Maybe being a public use slut suits you better?",
-			"See? You can be obedient when properly motivated. Enjoy the stocks.",
-			"You finally found something you're good at. Public use slut.",
-			"Good whore. Now stay locked up and think about how much better obedience feels.",
+			"В следующий раз лучше слушайся. Я серьезно. Спасибо, что была такой послушной шлюхой. Наслаждайся пребыванием.",
+			"Видишь, как жизнь становится лучше, когда ты полезна? А теперь сиди смирно и помни своё место.",
+			"Для этого ты и годишься. В следующий раз, когда решишь ослушаться, вспомни это чувство.",
+			"Ты отлично справилась со своей задачей. Может, роль публичной шлюхи тебе подходит больше?",
+			"Видишь? Ты можешь быть послушной, если тебя правильно мотивировать. Наслаждайся колодками.",
+			"Ты наконец-то нашла дело по душе. Шлюха для общественного пользования.",
+			"Хорошая шлюха. А теперь сиди взаперти и думай о том, как приятно быть послушной.",
 		]
 	if(_id == "SoftSlaveryPunishStocksAfterBadSex"):
 		return [
-			"That sucked. Give me my credits back.",
-			"Worst fuck I've ever paid for. Refund me.",
-			"Your slave is terrible. I want my money back.",
-			"This whore isn't worth the credits. Return them.",
-			"Your slave fights too much. Not worth the price.",
-			"This one's broken. Give me my credits back.",
-			"Waste of good creds. Your whore is useless.",
-			"Terrible fucking service. I demand a refund.",
+			"Это было отстойное дерьмо. Верни мои кредиты.",
+			"Худший трах, за который я когда-либо платил. Верните деньги.",
+			"Твоя рабыня ужасна. Хочу вернуть свои деньги.",
+			"Эта шлюха не стоит этих кредитов. Верни их.",
+			"Твоя рабыня слишком много брыкается. Не стоит своих денег.",
+			"Эта сломана. Верни мне мои кредиты.",
+			"Зря потраченные кредиты. Твоя шлюха бесполезна.",
+			"Ужасный сервис. Требую возврата денег.",
 		]
 	if(_id == "SoftSlaveryPunishStocksAfterBadSex2"):
 		return [
-			"That's not how it works. You used my {npc.npcSlave}, now go away.",
-			"No refunds. You got what you paid for.",
-			"You used my {npc.npcSlave}. No refunds.",
-			"My slave served you. Deal with it.",
-			"You paid for access, not satisfaction.",
+			"Всё работает не так. Ты использовал мой {npc.npcSlave}, так что теперь проваливай.",
+			"Возврата нет. Ты получил ровно то, за что заплатил.",
+			"Ты использовал мой {npc.npcSlave}. Без возврата денег.",
+			"Моя рабыня прислужила тебе. Смирись с этим.",
+			"Ты платил за доступ, а не за удовлетворение.",
 		]
 	if(_id == "SoftSlaveryPunishStocksOwnerLost"):
 		return [
-			"Pathetic display.",
-			"You fight like a slave yourself.",
-			"Is that the best you can manage?",
-			"All that struggle for nothing.",
-			"You're even weaker than I thought.",
-			"All that anger, so little strength.",
+			"Жалкое зрелище.",
+			"Ты сам дерешься как раб.",
+			"Это всё, на что ты способен?",
+			"Столько борьбы — и всё впустую.",
+			"Ты даже слабее, чем я думал.",
+			"Столько ярости, и так мало сил.",
 		]
 	if(_id == "SoftSlaveryPunishStocksOwnerLost2"):
 		return [
-			"Much better. Enjoy yourself. Both of you.",
-			"Two slaves, both in stocks. Much better.",
-			"Both slaves are now in stocks. That's the way things always should have been.",
-			"Learn your place alongside your slave. Doormat.",
+			"Так-то лучше. Наслаждайтесь. Оба.",
+			"Две рабыни, обе в колодках. Куда лучше.",
+			"Обе рабыни теперь в колодках. Именно так всё и должно было быть всегда.",
+			"Учись знать своё место рядом со своей рабыней. Коврик для ног.",
 		]
 	if(_id == "SoftSlaveryPunishStocksOwnerLost3"):
 		return [
-			"Much better. And now your little slave will watch as I punish you.",
-			"Good. Now your property gets to see what happens to disobedient owners.",
-			"Perfect. Your slave will learn from your mistakes.",
-			"Much better. Your slave will remember this.",
-			"Good. Your whore gets to see proper punishment.",
+			"Так гораздо лучше. А теперь твоя маленькая рабыня будет смотреть, как я тебя наказываю.",
+			"Хорошо. Теперь твоя собственность увидит, что бывает с непослушными хозяевами.",
+			"Идеально. Твоя рабыня извлечёт урок из твоих ошибок.",
+			"Так намного лучше. Твоя рабыня это запомнит.",
+			"Хорошо. Твоя шлюха увидит, что такое правильное наказание.",
 		]
 	if(_id == "SoftSlaveryPunishStocksOwnerWon"):
 		return [
-			"Learn your place.",
-			"You're so weak. Learn your place.",
-			"Pathetic display. Learn your place.",
-			"You're dumb and weak. Learn your place.",
+			"Знай своё место.",
+			"Ты такой слабый. Учись знать своё место.",
+			"Жалкое зрелище. Знай своё место.",
+			"Ты тупая и слабая. Знай своё место.",
 		]
 	if(_id == "SoftSlaveryPunishStocksOwnerWon2"):
 		return [
-			"You as well. You are on some very thin ice, {npc.npcSlave}.",
+			"Ты тоже. Ты ходишь по очень тонкому льду, {npc.npcSlave}.",
 		]
 	if(_id == "SoftSlaveryPunishStocksOwnerWon3"):
 		return [
-			"And now you're gonna learn your place.",
-			"You're so weak. And now you're gonna learn your place.",
-			"Pathetic display. And now you're gonna learn your place.",
-			"You're dumb and weak. And now you're gonna learn your place.",
+			"И теперь ты выучишь своё место.",
+			"Ты такая слабая. И теперь ты выучишь своё место.",
+			"Жалкое зрелище. И теперь ты выучишь своё место.",
+			"Ты тупая и слабая. И теперь ты выучишь своё место.",
 		]
 	if(_id == "SoftSlaveryPunishStocksOwnerWon4"):
 		return [
-			"And you watch. You are on some very thin ice, {npc.npcSlave}.",
-			"Pay attention, slave. This is what happens to disobedient bitches.",
+			"И ты смотри. Ты ходишь по очень тонкому льду, {npc.npcSlave}.",
+			"Слушай внимательно, рабыня. Вот что бывает с непослушными сучками.",
 		]
 
 	if(_id == "SoftSlaveryPunishSell"):
 		return [
-			"I'm just so sick of you. I'm done. I hate you. I don't want to see you ever again.",
-			"I've had enough of your disobedience. You're not gonna be my problem anymore.",
-			"You've failed me for the last time. I'm getting rid of you.",
-			"I wanted to break you, but you're not even worth the effort. Goodbye.",
-			"You could have been good, but you're just broken. I'm done with you.",
+			"Ты меня просто достала. С меня хватит. Ты меня бесишь. Не хочу тебя больше видеть.",
+			"С меня хватит твоего непослушания. Ты больше не будешь моей головной болью.",
+			"Ты подвела меня в последний раз. Я от тебя избавляюсь.",
+			"Я хотела сломить тебя, но ты даже не стоишь этих усилий. Прощай.",
+			"Ты могла бы быть послушной, но ты просто безнадежна. С тебя хватит.",
 		]
 	if(_id == "SoftSlaveryPunishSell2"):
 		return [
-			"I will let someone else deal with your bullshit.",
-			"Maybe someone else can handle your attitude. I doubt it.",
-			"Enjoy your new life. I hope they're stricter than I was.",
-			"Let's see how long you last with someone who won't tolerate your nonsense.",
-			"You're not my problem anymore. Someone else can try to tame you.",
-			"Good luck with your new life. They won't be as patient as I was.",
-			"Someone else can deal with your disobedience now. I'm washing my hands of you.",
+			"Пусть с твоим дерьмом разбирается кто-нибудь другой.",
+			"Может, кто-то другой справится с твоим гонором. Хотя я сомневаюсь.",
+			"Наслаждайся новой жизнью. Надеюсь, они будут строже, чем я.",
+			"Посмотрим, надолго ли тебя хватит с тем, кто не станет терпеть твой бред.",
+			"Ты больше не моя забота. Пусть кто-нибудь другой попробует тебя приручить.",
+			"Удачи в новой жизни. Они не будут такими терпеливыми, как я.",
+			"С твоим непослушанием теперь справится кто-нибудь другой. Я с тебя умываю руки.",
 		]
 
 
 	if(_id == "SoftSlaveryPunishGB"):
 		return [
-			"I'm so getting annoyed with you. Let's see how you will like a whole ass gangbang.",
-			"You've been disobedient. Time to be used by everyone as punishment.",
-			"Think you're too good to listen? Let's see how you like being gangbanged in the public.",
-			"Your mouth has been saying no too often. Time to find some use for all your holes.",
-			"Bad slaves get shared. You're about to become a public gangbang whore.",
-			"I'm tired of your attitude. Maybe being passed around will improve it.",
-			"You need to remember your place. A good gangbang should remind you.",
-			"Disobedience earns you extra cocks down all of your holes. Hope you're ready for your punishment.",
+			"Ты начинаешь меня дико бесить. Посмотрим, как тебе понравится настоящий групповой секс.",
+			"Ты была непослушной. Пришло время наказать тебя и дать использовать себя всем подряд.",
+			"Думаешь, ты слишком хороша, чтобы слушаться? Посмотрим, как тебе понравится групповуха на публике.",
+			"Твой рот слишком часто говорит «нет». Пора найти применение всем твоим дырочкам.",
+			"Плохих рабынь делят на всех. Скоро ты станешь публичной шлюхой для группового секса.",
+			"Мне надоело твоё гонорство. Может, если тебя покрутят из рук в руки, характер станет лучше.",
+			"Тебе нужно помнить своё место. Хорошая групповуха должна тебе об этом напомнить.",
+			"За непослушание полагается бонус — по члену в каждую твою дырочку. Надеюсь, ты готова к наказанию.",
 		]
 	if(_id == "SoftSlaveryPunishGBGiveup"):
 		return [
-			"Whatever. You're lucky there is not enough people around.",
-			"Damn, nobody wants to fuck you? Even as punishment? Pathetic.",
-			"Can't even find enough people who want your holes. What does that say about you?",
-			"Nobody's interested in punishing you today. Consider yourself lucky.",
-			"Too bad, seems like you're not even worth gangbanging right now.",
+			"Да плевать. Тебе повезло, что вокруг не слишком много народу.",
+			"Черт, неужели тебя никто не хочет трахнуть? Даже в наказание? Жалкое зрелище.",
+			"Даже не нашлось достаточно людей, которым захотелось бы твоих дырок. Что это говорит о тебе?",
+			"Сегодня тебя никто не хочет наказывать. Считай, что тебе повезло.",
+			"Жаль, похоже, ты сейчас даже не стоишь того, чтобы тебя оттрахали толпой.",
 		]
 	if(_id == "SoftSlaveryPunishGBOffer"):
 		return [
-			"Hey. Do you wanna help me punish this {npc.npcSlave}?",
-			"Interested in breaking in my disobedient {npc.npcSlave}?",
-			"Want to help teach my {npc.npcSlave} {pc.his} place?",
-			"Care to join in punishing this useless {npc.npcSlave}?",
-			"My {npc.npcSlave} needs correction. Want to help?",
-			"This {npc.npcSlave} needs to be reminded they're just holes. Interested?",
-			"Want to use my {npc.npcSlave} as punishment? {pc.He} {pc.isAre} been naughty.",
-			"Care to join a gangbang? My {npc.npcSlave} deserves it.",
-			"My {npc.npcSlave} needs to be put in {pc.his} place. Want to help?",
+			"Эй. Хочешь помочь мне наказать этого {npc.npcSlave}?",
+			"Есть желание приручить мою непослушную {npc.npcSlave}?",
+			"Хочешь помочь мне проучить мою {npc.npcSlave} в этом {pc.his} месте?",
+			"Не желаешь ли поучаствовать в наказании этой бесполезной {npc.npcSlave}?",
+			"Моей {npc.npcSlave} нужно исправление. Поможешь?",
+			"Этой {npc.npcSlave} нужно напомнить, что она всего лишь дырка. Интересует?",
+			"Хочешь использовать мою {npc.npcSlave} в качестве наказания? {pc.He} {pc.isAre} была очень непослушной.",
+			"Не хочешь поучаствовать в гангбэнге? Моя {npc.npcSlave} это заслужила.",
+			"Мою {npc.npcSlave} нужно поставить на {pc.his} место. Поможешь?",
 		]
 	if(_id == "SoftSlaveryPunishGBSure"):
 		return [
-			"Sure. I can do that.",
-			"Always happy to fuck a whore.",
-			"Would love to.",
-			"Count me in.",
-			"Gladly.",
+			"Конечно. Я могу это сделать.",
+			"Всегда рад трахнуть шлюху.",
+			"С удовольствием.",
+			"Запиши меня в деле.",
+			"С радостью.",
 		]
 	if(_id == "SoftSlaveryPunishGBFollow"):
 		return [
-			"Follow then.",
-			"This way. Let's find a good spot.",
-			"Follow me.",
-			"Come along.",
-			"Follow me. Let's get this gangbang started soon.",
+			"Тогда иди за мной.",
+			"Сюда. Давай найдем подходящее местечко.",
+			"Следуй за мной.",
+			"Пошли.",
+			"Иди за мной. Пора бы уже замутить этот гангбэнг.",
 		]
 	if(_id == "SoftSlaveryPunishGBSubOffer"):
 		return [
-			"Mmm.. maybe you can punish me too?",
-			"I'd rather be the one getting used, actually.",
-			"Could I join as another hole to be filled?",
-			"Would you mind if I was on the receiving end instead?",
-			"I'm more interested in being the one getting gangbanged.",
-			"Actually, I'd prefer to be the punishment toy.",
-			"Mind if I switch places with your {npc.npcSlave}? Or an extra..",
-			"I'd rather be the one taking all the cocks.",
-			"Could I be the one getting punished instead? Or at least be an extra.",
-			"I want to be the gangbang slut, not one of the participants.",
+			"Ммм... может, ты и меня тоже накажешь?",
+			"Вообще-то, я бы предпочла сама стать той, кого используют.",
+			"Можно мне присоединиться в качестве еще одной дырки, которую нужно заполнить?",
+			"Ты не против, если на этот раз принимать всё на себя буду я?",
+			"Мне больше хочется самой оказаться в центре гангбэнга.",
+			"Вообще-то, я бы предпочла быть живой игрушкой для наказаний.",
+			"Не возражаешь, если я поменяюсь местами с твоим {npc.npcSlave}? Или буду в качестве добавки...",
+			"Я бы лучше сама принимала в себя все члены.",
+			"А можно мне вместо этого быть наказанной? Ну, или хотя бы просто добавкой?",
+			"Я хочу быть шлюхой для групповухи, а не одной из участниц.",
 		]
 	if(_id == "SoftSlaveryPunishGBSubOfferYes"):
 		return [
-			"I guess we could use some extra fuckmeat.",
-			"Fine by me. The more holes the better.",
-			"Sure, why not? Two sluts are better than one.",
-			"Excellent. Double the fun for everyone.",
-			"Perfect. We'll use both of you then.",
-			"Works for me. More bodies to play with.",
-			"Great. You can be the bonus hole.",
-			"Alright. The more the merrier when it comes to gangbangs.",
-			"Good thinking. We'll break in both of you.",
-			"Why not? Plenty of cocks to go around.",
+			"Думаю, лишнее мясо для траха нам не помешает.",
+			"Меня устраивает. Чем больше дырок, тем лучше.",
+			"Конечно, почему бы и нет? Две шлюхи лучше, чем одна.",
+			"Отлично. В два раза больше веселья для всех.",
+			"Идеально. Тогда используем вас обеих.",
+			"Мне подходит. Больше тел — больше развлечений.",
+			"Супер. Будешь нашей бонусной дыркой.",
+			"Ладно. Чем больше народу, тем веселее, когда дело доходит до гангбэнга.",
+			"Хорошая мысль. Мы быстро приучим вас обоих.",
+			"Почему бы и нет? Член на всех хватит.",
 		]
 	if(_id == "SoftSlaveryPunishGBSubOfferNo"):
 		return [
-			"We already have an extra bitch.",
-			"No thanks, we've got enough holes to fill.",
-			"This is about punishing my {npc.npcSlave}, not you.",
-			"We don't need another slut right now.",
-			"Sorry, this punishment is reserved for my {npc.npcSlave}.",
-			"We're focused on correcting one bitch at a time.",
-			"We've got all the fuckmeat we need.",
+			"У нас уже есть лишняя сучка.",
+			"Нет, спасибо, у нас и так хватает дырок, которые нужно забивать.",
+			"Речь идет о наказании моей {npc.npcSlave}, а не о тебе.",
+			"Нам сейчас не нужна еще одна шлюха.",
+			"Прости, это наказание зарезервировано для моей {npc.npcSlave}.",
+			"Мы сосредоточены на исправлении одной сучки за раз.",
+			"У нас достаточно мяса для траха.",
 		]
 	if(_id == "SoftSlaveryPunishGBSubOfferNoAw"):
 		return [
-			"Aw.. Oh well.",
-			"That's too bad. Maybe next time.",
-			"Damn. I really wanted to be used.",
-			"Too bad. I love being gangbang material.",
-			"Disappointing. I enjoy being punished.",
-			"Oh well. Maybe I'll find another gangbang.",
-			"Shame. Nothing better than being used by multiple people.",
+			"Ах.. Ну ладно.",
+			"Жаль. Может, в следующий раз.",
+			"Черт. А я так хотела, чтобы меня использовали.",
+			"Жалко. Обожаю быть подстилкой для групповухи.",
+			"Разочарование. Мне нравится, когда меня наказывают.",
+			"Ну и ладно. Может, найду другую групповуху.",
+			"Какая жалость. Нет ничего лучше, чем когда тебя юзают сразу несколько человек.",
 		]
 	if(_id == "SoftSlaveryPunishGBNo"):
 		return [
-			"I will pass.",
-			"Not interested, thanks.",
-			"No thanks, not my thing.",
-			"I'll sit this one out.",
-			"Not today.",
-			"I'd rather not participate.",
-			"No, I'm good.",
-			"Not for me, thanks.",
-			"I'll pass on that.",
+			"Я пасую.",
+			"Не интересно, спасибо.",
+			"Нет, спасибо, это не по моей части.",
+			"В этот раз я пасу.",
+			"Не сегодня.",
+			"Пожалуй, я воздержусь.",
+			"Нет, со мной всё в порядке.",
+			"Мне это не интересно, спасибо.",
+			"Я, пожалуй, пропущу это.",
 		]
 	if(_id == "SoftSlaveryPunishGBNoReact"):
 		return [
-			"Well screw you then.",
-			"Your loss.",
-			"Fine. More for the rest of us.",
-			"Suit yourself.",
-			"Whatever. We don't need you.",
-			"Too bad for you.",
-			"Your choice. We'll find someone else.",
-			"Fine. We'll manage without you.",
-			"No problem. Plenty of others want to have fun.",
+			"Ну и хрен с тобой тогда.",
+			"Твоя потеря.",
+			"Ладно. Значит, остальным достанется больше.",
+			"Как хочешь.",
+			"Плевать. Ты нам не особо-то и нужен.",
+			"Ну и жаль тебя.",
+			"Твой выбор. Найдем кого-нибудь другого.",
+			"Ладно. Справимся и без тебя.",
+			"Без проблем. Куча других мечтают повеселиться.",
 		]
 	if(_id == "SoftSlaveryPunishGBStart"):
 		return [
-			"Time to teach you a lesson.",
-			"Let the punishment begin.",
-			"Ready to learn your place?",
-			"This is what disobedience earns you.",
-			"Hope you're ready for your punishment.",
-			"This will remind you who owns you.",
-			"Let's see how many cocks you can take.",
+			"Пора преподать тебе урок.",
+			"Да начнется наказание.",
+			"Готова усвоить свое место?",
+			"Вот что бывает за непослушание.",
+			"Надеюсь, ты готова к наказанию.",
+			"Это напомнит тебе, кто твоя хозяйка.",
+			"Посмотрим, сколько членом ты сможешь принять.",
 		]
 	if(_id == "SoftSlaveryPunishGBEnd"):
 		return [
-			"You're on very thin ice from now on, {npc.npcSlave}.",
-			"Remember this feeling the next time you think about disobeying.",
-			"Let that be a lesson about who owns these holes.",
-			"Next time it will be worse. Remember that.",
-			"Hope you enjoyed your punishment. There's more where that came from.",
-			"Think about this the next time you consider saying no.",
-			"Your body belongs to me. Never forget that again.",
-			"This is just a taste of what happens to disobedient slaves.",
-			"Remember this gangbang every time you think about misbehaving.",
-			"Your holes are mine to share. Don't make me do this again.",
+			"С этого момента ты ходишь по очень тонкому льду, {npc.npcSlave}.",
+			"Вспомни это чувство в следующий раз, когда решишь ослушаться.",
+			"Пусть это будет уроком: помни, кому принадлежат эти дырки.",
+			"В следующий раз будет еще хуже. Запомни это.",
+			"Надеюсь, тебе понравилось наказание. Такого еще будет много.",
+			"Подумай об этом в следующий раз, когда захочешь сказать «нет».",
+			"Твое тело принадлежит мне. Никогда больше об этом не забывай.",
+			"Это лишь малая часть того, что ждет непослушных рабынь.",
+			"Вспоминай этот гангбэнг каждый раз, когда захочешь разбаловаться.",
+			"Твои дырки принадлежат мне, и я буду ими делиться. Не заставляй меня повторять это снова.",
 		]
 		
 	if(_id == "SoftSlaveryPunishLockRestraint"):
 		return [
-			"You fucked up. And now you will have to wear it.",
-			"Since you can't behave, I have to punish you with this.",
-			"There. It's locked. Maybe now you'll think twice before disobeying.",
-			"Every time you feel that weight, remember why it's there.",
-			"You brought this on yourself. Don't you dare complain.",
-			"Let's see how long it takes for you to regret what you did.",
-			"That's it. That's what you get. Enjoy."
+			"Ты облажалась. И теперь тебе придется за это отвечать.",
+			"Раз уж ты не умеешь вести себя прилично, придётся наказать тебя этим.",
+			"Вот так. Заперто. Может, теперь ты дважды подумаешь, прежде чем ослушаться.",
+			"Каждый раз, когда будешь чувствовать этот вес, вспоминай, за что он на тебе.",
+			"Ты сама напросилась. И не смей жаловаться.",
+			"Посмотрим, как скоро ты пожалеешь о том, что натворила.",
+			"Вот так. Так тебе и надо. Наслаждайся."
 		]
 	if(_id == "SoftSlaveryPunishLockRestraint2"):
 		return [
-			"If you dare to take it off before I allow you, I will have to punish you again.",
-			"Touch that lock without my permission and it will get worse for you.",
-			"I will know if you tamper with it. Do it and the punishment will get worse.",
-			"Try taking it off. See if I don't make you wear something worse.",
-			"That stays exactly where I put it until I say otherwise. Understood?",
-			"Try to remove it and we move to something far less comfortable."
+			"Если посмеешь снять это без моего разрешения, мне придётся наказать тебя снова.",
+			"Тронешь замок без моего позволения — и всё станет только хуже.",
+			"Я сразу пойму, если ты начнешь с ним возиться. Сделаешь это — и наказание усилится.",
+			"Попробуй только снять. Посмотрим, не заставлю ли я тебя надеть что-нибудь похуже.",
+			"Это лежит ровно там, где я положил, пока я не скажу иначе. Понятно?",
+			"Попробуй только снять это, и мы перейдем к чему-то куда менее комфортному."
 		]
 	if(_id == "SoftSlaveryPunishLockRestraint3"):
 		return [
-			"You are on some very thin ice right now, you really better start behaving now.",
-			"I'm losing my patience with you. Test me again and see what happens.",
-			"You're lucky I'm being this merciful. Don't make me regret it.",
-			"Another slip and we escalate. No more chances after this one.",
-			"I suggest you start remembering who's in charge here. Quickly.",
-			"Your behaviour. Fix it, or I will fix it for you."
+			"Ты сейчас ходишь по очень тонкому льду, так что тебе лучше начать вести себя прилично.",
+			"Мое терпение на исходе. Испытай меня еще раз и посмотри, что будет.",
+			"Тебе везет, что я проявляю такое милосердие. Не заставляй меня пожалеть об этом.",
+			"Еще одна оплошность — и градус повысится. После этого шансов больше не будет.",
+			"Советую тебе поскорее вспомнить, кто здесь главный. Живо.",
+			"Твое поведение. Исправь его, или я исправлю его за тебя."
 		]
 
 	if(_id == "SoftSlaveryResist"):
 		return [
-			"Really, {npc.npcSlave}? Is that how you wanna do this?",
-			"Think you can resist me, {npc.npcSlave}? How adorable.",
-			"So you want to do this the hard way? Fine by me.",
-			"Resisting? You'll regret that choice.",
-			"You're actually trying to fight back? How pathetic.",
-			"This is your idea of a good time? Getting beaten into submission?",
-			"You think you have a choice here? How cute.",
-			"You want to play rough? Let's play rough then.",
-			"This rebellion of yours is going to end painfully.",
+			"Серьезно, {npc.npcSlave}? Ты именно так хочешь всё провернуть?",
+			"Думаешь, сможешь мне противостоять, {npc.npcSlave}? Как мило.",
+			"Значит, хочешь пойти по сложному пути? Как пожелаешь.",
+			"Сопротивляешься? Еще пожалеешь о таком выборе.",
+			"Ты и правда пытаешься дать отпор? Как жалко.",
+			"Это, по-твоему, весело? Когда тебя вбивают в покорность?",
+			"Думаешь, у тебя есть выбор? Как мило.",
+			"Хочешь поиграть жестко? Ну, тогда поиграем жестко.",
+			"Твой бунт закончится очень болезненно.",
 		]
 	if(_id == "SoftSlaveryFuckInStocksExtra"):
 		return [
-			"Hey! I wanna fuck them too.",
-			"Mind if I join in? Looks like fun.",
-			"Can I get a turn with that fucktoy?",
-			"Room for one more? I'd love to use those holes.",
-			"Think your fucktoy can handle two of us?",
+			"Эй! Я тоже хочу их оттрахать.",
+			"Не против, если я присоединюсь? Выглядит весело.",
+			"Можно мне тоже по очереди с этой секс-игрушкой?",
+			"Место для еще одного найдется? Я бы с удовольствием задействовал эти дырочки.",
+			"Думаешь, твоя игрушка вывезет нас двоих?",
 		]
 	if(_id == "SoftSlaveryFuckInStocksExtraYes"):
 		return [
-			"Sure, let's do it. Help me lock {pc.him} in.",
-			"Good idea. Help me secure my {npc.npcSlave}.",
-			"Perfect timing. Let's make sure {pc.he} can't escape.",
-			"Glad you asked. Help me get {pc.him} properly restrained.",
-			"Sure thing. Let's double team this bitch.",
-			"Works for me. Help me make sure {pc.he} {pc.isAre} completely helpless.",
+			"Конечно, давай. Помоги мне запереть {pc.him}.",
+			"Хорошая идея. Помоги мне закрепить мою {npc.npcSlave}.",
+			"Идеально. Давай сделаем так, чтобы {pc.he} не смогла сбежать.",
+			"Рада, что ты спросил. Помоги мне как следует сковать {pc.him}.",
+			"Без проблем. Давай возьмем эту сучку вдвоем.",
+			"Мне подходит. Помоги мне сделать так, чтобы {pc.he} {pc.isAre} была совершенно беспомощной.",
 		]
 	if(_id == "SoftSlaveryFuckInStocksExtraNo"):
 		return [
-			"No. This is my {npc.npcSlave}, fuck off.",
-			"Get lost. I don't share my property.",
-			"This {npc.npcSlave} is mine alone. Find your own.",
-			"No way. I'm not sharing my {npc.npcSlave} with you.",
-			"Beat it. This {npc.npcSlave} is for me to use.",
-			"Piss off. My {npc.npcSlave}, my rules.",
-			"No sharing. This {npc.npcSlave} belongs to me.",
-			"Find your own {npc.npcSlave}. This one's taken.",
-			"Get your own. This one's mine.",
-			"Back off. This {npc.npcSlave} is mine to use.",
-			"Not interested in sharing. Go away.",
-			"This is a private session. Fuck off.",
+			"Нет. Это моя {npc.npcSlave}, отъебись.",
+			"Сгинь. Я не делюсь своей собственностью.",
+			"Этот {npc.npcSlave} принадлежит только мне. Ищи свой.",
+			"Ни за что. Я не собираюсь делиться своим {npc.npcSlave} с тобой.",
+			"Проваливай. Этот {npc.npcSlave} только для моего использования.",
+			"Отъебись. Мой {npc.npcSlave} — мои правила.",
+			"Никакого дележа. Этот {npc.npcSlave} принадлежит мне.",
+			"Найди себе другой {npc.npcSlave}. Этот уже занят.",
+			"Заведи себе свой. Этот — мой.",
+			"Отойди. Этот {npc.npcSlave} предназначен для меня.",
+			"Делиться не интересно. Сгинь.",
+			"Это приватная сессия. Пошел нахуй.",
 		]
 	if(_id == "SoftSlaveryFuckInStocksExtraNo2"):
 		return [
-			"Really? I wasn't asking.",
-			"Too bad. I'm taking what I want.",
-			"Your opinion doesn't matter. Step aside.",
-			"I wasn't requesting permission.",
-			"This isn't a negotiation.",
-			"Watch me take what I want.",
-			"I don't care what you think.",
-			"Try and stop me then.",
-			"This is happening whether you like it or not.",
-			"I think I'll help myself anyway.",
-			"You can't stop me from having some fun.",
+			"Серьезно? Я вроде и не спрашивал(а).",
+			"Жаль. Но я возьму то, что хочу.",
+			"Твое мнение никого не волнует. С дороги.",
+			"Я не разрешения просил(а).",
+			"Это не переговоры.",
+			"Просто смотри, как я беру то, что мне нужно.",
+			"Мне плевать, что ты там думаешь.",
+			"Ну так попробуй меня остановить.",
+			"Это случится, нравится тебе это или нет.",
+			"Думаю, я всё равно возьму своё.",
+			"Тебе не помешать мне немного развлечься.",
 		]
 	if(_id == "SoftSlaveryFuckInStocksExtraFree"):
 		return [
-			"You're free, for now.",
-			"Alright, that's enough for today. You can go.",
-			"Get out of here. I'm done with you for now.",
-			"That's all the attention you get today. Now go.",
-			"Run along. We'll continue this another time.",
-			"Go on, get out of here. I've had my fun.",
-			"Consider this session over. Now disappear.",
-			"You're free to go. For now.",
-			"Get lost. I'll find you when I want you again.",
+			"Ты свободна, пока что.",
+			"Ладно, на сегодня хватит. Можешь идти.",
+			"Проваливай. С тобой на сегодня покончено.",
+			"Это всё внимание, которое ты получишь сегодня. А теперь — марш.",
+			"Беги. Продолжим в другой раз.",
+			"Давай, выметайся. Я уже вдоволь повеселился.",
+			"Считай, что сеанс окончен. А теперь исчезни.",
+			"Ты свободна. Пока что.",
+			"Исчезни с глаз. Я найду тебя, когда снова захочу.",
 		]
 	if(_id == "SoftSlaveryFuckInStocksExtraFreeLost"):
 		return [
-			"You are still my {npc.npcOwner}, understand?",
-			"Don't think this changes anything. You're still mine.",
-			"Remember who really owns you, {npc.npcSlave}.",
-			"Nothing's changed. You're still my {npc.npcSlave}.",
-			"You still answer to me, understand?",
+			"Ты всё ещё моя {npc.npcOwner}, поняла?",
+			"Не думай, что это что-то меняет. Ты всё ещё моя собственность.",
+			"Помни, кто на самом деле владеет тобой, {npc.npcSlave}.",
+			"Ничего не изменилось. Ты всё ещё моя {npc.npcSlave}.",
+			"Ты всё ещё отвечаешь мне, понятно?",
 		]
 
 	if(_id == "SoftSlaveryParadeFuckOffer"):
 		return [
-			"That's a nice slave you have here. Can I fuck {pc.him}?",
-			"What a delicious looking piece of fuckmeat. Mind if I use {pc.him}?",
-			"That slave looks like they need a good fucking. Can I use {pc.him}?",
-			"Your property looks quite tempting. Care to share?",
-			"I've been watching your slave. I want to break them in properly. May I?",
-			"That whore is begging for it with those eyes. Let me have a turn using {pc.him}.",
-			"What a pretty toy you have. Mind if I play with it?",
-			"That slave looks underused. Can I fix that for you?",
-			"I need to relieve some stress. Your slave will do nicely.",
+			"Классная у тебя рабыня. Можно мне оттрахать {pc.him}?",
+			"Какое аппетитное кусок мяса для траха. Не против, если я воспользуюсь {pc.him}?",
+			"Этот раб выглядит так, будто ему не помешает хорошая ебля. Можно мне {pc.him}?",
+			"Твоя собственность выглядит весьма соблазнительно. Не хочешь поделиться?",
+			"Я приглядываю за твоим рабом. Хочу как следует его размять. Можно?",
+			"Эта шлюха так и просит, судя по её взгляду. Дай мне тоже развлечься с {pc.him}.",
+			"Какая симпатичная игрушка. Не против, если я с ней поиграю?",
+			"Эта рабыня выглядит недоиспользованной. Позволишь мне это исправить?",
+			"Мне нужно снять стресс. Твоя рабыня отлично подойдет.",
 		]
 	if(_id == "SoftSlaveryParadeFuckOfferYes"):
 		return [
-			"You know what? Sure. Make that slut squirm.",
-			"Go ahead. {pc.He} could use some raw fucking.",
-			"Be my guest. Show {pc.him} what a real fucking feels like.",
-			"Fine by me. Just don't break {pc.him} completely.",
-			"Sure, why not? {pc.He} {pc.verb('exist')} to be used anyway.",
-			"Absolutely. Make sure everyone hears {pc.his} scream.",
-			"Yes. Remind {pc.him} of {pc.his} place.",
-			"Go on. I enjoy watching my property get used.",
-			"Please do. The more humiliation, the better.",
-			"Of course. Public use builds character in slaves.",
+			"Знаешь что? Давай. Заставь эту сучку извиваться.",
+			"Валяй. {pc.He} не помешает жесткого траха.",
+			"Добро пожаловать. Покажи {pc.him}, что такое настоящий ебля.",
+			"Я не против. Только не сломай {pc.him} окончательно.",
+			"Конечно, почему бы и нет? {pc.He} всё равно {pc.verb('exist')}.",
+			"Обязательно. Сделай так, чтобы все слышали крики {pc.his}.",
+			"Да. Напомни {pc.him} о её {pc.his}.",
+			"Давай. Мне нравится смотреть, как используют мою собственность.",
+			"Пожалуйста. Чем больше унижения, тем лучше.",
+			"Разумеется. Публичное использование закаляет характер рабынь.",
 		]
 	if(_id == "SoftSlaveryParadeFuckOfferYesThree"):
 		return [
-			"You know what? Sure. I will join as well.",
-			"Actually, I think I'll participate too. Make it a party.",
-			"Good idea. I could use some stress relief myself.",
-			"Perfect. I'll show you how to properly handle my property.",
-			"Fine, but I'm taking charge. Watch and learn.",
-			"Yes, and I'll demonstrate the proper way to use {pc.him}.",
+			"Знаешь что? Ладно. Я тоже присоединюсь.",
+			"Вообще-то, я тоже поучаствую. Устроим вечеринку.",
+			"Хорошая идея. Мне самой не помешало бы снять стресс.",
+			"Идеально. Я покажу тебе, как правильно обращаться с моей собственностью.",
+			"Ладно, но командовать буду я. Смотри и учись.",
+			"Да, и я продемонстрирую, как правильно использовать {pc.him}.",
 		]
 	if(_id == "SoftSlaveryParadeFuckOfferNo"):
 		return [
-			"No. You can only watch.",
-			"Not interested. Find your own toy.",
-			"Absolutely not. My property isn't free to use.",
-			"Fuck off. This {npc.npcSlave} is mine alone.",
-			"No chance. I don't share my {npc.npcSlave}. Just watch.",
-			"Get lost. I don't let strangers touch what's mine.",
-			"No. You can watch.",
-			"No way. Watch, don't touch.",
+			"Нет. Тебе позволено только смотреть.",
+			"Не интересно. Ищи себе другую игрушку.",
+			"Категорически нет. Моя собственность не раздается направо и налево.",
+			"Отъебись. Эта {npc.npcSlave} только моя.",
+			"Без шансов. Я не делюсь своей {npc.npcSlave}. Просто смотри.",
+			"Сгинь. Я не позволяю чужакам лапать то, что принадлежит мне.",
+			"Нет. Можешь только смотреть.",
+			"Ни за что. Смотри, но не трогай.",
 		]
 	if(_id == "SoftSlaveryParadeFuckOfferNo2"):
 		return [
-			"Fine.",
-			"Whatever.",
-			"Your loss.",
-			"Suit yourself.",
-			"Cheap bastard.",
-			"Missed opportunity.",
-			"Pathetic.",
-			"Figures.",
-			"Waste of time.",
-			"Keep your trash then.",
+			"Ладно.",
+			"Плевать.",
+			"Твоя потеря.",
+			"Как хочешь.",
+			"Жадная сволочь.",
+			"Упущенная возможность.",
+			"Жалкое зрелище.",
+			"Ожидаемо.",
+			"Пустая трата времени.",
+			"Ну и оставь свой мусор себе.",
 		]
 	if(_id == "SoftSlaveryParadeFuckOfferGood"):
 		return [
-			"Good little slut. Let's continue.",
-			"Well used and properly broken. Just how I like you.",
-			"See? You were made for this. Now move along.",
-			"Good. Now move along.",
-			"Let's continue now.",
-			"Okay. Time to move.",
-			"I haven't finished walking you around.",
+			"Хорошая маленькая шлюшка. Продолжим.",
+			"Хорошенько использованная и правильно сломленная. Как раз такая, как я люблю.",
+			"Видишь? Ты была создана для этого. А теперь шевелись.",
+			"Хорошо. Теперь двигайся дальше.",
+			"Теперь продолжим.",
+			"Ладно. Пора идти.",
+			"Я еще не закончила водить тебя кругами.",
 		]
 	if(_id == "SoftSlaveryParadeFuckOfferFight"):
 		return [
-			"I see. You just need someone to teach you a lesson.",
-			"Wrong answer. Time to show you how things work around here.",
-			"So that's how it is? Fine. I'll take what I want by force.",
-			"Big mistake. Now I'm going to enjoy breaking both of you.",
-			"You'll regret that decision. Prepare to lose everything.",
-			"Resistance? How cute. Time to make you regret it.",
+			"Понятно. Тебе просто нужен кто-то, кто преподаст тебе урок.",
+			"Неправильный ответ. Пора показать тебе, как здесь всё устроено.",
+			"Так вот оно как? Ладно. Значит, я возьму то, что хочу, силой.",
+			"Большая ошибка. Теперь я с удовольствием сломаю вас обоих.",
+			"Ты пожалеешь о своем решении. Готовься потерять всё.",
+			"Сопротивление? Как мило. Пора заставить тебя об этом пожалеть.",
 		]
 	if(_id == "SoftSlaveryParadeFuckOfferWon"):
 		return [
-			"You're not getting rid of me so easily.",
-			"Another fool who thought they could take what's mine.",
-			"Let that be a lesson for others. Nobody touches my property but me.",
-			"Another stupid asshole defeated. Let's go.",
-			"They thought they could take you? How adorable.",
+			"Так просто от меня не отделаешься.",
+			"Еще один дурак, решивший, что может забрать моё.",
+			"Пусть это станет уроком для остальных. Мою собственность трогаю только я.",
+			"Еще один тупой мудак повержен. Пошли.",
+			"Они думали, что смогут забрать тебя? Как очаровательно.",
 		]
 	if(_id == "SoftSlaveryParadeFuckOfferLostWatch"):
 		return [
-			"You're mine now. Your stupid owner can watch.",
-			"I can fuck you now. Your owner gets front row seats to your humiliation.",
-			"I won. And so I will fuck you.",
+			"Теперь ты моя. А твой тупой хозяин может на это поглазеть.",
+			"Теперь я могу тебя трахать. Твой хозяин получит места в первом ряду, чтобы смотреть на твоё унижение.",
+			"Я победила. А значит, я тебя оттрахаю.",
 		]
 	if(_id == "SoftSlaveryParadeFuckOfferLostBoth"):
 		return [
-			"You're mine now. Actually.. I will fuck both of you.",
-			"Two for the price of one. I will fuck both of you.",
-			"Perfect. Two fucktoys for me to use.",
+			"Теперь ты моя. Хотя нет... я оттрахаю вас обоих.",
+			"Двое по цене одной. Я оттрахаю вас обоих.",
+			"Идеально. Две секс-игрушки в моем распоряжении.",
 		]
 
 	if(_id == "SoftSlaveryParadeGuard"):
 		return [
-			"Hey. What is happening here?",
-			"Hold it right there. Explain this.",
-			"You there. What do you think you're doing?",
-			"Stop. This requires an explanation.",
-			"Is that inmate supposed to be leashed like that?",
-			"Wait. Why is the inmate leashed. I need answers.",
-			"Explain yourself. Now. Why {pc.isAre} {pc.he} leashed.",
-			"This doesn't look right. What's going on?",
-			"Hold up. I need to know what this is about.",
+			"Эй. Что здесь происходит?",
+			"А ну стоять. Объяснись.",
+			"Ты! Ты что это себе позволяешь?",
+			"Стоп. Это требует объяснений.",
+			"Этого заключенного что, реально так на поводке держать?",
+			"Погодите. Почему заключенный на поводке? Мне нужны ответы.",
+			"Объяснись. Живо. Почему {pc.isAre} {pc.he} на поводке.",
+			"Что-то тут не так. Что вообще происходит?",
+			"Так, стоп. Я хочу знать, в чем тут дело.",
 		]
 	if(_id == "SoftSlaveryParadeGuardPunish"):
 		return [
-			"I'm punishing this inmate.",
-			"Just administering some discipline to this one.",
-			"This is corrective action for a problematic inmate.",
-			"Teaching this inmate a lesson in obedience.",
-			"Standard procedure for difficult cases like this.",
-			"This one needs to learn {pc.his} place.",
-			"Just making sure this inmate understands {pc.his} role.",
+			"Я наказываю этого заключенного.",
+			"Просто применяю дисциплинарные меры к этому экземпляру.",
+			"Это исправительные меры для проблемного заключенного.",
+			"Учу этого заключенного послушанию.",
+			"Стандартная процедура для таких сложных случаев.",
+			"Этой нужно выучить свое {pc.his} место.",
+			"Просто проверяю, понимает ли этот заключенный свою {pc.his} роль.",
 		]
 	if(_id == "SoftSlaveryParadeGuardPunish2"):
 		return [
-			"Carry on then.",
-			"Very well. Proceed.",
-			"Okay. Continue with your duties.",
-			"Alright then, don't let me stop you.",
-			"Fine. Just keep it moving.",
-			"Right. Carry on.",
-			"Sure. I'll leave you to it.",
-			"Good. {pc.He} probably {pc.verb('deserve')} it.",
+			"Тогда продолжайте.",
+			"Очень хорошо. Приступайте.",
+			"Ладно. Продолжайте выполнять свои обязанности.",
+			"Ну ладно, не буду вам мешать.",
+			"Ладно. Просто не останавливайтесь.",
+			"Так. Продолжайте.",
+			"Конечно. Оставлю вас.",
+			"Хорошо. {pc.He} наверняка {pc.verb('deserve')} это.",
 		]
 	if(_id == "SoftSlaveryParadeGuardProblem"):
 		return [
-			"That's none of your business.",
-			"Fuck off, this doesn't concern you.",
-			"Mind your own fucking business.",
-			"Step aside, guard. This is private.",
-			"You don't want to get involved in this.",
-			"Back off before you regret it.",
-			"This is between me and my property.",
-			"Not your problem. Walk away.",
-			"I don't answer to you.",
-			"Get lost. {pc.He} {pc.isAre} mine.",
+			"Это не твоё дело.",
+			"Отъебись, тебя это не касается.",
+			"Занимайся своим ебаным делом.",
+			"Отойди, охранник. Это личное.",
+			"Тебе лучше в это не ввязываться.",
+			"Свали с дороги, пока не пожалел.",
+			"Это дело между мной и моей собственностью.",
+			"Не твоя забота. Вали отсюда.",
+			"Я тебе не подчиняюсь.",
+			"Сгинь. {pc.He} {pc.isAre} моё.",
 		]
 	if(_id == "SoftSlaveryParadeGuardProblem2"):
 		return [
-			"Really?",
-			"You really want to do this?",
-			"So that's how it's going to be?",
-			"You're making a big mistake.",
-			"That wasn't the right answer.",
-			"You just signed your own trouble.",
-			"Big words for someone about to get hurt.",
-			"You shouldn't have said that.",
-			"Alright. Now you've done it.",
+			"Серьезно?",
+			"Ты реально хочешь это сделать?",
+			"Значит, вот как всё будет?",
+			"Ты совершаешь огромную ошибку.",
+			"Это был неправильный ответ.",
+			"Ты только что подписал себе приговор.",
+			"Громкие слова для того, кому сейчас будет больно.",
+			"Тебе не следовало этого говорить.",
+			"Ну всё. Теперь ты сам напросился.",
 		]
 	if(_id == "SoftSlaveryParadeGuardWon"):
 		return [
-			"You're not getting rid of me so easily.",
-			"That's what happens when you mess with what's mine.",
-			"Now where were we? Oh right, let's go.",
-			"Let that be a lesson to anyone who tries to mess with me.",
-			"Come along, {npc.npcSlave}. We're not done here.",
-			"Time to continue, {npc.npcSlave}.",
-			"Now that the interruption is dealt with, back to business.",
+			"Так просто от меня не отделаешься.",
+			"Вот что бывает, когда лезешь к тому, что принадлежит мне.",
+			"Так на чём мы остановились? Ах да, пошли.",
+			"Пусть это послужит уроком любому, кто решит со мной связаться.",
+			"Пошли, {npc.npcSlave}. Мы еще не закончили.",
+			"Пора продолжать, {npc.npcSlave}.",
+			"Теперь, когда с помехами покончено, вернемся к делу.",
 		]
 	if(_id == "SoftSlaveryParadeGuardLost"):
 		return [
-			"Go away, inmate.",
-			"Consider yourself lucky. Now get out of here.",
-			"You're free to go. Don't let me catch you like this again.",
-			"Run along now. You've been given a second chance.",
-			"Get moving before I change my mind.",
-			"You're dismissed. Don't make me regret this.",
-			"Go on, get out of my sight.",
-			"Consider this your lucky day. Now disappear.",
+			"Проваливай, заключенный.",
+			"Считай, что тебе повезло. А теперь брысь отсюда.",
+			"Можешь идти. Только не попадайся мне на глаза в таком виде снова.",
+			"А теперь беги. Тебе дали второй шанс.",
+			"Шевели поршнями, пока я не передумала.",
+			"Свободен. И не заставляй меня жалеть об этом.",
+			"Давай, проваливай с глаз моих.",
+			"Считай, что это твой счастливый день. А теперь исчезни.",
 		]
 
 
 	if(_id == "SoftSlaveryGB"):
 		return [
-			"Today I'm wanna do a gangbang on you with whoever else I can find. You might even earn some credits, {npc.npcSlave}.",
-			"I'm setting up a gangbang for you today. Get ready to be used by everyone I find. You might get a cut of the credits, {npc.npcSlave}.",
-			"Your holes are going to get some group attention today. Hope you're ready to be passed around, {npc.npcSlave}. You might get some credits if you're lucky.",
-			"Time to make some credits with that body of yours. I'm organizing a gangbang. And you're gonna be the star of it, my {npc.npcSlave}.",
-			"You're going to be our community fleshlight today. Better prepare yourself, my {npc.npcSlave}. In exchange, you might earn some credits.",
+			"Сегодня я устрою на тебе групповуху со всеми, кого только смогу найти. Может, даже поднимешь немного кредитов, {npc.npcSlave}.",
+			"Сегодня я организую для тебя групповой секс. Готовься к тому, что тебя будут юзать все подряд. Возможно, тебе отсыплют долю от кредитов, {npc.npcSlave}.",
+			"Твои дырочки сегодня будут в центре внимания всей толпы. Надеюсь, ты готова к тому, что тебя будут передавать из рук в руки, {npc.npcSlave}. Если повезет, получишь немного кредитов.",
+			"Пора делать деньги на твоем теле. Я организую групповуху, и ты будешь ее главной звездой, моя {npc.npcSlave}.",
+			"Сегодня ты будешь нашей общей игрушкой, нашей общинной мастурбатором. Лучше готовься, моя {npc.npcSlave}. Взамен ты сможешь заработать немного кредитов.",
 		]
 	if(_id == "SoftSlaveryGBGiveup"):
 		return [
-			"Oh well, looks like this isn't happening today. Maybe some other time.",
-			"Guess nobody wants to fuck you today. How disappointing.",
-			"Nobody's interested in using you right now. Shame.",
+			"Ну что ж, похоже, сегодня не судьба. Может, в другой раз.",
+			"Похоже, сегодня тебя никто не хочет трахать. Как разочаровывающе.",
+			"Сейчас тебя никто не хочет юзать. Жаль.",
 		]
 	if(_id == "SoftSlaveryGBOffer"):
 		return [
-			"Hey. Do you wanna join to gangbang my {npc.npcSlave}? For a fair price.",
-			"Interested in using my slave? I'm setting up a gangbang.",
-			"Want to join in on breaking in my {npc.npcSlave}? They're available for group use.",
-			"Looking for participants to gangbang my {npc.npcSlave}. You in?",
-			"My {npc.npcSlave} needs to be used by multiple people. Wanna join?",
-			"Interested in some group fun? My {npc.npcSlave} is due to some gangbanging.",
-			"Looking for people to help use my {npc.npcSlave}. {pc.He} can take multiple partners.",
+			"Эй. Хотите присоединиться к групповухе с моей {npc.npcSlave}? По честной цене.",
+			"Интересует мой раб? Я тут затеваю гангбанг.",
+			"Хочешь поучаствовать в развратном использовании моей {npc.npcSlave}? Она как раз свободна для толпы.",
+			"Ищу желающих устроить гангбанг моей {npc.npcSlave}. Ты в деле?",
+			"Моей {npc.npcSlave} нужно внимание сразу нескольких человек. Хочешь присоединиться?",
+			"Хочешь группового веселья? Моей {npc.npcSlave} не помешал бы хороший гангбанг.",
+			"Ищу тех, кто поможет использовать мою {npc.npcSlave}. {pc.He} вполне потянет сразу нескольких партнеров.",
 		]
 	if(_id == "SoftSlaveryGBSure"):
 		return [
-			"Sure. Sounds good.",
-			"Absolutely. Count me in.",
-			"Definitely. I could use some stress relief.",
-			"Hell yes. When do we start?",
-			"Sure.",
-			"Alright, I'm down.",
-			"Sounds fun, yeah.",
-			"Hm. Okay. Let's do it.",
+			"Конечно. Звучит неплохо.",
+			"Определенно. Запиши меня.",
+			"Сто пудов. Мне как раз нужно снять стресс.",
+			"Чертовски да! Когда начинаем?",
+			"Конечно.",
+			"Ладно, я в деле.",
+			"Звучит весело, да.",
+			"Хм. Окей. Давай сделаем это.",
 		]
 	if(_id == "SoftSlaveryGBFollow"):
 		return [
-			"Follow then.",
-			"This way. Let's find a good spot.",
-			"Follow me.",
-			"Come along.",
-			"Follow me. Let's get this gangbang started soon.",
+			"Тогда иди за мной.",
+			"Сюда. Давай найдем подходящее местечко.",
+			"Следуй за мной.",
+			"Пошли.",
+			"Иди за мной. Пора бы уже замутить этот гангбэнг.",
 		]
 	if(_id == "SoftSlaveryGBSubOffer"):
 		return [
-			"Mmm.. maybe I can be gangbanged too? I can pay.",
-			"I'd rather be the one getting used, actually. I can pay even.",
-			"Could I join as another hole to be filled? Uh, I can even pay.",
-			"Would you mind if I was on the receiving end instead? Even if it will cost me.",
-			"I'm more interested in being the one getting gangbanged. I can pay.",
-			"I'd rather be the one taking all the cocks. I can pay even.",
-			"Could I be the one getting punished instead? Or at least be an extra. I can pay!",
-			"I want to be the gangbang slut, not one of the participants. I have credits.",
+			"Ммм... может, мне тоже устроят групповуху? Я могу заплатить.",
+			"Вообще-то, я бы предпочла саму быть использованной. Я даже могу заплатить.",
+			"А можно мне присоединиться в качестве еще одной дырки? Эм, я даже могу заплатить.",
+			"Вы не против, если на этот раз принимать буду я? Даже если мне придется за это заплатить.",
+			"Мне больше интересно самой стать объектом группового секса. Я могу заплатить.",
+			"Я бы предпочла сама принимать все члены. Я даже могу заплатить.",
+			"А можно мне вместо этого стать той, кого наказывают? Или хотя бы просто добавкой. Я заплачу!",
+			"Я хочу быть шлюхой для гангбэнга, а не одним из участников. У меня есть кредиты.",
 		]
 	if(_id == "SoftSlaveryGBSubOfferYes"):
 		return [
-			"I guess we could use some extra fuckmeat.",
-			"Sure, the more holes the merrier.",
-			"Why not? Always room for another willing body.",
-			"Absolutely. Get ready to be used.",
-			"Fine by me. You'll take whatever we give you.",
-			"Works for me. Another slut to break.",
-			"Sure. Hope you can handle rough treatment.",
-			"Okay. You'll be used just as hard.",
+			"Думаю, лишнее мясо для траха нам не помешает.",
+			"Конечно, чем больше дырок, тем веселее.",
+			"Почему бы и нет? Для еще одного желающего тела место всегда найдется.",
+			"Обязательно. Готовься к тому, что тебя будут использовать.",
+			"Меня устраивает. Будешь принимать всё, что мы в тебя запихаем.",
+			"Пойдет. Еще одна шлюшка, которую нужно сломать.",
+			"Без проблем. Надеюсь, ты выдержишь грубое обращение.",
+			"Ладно. Тебя будут юзать так же жестко.",
 		]
 	if(_id == "SoftSlaveryGBSubOfferNo"):
 		return [
-			"We already have an extra bitch.",
-			"No thanks, we've got enough holes to fill.",
-			"We don't need another slut right now.",
-			"We've got all the fuckmeat we need.",
+			"У нас уже есть лишняя сучка.",
+			"Нет, спасибо, у нас и так хватает дырок, которые нужно забивать.",
+			"Нам сейчас не нужна еще одна шлюха.",
+			"У нас достаточно мяса для траха.",
 		]
 	if(_id == "SoftSlaveryGBSubOfferNoAw"):
 		return [
-			"Aw.. Oh well.",
-			"Too bad. Maybe next time.",
-			"Alright then.",
-			"Fine. I'll find someone else to use me.",
-			"Okay. Guess I'll watch then.",
-			"Fine. I'll just enjoy the show.",
-			"Alright. Maybe I'll join in another time.",
+			"Ах.. Ну ладно.",
+			"Жаль. Может, в следующий раз.",
+			"Ну, тогда ладно.",
+			"Ладно. Найду кого-нибудь другого, кто меня использует.",
+			"Окей. Значит, буду просто смотреть.",
+			"Ладно. Буду просто наслаждаться зрелищем.",
+			"Хорошо. Может, присоединюсь в другой раз.",
 		]
 	if(_id == "SoftSlaveryGBNo"):
 		return [
-			"I will pass.",
-			"Not interested.",
-			"No thanks.",
-			"I'll sit this one out.",
-			"Not today.",
-			"Maybe another time.",
-			"I'll pass for now.",
-			"Not my thing.",
-			"No, I'm good.",
-			"Not right now.",
+			"Я пасую.",
+			"Не интересно.",
+			"Не, спасибо.",
+			"В этот раз я пасу.",
+			"Не сегодня.",
+			"Может, в другой раз.",
+			"Пока воздержусь.",
+			"Не в моем вкусе.",
+			"Нет, со мной всё в порядке.",
+			"Не сейчас.",
 		]
 	if(_id == "SoftSlaveryGBNoReact"):
 		return [
-			"Well screw you then.",
-			"Your loss.",
-			"Fine. More for the rest of us.",
-			"Whatever. We don't need you.",
-			"Suit yourself.",
-			"Missing out, but whatever.",
-			"Your choice. We'll have fun without you.",
-			"Fine. We'll find someone else.",
-			"Whatever. Plenty of other takers.",
+			"Ну и хрен с тобой тогда.",
+			"Твоя потеря.",
+			"Ладно. Значит, остальным достанется больше.",
+			"Плевать. Ты нам не особо-то и нужен.",
+			"Как хочешь.",
+			"Многое пропускаю, но пофиг.",
+			"Твой выбор. Мы и без тебя повеселимся.",
+			"Ладно. Найдем кого-нибудь другого.",
+			"Да какая разница. Желающих полно.",
 		]
 	if(_id == "SoftSlaveryGBStart"):
 		return [
-			"Time to have some fun.",
-			"Everyone ready? Let's begin.",
-			"Time to put this {npc.npcSlave} to use.",
-			"Let's see how many you can take.",
-			"Hope you're ready to be used.",
-			"Time to earn your keep.",
-			"Let's see what this {npc.npcSlave} can handle.",
-			"Everyone take a turn. Don't be gentle.",
+			"Пора повеселиться.",
+			"Все готовы? Начнем.",
+			"Пора пустить эту {npc.npcSlave} в дело.",
+			"Посмотрим, сколько ты сможешь принять.",
+			"Надеюсь, ты готова к тому, что тебя будут использовать.",
+			"Пора отрабатывать свое содержание.",
+			"Посмотрим, на что способна эта {npc.npcSlave}.",
+			"Пусть каждый возьмет свое. И не церемоньтесь.",
 		]
 	if(_id == "SoftSlaveryGBEnd"):
 		return [
-			"Feeling satisfied, yet? There you go. This is your share, {npc.npcSlave}.",
-			"Everyone had their fill? Good. Here's your cut, {npc.npcSlave}.",
-			"That was entertaining. You earned this, {npc.npcSlave}.",
-			"Hope you enjoyed being used. Here's your cut.",
-			"Not bad for a day's work. This is yours, {npc.npcSlave}.",
-			"You took that well. Here's your share of the profits.",
-			"Everyone's satisfied? Good. This is for you, {npc.npcSlave}.",
-			"That was quite a show. You've earned this, {npc.npcSlave}.",
-			"Not bad at all. Here's your cut for being such a good hole.",
-			"You served your purpose well. This is your reward, {npc.npcSlave}.",
+			"Уже чувствуешь удовлетворение? Вот так. Это твоя доля, {npc.npcSlave}.",
+			"Все наелись? Хорошо. А вот и твоя часть, {npc.npcSlave}.",
+			"Это было весело. Ты это заслужила, {npc.npcSlave}.",
+			"Надеюсь, тебе понравилось, когда тебя использовали. Вот твоя доля.",
+			"Неплохо для одного рабочего дня. Это твоё, {npc.npcSlave}.",
+			"Ты всё приняла достойно. Вот твоя часть прибыли.",
+			"Все довольны? Хорошо. Это тебе, {npc.npcSlave}.",
+			"Это было целое представление. Ты это заслужила, {npc.npcSlave}.",
+			"Совсем неплохо. Вот твоя доля за то, что была такой послушной дыркой.",
+			"Ты отлично справилась со своей задачей. Вот твоя награда, {npc.npcSlave}.",
 		]
 
 
 	if(_id == "SoftSlaveryLockRestraint"):
 		return [
-			"Today I feel like locking something onto you.",
-			"I'm in the mood to see you in restraints.",
-			"Your body looks.. empty. I need to lock something onto you.",
-			"Bondage time. You're going to wear whatever I lock onto you.",
-			"I own every inch of you. Time to lock you up.",
-			"That naked skin of yours is begging for some bondage gear."
+			"Сегодня мне хочется нацепить на тебя что-нибудь.",
+			"У меня настроение посмотреть на тебя в кандалах.",
+			"Твоё тело выглядит... пустым. Мне нужно закрепить на тебе что-нибудь.",
+			"Время бондажа. Ты будешь носить всё, что я на тебе защелкну.",
+			"Ты принадлежишь мне до последнего дюйма. Пора тебя запереть.",
+			"Твоя голая кожа просто умоляет о каком-нибудь снаряжении для связывания."
 		]
 	if(_id == "SoftSlaveryLockRestraint2"):
 		return [
-			"Which one do you like the most, I'm generous enough to let you choose.",
-			"Tell me which toy you want locked on you today.",
-			"Which one turns you on the most? Don't bother lying, I can tell.",
-			"Pick the gear you want. I might lock it on you if I like your choice.",
-			"Go ahead and pick one. I'm generous enough to let you choose.",
+			"Какое тебе нравится больше всего? Я достаточно щедр, чтобы позволить тебе выбрать.",
+			"Скажи, какую игрушку ты хочешь, чтобы на тебе сегодня защелкнули.",
+			"От чего тебя заводит сильнее всего? Не пытайся врать, я всё равно пойму.",
+			"Выбирай снаряжение. Если выбор мне понравится, я, может быть, надену его на тебя.",
+			"Давай, выбирай. Я достаточно щедр, чтобы позволить тебе самой решить.",
 		]
 	if(_id == "SoftSlaveryLockRestraint3"):
 		return [
-			"I will keep the key. Don't try to struggle it off, {npc.npcSlave}.",
-			"I have the only key. Try to escape it and you'll regret it.",
-			"I have the key. Don't even think about trying to get free.",
-			"The key stays where it belongs, with me. Enjoy your new restraint.",
-			"It will stay locked on you for as long as I want. Get used to the feeling.",
+			"Ключ будет у меня. Даже не пытайся сорвать его, {npc.npcSlave}.",
+			"Единственный ключ у меня. Попробуешь сбежать — пожалеешь.",
+			"Ключ у меня. Даже не вздумай пытаться сбежать.",
+			"Ключ лежит там, где ему и положено — у меня. Наслаждайся своими новыми оковами.",
+			"Оно будет заперто на тебе столько, сколько я захочу. Привыкай к этому ощущению.",
 		]
 	if(_id == "SoftSlaveryOfferGearUnlock"):
 		return [
-			"You've been locked for quite a while. Ready to be unlocked?",
-			"Has that gear been on long enough for you? Want it off?",
-			"Tired of being restrained? Maybe I'll set you free.. for now.",
-			"Has the metal been biting into your skin? Want relief?",
-			"Been my good little prisoner? Maybe you deserve some freedom.",
+			"Ты заперта уже довольно долго. Готова, чтобы тебя отперли?",
+			"Эта снаряга уже достаточно долго на тебе сидит? Хочешь её снять?",
+			"Устала от ограничений? Может, я и дам тебе свободу... на время.",
+			"Металл уже впивается в кожу? Хочешь облегчения?",
+			"Была послушной маленькой пленницей? Может, ты заслужила немного свободы.",
 		]
 	if(_id == "SoftSlaveryOfferGearUnlock2"):
 		return [
-			"There you go, much better, right? I'm not done with you yet though.",
-			"Freedom feels good, doesn't it? DonI'm not done with you yet though.",
-			"Enjoy that feeling while it lasts. I wanna do something else now.",
+			"Вот так, гораздо лучше, правда? Хотя я с тобой ещё не закончила.",
+			"Свобода — это приятно, не так ли? Хотя я с тобой ещё не закончила.",
+			"Наслаждайся этим, пока можешь. Теперь я хочу заняться чем-нибудь другим.",
 		]
 	if(_id == "SoftSlaveryOfferGearUnlockKeep"):
 		return [
-			"Keep it? Sure, why not. It fits you.",
-			"You want to stay locked? My kind of slave.",
-			"Enjoy being my restrained toy? I knew you'd come around.",
-			"You like being locked up? Good. It's where you belong.",
-			"Prefer the restraints? Maybe you're finally accepting your role.",
-			"Keep the gear on? I love when my property knows its place.",
-			"Stay locked up? You're becoming the perfect slave.",
+			"Оставить? Ну конечно, почему бы и нет. Тебе идет.",
+			"Хочешь остаться запертой? Обожаю таких рабынь.",
+			"Нравится быть моей скованной игрушкой? Я знал, что ты оценишь.",
+			"Тебе нравится быть взаперти? Хорошо. Это твое место.",
+			"Предпочитаешь путы? Может, ты наконец-то принимаешь свою роль.",
+			"Оставить снаряжение на тебе? Обожаю, когда моя собственность знает свое место.",
+			"Остаться запертой? Ты становишься идеальной рабыней.",
 		]
 	if(_id == "SoftSlaveryOfferGearUnlockKeep2"):
 		return [
-			"Now, I still wanna do something else with you.",
-			"Since you're staying locked, let's put that restrained body to use.",
-			"Now let's do what else I have in mind.",
-			"Now let's see what we can do while you're restrained.",
-			"Now that you're staying locked, let's do something else.",
-			"Good decision. Now let me enjoy my bound property."
+			"Так, теперь я всё еще хочу кое-что с тобой сделать.",
+			"Раз уж ты остаешься запертой, давай заставим это скованное тело поработать.",
+			"А теперь давай займемся тем, что я еще задумала.",
+			"А теперь посмотрим, что мы сможем сделать, пока ты скован(а).",
+			"Раз уж ты остаешься запертым(ой), давай займемся чем-нибудь еще.",
+			"Верное решение. А теперь позволь мне насладиться моей связанной собственностью."
 		]
 	if(_id == "SoftSlaveryNoticedNoGear"):
 		return [
-			"Wait. Didn't I lock something onto you? I'm pretty sure I did. Where is it, {npc.npcSlave}?",
-			"You're not wearing what I locked onto you. Explain yourself, {npc.npcSlave}.",
-			"I don't see the gear I locked on you. Where is it, {npc.npcSlave}?",
-			"You're supposed to be restrained. Where did my stuff go, {npc.npcSlave}?",
-			"You're missing something. Where are your locks?",
-			"Someone's not wearing their restraints. Care to explain?"
+			"Погоди. Разве я не закрепила на тебе кое-что? Я почти уверена, что да. И где оно, {npc.npcSlave}?",
+			"На тебе нет того, что я на тебя надела. Объяснись, {npc.npcSlave}.",
+			"Я не вижу снаряжения, которое на тебе должно быть. Где оно, {npc.npcSlave}?",
+			"Ты должен(на) быть скован(а). Куда делось мое имущество, {npc.npcSlave}?",
+			"Тебе чего-то не хватает. Где твои замки?",
+			"Кто-то забыл надеть свои оковы. Не хочешь объясниться?"
 		]
 	if(_id == "SoftSlaveryNoticedNoGear2"):
 		return [
-			"You know what that means. I will have to punish you.",
-			"This calls for some.. disciplinary action.",
-			"You've earned yourself a punishment, {npc.npcSlave}.",
-			"Time for your lesson in obedience."
+			"Ты сама знаешь, что это значит. Мне придётся тебя наказать.",
+			"Это требует... дисциплинарных мер.",
+			"Ты заслужила наказание, {npc.npcSlave}.",
+			"Пора преподать тебе урок послушания."
 		]
 
 	if(_id == "SoftSlaveryAskSex"):
 		return [
-			"Sure. Get on your knees first.",
-			"About time you remembered your place. Kneel.",
-			"Gladly. But I'm not going to be gentle. Kneel.",
-			"Good slave. Now assume the position.",
-			"You'll take whatever I do to you. Understood? Now kneel.",
+			"Конечно. Но сначала встань на колени.",
+			"Наконец-то ты вспомнила своё место. На колени.",
+			"С радостью. Но не жди нежности. На колени.",
+			"Хорошая рабыня. А теперь прими нужную позу.",
+			"Ты примешь всё, что я с тобой сделаю. Поняла? А теперь на колени.",
 		]
 	if(_id == "SoftSlaveryAskFuckOwner"):
 		return [
-			"Hm. Alright. But only because I want it.",
-			"Fine. But you'd better make it worth my while.",
-			"Don't get used to this privilege. But yes.",
-			"Don't disappoint me, {npc.npcSlave}.",
-			"Alright. Impress me, my {npc.npcSlave}.",
-			"Interesting. Try not to be completely pathetic.",
-			"You have my permission. Don't make me regret this.",
+			"Хм. Ладно. Но только потому, что я сама этого хочу.",
+			"Ладно. Но лучше бы тебе постараться, чтобы это того стоило.",
+			"Не привыкай к такой привилегии. Но да.",
+			"Не разочаруй меня, {npc.npcSlave}.",
+			"Хорошо. Порадуй меня, мой {npc.npcSlave}.",
+			"Интересно. Только постарайся не быть совсем уж жалким.",
+			"Даю тебе разрешение. Только не заставь меня пожалеть об этом.",
 		]
 	if(_id == "SoftSlaveryAskFuckOwnerBad"):
 		return [
-			"That was awful. I'm a subby bitch but even I can top better!",
-			"Pathetic. You can't even fuck properly when given control.",
-			"Absolutely worthless. Don't expect to be on top again.",
-			"That was embarrassing to experience. You're terrible at this.",
-			"Do you even know what you're doing? Clearly not.",
-			"Useless. Back to your proper place beneath me.",
-			"Don't ever ask to top again after that performance.",
-			"Wow. Just.. wow. You're completely hopeless.",
+			"Это было ужасно. Я хоть и сабби-сучка, но даже я могу лучше!",
+			"Жалкое зрелище. Ты даже трахаться нормально не можешь, когда тебе дают контроль.",
+			"Абсолютно бесполезно. Не надейся, что снова будешь сверху.",
+			"На это было даже стыдно смотреть. Ты в этом просто отстой.",
+			"Ты хоть сама понимаешь, что творишь? Очевидно, что нет.",
+			"Бесполезная. Живо на своё место — под меня.",
+			"После такого выступления даже не вздумай снова проситься сверху.",
+			"Вау. Просто... вау. Ты абсолютно безнадёжна.",
 		]
 	if(_id == "SoftSlaveryAskFuckOwnerOkay"):
 		return [
-			"That was okay, I guess. Are you sure you're able to top?",
-			"Mediocre at best. You'll need practice.",
-			"Not completely terrible, but not impressive either.",
-			"You didn't embarrass yourself completely, I suppose.",
-			"Average. Barely worth the effort.",
-			"Passable. Maybe there's hope for you yet.",
-			"Not the worst I've had, but far from the best.",
-			"You managed not to be completely useless. Surprising.",
-			"Basic competence achieved. Don't get too proud.",
+			"Вроде неплохо, наверное. Ты уверена, что сможешь быть сверху?",
+			"В лучшем случае посредственно. Тебе нужна практика.",
+			"Не совсем ужасно, но и не впечатляет.",
+			"Пожалуй, ты не опозорилась окончательно.",
+			"Средне. Едва ли стоило потраченных усилий.",
+			"Сносно. Может, у тебя ещё есть шанс.",
+			"Не самый худший опыт в моей жизни, но до лучшего еще далеко.",
+			"Тебе удалось не оказаться совсем уж бесполезной тварью. Удивительно.",
+			"Базовый уровень освоен. Только не слишком уж задирай нос.",
 		]
 	if(_id == "SoftSlaveryAskFuckOwnerGood"):
 		return [
-			"Not bad, that scratched the itch. Thanks, {npc.npcSlave}.",
-			"Surprisingly competent. You may ask to do that again sometime.",
-			"Well done. You actually know how to use that body of yours.",
-			"Impressive. I might let you take charge more often.",
-			"You've earned your keep today. Good job.",
-			"Excellent work. You've pleased me, {npc.npcSlave}.",
-			"Now that's what I call service. Well done.",
-			"You've exceeded expectations. Consider me satisfied.",
-			"Finally, you demonstrate some actual skill. Good.",
+			"Неплохо, это даже сняло зуд. Спасибо, {npc.npcSlave}.",
+			"Удивительно компетентно. Можешь как-нибудь попросить меня повторить это.",
+			"Молодец. Ты действительно знаешь, как пользоваться своим телом.",
+			"Впечатляет. Возможно, я буду позволять тебе чаще брать на себя инициативу.",
+			"Сегодня ты полностью оправдала свое содержание. Хорошая работа.",
+			"Отличная работа. Ты меня порадовала, {npc.npcSlave}.",
+			"Вот это я называю служением. Превосходно.",
+			"Ты превзошла все ожидания. Считай, что я удовлетворен.",
+			"Наконец-то ты показала хоть какой-то толк. Хорошо.",
 		]
 
 
 	if(_id == "SoftSlaveryPetFuck"):
 		return [
-			"I wanna have some fun with my {npc.npcSlave}. Hold still while I secure this bitchsuit on you.",
-			"Time to play with my {npc.npcSlave}. This bitchsuit will keep you nice and helpless while I have fun with your body.",
-			"Don't struggle while I put this bitchsuit on you. I wanna have some fun with my fuck-puppy.",
-			"Let's put these puppy restraints on you, {npc.npcSlave}. I need something to fuck.",
-			"Hold still, {npc.npcSlave}. I wanna use you while you have this suit on.",
-			"Look what I have. Don't worry, these restraints leave all the right holes exposed for me to use.",
+			"Хочу немного развлечься со своей {npc.npcSlave}. Не дергайся, пока я натягиваю на тебя этот бичсьют.",
+			"Пора поиграть с моей {npc.npcSlave}. Этот бичсьют будет держать тебя в беспомощном состоянии, пока я буду наслаждаться твоим телом.",
+			"Не брыкайся, пока я надеваю на тебя этот бичсьют. Хочу поразвлечься со своей сучкой-щенком.",
+			"Давай наденем на тебя эти собачьи поводки, {npc.npcSlave}. Мне нужно, во что трахаться.",
+			"Не двигайся, {npc.npcSlave}. Хочу использовать тебя, пока ты в этом костюме.",
+			"Смотри, что у меня есть. Не волнуйся, в этих ошейниках оставлены все нужные отверстия, чтобы мне было удобно.",
 		]
 	if(_id == "SoftSlaveryPetWalkies"):
 		return [
-			"It's walkies time. Let's get you prepared, {npc.npcSlave}.",
-			"Time for your walkies, {npc.npcSlave}. Let's get you restrained.",
-			"Walkies, {npc.npcSlave}! Let me put these puppy restraints on you first.",
-			"Let's go for a walk, {npc.npcSlave}. I want to show you off. Bitchsuit first.",
-			"Walkies time. Let's get you ready, {npc.npcSlave}.",
-			"Come here, {npc.npcSlave}. Time for your walkies. With a bitchsuit, of course.",
-			"Walkies! Let's put this puppy gear on you and get started.",
-			"Walkies with a bitchsuit time, {npc.npcSlave}. Hope you're ready to be shown off.",
+			"Время прогулки! Давай подготовим тебя, {npc.npcSlave}.",
+			"Пора на прогулку, {npc.npcSlave}. Давай тебя зафиксируем.",
+			"Гулять, {npc.npcSlave}! Сначала дай-ка надену на тебя эти собачьи поводки.",
+			"Пошли гулять, {npc.npcSlave}. Хочу тебя выставить напоказ. Сначала надень суккуб-костюм.",
+			"Время прогулки. Давай приведем тебя в порядок, {npc.npcSlave}.",
+			"Иди сюда, {npc.npcSlave}. Пора на прогулку. В суккуб-костюме, разумеется.",
+			"Гулять! Давай наденем на тебя собачью амуницию и двинемся.",
+			"Время прогулки в суккуб-костюме, {npc.npcSlave}. Надеюсь, ты готова к тому, что тебя будут выставлять напоказ.",
 		]
 	if(_id == "SoftSlaveryPetWalkiesReady"):
 		return [
-			"Ready? Try to keep up, puppy.",
-			"All set? Try to not make me drag you around.",
-			"Ready to go? Try to move your paws faster.",
-			"Ready? Good pup. Now follow me.",
-			"All geared up? Try to move your paws faster.",
-			"Ready? Try to keep up.",
-			"All good? Try to behave.",
+			"Готова? Старайся не отставать, щеночек.",
+			"Все готово? Постарайся, чтобы мне не пришлось тащить тебя за собой.",
+			"Готова идти? Шевели лапками быстрее.",
+			"Готова? Хорошая собачка. А теперь за мной.",
+			"Весь в сборе? Постарайся шевелить лапками побыстрее.",
+			"Готов? Постарайся не отставать.",
+			"Всё хорошо? Постарайся вести себя прилично.",
 		]
 	if(_id == "SoftSlaveryWalkiesCorrect"):
 		return [
-			"Correct. Good puppy.",
-			"That's correct. What a good puppy.",
-			"Good doggy. That was correct.",
-			"Correct. You know all the tricks.",
-			"Good. Very good.",
-			"Good puppy.",
-			"Correct. Good.",
-			"Great. You're being such an obedient pet puppy.",
-			"Good doggy.",
+			"Верно. Хороший щеночек.",
+			"Всё правильно. Какой послушный щеночек.",
+			"Хорошая собачка. Всё верно.",
+			"Правильно. Ты знаешь все трюки.",
+			"Хорошо. Очень хорошо.",
+			"Хороший щенок.",
+			"Верно. Молодец.",
+			"Отлично. Ты такой послушный домашний песик.",
+			"Хорошая собачка.",
 		]
 	if(_id == "SoftSlaveryWalkiesWrong"):
 		return [
-			"Nope. Wrong.",
-			"You made a mistake. Silly pup.",
-			"Nope. Good try though.",
-			"That was slightly wrong. Oh well.",
-			"Nope. Such a silly puppy.",
-			"Good try but nope. Maybe I need to train you harder.",
+			"Нет. Неверно.",
+			"Ты ошиблась. Глупый щенок.",
+			"Нет. Но попытка была хорошей.",
+			"Это было не совсем правильно. Ну, бывает.",
+			"Нет. Какая же ты глупая собачка.",
+			"Попытка неплохая, но нет. Может, мне стоит дрессировать тебя пожестче?",
 		]
 	if(_id == "SoftSlaveryWalkiesBark"):
 		return [
-			"What a cute puppy. Can you bark for me?",
-			"Such a pretty pup. Can you bark like one?",
-			"What a cute pet. Can you bark?",
-			"Cute. Let me hear you bark.",
-			"That's one cute pet. Do you know the bark command? Bark.",
-			"So cute. Can you bark?",
+			"Какой милый щеночек. Можешь гавкнуть для меня?",
+			"Какая красивая собачка. Можешь гавкнуть, как настоящая?",
+			"Какой милый питомец. Ну-ка, гавкни!",
+			"Мило. А ну-ка, облаяй меня.",
+			"Какой милый питомец. Знаешь команду «лай»? Лай!",
+			"Так мило. Умеешь лаять?",
 		]
 	if(_id == "SoftSlaveryWalkiesPet"):
 		return [
-			"What a cute puppy. Can I pat you?",
-			"Such a nice pup. Can I pet you?",
-			"Such an obedient pet. Mind if I give you a pat?",
-			"Ohh. A puppy! Can I pet you?",
-			"Oh. Can I pet you without you biting me?",
-			"Such a well-behaved pet. Can I pat?",
+			"Какой милый щеночек. Можно тебя погладить?",
+			"Такой хороший песик. Можно тебя погладить?",
+			"Такая послушная зверушка. Не против, если я тебя поглажу?",
+			"О-о! Щеночек! Можно тебя погладить?",
+			"О. А можно тебя погладить, чтобы ты меня не укусила?",
+			"Такой воспитанный питомец. Можно тебя погладить?",
 		]
 	if(_id == "SoftSlaveryWalkiesGoodPuppy"):
 		return [
-			"Good puppy.",
-			"Good pup.",
-			"Such an obedient pet.",
-			"Good doggo.",
-			"Very cute.",
-			"Such an adorable puppy.",
-			"Adorable.",
-			"Very nice.",
-			"Such a good doggo.",
-			"Such a good puppy.",
+			"Хороший щенок.",
+			"Хороший песик.",
+			"Такая послушная зверушка.",
+			"Хороший песик.",
+			"Очень мило.",
+			"Такой милый щеночек.",
+			"Прелестно.",
+			"Очень хорошо.",
+			"Такой послушный песик.",
+			"Такой хороший щеночек.",
 		]
 	if(_id == "SoftSlaveryWalkiesGoodPuppySex"):
 		return [
-			"Are you gonna be a good puppy and let me fuck you?",
-			"Will you be a good bitch and raise your tail for me?",
-			"Gonna be a good pup and let me use you?",
-			"Will you be obedient and let me fuck you?",
-			"Are you in heat, pup? Want me to satisfy it?",
-			"Be a good subby pup and let me use you.",
+			"Будешь хорошим щеночком и дашь мне в себя трахнуть?",
+			"Будешь хорошей сучкой и поднимешь хвостик для меня?",
+			"Будешь послушным песиком и позволишь мне тебя использовать?",
+			"Будешь послушной и позволишь мне тебя трахнуть?",
+			"Ты что, в течке, щенок? Хочешь, чтобы я тебя утолила?",
+			"Будь послушным субиком и дай мне себя использовать.",
 		]
 	if(_id == "SoftSlaveryWalkiesBadPuppy"):
 		return [
-			"Stupid mut.",
-			"Bad dog.",
-			"Useless puppy.",
-			"Worthless mut.",
-			"Awful mut.",
-			"Bad fuck-toy.",
-			"Useless bitch.",
+			"Тупая дворняга.",
+			"Плохая собачка.",
+			"Бесполезный щенок.",
+			"Никчемная дворняга.",
+			"Паршивая псина.",
+			"Плохая секс-игрушка.",
+			"Бесполезная сучка.",
 		]
 	if(_id == "SoftSlaveryWalkiesBadPuppyObey"):
 		return [
-			"You need to obey more, {npc.npcSlave}.",
-			"You should learn to obey better, {npc.npcSlave}.",
-			"Your obedience needs work, {npc.npcSlave}.",
-			"You must learn to submit more.",
+			"Тебе нужно больше подчиняться, {npc.npcSlave}.",
+			"Тебе стоит научиться повиноваться лучше, {npc.npcSlave}.",
+			"Твое послушание требует работы, {npc.npcSlave}.",
+			"Тебе нужно научиться большему смирению.",
 		]
 	if(_id == "SoftSlaveryWalkiesLostNotDone"):
 		return [
-			"Whatever. We're not done walking around yet.",
-			"Whatever. Let's just continue on our way.",
-			"Doesn't change anything. Keep moving.",
-			"Whatever. You're still my pet.",
+			"Пофиг. Мы еще не закончили с прогулкой.",
+			"Да плевать. Давай просто продолжим путь.",
+			"Это ничего не меняет. Двигайся дальше.",
+			"Хрен с тобой. Ты всё равно моя зверушка.",
 		]
 	if(_id == "SoftSlaveryWalkiesBiteProtect"):
 		return [
-			"This is my {npc.npcSlave}. Fuck off.",
-			"Back off. This pup belongs to me.",
-			"Get lost. This pup is mine.",
-			"Touch my pet and I'll hurt you.",
-			"Fuck off before I make you.",
-			"This puppy belongs to me. Back away.",
-			"Get lost. I own this bitch.",
+			"Это мой {npc.npcSlave}. Отъебись.",
+			"Свали. Этот щенок принадлежит мне.",
+			"Исчезни. Этот щенок мой.",
+			"Тронешь мою зверушку — и я тебе больно сделаю.",
+			"Свали нахер, пока я тебя не заставила.",
+			"Этот щенок принадлежит мне. Отойди.",
+			"Проваливай. Эта сучка — моя.",
 		]
 	if(_id == "SoftSlaveryWalkiesBiteBad"):
 		return [
-			"Ow. Control your mut better.",
-			"Ouch. Train your stupid dog properly.",
-			"Damn it. Control your dog.",
-			"Ow. Fuck. Your pet needs better discipline.",
-			"Ow. Your pup is poorly trained.",
-			"Ouch. Your mutt needs more obedience training.",
-			"Ouch. Your puppy needs to learn manners.",
-			"Fuck. Control your animal better.",
+			"Ой! Контролируй свою псину получше.",
+			"Ай! Дрессируй свою тупую собаку нормально.",
+			"Твою мать. Контролируй свою собаку.",
+			"Ой, блядь! Твоему питомцу не помешало бы дисциплины.",
+			"Ой. Твой щенок совсем не обучен.",
+			"Ай! Твоему псу нужно больше тренировок на послушание.",
+			"Ой! Твоему щенку пора поучиться манерам.",
+			"Блядь. Контролируй свое животное лучше.",
 		]
 	if(_id == "SoftSlaveryWalkiesBiteAttack"):
 		return [
-			"Ow. I will make you suffer for this.",
-			"Fuck! You'll pay for that.",
-			"Ow. You'll regret that, mutt.",
-			"That will cost you, puppy.",
-			"I'll make you scream for that.",
-			"I'll break you for that.",
+			"Ай! За это ты будешь страдать.",
+			"Сука! Ты за это заплатишь.",
+			"Ой. Ты пожалеешь об этом, дворняга.",
+			"Это тебе дорого обойдется, щеночек.",
+			"За это я заставлю тебя визжать.",
+			"За это я тебя сломаю.",
 		]
 	if(_id == "SoftSlaveryWalkiesBall"):
 		return [
-			"I wanna play fetch with you, pup.",
-			"Let's play fetch, puppy.",
-			"Time for fetch, puppy.",
-			"Do you like playing with balls? Let's play fetch.",
-			"Fetch time. I hope you know what to do.",
-			"Let's see you fetch like a good dog.",
-			"I feel like playing fetch with my pup.",
-			"Time for ball, puppy.",
-			"Let's play fetch, my little puppy.",
-			"Fetch game time, pet.",
+			"Хочу поиграть с тобой в «апорт», щенок.",
+			"Давай поиграем в «апорт», щеночек.",
+			"Пора приносить мячик, щенок.",
+			"Тебе нравится играть с мячиками? Давай поиграем в «апорт».",
+			"Время приносить мячик. Надеюсь, ты знаешь, что делать.",
+			"Посмотрим, как ты будешь приносить мячик, как послушная собачка.",
+			"Что-то мне хочется поиграть в «апорт» со своим щенком.",
+			"Время мячика, щенок.",
+			"Давай поиграем в «апорт», мой маленький щеночек.",
+			"Время игры в «апорт», питомец.",
 		]
 	if(_id == "SoftSlaveryWalkiesBall2"):
 		return [
-			"Go get the ball!",
-			"Fetch, puppy!",
-			"Go get it, pup!",
-			"Retrieve the ball, pup!",
-			"Fetch it, pet!",
-			"Go get my ball, puppy!",
-			"Retrieve it, puppy!",
+			"А ну, тащи мяч!",
+			"Апорт, щенок!",
+			"А ну, принеси, щенок!",
+			"Принеси мячик, щенок!",
+			"Принеси, питомец!",
+			"А ну, принеси мой мячик, щеночек!",
+			"Принеси его, щенок!",
 		]
 	if(_id == "SoftSlaveryWalkiesPraise"):
 		return [
-			"Good puppy. What a good puppy.",
-			"Good doggy. Such a good doggy.",
-			"Amazing. Well done.",
-			"Good pet. You please me.",
-			"Wonderful puppy. So obedient.",
-			"Good doggy. You make me proud.",
+			"Хороший щенок. Какой послушный щенок.",
+			"Хорошая собачка. Такая хорошая собачка.",
+			"Потрясающе. Молодец.",
+			"Хороший питомец. Ты меня радуешь.",
+			"Чудесный щенок. Такой послушный.",
+			"Хорошая собачка. Ты заставляешь меня гордиться тобой.",
 		]
 	if(_id == "SoftSlaveryWalkiesBallTooFarFake"):
 		return [
-			"Couldn't find the ball? It's because it's in my hand, you silly pup.",
-			"Looking for this? I just never threw it, silly pup.",
-			"Still searching? The ball's right here, in my hand.",
-			"Can't find it? That's because I didn't throw it. You look so silly.",
-			"Still looking? I've had the ball the whole time, pet.",
-			"Confused? Aw. Adorable. I fake-threw it, you silly dog.",
+			"Не можешь найти мячик? Это потому, что он у меня в руке, глупый щенок.",
+			"Ищешь вот это? Я просто его не бросала, глупый щенок.",
+			"Всё еще ищешь? Мячик прямо здесь, у меня в руке.",
+			"Не можешь найти? Это потому, что я его не бросала. Выглядишь так нелепо.",
+			"Всё еще ищешь? Мячик всё это время был у меня, питомец.",
+			"Запутался? Оу, прелесть какая. Я сделала вид, что бросила его, глупая собачка.",
 		]
 	if(_id == "SoftSlaveryWalkiesBallTooFar"):
 		return [
-			"Where do you think you're going? What a silly pup, did you get lost trying to find the ball?",
-			"Getting lost, mutt? The ball didn't go that far.",
-			"Where are you wandering off to? Such a confused puppy.",
-			"Getting disoriented, doggo? The ball's nowhere near there.",
-			"Lost already? What a silly pup.",
-			"Wandering off? You're completely lost, puppy.",
+			"И куда это ты собрался? Ну и глупый щенок, неужели ты потерялся, пока искал мячик?",
+			"Заблудился, дворняжка? Мячик не так уж далеко улетел.",
+			"Куда это ты побрел? Такой растерянный щенок.",
+			"Что, голова кружится, песик? Мячик совсем не там.",
+			"Уже потерялся? Ну и глупый же щенок.",
+			"Бродишь где-то? Ты совсем заблудился, щеночек.",
 		]
 	if(_id == "SoftSlaveryWalkiesNoBallFound"):
 		return [
-			"You're sad because you couldn't find my ball? That's because I did a fake throw. Such a silly puppy.",
-			"Aw. So cute. I never actually threw it.",
-			"Can't find it? That's because I never actually threw it. Hah.",
-			"Couldn't find the ball? It's because it's in my hand, you silly pup.",
-			"Couldn't find it? I've had the ball the whole time, pet.",
-			"Confused? Aw. Adorable. I fake-threw it, you silly dog.",
+			"Грустишь, потому что не нашел мой мячик? Это потому, что я его прикинула. Такой глупый щенок.",
+			"Оу. Так мило. На самом деле я его даже не кидала.",
+			"Не можешь найти? Да потому что я его на самом деле не кидала. Ха!",
+			"Не можешь найти мячик? Это потому, что он у меня в руке, глупый щенок.",
+			"Не нашел? А мячик всё это время был у меня, питомец.",
+			"Запутался? Оу, прелесть какая. Я сделала вид, что бросила его, глупая собачка.",
 		]
 
 	if(_id == "SoftSlaveryBegUnlockNo"):
 		return [
-			"Cute try. But not today.",
-			"The locks stay on until you satisfy me enough, {npc.npcSlave}.",
-			"No. I like you all locked up and helpless. At least for now.",
-			"That gear isn't coming off. You don't get to decide that.",
-			"Mmm.. Nope. You look too pretty in your restraints.",
-			"The answer is no, {npc.npcSlave}. Don't ask again.",
-			"Your discomfort is the point. The locks stay.",
-			"Think of it as a reminder of your place, {npc.npcSlave}. It stays on.",
-			"You want it off? You haven't earned that yet, {npc.npcSlave}.",
+			"Милая попытка. Но не сегодня.",
+			"Замки не снимутся, пока ты не доставишь мне достаточно удовольствия, {npc.npcSlave}.",
+			"Нет. Мне нравится, когда ты заперт и беспомощен. По крайней мере, пока что.",
+			"Эта сбруя никуда не денется. Не тебе решать.",
+			"Ммм... Нет. В этих оковах ты выглядишь слишком мило.",
+			"Ответ — нет, {npc.npcSlave}. И не спрашивай больше.",
+			"В твоем дискомфорте и есть весь смысл. Замки остаются на месте.",
+			"Считай это напоминанием о твоем месте, {npc.npcSlave}. Она остается на тебе.",
+			"Хочешь снять это? Ты еще не заслужила, {npc.npcSlave}.",
 		]
 	if(_id == "SoftSlaveryBegUnlockYes"):
 		return [
-			"Alright. Fine. It's time to unlock you.",
-			"Fine. You've been good. Come here.",
-			"I'm feeling generous. Let's get you out of that.",
-			"Okay, {npc.npcSlave}. I'll give you a break.",
-			"You've earned a little freedom. For now.",
-			"Sure. Come closer. I'll unlock it.",
-			"Alright, sure. Let me find the key.",
+			"Ладно. Хорошо. Пора тебя отпереть.",
+			"Ладно. Ты вела себя хорошо. Иди сюда.",
+			"Что-то я сегодня щедра. Давай-ка снимем это с тебя.",
+			"Ладно, {npc.npcSlave}. Сделаю тебе передышку.",
+			"Ты заслужила немного свободы. Пока что.",
+			"Конечно. Подойди ближе. Я отперу.",
+			"Ладно, без проблем. Дай только ключ найду.",
 		]
 	if(_id == "SoftSlaveryBegUnlockDone"):
 		return [
-			"There you go. Enjoy being free, for now.",
-			"All done. Don't get used to the feeling.",
-			"Free.. until I decide to put some of that gear on you again.",
+			"Готово. Наслаждайся свободой... пока что.",
+			"Всё кончено. Только не привыкай к этому ощущению.",
+			"Свободна... пока я снова не решу нацепить на тебя снаряжение.",
 		]

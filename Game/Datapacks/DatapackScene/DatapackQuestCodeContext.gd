@@ -81,7 +81,7 @@ func calculateQuestInfo():
 	
 	if(storedErrors.size() > 0):
 		for errorText in storedErrors:
-			GM.main.addMessage("[color=red](Datapack quest: "+str(datapack.id)+":"+str(datapackQuest.id)+") "+errorText+"[/color]")
+			GM.main.addMessage("[color=red](Квест датапака: "+str(datapack.id)+":"+str(datapackQuest.id)+") "+errorText+"[/color]")
 		storedErrors = []
 	
 	return {

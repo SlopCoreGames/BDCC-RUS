@@ -3,8 +3,8 @@ extends SexActivityBase
 func _init():
 	id = "EmptyActivity"
 	
-	activityName = "Change me"
-	activityDesc = "Change me too"
+	activityName = "Измени меня"
+	activityDesc = "Измени и меня тоже"
 	activityCategory = ["Fuck"]
 
 func getGoals():
@@ -42,28 +42,28 @@ func getCheckTagsSub() -> Array:
 	return []
 
 func startActivity(_args):
-	addText("Change me.")
+	addText("Измени меня.")
 
 func processTurn():
 	return
 	
 func getActions(_indx:int):
 	if(_indx == DOM_0):
-		addAction("stop", getStopScore(), "Stop", "Stop the sex activity")
+		addAction("stop", getStopScore(), "Стой", "Прекратить секс")
 	if(_indx == SUB_0):
-		addAction("pullaway", getSubInfo().getResistScore(), "Pull away", "Try to pull away", {A_CHANCE: getSubResistChance(30.0, 25.0)})
+		addAction("pullaway", getSubInfo().getResistScore(), "Отстраниться", "Попытаться отстраниться", {A_CHANCE: getSubResistChance(30.0, 25.0)})
 
 func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "stop"):
 		endActivity()
-		addText("{dom.You} pulled away.")
+		addText("{dom.You} отстранилась.")
 		return 
 
 	if(_id == "pullaway"):
 		addResistanceIfPlayer(_indx)
 		var successChance:float = getSubResistChance(30.0, 25.0)
 		if(RNG.chance(successChance)):
-			addText("{sub.You} {sub.youVerb('pull')} away from {dom.you}.")
+			addText("{sub.You} {sub.youVerb('pull')} от {dom.you}.")
 			getDomInfo().addAnger(0.3)
 			if(getState() != ""):
 				setState("")
@@ -71,7 +71,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 				endActivity()
 			return
 		else:
-			addText("{sub.You} {sub.youVerb('try', 'tries')} to pull away from {dom.you} but {sub.youVerb('fail')}.")
+			addText("{sub.You} {sub.youVerb('try', 'tries')} попытаться отстраниться от {dom.you}, но {sub.youVerb('fail')}.")
 			getDomInfo().addAnger(0.1)
 			return
 			

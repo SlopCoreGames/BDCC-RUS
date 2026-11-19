@@ -8,7 +8,7 @@ func _init():
 	startedByDom = true
 	startedBySub = false
 	
-	activityName = "Bondage"
+	activityName = "Бондаж"
 	activityCategory = ["Bondage"]
 
 func getGoals():
@@ -126,7 +126,7 @@ func getStartActions(_sexEngine: SexEngine, _domInfo: SexDomInfo, _subInfo: SexS
 			if(_domInfo.getChar().isPlayer()):
 				var itemCategory:Array = getCategory() + item.getSexEngineSubcategory()
 #func addStartAction(_aArgs:Array, _aName:String, _aDesc:String, _aScore:float, _aExtra:Dictionary = {}):
-				addStartAction(["pc", item.uniqueID], item.getVisibleName(), "Restraint level: "+str(restraintData.getLevel()) + "\n" + item.getCombatDescription(), theActivityScore, {A_CATEGORY: (itemCategory if (!countsByItemID.has(item.id) || countsByItemID[item.id] <= 1) else (itemCategory + [str(countsByItemID[item.id])+"x"+item.getVisibleName()]))})
+				addStartAction(["pc", item.uniqueID], item.getVisibleName(), "Уровень скованности: "+str(restraintData.getLevel()) + "\n" + item.getCombatDescription(), theActivityScore, {A_CATEGORY: (itemCategory if (!countsByItemID.has(item.id) || countsByItemID[item.id] <= 1) else (itemCategory + [str(countsByItemID[item.id])+"x"+item.getVisibleName()]))})
 			else:
 				#canActuallyPutOn += 1
 				addStartAction(["npc", item.id], "", "", theActivityScore*item.getAIForceItemWeight(dom, sub))
@@ -143,7 +143,7 @@ func getStartActions(_sexEngine: SexEngine, _domInfo: SexDomInfo, _subInfo: SexS
 			if(restraintData == null):
 				continue
 			
-			addStartAction(["rem", item.uniqueID], item.getVisibleName(), "Status: "+restraintData.getVisibleTightness()+"\nRestraint level: "+str(restraintData.getLevel()) + "\n" + item.getCombatDescription(), 0.0, {A_CATEGORY: ["Bondage", "Take off"]})
+			addStartAction(["rem", item.uniqueID], item.getVisibleName(), "Статус: "+restraintData.getVisibleTightness()+"\nУровень связывания: "+str(restraintData.getLevel()) + "\n" + item.getCombatDescription(), 0.0, {A_CATEGORY: ["Bondage", "Take off"]})
 	
 	return actions
 
@@ -157,12 +157,12 @@ func startActivity(_args):
 		pcUniqueID = _args[1]
 		
 		var item = getDom().getInventory().getItemByUniqueID(pcUniqueID)
-		addText("{dom.You} {dom.youVerb('attempt')} to force "+str(item.getAStackName())+" onto {sub.you}!")
+		addText("{dom.You} {dom.youVerb('attempt')} силы, чтобы принудить "+str(item.getAStackName())+" onto {sub.you}!")
 	if(theAction == "npc"):
 		npcItemID = _args[1]
 	
 		var item = GlobalRegistry.getItemRef(npcItemID)
-		addText("{dom.You} {dom.youVerb('attempt')} to force "+str(item.getAStackName())+" onto {sub.you}!")
+		addText("{dom.You} {dom.youVerb('attempt')} силы, чтобы принудить "+str(item.getAStackName())+" onto {sub.you}!")
 	if(theAction == "rem"):
 		endActivity()
 		var itemUniqueID = _args[1]
@@ -185,11 +185,11 @@ func startActivity(_args):
 		#var canKeepTheRestraint = false
 		if(!restraintData.alwaysBreaksWhenStruggledOutOf() && (getDom().hasPerk(Perk.BDSMCollector) || restraintData.alwaysSavedWhenStruggledOutOf())):
 			#canKeepTheRestraint = true
-			text += " {dom.You} managed to keep the restraint."
+			text += " {dom.You} удалось удержать связывание."
 		
 			getDom().getInventory().addItem(item)
 		else:
-			text += " The restraint broke and was unable to be recovered."
+			text += " Связывание порвалось, и его не удалось восстановить."
 		addText(text)
 
 func processTurn():
@@ -209,7 +209,7 @@ func processTurn():
 		endActivity()
 		
 		if(item == null):
-			addText("{dom.You} somehow lost the restraint.")
+			addText("{dom.You} каким-то образом потерял связывание.")
 			return
 		
 		if(dom.isPlayer()):
@@ -240,7 +240,7 @@ func processTurn():
 func getActions(_indx:int):
 	if(_indx == SUB_0):
 		var resistScore:float = getSubInfo().getResistScore() * 1.0 - getSubInfo().fetishScore({Fetish.Bondage: 1.0}) * getSubInfo().getComplyScore()
-		addAction("resist", resistScore, "Resist the restraint", "You don't wanna be restrained", {A_CHANCE: 70.0 - getDomInfo().getAngerScore()*60.0})
+		addAction("resist", resistScore, "Сопротивляться связыванию", "Ты не хочешь, чтобы тебя связали", {A_CHANCE: 70.0 - getDomInfo().getAngerScore()*60.0})
 
 func doAction(_indx:int, _actionID:String, _action:Dictionary):
 	if(_actionID == "resist"):
@@ -250,12 +250,12 @@ func doAction(_indx:int, _actionID:String, _action:Dictionary):
 			fetishUp(SUB_0, Fetish.Bondage, -1.0)
 			fetishUp(DOM_0, Fetish.Rigging, -4.0)
 			endActivity()
-			addText("{sub.You} {sub.youVerb('manage', 'managed')} to resist {dom.yourHis} attempt to force a restraint!")
+			addText("{sub.You} {sub.youVerb('manage', 'managed')} силы, чтобы сопротивляться {dom.yourHis} попытке связать тебя!")
 			return
 		
 		fetishUp(SUB_0, Fetish.Bondage, -1.0)
 		getDomInfo().addAnger(0.1)
-		addText("{sub.You} {sub.youVerb('try', 'tries')} to resist {dom.yourHis} attempt at restraining {sub.youHim} but {sub.youVerb('fail')}.")
+		addText("{sub.You} {sub.youVerb('try', 'tries')} пытается сопротивляться {dom.yourHis} попыткам связать {sub.youHim}, но {sub.youVerb('fail')}.")
 		reactSub(SexReaction.Resisting, [50])
 
 func saveData():

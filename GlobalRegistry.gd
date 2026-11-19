@@ -663,7 +663,7 @@ func getDonationDataString(_tightGrouping:bool = false):
 	if(theData == null || !validateDonationData(theData)):
 		return ""
 	
-	var newText:String = "[center][b][url=https://subscribestar.adult/rahi]SubscribeStar[/url][/b]\nCompiled "+str(theData["dateString"])+"\n\n"
+	var newText:String = "[center][b][url=https://subscribestar.adult/rahi]SubscribeStar[/url][/b]\nСкомпилировано "+str(theData["dateString"])+"\n\n"
 	
 	for tierName in theData["tiers"]:
 		if(!theData["entries"].has(tierName)):
@@ -678,7 +678,7 @@ func getDonationDataString(_tightGrouping:bool = false):
 				theNames.append(entry["nickname"])
 			newText += Util.join(theNames, ", ")+"\n"
 		newText += "\n"
-	newText += "Thank you [color=red]<3[/color][/center]"
+	newText += "Спасибо, [color=red]<3[/color][/center]"
 	return newText
 
 const totalStages = 19.0
@@ -1252,7 +1252,7 @@ func getCrotchBlocks() -> Dictionary:
 
 func registerCrotchBlock(path:String) -> void:
 	if path in CrotchBlocks.getAllDefault():
-		Log.warning("Tried to replace default CrotchBlock, path '%s'" % path)
+		Log.warning("Попытка замены стандартного CrotchBlock, путь '%s'" % path)
 		return
 	var resource = load(path)
 	if !resource:

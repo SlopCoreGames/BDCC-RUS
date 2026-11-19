@@ -61,9 +61,9 @@ func _ready():
 	hideAllTabs()
 	main_tab.visible = true
 	
-	role_selector.add_item("Main role")
-	role_selector.add_item("Target role")
-	role_selector.add_item("Extra role")
+	role_selector.add_item("Главная роль")
+	role_selector.add_item("Целевая роль")
+	role_selector.add_item("Дополнительная роль")
 	role_selector.add_item("Extra 2 role")
 
 func _on_AddReactionButton_pressed():
@@ -231,7 +231,7 @@ func _on_GenerateCodeButton_pressed():
 	hideAllTabs()
 	output_tab.visible = true
 	
-	var text:String = "extends SexReactionHandler\n\n"
+	var text:String = "расширяет SexReactionHandler\n\n"
 	text += "func _init():\n"
 	text += "\thandles = {\n"
 	for reactionID in data[F_REACTIONS]:
@@ -394,21 +394,21 @@ func updatePrompt():
 	if(editReaction.empty() || editReactionID == "" || reaction_entries_list.get_selected_items().empty()):
 		prompt_text_edit.text = ""
 		return
-	var thePrompt:String = "I'm making a lewd text-based game that has a sex engine. I need 20 dialogue lines that an npc might say as a reaction during one of the sex activities. Keep them short and snappy.\n"
-	thePrompt += "Reaction id: "+editReactionID+"\n"
+	var thePrompt:String = "Я делаю пошлую текстовую игру с секс-движком. Мне нужно 20 реплик диалога, которые NPC может произнести в качестве реакции во время секса. Сделай их короткими и хлёсткими.\n"
+	thePrompt += "ID реакции: "+editReactionID+"\n"
 	var selectedRole:int = role_selector.selected
 	if(selectedRole == 0):
-		thePrompt += "Role: Main role. (This npc is the one who is doing the action)"
+		thePrompt += "Роль: Главная роль. (Этот NPC совершает действие)"
 	if(selectedRole == 1):
-		thePrompt += "Role: Target role. (This npc is the one who is being acted upon, receiving the action)"
+		thePrompt += "Роль: Целевая роль. (Этот NPC является объектом действия, на которого направлено воздействие)"
 	if(selectedRole == 2 || selectedRole == 3):
-		thePrompt += "Role: Extra role. (This npc is the one who is doing the action but they are not the main npc)"
+		thePrompt += "Роль: Дополнительная роль. (Этот NPC совершает действие, но не является основным персонажем)"
 	thePrompt += "\n\n"
 	if(condition_text_edit.text != ""):
-		thePrompt += "Npc current status (functions that are true):\n"+condition_text_edit.text
+		thePrompt += "Текущий статус NPC (активные функции):\n"+condition_text_edit.text
 		thePrompt += "\n\n"
 	if(lines_text_edit.text != ""):
-		thePrompt += "Example lines (avoid giving me these):\n"+lines_text_edit.text
+		thePrompt += "Примеры реплик (старайся не давать мне такие):\n"+lines_text_edit.text
 	
 	prompt_text_edit.text = thePrompt
 

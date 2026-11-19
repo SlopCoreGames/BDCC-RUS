@@ -5,8 +5,8 @@ var leashTimer:int = 0
 func _init():
 	id = "DomLeashesSub"
 	
-	activityName = "Grab leash"
-	activityDesc = "Grab their leash!"
+	activityName = "Схватить поводок"
+	activityDesc = "Хватай поводок!"
 	activityCategory = ["Humiliate"]
 
 func getGoals():
@@ -59,7 +59,7 @@ func init_processTurn():
 	leashTimer += 1
 	if(leashTimer >= 2):
 		setState("leashed")
-		addText("{dom.You} {dom.youVerb('clip')} a [b]leash[/b] to {sub.your} collar!")
+		addText("{dom.You} {dom.youVerb('clip')} превращает [b]поводок[/b] в {sub.your}ошейник!")
 		react(SexReaction.Leashed)
 		fetishAffect(SUB_0, Fetish.Bondage, 2.0)
 		fetishAffect(DOM_0, Fetish.Rigging, 3.0)
@@ -67,21 +67,21 @@ func init_processTurn():
 func getActions(_indx:int):
 	if(_indx == DOM_0):
 		if(state == "leashed"):
-			addAction("stop", getStopSexScore(DOM_0), "Remove leash", "Stop leashing them", {A_CATEGORY: ["Humiliate"]})
+			addAction("stop", getStopSexScore(DOM_0), "Снять поводок", "Хватит их ошейниками держать", {A_CATEGORY: ["Humiliate"]})
 			if(!getSubInfo().isUnconscious()):
 				var yankScore:float = getDomInfo().getIsAngryScore() * 1.0 * max(0.1, 0.1 + getDomInfo().personalityScore({PersonalityStat.Mean: 1.0})) - getSubInfo().getAboutToPassOutScore() * getDomInfo().fetishScore({Fetish.UnconsciousSex: -1.0})
-				addAction("yank", yankScore, "Yank leash", "Yank on that leash hard!", {A_CATEGORY: ["Violence"]})
+				addAction("yank", yankScore, "Дернуть за поводок", "Дерни за поводок посильнее!", {A_CATEGORY: ["Violence"]})
 	if(_indx == SUB_0):
 		if(state == ""):
-			addAction("pullaway", getSubInfo().getResistScore(), "Resist leash!", "Try to pull away from the leash", {A_CHANCE: getSubResistChance(90.0, 40.0)})
+			addAction("pullaway", getSubInfo().getResistScore(), "Сопротивляться поводку!", "Попытаться вырваться из ошейника", {A_CHANCE: getSubResistChance(90.0, 40.0)})
 
 func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "stop"):
 		endActivity()
-		addText("{dom.You} {dom.youVerb('unclip')} the leash from {sub.your} collar.")
+		addText("{dom.You} {dom.youVerb('unclip')} поводок с ошейника {sub.your}.")
 		return 
 	if(_id == "yank"):
-		addText("{dom.You} [b]{dom.youVerb('yank')}[/b] on {sub.your} leash [b]hard[/b], choking {sub.youHim}.")
+		addText("{dom.You} [b]{dom.youVerb('yank')}[/b] на поводке {sub.your} [b]сильно[/b], удушая {sub.youHim}.")
 		choke(DOM_0, SUB_0, CHOKE_VERYHARD)
 		react(SexReaction.LeashYank, [50.0, 30.0])
 		return 
@@ -90,14 +90,14 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		addResistanceIfPlayer(_indx)
 		var successChance:float = getSubResistChance(90.0, 40.0)
 		if(RNG.chance(successChance)):
-			addText("{sub.You} {sub.youVerb('resist')} and {sub.youVerb('manage')} to avoid getting leashed by {dom.you}!")
+			addText("{sub.You} {sub.youVerb('resist')} и {sub.youVerb('manage')}, чтобы не попасть на поводок к {dom.you}!")
 			getDomInfo().addAnger(0.3)
 			endActivity()
 			fetishUp(SUB_0, Fetish.Bondage, -5.0)
 			fetishUp(DOM_0, Fetish.Rigging, -4.0)
 			return
 		else:
-			addText("{sub.You} {sub.youVerb('try', 'tries')} to resist getting leashed but {sub.youVerb('fail')}.")
+			addText("{sub.You} {sub.youVerb('try', 'tries')} пытается сопротивляться, чтобы его не взяли на поводок, но {sub.youVerb('fail')}.")
 			getDomInfo().addAnger(0.1)
 			fetishUp(SUB_0, Fetish.Bondage, -3.0)
 			return

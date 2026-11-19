@@ -5,8 +5,8 @@ func _init():
 	startedByDom = false
 	startedBySub = true
 	
-	activityName = "Beg condom"
-	activityDesc = "Beg them to put on a condom"
+	activityName = "Умолять о презервативе"
+	activityDesc = "Умолять их надеть презерватив"
 	activityCategory = ["Beg"]
 
 func getGoals():
@@ -38,9 +38,9 @@ func getStartActions(_sexEngine: SexEngine, _domInfo: SexDomInfo, _subInfo: SexS
 		return
 	
 	var begScore:float = getActivityScore(_sexEngine, _domInfo, _subInfo) * _subInfo.fetishScore({Fetish.BeingBred: -1.0})
-	addStartAction(["beg"], "Beg to use condom", "Ask the dom to put on a condom", begScore, {A_CATEGORY: getCategory(), A_CHANCE: calculateSuccessChance(_domInfo, _subInfo, 100.0)})
+	addStartAction(["beg"], "Умолять использовать презерватив", "Просить доминанта надеть презерватив", begScore, {A_CATEGORY: getCategory(), A_CHANCE: calculateSuccessChance(_domInfo, _subInfo, 100.0)})
 	if(sub.isPlayer() && sub.hasCondoms() && !sub.hasBlockedHands()):
-		addStartAction(["offer"], "Offer a condom", "Beg the dom to use your condom", begScore, {A_CATEGORY: getCategory(), A_CHANCE: calculateSuccessChance(_domInfo, _subInfo, 130.0, 0.5)})
+		addStartAction(["offer"], "Предложить презерватив", "Умолять доминанта использовать твой презерватив", begScore, {A_CATEGORY: getCategory(), A_CHANCE: calculateSuccessChance(_domInfo, _subInfo, 130.0, 0.5)})
 
 func calculateSuccessChance(_domInfo: SexDomInfo, _subInfo: SexSubInfo, baseChance:float = 100.0, angerMult:float = 1.0) -> float:
 	var successChance = 0.1 -_domInfo.fetishScore({Fetish.Breeding: 0.5}) + _domInfo.fetishScore({Fetish.Condoms: 1.0})
@@ -63,12 +63,12 @@ func startActivity(_args):
 		var text:String = ""
 		if(_args[0] == "beg"):
 			text = RNG.pick([
-				"{sub.You} {sub.youVerb('beg')} {dom.youHim} to put on a condom.",
+				"{sub.You} {sub.youVerb('beg')} {dom.youHim} умоляет надеть презерватив.",
 			])
 		else:
 			condomBeggingReaction = SexReaction.OfferingACondom
 			text = RNG.pick([
-				"{sub.You} {sub.youVerb('offer')} {dom.youHim} to put on one of {sub.yourHis} condoms.",
+				"{sub.You} {sub.youVerb('offer')} {dom.youHim} умоляет надеть один из {sub.yourHis} презервативов.",
 			])
 		if(getDomInfo().getChar().isPlayer()):
 			addText(text)
@@ -93,11 +93,11 @@ func startActivity(_args):
 		if(RNG.chance(successChance)):
 			if(_args[0] == "beg"):
 				text += RNG.pick([
-					" {dom.You} {dom.youVerb('nod')} and {dom.youVerb('put')} on one of {dom.yourHis} condoms onto {dom.yourHis} cock.",
+					" {dom.You} {dom.youVerb('nod')} и {dom.youVerb('put')} надевают один из {dom.yourHis} презервативов на {dom.yourHis} член.",
 				])
 			else:
 				text += RNG.pick([
-					" {dom.You} {dom.youVerb('nod')} and {dom.youVerb('put')} on {sub.yourHis} condom onto {dom.yourHis} cock.",
+					" {dom.You} {dom.youVerb('nod')} и {dom.youVerb('put')} надевают {sub.yourHis} презерватив на {dom.yourHis} член.",
 				])
 			
 			var condomItem:ItemBase = GlobalRegistry.createItem("UsedCondom")
@@ -113,7 +113,7 @@ func startActivity(_args):
 			if(RNG.chance(superFailChance)):
 				getDomInfo().remember("TiredOfCondomOffers")
 				text += RNG.pick([
-					" {dom.You} {dom.youVerb('get')} very annoyed with {sub.yourHis} begging.",
+					" {dom.You} {dom.youVerb('get')} очень раздражен тем, как {sub.yourHis} умоляет.",
 				])
 				getDomInfo().addAnger(0.2)
 				addText(text)

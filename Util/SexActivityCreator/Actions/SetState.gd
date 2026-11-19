@@ -16,7 +16,7 @@ func getArgs():
 		"newState": {
 			"type": "string",
 			"value": newState,
-			"text": "New state",
+			"text": "Новое состояние",
 		},
 	}
 

@@ -25,7 +25,7 @@ func getInteractInfo() -> Dictionary:
 			{
 				id = "pay",
 				name = "Оплатить "+str(useCost)+" credit"+("s" if useCost != 1 else ""),
-				desc = "Pay "+str(useCost)+" credit"+("s" if useCost != 1 else "")+" and see if you will get anything.",
+				desc = "Оплатить "+str(useCost)+" credit"+("s" if useCost != 1 else "")+" и посмотрим, выйдет ли что-нибудь.",
 				args = [],
 				disabled = GM.pc.getCredits() < useCost,
 			},
@@ -43,7 +43,7 @@ func doInteract(_actionID:String, _args:Array = []) -> Dictionary:
 		if(RNG.chance(breakChance)):
 			didBreak = true
 	
-	var theText:String = "You let the vendomat take "+str(useCost)+" credit"+("s" if useCost != 1 else "")+" from you.."
+	var theText:String = "Вы позволяете вендомат забрать "+str(useCost)+" credit"+("s" if useCost != 1 else "")+" из тебя..."
 	
 	var theLoot = {
 		"": 10.0,
@@ -62,14 +62,14 @@ func doInteract(_actionID:String, _args:Array = []) -> Dictionary:
 	var itemResult:String = RNG.pickWeightedDict(theLoot)
 	
 	if(itemResult == "" || GlobalRegistry.getItemRef(itemResult) == null):
-		theText += "\n\nAfter some time, the vendomat spews out.. Nothing.. It doesn't give you anything."
+		theText += "\n\nСпустя какое-то время вендомат выплевывает... Ничего.. Он ничего тебе не выдал."
 	else:
 		var theItem:ItemBase = GlobalRegistry.createItem(itemResult)
 		GM.pc.getInventory().addItem(theItem)
-		theText += "\n\nAfter some time, the vendomat spews out.. [b]"+theItem.getAStackName()+"[/b]! Yay."
+		theText += "\n\nСпустя какое-то время вендомат выплевывает... [b]"+theItem.getAStackName()+"[/b]! Ура."
 	
 	if(didBreak):
-		theText += "\n\nThe light inside the machine fades.. It doesn't seem to be working anymore."
+		theText += "\n\nСвет внутри автомата гаснет... Кажется, он больше не работает."
 	
 	return {text=theText, ended=didBreak}
 	

@@ -6,8 +6,8 @@ var noticedSore:bool = false
 func _init():
 	id = "DomGropesSubsBreasts"
 	
-	activityName = "Grope breasts"
-	activityDesc = "Give their breasts a good squeeze!"
+	activityName = "Тискать грудь"
+	activityDesc = "Стиснув их грудь посильнее!"
 	activityCategory = ["Breasts"]
 
 func getGoals():
@@ -40,7 +40,7 @@ func getTags(_indx:int) -> Array:
 	return []
 
 func startActivity(_args):
-	addText("{dom.You} {dom.youVerb('put')} {dom.yourHis} hands on {sub.your} {sub.breasts} and gets a feel for them"+getThroughClothingText(SUB_0, BodypartSlot.Breasts)+".")
+	addText("{dom.You} {dom.youVerb('put')} {dom.yourHis} кладет руки на {sub.your} {sub.breasts} и начинает их прощупывать"+getThroughClothingText(SUB_0, BodypartSlot.Breasts)+".")
 	
 	stimulateBreasts(DOM_0, SUB_0, S_HANDS, I_TEASE)
 	
@@ -53,28 +53,28 @@ func getExtraSubText() -> String:
 	
 	if(getSub().canBeMilked() && RNG.chance(30)):
 		result.append(RNG.pick([
-			"Lonely drops of {sub.milk} stream down {dom.yourHis} fingers.",
-			"{sub.YourHis} nipples are leaking {sub.milk}.",
-			"{sub.YourHis} nipples are quite leaky.",
-			"{sub.YourHis} hard nips are leaking {sub.milk}.",
-			"{sub.YourHis} breasts seem to be full of {sub.milk}.",
-			"{sub.YourHis} breasts are lactating.",
+			"Одинокие капли {sub.milk} стекают по {dom.yourHis} пальцам.",
+			"Из сосков {sub.YourHis} сочится {sub.milk}.",
+			"Соски {sub.YourHis} довольно сильно текут.",
+			"Из твердых сосков {sub.YourHis} сочится {sub.milk}.",
+			"Кажется, грудь {sub.YourHis} переполнена {sub.milk}.",
+			"Грудь {sub.YourHis} сочится молоком.",
 		]))
 	if(!getSub().canBeMilked() && RNG.chance(10)):
 		result.append(RNG.pick([
-			"{sub.YourHis} nipples are being stimulated.",
-			"{sub.YourHis} nipples are hard from being touched.",
-			"{sub.YourHis} nipples are hard from being rubbed.",
-			"Nothing comes out from {sub.yourHis} nipples.",
-			"{sub.YourHis} breasts get groped but nothing comes out.",
+			"Соски {sub.YourHis} стимулируют.",
+			"Соски {sub.YourHis} затвердели от прикосновений.",
+			"Соски {sub.YourHis} затвердели от ласк.",
+			"Из сосков {sub.yourHis} ничего не течет.",
+			"Грудь {sub.YourHis} тискают, но ничего не выделяется.",
 		]))
 		
 	if(getSub().hasEffect(StatusEffect.SoreNipplesAfterMilking) && RNG.chance(50)):
 		result.append(RNG.pick([
-			"{sub.YourHis} nipples are sore!",
-			"{sub.YourHis} nipples are sore which makes this painful.",
-			"{sub.YourHis} nipples are sore which brings {sub.youHim} discomfort.",
-			"{sub.YourHis} nipples are sore which brings {sub.youHim} pain.",
+			"{sub.YourHis} соски садят!",
+			"{sub.YourHis} соски садят, отчего это становится болезненным.",
+			"{sub.YourHis} соски садят, что вызывает {sub.youHim} дискомфорт.",
+			"{sub.YourHis} соски садят, что приносит {sub.youHim} боль.",
 		]))
 	
 	if(result.size() > 0):
@@ -86,17 +86,17 @@ func processTurn():
 
 func init_processTurn():
 	addTextPick([
-		"{dom.You} {dom.youVerb('hold')} {dom.yourHis} hands on {sub.your} chest.",
-		"{dom.You} {dom.youVerb('hold')} {dom.yourHis} hands on {sub.your} {sub.breasts}.",
-		"{dom.You} {dom.youVerb('rest')} {dom.yourHis} hands on {sub.your} chest.",
+		"Руки {dom.You} {dom.youVerb('hold')} {dom.yourHis} на груди {sub.your}.",
+		"Руки {dom.You} {dom.youVerb('hold')} {dom.yourHis} на {sub.your} {sub.breasts}.",
+		"Руки {dom.You} {dom.youVerb('rest')} {dom.yourHis} на груди {sub.your}.",
 	])
 
 func groping_processTurn():
 	var throughTheClothing:String = getThroughClothingText(SUB_0, BodypartSlot.Breasts)
 	
 	var text = RNG.pick([
-		"{dom.You} actively {dom.youVerb('grope')} {sub.your} chest"+throughTheClothing+".",
-		"{dom.You} actively {dom.youVerb('rub')} {sub.your} chest"+throughTheClothing+".",
+		"{dom.You} активно {dom.youVerb('grope')} {sub.your} грудь"+throughTheClothing+".",
+		"{dom.You} активно {dom.youVerb('rub')} {sub.your} грудь"+throughTheClothing+".",
 		"{dom.You} {dom.youVerb('grope')} {sub.your} {sub.breasts}"+throughTheClothing+".",
 		"{dom.You} {dom.youVerb('massage')} {sub.your} {sub.breasts}"+throughTheClothing+".",
 		"{dom.You} {dom.youVerb('knead')} {sub.your} {sub.breasts}"+throughTheClothing+".",
@@ -115,18 +115,18 @@ func groping_processTurn():
 		if(milkProduciton != null):
 			milkProduciton.fillPercent(RNG.randf_rangeX2(0.05, 0.5))
 			text += RNG.pick([
-				" The stimulation causes the breasts to get heavier.",
-				" Stimulating the breasts is making them produce more {sub.milk}.",
-				" {sub.YourHis} breasts are producing more {sub.milk}.",
+				" От стимуляции грудь становится тяжелее.",
+				" Из-за стимуляции груди вырабатывают больше {sub.milk}.",
+				" Грудь {sub.YourHis} вырабатывает больше {sub.milk}.",
 			])
 	
 	var suddenlyLactating:bool = false
 	if(getSub().stimulateLactation()):
 		suddenlyLactating = true
 		text += RNG.pick([
-			" {sub.You} suddenly began [b]lactating[/b]!",
-			" {sub.Your} breasts suddenly began [b]lactating[/b]!",
-			" {sub.Your} breasts suddenly began [b]producing {sub.milk}[/b]!",
+			" У {sub.You} внезапно началась [b]лактация[/b]!",
+			" Грудь {sub.Your} внезапно начала [b]лактировать[/b]!",
+			" Грудь {sub.Your} внезапно начала [b]выделять {sub.milk}[/b]!",
 		])
 	
 	stimulateBreasts(DOM_0, SUB_0, S_HANDS, I_NORMAL, SPEED_SLOW)
@@ -134,7 +134,7 @@ func groping_processTurn():
 	if(!noticedSore && getSub().hasEffect(StatusEffect.SoreNipplesAfterMilking)):
 		noticedSore = true
 		text += RNG.pick([
-			" {sub.Your} nipples started to feel [b]sore[/b] after so much groping.",
+			" После стольких ласк соски {sub.Your} стали казаться [b]чувствительными[/b].",
 		])
 	
 	if(alsoCock):
@@ -144,10 +144,10 @@ func groping_processTurn():
 			stimulate(DOM_0, S_HANDS, SUB_0, S_PENIS, I_LOW, Fetish.SeedMilking, SPEED_VERYSLOW)
 			#subInfo.stimulateArousalZone(0.05, BodypartSlot.Penis, 0.25)
 			text += RNG.pick([
-				" {dom.YourHis} free hand is stroking {sub.yourHis} {sub.penis}.",
-				" {dom.YourHis} free hand is stroking {sub.youHim}.",
-				" {dom.YouHe} {dom.youAreHeIs} also stroking {sub.youHim}.",
-				" {dom.YouHe} {dom.youAreHeIs} also stroking {sub.youHim} at the same time.",
+				" Свободная рука {dom.YourHis} ласкает {sub.yourHis} {sub.penis}.",
+				" Свободная рука {dom.YourHis} ласкает {sub.youHim}.",
+				" {dom.YouHe}, а также {dom.youAreHeIs} ласкает {sub.youHim}.",
+				" {dom.YouHe} и {dom.youAreHeIs} одновременно ласкают {sub.youHim}.",
 			])
 	
 	sendSexEvent(SexEvent.BreastsGroped, DOM_0, SUB_0, {madeLactate=suddenlyLactating})
@@ -159,38 +159,38 @@ func groping_processTurn():
 func getActions(_indx:int):
 	if(_indx == DOM_0):
 		if(getState() == ""):
-			addAction("startgrope", 1.0, "Start groping", "Begin to grope them!")
+			addAction("startgrope", 1.0, "Начать тискать", "Начни тискать их!")
 		if(getState() == "groping"):
-			addAction("squeeze", 0.2, "Squeeze breasts", "Squeeze their breasts tightly!")
+			addAction("squeeze", 0.2, "Сжимать грудь", "Сжимай их грудь крепче!")
 			if(!alsoCock && getSubInfo().isReadyToPenetrate() && getSub().hasReachablePenis() && hasBodypartUncovered(SUB_0, BodypartSlot.Penis)):
-				addAction("startstrokecock", 0.3, "Stroke cock", "Stroke their cock as well")
-		addAction("stop", (0.15 if gropeAmount > 7 else 0.0), "Stop groping", "Enough groping")
+				addAction("startstrokecock", 0.3, "Ласкать член", "Также ласкать их член")
+		addAction("stop", (0.15 if gropeAmount > 7 else 0.0), "Перестать тискать", "Хватит тискать")
 	
 	if(_indx == SUB_0):
-		addAction("pullaway", getResistScore(SUB_0), "Resist groping", "Try to pull away", {A_CHANCE: getResistChance(SUB_0, DOM_0, RESIST_BREASTS_FOCUS, 30.0, 25.0)})
+		addAction("pullaway", getResistScore(SUB_0), "Сопротивляться тисканьям", "Попытаться отстраниться", {A_CHANCE: getResistChance(SUB_0, DOM_0, RESIST_BREASTS_FOCUS, 30.0, 25.0)})
 		if(isReadyToCumHandled(SUB_0)):
-			addAction("cum", 1.0, "Cum!", "You're gonna cum.", {A_PRIORITY:1001})
+			addAction("cum", 1.0, "Кончай!", "Ты сейчас кончишь.", {A_PRIORITY:1001})
 		
 func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "startstrokecock"):
 		alsoCock = true
-		addText("{dom.You} began stroking {sub.your} {sub.penis} as well!")
+		addText("{dom.You} также начал(а) ласкать {sub.your} {sub.penis}!")
 	if(_id == "squeeze"):
 		if(getSub().canBeMilked()):
 			var howMuchCollected:float = getSub().getBodypart(BodypartSlot.Breasts).getFluids().drainPercent(0.1)
 			var howMuchCollectedStr:String = str(Util.roundF(howMuchCollected, 1))+" ml"
 					
-			addText("{dom.You} {dom.youVerb('squeeze')} {sub.yourHis} {sub.breasts} tightly and "+howMuchCollectedStr+" of {sub.milk} leaks out.")
+			addText("{dom.You} {dom.youVerb('squeeze')} крепко сжимает {sub.yourHis} {sub.breasts} и "+howMuchCollectedStr+" из {sub.milk} вытекает.")
 		else:
 			addTextPick([
 				"{dom.You} {dom.youVerb('squeeze')} {sub.yourHis} {sub.breasts} tightly.",
-				"{dom.You} {dom.youVerb('squeeze')} {sub.yourHis} {sub.breasts} tightly but nothing leaks out.",
+				"{dom.You} {dom.youVerb('squeeze')} крепко сжимает {sub.yourHis} {sub.breasts}, но ничего не вытекает.",
 			])
 		stimulateBreasts(DOM_0, SUB_0, S_HANDS, I_NORMAL)
 	if(_id == "startgrope"):
 		var throughTheClothing:String = getThroughClothingText(SUB_0, BodypartSlot.Breasts)
 		setState("groping")
-		addText("{dom.You} began actively groping {sub.you}"+throughTheClothing+"!")
+		addText("{dom.You} начал(а) активно тискать {sub.you}"+throughTheClothing+"!")
 		
 		stimulateBreasts(DOM_0, SUB_0, S_HANDS, I_TEASE)
 		
@@ -198,7 +198,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "stop"):
 		endActivity()
 		satisfyGoals()
-		addText("{dom.You} {dom.youVerb('quit')} groping {sub.yourHis} chest.")
+		addText("{dom.You} {dom.youVerb('quit')} тискает грудь {sub.yourHis}.")
 	
 	if(_id == "cum"):
 		getSub().cumOnFloor(getDomID())
@@ -214,7 +214,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		addResistanceIfPlayer(_indx)
 		var successChance:float = getResistChance(SUB_0, DOM_0, RESIST_BREASTS_FOCUS, 30.0, 25.0)
 		if(RNG.chance(successChance)):
-			addText("{sub.You} {sub.youVerb('pull')} away from {dom.your} hands.")
+			addText("{sub.You} {sub.youVerb('pull')} убирает(ся) от рук {dom.your}.")
 			getDomInfo().addAnger(0.3)
 			if(getState() != ""):
 				setState("")
@@ -222,7 +222,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 				failGoals()
 				endActivity()
 		else:
-			addText("{sub.You} {sub.youVerb('try', 'tries')} to pull away from {dom.you} but {sub.youVerb('fail')}.")
+			addText("{sub.You} {sub.youVerb('try', 'tries')} попытаться отстраниться от {dom.you}, но {sub.youVerb('fail')}.")
 			getDomInfo().addAnger(0.1)
 			reactSub(SexReaction.ActivelyResisting, [50])
 

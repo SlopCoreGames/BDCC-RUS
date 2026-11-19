@@ -108,7 +108,7 @@ func startTestingToy():
 	if(isTestingToy || isBackendSelected || !selectedSomething):
 		return
 	isTestingToy = true
-	test_toy_button.text = "Stop"
+	test_toy_button.text = "Стой"
 	selectedSomething.vibrate(test_toy_slider.value)
 
 func stopTestingToy():
@@ -117,7 +117,7 @@ func stopTestingToy():
 	if(!isTestingToy):
 		return
 	isTestingToy = false
-	test_toy_button.text = "Start"
+	test_toy_button.text = "Старт"
 	selectedSomething.vibrate(0.0)
 
 func _on_TestToyButton_pressed():

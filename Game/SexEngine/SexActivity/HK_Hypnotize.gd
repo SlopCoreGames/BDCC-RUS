@@ -3,8 +3,8 @@ extends SexActivityBase
 func _init():
 	id = "Hypnotize"
 	
-	activityName = "Hypnotize"
-	activityDesc = "Make them obey!"
+	activityName = "Гипноз"
+	activityDesc = "Заставь их подчиняться!"
 	activityCategory = ["Hypnosis"]
 
 func getGoals():
@@ -39,17 +39,17 @@ func startActivity(_args):
 func init_processTurn():
 	if(doesCurrentAnimationHasEyeContact()):
 		addTextPick([
-			"{dom.You} [rainbow freq=0.05 sat=0.5 val=1.0]{dom.youVerb('stare')}[/rainbow] deeply into {sub.yourHis} eyes.",
-			"{dom.You} [rainbow freq=0.05 sat=0.5 val=1.0]{dom.youVerb('lock')} eyes with {sub.yourHis}[/rainbow], capturing {sub.yourHis} full attention.",
-			"Lost in {dom.your} gaze, {sub.your} thoughts become a [rainbow freq=0.05 sat=0.5 val=1.0]distant echo[/rainbow], surrendering to the captivating pull of those [rainbow freq=0.05 sat=0.5 val=1.0]hypnotic eyes[/rainbow].",
+			"{dom.You} [rainbow freq=0.05 sat=0.5 val=1.0]{dom.youVerb('stare')}[/rainbow] глубоко в глаза {sub.yourHis}.",
+			"{dom.You} [rainbow freq=0.05 sat=0.5 val=1.0]{dom.youVerb('lock')} глаза {sub.yourHis}[/rainbow], завладевая всем вниманием {sub.yourHis}.",
+			"Потерявшись во взгляде {dom.your}, мысли {sub.your} превращаются в [rainbow freq=0.05 sat=0.5 val=1.0]далекое эхо[/rainbow], поддаваясь пленительной тяге этих [rainbow freq=0.05 sat=0.5 val=1.0]гипнотических глаз[/rainbow].",
 			])
 	else:
 		addTextPick([
-			"{dom.You} [rainbow freq=0.05 sat=0.5 val=1.0]{dom.youVerb('hum')} quietly[/rainbow] into {sub.yourHis} ear.",
-			"[rainbow freq=0.05 sat=0.5 val=1.0]A soft, melodic hum[/rainbow] escapes {dom.your} lips, creating a soothing atmosphere as {dom.youHe} gently {dom.youHeVerb('guide')} {sub.yourHis} consciousness into a realm of deep relaxation.",
-			"With a gentle whisper, {dom.you} {dom.youVerb('plunge')} {sub.yourHis} mind into a [rainbow freq=0.05 sat=0.5 val=1.0]hypnotic pool[/rainbow].",
-			"A soft murmur escapes {dom.your} lips, pulling {sub.you} into a [rainbow freq=0.05 sat=0.5 val=1.0]gentle embrace of hypnosis[/rainbow].",
-			"{dom.You} {dom.youVerb('hum')} a [rainbow freq=0.05 sat=0.5 val=1.0]soothing melody[/rainbow], and the vibrations resonate through {sub.yourHis} being.",
+			"{dom.You} [rainbow freq=0.05 sat=0.5 val=1.0]{dom.youVerb('hum')} тихо[/rainbow] на ухо {sub.yourHis}.",
+			"[rainbow freq=0.05 sat=0.5 val=1.0]Мягкое, мелодичное напевание[/rainbow] срывается с губ {dom.your}, создавая успокаивающую атмосферу, пока {dom.youHe} нежно погружает сознание {dom.youHeVerb('guide')} {sub.yourHis} в царство глубокого расслабления.",
+			"Нежным шепотом {dom.you} {dom.youVerb('plunge')} разум {sub.yourHis} в [rainbow freq=0.05 sat=0.5 val=1.0]гипнотическую пучину[/rainbow].",
+			"Тихий шепот срывается с губ {dom.your}, увлекая {sub.you} в [rainbow freq=0.05 sat=0.5 val=1.0]нежные объятия гипноза[/rainbow].",
+			"{dom.You} {dom.youVerb('hum')} слышит [rainbow freq=0.05 sat=0.5 val=1.0]успокаивающую мелодию[/rainbow], и её вибрации резонируют во всем {sub.yourHis} существе.",
 			])
 	affectDom(getDomInfo().fetishScore({Fetish.HypnosisHypnotist: 1.0})+0.0, 0.1, 0.0)
 	affectSub(getSubInfo().fetishScore({Fetish.HypnosisSubject: 1.0})+0.0, 0.1, -0.02, 0.0)
@@ -61,29 +61,29 @@ func init_processTurn():
 func getActions(_indx:int):
 	if(_indx == DOM_0):
 		if(state in [""]):
-			addAction("stop", getStopScore(), "Stop hypnosis", "Stop messing with their head.")
+			addAction("stop", getStopScore(), "Прекратить гипноз", "Хватит пудрить им мозги.")
 		if(state in [""]):
 			if((getDom() == GM.pc) && (isSubInTrance()) && (!(getSub().hasEffect(StatusEffect.ImplantedPosthypnoticTrigger)))):
-				addAction("implant_posthypno", 1.0, "Give Trigger", "Implant a devious posthypnotic trigger.")
+				addAction("implant_posthypno", 1.0, "Дать триггер", "Внедрить коварный постгипнотический триггер.")
 	
 	if(_indx == SUB_0):
 		if(state in [""]):
-			addAction("surrender", getComplyScore(SUB_0), "Surrender", "Give in to the words.")
+			addAction("surrender", getComplyScore(SUB_0), "Сдаться", "Поддаться словам.")
 		if(state in [""]):
-			addAction("resist", getResistScore(SUB_0), "Resist hypnosis", "Don't let them control you!", {A_CHANCE: getSubResistChance(20, 15)})
+			addAction("resist", getResistScore(SUB_0), "Сопротивляться гипнозу", "Не позволяй им управлять собой!", {A_CHANCE: getSubResistChance(20, 15)})
 
 func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "stop"):
 		endActivity()
 		addTextPick([
-			"{dom.You} {dom.youVerb('stop')} messing with {sub.your} head.",
-			"{dom.You} {dom.youVerb('lean')} back, breaking the spell."
+			"{dom.You} {dom.youVerb('stop')} копается в {sub.your} голове.",
+			"{dom.You} {dom.youVerb('lean')} приходит в себя, разрушая чары."
 		])
 		return
 	if(_id == "implant_posthypno"):
 		getSub().addEffect(StatusEffect.ImplantedPosthypnoticTrigger)
-		addText("{dom.You} {dom.youVerb('whisper')} into {sub.your} ear.")
-		talkText(DOM_0, "Whenever I snap my fingers, you will...")
+		addText("{dom.You} {dom.youVerb('whisper')} прямо в {sub.your} ухо.")
+		talkText(DOM_0, "Каждый раз, когда я щелкну пальцами, ты будешь...")
 		return
 
 	if(_id == "surrender"):
@@ -93,29 +93,29 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		if(isSubInTrance()):
 			if(RNG.chance(75)):
 				subSay = RNG.pick([
-					"Obey...", "Submit...", "Yes...",
+					"Повиноваться...", "Подчиняться...", "Да...",
 				])
 		elif(isSubHypnotized()):
 			if(RNG.chance(75)):
 				subSay = RNG.pick([
-					"I'll behave...",
-					"I'll obey...",
-					"I submit...",
+					"Я буду послушной...",
+					"Я буду слушаться...",
+					"Я подчиняюсь...",
 					"Y-yes..."	
 				])
 		else:
 			if(RNG.chance(75)):
 				subSay = RNG.pick([
-					"Wh-what are you...",
-					"What is this?",
-					"What's happening?",
-					"I don't..."	
+					"Чт-что ты...",
+					"Что это такое?",
+					"Что происходит?",
+					"Я не..."	
 				])
 		if(subSay != ""):
 			talkText(SUB_0, subSay)
 		return
 	if(_id == "resist"):
-		addText("{sub.You} {sub.youVerb('try', 'tries')} to resist {dom.your} hypnotic influence.")
+		addText("{sub.You} {sub.youVerb('try', 'tries')}, чтобы сопротивляться гипнотическому влиянию {dom.your}.")
 		var subSay:String = ""
 		getDomInfo().addAnger(0.04)
 		
@@ -123,33 +123,33 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 			HypnokinkUtil.changeSuggestibilityBy(getSubInfo().getChar(), RNG.randi_range(4,16))
 			if(RNG.chance(75)):
 				subSay = RNG.pick([
-					"Nnh...", 
-					"Please...", 
+					"Ннн...", 
+					"Пожалуйста...", 
 					"Can't...",
 				])
 		elif(isSubHypnotized()):
 			HypnokinkUtil.changeSuggestibilityBy(getSubInfo().getChar(), RNG.randi_range(-4,2))
 			if(RNG.chance(75)):
 				subSay = RNG.pick([
-					"I don't...",
-					"I'd better...",
-					"I won't...",
+					"Я не...",
+					"Мне лучше...",
+					"Я не буду...",
 					"No...",
-					"I can't..."
+					"Я не могу..."
 				])
 		else:
 			HypnokinkUtil.changeSuggestibilityBy(getSubInfo().getChar(), -RNG.randi_range(1, 16))
 			if(RNG.chance(75)):
 				subSay = RNG.pick([
-					"What are you doing?",
-					"What is this?",
-					"What's happening?",
-					"No!",
-					"Stop it!"
+					"Ты что творишь?",
+					"Что это такое?",
+					"Что происходит?",
+					"Нет!",
+					"Прекрати!"
 				])
 		
 		if(HypnokinkUtil.getSuggestibleStacks(getSub()) < 5.0 && RNG.chance(getSubResistChance(20, 15))):
-			addText("{sub.You} {sub.youVerb('manage')} to break free from {dom.yourHis} hypnotic gaze!")
+			addText("{sub.You} {sub.youVerb('manage')}, чтобы вырваться из гипнотического взгляда {dom.yourHis}!")
 			failGoals()
 			endActivity()
 		

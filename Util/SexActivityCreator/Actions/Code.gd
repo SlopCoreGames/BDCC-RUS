@@ -16,7 +16,7 @@ func getArgs():
 		"code": {
 			"type": "bigstring",
 			"value": storedCode,
-			"text": "GDScript Code",
+			"text": "Код GDScript",
 		},
 	}
 

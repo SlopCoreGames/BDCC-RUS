@@ -7,7 +7,7 @@ class_name LovenseDB
 
 const DB := {
   "defaults": {
-	"name": "Lovense Connect Service Device",
+	"name": "Устройство сервиса Lovense Connect",
 	"features": [
 	  {
 		"id": "387829be-bbd3-4d71-98f2-738dbb685600",
@@ -22,7 +22,7 @@ const DB := {
 		"index": 0
 	  },
 	  {
-		"description": "battery Level",
+		"description": "Уровень заряда",
 		"id": "7202da93-c25d-460a-a863-8d4d38f41fdf",
 		"input": {
 		  "battery": {
@@ -50,7 +50,7 @@ const DB := {
 	  "name": "Lovense Max",
 	  "features": [
 		{
-		  "description": "Vibrator",
+		  "description": "Вибратор",
 		  "id": "cd1a70b7-d716-41a9-b839-24e0229c25d2",
 		  "output": {
 			"vibrate": {
@@ -63,7 +63,7 @@ const DB := {
 		  "index": 0
 		},
 		{
-		  "description": "Air Pump",
+		  "description": "Воздушный насос",
 		  "id": "e74ae364-c17a-41c4-accf-0e4a4ee94e04",
 		  "output": {
 			"constrict": {
@@ -76,7 +76,7 @@ const DB := {
 		  "index": 1
 		},
 		{
-		  "description": "battery Level",
+		  "description": "Уровень заряда",
 		  "id": "a2d19eee-211e-4771-b7e1-cfba3e6bb55f",
 		  "input": {
 			"battery": {
@@ -127,7 +127,7 @@ const DB := {
 		  "index": 1
 		},
 		{
-		  "description": "battery Level",
+		  "description": "Уровень заряда",
 		  "id": "9b31822c-7449-4a3d-bd4d-6cced8440126",
 		  "input": {
 			"battery": {
@@ -178,7 +178,7 @@ const DB := {
 		  "index": 1
 		},
 		{
-		  "description": "battery Level",
+		  "description": "Уровень заряда",
 		  "id": "1fb626ec-7006-46f5-97b1-db3cc0bc5bb8",
 		  "input": {
 			"battery": {
@@ -268,7 +268,7 @@ const DB := {
 	  "name": "Lovense Sex Machine",
 	  "features": [
 		{
-		  "description": "Fucking Machine Oscillation Speed",
+		  "description": "Скорость колебаний секс-машины",
 		  "id": "0ab80cc0-7a82-4cb6-ba4f-0f18ddb2911f",
 		  "output": {
 			"oscillate": {
@@ -281,7 +281,7 @@ const DB := {
 		  "index": 0
 		},
 		{
-		  "description": "battery Level",
+		  "description": "Уровень заряда",
 		  "id": "971bd4aa-d6ac-4449-bd1a-862b29ae705e",
 		  "input": {
 			"battery": {
@@ -332,7 +332,7 @@ const DB := {
 		  "index": 1
 		},
 		{
-		  "description": "battery Level",
+		  "description": "Уровень заряда",
 		  "id": "b771d1b8-5a68-4a75-8ff2-868380d18fe7",
 		  "input": {
 			"battery": {
@@ -390,7 +390,7 @@ const DB := {
 		  "index": 1
 		},
 		{
-		  "description": "battery Level",
+		  "description": "Уровень заряда",
 		  "id": "80d1e022-85a6-46ad-bbe9-1b8085b1e336",
 		  "input": {
 			"battery": {
@@ -424,7 +424,7 @@ const DB := {
 	  "name": "Lovense Flexer",
 	  "features": [
 		{
-		  "description": "Both Vibes",
+		  "description": "Оба вибро",
 		  "id": "bd656e88-abae-49e4-ab45-f75df187bb4a",
 		  "output": {
 			"vibrate": {
@@ -437,7 +437,7 @@ const DB := {
 		  "index": 0
 		},
 		{
-		  "description": "Finger motion",
+		  "description": "Движение пальцев",
 		  "id": "663dedb4-05a1-4391-a666-e59c38ead69c",
 		  "output": {
 			"rotate": {
@@ -450,7 +450,7 @@ const DB := {
 		  "index": 1
 		},
 		{
-		  "description": "battery Level",
+		  "description": "Уровень заряда",
 		  "id": "735c2164-4fd5-4e82-835d-23251e487d68",
 		  "input": {
 			"battery": {
@@ -501,7 +501,7 @@ const DB := {
 		  "index": 1
 		},
 		{
-		  "description": "battery Level",
+		  "description": "Уровень заряда",
 		  "id": "fe19ad5c-5acb-4ee9-8a09-f6edca06f471",
 		  "input": {
 			"battery": {
@@ -552,7 +552,7 @@ const DB := {
 		  "index": 1
 		},
 		{
-		  "description": "battery Level",
+		  "description": "Уровень заряда",
 		  "id": "7a794236-85e6-4b13-97c6-d17d1f091f0a",
 		  "input": {
 			"battery": {
@@ -603,7 +603,7 @@ const DB := {
 		  "index": 1
 		},
 		{
-		  "description": "battery Level",
+		  "description": "Уровень заряда",
 		  "id": "7fcb01eb-4241-42c1-9799-fdfa190b7edd",
 		  "input": {
 			"battery": {
@@ -630,7 +630,7 @@ const DB := {
 	  "name": "Lovense Lapis",
 	  "features": [
 		{
-		  "description": "Tip Vibe",
+		  "description": "Вибрация при чаевых",
 		  "id": "f435ee40-ae30-4fba-9f80-c1143f601993",
 		  "output": {
 			"vibrate": {
@@ -643,7 +643,7 @@ const DB := {
 		  "index": 0
 		},
 		{
-		  "description": "Internal Vibe",
+		  "description": "Внутренняя вибрация",
 		  "id": "9504ed2b-1baf-4759-922b-a5dcfc16aeb7",
 		  "output": {
 			"vibrate": {
@@ -656,7 +656,7 @@ const DB := {
 		  "index": 1
 		},
 		{
-		  "description": "External Vibe",
+		  "description": "Внешняя вибрация",
 		  "id": "1cce6f8f-0301-4e4e-a820-1ed85e11e25d",
 		  "output": {
 			"vibrate": {
@@ -669,7 +669,7 @@ const DB := {
 		  "index": 2
 		},
 		{
-		  "description": "battery Level",
+		  "description": "Уровень заряда",
 		  "id": "322170f9-b493-4233-9336-e6f7f267450c",
 		  "input": {
 			"battery": {
@@ -703,7 +703,7 @@ const DB := {
 	  "name": "Lovense Solace",
 	  "features": [
 		{
-		  "description": "Stroker Oscillation Speed",
+		  "description": "Скорость осцилляции строкера",
 		  "id": "b8b240c0-182d-4889-9200-47c16399c57d",
 		  "output": {
 			"oscillate": {
@@ -716,7 +716,7 @@ const DB := {
 		  "index": 0
 		},
 		{
-		  "description": "battery Level",
+		  "description": "Уровень заряда",
 		  "id": "37c03e71-1701-4b5a-9697-d62d2dc56e4b",
 		  "input": {
 			"battery": {

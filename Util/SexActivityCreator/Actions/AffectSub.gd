@@ -20,12 +20,12 @@ func getArgs():
 		"fetishes": {
 			"type": "fetishesWithNumbers",
 			"value": fetishes,
-			"text": "Fetishes",
+			"text": "Фетиши",
 		},
 		"addScore": {
 			"type": "string",
 			"value": addScore,
-			"text": "extra score",
+			"text": "дополнительные очки",
 		},
 		"lustMod": {
 			"type": "string",

@@ -12,11 +12,11 @@ func setIsEditing(newEdit):
 	if(newEdit):
 		$SpinBox.visible = true
 		$Label.visible = false
-		$Button.text = "Save"
+		$Button.text = "Сохранить"
 	else:
 		$SpinBox.visible = false
 		$Label.visible = true
-		$Button.text = "Edit"
+		$Button.text = "Редактировать"
 
 func setVarNumber(_value):
 	$SpinBox.value = _value

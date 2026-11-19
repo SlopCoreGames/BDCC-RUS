@@ -23,7 +23,7 @@ func startSpellCheck(theText:String):
 	currentText = theText
 	spellErrors = []
 	updateSpellErrorsList()
-	rich_text_label.text = "Loading.."
+	rich_text_label.text = "Загрузка.."
 
 	var data = {
 		language = "eng",
@@ -57,8 +57,8 @@ func updateSelectedSpellError():
 	
 	var selectedEntry = spellErrors[selectedErrorIndex]
 	var text = ""
-	text += "Mistake text: '"+str(selectedEntry["mistakeText"])+"'\n"
-	text += "Fixed text: '"+str(selectedEntry["correctedText"])+"'\n\n"
+	text += "Текст с ошибкой: '"+str(selectedEntry["mistakeText"])+"'\n"
+	text += "Исправленный текст: '"+str(selectedEntry["correctedText"])+"'\n\n"
 	text += "Type: "+str(selectedEntry["type"])+"\n"
 	text += ""+str(selectedEntry["shortDesc"])+"\n"
 	text += ""+str(selectedEntry["longDesc"])+"\n"
@@ -78,7 +78,7 @@ func _on_HTTPRequest_request_completed(_result, _response_code, _headers, _body)
 	if(jsonResult.error != OK):
 		Log.printerr(jsonResult)
 		updateSpellErrorsList()
-		rich_text_label.text = "Error.. "+str(_response_code)
+		rich_text_label.text = "Ошибка.. "+str(_response_code)
 		return
 	#print(_body.get_string_from_utf8())
 	var resultData:Dictionary = jsonResult.result
@@ -116,7 +116,7 @@ func _on_HTTPRequest_request_completed(_result, _response_code, _headers, _body)
 		corrID += 1
 	updateSpellErrorsList()
 	if(spellErrors.size() <= 0):
-		rich_text_label.text = "No errors found"
+		rich_text_label.text = "Ошибок не обнаружено"
 		return
 
 func _on_MistakeItemList_item_selected(index):

@@ -33,7 +33,7 @@ func getInteractInfo() -> Dictionary:
 			{
 				id = "act",
 				name = "Действие",
-				desc = "Do something!",
+				desc = "Сделай что-нибудь!",
 				args = [],
 				disabled = false,
 			},
@@ -41,7 +41,7 @@ func getInteractInfo() -> Dictionary:
 	}
 
 func doInteract(_actionID:String, _args:Array = []) -> Dictionary:
-	return {text="You did it!", lootTable="medicalstorage", ended=true, anim=[StageScene.Sleeping, "sleep"]}
+	return {text="У тебя получилось!", lootTable="medicalstorage", ended=true, anim=[StageScene.Sleeping, "sleep"]}
 
 func getMapIcon():
 	return RoomStuff.RoomSprite.BED

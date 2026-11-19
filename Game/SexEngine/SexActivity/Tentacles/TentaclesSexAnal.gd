@@ -10,8 +10,8 @@ func _init():
 		"asshole",
 	]
 	
-	activityName = "Anal"
-	activityDesc = "Fuck the sub's ass."
+	activityName = "Анальный"
+	activityDesc = "Трахать задницу сабмиссива."
 	activityCategory = ["Fuck"]
 
 func getGoals():

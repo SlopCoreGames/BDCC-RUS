@@ -33,8 +33,8 @@ func getAvaiablePoses() -> Array:
 func _init():
 	id = "TentaclesDeepthroat"
 	
-	activityName = "Deepthroat"
-	activityDesc = "Fuck the sub's throat."
+	activityName = "Глубокий минет"
+	activityDesc = "Трахать подчиненную в глотку."
 	activityCategory = ["Fuck"]
 
 
@@ -90,9 +90,9 @@ func processTurn():
 
 func inside_processTurn():
 	addTextPick([
-		"{sub.You} {sub.youAre} being a total tentacle-slut, {sub.yourHis} "+RNG.pick(fuckHoleNames)+" is serving as a tentacle-warmer.",
-		"{sub.Your} "+RNG.pick(fuckHoleNames)+" is warming up one of the tentacles.",
-		"{sub.Your} "+RNG.pick(fuckHoleNames)+" is keeping one of the tentacles warm.",
+		"{sub.You} {sub.youAre} — настоящая щупальцевая шлюха, {sub.yourHis} "+RNG.pick(fuckHoleNames)+" служит подогревом для щупалец.",
+		"{sub.Your} "+RNG.pick(fuckHoleNames)+" разогревает одно из щупалец.",
+		"{sub.Your} "+RNG.pick(fuckHoleNames)+" согревает одно из щупалец.",
 	])
 	stimulateSex(DOM_0, SUB_0, fuckHole, I_TEASE, SPEED_VERYSLOW)
 
@@ -131,33 +131,33 @@ func sex_processTurn():
 
 func getActions(_indx:int):
 	if(_indx == DOM_0):
-		addAction("stop", getStopScore(), "Stop sex", "Stop the sex")
+		addAction("stop", getStopScore(), "Прекратить секс", "Остановить секс")
 		
 		if(state == "inside" && !checkActiveDomPC(_indx)):
-			addAction("fuckMore", getContinueSexScore(_indx, SUB_0, fuckHole)-getStopScore(), "Continue fucking", "Start fucking them again")
-			addAction("pullOut", getStopScore(), "Pull out", "Pull your member out")
+			addAction("fuckMore", getContinueSexScore(_indx, SUB_0, fuckHole)-getStopScore(), "Продолжать трахаться", "Снова начать трахать их")
+			addAction("pullOut", getStopScore(), "Вытащить", "Вытащить свой член")
 		
 		if(state == ""):
 			#addAction("rub", 1.0 if !isReadyToPenetrate(_indx) else 0.4, "Rub", "Rub your cock against them", {A_PRIORITY: 4})
 			if(hasBodypartUncovered(SUB_0, fuckHole) && !checkActiveDomPC(_indx)):
-				addAction("penetrate", 1.0, "Penetrate", "Try to start fucking them!", {A_PRIORITY: 5})
+				addAction("penetrate", 1.0, "Проникнуть", "Попробовать снова начать трахать их!", {A_PRIORITY: 5})
 		if(state == "sex" && !checkActiveDomPC(_indx)):
-			addAction("pause", getPauseSexScore(_indx, SUB_0, fuckHole), "Slow down", "Pause the fucking", {A_PRIORITY: 1})
+			addAction("pause", getPauseSexScore(_indx, SUB_0, fuckHole), "Замедлиться", "Притормози, блядь,", {A_PRIORITY: 1})
 			
 			if(isStuffing):
-				addAction("stopStuff", 0.0, "Stop egg-stuffing", "Enough stuffing eggs into the sub")
+				addAction("stopStuff", 0.0, "Хватит запихивать яйца", "Довольно пихать яйца в сабку!")
 			else:
 				var theStartScore:float = getDomInfo().getArousal()*fetish(DOM_0, Fetish.Breeding)
 				if(theStartScore < 0.4):
 					theStartScore = 0.0
-				addAction("startStuff", theStartScore, "Start egg-stuffing", "Start stuffing eggs into the sub's fuckhole!")
+				addAction("startStuff", theStartScore, "Начать запихивать яйца", "Начни заталкивать яйца в дырочку сабки!")
 			
 		if(state == "sex" && isReadyToCumHandled(DOM_0)):
-			addAction("cum", 1.0, "Cum inside", "Cum inside them!", {A_PRIORITY: 1001})
+			addAction("cum", 1.0, "Кончить внутрь", "Кончи в них!", {A_PRIORITY: 1001})
 			if(isStuffing):
-				addAction("donothing", 1.0, "Keep stuffing", "Keep stuffing the sub with eggs!", {A_PRIORITY: 1001})
+				addAction("donothing", 1.0, "Продолжай пихать", "Продолжай заталкивать яйца в сабку!", {A_PRIORITY: 1001})
 		elif(state == "sex" && isReadyToCumHandled(SUB_0) && !canDoActions(SUB_0) && !checkActiveDomPC(_indx)):
-			addAction("subcum", 1.0, "Sub orgasm!", "They are about to cum!", {A_PRIORITY: 1001})
+			addAction("subcum", 1.0, "Оргазм сабки!", "Они сейчас кончат!", {A_PRIORITY: 1001})
 		
 		for pose in getAvaiablePoses():
 			if(pose == currentPose):
@@ -165,25 +165,25 @@ func getActions(_indx:int):
 			if(!POSES.has(pose)):
 				continue
 			var poseName:String = POSES[pose]["name"]
-			addAction("switchpose", 0.0, poseName, "Change pose", {A_CATEGORY: ["Switch pose"], A_ARGS: [pose]})
+			addAction("switchpose", 0.0, poseName, "Сменить позу", {A_CATEGORY: ["Switch pose"], A_ARGS: [pose]})
 		
 		
 	if(_indx == SUB_0):
-		addAction("pullaway", getSubInfo().getResistScore(), "Pull away", "Try to pull away", {A_CHANCE: getSubResistChance(30.0, 25.0), A_PRIORITY: 2})
+		addAction("pullaway", getSubInfo().getResistScore(), "Отстраниться", "Попытаться отстраниться", {A_CHANCE: getSubResistChance(30.0, 25.0), A_PRIORITY: 2})
 		if(state == ""):
 			if(!getSub().isOralBlocked()):
-				addAction("openmouth", 0.0, "Open mouth", "Allow the tentacle in!", {A_CHANCE: getSubResistChance(30.0, 25.0), A_PRIORITY: 5})
+				addAction("openmouth", 0.0, "Открыть рот", "Дай щупальцу войти!", {A_CHANCE: getSubResistChance(30.0, 25.0), A_PRIORITY: 5})
 		if(state == "sex"):
 			if(isReadyToCumHandled(SUB_0)):
-				addAction("subcum", 1.0, "Cum!", "You're about to cum!", {A_PRIORITY: 1001})
+				addAction("subcum", 1.0, "Кончай!", "Ты сейчас кончишь!", {A_PRIORITY: 1001})
 
 func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "startStuff"):
 		isStuffing = true
-		addText("The tentacles have began stuffing eggs into {sub.your} "+RNG.pick(fuckHoleNames)+"!")
+		addText("Тентакли начали заталкивать яйца в {sub.your} "+RNG.pick(fuckHoleNames)+"!")
 	if(_id == "stopStuff"):
 		isStuffing = false
-		addText("The tentacles have stopped stuffing eggs into {sub.your} "+RNG.pick(fuckHoleNames)+".")
+		addText("Тентакли перестали заталкивать яйца в {sub.your} "+RNG.pick(fuckHoleNames)+".")
 	
 	
 	if(_id == "cum"):
@@ -196,15 +196,15 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 			orgAmount += 1
 			
 		if(orgAmount == 2):
-			addText("[b]Double orgasm![/b]")
+			addText("[b]Двойной оргазм![/b]")
 		elif(orgAmount == 3):
-			addText("[b]Triple orgasm![/b]")
+			addText("[b]Тройной оргазм![/b]")
 		elif(orgAmount == 4):
-			addText("[b]Quadruple orgasm![/b]")
+			addText("[b]Четверной оргазм![/b]")
 		if(isReadyToCumHandled(SUB_0)):
 			cumGeneric(SUB_0, DOM_0)
 		if(isReadyToCumHandled(DOM_0)):
-			addText("[b]The tentacles cum![/b]")
+			addText("[b]Тентакли кончают![/b]")
 			var possible:Array = [
 			]
 			var theSub:BaseCharacter = getSub()
@@ -223,26 +223,26 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 			addTextPick(possible)
 			if(currentPose == POSE_GANGBANG):
 				addTextPick([
-					"The rest of the tentacles shower {sub.youHim} with their {dom.cum}!",
+					"Остальные тентакли заливают {sub.youHim} своей {dom.cum}!",
 				])
 			
 		satisfyGoals()
 		state = "inside"
 		return
 	if(_id == "fuckMore"):
-		addText("The tentacles start fucking {sub.your} throat again!")
+		addText("Тентакли снова начинают трахать горло {sub.your}!")
 		state = "sex"
 		return
 	if(_id == "pause"):
-		addTextTopBottom("{<TOP>.You} {<TOP>.youVerb('pause')} the action.", _indx, SUB_0)
+		addTextTopBottom("{<TOP>.You} {<TOP>.youVerb('pause')} процесс.", _indx, SUB_0)
 		state = "inside"
 		return
 	if(_id == "pullOut"):
-		addText("{dom.You} {dom.youVerb('pull')} {dom.yourHis} tentacle out.")
+		addText("{dom.You} {dom.youVerb('pull')} {dom.yourHis} тентакль наружу.")
 		state = ""
 		return
 	if(_id == "rub"):
-		addText("{dom.You} {dom.youVerb('rub')} {dom.yourHis} tentacles against {sub.your} "+RNG.pick(fuckHoleNames)+".")
+		addText("{dom.You} {dom.youVerb('rub')} {dom.yourHis} щупальца прижаты к {sub.your} "+RNG.pick(fuckHoleNames)+".")
 		stimulateSex(DOM_0, SUB_0, fuckHole, I_TEASE, SPEED_SLOW)
 		return
 	if(_id == "openmouth"):
@@ -281,11 +281,11 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		return
 	if(_id == "stop"):
 		endActivity()
-		addText("{dom.You} {dom.youVerb('pull')} away from {sub.you}.")
+		addText("{dom.You} {dom.youVerb('pull')} подается прочь от {sub.you}.")
 		return 
 	if(_id == "switchpose"):
 		var newPose:String = _action["args"][0]
-		addText("{dom.You} {dom.youVerb('switch', 'switches')} pose!")
+		addText("{dom.You} {dom.youVerb('switch', 'switches')} поза!")
 		currentPose = newPose
 		var theEntry:Dictionary = POSES[currentPose]
 		addText(theEntry["startText"].replace("<HOLE>", RNG.pick(fuckHoleNames)))
@@ -295,7 +295,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		addResistanceIfPlayer(_indx)
 		var successChance:float = getSubResistChance(30.0, 25.0)
 		if(RNG.chance(successChance)):
-			addText("{sub.You} {sub.youVerb('pull')} away from {dom.you}.")
+			addText("{sub.You} {sub.youVerb('pull')} от {dom.you}.")
 			getDomInfo().addAnger(0.3)
 			if(getState() != ""):
 				setState("")
@@ -303,7 +303,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 				endActivity()
 			return
 		else:
-			addText("{sub.You} {sub.youVerb('try', 'tries')} to pull away from {dom.you} but {sub.youVerb('fail')}.")
+			addText("{sub.You} {sub.youVerb('try', 'tries')} попытаться отстраниться от {dom.you}, но {sub.youVerb('fail')}.")
 			getDomInfo().addAnger(0.1)
 			return
 	if(_id == "subcum"):

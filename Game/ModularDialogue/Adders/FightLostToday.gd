@@ -31,14 +31,14 @@ func canBeUsed(_id:String, _args:Dictionary, _form) -> bool:
 
 func getText(_id:String, _args:Dictionary):
 	return [
-		"Not you again..",
-		"Fuck, it's you..",
-		"Oh c'mon.",
-		"Why is it you again..",
-		"Ah shit.",
-		"Fuck..",
-		"Oh no.",
-		"Sigh..",
-		"It's you..",
-		"You again..",
+		"Опять ты..",
+		"Блядь, это снова ты..",
+		"Да ладно тебе.",
+		"Ну почему опять ты..",
+		"Ах, дерьмо.",
+		"Блядь..",
+		"О нет.",
+		"Эх..",
+		"Это ты..",
+		"Снова ты..",
 	]

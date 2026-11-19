@@ -411,7 +411,7 @@ func getExtraOutputData(_isDom:bool, _sexEngine):
 		var tfResult:Dictionary = tfHolder.doFirstPendingTransformation({}, true)
 		if(tfResult.has("text") && tfResult["text"] != ""):
 			fetishAffect(Fetish.TFReceiving, 5.0)
-			_sexEngine.addTextRaw(getChar().getName()+"'s body is suddenly [b]changing[/b]! "+tfResult["text"])
+			_sexEngine.addTextRaw(getChar().getName()+"тело [b]вдруг начинает меняться[/b]! "+tfResult["text"])
 
 			if(tfResult.has("say") && tfResult["say"] != ""):
 				_sexEngine.talkText(charID, tfResult["say"])

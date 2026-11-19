@@ -89,7 +89,7 @@ func getEditVars():
 		var thePerk:PerkBase = GlobalRegistry.getPerk(perkID)
 		perkListFancy.append([perkID, perkID+" = "+thePerk.getVisibleName()])
 	var combatStanceFancy:Array = [
-		[-1, "Random"],
+		[-1, "Случайно"],
 	]
 	for theStanceID in CombatStance.getAll():
 		combatStanceFancy.append([theStanceID, CombatStance.getStanceName(theStanceID)])
@@ -110,10 +110,10 @@ func getEditVars():
 			type = "selector",
 			value = gender,
 			values = [
-				[Gender.Male, "Male"],
-				[Gender.Female, "Female"],
-				[Gender.Androgynous, "Androgynous"],
-				[Gender.Other, "Other"],
+				[Gender.Male, "Мужской"],
+				[Gender.Female, "Женский"],
+				[Gender.Androgynous, "Андрогинный"],
+				[Gender.Other, "Другой"],
 			],
 			noseparator=true,
 		},
@@ -122,11 +122,11 @@ func getEditVars():
 			type = "selector",
 			value = pronounsGender,
 			values = [
-				[null, "Same as gender"],
-				[Gender.Male, "Male"],
-				[Gender.Female, "Female"],
-				[Gender.Androgynous, "Androgynous"],
-				[Gender.Other, "Other"],
+				[null, "Как пол"],
+				[Gender.Male, "Мужской"],
+				[Gender.Female, "Женский"],
+				[Gender.Androgynous, "Андрогинный"],
+				[Gender.Other, "Другой"],
 			],
 			#noseparator=true,
 		},

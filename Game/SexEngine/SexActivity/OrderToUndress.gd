@@ -7,8 +7,8 @@ var savedItemState:String = ""
 func _init():
 	id = "OrderToUndress"
 	
-	activityName = "Order to undress"
-	activityDesc = "Order the sub to take something off"
+	activityName = "Приказать раздеться"
+	activityDesc = "Приказать подчиненной что-то снять"
 	activityCategory = ["Undress"]
 
 func getGoals():
@@ -50,7 +50,7 @@ func startActivity(_args):
 	itemIDToRemove = itemToUndress.id
 	savedItemState = itemToUndress.itemState.getChangeStr() if itemToUndress.itemState else ""
 	
-	addText("{dom.You} {dom.youVerb('order')} {sub.you} to undress {sub.yourHis} <ITEM>.".replace("<ITEM>", casualName))
+	addText("{dom.You} {dom.youVerb('order')} {sub.you} приказывает {sub.yourHis} раздеться, снимая <ITEM>.".replace("<ITEM>", casualName))
 	react(SexReaction.OrderToUndress, [100, 100], [DOM_0, SUB_0], [casualName])
 
 func checkRemoved() -> bool:
@@ -80,12 +80,12 @@ func processTurn():
 	tick += 1
 	if(tick > 3):
 		endActivity()
-		addText("{dom.You} gave up waiting.")
+		addText("{dom.You} надоело ждать.")
 		return
 	
 	if(tick > 1):
 		getDomInfo().addAnger(0.1 + 0.02 * tick)
-		addText("{dom.You} {dom.youAre} losing patience.")
+		addText("{dom.You} {dom.youAre} теряет терпение.")
 		return
 	
 func reactActivityEnd(_otheractivity):
@@ -99,14 +99,14 @@ func getActions(_indx:int):
 	if(_indx == SUB_0):
 		if(!getSub().hasBoundArms()):
 			var saynoScore:float = getResistScore(SUB_0) - fetish(SUB_0, Fetish.Exhibitionism)
-			addAction("sayno", saynoScore, "Refuse to undress", "You're not gonna undress")
+			addAction("sayno", saynoScore, "Отказывается раздеваться", "Ты не собираешься раздеваться?")
 
 
 func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "sayno"):
 		getDomInfo().addAnger(0.7)
 		endActivity()
-		addText("{sub.You} {sub.youVerb('refuse')} to undress.")
+		addText("{sub.You} {sub.youVerb('refuse')} раздевается.")
 
 func getItemToRemove(character):
 	var bodypartsToExpose = [BodypartSlot.Breasts, BodypartSlot.Penis, BodypartSlot.Vagina, BodypartSlot.Anus]

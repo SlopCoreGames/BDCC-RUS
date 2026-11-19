@@ -9,8 +9,8 @@ func _init():
 	startedByDom = true
 	startedBySub = false
 	
-	activityName = "Undress sub"
-	activityDesc = "Take off their clothes!"
+	activityName = "Подчинение раздеванию"
+	activityDesc = "Сними с них одежду!"
 	activityCategory = ["Undress"]
 
 func getGoals():
@@ -96,7 +96,7 @@ func startActivity(_args):
 		var casualName:String = str(itemToUndress.getCasualName())
 		itemIDToRemove = itemToUndress.id
 		
-		addText("{dom.You} {dom.youVerb('reach', 'reaches')} to take off {sub.yourHis} <ITEM>.".replace("<ITEM>", casualName))
+		addText("{dom.You} {dom.youVerb('reach', 'reaches')}, чтобы снять {sub.yourHis} <ITEM>.".replace("<ITEM>", casualName))
 		react(SexReaction.ForceUndress, [100, 100], [DOM_0, SUB_0], [casualName])
 		return
 	
@@ -110,7 +110,7 @@ func startActivity(_args):
 	itemIDToRemove = itemToUndress.id
 	
 	var _isTakeOff:bool = (displaceAction[0] == "def_takeoff") # It's fineeeeeee
-	addText("{dom.You} {dom.youVerb('reach', 'reaches')} to "+ ("take off" if _isTakeOff else "displace") + " {sub.yourHis} <ITEM>.".replace("<ITEM>", casualName))
+	addText("{dom.You} {dom.youVerb('reach', 'reaches')} to "+ ("снять" if _isTakeOff else "displace") + " {sub.yourHis} <ITEM>.".replace("<ITEM>", casualName))
 	react(SexReaction.ForceUndress, [100, 100], [DOM_0, SUB_0], [casualName])
 	return
 
@@ -165,7 +165,7 @@ func getActions(_indx:int):
 	if(_indx == SUB_0):
 		if(!getSub().hasBoundArms()):
 			var resistScore:float = getSubInfo().getResistScore() * 1.0 - fetish(SUB_0, Fetish.Exhibitionism) * getSubInfo().getComplyScore()
-			addAction("resist", resistScore, "Resist undressing", "You don't wanna be undressed", {A_CHANCE: 70.0 - getDomInfo().getAngerScore()*60.0})
+			addAction("resist", resistScore, "Сопротивляться раздеванию", "Ты не хочешь, чтобы тебя раздевали", {A_CHANCE: 70.0 - getDomInfo().getAngerScore()*60.0})
 
 func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "resist"):
@@ -175,7 +175,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 			var damageText:String = ""
 			if(RNG.chance(20)):
 				damageText = damageClothes(SUB_0)
-			addText("{sub.You} {sub.youVerb('manage', 'managed')} to resist {dom.yourHis} attempt to undress."+((" Struggling leads to {dom.name} ripping {sub.your} clothes. "+damageText) if damageText != "" else ""))
+			addText("{sub.You} {sub.youVerb('manage', 'managed')}, чтобы сопротивляться попытке {dom.yourHis} раздеть тебя."+((" Из-за борьбы {dom.name} рвет {sub.your} одежду. "+damageText) if damageText != "" else ""))
 			reactSub(SexReaction.ActivelyResisting, [50])
 			fetishUp(SUB_0, Fetish.Exhibitionism, -3.0)
 			return
@@ -184,7 +184,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		var damageText:String = ""
 		if(RNG.chance(10)):
 			damageText = damageClothes(SUB_0)
-		addText("{sub.You} {sub.youVerb('try', 'tries')} to resist {dom.yourHis} hands but {sub.youVerb('fail')}."+((" Struggling leads to {dom.name} ripping {sub.your} clothes. "+damageText) if damageText != "" else ""))
+		addText("{sub.You} {sub.youVerb('try', 'tries')}, пытаясь отбиться от рук {dom.yourHis}, но {sub.youVerb('fail')}."+((" Из-за борьбы {dom.name} рвет {sub.your} одежду. "+damageText) if damageText != "" else ""))
 		reactSub(SexReaction.Resisting, [50])
 		fetishUp(SUB_0, Fetish.Exhibitionism, -5.0)
 		return

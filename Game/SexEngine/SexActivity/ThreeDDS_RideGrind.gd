@@ -6,7 +6,7 @@ var usedFetish:String = Fetish.VaginalSexGiving
 func _init():
 	id = "ThreeDDS_RideGrind"
 	
-	activityName = "Ride and grind"
+	activityName = "Скакать и тереться"
 	activityDesc = ""
 	activityCategory = ["Fuck", "Threesome"]
 
@@ -115,7 +115,7 @@ func onSwitchFrom(_otherActivity, _args):
 	#usedFetish2 = Fetish.VaginalSexGiving if usedBodypart2 == S_VAGINA else Fetish.AnalSexGiving
 	pullInDom(_args[1])
 	
-	addText("{dom1.You} {dom1.youVerb('join')} in on the fun and {dom1.youVerb('bring')} {dom1.yourHis} "+getNameHole(DOM_1, S_VAGINA)+" to {sub.your} face!")
+	addText("{dom1.You} {dom1.youVerb('join')} врываются в веселье и {dom1.youVerb('bring')} {dom1.yourHis} "+getNameHole(DOM_1, S_VAGINA)+" прямо на {sub.your} лицо!")
 	react(SexReaction.ThreesomeJoin, [100.0, 100.0, 100.0], [DOM_1, SUB_0, DOM_0])
 
 func getYour(pcIsInvolvedText:String = "your", noPcText:String = "their") -> String:
@@ -138,8 +138,8 @@ func inside_processTurn():
 	stimulateSexRide(DOM_0, SUB_0, usedBodypart, I_TEASE)
 	stimulateLick(SUB_0, DOM_1, S_VAGINA, I_TEASE)
 	
-	addText("{dom.You} {dom.youAre} being a cock-warmer for {sub.your} {sub.penisShort}.")
-	addText("{dom1.You} {dom1.youAre} sitting on {sub.your} face.")
+	addText("{dom.You} {dom.youAre} надоело быть грелкой для {sub.your} {sub.penisShort}.")
+	addText("{dom1.You} {dom1.youAre} усаживается на {sub.your} лицо.")
 	#addText("At the same time, {dom1.You} {dom1.youAre} being a cock-warmer for {sub.your} {sub.penisShort}.")
 
 func sex_processTurn():
@@ -151,8 +151,8 @@ func sex_processTurn():
 	
 	if(RNG.chance(30) && isCloseToCumming(DOM_0) && isCloseToCumming(DOM_1)):
 		addTextPick([
-			"Both of the doms are getting close.",
-			"Both of "+("you" if isDom("pc") else "them")+" are about to cum!",
+			"Оба доминатора уже на пределе.",
+			"Оба "+("you" if isDom("pc") else "them")+" вот-вот кончат!",
 		])
 	else:
 		doProcessRideExtra(SUB_0, DOM_0, usedBodypart)
@@ -165,7 +165,7 @@ func getActions(_indx:int):
 	
 	if(_indx == DOM_0 || _indx == DOM_1):
 		var isDom0:bool = (_indx == DOM_0)
-		addAction("stop", getStopScore(), "Stop ride&grind", "Stop the threesome")
+		addAction("stop", getStopScore(), "Прекратить скачки", "Прекратить тройничок")
 		
 		if(state == "inside" && !checkActiveDomPC(_indx)):
 			var fuckMoreScore:float = 0.0
@@ -173,32 +173,32 @@ func getActions(_indx:int):
 				fuckMoreScore = getContinueSexScore(_indx, SUB_0, S_PENIS, usedBodypart)-getStopScore()
 			else:
 				fuckMoreScore = getContinueSexScore(_indx, SUB_0, S_MOUTH, S_VAGINA)-getStopScore()
-			addAction("fuckMore", fuckMoreScore, "Continue fucking", "Continue the sex train!")
-			addAction("pullOut", getStopScore(), "Pull out", "Pull away from the sub's cock." if _indx == DOM_0 else "Pull away from the sub's mouth.")
+			addAction("fuckMore", fuckMoreScore, "Продолжать трахаться", "Продолжить секс-поезд!")
+			addAction("pullOut", getStopScore(), "Вытащить", "Отстраниться от члена саба." if _indx == DOM_0 else "Отстраниться от рта саба.")
 		
 		if(state == ""):
-			addAction("rub", 1.0 if !isReadyToPenetrate(_indx) else 0.4, "Rub", "Rub your cock against them" if isDom0 else "Rub yourself against their cock", {A_PRIORITY: 4})
+			addAction("rub", 1.0 if !isReadyToPenetrate(_indx) else 0.4, "Тереть", "Потри свой член об них" if isDom0 else "Тереться о член партнера", {A_PRIORITY: 4})
 			if(isReadyToFuck(SUB_0) && !checkActiveDomPC(_indx) && hasBodypartUncovered(DOM_0, usedBodypart)):
-				addAction("penetrate", 1.0, "Envelop cock" if isDom0 else ("Grind"), "Try to start fucking them!" if isDom0 else ("Try to get the action going"), {A_PRIORITY: 5})
+				addAction("penetrate", 1.0, "Облепить член" if isDom0 else ("Тереться"), "Попробовать снова начать трахать их!" if isDom0 else ("Попытаться разогнать темп"), {A_PRIORITY: 5})
 			if(getDom(0).hasReachableVagina() && ((usedBodypart == S_VAGINA && getDom(1).hasReachableVagina()) || (usedBodypart == S_ANUS && getDom(1).hasReachableAnus()))):
-				addAction("switch", 0.0, "Switch positions", "Switch positions with the dom")
+				addAction("switch", 0.0, "Сменить позиции", "Смениться позициями с домом")
 		if(state == "sex" && !checkActiveDomPC(_indx)):
 			var pauseScore:float = 0.0
 			if(isDom0):
 				pauseScore = getPauseSexScore(_indx, SUB_0, S_PENIS, usedBodypart)
 			else:
 				pauseScore = getPauseSexScore(_indx, SUB_0, S_MOUTH, S_VAGINA)
-			addAction("pause", pauseScore, "Slow down", "Pause the fucking", {A_PRIORITY: 1})
+			addAction("pause", pauseScore, "Замедлиться", "Притормози, блядь,", {A_PRIORITY: 1})
 		#if(state == "sex" && (isReadyToCumHandled(DOM_0) || isStrapon(DOM_0)) && (isReadyToCumHandled(SUB_0) || isStrapon(SUB_0))):
 		#	if(!isStrapon(_indx if isDom0 else SUB_0) && !checkActiveDomPC(_indx)):
 		#		addAction("cum", 1.0, "Cum inside", "Cum inside them!" if isDom0 else "Let the sub cum inside you!", {A_PRIORITY: 1001})
 		if(state == "sex" && isReadyToCumHandled(SUB_0) && !checkActiveDomPC(_indx)):
-			addAction("subcum", 1.0, "Sub orgasm!", "They are about to cum!", {A_PRIORITY: 1001})
+			addAction("subcum", 1.0, "Оргазм сабки!", "Они сейчас кончат!", {A_PRIORITY: 1001})
 		elif(state == "sex" && isReadyToCumHandled(_indx)):
-			addAction("domcum", 1.0, "Cum!", "You're about to cum", {A_PRIORITY: 1001})
+			addAction("domcum", 1.0, "Кончай!", "Ты вот-вот кончишь", {A_PRIORITY: 1001})
 		
 	if(_indx == SUB_0):
-		addAction("pullaway", getResistScore(SUB_0), "Pull away", "Try to pull away", {A_CHANCE: getSubResistChance(30.0, 25.0), A_PRIORITY: 2})
+		addAction("pullaway", getResistScore(SUB_0), "Отстраниться", "Попытаться отстраниться", {A_CHANCE: getSubResistChance(30.0, 25.0), A_PRIORITY: 2})
 		#if(state == "sex"):
 		#	if(isReadyToCumHandled(SUB_0)):
 		#		addAction("subcum", 1.0, "Cum!", "You're about to cum!", {A_PRIORITY: 1001})
@@ -206,7 +206,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "stuffegg"):
 		doReceiveEggFrom(DOM_0, SUB_0, usedBodypart)
 	if(_id == "switch"):
-		addText("{<DOM>.You} {<DOM>.youVerb('decide')} to switch spots.".replace("<DOM>", indxToTextID(_indx)))
+		addText("{<DOM>.You} {<DOM>.youVerb('decide')}, чтобы поменяться местами.".replace("<DOM>", indxToTextID(_indx)))
 		switchDoms(0, 1)
 #	if(_id == "cum"):
 #		stimulate(DOM_0, S_PENIS, SUB_0, usedBodypart, I_HIGH, usedFetish)
@@ -235,21 +235,21 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 #		state = "inside"
 #		return
 	if(_id == "fuckMore"):
-		addText("The doms start riding and grinding {sub.your} face again!")
+		addText("Доминанты снова начинают скакать и тереться об лицо {sub.your}!")
 		state = "sex"
 		return
 	if(_id == "pause"):
-		addTextTopBottom("{<TOP>.You} {<TOP>.youVerb('pause')} the sex.", _indx, SUB_0)
+		addTextTopBottom("{<TOP>.You} {<TOP>.youVerb('pause')} секс.", _indx, SUB_0)
 		state = "inside"
 		return
 	if(_id == "pullOut"):
-		addText("The doms pull up from {sub.your} {sub.penisShort} and away from {sub.yourHis} face.")
+		addText("Доминанты приподнимаются, чтобы {sub.penisShort} {sub.your} и отстраниться от лица {sub.yourHis}.")
 		state = ""
 		return
 	if(_id == "rub"):
 		#addText("{dom.You} {dom.youVerb('rub')} {dom.yourHis} {dom.penisShort} against {sub.your} "+getNameHole(SUB_0, usedBodypart)+".")
 		addText("{dom.You} {dom.youVerb('rub')} {dom.yourHis} "+getNameHole(DOM_0, usedBodypart)+" against {sub.your} {sub.penisShort}.")
-		addText("{dom1.You} gently {dom1.youVerb('grind')} {dom1.yourHis} "+getNameHole(DOM_1, S_VAGINA)+" against {sub.your} face.")
+		addText("{dom1.You} gently {dom1.youVerb('grind')} {dom1.yourHis} "+getNameHole(DOM_1, S_VAGINA)+" об лицо {sub.your}.")
 		stimulateSexRide(DOM_0, SUB_0, usedBodypart, I_TEASE)
 		stimulateLick(SUB_0, DOM_1, S_VAGINA, I_TEASE)
 		return
@@ -257,7 +257,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		if(tryPenetrate(SUB_0, DOM_0, usedBodypart)):
 			stimulateLick(SUB_0, DOM_1, S_VAGINA, I_TEASE)
 			#penetration(true, SUB_0, DOM_1, usedBodypart2)
-			addText("At the same time, {dom1.you} {dom1.youVerb('lower')} {dom1.yourHis} "+getNameHole(DOM_1, S_VAGINA)+" onto {sub.yourHis} face.")
+			addText("В то же время, {dom1.you} {dom1.youVerb('lower')} {dom1.yourHis} "+getNameHole(DOM_1, S_VAGINA)+" на лицо {sub.yourHis}.")
 			state = "sex"
 		else:
 			stimulateLick(SUB_0, DOM_1, S_VAGINA, I_TEASE)
@@ -267,7 +267,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		return
 	if(_id == "stop"):
 		endActivity()
-		addText("{dom.You} and {dom1.you} pull away from {sub.you}.")
+		addText("{dom.You} и {dom1.you} отстраняются от {sub.you}.")
 		return 
 	if(_id == "domcum"):
 		cumGeneric(_indx, _indx)
@@ -281,7 +281,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		addResistanceIfPlayer(_indx)
 		var successChance:float = getSubResistChance(30.0, 25.0)
 		if(RNG.chance(successChance)):
-			addText("{sub.You} {sub.youVerb('pull')} away from the doms!")
+			addText("{sub.You} {sub.youVerb('pull')} прочь от доминантов!")
 			getDomInfo().addAnger(0.3)
 			getDomInfo(1).addAnger(0.3)
 			if(getState() != ""):
@@ -290,7 +290,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 				endActivity()
 			return
 		else:
-			addText("{sub.You} {sub.youVerb('try', 'tries')} to pull away from the doms but {sub.youVerb('fail')}.")
+			addText("{sub.You} {sub.youVerb('try', 'tries')}, чтобы отстраниться от доминантов, но {sub.youVerb('fail')}.")
 			getDomInfo().addAnger(0.1)
 			getDomInfo(1).addAnger(0.1)
 			return
@@ -304,9 +304,9 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 			orgAmount += 1
 
 		if(orgAmount == 2):
-			addText("[b]Double orgasm![/b]")
+			addText("[b]Двойной оргазм![/b]")
 		elif(orgAmount == 3):
-			addText("[b]Triple orgasm![/b]")
+			addText("[b]Тройной оргазм![/b]")
 		
 		if(getSub().hasReachablePenis()):
 			cumInside(SUB_0, DOM_0, usedBodypart, {isRiding=true})

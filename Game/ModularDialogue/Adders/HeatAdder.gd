@@ -19,11 +19,11 @@ func canBeUsed(_id:String, _args:Dictionary, _form) -> bool:
 
 func getText(_id:String, _args:Dictionary):
 	return [
-		"Damn heat..",
-		"I hate this heat..",
-		"I can't resist this heat anymore..",
-		"Stupid heat..",
-		"I'm so fucking horny..",
-		"It's this time again..",
-		"I'm wet all the time..",
+		"Черт, ну и жара...",
+		"Ненавижу эту жару...",
+		"Я больше не могу сопротивляться этой жаре...",
+		"Чертова жара...",
+		"Как же меня, блядь, штырит...",
+		"Опять началось...",
+		"Я постоянно вся мокрая...",
 	]

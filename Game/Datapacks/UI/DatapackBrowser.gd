@@ -46,7 +46,7 @@ func _on_ModBrowser_visibility_changed():
 		downloadedMods = true
 		var error = http_request.request(baseUrl.plus_file("datapacks.json"))
 		if error != OK:
-			showAlert("[DatapackBrowser] An error occurred in the HTTP request.")
+			showAlert("[DatapackBrowser] Произошла ошибка при HTTP-запросе.")
 
 func resetMods():
 	selectedDatapackIndex = -1
@@ -71,12 +71,12 @@ func updateModList(datapacksArray = allDatapacks):
 
 func _on_HTTPRequest_request_completed(result, _response_code, _headers, body):
 	if result != HTTPRequest.RESULT_SUCCESS:
-		showAlert("[DatapackBrowser] Couldn't download mods data from github")
+		showAlert("[DatapackBrowser] Не удалось скачать данные модов с GitHub.")
 		return
 	
 	var jsonResult = JSON.parse(body.get_string_from_utf8())
 	if(jsonResult.error != OK):
-		showAlert("[DatapackBrowser] Couldn't parse json data from github.")
+		showAlert("[DatapackBrowser] Не удалось распарсить JSON-данные с GitHub.")
 		return
 	
 	var modsData = jsonResult.result
@@ -215,7 +215,7 @@ func _on_DownloadModButton_pressed():
 	http_request_mod.download_file = GlobalRegistry.getDatapacksFolder().plus_file(fileName)
 	var error = http_request_mod.request(baseUrl.plus_file(pickedModEntry["download"]))
 	if error != OK:
-		showAlert("[DatapackBrowser] An error occurred in the HTTP request.")
+		showAlert("[DatapackBrowser] Произошла ошибка при HTTP-запросе.")
 	else:
 		Log.print("Downloading datapack: "+str(pickedModEntry.download))
 
@@ -224,7 +224,7 @@ func _on_HTTPRequestMod_request_completed(result, _response_code, _headers, _bod
 	downloadingContainer.visible = false
 
 	if result != HTTPRequest.RESULT_SUCCESS:
-		showAlert("[DatapackBrowser] Couldn't download datapack. Sorry")
+		showAlert("[DatapackBrowser] Не удалось скачать датапак. Простите.")
 		return
 	
 	Log.print("Datapack downloaded")

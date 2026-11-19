@@ -142,7 +142,7 @@ func updateLeftPanel():
 	var i = 0
 	for stateID in states:
 		if(stateID == ""):
-			statesList.add_item("-INITIAL STATE-")
+			statesList.add_item("-НАЧАЛЬНОЕ СОСТОЯНИЕ-")
 		else:
 			statesList.add_item(stateID)
 		if(selectedState == stateID):
@@ -206,18 +206,18 @@ func _on_WindowAddButton_pressed():
 
 
 func _on_AddStateButton_pressed():
-	showAddDialog("addState", "Adding a new state")
+	showAddDialog("addState", "Добавление нового состояния")
 
 
 func _on_AddDomButton_pressed():
 	# Check if a state is selected
 	if(states.has(selectedState)):
-		showAddDialog("addDomAction", "Adding a new dom action")
+		showAddDialog("addDomAction", "Добавление новой доминантной действия")
 
 
 func _on_AddSubButton_pressed():
 	if(states.has(selectedState)):
-		showAddDialog("addSubAction", "Adding a new sub aciton")
+		showAddDialog("addSubAction", "Добавление новой сабмиссивной действия")
 
 
 func getCurrentAction():
@@ -277,11 +277,11 @@ func updateRightPanel():
 	
 	if(currentlyEditing == "domAction"):
 		$VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer/ActionPropertiesList.visible = true
-		$VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer/ActionPropertiesList/Label.text = "Editing '"+str(getCurrentActionID())+"' dom action"
+		$VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer/ActionPropertiesList/Label.text = "Editing '"+str(getCurrentActionID())+"доминантное действие"
 	
 	if(currentlyEditing == "subAction"):
 		$VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer/ActionPropertiesList.visible = true
-		$VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer/ActionPropertiesList/Label.text = "Editing '"+str(getCurrentActionID())+"' sub action"
+		$VBoxContainer/HBoxContainer/ScrollContainer/VBoxContainer/ActionPropertiesList/Label.text = "Editing '"+str(getCurrentActionID())+"сабмиссивное действие"
 	
 	if(currentlyEditing in ["domAction", "subAction"]):
 		var theAction = getCurrentAction()
@@ -303,7 +303,7 @@ func createNewAction():
 		conditions = [],
 		actions = [],
 		name = "Новое действие",
-		desc = "Change the description",
+		desc = "Изменить описание",
 		score = "1.0",
 		chance = "",
 	}
@@ -325,23 +325,23 @@ func createNewState():
 func getActionProperties():
 	return {
 		"priority": {
-			"text": "Priority",
+			"text": "Приоритет",
 			"type": "number",
 		},
 		"name": {
-			"text": "Name",
+			"text": "Имя",
 			"type": "string",
 		},
 		"desc": {
-			"text": "Description",
+			"text": "Описание",
 			"type": "string",
 		},
 		"score": {
-			"text": "Score",
+			"text": "Очки",
 			"type": "string",
 		},
 		"chance": {
-			"text": "Chance",
+			"text": "Шанс",
 			"type": "string",
 		},
 	}
@@ -352,7 +352,7 @@ func getStateProperties():
 
 var sexActivityProperties = {
 	"id": "new_sex_action",
-	"name": "New sex action",
+	"name": "Новое секс-действие",
 	"startActions": [],
 	"startConditions": [],
 	"category": "return [\"Fuck\"]",
@@ -367,25 +367,25 @@ func getSexActivityProperties():
 			"type": "string",
 		},
 		"name": {
-			"text": "Name",
+			"text": "Имя",
 			"type": "string",
 		},
 		"category": {
-			"text": "Category",
+			"text": "Категория",
 			"type": "string",
 		},
 		"goals": {
-			"text": "Goals",
+			"text": "Цели",
 			"type": "fetishesWithNumbers",
 			"goals": true,
 		},
 		"domTags": {
-			"text": "Dom tags",
+			"text": "Теги доминанта",
 			"type": "tags",
 			"tags": SexActivityTag.getAllStrings(),
 		},
 		"subTags": {
-			"text": "Sub tags",
+			"text": "Теги сабмиссива",
 			"type": "tags",
 			"tags": SexActivityTag.getAllStrings(),
 		},

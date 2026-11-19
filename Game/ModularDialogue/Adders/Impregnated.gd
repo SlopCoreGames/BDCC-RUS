@@ -33,13 +33,13 @@ func canBeUsed(_id:String, _args:Dictionary, _form) -> bool:
 func getText(_id:String, _args:Dictionary):
 	if(_id == "AttackReact"):
 		return [
-			"You've bred me.. and now you're doing this?..",
-			"You've impregnated me.. and now you're doing this?..",
-			"I'm carrying your litter, you know!",
-			"You're gonna hit me while I have your litter?",
+			"Ты меня осеменил... и теперь ты вот так поступаешь?..",
+			"Ты заставил меня забеременеть... и теперь ты творишь это?..",
+			"Ты хоть понимаешь, что я ношу в себе твое отродье?!",
+			"Ты собрался бить меня, когда я беременна твоим выводком?",
 		]
 	return [
-		"That's for breeding me.",
-		"That's what you get for breeding me, you fuck.",
-		"That's what you get for impregnating me.",
+		"Это тебе за то, что ты меня осеменил.",
+		"Так тебе и надо за то, что ты меня трахнул и засадил, ублюдок.",
+		"Это тебе за то, что ты заставил меня забеременеть.",
 	]

@@ -403,8 +403,8 @@ func generateGoals():
 			generatedAnyGoals = true
 
 	if(!isDom("pc") && !generatedAnyGoals && !doms.empty() && !pcControlsDoms):
-		addTextRaw("Dom couldn't decide what to do with the sub, none of their fetishes apply.")
-		talkText(RNG.pick(doms), "You are a lucky slut.")
+		addTextRaw("Дом не мог решить, что делать с сабом — ни один из их фетишей не подходил.")
+		talkText(RNG.pick(doms), "Ты везучая шлюшка.")
 
 func checkIfDomsNeedMoreGoals():
 	if(!shouldDomsKeepGeneratingTasks()):
@@ -637,7 +637,7 @@ func processTurn():
 		var domInfo:SexDomInfo = doms[domID]
 		
 		if(domInfo.checkIsDown()):
-			addText("{dom.You} can't continue anymore!", domID, domID)
+			addText("{dom.You} больше не может продолжать!", domID, domID)
 			
 			stopActivitiesThatInvolveCharID(domID)
 			#endSex()
@@ -795,7 +795,7 @@ func start():
 		processAIActions(false)
 		processTurn()
 	else:
-		addTextRaw("You are a dom so you can choose what you wanna do with the sub.")
+		addTextRaw("Ты — домина, так что можешь выбирать, что делать с сабом.")
 
 func getActionsForCharID(_charID:String, isForMenu:bool = false) -> Array:
 	var result:Array = []
@@ -816,7 +816,7 @@ func getActionsForCharID(_charID:String, isForMenu:bool = false) -> Array:
 		result.append({
 			id = "obey",
 			name = "OBEY",
-			desc = "You have lost control of your body..",
+			desc = "Ты теряешь контроль над своим телом...",
 			priority = 999,
 			user = _charID,
 		})
@@ -826,7 +826,7 @@ func getActionsForCharID(_charID:String, isForMenu:bool = false) -> Array:
 		result.append({
 			id = "continue",
 			name = "Продолжить",
-			desc = "Just continue doing what you're doing",
+			desc = "Просто продолжай делать то же самое",
 			priority = 999,
 			user = _charID,
 		})
@@ -845,7 +845,7 @@ func getActionsForCharID(_charID:String, isForMenu:bool = false) -> Array:
 				result.append({
 					id = "dynamicLeave",
 					name = "Уйти",
-					desc = "Leave the scene",
+					desc = "Покинуть сцену",
 					score = 1.0,
 					priority = 0,
 					user = _charID,
@@ -861,8 +861,8 @@ func getActionsForCharID(_charID:String, isForMenu:bool = false) -> Array:
 				result.append({
 					id = "action",
 					activityID = activity.uniqueID,
-					name = actionEntry["name"] if actionEntry.has("name") else "UNNAMMED ACTION",
-					desc = actionEntry["desc"] if actionEntry.has("desc") else "Do this action.",
+					name = actionEntry["name"] if actionEntry.has("name") else "БЕЗНАЗВАТЕЛЬНОЕ ДЕЙСТВИЕ",
+					desc = actionEntry["desc"] if actionEntry.has("desc") else "Выполнить это действие.",
 					score = actionEntry["score"] if actionEntry.has("score") else 0.0,
 					chance = actionEntry["chance"] if actionEntry.has("chance") else null,
 					category = actionEntry["category"] if actionEntry.has("category") else [],
@@ -877,8 +877,8 @@ func getActionsForCharID(_charID:String, isForMenu:bool = false) -> Array:
 					result.append({
 						id = "joinAction",
 						activityID = activity.uniqueID,
-						name = actionEntry["name"] if actionEntry.has("name") else "UNNAMMED ACTION",
-						desc = actionEntry["desc"] if actionEntry.has("desc") else "Do this action.",
+						name = actionEntry["name"] if actionEntry.has("name") else "БЕЗНАЗВАТЕЛЬНОЕ ДЕЙСТВИЕ",
+						desc = actionEntry["desc"] if actionEntry.has("desc") else "Выполнить это действие.",
 						score = actionEntry["score"] if actionEntry.has("score") else 0.0,
 						chance = actionEntry["chance"] if actionEntry.has("chance") else null,
 						category = actionEntry["category"] if actionEntry.has("category") else [],
@@ -938,12 +938,12 @@ func getActionsForCharID(_charID:String, isForMenu:bool = false) -> Array:
 				result.append({
 					id = "start",
 					activityID = possibleSexActivityID,
-					name = actionEntry["name"] if actionEntry.has("name") else "Unnammed activity",
+					name = actionEntry["name"] if actionEntry.has("name") else "Безымянное действие",
 					category = actionEntry["category"] if actionEntry.has("category") else [],
 					target = otherCharID,
 					args = actionEntry["args"] if actionEntry.has("args") else [],
 					chance = actionEntry["chance"] if actionEntry.has("chance") else null,
-					desc = actionEntry["desc"] if actionEntry.has("desc") else "Start new activity.",
+					desc = actionEntry["desc"] if actionEntry.has("desc") else "Начать новое действие.",
 					priority = actionEntry["category"] if actionEntry.has("priority") else 0,
 					score = actionEntry["score"] if actionEntry.has("score") else 0.0,
 					user = _charID,
@@ -1192,7 +1192,7 @@ func keepItemsAfterSex(onlyAlwaysKept:bool = false):
 					restraintData.onStruggleRemoval()
 			
 				GM.pc.getInventory().addItem(item)
-				GM.main.addMessage("You recovered "+item.getAStackName())
+				GM.main.addMessage("Вы восстановились "+item.getAStackName())
 			else:
 				newPCTracked.append(trackedItem)
 				
@@ -1595,7 +1595,7 @@ func removeDynamicJoiner(_charID:String):
 	stopActivitiesThatInvolveCharID(_charID)
 	doms.erase(_charID)
 	
-	addTextRaw("[b]Dominant leaves.[/b] "+theCharacter.getName()+" has left.")
+	addTextRaw("[b]Доминант уходит.[/b] "+theCharacter.getName()+" покинул(а) сцену.")
 
 func addDynamicDomParticipant(_charID:String):
 	if(doms.has(_charID) || subs.has(_charID)):
@@ -1606,7 +1606,7 @@ func addDynamicDomParticipant(_charID:String):
 	doms[_charID] = domInfo
 	checkRevealedFor(_charID)
 	generateGoalsFor(_charID, 2)
-	addTextRaw("[b]NEW DOMINANT![/b] "+domInfo.getChar().getName()+" joins in on the fun.")
+	addTextRaw("[b]НОВЫЙ ДОМИНАНТ![/b] "+domInfo.getChar().getName()+" присоединяется к веселью.")
 	participatedDoms[_charID] = true
 	if(GM.main):
 		if(_charID != "pc" && GM.main.IS.hasPawn(_charID)):
@@ -1741,7 +1741,7 @@ func canEndSexAnyTime() -> bool:
 
 func notifyBigEggGotFertilizedFor(_char:BaseCharacter, _eggCell:EggCell):
 	var theEggName:String = EggLaid.getANameByEggType(_eggCell.bigEggType)
-	addTextRaw("[b]"+theEggName+" got fertilized![/b]")
+	addTextRaw("[b]"+theEggName+" была оплодотворена![/b]")
 
 func saveData():
 	var data = {

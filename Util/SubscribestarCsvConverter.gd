@@ -48,11 +48,11 @@ func _on_Button2_pressed():
 	var dateDict = OS.get_date()
 	var dateStr = Util.dateToString(dateDict)
 	
-	var newText = "[center][b][url=https://subscribestar.adult/rahi]SubscribeStar[/url][/b]\nCompiled "+str(dateStr)+"\n\n"
+	var newText = "[center][b][url=https://subscribestar.adult/rahi]Подписаться на звезду[/url][/b]\nСкомпилировано "+str(dateStr)+"\n\n"
 	
 	for entry in getData():
 		newText += entry["nickname"]+" - "+entry["gross"]+"\n"
-	newText += "\nThank you [color=red]<3[/color][/center]"
+	newText += "\nСпасибо, [color=red]<3[/color][/center]"
 	
 	$VBoxContainer/TextEdit2.text = newText
 

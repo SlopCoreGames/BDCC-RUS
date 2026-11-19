@@ -111,7 +111,7 @@ func buildMap():
 		
 		GM.world.addRoom(DrugDenFloor, roomID, pos, {
 			name = "Притон",
-			desc = "The tunnel is dimly lit by the flickering emergency lights. Crumpled rags, used syringes, and shattered glass litter the floor, crunching softly underfoot. The air is thick - stale with sweat, smoke, and something sickly sweet that clings to your throat. Distant echoes bounce through the tunnels - low murmurs, the occasional rustling, maybe even a quiet, breathy laugh.",
+			desc = "Тоннель тускло освещен мерцающими аварийными огнями. Пол усеян скомканной ветошью, использованными шприцами и осколками стекла, которые мягко хрустят под ногами. Воздух тяжелый — застоявшийся, пропитанный потом, дымом и чем-то приторно-сладким, что липнет к горлу. В тоннелях отдаются эхом звуки: низкий ропот, случайный шорох или даже чей-то тихий, прерывистый смешок.",
 			icon = theIcon,
 			canW = roomInfo["canW"],
 			canE = roomInfo["canE"],
@@ -174,7 +174,7 @@ func endRun():
 		if(theItem.hasTag(ItemTag.KeptAfterDrugDenRun) || keepAll):
 			drugDenChar.getInventory().addItem(theItem)
 			if(!keepAll):
-				addMessage("You managed to keep "+str(theItem.getAStackName())+"!")
+				addMessage("Тебе удалось сохранить "+str(theItem.getAStackName())+"!")
 		
 	transferAllItems(drugDenChar, GM.pc)
 	
@@ -189,7 +189,7 @@ func endRun():
 		theEvent.onRunEnd(self)
 	
 	if(checkSetNewHighestLevelReached()):
-		addMessage("Your highest reached Drug Den level is now "+str(level)+"!")
+		addMessage("Твой максимальный уровеньнаркопритона теперь "+str(level)+"!")
 
 func nextLevel():
 	level += 1
@@ -208,7 +208,7 @@ func nextLevel():
 	buildMap()
 	GM.pc.setLocation(startLevelRoom)
 	
-	addMessage("You reached Drug Den level "+str(level))
+	addMessage("Ты достиг уровня наркопритона "+str(level))
 
 func addMessage(theText:String):
 	GM.main.addMessage(theText)

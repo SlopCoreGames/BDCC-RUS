@@ -8,8 +8,8 @@ func _init():
 	startedByDom = true
 	startedBySub = false
 	
-	activityName = "Wear penis pump on sub"
-	activityDesc = "Put a penis pump on them"
+	activityName = "Надеть на подчиненную помпу для пениса"
+	activityDesc = "Надеть на неё помпу для пениса"
 	activityCategory = ["Wear"]
 
 func getGoals():
@@ -96,12 +96,12 @@ func milkingSub_processTurn():
 	
 	timesMilked += 1
 	addTextPick([
-		"The penis pump stimulates {sub.your} {sub.penis}.",
-		"The penis pump stimulates {sub.your} {sub.penis}.",
-		"The penis pump strokes {sub.your} {sub.penis}.",
-		"The penis pump strokes {sub.your} {sub.penis}.",
-		"The penis pump pleasures {sub.your} {sub.penis}.",
-		"Pleasure ring of the penis pump strokes {sub.your} {sub.penis}.",
+		"Помпа стимулирует {sub.your} {sub.penis}.",
+		"Помпа стимулирует {sub.your} {sub.penis}.",
+		"Помпа ласкает {sub.your} {sub.penis}.",
+		"Помпа ласкает {sub.your} {sub.penis}.",
+		"Помпа доставляет удовольствие {sub.your} {sub.penis}.",
+		"Кольцо на помпе ласкает {sub.your} {sub.penis}.",
 	])
 	
 	fetishAffect(SUB_0, Fetish.SeedMilking)
@@ -111,16 +111,16 @@ func milkingSub_processTurn():
 func getActions(_indx:int):
 	if(_indx == DOM_0):
 		if(state in ["milkingSub"]):
-			addAction("stopMilking", (0.1 if timesMilked > 15 else 0.0), "Stop seed-milking sub", "Take off the penis pump from them")
+			addAction("stopMilking", (0.1 if timesMilked > 15 else 0.0), "Прекратить доить семя из подчиненной", "Снять с неё помпу для пениса")
 	
 	if(_indx == SUB_0):
-		addAction("moo", fetish(SUB_0, Fetish.Lactation)*0.3, "Moo", "Do the cute noise")
+		addAction("moo", fetish(SUB_0, Fetish.Lactation)*0.3, "Мууу", "Издавать милые звуки")
 		if(isReadyToCumHandled(SUB_0)):
-			addAction("cum", 1.0, "Cum!", "You're gonna cum.", {A_PRIORITY: 1001})
+			addAction("cum", 1.0, "Кончай!", "Ты сейчас кончишь.", {A_PRIORITY: 1001})
 
 func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "stopMilking"):
-		addText("{dom.You} {dom.youVerb('take')} off the pump from {sub.your} cock!")
+		addText("{dom.You} {dom.youVerb('take')} насос с {sub.your} члена!")
 		
 		var pumpItem = getSub().getInventory().getEquippedItemByUniqueID(pumpID)
 		if(pumpItem != null):
@@ -143,10 +143,10 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		if(getSub().isGagged()):
 			muffled = " muffled"
 		addTextPick([
-			"{sub.You} {sub.youVerb('produce')} a cute"+muffled+" moo noise.",
-			"{sub.You} {sub.youVerb('imitate')} a cute"+muffled+" cow moo.",
-			"{sub.You} {sub.youVerb('moo')} while {sub.yourHis} {sub.penis} is being milked.",
-			"{sub.You} {sub.youVerb('moo')} while a penis pump strokes {sub.yourHis} cock.."
+			"{sub.You} {sub.youVerb('produce')} милое"+muffled+" мычание.",
+			"{sub.You} {sub.youVerb('imitate')} милое"+muffled+" коровье «му».",
+			"{sub.You} {sub.youVerb('moo')} пока {sub.yourHis} {sub.penis} доят.",
+			"{sub.You} {sub.youVerb('moo')} пока пенисный насос ласкает {sub.yourHis} член.."
 		])
 		moan(SUB_0, SexReaction.SubMoos)
 		return

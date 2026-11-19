@@ -18,8 +18,8 @@ func _init():
 	aboutToRideReaction = SexReaction.AboutToRideAnal
 	isVag = false
 	
-	activityName = "Cowgirl Anal"
-	activityDesc = "Begin to ride them with your ass!"
+	activityName = "Анальный наездница"
+	activityDesc = "Начни скакать на них своей задницей!"
 	
 func getGoals():
 	if(currentPose == POSE_COWGIRLCHOKE):

@@ -13,7 +13,7 @@ func getName() -> String:
 	return "ЗАПОЛНИ МЕНЯ"
 
 func getDesc() -> String:
-	return "FILL MEEEE"
+	return "ЗАПОЛНИ МЕНЯ"
 
 func setEnabled(_e:bool):
 	enabled = _e
@@ -72,7 +72,7 @@ func applySetting(_varid:String, _value):
 	return false # If true, the whole panel refreshes
 
 func getActions() -> Array:
-	return [["rescan", "Rescan for toys"]]
+	return [["rescan", "Пересканировать игрушки"]]
 
 func doAction(_id:String):
 	#if(!isEnabledActually()):

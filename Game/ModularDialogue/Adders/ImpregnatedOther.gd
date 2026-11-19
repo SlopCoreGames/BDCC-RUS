@@ -33,40 +33,40 @@ func canBeUsed(_id:String, _args:Dictionary, _form) -> bool:
 func getText(_id:String, _args:Dictionary):
 	if(_id == "AttackStart"):
 		return [
-			"I don't care that I got you pregnant.",
+			"Мне плевать, что я залетел в тебя.",
 		]
 	if(_id == "GuardFrisk"):
 		return [
-			"Hope our kids will turn out okay by the way.. unlike their mother.",
+			"Надеюсь, наши дети вырастут нормальными... в отличие от их мамаши.",
 		]
 	if(_id == "ReactGETTING_FUCKED"):
 		return [
-			"I'm so glad that I got you pregnant first!",
-			"I got this slut pregnant first!",
+			"Как же я рад, что засадил в тебя первым!",
+			"Я засадил эту шлюху первой!",
 		]
 	if(_id == "ReactCOVERED_IN_CUM"):
 		return [
-			"Carrying my litter and still acting so slutty..",
+			"Носит моё отродье, а всё равно ведет себя как последняя шлюха...",
 		]
 	if(_id == "HelpRestraintsAgree"):
 		return [
-			"Hope the kids are okay, by the way..",
+			"Надеюсь, с детьми всё будет в порядке, кстати...",
 		]
 	if(_id == "SlutwallAddTip"):
 		return [
-			"Buy our future kids something with this.",
+			"Купи что-нибудь нашим будущим детям на эти деньги.",
 		]
 	if(_id == "ProstitutionOffer"):
 		return [
-			"Oh, you're working with my litter in you. What a slut..",
+			"О, ты всё работаешь, пока внутри тебя моё отродье. Ну и шлюха...",
 		]
 	if(_id == "AskKeyGive"):
 		return [
-			"Might as well help since I put that litter in you.",
+			"Пожалуй, помогу, раз уж я засадил в тебя целую ораву.",
 		]
 	if(_id in ["PunishAboutToStocks", "TalkSexOfferAccept"]):
 		return [
-			"Careful with the belly, it's mine after all.",
+			"С животом поосторожнее, в конце концов, он мой.",
 		]
 	return [
 	]

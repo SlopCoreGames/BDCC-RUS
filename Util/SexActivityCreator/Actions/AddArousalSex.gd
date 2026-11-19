@@ -18,24 +18,24 @@ func getArgs():
 		"who": {
 			"type": "dropdown",
 			"value": who,
-			"text": "Who",
+			"text": "Кто",
 			"values": [
-				["domInfo", "Dom"],
-				["subInfo", "Sub"],
+				["domInfo", "Доминант"],
+				["subInfo", "Сабмиссив"],
 			],
 		},
 		"howMuch": {
 			"type": "string",
 			"value": howMuch,
-			"text": "How much",
+			"text": "Сколько?",
 		},
 		"sexOrForeplay": {
 			"type": "dropdown",
 			"value": sexOrForeplay,
-			"text": "Sex or Foreplay",
+			"text": "Секс или прелюдия",
 			"values": [
-				["Sex", "Sex"],
-				["Foreplay", "Foreplay"],
+				["Sex", "Секс"],
+				["Foreplay", "Прелюдия"],
 			],
 		},
 	}

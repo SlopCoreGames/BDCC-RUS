@@ -172,12 +172,12 @@ func getCooldown() -> int:
 
 func getInteractInfo() -> Dictionary:
 	return {
-		text = "Вы замечаете кое-что интересное..\n\n"+stashDesc+"\n\nDo you wanna try to loot it?",
+		text = "Вы замечаете кое-что интересное..\n\n"+stashDesc+"\n\nХочешь попробовать его обшарить?",
 		actions = [
 			{
 				id = "loot",
 				name = "Обыскать",
-				desc = "See if you can find some helpful stuff!",
+				desc = "Посмотри, вдруг удастся найти что-нибудь полезное!",
 				args = [],
 				disabled = false,
 			},
@@ -203,7 +203,7 @@ func doInteract(_actionID:String, _args:Array = []) -> Dictionary:
 			GM.pc.getInventory().forceRestraintsWithTag(ItemTag.CanBeForcedByGuards, 2)
 			return {text=beginText+"Restraints get forced upon you!", ended=true, anim=[StageScene.Solo, "hurt"]}
 	else:
-		return {text="You check the stash for anything useful..", noLootText="Sadly, it's empty.", lootTable="junkieStash", ended=true}
+		return {text="Ты проверяешь тайник на наличие чего-нибудь полезного...", noLootText="Sadly, it's empty.", lootTable="junkieStash", ended=true}
 
 func getMapIcon():
 	return RoomStuff.RoomSprite.IMPORTANT

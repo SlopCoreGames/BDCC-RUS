@@ -54,19 +54,19 @@ func _on_NewPackConfirmationDialog_confirmed():
 	newPackID = Util.stripBadCharactersFromID(newPackID)
 	#print(newPackID)
 	if(newPackID == ""):
-		showAlert("Empty ID is not allowed")
+		showAlert("Пустой ID недопустим")
 		return
 	#showAlert(newPackID)
 	
 	if(GlobalRegistry.datapacks.has(newPackID)):
-		showAlert("Datapack with this ID already exists")
+		showAlert("Датапак с таким ID уже существует")
 		return
 	
 	var newDatapack:Datapack = Datapack.new()
 	newDatapack.id = newPackID
 	var _ok = newDatapack.saveToDisk()
 	if(!_ok):
-		showAlert("Couldn't save the datapack, sorry")
+		showAlert("Не удалось сохранить датапак, сорри")
 		return
 	GlobalRegistry.datapacks[newDatapack.id] = newDatapack
 	startEditingDatapack(newDatapack)
@@ -84,7 +84,7 @@ func onSaveDatapackPressed(_menu, datapack:Datapack):
 	
 	var _ok = datapack.saveToDisk()
 	if(!_ok):
-		showAlert("Error while saving a datapack. Sorry")
+		showAlert("Ошибка при сохранении датапака. Прости")
 	popMenu()
 	#reloadAndUpdatePacks()
 
@@ -153,7 +153,7 @@ func _on_DeleteDatapackButton_pressed():
 		datapackToDelete = datapacksList[selectedIDs[0]]
 	
 		$ConfirmDeleteDatapack.visible = true
-		$ConfirmDeleteDatapack/Label2.text = "Are you sure you want to delete the '"+str(datapackToDelete.name)+"' datapack? (id="+str(datapackToDelete.id)+")"
+		$ConfirmDeleteDatapack/Label2.text = "Вы уверены, что хотите удалить '"+str(datapackToDelete.name)+"' datapack? (id="+str(datapackToDelete.id)+")"
 
 
 func _on_ConfirmDeleteDatapack_confirmed():
@@ -161,7 +161,7 @@ func _on_ConfirmDeleteDatapack_confirmed():
 		if(GlobalRegistry.deleteDatapack(datapackToDelete.id)):
 			reloadAndUpdatePacks()
 		else:
-			showAlert("Failed to delete the datapack. Sorry")
+			showAlert("Не удалось удалить датапак. Сорян")
 		datapackToDelete = null
 
 
@@ -176,7 +176,7 @@ func _on_DatapackItemList_item_selected(index):
 
 func _on_DatapackFolderButton_pressed():
 	if(OS.get_name() == "Android"):
-		showAlert("Datapacks on android are loaded from \"Documents/BDCCMods/Datapacks\"\nCreate that folder if it doesn't exist.")
+		showAlert("На Android датапаки загружаются из \"Documents/BDCCMods/Datapacks\"\nСоздайте эту папку, если её нет.")
 	else:
 		var _ok = Util.fixed_shell_open(ProjectSettings.globalize_path("user://datapacks"))
 

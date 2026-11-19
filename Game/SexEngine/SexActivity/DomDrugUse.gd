@@ -10,8 +10,8 @@ func _init():
 	startedByDom = true
 	startedBySub = false
 	
-	activityName = "Drug use"
-	activityDesc = "Use drugs"
+	activityName = "Употребление наркотиков"
+	activityDesc = "Принять наркотики"
 	activityCategory = ["Drugs/Lube"]
 
 func getGoals():
@@ -112,7 +112,7 @@ func addDrugButtons(possibleDrugsInfo:Array, _sexEngine: SexEngine, _domInfo: Se
 
 		var desc = drugInfo["desc"]
 		if(dom.isPlayer() && item != null && item.canCombine()):
-			desc = "Amount left: "+ str(dom.getInventory().getAmountOf(itemID))+"\n"+desc
+			desc = "Осталось: "+ str(dom.getInventory().getAmountOf(itemID))+"\n"+desc
 		
 		var drugFetishScore:float = 1.0
 		
@@ -125,18 +125,18 @@ func addDrugButtons(possibleDrugsInfo:Array, _sexEngine: SexEngine, _domInfo: Se
 		var drugSubcategory:Array = item.getSexEngineSubcategory() if(item != null) else []
 		if((_isCanApply || !dom.isOralBlocked()) && (!drugInfo.has("canUseOnDom") || drugInfo["canUseOnDom"])):
 			var useonselfScore:float = max(drugInfo["scoreOnSelf"], 0.0) * drugFetishScore
-			addStartAction(["useonself", itemID, _isCanApply, item], drugInfo["name"], desc, useonselfScore, {A_CATEGORY: getCategory()+["Self" if !_isCanApply else "Apply self"]+drugSubcategory})
+			addStartAction(["useonself", itemID, _isCanApply, item], drugInfo["name"], desc, useonselfScore, {A_CATEGORY: getCategory()+["Себе" if !_isCanApply else "Принять самой/самому"]+drugSubcategory})
 		if((_isCanApply || !sub.isOralBlocked()) && (!drugInfo.has("canUseOnSub") || drugInfo["canUseOnSub"])):
 			if(_subInfo.canDoActions() && _sexEngine.getSexTypeID() != SexType.SlutwallSex && !_isCanApply):
 				var offertosubScore:float = max(drugInfo["scoreOnSub"], 0.0)*(1.0 - _domInfo.getAngerScore()) * drugFetishScore
 				#print("OFFER TO SUB: "+itemID+": " +str(offertosubScore))
-				addStartAction(["offertosub", itemID, _isCanApply, item], drugInfo["name"], desc, offertosubScore, {A_CATEGORY: getCategory()+["Offer to sub"]+drugSubcategory})
+				addStartAction(["offertosub", itemID, _isCanApply, item], drugInfo["name"], desc, offertosubScore, {A_CATEGORY: getCategory()+["Предложить сабке/сабу"]+drugSubcategory})
 			
 			var forcetosubScore:float = max(drugInfo["scoreOnSub"], 0.0)*(_domInfo.getAngerScore() if !_isCanApply else 1.0) * drugFetishScore
 			#print("FORCE ON SUB: "+itemID+": " +str(forcetosubScore))
-			addStartAction(["forcetosub", itemID, _isCanApply, item], drugInfo["name"], desc, forcetosubScore, {A_CATEGORY: getCategory()+["Force on sub" if !_isCanApply else "Apply on sub"]+drugSubcategory})
+			addStartAction(["forcetosub", itemID, _isCanApply, item], drugInfo["name"], desc, forcetosubScore, {A_CATEGORY: getCategory()+["Заставить сабку/саба" if !_isCanApply else "Применить на сабке/сабе"]+drugSubcategory})
 
-func pcCanSeeText(ifcan, ifcant = "some pill"):
+func pcCanSeeText(ifcan, ifcant = "какая-нибудь таблетка"):
 	if(GM.pc.isBlindfolded()):
 		return ifcant
 	return ifcan
@@ -171,19 +171,19 @@ func startActivity(_args):
 			return
 		
 		var text = RNG.pick([
-			"{dom.You} {dom.youVerb('produce')} "+pcCanSeeText(drugInfo["usedName"])+" and {dom.youVerb('try', 'tries')} to force it into {sub.your} mouth!",
+			"{dom.You} {dom.youVerb('produce')} "+pcCanSeeText(drugInfo["usedName"])+" и {dom.youVerb('try', 'tries')}, чтобы запихнуть это прямо в рот {sub.your}!",
 		])
 		if(getSexType() == SexType.SlutwallSex):
 			text = RNG.pick([
-				"{dom.You} {dom.youVerb('produce')} "+pcCanSeeText(drugInfo["usedName"])+" and {dom.youVerb('slide')} it into {sub.your} asshole! The pill begins to dissolve inside.",
+				"{dom.You} {dom.youVerb('produce')} "+pcCanSeeText(drugInfo["usedName"])+" и {dom.youVerb('slide')} это в анус {sub.your}! Таблетка начинает растворяться внутри.",
 			])
 		if(_isCanApply):
 			text = RNG.pick([
-				"{dom.You} {dom.youVerb('produce')} "+pcCanSeeText(drugInfo["usedName"], "something")+" and {dom.youVerb('begin')} applying it on {sub.you}!",
+				"{dom.You} {dom.youVerb('produce')} "+pcCanSeeText(drugInfo["usedName"], "something")+" и {dom.youVerb('begin')}, нанося это на {sub.you}!",
 			])
 		
 		if(getSub().isPlayer() && itemID == "TFPill"):
-			text += " [color=#"+Color.cyan.to_html()+"]This pill might do something to your body[/color]"
+			text += " [color=#"+Color.cyan.to_html()+"]Эта таблетка может подействовать на твое тело[/color]"
 
 		if(_isCanApply):
 			addText(text)
@@ -218,11 +218,11 @@ func startActivity(_args):
 			return
 		
 		var text = RNG.pick([
-			"{dom.You} {dom.youVerb('produce')} "+pcCanSeeText(drugInfo["usedName"])+" and {dom.youAre} about to put it into {dom.yourHis} mouth.",
+			"{dom.You} {dom.youVerb('produce')} "+pcCanSeeText(drugInfo["usedName"])+" и {dom.youAre} вот-вот засунет её в {dom.yourHis} рот.",
 		])
 		if(_isCanApply):
 			text = RNG.pick([
-				"{dom.You} {dom.youVerb('produce')} "+pcCanSeeText(drugInfo["usedName"], "something")+" and {dom.youVerb('begin')} applying it on {dom.yourself}.",
+				"{dom.You} {dom.youVerb('produce')} "+pcCanSeeText(drugInfo["usedName"], "something")+" и {dom.youVerb('begin')} втирает её в {dom.yourself}.",
 			])
 		addText(text)
 	
@@ -244,14 +244,14 @@ func startActivity(_args):
 		var customDomSay:String = ""
 		
 		var text:String = RNG.pick([
-			"{dom.You} {dom.youVerb('produce')} "+pcCanSeeText(drugInfo["usedName"])+" and {dom.youVerb('offer')} it to {sub.you}.",
+			"{dom.You} {dom.youVerb('produce')} "+pcCanSeeText(drugInfo["usedName"])+" и {dom.youVerb('offer')} скармливает её {sub.you}.",
 		])
 		if(getSub().isBlindfolded()):
 			text += RNG.pick([
-				" {sub.YouHe} can only guess what drug that is.",
+				" {sub.YouHe} может только гадать, что это за наркотик.",
 			])
 		elif(getSub().isPlayer() && itemID == "TFPill"):
-			text += " [color=#"+Color.cyan.to_html()+"]This pill might do something to your body[/color]"
+			text += " [color=#"+Color.cyan.to_html()+"]Эта таблетка может подействовать на твое тело[/color]"
 
 			generatePillVariants(itemID)
 			if(!pillVariants.empty()):
@@ -261,13 +261,13 @@ func startActivity(_args):
 					if(tf != null):
 						var pillName:String = tf.getPillName()
 						tfNames.append("a "+pillName)
-				customDomSay = "It's either "+Util.humanReadableList(tfNames, "or")+". "
+				customDomSay = "Это либо "+Util.humanReadableList(tfNames, "or")+". "
 				customDomSay += RNG.pick([
-					"But I'm not gonna say which.",
-					"But I don't remember which.",
-					"Try your luck.",
-					"Just try it and see what happens.",
-					"C'mon, it will be fun.",
+					"Но я не скажу, какой именно.",
+					"Но я не помню, какой именно.",
+					"Испытай удачу.",
+					"Просто попробуй, и посмотрим, что будет.",
+					"Да ладно тебе, будет весело.",
 				])
 		addText(text)
 		if(customDomSay == ""):
@@ -281,7 +281,7 @@ func processTurn():
 	if(timePassed > 1):
 		endActivity()
 		if(getState() == "offering"):
-			addText("{sub.You} ignored {dom.your} offer.")
+			addText("{sub.You} проигнорировал(а) предложение {dom.your}.")
 			getDomInfo().addAnger(0.25)
 			return
 		
@@ -313,11 +313,11 @@ func processTurn():
 				satisfyGoal(drugInfo["sexgoal"])
 			
 			var text = RNG.pick([
-				"{dom.You} {dom.youVerb('force')} {sub.you} to swallow "+pcCanSeeText(drugInfo["usedName"])+"!"+pillResultText,
+				"{dom.You} {dom.youVerb('force')} {sub.you} проглотить "+pcCanSeeText(drugInfo["usedName"])+"!"+pillResultText,
 			])
 			if(getSexType() == SexType.SlutwallSex):
 				text = RNG.pick([
-					"The pill dissolves inside {sub.your} butt, it was "+pcCanSeeText(drugInfo["usedName"], "an unknown one")+"!"+pillResultText,
+					"Таблетка растворяется внутри задницы {sub.your}, это была "+pcCanSeeText(drugInfo["usedName"], "какая-то неизвестная хрень")+"!"+pillResultText,
 				])
 			if(getState() == "forcingCanApply"):
 				text = RNG.pick([
@@ -374,8 +374,8 @@ func getActions(_indx:int):
 			if(getSubInfo().shouldFullyObey()):
 				theObeyScore = 10000.0
 			var theResistScore:float = 1.0 - clamp(theObeyScore, 0.0, 1.0)
-			addAction("eatit", theObeyScore, "Take pill", "Eat the offered pill")
-			addAction("noteatit", theResistScore, "Decline pill", "You don't wanna eat that pill")
+			addAction("eatit", theObeyScore, "Принять таблетку", "Съесть предложенную таблетку")
+			addAction("noteatit", theResistScore, "Отказаться от таблетки", "Ты не хочешь глотать эту таблетку")
 		
 		if(getState() == "forcing" && getSexType() != SexType.SlutwallSex):
 			var theResistScore:float = 0.1 + getSubInfo().getResistScore()*(0.2 - getSubInfo().fetishScore({Fetish.DrugUse: 1.0}))
@@ -383,17 +383,17 @@ func getActions(_indx:int):
 			if(getSubInfo().shouldFullyObey()):
 				theResistScore = 0.0
 				theObeyScore = 10000.0
-			addAction("swallowforced", theObeyScore, "Swallow pill", "Swallow the pill in your mouth")
-			addAction("spitpillout", theResistScore, "Spit pill out", "You really don't wanna swallow that", {A_CHANCE: getSubSpitOutChance(100.0, 60.0)})
+			addAction("swallowforced", theObeyScore, "Проглотить таблетку", "Проглоти таблетку во рту")
+			addAction("spitpillout", theResistScore, "Выплюнуть таблетку", "Ты реально не хочешь это глотать", {A_CHANCE: getSubSpitOutChance(100.0, 60.0)})
 	
 		if(getState() == "forcingCanApply"):
 			var drugInfo = getDrugInfo(usedItemID, usedUniqueItemID)
-			addAction("resistForceCanApply", (1.0-max(0.0, drugInfo["scoreSubScore"])), "Stop them", "Try to prevent them from doing this to you", {A_CHANCE: getResistChance(SUB_0, DOM_0, RESIST_HANDS_FOCUS, 70.0, 30.0)})
+			addAction("resistForceCanApply", (1.0-max(0.0, drugInfo["scoreSubScore"])), "Остановить их", "Попытаться помешать им сделать это с тобой", {A_CHANCE: getResistChance(SUB_0, DOM_0, RESIST_HANDS_FOCUS, 70.0, 30.0)})
 
 		if(getState() == "domabouttotake"):
-			addAction("resistdometake", getResistScore(SUB_0), "Stop them", "Try to prevent them from taking the drug", {A_CHANCE: getResistChance(SUB_0, DOM_0, RESIST_HANDS_FOCUS, 70.0, 30.0)})
+			addAction("resistdometake", getResistScore(SUB_0), "Остановить их", "Попытаться помешать им принять наркотик", {A_CHANCE: getResistChance(SUB_0, DOM_0, RESIST_HANDS_FOCUS, 70.0, 30.0)})
 		if(getState() == "domabouttotakeCanApply"):
-			addAction("resistForceCanApply", getResistScore(SUB_0), "Stop them", "Try to prevent them from applying that thing", {A_CHANCE: getResistChance(SUB_0, DOM_0, RESIST_HANDS_FOCUS, 70.0, 30.0)})
+			addAction("resistForceCanApply", getResistScore(SUB_0), "Остановить их", "Попытаться помешать им применить эту штуку", {A_CHANCE: getResistChance(SUB_0, DOM_0, RESIST_HANDS_FOCUS, 70.0, 30.0)})
 
 func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "spitpillout"):
@@ -403,13 +403,13 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 			var drugInfo = getDrugInfo(usedItemID, usedUniqueItemID)
 			if(drugInfo.has("sexgoal")):
 				failGoal(drugInfo["sexgoal"])
-			addText("{sub.You} {sub.youVerb('manage', 'managed')} to spit the pill out!")
+			addText("{sub.You} {sub.youVerb('manage', 'managed')}, чтобы выплюнуть таблетку!")
 			reactSub(SexReaction.Resisting, [50])
 			fetishUp(SUB_0, Fetish.DrugUse, -10.0)
 			return
 		
 		getDomInfo().addAnger(0.1)
-		addText("{sub.You} {sub.youVerb('try', 'tries')} to spit the pill out but {sub.youVerb('fail')}.")
+		addText("{sub.You} {sub.youVerb('try', 'tries')}, чтобы выплюнуть таблетку, но {sub.youVerb('fail')}.")
 		fetishUp(SUB_0, Fetish.DrugUse, -20.0)
 		
 	if(_id == "noteatit"):
@@ -419,10 +419,10 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		if(drugInfo.has("sexgoal")):
 			failGoal(drugInfo["sexgoal"])
 		
-		addText("{sub.You} {sub.youVerb('refuse')} to take the offered pill.")
+		addText("{sub.You} {sub.youVerb('refuse')}, чтобы принять предложенную таблетку.")
 		if(!getDom().isPlayer() && RNG.chance(100.0 * getDomInfo().personalityScore({PersonalityStat.Impatient: 0.5, PersonalityStat.Mean: 0.2}))):
 			getDomInfo().addAnger(0.2)
-			addText("That made {dom.you} angry.")
+			addText("Это разозлило {dom.you}.")
 		reactSub(SexReaction.RefusingToSwallowDrug)
 		
 	if(_id in ["eatit", "swallowforced"]):
@@ -462,27 +462,27 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		if(RNG.chance(getResistChance(SUB_0, DOM_0, RESIST_HANDS_FOCUS, 70.0, 30.0))):
 			getDomInfo().addAnger(0.3)
 			endActivity()
-			addText("{sub.You} {sub.youVerb('manage', 'managed')} to make {dom.youHim} drop the pill, losing it!")
+			addText("{sub.You} {sub.youVerb('manage', 'managed')}, чтобы заставить {dom.youHim} выронить таблетку и потерять её!")
 			fetishUp(SUB_0, Fetish.DrugUse, -10.0)
 			return
 		
 		getDomInfo().addAnger(0.1)
 		if(usedUniqueItemID != ""):
 			getDom().getInventory().getItemByUniqueID(usedUniqueItemID).removeXOrDestroy(1)
-		addText("{sub.You} {sub.youVerb('try', 'tries')} to stop {dom.youHim} from taking the pill but {sub.youVerb('fail')}.")
+		addText("{sub.You} {sub.youVerb('try', 'tries')}, чтобы помешать {dom.youHim} принять таблетку, но при этом {sub.youVerb('fail')}.")
 		reactSub(SexReaction.Resisting, [50])
 	
 	if(_id == "resistForceCanApply"):
 		if(RNG.chance(getResistChance(SUB_0, DOM_0, RESIST_HANDS_FOCUS, 70.0, 30.0))):
 			getDomInfo().addAnger(0.3)
 			endActivity()
-			addText("{sub.You} {sub.youVerb('manage', 'managed')} to make {dom.youHim} screw up the applying process!")
+			addText("{sub.You} {sub.youVerb('manage', 'managed')}, чтобы заставить {dom.youHim} накосячить в процессе применения!")
 			return
 		
 		getDomInfo().addAnger(0.1)
 		if(usedUniqueItemID != ""):
 			getDom().getInventory().getItemByUniqueID(usedUniqueItemID).removeXOrDestroy(1)
-		addText("{sub.You} {sub.youVerb('try', 'tries')} to stop {dom.youHim} but {sub.youVerb('fail')}.")
+		addText("{sub.You} {sub.youVerb('try', 'tries')}, чтобы остановить {dom.youHim}, но при этом {sub.youVerb('fail')}.")
 		reactSub(SexReaction.Resisting, [50])
 
 func generatePillVariants(theItemID:String):

@@ -213,7 +213,7 @@ func _on_AddNewStateButton_pressed():
 	# Sanitize text here
 	
 	if(scene.states.has(newStateID)):
-		showAlert("State with this ID already exist")
+		showAlert("Состояние с таким ID уже существует")
 		return
 	
 	var newState = DatapackSceneState.new()
@@ -232,7 +232,7 @@ func _on_StatesList_item_selected(index):
 
 func _on_RemoveStateButton_pressed():
 	if(selectedStateID == ""):
-		showAlert("You can't remove the initial scene")
+		showAlert("Нельзя удалить начальную сцену")
 		return
 	if(states_list.get_selected_items().size() <= 0):
 		return
@@ -248,7 +248,7 @@ func _on_RemoveStateButton_pressed():
 	updateSelectedState()
 
 func updateSelectedState():
-	state_label.text = "Code for the '"+(selectedStateID if selectedStateID != "" else "Initial")+"' state"
+	state_label.text = "Код для '"+(selectedStateID if selectedStateID != "" else "Начальная")+"' state"
 	
 	var theState = scene.states[selectedStateID]
 	
@@ -346,10 +346,10 @@ func _on_AddVarButton_pressed():
 	var newVarName = new_var_line_edit.text
 	newVarName = Util.stripAllBadCharactersFromVarName(newVarName)
 	if(newVarName == ""):
-		showAlert("Variable name can not be empty")
+		showAlert("Имя переменной не может быть пустым")
 		return
 	if(scene.vars.has(newVarName)):
-		showAlert("Variable with this name already exists")
+		showAlert("Переменная с таким именем уже существует")
 		return
 	
 	scene.vars[newVarName] = {
@@ -380,10 +380,10 @@ func _on_AddFlagButton_pressed():
 	var newVarName = new_flag_line_edit.text
 	newVarName = Util.stripAllBadCharactersFromVarName(newVarName)
 	if(newVarName == ""):
-		showAlert("Flag name can not be empty")
+		showAlert("Название флага не может быть пустым")
 		return
 	if(datapack.flags.has(newVarName)):
-		showAlert("Flag with this name already exists")
+		showAlert("Флаг с таким названием уже существует")
 		return
 	
 	datapack.flags[newVarName] = {
@@ -449,9 +449,9 @@ func _on_FilterPossibleCharListEdit_text_changed(_new_text):
 
 func _on_SaveAllButton_pressed():
 	if(!datapack.saveToDisk()):
-		showAlert("Save failed. Sorry")
+		showAlert("Ошибка сохранения. Упс...")
 	else:
-		doOutput("Saved")
+		doOutput("Сохранено")
 
 
 onready var trigger_settings_full_list = $VBoxContainer/MarginContainer/TabContainer/Triggers/HBoxContainer/HSplitContainer/ScrollContainer/TriggerSettingsFullList
@@ -525,8 +525,8 @@ func updateSelectedTrigger():
 		value = selectedTrigger.executeType,
 		instantSet = true,
 		values = [
-			[DatapackSceneTrigger.TRIGGER_REACT, "React"],
-			[DatapackSceneTrigger.TRIGGER_RUN, "Run"],
+			[DatapackSceneTrigger.TRIGGER_REACT, "Реакция"],
+			[DatapackSceneTrigger.TRIGGER_RUN, "Бежать"],
 		]
 	})
 	updateSelectedExecuteType()
@@ -568,9 +568,9 @@ func updateSelectedTriggerType():
 
 func updateSelectedExecuteType():
 	if(selectedTrigger.executeType == DatapackSceneTrigger.TRIGGER_REACT):
-		trigger_execute_type_label.text = " (Scene will run instantly if all conditions are satisfied)"
+		trigger_execute_type_label.text = " (Сцена запустится мгновенно, если выполнены все условия)"
 	else:
-		trigger_execute_type_label.text = " (Scene execution is delayed, must add a button with a Run Event block inside)"
+		trigger_execute_type_label.text = " (Выполнение сцены отложено, нужно добавить кнопку с блоком 'Событие запуска')"
 
 func _on_TriggerTypeSelector_onValueChange(_id, newValue):
 	selectedTrigger.triggerType = newValue
@@ -632,10 +632,10 @@ func _on_AddImageButton_pressed():
 	var newID = scene_image_id_edit.text
 	newID = Util.stripAllBadCharactersFromVarName(newID)
 	if(newID == ""):
-		showAlert("Image id can not be empty")
+		showAlert("ID изображения не может быть пустым")
 		return
 	if(scene.images.has(newID)):
-		showAlert("Image with this ID already exist")
+		showAlert("Изображение с таким ID уже существует")
 		return
 	
 	var newEntry = DatapackSceneImage.new()
@@ -666,7 +666,7 @@ onready var new_name_state_edit = $VBoxContainer/MarginContainer/TabContainer/St
 
 func _on_RenameStateButton_pressed():
 	if(selectedStateID == ""):
-		showAlert("Unable to rename the initial state")
+		showAlert("Не удалось переименовать начальное состояние")
 		return
 	
 	new_name_window.popup_centered()
@@ -679,7 +679,7 @@ func _on_NewNameWindow_confirmed():
 		return
 	
 	if(scene.states.has(newName)):
-		showAlert("State with this name already exists. Unable to rename")
+		showAlert("Состояние с таким именем уже существует. Не удалось переименовать")
 		return
 	
 	if(!scene.states.has(selectedStateID)):

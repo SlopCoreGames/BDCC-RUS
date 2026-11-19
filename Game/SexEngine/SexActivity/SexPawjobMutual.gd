@@ -7,8 +7,8 @@ var canJustContinue:bool = false
 func _init():
 	id = "SexPawjobMutual"
 	
-	activityName = "Mutual pawjob"
-	activityDesc = "Humiliate the sub by making them cum with your feet/hind paws. Get some fun in return too!"
+	activityName = "Взаимный лапотрах"
+	activityDesc = "Унизьте сабмиссива, заставив его кончить вашими ступнями/задними лапами. И не забудьте получить удовольствие в ответ!"
 	activityCategory = ["Humiliate"]
 
 func getVisibleName() -> String:
@@ -62,7 +62,7 @@ func getCheckTagsSub() -> Array:
 	return [SexActivityTag.HavingSex, SexActivityTag.PenisUsed]
 
 func startActivity(_args):
-	addText("{dom.You} {dom.youVerb('pull')} {sub.you} down to the floor. {dom.YourHis} {dom.feet} are resting near {sub.your} {sub.penisShort}.")
+	addText("{dom.You} {dom.youVerb('pull')} {sub.you} опускаются на пол. {dom.YourHis} {dom.feet} покоятся рядом с {sub.your} {sub.penisShort}.")
 	
 	stimulate(DOM_0, S_LEGS, SUB_0, S_PENIS, I_TEASE, Fetish.FeetplayGiving)
 	
@@ -84,7 +84,7 @@ func processTurn():
 		getDomInfo().addAnger(0.1)
 		if(offerTime == 0):
 			getDomInfo().addAnger(0.4)
-			addText("{dom.You} gave up waiting.")
+			addText("{dom.You} надоело ждать.")
 		
 
 func pawjob_processTurn():
@@ -97,30 +97,30 @@ func pawjob_processTurn():
 
 func getActions(_indx:int):
 	if(_indx == DOM_0):
-		addAction("stop", getStopScore(), "Stop "+getVisibleName(), "Stop the fun")
+		addAction("stop", getStopScore(), "Остановить "+getVisibleName(), "Прекратить")
 		if(state == ""):
 			if(hasBodypartUncovered(SUB_0, S_PENIS) && hasBodypartUncovered(DOM_0, getDomHole())):
-				addAction("force", 1.0, "Force pawjob" if !canJustContinue else "Continue pawjob", "Make the sub pleasure you while you pleasure them.", {A_CHANCE: 30.0})
+				addAction("force", 1.0, "Принудительный лаподжоб" if !canJustContinue else "Продолжить лаподжоб", "Заставьте сабмиссива ласкать вас, пока вы ласкаете его.", {A_CHANCE: 30.0})
 			if(!canJustContinue && offerTime <= 0):
-				addAction("offer", 1.0 - getDomInfo().getAngerScore(), "Offer mutual", "Offer a mutual pawjob to the sub!")
+				addAction("offer", 1.0 - getDomInfo().getAngerScore(), "Предложить взаимность", "Предложите сабмиссиву взаимный лаподжоб!")
 		if(state == "pawjob"):
-			addAction("pause", getPauseSexScore(DOM_0, SUB_0, S_PENIS, S_LEGS) + getPauseSexScore(DOM_0, SUB_0, getDomHole()), "Pause stroking", "Pause the stroking")
+			addAction("pause", getPauseSexScore(DOM_0, SUB_0, S_PENIS, S_LEGS) + getPauseSexScore(DOM_0, SUB_0, getDomHole()), "Прекратить движения", "Приостановить ласки")
 			if(isReadyToCumHandled(DOM_0)):
-				addAction("domcum", 1.0, "Cum!", "You're about to cum", {A_PRIORITY: 1001})
+				addAction("domcum", 1.0, "Кончай!", "Ты вот-вот кончишь", {A_PRIORITY: 1001})
 		
 	if(_indx == SUB_0):
 		if(state == ""):
 			if(offerTime > 0):
-				addAction("agree", getComplyScore(SUB_0), "Agree", "Begin to do mutual fun with the dom")
-		addAction("pullaway", getResistScore(SUB_0), "Pull away", "Try to pull away", {A_CHANCE: getSubResistChance(30.0, 25.0)})
+				addAction("agree", getComplyScore(SUB_0), "Согласиться", "Начать взаимные ласки с доминантом")
+		addAction("pullaway", getResistScore(SUB_0), "Отстраниться", "Попытаться отстраниться", {A_CHANCE: getSubResistChance(30.0, 25.0)})
 		if(state == "pawjob"):
 			if(isReadyToCumHandled(SUB_0)):
-				addAction("subcum", 1.0, "Cum!", "You're about to cum", {A_PRIORITY: 1001})
+				addAction("subcum", 1.0, "Кончай!", "Ты вот-вот кончишь", {A_PRIORITY: 1001})
 
 func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "stop"):
 		endActivity()
-		addText("{dom.You} pulled away.")
+		addText("{dom.You} отстранилась.")
 		return 
 	if(_id == "force"):
 		offerTime = 0
@@ -131,27 +131,27 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		if(RNG.chance(30)):
 			state = "pawjob"
 			getSubInfo().addResistance(0.2)
-			addText("{dom.You} [b]{dom.youVerb('manage')} to force[/b] {sub.you} to start using {sub.yourHis} {sub.feet} to pleasure {dom.youHim}!")
+			addText("{dom.You} [b]{dom.youVerb('manage')} заставляет[/b] {sub.you} начать использовать {sub.yourHis} {sub.feet}, чтобы доставить удовольствие {dom.youHim}!")
 		else:
 			getSubInfo().addResistance(0.1)
-			addText("{dom.You} {dom.youVerb('try', 'tries')} to force {sub.you} to start using {sub.yourHis} {sub.feet} to pleasure {dom.youHim}.")
+			addText("{dom.You} {dom.youVerb('try', 'tries')} заставляет {sub.you} начать использовать {sub.yourHis} {sub.feet}, чтобы доставить удовольствие {dom.youHim}.")
 		return
 	if(_id == "agree"):
 		offerTime = 0
 		state = "pawjob"
 		getDomInfo().addAnger(-0.2)
 		if(getDom().hasReachablePenis()):
-			addText("{sub.You} {sub.youVerb('agree')} to the offer and {sub.youVerb('begin')} teasing {dom.your} {dom.penisShort} with {sub.yourHis} {sub.feet}.")
+			addText("{sub.You} {sub.youVerb('agree')} на предложение и {sub.youVerb('begin')} дразнит {dom.your} {dom.penisShort} с помощью {sub.yourHis} {sub.feet}.")
 		else:
-			addText("{sub.You} {sub.youVerb('agree')} to the offer and {sub.youVerb('begin')} teasing {dom.your} {pussy} with {sub.yourHis} {sub.feet}.")
+			addText("{sub.You} {sub.youVerb('agree')} на предложение и {sub.youVerb('begin')} дразнит {dom.your} {pussy} с помощью {sub.yourHis} {sub.feet}.")
 		return
 	if(_id == "offer"):
 		offerTime = 3
-		addText("{dom.You} {dom.youVerb('offer')} {sub.you} to start pleasuring each other with legs.")
+		addText("{dom.You} {dom.youVerb('offer')} {sub.you}, чтобы начать ласкать друг друга ногами.")
 		return
 	if(_id == "pause"):
 		state = ""
-		addText("{dom.You} {dom.youVerb('pause')} the action.")
+		addText("{dom.You} {dom.youVerb('pause')} действие.")
 		canJustContinue = true
 		return
 	if(_id == "pullaway"):
@@ -159,7 +159,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		addResistanceIfPlayer(_indx)
 		var successChance:float = getSubResistChance(30.0, 25.0)
 		if(RNG.chance(successChance)):
-			addText("{sub.You} {sub.youVerb('pull')} away from {dom.you}.")
+			addText("{sub.You} {sub.youVerb('pull')} от {dom.you}.")
 			getDomInfo().addAnger(0.3)
 			if(getState() != ""):
 				setState("")
@@ -168,7 +168,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 				endActivity()
 			return
 		else:
-			addText("{sub.You} {sub.youVerb('try', 'tries')} to pull away from {dom.you} but {sub.youVerb('fail')}.")
+			addText("{sub.You} {sub.youVerb('try', 'tries')} попытаться отстраниться от {dom.you}, но {sub.youVerb('fail')}.")
 			getDomInfo().addAnger(0.1)
 			return
 	if(_id == "subcum"):

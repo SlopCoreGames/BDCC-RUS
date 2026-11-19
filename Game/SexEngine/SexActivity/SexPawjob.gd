@@ -5,8 +5,8 @@ var isThrusting:bool = false
 func _init():
 	id = "SexPawjob"
 	
-	activityName = "Pawjob"
-	activityDesc = "Humiliate the sub by making them cum with your feet/hind paws"
+	activityName = "Павджоб"
+	activityDesc = "Унизить сабмиссива, заставив его кончить твоими ступнями/задними лапами"
 	activityCategory = ["Humiliate"]
 
 func getVisibleName() -> String:
@@ -56,7 +56,7 @@ func getCheckTagsSub() -> Array:
 	return [SexActivityTag.HavingSex, SexActivityTag.PenisUsed]
 
 func startActivity(_args):
-	addText("{dom.You} {dom.youVerb('sit')} down and {dom.youVerb('reach', 'reaches')} {dom.yourHis} {dom.feet} out towards {sub.your} crotch!")
+	addText("{dom.You} {dom.youVerb('sit')} вниз и {dom.youVerb('reach', 'reaches')} {dom.yourHis} {dom.feet} к {sub.your} паху!")
 	
 	stimulate(DOM_0, S_LEGS, SUB_0, S_PENIS, I_TEASE, Fetish.FeetplayGiving)
 	
@@ -69,8 +69,8 @@ func pawjob_processTurn():
 	stimulateRubWithFoot(DOM_0, SUB_0, S_PENIS, I_NORMAL, SPEED_SLOW if !isThrusting else SPEED_MEDIUM)
 	if(isThrusting):
 		addTextPick([
-			"{sub.You} {sub.youVerb('thrust')} {sub.yourHis} {sub.penisType} between the {dom.feet}.",
-			"{sub.You} eagerly {sub.youVerb('thrust')} {sub.yourHis} {sub.penisType} between the {dom.feet}.",
+			"{sub.You} {sub.youVerb('thrust')} {sub.yourHis} {sub.penisType} между {dom.feet}.",
+			"{sub.You} жадно {sub.youVerb('thrust')} {sub.yourHis} {sub.penisType} между {dom.feet}.",
 		])
 	rubWithFeet(DOM_0, SUB_0, S_PENIS)
 	react(SexReaction.PawjobHappens, [20, 10])
@@ -78,35 +78,35 @@ func pawjob_processTurn():
 	
 func getActions(_indx:int):
 	if(_indx == DOM_0):
-		addAction("stop", getStopScore(), "Stop "+getVisibleName(), "Stop the humiliation")
+		addAction("stop", getStopScore(), "Остановить "+getVisibleName(), "Прекратить унижение")
 		
 		if(state == ""):
 			if(hasBodypartUncovered(SUB_0, S_PENIS)):
-				addAction("stroke", getContinueSexScore(DOM_0, SUB_0, S_PENIS, S_LEGS), "Stroke cock", "Begin stroking the sub's penis with your feet/hind paws")
+				addAction("stroke", getContinueSexScore(DOM_0, SUB_0, S_PENIS, S_LEGS), "Ласкать член", "Начать ласкать член сабмиссива ступнями/задними лапами")
 		if(state == "pawjob"):
-			addAction("pause", getPauseSexScore(DOM_0, SUB_0, S_PENIS, S_LEGS), "Pause stroking", "Pause the stroking")
-			addAction("rubballs", 0.1, "Rub balls", "Rub the sub's balls with your feet!")
-			addAction("squeeze", getDomInfo().getSadisticActionStore(), "Squeeze cock!", "Painfully squeeze that cock between your feet")
+			addAction("pause", getPauseSexScore(DOM_0, SUB_0, S_PENIS, S_LEGS), "Прекратить движения", "Приостановить ласки")
+			addAction("rubballs", 0.1, "Теребить яички", "Теребить яички сабмиссива ступнями!")
+			addAction("squeeze", getDomInfo().getSadisticActionStore(), "Сжимай член!", "Болезненно сжимай этот член между своими ступнями")
 			
 	if(_indx == SUB_0):
-		addAction("pullaway", getSubInfo().getResistScore(), "Pull away", "Try to pull away", {A_CHANCE: getSubResistChance(30.0, 25.0)})
+		addAction("pullaway", getSubInfo().getResistScore(), "Отстраниться", "Попытаться отстраниться", {A_CHANCE: getSubResistChance(30.0, 25.0)})
 		if(state == "pawjob"):
 			if(isReadyToCumHandled(SUB_0)):
-				addAction("subcum", 1.0, "Cum!", "You're about to cum", {A_PRIORITY: 1001})
+				addAction("subcum", 1.0, "Кончай!", "Ты вот-вот кончишь", {A_PRIORITY: 1001})
 			if(!isThrusting):
-				addAction("subthrust", fetish(SUB_0, Fetish.FeetplayReceiving)*0.5, "Thrust!", "Begin thrusting your cock between their legs.")
+				addAction("subthrust", fetish(SUB_0, Fetish.FeetplayReceiving)*0.5, "Толчок!", "Начни двигать членом между их ног.")
 		
 func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "stop"):
 		endActivity()
-		addText("{dom.You} pulled {dom.yourHis} legs away.")
+		addText("{dom.You} оттянул(а) {dom.yourHis} ноги в сторону.")
 		return 
 	if(_id == "stroke"):
 		state = "pawjob"
-		addText("{dom.You} gently {dom.youVerb('wrap')} {dom.yourHis} {dom.feet} around {sub.yourHis} member.")
+		addText("{dom.You} нежно {dom.youVerb('wrap')} {dom.yourHis} {dom.feet} вокруг {sub.yourHis} члена.")
 		return
 	if(_id == "squeeze"):
-		addText("{dom.You} suddenly {dom.youVerb('close')} {dom.yourHis} {dom.feet} around {sub.yourHis} {sub.penisShort}, [b]squeezing it hard[/b]!")
+		addText("{dom.You} внезапно {dom.youVerb('close')} {dom.yourHis} {dom.feet} вокруг {sub.yourHis} {sub.penisShort}, [b]сильно сжимая его[/b]!")
 		strike(DOM_0, SUB_0, STRIKE_NORMAL)
 		# ow ow
 		return
@@ -119,7 +119,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "pause"):
 		state = ""
 		isThrusting = false
-		addText("{dom.You} {dom.youVerb('decide')} to take a pause.")
+		addText("{dom.You} {dom.youVerb('decide')}, чтобы сделать перерыв.")
 		return
 	
 	if(_id == "subcum"):
@@ -131,14 +131,14 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		return
 	if(_id == "subthrust"):
 		isThrusting = true
-		addText("{sub.You} {sub.youVerb('begin', 'began')} thrusting {sub.yourHis} hips forward!")
+		addText("{sub.You} {sub.youVerb('begin', 'began')}, толкая {sub.yourHis} бедра вперед!")
 		return
 		
 	if(_id == "pullaway"):
 		addResistanceIfPlayer(_indx)
 		var successChance:float = getSubResistChance(30.0, 25.0)
 		if(RNG.chance(successChance)):
-			addText("{sub.You} {sub.youVerb('pull')} away from {dom.you}.")
+			addText("{sub.You} {sub.youVerb('pull')} от {dom.you}.")
 			getDomInfo().addAnger(0.3)
 			if(getState() != ""):
 				setState("")
@@ -146,7 +146,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 				endActivity()
 			return
 		else:
-			addText("{sub.You} {sub.youVerb('try', 'tries')} to pull away from {dom.you} but {sub.youVerb('fail')}.")
+			addText("{sub.You} {sub.youVerb('try', 'tries')} попытаться отстраниться от {dom.you}, но {sub.youVerb('fail')}.")
 			getDomInfo().addAnger(0.1)
 			return
 			

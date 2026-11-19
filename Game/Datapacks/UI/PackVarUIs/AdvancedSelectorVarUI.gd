@@ -19,7 +19,7 @@ func setSelectedValue(theVal):
 			if(isAltText):
 				label_2.text = savedName+" = "+str(value[1])
 				label.text = ""
-				button.text = "Edit"
+				button.text = "Редактировать"
 				label_2.visible = true
 				label.visible = false
 			else:
@@ -33,7 +33,7 @@ func setSelectedValue(theVal):
 	if(isAltText):
 		label_2.text = savedName+" = "+str(selectedValue)
 		label.text = ""
-		button.text = "Edit"
+		button.text = "Редактировать"
 		label_2.visible = true
 		label.visible = false
 	else:

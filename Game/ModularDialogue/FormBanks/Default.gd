@@ -2,101 +2,101 @@ extends DialogueFormBank
 
 func getForms() -> Dictionary:
 	return {
-		"AttackStart": form("I will fuck you up.", {main=CHAR, target=CHAR}, "main", "target"), # Attacking someone
-		"AttackReact": form("Hey, what the fuck are you doing. What's your problem.", {main=CHAR, target=CHAR}, "main", "target"), # Reacting to being attacked
-		"FightLostGeneric": form("Argh..", {loser=CHAR, winner=CHAR}, "loser", "winner"),
-		"FightWonGeneric": form("That was easy.", {loser=CHAR, winner=CHAR}, "winner", "loser"),
-		"FightSurrender": form("I surrender, don't hurt me.", {loser=CHAR, winner=CHAR}, "loser", "winner"),
+		"AttackStart": form("Я тебя просто в говно разнесу.", {main=CHAR, target=CHAR}, "main", "target"), # Attacking someone
+		"AttackReact": form("Эй, какого хуя ты творишь? В чем твоя проблема?", {main=CHAR, target=CHAR}, "main", "target"), # Reacting to being attacked
+		"FightLostGeneric": form("Аргх...", {loser=CHAR, winner=CHAR}, "loser", "winner"),
+		"FightWonGeneric": form("Это было легко.", {loser=CHAR, winner=CHAR}, "winner", "loser"),
+		"FightSurrender": form("Я сдаюсь, только не калечь меня.", {loser=CHAR, winner=CHAR}, "loser", "winner"),
 		
-		"GuardCaughtOffLimits": form("Hey, what are you doing in there?", {inmate=CHAR, guard=CHAR}, "guard", "inmate"),
-		"GuardCaughtOffLimitsFight": form("You wanna fight? Alright.", {inmate=CHAR, guard=CHAR}, "guard", "inmate"),
-		"GuardInmateSurrender": form("Surrendering? Smart.", {inmate=CHAR, guard=CHAR}, "guard", "inmate"),
-		"GuardFrisk": form("Don't move while I do this.", {inmate=CHAR, guard=CHAR}, "guard", "inmate"),
-		"GuardFriskFound": form("This isn’t allowed. I’m taking it.", {inmate=CHAR, guard=CHAR}, "guard", "inmate"),
-		"GuardFriskNoFound": form("Clean. You're lucky, inmate.", {inmate=CHAR, guard=CHAR}, "guard", "inmate"),
-		"GuardFriskFailResist": form("Argh. Fuck it.", {inmate=CHAR, guard=CHAR}, "guard", "inmate"),
-		"GuardGoAway": form("Now go away.", {inmate=CHAR, guard=CHAR}, "guard", "inmate"),
-		"GuardKeepMoving": form("Keep moving, inmate.", {inmate=CHAR, guard=CHAR}, "guard", "inmate"),
+		"GuardCaughtOffLimits": form("Эй, ты что там делаешь?", {inmate=CHAR, guard=CHAR}, "guard", "inmate"),
+		"GuardCaughtOffLimitsFight": form("Хочешь подраться? Ну, давай.", {inmate=CHAR, guard=CHAR}, "guard", "inmate"),
+		"GuardInmateSurrender": form("Сдаешься? Умно.", {inmate=CHAR, guard=CHAR}, "guard", "inmate"),
+		"GuardFrisk": form("Не двигайся, пока я это делаю.", {inmate=CHAR, guard=CHAR}, "guard", "inmate"),
+		"GuardFriskFound": form("Так нельзя. Забираю.", {inmate=CHAR, guard=CHAR}, "guard", "inmate"),
+		"GuardFriskNoFound": form("Чисто. Тебе повезло, зек.", {inmate=CHAR, guard=CHAR}, "guard", "inmate"),
+		"GuardFriskFailResist": form("Аргх. Да к черту всё.", {inmate=CHAR, guard=CHAR}, "guard", "inmate"),
+		"GuardGoAway": form("А теперь свали.", {inmate=CHAR, guard=CHAR}, "guard", "inmate"),
+		"GuardKeepMoving": form("Двигайся, зэк.", {inmate=CHAR, guard=CHAR}, "guard", "inmate"),
 		
-		"PunishDecide": form("What should I do with you..", {punisher=CHAR, target=CHAR}, "punisher", "target"),
-		"PunishDecideStocks": form("Stocks will do nicely.", {punisher=CHAR, target=CHAR}, "punisher", "target"),
-		"PunishAboutToStocks": form("Bend over.", {punisher=CHAR, target=CHAR}, "punisher", "target"),
-		"PunishLockIntoStocks": form("Have fun.", {punisher=CHAR, target=CHAR}, "punisher", "target"),
-		"PunishSex": form("Let's have some fun.", {punisher=CHAR, target=CHAR}, "punisher", "target"),
-		"PunishSubSex": form("You can do whatever you want with me.", {punisher=CHAR, target=CHAR}, "punisher", "target"),
-		"PunishDecidedSlutwall": form("I want to see others use you in a slutwall.", {punisher=CHAR, target=CHAR}, "punisher", "target"),
-		"PunishLockIntoSlutwall": form("Enjoy.", {punisher=CHAR, target=CHAR}, "punisher", "target"),
+		"PunishDecide": form("И что же мне с тобой делать...", {punisher=CHAR, target=CHAR}, "punisher", "target"),
+		"PunishDecideStocks": form("Колодки подойдут.", {punisher=CHAR, target=CHAR}, "punisher", "target"),
+		"PunishAboutToStocks": form("Наклонись.", {punisher=CHAR, target=CHAR}, "punisher", "target"),
+		"PunishLockIntoStocks": form("Развлекайся.", {punisher=CHAR, target=CHAR}, "punisher", "target"),
+		"PunishSex": form("Давай повеселимся.", {punisher=CHAR, target=CHAR}, "punisher", "target"),
+		"PunishSubSex": form("Ты можешь делать со мной всё, что захочешь.", {punisher=CHAR, target=CHAR}, "punisher", "target"),
+		"PunishDecidedSlutwall": form("Хочу видеть, как тебя используют другие на стене шлюх.", {punisher=CHAR, target=CHAR}, "punisher", "target"),
+		"PunishLockIntoSlutwall": form("Наслаждайся.", {punisher=CHAR, target=CHAR}, "punisher", "target"),
 		
-		"ReactBODYWRITINGS": form("Nice bodywritings, slut!", {main=CHAR, target=CHAR}, "main", "target"),
-		"ReactTALLYMARKS": form("Nice tallymarks, slut!", {main=CHAR, target=CHAR}, "main", "target"),
-		"ReactCOVERED_IN_CUM": form("So messy. What a slut!", {main=CHAR, target=CHAR}, "main", "target"),
-		"ReactCOVERED_IN_PISS": form("Ew, gross!", {main=CHAR, target=CHAR}, "main", "target"),
-		"ReactNAKED": form("Ha, cover up, slut!", {main=CHAR, target=CHAR}, "main", "target"),
-		"ReactCAN_GRAB_AND_FUCK": form("Wow, someone should fuck you, slut!", {main=CHAR, target=CHAR}, "main", "target"),
-		"ReactON_A_LEASH": form("Haha, you love being paraded around, slut?", {main=CHAR, target=CHAR}, "main", "target"),
-		"ReactGETTING_FUCKED": form("Nice, a whore is getting fucked!", {main=CHAR, target=CHAR}, "main", "target"),
+		"ReactBODYWRITINGS": form("Классные надписи на теле, шлюха!", {main=CHAR, target=CHAR}, "main", "target"),
+		"ReactTALLYMARKS": form("Классные зарубки, шлюха!", {main=CHAR, target=CHAR}, "main", "target"),
+		"ReactCOVERED_IN_CUM": form("Так грязно. Ну и шлюха!", {main=CHAR, target=CHAR}, "main", "target"),
+		"ReactCOVERED_IN_PISS": form("Фу, мерзость!", {main=CHAR, target=CHAR}, "main", "target"),
+		"ReactNAKED": form("Ха, прикройся, шлюха!", {main=CHAR, target=CHAR}, "main", "target"),
+		"ReactCAN_GRAB_AND_FUCK": form("Охренеть, кто-нибудь должен трахнуть тебя, сучка!", {main=CHAR, target=CHAR}, "main", "target"),
+		"ReactON_A_LEASH": form("Ха-ха, тебе нравится, когда тебя выставляют напоказ, шлюха?", {main=CHAR, target=CHAR}, "main", "target"),
+		"ReactGETTING_FUCKED": form("Красава, шлюху сейчас поимеют!", {main=CHAR, target=CHAR}, "main", "target"),
 		
-		"ReactLEASHING_SOMEONE": form("Nice catch!", {main=CHAR, target=CHAR}, "main", "target"),
-		"ReactFUCKING_SOMEONE": form("Yeah, fuck that slut!", {main=CHAR, target=CHAR}, "main", "target"),
+		"ReactLEASHING_SOMEONE": form("Отличный улов!", {main=CHAR, target=CHAR}, "main", "target"),
+		"ReactFUCKING_SOMEONE": form("Да, трахай эту сучку!", {main=CHAR, target=CHAR}, "main", "target"),
 	
-		"AskKeyCanYouUnlock": form("Hey, can you unlock me?", {main=CHAR, target=CHAR}, "main", "target"),
-		"AskKeyDeny": form("Maybe later.", {main=CHAR, target=CHAR}, "main", "target"),
-		"AskKeyGive": form("Okay, let's unlock you.", {main=CHAR, target=CHAR}, "main", "target"),
-		"AskKeyChallenge": form("Tell you what. I'm gonna fuck you. And if you're gonna be a good fucktoy.. I might unlock you.", {main=CHAR, target=CHAR}, "main", "target"),
-		"AskKeyChallengeUnlock": form("Good slut. I liked that.", {main=CHAR, target=CHAR}, "main", "target"),
-		"AskKeyChallengeFail": form("That sucked. You can stay locked, whore.", {main=CHAR, target=CHAR}, "main", "target"),
-		"AskKeyChallengeRefuse": form("I refuse.", {main=CHAR, target=CHAR}, "main", "target"),
-		"AskKeyChallengeRefuseStay": form("Stay locked then. Like I care.", {main=CHAR, target=CHAR}, "main", "target"),
+		"AskKeyCanYouUnlock": form("Эй, может, отперешь меня?", {main=CHAR, target=CHAR}, "main", "target"),
+		"AskKeyDeny": form("Может, позже.", {main=CHAR, target=CHAR}, "main", "target"),
+		"AskKeyGive": form("Ладно, давай отперем тебя.", {main=CHAR, target=CHAR}, "main", "target"),
+		"AskKeyChallenge": form("Слушай сюда. Я сейчас тебя трахну. И если будешь послушной подстилкой... может, тогда и отперу.", {main=CHAR, target=CHAR}, "main", "target"),
+		"AskKeyChallengeUnlock": form("Хорошая сучка. Мне это понравилось.", {main=CHAR, target=CHAR}, "main", "target"),
+		"AskKeyChallengeFail": form("Отстой. Можешь и дальше сидеть взаперти, шлюха.", {main=CHAR, target=CHAR}, "main", "target"),
+		"AskKeyChallengeRefuse": form("Я отказываюсь.", {main=CHAR, target=CHAR}, "main", "target"),
+		"AskKeyChallengeRefuseStay": form("Ну и сиди взаперти. Мне-то что.", {main=CHAR, target=CHAR}, "main", "target"),
 		
-		"HelpRestraintsAsk": form("Hey. Can you help me with these restraints maybe?", {main=CHAR, target=CHAR}, "main", "target"),
-		"HelpRestraintsAgree": form("Sure. Let's see what I can do.", {main=CHAR, target=CHAR}, "main", "target"),
-		"HelpRestraintsAltStart": form("Hey. I wanna help you with these restraints. Sit tight.", {main=CHAR, target=CHAR}, "main", "target"),
-		"HelpRestraintsAltRefuseUnhappy": form("I don't want your help with restraints.", {main=CHAR, target=CHAR}, "main", "target"),
-		"HelpRestraintsAltRefuseKinky": form("Oh, I'm only wearing those because I want to.", {main=CHAR, target=CHAR}, "main", "target"),
-		"HelpRestraintsAltRefuseKinkyReact": form("Kinky.", {main=CHAR, target=CHAR}, "main", "target"),
-		"HelpRestraintsDeny": form("No can't do. You will have to stay locked.", {main=CHAR, target=CHAR}, "main", "target"),
-		"HelpRestraintsFinished": form("That's all that I can do.", {main=CHAR, target=CHAR}, "main", "target"),
-		"HelpRestraintsPaid": form("That will do. I will go now.", {main=CHAR, target=CHAR}, "main", "target"),
-		"HelpRestraintsRefusePay": form("I'm not paying! You didn't even do that much.", {main=CHAR, target=CHAR}, "main", "target"),
-		"HelpRestraintsRefusePayWhatever": form("Whatever then.", {main=CHAR, target=CHAR}, "main", "target"),
+		"HelpRestraintsAsk": form("Эй. Поможешь мне с этими креплениями?", {main=CHAR, target=CHAR}, "main", "target"),
+		"HelpRestraintsAgree": form("Конечно. Посмотрим, что можно сделать.", {main=CHAR, target=CHAR}, "main", "target"),
+		"HelpRestraintsAltStart": form("Эй. Я хочу помочь тебе с этими креплениями. Посиди смирно.", {main=CHAR, target=CHAR}, "main", "target"),
+		"HelpRestraintsAltRefuseUnhappy": form("Мне не нужна твоя помощь с креплениями.", {main=CHAR, target=CHAR}, "main", "target"),
+		"HelpRestraintsAltRefuseKinky": form("О, я ношу это только потому, что мне так хочется.", {main=CHAR, target=CHAR}, "main", "target"),
+		"HelpRestraintsAltRefuseKinkyReact": form("Кинки.", {main=CHAR, target=CHAR}, "main", "target"),
+		"HelpRestraintsDeny": form("Не выйдет. Придется тебе оставаться взаперти.", {main=CHAR, target=CHAR}, "main", "target"),
+		"HelpRestraintsFinished": form("Это всё, что я могу сделать.", {main=CHAR, target=CHAR}, "main", "target"),
+		"HelpRestraintsPaid": form("Сойдет. Пойду теперь.", {main=CHAR, target=CHAR}, "main", "target"),
+		"HelpRestraintsRefusePay": form("Я не буду платить! Ты даже толком ничего не сделал(а).", {main=CHAR, target=CHAR}, "main", "target"),
+		"HelpRestraintsRefusePayWhatever": form("Ну и ладно.", {main=CHAR, target=CHAR}, "main", "target"),
 		
-		"HelpStocksSlutwallRefuse": form("I don't want your help breaking free.", {main=CHAR, target=CHAR}, "main", "target"),
-		"SlutwallStealCredits": form("A whore like you doesn't deserve these credits.", {main=CHAR, target=CHAR}, "main", "target"), # Stealing from the slutwall's tipbox
-		"SlutwallAddTip": form("There you go. What a good fucktoy.", {main=CHAR, target=CHAR}, "main", "target"), # Getting tipped after being used in a slutwall
-		"StocksShout": form("Anyone? I need some help over here.", {main=CHAR}, "main"), # Stuck in stocks, trying to get some attention
+		"HelpStocksSlutwallRefuse": form("Мне не нужна твоя помощь, чтобы вырваться на свободу.", {main=CHAR, target=CHAR}, "main", "target"),
+		"SlutwallStealCredits": form("Такая шлюха, как ты, не заслуживает этих кредитов.", {main=CHAR, target=CHAR}, "main", "target"), # Stealing from the slutwall's tipbox
+		"SlutwallAddTip": form("Вот так. Какая послушная секс-игрушка.", {main=CHAR, target=CHAR}, "main", "target"), # Getting tipped after being used in a slutwall
+		"StocksShout": form("Есть кто? Мне тут нужна помощь!", {main=CHAR}, "main"), # Stuck in stocks, trying to get some attention
 		
-		"ProstitutionStart": form("Wanna have a good time?", {main=CHAR, target=CHAR}, "main", "target"), # Whore offering herself to the potential client
-		"ProstitutionOffer": form("What's the offer?", {main=CHAR, target=CHAR}, "main", "target"), # Client asking what the whore is offering
-		"ProstitutionUsual": form("The usual, {X} credits.", {main=CHAR, target=CHAR, credits=VAR}, "main", "target"), # Whore offering her 'usual'
-		"ProstitutionServiceDom": form("I can be in charge and make you feel real good, {X} credits.", {main=CHAR, target=CHAR, credits=VAR}, "main", "target"), # Whore offering to be a dominant during the sex
-		"ProstitutionPricySlut": form("I'm expensive. But I'm worth it, baby, just {X} credits.", {main=CHAR, target=CHAR, credits=VAR}, "main", "target"), # Whore is trying to get more credits out of a client
-		"ProstitutionClientAskForDomSlut": form("I'd like to see you being the one in control.", {main=CHAR, target=CHAR}, "main", "target"), # Client asks if sub slut would dom instead
-		"ProstitutionClientAskForSubSlut": form("I'd like to be in charge, if you don't mind.", {main=CHAR, target=CHAR}, "main", "target"), # Client asks if dom slut would sub instead
-		"ProstitutionDenied": form("I'd rather not.", {main=CHAR, target=CHAR}, "main", "target"), # Client denying the whore (sometimes in a rude way)
-		"ProstitutionDeniedWhatever": form("Whatever then, your loss.", {main=CHAR, target=CHAR}, "main", "target"), # Whore being annoyed that the client has denied her
-		"ProstitutionAccept": form("Alright, let's see what you can do.", {main=CHAR, target=CHAR}, "main", "target"), # Client agreeing to the whore's services
-		"ProstitutionDemandCreds": form("That sucked. Give me the credits back, whore.", {main=CHAR, target=CHAR}, "main", "target"), # Client wasn't satisfied enough with the sex
-		"ProstitutionRefuseReturnCreds": form("I'm not giving you anything back, fuck off!", {main=CHAR, target=CHAR}, "main", "target"), # Whore refuses to return the credits
-		"ProstitutionScam": form("You know what.. I decided to raise the price. 5 more credits please.", {main=CHAR, target=CHAR}, "main", "target"), # Whore is trying to scam the client and get more credits
+		"ProstitutionStart": form("Хочешь хорошенько развлечься?", {main=CHAR, target=CHAR}, "main", "target"), # Whore offering herself to the potential client
+		"ProstitutionOffer": form("И что ты предлагаешь?", {main=CHAR, target=CHAR}, "main", "target"), # Client asking what the whore is offering
+		"ProstitutionUsual": form("Как обычно, {X} кредитов.", {main=CHAR, target=CHAR, credits=VAR}, "main", "target"), # Whore offering her 'usual'
+		"ProstitutionServiceDom": form("Я могу взять всё в свои руки и доставить тебе нереальное удовольствие, {X} кредитов.", {main=CHAR, target=CHAR, credits=VAR}, "main", "target"), # Whore offering to be a dominant during the sex
+		"ProstitutionPricySlut": form("Я стою дорого. Но я того стою, детка, всего лишь {X} кредитов.", {main=CHAR, target=CHAR, credits=VAR}, "main", "target"), # Whore is trying to get more credits out of a client
+		"ProstitutionClientAskForDomSlut": form("Мне бы хотелось посмотреть, как ты берешь всё в свои руки.", {main=CHAR, target=CHAR}, "main", "target"), # Client asks if sub slut would dom instead
+		"ProstitutionClientAskForSubSlut": form("Если ты не против, я бы хотела сама заправлять здесь.", {main=CHAR, target=CHAR}, "main", "target"), # Client asks if dom slut would sub instead
+		"ProstitutionDenied": form("Пожалуй, не стоит.", {main=CHAR, target=CHAR}, "main", "target"), # Client denying the whore (sometimes in a rude way)
+		"ProstitutionDeniedWhatever": form("Ну и ладно, сама виновата.", {main=CHAR, target=CHAR}, "main", "target"), # Whore being annoyed that the client has denied her
+		"ProstitutionAccept": form("Ладно, посмотрим, на что ты способна.", {main=CHAR, target=CHAR}, "main", "target"), # Client agreeing to the whore's services
+		"ProstitutionDemandCreds": form("Отстой полный. Верни кредиты, шлюха.", {main=CHAR, target=CHAR}, "main", "target"), # Client wasn't satisfied enough with the sex
+		"ProstitutionRefuseReturnCreds": form("Ничего я тебе не верну, отъебись!", {main=CHAR, target=CHAR}, "main", "target"), # Whore refuses to return the credits
+		"ProstitutionScam": form("Знаешь что... Я решила поднять цену. Еще 5 кредитов, пожалуйста.", {main=CHAR, target=CHAR}, "main", "target"), # Whore is trying to scam the client and get more credits
 		
-		"TalkChatWhat": form("What do you wanna chat about?", {main=CHAR, target=CHAR}, "main", "target"),
-		"TalkStartNemesis": form("The fuck do you want?", {main=CHAR, target=CHAR}, "main", "target"),
-		"TalkChatCancel": form("Never mind, I don't wanna chat anymore.", {main=CHAR, target=CHAR}, "main", "target"),
-		"TalkChatLeaving": form("Whatever then, I'm leaving.", {main=CHAR, target=CHAR}, "main", "target"),
-		"TalkChatAgree": form("I agree.", {main=CHAR, target=CHAR}, "main", "target"),
-		"TalkChatDisagree": form("I disagree. Fuck you.", {main=CHAR, target=CHAR}, "main", "target"),
-		"TalkChatWhatever": form("It's whatever, honestly.", {main=CHAR, target=CHAR}, "main", "target"),
-		"TalkChatPickupLine": form("If you were a triangle you'd be acute one.", {main=CHAR, target=CHAR}, "main", "target"),
-		"TalkChatPickupLineFail": form("That was so bad!", {main=CHAR, target=CHAR}, "main", "target"),
-		"TalkFlirtAccept": form("You are cute.", {main=CHAR, target=CHAR}, "main", "target"),
-		"TalkFlirtDeny": form("I don't think I'm into what you are offering.", {main=CHAR, target=CHAR}, "main", "target"),
-		"TalkSexOffer": form("Hey, let's fuck!", {main=CHAR, target=CHAR}, "main", "target"),
-		"TalkSexOfferAccept": form("Sure, you can fuck me.", {main=CHAR, target=CHAR}, "main", "target"),
-		"TalkSexOfferDeny": form("I'd rather not.", {main=CHAR, target=CHAR}, "main", "target"),
-		"TalkSexOfferSelf": form("Hey, wanna fuck me maybe?", {main=CHAR, target=CHAR}, "main", "target"),
-		"TalkSexOfferSelfAccept": form("Sure, I can fuck you real good.", {main=CHAR, target=CHAR}, "main", "target"),
-		"TalkSexOfferSelfDeny": form("I'd rather not.", {main=CHAR, target=CHAR}, "main", "target"),
-		"TalkGrabAndFuck": form("You're not going anywhere until I have some fun with you, BDSM slut.", {main=CHAR, target=CHAR}, "main", "target"),
-		"TalkAboutToKidnap": form("You are mine now. Understand?", {main=CHAR, target=CHAR}, "main", "target"),
+		"TalkChatWhat": form("О чём хочешь потереть?", {main=CHAR, target=CHAR}, "main", "target"),
+		"TalkStartNemesis": form("Какого хера тебе надо?", {main=CHAR, target=CHAR}, "main", "target"),
+		"TalkChatCancel": form("Проехали, не хочу больше болтать.", {main=CHAR, target=CHAR}, "main", "target"),
+		"TalkChatLeaving": form("Ну и хрен с тобой, я ухожу.", {main=CHAR, target=CHAR}, "main", "target"),
+		"TalkChatAgree": form("Согласна.", {main=CHAR, target=CHAR}, "main", "target"),
+		"TalkChatDisagree": form("Не согласна. Пошла нахуй.", {main=CHAR, target=CHAR}, "main", "target"),
+		"TalkChatWhatever": form("Да похуй, честно говоря.", {main=CHAR, target=CHAR}, "main", "target"),
+		"TalkChatPickupLine": form("Если бы ты был треугольником, ты был бы остроугольным.", {main=CHAR, target=CHAR}, "main", "target"),
+		"TalkChatPickupLineFail": form("Это было так тупо!", {main=CHAR, target=CHAR}, "main", "target"),
+		"TalkFlirtAccept": form("Ты милашка.", {main=CHAR, target=CHAR}, "main", "target"),
+		"TalkFlirtDeny": form("Не думаю, что мне нравится то, что ты предлагаешь.", {main=CHAR, target=CHAR}, "main", "target"),
+		"TalkSexOffer": form("Эй, давай трахнемся!", {main=CHAR, target=CHAR}, "main", "target"),
+		"TalkSexOfferAccept": form("Конечно, можешь меня отъебать.", {main=CHAR, target=CHAR}, "main", "target"),
+		"TalkSexOfferDeny": form("Пожалуй, не стоит.", {main=CHAR, target=CHAR}, "main", "target"),
+		"TalkSexOfferSelf": form("Эй, может, трахнешь меня?", {main=CHAR, target=CHAR}, "main", "target"),
+		"TalkSexOfferSelfAccept": form("Конечно, я могу тебя очень сладко отъебать.", {main=CHAR, target=CHAR}, "main", "target"),
+		"TalkSexOfferSelfDeny": form("Пожалуй, не стоит.", {main=CHAR, target=CHAR}, "main", "target"),
+		"TalkGrabAndFuck": form("Ты никуда не уйдешь, пока я не развлекусь с тобой, БДСМ-шная шлюшка.", {main=CHAR, target=CHAR}, "main", "target"),
+		"TalkAboutToKidnap": form("Теперь ты моя. Понял?", {main=CHAR, target=CHAR}, "main", "target"),
 		"TalkAboutToKidnapReact": form("O.. O-Okay..", {main=CHAR, target=CHAR}, "main", "target"),
 	}

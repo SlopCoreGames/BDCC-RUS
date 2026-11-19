@@ -12,11 +12,11 @@ func setIsEditing(newEdit):
 	if(newEdit):
 		$LineEdit.visible = true
 		$Label.visible = false
-		$Button.text = "Save"
+		$Button.text = "Сохранить"
 	else:
 		$LineEdit.visible = false
 		$Label.visible = true
-		$Button.text = "Edit"
+		$Button.text = "Редактировать"
 
 func setVarText(_text):
 	$LineEdit.text = _text

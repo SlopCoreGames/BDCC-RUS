@@ -3,8 +3,8 @@ extends SexActivityBase
 func _init():
 	id = "Choking"
 	
-	activityName = "Choke"
-	activityDesc = "Grab their throat and start choking them!"
+	activityName = "Душить"
+	activityDesc = "Схвати их за горло и начни душить!"
 	activityCategory = ["Violence"]
 
 func getGoals():
@@ -47,9 +47,9 @@ func getTags(_indx:int) -> Array:
 
 func startActivity(_args):
 	if(!isTentaclesSex()):
-		addText("{dom.You} {dom.youVerb('put')} {dom.yourHis} hand on {sub.your} neck!")
+		addText("{dom.You} {dom.youVerb('put')} {dom.yourHis} рука на {sub.your} шее!")
 	else:
-		addText("{dom.You} {dom.youVerb('wrap')} {dom.yourHis} tentacle around {sub.your} neck!")
+		addText("{dom.You} {dom.youVerb('wrap')} {dom.yourHis} щупальце обвивает шею {sub.your}!")
 	react(SexReaction.AboutToBeatUp)
 
 func getExtraChokeText() -> String:
@@ -57,25 +57,25 @@ func getExtraChokeText() -> String:
 	
 	if(getSubInfo().isUnconscious()):
 		result.append(RNG.pick([
-			"{sub.Your} eyes are unresponsive.",
+			"{sub.Your} глаза не реагируют.",
 			"{sub.You} {sub.youAre} unresponsive.",
-			"{sub.You} {sub.youVerb('do', 'does')} not respond much to the choking.",
-			"{sub.You} {sub.youVerb('do', 'does')} not struggle at all.",
+			"{sub.You} {sub.youVerb('do', 'does')} не особо реагирует на удушение.",
+			"{sub.You} {sub.youVerb('do', 'does')} совсем не сопротивляется.",
 		]))
 	else:
 		if(RNG.chance(20)):
 			result.append(RNG.pick([
-				"{sub.You} {sub.youVerb('gasp')} for air.",
-				"{sub.You} {sub.youVerb('gasp')} desperately for air.",
-				"{sub.You} {sub.youVerb('try', 'tries')} to grab any air {sub.youHe} can.",
-				"{sub.You} {sub.youVerb('struggle')} to breathe.",
+				"{sub.You} {sub.youVerb('gasp')}, пытаясь глотнуть воздуха.",
+				"{sub.You} {sub.youVerb('gasp')} отчаянно хватает ртом воздух.",
+				"{sub.You} {sub.youVerb('try', 'tries')} жадно хватает каждый глоток {sub.youHe}, какой только может.",
+				"{sub.You} {sub.youVerb('struggle')} не хватает, чтобы дышать.",
 			]))
 		if(getSubInfo().getConsciousness() < 0.4 && RNG.chance(50)):
 			result.append(RNG.pick([
-				"{sub.You} {sub.youAre} about to pass out!",
-				"{sub.Your} gaze shakes from panic.",
-				"{sub.You} {sub.youVerb('shiver')}, about to black out.",
-				"{sub.You} {sub.youVerb('struggle')} to stay conscious.",
+				"{sub.You} {sub.youAre} вот-вот отключится!",
+				"Взгляд {sub.Your} дрожит от паники.",
+				"{sub.You} {sub.youVerb('shiver')}, вот-вот потеряет сознание.",
+				"{sub.You} {sub.youVerb('struggle')}, чтобы не отключиться.",
 			]))
 	
 	if(result.size() > 0):
@@ -83,7 +83,7 @@ func getExtraChokeText() -> String:
 	return ""
 
 func init_processTurn():
-	addText("{dom.You} {dom.youVerb('hold')} {dom.yourHis} hand on {sub.your} neck.")
+	addText("{dom.You} {dom.youVerb('hold')} {dom.yourHis} рукой на {sub.your} шее.")
 
 func choking_processTurn():
 	choke(DOM_0, SUB_0, CHOKE_NORMAL)
@@ -95,7 +95,7 @@ func choking_processTurn():
 		"{dom.You} {dom.youVerb('choke')} {sub.yourHis} throat.",
 		"{dom.You} {dom.youVerb('choke')} {sub.youHim} helpless.",
 		"{dom.You} {dom.youVerb('strangle')} {sub.yourHis} neck.",
-		"{dom.You} {dom.youVerb('put')} pressure on {sub.yourHis} neck with {dom.yourHis} hands.",
+		"{dom.You} {dom.youVerb('put')} сжимает {sub.yourHis} шею {dom.yourHis} руками.",
 	]
 
 	var text:String = RNG.pick(texts)+getExtraChokeText()
@@ -108,7 +108,7 @@ func hardchoking_processTurn():
 	var texts = [
 		"{dom.You} {dom.youVerb('choke')} {sub.youHim} [b]hard[/b].",
 		"{dom.You} {dom.youVerb('strangle')} {sub.youHim} [b]hard[/b].",
-		"{dom.You} {dom.youVerb('put')} a lot of pressure on {sub.yourHis} throat.",
+		"{dom.You} {dom.youVerb('put')} сильно давит на {sub.yourHis} горло.",
 	]
 
 	var text:String = RNG.pick(texts)+getExtraChokeText()
@@ -118,79 +118,79 @@ func hardchoking_processTurn():
 func getActions(_indx:int):
 	if(_indx == DOM_0):
 		if(getState() in ["", "choking"]):
-			addAction("startchoke", 1.0, "Choke harder", "Start choking them")
+			addAction("startchoke", 1.0, "Сжимай сильнее", "Начать душить")
 			
 		var stopChokeScore:float = getStopChokeScore()
 		if(getState() in ["choking", "hardchoking"] && !getSubInfo().isUnconscious()):
-			addAction("lesschoke", stopChokeScore, "Choke less", "Loosen the grip")
+			addAction("lesschoke", stopChokeScore, "Душить слабее", "Ослабить хватку")
 		if(getState() == "" || getSubInfo().isUnconscious()):
-			addAction("stop", getStopChokeScore(), "Stop choking", "Enough choking")
+			addAction("stop", getStopChokeScore(), "Перестать душить", "Хватит душить её")
 
 		if(!isTentaclesSex()):
 			if(getSub().hasReachableVagina() && (getDom().hasReachablePenis() || getDom().isWearingStrapon())):
-				addAction("startvag", getDomInfo().goalsScore({SexGoal.ChokeSexVaginal: 0.3}, getSubID()), "+ Fuck Vaginal", "Start fucking their pussy at the same time", {A_CATEGORY: ["Fuck"]})
+				addAction("startvag", getDomInfo().goalsScore({SexGoal.ChokeSexVaginal: 0.3}, getSubID()), "+ Вагинальный секс", "Начать трахать их киску одновременно", {A_CATEGORY: ["Fuck"]})
 			if(getSub().hasReachableAnus() && (getDom().hasReachablePenis() || getDom().isWearingStrapon())):
-				addAction("startanal", getDomInfo().goalsScore({SexGoal.ChokeSexAnal: 0.3}, getSubID()), "+ Fuck Anal", "Start fucking their ass at the same time", {A_CATEGORY: ["Fuck"]})
+				addAction("startanal", getDomInfo().goalsScore({SexGoal.ChokeSexAnal: 0.3}, getSubID()), "+ Анальный секс", "Начать трахать их жопу одновременно", {A_CATEGORY: ["Fuck"]})
 
 			if(getDom().hasReachableVagina() && (getSub().hasReachablePenis() || getSub().isWearingStrapon())):
-				addAction("startridevag", getDomInfo().goalsScore({SexGoal.ChokeReceiveVaginal: 0.3}, getSubID()), "+ Ride Vaginal", "Ride their cock with your pussy at the same time", {A_CATEGORY: ["Fuck"]})
+				addAction("startridevag", getDomInfo().goalsScore({SexGoal.ChokeReceiveVaginal: 0.3}, getSubID()), "+ Наездница (вагинально)", "Насаживаться на их член своей киской одновременно", {A_CATEGORY: ["Fuck"]})
 			if(getDom().hasReachableAnus() && (getSub().hasReachablePenis() || getSub().isWearingStrapon())):
-				addAction("startrideanal", getDomInfo().goalsScore({SexGoal.ChokeReceiveAnal: 0.3}, getSubID()), "+ Ride Anal", "Ride their cock with your ass at the same time", {A_CATEGORY: ["Fuck"]})
+				addAction("startrideanal", getDomInfo().goalsScore({SexGoal.ChokeReceiveAnal: 0.3}, getSubID()), "+ Наездница (анально)", "Насаживаться на их член своей жопой одновременно", {A_CATEGORY: ["Fuck"]})
 		else:
 			if(getSub().hasReachableVagina() && (getDom().hasReachablePenis() || getDom().isWearingStrapon())):
-				addAction("startvagtentacles", getDomInfo().goalsScore({SexGoal.ChokeSexVaginal: 0.3}, getSubID()), "+ Fuck Vaginal", "Start fucking their pussy at the same time", {A_CATEGORY: ["Fuck"]})
+				addAction("startvagtentacles", getDomInfo().goalsScore({SexGoal.ChokeSexVaginal: 0.3}, getSubID()), "+ Вагинальный секс", "Начать трахать их киску одновременно", {A_CATEGORY: ["Fuck"]})
 			if(getSub().hasReachableAnus() && (getDom().hasReachablePenis() || getDom().isWearingStrapon())):
-				addAction("startanaltentacles", getDomInfo().goalsScore({SexGoal.ChokeSexAnal: 0.3}, getSubID()), "+ Fuck Anal", "Start fucking their ass at the same time", {A_CATEGORY: ["Fuck"]})
+				addAction("startanaltentacles", getDomInfo().goalsScore({SexGoal.ChokeSexAnal: 0.3}, getSubID()), "+ Анальный секс", "Начать трахать их жопу одновременно", {A_CATEGORY: ["Fuck"]})
 
 		
 	if(_indx == SUB_0):
 		var escapeScore:float = 0.3 + getSubInfo().getResistScore() * 2.0 - getSubInfo().fetishScore({Fetish.Choking: 0.5})
-		addAction("escape", escapeScore, "Escape choking", "Try to escape the choking", {A_CHANCE: getResistChance(SUB_0, DOM_0, RESIST_NECK_FOCUS, 20.0, 0.0)})
+		addAction("escape", escapeScore, "Вырваться из удушья", "Попытаться вырваться из удушья", {A_CHANCE: getResistChance(SUB_0, DOM_0, RESIST_NECK_FOCUS, 20.0, 0.0)})
 
 
 func doAction(_indx:int, _actionID:String, _action:Dictionary):
 	if(_actionID == "startchoke"):
 		if(state == ""):
 			setState("choking")
-			addText("{dom.You} {dom.youVerb('begin')} to actively choke {sub.you} out.")
+			addText("{dom.You} {dom.youVerb('begin')}, чтобы активно душить {sub.you}.")
 		else:
 			setState("hardchoking")
-			addText("{dom.You} [b]{dom.youVerb('tighten')}[/b] {dom.yourHis} grip around {sub.your} throat.")
+			addText("{dom.You} [b]{dom.youVerb('tighten')}[/b] сжимает {dom.yourHis} горло {sub.your}.")
 	if(_actionID == "lesschoke"):
 		if(getState() == "hardchoking"):
 			setState("choking")
-			addText("{dom.You} {dom.youVerb('lessen')} {dom.yourHis} grip on {sub.your} neck.")
+			addText("{dom.You} {dom.youVerb('lessen')} сжимает {sub.your} шею {dom.yourHis}.")
 		else:
 			setState("")
-			addText("{dom.You} {dom.youVerb('stop')} actively choking {sub.you}.")
+			addText("{dom.You} {dom.youVerb('stop')} активно душит {sub.you}.")
 	if(_actionID == "stop"):
 		satisfyGoal(SexGoal.Choke)
 		endActivity()
-		addText("{dom.You} {dom.youVerb('have', 'has')} stopped choking {sub.you} out.")
+		addText("{dom.You} {dom.youVerb('have', 'has')} перестал душить {sub.you}.")
 	
 	if(_actionID == "startvag"):
 		switchCurrentActivityTo("SexVaginalOnAllFours", ["choke"])
-		addText("{dom.You} {dom.youVerb('raise')} {sub.yourHis} leg, preparing to fuck {sub.yourHis} {pussy}.")
+		addText("{dom.You} {dom.youVerb('raise')} закидывает {sub.yourHis} ногу, готовясь трахнуть {sub.yourHis} {pussy}.")
 		react(SexReaction.StartChokeFuck)
 	if(_actionID == "startanal"):
 		switchCurrentActivityTo("SexAnalOnAllFours", ["choke"])
-		addText("{dom.You} {dom.youVerb('raise')} {sub.yourHis} leg, preparing to fuck {sub.yourHis} {anus}.")
+		addText("{dom.You} {dom.youVerb('raise')} закидывает {sub.yourHis} ногу, готовясь трахнуть {sub.yourHis} {anus}.")
 		react(SexReaction.StartChokeFuck)
 	if(_actionID == "startvagtentacles"):
 		switchCurrentActivityTo("TentaclesSexVag", ["choke"])
-		addText("{dom.You} {dom.youVerb('raise')} {sub.yourHis} leg, preparing to fuck {sub.yourHis} {pussy}.")
+		addText("{dom.You} {dom.youVerb('raise')} закидывает {sub.yourHis} ногу, готовясь трахнуть {sub.yourHis} {pussy}.")
 		react(SexReaction.StartChokeFuck)
 	if(_actionID == "startanaltentacles"):
 		switchCurrentActivityTo("TentaclesSexAnal", ["choke"])
-		addText("{dom.You} {dom.youVerb('raise')} {sub.yourHis} leg, preparing to fuck {sub.yourHis} {anus}.")
+		addText("{dom.You} {dom.youVerb('raise')} закидывает {sub.yourHis} ногу, готовясь трахнуть {sub.yourHis} {anus}.")
 		react(SexReaction.StartChokeFuck)
 	if(_actionID == "startridevag"):
 		switchCurrentActivityTo("DomRidingSubVaginal", ["choke"])
-		addText("{dom.You} {dom.youVerb('pin')} {sub.you} to the floor, about to ride {sub.yourHis} {cock} with {dom.yourHis} {pussy}.")
+		addText("{dom.You} {dom.youVerb('pin')} {sub.you} на пол, собираясь оседлать {sub.yourHis} {cock} с {dom.yourHis} {pussy}.")
 		react(SexReaction.StartChokeRide)
 	if(_actionID == "startrideanal"):
 		switchCurrentActivityTo("DomRidingSubAnal", ["choke"])
-		addText("{dom.You} {dom.youVerb('pin')} {sub.you} to the floor, about to ride {sub.yourHis} {cock} with {dom.yourHis} {ass}.")
+		addText("{dom.You} {dom.youVerb('pin')} {sub.you} на пол, собираясь оседлать {sub.yourHis} {cock} с {dom.yourHis} {ass}.")
 		react(SexReaction.StartChokeRide)
 		
 	if(_actionID == "escape"):
@@ -217,13 +217,13 @@ func doAction(_indx:int, _actionID:String, _action:Dictionary):
 				else:
 					setState("")
 			
-			addText("{sub.You} {sub.youVerb('manage')} to make {dom.youHim}"+(" [b]FULLY[/b]" if didFullyEscape else "")+" relax {dom.yourHis} grasp on your neck!")
+			addText("{sub.You} {sub.youVerb('manage')}, чтобы заставить {dom.youHim}"+(" [b]FULLY[/b]" if didFullyEscape else "")+" расслабить {dom.yourHis} хватку на твоей шее!")
 			reactSub(SexReaction.ActivelyResisting, [100])
 		else:
 			addTextPick([
-				"{sub.You} {sub.youVerb('try', 'tries')} to escape {dom.yourHis} grasp.",
-				"{sub.You} desperately {sub.youVerb('try', 'tries')} to escape {dom.yourHis} grasp.",
-				"{sub.You} desperately {sub.youVerb('try', 'tries')} to escape {dom.yourHis} choking.",
+				"{sub.You} {sub.youVerb('try', 'tries')}, чтобы вырваться из {dom.yourHis} хватки.",
+				"{sub.You} отчаянно {sub.youVerb('try', 'tries')}, чтобы вырваться из {dom.yourHis} хватки.",
+				"{sub.You} отчаянно {sub.youVerb('try', 'tries')}, чтобы перестать задыхаться от {dom.yourHis} удушения.",
 			])
 			react(SexReaction.ChokingHard, [30, 30])
 		

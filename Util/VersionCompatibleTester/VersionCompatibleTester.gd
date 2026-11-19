@@ -14,9 +14,9 @@ func updateTest():
 	var _inputText:String = input_line_edit.text
 	
 	if(Util.isVersionCompatible(_ourText, _inputText)):
-		label.text = "COMPATIBLE!"
+		label.text = "СОВМЕСТИМО!"
 	else:
-		label.text = " NOT COMPATIBLE"
+		label.text = " НЕСОВМЕСТИМО"
 
 func _on_OurLineEdit_text_changed(_new_text):
 	updateTest()

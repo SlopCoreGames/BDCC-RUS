@@ -33,7 +33,7 @@ func _ready():
 		"X-Naver-Client-Secret: E41Lj1N0V_",
 	]
 	
-	var stuffToSend = "source=en&target=de&text="+("Hello world").percent_encode()
+	var stuffToSend = "source=en&target=de&text="+("Привет, мир!").percent_encode()
 	
 	req.request("https://openapi.naver.com/v1/papago/n2mt", theheaders, true, HTTPClient.METHOD_POST, stuffToSend)
 
@@ -48,8 +48,8 @@ func translate(_targetLanguage, _inputText):
 	var theResult = {
 		error = false,
 		success = false,
-		errorMessage = "No error message provided",
-		resultText = "No text provided",
+		errorMessage = "Сообщение об ошибке не указано",
+		resultText = "Текст не предоставлен",
 	}
 	
 	var theheaders = [
@@ -64,20 +64,20 @@ func translate(_targetLanguage, _inputText):
 
 	if(reqerror != OK):
 		theResult["error"] = true
-		theResult["errorMessage"] = "An error occurred in the HTTP request."
+		theResult["errorMessage"] = "Произошла ошибка при HTTP-запросе."
 		return theResult
 	
 	var theData = yield(newreq, "request_completed")
 	
 	if(theData == null || !(theData is Array) || theData.size() != 4):
 		theResult["error"] = true
-		theResult["errorMessage"] = "HTTP request returned null data"
+		theResult["errorMessage"] = "HTTP-запрос вернул пустые данные"
 		return theResult
 	
 	var result = theData[0]
 	if result != HTTPRequest.RESULT_SUCCESS:
 		theResult["error"] = true
-		theResult["errorMessage"] = "HTTP request wasn't successful"
+		theResult["errorMessage"] = "HTTP-запрос не был успешным"
 		return theResult
 		
 	var theText:String = theData[3].get_string_from_utf8()
@@ -91,12 +91,12 @@ func translate(_targetLanguage, _inputText):
 	var theResultText:String = body.get_string_from_utf8()
 	if(theResultText.empty()):
 		theResult["error"] = true
-		theResult["errorMessage"] = "Empty response"
+		theResult["errorMessage"] = "Пустой ответ"
 		return theResult
 	var jsonResult = JSON.parse(theResultText)
 	if(jsonResult.error != OK):
 		theResult["error"] = true
-		theResult["errorMessage"] = "Couldn't parse json data"
+		theResult["errorMessage"] = "Не удалось разобрать JSON-данные"
 		return theResult
 	
 	var translateData = jsonResult.result
@@ -108,7 +108,7 @@ func translate(_targetLanguage, _inputText):
 		theResult["resultText"] = translateData["message"]["result"]["translatedText"]
 	else:
 		theResult["error"] = true
-		theResult["errorMessage"] = "Response doesn't contain the translated text"
+		theResult["errorMessage"] = "Ответ не содержит переведенного текста"
 	#print(theResult)
 	return theResult
 

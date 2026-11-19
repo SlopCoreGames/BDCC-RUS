@@ -21,7 +21,7 @@ func canBeUsed(_id:String, _args:Dictionary, _form) -> bool:
 
 func getText(_id:String, _args:Dictionary):
 	return [
-		"You left a trail, wasn't hard to find you.",
-		"I heard the noise of cum dripping.",
-		"Wasn't hard to find you, you're dripping everywhere.",
+		"Ты оставила след, тебя было нетрудно найти.",
+		"Я слышал, как капает сперма.",
+		"Тебя было несложно найти, ты вся течёшь.",
 	]

@@ -16,7 +16,7 @@ func setIsEditing(newEdit):
 	
 	if(newEdit || alwaysEdit):
 		$OptionButton.visible = true
-		$Button.text = "Save"
+		$Button.text = "Сохранить"
 		if(!alwaysEdit):
 			$Label.visible = false
 			$Label2.visible = false
@@ -31,7 +31,7 @@ func setIsEditing(newEdit):
 		$OptionButton.visible = false
 		$Label.visible = true
 		$Label2.visible = false
-		$Button.text = "Edit"
+		$Button.text = "Редактировать"
 
 func setSelectedValue(_value):
 	selectedValue = _value

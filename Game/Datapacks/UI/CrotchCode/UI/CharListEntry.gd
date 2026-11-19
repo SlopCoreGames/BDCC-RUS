@@ -23,7 +23,7 @@ func setEntry(theCharName, theEntry):
 	charAlias = theCharName
 	entry = theEntry.duplicate()
 	
-	name_label.text = "Full id: "+entry["realid"]
+	name_label.text = "Полный ID: "+entry["realid"]
 	
 	alias_var_ui.setData({
 		name = "Прозвище",

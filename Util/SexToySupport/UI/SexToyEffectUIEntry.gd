@@ -81,8 +81,8 @@ func updateSimpleEffectText():
 	var intensityText:String = str(Util.roundF(theValue.x*100.0))+"%"
 	var timeText:String = str(Util.roundF(theValue.y, 1))
 	
-	intensity_label.text = "Intensity "+intensityText
-	time_label.text = "For "+timeText+" seconds"
+	intensity_label.text = "Интенсивность "+intensityText
+	time_label.text = "За "+timeText+" seconds"
 
 func _on_EffectTypeOptionButton_item_selected(_index:int):
 	entry.type = _index

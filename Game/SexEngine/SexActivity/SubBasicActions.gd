@@ -5,8 +5,8 @@ func _init():
 	startedByDom = false
 	startedBySub = true
 	
-	activityName = "Basic actions"
-	activityDesc = "Basic things that a sub can do"
+	activityName = "Базовые действия"
+	activityDesc = "Базовые вещи, которые может делать саб"
 	activityCategory = []
 
 func getGoals():
@@ -34,23 +34,23 @@ func getStartActions(_sexEngine: SexEngine, _domInfo: SexDomInfo, _subInfo: SexS
 	
 	if(!_sexEngine.hasTag(_subInfo.charID, SexActivityTag.PreventsSubTeasing) && !_sexEngine.hasTag(_subInfo.charID, SexActivityTag.HavingSex) && !_sexEngine.hasTag(_subInfo.charID, SexActivityTag.VaginaPenetrated)&& !_sexEngine.hasTag(_subInfo.charID, SexActivityTag.AnusPenetrated) && !_sexEngine.hasTag(_subInfo.charID, SexActivityTag.MouthUsed)):
 		var teaseScore:float = _subInfo.getComplyScore() * 0.1 + _subInfo.getResistScore() * 0.05 + max(0.0, _subInfo.personalityScore({PersonalityStat.Impatient: 0.1}))
-		addStartAction(["tease"], "Tease", "Tease them", teaseScore, {A_CATEGORY: []})
+		addStartAction(["tease"], "Подразнить", "Дразнить их", teaseScore, {A_CATEGORY: []})
 		
 	var resistScore:float = _subInfo.getResistScore() * (0.15 + _subInfo.personalityScore({PersonalityStat.Subby: -0.1, PersonalityStat.Mean: 0.1, PersonalityStat.Coward: -0.05}))
 	if(!_sexEngine.hasTag(_subInfo.charID, SexActivityTag.PreventsSubViolence)):
 		if(_sexEngine.getSexTypeID() != SexType.SlutwallSex):
 			if(!_subInfo.getChar().hasBoundArms() && _sexEngine.getSexTypeID() != SexType.StocksSex):
-				addStartAction(["punch"], "Punch", "Hit them!", resistScore, {A_CATEGORY:[]})
+				addStartAction(["punch"], "Удар", "Ударить их!", resistScore, {A_CATEGORY:[]})
 			elif(!_subInfo.getChar().hasBoundLegs()):
-				addStartAction(["kick"], "Kick", "Hit them!", resistScore/1.5, {A_CATEGORY: []})
+				addStartAction(["kick"], "Удар ногой", "Ударить их!", resistScore/1.5, {A_CATEGORY: []})
 	
 	if(sub.getInventory().hasRemovableRestraintsNoLockedSmartlocks() && sub.getStamina() > 0):
 		var struggleScore:float = _subInfo.getResistScore() - _subInfo.getComplyScore()*_subInfo.fetishScore({Fetish.Bondage: 1.0})
-		addStartAction(["struggle"], "Restraints", "Struggle against your restraints", struggleScore, {A_CATEGORY: []})
+		addStartAction(["struggle"], "Фиксаторы", "Пытаться вырваться из пут", struggleScore, {A_CATEGORY: []})
 	
 	if(_domInfo.isAngry() && !_sexEngine.hasTag(_subInfo.charID, SexActivityTag.MouthUsed)):
 		var apologizeScore:float = _subInfo.getAboutToPassOutScore() + _subInfo.personalityScore({PersonalityStat.Coward: 0.2, PersonalityStat.Brat: -0.1, PersonalityStat.Subby: 0.2})
-		addStartAction(["apologize"], "Apologize", "Try to calm them down", apologizeScore, {A_CATEGORY: [], A_CHANCE: getApologySuccessChance(_sexEngine, _domInfo, _subInfo)})
+		addStartAction(["apologize"], "Принести извинения", "Попытаться их успокоить", apologizeScore, {A_CATEGORY: [], A_CHANCE: getApologySuccessChance(_sexEngine, _domInfo, _subInfo)})
 
 func getApologySuccessChance(_sexEngine, _domInfo, _subInfo) -> float:
 	var theChance = 90.0 - _domInfo.personalityScore({PersonalityStat.Mean: 1.0}) * 20.0
@@ -70,7 +70,7 @@ func startActivity(_args):
 		if(struggleData.empty()):
 			return
 		
-		var text:String = struggleData["text"] if struggleData.has("text") else "[color=red]ERROR? No struggle text provided[/color]"
+		var text:String = struggleData["text"] if struggleData.has("text") else "[color=red]ОШИБКА? Текст сопротивления не предоставлен[/color]"
 		
 		if(struggleData.has("lust") && struggleData["lust"] > 0):
 			getSubInfo().addLust(struggleData["lust"])
@@ -88,15 +88,15 @@ func startActivity(_args):
 	if(actionID in ["apologize"]):
 		endActivity()
 		var text:String = RNG.pick([
-			"{sub.You} {sub.youVerb('try', 'tries')} to apologize.",
-			"{sub.You} {sub.youVerb('attempt')} to apologize for {sub.yourHis} actions.",
+			"{sub.You} {sub.youVerb('try', 'tries')}, чтобы извиниться.",
+			"{sub.You} {sub.youVerb('attempt')}, чтобы извиниться за {sub.yourHis} действия.",
 		])
 		if(!RNG.chance(getApologySuccessChance(getSexEngine(), getDomInfo(), getSubInfo()))):
 			if(RNG.chance(30)):
 				getDomInfo().addAnger(0.1)
 				text += RNG.pick([
-					" That only made {dom.youHim} more angry.",
-					" That only made {dom.youHim} more eager for violence.",
+					" Это только заставило {dom.youHim} злиться еще сильнее.",
+					" Это только заставило {dom.youHim} еще больше жаждать насилия.",
 				])
 		else:
 			getDomInfo().addAnger(-0.3)

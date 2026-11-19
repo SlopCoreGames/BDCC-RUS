@@ -161,7 +161,7 @@ func wrapResponse(_res: Dictionary):
 	return null
 
 func getName():
-	return "Yandex"
+	return "Яндекс"
 
 func _init():
 	id = "yandex"

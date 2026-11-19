@@ -112,7 +112,7 @@ func addRep(_stat:String, _howMuch:float, _showMessage:bool = true):
 				var specialReq = repStat.getSpecialRequirementToReachLevel(curLevel+1, self)
 				if(specialReq != null && isPlayer()):
 					if(isPlayer() && !wasAbove):
-						addMessage("A special condition is required to reach the next level for '"+repStat.getVisibleName()+"'. Check the Reputation tab")
+						addMessage("Для перехода на следующий уровень «"+repStat.getVisibleName()+"» требуется особое условие. Проверьте вкладку «Репутация»")
 					scores[_stat] = neededScore
 				else:
 					if(!levels.has(_stat)):
@@ -152,9 +152,9 @@ func onRepLevelChanged(_stat:String, _newLevel:int, _wentUp:bool, _showMessage:b
 		if(repStat == null):
 			return
 		if(_wentUp):
-			addMessage("Your '"+str(repStat.getVisibleName())+"' went up a level. You are now known as [b]"+repStat.getTextForLevel(_newLevel, self)+"[/b]!")
+			addMessage("Your '"+str(repStat.getVisibleName())+"» повысила свой уровень. Теперь вы известны как [b]"+repStat.getTextForLevel(_newLevel, self)+"[/b]!")
 		else:
-			addMessage("Your '"+str(repStat.getVisibleName())+"' went down a level. You are now known as [b]"+repStat.getTextForLevel(_newLevel, self)+"[/b]!")
+			addMessage("Your '"+str(repStat.getVisibleName())+"» понизила свой уровень. Теперь вы известны как [b]"+repStat.getTextForLevel(_newLevel, self)+"[/b]!")
 
 func onRepScoreChanged(_stat:String, _newScore:float, _wentUp:bool, _showMessage:bool=true):
 	if(isPlayer()):
@@ -162,9 +162,9 @@ func onRepScoreChanged(_stat:String, _newScore:float, _wentUp:bool, _showMessage
 		if(repStat == null):
 			return
 		if(_wentUp):
-			addMessage("Your '"+str(repStat.getVisibleName())+"' got increased")
+			addMessage("Your '"+str(repStat.getVisibleName())+"» выросла")
 		else:
-			addMessage("Your '"+str(repStat.getVisibleName())+"' got decreased")
+			addMessage("Your '"+str(repStat.getVisibleName())+"» упала")
 
 func addRepBelowLevel(_stat:String, _howMuch:float, _level:int, _showMessage:bool = true):
 	var curLevel:int = getRepLevel(_stat)

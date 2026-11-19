@@ -16,7 +16,7 @@ func getArgs():
 		"code": {
 			"type": "bigstring",
 			"value": storedCode,
-			"text": "Condition",
+			"text": "Условие",
 		},
 	}
 

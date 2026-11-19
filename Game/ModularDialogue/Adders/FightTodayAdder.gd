@@ -32,19 +32,19 @@ func canBeUsed(_id:String, _args:Dictionary, _form) -> bool:
 func getText(_id:String, _args:Dictionary):
 	if(_id == "GuardCaughtOffLimits"):
 		return [
-			"And yeah, you're back so soon.",
-			"Oh yeah, last time wasn't enough?",
-			"You already lost today.",
+			"И да, ты вернулся так быстро.",
+			"О, неужели в прошлый раз было мало?",
+			"Ты уже проиграл сегодня.",
 		]
 	if(_id == "AttackStart"):
 		return [
-			"Missed me?",
-			"I'm gonna win again, you know it.",
+			"Скучал по мне?",
+			"Я снова выиграю, ты же это знаешь.",
 		]
 	if(_id == "AttackReact"):
 		return [
-			"You want more I guess..",
-			"I won. Why are you coming back?",
+			"Наверное, тебе мало...",
+			"Я победила. Чего ты приперся?",
 		]
 	
 	return []

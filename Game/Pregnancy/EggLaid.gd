@@ -38,7 +38,7 @@ func getEggDescription() -> String:
 	var resultGender:String = data.get("resultGender", NpcGender.Male)
 	var speciesArray:Array = data.get("resultSpecies", [])
 	
-	result += "Nursery will accept this egg.\n\n"
+	result += "Ясли примут это яйцо.\n\n"
 	
 	result += "Species: "+Util.getSpeciesName(speciesArray)
 	result += "\nMother: "+internal_charName(motherID)

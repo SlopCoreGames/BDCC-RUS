@@ -7,8 +7,8 @@ var isPermanent:bool = false
 func _init():
 	id = "SexDrawingOnBody"
 	
-	activityName = "Draw on body"
-	activityDesc = "Write something humiliating on them!"
+	activityName = "Рисовать на теле"
+	activityDesc = "Напиши на них что-нибудь унизительное!"
 	activityCategory = ["Humiliate"]
 
 func getGoals():
@@ -42,11 +42,11 @@ func getStartActions(_sexEngine: SexEngine, _domInfo: SexDomInfo, _subInfo: SexS
 		var randomZoneForWriting:int = BodyWritings.getRandomZoneForWritingID(writingID)
 		var randomZoneName:String = BodyWritingsZone.getZoneVisibleName(randomZoneForWriting)
 		
-		addStartAction([writingID, randomZoneForWriting, false], writingText, "Write '"+writingText+"' on the sub's "+randomZoneName, 0.0, {
+		addStartAction([writingID, randomZoneForWriting, false], writingText, "Написать '"+writingText+"' на теле подчиненной "+randomZoneName, 0.0, {
 			A_CATEGORY: ["Humiliate", "Draw on body"],
 		})
 		if(permanentMarkerAmount > 0):
-			addStartAction([writingID, randomZoneForWriting, true], writingText, "(You have "+str(permanentMarkerAmount)+" permanent marker"+("s" if permanentMarkerAmount != 1 else "")+")\n"+"Write '"+writingText+"' on the sub's "+randomZoneName, 0.0, {
+			addStartAction([writingID, randomZoneForWriting, true], writingText, "(У тебя есть "+str(permanentMarkerAmount)+" перманентный маркер)"+("s" if permanentMarkerAmount != 1 else "")+")\n"+"Написать '"+writingText+"' на теле подчиненной "+randomZoneName, 0.0, {
 				A_CATEGORY: ["Humiliate", "Draw (Permanent marker)"],
 			})
 	
@@ -72,7 +72,7 @@ func startActivity(_args):
 		
 	
 	affectSub(getSubInfo().fetishScore({Fetish.Bodywritings: 1.0}, -0.25), 0.01, -0.2, -0.02)
-	addText("{dom.You} {dom.youVerb('pull')} out a "+(" [b]black PERMANENT marker[/b]" if isPermanent else "[b]black marker[/b]")+".")
+	addText("{dom.You} {dom.youVerb('pull')} out a "+(" [b]черным ПЕРМАНЕНТНЫМ маркером[/b]" if isPermanent else "[b]черным маркером[/b]")+".")
 	react(SexReaction.AboutToDrawOnBody, [100.0, 50.0])
 
 func init_processTurn():
@@ -81,7 +81,7 @@ func init_processTurn():
 func drawsoon_processTurn():
 	state = "abouttodraw"
 	affectSub(getSubInfo().fetishScore({Fetish.Bodywritings: 1.0}, -0.25), 0.01, -0.2, -0.02)
-	addText("{dom.You} {dom.youVerb('move')} the"+(" [b]PERMANENT[/b]" if isPermanent else "")+" marker close to {sub.yourHis} body.")
+	addText("{dom.You} {dom.youVerb('move')} the"+(" [b]PERMANENT[/b]" if isPermanent else "")+" маркер рядом с телом {sub.yourHis}.")
 
 func abouttodraw_processTurn():
 	endActivity()
@@ -101,7 +101,7 @@ func abouttodraw_processTurn():
 	#sendSexEvent(SexEvent.BodyWritingAdded, DOM_0, SUB_0, {zone=zone,writingID=writingID,isPermanent=isPermanent})
 	satisfyGoal(SexGoal.AddBodywritings)
 	
-	addText("{dom.You} drew [b]'"+str(BodyWritings.getWritingText(writingID))+"'[/b] on {sub.yourHis} "+BodyWritingsZone.getZoneVisibleName(zone)+(" with a [b]PERMANENT[/b] marker" if isPermanent else "")+".")
+	addText("{dom.You} drew [b]'"+str(BodyWritings.getWritingText(writingID))+"'[/b] on {sub.yourHis} "+BodyWritingsZone.getZoneVisibleName(zone)+(" с [b]ПОСТОЯННЫМ[/b] маркером" if isPermanent else "")+".")
 	react(SexReaction.AfterDrawingOnBody, [100.0, 50.0])
 	var writingsAmount:int = getSub().getBodywritingsCount()
 	fetishAffect(SUB_0, Fetish.Bodywritings, 1.0 + sqrt(writingsAmount))
@@ -122,19 +122,19 @@ func getSubResistChance() -> float:
 func getActions(_indx:int):
 	if(_indx == SUB_0):
 		if(!getSub().hasBoundArms()):
-			addAction("resist", getResistScore(SUB_0) * 2.0, "Whack marker away", "Resist against the marker", {A_CHANCE: getSubResistChance()})
+			addAction("resist", getResistScore(SUB_0) * 2.0, "Отмахнуться от маркера", "Сопротивляться маркеру", {A_CHANCE: getSubResistChance()})
 
 func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "resist"):
 		if(RNG.chance(getSubResistChance())):
 			endActivity()
 			getDomInfo().addAnger(0.2)
-			addText("{sub.You} managed to whack the marker out of {dom.yourHis} hands!")
+			addText("{sub.You} удалось выбить маркер из рук {dom.yourHis}!")
 			reactSub(SexReaction.ActivelyResisting, [50])
 			fetishUp(SUB_0, Fetish.Bodywritings, -10.0)
 			return
 		
-		addText("{sub.You} {sub.youVerb('try', 'tries')} to whack the marker out of {dom.yourHis} hands but {sub.youVerb('fail')}.")
+		addText("{sub.You} {sub.youVerb('try', 'tries')} попыталась выбить маркер из рук {dom.yourHis}, но {sub.youVerb('fail')}.")
 		reactSub(SexReaction.Resisting, [50])
 		fetishUp(SUB_0, Fetish.Bodywritings, -15.0)
 		return

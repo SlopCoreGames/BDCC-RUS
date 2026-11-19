@@ -35,7 +35,7 @@ func _on_files_dropped(files, _screen):
 	var image = Image.new()
 	var err = image.load(theFilePath)
 	if err != OK:
-		showAlert("Couldn't load image from "+str(theFilePath)+"!")
+		showAlert("Не удалось загрузить изображение из "+str(theFilePath)+"!")
 		return
 	
 	var newTexture = ImageTexture.new()

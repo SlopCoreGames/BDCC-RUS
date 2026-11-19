@@ -140,8 +140,8 @@ func addRoom(floorID:String, roomID:String, roomPosition:Vector2, roomData:Dicti
 	newCell.global_position = mapRoomPos
 	
 	newCell.roomID = roomID
-	newCell.roomName = roomData["name"] if roomData.has("name") else "Unknown room"
-	newCell.roomDescription = roomData["desc"] if roomData.has("desc") else "You're standing in some kind of room. There is not much else to say about it."
+	newCell.roomName = roomData["name"] if roomData.has("name") else "Неизвестная комната"
+	newCell.roomDescription = roomData["desc"] if roomData.has("desc") else "Вы стоите в какой-то комнате. Сказать о ней особо нечего."
 	newCell.roomSprite = roomData["icon"] if roomData.has("icon") else RoomStuff.RoomSprite.NONE
 	newCell.roomColor = roomData["color"] if roomData.has("color") else RoomStuff.RoomColor.White
 	newCell.gridColor = roomData["gridColor"] if roomData.has("gridColor") else RoomStuff.RoomColor.White

@@ -88,10 +88,10 @@ func _on_AddFlagButton_pressed():
 	var newVarName = new_flag_line_edit.text
 	newVarName = Util.stripAllBadCharactersFromVarName(newVarName)
 	if(newVarName == ""):
-		showAlert("Flag name can not be empty")
+		showAlert("Название флага не может быть пустым")
 		return
 	if(datapack.flags.has(newVarName)):
-		showAlert("Flag with this name already exists")
+		showAlert("Флаг с таким названием уже существует")
 		return
 	
 	datapack.flags[newVarName] = {

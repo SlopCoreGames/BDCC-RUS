@@ -5,8 +5,8 @@ func _init():
 	startedByDom = true
 	startedBySub = false
 	
-	activityName = "Wear condom"
-	activityDesc = "Condom manipulation"
+	activityName = "Надеть презерватив"
+	activityDesc = "Манипуляции с презервативом"
 	activityCategory = ["Wear"]
 
 func getGoals():
@@ -37,12 +37,12 @@ func getStartActions(_sexEngine: SexEngine, _domInfo: SexDomInfo, _subInfo: SexS
 			wearCondomMult = 2.0
 		var wearCondomScore:float = getActivityScoreCustomGoals({SexGoal.SubOptionalCondomOnDom: 1.0}, _sexEngine, _domInfo, _subInfo) * wearCondomMult
 		if(!dom.getInventory().hasSlotEquipped(InventorySlot.Penis) && dom.getFirstItemThatCoversBodypart(BodypartSlot.Penis) == null):
-			addStartAction(["dom"], "Wear condom", "Put on your best condom", wearCondomScore, {A_CATEGORY: ["Wear"]})
+			addStartAction(["dom"], "Надеть презерватив", "Надеть лучший презерватив", wearCondomScore, {A_CATEGORY: ["Wear"]})
 		if(dom.getWornCondom() != null && dom.getFirstItemThatCoversBodypart(BodypartSlot.Penis) == null):
 			var domremCondomScore:float = 0.0
 			if(dom.isWearingNonEmptyCondom()):
 				domremCondomScore = 1.0
-			addStartAction(["domrem"], "Remove condom", "Take off your condom", domremCondomScore, {A_CATEGORY: ["Wear"]})
+			addStartAction(["domrem"], "Снять презерватив", "Сними свой презерватив", domremCondomScore, {A_CATEGORY: ["Wear"]})
 			
 		
 	if(!_sexEngine.hasTag(_subInfo.charID, SexActivityTag.PenisInside) && sub.hasReachablePenis()):
@@ -51,12 +51,12 @@ func getStartActions(_sexEngine: SexEngine, _domInfo: SexDomInfo, _subInfo: SexS
 			condomOnSubMult = 2.0
 		var condomOnSubScore:float = getActivityScoreCustomGoals({SexGoal.SubOptionalCondomOnSub: 1.0}, _sexEngine, _domInfo, _subInfo) * condomOnSubMult
 		if(!sub.getInventory().hasSlotEquipped(InventorySlot.Penis) && sub.getFirstItemThatCoversBodypart(BodypartSlot.Penis) == null):
-			addStartAction(["sub"], "Put condom on sub", "Put on your best condom on the sub", condomOnSubScore, {A_CATEGORY: ["Wear"]})
+			addStartAction(["sub"], "Надеть презерватив на подчиненную", "Надеть на подчиненную свой лучший презерватив", condomOnSubScore, {A_CATEGORY: ["Wear"]})
 		if(sub.getWornCondom() != null && sub.getFirstItemThatCoversBodypart(BodypartSlot.Penis) == null):
 			var subremCondomScore:float = 0.0
 			if(sub.isWearingNonEmptyCondom()):
 				subremCondomScore = 1.0
-			addStartAction(["subrem"], "Remove sub's condom", "Take off the sub's condom", subremCondomScore, {A_CATEGORY: ["Wear"]})
+			addStartAction(["subrem"], "Снять презерватив с подчиненной", "Сорвать презерватив с подчиненной", subremCondomScore, {A_CATEGORY: ["Wear"]})
 			
 func getTags(_indx:int) -> Array:
 	if(_indx == DOM_0):
@@ -72,7 +72,7 @@ func startActivity(_args):
 		theCondom.destroyMe()
 		getSexEngine().saveCondomToLootIfPerk(theCondom)
 		
-		addText("{dom.You} {dom.youVerb('pull')} off a used condom from {sub.yourHis} {dom.penisShort} and {dom.youVerb('dispose')} of it.")
+		addText("{dom.You} {dom.youVerb('pull')} использованный презерватив с {sub.yourHis} {dom.penisShort} и {dom.youVerb('dispose')} его.")
 		return
 	if(_args[0] == "subrem"):
 		endActivity()
@@ -82,7 +82,7 @@ func startActivity(_args):
 		theCondom.destroyMe()
 		getSexEngine().saveCondomToLootIfPerk(theCondom)
 		
-		addText("{dom.You} {dom.youVerb('pull')} off a used condom from {sub.your} {sub.penisShort} and {dom.youVerb('dispose')} of it.")
+		addText("{dom.You} {dom.youVerb('pull')} использованный презерватив с {sub.your} {sub.penisShort} и {dom.youVerb('dispose')} его.")
 		return
 	
 	var breakChance:float = 20
@@ -97,12 +97,12 @@ func startActivity(_args):
 	if(_args[0] == "dom"):
 		getDom().getInventory().equipItem(condomItem)
 		
-		addText("{dom.You} {dom.youVerb('put')} a condom on {dom.yourHis} cock.")
+		addText("{dom.You} {dom.youVerb('put')} презерватив на {dom.yourHis} член.")
 		react(SexReaction.DomPutsOnACondom)
 		return
 	if(_args[0] == "sub"):
 		getSub().getInventory().equipItem(condomItem)
 	
-		addText("{dom.You} {dom.youVerb('put')} a condom on {sub.your} cock.")
+		addText("{dom.You} {dom.youVerb('put')} надевает презерватив на {sub.your} член.")
 		react(SexReaction.DomPutsOnACondomOnSub)
 		return

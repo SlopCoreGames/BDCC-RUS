@@ -20,7 +20,7 @@ func getInteractInfo() -> Dictionary:
 			{
 				id = "approach",
 				name = "Подойти",
-				desc = "See what's up",
+				desc = "Посмотреть, что там",
 				args = [],
 				disabled = false,
 			},

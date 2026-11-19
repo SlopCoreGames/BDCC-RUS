@@ -150,7 +150,7 @@ func getInteractInfo() -> Dictionary:
 			{
 				id = "approach",
 				name = "Подойти",
-				desc = "See what's up",
+				desc = "Посмотреть, что там",
 				args = [],
 				disabled = false,
 			},
@@ -265,7 +265,7 @@ func doBuyItem(entry:Dictionary):
 	GM.pc.getInventory().addItem(GlobalRegistry.createItem(itemID))
 	GM.pc.addCredits(-cost)
 	
-	GM.main.addMessage("You bought "+itemRef.getAStackName()+" from Kidlat!")
+	GM.main.addMessage("Вы купили у "+itemRef.getAStackName()+" Кидлата!")
 	entry["sold"] = true
 	
 	setModuleFlag("KidlatItemsBought", getModuleFlag("KidlatItemsBought", 0)+1)
@@ -284,7 +284,7 @@ func doStealAll():
 		if(itemRef == null):
 			continue
 		GM.pc.getInventory().addItem(GlobalRegistry.createItem(itemID))
-		GM.main.addMessage("You stole "+itemRef.getAStackName()+" from Kidlat!")
+		GM.main.addMessage("Вы украли у "+itemRef.getAStackName()+" Кидлата!")
 		entry["sold"] = true
 		
 		#setModuleFlag("KidlatItemsBought", getModuleFlag("KidlatItemsBought", 0)+1)

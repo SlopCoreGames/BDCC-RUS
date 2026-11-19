@@ -64,13 +64,13 @@ func process(_text:String, variablesObject) -> String:
 			elif(curLex == LEX_START):
 				state = STATE_STARTED
 			else:
-				result += insertError("Unexpected token: "+str(lexToStr(curLex)))
+				result += insertError("Неожиданный токен: "+str(lexToStr(curLex)))
 		elif(state == STATE_STARTED):
 			if(curLex in [LEX_STRING, LEX_VAR]):
 				firstVarLex = curLexData
 				state = STATE_GOT_VARORSTRING
 			else:
-				result += insertError("Unexpected token: "+str(lexToStr(curLex))+". Expected: variable or string")
+				result += insertError("Неожиданный токен: "+str(lexToStr(curLex))+". Ожидалось: переменная или строка")
 				while(_lexems.size() > 0 && _lexems[0][0] != LEX_TEXT && _lexems[0][0] != LEX_EOF): # Skip all garbage
 					_lexems.pop_front()
 				state = STATE_NORMAL
@@ -83,7 +83,7 @@ func process(_text:String, variablesObject) -> String:
 					if(variablesObject.hasInterpolatorVar(varName)):
 						result += str(variablesObject.getInterpolatorVar(varName))
 					else:
-						result += insertError("VARIABLE NOT DEFINED: "+str(varName))
+						result += insertError("ПЕРЕМЕННАЯ НЕ ОПРЕДЕЛЕНА: "+str(varName))
 						while(_lexems.size() > 0 && _lexems[0][0] != LEX_TEXT && _lexems[0][0] != LEX_EOF): # Skip all garbage
 							_lexems.pop_front()
 						state = STATE_NORMAL
@@ -91,7 +91,7 @@ func process(_text:String, variablesObject) -> String:
 			elif(curLex == LEX_IF):
 				state = STATE_GOT_IF
 			else:
-				result += insertError("Unexpected token: "+str(lexToStr(curLex))+". Expected: if or }}")
+				result += insertError("Неожиданный токен: "+str(lexToStr(curLex))+". Ожидалось: if или }}")
 				while(_lexems.size() > 0 && _lexems[0][0] != LEX_TEXT && _lexems[0][0] != LEX_EOF): # Skip all garbage
 					_lexems.pop_front()
 				state = STATE_NORMAL
@@ -100,7 +100,7 @@ func process(_text:String, variablesObject) -> String:
 				secondVarLex = curLexData
 				state = STATE_GOT_IF_VAR
 			else:
-				result += insertError("Unexpected token: "+str(lexToStr(curLex))+". Expected: variable")
+				result += insertError("Неожиданный токен: "+str(lexToStr(curLex))+". Expected: variable")
 				while(_lexems.size() > 0 && _lexems[0][0] != LEX_TEXT && _lexems[0][0] != LEX_EOF): # Skip all garbage
 					_lexems.pop_front()
 				state = STATE_NORMAL
@@ -117,12 +117,12 @@ func process(_text:String, variablesObject) -> String:
 							if(variablesObject.hasInterpolatorVar(varNameFirst)):
 								result += str(variablesObject.getInterpolatorVar(varNameFirst))
 							else:
-								result += insertError("VARIABLE NOT DEFINED: "+str(varNameFirst))
+								result += insertError("ПЕРЕМЕННАЯ НЕ ОПРЕДЕЛЕНА: "+str(varNameFirst))
 								while(_lexems.size() > 0 && _lexems[0][0] != LEX_TEXT && _lexems[0][0] != LEX_EOF): # Skip all garbage
 									_lexems.pop_front()
 								state = STATE_NORMAL
 				else:
-					result += insertError("VARIABLE NOT DEFINED: "+str(varName))
+					result += insertError("ПЕРЕМЕННАЯ НЕ ОПРЕДЕЛЕНА: "+str(varName))
 					while(_lexems.size() > 0 && _lexems[0][0] != LEX_TEXT && _lexems[0][0] != LEX_EOF): # Skip all garbage
 						_lexems.pop_front()
 					state = STATE_NORMAL
@@ -130,7 +130,7 @@ func process(_text:String, variablesObject) -> String:
 			elif(curLex == LEX_ELSE):
 				state = STATE_GOT_IF_VAR_ELSE
 			else:
-				result += insertError("Unexpected token: "+str(lexToStr(curLex))+". Expected: else or }}")
+				result += insertError("Неожиданный токен: "+str(lexToStr(curLex))+". Ожидалось: else или }}")
 				while(_lexems.size() > 0 && _lexems[0][0] != LEX_TEXT && _lexems[0][0] != LEX_EOF): # Skip all garbage
 					_lexems.pop_front()
 				state = STATE_NORMAL
@@ -139,7 +139,7 @@ func process(_text:String, variablesObject) -> String:
 				thirdVarLex = curLexData
 				state = STATE_GOT_IF_VAR_ELSE_VARORSTRING
 			else:
-				result += insertError("Unexpected token: "+str(lexToStr(curLex))+". Expected: variable or string")
+				result += insertError("Неожиданный токен: "+str(lexToStr(curLex))+". Ожидалось: переменная или строка")
 				while(_lexems.size() > 0 && _lexems[0][0] != LEX_TEXT && _lexems[0][0] != LEX_EOF): # Skip all garbage
 					_lexems.pop_front()
 				state = STATE_NORMAL
@@ -157,7 +157,7 @@ func process(_text:String, variablesObject) -> String:
 							if(variablesObject.hasInterpolatorVar(varNameFirst)):
 								result += str(variablesObject.getInterpolatorVar(varNameFirst))
 							else:
-								result += insertError("VARIABLE NOT DEFINED: "+str(varNameFirst))
+								result += insertError("ПЕРЕМЕННАЯ НЕ ОПРЕДЕЛЕНА: "+str(varNameFirst))
 								while(_lexems.size() > 0 && _lexems[0][0] != LEX_TEXT && _lexems[0][0] != LEX_EOF): # Skip all garbage
 									_lexems.pop_front()
 								state = STATE_NORMAL
@@ -170,18 +170,18 @@ func process(_text:String, variablesObject) -> String:
 							if(variablesObject.hasInterpolatorVar(varNameThird)):
 								result += str(variablesObject.getInterpolatorVar(varNameThird))
 							else:
-								result += insertError("VARIABLE NOT DEFINED: "+str(varNameThird))
+								result += insertError("ПЕРЕМЕННАЯ НЕ ОПРЕДЕЛЕНА: "+str(varNameThird))
 								while(_lexems.size() > 0 && _lexems[0][0] != LEX_TEXT && _lexems[0][0] != LEX_EOF): # Skip all garbage
 									_lexems.pop_front()
 								state = STATE_NORMAL
 				else:
-					result += insertError("VARIABLE NOT DEFINED: "+str(varName))
+					result += insertError("ПЕРЕМЕННАЯ НЕ ОПРЕДЕЛЕНА: "+str(varName))
 					while(_lexems.size() > 0 && _lexems[0][0] != LEX_TEXT && _lexems[0][0] != LEX_EOF): # Skip all garbage
 						_lexems.pop_front()
 					state = STATE_NORMAL
 				state = STATE_NORMAL
 			else:
-				result += insertError("Unexpected token: "+str(lexToStr(curLex))+". Expected: }}")
+				result += insertError("Неожиданный токен: "+str(lexToStr(curLex))+". Expected: }}")
 				while(_lexems.size() > 0 && _lexems[0][0] != LEX_TEXT && _lexems[0][0] != LEX_EOF): # Skip all garbage
 					_lexems.pop_front()
 				state = STATE_NORMAL

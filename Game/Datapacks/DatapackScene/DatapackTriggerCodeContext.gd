@@ -99,7 +99,7 @@ func react(_triggerID, _args):
 	
 	if(storedErrors.size() > 0):
 		for errorText in storedErrors:
-			event.addMessage("[color=red](Trigger for scene: "+str(datapack.id)+":"+str(datapackScene.id)+") "+errorText+"[/color]")
+			event.addMessage("[color=red](Триггер для сцены:"+str(datapack.id)+":"+str(datapackScene.id)+") "+errorText+"[/color]")
 		storedErrors = []
 	
 	reactMode = false

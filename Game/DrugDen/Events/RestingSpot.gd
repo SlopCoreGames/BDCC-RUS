@@ -19,14 +19,14 @@ func getInteractInfo() -> Dictionary:
 			{
 				id = "rest",
 				name = "Отдохнуть",
-				desc = "Fully restore your stamina.",
+				desc = "Полностью восстановить выносливость.",
 				args = [],
 				disabled = false,
 			},
 			{
 				id = "masturbate",
 				name = "Подрочить",
-				desc = "Get rid of your lust. Your hands and arms have to be free.",
+				desc = "Избавиться от похоти. Ваши руки и предплечья должны быть свободны.",
 				args = [],
 				disabled = (GM.pc.hasBoundArms() || GM.pc.hasBlockedHands()),
 			},
@@ -37,10 +37,10 @@ func doInteract(_actionID:String, _args:Array = []) -> Dictionary:
 	if(_actionID == "rest"):
 		GM.pc.addStamina(GM.pc.getMaxStamina())
 		GM.pc.addIntoxication(-0.5)
-		return {text="You rest for a bit and now feel energized.", ended=true, anim=[StageScene.Sleeping, "sleep"]}
+		return {text="Вы немного отдыхаете и чувствуете прилив сил.", ended=true, anim=[StageScene.Sleeping, "sleep"]}
 	
 	GM.pc.orgasmFrom("pc")
-	return {text="You get as comfy as you can and masturbate until you cum, which helps to clear your mind!", ended=true, anim=[StageScene.Grope, "watchstroke" if GM.pc.hasReachablePenis() else "watchrub", {onlyPC=true, pcCum=true, bodyState={naked=true,hard=true}}]}
+	return {text="Вы устраиваетесь поудобнее и мастурбируете до самого кончика, что помогает прояснить мысли!", ended=true, anim=[StageScene.Grope, "watchstroke" if GM.pc.hasReachablePenis() else "watchrub", {onlyPC=true, pcCum=true, bodyState={naked=true,hard=true}}]}
 
 func getMapIcon():
 	return RoomStuff.RoomSprite.BED

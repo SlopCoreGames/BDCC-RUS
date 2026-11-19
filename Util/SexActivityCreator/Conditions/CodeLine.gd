@@ -16,7 +16,7 @@ func getArgs():
 		"code": {
 			"type": "string",
 			"value": storedCode,
-			"text": "Code",
+			"text": "Код",
 		},
 	}
 

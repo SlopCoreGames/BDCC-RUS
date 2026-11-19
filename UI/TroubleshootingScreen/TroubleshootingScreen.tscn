@@ -121,7 +121,7 @@ size_flags_stretch_ratio = 0.35
 margin_right = 327.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 0, 50 )
-text = "CLOSE"
+text = "ЗАКРЫТЬ"
 
 [node name="LogsItemList" type="ItemList" parent="ViewLogsContainer/VBoxContainer/VBoxContainer"]
 unique_name_in_owner = true
@@ -178,7 +178,7 @@ size_flags_horizontal = 3
 margin_right = 631.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 0, 50 )
-text = "CLOSE"
+text = "ЗАКРЫТЬ"
 
 [node name="FileInfoLabel" type="RichTextLabel" parent="ManageFilesContainer/VBoxContainer/VBoxContainer2"]
 unique_name_in_owner = true
@@ -242,7 +242,7 @@ unique_name_in_owner = true
 margin_right = 100.0
 margin_bottom = 40.0
 rect_min_size = Vector2( 100, 40 )
-text = "SAVE"
+text = "СОХРАНИТЬ"
 
 [node name="CancelFileEditButton" type="Button" parent="EditFileContainer/VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
@@ -250,7 +250,7 @@ margin_left = 104.0
 margin_right = 204.0
 margin_bottom = 40.0
 rect_min_size = Vector2( 100, 40 )
-text = "CANCEL"
+text = "ОТМЕНА"
 
 [node name="FileTextEdit" type="TextEdit" parent="EditFileContainer/VBoxContainer"]
 unique_name_in_owner = true

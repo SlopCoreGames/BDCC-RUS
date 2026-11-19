@@ -60,7 +60,7 @@ func _init():
 func _ready():
 	bodypartStorageNode = Node.new()
 	add_child(bodypartStorageNode)
-	bodypartStorageNode.name = "Bodyparts"
+	bodypartStorageNode.name = "Части тела"
 	resetSlots()
 	inventory = Inventory.new()
 	add_child(inventory)
@@ -145,7 +145,7 @@ func getName() -> String:
 	return name
 	
 func getSmallDescription() -> String:
-	return "Test test test"
+	return "Тест тест тест"
 
 func getSmallDescriptionWithRelationship() -> String:
 	var result:String = getSmallDescription()
@@ -191,9 +191,9 @@ func addEffect(effectID: String, args = []):
 	if(RNG.chance(clamp(immunity, 0.0, 1.0)*100.0) || GlobalRegistry.getStatusEffectRef(effectID).checkAvoidedBuff(self)):
 		if(GM.main != null && GM.main.characterIsVisible(getID())):
 			if(isPlayer()):
-				GM.main.addMessage("You managed to avoid the '"+GlobalRegistry.getStatusEffectRef(effectID).getEffectName()+"' status effect!")
+				GM.main.addMessage("Вам удалось избежать эффекта «"+GlobalRegistry.getStatusEffectRef(effectID).getEffectName()+"»!")
 			else:
-				GM.main.addMessage(getName()+" managed to avoid the '"+GlobalRegistry.getStatusEffectRef(effectID).getEffectName()+"' status effect!")
+				GM.main.addMessage(getName()+" удалось избежать эффекта «"+GlobalRegistry.getStatusEffectRef(effectID).getEffectName()+"»!")
 		return false
 	
 	var effect = GlobalRegistry.createStatusEffect(effectID)
@@ -463,23 +463,23 @@ func setFightingStateDefocusing():
 
 func lustDamageReaction(lustDamage, _enemy):
 	if(lustDamage <= -10):
-		return getName() + " got very turned off by the sight"
+		return getName() + " сильно разочаровало зрелище"
 	if(lustDamage <= -6):
-		return getName() + " didn't like that at all"
+		return getName() + " совсем это не понравилось"
 	if(lustDamage <= -3):
-		return getName() + " sighs and shakes "+hisHer()+" head"
+		return getName() + " вздыхает и качает головой "+hisHer()+" head"
 	if(lustDamage == 0):
-		return getName() + " didn't seem to care at all"
+		return getName() + " казалось, совершенно не волнует"
 	if(lustDamage <= 5):
-		return getName() + " seems intrigued"
+		return getName() + " кажется заинтригованным"
 	if(lustDamage <= 10):
-		return getName() + " smiles eagerly and watches the show"
+		return getName() + " жадно улыбается и наблюдает за зрелищем"
 	if(lustDamage <= 10):
-		return getName() + " blushes watching " + _enemy.getName()
+		return getName() + " краснеет при виде происходящего " + _enemy.getName()
 	if(lustDamage <= 15):
-		return getName() + " exhalled deeply while rubbing "+hisHer()+" legs together"
+		return getName() + " глубоко выдохнула, потирая... "+hisHer()+" сводит ноги вместе"
 	if(lustDamage > 15):
-		return getName() + " moans audibly, "+hisHer()+" eyes burn with desire"
+		return getName() + " громко стонет, "+hisHer()+" глаза горят от желания"
 
 func getGender():
 	return Gender.Other
@@ -721,33 +721,33 @@ func getSpeciesFullName():
 	
 func getFightIntro(_battleName):
 	if(_battleName == "DrugDenEncounter"):
-		var theText:String = "You run into a junkie. Looks like "+heShe()+" "+isAre()+"n't happy to see you."
-		theText += "\n\nThe junkie gets into the combat stance and prepares to fight."
+		var theText:String = "Вы натыкаетесь на торчка. Похоже, он "+heShe()+" "+isAre()+"не особо рад вас видеть."
+		theText += "\n\nТорчок встает в боевую стойку и готовится к драке."
 		return theText
 		
-	return getName() + " gets into the combat stance and prepares for a fight."
+	return getName() + " принимает боевую стойку и готовится к драке."
 
 func getFightState(_battleName):
 	if(getPainLevel() > getLustLevel()):
 		var mypain = getPainLevel() * 100
 		
 		if(mypain >= 70):
-			return getName() + " constantly grunts from pain. "+heShe()+" can barely stand at this point, all "+hisHer()+" bruises are really wearing "+himHer()+" down"
+			return getName() + " постоянно кряхтит от боли. "+heShe()+" едва держится на ногах, все "+hisHer()+" синяки уже порядком "+himHer()+" down"
 		if(mypain >= 50):
-			return getName() + " looks pretty beat up and "+hisHer()+" face shows it but "+heShe()+" is still standing strong"
+			return getName() + " выглядит довольно потрепанным и "+hisHer()+" лицо это выдает, но "+heShe()+" все еще держится молодцом"
 		if(mypain >= 25):
-			return getName() + " has a bruise there and there but "+heShe()+" clearly won't give up the fight any time soon"
+			return getName() + " есть тут и там синяки, но "+heShe()+" явно не собирается сдаваться в ближайшее время"
 	else:
 		var mylust = getLustLevel() * 100
 		
 		if(mylust >= 70):
-			return getName() + " keeps moaning to "+himselfHerself()+" and can't hide the arousal anymore, "+heShe()+" blatantly gropes and rubs "+hisHer()+" body in front of you"
+			return getName() + " продолжает стонать от "+himselfHerself()+" и больше не может скрывать возбуждение, "+heShe()+" нагло лапает и трет "+hisHer()+" тело перед тобой"
 		if(mylust >= 50):
-			return getName() + " breathes warmly, "+hisHer()+" blush starts to shine through, "+ heShe()+" is lusty and "+hisHer()+" eyes show it"
+			return getName() + " тепло дышит, "+hisHer()+" румянец начинает проступать, "+ heShe()+" изнывает от похоти и "+hisHer()+" глаза выдают её"
 		if(mylust >= 25):
-			return getName() + " looks alright but you notice some desire in "+hisHer()+" eyes"
+			return getName() + " выглядит нормально, но ты замечаешь в ней желание, "+hisHer()+" eyes"
 		
-	return getName() + " looks completely fine, no visible bruises or signs of lust"
+	return getName() + " выглядит совершенно нормально, без видимых синяков или признаков похоти"
 
 func getLootTable(_battleName):
 	return LootTableBase.new()
@@ -835,19 +835,19 @@ func getFluidType(fluidSource):
 	if(fluidSource == FluidSource.Penis):
 		if(hasBodypart(BodypartSlot.Penis)):
 			return getBodypart(BodypartSlot.Penis).getFluidType(fluidSource)
-		return "Cum"
+		return "Кончить"
 	if(fluidSource == FluidSource.Vagina):
 		if(hasBodypart(BodypartSlot.Vagina)):
 			return getBodypart(BodypartSlot.Vagina).getFluidType(fluidSource)
-		return "GirlCum"
+		return "ДевичьяСперма"
 	if(fluidSource == FluidSource.Strapon):
-		return "CumLube"
+		return "СмазкаСперма"
 	if(fluidSource == FluidSource.Breasts):
 		if(hasBodypart(BodypartSlot.Breasts)):
 			return getBodypart(BodypartSlot.Breasts).getFluidType(fluidSource)
-		return "Milk"
+		return "Молоко"
 	if(fluidSource == FluidSource.Pissing):
-		return "Piss"
+		return "Моча"
 		
 	return null
 
@@ -1378,9 +1378,9 @@ func layEggsByNPCWithNotificationIfNeeded():
 		return
 		
 	if(getMenstrualCycle().isPregnantFromPlayer(false, true)):
-		GM.main.addLogMessage("News", "You just received news that "+getName()+" laid the eggs containing your offspring! The eggs were brought to the nursery.")
+		GM.main.addLogMessage("Новости", "Ты только что получил известие, что "+getName()+" отложила яйца с твоим потомством! Яйца уже отнесли в инкубатор.")
 	else:
-		GM.main.addLogMessage("News", "Rumors spread fast. You just received news that "+getName()+" has laid eggs!")
+		GM.main.addLogMessage("Новости", "Слухи разлетаются мгновенно. Ты только что узнал(а), что "+getName()+" отложила яйца!")
 	
 	var laidEggs := menstrualCycle.layEggs()
 	for theEgg in laidEggs:
@@ -2427,15 +2427,15 @@ func hasVirileFluidsIn(bodypartSlot:String) -> bool:
 #example return values: some cum | a mixture of cum and girlcum | a mixture of cum, black goo and girlcum
 func getBodypartContentsStringList(bodypartID):
 	if(!hasBodypart(bodypartID)):
-		return "some cum"
+		return "немного спермы"
 	var bodypart = getBodypart(bodypartID)
 	var orifice = bodypart.getOrifice()
 	if(orifice == null):
-		return "some cum"
+		return "немного спермы"
 	
 	var messFluids = orifice.getFluidList()
 	if(messFluids == null || messFluids.size() == 0):
-		return "some cum"
+		return "немного спермы"
 	
 	var processedFluidNames = []
 	for fluidID in messFluids:
@@ -2444,7 +2444,7 @@ func getBodypartContentsStringList(bodypartID):
 	if(processedFluidNames.size() == 1):
 		return "some "+processedFluidNames[0]
 	
-	return "a mixture of "+Util.humanReadableList(processedFluidNames)
+	return "смесь "+Util.humanReadableList(processedFluidNames)
 
 func bodypartTransferFluidsTo(bodypartID, otherCharacterID, otherBodypartID, fraction = 0.5, minAmount = 0.0):
 	if(!hasBodypart(bodypartID)):
@@ -2879,13 +2879,13 @@ func isCoveredInFluids():
 	return true
 
 func isCoveredInCum():
-	return bodyFluids.hasFluidType("Cum")
+	return bodyFluids.hasFluidType("Кончить")
 
 func isCoveredInGirlCum():
-	return bodyFluids.hasFluidType("GirlCum")
+	return bodyFluids.hasFluidType("ДевичьяСперма")
 
 func isCoveredInPiss():
-	return bodyFluids.hasFluidType("Piss")
+	return bodyFluids.hasFluidType("Моча")
 
 func afterTakingAShower():
 	#addStamina(30)
@@ -2916,14 +2916,14 @@ func shouldCondomBreakWhenFucking(characterPenetrated, chance: float = 20.0, sho
 		if(RNG.chance(chance)):
 			character.addPain(-20)
 			if(showMessages && character.isPlayer()):
-				GM.main.addMessage("You didn't even sabotage that condom.. but it still feels good..")
+				GM.main.addMessage("Ты даже не пытался испортить этот презерватив... но ощущения всё равно кайфовые...")
 			return true
 		
 		chance = clamp((chance * 3.0), 30, 95) #limits max chance to break to 95%
 		if(RNG.chance(chance) && !character.hasBlockedHands()):
 			character.addPain(-20)
 			if(showMessages && character.isPlayer()):
-				GM.main.addMessage("Your hands sneakily sabotage the condom.. feels good..")
+				GM.main.addMessage("Твои руки незаметно портят презерватив... чертовски приятно...")
 			return true
 		return false
 	
@@ -2997,7 +2997,7 @@ func checkSkins(applyRandomSkinOnFail = false):
 		if(applyRandomSkinOnFail):
 			applyRandomSkin()
 		else:
-			pickedSkin = "EmptySkin"
+			pickedSkin = "ПустаяКожа"
 	
 	for bodypartSlot in bodyparts:
 		if(!hasBodypart(bodypartSlot)):
@@ -3046,7 +3046,7 @@ func sendSexEvent(event):
 
 func onSexEvent(_event : SexEvent):
 	if(_event == null):
-		Log.error("GOT A NULL SEX EVENT")
+		Log.error("ПРОИЗОШЛО ПУСТОЕ СЕКС-СОБЫТИЕ")
 		return
 	print(getID()+" GOT SEX EVENT "+str(_event.type)+" SOURCE:"+str(_event.sourceCharID)+" TARGET:"+str(_event.targetCharID)+" "+str(_event.data))
 
@@ -3203,10 +3203,10 @@ func getUndressMessage(withS):
 	
 	if(res.size() == 0):
 		if(withS):
-			return "takes all your clothes off"
+			return "снимает с тебя всю одежду"
 		else:
-			return "take all your clothes off"
-	return Util.humanReadableList(res, "and also")
+			return "снять с тебя всю одежду"
+	return Util.humanReadableList(res, "а также")
 
 func isWearingInvisiblePortalPanties():
 	return false
@@ -3234,7 +3234,7 @@ func isSlaveToPlayer():
 	return false
 
 func isPlayerOwner() -> bool:
-	return GM.main.RS.hasSpecialRelationshipID(getID(), "SoftSlavery")
+	return GM.main.RS.hasSpecialRelationshipID(getID(), "Мягкое Рабство")
 
 func isSlaveTo(_charID:String) -> bool:
 	if(_charID == "pc"):
@@ -3524,11 +3524,11 @@ func doStruggleOutOfRestraints(isScared:bool = false, addStats:bool = true, cust
 		var damage = struggleData["damage"] * damageMult
 		restraintData.takeDamage(damage)
 		if(damage > 0.0):
-			text += ("\n{actor.You} "+("made" if customActor == null else "helped to make")+" "+str(Util.roundF(damage*100.0, 1))+"% of progress, "+str(Util.roundF(max(0.0, restraintData.getTightness()*100.0), 1))+"% left.")
+			text += ("\n{actor.You} "+("made" if customActor == null else "помогло достичь")+" "+str(Util.roundF(damage*100.0, 1))+"% o прогресса, "+str(Util.roundF(max(0.0, restraintData.getTightness()*100.0), 1))+"% осталось.")
 		elif(damage < 0.0):
-			text += ("\n{user.You} lost "+str(Util.roundF(abs(damage)*100.0, 1))+"% of progress, "+str(Util.roundF(max(0.0, restraintData.getTightness()*100.0), 1))+"% left.")
+			text += ("\n{user.You} lost "+str(Util.roundF(abs(damage)*100.0, 1))+"% o прогресса, "+str(Util.roundF(max(0.0, restraintData.getTightness()*100.0), 1))+"% осталось.")
 		else:
-			text += ("\n{actor.You} made no progress, "+str(Util.roundF(max(0.0, restraintData.getTightness()*100.0), 1))+"% left.")
+			text += ("\n{actor.You} не продвинулся вперед, "+str(Util.roundF(max(0.0, restraintData.getTightness()*100.0), 1))+"% осталось.")
 	
 	if(addStats):
 		if(struggleData.has("lust") && struggleData["lust"] > 0):
@@ -3591,7 +3591,7 @@ func canAutoLevelUpFromFights() -> bool:
 
 func onAutoLevelUp():
 	if(GM.main != null && GM.main.characterIsVisible(getID())):
-		GM.main.addMessage(getName()+" has reached level "+str(getLevel()))
+		GM.main.addMessage(getName()+" достиг уровня "+str(getLevel()))
 	
 	autoSpendFreeStatPoints()
 

@@ -143,7 +143,7 @@ class ComputerFileSorting:
 
 
 # returns compfile. note that this doesn't assign an id if specified id is -1!
-func newCompFile(n:String,cat:String="it's a file!",f:String="",down:bool=true,i=-1,meth:String="") -> ComputerFile:
+func newCompFile(n:String,cat:String="это файл!",f:String="",down:bool=true,i=-1,meth:String="") -> ComputerFile:
 	var nf = ComputerFile.new()
 	nf.name = n
 	nf.catData = cat
@@ -235,7 +235,7 @@ func help(_args:Array=[]):
 	if !currentServer:
 		return "ERROR: can't get connected server with ip "+connectedTo
 	if _args.size()==1: # for one command
-		var result = "Couldn't find command '"+str(_args[0])+"'. To see all the available commands type 'help'"
+		var result = "Команда '"+str(_args[0])+"' не найдена. Чтобы увидеть все доступные команды, введите 'help'"
 		if _args[0] in currentServer.adminCommands && !currentServer.loggedin: # admin cmd access attempt
 			return "Insufficient permissions to access command '"+str(_args[0])+"'"
 		if descs.has(_args[0]):
@@ -262,13 +262,13 @@ func help(_args:Array=[]):
 func connectComputer(_args:Array=[]):
 	if _args.size()!=1:
 		return "'connect' expects 1 argument"
-	var res = "Connecting to "+_args[0]+"..."
+	var res = "Подключение к "+_args[0]+"..."
 	var newServer = getServer(_args[0])
 	if newServer:
-		res += " Connected!\n"+newServer.enterText
+		res += " Подключено!\n"+newServer.enterText
 		connectedTo = _args[0]
 	else:
-		res += " Connection failed!"
+		res += " Ошибка подключения!"
 	return res
 
 func disconnectComputer(_args:Array=[]):
@@ -316,11 +316,11 @@ func reactToCommand(_command:String, _args:Array, _commandStringRaw:String):
 		if cmdfile.method:
 			return call("localCmd_"+cmdfile.method,_args)
 		else:
-			return "This file has invalid binary data!"
+			return "В этом файле повреждены бинарные данные!"
 	
 	# nothing works, command must not exist
 	learnCommand("help")
-	return "Error, unknown command. Use 'help' to list all available commands"
+	return "Ошибка: неизвестная команда. Используйте 'help', чтобы увидеть список всех доступных команд"
 
 func getServersData() -> Dictionary:
 	var sd:Dictionary = {} # servers data, ip:{...data...}, ...

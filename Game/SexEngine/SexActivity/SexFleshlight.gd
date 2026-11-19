@@ -8,8 +8,8 @@ var shouldCalculateNpcsWithPortalPanties:bool = true
 func _init():
 	id = "SexFleshlight"
 	
-	activityName = "Portal Fleshlight"
-	activityDesc = "Use a fleshlight to pleasure the sub!"
+	activityName = "Портальный мастурбатор"
+	activityDesc = "Используй мастурбатор, чтобы доставить удовольствие сабке!"
 	activityCategory = ["Fuck"]
 
 func getGoals():
@@ -66,7 +66,7 @@ func getCheckTagsSub() -> Array:
 	return [SexActivityTag.HavingSex]
 
 func startActivity(_args):
-	addText("{dom.You} {dom.youVerb('whip')} out a portal fleshlight and bring it close to {sub.your} {sub.penisShort}!")
+	addText("{dom.You} {dom.youVerb('whip')} достает портальный мастурбатор и подносит его к {sub.your} {sub.penisShort}!")
 
 func processTurn():
 	return
@@ -86,9 +86,9 @@ func init_processTurn():
 		
 func sex_processTurn():
 	addTextPick([
-		"{dom.You} {dom.youAre} stroking {sub.your} {sub.penisShort} with a fleshlight.",
-		"{dom.You} {dom.youVerb('slide')} a fleshlight along {sub.your} {sub.penisShort}.",
-		"{dom.You} {dom.youVerb('pleasure')} {sub.your} {sub.penisShort} with a fleshlight.",
+		"{dom.You} {dom.youAre} ласкает {sub.your} {sub.penisShort} мастурбатором.",
+		"{dom.You} {dom.youVerb('slide')} водит мастурбатором по {sub.your} {sub.penisShort}.",
+		"{dom.You} {dom.youVerb('pleasure')} {sub.your} {sub.penisShort} мастурбатором.",
 	])
 	stimulateSex(SUB_0, getTargetIndx(), targetHole, I_NORMAL)
 	doProcessFuck(SUB_0, getTargetIndx(), targetHole, " through the portal panties")
@@ -100,8 +100,8 @@ func sex_processTurn():
 		var theTargetInfo:= getSexEngine().getCharInfo(targetID)
 		if(!theTargetInfo.isUnconscious()):
 			addTextTarget(RNG.pick([
-				"{<TARGET>.You} {<TARGET>.youVerb('moan')} while being fucked remotely!",
-				"{<TARGET>.You} {<TARGET>.youVerb('squirm')} while being fucked remotely!",
+				"{<TARGET>.You} {<TARGET>.youVerb('moan')}, пока её трахают дистанционно!",
+				"{<TARGET>.You} {<TARGET>.youVerb('squirm')}, пока её трахают дистанционно!",
 			]))
 			moan(getTargetIndx())
 	
@@ -115,7 +115,7 @@ const HOLES_CAN_PORTAL_FUCK = [S_VAGINA, S_ANUS]
 
 func getActions(_indx:int):
 	if(_indx == DOM_0):
-		addAction("stop", getStopScore(), "Stop fleshlight", "Put the fleshlight away")
+		addAction("stop", getStopScore(), "Прекратить использование мастурбатора", "Убрать мастурбатор")
 		
 		if(state == ""):
 			var theNpcs:Array = getNpcsWithPortalPanties()
@@ -124,26 +124,26 @@ func getActions(_indx:int):
 				for slot in HOLES_CAN_PORTAL_FUCK:
 					if(charCanUse(portalNPC, slot)):
 						var theHoleName:String = getNameHoleGeneric(slot)
-						addAction("setTarget", 0.0, theHoleName, "Target "+charName+"'s "+theHoleName, {
+						addAction("setTarget", 0.0, theHoleName, "Цель "+charName+"'s "+theHoleName, {
 							A_CATEGORY: ["Fleshlight Target", charName], A_ARGS: [portalNPC.getID(), slot], A_PRIORITY: 5,
 						})
 		
 			if(isReadyToFuck(SUB_0)):
-				addAction("penetrate", 1.0, "Penetrate", "Try to penetrate that hole with the sub's cock.")
+				addAction("penetrate", 1.0, "Проникнуть", "Попытаться войти членом саба в это отверстие.")
 		if(state == "inside"):
-			addAction("pullout", getStopScore(), "Pull out", "Pull the sub's member out of that fleshlight")
-			addAction("fuckmore", 0.5, "Stroke more", "Start moving your hand again!")
+			addAction("pullout", getStopScore(), "Вытащить", "Вытащить член саба из этой мастурбатора")
+			addAction("fuckmore", 0.5, "Драть сильнее", "Снова начни двигать рукой!")
 		if(state == "sex"):
-			addAction("pause", 0.0, "Pause stroking", "Give the sub some rest.")
+			addAction("pause", 0.0, "Прекратить движения", "Дай сабу немного отдохнуть.")
 		
 		if(state == "inside" || state == "sex"):
 			if(canStuffEggIntoRaw(getSub(), GlobalRegistry.getCharacter(targetID), targetHole)):
-				addAction("stuffegg", 0.0, "Stuff egg", "Make the sub stuff an egg into them..", {A_PRIORITY: 2})
+				addAction("stuffegg", 0.0, "Засунуть яйцо", "Заставить саба засунуть яйцо в себя..", {A_PRIORITY: 2})
 		
 	if(_indx == SUB_0):
-		addAction("pullaway", getSubInfo().getResistScore(), "Pull away", "Try to pull away", {A_CHANCE: getSubResistChance(30.0, 25.0)})
+		addAction("pullaway", getSubInfo().getResistScore(), "Отстраниться", "Попытаться отстраниться", {A_CHANCE: getSubResistChance(30.0, 25.0)})
 		if(isReadyToCumHandled(SUB_0)):
-			addAction("subcum", 1.0, "Orgasm!", "You are about to cum!", {A_PRIORITY: 1001})
+			addAction("subcum", 1.0, "Оргазм!", "Ты сейчас кончишь!", {A_PRIORITY: 1001})
 
 func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "stuffegg"):
@@ -152,19 +152,19 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		return
 	if(_id == "stop"):
 		endActivity()
-		addText("{dom.You} pulled away.")
+		addText("{dom.You} отстранилась.")
 		return 
 	if(_id == "pullout"):
 		state = ""
-		addText("{dom.You} {dom.youVerb('pull')} the fleshlight off of {sub.your} {sub.penisShort}.")
+		addText("{dom.You} {dom.youVerb('pull')} срывает фаллоимитатор с {sub.your} {sub.penisShort}.")
 		return
 	if(_id == "fuckmore"):
 		state = "sex"
-		addText("{dom.You} {dom.youVerb('begin')} to move {dom.yourHis} hand again, sliding the fleshlight along {sub.your} {sub.penisShort}.")
+		addText("{dom.You} {dom.youVerb('begin')} снова двигает рукой {dom.yourHis}, скользя фаллоимитатором по {sub.your} {sub.penisShort}.")
 		return
 	if(_id == "pause"):
 		state = "inside"
-		addText("{dom.You} {dom.youVerb('pause')} the stroking, giving {sub.you} some rest.")
+		addText("{dom.You} {dom.youVerb('pause')} прекращает ласки, давая {sub.you} немного отдохнуть.")
 		return
 	if(_id == "setTarget"):
 		targetID = _action["args"][0]
@@ -173,26 +173,26 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		addTextTarget("{dom.You} {dom.youVerb('pick')} the target! A portal opens up on the fleshlight, revealing {<TARGET>.your} "+getNameHoleGeneric(targetHole)+".")
 		if(targetID == getDomOrSubID(DOM_0)):
 			talkText(DOM_0, RNG.pick([
-				"Hope you like this one.",
-				"See that? That's my "+getNameHole(DOM_0, targetHole)+".",
-				"Wanna fuck me? You can now.",
-				"Do you like this one? It's mine.",
-				"This "+getNameHole(DOM_0, targetHole)+" is mine, by the way.",
+				"Надеюсь, этот тебе понравится.",
+				"Видишь? Это мой "+getNameHole(DOM_0, targetHole)+".",
+				"Хочешь меня оттрахать? Теперь можешь.",
+				"Тебе нравится этот? Он мой.",
+				"Это, "+getNameHole(DOM_0, targetHole)+" кстати, мой.",
 			]))
 		elif(targetID == getDomOrSubID(SUB_0)):
 			talkText(DOM_0, RNG.pick([
-				"Looks familliar? It should.",
-				"Think you can handle yourself?",
-				"I can see your "+getNameHole(SUB_0, targetHole)+" clench.",
-				"Do you like this one? It's yours actually.",
-				"This "+getNameHole(SUB_0, targetHole)+" is yours, by the way.",
+				"Выглядит знакомо? Так и должно быть.",
+				"Думаешь, справишься?",
+				"Я вижу твой "+getNameHole(SUB_0, targetHole)+" clench.",
+				"Нравится этот? Вообще-то, он твой.",
+				"Это, "+getNameHole(SUB_0, targetHole)+" кстати, твой.",
 			]))
 		else:
 			talkText(DOM_0, RNG.pick([
-				"Wonder if you know them.",
-				"Can you recognize who it is just by their holes?",
-				"Ready to feel them around your cock?",
-				"Ready to fuck someone else?",
+				"Интересно, узнаешь ли ты их.",
+				"Сможешь узнать кого-то только по дыркам?",
+				"Готов почувствовать их на своем члене?",
+				"Готов трахнуть кого-нибудь другого?",
 			]))
 		return
 	if(_id == "penetrate"):
@@ -212,7 +212,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		#if(pullAway(SUB_0, DOM_0, chance)):
 		var successChance:float = getSubResistChance(30.0, 25.0)
 		if(RNG.chance(successChance)):
-			addText("{sub.You} {sub.youVerb('pull')} away from {dom.you}.")
+			addText("{sub.You} {sub.youVerb('pull')} от {dom.you}.")
 			getDomInfo().addAnger(0.3)
 			if(getState() != ""):
 				setState("")
@@ -220,7 +220,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 				endActivity()
 			return
 		else:
-			addText("{sub.You} {sub.youVerb('try', 'tries')} to pull away from {dom.you} but {sub.youVerb('fail')}.")
+			addText("{sub.You} {sub.youVerb('try', 'tries')} попытаться отстраниться от {dom.you}, но {sub.youVerb('fail')}.")
 			getDomInfo().addAnger(0.1)
 			return
 			

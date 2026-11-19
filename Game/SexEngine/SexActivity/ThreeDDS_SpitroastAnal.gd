@@ -6,8 +6,8 @@ func _init():
 	usedBodypart = S_ANUS
 	usedFetish = Fetish.AnalSexGiving
 	
-	activityName = "Spitroast (anal)"
-	activityDesc = "Fuck the sub's ass and mouth with the other dom at the same time"
+	activityName = "Спитройст (анальный)"
+	activityDesc = "Трахать задницу и рот сабмиссива другим доминантом одновременно"
 	activityCategory = ["Fuck", "Threesome"]
 
 func getGoals():

@@ -61,13 +61,13 @@ func _on_DeleteButton_pressed():
 func _on_NewButton_pressed():
 	$Control/AddNewDialog.visible = true
 	if(editorKind == "character"):
-		$Control/AddNewDialog/VBoxContainer/Label.text = "Enter an id for a new character. It must be unique"
+		$Control/AddNewDialog/VBoxContainer/Label.text = "Введите ID для нового персонажа. Он должен быть уникальным"
 	if(editorKind == "scene"):
-		$Control/AddNewDialog/VBoxContainer/Label.text = "Enter an id for a new scene. It must be unique"
+		$Control/AddNewDialog/VBoxContainer/Label.text = "Введите ID для новой сцены. Он должен быть уникальным"
 	if(editorKind == "skin"):
-		$Control/AddNewDialog/VBoxContainer/Label.text = "Enter an id for a new skin. It must be unique"
+		$Control/AddNewDialog/VBoxContainer/Label.text = "Введите ID для нового скина. Он должен быть уникальным"
 	if(editorKind == "quest"):
-		$Control/AddNewDialog/VBoxContainer/Label.text = "Enter an id for a new quest. It must be unique"
+		$Control/AddNewDialog/VBoxContainer/Label.text = "Введите ID для нового квеста. Он должен быть уникальным"
 	
 	new_thing_id_line_edit.text = ""
 	
@@ -77,7 +77,7 @@ func _on_AddNewDialog_confirmed():
 	theNewId = Util.stripBadCharactersFromID(theNewId)
 
 	if(theNewId == ""):
-		showAlert("Empty ID not allowed")
+		showAlert("Пустой ID недопустим")
 		return
 	
 	if(editorKind == "character"):

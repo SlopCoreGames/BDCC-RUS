@@ -48,7 +48,7 @@ func addLines(_lines:Array):
 	linesTemp.append_array(_lines)
 
 func getLines(_reaction:int, _role:int, _args:Array):
-	addLines(["Fuck you!"])
+	addLines(["Да пошёл ты!"])
 
 func say(_indx:int, _args:Array):
 	if(_indx >= 0 && sexEngineTemp.domsNoTalking):

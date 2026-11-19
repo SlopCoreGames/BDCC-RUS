@@ -5,8 +5,8 @@ var ticks:int = 0
 func _init():
 	id = "BeatingUpWhenAngry"
 	
-	activityName = "Beat up"
-	activityDesc = "Start hitting them!"
+	activityName = "Избить"
+	activityDesc = "Начинай избивать их!"
 	activityCategory = ["Violence"]
 
 func getGoals():
@@ -38,9 +38,9 @@ func getTags(_indx:int) -> Array:
 
 func startActivity(_args):
 	if(isTentaclesSex()):
-		addText("The angry tentacles begin whipping {sub.you}!")
+		addText("Разъяренные щупальца начинают хлестать {sub.you}!")
 	else:
-		addText("{dom.You} {dom.youVerb('start')} beating {sub.you} up!")
+		addText("{dom.You} {dom.youVerb('start')} неистово избивает {sub.you}!")
 	react(SexReaction.AboutToBeatUp)
 
 func init_processTurn():
@@ -61,22 +61,22 @@ func init_processTurn():
 		texts = [
 			"{dom.You} {dom.youVerb('punch', 'punches')} {sub.youHim}.",
 			"{dom.You} {dom.youVerb('punch', 'punches')} {sub.youHim} violently.",
-			"{dom.You} {dom.youVerb('squeeze', 'squeezes')} {sub.yourHis} ass painfully.",
+			"{dom.You} {dom.youVerb('squeeze', 'squeezes')} больно лупит {sub.yourHis} по заднице.",
 			"{dom.You} {dom.youVerb('scratch', 'scratches')} {sub.youHim}.",
 			"{dom.You} {dom.youVerb('scratch', 'scratches')} {sub.youHim} helpless.",
 			"{dom.You} {dom.youVerb('scratch', 'scratches')} {sub.yourHis} thighs.",
 		]
 	elif(getSexType() == SexType.TentaclesSex):
 		texts = [
-			"A tentacle whips {sub.youHim}.",
-			"A tentacle strikes {sub.yourHis} chest.",
-			"A tentacle lashes {sub.yourHis} back.",
-			"A tentacle whips {sub.yourHis} legs.",
-			"Tentacles slap and strike {sub.youHim}.",
-			"A tentacle lashes {sub.yourHis} shoulders.",
-			"Tentacles whip {sub.youHim} violently.",
-			"A tentacle strikes {sub.yourHis} belly.",
-			"A tentacle whips {sub.yourHis} arms.",
+			"Щупальце хлещет {sub.youHim}.",
+			"Щупальце бьет {sub.yourHis} в грудь.",
+			"Щупальце хлещет {sub.yourHis} по спине.",
+			"Щупальце хлещет {sub.yourHis} по ногам.",
+			"Щупальца хлопают и бьют {sub.youHim}.",
+			"Щупальце хлещет {sub.yourHis} по плечам.",
+			"Тентакли яростно хлещут {sub.youHim}.",
+			"Тентакль бьет {sub.yourHis} по животу.",
+			"Тентакль хлещет {sub.yourHis} по рукам.",
 		]
 	
 	var text:Array = []
@@ -97,17 +97,17 @@ func getActions(_indx:int):
 		var stopScore:float = 1.0 - getDomInfo().getIsAngryScore() + getSubInfo().getAboutToPassOutScore() * fetish(DOM_0, Fetish.UnconsciousSex, 0.5)
 		if(ticks < 2):
 			stopScore *= 0.1
-		addAction("stop", stopScore, "Stop beating up", "Enough violence")
+		addAction("stop", stopScore, "Прекратить избиение", "Довольно насилия")
 		var hitHardScore:float = getDomInfo().getIsAngryScore()*fetish(DOM_0, Fetish.Masochism)*0.4 - getSubInfo().getAboutToPassOutScore() * fetish(DOM_0, Fetish.UnconsciousSex, 0.5)
-		addAction("hithard", hitHardScore, "Hit really hard", "Make that bitch regret it")
+		addAction("hithard", hitHardScore, "Бить очень сильно", "Заставить эту сучку пожалеть об этом")
 
 func doAction(_indx:int, _actionID:String, _action:Dictionary):
 	if(_actionID == "stop"):
 		endActivity()
 		if(isTentaclesSex()):
-			addText("The tentacles have stopped whipping {sub.you}.")
+			addText("Тентакли перестали хлестать {sub.you}.")
 		else:
-			addText("{dom.You} {dom.youVerb('have', 'has')} stopped beating {sub.you} up.")
+			addText("{dom.You} {dom.youVerb('have', 'has')} перестал(а) избивать {sub.you}.")
 	
 	if(_actionID == "hithard"):
 		strike(DOM_0, SUB_0, STRIKE_FULLFORCE)
@@ -115,15 +115,15 @@ func doAction(_indx:int, _actionID:String, _action:Dictionary):
 		var text:String
 		if(isTentaclesSex()):
 			text = RNG.pick([
-				"A thick tentacle whips across {sub.your} body [b]really hard[/b].",
-				"The tentacles slam {sub.youHim} against the floor [b]really hard[/b].",
-				"A tentacle strikes {sub.youHim} [b]really hard[/b]."
+				"Толстый тентакль [b]очень сильно[/b] хлещет по телу {sub.your}.",
+				"Щупальца с силой впечатывают {sub.youHim} в пол, [b]чертовски сильно[/b].",
+				"Щупальце бьет {sub.youHim}, [b]очень мощно[/b]."
 			])
 		else:
 			text = RNG.pick([
-				"{dom.You} {dom.youVerb('hit')} {sub.youHim} [b]really hard[/b].",
-				"{dom.You} {dom.youVerb('slam')} {sub.youHim} against the wall [b]really hard[/b].",
-				"{dom.You} {dom.youVerb('punch', 'punches')} {sub.youHim} [b]really hard[/b].",
+				"{dom.You} {dom.youVerb('hit')} {sub.youHim} [b]чертовски сильно[/b].",
+				"{dom.You} {dom.youVerb('slam')} {sub.youHim} об стену, [b]очень жестко[/b].",
+				"{dom.You} {dom.youVerb('punch', 'punches')} {sub.youHim} [b]чертовски сильно[/b].",
 			])
 		
 		if(RNG.chance(33)):

@@ -24,10 +24,10 @@ func allowCanRestart(_forced:bool = false):
 	canRestart = true
 	endingDay = GM.main.getDays()
 	if(!_forced):
-		GM.main.addMessage("You have reached one of the main route endings!")
-		GM.main.addMessage("You can now choose to restart the main route if you want to try the other routes.")
+		GM.main.addMessage("Вы достигли одной из концовок основного сюжета!")
+		GM.main.addMessage("Теперь вы можете перезапустить основной сюжет, если захотите попробовать другие ветки.")
 	else:
-		GM.main.addMessage("You can now choose to restart the main route if you want to try the other routes. A new option has appeared in your cell's bed.")
+		GM.main.addMessage("Теперь вы можете перезапустить основной сюжет, если захотите попробовать другие ветки. В вашей тюремной койке появился новый предмет.")
 
 func resetMainRoute(_ending:int=-1):
 	var theEnding:int = _ending if _ending >= 0 else MainRouteEnding.getCurrentEnding()

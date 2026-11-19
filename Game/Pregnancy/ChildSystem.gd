@@ -104,18 +104,18 @@ func getChildBirthInfoString(childs:Array) -> String:
 		if(motherObject != null):
 			motherName = motherObject.getName()
 		
-		bornChildString += "[color="+NpcGender.getColorString(child.gender)+"]"+ NpcGender.getVisibleName(child.gender)+"[/color]"+" - "+Util.getSpeciesName(child.species)+" - "+"Mother: "+motherName+" - "+"Father: "+fatherName+"\n"
+		bornChildString += "[color="+NpcGender.getColorString(child.gender)+"]"+ NpcGender.getVisibleName(child.gender)+"[/color]"+" - "+Util.getSpeciesName(child.species)+" - "+"Мать: "+motherName+" - "+"Отец: "+fatherName+"\n"
 	return bornChildString
 
 func getChildBigReportString(_childs:Array) -> String:
 	var resultTable:String = "[font=res://Fonts/normalconsolefont.tres][table=7]"
-	resultTable += "[cell]Name[/cell]"
-	resultTable += "[cell]Gender[/cell]"
-	resultTable += "[cell]Species[/cell]"
-	resultTable += "[cell]Age[/cell]"
-	resultTable += "[cell]Mother[/cell]"
-	resultTable += "[cell]Father[/cell]"
-	resultTable += "[cell]Extra[/cell]"
+	resultTable += "[cell]Имя[/cell]"
+	resultTable += "[cell]Пол[/cell]"
+	resultTable += "[cell]Вид[/cell]"
+	resultTable += "[cell]Возраст[/cell]"
+	resultTable += "[cell]Мать[/cell]"
+	resultTable += "[cell]Отец[/cell]"
+	resultTable += "[cell]Дополнительно[/cell]"
 	
 	for ch in _childs:
 		var child: Child = ch
@@ -146,11 +146,11 @@ func getChildBigReportString(_childs:Array) -> String:
 		if(!theMono.empty()):
 			theExtras.append(theMono)
 		if(child.bigEgg):
-			theExtras.append("Egg")
+			theExtras.append("Яйцо")
 		if(!child.laidByID.empty()):
 			var theLaidByChar = GlobalRegistry.getCharacter(child.laidByID)
 			if(theLaidByChar):
-				theExtras.append("Laid by "+theLaidByChar.getName())
+				theExtras.append("Породил(а) "+theLaidByChar.getName())
 		
 		resultTable += "[cell]"+child.name+"[/cell]"
 		resultTable += "[cell]"+"[color="+NpcGender.getColorString(child.gender)+"]"+ NpcGender.getVisibleName(child.gender)+"[/color]"+"[/cell]"

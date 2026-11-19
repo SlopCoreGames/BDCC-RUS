@@ -21,8 +21,8 @@ var coverButtTimer:int = 0
 func _init():
 	id = "Spanking"
 	
-	activityName = "Spank"
-	activityDesc = "Smack their butt!"
+	activityName = "Отшлепать"
+	activityDesc = "Врежь ей по заднице!"
 	activityCategory = ["Humiliate"]
 
 func getGoals():
@@ -48,13 +48,13 @@ func getCheckTagsSub() -> Array:
 func startActivity(_args):
 	targetSpanks = RNG.randi_range(5, 16)
 	affectSub(getSubInfo().fetishScore({Fetish.Masochism: 1.0})+0.0, 0.1, -0.1, -0.01)
-	addText("{dom.You} {dom.youVerb('prepare')} to spank {sub.you}.")
+	addText("{dom.You} {dom.youVerb('prepare')}, чтобы отшлепать {sub.you}.")
 	talkText(DOM_0, RNG.pick([
-		"Give me that {butt}.",
-		"I think you were a bad {sub.boy}.",
-		"Shut up and stick that {butt} up.",
-		"Don't cover yourself up.",
-		"Don't you dare cover yourself up.",
+		"А ну, дай мне этот {butt}.",
+		"Похоже, ты была плохой {sub.boy}.",
+		"Заткнись и засунь этот {butt} себе поглубже.",
+		"Не прикрывайся.",
+		"Только посмей прикрыться!",
 	]))
 
 func init_processTurn():
@@ -66,43 +66,43 @@ func init_processTurn():
 			correctTimer = 0
 			if(RNG.chance(20)):
 				domSay = RNG.pick([
-					"Mhm",
-					"Correct.",
-					"Good.",
-					"Keep counting",
-					"Uh huh",
-					"Good job",
+					"Мгм",
+					"Верно.",
+					"Хорошо.",
+					"Продолжай считать",
+					"Угу",
+					"Молодец",
 				])
 		if(wrongTimer > 0):
 			wrongTimer = 0
 			domSay = RNG.pick([
-				"Nope!",
-				"Wrong!",
-				"Think again, stupid bitch.",
-				"Wrong answer.",
-				"Nuh uh.",
-				"Are you really that bad at counting?",
-				"Really?",
-				"Can't even count right?",
+				"Неа!",
+				"Неверно!",
+				"Подумай еще раз, тупая сучка.",
+				"Неправильный ответ.",
+				"Не-а.",
+				"Ты реально так плохо считаешь?",
+				"Серьезно?",
+				"Да ты даже посчитать нормально не можешь?",
 			])
 		
 		if(needToSayAvoidedTrap):
 			needToSayAvoidedTrap = false
 			text += RNG.pick([
-				"{sub.You} avoided the trap!",
+				"{sub.You} избежал(а) ловушки!",
 			])
 			#isFakeSpank = false
 			pass
 		if(needToSayTooLate):
 			needToSayTooLate = false
 			text += RNG.pick([
-				"{sub.You} didn't answer in time!",
+				"{sub.You} не успел(а) ответить вовремя!",
 			])
 			getDomInfo().addAnger(0.3)
 			domSay = RNG.pick([
-				"How are you this bad at counting?",
-				"Time's up!",
-				"Think faster!",
+				"Как можно так плохо считать?",
+				"Время вышло!",
+				"Думай быстрее!",
 			])
 	
 	if(text != ""):
@@ -113,25 +113,25 @@ func init_processTurn():
 
 func getActions(_indx:int):
 	if(_indx == DOM_0):
-		addAction("stop", getStopScore(), "Stop spanking", "Stop spanking them")
+		addAction("stop", getStopScore(), "Перестать шлепать", "Перестать шлепать их")
 		if(state in [""]):
-			addAction("fakespank", 0.4-getDomInfo().getAngerScore()/3.0, "Rub butt", "Rub that butt lightly and see if they react")
-			addAction("spank", 1.0-getDomInfo().getAngerScore()/1.2, "Spank", "Spank that sub once")
-			addAction("bigspank", getDomInfo().getAngerScore(), "Hard Spank!", "Spank that sub hard")
+			addAction("fakespank", 0.4-getDomInfo().getAngerScore()/3.0, "Потереть задницу", "Слегка потереть эту задницу и посмотреть на реакцию")
+			addAction("spank", 1.0-getDomInfo().getAngerScore()/1.2, "Отшлепать", "Шлепнуть сабку один раз")
+			addAction("bigspank", getDomInfo().getAngerScore(), "Сильно шлепнуть!", "Шлепнуть сабку со всей дури")
 		if(!subShouldCount):
-			addAction("startcount", 1.0, "Make sub count", "Make sub count the spanks")
+			addAction("startcount", 1.0, "Считать шлепки", "Заставить сабку считать шлепки")
 		else:
-			addAction("stopcount", 0.0, "Stop counting", "Enough spank counting")
+			addAction("stopcount", 0.0, "Перестать считать", "Хватит считать шлепки")
 	
 	if(_indx == SUB_0):
 		if(state in ["", "rimming"]):
-			addAction("pullaway", getResistScore(SUB_0), "Pull away", "Try to pull away", {A_CHANCE: getSubResistChance(10.0, 5.0)})
+			addAction("pullaway", getResistScore(SUB_0), "Отстраниться", "Попытаться отстраниться", {A_CHANCE: getSubResistChance(10.0, 5.0)})
 
 		if(coverButtTimer <= 0 && !getSub().hasBoundArms()):
-			addAction("coverbutt", 0.05-fetish(SUB_0, Fetish.Masochism)*0.1, "Cover butt", "Try to avoid some of the pain")
+			addAction("coverbutt", 0.05-fetish(SUB_0, Fetish.Masochism)*0.1, "Прикрыть задницу", "Пытаться уклониться от боли")
 
 		if(isReadyToCumHandled(SUB_0)):
-			addAction("cum", 1.0, "Cum!", "You're gonna cum.", {A_PRIORITY: 1001})
+			addAction("cum", 1.0, "Кончай!", "Ты сейчас кончишь.", {A_PRIORITY: 1001})
 
 		if(subShouldCount && awaitsAnswer):
 			var answers = [correctSpankAmount]
@@ -150,49 +150,49 @@ func getActions(_indx:int):
 					mult *= max(0.05, getSubInfo().personalityScore({PersonalityStat.Naive: 0.2}))
 				elif(!isCorrect):
 					mult *= max(0.05, getSubInfo().personalityScore({PersonalityStat.Brat: 0.3}))
-				addAction(("correctnumber" if isCorrect else "badnumber"), getComplyScore(SUB_0) * mult, str(answer), "Say this", {A_ARGS: [answer]})
+				addAction(("correctnumber" if isCorrect else "badnumber"), getComplyScore(SUB_0) * mult, str(answer), "Скажите это", {A_ARGS: [answer]})
 
 func getAssDescriptionAfterImpact(_isHard:bool=false) -> String:
 	var subHealth = getSub().getPainLevel()
 	
 	if(subHealth < 0.1):
 		return RNG.pick([
-			"{sub.YourHis} {butt} is still fine.",
-			"{sub.YourHis} {butt} doesn't look red yet.",
-			"{sub.YourHis} {butt} can take way more spanks than that.",
-			"{sub.YourHis} {butt} can take more than that.",
+			"{sub.YourHis} {butt} всё еще в порядке.",
+			"{sub.YourHis} {butt} еще не покраснела.",
+			"{sub.YourHis} {butt} может выдержать куда больше шлепков.",
+			"{sub.YourHis} {butt} может выдержать больше.",
 		])
 	if(subHealth < 0.3):
 		return RNG.pick([
-			"{sub.YourHis} {butt} is starting to feel a bit warm.",
-			"{sub.YourHis} {butt} is beginning to blush.",
-			"{sub.YourHis} {butt} is warming up nicely.",
-			"{sub.YourHis} {butt} is getting a light shade of pink.",
+			"{sub.YourHis} {butt} начинает чувствовать приятное тепло.",
+			"{sub.YourHis} {butt} начинает краснеть.",
+			"{sub.YourHis} {butt} отлично разогревается.",
+			"{sub.YourHis} {butt} покрывается легким розовым румянцем.",
 		])
 	if(subHealth < 0.6):
 		return RNG.pick([
-			"{sub.YourHis} {butt} is turning pink from the spanks.",
-			"{sub.YourHis} {butt} is showing signs of a good spanking.",
-			"{sub.YourHis} {butt} is starting to get a rosy hue.",
-			"{sub.YourHis} {butt} is responding well to the spanks.",
+			"{sub.YourHis} {butt} розовеет от шлепков.",
+			"{sub.YourHis} {butt} явно получает хорошую порцию шлепков.",
+			"{sub.YourHis} {butt} начинает покрываться розовым цветом.",
+			"{sub.YourHis} {butt} отлично отзывается на шлепки.",
 		])
 	if(subHealth < 0.9):
 		return RNG.pick([
-			"{sub.YourHis} {butt} is noticeably red now.",
-			"{sub.YourHis} {butt} is taking a good beating.",
-			"{sub.YourHis} {butt} is showing signs of a proper spanking.",
-			"{sub.YourHis} {butt} is getting quite red and warm.",
+			"{sub.YourHis} {butt} теперь заметно покраснела.",
+			"{sub.YourHis} {butt} получает знатную взбучку.",
+			"{sub.YourHis} {butt} явно наслаждается хорошей порцией шлепков.",
+			"{sub.YourHis} {butt} становится совсем красной и горячей.",
 		])
 	return RNG.pick([
-		"{sub.YourHis} {butt} is burning hot from the intense spanks.",
-		"{sub.YourHis} {butt} is thoroughly spanked and glowing.",
-		"{sub.YourHis} {butt} is a beautiful shade of crimson.",
-		"{sub.YourHis} {butt} is well-spanked and ready for more.",
+		"{sub.YourHis} {butt} буквально горит от интенсивных шлепков.",
+		"{sub.YourHis} {butt} хорошенько отшлепана и вся так и сияет.",
+		"{sub.YourHis} {butt} приобрела прекрасный малиновый оттенок.",
+		"{sub.YourHis} {butt} хорошенько отшлепана и готова к продолжению.",
 	])
 
 func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "stop"):
-		addText("{dom.You} {dom.youVerb('stop')} the spanking session with {sub.you}.")
+		addText("{dom.You} {dom.youVerb('stop')} начинает сеанс шлепков с {sub.you}.")
 		endActivity()
 		return
 	if(_id == "startcount"):
@@ -202,14 +202,14 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		correctSpankAmount = 0
 		
 		var text:String = RNG.pick([
-			"{dom.You} {dom.youVerb('tell')} {sub.you} to start counting the spanks.",
+			"{dom.You} {dom.youVerb('tell')} просит {sub.you} начать считать шлепки.",
 		])
 		var addSay:String = ""
 		if(!getDom().isPlayer()):
 			addSay = " I will stop at "+str(targetSpanks)+" spanks."
 		
 		addText(text)
-		talkText(DOM_0, "Count how many time I hit your ass."+addSay)
+		talkText(DOM_0, "Считай, сколько раз я ударю тебя по заднице."+addSay)
 		return
 	if(_id == "stopcount"):
 		subShouldCount = false
@@ -220,8 +220,8 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		needToSayAvoidedTrap = false
 		needToSayTooLate = false
 		
-		addText("{dom.You} {dom.youVerb('tell')} {sub.you} to stop counting the spanks.")
-		talkText(DOM_0, "You may stop counting.")
+		addText("{dom.You} {dom.youVerb('tell')} просит {sub.you} перестать считать шлепки.")
+		talkText(DOM_0, "Можешь перестать считать.")
 		return
 	if(_id == "fakespank"):
 		didSpankThisTime = true
@@ -238,10 +238,10 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		addTextPick([
 			"{dom.You} {dom.youVerb('rub')} {sub.your} {butt}!",
 			"{dom.You} gently {dom.youVerb('rub')} {sub.your} {butt}!",
-			"{dom.You} {dom.youVerb('caress', 'caresses')} {sub.your} rear!",
-			"{dom.You} {dom.youVerb('brush', 'brushes')} {dom.yourHis} palm against {sub.your} {butt}!",
+			"{dom.You} {dom.youVerb('caress', 'caresses')} {sub.your} задница!",
+			"{dom.You} {dom.youVerb('brush', 'brushes')} {dom.yourHis} ладонь впечатывается в {sub.your} {butt}!",
 			"{dom.You} {dom.youVerb('poke')} {sub.your} {butt}!",
-			"{dom.You} {dom.youVerb('touch', 'touches')} {sub.your} {butt} lightly!",
+			"{dom.You} {dom.youVerb('touch', 'touches')} {sub.your} {butt} слегка!",
 		])
 		
 		affectSub(getSubInfo().fetishScore({Fetish.Masochism: 1.0})+0.6, 0.1, -0.01, -0.01)
@@ -269,19 +269,19 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		var text:String = RNG.pick([
 			"{dom.You} {dom.youVerb('spank')} {sub.your} {butt}!",
 			"{dom.You} {dom.youVerb('smack')} {sub.your} {butt}!",
-			"{dom.You} {dom.youVerb('hit')} {sub.your} rear!",
-			"{dom.You} {dom.youVerb('deliver')} an impact on {sub.your} {butt}!",
-			"{dom.You} {dom.youVerb('make')} {sub.your} {butt} jiggle from a smack!",
-			"{dom.You} {dom.youVerb('spank')} {sub.your} {butt} lightly!",
+			"{dom.You} {dom.youVerb('hit')} {sub.your} задница!",
+			"{dom.You} {dom.youVerb('deliver')} удар приходится по {sub.your} {butt}!",
+			"{dom.You} {dom.youVerb('make')} {sub.your} {butt} колышется от шлепка!",
+			"{dom.You} {dom.youVerb('spank')} {sub.your} {butt} слегка!",
 		])
 		affectSub(getSubInfo().fetishScore({Fetish.Masochism: 1.0})+0.3, 0.05, -0.1, -0.01)
 		
 		if(coverButtTimer > 0):
 			coverButtTimer -= 1
 			if(coverButtTimer <= 0):
-				text += " {sub.YourHis} hands hurt too much to keep covering."
+				text += " {sub.YourHis} руки слишком сильно болят, чтобы продолжать."
 			else:
-				text += " {sub.YourHis} hands softened the blow."
+				text += " {sub.YourHis} руки смягчили удар."
 		else:
 			getSubInfo().addPain(1)
 			sendSexEvent(SexEvent.PainInflicted, DOM_0, SUB_0, {pain=1,isDefense=false,intentional=true})
@@ -312,17 +312,17 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		
 		var text:String = RNG.pick([
 			"{dom.You} {dom.youVerb('spank')} {sub.your} {butt} [b]hard[/b]!",
-			"{dom.You} {dom.youVerb('smack')} {sub.your} {butt} with [b]full force[/b]!",
-			"{dom.You} {dom.youVerb('hit')} {sub.your} rear [b]sadistically[/b]!",
+			"{dom.You} {dom.youVerb('smack')} {sub.your} {butt} [b]со всей силы[/b]!",
+			"{dom.You} {dom.youVerb('hit')} {sub.your} задницу [b]садистски[/b]!",
 		])
 		var damageDivider = 1
 		if(coverButtTimer > 0):
 			damageDivider = 2
 			coverButtTimer -= 2
 			if(coverButtTimer <= 0):
-				text += " {sub.YourHis} hands hurt too much to keep covering."
+				text += " {sub.YourHis} руки слишком сильно болят, чтобы продолжать."
 			else:
-				text += " {sub.YourHis} hands softened the blow."
+				text += " {sub.YourHis} руки смягчили удар."
 		
 		affectSub(getSubInfo().fetishScore({Fetish.Masochism: 1.0}, -0.5), 0.1, -0.05, 0.0)
 		affectDom(getDomInfo().fetishScore({Fetish.Sadism: 0.5}, 0.5), 0.2, 0.0)
@@ -353,24 +353,24 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		return
 	if(_id == "coverbutt"):
 		coverButtTimer = 3
-		addText("{sub.You} {sub.youVerb('cover')} {sub.yourHis} {ass} with {sub.yourHis} hands.")
+		addText("{sub.You} {sub.youVerb('cover')} {sub.yourHis} {ass} {sub.yourHis} руками.")
 		return
 	if(_id == "correctnumber"):
 		correctTimer = 2
 		var text:String = RNG.pick([
-			"{sub.You} {sub.youVerb('say')} the correct number.",
+			"{sub.You} {sub.youVerb('say')} нужное число.",
 		])
 		
 		awaitsAnswer = false
 		getDomInfo().addAnger(-0.1)
 		
 		var randomAddition:String = RNG.pick([
-			"Ngh..",
-			"I think..",
-			"Agh..",
+			"Нгх..",
+			"Кажется...",
+			"Ах...",
 			"ARgh..",
 			"Ow..",
-			"Fuck..",
+			"Блядь..",
 		])
 		
 		var domSay:String = ""
@@ -378,7 +378,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 			satisfyGoals()
 			if(!getDom().isPlayer()):
 				domSay = RNG.pick([
-					"Good job, that's enough.",
+					"Отлично, на этом хватит.",
 				])
 				endActivity()
 		
@@ -391,23 +391,23 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		var saidNumber = _action["args"][0]
 		
 		var text:String = RNG.pick([
-			"{sub.You} {sub.youVerb('say')} the [b]WRONG[/b] number!",
+			"{sub.You} {sub.youVerb('say')} [b]НЕПРАВИЛЬНОЕ[/b] число!",
 		])
 		if(isFakeSpank):
 			text = RNG.pick([
-				"{sub.You} got fooled and said a number [b]without getting spanked[/b]!",
+				"{sub.You} удалось обмануть и назвать число [b]не получив порцию шлепков[/b]!",
 			])
 		
 		awaitsAnswer = false
 		getDomInfo().addAnger(0.4)
 		
 		var randomAddition = RNG.pick([
-			"Probably..",
-			"I think.. wait..",
+			"Наверное...",
+			"Кажется.. погоди..",
 			"Agh.. No.. wait..",
 			"ARgh.. Please..",
 			"Ow.. Yeah?..",
-			"Fuck.. Oh no..",
+			"Блядь.. О нет..",
 		])
 		
 		addText(text)
@@ -420,7 +420,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		var successChance = getSubResistChance(30.0, 25.0)
 		if(RNG.chance(successChance)):
 			text = RNG.pick([
-				"{sub.You} {sub.youVerb('pull')} away from {dom.you}.",
+				"{sub.You} {sub.youVerb('pull')} от {dom.you}.",
 			])
 			getDomInfo().addAnger(0.3)
 			if(state != ""):
@@ -430,8 +430,8 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 				endActivity()
 		else:
 			text = RNG.pick([
-				"{sub.You} desperately {sub.youVerb('try', 'tries')} to pull away from {dom.your} hands.",
-				"{sub.You} desperately {sub.youVerb('try', 'tries')} to pull away from {dom.your} hand.",
+				"{sub.You} отчаянно {sub.youVerb('try', 'tries')}, пытаясь вырваться из {dom.your} рук.",
+				"{sub.You} отчаянно {sub.youVerb('try', 'tries')}, пытаясь вырваться из {dom.your} руки.",
 			])
 			getDomInfo().addAnger(0.03)
 		addText(text)
@@ -439,7 +439,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		return
 
 func getRandomAnusWord() -> String:
-	return RNG.pick(["back entrance", "anus", "tailhole"])
+	return RNG.pick(["задний вход", "anus", "tailhole"])
 	
 func getSubResistChance(baseChance:float, domAngerRemoval:float) -> float:
 	var theChance = baseChance - getDomInfo().getAngerScore()*domAngerRemoval

@@ -5,8 +5,8 @@ var npcsWithPortals:Array
 func _init():
 	id = "AdvancedStraponPickTarget"
 	
-	activityName = "Strapon target"
-	activityDesc = "Select which penis to use in your advanced strapon!"
+	activityName = "Цель для страпона"
+	activityDesc = "Выбери, какой пенис использовать для своего продвинутого страпона!"
 	activityCategory = []
 
 func getGoals():
@@ -47,13 +47,13 @@ func startActivity(_args):
 
 func getActions(_indx:int):
 	if(_indx == DOM_0):
-		addAction("cancel", 1.0, "Cancel", "You changed your mind", {A_PRIORITY:2001})
-		addAction("pick", 0.0, "Clear", "Select the hologram strapon!", {
+		addAction("cancel", 1.0, "Отмена", "Вы передумали", {A_PRIORITY:2001})
+		addAction("pick", 0.0, "Очистить", "Выбери голографический страпон!", {
 			A_CATEGORY: [], A_ARGS: [""], A_PRIORITY: 2002,
 		})
 		for theNpc in npcsWithPortals:
 			if(theNpc.canUsePenisThroughPortal()):
-				addAction("pick", 0.0, theNpc.getName(), "Select this target's penis!", {
+				addAction("pick", 0.0, theNpc.getName(), "Выбери пенис этого объекта!", {
 					A_CATEGORY: [], A_ARGS: [theNpc.getID()], A_PRIORITY: 2005,
 				})
 
@@ -66,9 +66,9 @@ func doAction(_indx:int, _actionID:String, _action:Dictionary):
 		if(theStrapon && theStrapon.has_method("setPenisTarget")):
 			theStrapon.setPenisTarget(theID)
 			if(theID.empty()):
-				addText("{dom.You} {dom.youVerb('select')} the hologram setting on {dom.yourHis} advanced strapon!")
+				addText("{dom.You} {dom.youVerb('select')} настройка голограммы на {dom.yourHis} продвинутом страпоне!")
 			else:
-				addText("{dom.You} {dom.youVerb('project')} "+GlobalRegistry.getCharacter(theID).getName()+"'s penis on {dom.yourHis} advanced strapon!")
+				addText("{dom.You} {dom.youVerb('project')} "+GlobalRegistry.getCharacter(theID).getName()+"{dom.yourHis} пенис на продвинутом страпоне!")
 		endActivity()
 
 func saveData():

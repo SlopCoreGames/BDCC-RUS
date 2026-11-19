@@ -52,7 +52,7 @@ margin_left = -268.0
 margin_top = -5.0
 margin_right = -22.0
 margin_bottom = 41.0
-text = "TROUBLESHOOTING"
+text = "ДИАГНОСТИКА"
 
 [node name="CheckBrokenModsButton" type="Button" parent="VBoxContainer/Label"]
 unique_name_in_owner = true

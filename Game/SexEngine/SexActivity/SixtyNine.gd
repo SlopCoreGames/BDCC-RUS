@@ -7,7 +7,7 @@ func _init():
 	id = "SixtyNine"
 	
 	activityName = "69"
-	activityDesc = "Pleasure each other at the same time!"
+	activityDesc = "Доставляйте друг другу удовольствие одновременно!"
 	activityCategory = ["Fuck"]
 
 func getGoals():
@@ -103,7 +103,7 @@ func startActivity(_args):
 	affectSub(getSubInfo().fetishScore({Fetish.OralSexGiving: 1.0}), 0.1, -0.2, -0.01)
 	affectDom(getDomInfo().fetishScore({Fetish.OralSexGiving: 1.0}), 0.1, -0.03)
 	
-	addText("{dom.You} {dom.youVerb('position')} {dom.yourself} above {sub.you}, {dom.yourHis} "+domPartNameStr+" hovering tantalizingly close to {sub.yourHis} lips while {dom.yourHis} mouth lines up perfectly with {sub.yourHis} "+subPartNameStr+".")
+	addText("{dom.You} {dom.youVerb('position')} {dom.yourself} above {sub.you}, {dom.yourHis} "+domPartNameStr+" соблазнительно зависает над губами {sub.yourHis}, пока рот {dom.yourHis} идеально совпадает с {sub.yourHis} "+subPartNameStr+".")
 	return
 
 func onSwitchFrom(_otherActivity, _args):
@@ -117,22 +117,22 @@ func sex_processTurn():
 	if(domFocus == BodypartSlot.Vagina && !getSub().hasReachableVagina()):
 		state = ""
 		satisfyGoals()
-		addText("{sub.Your} pussy is not reachable anymore so {dom.you} {dom.youVerb('stop')} licking it.")
+		addText("киска {sub.Your} стала недосягаемой, поэтому {dom.you} {dom.youVerb('stop')} лижет её.")
 		return
 	if(domFocus == BodypartSlot.Penis && !getSub().hasReachablePenis()):
 		state = ""
 		satisfyGoals()
-		addText("{sub.Your} cock is not reachable anymore so {dom.you} {dom.youVerb('stop')} sucking it.")
+		addText("член {sub.Your} стал недосягаемым, поэтому {dom.you} {dom.youVerb('stop')} сосет его.")
 		return
 	if(subFocus == BodypartSlot.Vagina && !getDom().hasReachableVagina()):
 		state = ""
 		satisfyGoals()
-		addText("{dom.Your} pussy is not reachable anymore so {sub.you} {sub.youAre} unable to continue licking it.")
+		addText("киска {dom.Your} стала недосягаемой, поэтому {sub.you} {sub.youAre} не может продолжать лизать её.")
 		return
 	if(subFocus == BodypartSlot.Penis && !getDom().hasReachablePenis()):
 		state = ""
 		satisfyGoals()
-		addText("{dom.Your} cock is not reachable anymore so {sub.you} {sub.youAre} unable to continue sucking it.")
+		addText("член {dom.Your} стал недосягаемым, поэтому {sub.you} {sub.youAre} не может продолжать сосать его.")
 		return
 		
 	if(RNG.chance(50)):
@@ -161,10 +161,10 @@ func sex_processTurn():
 func getActions(_indx:int):
 	if(_indx == DOM_0):
 		if(domCanSwitchFocus()):
-			addAction("switch", 0.05, "Switch focus", "Switch focus to their other bits")
-		addAction("stop", getStopScore(), "Stop 69", "Enough licking and sucking")
+			addAction("switch", 0.05, "Сменить фокус", "Переключиться на другие части тела")
+		addAction("stop", getStopScore(), "Прекратить 69", "Хватит лизать и сосать")
 	if(_indx == SUB_0):
-		addAction("pullaway", getSubInfo().getResistScore(), "Pull away", "Try to pull away", {A_CHANCE: getSubResistChance(30.0, 25.0)})
+		addAction("pullaway", getSubInfo().getResistScore(), "Отстраниться", "Попытаться отстраниться", {A_CHANCE: getSubResistChance(30.0, 25.0)})
 
 func doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "switch"):
@@ -172,11 +172,11 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 			domFocus = BodypartSlot.Vagina
 		else:
 			domFocus = BodypartSlot.Penis
-		addText("{dom.You} {dom.youVerb('switch', 'switches')} {dom.yourHis} focus to {sub.your} "+("{sub.penis}" if domFocus == BodypartSlot.Penis else "{sub.pussyStretch} pussy")+".")
+		addText("{dom.You} {dom.youVerb('switch', 'switches')} {dom.yourHis} сосредоточились на {sub.your} "+("{sub.penis}" if domFocus == BodypartSlot.Penis else "{sub.pussyStretch} pussy")+".")
 		return
 	if(_id == "stop"):
 		endActivity()
-		addText("{dom.You} {dom.youVerb('pull')} {dom.yourHis} crotch away from {sub.your} face, ending the fun.")
+		addText("{dom.You} {dom.youVerb('pull')} {dom.yourHis} отстранили пах от лица {sub.your}, прекращая веселье.")
 		return
 
 	if(_id == "pullaway"):
@@ -189,11 +189,11 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 			else:
 				failGoals()
 				endActivity()
-			addText("{sub.You} {sub.youVerb('pull')} away from {dom.you}.")
+			addText("{sub.You} {sub.youVerb('pull')} от {dom.you}.")
 			return
 		else:
 			getDomInfo().addAnger(0.1)
-			addText("{sub.You} {sub.youVerb('try', 'tries')} to pull away from {dom.you} but {sub.youVerb('fail')}.")
+			addText("{sub.You} {sub.youVerb('try', 'tries')} попытаться отстраниться от {dom.you}, но {sub.youVerb('fail')}.")
 			reactSub(SexReaction.ActivelyResisting, [50])
 			return
 
@@ -205,29 +205,29 @@ func init_getActions(_indx:int):
 		if(getSub().getFirstItemThatCoversBodypart(domFocus) == null):
 			if(getDom().hasReachableVagina() && getDom().getFirstItemThatCoversBodypart(BodypartSlot.Vagina) == null):
 				if(!isSubUncon):
-					addAction("orderlick", 1.0 - getDomInfo().getAngerScore(), "Order to lick", "Order them to start licking your pussy!")
+					addAction("orderlick", 1.0 - getDomInfo().getAngerScore(), "Приказать лизать", "Приказать им начать лизать твою киску!")
 				var forcelickScore:float = getDomInfo().getAngerScore() if !isSubUncon else 1.0
-				addAction("forcelick", forcelickScore, "Force to lick", "Force the sub to start licking you off!", {A_CHANCE: getDomForceChance()})
+				addAction("forcelick", forcelickScore, "Заставить лизать", "Заставить подчиненную начать отсасывать тебе!", {A_CHANCE: getDomForceChance()})
 
 			if(getDom().hasReachablePenis() && getDom().getFirstItemThatCoversBodypart(BodypartSlot.Penis) == null):
 				if(!isSubUncon):
-					addAction("ordersuck", 1.0 - getDomInfo().getAngerScore(), "Order to suck", "Order them to start sucking your cock!")
+					addAction("ordersuck", 1.0 - getDomInfo().getAngerScore(), "Приказать сосать", "Приказать им начать сосать твой член!")
 				var forcesuckScore:float = getDomInfo().getAngerScore() if !isSubUncon else 1.0
-				addAction("forcesuck", forcesuckScore, "Force to suck", "Force the sub to start sucking you off!", {A_CHANCE: getDomForceChance()})
+				addAction("forcesuck", forcesuckScore, "Заставить сосать", "Заставить подчиненную начать отсасывать тебе!", {A_CHANCE: getDomForceChance()})
 
 func init_doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "orderlick"):
 		state = "order"
 		subFocus = BodypartSlot.Vagina
 		affectSub(getSubInfo().fetishScore({Fetish.OralSexGiving: 1.0}), 0.05, -0.4, 0.0)
-		addText("{dom.You} {dom.youVerb('order')} {sub.youHim} to "+RNG.pick(["start licking {dom.yourHis} pussy", "stick {sub.yourHis} tongue out and start working on {dom.yourHis} pussy"])+".")
+		addText("{dom.You} {dom.youVerb('order')} {sub.youHim} to "+RNG.pick(["начать лизать {dom.yourHis} киску", "высунуть {sub.yourHis} язык и приняться за {dom.yourHis} киску"])+".")
 		react(SexReaction.OrderLickPussy)
 		return
 	if(_id == "ordersuck"):
 		state = "order"
 		subFocus = BodypartSlot.Penis
 		affectSub(getSubInfo().fetishScore({Fetish.OralSexGiving: 1.0}), 0.05, -0.4, 0.0)
-		addText("{dom.You} {dom.youVerb('order')} {sub.youHim} to "+RNG.pick(["open {sub.yourHis} mouth", "part {sub.yourHis} lips"])+".")
+		addText("{dom.You} {dom.youVerb('order')} {sub.youHim} to "+RNG.pick(["открыть {sub.yourHis} рот", "раздвинуть {sub.yourHis} губы"])+".")
 		react(SexReaction.OrderBlowjob)
 		return
 	if(_id in ["forcelick", "forcesuck"]):
@@ -240,7 +240,7 @@ func init_doAction(_indx:int, _id:String, _action:Dictionary):
 		if(!RNG.chance(succChance)):
 			getDomInfo().addAnger(0.05)
 			affectSub(getSubInfo().fetishScore({Fetish.OralSexGiving: 1.0}), 0.05, -0.2, 0.0)
-			addText("{dom.You} {dom.youVerb('try', 'tries')} to force {sub.you} to "+("start licking {dom.yourHis} pussy" if subFocus == BodypartSlot.Vagina else "start sucking {dom.yourHis} cock")+" but {dom.youVerb('fail')}.")
+			addText("{dom.You} {dom.youVerb('try', 'tries')} заставляет {sub.you} "+("начать лизать {dom.yourHis} киску" if subFocus == BodypartSlot.Vagina else "начать сосать {dom.yourHis} член")+" but {dom.youVerb('fail')}.")
 			if(domFocus == BodypartSlot.Penis):
 				react(SexReaction.TryForceSuckPenis, [40.0, 20.0])
 			else:
@@ -254,13 +254,13 @@ func init_doAction(_indx:int, _id:String, _action:Dictionary):
 			sendSexEvent(SexEvent.HolePenetrated, SUB_0, DOM_0, {hole=BodypartSlot.Head,engulfed=true,strapon=isWearingStrapon(SUB_0)})
 			
 			text += RNG.pick([
-				"{dom.You} {dom.youVerb('take')} {sub.yourHis} {penis} into {dom.yourHis} mouth, {dom.yourHis} lips sliding down its length.",
-				"{dom.You} {dom.youVerb('wrap')} {dom.yourHis} lips around {sub.yourHis} {penis}, {dom.yourHis} tongue teasing along its sensitive tip as {dom.youHe} {dom.youHeVerb('bob')} {dom.yourHis} head up and down.",
+				"{dom.You} {dom.youVerb('take')} {sub.yourHis} {penis} в {dom.yourHis} рот, {dom.yourHis} губы скользят вдоль его длины.",
+				"{dom.You} {dom.youVerb('wrap')} {dom.yourHis} губами вокруг {sub.yourHis} {penis}, {dom.yourHis} язык дразнит чувствительный кончик, пока {dom.youHe} {dom.youHeVerb('bob')} {dom.yourHis} голову вверх и вниз.",
 			])
 		else:
 			text += RNG.pick([
-				"{dom.You} {dom.youVerb('lean')} down, pressing {dom.yourHis} tongue against {sub.yourHis} {pussy} with slow, deliberate strokes.",
-				"{dom.You} {dom.youVerb('bury', 'buries')} {dom.yourHis} face between {sub.yourHis} legs, tongue exploring every inch of {sub.yourHis} pussy.",
+				"{dom.You} {dom.youVerb('lean')} вниз, прижимая {dom.yourHis} язык к {sub.yourHis} {pussy} медленными, размеренными движениями.",
+				"{dom.You} {dom.youVerb('bury', 'buries')} {dom.yourHis} лицом между {sub.yourHis} ног, исследуя языком каждый дюйм {sub.yourHis} киски.",
 			])
 		
 		text += " "
@@ -268,13 +268,13 @@ func init_doAction(_indx:int, _id:String, _action:Dictionary):
 			sendSexEvent(SexEvent.HolePenetrated, DOM_0, SUB_0, {hole=BodypartSlot.Head,engulfed=false,strapon=isWearingStrapon(DOM_0)})
 			
 			text += RNG.pick([
-				"Without warning, {dom.you} {dom.youVerb('shift')} {dom.yourHis} hips, lining up {dom.yourHis} {dom.penis} with {sub.yourHis} lips. With a firm thrust, {dom.youHe} {dom.youHeVerb('part')} {sub.yourHis} mouth, forcing {sub.youHim} to return the favor by taking {dom.youHim}.",
-				"{dom.You} {dom.youVerb('move')} {dom.yourHis} hips forward, guiding {dom.yourHis} {dom.penis} to {sub.yourHis} lips. {dom.YouHe} {dom.youHeVerb('push', 'pushes')} insistently, leaving {sub.youHim} no choice but to take {dom.youHim} in return.",
+				"Без предупреждения, {dom.you} {dom.youVerb('shift')} {dom.yourHis} бедра, совмещая {dom.yourHis} {dom.penis} со {sub.yourHis} губами. Резким толчком {dom.youHe} {dom.youHeVerb('part')} {sub.yourHis} рот, заставляя {sub.youHim} ответить тем же и взять {dom.youHim}.",
+				"{dom.You} {dom.youVerb('move')} {dom.yourHis} бедра вперед, направляя {dom.yourHis} {dom.penis} к {sub.yourHis} губам. {dom.YouHe} {dom.youHeVerb('push', 'pushes')} настойчиво, не оставляя {sub.youHim} выбора, кроме как принять {dom.youHim} в ответ.",
 			])
 		else:
 			text += RNG.pick([
-				"Without hesitation, {dom.you} {dom.youVerb('shift')} {dom.yourHis} weight and {dom.youVerb('lower')} {dom.yourself} onto {sub.yourHis} face, muffling any protests with {dom.yourHis} {dom.pussyStretch} pussy, forcing {sub.youHim} to start licking.",
-				"At the same time, {dom.you} {dom.youVerb('lower')} {dom.yourself}, pressing {dom.yourHis} {dom.pussyStretch} pussy firmly against {sub.yourHis} mouth, forcing {sub.youHim} to start returning the favor.",
+				"Без малейших колебаний, {dom.you} {dom.youVerb('shift')} {dom.yourHis} весом и {dom.youVerb('lower')} {dom.yourself} на {sub.yourHis} лицо, заглушая любые протесты {dom.yourHis} {dom.pussyStretch} киской и заставляя {sub.youHim} начать лизать.",
+				"В то же время, {dom.you} {dom.youVerb('lower')} {dom.yourself}, плотно прижимая {dom.yourHis} {dom.pussyStretch} киску к {sub.yourHis} рту, заставляя {sub.youHim} начать отвечать взаимностью.",
 			])
 		getDomInfo().addAnger(-0.1)
 		affectSub(getSubInfo().fetishScore({Fetish.OralSexGiving: 1.0}), 0.05, -0.2, 0.0)
@@ -284,12 +284,12 @@ func init_doAction(_indx:int, _id:String, _action:Dictionary):
 
 func order_getActions(_indx:int):
 	if(_indx == SUB_0):
-		addAction("obey", getSubInfo().getComplyScore(), "Obey", "Start "+("sucking" if subFocus == BodypartSlot.Penis else "licking"), {A_PRIORITY: 1001})
+		addAction("obey", getSubInfo().getComplyScore(), "Повиноваться", "Начать "+("sucking" if subFocus == BodypartSlot.Penis else "licking"), {A_PRIORITY: 1001})
 		var refuseScore:float = getSubInfo().getResistScore()*((1.0+getSubInfo().personalityScore({PersonalityStat.Mean:-1.0})) if !getSub().isBitingBlocked() else 1.0)
-		addAction("refuse", refuseScore, "Refuse", "Refuse to do it", {A_PRIORITY: 1001})
+		addAction("refuse", refuseScore, "Отказаться", "Отказаться это делать", {A_PRIORITY: 1001})
 		if(!getSub().isBitingBlocked()):
 			var biteScore:float = getSubInfo().getResistScore()/2.0*(1.0+getSubInfo().personalityScore({PersonalityStat.Mean:1.0}))
-			addAction("bite", biteScore, "Bite!", "Refuse to do it", {A_PRIORITY: 1001, A_CHANCE: getSubBiteChance(50.0, 30.0)})
+			addAction("bite", biteScore, "Кусь!", "Отказаться это делать", {A_PRIORITY: 1001, A_CHANCE: getSubBiteChance(50.0, 30.0)})
 
 func order_doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "obey"):
@@ -299,26 +299,26 @@ func order_doAction(_indx:int, _id:String, _action:Dictionary):
 			sendSexEvent(SexEvent.HolePenetrated, DOM_0, SUB_0, {hole=BodypartSlot.Head,engulfed=true,strapon=isWearingStrapon(DOM_0)})
 			
 			text += RNG.pick([
-				"Obediently, {sub.you} {sub.youVerb('part')} {sub.yourHis} lips and {sub.youVerb('take')} {dom.yourHis} {dom.penis} into {sub.yourHis} mouth, sucking eagerly.",
-				"{sub.You} {sub.youVerb('open')} {sub.yourHis} mouth wide, letting {dom.yourHis} {dom.penis} slide past {sub.yourHis} lips. With an eager tongue and slow, deliberate movements, {sub.youHe} {sub.youHeVerb('begin')} sucking {dom.youHim} off.",
+				"Послушно, {sub.you} {sub.youVerb('part')} {sub.yourHis} губами и {sub.youVerb('take')} {dom.yourHis} {dom.penis} в {sub.yourHis} рот, жадно посасывая.",
+				"{sub.You} {sub.youVerb('open')} {sub.yourHis} широко открывает рот, позволяя {dom.yourHis} {dom.penis} скользнуть мимо {sub.yourHis} губ. С жадным языком и медленными, намеренными движениями, {sub.youHe} {sub.youHeVerb('begin')} сосет {dom.youHim}.",
 			])
 		else:
 			text += RNG.pick([
-				"Obediently, {sub.you} {sub.youVerb('extend')} {sub.yourHis} tongue and {sub.youVerb('begin')} licking {dom.yourHis} {dom.pussyStretch} pussy.",
-				"{sub.You} {sub.youVerb('press', 'presses')} {sub.yourHis} tongue to {dom.yourHis} {dom.pussyStretch} pussy, lapping eagerly, obeying {dom.youHis} command without hesitation.",
+				"Послушно, {sub.you} {sub.youVerb('extend')} {sub.yourHis} языком и {sub.youVerb('begin')} лижет {dom.yourHis} {dom.pussyStretch} киску.",
+				"{sub.You} {sub.youVerb('press', 'presses')} {sub.yourHis} языком к {dom.yourHis} {dom.pussyStretch} киске, жадно слизывая всё, без колебаний повинуясь приказу {dom.youHis}.",
 			])
 		text += " "
 		if(domFocus == BodypartSlot.Penis):
 			sendSexEvent(SexEvent.HolePenetrated, SUB_0, DOM_0, {hole=BodypartSlot.Head,engulfed=true,strapon=isWearingStrapon(SUB_0)})
 			
 			text += RNG.pick([
-				"In return, {dom.You} {dom.youVerb('take')} {sub.yourHis} {penis} into {dom.yourHis} mouth, {dom.yourHis} lips sliding down its length.",
-				"Feeling that, {dom.You} {dom.youVerb('wrap')} {dom.yourHis} lips around {sub.yourHis} {penis}, {dom.yourHis} tongue teasing along its sensitive tip as {dom.youHe} {dom.youHeVerb('bob')} {dom.yourHis} head up and down.",
+				"В ответ {dom.You} {dom.youVerb('take')} {sub.yourHis} {penis} прямо в {dom.yourHis} рот, а {dom.yourHis} губы скользят вдоль него.",
+				"Ощущая это, {dom.You} {dom.youVerb('wrap')} {dom.yourHis} губами вокруг {sub.yourHis} {penis}, а {dom.yourHis} язык дразнит чувствительный кончик, пока {dom.youHe} {dom.youHeVerb('bob')} {dom.yourHis} двигает головой вверх-вниз.",
 			])
 		else:
 			text += RNG.pick([
-				"In return, {dom.You} {dom.youVerb('lean')} down, pressing {dom.yourHis} tongue against {sub.yourHis} {pussy} with slow, deliberate strokes.",
-				"Feeling that, {dom.You} {dom.youVerb('bury', 'buries')} {dom.yourHis} face between {sub.yourHis} legs, tongue exploring every inch of {sub.yourHis} pussy.",
+				"В ответ {dom.You} {dom.youVerb('lean')} вниз, прижимая {dom.yourHis} язык к {sub.yourHis} {pussy} медленными, размеренными движениями.",
+				"Ощущая это, {dom.You} {dom.youVerb('bury', 'buries')} {dom.yourHis} лицом между {sub.yourHis} ног, исследуя языком каждый дюйм {sub.yourHis} киски.",
 			])
 		
 		addText(text)
@@ -340,29 +340,29 @@ func order_doAction(_indx:int, _id:String, _action:Dictionary):
 			if(RNG.chance(50)):
 				failGoals()
 			endActivity()
-			addText("{sub.You} {sub.youVerb('bite')} {dom.your} genitals! {dom.YouHe} {dom.youHeVerb('cry', 'cries')} from pain and {dom.youHeVerb('pull')} away.")
+			addText("{sub.You} {sub.youVerb('bite')} хватает {dom.your} за гениталии! {dom.YouHe} {dom.youHeVerb('cry', 'cries')} от боли и {dom.youHeVerb('pull')} прочь.")
 			react(SexReaction.PainGeneric)
 			return
 		else:
 			getDomInfo().addAnger(0.4)
 			state = ""
-			addText("{sub.You} {sub.youVerb('try', 'tries')} to bite {dom.you} but {dom.youHe} {dom.youHeVerb('avoid')} it!")
+			addText("{sub.You} {sub.youVerb('try', 'tries')} пытается укусить {dom.you}, но {dom.youHe} {dom.youHeVerb('avoid')} это!")
 			return
 
 func sex_getActions(_indx:int):
 	if(_indx == DOM_0):
 		if(domFocus == BodypartSlot.Vagina && getDom().hasEffect(StatusEffect.HasCumInsideMouth) && getSub().getFirstItemThatCoversBodypart(BodypartSlot.Vagina) == null && !getDom().isOralBlocked() && OPTIONS.isContentEnabled(ContentType.CumStealing)):
 			var spitcumintosubspussyScore:float = 0.01 + getDomInfo().fetishScore({Fetish.Breeding: 0.1})
-			addAction("spitcumintosubspussy", spitcumintosubspussyScore, "Spit cum into pussy", "Force some cum into their slit")
+			addAction("spitcumintosubspussy", spitcumintosubspussyScore, "Плюнуть спермой в киску", "Запихнуть сперму в щель")
 		
 		if(isReadyToCumHandled(DOM_0)):
 			if(isReadyToCumHandled(SUB_0)):
-				addAction("cum", 1.0, "Double cum!", "Both of you are about to cum!", {A_PRIORITY: 1001})
+				addAction("cum", 1.0, "Двойной конч!", "Вы оба сейчас кончите!", {A_PRIORITY: 1001})
 			else:
-				addAction("cum", 1.0, "Cum!", "You're about to cum.", {A_PRIORITY: 1001})
+				addAction("cum", 1.0, "Кончай!", "Ты сейчас кончишь.", {A_PRIORITY: 1001})
 	if(_indx == SUB_0):
 		if(isReadyToCumHandled(SUB_0)):
-			addAction("cumSub", 1.0, "Cum!", "You're about to cum.", {A_PRIORITY: 1001})
+			addAction("cumSub", 1.0, "Кончай!", "Ты сейчас кончишь.", {A_PRIORITY: 1001})
 
 func sex_doAction(_indx:int, _id:String, _action:Dictionary):
 	if(_id == "spitcumintosubspussy"):
@@ -372,7 +372,7 @@ func sex_doAction(_indx:int, _id:String, _action:Dictionary):
 		getSubInfo().stimulateArousalZone(0.05, domFocus, 0.5)
 		if(isReadyToCumHandled(SUB_0)):
 			satisfyGoals()
-			addText("[b]Double orgasm[/b]!")
+			addText("[b]Двойной оргазм[/b]!")
 			var _ok =doCumBJDom() if subFocus == BodypartSlot.Penis else doCumPussyLickDom()
 			var _ok2 =doCumBJSub(false) if domFocus == BodypartSlot.Penis else doCumPussyLickSub(false)
 			return
@@ -387,7 +387,7 @@ func sex_doAction(_indx:int, _id:String, _action:Dictionary):
 		
 		if(isReadyToCumHandled(DOM_0)):
 			satisfyGoals()
-			addText("[b]Double orgasm[/b]!")
+			addText("[b]Двойной оргазм[/b]!")
 			var _ok =doCumBJDom() if subFocus == BodypartSlot.Penis else doCumPussyLickDom()
 			var _ok2 =doCumBJSub(false) if domFocus == BodypartSlot.Penis else doCumPussyLickSub(false)
 			return

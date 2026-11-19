@@ -296,7 +296,7 @@ func doCommitClick():
 			perfectStreak += 1
 			timeLeft += 1.0
 			timeLeft = min(timer, timeLeft)
-			streakLabel.text = "Perfect Streak: "+str(perfectStreak)+" (+"+str(Util.roundF(howMuchForPerfect*perfectStreak*100.0, 1))+"%)"
+			streakLabel.text = "Серия идеальных попаданий: "+str(perfectStreak)+" (+"+str(Util.roundF(howMuchForPerfect*perfectStreak*100.0, 1))+"%)"
 			
 			if tween:
 				tween.kill()

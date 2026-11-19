@@ -78,7 +78,7 @@ func updateStartFromSlider():
 	if(!theEntry):
 		return
 	start_from_h_slider.value = theEntry.startFrom
-	start_from_label.text = "Start from "+str(Util.roundF(theEntry.startFrom*100.0, 0))+"%"
+	start_from_label.text = "Начать с "+str(Util.roundF(theEntry.startFrom*100.0, 0))+"%"
 
 
 func updateScaleWithValueSlider():
@@ -87,9 +87,9 @@ func updateScaleWithValueSlider():
 		return
 	var theTexts:Array = SexToyTrigger.supportsScaleWithValueTexts(selectedTrigger)
 	scale_with_value_checkbox.set_pressed_no_signal(theEntry.scaleWithValue)
-	scale_with_value_checkbox.text = theTexts[0] if theTexts.size() > 0 else "Error?"
+	scale_with_value_checkbox.text = theTexts[0] if theTexts.size() > 0 else "Ошибка?"
 	start_from_h_slider.value = theEntry.scaleWithValue
-	scale_with_value_label.text = "Max at "+str(Util.roundF(theEntry.scaleMaxAt*100.0, 0))+" "+(theTexts[1] if theTexts.size() > 1 else "Error?")
+	scale_with_value_label.text = "Максимум при "+str(Util.roundF(theEntry.scaleMaxAt*100.0, 0))+" "+(theTexts[1] if theTexts.size() > 1 else "Ошибка?")
 	scale_with_value_label.visible = theEntry.scaleWithValue
 	scale_with_value_slider.visible = theEntry.scaleWithValue
 	
@@ -165,7 +165,7 @@ func _on_LoadConfigButton_pressed():
 func _on_ConfigImportDialog_confirmed():
 	var theJsonResult := JSON.parse(import_text_edit.text if !import_text_edit.text.empty() else "{}")
 	if(!theJsonResult || theJsonResult.error != OK || !(theJsonResult.result is Dictionary)):
-		info_final_accept_dialog.dialog_text = "Bad config. Make sure it looks like JSON."
+		info_final_accept_dialog.dialog_text = "Ошибка конфигурации. Убедитесь, что это формат JSON."
 		info_final_accept_dialog.popup_centered()
 		return
 	
