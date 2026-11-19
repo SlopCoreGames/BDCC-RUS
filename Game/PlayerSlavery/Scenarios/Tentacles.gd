@@ -381,44 +381,44 @@ func getText(_loc:String) -> String:
 	
 	if(_loc == LOC_PLAY):
 		if(growStage >= STAGE_TINY):
-			Ar.append("There is a table here with a single chair. Near the table there are a few boxes with stuff.")
+			Ar.append("Здесь стоит стол с единственным стулом. Рядом с ним — несколько коробок с всяким барахлом.")
 		else:
-			Ar.append("There is a table here with a single chair.")
+			Ar.append("Здесь стоит стол и один стул.")
 	
 	if(_loc == LOC_WINDOW):
-		Ar.append("There is a reinforced window here. It gives you a great view of the infinite void.")
+		Ar.append("Здесь находится армированное окно. Из него открывается великолепный вид на бесконечную пустоту.")
 	
 	if(_loc == LOC_SHOWER):
-		Ar.append("The wall has a shower head installed. The shower drain keeps the rest of the floor dry.")
+		Ar.append("В стене установлена душевая лейка. Благодаря сливу пол вокруг остается сухим.")
 	
 	if(_loc == LOC_FRIDGE):
-		Ar.append("There is a fridge here!")
+		Ar.append("О, здесь есть холодильник!")
 	
 	if(_loc == LOC_IMPORTANT):
-		Ar.append("There is a window here that leads into some corridor.")
+		Ar.append("Здесь есть окно, выходящее в какой-то коридор.")
 	
 	if(_loc == LOC_DOOR):
-		Ar.append("There is a highly-reinforced sealed door here. Above it is a security camera that always tracks your movement.")
+		Ar.append("Здесь находится сверхпрочная герметичная дверь. Над ней висит камера наблюдения, которая постоянно следит за каждым твоим движением.")
 	
 	if(_loc == LOC_BED):
-		Ar.append("You're standing near your bed.")
+		Ar.append("Ты стоишь возле своей кровати.")
 		
 	if(_loc == LOC_MIDDLE):
 		if(growStage == STAGE_EGG):
-			Ar.append("You're standing near a very weird egg.")
+			Ar.append("Ты стоишь рядом с очень странным яйцом.")
 		if(growStage == STAGE_TINY):
-			Ar.append("You're standing near 3 tiny green tentacles that are swaying in their nest.")
+			Ar.append("Ты стоишь рядом с тремя крошечными зелеными щупальцами, которые покачиваются в своем гнезде.")
 		if(growStage == STAGE_TINY_AFTERTEST):
-			Ar.append("You're standing near 3 tiny green tentacles. They seem to be sleeping in their nest.")
+			Ar.append("Вы стоите рядом с тремя крошечными зелеными щупальцами. Кажется, они спят в своем гнезде.")
 		if(growStage == STAGE_SMALL):
 			if(monsterLoc != LOC_MIDDLE):
-				Ar.append("The tentacles' nest is still here. Currently it's empty.")
+				Ar.append("Гнездо щупалец всё еще здесь. Сейчас оно пусто.")
 		if(growStage == STAGE_SMALL_ENDDAY):
-			Ar.append("You're standing near small green tentacles. They seem to be sleeping in their nest.")
+			Ar.append("Вы стоите рядом с маленькими зелеными щупальцами. Кажется, они спят в своем гнезде.")
 		
 		if(growStage in [STAGE_NORMAL]):
 			if(monsterLoc != LOC_MIDDLE):
-				Ar.append("The tentacles' nest is still here. Currently it's empty.")
+				Ar.append("Гнездо щупалец всё еще здесь. Сейчас оно пусто.")
 		
 	if(isSmallOrNormal() && DEBUG_ENABLED):
 		Ar.append("eventNeed: "+str(eventNeed))
@@ -429,12 +429,12 @@ func getText(_loc:String) -> String:
 	if(isSmallOrNormal()):
 		if(GM.pc.getLocation() == monsterLoc):
 			Ar.append("")
-			Ar.append(getMonsterName()+" is near.")
+			Ar.append(getMonsterName()+" находится рядом.")
 			Ar.append_array(getStatDescriptions())
 	
 	if(isNormal() && daysNormal >= 1):
 		var timeLeft:int = getEndOfDayTime() - GM.main.getTime()
-		Ar.append(""+Util.getTimeStringHumanReadable(timeLeft)+" left until the scientists return.")
+		Ar.append(""+Util.getTimeStringHumanReadable(timeLeft)+" осталось до возвращения ученых.")
 	
 	return Util.join(Ar, "\n")
 
@@ -447,32 +447,32 @@ func getActions(_loc:String) -> Array:
 	if(isSmallOrNormal()):
 		if(eventScene != ""):
 			if(eventTarget == monsterLoc && _loc == eventTarget):
-				theActions.append(action(getMonsterName(), "See what's up", "doEvent"))
+				theActions.append(action(getMonsterName(), "Посмотреть, что там", "doEvent"))
 	
 	if(isNormal() && daysNormal >= 1 && _loc == monsterLoc && getCurrentEvent() < 0):
-		theActions.append(action(getMonsterName(), "Approach your tentacles.. and think about the options that you have.", "PSTentaclesEndingChoice", [false]))
+		theActions.append(action(getMonsterName(), "Подойдите к своим щупальцам... и подумайте о доступных вариантах.", "PSTentaclesEndingChoice", [false]))
 	
 	#if(_loc == LOC_IMPORTANT):
 	#	theActions.append(action("MEOW", "TEST ACTION", "MeScene"))
 	if(_loc == LOC_BED && growStage == STAGE_EGG):
-		theActions.append(action("Rest", "Get some rest", "PSTentacles1EggInteract"))
+		theActions.append(action("Отдохнуть", "Немного поспать", "PSTentacles1EggInteract"))
 	if(_loc == LOC_BED && growStage == STAGE_TINY):
-		theActions.append(action("Rest", "Get some rest", "PSTentacles2SmallInteract"))
+		theActions.append(action("Отдохнуть", "Немного поспать", "PSTentacles2SmallInteract"))
 	if(_loc == LOC_BED && growStage == STAGE_TINY_AFTERTEST):
-		theActions.append(action("Sleep", "Get some rest", "PSTentaclesTinySleep"))
+		theActions.append(action("Спать", "Немного поспать", "PSTentaclesTinySleep"))
 	if(_loc == LOC_SHOWER):
-		theActions.append(action("Shower", "Take a shower", "PSTentaclesShower"))
+		theActions.append(action("Душ", "Принять душ", "PSTentaclesShower"))
 	if(_loc == LOC_WINDOW):
 		if(getCurrentEvent() != EVENT_WINDOW):
-			theActions.append(action("Window", "Look at the view", "PSTentaclesWindowAlone"))
+			theActions.append(action("Окно", "Осмотреться", "PSTentaclesWindowAlone"))
 	if(_loc == LOC_PLAY):
 		if(getCurrentEvent() != EVENT_PLAY):
-			theActions.append(action("Yoga", "Maybe you could do some yoga here", "PSTentaclesTableAlone"))
+			theActions.append(action("Йога", "Может, стоит заняться здесь йогой?", "PSTentaclesTableAlone"))
 	if(_loc == LOC_FRIDGE):
 		if(getCurrentEvent() != EVENT_HUNGRY && getCurrentEvent() != EVENT_BREAK):
-			theActions.append(action("Fridge", "Open the fridge", "PSTentaclesFridge"))
+			theActions.append(action("Холодильник", "Открыть холодильник", "PSTentaclesFridge"))
 	if(_loc == LOC_BED && growStage == STAGE_SMALL_ENDDAY):
-		theActions.append(action("Sleep", "Get some rest", "PSTentaclesSmallSleep"))
+		theActions.append(action("Спать", "Немного поспать", "PSTentaclesSmallSleep"))
 	
 	return theActions
 
@@ -727,7 +727,7 @@ func doTurn():
 
 func afterWalkCheck():
 	if(didScientistsApproach() && !getPendingScientistScene().empty()):
-		GM.main.addMessage("You hear knocking on the glass..")
+		GM.main.addMessage("Вы слышите стук по стеклу...")
 
 func goToSlow(_startLoc:String, theTargetLoc:String) -> String:
 	if(theTargetLoc == "pc"):
@@ -794,13 +794,13 @@ func incStat(_statID:int, showMessage:bool = true) -> bool:
 	if(theStat > statLimit):
 		theStat = statLimit
 		if(showMessage):
-			GM.main.addMessage(getMonsterName()+"'s "+getStatName(_statID)+" has reached the"+("" if statLimit > 5 else " today's")+" limit.")
+			GM.main.addMessage(getMonsterName()+"'s "+getStatName(_statID)+" достиг(ла)"+("" if statLimit > 5 else " today's")+" limit.")
 	setStat(_statID, theStat)
 	if(theStat == theOldStat):
 		return false
 	
 	if(showMessage):
-		GM.main.addMessage(getMonsterName()+"'s "+getStatName(_statID)+" got increased!")
+		GM.main.addMessage(getMonsterName()+"'s "+getStatName(_statID)+" увеличился/увеличилась!")
 	
 	return true
 
@@ -931,15 +931,15 @@ func setPrefer(_eventType:int):
 	preferEvent = _eventType
 	
 	if(preferEvent == EVENT_LEWD):
-		GM.main.addMessage("The tentacles will now prefer to be lusty..")
+		GM.main.addMessage("Теперь щупальца будут отдавать предпочтение похоти...")
 	if(preferEvent == EVENT_PLAY):
-		GM.main.addMessage("The tentacles will now prefer to be active..")
+		GM.main.addMessage("Теперь щупальца будут отдавать предпочтение активности...")
 	if(preferEvent == EVENT_WINDOW):
-		GM.main.addMessage("The tentacles will now prefer to be mindful..")
+		GM.main.addMessage("Теперь щупальца будут отдавать предпочтение осознанности...")
 	if(preferEvent == EVENT_BREAK):
-		GM.main.addMessage("The tentacles will now prefer to be destructive..")
+		GM.main.addMessage("Теперь щупальца будут отдавать предпочтение разрушительности...")
 	if(preferEvent == -1):
-		GM.main.addMessage("The tentacles forgot the preference towards any activity that they had..")
+		GM.main.addMessage("Щупальца забыли все свои прежние предпочтения...")
 
 func getPrefer() -> int:
 	return preferEvent
@@ -1001,11 +1001,11 @@ func getDebugActions():
 	return [
 		{
 			"id": "setAnger",
-			"name": "Set Anger",
+			"name": "Установить ярость",
 			"args": [
 				{
 					"id": "amount",
-					"name": "Value",
+					"name": "Значение",
 					"type": "number",
 					"value": 10,
 				},
@@ -1013,11 +1013,11 @@ func getDebugActions():
 		},
 		{
 			"id": "setAgility",
-			"name": "Set Agility",
+			"name": "Установить ловкость",
 			"args": [
 				{
 					"id": "amount",
-					"name": "Value",
+					"name": "Значение",
 					"type": "number",
 					"value": 10,
 				},
@@ -1025,11 +1025,11 @@ func getDebugActions():
 		},
 		{
 			"id": "setMind",
-			"name": "Set Mind",
+			"name": "Установить разум",
 			"args": [
 				{
 					"id": "amount",
-					"name": "Value",
+					"name": "Значение",
 					"type": "number",
 					"value": 10,
 				},
@@ -1037,11 +1037,11 @@ func getDebugActions():
 		},
 		{
 			"id": "setLust",
-			"name": "Set Lust",
+			"name": "Установить похоть",
 			"args": [
 				{
 					"id": "amount",
-					"name": "Value",
+					"name": "Значение",
 					"type": "number",
 					"value": 10,
 				},

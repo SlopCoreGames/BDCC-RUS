@@ -15,32 +15,32 @@ func shouldHappenChance(_npcSlavery:NpcSlave):
 	return 10.0 + min(0.5, _npcSlavery.getDespair()) * 100.0
 
 func runEvent(_npcSlavery:NpcSlave):
-	var theText = "Something is different about {npc.name}. As soon as you approach {npc.him}, {npc.he} starts shaking."
+	var theText = "В {npc.name} есть что-то необычное. Стоит тебе подойти к {npc.him}, как {npc.he} начинает дрожать."
 
 	theText += "\n\n[say=npc]"+RNG.pick([
-		"I can't.. Fuck it..",
-		"Alright.. You won, okay?",
+		"Я не могу... Да к черту всё...",
+		"Ладно... Ты победил, ясно?",
 		"Listen, you..",
-		"I can't..",
-		"You can stop.. you won.",
-		"I give up..",
-		"I.. I can't anymore.. I give up..",
-		"You forced me..",
-		"I hate you.. But..",
+		"Я не могу...",
+		"Можешь остановиться... ты победил.",
+		"Я сдаюсь...",
+		"Я... я больше не могу... я сдаюсь...",
+		"Ты заставил меня...",
+		"Ненавижу тебя... Но...",
 	])+"[/say]\n\n"
 	
-	theText += "After that, {npc.he} drops to {npc.his} knees before you, {npc.his} eyes full of desperation."
+	theText += "После этого {npc.he} падает перед тобой на {npc.his} колени, а в глазах {npc.his} читается полное отчаяние."
 	
 	theText += "\n\n[say=npc]"+RNG.pick([
-		"I.. submit.",
-		"I'm yours now, okay? I'm tired of.. all of this..",
-		"I submit.. I will do anything you say..",
-		"I will do anything.. I submit..",
+		"Я... сдаюсь.",
+		"Теперь я твоя, ладно? Я так устала от... всего этого...",
+		"Я подчиняюсь... Буду делать всё, что ты скажешь...",
+		"Я сделаю всё что угодно... Я сдаюсь...",
 	])+"[/say]\n\n"
 	
-	theText += "You can't help but to smile, looks like you broke your slave enough for {npc.him} to finally submit to you."
+	theText += "Ты не можешь сдержать улыбку: похоже, ты сломал свою рабыню достаточно сильно, чтобы {npc.him} наконец-то покорилась тебе."
 	
-	theText += "\n\nThis means that {npc.his} obedience, love and broken spirit won't decay anymore."
+	theText += "\n\nЭто значит, что {npc.his} послушание, любовь и сломленный дух больше не будут увядать."
 	
 	_npcSlavery.doSubmitToPC()
 	

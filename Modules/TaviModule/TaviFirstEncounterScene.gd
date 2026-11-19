@@ -427,7 +427,7 @@ func _react(_action: String, _args):
 	if(_action == "no1"):
 		GM.pc.addPain(20)
 		
-		addMessage("That was painful. You received 20 pain")
+		addMessage("Это было больно. Вы получили 20 единиц боли")
 		
 		TaviModule.makeTaviAngry()
 	
@@ -436,7 +436,7 @@ func _react(_action: String, _args):
 	
 	if(_action in ["kneel", "submit", "submit1", "submit2"]):
 		if(GM.pc.freeMouthDeleteAll()):
-			addMessage("Tavi does something to your gag and the whole harness slips off of your head and falls onto the floor.")
+			addMessage("Тави что-то делает с твоим кляпом, и вся портупея соскальзывает с твоей головы, падая на пол.")
 	
 	if(_action == "obey"):
 		processTime(30*60)
@@ -445,7 +445,7 @@ func _react(_action: String, _args):
 		GM.pc.cummedInMouthBy("tavi", FluidSource.Vagina)
 		GM.pc.addSkillExperience(Skill.SexSlave, 50, "tavi_firstencounter")
 		#addMessage("Tavi came on you, covering your body with her female juices")
-		addMessage("Talk with Tavi to start planning your escape")
+		addMessage("Поговорите с Тави, чтобы начать планировать побег")
 	
 	if(_action == "fight"):
 		runScene("FightScene", ["tavi"], "tavifight")
@@ -483,7 +483,7 @@ func _react_scene_end(_tag, _result):
 			addExperienceToPlayer(10)
 
 func getDevCommentary():
-	return "A lot of people don't like Tavi (and still don't). Which is fair.. The reason is probably because she is quite obviously.. shady. And tries to dominate you at the first sight. Ehh.. I tried to write her.. intimidating, yes. She does actually need your help but she is not quite sure how to ask for it.\n\nThis is probably one of the first 'lewd' scenes that I wrote for the game. Would I do it differently now? I still can x3. I'm just lazy. But.. I dunno. Tavi is weird by design. She is like.. Joker. Even has his colors x3. I think her current introduction is fine.\n\nWhy did I made it so you must sub to her to get any story? Well, I wanted to complete a route for 'switch' people first. Switches are between doms and bottoms, they can do both, they can 'switch'. I'm a switch so it would be the easiest for me to write. What does that mean for the route? It means that you are Tavi's sidekick and sub to her but also can dominate people around the station (or sub to them too x3). And that 'Tavi's sub' is what irks people. But I can't really see her content working without that.. connection.. between you and her. Hope I make sense. Sorry dom people, I will write a route for you too x3"
+	return "Многим Тави не нравится (и до сих пор не нравится). И это справедливо... Скорее всего, потому что она чертовски... мутная. И пытается доминировать над тобой с первого взгляда. Эхх... Я пытался прописать её... устрашающей, да. Ей действительно нужна твоя помощь, но она не совсем понимает, как об этом попросить.\n\nЭто, пожалуй, одна из первых «пошлых» сцен, которые я написал для игры. Сделал бы я её иначе сейчас? Всё ещё могу x3. Просто лень. Но... не знаю. Тави странная по задумке. Она как... Джокер. Даже цвета его x3. Думаю, её нынешнее вступление вполне ок.\n\nПочему я сделал так, что ради сюжета нужно стать её сабом? Ну, во-первых, я хотел сначала дописать ветку для «свитчей». Свитчи — это те, кто мечутся между домами и боттомами, они могут и то, и другое, они могут «переключаться». Я сам свитч, так что мне было проще всего её писать. Что это значит для ветки? Это значит, что ты — напарник Тави и её саб, но при этом можешь доминировать над людьми на станции (или тоже сабмититься им x3). И вот это «саб Тави» всех и бесит. Но я не вижу, как её контент будет работать без этой... связи... между вами. Надеюсь, я понятно объяснил. Сорян, доминантные ребята, для вас я тоже напишу ветку x3"
 
 func hasDevCommentary():
 	return true

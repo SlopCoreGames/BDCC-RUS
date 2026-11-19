@@ -17,7 +17,7 @@ func run(_triggerID, _args):
 		return
 	
 	saynn("Вы видите Тави: она сидит на ящике, в стороне от всех остальных.")
-	addButtonUnlessLate("Tavi", "Talk to Tavi", "talk")
+	addButtonUnlessLate("Тави", "Поговорить с Тави", "talk")
 
 func getPriority():
 	return 0

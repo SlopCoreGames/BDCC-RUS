@@ -9,7 +9,7 @@ func getVisibleName() -> String:
 	return "ЗАПОЛНИ МЕНЯ!"
 
 func getVisibleDescription() -> String:
-	return "FILL ME!"
+	return "ЗАПОЛНИ МЕНЯ!"
 
 func getPossiblePCNamesForLevel(_npcOwner, _level:int) -> Array:
 	return []

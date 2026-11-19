@@ -22,7 +22,7 @@ func genTasks():
 		theNpcOwner.generateTasks(2, 1.5, 3.0) # 2 hard tasks
 	else:
 		theNpcOwner.generateTasks(RNG.randi_range(3, 5), 1.0, 1.5) # 3-5 simple tasks
-	GM.main.addMessage("Tasks menu updated.")
+	GM.main.addMessage("Меню задач обновлено.")
 
 func start():
 	playStand()

@@ -619,7 +619,7 @@ func _react(_action: String, _args):
 
 	if(_action == "pc_last_talk_with_kait"):
 		processTime(3*60)
-		addMessage("Task updated!")
+		addMessage("Задача обновлена!")
 		GM.main.RCS.setCurrent("Ferri")
 
 	setState(_action)

@@ -15,12 +15,12 @@ func shouldHappenChance(_npcSlavery:NpcSlave):
 	return _npcSlavery.getUnhappinessEscapeChance()
 
 func runEvent(_npcSlavery:NpcSlave):
-	var theText = "You look around.. and realize that one of your slaves went missing!"
+	var theText = "Ты оглядываешься по сторонам... и понимаешь, что одна из твоих рабынь исчезла!"
 
 	var slaveName = _npcSlavery.getChar().getName()
-	theText += "\n\n"+slaveName+" is not here. All that's left.. a broken chain on the floor. Maybe having some restraints would help against that. Or maybe you should try to treat your slaves a little better? Nah, that's a silly thought."
+	theText += "\n\n"+slaveName+" её здесь нет. Всё, что осталось... обрывок цепи на полу. Может, наличие каких-нибудь оков помогло бы избежать такого? Или, может, тебе стоит относиться к своим рабыням чуть лучше? Да нет, глупости какие."
 	
-	theText += "\n\nYou can try to find and enslave them again. Or let someone else take their place. But for now, you are one slave down."
+	theText += "\n\nТы можешь попытаться найти и снова поработить её. Или позволить кому-то другому занять её место. Но пока что у тебя на одну рабыню меньше."
 
 	var slaveID:String = _npcSlavery.getChar().getID()
 	GlobalRegistry.getModule("NpcSlaveryModule").doFreeEnslavedCharacter(slaveID)

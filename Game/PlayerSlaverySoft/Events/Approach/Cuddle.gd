@@ -330,7 +330,7 @@ func askedQuestion():
 	saynn("Вы проводите время вместе... просто отдыхая...")
 	saynn("В конце концов, {npc.name} решает задать тебе вопрос.")
 	var theEntry: Dictionary = QuestionDB[questionID] if QuestionDB.has(questionID) else {}
-	talkOwner(theEntry[qtext] if theEntry.has(qtext) else ("BAD QUESTION DB ENTRY: "+str(questionID)))
+	talkOwner(theEntry[qtext] if theEntry.has(qtext) else ("ЗАПИСЬ В БАЗЕ ДАННЫХ «ПЛОХОЙ ВОПРОС»: "+str(questionID)))
 	saynn("Как ответишь?")
 	
 	var theAnswers:Array = theEntry[qanswers] if theEntry.has(qanswers) else []

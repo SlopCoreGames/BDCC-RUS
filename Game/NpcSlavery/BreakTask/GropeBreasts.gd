@@ -40,10 +40,10 @@ func getTaskHint(_isSlaveLevelup):
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [
-		"Your tits need some attention. Go get them groped.",
-		"Go get your tits groped by strangers.",
-		"I want you to have lots of different hands on those tits before I find you again.",
-		"Your tits look lonely. Get them groped.",
+		"Твоим сиськам нужно внимание. Иди и дай их пощупать.",
+		"Иди и позволь незнакомцам потискать твои сиськи.",
+		"Я хочу, чтобы прежде чем я тебя снова найду, твои сиськи перетрогали куча разных рук.",
+		"Твои сиськи выглядят одинокими. Иди, пусть их пощупают.",
 	]
 
 func getSexGoalWeightModifier(_sexGoalID:String) -> float:

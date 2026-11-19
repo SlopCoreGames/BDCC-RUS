@@ -149,7 +149,7 @@ func _react(_action: String, _args):
 	if(_action == "clean_inside"):
 		processTime(10*60)
 		if(!npc.clearOrificeFluidsCheckBlocked()):
-			addMessage("Something prevented you from clearing every hole")
+			addMessage("Что-то помешало тебе вымыть каждую дырочку")
 
 	if(_action == "start_feed_cum"):
 		processTime(5*60)

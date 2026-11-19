@@ -64,28 +64,28 @@ func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	
 	if(hasVag && hasPP):
 		return RNG.pick([
-			"Please, I need to feel your lips on my pussy.. or my cock.",
-			"Your lips would feel so good on my cock, please? My pussy works too..",
-			"I'm aching for your tongue on my pussy.. or around cock..",
-			"Could you suck me? Or lick me.. I'll be so good for you.",
-			"I need your mouth between my legs, please, I'm begging you.",
+			"Пожалуйста, мне нужно почувствовать твои губы на своей киске... или на члене.",
+			"Твои губы так приятно ощущались бы на моем члене, ну пожалуйста? Моя киска тоже не прочь...",
+			"Я просто умираю от желания почувствовать твой язык на своей киске... или вокруг члена...",
+			"Можешь отсосать мне? Или лизнуть... Я буду очень послушной для тебя.",
+			"Мне нужно, чтобы твой рот оказался между моих ног, пожалуйста, умоляю тебя.",
 		])
 	if(hasVag):
 		return RNG.pick([
-			"Your tongue lapping up my pussy juices is all I can think about, please..",
-			"Please, I need your mouth on my pussy so badly.",
-			"Your tongue is all I can think about.. please, taste me.",
-			"I'm begging you, eat me out. I need to feel your lips on my pussy.",
-			"Just a taste, please? Let me feel your tongue on my pussy.",
-			"I need your face between my legs. Please don't make me wait.",
-			"Your lips would feel so good on my pussy right now, please?",
+			"Я только и могу думать о том, как твой язык слизывает соки из моей киски, пожалуйста...",
+			"Пожалуйста, мне так сильно нужно, чтобы ты занялась моей киской ртом.",
+			"Твой язык — это всё, о чем я могу думать... пожалуйста, попробуй меня на вкус.",
+			"Умоляю тебя, отсоси мне киску. Мне нужно почувствовать твои губы на ней.",
+			"Всего лишь глоток, пожалуйста? Дай мне почувствовать твой язык на моей киске.",
+			"Мне нужно, чтобы твое лицо оказалось у меня между ног. Пожалуйста, не заставляй меня ждать.",
+			"Твои губы сейчас так хорошо бы ощущались на моей киске, ну пожалуйста?",
 		])
 	return RNG.pick([
-		"Please, I need to feel your mouth on my cock.",
-		"Wrap those lips around my cock, I'm begging you.",
-		"I'll do anything if you just suck my dick.",
-		"Please, I need the wet heat of your tongue around my cock.",
-		"Please, let me cum in that perfect mouth.",
+		"Пожалуйста, мне нужно почувствовать твой рот на моем члене.",
+		"Окутай мой член своими губами, умоляю тебя.",
+		"Я сделаю всё что угодно, только отсоси мне.",
+		"Пожалуйста, мне нужно чувствовать влажное тепло твоего языка на моем члене.",
+		"Пожалуйста, дай мне кончить в этот идеальный рот.",
 	])
 
 func getBegDomFetishes() -> Dictionary:

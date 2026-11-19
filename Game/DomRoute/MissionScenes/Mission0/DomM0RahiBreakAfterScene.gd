@@ -200,6 +200,6 @@ func _react(_action: String, _args):
 		#addMessage("Task completed!")
 		#addExperienceToPlayer(100)
 		GM.main.MS.completeMission()
-		addMessage("Talking options with Avy unlocked.")
+		addMessage("Разблокированы варианты диалогов с Эви.")
 	
 	setState(_action)

@@ -20,4 +20,4 @@ func getVisibleName():
 	return "Проституция"
 
 func getVisibleDesc():
-	return "Tell your slut to start whoring themself out"
+	return "Скажи своей шлюхе, чтобы начинала торговать собой"

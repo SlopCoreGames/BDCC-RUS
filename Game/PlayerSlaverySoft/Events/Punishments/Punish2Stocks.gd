@@ -128,7 +128,7 @@ func ownerLost():
 	saynn("Твой хозяин проиграл бой против {npc1.name}!")
 	if(shouldTakeCredits):
 		saynn("{npc1.name} тянется, чтобы забрать {npc1.his} кредитов обратно у {npc.name}.")
-	talkOwner(RNG.pick(["Ghrh..", "Fuck..", "Ugh..", "Mghh-.."]))
+	talkOwner(RNG.pick(["Грх..", "Блядь..", "Ух..", "Mghh-.."]))
 	addInfluenceResist()
 	talkModular(C_EXTRA1, C_OWNER, "SoftSlaveryPunishStocksOwnerLost")
 	saynn("Человек еще не закончил... {npc1.he} {npc1.verb('grab')} {npc.name} и {npc1.verb('lock')} {npc.him} в колодки вместе с тобой!")

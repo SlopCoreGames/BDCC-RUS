@@ -37,31 +37,31 @@ func _run():
 		aimCamera(roomID)
 
 		if(GM.world.canGoID(roomID, GameWorld.Direction.NORTH)):
-			addButtonAt(6, "North", "Go north", "go", [GameWorld.Direction.NORTH, Direction.North])
+			addButtonAt(6, "Север", "Идти на север", "go", [GameWorld.Direction.NORTH, Direction.North])
 		else:
-			addDisabledButtonAt(6, "North", "Can't go north")
+			addDisabledButtonAt(6, "Север", "Нельзя пройти на север")
 			
 		if(GM.world.canGoID(roomID, GameWorld.Direction.WEST)):
-			addButtonAt(10, "West", "Go west", "go", [GameWorld.Direction.WEST, Direction.West])
+			addButtonAt(10, "Запад", "Идти на запад", "go", [GameWorld.Direction.WEST, Direction.West])
 		else:
-			addDisabledButtonAt(10, "West", "Can't go west")
+			addDisabledButtonAt(10, "Запад", "Нельзя пройти на запад")
 			
 		if(GM.world.canGoID(roomID, GameWorld.Direction.SOUTH)):
-			addButtonAt(11, "South", "Go south", "go", [GameWorld.Direction.SOUTH, Direction.South])
+			addButtonAt(11, "Юг", "Идти на юг", "go", [GameWorld.Direction.SOUTH, Direction.South])
 		else:
-			addDisabledButtonAt(11, "South", "Can't go south")
+			addDisabledButtonAt(11, "Юг", "Нельзя пройти на юг")
 		
 		if(GM.world.canGoID(roomID, GameWorld.Direction.EAST)):
-			addButtonAt(12, "East", "Go east",  "go", [GameWorld.Direction.EAST, Direction.East])
+			addButtonAt(12, "Восток", "Идти на восток",  "go", [GameWorld.Direction.EAST, Direction.East])
 		else:
-			addDisabledButtonAt(12, "East", "Can't go east")
+			addDisabledButtonAt(12, "Восток", "Нельзя пройти на восток")
 		
 		if(GM.pc.getInventory().hasRemovableRestraints()):
-			addButtonAt(8, "Struggle", "Struggle against your restraints", "struggle")
+			addButtonAt(8, "Сопротивление", "Пытаться вырваться из пут", "struggle")
 		#addButtonAt(9, "Me", "Shows actions related to you and also your personal information", "me")
 		#addButtonAt(13, "Tasks", "Look at your tasks", "tasks")
-		addButtonAt(13, "Return to cell", "Enough wandering around with your slave", "return_to_cell")
-		addButtonAt(14, "Inventory", "Look at your inventory", "inventory")
+		addButtonAt(13, "Вернуться в камеру", "Хватит уже шататься со своей рабыней", "return_to_cell")
+		addButtonAt(14, "Инвентарь", "Посмотреть инвентарь", "inventory")
 		
 		_roomInfo._onPreEnter()
 		setLocationName(_roomInfo.getName())

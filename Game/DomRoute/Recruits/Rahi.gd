@@ -10,7 +10,7 @@ func _init():
 		{
 			id = "tone",
 			name = "Тон",
-			desc = "What tone do you want to use while speaking with Rahi",
+			desc = "В каком тоне ты хочешь общаться с Рахи?",
 			options = [
 				["gentle", "Gentle", "Use a very kind tone with Rahi", RecruitChoiceResult.Red],
 				["strict", "Strict", "Use a strict tone with Rahi", RecruitChoiceResult.Yellow],
@@ -20,7 +20,7 @@ func _init():
 		{
 			id = "main",
 			name = "Основное действие",
-			desc = "What should the main action be",
+			desc = "Каким должно быть основное действие?",
 			options = [
 				["sex", "Sex", "Have sex with Rahi", RecruitChoiceResult.Yellow],
 				["petplay", "Petplay", "Do some petplay with Rahi", RecruitChoiceResult.Green],
@@ -30,7 +30,7 @@ func _init():
 		{
 			id = "special",
 			name = "Особая фишка",
-			desc = "What special kink do you wanna incorporate",
+			desc = "Какой особый кинк ты хочешь добавить?",
 			options = [
 				["public", "In public", "Do it in public", RecruitChoiceResult.Yellow],
 				["bondage", "Bondage", "Include a lot of bondage", RecruitChoiceResult.Green],
@@ -46,7 +46,7 @@ func getExtraChoices(_choices:Array, _extras:Dictionary) -> Array:
 			result.append({
 					id = "condom",
 					name = "Презерватив",
-					desc = "Pick which condom you want to use, if any",
+					desc = "Выбери презерватив, если собираешься использовать",
 					options = [
 						["no", "No condom", "Don't use a condom"],
 						["worst", "Worst condom", "Use the worst condom you have"],
@@ -57,7 +57,7 @@ func getExtraChoices(_choices:Array, _extras:Dictionary) -> Array:
 			result.append({
 					id = "strapon",
 					name = "Страпон",
-					desc = "Pick which strapon you wanna use.",
+					desc = "Выбери, какой страпон хочешь использовать.",
 					options = getStraponOptions(),
 				})
 	return result

@@ -316,31 +316,31 @@ func getSkillInfo(skillID):
 	if(skillID == "taviSkillCombat"):
 		return {
 			name = "Бой",
-			desc = "Teaching Tavi how to stand up for herself",
+			desc = "Учим Тави постоять за себя",
 			scene = "Ch6TaviCombatSkillScene",
 		}
 	if(skillID == "taviSkillSex"):
 		return {
 			name = "Секс",
-			desc = "Allowing Tavi to enjoy all the sex that she missed",
+			desc = "Даем Тави насладиться всем сексом, который она пропустила",
 			scene = "Ch6TaviSexSkillScene",
 		}
 	if(skillID == "taviSkillMasochism"):
 		return {
 			name = "Мазохизм",
-			desc = "Training Tavi to endure pain better",
+			desc = "Тренируем Тави лучше терпеть боль",
 			scene = "Ch6TaviMasochismSkillScene",
 		}
 	if(skillID == "taviSkillPetplay"):
 		return {
 			name = "Петплей",
-			desc = "Training Tavi to be a better pet",
+			desc = "Дрессируем Тави, чтобы она стала лучшей домашней зверушкой",
 			scene = "Ch6TaviPetplaySkillScene",
 		}
 	if(skillID == "taviSkillWatersports"):
 		return {
 			name = "Водные игры",
-			desc = "Training Tavi to enjoy pee",
+			desc = "Приучаем Тави получать удовольствие от мочи",
 			scene = "Ch6TaviWatersportsSkillScene",
 		}
 	
@@ -464,9 +464,9 @@ func addCorruption(howMuch, showMessage = true):
 	if(showMessage):
 		var diff = currentCorruption - oldCor
 		if(diff > 0.0):
-			GM.main.addMessage("Tavi's corruption has increased to "+str(Util.roundF(currentCorruption * 100.0, 1))+"%")
+			GM.main.addMessage("Уровень развращенности Тави вырос до "+str(Util.roundF(currentCorruption * 100.0, 1))+"%")
 		elif(diff < 0.0):
-			GM.main.addMessage("Tavi's corruption has decreased to "+str(Util.roundF(currentCorruption * 100.0, 1))+"%")
+			GM.main.addMessage("Уровень развращенности Тави упал до "+str(Util.roundF(currentCorruption * 100.0, 1))+"%")
 
 func resetMainRoute():
 	resetAllFlagsWithExceptions({

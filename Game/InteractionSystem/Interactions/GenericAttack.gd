@@ -18,8 +18,8 @@ func init_text():
 	sayLine("starter", "AttackStart", {main="starter", target="reacter"})
 	sayLine("reacter", "AttackReact", {main="reacter", target="starter"})
 
-	addAction("fight", "Fight", "Fight back", "fight", 1.0, 300, {start_fight=["starter", "reacter"],})
-	addAction("surrender", "Surrender", "It's not worth it!", "surrender", 1.0, 60, {})
+	addAction("fight", "Драться", "Дать сдачи", "fight", 1.0, 300, {start_fight=["starter", "reacter"],})
+	addAction("surrender", "Сдаться", "Оно того не стоит!", "surrender", 1.0, 60, {})
 
 func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "fight"):
@@ -52,8 +52,8 @@ func starter_won_text():
 	if(askCredits > 0):
 		saynn("{starter.You} {starter.youVerb('fetch', 'fetches')} "+str(askCredits)+" кредитов от {reacter.you}..")
 
-	addAction("punish", "Punish", "Have some fun!", "punish", 1.0, 60, {})
-	addAction("leave", "Leave", "Just leave", "default", 0.1, 60, {})
+	addAction("punish", "Наказать", "Развлечься!", "punish", 1.0, 60, {})
+	addAction("leave", "Уйти", "Просто уйти", "default", 0.1, 60, {})
 	
 	addDefeatButtonsOnlyEvent("starter", "reacter")
 
@@ -67,7 +67,7 @@ func starter_won_do(_id:String, _args:Dictionary, _context:Dictionary):
 func starter_won_leave_text():
 	saynn("{starter.name} решает оставить {reacter.you} в покое..")
 
-	addAction("leave", "Leave", "Time to go..", "default", 1.0, 60, {})
+	addAction("leave", "Уйти", "Пора идти..", "default", 1.0, 60, {})
 
 func starter_won_leave_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "leave"):
@@ -85,8 +85,8 @@ func reacter_won_text():
 		saynn("{starter.name} решает немедленно сдаться..")
 		sayLine("starter", "FightSurrender", {loser="starter", winner="reacter"})
 
-	addAction("punish", "Punish", "Punish them for attacking you!", "punish", 1.0, 60, {})
-	addAction("leave", "Leave", "Just leave", "surrender", 1.0, 60, {})
+	addAction("punish", "Наказать", "Наказать их за нападение!", "punish", 1.0, 60, {})
+	addAction("leave", "Уйти", "Просто уйти", "surrender", 1.0, 60, {})
 	
 	addDefeatButtonsOnlyEvent("reacter", "starter")
 
@@ -101,7 +101,7 @@ func reacter_won_do(_id:String, _args:Dictionary, _context:Dictionary):
 func reacter_won_leave_text():
 	saynn("{reacter.name} решает оставить {starter.you} в покое..")
 
-	addAction("leave", "Leave", "Time to go..", "default", 1.0, 60, {})
+	addAction("leave", "Уйти", "Пора идти..", "default", 1.0, 60, {})
 
 func reacter_won_leave_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "leave"):
@@ -125,10 +125,10 @@ func onStarterWin(_isSurrender=false):
 	if(askCredits > 0):
 		if(getRolePawn("reacter").isPlayer()):
 			GM.pc.addCredits(-askCredits)
-			addMessage("You lost "+str(askCredits)+" credits!")
+			addMessage("Ты проиграл "+str(askCredits)+" кредитами!")
 		if(getRolePawn("starter").isPlayer()):
 			GM.pc.addCredits(askCredits)
-			addMessage("You gained "+str(askCredits)+" credits!")
+			addMessage("Вы получили "+str(askCredits)+" кредитами!")
 
 func getPreviewLineForRole(_role:String) -> String:
 	if(_role == "starter"):

@@ -24,7 +24,7 @@ func _run():
 
 			saynn("Тави оглядывает своё тускло освещённое личное пространство. Маленькая комната, окружённая четырьмя холодными металлическими стенами с красными акцентами повсюду — напоминание о том, кто такая Тави.")
 
-			saynn("[say=tavi]"+str(taviSpeak("It's.. fine. I'm used to sleeping in cells.", "I think hell would have been more comfy for me. But I'm not in a hurry.", "It's.. fine. I'm used to sleeping in cells."))+"[/say]")
+			saynn("[say=tavi]"+str(taviSpeak("Всё... нормально. Я привыкла спать в камерах.", "Думаю, в аду было бы уютнее. Но я не тороплюсь.", "Всё... нормально. Я привыкла спать в камерах."))+"[/say]")
 
 			saynn("Она снова смотрит на тебя с любопытством.")
 
@@ -34,11 +34,11 @@ func _run():
 
 			saynn("Тави слегка наклоняет голову, а затем мягко улыбается.")
 
-			saynn("[say=tavi]"+str(taviSpeak("There is not a lot of space on these beds. But I can just be your blanket~.", "You sure you can handle my heat~? I'm one hot kitty.", "There is not a lot of space on these beds. Good thing cats can fit anywhere."))+"[/say]")
+			saynn("[say=tavi]"+str(taviSpeak("На этих кроватях не так много места. Но я могу стать твоим одеяльцем~.", "Уверена, ты справишься с моим жаром~? Я та ещё горячая кошечка.", "На этих кроватях не так много места. Хорошо, что кошки могут пристроиться где угодно."))+"[/say]")
 
 			saynn("Она подходит ближе и касается твоего носа своим — очень интимный жест.")
 
-			saynn("[say=tavi]"+str(taviSpeak("Sure. If you give me permission, I will sleep with you. Or more~.", "Sure. Just give me permission and I will be all yours~.", "Sure. We can sleep together. Just let me know if you actually want that."))+"[/say]")
+			saynn("[say=tavi]"+str(taviSpeak("Конечно. Если разрешишь, я буду спать с тобой. Или даже больше~.", "Конечно. Просто дай добро, и я буду вся твоя~.", "Конечно. Мы можем поспать вместе. Только дай знать, если ты реально этого хочешь."))+"[/say]")
 
 		else:
 			saynn("Ты говоришь Тави, что хочешь обсудить идею того, чтобы она спала в твоей камере.")

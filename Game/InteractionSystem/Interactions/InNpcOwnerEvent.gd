@@ -13,9 +13,9 @@ func init_text():
 	saynn("{main.You} {main.youAre} talking..")
 	
 	if(!GM.main.isCharacterInAnyNPCEvent(getCharIDByRole("main"))):
-		addAction("go", "Go!", "Time to go", "default", 1.0, 30, {})
+		addAction("go", "Вперёд!", "Пора идти", "default", 1.0, 30, {})
 	else:
-		addAction("wait", "Wait", "Maybe something will happen..", "default", 1.0, 60, {})
+		addAction("wait", "Подождать", "Может, хоть что-нибудь да случится...", "default", 1.0, 60, {})
 
 func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "go"):

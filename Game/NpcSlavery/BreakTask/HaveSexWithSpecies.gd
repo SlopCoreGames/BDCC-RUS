@@ -59,10 +59,10 @@ func getNpcOwnerDialogueLines() -> Array:
 		speciesName = species.getVisibleName()
 	
 	return [
-		"Find some "+speciesName+" to fuck you. I don't care how.",
-		"I want your next partner to be a "+speciesName+". Make it happen.",
-		"Go get fucked by a "+speciesName+". They'll enjoy you.",
-		"I want you used by a "+speciesName+". Don't ask why.",
+		"Найди себе "+speciesName+" чтобы трахнуть тебя. Мне плевать, как именно.",
+		"Я хочу, чтобы твоим следующим партнером стал(а) "+speciesName+". Сделай это.",
+		"Иди и дай просраться "+speciesName+". Ты им понравишься.",
+		"Я хочу, чтобы тебя использовал(а) "+speciesName+". И не спрашивай почему.",
 	]
 
 func saveData():

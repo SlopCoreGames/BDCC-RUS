@@ -55,10 +55,10 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([
-		"Let me feel your soft {dom.feet} stroking my cock, please?",
-		"I'd do anything to have your {dom.feet} stroking my cock.",
-		"Your {dom.feet} look so perfect, please let me get pleasure from them.",
-		"Could you.. use your {dom.feet} to get me off? Please?",
+		"Позволишь мне почувствовать, как твои мягкие {dom.feet} ласкают мой член?",
+		"Я бы всё отдал, чтобы твои {dom.feet} ласкали мой член.",
+		"Твои {dom.feet} выглядят так идеально, пожалуйста, дай мне получить от них удовольствие.",
+		"Ты могла бы... использовать свои {dom.feet} чтобы довести меня? Пожалуйста?",
 	])
 
 func getBegDomFetishes() -> Dictionary:

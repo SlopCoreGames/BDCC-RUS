@@ -39,11 +39,11 @@ func getTaskHint(_isSlaveLevelup):
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [
-		"Your skin is looking too clean. Go get it marked up.",
-		"I want you covered in ink. Get some lewd writings on you.",
-		"You're a canvas. Go have someone paint some filthy words on you.",
-		"Your body should advertise your purpose. Get it written on.",
-		"Go get some bodywritings. Make sure they're appropriately slutty.",
+		"Твоя кожа выглядит слишком чистой. Иди и пусть на ней что-нибудь напишут.",
+		"Хочу, чтобы ты была вся в чернилах. Набей на себе парочку похабных надписей.",
+		"Ты — холст. Иди и пусть кто-нибудь распишет тебя грязными словечками.",
+		"Твое тело должно заявлять о твоем предназначении. Пусть на нем напишут, для чего ты нужна.",
+		"Иди и сделай себе татуировки-надписи. И смотри, чтобы они были достаточно шлюханскими.",
 	]
 
 func getBodywritingsAmount(_npc) -> int:

@@ -525,7 +525,7 @@ func _react(_action: String, _args):
 
 	if(_action == "do_search_room"):
 		processTime(15*60)
-		addMessage("You found 3x painkillers in the meantime!")
+		addMessage("Тем временем ты нашел 3 обезболивающих!")
 		GM.pc.getInventory().addItem(GlobalRegistry.createItem("painkillers"))
 		GM.pc.getInventory().addItem(GlobalRegistry.createItem("painkillers"))
 		GM.pc.getInventory().addItem(GlobalRegistry.createItem("painkillers"))

@@ -19,5 +19,5 @@ func getVisibleName():
 	return "Душ"
 
 func getVisibleDesc():
-	return "Order your sub to shower you"
+	return "Прикажи своему сабу омыть тебя в душе"
 

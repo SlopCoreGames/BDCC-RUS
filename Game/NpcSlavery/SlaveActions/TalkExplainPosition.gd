@@ -12,35 +12,35 @@ func getVisibleName():
 	return "Объяснить свое положение"
 
 func getVisibleDesc():
-	return "Tell them that they are a slave now"
+	return "Сказать им, что теперь они рабы"
 
 func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var npcSlavery = getSlave(_slaveID)
 	
 	var theTexts = []
-	theTexts.append("You explain {npc.name} {npc.his} position. You tell {npc.him} that {npc.he} {npc.isAre} now yours and there is nothing {npc.he} can do about it.")
+	theTexts.append("Вы объясняете положение {npc.name} {npc.his}. Вы говорите {npc.him}, что {npc.he} {npc.isAre} теперь принадлежит вам, и {npc.he} ничего не может с этим поделать.")
 	
 	if(npcSlavery.getTalkedTimesToday() >= 2):
-		theTexts.append("It didn't have much effect on {npc.him}. {npc.He} heard you too many times today already.")
+		theTexts.append("Это не особо подействовало на {npc.him}. {npc.He} и так слышал(а) это сегодня слишком много раз.")
 	else:
 		var awareness = npcSlavery.getAwareness()
 		if(awareness > 0.7):
-			theTexts.append("{npc.He} heard that a lot already, there is nothing new that you can tell {npc.him}.")
+			theTexts.append("{npc.He} уже не раз это слышал(а), так что нового вы {npc.him} не скажете.")
 		elif(awareness > (0.25+npcSlavery.personalityScore({PersonalityStat.Subby: 0.1}))):
 			npcSlavery.addTired(0.2)
-			theTexts.append("{npc.He} knows this already, there is nothing new that you can tell {npc.him}.")
+			theTexts.append("{npc.He} и так это знает, так что нового вы {npc.him} не скажете.")
 		else:
 			if(npcSlavery.getWorkEfficiency() <= 0.4):
 				npcSlavery.addTired(0.2)
-				theTexts.append("{npc.He} is too tired to fully understand your words.")
+				theTexts.append("{npc.He} слишком устал(а), чтобы полностью вникнуть в ваши слова.")
 			elif(npcSlavery.isActivelyResisting()):
 				npcSlavery.addTired(0.2)
 				npcSlavery.addAwareness(0.04)
-				theTexts.append("{npc.He} doesn't like what {npc.he} hears at all. And yet, you feel like you were heard.")
+				theTexts.append("{npc.He} совсем не нравится то, что слышит {npc.he}. И все же, вы чувствуете, что вас услышали.")
 			else:
 				npcSlavery.addTired(0.2)
 				npcSlavery.addAwareness(0.05)
-				theTexts.append("{npc.He} listens you quietly. Looks like {npc.he} starts to understand {npc.his} position better.")
+				theTexts.append("{npc.He} молча слушает вас. Похоже, {npc.he} начинает лучше понимать положение {npc.his}.")
 		
 	npcSlavery.didTalkWithToday()
 	return {

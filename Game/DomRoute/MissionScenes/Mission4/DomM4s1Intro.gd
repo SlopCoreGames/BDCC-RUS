@@ -414,7 +414,7 @@ func _react(_action: String, _args):
 		if(lostNurseFight):
 			GM.pc.addPain(-100)
 			GM.pc.addStamina(100)
-		addMessage("Task updated!")
+		addMessage("Задача обновлена!")
 
 	setState(_action)
 

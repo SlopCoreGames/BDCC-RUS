@@ -27,10 +27,10 @@ func init_text():
 	sayLine("starter", "HelpRestraintsAsk", {main="starter", target="reacter"})
 
 	if(getRoleChar("reacter").getStamina() > 0 && !getRoleChar("reacter").hasBlockedHands() && !getRoleChar("reacter").hasBoundArms()):
-		addAction("agree", "Agree", "Agree to help them with their restraints", "help", 1.0, 60, {})
+		addAction("agree", "Согласиться", "Согласиться помочь им с креплениями", "help", 1.0, 60, {})
 	else:
-		addDisabledAction("Agree", "You can't help them while in your current state..")
-	addAction("deny", "Deny", "You'd rather not", "default", 0.2, 60, {})
+		addDisabledAction("Согласиться", "В твоем нынешнем состоянии помочь не получится...")
+	addAction("deny", "Отказать", "Ты бы предпочел этого не делать", "default", 0.2, 60, {})
 
 func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "agree"):
@@ -56,8 +56,8 @@ func init_eager_to_help_text():
 
 	var acceptHelpProbability = getStarterAcceptHelpProbability()
 	var refuseHelpProbability = 1.0 - acceptHelpProbability
-	addAction("accept", "Accept", "Allow them to help with your restraints", "default", acceptHelpProbability, 60, {})
-	addAction("refuse", "Refuse", "You'd rather keep " + ("it" if(!restraintIsPlural) else "them"), "default", refuseHelpProbability, 60, {})
+	addAction("accept", "Принять", "Позволить им помочь с твоими креплениями", "default", acceptHelpProbability, 60, {})
+	addAction("refuse", "Отказаться", "Ты предпочитаешь оставить всё как есть " + ("it" if(!restraintIsPlural) else "them"), "default", refuseHelpProbability, 60, {})
 
 func init_eager_to_help_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "accept"):
@@ -79,7 +79,7 @@ func eager_help_refused_text():
 	if( (idSuffix == "Kinky") && RNG.chance(50) ):
 		sayLine("reacter", "HelpRestraintsAltRefuseKinkyReact", {main="reacter", target="starter"})
 
-	addAction("leave", "Leave", "Time to go", "default", 1.0, 60, {})
+	addAction("leave", "Уйти", "Пора идти", "default", 1.0, 60, {})
 
 func eager_help_refused_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "leave"):
@@ -95,7 +95,7 @@ func restraints_agree_text():
 	else:
 		saynn("{reacter.name} начинает тянуть за {starter.your}...")
 
-	addAction("help", "Help", "Start helping..", "default", 1.0, 60, {})
+	addAction("help", "Помочь", "Начать помогать...", "default", 1.0, 60, {})
 
 func restraints_agree_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "help"):
@@ -108,7 +108,7 @@ func restraints_deny_text():
 	saynn("{reacter.name} качает головой, глядя на {reacter.his}.")
 	sayLine("reacter", "HelpRestraintsDeny", {main="reacter", target="starter"})
 
-	addAction("continue", "Continue", "Oh well..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "Ну, что ж..", "default", 1.0, 60, {})
 
 func restraints_deny_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -119,12 +119,12 @@ func restraints_helping_text():
 	saynn(struggleText)
 
 	if(getRoleChar("starter").getInventory().hasRemovableRestraintsNoLockedSmartlocks() && getRoleChar("reacter").getStamina() > 0 && !getRoleChar("reacter").hasBlockedHands() && !getRoleChar("reacter").hasBoundArms()):
-		addAction("help", "Help", "Continue helping..", "default", 1.0, 60, {})
+		addAction("help", "Помочь", "Продолжать помогать...", "default", 1.0, 60, {})
 	else:
-		addDisabledAction("Help", "Can't help anymore..")
-	addAction("stop", "Stop", "Enough helping..", "default", 0.01 if tryCount < 10 else float(tryCount)/10.0, 60, {})
+		addDisabledAction("Помочь", "Больше не можешь помогать...")
+	addAction("stop", "Стой", "Хватит помогать...", "default", 0.01 if tryCount < 10 else float(tryCount)/10.0, 60, {})
 	if(tryCount > 2):
-		addAction("stop_ask_credits", "Stop&ask for credits", "You helped them enough, time to get some credits for your work!", "punishMean", 0.01 if tryCount < 10 else float(tryCount)/10.0, 60, {})
+		addAction("stop_ask_credits", "Остановиться и потребовать кредиты", "Ты достаточно им помог, пора получить честно заработанные кредиты!", "punishMean", 0.01 if tryCount < 10 else float(tryCount)/10.0, 60, {})
 
 func restraints_helping_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "help"):
@@ -143,7 +143,7 @@ func restraints_enough_text():
 	sayLine("reacter", "HelpRestraintsFinished", {main="reacter", target="starter"})
 	saynn("И вот так просто, {reacter.youHe} оставляет {reacter.youHeVerb('leave')} {starter.youHim} в одиночестве..")
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 60, {})
 
 func restraints_enough_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -159,10 +159,10 @@ func restraints_ask_credits_text():
 	saynn("Ого, похоже, помощь {reacter.yourHis} оказалась не такой уж и бесплатной..")
 
 	if(!getRolePawn("starter").isPlayer() || GM.pc.getCredits() >= askCredits):
-		addAction("pay", "Pay", "It was worth it..", "surrender", 1.0, 60, {})
+		addAction("pay", "Заплатить", "Оно того стоило...", "surrender", 1.0, 60, {})
 	else:
-		addDisabledAction("Pay", "You don't have enough credits..")
-	addAction("refuse", "Refuse", "You're not paying anything!", "fight", 1.0, 60, {})
+		addDisabledAction("Заплатить", "Недостаточно кредитов...")
+	addAction("refuse", "Отказаться", "Ты вообще ничего не платишь!", "fight", 1.0, 60, {})
 
 func restraints_ask_credits_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "pay"):
@@ -180,7 +180,7 @@ func restraints_paid_text():
 	saynn("{starter.You} {starter.youVerb('decide')} просто заплатить кредиты..")
 	sayLine("reacter", "HelpRestraintsPaid", {main="reacter", target="starter"})
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 60, {})
 
 func restraints_paid_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -192,8 +192,8 @@ func restraints_refusedpay_text():
 	saynn("{starter.name} отказывается платить!")
 	sayLine("starter", "HelpRestraintsRefusePay", {main="starter", target="reacter"})
 
-	addAction("whatever", "Whatever", "Just leave", "surrender", 1.0, 60, {})
-	addAction("attack", "Attack", "Make them pay", "fight", 1.0, 60, {})
+	addAction("whatever", "Да и хрен с ним", "Просто уйти", "surrender", 1.0, 60, {})
+	addAction("attack", "Атаковать", "Заставь их платить", "fight", 1.0, 60, {})
 
 func restraints_refusedpay_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "whatever"):
@@ -207,7 +207,7 @@ func restraints_refusedwhatever_text():
 	saynn("{reacter.name} фыркает.")
 	sayLine("reacter", "HelpRestraintsRefusePayWhatever", {main="reacter", target="starter"})
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 60, {})
 
 func restraints_refusedwhatever_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):

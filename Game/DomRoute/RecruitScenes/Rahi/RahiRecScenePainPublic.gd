@@ -17,7 +17,7 @@ func _run():
 
 		saynn("После этого ты заходишь в камеру Рахи, хватаешь её поводок и притягиваешь её к центру помещения.")
 
-		saynn("[say=pc]"+str(ch1("Our team only needs brave people. I'm going to test your pain tolerance. Trust me, okay?", "Our team only needs brave people. So I'm gonna test how well you handle pain. Understand?", "Our team has no place for cowards. I'm gonna test how well you handle pain. Understand?"))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Нашей команде нужны только смельчаки. Сейчас я проверю твой болевой порог. Доверься мне, ладно?", "Нашей команде нужны только смельчаки. Так что я проверю, как ты справляешься с болью. Поняла?", "В нашей команде трусам не место. Я проверю, насколько хорошо ты терпишь боль. Поняла?"))+"[/say]")
 
 		saynn("Рахи моргает, а затем издает отчетливый глотательный звук.")
 
@@ -25,7 +25,7 @@ func _run():
 
 		saynn("Ты сильнее сжимаешь поводок.")
 
-		saynn("[say=pc]"+str(ch1("I won't do anything that you can't handle. I will be gentle. Now, let's get those clothes off..", "You will have to trust me, kitty cat. Now, clothes off.", "Too bad, if you're not a painslut yet, you will have to become one. Strip. Everything. Or I'll tear them off myself."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Я не буду делать ничего такого, с чем ты не справишься. Я буду нежной. А теперь — снимай одежду...", "Тебе придется довериться мне, кошечка. А теперь — раздевайся.", "Жаль, если ты еще не больная сучка, то тебе придется ею стать. Раздевайся. До гола. Или я сама сорву с тебя всё."))+"[/say]")
 
 		saynn("Ты наблюдаешь, как её лапки начинают расстегивать пуговицы на рубашке. Она обнажает перед тобой свою упругую грудь, её соски слегка покалывает от легкого прохладного ветерка. Следом идут шорты: она цепляет когтями пояс и стягивает их вниз, открывая твоему взору её милую розовую киску.")
 
@@ -35,7 +35,7 @@ func _run():
 
 		saynn("Прежде чем она успевает прийти в себя, ты обхватываешь её сзади и отвешиваешь звонкий шлепок по одной ягодице, эхом разлетающийся по всей камере. Затем ты хлопаешь по другой. Рахи вскрикивает, а её хвост непроизвольно сворачивается кольцом.")
 
-		saynn("[say=pc]"+str(ch1("Shh, you're doing beautifully.", "Too much? I bet you can take more.", "You'll take twenty more if I feel like it."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Тсс, ты прекрасно справляешься.", "Многовато? Спорим, ты выдержишь и больше.", "Если я захочу, ты примешь еще двадцать."))+"[/say]")
 
 		saynn("Твоя рука скользит между её ног, и пальцы находят клитор. Сначала ты просто играешь с ним, похлопывая по чувствительному бугорку то влево, то вправо... а затем сжимаешь его между пальцами... не сильно... но достаточно, чтобы заставить её жалобно скулить.")
 
@@ -49,7 +49,7 @@ func _run():
 
 		saynn("[say=rahi]Ах.. п-пожалуйста.. она просит прощения..[/say]")
 
-		saynn("[say=pc]"+str(ch1("Nothing to be sorry about. This is just training. Now let's go for a walk.", "It's okay, kitty. Just try to endure. Let's switch the scenery.", "We're just getting started, little paintoy."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Не за что извиняться. Это всего лишь тренировка. А теперь пойдем прогуляемся.", "Все в порядке, кошечка. Просто попытайся терпеть. Давай сменим обстановку.", "Мы только начинаем, маленькая любительница боли."))+"[/say]")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "near_arena")
 	if(state == "near_arena"):
@@ -60,7 +60,7 @@ func _run():
 
 		saynn("[say=rahi]Ох.. э-э.. может, это не стоит..[/say]")
 
-		saynn("[say=pc]"+str(ch1("I will be gentle. Please show me your butt.", "Butt or breasts, it's your choice. Butt is less painful.", "You're getting whipped, kitty. Question is how much."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Я буду нежной. Пожалуйста, покажи мне свою попку.", "Попка или грудь — выбирай сама. Попке будет менее больно.", "Тебя сейчас будут пороть, кошечка. Вопрос лишь в том, сколько."))+"[/say]")
 
 		saynn("Рахи дрожит... но кивает. Она разворачивается, крепко упираясь задними лапами и подставляя тебе свою задницу... Нет смысла больше терять время.")
 
@@ -70,11 +70,11 @@ func _run():
 
 		saynn("[say=rahi]Хнн.. ах..![/say]")
 
-		saynn("[say=pc]"+str(ch1("Be a good kitty and turn around.", "Turn around, please.", "Turn around, little slut."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Будь хорошей кошечкой и повернись спиной.", "Развернись, пожалуйста.", "Развернись, маленькая шлюшка."))+"[/say]")
 
 		saynn("Рахи подчиняется... но как только ты замахиваешься плетью, она тут же пытается прикрыть грудь.")
 
-		saynn("[say=pc]"+str(ch1("If I'm asking for too much, just let me know, kitty. Otherwise.. please?", "Rahi, please, I don't wanna hit your hands. It will hurt like hell.", "I give you three seconds before I smack your hands."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Если я прошу слишком многого, просто скажи, киса. А иначе... ну пожалуйста?", "Рахи, прошу тебя, я не хочу бить по твоим рукам. Будет чертовски больно.", "Даю тебе три секунды, прежде чем влеплю по рукам."))+"[/say]")
 
 		saynn("[say=rahi]М-мяу..[/say]")
 
@@ -96,7 +96,7 @@ func _run():
 
 		saynn("Толпе очень нравится шоу, люди тычут пальцами в бедную извивающуюся кошечку.")
 
-		saynn("[say=pc]"+str(ch1("Almost done. You've been very brave. Just a bit more?", "They're watching you. Just a bit more and we can go back.", "They're enjoying your suffering, slut. Wave your tail for them."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Почти всё. Ты была очень храброй. Еще капельку?", "Они смотрят на тебя. Еще чуть-чуть, и сможем вернуться.", "Они наслаждаются твоими страданиями, шлюшка. Помахай им хвостиком."))+"[/say]")
 
 		saynn("Ты ещё несколько раз хлестаешь её по груди, стараясь действовать мягче и распределяя удары, отчего по её телу всё больше проступают красные полосы. Соски Рахи теперь выглядят куда краснее... совсем как её чувствительный цветок.")
 
@@ -104,7 +104,7 @@ func _run():
 
 		saynn("Ты видишь, как на глазах наворачиваются слёзы. Похоже, с неё действительно хватит.")
 
-		saynn("[say=pc]"+str(ch1("All right. Let's get you back.", "That's enough then. Follow.", "Alright, you've satisfied the crowd."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Ладно. Пошли обратно.", "На этом хватит. Иди за мной.", "Ну что, толпу ты удовлетворила."))+"[/say]")
 
 		saynn("Ты снова хватаешь её за поводок и приказываешь следовать за собой. Рахи пытается прикрыться... но стоит ей коснуться себя хоть где-то, как она тут же шипит от боли.")
 
@@ -120,7 +120,7 @@ func _run():
 
 		saynn("[say=rahi]Т-спасибо...[/say]")
 
-		saynn("[say=pc]"+str(ch1("Of course. You did wonderfully.", "You earned it, kitty.", "Don't thank me. Just remember who you are."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Конечно. Ты справилась просто великолепно.", "Ты это заслужила, киска.", "Не нужно благодарностей. Просто помни, кто ты такая."))+"[/say]")
 
 		saynn("Ты заканчиваешь наносить гель и отступаешь на шаг.")
 

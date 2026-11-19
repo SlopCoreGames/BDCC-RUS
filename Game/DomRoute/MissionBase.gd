@@ -4,7 +4,7 @@ class_name MissionBase
 var id:String
 
 var name:String = "Измени меня"
-var desc:String = "Change me please please please"
+var desc:String = "Пожалуйста, измени меня, ну пожалуйста, пожалуйста!"
 var startScene:String = "MISSING_MISSION_SCENE"
 var requiredMissions:Array = []
 var startLoc:String = "hideout_hq" # Player's starting loc
@@ -127,11 +127,11 @@ func getRewardString() -> String:
 func giveRewardFinal(_isRepeat:bool):
 	var finalRewardExp:int = rewardExp if !_isRepeat else int(rewardRepeatRate*rewardExp)
 	if(finalRewardExp != 0):
-		GM.main.addMessage("You received "+str(finalRewardExp)+" experience")
+		GM.main.addMessage("Вы получили "+str(finalRewardExp)+" experience")
 		GM.pc.addExperience(finalRewardExp)
 	var finalRewardCredits:int = rewardCredits if !_isRepeat else int(rewardRepeatRate*rewardCredits)
 	if(finalRewardCredits != 0):
-		GM.main.addMessage("You received "+str(finalRewardCredits)+" credits")
+		GM.main.addMessage("Вы получили "+str(finalRewardCredits)+" credits")
 		GM.pc.addCredits(finalRewardCredits)
 	if(!_isRepeat):
 		for theItemID in rewardItems:
@@ -139,7 +139,7 @@ func giveRewardFinal(_isRepeat:bool):
 			if(!theItem):
 				return
 			GM.pc.getInventory().addItem(theItem)
-			GM.main.addMessage("You received "+theItem.getAStackName())
+			GM.main.addMessage("Вы получили "+theItem.getAStackName())
 	giveReward(_isRepeat)
 
 func canCancelAtAnyTime() -> bool:

@@ -57,7 +57,7 @@ func _run():
 		
 		addButton("Подтвердить", "Изменить имя", "do_pick_name")
 		addButton("Отмена", "Вы передумали", "")
-		addButtonAt(4, "Random?", "Help choose a random name", "do_random_name")
+		addButtonAt(4, "Случайно?", "Выбрать случайное имя", "do_random_name")
 	
 	if(state == "pick_desc"):
 		saynn("Выберите новое описание для вашей рабыни")
@@ -80,7 +80,7 @@ func _react(_action: String, _args):
 	if(_action == "do_pick_color"):
 		var theColor:Color = getTextboxData("colorpicker")
 		npc.npcChatColorOverride = "#"+theColor.to_html(false)
-		addMessage("You changed your slave's chat color!")
+		addMessage("Вы изменили цвет чата вашего раба!")
 		setState("")
 		removeCharacter(npcID)
 		addCharacter(npcID)
@@ -94,7 +94,7 @@ func _react(_action: String, _args):
 			new_name = getTextboxData("npc_name")
 
 		if(setSlaveNameTo(new_name)):
-			addMessage("You changed your slave's name!")
+			addMessage("Вы изменили имя вашего раба!")
 			setState("")
 		return
 
@@ -111,7 +111,7 @@ func _react(_action: String, _args):
 	
 	if(_action == "do_pick_desc"):
 		if(setSlaveDescTo(getTextboxData("npc_desc"))):
-			addMessage("You changed your slave's description!")
+			addMessage("Вы изменили описание вашего раба!")
 			setState("")
 		return
 		

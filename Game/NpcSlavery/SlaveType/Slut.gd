@@ -7,7 +7,7 @@ func getVisibleName():
 	return "Шлюха"
 
 func getVisibleDesc():
-	return "Turn your slave into a fucktoy and get an ability to whore them out"
+	return "Превратите свою рабыню в шлюху-игрушку и получите возможность выставлять её на панель"
 
 func getEnslaveText(_npc):
 	return "[say=pc]I’m gonna make such a good fucktoy out of you, little slut.[/say]"
@@ -16,37 +16,37 @@ func getEnslaveText(_npc):
 # 0  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15
 func getTrainText(_npc, _skillLevel):
 	if(_skillLevel == 0):
-		return "Your slave might have some experience in sex but {npc.he} {npc.hasHave} absolutely no idea how to be a good slut. You start simple, just explaining that you’re planning to make a great S++ whore out of {npc.him}."
+		return "У вашей рабыни может быть некоторый сексуальный опыт, но {npc.he} {npc.hasHave} совершенно не представляет, что значит быть хорошей шлюхой. Вы начинаете с малого, просто объясняя, что планируете сделать из {npc.him} первоклассную шлюху уровня S++."
 	if(_skillLevel == 1):
-		return "Today you teach your new slut the most important lesson: It’s not about {npc.his} own pleasure. It’s about making the other person cum in the best and most juicy way possible. Great performances will lead to great creds. Great creds will lead to more rewards from you."
+		return "Сегодня вы преподаете своей новой шлюхе самый важный урок: дело не в {npc.his} собственном удовольствии. Дело в том, чтобы заставить другого человека кончить максимально приятно и сочно. Блестящее выступление принесет отличные кредиты. А отличные кредиты принесут больше наград от вас."
 	if(_skillLevel == 2):
-		return "Sex requires a lot of stamina. You show your slave some simple stretching exercises and also ones designed to emphasize those child-bearing hips."
+		return "Секс требует большой выносливости. Вы показываете своей рабыне простые упражнения на растяжку, а также те, что подчеркивают её широкие бедра, готовые к деторождению."
 	if(_skillLevel == 3):
-		return "Successfully getting into someone’s pants starts with teasing. You teach your slave the way that {npc.he} should talk and act in order to make someone horny for more. Biting your lip, playfully sticking tongue out, talking with a low huffy voice. Even just staring at someone’s bulge might sway the person into the right direction."
+		return "Успешное проникновение в чужие штаны начинается с дразнилок. Вы учите рабыню тому, как {npc.he} должна говорить и вести себя, чтобы раззадорить кого-то еще сильнее. Прикусывание губы, игривое высовывание языка, шепот низким, прерывистым голосом. Даже просто пристальный взгляд на чужой бугорок может склонить человека в нужную вам сторону."
 	if(_skillLevel == 4):
-		return "Being seductive is very important for sluts. You ask your slave to show you some sexy poses that you then rank and comment on. Twerking is a no, sensually swaying your hips is a huge yes."
+		return "Для шлюх крайне важно уметь соблазнять. Ты просишь свою рабыню принимать сексуальные позы, которые затем оцениваешь и комментируешь. Тверки — это еще не то, а вот чувственно покачивать бедрами — самое оно."
 	if(_skillLevel == 5):
-		return "Bending over or spreading your legs is easy. You teach your slave how to do this in the most sexual way possible. How to give any onlookers only a short glance of your private bits, enough to draw them in without putting them off."
+		return "Наклоняться или раздвигать ноги — проще простого. Ты учишь свою рабыню делать это максимально сексуально. Так, чтобы случайный взгляд на ее интимные места был мимолетным, но при этом достаточно манящим, чтобы заворожить, но не оттолкнуть."
 	if(_skillLevel == 6):
-		return "You tell your slut that sometimes {npc.he} will have to fit an entire horsecock. So better start training your throat as early as possible. You help your slave to get rid of {npc.his} useless gag reflex.. just to start training {npc.him} how to purposefully trigger it for that tight squeeze and hot wet noises. Some people just like it messy."
+		return "Ты говоришь своей шлюхе, что иногда {npc.he} придется принимать в себя целый лошадиный член. Так что лучше начинать тренировать горло как можно раньше. Ты помогаешь рабыне избавиться от {npc.his} бесполезного рвотного рефлекса... чтобы затем начать учить {npc.him} намеренно вызывать его ради этого тугого сжатия и горячих влажных звуков. Некоторым просто нравится, когда всё в слюнях и соках."
 	if(_skillLevel == 7):
-		return "You’re not training a slut for nothing, you will expect profits from {npc.him}. So now comes the lesson about how to pull the most amount of creds out of others, how to haggle and be greedy without going so far as to never get a client or end up abused for free."
+		return "Ты ведь не просто так тренируешь шлюху, ты ждешь прибыли от {npc.him}. Поэтому настало время урока о том, как выкачивать из других максимум кредитов: как торговаться и быть жадной, но не перегибать палку, чтобы не остаться без клиентов или не получить нагоняй за бесплатную работу."
 	if(_skillLevel == 8):
-		return "You teach your slut that some clients will be fine with vanilla. But some will want to do some very fucked-up shit with {npc.him}. And so it is very important when to say no. But it is even more important to sometimes push past your limits when the extra creds are offered. You just gotta not forget to actually get them when you’re gonna be gagging cum or something worse onto the floor out of all your gaping holes. "
+		return "Ты учишь свою шлюху, что некоторым клиентам хватит и ванильного секса. Но другие захотят творить совсем ебанутую дичь с {npc.him}. Поэтому крайне важно знать, когда нужно сказать «нет». Но еще важнее иногда переступать через свои пределы, если за это предлагают лишние кредиты. Главное — не забывать вытряхивать их из клиентов, когда тебя будет тошнить кончой или чем-нибудь похуже прямо на пол из всех твоих разверзнутых дырок. "
 	if(_skillLevel == 9):
-		return "Creampies! You explain to your slut that people will cum inside {npc.him}, a lot. So you train your slave how to spread {npc.his} bits and show the seed leaking out in the most sexy way possible."
+		return "Кримпи! Ты объясняешь своей шлюхе, что люди будут кончать внутрь {npc.him}, и много. Поэтому ты тренируешь свою рабыню так, чтобы она раздвигала {npc.his} кусочков и максимально сексуально демонстрировала вытекающее семя."
 	if(_skillLevel == 10):
-		return "You tell your slave that {npc.his} previous sexual orientation doesn’t matter at all. Under your command the slut must be able to suck and fuck even a tentacle if the need for that would ever arise. You train your slut how to suck cocks, lick pussies and eat asses with the same eagerness."
+		return "Ты говоришь своей рабыне, что её предыдущая сексуальная ориентация {npc.his} вообще не имеет значения. По твоему приказу шлюха должна уметь сосать и трахаться даже в щупальце, если возникнет такая необходимость. Ты тренируешь свою шлюху сосать члены, лизать киски и жрать ассы с одинаковым азартом."
 	if(_skillLevel == 11):
-		return "Cowgirl position is where your slut gonna be able to show everything that {npc.he} {npc.verb('know')}. You teach your slave how to ride you in the best way possible, beginning with how to lower {npc.his} body onto someone’s cock or strapon and how to show off those {npc.breasts} that {npc.he} {npc.hasHave} during the riding."
+		return "В позе наездницы твоя шлюшка сможет выставить напоказ всё, что у {npc.he} {npc.verb('know')}. Ты учишь свою рабыню ездить на тебе как можно лучше, начиная с того, как опускать {npc.his} тело на член или страпон, и как демонстрировать те {npc.breasts}, что {npc.he} {npc.hasHave} во время скачки."
 	if(_skillLevel == 12):
-		return "You explain your slut that {npc.he} won’t like every single cock or pussy. And yet, during sex {npc.he} must be able to make it seem like it’s the best moment of {npc.his} life. Moans! You train your slut to moan loudly and passionately, without it feeling forced. Sometimes you just have to fake it until you make it, you also train your slut how to fake powerful orgasms when the time comes for it."
+		return "Ты объясняешь своей шлюшке, что {npc.he} будет нравиться далеко не каждый член или киска. И всё же, во время секса {npc.he} должна уметь делать вид, будто это лучший момент в {npc.his} жизни. Стоны! Ты тренируешь свою шлюшку стонать громко и страстно, чтобы это не выглядело натянуто. Иногда приходится просто притворяться, пока не начнет получаться, поэтому ты также учишь свою шлюшку имитировать мощные оргазмы, когда придет время."
 	if(_skillLevel == 13):
-		return "Safety first. Which is why you finally decide to teach your slut how to take even the biggest cocks without hurting {npc.himself}. But if your holes are too loose, the pleasure won’t be as good, so you teach your slut how to purposefully clench and milk cocks for every last drop. Condoms are also important, probably."
+		return "Безопасность превыше всего. Вот почему ты наконец решаешь научить свою шлюшку принимать даже самые огромные члены, не травмируя {npc.himself}. Но если твои дырки слишком расслаблены, удовольствия будет меньше, поэтому ты учишь свою шлюшку намеренно сжимать и «доить» члены, выжимая из них всё до последней капли. Презервативы тоже важны, наверное."
 	if(_skillLevel == 14):
-		return "You explain your slut that some clients know exactly what they want. With them, you just have to bend over and moan like a good slut. But some will be a little more.. subby and nervous. So you show your slut when and how {npc.he} should take control of the scene and how to make squirm even the most shy cuties."
+		return "Ты объясняешь своей шлюшке, что некоторые клиенты точно знают, чего хотят. С ними тебе нужно просто наклониться и стонать, как послушная сучка. Но некоторые будут чуть более... покорными и нервными. Поэтому ты показываешь своей шлюшке, когда и как {npc.he} должен брать контроль над сценой и как заставить извиваться даже самых застенчивых милашек."
 	if(_skillLevel == 15):
-		return "There is not much new you can teach your slave. {npc.He} {npc.isAre} pretty much a perfect slut now! But you still go through some old lessons and practice the art of being a whore with {npc.him}."
+		return "Твоей рабыне уже нечему особо учиться. {npc.He} {npc.isAre} теперь практически идеальная шлюшка! Но вы всё равно повторяете старые уроки и практикуете искусство быть блядью вместе с {npc.him}."
 		
 	return .getTrainText(_npc, _skillLevel) 
 

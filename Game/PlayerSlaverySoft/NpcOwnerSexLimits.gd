@@ -4,40 +4,40 @@ class_name NpcOwnerSexLimits
 const LIMITS = {
 	"condomsOnly": {
 		name = "Только презервативы",
-		desc = "Your owner (and anyone else who is fucking you) must use condoms",
+		desc = "Твой хозяин (и любой другой, кто тебя трахает) должен использовать презервативы",
 	},
 	"noPullout": {
 		name = "Без прерванного акта",
-		desc = "Your owner (and anyone else who is fucking you) must only cum inside",
+		desc = "Твой хозяин (и любой другой, кто тебя трахает) должен кончать только внутрь",
 	},
 	"noRimming": {
 		name = "Без римминга",
-		desc = "Any kind of rimming is disallowed!",
+		desc = "Любой вид римминга запрещен!",
 	},
 	"noBondage": {
 		name = "Без бондажа",
-		desc = "Any kind of bondage is disallowed!",
+		desc = "Любой вид бондажа запрещен!",
 	},
 	"noFeetplay": {
 		name = "Без футфетиша",
-		desc = "Any kind of feetplay is disallowed!",
+		desc = "Любой вид футплея запрещен!",
 	},
 	"noJoiners": {
 		name = "Без джойнеров",
-		desc = "Bystanders aren't allowed to join!",
+		desc = "Прохожим/зрителям запрещено присоединяться!",
 	},
 	"noMilking": {
 		name = "Без милкинга",
-		desc = "You won't be milked in any way.",
+		desc = "Тебя не будут доить никаким способом.",
 	},
 	"noBottom": {
 		name = "Без роли снизу",
-		desc = "You won't be forced to be on the receiving end.",
+		desc = "Тебя не будут заставлять быть принимающей стороной.",
 		bans = ["noTopping"],
 	},
 	"noTopping": {
 		name = "Без роли сверху",
-		desc = "You won't be forced to fuck others.",
+		desc = "Тебя не будут заставлять трахать других.",
 		bans = ["noBottom"],
 	},
 }

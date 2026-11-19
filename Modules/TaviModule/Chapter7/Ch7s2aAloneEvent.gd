@@ -15,7 +15,7 @@ func run(_triggerID, _args):
 		
 	saynn("Ты можешь начать финальную атаку прямо здесь и прямо сейчас. Но большую часть пути ты будешь [b]одна[/b]. Если хочешь помощи Тави, проверь её.")
 		
-	addButtonUnlessLate("Final attack (alone)", "Use everything you learned to get the best possible chance at escaping from this place", "start")
+	addButtonUnlessLate("Финальная атака (в одиночку)", "Используй всё, чему научилась, чтобы получить максимальный шанс сбежать из этого места", "start")
 
 func getPriority():
 	return 0

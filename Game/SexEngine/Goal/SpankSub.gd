@@ -52,15 +52,15 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([
-		"Spank my ass, do it!",
-		"Spank me, I've been so bad.",
-		"I'm begging you, smack my ass, make it red.",
-		"I need a spanking so badly, please make it sting.",
-		"Could you please punish my ass? I need it.",
-		"Every part of me is craving the sting of your hand on my ass.",
-		"Don't make me beg too long.. just spank me, please!",
-		"Just a few spanks, please? I promise I'll thank you for it.",
-		"Make me gasp by spanking my ass, I'm begging you."
+		"Шлепни меня по заднице, давай!",
+		"Отшлепай меня, я была такой плохой.",
+		"Умоляю, отлупи меня по заднице, чтобы всё покраснело.",
+		"Мне так нужно порку, пожалуйста, сделай так, чтобы жгло.",
+		"Можешь, пожалуйста, наказать мою задницу? Мне это нужно.",
+		"Каждая клеточка моего тела жаждет жгучих ударов твоей ладони по моей заднице.",
+		"Не заставляй меня долго умолять... просто отшлепай меня, пожалуйста!",
+		"Всего несколько шлепков, а? Обещаю, ты еще скажешь мне «спасибо».",
+		"Заставь меня ахать от шлепков по заднице, я тебя умоляю."
 	])
 
 func getBegDomFetishes() -> Dictionary:

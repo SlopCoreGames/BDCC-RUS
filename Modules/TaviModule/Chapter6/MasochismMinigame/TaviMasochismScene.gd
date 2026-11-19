@@ -40,8 +40,8 @@ func _run():
 	
 	if(state == "playing"):
 		# Show the text of the previous action
-		addButtonAt(13, "Give up", "Not worth it", "endthescene")
-		addButtonAt(14, "Try again", "Reset the minigame", "tryagain")
+		addButtonAt(13, "Сдаться", "Не стоит того", "endthescene")
+		addButtonAt(14, "Попробовать снова", "Сбросить мини-игру", "tryagain")
 	
 	if(state == "youwon"):
 		saynn("Успех!")

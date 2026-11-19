@@ -3,7 +3,7 @@ extends MissionBase
 func _init():
 	id = "Mission1"
 	name = "Бумажный след"
-	desc = "You need to get prison's staff/inmate records to figure out the best potential recruiting targets."
+	desc = "Тебе нужно раздобыть личные дела персонала и заключенных, чтобы вычислить лучших кандидатов для вербовки."
 	
 	startScene = "DomM1s1Intro"
 	
@@ -28,16 +28,16 @@ func _init():
 					effects = [
 						DECISION_EFFECT_AVY_LOVE,
 					],
-					kaitLine = "I asked Avy not to help me.. but she still could have done something!",
-					avyLine = "It was pretty fun to see that softie get wrecked.",
+					kaitLine = "Я просил Авю не помогать мне... но она всё равно могла бы что-нибудь придумать!",
+					avyLine = "Было довольно весело смотреть, как эту размазню размазали по стенке.",
 				},
 				"kait": {
 					text = "Да",
 					effects = [
 						DECISION_EFFECT_KAIT_LOVE,
 					],
-					kaitLine = "You saved me back there. Thanks.",
-					avyLine = "It would have been much more fun to see that slut getting wrecked. Whatever.",
+					kaitLine = "Ты спас меня там, в глубине. Спасибо.",
+					avyLine = "Было бы куда веселее посмотреть, как эту шлюху размазали по стенке. Ну да ладно.",
 				},
 			},
 		}
@@ -52,15 +52,15 @@ func onMissionStart():
 func getObjectives() -> Array:
 	var result:Array = []
 	
-	result.append("Meet your team in front of the checkpoint that's near the elevator.")
+	result.append("Встреться со своей командой перед контрольно-пропускным пунктом рядом с лифтом.")
 	if(getFlag("check", false)):
-		result.append("Search the offices until you find the right one!")
+		result.append("Обыскивай кабинеты, пока не найдешь нужный!")
 	
 	return result
 
 func getStartSceneButtonsLoc(_loc:String) -> Array:
 	if(!getFlag("check", false) && _loc == "hall_mainentrance"): # Check flags
-		return [startSceneButton("DomM1s2Checkpoint", [], "Mission", "Meet your team here and begin the heist!")]
+		return [startSceneButton("DomM1s2Checkpoint", [], "Миссия", "Встречайся с командой здесь и начинай налет!")]
 	
 	if(getFlag("check", false)):
 		for _i in 4:
@@ -75,9 +75,9 @@ func checkOfficeStuff(_flagID:String, _loc:String, _officeLoc:String) -> Array:
 	if(_loc != _officeLoc || getFlag(_flagID, false)):
 		return []
 	if(getAmountOfOfficesChecked() >= 3):
-		return [startSceneButton("DomM1s3Office", [], "Office", "Check this office!")]
+		return [startSceneButton("DomM1s3Office", [], "Кабинет", "Осмотри этот кабинет!")]
 	
-	return [startSimpleSceneButton(getCheckOfficeText(), "check", [_flagID], "Office", "Check this office!")]
+	return [startSimpleSceneButton(getCheckOfficeText(), "check", [_flagID], "Кабинет", "Осмотри этот кабинет!")]
 
 func onSceneStart(_sceneID:String, _args:Array):
 	if(_sceneID == "DomM1s2Checkpoint"):
@@ -107,7 +107,7 @@ func getEventSceneLoc(_loc:String) -> Array:
 	if(_loc == "cd_near_captain_office" && getFlag("skar", false) && getFlag("skarOutcome", "") == ""):
 		return ["DomM1OptionalSkarFight", []]
 	if(_loc == "cd_near_captain_office" && getFlag("skarOutcome", "") != ""):
-		return ["MissionSimpleScene", ["It's best not to go here anymore.. so you turn back.", "skarNope", []]]
+		return ["MissionSimpleScene", ["Сюда лучше больше не соваться... и ты разворачиваешься.", "skarNope", []]]
 	return [] # [sceneid, args]
 
 func getStartSceneButtonsCharacter(_char:String) -> Array:
@@ -131,9 +131,9 @@ func getCheckOfficeText() -> String:
 	var theAm:int = getAmountOfOfficesChecked()
 	
 	if(theAm == 0):
-		return "You check the first office. There is a console you can use but there is no printer!\n\nYou will have to check the other offices."
+		return "Ты осматриваешь первый кабинет. Там есть консоль, которой можно воспользоваться, но принтера нет!\n\nПридется проверить остальные кабинеты."
 	if(theAm == 1):
-		return "You check the second office. There are no consoles here sadly.\n\nYou will have to look for another one."
+		return "Ты осматриваешь второй кабинет. К сожалению, консолей здесь нет.\n\nПридется поискать другую."
 	if(theAm == 2):
-		return "You check the third office. It has a console and a printer! Sadly, the console requires a password.\n\nYou will have to look for another one."
-	return "You check another office. It has a console and a printer! Sadly, the console requires a password.\n\nYou will have to look for another one."
+		return "Ты осматриваешь третий кабинет. Здесь есть и консоль, и принтер! Но, к сожалению, для консоли нужен пароль.\n\nПридется поискать другую."
+	return "Ты проверяешь еще один кабинет. В нем есть консоль и принтер! К сожалению, для консоли требуется пароль.\n\nПридется искать другую."

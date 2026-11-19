@@ -15,13 +15,13 @@ func shouldHappenChance(_npcSlavery:NpcSlave):
 	return 33.3
 
 func runEvent(_npcSlavery:NpcSlave):
-	var theText = "Something is wrong about {npc.name}. Something is very wrong.."
+	var theText = "С {npc.name} что-то не так. Что-то очень не так.."
 	
-	theText += "\n\nThe more you look into {npc.his} eyes, the more empty they seem.. There is nothing there, no anger, no joy.. there is no life.."
+	theText += "\n\nЧем дольше ты всматриваешься в глаза {npc.his}, тем более пустыми они кажутся.. Там ничего нет: ни гнева, ни радости.. там нет жизни.."
 	
-	theText += "\n\nAs you grab and move {npc.his} hand, {npc.he} just lets you pose it, in any way you want. Like a doll.."
+	theText += "\n\nКогда ты берешь и двигаешь руку {npc.his}, {npc.he} просто позволяет тебе придавать ей любую позу, какую пожелаешь. Словно кукла.."
 	
-	theText += "\n\nSeems, whatever torture you made {npc.him} go through, it was a little too much for the poor {npc.boy}. You broke {npc.him}."
+	theText += "\n\nПохоже, какие бы пытки ты ни устраивал для {npc.him}, для бедной {npc.boy} это оказалось слишком. Ты сломал {npc.him}."
 
 	_npcSlavery.doMindBreak()
 	

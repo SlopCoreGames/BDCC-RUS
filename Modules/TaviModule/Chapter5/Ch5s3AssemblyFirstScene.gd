@@ -33,7 +33,7 @@ func _react(_action: String, _args):
 
 	if(_action == "search_prototype"):
 		processTime(10*60)
-		addMessage("Task updated!")
+		addMessage("Задача обновлена!")
 		setFlag("TaviModule.Ch5SearchedLabFirstTime", true)
 
 	setState(_action)

@@ -15,7 +15,7 @@ func _init():
 	extraSlaves = {
 		"sub2": {
 			name = "Вторая рабыня",
-			desc = "Who is gonna be the second sub in the sex",
+			desc = "Кто будет вторым сабом в этом сексе?",
 			slaveSkillsRequired = {
 			},
 			slaveMinLevel = 0,
@@ -31,7 +31,7 @@ func getVisibleName():
 	return "Трио (2 подчиненные)"
 
 func getVisibleDesc():
-	return "Fuck 2 of your slaves at the same time"
+	return "Трахни сразу двух своих рабынь"
 
 func fitsAsExtraSlaveAdvanced(_role, _charID):
 #	if(_role == "dom"):

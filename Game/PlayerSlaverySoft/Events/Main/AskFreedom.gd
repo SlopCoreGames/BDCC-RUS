@@ -35,7 +35,7 @@ func start_do(_id:String, _args:Array):
 		setState("committed")
 	if(_id == "doPay"):
 		GM.pc.addCredits(-freedomPrice)
-		GM.main.addMessage("You paid "+str(freedomPrice)+" credits for your freedom!")
+		GM.main.addMessage("Ты заплатил "+str(freedomPrice)+" кредитов за свою свободу!")
 		setState("committed")
 	
 func committed():

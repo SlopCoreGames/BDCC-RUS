@@ -17,7 +17,7 @@ func start():
 	playAnimation(StageScene.Duo, "stand", {npc=getOwnerID(), bodyState={leashedBy=getOwnerID()}})
 	sayPretext()
 	saynn("Твой хозяин с силой защелкивает поводок на твоем ошейнике и начинает его дергать.")
-	talk(C_OWNER, "You are going with me, {npc.npcSlave}.")
+	talk(C_OWNER, "Ты идешь со мной, {npc.npcSlave}.")
 	saynn("{npc.He} звучит довольно разъяренно..")
 	
 	addContinue("goToEliza")
@@ -32,16 +32,16 @@ func nearEliza():
 	playAnimation(StageScene.Duo, "stand", {pc=getOwnerID(), npc="eliza"})
 	
 	saynn("Вскоре вы прибываете.. в медицинский блок. {npc.name} подходит к стойке.. и привлекает внимание кошки, сидящей по ту сторону.")
-	talk(C_EXTRA1, "Dr. Quinn here, how can I help?")
-	talk(C_OWNER, "I think I found a perfect test subject for your studies.")
+	talk(C_EXTRA1, "На связи доктор Куинн. Чем могу помочь?")
+	talk(C_OWNER, "Мне кажется, я нашел идеальный подопытный экземпляр для твоих исследований.")
 	saynn("Кошка приподнимает бровь и заглядывает через плечо твоего хозяина.")
-	talk(C_EXTRA1, "Did you? That sounds great.")
+	talk(C_EXTRA1, "Да неужели? Звучит просто супер.")
 	talk(C_OWNER, "Yeah, {pc.he} {pc.isAre} a bit bratty. I'm kinda sick of {pc.him} to be honest. Maybe you will be able to make better use of {pc.him}.")
 	saynn("Кошка-врач улыбается и встает.")
-	talk(C_EXTRA1, "It's a good thing that science doesn't care about brattiness~. And yes, we could always use more test subjects.")
+	talk(C_EXTRA1, "Хорошо, что науке плевать на капризы~. И да, новых подопытных нам никогда не бывает много.")
 	saynn("Она выходит из-за стойки и подходит к тебе.")
-	talk(C_OWNER, "Here is the leash. You might have to give it a hard pull occasionally. Cuffs will help too.")
-	talk(C_EXTRA1, "Don't worry, we have just the right tools to make sure our science projects go smooth~.")
+	talk(C_OWNER, "Вот поводок. Иногда, возможно, придётся хорошенько дёрнуть. Наручники тоже не помешают.")
+	talk(C_EXTRA1, "Не волнуйся, у нас есть самые подходящие инструменты, чтобы наши научные проекты шли как по маслу~.")
 	saynn("Кошка берет поводок.. и приглашает тебя следовать за ней.")
 	saynn("Твой хозяин.. бывший хозяин.. разворачивается и просто направляется к лифту.")
 	
@@ -52,9 +52,9 @@ func elizaTalk():
 	setLocation("medical_near_pccell")
 	
 	saynn("Кошка-врач ведет тебя куда-то..")
-	talk(C_EXTRA1, "Wonder what you did to earn such a punishment.")
+	talk(C_EXTRA1, "Интересно, что же ты натворил, раз заслужил такое наказание.")
 	saynn("Внезапно ты чувствуешь укол в шею.. Девушка что-то тебе вколола.")
-	talk(C_EXTRA1, "Doesn't matter much~. I will fix you and your bratty behaviour.")
+	talk(C_EXTRA1, "Не особо важно~. Я исправлю тебя и твоё капризное поведение.")
 	saynn("И скоро.. холодная поверхность пола встретится с твоим сонным лицом..")
 	addContinue("startTheThing")
 

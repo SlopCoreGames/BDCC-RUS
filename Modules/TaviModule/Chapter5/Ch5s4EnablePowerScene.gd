@@ -529,7 +529,7 @@ func _react(_action: String, _args):
 
 	if(_action == "sentinel_ripgrenades"):
 		processTime(3*60)
-		addMessage("Task updated!")
+		addMessage("Задача обновлена!")
 		addExperienceToPlayer(100)
 
 	if(_action == "sentinel_ride_pussy"):
@@ -553,7 +553,7 @@ func _react(_action: String, _args):
 
 	if(_action == "after_sex"):
 		processTime(3*60)
-		addMessage("Task updated!")
+		addMessage("Задача обновлена!")
 		addExperienceToPlayer(100)
 
 	if(_action == "sentinel_ride_ass_go"):
@@ -608,7 +608,7 @@ func _react_scene_end(_tag, _result):
 			addExperienceToPlayer(50)
 
 func getDevCommentary():
-	return "This encounter is pretty cool I think ^^. And the computer part is nice too, it explores many things, provides some interesting lore I think x3.\n\nHow did I come up with Sentiel-X? Well.. I needed the player to get that lust grenade from somewhere. I could have made it lootable from the guards but that'd be boring. I didn't wanna use Alex Rynard again too, I explored him enough in this route already x3. So.. Androids it is.\n\nI added the abandoned assembly and robotics labs just cause I needed to fill some space in the engineering. But I'm sooo glad that I did ^^. I managed to incorporate it into the station's lore perfectly. I think at least x3.\n\nDrones are the present. And so the androids will be the future. That's my prediction x3. What's the difference? Androids have more intelligence. Drones just run on algorithms or are controlled remotely.\n\nPeople are already falling in love with chatbots.. Imagine what happens when they will also be able to fuck them.."
+	return "Эта встреча, по-моему, довольно крутая ^^. И компьютерная часть тоже классная: она раскрывает много нюансов и подкидывает интересного лора, как мне кажется x3.\n\nКак я придумал Сентинель-X? Ну... игроку нужно было где-то достать ту похотливую гранату. Можно было сделать так, чтобы её можно было выбить из охранников, но это было бы скучно. И я не хотел снова использовать Алекса Райнарда — в этой ветке я его уже достаточно изучил x3. Так что... пусть будут андроиды.\n\nЯ добавил заброшенный сборочный цех и лаборатории робототехники просто потому, что мне нужно было чем-то заполнить инженерный сектор. Но я так чертовски рад, что сделал это ^^. Мне удалось идеально вписать их в лор станции. По крайней мере, мне так кажется x3.\n\nДроны — это настоящее. А андроиды станут будущим. Такое вот моё предсказание x3. В чем разница? У андроидов больше интеллекта. Дроны же просто работают на алгоритмах или управляются дистанционно.\n\nЛюди уже влюбляются в чат-ботов... Представьте, что будет, когда с ними можно будет еще и трахаться..."
 
 func hasDevCommentary():
 	return true

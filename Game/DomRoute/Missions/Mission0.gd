@@ -3,7 +3,7 @@ extends MissionBase
 func _init():
 	id = "Mission0"
 	name = "Рахи — воровка"
-	desc = "Recruit Rahi!"
+	desc = "Вербуй Рахи!"
 	
 	startScene = "DomM0RahiBreakIntroScene"
 	
@@ -20,14 +20,14 @@ func _init():
 					effects = [
 						DECISION_EFFECT_KAIT_OBEDIENCE,
 					],
-					kaitLine = "Hey.. uh.. I should have asked before taking Rahi's leash, you're right.",
+					kaitLine = "Эй.. эм.. тебе стоит была сказать, прежде чем я взял поводок Рахи, ты права.",
 				},
 				"allow": {
 					text = "Позволил это сделать",
 					effects = [
 						DECISION_EFFECT_KAIT_LOVE,
 					],
-					kaitLine = "We got our own personal thief now. A pretty cute one at that. Can't wait to see her in action.",
+					kaitLine = "Теперь у нас есть личная воровка. И довольно миленькая. Не терпится увидеть её в деле.",
 				},
 			},
 		}

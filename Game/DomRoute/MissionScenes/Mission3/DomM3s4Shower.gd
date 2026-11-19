@@ -262,7 +262,7 @@ func _run():
 		saynn("Она кончает первой: всё её тело содрогается, ноги дрожат, а киска сжимает твой член ещё сильнее. Она вскрикивает, и её когти оставляют борозды на кафельной плитке.")
 
 		var pcHasKnot = GM.pc.bodypartHasTrait(BodypartSlot.Penis, PartTrait.PenisKnot)
-		saynn("Но ты не останавливаешься. Ты продолжаешь трахать её прямо во время оргазма, вколачиваясь в её сверхчувствительные стенки. От оргазма её ноги слабеют, поэтому ты шлепаешь её по заднице, чтобы разогнать кровь."+str(" Your cock is also receiving extra blood actually.. your knot has been inflating more and more.." if pcHasKnot else "")+"")
+		saynn("Но ты не останавливаешься. Ты продолжаешь трахать её прямо во время оргазма, вколачиваясь в её сверхчувствительные стенки. От оргазма её ноги слабеют, поэтому ты шлепаешь её по заднице, чтобы разогнать кровь."+str(" К твоему члену на самом деле приливает еще больше крови... твоя узел раздувается всё сильнее и сильнее..." if pcHasKnot else "")+"")
 
 		saynn("[say=elizaMom]Ах.. бл*ять..[/say]")
 
@@ -320,11 +320,11 @@ func _react(_action: String, _args):
 		return
 
 	if(_action == "just_grab_badge"):
-		addMessage("Task updated!")
+		addMessage("Задача обновлена!")
 		GM.main.MS.setFlag("scarlet", "nothing")
 
 	if(_action == "leave_after_saw"):
-		addMessage("Task updated!")
+		addMessage("Задача обновлена!")
 		GM.main.MS.setFlag("scarlet", "nothingpeek")
 
 	if(_action == "embrace_scarlet"):
@@ -342,7 +342,7 @@ func _react(_action: String, _args):
 		processTime(5*60)
 
 	if(_action == "after_sex_grab_badge"):
-		addMessage("Task updated!")
+		addMessage("Задача обновлена!")
 
 	if(_action == "just_breed_cum"):
 		processTime(3*60)

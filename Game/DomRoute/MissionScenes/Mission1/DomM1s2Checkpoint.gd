@@ -185,13 +185,13 @@ func _react(_action: String, _args):
 		processTime(3*60)
 		
 		if(!getFlag("KaitModule.m1gotpills", false)):
-			addMessage("You received 3x painkillers!")
+			addMessage("Вы получили 3 порции обезболивающего!")
 			GM.pc.getInventory().addItem(GlobalRegistry.createItem("painkillers"))
 			GM.pc.getInventory().addItem(GlobalRegistry.createItem("painkillers"))
 			GM.pc.getInventory().addItem(GlobalRegistry.createItem("painkillers"))
 			getFlag("KaitModule.m1gotpills", true)
 		else:
-			addMessage("You already received painkillers from Avy before so you don't get any.")
+			addMessage("Вы уже получали обезболивающее от Эви, так что в этот раз ничего не досталось.")
 
 	if(_action == "rahi_hits_her_toe"):
 		processTime(3*60)

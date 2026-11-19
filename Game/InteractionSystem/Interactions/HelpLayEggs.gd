@@ -13,7 +13,7 @@ func start(_pawns:Dictionary, _args:Dictionary):
 func init_text():
 	saynn("{main.You} {main.youVerb('approach', 'approaches')} {target.you}, пытается помочь...")
 	
-	addAction("sex", "Help", "Time to have some fun", "default", 1.0, 300, {start_sex=["main", "target", SexType.DefaultSex, {SexMod.HelpEggsMode: true}],})
+	addAction("sex", "Помочь", "Пора развлечься", "default", 1.0, 300, {start_sex=["main", "target", SexType.DefaultSex, {SexMod.HelpEggsMode: true}],})
 
 func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "sex"):
@@ -23,7 +23,7 @@ func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 func after_sex_text():
 	saynn("После этого {main.name} пришлось поскорее уходить..")
 	
-	addAction("leave", "Leave", "Time to go..", "default", 1.0, 60, {})
+	addAction("leave", "Уйти", "Пора идти..", "default", 1.0, 60, {})
 
 func after_sex_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "leave"):

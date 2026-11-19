@@ -57,11 +57,11 @@ func getTaskHint(_isSlaveLevelup):
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [
-		"Find someone who will get you milked with a breast pump.",
-		"Your udders need pumping. Get someone to do it.",
-		"I want your tits swollen and milked with a pump by someone.",
-		"Go find someone to milk you with a breast pump until you're dry.",
-		"Time to milk those tits. Find someone who will do it.",
+		"Найди кого-нибудь, кто подоит тебя с помощью молокоотсоса.",
+		"Твои вымени нужно подоить. Найди кого-нибудь для этого.",
+		"Я хочу, чтобы кто-то наполнил твои сиськи молоком, а потом выкачал всё молоко молокоотсосом.",
+		"Найди кого-нибудь, кто будет доить тебя молокоотсосом досуха.",
+		"Пора подоить эти сиськи. Найди того, кто это сделает.",
 	]
 
 func getSexGoalWeightModifier(_sexGoalID:String) -> float:

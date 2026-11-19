@@ -5,7 +5,7 @@ func _init():
 
 func _initScene(_args = []):
 	GM.pc.addPain(10)
-	addMessage("Ow, that gave you 10 pain")
+	addMessage("Ой, это причинило тебе 10 единиц боли")
 
 func _run():
 	if(state == ""):

@@ -17,4 +17,4 @@ func getVisibleName():
 	return "Сменить прическу"
 
 func getVisibleDesc():
-	return "Pay the closest bathroom a visit and change your slave's haircut"
+	return "Загляни в ближайшую уборную и смени рабыне прическу"

@@ -16,7 +16,7 @@ func getVisibleName():
 	return "Отшлепать"
 
 func getVisibleDesc():
-	return "Give your slave a good spank"
+	return "Хорошенько отшлепать свою рабыню"
 
 func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var npcSlavery:NpcSlave = getSlave(_slaveID)
@@ -24,19 +24,19 @@ func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var text = "Раздраженный своим рабом, вы ставите {npc.him} на четвереньки и наносите серию крепких шлепков по {npc.his} {npc.thick} заднице!\n\n"
 	
 	if(npcSlavery.getSpoiling() > 0.7):
-		text += "{npc.He} gasps and complains audibly while also trying to protect {npc.his} rear with {npc.his} hands.. just to get them slapped too."
+		text += "{npc.He} ахает и громко жалуется, пытаясь прикрыть {npc.his} задницу {npc.his} руками... но в итоге они тоже получают по щелбану."
 	elif(npcSlavery.isActivelyResisting()):
-		text += "Each spank is met with active resistance as {npc.heShe} attempts to evade the punishment. Even though {npc.he} {npc.isAre} trying to fight back, you still manage to get a few good impacts in."
+		text += "Каждый шлепок сопровождается активным сопротивлением: {npc.heShe} пытается увернуться от наказания. Несмотря на то, что {npc.he} изо всех {npc.isAre} старается отбиваться, вам всё же удается нанести несколько ощутимых ударов."
 	elif(npcSlavery.getFear() > 0.6 && npcSlavery.personalityScore({PersonalityStat.Coward: 1.0}) > 0.1):
-		text += "Fear clouds {npc.his} eyes as each spank lands, making {npc.him} compliant but anxious, {npc.heShe} visibly trembles after each impact."
+		text += "Страх застилает глаза {npc.his} с каждым шлепком, делая {npc.him} покорной, но тревожной; {npc.heShe} заметно дрожит после каждого удара."
 	elif(npcSlavery.rewardBalance >= 0):
-		text += "Each spank is met with noises of confusion and frustration, {npc.name} is doing {npc.his} best to endure the unfair punishment."
+		text += "Каждый шлепок сопровождается звуками замешательства и разочарования; {npc.name} изо всех {npc.his} сил старается вытерпеть это несправедливое наказание."
 	elif(npcSlavery.getObedience() > 0.5 || npcSlavery.getLove() > 0.5 || npcSlavery.getBrokenSpirit() > 0.5):
-		text += "{npc.HeShe} submits willingly, absorbing each spank with a quiet acceptance. Eyes downcast, butt sticked out high, each impact forcing a stiffled noise out of {npc.him}."
+		text += "{npc.HeShe} покорно подчиняется, принимая каждый шлепок с тихим смирением. Глаза опущены, задница высоко торчит, и каждый удар заставляет {npc.him} издавать сдавленный звук."
 	else:
-		text += "Each spank is met with a stiffled grunt, {npc.name} squirming uncomfortably. Hopefully it will be a good leasson for {npc.him}."
+		text += "Каждый шлепок сопровождается сдавленным рычанием, {npc.name} неудобно ерзает. Надеемся, это станет хорошим уроком для {npc.him}."
 	
-	text += "\n\nBy the end of the punishment, {npc.his} ass receives a nice warm red tint to it."
+	text += "\n\nК концу наказания задница {npc.his} приобретает приятный теплый красный оттенок."
 	
 	npcSlavery.handlePunishment(2)
 	return {

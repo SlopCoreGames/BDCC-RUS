@@ -32,17 +32,17 @@ func _run():
 		saynn("Без малейших колебаний {npc.he} послушно исполняет приказ и садится рядом. Когда {npc.heShe} начинает нежно разминать ваши плечи, вы чувствуете, как по телу разливается волна тепла.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"Let's see.. Wow. Your shoulders feel so strong.. under my hands.",
-			"Here we go. Hah.. Your shoulders can carry the world.. Let me lighten that load a bit.",
-			"Let's start.. Your shoulders are my favorite place. I could get used to this..",
+			"Так, посмотрим... Ого. Твои плечи такие крепкие... прямо под моими руками.",
+			"Ну, поехали. Хах... Твои плечи будто готовы вынести на себе весь мир... Дай-ка я немного облегчу твою ношу.",
+			"Давай начнем... Твои плечи — мое самое любимое место. К такому можно быстро привыкнуть...",
 		])+"[/say]")
 		
 		saynn("Сняв напряжение с ваших плеч, руки вашей субки скользят по вашей {pc.masc} спине, медленно и расслабляюще поглаживая каждый изгиб.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"These curves, they're intoxicating. I could drown in them, happily.",
-			"Feels nice, eh? Your back could make anyone jealous. Lucky me, right here.",
-			"Great back, lets get all the tension out of it..",
+			"Эти изгибы... они просто дурманят голову. В них можно утонуть, и это будет истинным удовольствием.",
+			"Приятно, да? Твоей спине можно только позавидовать. И мне чертовски повезло оказаться именно здесь.",
+			"Отличная спина, давай-ка выгоним из нее всё напряжение...",
 		])+"[/say]")
 		
 		saynn("Вы невольно тихонько стонете: нежные прикосновения в сочетании с {npc.his} словами чертовски приятны.")
@@ -61,9 +61,9 @@ func _run():
 		saynn("Вы просите свою подчиненную продолжать. И вот {npc.his} опускает руки ниже, нежно лаская ваши ягодицы с такой чувственностью, что по спине пробегает дрожь.")
 		
 		saynn("[say=npc]"+RNG.pick([
-			"Your butt's a real treat, you know that, {npc.pcOwner}?",
-			"Feels good to give it a little love. So soft and firm at the same time.",
-			"Thank you for letting me massage your butt, {npc.pcOwner}, it feels nice.",
+			"Твоя задница — просто объедение, ты же в курсе, {npc.pcOwner}?",
+			"Так приятно уделить ей немного любви. Такая мягкая и упругая одновременно.",
+			"Спасибо, что позволяешь мне массировать твою задницу, {npc.pcOwner}, это так приятно.",
 		])+"[/say]")
 		
 		saynn("Пока {npc.he} старается снять напряжение в ваших мышцах, вы ловите себя на том, что полностью растворяетесь в этих ощущениях.")

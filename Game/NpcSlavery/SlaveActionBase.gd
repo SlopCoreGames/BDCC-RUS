@@ -32,7 +32,7 @@ func getVisibleName():
 	return "ИЗМЕНИ МЕНЯ"
 
 func getVisibleDesc():
-	return "CHANGE MY DESCRIPTION"
+	return "ИЗМЕНИ МОЁ ОПИСАНИЕ"
 
 func getFinalVisibleDesc():
 	var theDesc = getVisibleDesc()

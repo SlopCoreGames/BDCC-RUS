@@ -27,7 +27,7 @@ func init_actions():
 		{
 			id = "test",
 			name = "ТЕЕЕЕСТ!",
-			desc = "Do something",
+			desc = "Что-нибудь сделать",
 			score = 1.0,
 			args = {},
 			time = 30,
@@ -62,7 +62,7 @@ func test_actions():
 		{
 			id = "fight",
 			name = "Начать драку!",
-			desc = "Do something",
+			desc = "Что-нибудь сделать",
 			score = 1.0,
 			args = {},
 			time = 30,
@@ -71,7 +71,7 @@ func test_actions():
 		{
 			id = "punish",
 			name = "Начать наказание!",
-			desc = "Do something",
+			desc = "Что-нибудь сделать",
 			score = 1000.0,
 			args = {},
 			time = 30,

@@ -31,21 +31,21 @@ static func getVisibleName(stat):
 		return "Error"
 
 static func getVisibleDesc(stat, value):
-	var texts = ["Error"]
+	var texts = ["Ошибка"]
 	
 	match(stat):
 		Brat:
-			texts = ["Opposite of a brat", "Opposite of a brat", "Not bratty", "Not bratty", "Not bratty", "A bit bratty", "Bratty", "Very bratty", "The Brat"]
+			texts = ["Полная противоположность капризульки", "Полная противоположность капризульки", "Не капризная", "Не капризная", "Не капризная", "Немного капризная", "Капризная", "Очень капризная", "Та самая капризулька"]
 		Mean:
-			texts = ["Incredibly kind", "Very kind", "Kind", "Somewhat kind", "Slightly mean", "Mean", "Very mean", "Incredibly mean"]
+			texts = ["Невероятно добрая", "Очень добрая", "Добрый", "Довольно добрая", "Слегка стервозная", "Злобность", "Очень стервозная", "Невероятно стервозная"]
 		Subby:
-			texts = ["Super dominant", "Dominant", "Somewhat dominant", "Switch", "Slightly subby", "Subby", "Very subby"]
+			texts = ["Супер доминантная", "Доминант", "Довольно доминантная", "Свитч", "Слегка сабмиссивная", "Сабби", "Очень сабмиссивная"]
 		Impatient:
-			texts = ["Super patient", "Patient", "Kinda patient", "Kinda impatient", "Impatient", "Very impatient"]
+			texts = ["Сверхтерпеливый", "Терпеливый", "Довольно терпеливый", "Довольно нетерпеливый", "Нетерпеливый", "Очень нетерпеливый"]
 		Naive:
-			texts = ["Very perceptive", "Perceptive", "Slightly perceptive", "Slightly naive", "Naive", "Super naive"]
+			texts = ["Очень проницательный", "Проницательная", "Слегка проницательный", "Слегка наивный", "Наивная", "Сверхнаивный"]
 		Coward:
-			texts = ["Super brave", "Very brave", "Brave", "Slightly brave", "Slightly cowardly", "A coward", "Very cowardly", "Incredible cowardly"]
+			texts = ["Сверхсмелый", "Очень смелый", "Смелый", "Немного смелый", "Слегка трусливый", "Трус", "Очень трусливый", "Запредельно трусливый"]
 		
 	var indx = Util.mini(int(floor((clamp(value, -1.0, 1.0)+1.0) / 2.0 * texts.size())), texts.size()-1)
 	

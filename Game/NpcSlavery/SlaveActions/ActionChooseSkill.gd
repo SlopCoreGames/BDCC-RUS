@@ -17,4 +17,4 @@ func getVisibleName():
 	return "Специализации"
 
 func getVisibleDesc():
-	return "Change your slave's main specialization and make them learn new ones!"
+	return "Смените основную специализацию своей рабыни и заставьте её освоить новые навыки!"

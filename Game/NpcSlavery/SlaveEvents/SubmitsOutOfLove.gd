@@ -15,29 +15,29 @@ func shouldHappenChance(_npcSlavery:NpcSlave):
 	return 10.0 + clamp(_npcSlavery.getTrust()-0.5, 0.0, 1.0) * 100.0
 
 func runEvent(_npcSlavery:NpcSlave):
-	var theText = "{npc.name} lowers {npc.his} gaze a little when you approach, {npc.his} lips stay slightly parted as {npc.he} {npc.isAre} gathering courage."
+	var theText = "{npc.name} слегка опускает взгляд, когда ты подходишь; {npc.his} губы {npc.his} остаются слегка приоткрытыми, пока {npc.he} {npc.isAre} набирается смелости."
 
 	theText += "\n\n[say=npc]"+RNG.pick([
-		"I've been.. wanting to express my feelings to you.. for a while..",
-		"My heart is full, and I need to share it with you.",
-		"I hope you have a minute.. I wanna say something..",
-		"Can I confess something? It's about.. my feelings for you..",
-		"I.. I wanna tell you something.. It's about us..",
+		"Я давно... хотела... признаться тебе в чувствах...",
+		"Моё сердце переполнено чувствами, и мне нужно ими с тобой поделиться.",
+		"Надеюсь, у тебя найдется минутка... Я хочу кое-что сказать...",
+		"Можно мне кое в чем признаться? Это насчет... моих чувств к тебе...",
+		"Я... я хочу тебе кое-что сказать... Это насчет нас...",
 	])+"[/say]\n\n"
 	
-	theText += "With a warm smile, you encourage {npc.him} to speak, sensing something warm in {npc.his} voice."
+	theText += "С теплой улыбкой вы подбадриваете {npc.him} заговорить, чувствуя нежность в голосе {npc.his}."
 	
 	theText += "\n\n[say=npc]"+RNG.pick([
-		"I love you deeply, and being yours is the greatest joy.. I hope it will stay like that forever..",
-		"You mean the world to me. I love you with all my heart..",
-		"Thank you for being in my life. Thank you for making me yours.. I love you so much..",
-		"I feel so lucky to belong to you. I love you endlessly..",
-		"Being your slave is a privilege because I love you.. unconditionally..",
+		"Я глубоко люблю тебя, и принадлежать тебе — моя величайшая радость... Надеюсь, так будет всегда...",
+		"Ты для меня — весь мир. Я люблю тебя всем сердцем...",
+		"Спасибо, что ты есть в моей жизни. Спасибо, что сделал(а) меня своим (своей)... Я так сильно тебя люблю...",
+		"Мне так повезло принадлежать тебе. Я люблю тебя бесконечно...",
+		"Быть твоей рабыней — это привилегия, потому что я люблю тебя... безусловно...",
 	])+"[/say]\n\n"
 	
-	theText += "You're touched by {npc.his} sincere words, you can't help but to embrace {npc.him}, and feel {npc.him} doing the same to you. Hard to believe, your slave has submitted out of love to you!"
+	theText += "Затронутый искренними словами {npc.his}, вы не можете удержаться, чтобы не обнять {npc.him}, и чувствуете, как {npc.him} делает то же самое. Трудно поверить, но ваша рабыня покорилась вам из любви!"
 	
-	theText += "\n\nThis means that {npc.his} obedience, love and broken spirit won't decay anymore."
+	theText += "\n\nЭто значит, что {npc.his} послушание, любовь и сломленный дух больше не будут увядать."
 	
 	_npcSlavery.doSubmitToPC()
 	

@@ -196,7 +196,7 @@ func _react(_action: String, _args):
 	
 	if(_action == "endthescene"):
 		GM.main.setModuleFlag("TaviModule", "Tavi_Quest2Completed", true)
-		addMessage("Task completed")
+		addMessage("Задание выполнено")
 		addExperienceToPlayer(50)
 		endScene()
 		return

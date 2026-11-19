@@ -37,7 +37,7 @@ func _run():
 			playAnimation(StageScene.Grope, "watchrub", {pc=npcID, npc="pc", bodyState={exposedCrotch=true, hard=true}})
 			saynn("Ты подходишь к своей рабыне... и замечаешь, что {npc.he} {npc.isAre} трет {npc.his} {npc.pussyStretch} киску. Да еще и как жадно.")
 
-		saynn("Поощрение может заставить {npc.him} любить тебя сильнее... но это также может разбаловать {npc.him}. Если ты не хочешь, чтобы твоя рабыня мастурбировала, возможно, стоит сковать {npc.his} руки..."+str(" Or putting a chastity cage on {npc.his} cock." if (masType == "penis") else "")+"")
+		saynn("Поощрение может заставить {npc.him} любить тебя сильнее... но это также может разбаловать {npc.him}. Если ты не хочешь, чтобы твоя рабыня мастурбировала, возможно, стоит сковать {npc.his} руки..."+str(" Или надеть девственную клетку на {npc.his} член." if (masType == "penis") else "")+"")
 
 		addButton("Поощрить", "Дать ей кончить", "do_encourage_check")
 		addButton("Приказать остановиться", "Приказать ей остановиться", "do_orderstop_check")
@@ -49,7 +49,7 @@ func _run():
 
 		saynn("Но твоей рабыне удается вырваться!")
 
-		saynn("[say=npc]"+str(RNG.pick(["Fuck you! I must cum! I will cum!", "Screw you, I'm cumming today!", "Fuck off, I need it!"]))+"[/say]")
+		saynn("[say=npc]"+str(RNG.pick(["Да пошел ты! Я должен кончить! Я сейчас кончу!", "К черту всё, сегодня я точно кончу!", "Отъебись, мне это нужно!"]))+"[/say]")
 
 		saynn("Похоже, назревает драка.")
 
@@ -95,7 +95,7 @@ func _run():
 		playAnimation(StageScene.Grope, "tease", {pc=npcID, npc="pc", bodyState={exposedCrotch=true, hard=true}})
 		saynn("Ты не можешь допустить такого ни при каких обстоятельствах. Поэтому ты даже не отдаешь приказ рабыне. Вместо этого ты бросаешься к {npc.him} и силой заламываешь {npc.his} руки за {npc.his} спину.")
 
-		saynn("[say=npc]"+str(RNG.pick(["H-hey!.. I was so close!", "No! Let me cum!", "No, don't do this, please!"]))+"[/say]")
+		saynn("[say=npc]"+str(RNG.pick(["Э-эй!.. Я был так близок!", "Нет! Дай мне кончить!", "Нет, не надо, пожалуйста!"]))+"[/say]")
 
 		if (masType == "penis"):
 			saynn("Не-а. Ты заставляешь {npc.him} смотреть, как {npc.his} {npc.penis} начинает вянуть без всякой стимуляции.")
@@ -200,7 +200,7 @@ func _run():
 			else:
 				saynn("Ты стоял(а) чуть в стороне, стараясь сделать так, чтобы порция {npc.his} не попала на тебя, а приземлилась на пол.")
 
-				saynn("Похоже, твой раб отлично разрядился. {npc.He} кажется, доволен этим — ты замечаешь легкую улыбку."+str(" Hopefully that will help against {npc.his} depression a bit." if npc.getNpcSlavery().getDespair() > 0.6 else "")+"")
+				saynn("Похоже, твой раб отлично разрядился. {npc.He} кажется, доволен этим — ты замечаешь легкую улыбку."+str(" Надеюсь, это немного поможет от депрессии {npc.his}." if npc.getNpcSlavery().getDespair() > 0.6 else "")+"")
 
 		elif (masType == "vag"):
 			playAnimation(StageScene.Grope, "gropefast", {pc=npcID, npc="pc", pcCum=true, bodyState={exposedCrotch=true, hard=true}})
@@ -220,7 +220,7 @@ func _run():
 			else:
 				saynn("Ты стоял чуть в стороне, следя за тем, чтобы {npc.his} {npc.girlcum} не приземлились на тебя, а упали на пол.")
 
-				saynn("Похоже, твой раб отлично разрядился. {npc.He} кажется, доволен этим — ты замечаешь легкую улыбку."+str(" Hopefully that will help against {npc.his} depression a bit." if npc.getNpcSlavery().getDespair() > 0.6 else "")+"")
+				saynn("Похоже, твой раб отлично разрядился. {npc.He} кажется, доволен этим — ты замечаешь легкую улыбку."+str(" Надеюсь, это немного поможет от депрессии {npc.his}." if npc.getNpcSlavery().getDespair() > 0.6 else "")+"")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_encourage_cum"):
@@ -238,7 +238,7 @@ func _run():
 			else:
 				saynn("Ты стоял(а) чуть в стороне, стараясь сделать так, чтобы порция {npc.his} не попала на тебя, а приземлилась на пол.")
 
-				saynn("Похоже, твой раб отлично разрядился. {npc.He} кажется, доволен этим — ты замечаешь легкую улыбку."+str(" Hopefully that will help against {npc.his} depression a bit." if npc.getNpcSlavery().getDespair() > 0.6 else "")+"")
+				saynn("Похоже, твой раб отлично разрядился. {npc.He} кажется, доволен этим — ты замечаешь легкую улыбку."+str(" Надеюсь, это немного поможет от депрессии {npc.his}." if npc.getNpcSlavery().getDespair() > 0.6 else "")+"")
 
 		elif (masType == "vag"):
 			playAnimation(StageScene.Grope, "watchrub", {pc=npcID, npc="pc", pcCum=true, bodyState={exposedCrotch=true, hard=true}})
@@ -254,14 +254,14 @@ func _run():
 			else:
 				saynn("Ты стоял чуть в стороне, следя за тем, чтобы {npc.his} {npc.girlcum} не приземлились на тебя, а упали на пол.")
 
-				saynn("Похоже, твой раб отлично разрядился. {npc.He} кажется, доволен этим — ты замечаешь легкую улыбку."+str(" Hopefully that will help against {npc.his} depression a bit." if npc.getNpcSlavery().getDespair() > 0.6 else "")+"")
+				saynn("Похоже, твой раб отлично разрядился. {npc.He} кажется, доволен этим — ты замечаешь легкую улыбку."+str(" Надеюсь, это немного поможет от депрессии {npc.his}." if npc.getNpcSlavery().getDespair() > 0.6 else "")+"")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "do_encourage_fail"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
 		saynn("Ты решаешь просто... наблюдать за процессом. {npc.name} замечает твой любопытный взгляд... и останавливается.")
 
-		saynn("[say=npc]"+str(RNG.pick(["..what?", "Why are you looking?", "Need something?", "Can't you see I'm horny over here?"]))+"[/say]")
+		saynn("[say=npc]"+str(RNG.pick(["..что?", "Чего уставился?", "Что-то нужно?", "Не видишь, что я тут теку?"]))+"[/say]")
 
 		saynn("[say=pc]Продолжай.[/say]")
 
@@ -288,7 +288,7 @@ func _run():
 
 		saynn("Твой раб замечает твой интерес и тут же останавливается.")
 
-		saynn("[say=npc]"+str(RNG.pick(["Oh, uhh..", "Oh fuck.."]))+"[/say]")
+		saynn("[say=npc]"+str(RNG.pick(["Oh, uhh..", "Твою мать..."]))+"[/say]")
 
 		saynn("[say=pc]Да ладно тебе, будет весело![/say]")
 
@@ -307,7 +307,7 @@ func _run():
 
 		saynn("Твой раб замечает твой интерес и тут же останавливается.")
 
-		saynn("[say=npc]"+str(RNG.pick(["Oh, uhh..", "Oh fuck.."]))+"[/say]")
+		saynn("[say=npc]"+str(RNG.pick(["Oh, uhh..", "Твою мать..."]))+"[/say]")
 
 		saynn("[say=pc]Да ладно тебе, будет весело![/say]")
 
@@ -326,7 +326,7 @@ func _run():
 
 		saynn("Твой раб замечает твой интерес и тут же останавливается.")
 
-		saynn("[say=npc]"+str(RNG.pick(["Huh?", "What?", "Are your serious?"]))+"[/say]")
+		saynn("[say=npc]"+str(RNG.pick(["А?", "Что?", "Ты серьезно?"]))+"[/say]")
 
 		saynn("[say=pc]Да ладно тебе, будет весело![/say]")
 

@@ -52,11 +52,11 @@ func getTaskHint(_isSlaveLevelup):
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [
-		"Time for a challenge. I want you to cum in your chastity cage.",
-		"Prove your devotion. Orgasm while you're still locked up.",
-		"You don't need to be free to climax. Make yourself cum in chastity.",
-		"Your cage shouldn't stop you. I want to see you orgasm through it.",
-		"A true slut can cum even when caged. Show me you're a true slut.",
+		"Время для испытания. Я хочу, чтобы ты кончила прямо в своей девайсной клетке.",
+		"Докажи свою преданность. Кончи, пока ты всё еще заперта.",
+		"Тебе не нужно быть свободной, чтобы достичь пика. Заставь себя кончить в целомудрии.",
+		"Клетка не должна тебя останавливать. Я хочу видеть, как ты кончаешь сквозь неё.",
+		"Настоящая шлюшка может кончить, даже когда она в клетке. Покажи мне, что ты настоящая шлюшка.",
 	]
 
 func getSexGoalWeightModifier(_sexGoalID:String) -> float:

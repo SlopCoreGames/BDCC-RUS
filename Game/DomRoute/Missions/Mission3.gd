@@ -3,7 +3,7 @@ extends MissionBase
 func _init():
 	id = "Mission3"
 	name = "Просто лабораторная рутина"
-	desc = "You recruited Ferri, a chemist dracat. But now you need to get a chemistry lab setup for her."
+	desc = "Вы завербовали Ферри, химика-драката. Но теперь вам нужно обустроить для неё химическую лабораторию."
 	
 	startScene = "DomM3s1Intro"
 	requiredMissions = ["Mission2"]
@@ -25,24 +25,24 @@ func _init():
 					effects = [
 						#DECISION_EFFECT_KAIT_OBEDIENCE,
 					],
-					kaitLine = "Letting her go was stupid. I don't wanna lie to people. If I promised that nurse to reward her, we should have rewarded her.",
-					avyLine = "Letting that bitch go was dumb. If she talks, I swear.",
+					kaitLine = "Отпустить её было глупо. Я не хочу врать людям. Если я обещал той медсестре награду, значит, мы должны были её получить.",
+					avyLine = "Отпустить эту сучку было тупо. Если она заговорит, клянусь...",
 				},
 				"reward": {
 					text = "Награда",
 					effects = [
 						DECISION_EFFECT_KAIT_LOVE,
 					],
-					kaitLine = "I'm certain that the nurse won't talk now. Not after what we did to her~.",
-					avyLine = "Hope you had fun with that bitch. And the other bitch.",
+					kaitLine = "Я уверен, что медсестра теперь не проболтается. Не после того, что мы с ней сотворили~.",
+					avyLine = "Надеюсь, ты повеселился с той сучкой. И со второй тоже.",
 				},
 				"break": {
 					text = "Сломленная",
 					effects = [
 						DECISION_EFFECT_AVY_LOVE,
 					],
-					kaitLine = "Hope you didn't kill the girl. I don't wanna lie to people. If I promised that nurse to reward her, we should have rewarded her.",
-					avyLine = "You know what, that was fun. We should be breaking more people.",
+					kaitLine = "Надеюсь, ты не прикончил девчонку. Я не хочу врать людям. Если я обещал той медсестре награду, значит, мы должны были её получить.",
+					avyLine = "Знаешь что, это было весело. Нам стоит ломать людей чаще.",
 				},
 			},
 		}
@@ -57,13 +57,13 @@ func onMissionStart():
 func getObjectives() -> Array:
 	var result:Array = []
 	
-	result.append("Meet your team in the medical lobby. Use the lift to get down to the medical wing.")
+	result.append("Встреть свою команду в медицинском лобби. Используй лифт, чтобы спуститься в медицинское крыло.")
 	if(getFlag("s1", false)):
-		result.append("Find the medical storage room. It should be somewhere in the staff-only area.")
+		result.append("Найди медицинский склад. Он должен быть где-то в зоне для персонала.")
 	if(getFlag("s2", false)):
-		result.append("The storage room is locked! You need to find a working badge somewhere near the showers of the medical wing!")
+		result.append("Склад заперт! Тебе нужно найти рабочий пропуск где-нибудь рядом с душевыми в медицинском крыле!")
 	if(getFlag("s3", false)):
-		result.append("You have a badge, go back to the storage room!")
+		result.append("Пропуск у тебя, возвращайся к складу!")
 	
 	return result
 
@@ -102,23 +102,23 @@ func onSimpleScene(_eventID:String, _args:Array, _scene):
 
 func getEventSceneLoc(_loc:String) -> Array:
 	if(_loc == "medical_storage"):
-		return ["MissionSimpleScene", ["You try to enter the storage room but it's locked! And so you go back..", "roomlocked", []]]
+		return ["MissionSimpleScene", ["Ты пытаешься войти на склад, но он заперт! И тогда ты возвращаешься назад...", "roomlocked", []]]
 	if(getFlag("s1", false)):
 		if(_loc == "med_staffonly_door1"):
-			return ["MissionSimpleScene", ["You won't be able to enter this area again if you leave. So you don't.", "roomleaveleft", []]]
+			return ["MissionSimpleScene", ["Если ты уйдешь, то больше не сможешь попасть в эту зону. Так что ты остаешься.", "roomleaveleft", []]]
 		if(_loc == "med_staffonly_door2"):
-			return ["MissionSimpleScene", ["You won't be able to enter this area again if you leave. So you don't.", "roomleaveright", []]]
+			return ["MissionSimpleScene", ["Если ты уйдешь, то больше не сможешь попасть в эту зону. Так что ты остаешься.", "roomleaveright", []]]
 		
 	if(!getFlag("s1", false)):
 		if(_loc == "med_lobby_start"):
 			return ["DomM3s2Lobby", []]
 	elif(!getFlag("s2", false)):
 		if(_loc == "med_near_storage"):
-			return ["DomM3s3StorageLocked", []]
+			return ["Склад_Доминант_Миссия3_Заперт", []]
 	elif(!getFlag("s3", false)):
 		if(_loc == "med_nearshower"):
-			return ["DomM3s4Shower", []]
+			return ["Доминант_Миссия4_Душ", []]
 	else:
 		if(_loc == "med_near_storage"):
-			return ["DomM3s5Return", []]
+			return ["Доминант_Миссия5_Возвращение", []]
 	return [] # [sceneid, args]

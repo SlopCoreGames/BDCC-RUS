@@ -93,11 +93,11 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([
-		"Please, let me taste you while you taste me.",
-		"Let me worship you, please.",
-		"I'll be so good for you, just let me get my mouth on you.",
-		"Please, I want us to lose ourselves in each other.",
-		"Let me show you how much I want you, please.",
+		"Пожалуйста, дай мне почувствовать твой вкус, пока ты пробуешь мой.",
+		"Позволь мне боготворить тебя, прошу.",
+		"Я буду очень послушным, просто дай мне прикоснуться к тебе губами.",
+		"Пожалуйста, я хочу, чтобы мы растворились друг в друге.",
+		"Позволь мне показать, как сильно я тебя хочу, умоляю.",
 	])
 
 func getBegDomFetishes() -> Dictionary:

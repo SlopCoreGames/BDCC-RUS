@@ -30,7 +30,7 @@ func _run():
 
 			saynn("Кошка замечает твой взгляд на своей груди и скрещивает руки, подчеркивая свои {tavi.breasts} и прикусывая губу.")
 
-			saynn("[say=tavi]"+str(taviSpeak("Like 'em?.. You made them like that.", "They keep itching when full.. Wanna change that?", "I think I know why you are staring.."))+"[/say]")
+			saynn("[say=tavi]"+str(taviSpeak("Нравятся?.. Ты ведь сам их такими сделал.", "Когда они полные, они начинают чесаться... Хочешь это исправить?", "Кажется, я знаю, почему ты так пялишься..."))+"[/say]")
 
 			if (getCharacter("tavi").hasEffect(StatusEffect.SoreNipplesAfterMilking)):
 				addDisabledButton("Дойка руками", "Дать Тави отдохнуть. Её соски всё ещё болят")
@@ -50,7 +50,7 @@ func _run():
 
 			saynn("Кошка ловит ваш взгляд на своей груди и слегка наклоняет голову.")
 
-			saynn("[say=tavi]"+str(taviSpeak("Something is wrong? Want me to undress?..", "Your stare makes me wet alone, what's up with that?", "You like staring at me.."))+"[/say]")
+			saynn("[say=tavi]"+str(taviSpeak("Что-то не так? Хочешь, чтобы я разделась?..", "От одного твоего взгляда у меня уже всё течёт, что с тобой такое?", "Тебе нравится на меня пялиться..."))+"[/say]")
 
 			var lastGrope = getFlag("TaviModule.Ch6TaviLastGropeHow", "")
 			if (lastGrope == "grope"):
@@ -286,7 +286,7 @@ func _run():
 
 		saynn("Ого. Ты не теряешь времени даром. Твои руки снова возвращаются к набухшей груди Тави, разминая и сжимая её ещё сильнее, чем прежде, каким-то образом находя в ней ещё больше молока. Кошка стонет и извивается под твоими уверенными прикосновениями, а её тело дрожит от этого странного рода наслаждения.")
 
-		saynn("[say=tavi]Какая же я шлюха.."+str(" Pregnant and being milked.." if getCharacter("tavi").isVisiblyPregnant() else "")+"[/say]")
+		saynn("[say=tavi]Какая же я шлюха.."+str(" Беременная и доящаяся..." if getCharacter("tavi").isVisiblyPregnant() else "")+"[/say]")
 
 		saynn("И вот её молоко течёт всё свободнее, наполняя комнату сладким ароматом, который смешивается с запахом её возбуждения. Кажется, что процесс дойки и унижения с каждой секундой подталкивает её всё ближе и ближе к самому краю.")
 
@@ -620,7 +620,7 @@ func _react(_action: String, _args):
 		var milkAmount = getCharacter("tavi").milk(RNG.randf_range(0.2,0.3))
 		GM.pc.addSkillExperience(Skill.Milking, 20)
 		
-		addMessage("You milked Tavi for "+str(Util.roundF(milkAmount, 1))+" ml of milk")
+		addMessage("Вы подоили Тави в течение "+str(Util.roundF(milkAmount, 1))+" мл молока")
 
 	if(_action == "lact_handmilking_enough"):
 		processTime(2*60)
@@ -631,7 +631,7 @@ func _react(_action: String, _args):
 		var milkAmount = getCharacter("tavi").milk()
 		GM.pc.addSkillExperience(Skill.Milking, 10)
 		
-		addMessage("You milked Tavi for "+str(Util.roundF(milkAmount, 1))+" ml of milk")
+		addMessage("Вы подоили Тави в течение "+str(Util.roundF(milkAmount, 1))+" мл молока")
 		getModule("TaviModule").addCorruption(2)
 
 	if(_action == "lact_breastfeeding_do"):
@@ -667,7 +667,7 @@ func _react(_action: String, _args):
 		var pump = getCharacter("tavi").getInventory().getItemByUniqueID(breastPumpID)
 		getCharacter("tavi").stimulateLactation()
 		var howMuchTransferred = getCharacter("tavi").getBodypart(BodypartSlot.Breasts).getFluids().transferTo(pump, 0.6)
-		addMessage("The pump managed to milk Tavi's breasts for "+str(Util.roundF(howMuchTransferred))+" ml")
+		addMessage("Насосу удалось выдоить из груди Тави "+str(Util.roundF(howMuchTransferred))+" ml")
 		GM.pc.addSkillExperience(Skill.Milking, 30)
 		getCharacter("tavi").addEffect(StatusEffect.SoreNipplesAfterMilking)
 		getCharacter("tavi").updateAppearance()
@@ -681,7 +681,7 @@ func _react(_action: String, _args):
 		var pump = getCharacter("tavi").getInventory().getItemByUniqueID(breastPumpID)
 		getCharacter("tavi").stimulateLactation()
 		var howMuchTransferred = getCharacter("tavi").getBodypart(BodypartSlot.Breasts).getFluids().transferTo(pump, 1.0)
-		addMessage("The pump managed to milk Tavi's breasts for "+str(Util.roundF(howMuchTransferred))+" ml")
+		addMessage("Насосу удалось выдоить из груди Тави "+str(Util.roundF(howMuchTransferred))+" ml")
 		GM.pc.addSkillExperience(Skill.Milking, 10)
 		getCharacter("tavi").addEffect(StatusEffect.SoreNipplesAfterMilking)
 		getCharacter("tavi").updateAppearance()

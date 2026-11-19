@@ -586,7 +586,7 @@ func _run():
 
 		saynn("[say=captain]Заперто.. Невозможно.[/say]")
 
-		saynn("Его челюсть дрожит, а полные ужаса глаза мечутся из стороны в сторону. Кажется, он вот-вот потеряет сознание.."+str(" Just like you did when Tavi tested the drug on you" if getFlag("TaviModule.ch2DrugsAgreedToTest") else "")+"")
+		saynn("Его челюсть дрожит, а полные ужаса глаза мечутся из стороны в сторону. Кажется, он вот-вот потеряет сознание.."+str(" Прямо как тогда, когда Тави тестировала на тебе препарат" if getFlag("TaviModule.ch2DrugsAgreedToTest") else "")+"")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "guards_storm_in")
 	if(state == "won_captain"):
@@ -652,7 +652,7 @@ func _run():
 
 		saynn("[say=captain]Заперто.. Невозможно.[/say]")
 
-		saynn("Его челюсть дрожит, а полные ужаса глаза мечутся из стороны в сторону. Кажется, он вот-вот потеряет сознание.."+str(" Just like you did when Tavi tested the drug on you" if getFlag("TaviModule.ch2DrugsAgreedToTest") else "")+"")
+		saynn("Его челюсть дрожит, а полные ужаса глаза мечутся из стороны в сторону. Кажется, он вот-вот потеряет сознание.."+str(" Прямо как тогда, когда Тави тестировала на тебе препарат" if getFlag("TaviModule.ch2DrugsAgreedToTest") else "")+"")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "guards_storm_in")
 	if(state == "guards_storm_in"):
@@ -1152,7 +1152,7 @@ func _react_scene_end(_tag, _result):
 			setState("lost_tavi")
 
 func getDevCommentary():
-	return "This is probably one of the most important scenes in Tavi's route.. Huge spoilers if you haven't gone through it yet.\n\nDid I plan it all to be this way since the beginning? Yes and no x3. I think I realized that making it so Tavi is the daughter of the director and Elena is a great idea only after writing her backstory scene x3. Yeah, its mommy/daddy issues which is probably a cliche at this point but I tried to put enough spins on it? To make it feel fresh x3.\n\nThe whole android angle.. Yeah, obviously people understand that you can have a sextoy android that you like. But in this universe people didn't yet accept that one can have true love for a machine, a bunch of algorithms basically. Yeah, people did accept all genders. But genders are all.. still people. People that have soul and stuff. Having feelings for machines/objects seems like the next big step, you know? Yeah, you can meme about it and stuff but would you be okay if your president married an f36 plane with an experimental neural brain. I know you would love that x3. Would your parents be okay with that though? You get it now hopefully, it requires a new generation of people to accept new ideas.\n\nWhy doesn't the player have much agency in this whole scene?.. I don't even know how I would write this scene in a way that doesn't center around Tavi.. And then include branching paths in it?.. Just kill me x3. I kinda pushed myself into the corner when I decided to make you, the player, just be you. But making it so you play as Tavi the whole game would remove player customisation. It's a very tricky topic, you know? And I'm not an expert at writing complex branching narratives, I just wanna tell this little story I came up with.."
+	return "Это, пожалуй, одна из самых важных сцен в ветке Тави... Огромные спойлеры, если вы еще не проходили её.\n\nНеужели я спланировал всё так с самого начала? И да, и нет x3. Кажется, я осознал, что сделать Тави дочерью директора, а Елену — отличной идеей, только после того, как написал сцену с её предысторией x3. Да, это типичные «проблемы с мамочкой/папочкой», что на данный момент уже стало клише, но я попытался добавить достаточно нюансов, чтобы это ощущалось свежо x3.\n\nВся эта тема с андроидами... Да, очевидно, что люди понимают: можно иметь андроида-секс-игрушку, который тебе нравится. Но в этой вселенной люди еще не приняли тот факт, что можно испытывать настоящую любовь к машине, по сути, к набору алгоритмов. Да, люди приняли все гендеры. Но гендеры — это всё равно... люди. Люди, у которых есть душа и всё такое. Чувства к машинам/объектам кажутся следующим большим шагом, понимаете? Да, об этом можно шутить и клепать мемы, но было бы вам ок, если бы ваш президент женился на истребителе f36 с экспериментальным нейронным мозгом? Знаю, вам бы это зашло x3. Но одобрили бы это ваши родители? Надеюсь, теперь вы понимаете: для принятия новых идей нужно новое поколение людей.\n\nПочему у игрока так мало свободы действий во всей этой сцене?.. Я даже не знаю, как написать эту сцену так, чтобы она не вращалась исключительно вокруг Тави... И при этом включить в неё разветвленные пути?.. Просто пристрелите меня x3. Я сам загнал себя в угол, когда решил, что вы, игрок, должны быть просто собой. Но если бы вы играли за Тави на протяжении всей игры, это лишило бы игру возможности кастомизации персонажа. Это очень тонкая тема, понимаете? И я не эксперт в написании сложных разветвленных сюжетов, я просто хочу рассказать эту маленькую историю, которая пришла мне в голову..."
 
 func hasDevCommentary():
 	return true

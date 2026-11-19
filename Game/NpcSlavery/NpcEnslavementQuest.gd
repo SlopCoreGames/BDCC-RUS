@@ -64,7 +64,7 @@ func onBreakTaskCompleted(_theTask):
 		canEnslaveReminded = true
 		
 		if(GM.main != null):
-			GM.main.addMessage(getChar().getName()+" is ready to be enslaved!")
+			GM.main.addMessage(getChar().getName()+" готова к порабощению!")
 
 func getQuestProgressText():
 	var result = []

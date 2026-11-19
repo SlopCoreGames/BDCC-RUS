@@ -7,7 +7,7 @@ func getVisibleName() -> String:
 	return "Шахтер шахты"
 
 func getVisibleDesc() -> String:
-	return "(Non-sexual focus) You will be sold to a guy who will force you to become a shaft miner."
+	return "(Без сексуального подтекста) Тебя продадут мужику, который заставит тебя вкалывать в шахтах."
 
 func canBeChosen() -> bool:
 	return true
@@ -19,14 +19,14 @@ func getEndings() -> Dictionary:
 	return {
 		"mined": {
 			name = "Ни один камень не останется неразработанным",
-			desc = "Reach the required amount of credits",
+			desc = "Накопить нужную сумму кредитов",
 		},
 		"escaped": {
 			name = "Супер-мега-бур",
-			desc = "Find a way to escape together with other slaves",
+			desc = "Найти способ сбежать вместе с другими рабами",
 		},
 		"killedboss": {
 			name = "Просверленная до глубины души",
-			desc = "Make the guy regret ever messing with you",
+			desc = "Заставить этого ублюдка пожалеть о том, что он вообще к тебе полез",
 		},
 	}

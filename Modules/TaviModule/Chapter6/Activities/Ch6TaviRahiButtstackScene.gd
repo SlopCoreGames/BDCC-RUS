@@ -100,7 +100,7 @@ func _run():
 
 		saynn("[say=rahi]Гав...[/say]")
 
-		saynn("Когда ты встал в полный рост, ты устраиваешься позади их прекрасных пушистых попок. Тави игриво виляет задом, заставляя Рахи повторять её движения. Их хвосты переплелись, потираясь друг о друга, а затем они раздвигают их в стороны, открывая тебе полный доступ к их кискам..."+str(" Tavi is still a virgin though, maybe you shouldn't fuck her.. Or maybe now is the time?" if isVirgin else " Both of them are slightly wet already, awaiting to be used.")+"")
+		saynn("Когда ты встал в полный рост, ты устраиваешься позади их прекрасных пушистых попок. Тави игриво виляет задом, заставляя Рахи повторять её движения. Их хвосты переплелись, потираясь друг о друга, а затем они раздвигают их в стороны, открывая тебе полный доступ к их кискам..."+str(" Тави всё ещё девственница, может, не стоит её трахать... А может, самое время?" if isVirgin else " Обе уже слегка промокли, ожидая, когда ими воспользуются.")+"")
 
 		saynn("Кто будет первой?")
 
@@ -166,7 +166,7 @@ func _run():
 
 		saynn("[say=tavi]Ах...[/say]")
 
-		saynn(""+str("So little time has passed since Tavi lost her virginity. And she is already starting to enjoy it. Her pussy is still bleeding slightly.. but it's also coating your dick with her juices." if tookVirginity else "Her pussy is coating your dick with her juices.")+"Тави то и дело откидывается назад при каждом твоем толчке, позволяя вам встречаться на обратном движении и вбивать твой {pc.penis} всё глубже и глубже. Впрочем, ты можешь схватиться покрепче...")
+		saynn(""+str("С тех пор как Тави лишилась девственности, прошло совсем мало времени. И она уже начинает получать от этого удовольствие. Её киска всё ещё слегка кровоточит... но при этом она уже смазывает твой член своими соками." if tookVirginity else "Её киска смазывает твой член своими соками.")+"Тави то и дело откидывается назад при каждом твоем толчке, позволяя вам встречаться на обратном движении и вбивать твой {pc.penis} всё глубже и глубже. Впрочем, ты можешь схватиться покрепче...")
 
 		addButton("Быстрее", "Трахать Тави быстрее", "do_fuck_tavi_faster")
 	if(state == "do_fuck_tavi_faster"):
@@ -186,7 +186,7 @@ func _run():
 		addButton("Кончить внутрь", "Кончить в Тави", "do_fuck_tavi_cum")
 	if(state == "do_fuck_tavi_cum"):
 		playAnimation(StageScene.ButtStackSex, "insideup", {pc="rahi", npc="tavi", pcCum=true, npcCum=true, bodyState={naked=true}, npcBodyState={naked=true}, npc2="pc", npc2BodyState={exposedCrotch=true, hard=true}})
-		saynn("И вот ты вбиваешь свой член так глубоко, как только позволяет эта киска... прорываясь к самой матке Тави. Она страстно стонет, пока ты кряхтишь, а твой пульсирующий член выплескивает в неё огромную порцию густой {pc.cum}, движение за движением..."+str(" From virgin to a cum dumpster.. So quick.." if tookVirginity else "")+"")
+		saynn("И вот ты вбиваешь свой член так глубоко, как только позволяет эта киска... прорываясь к самой матке Тави. Она страстно стонет, пока ты кряхтишь, а твой пульсирующий член выплескивает в неё огромную порцию густой {pc.cum}, движение за движением..."+str(" Из девственницы в спермобак... Как быстро..." if tookVirginity else "")+"")
 
 		saynn("[say=tavi]Ахх..[/say]")
 
@@ -194,7 +194,7 @@ func _run():
 
 		saynn("[say=rahi]Да, разводи своих питомцев, {rahiMaster}..[/say]")
 
-		saynn("Рахи, кажется, радуется этому больше всех."+str("She probably just got inpatient, waiting for her turn." if !fuckedRahi else "What a cute kitty.")+"")
+		saynn("Рахи, кажется, радуется этому больше всех."+str("Она, должно быть, просто потеряла терпение, ожидая своей очереди." if !fuckedRahi else "Какая милая кошечка.")+"")
 
 		saynn("Тави тяжело дышит, её киска переполнена семенем. Часть его уже вытекает, пачкая её мех и мех питомца снизу.")
 
@@ -273,7 +273,7 @@ func _run():
 
 		saynn("[say=rahi]Ах.. Она сейчас.. с-сейчас..[/say]")
 
-		saynn("Ты решаешь сосредоточиться на коричневой кошечке, оставляя Тави лишь тихонько дышать от возбуждения..."+str(" You might get to her soon anyway." if !fuckedTavi else " She got her share of the fun anyway.")+"")
+		saynn("Ты решаешь сосредоточиться на коричневой кошечке, оставляя Тави лишь тихонько дышать от возбуждения..."+str(" В любом случае, скоро ты до неё доберёшься." if !fuckedTavi else " Она всё равно получила свою порцию веселья.")+"")
 
 		saynn("Когда оргазм Рахи приближается, её внутренние стенки начинают сжимать твой член так сильно, что тебе приходится бороться с трением, чтобы не сбиться с темпа... Пока эта киска внезапно не кончает...")
 
@@ -298,7 +298,7 @@ func _run():
 
 		saynn("[say=rahi]Ня-а-а..[/say]")
 
-		saynn("Тави улыбается, удерживая Рахи на месте, чтобы ты мог как следует её осеменить."+str(" Her own cunt leaking seed too while she does that." if fuckedTavi else "")+"")
+		saynn("Тави улыбается, удерживая Рахи на месте, чтобы ты мог как следует её осеменить."+str(" Её собственная щель тоже течёт от семени, пока она это делает." if fuckedTavi else "")+"")
 
 		saynn("[say=tavi]Где ты вообще откопал такую милашку?[/say]")
 
@@ -312,7 +312,7 @@ func _run():
 	if(state == "start_walkies"):
 		playAnimation(StageScene.Duo, "stand", {npc="rahi", npcAction="allfours", flipNPC=true, pc="tavi", bodyState={naked=true}, npcBodyState={naked=true}})
 		if (!hadSex):
-			saynn("Ты решаешь не трахаться со своими питомцами сегодня и просто велишь им отвалить друг от друга."+str(" Fucking Rahi would probably make Tavi gealous. But fucking her as well would mean stealing her virginity.." if isVirgin else "")+"")
+			saynn("Ты решаешь не трахаться со своими питомцами сегодня и просто велишь им отвалить друг от друга."+str(" Трахнуть Рахи, наверное, заставит Тави ревновать. Но трахнуть и её тоже — значит украсть её девственность..." if isVirgin else "")+"")
 
 			saynn("[say=tavi]Оу, ладно. У тебя есть идеи получше?..[/say]")
 
@@ -331,7 +331,7 @@ func _run():
 				saynn("[say=rahi]Гав..[/say]")
 
 			elif (fuckedRahi):
-				saynn("Вы "+str("bred" if creamed else "straponed")+" Рахи... пожалуй, на этом хватит."+str(" Fucking Tavi would mean stealing her virginity which you didn't wanna do." if isVirgin else "")+" Вы наконец приказываете им отцепиться друг от друга.")
+				saynn("Вы "+str("bred" if creamed else "straponed")+" Рахи... пожалуй, на этом хватит."+str(" Трахать Тави означало отобрать её девственность, чего ты поначалу не хотел." if isVirgin else "")+" Вы наконец приказываете им отцепиться друг от друга.")
 
 				saynn("[say=rahi]Но мисс Тави так и не поняла...[/say]")
 
@@ -347,7 +347,7 @@ func _run():
 				saynn("Тави встает и отходит в сторону, демонстрируя свою наготу. Рахи по-прежнему стоит на четвереньках.")
 
 			else:
-				saynn("Вы "+str("bred" if creamed else "straponed")+" Тави... пожалуй, этого уже достаточно."+str(" Stealing her virginity in front of Rahi was quite hot." if isVirgin else "")+" Вы наконец приказываете им отцепиться друг от друга.")
+				saynn("Вы "+str("bred" if creamed else "straponed")+" Тави... пожалуй, этого уже достаточно."+str(" Отобрать её девственность прямо на глазах у Рахи было чертовски горячо." if isVirgin else "")+" Вы наконец приказываете им отцепиться друг от друга.")
 
 				saynn("[say=tavi]Но ты ведь не трахнул свою вторую кошечку..[/say]")
 
@@ -374,7 +374,7 @@ func _run():
 		addButton("Надеть поводки", "Пристегнуть обоих питомцев к поводкам", "leash_pets")
 	if(state == "leash_pets"):
 		playAnimation(StageScene.Duo, "allfours", {npc="rahi", npcAction="allfours", flipNPC=true, pc="tavi", bodyState={naked=true,chains=[["normal", "neck", "scene", "farleft"]]}, npcBodyState={naked=true,chains=[["normal", "neck", "scene", "farleft"]]}})
-		saynn("Вы ждете, пока Тави встанет на четвереньки, прежде чем пристегнуть поводок к её ошейнику, а затем еще один поводок к ошейнику Рахи. Оба зверька виляют своими"+str(" creamed dripping" if creamed && fuckedTavi && fuckedRahi else "")+"попками, преданно глядя на вас снизу вверх.")
+		saynn("Вы ждете, пока Тави встанет на четвереньки, прежде чем пристегнуть поводок к её ошейнику, а затем еще один поводок к ошейнику Рахи. Оба зверька виляют своими"+str(" сочащаяся сперма" if creamed && fuckedTavi && fuckedRahi else "")+"попками, преданно глядя на вас снизу вверх.")
 
 		saynn("[say=pc]Ну, вроде всё готово. Пошли![/say]")
 
@@ -511,7 +511,7 @@ func _run():
 
 		saynn("[say=rahi]Гав...[/say]")
 
-		saynn("Подготовив страпон, ты устраиваешься позади их прекрасных пушистых попок. Тави игриво виляет задом, заставляя Рахи повторять её движения. Их хвосты переплетены и трутся друг о друга, прежде чем расступиться в стороны, открывая тебе полный доступ к их кискам..."+str(" Tavi is still a virgin though, maybe you shouldn't fuck her.. Or maybe now is the time?" if isVirgin else " Both of them are slightly wet already, awaiting to be used.")+"")
+		saynn("Подготовив страпон, ты устраиваешься позади их прекрасных пушистых попок. Тави игриво виляет задом, заставляя Рахи повторять её движения. Их хвосты переплетены и трутся друг о друга, прежде чем расступиться в стороны, открывая тебе полный доступ к их кискам..."+str(" Тави всё ещё девственница, может, не стоит её трахать... А может, самое время?" if isVirgin else " Обе уже слегка промокли, ожидая, когда ими воспользуются.")+"")
 
 		saynn("Кто будет первой?")
 
@@ -577,7 +577,7 @@ func _run():
 
 		saynn("[say=tavi]Ах...[/say]")
 
-		saynn(""+str("So little time has passed since Tavi lost her virginity. And she is already starting to enjoy it. Her pussy is still bleeding slightly.. but it's also coating your toy with her juices." if tookVirginity else "Her pussy is coating your toy with her juices.")+"При каждом твоём толчке Тави подаётся вперёд, что позволяет тебе встречать её на обратном движении и вбивать страпон всё глубже и глубже. Впрочем, ты мог бы схватить её поудобнее...")
+		saynn(""+str("С тех пор как Тави лишилась девственности, прошло совсем мало времени. А она уже начинает получать от этого удовольствие. Её киска всё ещё слегка кровоточит... но при этом она уже смазывает твою игрушку своими соками." if tookVirginity else "Её киска смазывает твою игрушку её соками.")+"При каждом твоём толчке Тави подаётся вперёд, что позволяет тебе встречать её на обратном движении и вбивать страпон всё глубже и глубже. Впрочем, ты мог бы схватить её поудобнее...")
 
 		addButton("Быстрее", "Трахать Тави быстрее", "do_strapon_tavi_faster")
 	if(state == "do_strapon_tavi_faster"):
@@ -597,15 +597,15 @@ func _run():
 		addButton("Ткнуть глубоко", "Засунуть страпон поглубже", "do_strapon_tavi_cum")
 	if(state == "do_strapon_tavi_cum"):
 		playAnimation(StageScene.ButtStackSex, "insideup", {pc="rahi", npc="tavi", bodyState={naked=true}, npcBodyState={naked=true}, npc2="pc", npc2BodyState={exposedCrotch=true, hard=true}})
-		saynn("И ты с силой вгоняешь страпон так глубоко, насколько позволяет эта киска... пробиваясь прямо в матку Тави. Она страстно стонет, а твоя грубость только усиливает её оргазм, продлевая его и заставляя её снова сочиться сквиртом!"+str(" At the same time, your strapon starts throbbing as it starts stuffing Tavi's womb full of "+straponContents+"." if straponLoaded else "")+""+str(" From virgin to a strapon enjoyer.. So quick.." if tookVirginity else "")+"")
+		saynn("И ты с силой вгоняешь страпон так глубоко, насколько позволяет эта киска... пробиваясь прямо в матку Тави. Она страстно стонет, а твоя грубость только усиливает её оргазм, продлевая его и заставляя её снова сочиться сквиртом!"+str(" В то же время твой страпон начинает пульсировать, когда ты начинаешь набивать матку Тави, "+straponContents+"." if straponLoaded else "")+""+str(" Из девственницы в фанатку страпонов... Как быстро..." if tookVirginity else "")+"")
 
 		saynn("[say=tavi]Ахх..[/say]")
 
 		saynn("[say=rahi]Да, разводи своих питомцев, {rahiMaster}..[/say]")
 
-		saynn("Рахи, кажется, радуется этому больше всех."+str("She probably just got inpatient, waiting for her turn." if !fuckedRahi else "What a cute kitty.")+"")
+		saynn("Рахи, кажется, радуется этому больше всех."+str("Она, должно быть, просто потеряла терпение, ожидая своей очереди." if !fuckedRahi else "Какая милая кошечка.")+"")
 
-		saynn("Тави тяжело дышит, мышцы её киски всё ещё пульсируют. Её соки"+str(" and your strapon's contents" if straponLoaded else "")+" пачкают не только её мех, но и мех питомца снизу.")
+		saynn("Тави тяжело дышит, мышцы её киски всё ещё пульсируют. Её соки"+str(" и содержимое твоего страпона" if straponLoaded else "")+" пачкают не только её мех, но и мех питомца снизу.")
 
 		saynn("[say=rahi]Как грязно..[/say]")
 
@@ -662,7 +662,7 @@ func _run():
 		saynn("[say=rahi]Ах.. ах.. Твоя кошечка.. песик.. обожает это..[/say]")
 
 		if (fuckedTavi):
-			saynn("Пока ты трахаешь Рахи, ты, разумеется, не можешь не смотреть на Тави и её"+str(" stuffed" if straponLoaded else "")+" pussy. "+str("She is still leaking {pc.straponContents} onto the brown fur.. so you decide to spank that purple ass, causing her to clench." if straponLoaded else "She is still dripping juices onto the brown fur.. so you decide to spank that purple ass, causing her to clench.")+"")
+			saynn("Пока ты трахаешь Рахи, ты, разумеется, не можешь не смотреть на Тави и её"+str(" stuffed" if straponLoaded else "")+" pussy. "+str("Она всё ещё пачкает {pc.straponContents} коричневый мех... поэтому ты решаешь шлепнуть эту фиолетовую задницу, заставляя её сжаться." if straponLoaded else "Она всё ещё капает соками на коричневый мех... поэтому ты решаешь шлепнуть эту фиолетовую задницу, заставляя её сжаться.")+"")
 
 			saynn("[say=tavi]Ах!.. Почему я?[/say]")
 
@@ -682,7 +682,7 @@ func _run():
 
 		saynn("[say=rahi]Ах.. Она сейчас.. с-сейчас..[/say]")
 
-		saynn("Ты решаешь сосредоточиться на коричневой кошечке, оставляя Тави лишь тихонько дышать от возбуждения..."+str(" You might get to her soon anyway." if !fuckedTavi else " She got her share of the fun anyway.")+"")
+		saynn("Ты решаешь сосредоточиться на коричневой кошечке, оставляя Тави лишь тихонько дышать от возбуждения..."+str(" В любом случае, скоро ты до неё доберёшься." if !fuckedTavi else " Она всё равно получила свою порцию веселья.")+"")
 
 		saynn("Когда оргазм Рахи приближается, её внутренние стенки начинают так сильно сжимать резиновую плоть... тебе приходится бороться с трением, чтобы не сбавить темп... пока эта киска внезапно не кончает...")
 
@@ -703,11 +703,11 @@ func _run():
 		addButton("Всаживай на полную", "Трахать Рахи грубо", "do_strapon_rahi_cum")
 	if(state == "do_strapon_rahi_cum"):
 		playAnimation(StageScene.ButtStackSex, "insidedown", {pc="rahi", npc="tavi", bodyState={naked=true}, npcBodyState={naked=true}, npc2="pc", npc2BodyState={exposedCrotch=true, hard=true}})
-		saynn("Киска Рахи словно хочет засосать твой страпон... и ты покорно принимаешь этот вызов, заталкивая игрушку так глубоко, насколько позволяет этот любовный туннель..."+str(" seconds before releasing a load of "+straponContents+", flooding her womb to the brim." if straponLoaded else "")+"Бедная кошечка едва выносит очередную волну оргазма, её киска судорожно сжимается вокруг твоего резинового члена, пытаясь выдавить из него хоть каплю удовольствия.")
+		saynn("Киска Рахи словно хочет засосать твой страпон... и ты покорно принимаешь этот вызов, заталкивая игрушку так глубоко, насколько позволяет этот любовный туннель..."+str(" секунд до того, как излить в неё целую порцию, "+straponContents+", до краев заполняя её утробу." if straponLoaded else "")+"Бедная кошечка едва выносит очередную волну оргазма, её киска судорожно сжимается вокруг твоего резинового члена, пытаясь выдавить из него хоть каплю удовольствия.")
 
 		saynn("[say=rahi]Ня-а-а..[/say]")
 
-		saynn("Тави улыбается, удерживая Рахи на месте, чтобы ты мог как следует осеменить её страпоном."+str(" Her own cunt leaking seed too while she does that." if fuckedTavi else "")+"")
+		saynn("Тави улыбается, удерживая Рахи на месте, чтобы ты мог как следует осеменить её страпоном."+str(" Её собственная щель тоже течёт от семени, пока она это делает." if fuckedTavi else "")+"")
 
 		saynn("[say=tavi]Где ты вообще откопал такую милашку?[/say]")
 

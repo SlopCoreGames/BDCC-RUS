@@ -154,7 +154,7 @@ func _run():
 
 		saynn("Ты кладешь подбородок ей на плечо и оставляешь там легкий поцелуй. Огромный контраст по сравнению с твоими предыдущими действиями.")
 
-		saynn("[say=tavi]"+str(taviSpeak("Never thought pain could bring such pleasure..", "I want more.. I wanna get fucked while you choke me.. Never thought pain could bring such pleasure..", "Never thought pain could bring such pleasure.. It's different.. But I like it."))+"[/say]")
+		saynn("[say=tavi]"+str(taviSpeak("Никогда не думала, что боль может приносить такое удовольствие...", "Хочу еще... Хочу, чтобы ты трахал меня, пока душишь... Никогда не думала, что боль может приносить такое удовольствие...", "Никогда не думала, что боль может приносить такое удовольствие... Это совсем другое... Но мне нравится."))+"[/say]")
 
 		saynn("[say=pc]Это было прекрасное путешествие, правда? И ты доверяла мне на каждом шагу.[/say]")
 

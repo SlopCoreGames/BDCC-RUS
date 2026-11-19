@@ -117,9 +117,9 @@ func fightOrMark_do(_id:String, _args:Array):
 
 func pleaseFineEnough():
 	if(markedAmount == 0):
-		talkPC("Please, no.")
+		talkPC("Пожалуйста, нет...")
 	else:
-		talkPC("Please, that's enough.")
+		talkPC("Пожалуйста, хватит...")
 	saynn("Ты умоляешь хозяина остановиться.")
 	saynn("{npc.name} слышит это... и действительно останавливается.")
 	talkModularOwnerToPC("SoftSlaveryMarkingBegYes") #"You are being so cute, begging me. How can I say no?"
@@ -129,9 +129,9 @@ func pleaseFineEnough():
 
 func beggingStart():
 	if(markedAmount == 0):
-		talkPC("Please, no.")
+		talkPC("Ну пожалуйста, нет...")
 	else:
-		talkPC("Please, that's enough.")
+		talkPC("Пожалуйста, уже достаточно...")
 	saynn("Ты умоляешь хозяина остановиться.")
 	saynn("Но {npc.name} всё ещё сжимает маркер.")
 	talkModularOwnerToPC("SoftSlaveryMarkingBegNo") #If you're gonna beg, do it on your knees
@@ -241,10 +241,10 @@ func begHumiliateSelf_do(_id:String, _args:Array):
 
 func begHumiliateSelfAdmit():
 	saynn("Ты говоришь.")
-	talkPC("I'm your {npc.npcSlave}.")
+	talkPC("Я твой {npc.npcSlave}.")
 	talkModularOwnerToPC("SoftSlaveryMarkingBegHumiliation2")
 	saynn("Кончик маркера начинает оставлять след на твоей коже.")
-	talkPC("I'm your {npc.npcSlave}! Nothing but your property!")
+	talkPC("Я твой {npc.npcSlave}! Всего лишь твоя собственность!")
 	talkModularOwnerToPC("SoftSlaveryMarkingBegHumiliation3")
 	addInfluenceObey(0.5)
 	saynn("{npc.name} наконец убирает маркер.")
@@ -272,7 +272,7 @@ func incMarked():
 	var theWritingID:String = BodyWritings.getRandomWritingIDForZone(zone)
 	GM.pc.addBodywriting(zone, theWritingID, false, getOwnerID())
 	
-	GM.main.addMessage("You have a received a '"+BodyWritings.getWritingText(theWritingID)+"' writing on your "+BodyWritingsZone.getZoneVisibleName(zone))
+	GM.main.addMessage("Вы получили надпись «"+BodyWritings.getWritingText(theWritingID)+"», нанесенную на ваше "+BodyWritingsZone.getZoneVisibleName(zone))
 
 func addContinueCheckExtra():
 	var extraChance:float = 50.0 - ownerPersonality(PersonalityStat.Subby)*30.0+getOwnerNOM(NOM.Mean)*40.0

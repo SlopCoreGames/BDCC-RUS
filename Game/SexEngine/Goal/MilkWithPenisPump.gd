@@ -45,11 +45,11 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([
-		"If you have a penis pump, please use it on me! I need to feel it pulling every drop out.",
-		"I'm begging you to put a pump on my cock and just drain me completely.",
-		"I'll be so good, just please use a penis pump on my dick. I need to be drained.",
-		"I'm yours to use. Please, milk my cock with a penis pump if you have one like I'm your toy.",
-		"If you have a penis pump.. please.. I need to be milked until I can't think straight.",
+		"Если у тебя есть помпа для члена, пожалуйста, используй её на мне! Мне нужно чувствовать, как она вытягивает каждую каплю.",
+		"Умоляю, надень на мой член помпу и просто выкачай из меня всё до последней капли.",
+		"Я буду очень послушной, только пожалуйста, используй помпу на моём члене. Мне нужно, чтобы меня опустошили.",
+		"Я в твоём распоряжении. Пожалуйста, дои мой член помпой, если она у тебя есть, — обращайся со мной как со своей игрушкой.",
+		"Если у тебя есть помпа... пожалуйста... мне нужно, чтобы меня доили до тех пор, пока мысли не поплывут.",
 	])
 
 func getBegDomFetishes() -> Dictionary:

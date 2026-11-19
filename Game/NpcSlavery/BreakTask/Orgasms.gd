@@ -35,6 +35,6 @@ func getTaskHint(_isSlaveLevelup):
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [
-		"Find someone that will make you orgasm. Hard.",
-		"Find someone to make you cum hard.",
+		"Найди того, кто доведет тебя до оргазма. По-настоящему.",
+		"Найди кого-нибудь, чтобы кончить как следует.",
 	]

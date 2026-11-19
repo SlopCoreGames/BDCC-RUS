@@ -13,7 +13,7 @@ func start():
 	
 	var theNpcOwner := getNpcOwner()
 	if(theNpcOwner):
-		var theText:String = "{npc.name} is your owner!"
+		var theText:String = "{npc.name} — твой хозяин!"
 		for textLine in theNpcOwner.getOwnerInfo():
 			theText += "\n- "+textLine
 		

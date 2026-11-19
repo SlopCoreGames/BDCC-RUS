@@ -20,10 +20,10 @@ func start():
 	playAnimation(StageScene.Duo, "stand", {npc=getOwnerID(), bodyState={leashedBy=getOwnerID()}})
 	saynn("{npc.name} защелкивает поводок на твоем ошейнике!")
 	
-	addButtonAt(6, "Walk", "See where your owner will bring you..", "walk")
-	addDisabledButtonAt(10, "Leashed", "You are leashed")
-	addDisabledButtonAt(11, "Leashed", "You are leashed")
-	addDisabledButtonAt(12, "Leashed", "You are leashed")
+	addButtonAt(6, "Идти", "Посмотрим, куда тебя приведёт хозяин...", "walk")
+	addDisabledButtonAt(10, "На поводке", "Ты на поводке")
+	addDisabledButtonAt(11, "На поводке", "Ты на поводке")
+	addDisabledButtonAt(12, "На поводке", "Ты на поводке")
 
 func doWalk() -> bool:
 	if(goTowards(targetLoc)):
@@ -50,10 +50,10 @@ func walking():
 		else:
 			saynn(_roomInfo.getDescription())
 	
-	addButtonAt(6, "Walk", "See where your owner will bring you..", "walk")
-	addDisabledButtonAt(10, "Leashed", "You are leashed")
-	addDisabledButtonAt(11, "Leashed", "You are leashed")
-	addDisabledButtonAt(12, "Leashed", "You are leashed")
+	addButtonAt(6, "Идти", "Посмотрим, куда тебя приведёт хозяин...", "walk")
+	addDisabledButtonAt(10, "На поводке", "Ты на поводке")
+	addDisabledButtonAt(11, "На поводке", "Ты на поводке")
+	addDisabledButtonAt(12, "На поводке", "Ты на поводке")
 	
 func walking_do(_id:String, _args:Array):
 	if(_id == "walk"):

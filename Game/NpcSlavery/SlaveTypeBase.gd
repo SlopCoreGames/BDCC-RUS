@@ -7,7 +7,7 @@ func getVisibleName():
 	return "ИЗМЕНИ МЕНЯ"
 
 func getVisibleDesc():
-	return "CHANGE ME"
+	return "ИЗМЕНИ МЕНЯ"
 
 func getMinimalSlaveLevel():
 	return 0
@@ -25,8 +25,8 @@ func getEnslaveText(_npc):
 # 0  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15
 func getTrainText(_npc, _skillLevel):
 	return RNG.pick([
-		"You train {npc.him}.",
-		"You train {npc.him} very hard.",
+		"Ты тренируешь {npc.him}.",
+		"Ты очень усердно тренируешь {npc.him}.",
 	])
 
 func getFailedTrainTextGreatSuccess(_npc):

@@ -59,15 +59,15 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([
-		"Please, I need to feel you.. Let's rub our pussies together, I'm begging you.",
-		"I need to feel how wet you are against me. Please, let our pussies kiss.",
-		"Let me feel you.. please, let us rub together until I can't think straight.",
-		"I'm aching to have our clits sliding against one another. Please, grant me that?",
-		"Let me feel the heat from your pussy against mine. I need it so badly.",
-		"I'll be so good for you, just please let us scissor. I need that..",
-		"Please, I'm begging you, let me feel your pussy grind against mine. I can't wait any longer.",
-		"Use me, let our bodies tangle together. Please, rub your pussy against mine.",
-		"Your pussy against mine is all I want. Please?",
+		"Пожалуйста, мне нужно почувствовать тебя... Давай потрёмся кисками друг о друга, умоляю!",
+		"Мне нужно почувствовать, какая ты мокрая. Пожалуйста, пусть наши киски поцелуются.",
+		"Дай мне почувствовать тебя... пожалуйста, давай тереться друг о друга, пока у меня мозги не поплывут.",
+		"Я так жажду, чтобы наши клиторы скользили друг о друга. Пожалуйста, исполни моё желание.",
+		"Дай мне почувствовать жар твоей киски о мою. Мне это так нужно.",
+		"Я буду такой послушной, только давай займёмся ножницами. Мне это жизненно необходимо...",
+		"Пожалуйста, умоляю, дай мне почувствовать, как твоя киска втирается в мою. Я больше не могу ждать.",
+		"Используй меня, пусть наши тела переплетутся. Пожалуйста, потри свою киску о мою.",
+		"Твоя киска о мою — это всё, чего я хочу. Ну пожалуйста!",
 	])
 
 func getBegDomFetishes() -> Dictionary:

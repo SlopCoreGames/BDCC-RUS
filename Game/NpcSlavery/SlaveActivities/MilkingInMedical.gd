@@ -9,10 +9,10 @@ func getVisibleName():
 	return "Дойка в медпункте"
 
 func getActivityText():
-	var theText:String = "{npc.name} is being milked in the medical bay!"
+	var theText:String = "{npc.name} доят в медицинском отсеке!"
 
 	if(lastReport != ""):
-		theText += "\n\nToday, {npc.he} produced this:\n"+lastReport
+		theText += "\n\nСегодня {npc.he} произвела вот это:\n"+lastReport
 
 	return theText
 
@@ -45,7 +45,7 @@ func getInteractActions():
 	return [
 		{
 			name = "Отмена",
-			desc = "Bring your slave back.",
+			desc = "Верни свою рабыню обратно.",
 			sceneID = "SlaveryCancelActivity",
 			args = ["You find {npc.name} in the medical and bring {npc.him} back."],
 			buttonChecks = [],

@@ -9,7 +9,7 @@ func getVisibleName() -> String:
 	return "Ошибка"
 
 func getVisibleDesc() -> String:
-	return "Fill me"
+	return "Наполни меня"
 
 func isVisibleAtAll() -> bool:
 	return true

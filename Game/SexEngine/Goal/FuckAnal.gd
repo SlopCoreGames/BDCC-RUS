@@ -78,15 +78,15 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([
-		"Please, I need you inside my ass.",
-		"Fuck my ass, I'm begging you.",
-		"I need to feel you in my tight hole, please.",
-		"Use my ass, it's all for you.",
-		"I'm begging for your cock in my ass.",
-		"Don't make me wait, please fill my ass.",
-		"I'll be so good for you if you just fuck my ass.",
-		"Please, I need it in my ass so badly.",
-		"Stretch my ass open, I need it.",
+		"Пожалуйста, мне нужно, чтобы ты вошел мне в задницу.",
+		"Трахни мою жопу, умоляю тебя.",
+		"Мне нужно почувствовать тебя в моей узкой дырочке, пожалуйста.",
+		"Используй мою задницу, она вся в твоем распоряжении.",
+		"Я умоляю о твоем члене в моей заднице.",
+		"Не заставляй меня ждать, пожалуйста, наполни мою жопу.",
+		"Я буду такой послушной, если ты просто трахнешь меня в задницу.",
+		"Пожалуйста, мне так сильно нужно это в мою задницу.",
+		"Растяни мою жопу, мне это нужно.",
 	])
 
 func getBegDomFetishes() -> Dictionary:

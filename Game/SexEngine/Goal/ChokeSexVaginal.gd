@@ -75,13 +75,13 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([
-		"Please, I need you inside me, I want to feel you in my pussy while you choke me.",
-		"Fuck my pussy and cut off my air, I want to feel owned completely.",
-		"Use my pussy.. and please don't stop choking me while you do.",
-		"I'm begging you, fill my pussy while you have your hands on my throat.",
-		"Please, let me feel you fucking my pussy while I'm dizzy from you choking me.",
-		"I want your cock buried in my pussy and your hand around my neck, please give it to me.",
-		"While you're choking me, please fuck my needy pussy, I can't take it anymore.",
+		"Пожалуйста, мне нужно, чтобы ты был внутри... хочу чувствовать тебя в своей киске, пока ты душишь меня.",
+		"Трахни мою киску и перекрой мне воздух, я хочу чувствовать, что полностью принадлежу тебе.",
+		"Используй мою киску... и, пожалуйста, не переставай душить меня, пока делаешь это.",
+		"Умоляю тебя, наполни мою киску, пока твои руки сжимают моё горло.",
+		"Пожалуйста, дай мне почувствовать, как ты трахаешь мою киску, пока у меня кружится голова от того, что ты меня душишь.",
+		"Я хочу, чтобы твой член был глубоко в моей киске, а твоя рука сжимала мою шею... пожалуйста, сделай это.",
+		"Пока ты душишь меня, пожалуйста, трахай мою изголодавшуюся киску, я больше не могу терпеть!",
 	])
 
 func getBegDomFetishes() -> Dictionary:

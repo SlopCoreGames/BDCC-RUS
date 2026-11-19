@@ -27,7 +27,7 @@ func _reactInit():
 		npc2ID = NpcFinder.grabNpcIDFromPoolOrGenerate(CharacterPool.Inmates, [], InmateGenerator.new(), {})
 		whoStr = "inmate"
 	if(npc2ID == null || npc2ID == ""):
-		addMessage("Couldn't find a good npc :(")
+		addMessage("Не удалось найти подходящего NPC :(")
 		endScene()
 		return
 	npc2 = getCharacter(npc2ID)
@@ -86,57 +86,57 @@ func _run():
 		
 		if(npcVariation == "kind"):
 			saynn("[say=npc2]"+RNG.pick([
-				"Oh, what a cute little pup you have there.",
-				"That is an adorable pup!",
-				"What a cutie!",
-				"I see a cutie on a leash.",
-				"I see a pup out on walkies, hah.",
-				"Oh wow, cute pup.",
+				"Ой, какой у тебя милый щеночек.",
+				"Какой прелестный щенок!",
+				"Ну что за милашка!",
+				"Вижу милашку на поводке.",
+				"О, вижу щенка на прогулке, ха!",
+				"Ого, какой милый песик.",
 			])+"[/say]")
 			
 			saynn("На "+whoStr+"'s глаза загораются от восторга.")
 			
 			saynn("[say=npc2]"+RNG.pick([
-				"Mind if I give {npc.him} a pat?",
-				"Can I pat {npc.him}?",
-				"I really wanna pat!",
+				"Не возражаешь, если я поглажу {npc.him}?",
+				"Можно мне погладить {npc.him}?",
+				"Так и хочется погладить!",
 			])+"[/say]")
 			
 			addButton("Конечно", "Позволить им погладить щенка", "let_pat")
 			addButton("No", "Никаких поглаживаний", "no_pat")
 		if(npcVariation == "mean"):
 			saynn("[say=npc2]"+RNG.pick([
-				"Do you really have to walk your stupid mutt here?",
-				"Hey, I'm walking here.",
-				"Get out of the way.",
-				"Control your pet better.",
+				"Тебе реально обязательно выгуливать свою тупую псину здесь?",
+				"Эй, я вообще-то тут иду!",
+				"Свали с дороги.",
+				"Лучше контролируй своего питомца.",
 			])+"[/say]")
 			
 			saynn("На "+whoStr+"'s хмурит {npc.his} брови.")
 			
 			saynn("[say=npc2]"+RNG.pick([
-				"Don't sniff me.",
-				"Don't look at me, stupid dog.",
-				"The fuck do you want? Fuck off.",
-				"Go away before I step on your mutt.",
+				"Не нюхай меня.",
+				"Не смотри на меня, тупая собака.",
+				"Какого хера тебе надо? Отъебись.",
+				"Проваливай, пока я не наступила на твою дворнягу.",
 			])+"[/say]")
 			
 			addButton("Кусь!", "Приказать питомцу укусить их", "make_bite")
 			addButton("Уйти", "Вы не хотите навлекать на себя неприятности", "do_mean_leave")
 		if(npcVariation == "subby"):
 			saynn("[say=npc2]"+RNG.pick([
-				"Oh.. What a cute puppy.",
-				"Ohh..",
-				"Oh wow. Don't mind me..",
-				"Puppy!",
+				"Ой... Какой милый щеночек.",
+				"Ооо...",
+				"Ого. Не обращай на меня внимания...",
+				"Щеночек!",
 			])+"[/say]")
 			
 			saynn("На "+whoStr+"'s слегка краснеет.")
 			
 			saynn("[say=npc2]"+RNG.pick([
-				"Wish I'd be on a leash like that.. Does {npc.he} bite?",
-				"I like walkies a lot. Does {npc.he} bite?",
-				"I'm not drooling.. Does {npc.he} bite?",
+				"Эх, вот если бы и меня так на поводке держали... {npc.he} кусается?",
+				"Обожаю гулять на поводке. {npc.he} кусается?",
+				"Я вовсе не пускаю слюни!.. {npc.he} кусается?",
 			])+"[/say]")
 			
 			addButton("Дать лапу", "Приказать питомцу дать им лапу", "make_subby_paw")
@@ -159,15 +159,15 @@ func _run():
 		saynn("Твой щеночек послушно ползет к {npc2.him}, а затем садится и начинает тыкаться носом в промежность {npc2.his}.")
 		
 		if(npc2.hasReachablePenis() || npc2.isWearingChastityCage()):
-			saynn("Но это еще не всё: твой щеночек еще и высовывает {npc.his} язык, проводя им по {npc2.his} {npc2.penis}"+(" through the clothing." if !npc2.isFullyNaked() else "."))
+			saynn("Но это еще не всё: твой щеночек еще и высовывает {npc.his} язык, проводя им по {npc2.his} {npc2.penis}"+(" сквозь одежду." if !npc2.isFullyNaked() else "."))
 		elif(npc2.hasReachableVagina()):
-			saynn("Но это еще не всё: твой щеночек еще и высовывает {npc.his} язык, проводя им по {npc2.his} {npc2.pussyStretch} киске"+(" through the clothing." if !npc2.isFullyNaked() else "."))
+			saynn("Но это еще не всё: твой щеночек еще и высовывает {npc.his} язык, проводя им по {npc2.his} {npc2.pussyStretch} киске"+(" сквозь одежду." if !npc2.isFullyNaked() else "."))
 		else:
-			saynn("Но это еще не всё: твой щеночек еще и высовывает {npc.his} язык, проводя им по ней"+(" through the clothing." if !npc2.isFullyNaked() else "."))
+			saynn("Но это еще не всё: твой щеночек еще и высовывает {npc.his} язык, проводя им по ней"+(" сквозь одежду." if !npc2.isFullyNaked() else "."))
 		
 		saynn("[say=npc2]"+RNG.pick([
-			"You trained {npc.him} well..",
-			"Good puppy..",
+			"Ты хорошо натренировал(а) {npc.him}...",
+			"Хороший щеночек...",
 		])+"[/say]")
 		
 		saynn("За это твой щеночек получает много поглаживаний по голове.")
@@ -186,8 +186,8 @@ func _run():
 		saynn("Твой питомец слушается, садится и протягивает {npc.his} лапу тебе"+whoStr+". {npc2.He} трясет ею.")
 		
 		saynn("[say=npc2]"+RNG.pick([
-			"You trained {npc.him} well..",
-			"Good puppy..",
+			"Ты отлично обучил(а) {npc.him}...",
+			"Хороший щеночек...",
 		])+"[/say]")
 		
 		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
@@ -204,8 +204,8 @@ func _run():
 		saynn("Твой питомец послушно подползает к "+whoStr+", который приседает. {npc.Name} открывает {npc.his} рот... и начинает покусывать руку "+whoStr+", выглядит довольно мило.")
 		
 		saynn("[say=npc2]"+RNG.pick([
-			"Ohh, that tickles..",
-			"Good puppy..",
+			"Охх, щекотно..",
+			"Хороший щеночек...",
 		])+"[/say]")
 		
 		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
@@ -216,8 +216,8 @@ func _run():
 		saynn("Ты решаешь, что оно того не стоит... и просто уходишь.")
 		
 		saynn("[say=npc2]"+RNG.pick([
-			"That's right, go away.",
-			"Yeah, go away.",
+			"Вот так, брысь отсюда.",
+			"Да, вали уже.",
 		])+"[/say]")
 		
 		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
@@ -234,9 +234,9 @@ func _run():
 		saynn("На "+whoStr+"кряхтит и падает на {npc2.his} колени перед твоим щенком... И прежде чем {npc2.he} успевает встать, {npc2.he} получает крепкий удар лбом!")
 		
 		saynn("[say=npc2]"+RNG.pick([
-			"Argh.. Fuck! Stupid mutt!.",
-			"I give up. Keep your stupid dog away!",
-			"Fine, whatever, go away.",
+			"Аргх.. Блять! Тупая псина!",
+			"Я сдаюсь. Держи свою дурацкую собаку подальше!",
+			"Ладно, плевать, проваливай.",
 		])+"[/say]")
 		
 		if(OPTIONS.isContentEnabled(ContentType.Watersports)):
@@ -245,9 +245,9 @@ func _run():
 			saynn("Вы посмеиваетесь, пока ваш щенок слегка бодает поверженного врага — в качестве финального акта полного унижения.")
 		
 		saynn("[say=npc2]"+RNG.pick([
-			"HEY! No! Bad!",
-			"Stop it, stupid pup!",
-			"What the fuck?!",
+			"ЭЙ! Нет! Плохая!",
+			"Прекрати, мелкий засранец!",
+			"Какого хуя?!",
 		])+"[/say]")
 		
 		saynn("Вы гладите своего щеночка и продолжаете свой путь.")
@@ -264,9 +264,9 @@ func _run():
 		saynn("Твой щеночек видит врага... и, к сожалению, слишком пугается, чтобы укусить {npc2.him}. Вместо этого, {npc.he} плюхается на пол и скулит, прикрывая {npc.himself} своими {npc.his} лапами. Похоже, {npc.he} всё ещё не помешало бы немного потренироваться...")
 		
 		saynn("[say=npc2]"+RNG.pick([
-			"Pff. Pathetic.",
-			"Hah. Couldn't even train your slutty mutt properly.",
-			"Bite me? Your pup knows better.",
+			"Пфф. Жалкое зрелище.",
+			"Хах. Даже свою шлюшковатую сучку толком дрессировать не смогла.",
+			"Укуси меня? Твой щенок знает, как надо.",
 		])+"[/say]")
 		
 		saynn("Похоже, назревает драка...")
@@ -282,18 +282,18 @@ func _run():
 		saynn("Ваш щенок с энтузиазмом виляет {npc.his} хвостом, когда "+whoStr+" гладит {npc.him}.")
 		
 		saynn("[say=npc2]"+RNG.pick([
-			"Who's a good puppy?",
-			"Who's a good {npc.boy}?",
-			"Adorable, precious puppy.",
-			"Look at you, so cute.",
+			"Кто у нас хороший песик?",
+			"Кто у нас хорошая {npc.boy}?",
+			"Прелестный, драгоценный щеночек.",
+			"Посмотри на себя, какая милашка.",
 		])+"[/say]")
 		
 		saynn("Ваш питомец игриво лает в ответ.")
 		
 		if(RNG.chance(40) && npc2.hasReachablePenis() && !npc.isOralBlocked()):
 			saynn("[say=npc2]"+RNG.pick([
-				"Wish I could test that little maw of yours.",
-				"Wish I could see how well you can treat a bone.",
+				"Эх, жаль, что я не могу проверить твою маленькую пасть на деле.",
+				"Интересно, как ловко ты умеешь грызть косточку.",
 			])+"[/say]")
 			
 			addButton("Просто уйти", "Смотреть, что будет дальше", "endthescene")
@@ -303,7 +303,7 @@ func _run():
 				addDisabledButton("Позволить им", "Требуется навык «Ласка» уровня B- или выше")
 		elif(RNG.chance(40) && npc2.hasReachableVagina() && !npc.isOralBlocked()):
 			saynn("[say=npc2]"+RNG.pick([
-				"Wish I could see how well you can lick.",
+				"Интересно, как хорошо ты умеешь лизать.",
 			])+"[/say]")
 			
 			addButton("Просто уйти", "Смотреть, что будет дальше", "endthescene")
@@ -322,9 +322,9 @@ func _run():
 		saynn("Ваш щеночек послушно разевает {npc.his} пасть и позволяет"+whoStr+"блядь, ебашь сырым.. прежде чем проглотить всю порцию целиком.")
 	
 		saynn("[say=npc2]"+RNG.pick([
-			"Oh yeah, that's a good slutty pet.",
-			"Swallow it all, cutie.",
-			"There we go. Such a nice mouth.",
+			"О да, хорошая шлюшковатая зверушка.",
+			"Глотай всё до капли, милашка.",
+			"Вот так. Какой славный ротик.",
 		])+"[/say]")
 		
 		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
@@ -337,10 +337,10 @@ func _run():
 		saynn("Твой щеночек послушно разевает {npc.his} пасть и позволяет..."+whoStr+"да в рот его ебать, прямо так.. прежде чем принять липкий груз на лицо {npc.his}.")
 	
 		saynn("[say=npc2]"+RNG.pick([
-			"Enjoy being messy, pup.",
-			"You like cum, don't you?",
-			"Oops, marked you with my cum.",
-			"You lick it off if you want.",
+			"Наслаждайся грязью, щенок.",
+			"Тебе ведь нравится сперма, правда?",
+			"Ой, пометил тебя своей кончой.",
+			"Можешь слизать её, если хочешь.",
 		])+"[/say]")
 		
 		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
@@ -353,10 +353,10 @@ func _run():
 		saynn("Твой щеночек послушно размыкает {npc.his} губы и высовывает {npc.his} язык, позволяя"+whoStr+"прижми {npc2.his} {npc2.pussyStretch} к нему. {npc2.He} втирается в морду твоего щенка... заливая {npc.his} лицо фонтаном смазки.")
 	
 		saynn("[say=npc2]"+RNG.pick([
-			"Enjoy being messy, pup.",
-			"That felt good, thank you pup.",
-			"Oops, marked you.",
-			"You have a nice tongue, puppy.",
+			"Наслаждайся грязью, щенок.",
+			"Было приятно, спасибо, щенок.",
+			"Ой, я тебя пометил.",
+			"А у тебя классный язычок, щеночек.",
 		])+"[/say]")
 		
 		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
@@ -378,8 +378,8 @@ func _run():
 		saynn("Черт возьми, "+whoStr+" валится на пол, не в силах продолжать бой.")
 		
 		saynn("[say=npc2]"+RNG.pick([
-			"Argh. Fuck you.",
-			"Screw you.",
+			"Аргх. Твою мать.",
+			"Да пошел ты.",
 		])+"[/say]")
 		
 		saynn("Похоже, твой щенок стал доверять тебе чуть больше после этого.")
@@ -392,8 +392,8 @@ func _run():
 		saynn("Блядь. Ты валишься на пол, не в силах продолжать бой.")
 		
 		saynn("[say=npc2]"+RNG.pick([
-			"Now take your mutt and go the fuck away.",
-			"Go away before I beat up your stupid dog too.",
+			"А теперь хватай свою псину и вали нахер отсюда.",
+			"Свали, пока я твою тупую собаку тоже не отлупила.",
 		])+"[/say]")
 		
 		saynn("Похоже, твой щенок стал доверять тебе чуть меньше после этого.")

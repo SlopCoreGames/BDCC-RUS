@@ -76,12 +76,12 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([
-		"Please, I need to feel you inside my pussy.",
-		"Fuck my pussy, I'm begging you.",
-		"I need your cock in my pussy so badly.",
-		"Use my pussy, it's yours to take.",
-		"I'll be so good for you, just please fuck my pussy.",
-		"Let me feel you deep inside my pussy, please.",
+		"Пожалуйста, мне нужно почувствовать тебя внутри своей киски.",
+		"Трахни мою киску, умоляю тебя.",
+		"Мне так сильно нужен твой член в моей киске.",
+		"Используй мою киску, она вся твоя.",
+		"Я буду такой послушной, только, пожалуйста, трахни мою киску.",
+		"Дай мне почувствовать тебя глубоко внутри моей киски, пожалуйста.",
 	])
 
 func getBegDomFetishes() -> Dictionary:

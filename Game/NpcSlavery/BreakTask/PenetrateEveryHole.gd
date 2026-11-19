@@ -65,10 +65,10 @@ func getTaskHint(_isSlaveLevelup):
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [
-		"All your holes need fucking. Don't come back until each one's been used.",
-		"Your holes should all be stretched by the time I see you.",
-		"Every hole of yours deserves some attention. Get them all fucked.",
-		"I want all your holes properly used before I find you."
+		"Все твои дырки должны быть оттраханы. Не возвращайся, пока каждую не используют.",
+		"К тому моменту, как я тебя увижу, все твои дырки должны быть растянуты.",
+		"Каждая твоя дырка заслуживает внимания. Пусть их все оттрахают.",
+		"Я хочу, чтобы все твои дырки были как следует использованы, прежде чем я тебя найду."
 	]
 
 func getTotalHoles(_npc):

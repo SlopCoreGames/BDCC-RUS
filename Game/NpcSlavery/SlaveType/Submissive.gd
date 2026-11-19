@@ -7,7 +7,7 @@ func getVisibleName():
 	return "Покорная"
 
 func getVisibleDesc():
-	return "Turn your slave into an obedient sub and get an ability to make them serve you"
+	return "Превратите своего раба в послушную сучку и получите способность заставлять её служить вам"
 
 func getEnslaveText(_npc):
 	return "[say=pc]You're gonna serve me, like a good {npc.boy}.[/say]"
@@ -16,37 +16,37 @@ func getEnslaveText(_npc):
 # 0  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15
 func getTrainText(_npc, _skillLevel):
 	if(_skillLevel == 0):
-		return "Your slave doesn’t know anything about the art of submission. So you start slowly, by explaining some of the basic things and seeing how {npc.he} reacts to it. The main thing that {npc.he} must realize.. is that {npc.he} doesn’t really have a choice.. but you’re not gonna tell {npc.him} that."
+		return "Ваш раб пока ничего не знает об искусстве подчинения. Поэтому вы начинаете медленно: объясняете основы и смотрите, как {npc.he} реагирует на это. Главное, что {npc.he} должна осознать... это то, что у {npc.he} на самом деле нет выбора... но вы не собираетесь говорить об этом {npc.him}."
 	if(_skillLevel == 1):
-		return "You explain to your slave that {npc.he} {npc.isAre} now your sub, your submissive. You explain that any sub’s purpose is.. serving. Serving their master, owner or mistress. Serving their dominant. Serving can take many forms, sexual or not. You explain that {npc.his} body belongs to you. Ideally, the mind should too."
+		return "Вы объясняете своему рабу, что {npc.he} {npc.isAre} теперь ваша сабмиссив, ваша покорная сучка. Вы объясняете, что цель любой сабмиссив — это... служение. Служение своему господину, хозяину или хозяйке. Служение своему доминанту. Служение может принимать разные формы, сексуальные или нет. Вы объясняете, что тело {npc.his} принадлежит вам. В идеале, разум тоже."
 	if(_skillLevel == 2):
-		return "You teach your slave how {npc.he} should present {npc.his} body to you. You tell {npc.him} that {npc.he} should stand completely still, hands by sides, gaze directed forward. You step around {npc.him}, making sure {npc.he} {npc.isAre} doing as told."
+		return "Вы учите своего раба тому, как {npc.he} должна преподносить {npc.his} тело вам. Вы говорите {npc.him}, что {npc.he} должна стоять совершенно неподвижно, руки по швам, взгляд направлен вперед. Вы обходите {npc.him} со всех сторон, проверяя, что {npc.he} {npc.isAre} делает всё, как ей велели."
 	if(_skillLevel == 3):
-		return "Most important thing about being a sub.. obeying. A sub only has to obey the words of a dom to be a good sub, listen to dom’s orders and do their best to fulfill them. Yes, a sub doesn’t have freedom. A normal kind of freedom. They have some different. You train your sub to see if they understand what you mean."
+		return "Самое важное в том, чтобы быть сабкой... это послушание. Чтобы быть хорошей сабкой, ей нужно лишь подчиняться словам домина, внимательно слушать его приказы и изо всех сил стараться их выполнять. Да, у сабки нет свободы. В обычном понимании. У них совсем другая свобода. Ты тренируешь свою сабку, чтобы проверить, понимает ли она, чего ты от неё хочешь."
 	if(_skillLevel == 4):
-		return "You teach your slave the most basic pose. Kneeling. It might be a simple gesture. But it shows so much. Lowering yourself to your knees is a symbol of a willingly exchanging power with the dom. You show your sub all the possible variations of kneeling too like Nadu and Humble."
+		return "Ты обучаешь свою рабыню самой базовой позе. Коленопреклонение. Это может показаться простым жестом, но он говорит о многом. Опуститься на колени — значит символически добровольно отдать свою власть доминанту. Ты также показываешь своей сабке все возможные вариации коленопреклонения, такие как Наду и Смиренная поза."
 	if(_skillLevel == 5):
-		return "You explain to your slave how much great BDSM gear there is around. Wearing it proudly is the sub's purpose. And the collar is the main piece of that. It shows that you belong to someone else. BDSM toys could be used to restrict.. but also to bring pleasure."
+		return "Ты объясняешь своей рабыне, как много вокруг существует великолепного БДСМ-снаряжения. Носить его с гордостью — вот истинное предназначение сабки. И ошейник — главный элемент этого. Он показывает, что ты принадлежишь кому-то другому. БДСМ-игрушки могут использоваться для ограничений... но также и для получения удовольствия."
 	if(_skillLevel == 6):
-		return "You feel like it's worth repeating the lesson that subs are here to serve the doms. But it’s not that simple, the doms also take responsibility to treat the sub fairly, to look after them. You train your sub by giving them lots of simple orders and seeing how well {npc.he} does them."
+		return "Тебе кажется, что стоит еще раз повторить урок: сабки здесь для того, чтобы служить доминантам. Но всё не так просто — доминанты также берут на себя ответственность относиться к сабке справедливо и заботиться о ней. Ты тренируешь свою сабку, давая ей множество простых команд и наблюдая за тем, насколько хорошо {npc.he} их выполняет."
 	if(_skillLevel == 7):
-		return "You teach your sub that BDSM is a balance of pleasure and pain. Rewards and punishments. Obeying and leading. And that sometimes a punishment can be a reward. Sometimes pain can bring pleasure. Suffering can feel good.. if you’re doing it for your owner. You test how much pain your sub is ready to endure for you."
+		return "Вы учите свою сабмиссивку тому, что БДСМ — это баланс удовольствия и боли. Награды и наказания. Повиновение и лидерство. И что иногда наказание может стать наградой. Иногда боль может приносить наслаждение. Страдание может быть приятным... если ты терпишь его ради своего хозяина. Вы проверяете, сколько боли твоя рабыня готова вынести ради тебя."
 	if(_skillLevel == 8):
-		return "You train your sub to receive humiliation better. Sometimes you will call your sub a whore or a dirty slutty fucktoy.. Sometimes you will spit on them, hurt them, degrade them, force them. Sometimes it's a just punishment that is designed to make the sub show what they did wrong. And sometimes, you will do it out of love."
+		return "Вы приучаете свою сабмиссивку лучше принимать унижения. Иногда вы будете называть её шлюхой или грязной сучкой-игрушкой... Иногда вы будете плевать в неё, причинять ей боль, унижать и принуждать. Иногда это будет просто наказание, призванное заставить её показать, в чем она провинилась. А иногда вы будете делать это из любви."
 	if(_skillLevel == 9):
-		return "You teach your sub to embrace the chains that they are wearing. You grab {npc.his} chain leash and parade {npc.him} around the cell, making sure {npc.he} {npc.isAre} catching up by tugging on the leash."
+		return "Вы учите свою сабмиссивку принимать цепи, которые на ней надеты. Вы хватаете {npc.his} цепь-поводок и выгуливаете {npc.him} по камере, следя за тем, чтобы {npc.he} {npc.isAre} едва поспевала за вами, подергивая за поводок."
 	if(_skillLevel == 10):
-		return "BDSM is not just about pain and chains. You show your sub that there is space and the right time for stuff like sex too. You train your sub by ordering {npc.him} to masturbate in front of you, making sure to control when and how {npc.he} cums. And if {npc.he} cums at all."
+		return "БДСМ — это не только боль и цепи. Вы показываете своей сабмиссивке, что для секса тоже есть место и подходящее время. Вы тренируете её, приказывая {npc.him} мастурбировать перед вами, тщательно контролируя, когда и как {npc.he} кончит. И кончит ли {npc.he} вообще."
 	if(_skillLevel == 11):
-		return "Today you give your slave another lesson in submission by making {npc.him} get on all fours and then act like your footrest. While you’re resting your legs on {npc.his} back, you explain {npc.him} that you can combine elements of degradation, humiliation and serving to tug on the most hidden sub’s strings."
+		return "Сегодня вы преподадите своему рабу очередной урок покорности: заставите {npc.him} встать на четвереньки и служить вам подставкой для ног. Пока вы отдыхаете, положив ноги на спину {npc.his}, вы объясняете {npc.him}, что сочетание унижения, деградации и служения позволяет зацепить самые сокровенные струны в душе сабмиссива."
 	if(_skillLevel == 12):
-		return "An even more humiliating lesson, you order your sub to kneel before you and then kiss your foot. You explain that a true submissive shouldn’t see this as something bad, for them it's just one way they can show their devotion to their owner."
+		return "Еще более унизительный урок: вы приказываете своему сабу опуститься перед вами на колени и поцеловать вашу стопу. Вы объясняете, что истинный подчиненный не должен видеть в этом ничего плохого — для него это лишь один из способов продемонстрировать преданность своему господину."
 	if(_skillLevel == 13):
-		return "After so many humiliating lessons, you decide to share a little secret with your sub. In a proper D/s relationship, the submissive is always in control. They are the one who decides how much of their freedom they are willingly to give away. And they are the one who can take it back at any point. And the fact that your sub has been doing all of that means that {npc.he} wants to be yours. Pain is pleasure. Humiliation is praise. Dirty words are compliments."
+		return "После стольких унизительных уроков вы решаете поделиться с сабом маленьким секретом. В правильных D/s отношениях контроль всегда остается за подчиненным. Именно он решает, какой частью своей свободы готов поступиться добровольно, и именно он может в любой момент забрать её обратно. И тот факт, что ваш саб делает всё это, означает, что {npc.he} хочет принадлежать вам. Боль — это удовольствие. Унижение — это похвала. Грязные слова — это комплименты."
 	if(_skillLevel == 14):
-		return "Today you just train your sub a little, giving {npc.him} orders and rewarding or punishing appropriately. During that, you tell {npc.him} that {npc.he} doesn’t need to think. All {npc.he} has to do is.. just obey. Follow your words and let them be {npc.his} chains and padlocks. While communication is the key."
+		return "Сегодня ты просто немного потренируешь свою сучку, отдавая {npc.him} приказы и вовремя поощряя или наказывая. В процессе ты внушаешь {npc.him}, что {npc.he} не нужно думать. Все, что должна делать {npc.he} — это просто подчиняться. Следовать твоим словам и позволять им стать {npc.his} цепями и замками. Ведь общение — это ключ ко всему."
 	if(_skillLevel == 15):
-		return "There is not much new you can teach your slave. {npc.He} {npc.isAre} pretty much a perfect submissive now! But you still go through some old lessons and practice the art of obedience with {npc.him}."
+		return "Твоему рабу уже почти нечему учиться. {npc.He} {npc.isAre} теперь практически идеальная подчиненная! Но ты всё равно повторяешь старые уроки, оттачивая искусство послушания вместе с {npc.him}."
 		
 	return .getTrainText(_npc, _skillLevel) 
 

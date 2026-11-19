@@ -35,11 +35,11 @@ func getTaskHint(_isSlaveLevelup):
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [
-		"Your ass needs some color. Go get it reddened.",
-		"Find someone to put handprints on your cheeks.",
-		"I want your ass sore and marked when I find you.",
-		"Your backside deserves some attention. Get it spanked hard.",
-		"Go get your ass slapped until it's nice and warm.",
+		"Твоей заднице не хватает красок. Иди и покраснь её.",
+		"Найди кого-нибудь, кто оставит отпечатки ладоней на твоих ягодицах.",
+		"Я хочу, чтобы когда я тебя нашел, твоя задница была саднившей и в отметинах.",
+		"Твой тыл заслуживает внимания. Иди и получи хорошую порцию шлепков.",
+		"Иди и пусть тебя шлепают, пока задница не станет приятно горячей.",
 	]
 
 func getSexGoalWeightModifier(_sexGoalID:String) -> float:

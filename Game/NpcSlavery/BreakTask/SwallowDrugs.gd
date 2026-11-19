@@ -43,8 +43,8 @@ func getTaskHint(_isSlaveLevelup):
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [
-		"Take whatever they give you and don't complain.",
-		"Swallow what you're offered, mhm?.",
-		"Swallow whatever pills they offer you.",
+		"Жри всё, что дают, и не смей ныть.",
+		"Проглатывай всё, что тебе предлагают, поняла?",
+		"Глотай любые таблетки, которые тебе подсовывают.",
 	]
 

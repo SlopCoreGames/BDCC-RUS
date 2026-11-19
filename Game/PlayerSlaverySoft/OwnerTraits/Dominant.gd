@@ -7,7 +7,7 @@ func getVisibleName() -> String:
 	return "Доминант"
 
 func getVisibleDescription() -> String:
-	return "The owner is extra dominant and will be more eager to lock the slave up."
+	return "Владелец проявляет сверхдоминантность и с особым рвением стремится запереть раба в клетке."
 
 func getPossiblePCNamesForLevel(_npcOwner, _level:int) -> Array:
 	if(_level <= 1):

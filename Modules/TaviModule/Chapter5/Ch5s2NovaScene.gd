@@ -831,7 +831,7 @@ func _run():
 		playAnimation(StageScene.SexStanding, "fast", {npc="nova", pc=npcID, pcCum=RNG.chance(50), npcCum=RNG.chance(50), bodyState={exposedCrotch=true,hard=true}, npcBodyState={naked=true, hard=true}})
 		saynn("Один из {npc.masc} подходит к Нове и, крепко схватив её, нагибает её через себя.")
 
-		saynn("[say=nova]"+str(RNG.pick(["E-easy..", "H-hey..", "W-watch it..", "L-let go.."]))+"[/say]")
+		saynn("[say=nova]"+str(RNG.pick(["E-easy..", "H-hey..", "О-осторожнее..", "О-отпусти.."]))+"[/say]")
 
 		saynn("Мощным толчком {npc.he} вгоняет {npc.his} {npc.penis} в киску Новы, проникая внутрь и заставляя её судорожно выдохнуть от наслаждения!")
 
@@ -839,7 +839,7 @@ func _run():
 
 		saynn("Спустя некоторое время заключенный кряхтит, прежде чем загнать {npc.his} член глубоко в Нову и излить {npc.his} семя в её ждущую матку, помечая её.")
 
-		saynn("[say=nova]"+str(RNG.pick(["F-Fuck!..", "B-bitch..", "I will f-fucking.. k-kh..", "S-stupid i-inmates..", "Not inside, you f-fuckers!.."]))+"[/say]")
+		saynn("[say=nova]"+str(RNG.pick(["F-Fuck!..", "B-bitch..", "Я вас, блядь.. кх..", "S-stupid i-inmates..", "Только не внутрь, ублюдки!.."]))+"[/say]")
 
 		saynn("{npc.He} оставляет отметину на заднице Новы после использования! Ты записал всё это на датапад!")
 
@@ -851,13 +851,13 @@ func _run():
 		playAnimation(StageScene.SexFreeStanding, "fast", {npc="nova", pc=npcID, pcCum=RNG.chance(50), npcCum=RNG.chance(50), bodyState={exposedCrotch=true,hard=true}, npcBodyState={naked=true, hard=true}})
 		saynn("Одна из доминантных заключенных хватает Нову и быстро берет контроль над её телом, вопреки её воле сгибая пухлую хаски и заламывая её лапы за спину.")
 
-		saynn("[say=nova]"+str(RNG.pick(["E-easy..", "H-hey..", "W-watch it..", "L-let go.."]))+"[/say]")
+		saynn("[say=nova]"+str(RNG.pick(["E-easy..", "H-hey..", "О-осторожнее..", "О-отпусти.."]))+"[/say]")
 
 		saynn("Секунду спустя, {npc.he} уже втискивает {npc.his} {npc.penis} в узкую, шлюшью киску Новы, после чего начинает безжалостно долбить её, с легкостью подавляя любое сопротивление.")
 
 		saynn("Последним мощным толчком заключенная кряхтит и кончает внутрь, {npc.his} семя заливает матку Новы, даже оставляя небольшой бугорок на её животе. Голос Новы дрожит от смеси гнева и уязвимости.")
 
-		saynn("[say=nova]"+str(RNG.pick(["F-Fuck!..", "B-bitch..", "I will f-fucking.. k-kh..", "S-stupid i-inmates..", "Not inside, you f-fuckers!.."]))+"[/say]")
+		saynn("[say=nova]"+str(RNG.pick(["F-Fuck!..", "B-bitch..", "Я вас, блядь.. кх..", "S-stupid i-inmates..", "Только не внутрь, ублюдки!.."]))+"[/say]")
 
 		saynn("Заключенная оставляет отметину на заднице Новы после использования! Ты записал всё на датапад!")
 
@@ -869,7 +869,7 @@ func _run():
 		playAnimation(StageScene.SexAllFours, "fast", {npc="nova", pc=npcID, pcCum=RNG.chance(50), npcCum=RNG.chance(50), bodyState={exposedCrotch=true,hard=true}, npcBodyState={naked=true, hard=true}})
 		saynn("Нова вздрагивает, когда одна из заключенных приближается к ней. Она изо всех сил пытается сопротивляться, но в итоге её одолевают и ставят на четвереньки, выпятив задницу.")
 
-		saynn("[say=nova]"+str(RNG.pick(["E-easy..", "H-hey..", "W-watch it..", "L-let go.."]))+"[/say]")
+		saynn("[say=nova]"+str(RNG.pick(["E-easy..", "H-hey..", "О-осторожнее..", "О-отпусти.."]))+"[/say]")
 
 		saynn("Одним резким движением заключенная устраивается {npc.himself} позади хаски, {npc.his} крепко сжимает её бедра, пока {npc.he} грубо проникает в неё сзади, {npc.his} {npc.penis} растягивая пизду Новы!")
 
@@ -879,7 +879,7 @@ func _run():
 
 		saynn("С первобытным рыком заключенный достигает пика {npc.his} желания, извергая {npc.his} семя прямо в утробу Новы, заполняя её до самых краев!")
 
-		saynn("[say=nova]"+str(RNG.pick(["F-Fuck!..", "B-bitch..", "I will f-fucking.. k-kh..", "S-stupid i-inmates..", "Not inside, you f-fuckers!.."]))+"[/say]")
+		saynn("[say=nova]"+str(RNG.pick(["F-Fuck!..", "B-bitch..", "Я вас, блядь.. кх..", "S-stupid i-inmates..", "Только не внутрь, ублюдки!.."]))+"[/say]")
 
 		saynn("Заключенная оставляет отметину на заднице Новы после использования! Ты записал всё на датапад!")
 
@@ -891,7 +891,7 @@ func _run():
 		playAnimation(StageScene.SexStanding, "fast", {npc="nova", pc=npcID, pcCum=RNG.chance(50), npcCum=RNG.chance(50), bodyState={exposedCrotch=true,hard=true}, npcBodyState={naked=true, hard=true}})
 		saynn("Один из {npc.masc} заключенных подходит к Нове. Хаски уже знает, чего хочет {npc.he}, поэтому она просто наклоняется для {npc.him} и упирается лапами в стену. Заключенный кладет {npc.his} руки на бедра Новы и наклоняет её еще ниже.")
 
-		saynn("[say=nova]"+str(RNG.pick(["E-easy..", "H-hey..", "D-don't be so rough..", "H-how much more..", "Don't b-break me..", "Fuck, I'm losing it.."]))+"[/say]")
+		saynn("[say=nova]"+str(RNG.pick(["E-easy..", "H-hey..", "Н-не будь таким грубым...", "Е-ещё сколько...", "Т-только не сломай меня...", "Блядь, я сейчас кончу..."]))+"[/say]")
 
 		saynn("Мощным толчком {npc.he} вгоняет {npc.his} {npc.penis} в киску Новы, проникая внутрь и заставляя её судорожно выдохнуть от наслаждения!")
 
@@ -899,7 +899,7 @@ func _run():
 
 		saynn("Спустя некоторое время заключенный кряхтит, прежде чем загнать {npc.his} член глубоко в Нову и излить {npc.his} семя в её ждущую матку, помечая её.")
 
-		saynn("[say=nova]"+str(RNG.pick(["F-Fuck!..", "So much..", "I will f-fucking.. k-kh.. Too much!..", "Y-you, i-inmates..", "Maybe s-stop doing it inside?.. W-who cares anymore I g-guess.."]))+"[/say]")
+		saynn("[say=nova]"+str(RNG.pick(["F-Fuck!..", "Так много...", "Я сейчас, блядь... кх... Слишком много!..", "Y-you, i-inmates..", "Может, х-хватит кончать внутрь?.. В-впрочем, уже похер..."]))+"[/say]")
 
 		saynn("{npc.He} оставляет отметину на заднице Новы после использования! Ты записал всё это на датапад!")
 
@@ -911,13 +911,13 @@ func _run():
 		playAnimation(StageScene.SexFreeStanding, "fast", {npc="nova", pc=npcID, pcCum=RNG.chance(50), npcCum=RNG.chance(50), bodyState={exposedCrotch=true,hard=true}, npcBodyState={naked=true, hard=true}})
 		saynn("Один из доминантных заключенных хватает Нову и быстро берет контроль над её телом, нагибая хаски и заламывая её лапы за спину. Кажется, она даже не пыталась сопротивляться.")
 
-		saynn("[say=nova]"+str(RNG.pick(["E-easy..", "H-hey..", "D-don't be so rough..", "H-how much more..", "Don't b-break me..", "Fuck, I'm losing it.."]))+"[/say]")
+		saynn("[say=nova]"+str(RNG.pick(["E-easy..", "H-hey..", "Н-не будь таким грубым...", "Е-ещё сколько...", "Т-только не сломай меня...", "Блядь, я сейчас кончу..."]))+"[/say]")
 
 		saynn("Секунду спустя {npc.he} уже вгоняет {npc.his} {npc.penis} в тесную, влажную киску Новы, после чего начинает безжалостно вколачивать его туда. Видно, как язык Новы высунут наружу, а изо рта течет слюна.")
 
 		saynn("Последним мощным толчком заключенный кряхтит и кончает внутрь; {npc.his} семя заливает ждущую утробу Новы, оставляя даже небольшой бугорок на её животе. Голос Новы дрожит от смеси отчаяния и беззащитности.")
 
-		saynn("[say=nova]"+str(RNG.pick(["F-Fuck!..", "So much..", "I will f-fucking.. k-kh.. Too much!..", "Y-you, i-inmates..", "Maybe s-stop doing it inside?.. W-who cares anymore I g-guess.."]))+"[/say]")
+		saynn("[say=nova]"+str(RNG.pick(["F-Fuck!..", "Так много...", "Я сейчас, блядь... кх... Слишком много!..", "Y-you, i-inmates..", "Может, х-хватит кончать внутрь?.. В-впрочем, уже похер..."]))+"[/say]")
 
 		saynn("Заключенная оставляет отметину на заднице Новы после использования! Ты записал всё на датапад!")
 
@@ -929,7 +929,7 @@ func _run():
 		playAnimation(StageScene.SexAllFours, "fast", {npc="nova", pc=npcID, pcCum=RNG.chance(50), npcCum=RNG.chance(50), bodyState={exposedCrotch=true,hard=true}, npcBodyState={naked=true, hard=true}})
 		saynn("Нова вздрагивает, когда к ней подходит одна из заключенных. Она знает, что будет, если не подчинится, поэтому просто послушно встает на четвереньки и выпячивает задницу, чтобы ее можно было схватить.")
 
-		saynn("[say=nova]"+str(RNG.pick(["Just.. e-easy..", "H-hey..", "D-don't be so rough..", "H-how much more..", "Don't b-break me..", "Fuck, I'm losing it.."]))+"[/say]")
+		saynn("[say=nova]"+str(RNG.pick(["Just.. e-easy..", "H-hey..", "Н-не будь таким грубым...", "Е-ещё сколько...", "Т-только не сломай меня...", "Блядь, я сейчас кончу..."]))+"[/say]")
 
 		saynn("Одним резким движением заключенная устраивается {npc.himself} позади хаски, {npc.his} крепко сжимает её бедра, пока {npc.he} грубо проникает в неё сзади, {npc.his} {npc.penis} растягивая пизду Новы!")
 
@@ -939,7 +939,7 @@ func _run():
 
 		saynn("С первобытным рыком заключенный достигает пика {npc.his} желания, извергая {npc.his} семя прямо в утробу Новы, заполняя её до самых краев!")
 
-		saynn("[say=nova]"+str(RNG.pick(["F-Fuck!..", "So much..", "I will f-fucking.. k-kh.. Too much!..", "Y-you, i-inmates..", "W-who cares anymore I g-guess.."]))+"[/say]")
+		saynn("[say=nova]"+str(RNG.pick(["F-Fuck!..", "Так много...", "Я сейчас, блядь... кх... Слишком много!..", "Y-you, i-inmates..", "К-кому теперь не плевать, похоже.."]))+"[/say]")
 
 		saynn("Заключенная оставляет отметину на заднице Новы после использования! Ты записал всё на датапад!")
 
@@ -951,7 +951,7 @@ func _run():
 		playAnimation(StageScene.SexCowgirl, "fast", {npc="nova", pc=npcID, pcCum=RNG.chance(50), npcCum=RNG.chance(50), bodyState={exposedCrotch=true,hard=true}, npcBodyState={naked=true, hard=true}})
 		saynn("Одна из заключенных тянет Нову к одной из скамей и усаживается. Шлюшливая хаски видит {npc.his} {npc.penis} и охотно усаживается сверху на {npc.him}, насаживаясь на {npc.his} член и позволяя ему входить в её потрёпанную киску!")
 
-		saynn("[say=nova]"+str(RNG.pick(["C'mon, let me feel that cock inside me already..", "Fuck that feels good..", "L-let me do this..", "What am I doing.. Fuck it.."]))+"[/say]")
+		saynn("[say=nova]"+str(RNG.pick(["Давай же, дай мне уже почувствовать твой член внутри..", "Блядь, как же хорошо..", "П-позволь мне это сделать..", "Что я творю.. Да к черту всё.."]))+"[/say]")
 
 		saynn("Резким движением бедер Нова насаживается на пульсирующий член заключенного и начинает на нем скакать.")
 
@@ -959,7 +959,7 @@ func _run():
 
 		saynn("Она быстро доводит заключенную под собой почти до самого оргазма. Ее собственное тело тоже напрягается, когда семя снова начинает вливаться в ее утробу... так много..")
 
-		saynn("[say=nova]"+str(RNG.pick(["T-there we go..", "Who is next..", "T-this slut wants more..", "Yes, cum inside me, you fucker..", "S-shit.. so much.."]))+"[/say]")
+		saynn("[say=nova]"+str(RNG.pick(["В-вот так..", "Кто следующий..", "Э-эта сучка хочет еще..", "Да, кончай в меня, ублюдок..", "Б-лядь.. так много.."]))+"[/say]")
 
 		saynn("{npc.He} оставляет отметину на заднице Новы после использования! Ты записал всё это на датапад!")
 
@@ -971,13 +971,13 @@ func _run():
 		playAnimation(StageScene.SexFullNelson, "fast", {npc="nova", pc=npcID, pcCum=RNG.chance(50), npcCum=RNG.chance(50), bodyState={exposedCrotch=true,hard=true}, npcBodyState={naked=true, hard=true}})
 		saynn("Один из заключенных хватает Нову и задирает ей ноги над полом, после чего сцепляет {npc.his} рук за её шеей, фиксируя здоровую сучку в положении «полный налсон»! Впрочем, шлюху это, кажется, ничуть не смущает — её похотливые глаза так и сияют.")
 
-		saynn("[say=nova]"+str(RNG.pick(["C'mon, let me feel that cock inside me already..", "Yes, fuck me raw!..", "Use me like the slut that I am..", "Fuck this slutty pussy!", "Breed this whore.. f-fuck.."]))+"[/say]")
+		saynn("[say=nova]"+str(RNG.pick(["Давай же, дай мне уже почувствовать твой член внутри..", "Да, трахай меня безжалостно!..", "Используй меня, как настоящую шлюху!..", "Трахни эту шлюшью киску!", "Оплодотвори эту шлюху... б-блядь..."]))+"[/say]")
 
 		saynn("Заключенный быстро пристраивает {npc.his} {npc.penis} к использованной, текущей киске Новы и с легкостью входит в нее, проникая глубоко! Грудь крупно стонет, пока ее беспомощное тело жестко трахают.")
 
 		saynn("Вскоре Нова кончает, её член извергает всё содержимое. В отличие от заключённой, которая, кряхтя, заталкивает в это жаждущее семени чрево ещё больше спермы.")
 
-		saynn("[say=nova]"+str(RNG.pick(["T-there we go..", "Who is next..", "T-this slut wants more..", "Yes, cum inside me, you fucker..", "S-shit.. so much.."]))+"[/say]")
+		saynn("[say=nova]"+str(RNG.pick(["В-вот так..", "Кто следующий..", "Э-эта сучка хочет еще..", "Да, кончай в меня, ублюдок..", "Б-лядь.. так много.."]))+"[/say]")
 
 		saynn("Заключенная оставляет отметину на заднице Новы после использования! Ты записал всё на датапад!")
 
@@ -989,13 +989,13 @@ func _run():
 		playAnimation(StageScene.SexMissionary, "fast", {npc="nova", pc=npcID, pcCum=RNG.chance(50), npcCum=RNG.chance(50), bodyState={exposedCrotch=true,hard=true}, npcBodyState={naked=true, hard=true}})
 		saynn("Нова наклоняется, когда одна из заключенных приближается к ней. Но вместо того, чтобы просто использовать Нову, {npc.he} вместо этого прижимает её к полу, а затем вжимает в него! {npc.He} затем задирает её ноги и засовывает {npc.his} {npc.penis} глубоко в её шлюшью, заезженную киску.")
 
-		saynn("[say=nova]"+str(RNG.pick(["Fuck, that feels good!..", "Yes, fuck me raw!..", "Use me like the slut that I am..", "Fuck this slutty pussy!", "Breed this whore.. f-fuck.."]))+"[/say]")
+		saynn("[say=nova]"+str(RNG.pick(["Блядь, как же хорошо!..", "Да, трахай меня безжалостно!..", "Используй меня, как настоящую шлюху!..", "Трахни эту шлюшью киску!", "Оплодотвори эту шлюху... б-блядь..."]))+"[/say]")
 
 		saynn("Нова громко стонет под натиском этой заключенной, её язык высунут и течет слюна, а глаза медленно закатываются. Вскоре её собственный член внезапно начинает пульсировать и извергать сперму прямо на её серый мех.")
 
 		saynn("Заключенная кряхтит, когда киска Новы так сильно сжимает {npc.his} член. Это легко доводит {npc.him} до края, заставляя {npc.him} начать заливать семенем её избитую щель, тяжело дыша и наполняя её утробу.")
 
-		saynn("[say=nova]"+str(RNG.pick(["T-there we go..", "Who is next..", "T-this slut wants more..", "Yes, cum inside me, you fucker..", "S-shit.. so much.."]))+"[/say]")
+		saynn("[say=nova]"+str(RNG.pick(["В-вот так..", "Кто следующий..", "Э-эта сучка хочет еще..", "Да, кончай в меня, ублюдок..", "Б-лядь.. так много.."]))+"[/say]")
 
 		saynn("Заключенная оставляет отметину на заднице Новы после использования! Ты записал всё на датапад!")
 
@@ -1280,7 +1280,7 @@ func _run():
 
 		saynn("[say=nova]В каком смысле?..[/say]")
 
-		saynn("Ты разворачиваешь датапад к ней. На экране отображается всё, что с ней происходило... куча фотографий, которые ты успел сделать, пока она была в весьма компрометирующем положении..."+str(" How you brought her to the edge with just your feet.." if didFeet else "")+""+str(" How Nova got gangbanged in this very room by many inmates.." if didGang else "")+""+str(" A recording of you fucking Nova and her moaning for you.." if didFuck else "")+""+str(" And obviously.. how you pissed all over her while she didn't even struggle that much.." if didPiss else "")+"")
+		saynn("Ты разворачиваешь датапад к ней. На экране отображается всё, что с ней происходило... куча фотографий, которые ты успел сделать, пока она была в весьма компрометирующем положении..."+str(" Как же ты довел её до края одними лишь ступнями..." if didFeet else "")+""+str(" Как Нову в этой самой комнате поимели толпой заключенных.." if didGang else "")+""+str(" Запись того, как ты трахаешь Нову, и её стоны для тебя.." if didFuck else "")+""+str(" И, само собой.. как ты обссасываешь её, а она даже особо не сопротивляется.." if didPiss else "")+"")
 
 		saynn("[say=nova]Н-нет.. нет.. нет-нет.. Нет!.. Верни его! Удали его!..[/say]")
 
@@ -1718,13 +1718,13 @@ func _react(_action: String, _args):
 	if(_action == "rough_knockout"):
 		processTime(3*60)
 		addExperienceToPlayer(50)
-		addMessage("Task updated!")
+		addMessage("Задача обновлена!")
 		setFlag("TaviModule.Ch5StoleDatapadFromNova", true)
 
 	if(_action == "rough_makebark_pin"):
 		processTime(3*60)
 		addExperienceToPlayer(50)
-		addMessage("Task updated!")
+		addMessage("Задача обновлена!")
 		setFlag("TaviModule.Ch5StoleDatapadFromNova", true)
 		setFlag("TaviModule.Ch5BlackmailedNova", true)
 
@@ -1787,7 +1787,7 @@ func _react(_action: String, _args):
 	if(_action == "bath_undress_nova"):
 		processTime(3*60)
 		setFlag("TaviModule.Ch5StoleDatapadFromNova", true)
-		addMessage("Task updated!")
+		addMessage("Задача обновлена!")
 		addExperienceToPlayer(100)
 
 	if(_action == "do_feet"):
@@ -1993,7 +1993,7 @@ func loadData(data):
 	gotFuckedByNova = SAVE.loadVar(data, "gotFuckedByNova", false)
 
 func getDevCommentary():
-	return "Nova is not my character so I find her tricky to write x3. She is kind and yet assertive. Playful but firm when the situation asks for it. She is also a mommy domme but no one knows about it yet cause I have to write that content..\n\nI liked how I handled Avy's final arena scene. I used that approach here. Basically a list of options that you can do with her. How is it better than doing it the normal way? Less writing that goes wasted x3. If you want, you can watch all the possible scenes without having to save-load. Or if you don't wanna bully Nova in any way, you can just do that too ^^.\n\nThere is a lot of branching in this scene btw x3. I dunno why I went so hard on it. Maybe I just enjoy bullying Nova? If you hand me your character and untie my hands, prepare to be bullied x3"
+	return "Нова — не мой персонаж, поэтому её бывает трудно прописывать x3. Она добрая, но при этом напористая. Игривая, но твердая, когда того требует ситуация. А еще она — мамкина доминантка, но об этом пока никто не знает, потому что мне еще нужно написать этот контент..\n\n Мне понравилось, как я реализовал финальную арену Авви. Здесь я использовал тот же подход. По сути, это список вариантов того, что ты можешь с ней сделать. Чем это лучше обычного способа? Меньше текста уходит впустую x3. Если хочешь, ты можешь посмотреть все возможные сцены, не прибегая к сохранениям и загрузкам. Ну или если ты не хочешь издеваться над Новой, ты можешь просто так и поступить ^^.\n\n Кстати, в этой сцене очень много развилок x3. Не знаю, зачем я так заморочился. Может, мне просто нравится издеваться над Новой? Если отдашь мне своего персонажа и развяжешь мне руки — готовься к тому, что тебя будут унижать x3"
 
 func hasDevCommentary():
 	return true

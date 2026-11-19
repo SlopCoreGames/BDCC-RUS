@@ -17,4 +17,4 @@ func getVisibleName():
 	return "Управление инвентарем"
 
 func getVisibleDesc():
-	return "Change what your slave is wearing"
+	return "Сменить одежду на рабыне"

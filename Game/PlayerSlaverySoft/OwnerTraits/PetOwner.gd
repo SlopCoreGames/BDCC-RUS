@@ -7,7 +7,7 @@ func getVisibleName() -> String:
 	return "Владелец питомца"
 
 func getVisibleDescription() -> String:
-	return "The owner likes to treat the slave as their pet."
+	return "Владельцу нравится обращаться с рабом как со своим домашним питомцем."
 
 func getPossiblePCNamesForLevel(_npcOwner, _level:int) -> Array:
 	if(_level <= 1):

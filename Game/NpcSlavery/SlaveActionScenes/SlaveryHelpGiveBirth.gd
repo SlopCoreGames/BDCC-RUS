@@ -65,7 +65,7 @@ func _run():
 
 			saynn("Только когда {npc.name} рожает последнего ребенка, глаза {npc.his} начинают сиять от слез облегчения и радости. Она ждет, пока акушерка бережно очистит ее дитя, а затем начинает баюкать одного из них в своих руках.")
 
-		saynn("[say=npc]"+str(RNG.pick(["Oh.. oh my.. so perfect.. Look at the tiny fingers and those little eyes.. So beautiful..", "Hi, mommy loves you more than words can express.. welcome to the world, my precious..", "I can't believe I brought this incredible life into existence.. I can't live without you already..", "I will do everything in my power to give you the life you deserve.."]))+"[/say]")
+		saynn("[say=npc]"+str(RNG.pick(["Ох... боже мой... какой идеальный... Посмотри на эти крошечные пальчики, на эти глазки... Какая красота...", "Привет, малыш... Мамочка любит тебя сильнее, чем можно выразить словами... Добро пожаловать в этот мир, моё сокровище...", "Не верится, что я подарила жизнь такому чудесному существу... Кажется, я уже не смогу без тебя дышать...", "Я сделаю всё возможное, чтобы дать тебе ту жизнь, которую ты заслуживаешь..."]))+"[/say]")
 
 		saynn("{npc.He} нежно целует младенца {npc.his} в лоб, пока ты стоишь рядом и улыбаешься.")
 

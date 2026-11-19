@@ -89,7 +89,7 @@ func getInfluence() -> float:
 
 func getExtraCategoryText() -> String:
 	var theText:String = "\n"
-	theText += "Level: "+str(level)+(" (max level)" if getLevel() >= getMaxLevel() else "")
+	theText += "Level: "+str(level)+(" (макс. уровень)" if getLevel() >= getMaxLevel() else "")
 	theText += "\nInfluence: "+str(Util.roundF(influence*100.0, 1))+"%"
 	return theText
 
@@ -124,7 +124,7 @@ func onLevelUp():
 	if(shouldPickNewNameOnLevelUp()):
 		pickNewName()
 	var newPCName:String = getPCName()
-	addMessage(getOwnerName()+"'s influence level over you has increased to '"+str(level)+"'!"+((" You are now a '"+newPCName+"'.") if newPCName != oldPCName else ""))
+	addMessage(getOwnerName()+"уровень влияния на тебя вырос до '"+str(level)+"'!"+((" Теперь ты — '"+newPCName+"'.") if newPCName != oldPCName else ""))
 	onNewLevelUnlockAnnounce()
 	
 # 0 1 2 3 4 5
@@ -135,13 +135,13 @@ func onLevelUp():
 # level 5 = ?
 func onNewLevelUnlockAnnounce():
 	if(level == 1):
-		addMessage("You can now ask your owner to have sex with you!")
+		addMessage("Теперь ты можешь просить своего хозяина заняться с тобой сексом!")
 	if(level == 2):
-		addMessage("You can now set sex limits for your owner in certain events!")
+		addMessage("Теперь ты можешь устанавливать секс-лимиты для своего хозяина в определенных событиях!")
 	if(level == 3):
-		addMessage("You can now pick the nickname that "+getOwnerName()+" will use to call you!")
+		addMessage("Теперь ты можешь выбрать прозвище, которое "+getOwnerName()+" будет использовать при обращении к тебе!")
 	if(level == 4):
-		addMessage("You can now pick how often "+getOwnerName()+" will approach you (check their Relationship talk menu)!")
+		addMessage("Теперь ты можешь выбрать, как часто "+getOwnerName()+" будет подходить к тебе (проверяй меню разговоров в отношениях)!")
 
 func shouldPickNewNameOnLevelUp() -> bool:
 	if(getLevel() <= 3):
@@ -260,7 +260,7 @@ func onNewDay():
 			punishAmount -= 1
 	
 	if(GM.main.getDays() == nextApproachDay):
-		GM.main.addMessage(getOwnerName()+", your owner, wants to approach you today.")
+		GM.main.addMessage(getOwnerName()+", твой хозяин, хочет подойти к тебе сегодня.")
 	
 	if(skipPunishCooldown > 0):
 		skipPunishCooldown -= 1
@@ -268,7 +268,7 @@ func onNewDay():
 	if(hasOwnerLock()):
 		if(keyholderSatisfaction < 1.0):
 			if(addInfluence(0.03 + getOwner().getPersonality().getStat(PersonalityStat.Subby)*0.02, false)):
-				GM.main.addMessage(getOwnerName()+"'s influence over you has increased slightly because of the restraints.")
+				GM.main.addMessage(getOwnerName()+"влияние на тебя немного усилилось из-за ограничений.")
 			
 	else:
 		keyholderSatisfaction = 0.0
@@ -361,13 +361,13 @@ func onSlutTaskCompleted(_theTask):
 	if(!tasksCompletedReminded && isEverythingCompleted()):
 		tasksCompletedReminded = true
 		if(GM.main != null):
-			GM.main.addMessage("You have completed the tasks that "+getOwnerName()+" gave you!")
+			GM.main.addMessage("Ты выполнил(а) задания, которые тебе "+getOwnerName()+" дали!")
 
 func onOwnerTaskCompleted(_theTask):
 	if(!ownerTasksCompletedReminded && isEveryOwnerTaskCompleted()):
 		ownerTasksCompletedReminded = true
 		if(GM.main != null):
-			GM.main.addMessage("You have completed the tasks that "+getOwnerName()+" gave you!")
+			GM.main.addMessage("Ты выполнил(а) задания, которые тебе "+getOwnerName()+" дали!")
 
 func handleSexEvent(sexEvent:SexEvent):
 	var theChar = GM.pc
@@ -497,23 +497,23 @@ func getTalkActions(_event) -> Array:
 	var result:Array = []
 	
 	if(!didInteractWithToday()):
-		result.append(talkAction("Submit", "Ask your owner to do something with you. You can only do this once per day. Removes 1 punishment point if you're doing it willingly.", "submit"))
-		result.append(talkAction("Attack!", "Try to get rid of your owner's influence.", "attack"))
+		result.append(talkAction("Submit", "Попроси хозяина что-нибудь с тобой сделать. Можно делать лишь раз в день. Если делаешь это по своей воле, снимается 1 очко наказания.", "submit"))
+		result.append(talkAction("Attack!", "Попытаться избавиться от влияния хозяина.", "attack"))
 	else:
 		result.append(talkActionDisabled("Submit", "Your owner doesn't feel like doing anything with you today anymore."))
 		result.append(talkActionDisabled("Attack!", "You have already interacted with your owner today."))
 	
-	result.append(talkAction("Ask freedom", "Ask your owner if they can let you go", "askFreedom"))
-	result.append(talkAction("Relationship", "See how your slavery relationship is progressing", "info"))
+	result.append(talkAction("Ask freedom", "Спросить хозяина, может ли он тебя отпустить,", "askFreedom"))
+	result.append(talkAction("Relationship", "Посмотреть прогресс ваших рабовладельческих отношений", "info"))
 	
 	if(getLevel() >= 1):
-		result.append(talkAction("Ask sex", "Ask your owner to fuck you!", "askSex"))
+		result.append(talkAction("Ask sex", "Попросить хозяина трахнуть тебя!", "askSex"))
 	if(getLevel() >= 3):
-		result.append(talkAction("Change name", "Ask your owner to change how they call you", "changeName"))
+		result.append(talkAction("Change name", "Попросить хозяина изменить то, как он тебя называет", "changeName"))
 	
 	if(hasOwnerLock()):
 		if(!didInteractWithToday()):
-			result.append(talkAction("Beg unlock", "Beg your owner to unlock you.", "begUnlock"))
+			result.append(talkAction("Beg unlock", "Умолять хозяина освободить тебя.", "begUnlock"))
 		else:
 			result.append(talkActionDisabled("Beg unlock", "You have already interacted with your owner today."))
 		
@@ -587,7 +587,7 @@ func checkNextApproachDay(_doAnnounce:bool = true):
 	if(nextApproachDay > GM.main.getDays()):
 		if(_doAnnounce):
 			var dayDiff:int = nextApproachDay - GM.main.getDays()
-			GM.main.addMessage(getOwnerName()+" will check on you in "+str(dayDiff)+" day"+("s" if dayDiff != 1 else ""))
+			GM.main.addMessage(getOwnerName()+" заглянет к тебе через "+str(dayDiff)+" day"+("s" if dayDiff != 1 else ""))
 
 func debugCanPickTraits() -> bool:
 	return false
@@ -613,7 +613,7 @@ func addKeyholderSatisfaction(_val:float, _announcesCanUnlock:bool = true):
 	keyholderSatisfaction += _val
 	keyholderSatisfaction = clamp(keyholderSatisfaction, 0.0, 1.0)
 	if(!wasReady && keyholderSatisfaction >= 1.0 && _announcesCanUnlock):
-		GM.main.addMessage(getOwnerName()+" is ready to unlock you.")
+		GM.main.addMessage(getOwnerName()+" готов(а) тебя освободить.")
 
 func checkReadyToUnlockOwnerLock() -> bool:
 	if(keyholderSatisfaction >= 1.0):

@@ -69,6 +69,6 @@ func _react(_action: String, _args):
 
 	if(_action == "explain_stuff"):
 		processTime(5*60)
-		addMessage("Task updated!")
+		addMessage("Задача обновлена!")
 
 	setState(_action)

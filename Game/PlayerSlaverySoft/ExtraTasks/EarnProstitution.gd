@@ -49,10 +49,10 @@ func getTaskStringSlutLock():
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [
-		"It's time for you to earn your keep. I want you to earn credits by selling your body.",
-		"Your body is my business. Get out there and start earning credits by selling your holes.",
-		"Time to make you work your body. Start earning credits by whoring your body out.",
-		"Put that slutty body to work and earn some credits.",
+		"Пора тебе отрабатывать свое содержание. Хочу, чтобы ты зарабатывала кредиты, продавая свое тело.",
+		"Твое тело — мой бизнес. Выметайся отсюда и начинай копить кредиты, продавая свои дырки.",
+		"Пора заставить твое тело работать. Начинай зарабатывать кредиты, промышляя шлюховством.",
+		"Заставь это шлюшье тело работать и заработай немного кредитов.",
 	]
 #
 #func getSexGoalWeightModifier(_sexGoalID:String) -> float:

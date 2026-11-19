@@ -649,11 +649,11 @@ func getDebugActions():
 	return [
 		{
 			"id": "setLevel",
-			"name": "Set level",
+			"name": "Установить уровень",
 			"args": [
 				{
 					"id": "level",
-					"name": "Level",
+					"name": "Уровень",
 					"type": "number",
 					"value": 5,
 				},
@@ -661,11 +661,11 @@ func getDebugActions():
 		},
 		{
 			"id": "addInfluence",
-			"name": "Add influence",
+			"name": "Добавить влияние",
 			"args": [
 				{
 					"id": "howMuch",
-					"name": "How much",
+					"name": "Сколько?",
 					"type": "number",
 					"value": 50,
 				},
@@ -673,29 +673,29 @@ func getDebugActions():
 		},
 		{
 			"id": "resetPunish",
-			"name": "Reset punishment counter",
+			"name": "Сбросить счетчик наказаний",
 			"args": [
 			],
 		},
 		{
 			"id": "endEvent",
-			"name": "End event",
+			"name": "Завершить событие",
 			"args": [
 			],
 		},
 		{
 			"id": "stopSoftSlavery",
-			"name": "Stop soft slavery",
+			"name": "Остановить мягкое рабство",
 			"args": [
 			],
 		},
 		{
 			"id": "runEvent",
-			"name": "Run event",
+			"name": "Запустить событие",
 			"args": [
 				{
 					"id": "event",
-					"name": "Event",
+					"name": "Событие",
 					"type": "list",
 					"value": allEventsWithNames[0][0] if allEventsWithNames.size() > 0 else "",
 					"values": allEventsWithNames,
@@ -718,7 +718,7 @@ func doDebugAction(_id, _args = {}):
 			getRunner().eventStack.append(someEvent)
 			someEvent.involveOwner()
 		else:
-			GM.main.addMessage("Failed to start the event")
+			GM.main.addMessage("Не удалось начать событие")
 	if(_id == "setLevel"):
 		var theNpcOwner := getNpcOwner()
 		if(theNpcOwner):
@@ -731,7 +731,7 @@ func doDebugAction(_id, _args = {}):
 		var theNpcOwner := getNpcOwner()
 		if(theNpcOwner):
 			theNpcOwner.punishAmount = 0
-		GM.main.addMessage("Punishment counter reset to 0")
+		GM.main.addMessage("Счетчик наказаний сброшен на 0")
 	if(_id == "stopSoftSlavery"):
 		var theNpcOwner := getNpcOwner()
 		if(theNpcOwner):

@@ -15,7 +15,7 @@ func getVisibleName():
 	return "Массаж"
 
 func getVisibleDesc():
-	return "Give your slave a back massage as a reward"
+	return "Сделайте рабу массаж спины в качестве награды"
 
 func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var character:DynamicCharacter = GlobalRegistry.getCharacter(_slaveID)
@@ -24,21 +24,21 @@ func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var text = "Вы приказываете {npc.name} лечь, а затем делаете {npc.him} нежный массаж спины — отличная награда за {npc.his} старания.\n\n"
 	
 	if(npcSlavery.getDespair() > 0.8):
-		text += "{npc.HeShe} remains passive, showing no interest in the massage. Or anything really.."
+		text += "{npc.HeShe} остается пассивной, не проявляя никакого интереса к массажу. Впрочем, как и ко всему остальному.."
 	elif(npcSlavery.getSpoiling() > 0.7):
-		text += "As you massage, {npc.heShe} points out flaws and insists on adjustments, expecting a perfect experience."
+		text += "Пока ты делаешь массаж, {npc.heShe} указывает на недостатки и требует корректировок, ожидая идеального исполнения."
 	elif(npcSlavery.isResistingSuperActively() && !character.hasBoundArms()):
-		text += "{npc.HeShe} tenses up under your touch. Eventually you hear an audible sigh of irritation followed by {npc.him} pulling away abruptly."
+		text += "{npc.HeShe} напрягается под твоими руками. В конце концов ты слышишь отчетливый вздох раздражения, а затем {npc.him} резко отстраняется."
 	elif(npcSlavery.isResistingSuperActively()):
-		text += "{npc.HeShe} tenses up under your touch. Eventually you hear an audible sigh of irritation followed by {npc.him} trying to pull away. The restraints keep {npc.him} still for you though."
+		text += "{npc.HeShe} напрягается под твоими прикосновениями. В конце концов, ты слышишь отчетливый вздох раздражения, а затем {npc.him} пытается отстраниться. Однако путы удерживают {npc.him} на месте."
 	elif(npcSlavery.isActivelyResisting()):
-		text += "Though initially resistant, {npc.his} rigid posture gradually softens under your touch. {npc.HeShe} doesn't protest, but a subtle tension remains."
+		text += "Пусть поначалу {npc.his} и сопротивляется, но под твоими руками её напряженная поза постепенно смягчается. {npc.HeShe} не протестует, но едва уловимое напряжение всё еще ощущается."
 	elif(npcSlavery.rewardBalance <= 0):
-		text += "Despite being confused, {npc.heShe} expresses gratitude for the massage, offering a soft smile."
+		text += "Несмотря на замешательство, {npc.heShe} выражает благодарность за массаж, мягко улыбаясь."
 	elif(npcSlavery.getObedience() > 0.5 || npcSlavery.getLove() > 0.5 || npcSlavery.getBrokenSpirit() > 0.5):
-		text += "Closing {npc.his} eyes, {npc.heShe} leans into your touch, appreciating the tenderness of the massage. A soft sigh escapes {npc.him}, expressing gratitude for the moment of care."
+		text += "Прикрыв {npc.his} глаза, {npc.heShe} подается навстречу твоим рукам, наслаждаясь нежностью массажа. Тихий вздох срывается с {npc.him}, выражая благодарность за этот момент заботы."
 	else:
-		text += "{npc.HeShe} remains indifferent to the massage, neither resisting nor welcoming the touch."
+		text += "{npc.HeShe} остается равнодушной к массажу, не сопротивляясь и не приветствуя прикосновения."
 	
 	npcSlavery.handleReward(3)
 	npcSlavery.addTired(-0.8)

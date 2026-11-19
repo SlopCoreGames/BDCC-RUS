@@ -12,14 +12,14 @@ func getVisibleName():
 	return "Рассмотреть поближе"
 
 func getVisibleDesc():
-	return "Get a better look on them"
+	return "Рассмотреть получше"
 
 func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var npcSlavery = getSlave(_slaveID)
 	var npc = npcSlavery.getChar()
 	
 	var theTexts = []
-	theTexts.append("You decide to get a better look at {npc.name}.")
+	theTexts.append("Вы решаете получше рассмотреть {npc.name}.")
 	
 	var persTexts = []
 	persTexts.append("[b]Personality:[/b]")
@@ -34,7 +34,7 @@ func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	theTexts.append(Util.join(persTexts, "\n"))
 
 	var likesTexts = []
-	likesTexts.append("[b]Likes/dislikes:[/b] (That you have discovered)")
+	likesTexts.append("[b]Что нравится/не нравится:[/b] (Как вы выяснили)")
 	var enemyLustInterests = npc.getLustInterests()
 	if(!enemyLustInterests.hasAnyInterests()):
 		likesTexts.append("- None")
@@ -46,7 +46,7 @@ func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 				var topic = GlobalRegistry.getLustTopic(topicID)
 				likesTexts.append("- {npc.name} [color="+Interest.getColorString(whatPlayerKnows[topicID])+"]" + Interest.getVisibleName(whatPlayerKnows[topicID])+"[/color] seeing "+str(topic.getVisibleName(topicID)))
 		else:
-			likesTexts.append("- Nothing yet")
+			likesTexts.append("- Пока ничего")
 	theTexts.append(Util.join(likesTexts, "\n"))
 
 	var fetishTexts = []

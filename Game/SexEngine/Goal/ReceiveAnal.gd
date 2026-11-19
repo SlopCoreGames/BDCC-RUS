@@ -63,14 +63,14 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([
-		"I need to feel you on top of me, riding my cock. Doesn't that sound fun?",
-		"You should really straddle my cock. I need to feel your tight walls wrapped around me.",
-		"Please, I need you to fuck your tailhole on my cock. I need it so bad.",
-		"I'm yours. Please, take me and ride me with your ass, I'm begging you.",
-		"Don't make me wait, just slide your tailhole down onto my cock and ride me.",
-		"I'll be so good for you, just let me feel you riding me with your ass.",
-		"Your ass is all I can think about. Don't wanna ride my cock?",
-		"Claim my cock, please. Ride me with your tailhole and make me yours completely.",
+		"Мне нужно чувствовать тебя сверху, когда ты скачешь на моем члене. Разве это не звучит весело?",
+		"Тебе стоит сесть на мой член верхом. Мне нужно чувствовать, как твои тугие стенки обхватывают меня.",
+		"Пожалуйста, мне нужно, чтобы ты насаживалась на мой член своей анусной дыркой. Я так этого хочу.",
+		"Я весь твой. Пожалуйста, возьми меня и оседлай на задницу, умоляю тебя.",
+		"Не заставляй меня ждать, просто насади свою дырку на мой член и скачи на мне.",
+		"Я буду таким послушным для тебя, просто дай мне почувствовать, как ты скачешь на мне своей задницей.",
+		"Твоя задница — это всё, о чем я могу думать. Не хочешь оседлать мой член?",
+		"Завладей моим членом, пожалуйста. Оседлай меня своей дыркой и сделай меня полностью своим.",
 	])
 
 func getBegDomFetishes() -> Dictionary:

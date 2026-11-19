@@ -91,7 +91,7 @@ func _react(_action: String, _args):
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		npcSlavery.setMainSkill(_args[0])
 		setState("")
-		addMessage("Main skill changed!")
+		addMessage("Основной навык изменен!")
 		return
 		
 	if(_action == "learn_new"):
@@ -99,7 +99,7 @@ func _react(_action: String, _args):
 		npcSlavery.learnNewSkill(_args[0])
 		npcSlavery.setMainSkill(_args[0])
 		setState("")
-		addMessage("Your slave has learned a new skill!")
+		addMessage("Твоя рабыня освоила новый навык!")
 		return
 		
 	setState(_action)

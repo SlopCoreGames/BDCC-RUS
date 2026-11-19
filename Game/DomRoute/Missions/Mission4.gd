@@ -3,7 +3,7 @@ extends MissionBase
 func _init():
 	id = "Mission4"
 	name = "Гамбит Куинн"
-	desc = "It's time to figure out how are you gonna get your hands on Eliza Quinn, the chemist doctor."
+	desc = "Пора придумать, как тебе добраться до Элизы Куинн, врача-химика."
 	
 	startScene = "DomM4s1Intro"
 	requiredMissions = ["Mission3"]
@@ -23,16 +23,16 @@ func _init():
 					effects = [
 						DECISION_EFFECT_AVY_OBEDIENCE,
 					],
-					kaitLine = "Got my uniform back. I almost caught Eliza myself. But yeah, she was ready for me.",
-					avyLine = "That bitch got what she deserved. I guess both of them did.",
+					kaitLine = "Форму вернули. Я чуть было не поймал Элизу сам. Но да, она была к этому готова.",
+					avyLine = "Эта сука получила по заслугам. Думаю, обе они заслужили.",
 				},
 				"avy": {
 					text = "Поблагодарить Эви",
 					effects = [
 						DECISION_EFFECT_KAIT_OBEDIENCE,
 					],
-					kaitLine = "Got my uniform back. I almost caught Eliza myself. But yeah.. I overextended a bit too much.",
-					avyLine = "That bitch got what she deserved. The nerd one.",
+					kaitLine = "Форму вернули. Я чуть было не поймал Элизу сам. Но да... я немного перегнул палку.",
+					avyLine = "Эта сука получила по заслугам. Та, что задротка.",
 				},
 			},
 		}
@@ -48,10 +48,10 @@ func onMissionStart():
 func getObjectives() -> Array:
 	var result:Array = []
 	
-	result.append("You were talking with Ferri when Avy approached you, saying that Kait is missing.")
-	result.append("Find Kait, she must be somewhere in the medical wing.")
+	result.append("Ты болтал с Ферри, когда к тебе подошла Эви и сказала, что Кейт пропала.")
+	result.append("Найди Кейт, она должна быть где-то в медицинском крыле.")
 	if(getFlag("t", false)):
-		result.append("A weird cat has told you that Kait could be somewhere in the mental ward.")
+		result.append("Какой-то странный кот нашептал тебе, что Кейт может быть где-то в психиатрическом отделении.")
 #	if(getFlag("s2", false)):
 #		result.append("The storage room is locked! You need to find a working badge somewhere near the showers of the medical wing!")
 #	if(getFlag("s3", false)):
@@ -97,9 +97,9 @@ func onSimpleScene(_eventID:String, _args:Array, _scene):
 
 func getEventSceneLoc(_loc:String) -> Array:
 	if(_loc == "med_staffonly_door1"):
-		return ["MissionSimpleScene", ["You won't be able to enter this area again if you leave. So you don't.", "roomleaveleft", []]]
+		return ["MissionSimpleScene", ["Если ты уйдешь, то больше не сможешь попасть в эту зону. Так что ты остаешься.", "roomleaveleft", []]]
 	if(_loc == "med_staffonly_door2"):
-		return ["MissionSimpleScene", ["You won't be able to enter this area again if you leave. So you don't.", "roomleaveright", []]]
+		return ["MissionSimpleScene", ["Если ты уйдешь, то больше не сможешь попасть в эту зону. Так что ты остаешься.", "roomleaveright", []]]
 	
 	if(!getFlag("t", false)):
 		if(_loc == "med_corridor16" || _loc == "med_near_wards"):

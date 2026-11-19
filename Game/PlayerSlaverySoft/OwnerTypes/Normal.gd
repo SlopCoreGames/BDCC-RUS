@@ -72,7 +72,7 @@ func addRandomTrait(_announce:bool = true) -> bool:
 	var thePickedTrait:NpcOwnerTraitBase = RNG.pickWeightedPairs(possible)
 	traits.append(thePickedTrait.id)
 	if(_announce):
-		addMessage(getOwnerName()+" has gained a new owner trait: '"+thePickedTrait.getVisibleName()+"'")
+		addMessage(getOwnerName()+" получил новую черту владельца: '"+thePickedTrait.getVisibleName()+"'")
 	return true
 
 func addRandomTraitChecked(_announce:bool = true) -> bool:

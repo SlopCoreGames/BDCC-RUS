@@ -15,7 +15,7 @@ func getVisibleName():
 	return "Сибиан"
 
 func getVisibleDesc():
-	return "Let your slave experience a powerful orgasm by making them sit on a sybian"
+	return "Позвольте своей рабыне испытать мощнейший оргазм, усадив её на сибиан"
 
 func checkCanDo(_slaveID, _extraSlavesIDs = {}):
 	if(!getFlag("NpcSlaveryModule.hasSybian", false)):
@@ -30,28 +30,28 @@ func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var text = "Ты ведешь {npc.name} к машине-сибиану и пристегиваешь {npc.him} к ней, после чего включаешь вибрацию на максимум — награда за {npc.his} великие старания.\n\n"
 	
 	if(npcSlavery.getDespair() > 0.8):
-		text += "Even though the vibrations are extremely powerful, {npc.heShe} exhibits a passive response, showing no enthusiasm for the experience."
+		text += "Несмотря на невероятную силу вибрации, {npc.heShe} реагирует пассивно, не выказывая особого энтузиазма."
 	elif(npcSlavery.getSpoiling() > 0.7):
-		text += "But even that setting doesn't seem to be enough, your slave demanding even more pleasure."
+		text += "Но даже этого режима, кажется, недостаточно — ваша рабыня требует еще больше наслаждения."
 	elif(npcSlavery.isResistingSuperActively()):
-		text += "With a visible struggle, {npc.heShe} attempts to dismount the sybian. But you are quick to put {npc.him} back, {npc.his} crotch pressed snuggly against the vibrating elements."
+		text += "Заметно борясь, {npc.heShe} пытается слезть с сибиана. Но вы быстро усаживаете {npc.him} обратно, плотно прижимая {npc.his} промежность к вибрирующим элементам."
 	elif(npcSlavery.isActivelyResisting()):
-		text += "Tension builds in {npc.his} body as the sybian activates. Though reluctant at first, {npc.heShe} succumbs to the overwhelming sensations, the undeniable pleasure overtakes {npc.his} resistance."
+		text += "Тело {npc.his} напрягается, когда сибиан включается. Хотя поначалу {npc.heShe} сопротивляется, она поддается всепоглощающим ощущениям — неоспоримое удовольствие берет верх над {npc.his} волей."
 	#elif(npcSlavery.rewardBalance <= 0):
 	#	text += ""
 	elif(npcSlavery.getObedience() > 0.5 || npcSlavery.getLove() > 0.5 || npcSlavery.getBrokenSpirit() > 0.5):
-		text += "{npc.HeShe} eagerly complies, settling onto the sybian with anticipation. A shiver of excitement courses through {npc.his} body as the device comes to life. {npc.HeShe} moans passionately, {npc.his} crotch pressed firmly against the vibrating elements."
+		text += "{npc.HeShe} с готовностью подчиняется, с предвкушением усаживаясь на сибиан. По телу {npc.his} пробегает дрожь возбуждения, когда устройство оживает. {npc.HeShe} страстно стонет, плотно прижавшись {npc.his} промежностью к вибрирующим элементам."
 	else:
-		text += "{npc.His} eyes flicker with uncertainty, but as the vibrations begin, {npc.heShe} succumbs to the overwhelming sensations. Though reluctant at first, the undeniable pleasure overtakes {npc.his} resistance."
+		text += "В глазах {npc.His} мелькает неуверенность, но как только начинается вибрация, {npc.heShe} поддается всепоглощающим ощущениям. Несмотря на первоначальное нежелание, неоспоримое удовольствие берет верх над {npc.his} сопротивлением."
 	
 	if(character.hasReachableVagina()):
-		text += " Soon, {npc.his} body experiences a powerful orgasm, {npc.his} {pussy} releasing a shower of transparent fluids."
+		text += " Вскоре тело {npc.his} охватывает мощный оргазм, {npc.his} {pussy} извергается потоком прозрачной смазки."
 	elif(character.isWearingChastityCage()):
-		text += " Soon, {npc.his} body experiences a powerful orgasm, {npc.his} locked away {penis} shooting a few weak spurts of {npc.cum} through the small hole of the chastity cage."
+		text += " Вскоре тело {npc.his} охватывает мощный оргазм, {npc.his} запертая {penis} выдавливает несколько слабых струек {npc.cum} сквозь маленькое отверстие девственной клетки."
 	elif(character.hasReachablePenis()):
-		text += " Soon, {npc.his} body experiences a powerful orgasm, {npc.his} {npc.penis} throbbing and shooting long strings of {npc.cum}."
+		text += " Вскоре тело {npc.his} охватывает мощный оргазм, {npc.his} {npc.penis} пульсирует, выбрасывая длинные нити {npc.cum}."
 	else:
-		text += " Soon, {npc.his} body experiences a powerful orgasm, squirming and shivering a lot."
+		text += " Вскоре тело {npc.his} охватывает мощный оргазм, заставляя её сильно извиваться и дрожать."
 	
 	character.orgasmFrom("pc")
 	npcSlavery.handleReward(4)

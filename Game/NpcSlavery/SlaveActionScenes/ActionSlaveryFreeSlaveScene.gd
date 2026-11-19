@@ -40,15 +40,15 @@ func _run():
 		
 		if(npcSlavery.isActivelyResisting()):
 			saynn("[say=pc]"+RNG.pick([
-				"You're free. Go away.",
-				"I'm fed up with you. You can leave.",
-				"You're free. Go. Before I change my mind.",
-				"Go away. You're no longer a slave.",
+				"Ты свободна. Проваливай.",
+				"Ты мне осточертела. Можешь идти.",
+				"Ты свободна. Иди. Пока я не передумал.",
+				"Уходи. Ты больше не рабыня.",
 			])+"[/say]")
 		else:
 			saynn("[say=pc]"+RNG.pick([
-				"You can go. You are now free.",
-				"I decided to release you. You can go.",
+				"Можешь идти. Теперь ты свободна.",
+				"Я решил тебя отпустить. Свободна.",
 			])+"[/say]")
 		
 		if(npcSlavery.isMindBroken()):
@@ -61,45 +61,45 @@ func _run():
 			saynn("Вскоре приходят несколько медсестер и уводят {npc.name} куда-то прочь...")
 		elif(npcSlavery.isResistingSuperActively()):
 			saynn("[say=npc]"+RNG.pick([
-				"Really? I won't thank you. In fact, you know what? Fuck you.",
-				"You shouldn't messed with me in the first place."
+				"Серьезно? Не жди благодарности. Вообще-то, знаешь что? Пошел ты нахуй.",
+				"Тебе вообще не стоило со мной связываться."
 			])+"[/say]")
 		
 			saynn("{npc.name} показывает тебе средний палец.. и быстро уходит.")
 		elif(npcSlavery.hasSubmittedToPC()):
 			saynn("[say=npc]"+RNG.pick([
-				"Um. But I belong to you. You're serious? I'm not sure what to do now..",
-				"Are you serious? But.. I was just getting used.. to being yours..",
-				"Oh. But I.. What am I gonna do when there is no longer a leash to guide me?",
-				"But.. what if I kinda liked being on a leash?",
-				"I.. I don't know what to say. Thank you? But also, why now? I got kinda used to serving you. It's going to take some time to adjust back to living on my own..",
-				"I.. I don't think I'm ready for this. Being with you has become my whole world. What am I supposed to do now? I'll miss you.. More than you'll ever know.",
+				"Эм... Но ведь я принадлежу тебе. Ты серьезно? Я даже не знаю, что теперь делать...",
+				"Ты серьезно? Но... я ведь только начала привыкать... быть твоей...",
+				"Ох... Но я... Что же мне делать, когда поводок, ведущий меня, исчезнет?",
+				"Но... что, если мне, в каком-то смысле, даже нравилось быть на поводке?",
+				"Я... я даже не знаю, что сказать. Спасибо? Но почему именно сейчас? Я ведь уже привыкла служить тебе. Мне понадобится время, чтобы снова научиться жить самостоятельно...",
+				"Я... не думаю, что готова к этому. Жизнь с тобой стала для меня целым миром. И что мне теперь делать? Я буду скучать по тебе... Сильнее, чем ты можешь себе представить.",
 			])+"[/say]")
 			
 			saynn("Твоя рабыня.. бывшая рабыня.. опускает {npc.his} голову.. когда ты отходишь.")
 		elif(npcSlavery.getLove() > 0.95):
 			saynn("[say=npc]"+RNG.pick([
-				"But.. I love you.. You can't be serious..",
-				"Really?.. I had feeling for you, you know.. And now you betray me like that?",
-				"Seriously? You're just letting me go like that? After all we've been through? I don't know whether to feel relieved or hurt. But I guess it doesn't matter now. Goodbye.",
-				"You're setting me free? But what about our bond? Our connection? I thought we had something special. I guess I was wrong. Farewell.",
-				"You're actually letting me go? Well, don't expect me to be grateful. I'm done with you",
+				"Но... я ведь люблю тебя... Ты ведь не шутишь?..",
+				"Серьезно?.. А ведь я чувствовала к тебе нечто особенное... И теперь ты вот так меня предаешь?",
+				"Серьезно? Ты просто вот так меня отпускаешь? После всего, через что мы прошли? Даже не знаю, что чувствовать — облегчение или боль. Но, наверное, сейчас это уже не важно. Прощай.",
+				"Ты даруешь мне свободу? Но как же наша связь? Наша близость? Я думала, между нами есть что-то особенное. Видимо, я ошибалась. Прощай.",
+				"Ты и правда меня отпускаешь? Ну, не жди, что я буду тебе благодарна. С тебя хватит.",
 			])+"[/say]")
 			
 			saynn("Твоя бывшая рабыня дрыгает задом и уходит прочь.")
 		elif(npcSlavery.getObedience() > 0.5 || npcSlavery.getLove() > 0.5 || npcSlavery.getBrokenSpirit()):
 			saynn("[say=npc]"+RNG.pick([
-				"So this is it, then? You're just letting me go? After all the time we've spent together? I don't know whether to be relieved or heartbroken. But I suppose it doesn't matter now. Farewell",
-				"Um. But I belong to you. You're serious? I'm not sure what to do now.. It's strange to think of life without you, but part of me is relieved. I'll miss you, but I'll also be glad to finally be my own person again",
+				"Так вот и всё? Ты просто меня отпускаешь? После всего времени, что мы провели вместе? Не знаю, радоваться мне или сердце разрывается. Но, полагаю, теперь это уже не имеет значения. Прощай.",
+				"Эм... Но ведь я принадлежу тебе. Ты серьезно? Даже не знаю, что теперь делать... Странно думать о жизни без тебя, но в глубине души я чувствую облегчение. Буду скучать, но также буду рада наконец-то снова стать самой собой.",
 			])+"[/say]")
 			
 			saynn("Твоя бывшая рабыня оглядывается.. а затем уходит куда-то в сторону.")
 		else:
 			saynn("[say=npc]"+RNG.pick([
-				"Wow. I never thought I'd see the day when you'd release me. I hope you're not lying.",
-				"Really? You're finally releasing me? About time. Don't expect me to thank you though. I'll be glad to be free of your control, but don't think for a second that I'll forget what you did to me.",
-				"Wow, thanks for finally setting me free. Don't expect me to stick around and listen to your excuses.",
-				"You're letting me go? Don't act like you're doing me a favor. I'll be just fine without being your slave.",
+				"Ого. Никогда не думала, что доживу до дня, когда ты меня отпустишь. Надеюсь, ты не врешь.",
+				"Серьезно? Ты наконец-то меня освобождаешь? Давно пора. Но не жди, что я буду тебя благодарить. Я буду рада избавиться от твоего контроля, но даже не думай, что я забуду всё, что ты со мной сделал.",
+				"Вау, спасибо, что наконец-то дал мне свободу. Но не надейся, что я останусь здесь и буду выслушивать твои оправдания.",
+				"Ты меня отпускаешь? Только не делай вид, будто делаешь мне одолжение. Без роли твоей рабыни мне будет только лучше.",
 			])+"[/say]")
 			
 			saynn("Твоя бывшая рабыня оглядывается.. а затем стремительно уходит куда-то в сторону.")
@@ -116,14 +116,14 @@ func _react(_action: String, _args):
 		playAnimation(StageScene.Solo, "stand")
 		
 		if(npcSlavery.isMindBroken()):
-			addMessage(npc.getName()+" was committed to the mental ward.. indefinitely.")
+			addMessage(npc.getName()+" была помещена в психиатрическую больницу... на неопределенный срок.")
 			#GM.main.removeDynamicCharacter(npcID)
 			getModule("NpcSlaveryModule").doFreeEnslavedCharacter(npcID)
 			if(npc.isDynamicCharacter()):
 				GM.main.removeDynamicCharacterFromAllPools(npcID)
 				GM.main.addDynamicCharacterToPool(npcID, CharacterPool.MentalWard)
 		else:
-			addMessage(npc.getName()+" was freed and is no longer your slave.")
+			addMessage(npc.getName()+" была освобождена и больше не является твоей рабыней.")
 			getModule("NpcSlaveryModule").doFreeEnslavedCharacter(npcID)
 		endScene()
 		return
@@ -138,7 +138,7 @@ func _react(_action: String, _args):
 		for theItem in returnedItems:
 			npc.getInventory().removeEquippedItem(theItem)
 			GM.pc.getInventory().addItem(theItem)
-			addMessage("You recovered "+theItem.getAStackName())
+			addMessage("Вы восстановились "+theItem.getAStackName())
 		
 	setState(_action)
 

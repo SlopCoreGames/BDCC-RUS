@@ -21,10 +21,10 @@ func onEscapeLockedRestraints():
 	if(tips > 0):
 		if(getRolePawn("inmate").isPlayer()):
 			GM.pc.addCredits(int(tips))
-			addMessage("You got "+getTipsAmountString()+" from the tipbox! Nice!")
+			addMessage("Получено: "+getTipsAmountString()+" из чаевых! Красава!")
 		elif(getRolePawn("inmate").isSlaveToPlayer()):
 			GM.pc.addCredits(int(tips))
-			addMessage("Your slave "+getRoleChar("inmate").getName()+" earned you "+getTipsAmountString()+" by being in a slutwall! Nice!")
+			addMessage("Твоя рабыня "+getRoleChar("inmate").getName()+" заработала тебе "+getTipsAmountString()+" за то, что торчит в шлюх-стене! Красава!")
 	getRoleChar("inmate").getInventory().clearStaticRestraints()
 
 func about_to_use_text():
@@ -34,7 +34,7 @@ func about_to_use_text():
 	else:
 		saynn("{user.You} {user.youVerb('approach', 'approaches')} в шлюзовой стене, собираясь использовать {inmate.you}..")
 
-	addAction("continue", "Continue", "Start the sex!", "default", 1.0, 600, {start_sex=["user", "inmate", SexType.SlutwallSex, {SexMod.DisableDynamicJoiners: true}],})
+	addAction("continue", "Продолжить", "Начать секс!", "default", 1.0, 600, {start_sex=["user", "inmate", SexType.SlutwallSex, {SexMod.DisableDynamicJoiners: true}],})
 
 func about_to_use_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -48,13 +48,13 @@ func after_use_text():
 	saynn("{user.name} закончила использовать {inmate.you}..")
 	saynn("В чаевых сейчас.. "+getTipsAmountString()+" в копилке. {inmate.name} сможет сбежать, когда наберется 10 кредитов..")
 
-	addAction("leave", "Leave", "Time to go", "default", 1.0, 60, {})
+	addAction("leave", "Уйти", "Пора идти", "default", 1.0, 60, {})
 	if(!getRolePawn("user").isPlayer() || GM.pc.getCredits() > 0):
-		addAction("leave_a_tip", "Leave a tip", "Leave a single credit as a tip", "help", 2.0, 60, {})
+		addAction("leave_a_tip", "Оставить чаевые", "Оставить всего 1 кредит", "help", 2.0, 60, {})
 	if(!getRolePawn("user").isPlayer() || GM.pc.getCredits() >= 5):
-		addAction("leave_a_big_tip", "Leave a Big Tip", "Leave whole 5 credits!", "help", 0.4, 60, {})
+		addAction("leave_a_big_tip", "Оставить щедрые чаевые", "Оставить целых 5 кредитов!", "help", 0.4, 60, {})
 	if(tips > 0):
-		addAction("steal_tips", "Steal tips", "Take all the credits for yourself! They won't be happy about it..", "punishMean", (0.1+(0.1*(tips-9)) if tips >= 9 else 0.05), 60, {})
+		addAction("steal_tips", "Стибрить чаевые", "Загребай все кредиты себе! Они будут не в восторге...", "punishMean", (0.1+(0.1*(tips-9)) if tips >= 9 else 0.05), 60, {})
 
 func after_use_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "leave"):
@@ -62,30 +62,30 @@ func after_use_do(_id:String, _args:Dictionary, _context:Dictionary):
 		setState("", "inmate")
 	if(_id == "leave_a_tip"):
 		if(getRolePawn("user").isPlayer()):
-			addMessage("You left a tip!")
+			addMessage("Ты оставил чаевые!")
 			GM.pc.addCredits(-1)
 		setState("after_tip", "inmate")
 		tips += 1
 		if(getRolePawn("inmate").isPlayer()):
-			addMessage("You got a tip!")
+			addMessage("Тебе дали чаевые!")
 		affectAffection("user", "inmate", 0.05)
 	if(_id == "leave_a_big_tip"):
 		if(getRolePawn("user").isPlayer()):
-			addMessage("You left a huge ass tip!")
+			addMessage("Ты отвалил просто охеренные чаевые!")
 			GM.pc.addCredits(-5)
 		setState("after_tip", "inmate")
 		tips += 5
 		if(getRolePawn("inmate").isPlayer()):
-			addMessage("You got a huge ass tip!")
+			addMessage("Тебе отвалили просто охеренные чаевые!")
 		affectAffection("user", "inmate", 0.1)
 	if(_id == "steal_tips"):
 		if(getRolePawn("user").isPlayer()):
-			addMessage("You took all the tips!")
+			addMessage("Ты сожрал все чаевые!")
 			GM.pc.addCredits(tips)
 		setState("after_steal_tips", "inmate")
 		tips = 0
 		if(getRolePawn("inmate").isPlayer()):
-			addMessage("Your tips got stolen!")
+			addMessage("Твои чаевые украли!")
 		affectAffection("inmate", "user", -0.2)
 
 
@@ -93,7 +93,7 @@ func after_use_do(_id:String, _args:Dictionary, _context:Dictionary):
 func about_to_shout_text():
 	saynn("{inmate.You} {inmate.youVerb('wiggle')} своё {inmate.yourHis} тело и {inmate.thick} задницу, пытаясь привлечь чье-нибудь внимание..")
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 180, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 180, {})
 
 func about_to_shout_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -109,9 +109,9 @@ func about_to_shout_do(_id:String, _args:Dictionary, _context:Dictionary):
 func after_tip_text():
 	saynn("Перед самым уходом {user.name} решает подкинуть денег в чаевые..")
 	sayLine("user", "SlutwallAddTip", {main="user", target="inmate"})
-	saynn("В коробке для чаевых теперь.. "+getTipsAmountString()+" {inmate.name} сможет забрать "+("it" if(tips == 1) else "to them")+".. после того как освободит {inmate.himself}..")
+	saynn("В коробке для чаевых теперь.. "+getTipsAmountString()+" {inmate.name} сможет забрать "+("it" if(tips == 1) else "им")+".. после того как освободит {inmate.himself}..")
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 60, {})
 
 func after_tip_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -124,7 +124,7 @@ func after_steal_tips_text():
 	sayLine("user", "SlutwallStealCredits", {main="user", target="inmate"})
 	saynn("Ого..")
 
-	addAction("continue", "Continue", "Wow.. Here go your creds..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "Ого... На, держи свои кредиты...", "default", 1.0, 60, {})
 
 func after_steal_tips_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):

@@ -19,5 +19,5 @@ func getVisibleName():
 	return "Получить массаж"
 
 func getVisibleDesc():
-	return "Order your sub to give you a massage"
+	return "Прикажите своему сабмиссиву сделать вам массаж"
 

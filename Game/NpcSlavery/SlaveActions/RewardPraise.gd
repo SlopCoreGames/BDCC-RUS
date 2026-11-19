@@ -14,7 +14,7 @@ func getVisibleName():
 	return "Похвала"
 
 func getVisibleDesc():
-	return "Tell your slave that they are doing quite good."
+	return "Скажи своему рабу, что он справляется весьма недурно."
 
 func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var character:DynamicCharacter = GlobalRegistry.getCharacter(_slaveID)
@@ -23,13 +23,13 @@ func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var text = "Вы мягко хвалите своего раба, отмечая его {npc.his} послушание и хорошее поведение.\n\n"
 	
 	text += RNG.pick([
-		"[say=pc]Good job.[/say]",
-		"[say=pc]Keep it up.[/say]",
-		"[say=pc]I like what I'm seeing so far.[/say]",
-		"[say=pc]Nice job.[/say]",
-		"[say=pc]You did well. Keep it up.[/say]",
-		"[say=pc]You did well.[/say]",
-		"[say=pc]Not bad.[/say]",
+		"[say=pc]Молодец.[/say]",
+		"[say=pc]Так держать.[/say]",
+		"[say=pc]Мне уже нравится то, что я вижу.[/say]",
+		"[say=pc]Хорошая работа.[/say]",
+		"[say=pc]Ты молодец. Так держать.[/say]",
+		"[say=pc]Ты молодец.[/say]",
+		"[say=pc]Неплохо.[/say]",
 	])
 	
 	text += "\n\n"
@@ -39,34 +39,34 @@ func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	if(npcSlavery.getDespair() > 0.8):
 		text += "{npc.HeShe} continues with {npc.his} current activity of staring at a blank wall, as if your words had little impact."
 	elif(npcSlavery.getSpoiling() > 0.7):
-		text += "{npc.HeShe} smirks, reveling in the excessive praise."
+		text += "{npc.HeShe} ухмыляется, наслаждаясь чрезмерной похвалой."
 	elif(npcSlavery.isResistingSuperActively()):
 		if(RNG.chance(10 + npcSlavery.personalityScore({PersonalityStat.Mean:1.0})*10.0)):
-			text += "A flicker of discomfort crosses {npc.his} face before {npc.heShe} rolls {npc.his} eyes."
-			text += "\n\n[say=npc]"+RNG.pick(["Screw you.", "Fuck you.", "Whatever."])+"[/say]"
+			text += "На лице {npc.his} промелькнуло беспокойство, прежде чем {npc.heShe} закатил(а) {npc.his} глаза."
+			text += "\n\n[say=npc]"+RNG.pick(["Да пошел ты.", "Пошёл ты нахуй.", "Плевать."])+"[/say]"
 				
 			if(character.isGagged()):
-				text += "\n\n[say=pc]What was that?[/say]"
+				text += "\n\n[say=pc]Что это было?[/say]"
 				
-				text += "\n\n{npc.He} stays quiet, refusing to repeat it. Looks like the gag saved your slave from a punishment."
+				text += "\n\n{npc.He} молчит, отказываясь повторять сказанное. Похоже, кляп спас твою рабыню от наказания."
 			else:
-				text += "\n\nWow. You're trying to praise your slave but {npc.he} {npc.isAre} being all rude about it."
+				text += "\n\nОго. Ты вроде как пытаешься похвалить своего раба, но при этом {npc.he} {npc.isAre} ведешь себя чертовски грубо."
 				
 				deservesPunishment = true
 		else:
-			text += "A flicker of discomfort crosses {npc.his} face before {npc.heShe} rolls {npc.his} eyes."
+			text += "На лице {npc.his} промелькнуло беспокойство, прежде чем {npc.heShe} закатил(а) {npc.his} глаза."
 	elif(npcSlavery.isActivelyResisting()):
-		text += "{npc.HeShe} nods briefly, seemingly unfazed by your praise."
+		text += "{npc.HeShe} коротко кивает, казалось бы, ничуть не тронутая вашей похвалой."
 	elif(npcSlavery.rewardBalance <= 0):
-		text += "{npc.HeShe} smiles hesitantly, clearly confused but accepting the unexpected praise."
+		text += "{npc.HeShe} нерешительно улыбается, явно сбитая с толку, но принимающая неожиданную похвалу."
 	elif(npcSlavery.getObedience() > 0.5 || npcSlavery.getLove() > 0.5 || npcSlavery.getBrokenSpirit() > 0.5):
-		text += "{npc.HeShe} smiles warmly, appreciating the recognition. Your praise seems to resonate with {npc.him}."
+		text += "{npc.HeShe} тепло улыбается, наслаждаясь признанием. Твоя похвала, кажется, находит глубокий отклик в душе {npc.him}."
 	else:
-		text += "{npc.HeShe} gives a slow, hesitant nod, acknowledging your praise with a hint of reservation."
+		text += "{npc.HeShe} медленно и нерешительно кивает, принимая твою похвалу с легким оттенком сдержанности."
 	
 	npcSlavery.handleReward(1)
 	if(deservesPunishment):
-		text += "\n\nYour slave earned {npc.himself} a punishment.. right after getting rewarded."
+		text += "\n\nВаша рабыня заслужила {npc.himself} наказание... сразу после того, как получила награду."
 		npcSlavery.deservesPunishment(1)
 	return {
 		text = text,

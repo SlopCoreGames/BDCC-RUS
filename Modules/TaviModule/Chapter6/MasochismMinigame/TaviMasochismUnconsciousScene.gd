@@ -35,7 +35,7 @@ func _run():
 
 		saynn("[say=pc]Как ты?[/say]")
 
-		saynn("[say=tavi]"+str(taviSpeak("Feels like I got railed hard by you.. Which is.. acceptable..", "Feels like I got gangbanged by the whole prison.. Which is.. acceptable..", "Feels like I got into a fight and headbutted everyone.. Which is.. acceptable.."))+"[/say]")
+		saynn("[say=tavi]"+str(taviSpeak("Такое чувство, будто ты меня нещадно оттрахал... Что... вполне приемлемо...", "Такое чувство, будто меня поимела вся тюрьма разом... Что... вполне приемлемо...", "Такое чувство, будто я ввязалась в драку и раздала всем лбом... Что... вполне приемлемо..."))+"[/say]")
 
 		saynn("Вот это уже та самая Тави, которую ты помнишь. Она слегка шипит, когда ты пытаешься приподнять её, чтобы прижать к себе и обнять.")
 
@@ -82,7 +82,7 @@ func _run():
 	if(state == "cum_fingers"):
 		saynn("Жажда запретного гонит тебя вперед; твои пальцы прокладывают дразнящий путь вдоль её чувствительных складок, пока ты гадаешь, как далеко тебе позволят зайти...")
 
-		saynn("Твои пальцы деликатно исследуют киску Тави, слегка раздвигая её, чтобы обнажить"+str(" the hymen that is still intact despite how much she went through. You decide to be careful not to tear it now." if getModule("TaviModule").isVirgin() else " the slick depths, the slightly pulsing inner walls.. and the cervix that is illuminated by a green glow.")+"")
+		saynn("Твои пальцы деликатно исследуют киску Тави, слегка раздвигая её, чтобы обнажить"+str(" девственная плева, которая всё ещё цела, несмотря на всё, через что она прошла. Теперь ты решаешь быть осторожнее, чтобы не разорвать её." if getModule("TaviModule").isVirgin() else " скользкие глубины, слегка пульсирующие внутренние стенки... и шейка матки, подсвеченная зеленым сиянием.")+"")
 
 		saynn("Пока ты продолжаешь ласкать её милую щелочку, тело Тави откликается едва заметно: её бедра смещаются, пальцы ног поджимаются, а хвост обвивает ногу. Ты медленно наращиваешь темп, стимулируя её складки и стараясь при этом не разбудить её.")
 

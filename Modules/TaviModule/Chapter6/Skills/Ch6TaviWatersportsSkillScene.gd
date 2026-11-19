@@ -335,7 +335,7 @@ func _run():
 
 			saynn("[say=pc]Что-то непонятно?[/say]")
 
-			saynn("Тави смотрит вниз на "+str(usedItemName)+", наполненный её мочой"+str(" and who knows what else.." if !drankOnlyPiss else "..")+"Она сильно колеблется.")
+			saynn("Тави смотрит вниз на "+str(usedItemName)+", наполненный её мочой"+str(" и кто знает, что еще.." if !drankOnlyPiss else "..")+"Она сильно колеблется.")
 
 			saynn("[say=pc]Если не хочешь, просто скажи мне.[/say]")
 
@@ -345,7 +345,7 @@ func _run():
 
 			saynn("[say=pc]Неужели так плохо? Можешь остановиться, если..[/say]")
 
-			saynn("Но вдруг Тави широко распахивает губы и высоко поднимает бутылку, жадно глотая свою мочу,"+str(" and whatever else was in that container" if !drankOnlyPiss else "")+" стараясь не думать о вкусе.")
+			saynn("Но вдруг Тави широко распахивает губы и высоко поднимает бутылку, жадно глотая свою мочу,"+str(" и что бы еще ни было в том контейнере" if !drankOnlyPiss else "")+" стараясь не думать о вкусе.")
 
 			saynn("Ого, она выпивает всё до дна. Ей приходится подавлять рвотные позывы, но ей это почти удается. Вот уж действительно сила воли.")
 
@@ -370,7 +370,7 @@ func _run():
 
 			saynn("[say=tavi]Пить мою собственную мочу~? Смотри не обляпайся.[/say]")
 
-			saynn("Тави делает глубокий вдох, подносит "+str(usedItemName)+" к самому рту, а затем высоко поднимает её и с жадностью начинает глотать свою мочу"+str(" and whatever else was in that container" if !drankOnlyPiss else "")+". По какой-то причине наблюдать за этим... чертовски возбуждающе.")
+			saynn("Тави делает глубокий вдох, подносит "+str(usedItemName)+" к самому рту, а затем высоко поднимает её и с жадностью начинает глотать свою мочу"+str(" и что бы еще ни было в том контейнере" if !drankOnlyPiss else "")+". По какой-то причине наблюдать за этим... чертовски возбуждающе.")
 
 			saynn("И вау, она выжимает всё до капли. И даже облизывает губы после этого.")
 
@@ -810,7 +810,7 @@ func _react(_action: String, _args):
 			var howMuch = getCharacter("tavi").cumInItem(item, FluidSource.Pissing)
 			usedItemName = item.getVisibleName()
 			lastItemUniqueID = item.getUniqueID()
-			addMessage("Tavi filled the "+usedItemName+" with "+str(Util.roundF(howMuch, 1))+" ml of her piss")
+			addMessage("Тави наполнила "+usedItemName+" with "+str(Util.roundF(howMuch, 1))+" мл своей мочи")
 
 	if(_action == "bathroom_fill_take"):
 		processTime(5*60)

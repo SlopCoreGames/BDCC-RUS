@@ -125,10 +125,10 @@ func _run():
 		if(areChoicesFilled()):
 			var theCanStart:Array = _recruit.isCombinationPossibleFinal(getChoicesIDs(), extra)
 			if(theCanStart[0]):
-				addButtonAt(9, "START", "Execute the plan!", "readyToDoPlan")
+				addButtonAt(9, "START", "Приступай к плану!", "readyToDoPlan")
 			else:
 				saynn("[color=yellow]Текущий план невыполним[/color]: "+theCanStart[1])
-		addButtonAt(14, "Cancel", "You changed your mind!", "")
+		addButtonAt(14, "Отмена", "Ты передумал!", "")
 		
 		#saynn(_recruit.getHistoryString())
 	

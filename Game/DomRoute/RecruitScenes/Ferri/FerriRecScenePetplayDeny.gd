@@ -24,7 +24,7 @@ func _run():
 
 		saynn("[say=ferri]Нет! Мяу... Я не буду это носить![/say]")
 
-		saynn("[say=pc]"+str(ch1("You don't have a choice. You will wear this.", "You will, slut.", "You'll wear what I tell you to wear, bitch."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("У тебя нет выбора. Ты будешь это носить.", "Будешь, сучка.", "Ты будешь носить то, что я велю, дрянь."))+"[/say]")
 
 		saynn("Ферри сильнее скалит клыки под намордником. Они стучат о металлическую сетку.")
 
@@ -54,13 +54,13 @@ func _run():
 
 		saynn("[say=ferri]Это унизительно... мяу...[/say]")
 
-		saynn("[say=pc]"+str(ch1("That's the point. It will get better.", "Good. You look cute when you're humiliated.", "Humiliating? You look like a breeding bitch on display."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("В этом-то и смысл. Потом станет лучше.", "Хорошо. Когда тебя унижают, ты выглядишь мило.", "Унизительно? Ты выглядишь как выставленная напоказ сучка для разведения."))+"[/say]")
 
 		saynn("Ты обходишь её сзади. Её хвост нервно подергивается. Ты наклоняешься и проводишь пальцем по внешней стороне её милой голубой киски. Она вздрагивает.")
 
 		saynn("[say=ferri]Эй... Не трогай там...[/say]")
 
-		saynn("[say=pc]"+str(ch1("I'll touch wherever I want. You're my puppy now.", "Too bad. Your wet cunt says otherwise.", "Shut up. This is happening."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Я буду трогать тебя везде, где захочу. Теперь ты мой щенок.", "Жаль. Но твоя мокрая киска говорит об обратном.", "Заткнись. Это происходит на самом деле."))+"[/say]")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "pc_touches_ferri")
 	if(state == "pc_touches_ferri"):
@@ -73,7 +73,7 @@ func _run():
 
 		saynn("[say=ferri]Хххнн..[/say]")
 
-		saynn("[say=pc]"+str(ch1("Feel good? Tell me.", "That's right. Let me hear you.", "You're already dripping. Fucking slut."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Приятно? Скажи мне.", "Вот так. Дай мне тебя услышать.", "Ты уже вся течешь. Ебаная шлюха."))+"[/say]")
 
 		saynn("Ты кружишь большим пальцем вокруг её клитора, а двумя другими пальцами проникаешь между складок и раздвигаешь их. Она кажется влажной и горячей, а стенки её любовного туннеля уже пытаются сжиматься вокруг пустоты.")
 
@@ -93,7 +93,7 @@ func _run():
 
 		saynn("Её бедра начинают двигаться сами собой, подаваясь назад, навстречу твоей руке; подбородок опускается, а уши прижимаются к голове.")
 
-		saynn("[say=pc]"+str(ch1("There she goes. Getting into it.", "Look at you. Grinding on my fingers like a bitch in heat.", "Pathetic. You're already humping the air."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Вот она пошла. Входит во вкус.", "Посмотри на себя. Трёшься о мои пальцы, как сучка в течке.", "Жалкое зрелище. Ты уже вовсю хуячишь в воздух."))+"[/say]")
 
 		saynn("[say=ferri]Тссс... мяу...[/say]")
 
@@ -101,7 +101,7 @@ func _run():
 
 		saynn("Ты чувствуешь, как её стенки начинают трепетать. Она уже близко.")
 
-		saynn("[say=pc]"+str(ch1("Not yet. You don't get to cum.", "Stop. You're not allowed to cum.", "No. Hold it, whore."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Еще нет. Тебе не позволено кончать.", "Стой. Тебе нельзя кончать.", "Нет. Терпи, шлюха."))+"[/say]")
 
 		saynn("Ты полностью вынимаешь пальцы.")
 
@@ -109,23 +109,23 @@ func _run():
 
 		saynn("Она изо всех сил пытается оглянуться на тебя, а её соки капают на пол.")
 
-		saynn("[say=pc]"+str(ch1("Because I said so. Beg first.", "Because you don't deserve it yet. Not until you ask nicely.", "Because I decide when you come. Not you."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Потому что я так сказала. Сначала умоляй.", "Потому что ты еще этого не заслужила. Не раньше, чем попросишь вежливо.", "Потому что когда тебе кончать, решаю я. А не ты."))+"[/say]")
 
 		saynn("[say=ferri]Это глупо! Дай мне кончить![/say]")
 
-		saynn("[say=pc]"+str(ch1("Not with that attitude. Try again.", "No. Try begging like a good puppy.", "Stupid brat. You don't give orders here."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("С таким настроем не пойдет. Попробуй еще раз.", "Нет. Попробуй умолять, как послушная сучка.", "Глупая девчонка. Здесь приказы раздаешь не ты."))+"[/say]")
 
 		saynn("Она рычит, её хвост нервно хлещет из стороны в сторону.")
 
 		saynn("[say=ferri]Засранка![/say]")
 
-		saynn("[say=pc]"+str(ch1("Hate me all you want. You're still not cumming.", "Good. Hate me. It won't help.", "Cry about it, slut. I will just deny you harder."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Ненавидь меня сколько влезет. Ты всё равно не кончишь.", "Хорошо. Ненавидь. Это тебе не поможет.", "Поплачь об этом, шлюха. От этого я буду отказывать тебе еще жестче."))+"[/say]")
 
 		saynn("Ты ждёшь. Она сверлит тебя взглядом, но затем её глаза опускаются.")
 
 		saynn("[say=ferri]Ну пожалуйста?..[/say]")
 
-		saynn("[say=pc]"+str(ch1("Please what? Use your words.", "Please what, puppy? Say it clearly.", "Please what? You want to cum like a dumb animal?"))+"[/say]")
+		saynn("[say=pc]"+str(ch1("«Пожалуйста» что? Используй слова.", "«Пожалуйста» что, щеночек? Скажи это внятно.", "«Пожалуйста» что? Хочешь кончить, как тупое животное?"))+"[/say]")
 
 		saynn("[say=ferri]Пожалуйста.. дай мне кончить.. мяу..[/say]")
 
@@ -139,7 +139,7 @@ func _run():
 
 		saynn("[say=ferri]Пожалуйста.. мяу.. пожалуйста, не останавливайся.. я сделаю всё что угодно..[/say]")
 
-		saynn("[say=pc]"+str(ch1("I'll stop whenever I want.", "Maybe I'll let you. Maybe I won't.", "Beg better and maybe."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Я остановлюсь тогда, когда захочу.", "Может, позволю. А может, и нет.", "Умоляй получше, и тогда, может быть."))+"[/say]")
 
 		saynn("[say=ferri]Я буду твоей послушной собачкой.. я никогда не буду сопротивляться.. пожалуйста..[/say]")
 
@@ -153,13 +153,13 @@ func _run():
 
 		saynn("[say=ferri]Ха-а.. Мяу.. Пошёл ты нахер..[/say]")
 
-		saynn("[say=pc]"+str(ch1("Watching you break is better than making you cum.", "You don't deserve to cum, slut. Not tonight.", "Because your desperation is funnier than your orgasm."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Наблюдать за тем, как ты ломаешься, приятнее, чем за твоим оргазмом.", "Ты не заслуживаешь кончить, шлюшка. Не сегодня.", "Потому что твоё отчаяние забавляет меня больше, чем твой оргазм."))+"[/say]")
 
 		saynn("На глазах наворачиваются одинокие слёзы. Её тело дрожит.")
 
 		saynn("[say=ferri]Мяу.. пожалуйста.. мне нужно..[/say]")
 
-		saynn("[say=pc]"+str(ch1("You need to learn to obey my every word. That's what you need. Understand?", "You need to learn your place. Below me. Always. You're a slut.", "You need to accept that you're a worthless, dripping mess. Learn your place, bitch."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Тебе нужно научиться повиноваться каждому моему слову. Вот чего тебе не хватает. Понимаешь?", "Тебе нужно знать своё место. Под моим каблуком. Всегда. Ты просто шлюха.", "Тебе нужно смириться с тем, что ты — никчёмное, текущее месиво. Знай своё место, сучка."))+"[/say]")
 
 		saynn("Она лишь тяжело дышит и сдаётся, её возбуждение к этому моменту уже давно прошло.")
 

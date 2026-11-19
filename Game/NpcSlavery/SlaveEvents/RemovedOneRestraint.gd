@@ -29,25 +29,25 @@ func runEvent(_npcSlavery:NpcSlave):
 	
 	var theText = ""
 	if(howManyRemoved == 0):
-		theText = "You notice that {npc.name} has some signs of damage on {npc.his} restraints. {npc.He} clearly tried to struggle out of them!\n\nNot very successfully it seems. Still, it deserves a small punishment."
+		theText = "Вы замечаете, что на {npc.his} оковах {npc.name} есть следы повреждений. {npc.He} явно пыталась вырваться из них!\n\nСудя по всему, не очень успешно. И все же, это заслуживает небольшого наказания."
 		_npcSlavery.deservesPunishment(1)
 	elif(howManyRemoved == 1):
-		theText = "You notice that {npc.name} has one of {npc.his} restraints missing! Looks like {npc.he} managed to struggle out of it while you weren't looking."
+		theText = "Вы замечаете, что у {npc.name} отсутствует одна из {npc.his} оков! Похоже, {npc.he} удалось выскользнуть из нее, пока вы не видели."
 		_npcSlavery.deservesPunishment(2)
 	else:
-		theText = "You notice that {npc.name} has some of {npc.his} restraints missing! Looks like {npc.he} managed to struggle out of them while you weren't looking."
+		theText = "Вы замечаете, что у {npc.name} отсутствует часть {npc.his} оков! Похоже, {npc.he} удалось вырваться из них, пока вы не видели."
 		_npcSlavery.deservesPunishment(2)
 		# Add tiredness here too?
 	
 	if(_npcSlavery.getNeediness() > 40.0):
 		theText += "\n\n[say=npc]"+RNG.pick([
-			"I just wanna cum.. Please..",
-			"Don't stop me, I need this. You keep denying me..",
-			"I'm just.. so horny.. all the time..",
-			"You like watching me suffer from constant lust, don't you?"
+			"Я просто хочу кончить... Пожалуйста...",
+			"Не останавливай меня, мне это нужно. Ты вечно лишаешь меня разрядки...",
+			"Я просто... такая похотливая... всё время...",
+			"Тебе нравится смотреть, как я мучаюсь от вечного вожделения, правда?"
 		])+"[/say]"
 		
-		theText += "\n\nLooks like the neediness is what makes {npc.him} so desperate to remove the restraints."
+		theText += "\n\nПохоже, именно эта ненасытность заставляет {npc.him} так отчаянно пытаться избавиться от оков."
 	
 	return {
 		text = theText,

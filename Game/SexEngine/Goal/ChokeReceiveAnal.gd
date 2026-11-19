@@ -67,10 +67,10 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([
-		"Please, I need to feel your ass around my cock while you take my breath away.",
-		"Please, let me feel your tailhole clenching around me as your hand tightens on my throat.",
-		"Ride my cock, please. I want to feel you come on me while you're stealing my air.",
-		"Claim me. Shove my cock in your perfect ass and choke the fuck out of me.",
+		"Пожалуйста, хочу чувствовать твою задницу на своём члене, пока ты перекрываешь мне дыхание.",
+		"Пожалуйста, дай мне почувствовать, как твоё анус сжимается вокруг меня, пока твоя рука сжимает моё горло.",
+		"Оседлай мой член, прошу. Хочу чувствовать, как ты кончаешь на меня, пока крадёшь мой воздух.",
+		"Завладей мной. Засунь мой член в свою идеальную жопу и придуши меня к чертям собачьим.",
 	])
 
 func getBegDomFetishes() -> Dictionary:

@@ -30,7 +30,7 @@ func _run():
 		
 		saynn("Ты приказываешь своей шлюхе по имени {npc.name} подчиниться {npc2.name} и позволить {npc2.him} делать с {npc.his} телом всё, что пожелает {npc.he}, чтобы та стала {npc2.his} игрушкой для снятия стресса.")
 		
-		saynn("Поскольку все твои рабы сидят на короткой цепи, у твоей шлюхи всё равно особо нет выбора."+(" You do notice that your slut is pretty tired though, meaning {npc.he} won't enjoy it for sure." if npcSlavery.getWorkEfficiency() <= 0.15 else ""))
+		saynn("Поскольку все твои рабы сидят на короткой цепи, у твоей шлюхи всё равно особо нет выбора."+(" Ты замечаешь, что твоя шлюшка довольно сильно устала, а значит, {npc.he} точно не получит удовольствия." if npcSlavery.getWorkEfficiency() <= 0.15 else ""))
 		
 		if(npc2Slavery.isMindBroken()):
 			saynn("Твой второй раб слышит твой приказ... и выглядит таким же отрешённым, как и прежде.")
@@ -43,9 +43,9 @@ func _run():
 			saynn("Твой второй раб слышит твой приказ... и опускает взгляд {npc2.his}.")
 			
 			saynn("[say=npc2]"+RNG.pick([
-				"I'm not really a dominant person.. you know?..",
-				"I'm into really into dominating others.",
-				"I'm a pretty subby person myself..",
+				"Я не особо склонна доминировать... понимаешь?..",
+				"Мне безумно нравится доминировать над другими.",
+				"А я сама довольно субмиссивная особа...",
 			])+"[/say]")
 			
 			saynn("Если заставить {npc2.name} сделать это, {npc2.him} на самом деле будет чувствовать ещё больший стресс, чем раньше...")
@@ -56,9 +56,9 @@ func _run():
 			saynn("Твоя вторая рабыня слышит это... и, похоже, готова к хорошей жаре.")
 		
 			saynn("[say=npc2]"+RNG.pick([
-				"Let's have some fun.",
-				"A slut? For me? Wow.",
-				"Let's see how much you can handle.",
+				"Давай повеселимся.",
+				"Шлюшка? Для меня? Ого.",
+				"Посмотрим, сколько ты сможешь вытерпеть.",
 			])+"[/say]")
 			
 			addButton("Смотреть", "Посмотри, что твоя рабыня сделает с твоей шлюхой", "do_watch_sex")

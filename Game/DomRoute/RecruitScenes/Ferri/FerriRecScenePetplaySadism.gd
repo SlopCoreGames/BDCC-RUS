@@ -22,7 +22,7 @@ func _run():
 
 		saynn("Ты поднимаешь кнут вверх.")
 
-		saynn("[say=pc]"+str(ch1("No. I came to train you.", "No, slut. I came to break you.", "No, you stupid bitch. I came to make you my pet."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Нет. Я пришла тебя дрессировать.", "Нет, сучка. Я пришла тебя сломать.", "Нет, тупая сука. Я пришла сделать тебя своей зверушкой."))+"[/say]")
 
 		saynn("Её хвост с силой хлопает по полу, а клыки цокают о корзину намордника.")
 
@@ -30,7 +30,7 @@ func _run():
 
 		saynn("Ты подходишь ближе и хлестаешь кнутом по стене совсем рядом с бедром Ферри. От этого звука она вздрагивает.")
 
-		saynn("[say=pc]"+str(ch1("Kneel. Now.", "On your knees, whore.", "Kneel before I stripe that pretty blue fur red."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("На колени. Живо.", "На колени, блядь.", "Встань на колени, пока я не окрасила твой милый голубой мех в красный."))+"[/say]")
 
 		saynn("[say=ferri]Ну же, попробуй![/say]")
 
@@ -43,7 +43,7 @@ func _run():
 
 		saynn("Всё её тело напрягается, на ягодицах проступают мелкие складки.")
 
-		saynn("[say=pc]"+str(ch1("I said kneel. Not hard.", "Kneel, bitch. Or the next one's on your tits.", "You're going to learn. One whip strike at a time."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Я сказала — на колени. Не заставляй меня повторять.", "На колени, сучка. Или следующий удар придется по твоим сиськам.", "Ты всё выучишь. Удар за ударом."))+"[/say]")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "ferri_kneels")
 	if(state == "ferri_kneels"):
@@ -52,13 +52,13 @@ func _run():
 
 		saynn("[say=ferri]..ладно.. хорошо.[/say]")
 
-		saynn("[say=pc]"+str(ch1("Good. Now hold still.", "That's better. Stay.", "Look at you. Already learning your place."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Хорошо. А теперь не шевелись.", "Так-то лучше. Сиди смирно.", "Посмотри на себя. Уже учишься знать своё место."))+"[/say]")
 
 		saynn("Ты приседаешь и отпираешь наручники, позволяя её рукам упасть вдоль тела, пока металл с лязгом падает на пол.")
 
 		saynn("[say=ferri]Мяу?..[/say]")
 
-		saynn("[say=pc]"+str(ch1("Get on all fours. Like a puppy.", "Get on all fours. You're going to be my slutty pup.", "Get on all fours, you worthless."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Встань на четвереньки. Как щенок.", "Встань на четвереньки. Ты будешь моим сучонком.", "На четвереньки, ничтожество."))+"[/say]")
 
 		saynn("Ферри потирает запястья, её хвост обвивается вокруг бедра.")
 
@@ -66,7 +66,7 @@ func _run():
 
 		saynn("Ты отвечаешь очередным ударом. Этот приходится ей по спине. Она взвизгивает и выпячивает грудь вперед.")
 
-		saynn("[say=pc]"+str(ch1("Then I keep hitting you until you do.", "Then you get the whip until you can't stand. Your choice.", "Then you bleed. Simple."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Тогда я буду лупить тебя до тех пор, пока не встанешь.", "Тогда ты получишь хлыст, пока не свалишься от боли. Выбирай.", "Тогда ты истечешь кровью. Всё просто."))+"[/say]")
 
 		saynn("Уши Ферри прижимаются к голове...")
 
@@ -81,7 +81,7 @@ func _run():
 
 		saynn("[say=ferri]Хафф...[/say]")
 
-		saynn("[say=pc]"+str(ch1("I'll be happy when you're a drooling mess. Crawl behind me, pup.", "Crawl behind me, slut.", "I'll be happy when you're nothing but a drooling mess. Crawl."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Я буду счастлива, когда ты превратишься в пускающую слюни лужу. Ползи за мной, щенок.", "Ползи за мной, сучка.", "Я буду счастлива, когда от тебя не останется ничего, кроме пускающей слюни лужи. Ползи!"))+"[/say]")
 
 		saynn("Ты тянешь за поводок... и наблюдаешь, как она следует за тобой, шаг за шагом. Ты водишь её медленными кругами по камере, а её хвост волочится позади.")
 
@@ -134,7 +134,7 @@ func _run():
 
 		saynn("Бедная дракат попала под двойной напор... но, кажется, ей не привыкать. Её щелочка сочит сок прямо на пол, а задница и грудь полностью выставлены на обозрение.")
 
-		saynn("[say=pc]"+str(ch1("Look at you. Begging for it with your whole body.", "You're getting really horny from this, aren't you, slut?", "Dumb puppy. Your cunt is dripping."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Посмотри на себя. Всем телом умоляешь о добавке.", "Тебя же дико возбуждает это, а, сучка?", "Глупый щенок. У тебя киска течет."))+"[/say]")
 
 		saynn("[say=ferri]Не пяльтесь так сильно.. ах.. вредины..[/say]")
 
@@ -154,7 +154,7 @@ func _run():
 
 		saynn("[say=ferri]Гав..[/say]")
 
-		saynn("[say=pc]"+str(ch1("I think she enjoyed it.", "That bitch deserved it.", "Good. This animal deserves it."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Думаю, ей понравилось.", "Эта сука это заслужила.", "Хорошо. Это животное заслужило."))+"[/say]")
 
 		saynn("Кейт несколько раз похлопывает Ферри по голове... прежде чем ты забираешь её обратно в камеру.")
 
@@ -170,7 +170,7 @@ func _run():
 
 		saynn("[say=ferri]Ииик!..[/say]")
 
-		saynn("[say=pc]"+str(ch1("Good puppy.", "Sweet little slut.", "Worthless stupid whore."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Хороший щенок.", "Сладкая маленькая шлюшка.", "Никчемная тупая шлюха."))+"[/say]")
 
 		if (success):
 			saynn("Она мурлычет.")

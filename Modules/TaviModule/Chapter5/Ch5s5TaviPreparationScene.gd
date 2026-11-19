@@ -215,7 +215,7 @@ func _react(_action: String, _args):
 	setState(_action)
 
 func getDevCommentary():
-	return "Tavi is a hacker so it might not make the most amount of sense that she can suddenly work with electronics.. But I tried to write in a way that shows her doing her best. She obviously has some knowledge of how components work and stuff.."
+	return "Тави — хакер, так что может показаться странным, что она вдруг взялась за электронику... Но я постарался прописать это так, чтобы было видно: она выкладывается на полную. Очевидно, что она хоть немного понимает, как работают разные компоненты и всё такое..."
 
 func hasDevCommentary():
 	return true

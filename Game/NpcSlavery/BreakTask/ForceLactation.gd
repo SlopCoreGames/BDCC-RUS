@@ -43,11 +43,11 @@ func getTaskHint(_isSlaveLevelup):
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [
-		"Those tits aren't just for show. Get them stimulated until you lactate.",
-		"I want milk from you. Find someone to work your tits until you leak.",
-		"Your purpose is to feed. Get your nipples played with until you lactate.",
-		"It's time your breasts served a function. Get them milked.",
-		"You'll be a proper dairy cow. Go get stimulated until you start lactating.",
+		"Эти сиськи здесь не просто для красоты. Доведи их до состояния, пока не потечёт молоко.",
+		"Мне нужно твоё молоко. Найди кого-нибудь, кто будет мять твои титьки, пока из них не потечёт струйками.",
+		"Твоё предназначение — кормить. Пусть твои соски хорошенько разминают, пока не начнёшь лактировать.",
+		"Пора твоей груди принести пользу. Иди и дай себя подоить.",
+		"Из тебя выйдет отличная дойная корова. Иди и развлекайся, пока не начнёшь выдавать молоко.",
 	]
 
 func getSexGoalWeightModifier(_sexGoalID:String) -> float:

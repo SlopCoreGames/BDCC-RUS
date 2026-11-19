@@ -74,12 +74,12 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([
-		"I'm begging you, let me wear bondage gear. I want to be bound and completely helpless.",
-		"Could you please lock stuff onto me? I need to feel completely helpless.",
-		"Please, I want to be your bound toy. Will you put bondage gear on me?",
-		"If you have any bondage gear.. you can lock it on me.. please?",
-		"I could use some cuffs.. or ropes.. anything really.",
-		"I love bondage gear.. make me wear as much as you want of it.",
+		"Умоляю, позволь мне надеть БДСМ-атрибутику. Хочу быть связанной и совершенно беспомощной.",
+		"Можешь, пожалуйста, пристегнуть к нам что-нибудь? Мне нужно почувствовать себя полной беспомощной.",
+		"Пожалуйста, я хочу быть твоей связанной игрушкой. Наденешь на меня БДСМ-снаряжение?",
+		"Если у тебя есть какая-нибудь атрибутика для связывания... можешь пристегнуть её на меня... пожалуйста?",
+		"Мне бы не помешали наручники... или верёвки... да что угодно.",
+		"Обожаю БДСМ-штучки... нацепи на меня столько, сколько захочешь.",
 	])
 
 func getBegDomFetishes() -> Dictionary:

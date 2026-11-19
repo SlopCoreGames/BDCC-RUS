@@ -48,19 +48,19 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([
-		"Do you have a strapon? Please, I need to feel you inside my ass..",
-		"Use the strapon on my ass, I'm begging you.",
-		"Have a strapon maybe? Fuck my ass, I can't wait any longer.",
-		"Fill my ass up, I need it so bad. Use a dildo, I don't care..",
-		"I'll be so good for you, just please peg my ass.",
-		"Please, I need to be stretched by you. Do you have a strapon?..",
+		"У тебя есть страпон? Пожалуйста, мне нужно почувствовать тебя внутри своей задницы...",
+		"Используй страпон на моей заднице, умоляю тебя.",
+		"У тебя есть страпон? Трахни меня в зад, я больше не могу ждать.",
+		"Наполни мою задницу, мне это так нужно. Используй дилдо, мне плевать...",
+		"Я буду такой послушной для тебя, только, пожалуйста, сделай мне пеггинг.",
+		"Пожалуйста, мне нужно, чтобы ты меня растянул. У тебя есть страпон?..",
 	])
 
 func getBegDenyDialogue() -> String:
 	return RNG.pick([
-		"Why would I peg you?",
-		"You want to be pegged? Really? No.",
-		"No pegging for you.",
+		"С чего бы мне делать тебе пеггинг?",
+		"Хочешь, чтобы тебя оттрахали страпоном? Серьёзно? Нет.",
+		"Никакого пеггинга для тебя.",
 	])
 
 func getBegDomFetishes() -> Dictionary:

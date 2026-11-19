@@ -240,7 +240,7 @@ func getInterruptActions(_pawn:CharacterPawn) -> Array:
 		result.append({
 			id = "helpEggs",
 			name = "Помочь откладывать яйца",
-			desc = "Help them lay their eggs!",
+			desc = "Помочь им отложить яйца!",
 			score = 0.0,
 			scoreType = "approach",
 			scoreRole = "main",
@@ -251,7 +251,7 @@ func getInterruptActions(_pawn:CharacterPawn) -> Array:
 	result.append({
 		id = "talk",
 		name = "Поговорить",
-		desc = "Talk with them",
+		desc = "Поговорить с ними",
 		score = 1.0,
 		scoreType = "approach",
 		scoreRole = "main",
@@ -261,7 +261,7 @@ func getInterruptActions(_pawn:CharacterPawn) -> Array:
 		result.append({
 			id = "grab_and_fuck",
 			name = "Схватить и трахнуть",
-			desc = "They have so many restraints that you can just fuck them..",
+			desc = "На них столько стяжек, что их можно просто трахать...",
 			score = 1.0,
 			scoreType = "sexUse",
 			scoreRole = "main",

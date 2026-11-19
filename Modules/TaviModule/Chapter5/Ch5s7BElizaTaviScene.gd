@@ -460,7 +460,7 @@ func _react_scene_end(_tag, _result):
 			setState("lost_eliza")
 
 func getDevCommentary():
-	return "This scene.. Why did I do that?\n\nWell.. I just wanted to show that Tavi isn't untouchable I guess. She has to suffer somehow x3\n\nAnd.. also. Tavi's route is a route for switch people. So I needed this switch to happen at some point x3"
+	return "Эта сцена.. Зачем я это сделала?\n\nНу.. Наверное, просто хотела показать, что Тави не неуязвима. Ей всё равно нужно как-то страдать x3\n\nИ.. ещё. Рут Тави — это рут для свитчей. Так что мне нужно было, чтобы этот переключатель сработал в какой-то момент x3"
 
 func hasDevCommentary():
 	return true

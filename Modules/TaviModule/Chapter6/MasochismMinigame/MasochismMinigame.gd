@@ -324,7 +324,7 @@ func getAllActions():
 	return {
 		"wait": {
 			name = "Подождать",
-			desc = "Let Tavi rest for one turn. Removes 1 pain",
+			desc = "Дать Тави отдохнуть один ход. Убирает 1 единицу боли",
 			shortdesc = "-1 Pain",
 			pain = -1,
 			cantBeFirstAction = true,
@@ -365,7 +365,7 @@ func getAllActions():
 		},
 		"startchoke": {
 			name = "Начать душить",
-			desc = "Start choking Tavi, doing 3 pain every turn until you stop or she loses consciousness",
+			desc = "Начать душить Тави, нанося 3 единицы боли каждый ход, пока вы не остановитесь или она не потеряет сознание",
 			shortdesc = "+3-12 Pain",
 			pain = 3,
 			air = 1,
@@ -379,7 +379,7 @@ func getAllActions():
 		},
 		"choke": {
 			name = "Сжимай сильнее",
-			desc = "Continue choking Tavi",
+			desc = "Продолжать душить Тави",
 			shortdesc = "+3 Pain",
 			pain = 3,
 			air = 1,
@@ -396,7 +396,7 @@ func getAllActions():
 		"stopchoking": {
 			air = 0,
 			name = "Стой",
-			desc = "Let Tavi breath",
+			desc = "Дать Тави вздохнуть",
 			shortdesc = "Stop choking",
 			changestate = "",
 			state = "choking",
@@ -425,7 +425,7 @@ func getAllActions():
 		"ice": {
 			name = "Лед",
 			#desc = "Deliver a firm spank on Tavi's rear, adding 10 pain",
-			shortdesc = "Halves the current pain",
+			shortdesc = "Уменьшает текущую боль вдвое",
 			pain = 0,
 			effects = [
 			],
@@ -451,15 +451,15 @@ func getAllStatusEffects():
 	return {
 		"numb": {
 			name = "Онемение",
-			desc = "[color=#00CC00]-50% pain on next strikes[/color]", #Tavi got caught off-guard but her body quickly prepares for the next strike. 
+			desc = "[color=#00CC00]-50% боли при следующих ударах[/color]", #Tavi got caught off-guard but her body quickly prepares for the next strike. 
 		},
 		"highpain": {
 			name = "Сильная боль",
-			desc = "Tavi got pushed past her pain threshold. Another strike will make her [color=red]safeword[/color].",
+			desc = "Тави переступила порог боли. Еще один удар заставит её произнести [color=red]стоп-слово[/color].",
 		},
 		"wax": {
 			name = "Горячий воск",
-			desc = "[color=red]+100% more pain[/color]",
+			desc = "[color=red]+100% к боли[/color]",
 		},
 	}
 

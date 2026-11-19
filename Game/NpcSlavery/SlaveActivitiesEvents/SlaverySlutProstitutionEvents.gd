@@ -50,7 +50,7 @@ func onButton(_method, _args):
 	if(_method == "lookslut"):
 		setFlag("NpcSlaveryModule.slutEventCooldown", 10)
 		if(!GM.ES.triggerReact(Trigger.SlaverySlutLookAtEvent, _args)):
-			addMessage("The slut didn't react to you")
+			addMessage("Шлюха никак не отреагировала на тебя")
 			GM.main.reRun()
 		#runScene("SlutProstitutionWatch", [_args[0]])
 	

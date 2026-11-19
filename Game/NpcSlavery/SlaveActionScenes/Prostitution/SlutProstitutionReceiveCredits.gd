@@ -54,30 +54,30 @@ func _run():
 		if(howMuchEarned <= 4):
 			if(npcSlave.getObedience() < 0.3 && npcSlave.getLove() < 0.3 && npcSlave.getBrokenSpirit() < 0.3):
 				saynn("[say=npc]"+RNG.pick([
-					"Listen.. Screw you, okay? I don't want to do this.",
-					"I hate doing this. I'm not a slut, okay?",
-					"I tried my best, fuck you.",
-					"I'd love to see you spreading your legs for all the horny fucks!",
+					"Слушай... Да пошел ты, ясно? Не то чтобы я сама этого хотела.",
+					"Ненавижу это дерьмо. Я не шлюха, ясно тебе?",
+					"Я старалась изо всех сил, так что иди нахуй.",
+					"С удовольствием бы посмотрела, как ты раздвигаешь ноги перед каждым еблом!",
 				])+"[/say]")
 			else:
 				saynn("[say=npc]"+RNG.pick([
-					"Sorry, I tried my best..",
-					"Maybe being a slut is not for me.",
-					"Maybe I'm just a bad slut.",
-					"Sorry, I really tried.",
+					"Прости, я честно старалась...",
+					"Может, быть шлюхой — это не моё.",
+					"Может, я просто хреновая шлюха.",
+					"Прости, я правда старалась.",
 				])+"[/say]")
 		else:
 			if(npcSlave.getObedience() < 0.3 && npcSlave.getLove() < 0.3 && npcSlave.getBrokenSpirit() < 0.3):
 				saynn("[say=npc]"+RNG.pick([
-					"Fuck you, you don't even know what I did to earn these.",
-					"You can't even imagine what I did to earn these.",
-					"I'd like to see you earn more. I bet you can't.",
+					"Да пошел ты, ты даже не представляешь, чего мне это стоило.",
+					"Ты даже вообразить не можешь, через что мне пришлось пройти, чтобы заработать это.",
+					"Хочется, чтобы ты зарабатывала больше. Спорим, ты не сможешь?",
 				])+"[/say]")
 			else:
 				saynn("[say=npc]"+RNG.pick([
-					"There you go, {npc.pcOwner}.",
-					"Hope that's enough, {npc.pcOwner}.",
-					"Here is what I earned, {npc.pcOwner}.",
+					"Вот, держи, {npc.pcOwner}.",
+					"Надеюсь, этого хватит, {npc.pcOwner}.",
+					"Вот то, что я заработала, {npc.pcOwner}.",
 				])+"[/say]")
 		
 		if(howMuchEarned == 0):
@@ -97,8 +97,8 @@ func _run():
 			saynn("[say=npc]Думаю, я вернусь в твою камеру.[/say]")
 		else:
 			saynn("[say=npc]"+RNG.pick([
-				"I'm pretty tired, gonna return to your cell.",
-				"I will go put myself back on a leash..",
+				"Я чертовски устала, пойду обратно в камеру.",
+				"Пойду, надену на себя ошейник...",
 			])+"[/say]")
 		
 		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")

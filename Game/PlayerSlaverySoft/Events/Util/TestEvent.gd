@@ -9,7 +9,7 @@ func onStart(_args:Array):
 func start():
 	playAnimation(StageScene.Duo, "stand", {npc=getRoleID(C_OWNER)})
 	saynn("Тест!")
-	talk(C_OWNER, "Meow meow.")
+	talk(C_OWNER, "Мяу-мяу.")
 	#if(onlyOnce()):
 	#	sayAppend("[color=red]OW[/color]")
 	#	GM.pc.addPain(10)

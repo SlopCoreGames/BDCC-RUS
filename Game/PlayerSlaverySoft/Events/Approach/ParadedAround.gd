@@ -100,16 +100,16 @@ func getDoState() -> String:
 func pMedical():
 	playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 	saynn("{npc.name} ведет тебя в медицинское крыло.")
-	talkOwner("My {npc.npcSlave} isn't doing too well.")
-	talkCharID("eliza", "Oh, I have something that can help.")
+	talkOwner("Мой {npc.npcSlave} не в лучшей форме.")
+	talkCharID("eliza", "О, у меня есть кое-что, что может помочь.")
 	saynn("Кошка-врач подходит к тебе и дает тебе маленькую таблетку!")
-	talkCharID("eliza", "This should help~.")
+	talkCharID("eliza", "Это должно помочь~.")
 	saynn("Твой хозяин кивает и уводит тебя от прилавка.")
 	
 	if(onlyOnce()):
 		GM.pc.addPain(-100)
 		GM.pc.addStamina(150)
-		GM.main.addMessage("You feel better!")
+		GM.main.addMessage("Тебе стало лучше!")
 	
 	paradedOutcome()
 	
@@ -121,11 +121,11 @@ func pVendomat():
 	if(onlyOnce()):
 		var theItemToGive:String = RNG.pick(["EnergyDrink"])
 		if(theItemToGive):
-			talkOwner("Thirsty?")
+			talkOwner("Хочешь пить?")
 			saynn("{npc.He} {npc.verb('buy')} энергетический напиток и протягивает его тебе.")
-			talkOwner("Enjoy.")
+			talkOwner("Наслаждайся.")
 			GM.pc.getInventory().addItem(GlobalRegistry.createItem(theItemToGive))
-			GM.main.addMessage("You received an energy drink!")
+			GM.main.addMessage("Ты получил(а) энергетический напиток!")
 	saynn("После этого тебя уводят от вендомата.")
 	paradedOutcome()
 

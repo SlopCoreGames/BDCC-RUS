@@ -46,10 +46,10 @@ func getTaskHint(_isSlaveLevelup):
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [
-		"Go get your throat used. Someone will certainly want to do that with a ring-gag.",
-		"Find someone to fuck that pretty face of yours through a gag.",
-		"I want you to get your face properly used. And by properly I mean through a ring-gag.",
-		"I want you back with a sore throat and a used ring-gag.",
+		"Иди, привыкай к тому, что в тебя будут совать всякое. Кто-нибудь обязательно захочет сделать это с кольцом-кляпом.",
+		"Найди кого-нибудь, кто оттрахает твое милое личико прямо через кляп.",
+		"Я хочу, чтобы твоим лицом пользовались как следует. А под «как следует» я имею в виду — через кольцо-кляп.",
+		"Хочу, чтобы ты вернулась с саднившим горлом и использованным кольцом-кляпом во рту.",
 	]
 
 func getSexGoalWeightModifier(_sexGoalID:String) -> float:

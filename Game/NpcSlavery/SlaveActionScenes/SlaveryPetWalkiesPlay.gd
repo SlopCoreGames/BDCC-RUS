@@ -66,9 +66,9 @@ func _run():
 		saynn("Ты следишь за тем, чтобы твой питомец не сводил глаз с палки... а затем швыряешь её в случайном направлении.")
 		
 		saynn("[say=pc]"+RNG.pick([
-			"Got get it!",
-			"Fetch!",
-			"Bring it back, {npc.boy}!",
+			"Апорт!",
+			"Принеси!",
+			"Верни это назад, {npc.boy}!",
 		])+"[/say]")
 		
 		if(npcSlavery.getSlaveSkill(SlaveType.Pet) >= 15):
@@ -113,9 +113,9 @@ func _run():
 
 			saynn("[say=pc]Я сказала: «Проси!»[/say]")
 
-			saynn("{npc.name} скулит и мило дрыгает {npc.his} связанными лапками, {npc.his} широко раскрыв глаза"+str(" under the blindfold" if npc.isBlindfolded() else "")+".")
+			saynn("{npc.name} скулит и мило дрыгает {npc.his} связанными лапками, {npc.his} широко раскрыв глаза"+str(" под повязкой на глазах" if npc.isBlindfolded() else "")+".")
 
-			saynn("Ты сильнее разминаешь ногой {npc.his} клетку... пока твой щенок не начинает ерзать под твоей ногой."+str(" {npc.His} {npc.pussyStretch} pussy is dripping juices just like {npc.his} cock is dripping pre." if npc.hasReachableVagina() else "")+"")
+			saynn("Ты сильнее разминаешь ногой {npc.his} клетку... пока твой щенок не начинает ерзать под твоей ногой."+str(" киска {npc.His} {npc.pussyStretch} течет соками, прямо как {npc.his} член течет предэякулятом." if npc.hasReachableVagina() else "")+"")
 
 			saynn("[say=pc]Вот так лучше. Что, сейчас кончишь, щеночек?[/say]")
 
@@ -130,9 +130,9 @@ func _run():
 
 			saynn("[say=pc]Я сказала: «Проси!»[/say]")
 
-			saynn("{npc.name} скулит и мило дрыгает {npc.his} связанными лапками, {npc.his} широко раскрыв глаза"+str(" under the blindfold" if npc.isBlindfolded() else "")+".")
+			saynn("{npc.name} скулит и мило дрыгает {npc.his} связанными лапками, {npc.his} широко раскрыв глаза"+str(" под повязкой на глазах" if npc.isBlindfolded() else "")+".")
 
-			saynn("Ты чуть выше поднимаешь ногу и начинаешь ласкать {npc.his} {penis}... пока твой щенок не начинает ерзать под твоей ногой."+str(" {npc.His} {npc.pussyStretch} pussy is dripping too, even though you are focussed on {npc.his} member." if npc.hasReachableVagina() else "")+"")
+			saynn("Ты чуть выше поднимаешь ногу и начинаешь ласкать {npc.his} {penis}... пока твой щенок не начинает ерзать под твоей ногой."+str(" киска {npc.His} {npc.pussyStretch} тоже течет, хотя ты сосредоточен на члене {npc.his}." if npc.hasReachableVagina() else "")+"")
 
 			saynn("[say=pc]Вот так лучше. Что, сейчас кончишь, щеночек?[/say]")
 
@@ -147,7 +147,7 @@ func _run():
 
 			saynn("[say=pc]Я сказала: «Проси!»[/say]")
 
-			saynn("{npc.name} скулит и мило дрыгает {npc.his} связанными лапками, {npc.his} широко раскрыв глаза"+str(" under the blindfold" if npc.isBlindfolded() else "")+".")
+			saynn("{npc.name} скулит и мило дрыгает {npc.his} связанными лапками, {npc.his} широко раскрыв глаза"+str(" под повязкой на глазах" if npc.isBlindfolded() else "")+".")
 
 			saynn("Твои пальцы находят {npc.his} клитор и начинают теребить его... пока твой щенок не начинает извиваться под твоей ногой.")
 
@@ -460,7 +460,7 @@ func _react(_action: String, _args):
 			npcSlavery.getActivity().satisfyWant("play")
 		if(npcSlavery.rewardBalance > 0):
 			npcSlavery.handleReward(1)
-			addMessage("This counted as a small reward for your slave")
+			addMessage("Это считается небольшой наградой для твоей рабыни")
 
 	if(_action in ["fuck_vag_pullout", "fuck_ass_pullout", "fuck_strapon_pullout", "fuck_strapon_pullout_ass"]):
 		processTime(10*60)
@@ -484,7 +484,7 @@ func _react(_action: String, _args):
 			npcSlavery.getActivity().satisfyWant("play")
 		if(npcSlavery.rewardBalance < 0):
 			npcSlavery.handlePunishment(1)
-			addMessage("This counted as a small punishment for your slave")
+			addMessage("Это считается небольшим наказанием для твоей рабыни")
 
 	if(_action == "play_fetch"):
 		processTime(10*60)
@@ -510,7 +510,7 @@ func _react(_action: String, _args):
 		npcSlavery.addSpoiling(0.02)
 		if(npcSlavery.rewardBalance > 0):
 			npcSlavery.handleReward(2)
-			addMessage("This counted as a normal reward for your slave")
+			addMessage("Это засчиталось как обычная награда для твоей рабыни")
 		
 	if(_action == "feetplay_deny"):
 		processTime(10*60)
@@ -525,7 +525,7 @@ func _react(_action: String, _args):
 		npcSlavery.addNeediness(0.5)
 		if(npcSlavery.rewardBalance < 0):
 			npcSlavery.handlePunishment(2)
-			addMessage("This counted as a normal punishment for your slave")
+			addMessage("Это засчиталось как обычное наказание для твоей рабыни")
 		
 	setState(_action)
 

@@ -72,7 +72,7 @@ func _react(_action: String, _args):
 		GM.pc.addLust(-200)
 		GM.pc.addPain(-200)
 		GM.pc.addStamina(-50)
-		addMessage("You feel weak..")
+		addMessage("Ты чувствуешь слабость...")
 
 	if(_action == "start_talking"):
 		runScene("Ch6TaviTalkScene")

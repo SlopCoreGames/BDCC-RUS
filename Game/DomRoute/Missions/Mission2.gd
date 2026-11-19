@@ -3,7 +3,7 @@ extends MissionBase
 func _init():
 	id = "Mission2"
 	name = "Свирепый"
-	desc = "You got the papers with all the names. Time to figure out who you're gonna recruit next!"
+	desc = "Список имен у тебя на руках. Пора решить, кого ты завербуешь следующим!"
 	
 	startScene = "DomM2s1Intro"
 	requiredMissions = ["Mission1"]
@@ -22,16 +22,16 @@ func _init():
 					effects = [
 						DECISION_EFFECT_KAIT_OBEDIENCE,
 					],
-					kaitLine = "What a fucking slut! Not Ferri I mean.. she is cute. I'm talking about Avy. Grr-r..",
-					avyLine = "Kait is so soft, you should bully her more. Just like I do.",
+					kaitLine = "Какая же гребаная шлюха! Не Ферри, в смысле... она милашка. Я про Эви. Гррр...",
+					avyLine = "Кейт такая мягкая, тебе стоит задирать её посильнее. Прямо как я.",
 				},
 				"stop": {
 					text = "No",
 					effects = [
 						DECISION_EFFECT_AVY_OBEDIENCE,
 					],
-					kaitLine = "You showed that bitch her place! Not Ferri I mean.. she is cute. I'm talking about Avy.",
-					avyLine = "I should have helped, I know, you don't have to rub it in again. I had a good reason, okay?",
+					kaitLine = "Ты показала этой сучке её место! Не Ферри, в смысле... она милашка. Я про Эви.",
+					avyLine = "Знаю, надо было помочь, не обязательно напоминать об этом постоянно. У меня была веская причина, ясно?",
 				},
 			},
 		}
@@ -46,15 +46,15 @@ func onMissionStart():
 func getObjectives() -> Array:
 	var result:Array = []
 	
-	result.append("Meet your team in the high-sec cellblock in order to find Ferri!")
+	result.append("Чтобы найти Ферри, встреться со своей командой в секторе камер высокого уровня безопасности!")
 	if(getFlag("s2", false)):
-		result.append("You got Ferri! Now you have to break her.")
+		result.append("Ферри у тебя! Теперь тебе нужно её сломать.")
 	
 	return result
 
 func getStartSceneButtonsLoc(_loc:String) -> Array:
 	if(!getFlag("s2", false) && _loc == "cellblock_red_nearcell"): # Check flags
-		return [startSceneButton("DomM2s2", [], "Mission", "Meet your team here and look for Ferri!")]
+		return [startSceneButton("DomM2s2", [], "Миссия", "Встречайся здесь со своей командой и ищи Ферри!")]
 	
 	return []
 

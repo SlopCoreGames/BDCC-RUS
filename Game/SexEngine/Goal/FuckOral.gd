@@ -77,37 +77,37 @@ func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	
 	if(hasVag && hasPP):
 		return RNG.pick([
-			"I'm begging you, fuck my mouth with your cock.. or grind on my tongue, just use me.",
-			"Use my face however you want, just let me serve you.",
-			"I need your cunt on my mouth, please, grind against my tongue.. Or just shove your cock down my throat.",
-			"Let me worship your pussy or cock with my mouth, please.",
-			"Please, I need your cock in my mouth.. or your pussy on my tongue, just use my face.",
-			"I'm begging you, let me taste you. Fuck my mouth or ride my tongue, I need to feel you.",
-			"Please, use my face. I want you to come all over it or fuck my throat until I can't breathe.",
-			"I need you to ruin me. Please, fuck my mouth with your cock or smother me with your cunt.",
+			"Умоляю, трахни мне рот своим членом... или просто разминай мой язык, просто используй меня.",
+			"Используй моё лицо как хочешь, просто позволь мне служить тебе.",
+			"Мне нужно, чтобы твоя киска была у меня во рту, пожалуйста, разминай мой язык... Или просто засунь свой член мне в глотку.",
+			"Пожалуйста, позволь мне поклоняться твоей киске или члену своим ртом.",
+			"Пожалуйста, мне нужен твой член во рту... или твоя киска на моем языке, просто используй моё лицо.",
+			"Умоляю, дай мне тебя попробовать. Трахни мне рот или оседлай мой язык, мне нужно почувствовать тебя.",
+			"Пожалуйста, используй моё лицо. Я хочу, чтобы ты кончил на него или трахал мне глотку, пока я не перестану дышать.",
+			"Мне нужно, чтобы ты меня уничтожил(а). Пожалуйста, трахни мне рот своим членом или задуши меня своей киской.",
 		])
 	if(hasVag):
 		return RNG.pick([
-			"Please, let me taste you.",
-			"I need to feel you on my tongue, please.",
-			"Use my face, I'm begging you.",
-			"Let me worship you with my mouth, please.",
-			"Grind yourself against me, I need it.",
-			"Please, just sit on my face and use me.",
-			"I'm desperate to lick your pussy.",
-			"Please, let me make you cum with my tongue.",
-			"I'll be good, just let me eat you out.",
-			"Smother me with your pussy, please.",
-			"Ride my face, I need to feel you.",
+			"Пожалуйста, дай мне тебя попробовать.",
+			"Мне нужно почувствовать тебя на своем языке, пожалуйста.",
+			"Используй моё лицо, умоляю тебя.",
+			"Позволь мне боготворить тебя губами, пожалуйста.",
+			"Потрись об меня, мне это нужно.",
+			"Пожалуйста, просто сядь мне на лицо и используй меня.",
+			"Я просто одержим желанием лизать твою киску.",
+			"Пожалуйста, позволь мне довести тебя до оргазма языком.",
+			"Я буду послушной, только дай мне отсосать тебе.",
+			"Задуши меня своей киской, пожалуйста.",
+			"Оседлай моё лицо, мне нужно чувствовать тебя.",
 		])
 	return RNG.pick([
-		"Please, use my mouth, I need to feel you.",
-		"I'm begging you, fuck my face.",
-		"Don't make me wait, just fuck my throat already.",
-		"Please, shove your cock down my throat and use me.",
-		"Please stretch my throat, just face-fuck me.",
-		"Just grab my head and take what you need, please.",
-		"I'll be good, I promise, just please fuck my face."
+		"Пожалуйста, используй мой рот, мне нужно чувствовать тебя.",
+		"Умоляю, оттрахай мне лицо.",
+		"Не заставляй меня ждать, просто засунь свой член мне в глотку.",
+		"Пожалуйста, забей свой член мне в горло и используй меня.",
+		"Пожалуйста, растяни мне глотку, просто оттрахай мне рот.",
+		"Просто схвати меня за голову и возьми всё, что тебе нужно, пожалуйста.",
+		"Я буду послушной, обещаю, только, пожалуйста, оттрахай мне лицо."
 	])
 
 func getBegDomFetishes() -> Dictionary:

@@ -247,7 +247,7 @@ func _run():
 	if(state == "les2_nova"):
 		addCharacter("nova")
 		playAnimation(StageScene.PuppySexOral, "tease", {pc="nova", npc="tavi"})
-		saynn("Вы оборачиваетесь и видите... Нову. Похоже, она настроена не враждебно."+str(" Even though you did a lot of bad things to her.. She is mostly focussed on Tavi though." if getFlag("TaviModule.Ch5BlackmailedNova") else "")+"")
+		saynn("Вы оборачиваетесь и видите... Нову. Похоже, она настроена не враждебно."+str(" Даже несмотря на то, что ты много дерьма ей причинил... она в основном сосредоточена на Тави." if getFlag("TaviModule.Ch5BlackmailedNova") else "")+"")
 
 		saynn("Хаски подходит к вам и приседает перед вашим питомцем; её лапы начинают чесать Тави и поглаживать её по голове.")
 
@@ -392,7 +392,7 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc="tavi", npcAction="allfours", npcBodyState={naked=true}})
 		saynn("Глаза Тави искрятся любопытством, когда ты зовешь её поближе, а затем указываешь на место прямо перед собой.")
 
-		saynn("[say=pc]"+str(RNG.pick(["Good girls get belly rubs.", "I wanna see a good puppy before me.", "I wanna teach you some tricks.", "Ready for some training, puppy?"]))+"[/say]")
+		saynn("[say=pc]"+str(RNG.pick(["Хороших девочек нужно гладить по животику.", "Хочу увидеть послушного щеночка перед собой.", "Я хочу научить тебя паре трюков.", "Готова к тренировке, щеночек?"]))+"[/say]")
 
 		saynn("Высокая кошечка на секунду колеблется. Но затем она опускается перед тобой на колени.")
 
@@ -854,7 +854,7 @@ func _run():
 
 		saynn("[say=nova]Насколько я помню, да.[/say]")
 
-		saynn("Ты тянешь за поводок, заставляя Тави развернуться. Затем ты приседаешь рядом с её задницей и раздвигаешь ягодицы, открывая Нове великолепный вид на мокрую киску Тави."+str(" The visible hymen makes It quite evident that she is still a virgin. Tavi gasps as you do that." if isVirgin else "")+"")
+		saynn("Ты тянешь за поводок, заставляя Тави развернуться. Затем ты приседаешь рядом с её задницей и раздвигаешь ягодицы, открывая Нове великолепный вид на мокрую киску Тави."+str(" Заметная девственная плева ясно говорит о том, что она всё ещё девственница. Тави ахает, когда ты это делаешь." if isVirgin else "")+"")
 
 		saynn("[say=pc]Хочешь трахнуть мою щеночку? Ей бы не помешало разок-другой осемениться.[/say]")
 

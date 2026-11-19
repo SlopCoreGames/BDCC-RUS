@@ -48,11 +48,11 @@ func getTaskHint(_isSlaveLevelup):
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [
-		"I want you locked in gear during your next fuck. Don't be shy.",
-		"Your next partner should get to use some toys on you. Get yourself locked up.",
-		"You look best when you're restrained. Go get put in some bondage gear.",
-		"Find someone to tie you up properly before they use you.",
-		"Get yourself into some BDSM gear.",
+		"Хочу, чтобы во время следующего траха ты была закована в снаряжение. Не стесняйся.",
+		"Твой следующий партнер должен использовать на тебе игрушки. Закуйся во что-нибудь.",
+		"Ты выглядишь лучше всего, когда тебя сдерживают. Иди надень что-нибудь для бондажа.",
+		"Найди кого-нибудь, кто хорошенько тебя свяжет, прежде чем начнет использовать.",
+		"Нацепи на себя БДСМ-атрибутику.",
 	]
 
 func getSexGoalWeightModifier(_sexGoalID:String) -> float:

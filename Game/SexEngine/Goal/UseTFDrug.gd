@@ -42,11 +42,11 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([
-		"Please, transform me. Feed me anything you want!",
-		"Please, feed me anything that will transform me. I want to be your perfect toy.",
-		"I need to be transformed so badly. Please, make me into whatever you desire.",
-		"Please, make me change, transform me. I want it.",
-		"Please, I need to be transformed. Do you have any drugs?",
+		"Пожалуйста, измени меня! Накорми меня чем угодно!",
+		"Пожалуйста, дай мне что-нибудь, что меня изменит. Я хочу быть твоей идеальной игрушкой.",
+		"Мне так нужно трансформироваться... Пожалуйста, преврати меня в кого угодно, кого пожелаешь.",
+		"Пожалуйста, заставь меня измениться, трансформируй меня. Я этого хочу.",
+		"Пожалуйста, мне нужно преобразиться. У тебя есть какие-нибудь наркотики?",
 	])
 
 func getBegDomFetishes() -> Dictionary:

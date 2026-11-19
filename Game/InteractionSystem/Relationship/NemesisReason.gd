@@ -17,82 +17,82 @@ const Wounded = 11
 static func getAmbushLine(_reason:int, _char:BaseCharacter) -> String:
 	if(_reason == Fight):
 		return RNG.pick([
-			"I'm here for a rematch.",
-			"You thought you could beat me up and get away with it?",
-			"You thought I would just give up?",
-			"I came for round two, asshole.",
-			"You think you're tough? I doubt it.",
-			"Last time was luck. This time, you're screwed.",
+			"Я здесь ради реванша.",
+			"Думал, изобьешь меня и всё сойдет с рук?",
+			"Думал, я просто так сдамся?",
+			"Я пришла за вторым раундом, мудак.",
+			"Считаешь себя крутым? Сомневаюсь.",
+			"В прошлый раз тебе повезло. В этот раз тебе пиздец.",
 		])
 	elif(_reason == Impregnation):
 		return RNG.pick([
-			"You knocked me up, fucker! You thought you could get away with it?",
-			"I didn't ask to be bred. Bitch.",
-			"You really thought you could breed me and get away with it?",
-			"I didn't forgive you for breeding me.",
-			"Hope you’re ready to pay for what you did with me.",
-			"I'm not into this whole breeding thing. But you don't care, do you? I will make you.",
+			"Ты меня оплодотворил, ублюдок! Думал, тебе это сойдет с рук?",
+			"Я не просила, чтобы меня трахали ради потомства, сука.",
+			"Ты реально думал, что сможешь меня осеменить и просто уйти?",
+			"Я так и не простила тебя за то, что ты меня оплодотворил.",
+			"Надеюсь, ты готов расплатиться за то, что ты со мной сделал.",
+			"Меня не особо прет вся эта тема с размножением. Но тебе ведь плевать, да? Я заставлю тебя.",
 		])
 	elif(_reason == Scammed):
 		return RNG.pick([
-			"I didn't forgive you for scamming me.",
-			"You really thought you could scam me and get away with it?",
-			"I'm gonna make you regret scamming me.",
-			"You stole from me. You're gonna pay.",
+			"Я так и не простила тебя за то, что ты меня кинул.",
+			"Ты реально думал, что сможешь развести меня и выйти сухим из воды?",
+			"Я заставлю тебя пожалеть о том, что ты меня кинул.",
+			"Ты обворовал меня. И ты за это заплатишь.",
 		])
 	elif(_reason == EnslavementAttmept):
 		return RNG.pick([
-			"You really thought you could make me your bitch? Nuh-uh.",
-			"You really thought that I would just wait until you come make me your bitch? Fuck you.",
-			"I was never gonna be your slave, get real.",
+			"Ты реально думал, что сможешь сделать из меня свою сучку? Хрен там.",
+			"Ты реально думал, что я буду просто ждать, пока ты придешь и сделаешь меня своей сучкой? Пошел нахуй.",
+			"Я никогда не собиралась быть твоей рабыней, спустись на землю.",
 		])
 	elif(_reason == AwfulSex):
 		return RNG.pick([
-			"You thought you could abuse me and get away with it?",
-			"I still remember that sex that we had. It was fucking awful.",
-			"You abused me. And I didn't forgive you for that.",
+			"Ты думал, что сможешь насиловать меня и тебе всё сойдет с рук?",
+			"Я до сих пор помню тот секс, что у нас был. Это было просто охеренно хреново.",
+			"Ты издевался надо мной. И я так и не простила тебя за это.",
 		])
 	elif(_reason == PunishedSex):
 		return RNG.pick([
-			"You thought you could fuck me and get away with it?",
-			"Thinking that I'm a subby bitch that can be fucked was your biggest mistake.",
-			"You thought that I'm some dirty slut? You're wrong.",
+			"Думал, что сможешь трахнуть меня и выйти сухим из воды?",
+			"Думать, что я какая-то покорная сучка, которую можно просто поиметь — было твоей главной ошибкой.",
+			"Ты думал, что я какая-то грязная шлюха? Ты ошибаешься.",
 		])
 	elif(_reason == PunishedStocks):
 		return RNG.pick([
-			"You thought you could lock me into the stocks and get away with it?",
-			"You're dumb if you think that I would forget how you locked me up in those stocks.",
-			"I still remember when you locked me into stocks. That was your last mistake.",
+			"Думал, что сможешь запереть меня в колодки и тебе это сойдет с рук?",
+			"Ты тупица, если думаешь, что я забуду, как ты заковал меня в эти колодки.",
+			"Я до сих пор помню, как ты запер меня в колодки. Это было твоей последней ошибкой.",
 		])
 	elif(_reason == PunishedSlutwall):
 		return RNG.pick([
-			"You thought you could lock me up like some kind of whore in that wall and get away with it?",
-			"You're dumb if you think that I would forget how you locked me up in the slutwall.",
-			"I still remember when you locked me into the slutwall. That was your last mistake.",
+			"Думал, что сможешь запереть меня в этой стене, как какую-то шлюху, и тебе это сойдет с рук?",
+			"Ты тупица, если думаешь, что забуду, как ты запер меня в этой стене для шлюх.",
+			"Я до сих пор помню, как ты заперла меня в шлюз-стенке. Это была твоя последняя ошибка.",
 		])
 	elif(_reason == EscapedSlavery):
 		return RNG.pick([
-			"You thought you could keep me as your slave forever? You're so dumb.",
-			"I'm not your slave, your hear me? I will make you remember.",
-			"I will never be your slave ever again. You fucked up hard.",
+			"Думала, сможешь держать меня своей рабыней вечно? Какая же ты тупая.",
+			"Я тебе не рабыня, слышишь?! Я заставлю тебя об этом помнить.",
+			"Я больше никогда не стану твоей сучкой. Ты жестко облажалась.",
 		])
 	elif(_reason == ForcedUnconscious):
 		return RNG.pick([
-			"You thought you could abuse me and get away with it?",
-			"You thought I wouldn't be able to remember it if you'd made me black out? I remember.",
-			"You abused me. And I didn't forgive you for that.",
+			"Ты думал, что сможешь насиловать меня и тебе всё сойдет с рук?",
+			"Думала, если ты меня вырубишь, я ничего не вспомню? Я всё помню.",
+			"Ты издевался надо мной. И я так и не простила тебя за это.",
 		])
 	elif(_reason == Wounded):
 		return RNG.pick([
-			"You thought you could abuse me and get away with it?",
-			"You thought that breaking my ribs would make me scared of you? It only made me angrier.",
-			"You abused me. And I didn't forgive you for that.",
+			"Ты думал, что сможешь насиловать меня и тебе всё сойдет с рук?",
+			"Думала, если переломаешь мне рёбра, я тебя испугаюсь? Это только разозлило меня ещё сильнее.",
+			"Ты издевался надо мной. И я так и не простила тебя за это.",
 		])
 	
 	#generic
 	return RNG.pick([
-		"You are such a loser.",
-		"I hate you. Really.",
-		"I'm gonna make you regret messing with me.",
-		"You're gonna pay.",
+		"Ты такая неудачница.",
+		"Ненавижу тебя. Реально ненавижу.",
+		"Я заставлю тебя пожалеть о том, что ты связалась со мной.",
+		"Ты за это заплатишь.",
 	])

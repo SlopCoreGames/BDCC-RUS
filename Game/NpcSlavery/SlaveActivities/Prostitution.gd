@@ -48,12 +48,12 @@ func getActivityText():
 func onPawnDeleted(_pawn):
 	stopActivity()
 	if(getChar() != null):
-		GM.main.addMessage("Your slave "+getChar().getName()+" is no longer doing prostitution..")
+		GM.main.addMessage("Твоя рабыня "+getChar().getName()+" больше не занимается проституцией...")
 
 func onInteractionChanged(_newInteraction):
 	if(_newInteraction != null && _newInteraction.id == "Unconscious" && _newInteraction.getCharIDByRole("main") == getCharID()):
 		stopActivity()
-		GM.main.addMessage("Your slave "+getChar().getName()+" got beaten up unconscious and is no longer doing prostitution..")
+		GM.main.addMessage("Твоя рабыня "+getChar().getName()+" получила по морде и отключилась, теперь больше не занимается проституцией...")
 
 func hoursPassed(_howMuch):
 	if(!pawnExist()):
@@ -88,7 +88,7 @@ func getInteractActions():
 	return [
 		{
 			name = "Отмена",
-			desc = "Find your slut and tell them to stop whoring themselves out.",
+			desc = "Найди свою шлюху и прикажи ей перестать трахаться за копейки.",
 			sceneID = "SlaveryCancelActivity",
 			args = ["You find {npc.name} out in the prison and tell {npc.him} to stop working. Since you disturbed {npc.his} work, you won't get any credits."],
 			buttonChecks = [],

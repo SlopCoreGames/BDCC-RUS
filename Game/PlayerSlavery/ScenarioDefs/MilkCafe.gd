@@ -7,7 +7,7 @@ func getVisibleName() -> String:
 	return "Рабыня-доярка"
 
 func getVisibleDesc() -> String:
-	return "You will be sold to a lovely couple that runs a cafe that is in dire need of milk and/or seed."
+	return "Тебя продадут милой парочке, которая держит кафе, остро нуждающееся в молоке и/или семени."
 
 func canBeChosen() -> bool:
 	return true
@@ -19,18 +19,18 @@ func getEndings() -> Dictionary:
 	return {
 		"earned": {
 			name = "Выплатить долг",
-			desc = "Be a good cow/bull",
+			desc = "Быть послушной коровкой/бычком",
 		},
 		"annoyed": {
 			name = "Купить тебя было ошибкой",
-			desc = "Be the most annoying thing imaginable",
+			desc = "Быть самой невыносимой тварью на свете",
 		},
 		"escaped": {
 			name = "Командная работа — залог успеха",
-			desc = "Escape with the help of other slaves",
+			desc = "Сбежать с помощью других рабов",
 		},
 		"officer": {
 			name = "Особое угощение",
-			desc = "Get the attention of a hero",
+			desc = "Привлечь внимание героя",
 		},
 	}

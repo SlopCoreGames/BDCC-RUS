@@ -12,7 +12,7 @@ func init_text():
 	saynn("{nurse.name} подходит и проверяет состояние {inmate.your}..")
 	saynn("После этого {nurse.he} подкатывает {nurse.verb('unfold')} каталку и начинает закреплять на ней бессознательного человека..")
 
-	addAction("medbay", "To medbay", "Time to go..", "default", 1.0, 120, {})
+	addAction("medbay", "В медпункт", "Пора идти..", "default", 1.0, 120, {})
 
 func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "medbay"):
@@ -22,7 +22,7 @@ func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 func moving_to_medical_text():
 	saynn("{nurse.name} толкает каталку с {inmate.you} на ней в сторону медицинского крыла!")
 
-	addAction("medbay", "To medbay", "Push push push", "default", 1.0, 60, {})
+	addAction("medbay", "В медпункт", "Давай, давай, давай!", "default", 1.0, 60, {})
 
 func moving_to_medical_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "medbay"):
@@ -34,7 +34,7 @@ func moving_to_medical_do(_id:String, _args:Dictionary, _context:Dictionary):
 func in_wards_text():
 	saynn("{nurse.name} укладывает {inmate.you} в одну из больничных коек для восстановления..")
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 120, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 120, {})
 
 func in_wards_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -54,7 +54,7 @@ func in_wards_do(_id:String, _args:Dictionary, _context:Dictionary):
 func in_wards_pc_text():
 	saynn("Пора отдохнуть..")
 
-	addAction("rest", "Rest", "Try to recover..", "default", 1.0, 90, {})
+	addAction("rest", "Отдохнуть", "Попытаться прийти в себя...", "default", 1.0, 90, {})
 
 func in_wards_pc_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "rest"):
@@ -66,7 +66,7 @@ func in_wards_pc2_text():
 	saynn("Они осматривают вас, а затем делают инъекцию каким-то шприцем..")
 	saynn("Вы медленно приходите в себя..")
 
-	addAction("rest", "Rest", "Try to rest..", "default", 1.0, 3600, {})
+	addAction("rest", "Отдохнуть", "Попытаться отдохнуть...", "default", 1.0, 3600, {})
 
 func in_wards_pc2_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "rest"):
@@ -81,7 +81,7 @@ func in_wards_pc3_text():
 	saynn("В конце концов, вы обретаете чувство реальности..")
 	saynn("Когда вы окончательно очухаетесь, медсестры отводят вас обратно в холл медпункта и отпускают..")
 
-	addAction("go", "Go", "It's time to go..", "default", 1.0, 60, {})
+	addAction("go", "Go", "Пора идти...", "default", 1.0, 60, {})
 
 func in_wards_pc3_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "go"):

@@ -695,7 +695,7 @@ func addExperienceIfPlayer(ex: int, showMessage: bool = true):
 	if(!isPlayer()):
 		return
 	if(showMessage):
-		GM.main.addMessage("You received "+str(ex)+" experience")
+		GM.main.addMessage("Вы получили "+str(ex)+" experience")
 	getChar().addExperience(ex)
 
 func getPawnTypeID() -> String:

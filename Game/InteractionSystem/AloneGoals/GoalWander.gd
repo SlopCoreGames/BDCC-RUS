@@ -16,7 +16,7 @@ func getActions() -> Array:
 		{
 			id = "wander",
 			name = "Бродить",
-			desc = "Do something",
+			desc = "Что-нибудь сделать",
 			score = 1.0,
 			args = {},
 			time = 60,

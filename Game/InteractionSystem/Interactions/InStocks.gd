@@ -70,16 +70,16 @@ func init_text():
 			elif(npcSlave.getBrokenSpirit() > 0.5):
 				saynn("{inmate.He} почти не сопротивляется — признак того, что дух {inmate.his} ломается.")
 
-	addAction("rest", "Rest", "Stay quiet and try to get some rest", "default", 0.1, 1800, {})
-	addAction("shout", "Shout", "Try to get some attention..", "default", (0.1 + scorePersonality("inmate", {PersonalityStat.Naive:0.1})), 30, {})
+	addAction("rest", "Отдохнуть", "Помолчать и попытаться немного отдохнуть", "default", 0.1, 1800, {})
+	addAction("shout", "Закричать", "Попытаться привлечь внимание...", "default", (0.1 + scorePersonality("inmate", {PersonalityStat.Naive:0.1})), 30, {})
 	if(getRoleChar("inmate").getStamina() > 0):
-		addAction("struggle", "Struggle", "Maybe you can escape somehow", "default", 10.0, 300, {})
+		addAction("struggle", "Сопротивление", "Может, получится как-нибудь сбежать", "default", 10.0, 300, {})
 	else:
-		addDisabledAction("Struggle", "You are completely out of stamina and can't struggle")
+		addDisabledAction("Сопротивление", "Вы полностью выдохлись и не можете сопротивляться")
 	if(canEscapeThisInteraction()):
-		addAction("escape", "Escape", "Sweet freedom!", "default", 1000.0, 0, {})
+		addAction("escape", "Побег", "Сладкая свобода!", "default", 1000.0, 0, {})
 	else:
-		addDisabledAction("Escape", "You can't escape while you are still locked..")
+		addDisabledAction("Побег", "Вы не сможете сбежать, пока всё ещё заперты...")
 
 func onEscapeLockedRestraints():
 	pass
@@ -108,7 +108,7 @@ func after_rest_text():
 	else:
 		saynn("{inmate.You} {inmate.youVerb('decide')} помалкивать и просто немного отдохнуть.")
 
-	addAction("continue", "Continue", "See what happens next", "default", 1.0, 0, {})
+	addAction("continue", "Продолжить", "Смотреть, что будет дальше", "default", 1.0, 0, {})
 
 func after_rest_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -118,7 +118,7 @@ func after_rest_do(_id:String, _args:Dictionary, _context:Dictionary):
 func about_to_struggle_text():
 	saynn("{inmate.name} пытается вырваться!")
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 60, {})
 
 func about_to_struggle_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -133,7 +133,7 @@ func about_to_struggle_do(_id:String, _args:Dictionary, _context:Dictionary):
 func after_struggle_text():
 	saynn(struggleText)
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 60, {})
 
 func after_struggle_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -147,7 +147,7 @@ func about_to_use_text():
 	else:
 		saynn("{user.You} {user.youVerb('approach', 'approaches')} в колодках, и вот-вот применят {inmate.you}...")
 
-	addAction("continue", "Continue", "Start the sex!", "default", 1.0, 600, {start_sex=["user", "inmate", SexType.StocksSex],})
+	addAction("continue", "Продолжить", "Начать секс!", "default", 1.0, 600, {start_sex=["user", "inmate", SexType.StocksSex],})
 
 func about_to_use_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -160,7 +160,7 @@ func about_to_use_do(_id:String, _args:Dictionary, _context:Dictionary):
 func after_use_text():
 	saynn("{user.name} закончила использовать {inmate.you}..")
 
-	addAction("leave", "Leave", "Time to go", "default", 1.0, 60, {})
+	addAction("leave", "Уйти", "Пора идти", "default", 1.0, 60, {})
 
 func after_use_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "leave"):
@@ -174,15 +174,15 @@ func about_to_save_text():
 	else:
 		saynn("{saver.You} {saver.youVerb('stand')} рядом с {inmate.you}.")
 
-	saynn("{saver.YouHe} может либо потратить немного {saver.yourHis} выносливости, чтобы помочь {inmate.you} выбраться из "+stocksSlutwallText("stocks", "the slutwall")+".. либо использовать ключ, чтобы отпереть их.")
+	saynn("{saver.YouHe} может либо потратить немного {saver.yourHis} выносливости, чтобы помочь {inmate.you} выбраться из "+stocksSlutwallText("stocks", "стенд для шлюх")+".. либо использовать ключ, чтобы отпереть их.")
 
 	if(getRoleChar("saver").getStamina() > 0):
-		addAction("help", "Help", "Spend some stamina and help them", "default", 1.0, 180, {})
+		addAction("help", "Помочь", "Потратить немного выносливости и помочь им", "default", 1.0, 180, {})
 	else:
-		addDisabledAction("Help", "You don't have any stamina left..")
+		addDisabledAction("Помочь", "У вас не осталось выносливости...")
 	if(getRoleChar("saver").getInventory().hasItemID("restraintkey")):
-		addAction("key", "Restraint key", "Use a restraint key to unlock the "+stocksSlutwallText("stocks", "slutwall"), "help", 0.2, 60, {})
-	addAction("leave", "Leave", "", "justleave", 1.0 + (saveTryCount*saveTryCount*0.1), 30, {})
+		addAction("key", "Ключ от пут", "Использовать ключ от фиксаторов, чтобы разблокировать "+stocksSlutwallText("stocks", "slutwall"), "help", 0.2, 60, {})
+	addAction("leave", "Уйти", "", "justleave", 1.0 + (saveTryCount*saveTryCount*0.1), 30, {})
 
 func about_to_save_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "help"):
@@ -202,13 +202,13 @@ func about_to_save_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func refusable_save_using_stamina_text():
-	saynn("{saver.You} {saver.youAre} собирается помочь {inmate.you} выбраться из "+stocksSlutwallText("stocks", "the slutwall")+".")
+	saynn("{saver.You} {saver.youAre} собирается помочь {inmate.you} выбраться из "+stocksSlutwallText("stocks", "стенд для шлюх")+".")
 
 	var acceptHelpProbability = getInmateAcceptHelpProbability()
 	var refuseHelpProbability = 1.0 - acceptHelpProbability
-	addAction("accept", "Accept", "Allow them to help you", "default", acceptHelpProbability, 60, {})
-	addAction("refuse", "Refuse", "You'd rather stay locked", "default", refuseHelpProbability, 60, {})
-	addAction("offer_self", "Offer self", "Invite them to fuck you instead", "sexSub", 0.5, 60, {})
+	addAction("accept", "Принять", "Позволить им помочь", "default", acceptHelpProbability, 60, {})
+	addAction("refuse", "Отказаться", "Вы скорее предпочтете остаться запертой", "default", refuseHelpProbability, 60, {})
+	addAction("offer_self", "Предложить себя", "Вместо этого пригласить их трахнуть вас", "sexSub", 0.5, 60, {})
 
 func refusable_save_using_stamina_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "accept"):
@@ -221,12 +221,12 @@ func refusable_save_using_stamina_do(_id:String, _args:Dictionary, _context:Dict
 
 
 func refusable_save_using_key_text():
-	saynn("{saver.You} {saver.youAre} собирается использовать ключ от наручников, чтобы отпереть "+stocksSlutwallText("the stocks", "the slutwall")+".")
+	saynn("{saver.You} {saver.youAre} собирается использовать ключ от наручников, чтобы отпереть "+stocksSlutwallText("колодки", "стенд для шлюх")+".")
 
 	var acceptHelpProbability = getInmateAcceptHelpProbability()
 	var refuseHelpProbability = 1.0 - acceptHelpProbability
-	addAction("accept", "Accept", "Allow them to unlock you", "default", acceptHelpProbability, 60, {})
-	addAction("refuse", "Refuse", "You'd rather stay locked", "default", refuseHelpProbability, 60, {})
+	addAction("accept", "Принять", "Позволить им освободить вас", "default", acceptHelpProbability, 60, {})
+	addAction("refuse", "Отказаться", "Вы скорее предпочтете остаться запертой", "default", refuseHelpProbability, 60, {})
 
 func refusable_save_using_key_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "accept"):
@@ -239,7 +239,7 @@ func refused_save_text():
 	saynn("{inmate.You} {inmate.youVerb('refuse', 'refused')} {saver.your} на помощь.")
 	sayLine("inmate", "HelpStocksSlutwallRefuse", {main="inmate", target="saver"})
 
-	addAction("leave", "Leave", "Time to go", "default", 1.0, 60, {})
+	addAction("leave", "Уйти", "Пора идти", "default", 1.0, 60, {})
 
 func refused_save_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "leave"):
@@ -275,8 +275,8 @@ func refused_save_offered_self_text():
 	saynn("\nНо {inmate.youHe} {inmate.youDontHeDoesnt} хочет, чтобы {saver.youHim} пока не уходил(а)..")
 	sayLine("inmate", "TalkSexOfferSelf", {main="inmate", target="saver"})
 
-	addAction("agree", "Agree", "Agree to fuck them", "agreeSexAsDom", 1.0, 60, {})
-	addAction("deny", "Deny", "You'd rather not..", "default", 0.2, 60, {})
+	addAction("agree", "Согласиться", "Согласиться трахнуться с ними", "agreeSexAsDom", 1.0, 60, {})
+	addAction("deny", "Отказать", "Пожалуй, лучше не надо...", "default", 0.2, 60, {})
 
 func refused_save_offered_self_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "agree"):
@@ -292,7 +292,7 @@ func offered_self_deny_text():
 	sayLine("saver", "TalkSexOfferSelfDeny", {main="saver", target="inmate"})
 	saynn("{saver.You} {saver.youVerb('walk')} уходит, оставляя {inmate.you} на растерзание кому-то другому..")
 
-	addAction("continue", "Continue", "Aww..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "О-о-о...", "default", 1.0, 60, {})
 
 func offered_self_deny_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -306,7 +306,7 @@ func canceled_save_text():
 	else:
 		saynn("{saver.You} {saver.youVerb('leave')}, больше не пытаясь спасти {inmate.you}..")
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 30, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 30, {})
 
 func canceled_save_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -320,7 +320,7 @@ func save_saved_text():
 	else:
 		saynn("{saver.name} отпирает "+stocksSlutwallText("stocks", "slutwall")+" с ключом от наручников!")
 
-	addAction("leave", "Free!", "You're free!", "default", 1.0, 60, {})
+	addAction("leave", "Свободна!", "Вы на свободе!", "default", 1.0, 60, {})
 
 func save_saved_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "leave"):
@@ -330,8 +330,8 @@ func save_saved_do(_id:String, _args:Dictionary, _context:Dictionary):
 func save_after_help_text():
 	saynn(struggleText)
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 30, {})
-	addAction("stop", "Stop them", "Wiggle them off", "default", 0.0, 60, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 30, {})
+	addAction("stop", "Остановить их", "Вывернуть их", "default", 0.0, 60, {})
 
 func save_after_help_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -347,7 +347,7 @@ func about_to_shout_text():
 		saynn("{inmate.You} {inmate.youVerb('try', 'tries')} пытается кричать, чтобы привлечь чьё-нибудь внимание..")
 		sayLine("inmate", "StocksShout", {main="inmate"})
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 180, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 180, {})
 
 func about_to_shout_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -368,7 +368,7 @@ func about_to_shout_do(_id:String, _args:Dictionary, _context:Dictionary):
 func after_shout_text():
 	saynn("После {inmate.your} попыток никто так и не пришёл.. По крайней мере, {inmate.youHe} удалось немного отдохнуть..")
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 30, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 30, {})
 
 func after_shout_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -383,7 +383,7 @@ func about_to_sleep_text():
 	saynn("Неужели они просто.. оставят тебя в таком виде?")
 	saynn("Ну что ж, пора устроиться поудобнее..")
 
-	addAction("sleep", "Sleep", "Try and sleep like this..", "default", 1.0, 60, {})
+	addAction("sleep", "Спать", "Попробовать уснуть в таком положении...", "default", 1.0, 60, {})
 
 func about_to_sleep_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "sleep"):
@@ -393,10 +393,10 @@ func about_to_sleep_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func after_sleep_text():
-	saynn("Ты открываешь глаза.. и понимаешь, что всё ещё "+stocksSlutwallText("bound in stocks", "stuck in a slutwall")+".. Ага, это не сон, всё происходит на самом деле..")
+	saynn("Ты открываешь глаза.. и понимаешь, что всё ещё "+stocksSlutwallText("зажаты в колодках", "застряли в слэт-стенке")+".. Ага, это не сон, всё происходит на самом деле..")
 	saynn("Добро пожаловать в "+str(GM.main.getDays())+" день твоего срока.")
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 60, {})
 
 func after_sleep_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -406,7 +406,7 @@ func after_sleep_do(_id:String, _args:Dictionary, _context:Dictionary):
 func free_slave_text():
 	saynn("Запасов достаточно. Освобождай {inmate.name}, а затем заказывай {inmate.him}, чтобы она вернулась в камеру.")
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 60, {})
 
 func free_slave_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -419,7 +419,7 @@ func getInterruptActions(_pawn:CharacterPawn) -> Array:
 		result.append({
 			id = "use",
 			name = "Использовать",
-			desc = "Use them while they are stuck in "+stocksSlutwallText("stocks", "the slutwall"),
+			desc = "Использовать их, пока они зажаты "+stocksSlutwallText("stocks", "стенд для шлюх"),
 			score = 1.0,
 			scoreType = "sexUse",
 			scoreRole = "inmate",
@@ -430,7 +430,7 @@ func getInterruptActions(_pawn:CharacterPawn) -> Array:
 		result.append({
 			id = "free",
 			name = "Освободить",
-			desc = "Try to free them!",
+			desc = "Попытаться освободить их!",
 			score = helpScore,
 			scoreType = "help",
 			scoreRole = "inmate",
@@ -440,7 +440,7 @@ func getInterruptActions(_pawn:CharacterPawn) -> Array:
 		result.append({
 			id = "free_slave",
 			name = "Разблокировать рабыню",
-			desc = "Let your slave return back to your cell..",
+			desc = "Позволить своей рабыне вернуться в камеру...",
 			score = 0.0,
 			scoreType = "default",
 			scoreRole = "inmate",

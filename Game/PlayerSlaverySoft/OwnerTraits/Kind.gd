@@ -7,7 +7,7 @@ func getVisibleName() -> String:
 	return "Добрый"
 
 func getVisibleDescription() -> String:
-	return "The owner is a bit less likely to do mean things to you. They might also decide to not punish you."
+	return "Владелец будет чуть реже творить с тобой всякие гадости. А еще он может решить тебя не наказывать."
 
 func getPossiblePCNamesForLevel(_npcOwner, _level:int) -> Array:
 	#var ownerHasVagina:bool = _npcOwner.getOwner().hasVagina()

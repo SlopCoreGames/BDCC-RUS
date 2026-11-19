@@ -8,7 +8,7 @@ func registerTriggers(es):
 	
 func run(_triggerID, _args):
 	if(getFlag("TaviModule.Ch5BigSceneStarted") && !getFlag("TaviModule.Ch5FoundPunishedTavi")):
-		addButtonUnlessLate("Tavi?", "Ask her about Tavi", "starttavi")
+		addButtonUnlessLate("Тави?", "Спросить её о Тави", "starttavi")
 
 func getPriority():
 	return 0

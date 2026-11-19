@@ -48,12 +48,12 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([
-		"I want to be your drawing canvas.. Please..",
-		"I need you to write all over me.. Please?",
-		"Please.. Write some nice things all over my body..",
-		"Please.. Write something naughty on my body..",
-		"Would you leave me some bodywritings as a gift?",
-		"Would you pick up a marker and describe me for everyone to see..",
+		"Я хочу быть твоим холстом... Пожалуйста...",
+		"Мне нужно, чтобы ты исписал меня целиком... Ну пожалуйста?",
+		"Пожалуйста... Напиши на моем теле что-нибудь приятное...",
+		"Пожалуйста... Напиши на моем теле что-нибудь пошлое...",
+		"Оставишь мне надписи на теле в подарок?",
+		"Возьмешь маркер и опишешь меня так, чтобы все видели...?",
 	])
 
 func getBegDomFetishes() -> Dictionary:

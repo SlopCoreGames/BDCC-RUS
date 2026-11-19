@@ -3,7 +3,7 @@ extends MissionBase
 func _init():
 	id = "SideMission4"
 	name = "Лабораторная крыса"
-	desc = "Avy and Ferri seem to be having some kind of argument."
+	desc = "Кажется, Эви и Ферри о чем-то спорят."
 	
 	startScene = "DomSM4"
 	requiredMissions = ["Mission4"]
@@ -21,14 +21,14 @@ func _init():
 					effects = [
 						DECISION_EFFECT_AVY_LOVE,
 					],
-					avyLine = "That brat got what she deserved! She is just our slave.",
+					avyLine = "Эта дрянь получила по заслугам! Она всего лишь наша рабыня.",
 				},
 				"avy": {
 					text = "Эви",
 					effects = [
 						DECISION_EFFECT_AVY_OBEDIENCE,
 					],
-					avyLine = "Don't look at me like that. Shut up. Grr-r.",
+					avyLine = "Не смотри на меня так. Заткнись. Гррр.",
 				},
 			},
 		}

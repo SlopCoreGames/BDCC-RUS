@@ -385,6 +385,6 @@ func _react(_action: String, _args):
 		processTime(5*60)
 
 	if(_action == "let_team_in"):
-		addMessage("Task updated!")
+		addMessage("Задача обновлена!")
 
 	setState(_action)

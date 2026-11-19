@@ -145,17 +145,17 @@ func addAffection(char1:String, char2:String, howMuch:float, showMessage:bool = 
 		if(diff > 0.0):
 			if(isPC):
 				if(showPCMessage):
-					GM.main.addMessage(char2Name+"'s affection towards you has increased from "+oldStr+"% to "+affStr+"%")
+					GM.main.addMessage(char2Name+"симпатия к вам выросла с "+oldStr+"% to "+affStr+"%")
 			else:
 				if(showMessage):
-					GM.main.addMessage("Affection between "+char1Name+" and "+char2Name+" has increased from "+oldStr+"% to "+affStr+"%")
+					GM.main.addMessage("Симпатия между "+char1Name+" and "+char2Name+" выросла с "+oldStr+"% to "+affStr+"%")
 		if(diff < 0.0):
 			if(isPC):
 				if(showPCMessage):
-					GM.main.addMessage(char2Name+"'s affection towards you has decreased from "+oldStr+"% to "+affStr+"%")
+					GM.main.addMessage(char2Name+"симпатия к вам упала с "+oldStr+"% to "+affStr+"%")
 			else:
 				if(showMessage):
-					GM.main.addMessage("Affection between "+char1Name+" and "+char2Name+" has decreased from "+oldStr+"% to "+affStr+"%")
+					GM.main.addMessage("Симпатия между "+char1Name+" and "+char2Name+" упала с "+oldStr+"% to "+affStr+"%")
 	checkRemoveEntry(char1, char2)
 	
 	sendSocialEvent(char1, char2, SocialEventType.AffectionChange, [diff, oldAff])
@@ -187,17 +187,17 @@ func addLust(char1:String, char2:String, howMuch:float, showMessage:bool = false
 		if(diff > 0.0):
 			if(isPC):
 				if(showPCMessage):
-					GM.main.addMessage(char2Name+"'s lust towards you has increased from "+oldStr+"% to "+affStr+"%")
+					GM.main.addMessage(char2Name+"похоть к вам выросла с "+oldStr+"% to "+affStr+"%")
 			else:
 				if(showMessage):
-					GM.main.addMessage("Lust between "+char1Name+" and "+char2Name+" has increased from "+oldStr+"% to "+affStr+"%")
+					GM.main.addMessage("Похоть между "+char1Name+" and "+char2Name+" выросла с "+oldStr+"% to "+affStr+"%")
 		if(diff < 0.0):
 			if(isPC):
 				if(showPCMessage):
-					GM.main.addMessage(char2Name+"'s lust towards you has decreased from "+oldStr+"% to "+affStr+"%")
+					GM.main.addMessage(char2Name+"похоть к вам упала с "+oldStr+"% to "+affStr+"%")
 			else:
 				if(showMessage):
-					GM.main.addMessage("Lust between "+char1Name+" and "+char2Name+" has decreased from "+oldStr+"% to "+affStr+"%")
+					GM.main.addMessage("Похоть между "+char1Name+" and "+char2Name+" упала с "+oldStr+"% to "+affStr+"%")
 	checkRemoveEntry(char1, char2)
 	
 	sendSocialEvent(char1, char2, SocialEventType.LustChange, [diff, oldAff])

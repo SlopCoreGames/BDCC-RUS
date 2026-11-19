@@ -3,7 +3,7 @@ extends MissionBase
 func _init():
 	id = "SideMission1"
 	name = "На мели"
-	desc = "Avy needs your help with returning a debt."
+	desc = "Ави нужна твоя помощь с возвратом долга."
 	
 	startScene = "DomSM1"
 	requiredMissions = ["Mission1"]
@@ -21,14 +21,14 @@ func _init():
 					effects = [
 						DECISION_EFFECT_AVY_LOVE,
 					],
-					avyLine = "Thanks for the help. I didn't really need it but who knows.",
+					avyLine = "Спасибо за помощь. На самом деле она была не особо нужна, но кто знает.",
 				},
 				"stopped": {
 					text = "Да",
 					effects = [
 						DECISION_EFFECT_AVY_OBEDIENCE,
 					],
-					avyLine = "You gotta break some fingers sometimes.. Otherwise people don't pay. It's also fun, you know? Oh well.",
+					avyLine = "Иногда приходится переломать пару пальцев... Иначе люди не платят. Да и само по себе это весело, понимаешь? Ну да ладно.",
 				},
 			},
 		}

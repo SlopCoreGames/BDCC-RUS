@@ -267,7 +267,7 @@ func _react(_action: String, _args):
 		processTime(2*60)
 		GM.pc.addLust(-200)
 		GM.pc.addPain(20)
-		addMessage("You feel weak")
+		addMessage("Ты чувствуешь слабость")
 
 	if(_action == "do_breed"):
 		processTime(10*60)

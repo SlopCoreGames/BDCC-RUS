@@ -48,11 +48,11 @@ func getTaskHint(_isSlaveLevelup):
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [
-		"Your throat needs to be properly used and filled.",
-		"Go get a load or two dumped down your throat.",
-		"I want you swallowing cum straight from the source.",
-		"Your mouth should be used as a cum receptacle.",
-		"Find someone to finish deep in your throat."
+		"Твоему горлу нужно как следует поработать и наполниться.",
+		"Сходи и дай себе пару порций кончить прямо в глотку.",
+		"Я хочу, чтобы ты глотала сперму прямо из источника.",
+		"Твой рот должен служить приемником для кончи.",
+		"Найди кого-нибудь, кто кончит тебе глубоко в глотку."
 	]
 
 func getSexGoalWeightModifier(_sexGoalID:String) -> float:

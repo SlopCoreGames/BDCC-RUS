@@ -47,7 +47,7 @@ func _run():
 		#playAnimation(StageScene.PuppyDuo, "walk", {npc=npcID, npcAction="walk", flipNPC=true, npcBodyState={naked=true, leashedBy="pc"}})
 		playAnimation(StageScene.PuppyDuo, "stand", {npc=npcID, flipNPC=true, npcBodyState={naked=true, leashedBy="pc"}})
 
-		saynn("Вы "+("undress and " if !npc.isFullyNaked() else "")+"надень на своего питомца собачьи ограничители, прежде чем выводить {npc.him} в главный зал на прогулку.")
+		saynn("Вы "+("раздевайся и " if !npc.isFullyNaked() else "")+"надень на своего питомца собачьи ограничители, прежде чем выводить {npc.him} в главный зал на прогулку.")
 		
 		var npcSlave:NpcSlave = npc.getNpcSlavery()
 		var puppySkill = npcSlave.getSlaveSkill(SlaveType.Pet)

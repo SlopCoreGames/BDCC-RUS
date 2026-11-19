@@ -15,35 +15,35 @@ func init_text():
 	var punisherRestraintsPreventPulling:bool = getRoleChar("punisher").hasBlockedHands() || getRoleChar("punisher").hasBoundArms()
 
 	if(!punisherRestraintsPreventPulling && getRoleChar("target").getInventory().hasEquippedItemWithTag(ItemTag.AllowsEnslaving) && canGetToStocks()):
-		addAction("stocks", "Stocks", "Lock them up in stocks!", "punishMean", 0.2 * getStocksScoreMult(), 60, {})
+		addAction("stocks", "Колодки", "Запереть их в колодки!", "punishMean", 0.2 * getStocksScoreMult(), 60, {})
 	elif(punisherRestraintsPreventPulling):
-		addDisabledAction("Stocks", "You can't do that with restraints on your arms..")
+		addDisabledAction("Колодки", "Так нельзя, когда руки в кандалах...")
 	else:
-		addDisabledAction("Stocks", ""+("They need to be wearing a collar for this!" if canGetToStocks() else "Stocks are too far..")+"")
+		addDisabledAction("Колодки", ""+("Для этого на них должен быть ошейник!" if canGetToStocks() else "Колодки слишком далеко...")+"")
 	if(!punisherRestraintsPreventPulling && getRolePawn("punisher").isInmate() && getRoleChar("target").getInventory().hasEquippedItemWithTag(ItemTag.AllowsEnslaving) && canGetToSlutwall() && getRolePawn("target").isInmate()):
-		addAction("slutwall", "Slutwall", "Force them into a slutwall!", "punishMean", 0.2 * getSlutwallScoreMult(), 60, {})
+		addAction("slutwall", "Стенка для шлюх", "Загнать их в стену для шлюх!", "punishMean", 0.2 * getSlutwallScoreMult(), 60, {})
 	elif(punisherRestraintsPreventPulling):
-		addDisabledAction("Slutwall", "You can't do that with restraints on your arms..")
+		addDisabledAction("Стенка для шлюх", "Так нельзя, когда руки в кандалах...")
 	else:
-		addDisabledAction("Slutwall", ""+(("They need to be wearing a collar for this!" if !getRoleChar("target").getInventory().hasEquippedItemWithTag(ItemTag.AllowsEnslaving) else "They are not one of the inmates..") if canGetToSlutwall() else "Can't get to the slutwall..")+"")
+		addDisabledAction("Стенка для шлюх", ""+(("Для этого на них должен быть ошейник!" if !getRoleChar("target").getInventory().hasEquippedItemWithTag(ItemTag.AllowsEnslaving) else "Они не из числа заключенных...") if canGetToSlutwall() else "Нельзя добраться до стены для шлюх...")+"")
 	if(roleCanStartSex("punisher")):
-		addAction("sex", "Sex", "Just have some fun with them!", "sexDom", 1.0, 60, {})
+		addAction("sex", "Секс", "Просто развлекись с ними!", "sexDom", 1.0, 60, {})
 	else:
-		addDisabledAction("Sex", "You can't fuck them with your restraints..")
+		addDisabledAction("Секс", "В своих кандалах ты их не оттрахаешь...")
 	if(roleCanStartSex("target")):
-		addAction("sexsub", "Submit to", "Let them fuck you", "sexSub", 1.0, 60, {})
+		addAction("sexsub", "Подчиниться", "Дай им трахнуть тебя", "sexSub", 1.0, 60, {})
 	else:
-		addDisabledAction("Submit to", "They can't fuck you with their restraints..")
+		addDisabledAction("Подчиниться", "В своих кандалах они тебя не оттрахают...")
 	if(getRoleChar("punisher").isPlayer()):
 		var elizaModule = GlobalRegistry.getModule("ElizaModule")
 		if(elizaModule && elizaModule.hasAccessToTentacles()):
 			if(!punisherRestraintsPreventPulling && getRoleChar("target").getInventory().hasEquippedItemWithTag(ItemTag.AllowsEnslaving) && canGetToStocks()):
-				addAction("tentacles", "Tentacles", "Get them punished by the tentacles in your cell", "default", 0.0, 60, {})
+				addAction("tentacles", "Тентакли", "Подставить их под щупальца в своей камере", "default", 0.0, 60, {})
 			elif(punisherRestraintsPreventPulling):
-				addDisabledAction("Tentacles", "You can't do that with restraints on your arms..")
+				addDisabledAction("Тентакли", "Так нельзя, когда руки в кандалах...")
 			else:
-				addDisabledAction("Tentacles", ""+("They need to be wearing a collar for this!" if canGetToStocks() else "Your cell is too far..")+"")
-	addAction("leave", "Leave", "Just leave", "justleave", 1.0, 30, {})
+				addDisabledAction("Тентакли", ""+("Для этого на них должен быть ошейник!" if canGetToStocks() else "Твоя камера слишком далеко...")+"")
+	addAction("leave", "Уйти", "Просто уйти", "justleave", 1.0, 30, {})
 
 	addDefeatButtons("punisher", "target")
 
@@ -67,7 +67,7 @@ func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 func about_to_tentacles_text():
 	saynn("{punisher.name} пристегивает поводок к ошейнику {target.your}.")
-	addAction("cell", "Escort", "Escort them towards your cell", "default", 1.0, 60, {})
+	addAction("cell", "Сопровождать", "Вести их к своей камере", "default", 1.0, 60, {})
 
 func about_to_tentacles_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "cell"):
@@ -76,7 +76,7 @@ func about_to_tentacles_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 func pulling_to_cell_tentacles_text():
 	saynn("{punisher.name} тащит {target.name} к камере {punisher.his}!")
-	addAction("cell", "Escort", "Pull them towards your cell", "default", 1.0, 60, {})
+	addAction("cell", "Сопровождать", "Тянуть их к своей камере", "default", 1.0, 60, {})
 
 func pulling_to_cell_tentacles_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "cell"):
@@ -92,7 +92,7 @@ func about_to_stocks_text():
 	saynn("{punisher.name} пристегивает поводок к ошейнику {target.your}.")
 	sayLine("punisher", "PunishDecideStocks", {punisher="punisher", target="target"})
 
-	addAction("stocks", "Escort", "Escort them towards the stocks", "default", 1.0, 60, {})
+	addAction("stocks", "Сопровождать", "Вести их к колодкам", "default", 1.0, 60, {})
 
 func about_to_stocks_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "stocks"):
@@ -104,7 +104,7 @@ func about_to_sex_text():
 	saynn("{punisher.name} хватает {target.you}...")
 	sayLine("punisher", "PunishSex", {punisher="punisher", target="target"})
 
-	addAction("sex", "Sex", "Start the sex", "default", 1.0, 300, {start_sex=["punisher", "target"],})
+	addAction("sex", "Секс", "Начать секс", "default", 1.0, 300, {start_sex=["punisher", "target"],})
 
 func about_to_sex_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "sex"):
@@ -116,7 +116,7 @@ func about_to_subsex_text():
 	saynn("{punisher.name} подчиняется {target.you}...")
 	sayLine("punisher", "PunishSubSex", {punisher="punisher", target="target"})
 
-	addAction("sex", "Sex", "Start the sex", "default", 1.0, 300, {start_sex=["target", "punisher"],})
+	addAction("sex", "Секс", "Начать секс", "default", 1.0, 300, {start_sex=["target", "punisher"],})
 
 func about_to_subsex_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "sex"):
@@ -127,7 +127,7 @@ func about_to_subsex_do(_id:String, _args:Dictionary, _context:Dictionary):
 func pulling_to_stocks_text():
 	saynn("{punisher.name} тащит {target.name} к платформе для наказаний!")
 
-	addAction("stocks", "Escort", "Pull them towards the stocks", "default", 1.0, 60, {})
+	addAction("stocks", "Сопровождать", "Потянуть их к колодкам", "default", 1.0, 60, {})
 
 func pulling_to_stocks_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "stocks"):
@@ -140,7 +140,7 @@ func about_to_lock_stocks_text():
 	saynn("{punisher.name} ведет {target.name} к колодкам.")
 	sayLine("punisher", "PunishAboutToStocks", {punisher="punisher", target="target"})
 
-	addAction("lock_them", "Lock them", "Force them into the stocks", "default", 1.0, 120, {})
+	addAction("lock_them", "Запереть их", "Загнать их в колодки", "default", 1.0, 120, {})
 
 func about_to_lock_stocks_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "lock_them"):
@@ -154,7 +154,7 @@ func in_stocks_text():
 	saynn("{punisher.name} зажимает {target.name} в колодках!")
 	sayLine("punisher", "PunishLockIntoStocks", {punisher="punisher", target="target"})
 
-	addAction("leave", "Leave", "Leave them be", "default", 1.0, 30, {})
+	addAction("leave", "Уйти", "Оставить их в покое", "default", 1.0, 30, {})
 
 func in_stocks_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "leave"):
@@ -165,7 +165,7 @@ func in_stocks_do(_id:String, _args:Dictionary, _context:Dictionary):
 func after_sex_text():
 	saynn("После секса {punisher.name} оставляет {target.you} в покое...")
 
-	addAction("leave", "Leave", "Time to go", "default", 1.0, 30, {})
+	addAction("leave", "Уйти", "Пора идти", "default", 1.0, 30, {})
 
 func after_sex_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "leave"):
@@ -175,7 +175,7 @@ func after_sex_do(_id:String, _args:Dictionary, _context:Dictionary):
 func just_leaving_text():
 	saynn("{punisher.name} решает просто оставить {target.name} в покое..")
 
-	addAction("leave", "Leave", "Time to go", "default", 1.0, 30, {})
+	addAction("leave", "Уйти", "Пора идти", "default", 1.0, 30, {})
 
 func just_leaving_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "leave"):
@@ -186,7 +186,7 @@ func about_to_slutwall_text():
 	saynn("{punisher.name} пристегивает поводок к ошейнику {target.your}.")
 	sayLine("punisher", "PunishDecidedSlutwall", {punisher="punisher", target="target"})
 
-	addAction("escort", "Escort", "Escort them towards the slutwall", "default", 1.0, 60, {})
+	addAction("escort", "Сопровождать", "Повести их к шлюзовой стене", "default", 1.0, 60, {})
 
 func about_to_slutwall_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "escort"):
@@ -197,7 +197,7 @@ func about_to_slutwall_do(_id:String, _args:Dictionary, _context:Dictionary):
 func pulling_to_slutwall_text():
 	saynn("{punisher.name} тащит {target.name} к шлюх-стене!")
 
-	addAction("escort", "Escort", "Pull them towards the slutwall", "default", 1.0, 60, {})
+	addAction("escort", "Сопровождать", "Потянуть их к шлюзовой стене", "default", 1.0, 60, {})
 
 func pulling_to_slutwall_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "escort"):
@@ -209,7 +209,7 @@ func pulling_to_slutwall_do(_id:String, _args:Dictionary, _context:Dictionary):
 func about_to_lock_slutwall_text():
 	saynn("{punisher.name} зажимает {target.name} в шлюх-стене.")
 
-	addAction("lock_them", "Lock them", "Force them into the slutwall", "default", 1.0, 120, {})
+	addAction("lock_them", "Запереть их", "Загнать их в шлюзовую стену", "default", 1.0, 120, {})
 
 func about_to_lock_slutwall_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "lock_them"):
@@ -223,7 +223,7 @@ func in_slutwall_text():
 	saynn("{punisher.name} зажимает {target.name} в шлюх-стене!")
 	sayLine("punisher", "PunishLockIntoSlutwall", {punisher="punisher", target="target"})
 
-	addAction("leave", "Leave", "Leave them be", "default", 1.0, 30, {})
+	addAction("leave", "Уйти", "Оставить их в покое", "default", 1.0, 30, {})
 
 func in_slutwall_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "leave"):

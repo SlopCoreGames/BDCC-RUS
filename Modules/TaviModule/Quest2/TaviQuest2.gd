@@ -9,7 +9,7 @@ func getVisibleName():
 func getProgress():
 	var result = []
 	
-	result.append("(Switch-focused Main Route) Tavi told you to meet her near the checkpoint so you can get to the captain's office and try to call 'Tavi's friends'.")
+	result.append("(Основной маршрут, ориентированный на переключение) Тави велела встретиться ей у контрольно-пропускного пункта, чтобы вы могли добраться до кабинета капитана и попытаться дозвониться до «друзей Тави».")
 
 	return result
 

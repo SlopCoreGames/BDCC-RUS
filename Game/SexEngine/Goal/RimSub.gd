@@ -44,11 +44,11 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([
-		"Please, I need to feel your tongue licking my ass.",
-		"I'll be so good for you if you just rim me, please.",
-		"Your tongue in my ass would feel so good, please?",
-		"Just your tongue, teasing my rear hole, is all I can think about. Please?",
-		"Could you please just eat my ass out? I need it so bad.",
+		"Пожалуйста, мне нужно почувствовать, как твой язык лижет мою задницу.",
+		"Я буду такой послушной, если ты просто отлизаешь мне анус, ну пожалуйста.",
+		"Твой язык в моей заднице — это было бы так охеренно, ну пожалуйста?",
+		"Только твой язык, дразнящий моё отверстие... это всё, о чём я могу думать. Ну пожалуйста?",
+		"Можешь, пожалуйста, просто отлизать мне задницу? Мне это безумно нужно.",
 	])
 
 func getBegDomFetishes() -> Dictionary:

@@ -64,12 +64,12 @@ func hoursPassed(_howMuch):
 		
 		if(currentHelpingTask == "wash"):
 			if(GM.main.SCI.hasUpgrade("shower1")):
-				GM.main.addMessage(getChar().getName()+" just washed your slave named "+otherSlave.getName()+" in the Biolab shower")
+				GM.main.addMessage(getChar().getName()+" только что помыл(а) твою рабыню по имени "+otherSlave.getName()+" в душе биолаборатории")
 				GM.main.SCI.doNPCShower(otherSlave)
 				if(GM.main.SCI.hasUpgrade("shower2") && otherSlave.isPregnant()):
 					GM.main.SCI.doNPCShowerInside(otherSlave)
 			else:
-				GM.main.addMessage(getChar().getName()+" just washed your slave named "+otherSlave.getName()+" in the shower")
+				GM.main.addMessage(getChar().getName()+" только что помыл(а) твоего раба по имени "+otherSlave.getName()+" в душе")
 				otherSlave.afterTakingAShower()
 			getSlave().addExperience(10)
 		if(currentHelpingTask == "birth"):

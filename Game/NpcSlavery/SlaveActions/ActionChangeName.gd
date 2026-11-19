@@ -17,4 +17,4 @@ func getVisibleName():
 	return "Изменить имя"
 
 func getVisibleDesc():
-	return "Give your slave a new name"
+	return "Дайте своей рабыне новое имя"

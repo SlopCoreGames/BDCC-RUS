@@ -84,7 +84,7 @@ func start(_pawns:Dictionary, _args:Dictionary):
 func init_text():
 	saynn("{main.You} {main.youAre} куда-то направляется..")
 	
-	addAction("go", "Go!", "Time to go", "default", 1.0, 30, {})
+	addAction("go", "Вперёд!", "Пора идти", "default", 1.0, 30, {})
 
 func shouldJustWander() -> bool:
 	if(shouldLookForExtras()):
@@ -153,7 +153,7 @@ func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 func offer_text():
 	saynn("{main.You} {main.youVerb('offer')} {offer.you} присоединиться..")
 	
-	addAction("join", "Answer", "Time to answer", "default", 1.0, 120, {})
+	addAction("join", "Ответить", "Пора отвечать", "default", 1.0, 120, {})
 
 func offer_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "join"):

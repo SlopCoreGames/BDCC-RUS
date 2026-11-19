@@ -30,7 +30,7 @@ func getPronounGender():
 	return Gender.Male
 	
 func getSmallDescription() -> String:
-	return "Experimental android guard. Its body features a completely black shiny protective layer that goes over its rigid frame."
+	return "Экспериментальный андроид-охранник. Его тело покрыто полностью черным глянцевым защитным слоем, облегающим жесткий каркас."
 
 func getSpecies():
 	return [Species.Canine]

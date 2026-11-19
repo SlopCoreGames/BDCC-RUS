@@ -106,14 +106,14 @@ func onButton(_method, _args):
 	if(_method == "do_repair_clothes"):
 		GM.pc.addCredits(-5)
 		_args[0].repairAllClothes()
-		addMessage("Your slave's clothes have been repaired!")
+		addMessage("Одежда вашей рабыни отремонтирована!")
 		GM.main.reRun()
 	if(_method == "doHeal"):
 		var theChar:BaseCharacter = _args[0]
 		theChar.removeEffect(StatusEffect.Wounded)
 		theChar.removeEffect(StatusEffect.StretchedPainfullyAnus)
 		theChar.removeEffect(StatusEffect.StretchedPainfullyPussy)
-		addMessage("Your slave has been healed!")
+		addMessage("Ваша рабыня исцелена!")
 		GM.main.reRun()
 	if(_method == "starthair"):
 		runScene("ActionSlaveryHaircut", [_args[0]])

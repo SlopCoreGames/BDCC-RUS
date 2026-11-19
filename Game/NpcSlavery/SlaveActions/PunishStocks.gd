@@ -16,27 +16,27 @@ func getVisibleName():
 	return "Колодки"
 
 func getVisibleDesc():
-	return "Put your slave into the stocks and see how they like it"
+	return "Посадить рабыню в колодки и посмотреть, как ей это понравится"
 
 func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var npcSlavery:NpcSlave = getSlave(_slaveID)
 	
 	var text = "Жаждущий наказания, вы накидываете поводок на {npc.name} и приводите {npc.him} к главной платформе для наказаний. Найдя свободные колодки, вы с силой зашвыриваете в них свою рабыню, при необходимости не жалея напора."
 	
-	text += "\n\nYou make sure {npc.his} head and arms are secured properly and just let {npc.him} 'enjoy' being forced into such a vulnerable exposed position for about half an hour.\n\n"
+	text += "\n\nВы следите за тем, чтобы голова и руки {npc.his} были надежно зафиксированы, и просто позволяете {npc.him} «наслаждаться» тем, что её заставили принять столь уязвимую и открытую позу примерно на полчаса.\n\n"
 	
 	if(npcSlavery.getSpoiling() > 0.7):
-		text += "Your slave is not happy about this one bit, {npc.he} glares at you with {npc.his} spoiled eyes, clearly expecting you to free {npc.him} this very second. Luckily, you don't have to obey."
+		text += "Ваша рабыня ни капли не в восторге: {npc.he} сверлит вас взглядом своих {npc.his} избалованных глаз, явно ожидая, что вы освободите {npc.him} прямо сейчас. К счастью, вы вовсе не обязаны подчиняться."
 	
 	elif(npcSlavery.isActivelyResisting()):
-		text += "Your slave is obviously not happy about any of it, {npc.he} actively tries to struggle out of the metal stocks but they prove to be sturdy enough, only leaving {npc.him} exhausted."
+		text += "Ваша рабыня явно не в восторге от происходящего: {npc.he} изо всех сил пытается вырваться из металлических колодок, но те оказываются достаточно прочными, оставляя {npc.him} лишь в состоянии полного изнеможения."
 	elif(npcSlavery.getFear() > 0.6 && npcSlavery.personalityScore({PersonalityStat.Coward: 1.0}) > 0.1):
-		text += "Your slave was quite scared before but {npc.he} {npc.isAre} practically shaking, the embarrassment of the position coupled with not being able to look behind makes {npc.him} quite.. obedient."
+		text += "До этого ваша рабыня была напугана, но теперь {npc.he} {npc.isAre} практически дрожит; стыд от такого положения в сочетании с невозможностью оглянуться назад делает {npc.him} весьма... послушной."
 		npcSlavery.addObedience(0.05)
 	elif(npcSlavery.rewardBalance >= 0):
-		text += "Hints of confusion and frustration are visible on your slave's face as you subject {npc.him} to this unfair punishment."
+		text += "На лице вашей рабыни читаются замешательство и разочарование, когда вы подвергаете {npc.him} этому несправедливому наказанию."
 	else:
-		text += "Your slave complies even if the device brings {npc.him} quite a high level of discomfort. But that's what the punishments are for."
+		text += "Ваша рабыня подчиняется, даже если это устройство доставляет {npc.him} сильнейший дискомфорт. Но для этого наказания и существуют."
 	
 	npcSlavery.handlePunishment(3)
 	npcSlavery.addTired(0.5)
@@ -57,7 +57,7 @@ func getExtraActions(_slaveID, _extraSlavesIDs = {}):
 	return [
 		{
 			name = "Запереть в колодки",
-			desc = "Keep your slave in the stocks",
+			desc = "Оставить рабыню в колодках",
 			sceneID = "PunishSlaveryLeaveInStocks",
 			args = [],
 			buttonChecks = [],

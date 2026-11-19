@@ -43,10 +43,10 @@ func getTaskHint(_isSlaveLevelup):
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [
-		"I want to see someone's seed dripping from your hole"+("s" if GM.pc.hasVagina() else "")+".",
-		"Go get creampied, slut.",
-		"Your insides should be painted white by the time I find you.",
-		"Your hole"+("s need" if GM.pc.hasVagina() else " needs")+" to be properly bred.",
+		"Хочу видеть, как чьё-то семя стекает из твоей дырки"+("s" if GM.pc.hasVagina() else "")+".",
+		"Иди и получи кремпи, шлюха.",
+		"К тому времени, как я тебя найду, твои внутренности должны быть залиты белым.",
+		"Твои дырки"+("нуждаются" if GM.pc.hasVagina() else " needs")+" в хорошем осеменении.",
 	]
 
 func getSexGoalWeightModifier(_sexGoalID:String) -> float:

@@ -27,14 +27,14 @@ func start():
 	saynn("{npc1.name} подходит к вам двоим и приседает перед вами.")
 
 	var biteName:String = RNG.pick([
-		"Bite", "Nom", "Grrr", "Grr", "Chomp",
+		"Укус", "Ням", "Гррр", "Ррр...", "Хрум",
 	])
 	
 	if(walkiesEvent == "bark"):
 		talkModular(C_EXTRA1, C_PC, "SoftSlaveryWalkiesBark") # What a cute puppy. Can you bark for me?
 		
 		var barkName:String = RNG.pick([
-			"Bark", "Woof", "Bork", "Arf", "Ruff", "Yap",
+			"Гав!", "Гав", "Тяв", "Арф", "Рррф", "Тяв-тяв",
 		])
 		
 		if(RNG.chance(50)):
@@ -81,7 +81,7 @@ func youObey():
 	if(walkiesEvent == "bark"):
 		saynn("Ты радостно тявкаешь!")
 		talk(C_PC, RNG.pick([
-			"Bark! Bark!",
+			"Гав! Гав!",
 			"Woof! Bark! Arff-f.",
 		]))
 		saynn("В ответ человек начинает тебя гладить!")

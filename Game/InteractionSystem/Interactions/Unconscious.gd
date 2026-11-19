@@ -15,7 +15,7 @@ func start(_pawns:Dictionary, _args:Dictionary):
 func init_text():
 	saynn("{main.You} {main.youAre} без сознания..")
 	
-	addAction("wait", "Wait", "Maybe something will happen..", "default", 1.0, 600, {})
+	addAction("wait", "Подождать", "Может, хоть что-нибудь да случится...", "default", 1.0, 600, {})
 
 func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "wait"):
@@ -32,7 +32,7 @@ func no_nurses_text():
 	saynn("В голове всё покалывает..")
 	saynn("Кажется, на этот раз спасать тебя уже некому..")
 	
-	addAction("giveup", "Give up?", "What else is there to do..", "default", 1.0, 60, {})
+	addAction("giveup", "Сдаться?", "А что еще остается...", "default", 1.0, 60, {})
 
 func no_nurses_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "giveup"):
@@ -44,7 +44,7 @@ func about_to_fuck_text():
 	
 	saynn("В глазах {user.his} вспыхивает зловещий блеск..")
 	
-	addAction("sex", "Sex", "Time to have some fun", "default", 1.0, 300, {start_sex=["user", "main", SexType.DefaultSex, {SexMod.SubsStartUnconscious: true}],})
+	addAction("sex", "Секс", "Пора развлечься", "default", 1.0, 300, {start_sex=["user", "main", SexType.DefaultSex, {SexMod.SubsStartUnconscious: true}],})
 
 func about_to_fuck_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "sex"):
@@ -54,7 +54,7 @@ func about_to_fuck_do(_id:String, _args:Dictionary, _context:Dictionary):
 func after_sex_text():
 	saynn("После этого {user.name} пора было поскорее уходить..")
 	
-	addAction("leave", "Leave", "Time to go..", "default", 1.0, 60, {})
+	addAction("leave", "Уйти", "Пора идти..", "default", 1.0, 60, {})
 
 func after_sex_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "leave"):
@@ -67,7 +67,7 @@ func getInterruptActions(_pawn:CharacterPawn) -> Array:
 		result.append({
 			id = "fuck",
 			name = "Блядь",
-			desc = "Fuck them while they are unconscious",
+			desc = "Трахнуть их, пока они в отключке",
 			score = 0.5,
 			scoreType = "sexUse",
 			scoreRole = "main",
@@ -77,7 +77,7 @@ func getInterruptActions(_pawn:CharacterPawn) -> Array:
 		result.append({
 			id = "grab",
 			name = "Схватить",
-			desc = "Do something interesting with them..",
+			desc = "Придумать с ними что-нибудь интересненькое...",
 			score = (0.5 if _pawn.getSocial() > 0.4 else 0.0),
 			scoreType = "punishMean",
 			scoreRole = "main",

@@ -6,7 +6,7 @@ func _init():
 func _run():
 	if(state == ""):
 		playAnimation(StageScene.Solo, "stand")
-		saynn("Тьма... Перед глазами лишь ты сама."+str("Still wearing your uniform.. " if !GM.pc.isFullyNaked() else "")+"На шее всё еще плотно сидит тот самый ошейник.")
+		saynn("Тьма... Перед глазами лишь ты сама."+str("Всё ещё в форме... " if !GM.pc.isFullyNaked() else "")+"На шее всё еще плотно сидит тот самый ошейник.")
 
 		saynn("Ты смотришь на свои руки и видишь их в синяках, мелких порезах и ранах...")
 
@@ -129,6 +129,6 @@ func _react(_action: String, _args):
 	if(_action == "do_rest_again"):
 		GM.main.startNewDay()
 		GM.pc.afterSleepingInBed()
-		addMessage("New task added")
+		addMessage("Добавлена новая задача")
 
 	setState(_action)

@@ -115,10 +115,10 @@ func _react(_action: String, _args):
 		endScene()
 		return
 	if(_action == "try_fight_tavi"):
-		addMessage("Task updated!")
+		addMessage("Задача обновлена!")
 		GM.main.MS.setFlag("tavi", "tryfight")
 	if(_action == "let_tavi_be"):
-		addMessage("Task updated!")
+		addMessage("Задача обновлена!")
 		GM.main.MS.setFlag("tavi", "letgo")
 		
 	setState(_action)

@@ -166,7 +166,7 @@ func startMission(_id:String, _runScene:bool = true, _announceIt:bool = true, _r
 	if(_runScene):
 		GM.main.runScene(theMission.getStartScene())
 	if(_announceIt):
-		GM.main.addMessage("Task accepted!")
+		GM.main.addMessage("Задание принято!")
 	pcPain = GM.pc.getPain()
 	pcLust = GM.pc.getLust()
 	pcStamina = GM.pc.getMaxStamina() - GM.pc.getStamina()
@@ -236,15 +236,15 @@ func completeMission():
 	completed[current] = true
 	clearMissionMarkers()
 	current = ""
-	GM.main.addMessage("Task completed!")
+	GM.main.addMessage("Задание выполнено!")
 	# Add experience here?
 	if(theMission):
 		theMission.giveRewardFinal(wasAlreadyCompleted)
 	
 	if(!oldDidCompleteAll && didCompleteAllMainMissions()):
-		GM.main.addMessage("You have completed all of the currently available main missions of this route! Next update will have more, hopefully.")
+		GM.main.addMessage("Вы выполнили все доступные на данный момент основные миссии этого маршрута! Надеемся, в следующем обновлении их станет больше.")
 		if(!didCompleteAllSideMissions()):
-			GM.main.addMessage("You can still do the side missions!")
+			GM.main.addMessage("Вы всё ещё можете проходить побочные миссии!")
 		
 func getDebugMissionList() -> Array:
 	var result:Array = []
@@ -316,13 +316,13 @@ func setDecisionSpecific(_missionID:String, _flagID:String, _value):
 				setAvyLine(theOutcome["avyLine"])
 	
 	if(oldKaitLove < 2 && getKaitLove() >= 2):
-		GM.main.addMessage("You've unlocked the first 'Love' scenes with Kait! Go talk with her when you can.")
+		GM.main.addMessage("Вы открыли первые сцены «Любви» с Кейт! Поговори с ней, как только сможешь.")
 	if(oldKaitObedience < 2 && getKaitObedience() >= 2):
-		GM.main.addMessage("You've unlocked the first 'Obedience' scenes with Kait! Go talk with her when you can.")
+		GM.main.addMessage("Вы открыли первые сцены «Послушания» с Кейт! Поговори с ней, как только сможешь.")
 	if(oldAvyLove < 2 && getAvyLove() >= 2):
-		GM.main.addMessage("You've unlocked the first 'Love' scenes with Avy! Go talk with her when you can.")
+		GM.main.addMessage("Вы открыли первые сцены «Любви» с Эви! Поговори с ней, как только сможешь.")
 	if(oldAvyObedience < 2 && getAvyObedience() >= 2):
-		GM.main.addMessage("You've unlocked the first 'Obedience' scenes with Avy! Go talk with her when you can.")
+		GM.main.addMessage("Вы открыли первые сцены «Послушания» с Эви! Поговори с ней, как только сможешь.")
 
 func isDoingMission(_id:String) -> bool:
 	return current == _id

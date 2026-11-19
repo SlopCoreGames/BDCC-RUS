@@ -43,11 +43,11 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([
-		"My breasts are so heavy and aching for it, please use breast pumps on them if you have any.",
-		"I'll be good, just please, milk my breasts.",
-		"If you have any breast pumps, please use them on me.. I need that so badly.",
-		"Every part of me is begging for you to attach some breast pumps onto my tits and drain them.",
-		"Please, I want to be your good little cow, just milk me.",
+		"Моя грудь такая тяжелая, она просто ноет от желания... если у тебя есть молокоотсосы, пожалуйста, используй их.",
+		"Я буду послушной, только умоляю, подои мою грудь.",
+		"Если у тебя есть молокоотсосы, примени их на мне... мне это безумно нужно.",
+		"Каждая клеточка моего тела молит о том, чтобы ты прицепил к моим сиськам молокоотсосы и выкачал всё до капли.",
+		"Пожалуйста, я хочу быть твоей послушной маленькой коровкой, просто подои меня.",
 	])
 
 func getBegDomFetishes() -> Dictionary:

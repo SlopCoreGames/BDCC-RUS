@@ -7,7 +7,7 @@ func getVisibleName() -> String:
 	return "Тентакли"
 
 func getVisibleDesc() -> String:
-	return "You will help grow your very own tentacle monster."
+	return "Вы будете помогать выращивать собственного монстра с щупальцами."
 
 func canBeChosen() -> bool:
 	return true
@@ -22,14 +22,14 @@ func getEndings() -> Dictionary:
 	return {
 		"murder": {
 			name = "BLOODTHIRSTY",
-			desc = "Escape while murdering at least one of the villains",
+			desc = "Сбежать, прикончив как минимум одного из злодеев.",
 		},
 		"stealth": {
 			name = "Целый новый мир",
-			desc = "Escape the biolab completely stealthily",
+			desc = "Сбежать из биолаборатории абсолютно скрытно.",
 		},
 		"egged": {
 			name = "Прощальный подарок",
-			desc = "Escape while getting at least one of the villains egged-up",
+			desc = "Сбежать, успев засадить хотя бы в одного из злодеев яйцо.",
 		},
 	}

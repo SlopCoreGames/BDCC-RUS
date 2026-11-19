@@ -46,10 +46,10 @@ func getTaskHint(_isSlaveLevelup):
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [
-		"I want to see you covered in cum from head to toe.",
-		"Come back dripping with cum all over your body.",
-		"Get as many loads on you as possible.",
-		"I want to see you covered in fresh cum."
+		"Хочу видеть тебя с ног до головы покрытой спермой.",
+		"Вернись ко мне вся в конче.",
+		"Набери на себя как можно больше порций.",
+		"Хочу видеть тебя, испачканную свежей спермой."
 	]
 
 func getSexGoalWeightModifier(_sexGoalID:String) -> float:

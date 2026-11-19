@@ -22,15 +22,15 @@ func _run():
 
 		saynn("Но... сдаться сейчас — значит признать, что всё это было зря. Сдаться сейчас — значит смириться с тем, что твои мечты никогда не сбудутся. Сдаться сейчас — значит принять их разбитые мечты за свои собственные.")
 
-		saynn("[say=tavi]"+str(taviSpeak("Whatcha thinking about, owner?", "Something is wrong, owner?"))+"[/say]")
+		saynn("[say=tavi]"+str(taviSpeak("О чем задумалась, хозяйка?", "Что-то не так, хозяйка?"))+"[/say]")
 
 		saynn("Тави подходит к тебе, явно видя, что тебя гложут тяжелые мысли.")
 
 		saynn("[say=pc]Пора выбираться отсюда, Тави.[/say]")
 
-		saynn("Тави приподнимает бровь и слегка наклоняет голову набок."+str(", being careful not to hit you with her horns" if getModule("TaviModule").hasHorns() else "")+".")
+		saynn("Тави приподнимает бровь и слегка наклоняет голову набок."+str(", стараясь не задеть тебя рогами" if getModule("TaviModule").hasHorns() else "")+".")
 
-		saynn("[say=tavi]"+str(taviSpeak("I'm always up for a good fight~. But, tell me, did something change? What made you want to do it?", "I agree, trust me. But I'm curious. What made you want to do it? Right now I mean."))+"[/say]")
+		saynn("[say=tavi]"+str(taviSpeak("Я всегда за хорошую драку~. Но скажи, что-то изменилось? Почему тебе вдруг захотелось именно этого?", "Согласна, поверь мне. Но мне любопытно. Что подтолкнуло тебя к этому? Я имею в виду — прямо сейчас."))+"[/say]")
 
 		if (isCorrupt):
 			saynn("Тави определенно изменилась: её изгибы стали сексуальными, но при этом мощными, а осанка — уверенной и доминантной. Они думали, что смогут её сломать. Но в итоге она стала только сильнее. Было бы обидно не воспользоваться этим.")
@@ -42,7 +42,7 @@ func _run():
 
 			saynn("[say=pc]Думаю, ты готова, Тави. И я тоже.[/say]")
 
-		saynn("Тави улыбается и скрещивает руки на груди."+str(" under her breasts, emphasizing them" if isCorrupt else " while keeping a straight posture")+".")
+		saynn("Тави улыбается и скрещивает руки на груди."+str(" под грудью, подчеркивая её формы" if isCorrupt else " сохраняя прямую осанку")+".")
 
 		saynn("[say=tavi]Да неужели~? Может, ты и права. Какой наш следующий шаг?[/say]")
 
@@ -243,7 +243,7 @@ func _react(_action: String, _args):
 	if(_action == "checkpoint"):
 		processTime(6*60)
 		addExperienceToPlayer(100)
-		addMessage("Task updated")
+		addMessage("Задача обновлена")
 
 	setState(_action)
 

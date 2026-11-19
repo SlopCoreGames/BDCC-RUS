@@ -22,7 +22,7 @@ func _run():
 
 		saynn("[say=ferri]Ой!..[/say]")
 
-		saynn("[say=pc]"+str(ch1("You talk too much, brat.", "That's what you get, slut.", "You're just a worthless little slut."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Слишком много болтаешь, щенок.", "Так тебе и надо, шлюшка.", "Ты всего лишь никчемная маленькая шлюшка."))+"[/say]")
 
 		saynn("Ферри фыркает сквозь корзинчатый намордник.")
 
@@ -40,7 +40,7 @@ func _run():
 
 		saynn("Ничего так и не течёт. Ферри не лактирует. Но тебе любопытно, сможешь ли ты заставить её это сделать.")
 
-		saynn("[say=pc]"+str(ch1("You might fall so you better sit on the floor.", "Down to the floor, now.", "Down to the floor, now."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Можешь и упасть, так что лучше сядь на пол.", "На пол, живо.", "На пол, живо."))+"[/say]")
 
 		saynn("Ферри наклоняет голову.. но тут она видит, что ты принёс..")
 
@@ -53,7 +53,7 @@ func _run():
 
 		saynn("[say=ferri]..эй..[/say]")
 
-		saynn("[say=pc]"+str(ch1("You heard me.", "Obey, whore.", "Are you really that stupid? Obey."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Ты меня слышала.", "Повинуйся, сучка.", "Ты реально такая тупая? Слушайся."))+"[/say]")
 
 		saynn("Ферри фыркает и пригибается, прижав уши к голове.")
 
@@ -75,7 +75,7 @@ func _run():
 
 		saynn("Молоко. Белое, кремовое молоко стекает по её голубоватым ареолам.")
 
-		saynn("[say=pc]"+str(ch1("There we go. Good girl.", "Look at that. Your tits just needed some encouragement.", "Aww. The dumb bitch's udders finally woke up."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Вот так. Хорошая девочка.", "Погляди-ка. Твоим сиськам просто нужно было немного подгона.", "Оууу. Вымени этой тупой сучки наконец-то проснулось."))+"[/say]")
 
 		saynn("[say=ferri]М-м... ты собираешься... АХ![/say]")
 
@@ -89,7 +89,7 @@ func _run():
 
 		saynn("Ты пристально смотришь на её твердые, упругие соски... и на её промежность, которая уже насквозь промокла; её маленькая голубая щелочка источает капли прямо на пол.")
 
-		saynn("[say=pc]"+str(ch1("You clearly like it.", "Shut up and enjoy it.", "You're getting wet though. How fucking pathetic."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Тебе явно это нравится.", "Заткнись и наслаждайся.", "Хотя ты уже вся течешь. Какая же, блядь, жалкая."))+"[/say]")
 
 		saynn("Ты снова тыкаешь её в левую грудь... затем в правую... посылая короткие, резкие импульсы. Каждый из них заставляет её ахать и вздрагивать, а соски при этом выстреливают струйками молока.")
 
@@ -97,7 +97,7 @@ func _run():
 
 		saynn("[say=ferri]Мяу.. ах..[/say]")
 
-		saynn("[say=pc]"+str(ch1("That's enough warm up. Time to get you set up.", "I'm just getting started. Time to get you set up.", "I'm just getting started. We're not done with those udders."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Разминка окончена. Пора тебя подготовить.", "Я только разогрелась. Пора тебя подготовить.", "Я только разогрелась. С твоим выменем мы еще не закончили."))+"[/say]")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "ferri_stall")
 	if(state == "ferri_stall"):
@@ -108,7 +108,7 @@ func _run():
 
 		saynn("[say=ferri]Ведро?[/say]")
 
-		saynn("[say=pc]"+str(ch1("Yes, you know why I need it.", "To collect your milk, don't be dumb, slut.", "Why is a cow still talking?"))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Да, ты и сам знаешь, зачем оно мне нужно.", "Чтобы собирать твоё молоко, не тупи, шлюха.", "Почему эта корова всё еще трещит?"))+"[/say]")
 
 		saynn("Ты хватаешь Ферри и приковываешь её лапы к одной из труб, расположенной примерно на уровне твоего пояса. Это заставляет дракатку наклониться вперед, выпятив задницу, в то время как её груди теперь свисают под ней, всё еще капая молоком на пол.")
 
@@ -126,7 +126,7 @@ func _run():
 
 		saynn("[say=ferri]Это так.. ах.. с-странно..[/say]")
 
-		saynn("[say=pc]"+str(ch1("Just stand still, I will do all the work.", "Shut up and focus on producing.", "Focus on producing, cow."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Просто стой смирно, всю работу сделаю за тебя я.", "Заткнись и сосредоточься на выработке.", "Сосредоточься на выработке, корова."))+"[/say]")
 
 		saynn("Ты продолжаешь массировать её грудь, впиваясь пальцами в мягкие ткани и выжимая молоко. С каждым нажатием вырывается густая струя молока.")
 
@@ -148,7 +148,7 @@ func _run():
 
 		saynn("[say=ferri]М-муу..[/say]")
 
-		saynn("[say=pc]"+str(ch1("There we go. That's my good little cow.", "Yeah. Keep squirting like that. Don't you dare stop.", "Look at that. You're nothing but a pair of milky tits."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Вот так. Моя хорошая маленькая коровка.", "Да. Лей дальше, вот так. Только попробуй остановиться.", "Посмотри на себя. Ты всего лишь пара молочных сисек."))+"[/say]")
 
 		saynn("Ты продолжаешь доить её всё интенсивнее. После разряда тока тонкая струйка молока превратилась в уверенный поток. Ведро наполняется быстрее, уровень жидкости уже намного выше половины!")
 
@@ -174,13 +174,13 @@ func _run():
 
 		saynn("[say=ferri]Мяу.. злюка..[/say]")
 
-		saynn("[say=pc]"+str(ch1("You did well. I'm impressed.", "Look at you. A mess. A beautiful fucking mess.", "Worthless as a person. But at least you can produce."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Ты молодец. Я впечатлен.", "Посмотри на себя. Весь в дерьме. Прекрасный, блядь, беспорядок.", "Как личность ты никчемна. Но хотя бы давать умеешь."))+"[/say]")
 
 		saynn("Ты отодвигаешь ведро, а затем расстегиваешь её лапы, прикованные к трубе... отчего Ферри тут же валится на пол. Её глаза пытаются сфокусироваться на тебе... да и вообще хоть на чем-нибудь.")
 
 		saynn("[say=ferri]М-мяу..[/say]")
 
-		saynn("[say=pc]"+str(ch1("If you want more of that, you should obey us. Now have some rest.", "Do what I tell you to do.. and you might just get more of this. Now rest.", "Not bad. You're gonna obey me, cow. Now rest."))+"[/say]")
+		saynn("[say=pc]"+str(ch1("Если хочешь еще, будешь нас слушаться. А теперь отдыхай.", "Делай, что тебе говорят... и, может быть, получишь еще. А теперь — отдых.", "Неплохо. Будешь меня слушаться, корова. А теперь — отдыхай."))+"[/say]")
 
 		saynn("Ты хватаешь ведро и выходишь.")
 

@@ -7,7 +7,7 @@ func getVisibleName() -> String:
 	return "Асексуал"
 
 func getVisibleDescription() -> String:
-	return "The owner is much less likely to have sex with you. Doesn't affect their chance to share you."
+	return "Владелец гораздо реже будет заниматься с вами сексом. На вероятность того, что он решит вами поделиться, это не влияет."
 
 func getPossiblePCNamesForLevel(_npcOwner, _level:int) -> Array:
 	#var ownerHasVagina:bool = _npcOwner.getOwner().hasVagina()

@@ -52,7 +52,7 @@ func satisfyWant(theWant):
 	#	petWants = ""
 	#	return
 	if(theWant == petWants):
-		GM.main.addMessage("Pet's want is satisfied!")
+		GM.main.addMessage("Хотелки питомца удовлетворены!")
 		petLastWant = petWants
 		petWants = ""
 		puppyPoints += 1
@@ -65,10 +65,10 @@ func onPat():
 func onEnd():
 	if(puppyPoints >= getRequiredPuppyPoints()):
 		if(getSlave().levelupSpecialization(SlaveType.Pet)):
-			GM.main.addMessage("Your pet got trained enough to reach the next pet skill rank.")
+			GM.main.addMessage("Ваш питомец достаточно обучился, чтобы повысить ранг навыка.")
 		elif(getSlave().getSlaveSkill(SlaveType.Pet) >= 15):
 			getSlave().addExperience(50)
-			GM.main.addMessage("Your pet received 50 slave experience for great walkies.")
+			GM.main.addMessage("Ваш питомец получил 50 единиц рабского опыта за отличную прогулку.")
 
 func _init():
 	id = "Walkies"

@@ -58,10 +58,10 @@ func searching():
 	
 	saynn("Тебя ведут на поводке, пока {npc.name} ищет кандидатов для группового секса с тобой!")
 	
-	addButtonAt(6, "Walk", "See where your owner will bring you..", "go")
-	addDisabledButtonAt(10, "Leashed", "You are leashed")
-	addDisabledButtonAt(11, "Leashed", "You are leashed")
-	addDisabledButtonAt(12, "Leashed", "You are leashed")
+	addButtonAt(6, "Идти", "Посмотрим, куда тебя приведёт хозяин...", "go")
+	addDisabledButtonAt(10, "На поводке", "Ты на поводке")
+	addDisabledButtonAt(11, "На поводке", "Ты на поводке")
+	addDisabledButtonAt(12, "На поводке", "Ты на поводке")
 
 func searching_do(_id:String, _args:Array):
 	if(_id == "go"):

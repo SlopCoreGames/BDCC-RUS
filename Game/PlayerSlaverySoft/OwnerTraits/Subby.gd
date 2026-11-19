@@ -7,7 +7,7 @@ func getVisibleName() -> String:
 	return "Сабби"
 
 func getVisibleDescription() -> String:
-	return "The owner can occasionally submit to you. They will also not have an 'Aura of dominance' during fights."
+	return "Владелец может время от времени подчиняться вам. Также во время боев у него не будет «Ауры доминирования»."
 
 func getPossiblePCNamesForLevel(_npcOwner, _level:int) -> Array:
 	if(_level <= 1):
@@ -38,7 +38,7 @@ func getNOMs(_npcOwner) -> Dictionary:
 
 func getTalkActions(_npcOwner, _event) -> Array:
 	return [
-		talkAction("Fuck owner", "(Subby trait) Ask if your owner wants to be fucked!", "subby_fuckowner")
+		talkAction("Fuck owner", "(Черта «Подкаблучник») Спросить, хочет ли хозяин, чтобы его трахнули!", "subby_fuckowner")
 	]
 
 func doTalkAction(_npcOwner, _event, _actionID:String, _args:Array):

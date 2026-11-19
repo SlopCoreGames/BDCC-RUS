@@ -12,20 +12,20 @@ func getVisibleName():
 	return "Успокоить"
 
 func getVisibleDesc():
-	return "Offer words of comfort and reassurance to your slave"
+	return "Утешить и успокоить свою рабыню"
 
 func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var npcSlavery = getSlave(_slaveID)
 	
 	var theTexts = []
-	theTexts.append("You offer words of reassurance to {npc.name}, ensuring {npc.him} that everything will be okay. Your goal is to ease any fears and provide comfort.")
+	theTexts.append("Вы подбираете слова утешения для {npc.name}, заверяя {npc.him}, что всё будет хорошо. Ваша цель — развеять её страхи и подарить чувство комфорта.")
 	
 	if(npcSlavery.isMindBroken()):
-		theTexts.append("{npc.He} just stares blankly at you..")
+		theTexts.append("{npc.He} просто тупо пялится на вас...")
 	elif(npcSlavery.getTalkedTimesToday() >= 2):
-		theTexts.append("It didn't have much effect on {npc.him}. {npc.He} heard you too many times today already.")
+		theTexts.append("Это не особо подействовало на {npc.him}. {npc.He} и так слышал(а) это сегодня слишком много раз.")
 	elif(npcSlavery.getWorkEfficiency() <= 0.11):
-		theTexts.append("{npc.He} {npc.isAre} too tired to fully understand your words, {npc.he} barely stands on {npc.his} feet already.")
+		theTexts.append("{npc.He} {npc.isAre} слишком измотана, чтобы до конца понять ваши слова; {npc.he} уже едва держится на {npc.his} ногах.")
 	else:
 		var awareness = npcSlavery.getAwareness()
 		var despair = npcSlavery.getDespair()
@@ -54,109 +54,109 @@ func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 		
 		if(despair > 0.8):
 			theTexts.append("[say=npc]"+RNG.pick([
-				"Okay..",
+				"Ладно...",
 				"Mhm.. okay..",
 				"..sorry..",
 				"..mhm..",
 				"..right..",
-				"Uh huh..",
+				"Угу...",
 			])+"[/say]")
 		elif(spoiling > 0.5):
 			if(wasAfraid):
 				theTexts.append("[say=npc]"+RNG.pick([
-					"You had me scared there! Glad you're spoiling me again~.",
-					"Oh? You're gonna stop being silly and pat me more?",
-					"Next time don't leave me so scared, can you imagine what I went through?!",
-					"I'm glad you changed your mind. Now pat me!",
+					"Ну и напугал же ты меня! Рада, что ты снова меня балуешь~.",
+					"О? Так ты перестанешь дурачиться и будешь гладить меня дальше?",
+					"В следующий раз не оставляй меня в таком страхе, ты хоть представляешь, через что мне пришлось пройти?!",
+					"Я рада, что ты передумал. А теперь гладь меня!",
 				])+"[/say]")
 			else:
 				theTexts.append("[say=npc]"+RNG.pick([
-					"Aww, thank you. That's sweet.",
-					"You always know how to make me feel better!",
-					"I'm lucky to have you.",
-					"You are always spoiling me, hehe.",
+					"Оу, спасибо. Это так мило.",
+					"Ты всегда знаешь, как заставить меня почувствовать себя лучше!",
+					"Мне так повезло, что ты у меня есть.",
+					"Ты вечно меня балуешь, хе-хе.",
 				])+"[/say]")
 		elif(obedience > 0.9 || brokenspirit > 0.9):
 			theTexts.append("[say=npc]"+RNG.pick([
-				"I will do my best..",
-				"Your words mean a lot to me. I'll try harder.",
-				"I appreciate your support. I won't let you down..",
+				"Я буду очень стараться...",
+				"Твои слова много значат для меня. Я буду стараться еще сильнее.",
+				"Я ценю твою поддержку. Я тебя не подведу...",
 			])+"[/say]")
 		elif(obedience < 0.3 && brokenspirit < 0.3 && love < 0.3):
 			if(wasAfraid):
 				if(npcSlavery.personalityScore({PersonalityStat.Mean:1.0}) > 0.2):
 					theTexts.append("[say=npc]"+RNG.pick([
-						"Really? After everything you did? I don't trust you.",
-						"Yeah, thanks a lot, fuckface.",
-						"Uh huh, keep saying that.",
-						"Why should I trust you?",
+						"Серьезно? После всего, что ты сделал? Я тебе не верю.",
+						"Ага, спасибо большое, рожа ублюдская.",
+						"Угу, так и говори дальше.",
+						"С чего бы мне тебе верить?",
 					])+"[/say]")
 				elif(awareness > 0.7):
 					theTexts.append("[say=npc]"+RNG.pick([
-						"Thank you, your words helped to calm me down.",
-						"Oh?.. Right, thank you for the kind words..",
-						"I needed to hear that, thank you.."
+						"Спасибо, твои слова помогли мне успокоиться.",
+						"О?.. Понятно, спасибо за добрые слова...",
+						"Мне нужно было это услышать, спасибо..."
 					])+"[/say]")
 				else:
 					theTexts.append("[say=npc]"+RNG.pick([
-						"That's a nice change of pace. I appreciate it.",
-						"I was scared there. Thanks for being understanding.",
-						"I guess I should calm down.",
+						"Приятная перемена. Я ценю это.",
+						"Мне было страшно. Спасибо за понимание.",
+						"Пожалуй, мне стоит успокоиться.",
 					])+"[/say]")
 			else:
 				if(npcSlavery.personalityScore({PersonalityStat.Mean:1.0}) > 0.2):
 					theTexts.append("[say=npc]"+RNG.pick([
-						"Why don't you just let me go rather than saying all that?",
-						"Thanks. Can I go maybe?",
-						"I appreciate your words but I'm not your slave, let me go.",
+						"Почему бы тебе просто не отпустить меня вместо того, чтобы разводить эти нежности?",
+						"Спасибо. Может, теперь я смогу уйти?",
+						"Твои слова приятны, но я тебе не рабыня, отпусти меня.",
 					])+"[/say]")
 				elif(awareness > 0.7):
 					theTexts.append("[say=npc]"+RNG.pick([
-						"Thank you..",
-						"I'll try harder.. It's not like I'm getting out of here anytime soon..",
+						"Спасибо...",
+						"Я буду стараться лучше... Всё равно мне отсюда скоро не выбраться...",
 					])+"[/say]")
 				else:
 					theTexts.append("[say=npc]"+RNG.pick([
-						"I appreciate the reassurance.",
-						"It means a lot to hear that.",
-						"Thanks for being understanding.",
+						"Спасибо, что подбодрила.",
+						"Для меня это много значит.",
+						"Спасибо за понимание.",
 					])+"[/say]")
 			
 		elif(despair > 0.4):
 			if(wasAfraid):
 				theTexts.append("[say=npc]"+RNG.pick([
-					"I really needed to hear that. Thank you..",
-					"Your words are helping, thank you..",
-					"It's hard to stay positive..",
-					"You're not gonna hurt me?..",
+					"Мне это было очень нужно услышать. Спасибо...",
+					"Твои слова помогают, спасибо...",
+					"Трудно сохранять позитивный настрой...",
+					"Ты ведь не причинишь мне боли?..",
 				])+"[/say]")
 			else:
 				theTexts.append("[say=npc]"+RNG.pick([
-					"Thank you..",
-					"Your words are helping, thank you..",
-					"I'll try to stay positive..",
-					"But you're gonna hurt me if I fuck up, right?..",
+					"Спасибо...",
+					"Твои слова помогают, спасибо...",
+					"Я постараюсь не унывать...",
+					"Но ты ведь отлупишь меня, если я облажаюсь, да?..",
 				])+"[/say]")
 		else:
 			if(wasAfraid):
 				theTexts.append("[say=npc]"+RNG.pick([
-					"Thank you for the kind words.",
-					"I will try to calm down.",
+					"Спасибо за добрые слова.",
+					"Я постараюсь успокоиться.",
 				])+"[/say]")
 			else:
 				theTexts.append("[say=npc]"+RNG.pick([
-					"Thank you for the kind words, I guess.",
-					"I hear you, thanks.",
+					"Спасибо за добрые слова... наверное.",
+					"Я тебя слышу, спасибо.",
 				])+"[/say]")
 		
 		if(wasAfraid):
-			theTexts.append("Your words calmed {npc.him} down and had a good effect.")
+			theTexts.append("Твои слова успокоили {npc.him} и подействовали благотворно.")
 		else:
-			theTexts.append("Your words had some effect on {npc.him}.")
+			theTexts.append("Твои слова произвели впечатление на {npc.him}.")
 		
 		var enemyLustInterests = npcSlavery.getChar().getLustInterests()
 		if(enemyLustInterests.learnRandomInterest()):
-			theTexts.append("You also learned one of {npc.his} likes/dislikes while doing this.")
+			theTexts.append("Во время этого разговора ты также узнал(а) об одном из предпочтений {npc.his}.")
 			
 	npcSlavery.didTalkWithToday()
 	return {

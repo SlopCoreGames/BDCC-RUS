@@ -27,7 +27,7 @@ func start():
 	if(onlyOnce()):
 		var credAmount:int = RNG.randi_range(5, 10)
 		GM.pc.addCredits(-credAmount)
-		GM.main.addMessage("You lost "+str(credAmount)+" credits!")
+		GM.main.addMessage("Ты проиграл "+str(credAmount)+" кредитами!")
 	
 	addContinue("endEvent")
 	

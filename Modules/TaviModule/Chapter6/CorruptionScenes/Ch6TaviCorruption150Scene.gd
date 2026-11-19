@@ -186,7 +186,7 @@ func _react(_action: String, _args):
 		GM.pc.addPain(20)
 		GM.pc.addLust(-200)
 		GM.pc.addStamina(-50)
-		addMessage("You feel weak..")
+		addMessage("Ты чувствуешь слабость...")
 
 	if(_action == "let_suck"):
 		processTime(5*60)
@@ -194,7 +194,7 @@ func _react(_action: String, _args):
 		GM.pc.addStamina(-50)
 		getCharacter("tavi").cummedInMouthBy("pc")
 		GM.pc.orgasmFrom("tavi")
-		addMessage("You feel weak..")
+		addMessage("Ты чувствуешь слабость...")
 
 	if(_action == "let_lick"):
 		processTime(5*60)
@@ -202,7 +202,7 @@ func _react(_action: String, _args):
 		GM.pc.addStamina(-50)
 		getCharacter("tavi").cummedInMouthBy("pc", FluidSource.Vagina)
 		GM.pc.orgasmFrom("tavi")
-		addMessage("You feel weak..")
+		addMessage("Ты чувствуешь слабость...")
 
 	if(_action == "let_prostate_milk"):
 		processTime(5*60)
@@ -210,7 +210,7 @@ func _react(_action: String, _args):
 		GM.pc.addStamina(-50)
 		getCharacter("tavi").cummedInMouthBy("pc")
 		GM.pc.orgasmFrom("tavi")
-		addMessage("You feel weak..")
+		addMessage("Ты чувствуешь слабость...")
 
 	if(_action == "start_talking"):
 		runScene("Ch6TaviTalkScene")
@@ -220,7 +220,7 @@ func _react(_action: String, _args):
 	setState(_action)
 
 func getDevCommentary():
-	return "I had to add support of adding/removing bodyparts dynamically just for Tavi x3. You might think that its a simple problem, just store their bodyparts in a save. But what I decide to change Tavi's hair for example? Your old saves wouldn't update her hair then. Yeah, there is a way to hack it by writing functions that upgrade your saves. But.. I really don't like that solution.\n\nWhat I did is basically just adding certain bodyparts if a flag is set. It's simple, requires no hacks (almost x3) and gives me power to do anything while making it future-proof.\n\nWhy did I make it so Tavi grew horns? Her fur color is purple. I rest my case. x3"
+	return "Мне пришлось добавить поддержку динамического добавления и удаления частей тела чисто ради Тави x3. Вы можете подумать, что это простая задача — просто сохранить части тела в сейв. Но что, если я решу изменить, например, прическу Тави? Ваши старые сохранения тогда не обновят ей волосы. Да, есть способ «захакать» это, написав функции для обновления сохранений. Но... мне этот вариант очень не нравится.\n\nПо сути, я просто добавил определенные части тела, если установлен нужный флаг. Это просто, не требует костылей (почти x3) и дает мне свободу делать что угодно, сохраняя совместимость с будущими обновлениями.\n\nЗачем я сделал так, чтобы у Тави выросли рога? У нее фиолетовый мех. Аргументы приняты x3"
 
 func hasDevCommentary():
 	return true

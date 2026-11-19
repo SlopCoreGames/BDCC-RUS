@@ -14,9 +14,9 @@ func init_text():
 	saynn("{starter.name} неловко переминается с ноги на ногу.")
 	sayLine("starter", "AskKeyCanYouUnlock", {main="starter", target="reacter"})
 
-	addAction("give_key", "Give key", "Just give them the key..", "help", 0.5, 60, {})
-	addAction("sex_challenge", "Sex challenge", "Give them they key.. but only if they become your sex toy and satisfy you", "sexDom", 3.0, 60, {})
-	addAction("deny", "Deny", "Deny their request!", "fight", 1.0, 60, {})
+	addAction("give_key", "Отдать ключ", "Просто отдай им ключ...", "help", 0.5, 60, {})
+	addAction("sex_challenge", "Секс-челлендж", "Отдать ключ... но только если они станут твоей секс-игрушкой и удовлетворят тебя", "sexDom", 3.0, 60, {})
+	addAction("deny", "Отказать", "Отказать в просьбе!", "fight", 1.0, 60, {})
 
 func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "give_key"):
@@ -38,8 +38,8 @@ func denied_request_text():
 	sayLine("reacter", "AskKeyDeny", {main="reacter", target="starter"})
 	saynn("Похоже, {starter.you} {starter.youAre} не получит этот ключ от {reacter.him}... по-хорошему.")
 
-	addAction("leave", "Leave", "Oh well.. whatever..", "surrender", 1.0, 60, {})
-	addAction("attack", "Attack", "You are getting that key one way or another!", "fight", 1.0, 60, {})
+	addAction("leave", "Уйти", "Ну ладно... как хочешь...", "surrender", 1.0, 60, {})
+	addAction("attack", "Атаковать", "Ты получишь этот ключ любым способом!", "fight", 1.0, 60, {})
 
 func denied_request_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "leave"):
@@ -52,7 +52,7 @@ func denied_request_do(_id:String, _args:Dictionary, _context:Dictionary):
 func denied_leave_text():
 	saynn("{starter.name} решает просто уйти... и остаться запертым...")
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 60, {})
 
 func denied_leave_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -65,7 +65,7 @@ func gave_key_text():
 	saynn("{reacter.YouHe} {reacter.youHeVerb('approach', 'approaches')} {starter.you} и {reacter.youHeVerb('unlock')} умный замок на снаряжении с помощью {reacter.yourHis} уникального ключа...")
 	saynn("Свобода...")
 
-	addAction("leave", "Leave", "Yay.", "default", 1.0, 60, {})
+	addAction("leave", "Уйти", "Ура.", "default", 1.0, 60, {})
 
 func gave_key_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "leave"):
@@ -77,8 +77,8 @@ func sex_challenge_start_text():
 	sayLine("reacter", "AskKeyChallenge", {main="reacter", target="starter"})
 	saynn("Похоже, {starter.you} {starter.youArent} получит этот ключ, только если {starter.youHe} {starter.youHeVerb('let')} {reacter.you} ебаный {starter.youHim}...")
 
-	addAction("submit", "Submit", "Let it happen..", "sexSub", 1.0, 300, {start_sex=["reacter", "starter", SexType.DefaultSex, {SexMod.BondageDisabled: true}],})
-	addAction("refuse", "Refuse", "You'd rather not..", "default", 0.1, 60, {})
+	addAction("submit", "Подчиниться", "Позволь этому случиться...", "sexSub", 1.0, 300, {start_sex=["reacter", "starter", SexType.DefaultSex, {SexMod.BondageDisabled: true}],})
+	addAction("refuse", "Отказаться", "Пожалуй, лучше не надо...", "default", 0.1, 60, {})
 
 func sex_challenge_start_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "submit"):
@@ -86,7 +86,7 @@ func sex_challenge_start_do(_id:String, _args:Dictionary, _context:Dictionary):
 		var _result:SexEngineResult = getSexResult(_args, true)
 		if(_result.isSubUnconscious("pc")):
 			var _howMany = GM.pc.unlockAllKeyholderLocksFrom(theDom)
-			addMessage("The dom decided to unlock your restraints anyway.")
+			addMessage("Доминант решил всё равно развязать твои путы.")
 		domSatisfaction = _result.getAverageDomSatisfaction() if _result else 0.0
 		setState("sex_challenge_after_sex", "reacter")
 	if(_id == "refuse"):
@@ -96,8 +96,8 @@ func sex_challenge_start_do(_id:String, _args:Dictionary, _context:Dictionary):
 func sex_challenge_after_sex_text():
 	saynn("Удовлетворение {reacter.name} было..."+str(Util.roundF(domSatisfaction*100.0, 1))+"%")
 
-	addAction("unlock_them", "Unlock them", "They served you well.", "default", max(domSatisfaction, 0.01), 60, {})
-	addAction("deny", "Deny", "That wasn't good enough.", "punishMean", 0.1 if domSatisfaction >= 0.89 else (1.0 - min(domSatisfaction, 0.6)), 60, {})
+	addAction("unlock_them", "Открой их", "Они тебе отлично служили.", "default", max(domSatisfaction, 0.01), 60, {})
+	addAction("deny", "Отказать", "Этого было недостаточно.", "punishMean", 0.1 if domSatisfaction >= 0.89 else (1.0 - min(domSatisfaction, 0.6)), 60, {})
 
 func sex_challenge_after_sex_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "unlock_them"):
@@ -117,7 +117,7 @@ func sex_challenge_unlock_text():
 	sayLine("reacter", "AskKeyChallengeUnlock", {main="reacter", target="starter"})
 	saynn("Свобода, ура!")
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 60, {})
 
 func sex_challenge_unlock_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -129,8 +129,8 @@ func sex_challenge_denied_text():
 	sayLine("reacter", "AskKeyChallengeFail", {main="reacter", target="starter"})
 	saynn("Похоже, {starter.you} {starter.youAre} не удастся освободить..")
 
-	addAction("leave", "Leave", "Oh well..", "default", 1.0, 60, {})
-	addAction("attack", "Attack", "You are getting that key!", "fight", 1.0, 60, {})
+	addAction("leave", "Уйти", "Ну, что ж..", "default", 1.0, 60, {})
+	addAction("attack", "Атаковать", "Ты получишь этот ключ!", "fight", 1.0, 60, {})
 
 func sex_challenge_denied_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "leave"):
@@ -146,8 +146,8 @@ func sex_challenge_refused_text():
 	saynn("{reacter.name} пожимает плечами.")
 	sayLine("reacter", "AskKeyChallengeRefuseStay", {main="reacter", target="starter"})
 
-	addAction("leave", "Leave", "Oh well..", "default", 1.0, 60, {})
-	addAction("attack", "Attack", "You're getting that key!", "fight", 1.0, 60, {})
+	addAction("leave", "Уйти", "Ну, что ж..", "default", 1.0, 60, {})
+	addAction("attack", "Атаковать", "Ты точно получишь этот ключ!", "fight", 1.0, 60, {})
 
 func sex_challenge_refused_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "leave"):

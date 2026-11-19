@@ -21,191 +21,191 @@ const debugFreeUpdates = false #Set this to false before ship
 const UpgradesDB = {
 	"headlight": {
 		name = "Фонарь",
-		desc = "Let's you see further in the dark",
+		desc = "Позволяет лучше видеть в темноте",
 		cost = 3,
 		reqs = [],
 	},
 	
 	"pick1": {
 		name = "Улучшенная кирка",
-		desc = "Mining will yield ore nuggets every time.",
+		desc = "При добыче всегда выпадают самородки руды.",
 		cost = 5,
 		reqs = ["headlight"],
 	},
 	"pick2": {
 		name = "Зазубренная кирка",
-		desc = "Mining will produce 2 ore nuggets.",
+		desc = "При добыче выпадает 2 самородка руды.",
 		cost = 20,
 		reqs = ["pick1"],
 	},
 	"pick3": {
 		name = "Базовая дрель",
-		desc = "Mining will produce 3 ore nuggets!",
+		desc = "При добыче выпадает 3 самородка руды!",
 		cost = 500,
 		reqs = ["pick2"],
 	},
 	"pick4": {
 		name = "Мега-дрель",
-		desc = "Let's you mine the whole deposit in one go!",
+		desc = "Позволяет добывать всё месторождение за один раз!",
 		cost = 50000,
 		reqs = ["pick3"],
 	},
 	"pick5": {
 		name = "Супер-мега-бур",
-		desc = "This drill can get through the world's strongest materials with ease, even Voidsteel!",
+		desc = "Эта дрель с легкостью проходит сквозь самые прочные материалы в мире, даже сквозь пустотную сталь!",
 		cost = 1500000,
 		reqs = ["pick4"],
 	},
 	
 	"cart1": {
 		name = "Хранилище в вагонетке 1",
-		desc = "Minecart can hold 20 ore nuggets.",
+		desc = "Вагонетка вмещает 20 самородков руды.",
 		cost = 20,
 		reqs = ["pick1"],
 	},
 	"cart2": {
 		name = "Хранилище в вагонетке 2",
-		desc = "Minecart can hold 30 ore nuggets.",
+		desc = "Вагонетка вмещает 30 самородков руды.",
 		cost = 60,
 		reqs = ["cart1"],
 	},
 	"cart3": {
 		name = "Хранилище в вагонетке 3",
-		desc = "Minecart can hold 100 ore nuggets.",
+		desc = "Вагонетка вмещает 100 самородков руды.",
 		cost = 1000,
 		reqs = ["cart2"],
 	},
 	
 	"gloves1": {
 		name = "Захватные перчатки",
-		desc = "Allows you (and other slaves) to pick up 2 nuggets at once.",
+		desc = "Позволяет вам (и другим рабам) подбирать по 2 самородка за раз.",
 		cost = 30,
 		reqs = ["pick1"],
 	},
 	"gloves2": {
 		name = "Супер-захватные перчатки",
-		desc = "Allows you (and other slaves) to pick up 5 nuggets at once. Your slaves can carry 20 nuggets instead of 10.",
+		desc = "Позволяет вам (и другим рабам) подбирать по 5 самородков за раз. Теперь ваши рабы могут нести 20 самородков вместо 10.",
 		cost = 90,
 		reqs = ["gloves1"],
 	},
 	
 	"minecartscoop": {
 		name = "Черпак вагонетки",
-		desc = "Pushing the minecart over nuggets will make it automatically pick them up.",
+		desc = "Если катить вагонетку прямо по самородкам, она будет подбирать их автоматически.",
 		cost = 600,
 		reqs = ["cart2", "gloves2"],
 	},
 	
 	"minecartcredit": {
 		name = "Осторожная доставка",
-		desc = "Delivering ore with your minecart makes you earn 2x the credits!",
+		desc = "Доставка руды в вагонетке приносит в 2 раза больше кредитов!",
 		cost = 250,
 		reqs = ["cart2"],
 	},
 	
 	"minecartrefreshments1": {
 		name = "Перекус",
-		desc = "The minecart has a water bottle taped to it. It allows you to fully refresh your stamina once per day.",
+		desc = "К вагонетке примотана бутылка с водой. Она позволяет полностью восстановить выносливость один раз в день.",
 		cost = 45,
 		reqs = ["cart1"],
 	},
 	"minecartrefreshments2": {
 		name = "Дополнительный перекус",
-		desc = "The minecart has a little fridge installed. Using it allows you to fully refresh your stamina 3 times a day.",
+		desc = "В вагонетку встроен маленький холодильник. Его использование позволяет полностью восстанавливать выносливость 3 раза в день.",
 		cost = 3000,
 		reqs = ["minecartrefreshments1", "cart2"],
 	},
 	
 	"moreCreds1": {
 		name = "Переработка руды 1",
-		desc = "Install basic ore processing (metal pans), allowing each nugget to get sold for 3 credits instead of 1.",
+		desc = "Установка базовой обработки руды (лотки): теперь каждый самородок продается за 3 кредита вместо 1.",
 		cost = 20,
 		reqs = ["headlight"],
 	},
 	"moreCreds2": {
 		name = "Переработка руды 2",
-		desc = "Install better ore processing (magnets), allowing each nugget to get sold for 10 credits.",
+		desc = "Установка улучшенной обработки руды (магниты): теперь каждый самородок продается за 10 кредитов.",
 		cost = 222,
 		reqs = ["moreCreds1", "ore1"],
 	},
 	"moreCreds3": {
 		name = "Переработка руды 3",
-		desc = "Install better ore processing (crushers), allowing each nugget to get sold for 20 credits.",
+		desc = "Установка продвинутой обработки руды (дробилки): теперь каждый самородок продается за 20 кредитов.",
 		cost = 1500,
 		reqs = ["moreCreds2"],
 	},
 	"moreCreds4": {
 		name = "Переработка руды 4",
-		desc = "Install better ore processing (sorting bots), allowing each nugget to get sold for 50 credits.",
+		desc = "Установка высокотехнологичной обработки руды (сортировочные боты): теперь каждый самородок продается за 50 кредитов.",
 		cost = 2500,
 		reqs = ["moreCreds3"],
 	},
 	"moreCreds5": {
 		name = "Переработка руды 5",
-		desc = "Install better ore processing (bluespace extractors), allowing each nugget to get sold for 100 credits.",
+		desc = "Установка сверхмощной обработки руды (экстракторы блюспейса): теперь каждый самородок продается за 100 кредитов.",
 		cost = 10000,
 		reqs = ["moreCreds4"],
 	},
 	"moreCreds6": {
 		name = "Переработка руды 6",
-		desc = "Install better ore processing (weed-high kobols), allowing each nugget to get sold for 1000 credits.",
+		desc = "Установить улучшенную систему переработки руды (с добавлением травки для коболов), благодаря чему каждый самородок будет продаваться за 1000 кредитов.",
 		cost = 69420,
 		reqs = ["moreCreds5"],
 	},
 	
 	"dudes1": {
 		name = "Секс-игрушки",
-		desc = "Buy some sex toys for other slaves. This gives you 1x shaft miner and 1x ore carrier every morning.",
+		desc = "Купить секс-игрушки для остальных рабов. Это будет давать вам 1 шахтера и 1 носильщика руды каждое утро.",
 		cost = 15,
 		reqs = ["pick1"],
 	},
 	"dudes2": {
 		name = "Фаллоимитаторы-машины",
-		desc = "Install some fuck machines. This gives you 1x shaft miner and 1x ore carrier every morning.",
+		desc = "Установить несколько секс-машин. Это будет давать вам 1 шахтера и 1 носильщика руды каждое утро.",
 		cost = 69,
 		reqs = ["dudes1"],
 	},
 	"dudes3": {
 		name = "Шлюхи",
-		desc = "Hire some of the slaves as sluts for the other slaves. This gives you 1x shaft miner and 1x ore carrier every morning.",
+		desc = "Нанять часть рабов в качестве шлюх для остальных. Это будет давать вам 1 шахтера и 1 носильщика руды каждое утро.",
 		cost = 105,
 		reqs = ["dudes2"],
 	},
 	"dudes4": {
 		name = "Блюспейс-флешлайты",
-		desc = "Hand out some portal panties and bluespace fleshlights to slaves. This gives you 1x shaft miner and 1x ore carrier every morning.",
+		desc = "Раздать рабам портальные трусики и синепространственные фаллоимитаторы. Это будет давать вам 1 шахтера и 1 носильщика руды каждое утро.",
 		cost = 888,
 		reqs = ["dudes3"],
 	},
 	"dudes5": {
 		name = "VR-порно",
-		desc = "Give the slaves some portable VR headsets that are totally not hypnovisors. This gives you 1x shaft miner and 1x ore carrier every morning.",
+		desc = "Выдать рабам портативные VR-шлемы, которые «совсем не» гипновизоры. Это будет давать вам 1 шахтера и 1 носильщика руды каждое утро.",
 		cost = 1569,
 		reqs = ["dudes4"],
 	},
 	
 	"ore1": {
 		name = "Сканеры 1",
-		desc = "Install some basic ore scanners. Makes the mining zones have 3x as much ore in them on average.",
+		desc = "Установить базовые сканеры руды. В среднем в зонах добычи станет в 3 раза больше руды.",
 		cost = 100,
 		reqs = ["pick2"],
 	},
 	"ore2": {
 		name = "Сканеры 2",
-		desc = "Install better ore scanners. Makes the mining zones have 5x as much ore in them on average.",
+		desc = "Установить улучшенные сканеры руды. В среднем в зонах добычи станет в 5 раз больше руды.",
 		cost = 1000,
 		reqs = ["ore1", "moreCreds2"],
 	},
 	"ore3": {
 		name = "Сканеры 3",
-		desc = "Install the best ore scanners. Makes the mining zones have 10x as much ore in them on average.",
+		desc = "Установить лучшие сканеры руды. В среднем в зонах добычи станет в 10 раз больше руды.",
 		cost = 10000,
 		reqs = ["ore2"],
 	},
 	
 	"rest": {
 		name = "Уютные клетки",
-		desc = "Install better cages for you and other slaves. Allows you to rest for 2 hours to skip time and regain some stamina",
+		desc = "Установить более комфортные клетки для себя и других рабов. Позволяет отдыхать по 2 часа, чтобы перемотать время и восстановить выносливость.",
 		cost = 20000,
 		reqs = ["dudes3"],
 	},
@@ -493,7 +493,7 @@ func dudeDropNuggets(_dude:Dude):
 		var theCreds:int = getNuggetCredits(_dude.nuggets)
 		addTotalMined(theCreds)
 		addCredits(theCreds)
-		addMessage("A carrier has deposited "+str(_dude.nuggets)+" "+("nugget" if _dude.nuggets == 1 else "nuggets")+" of ore, earning you "+str(theCreds)+" "+("credit" if theCreds == 1 else "credits")+"!")
+		addMessage("Носильщик выгрузил "+str(_dude.nuggets)+" "+("nugget" if _dude.nuggets == 1 else "nuggets")+" руды, принеся тебе "+str(theCreds)+" "+("credit" if theCreds == 1 else "credits")+"!")
 	else:
 		if(loadMinecartFromDude(_dude)):
 			return
@@ -694,7 +694,7 @@ func afterMove():
 	if(nuggetsCarrying > 0):
 		if(GM.pc.getLocation() != minecartLoc || pushingMinecart):
 			var staminaUse:int = nuggetsCarrying * 3
-			addMessage("You used "+str(staminaUse)+" stamina carrying the nuggets.")
+			addMessage("Вы использовали "+str(staminaUse)+" выносливости при переноске самородков.")
 			useStamina(staminaUse)
 			if(!hasStamina()):
 				dropAllNuggets()
@@ -704,11 +704,11 @@ func afterMove():
 		if(theNuggetAmount > 0):
 			var freeSpace:int = Util.maxi(0, getMinecartCapacity() - theNuggetAmount)
 			if(freeSpace >= theNuggetAmount):
-				addMessage("The minecart scoop has picked up "+str(theNuggetAmount)+" "+("nugget" if theNuggetAmount == 1 else "nuggets")+"!")
+				addMessage("Ковш вагонетки зачерпнул "+str(theNuggetAmount)+" "+("nugget" if theNuggetAmount == 1 else "nuggets")+"!")
 				removeXNuggetsIn(minecartLoc, theNuggetAmount)
 				nuggetsMinecart += theNuggetAmount
 			elif(freeSpace > 0):
-				addMessage("The minecart scoop has picked up "+str(freeSpace)+" "+("nugget" if freeSpace == 1 else "nuggets")+"! The minecart is now full.")
+				addMessage("Ковш вагонетки зачерпнул "+str(freeSpace)+" "+("nugget" if freeSpace == 1 else "nuggets")+"! Вагонетка теперь полна.")
 				removeXNuggetsIn(minecartLoc, freeSpace)
 				nuggetsMinecart += freeSpace
 	
@@ -790,9 +790,9 @@ func doMine():
 	
 	if(RNG.chance(mineChance)):
 		doMineSpotUpgraded(GM.pc.getLocation())
-		addMessage("You did some mining!"+(" The deposit has been mined out." if !hasOreIn(GM.pc.getLocation()) else ""))
+		addMessage("Ты немного поработал в шахте!"+(" Месторождение полностью исчерпано." if !hasOreIn(GM.pc.getLocation()) else ""))
 	else:
-		addMessage("You did some mining but failed to find any ore!"+(" The deposit has been mined out." if !hasOreIn(GM.pc.getLocation()) else ""))
+		addMessage("Ты покопался в шахте, но так и не нашел руды!"+(" Месторождение полностью исчерпано." if !hasOreIn(GM.pc.getLocation()) else ""))
 
 func getNuggetCredits(_am:int) -> int:
 	if(hasUpgrade("moreCreds6")):
@@ -815,14 +815,14 @@ func dropAllNuggets():
 		var credAmount:int = getNuggetCredits(nuggetsCarrying)
 		addTotalMined(credAmount)
 		addCredits(credAmount)
-		addMessage("You have unloaded all your nuggets and got "+str(credAmount)+" credits for it!")
+		addMessage("Вы выгрузили все свои самородки и получили "+str(credAmount)+" кредитов за это!")
 		nuggetsCarrying = 0
 		return
 	
 	for _i in range(nuggetsCarrying):
 		spawnNugget(GM.pc.getLocation())
 	nuggetsCarrying = 0
-	addMessage("You have dropped all your nuggets!")
+	addMessage("Вы выгрузили все свои самородки!")
 
 func spawnNugget(_theLoc:String):
 	var nuggetEntry:Array = [getUID(), _theLoc]
@@ -915,11 +915,11 @@ func loadMinecartFromPC():
 	if(freeSpace >= nuggetsCarrying):
 		nuggetsMinecart += nuggetsCarrying
 		nuggetsCarrying = 0
-		addMessage("You have put all your nuggets into the minecart.")
+		addMessage("Вы сложили все свои самородки в вагонетку.")
 	else:
 		nuggetsMinecart += freeSpace
 		nuggetsCarrying -= freeSpace
-		addMessage("You have put some of your nuggets into the minecart. The minecart is now [b]full[/b]!")
+		addMessage("Вы положили часть самородков в вагонетку. Теперь вагонетка [b]полна[/b]!")
 
 	updateCartIcon()
 
@@ -932,14 +932,14 @@ func loadMinecartFromDude(_dude:Dude) -> bool:
 	if(freeSpace <= 0):
 		return false
 	if(freeSpace >= _dude.nuggets):
-		addMessage("One of the slaves throws "+str(_dude.nuggets)+" "+("nugget" if _dude.nuggets == 1 else "nuggets")+" into your minecart!")
+		addMessage("Одна из рабынь швыряет "+str(_dude.nuggets)+" "+("nugget" if _dude.nuggets == 1 else "nuggets")+" прямо в вашу вагонетку!")
 		nuggetsMinecart += _dude.nuggets
 		_dude.nuggets = 0
 		_dude.path.clear()
 	else:
 		nuggetsMinecart += freeSpace
 		_dude.nuggets -= freeSpace
-		addMessage("One of the slaves throws "+str(_dude.nuggets)+" "+("nugget" if _dude.nuggets == 1 else "nuggets")+" into your minecart! The minecart is now [b]full[/b]!")
+		addMessage("Одна из рабынь швыряет "+str(_dude.nuggets)+" "+("nugget" if _dude.nuggets == 1 else "nuggets")+" прямо в вашу вагонетку! Теперь вагонетка [b]полна[/b]!")
 
 	updateCartIcon()
 	return true
@@ -950,7 +950,7 @@ func unloadMinecart():
 		credAmount *= 2
 	addTotalMined(credAmount)
 	addCredits(credAmount)
-	addMessage("You have unloaded the minecart and got "+str(credAmount)+" credits for it!")
+	addMessage("Вы разгрузили вагонетку и получили "+str(credAmount)+" кредитов за это!")
 	nuggetsMinecart = 0
 	updateCartIcon()
 
@@ -969,7 +969,7 @@ func canRefresh() -> bool:
 func doRefresh():
 	refreshUsed += 1
 	GM.pc.addStamina(GM.pc.getMaxStamina())
-	addMessage("You drink some water and feel refreshed!")
+	addMessage("Ты выпиваешь немного воды и чувствуешь прилив свежести!")
 
 func getExtraPickupAmount() -> int:
 	if(hasUpgrade("gloves2")):

@@ -26,10 +26,10 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 		
 		if(!damageTexts.empty()):
 			damageTexts.append(RNG.pick([
-				"{npc.name} keeps ripping your clothes!",
-				"{npc.name} is still going!",
-				"Your owner rips your clothes more and more!",
-				"{npc.He} just {npc.verb('refuse')} to stop!",
+				"{npc.name} продолжает рвать твою одежду!",
+				"{npc.name} всё не унимается!",
+				"Твой хозяин рвет твою одежду всё сильнее и сильнее!",
+				"{npc.He} остановится, только если {npc.verb('refuse')}!",
 			]))
 		damageTexts.append("Your "+damageItem.getVisibleName()+" got damaged! "+damageText)
 		

@@ -29,7 +29,7 @@ func getActions() -> Array:
 		{
 			id = "go",
 			name = "Вперёд!",
-			desc = "Save the person",
+			desc = "Спасти человека",
 			score = 1.0,
 			args = {},
 			time = 60,

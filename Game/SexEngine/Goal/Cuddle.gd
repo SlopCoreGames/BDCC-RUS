@@ -36,10 +36,10 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([
-		"Do you wanna cuddle maybe?",
-		"How about we just cuddle for a bit?",
-		"Maybe you'd want to cuddle with me?",
-		"Wanna cuddle maybe?",
+		"Может, пообнимаемся?",
+		"Как насчет того, чтобы просто немного пообниматься?",
+		"Может, ты хочешь пообниматься со мной?",
+		"Хочешь обнимашек?",
 	])
 
 func getBegDomFetishes() -> Dictionary:

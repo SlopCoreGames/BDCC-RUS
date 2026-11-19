@@ -36,12 +36,12 @@ func _run():
 		if(!getFlag("TaviModule.Ch7CaptainSceneHappened")):
 			if(getFlag("TaviModule.Ch7PlanningSceneHappened")):
 				if(taviModule.hasAllSkillsLearnedFully() && (taviModule.getCorruption() <= 0.0 || taviModule.getCorruption() >= 2.0)):
-					addButtonUnlessLate("Final Attack", "Use everything that you and Tavi learned to carry out the last attack.\n\nTo let Tavi help you during the final attack, she needs to be fully trained on all skills and her corruption needs to be either 0% or 200%", "start_final_attack")
+					addButtonUnlessLate("Финальная атака", "Используй всё, чему вы с Тави научились, чтобы совершить последнюю атаку.\n\nЧтобы Тави могла помочь тебе во время финального штурма, она должна полностью освоить все навыки, а уровень её развращённости должен составлять либо 0% o, либо 200%", "start_final_attack")
 				else:
 					addDisabledButton("Финальная атака", "Чтобы Тави помогла вам в финальной атаке, она должна быть полностью обучена всем навыкам, а уровень её развращённости должен составлять либо 0%, либо 200%")
 			else:
 				if(taviModule.getCorruption() <= 0.0 || taviModule.getCorruption() >= 2.0):
-					addButtonUnlessLate("Final Attack", "Use everything that you and Tavi learned to prepare the last attack.\n\nTavi's corruption needs to be either 0% or 200%", "start_plan_scene")
+					addButtonUnlessLate("Финальная атака", "Используйте всё, чему научились вы и Тави, чтобы подготовить решающий удар.\n\nРазвращённость Тави должна быть либо 0%, либо 200%", "start_plan_scene")
 				else:
 					addDisabledButton("Финальная атака", "Используйте всё, чему научились вы и Тави, чтобы подготовить решающий удар.\n\nРазвращённость Тави должна быть либо 0%, либо 200%")
 				
@@ -144,7 +144,7 @@ func getDebugActions():
 	return [
 		{
 			"id": "setCorruption",
-			"name": "Set Corruption",
+			"name": "Установить уровень разврата",
 			"args": [
 				{
 					"id": "newcorruption",

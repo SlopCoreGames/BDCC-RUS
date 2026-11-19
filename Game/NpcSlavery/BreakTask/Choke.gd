@@ -37,11 +37,11 @@ func getTaskHint(_isSlaveLevelup):
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [
-		"I want your throat bruised. Get yourself choked properly.",
-		"You need to feel owned. Go get choked during sex.",
-		"Your air is a privilege. Find someone to choke you until you see stars.",
-		"A good fuck includes a hand on your throat. Go get choked.",
-		"Show me you can take it. Get choked until you're dizzy.",
+		"Я хочу, чтобы твое горло было в синяках. Пусть тебя как следует придушат.",
+		"Тебе нужно почувствовать себя собственностью. Пусть тебя душат во время секса.",
+		"Твой воздух — это привилегия. Найди кого-нибудь, кто будет душить тебя до искр из глаз.",
+		"Хороший трах обязательно включает руку на горле. Иди и дай себя придушить.",
+		"Покажи мне, что ты это вынесешь. Пусть тебя душат, пока голова не пойдет кругом.",
 	]
 
 func getSexGoalWeightModifier(_sexGoalID:String) -> float:

@@ -660,7 +660,7 @@ func _react(_action: String, _args):
 		getCharacter("kait").resetEquipment()
 
 	if(_action == "all_left_only_avy"):
-		addMessage("Task updated!")
+		addMessage("Задача обновлена!")
 	
 	if(_action == "let_kait_just_go"):
 		GM.main.MS.setDecision("kait", "letgo")

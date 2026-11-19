@@ -37,8 +37,8 @@ func getTaskHint(_isSlaveLevelup):
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [
-		"Next time I see you, your body better have bruises.",
-		"Go earn some bruises. I wanna see them.",
-		"Go earn some bruises like a true painslut.",
-		"Don't show me yourself until you got enough bruises."
+		"В следующий раз, когда я тебя увижу, всё твоё тело должно быть в синяках.",
+		"Иди и набей себе синяков. Хочу их видеть.",
+		"Иди и набей себе синяков, как настоящая больная сучка.",
+		"Не смей показываться мне на глаза, пока не покроешься синяками."
 	]

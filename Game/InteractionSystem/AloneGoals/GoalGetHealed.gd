@@ -25,7 +25,7 @@ func getActions() -> Array:
 			{
 				id = "getHealed",
 				name = "Исцеление завершено!",
-				desc = "Do something",
+				desc = "Что-нибудь сделать",
 				score = 1.0,
 				args = {},
 				time = 300,
@@ -35,7 +35,7 @@ func getActions() -> Array:
 		{
 			id = "go",
 			name = "Вперёд!",
-			desc = "Do something",
+			desc = "Что-нибудь сделать",
 			score = 1.0,
 			args = {},
 			time = 60,

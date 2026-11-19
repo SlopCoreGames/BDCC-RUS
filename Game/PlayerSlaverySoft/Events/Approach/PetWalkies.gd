@@ -148,16 +148,16 @@ func getDoState() -> String:
 func pMedical():
 	playAnimation(StageScene.Duo, "stand", {npc="eliza"})
 	saynn("{npc.name} ведет тебя в медицинское крыло.")
-	talkOwner("My {npc.npcSlave} isn't doing too well.")
-	talkCharID("eliza", "Oh, I have something that can help.")
+	talkOwner("Мой {npc.npcSlave} не в лучшей форме.")
+	talkCharID("eliza", "О, у меня есть кое-что, что может помочь.")
 	saynn("Кошка-врач подходит к тебе и дает тебе маленькую таблетку!")
-	talkCharID("eliza", "This should help~.")
+	talkCharID("eliza", "Это должно помочь~.")
 	saynn("Твой хозяин кивает и уводит тебя от прилавка.")
 	
 	if(onlyOnce()):
 		GM.pc.addPain(-100)
 		GM.pc.addStamina(150)
-		GM.main.addMessage("You feel better!")
+		GM.main.addMessage("Тебе стало лучше!")
 	
 	paradedOutcome()
 	
@@ -169,11 +169,11 @@ func pVendomat():
 	if(onlyOnce()):
 		var theItemToGive:String = RNG.pick(["EnergyDrink"])
 		if(theItemToGive):
-			talkOwner("Thirsty?")
+			talkOwner("Хочешь пить?")
 			saynn("{npc.He} {npc.verb('buy')} энергетический напиток и протягивает его тебе.")
-			talkOwner("Enjoy.")
+			talkOwner("Наслаждайся.")
 			GM.pc.getInventory().addItem(GlobalRegistry.createItem(theItemToGive))
-			GM.main.addMessage("You received an energy drink!")
+			GM.main.addMessage("Ты получил(а) энергетический напиток!")
 	saynn("После этого тебя уводят от вендомата.")
 	paradedOutcome()
 
@@ -219,15 +219,15 @@ func simpleTrick():
 	saynn("Твой хозяин замирает и поворачивается к тебе.")
 	
 	if(wantsTrick == "bark"):
-		talkOwner("Bark for me.")
+		talkOwner("Гавкни для меня.")
 	elif(wantsTrick == "down"):
-		talkOwner("Lie down.")
+		talkOwner("Лежать.")
 	elif(wantsTrick == "sit"):
-		talkOwner("Sit.")
+		talkOwner("Сидеть.")
 	elif(wantsTrick == "paw"):
-		talkOwner("Give paw.")
+		talkOwner("Дай лапу.")
 	elif(wantsTrick == "roll"):
-		talkOwner("Roll over.")
+		talkOwner("Перевернись.")
 	saynn("Похоже, {npc.name} хочет, чтобы ты что-то сделал(а)...")
 	
 	var possible:Array = [
@@ -354,15 +354,15 @@ func simonsSaysTricks():
 		pcPickedTrick = ""
 	
 	saynn("Твой хозяин поворачивается к тебе.")
-	talkOwner("Let's do something more complicated, I wanna test my puppy.")
+	talkOwner("Давай что-нибудь посложнее, хочу проверить своего щеночка.")
 	saynn("Ты наклоняешь голову набок.")
-	talkOwner("I will say a list of tricks and you will do them, in the same order.")
+	talkOwner("Я назову список команд, а ты будешь выполнять их строго по порядку.")
 	saynn("Твои ушки на макушке, ты внимательно прислушиваешься...")
 	
 	var theTricks:Array = []
 	for theTrick in trickQueue:
 		theTricks.append(trickToTrickName(theTrick))
-	talkOwner("I want you to do this: "+Util.humanReadableList(theTricks, "and then")+".")
+	talkOwner("Я хочу, чтобы ты сделал вот это: "+Util.humanReadableList(theTricks, "а затем")+".")
 	addContinue("setState", ["simonsSaysTricksDo"])
 	
 func simonsSaysTricksDo():
@@ -465,21 +465,21 @@ func findStickFinding():
 			addButton("Мячика нет...", "Тебе не удалось найти мячик хозяина...", "setState", ["fakeStickFound"])
 	
 	if(GM.world.canGoID(roomID, GameWorld.Direction.NORTH)):
-		addButtonAt(6, "North", "Go north", "go", [GameWorld.Direction.NORTH, Direction.North])
+		addButtonAt(6, "Север", "Идти на север", "go", [GameWorld.Direction.NORTH, Direction.North])
 	else:
-		addDisabledButtonAt(6, "North", "Can't go north")
+		addDisabledButtonAt(6, "Север", "Нельзя пройти на север")
 	if(GM.world.canGoID(roomID, GameWorld.Direction.WEST)):
-		addButtonAt(10, "West", "Go west", "go", [GameWorld.Direction.WEST, Direction.West])
+		addButtonAt(10, "Запад", "Идти на запад", "go", [GameWorld.Direction.WEST, Direction.West])
 	else:
-		addDisabledButtonAt(10, "West", "Can't go west")
+		addDisabledButtonAt(10, "Запад", "Нельзя пройти на запад")
 	if(GM.world.canGoID(roomID, GameWorld.Direction.SOUTH)):
-		addButtonAt(11, "South", "Go south", "go", [GameWorld.Direction.SOUTH, Direction.South])
+		addButtonAt(11, "Юг", "Идти на юг", "go", [GameWorld.Direction.SOUTH, Direction.South])
 	else:
-		addDisabledButtonAt(11, "South", "Can't go south")
+		addDisabledButtonAt(11, "Юг", "Нельзя пройти на юг")
 	if(GM.world.canGoID(roomID, GameWorld.Direction.EAST)):
-		addButtonAt(12, "East", "Go east",  "go", [GameWorld.Direction.EAST, Direction.East])
+		addButtonAt(12, "Восток", "Идти на восток",  "go", [GameWorld.Direction.EAST, Direction.East])
 	else:
-		addDisabledButtonAt(12, "East", "Can't go east")
+		addDisabledButtonAt(12, "Восток", "Нельзя пройти на восток")
 
 func findStickFinding_do(_id:String, _args:Array):
 	if(_id == "go"):
@@ -496,7 +496,7 @@ func findStickFinding_do(_id:String, _args:Array):
 		
 	if(_id == "grabStick"):
 		foundStick = true
-		GM.main.addMessage("You find the ball and grab it with your mouth!")
+		GM.main.addMessage("Найди мячик и схвати его зубами!")
 		playAnimation(StageScene.PuppySolo, "sad", {bodyState={naked=true}})
 
 func gaveStick():

@@ -205,7 +205,7 @@ func _run():
 		# (triggers once)
 		setModuleFlag("TaviModule", "Tavi_ToldHowToEscape", true)
 		setModuleFlag("TaviModule", "Tavi_NeedsApple", true)
-		addMessage("You got a new task")
+		addMessage("У тебя новое задание")
 
 		saynn("Ты усаживаешься на один из пустых ящиков для руды.")
 
@@ -271,7 +271,7 @@ func _run():
 
 		saynn("Она хватает его, держит, даже дышит на него, но в итоге возвращает обратно.")
 
-		saynn("[say=tavi]Хорошо. Оставь себе." + ("Bet you went through some things to get it." if pcStoleApple else "Even though you took the easy way to get it.") + "[/say]")
+		saynn("[say=tavi]Хорошо. Оставь себе." + ("Спорим, тебе пришлось через дерьмо пройти, чтобы его получить." if pcStoleApple else "Хотя ты и выбрал путь полегче.") + "[/say]")
 
 		saynn("Её слова сбивают тебя с толку. Она с огромным интересом наблюдает за твоей реакцией.")
 

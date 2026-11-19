@@ -16,7 +16,7 @@ func getVisibleName():
 	return "Деревянная лошадь"
 
 func getVisibleDesc():
-	return "Torture your slave using a wooden horse"
+	return "Истязать свою рабыню на деревянной лошади"
 
 func checkCanDo(_slaveID, _extraSlavesIDs = {}):
 	if(!getFlag("NpcSlaveryModule.hasWoodenHorse", false)):
@@ -31,16 +31,16 @@ func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var text = "В порыве жестокости вы швыряете {npc.name} на деревянную лошадь, заставляя {npc.him} оседлать её острый металлический край, который мгновенно впивается в {npc.his} пах, вызывая мучительный дискомфорт!\n\n"
 	
 	if(npcSlavery.isActivelyResisting()):
-		text += "{npc.HeShe} struggles against the restraints, but the firm bindings hold {npc.him} in place, forcing {npc.him} to endure the punishment."
+		text += "{npc.HeShe} отчаянно пытается вырваться из пут, но крепкие путы удерживают {npc.him} на месте, заставляя {npc.him} терпеть наказание."
 	else:
-		text += "Despite the discomfort, {npc.heShe} accepts the position willingly and just endures the punishment for as long as {npc.he} can."
+		text += "Несмотря на дискомфорт, {npc.heShe} покорно принимает позу и просто терпит наказание столько, сколько хватает сил {npc.he}."
 
 	if(character.hasReachableVagina()):
-		text += " After about an hour of pure torture, your slave is grunting painfully, {npc.his} {pussy} looking extremely bruised!"
+		text += " Спустя примерно час чистой пытки твоя рабыня стонет от боли, а {npc.his} {pussy} выглядит невероятно избитой!"
 	elif(character.hasPenis()):
-		text += " After about an hour of pure torture, your slave is grunting painfully, {npc.his} balls and cock looking extremely bruised!"
+		text += " Спустя примерно час чистой пытки твоя рабыня стонет от боли, а яички и член {npc.his} выглядят невероятно избитыми!"
 	else:
-		text += " After about an hour of pure torture, your slave is grunting painfully, {npc.his} crotch looking extremely bruised!"
+		text += " Спустя примерно час чистой пытки твоя рабыня стонет от боли, а промежность {npc.his} выглядит невероятно избитой!"
 		
 	npcSlavery.handlePunishment(4)
 	npcSlavery.addTired(1)

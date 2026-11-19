@@ -1227,7 +1227,7 @@ func addMessage(text: String):
 
 func addExperienceToPlayer(ex: int, showMessage: bool = true):
 	if(showMessage):
-		addMessage("You received "+str(ex)+" experience")
+		addMessage("Вы получили "+str(ex)+" experience")
 	GM.pc.addExperience(ex)
 
 func runScene(sceneid: String, args = [], tag = ""):
@@ -1251,9 +1251,9 @@ func doDexterityCheck(_roleActs:String, _roleReacts:String) -> bool:
 
 func addDefeatButtons(rolePC:String, _roleNPC:String):
 	if(involvedPawns.has(rolePC) && getRolePawn(rolePC).isPlayer()):
-		addAction("builtin_inv", "Inventory", "Open the inventory", "default", 0.0, 0, {})
+		addAction("builtin_inv", "Инвентарь", "Открыть инвентарь", "default", 0.0, 0, {})
 		if(GM.pc.getInventory().hasRemovableRestraints()):
-			addAction("builtin_struggle", "Struggle", "Try to remove some of your restraints", "default", 0.0, 0, {})
+			addAction("builtin_struggle", "Сопротивление", "Попытаться ослабить свои оковы", "default", 0.0, 0, {})
 		
 		if(involvedPawns.has(_roleNPC)):
 			GM.ES.triggerRun(Trigger.DefeatedDynamicNPC, [getRoleID(_roleNPC)])
@@ -1319,7 +1319,7 @@ func addChatTopics(startRole:String, reactRole:String, actionID:String, topicsAm
 			buttonName += " is "
 		buttonName += randomEndInfo[0]
 		
-		addAction(actionID, buttonName, "Say this: "+buttonName, "default", 1.0, 60, {
+		addAction(actionID, buttonName, "Сказать следующее: "+buttonName, "default", 1.0, 60, {
 			args = {
 				chat = {
 					startRole = startRole,
@@ -1354,13 +1354,13 @@ func addReactToChatButtons(chatEntry:Dictionary, actionID:String):
 	else:
 		disagreeScore = 1.0
 	
-	addAction(actionID, "Agree", "Agree with what they said", "default", agreeScore, 60,{
+	addAction(actionID, "Согласиться", "Согласиться с тем, что они сказали", "default", agreeScore, 60,{
 		args = {answer="agree",chat=chatEntry,},
 	})
-	addAction(actionID, "Disagree", "Disagree with what they said", "default", disagreeScore, 60,{
+	addAction(actionID, "Не согласиться", "Не согласиться с тем, что они сказали", "default", disagreeScore, 60,{
 		args = {answer="disagree",chat=chatEntry,},
 	})
-	addAction(actionID, "Whatever", "You don't know how you feel about their words", "default", whateverScore, 60,{
+	addAction(actionID, "Да и хрен с ним", "Вы сами не знаете, как реагировать на их слова", "default", whateverScore, 60,{
 		args = {answer="whatever",chat=chatEntry,},
 	})
 
@@ -1396,7 +1396,7 @@ func doReactToChat(_args:Dictionary, skipPcCheck:bool = true):
 		if(reactChar.isPlayer()):
 			return
 		if(lust.learnRandomInterestFromList([topicID])):
-			addMessage("You learned something new about "+reactChar.getName()+"'s likes and dislikes..")
+			addMessage("Вы узнали кое-что новое о "+reactChar.getName()+"вкусах и предпочтениях...")
 	
 func showKnownLikesDislikesFor(role:String):
 	var npc = getRoleChar(role)
@@ -1485,14 +1485,14 @@ func addReactToLustFocusButtons(actionID:String, lustEntry:Dictionary):
 	
 	#print("LIKENESS: ",likeness)
 	
-	addAction(actionID, "Accept", "Accept the flirt", "default", likeness*likeness, 60, {
+	addAction(actionID, "Принять", "Принять флирт", "default", likeness*likeness, 60, {
 		args = {
 			#lust = lustEntry,
 			answer = "accept",
 			likeness = likeness,
 		},
 	})
-	addAction(actionID, "Deny", "Deny their flirt", "default", 1.0 - likeness*likeness, 60, {
+	addAction(actionID, "Отказать", "Отклонить флирт", "default", 1.0 - likeness*likeness, 60, {
 		args = {
 			#lust = lustEntry,
 			answer = "deny",
@@ -1524,13 +1524,13 @@ func reactToLustFocus(args:Dictionary, lustEntry:Dictionary):
 	elif( lustEntry.has("affectionTooLow") && lustEntry["affectionTooLow"] == true && (answer == "deny") ):
 		if(affectionBeforeChange < -0.2):
 			lustEntry["text"] = RNG.pick([
-				"They.. don't really like you in general.",
+				"В целом, вы им не особо нравитесь.",
 			])
 		else:
 			lustEntry["text"] = RNG.pick([
-				"You're too much of a stranger to them.",
-				"This is too sudden. Perhaps it's worth exchanging a word or two.",
-				"They barely know you. It's unlikely they'll openly admit anything to you.",
+				"Вы для них всё ещё слишком чужой человек.",
+				"Это слишком внезапно. Возможно, стоит сначала перекинуться парой слов.",
+				"Они едва вас знают. Маловероятно, что они сразу во всём признаются.",
 			])
 	else:
 		var role2char:BaseCharacter = role2pawn.getChar()
@@ -1597,35 +1597,35 @@ func reactToLustFocus(args:Dictionary, lustEntry:Dictionary):
 
 		if(likedWhat != ""):
 			lustEntry["text"] = RNG.pick([
-				"They seemed to like "+likedWhat,
-				"They seemed fond of "+likedWhat,
-				"They really appreciate "+likedWhat,
-				"They loved "+likedWhat,
-				LikedWhat+" really "+RNG.pick(["drew", "captured"])+" their attention",
-				LikedWhat+" "+("seem" if(likedWhatIsPlural) else "seems")+" to catch their attention pretty well",
+				"Казалось, им нравилось "+likedWhat,
+				"Казалось, они были неравнодушны к "+likedWhat,
+				"Они очень ценят "+likedWhat,
+				"Они обожали "+likedWhat,
+				LikedWhat+" really "+RNG.pick(["drew", "captured"])+" их внимание",
+				LikedWhat+" "+("seem" if(likedWhatIsPlural) else "seems")+" довольно неплохо привлекло их внимание",
 			])
 
 		if(dislikedWhat != ""):
 			if(likedWhat != ""):
 				lustEntry["text"] += RNG.pick([
-					", but they aren't really liking "+dislikedWhat,
-					", though "+dislikedWhat+" "+("aren't" if(dislikedWhatIsPlural) else "isn't")+" really appealing to them",
-					", however "+dislikedWhat+" "+("seem" if(dislikedWhatIsPlural) else "seems")+" to turn them off",
+					", но им это не особо нравится "+dislikedWhat,
+					", though "+dislikedWhat+" "+("aren't" if(dislikedWhatIsPlural) else "isn't")+" их это реально заводит",
+					", however "+dislikedWhat+" "+("seem" if(dislikedWhatIsPlural) else "seems")+" чтобы их оттолкнуть",
 				])
 			else:
 				lustEntry["text"] = RNG.pick([
-					"You noticed they aren't really into "+dislikedWhat,
-					"You were able to notice their aversion to "+dislikedWhat,
-					DislikedWhat+" "+("don't" if(dislikedWhatIsPlural) else "doesn't")+" seem to interest them",
-					DislikedWhat+" "+("are" if(dislikedWhatIsPlural) else "is")+" a bit outside their interests",
+					"Вы заметили, что их не особо прет "+dislikedWhat,
+					"Вы смогли заметить их неприязнь к "+dislikedWhat,
+					DislikedWhat+" "+("don't" if(dislikedWhatIsPlural) else "doesn't")+" кажется, их это интересует",
+					DislikedWhat+" "+("are" if(dislikedWhatIsPlural) else "is")+" немного не в их вкусе",
 				])
 		else:
 			if(likedWhat != "" && answer == "deny"):
 				lustEntry["text"] += RNG.pick([
-					", but unfortunately that wasn't enough",
-					", but that didn't seem enough",
-					", however something still seemed to turn them off",
-					", though they're still seemingly unhappy about something",
+					", но, к сожалению, этого оказалось мало",
+					", но этого, похоже, было недостаточно",
+					", однако что-то всё равно их оттолкнуло",
+					", хотя они всё ещё выглядят чем-то недовольными",
 				])
 
 		if(likedWhat != "" || dislikedWhat != ""):
@@ -1635,9 +1635,9 @@ func reactToLustFocus(args:Dictionary, lustEntry:Dictionary):
 				lustEntry["text"] = ""
 			else:
 				lustEntry["text"] = RNG.pick([
-					"It was difficult to tell what displeased them.",
-					"You were sure this was going to work..",
-					"Is there something wrong with their taste?..",
+					"Трудно было понять, что именно им не нравится.",
+					"Ты был уверен, что это сработает...",
+					"Может, у них проблемы с вкусом?..",
 				])
 
 		if(hasLearnedAnyLustInterests == true):

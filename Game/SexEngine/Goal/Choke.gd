@@ -47,14 +47,14 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([
-		"Please, I need to feel your hand on my neck.",
-		"Choke me, I want to feel owned by you.",
-		"I'm begging you, cut off my air just for a second.. or more.",
-		"Your hands on my neck is all I can think about. Please?",
-		"Be rough, please. Squeeze my throat hard.",
-		"I want to feel completely helpless. Choke me!",
-		"Please, I'll be so good for you if you just choke me.",
-		"Wrap your fingers around my neck and squeeze hard. Please?"
+		"Пожалуйста, я хочу чувствовать твою руку на своей шее.",
+		"Удуши меня, я хочу чувствовать, что ты владеешь мной.",
+		"Умоляю, перекрой мне воздух хоть на секунду... или на дольше.",
+		"Я только и могу думать о твоих руках на моей шее. Ну пожалуйста?",
+		"Будь грубее, прошу. Сжимай моё горло сильнее.",
+		"Я хочу чувствовать себя совершенно беспомощной. Удуши меня!",
+		"Пожалуйста, я буду такой послушной, только если ты меня придушишь.",
+		"Обхвати мою шею пальцами и сжимай крепко. Ну пожалуйста?"
 	])
 
 func getBegDomFetishes() -> Dictionary:

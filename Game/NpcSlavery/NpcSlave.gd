@@ -320,7 +320,7 @@ signal onSlaveLevelup(npcSlave)
 func getDebugInfo():
 	var result = [
 		"Obedience: "+str(Util.roundF(getObedience(), 2)),
-		"Broken spirit: "+str(Util.roundF(getBrokenSpirit(), 2)),
+		"Сломленный дух: "+str(Util.roundF(getBrokenSpirit(), 2)),
 		"Love: "+str(Util.roundF(getLove(), 2)),
 		"Despair: "+str(Util.roundF(getDespair(), 2)),
 		"Awareness: "+str(Util.roundF(getAwareness(), 2)),
@@ -352,7 +352,7 @@ func slaveStatToString(theStat, theStrings:Array = ["Very low", "Low", "Below me
 func getMindreaderInfo():
 	var result = [
 		"Obedience: "+slaveStatToString(getObedience()),
-		"Broken spirit: "+slaveStatToString(getBrokenSpirit()),
+		"Сломленный дух: "+slaveStatToString(getBrokenSpirit()),
 		"Love: "+slaveStatToString(getLove()),
 		"Despair: "+slaveStatToString(getDespair()),
 		"Awareness: "+slaveStatToString(getAwareness()),
@@ -806,7 +806,7 @@ func addExperience(howMuch:int):
 		if(!readyForLevelup):
 			readyForLevelup = true
 			if(GM.main != null):
-				GM.main.addMessage("Your slave named "+getChar().getName()+" is ready to be leveled up.")
+				GM.main.addMessage("Ваша рабыня по имени "+getChar().getName()+" готова к повышению уровня.")
 			generateLevelUpTasks()
 		
 		slaveExperience = experienceCap
@@ -838,9 +838,9 @@ func doLevelup():
 	slaveLevel += 1
 
 	if(GM.main != null):
-		GM.main.addMessage("Your slave named "+getChar().getName()+" has reached slave level "+str(slaveLevel)+"!")
+		GM.main.addMessage("Ваша рабыня по имени "+getChar().getName()+" достигла уровня рабства "+str(slaveLevel)+"!")
 		var howMuchExp = int(slaveLevel * 5)
-		GM.main.addMessage("You received "+str(howMuchExp)+" experience")
+		GM.main.addMessage("Вы получили "+str(howMuchExp)+" experience")
 		GM.pc.addExperience(howMuchExp)
 		
 		GM.pc.getReputation().addRep(RepStat.Alpha, 0.2*sqrt(slaveLevel))

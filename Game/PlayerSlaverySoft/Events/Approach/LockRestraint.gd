@@ -72,7 +72,7 @@ func getHumanReadablePossibleListString() -> String:
 func start():
 	playStand()
 	
-	saynn("{npc.name} подходит к тебе... "+("holding a few items." if pickedLocks.size() > 1 else "holding something."))
+	saynn("{npc.name} подходит к тебе... "+("держит несколько предметов." if pickedLocks.size() > 1 else "что-то держит."))
 	talkModularOwnerToPC("SoftSlaveryLockRestraint") # Today I feel like locking something onto you
 	saynn("{npc.He} {npc.verb('show')} "+str(pickedLocks.size())+" thing"+("s" if pickedLocks.size() != 1 else "")+": "+getHumanReadablePossibleListString()+".")
 	talkModularOwnerToPC("SoftSlaveryLockRestraint2") # Which one do you like the most, I'm generous enough to let you choose

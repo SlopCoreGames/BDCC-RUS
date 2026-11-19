@@ -53,11 +53,11 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([
-		"Please, I need to feel your {dom.feet} on me.",
-		"I'm begging to be your doorcarpet, to feel your weight and your skin.",
-		"Please, just run your {dom.feet} over me. I need it so badly.",
-		"I'll be so good for you, just let me have the touch of your {dom.feet}.",
-		"Grant me the honor of feeling your {dom.feet} explore every part of me.",
+		"Пожалуйста, мне нужно почувствовать твои {dom.feet} на себе.",
+		"Умоляю, позволь мне стать твоим ковриком у двери, чтобы я мог чувствовать твой вес и твою кожу.",
+		"Пожалуйста, просто проведи своими {dom.feet} по мне. Мне это так нужно.",
+		"Я буду очень послушным, только позволь мне ощутить прикосновение твоих {dom.feet}.",
+		"Одари меня честью почувствовать, как твои {dom.feet} исследуют каждый уголок моего тела.",
 	])
 
 func getBegDomFetishes() -> Dictionary:

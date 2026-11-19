@@ -19,5 +19,5 @@ func getVisibleName():
 	return "Помощник рабыни"
 
 func getVisibleDesc():
-	return "Manage how your sub will help other slaves"
+	return "Управление тем, как ваш саб будет помогать другим рабыням"
 

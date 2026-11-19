@@ -15,27 +15,27 @@ func shouldHappenChance(_npcSlavery:NpcSlave):
 	return 10.0 + clamp(_npcSlavery.getAwareness()-0.5, 0.0, 1.0) * 100.0
 
 func runEvent(_npcSlavery:NpcSlave):
-	var theText = "{npc.name} lowers {npc.his} gaze when you approach {npc.him}. {npc.His} lips are trembling, {npc.he} clearly wants to say something."
+	var theText = "{npc.name} опускает {npc.his} взгляд, когда ты подходишь к {npc.him}. {npc.His} губы дрожат, {npc.he} явно хочет что-то сказать."
 
 	theText += "\n\n[say=npc]"+RNG.pick([
-		"I.. I wanna tell you something.",
-		"I think it's time..",
-		"I hope you have a minute.. I wanna say something..",
-		"May I tell you something..",
-		"Have a minute?.. I gotta say something..",
+		"Я... я хочу тебе кое-что сказать.",
+		"Думаю, пришло время...",
+		"Надеюсь, у тебя найдется минутка... Я хочу кое-что сказать...",
+		"Можно мне кое-что тебе сказать...",
+		"Есть минутка?.. Мне нужно кое-что сказать...",
 	])+"[/say]\n\n"
 	
-	theText += "Very interesting, you nod.. and watch your slave slowly get on {npc.his} knees before you, {npc.his} gaze still directed down."
+	theText += "Весьма любопытно, ты киваешь... и наблюдаешь, как твоя рабыня медленно опускается на {npc.his} колени перед тобой, всё еще не поднимая {npc.his} взгляда."
 	
 	theText += "\n\n[say=npc]"+RNG.pick([
-		"Thank you for training me.. And making me yours.. I'm happy to be your slave.. forever..",
-		"I'm glad I belong to you.. Thank you for training me, I will try to obey as best as I can..",
-		"I'm yours.. Forever and ever. Thank you for training me.. I will do my best as your slave..",
+		"Спасибо, что обучили меня... И сделали моей... Я счастлива быть твоей рабыней... вечно...",
+		"Я рада, что принадлежу тебе... Спасибо за обучение, я буду стараться слушаться изо всех сил...",
+		"Ты моя... Навсегда и навечно. Спасибо, что обучили меня... Я буду стараться изо всех сил, будучи твоей рабыней...",
 	])+"[/say]\n\n"
 	
-	theText += "You can't help but to smile, your slave has just willingly submitted to you! {npc.He} slowly looks up, {npc.his} gaze radiating obedience. You give {npc.him} a good headpat and feel {npc.him} nuzzling your hand."
+	theText += "Ты не можешь сдержать улыбку — твоя рабыня только что добровольно покорилась тебе! {npc.He} медленно поднимает глаза, и в {npc.his} взгляде читается абсолютная покорность. Ты ласково гладишь {npc.him} по голове и чувствуешь, как {npc.him} ластится к твоей руке."
 	
-	theText += "\n\nThis means that {npc.his} obedience, love and broken spirit won't decay anymore."
+	theText += "\n\nЭто значит, что {npc.his} послушание, любовь и сломленный дух больше не будут увядать."
 	
 	_npcSlavery.doSubmitToPC()
 	

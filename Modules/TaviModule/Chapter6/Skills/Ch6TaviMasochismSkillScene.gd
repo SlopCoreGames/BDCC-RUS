@@ -35,7 +35,7 @@ func _run():
 
 		saynn("Уши Тави слегка дёргаются, когда она занимает место перед тобой.")
 
-		saynn("[say=tavi]"+str(taviSpeak("Pain? I prefer pleasure..", "If you choke me, I stop caring about the pain~.", "I use pain to my advantage. But I try to avoid it myself, obviously."))+"[/say]")
+		saynn("[say=tavi]"+str(taviSpeak("Боль? Я предпочитаю удовольствие...", "Если ты начнешь меня душить, мне станет плевать на боль~.", "Я использую боль себе во благо. Но сама стараюсь её избегать, само собой."))+"[/say]")
 
 		saynn("Хм. Интересный ответ. Но он не особо отвечает на твой вопрос. Лучше просто проверить Тави на деле.")
 

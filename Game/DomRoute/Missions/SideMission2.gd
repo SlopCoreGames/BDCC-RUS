@@ -3,7 +3,7 @@ extends MissionBase
 func _init():
 	id = "SideMission2"
 	name = "Перепрошитая"
-	desc = "Kait is trying to fix the TV in the other room."
+	desc = "Кейт пытается починить телевизор в соседней комнате."
 	
 	startScene = "DomSM2"
 	requiredMissions = ["Mission2"]
@@ -21,14 +21,14 @@ func _init():
 					effects = [
 						DECISION_EFFECT_KAIT_LOVE,
 					],
-					kaitLine = "Can't believe I somehow walked around the whole prison naked. You could have stopped me!",
+					kaitLine = "Поверить не могу, что я умудрилась пройти через всю тюрьму голышом. Мог бы и остановить меня!",
 				},
 				"strict": {
 					text = "Провел с Кейт строгий разговор",
 					effects = [
 						DECISION_EFFECT_KAIT_OBEDIENCE,
 					],
-					kaitLine = "Can't believe I somehow walked around the whole prison naked. I guess it was worth it in the end.",
+					kaitLine = "Поверить не могу, что я умудрилась пройти через всю тюрьму голышом. Но, думаю, в итоге оно того стоило.",
 				},
 			},
 		}

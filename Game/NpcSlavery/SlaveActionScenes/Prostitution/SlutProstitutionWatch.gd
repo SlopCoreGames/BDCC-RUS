@@ -27,7 +27,7 @@ func _reactInit():
 	else:
 		npc2ID = NpcFinder.grabNpcIDFromPoolOrGenerate(CharacterPool.Inmates, [], InmateGenerator.new(), {})
 	if(npc2ID == null || npc2ID == ""):
-		addMessage("Couldn't find a good client :(")
+		addMessage("Не удалось найти хорошего клиента :(")
 		endScene()
 		return
 	npc2 = getCharacter(npc2ID)
@@ -126,10 +126,10 @@ func _run():
 		saynn("Ты не можешь этого допустить, поэтому вмешиваешься и оттаскиваешь этого мудака от своей бляди.")
 		
 		saynn("[say=npc2]"+RNG.pick([
-			"Huh, are you some kind of pimp? I will fuck you up.",
-			"Wow, so brave. You are in love with this slut or something?",
-			"So brave. It's your slut, isn't it? Would be a shame if something would to happen with her.",
-			"Fucker, I wasn't done with that slut.",
+			"О, ты что, типа сутенер? Ну, я тебя сейчас отъебу.",
+			"Ого, какой смелый. Ты что, влюбился в эту шлюху?",
+			"Какой храбрый. Это твоя сучка, да? Будет жаль, если с ней что-нибудь случится.",
+			"Ублюдок, я еще не закончил с этой шлюхой.",
 		])+"[/say]")
 		
 		saynn("Похоже, назревает драка...")

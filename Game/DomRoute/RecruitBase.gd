@@ -17,7 +17,7 @@ var choices:Array = [
 	{
 		id = "tone",
 		name = "Тон",
-		desc = "Something something",
+		desc = "Что-то там",
 		options = [
 			["loving", "Lovingly", "Do it lovingly", RecruitChoiceResult.Red],
 			["strict", "Strict", "Be extremely strict", RecruitChoiceResult.Yellow],
@@ -33,7 +33,7 @@ func getExtraChoices(_choices:Array, _extras:Dictionary) -> Array:
 		{
 			id = "condom",
 			name = "Презерватив",
-			desc = "Something mew mew",
+			desc = "Что-то мяу-мяу",
 			options = [
 				["no", "No condom", "Don't use a condom"],
 				["worst", "Worst condom", "Use the worst condom you have"],

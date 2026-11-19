@@ -45,11 +45,11 @@ func getTaskHint(_isSlaveLevelup):
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [
-		"I want to see someone's seed dripping from your hole"+("s" if GM.pc.hasVagina() else "")+".",
-		"Find someone to leave their load deep inside you.",
-		"I want you leaking someone's cum.",
-		"Your insides should be swimming in fresh cum.",
-		"Find a cock to pump its seed deep into you.",
+		"Хочу видеть, как чьё-то семя стекает из твоей дырки"+("s" if GM.pc.hasVagina() else "")+".",
+		"Найди кого-нибудь, кто кончит тебе глубоко внутрь.",
+		"Я хочу, чтобы из тебя текла чья-то сперма.",
+		"Твои внутренности должны плавать в свежей сперме.",
+		"Найди член, который выкачает в тебя всё своё семя.",
 	]
 
 func getSexGoalWeightModifier(_sexGoalID:String) -> float:

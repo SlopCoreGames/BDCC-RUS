@@ -3,10 +3,10 @@ extends MissionBase
 func _init():
 	id = "SideMission3"
 	name = "Приземление на Землю"
-	desc = "Ans wanted to have a small chat with you."
+	desc = "Анс хотела немного с тобой поболтать."
 	
 	startScene = "DomSM3"
-	requiredMissions = ["Mission3"]
+	requiredMissions = ["Миссия 3"]
 	
 	flags = {
 		#"kait": flag(FlagType.Text), # "pat", "strict"

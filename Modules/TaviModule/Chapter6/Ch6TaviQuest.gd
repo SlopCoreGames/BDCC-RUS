@@ -9,13 +9,13 @@ func getVisibleName():
 func getProgress():
 	var result = []
 	
-	result.append("Find Tavi.")
+	result.append("Найди Тави.")
 	
 	if(getFlag("TaviModule.Ch5FoundPunishedTavi")):
-		result.append("Tavi got broken and became your pet. Treat her well or turn her into an even bigger slut.")
+		result.append("Тави сломлена и стала твоей домашней зверушкой. Относись к ней хорошо или преврати её в ещё большую шлюху.")
 
 	if(getFlag("TaviModule.Ch7PlanningSceneHappened")):
-		result.append("You can try to storm the command deck alone or train Tavi enough to let her help you. You might want to tie up any loose ends before doing this..")
+		result.append("Ты можешь попытаться штурмовать командный мостик в одиночку или натренировать Тави так, чтобы она смогла тебе помочь. Прежде чем это сделать, стоит прибраться за собой и закрыть все хвосты.")
 
 	return result
 

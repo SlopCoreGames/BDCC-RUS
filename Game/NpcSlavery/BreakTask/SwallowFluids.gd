@@ -55,10 +55,10 @@ func getTaskHint(_isSlaveLevelup):
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [
-		"I want you swallowing every last drop you're given.",
-		"Go drink as much cum as you can get.",
-		"Every load you're offered should go straight down your throat.",
-		"I want you full of swallowed cum when I next find you.",
+		"Я хочу, чтобы ты проглатывала каждую последнюю каплю, которую тебе дают.",
+		"Иди и выпей столько спермы, сколько сможешь в себя влить.",
+		"Каждая порция, которую тебе предложат, должна отправляться прямиком тебе в глотку.",
+		"Я хочу, чтобы, когда я найду тебя в следующий раз, ты была полна проглоченной спермы.",
 	]
 
 func getSexGoalWeightModifier(_sexGoalID:String) -> float:

@@ -25,9 +25,9 @@ func start(_pawns:Dictionary, _args:Dictionary):
 func init_text():
 	saynn("{main.You} {main.youAre} стоит у стены, {main.yourHis} прижав ногу к ней..")
 
-	addAction("search", "Find clients", "Actively seek out clients", "default", 0.5, 60, {})
-	addAction("wait", "Just wait", "Just wait until someone decides to approach you", "default", 1.0, 180, {})
-	addAction("stop", "Stop", "Enough whoring..", "default", (0.2 if (jobTime > (60*30)) else 0.01) if minTime <= 0 else (0.2 if (jobTime > minTime) else 0.0), 0, {})
+	addAction("search", "Искать клиентов", "Активно выискивать клиентов", "default", 0.5, 60, {})
+	addAction("wait", "Просто подожди", "Просто ждать, пока кто-нибудь сам к тебе подойдет", "default", 1.0, 180, {})
+	addAction("stop", "Стой", "Хватит уже этой шлюшни...", "default", (0.2 if (jobTime > (60*30)) else 0.01) if minTime <= 0 else (0.2 if (jobTime > minTime) else 0.0), 0, {})
 
 func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "search"):
@@ -60,18 +60,18 @@ func found_client_text():
 		var askRole:String = "Dom" if(clientRequestedAskType == "service") else "Sub"
 		if(clientIsMean):
 			saynn(RNG.pick([
-				"{client.You} {client.youVerb('demand')} that {main.you} {main.youVerb('think')} {main.yourHis} situation over..",
-				"{client.You} {client.youVerb('move')} one intimidating step closer towards {main.you}, visibly riled by {main.yourHis} assumption..",
+				"{client.You} {client.youVerb('demand')} пора покончить с этой {main.you} {main.youVerb('think')} {main.yourHis} ситуацией..",
+				"{client.You} {client.youVerb('move')} делает пугающий шаг к {main.you}, заметно взбешенный {main.yourHis} предположением..",
 			]))
 		else:
 			var client_playfully:String = RNG.pick(["assertively", "bluntly", "boldly", "playfully", "pleadingly", "teasingly"])
 			saynn(RNG.pick([
-				"{client.You} "+client_playfully+" {client.youVerb('gesture')} at {main.you}, wondering if {main.youHe} would have a different offer for {client.youHim}..",
-				"{client.You} {client.youVerb('think')} over {main.your} offer, but eventually {client.youVerb('decide')} to ask if {main.youHe} would be open to something else..",
+				"{client.You} "+client_playfully+" {client.youVerb('gesture')} на {main.you}, гадая, не предложил бы {main.youHe} что-то другое для {client.youHim}..",
+				"{client.You} {client.youVerb('think')} предложение {main.your}, но в итоге {client.youVerb('decide')} решается спросить, не готов ли {main.youHe} к чему-то другому..",
 			]))
 		sayLine("client", "ProstitutionClientAskFor"+askRole+"Slut", {main="client", target="main"})
 		if(getRoleChar("main").isPlayer()):
-			saynn("Похоже, {client.name} хочет, чтобы ты был "+("a service dom" if(clientRequestedAskType == "service") else "the sub")+"..")
+			saynn("Похоже, {client.name} хочет, чтобы ты был "+("доминант-провайдер" if(clientRequestedAskType == "service") else "сабмиссив")+"..")
 	
 	var haveAnyOptions:bool = false
 	
@@ -81,33 +81,33 @@ func found_client_text():
 	var ACTION_DESC_CLIENT_NOT_INTERESTED:String = "The client is not interested in this.."
 	if(clientRequestedAskType in ["", "usual"]):
 		if(roleCanStartSex("client")):
-			addAction("usual", ACTION_NAME_USUAL, "Let them fuck you any way they want for relatively cheap..", "sexSub", 1.0, 60, {})
+			addAction("usual", ACTION_NAME_USUAL, "Позволь им трахать тебя как угодно и за относительно небольшие деньги..", "sexSub", 1.0, 60, {})
 			haveAnyOptions = true
 		else:
-			addDisabledAction(ACTION_NAME_USUAL, "They can't be a dom with their restraints..")
+			addDisabledAction(ACTION_NAME_USUAL, "С такими путами они не смогут быть доминантами..")
 	else:
 		addDisabledAction(ACTION_NAME_USUAL, ACTION_DESC_CLIENT_NOT_INTERESTED)
 	if(clientRequestedAskType in ["", "service"]):
 		var hasWhoreRepForServiceDom:bool = hasWhoreRepLevelPC_forAskType("service")
 		if(roleCanStartSex("main") && ((clientRequestedAskType == "service") || hasWhoreRepForServiceDom)):
-			addAction("service", ACTION_NAME_SERVICE_DOM, "You will be in charge. It takes more effort"+(".. so you will be taking more credits" if(hasWhoreRepForServiceDom) else " but your whore reputation is not high enough to demand more credits"), "sexDom", 1.0, 60, {})
+			addAction("service", ACTION_NAME_SERVICE_DOM, "Главной будешь ты. Это требует больше усилий,"+(".. так что брать придется больше кредитов," if(hasWhoreRepForServiceDom) else " но твоя репутация шлюхи пока слишком низка, чтобы требовать больше,"), "sexDom", 1.0, 60, {})
 			haveAnyOptions = true
 		else:
-			addDisabledAction(ACTION_NAME_SERVICE_DOM, "You can't be a service dom with your restraints.." if !roleCanStartSex("main") else "Your whore reputation is not high enough for this..")
+			addDisabledAction(ACTION_NAME_SERVICE_DOM, "С такими путами ты не сможешь быть сервис-домом.." if !roleCanStartSex("main") else "Твоя репутация шлюхи еще недостаточно высока для этого..")
 	else:
 		addDisabledAction(ACTION_NAME_SERVICE_DOM, ACTION_DESC_CLIENT_NOT_INTERESTED)
 	if(clientRequestedAskType in ["", "usual"]):
 		if(roleCanStartSex("client") && hasWhoreRepLevelPC_forAskType("pricy")):
-			addAction("pricy_slut", ACTION_NAME_PRICY_SLUT, "Ask for a lot of credits to let them fuck you.. You will have to really satisfy them though..", "resist", 1.0, 60, {})
+			addAction("pricy_slut", ACTION_NAME_PRICY_SLUT, "Требуй кучу кредитов за то, чтобы они тебя трахали.. Но тогда тебе придется их по-настоящему удовлетворять..", "resist", 1.0, 60, {})
 			haveAnyOptions = true
 		else:
-			addDisabledAction(ACTION_NAME_PRICY_SLUT, "They can't be a dom with their restraints.." if !roleCanStartSex("client") else "Your whore reputation is not high enough for this..")
+			addDisabledAction(ACTION_NAME_PRICY_SLUT, "С такими путами они не смогут быть доминантами.." if !roleCanStartSex("client") else "Твоя репутация шлюхи еще недостаточно высока для этого..")
 	else:
 		addDisabledAction(ACTION_NAME_PRICY_SLUT, ACTION_DESC_CLIENT_NOT_INTERESTED)
 	if(clientRequestedAskType == ""):
-		addAction("cancel", "Cancel", "You changed your mind, you don't wanna service them", "default", 0.0 if haveAnyOptions else 1.0, 60, {})
+		addAction("cancel", "Отмена", "Вы передумали и не хотите их обслуживать", "default", 0.0 if haveAnyOptions else 1.0, 60, {})
 	else:
-		addAction("refuse_opposite_role_request", "Refuse", "You're not interested in being a "+("service dom" if(clientRequestedAskType == "service") else "sub")+" for them.", "default", 0.0 if haveAnyOptions else 1.0, 60, {})
+		addAction("refuse_opposite_role_request", "Отказаться", "Вам не интересно быть "+("сервис-домом" if(clientRequestedAskType == "service") else "sub")+" для них.", "default", 0.0 if haveAnyOptions else 1.0, 60, {})
 
 func found_client_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "usual"):
@@ -173,8 +173,8 @@ func giving_offer_text():
 			saynn(RNG.pick(teaseActions))
 	else:
 		saynn(RNG.pick([
-			"{main.You} {main.youVerb('think')} for a little bit.",
-			"{main.You} {main.youVerb('ponder')} for a moment.",
+			"{main.You} {main.youVerb('think')} ненадолго.",
+			"{main.You} {main.youVerb('ponder')} на мгновение.",
 		]))
 	if(askType=="usual"):
 		sayLine("main", "ProstitutionUsual", {main="main", target="client"}, {credits=askCreds})
@@ -187,22 +187,22 @@ func giving_offer_text():
 
 	if(!getRolePawn("client").isPlayer() || GM.pc.getCredits() >= askCreds):
 		var scoreType:String = "agreeSexWithDomSlut" if(slutDom) else "agreeSexWithSubSlut"
-		addAction("agree", "Agree", "Give them the credits and do the thing", scoreType, 1.0, 60, {})
+		addAction("agree", "Согласиться", "Отдать им кредиты и сделать дело", scoreType, 1.0, 60, {})
 	else:
-		addDisabledAction("Agree", "You don't have enough credits..")
+		addDisabledAction("Согласиться", "Недостаточно кредитов...")
 	if(clientRequestedAskType == ""):
 		var ACTION_NAME_REQUEST_SUB_SLUT:String = "I need a sub"
 		var ACTION_NAME_REQUEST_DOM_SLUT:String = "I need a dom"
 		if(roleCanStartSex("client" if(slutDom) else "main")):
 			var scoreTypeOppositeRole:String = "agreeSexWithSubSlut" if(slutDom) else "agreeSexWithDomSlut"
-			addAction("request_opposite_role", (ACTION_NAME_REQUEST_SUB_SLUT if(slutDom) else ACTION_NAME_REQUEST_DOM_SLUT), "Refuse to "+("sub to" if(slutDom) else "dom")+" them, but express interest in "+("domming them instead" if(slutDom) else "a service dom"), scoreTypeOppositeRole, 0.5, 60, {})
+			addAction("request_opposite_role", (ACTION_NAME_REQUEST_SUB_SLUT if(slutDom) else ACTION_NAME_REQUEST_DOM_SLUT), "Отказаться "+("подчиняться" if(slutDom) else "dom")+" им, но проявить интерес к "+("вместо этого доминировать над ними" if(slutDom) else "доминант-провайдер"), scoreTypeOppositeRole, 0.5, 60, {})
 		elif(slutDom):
-			addDisabledAction(ACTION_NAME_REQUEST_SUB_SLUT, "You can't dom them with those restraints..")
+			addDisabledAction(ACTION_NAME_REQUEST_SUB_SLUT, "С такими кандалами тебе не получится над ними доминировать...")
 		else:
-			addDisabledAction(ACTION_NAME_REQUEST_DOM_SLUT, "They can't be a service dom with those restraints..")
-	addAction("deny", "Deny", "You'd rather not..", "default", 1.0, 60, {})
+			addDisabledAction(ACTION_NAME_REQUEST_DOM_SLUT, "С такими путами они не смогут оказывать услуги доминантного типа...")
+	addAction("deny", "Отказать", "Пожалуй, лучше не надо...", "default", 1.0, 60, {})
 	if(false):
-		addAction("haggle", "Haggle", "The slut clearly doesn't deserve that much.. Try to haggle", "default", 1.0, 60, {})
+		addAction("haggle", "Торговаться", "Эта шлюха явно не стоит таких денег... Попробуй поторговаться", "default", 1.0, 60, {})
 
 func giving_offer_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "agree"):
@@ -226,7 +226,7 @@ func offer_denied_text():
 	sayLine("client", "ProstitutionDenied", {main="client", target="main"})
 	sayLine("main", "ProstitutionDeniedWhatever", {main="main", target="client"})
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 60, {})
 
 func offer_denied_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -241,8 +241,8 @@ func offer_accepted_text():
 	sayLine("client", "ProstitutionAccept", {main="client", target="main"})
 	saynn("Пришло время для самого интересного..")
 
-	addAction("sex", "Sex", "Prepare to do this..", "default", 1.0, 60, {})
-	addAction("scam", "Scam", "Suddenly demand more creds", "punishMean", 0.5, 60, {})
+	addAction("sex", "Секс", "Приготовься к этому...", "default", 1.0, 60, {})
+	addAction("scam", "Развести на деньги", "Внезапно потребовать больше кредитов", "punishMean", 0.5, 60, {})
 
 func offer_accepted_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "sex"):
@@ -257,7 +257,7 @@ func about_to_sex_text():
 	saynn("Пара уходит с дороги остальным..")
 	saynn("{main.You} {main.youVerb('pull')} {client.you} поближе для секса..")
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {start_sex=["main" if slutDom else "client", "client" if slutDom else "main", SexType.DefaultSex, {SexMod.BondageDisabled: !slutDom}],})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 60, {start_sex=["main" if slutDom else "client", "client" if slutDom else "main", SexType.DefaultSex, {SexMod.BondageDisabled: !slutDom}],})
 
 func about_to_sex_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -274,10 +274,10 @@ func about_to_sex_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 func after_sex_text():
 	saynn("Секс закончился..")
-	saynn(("Your" if(getRoleChar("client").isPlayer()) else "Client's")+"уровень удовлетворения составляет.. "+str(Util.roundF(clientSatisfaction*100.0, 1))+"%")
+	saynn(("Твой" if(getRoleChar("client").isPlayer()) else "Client's")+"уровень удовлетворения составляет.. "+str(Util.roundF(clientSatisfaction*100.0, 1))+"%")
 
-	addAction("leave", "Leave", "That was alright", "default", (clientSatisfaction if (askType!="pricy") else (clientSatisfaction/2.0)), 60, {})
-	addAction("demand_creds_back", "Demand creds back", "That sucked, the slut should give you the credits back", "default", (0.05 if clientSatisfaction > 0.9 else (1.0 if clientSatisfaction <= 0.5 else 0.4)), 60, {})
+	addAction("leave", "Уйти", "Было неплохо", "default", (clientSatisfaction if (askType!="pricy") else (clientSatisfaction/2.0)), 60, {})
+	addAction("demand_creds_back", "Потребовать кредиты назад", "Хреново вышло, эта шлюха должна вернуть тебе кредиты", "default", (0.05 if clientSatisfaction > 0.9 else (1.0 if clientSatisfaction <= 0.5 else 0.4)), 60, {})
 
 func after_sex_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "leave"):
@@ -293,7 +293,7 @@ func after_sex_do(_id:String, _args:Dictionary, _context:Dictionary):
 func client_leaving_text():
 	saynn("{client.You} {client.youAre} уходит, довольный.")
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 60, {})
 
 func client_leaving_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -303,16 +303,16 @@ func client_leaving_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 func client_demands_credits_text():
 	sayLine("client", "ProstitutionDemandCreds", {main="client", target="main"})
-	saynn(("You are" if(getRoleChar("client").isPlayer()) else "The client is")+" явно злится..")
+	saynn(("Ты —" if(getRoleChar("client").isPlayer()) else "Клиент...")+" явно злится..")
 
-	addAction("return_creds", "Return creds", "You won't be missing them anyway", "surrender", 1.0, 60, {})
-	addAction("refuse", "Refuse", "", "fight", 1.0, 60, {})
+	addAction("return_creds", "Вернуть кредиты", "Всё равно тебе их будет не хватать", "surrender", 1.0, 60, {})
+	addAction("refuse", "Отказаться", "", "fight", 1.0, 60, {})
 
 func client_demands_credits_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "return_creds"):
 		if(getRolePawn("client").isPlayer()):
 			GM.pc.addCredits(askCreds)
-			addMessage("You got the credits back!")
+			addMessage("Ты вернул кредиты!")
 		if(getRolePawn("main").isPlayer()):
 			GM.pc.addCredits(-askCreds)
 		setState("client_got_credits_back", "client")
@@ -328,7 +328,7 @@ func client_got_credits_back_text():
 	saynn("{main.You} {main.youVerb('huff')}, но {main.youVerb('hand')} {client.you} кредиты обратно.")
 	saynn("Вы киваете и уходите." if(getRoleChar("client").isPlayer()) else "Клиент кивает и уходит.")
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 60, {})
 
 func client_got_credits_back_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -340,8 +340,8 @@ func slut_refused_creds_back_text():
 	sayLine("main", "ProstitutionRefuseReturnCreds", {main="main", target="client"})
 	saynn("Обстановка стремительно накаляется..")
 
-	addAction("whatever", "Whatever", "Let them keep the creds", "surrender", 1.0, 60, {})
-	addAction("attack", "Attack", "Try to get them back forcefully..", "fight", 1.0, 60, {})
+	addAction("whatever", "Да и хрен с ним", "Пусть оставляют деньги себе", "surrender", 1.0, 60, {})
+	addAction("attack", "Атаковать", "Попробовать забрать их силой...", "fight", 1.0, 60, {})
 
 func slut_refused_creds_back_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "whatever"):
@@ -353,7 +353,7 @@ func slut_refused_creds_back_do(_id:String, _args:Dictionary, _context:Dictionar
 func client_leaving_grumbly_text():
 	saynn("{client.You} {client.youVerb('grumble')}.. но {client.youVerb('leave')} в конце концов.")
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 60, {})
 
 func client_leaving_grumbly_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -365,7 +365,7 @@ func client_attacked_slut_text():
 	saynn("{client.You} {client.youVerb('decide')}, чтобы напасть на {main.you}!")
 	sayLine("client", "AttackStart", {main="client", target="main"})
 
-	addAction("fight", "Fight", "Time to fight back..", "default", 1.0, 600, {start_fight=["client", "main"],})
+	addAction("fight", "Драться", "Пора дать сдачи...", "default", 1.0, 600, {start_fight=["client", "main"],})
 
 func client_attacked_slut_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "fight"):
@@ -374,7 +374,7 @@ func client_attacked_slut_do(_id:String, _args:Dictionary, _context:Dictionary):
 		if(fightResult["won"]):
 			if(getRolePawn("client").isPlayer()):
 				GM.pc.addCredits(askCreds)
-				addMessage("You got the credits back!")
+				addMessage("Ты вернул кредиты!")
 			if(getRolePawn("main").isPlayer()):
 				GM.pc.addCredits(-askCreds)
 		
@@ -390,8 +390,8 @@ func client_won_text():
 	saynn("{client.You} победил! {main.You} {main.youAre} на полу, не в силах продолжать бой..")
 	saynn("{client.You} {client.youVerb('take')} кредиты обратно у этой шлюхи..")
 
-	addAction("leave", "Leave", "Time to go..", "default", 0.2, 60, {})
-	addAction("punish", "Punish", "Make them regret what they did.", "punishMean", 1.0, 60, {})
+	addAction("leave", "Уйти", "Пора идти..", "default", 0.2, 60, {})
+	addAction("punish", "Наказать", "Заставить их пожалеть о содеянном.", "punishMean", 1.0, 60, {})
 
 func client_won_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "leave"):
@@ -403,7 +403,7 @@ func client_won_do(_id:String, _args:Dictionary, _context:Dictionary):
 func client_won_leave_text():
 	saynn("Забрав кредиты, {client.you} просто {client.youVerb('leave')}..")
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 60, {})
 
 func client_won_leave_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -413,8 +413,8 @@ func client_won_leave_do(_id:String, _args:Dictionary, _context:Dictionary):
 func slut_won_text():
 	saynn("{main.You} победила! {client.You} {client.youAre} на полу, не в силах продолжать бой..")
 
-	addAction("kick_them_away", "Kick them away", "Kick the trash away", "default", 0.4, 60, {})
-	addAction("punish", "Punish", "Make them regret it", "punishMean", 1.0, 60, {})
+	addAction("kick_them_away", "Отпихнуть их", "Отпихнуть это отребье", "default", 0.4, 60, {})
+	addAction("punish", "Наказать", "Заставить их пожалеть об этом", "punishMean", 1.0, 60, {})
 
 func slut_won_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "kick_them_away"):
@@ -426,7 +426,7 @@ func slut_won_do(_id:String, _args:Dictionary, _context:Dictionary):
 func slut_won_kick_text():
 	saynn("{main.You} {main.youVerb('decide')} просто отпихнуть {client.you} подальше от {main.yourHis} рабочего места..")
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 60, {})
 
 func slut_won_kick_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -444,9 +444,9 @@ func slut_scam_text():
 	saynn("Похоже, услуги {main.your} только что подорожали..")
 
 	if(!getRolePawn("client").isPlayer() || GM.pc.getCredits() >= 5):
-		addAction("pay", "Pay", "Add 5 more credits on top", "surrender", 1.0, 60, {})
-	addAction("leave", "Leave", "Whatever..", "surrender", 1.0, 60, {})
-	addAction("demand_creds_back", "Demand creds back", "That's enough. You just want your credits back now.", "fight", 1.0, 60, {})
+		addAction("pay", "Заплатить", "Накинуть еще 5 кредитов сверху", "surrender", 1.0, 60, {})
+	addAction("leave", "Уйти", "Да какая разница...", "surrender", 1.0, 60, {})
+	addAction("demand_creds_back", "Потребовать кредиты назад", "Хватит. Ты просто хочешь вернуть свои кредиты.", "fight", 1.0, 60, {})
 
 func slut_scam_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "pay"):
@@ -468,11 +468,11 @@ func slut_scam_do(_id:String, _args:Dictionary, _context:Dictionary):
 
 
 func cancelled_service_text():
-	saynn("{main.You} {main.youVerb('decide')} to change {main.yourHis} mind at the last second.")
+	saynn("{main.You} {main.youVerb('decide')}, чтобы в последний момент передумать {main.yourHis}.")
 	saynn("[say=main]Ой, я передумала.[/say]")
 	saynn("[say=client]Ладно, хрен с тобой.[/say]")
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 60, {})
 
 func cancelled_service_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -484,11 +484,11 @@ func cancelled_service_do(_id:String, _args:Dictionary, _context:Dictionary):
 func opposite_role_request_denied_text():
 	saynn("{main.You} {main.youVerb('shake')} {main.yourHis} head.")
 	saynn(RNG.pick([
-		"It seems that {client.you} will have to look elsewhere..",
-		"{client.You} {client.youVerb('walk')} away, a little disappointed..",
+		"Похоже, {client.you} придется искать кого-то другого...",
+		"{client.You} {client.youVerb('walk')} прочь, с легким разочарованием...",
 	]))
 
-	addAction("continue", "Continue", "See what happens next..", "default", 1.0, 60, {})
+	addAction("continue", "Продолжить", "Смотри, что будет дальше...", "default", 1.0, 60, {})
 
 func opposite_role_request_denied_do(_id:String, _args:Dictionary, _context:Dictionary):
 	if(_id == "continue"):
@@ -505,7 +505,7 @@ func getInterruptActions(_pawn:CharacterPawn) -> Array:
 		result.append({
 			id = "approach",
 			name = "Подойти",
-			desc = "See what they are offering..",
+			desc = "Посмотреть, что они предлагают...",
 			score = approachScore,
 			scoreType = "sexUse",
 			scoreRole = "main",

@@ -54,7 +54,7 @@ func getInteractActions():
 	return [
 		{
 			name = "Колодки",
-			desc = "Pay them a visit",
+			desc = "Навести на них визит",
 			sceneID = "SlaveTPToLocScene",
 			args = ["main_punishment_spot"],
 			buttonChecks = [],

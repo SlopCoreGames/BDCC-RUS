@@ -59,10 +59,10 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([
-		"Please, I need to feel your lips around my nips.. feed from my breasts.",
-		"I'm so full and aching for you.. please, suckle on my tits.",
-		"Let me feel your lips around my nipples, I need it so badly.",
-		"Use me, feed from my tits, I really want it.",
+		"Пожалуйста, я хочу чувствовать твои губы на своих сосках... покормись из моей груди.",
+		"Я такая полная, всё внутри так и ноет... пожалуйста, пососи мои титьки.",
+		"Дай мне почувствовать твои губы на моих сосках, мне это так нужно.",
+		"Используй меня, покормись из моих титек, я правда этого хочу.",
 	])
 
 func getBegDomFetishes() -> Dictionary:

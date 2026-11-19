@@ -23,7 +23,7 @@ func getActions() -> Array:
 			{
 				id = "announce",
 				name = "Отложи яйца!",
-				desc = "Do something",
+				desc = "Что-нибудь сделать",
 				score = 1.0,
 				args = {},
 				time = 30,
@@ -34,7 +34,7 @@ func getActions() -> Array:
 		{
 			id = "giveBirth",
 			name = "Отложи яйца!",
-			desc = "Do something",
+			desc = "Что-нибудь сделать",
 			score = 1.0,
 			args = {},
 			time = 7200, # 2 hours
