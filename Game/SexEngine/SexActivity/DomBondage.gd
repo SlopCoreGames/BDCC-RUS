@@ -143,7 +143,7 @@ func getStartActions(_sexEngine: SexEngine, _domInfo: SexDomInfo, _subInfo: SexS
 			if(restraintData == null):
 				continue
 			
-			addStartAction(["rem", item.uniqueID], item.getVisibleName(), "Статус: "+restraintData.getVisibleTightness()+"\nУровень связывания: "+str(restraintData.getLevel()) + "\n" + item.getCombatDescription(), 0.0, {A_CATEGORY: ["Bondage", "Take off"]})
+			addStartAction(["rem", item.uniqueID], item.getVisibleName(), "Статус: "+restraintData.getVisibleTightness()+"\nУровень связывания: "+str(restraintData.getLevel()) + "\n" + item.getCombatDescription(), 0.0, {A_CATEGORY: ["Bondage", "Снять"]})
 	
 	return actions
 

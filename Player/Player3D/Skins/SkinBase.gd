@@ -22,7 +22,7 @@ func getExtraDesc():
 	if(datapackID != null && datapackID != ""):
 		result.append("[i]Datapack:[/i] "+str(datapackID))
 	if(author != null && author != ""):
-		result.append("[i]Created by:[/i] "+str(author))
+		result.append("[i]Создатель:[/i] "+str(author))
 	if(result.empty()):
 		return ""
 	return "\n"+Util.join(result, "\n")

@@ -46,16 +46,16 @@ func canBegFor() -> bool:
 	return true
 
 func getBegName() -> String:
-	return "Breastfeed on me"
+	return "Покорми грудью меня"
 
 func getBegCategory() -> Array:
 	return BegCategoryExotic
 
 func getBegDesc() -> String:
-	return "Beg the dom to feed on your milky breasts!"
+	return "Умоляй доминанта припасть к твоим налитым молоком грудям!"
 
 func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
-	return "{sub.You} {sub.youVerb('beg')} {dom.you} to breastfeed on {sub.yourHis} {sub.breasts}."
+	return "{sub.You} {sub.youVerb('beg')} {dom.you}, чтобы {sub.yourHis} {sub.breasts} покормил(а) тебя грудью."
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([

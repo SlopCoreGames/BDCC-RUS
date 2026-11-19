@@ -41,13 +41,13 @@ func getStartActions(_sexEngine: SexEngine, _domInfo: SexDomInfo, _subInfo: SexS
 	if(sub.hasReachablePenis() && sub.getFirstItemThatCoversBodypart(BodypartSlot.Penis) == null):
 		if(dom.isPlayer()):
 			for straponObject in dom.getInventory().getItemsWithTag(ItemTag.PenisPump):
-				addStartAction(["sub", straponObject.uniqueID], straponObject.getVisibleName(), straponObject.getVisisbleDescription(), 0.0, {A_CATEGORY: ["Wear", "Penis pump on sub"]})
+				addStartAction(["sub", straponObject.uniqueID], straponObject.getVisibleName(), straponObject.getVisisbleDescription(), 0.0, {A_CATEGORY: ["Wear", "Использование помпы на сабмиссивке"]})
 		else:
 			var theScore:float = getActivityScore(_sexEngine, _domInfo, _subInfo)
 			for pumpNewID in allPumpsIDs:
 				var pumpObject:ItemBase = GlobalRegistry.getItemRef(pumpNewID)
 				
-				addStartAction(["sub", pumpNewID], pumpObject.getVisibleName(), pumpObject.getVisisbleDescription(), theScore, {A_CATEGORY: ["Wear", "Penis pump on sub"]})
+				addStartAction(["sub", pumpNewID], pumpObject.getVisibleName(), pumpObject.getVisisbleDescription(), theScore, {A_CATEGORY: ["Wear", "Использование помпы на сабмиссивке"]})
 
 func getTags(_indx:int) -> Array:
 	if(_indx == SUB_0):

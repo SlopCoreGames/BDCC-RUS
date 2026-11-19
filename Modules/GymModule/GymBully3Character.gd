@@ -93,7 +93,7 @@ func interestVerbalReaction(interest):
 	
 	
 func _getName():
-	return "Bully Girl"
+	return "Девчонка-задира"
 
 func getGender():
 	return Gender.Female

@@ -6,4 +6,4 @@ func _init():
 	id = "PlayerSlaveryStash"
 	
 func _getName():
-	return "Player slavery stash"
+	return "Заначка рабства игрока"

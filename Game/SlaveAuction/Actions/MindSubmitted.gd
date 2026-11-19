@@ -10,7 +10,7 @@ func getName() -> String:
 	return "Подчинилась"
 
 func getButtonDesc() -> String:
-	return "Tell the bidders about the slave’s complete submission to the master.\n\n[b]Might[/b] reveal 1 personality preference of each bidder."
+	return "Расскажите участникам аукциона о полной покорности рабыни хозяину.\n\n[b]Возможно[/b] раскроет одну особенность характера каждого участника."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
@@ -30,21 +30,21 @@ func getTraits() -> Dictionary:
 
 func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
-		'Perfect, as it should be.',
-		'Great, that\'s how every slave should be.',
-		'Sounds like someone who already knows how to follow orders.',
+		'Идеально, именно так всё и должно быть.',
+		'Отлично, именно такими и должны быть все рабы.',
+		'Похоже на того, кто уже умеет беспрекословно подчиняться.',
 		'Neat.',
-		'Broken into submission. Perfect.',
-		'I like that.',
+		'Сломлены и покорены. Идеально.',
+		'Мне нравится.',
 	])
 
 func getNegativeReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
-		'But breaking them is the most fun part.',
-		'Aww, I like breaking slaves though.',
-		'What if I wanted to break them myself?',
-		'That\'s no fun.',
+		'Но самое веселое — это процесс их поломки.',
+		'Ох, а мне нравится ломать рабов.',
+		'А что, если я захочу сломать их сам?',
+		'Это совсем не весело.',
 		'Ehh, that\'s meh.',
-		'Making them submit is fun though.',
+		'Но заставлять их подчиняться — это чертовски весело.',
 	])
 	

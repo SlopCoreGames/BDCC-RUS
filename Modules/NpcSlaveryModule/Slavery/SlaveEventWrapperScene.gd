@@ -38,7 +38,7 @@ func _reactInit():
 				if(result.has("text")):
 					resultText = result["text"]
 				else:
-					resultText = "Something happened!"
+					resultText = "Что-то случилось!"
 				setState("")
 				savedCharID = character.getID()
 				

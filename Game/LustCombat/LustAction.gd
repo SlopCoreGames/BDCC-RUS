@@ -11,10 +11,10 @@ func shouldShow(_lustState: LustCombatState, _args):
 
 func canDo(_lustState: LustCombatState, _args):
 	if(needsFreeHand && !_lustState.canDoAction()):
-		return [false, "Your hands are all busy"]
+		return [false, "Твои руки слишком заняты"]
 	var minLevel = skillNeeded()
 	if(minLevel > 0 && _lustState.isInPublic() && _lustState.getCharacter().getSkillLevel(Skill.Exhibitionism) < minLevel):
-		return [false, "You feel too ashamed to do this in public, find a more secluded spot or do something else.. (Exhibitionism level "+str(minLevel)+"+)"]
+		return [false, "Тебе слишком стыдно делать это на людях; найди более уединенное место или займись чем-нибудь другим... (Уровень эксгибиционизма) "+str(minLevel)+"+)"]
 	# return [false, "Too horny"]
 	return true
 

@@ -4,7 +4,7 @@ func _init():
 	id = "FetishMilking"
 
 func getButtonDesc() -> String:
-	return "Tell the bidders about the slave's eagerness for being milked.\n\n[b]Might[/b] reveal 1 personality preference of each bidder."
+	return "Расскажите участникам аукциона о том, как сильно рабыня жаждет дойки.\n\n[b]Возможно[/b] раскроет одну черту характера каждого участника."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	if(_char.hasNonFlatBreasts() && _char.hasPenis()):

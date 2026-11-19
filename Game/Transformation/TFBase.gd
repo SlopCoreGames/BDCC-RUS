@@ -84,7 +84,7 @@ func getPillCanConfigure() -> bool:
 	return !getPillOptions().empty()
 
 func getPillDatabaseDesc() -> String:
-	return "FILL ME"
+	return "ЗАПОЛНИ МЕНЯ"
 
 # Can't start a tf if we already have one with at least one shared tag
 func getTFCheckTags() -> Dictionary:
@@ -267,7 +267,7 @@ func canUnlockAsPill() -> bool:
 
 func getUnlockData() -> Dictionary:
 	return {
-		eliza = "Not sure what exactly it does. But I'm gonna call it.. "+getPillName()+". I think that name will fit it nicely.",
+		eliza = "Не уверен, что именно оно делает. Но назову-ка я это... "+getPillName()+"... Думаю, это название ему отлично подойдет.",
 #		tryOptions = [
 #			{
 #				name = "Try",

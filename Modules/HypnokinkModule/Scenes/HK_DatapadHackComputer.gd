@@ -6,7 +6,7 @@ var lastCageCmd = "disconnect"
 
 func _init():
 	id = "DatapadHackComputer"
-	introText = "ProbY v1.21 localnet device RMI utility\nInformation wants to be free!"
+	introText = "ProbY v1.21 локальная сетевая RMI утилита\nИнформация стремится к свободе!"
 
 func reactToCommand(_command:String, _args:Array, _commandStringRaw:String):
 	if(_command == "skiptut"):
@@ -24,75 +24,75 @@ func reactToCommandLocalhost(_command: String, _args:Array, _commandStringRaw:St
 		if(_args.size() == 1):
 			var device = _args[0]
 			if(device in ["grd_radio_3511", "1"]):
-				return "Connecting to grd_radio_3511...\nCredentials not found. Connection aborted.\n[Nice try, but no. - Alex]"
+				return "Подключение к grd_radio_3511...\nУчетные данные не найдены. Соединение прервано.\n[Nice try, but no. - Alex]"
 			if(device in ["grd_radio_1447", "2"]):
-				return "Connecting to grd_radio_1447...\nCredentials not found. Connection aborted.\n[Nice try, but no. - Alex]"
+				return "Подключение к grd_radio_1447...\nУчетные данные не найдены. Соединение прервано.\n[Nice try, but no. - Alex]"
 			elif(device in ["deloxekarat_default", "3"]):
 				connectedTo = "deloxekarat_default"
-				return "Connecting to deloxekarat_default...\nConnected using default login and password for manufacturer/device."
+				return "Подключение к deloxekarat_default...\nПодключено с использованием заводского логина и пароля производителя/устройства."
 			elif(device in ["viplug_m_default", "4"]):
 				connectedTo = "viplug_m_default"
-				return "Connecting to viplug_m_default...\nConnected using default login and password for manufacturer/device."
+				return "Подключение к viplug_m_default...\nПодключено с использованием заводского логина и пароля производителя/устройства."
 			else:
-				return "Connecting to "+device+"...\nDevice not found."
+				return "Подключение к "+device+"...\nУстройство не найдено."
 		else:
-			return "This command expects 1 argument"
+			return "Эта команда ожидает 1 аргумент"
 	
 	if(_command == "probe"):
 		if(_args.size() == 0):
 			return "Scanning...\nDone. Found 4 devices.\n1 - grd_radio_3511\n2 - grd_radio_1447\n3 - deloxekarat_default\n4 - viplug_m_default"
 		else:
-			return "This command expects 0 arguments"
+			return "Команде требуется 0 аргументов"
 			
 	if(_command == "exit"):
 		markFinishedFail()
-		return "Goodbye, and have a well connected day!"
+		return "До связи! Пусть ваш коннект будет стабильным!"
 		
 	if(_command == "help"):
 		if(_args.size() == 1):
 			var tolearn = _args[0]
 			if(tolearn == "help"):
-				return "This command outputs all other commands and can also provide help for certain command by typing 'help <COMMAND>'."
+				return "Эта команда выводит список всех остальных команд, а также может предоставить справку по конкретной команде при вводе 'help <КОМАНДА>'."
 			elif(tolearn == "probe"):
-				return "This command scans for locally available BT devices."
+				return "Эта команда сканирует доступные локальные BT-устройства."
 			elif(tolearn == "exit"):
-				return "This command exits the program."
+				return "Эта команда завершает работу программы."
 			elif(tolearn == "connect"):
-				return "This command lets you connect to a remote wireless device by using its BT identifier.\nSyntax 'connect <BT>'"
+				return "Эта команда позволяет подключиться к удаленному беспроводному устройству по его BT-идентификатору.\nСинтаксис: 'connect <BT>'"
 			else:
-				return "Couldn't find command '"+str(tolearn)+"'. To see all the available commands type 'help'."
+				return "Команда '"+str(tolearn)+"'. Чтобы увидеть все доступные команды, введите 'help'."
 			
 		elif(_args.size() == 0):
 			learnCommand("help")
 			learnCommand("probe")
 			learnCommand("connect")
 			learnCommand("exit")
-			return "Available commands are: \nconnect\nprobe\nexit\nhelp\nTo learn more about a command type 'help <COMMAND>'"
+			return "Доступные команды: \nconnect\nprobe\nexit\nhelp\nЧтобы узнать больше о команде, введите 'help <КОМАНДА>'"
 		else:
 			learnCommand("help")
 			return "'help' expects 0 or 1 arguments"
 			
 	learnCommand("help")
-	return "Error, unknown command. Use 'help' to list all available commands"
+	return "Ошибка: неизвестная команда. Используйте 'help', чтобы увидеть список всех доступных команд"
 	
 const memPosMap = {
-			"unlock": "[color=#88FF88][6,8][/color] (5 bytes read)",
-			"disconnect": "[color=#88FF88][4,16][/color] (10 bytes read)",
-			"monitor": "[color=#88FF88][8,0][/color] (170 bytes read)",
-			"help": "[color=#FF8888][17,4][/color] (78 bytes read)",
-			"strscan": "[color=#FF8888][external memory][/color] (? bytes read)",
+			"unlock": "[color=#88FF88][6,8][/color] (считано 5 байт)",
+			"disconnect": "[color=#88FF88][4,16][/color] (считано 10 байт)",
+			"monitor": "[color=#88FF88][8,0][/color] (считано 170 байт)",
+			"help": "[color=#FF8888][17,4][/color] (считано 78 байт)",
+			"strscan": "[color=#FF8888][external memory][/color] (считано ? байт)",
 		}
 		
 const strMap = {
 			"1": [" [color=#88FF88][0,8][/color] ", "DeLoxe S3-Karat v1.0.7"],
-			"2": [" [color=#88FF88][1,8][/color] ", "SEGFAULT at: %s"],
+			"2": [" [color=#88FF88][1,8][/color] ", "ОШИБКА ПАМЯТИ (SEGFAULT) по адресу: %s"],
 			"3": [" [color=#88FF88][2,0][/color] ", "Vion"],
 			"4": [" [color=#88FF88][2,24][/color]", "locked"],
 			"5": [" [color=#88FF88][3,0][/color] ", "unlocked"],
 			"6": [" [color=#88FF88][3,12][/color]", "Operating"],
 			"7": [" [color=#88FF88][3,24][/color]", "Inactive"],
 			"8": [" [color=#88FF88][4,16][/color]", "Disconnecting..."],
-			"9": [" [color=#88FF88][5,4][/color] ", "Ready."],
+			"9": [" [color=#88FF88][5,4][/color] ", "Готов."],
 			"10": ["[color=#88FF88][6,0][/color] ", "default"],
 			"11": ["[color=#88FF88][6,8][/color] ", "block"],
 			"12": ["[color=#88FF88][6,20][/color]", "override"],
@@ -110,7 +110,7 @@ func reactToCommandCage(_command: String, _args:Array, _commandStringRaw:String)
 	if(_command == "disconnect"):
 		lastCageCmd = _command
 		connectedTo = ""
-		return "Disconnecting...\nConnection closed by the remote host."
+		return "Отключение...\nСоединение разорвано удаленным хостом."
 	elif(_command == "monitor"):
 		if(_args.size() == 0):
 			var lastMem = memPosMap[lastCageCmd]
@@ -118,54 +118,54 @@ func reactToCommandCage(_command: String, _args:Array, _commandStringRaw:String)
 			lastCageCmd = _command
 			return \
 				"Status: locked\n"+\
-				"Days locked: "+str(GM.main.getDays() + 47)+"\n"+\
-				"Electromagnet lock strength: "+str(stepify(rand_range(3200, 3600),0.1))+" N\n"+\
-				"Battery charge: "+str(stepify(rand_range(1400, 1500),0.1))+" mAh\n"+\
+				"Дней в замкнутом состоянии: "+str(GM.main.getDays() + 47)+"\n"+\
+				"Сила электромагнитного замка: "+str(stepify(rand_range(3200, 3600),0.1))+" N\n"+\
+				"Заряд батареи: "+str(stepify(rand_range(1400, 1500),0.1))+" mAh\n"+\
 				"Bioreactor: Operating\n"+\
-				"Last memory access at: "+lastMem+" by '[color=#EE88FF]"+lastCmdStored+"[/color]'\n"+\
+				"Последний доступ к памяти в: "+lastMem+" by '[color=#EE88FF]"+lastCmdStored+"[/color]'\n"+\
 				"Memory dump (first page): \n[b][font=res://Fonts/smallconsolefont.tres]"+\
 				"[color=#AAFFAA]   0        8        16       24      [/color]\n"+\
 				"[color=#AAFFAA] 0 [/color]BEEFBEA7 DeLoxe S 3-Karat  v1.0.7"+NI+"_\n"+\
-				"[color=#AAFFAA] 1 [/color]00010017 SEGFAULT  at: %s"+NI+" Eo2ZiE93\n"+\
+				"[color=#AAFFAA] 1 [/color]00010017 ОШИБКА ПАМЯТИ (SEGFAULT) по адресу: %s"+NI+" Eo2ZiE93\n"+\
 				"[color=#AAFFAA] 2 [/color]Vion"+NI+"___ b1Un374k J0sTIBXF locked"+NI+"_\n"+\
 				"[color=#AAFFAA] 3 [/color]unlocked "+NI+"___Oper ating "+NI+"_ Inactive\n"+\
-				"[color=#AAFFAA] 4 [/color]"+NI+"___sAxz 38VsDvXT "+(HI if lastCmdStored == "disconnect" else NO)+"Disconne cting... [/color]\n"+\
+				"[color=#AAFFAA] 4 [/color]"+NI+"___sAxz 38VsDvXT "+(HI if lastCmdStored == "disconnect" else NO)+"Отключение... [/color]\n"+\
 				"[color=#AAFFAA] 5 [/color]"+NI+"___Read y."+NI+"_DwyM UNz6v4ML B1jowhGw\n"+\
 				"[color=#AAFFAA] 6 [/color]default"+NI+" "+(HI if lastCmdStored == "unlock" else NO)+"block[/color]"+NI+"__ ____over ride"+NI+"hl|\n"+\
-				"[color=#AAFFAA] 7 [/color]Code "+NI+"__ valid."+NI+"_ invalid. "+NI+"___6521\n"+\
-				"[color=#AAFFAA] 8 [/color]"+(HI if lastCmdStored == "monitor" else NO)+"Status:  %s"+CR+"Days  locked:  %d"+CR+"Elect\n"+\
-				"[color=#AAFFAA] 9 [/color]romagnet  lock st rength:  %fN"+CR+"Batt\n"+\
-				"[color=#AAFFAA]10 [/color]erycharg e: %f mA h"+CR+"Biorea ctor:%s"+CR+"\n"+\
-				"[color=#AAFFAA]11 [/color]Last mem ory acce ss at: [ %d,%d] ([/color]\n[/font][/b]"
+				"[color=#AAFFAA] 7 [/color]Code "+NI+"__ валидно."+NI+"_ невалидно. "+NI+"___6521\n"+\
+				"[color=#AAFFAA] 8 [/color]"+(HI if lastCmdStored == "monitor" else NO)+"Status:  %s"+CR+"Дней заблокировано: %d"+CR+"Elect\n"+\
+				"Сила [color=#AAFFAA]9[/color]электромагнитного замка: %fN"+CR+"Batt\n"+\
+				"[color=#AAFFAA]10 [/color]erycharg e: %f mA h"+CR+"Биореактор: %s"+CR+"\n"+\
+				"Последний доступ к памяти [color=#AAFFAA]11[/color]: [ %d,%d] ([/color]\n[/font][/b]"
 		else:
-			return "This command expects 0 arguments"
+			return "Команде требуется 0 аргументов"
 	elif(_command == "unlock"):
 		lastCageCmd = _command
 		if(_args.size() == 1):
 			var unlockcode = _args[0]
 			if(unlockcode in ["block"]):
 				markFinished()
-				return "Code valid. Unlocking..."
+				return "Код верный. Разблокировка..."
 			else:
-				return "Code invalid."
+				return "Код неверный."
 		else:
-			return "This command expects 1 argument"
+			return "Эта команда ожидает 1 аргумент"
 	elif(_command == "help"):
 		lastCageCmd = _command
 		if(_args.size() == 1):
 			var tolearn = _args[0]
 			if(tolearn == "help"):
-				return "This command outputs all other commands and can also provide help for certain command by typing 'help <COMMAND>'."
+				return "Эта команда выводит список всех остальных команд, а также может предоставить справку по конкретной команде при вводе 'help <КОМАНДА>'."
 			elif(tolearn == "disconnect"):
-				return "This command disconnects you from the remote host."
+				return "Эта команда отключает вас от удаленного хоста."
 			elif(tolearn == "monitor"):
-				return "This command lists hardware diagnostics."
+				return "Эта команда выводит диагностику оборудования."
 			elif(tolearn == "unlock"):
-				return "This command unlocks the electromagnetic lock.\nSyntax 'unlock <unlock code>'"
+				return "Эта команда разблокирует электромагнитный замок.\nСинтаксис: 'unlock <код разблокировки>'"
 			elif(tolearn == "strscan"):
-				return "This command scans the local device memory for strings. Without a parameter, it simply lists found strings. When provided a string id as a parameter, it will add that string to the memorised commands.\nSyntax 'strscan <string id>'"
+				return "Эта команда сканирует память локального устройства на наличие строк. Без параметров она просто выводит список найденных строк. Если указать ID строки в качестве параметра, она будет добавлена в список запомненных команд.\nСинтаксис: 'strscan <ID строки>'"
 			else:
-				return "Couldn't find command '"+str(tolearn)+"'. To see all the available commands type 'help'."
+				return "Команда '"+str(tolearn)+"'. Чтобы увидеть все доступные команды, введите 'help'."
 			
 		elif(_args.size() == 0):
 			learnCommand("help")
@@ -173,7 +173,7 @@ func reactToCommandCage(_command: String, _args:Array, _commandStringRaw:String)
 			learnCommand("unlock")
 			learnCommand("disconnect")
 			learnCommand("strscan")
-			return "Available commands are: \ndisconnect\nmonitor\nunlock\nhelp\nstrscan\nTo learn more about a command type 'help <COMMAND>'\n\n"+\
+			return "Доступные команды: \ndisconnect\nmonitor\nunlock\nhelp\nstrscan\nЧтобы узнать больше, введите 'help <КОМАНДА>'\n\n"+\
 				"[Amateur firmware. The password's stored in plaintext, directly in memory. Don't waste time trying every option, remember that the unlock function has to access the password to check if it's been given a valid one.\n\nI've also added the strscan utility, in case the keyboard freezes up again. Don't bother with it otherwise.\n - Alex]"
 		else:
 			learnCommand("help")
@@ -184,26 +184,26 @@ func reactToCommandCage(_command: String, _args:Array, _commandStringRaw:String)
 			var id = _args[0]
 			if(id in strMap.keys()):
 				learnCommand(strMap[id][1])
-				return "String '" + strMap[id][1] + "' added to command buttons."
+				return "String '" + strMap[id][1] + "' добавлено к кнопкам команд."
 			else:
-				return "Invalid parameter."
+				return "Неверный параметр."
 		elif(_args.size() == 0):
-			var outstr = "This trial version of strscan is limited to only the first 15 results.\n"+\
+			var outstr = "Эта пробная версия strscan ограничена первыми 15 результатами.\n"+\
 					"Run strscan again with the id of the string you'd like to add to your command buttons as the first parameter.\n\n[font=res://Fonts/smallconsolefont.tres]"+\
-					"[color=#AAFFFF]ID location string[/color]\n"
+					"[color=#AAFFFF]Строка местоположения ID[/color]\n"
 			for key in strMap:
 				outstr += key + " " + strMap[key][0] + ":  '" + strMap[key][1] + "'\n"
 			outstr += "[/font]"
 			return outstr
 		else:
-			return "This command expects 1 or 0 arguments"
+			return "Эта команда ожидает 1 или 0 аргументов"
 						
 	learnCommand("help")
-	return "Error, unknown command. Use 'help' to list all available commands"
+	return "Ошибка: неизвестная команда. Используйте 'help', чтобы увидеть список всех доступных команд"
 	
 func reactToCommandPlug(_command: String, _args:Array, _commandStringRaw:String):
 	if(_command == "get_speed"):
-		return "Invoking...\nReturn value: "+str(plugSpeed)
+		return "Выполнение...\nВозвращаемое значение: "+str(plugSpeed)
 	elif(_command == "set_speed"):
 		var value = 0
 		if(_args.size() >= 1):
@@ -211,51 +211,51 @@ func reactToCommandPlug(_command: String, _args:Array, _commandStringRaw:String)
 		value = clamp(value, 0, 100)
 		plugSpeed = value
 		if(value >= 25):
-			return "Invoking...\nReturn code 00041: Success, Increased heart rate detected"
+			return "Выполнение...\nКод возврата 00041: Успех, обнаружено учащение сердцебиения"
 		else:
-			return "Invoking...\nReturn code 00000: Success"
+			return "Выполнение...\nКод возврата 00000: Успех"
 	elif(_command == "disconnect"):
 		connectedTo = ""
-		return "Disconnecting...\nConnection closed by the remote host."
+		return "Отключение...\nСоединение разорвано удаленным хостом."
 	elif(_command == "help"):
 		if(_args.size() == 1):
 			var tolearn = _args[0]
 			if(tolearn == "help"):
-				return "This command outputs all other commands and can also provide help for certain command by typing 'help <COMMAND>'."
+				return "Эта команда выводит список всех остальных команд, а также может предоставить справку по конкретной команде при вводе 'help <КОМАНДА>'."
 			elif(tolearn == "disconnect"):
-				return "This command disconnects you from the remote host."
+				return "Эта команда отключает вас от удаленного хоста."
 			elif(tolearn == "get_speed"):
-				return "Returns current speed setting of the vibration motor."
+				return "Возвращает текущую настройку скорости вибрационного мотора."
 			elif(tolearn == "set_speed"):
-				return "Sets the current speed setting of the vibration motor. \nSyntax 'set_speed <value [0 - 100]>'"
+				return "Устанавливает текущую скорость вибрации мотора. \nСинтаксис: 'set_speed <значение [0 - 100]>'"
 			else:
-				return "Couldn't find command '"+str(tolearn)+"'. To see all the available commands type 'help'."
+				return "Команда '"+str(tolearn)+"'. Чтобы увидеть все доступные команды, введите 'help'."
 			
 		elif(_args.size() == 0):
 			learnCommand("help")
 			learnCommand("get_speed")
 			learnCommand("set_speed")
 			learnCommand("disconnect")
-			return "Available commands are: \ndisconnect\nget_speed\nset_speed\nhelp\nTo learn more about a command type 'help <COMMAND>'"
+			return "Доступные команды: \ndisconnect\nget_speed\nset_speed\nhelp\nЧтобы узнать больше о команде, введите 'help <КОМАНДА>'"
 		else:
 			learnCommand("help")
 			return "'help' expects 0 or 1 arguments"
 						
 	learnCommand("help")
-	return "Error, unknown command. Use 'help' to list all available commands"
+	return "Ошибка: неизвестная команда. Используйте 'help', чтобы увидеть список всех доступных команд"
 
 var tutorialData = [
-	["*", "Figure out how to work this utility, or use 'skiptut' to skip this tutorial.", "Type anything"],
-	["help", "Start by getting the list of commands.", "Select 'help' and then press Send"],
-	["help probe", "You learned new commands. Use the help command to figure out the 'probe' command", "Select 'help', then select 'probe' and then press Send"],
-	["probe", "Now try to execute this command.", "Select 'probe' and press Send"],
-	["help connect", "Now try to figure out how to use the connect command.", "Select 'help', then select 'connect' and press Send"],
-	["connect 4", "The viplug_m_default device will serve as an example device for this tutorial. Connect to it.", "Select 'connect', then switch to the numpad and select '4' before pressing Send"],
-	["help", "You connected to a device. Figure out what it can do.", "Select 'help' and press Send"],
-	["help get_speed", "Figure out what get_speed does.", "Select 'help', then select 'get_speed' and press Send"],
-	["get_speed", "Run the get_speed command.", "Select 'get_speed' and press Send"],
-	["disconnect", "Nothing more to do here. When you're done experimenting, disconnect from this device.", "Select 'disconnect' and press Send"],
-	["*", "You've finished the tutorial. Good luck! Remember you can use the 'probe' command to find the right device.", "Use the 'probe' command again to find the right device."],
+	["*", "Разберись, как работает этот девайс, или используй 'skiptut', чтобы пропустить обучение.", "Введите что угодно"],
+	["help", "Для начала получи список команд.", "Выбери 'help', а затем нажми 'Send'"],
+	["help probe", "Ты выучил новые команды. Используй 'help', чтобы разобраться с командой 'probe'", "Выбери 'help', затем 'probe' и нажми 'Send'"],
+	["probe", "А теперь попробуй выполнить эту команду.", "Выберите 'probe' и нажмите Send"],
+	["help connect", "Теперь попробуйте разобраться, как использовать команду connect.", "Выберите 'help', затем выберите 'connect' и нажмите Send"],
+	["connect 4", "Устройство viplug_m_default будет использоваться в качестве примера для этого обучения. Подключитесь к нему.", "Выберите 'connect', затем переключитесь на цифровой блок и выберите '4', прежде чем нажать Send"],
+	["help", "Вы подключились к устройству. Разберитесь, на что оно способно.", "Выберите 'help' и нажмите Send"],
+	["help get_speed", "Разберитесь, что делает команда get_speed.", "Выберите 'help', затем выберите 'get_speed' и нажмите 'Send'"],
+	["get_speed", "Выполните команду 'get_speed'.", "Выберите 'get_speed' и нажмите 'Send'"],
+	["disconnect", "Больше здесь делать нечего. Когда закончите эксперименты, отключитесь от этого устройства.", "Выберите 'disconnect' и нажмите 'Send'"],
+	["*", "Обучение завершено. Удачи! Помните, что вы можете использовать команду 'probe', чтобы найти нужное устройство.", "Снова используйте команду 'probe', чтобы найти нужное устройство."],
 ]
 var currentTutorialStep = 0
 var shouldSpoilHint = false

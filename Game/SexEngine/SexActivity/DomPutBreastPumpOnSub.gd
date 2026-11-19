@@ -11,7 +11,7 @@ func _init():
 	
 	activityName = "Надеть молокоотсос на подчиненную"
 	activityDesc = "Дои её молокоотсосом!"
-	activityCategory = ["Breasts", "Breast Pump on sub"]
+	activityCategory = ["Breasts", "Сцеживание субмиссивной"]
 
 func getGoals():
 	return {
@@ -40,13 +40,13 @@ func getStartActions(_sexEngine: SexEngine, _domInfo: SexDomInfo, _subInfo: SexS
 	if(sub.getFirstItemThatCoversBodypart(BodypartSlot.Breasts) == null):
 		if(dom.isPlayer()):
 			for straponObject in dom.getInventory().getItemsWithTag(ItemTag.BreastPump):
-				addStartAction(["sub", straponObject.uniqueID], straponObject.getVisibleName(), straponObject.getVisisbleDescription(), 0.0, {A_CATEGORY: ["Breasts", "Breast Pump on sub"]})
+				addStartAction(["sub", straponObject.uniqueID], straponObject.getVisibleName(), straponObject.getVisisbleDescription(), 0.0, {A_CATEGORY: ["Breasts", "Сцеживание субмиссивной"]})
 		else:
 			var theActivityScore:float = getActivityScore(_sexEngine, _domInfo, _subInfo)
 			for pumpNewID in allPumpsIDs:
 				var pumpObject:ItemBase = GlobalRegistry.getItemRef(pumpNewID)
 				
-				addStartAction(["sub", pumpNewID], pumpObject.getVisibleName(), pumpObject.getVisisbleDescription(), theActivityScore, {A_CATEGORY: ["Breasts", "Breast Pump on sub"]})
+				addStartAction(["sub", pumpNewID], pumpObject.getVisibleName(), pumpObject.getVisisbleDescription(), theActivityScore, {A_CATEGORY: ["Breasts", "Сцеживание субмиссивной"]})
 
 func getTags(_indx:int) -> Array:
 	if(_indx == SUB_0):
@@ -200,7 +200,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		getSubInfo().cum()
 		var extraText:String = ""
 		if(getSub().isLactating()):
-			extraText = ", {sub.yourHis} {sub.breasts} squirt {sub.milk} out from this nipple orgasm"
+			extraText = ", {sub.yourHis} {sub.breasts} брызжет {sub.milk} из этого соска во время оргазма"
 		getSubInfo().stimulateArousalZone(0.0, BodypartSlot.Breasts, 2.0)
 		fetishAffect(SUB_0, Fetish.Lactation, 3.0)
 		sendSexEvent(SexEvent.UniqueOrgasm, DOM_0, SUB_0, {orgasmType="breasts"})

@@ -28,7 +28,7 @@ func getName(_id:String) -> String:
 	if(_id == "FetishMilking"):
 		return "Фетиш на дойку"
 	if(_id == "FetishExhibitionism"):
-		return "Экбиционист"
+		return "Эксгибиционист"
 	if(_id == "FetishDrugUse"):
 		return "Наркоман"
 	
@@ -101,62 +101,62 @@ func calculateScore(_id:String, _char:BaseCharacter) -> float:
 func getBidderOutbidReactions(_id:String, _char:BaseCharacter) -> Array:
 	if(_id == "FetishSexBottom"):
 		return [
-			'I’ll break {slave.him} in properly.',
-			'That ass will be mine to fuck.',
-			'{slave.HeShe} will make a perfect fucktoy.',
-			'I’ll fuck {slave.him} until {slave.he} begs.',
-			'{slave.HeShe} is mine to breed.',
-			'I’ll take care of {slave.his} holes personally.',
+			'Я как следует сломаю {slave.him}.',
+			'Эта жопа будет принадлежать мне для траха.',
+			'{slave.HeShe} станет идеальной секс-игрушкой.',
+			'Я буду трахать {slave.him} до тех пор, пока {slave.he} не начнет умолять.',
+			'{slave.HeShe} принадлежит мне, чтобы её осеменили.',
+			'Я лично позабочусь о дырочках {slave.his}.',
 		]
 	if(_id == "FetishSexTop"):
 		return [
-			'{slave.HeShe} will take charge in my bed.',
-			'{slave.HeShe} can fuck me any time.',
-			'I need {slave.him} on top of me.',
-			'{slave.HeShe} will dominate me anytime I choose.',
-			'{slave.HeShe} will make the perfect service top.',
-			'I could use such a good breeder.',
+			'{slave.HeShe} будет главной в моей постели.',
+			'{slave.HeShe} может трахать меня когда угодно.',
+			'Мне нужно, чтобы {slave.him} была сверху.',
+			'{slave.HeShe} будет доминировать надо мной, когда я сам того пожелаю.',
+			'{slave.HeShe} станет идеальной служанкой для минета.',
+			'Мне бы пригодился такой отличный заводчик.',
 		]
 	if(_id == "FetishSexExotic"):
 		return [
-			'I’ll enjoy exploring every inch of {slave.him}.',
-			'{slave.HeShe} is a one-of-a-kind treat.',
-			'{slave.HeShe} belongs in my collection.',
-			'{slave.HeShe} will satisfy my rare tastes.',
+			'Мне понравится исследовать каждый дюйм {slave.him}.',
+			'{slave.HeShe} — это уникальное лакомство.',
+			'{slave.HeShe} должна стать частью моей коллекции.',
+			'{slave.HeShe} удовлетворит мои редкие вкусы.',
 		]
 		
 	if(_id == "FetishBDSM"):
 		return [
-			'I’ll show {slave.him} real discipline.',
-			'{slave.HeShe} will beg for more pain.',
-			'{slave.HeShe} will be my personal masochist.',
-			'Let’s see how much {slave.he} can endure.',
-			'{slave.HeShe} will love the lash in my hands.',
-			'I’ll train {slave.him} to crave the pain.',
+			'Я покажу {slave.him}, что такое настоящая дисциплина.',
+			'{slave.HeShe} будет умолять о новой порции боли.',
+			'{slave.HeShe} станет моей личной мазохисткой.',
+			'Посмотрим, сколько сможет вытерпеть {slave.he}.',
+			'{slave.HeShe} будет обожать плеть в моих руках.',
+			'Я приучу {slave.him} жаждать боли.',
 		]
 	if(_id == "FetishMilking"):
 		return [
-			'I’ll milk {slave.him} dry every day.',
-			'{slave.HeShe} will be my personal dairy.',
-			'I can’t wait to see {slave.him} leaking.',
-			'{slave.HeShe} will be perfect for milking.',
-			'I’ll turn {slave.him} into a milk machine.',
+			'Я буду доить {slave.him} досуха каждый божий день.',
+			'{slave.HeShe} станет моей личной молочной фермой.',
+			'Не терпится увидеть, как {slave.him} течет.',
+			'{slave.HeShe} идеально подходит для дойки.',
+			'Я превращу {slave.him} в настоящую молочную машину.',
 		]
 	if(_id == "FetishExhibitionism"):
 		return [
-			'I’ll display {slave.him} for all to see.',
-			'{slave.HeShe} will be the center of attention.',
-			'I’ll make {slave.him} perform for everyone.',
-			'{slave.HeShe} will be my public toy.',
-			'{slave.HeShe} loves being watched, and I’ll make sure {slave.he} is.',
-			'Everyone will see how much {slave.he} enjoys it.',
+			'Я выставлю {slave.him} на всеобщее обозрение.',
+			'{slave.HeShe} будет в центре всеобщего внимания.',
+			'Я заставлю {slave.him} выступать перед каждым.',
+			'{slave.HeShe} станет моей публичной игрушкой.',
+			'{slave.HeShe} обожает, когда на неё смотрят, и я позабочусь о том, чтобы {slave.he} смотрел.',
+			'Все увидят, как сильно {slave.he} это нравится.',
 		]
 	if(_id == "FetishDrugUse"):
 		return [
-			'I’ll keep {slave.him} hooked for life.',
-			'I’ll keep {slave.his} addiction fed.',
-			'{slave.HeShe} won’t last long without my supply.',
-			'{slave.HeShe} will beg me for a fix every day.',
+			'Я подсажу {slave.him} на крючок на всю жизнь.',
+			'Я буду постоянно подпитывать зависимость {slave.his}.',
+			'{slave.HeShe} долго не протянет без моей «дозы».',
+			'{slave.HeShe} будет каждый день умолять меня о новой порции.',
 		]
 		
 	return []

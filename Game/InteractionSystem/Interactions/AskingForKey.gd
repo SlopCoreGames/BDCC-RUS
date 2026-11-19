@@ -162,9 +162,9 @@ func getAnimData() -> Array:
 
 func getPreviewLineForRole(_role:String) -> String:
 	if(_role == "starter"):
-		return "{starter.name} is asking for a key from {reacter.name}."
+		return "{starter.name} просит ключ у {reacter.name}."
 	if(_role == "reacter"):
-		return "{reacter.name} is being asked by {starter.name}."
+		return "{starter.name} просит ключ у {reacter.name}."
 	return .getPreviewLineForRole(_role)
 
 func saveData():

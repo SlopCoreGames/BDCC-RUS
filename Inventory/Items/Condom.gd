@@ -45,7 +45,7 @@ func useInCombat(_attacker, _receiver):
 		theCondomItem.breakChance = getCondomBreakChance()
 		_attacker.getInventory().addItem(theCondomItem)
 	
-	return _attacker.getName() + " takes one of the condoms out of its package and then stretches it with "+_attacker.hisHer()+" fingers."
+	return _attacker.getName() + " достает один презерватив из упаковки и начинает растягивать его "+_attacker.hisHer()+" fingers."
 
 func getPossibleActions():
 	return [

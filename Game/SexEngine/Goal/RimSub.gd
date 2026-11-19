@@ -24,10 +24,10 @@ func canBegFor() -> bool:
 	return true
 
 func getBegName() -> String:
-	return "Ask to get rimmed"
+	return "Попросить отлизать анус"
 
 func getBegDesc() -> String:
-	return "Beg the dom to eat your butt out!"
+	return "Умолять домина, чтобы он отлизал тебе попой!"
 
 func getBegCategory() -> Array:
 	return BegCategoryExotic
@@ -38,9 +38,9 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 	var _isHoleFree:bool = (_subInfo.getChar().getFirstItemThatCoversBodypart(BodypartSlot.Anus) == null)
 
 	if(!_isBusy && !_hasBlockedArms && _isHoleFree):
-		return "{sub.You} {sub.youVerb('spread')} {sub.yourHis} {sub.anusStretch} tailhole for {dom.you}."
+		return "{sub.You} {sub.youVerb('spread')} {sub.yourHis} {sub.anusStretch} анус для {dom.you}."
 	
-	return "{sub.You} {sub.youVerb('beg')} {dom.you} to rim {sub.yourHis} {sub.anusStretch} tailhole."
+	return "{sub.You} {sub.youVerb('beg')} {dom.you} отлизать {sub.yourHis} {sub.anusStretch} задний проход."
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([

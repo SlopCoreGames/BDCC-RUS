@@ -25,7 +25,7 @@ func getProgress():
 	
 	var nurseryTasks:Array = GM.main.SCI.peekNurseryTasks()
 	if(!nurseryTasks.empty()):
-		var taskText:String = "Bounties that you remember:"
+		var taskText:String = "Запомнившиеся награды за головы:"
 		for taskA in nurseryTasks:
 			var task:NurseryTaskBase = taskA
 			

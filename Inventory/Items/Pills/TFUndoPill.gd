@@ -18,7 +18,7 @@ func canUseInCombat():
 func useInCombat(_attacker, _receiver):
 	removeXOrDestroy(1)
 	_attacker.undoAllTransformations()
-	return "You swallow the MorphAway pill!"
+	return "Вы проглатываете таблетку МорфАвей!"
 
 func getPossibleActions():
 	return [
@@ -72,7 +72,7 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	
 	return {
 		"name": "Морф-отмена",
-		"usedName": "a MorphAway pill",
+		"usedName": "таблетка МорфАвей",
 		"desc": getDescription(),
 		"scoreOnSub": 0.0,
 		"scoreOnSelf": 0.0,

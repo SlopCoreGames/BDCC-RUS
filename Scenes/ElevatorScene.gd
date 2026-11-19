@@ -10,9 +10,9 @@ func _run():
 		saynn("Куда поедем?")
 
 		var floors = [
-			["Cellblock", "hall_elevator", "Main level where all the inmate cells are"],
-			["Mineshafts", "mining_elevator", "Lower level where the prison is attached to an asteroid"],
-			["Medical", "med_elevator", "Floor that has all the medical and science facilities"],
+			["Cellblock", "hall_elevator", "Основной уровень, где расположены все камеры заключенных"],
+			["Mineshafts", "mining_elevator", "Нижний уровень, к которому пристыкована астероидная база"],
+			["Medical", "med_elevator", "Этаж, где находятся все медицинские и научные объекты"],
 		]
 		
 		for fl in floors:

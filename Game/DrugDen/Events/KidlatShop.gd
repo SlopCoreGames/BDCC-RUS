@@ -5,90 +5,90 @@ const sellList = {
 		costMin = 5,
 		costMax = 10,
 		buyLines = [
-			"That should help you last a little longer, luv!",
-			"Should help take the edge off.",
-			"Don't take too many at once, hun.",
+			"Это поможет тебе продержаться подольше, дорогуша!",
+			"Поможет немного снять напряжение.",
+			"Только не глотай слишком много за раз, милочка.",
 		],
 	},
 	"appleitem": {
 		costMin = 2,
 		costMax = 7,
 		buyLines = [
-			"Fresh and juicy!",
-			"Good choice, luv. Ain’t often you find real fruit down here!",
-			"Better than nibblin' on some weird paste, that’s for sure!",
+			"Свеженькие и сочные!",
+			"Хороший выбор, любовь моя. Нечасто здесь встретишь настоящие фрукты!",
+			"Это уж точно лучше, чем ковырять какую-нибудь странную пасту!",
 		],
 	},
 	"AnaphrodisiacPill": {
 		costMin = 3,
 		costMax = 15,
 		buyLines = [
-			"Need a clear head, eh? This should do the trick, luv.",
-			"Take it quick before someone down here makes things.. complicated.",
-			"Best to keep your wits sharp, yeah? No distractions.",
+			"Нужна светлая голова, а? Это как раз то, что доктор прописал, крошка.",
+			"Хватай быстрее, пока кто-нибудь здесь не устроил... лишних проблем.",
+			"Лучше держать умы острыми, а? Чтобы ни на что не отвлекаться.",
 		],
 	},
 	"EnergyDrink": {
 		costMin = 2,
 		costMax = 10,
 		buyLines = [
-			"Not enough alcohol in these for my likings.",
-			"A little pick-me-up for when the tunnels get rough. Stay quick, luv!",
-			"That should keep ya buzzin’ for a while. Try not to bounce off the walls.",
+			"Для моего вкуса здесь маловато алкоголя.",
+			"Немного бодрости на случай, если в туннелях станет совсем хреново. Не тормози, дорогуша!",
+			"Этого хватит, чтобы тебя штырило еще какое-то время. Только постарайся не биться головой о стены.",
 		],
 	},
 	"restraintkey": {
 		costMin = 5,
 		costMax = 20,
 		buyLines = [
-			"Bet you’re glad to have that, eh? Never know when you’ll need it.",
-			"It’s yours now!",
-			"This might save your hide!",
+			"Спорим, ты рад это получить, а? Никогда не знаешь, когда приспичит.",
+			"Теперь это твоё!",
+			"Эта штука может спасти твою задницу!",
 		],
 	},
 	"TFPill": {
 		costMin = 5,
 		costMax = 10,
 		buyLines = [
-			"Feelin’ brave, eh? Good luck, luv. Hope you like surprises!",
-			"Ooo, curious, are we? You never know what’s comin’ with those.",
-			"Don’t say I didn’t warn ya!",
+			"Решила стать смелее, а? Удачи, милочка. Надеюсь, сюрпризы тебе по душе!",
+			"О-о, любопытствуешь? С этой дрянью никогда не знаешь, что выкинет.",
+			"Только потом не говори, что я тебя не предупреждала!",
 		],
 	},
 	"BreederPill": {
 		costMin = 2,
 		costMax = 5,
 		buyLines = [
-			"Feelin' frisky, eh? Careful, luv. This one’s a game-changer.",
-			"Take that, and you’ll be ready for.. well, everything.",
-			"Better hope you’re ready for what this’ll do, hun. No backsies.",
+			"Захотелось развлечься, а? Осторожнее, крошка. Эта штука меняет правила игры.",
+			"Прими это, и ты будешь готова... ну, ко всему.",
+			"Надеюсь, ты готова к тому, что это с тобой сделает, дорогуша. Возврата не будет.",
 		],
 	},
 	"HeatPill": {
 		costMin = 2,
 		costMax = 5,
 		buyLines = [
-			"Whew, someone’s lookin' for a very good time, huh?",
-			"Pop that and watch the world get a whole lot.. hotter~.",
-			"Just be ready. Once it kicks in, you’ll be cravin’ somethin’ fierce~.",
+			"Ух ты, кто-то явно настроен на очень славное времяпровождение, а?",
+			"Закинься этим и смотри, как мир становится... куда жарче~.",
+			"Только будь наготове. Как только вштырит, тебя начнет неистово тянуть на что-нибудь~.",
 		],
 	},
 	"StunBaton": {
 		costMin = 10,
 		costMax = 15,
 		buyLines = [
-			"Shock ‘em silly, luv! No better way to keep a junkie in line!",
-			"Careful where you swing that, hun. You could knock someone’s teeth loose.",
-			"Buzz-buzz! Give ‘em a little zap for me, yeah?",
+			"Шокируй их до беспамятства, милочка! Лучшего способа держать торчков в узде не найти!",
+			"Смотри, куда машешь этой штукой, солнце. Можно и зубы кому-нибудь выбить.",
+			"Бззз-бззз! Эй, жахни их там слегка за меня, ладно?",
 		],
 	},
 	"Shiv": {
 		costMin = 10,
 		costMax = 15,
 		buyLines = [
-			"Close and personal, huh? Just like a real pro~.",
-			"Simple, but deadly. Just what you need in this shithole.",
-			"Sharp enough to make anyone think twice. Keep it handy, luv!",
+			"Вплотную, да? Прямо как настоящий профи~.",
+			"Просто, но смертоносно. Как раз то, что нужно в этой дыре.",
+			"Достаточно остро, чтобы заставить любого призадуматься. Держи наготове, любовь моя!",
 		],
 	},
 }
@@ -261,7 +261,7 @@ func doBuyItem(entry:Dictionary):
 	var itemRef:ItemBase = GlobalRegistry.getItemRef(itemID)
 	
 	if(itemRef == null):
-		return "Something went wrong.."
+		return "Что-то пошло не так..."
 	GM.pc.getInventory().addItem(GlobalRegistry.createItem(itemID))
 	GM.pc.addCredits(-cost)
 	
@@ -271,7 +271,7 @@ func doBuyItem(entry:Dictionary):
 	setModuleFlag("KidlatItemsBought", getModuleFlag("KidlatItemsBought", 0)+1)
 	
 	if(!sellList.has(itemID) || !sellList[itemID].has("buyLines")):
-		return "There you go, hun!"
+		return "Держи, дорогуша!"
 	var sellEntry:Dictionary = sellList[itemID]
 	return RNG.pick(sellEntry["buyLines"])
 
@@ -289,7 +289,7 @@ func doStealAll():
 		
 		#setModuleFlag("KidlatItemsBought", getModuleFlag("KidlatItemsBought", 0)+1)
 
-	return "Hope you paid for it, meow.."
+	return "Надеюсь, ты за это заплатила, мяу..."
 
 func getItemsListText():
 	var resultTexts:Array = []
@@ -308,7 +308,7 @@ func getItemsListText():
 		_i += 1
 	
 	if(hasBap && !isKidlatBound()):
-		resultTexts.append(str(_i)+") Loaf of bread. Cost: ? credits")
+		resultTexts.append(str(_i)+") Буханка хлеба. Цена: ? кредитов")
 		_i += 1
 		
 	return Util.join(resultTexts, "\n\n")

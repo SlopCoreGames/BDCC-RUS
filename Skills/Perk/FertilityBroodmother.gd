@@ -9,9 +9,9 @@ func getVisibleName():
 
 func getVisibleDescription():
 	return "Твоя утроба созрела для размножения, готовая выносить потомство любого, кто окажется достаточно доминантным, чтобы заявить на тебя права. \n"  \
-			+ "Pregnancy debuffs are reduced by 50%. \n" \
-			+ "Fertility debuffs are reduced by 70%.\n" \
-			+ "Cross-species impregnation is now just as likely for you as an impregnation from the same species!" 
+			+ "Дебаффы беременности уменьшены на 50%. \n" \
+			+ "Дебаффы фертильности уменьшены на 70%.\n" \
+			+ "Шанс оплодотворения другим видом теперь такой же высокий, как и от своего собственного вида!" 
 	
 func getSkillTier():
 	return 1

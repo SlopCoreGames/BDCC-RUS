@@ -10,7 +10,7 @@ func getName() -> String:
 	return "Пышность форм"
 
 func getButtonDesc() -> String:
-	return "Point out the slave's curves.\n\n[b]Might[/b] reveal 1 mind preference of each bidder."
+	return "Подчеркните изгибы рабыни.\n\n[b]Возможно[/b], это раскроет одну ментальную предпочтительность каждого участника аукциона."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	if(_slaveTraits.has("BodySlim") && _slaveTraits["BodySlim"] > 0.0):
@@ -53,32 +53,32 @@ func getTraits() -> Dictionary:
 func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	if(_slaveTraits.has("BodySlim") && _slaveTraits["BodySlim"] > 0.0):
 		return RNG.pick([
-			'Love a slender frame.',
-			'Perfectly sleek.',
-			'So elegant.',
-			'Just my type!',
-			'Lean and beautiful.',
-			'These proportions are perfect.',
-			'I like this, perfect proportions.',
+			'Обожаю стройные фигуры.',
+			'Идеально подтянутая.',
+			'Так изящно.',
+			'Как раз в моем вкусе!',
+			'Стройные и прекрасные.',
+			'Пропорции просто идеальные.',
+			'Мне нравится, идеальные пропорции.',
 		])
 	if(_slaveTraits.has("BodyAverage") && _slaveTraits["BodyAverage"] > 0.0):
 		return RNG.pick([
-			'I like this, perfect proportions.',
-			'These proportions are perfect.',
-			'Just right.',
-			'Classic beauty.',
+			'Мне нравится, идеальные пропорции.',
+			'Эти пропорции безупречны.',
+			'В самый раз.',
+			'Классическая красота.',
 			'Well-proportioned.',
-			'I’m into that.',
-			'Just my type!',
+			'Это по мне.',
+			'Как раз в моем вкусе!',
 		])
 	if(_slaveTraits.has("BodyThick") && _slaveTraits["BodyThick"] > 0.0):
 		return RNG.pick([
-			'Now that’s what I like.',
-			'Thick and gorgeous.',
-			'All the curves!',
-			'Deliciously full.',
-			'Perfectly plush.',
-			'So thick, I love it.',
+			'Вот это то, что мне нравится.',
+			'Такая сочная и великолепная.',
+			'Ох уж эти изгибы!',
+			'Воплощение аппетитной полноты.',
+			'Идеально пышная.',
+			'Такая толстожопая, просто кайф.',
 		])
 	
 	return .getPositiveReaction(_char, _slaveTraits)

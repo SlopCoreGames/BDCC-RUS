@@ -39,7 +39,7 @@ func start():
 	talkModularOwnerToPC("SoftSlaveryTaskFuckOwner")
 	saynn("Похоже, {npc.he} {npc.verb('want')} тебе.. на какое-то время. Твой хозяин перечисляет, что {npc.he} {npc.verb('want')} тебе делать с {npc.him} во время секса.")
 	
-	sayOwnerTaskInfo("{npc.name} wants you to do this to {npc.him}:")
+	sayOwnerTaskInfo("{npc.name} хочет, чтобы ты сделал это с {npc.him}:")
 	
 	saynn("{npc.He} наверняка разозлится, если ты не сделаешь всё до конца..")
 	

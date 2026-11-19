@@ -11,7 +11,7 @@ func getButtonName() -> String:
 	return getName()
 
 func getButtonDesc() -> String:
-	return "FILL ME"
+	return "ЗАПОЛНИ МЕНЯ"
 
 func getActionType():
 	return AuctionActionType.Fetish
@@ -117,7 +117,7 @@ func getSlaveReaction(_char:BaseCharacter, _reactionType) -> String:
 	if(_reactionType == AuctionSlaveReaction.Shy):
 		return RNG.pick([
 			"Щеки {slave.name} заливаются густым румянцем, пока {slave.he} неловко ерзает под пристальными взглядами.",
-			"{slave.name} lowers {slave.his} head, trying to hide the embarrassed blush creeping across {slave.his} face.",
+			"{slave.name} опускает голову, пытаясь скрыть смущённый румянец, заливающий {slave.his} лицо.",
 			"{slave.name} слегка ерзает, а {slave.his} краснеет всё сильнее с каждым произнесенным словом.",
 			"С губ {slave.name} срывается тихий вздох, а {slave.his} глаза нервно мечутся по комнате.",
 			"{slave.name} прикусывает {slave.his} нижнюю губу, {slave.his} щеки горят от всеобщего внимания.",
@@ -145,7 +145,7 @@ func getSlaveReaction(_char:BaseCharacter, _reactionType) -> String:
 		return RNG.pick([
 			"Челюсти {slave.name} сжимаются всё сильнее с каждой новой ставкой, а во взгляде {slave.his} разгорается ярость.",
 			"{slave.name} свирепо смотрит на толпу; в её глазах кипит ненависть, и она словно бросает вызов аукционистам, готовая в любой момент броситься на них в драку.",
-			"{slave.name} growls under {slave.his} breath, the rising bids only fueling {slave.his} anger further.",
+			"{slave.name} рычит сквозь стиснутые {slave.his} зубы, и растущие ставки лишь сильнее разжигают {slave.his} ярость.",
 			"{slave.name} сплевывает на землю, и агрессивная борьба за ставки бесит {slave.him} еще сильнее.",
 			"Глаза {slave.name} горят вызовом по мере того, как растут ставки; она явно не собирается смиренно принимать {slave.his} судьбу.",
 			"{slave.name} дергается в {slave.his} оковах, и с каждой новой ставкой {slave.him} все решительнее пытается сопротивляться.",

@@ -9,7 +9,7 @@ func getName():
 	return "Условие Else If"
 
 func getVisibleText():
-	return "ELSE IF( " +storedCode+" ):"
+	return "ЕСЛИ ( " +storedCode+" ):"
 
 func getArgs():
 	return {

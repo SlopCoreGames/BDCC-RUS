@@ -89,7 +89,7 @@ func lickingcock_processTurn():
 	var clothingItem = getSub().getFirstItemThatCoversBodypart(BodypartSlot.Penis)
 	var throughTheClothing = ""
 	if(clothingItem != null):
-		throughTheClothing = " through the "+clothingItem.getCasualName()
+		throughTheClothing = " через "+clothingItem.getCasualName()
 	var text = RNG.pick([
 		"{dom.You} {dom.youAre} licking {sub.yourHis} "+RNG.pick(["cock", "dick", "member"])+ throughTheClothing +".",
 		"{dom.You} {dom.youAre} проводит {dom.yourHis} языком по {sub.yourHis} "+RNG.pick(["cock", "dick", "member"])+ throughTheClothing +".",

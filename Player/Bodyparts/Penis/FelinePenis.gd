@@ -21,4 +21,4 @@ func getTraits():
 	}
 
 func getVulgarName() -> String:
-	return "barbed feline cock"
+	return "шипастый кошачий член"

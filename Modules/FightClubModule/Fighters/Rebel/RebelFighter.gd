@@ -7,13 +7,13 @@ func getVisibleName():
 	return "Мятежник"
 
 func getNameAndNickname():
-	return "Rebel, The Doomfist"
+	return "Ребел, Кулак Судьбы"
 
 func getAvyIntroduction():
-	return "Your next opponent is Rebel. She is a buff mare, dumb as a pile of bricks but can crush your skull with her left pinkie. So you know, avoid that and you will be fine."
+	return "Твой следующий противник — Ребел. Эта кобыла в отличной форме; тупая как пробка, но может размозжить тебе череп одним мизинцем. Так что имей в виду: увернись от этого, и всё будет путем."
 	
 func getAnnouncerIntroduction():
-	return "And in the right corner we have Rebel. She decided to skip working out today and came here to test her skills. Welcome!"
+	return "А в правом углу — Ребел! Сегодня она решила забить на тренировку и пришла сюда, чтобы испытать свои силы. Добро пожаловать!"
 	
 func getRank():
 	return FightClubRank.FailedHero

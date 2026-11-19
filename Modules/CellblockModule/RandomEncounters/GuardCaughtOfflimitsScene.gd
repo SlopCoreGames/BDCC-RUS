@@ -46,37 +46,37 @@ func _run():
 
 			# (default lines)
 			var possibleLines = [
-				"[say=npc]Hey, you’re not supposed to be here.[/say]",
-				"[say=npc]You got lost, inmate?[/say]",
-				"[say=npc]Never seen you before. Wanna explain yourself?[/say]",
+				"[say=npc]Эй, тебе здесь не место.[/say]",
+				"[say=npc]Заблудился, зэк?[/say]",
+				"[say=npc]Впервые тебя вижу. Есть объяснения?[/say]",
 			]
 
 			# (mean or dommy)
 			if(npcVariation == "mean"):
 				possibleLines = [
-					"[say=npc]So what’s your excuse? Wait, I don’t care. You’re in trouble now.[/say]",
-					"[say=npc]Someone is feeling risky today, huh. Care to explain yourself before I bash your skull in?[/say]",
-					"[say=npc]I see a stray inmate. Don’t recall your face. But you’re in huge trouble.[/say]",
-					"[say=npc]Inmates never learn, do they. Well, more thugs for me to beat up.[/say]",
-					"[say=npc]So? What do we have here? A bitch forgot where her kennel is?[/say]",
+					"[say=npc]Ну и какое у тебя оправдание? Хотя похер. Теперь у тебя проблемы.[/say]",
+					"[say=npc]Кто-то сегодня решил рискнуть, а? Хочешь объясниться, пока я тебе череп не проломил?[/say]",
+					"[say=npc]Вижу бродячего зэка. Лицо твое не припомню, но проблем у тебя теперь выше крыши.[/say]",
+					"[say=npc]Заключенные вечно ничему не учатся. Что ж, значит, будет еще больше отбросов, которых можно побить.[/say]",
+					"[say=npc]Ну и? Что тут у нас? Сучка забыла, где её конура?[/say]",
 				]
 
 			# (kind)
 			if(npcVariation == "kind"):
 				possibleLines = [
-					"[say=npc]Hey there. Whatcha doing here?[/say]",
-					"[say=npc]Oh hi. Don’t remember seeing you before.[/say]",
-					"[say=npc]You can’t be here, inmate. Don’t be silly~.[/say]",
-					"[say=npc]Oh wow, hey! I think you’re not supposed to be here.[/say]",
+					"[say=npc]О, привет. Ты че тут забыла?[/say]",
+					"[say=npc]О, привет. Кажется, раньше тебя здесь не видел.[/say]",
+					"[say=npc]Тебе здесь не место, заключенный. Не глупи~.[/say]",
+					"[say=npc]Ого, привет! Кажется, тебе здесь не положено находиться.[/say]",
 				]
 
 			# (subby)
 			if(npcVariation == "subby"):
 				possibleLines = [
-					"[say=npc]Ohh.. Hi there, inmate..[/say]",
+					"[say=npc]Охх.. Приветик, заключенный..[/say]",
 					"[say=npc]Oh. Hmm.. Hello?..[/say]",
-					"[say=npc]I’m not sure but I think you’re not supposed to be here..[/say]",
-					"[say=npc]I think you shouldn’t be here.. Right?..[/say]",
+					"[say=npc]Не уверена, но мне кажется, тебе здесь не место..[/say]",
+					"[say=npc]Мне кажется, тебе не стоит здесь быть.. Верно?..[/say]",
 				]
 				
 			saynn(RNG.pick(possibleLines))
@@ -91,37 +91,37 @@ func _run():
 
 			# (default lines)
 			var possibleLines = [
-				"[say=npc]Hey, you. Haven't we met already? So why do I see you again?[/say]",
-				"[say=npc]Got lost again, inmate?[/say]",
-				"[say=npc]Oh, I remember you. Wanna explain yourself?[/say]",
+				"[say=npc]Эй, ты. Мы ведь уже встречались? Так почему ты снова здесь?[/say]",
+				"[say=npc]Опять заблудился, заключенный?[/say]",
+				"[say=npc]О, я тебя помню. Хочешь объясниться?[/say]",
 			]
 
 			# (mean or dommy)
 			if(npcVariation == "mean"):
 				possibleLines = [
-					"[say=npc]So what’s your excuse this time? Wait, I really don’t care.[/say]",
-					"[say=npc]Someone is feeling risky again, huh. Wanna explain that? Or should I break you a bit?[/say]",
-					"[say=npc]I remember you, inmate. But you’re in huge trouble.[/say]",
-					"[say=npc]You never learn, do you. Well, more thugs for me to beat up.[/say]",
-					"[say=npc]So? What do we have here? A bitch forgot her place again?[/say]",
+					"[say=npc]Ну и какое оправдание на этот раз? Хотя погоди, мне плевать.[/say]",
+					"[say=npc]Кто-то снова решил рискнуть, а? Хочешь объясниться? Или мне тебя немного проучить?[/say]",
+					"[say=npc]Я тебя помню, зэк. Но у тебя серьезные неприятности.[/say]",
+					"[say=npc]Ты никак не научишься, да? Что ж, значит, у меня будет еще больше отбросов, которых можно побить.[/say]",
+					"[say=npc]Ну и? Что тут у нас? Очередная сучка опять забыла свое место?[/say]",
 				]
 
 			# (kind)
 			if(npcVariation == "kind"):
 				possibleLines = [
-					"[say=npc]Hey there. Oh, I know you! How are you doing?[/say]",
-					"[say=npc]Oh hi. I remember seeing you before.[/say]",
-					"[say=npc]You can’t be here, inmate. Don’t be silly~.[/say]",
-					"[say=npc]Oh wow, hey! I think you’re not supposed to be here.[/say]"
+					"[say=npc]О, привет! О, я тебя знаю! Как поживаешь?[/say]",
+					"[say=npc]О, привет. Кажется, я тебя уже видел(а).[/say]",
+					"[say=npc]Тебе здесь не место, заключенный. Не глупи~.[/say]",
+					"[say=npc]Ого, привет! Кажется, тебе здесь не положено находиться.[/say]"
 				]
 
 			# (subby)
 			if(npcVariation == "subby"):
 				possibleLines = [
-					"[say=npc]Ohh.. Hi there, inmate..[/say]",
-					"[say=npc]Oh. Hmm.. I think I know you?..[/say]",
-					"[say=npc]I’m not sure but I think you’re not supposed to be here..[/say]",
-					"[say=npc]I think you shouldn’t be here.. Right?.. Although.. I remember seeing you.[/say]",
+					"[say=npc]Охх.. Приветик, заключенный..[/say]",
+					"[say=npc]О... Хм... Кажется, мы знакомы?..[/say]",
+					"[say=npc]Не уверена, но мне кажется, тебе здесь не место..[/say]",
+					"[say=npc]Мне кажется, тебе здесь не место... Верно?.. Хотя... точно помню, что видел(а) тебя.[/say]",
 				]
 				
 			saynn(RNG.pick(possibleLines))
@@ -133,37 +133,37 @@ func _run():
 
 		# (default lines)
 		var possibleLines = [
-			"[say=npc]Gonna submit to the search?[/say]",
-			"[say=npc]Well, I will have to frisk you.[/say]",
-			"[say=npc]I’m gonna search you just in case.[/say]",
-			"[say=npc]Turn around for me so I can pat you down.[/say]",
-			"[say=npc]I need to pat you down.[/say]",
+			"[say=npc]Будешь подчиняться и пойдешь на обыск?[/say]",
+			"[say=npc]Что ж, придется тебя прощупать.[/say]",
+			"[say=npc]На всякий случай обыщу тебя.[/say]",
+			"[say=npc]Развернись, чтобы я мог тебя обыскать.[/say]",
+			"[say=npc]Мне нужно тебя обыскать.[/say]",
 		]
 
 		if(npcVariation == "mean"):
 		# (mean or dommy)
 			possibleLines = [
-				"[say=npc]Don’t move, bitch. I’m gonna frisk you.[/say]",
-				"[say=npc]Don’t move a muscle while I search you or I will break you.[/say]",
-				"[say=npc]Don’t move, slut. Got to frisk you.[/say]",
-				"[say=npc]Gonna submit to the search or do you like to be forced?[/say]",
+				"[say=npc]Не дергайся, сучка. Сейчас буду тебя прощупывать.[/say]",
+				"[say=npc]Не смей шелохнуться, пока я тебя ищу, иначе я тебя сломаю.[/say]",
+				"[say=npc]Не двигайся, шлюха. Надо тебя обыскать.[/say]",
+				"[say=npc]Будешь покорно подставишься под обыск или любишь, когда тебя заставляют силой?[/say]",
 			]
 
 		# (kind)
 		if(npcVariation == "kind"):
 			possibleLines = [
-				"[say=npc]I know it’s a bit rude but the rules say I need to frisk you. So can you?[/say]",
-				"[say=npc]Sorry for being a bit mean but I will have to search you. Okay?[/say]",
-				"[say=npc]I can’t let you go unless I pat you down, just a prison policy.[/say]",
-				"[say=npc]You probably don’t have anything but I kinda have to search you. Is that okay with you?[/say]",
+				"[say=npc]Знаю, это немного грубо, но по правилам я должен тебя обыскать. Так что, готова?[/say]",
+				"[say=npc]Прости, что немного грубо, но мне придется тебя обыскать. Идет?[/say]",
+				"[say=npc]Я не могу тебя отпустить, пока не проведу обыск — просто тюремный устав.[/say]",
+				"[say=npc]У тебя, скорее всего, ничего нет, но мне всё равно нужно тебя обыскать. Ты не против?[/say]",
 			]
 
 		# (subby)
 		if(npcVariation == "subby"):
 			possibleLines = [
-				"[say=npc]Um.. Would you let me search you maybe? For anything.. bad.[/say]",
-				"[say=npc]Can you.. turn around for me.. I need to search you..[/say]",
-				"[say=npc]I might need to search you now..[/say]",
+				"[say=npc]Эм.. Может, позволишь мне тебя обыскать? На случай, если у тебя есть что-то.. запрещенное.[/say]",
+				"[say=npc]Можешь.. повернуться ко мне.. Мне нужно тебя обыскать..[/say]",
+				"[say=npc]Похоже, мне придется обыскать тебя прямо сейчас..[/say]",
 			]
 		saynn(RNG.pick(possibleLines))
 		# (Options are Submit, Attack, Offer body)

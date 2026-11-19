@@ -29,16 +29,16 @@ func canBegFor() -> bool:
 	return true
 
 func getBegName() -> String:
-	return "Transform me"
+	return "Преобрази меня"
 
 func getBegCategory() -> Array:
 	return BegCategoryExotic
 
 func getBegDesc() -> String:
-	return "Beg the dom to feed you any transformational drug!"
+	return "Умоляй доминанта дать тебе любой трансформирующий препарат!"
 
 func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
-	return "{sub.You} {sub.youVerb('beg')} {dom.you} to feed {sub.youHim} a [color=#"+Color.cyan.to_html()+"]transformation pill[/color]."
+	return "{sub.You} {sub.youVerb('beg')} {dom.you}, чтобы дать {sub.youHim} [color=#"+Color.cyan.to_html()+"]таблетку трансформации[/color]."
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([

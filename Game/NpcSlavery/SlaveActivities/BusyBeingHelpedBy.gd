@@ -21,7 +21,7 @@ func preventsNormalInteractions():
 	return true
 
 func getActivityText():
-	return "{npc.name} is busy with another one of your slaves. Check back later."
+	return "{npc.name} занята очередным из твоих рабов. Загляни попозже."
 
 func hoursPassed(_howMuch):
 	var otherSlave:DynamicCharacter = GlobalRegistry.getCharacter(otherSlaveID)

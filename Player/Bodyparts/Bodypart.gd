@@ -53,17 +53,17 @@ func getCharacterCreatorName():
 	return getName().capitalize()
 
 func getCharacterCreatorDesc():
-	return "Change to this"
+	return "Изменить на это"
 
 func getCharacterCreatorDescFinal(_isActive:bool) -> String:
 	if(_isActive):
-		return "This is the currently selected bodypart"+(("\n[i]Created by:[/i] "+author) if !author.empty() else "")
+		return "Это текущий выбранный орган тела"+(("\n[i]Создатель:[/i] "+author) if !author.empty() else "")
 	
 	var theDescRaw:String = str(getCharacterCreatorDesc())
 	if(!author.empty()):
 		if(!theDescRaw.empty()):
 			theDescRaw += "\n"
-		theDescRaw += "[i]Created by:[/i] "+author
+		theDescRaw += "[i]Создатель:[/i] "+author
 	return theDescRaw
 
 func getCompatibleSpecies():
@@ -415,7 +415,7 @@ func updateAppearance():
 		getCharacter().updateAppearance()
 
 func getRevealMessage():
-	return getLewdName()+" got revealed."
+	return getLewdName()+" был обнажен."
 
 func getTraits():
 	return null
@@ -567,20 +567,20 @@ func getTransformAwayMessage(_context:Dictionary) -> String:
 	var slot = getSlot()
 	var slotName:String = BodypartSlot.getVisibleNameNoCap(slot)
 	var shouldHaveS:bool = !slotName.ends_with("s") || (slotName in ["penis", "anus"])
-	return "{npc.YouHe} {npc.youHeVerb('feel')} a tingling sensation on {npc.yourHis} scalp as {npc.yourHis} "+slotName+" begin"+("s" if shouldHaveS else "")+" to shift and change. Suddenly, {npc.YourHis} "+slotName+" morph"+("s" if shouldHaveS else "")+" away completely, leaving nothing in its place!"
+	return "{npc.YouHe} {npc.youHeVerb('feel')} покалывание в {npc.yourHis} скальпе, когда {npc.yourHis} "+slotName+" begin"+("s" if shouldHaveS else "")+" начинает сдвигаться и меняться. Внезапно, {npc.YourHis} "+slotName+" morph"+("s" if shouldHaveS else "")+" исчезает бесследно, не оставляя после себя ничего!"
 
 func getTransformGrowMessage(_context:Dictionary) -> String:
 	var slot = getSlot()
 	var slotName:String = BodypartSlot.getVisibleNameNoCap(slot)
 	var shouldHaveS:bool = !slotName.ends_with("s") || (slotName in ["penis", "anus"])
 	var slotChildName:String = BodypartSlot.getSlotChildName(slot)
-	return "A sudden warmth spreads through {npc.yourHis} body, and {npc.youHe} {npc.youHeVerb('feel')} a peculiar sensation as "+("a " if shouldHaveS else "")+"new "+slotName+" begin"+("s" if shouldHaveS else "")+" to form from {npc.yourHis} "+slotChildName+". "+("It gets" if shouldHaveS else "They get")+" more and more defined, the contours slowly taking shape. The process is quite.. uncomfortable.. to say the least.. but eventually "+("it finishes" if shouldHaveS else "they finish")+" growing, assuming "+("its" if shouldHaveS else "their")+" final form."
+	return "Внезапное тепло разливается по {npc.yourHis} телу, и {npc.youHe} {npc.youHeVerb('feel')} странное ощущение, как будто "+("a " if shouldHaveS else "")+"new "+slotName+" begin"+("s" if shouldHaveS else "")+" формируется из {npc.yourHis} "+slotChildName+". "+("Становится" if shouldHaveS else "Становятся")+" всё более отчетливыми, контуры медленно обретают форму. Процесс, мягко говоря... довольно... неприятный... но в конце концов "+("всё заканчивается," if shouldHaveS else "всё заканчивается,")+" growing, assuming "+("its" if shouldHaveS else "their")+" финальная форма."
 
 func getTransformMorphMessage(_context:Dictionary) -> String:
 	var slot = getSlot()
 	var slotName:String = BodypartSlot.getVisibleNameNoCap(slot)
 	var shouldHaveS:bool = !slotName.ends_with("s") || (slotName in ["penis", "anus"])
-	return "An unusual sensation courses through {npc.yourHis} body as {npc.yourHis} "+slotName+" begin"+("s" if shouldHaveS else "")+" to shift and change! The familiar contours start to dissolve and reshape, morphing into something different. Gradually, the new "+slotName+" emerge"+("s" if shouldHaveS else "")+", taking on a more defined form. The process is quite painful and uncomfortable, but eventually "+("it settles" if shouldHaveS else "they settle")+" into "+("its" if shouldHaveS else "their")+" final appearance. {npc.YouHe} now {npc.youHaveHeHas} "+getAVulgarName()+"."
+	return "Необычное ощущение пронзает тело {npc.yourHis}, пока {npc.yourHis} "+slotName+" begin"+("s" if shouldHaveS else "")+" начинает меняться и трансформироваться! Знакомые очертания начинают растворяться и перестраиваться, превращаясь во что-то иное. Постепенно новый "+slotName+" emerge"+("s" if shouldHaveS else "")+", обретает более четкие очертания. Процесс довольно болезненный и неприятный, но в конце концов "+("всё стабилизируется," if shouldHaveS else "всё стабилизируется,")+" into "+("its" if shouldHaveS else "their")+" финальный облик. Теперь {npc.YouHe} {npc.youHaveHeHas} "+getAVulgarName()+"."
 
 func setFluidsCauserID(_charID:String):
 	var _fluids = getFluids()

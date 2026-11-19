@@ -21,23 +21,23 @@ func getEffectDesc():
 	
 	var timeLeftText:String = ""
 	if(character.getMenstrualCycle() != null):
-		timeLeftText = " "+Util.getTimeStringHumanReadable(character.getMenstrualCycle().getTimeUntilReadyForBirth())+" until ready for birth."
+		timeLeftText = " "+Util.getTimeStringHumanReadable(character.getMenstrualCycle().getTimeUntilReadyForBirth())+" пока не придет время родов."
 	
 	var addText:String = ""
 	if(progress <= 0.33):
-		addText = "First trimester. You have a slight belly, your body slowly adjusts."+timeLeftText
+		addText = "Первый триместр. Живот лишь слегка округлился, тело медленно привыкает к изменениям."+timeLeftText
 	elif(progress <= 0.66):
-		addText = "Second trimester. Breasts are swollen, belly is very pronounced."+timeLeftText
+		addText = "Второй триместр. Грудь набухла, живот стал очень заметным."+timeLeftText
 	elif(character.isReadyToGiveBirth()):
-		addText = "Third trimester. You experience shortness of breath, you feel like you are ready to give birth."
+		addText = "Третий триместр. У вас появляется одышка, и кажется, что вы вот-вот родите."
 	else:
-		addText = "Third trimester. Lactation. You experience shortness of breath, your belly is really dragging you down."+timeLeftText
+		addText = "Третий триместр. Лактация. Вы чувствуете одышку, а тяжелый живот буквально тянет вас к земле."+timeLeftText
 	
 	var hasFirstPerk:bool = GM.pc.hasPerk(Perk.FertilityBellySize)
 	var hasSecondPerk:bool = GM.pc.hasPerk(Perk.BreedExtraTooltipInfo)
 	if((hasFirstPerk || hasSecondPerk) && character.getMenstrualCycle() != null):
 		var kidAmount:String = character.getMenstrualCycle().getRoughLitterEstimateString(hasFirstPerk && hasSecondPerk)
-		addText += "\n\nYou think there are "+str(kidAmount)+" in this belly"
+		addText += "\n\nВам кажется, что внутри этого живота "+str(kidAmount)+" есть"
 	
 	return "У тебя заметно округлился живот. "+addText
 

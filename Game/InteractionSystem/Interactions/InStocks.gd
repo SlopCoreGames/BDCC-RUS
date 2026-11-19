@@ -252,23 +252,23 @@ func refused_save_offered_self_text():
 
 	var saverIsMean:bool = getRolePawn("saver").scorePersonalityMax({ PersonalityStat.Mean: 1.0 }) > 0.4
 	var responses:Array = [
-		"Alright.",
-		"Don't be shouting my name when you change your mind~." if !slutwallMode else "Wouldn't be called slutwall without you in it~.",
-		"If that's how you want it.",
+		"Ладно.",
+		"Смотри не вопи моё имя, когда передумаешь~." if !slutwallMode else "Без тебя эта «стенка для шлюх» была бы не такой уж и шлюшьей~.",
+		"Раз уж ты так хочешь.",
 		"Mmmh..",
-		"Oki.",
-		"Your choice.",
+		"Оки.",
+		"Твой выбор.",
 	]
 	if(!getRoleChar("saver").isBlindfolded()):
 		responses.append_array([
-			"Good. Your butt looks better in the stocks~." if !slutwallMode else "Good. Your butt looks better in the slutwall~.",
-			"I do enjoy seeing you bent over like this.." if !slutwallMode else "I do enjoy seeing you like this..",
+			"Хорошо. В колодках твоя задница выглядит куда лучше~." if !slutwallMode else "Хорошо. В «стенке для шлюх» твоя задница выглядит куда лучше~.",
+			"Мне чертовски нравится смотреть, как ты вот так прогибаешься.." if !slutwallMode else "Мне чертовски нравится видеть тебя в таком виде..",
 		])
 	if(saverIsMean):
 		responses.append_array([
-			"Suit yourself.",
-			"Whatever.",
-			"Why did I even bother.",
+			"Как хочешь.",
+			"Плевать.",
+			"И зачем я только старалась.",
 		])
 	saynn("[say=saver]"+RNG.pick(responses)+"[/say]")
 
@@ -360,7 +360,7 @@ func about_to_shout_do(_id:String, _args:Dictionary, _context:Dictionary):
 		var ignoreList:Array = []
 		for charID in saverCooldowns:
 			ignoreList.append(charID)
-		if(!shoutForInterruptions("inmate", 3, 2, 0.5, "You hear begging coming from "+getCharByRole("inmate").getName()+" who is stuck in stocks at the punishment platform..", ignoreList)):
+		if(!shoutForInterruptions("inmate", 3, 2, 0.5, "Слышишь, откуда доносятся мольбы? "+getCharByRole("inmate").getName()+" кто заперт в колодах на карательной платформе...", ignoreList)):
 			setState("after_shout", "inmate")
 			checkSleep()
 
@@ -494,14 +494,14 @@ func getActivityIconForRole(_role:String):
 func getPreviewLineForRole(_role:String) -> String:
 	if(_role == "inmate"):
 		if(getState() in ["about_to_use", "after_use"]):
-			return "{inmate.name} is being used by {user.name}.."
+			return "{inmate.name} используют как шлюз-стенку для {user.name}..."
 		if(getState() in ["about_to_save", "refusable_save_using_stamina", "refusable_save_using_key", "save_after_help"]):
-			return "{inmate.name} is being saved by {saver.name}.."
-		return "{inmate.name} is stuck in stocks.."
+			return "{saver.name} использует {inmate.name} как шлюз-стенку..."
+		return "{inmate.name} заперт(а) в колодах..."
 	if(_role == "user"):
-		return "{user.name} is using {inmate.name}."
+		return "{user.name} использует {inmate.name}."
 	if(_role == "saver"):
-		return "{saver.name} is trying to free {inmate.name} from stocks."
+		return "{saver.name} пытается освободить {inmate.name} из колод."
 	return .getPreviewLineForRole(_role)
 
 func checkSleep():
@@ -531,7 +531,7 @@ func saveUsingStamina() -> void:
 	var inmate = getRoleChar("inmate")
 	var struggleData:Dictionary = inmate.doStruggleOutOfRestraints(false, true, getRoleChar("saver"), 2.0)
 	if(struggleData.empty()):
-		struggleText = "Something happened.."
+		struggleText = "Что-то произошло..."
 	else:
 		struggleText = struggleData["text"]
 	

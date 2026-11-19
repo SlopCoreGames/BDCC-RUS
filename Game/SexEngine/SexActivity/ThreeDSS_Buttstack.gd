@@ -191,7 +191,7 @@ func inside_processTurn():
 func sex_processTurn():
 	stimulateSex(DOM_0, domFocus, getCurrentHole(), I_NORMAL)
 	
-	doProcessFuck(DOM_0, domFocus, getCurrentHole(), " in a buttstack position")
+	doProcessFuck(DOM_0, domFocus, getCurrentHole(), " в позе «буттстак» (булки друг на друге)")
 	doProcessFuckExtra(DOM_0, domFocus, getCurrentHole())
 
 	if(isWearingStrapon(DOM_0) && !getDomOrSub(domFocus).canZoneOrgasm(getCurrentHole())): # If sub can't cum, just have some fun

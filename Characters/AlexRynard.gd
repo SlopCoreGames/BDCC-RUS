@@ -98,7 +98,7 @@ func interestVerbalReaction(interest):
 		return "Только этого зрелища мне не хватало."
 	
 func _getName():
-	return "Alex Rynard"
+	return "Алекс Райнард"
 
 func getGender():
 	return Gender.Male

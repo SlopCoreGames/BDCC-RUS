@@ -21,7 +21,7 @@ func run(_triggerID, _args):
 			addDisabledButton("Доска заданий", "Вы не можете сделать это, пока вербуете кого-то")
 		else:
 			addButtonWithChecks("Доска заданий", "Посмотри, какие миссии тебе доступны сейчас!", "missionboard", [], [[ButtonChecks.NotLate]])
-			if(!checkCharacterBusy("KaitBusy", "Seems like Kait isn't here", "Kait")):
+			if(!checkCharacterBusy("KaitBusy", "Похоже, Кейт здесь нет", "Kait")):
 				addButtonWithChecks("Кейт", "Поговорить со снежным барсом!", "kaittalk", [], [[ButtonChecks.NotLate]])
 	
 	if(theRoomID == "hideout_near_break_room" && isDoingRec):

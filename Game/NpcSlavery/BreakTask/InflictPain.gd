@@ -30,10 +30,10 @@ func onSexEvent(_npc, _event:SexEvent):
 	return false
 
 func getTaskString():
-	return "Receive pain during sex: "+getProgressString("pain")
+	return "Испытывать боль во время секса: "+getProgressString("pain")
 
 func getTaskHint(_isSlaveLevelup):
-	return "Make them receive pain during sex"
+	return "Заставлять их испытывать боль во время секса"
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [

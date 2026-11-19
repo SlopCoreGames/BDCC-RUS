@@ -51,7 +51,7 @@ func getStraponLength():
 	return 22.0
 
 func getCasualName():
-	return "ovipositor strapon"
+	return "овипозитор-страпон"
 
 func getLewdStraponName() -> String:
 	return RNG.pick(["овипозитор-страпон"])
@@ -136,15 +136,15 @@ func doStuffEggInto(_targetChar, _bodypart:String) -> Dictionary:
 	else:
 		theRandomEgg.removeXOrDestroy(1)
 	
-	var theHole:String = "down {<TARGET>.your} hole"
+	var theHole:String = "в дырочку {<TARGET>.your}"
 	if(_bodypart == BodypartSlot.Vagina):
-		theHole = "into {<TARGET>.your} pussy"
+		theHole = "в киску {<TARGET>.your}"
 	if(_bodypart == BodypartSlot.Anus):
-		theHole = "into {<TARGET>.your} anus"
+		theHole = "в анус {<TARGET>.your}"
 	if(_bodypart == BodypartSlot.Head):
-		theHole = "down {<TARGET>.your} throat"
+		theHole = "в глотку {<TARGET>.your}"
 	
-	var theTextLine:String = theEggName+" gets [b]stuffed "+theHole+"[/b] by {<USER>.your} ovipositor."
+	var theTextLine:String = theEggName+" получает [b] в задницу "+theHole+"[/b] яйцекладом {<USER>.your}."
 	theTextLine = theTextLine.replace("<TARGET>", _targetChar.getID())
 	theTextLine = theTextLine.replace("<USER>", getWearer().getID())
 	return {

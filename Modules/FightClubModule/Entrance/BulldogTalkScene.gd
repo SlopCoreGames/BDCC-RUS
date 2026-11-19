@@ -19,7 +19,7 @@ func _run():
 		addButton("Заплатить", "Заплатить мужику кредитами", "trypay")
 		addButton("Запугивание", "Попробовать подраться с ним. Это будет очень тяжелый бой", "intimidate")
 		if(!getFlag("FightClubModule.BulldogSeduced")):
-			addButtonWithChecks("Секс?", "Предложить заплатить своим телом. Будет очень жестко...", "sex?", [], [[ButtonChecks.StatCheck, Stat.Sexiness, 5]])
+			addButtonWithChecks("Секс?", "Предложить заплатить своим телом. Будет очень жестко...", "секс?", [], [[ButtonChecks.StatCheck, Stat.Sexiness, 5]])
 		else:
 			addDisabledButton("Секс?", "Ты его уже соблазнила...")
 		addButton("Уйти", "Тебе не хочется разговаривать", "endthescene")

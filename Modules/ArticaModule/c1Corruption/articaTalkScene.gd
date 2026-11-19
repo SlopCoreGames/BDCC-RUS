@@ -750,7 +750,7 @@ func _react(_action: String, _args):
 		var nextSceneID = nextSceneInfo[0]
 		var flagToIncrease = nextSceneInfo[1]
 		
-		increaseFlag("ArticaModule."+flagToIncrease)
+		increaseFlag("Модуль Артика"+flagToIncrease)
 		
 		addExperienceToPlayer(50)
 		

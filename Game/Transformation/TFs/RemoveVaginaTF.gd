@@ -15,11 +15,11 @@ func getPillName() -> String:
 
 func getUnlockData() -> Dictionary:
 	return {
-		eliza = "Ohh. My crotch is aching just looking at this. This pill will target vaginal tissue.. getting rid of it.. together with the whole reproductive system. 'PussyBeGone' is a good name for it, I guess.",
+		eliza = "Охх... У меня аж в паху ноет, когда я на это смотрю. Эта таблетка нацелена на ткани влагалища... чтобы избавиться от них... вместе со всей репродуктивной системой. «PussyBeGone» — подходящее название, пожалуй.",
 	}
 
 func getPillDatabaseDesc() -> String:
-	return "This drug will morph away your vagina if you have one.\n\nThe transformation consists only of one stage that will happen roughly after 20 minutes. This could be accelerated only by using the QuickShift drug."
+	return "Этот препарат заставит твою киску исчезнуть, если она у тебя есть.\n\nТрансформация проходит всего в одну стадию и занимает примерно 20 минут. Ускорить процесс можно только с помощью препарата QuickShift."
 
 func getTFCheckTags() -> Dictionary:
 	return {

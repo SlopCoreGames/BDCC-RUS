@@ -21,22 +21,22 @@ func getTextForLevel(_level:int, _rep):
 	if(_level == 1):
 		return "Someone"
 	if(_level == 2):
-		return "Small dom"
+		return "Слабый доминант"
 	if(_level == 3):
 		return "Slaver"
 	if(_level == 4):
-		return "Pack Leader"
+		return "Вожак стаи"
 	if(_level == 5):
-		return "Mind Breaker"
+		return "Ломатель разума"
 	if(_level == 6):
-		return "Prison Alpha"
+		return "Альфа тюрьмы"
 	return "ALPHA"
 
 func getSpecialRequirementToReachLevel(_level:int, _rep):
 	if(_level == 3):
-		return ["enslavesomeone", "Enslave anyone"]
+		return ["enslavesomeone", "Порабощение любого"]
 	if(_level == 5):
-		return ["makeobey", "Make any slave submit to you.. or break their mind"]
+		return ["makeobey", "Любой раб подчинится вам... или вы сломаете ему разум"]
 	
 	return null
 
@@ -45,15 +45,15 @@ func getEffectsInfoForLevel(_level:int, _rep) -> Array:
 		return []
 	if(_level <= 3):
 		return [
-			"Subby people are slightly more likely to agree to get fucked by you.",
+			"Сабмиссивные люди чуть охотнее соглашаются, чтобы их трахнули.",
 		]
 	if(_level <= 5):
 		return [
-			"Subby people are more likely to agree to get fucked by you.",
-			"You earn more credits as a service dom.",
+			"Сабмиссивные люди гораздо охотнее соглашаются, чтобы их трахнули.",
+			"Вы зарабатываете больше кредитов как сервисный доминант.",
 		]
 	return [
-		"People are eager to be fucked by you.",
-		"You earn more credits as a service dom.",
-		"You can enslave subby people without having to break them.",
+		"Люди жаждут, чтобы вы их трахнули.",
+		"Вы зарабатываете больше кредитов как сервисный доминант.",
+		"Ты можешь порабощать сабби-людей, даже не ломая их волю.",
 	]

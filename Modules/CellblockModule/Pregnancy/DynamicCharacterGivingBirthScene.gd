@@ -3,8 +3,8 @@ extends SceneBase
 var npcID = ""
 var npcType = "kind"
 var isStaff = true
-var charType = "staff member"
-var charTypes = "staff members"
+var charType = "сотрудник"
+var charTypes = "сотрудники"
 var decidedToHit = false
 var bornString = ""
 var bornChildAmount = 0

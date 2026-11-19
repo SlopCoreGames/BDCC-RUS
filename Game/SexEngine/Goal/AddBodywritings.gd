@@ -35,16 +35,16 @@ func canBegFor() -> bool:
 	return true
 
 func getBegName() -> String:
-	return "Ask for bodywritings"
+	return "Попросить надписи на теле"
 
 func getBegCategory() -> Array:
 	return BegCategoryExotic
 
 func getBegDesc() -> String:
-	return "Beg the dom to write something on your body!"
+	return "Умолять домина, чтобы он(а) что-нибудь написал(а) на твоем теле!"
 
 func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
-	return "{sub.You} {sub.youVerb('beg')} {dom.you} to write on {sub.yourHis} body."
+	return "{sub.You} {sub.youVerb('beg')} {dom.you}, чтобы написать на теле {sub.yourHis}."
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([

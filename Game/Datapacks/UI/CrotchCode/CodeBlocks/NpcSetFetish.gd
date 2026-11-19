@@ -5,7 +5,7 @@ var valSlot := CrotchSlotVar.new()
 var amSlot := CrotchSlotVar.new()
 
 func getCategories():
-	return ["NPC Manipulation"]
+	return ["Манипуляция NPC"]
 
 func _init():
 	nameSlot.setRawType(CrotchVarType.STRING)

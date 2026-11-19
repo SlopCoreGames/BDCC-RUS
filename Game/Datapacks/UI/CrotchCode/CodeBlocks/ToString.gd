@@ -18,7 +18,7 @@ func doThing(val):
 	return str(val)
 
 func getThingLabel():
-	return "To String"
+	return "В строку"
 
 func getTemplate():
 	return [

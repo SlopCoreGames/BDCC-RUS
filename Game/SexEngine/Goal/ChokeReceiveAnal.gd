@@ -54,16 +54,16 @@ func canBegFor() -> bool:
 	return true
 
 func getBegName() -> String:
-	return "Choke+ride me (anal)"
+	return "Душить и скакать на мне (анально)"
 
 func getBegCategory() -> Array:
 	return BegCategoryChoking
 	
 func getBegDesc() -> String:
-	return "Beg the dom to ride your cock with their ass while also choking you!"
+	return "Умолять доминанта о том, чтобы он скакал на твоем члене своей задницей, одновременно сжимая твое горло!"
 
 func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
-	return "{sub.You} {sub.youVerb('beg')} {dom.you} to ride {sub.yourHis} cock while choking {sub.youHim}."
+	return "{sub.You} {sub.youVerb('beg')} {dom.you}, чтобы скакать на {sub.yourHis} члене, пока тот душит {sub.youHim}."
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([

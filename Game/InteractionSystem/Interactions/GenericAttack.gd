@@ -132,9 +132,9 @@ func onStarterWin(_isSurrender=false):
 
 func getPreviewLineForRole(_role:String) -> String:
 	if(_role == "starter"):
-		return "{starter.name} is attacking {reacter.name}!"
+		return "{starter.name} атакует {reacter.name}!"
 	if(_role == "reacter"):
-		return "{reacter.name} is being attacked by {starter.name}!"
+		return "{starter.name} атакует {reacter.name}!"
 	return .getPreviewLineForRole(_role)
 
 func saveData():

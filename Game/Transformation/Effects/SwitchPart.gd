@@ -25,7 +25,7 @@ func applyEffect(_data:Dictionary) -> Dictionary:
 		if(partRef != null):
 			if(partRef.getSlot() != getBodypartSlot()):
 				var theTF = getTF()
-				var theErrorText:String = "SOMETHING WENT WRONG WITH SwitchPart EFFECT! partRef.getSlot()="+str(partRef.getSlot())+", getBodypartSlot()="+str(getBodypartSlot())+" Transformation id = "+(theTF.id if theTF else "NULL")+" data="+str(_data)
+				var theErrorText:String = "ЧТО-ТО ПОШЛО НЕ ТАК С ЭФФЕКТОМ SwitchPart! partRef.getSlot()="+str(partRef.getSlot())+", getBodypartSlot()="+str(getBodypartSlot())+" ID трансформации = "+(theTF.id if theTF else "NULL")+" data="+str(_data)
 				Log.error(theErrorText)
 				return {
 					bigError = theErrorText,

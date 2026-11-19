@@ -38,7 +38,7 @@ func shouldRunOnMeet(_pawn1, _pawn2, _pawn2Moved:bool):
 	return [false]
 
 func getOutputText() -> String:
-	return "Something something"
+	return "Что-то там"
 
 func shouldHideRelativeActionChances() -> bool:
 	return false
@@ -1402,7 +1402,7 @@ func showKnownLikesDislikesFor(role:String):
 	var npc = getRoleChar(role)
 	var npcName = npc.getName()
 	var likesTexts = []
-	likesTexts.append("Here is what you know about "+npcName+"'s likes/dislikes:")
+	likesTexts.append("Вот что вам известно о "+npcName+"'s likes/dislikes:")
 	var enemyLustInterests = npc.getLustInterests()
 	if(!enemyLustInterests.hasAnyInterests()):
 		likesTexts.append("- None")
@@ -1414,7 +1414,7 @@ func showKnownLikesDislikesFor(role:String):
 				var topic = GlobalRegistry.getLustTopic(topicID)
 				likesTexts.append(npcName+" [color="+Interest.getColorString(whatPlayerKnows[topicID])+"]" + Interest.getVisibleName(whatPlayerKnows[topicID])+"[/color] seeing "+str(topic.getVisibleName(topicID)))
 		else:
-			likesTexts.append("- Nothing yet")
+			likesTexts.append("- Пока ничего")
 	var finalText = (Util.join(likesTexts, "\n"))
 	saynn(finalText)
 	
@@ -1563,7 +1563,7 @@ func reactToLustFocus(args:Dictionary, lustEntry:Dictionary):
 						continue
 					likedWhat = topicGroup.getVisibleName(topicID)
 					if(summaryKeySuffix == "Absence"):
-						likedWhat = "the lack of "+likedWhat
+						likedWhat = "отсутствии "+likedWhat
 						likedWhatIsPlural = false
 					else:
 						likedWhatIsPlural = topicGroup.shouldUseAre(topicID)
@@ -1584,7 +1584,7 @@ func reactToLustFocus(args:Dictionary, lustEntry:Dictionary):
 						continue
 					dislikedWhat = topicGroup.getVisibleName(topicID)
 					if(summaryKeySuffix == "Absence"):
-						dislikedWhat = "the lack of "+dislikedWhat
+						dislikedWhat = "нехватке "+dislikedWhat
 						dislikedWhatIsPlural = false
 					else:
 						dislikedWhatIsPlural = topicGroup.shouldUseAre(topicID)
@@ -1782,21 +1782,21 @@ func getPreviewLineForRoleFinal(_role:String) -> String:
 		var sexData = currentActionArgs["sex"]
 		if(sexData.size() >= 2):
 			if(sexData[0] == _role):
-				return "{pawn.name} is fucking {"+sexData[1]+".name}"
+				return "{pawn.name} трахает {"+sexData[1]+".name}"
 			if(sexData[1] == _role):
-				return "{pawn.name} is being fucked by {"+sexData[0]+".name}"
+				return "{pawn.name} трахает {"+sexData[0]+".name}"
 	if(currentActionArgs.has("fight")):
 		var fightData = currentActionArgs["fight"]
 		if(fightData.size() >= 2):
 			if(fightData[0] == _role):
-				return "{pawn.name} is fighting with {"+fightData[1]+".name}"
+				return "{pawn.name} дерется с {"+fightData[1]+".name}"
 			if(fightData[1] == _role):
-				return "{pawn.name} is fighting back from {"+fightData[0]+".name}"
+				return "{pawn.name} отбивается от {"+fightData[0]+".name}"
 	
 	return getPreviewLineForRole(_role)
 
 func getPreviewLineForRole(_role:String) -> String:
-	return "{pawn.name} is in a "+id+" interaction"
+	return "{pawn.name} находится в "+id+" interaction"
 
 func findProstitutionTargetsNearby(_ignoreList:Array = []) -> Array:
 	var result:Array = []

@@ -53,7 +53,7 @@ func _run():
 
 		saynn("Похоже, оно злится из-за того, что ты "+str(_tentacles.getAngryReason())+".. но оно быстро успокаивается, встретив твой суровый взгляд.")
 
-		_tentacles.talk("We're sorry that we did that.")
+		_tentacles.talk("Простите нас за то, что мы так поступили.")
 		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "1"):
 		_tentacles.doAnimDuo("glare")
@@ -87,7 +87,7 @@ func _run():
 
 		saynn("[say=pc]Серьёзно?[/say]")
 
-		_tentacles.talk("We could do something worse.. but we won't.. for now..")
+		_tentacles.talk("Мы могли бы и похуже... но пока что не станем...")
 		saynn("Долгое время ты просто стоишь, удерживаемая ими. Щупальца не сжимают и не тянут... они просто держат тебя в оковах. Затем, так же плавно, как они сжались, они ослабляют хватку и выскальзывают прочь, оставляя тебя в одиночестве.")
 
 		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")

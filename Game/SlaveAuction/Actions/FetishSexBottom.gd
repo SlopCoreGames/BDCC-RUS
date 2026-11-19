@@ -4,7 +4,7 @@ func _init():
 	id = "FetishSexBottom"
 
 func getButtonDesc() -> String:
-	return "Tell the bidders about the slave's love of getting fucked.\n\n[b]Might[/b] reveal 1 personality preference of each bidder."
+	return "Расскажите участникам аукциона о том, как рабыня обожает, когда ее трахают.\n\n[b]Возможно[/b] раскроет по одной черте характера каждого участника."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
@@ -21,14 +21,14 @@ func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 
 func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
-		'Perfect for my tastes.',
-		'Just the kind I need.',
-		'Can’t wait to use {slave.him}.',
-		'Ready for a good time.',
-		'Ideal for my playroom.',
-		'I will enjoy breeding {slave.him}.',
-		'I will enjoy using {slave.him}.',
-		'I will enjoy fucking {slave.him} raw.',
+		'Идеально подходит под мой вкус.',
+		'Как раз то, что мне нужно.',
+		'Не терпится опробовать {slave.him}.',
+		'Готова к отличному времяпрепровождению.',
+		'Идеально для моей игровой комнаты.',
+		'Мне понравится осеменять {slave.him}.',
+		'Мне понравится использовать {slave.him}.',
+		'Мне понравится трахать {slave.him} без презерватива.',
 	])
 
 func getTraits() -> Dictionary:

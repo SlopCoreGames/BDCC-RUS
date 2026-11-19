@@ -14,7 +14,7 @@ func canUseInCombat():
 
 func useInCombat(_attacker, _receiver):
 	removeXOrDestroy(1)
-	return _attacker.getName() + " took the pill"
+	return _attacker.getName() + " принял таблетку"
 
 func getPossibleActions():
 	return [
@@ -72,7 +72,7 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	
 	return {
 		"name": "Пилюля плодовитости",
-		"usedName": "a breeder pill",
+		"usedName": "таблетка для размножения",
 		"desc": "Повышает вашу фертильность, а ваша сперма становится более мощной.",
 		"scoreOnSub": _domInfo.goalsScoreMax({SexGoal.ReceiveVaginal: 1.0, SexGoal.ReceiveAnal: 0.2}, _subInfo.charID)*_domInfo.fetishScore({Fetish.BeingBred: 1.0}),
 		"scoreOnSelf": _domInfo.goalsScoreMax({SexGoal.FuckVaginal: 1.0, SexGoal.FuckAnal: 0.2}, _subInfo.charID)*_domInfo.fetishScore({Fetish.Breeding: 1.0}),

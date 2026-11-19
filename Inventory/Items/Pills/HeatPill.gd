@@ -16,7 +16,7 @@ func useInCombat(_attacker, _receiver):
 	removeXOrDestroy(1)
 	_attacker.forceIntoHeat()
 	#_attacker.updateNonBattleEffects()
-	return _attacker.getName() + " took the pill"
+	return _attacker.getName() + " принял таблетку"
 
 func getPossibleActions():
 	return [
@@ -68,7 +68,7 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	
 	return {
 		"name": "Таблетка возбуждения",
-		"usedName": "a heat-inducing pill",
+		"usedName": "таблетка, вызывающая жар",
 		"desc": "Вызывает сильнейшее возбуждение и подготавливает к размножению, провоцируя течку.",
 		"scoreOnSub": _domInfo.goalsScoreMax({SexGoal.FuckVaginal: 1.0, SexGoal.FuckAnal: 0.5}, _subInfo.charID)*_domInfo.fetishScore({Fetish.Breeding: 1.0}),
 		"scoreOnSelf": _domInfo.goalsScoreMax({SexGoal.ReceiveVaginal: 1.0, SexGoal.ReceiveAnal: 0.5}, _subInfo.charID)*_domInfo.fetishScore({Fetish.BeingBred: 1.0}),

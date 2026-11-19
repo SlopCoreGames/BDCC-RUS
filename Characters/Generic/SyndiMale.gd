@@ -5,7 +5,7 @@ func _init():
 	disableSerialization = true
 	
 func _getName():
-	return "Syndicate Agent"
+	return "Агент Синдиката"
 
 func getGender():
 	return Gender.Male

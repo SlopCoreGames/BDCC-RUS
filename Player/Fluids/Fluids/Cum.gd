@@ -11,9 +11,9 @@ func canImpregnate():
 
 func getMessyDescription(_pc, _amount):
 	if(_amount >= 1000.0):
-		return "You look like a complete cum dump and feel like one too!"
+		return "Ты выглядишь как настоящая спермобак, да и чувствуешь себя так же!"
 	if(_amount >= 500.0):
-		return "You're such a cum rag!"
+		return "Ну ты и тряпка для спермы!"
 	
 	return null
 
@@ -40,7 +40,7 @@ func onSwallow(_pc, _amount):
 	
 	if(toHeal > 0):
 		_pc.addStamina(toHeal)
-		return "Drinking cum provided "+_pc.getName()+" with an energy boost, giving you "+DamageType.getDamageColoredString(DamageType.Stamina, toHeal)+" back."
+		return "Употребление спермы дает "+_pc.getName()+" прилив энергии, дающий тебе "+DamageType.getDamageColoredString(DamageType.Stamina, toHeal)+" back."
 	
 	return null
 

@@ -35,7 +35,7 @@ func charCanUseAnus(character):
 	return character.canUseAnusThroughPortal()
 
 func sayCharacterTable():
-	var tableText = "[table=5][cell]ID[/cell][cell]Name[/cell][cell]Penis[/cell][cell]Vagina[/cell][cell]Anus[/cell]"
+	var tableText = "[table=5][cell]ID[/cell][cell]Имя[/cell][cell]Хуй[/cell][cell]Пизда[/cell][cell]Анус[/cell]"
 	var ti = 1
 	for character in charactersWithPortalPanties:
 		tableText += "[cell]"+str(ti)+"[/cell]"
@@ -1105,7 +1105,7 @@ func _react(_action: String, _args):
 		GM.pc.addLust(10)
 		GM.pc.addArousal(calcArousalBasedOnKink(GM.pc, Fetish.AnalSexReceiving) * sameMult)
 		if(GM.pc.getArousal() >= 1.0 && portalCharID != "pc"):
-			extraText = "{pc.You} {pc.youVerb('orgasm')} hard, {pc.yourHis} {asshole} pulsing a lot!"
+			extraText = "{pc.You} {pc.youVerb('orgasm')} твердый, {pc.yourHis} {asshole} сильно пульсирует!"
 			GM.pc.orgasmFrom(portalCharID)
 			GM.pc.setArousal(0.0)
 	
@@ -1131,7 +1131,7 @@ func _react(_action: String, _args):
 		GM.pc.addLust(10)
 		GM.pc.addArousal(calcArousalBasedOnKink(GM.pc, Fetish.VaginalSexReceiving) * sameMult)
 		if(GM.pc.getArousal() >= 1.0 && portalCharID != "pc"):
-			extraText = "{pc.You} {pc.youVerb('orgasm')} hard, {pc.yourHis} {pussy} pulsing a lot!"
+			extraText = "{pc.You} {pc.youVerb('orgasm')} твердый, {pc.yourHis} {pussy} сильно пульсирует!"
 			GM.pc.orgasmFrom(portalCharID)
 			GM.pc.setArousal(0.0)
 	
@@ -1157,7 +1157,7 @@ func _react(_action: String, _args):
 		GM.pc.addLust(10)
 		GM.pc.addArousal(calcArousalBasedOnKink(GM.pc, Fetish.AnalSexReceiving) * sameMult)
 		if(GM.pc.getArousal() >= 1.0 && portalCharID != "pc"):
-			extraText = "{pc.You} {pc.youVerb('orgasm')} hard, {pc.yourHis} {asshole} pulsing a lot!"
+			extraText = "{pc.You} {pc.youVerb('orgasm')} твердый, {pc.yourHis} {asshole} сильно пульсирует!"
 			GM.pc.orgasmFrom(portalCharID)
 			GM.pc.setArousal(0.0)
 	
@@ -1183,7 +1183,7 @@ func _react(_action: String, _args):
 		GM.pc.addLust(10)
 		GM.pc.addArousal(calcArousalBasedOnKink(GM.pc, Fetish.VaginalSexReceiving) * sameMult)
 		if(GM.pc.getArousal() >= 1.0 && portalCharID != "pc"):
-			extraText = "{pc.You} {pc.youVerb('orgasm')} hard, {pc.yourHis} {pussy} pulsing a lot!"
+			extraText = "{pc.You} {pc.youVerb('orgasm')} твердый, {pc.yourHis} {pussy} сильно пульсирует!"
 			GM.pc.orgasmFrom(portalCharID)
 			GM.pc.setArousal(0.0)
 	
@@ -1210,7 +1210,7 @@ func _react(_action: String, _args):
 		GM.pc.addLust(10)
 		GM.pc.addArousal(calcArousalBasedOnKink(GM.pc, Fetish.AnalSexGiving) * sameMult)
 		if(connectedChar.getArousal() >= 1.0 && portalCharID != "pc"):
-			extraText = "{npc.You} {npc.youVerb('orgasm')} hard, {npc.yourHis} {anus} pulsing a lot!"
+			extraText = "{npc.You} {npc.youVerb('orgasm')} твердый, {npc.yourHis} {anus} сильно пульсирует!"
 			connectedChar.orgasmFrom("pc")
 			connectedChar.setArousal(0.0)
 	
@@ -1237,7 +1237,7 @@ func _react(_action: String, _args):
 		GM.pc.addLust(10)
 		GM.pc.addArousal(calcArousalBasedOnKink(GM.pc, Fetish.VaginalSexGiving) * sameMult)
 		if(connectedChar.getArousal() >= 1.0 && portalCharID != "pc"):
-			extraText = "{npc.You} {npc.youVerb('orgasm')} hard, {npc.yourHis} {pussy} pulsing a lot!"
+			extraText = "{npc.You} {npc.youVerb('orgasm')} твердый, {npc.yourHis} {pussy} сильно пульсирует!"
 			connectedChar.orgasmFrom("pc")
 			connectedChar.setArousal(0.0)
 	
@@ -1266,7 +1266,7 @@ func _react(_action: String, _args):
 		connectedChar2.addLust(10)
 		connectedChar2.addArousal(calcArousalBasedOnKink(connectedChar2, Fetish.AnalSexReceiving) * sameMult)
 		if(connectedChar2.getArousal() >= 1.0 && portalCharID != secondPortalCharID):
-			extraText = "{npc2.You} {npc2.youVerb('orgasm')} hard, {npc2.yourHis} {anus} pulsing a lot!"
+			extraText = "{npc2.You} {npc2.youVerb('orgasm')} твердый, {npc2.yourHis} {anus} сильно пульсирует!"
 			connectedChar2.orgasmFrom(portalCharID)
 			connectedChar2.setArousal(0.0)
 	
@@ -1294,7 +1294,7 @@ func _react(_action: String, _args):
 		connectedChar2.addLust(10)
 		connectedChar2.addArousal(calcArousalBasedOnKink(connectedChar2, Fetish.VaginalSexReceiving) * sameMult)
 		if(connectedChar2.getArousal() >= 1.0 && portalCharID != secondPortalCharID):
-			extraText = "{npc2.You} {npc2.youVerb('orgasm')} hard, {npc2.yourHis} {pussy} pulsing a lot!"
+			extraText = "{npc2.You} {npc2.youVerb('orgasm')} твердый, {npc2.yourHis} {pussy} сильно пульсирует!"
 			connectedChar2.orgasmFrom(portalCharID)
 			connectedChar2.setArousal(0.0)
 	

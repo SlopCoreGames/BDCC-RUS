@@ -101,7 +101,7 @@ func about_to_shout_do(_id:String, _args:Dictionary, _context:Dictionary):
 		var ignoreList:Array = []
 		for charID in saverCooldowns:
 			ignoreList.append(charID)
-		if(!shoutForInterruptions("inmate", 4, 4, 0.5, "You notice "+getCharByRole("inmate").getName()+" wiggling their ass in the slutwall..", ignoreList)):
+		if(!shoutForInterruptions("inmate", 4, 4, 0.5, "Ты замечаешь "+getCharByRole("inmate").getName()+" виляет задом в шлюз-стенке...", ignoreList)):
 			setState("after_shout", "inmate")
 			checkSleep()
 
@@ -144,14 +144,14 @@ func getAnimData() -> Array:
 func getPreviewLineForRole(_role:String) -> String:
 	if(_role == "inmate"):
 		if(getState() in ["about_to_use", "after_use"]):
-			return "{inmate.name} is being used by {user.name}.."
+			return "{inmate.name} используют как шлюз-стенку для {user.name}..."
 		if(getState() in ["about_to_save", "refusable_save_using_stamina", "refusable_save_using_key", "save_after_help"]):
-			return "{inmate.name} is being saved by {saver.name}.."
-		return "{inmate.name} is stuck in a slutwall.."
+			return "{saver.name} использует {inmate.name} как шлюз-стенку..."
+		return "{inmate.name} застрял(а) в шлюз-стенке..."
 	if(_role == "user"):
-		return "{user.name} is using {inmate.name}."
+		return "{user.name} использует {inmate.name}."
 	if(_role == "saver"):
-		return "{saver.name} is trying to free {inmate.name} from the slutwall."
+		return "{saver.name} пытается освободить {inmate.name} из шлюз-стенки."
 	return .getPreviewLineForRole(_role)
 
 func getTipsAmountString() -> String:

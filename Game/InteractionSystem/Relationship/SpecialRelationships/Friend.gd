@@ -7,7 +7,7 @@ func getVisibleName() -> String:
 	return "Друг"
 
 func getBigDescription() -> String:
-	return "Friends are less likely to do something mean with you and are more likely to help you if you are stuck in a pickle. Friends might also occasionally try to protect you from your owners."
+	return "Друзья реже ведут себя по отношению к вам подло и с большей вероятностью придут на помощь, если вы попали в переделку. Также друзья могут время от времени пытаться защитить вас от ваших хозяев."
 
 func getCategoryColor() -> Color:
 	return Color.greenyellow
@@ -49,10 +49,10 @@ func onSocialEvent(_charActor:String, _charTarget:String, _eventID:int, _args:Ar
 			stopMe()
 
 func onStart(_args:Array):
-	showMessage(getChar().getName()+" became your [b][color=#"+Color.greenyellow.to_html(false)+"]Friend[/color][/b]!")
+	showMessage(getChar().getName()+" стал вашим [b][color=#"+Color.greenyellow.to_html(false)+"]Friend[/color][/b]!")
 
 func onEnd():
-	showMessage(getChar().getName()+" is no longer your Friend!")
+	showMessage(getChar().getName()+" больше не является вашим другом!")
 
 func onNewDay():
 	if(affection("pc") < 0.4):

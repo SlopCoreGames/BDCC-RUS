@@ -37,7 +37,7 @@ func getTemplate():
 			slot = nameSlot,
 			slotType = CrotchBlocks.VALUE,
 			expand = true,
-			placeholder = "Custom name",
+			placeholder = "Пользовательское имя",
 		},
 	]
 

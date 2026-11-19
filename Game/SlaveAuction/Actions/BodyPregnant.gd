@@ -10,7 +10,7 @@ func getName() -> String:
 	return "Беременность"
 
 func getButtonDesc() -> String:
-	return "Highlight the slave's pregnant belly.\n\n[b]Might[/b] reveal 1 mind preference of each bidder."
+	return "Подсветить беременный живот рабыни.\n\n[b]Возможно[/b] раскроет по одному предпочтениям разума каждого участника торгов."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
@@ -32,19 +32,19 @@ func getTraits() -> Dictionary:
 func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
 		'That’s a rarity!',
-		'A pregnant slave? I can’t resist.',
-		'There’s something so appealing about that belly.',
-		'A rare treat indeed.',
-		'I’ve been looking for a pregnant slave for a while.',
-		'Pregnant slaves are hard to find.',
+		'Беременная рабыня? Против такой не устоять.',
+		'В этом животике есть что-то чертовски притягательное.',
+		'Тот еще деликатес, редкость.',
+		'Я уже давно ищу именно беременную рабыню.',
+		'Беременных рабынь найти непросто.',
 	])
 
 func getNegativeReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
-		'Pregnant? I’m not interested in dealing with that hassle.',
-		'No thanks, too much responsibility.',
-		'Pregnancy makes things complicated. I need a slave that can serve, not someone who needs special care.',
-		'That belly\'s a turn-off for me. I’m not here to buy someone who\'s already carrying life.',
-		'Pregnant? I\'m not gonna babysit someone else\'s children.',
+		'Беременная? Не хочу возиться со всей этой возней.',
+		'Нет, спасибо, слишком много ответственности.',
+		'Беременность всё усложняет. Мне нужна рабыня, которая будет служить, а не та, за которой нужен особый уход.',
+		'Этот живот меня скорее отталкивает. Я здесь не для того, чтобы покупать ту, что уже вынашивает новую жизнь.',
+		'Беременная? Я не собираюсь нянчиться с чужими отпрысками.',
 	])
 	

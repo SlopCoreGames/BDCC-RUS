@@ -579,10 +579,10 @@ func _react(_action: String, _args):
 	if(_action in ["cumAnal", "make_her_cum", "cumVaginal"]):
 		if(gotPayed):
 			GM.pc.addCredits(5)
-		GM.main.addRoomMemoryCurrentLoc("You notice some cum stains on one of the benches", 2)
+		GM.main.addRoomMemoryCurrentLoc("Ты замечаешь пятна спермы на одной из скамей", 2)
 
 	if(_action in ["cum_inside_risha", "pull_out_on_risha"]):
-		GM.main.addRoomMemoryCurrentLoc("You notice some cum stains on one of the benches, a reminder of the fun time you had with Risha", 2)
+		GM.main.addRoomMemoryCurrentLoc("Ты замечаешь пятна спермы на одной из скамей — напоминание о том, как весело ты провел время с Ришей", 2)
 
 	if(_action == "cum_inside_risha"):
 		getCharacter("risha").cummedInVaginaBy("pc")

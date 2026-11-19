@@ -32,16 +32,16 @@ func _reactInit():
 	
 	setState(pickedRandom)
 	
-	socketLine = "Something is wrong! Tell the developer! Wait, why did I say that.."
+	socketLine = "Что-то не так! Скажи разработчику! Погоди, почему я это сказала..."
 	var punishReason = getFlag("SocketModule.punishReason", "")
 	if(punishReason == "stuckroughfuck"):
-		socketLine = "You were very rough with me yesterday! My pussy still hurts."
+		socketLine = "Вчера ты был очень груб со мной! У меня до сих пор киска болит."
 	elif(punishReason == "stuckroughassfuck"):
-		socketLine = "Anal sex with me is a big no-no! My butt is only for groping. Hopefully you will remember that now."
+		socketLine = "Анальный секс со мной — это табу! Моя жопка только для того, чтобы её лапали. Надеюсь, теперь ты это запомнишь."
 	elif(punishReason == "spikeddrink"):
-		socketLine = "I felt strange yesterday. And so I decided to check something. I found signs of a strong aphrodisiac left in my pussy! You wouldn't know anything about that, would you? And you didn't tell me!"
+		socketLine = "Вчера я чувствовала себя странно. И решила кое-что проверить. В моей киске нашли следы мощного афродизиака! Ты ведь ничего об этом не знаешь, а? И ты мне не сказал!"
 	elif(punishReason == "hadcumafterbrainwash"):
-		socketLine = "I don't remember what happened yesterday.. But my butt was hurting and leaking cum! I think you are responsible.. Anal sex with me is a big no-no!"
+		socketLine = "Я не помню, что произошло вчера... Но у меня болела жопа и из неё текла сперма! Думаю, это твоя вина... Анальный секс со мной — это табу!"
 	return
 
 func _run():

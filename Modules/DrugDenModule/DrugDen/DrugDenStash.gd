@@ -6,4 +6,4 @@ func _init():
 	id = "DrugDenStash"
 	
 func _getName():
-	return "Drug den stash"
+	return "Заначка в притоне"

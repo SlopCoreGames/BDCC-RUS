@@ -41,7 +41,7 @@ func doAction(_lustState: LustCombatState, _args):
 	
 	var pc:Player = _lustState.getCharacter()
 	
-	var text := "You take off your "+itemState.casualName+" completely! "
+	var text := "Ты снимаешь свою "+itemState.casualName+" полностью! "
 
 	if(pc.hasEffect(StatusEffect.CoveredInCum)):
 		text += "Когда ты расстегиваешься, становится видно, какая ты грязнуля~."

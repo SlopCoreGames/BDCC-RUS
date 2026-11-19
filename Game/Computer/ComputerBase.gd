@@ -4,7 +4,7 @@ class_name ComputerBase
 var id = "error"
 var learnedCommands = []
 var lastCommand = ""
-var introText = "AlphaOS Console [Version 0.9.7601]\n(C) AlphaCorp, All rights reserved"
+var introText = "Консоль AlphaOS [Version 0.9.7601]\n(C) AlphaCorp, все права защищены"
 var lastOutput = ""
 var isIntro = true
 var ended = false

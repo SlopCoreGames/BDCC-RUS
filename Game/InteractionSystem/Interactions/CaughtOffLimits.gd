@@ -255,9 +255,9 @@ func startEscortOut():
 
 func getPreviewLineForRole(_role:String) -> String:
 	if(_role == "guard"):
-		return "{guard.name} has caught {inmate.name} off-limits and is dealing with {inmate.him}."
+		return "{guard.name} застукал(а) {inmate.name} за чем-то запретным и теперь разбирается с {inmate.him}."
 	if(_role == "inmate"):
-		return "{inmate.name} was found by {guard.name}."
+		return "{guard.name} обнаружил(а) {inmate.name}."
 	return .getPreviewLineForRole(_role)
 
 func saveData():

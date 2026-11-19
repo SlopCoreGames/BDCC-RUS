@@ -11,7 +11,7 @@ func getDoll3DScene():
 	return "res://Player/Player3D/Parts/Body/HumanBody/HumanBody.tscn"
 
 func getVulgarName() -> String:
-	return "normal body"
+	return "обычное тело"
 
 func getAVulgarName() -> String:
-	return "a normal body"
+	return "обычное тело"

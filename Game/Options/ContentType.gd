@@ -9,31 +9,31 @@ const ForcedPermanentTFs = "ForcedPermanentTFs"
 
 static func getVisibleName(contentType):
 	if(contentType == RiskyCondoms):
-		return "Risky Condoms"
+		return "Рискованные презервативы"
 	if(contentType == Watersports):
 		return "Watersports"
 	if(contentType == CumInflation):
-		return "Cum Inflation"
+		return "Инфляция спермы"
 	if(contentType == CumStealing):
-		return "Cum Stealing"
+		return "Кража спермы"
 	if(contentType == ForcedPermanentTFs):
-		return "Forced Permanent TFs"
+		return "Принудительные постоянные ТФ"
 	
 	return "Error"
 
 static func getDescription(contentType):
 	if(contentType == RiskyCondoms):
-		return "If enabled, condoms have a chance to break on use. If disabled - they will never break."
+		return "Если включено, презервативы могут порваться при использовании. Если выключено — они никогда не рвутся."
 	if(contentType == Watersports):
-		return "Content that includes usage of pee in any way."
+		return "Контент, включающий использование мочи в любом виде."
 	if(contentType == CumInflation):
-		return "Makes your belly look inflated if too many people cum inside you."
+		return "Ваш живот будет выглядеть раздутым, если в вас кончит слишком много людей."
 	if(contentType == CumStealing):
-		return "Makes it so you can sometimes exchange cum with others during tribbing."
+		return "Позволяет иногда обмениваться спермой с другими во время триббинга."
 	if(contentType == ForcedPermanentTFs):
-		return "If enabled, npcs will sometimes try to force-feed you a pill (MorphIn) that will make your transformations permanent. Turning this off does NOT disable tf content."
+		return "Если включено, NPC будут иногда пытаться насильно скормить вам таблетку (MorphIn), которая сделает ваши трансформации постоянными. Отключение этого режима НЕ отключает ТФ-контент в целом."
 	
-	return "No description provided"
+	return "Описание отсутствует"
 
 static func getAll():
 	return [RiskyCondoms, Watersports, CumInflation, CumStealing, ForcedPermanentTFs]

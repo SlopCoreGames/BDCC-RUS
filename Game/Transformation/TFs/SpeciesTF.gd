@@ -18,7 +18,7 @@ func getPillName() -> String:
 
 func getUnlockData() -> Dictionary:
 	return {
-		eliza = "Wow! This one is just.. packed.. with all sorts of DNA. I see a lot of different patterns.. but they do share something in common. I think this one has the potential to completely change you into something else! To override your species! Just imagine the adventures you could have in a new body. I will call it.. 'WildShift'.",
+		eliza = "Ого! Этот экземпляр просто.. напичкан.. всевозможной ДНК. Вижу кучу разных паттернов.. но у них есть нечто общее. Думаю, этот препарат способен полностью превратить тебя в кого-то другого! Полностью перезаписать твой вид! Только представь, какие приключения ждут тебя в новом теле. Назову его.. «Дикий Сдвиг».",
 		tryOptions = [
 			{
 				name = "Заставить Элизу сожрать это",
@@ -29,7 +29,7 @@ func getUnlockData() -> Dictionary:
 	}
 
 func getPillDatabaseDesc() -> String:
-	return "This drug will gradually switch your species, morphing your body parts one by one.\n\nThe first stage will happen after about 15 minutes. After that, the next ones will happen roughly every 10 hours. Each next stage will take longer than the last. This could be accelerated only by using the QuickShift drug.\n\nThis drug doesn’t have a set amount of stages. It will reach its final stage when there is nothing left to transform. It’s possible to modify the drug to pick the target species and which parts should be kept as is by using the advanced lab equipment."
+	return "Этот препарат будет постепенно менять твой вид, трансформируя части тела одну за другой.\n\nПервая стадия наступит примерно через 15 минут. После этого последующие будут происходить в среднем каждые 10 часов. Каждая следующая стадия будет длиться дольше предыдущей. Ускорить процесс можно только с помощью препарата «Быстрый Сдвиг».\n\nУ этого препарата нет фиксированного количества стадий. Он достигнет финальной фазы, когда трансформировать будет больше нечего. С помощью продвинутого лабораторного оборудования препарат можно модифицировать, чтобы выбрать целевой вид и определить, какие части тела должны остаться без изменений."
 
 func getTFCheckTags() -> Dictionary:
 	return {

@@ -46,37 +46,37 @@ func _run():
 
 			# (default lines)
 			var possibleLines = [
-				"[say=npc]Hey, you’re not supposed to be here.[/say]",
-				"[say=npc]You got lost, patient?[/say]",
-				"[say=npc]Never seen you before. Wanna explain yourself?[/say]",
+				"[say=npc]Эй, тебе здесь не место.[/say]",
+				"[say=npc]Заблудился, пациент?[/say]",
+				"[say=npc]Впервые тебя вижу. Есть объяснения?[/say]",
 			]
 
 			# (mean or dommy)
 			if(npcVariation == "mean"):
 				possibleLines = [
-					"[say=npc]So what’s your excuse? Wait, I don’t care. You’re in trouble now.[/say]",
-					"[say=npc]Someone is feeling risky today, huh. Care to explain yourself before I bash your skull in?[/say]",
-					"[say=npc]I see a stray patient. Don’t recall your face. But you’re in huge trouble.[/say]",
-					"[say=npc]Patients never learn, do they. Well, more thugs for me to beat up.[/say]",
-					"[say=npc]So? What do we have here? A bitch forgot where her kennel is?[/say]",
+					"[say=npc]Ну и какое у тебя оправдание? Хотя похер. Теперь у тебя проблемы.[/say]",
+					"[say=npc]Кто-то сегодня решил рискнуть, а? Хочешь объясниться, пока я тебе череп не проломил?[/say]",
+					"[say=npc]Вижу бродячего пациента. Твое лицо мне не знакомо, но у тебя большие неприятности.[/say]",
+					"[say=npc]Пациенты никогда не учатся, верно? Что ж, значит, будет еще больше отморозков, которых я смогу побить.[/say]",
+					"[say=npc]Ну и? Что тут у нас? Сучка забыла, где её конура?[/say]",
 				]
 
 			# (kind)
 			if(npcVariation == "kind"):
 				possibleLines = [
-					"[say=npc]Hey there. Whatcha doing here?[/say]",
-					"[say=npc]Oh hi. Don’t remember seeing you before.[/say]",
-					"[say=npc]You can’t be here, patient. Don’t be silly~.[/say]",
-					"[say=npc]Oh wow, hey! I think you’re not supposed to be here.[/say]",
+					"[say=npc]О, привет. Ты че тут забыла?[/say]",
+					"[say=npc]О, привет. Кажется, раньше тебя здесь не видел.[/say]",
+					"[say=npc]Тебе нельзя здесь находиться, пациент. Не глупи~.[/say]",
+					"[say=npc]Ого, привет! Кажется, тебе здесь не положено находиться.[/say]",
 				]
 
 			# (subby)
 			if(npcVariation == "subby"):
 				possibleLines = [
-					"[say=npc]Ohh.. Hi there, patient..[/say]",
+					"[say=npc]Охх.. Привет, пациент..[/say]",
 					"[say=npc]Oh. Hmm.. Hello?..[/say]",
-					"[say=npc]I’m not sure but I think you’re not supposed to be here..[/say]",
-					"[say=npc]I think you shouldn’t be here.. Right?..[/say]",
+					"[say=npc]Не уверена, но мне кажется, тебе здесь не место..[/say]",
+					"[say=npc]Мне кажется, тебе не стоит здесь быть.. Верно?..[/say]",
 				]
 				
 			saynn(RNG.pick(possibleLines))
@@ -91,37 +91,37 @@ func _run():
 
 			# (default lines)
 			var possibleLines = [
-				"[say=npc]Hey, you. Haven't we met already? So why do I see you again?[/say]",
-				"[say=npc]Got lost again, patient?[/say]",
-				"[say=npc]Oh, I remember you. Wanna explain yourself?[/say]",
+				"[say=npc]Эй, ты. Мы ведь уже встречались? Так почему ты снова здесь?[/say]",
+				"[say=npc]Снова заблудился, пациент?[/say]",
+				"[say=npc]О, я тебя помню. Хочешь объясниться?[/say]",
 			]
 
 			# (mean or dommy)
 			if(npcVariation == "mean"):
 				possibleLines = [
-					"[say=npc]So what’s your excuse this time? Wait, I really don’t care.[/say]",
-					"[say=npc]Someone is feeling risky again, huh. Wanna explain that? Or should I break you a bit?[/say]",
-					"[say=npc]I remember you, patient. But you’re in huge trouble.[/say]",
-					"[say=npc]You never learn, do you. Well, more thugs for me to beat up.[/say]",
-					"[say=npc]So? What do we have here? A bitch forgot her place again?[/say]",
+					"[say=npc]Ну и какое оправдание на этот раз? Хотя погоди, мне плевать.[/say]",
+					"[say=npc]Кто-то снова решил рискнуть, а? Хочешь объясниться? Или мне тебя немного проучить?[/say]",
+					"[say=npc]Я помню тебя, пациент. Но у тебя большие неприятности.[/say]",
+					"[say=npc]Ты никак не научишься, да? Что ж, значит, у меня будет еще больше отбросов, которых можно побить.[/say]",
+					"[say=npc]Ну и? Что тут у нас? Очередная сучка опять забыла свое место?[/say]",
 				]
 
 			# (kind)
 			if(npcVariation == "kind"):
 				possibleLines = [
-					"[say=npc]Hey there. Oh, I know you! How are you doing?[/say]",
-					"[say=npc]Oh hi. I remember seeing you before.[/say]",
-					"[say=npc]You can’t be here, patient. Don’t be silly~.[/say]",
-					"[say=npc]Oh wow, hey! I think you’re not supposed to be here.[/say]"
+					"[say=npc]О, привет! О, я тебя знаю! Как поживаешь?[/say]",
+					"[say=npc]О, привет. Кажется, я тебя уже видел(а).[/say]",
+					"[say=npc]Тебе нельзя здесь находиться, пациент. Не глупи~.[/say]",
+					"[say=npc]Ого, привет! Кажется, тебе здесь не положено находиться.[/say]"
 				]
 
 			# (subby)
 			if(npcVariation == "subby"):
 				possibleLines = [
-					"[say=npc]Ohh.. Hi there, patient..[/say]",
-					"[say=npc]Oh. Hmm.. I think I know you?..[/say]",
-					"[say=npc]I’m not sure but I think you’re not supposed to be here..[/say]",
-					"[say=npc]I think you shouldn’t be here.. Right?.. Although.. I remember seeing you.[/say]",
+					"[say=npc]Охх.. Привет, пациент..[/say]",
+					"[say=npc]О... Хм... Кажется, мы знакомы?..[/say]",
+					"[say=npc]Не уверена, но мне кажется, тебе здесь не место..[/say]",
+					"[say=npc]Мне кажется, тебе здесь не место... Верно?.. Хотя... точно помню, что видел(а) тебя.[/say]",
 				]
 				
 			saynn(RNG.pick(possibleLines))

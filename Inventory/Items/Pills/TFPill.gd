@@ -26,24 +26,24 @@ func getVisibleName():
 #	return .getInventoryGroupID()
 
 func getInventoryGroupName() -> String:
-	return "Transformation pills"
+	return "Трансформационные таблетки"
 
 func getSexEngineSubcategory() -> Array:
-	return ["TF pills"]
+	return ["ТФ-таблетки"]
 
 func getDescription():
-	var theDesc:String = "A pill that lacks any labels or instructions. Who knows what it will do..\n"
+	var theDesc:String = "Таблетка без каких-либо этикеток или инструкций. Кто знает, что она сделает..\n"
 	if(tfID == "" || !GM.main.SCI.isTransformationUnlocked(tfID)):
-		theDesc += "[color=#"+Color.cyan.to_html()+"]This pill might have some kind of transformative effect on your body.[/color]"
+		theDesc += "[color=#"+Color.cyan.to_html()+"]Эта таблетка может оказать какое-то трансформирующее воздействие на ваше тело.[/color]"
 	else:
 		var theTF:TFBase = GlobalRegistry.getTransformationRef(tfID)
 		if(theTF):
-			theDesc += "[color=#"+Color.cyan.to_html()+"]Transformation effect: [/color]"+theTF.getName()
+			theDesc += "[color=#"+Color.cyan.to_html()+"]Эффект трансформации: [/color]"+theTF.getName()
 		else:
-			theDesc += "[color=#"+Color.cyan.to_html()+"]Transformation effect: [/color]"+"ERROR!"
+			theDesc += "[color=#"+Color.cyan.to_html()+"]Эффект трансформации: [/color]"+"ОШИБКА!"
 	
 	if(!configDesc.empty()):
-		theDesc += ("\n\n[color=#"+Color.cyan.to_html()+"]Pill settings:\n"+configDesc+"[/color]")
+		theDesc += ("\n\n[color=#"+Color.cyan.to_html()+"]Настройки таблетки:\n"+configDesc+"[/color]")
 	
 	return theDesc
 
@@ -84,10 +84,10 @@ func pillStartTF(_user) -> Array:
 	var tfHolder = _user.getTFHolder()
 	
 	if(tfID == "" || GlobalRegistry.getTransformationRef(tfID) == null || tfHolder == null || !tfHolder.canStartTransformation(tfID)):
-		return [false, "{USER.You} {USER.youVerb('swallow')} the pill.. but nothing happens. Looks like {USER.youHe} got lucky!".replace("USER", _user.getID())]
+		return [false, "{USER.You} {USER.youVerb('swallow')} таблетку.. но ничего не происходит. Похоже, {USER.youHe} повезло!".replace("USER", _user.getID())]
 	
 	_user.getTFHolder().startTransformation(tfID, tfArgs)
-	return [true, "{USER.You} {USER.youVerb('swallow')} the weird pill..".replace("USER", _user.getID())]
+	return [true, "{USER.You} {USER.youVerb('swallow')} странную таблетку..".replace("USER", _user.getID())]
 
 func useInCombat(_attacker, _receiver):
 	removeXOrDestroy(1)
@@ -150,7 +150,7 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	
 	return {
 		"name": getVisibleName(),
-		"usedName": "a strange pill",
+		"usedName": "странная таблетка",
 		"desc": getDescription(),
 		"scoreOnSub": 0.2,#_domInfo.goalsScoreMax({SexGoal.FuckVaginal: 1.0, SexGoal.FuckAnal: 0.5}, _subInfo.charID)*_domInfo.fetishScore({Fetish.Breeding: 1.0}),
 		"scoreOnSelf": 0.0,

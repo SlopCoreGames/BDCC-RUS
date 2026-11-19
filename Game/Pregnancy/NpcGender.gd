@@ -55,11 +55,11 @@ static func getVisibleNameColored(gender):
 
 static func getGenderExplanation(gender):
 	if(gender == Shemale):
-		return "Female with a penis but no pussy"
+		return "Женщина с пенисом, но без киски"
 	if(gender == Herm):
-		return "Female with a penis and a pussy"
+		return "Женщина с пенисом и киской"
 	if(gender == Peachboy):
-		return "Male with a pussy and no penis"
+		return "Мужчина с киской, но без пениса"
 	return null
 
 static func getColorString(gender):

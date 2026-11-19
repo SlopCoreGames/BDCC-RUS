@@ -16,7 +16,7 @@ static func tranceIcon(width: int = 16) -> String:
 	
 static func addUnresistableHypnoButtons(scene: SceneBase, submitAction: String, specificSubmitActions = [], preexistingButtons: int = 0):
 	var optionsSubmit = []
-	optionsSubmit.append_array(["Submit", "Succumb", "Surrender", "Obey", "Give in", "Play along", "Accept", "Comply", "Stay in trance"])
+	optionsSubmit.append_array(["Submit", "Succumb", "Surrender", "Obey", "Сдаться", "Подыграть", "Accept", "Comply", "Оставаться в трансе"])
 	optionsSubmit.append_array(specificSubmitActions)
 	
 	var buttonSlots = 11.0 - preexistingButtons
@@ -29,7 +29,7 @@ static func addUnresistableHypnoButtons(scene: SceneBase, submitAction: String, 
 	
 static func addHypnoButtons(scene: SceneBase, submitAction: String, resistAction: String, specificSubmitActions = [], specificResistActions = [], preexistingButtons: int = 0):
 	var optionsSubmit = []
-	optionsSubmit.append_array(["Submit", "Succumb", "Surrender", "Obey", "Give in", "Play along", "Accept", "Comply", "Stay in trance"])
+	optionsSubmit.append_array(["Submit", "Succumb", "Surrender", "Obey", "Сдаться", "Подыграть", "Accept", "Comply", "Оставаться в трансе"])
 	optionsSubmit.append_array(specificSubmitActions)
 	
 	var optionsResist = []

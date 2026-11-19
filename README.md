@@ -8,7 +8,7 @@
 [![Engine](https://img.shields.io/badge/Движок-Godot%203.6.2%20(GDScript)-blue?style=flat-square)](#скачать-и-запустить)
 [![LLM](https://img.shields.io/badge/Перевод-Gemma%204%2026B%20A4B%20(Local)-green?style=flat-square)](#как-устроен-пайплайн-перевода)
 [![Status](https://img.shields.io/badge/Статус-Готово%20100%25%20(v0.4.1)-brightgreen?style=flat-square)](#статус-локализации)
-[![Release](https://img.shields.io/badge/Скачать-Release%20v1.0-orange?style=flat-square)](https://github.com/SlopCoreGames/BDCC-RUS/releases/latest)
+[![Release](https://img.shields.io/badge/Скачать-Release%20v1.1-orange?style=flat-square)](https://github.com/SlopCoreGames/BDCC-RUS/releases/latest)
 
 </div>
 
@@ -21,15 +21,15 @@
 
 ## Скачать и запустить
 
-Все сборки доступны на странице **[Release v1.0](https://github.com/SlopCoreGames/BDCC-RUS/releases/latest)**:
+Все сборки доступны на странице **[Release v1.1](https://github.com/SlopCoreGames/BDCC-RUS/releases/latest)**:
 
 | Платформа | Файл | Размер | Как запустить |
 | --- | --- | --- | --- |
-| **Windows 64-bit** | `BDCC_RU_v0.4.1_Win64.zip` | `65.8 МБ` | Распакуйте в одну папку (`BDCC.exe` + `BDCC.pck`) и запустите `BDCC.exe` |
-| **Android (APK)** | `BDCC_RU_v0.4.1_Android.apk` | `114.7 МБ` | ARM64 + ARMv7, подпись APK v1/v2/v3 (перед установкой поверх EN-версии удалите оригинал) |
-| **Web / HTML5** | `BDCC_RU_v0.4.1_Web.zip` | `58.1 МБ` | Распакуйте и запустите `start_web_server.bat` или `python3 -m http.server 8060` |
-| **Linux 64-bit** | `BDCC_RU_v0.4.1_Linux64.zip` | `66.4 МБ` | Распакуйте в одну папку, права `+x` уже выставлены; запуск `./BDCC.x86_64` |
-| **macOS** | `BDCC_RU_v0.4.1_macOS.zip` | `75.3 МБ` | Неподписанный `.app`-бандл (`xattr -cr BDCC.app` при срабатывании Gatekeeper) |
+| **Windows 64-bit** | `BDCC_RU_v0.4.1_Win64.zip` | `66.0 МБ` | Распакуйте в одну папку (`BDCC.exe` + `BDCC.pck`) и запустите `BDCC.exe` |
+| **Android (APK)** | `BDCC_RU_v0.4.1_Android.apk` | `115.0 МБ` | ARM64 + ARMv7, подпись APK v1/v2/v3 (перед установкой поверх EN-версии удалите оригинал) |
+| **Web / HTML5** | `BDCC_RU_v0.4.1_Web.zip` | `58.3 МБ` | Распакуйте и запустите `start_web_server.bat` или `python3 -m http.server 8060` |
+| **Linux 64-bit** | `BDCC_RU_v0.4.1_Linux64.zip` | `66.6 МБ` | Распакуйте в одну папку, права `+x` уже выставлены; запуск `./BDCC.x86_64` |
+| **macOS** | `BDCC_RU_v0.4.1_macOS.zip` | `75.5 МБ` | Неподписанный `.app`-бандл (`xattr -cr BDCC.app` при срабатывании Gatekeeper) |
 
 > [!TIP]
 > **Portable-режим (Windows / Linux):** создайте пустую папку `BDCCData` рядом с исполняемым файлом до запуска, чтобы хранить сохранения, настройки и моды прямо в ней.
@@ -42,12 +42,12 @@
 | Компонент / Проверка | Результат |
 | --- | --- |
 | **Базовая версия игры** | BDCC `0.4.1` (форк [`Alexofp/BDCC`](https://github.com/Alexofp/BDCC)) |
-| **Покрытие файлов пайплайна** | **`4027 / 4027` (`100%`)** (`2030` `.gd` и `159` `.tscn` изменены относительно апстрима) |
-| **Память переводов (`tm_cache_bdcc.json`)** | `70 250` очищенных записей |
+| **Покрытие файлов (Pass 1 + 2 + 3 + SlaveAuction)** | **`2 842` `.gd` и `335` `.tscn`** переведены относительно апстрима (`4 021/4 021` пройдено в Pass 2, дожимной Pass 3 + `SlaveAuction`: помещения `.tscn`, HUD, перки, `ButtonChecks`, `ModularDialogue`, `SexEngine`, `SlaveAuction`, атаки, боевые предметы) |
+| **Память переводов (`tm_cache_bdcc.json`)** | **`96 057`** очищенных записей |
 | **Кириллические шрифты** | `Carlito` (`Regular / Bold / Italic / BoldItalic`) в UI + кириллический fallback для `BodyWritingsFont` |
-| **Статический аудит (`10/10`)** | `0` утечек масок, `0` незакрытых строк, `0` ошибок `{...}` / `[say=...]` / `printf` / Unicode |
-| **Автотест Godot 3.6.2 (`VerifyBDCC.tscn`)** | `VERIFY_PASS`: `3369/3369` `.gd`, `652/652` `.tscn`, `GlobalRegistry` (`679` сцен, `136` предметов, `105` персонажей, `22` модуля) |
-| **Живой запуск `BDCC.exe`** | Проверен в изолированном portable-режиме (`Using portable save directory`, `GlobalRegistry fully initialized`, `0` ошибок) |
+| **Статический аудит** | `0` утечек масок `@@`, `0` ошибок `{...}` / `[say=...]` / `printf` / Unicode, `0` кириллицы в ID и опкодах `CrotchCode` |
+| **Автотест Godot 3.6.2 (`VerifyBDCC.tscn`)** | `VERIFY_PASS`: `3369/3369` `.gd`, `652/652` `.tscn`, `GlobalRegistry` (`679` сцен, `136` предметов, `105` персонажей, `91` атака, `9` видов) |
+| **Живой запуск `BDCC.exe`** | Проверен в изолированном portable-режиме (`Using portable save directory`, `GlobalRegistry fully initialized in: 16.0s`, `0` ошибок) |
 | **Кросс-платформенные сборки** | `apksigner verify` v1/v2/v3 + `zipalign` для `.apk`; HTTP `200 OK` для Web; ELF `+x` для Linux; `.app`-бандл для macOS |
 
 ---

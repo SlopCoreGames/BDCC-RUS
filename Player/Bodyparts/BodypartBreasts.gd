@@ -105,8 +105,8 @@ func getLewdDescriptionAndName():
 func getPickableAttributes():
 	var result = .getPickableAttributes()
 	var breastVariants = [
-		[BreastsSize.FOREVER_FLAT, "Forever Flat", "Your breasts will never produce milk or increase in size"],
-		[BreastsSize.FLAT, "Flat", "Flat breasts"],
+		[BreastsSize.FOREVER_FLAT, "Навсегда плоские", "Твоя грудь никогда не будет вырабатывать молоко или увеличиваться в размере"],
+		[BreastsSize.FLAT, "Flat", "Плоская грудь"],
 	]
 	for breastSize in BreastsSize.getAll():
 		if(breastSize <= BreastsSize.FLAT || breastSize > BreastsSize.J):
@@ -115,7 +115,7 @@ func getPickableAttributes():
 	
 	result["breastsize"]= {
 		"text": "Изменить размер груди",
-		"textButton": "Breast size",
+		"textButton": "Размер груди",
 		"buttonDesc": "Выбрать размер груди",
 		"options": breastVariants,
 		"default": size,
@@ -132,7 +132,7 @@ func applyAttribute(_attrID: String, _attrValue):
 
 func getAttributesText():
 	return [
-		["Breast size", BreastsSize.breastSizeToString(getSize())],
+		["Размер груди", BreastsSize.breastSizeToString(getSize())],
 	]
 
 func getCharCreatorData():
@@ -179,10 +179,10 @@ func getBreastsAdjustScale():
 	return (BreastsSize.breastSizeToBoneScale(theSize) - aScale) / (BreastsSize.breastSizeToBoneScale(BreastsSize.L) - aScale)
 
 func getRevealMessage():
-	return Util.capitalizeFirstLetter(getLewdDescriptionAndName()) + " got revealed."
+	return Util.capitalizeFirstLetter(getLewdDescriptionAndName()) + " был обнажен."
 
 func getFluidType(_fluidSource) -> String:
 	return fluidType
 
 func getTransformMorphMessage(_context:Dictionary) -> String:
-	return "{npc.YouHe} {npc.youHeVerb('feel')} a warmth spreading across {npc.yourHis} chest, and suddenly, {npc.yourHis} breasts begin to swell and reshape, their countours and texture changing. {npc.YouHe} now {npc.youHaveHeHas} "+getAVulgarName()+"."
+	return "{npc.YouHe} {npc.youHeVerb('feel')} тепло разливается по {npc.yourHis} груди, и внезапно {npc.yourHis} грудь начинает набухать и менять форму, меняя свои контуры и текстуру. {npc.YouHe} теперь {npc.youHaveHeHas} "+getAVulgarName()+"."

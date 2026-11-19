@@ -37,7 +37,7 @@ func doActionSimple(_slaveID, _extraSlavesIDs = {}):
 	var deservesPunishment = false
 	
 	if(npcSlavery.getDespair() > 0.8):
-		text += "{npc.HeShe} continues with {npc.his} current activity of staring at a blank wall, as if your words had little impact."
+		text += "{npc.HeShe} продолжает {npc.his} текущее занятие — пялиться в пустую стену, будто твои слова на него почти не подействовали."
 	elif(npcSlavery.getSpoiling() > 0.7):
 		text += "{npc.HeShe} ухмыляется, наслаждаясь чрезмерной похвалой."
 	elif(npcSlavery.isResistingSuperActively()):

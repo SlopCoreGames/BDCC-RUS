@@ -261,20 +261,20 @@ func _run():
 			var itemDesc:String = itemRef.getVisisbleDescription()
 			
 			if(itemID == "TFPill"):
-				itemName = "Strange Pill"
-				itemDesc = "Use advanced algorithms to brute-force random molecular structures until we find one that has transformative properties.\n\nThis pill is guaranteed to be one that hasn't been unlocked yet (Unless you have unlocked all of them already). The cost of this pill will raise each time you make it."
+				itemName = "Странная таблетка"
+				itemDesc = "Используйте продвинутые алгоритмы для перебора случайных молекулярных структур, пока не найдется та, что обладает трансформирующими свойствами.\n\nЭта таблетка гарантированно будет новой (если только вы еще не открыли их все). Стоимость изготовления таблетки будет расти с каждым разом."
 			
 			var itemFluidsReq:String = GM.main.SCI.canMakeGetFluidsDescription(craftInfo["fluids"])
 			var canMakeResult:Array = GM.main.SCI.canMakeHasFluids(craftInfo["fluids"])
 			var canMake:bool = canMakeResult[0]
 			
 			if(craftInfo.has("science")):
-				itemFluidsReq = "Science points: "+str(craftInfo["science"])+"  (You have "+str(GM.main.SCI.getSciencePoints())+")\n"+itemFluidsReq
+				itemFluidsReq = "Очки науки: "+str(craftInfo["science"])+"  (У вас есть "+str(GM.main.SCI.getSciencePoints())+")\n"+itemFluidsReq
 				if(GM.main.SCI.getPoints() < craftInfo["science"]):
 					canMake = false
 					if(canMakeResult[1] != ""):
 						canMakeResult[1] += "\n"
-					canMakeResult[1] += "Not enough Science Points"
+					canMakeResult[1] += "Недостаточно очков науки"
 				
 			var theActions:Array = []
 			if(canMake):
@@ -345,14 +345,14 @@ func _run():
 				#sayn(" - "+str(_i)+": "+(tf.getPillName() if isUnlocked else "Unknown")+". "+(tf.getName()+". Untested" if !isTested else tf.getName()+". Tested"))
 				
 				var drugDesc:String = ""
-				drugDesc += "Pill name: "+tf.getPillName()
-				drugDesc += "\nPossible effect: "+tf.getName()
+				drugDesc += "Название таблетки: "+tf.getPillName()
+				drugDesc += "\nВозможный эффект: "+tf.getName()
 				drugDesc += "\nStatus: "+("[color=red]UNTESTED[/color]" if !isTested else "[color=green]TESTED[/color]")
-				drugDesc += "\n\nFull description:"
+				drugDesc += "\n\nПолное описание:"
 				if(isTested):
 					drugDesc += "\n"+tf.getPillDatabaseDesc()
 				else:
-					drugDesc += "\nNot available, testing is required"
+					drugDesc += "\nНедоступно, требуется тестирование"
 				
 				entries["drug_"+tfID] = {
 					name = str(_i)+": "+tf.getPillName(),
@@ -400,13 +400,13 @@ func _run():
 			var canBuy:bool = upgradeInfo["cost"] <= GM.main.SCI.getPoints()
 			var upgradeDesc:String = ""
 			upgradeDesc += upgradeInfo["desc"]
-			upgradeDesc += "\n\nYou have "+str(GM.main.SCI.getPoints())+" science points"
-			upgradeDesc += "\nCost: [color="+("red" if !canBuy else "green")+"]"+str(upgradeInfo["cost"])+" science points[/color]"
+			upgradeDesc += "\n\nУ вас есть "+str(GM.main.SCI.getPoints())+" очков науки"
+			upgradeDesc += "\nCost: [color="+("red" if !canBuy else "green")+"]"+str(upgradeInfo["cost"])+" очков науки[/color]"
 			if(upgradeInfo.has("drugAmount")):
 				var needDrugAmount:int = upgradeInfo["drugAmount"]
 				if(currentDrugAmount < needDrugAmount):
 					canBuy = false
-				upgradeDesc += "\nAmount of drugs unlocked: [color="+("red" if currentDrugAmount < needDrugAmount else "green")+"]"+str(needDrugAmount)+" drug"+("s" if needDrugAmount != 1 else "")+"[/color]"
+				upgradeDesc += "\nКоличество открытых наркотиков: [color="+("red" if currentDrugAmount < needDrugAmount else "green")+"]"+str(needDrugAmount)+" drug"+("s" if needDrugAmount != 1 else "")+"[/color]"
 			
 			entries[upgradeID] = {
 				name = upgradeInfo["name"],
@@ -568,7 +568,7 @@ func sayTanksVolume():
 	for fluidID in storedFluids:
 		var fluidAmount:float = storedFluids[fluidID]
 		var fluidLimit:float = GM.main.SCI.getStoredFluidLimit(fluidID)
-		var fluidName:String = "Unknown fluid"
+		var fluidName:String = "Неизвестная жидкость"
 		
 		var fluid:FluidBase = GlobalRegistry.getFluid(fluidID)
 		if(fluid != null):

@@ -14,7 +14,7 @@ func getPillName() -> String:
 	return "DemoniX"
 
 func getPillDatabaseDesc() -> String:
-	return "This drug will turn you into a half-demon. It does so by making you grow horns, a demon tail and hooves. It will also morph your existing penis into an equine variant and increase its length to roughly 20cm if it’s currently below that length.\n\nThe first stage will happen after a few minutes. Stage 2 will happen roughly after 5 hours. Stage 3 will happen after 10 hours, stage 4 will happen after 15 hours, etc. This could be accelerated by using the QuickShift drug or by letting the test subject cause [b]pain[/b] to others during sexual intercourses.\n\nThis drug doesn’t have a set amount of stages. It will reach its final stage when there is nothing left to transform."
+	return "Этот препарат превратит тебя в полудемона. Он заставит у тебя вырасти рога, демонический хвост и копыта. Также он изменит твой пенис, превратив его в лошадиный вариант, и увеличит его длину примерно до 20 см, если сейчас он короче.\n\nПервая стадия наступит через несколько минут. Вторая стадия наступит примерно через 5 часов. Третья стадия — через 10 часов, четвертая — через 15 часов и так далее. Процесс можно ускорить с помощью препарата QuickShift или если подопытный будет причинять [b]боль[/b] другим во время половых актов.\n\nУ этого препарата нет фиксированного количества стадий. Он достигнет финальной стадии, когда трансформировать будет больше нечего."
 
 func getTFCheckTags() -> Dictionary:
 	return {
@@ -44,7 +44,7 @@ func getPillOptions() -> Dictionary:
 
 func getUnlockData() -> Dictionary:
 	return {
-		eliza = "Looks like this one will give you horns, a unique tail and hoofs. I'm gonna call it.. "+getPillName()+". I think that name will fit it nicely.",
+		eliza = "Похоже, этот даст тебе рога, уникальный хвост и копыта. Назову-ка я его... "+getPillName()+"... Думаю, это название ему отлично подойдет.",
 		tryOptions = [
 			{
 				name = "Заставить Элизу сожрать это",

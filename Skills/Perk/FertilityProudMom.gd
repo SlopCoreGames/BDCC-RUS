@@ -9,8 +9,8 @@ func getVisibleName():
 
 func getVisibleDescription():
 	return "AlphaCorp заметила твои старания и хочет помочь тебе стать лучшей матерью, на которую ты только способна.\n" \
-			+ "You can now visit the nursery to get a free apple once per day.\n" \
-			+ "Chance to get into encounters with staff is lowered by 70% while you are pregnant." #base chance is 30% + exposure, this sets it to 10% + exposure 
+			+ "Теперь вы можете заходить в детскую, чтобы раз в день получить бесплатное яблоко.\n" \
+			+ "Пока вы беременны, шанс попасть в случайную встречу с персоналом снижен на 70%." #base chance is 30% + exposure, this sets it to 10% + exposure 
 
 func getSkillTier():
 	return 0

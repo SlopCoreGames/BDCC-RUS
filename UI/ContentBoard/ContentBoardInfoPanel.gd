@@ -58,7 +58,7 @@ func setEntry(_id:String):
 	if(_didStart):
 		progress_label.bbcode_text = theBoardEntry.getProgressText()
 	else:
-		progress_label.bbcode_text = "-- Find a way to start this content first! --"
+		progress_label.bbcode_text = "-- Нужно найти способ запустить этот контент первым! --"
 	
 	var theKinks:Array = theBoardEntry.getKinks()
 	kinks_panel.visible = !theKinks.empty()

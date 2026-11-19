@@ -79,7 +79,7 @@ func getSexEngineInfo(_sexEngine, _domInfo:SexDomInfo, _subInfo):
 	
 	return {
 		"name": "Рабская конфета",
-		"usedName": "a suspicious pill",
+		"usedName": "подозрительная таблетка",
 		"desc": "Навязывает покорность. Автоматически завершает любые задачи по слому воли раба. Может негативно сказаться на рассудке.",
 		"scoreOnSub": _domInfo.personalityScore({PersonalityStat.Subby:-0.2}) if didUnlockThese else 0.0,
 		"scoreOnSelf": 0.0,

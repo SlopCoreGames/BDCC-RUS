@@ -42,7 +42,7 @@ func getStraponPleasureForDom():
 	return 0.5
 
 func getCasualName():
-	return "advanced strapon"
+	return "продвинутый страпон"
 
 func getLewdStraponName() -> String:
 	var thePenis = getPenisBodypart()

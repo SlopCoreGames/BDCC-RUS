@@ -76,9 +76,9 @@ func found_client_text():
 	var haveAnyOptions:bool = false
 	
 	var ACTION_NAME_USUAL:String = "Usual"
-	var ACTION_NAME_SERVICE_DOM:String = "Service Dom"
-	var ACTION_NAME_PRICY_SLUT:String = "Pricy slut"
-	var ACTION_DESC_CLIENT_NOT_INTERESTED:String = "The client is not interested in this.."
+	var ACTION_NAME_SERVICE_DOM:String = "Доминантная услуга"
+	var ACTION_NAME_PRICY_SLUT:String = "Дорогая шлюшка"
+	var ACTION_DESC_CLIENT_NOT_INTERESTED:String = "Клиента это не интересует..."
 	if(clientRequestedAskType in ["", "usual"]):
 		if(roleCanStartSex("client")):
 			addAction("usual", ACTION_NAME_USUAL, "Позволь им трахать тебя как угодно и за относительно небольшие деньги..", "sexSub", 1.0, 60, {})
@@ -142,20 +142,20 @@ func giving_offer_text():
 		if(askType == "service"):
 			# not wearing any restraints that would prohibit being a dom
 			teaseActions.append_array([
-				"{main.You} "+main_playfully+" {main.youVerb('fiddle')} with a chain in {main.yourHis} hands.",
+				"{main.You} "+main_playfully+" {main.youVerb('fiddle')} с цепью в {main.yourHis} руках.",
 			])
 		else:
 			teaseActions.append_array([
-				"{main.You} "+main_playfully+" {main.youVerb('sway')} {main.yourHis} hips next to {client.you}.",
+				"{main.You} "+main_playfully+" {main.youVerb('sway')} {main.yourHis} бедрами рядом с {client.you}.",
 			])
 			if(getRoleChar("main").bodypartHasTrait(BodypartSlot.Tail, PartTrait.TailFlexible)):
 				teaseActions.append_array([
-					"{main.You} {main.youVerb('turn')} around and "+main_playfully+" {main.youVerb('raise')} {main.yourHis} tail for a brief moment. What a tease.",
+					"{main.You} {main.youVerb('turn')} вокруг и "+main_playfully+" {main.youVerb('raise')} {main.yourHis} хвостом на мгновение. Ну и дразнилка.",
 				])
 		if(!getRoleChar("main").isBlindfolded()):
 			teaseActions.append_array([
 				"{main.You} {main.youVerb('wink')} at {client.you}.",
-				"{main.You} {main.youVerb('give')} {client.you} a lustful gaze.",
+				"{main.You} {main.youVerb('give')} {client.you} похотливым взглядом.",
 			])
 		if(!getRoleChar("main").isGagged()):
 			teaseActions.append_array([
@@ -163,11 +163,11 @@ func giving_offer_text():
 			])
 		if(!getRoleChar("main").hasBoundArms() && !getRoleChar("main").hasBlockedHands()):
 			teaseActions.append_array([
-				"{main.You} "+main_playfully+" {main.youVerb('brush', 'brushes')} {main.yourHis} hand over {main.yourHis} "+("crotch" if(askType == "service") else "butt")+".",
+				"{main.You} "+main_playfully+" {main.youVerb('brush', 'brushes')} {main.yourHis} рукой поверх {main.yourHis} "+("crotch" if(askType == "service") else "butt")+".",
 			])
 			if(getRoleChar("main").hasNonFlatBreasts()):
 				teaseActions.append_array([
-					"{main.You} {main.youVerb('give')} {main.yourHis} breasts a slow, teasing squeeze.",
+					"{main.You} {main.youVerb('give')} груди {main.yourHis} медленным, дразнящим сжатием.",
 				])
 		if(teaseActions.size() > 0):
 			saynn(RNG.pick(teaseActions))
@@ -562,9 +562,9 @@ func getActivityIconForRole(_role:String):
 
 func getPreviewLineForRole(_role:String) -> String:
 	if(_role == "main"):
-		return "{main.name} is whoring {main.himself} out.."
+		return "{main.name} воркует с {main.himself}.."
 	if(_role == "client"):
-		return "{client.name} is being {main.name}'s client."
+		return "{client.name} выступает клиентом у {main.name}."
 	return .getPreviewLineForRole(_role)
 
 func saveData():

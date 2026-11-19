@@ -26,7 +26,7 @@ func start():
 			continue
 		var theChance:float = 100.0 if pickedSexLimits.size() == 1 else NpcOwnerSexLimits.getAgreeChance(theLimitID, theOwner)
 		var theLimitEntry:Dictionary = NpcOwnerSexLimits.LIMITS[theLimitID]
-		theList.append(theLimitEntry["name"]+": "+theLimitEntry["desc"]+" (Agree chance: "+str(Util.roundF(theChance, 1))+"%)")
+		theList.append(theLimitEntry["name"]+": "+theLimitEntry["desc"]+" (Шанс согласия: "+str(Util.roundF(theChance, 1))+"%)")
 	saynn(Util.join(theList, "\n"))
 	
 	addButton("CONFIRM", "Подтвердить список ограничений", "confirm")

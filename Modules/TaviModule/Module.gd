@@ -371,7 +371,7 @@ func advanceSkill(skillID, maxLevel = 7):
 		return false
 	
 	if(getFlag("TaviModule."+str(skillID), 0) < maxLevel):
-		increaseFlag("TaviModule."+str(skillID), 1)
+		increaseFlag("Модуль Тави"+str(skillID), 1)
 	return true
 
 func getSkillScoreText(skillID):

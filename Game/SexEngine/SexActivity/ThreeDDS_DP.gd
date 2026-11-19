@@ -163,7 +163,7 @@ func sex_processTurn():
 	stimulateSex(DOM_0, SUB_0, getDom0Hole(), I_NORMAL)
 	stimulateSex(DOM_1, SUB_0, getDom1Hole(), I_NORMAL)
 	
-	doProcessFuck(DOM_0, SUB_0, getDom0Hole(), " in a double-penetration position")
+	doProcessFuck(DOM_0, SUB_0, getDom0Hole(), " в позе для двойного проникновения")
 	doProcessFuck(DOM_1, SUB_0, getDom1Hole())
 	
 	if(RNG.chance(30) && isCloseToCumming(DOM_0) && isCloseToCumming(DOM_1)):
@@ -199,7 +199,7 @@ func getActions(_indx:int):
 			var poseName = "error"
 			if(PoseToName.has(pose)):
 				poseName = PoseToName[pose]
-			addAction("switchpose", 0.0, poseName, "Сменить позу", {A_CATEGORY: ["Switch pose"], A_ARGS: [pose]})
+			addAction("switchpose", 0.0, poseName, "Сменить позу", {A_CATEGORY: ["Сменить позу"], A_ARGS: [pose]})
 		
 		if(state == ""):
 			addAction("rub", 1.0 if !isReadyToPenetrate(_indx) else 0.4, "Тереть", "Потри свой член об них", {A_PRIORITY: 4})

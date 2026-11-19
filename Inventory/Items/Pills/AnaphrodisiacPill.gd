@@ -15,7 +15,7 @@ func canUseInCombat():
 func useInCombat(_attacker, _receiver):
 	removeXOrDestroy(1)
 	_attacker.addLust(-_attacker.getLust())
-	return _attacker.getName() + " took the pill"
+	return _attacker.getName() + " принял таблетку"
 
 func getPossibleActions():
 	return [
@@ -70,7 +70,7 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	
 	return {
 		"name": "Анафродизиак",
-		"usedName": "an anaphrodisiac pill",
+		"usedName": "анафродизиак",
 		"desc": "Убивает либидо. Используй, если хочешь испортить им весь секс.",
 		"scoreOnSub": 0.0,
 		"scoreOnSelf": 0.0,

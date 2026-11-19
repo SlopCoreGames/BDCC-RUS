@@ -10,7 +10,7 @@ func getName() -> String:
 	return "Обычное представление"
 
 func getButtonDesc() -> String:
-	return "Start the auction while acting normally.\n\nThis action will reveal 3 random preferences of each bidder."
+	return "Начать аукцион, ведя себя как обычно.\n\nЭто действие раскроет 3 случайных предпочтения каждого участника торгов."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	saynn("Занавес раздвигается, открывая взору {presenter.name}, стоящую на небольшом возвышении.")

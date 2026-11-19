@@ -681,10 +681,10 @@ func _run():
 
 		if (false):
 			addButton("Неверно", "Игнорировать", "pickWrongAns")
-		addWrongAnswer("Red", "Red?")
+		addWrongAnswer("Red", "Рыжая?")
 		addButton("Розовый", "Скажите это", "say2_pink")
-		addWrongAnswer("Blonde", "Blonde?")
-		addWrongAnswer("Ginger", "Ginger?")
+		addWrongAnswer("Blonde", "Блондинка?")
+		addWrongAnswer("Ginger", "Рыженькая?")
 	if(state == "say2_pink"):
 		addCharacter("eliza")
 		playAnimation(StageScene.PawJobUnderTable, "start", {pc="pc", npc="eliza"})
@@ -696,9 +696,9 @@ func _run():
 
 		saynn("[say=eliza]И что же написано на моей личной кружке?[/say]")
 
-		addWrongAnswer("Nerd cat", "Nerd cat?")
-		addWrongAnswer("Coffee is life", "Coffee is life?")
-		addWrongAnswer("Life juice", "Life juice?")
+		addWrongAnswer("Задротка-кошка", "Задротка-кошка?")
+		addWrongAnswer("Кофе — это жизнь", "Кофе — это жизнь?")
+		addWrongAnswer("Эликсир жизни", "Эликсир жизни?")
 		addButton("Лучшей маме", "Скажите это", "say3_bestmom")
 	if(state == "say3_bestmom"):
 		saynn("[say=pc]Там написано... «Лучшей маме».[/say]")
@@ -716,9 +716,9 @@ func _run():
 		saynn("Ох, блядь.")
 
 		addButton("Скарлет", "Скажите это", "say4_scarlet")
-		addWrongAnswer("Selene", "Selene?")
-		addWrongAnswer("Sharlene", "Sharlene?")
-		addWrongAnswer("Carlotta", "Carlotta?")
+		addWrongAnswer("Selene", "Селена?")
+		addWrongAnswer("Sharlene", "Шарлин?")
+		addWrongAnswer("Carlotta", "Карлотта?")
 	if(state == "say4_scarlet"):
 		saynn("[say=pc]Скарлет... кажется...[/say]")
 
@@ -1067,17 +1067,17 @@ func _react(_action: String, _args):
 		return
 
 	if(_action == "say1_elina"):
-		theAns = "Elina?"
+		theAns = "Элина?"
 		setState("c_failed")
 		return
 
 	if(_action == "say1_elisa"):
-		theAns = "Elisa?"
+		theAns = "Элиза?"
 		setState("c_failed")
 		return
 
 	if(_action == "say1_elisha"):
-		theAns = "Elisha?"
+		theAns = "Элиша?"
 		setState("c_failed")
 		return
 

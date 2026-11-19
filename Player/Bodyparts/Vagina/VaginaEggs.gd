@@ -14,10 +14,10 @@ func shouldOvulateWithBigEggs() -> bool:
 	return true
 
 func getCharacterCreatorName():
-	return "Vagina (lays eggs)"
+	return "Вагина (откладывает яйца)"
 
 func getCharacterCreatorDesc():
-	return "A vagina that will lay eggs instead of doing live birth"
+	return "Вагина, которая откладывает яйца вместо живорождения"
 
 func getTraits():
 	return {
@@ -25,7 +25,7 @@ func getTraits():
 	}
 
 func getTransformGrowMessage(_context:Dictionary) -> String:
-	return .getTransformGrowMessage(_context)+" This one is special too.. in some way.."
+	return .getTransformGrowMessage(_context)+" Этот тоже особенный... в каком-то смысле..."
 
 func getTransformMorphMessage(_context:Dictionary) -> String:
-	return .getTransformMorphMessage(_context)+" This one is special too.. in some way.."
+	return .getTransformMorphMessage(_context)+" Этот тоже особенный... в каком-то смысле..."

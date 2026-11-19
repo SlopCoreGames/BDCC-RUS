@@ -231,7 +231,7 @@ func simpleTrick():
 	saynn("Похоже, {npc.name} хочет, чтобы ты что-то сделал(а)...")
 	
 	var possible:Array = [
-		["Bark", "bark"], ["Lie down", "down"], ["Sit", "sit"], ["Raise paw", "paw"], ["Roll", "roll"],
+		["Bark", "bark"], ["Лежать", "down"], ["Sit", "sit"], ["Поднять лапу", "paw"], ["Roll", "roll"],
 	]
 	possible.shuffle()
 	for buttonEntry in possible:
@@ -276,58 +276,58 @@ func trickToTrickName(_trick:String) -> String:
 	if(_trick == "bark"):
 		return "bark"
 	if(_trick == "down"):
-		return "lie down"
+		return "лечь"
 	if(_trick == "sit"):
 		return "sit"
 	if(_trick == "paw"):
-		return "give paw"
+		return "дать лапу"
 	if(_trick == "roll"):
-		return "roll over"
-	return "ERROR?"
+		return "перевернуться"
+	return "ОШИБКА?"
 
 func trickToText(theTrick:String) -> String:
 	if(theTrick == "bark"):
-		return "You bark a few times loudly!"
+		return "Ты громко гавкаешь несколько раз!"
 	elif(theTrick == "down"):
-		return "You lie down on the cold ground and wait for an acknowledgement."
+		return "Ты ложишься на холодную землю и ждешь внимания."
 	elif(theTrick == "sit"):
-		return "You push your front paws off of the ground and sit your butt down."
+		return "Ты отталкиваешься передними лапами от земли и садишься на зад."
 	elif(theTrick == "paw"):
-		return "You raise your paw and wait for your owner to shake it."
+		return "Ты поднимаешь лапу и ждешь, когда хозяин ее пожмет."
 	elif(theTrick == "roll"):
-		return "You flop sideways onto the floor and then roll to your other side as best as you can."
-	return "ERROR?"
+		return "Ты плюхаешься на бок, а затем изо всех сил стараешься перевернуться на другой бок."
+	return "ОШИБКА?"
 	
 func trickResultToText(theTrick:String, _isCorrect:bool) -> String:
 	if(theTrick == "bark"):
 		if(_isCorrect):
-			return "Your owner smiles and pats you."
+			return "Твой хозяин улыбается и гладит тебя."
 		else:
-			return "Your owner crosses {npc.his} arms and furrows {npc.his} brows."
+			return "Твой хозяин скрещивает {npc.his} руки на груди и хмурит {npc.his} брови."
 	elif(theTrick == "down"):
 		if(_isCorrect):
-			return "Your owner nods and gestures for you to get up."
+			return "Твой хозяин кивает и жестом велит тебе подняться."
 		else:
-			return "Your owner shakes {npc.his} head."
+			return "Твой хозяин качает {npc.his} головой."
 	elif(theTrick == "sit"):
 		if(_isCorrect):
-			return "Your owner admires your agility."
+			return "Твой хозяин восхищается твоей ловкостью."
 		else:
-			return "Your owner shakes {npc.his} head."
+			return "Твой хозяин качает {npc.his} головой."
 	elif(theTrick == "paw"):
 		if(_isCorrect):
-			return "Your owner smiles and shakes your paw!"
+			return "Твой хозяин улыбается и жмет тебе лапу!"
 		else:
-			return "Your owner refuses to shake your paw."
+			return "Твой хозяин отказывается жать тебе лапу."
 	elif(theTrick == "roll"):
 		if(_isCorrect):
-			return "Your owner nods and gives your back a stroke."
+			return "Твой хозяин кивает и гладит тебя по спине."
 		else:
-			return "Your owner sighs and flicks your snout."
+			return "Твой хозяин вздыхает и щелкает тебя по носу."
 	if(_isCorrect):
-		return "Your owner nods."
+		return "Твой хозяин кивает."
 	else:
-		return "Your owner shakes {npc.his} head."
+		return "Твой хозяин качает {npc.his} головой."
 	
 func simpleTrickCorrect():
 	playTrickAnim(pcPickedTrick)
@@ -374,7 +374,7 @@ func simonsSaysTricksDo():
 		saynn(trickResultToText(pcPickedTrick, true))
 	
 	var possible:Array = [
-		["Bark", "bark"], ["Lie down", "down"], ["Sit", "sit"], ["Raise paw", "paw"], ["Roll", "roll"],
+		["Bark", "bark"], ["Лежать", "down"], ["Sit", "sit"], ["Поднять лапу", "paw"], ["Roll", "roll"],
 	]
 	for buttonEntry in possible:
 		addButton(buttonEntry[0], "Сделай это!", "doTrick", [buttonEntry[1]])

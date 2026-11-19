@@ -17,7 +17,7 @@ func shouldShow(_lustState: LustCombatState, _args):
 func canDo(_lustState: LustCombatState, _args):
 	var pc: Player = _lustState.getCharacter()
 	if(pc.getStamina() <= 0):
-		return [false, "You don't have enough stamina to do this"]
+		return [false, "Тебе не хватает выносливости, чтобы это сделать"]
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):

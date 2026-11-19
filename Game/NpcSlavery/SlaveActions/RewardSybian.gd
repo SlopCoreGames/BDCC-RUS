@@ -19,7 +19,7 @@ func getVisibleDesc():
 
 func checkCanDo(_slaveID, _extraSlavesIDs = {}):
 	if(!getFlag("NpcSlaveryModule.hasSybian", false)):
-		return [false, "You need to install a sybian in your cell first"]
+		return [false, "Сначала тебе нужно установить сибиан в своей камере"]
 	
 	return [true]
 

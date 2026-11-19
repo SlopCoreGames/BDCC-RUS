@@ -6,7 +6,7 @@ func _init():
 func onStart(_args:Array):
 	setState("start")
 	
-	if(checkProtect("You were about to be punished by your owner..")):
+	if(checkProtect("Твой хозяин уже собирался тебя наказать...")):
 		return
 	
 	var theNpcOwner := getNpcOwner()

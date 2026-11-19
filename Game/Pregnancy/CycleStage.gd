@@ -12,11 +12,11 @@ static func getVisibleName(state):
 	if(state == Menstruation):
 		return "Menstruation"
 	if(state == FollicularPhase):
-		return "Follicular phase"
+		return "Фолликулярная фаза"
 	if(state == Ovulation):
 		return "Ovulation"
 	if(state == LutealPhase):
-		return "Luteal Phase"
+		return "Лютеиновая фаза"
 	
 	return "error"
 
@@ -24,10 +24,10 @@ static func getVisibleActionName(state):
 	if(state == Menstruation):
 		return "Menstruating"
 	if(state == FollicularPhase):
-		return "Follicular phase"
+		return "Фолликулярная фаза"
 	if(state == Ovulation):
 		return "Ovulating"
 	if(state == LutealPhase):
-		return "Luteal Phase"
+		return "Лютеиновая фаза"
 	
 	return "error"

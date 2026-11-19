@@ -7,7 +7,7 @@ func getName() -> String:
 	return "Продолжить"
 
 func getButtonDesc() -> String:
-	return "See what happens next.."
+	return "Смотри, что будет дальше..."
 
 func getActionType():
 	return AuctionActionType.Continue

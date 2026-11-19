@@ -8,7 +8,7 @@ func getVisibleName():
 
 func getMessyDescription(_pc, _amount):
 	if(_amount >= 500.0):
-		return "You're drenched in girlcum, so lewd!"
+		return "Ты вся пропиталась девичьей спермой, как же это похотливо!"
 	
 	return null
 
@@ -35,7 +35,7 @@ func onSwallow(_pc, _amount):
 	
 	if(toHeal > 0):
 		_pc.addPain(-toHeal)
-		return "Drinking girlcum relieved "+_pc.getName()+" of "+DamageType.getDamageColoredString(DamageType.Physical, toHeal)+"."
+		return "Глотать девичью сперму — это облегчение "+_pc.getName()+" of "+DamageType.getDamageColoredString(DamageType.Physical, toHeal)+"."
 	
 	return null
 

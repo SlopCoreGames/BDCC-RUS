@@ -43,11 +43,11 @@ func getStartActions(_sexEngine: SexEngine, _domInfo: SexDomInfo, _subInfo: SexS
 		var randomZoneName:String = BodyWritingsZone.getZoneVisibleName(randomZoneForWriting)
 		
 		addStartAction([writingID, randomZoneForWriting, false], writingText, "Написать '"+writingText+"' на теле подчиненной "+randomZoneName, 0.0, {
-			A_CATEGORY: ["Humiliate", "Draw on body"],
+			A_CATEGORY: ["Humiliate", "Рисовать на теле"],
 		})
 		if(permanentMarkerAmount > 0):
 			addStartAction([writingID, randomZoneForWriting, true], writingText, "(У тебя есть "+str(permanentMarkerAmount)+" перманентный маркер)"+("s" if permanentMarkerAmount != 1 else "")+")\n"+"Написать '"+writingText+"' на теле подчиненной "+randomZoneName, 0.0, {
-				A_CATEGORY: ["Humiliate", "Draw (Permanent marker)"],
+				A_CATEGORY: ["Humiliate", "Рисовать (Перманентным маркером)"],
 			})
 	
 func getTags(_indx:int) -> Array:

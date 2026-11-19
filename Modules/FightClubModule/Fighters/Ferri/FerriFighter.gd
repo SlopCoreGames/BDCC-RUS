@@ -7,13 +7,13 @@ func getVisibleName():
 	return "Ферри"
 
 func getNameAndNickname():
-	return "Ferri, The Brat"
+	return "Ферри, Девчонка-задира"
 
 func getAvyIntroduction():
-	return "Your next opponent is a feline-dragon hybrid named Ferri. She is a red, probably murdered someone for cash, they all get caught like that. I heard that she likes to use her fangs a lot. Dunno, to me she seems all bark and no bite."
+	return "Твой следующий противник — гибрид кошки и дракона по имени Ферри. Рыжая, и, скорее всего, кого-то прирезала ради наживы — их всех так ловят. Слышал, она любит пускать в ход свои клыки. Хрен знает, по мне так она просто много лает, а кусается слабо."
 	
 func getAnnouncerIntroduction():
-	return "And in the right corner we have Ferri, a mix between agile kitties and powerful dragons! She is a ferocious warrior that won quite a few fights! She would win more but the staff are constantly muzzling her."
+	return "А в правом углу у нас Ферри — помесь ловкой кошечки и могучего дракона! Она свирепая воительница, одержавшая немало побед! Она бы и дальше разносила всех в щепки, если бы персонал постоянно не нацеплял на неё намордник!"
 	
 func getRank():
 	return FightClubRank.FailedHero

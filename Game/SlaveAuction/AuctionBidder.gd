@@ -258,7 +258,7 @@ func getBidderInfo() -> Array:
 			if(theTrait != null):
 				knownDislikes.append("[color=#"+getTraitColor(traitID).to_html(false)+"]"+theTrait.getName(traitID)+"[/color]")
 	
-	resultAr.append(name+". "+ "Desire to bid: " + str(Util.roundF(getFinalDesire()*100.0, 1))+"% "+"Current bid: " + ("[color=#FFD677][b]" if hasWinningBid else "") + str(currentBid)+" credits"+("[/b][/color]" if hasWinningBid else ""))
+	resultAr.append(name+". "+ "Желание сделать ставку: " + str(Util.roundF(getFinalDesire()*100.0, 1))+"% "+"Текущая ставка: " + ("[color=#FFD677][b]" if hasWinningBid else "") + str(currentBid)+" credits"+("[/b][/color]" if hasWinningBid else ""))
 	if(likes.empty()):
 		resultAr.append("- Prefers: Nothing")
 	else:
@@ -323,15 +323,15 @@ func getTraitColor(_traitID:String) -> Color:
 
 func getOutbidReaction():
 	var possible:Array = [
-		"Fuck off.",
-		"Fuck you.",
-		"{slave.She} {slave.isAre} mine.",
-		"Give {slave.him} to me.",
-		'Back off, {slave.he} {slave.isAre} mine.',
-		'I’ll outbid you all for {slave.him}.',
-		'No one else deserves {slave.him}.',
-		'{slave.HeShe} belongs to me now.',
-		'Keep trying, but I’m winning this.',
+		"Отъебись.",
+		"Пошёл ты нахуй.",
+		"{slave.She} принадлежит мне.",
+		"Отдай {slave.him} мне.",
+		'Отойди, это моя добыча.',
+		'Я перебью ставки каждого из вас за {slave.him}.',
+		'Никто другой не достоин {slave.him}.',
+		'{slave.HeShe} теперь принадлежит мне.',
+		'Продолжайте попытки, но победа будет за мной.',
 	]
 	
 	var auction = getAuction()

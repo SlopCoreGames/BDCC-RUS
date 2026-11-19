@@ -36,10 +36,10 @@ func onSexEvent(_npc, _event:SexEvent):
 	return false
 
 func getTaskString():
-	return "Received creampies: "+getProgressString()
+	return "Получено кремпи: "+getProgressString()
 
 func getTaskHint(_isSlaveLevelup):
-	return "Cum inside their pussy or ass. If you don't have a penis, you can use a loaded strapon! Worst case, just spit cum into it."
+	return "Кончай им в киску или в задницу. Если у тебя нет члена, используй заряженный страпон! В крайнем случае, просто плюнь туда спермой."
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [

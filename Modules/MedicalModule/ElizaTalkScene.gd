@@ -527,7 +527,7 @@ func sayTanksVolume():
 	for fluidID in storedFluids:
 		var fluidAmount:float = storedFluids[fluidID]
 		var fluidLimit:float = GM.main.SCI.getStoredFluidLimit(fluidID)
-		var fluidName:String = "Unknown fluid"
+		var fluidName:String = "Неизвестная жидкость"
 		
 		var fluid:FluidBase = GlobalRegistry.getFluid(fluidID)
 		if(fluid != null):

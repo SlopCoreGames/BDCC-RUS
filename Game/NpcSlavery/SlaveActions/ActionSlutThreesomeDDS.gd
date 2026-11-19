@@ -38,6 +38,6 @@ func fitsAsExtraSlaveAdvanced(_role, _charID):
 		var npcSlave:NpcSlave = getSlave(_charID)
 		var theChar:BaseCharacter = npcSlave.getChar()
 		if(theChar.hasBoundArms() || theChar.hasBlockedHands() || theChar.isGagged() || theChar.hasBoundLegs()):
-			return [false, "Dominant has restraints on that prevent being able to do this"]
+			return [false, "У Доминанта надеты фиксаторы, которые не позволяют это сделать"]
 
 	return .fitsAsExtraSlaveAdvanced(_role, _charID)

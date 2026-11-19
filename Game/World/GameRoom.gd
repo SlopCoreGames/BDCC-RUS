@@ -172,7 +172,7 @@ func _getDescription() -> String:
 
 func getBlindDescription() -> String:
 	if(blindRoomDescription == ""):
-		return "You don't understand where you are"
+		return "Ты даже не представляешь, где находишься"
 	else:
 		return blindRoomDescription
 

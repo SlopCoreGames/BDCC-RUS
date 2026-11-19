@@ -157,7 +157,7 @@ func _run():
 		if(!BodypartSlot.isEssential(pickingBodypartType)):
 			var bodypartIsMissing:bool = (playerBodypart == null)
 			var nothingBodypartName:String = "[Nothing]" if(bodypartIsMissing) else "Nothing"
-			var nothingBodypartDesc:String = "This is the currently selected option" if(bodypartIsMissing) else "Remove the bodypart.\n\nNOTE: This resets the colors and skin of the bodypart."
+			var nothingBodypartDesc:String = "Это текущий выбранный вариант" if(bodypartIsMissing) else "Удалить часть тела.\n\nПРИМЕЧАНИЕ: Это сбросит цвет и текстуру кожи данной части тела."
 			addButton(nothingBodypartName, nothingBodypartDesc, "removebodypart", [pickingBodypartType])
 			
 		var allbodypartsIDs = GlobalRegistry.getBodypartsIdsBySlot(pickingBodypartType)

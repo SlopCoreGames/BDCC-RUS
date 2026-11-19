@@ -7,13 +7,13 @@ func getVisibleName():
 	return "Джек"
 
 func getNameAndNickname():
-	return "Jack, The Stud"
+	return "Джек, Самец"
 
 func getAvyIntroduction():
-	return "Your next opponent is Jack. He is strong, probably stronger than me. If we’re talking raw strength, of course. I will still beat his ass any day of the week, the gallons of cum in his balls fog up his mind too much."
+	return "Твой следующий противник — Джек. Он силен, вероятно, даже сильнее меня. Если мы говорим о чистой физической мощи, конечно. Но я всё равно надеру ему задницу в любой день недели — эти галлоны спермы в его яйцах слишком сильно туманят ему разум."
 	
 func getAnnouncerIntroduction():
-	return "And in the right corner we have Jack, the Stud! Ladies love him, some guys fear him. Unmatched strength and incredible virility, welcome the true stallion!"
+	return "А в правом углу у нас Джек, Самец! Дамы обожают его, а некоторые парни его боятся. Несравненная сила и невероятная плодовитость — встречайте истинного жеребца!"
 	
 func getRank():
 	return FightClubRank.AttentionWhore

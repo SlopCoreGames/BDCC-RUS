@@ -18,11 +18,11 @@ func getPillName() -> String:
 
 func getUnlockData() -> Dictionary:
 	return {
-		eliza = "Fascinating! This pill appears to contain a blend of growth factors and vasodilators that could promote penile lengthening. When ingested, it will probably lead to a noticeable increase in size. I think I’ll call it.. 'SuperShaft.' If you want my advice.. A big cock sounds nice.. but at some point it hurts more than it pleases.",
+		eliza = "Поразительно! Похоже, эта таблетка содержит смесь факторов роста и вазодилататоров, которые могут способствовать удлинению пениса. При приеме она, вероятно, приведет к заметному увеличению размера. Думаю, я назову её... «Супер-Шланг». Если хочешь моего совета... огромный член — это, конечно, здорово... но в какой-то момент он начинает скорее приносить боль, чем удовольствие.",
 	}
 	
 func getPillDatabaseDesc() -> String:
-	return "This drug will increase the length of your penis. It does so gradually until the maximum number of stages has been reached.\n\nThe first stage will happen after a few minutes. After that, the next ones will happen roughly every 5 hours. This could be accelerated by using the QuickShift drug or by making the test subject [b]orgasm[/b].\n\nThis drug has a maximum amount of 3 stages by default. It’s possible to use advanced lab equipment to override this behaviour and set a target penis length. Then this drug won’t have a fixed amount of stages, increasing the penis length until the target has been reached."
+	return "Этот препарат увеличит длину твоего пениса. Это происходит постепенно, пока не будет достигнуто максимальное количество стадий.\n\nПервая стадия наступит через несколько минут. После этого последующие будут происходить примерно каждые 5 часов. Этот процесс можно ускорить с помощью препарата QuickShift или заставив подопытного [b]оргазмировать[/b].\n\nПо умолчанию этот препарат имеет максимум 3 стадии. С помощью продвинутого лабораторного оборудования можно изменить этот алгоритм и задать целевую длину пениса. В таком случае количество стадий не будет фиксированным, и препарат будет увеличивать длину, пока не будет достигнут нужный результат."
 
 func getTFCheckTags() -> Dictionary:
 	return {

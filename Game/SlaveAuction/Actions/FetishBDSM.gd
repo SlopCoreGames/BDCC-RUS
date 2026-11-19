@@ -4,7 +4,7 @@ func _init():
 	id = "FetishBDSM"
 
 func getButtonDesc() -> String:
-	return "Tell the bidders about the slave's love of being bound in ropes and cuffs.\n\n[b]Might[/b] reveal 1 personality preference of each bidder."
+	return "Расскажите участникам аукциона о том, как рабыня любит быть связанной веревками и наручниками.\n\n[b]Возможно[/b] раскроет по одной черте характера каждого участника."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
@@ -20,12 +20,12 @@ func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 
 func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
-		'A slave who knows {slave.his} place in cuffs? Nice.',
-		'I can already imagine {slave.him} tied up in my playroom.',
-		'Perfect, I’ve been looking for someone who craves restraint like that. Consider me interested!',
-		'I love slaves who can take the bindings!',
-		'I could use a restraint slut.',
-		'Restraints and slaves go together like cats and tuna.',
+		'Рабыня, которая знает свое {slave.his} место в кандалах? Приятно.',
+		'Уже представляю, как {slave.him} будет связана в моей игровой комнате.',
+		'Идеально, я как раз искал кого-то, кто так жаждет ограничений. Я заинтригован!',
+		'Обожаю рабынь, которые умеют терпеть путы!',
+		'Мне бы не помешала шлюшка для ограничений.',
+		'Ограничения и рабыни — это как кошки и тунец, идеальное сочетание.',
 	])
 
 func getTraits() -> Dictionary:

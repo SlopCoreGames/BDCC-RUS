@@ -36,13 +36,13 @@ func onSexEvent(_npc, _event:SexEvent):
 	return false
 
 func getTaskString():
-	return "Fuck through ring-gag"
+	return "Трахаться через кольцо-кляп"
 
 func getTaskStringSlutLock():
-	return "Get face-fucked through ring-gag"
+	return "Получать еблю в рот через кольцо-кляп"
 
 func getTaskHint(_isSlaveLevelup):
-	return "Put a ring-gag into their mouth and use your penis or strapon to fuck their throat"
+	return "Засунуть им в рот кольцо-кляп и трахать их в глотку своим членом или страпоном"
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [

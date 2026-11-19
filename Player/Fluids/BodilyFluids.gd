@@ -32,14 +32,14 @@ static func getOutsideMessinessMessage(messLevel, fluids: Array):
 		humanReadableString = "nothing"
 		
 	if(messLevel <= MessinessLevel.Clean):
-		return "You're completely clean"
+		return "Ты абсолютно чист(а)"
 	if(messLevel == MessinessLevel.SlightlyMessy):
-		return "You are covered with "+humanReadableString
+		return "Ты весь/вся покрыт(а) "+humanReadableString
 	if(messLevel == MessinessLevel.Messy):
-		return "Some parts of your body and face are covered with "+humanReadableString+", you're such a wet mess"
+		return "Некоторые части твоего тела и лица покрыты "+humanReadableString+", ну ты и мокрое недоразумение"
 	if(messLevel == MessinessLevel.VeryMessy):
-		return "Almost your whole body and face are covered with "+humanReadableString+". Hair, ears, arms, legs, everything, you're a complete mess"
+		return "Почти всё твоё тело и лицо покрыты "+humanReadableString+". Волосы, уши, руки, ноги — всё в этом, ты просто ходячая катастрофа"
 	if(messLevel == MessinessLevel.CumRag):
-		return "There is no empty spot, you are coated with " + humanReadableString+". It's all dripping from you while you walk!"
+		return "Свободного места нет, ты весь/вся залеплен(а) " + humanReadableString+". Всё это так и стекает с тебя при каждом шаге!"
 	if(messLevel >= MessinessLevel.CumDump):
-		return "Your body is covered with multiple levels of "+ humanReadableString+", little strings hang from your ears and chin, the hair is completely soaked. You can taste it all as the fluids drip down your face and lips and into your mouth"
+		return "Твоё тело покрыто слоями "+ humanReadableString+", тонкие струйки свисают с ушей и подбородка, волосы насквозь промокли. Ты чувствуешь вкус жидкости, когда она стекает по лицу, губам и прямо в рот"

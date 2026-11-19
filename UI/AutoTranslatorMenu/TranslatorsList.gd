@@ -2,7 +2,7 @@ extends VBoxContainer
 
 onready var translatorList = $ScrollContainer/TranslatorList
 
-export var labelText = "Some text"
+export var labelText = "Некоторый текст"
 export var smallContainer = true
 
 signal onUpPressed(id)

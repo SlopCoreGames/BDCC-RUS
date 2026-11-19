@@ -80,7 +80,7 @@ func shouldBeRemoved():
 	return tightness <= 0
 
 func getRemoveMessage():
-	return getItem().getVisibleName()+" slips off!"
+	return getItem().getVisibleName()+" соскальзывает!"
 
 func shouldStruggle() -> bool:
 	return !aiWontResist

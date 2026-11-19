@@ -48,10 +48,10 @@ func onSexEvent(_npc, _event:SexEvent):
 	return false
 
 func getTaskString():
-	return "Swallow cum: "+str(Util.roundF(currentAmount, 1))+"/"+str(Util.roundF(needAmount, 1))+"ml"
+	return "Глотать сперму: "+str(Util.roundF(currentAmount, 1))+"/"+str(Util.roundF(needAmount, 1))+"ml"
 
 func getTaskHint(_isSlaveLevelup):
-	return "Force them to swallow this much fluids."
+	return "Заставить их проглотить столько жидкости."
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [

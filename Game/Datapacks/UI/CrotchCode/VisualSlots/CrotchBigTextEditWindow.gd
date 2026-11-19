@@ -7,7 +7,7 @@ onready var tag_fast_picker = $MarginContainer/VBoxContainer/HBoxContainer2/TagF
 onready var color_picker_button = $MarginContainer/VBoxContainer/HBoxContainer2/PanelContainer/HBoxContainer/ColorPickerButton
 
 const tags = [
-	"Add tag..",
+	"Добавить тег..",
 	"{pc.name}",
 	"{pc.heShe}",
 	"{pc.hisHer}",

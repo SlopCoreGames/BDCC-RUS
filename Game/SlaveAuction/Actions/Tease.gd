@@ -10,7 +10,7 @@ func getName() -> String:
 	return "Дразнить участников аукциона"
 
 func getButtonDesc() -> String:
-	return "Tease the bidders and see their reactions.\n\nRepetable action. [b]Will[/b] reveal 1 random preference of each bidder that is always relevant to the slave."
+	return "Дразните участников аукциона и наблюдайте за их реакцией.\n\nПовторяющееся действие. [b]Раскроет[/b] по одному случайному предпочтению каждого участника, которые всегда актуальны для рабыни."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	saynn(RNG.pick([

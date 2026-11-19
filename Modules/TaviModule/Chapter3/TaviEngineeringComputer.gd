@@ -9,10 +9,10 @@ func _init():
 	addFileToServer(locals,newCompFile("forum.html","...**[corrupt]повреждённые данные[/corrupt]**...\n\n<message>Какого хуя мы юзаем такое устаревшее железо?</message>\n<message>Работает — не трогай. Это кусок говна, но ты же не собираешься запускать на нём Doom, эта машина поддерживает telnet, и этого нам за глаза.</message>\n<message>Что ещё за telnet?</message>\n<message>То, чем мы пользовались ещё до открытия блюспейса. Просто прочитай уже этот ебаный readme.</message>\n\n...**[corrupt]ещё больше повреждённых данных[/corrupt]**...","",false,2))
 	
 	# door server
-	var doors = NetworkedComputerServer.new("127.0.10",["mode","disconnect","help"],"Door status: LOCKED\nLast maintenance: [cuss]9999999[/cuss] days ago",false)
+	var doors = NetworkedComputerServer.new("127.0.10",["mode","disconnect","help"],"Статус двери: ЗАБЛОКИРОВАНА\nПоследнее обслуживание: [cuss]9999999[/cuss] дн. назад",false)
 	
 	# horny server
-	var hornys = NetworkedComputerServer.new("127.0.69",["disconnect"],"Welcome to horny bread's secret lair. We have a strict NO PANTS policy. Please enjoy yourself!\nTo see what commands this server supports type 'help'",true)
+	var hornys = NetworkedComputerServer.new("127.0.69",["disconnect"],"Добро пожаловать в секретное логово horny bread. У нас действует строгий запрет на штаны. Пожалуйста, наслаждайтесь!\nЧтобы увидеть список доступных команд сервера, введите 'help'",true)
 	addFileToServer(hornys,newCompFile("porn.png",Util.readFile("res://Images/asciiporn/taviquest/porn.txt"),"res://Fonts/smallconsolefont.tres",true,1))
 	addFileToServer(hornys,newCompFile("sex.png",Util.readFile("res://Images/asciiporn/taviquest/sex.txt"),"res://Fonts/smallconsolefont.tres",true,2))
 	addFileToServer(hornys,newCompFile("mouwse.png",Util.readFile("res://Images/asciiporn/taviquest/mouwse.txt"),"res://Fonts/smallconsolefont.tres",true,3))
@@ -25,31 +25,31 @@ func _init():
 		}
 	
 	# set local cmds
-	localCmds["mode"] = "Changes the operation mode of the door.\n'mode 0' is normal operation\n'mode 9' is maintenance mode"
+	localCmds["mode"] = "Изменяет режим работы двери.\n'mode 0' — обычный режим\n'mode 9' — режим обслуживания"
 
 func localCmd_mode(_args:Array=[]): # prefix necessary when setting custom cmds for react func
 	if(_args.size() == 1):
 		var modeStr = _args[0]
 		if(modeStr == "0"):
-			return "The door is already operating in this mode"
+			return "Дверь уже работает в этом режиме"
 		elif(modeStr == "9"):
 			markFinished()
-			return "Switching the door to the maintenance mode! Warning, anyone will be able to open it. Switch back to mode 0 when done."
-		return "Error, unsupported mode. Type 'help mode' for more information"
+			return "Переключение двери в режим обслуживания! Внимание: теперь её сможет открыть кто угодно. По завершении верните режим на 0."
+		return "Ошибка: неподдерживаемый режим. Введите 'help mode' для подробностей"
 	
-	return "'mode' command expects 1 argument. Type 'help mode' for more information"
+	return "Команда 'mode' ожидает 1 аргумент. Введите 'help mode' для подробностей"
 
 var tutorialData = [
-	["*", "This minigame simulates a simple console. If you ever used cmd or bash, you will feel right at home. Otherwise, just follow this tutorial.", "type anything"],
-	["help", "Start by getting the list of commands.", "Select 'help' and then press Send"],
-	["help ls", "You learned new commands. Use the help command to figure out the 'ls' command", "Select 'help', then select 'ls' and then press Send"],
-	["ls", "Now try to execute this command", "Select 'ls' and press Send"],
-	["help cat", "Now try to figure out how to use the cat command", "Select 'help', then select 'cat' and press Send"],
-	["cat 1", "Use the cat command to output the contents of the first file", "Select 'cat', then switch to the numpad and select '1' before pressing Send"],
-	["connect 127.0.10", "Try to connect to the door that leads to the bluespace transmitter", "Select 'connect', then switch to the numpad and use it to type '127.0.10'. Then press Send"],
-	["help", "You connected to a new server. Figure out what commands it supports", "Type 'help' and press Send"],
-	["help mode", "Figure out how to use the mode command", "Select 'help', then select 'mode' and press Send"],
-	["mode 9", "Switch the door to the maintenance mode", "Select 'mode', then switch to the numpad and select 9 before pressing Send"],
+	["*", "Эта мини-игра имитирует простую консоль. Если вы когда-нибудь пользовались cmd или bash, вы будете чувствовать себя как дома. В противном случае просто следуйте этой инструкции.", "введите что угодно"],
+	["help", "Для начала получи список команд.", "Выбери 'help', а затем нажми 'Send'"],
+	["help ls", "Вы выучили новые команды. Используйте команду 'help', чтобы разобраться с командой 'ls'", "Выберите 'help', затем выберите 'ls' и нажмите 'Отправить'"],
+	["ls", "Теперь попробуйте выполнить эту команду", "Выберите 'ls' и нажмите 'Отправить'"],
+	["help cat", "Теперь попробуйте понять, как использовать команду 'cat'", "Выберите 'help', затем выберите 'cat' и нажмите 'Отправить'"],
+	["cat 1", "Используйте команду 'cat', чтобы вывести содержимое первого файла", "Выберите 'cat', переключитесь на цифровую панель, выберите '1', а затем нажмите 'Send'"],
+	["connect 127.0.10", "Попробуйте подключиться к двери, ведущей к передатчику блюспейса", "Выберите 'connect', переключитесь на цифровую панель и введите '127.0.10'. Затем нажмите 'Send'"],
+	["help", "Вы подключились к новому серверу. Выясните, какие команды он поддерживает", "Введите 'help' и нажмите 'Send'"],
+	["режим справки", "Разберитесь, как использовать команду 'mode'", "Выберите 'help', затем выберите 'mode' и нажмите 'Send'"],
+	["mode 9", "Переведите дверь в режим обслуживания", "Выберите «mode», затем переключитесь на цифровой блок, выберите 9 и нажмите Send"],
 ]
 var currentTutorialStep:int = 0
 var shouldSpoilHint:bool = false

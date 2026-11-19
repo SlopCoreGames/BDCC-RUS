@@ -11,4 +11,4 @@ func getCompatibleSpecies():
 	return [Species.Any]
 
 func getTransformMorphMessage(_context:Dictionary) -> String:
-	return "{npc.YouHe} {npc.youHeVerb('feel')} a warm wave wash over {npc.yourHis} body, and suddenly, the very structure begins to change. Muscles ripple and shift, {npc.yourHis} silhouette changing rapidly. But still, the new form is still holding traces of {npc.yourHis} previous physique. {npc.YouHe} now {npc.youHaveHeHas} "+getAVulgarName()+"."
+	return "{npc.YouHe} {npc.youHeVerb('feel')} теплая волна окатила тело {npc.yourHis}, и внезапно сама его структура начала меняться. Мышцы перекатывались и смещались, и силуэт {npc.yourHis} стремительно трансформировался. Но даже в новой форме всё еще угадывались черты прежнего телосложения {npc.yourHis}. {npc.YouHe} теперь {npc.youHaveHeHas} "+getAVulgarName()+"."

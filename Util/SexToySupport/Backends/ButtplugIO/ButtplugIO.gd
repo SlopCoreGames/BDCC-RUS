@@ -103,10 +103,10 @@ func connectToServer() -> bool:
 	set_process(true)
 	connectionStatus = STATUS_CONNECTING
 	if(DEBUG_BUTTPLUGIO):
-		logDebug("Connecting to server at %s" % websocketURL)
+		logDebug("Подключение к серверу %s" % websocketURL)
 	var err = _client.connect_to_url("ws://"+websocketURL)
 	if err != OK:
-		logError("Unable to connect")
+		logError("Не удалось подключиться")
 		set_process(false)
 		return false
 	# buttplug uses text frames
@@ -130,7 +130,7 @@ func onButtplugIOData():
 	if(DEBUG_BUTTPLUGIO):
 		logDebug("GOT   "+str(_content))
 	if(!(_content is Array)):
-		logError("Got weird response. Content="+str(_content))
+		logError("Получен странный ответ. Контент="+str(_content))
 		return
 	
 	for data in _content:
@@ -171,7 +171,7 @@ func processButtplugIOMessage(_message:Dictionary):
 		for deviceStrIndx in theDevices:
 			var theDevice:Dictionary = theDevices[deviceStrIndx]
 			
-			var _deviceName:String = theDevice.get("DeviceName", "Unknown device")
+			var _deviceName:String = theDevice.get("DeviceName", "Неизвестное устройство")
 			var _timingGap:float = theDevice.get("DeviceMessageTimingGap", 0.0)
 			
 			var theFeatures:Dictionary = theDevice.get("DeviceFeatures", {})
@@ -234,7 +234,7 @@ func processButtplugIOMessage(_message:Dictionary):
 	
 func onSocketConnected(_protocol):
 	if(DEBUG_BUTTPLUGIO):
-		logDebug("Connected to server!")
+		logDebug("Подключено к серверу!")
 	
 	sendToButtplugIO("RequestServerInfo", {
 		"ClientName": "BDCC",
@@ -246,7 +246,7 @@ func onSocketConnected(_protocol):
 func onSocketFailedToConnect():
 	connectionStatus = STATUS_DISCONNECTED
 	if(DEBUG_BUTTPLUGIO):
-		logError("Failed to connect")
+		logError("Ошибка подключения")
 	_client.disconnect_from_host()
 
 
@@ -254,7 +254,7 @@ func onSocketClosed(_clean:bool):
 	connectionStatus = STATUS_DISCONNECTED
 	_client.disconnect_from_host()
 	if(DEBUG_BUTTPLUGIO):
-		logDebug("Socket closed. Clean="+str(_clean))
+		logDebug("Сокет закрыт. Чистое закрытие="+str(_clean))
 
 func sendToButtplugIO(command:String, body:Dictionary = {}):
 	body["Id"] = messageID

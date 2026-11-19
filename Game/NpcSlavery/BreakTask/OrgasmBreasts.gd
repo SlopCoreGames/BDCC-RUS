@@ -33,7 +33,7 @@ func getTaskString():
 	return "Orgasm (breasts): "+getProgressString()
 
 func getTaskHint(_isSlaveLevelup):
-	return "Force them to orgasm just from you stimulating their breasts!"
+	return "Заставь их кончать только от того, что ты ласкаешь их грудь!"
 
 func getSexGoalWeightModifier(_sexGoalID:String) -> float:
 	if(_sexGoalID == SexGoal.BreastFeedOnSub):

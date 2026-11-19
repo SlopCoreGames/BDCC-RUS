@@ -38,7 +38,7 @@ func getNOMs(_npcOwner) -> Dictionary:
 
 func getTalkActions(_npcOwner, _event) -> Array:
 	return [
-		talkAction("Fuck owner", "(Черта «Подкаблучник») Спросить, хочет ли хозяин, чтобы его трахнули!", "subby_fuckowner")
+		talkAction("Ебать хозяина", "(Черта «Подкаблучник») Спросить, хочет ли хозяин, чтобы его трахнули!", "subby_fuckowner")
 	]
 
 func doTalkAction(_npcOwner, _event, _actionID:String, _args:Array):

@@ -283,7 +283,7 @@ func generateCode() -> String:
 			#var varValue = varData[1]
 			
 			text += "\n\tdata[\""+varName+"\"] = "+varName
-		text += "\n\treturn data"
+		text += "\n\tвозврат данных"
 		text += '\n\n'
 		text += "func loadData(_data):\n"
 		text += "\t.loadData(_data)\n"

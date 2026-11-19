@@ -36,10 +36,10 @@ func onSexEvent(_npc, _event:SexEvent):
 	return false
 
 func getTaskString():
-	return "Cum from feet with chastity on"
+	return "Кончить через ноги в девайсе целовать"
 
 func getTaskHint(_isSlaveLevelup):
-	return "Force them to orgasm from feetplay while they are wearing a chastity cage"
+	return "Заставить их кончить от стимуляции стоп, пока на них надет девайс целовать"
 
 func getSexGoalWeightModifier(_sexGoalID:String) -> float:
 	if(_sexGoalID == SexGoal.DoFeetplay):

@@ -19,11 +19,11 @@ func canDo(_lustState: LustCombatState, _args):
 	#	return [false, "Requires a \"Battle Cow\" perk"]
 	
 	if(pc.hasBoundArms()):
-		return [false, "You can't do that with bound arms"]
+		return [false, "С заведенными за спину руками так не выйдет"]
 	if(pc.hasBlockedHands()):
-		return [false, "You can't do that with blocked hands"]
+		return [false, "С занятыми руками так не получится"]
 	if(!pc.hasEffect(StatusEffect.CoveredInCum)):
-		return [false, "You need to be covered in something to do this"]
+		return [false, "Чтобы это сделать, ты должна быть чем-то испачкана"]
 	
 	return .canDo(_lustState, _args)
 

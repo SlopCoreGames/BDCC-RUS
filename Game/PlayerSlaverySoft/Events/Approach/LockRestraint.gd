@@ -49,19 +49,19 @@ func getPossibleLocks() -> Array:
 
 func getLockNameDesc(_lock:String) -> Array:
 	if(_lock == "ringgag"):
-		return ["Ring-gag", "Agree to be gagged"]
+		return ["Кольцо-кляп", "Согласиться на кляп"]
 	if(_lock == "mittens"):
-		return ["Mittens", "Agree to wear bondage mittens"]
+		return ["Варежки", "Согласиться надеть бондажные варежки"]
 	if(_lock == "arms"):
-		return ["Wrist cuffs", "Agree to have your arms cuffed"]
+		return ["Наручники на запястья", "Согласиться на наручники"]
 	if(_lock == "legs"):
-		return ["Ankle cuffs", "Agree to have your legs cuffed"]
+		return ["Кандалы на лодыжки", "Согласиться на кандалы"]
 	if(_lock == "cage"):
-		return ["Chastity cage", "Agree to have your cock caged"]
+		return ["Клетка целомудрия", "Согласиться на клетку для члена"]
 	if(_lock == "cageflat"):
-		return ["Flat chastity cage", "Agree to have your cock caged with a flat cage"]
+		return ["Плоская клетка целомудрия", "Согласиться на плоскую клетку целомудрия"]
 	
-	return ["ERROR?", "Something went wrong"]
+	return ["ОШИБКА?", "Что-то пошло не так"]
 
 func getHumanReadablePossibleListString() -> String:
 	var thePossible:Array = []

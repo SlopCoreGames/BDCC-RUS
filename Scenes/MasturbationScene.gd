@@ -128,7 +128,7 @@ func addLustActionsButtons(lustCombatState:LustCombatState, theActions):
 		if(!lustAction.shouldShow(lustCombatState, actionData)):
 			continue
 		var canDo = lustAction.canDo(lustCombatState, actionData)
-		var reasonWhyCant = "You can’t do this right now"
+		var reasonWhyCant = "Сейчас неподходящий момент"
 		if(canDo is Array):
 			if(canDo.size() > 1):
 				reasonWhyCant = canDo[1]
@@ -152,7 +152,7 @@ func _react(_action: String, _args):
 		
 		lustCombatState.processLewdTurn()
 		
-		savedActionText = "You decide to idle for a bit"
+		savedActionText = "Ты решаешь немного передохнуть"
 		#GM.pc.addLust(-1)
 		
 		checkDanger()
@@ -201,11 +201,11 @@ func spottedMessages():
 				return
 			
 			var barks = [
-				"Your heart races, you swear you saw someone’s eyes watching you.",
-				"You look around frantically, constantly checking if someone sees you.",
-				"You can’t believe that you are doing this, you feel like you could be spotted at any second.",
-				"What if someone is watching?.. Just thinking about it makes you more aroused.",
-				"You wonder how far you can push this before being spotted..",
+				"Сердце бешено колотится; тебе кажется, что чей-то взгляд прикован к тебе.",
+				"Ты лихорадочно оглядываешься по сторонам, постоянно проверяя, не видит ли тебя кто-нибудь.",
+				"Ты не веришь, что творишь такое; кажется, тебя могут заметить в любую секунду.",
+				"А что, если кто-то наблюдает?.. От одной этой мысли возбуждение только растет.",
+				"Ты гадаешь, как далеко сможешь зайти, прежде чем тебя поймают...",
 			]
 			
 			spottedText = RNG.pick(barks)
@@ -221,9 +221,9 @@ func spottedMessages():
 				var randI = RNG.randi_range(0, 5)
 				match(randI):
 					0:
-						spottedText = "You catch a lewd gaze of one of the inmates that stares at you and your {pc.masc} body."
+						spottedText = "Ты ловишь на себе похотливый взгляд одного из заключенных, который пялится на тебя и твое {pc.masc} тело."
 					1:
-						spottedText = "One of the inmates exposes his canine cock and starts stroking himself while watching the show that you’re offering."
+						spottedText = "Один из заключенных вываливает свой клыкастый член и начинает теребить его, наблюдая за тем шоу, которое ты ему устраиваешь."
 						spottedText += "\n\n"
 						spottedText += RNG.pick([
 							"[sayMale]Да, тряси этой задницей![/sayMale]",
@@ -231,7 +231,7 @@ func spottedMessages():
 							"[sayMale]Не останавливайся, сучка. Устрой нам шоу.[/sayMale]",
 						])
 					2:
-						spottedText = "A group of inmates turn around and catch the glimpses of your hands doing lewd things."
+						spottedText = "Группа заключенных оборачивается и успевает мельком увидеть, как твои руки творят всякие непристойности."
 						spottedText += "\n\n"
 						spottedText += RNG.pick([
 							"[sayMale]Глянь на {pc.him}, может, поможем ей?[/sayMale]",
@@ -239,16 +239,16 @@ func spottedMessages():
 							"[sayFemale]Пацаны могут делать с этой жопой что угодно, но лицо {pc.his} принадлежит мне~.[/sayFemale]",
 						])
 					3:
-						spottedText = "One of the inmate girls walks past and then spots what you are doing before taking a step back, blushing."
+						spottedText = "Одна из заключенных проходит мимо и замечает, чем ты занят, после чего отступает на шаг, заливаясь румянцем."
 						spottedText += "\n\n"
 						spottedText += RNG.pick([
 							"[sayFemale]Э-эй, так нельзя![/sayFemale]",
 							"[sayFemale]М-м.. виновата.[/sayFemale]",
 						])
 					4:
-						spottedText = "An inmate creeps closer to you and watches you play with yourself, smiling."
+						spottedText = "Одна из заключенных подкрадывается ближе и с улыбкой наблюдает за тем, как ты ласкаешь себя."
 					5:
-						spottedText = "You notice the eyes of many inmates attached to you, it seems you are attracting quite an audience."
+						spottedText = "Ты замечаешь на себе взгляды множества заключенных — похоже, ты собрал целую публику."
 						spottedText += "\n\n"
 						spottedText += RNG.pick([
 							"[sayMale]Я хочу первым трахнуть {pc.him}![/sayMale]",
@@ -261,11 +261,11 @@ func spottedMessages():
 				var randI = RNG.randi_range(0, 7)
 				match(randI):
 					0:
-						spottedText = "One of the staff members glances at you. You quickly turn away but you’re almost certain he saw you doing something lewd."
+						spottedText = "Один из сотрудников бросает на тебя взгляд. Ты быстро отворачиваешься, но почти уверен, что он застукал тебя за чем-то неприличным."
 					1:
-						spottedText = "A staff member walks past and sees you. She rolls her eyes and leaves you to your things."
+						spottedText = "Мимо проходит сотрудница и видит тебя. Она закатывает глаза и оставляет тебя наедине с твоими делами."
 					2:
-						spottedText = "A few staff members walk past but one of them stops and stares at you."
+						spottedText = "Мимо проходят несколько сотрудников, но один из них останавливается и уставился на тебя."
 						spottedText += "\n\n"
 						spottedText += RNG.pick([
 							"[sayMale]Эй, может, пойдем проучим {pc.him}?[/sayMale]",
@@ -273,9 +273,9 @@ func spottedMessages():
 							"[sayFemale]Эй, прекращай, а то придется применить силу.[/sayFemale]",
 						])
 					3:
-						spottedText = "One of the guards sees your actions and starts walking towards you with a stun baton in his hand. Luckily, he stops to watch you some more."
+						spottedText = "Один из охранников замечает твои действия и направляется к тебе с электрошоковой дубинкой в руке. К счастью, он останавливается, чтобы еще немного на тебя посмотреть."
 					4:
-						spottedText = "One of the female staff members raises her brow at you."
+						spottedText = "Одна из сотрудниц удивленно вскидывает бровь, глядя на тебя."
 						spottedText += "\n\n"
 						spottedText += RNG.pick([
 							"[sayFemale]Ты что, сирень? Это бы всё объяснило.[/sayFemale]",
@@ -284,11 +284,11 @@ func spottedMessages():
 							"[sayFemale]Кто-то разгорячился, а~?[/sayFemale]",
 						])
 					5:
-						spottedText = "Staff starts crowding around you but that only makes you more eager, you’ve been spotted."
+						spottedText = "Сотрудники начинают обступать тебя, но это лишь раззадоривает: тебя заметили."
 					6:
-						spottedText = "A guard sneaks a hand under his crotch armor piece and clearly strokes himself while watching you."
+						spottedText = "Охранник незаметно просовывает руку под набедренную броню и, явно лаская себя, не сводит с тебя глаз."
 					7:
-						spottedText = "One of the staff members walks past and pretends to not see what you are doing."
+						spottedText = "Мимо проходит один из сотрудников, делая вид, что не замечает того, чем вы заняты."
 						
 	
 

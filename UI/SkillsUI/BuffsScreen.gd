@@ -2,7 +2,7 @@ extends Control
 
 
 func updateBuffsText():
-	var newtext = "Your current buffs/debuffs are displayed here\n\n"
+	var newtext = "Здесь отображаются ваши текущие баффы и дебаффы\n\n"
 	if(GM.main == null || GM.pc == null):
 		return
 	
@@ -11,7 +11,7 @@ func updateBuffsText():
 		var item = items[slot]
 		var itemBuffs = item.getBuffs()
 		if(itemBuffs != null && itemBuffs is Array && itemBuffs.size() > 0):
-			newtext += item.getVisibleName()+" equipped item:\n"
+			newtext += item.getVisibleName()+" экипированный предмет:\n"
 			
 			for buff in itemBuffs:
 				newtext += buff.getVisibleDescriptionColored()+"\n"
@@ -23,7 +23,7 @@ func updateBuffsText():
 		var statusEffect = statusEffects[statusEffectID]
 		var statusEffectBuffs = statusEffect.getBuffs()
 		if(statusEffectBuffs != null && statusEffectBuffs is Array && statusEffectBuffs.size() > 0):
-			newtext += statusEffect.getEffectName()+" status effect:\n"
+			newtext += statusEffect.getEffectName()+" эффект состояния:\n"
 			
 			for buff in statusEffectBuffs:
 				newtext += buff.getVisibleDescriptionColored()+"\n"

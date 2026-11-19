@@ -33,13 +33,13 @@ func onSexEvent(_npc, _event:SexEvent):
 	return false
 
 func getTaskString():
-	return "Swallow drugs: "+getProgressString()
+	return "Проглотить таблетки: "+getProgressString()
 
 func getTaskStringSlutLock():
-	return "Get forced to swallow drugs: "+getProgressString()
+	return "Заставить проглотить таблетки: "+getProgressString()
 
 func getTaskHint(_isSlaveLevelup):
-	return "Make them take any kind of drug during sex!"
+	return "Заставлять их принимать любые наркотики во время секса!"
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [

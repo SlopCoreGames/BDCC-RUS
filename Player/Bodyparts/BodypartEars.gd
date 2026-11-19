@@ -11,7 +11,7 @@ func hasCustomSkinPattern():
 	return true
 
 func getTransformAwayMessage(_context:Dictionary) -> String:
-	return "{npc.YouHe} {npc.youHeVerb('feel')} a strange pressure as {npc.yourHis} ears shrink and flatten against {npc.yourHis} head, becoming mere nubs that are barely noticeable."
+	return "{npc.YouHe} {npc.youHeVerb('feel')} ощущает странное давление: {npc.yourHis} уши сжимаются и прижимаются к {npc.yourHis} голове, превращаясь в едва заметные пупырышки."
 
 func getTransformMorphMessage(_context:Dictionary) -> String:
-	return "{npc.YouHe} {npc.youHeVerb('feel')} a tingling at the sides of {npc.yourHis} head, and suddenly, {npc.yourHis} ears begin to reshape. They elongate and transform, taking on a new, different form. {npc.YouHe} now {npc.youHaveHeHas} "+getAVulgarName()+"."
+	return "{npc.YouHe} {npc.youHeVerb('feel')} чувствует покалывание по бокам {npc.yourHis} головы, и вдруг {npc.yourHis} уши начинают менять форму. Они вытягиваются и трансформируются, принимая новый, иной вид. {npc.YouHe} теперь {npc.youHaveHeHas} "+getAVulgarName()+"."

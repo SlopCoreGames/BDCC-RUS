@@ -7,10 +7,10 @@ var game_version_suffix = ""
 
 var contributorsCredits:Dictionary = {
 	"Max-Maxou": [
-		"chastity cage sprites",
-		"android suit",
-		"engineer uniform",
-		"damaged uniforms",
+		"спрайты девственных клеток",
+		"костюм андроида",
+		"униформа инженера",
+		"потрепанная униформа",
 	],
 	"Firi": [
 		"code",
@@ -25,7 +25,7 @@ var contributorsCredits:Dictionary = {
 		"[url=https://github.com/Alexofp/BDCC/pull/17]#1[/url]",
 	],
 	"PeteTimesSix": [
-		"visible chains",
+		"видимые цепи",
 		"[url=https://github.com/Alexofp/BDCC/pull/25]#1[/url]",
 		"[url=https://github.com/Alexofp/BDCC/pull/26]#2[/url]",
 		"[url=https://github.com/Alexofp/BDCC/pull/27]#3[/url]",
@@ -54,15 +54,15 @@ var contributorsCredits:Dictionary = {
 		"[url=https://github.com/Alexofp/BDCC/pull/106]#3[/url]",
 		"[url=https://github.com/Alexofp/BDCC/pull/107]#4[/url]",
 		"[url=https://github.com/Alexofp/BDCC/pull/111]#5[/url]",
-		"helping me with the mods browser",
+		"помощь с браузером модов",
 	],
 	"Ranchar": [
 		"[url=https://github.com/Alexofp/BDCC/pull/42]#1[/url]",
 	],
 	"AverageAce": [
-		"lots of skins",
-		"better room descriptions",
-		"sprite improvements",
+		"много скинов",
+		"улучшенные описания комнат",
+		"улучшение спрайтов",
 	],
 	"Dalt": [
 		"[url=https://github.com/Alexofp/BDCC/pull/43]#1[/url]",
@@ -72,10 +72,10 @@ var contributorsCredits:Dictionary = {
 		"[url=https://github.com/Alexofp/BDCC/pull/89]#1[/url]",
 	],
 	"Sayonix": [
-		"lots of reported typos",
+		"исправление множества опечаток",
 	],
 	"Johnvic76": [
-		"lots of reported typos",
+		"исправление множества опечаток",
 	],
 	"PosionFox": [
 		"[url=https://github.com/Alexofp/BDCC/pull/104]#1[/url]",
@@ -192,7 +192,7 @@ var contributorsCredits:Dictionary = {
 		"[url=https://github.com/Alexofp/BDCC/pull/370]#17[/url]",
 	],
 	"SongJo": [
-		"42 great haircuts",
+		"42 отличные стрижки",
 	],
 	"Meepyneepy": [
 		"[url=https://github.com/Alexofp/BDCC/pull/259]#1[/url]",

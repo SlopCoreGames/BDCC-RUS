@@ -47,10 +47,10 @@ func getTaskString():
 	var speciesName:String = "Unknown"
 	if(species != null):
 		speciesName = species.getVisibleName()
-	return "Have sex with "+str(speciesName)+" species"
+	return "Переспать с "+str(speciesName)+" species"
 
 func getTaskHint(_isSlaveLevelup):
-	return "Find someone of the right species"
+	return "Найти представителя нужного вида"
 
 func getNpcOwnerDialogueLines() -> Array:
 	var species = GlobalRegistry.getSpecies(speciesID)

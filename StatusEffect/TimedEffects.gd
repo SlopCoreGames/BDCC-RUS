@@ -47,7 +47,7 @@ func getVisisbleDescription():
 	var theBuffsBySeconds:Dictionary = character.getSortedBuffsDataByTime(character.timedBuffs)
 	
 	for theTime in theBuffsBySeconds:
-		theTexts.append("Expire in "+str(Util.getTimeStringHumanReadable(theTime))+":")
+		theTexts.append("До истечения осталось "+str(Util.getTimeStringHumanReadable(theTime))+":")
 		
 		var theBuffs:Array = theBuffsBySeconds[theTime]
 		

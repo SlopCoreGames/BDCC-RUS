@@ -43,7 +43,7 @@ static func getVisibleName(poolID: String):
 	if(poolID == Slaves):
 		return "Slaves"
 	if(poolID == MentalWard):
-		return "Mental Ward"
+		return "Психиатрическое отделение"
 	return "Error"
 
 

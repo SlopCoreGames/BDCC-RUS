@@ -147,16 +147,16 @@ func reactToCommand(_command:String, _args:Array, _commandStringRaw:String):
 		return "Ошибка: неизвестная команда. Используйте 'help', чтобы увидеть список всех доступных команд"
 
 var tutorialData = [
-	["*", "This minigame simulates a simple console. If you ever used cmd or bash, you will feel right at home. Otherwise, just follow this tutorial.", "type anything"],
-	["help", "Start by getting the list of commands.", "Select 'help' and then press Send"],
-	["help ls", "You learned new commands. Use the help command to figure out the 'ls' command", "Select 'help', then select 'ls' and then press Send"],
-	["ls", "Now try to execute this command", "Select 'ls' and press Send"],
-	["help cat", "Now try to figure out how to use the cat command", "Select 'help', then select 'cat' and press Send"],
-	["cat 1", "Use the cat command to output the contents of the first file", "Select 'cat', then switch to the numpad and select '1' before pressing Send"],
-	["connect 127.0.10", "Try to connect to the door that leads to the bluespace transmitter", "Select 'connect', then switch to the numpad and use it to type '127.0.10'. Then press Send"],
-	["help", "You connected to a new server. Figure out what commands it supports", "Type 'help' and press Send"],
-	["help mode", "Figure out how to use the mode command", "Select 'help', then select 'mode' and press Send"],
-	["mode 9", "Switch the door to the maintenance mode", "Select 'mode', then switch to the numpad and select 9 before pressing Send"],
+	["*", "Эта мини-игра имитирует простую консоль. Если вы когда-нибудь пользовались cmd или bash, вы будете чувствовать себя как дома. В противном случае просто следуйте этой инструкции.", "введите что угодно"],
+	["help", "Для начала получи список команд.", "Выбери 'help', а затем нажми 'Send'"],
+	["help ls", "Вы выучили новые команды. Используйте команду 'help', чтобы разобраться с командой 'ls'", "Выберите 'help', затем выберите 'ls' и нажмите 'Отправить'"],
+	["ls", "Теперь попробуйте выполнить эту команду", "Выберите 'ls' и нажмите 'Отправить'"],
+	["help cat", "Теперь попробуйте понять, как использовать команду 'cat'", "Выберите 'help', затем выберите 'cat' и нажмите 'Отправить'"],
+	["cat 1", "Используйте команду 'cat', чтобы вывести содержимое первого файла", "Выберите 'cat', переключитесь на цифровую панель, выберите '1', а затем нажмите 'Send'"],
+	["connect 127.0.10", "Попробуйте подключиться к двери, ведущей к передатчику блюспейса", "Выберите 'connect', переключитесь на цифровую панель и введите '127.0.10'. Затем нажмите 'Send'"],
+	["help", "Вы подключились к новому серверу. Выясните, какие команды он поддерживает", "Введите 'help' и нажмите 'Send'"],
+	["режим справки", "Разберитесь, как использовать команду 'mode'", "Выберите 'help', затем выберите 'mode' и нажмите 'Send'"],
+	["mode 9", "Переведите дверь в режим обслуживания", "Выберите «mode», затем переключитесь на цифровой блок, выберите 9 и нажмите Send"],
 ]
 var currentTutorialStep = 0
 var shouldSpoilHint = false

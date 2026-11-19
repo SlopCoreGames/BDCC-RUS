@@ -95,10 +95,10 @@ func unlockEndingGetMessage(slaveryID:String, endingID:String) -> String:
 		return ""
 	var endingName:String = theInfo["name"]
 	if(leftToUnlock <= 0):
-		return "You have unlocked the '"+endingName+"' ending for this slavery scenario. You have now unlocked every single ending!"
+		return "Вы открыли концовку «"+endingName+"» для этого сценария рабства. Теперь вам открыты абсолютно все концовки!"
 	if(leftToUnlock == 1):
-		return "You have unlocked the '"+endingName+"' ending for this slavery scenario. There is 1 other possible ending left!"
-	return "You have unlocked the '"+endingName+"' ending for this slavery scenario. There are "+str(leftToUnlock)+" other possible endings left!"
+		return "Вы открыли концовку «"+endingName+"» для этого сценария рабства. Осталась еще 1 возможная концовка!"
+	return "Вы открыли концовку «"+endingName+"» для этого сценария рабства. Осталось еще "+str(leftToUnlock)+" возможных концовок!"
 
 func unlockEndingAddMessage(slaveryID:String, endingID:String):
 	var theMessage := unlockEndingGetMessage(slaveryID, endingID)
@@ -146,8 +146,8 @@ func getEndingsInfo(includeDesc:bool = true) -> String:
 			result.append(slaveryDef.getVisibleDesc())
 		for endingID in theEndings:
 			var endingInfo:Dictionary = theEndings[endingID]
-			var endingName:String = endingInfo["name"] if endingInfo.has("name") else "Error?"
-			var endingDesc:String = endingInfo["desc"] if endingInfo.has("desc") else "Error?"
+			var endingName:String = endingInfo["name"] if endingInfo.has("name") else "Ошибка?"
+			var endingDesc:String = endingInfo["desc"] if endingInfo.has("desc") else "Ошибка?"
 			var isThisEndingUnlocked:bool = hasUnlockedEnding(slaveryID, endingID)
 			
 			if(isThisEndingUnlocked):

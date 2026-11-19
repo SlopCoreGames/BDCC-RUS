@@ -149,7 +149,7 @@ func getAverageAnger() -> float:
 func getSexEndInfo():
 	var texts:Array = .getSexEndInfo()
 	
-	texts.append("Average anger: "+str(Util.roundF(getAverageAnger()*100.0, 1))+"%")
+	texts.append("Средний уровень гнева: "+str(Util.roundF(getAverageAnger()*100.0, 1))+"%")
 	
 	return texts
 
@@ -159,46 +159,46 @@ func affectPersonality(_personality:Personality, _fetishHolder:FetishHolder):
 	if(!canDoActions()):
 		if(RNG.chance(50)):
 			if(_personality.addStat(PersonalityStat.Subby, RNG.randf_range(0.05, 0.1))):
-				theChanges.append("{npc.name} became less dominant because {npc.he} got beaten up by a sub.")
+				theChanges.append("{npc.name} стал(а) менее доминантным(ой), потому что {npc.he} получил(а) по морде от саба.")
 		if(RNG.chance(50)):
 			if(_personality.addStat(PersonalityStat.Coward, RNG.randf_range(0.01, 0.1))):
-				theChanges.append("{npc.name} became more cowardly because {npc.he} got beaten up by a sub.")
+				theChanges.append("{npc.name} стал(а) более трусливым(ой), потому что {npc.he} получил(а) по морде от саба.")
 		if(RNG.chance(50)):
 			if(_personality.addStat(PersonalityStat.Mean, RNG.randf_range(0.01, 0.1))):
-				theChanges.append("{npc.name} became more mean because {npc.he} got beaten up by a sub.")
+				theChanges.append("{npc.name} стал(а) более злым(ой), потому что {npc.he} получил(а) по морде от саба.")
 	else:
 		if(RNG.chance(30)):
 			if(_personality.addStat(PersonalityStat.Subby, RNG.randf_range(-0.05, -0.01))):
-				theChanges.append("{npc.name} became slightly more dominant because {npc.he} achieved {npc.his} goals.")
+				theChanges.append("{npc.name} стал(а) чуть более доминантным(ой), потому что {npc.he} достиг(ла) {npc.his} целей.")
 		if(RNG.chance(30)):
 			if(_personality.addStat(PersonalityStat.Impatient, RNG.randf_range(-0.05, -0.01))):
-				theChanges.append("{npc.name} became less impatient because {npc.he} achieved {npc.his} goals.")
+				theChanges.append("{npc.name} стал(а) менее нетерпеливым(ой), потому что {npc.he} достиг(ла) {npc.his} целей.")
 		if(RNG.chance(30)):
 			if(_personality.addStat(PersonalityStat.Coward, RNG.randf_range(-0.05, -0.01))):
-				theChanges.append("{npc.name} became more brave because {npc.he} achieved {npc.his} goals.")
+				theChanges.append("{npc.name} стал(а) более смелым(ой), потому что {npc.he} достиг(ла) {npc.his} целей.")
 
 		if(getTimesCame() >= 1 && getAverageAnger() < 0.3):
 			if(RNG.chance(50)):
 				if(_personality.addStat(PersonalityStat.Subby, RNG.randf_range(-0.1, -0.01))):
-					theChanges.append("{npc.name} became more dominant after a good sex.")
+					theChanges.append("{npc.name} стал(а) более доминантным(ой) после хорошего секса.")
 			if(RNG.chance(30)):
 				if(_personality.addStat(PersonalityStat.Brat, RNG.randf_range(0.01, 0.05))):
-					theChanges.append("{npc.name} became slightly more bratty after a good sex.")
+					theChanges.append("{npc.name} стал(а) чуть более капризным(ой) после хорошего секса.")
 			if(RNG.chance(30)):
 				if(_personality.addStat(PersonalityStat.Coward, RNG.randf_range(-0.05, -0.01))):
-					theChanges.append("{npc.name} became less cowardly after a good sex.")
+					theChanges.append("{npc.name} стал(а) менее трусливым(ой) после хорошего секса.")
 
 		if(getAverageAnger() > 0.5):
 			if(RNG.chance(50)):
 				if(_personality.addStat(PersonalityStat.Mean, RNG.randf_range(0.01, 0.1))):
-					theChanges.append("{npc.name} became more mean after being so angry.")
+					theChanges.append("{npc.name} стала еще вреднее после такой вспышки гнева.")
 			if(RNG.chance(40)):
 				if(_personality.addStat(PersonalityStat.Subby, RNG.randf_range(-0.1, -0.01))):
-					theChanges.append("{npc.name} became more dominant after being so angry.")
+					theChanges.append("{npc.name} стала еще более доминантной после такой вспышки гнева.")
 		else:
 			if(RNG.chance(30)):
 				if(_personality.addStat(PersonalityStat.Mean, RNG.randf_range(-0.05, -0.01))):
-					theChanges.append("{npc.name} became slightly more kind after not being so angry.")
+					theChanges.append("{npc.name} стала чуть добрее, когда ее гнев утих.")
 	
 	return GM.ui.processString(Util.join(theChanges, "\n"), {npc=charID})
 

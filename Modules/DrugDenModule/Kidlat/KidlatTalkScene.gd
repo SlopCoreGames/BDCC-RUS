@@ -221,7 +221,7 @@ func _run():
 
 		saynn("Она кивает.")
 
-		setFlag("DrugDenModule.KidlatCustomTalkGreet", "Wanna see me bend again~?")
+		setFlag("DrugDenModule.KidlatCustomTalkGreet", "Хочешь посмотреть, как я снова прогнусь~?")
 		addButton("Продолжить", "Смотреть, что будет дальше", "chat_menu")
 	if(state == "sex_menu"):
 		saynn("Как именно ты хочешь развлечься с киской?")

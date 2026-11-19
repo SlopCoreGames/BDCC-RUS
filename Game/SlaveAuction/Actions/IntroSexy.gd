@@ -7,7 +7,7 @@ func getName() -> String:
 	return "Сексуальное представление"
 
 func getButtonDesc() -> String:
-	return "Start the auction while acting very seductive.\n\nReveals 2 body-related preferences from each bidder and makes them eager to bid early."
+	return "Начинайте аукцион, ведя себя крайне соблазнительно.\n\nРаскрывает по 2 телесных предпочтения у каждого участника и заставляет их жаждать торгов с самого начала."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	saynn("В комнате гаснет свет, шторы раздвигаются, и {presenter.name} выходит в свет прожектора с соблазнительной улыбкой. {presenter.She} проводит рукой по всему телу раба, следя за тем, чтобы все взгляды были прикованы к {slave.his}, пока {presenter.you} {presenter.youVerb('speak')} томным, манящим голосом.")

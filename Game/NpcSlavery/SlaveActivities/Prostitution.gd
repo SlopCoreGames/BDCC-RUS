@@ -43,7 +43,7 @@ func preventsNormalInteractions():
 	return true
 
 func getActivityText():
-	return "{npc.name} is currently out of there, whoring {npc.himself} out.\n\n{npc.He} will find you after {npc.he} finishes working.\n\nYou can cancel this but then you won't receive your slut's earned credits."
+	return "{npc.name} сейчас где-то там, вовсю шлюшит с {npc.himself}.\n\n{npc.He} найдет тебя, когда {npc.he} закончит работу.\n\nТы можешь отменить это, но тогда не получишь кредиты, которые заработала твоя шлюшка."
 
 func onPawnDeleted(_pawn):
 	stopActivity()
@@ -90,7 +90,7 @@ func getInteractActions():
 			name = "Отмена",
 			desc = "Найди свою шлюху и прикажи ей перестать трахаться за копейки.",
 			sceneID = "SlaveryCancelActivity",
-			args = ["You find {npc.name} out in the prison and tell {npc.him} to stop working. Since you disturbed {npc.his} work, you won't get any credits."],
+			args = ["Ты находишь {npc.name} в тюрьме и велишь {npc.him} прекратить работу. Поскольку ты прервал(а) работу {npc.his}, ты не получишь никаких кредитов."],
 			buttonChecks = [],
 		}
 	]

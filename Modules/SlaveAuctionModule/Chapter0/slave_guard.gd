@@ -15,7 +15,7 @@ func _init():
 	disableSerialization = true
 	
 func _getName():
-	return "Uknown Guard"
+	return "Неизвестный охранник"
 
 func getGender():
 	return Gender.Female

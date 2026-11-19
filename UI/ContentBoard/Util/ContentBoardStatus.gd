@@ -24,10 +24,10 @@ const StatusToColor:Dictionary = {
 }
 const StatusToText:Dictionary = {
 	Unknown: "Unknown",
-	ConditionsNotMet: "Conditions not met",
-	NotStarted: "Not started",
-	InProgress: "In progress",
-	Completed: "Completed!",
+	ConditionsNotMet: "Условия не выполнены",
+	NotStarted: "Не начато",
+	InProgress: "В процессе",
+	Completed: "Готово!",
 	Impossible: "Impossible",
 	Cancelled: "Cancelled",
 	Unavailable: "Unavailable",

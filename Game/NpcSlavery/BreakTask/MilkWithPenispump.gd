@@ -43,13 +43,13 @@ func onSexEvent(_npc, _event:SexEvent):
 	return false
 
 func getTaskString():
-	return "Milk with penis pump: "+getProgressStringFluids()
+	return "Дойка пенисным насосом: "+getProgressStringFluids()
 
 func getTaskStringSlutLock():
-	return "Get milked with a penis pump: "+getProgressStringFluids()
+	return "Доиться с помощью пенисного насоса: "+getProgressStringFluids()
 
 func getTaskHint(_isSlaveLevelup):
-	return "Put a penis pump on them and collect this much seed!"
+	return "Надень на них пенисный насос и собери столько-то семени!"
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [

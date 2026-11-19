@@ -72,7 +72,7 @@ func _init():
 	}
 	
 func _getName():
-	return "Checkpoint guard"
+	return "Охранник КПП"
 
 func getGender():
 	return Gender.Male

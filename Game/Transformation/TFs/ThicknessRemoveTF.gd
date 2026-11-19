@@ -18,11 +18,11 @@ func getPillName() -> String:
 
 func getUnlockData() -> Dictionary:
 	return {
-		eliza = "This pill seems to be formulated with appetite suppressants and fat-burning compounds that could help you shed those extra pounds.. It's like one of those fake ad products.. but this one seems like it will actually work, huh. When taken, it will probably make you thinner.. so I really wanna call it.. 'SliMM'.",
+		eliza = "Похоже, в состав этой таблетки входят подавители аппетита и жиросжигающие компоненты, которые помогут тебе сбросить лишние килограммы... Она напоминает какой-нибудь дешевый товар из фальшивой рекламы... но эта, кажется, реально работает, а? Если ее принять, ты наверняка похудеешь... так что я очень хочу назвать ее... «SliMM».",
 	}
 
 func getPillDatabaseDesc() -> String:
-	return "This drug will gradually make your body less thick. It does so while your thickness is above 0% or until reaching the last stage.\n\nThe first stage will happen after a few minutes. After that, the next ones will happen roughly every 12 hours. This could be accelerated by using the QuickShift drug or by [b]spanking[/b] the test subject.\n\nThis drug is limited to 3 stages. It’s possible to override this behavior by using advanced lab equipment, instead picking a target thickness value."
+	return "Этот препарат будет постепенно уменьшать объем твоего тела. Процесс идет, пока твоя толщина выше 0% or, вплоть до достижения последней стадии.\n\nПервая стадия наступит через несколько минут. После этого последующие будут происходить примерно каждые 12 часов. Процесс можно ускорить с помощью препарата QuickShift или если [b]шлепнуть[/b] подопытную.\n\nЭтот препарат ограничен 3 стадиями. Однако это ограничение можно обойти с помощью продвинутого лабораторного оборудования, выбрав конкретное целевое значение толщины."
 
 func getTFCheckTags() -> Dictionary:
 	return {

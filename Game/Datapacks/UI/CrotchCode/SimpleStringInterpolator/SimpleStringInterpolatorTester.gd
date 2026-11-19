@@ -15,7 +15,7 @@ func _on_TestButton_pressed():
 	
 	var vars = {
 		"testBool": true,
-		"testText": "MEOW meow Meow!",
+		"testText": "МЯУ мяу Мяу!",
 		"testNumber": 123.123,
 	}
 	$VBoxContainer/RichTextLabel2.bbcode_text = interpolator.process(theText, vars)

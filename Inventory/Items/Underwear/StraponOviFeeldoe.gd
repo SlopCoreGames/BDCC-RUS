@@ -30,7 +30,7 @@ func getStraponLength():
 	return 22.0
 
 func getCasualName():
-	return "feeldoe strapon"
+	return "страпон Feeldoe"
 
 func getLewdStraponName() -> String:
 	return RNG.pick(["овипозитор-страпон"])

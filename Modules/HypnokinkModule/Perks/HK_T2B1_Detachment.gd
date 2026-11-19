@@ -12,7 +12,7 @@ func getVisibleDescription():
 	
 func getMoreDescription():
 	return  "Снижает штрафы от гипноза еще на 20%." + "\n\n" + \
-			"While "+HypnokinkUtil.hypnosisIcon()+"Hypnotized or in "+HypnokinkUtil.tranceIcon()+"Trance, you gain +10% resistance to pain."
+			"While "+HypnokinkUtil.hypnosisIcon()+"В состоянии гипноза или "+HypnokinkUtil.tranceIcon()+"транса вы получаете +10% к сопротивлению боли."
 
 func getSkillTier():
 	return 1

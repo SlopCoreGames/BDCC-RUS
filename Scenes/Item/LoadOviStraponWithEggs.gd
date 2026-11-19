@@ -116,7 +116,7 @@ func _react(_action: String, _args):
 			item.eggInv.removeItem(theItem)
 			GM.pc.getInventory().addItem(theItem)
 		
-		reportText = "You took back "+str(theAm)+" egg"+("s" if theAm != 1 else "")+"!"
+		reportText = "Ты забрал(а) обратно "+str(theAm)+" egg"+("s" if theAm != 1 else "")+"!"
 	
 	setState(_action)
 

@@ -1428,7 +1428,7 @@ func sendSexEvent(type, sourceIndx:int = DOM_0, targetIndx:int = SUB_0, data = {
 func damageClothes(_indx:int) -> String:
 	var damageClothesResult = getDomOrSub(_indx).damageClothes()
 	if(damageClothesResult[0]):
-		return "[b]"+damageClothesResult[2].getVisibleName()+" got damaged![/b] "+damageClothesResult[1]
+		return "[b]"+damageClothesResult[2].getVisibleName()+" получил повреждения![/b] "+damageClothesResult[1]
 	return ""
 	
 func getState() -> String:
@@ -1719,7 +1719,7 @@ func doCumPussyLickSub(supposedToBeAngry:bool = true):
 func doCumBJSub(supposedToBeAngry:bool = true):
 	#satisfyGoals()
 	
-	var noPermissionText:String = " {sub.YouHe} [b]came without {dom.yourHis} permission[/b]!" if supposedToBeAngry else ""
+	var noPermissionText:String = " {sub.YouHe} [b]кончил без разрешения {dom.yourHis}[/b]!" if supposedToBeAngry else ""
 	if(getSexType() == SexType.SlutwallSex):
 		noPermissionText = ""
 		supposedToBeAngry = false
@@ -1773,7 +1773,7 @@ func doCumBJSub(supposedToBeAngry:bool = true):
 func doCumBJFacialsSub(supposedToBeAngry:bool = true):
 	#satisfyGoals()
 	
-	var noPermissionText:String = " {sub.YouHe} [b]came without {dom.yourHis} permission[/b]!" if supposedToBeAngry else ""
+	var noPermissionText:String = " {sub.YouHe} [b]кончил без разрешения {dom.yourHis}[/b]!" if supposedToBeAngry else ""
 	if(getSexType() == SexType.SlutwallSex):
 		noPermissionText = ""
 		supposedToBeAngry = false

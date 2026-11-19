@@ -111,27 +111,27 @@ func getFightIntro(_battleName):
 	#var didCommit:bool = GM.main.hasCommittedToMainRoute()
 	var isOnKaitRoute:bool = GM.main.getFlag("KaitModule.joinedTeam", false)
 	
-	var mes = "Kait bounces in place and stretches like all felines usually do. She then directs her attention to you while getting into a combat pose, slightly lowering herself and extending her claws out."
+	var mes = "Кейт подпрыгивает на месте и потягивается, как это обычно делают кошки. Затем она переключает внимание на тебя, принимая боевую стойку: слегка приседает и выпускает когти."
 	mes += "\n\n"
 	if(_battleName == "arenafight"):
 		if(isOnKaitRoute):
-			mes += "[say=kait]Oh, hey there. Hah. I won't go easy on you because we're in the same team.[/say]"
+			mes += "[say=kait]О, привет. Хах. Не думай, что я буду поддаваться только потому, что мы в одной команде.[/say]"
 			mes += "\n\n"
-			mes += "[say=kait]Good.[/say]"
+			mes += "[say=kait]Хорошо.[/say]"
 		else:
-			mes += "[say=kait]And who the heck are you?[/say]"
+			mes += "[say=kait]И кто ты, черт возьми, такой?[/say]"
 	else:
-		mes += "[say=kait]Who do you think you are?[/say]"
+		mes += "[say=kait]Ты вообще кем себя возомнил?[/say]"
 	mes += "\n\n"
-	mes += "She huffs and puts on a battle face, her big fluffy tail sways behind her like it has a mind of its own."
+	mes += "Она фыркает и принимает боевой вид; её большой пушистый хвост так и ходит ходуном, будто живет своей собственной жизнью."
 	mes += "\n\n"
 	if(_battleName == "arenafight"):
 		if(isOnKaitRoute):
-			mes += "[say=kait]Actually, it doesn’t matter. Just remember. If I win - I’m marking you.[/say]"
+			mes += "[say=kait]Впрочем, это неважно. Просто запомни: если выиграю — помечу тебя.[/say]"
 		else:
-			mes += "[say=kait]Bring it on.[/say]"
+			mes += "[say=kait]Ну, давай, нападай![/say]"
 	else:
-		mes += "[say=kait]Bring it on, doormat.[/say]"
+		mes += "[say=kait]Давай, коврик для ног, покажи, на что способен![/say]"
 	return mes
 
 func getThickness() -> int:

@@ -7,13 +7,13 @@ func getVisibleName():
 	return "Нова"
 
 func getNameAndNickname():
-	return "Nova, The Angel"
+	return "Нова, Ангел"
 
 func getAvyIntroduction():
-	return "Your next opponent is Nova. She is an ex inmate so she knows about this place even though she is a guard nowadays. Lucky bitch probably sucked and gangbanged her way to freedom, what can I say."
+	return "Твой следующий противник — Нова. Она бывшая заключенная, так что, хоть сейчас она и работает охранницей, это место ей до боли знакомо. Везучая сучка — скорее всего, сосала и трахалась во все дыры, чтобы вырваться на свободу, что тут скажешь."
 	
 func getAnnouncerIntroduction():
-	return "And in the right corner we have Nova. She was nice enough not to tell on us and even protects us from the other staff in exchange for being able to fight here! Please welcome!"
+	return "А в правом углу у нас Нова! Она была достаточно добра, чтобы не стучать на нас, и даже прикрывает нас от остального персонала в обмен на право драться здесь! Встречайте!"
 	
 func getRank():
 	return FightClubRank.PlayToy

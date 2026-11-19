@@ -20,7 +20,7 @@ func _init():
 	disableSerialization = true
 	
 func _getName():
-	return "Alex Rynard"
+	return "Алекс Райнард"
 
 func getGender():
 	return Gender.Male

@@ -4,7 +4,7 @@ func _init():
 	id = "FetishDrugUse"
 
 func getButtonDesc() -> String:
-	return "Mention the slave's love of certain substances.\n\n[b]Might[/b] reveal 1 personality preference of each bidder."
+	return "Упомяните о любви рабыни к определенным веществам.\n\n[b]Возможно[/b] раскроет по одной черте характера каждого участника аукциона."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([

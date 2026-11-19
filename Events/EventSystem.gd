@@ -7,7 +7,7 @@ var datapackEvents = []
 
 func _ready():
 	GM.ES = self
-	name = "Система событий"
+	name = "EventSystem"
 	
 	registerEventTriggers()
 	
@@ -72,7 +72,7 @@ func registerDatapackEvents(datapackIDs): # Very slow, use with caution
 			
 			for trigger in datapackScene.triggers:
 				var newEvent = preload("res://Game/Datapacks/DatapackScene/DatapackSceneEvent.gd").new()
-				newEvent.id = "Событие датапака"+str(_i)
+				newEvent.id = "DatapackEvent"+str(_i)
 				newEvent.setDatapackData(datapack, datapackScene, trigger)
 				newEvent.registerTriggers(self)
 				datapackEvents.append(newEvent)

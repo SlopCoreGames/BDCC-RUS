@@ -19,7 +19,7 @@ func _init():
 	}
 	
 func _getName():
-	return "Eliza Quinn"
+	return "Элиза Куинн"
 
 func getGender():
 	return Gender.Female

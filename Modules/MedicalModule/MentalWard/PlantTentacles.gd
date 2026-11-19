@@ -5,7 +5,7 @@ func _init():
 	disableSerialization = true
 	
 func _getName():
-	return "Plant Tentacles"
+	return "Растительные щупальца"
 
 func getGender():
 	return Gender.Other

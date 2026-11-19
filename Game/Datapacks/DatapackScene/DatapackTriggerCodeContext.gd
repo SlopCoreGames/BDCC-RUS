@@ -85,7 +85,7 @@ func throwError(_codeBlock, _errorText):
 	if(_codeBlock == null):
 		storedErrors.append("[CrotchScript Error] "+str(_errorText))
 	else:
-		storedErrors.append("[CrotchScript Error at line "+str(_codeBlock.lineNum)+", block: "+str(_codeBlock.id)+"] "+str(_errorText))
+		storedErrors.append("[Ошибка CrotchScript в строке "+str(_codeBlock.lineNum)+", block: "+str(_codeBlock.id)+"] "+str(_errorText))
 
 func react(_triggerID, _args):
 	if(datapackSceneTrigger.executeType != DatapackSceneTrigger.TRIGGER_REACT):

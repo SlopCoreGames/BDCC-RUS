@@ -12,15 +12,15 @@ func getName() -> String:
 	return "???"
 
 func getPillName() -> String:
-	return "Unstable Mutagen"
+	return "Нестабильный мутаген"
 
 func getUnlockData() -> Dictionary:
 	return {
-		eliza = "Interesti-.. wait.. The heck is this. Wow. Wow! It's changing! Like.. the molecular structure of this drug is changing as we speak. I honestly have no idea if this is even safe to ingest.. it could do anything. It's not even a drug at that point, it's just a concentrated dose of 'Unstable mutagen'.",
+		eliza = "Интерес-.. погодите.. Что это за чертовщина? Ого. Ого! Оно меняется! Прямо на глазах.. молекулярная структура этого препарата меняется прямо сейчас. Честно, я без понятия, безопасно ли это вообще принимать.. последствия могут быть любыми. В этот момент это уже даже не лекарство, а просто концентрированная доза «Нестабильного мутагена».",
 	}
 
 func getPillDatabaseDesc() -> String:
-	return "This drug will cause a random effect. The list of possible effects:\n- Random hair.\n- Random body part morphing into a different body part.\n- Breast size increase or decrease.\n- Penis length increase or decrease.\n- Femininity increase or decrease.\n- Body thickness increase or decrease.\n- Random colors and skin.\n\nThe first stage will happen after about 15 minutes. After that, the next ones will happen roughly every 25 hours. This could only be accelerated by using the QuickShift drug.\n\nThis drug doesn’t have a set amount of stages. It will gradually morph your body forever and can only be stopped by the MorphIn or MorphOut drugs. It's possible to alter the frequency of mutations by using the advanced lab equipment."
+	return "Этот препарат вызовет случайный эффект. Список возможных эффектов:\n- Случайные волосы.\n- Случайная трансформация части тела в другую часть тела.\n- Увеличение или уменьшение размера груди.\n- Увеличение или уменьшение длины пениса.\n- Увеличение или уменьшение женственности.\n- Увеличение или уменьшение объемов тела.\n- Случайные цвета и кожа.\n\nПервая стадия наступит примерно через 15 минут. После этого последующие будут происходить примерно каждые 25 часов. Процесс можно ускорить, используя препарат QuickShift.\n\nУ этого препарата нет фиксированного количества стадий. Он будет постепенно менять ваше тело вечно, и остановить процесс можно только препаратами MorphIn или MorphOut. С помощью продвинутого лабораторного оборудования можно изменять частоту мутаций."
 
 func getTFCheckTags() -> Dictionary:
 	return {

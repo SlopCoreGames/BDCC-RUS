@@ -410,11 +410,11 @@ func _run():
 		if(currentRank >= 5):
 			titles.append_array(["Mommy", "Madam", "Daddy", "Alpha"])
 		if(currentRank >= 6):
-			titles.append_array(["Handler", "Your Highness", "Boss", "Kitty's Keeper"])
+			titles.append_array(["Handler", "Ваше Высочество", "Boss", "Kitty's Keeper"])
 		if(currentRank >= 7):
 			titles.append_array(["Rahi's Handler", "Love"])
 		if(currentRank >= 8):
-			titles.append_array(["my love", "my Lord", "my Queen", "my Miss", "Bitch"])
+			titles.append_array(["любовь моя", "мой господин", "моя королева", "моя мисс", "Bitch"])
 		
 		for title in titles:
 			addButton("'"+title+"'", "Пусть называет тебя так", "set_title", [title])

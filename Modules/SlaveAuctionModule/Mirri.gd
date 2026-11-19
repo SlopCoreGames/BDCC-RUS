@@ -107,10 +107,10 @@ func _init():
 func _getName():
 	if(GM.main != null):
 		if(!GM.main.getFlag("SlaveAuctionModule.knowsMirriName", false) && !GM.main.getFlag("SlaveAuctionModule.s2hap", false)):
-			return "Catgirl Guard"
+			return "Кошкодевочка-охранница"
 		if(GM.main.getFlag("SlaveAuctionModule.mirriNotBlacktail", false)):
 			return "Mirri"
-	return "Mirri Blacktail"
+	return "Мирри Блэктейл"
 
 func getGender():
 	return Gender.Female

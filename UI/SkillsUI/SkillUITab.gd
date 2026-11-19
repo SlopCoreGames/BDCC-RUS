@@ -1,7 +1,7 @@
 extends Control
 
 var skillID = null
-var tabName = "bad tab"
+var tabName = "кривая вкладка"
 onready var nameLabel = $ScrollContainer/VBoxContainer/PanelContainer/VBoxContainer/NameLabel
 onready var levelBar = $ScrollContainer/VBoxContainer/PanelContainer/VBoxContainer/LevelBar
 onready var descLabel = $ScrollContainer/VBoxContainer/PanelContainer/VBoxContainer/DescLabel

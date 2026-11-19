@@ -13,7 +13,7 @@ func _init():
 	}
 	
 func _getName():
-	return "Rabi Haj'jar"
+	return "Раби Хадж'джар"
 
 func getGender():
 	return Gender.Male

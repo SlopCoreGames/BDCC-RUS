@@ -43,11 +43,11 @@ func getStartActions(_sexEngine: SexEngine, _domInfo: SexDomInfo, _subInfo: SexS
 	if(sub.canWearStrapon() && sub.getFirstItemThatCoversBodypart(BodypartSlot.Penis) == null):
 		if(dom.isPlayer()):
 			for straponObject in dom.getInventory().getItemsWithTag(ItemTag.Strapon):
-				addStartAction(["sub", straponObject.uniqueID], straponObject.getVisibleName(), straponObject.getVisisbleDescription(), putOnSubScore, {A_CATEGORY: ["Wear", "Strapon on sub"]})
+				addStartAction(["sub", straponObject.uniqueID], straponObject.getVisibleName(), straponObject.getVisisbleDescription(), putOnSubScore, {A_CATEGORY: ["Wear", "Надеть страпон на сабмиссива"]})
 		else:
 			for straponID in allStraponIds:
 				var straponObject:ItemBase = GlobalRegistry.getItemRef(straponID)
-				addStartAction(["sub", straponID], straponObject.getVisibleName(), straponObject.getVisisbleDescription(), putOnSubScore, {A_CATEGORY: ["Wear", "Strapon on sub"]})
+				addStartAction(["sub", straponID], straponObject.getVisibleName(), straponObject.getVisisbleDescription(), putOnSubScore, {A_CATEGORY: ["Wear", "Надеть страпон на сабмиссива"]})
 
 func getTags(_indx:int) -> Array:
 	if(_indx == DOM_0):

@@ -30,7 +30,7 @@ func run(_triggerID, _args):
 				
 				saynn("Из комнаты в конце коридора доносится громкий гул голосов...")
 			else:
-				if(!checkCharacterBusy("MirriBusy", "Seems like the catgirl is not here", "Mirri")):
+				if(!checkCharacterBusy("MirriBusy", "Похоже, кошкодевочки здесь нет", "Mirri")):
 					addButton("Мирри", "Поговорить с кошкодевочкой", "mirri")
 				
 	if(true):

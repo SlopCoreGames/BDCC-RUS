@@ -7,7 +7,7 @@ func getVisibleName():
 	return "Любитель спермы"
 
 func getVisibleDescription():
-	return "Shows how much you like receiving creampies"
+	return "Показывает, насколько сильно вам нравится получать внутрь"
 
 func getPerkTiers():
 	return [

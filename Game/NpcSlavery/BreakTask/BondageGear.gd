@@ -38,13 +38,13 @@ func onSexEvent(_npc, _event:SexEvent):
 	return false
 
 func getTaskString():
-	return "Force BDSM gear on: "+getProgressString()
+	return "Надеть БДСМ-атрибутику на: "+getProgressString()
 
 func getTaskStringSlutLock():
-	return "Get locked into BDSM gear: "+getProgressString()
+	return "Затянуть в БДСМ-атрибутику: "+getProgressString()
 
 func getTaskHint(_isSlaveLevelup):
-	return "Put different restraints on them during sex. If there is no space, remove something first."
+	return "Использовать разные виды фиксации во время секса. Если места нет, сначала что-нибудь сними."
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [

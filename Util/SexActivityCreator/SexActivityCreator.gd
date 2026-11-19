@@ -489,7 +489,7 @@ func _on_PerTurnActions_onEditPressed(id):
 func processTags(theTags):
 	var result = []
 	for tag in theTags:
-		result.append("SexActivityTag."+tag)
+		result.append("Тег секс-активности."+tag)
 	return Util.join(result, ", ")
 
 func _on_GenerateCodeButton_pressed():
@@ -514,7 +514,7 @@ func _on_GenerateCodeButton_pressed():
 	result.append("func canStartActivity(_sexEngine: SexEngine, _domInfo: SexDomInfo, _subInfo: SexSubInfo):")
 	for condition in sexActivityProperties["startConditions"]:
 		result.append("\tif(!("+condition.generateCode()+")):")
-		result.append("\t\treturn false")
+		result.append("\t\tвернуть false")
 	result.append("\treturn .canStartActivity(_sexEngine, _domInfo, _subInfo)")
 	result.append("")
 	result.append("func getVisibleName():")
@@ -638,7 +638,7 @@ func _on_GenerateCodeButton_pressed():
 		result.append("\tvar actions = []")
 		for actionID in actionSide[1]:
 			var usedStates = actionSide[1][actionID]
-			result.append("\tif(state in ["+Util.joinWithBorders(usedStates, ", ", "\"")+"]):")
+			result.append("\tесли (state в ["+Util.joinWithBorders(usedStates, ", ", "\"")+"]):")
 			
 			var theAction = actionSide[2][actionID]
 			var beforeTT = "\t\t"
@@ -660,7 +660,7 @@ func _on_GenerateCodeButton_pressed():
 				result.append(beforeTT+'\t"chance" : '+str(theAction["chance"])+',')
 			result.append(beforeTT+"})")
 				
-		result.append("\treturn actions")
+		result.append("\tвернуть actions")
 		result.append("")
 		
 		result.append(actionSide[3])
@@ -717,7 +717,7 @@ func _on_GenerateCodeButton_pressed():
 			result.append("\tdata[\""+varID+"\"] = "+varID)
 		
 		result.append("")
-		result.append("\treturn data")
+		result.append("\tвозврат данных")
 		result.append("")
 		result.append("func loadData(_data):")
 		result.append("\t.loadData(_data)")
@@ -737,9 +737,9 @@ func _on_GenerateCodeButton_pressed():
 			for animWithCondition in state["animsWithCondition"]:
 				var conanim = animWithCondition["animData"]
 				result.append("\t\tif("+animWithCondition["condition"]+"):")
-				result.append("\t\t\treturn [StageScene."+conanim["selectedStage"]+", \""+conanim["selecedAnim"]+"\", {pc="+conanim["selectedPC"]+", npc="+conanim["selectedNPC"]+"}]")
+				result.append("\t\t\tвернуть [StageScene."+conanim["selectedStage"]+", \""+conanim["selecedAnim"]+"\", {pc="+conanim["selectedPC"]+", npc="+conanim["selectedNPC"]+"}]")
 			
-			result.append("\t\treturn [StageScene."+anim["selectedStage"]+", \""+anim["selecedAnim"]+"\", {pc="+anim["selectedPC"]+", npc="+anim["selectedNPC"]+"}]")
+			result.append("\t\tвернуть [StageScene."+anim["selectedStage"]+", \""+anim["selecedAnim"]+"\", {pc="+anim["selectedPC"]+", npc="+anim["selectedNPC"]+"}]")
 			
 	
 	exportedCodeDialog.show_modal()

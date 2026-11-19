@@ -25,7 +25,7 @@ func start():
 func start_do(_id:String, _args:Array):
 	if(_id == "obey"):
 		setState("obey")
-		checkSubEvent("fuck", "You were about to be fucked by {npc.name}..", [])
+		checkSubEvent("fuck", "Тебя как раз собирались оттрахать {npc.name}..", [])
 	if(_id == "resist"):
 		runResist()
 	if(_id == "yesbut"):

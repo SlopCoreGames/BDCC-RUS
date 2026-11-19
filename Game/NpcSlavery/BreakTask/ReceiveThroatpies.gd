@@ -41,10 +41,10 @@ func onSexEvent(_npc, _event:SexEvent):
 	return false
 
 func getTaskString():
-	return "Received throatpies: "+getProgressString()
+	return "Получены горловые пироги: "+getProgressString()
 
 func getTaskHint(_isSlaveLevelup):
-	return "Cum down their throat. If you don't have a penis, you can use a loaded strapon!"
+	return "Кончай им прямо в глотку. Если у тебя нет пениса, можно использовать заряженный страпон!"
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [

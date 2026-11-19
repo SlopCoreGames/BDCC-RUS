@@ -205,7 +205,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		getSubInfo().cum()
 		var extraText:String = ""
 		if(getSub().isLactating()):
-			extraText = ", {sub.yourHis} {sub.breasts} squirt {sub.milk} out from this nipple orgasm"
+			extraText = ", {sub.yourHis} {sub.breasts} брызжет {sub.milk} из этого соска во время оргазма"
 		getSubInfo().stimulateArousalZone(0.0, BodypartSlot.Breasts, 2.0)
 		sendSexEvent(SexEvent.UniqueOrgasm, DOM_0, SUB_0, {orgasmType="breasts"})
 		addGenericOrgasmText(SUB_0, extraText)

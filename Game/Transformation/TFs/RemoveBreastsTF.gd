@@ -15,11 +15,11 @@ func getPillName() -> String:
 
 func getUnlockData() -> Dictionary:
 	return {
-		eliza = "Hmm. This pill seems to be formulated with a combination of hormonal suppressants and fat-reducing agents that could target breast tissue. When taken, it will probably lead to a flattening effect on the breasts. I think I’ll call it.. 'BreastsBeGone.' It perfectly captures the intended result!",
+		eliza = "Хм. Похоже, эта таблетка содержит комбинацию гормональных супрессоров и жиросжигающих агентов, нацеленных именно на ткани молочных желез. При приеме она, скорее всего, приведет к эффекту уплощения груди. Думаю, назову её... «Грудь-Прощай». Это название идеально отражает желаемый результат!",
 	}
 
 func getPillDatabaseDesc() -> String:
-	return "This drug will decrease the size of breasts. It does so one size at a time until a completely flat chest has been achieved. It will [b]not[/b] turn your breasts into pecs.\n\nThe first stage will happen after a few minutes. After that, the next ones will happen roughly every 5 hours. This could be accelerated by using the QuickShift drug or by stimulating the test subject’s breasts while their nipples are [b]sore[/b].\n\nThis drug doesn’t have a set amount of stages. It will keep making breasts smaller while that is possible."
+	return "Этот препарат уменьшает размер груди. Он делает это поэтапно, на один размер за раз, пока грудь не станет полностью плоской. Он [b]не[/b] превратит твою грудь в мужские грудные мышцы.\n\nПервая стадия наступит через несколько минут. После этого последующие будут происходить примерно каждые 5 часов. Процесс можно ускорить с помощью препарата QuickShift или путем стимуляции груди подопытной, когда её соски [b]чувствительны[/b].\n\nУ этого препарата нет фиксированного количества стадий. Он будет продолжать уменьшать грудь до тех пор, пока это физически возможно."
 
 func getTFCheckTags() -> Dictionary:
 	return {

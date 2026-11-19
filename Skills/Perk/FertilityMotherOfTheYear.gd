@@ -9,8 +9,8 @@ func getVisibleName():
 
 func getVisibleDescription():
 	return "Корпорация заметила твои старания и хочет вознаградить тебя!\n" \
-			+ "You receive a 'Maternal Glow' status effect for 2 days after giving birth.\n" \
-			+ "AlphaCorp will transfer credits to you for each birth (up to 20 per birth)."
+			+ "После родов вы получаете статус «Материнское сияние» на 2 дня.\n" \
+			+ "AlphaCorp будет перечислять вам кредиты за каждую рожденную особь (максимум до 20 за раз)."
 	
 func getRequiredPerks():
 	return [Perk.FertilitySubmissiveAndBreedable]

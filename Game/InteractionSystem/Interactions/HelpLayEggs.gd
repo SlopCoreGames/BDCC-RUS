@@ -36,9 +36,9 @@ func getAnimData() -> Array:
 
 func getPreviewLineForRole(_role:String) -> String:
 	if(_role == "target"):
-		return "{target.name} is trying to lay eggs.."
+		return "{target.name} пытается отложить яйца..."
 	if(_role == "main"):
-		return "{main.name} is doing something with {target.name}."
+		return "{main.name} что-то делает с {target.name}."
 	return .getPreviewLineForRole(_role)
 
 func getActivityIconForRole(_role:String):

@@ -17,7 +17,7 @@ func _init():
 	npcHasMenstrualCycle = true
 	
 func _getName():
-	return "Jacki Northstar"
+	return "Джеки Нортстар"
 
 func getGender():
 	return Gender.Female

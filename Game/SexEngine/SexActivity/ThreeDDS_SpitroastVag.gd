@@ -147,7 +147,7 @@ func sex_processTurn():
 	stimulateSex(DOM_0, SUB_0, usedBodypart, I_NORMAL)
 	stimulateSex(DOM_1, SUB_0, S_MOUTH, I_NORMAL)
 	
-	doProcessFuck(DOM_0, SUB_0, usedBodypart, " in a spitroast position")
+	doProcessFuck(DOM_0, SUB_0, usedBodypart, " в позиции сплитроаст")
 	doProcessFuck(DOM_1, SUB_0, S_MOUTH)
 	
 	if(RNG.chance(30) && isCloseToCumming(DOM_0) && isCloseToCumming(DOM_1)):

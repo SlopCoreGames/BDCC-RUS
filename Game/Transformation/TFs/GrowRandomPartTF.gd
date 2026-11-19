@@ -16,11 +16,11 @@ func getPillName() -> String:
 
 func getUnlockData() -> Dictionary:
 	return {
-		eliza = "Oh, neat! This pill appears to contain an unstable blend of morphogenetic agents and cellular triggers that could stimulate tissue transformation in unpredictable ways. When ingested, it will probably affect some part of your body in some way.. I think I’ll call it.. 'VariLimb.' There is a catch actually.. It requires a very specific fluid to synthesize, not very common.",
+		eliza = "О, как мило! Похоже, эта таблетка содержит нестабильную смесь морфогенетических агентов и клеточных триггеров, которые могут вызвать непредсказуемую трансформацию тканей. При приеме она, скорее всего, как-то повлияет на какую-нибудь часть твоего тела... Думаю, назову её... «ВариЛимб». Но есть один нюанс... Для её синтеза требуется очень специфическая жидкость, которая встречается не так уж часто.",
 	}
 
 func getPillDatabaseDesc() -> String:
-	return "This drug will grow you a completely random bodypart. It might change one of the existing ones but it could also grow a new one too.\n\nThe first stage will happen after about 10 minutes. After that, the next one will happen after roughly 40 minutes. This could be accelerated only by using the QuickShift drug.\n\nThis drug has 2 stages.\n\nIt’s possible to pick which bodypart type to grow by using the advanced lab equipment."
+	return "Этот препарат вырастит тебе совершенно случайную часть тела. Он может изменить одну из уже существующих или вырастить новую.\n\nПервая стадия наступит примерно через 10 минут. После этого следующая произойдет где-то через 40 минут. Ускорить процесс можно только с помощью препарата «QuickShift».\n\nУ этого препарата 2 стадии.\n\nС помощью продвинутого лабораторного оборудования можно выбрать тип вырастающей части тела."
 
 func getTFCheckTags() -> Dictionary:
 	return {
@@ -50,7 +50,7 @@ func getPillOptions() -> Dictionary:
 			continue
 		if(thePart.getSlot() in [BodypartSlot.Hair]):
 			continue
-		theParts.append([partID, thePart.getCharacterCreatorName(), "Slot is '"+BodypartSlot.getVisibleName(thePart.getSlot())+"'"])
+		theParts.append([partID, thePart.getCharacterCreatorName(), "Слот: '"+BodypartSlot.getVisibleName(thePart.getSlot())+"'"])
 	
 	return {
 		"specificPartID": {

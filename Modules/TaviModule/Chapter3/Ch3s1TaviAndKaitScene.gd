@@ -66,7 +66,7 @@ func _run():
 
 		saynn("[say=kait]Тави.[/say]")
 
-		addButton("А?", "Посмотри на неё", "huh?")
+		addButton("А?", "Посмотри на неё", "А?")
 
 	if(state == "huh?"):
 		playAnimation(StageScene.Duo, "stand", {pc="tavi", npc="kait"})
@@ -492,7 +492,7 @@ func _run():
 
 		saynn("Ну что ж. Похоже, эти парни тебя просто так не отпустят. Пора переходить к делу.")
 
-		addButton("Секс?", "Смотреть, что будет дальше", "sex?")
+		addButton("Секс?", "Смотреть, что будет дальше", "секс?")
 
 	if(state == "sex?"):
 		playAnimation(StageScene.Solo, "kneel")

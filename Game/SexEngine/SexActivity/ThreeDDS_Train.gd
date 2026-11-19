@@ -168,8 +168,8 @@ func sex_processTurn():
 	stimulateSex(DOM_0, SUB_0, usedBodypart, I_NORMAL)
 	stimulateSex(SUB_0, DOM_1, usedBodypart2, I_NORMAL)
 	
-	doProcessFuck(DOM_0, SUB_0, usedBodypart, " in a train position")
-	doProcessFuck(SUB_0, DOM_1, usedBodypart2, " in a train position")
+	doProcessFuck(DOM_0, SUB_0, usedBodypart, " в позе «поезд»")
+	doProcessFuck(SUB_0, DOM_1, usedBodypart2, " в позе «поезд»")
 	
 #	if(RNG.chance(30) && isCloseToCumming(DOM_0) && isCloseToCumming(DOM_1)):
 #		addTextPick([

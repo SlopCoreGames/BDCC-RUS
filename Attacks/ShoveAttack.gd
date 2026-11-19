@@ -37,7 +37,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 
 
 func getAnticipationText(_attacker, _receiver):
-	return "{attacker.name} frees {attacker.his} arms and tries to shove you"
+	return "{attacker.name} освобождает {attacker.his} руки и пытается толкнуть тебя"
 
 func getAIScore(_attacker, _receiver):
 	if(_receiver.hasEffect(StatusEffect.Collapsed)):

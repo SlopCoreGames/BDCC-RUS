@@ -221,12 +221,12 @@ static func moveNumberTowards(origNumber, targetNumber, speed):
 
 static func getSpeciesName(species: Array):
 	if(species.size() == 0):
-		return "Unknown species"
+		return "Неизвестный вид"
 	
 	if(species.size() == 1):
 		var specie = GlobalRegistry.getSpecies(species[0])
 		if specie == null:
-			return "Unknown species"
+			return "Неизвестный вид"
 		else:
 			return specie.getVisibleName()
 	
@@ -234,7 +234,7 @@ static func getSpeciesName(species: Array):
 	for specieID in species:
 		var specie = GlobalRegistry.getSpecies(specieID)
 		if specie == null:
-			names.append("Unknown species")
+			names.append("Неизвестный вид")
 		else:
 			names.append(specie.getVisibleName())
 	
@@ -597,7 +597,7 @@ static func dmgRangeArrayStr(damage: Array):
 static func getStackFunction(_depth = 2):
 	var stack = get_stack()
 	if(stack == null || !(stack is Array) || stack.size() <= 1):
-		return "No stack available"
+		return "Стек пуст"
 	stack.pop_front()
 	return "Stack="+str(shortenStackInfo(stack))
 

@@ -53,8 +53,8 @@ func translate(_targetLanguage, _inputText):
 	var theResult = {
 		error = false,
 		success = false,
-		errorMessage = "No error message provided",
-		resultText = "No text provided",
+		errorMessage = "Сообщение об ошибке не указано",
+		resultText = "Текст не предоставлен",
 	}
 	
 	var sourceLang = "EN"
@@ -102,7 +102,7 @@ func translate(_targetLanguage, _inputText):
 
 	if(reqerror != OK):
 		theResult["error"] = true
-		theResult["errorMessage"] = "An error occurred in the HTTP request."
+		theResult["errorMessage"] = "Произошла ошибка при HTTP-запросе."
 		newreq.queue_free()
 		return theResult
 	
@@ -110,14 +110,14 @@ func translate(_targetLanguage, _inputText):
 	
 	if(theData == null || !(theData is Array) || theData.size() != 4):
 		theResult["error"] = true
-		theResult["errorMessage"] = "HTTP request returned null data"
+		theResult["errorMessage"] = "HTTP-запрос вернул пустые данные"
 		newreq.queue_free()
 		return theResult
 	
 	var result = theData[0]
 	if result != HTTPRequest.RESULT_SUCCESS:
 		theResult["error"] = true
-		theResult["errorMessage"] = "HTTP request wasn't successful"
+		theResult["errorMessage"] = "HTTP-запрос не был успешным"
 		newreq.queue_free()
 		return theResult
 		
@@ -127,14 +127,14 @@ func translate(_targetLanguage, _inputText):
 	var jsonResult = JSON.parse(resultText)
 	if(jsonResult.error != OK):
 		theResult["error"] = true
-		theResult["errorMessage"] = "Couldn't parse json data"
+		theResult["errorMessage"] = "Не удалось разобрать JSON-данные"
 		return theResult
 	
 	var translateData = jsonResult.result
 	
 	if(!translateData.has("result") || !translateData["result"].has("texts")):
 		theResult["success"] = false
-		theResult["errorMessage"] = "No result in json"
+		theResult["errorMessage"] = "В JSON нет результатов"
 		print(translateData)
 		return
 	

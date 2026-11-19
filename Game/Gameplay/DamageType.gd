@@ -25,8 +25,8 @@ static func getBattleName(type) -> String:
 	if(type == Lust):
 		return "lust"
 	if(type == Stamina):
-		return "stamina damage"
-	return "error bad"
+		return "урон выносливостью"
+	return "ошибка, хреново"
 
 static func getColor(type) -> Color:
 	if(type == Physical):

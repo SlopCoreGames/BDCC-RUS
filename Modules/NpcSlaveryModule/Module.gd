@@ -63,11 +63,11 @@ func canKidnapCharacterReason(character) -> Array:
 	
 	var enslaveQuest:NpcEnslavementQuest = character.getEnslaveQuest()
 	if(!enslaveQuest):
-		return [false, "They are not prepared for this!"] # Shouldn't see this
+		return [false, "Они к этому не готовы!"] # Shouldn't see this
 	if(!enslaveQuest.isEverythingCompleted()):
-		return [false, "They are not ready to be kidnapped"]
+		return [false, "Они еще не готовы к похищению"]
 	if(GM.main.MS.isOnMission()):
-		return [false, "You can't kidnap anyone while on a mission"]
+		return [false, "Во время миссии нельзя никого похищать"]
 		
 	return [true]
 
@@ -80,12 +80,12 @@ func canStartEnslavingCharacterReason(character) -> Array:
 	
 	var pcRestraintsPreventChoking:bool = GM.pc.hasBlockedHands() || GM.pc.hasBoundArms()
 	if(pcRestraintsPreventChoking):
-		return [false, "You can't do that with restraints on your arms.."]
+		return [false, "Так нельзя, когда руки в кандалах..."]
 	if(!character.getInventory().hasEquippedItemWithTag(ItemTag.AllowsEnslaving)):
-		return [false, "They need to be wearing a collar for you to be able to enslave them"]
+		return [false, "Чтобы поработить кого-то, на нем должен быть надет ошейник"]
 	
 	if(GM.main.MS.isOnMission()):
-		return [false, "You can't ensalve anyone while on a mission"]
+		return [false, "Во время миссии нельзя никого порабощать"]
 	
 	return [true]
 

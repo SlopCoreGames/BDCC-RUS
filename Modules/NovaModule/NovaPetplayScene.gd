@@ -859,7 +859,7 @@ func _react(_action: String, _args):
 		GM.pc.addSkillExperience(Skill.SexSlave, 20, "nova_petsuckcock")
 	
 	if(_action in ["oral", "anal_fucking", "vaginalcum"]):
-		GM.main.addRoomMemoryCurrentLoc("You notice some cum stains, a sign that somebody had sex here. Meow? Bark?", 1)
+		GM.main.addRoomMemoryCurrentLoc("Ты замечаешь пятна спермы — верный признак того, что здесь кто-то трахался. Мяу? Гав?", 1)
 	
 	setState(_action)
 

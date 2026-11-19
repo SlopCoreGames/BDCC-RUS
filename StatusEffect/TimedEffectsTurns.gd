@@ -47,7 +47,7 @@ func getVisisbleDescription():
 	var theBuffsByTurns:Dictionary = character.getSortedBuffsDataByTime(character.timedBuffsTurns)
 	
 	for theTurns in theBuffsByTurns:
-		theTexts.append("Expire in "+str(theTurns)+" "+("turns" if theTurns != 1 else "turn:"))
+		theTexts.append("До истечения осталось "+str(theTurns)+" "+("turns" if theTurns != 1 else "turn:"))
 		
 		var theBuffs:Array = theBuffsByTurns[theTurns]
 		

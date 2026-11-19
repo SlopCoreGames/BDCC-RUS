@@ -174,7 +174,7 @@ func _react(_action: String, _args):
 
 
 	if(_action == "endthescene"):
-		GM.main.addRoomMemoryCurrentLoc("You remember humiliating Nova here not that long ago. Fun times", 3)
+		GM.main.addRoomMemoryCurrentLoc("Ты помнишь, как не так давно унижал здесь Нову. Весело было.", 3)
 		
 		endScene()
 		return

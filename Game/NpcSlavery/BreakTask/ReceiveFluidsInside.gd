@@ -38,10 +38,10 @@ func onSexEvent(_npc, _event:SexEvent):
 	return false
 
 func getTaskString():
-	return "Receive cum inside: "+getProgressStringFluids()
+	return "Кончить внутрь: "+getProgressStringFluids()
 
 func getTaskHint(_isSlaveLevelup):
-	return "Cum or spit inside their pussy/ass."
+	return "Кончить или плюнуть внутрь их киски/ануса."
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [

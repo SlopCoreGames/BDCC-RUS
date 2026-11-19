@@ -10,7 +10,7 @@ func getName() -> String:
 	return "Женственность"
 
 func getButtonDesc() -> String:
-	return "Point out the slave's femininity/masculinity.\n\n[b]Might[/b] reveal 1 mind preference of each bidder."
+	return "Укажите на женственность или мужественность рабыни/раба.\n\n[b]Возможно[/b] раскроет по одному предпочтениям разума каждого участника торгов."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	if(_slaveTraits.has("Masculine") && _slaveTraits["Masculine"] > 0.0):
@@ -53,25 +53,25 @@ func getTraits() -> Dictionary:
 func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	if(_slaveTraits.has("Masculine") && _slaveTraits["Masculine"] > 0.0):
 		return RNG.pick([
-			'Strong, I like that.',
-			'Very powerful.',
-			'Impressive physique.',
+			'Крепкая, мне такое нравится.',
+			'Очень мощная.',
+			'Впечатляющее телосложение.',
 			'Perfection.',
-			'Now we’re talking.',
+			'Вот это другое дело.',
 		])
 	if(_slaveTraits.has("Androgynous") && _slaveTraits["Androgynous"] > 0.0):
 		return RNG.pick([
 			'Perfection.',
 			'Captivating.',
-			'Interesting, for sure.',
+			'Определенно интересно.',
 		])
 	if(_slaveTraits.has("Feminine") && _slaveTraits["Feminine"] > 0.0):
 		return RNG.pick([
-			'Beautiful and graceful.',
-			'Just the right amount of girly!',
-			'Just the softness I like.',
+			'Красивая и грациозная.',
+			'В самый раз, такая девчачья!',
+			'Та самая мягкость, которую я люблю.',
 			'Gorgeous.',
-			'A true beauty.',
+			'Настоящая красавица.',
 		])
 	
 	return .getPositiveReaction(_char, _slaveTraits)

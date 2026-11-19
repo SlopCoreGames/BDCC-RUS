@@ -12,7 +12,7 @@ func getVisibleDescription():
 
 func getMoreDescription():
 	return 	"Теперь тебе могут встретиться заключенные, знающие о твоей уязвимости к внушению (шанс возрастает по мере того, как тебя всё чаще гипнотизируют)."+"\n\n"+\
-			"Keyword Fixation is now in effect whenever you are "+HypnokinkUtil.hypnosisIcon()+"Hypnotised."
+			"Теперь каждый раз, когда вы находитесь под "+HypnokinkUtil.hypnosisIcon()+"гипнозом, действует эффект «Фиксация на ключевом слове»."
 
 func getSkillTier():
 	return 1

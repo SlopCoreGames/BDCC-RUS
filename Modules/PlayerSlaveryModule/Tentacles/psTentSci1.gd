@@ -19,7 +19,7 @@ func _init():
 	npcHasMenstrualCycle = true
 	
 func _getName():
-	return "Wolf scientist"
+	return "Учёный-волк"
 
 func getGender():
 	return Gender.Male

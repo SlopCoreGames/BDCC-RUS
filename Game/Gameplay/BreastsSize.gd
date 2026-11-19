@@ -77,7 +77,7 @@ static func breastSizeToBoneScale(bsize:int):
 # Flat | A-cup | B-cup | C-cup | D-cup | DD-cup | DDD-cup | G-cup | H-cup | I-cup | J-cup | K-cup | L-cup | M-cup | N-cup | O-cup | P-cup | Q-cup | R-cup | S-cup | T-cup | U-cup | V-cup | W-cup | X-cup | Y-cup | Z-cup | ZA-cup | ZB-cup | ZC-cup | ZD-cup | ZE-cup | ZF-cup | ZG-cup | ZH-cup | ZI-cup | ZJ-cup | ZK-cup | ZL-cup | ZM-cup | ZN-cup | ZO-cup | ZP-cup | ZQ-cup | ZR-cup | ZS-cup | ZT-cup | ZU-cup | ZV-cup | ZW-cup | ZX-cup | ZY-cup | ZZ-cup | ZZA-cup | ZZB-cup | ZZC-cup | ZZD-cup | ZZE-cup | ZZF-cup | ZZG-cup | ZZH-cup | ZZI-cup | ZZJ-cup ..........
 static func breastSizeToNameProcedural(bsize:int, cupEnding:String="-cup"):
 	if(bsize <= -1):
-		return "Forever flat"
+		return "Навсегда плоские"
 	if(bsize <= 0):
 		return "Flat"
 	

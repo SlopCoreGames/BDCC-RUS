@@ -42,17 +42,17 @@ func getVisibleName(_topicID):
 
 func getChatName(_topicID) -> String:
 	if(_topicID == InterestTopic.ThickBody):
-		return "thick bodies"
+		return "пышные тела"
 	if(_topicID == InterestTopic.AverageMassBody):
-		return "average bodies"
+		return "средние тела"
 	if(_topicID == InterestTopic.SlimBody):
-		return "thin bodies"
+		return "худые тела"
 	if(_topicID == InterestTopic.ThickButt):
-		return "thick butts"
+		return "сочные задницы"
 	if(_topicID == InterestTopic.AverageButt):
-		return "average butts"
+		return "средние задницы"
 	if(_topicID == InterestTopic.SlimButt):
-		return "slim butts"
+		return "узкие задницы"
 	
 	return .getChatName(_topicID)
 

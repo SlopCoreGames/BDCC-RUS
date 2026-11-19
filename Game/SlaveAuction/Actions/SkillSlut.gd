@@ -10,7 +10,7 @@ func getName() -> String:
 	return "Навык шлюхи"
 
 func getButtonDesc() -> String:
-	return "Tell the bidders about the slave’s extensive training as a Slut.\n\n[b]Might[/b] reveal 1 personality preference of each bidder."
+	return "Расскажите участникам аукциона о богатом опыте рабыни в роли Шлюхи.\n\n[b]Возможно[/b] раскроет по одному предпочтению в характере у каждого участника."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
@@ -31,21 +31,21 @@ func getTraits() -> Dictionary:
 
 func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
-		'I like a well-trained whore.',
-		'Seems like a good investment.',
-		'With skills like that, this one will earn back the investment quickly.',
-		'Perfectly trained to please? Yes please.',
-		'Training sluts is so annoying. So this is worth it.',
-		'Sounds like a perfect addition to my collection of fucktoys.',
+		'Люблю хорошо натренированных шлюх.',
+		'Похоже на выгодную инвестицию.',
+		'С такими навыками эта сучка быстро окупит вложения.',
+		'Идеально обучена, чтобы доставлять удовольствие? Да, черт возьми, беру.',
+		'Дрессировать шлюх — сплошная морока. Но это того стоит.',
+		'Звучит как идеальное пополнение моей коллекции секс-игрушек.',
 	])
 
 func getNegativeReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
 		'I don\'t need a whore.',
-		'I\'m not looking for sluts.',
-		'You\'re selling a whore? Ugh.',
-		'I don\'t like total whores.',
-		'I\'d rather not.',
-		'I can buy whores off of streets for dirt-cheap.',
+		'Я не ищу шлюх.',
+		'Ты продаешь шлюху? Фу, ну и бред.',
+		'Не люблю совсем уж беспросветных шлюх.',
+		'Пожалуй, не стоит.',
+		'Я могу набрать шлюх прямо на улице за сущие копейки.',
 	])
 	

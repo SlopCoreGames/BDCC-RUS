@@ -13,7 +13,7 @@ func run(_triggerID, _args):
 		addDisabledButton("Артика", "Артика в своей камере")
 		return
 	
-	if(checkCharacterBusy("ArticaBusy", "Seems like the fluff is not here", "Artica")):
+	if(checkCharacterBusy("ArticaBusy", "Похоже, пушистика здесь нет", "Artica")):
 		return
 	
 	if(GM.main.getDays() < getFlag("ArticaModule.busyUntilDay", -1)):

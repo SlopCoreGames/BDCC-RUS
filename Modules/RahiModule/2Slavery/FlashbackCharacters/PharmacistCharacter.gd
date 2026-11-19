@@ -13,7 +13,7 @@ func _init():
 	}
 	
 func _getName():
-	return "Pharmacist girl"
+	return "Девушка-фармацевт"
 
 func getGender():
 	return Gender.Female

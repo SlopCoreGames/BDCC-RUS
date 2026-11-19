@@ -7,13 +7,13 @@ func getVisibleName():
 	return "Аксис"
 
 func getNameAndNickname():
-	return "Axis, The Alpha"
+	return "Аксис, Альфа"
 
 func getAvyIntroduction():
-	return "Your next opponent is Axis. Your average buff dude, this one was lucky enough to get to a high place on the leaderboard and keep it. Lone wolf but he is flirty as fuck, I won’t lie I almost spread my legs for him once, his scent is just too much."
+	return "Твой следующий противник — Аксис. Типичный качок, которому чертовски повезло заскочить высоко в таблице лидеров и удержаться там. Одиночка, но при этом охренительно флиртующий тип; не буду врать, я сама чуть было не развела ноги перед ним — от его запаха просто сносит крышу."
 	
 func getAnnouncerIntroduction():
-	return "And in the right corner we have Axis. One of our best warriors, a true white knight!"
+	return "А в правом углу у нас Аксис. Один из наших лучших бойцов, настоящий белый рыцарь!"
 	
 func getRank():
 	return FightClubRank.PlayToy

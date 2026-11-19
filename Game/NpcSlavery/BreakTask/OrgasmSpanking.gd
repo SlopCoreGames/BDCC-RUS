@@ -33,7 +33,7 @@ func getTaskString():
 	return "Orgasm (spanking): "+getProgressString()
 
 func getTaskHint(_isSlaveLevelup):
-	return "Force them to orgasm just from you spanking their butt!"
+	return "Заставь их дойти до оргазма одним лишь шлепками по задницам!"
 
 func getSexGoalWeightModifier(_sexGoalID:String) -> float:
 	if(_sexGoalID == SexGoal.SpankSub):

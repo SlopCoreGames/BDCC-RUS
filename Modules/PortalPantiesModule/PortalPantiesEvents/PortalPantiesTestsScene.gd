@@ -204,7 +204,7 @@ func _run():
 		else:
 			saynn("Это так приятно: мясистая ребристая текстура доильщика заставляет тебя чувствовать, будто ты трахаешься, быстро подгоняя тебя к первому оргазму.")
 
-		addButton("Кончай!", "Ты не можешь это вытерпеть", "cum!")
+		addButton("Кончай!", "Ты не можешь это вытерпеть", "кончай!")
 
 	if(state == "cum!"):
 		playAnimation(StageScene.SexPortalMasturbation, RNG.pick(["inside", "fast"]), {onlyLeft=true, npc="pc"})

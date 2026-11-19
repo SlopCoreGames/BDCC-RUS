@@ -9,7 +9,7 @@ func getName():
 	return "Добавить случайный текст"
 
 func getVisibleText():
-	return "Pick random text: " + storedTexts
+	return "Выбрать случайный текст: " + storedTexts
 
 func getArgs():
 	return {

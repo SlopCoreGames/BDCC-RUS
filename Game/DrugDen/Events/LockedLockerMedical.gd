@@ -29,7 +29,7 @@ func getInteractInfo() -> Dictionary:
 
 func doInteract(_actionID:String, _args:Array = []) -> Dictionary:
 	GM.pc.getInventory().removeXOfOrDestroy("restraintkey", 1)
-	return {text="Вы используете ключ, чтобы открыть медицинский шкафчик...", noLootText="Sadly, it's empty.", lootTable="junkieMedicalLocker", ended=true}
+	return {text="Вы используете ключ, чтобы открыть медицинский шкафчик...", noLootText="К сожалению, здесь пусто.", lootTable="junkieMedicalLocker", ended=true}
 
 func getMapIcon():
 	return RoomStuff.RoomSprite.IMPORTANT

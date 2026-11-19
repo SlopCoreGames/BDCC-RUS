@@ -19,9 +19,9 @@ var choices:Array = [
 		name = "Тон",
 		desc = "Что-то там",
 		options = [
-			["loving", "Lovingly", "Do it lovingly", RecruitChoiceResult.Red],
-			["strict", "Strict", "Be extremely strict", RecruitChoiceResult.Yellow],
-			["mean", "Mean", "Be extremely mean and rough about it", RecruitChoiceResult.Green]
+			["loving", "Lovingly", "Делай это с любовью", RecruitChoiceResult.Red],
+			["strict", "Strict", "Будь предельно строгой", RecruitChoiceResult.Yellow],
+			["mean", "Mean", "Будь максимально грубой и злой", RecruitChoiceResult.Green]
 		],
 	},
 ]
@@ -35,9 +35,9 @@ func getExtraChoices(_choices:Array, _extras:Dictionary) -> Array:
 			name = "Презерватив",
 			desc = "Что-то мяу-мяу",
 			options = [
-				["no", "No condom", "Don't use a condom"],
-				["worst", "Worst condom", "Use the worst condom you have"],
-				["best", "Best condom", "Use the best condom you have"],
+				["no", "Без презерватива", "Don't use a condom"],
+				["worst", "Худший презерватив", "Используй самый хреновый презерватив, какой есть"],
+				["best", "Лучший презерватив", "Используй самый лучший презерватив, какой есть"],
 			],
 		},
 		# Strapon pick
@@ -51,7 +51,7 @@ func isCombinationPossibleFinal(_choices:Array, _extras:Dictionary) -> Array:
 	for theExtra in theExtras:
 		var theID:String = theExtra["id"]
 		if(!_extras.has(theID)):
-			return [false, "'"+theExtra["name"]+"' option needs to be picked."]
+			return [false, "'"+theExtra["name"]+"Нужно выбрать вариант «'»."]
 	return isCombinationPossible(_choices, _extras)
 
 func getSceneToPlay(_choices:Array, _extras:Dictionary) -> String:
@@ -85,7 +85,7 @@ func getPresenterCharID() -> String:
 	return "kait"
 
 func getPresenterDialogue() -> String:
-	return "Want me to do it?"
+	return "Хочешь, чтобы я это сделала?"
 
 #var recruitID:String = ""
 #var choices:Array = [] # indicies
@@ -223,7 +223,7 @@ func hasHistory() -> bool:
 func getHistoryString() -> String:
 	if(history.empty()):
 		return ""
-	var result:Array = ["Previous plans:"]
+	var result:Array = ["Предыдущие планы:"]
 	for theEntry in history:
 		result.append(getColorStringForChoices(theEntry))
 	
@@ -231,7 +231,7 @@ func getHistoryString() -> String:
 
 func getStraponOptions() -> Array:
 	var result:Array = [
-		["default", "Default", "Use the strapon provided by your team"],
+		["default", "Default", "Используй страпон, выданный твоей командой"],
 	]
 	for strapon in GM.pc.getStrapons():
 		result.append([

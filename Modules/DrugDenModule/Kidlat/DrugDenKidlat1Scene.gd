@@ -116,6 +116,6 @@ func _react(_action: String, _args):
 	if(_action == "run_generic_shop_scene"):
 		endScene()
 		runScene("DrugDenKidlatShopScene")
-		setFlag("DrugDenModule.KidlatCustomShopGreet", "See something you like, luv?")
+		setFlag("DrugDenModule.KidlatCustomShopGreet", "Что-то приглянулось, дорогуша?")
 
 	setState(_action)

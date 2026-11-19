@@ -131,10 +131,10 @@ func _on_ResetRenderButton_pressed():
 	OPTIONS.resetRenderSettings()
 
 const TAB_TO_LABELTEXT = {
-	OPTIONS.TAB_GAMEPLAY: "Gameplay options",
-	OPTIONS.TAB_GAME: "Game options",
-	OPTIONS.TAB_DISPLAY: "Display options",
-	OPTIONS.TAB_INTERFACE: "Interface options",
+	OPTIONS.TAB_GAMEPLAY: "Настройки геймплея",
+	OPTIONS.TAB_GAME: "Настройки игры",
+	OPTIONS.TAB_DISPLAY: "Настройки дисплея",
+	OPTIONS.TAB_INTERFACE: "Настройки интерфейса",
 }
 
 func setTab(_tab:int):

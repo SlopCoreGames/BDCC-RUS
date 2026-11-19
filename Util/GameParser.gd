@@ -54,7 +54,7 @@ func callFuncWrapper(_command: String, _args: Array):
 			return GM.main.getCharacter("PCTentacles").getName()
 		return "щупальца"
 	
-	return "[color=red]!RUNTIME ERROR NO COMMAND FOUND "+_command+" "+str(_args)+"![/color]"
+	return "[color=red]!ОШИБКА RUNTIME: КОМАНДА НЕ НАЙДЕНА "+_command+" "+str(_args)+"![/color]"
 	
 func callObjectFunc(_obj: String, _command: String, _args: Array, overrides: Dictionary = {}) -> String:
 	if(overrides.has(_obj)):
@@ -83,7 +83,7 @@ func callObjectFuncWrapper(_obj: String, _command: String, _args: Array) -> Stri
 		object = GlobalRegistry.getCharacter(_obj)
 		
 	if(object == null):
-		return "[color=red]!RUNTIME ERROR NO CHARACTER FOUND "+_obj+"."+_command+" "+str(_args)+"![/color]"
+		return "[color=red]!ОШИБКА RUNTIME: ПЕРСОНАЖ НЕ НАЙДЕН "+_obj+"."+_command+" "+str(_args)+"![/color]"
 	if(_command == "theyre" && _args.size() == 0):
 		return object.theyre()
 	if(_command in ["youre"] && _args.size() == 0):
@@ -309,13 +309,13 @@ func callObjectFuncWrapper(_obj: String, _command: String, _args: Array) -> Stri
 			if(RNG.chance(50) && object.isReadyToPenetrate()):
 				return RNG.pick(["твёрдый ", "пульсирующий ", "оголённый ", "подрагивающий "]) + RNG.pick(["член", "ствол", "пенис"])
 			return RNG.pick(["член", "ствол", "пенис"])
-		return "[color=red]NO PENIS OR STRAPON[/color]"
+		return "[color=red]НЕТ ПЕНИСА ИЛИ СТРАПОНА[/color]"
 	if(_command in ["penisType"] && _args.size() == 0 && object.has_method("getBodypartLewdDescriptionAndName")):
 		if(object.isWearingStrapon()):
 			return RNG.pick(["страпон"])
 		if(object.hasPenis()):
 			return RNG.pick(["член", "ствол", "пенис"])
-		return "[color=red]NO PENIS OR STRAPON[/color]"
+		return "[color=red]НЕТ ПЕНИСА ИЛИ СТРАПОНА[/color]"
 	if(_command in ["aPenis", "aCock", "aDick"] && _args.size() == 0 && object.has_method("getBodypartLewdDescriptionAndNameWithA")):
 		return object.getBodypartLewdDescriptionAndNameWithA(BodypartSlot.Penis)
 	if(_command in ["penisSize", "cockSize", "dickSize"] && _args.size() == 0 && object.has_method("getBodypartLewdSizeAdjective")):
@@ -562,4 +562,4 @@ func callObjectFuncWrapper(_obj: String, _command: String, _args: Array) -> Stri
 			return "подошва"
 		return "палец"
 	
-	return "[color=red]!RUNTIME ERROR NO COMMAND FOUND "+_obj+"."+_command+" "+str(_args)+"![/color]"
+	return "[color=red]!ОШИБКА RUNTIME: КОМАНДА НЕ НАЙДЕНА "+_obj+"."+_command+" "+str(_args)+"![/color]"

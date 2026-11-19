@@ -25,7 +25,7 @@ func _init():
 	}
 	
 func _getName():
-	return "Quiet Bully"
+	return "Тихий задира"
 
 func getGender():
 	return Gender.Male

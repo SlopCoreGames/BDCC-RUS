@@ -59,10 +59,10 @@ func walking_do(_id:String, _args:Array):
 	if(_id == "walk"):
 		doWalk()
 		
-		if(checkProtect("You were being pulled by a leash..")):
+		if(checkProtect("Тебя тащили на поводке...")):
 			return
 		
-		checkSubEvent(E_PARADE_TO, "You were being paraded by your owner..", [getFreePawnsNear(2)])
+		checkSubEvent(E_PARADE_TO, "Твой хозяин выставлял тебя напоказ...", [getFreePawnsNear(2)])
 
 func isPlayerOnALeash() -> bool:
 	return true

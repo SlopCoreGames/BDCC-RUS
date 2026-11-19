@@ -10,7 +10,7 @@ func setup():
 	pass
 
 func translate(_targetLanguage, _inputText):
-	return "Error. I'm just a dummy translator."
+	return "Ошибка. Я всего лишь тупой переводчик."
 
 func translateFinal(_targetLanguage:String, _inputText:String) -> Dictionary:
 	var theRes = translate(_targetLanguage, _inputText)
@@ -23,8 +23,8 @@ func translateFinal(_targetLanguage:String, _inputText:String) -> Dictionary:
 		return {
 			error = true,
 			success = false,
-			errorMessage = "No error message provided",
-			resultText = "No text provided",
+			errorMessage = "Сообщение об ошибке не указано",
+			resultText = "Текст не предоставлен",
 		}
 	
 	if(theRes.get("error", false)):

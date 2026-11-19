@@ -203,18 +203,18 @@ func getButtTightness():
 	if(buttscore <= 0):
 		return "virgin-tight"
 	if(buttscore <= 1):
-		return "extremely tight"
+		return "невероятно узкая"
 	if(buttscore <= 2):
-		return "pretty tight"
+		return "довольно узкая"
 	if(buttscore <= 3):
-		return "somewhat tight"
+		return "скорее узкая"
 	if(buttscore <= 4):
-		return "slightly used"
+		return "слегка поношенная"
 	if(buttscore <= 5):
-		return "very stretchy and used"
+		return "очень растянутая и поношенная"
 	if(buttscore <= 6):
-		return "fully stretchy"
-	return "extremely stretchy"
+		return "полностью растянутая"
+	return "невероятно растянутая"
 
 func makeJackiBusy(howManyDays = 1):
 	setFlag("JackiModule.jackiBusyUntil", GM.main.getDays() + howManyDays)
@@ -223,72 +223,72 @@ func getAngerText():
 	var currentAnger = getFlag("JackiModule.jackiAnger", 0.0)
 	
 	if(currentAnger < 0.1 && currentAnger >= -0.1):
-		return "indifferent towards you"
+		return "безразлична к тебе"
 	elif(currentAnger > 0.0):
 		if(currentAnger < 0.15):
-			return "annoyed slightly"
+			return "слегка раздражена"
 		if(currentAnger < 0.25):
-			return "is annoyed with you"
+			return "раздражена тобой"
 		if(currentAnger < 0.35):
-			return "very annoyed"
+			return "сильно раздражена"
 		if(currentAnger < 0.45):
-			return "is mad at you"
+			return "злится на тебя"
 		if(currentAnger < 0.55):
-			return "is really mad at you"
+			return "в бешенстве от тебя"
 		if(currentAnger < 0.65):
-			return "despises you"
+			return "презирает тебя"
 		if(currentAnger < 0.75):
-			return "doesn't like anything about you"
+			return "в тебе нет ничего, что бы ей нравилось"
 		if(currentAnger < 0.85):
-			return "would rather live on another planet away from you"
+			return "лучше бы жила на другой планете, лишь бы подальше от тебя"
 		if(currentAnger < 0.95):
-			return "pretty much hates you"
-		return "hates you"
+			return "почти ненавидит тебя"
+		return "ненавидит тебя"
 	else:
 		if(currentAnger > -0.15):
-			return "doesn't mind you"
+			return "ты ей в целом не противен"
 		if(currentAnger > -0.25):
-			return "kinda likes you"
+			return "ты ей вроде как нравишься"
 		if(currentAnger > -0.35):
-			return "likes you"
+			return "ты ей нравишься"
 		if(currentAnger > -0.45):
-			return "likes you very much"
+			return "ты ей очень нравишься"
 		if(currentAnger > -0.55):
-			return "enjoys your presence"
+			return "ей приятно твое общество"
 		if(currentAnger > -0.65):
-			return "thinks you're very nice"
+			return "считает тебя очень милым"
 		if(currentAnger > -0.75):
-			return "adores you"
+			return "обожает тебя"
 		if(currentAnger > -0.85):
-			return "values your friendship"
+			return "ценит вашу дружбу"
 		if(currentAnger > -0.95):
-			return "values you"
-		return "likes you"
+			return "дорожит тобой"
+		return "ты ей симпатичен"
 			
 func getLustText():
 	var currentLust = getFlag("JackiModule.jackiLust", 0.0)
 	
 	if(currentLust <= 0.01):
-		return "no lust towards anything"
+		return "никакого вожделения ни к кому"
 	if(currentLust <= 0.1):
-		return "barely intrigued"
+		return "едва заинтригована"
 	if(currentLust <= 0.2):
-		return "slight curiosity"
+		return "легкое любопытство"
 	if(currentLust <= 0.3):
-		return "emerging interest towards lewd"
+		return "зарождающийся интерес к пошлостям"
 	if(currentLust <= 0.4):
-		return "growing attraction towards sex"
+		return "растущее влечение к сексу"
 	if(currentLust <= 0.5):
-		return "fascination with sex"
+		return "одержимость сексом"
 	if(currentLust <= 0.6):
-		return "strong desire to be fucked"
+		return "сильное желание, чтобы ее трахнули"
 	if(currentLust <= 0.7):
-		return "intense longing"
+		return "неистовая жажда"
 	if(currentLust <= 0.8):
-		return "overpowering lust"
+		return "всепоглощающая похоть"
 	if(currentLust <= 0.9):
-		return "consuming passion"
-	return "total infatuation"
+		return "всепоглощающая страсть"
+	return "полное обожание"
 
 func getCorruptionText():
 	var currentLust = getFlag("JackiModule.jackiCorruption", 0.0)
@@ -296,21 +296,21 @@ func getCorruptionText():
 	if(currentLust <= 0.01):
 		return "pure"
 	if(currentLust <= 0.1):
-		return "virtually pure"
+		return "практически чистая"
 	if(currentLust <= 0.2):
-		return "losing innocence"
+		return "теряющая невинность"
 	if(currentLust <= 0.3):
-		return "inner fight"
+		return "внутренняя борьба"
 	if(currentLust <= 0.4):
-		return "mild degradation"
+		return "легкая деградация"
 	if(currentLust <= 0.5):
-		return "loves it rough"
+		return "любит пожестче"
 	if(currentLust <= 0.6):
-		return "heavy degradation of morals"
+		return "сильная моральная деградация"
 	if(currentLust <= 0.7):
-		return "pretty much a slut"
+		return "почти настоящая шлюха"
 	if(currentLust <= 0.8):
-		return "curious slut"
+		return "любопытная шлюха"
 	if(currentLust <= 0.9):
-		return "eager slut"
-	return "total slut"
+		return "жадная шлюха"
+	return "полная шлюха"

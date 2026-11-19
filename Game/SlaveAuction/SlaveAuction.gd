@@ -161,9 +161,9 @@ func getActions() -> Array:
 	var result:Array = []
 	
 	if(state == "react"):
-		result.append(GlobalRegistry.getAuctionAction("Продолжить"))
+		result.append(GlobalRegistry.getAuctionAction("Continue"))
 	elif(state == "ended"):
-		result.append(GlobalRegistry.getAuctionAction("Продолжить"))
+		result.append(GlobalRegistry.getAuctionAction("Continue"))
 	elif(state == "start"):
 		for actionID in GlobalRegistry.getAuctionActions():
 			var theAction:AuctionAction = GlobalRegistry.getAuctionAction(actionID)
@@ -198,7 +198,7 @@ func canDoAction(_auctionAction:AuctionAction) -> Array:
 	
 	if(_auctionAction.canOnlyUseOnce()):
 		if(usedActions.has(_auctionAction.id)):
-			return [false, "You already used this action"]
+			return [false, "Вы уже использовали это действие"]
 	
 	var canUseInfo:Array = _auctionAction.canUse(getChar(), slaveTraits)
 	if(!canUseInfo[0]):
@@ -216,7 +216,7 @@ func canDoAction(_auctionAction:AuctionAction) -> Array:
 			canUseAction = true
 		
 		if(!canUseAction):
-			return [false, "Your slave lacks the traits required for this action"]
+			return [false, "Вашему рабу не хватает черт, необходимых для этого действия"]
 			
 #	var traitsToCheck:Dictionary = _auctionAction.getTraits()
 #	if(!traitsToCheck.empty()):
@@ -243,19 +243,19 @@ func doAction(_auctionAction:AuctionAction):
 			bidLastChances += 1
 			if(bidLastChances == 1):
 				if(hasAnyBids()):
-					saynnPresenter(str(currentBid)+" credits. Going once."+getGoingOnceText())
+					saynnPresenter(str(currentBid)+" кредитов. Раз!"+getGoingOnceText())
 				else:
-					saynnPresenter("No bids. Going once."+getGoingOnceTextNoBids())
+					saynnPresenter("Ставок нет. Раз!"+getGoingOnceTextNoBids())
 			elif(bidLastChances == 2):
 				if(hasAnyBids()):
-					saynnPresenter(str(currentBid)+" credits. Going twice."+getGoingTwiceText())
+					saynnPresenter(str(currentBid)+" кредитов. Два!"+getGoingTwiceText())
 				else:
-					saynnPresenter("No bids. Going twice."+getGoingTwiceTextNoBids())
+					saynnPresenter("Ставок нет. Два!"+getGoingTwiceTextNoBids())
 			elif(bidLastChances == 3):
 				state = "ended"
 				
 				if(hasAnyBids()):
-					saynnPresenter("SOLD!")
+					saynnPresenter("ПРОДАНО!")
 					
 					var soldBidder:AuctionBidder = bidders[lastBidderIndex]
 					
@@ -290,7 +290,7 @@ func doAction(_auctionAction:AuctionAction):
 						sayn("Открыто: "+str(totalRevealedTraitsPositive+totalRevealedTraitsNegative)+" ("+str(Util.roundF(float(totalRevealedTraitsPositive+totalRevealedTraitsNegative)/float(totalTraitsPositive+totalTraitsNegative)*100.0, 1))+"%), Положительные: "+str(totalRevealedTraitsPositive)+" ("+str(Util.roundF(float(totalRevealedTraitsPositive)/float(totalTraitsPositive)*100.0, 1))+"%), Отрицательные: "+str(totalRevealedTraitsNegative)+" ("+str(Util.roundF(float(totalRevealedTraitsNegative)/float(totalTraitsNegative)*100.0, 1))+"%)")
 						sayn("Попадание: "+str(totalHitTraitsPositive+totalHitTraitsNegative)+" ("+str(Util.roundF(float(totalHitTraitsPositive+totalHitTraitsNegative)/float(totalTraitsPositive+totalTraitsNegative)*100.0, 1))+"%), Положительные: "+str(totalHitTraitsPositive)+" ("+str(Util.roundF(float(totalHitTraitsPositive)/float(totalTraitsPositive)*100.0, 1))+"%), Отрицательные: "+str(totalHitTraitsNegative)+" ("+str(Util.roundF(float(totalHitTraitsNegative)/float(totalTraitsNegative)*100.0, 1))+"%)")
 				else:
-					saynnPresenter("That's it.. Time is up.")
+					saynnPresenter("На этом всё... Время вышло.")
 					
 					saynn("Раба никто не купил...")
 				
@@ -310,7 +310,7 @@ func doAction(_auctionAction:AuctionAction):
 	
 	var theResult:Dictionary = _auctionAction.onActFinal(getChar(), self, slaveTraits)
 	if(!theResult.has("text")):
-		theResult["text"] = "NO ACTION TEXT PROVIDED, FIX ME"
+		theResult["text"] = "ТЕКСТ ДЕЙСТВИЯ НЕ УКАЗАН, ИСПРАВЬТЕ МЕНЯ"
 	
 	saynn(theResult["text"])
 	#actionText = theResult["text"]
@@ -391,7 +391,7 @@ func doAction(_auctionAction:AuctionAction):
 		sayn("")
 
 	if(roundNumber == getSoftEndRound()):
-		saynnPresenter("We’re wrapping now, folks! Get your bids in while you can!")
+		saynnPresenter("Мы закругляемся, народ! Делайте ставки, пока есть возможность!")
 
 	doRoundOfBiddingWithChecks()
 		
@@ -511,12 +511,12 @@ func doRoundOfBidding() -> int:
 						theDot = "!"
 					var prefix:String = ""
 					if(willRaise):
-						prefix = "I will raise it to "
+						prefix = "Я подниму ставку до "
 						
 					if(resultBidAmount == 0 || RNG.chance(80 - resultBidAmount*10 - totalBidTimes*3)):
-						saynn("[say="+bidder.bidderID+"]"+prefix+str(currentBid)+" credits"+theDot+"[/say]")
+						saynn("[say="+bidder.bidderID+"]"+prefix+str(currentBid)+" кредитов"+theDot+"[/say]")
 					else:
-						saynn("[say="+bidder.bidderID+"]"+prefix+str(currentBid)+" credits"+theDot+" "+bidder.getOutbidReaction()+"[/say]")
+						saynn("[say="+bidder.bidderID+"]"+prefix+str(currentBid)+" кредитов"+theDot+" "+bidder.getOutbidReaction()+"[/say]")
 					
 					
 					#saynn(bidder.name+" выставил(а) "+str(currentBid)+" кредитов.")
@@ -683,7 +683,7 @@ func getSlaveBiddingReactionText() -> String:
 		return RNG.pick([
 			"Челюсти {slave.name} сжимаются всё сильнее с каждой новой ставкой, а во взгляде {slave.his} разгорается ярость.",
 			"{slave.name} свирепо смотрит на толпу; в её глазах кипит ненависть, и она словно бросает вызов аукционистам, готовая в любой момент броситься на них в драку.",
-			"{slave.name} growls under {slave.his} breath, the rising bids only fueling {slave.his} anger further.",
+			"{slave.name} рычит сквозь стиснутые зубы, и растущие ставки лишь сильнее разжигают {slave.his} ярость.",
 			"{slave.name} сплевывает на землю, и агрессивная борьба за ставки бесит {slave.him} еще сильнее.",
 			"Глаза {slave.name} горят вызовом по мере того, как растут ставки; она явно не собирается смиренно принимать {slave.his} судьбу.",
 			"{slave.name} дергается в {slave.his} оковах, и с каждой новой ставкой {slave.him} все решительнее пытается сопротивляться.",
@@ -694,30 +694,30 @@ func getSlaveBiddingReactionDialogue() -> String:
 	var _reactionType = getSlaveReactionType()
 	if(_reactionType == AuctionSlaveReaction.Obedient):
 		return RNG.pick([
-			'I’ll serve.. whoever wins.. I will do my best.',
-			'I.. accept my fate. Whoever chooses me, I’m ready.',
-			'Please.. I only want to be useful.',
-			'I’ll obey.. I’ll obey anyone who wins.',
-			'I was trained for this.. I won’t disappoint.',
-			'I belong to whoever decides.. I’ll serve loyally.',
+			'Я буду служить... тому, кто победит... Я сделаю всё возможное.',
+			'Я... принимаю свою судьбу. Кто бы меня ни выбрал, я готова.',
+			'Пожалуйста... я просто хочу быть полезной.',
+			'Я буду повиноваться... буду слушаться любого, кто выиграет.',
+			'Меня готовили к этому... я не подведу.',
+			'Я принадлежу тому, кто решит... я буду верной служанкой.',
 		])
 	if(_reactionType == AuctionSlaveReaction.Confused):
 		return RNG.pick([
-			'Please.. stop this.. I don’t understand.',
-			'I don’t know why.. this is happening.. please..',
-			'I just want to go back.. please let me go.',
-			'Why are you doing this? I didn’t ask for any of this..',
-			'I don’t want to be sold.. Please, someone help me!',
-			'This.. can’t be happening.. I don’t belong here.',
+			'Пожалуйста... прекратите это... я ничего не понимаю.',
+			'Не знаю, почему... всё это происходит... пожалуйста...',
+			'Я просто хочу вернуться... пожалуйста, отпустите меня.',
+			'Зачем вы это делаете? Я об этом не просила...',
+			'Я не хочу, чтобы меня продали... Пожалуйста, пусть кто-нибудь поможет мне!',
+			'Этого... не может быть... Мне здесь не место.',
 		])
 	if(_reactionType == AuctionSlaveReaction.Shy):
 		return RNG.pick([
-			'Wh-why are they bidding so much for me?',
-			'I.. I don’t know if I deserve this kind of attention.',
-			'Th-they’re fighting over me.. I can’t believe it.',
-			'I-I don’t understand.. why are they all looking at me?',
-			'This is too much.. I don’t want them staring at me like that.',
-			'They’re all watching me.. I-I don’t know what to do!',
+			'По-почему они так много за меня дают?',
+			'Я... я не знаю, заслуживаю ли я такого внимания.',
+			'О-они сражаются за меня... Просто поверить в это не могу.',
+			'Я... я не понимаю... почему они все так на меня смотрят?',
+			'Это уже слишком... Не хочу, чтобы они пялились на меня вот так.',
+			'Они все смотрят на меня... Я... я не знаю, что делать!',
 		])
 	if(_reactionType == AuctionSlaveReaction.MindBroken):
 		return RNG.pick([
@@ -729,21 +729,21 @@ func getSlaveBiddingReactionDialogue() -> String:
 		])
 	if(_reactionType == AuctionSlaveReaction.Desperate):
 		return RNG.pick([
-			'Why are you bidding on me?! Stop! I don’t want this!',
-			'Please, someone.. help me! Don’t leave me here!',
-			'Let me go! Stop fighting for me! I don’t belong here!',
-			'You can’t sell me! I’m not some object!',
-			'Someone.. anyone.. please get me out of here!',
-			'Stop bidding! I’m not for sale!',
+			'Зачем вы на меня ставите?! Хватит! Мне это не нужно!',
+			'Пожалуйста, кто-нибудь... помогите мне! Не бросайте меня здесь!',
+			'Отпустите меня! Хватит драться за меня! Мне здесь не место!',
+			'Вы не можете меня продать! Я не вещь!',
+			'Кто-нибудь... ну хоть кто-нибудь... пожалуйста, вытащите меня отсюда!',
+			'Прекратите торговаться! Я не товар!',
 		])
 	if(_reactionType == AuctionSlaveReaction.Angry):
 		return RNG.pick([
-			'Keep bidding, you bastards. You won’t break me!',
-			'I’m not afraid of you! You’ll regret this!',
-			'You think you own me? I’ll tear you apart!',
-			'Go ahead, fight over me. You’ll never control me.',
-			'I’m not some prize! I’ll make you pay for this!',
-			'Bid all you want, I’ll escape the moment you turn your back!',
+			'Торгуйтесь дальше, ублюдки. Но вы меня не сломите!',
+			'Я вас не боюсь! Вы еще пожалеете об этом!',
+			'Думаете, я ваша собственность? Да я вас на куски разорву!',
+			'Давайте, грызите друг другу глотки из-за меня. Но вам меня никогда не подчинить.',
+			'Я вам не приз! Вы еще за это заплатите!',
+			'Торгуйтесь сколько влезет, я сбегу в ту же секунду, как вы отвернетесь!',
 		])
 	return ""
 

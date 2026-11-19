@@ -32,7 +32,7 @@ func _run():
 
 		saynn("[say=alexrynard]Что?[/say]")
 
-		addButton("Безопасно?", "Спросить, что будет", "safe?")
+		addButton("Безопасно?", "Спросить, что будет", "безопасно?")
 		addButton("Надеть их", "Посмотреть, что будет", "put_them_on")
 
 	if(state == "safe?"):

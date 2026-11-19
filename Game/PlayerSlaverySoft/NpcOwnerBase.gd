@@ -166,28 +166,28 @@ func getOwner() -> BaseCharacter:
 func getOwnerName() -> String:
 	var theOwner := getOwner()
 	if(!theOwner):
-		return "Error!"
+		return "Ошибка!"
 	return theOwner.getName()
 
 func getRelationshipFullInfo() -> Array:
 	var result:Array = [
-		"Owner level: "+str(getLevel())+"/"+str(getMaxLevel()),
+		"Уровень владельца: "+str(getLevel())+"/"+str(getMaxLevel()),
 		"Influence: "+str(Util.roundF(getInfluence()*100.0, 1))+"%",
-		"Punishment points: "+str(punishAmount),
-		"Days enslaved: "+str(daysAmount),
+		"Очки наказания: "+str(punishAmount),
+		"Дней в рабстве: "+str(daysAmount),
 		"Slave's nickname: "+getPCName(),
 	]
 	if(hasOwnerLock()):
-		result.append("Keyholder satisfaction: "+str(Util.roundF(keyholderSatisfaction*100.0, 1))+"%")
+		result.append("Удовлетворенность держателя ключей: "+str(Util.roundF(keyholderSatisfaction*100.0, 1))+"%")
 	
 	return result
 
 func getBigDescription() -> String:
-	var theTexts:Array = ["This is your owner. You belong to your owner. Owners will occasionally approach and do something with you, as long as they have influence over you.\n"]
+	var theTexts:Array = ["Это твой владелец. Ты принадлежишь своему владельцу. Время от времени владельцы будут подходить к тебе и что-то с тобой делать, пока они имеют над тобой власть.\n"]
 	theTexts.append_array(getRelationshipFullInfo())
 	if(hasGivenPCTasks()):
 		theTexts.append("")
-		theTexts.append("Tasks that your owner gave you:")
+		theTexts.append("Задания, которые дал тебе владелец:")
 		theTexts.append_array(getQuestProgressArray())
 	
 
@@ -470,10 +470,10 @@ func onSkipPunish():
 func getOwnerInfo() -> Array:
 	var result:Array = []
 	
-	result.append("Level: "+str(level)+(" (Max level)" if getLevel() >= getMaxLevel() else ""))
+	result.append("Level: "+str(level)+(" (Макс. уровень)" if getLevel() >= getMaxLevel() else ""))
 	result.append("Influence: "+str(Util.roundF(influence*100.0, 1))+"%")
 	if(punishAmount > 0):
-		result.append("Punishment counter: "+str(punishAmount))
+		result.append("Счетчик наказаний: "+str(punishAmount))
 	
 	return result
 
@@ -498,24 +498,24 @@ func getTalkActions(_event) -> Array:
 	
 	if(!didInteractWithToday()):
 		result.append(talkAction("Submit", "Попроси хозяина что-нибудь с тобой сделать. Можно делать лишь раз в день. Если делаешь это по своей воле, снимается 1 очко наказания.", "submit"))
-		result.append(talkAction("Attack!", "Попытаться избавиться от влияния хозяина.", "attack"))
+		result.append(talkAction("Атака!", "Попытаться избавиться от влияния хозяина.", "attack"))
 	else:
-		result.append(talkActionDisabled("Submit", "Your owner doesn't feel like doing anything with you today anymore."))
-		result.append(talkActionDisabled("Attack!", "You have already interacted with your owner today."))
+		result.append(talkActionDisabled("Submit", "Твоему владельцу сегодня больше не хочется с тобой возиться."))
+		result.append(talkActionDisabled("Атака!", "Вы уже взаимодействовали со своим хозяином сегодня."))
 	
-	result.append(talkAction("Ask freedom", "Спросить хозяина, может ли он тебя отпустить,", "askFreedom"))
+	result.append(talkAction("Просить свободы", "Спросить хозяина, может ли он тебя отпустить,", "askFreedom"))
 	result.append(talkAction("Relationship", "Посмотреть прогресс ваших рабовладельческих отношений", "info"))
 	
 	if(getLevel() >= 1):
-		result.append(talkAction("Ask sex", "Попросить хозяина трахнуть тебя!", "askSex"))
+		result.append(talkAction("Просить секса", "Попросить хозяина трахнуть тебя!", "askSex"))
 	if(getLevel() >= 3):
-		result.append(talkAction("Change name", "Попросить хозяина изменить то, как он тебя называет", "changeName"))
+		result.append(talkAction("Изменить имя", "Попросить хозяина изменить то, как он тебя называет", "changeName"))
 	
 	if(hasOwnerLock()):
 		if(!didInteractWithToday()):
-			result.append(talkAction("Beg unlock", "Умолять хозяина освободить тебя.", "begUnlock"))
+			result.append(talkAction("Умолять развязать", "Умолять хозяина освободить тебя.", "begUnlock"))
 		else:
-			result.append(talkActionDisabled("Beg unlock", "You have already interacted with your owner today."))
+			result.append(talkActionDisabled("Умолять развязать", "Вы уже взаимодействовали со своим хозяином сегодня."))
 		
 	return result
 

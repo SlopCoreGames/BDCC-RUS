@@ -18,7 +18,7 @@ func _init():
 	
 func _getName():
 	if(GM.main != null && !GM.main.getFlag("ArticaModule.s4happened", false)):
-		return "White fluff"
+		return "Белый пух"
 	return "Artica"
 
 func getGender():

@@ -34,7 +34,7 @@ func start_eventResult(_event, _id:String, _args:Array):
 		runParadeTo(LOC_STOCKS)
 	if(_id == "paradeTo"):
 		setState("inStocks")
-		checkSubEvent("FuckInStocks", "You were about to be locked into stocks by {npc.name}..", [])
+		checkSubEvent("FuckInStocks", "Тебя уже собирались запереть в колодки {npc.name}..", [])
 	
 func inStocks():
 	playAnimation(StageScene.StocksSexOral, "tease", {npc=getRoleID(C_OWNER)})

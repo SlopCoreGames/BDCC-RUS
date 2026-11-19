@@ -5,7 +5,7 @@ var sneakyPaths = {
 		"text": "Вентиляционная шахта",
 		"desc": "Пролезь через вентиляцию и посмотри, куда она тебя выведет",
 		"newloc": "eng_firstjunction",
-		"arive": "You climb through the air vent and end up near the engineering block entrance"
+		"arive": "Ты пробираешься через вентиляционную шахту и оказываешься рядом со входом в инженерный блок"
 	}
 }
 

@@ -10,7 +10,7 @@ func getName() -> String:
 	return "Храбрая"
 
 func getButtonDesc() -> String:
-	return "Tell the bidders about the slave's bravery.\n\n[b]Might[/b] reveal 1 fetish preference of each bidder."
+	return "Расскажите участникам аукциона о храбрости рабыни.\n\n[b]Возможно[/b] раскроет по одному фетишу каждого участника."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([

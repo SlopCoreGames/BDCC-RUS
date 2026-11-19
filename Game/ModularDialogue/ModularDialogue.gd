@@ -29,7 +29,7 @@ const WORDS_UGH = [
 	"argh",
 	"ugh",
 	"ghh",
-	"ahhh!",
+	"аааах!",
 	"gah",
 	"fuck",
 ]
@@ -66,7 +66,7 @@ func generate(ID:String, _args:Dictionary, _defaultText:String = "") -> String:
 	var checkData:Array = theForm.checkArgs(_args)
 	if(!checkData[0]):
 		Log.printerr(checkData[1])
-		return "[color=red]MD ERROR ("+ID+"): "+checkData[1]+"[/color]"
+		return "[color=red]ОШИБКА MD ("+ID+"): "+checkData[1]+"[/color]"
 	
 	var resultLine:String = ""
 	if(fillers.has(ID)):

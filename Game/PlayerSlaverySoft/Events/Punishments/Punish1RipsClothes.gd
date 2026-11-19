@@ -31,7 +31,7 @@ func trySubEventStart(_event, _tag:String, _args:Array, _context:Dictionary) -> 
 				"Твой хозяин рвет твою одежду всё сильнее и сильнее!",
 				"{npc.He} остановится, только если {npc.verb('refuse')}!",
 			]))
-		damageTexts.append("Your "+damageItem.getVisibleName()+" got damaged! "+damageText)
+		damageTexts.append("Your "+damageItem.getVisibleName()+" изрядно потрепались! "+damageText)
 		
 	return true
 	

@@ -82,7 +82,7 @@ func _getAttacks():
 	return ["simplepunchattack", "ShivAttack", "simplekickattack", "BreedingTaunt", "biteattack", "trygetupattack"]
 
 func getFightIntro(_battleName):
-	var mes = "Stud rubs his fist and waits for your first move"
+	var mes = "Стад потирает кулак и ждет твоего первого хода"
 	return mes
 
 func getThickness() -> int:

@@ -10,7 +10,7 @@ func getVisibleDesc():
 	return "Превратите свою рабыню в личного питомца и получите возможность выводить её на прогулку"
 
 func getEnslaveText(_npc):
-	return "[say=pc]You're gonna make for such a good pet for me, little cute {npc.boy}.[/say]"
+	return "[say=pc]Из тебя выйдет отличная домашняя зверушка, моя милая {npc.boy}.[/say]"
 
 # F- F  F+ D- D  D+ C- C  B- B  A- A  S- S  S+ S++
 # 0  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15

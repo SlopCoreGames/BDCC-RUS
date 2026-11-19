@@ -10,7 +10,7 @@ func getName() -> String:
 	return "Сабби/Доминант"
 
 func getButtonDesc() -> String:
-	return "Tell the bidders about the slave's submissiveness.\n\n[b]Might[/b] reveal 1 fetish preference of each bidder."
+	return "Расскажите участникам аукциона о покорности рабыни.\n\n[b]Возможно[/b] раскроет по одному фетишу каждого участника."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	if(_slaveTraits.has("PersSubby") && _slaveTraits["PersSubby"] > 0.0):

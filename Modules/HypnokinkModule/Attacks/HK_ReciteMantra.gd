@@ -39,7 +39,7 @@ func getRequirements():
 	return [AttackRequirement.CanTalk]
 
 func getAnticipationText(_attacker, _receiver):
-	return "{attacker.name} closes {attacker.his} eyes."
+	return "{attacker.name} закрывает глаза {attacker.his}."
 
 #func getAttackSoloAnimation():
 #	return "shove"

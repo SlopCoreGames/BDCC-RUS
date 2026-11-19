@@ -87,7 +87,7 @@ func interestVerbalReaction(interest):
 		return "Оооо! А можно их подоить? Прямо очень хочется~"
 	
 func _getName():
-	return "Eliza Quinn"
+	return "Элиза Куинн"
 
 func getGender():
 	return Gender.Female

@@ -60,13 +60,13 @@ func getVisibleName(_topicID):
 
 func getChatName(_topicID) -> String:
 	if(_topicID == InterestTopic.LooseAnus):
-		return "stretched assholes"
+		return "растянутые анусы"
 	if(_topicID == InterestTopic.LoosePussy):
-		return "stretched pussies"
+		return "растянутые киски"
 	if(_topicID == InterestTopic.TightAnus):
-		return "tight assholes"
+		return "узкие анусы"
 	if(_topicID == InterestTopic.TightPussy):
-		return "tight pussies"
+		return "узкие киски"
 	
 	return .getChatName(_topicID)
 

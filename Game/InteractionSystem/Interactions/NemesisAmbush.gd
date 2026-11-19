@@ -176,7 +176,7 @@ func getAnimData() -> Array:
 
 func getPreviewLineForRole(_role:String) -> String:
 	#if(_role == "main"):
-	return "{"+_role+".name} is heading somewhere.."
+	return "{"+_role+".{name} куда-то направляется..."
 	#return .getPreviewLineForRole(_role)
 
 func getActivityIconForRole(_role:String):

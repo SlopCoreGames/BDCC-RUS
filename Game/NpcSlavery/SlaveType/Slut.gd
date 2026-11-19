@@ -10,7 +10,7 @@ func getVisibleDesc():
 	return "Превратите свою рабыню в шлюху-игрушку и получите возможность выставлять её на панель"
 
 func getEnslaveText(_npc):
-	return "[say=pc]I’m gonna make such a good fucktoy out of you, little slut.[/say]"
+	return "[say=pc]Из тебя выйдет просто охрененная секс-игрушка, маленькая шлюшка.[/say]"
 
 # F- F  F+ D- D  D+ C- C  B- B  A- A  S- S  S+ S++
 # 0  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15

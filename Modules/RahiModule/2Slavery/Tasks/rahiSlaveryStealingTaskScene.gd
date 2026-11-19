@@ -151,15 +151,15 @@ func _react(_action: String, _args):
 		else:
 			var possibleItems = [
 			["painkillers", "painkillers"],
-			["a single pregnancy test", "PregnancyTest"],
-			["an energy drink", "EnergyDrink"],
-			["a heat pill", "HeatPill"],
-			["a tube of lube", "lube"],
-			["a single condom", "QualityCondom"],
-			["a restraint key", "restraintkey"],
-			["a birth control pill", "BirthControlPill"],
-			["an anaphrodisiac pill", "AnaphrodisiacPill"],
-			["a breeder pill", "BreederPill"],
+			["один тест на беременность", "PregnancyTest"],
+			["энергетик", "EnergyDrink"],
+			["таблетка для стимуляции", "HeatPill"],
+			["тюбик лубриканта", "lube"],
+			["один презерватив", "QualityCondom"],
+			["ключ от наручников", "restraintkey"],
+			["таблетка противозачаточных", "BirthControlPill"],
+			["анафродизиак", "AnaphrodisiacPill"],
+			["таблетка для размножения", "BreederPill"],
 			]
 			var randomItem = RNG.pick(possibleItems)
 			GM.pc.getInventory().addItem(GlobalRegistry.createItem(randomItem[1]))

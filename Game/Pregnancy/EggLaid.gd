@@ -16,21 +16,21 @@ func getEggDescription() -> String:
 	if(laidBy != ""):
 		var theChar = GlobalRegistry.getCharacter(laidBy)
 		if(theChar == null):
-			byWho = "\n\nThis egg was laid by someone unknown.."
+			byWho = "\n\nЭто яйцо было отложено кем-то неизвестным..."
 		elif(laidBy == "pc"):
-			byWho = "\n\nThis egg was laid by you!"
+			byWho = "\n\nЭто яйцо отложили вы!"
 		else:
-			byWho = "\n\nThis egg was laid by "+str(theChar.getName())
+			byWho = "\n\nЭто яйцо было отложено "+str(theChar.getName())
 	
 	if(type == BigEggType.Plant):
-		return "Plant egg"+byWho
+		return "Посадить яйцо"+byWho
 	if(type == BigEggType.Latex):
-		return "An egg that is made out of latex. Doesn't have much use.. but it can be sold probably."+byWho
+		return "Яйцо из латекса. Особой пользы от него мало... но, наверное, его можно продать."+byWho
 	if(type == BigEggType.Unfertilized):
-		return "This egg wasn't fertilized. It contains no DNA and is therefore useless."+byWho
+		return "Это яйцо не было оплодотворено. В нём нет ДНК, так что оно бесполезно."+byWho
 	
 	if(data.empty()):
-		return "Unknown egg"+byWho
+		return "Неизвестное яйцо"+byWho
 	
 	var result:String = ""
 	var motherID:String = data.get("motherID", "")
@@ -65,21 +65,21 @@ func internal_charName(_charID:String) -> String:
 
 static func getNameByEggType(_type:int) -> String:
 	if(_type == BigEggType.Plant):
-		return "Plant egg"
+		return "Посадить яйцо"
 	if(_type == BigEggType.Latex):
-		return "Latex egg"
+		return "Латексное яйцо"
 	if(_type == BigEggType.Unfertilized):
-		return "Unfertilized egg"
-	return "Offspring egg"
+		return "Неоплодотворенное яйцо"
+	return "Яйцо потомства"
 
 static func getANameByEggType(_type:int) -> String:
 	if(_type == BigEggType.Plant):
-		return "A plant egg"
+		return "Растительное яйцо"
 	if(_type == BigEggType.Latex):
-		return "A latex egg"
+		return "Латексное яйцо"
 	if(_type == BigEggType.Unfertilized):
-		return "An unfertilized egg"
-	return "An offspring egg"
+		return "Неоплодотворенное яйцо"
+	return "Яйцо потомства"
 
 func addSelfToNursery() -> Array:
 	var theEggCell := createEggCell()

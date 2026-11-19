@@ -4,7 +4,7 @@ func _init():
 	id = "FetishExhibitionism"
 
 func getButtonDesc() -> String:
-	return "Reveal the slave’s love of being naked.\n\n[b]Might[/b] reveal 1 personality preference of each bidder."
+	return "Раскройте страсть рабыни к наготе.\n\n[b]Возможно[/b] раскроет по одной черте характера каждого участника аукциона."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([

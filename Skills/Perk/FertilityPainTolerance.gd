@@ -9,8 +9,8 @@ func getVisibleName():
 
 func getVisibleDescription():
 	return "Жизнь в тюрьме — штука тяжелая, особенно если ты постоянно беременна; все испытания, через которые тебе пришлось пройти, сделали тебя гораздо выносливее. \n" \
-			+ "Resistance to physical damage +10% \n" \
-			+ "Maximum stamina +30" #maybe add as percentage total, like +10% total stamina
+			+ "Сопротивление физическому урону +10% \n" \
+			+ "Максимальная выносливость +30" #maybe add as percentage total, like +10% total stamina
 
 func getSkillTier():
 	return 2

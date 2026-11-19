@@ -64,10 +64,10 @@ func onStart(_args:Array):
 	npcOwner.setRelationship(self)
 	npcOwner.onStart()
 	
-	showMessage(theChar.getName()+" became your [b][color=red]Owner[/color][/b]!")
+	showMessage(theChar.getName()+" стал твоим [b][color=red]Владельцем[/color][/b]!")
 
 func onEnd():
-	showMessage(getChar().getName()+" is no longer your Owner!")
+	showMessage(getChar().getName()+" больше не является твоим Владельцем!")
 
 func onNewDay():
 	if(npcOwner):
@@ -82,7 +82,7 @@ func processInteractionActionGenericScore(_scoreType:String, _value:float) -> fl
 	return _value
 
 func canEnslaveReason(_isKidnap:bool) -> Array:
-	return [false, "You can't enslave your owner! That'd be strange!"]
+	return [false, "Ты не можешь поработить своего владельца! Это было бы странно!"]
 
 func canTalkWithPlayer() -> bool: # Owners 'talk' with the player through npc owner events
 	return false

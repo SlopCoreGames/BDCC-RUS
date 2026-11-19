@@ -17,11 +17,11 @@ func getPillName() -> String:
 
 func getUnlockData() -> Dictionary:
 	return {
-		eliza = "Fascinating! This pill seems to be packed with a unique combination of herbal extracts and growth factors that stimulate breast tissue expansion. When taken, it will probably encourage cellular proliferation in the mammary glands, leading to an increase in size. I think I'll call it.. 'TiTS.' It has a nice ring to it, don’t you think?",
+		eliza = "Поразительно! Похоже, эта таблетка набита уникальной смесью травяных экстрактов и факторов роста, которые стимулируют расширение тканей груди. При приеме она, вероятно, вызовет пролиферацию клеток в молочных железах, что приведет к увеличению их размера. Думаю, я назову её... «TiTS». Звучит чертовски неплохо, не находишь?",
 	}
 
 func getPillDatabaseDesc() -> String:
-	return "Our trials showed that this drug will increase the size of breasts. It does so one size at a time until an “O-cup” size has been achieved or until the last stage of the transformation has been reached. It will [b]not[/b] turn your pecs into breasts.\n\nThe first stage will happen after a few minutes. After that, the next ones will happen roughly every 30 hours. This could be accelerated by using the QuickShift drug or by stimulating the test subject’s breasts but only if their nipples are [b]not sore[/b].\n\nThis drug will have from 3 to 5 stages. This could be increased using advanced equipment to up to 10 stages."
+	return "Наши испытания показали, что этот препарат увеличивает размер груди. Он делает это по одному размеру за раз, пока не будет достигнут «O-cup» или пока не будет достигнута последняя стадия трансформации. Он [b]не[/b] превратит твои грудные мышцы в женскую грудь.\n\nПервая стадия наступит через несколько минут. После этого последующие будут происходить примерно каждые 30 часов. Этот процесс можно ускорить с помощью препарата QuickShift или путем стимуляции груди подопытной, но только если её соски [b]не болят[/b].\n\nУ этого препарата будет от 3 до 5 стадий. С помощью продвинутого оборудования количество стадий можно увеличить до 10."
 
 func getTFCheckTags() -> Dictionary:
 	return {

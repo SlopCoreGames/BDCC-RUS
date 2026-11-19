@@ -36,7 +36,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 func getAnticipationText(_attacker, _receiver):
 	return RNG.pick([
 		"{attacker.name} крепче сжимает {attacker.his} электродубинку и делает выпад вперед, нанося удар оружием.",
-		"{attacker.name} swings {attacker.his} stun baton at {receiver.name}, aiming for {receiver.his} exposed areas where it would have the most effect.",
+		"{attacker.name} замахивается {attacker.his} шоковой дубинкой, целясь в {receiver.name}, чтобы попасть по {receiver.his} уязвимым местам и добиться максимального эффекта.",
 		"Световой дубинка {attacker.name} высекает искры, пока {attacker.he} готовится нанести удар по {receiver.name}.",
 	])
 

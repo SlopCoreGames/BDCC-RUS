@@ -30,13 +30,13 @@ func onSexEvent(_npc, _event:SexEvent):
 	return false
 
 func getTaskString():
-	return "Grope breasts: "+getProgressString("times")
+	return "Тискать грудь: "+getProgressString("times")
 
 func getTaskStringSlutLock():
-	return "Get tits groped: "+getProgressString("times")
+	return "Давать тискать грудь: "+getProgressString("times")
 
 func getTaskHint(_isSlaveLevelup):
-	return "Grope their breasts for this long"
+	return "Тискать их грудь в течение этого времени"
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [

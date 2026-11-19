@@ -12,7 +12,7 @@ func run(_triggerID, _args):
 	if(getFlag("JackiModule.Jacki_ContentDisabled")):
 		return
 	
-	if(checkCharacterBusy("JackiBusy", "Seems like Jacki is not here", "Jacki")):
+	if(checkCharacterBusy("JackiBusy", "Похоже, Джеки здесь нет", "Jacki")):
 		return
 	
 

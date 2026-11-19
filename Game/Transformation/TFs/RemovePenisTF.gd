@@ -15,11 +15,11 @@ func getPillName() -> String:
 
 func getUnlockData() -> Dictionary:
 	return {
-		eliza = "Aw, this pill is such a buzz kill. It has hormonal blockers and tissue-regulating agents that could target penile tissue. Oh yeah, it will fully get rid of all of the penile tissue in fact. There is only one name for such a pill: 'CockBeGone'.",
+		eliza = "Ох, эта таблетка — настоящий облом. В ней содержатся гормональные блокаторы и агенты, регулирующие ткани, которые могут воздействовать на пенисную ткань. О да, она, если честно, полностью уничтожит всю пенисную ткань. У такой таблетки есть только одно название: «CockBeGone».",
 	}
 
 func getPillDatabaseDesc() -> String:
-	return "This drug will morph away your penis if you have one. It does so by gradually decreasing the length until the penis is small enough (less than 8cm) to be morphed away completely.\n\nThe first stage will happen after a few minutes. After that, the next ones will happen roughly every 5 hours. This could be accelerated by using the QuickShift drug or by making the test subject [b]orgasm[/b].\n\nThis drug doesn’t have a set amount of stages. It will keep making the penis smaller until it is completely gone."
+	return "Этот препарат заставит твой член трансформироваться и исчезнуть, если он у тебя есть. Это происходит путем постепенного уменьшения длины, пока член не станет достаточно маленьким (менее 8 см), чтобы полностью трансформироваться в ничто.\n\nПервая стадия наступит через несколько минут. После этого следующие будут происходить примерно каждые 5 часов. Процесс можно ускорить с помощью препарата QuickShift или заставив подопытного испытуемого [b]достичь оргазма[/b].\n\nУ этого препарата нет фиксированного количества стадий. Он будет продолжать уменьшать член до тех пор, пока тот не исчезнет окончательно."
 
 func getTFCheckTags() -> Dictionary:
 	return {

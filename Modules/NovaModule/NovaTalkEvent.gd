@@ -7,7 +7,7 @@ func registerTriggers(es):
 	es.addTrigger(self, Trigger.EnteringRoom, "yard_novaspot")
 
 func run(_triggerID, _args):
-	if(checkCharacterBusy("NovaBusy", "Seems like Nova is not here", "Nova")):
+	if(checkCharacterBusy("NovaBusy", "Похоже, Новы здесь нет", "Nova")):
 		return
 	
 	if(!GM.main.getModuleFlag("NovaModule", "Nova_Introduced")):

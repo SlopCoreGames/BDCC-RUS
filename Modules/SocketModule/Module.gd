@@ -72,50 +72,50 @@ func getFastTravelData():
 		cost = 10,
 		name = "Столовая",
 		location = "hall_canteen",
-		buydesc = "Vent that goes to the canteen of the main floor",
+		buydesc = "Вентиляция, ведущая в столовую на главном этаже",
 	}
 	result["fastTravelGym"] = {
 		cost = 10,
 		name = "Тренажерный зал",
 		location = "gym_nearbathroom",
-		buydesc = "Vent that goes straight to the gym where all the training equipment is",
+		buydesc = "Вентиляция, ведущая прямиком в спортзал со всем тренировочным оборудованием",
 	}
 	result["fastTravelBathroom1"] = {
 		cost = 10,
 		name = "Главная уборная",
 		location = "main_bathroom1",
-		buydesc = "Vent that goes to the bathroom connected to the main hall",
+		buydesc = "Вентиляция, ведущая в туалет, соединенный с главным залом",
 	}
 	result["fastTravelBathroom2"] = {
 		cost = 10,
 		name = "Уборная в спортзале",
 		location = "main_bathroom2",
-		buydesc = "Vent that goes to the bathroom near the gym",
+		buydesc = "Вентиляция, ведущая в туалет рядом со спортзалом",
 	}
 	result["fastTravelMedical"] = {
 		cost = 15,
 		name = "Вестибюль медпункта",
 		location = "med_lobby_start",
-		buydesc = "Vent that goes straight to the medical wing lobby",
+		buydesc = "Вентиляция, ведущая прямиком в вестибюль медицинского крыла",
 	}
 	result["fastTravelMineshaft"] = {
 		cost = 15,
 		name = "Шахты",
 		location = "mining_shafts_entering",
-		buydesc = "Vent that goes to the mineshafts",
+		buydesc = "Вентиляция, ведущая к шахтам",
 	}
 	result["fastTravelWorkshop"] = {
 		cost = 15,
 		name = "Мастерская",
 		location = "eng_workshop",
-		buydesc = "Vent that goes to the engineering workshop",
+		buydesc = "Вентиляция, ведущая в инженерную мастерскую",
 	}
 	if(getFlag("SocketModule.h4completed")):
 		result["fastTravelMedicalCorridor"] = {
 			cost = 25,
 			name = "Коридор медпункта",
 			location = "med_nearmilking",
-			buydesc = "Vent that bypasses the staff-only doors of the medical wing and leads to one of its corridors.",
+			buydesc = "Вентиляция, которая позволяет миновать двери только для персонала в медицинском крыле и ведет в один из его коридоров",
 		}
 		# If can enter it normally
 		if(GM.QS.isCompleted("Ch2AlexQuest") || getFlag("AlexRynardModule.ch2CanEnterEngineering")):
@@ -123,14 +123,14 @@ func getFastTravelData():
 				cost = 25,
 				name = "Комната отдыха инженеров",
 				location = "eng_breakroom",
-				buydesc = "Vent that bypasses the staff-only doors of the engineering wing and leads to its break room.",
+				buydesc = "Вентиляция, которая позволяет миновать двери только для персонала в инженерном крыле и ведет в комнату отдыха",
 			}
 	if(getFlag("SocketModule.h4completed") && getFlag("FightClubModule.BulldogBypassed")):
 		result["fastTravelUnder"] = {
 			cost = 30,
 			name = "Подземелье",
 			location = "fight_neararena",
-			buydesc = "Vent that goes to the abandoned maintenance area. Socket doesn't understand why would you be interested in this particular space but she is willing to do it for some extra credits.",
+			buydesc = "Вентиляция, ведущая в заброшенную техническую зону. Сокет не понимает, зачем вам может быть интересна именно эта дыра, но она готова рискнуть ради лишней кредитки.",
 		}
 	
 	return result

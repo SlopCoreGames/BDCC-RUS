@@ -7,13 +7,13 @@ func getVisibleName():
 	return "Волк"
 
 func getNameAndNickname():
-	return "Volk, The Suka"
+	return "Волк, Сука"
 
 func getAvyIntroduction():
-	return "Your next opponent is a guy named Volk. He is short and small but the fucker got it where it counts, watch out for his tricks."
+	return "Твой следующий противник — парень по имени Волк. Он низкий и мелкий, но у этого ублюдка всё там, где надо, так что берегись его хитростей."
 	
 func getAnnouncerIntroduction():
-	return "And in the right corner we have Volk. Don’t underestimate him, a huge amount of fight is packed into this tiny package."
+	return "А в правом углу у нас Волк. Не вздумай его недооценивать — в этом крошечном теле упакована бешеная ярость."
 	
 func getRank():
 	return FightClubRank.FuckMeat

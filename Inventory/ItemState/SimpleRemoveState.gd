@@ -90,7 +90,7 @@ func getDamageState() -> int:
 func receiveDamage():
 	if(!clothesDamaged):
 		clothesDamaged = true
-		return [true, "Pieces of the fabric got ripped off!"]
+		return [true, "Куски ткани оторвались!"]
 
 	return .receiveDamage()
 
@@ -102,7 +102,7 @@ func repairDamage():
 
 func getDamageDescription():
 	if(clothesDamaged):
-		return "Pieces of fabric are ripped off"
+		return "Куски ткани оторваны"
 	return ""
 
 func getHidesParts(_character):

@@ -8,7 +8,7 @@ func registerTriggers(es):
 	es.addEventCheck(self, "TaviBusy")
 
 func run(_triggerID, _args):
-	if(checkCharacterBusy("TaviSlaveryBusy", "Seems like Tavi is not here", "Tavi")):
+	if(checkCharacterBusy("TaviSlaveryBusy", "Похоже, Тави здесь нет", "Tavi")):
 		return
 	
 	if(!getFlag("TaviModule.Ch5FoundPunishedTavi")):

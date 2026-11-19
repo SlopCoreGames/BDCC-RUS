@@ -8,7 +8,7 @@ const Hard := 3
 
 static func getName(_diff:int) -> String:
 	if(_diff == VeryEasy):
-		return "Very Easy"
+		return "Очень легко"
 	if(_diff == Easy):
 		return "Easy"
 	if(_diff == Medium):
@@ -19,13 +19,13 @@ static func getName(_diff:int) -> String:
 
 static func getDifficultyText(_diff:int) -> String:
 	if(_diff == VeryEasy):
-		return "3 yellows allowed"
+		return "Допускается 3 желтых"
 	if(_diff == Easy):
-		return "2 yellows allowed"
+		return "Допускается 2 желтых"
 	if(_diff == Medium):
-		return "2 yellow allowed"
+		return "Допускается 2 желтых"
 	if(_diff == Hard):
-		return "1 yellow allowed"
+		return "Допускается 1 желтый"
 	return "Unknown"
 
 static func getDifficultyYellowAmount(_diff:int) -> int:

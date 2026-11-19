@@ -23,11 +23,11 @@ func canDo(_lustState: LustCombatState, _args):
 	#	return [false, "Requires a \"Battle Cow\" perk"]
 	
 	if(pc.hasBoundArms()):
-		return [false, "You can't do that with bound arms"]
+		return [false, "С заведенными за спину руками так не выйдет"]
 	if(pc.hasBlockedHands()):
-		return [false, "You can't do that with blocked hands"]
+		return [false, "С занятыми руками так не получится"]
 	if(!pc.canBeMilked()):
-		return [false, "You need to be lactating to do this"]
+		return [false, "Чтобы это сделать, у тебя должна идти лактация"]
 	
 	return .canDo(_lustState, _args)
 

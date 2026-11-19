@@ -20,7 +20,7 @@ func shouldRunOnMeet(_pawn1, _pawn2, _pawn2Moved:bool):
 	return [false]
 
 func init_text():
-	return "{started.name} approaches!"
+	return "{started.name} приближается!"
 
 func init_actions():
 	return [
@@ -39,7 +39,7 @@ func init_do(_id:String, _args:Dictionary, _context:Dictionary):
 		setState("test", "target")
 
 func test_text():
-	return "Test state!"
+	return "Тестовое состояние!"
 
 func test_actions():
 	return [

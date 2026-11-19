@@ -12,7 +12,7 @@ func getVisibleDescription():
 	
 func getMoreDescription():
 	return 	"Отдых в камере теперь в два раза эффективнее."+"\n\n"+\
-			"Buffs gained from hypnosis sessions are stronger and last longer."
+			"Баффы, полученные во время сеансов гипноза, становятся сильнее и длятся дольше."
 
 func getSkillTier():
 	return 0

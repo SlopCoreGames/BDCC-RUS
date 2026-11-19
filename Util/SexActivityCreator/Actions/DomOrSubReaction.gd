@@ -49,9 +49,9 @@ func generateCode():
 	}
 	
 	if(chance == ""):
-		return stuff[who][0]+" = "+stuff[who][1]+"(SexReaction."+reactionType+")"
+		return stuff[who][0]+" = "+stuff[who][1]+"(Секс-реакция."+reactionType+")"
 	else:
-		return stuff[who][0]+" = "+stuff[who][1]+"(SexReaction."+reactionType+", "+chance+")"
+		return stuff[who][0]+" = "+stuff[who][1]+"(Секс-реакция."+reactionType+", "+chance+")"
 	
 
 func saveData():

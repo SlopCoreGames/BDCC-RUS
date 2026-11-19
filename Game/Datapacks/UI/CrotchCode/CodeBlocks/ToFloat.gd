@@ -4,4 +4,4 @@ func doThing(val):
 	return float(val)
 
 func getThingLabel():
-	return "To Float"
+	return "В Float"

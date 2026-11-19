@@ -12,9 +12,9 @@ func _init():
 			name = "Тон",
 			desc = "В каком тоне ты хочешь разговаривать с Ферри?",
 			options = [
-				["strict", "Strict", "Use a strict tone with Ferri", RecruitChoiceResult.Green],
-				["mean", "Mean", "Say mean and dirty things to Ferri", RecruitChoiceResult.Yellow],
-				["degrade", "Degrading", "Use a degrading tone with Ferri", RecruitChoiceResult.Red],
+				["strict", "Строго", "Говорить с Ферри строгим тоном", RecruitChoiceResult.Green],
+				["mean", "Злобность", "Говорить Ферри гадости и пошлости", RecruitChoiceResult.Yellow],
+				["degrade", "Унижение", "Использовать унижающий тон с Ферри", RecruitChoiceResult.Red],
 			],
 		},
 		{
@@ -22,9 +22,9 @@ func _init():
 			name = "Основное действие",
 			desc = "Каким должно быть основное действие?",
 			options = [
-				["petplay", "Petplay", "Do some petplay with Ferri", RecruitChoiceResult.Yellow],
-				["milking", "Milking", "Force Ferri to lactate and then milk her", RecruitChoiceResult.Green],
-				["oralsex", "Oral sex", "Make Ferri blow you or lick your pussy", RecruitChoiceResult.Red],
+				["petplay", "Петплей", "Устроить с Ферри петплей", RecruitChoiceResult.Yellow],
+				["milking", "Дойка", "Заставить Ферри лактировать, а затем подоить её", RecruitChoiceResult.Green],
+				["oralsex", "Оральный секс", "Заставить Ферри отсосать или облизать твою киску", RecruitChoiceResult.Red],
 			],
 		},
 		{
@@ -32,9 +32,9 @@ func _init():
 			name = "Особая фишка",
 			desc = "Какой особый кинк ты хочешь добавить?",
 			options = [
-				["deny", "Orgasm denial", "Bring Ferri close to an orgasm but then deny her", RecruitChoiceResult.Red],
-				["sadism", "Sadism", "Be sadistic with Ferri, make it hurt", RecruitChoiceResult.Yellow],
-				["overstim", "Overstimulation", "Overstimulate Ferri's senses or make her cum a lot", RecruitChoiceResult.Green],
+				["deny", "Запрет на оргазм", "Довести Ферри почти до оргазма, а затем отказать ей", RecruitChoiceResult.Red],
+				["sadism", "Садизм", "Быть садистом с Ферри, заставлять её страдать", RecruitChoiceResult.Yellow],
+				["overstim", "Перестимуляция", "Перестимулировать чувства Ферри или заставить её кончать много раз", RecruitChoiceResult.Green],
 			],
 		},
 	]
@@ -46,16 +46,16 @@ func getExtraChoices(_choices:Array, _extrasRaw:Dictionary) -> Array:
 		var variantsList:Array = []
 		if(GM.pc.hasReachablePenis()):
 			variantsList.append([
-				"bj", "Blowjob", "Fuck Ferri's mouth with your cock!",
+				"bj", "Отсосать", "Трахни Ферри в рот своим членом!",
 			])
 		else:
 			variantsList.append([
-				"strapon", "Blowjob (Strapon)", "Fuck Ferri's mouth with a strapon!",
+				"strapon", "Blowjob (Strapon)", "Трахни Ферри в рот страпоном!",
 			])
 			strapCheck = true
 		if(GM.pc.hasReachableVagina()):
 			variantsList.append([
-				"vaginal", "Pussy-licking", "Make Ferri lick you out!",
+				"vaginal", "Лизание киски", "Заставь Ферри отсосать тебе!",
 			])
 		result.append({
 				id = "variant",
@@ -76,7 +76,7 @@ func getExtraChoices(_choices:Array, _extrasRaw:Dictionary) -> Array:
 func isCombinationPossible(_choices:Array, _extras:Dictionary) -> Array:
 	if(_extras.get("condom", "") in ["worst", "best"]):
 		if(!GM.pc.hasCondoms()):
-			return [false, "You don't have any condoms to do this"]
+			return [false, "У тебя нет презервативов, чтобы это сделать"]
 	
 	return [true, ""]
 

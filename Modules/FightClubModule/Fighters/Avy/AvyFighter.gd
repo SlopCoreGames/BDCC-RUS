@@ -7,13 +7,13 @@ func getVisibleName():
 	return "Эви"
 
 func getNameAndNickname():
-	return "Avy, The Unbeatable"
+	return "Ави, Непобедимая"
 
 func getAvyIntroduction():
-	return "You shouldn't see this"
+	return "Тебе не стоит этого видеть"
 	
 func getAnnouncerIntroduction():
-	return "You shouldn't see this"
+	return "Тебе не стоит этого видеть"
 	
 func getRank():
 	#if(GM.main.getFlag("FightClubModule.AvyGotRekt")):

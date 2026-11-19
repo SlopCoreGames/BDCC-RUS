@@ -19,7 +19,7 @@ func _init():
 func _getName():
 	if(GM.main && !GM.main.getFlag("ElizaModule.s4hap")):
 		return "A woman"
-	return "Scarlet Quinn"
+	return "Скарлет Куинн"
 
 func getGender():
 	return Gender.Female

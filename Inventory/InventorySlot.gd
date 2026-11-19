@@ -27,7 +27,7 @@ const DEFAULT_SLOTS:Array = [
 	Eyes, Mouth, Neck, Torso, Body, UnderwearTop, UnderwearBottom, Penis, Vagina, Anal, Wrists, Hands, Ring, Ankles, Strapon, Unique,
 ]
 const DEFAULT_SLOT_NAMES:Dictionary = {
-	Eyes: "Eyes", Mouth: "Mouth", Neck: "Neck", Torso: "Torso", Body: "Body", Wrists: "Wrists", Hands: "Hands", Ring: "Ring", Ankles: "Ankles", UnderwearTop: "Underwear, top", UnderwearBottom: "Underwear, bottom", Penis: "Penis", Vagina: "Vagina", Anal: "Anal", Strapon: "Strapon", Unique: "Unique", Static1: "Static restraint", Static2: "Static restraint", Static3: "Static restraint",
+	Eyes: "Eyes", Mouth: "Mouth", Neck: "Neck", Torso: "Torso", Body: "Body", Wrists: "Wrists", Hands: "Hands", Ring: "Ring", Ankles: "Ankles", UnderwearTop: "Underwear, top", UnderwearBottom: "Underwear, bottom", Penis: "Penis", Vagina: "Vagina", Anal: "Anal", Strapon: "Strapon", Unique: "Unique", Static1: "Статичное средство фиксации", Static2: "Статичное средство фиксации", Static3: "Статичное средство фиксации",
 }
 const DEFAULT_EXTRA_SLOTS:Array = [
 	Static1, Static2, Static3,

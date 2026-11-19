@@ -32,10 +32,10 @@ func canBegFor() -> bool:
 	return true
 
 func getBegName() -> String:
-	return "Spank me"
+	return "Отшлепай меня"
 
 func getBegDesc() -> String:
-	return "Beg the dom to spank your ass!"
+	return "Умоляй доминанта отшлепать твою задницу!"
 
 func getBegCategory() -> Array:
 	return BegCategoryExotic
@@ -46,9 +46,9 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 	#var _isVagFree:bool = (_subInfo.getChar().getFirstItemThatCoversBodypart(BodypartSlot.Vagina) == null)
 
 	if(!_isBusy):
-		return "{sub.You} {sub.youVerb('wiggle')} {sub.yourHis} butt at {dom.you}."
+		return "{sub.You} {sub.youVerb('wiggle')} {sub.yourHis} задницу {dom.you} раз(а)."
 	
-	return "{sub.You} {sub.youVerb('beg')} {dom.you} to spank {sub.yourHis} butt."
+	return "{sub.You} {sub.youVerb('beg')} {dom.you}, чтобы отшлепали {sub.yourHis} задницу."
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([

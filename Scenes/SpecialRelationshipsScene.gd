@@ -113,7 +113,7 @@ func getLocName(theCharID:String) -> String:
 		else:
 			var floorID:String = room.getFloorID()
 			return getFloorName(floorID)+" - "+room.getName()
-	return "Resting (Can be met through the Encounters menu)"
+	return "Отдых (можно встретить через меню Встреч)"
 
 static func getFloorName(floorID:String) -> String:
 	#var room = GM.world.getRoomByID(loc)
@@ -121,13 +121,13 @@ static func getFloorName(floorID:String) -> String:
 	if(floorID == "Cellblock"):
 		return "Cellblock"
 	if(floorID == "MainHall"):
-		return "Main prison floor"
+		return "Главный этаж тюрьмы"
 	if(floorID == "Medical"):
-		return "Medical wing"
+		return "Медблок"
 	if(floorID == "MiningFloor"):
-		return "Mining floor"
+		return "Шахтерский этаж"
 	
-	return "Unknown floor"
+	return "Неизвестный этаж"
 
 func supportsShowingPawns() -> bool:
 	return true

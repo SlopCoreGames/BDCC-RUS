@@ -82,13 +82,13 @@ func _getAttacks():
 	return ["simplepunchattack", "StrongKick", "BreedingTaunt", "biteattack", "trygetupattack"]
 
 func getFightIntro(_battleName):
-	var mes = "Jack stands straight in a typical male pose, even now you can see his huge bulge barely hidden under the shorts."
+	var mes = "Джек стоит прямо в типичной мужской позе; даже сейчас под его шортами отчетливо виден огромный бугорок."
 	mes += "\n\n"
-	mes += "[say=jack]Huh.[/say]"
+	mes += "[say=jack]Хм.[/say]"
 	mes += "\n\n"
-	mes += "He tilts his head to the sides, stretching."
+	mes += "Он наклоняет голову из стороны в сторону, разминая шею."
 	mes += "\n\n"
-	mes += "[say=jack]Hope ya ready.[/say]"
+	mes += "[say=jack]Надеюсь, ты готов.[/say]"
 	return mes
 
 func getThickness() -> int:

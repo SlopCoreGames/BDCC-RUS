@@ -11,13 +11,13 @@ func getName():
 func getUnlockDescription():
 	var restData:RestraintData = getRestraintData()
 	if(restData == null):
-		return "ERROR, SOMETHING WENT WRONG"
+		return "ОШИБКА, ЧТО-ТО ПОШЛО НЕ ТАК"
 	var requiredItemID:String = restData.getTightLockRequiredItemID()
 	var reqItem:ItemBase = GlobalRegistry.getItemRef(requiredItemID)
 	if(reqItem == null):
-		return "ERROR, SOMETHING WENT WRONG"
+		return "ОШИБКА, ЧТО-ТО ПОШЛО НЕ ТАК"
 	
-	return "Unable to struggle off, requires a special item to unlock! Alternatively, has "+str(keyAmount)+" keyholes, requiring that many restraint keys to unlock.\nRequired item to unlock: "+reqItem.getVisibleName()
+	return "Не получается вырваться, нужен специальный предмет, чтобы открыть! Либо у него есть "+str(keyAmount)+" замочных скважин, и для открытия потребуется соответствующее количество ключей от фиксаторов.\nНеобходимый предмет для открытия: "+reqItem.getVisibleName()
 
 func getKeysAmountToUnlock() -> int:
 	return keyAmount

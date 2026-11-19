@@ -8,7 +8,7 @@ func getVisibleName():
 
 func getMessyDescription(_pc, _amount):
 	if(_amount >= 100.0):
-		return "You're drenched!"
+		return "Ты промок до нитки!"
 	
 	return null
 
@@ -35,7 +35,7 @@ func onSwallow(_pc, _amount):
 	
 	if(toHeal > 0):
 		_pc.addStamina(toHeal)
-		return "Drinking water gave "+_pc.getName()+" "+DamageType.getDamageColoredString(DamageType.Stamina, toHeal)+" back."
+		return "Питье воды дало "+_pc.getName()+" "+DamageType.getDamageColoredString(DamageType.Stamina, toHeal)+" back."
 	
 	return null
 

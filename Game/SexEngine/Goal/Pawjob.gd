@@ -48,10 +48,10 @@ func getBegCategory() -> Array:
 	return BegCategoryExotic
 
 func getBegDesc() -> String:
-	return "Beg the dom to give you a pawjob!"
+	return "Умоляй домина, чтобы он сделал тебе минет рукой!"
 
 func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
-	return "{sub.You} {sub.youVerb('beg')} {dom.you} to give {sub.youHim} a pawjob."
+	return "{sub.You} {sub.youVerb('beg')} {dom.you}, чтобы сделать {sub.youHim} минет рукой."
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([

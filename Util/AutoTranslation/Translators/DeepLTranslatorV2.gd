@@ -43,8 +43,8 @@ func translate(_targetLanguage, _inputText):
 	var theResult = {
 		error = false,
 		success = false,
-		errorMessage = "No error message provided",
-		resultText = "No text provided",
+		errorMessage = "Сообщение об ошибке не указано",
+		resultText = "Текст не предоставлен",
 	}
 	
 	var theStuff = yield(requestTranslate(_inputText.replace("\"", "'"), "EN", deeplLangCode.get(_targetLanguage, _targetLanguage)), "completed")

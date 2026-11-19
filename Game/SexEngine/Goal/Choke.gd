@@ -29,21 +29,21 @@ func canBegFor() -> bool:
 	return true
 
 func getBegName() -> String:
-	return "Choke me!"
+	return "Придуши меня!"
 
 func getBegCategory() -> Array:
 	return BegCategoryChoking
 
 func getBegDesc() -> String:
-	return "Beg the dom to choke your neck!"
+	return "Умоляй доминанта сжать твою шею!"
 
 func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 	var _isBusy:bool = _sexEngine.hasTag(_subInfo.charID, SexActivityTag.HavingSex)
 
 	if(!_isBusy):
-		return "{sub.You} {sub.youVerb('offer')} {dom.you} {sub.yourHis} exposed neck."
+		return "Обнаженная шея {sub.You} {sub.youVerb('offer')} {dom.you} {sub.yourHis}."
 	
-	return "{sub.You} {sub.youVerb('beg')} {dom.you} to choke {sub.youHim}."
+	return "{sub.You} {sub.youVerb('beg')} {dom.you}, чтобы придушить {sub.youHim}."
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([

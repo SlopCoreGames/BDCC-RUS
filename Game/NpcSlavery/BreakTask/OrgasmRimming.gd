@@ -33,7 +33,7 @@ func getTaskString():
 	return "Orgasm (rimming): "+getProgressString()
 
 func getTaskHint(_isSlaveLevelup):
-	return "Force them to orgasm just from you licking their ass!"
+	return "Заставь их кончать только от того, что ты лижешь им задницу!"
 
 func getSexGoalWeightModifier(_sexGoalID:String) -> float:
 	if(_sexGoalID == SexGoal.RimSub):

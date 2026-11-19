@@ -23,7 +23,7 @@ func _init():
 	}
 	
 func _getName():
-	return "The Announcer"
+	return "Диктор"
 
 func getGender():
 	return Gender.Male

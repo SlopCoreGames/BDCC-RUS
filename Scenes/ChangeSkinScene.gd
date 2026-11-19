@@ -92,7 +92,7 @@ func _run():
 			var theSkin:SkinBase = GlobalRegistry.getSkin(skinID)
 			var theSkinIsActive:bool = (thePC.pickedSkin == skinID)
 			var theSkinName:String = (("["+theSkin.getName()+"]") if theSkinIsActive else theSkin.getName())
-			var theSkinDesc:String = "This is the currently selected skin" if(theSkinIsActive) else "Pick this skin"
+			var theSkinDesc:String = "Это выбранный на данный момент скин" if(theSkinIsActive) else "Выбрать этот скин"
 			addButton(theSkinName, theSkinDesc+theSkin.getExtraDesc(), "changebaseskinmenu_select", [skinID])
 		if(savedPage != 0):
 			GM.ui.setCurrentPage(savedPage)
@@ -136,24 +136,24 @@ func _run():
 		if(bodypart.hasCustomSkinPattern()):
 			var defaultSkinIsActive = (bodypart.pickedSkin == null)
 			var defaultSkinName = ("[Default] " if(defaultSkinIsActive) else "Default")
-			var defaultSkinDesc = "Currently using the default skin pattern" if(defaultSkinIsActive) else "Use the default skin pattern"
+			var defaultSkinDesc = "Сейчас используется стандартный узор кожи" if(defaultSkinIsActive) else "Использовать стандартный узор кожи"
 			addButton(defaultSkinName, defaultSkinDesc, "changepartskinmenu_select", [null])
 			for skinID in GlobalRegistry.getPartSkins(bodypart.id):
 				var theSkin:PartSkinBase = GlobalRegistry.getPartSkin(bodypart.id, skinID)
 				var theSkinIsActive:bool = (bodypart.pickedSkin == skinID)
 				var theSkinName:String = (("["+theSkin.getName()+"]") if theSkinIsActive else theSkin.getName())
-				var theSkinDesc:String = "This is the currently selected skin" if(theSkinIsActive) else "Pick this skin"
+				var theSkinDesc:String = "Это выбранный на данный момент скин" if(theSkinIsActive) else "Выбрать этот скин"
 				addButton(theSkinName, theSkinDesc+theSkin.getExtraDesc(), "changepartskinmenu_select", [skinID])
 		else:
 			var inheritedSkinIsActive = (bodypart.pickedSkin == null)
-			var inheritedSkinName = ("[Same as base] " if(inheritedSkinIsActive) else "Same as base")
-			var inheritedSkinDesc = "Currently inheriting the skin from the base" if(inheritedSkinIsActive) else "Inherit the skin from the base"
+			var inheritedSkinName = ("[Same as base] " if(inheritedSkinIsActive) else "Как у основы")
+			var inheritedSkinDesc = "Сейчас используется скин базовой модели" if(inheritedSkinIsActive) else "Наследовать скин от базовой модели"
 			addButton(inheritedSkinName, inheritedSkinDesc, "changepartskinmenu_select", [null])
 			for skinID in GlobalRegistry.getSkinsAllKeys():
 				var theSkin:SkinBase = GlobalRegistry.getSkin(skinID)
 				var theSkinIsActive:bool = (bodypart.pickedSkin == skinID)
 				var theSkinName:String = (("["+theSkin.getName()+"]") if theSkinIsActive else theSkin.getName())
-				var theSkinDesc:String = "This is the currently selected skin" if(theSkinIsActive) else "Pick this skin"
+				var theSkinDesc:String = "Это выбранный на данный момент скин" if(theSkinIsActive) else "Выбрать этот скин"
 				addButton(theSkinName, theSkinDesc+theSkin.getExtraDesc(), "changepartskinmenu_select", [skinID])
 		if(savedPage != 0):
 			GM.ui.setCurrentPage(savedPage)

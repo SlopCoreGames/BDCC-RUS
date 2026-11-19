@@ -73,7 +73,7 @@ func getExtraInfoLines() -> Array:
 			if(isOrgasmEffect):
 				extraTexts.append("orgasm")
 			if(!zone.canOrgasm()):
-				extraTexts.append("not sensitive enough to cum")
+				extraTexts.append("недостаточно чувствителен, чтобы кончить")
 			
 			result.append(zoneName+" overstimulation: "+("[color="+colorString+"]" if isBads else "")+str(Util.roundF(zoneStimulation*100.0, 1))+"%"+("[/color]" if isBads else "")+(" ("+Util.join(extraTexts, ", ")+")" if extraTexts.size() > 0 else ""))
 	
@@ -337,8 +337,8 @@ func getSexEndInfo():
 	
 	texts.append("Satisfaction: "+str(Util.roundF(calculateFinalSatisfaction()*100.0, 1))+"%") # +" Satis: "+str(satisfaction)+" Frust: "+str(frustration)
 	if(timesCame > 0):
-		texts.append("Times came: "+str(timesCame))
-	texts.append("Average lust: "+str(Util.roundF(getAverageLust()*100.0, 1))+"%")
+		texts.append("Раз кончил: "+str(timesCame))
+	texts.append("Среднее вожделение: "+str(Util.roundF(getAverageLust()*100.0, 1))+"%")
 	
 	return texts
 
@@ -519,18 +519,18 @@ func doFetishChangeCalculation() -> Dictionary:
 		var newEnumVal:int = FetishInterest.getEnumListValue(newFetishValue)
 		if(newEnumVal > wasEnumVal):
 			var theChangeDesc:String = FetishInterest.getChangeDesc(newFetishValue)
-			messages.append(theChar.getName()+"'s interest towards '"+theFetish.getVisibleName()+"' fetish has [color=#FFC9FE]increased[/color], "+theChar.heShe()+" "+theChangeDesc+" it")
+			messages.append(theChar.getName()+"интерес к"+theFetish.getVisibleName()+"фетиш [color=#FFC9FE]усилился[/color], "+theChar.heShe()+" "+theChangeDesc+" it")
 			#messages.append(theChar.getName()+" "+theChangeDesc+" "+theFetish.getVisibleName())
 		if(newEnumVal < wasEnumVal):
 			var theChangeDesc:String = FetishInterest.getChangeDesc(newFetishValue)
-			messages.append(theChar.getName()+"'s interest towards '"+theFetish.getVisibleName()+"' fetish has [color=#FFCED2]decreased[/color], "+theChar.heShe()+" "+theChangeDesc+" it")
+			messages.append(theChar.getName()+"интерес к"+theFetish.getVisibleName()+"фетиш [color=#FFCED2]ослаб[/color], "+theChar.heShe()+" "+theChangeDesc+" it")
 			#messages.append(theChar.getName()+" "+theChangeDesc+" "+theFetish.getVisibleName())
 	
 	if(!downFetishes.empty()):
-		messages = [theChar.getName()+" [color=#FFB0A0]dislikes[/color] these fetishes more: "+Util.join(downFetishes," ")] + messages
+		messages = [theChar.getName()+" [color=#FFB0A0]больше любит[/color] эти фетиши: "+Util.join(downFetishes," ")] + messages
 	
 	if(!upFetishes.empty()):
-		messages = [theChar.getName()+" [color=#FFBAF8]likes[/color] these fetishes more: "+Util.join(upFetishes," ")] + messages
+		messages = [theChar.getName()+" [color=#FFBAF8]больше не любит[/color] эти фетиши: "+Util.join(upFetishes," ")] + messages
 	
 	return {messages=messages}
 		

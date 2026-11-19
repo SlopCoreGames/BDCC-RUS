@@ -52,7 +52,7 @@ func getCheckTagsSub() -> Array:
 	return [SexActivityTag.Leashed]
 
 func startActivity(_args):
-	addText("{dom.You} {dom.youVerb('pull')} out a [b]leash[/b] and {dom.youVerb('start')} trying to clip it to {sub.your} collar!")
+	addText("{dom.You} {dom.youVerb('pull')} достает [b]поводок[/b] и {dom.youVerb('start')} пытается пристегнуть его к {sub.your} ошейнику!")
 	react(SexReaction.LeashStart)
 
 func init_processTurn():

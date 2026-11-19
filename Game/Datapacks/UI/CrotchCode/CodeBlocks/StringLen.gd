@@ -32,7 +32,7 @@ func getTemplate():
 			id = "str",
 			slot = strSlot,
 			slotType = CrotchBlocks.VALUE,
-			placeholder = "of text",
+			placeholder = "текста",
 		},
 	]
 

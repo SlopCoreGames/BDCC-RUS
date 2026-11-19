@@ -16,7 +16,7 @@ func getUnlockDescription():
 		if(character != null):
 			keyholderName = character.getName()
 	
-	return "Unable to struggle off. A unique key to this restraint is possessed by "+str(keyholderName)+".\nAlternatively, it seems to have "+str(keyAmount)+" keyholes."
+	return "Сбросить не получается. Уникальный ключ от этого средства фиксации есть у "+str(keyholderName)+".\nКроме того, похоже, что у него есть "+str(keyAmount)+" keyholes."
 
 func getKeysAmountToUnlock() -> int:
 	return keyAmount

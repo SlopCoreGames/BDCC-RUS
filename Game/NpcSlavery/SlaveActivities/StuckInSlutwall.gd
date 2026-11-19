@@ -7,7 +7,7 @@ func getVisibleName():
 	return "Застрявшая в шлюзовой стене"
 
 func getActivityText():
-	return "{npc.name} is currently stuck in a slutwall so {npc.he} {npc.isAre} not here."
+	return "{npc.name} сейчас застряла в шлюзовой стене, так что {npc.he} {npc.isAre} здесь нет."
 
 func getInteractActions():
 	return [

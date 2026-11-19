@@ -28,7 +28,7 @@ func start():
 
 func start_do(_id:String, _args:Array):
 	if(_id == "obey"):
-		if(checkSubEvent("GiveCredits", "You were about to let {npc.name} take your credits..", [])):
+		if(checkSubEvent("GiveCredits", "Ты уже почти позволил {npc.name} забрать твои кредиты...", [])):
 			return
 		GM.pc.addCredits(-creditsAmount)
 		setState("obey")

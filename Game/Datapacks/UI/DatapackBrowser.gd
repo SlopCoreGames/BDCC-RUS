@@ -153,7 +153,7 @@ func updatePickedModEntry():
 			visualModEntry.makeInactive()
 	
 	if(selectedDatapackIndex  < 0):
-		modDescriptionLabel.bbcode_text = "Select a datapack on the left"
+		modDescriptionLabel.bbcode_text = "Выберите датапак слева"
 	else:
 		var pickedModEntry = getPickedEntry()
 		var text = ""

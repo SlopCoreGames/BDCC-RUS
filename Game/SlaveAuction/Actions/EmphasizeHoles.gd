@@ -10,7 +10,7 @@ func getName() -> String:
 	return "Дырки"
 
 func getButtonDesc() -> String:
-	return "Spread the slave's butt and really show off their holes.\n\nDoesn't reveal any preferences, has a negative effects on bidders who don't strongly prefer any of the presented traits."
+	return "Разведите ягодицы рабыни, чтобы максимально продемонстрировать её дырочки.\n\nНе раскрывает никаких предпочтений; оказывает негативный эффект на участников аукциона, у которых нет явного предпочтения к одной из представленных черт."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	var hasVag:bool = _char.hasVagina()
@@ -79,20 +79,20 @@ func isEmphasizeAction() -> bool:
 func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	if(_slaveTraits.has("AnusTight") && _slaveTraits["AnusTight"] > 0.0 && _slaveTraits.has("VaginaTight") && _slaveTraits["VaginaTight"] > 0.0):
 		return RNG.pick([
-			'A tight one, huh? That’s what I like to hear.',
-			'Perfect, I’ve been wanting something fresh like that.',
-			'Tight? That’s enough to get my interest.',
-			'Sounds like the ideal ass for me.',
-			'Oh yeah, I will enjoy stretching {slave.her} out.',
-			'The things I can do to such a hole..',
+			'Узкая, да? Обожаю такое.',
+			'Идеально, как раз хотел чего-нибудь новенького.',
+			'Узкая? Это уже заставляет меня заинтересоваться.',
+			'Звучит как задница моей мечты.',
+			'О да, я с удовольствием растяну {slave.her}.',
+			'Боже, что же я буду делать с такой дырочкой...',
 		])
 	else:
 		return RNG.pick([
-			'Now that’s what I like to see.',
+			'Вот это то, что доктор прописал.',
 			'Perfect!',
-			'Well-used and no complaints - that’s exactly what I need.',
-			'Loose, huh? That’s perfect for my plans.',
-			'This one’s going to get a lot of use!',
+			'Хорошенько использованная и без лишних капризов — как раз то, что нужно.',
+			'Растянутая, да? Как раз то, что нужно для моих планов.',
+			'Эту будут использовать очень часто!',
 		])
 	
 	#return .getPositiveReaction(_char, _slaveTraits)

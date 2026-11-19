@@ -10,7 +10,7 @@ func getName() -> String:
 	return "Размер груди"
 
 func getButtonDesc() -> String:
-	return "Highlight the slave's breasts.\n\n[b]Might[/b] reveal 1 mind preference of each bidder."
+	return "Подсветить грудь рабыни.\n\n[b]Возможно[/b] раскроет по одному предпочтениям разума каждого участника аукциона."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	if(_slaveTraits.has("BreastsSmall") && _slaveTraits["BreastsSmall"] > 0.0):
@@ -62,41 +62,41 @@ func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String
 	if(_slaveTraits.has("BreastsSmall") && _slaveTraits["BreastsSmall"] > 0.0):
 		if(!_char.hasNonFlatBreasts()):
 			return RNG.pick([
-				'Flat and toned, just the way I like it.',
-				'A firm, flat chest? Yes please.',
-				'So elegant.',
-				'So lean.',
-				'Exactly what I’m looking for.',
-				'Muscular and flat.',
-				'That flat chest is ideal for what I need.',
+				'Плоская и подтянутая — как раз то, что я люблю.',
+				'Упругая, плоская грудь? Да, пожалуй, возьму.',
+				'Так изящно.',
+				'Такая стройная.',
+				'Именно то, что я ищу.',
+				'Мускулистая и плоская.',
+				'Эта плоская грудь идеально подходит для моих целей.',
 			])
 		else:
 			return RNG.pick([
-				'I prefer small breasts, they are so much more cute.',
-				'Perky and petite? I’ll take that over huge tits any day.',
-				'Small and perky. Just the way I like them.',
-				'Size doesn’t matter when they look this perfect.',
-				'Lean and beautiful.',
-				'Those small, tight breasts? Perfect.',
+				'Я предпочитаю маленькую грудь, она куда милее.',
+				'Подтянутая и крошечная? Да я в любой день предпочту это огромным сиськам.',
+				'Маленькая и упругая. Прямо как я люблю.',
+				'Размер не имеет значения, когда они выглядят настолько идеально.',
+				'Стройные и прекрасные.',
+				'Эти маленькие, упругие груди? Идеал.',
 			])
 	if(_slaveTraits.has("BreastsAverage") && _slaveTraits["BreastsAverage"] > 0.0):
 		return RNG.pick([
-			'Now that’s what I like to see.',
+			'Вот это то, что доктор прописал.',
 			'Perfect!',
-			'These are ideal.',
-			'Huh. Yeah. They’re just right, not too much, not too little.',
-			'Perfect breasts.',
-			'Those are some good-looking tits.',
+			'Это просто идеал.',
+			'Хм. Да. В самый раз — не слишком много и не слишком мало.',
+			'Идеальная грудь.',
+			'А сиськи-то что надо.',
 			'Yes!',
 		])
 	if(_slaveTraits.has("BreastsHuge") && _slaveTraits["BreastsHuge"] > 0.0):
 		return RNG.pick([
-			'Give me, give me!',
-			'Oh, that\'s my weakness.',
-			'Perfect for my tastes. I love a lot to handle!',
-			'Those massive beauties? Yes!',
-			'Finally, something with size.',
-			'The bigger, the better.',
+			'Дай мне, дай мне!',
+			'Ох, это моя слабость.',
+			'Как раз под мой вкус. Обожаю, когда есть за что пощупать!',
+			'Эти огромные красавицы? Да!',
+			'Наконец-то хоть что-то внушительного размера.',
+			'Чем больше, тем лучше.',
 		])
 	
 	return .getPositiveReaction(_char, _slaveTraits)

@@ -10,7 +10,7 @@ func getName() -> String:
 	return "Навык питомца"
 
 func getButtonDesc() -> String:
-	return "Tell the bidders about the slave’s extensive training as a Pet.\n\n[b]Might[/b] reveal 1 personality preference of each bidder."
+	return "Расскажите участникам аукциона о богатом опыте дрессировки рабыни в качестве питомца.\n\n[b]Возможно[/b] раскроет по одной поведенческой особенности каждого участника."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
@@ -31,21 +31,21 @@ func getTraits() -> Dictionary:
 
 func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
-		'A loyal pet? I could use that in my household.',
-		'Training like that is rare.',
-		'Already trained? Saves me the trouble.',
-		'Obedience and loyalty. I’m interested.',
-		'A perfect pet? That\'s rare',
-		'That’s exactly what I’m looking for.',
+		'Верный питомец? Мне бы пригодился такой в хозяйстве.',
+		'Такая дрессировка — редкость.',
+		'Уже обучена? Это избавит меня от лишних хлопот.',
+		'Послушание и преданность... Это мне интересно.',
+		'Идеальный питомец? Это редкость.',
+		'Это именно то, что я ищу.',
 	])
 
 func getNegativeReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
-		'I don\'t need an animal, I need a slave.',
-		'I\'m not looking for pets.',
-		'You\'re selling an animal? Ugh.',
-		'I don\'t like pets, they are so messy.',
-		'I\'d rather not.',
-		'I hate pets because they keep scratching furniture.',
+		'Мне не животное нужно, а рабыня.',
+		'Я не ищу домашних питомцев.',
+		'Вы продаете животное? Тьфу.',
+		'Не люблю питомцев, от них столько грязи.',
+		'Пожалуй, не стоит.',
+		'Ненавижу домашних животных — вечно они мебель царапают.',
 	])
 	

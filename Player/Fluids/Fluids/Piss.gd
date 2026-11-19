@@ -14,11 +14,11 @@ func getStatusEffectPicture():
 
 func getMessyDescription(_pc, _amount):
 	if(_amount >= 300.0):
-		return "You have a strong scent of piss attached to you!"
+		return "От тебя несёт мочой!"
 	if(_amount >= 100.0):
-		return "You smell gross! Better not let others near you."
+		return "Ты воняешь! Лучше не подпускай к себе людей."
 	
-	return "You have a faint gross scent attached to you."
+	return "От тебя исходит слабый неприятный запах."
 
 func getMessyBuffs(_pc, _amount):
 	if(_amount >= 500.0):
@@ -57,7 +57,7 @@ func onSwallow(_pc, _amount):
 	
 	if(toHeal > 0):
 		_pc.addLust(-toHeal)
-		return "Drinking piss grossed "+_pc.getName()+" out, removing "+DamageType.getDamageColoredString(DamageType.Lust, toHeal)+"."
+		return "Питье мочи вызывает тошноту "+_pc.getName()+" out, removing "+DamageType.getDamageColoredString(DamageType.Lust, toHeal)+"."
 	
 	return null
 

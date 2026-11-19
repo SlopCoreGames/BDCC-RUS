@@ -153,7 +153,7 @@ func getTooltipInfo():
 		result.append("Eggs: "+ str(getEggsAmount())+"/"+str(getMaxEggsCapacity()))
 		var theEggProg:float = getNextEggProgress()
 		if(theEggProg > 0.0):
-			result.append("New egg: "+ str(Util.roundF(theEggProg*100.0, 1))+"%")
+			result.append("Новое яйцо: "+ str(Util.roundF(theEggProg*100.0, 1))+"%")
 	return result
 
 func getAttributesText():

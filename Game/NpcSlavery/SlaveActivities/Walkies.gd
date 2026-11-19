@@ -15,18 +15,18 @@ var puppyPoints = 0
 
 func getNeedText():
 	if(getSlave().getWorkEfficiency() <= 0.1):
-		return "Your pet is [b]tired[/b]. Time to end the walkies."
+		return "Твой питомец [b]устал[/b]. Пора заканчивать прогулку."
 	if(petWants == "shower"):
-		return "Your pet wants to be [b]washed[/b] (showers)"
+		return "Твой питомец хочет, чтобы его [b]помыли[/b] (душ)"
 	if(petWants == "food"):
-		return "Your pet is [b]hungry[/b] (canteen)"
+		return "Твой питомец [b]голоден[/b] (столовая)"
 	if(petWants == "play"):
-		return "Your pet wants to [b]play[/b] (yard area)"
+		return "Твой питомец хочет [b]поиграть[/b] (двор)"
 	if(petWants == "train"):
-		return "Your pet wants to be [b]trained[/b] (yard area)"
+		return "Твой питомец хочет, чтобы его [b]дрессировали[/b] (двор)"
 	if(petWants == "pee"):
-		return "Your pet needs to [b]pee[/b] (showers/yard)"
-	return "Your pet doesn't want anything currently. Walk around until a new need arises."
+		return "Твоему питомцу нужно [b]пописать[/b] (душ/двор)"
+	return "Сейчас питомцу ничего не нужно. Погуляйте, пока не возникнет новая потребность."
 
 func generateNextWant():
 	petWants = RNG.pickWeightedPairs(petPossibleWants)
@@ -89,7 +89,7 @@ func preventsNormalInteractions():
 	return true
 
 func getActivityText():
-	return "You shouldn't see this!"
+	return "Этого не должно быть видно!"
 
 func hoursPassed(_howMuch):
 	return

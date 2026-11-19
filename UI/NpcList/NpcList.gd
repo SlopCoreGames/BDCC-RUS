@@ -41,7 +41,7 @@ func forgetNPC(ID, name, node):
 	if(showedForgetPopup):
 		_on_Forget_pressed()
 		return
-	sendPopupMessage("Are you sure you want to forget "+name+"? This will permanently remove "+name+" from the game. Keep in mind that if this character is pregnant, their pregnancy will be forgotten too. But any kids you had together will stay.", true)
+	sendPopupMessage("Вы уверены, что хотите забыть "+name+"? Это навсегда удалит персонажа "+name+" из игры. Имейте в виду: если этот персонаж беременна, то и беременность будет забыта. Но все ваши общие дети останутся.", true)
 	showedForgetPopup = true
 
 func _on_Forget_pressed():

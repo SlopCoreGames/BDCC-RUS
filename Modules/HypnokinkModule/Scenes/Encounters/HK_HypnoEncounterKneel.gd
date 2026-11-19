@@ -112,7 +112,7 @@ func _run():
 		# there is no subby version
 			
 		saynn("Ты вовсе не [i]должен[/i] подчиняться. Тебе, наверное, стоит просто встать, но тебе хочется исполнить приказ {npc.his} и...")
-		HypnokinkUtil.addHypnoButtons(self, "kneel", "resist", ["Kneel", "Remain", "Stay", "Not move"], ["Get up", "Resist", "Stand"])
+		HypnokinkUtil.addHypnoButtons(self, "kneel", "resist", ["Kneel", "Remain", "Stay", "Не двигаться"], ["Встать", "Resist", "Stand"])
 			
 		
 	if(state == "kneel"):
@@ -135,7 +135,7 @@ func _run():
 				"Тебе действительно стоит просто...",
 			]))
 			
-		HypnokinkUtil.addHypnoButtons(self, "kneel", "resist", ["Kneel", "Remain", "Stay", "Not move"], ["Get up", "Resist", "Stand"])
+		HypnokinkUtil.addHypnoButtons(self, "kneel", "resist", ["Kneel", "Remain", "Stay", "Не двигаться"], ["Встать", "Resist", "Stand"])
 	
 	if(state == "kneeled_enough"):
 		addCharacter(npcID)
@@ -162,14 +162,14 @@ func _run():
 				saynn("{npc.He} {npc.verb('grab')} берет тебя за челюсть.")
 				saynn("[say=npc]Открой рот.[/say]")
 				saynn("Может, ты всё ещё могла бы остановиться, но тебе хочется быть послушной только для {npc.him}, и поэтому ты...")
-				HypnokinkUtil.addUnresistableHypnoButtons(self, "get_gagged", ["Open", "Open up"])
+				HypnokinkUtil.addUnresistableHypnoButtons(self, "get_gagged", ["Open", "Раскройся"])
 			else:
 				saynn("{npc.He} {npc.verb('look')} нависает над тобой.")
 				saynn("[say=npc]Нужно было кое-чем заняться. Но теперь у меня полно времени для моего питомца.[/say]")
 				saynn("{npc.He} {npc.verb('grab')} берет тебя за челюсть.")
 				saynn("[say=npc]Я заставлю твой ротик поработать на славу.[/say]")
 				saynn("Может, ты всё ещё могла бы остановиться, но тебе хочется быть послушной только для {npc.him}, и поэтому ты...")
-				HypnokinkUtil.addUnresistableHypnoButtons(self, "get_fucked_oral_1", ["Whimper", "Get ready", "Gulp"])
+				HypnokinkUtil.addUnresistableHypnoButtons(self, "get_fucked_oral_1", ["Whimper", "Приготовься", "Gulp"])
 			
 		# (mean version)
 		if(npcVariation == "mean"):
@@ -189,14 +189,14 @@ func _run():
 				saynn("{npc.He} {npc.verb('grab')} хватает тебя за челюсть, явно намереваясь силой разжать её.")
 				saynn("[say=npc]Открывай рот, или я заставлю тебя.[/say]")
 				saynn("Ты попыталась бы сопротивляться, но манера {npc.nameS} настолько властная, что ты просто...")
-				HypnokinkUtil.addUnresistableHypnoButtons(self, "get_gagged", ["Open", "Open up"])
+				HypnokinkUtil.addUnresistableHypnoButtons(self, "get_gagged", ["Open", "Раскройся"])
 			else:
 				saynn("{npc.He} {npc.verb('look')} нависает над тобой.")
 				saynn("[say=npc]Убедился, что нам не помешают. А теперь...[/say]")
 				saynn("{npc.He} {npc.verb('grab')} берет тебя за челюсть.")
 				saynn("[say=npc]Я буду использовать твою глотку, пока ты не начнёшь задыхаться.[/say]")
 				saynn("На этом этапе ты хочешь открыть рот только для того, чтобы {npc.him} и попробовать на вкус {npc.his}"+dickWord+". Ты высовываешь язык для {npc.him} и...")
-				HypnokinkUtil.addUnresistableHypnoButtons(self, "get_fucked_oral_1", ["Whimper", "Get ready", "Gulp"])
+				HypnokinkUtil.addUnresistableHypnoButtons(self, "get_fucked_oral_1", ["Whimper", "Приготовься", "Gulp"])
 				
 		# (kind version)
 		if(npcVariation == "kind"):
@@ -216,7 +216,7 @@ func _run():
 			saynn("[say=npc]А теперь давай заставим твой ротик поработать, м?[/say]")
 			
 			saynn("Ты ведь знаешь, что можешь остановиться в любой момент, но тебе просто не [i] хочется[/i]. На самом деле ты просто хочешь открыть рот и...")
-			HypnokinkUtil.addUnresistableHypnoButtons(self, "get_fucked_oral_1", ["Nod", "Get ready", "Gulp"])
+			HypnokinkUtil.addUnresistableHypnoButtons(self, "get_fucked_oral_1", ["Nod", "Приготовься", "Gulp"])
 			
 		# (subby version)
 		# there is no subby version
@@ -248,7 +248,7 @@ func _run():
 		# (subby version)
 		# there is no subby version
 		
-		HypnokinkUtil.addUnresistableHypnoButtons(self, "get_fucked_oral_1", ["Whimper", "Get ready", "Gulp"])
+		HypnokinkUtil.addUnresistableHypnoButtons(self, "get_fucked_oral_1", ["Whimper", "Приготовься", "Gulp"])
 		
 	if(state == "get_fucked_oral_1"):
 		var sucking = true
@@ -311,7 +311,7 @@ func _run():
 		
 		if(sucking):
 			playAnimation(StageScene.SexOral, "sex", {pc= npcID, npc="pc", bodyState={exposedCrotch=true, hard=true}})
-			HypnokinkUtil.addUnresistableHypnoButtons(self, "get_fucked_oral_2", ["Take it", "Gag", "Get fucked", "Suck"])
+			HypnokinkUtil.addUnresistableHypnoButtons(self, "get_fucked_oral_2", ["Принимай", "Gag", "Получи по полной", "Suck"])
 		else:
 			playAnimation(StageScene.SexOral, "lick", {pc= npcID, npc="pc", bodyState={exposedCrotch=true, hard=true}})
 			HypnokinkUtil.addUnresistableHypnoButtons(self, "get_fucked_oral_2", ["Lick"])
@@ -376,7 +376,7 @@ func _run():
 		
 		if(sucking):
 			playAnimation(StageScene.SexOral, "fast", {pc= npcID, npc="pc", bodyState={exposedCrotch=true, hard=true}})
-			HypnokinkUtil.addUnresistableHypnoButtons(self, "get_fucked_oral_3", ["Take it", "Gag", "Get fucked", "Suck", "Swallow"])
+			HypnokinkUtil.addUnresistableHypnoButtons(self, "get_fucked_oral_3", ["Принимай", "Gag", "Получи по полной", "Suck", "Swallow"])
 		else:
 			playAnimation(StageScene.SexOral, "grind", {pc= npcID, npc="pc", bodyState={exposedCrotch=true, hard=true}})
 			HypnokinkUtil.addUnresistableHypnoButtons(self, "get_fucked_oral_3", ["Lick"])
@@ -489,7 +489,7 @@ func _run():
 			])+"[/say]")
 		
 		saynn("Но теперь, когда ты знаешь, что [i]можешь[/i] уйти, тебе действительно стоит просто...")
-		HypnokinkUtil.addHypnoButtons(self, "kneel", "resist_2", ["Kneel", "Remain", "Stay", "Not move"], ["Get up", "Resist", "Stand"])
+		HypnokinkUtil.addHypnoButtons(self, "kneel", "resist_2", ["Kneel", "Remain", "Stay", "Не двигаться"], ["Встать", "Resist", "Stand"])
 	if(state == "resist_2"):
 		removeCharacter(npcID)
 		playAnimation(StageScene.Solo, "stand")

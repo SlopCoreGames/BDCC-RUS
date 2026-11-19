@@ -66,7 +66,7 @@ func _init():
 	}
 	
 func _getName():
-	return "Main bully"
+	return "Главный задира"
 
 func getGender():
 	return Gender.Male

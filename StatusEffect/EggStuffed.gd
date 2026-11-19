@@ -30,7 +30,7 @@ func getEffectDesc():
 		unpluggedHolesTexts.append(BodypartSlot.getVisibleNameNoCap(theHole))
 	var helpfulPlugMessage:String = ""
 	if(false && unpluggedHoles.size() > 0): # Disabled, players can figure it out themselves
-		helpfulPlugMessage = " Plug your "+Util.humanReadableList(unpluggedHolesTexts)+" if you don't want that."
+		helpfulPlugMessage = " Заткни свой "+Util.humanReadableList(unpluggedHolesTexts)+" если не хочешь этого."
 	
 	if(unpluggedHoles.empty()):
 		return "Ты набита "+str(eggAm)+" egg"+("s" if eggAm != 1 else "")+"..."
@@ -38,9 +38,9 @@ func getEffectDesc():
 	if(theTimeUntilEggs >= 10000000):
 		timeLeftString = ""
 	elif(theTimeUntilEggs > 0):
-		timeLeftString = Util.getTimeStringHumanReadable(theTimeUntilEggs)+" left until you will want to lay "+("the first one." if eggAm != 1 else "it.")
+		timeLeftString = Util.getTimeStringHumanReadable(theTimeUntilEggs)+" оставь, пока не захочешь отложить "+("самое первое яйцо." if eggAm != 1 else "it.")
 	else:
-		timeLeftString = "You wanna lay "+("the first one" if eggAm != 1 else "it")+" NOW!"
+		timeLeftString = "Ты хочешь отложить "+("первое яйцо" if eggAm != 1 else "it")+" ПРЯМО СЕЙЧАС!"
 	return "Ты набита "+str(eggAm)+" egg"+("s" if eggAm != 1 else "")+".. "+timeLeftString+helpfulPlugMessage
 
 func getEffectImage():

@@ -159,7 +159,7 @@ func getOutputText() -> String:
 	var theGoal = getGoal()
 	if(theGoal != null):
 		return theGoal.getText()
-	return "Something something"
+	return "Что-то там"
 
 func getActions() -> Array:
 	var theGoal = getGoal()
@@ -193,11 +193,11 @@ func getDebugInfo():
 	
 	if(goal != null):
 		res.append("")
-		res.append("Current goal: "+str(goal.id))
-		res.append("Goal keep score: "+str(Util.roundF(getRolePawn("main").getProcessedGoalScore(goal.id, goal.getKeepScore(), true), 2)))
+		res.append("Текущая цель: "+str(goal.id))
+		res.append("Счет целей: "+str(Util.roundF(getRolePawn("main").getProcessedGoalScore(goal.id, goal.getKeepScore(), true), 2)))
 		res.append("")
 	
-	res.append("All goal weights:")
+	res.append("Веса всех целей:")
 	var goalEntries = getGoalsWithScores(false)
 	for goalEntry in goalEntries:
 		var goalID = goalEntry[0]
@@ -293,7 +293,7 @@ func getPreviewLineForRole(_role:String) -> String:
 		if(goal != null):
 			return goal.getText().split("\n")[0]
 		else:
-			return "{main.name} is deciding what to do next.."
+			return "{main.name} решает, что делать дальше..."
 	return .getPreviewLineForRole(_role)
 
 func getActivityIconForRole(_role:String):

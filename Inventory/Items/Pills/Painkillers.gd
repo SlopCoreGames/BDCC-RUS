@@ -18,7 +18,7 @@ func canUseInCombat():
 func useInCombat(_attacker, _receiver):
 	_attacker.addPain(-80)
 	removeXOrDestroy(1)
-	return _attacker.getName() + " took painkillers"
+	return _attacker.getName() + " принял обезболивающее"
 
 func getPossibleActions():
 	return [
@@ -73,7 +73,7 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	
 	return {
 		"name": "Обезболивающее",
-		"usedName": "a painkiller pill",
+		"usedName": "таблетка обезболивающего",
 		"desc": "Помогает унять боль.",
 		"scoreOnSub": 0.0,
 		"scoreOnSelf": float(_domInfo.getChar().getPainLevel() >= 0.5) if !GM.main.isInDungeon() else 0.0,

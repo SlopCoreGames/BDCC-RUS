@@ -108,10 +108,10 @@ func _run():
 	if(state == "dp_tease"):
 		playAnimation(StageScene.SexDP, "tease", {pc="artica", npc=npc1, npc2=npc2, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true,hard=true}, npc2BodyState={exposedCrotch=true,hard=true}})
 		var pcIncluded = (npc1 == "pc" || npc2 == "pc")
-		var slavesText = ("your two slaves" if !pcIncluded else "you and your slave")
+		var slavesText = ("твои две рабыни" if !pcIncluded else "ты и твоя рабыня")
 		var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon())
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon())
-		var cocksText = ("both cocks" if onlyCocks else ("both strapons" if onlyStrapons else "a cock and a strapon"))
+		var cocksText = ("оба члена" if onlyCocks else ("оба страпона" if onlyStrapons else "член и страпон"))
 		saynn("Крепко сжав,"+str(slavesText)+" хватает Артику и заставляет её опуститься на колени. {npc1.You} {npc1.youVerb('slide')} под ней и направляет {npc1.yourHis} {npc1.strapon} в её жаждущую щель.. в то время как {npc2.you} {npc2.youVerb('position')} {npc2.yourself} сзади и совмещает {npc2.yourHis} {npc2.strapon} с другим узким отверстием, {npc2.yourHis} руки отводят руки Артики за спину.. "+str(cocksText)+" собираются устроить двойное проникновение в свежие дырочки пушистой в любую секунду..")
 
 		saynn("[say=artica]Ах.. эй..[/say]")
@@ -132,10 +132,10 @@ func _run():
 	if(state == "dp_sex"):
 		playAnimation(StageScene.SexDP, "sex", {pc="artica", npc=npc1, npc2=npc2, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true,hard=true}, npc2BodyState={exposedCrotch=true,hard=true}})
 		var pcIncluded = (npc1 == "pc" || npc2 == "pc")
-		var slavesText = ("your other two slaves" if !pcIncluded else "you and your slave")
+		var slavesText = ("твои две другие рабыни" if !pcIncluded else "ты и твоя рабыня")
 		var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon())
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon())
-		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "cocks and strapons"))
+		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "члены и страпоны"))
 		if (!didFirst):
 			saynn("Одним мощным одновременным толчком, "+str("your" if pcIncluded else "their")+" "+str(cocksText)+" меня вжимают в дырки Артики: один член входит ей в киску, а другой — в её тугую дырочку, отчего девчонка чувствует себя невероятно наполненной.")
 
@@ -153,10 +153,10 @@ func _run():
 	if(state == "dp_sexfast"):
 		playAnimation(StageScene.SexDP, "fast", {pc="artica", npc=npc1, npc2=npc2, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true,hard=true}, npc2BodyState={exposedCrotch=true,hard=true}})
 		var pcIncluded = (npc1 == "pc" || npc2 == "pc")
-		var slavesText = ("your two slaves" if !pcIncluded else "you and your slave")
+		var slavesText = ("твои две рабыни" if !pcIncluded else "ты и твоя рабыня")
 		var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon())
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon())
-		var cocksText = ("the two cocks" if onlyCocks else ("the two strapons" if onlyStrapons else "the cock and the strapon"))
+		var cocksText = ("два члена" if onlyCocks else ("два страпона" if onlyStrapons else "член и страпон"))
 		saynn("С каждым толчком Артика чувствовала, как "+str(cocksText)+" полностью заполняет её, растягивая до предела и работая в унисон, практически никогда не оставляя её дырочки пустыми.")
 
 		saynn("Стоны Артики наполняют воздух, пока она вынуждена терпеть этот натиск; её руки заведены за спину, а "+str(slavesText)+" трахают её всё быстрее и быстрее.")
@@ -211,10 +211,10 @@ func _run():
 	if(state == "spit_tease"):
 		playAnimation(StageScene.SexSpitroast, "tease", {pc="artica", npc=npc1, npc2=npc2, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true,hard=true}, npc2BodyState={exposedCrotch=true,hard=true}})
 		var pcIncluded = (npc1 == "pc" || npc2 == "pc")
-		var slavesText = ("your two slaves" if !pcIncluded else "you and your slave")
+		var slavesText = ("твои две рабыни" if !pcIncluded else "ты и твоя рабыня")
 		var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon())
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon())
-		var cocksText = ("both cocks" if onlyCocks else ("both strapons" if onlyStrapons else "a cock and a strapon"))
+		var cocksText = ("оба члена" if onlyCocks else ("оба страпона" if onlyStrapons else "член и страпон"))
 		saynn("Крепко сжав,"+str(slavesText)+" хватают Артику за все четыре лапы... прежде чем поднять её над полом. Время не теряется, "+str(cocksText)+" уже прицеливаются к дырочкам пушистой.")
 
 		saynn("[say=artica]Ах.. эй..[/say]")
@@ -235,10 +235,10 @@ func _run():
 	if(state == "spit_sex"):
 		playAnimation(StageScene.SexSpitroast, "sex", {pc="artica", npc=npc1, npc2=npc2, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true,hard=true}, npc2BodyState={exposedCrotch=true,hard=true}})
 		var pcIncluded = (npc1 == "pc" || npc2 == "pc")
-		var slavesText = ("your other two slaves" if !pcIncluded else "you and your slave")
+		var slavesText = ("твои две другие рабыни" if !pcIncluded else "ты и твоя рабыня")
 		var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon())
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon())
-		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "cocks and strapons"))
+		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "члены и страпоны"))
 		if (!didFirst):
 			saynn("Одним мощным одновременным толчком, "+str("your" if pcIncluded else "their")+" "+str(cocksText)+" вбиваются в дырочки Артики: один скользит в её киску, а другой опускается ей в глотку, буквально лишая пушистую возможности говорить или дышать.")
 
@@ -261,7 +261,7 @@ func _run():
 		#var slavesText = ("your three slaves" if !pcIncluded else "you and your two slaves")
 		var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon())
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon())
-		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "cocks and strapons"))
+		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "члены и страпоны"))
 		saynn("Приглушенные стоны наслаждения вырываются из неё, пока два"+str(" rubber" if onlyStrapons else "")+" члена насильно втискивались в неё с обоих концов; ощущения захлестывали её, она пыталась дышать, а её тело сотрясалось от каждого мощного толчка.")
 
 		if (!didFirst):
@@ -275,7 +275,7 @@ func _run():
 	if(state == "spit_cum"):
 		playAnimation(StageScene.SexSpitroast, "inside", {pc="artica", npc=npc1, npc2=npc2, pcCum=true, npcCum=true, npc2Cum=true, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true,hard=true}, npc2BodyState={exposedCrotch=true,hard=true}})
 		var pcIncluded = (npc1 == "pc" || npc2 == "pc")
-		var slavesText = ("your two slaves" if !pcIncluded else "you and your slave")
+		var slavesText = ("твои две рабыни" if !pcIncluded else "ты и твоя рабыня")
 		#var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon())
 		#var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon())
 		#var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "cocks and strapons"))
@@ -312,10 +312,10 @@ func _run():
 	if(state == "gang_tease"):
 		playAnimation(StageScene.SexGangbang, "tease", {pc="artica", npc2=npc1, npc=npc2, npc3=npc3, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true,hard=true}, npc2BodyState={exposedCrotch=true,hard=true}, npc3BodyState={exposedCrotch=true,hard=true}})
 		var pcIncluded = (npc1 == "pc" || npc2 == "pc" || npc3 == "pc")
-		var slavesText = ("your three slaves" if !pcIncluded else "you and your two slaves")
+		var slavesText = ("твои три рабыни" if !pcIncluded else "ты и твои две рабыни")
 		var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon() && !getCharacter(npc3).isWearingStrapon())
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon() && getCharacter(npc3).isWearingStrapon())
-		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "cocks and strapons"))
+		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "члены и страпоны"))
 		saynn("Крепко сжав,"+str(slavesText)+" заставляют Артику встать на четвереньки. Время не теряют, все "+str(cocksText)+" уже прицеливаются к дырочкам пушистой.")
 
 		saynn("[say=artica]Ах.. в-вау..[/say]")
@@ -336,10 +336,10 @@ func _run():
 	if(state == "gang_sex"):
 		playAnimation(StageScene.SexGangbang, "sex", {pc="artica", npc2=npc1, npc=npc2, npc3=npc3, bodyState={naked=true, hard=true}, npcBodyState={exposedCrotch=true,hard=true}, npc2BodyState={exposedCrotch=true,hard=true}, npc3BodyState={exposedCrotch=true,hard=true}})
 		var pcIncluded = (npc1 == "pc" || npc2 == "pc" || npc3 == "pc")
-		var slavesText = ("your other three slaves" if !pcIncluded else "you and your two slaves")
+		var slavesText = ("твои остальные три рабыни" if !pcIncluded else "ты и твои две рабыни")
 		var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon() && !getCharacter(npc3).isWearingStrapon())
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon() && getCharacter(npc3).isWearingStrapon())
-		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "cocks and strapons"))
+		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "члены и страпоны"))
 		if (!didFirst):
 			saynn("Одним мощным одновременным толчком, "+str("your" if pcIncluded else "their")+" "+str(cocksText)+" с силой вбиваются в отверстия Артики: один скользит в ее киску, другой растягивает анус, а третий опускается ей в глотку.")
 
@@ -360,7 +360,7 @@ func _run():
 		#var slavesText = ("your three slaves" if !pcIncluded else "you and your two slaves")
 		var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon() && !getCharacter(npc3).isWearingStrapon())
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon() && getCharacter(npc3).isWearingStrapon())
-		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "cocks and strapons"))
+		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "члены и страпоны"))
 		saynn("Отверстия Артики долбили всё быстрее и сильнее; {npc1.your} {npc1.strapon} вбивается вверх под напором {npc1.youHim}, скользкие голубые складки плотно обхватывают его, в то время как другой {npc2.strapon} молотит по заднице девушки, а внутренние стенки туго сжимают его.. точно так же, как глотка девушки сжимает {npc3.your} {npc3.strapon}.")
 
 		if (!didFirst):
@@ -377,7 +377,7 @@ func _run():
 		#var slavesText = ("your three slaves" if !pcIncluded else "you and your two slaves")
 		var onlyCocks = (!getCharacter(npc1).isWearingStrapon() && !getCharacter(npc2).isWearingStrapon() && !getCharacter(npc3).isWearingStrapon())
 		var onlyStrapons = (getCharacter(npc1).isWearingStrapon() && getCharacter(npc2).isWearingStrapon() && getCharacter(npc3).isWearingStrapon())
-		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "cocks and strapons"))
+		var cocksText = ("cocks" if onlyCocks else ("strapons" if onlyStrapons else "члены и страпоны"))
 		saynn("горло, киску и задницу Артики спазмировали вокруг трёх "+str(cocksText)+" глубоко застрявших в ней, выцеживая из них каждую каплю спермы,"+str("lube" if  onlyStrapons else "")+" пока её накрывало волнами наслаждения."+str(". в первый раз... но точно не в последний." if !didFirst else "")+"")
 
 		saynn("Практически в тот же самый момент её собственный {artica.penis} извергся, выбрасывая густые струи спермы, в то время как её киска выпустила фонтан прозрачной девичьей смазки... Её тело дергается и дрожит, ноги трясутся, а пальцы ног сильно поджимаются.")
@@ -401,7 +401,7 @@ func _run():
 	if(state == "after_gangbang"):
 		playAnimation(StageScene.SexStart, "start", {npc="artica", npcBodyState={hard=true,naked=true}})
 		var pcIncluded = (npc1 == "pc" || npc2 == "pc" || npc3 == "pc")
-		var slavesText = ("your slaves" if !pcIncluded else "you and your slaves")
+		var slavesText = ("твои рабыни" if !pcIncluded else "ты и твои рабыни")
 		var onlyCocks = onlyCocksGlobal
 		var onlyStrapons = onlyStraponsGlobal
 		saynn("После того как последние рабы закончили групповой секс с Артикой, она осталась лежать на полу, совершенно измотанная интенсивной долбежкой во все дыры... Её киска и анус остаются широко раскрытыми и сочащимися"+str(" fake" if onlyStrapons else "")+" семенем, а горло — садненым и растянутым от грубого обращения. Каждая мышца в её теле подергивалась от последствий только что пережитого наслаждения...")
@@ -448,10 +448,10 @@ func addSlaveButtons():
 		if(npcSlave == null):
 			continue
 		if(npcSlave.isMindBroken()):
-			notFit[slaveID] = "A mindbroken slave can't do this"
+			notFit[slaveID] = "Сломленная рабыня не может этого сделать"
 			continue
 		if(npcSlave.isDoingActivity()):
-			notFit[slaveID] = "This slave is busy with something already"
+			notFit[slaveID] = "Эта рабыня уже чем-то занята"
 			continue
 		if(pickedSlaves.has(slaveID)):
 			addButton("-"+character.getName(), "Уровень "+str(npcSlave.slaveLevel)+" "+npcSlave.getSlaveTypeName()+"\n\n"+character.getSmallDescription(), "toggle_slave", [slaveID])

@@ -18,11 +18,11 @@ func getPillName() -> String:
 
 func getUnlockData() -> Dictionary:
 	return {
-		eliza = "Kinky! This pill seems to be formulated with a combination of hormonal inhibitors and tissue-reducing agents that could target penile size. When taken, it will probably lead to a decrease in length. I think I’ll call it.. 'ShrinkRay.' Because it.. shrinks your ray.. get it?",
+		eliza = "Пикантно! Похоже, эта таблетка создана на основе смеси гормональных ингибиторов и агентов, уменьшающих ткани, которые воздействуют именно на размер пениса. При приеме она, скорее всего, приведет к уменьшению длины. Думаю, назову её... «ShrinkRay» (Лучик сжатия). Потому что она... сжимает твой «луч»... понимаешь?",
 	}
 
 func getPillDatabaseDesc() -> String:
-	return "This drug will decrease the length of your penis. It does so gradually until the maximum number of stages has been reached or until the length of your penis has become 9cm or lower.\n\nThe first stage will happen after a few minutes. After that, the next ones will happen roughly every 5 hours. This could be accelerated by using the QuickShift drug or by making the test subject [b]orgasm[/b].\n\nThis drug has a maximum amount of 5 stages by default. It’s possible to use advanced lab equipment to override this behaviour and set a target penis length. Then this drug won’t have a fixed amount of stages, shrinking the penis until the target length has been reached."
+	return "Этот препарат уменьшит длину твоего пениса. Это происходит постепенно, пока не будет достигнуто максимальное количество стадий или пока длина пениса не станет 9 см или меньше.\n\nПервая стадия наступит через несколько минут. После этого последующие будут происходить примерно каждые 5 часов. Процесс можно ускорить с помощью препарата QuickShift или заставив подопытного [b]кончить[/b].\n\nПо умолчанию этот препарат имеет максимум 5 стадий. С помощью продвинутого лабораторного оборудования можно изменить этот алгоритм и задать целевую длину пениса. В таком случае количество стадий станет переменным, и пенис будет уменьшаться до тех пор, пока не достигнет заданной длины."
 
 func getTFCheckTags() -> Dictionary:
 	return {

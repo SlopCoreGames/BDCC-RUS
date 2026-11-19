@@ -52,7 +52,7 @@ func updateEntries():
 	
 	for entryID in entries:
 		var entry:Dictionary = entries[entryID]
-		var entryName:String = entry["name"] if entry.has("name") else "Unknown entry"
+		var entryName:String = entry["name"] if entry.has("name") else "Неизвестная запись"
 		entryName = entryName.to_lower()
 		
 		if(filterText != "" && !(filterText in entryName)):
@@ -82,7 +82,7 @@ func onEntrySelected(_id):
 	var theEntry:Dictionary = entries[selectedEntry]
 	
 	itemNameLabel.text = theEntry["name"] if theEntry.has("name") else "Неизвестная запись"
-	itemDescLabel.bbcode_text = theEntry["desc"] if theEntry.has("desc") else "No description provided"
+	itemDescLabel.bbcode_text = theEntry["desc"] if theEntry.has("desc") else "Описание отсутствует"
 	
 	
 	emit_signal("onItemSelected", _id)

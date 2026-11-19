@@ -30,7 +30,7 @@ func _init():
 	id = "Nemesis"
 
 func getBigDescription() -> String:
-	return "Nemeses will actively try to do mean things to you if they get the chance. Nemeses might also try to ambush you."
+	return "Враги будут активно пытаться пакостить вам при первой же возможности. Также они могут попытаться устроить засаду."
 
 func getVisibleName() -> String:
 	return "Нексус"
@@ -98,10 +98,10 @@ func onSocialEvent(_charActor:String, _charTarget:String, _eventID:int, _args:Ar
 
 func onStart(_args:Array):
 	reason = _args[0] if _args.size() > 0 else NemesisReason.Generic
-	showMessage(getChar().getName()+" became your [b][color=red]Nemesis[/color][/b]!")
+	showMessage(getChar().getName()+" стал вашим [b][color=red]врагом[/color][/b]!")
 
 func onEnd():
-	showMessage(getChar().getName()+" is no longer your Nemesis!")
+	showMessage(getChar().getName()+" больше не является вашим врагом!")
 
 func onNewDay():
 	anger += 0.1 + personality(PersonalityStat.Mean)*0.05

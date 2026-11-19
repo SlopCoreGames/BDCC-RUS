@@ -35,7 +35,7 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc=npcID, flipNPC=true, npcAction="stand", further=true})
 
 	if(state == ""):
-		saynn("While carefully stepping through the area you spot one of the guards. You caught {npc.him} at a very good moment because {npc.his} back is turned away so you can try to just sneak past.")
+		saynn("Осторожно пробираясь через это место, вы замечаете одного из охранников. Вам очень повезло, так как {npc.him} застигнут в удачный момент: {npc.his} стоит к вам спиной, так что можно попытаться проскользнуть мимо незаметно.")
 		
 		if(sawBefore):
 			saynn("Отсюда трудно разобрать, но тебе кажется, что ты уже видел {npc.him} раньше.")

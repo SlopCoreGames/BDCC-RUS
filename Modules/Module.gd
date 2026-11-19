@@ -36,7 +36,7 @@ var slaveActivities = []
 var sexReactionHandlers = []
 
 var id = "badmodule"
-var author = "no author"
+var author = "без автора"
 var flagsCache = null
 
 func _init():
@@ -44,7 +44,7 @@ func _init():
 
 func getRegisterName() -> String:
 	if(str(author) != "Rahi"):
-		return id+" module by "+str(author)
+		return id+" модуль от "+str(author)
 	return id+" module"
 
 func getAuthorName() -> String:

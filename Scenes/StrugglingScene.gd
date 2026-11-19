@@ -433,26 +433,26 @@ func _react(_action: String, _args):
 		var diff = abs(number - keyGameValue)
 		if(number > keyGameValue):
 			if(diff >= 8):
-				keyText = str(number)+" is not even close. You almost dropped the key right there"
+				keyText = str(number)+" даже близко нет. Ты чуть не выронил ключ прямо там"
 			elif(diff >= 5):
-				keyText = str(number)+" is way too much"
+				keyText = str(number)+" это уже чересчур"
 			elif(diff >= 3):
-				keyText = str(number)+" is too much"
+				keyText = str(number)+" это слишком много"
 			elif(diff >= 2):
-				keyText = str(number)+" is too much but you feel that you're pretty close"
+				keyText = str(number)+" это многовато, но ты чувствуешь, что уже совсем рядом"
 			else:
-				keyText = str(number)+" is very close."
+				keyText = str(number)+" очень близко."
 		if(number < keyGameValue):
 			if(diff >= 8):
-				keyText = str(number)+" is not even close. You almost dropped the key right there"
+				keyText = str(number)+" даже близко нет. Ты чуть не выронил ключ прямо там"
 			elif(diff >= 5):
-				keyText = str(number)+" is way too little"
+				keyText = str(number)+" это слишком мало"
 			elif(diff >= 3):
-				keyText = str(number)+" is too little"
+				keyText = str(number)+" это маловато"
 			elif(diff >= 2):
-				keyText = str(number)+" is too little but you feel that you're pretty close"
+				keyText = str(number)+" это маловато, но ты чувствуешь, что уже совсем рядом"
 			else:
-				keyText = str(number)+" is very close."
+				keyText = str(number)+" очень близко."
 		
 		keyGameTries -= 1
 		if(keyGameTries <= 0):

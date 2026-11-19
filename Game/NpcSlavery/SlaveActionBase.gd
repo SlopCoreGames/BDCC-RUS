@@ -38,14 +38,14 @@ func getFinalVisibleDesc():
 	var theDesc = getVisibleDesc()
 	
 	if(rewardHint > 0):
-		var rewardLevels = ["a small reward", "a normal reward", "a big reward", "one of the best possible rewards"]
-		theDesc += "\nThis is "+rewardLevels[Util.mini(3, rewardHint-1)]+""
+		var rewardLevels = ["скромная награда", "обычная награда", "щедрая награда", "одна из лучших возможных наград"]
+		theDesc += "\nЭто "+rewardLevels[Util.mini(3, rewardHint-1)]+""
 	if(rewardHint < 0):
-		var rewardLevels = ["a small punishment", "a normal punishment", "a big punishment", "one of the worst possible punishments"]
-		theDesc += "\nThis is "+rewardLevels[Util.mini(3, -rewardHint-1)]+""
+		var rewardLevels = ["легкое наказание", "обычное наказание", "суровое наказание", "одно из самых жестоких возможных наказаний"]
+		theDesc += "\nЭто "+rewardLevels[Util.mini(3, -rewardHint-1)]+""
 	
 	if(slaveMinLevel > 0):
-		theDesc += "\nSlave minimum level: "+str(slaveMinLevel)
+		theDesc += "\nМин. уровень рабыни: "+str(slaveMinLevel)
 	if(!slaveSkillsRequired.empty()):
 		var reqs = []
 		for slaveType in slaveSkillsRequired:
@@ -54,7 +54,7 @@ func getFinalVisibleDesc():
 			if(slaveTypeObj == null):
 				continue
 			reqs.append(slaveTypeObj.getVisibleName()+": "+NpcSlave.rankToLetter(slaveTypeLevel))
-		theDesc += "\nRequired skills: "+Util.join(reqs, ", ")
+		theDesc += "\nТребуемые навыки: "+Util.join(reqs, ", ")
 	
 	return theDesc
 
@@ -79,7 +79,7 @@ func checkCanDoFinal(_slaveID, _extraSlavesIDs = {}):
 	var checkCanDoData = checkCanDo(_slaveID, _extraSlavesIDs)
 	if(checkCanDoData is bool):
 		if(!checkCanDoData):
-			return [false, "One of the conditions wasn't met"]
+			return [false, "Одно из условий не выполнено"]
 	if(!checkCanDoData[0]):
 		return checkCanDoData
 	
@@ -90,7 +90,7 @@ func checkCanDoFinal(_slaveID, _extraSlavesIDs = {}):
 	
 	for roleID in extraSlaves:
 		if(!_extraSlavesIDs.has(roleID)):
-			return [false, "One of the roles isn't selected"]
+			return [false, "Одна из ролей не выбрана"]
 		var fitsExtraSlaveData = fitsAsExtraSlaveAdvanced(roleID, _extraSlavesIDs[roleID])
 		if(!fitsExtraSlaveData[0]):
 			return fitsExtraSlaveData
@@ -100,10 +100,10 @@ func checkCanDoFinal(_slaveID, _extraSlavesIDs = {}):
 func fitsAsMainSlaveAdvanced(_charID):
 	var npcSlave:NpcSlave = getSlave(_charID)
 	if(npcSlave.getLevel() < slaveMinLevel):
-		return [false, "Slave must be of level "+str(slaveMinLevel)+" or higher"]
+		return [false, "Уровень рабыни должен быть "+str(slaveMinLevel)+" или выше"]
 	for slaveType in slaveSkillsRequired:
 		if(npcSlave.getSlaveSkill(slaveType) < slaveSkillsRequired[slaveType]):
-			return [false, "Skill requirements aren't met"]
+			return [false, "Требования к навыкам не соблюдены"]
 		
 	return [true]
 
@@ -116,14 +116,14 @@ func fitsAsExtraSlaveAdvanced(_role, _charID):
 	
 	if(extraSlaveInfo.has("slaveMinLevel")):
 		if(npcSlave.getLevel() < extraSlaveInfo["slaveMinLevel"]):
-			return [false, "Slave must be of level "+str(slaveMinLevel)+" or higher"]
+			return [false, "Уровень рабыни должен быть "+str(slaveMinLevel)+" или выше"]
 	if(extraSlaveInfo.has("slaveSkillsRequired")):
 		var theRequiredSkills = extraSlaveInfo["slaveSkillsRequired"]
 		for slaveType in theRequiredSkills:
 			if(npcSlave.getSlaveSkill(slaveType) < theRequiredSkills[slaveType]):
-				return [false, "Skill requirements aren't met"]
+				return [false, "Требования к навыкам не соблюдены"]
 	if(npcSlave.isDoingActivity()):
-		return [false, "Skill is busy doing something"]
+		return [false, "Навык чем-то занят"]
 	
 	return [true]
 

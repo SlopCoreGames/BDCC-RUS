@@ -317,9 +317,9 @@ func tryToPopulateFilesList():
 						
 				return jsonData
 		else:
-			return "No '"+str(jsonFile)+"' файл, предоставленный внутри мода"
+			return "Нет файла '"+str(jsonFile)+"' внутри мода"
 	else:
-		Log.print('Failed loading zip file')
+		Log.print('Не удалось загрузить zip-файл')
 		modFileList.add_item("Не удалось загрузить файлы")
 	return "Ошибка загрузки информации"
 

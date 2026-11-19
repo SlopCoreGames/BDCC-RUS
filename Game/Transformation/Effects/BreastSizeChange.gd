@@ -155,7 +155,7 @@ func describeBreastTransformation(origSize:int, size:int, breastsCovered:bool = 
 			"{npc.YouHe} {npc.youHeVerb('sense')} ощущает сильное покалывание, когда {npc.yourHis} грудь стремительно уменьшается, от чего {npc.youHim} буквально захватывает дух. Объем {npc.yourHis} груди заметно спадает, полностью меняя ее внешний вид.",
 			"Внезапный холод разливается по груди {npc.yourHis}, и {npc.youHe} {npc.youHeVerb('feel')} {npc.yourHis} грудь постепенно становится всё меньше и меньше, уменьшаясь до размеров, которые кажутся почти чужими.",
 		])
-	return "something went wrong"
+	return "что-то пошло не так"
 
 func breastSizeToString(size:int) -> String:
 	if(size <= BreastsSize.FLAT):

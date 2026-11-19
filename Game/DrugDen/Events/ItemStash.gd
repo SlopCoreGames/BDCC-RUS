@@ -32,121 +32,121 @@ func onSpawn(_drugDen):
 		{
 			text = "У подножия сломанной трубы стоит старый ржавый ящик для инструментов. Крышка слегка приоткрыта, позволяя заглянуть внутрь. {slot1} Вокруг не шелохнулось ни пылинки, будто он простоял здесь целую вечность. {slot2}",
 			slot1sus = [
-				"The latch is free of rust, with tiny scratches near the edges.",
+				"Защелка не заржавела, лишь по краям видны мелкие царапины.",
 			],
 			slot1 = [
-				"The latch is corroded, barely holding the lid shut.",
+				"Защелка изъедена коррозией и едва удерживает крышку закрытой.",
 			],
 			slot2sus = [
-				"A faint chemical scent lingers around it.",
+				"В воздухе вокруг витает слабый химический запах.",
 			],
 			slot2 = [
-				"The air here smells stale, nothing out of the ordinary.",
+				"Воздух здесь застоявшийся, ничего необычного.",
 			],
 		},
 		{
 			text = "У стены туннеля прислонен пыльный рюкзак, ремень которого наполовину истлел от старости. {slot1} Молния почти застегнута, хотя кажется, что кто-то уже рылся в нем раньше. {slot2}",
 			slot1sus = [
-				"The fabric near the bottom is slightly raised, as if something stiff is underneath.",
+				"Ткань снизу слегка приподнята, будто под ней что-то твердое.",
 			],
 			slot1 = [
-				"The material is sunken in, collapsing under its own weight.",
+				"Материал просел, прогибаясь под собственным весом.",
 			],
 			slot2sus = [
-				"A few loose threads near the zipper are sticking up, recently pulled apart.",
+				"У молнии торчат несколько ниток, будто их недавно зацепили.",
 			],
 			slot2 = [
-				"The stitching is fully intact, if a little worn.",
+				"Швы полностью целы, хоть и немного потерты.",
 			],
 		},
 		{
 			text = "Старый деревянный ящик с припасами прислонен к холодной стене, его поверхность покрыта царапинами и граффити. {slot1} Несколько гвоздей разболтались, намекая на то, что его уже открывали. {slot2}",
 			slot1sus = [
-				"There’s a faint indentation around the edges, as if the lid was pressed back into place.",
+				"По краям заметна слабая вмятина, словно крышку вдавлен обратно на место.",
 			],
 			slot1 = [
-				"The lid sits unevenly, one side slightly raised higher than the other.",
+				"Крышка лежит неровно: один край чуть выше другого.",
 			],
 			slot2sus = [
-				"The graffiti near the bottom looks smudged, like something brushed against it recently.",
+				"Граффити внизу выглядит размазанным, будто по нему недавно что-то провели.",
 			],
 			slot2 = [
-				"Dust has settled into the grooves of the graffiti, blending it into the wood.",
+				"Пыль забилась в борозды граффити, сливаясь с текстурой дерева.",
 			],
 		},
 		{
 			text = "Помятый металлический шкафчик стоит прямо, его дверца слегка приоткрыта. {slot1} На поверхности выцарапано выцветшее число, которое почти невозможно разобрать. {slot2}",
 			slot1sus = [
-				"The handle has a thin, uneven gap between it and the door.",
+				"Между ручкой и дверью виден узкий, неровный зазор.",
 			],
 			slot1 = [
-				"The handle is flush against the surface, stiff with rust.",
+				"Ручка плотно прилегает к поверхности, заржавевшая и неподвижная.",
 			],
 			slot2sus = [
-				"The hinges have tiny flakes of disturbed paint around them.",
+				"Вокруг петель видны крошечные чешуйки содранной краски.",
 			],
 			slot2 = [
-				"The hinges are coated in a thick layer of grime.",
+				"Петли покрыты толстым слоем грязи.",
 			],
 		},
 		{
 			text = "В углу стоит коробка, краска на которой облупилась и выцвела. {slot1} Защелка всё еще цела, хотя выглядит довольно изношенной. {slot2}",
 			slot1sus = [
-				"A faint outline of a handprint is visible in the dust around the latch.",
+				"В пыли вокруг защелки виден слабый контур отпечатка руки.",
 			],
 			slot1 = [
-				"The dust is settled evenly, untouched for a long time.",
+				"Пыль лежит ровным слоем, её долго никто не трогал.",
 			],
 			slot2sus = [
-				"The lid doesn’t fully sit flush, leaving a tiny, uneven gap.",
+				"Крышка прилегает не плотно, оставляя крошечный неровный зазор.",
 			],
 			slot2 = [
-				"The lid is firmly shut, the edges lined up perfectly.",
+				"Крышка плотно закрыта, края идеально подогнаны друг к другу.",
 			],
 		},
 		{
 			text = "За неплотной панелью вы обнаруживаете небольшой тайник. {slot1} Он накрыт обрывком ткани, словно кто-то пытался его спрятать. {slot2}",
 			slot1sus = [
-				"The cloth has a single clean fold along one side, different from the rest of the wrinkles.",
+				"На ткани с одной стороны видна одна четкая складка, выделяющаяся на фоне остальных морщин.",
 			],
 			slot1 = [
-				"The fabric is crumpled and stiff with dust.",
+				"Ткань скомкана и застыла от пыли.",
 			],
 			slot2sus = [
-				"The inside edges of the panel look strangely smooth compared to the rough concrete around it.",
+				"Внутренние края панели выглядят странно гладкими по сравнению с грубым бетоном вокруг.",
 			],
 			slot2 = [
-				"The panel edges are chipped and uneven, blending into the wall.",
+				"Края панели сколоты и неровны, они почти сливаются со стеной.",
 			],
 		},
 		{
 			text = "На куче хлама лежит гладкий металлический кейс, отражающий тусклый свет. {slot1} Замок выглядит просто — обычная защелка. {slot2}",
 			slot1sus = [
-				"The surrounding junk is pushed slightly outward, like the case was set down more recently.",
+				"Окружающий хлам слегка отодвинут в стороны, будто кейс поставили сюда совсем недавно.",
 			],
 			slot1 = [
-				"The case is partially buried under debris, settled in over time.",
+				"Кейс частично погребен под обломками, словно он пролежал здесь целую вечность.",
 			],
 			slot2sus = [
-				"There’s a small, hairline scratch near the latch that catches the light.",
+				"Рядом с защелкой видна тонкая, едва заметная царапина, которая ловит блики света.",
 			],
 			slot2 = [
-				"The surface is dull, scuffed from age but nothing fresh.",
+				"Поверхность матовая, потертая от времени, но без свежих царапин.",
 			],
 		},
 		{
 			text = "В выдолбленной части бетонной стены спрятан тайник. {slot1} Пространства как раз хватает для небольшого запаса припасов. {slot2}",
 			slot1sus = [
-				"The floor immediately in front of it is slightly less dusty than the surrounding area.",
+				"Пол прямо перед ним чуть менее пыльный, чем остальная поверхность.",
 			],
 			slot1 = [
-				"A thick, undisturbed layer of dust coats the floor.",
+				"Пол покрыт толстым, нетронутым слоем пыли.",
 			],
 			slot2sus = [
-				"A faintly bent piece of metal rests at the bottom of the stash, barely out of place.",
+				"На дне тайника лежит слегка погнутый кусок металла, который почти не выделяется из общей массы.",
 			],
 			slot2 = [
-				"The bottom is littered with debris, nothing that stands out.",
+				"Дно завалено всяким хламом, ничего примечательного.",
 			],
 		},
 	]
@@ -192,18 +192,18 @@ func doInteract(_actionID:String, _args:Array = []) -> Dictionary:
 		trapChance = 95.0
 		
 	if(RNG.chance(trapChance)):
-		var beginText:String = "[b]It was trapped ("+str(Util.roundF(trapChance, 1))+"% chance)![/b] "
+		var beginText:String = "[b]Оно застряло ("+str(Util.roundF(trapChance, 1))+"% chance)![/b] "
 		if(trapType == 0):
 			GM.pc.addPain(RNG.randi_range(20, 40))
-			return {text=beginText+"You got shocked as soon as you touched the stash. Ow!", ended=true, anim=[StageScene.Solo, "hurt"]}
+			return {text=beginText+"Как только ты коснулся тайника, тебя ударило током. Ай!", ended=true, anim=[StageScene.Solo, "hurt"]}
 		elif(trapType == 1):
 			GM.pc.addLust(RNG.randi_range(40, 80))
-			return {text=beginText+"A cloud of aprorosiac gas surrounds you, making you extremely horny!", ended=true, anim=[StageScene.Solo, "stand"]}
+			return {text=beginText+"Тебя окутывает облако афродизиакающего газа, от которого ты мгновенно начинаешь дико хотеть секса!", ended=true, anim=[StageScene.Solo, "stand"]}
 		else:
 			GM.pc.getInventory().forceRestraintsWithTag(ItemTag.CanBeForcedByGuards, 2)
-			return {text=beginText+"Restraints get forced upon you!", ended=true, anim=[StageScene.Solo, "hurt"]}
+			return {text=beginText+"Тебя насильно заковывают в кандалы!", ended=true, anim=[StageScene.Solo, "hurt"]}
 	else:
-		return {text="Ты проверяешь тайник на наличие чего-нибудь полезного...", noLootText="Sadly, it's empty.", lootTable="junkieStash", ended=true}
+		return {text="Ты проверяешь тайник на наличие чего-нибудь полезного...", noLootText="К сожалению, здесь пусто.", lootTable="junkieStash", ended=true}
 
 func getMapIcon():
 	return RoomStuff.RoomSprite.IMPORTANT

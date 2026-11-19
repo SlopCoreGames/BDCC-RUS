@@ -91,17 +91,17 @@ func getPickableAttributes():
 		"textButton": "Length",
 		"buttonDesc": "Выберите длину члена",
 		"options": [
-			[5, Util.cmToString(5), "Pick this length"],
-			[8, Util.cmToString(8), "Pick this length"],
-			[10, Util.cmToString(10), "Pick this length"],
-			[13, Util.cmToString(13), "Pick this length"],
-			[15, Util.cmToString(15), "Pick this length"],
-			[18, Util.cmToString(18), "Pick this length"],
-			[22, Util.cmToString(22), "Pick this length"],
-			[25, Util.cmToString(25), "Pick this length"],
-			[30, Util.cmToString(30), "Pick this length"],
-			[40, Util.cmToString(40), "Pick this length"],
-			[50, Util.cmToString(50), "Pick this length"],
+			[5, Util.cmToString(5), "Выбери эту длину"],
+			[8, Util.cmToString(8), "Выбери эту длину"],
+			[10, Util.cmToString(10), "Выбери эту длину"],
+			[13, Util.cmToString(13), "Выбери эту длину"],
+			[15, Util.cmToString(15), "Выбери эту длину"],
+			[18, Util.cmToString(18), "Выбери эту длину"],
+			[22, Util.cmToString(22), "Выбери эту длину"],
+			[25, Util.cmToString(25), "Выбери эту длину"],
+			[30, Util.cmToString(30), "Выбери эту длину"],
+			[40, Util.cmToString(40), "Выбери эту длину"],
+			[50, Util.cmToString(50), "Выбери эту длину"],
 		],
 		"default": 15,
 		"floatinput": true,
@@ -111,19 +111,19 @@ func getPickableAttributes():
 		"textButton": "Balls",
 		"buttonDesc": "Выберите размер яичек и члена",
 		"options": [
-			[0.0, "0%", "Pick this scale"],
-			[0.3, "30%", "Pick this scale"],
-			[0.5, "50%", "Pick this scale"],
-			[0.8, "80%", "Pick this scale"],
-			[1.0, "100%", "Pick this scale"],
-			[1.2, "120%", "Pick this scale"],
-			[1.5, "150%", "Pick this scale"],
-			[1.8, "180%", "Pick this scale"],
-			[2.0, "200%", "Pick this scale"],
-			[2.5, "250%", "Pick this scale"],
-			[3.0, "300%", "Pick this scale"],
-			[4.0, "400%", "Pick this scale"],
-			[5.0, "500%", "Pick this scale"],
+			[0.0, "0%", "Выберите этот размер"],
+			[0.3, "30%", "Выберите этот размер"],
+			[0.5, "50%", "Выберите этот размер"],
+			[0.8, "80%", "Выберите этот размер"],
+			[1.0, "100%", "Выберите этот размер"],
+			[1.2, "120%", "Выберите этот размер"],
+			[1.5, "150%", "Выберите этот размер"],
+			[1.8, "180%", "Выберите этот размер"],
+			[2.0, "200%", "Выберите этот размер"],
+			[2.5, "250%", "Выберите этот размер"],
+			[3.0, "300%", "Выберите этот размер"],
+			[4.0, "400%", "Выберите этот размер"],
+			[5.0, "500%", "Выберите этот размер"],
 		],
 		"default": 1.0,
 		"floatinput": true,
@@ -139,8 +139,8 @@ func applyAttribute(_attrID: String, _attrValue):
 
 func getAttributesText():
 	return [
-		["Penis length", Util.cmToString(lengthCM)],
-		["Balls scale", str(Util.roundF(ballsScale*100.0, 1))+"%"],
+		["Длина пениса", Util.cmToString(lengthCM)],
+		["Размер яичек", str(Util.roundF(ballsScale*100.0, 1))+"%"],
 	]
 	
 func getCharCreatorData():
@@ -162,7 +162,7 @@ func getBallsScale():
 	return ballsScale
 
 func getRevealMessage():
-	return Util.capitalizeFirstLetter(getLewdDescriptionAndName()) + " got revealed."
+	return Util.capitalizeFirstLetter(getLewdDescriptionAndName()) + " был обнажен."
 
 func generateDataFor(_dynamicCharacter):
 	lengthCM = RNG.randf_range(10.0, 25.0)
@@ -214,10 +214,10 @@ func getFluidType(_fluidSource) -> String:
 	return fluidType
 
 func getTransformAwayMessage(_context:Dictionary) -> String:
-	return "{npc.YouHe} suddenly {npc.youHeVerb('feel')} a rush of warmth enveloping {npc.yourHis} lower body, and a wave of energy courses through {npc.youHim}. {npc.YourHis} penis begins to dissolve, its flesh softening and retracting as if it were melting away. {npc.YouHe} can feel the skin pulling back, the sensation both exhilarating and unsettling. Inch by inch, {npc.youHe} {npc.youAreHeIs} losing {npc.yourHis} length.. until there is nothing left but a flat crotch."
+	return "{npc.YouHe} внезапно {npc.youHeVerb('feel')} волна тепла окутывает {npc.yourHis} низ тела, и по {npc.youHim} пробегает поток энергии. Пенис {npc.YourHis} начинает растворяться, его плоть размягчается и втягивается, словно он тает. {npc.YouHe} чувствует, как кожа стягивается — это ощущение одновременно будоражит и тревожит. Дюйм за дюймом, {npc.youHe} {npc.youAreHeIs} теряет {npc.yourHis} своей длины... пока не остается ничего, кроме плоской промежности."
 
 func getTransformGrowMessage(_context:Dictionary) -> String:
-	return "A weird, tingling sensation spreads through {npc.yourHis} groin, and {npc.youHe} {npc.youHeVerb('sense')} something new beginning to form within {npc.youHim}. The skin stretches and reshapes, as if something powerful is pushing outward from deep inside. The contours of {npc.yourHis} new anatomy begin to take shape, and {npc.youHe} can feel the weight of testicles forming, settling into place beneath {npc.youHim}. A shaft begins to grow, thickening and lengthening, the skin stretching to accommodate its size. Finally, as the last remnants of the transformation settle, {npc.youHe} {npc.youHeVerb('realize')} that {npc.youHe} now {npc.youHaveHeHas} "+getAVulgarName()+" hanging between {npc.yourHis} legs, pulsating with newfound virility and power."
+	return "Странное, покалывающее ощущение разливается по паху {npc.yourHis}, и {npc.youHe} {npc.youHeVerb('sense')} внутри {npc.youHim} начинает формироваться нечто новое. Кожа растягивается и меняет форму, будто что-то мощное давит изнутри. Контуры новой анатомии {npc.yourHis} начинают обретать форму, и {npc.youHe} чувствует, как под {npc.youHim} формируются и оседают яички. Начинает расти ствол, утолщаясь и удлиняясь, кожа растягивается, подстраиваясь под его размер. Наконец, когда последние остатки трансформации утихают, {npc.youHe} {npc.youHeVerb('realize')} понимает, что {npc.youHe} теперь {npc.youHaveHeHas} "+getAVulgarName()+" висит между ногами {npc.yourHis}, пульсируя новообретенной мужественностью и силой."
 
 func getTransformMorphMessage(_context:Dictionary) -> String:
-	return "{npc.YouHe} {npc.youHeVerb('feel')} a stirring in {npc.yourHis} groin, and suddenly, {npc.yourHis} penis begins to change and morph, obtaining a different shape completely. {npc.YouHe} now {npc.youHaveHeHas} "+getAVulgarName()+"."
+	return "{npc.YouHe} {npc.youHeVerb('feel')} ощущает странное волнение в {npc.yourHis} паху, и вдруг пенис {npc.yourHis} начинает меняться и трансформироваться, принимая совершенно иную форму. {npc.YouHe} теперь {npc.youHaveHeHas} "+getAVulgarName()+"."

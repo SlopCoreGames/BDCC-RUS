@@ -53,7 +53,7 @@ func getEffectsReadable():
 		var effect = allEffects[effectID]
 		var howManyTurns = currentEffects[effectID]
 		
-		result.append(effect["name"]+": "+effect["desc"]+" (Turns left: "+str(howManyTurns)+")")
+		result.append(effect["name"]+": "+effect["desc"]+" (Поворот налево: "+str(howManyTurns)+")")
 	return result
 
 func startDifficulty(theDiff):
@@ -270,7 +270,7 @@ func getAllDifficulties():
 			actions = ["wait", "lightspank"],
 			amountOfActions = 3,
 			winID = "firstspanks",
-			introText = "You prepare to do some light spanking with Tavi.",
+			introText = "Вы готовитесь слегка отшлепать Тави.",
 			isNaked = false,
 			defaultAnimation = [StageScene.Duo, "stand", {npc="tavi"}],
 			avoidTargets = [],
@@ -280,7 +280,7 @@ func getAllDifficulties():
 			actions = ["wait", "lightspank", "heavyspank"],
 			amountOfActions = 5,
 			winID = "firmspanks",
-			introText = "You tell Tavi that you wanna experiment with applying more strength while spanking her.",
+			introText = "Вы говорите Тави, что хотите поэкспериментировать и шлепать её сильнее.",
 			isNaked = false,
 			defaultAnimation = [StageScene.Duo, "stand", {npc="tavi"}],
 			avoidTargets = [3, 5, 10, 15, 20, 6, 9, 14],
@@ -290,7 +290,7 @@ func getAllDifficulties():
 			actions = ["wait", "heavyspank", "startchoke"],
 			amountOfActions = 4,
 			winID = "afterchoking",
-			introText = "You tell Tavi that you wanna experiment with some breathplay. Gotta be careful not to make her pass out.",
+			introText = "Вы говорите Тави, что хотите попробовать игры с дыханием. Главное — не дать ей отключиться.",
 			isNaked = true,
 			defaultAnimation = [StageScene.Duo, "stand", {npc="tavi"}],
 			avoidTargets = [3, 6, 9, 12, 15, 10, 15, 20, 22, 14],
@@ -300,7 +300,7 @@ func getAllDifficulties():
 			actions = ["wait", "lightspank", "pourvax", "ice"],
 			amountOfActions = 5,
 			winID = "afterwax",
-			introText = "You find some wax candles and ice cubes before telling Tavi that you wanna experiment with some temperature play. She nods and undresses for you.",
+			introText = "Вы находите восковые свечи и кубики льда, а затем говорите Тави, что хотите поэкспериментировать с температурными играми. Она кивает и раздевается для вас.",
 			isNaked = true,
 			defaultAnimation = [StageScene.Duo, "stand", {npc="tavi"}],
 			avoidTargets = [3, 6, 9, 12, 5, 15, 25, 35],
@@ -310,7 +310,7 @@ func getAllDifficulties():
 			actions = ["wait", "lightspank", "heavyspank", "startchoke", "pourvax", "ice"],
 			amountOfActions = 4,
 			winID = "finalcum",
-			introText = "You tell Tavi that it's time for the final challenge. You will use every tool in your arsenal on her.",
+			introText = "Вы говорите Тави, что пришло время для финального испытания. Вы задействуете против неё весь свой арсенал.",
 			isNaked = true,
 			defaultAnimation = [StageScene.Duo, "stand", {npc="tavi"}],
 			avoidTargets = [3, 6, 9, 12, 5, 10, 20, 30, 15, 25, 35, 40, 50, 45, 55, 23],
@@ -331,7 +331,7 @@ func getAllActions():
 			cantBeLastAction = true,
 			animation = [StageScene.Spanking, "tease", {npc="tavi"}],
 			messages = [
-				"You let Tavi rest for a second. She recovers a bit.",
+				"Вы даете Тави секунду передохнуть. Она немного приходит в себя.",
 			],
 		},
 		"lightspank": {
@@ -341,10 +341,10 @@ func getAllActions():
 			pain = 3,
 			animation = [StageScene.Spanking, "spank", {npc="tavi"}],
 			messages = [
-				"Tavi's breath hitches as your palm connects with her butt.",
-				"You spank Tavi gently, making her buttcheeks slightly green.",
-				"Your hand delivers a soft smack on Tavi's rear, making her butt jiggle.",
-				"Tavi's mews softly as your palm lands on her fluffy butt and spanks it.",
+				"У Тави перехватывает дыхание, когда ваша ладонь встречается с её задницей.",
+				"Вы нежно шлепаете Тави, отчего её ягодицы слегка розовеют.",
+				"Ваша рука мягко хлопает Тави по заднице, заставляя её ягодицы колыхаться.",
+				"Тави тихонько мяукает, когда твоя ладонь опускается на её пушистую попку и отвешивает шлепок.",
 			],
 		},
 		"heavyspank": {
@@ -357,10 +357,10 @@ func getAllActions():
 			],
 			animation = [StageScene.Spanking, "fast", {npc="tavi"}],
 			messages = [
-				"Tavi gasps as your hand makes contact, the sting is sharp but the next one won't have as much of an effect.",
-				"A firm slap against Tavi's butt pulls a gasp from her, the sting followed by a fleeting surge of resilience to the sensation.",
-				"Your palm connects with Tavi's rear in a light spank, the sensation mingling with a subtle increase in her tolerance to pain.",
-				"Tavi lets out a gasp as your hand makes contact with her butt, making her buttcheeks look like 2 green apples.",
+				"Тави ахает от прикосновения твоей руки; жжение резкое, но следующий удар будет уже не таким чувствительным.",
+				"Твердый шлепок по заднице Тави заставляет её судорожно вздохнуть; за жжением следует мимолетный прилив стойкости к этому ощущению.",
+				"Твоя ладонь легко хлопает Тави по заду, и это ощущение смешивается с едва заметным ростом её болевого порога.",
+				"Тави ахает, когда твоя рука касается её попы, отчего её ягодицы становятся похожи на два зеленых яблока.",
 			],
 		},
 		"startchoke": {
@@ -374,7 +374,7 @@ func getAllActions():
 			animation = [StageScene.Choking, "idle", {npc="tavi"}],
 			noturnusage = true,
 			messages = [
-				"Tavi gasps as you get a grasp on her throat and begin choking her slightly.",
+				"Тави ахает, когда ты обхватываешь её горло и начинаешь слегка душить.",
 			],
 		},
 		"choke": {
@@ -387,23 +387,23 @@ func getAllActions():
 			animation = [StageScene.Choking, "choke", {npc="tavi"}],
 			noturnusage = true,
 			messages = [
-				"Tavi squirms and lets out silent gasps while you keep choking her.",
-				"Tavi slowly loses her strength the more you choke her.. But she also seems to get aroused more.",
-				"Tavi wiggles and holds her paws on your hands.. but doesn't stop you from choking her.",
-				"The feline holds her mouth opened, her tongue out and drooling while you choke her.",
+				"Тави извивается и издает беззвучные вздохи, пока ты продолжаешь её душить.",
+				"Чем сильнее ты её душишь, тем больше Тави теряет силы... но при этом она кажется всё более возбужденной.",
+				"Тави ерзает и прижимает свои лапки к твоим рукам... но это не мешает тебе душить её.",
+				"Кошечка держит рот открытым, высунув язык и пуская слюни, пока ты душишь её.",
 			],
 		},
 		"stopchoking": {
 			air = 0,
 			name = "Стой",
 			desc = "Дать Тави вздохнуть",
-			shortdesc = "Stop choking",
+			shortdesc = "Перестать душить",
 			changestate = "",
 			state = "choking",
 			animation = [StageScene.Choking, "idle", {npc="tavi"}],
 			previousCantBe = ["startchoke"],
 			messages = [
-				"Tavi hungrily grabs air with her mouth when you stop choking her.",
+				"Когда ты перестаешь душить Тави, она жадно хватает ртом воздух.",
 			],
 		},
 		"pourvax": {
@@ -416,10 +416,10 @@ func getAllActions():
 			],
 			animation = [StageScene.SexStart, "start", {npc="tavi"}],
 			messages = [
-				"The sensation of warm wax dripping onto Tavi's body makes her squirm and moan actively.",
-				"A soft noise escapes Tavi as the wax makes contact with her inner thigh, the sensation drawing a mix of curiosity and unease.",
-				"Tavi lets out a cute moan as you tip the candle enough for the wax to drip onto her crotch.",
-				"A soft whimper escapes Tavi as the warmth of the wax makes contact with her pussy, the sensation a combination of discomfort and intrigue.",
+				"От ощущения теплого воска, стекающего по телу Тави, она начинает активно ерзать и стонать.",
+				"Тави издает тихий звук, когда воск касается ее внутренней стороны бедра — это ощущение вызывает у нее смесь любопытства и беспокойства.",
+				"Тави издает милый стон, когда ты наклоняешь свечу так, чтобы воск капнул ей на промежность.",
+				"Тихий всхлип срывается с губ Тави, когда тепло воска касается ее киски; это ощущение — смесь дискомфорта и интриги.",
 			],
 		},
 		"ice": {
@@ -432,10 +432,10 @@ func getAllActions():
 			animation = [StageScene.SexStart, "start", {npc="tavi"}],
 			cantBeFirstAction = true,
 			messages = [
-				"An ice cube landing on Tavi's back makes her gasps and squirm actively.",
-				"You teasingly press an ice cube against Tavi's nipple and hold it there until it starts melting. Tavi bites her lips and moans.",
-				"Tavi lets out a long moan as you press the ice against her sensitive clit for a second, sending a wave of cool sensations through her body.",
-				"Your hands place a few ice cubes on Tavi's thighs and hold her still while she tries to wiggle them off.",
+				"Кубик льда, упавший на спину Тави, заставляет ее ахнуть и активно заерзать.",
+				"Ты дразняще прижимаешь кубик льда к соску Тави и держишь его, пока тот не начинает таять. Тави закусывает губы и стонет.",
+				"Тави издает долгий стон, когда ты на секунду прижимаешь лед к ее чувствительному клитору, прогоняя волну прохлады по всему ее телу.",
+				"Твои руки кладут несколько кубиков льда на бедра Тави, и ты удерживаешь ее неподвижно, пока она пытается стряхнуть их, извиваясь.",
 			],
 		}
 	}

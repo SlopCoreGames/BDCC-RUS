@@ -416,7 +416,7 @@ func advanceSkill(skillID, maxLevel = 15):
 		return false
 	
 	if(getFlag("RahiModule."+str(skillID), 0) < maxLevel):
-		increaseFlag("RahiModule."+str(skillID), 1)
+		increaseFlag("Модуль Рахи"+str(skillID), 1)
 	return true
 
 func getSkillScoreText(skillID):

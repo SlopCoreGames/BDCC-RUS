@@ -766,7 +766,7 @@ func canConfigureDrugs() -> bool:
 func canMakePillResult(tfID:String) -> Array:
 	var tf:TFBase = GlobalRegistry.getTransformationRef(tfID)
 	if(tf == null):
-		return [false, "Error?"]
+		return [false, "Ошибка?"]
 	
 	var costMod:float = getFluidsCostMod()
 	var badResult:Array = []
@@ -777,7 +777,7 @@ func canMakePillResult(tfID:String) -> Array:
 		var howMuchWeHave:float = getFluidAmount(fluidID)
 		
 		if(howMuchWeHave < howMuchNeed):
-			badResult.append("Not enough "+(fluidObj.getVisibleName() if fluidObj != null else fluidID))
+			badResult.append("Недостаточно "+(fluidObj.getVisibleName() if fluidObj != null else fluidID))
 	
 	if(badResult.empty()):
 		return [true, ""]
@@ -793,7 +793,7 @@ func canMakeHasFluids(fluidsNeed:Dictionary) -> Array:
 		var howMuchWeHave:float = getFluidAmount(fluidID)
 		
 		if(howMuchWeHave < howMuchNeed):
-			badResult.append("Not enough "+(fluidObj.getVisibleName() if fluidObj != null else fluidID))
+			badResult.append("Недостаточно "+(fluidObj.getVisibleName() if fluidObj != null else fluidID))
 	
 	if(badResult.empty()):
 		return [true, ""]
@@ -832,7 +832,7 @@ func getMakePillDescription(tfID:String) -> String:
 	var result:String = ""
 	var tf:TFBase = GlobalRegistry.getTransformationRef(tfID)
 	if(tf == null):
-		return "Error, bad pill"
+		return "Ошибка, таблетка бракованная"
 	
 	result += "Effect: "+tf.getName()
 	result += "\n\nRequired:"

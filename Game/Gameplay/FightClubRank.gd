@@ -9,15 +9,15 @@ const GrandChampion = "GrandChampion"
 
 static func getVisibleName(rank):
 	if(rank == FuckMeat):
-		return "Fuck Meat"
+		return "Мясная подстилка"
 	if(rank == FailedHero):
-		return "Failed Hero"
+		return "Неудачливый герой"
 	if(rank == PlayToy):
-		return "Play Toy"
+		return "Игрушка"
 	if(rank == AttentionWhore):
-		return "Attention Whore"
+		return "Шлюха для привлечения внимания"
 	if(rank == GrandChampion):
-		return "Grand Champion"
+		return "Гранд-чемпион"
 	
 	return "error:BADRANK"
 

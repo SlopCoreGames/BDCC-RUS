@@ -15,11 +15,11 @@ func getPillName() -> String:
 
 func getUnlockData() -> Dictionary:
 	return {
-		eliza = "This pill appears to contain a blend of tissue-regulating compounds and growth inhibitors that could disrupt horn development. When ingested, it will probably facilitate the removal of horns.. if you have any that is. I think I’ll call it.. 'HornsBeGone.'",
+		eliza = "Похоже, эта таблетка содержит смесь соединений, регулирующих ткани, и ингибиторов роста, которые могут нарушить развитие рогов. При приеме она, вероятно, способствует их удалению... если они у тебя вообще есть. Думаю, назову её... «РогаПрочь».",
 	}
 
 func getPillDatabaseDesc() -> String:
-	return "This drug will morph away your horns if you have any.\n\nThe transformation consists only of one stage that will happen roughly after 20 minutes. This could be accelerated only by using the QuickShift drug."
+	return "Этот препарат избавит тебя от рогов, если они у тебя есть.\n\nТрансформация проходит всего в одну стадию и занимает примерно 20 минут. Ускорить процесс можно только с помощью препарата QuickShift."
 
 func getTFCheckTags() -> Dictionary:
 	return {

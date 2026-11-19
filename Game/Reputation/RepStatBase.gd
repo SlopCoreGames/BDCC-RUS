@@ -7,7 +7,7 @@ func getVisibleName():
 	return "Ошибка?"
 
 func getTextForLevel(_level:int, _rep):
-	return "ERROR, FILL ME PLS"
+	return "ОШИБКА, ЗАПОЛНИ МЕНЯ, ПЛЗ"
 
 func getEffectsInfoForLevel(_level:int, _rep) -> Array:
 	return []

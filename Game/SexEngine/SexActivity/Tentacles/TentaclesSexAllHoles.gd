@@ -101,23 +101,23 @@ func sex_processTurn():
 	stimulateSex(DOM_0, SUB_0, S_MOUTH, I_NORMAL, SPEED_VERYSLOW)
 	
 	var possible:Array = [
-		"Slick tentacles hold {sub.you} helpless above the floor and fuck {sub.yourHis} every hole.",
-		"Dripping tentacles pump into {sub.your} needy holes without pause.",
-		"Held in the air, {sub.you} {sub.youAre} being fucked in every hole by the same relentless, wet tendrils.",
-		"Three wet tendrils pump into all {sub.your} holes at once.",
+		"Скользкие щупальца удерживают {sub.you} над полом, беспомощно трахая {sub.yourHis} во все отверстия.",
+		"Стекающие со слизью щупальца без остановки вбиваются в жаждущие дырочки {sub.your}.",
+		"Поднятая в воздух, {sub.you} {sub.youAre} трахают во все отверстия одни и те же неумолимые влажные отростки.",
+		"Три влажных щупальца одновременно вбиваются во все отверстия {sub.your}.",
 	]
 	
 	if(getSub().hasReachableVagina()):
 		possible.append_array([
-			"Three slick tendrils fuck {sub.your} mouth, pussy, and ass in a steady rhythm.",
-			"Many tentacles stuff {sub.your} mouth, pussy, and ass at the same time.",
-			"Slick tendrils hold {sub.you} high, fucking {sub.yourHis} mouth, pussy, and ass all at once.",
+			"Три скользких щупальца в размеренном ритме трахают рот, киску и задницу {sub.your}.",
+			"Множество щупалец одновременно забивают рот, киску и задницу {sub.your}.",
+			"Скользкие отростки высоко держат {sub.you}, одновременно трахая {sub.yourHis} в рот, киску и задницу.",
 		])
 	else:
 		possible.append_array([
-			"Three slick tendrils fuck {sub.your} mouth and double-stuff {sub.yourHis} ass.",
-			"Many tentacles stuff {sub.your} mouth and ass at the same time.",
-			"Slick tendrils hold {sub.you} high, fucking {sub.yourHis} mouth and ass at the same time.",
+			"Три скользких щупальца трахают рот {sub.your} и двойным ударом забивают {sub.yourHis} задницу.",
+			"Множество щупалец одновременно забивают рот и задницу {sub.your}.",
+			"Скользкие отростки высоко держат {sub.you}, одновременно трахая {sub.yourHis} в рот и задницу.",
 			
 		])
 	addTextPick(possible)
@@ -128,22 +128,22 @@ func sex_processTurn():
 	var possibleExtra:Array = []
 	if(getSubInfo().isCloseToCumming()):
 		possibleExtra.append_array([
-			"{sub.YourHis} wet inner walls squeeze hard around the relentless tentacles.",
-			"{sub.YourHis} body shudders as a wave of pleasure is building deep inside.",
-			"{sub.You} {sub.youVerb('try', 'tries')} to moan, but the tentacle in {sub.yourHis} mouth muffles the sound into a gurgle.",
-			"{sub.YourHis} ass spasms, involuntarily gripping the slick tendril pumping into it.",
-			"{sub.YourHis} eyes roll back as {sub.youHe} {sub.youHeVerb('feel')} {sub.yourself} getting dangerously close.",
+			"{sub.YourHis} влажные внутренние стенки сильно сжимаются вокруг неумолимых щупалец.",
+			"{sub.YourHis} тело содрогается от нарастающей глубоко внутри волны удовольствия.",
+			"{sub.You} {sub.youVerb('try', 'tries')} хочется застонать, но щупальце во {sub.yourHis} рту превращает звук в глухое бульканье.",
+			"{sub.YourHis} задница спазматически сжимается, непроизвольно обхватывая скользкий отросток, вбивающийся в неё.",
+			"{sub.YourHis} глаза закатываются, когда {sub.youHe} {sub.youHeVerb('feel')} {sub.yourself} подбирается опасно близко.",
 		])
 		if(getSub().hasReachableVagina()):
 			possibleExtra.append_array([
-				"A gush of {sub.yourHis} own wetness coats the tentacle pistoning in and out of {sub.yourHis} pussy.",
-				"Pre-orgasmic clenches squeeze {sub.yourHis} pussy around the invading tendril.",
+				"Поток {sub.yourHis} собственной смазки обволакивает щупальце, поршнеобразно входящее и выходящее из {sub.yourHis} киски.",
+				"Предоргазмические сокращения сжимают {sub.yourHis} киску вокруг вторгающегося отростка.",
 			])
 	else:
 		possibleExtra.append_array([
-			"{sub.YourHis} inner walls squeeze around the relentless tentacles.",
-			"Tears stream down {sub.yourHis} cheeks from the intense, deep pounding of {sub.yourHis} throat.",
-			"Helpless whimpers escape around the thick tentacle fucking {sub.yourHis} throat.",
+			"{sub.YourHis} внутренние стенки сжимаются вокруг неумолимых щупалец.",
+			"Слезы текут по {sub.yourHis} щекам от интенсивных, глубоких толчков в {sub.yourHis} горло.",
+			"Беспомощные всхлипы прорываются сквозь толстое щупальце, трахающее {sub.yourHis} горло.",
 		])
 		
 	if(RNG.chance(possibleExtra.size()*10)):
@@ -196,7 +196,7 @@ func getActions(_indx:int):
 			if(!POSES.has(pose)):
 				continue
 			var poseName:String = POSES[pose]["name"]
-			addAction("switchpose", 0.0, poseName, "Сменить позу", {A_CATEGORY: ["Switch pose"], A_ARGS: [pose]})
+			addAction("switchpose", 0.0, poseName, "Сменить позу", {A_CATEGORY: ["Сменить позу"], A_ARGS: [pose]})
 		
 		
 	if(_indx == SUB_0):
@@ -243,15 +243,15 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 				getDom().fillBalls(RNG.randf_range(0.9, 1.0))
 				cumInsideNoText(DOM_0, SUB_0, S_VAGINA)
 				possible.append_array([
-					"Slick tips swell inside {sub.your} mouth, pussy, and ass, then begin to pulse, pumping thick {dom.cum} deep into {sub.yourHis} holes all at once"+(", [b]fertilizing the eggs[/b]" if hasEggs else "")+".",
-					"The tendrils twitch and pulse, then unload. A gush of sticky {dom.cum} hits the back of {sub.your} throat. Another floods {sub.yourHis} pussy, warm and thick. A third stuffs {sub.yourHis} ass, filling it up."+(" [b]The nectar helps to fertilize the eggs[/b]." if hasEggs else "")+"",
-					"All at once, the tentacles erupt. Hot {dom.cum} pours down {sub.your} throat, pumps into {sub.yourHis} womb, and floods {sub.yourHis} {sub.analStretch} ass."+(" [b]The nectar helps to fertilize the eggs[/b]." if hasEggs else "")+"",
+					"Скользкие кончики раздуваются внутри рта, киски и задницы {sub.your}, а затем начинают пульсировать, впрыскивая густую {dom.cum} глубоко во все отверстия {sub.yourHis} одновременно"+(", [b]оплодотворяя икринки[/b]" if hasEggs else "")+".",
+					"Щупальца дергаются и пульсируют, а затем извергаются. Поток липкой {dom.cum} бьет в глотку {sub.your}. Еще одна порция заливает киску {sub.yourHis}, теплую и густую. Третья забивает задницу {sub.yourHis}, наполняя ее до краев."+(" [b]Нектар помогает оплодотворить яйца[/b]." if hasEggs else "")+"",
+					"Все щупальца извергаются разом. Горячая {dom.cum} стекает по глотке {sub.your}, впрыскивается в матку {sub.yourHis} и заливает {sub.yourHis} {sub.analStretch} задницу."+(" [b]Нектар помогает оплодотворить яйца[/b]." if hasEggs else "")+"",
 				])
 			else:
 				possible.append_array([
-					"Slick tips swell inside {sub.your} mouth and ass, then begin to pulse, pumping thick {dom.cum} deep into {sub.yourHis} holes all at once"+(", [b]fertilizing the eggs[/b]" if hasEggs else "")+".",
-					"The tendrils twitch and pulse, then unload. A gush of sticky {dom.cum} hits the back of {sub.your} throat while anothre floods {sub.yourHis} ass, filling it up."+(" [b]The nectar helps to fertilize the eggs[/b]." if hasEggs else "")+"",
-					"All at once, the tentacles erupt. Hot {dom.cum} pours down {sub.your} throat and gets pumped into {sub.yourHis} {sub.analStretch} ass, stuffing it full."+(" [b]The nectar helps to fertilize the eggs[/b]." if hasEggs else "")+"",
+					"Скользкие кончики раздуваются внутри рта и задницы {sub.your}, а затем начинают пульсировать, впрыскивая густую {dom.cum} глубоко во все отверстия {sub.yourHis} одновременно"+(", [b]оплодотворяя икринки[/b]" if hasEggs else "")+".",
+					"Щупальца дергаются и пульсируют, а затем извергаются. Поток липкой {dom.cum} бьет в глотку {sub.your}, в то время как другая порция заливает задницу {sub.yourHis}, наполняя ее до краев."+(" [b]Нектар помогает оплодотворить яйца[/b]." if hasEggs else "")+"",
+					"Все щупальца извергаются разом. Горячая {dom.cum} стекает по глотке {sub.your} и впрыскивается в {sub.yourHis} {sub.analStretch} задницу, набивая ее до отказа."+(" [b]Нектар помогает оплодотворить яйца[/b]." if hasEggs else "")+"",
 				])
 			getDom().fillBalls(RNG.randf_range(0.9, 1.0))
 			cumInsideNoText(DOM_0, SUB_0, S_ANUS)
@@ -295,21 +295,21 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 			]
 			if(getSub().hasReachableVagina()):
 				possible.append_array([
-					"A thick tentacle rams deep into {sub.your} mouth. Another fills {sub.yourHis} pussy. Another spears {sub.yourHis} ass. They all begin moving.",
-					"Three slick tips press at {sub.your} holes. They push in together, stuffing {sub.youHim} full.",
+					"Толстый щупалец глубоко врывается в рот {sub.your}. Еще одно заполняет {sub.yourHis} киску. Еще одно вонзается в зад {sub.yourHis}. Все они начинают двигаться.",
+					"Три скользких кончика прижимаются к отверстиям {sub.your}. Они входят одновременно, набивая {sub.youHim} до отказа.",
 				])
 			else:
 				possible.append_array([
-					"A thick tentacle rams deep into {sub.your} mouth. Another two fill {sub.yourHis} ass. They all begin moving.",
-					"Three slick tips press at {sub.your} holes. They push in together, stuffing {sub.youHim} full.",
+					"Толстый щупалец глубоко врывается в рот {sub.your}. Еще два заполняют зад {sub.yourHis}. Все они начинают двигаться.",
+					"Три скользких кончика прижимаются к отверстиям {sub.your}. Они входят одновременно, набивая {sub.youHim} до отказа.",
 				])
 			addTextPick(possible)
 			state = "sex"
 		else:
 			var possible:Array = [
-				"The tentacles try to stretch {sub.yourHis} holes wider.",
-				"Slick tentacle tips prod {sub.yourHis} tight holes, trying to slip inside slowly.",
-				"Tentacle tips circle {sub.your} holes before prodding them, trying to fit in.",
+				"Щупальца пытаются растянуть отверстия {sub.yourHis} еще шире.",
+				"Скользкие кончики щупалец тычутся в узкие отверстия {sub.yourHis}, пытаясь медленно проскользнуть внутрь.",
+				"Кончики щупалец кружат вокруг отверстий {sub.your}, прежде чем начать тыкаться, пытаясь протиснуться внутрь.",
 			]
 			addTextPick(possible)
 		return

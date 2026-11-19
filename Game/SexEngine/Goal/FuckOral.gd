@@ -55,21 +55,21 @@ func canBegFor() -> bool:
 	return true
 
 func getBegName() -> String:
-	return "Offer mouth"
+	return "Предложить ротик"
 
 func getBegCategory() -> Array:
 	return BegCategorySex
 
 func getBegDesc() -> String:
-	return "Beg the dom to fuck your face!"
+	return "Умоляй домина, чтобы он оттрахал тебе лицо!"
 
 func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 	var _isBusy:bool = _sexEngine.hasTag(_subInfo.charID, SexActivityTag.HavingSex)
 
 	if(!_isBusy):
-		return "{sub.You} {sub.youVerb('open')} {sub.yourHis} mouth wide for {dom.you}."
+		return "{sub.You} {sub.youVerb('open')} {sub.yourHis} широко раскрывает рот для {dom.you}."
 	
-	return "{sub.You} {sub.youVerb('beg')} {dom.you} to use {sub.yourHis} mouth."
+	return "{sub.You} {sub.youVerb('beg')} {dom.you}, чтобы использовать {sub.yourHis} рот."
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	var hasVag:bool = _domInfo.getChar().hasReachableVagina()

@@ -21,7 +21,7 @@ func run(_triggerID, _args):
 			
 			var roomMessage = room.lootAroundMessage
 			if(roomMessage == null || roomMessage == ""):
-				roomMessage = "You notice something that you can loot here."
+				roomMessage = "Вы замечаете здесь что-то, что можно подобрать."
 			
 			saynn(roomMessage)
 			addButton("Обыскать", "Посмотреть, что здесь есть", "loot", [roomID])

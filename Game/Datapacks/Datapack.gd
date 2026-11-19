@@ -3,7 +3,7 @@ class_name Datapack
 
 var id:String = "error"
 var name:String = "Новый пак"
-var author:String = "No author"
+var author:String = "Автор отсутствует"
 var version:String = "1.0"
 
 var description:String = "Описание отсутствует"
@@ -270,9 +270,9 @@ static func getRequiredModsStringStatic(_requiredMods, _requiredDatapacks, _reqD
 			resultDatapacks.append("[color=#4FFF4F]"+str(datapackName)+"[/color]")
 	var res = []
 	if(resultMods.size() > 0):
-		res.append("Required mods: "+Util.join(resultMods, ", "))
+		res.append("Необходимые моды: "+Util.join(resultMods, ", "))
 	if(resultDatapacks.size() > 0):
-		res.append("Required datapacks: "+Util.join(resultDatapacks, ", "))
+		res.append("Необходимые датапаки: "+Util.join(resultDatapacks, ", "))
 	
 	return Util.join(res, "\n")
 

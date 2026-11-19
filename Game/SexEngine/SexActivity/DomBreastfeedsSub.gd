@@ -212,7 +212,7 @@ func doAction(_indx:int, _actionID:String, _action:Dictionary):
 		
 		var extraText:String = ""
 		if(getDom().isLactating()):
-			extraText = ", {dom.yourHis} {dom.breasts} squirt {dom.milk} out from this nipple orgasm"
+			extraText = ", {dom.yourHis} {dom.breasts} брызжет {dom.milk} из этого соска во время оргазма"
 		
 		getDomInfo().stimulateArousalZone(0.0, BodypartSlot.Breasts, 2.0)
 		sendSexEvent(SexEvent.UniqueOrgasm, SUB_0, DOM_0, {orgasmType="breasts"})

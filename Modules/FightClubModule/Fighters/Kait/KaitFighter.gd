@@ -7,13 +7,13 @@ func getVisibleName():
 	return "Кейт"
 
 func getNameAndNickname():
-	return "Kait, The Breeding Bitch"
+	return "Кейт, Сучка для разведения"
 
 func getAvyIntroduction():
-	return "Your next opponent is Kait. She is a slut that acts like she is smarter than everyone else. As a fucking lilac. I say that she is a breeding stock and nothing more. Her pussy felt nice and tight though, you should try it after you win."
+	return "Твой следующий противник — Кейт. Она шлюха, которая строит из себя умнее всех. Чертова заноза в заднице. По мне, так она всего лишь племенная скотина, и ничего больше. Но киска у неё была приятная и тугая, так что тебе стоит попробовать её после победы."
 	
 func getAnnouncerIntroduction():
-	return "And in the right corner we have Kait. Some say her kick is the strongest in the prison! Combine that with the feline agility and you got yourself a truly furious warrior!"
+	return "А в правом углу у нас Кейт. Говорят, её удар — самый мощный в тюрьме! Добавьте к этому кошачью ловкость, и вы получите поистине яростную воительницу!"
 	
 func getRank():
 	return FightClubRank.AttentionWhore

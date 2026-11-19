@@ -254,7 +254,7 @@ func runLexems(lexems, overrides: Dictionary = {}):
 							pos += 1
 							if(lexems[pos][0] == Token.EOF):
 								return [true, callObjectFunc(first, second, arguments, overrides)]
-	return [false, "Error while executing the expression"]
+	return [false, "Ошибка при выполнении выражения"]
 			
 func executeString(text: String, overrides: Dictionary = {}):
 	var expressions = getExpressionsFromText(text)

@@ -10,7 +10,7 @@ func getVisibleDesc():
 	return "Превратите своего раба в послушную сучку и получите способность заставлять её служить вам"
 
 func getEnslaveText(_npc):
-	return "[say=pc]You're gonna serve me, like a good {npc.boy}.[/say]"
+	return "[say=pc]Будешь служить мне, как послушная {npc.boy}.[/say]"
 
 # F- F  F+ D- D  D+ C- C  B- B  A- A  S- S  S+ S++
 # 0  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15

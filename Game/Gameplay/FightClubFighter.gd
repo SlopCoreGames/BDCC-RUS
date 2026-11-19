@@ -7,13 +7,13 @@ func getVisibleName():
 	return "Ошибка"
 
 func getNameAndNickname():
-	return "Error, The Error"
+	return "Ошибка, Ошибка"
 
 func getAvyIntroduction():
-	return "PLEASE CHANGE ME"
+	return "ЗАМЕНИ МЕНЯ"
 	
 func getAnnouncerIntroduction():
-	return "PLEASE CHANGE ME TOO"
+	return "МЕНЯ ТОЖЕ ЗАМЕНИ"
 	
 func getRank():
 	return FightClubRank.FuckMeat

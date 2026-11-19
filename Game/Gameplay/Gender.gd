@@ -17,7 +17,7 @@ static func genderToString(thegender):
 		return "androgynous"
 	if(thegender == Other):
 		return "other"
-	return "error?"
+	return "ошибка?"
 
 static func genderToPronouns(thegender):
 	if(thegender == Male):
@@ -28,4 +28,4 @@ static func genderToPronouns(thegender):
 		return "They/their"
 	if(thegender == Other):
 		return "It/its"
-	return "error?"
+	return "ошибка?"

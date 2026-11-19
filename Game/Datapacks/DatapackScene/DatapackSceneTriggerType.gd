@@ -53,47 +53,47 @@ static func getName(triggerType):
 
 static func getDescription(triggerType):
 	if(triggerType == None):
-		return "This trigger type will never happen, could be used to disable the trigger"
+		return "Этот тип триггера никогда не сработает; можно использовать для его отключения"
 	if(triggerType == EnterRoom):
-		return "If set to React, will execute code as soon as you enter a specific room. If set to Run, allows you to add buttons and output text"
+		return "Если установлено значение «React», код выполнится сразу при входе в конкретную комнату. Если «Run», можно добавлять кнопки и выводить текст"
 	if(triggerType == EnterAnyRoom):
-		return "If set to React, will execute code as soon as you enter any room. If set to Run, allows you to add buttons and output text"
+		return "Если установлено значение «React», код выполнится сразу при входе в любую комнату. Если «Run», можно добавлять кнопки и выводить текст"
 	if(triggerType == EnterPlayerCell):
-		return "If set to React, will execute code as soon as you enter player's cell. If set to Run, allows you to add buttons and output text"
+		return "Если установлено значение «React», код выполнится сразу при входе в камеру игрока. Если «Run», можно добавлять кнопки и выводить текст"
 	if(triggerType == EnterRoomOnFloor):
-		return "Will execute code when you enter any room on the specified floor"
+		return "Выполнит код при входе в любую комнату на указанном этаже"
 	
 	if(triggerType == TalkingToDynamicNPC):
-		return "Will execute code when you run into this dynamic npc during any encounter (that encounter will be cancelled) OR if you Meet them through the encounters menu. ONLY supports REACT execute type"
+		return "Выполнит код, если вы столкнетесь с этим динамическим NPC во время любого события (событие будет отменено) ИЛИ если вы встретите его через меню встреч. Поддерживает ТОЛЬКО тип выполнения REACT"
 	if(triggerType == MeetDynamicNPC):
-		return "Will execute code when you Meet them through the encounters menu (Has higher priority than TalkingToDynamicNPC too). ONLY supports REACT execute type"
+		return "Выполнит код, если вы встретите его через меню встреч (имеет более высокий приоритет, чем TalkingToDynamicNPC). Поддерживает ТОЛЬКО тип выполнения REACT"
 	if(triggerType == TalkingToNPC):
-		return "Will execute code when you talk to certain static npcs. Only the supported npcs are provided to you"
+		return "Выполнит код при разговоре с определенными статичными NPC. Вам доступны только поддерживаемые NPC"
 	
 	if(triggerType == TakingAShower):
-		return "Happens when the player takes a shower"
+		return "Срабатывает, когда игрок принимает душ"
 	if(triggerType == Waiting):
-		return "Happens when the player waits. ONLY supports REACT execute type"
+		return "Срабатывает, когда игрок ждет. Поддерживает ТОЛЬКО тип выполнения REACT"
 	if(triggerType == EatingInCanteen):
-		return "Happens when the player eats in a canteen"
+		return "Срабатывает, когда игрок ест в столовой"
 	if(triggerType == WorkingInMines):
-		return "Happens when the player works in the mineshaft"
+		return "Срабатывает, когда игрок работает в шахте"
 	if(triggerType == SleepInCell):
-		return "Happens when the player goes to sleep in their cell (before sleeping). ONLY supports REACT execute type"
+		return "Срабатывает, когда игрок ложится спать в камере (перед сном). Поддерживает ТОЛЬКО тип выполнения REACT"
 	if(triggerType == WakeUpInCell):
-		return "Happens when the player wakes up in their cell (after sleeping)"
+		return "Срабатывает, когда игрок просыпается в камере (после сна)"
 	if(triggerType == ApproachedYogaMats):
-		return "Happens when the player approaches yoga mats"
+		return "Срабатывает, когда игрок подходит к коврикам для йоги"
 	if(triggerType == ApproachedWeightsBench):
-		return "Happens when the player approaches weights bench"
+		return "Срабатывает, когда игрок подходит к скамье для жима"
 	if(triggerType == InsideElevator):
-		return "Happens when the player is inside the elevator. ONLY supports RUN execute type"
+		return "Срабатывает, когда игрок находится в лифте. Поддерживает ТОЛЬКО тип выполнения RUN"
 	if(triggerType == PCLookingForTrouble):
-		return "(Disabled, pls no use) Happens when the player presses the 'look for trouble' button. ONLY supports REACT execute type"
+		return "(Отключено, не использовать!) Срабатывает, когда игрок нажимает кнопку «искать неприятности». Поддерживает ТОЛЬКО тип выполнения REACT"
 	if(triggerType == SceneAndStateHook):
-		return "Advanced trigger that lets you hook into any scene. Only use if you know what you are doing. ONLY supports RUN execute type"
+		return "Продвинутый триггер, позволяющий подключиться к любой сцене. Используйте, только если понимаете, что делаете. Поддерживает ТОЛЬКО тип выполнения RUN"
 	
-	return "No description provided"
+	return "Описание отсутствует"
 
 static func getAllWithNames():
 	var result = []

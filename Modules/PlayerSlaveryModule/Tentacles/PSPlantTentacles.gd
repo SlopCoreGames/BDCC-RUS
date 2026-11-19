@@ -30,7 +30,7 @@ func _getName():
 	if(GM.main != null):
 		if(GM.main.PS && GM.main.PS.id == "Tentacles"):
 		 return GM.main.PS.getMonsterName()
-	return "Plant Tentacles"
+	return "Растительные щупальца"
 
 func getGender():
 	return Gender.Other

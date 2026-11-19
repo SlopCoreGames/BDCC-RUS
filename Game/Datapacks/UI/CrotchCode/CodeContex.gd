@@ -149,34 +149,34 @@ func sayAsCharacter(charID:String, sayText:String):
 	saynn("[say="+charID+"]"+sayText+"[/say]")
 
 func addMessage(text):
-	doPrint("Adding message: "+str(text))
+	doPrint("Добавление сообщения: "+str(text))
 
 func addButton(_nameText, _descText, _state, _codeSlot, _buttonChecks):
-	doPrint("BUTTON ADDED: "+str(_nameText))
+	doPrint("КНОПКА ДОБАВЛЕНА: "+str(_nameText))
 
 func addDisabledButton(_nameText, _descText):
-	doPrint("DISABLED BUTTON ADDED: "+str(_nameText))
+	doPrint("ДОБАВЛЕНА ЗАБЛОКИРОВАННАЯ КНОПКА: "+str(_nameText))
 
 func addCharacter(charAlias, _variant):
 	if(charAlias == "pc"):
 		throwError(null, "Trying to add the player character (pc) into the scene. There is no need to do that")
 		return
-	doPrint("ADDED CHAR: "+str(charAlias))
+	doPrint("ПЕРСОНАЖ ДОБАВЛЕН: "+str(charAlias))
 
 func removeCharacter(charAlias):
-	doPrint("REMOVED CHAR: "+str(charAlias))
+	doPrint("ПЕРСОНАЖ УДАЛЕН: "+str(charAlias))
 
 func aimCameraAndSetLocName(newLoc):
-	doPrint("AIMING CAMERA AT "+str(newLoc))
+	doPrint("НАВЕДЕНИЕ КАМЕРЫ НА "+str(newLoc))
 
 func setLocName(newText):
-	doPrint("Setting loc name to "+str(newText))
+	doPrint("Установка имени локации на "+str(newText))
 
 func playAnim(animID, _animData):
-	doPrint("PLAYING ANIMATION: "+str(animID))
+	doPrint("ВОСПРОИЗВЕДЕНИЕ АНИМАЦИИ: "+str(animID))
 
 func doRunEvent():
-	doPrint("EVENT WILL HAPPEN")
+	doPrint("СОБЫТИЕ ПРОИЗОЙДЕТ")
 	setIsReturning()
 
 func setIsReturning():
@@ -337,25 +337,25 @@ func getStat(charID:String, statName) -> int:
 	return theChar.getStat(statName)
 
 func setState(newState:String):
-	doPrint("Setting state to "+str(newState))
+	doPrint("Установка состояния на "+str(newState))
 
 func getState():
 	return ""
 
 func endScene():
-	doPrint("Ending the scene..")
+	doPrint("Завершение сцены...")
 
 func runScene(sceneID:String, _args = [], _codeSlot = null):
-	doPrint("Gonna run scene: "+sceneID)
+	doPrint("Запуск сцены: "+sceneID)
 
 func runFightScene(charID:String, _codeWin, _codeLose):
-	doPrint("Gonna start a fight with: "+charID)
+	doPrint("Начинается драка с: "+charID)
 
 func runGenericSexScene(domID:String, subID:String, _sexType:String, _codeSlot = null):
-	doPrint("Gonna start a sex between "+domID+" and "+subID)
+	doPrint("Начинается секс между "+domID+" and "+subID)
 
 func runLeashParadeScene(domID:String, finalLoc:String, _codeSlot = null):
-	doPrint("Gonna start a leashing scene with dom "+domID+" and target location being "+finalLoc)
+	doPrint("Начинается сцена с поводком (доминант): "+domID+" и целевая локация: "+finalLoc)
 
 func addStraponButtonsFor(_charName, _nextState, _codeSlot):
 	pass
@@ -382,7 +382,7 @@ func giveBirth(charName):
 	var bornString = GM.CS.getChildBirthInfoString(bornChilds)
 	
 	if(bornChildAmount > 0 && GM.main != null && is_instance_valid(GM.main)):
-		GM.main.addLogMessage("New life", ""+theChar.getName()+" gave birth to "+str(bornChildAmount)+" kid"+("s" if bornChildAmount != 1 else "")+":\n\n"+bornString)
+		GM.main.addLogMessage("Новая жизнь", ""+theChar.getName()+" родил(а) "+str(bornChildAmount)+" kid"+("s" if bornChildAmount != 1 else "")+":\n\n"+bornString)
 		GM.main.showLog()
 		
 		return true
@@ -392,7 +392,7 @@ func addLog(_logName, _logText):
 	if(GM.main != null && is_instance_valid(GM.main)):
 		GM.main.addLogMessage(_logName, _logText)
 	else:
-		doPrint("Adding log with title: "+str(_logName))
+		doPrint("Добавление лога с заголовком: "+str(_logName))
 
 func showLog():
 	if(GM.main != null && is_instance_valid(GM.main)):

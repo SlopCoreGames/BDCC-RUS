@@ -81,7 +81,7 @@ func rubpenis_processTurn():
 	
 	if(getSubInfo().isReadyToCum() && !getSubInfo().canDoActions()):
 		satisfyGoals()
-		cumOnSelf(SUB_0, DOM_0, UniqueOrgasm.Feet, " in such a humiliating way", SexReaction.FeetplayCumPenis)
+		cumOnSelf(SUB_0, DOM_0, UniqueOrgasm.Feet, " таким унизительным образом", SexReaction.FeetplayCumPenis)
 		state = ""
 	else:
 		react(SexReaction.FeetplayRubbingPenis, [20, 10])
@@ -291,7 +291,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		return
 	if(_id == "cumpenis"):
 		satisfyGoals()
-		cumOnSelf(SUB_0, DOM_0, UniqueOrgasm.Feet, " in such a humiliating way", SexReaction.FeetplayCumPenis)
+		cumOnSelf(SUB_0, DOM_0, UniqueOrgasm.Feet, " таким унизительным образом", SexReaction.FeetplayCumPenis)
 		state = ""
 		return
 

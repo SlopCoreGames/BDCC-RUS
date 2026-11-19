@@ -104,7 +104,7 @@ func getFinalOutput() -> String:
 		savedTag = theTag
 	
 	if(result == ""):
-		return "Nothing new happened."
+		return "Ничего нового не произошло."
 	return result
 
 func initSexType(theSexType, args:Dictionary = {}):
@@ -1228,7 +1228,7 @@ func endSex():
 	sexResult = generateSexResult()
 	
 	sexEnded = true
-	var texts:Array = ["The sex scene has ended!"]
+	var texts:Array = ["Секс-сцена завершена!"]
 	
 	for activity in activities:
 		activity.endActivity()

@@ -217,15 +217,15 @@ func getActivitiesAsText():
 	# Hardcodding pc here is probably bad but there is high chance this code will never be used for npcs
 	for activity in currentActivities:
 		if(activity == LustActivity.GropingButt):
-			result.append("{pc.name}'s hand is groping {pc.his} butt")
+			result.append("Рука {pc.name} ласкает задницу {pc.his}")
 		if(activity == LustActivity.GropingChest):
-			result.append("{pc.name}'s hand is groping {pc.his} tits")
+			result.append("Рука {pc.name} сжимает сиськи {pc.his}")
 		if(activity == LustActivity.SpreadingPussy):
-			result.append("{pc.name}'s hand is rubbing {pc.his} pussy")
+			result.append("Рука {pc.name} ласкает киску {pc.his}")
 		if(activity == LustActivity.StrokingCock):
-			result.append("{pc.name}'s hand is stroking {pc.his} cock")
+			result.append("Рука {pc.name} ласкает член {pc.his}")
 		if(activity == LustActivity.ProddingAnal):
-			result.append("{pc.name}'s fingers are prodding {pc.his} anal ring")
+			result.append("Пальцы {pc.name} прощупывают анус {pc.his}")
 			
 	return result
 

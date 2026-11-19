@@ -15,11 +15,11 @@ func getPillName() -> String:
 
 func getUnlockData() -> Dictionary:
 	return {
-		eliza = "Intriguing! This pill appears to contain a mix of estrogenic compounds and tissue enhancers that could stimulate the development of female genitalia. When ingested, it will probably encourage the growth of a vagina in individuals who don’t have one. I think I’ll call it.. 'P-Bloom.' It's a short but nice name, I think.",
+		eliza = "Интригующе! Похоже, эта таблетка содержит смесь эстрогенных соединений и стимуляторов роста тканей, которые могут спровоцировать развитие женских гениталий. При приеме она, вероятно, будет стимулировать рост вагины у тех, у кого её нет. Думаю, назову её... «P-Bloom». Коротко и красиво, как по мне.",
 	}
 
 func getPillDatabaseDesc() -> String:
-	return "This drug will grow you a vagina. It won’t do anything if you already have one.\n\nThe first stage will happen after a few minutes. The second stage will happen after roughly 60 minutes. This could be accelerated only by using the QuickShift drug.\n\nThis drug has 2 stages. First stage doesn’t cause any visible outside changes. Second stage grows you a vagina."
+	return "Этот препарат вырастит тебе вагину. Если она у тебя уже есть, ничего не изменится.\n\nПервая стадия наступит через несколько минут. Вторая стадия наступит примерно через 60 минут. Процесс можно ускорить, только если принять препарат QuickShift.\n\nУ этого препарата 2 стадии. Первая стадия не вызывает видимых внешних изменений. Вторая стадия выращивает вагину."
 
 func getTFCheckTags() -> Dictionary:
 	return {

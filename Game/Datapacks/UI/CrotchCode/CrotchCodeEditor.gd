@@ -33,4 +33,4 @@ func _on_ExecuteButton_pressed():
 	codeContex.execute(mainSlotCalls)
 
 func getPossiblePrintStrings():
-	return ["Meow", "MEOW?", "RAHI???"]
+	return ["Meow", "МЯУ?", "RAHI???"]

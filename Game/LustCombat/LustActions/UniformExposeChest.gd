@@ -17,9 +17,9 @@ func canDo(_lustState: LustCombatState, _args):
 	#var itemState: ShirtAndShortsState = _args["itemState"]
 	var pc:Player = _lustState.getCharacter()
 	if(pc.hasBoundArms()):
-		return [false, "You can't do that with bound arms"]
+		return [false, "С заведенными за спину руками так не выйдет"]
 	if(pc.hasBlockedHands()):
-		return [false, "You can't do that with blocked hands"]
+		return [false, "С занятыми руками так не получится"]
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):

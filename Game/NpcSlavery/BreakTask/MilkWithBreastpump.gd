@@ -47,13 +47,13 @@ func onSexEvent(_npc, _event:SexEvent):
 	return false
 
 func getTaskString():
-	return "Milk with breast pump: "+getProgressStringFluids()
+	return "Дойка молокоотсосом: "+getProgressStringFluids()
 
 func getTaskStringSlutLock():
-	return "Get milked with a breast pump: "+getProgressStringFluids()
+	return "Доить их молокоотсосом: "+getProgressStringFluids()
 
 func getTaskHint(_isSlaveLevelup):
-	return "Put a breastpump on them and collect this much milk!"
+	return "Надень на них молокоотсос и собери столько-то молока!"
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [

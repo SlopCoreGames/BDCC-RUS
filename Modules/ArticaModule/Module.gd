@@ -248,33 +248,33 @@ func getShynessString():
 	var theShyness = getShyness()
 	
 	if theShyness >= 0.8:
-		return "Extremely shy"
+		return "Крайне застенчивая"
 	elif 0.5 <= theShyness && theShyness < 0.8:
-		return "Quite shy"
+		return "Довольно застенчивая"
 	elif 0.3 <= theShyness && theShyness < 0.5:
-		return "Pretty shy"
+		return "Весьма застенчивая"
 	elif 0.1 <= theShyness && theShyness < 0.3:
-		return "Slightly shy"
+		return "Слегка застенчивая"
 	else:
-		return "Slightly confident"
+		return "Немного уверенная в себе"
 
 func getPawslutString():
 	var thePawSlut = getPawSlut()
 
 	if thePawSlut >= 0.9:
-		return "Artica is utterly obsessed with paws"
+		return "Артика просто помешана на лапках"
 	elif 0.7 <= thePawSlut && thePawSlut < 0.9:
-		return "Artica is highly enthusiastic paw lover"
+		return "Артика — фанатичная любительница лапок"
 	elif 0.5 <= thePawSlut && thePawSlut < 0.7:
-		return "Artica enjoys paw play immensely"
+		return "Артика в диком восторге от игр с лапками"
 	elif 0.3 <= thePawSlut && thePawSlut < 0.5:
-		return "Artica is interested in paws"
+		return "Артика интересуется лапками"
 	elif 0.1 <= thePawSlut && thePawSlut < 0.3:
-		return "Artica has a moderate interest in paw play"
+		return "Артика умеренно интересуется играми с лапками"
 	elif 0.05 <= thePawSlut && thePawSlut < 0.1:
-		return "Artica seems to be slightly intrigued by paws"
+		return "Артику, кажется, слегка забавляют лапки"
 	else:
-		return "Artica has no obvious interest in paws"
+		return "Артику явно не интересуют лапки"
 
 func isLusty():
 	return getFlag("ArticaModule.isLusty", false)
@@ -305,19 +305,19 @@ func getCorruptionEventScenes():
 				"name": "Разведка теплиц",
 				"scene": "articaEventTentacles1Scene",
 				"canstart": !isElizaBusy,
-				"hint": "Eliza Quinn must be available",
+				"hint": "Элиза Куинн должна быть свободна",
 			},
 			{
 				"name": "Маленькие щупальца",
 				"scene": "articaEventTentacles2Scene",
 				"canstart": !isElizaBusy && getFlag("ArticaModule.TentaclesArticaHasFlower", false),
-				"hint": ("Artica needs a special flower. Steal one from the greenhouses and give it to her! " if !getFlag("ArticaModule.TentaclesArticaHasFlower", false) else "")+("Eliza Quinn must be available" if isElizaBusy else ""),
+				"hint": ("Артике нужен особенный цветок. Укради его в оранжереях и подари ей! " if !getFlag("ArticaModule.TentaclesArticaHasFlower", false) else "")+("Элиза Куинн должна быть свободна" if isElizaBusy else ""),
 			},
 			{
 				"name": "Огромные щупальца",
 				"scene": "articaEventTentacles3Scene",
 				"canstart": !isElizaBusy,
-				"hint": "Eliza Quinn must be available",
+				"hint": "Элиза Куинн должна быть свободна",
 			},
 		],
 		"eventSelfsuck": [
@@ -353,13 +353,13 @@ func getCorruptionEventScenes():
 				"name": "Гипновизор",
 				"scene": "articaEventPortalPanties1Scene",
 				"canstart": !isAlexBusy,
-				"hint": "Alex Rynard must be available",
+				"hint": "Алекс Ринард должен быть свободен",
 			},
 			{
 				"name": "Портальные трусики",
 				"scene": "articaEventPortalPanties2Scene",
 				"canstart": !isAlexBusy && !GlobalRegistry.getCharacter("artica").isWearingChastityCage(),
-				"hint": ("Artica can not be wearing a chastity cage. " if GlobalRegistry.getCharacter("artica").isWearingChastityCage() else "")+("Alex Rynard must be available." if isAlexBusy else ""),
+				"hint": ("Артика не должна быть в девайсе целомудрия. " if GlobalRegistry.getCharacter("artica").isWearingChastityCage() else "")+("Алекс Ринард должен быть свободен." if isAlexBusy else ""),
 			}
 		]
 	}
@@ -434,8 +434,8 @@ func getReplayMenuScenes():
 	var eventIDToName = {
 		"eventTentacles": "Tentacles",
 		"eventSelfsuck": "Self-sucking",
-		"eventDildo": "Big canine dildo",
-		"eventPortalPanties": "Test subject",
+		"eventDildo": "Большой собачий дилдо",
+		"eventPortalPanties": "Подопытный",
 	}
 	for eventID in scenesInfo:
 		possible[eventID] = {
@@ -479,48 +479,48 @@ func getReplayMenuScenes():
 
 func getReactionFor(_topic):
 	if(_topic == "rahireturned"):
-		return "T-thank you again.. I w-will never forget what you did.. T-that k-kitty.. R-Rahi?.. I'm n-not angry at her.. H-her stare is making me f-feel strange though.."
+		return "С-спасибо тебе еще раз.. Я н-никогда не забуду то, что ты сделал.. Т-та к-кошечка.. Р-Рахи?.. Я н-не злюсь на нее.. Н-но от ее взгляда мне с-становится как-то странно.."
 	
 	if(_topic == "t1won"):
-		return "You really showed that husky.. haha.. Thank you again, I’d never be able to get that flower on my own.."
+		return "Ты реально проучил ту хаски.. ха-ха.. Еще раз спасибо, сама бы я этот цветок точно не сорвала.."
 	if(_topic == "t1lost"):
-		return "So unfortunate that I couldn’t get my paws on that flower.. But thank you anyway.."
+		return "Так жаль, что мне не удалось заполучить тот цветок.. Но всё равно спасибо.."
 	if(_topic == "t1ran"):
-		return "That husky was gonna do something to me.. I wonder what.. So unfortunate that I left the flower there.."
+		return "Та хаски явно что-то замышляла против меня.. Интересно, что именно.. Жаль, что я оставила цветок там.."
 	if(_topic == "t1bully"):
-		return "Some guards are such meanies.. Their stun batons are so.. s-scary.. mmmhh.. mm.."
+		return "Некоторые охранники такие злюки.. Их электродубинки такие.. с-страшные.. ммм.. мм.."
 	if(_topic == "t2con"):
-		return "I s-suggest being careful near the greenhouses.. S-some plants have grown bigger than a person.."
+		return "С-советую быть осторожнее возле теплиц.. Н-некоторые растения там разрослись больше человека.."
 	if(_topic == "t2noncon"):
-		return "I s-suggest being careful near the greenhouses.. S-some plants have grown so big t-they can.. yeah.. mmhh.."
+		return "С-советую быть осторожнее возле теплиц.. Н-некоторые растения выросли такими огромными, что могут.. да.. ммм.."
 	if(_topic == "t3hap"):
-		return "Um.. Does my belly look bigger than normal?..  I t-think I a-ate too much today.. y-yeah.. mm.."
+		return "Эм.. Мой живот не кажется больше обычного?.. К-кажется, я с-сегодня переела.. д-да.. мм.."
 	if(_topic == "t4hap"):
-		return "At least my belly isn’t as big anymore.. It was a-akward when people were looking at me, thinking I’m pregnant.. I’m c-curious, do the eggs taste.. a-alright?.."
+		return "По крайней мере, живот уже не такой раздутый.. Было н-неловко, когда люди пялились на меня, думая, что я беременна.. М-мне любопытно, а яйца на вк-кус.. н-нормальные?.."
 	if(_topic == "s1hap"):
-		return "I’m making progress but.. I’m still not that flexible... I think with a bit more practice, I’ll be able to take it all the way. Um.. you know.. get the full experience.. uh.. yoga experience.. y-yeah.. yoga.."
+		return "У меня есть прогресс, но... я всё ещё не такая уж гибкая... Думаю, если ещё немного потренироваться, я смогу принять всё до конца. М-м... ну, ты понимаешь... получить полный опыт... э-э... йога-опыт... д-да... йога..."
 	if(_topic == "s2bul"):
-		return "I’ve met some meanies today.. But I t-think it was.. a b-blessing in disguise?.. D-don’t worry about it.."
+		return "Сегодня я встретила парочку злюк... Но мне к-кажется, это было... бл-благословением под маской неудачи?.. Н-не переживай об этом..."
 	if(_topic == "s2lost"):
-		return "T-thank you for trying to save me.. S-sorry that it happened like that.."
+		return "С-спасибо, что попытался меня спасти... П-прости, что всё так вышло..."
 	if(_topic == "s2won"):
-		return "T-thank you for your help, r-really.. I think I can still.. improve. I wanna see how far I can go.. you k-know.."
+		return "С-спасибо за помощь, п-правда... Думаю, я всё ещё могу... стать лучше. Хочу посмотреть, как далеко я смогу зайти... н-ну, ты понимаешь..."
 	if(_topic == "s3hap"):
-		return "You probably t-think that I’m a.. s-slut.. It's just.. y-you know.. um.. I c-can’t r-really say anything against t-that.."
+		return "Ты, наверное, д-думаешь, что я... ш-шалава... Просто... н-ну... э-э... м-мне и п-правда нечего п-против этого сказать..."
 	if(_topic == "d1hap"):
-		return "I met a very helpful girl today.. Not e-everyone here seems to be mean.. Oh, I mean.. y-you’re not mean.. of c-course.. haha.. But that girl is also so h-happy.. wonder if it has a-anything to do with her.. nakedness.. hah."
+		return "Сегодня я встретила одну очень полезную девушку... Н-не все здесь такие злые... Ой, в смысле... т-ты ведь не злая... к-конечно же... ха-ха... Но та девчонка такая с-счастливая... интересно, н-не связано ли это с её... наготой... хах."
 	if(_topic == "d2won"):
-		return "I w-was ready to g-give up.. But you h-helped me.. to push through.. mm-mh.. t-thank you for helping me keep my.. I mean.. um.. eep.. win that toy, hah.."
+		return "Я уж г-готова была с-сдаться... Но ты п-помог мне... преодолеть это... мм-м... с-спасибо, что помог мне сохранить мою... в смысле... э-э... ой... выиграть ту игрушку, хах..."
 	if(_topic == "d2pc"):
-		return "I t-thought I was gonna l-lose my.. I m-mean.. that.. t-toy.. I w-wasn’t gonna g-get.. I thought.. Um.. eep.. t-thank you.."
+		return "Я д-думала, что п-потеряю свою... в смысле... э-э... и-игрушку... которую не д-должна была получить... Я думала... М-м... ой... с-спасибо..."
 	if(_topic == "d3hap"):
-		return "My legs are still shaky.. You c-can’t imagine how good your own.. umm.. i-ignore that.. haha.. That t-toy is really good though.. gods, I talk like a s-slut.."
+		return "Ноги всё ещё дрожат... Т-ты даже не представляешь, как это было хорошо... ммм... э-эй, забудь!.. ха-ха... Но эта ш-штучка реально классная... боги, я болтаю как настоящая шлюха..."
 	if(_topic == "p1hap"):
-		return "Um.. hai.. haha.. I’m such a whore for hypnosis.. Yeah-hhh.. w-wait.. what did I just say.. gods.. What did I just say to you?.. M-my mind is s-scrambled a bit, i-ignore it if I said something s-silly.."
+		return "Эм... хай... ха-ха... я такая шлюха, когда дело доходит до гипноза... Да-а-а... п-погоди... что я только что сказала?.. боги... Что я тебе только что выдала?.. У м-меня в голове всё немного перемешалось, н-не обращай внимания, если я несу какую-то ерунду..."
 	if(_topic == "p2pc"):
-		return "I w-was told I could k-keep the panties.. T-they are so.. cool.. I s-still can’t imagine that something like this is p-possible.. W-want me to put t-them on?.."
+		return "М-мне сказали, что я могу о-оставить трусики себе... О-они такие... классные... П-пока не верится, что такое вообще в-возможно... Х-хочешь, я их надену?.."
 	if(_topic == "p2alone"):
-		return "Hey.. um.. I found some cool panties.. they’re like.. um.. hard to explain.. they’re like see-through ones.. but not see.. they’re more like.. touch-through?.. Want m-me to try them on?.. I h-had a lot of fun with them.. l-lightly speaking.."
+		return "Эй... эм... я нашла классные трусики... они такие... ну... сложно объяснить... они вроде как прозрачные... но не совсем... скорее... тактильные?.. Х-хочешь, я их примерю?.. С ними было о-очень весело... если не сказать слишком мягко..."
 	
 	return ""
 
@@ -531,23 +531,23 @@ func getReaction():
 		var gaveBirthAmount = getFlag("ArticaModule.gaveBirthTimes", 0)
 		
 		if(gaveBirthAmount <= 1):
-			gaveBirthReaction = "Oh hey.. I.. I just had them.. I-I never thought I'd be a mommy.. eep.. T-they said I c-can't keep them.. m-maybe that's for the better.."
+			gaveBirthReaction = "О, привет... Я... я только что их получила... Н-никогда не думала, что стану мамочкой... ой... Г-говорили, что я не могу их оставить... м-может, так даже лучше..."
 		elif(gaveBirthAmount <= 2):
-			gaveBirthReaction = "H-Hello. I had more.. pups.. gods.. It’s getting easier, but I’m still.. unsure. It's s-strange.."
+			gaveBirthReaction = "П-привет. У меня появилось ещё... щенят... боги... Это становится всё проще, но я всё ещё... не уверена. Это так с-странно..."
 		elif(gaveBirthAmount <= 3):
-			gaveBirthReaction = "H-hey.. I.. g-gave birth.. again.. I think I’m getting the hang of this. It's p-painful.. but I.. I kind of enjoy seeing my pups for the f-first time.. h-hearing their c-cute voices.. Does that make me.. w-weird?"
+			gaveBirthReaction = "П-привет.. Я.. я с-снова родила.. Кажется, я начинаю к этому привыкать. Это б-больно.. но мне.. мне вроде как нравится видеть своих щенков в п-первый раз.. с-слышать их милые голоса.. Это делает меня.. с-странной?"
 		elif(gaveBirthAmount <= 4):
-			gaveBirthReaction = "Hey-heys.. I gave birth to another litter.. I’m starting to feel like.. maybe this is what I’m meant for. It’s.. kind of thrilling, in a way.. haha.."
+			gaveBirthReaction = "Приве-етик.. У меня еще одно потомство.. Начинаю чувствовать, что.. может, именно для этого я и создана. Это.. в каком-то смысле даже будоражит.. ха-ха.."
 		elif(gaveBirthAmount <= 5):
-			gaveBirthReaction = "Hey. I.. I’ve had more.. pups.. T-to be honest.. I can’t help but feel excited now. I love seeing them, feeling them grow inside me. It’s.. addictive.."
+			gaveBirthReaction = "Привет. У меня.. у меня еще больше.. щенков.. Ч-честно говоря.. теперь я не могу сдержать восторга. Обожаю смотреть на них, чувствовать, как они растут внутри меня. Это.. это вызывает зависимость.."
 		elif(gaveBirthAmount <= 6):
-			gaveBirthReaction = "Hellos.. More and more pups.. I think.. I think I’m really starting to love this. Being filled, giving birth. It’s.. it’s what I crave.. When will you.. mm.."
+			gaveBirthReaction = "Приветики.. Все больше и больше щенков.. Кажется.. кажется, мне это реально начинает нравиться. Быть наполненной, рожать. Это.. это то, чего я жажду.. Когда же ты.. мм.."
 		elif(gaveBirthAmount <= 7):
-			gaveBirthReaction = "Hey-heys.. I.. I can't stop thinking about it. I love being pregnant, feeling them inside me. I want m-more. I need m-more.. P-please?.."
+			gaveBirthReaction = "Приве-етик.. Я.. я не могу перестать думать об этом. Обожаю быть беременной, чувствовать их внутри себя. Хочу е-еще. Мне н-нужно больше.. П-пожалуйста?.."
 		elif(gaveBirthAmount <= 8):
-			gaveBirthReaction = "I'm totally addicted to this.. I love being a breeding slut, filled with pups. I want to be used again and again.. I w-want my p-pussy pumped f-full of virile s-spunk.. I c-can't stop thinking about it.."
+			gaveBirthReaction = "Я на этом реально подсела.. Обожаю быть сучкой для размножения, набитой щенками. Хочу, чтобы меня использовали снова и снова.. Х-хочу, чтобы мою п-пипку набивали до краев в-вирильным с-спермом.. Не могу перестать об этом думать.."
 		elif(gaveBirthAmount <= 9):
-			gaveBirthReaction = "Heys.. gods.. another litter. I love being a kitten factory, a breeding bitch, a pup maker.. P-please, m-more.. I want to be filled, to give b-birth again and again.."
+			gaveBirthReaction = "Приветики.. боги.. еще одно потомство. Обожаю быть фабрикой котят, сучкой для размножения, производительницей щенков.. П-пожалуйста, е-еще.. Хочу, чтобы меня наполняли, чтобы я р-рожала снова и снова.."
 		else:
 			gaveBirthReaction = RNG.pick([
 				"Приве-етик.. Снова р-родила деток.. и мне всё ещё н-нравится. Обожаю быть фабрикой щенков, шлюхой для размножения. Жажду новых оплодотворений.. мне это н-нужно. Пожалуйста, сделай меня своей сучкой для вязки навеки..",
@@ -644,12 +644,12 @@ func getReaction():
 
 func getLastQuestHints():
 	return [
-		"Someone stole the dreamcatcher. Artica didn’t just lose it.",
-		"The dreamcatcher was stolen by some thief while Artica was wearing it.",
-		"It was one of the inmates who stole the dreamcatcher.",
-		"The dreamcatcher thief is wearing a general block uniform.",
-		"The dreamcatcher thief has brown fur and blue eyes.",
-		"The dreamcatcher thief is a cat.",
-		"The dreamcatcher thief has a ponytail.",
-		"The dreamcatcher thief is a girl.",
+		"Кто-то украл ловца снов. И для Артики это не просто потеря.",
+		"Ловца снов украл какой-то воришка прямо на Артике, пока она была в нём.",
+		"Ловца снов украл кто-то из заключённых.",
+		"Вор, укравший ловца снов, одет в стандартную робу общего блока.",
+		"У вора, укравшего ловца снов, коричневый мех и голубые глаза.",
+		"Вор, укравший ловца снов, — это кошка.",
+		"У вора, укравшего ловца снов, волосы собраны в хвост.",
+		"Вор, укравший ловца снов, — это девчонка.",
 	]

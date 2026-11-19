@@ -28,10 +28,10 @@ func onSexEvent(_npc, _event:SexEvent):
 	return false
 
 func getTaskString():
-	return "Receive spanks: "+getProgressString()
+	return "Полученные шлепки: "+getProgressString()
 
 func getTaskHint(_isSlaveLevelup):
-	return "Spank their butt during sex, any spank will do"
+	return "Шлепайте их по заднице во время секса, подойдет любой шлепок"
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [

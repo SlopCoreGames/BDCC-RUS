@@ -361,9 +361,9 @@ func processTime(_secondsPassed):
 func giveBirthWithNotification():
 	if(getMenstrualCycle() != null):
 		if(getMenstrualCycle().isPregnantFromPlayer()):
-			GM.main.addLogMessage("News", "You just received news that "+getName()+" gave birth to your children! You can check who in the nursery")
+			GM.main.addLogMessage("News", "Ты только что получил известие, что "+getName()+" родила твоих детей! Ты можешь проверить, кто в детской,")
 		else:
-			GM.main.addLogMessage("News", "Rumors spread fast. You just received news that "+getName()+" gave birth to someone's children!")
+			GM.main.addLogMessage("News", "Слухи разлетаются мгновенно. Ты только что узнал(а), что "+getName()+" родила чьих-то детей!")
 		
 		pregnancyWaitTimer = 0
 		return giveBirth()
@@ -430,9 +430,9 @@ func onCharacterVisiblyPregnant():
 		if(isPCPreg || isPCEgg):
 			GM.pc.addSkillExperience(Skill.Breeder, 50)
 			if(isPCPreg):
-				GM.main.addLogMessage("News", "You just received news that "+getName()+" is pregnant with your children.")
+				GM.main.addLogMessage("News", "Ты только что получил известие, что "+getName()+" беременна твоими детьми.")
 			elif(isPCEgg):
-				GM.main.addLogMessage("News", "You just received news that "+getName()+"'s eggs got fertilized by you.")
+				GM.main.addLogMessage("News", "Ты только что получил известие, что "+getName()+"залетела от тебя.")
 			if(isDynamicCharacter()):
 				GM.main.WHS.addEvent(WHEvent.Impregnated, "pc", getID())
 				GM.main.RS.sendSocialEvent("pc", getID(), SocialEventType.GotImpregnated)
@@ -446,11 +446,11 @@ func onCharacterReadyToGiveBirth():
 	if(getBirthWaitTime() > 0 && getMenstrualCycle() != null):
 		if(isSlaveToPlayer()):
 			if(getMenstrualCycle().isPregnantFromPlayer()):
-				GM.main.addLogMessage("News (Slave)", "You just received news that "+getName()+" is ready to give birth to your children. Since "+heShe()+" "+isAre()+" slave, it is your job to bring "+himHer()+" to the nursery.")
+				GM.main.addLogMessage("News (Slave)", "Ты только что получил известие, что "+getName()+" готова родить твоих детей. Так как ты "+heShe()+" "+isAre()+" раб, твоя задача — доставить "+himHer()+" в детскую.")
 			else:
-				GM.main.addLogMessage("News (Slave)", "You just received news that "+getName()+" is ready to give birth to someone's children. Since "+heShe()+" "+isAre()+" slave, it is your job to bring "+himHer()+" to the nursery.")
+				GM.main.addLogMessage("News (Slave)", "Ты только что получил известие, что "+getName()+" готова родить чьих-то детей. Так как ты "+heShe()+" "+isAre()+" раб, твоя задача — доставить "+himHer()+" в детскую.")
 		elif(getMenstrualCycle().isPregnantFromPlayer()):
-			GM.main.addLogMessage("News", "You just received news that "+getName()+" is ready to give birth to your children and now just waits for a good moment to do it. Maybe you can go check on them.")
+			GM.main.addLogMessage("News", "Ты только что получил известие, что "+getName()+" Она уже готова родить твоих детей и просто ждет подходящего момента. Может, стоит зайти к ней и проверить, как она там?")
 
 
 # How much the npc will wait before giving birth alone (in seconds)

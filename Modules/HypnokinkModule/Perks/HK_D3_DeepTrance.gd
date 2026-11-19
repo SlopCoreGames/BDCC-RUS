@@ -12,8 +12,8 @@ func getVisibleDescription():
 	
 func getMoreDescription():
 	return 	"Теперь боль снижает ваш уровень гипноза лишь на 25% o часть полученной боли, вместо прежних 150%."+"\n\n"+ \
-			"Additionaly, your hypnosis level can stack up to 125%." +"\n\n"+\
-			"Keyword Fixation is now [b]always[/b] in effect."
+			"Кроме того, ваш уровень гипноза может достигать 125%." +"\n\n"+\
+			"Фиксация ключевого слова теперь [b]всегда[/b] действует."
 
 func getSkillTier():
 	return 2

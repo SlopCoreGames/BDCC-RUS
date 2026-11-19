@@ -55,7 +55,7 @@ func init_processTurn():
 		"{dom.You} {dom.youVerb('scratch', 'scratches')} {sub.youHim} helpless.",
 		"{dom.You} {dom.youVerb('scratch', 'scratches')} {sub.yourHis} neck.",
 		"{dom.You} {dom.youVerb('scratch', 'scratches')} {sub.yourHis} back.",
-		"{dom.You} {dom.youVerb('pull')} on {sub.yourHis} hair.",
+		"{dom.You} {dom.youVerb('pull')} по волосам {sub.yourHis}.",
 	]
 	if(getSexType() == SexType.SlutwallSex):
 		texts = [

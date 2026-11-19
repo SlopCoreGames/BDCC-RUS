@@ -568,7 +568,7 @@ func _react(_action: String, _args):
 		if(result.has("text")):
 			resultText = result["text"]
 		else:
-			resultText = "An action happened!"
+			resultText = "Произошло действие!"
 		lastActionID = theAction.id
 		#theAction.playAnimation(npcID, {})
 		setState("do_action")
@@ -640,7 +640,7 @@ func _react(_action: String, _args):
 		#if(npcSlavery.isResistingSuperActively() || (RNG.chance(40) && npcSlavery.isActivelyResisting())):
 		if(checkSlaveResist(100.0)):
 			savedWantedToDo = "start_walkies_forced"
-			savedWantedToDoName = "Leash slave"
+			savedWantedToDoName = "Раб на поводке"
 			savedWantedToDoArgs = []
 			savedButtonChecks = []
 		else:
@@ -658,7 +658,7 @@ func _react(_action: String, _args):
 		#if(npcSlavery.isResistingSuperActively() || (RNG.chance(40) && npcSlavery.isActivelyResisting())):
 		if(checkSlaveResist(100.0)):
 			savedWantedToDo = "start_forced_sex_forced"
-			savedWantedToDoName = "Forced sex"
+			savedWantedToDoName = "Принудительный секс"
 			savedWantedToDoArgs = []
 			savedButtonChecks = [[ButtonChecks.CanStartSex]]
 		else:

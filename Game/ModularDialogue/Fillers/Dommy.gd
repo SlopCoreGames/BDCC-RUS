@@ -528,7 +528,7 @@ func getText(_id:String, _args:Dictionary):
 		var restraintIsPlural = getVar(_args, "restraintIsPlural", false)
 		var restraint_itThem = "it" if(!restraintIsPlural) else "them"
 		# var restraint_thatThose = "that" if(!restraintIsPlural) else "those"
-		var restraint_That_sThose_are = "That's" if(!restraintIsPlural) else "Those are"
+		var restraint_That_sThose_are = "That's" if(!restraintIsPlural) else "Это же"
 		return [
 			"Спасибо, что присматриваешь за мной, но это я бы хотел оставить себе.",
 			"Ты хочешь "+restraint_itThem+" забрать это себе, верно? "+restraint_That_sThose_are+" mine.",

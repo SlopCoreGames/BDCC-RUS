@@ -29,10 +29,10 @@ func getBegCategory() -> Array:
 	return BegCategoryExotic
 
 func getBegDesc() -> String:
-	return "Beg the dom to cuddle you!"
+	return "Умоляй домина, чтобы тебя обняли!"
 
 func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
-	return "{sub.You} {sub.youVerb('beg')} {dom.you} to cuddle {sub.youHim}."
+	return "{sub.You} {sub.youVerb('beg')} {dom.you}, чтобы обниматься с {sub.youHim}."
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([

@@ -108,7 +108,7 @@ func _getAttacks():
 	return ["stunbatonAttack", "stunbatonOverchargeAttack", "AIHumiliateMommy", "shoveattack", "trygetupattack"]
 
 func getFightIntro(_battleName):
-	var mes = "Nova’s power armor lights up as she grabs her trusty stun baton and directs her attention to you."
+	var mes = "Силовая броня Новы вспыхивает огнями, когда она сжимает верный электрошокер и устремляет свой взгляд на тебя."
 	mes += "\n\n"
 	return mes+formatSay("У тебя нет права молчать: всё, что я скажу, будет использовано против тебя. Иди сюда, сладенькая~")
 

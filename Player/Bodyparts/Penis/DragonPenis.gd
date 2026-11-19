@@ -22,4 +22,4 @@ func getTraits():
 	}
 
 func getVulgarName() -> String:
-	return "ridged dragon cock"
+	return "бугристый драконий член"

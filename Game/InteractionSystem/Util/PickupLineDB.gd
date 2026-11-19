@@ -5,23 +5,23 @@ const DB = [
 	{
 		text = "Ты случайно не фокусник? Потому что каждый раз, когда я смотрю на тебя, ___.",
 		correct = [
-			"everyone else disappears",
+			"все остальные просто исчезают",
 		],
 		wrong = [
-			"you disappear like my problems",
-			"I want to pull a rabbit out of a hat",
-			"I believe in fairy tales again",
+			"ты исчезаешь так же легко, как мои проблемы",
+			"хочется вытащить кролика из шляпы",
+			"я снова поверил в сказки",
 		],
 	},
 	{
 		text = "Ты сделана из меди и теллура? Потому что ___.",
 		correct = [
-			"you're Cu-Te",
+			"ты просто милашка",
 		],
 		wrong = [
-			"I feel static around you",
-			"your atomic number is my favorite",
-			"I conduct electricity near you",
+			"рядом с тобой меня буквально бьет током",
+			"твой атомный номер — мой самый любимый",
+			"рядом с тобой во мне просыпается проводимость",
 		],
 	},
 	{
@@ -30,20 +30,20 @@ const DB = [
 			"a cute-cumber",
 		],
 		wrong = [
-			"a kale chip",
-			"a sweet potato",
-			"too fresh for the fridge",
+			"чипс из кейла",
+			"сладкий картофель",
+			"слишком свежий для холодильника",
 		],
 	},
 	{
 		text = "У тебя есть карта? Потому что ___.",
 		correct = [
-			"I keep getting lost in your eyes",
+			"я постоянно теряюсь в твоих глазах",
 		],
 		wrong = [
-			"I keep getting lost in your Slutagram",
-			"I need to find a way into your pants",
-			"I’m not great with directions",
+			"я постоянно теряюсь в твоём Слютаграме",
+			"мне нужно найти путь в твои штанишки",
+			"я не очень силен в ориентировании",
 		],
 	},
 	{
@@ -52,42 +52,42 @@ const DB = [
 			"I feel a connection",
 		],
 		wrong = [
-			"you boost my signal",
-			"I wanna reboot you",
-			"I can’t stop buffering when I see you",
+			"ты усиливаешь мой сигнал",
+			"хочу тебя перезагрузить",
+			"когда вижу тебя, у меня начинается буферизация",
 		],
 	},
 	{
 		text = "Должно быть, я снежинка, потому что ___.",
 		correct = [
-			"I've fallen for you",
+			"я в тебя втюрился",
 		],
 		wrong = [
-			"I’m unique, just like everyone else",
-			"I melt under pressure",
-			"I wanna melt on your tongue",
+			"я уникален, прямо как все остальные",
+			"Я таю под давлением",
+			"Хочу растаять у тебя на языке",
 		],
 	},
 	{
 		text = "Твоя рука кажется тяжелой. ___",
 		correct = [
-			"Can I hold it for you?",
+			"Может, подержать это за тебя?",
 		],
 		wrong = [
-			"Do you need help?",
-			"Wanna smash?",
-			"Maybe you should see a doctor.",
+			"Тебе помочь?",
+			"Хочешь трахнуться?",
+			"Может, тебе стоит сходить к врачу?",
 		],
 	},
 	{
 		text = "Ты случайно не штраф за парковку? Потому что ___.",
 		correct = [
-			"you've got FINE written all over you",
+			"Ты просто чертовски горяч(а)",
 		],
 		wrong = [
-			"I lost my spaceship because of you",
-			"you're expired but still hot",
-			"I’ll pay whatever it takes",
+			"Я потерял свой звездолет из-за тебя",
+			"У тебя уже срок годности вышел, но ты всё еще огонь",
+			"Я заплачу любую цену",
 		],
 	},
 	{
@@ -96,53 +96,53 @@ const DB = [
 			"you’re a knockout",
 		],
 		wrong = [
-			"you fight like a champ",
-			"you’ve got me on the ropes",
-			"my heart can’t dodge you",
+			"дерешься как чемпион",
+			"ты меня почти прижала к стенке",
+			"мое сердце не может от тебя увернуться",
 		],
 	},
 	{
 		text = "Ты веришь в любовь с первого взгляда, или мне нужно ___",
 		correct = [
-			"walk by again?",
+			"пройдешься мимо еще раз?",
 		],
 		wrong = [
-			"take off my sunglasses?",
-			"offer you credits?",
-			"just grab your neck?",
+			"снять солнечные очки?",
+			"предложить тебе кредитов?",
+			"просто схватить тебя за шею?",
 		],
 	},
 	{
 		text = "Ты что, костер? Потому что ___.",
 		correct = [
-			"you’re hot and I want s’more",
+			"ты такая горячая, что хочется добавки",
 		],
 		wrong = [
-			"you smell like the outdoors",
-			"I burn every time I see you",
-			"we should tell ghost stories",
+			"от тебя пахнет свежестью",
+			"я сгораю каждый раз, когда вижу тебя",
+			"нам стоит рассказывать друг другу страшилки",
 		],
 	},
 	{
 		text = "Будь я котом, я бы все 9 жизней провел(а) ___.",
 		correct = [
-			"loving you",
+			"любить тебя",
 		],
 		wrong = [
-			"climbing trees",
-			"avoiding dogs",
-			"chasing red dots",
+			"лазать по деревьям",
+			"избегать собак",
+			"гоняться за красными точками",
 		],
 	},
 	{
 		text = "Ты что, Смугл? Потому что ___.",
 		correct = [
-			"you’ve got everything I’m searching for",
+			"в тебе есть всё, что я ищу",
 		],
 		wrong = [
-			"you track me everywhere",
-			"you autocomplete my sentences",
-			"I’m feeling lucky",
+			"ты преследуешь меня повсюду",
+			"ты подбираешь слова за меня",
+			"мне чертовски везет",
 		],
 	},
 	{
@@ -151,141 +151,141 @@ const DB = [
 			"eternity",
 		],
 		wrong = [
-			"a fleeting moment",
-			"yesterday and tomorrow",
-			"a broken clock",
+			"мимолетное мгновение",
+			"вчера и завтра",
+			"сломанные часы",
 		],
 	},
 	{
 		text = "Ты что, банковский кредит? Потому что ___.",
 		correct = [
-			"you have my interest",
+			"ты заинтриговала меня",
 		],
 		wrong = [
-			"I’m in deep debt for you",
-			"your terms are irresistible",
-			"you’ve got good credit",
+			"я по уши в долгах перед тобой",
+			"твои условия просто соблазнительны",
+			"у тебя отличный кредитный рейтинг",
 		],
 	},
 	{
 		text = "Ты что, пришелец? Потому что ___.",
 		correct = [
-			"you just abducted my heart",
+			"ты только что похитила моё сердце",
 		],
 		wrong = [
-			"your presence is out of this world",
-			"you belong in Area 51",
-			"your signals are unearthly",
+			"твоё присутствие просто внеземное",
+			"тебе место в Зоне 51",
+			"твои сигналы неземные",
 		],
 	},
 	{
 		text = "Ты что, солнце? Потому что ___.",
 		correct = [
-			"you brighten my day",
+			"ты освещаешь мой день",
 		],
 		wrong = [
-			"I can’t look directly at you",
-			"you burn my retinas",
-			"you rise too early",
+			"на тебя больно смотреть в упор",
+			"ты выжигаешь мне сетчатку",
+			"ты слишком рано встаешь",
 		],
 	},
 	{
 		text = "У тебя есть пластырь? Потому что ___.",
 		correct = [
-			"I just scraped my knee falling for you",
+			"я только что расшиб коленку, когда влюбился в тебя",
 		],
 		wrong = [
-			"your beauty is a little dangerous",
-			"I'm bleeding compliments",
-			"my heart needs mending",
+			"твоя красота немного опасна",
+			"меня так и распирает от комплиментов",
+			"моему сердцу нужно исцеление",
 		],
 	},
 	{
 		text = "Ты что, клавиатура? Потому что ___.",
 		correct = [
-			"you’re just my type",
+			"ты прямо в моем вкусе",
 		],
 		wrong = [
-			"I can’t press the right buttons",
-			"you spell perfection",
-			"you make me want to enter you",
+			"я никак не могу нажать на нужные кнопки",
+			"ты — само совершенство",
+			"ты заставляешь меня хотеть войти в тебя",
 		],
 	},
 	{
 		text = "Будь ты треугольником, ты бы был(а) ___.",
 		correct = [
-			"acute one",
+			"острый тип",
 		],
 		wrong = [
-			"an isosceles lover",
-			"the right one",
-			"pointless without me",
+			"равнобедренный любовник",
+			"та самая",
+			"без меня ты — пустое место",
 		],
 	},
 	{
 		text = "Ты звезда? Потому что ___.",
 		correct = [
-			"your beauty lights up the night",
+			"твоя красота освещает эту ночь",
 		],
 		wrong = [
-			"you're part of my horoscope",
-			"you burn from far away",
-			"I'm lost in your constellation",
+			"ты — часть моего гороскопа",
+			"ты горишь даже издалека",
+			"я теряюсь в твоем созвездии",
 		],
 	},
 	{
 		text = "Ты зарядное устройство? Потому что ___.",
 		correct = [
-			"without you, I’d die",
+			"без тебя я бы сдохла",
 		],
 		wrong = [
-			"you light up my socket",
-			"my battery’s 1%",
-			"I want to plug in",
+			"ты зажигаешь мой разъем",
+			"мой заряд на исходе",
+			"хочу воткнуться в тебя",
 		],
 	},
 	{
 		text = "Ты из антиматерии? Потому что ___.",
 		correct = [
-			"you annihilate my loneliness",
+			"ты уничтожаешь моё одиночество",
 		],
 		wrong = [
-			"you repel everything else",
-			"I can’t touch you without exploding",
-			"you’re highly unstable",
+			"ты отталкиваешь от себя всё остальное",
+			"не могу коснуться тебя, чтобы не взорваться",
+			"ты чертовски нестабильна",
 		],
 	},
 	{
 		text = "Ты из другой галактики? Потому что ___.",
 		correct = [
-			"my world isn’t the same since you arrived",
+			"мой мир изменился с твоим появлением",
 		],
 		wrong = [
-			"you travel light-years to avoid me",
-			"you orbit someone else",
-			"I can't pronounce your planet",
+			"ты пролетаешь световые годы, лишь бы не встретиться со мной",
+			"ты вращаешься вокруг кого-то другого",
+			"я никак не могу выговорить название твоей планеты",
 		],
 	},
 	{
 		text = "Ты черная дыра? Потому что ___.",
 		correct = [
-			"I’m drawn to you irresistibly",
+			"меня тянет к тебе с непреодолимой силой",
 		],
 		wrong = [
-			"you crushed my confidence",
-			"you warped my schedule",
-			"you swallowed my snacks",
+			"ты раздавила мою уверенность в себе",
+			"ты искривила мой график",
+			"ты сожрала все мои перекусы",
 		],
 	},
 	{
 		text = "Ты варп-двигатель? Потому что ___.",
 		correct = [
-			"you make my heart go faster than light",
+			"от тебя моё сердце бьётся быстрее скорости света",
 		],
 		wrong = [
-			"you’re illegal in this quadrant",
-			"I get motion sickness around you",
-			"you keep breaking down",
+			"в этом квадранте ты вне закона",
+			"меня начинает мутить рядом с тобой",
+			"ты постоянно ломаешься",
 		],
 	},
 	{
@@ -294,207 +294,207 @@ const DB = [
 			"I’d have a galaxy",
 		],
 		wrong = [
-			"my ship would crash",
-			"I'd 100% the game by now",
+			"мой корабль бы разбился",
+			"я бы уже на все сто прошла эту игру",
 			"I'd form a constellation",
 		],
 	},
 	{
 		text = "Ты кусочек пазла? Потому что ___.",
 		correct = [
-			"you complete me",
+			"ты дополняешь меня",
 		],
 		wrong = [
-			"I keep looking for you everywhere",
-			"you keep hiding from me",
-			"I wanna align my knob with your hole",
+			"я ищу тебя повсюду",
+			"а ты всё прячешься от меня",
+			"хочу вогнать свой штырь в твою дырочку",
 		],
 	},
 	{
 		text = "Ты робот? Потому что ___.",
 		correct = [
-			"you compute perfectly with me",
+			"мы идеально совместимы",
 		],
 		wrong = [
-			"you’re too cold to love",
-			"I need to update your firmware",
-			"you speak in binary",
+			"ты слишком холодная, чтобы тебя любить",
+			"мне нужно обновить твою прошивку",
+			"ты говоришь на бинарном коде",
 		],
 	},
 	{
 		text = "Ты ИИ? Потому что ___.",
 		correct = [
-			"you stole my h-art",
+			"ты украла моё се-рдце",
 		],
 		wrong = [
-			"you’re becoming self-aware",
-			"you hacked my server",
-			"you keep doing dumb stuff",
+			"ты обретаешь самосознание",
+			"ты взломала мой сервер",
+			"ты вечно творишь всякую херню",
 		],
 	},
 	{
 		text = "Ты что, пространство-время? Потому что ___.",
 		correct = [
-			"you bend my reality",
+			"ты искажаешь мою реальность",
 		],
 		wrong = [
-			"you give me headaches",
-			"you’re too complicated",
-			"I can’t calculate your curves",
+			"от тебя у меня голова раскалывается",
+			"ты слишком сложная",
+			"я не могу просчитать твои изгибы",
 		],
 	},
 	{
 		text = "Ты что, стоп-слово? Потому что ___.",
 		correct = [
-			"you make me want to push all my limits",
+			"с тобой мне хочется выйти за все пределы",
 		],
 		wrong = [
-			"you make everything stop",
-			"you’re hard to remember",
-			"I wanna use you when I'm bored",
+			"с тобой всё остальное замирает",
+			"тебя трудно забыть",
+			"хочу использовать тебя, когда мне скучно",
 		],
 	},
 	{
 		text = "Ты что, верёвка? Потому что ___.",
 		correct = [
-			"I feel tied up with you",
+			"с тобой я чувствую себя связанной",
 		],
 		wrong = [
-			"I want you wrapped around me",
-			"you keep dragging me along",
-			"I like knots",
+			"хочу, чтобы ты обвил меня всем телом",
+			"ты постоянно меня за собой тащишь",
+			"люблю узлы",
 		],
 	},
 	{
 		text = "Тебе нравится боль? Потому что ___.",
 		correct = [
-			"I can make you feel good",
+			"я умею доставлять удовольствие",
 		],
 		wrong = [
-			"I wanna bite your neck",
-			"I can make your doctor rich",
-			"I wanna hurt you",
+			"хочу укусить тебя за шею",
+			"я могу сделать твоего доктора богатым",
+			"хочу причинить тебе боль",
 		],
 	},
 	{
 		text = "Ты что, данж? Потому что ___.",
 		correct = [
-			"I want to explore every inch",
+			"Я хочу исследовать каждый твой дюйм",
 		],
 		wrong = [
-			"I’m scared of the dark",
-			"you have too many traps",
-			"you need you in my basement",
+			"Я боюсь темноты",
+			"у тебя слишком много ловушек",
+			"ты нужна мне в моем подвале",
 		],
 	},
 	{
 		text = "Ты что, капризная сучка? Потому что ___.",
 		correct = [
-			"I wanna tame you",
+			"я хочу тебя приручить",
 		],
 		wrong = [
-			"you cry when corrected",
-			"you clearly need a nap and a snack",
-			"you hate discipline",
+			"ты плачешь, когда тебя исправляют",
+			"тебе явно нужно вздремнуть и перекусить",
+			"ты ненавидишь дисциплину",
 		],
 	},
 	{
 		text = "Ты что, паддл? Потому что ___.",
 		correct = [
-			"you've left your impact on me",
+			"ты оставила на мне свой след",
 		],
 		wrong = [
-			"you’re hard to carry around",
-			"you only work on boats",
-			"you bring pain",
+			"тебя трудно носить на руках",
+			"ты работаешь только на лодках",
+			"ты приносишь боль",
 		],
 	},
 	{
 		text = "Ты что, ошейник? Потому что ___.",
 		correct = [
-			"you fit me so perfectly",
+			"ты идеально мне подходишь",
 		],
 		wrong = [
-			"I wanna lock you",
-			"you go with any leash",
-			"you’re a little tight, but I like the pressure",
+			"я хочу тебя запереть",
+			"тебе подходит любой поводок",
+			"ты немного тесновата, но мне нравится это давление",
 		],
 	},
 	{
 		text = "Ты что, доминант? Потому что ___.",
 		correct = [
-			"I'm into Big Doms Snuggling Me",
+			"мне нравится, когда Большие Доминантши ко мне прижимаются",
 		],
 		wrong = [
-			"you like yelling too much",
-			"you make too many spreadsheets",
-			"I already wanna use a safe-word",
+			"ты слишком много орешь",
+			"ты слишком много возишься с таблицами",
+			"мне уже хочется использовать стоп-слово",
 		],
 	},
 	{
 		text = "Ты что, вибратор на максимуме? Потому что ___.",
 		correct = [
-			"I wanna come with you",
+			"Хочу пойти вместе с тобой",
 		],
 		wrong = [
-			"you make too much noise",
-			"I can't handle you for very long",
-			"I want you between my legs",
+			"от тебя слишком много шума",
+			"ты слишком бурная, я долго не выдержу",
+			"хочу тебя между своих ног",
 		],
 	},
 	{
 		text = "Ты что, словарь? Потому что ___.",
 		correct = [
-			"you add meaning to my life",
+			"ты наполняешь мою жизнь смыслом",
 		],
 		wrong = [
-			"you spell trouble",
-			"you’re hard to understand",
-			"you’re full of words",
+			"ты — сплошная проблема",
+			"тебя трудно понять",
+			"ты слишком много болтаешь",
 		],
 	},
 	{
 		text = "Ты что, фотоаппарат? Потому что ___.",
 		correct = [
-			"I wanna smile looking at you",
+			"хочу улыбаться, глядя на тебя",
 		],
 		wrong = [
-			"you remind me of the good times",
-			"you develop my feelings",
-			"you captured my soul",
+			"ты напоминаешь мне о лучших временах",
+			"ты пробуждаешь во мне чувства",
+			"ты завладела моей душой",
 		],
 	},
 	{
 		text = "Ты что, лампочка? Потому что ___.",
 		correct = [
-			"you brighten up my world",
+			"ты освещаешь мой мир",
 		],
 		wrong = [
-			"you need constant screwing",
-			"I can't stare at you for too long",
-			"you make weird noises when turned on",
+			"тебя нужно трахать постоянно",
+			"я не могу долго на тебя пялиться",
+			"ты издаешь странные звуки, когда возбуждена",
 		],
 	},
 	{
 		text = "Ты что, художник? Потому что ___.",
 		correct = [
-			"you are drawing me in",
+			"ты меня завлекаешь",
 		],
 		wrong = [
-			"you brush me off",
-			"I'm ready to get messy with you",
-			"you’re clearly good with strokes",
+			"ты меня отшиваешь",
+			"я готов залезть в тебя по самые гланды",
+			"у тебя явно талант к движениям руками",
 		],
 	},
 	{
 		text = "Ты что, шоколадка? Потому что ___.",
 		correct = [
-			"you make life sweeter",
+			"с тобой жизнь становится слаще",
 		],
 		wrong = [
-			"you’re bittersweet",
-			"you just gave me diabetes",
-			"you’re best in small doses",
+			"ты — сплошная смесь сладкого и горького",
+			"от тебя же диабет заработать можно",
+			"тебя лучше принимать по чуть-чуть",
 		],
 	},
 ]

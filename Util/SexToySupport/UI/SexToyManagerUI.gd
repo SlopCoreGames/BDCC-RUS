@@ -1,7 +1,7 @@
 extends Control
 
-onready var toy_settings = $"%Toy Settings"
-onready var gameplay_triggers = $"%Gameplay Triggers"
+onready var toy_settings = $"Настройки игрушек"
+onready var gameplay_triggers = $"Игровые триггеры"
 onready var backends_item_list = $"%BackendsItemList"
 onready var toy_item_list = $"%ToyItemList"
 onready var backend_panel = $"%BackendPanel"

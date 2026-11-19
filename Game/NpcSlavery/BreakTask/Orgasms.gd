@@ -25,13 +25,13 @@ func onSexEvent(_npc, _event:SexEvent):
 	return false
 
 func getTaskString():
-	return "Forced orgasms: "+getProgressString()
+	return "Принудительные оргазмы: "+getProgressString()
 
 func getTaskStringSlutLock():
 	return "Orgasm: "+getProgressString()
 
 func getTaskHint(_isSlaveLevelup):
-	return "Force them to orgasm during sex"
+	return "Заставлять их кончать во время секса"
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [

@@ -7,7 +7,7 @@ func getName() -> String:
 	return "Игривое вступление"
 
 func getButtonDesc() -> String:
-	return "Start the auction while acting very playful.\n\nReveals 3 random preferences of each bidder that are [b]always[/b] relevant to the slave. But the non-serious tone makes the bidders less likely to bid."
+	return "Начинайте аукцион, ведя себя очень игриво.\n\nРаскрывает 3 случайных предпочтения каждого участника, которые [b]всегда[/b] актуальны для раба. Однако из-за несерьезного тона участники будут реже делать ставки."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	saynn("Шторы с мягким шорохом раздвигаются, открывая {presenter.name}, который/ая выходит вперед с дерзкой ухмылкой, явно наслаждаясь вниманием публики.")

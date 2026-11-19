@@ -81,7 +81,7 @@ func init_processTurn():
 			return
 		if(!theChar.hasBodypart(targetHole)):
 			return
-		addTextTarget("Fleshlight target: {<TARGET>.Your} "+getNameHoleGeneric(targetHole)+".")
+		addTextTarget("Объект для мастурбации: {<TARGET>.Your} "+getNameHoleGeneric(targetHole)+".")
 		getSubInfo().addArousalForeplay(0.1)
 		
 func sex_processTurn():
@@ -91,7 +91,7 @@ func sex_processTurn():
 		"{dom.You} {dom.youVerb('pleasure')} {sub.your} {sub.penisShort} мастурбатором.",
 	])
 	stimulateSex(SUB_0, getTargetIndx(), targetHole, I_NORMAL)
-	doProcessFuck(SUB_0, getTargetIndx(), targetHole, " through the portal panties")
+	doProcessFuck(SUB_0, getTargetIndx(), targetHole, " через трусики-порталы")
 	doProcessFuckExtra(SUB_0, getTargetIndx(), targetHole)
 	if(isReadyToCumHandled(getTargetIndx()) && getTargetIndx() != SUB_0):
 		cumGeneric(getTargetIndx(), getTargetIndx(), UniqueOrgasm.PortalSex)
@@ -125,7 +125,7 @@ func getActions(_indx:int):
 					if(charCanUse(portalNPC, slot)):
 						var theHoleName:String = getNameHoleGeneric(slot)
 						addAction("setTarget", 0.0, theHoleName, "Цель "+charName+"'s "+theHoleName, {
-							A_CATEGORY: ["Fleshlight Target", charName], A_ARGS: [portalNPC.getID(), slot], A_PRIORITY: 5,
+							A_CATEGORY: ["Объект для мастурбации", charName], A_ARGS: [portalNPC.getID(), slot], A_PRIORITY: 5,
 						})
 		
 			if(isReadyToFuck(SUB_0)):
@@ -170,7 +170,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		targetID = _action["args"][0]
 		targetHole = _action["args"][1]
 		
-		addTextTarget("{dom.You} {dom.youVerb('pick')} the target! A portal opens up on the fleshlight, revealing {<TARGET>.your} "+getNameHoleGeneric(targetHole)+".")
+		addTextTarget("{dom.You} {dom.youVerb('pick')} цель! На флешлайте открывается портал, открывающий вид на {<TARGET>.your} "+getNameHoleGeneric(targetHole)+".")
 		if(targetID == getDomOrSubID(DOM_0)):
 			talkText(DOM_0, RNG.pick([
 				"Надеюсь, этот тебе понравится.",

@@ -11,12 +11,12 @@ func getVisibleDescription():
 	return "Вы освоили основы гипнотического искусства."
 
 func getMoreDescription():
-	return """You can hypnotize a willing or adequately subdued subject. You can implant posthypnotic suggestions and trigger them in later encounters to affect the subject with one of the following effects:
+	return """Вы можете гипнотизировать согласную или достаточно подавленную цель. Можно внушать постгипнотические установки и активировать их в следующих встречах, накладывая один из эффектов:
 	
-Pleasure (increasing  [color="""+DamageType.getColorString(DamageType.Lust)+"""]Lust[/color])
-Tiredness (reducing  [color="""+DamageType.getColorString(DamageType.Stamina)+"""]Stamina[/color])
-Kneeling (dropping prone)
-Blackout (stun)"""
+Удовольствие (повышает [color="""+DamageType.getColorString(DamageType.Lust)+"""]Похоть[/color])
+Усталость (снижает [color="""+DamageType.getColorString(DamageType.Stamina)+"""]Выносливость[/color])
+На колени (сбивает с ног)
+Отключка (оглушение)"""
 
 func getSkillTier():
 	return 1

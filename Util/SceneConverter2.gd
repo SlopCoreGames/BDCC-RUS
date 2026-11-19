@@ -375,7 +375,7 @@ func _on_Button_pressed():
 			#var varData = trackedVariables[variableName]
 			result.append("\tdata[\""+str(variableName)+"\"] = "+str(variableName))
 		result.append("")
-		result.append("\treturn data")
+		result.append("\tвозврат данных")
 		
 		result.append("")
 		result.append("func loadData(data):")
@@ -392,7 +392,7 @@ func _on_Button_pressed():
 		result.append("\treturn \""+Util.join(devCommentary, "\\n")+"\"")
 		result.append("")
 		result.append("func hasDevCommentary():")
-		result.append("\treturn true")
+		result.append("\tвозврат true")
 		result.append("")
 	
 	outputTextEdit.text = Util.join(result, "\n")
@@ -406,13 +406,13 @@ func _on_TestButton_pressed():
 	newScript.source_code = outputTextEdit.text
 	var _error = newScript.reload()
 	if(_error != OK):
-		$ErrorDialog.dialog_text = "There is an error in your scene's code somewhere"
+		$ErrorDialog.dialog_text = "Где-то в коде вашей сцены закралась ошибка"
 		$ErrorDialog.show()
 		return
 		
 	var newSceneID = GlobalRegistry.registerTemporaryScene(newScript)
 	if(newSceneID == null):
-		$ErrorDialog.dialog_text = "Unable to register test scene\nDoes scene inherit SceneBase?"
+		$ErrorDialog.dialog_text = "Не удалось зарегистрировать тестовую сцену\nНаследуется ли сцена от SceneBase?"
 		$ErrorDialog.show()
 		return
 	

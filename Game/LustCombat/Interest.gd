@@ -18,19 +18,19 @@ static func getVisibleName(interest):
 	if(interest == Hates):
 		return "hates"
 	if(interest == ReallyDislikes):
-		return "really dislikes"
+		return "терпеть не может"
 	if(interest == Dislikes):
 		return "dislikes"
 	if(interest == SlightlyDislikes):
-		return "slightly dislikes"
+		return "недолюбливает"
 	if(interest == Neutral):
-		return "is neutral about"
+		return "относится нейтрально"
 	if(interest == KindaLikes):
-		return "kinda likes"
+		return "вполне симпатизирует"
 	if(interest == Likes):
 		return "likes"
 	if(interest == ReallyLikes):
-		return "really likes"
+		return "обожает"
 	if(interest == Loves):
 		return "loves"
 	return "error:"+str(interest)

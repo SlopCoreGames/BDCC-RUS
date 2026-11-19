@@ -7,7 +7,7 @@ func _init():
 	usedTagInside = SexActivityTag.AnusPenetrated
 	fetishGiving = Fetish.AnalSexGiving
 	fetishReceiving = Fetish.AnalSexReceiving
-	usedBodypartNames = ["anus", "tailhole", "backdoor", "star", "anal ring"]
+	usedBodypartNames = ["anus", "tailhole", "backdoor", "star", "анальное кольцо"]
 	switchHoleActivity = "DomRidingSubVaginal"
 	otherHoleNames = ["pussy"]
 	otherHoleBodypart = BodypartSlot.Vagina

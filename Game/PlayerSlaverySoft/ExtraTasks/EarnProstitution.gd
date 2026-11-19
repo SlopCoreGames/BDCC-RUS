@@ -45,7 +45,7 @@ func onInteractionEvent(_eventID:String, _args:Dictionary):
 			advanceTask(_howMuch)
 
 func getTaskStringSlutLock():
-	return "Earn from prostitution: "+getProgressString("credits")
+	return "Заработок на проституции: "+getProgressString("credits")
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [

@@ -10,7 +10,7 @@ func getName() -> String:
 	return "Узость киски"
 
 func getButtonDesc() -> String:
-	return "Highlight the slave's pussy.\n\n[b]Might[/b] reveal 1 mind preference of each bidder."
+	return "Подсветить киску рабыни.\n\n[b]Возможно[/b] раскроет по одному предпочтению каждого участника аукциона."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	if(_slaveTraits.has("VaginaTight") && _slaveTraits["VaginaTight"] > 0.0):
@@ -43,20 +43,20 @@ func getTraits() -> Dictionary:
 func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	if(_slaveTraits.has("VaginaTight") && _slaveTraits["VaginaTight"] > 0.0):
 		return RNG.pick([
-			'A tight one, huh? That’s what I like to hear.',
-			'Perfect, I’ve been wanting something fresh like that.',
-			'Tight? That’s enough to get my interest.',
-			'Sounds like the ideal pussy for me.',
-			'Oh yeah, I will enjoy stretching {slave.her} out.',
-			'The things I can do to such a pussy..',
+			'Узкая, да? Обожаю такое.',
+			'Идеально, как раз хотел чего-нибудь новенького.',
+			'Узкая? Это уже заставляет меня заинтересоваться.',
+			'Похоже, это идеальная киска для меня.',
+			'О да, я с удовольствием растяну {slave.her}.',
+			'Боже, что же я буду делать с такой киской...',
 		])
 	if(_slaveTraits.has("VaginaLoose") && _slaveTraits["VaginaLoose"] > 0.0):
 		return RNG.pick([
-			'Now that’s what I like to see.',
+			'Вот это то, что доктор прописал.',
 			'Perfect!',
-			'Well-used and no complaints - that’s exactly what I need.',
-			'Loose cunt, huh? That’s perfect for my plans.',
-			'This one’s going to get a lot of use!',
+			'Хорошенько использованная и без лишних капризов — как раз то, что нужно.',
+			'Раздолбанная щель, да? Как раз то, что нужно для моих планов.',
+			'Эту будут использовать очень часто!',
 		])
 	
 	return .getPositiveReaction(_char, _slaveTraits)
@@ -64,21 +64,21 @@ func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String
 func getNegativeReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	if(_slaveTraits.has("VaginaTight") && _slaveTraits["VaginaTight"] > 0.0):
 		return RNG.pick([
-			'Tight? No thanks. Sounds like too much work for too little reward.',
-			'Not really what I’m after.',
-			'Tight ones are overrated.',
-			'Meh, sounds like more of a chore than fun.',
-			'I’m not interested in something that’s going to resist me the whole time.',
-			'Tight is nice, but I’m looking for something more... accommodating..',
-			'What\'s the point if {slave.he} can\'t even take a whole horsecock inside?',
+			'Узкая? Не, спасибо. Похоже на кучу лишней возни ради сомнительного удовольствия.',
+			'Не совсем то, что я ищу.',
+			'Узкие — это переоцененная херня.',
+			'Мда, звучит скорее как нудная работа, чем как кайф.',
+			'Мне не интересно то, что будет сопротивляться мне на каждом шагу.',
+			'Узкая — это мило, но я ищу что-то более... податливое...',
+			'Какой в этом смысл, если {slave.he} даже целого лошадиного члена принять не может?',
 		])
 	if(_slaveTraits.has("VaginaLoose") && _slaveTraits["VaginaLoose"] > 0.0):
 		return RNG.pick([
-			'Loose cunt? Ugh. That’s not what I’m looking for in a slave.',
-			'I’ll pass on this one.',
-			'Loose pussy? No.',
-			'Doesn’t sound like {slave.he} has any grip left. Not my thing.',
-			'A pussy that’s seen so much action? Nah, I’m out.',
+			'Разболтанная щель? Тьфу. Не то, что я ищу в рабыне.',
+			'Пожалуй, пропущу эту.',
+			'Растянутая киска? Нет.',
+			'Похоже, у {slave.he} совсем не осталось хватки. Не в моем вкусе.',
+			'Киска, которую уже столько раз поимели? Не, я пас.',
 		])
 	
 	return .getNegativeReaction(_char, _slaveTraits)

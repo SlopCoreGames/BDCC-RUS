@@ -10,7 +10,7 @@ func getName() -> String:
 	return "Бывший заключенный"
 
 func getButtonDesc() -> String:
-	return "Explain how this slave was previously one of the inmates.\n\n[b]Might[/b] reveal 1 personality preference of each bidder."
+	return "Объясните, как этот раб раньше был одним из заключенных.\n\n[b]Возможно[/b] раскроет по одному предпочтению в характере у каждого участника торгов."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
@@ -31,21 +31,21 @@ func getTraits() -> Dictionary:
 
 func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
-		'An inmate, huh? Bet they know a thing or two about taking punishment.',
-		'Breaking someone already broken by prison... poetic.',
-		'Sounds like someone who already knows how to follow orders.',
-		'Could be a good long-term investment.',
-		'Owning someone with that background is.. satisfying.',
-		'I love even just the idea.',
+		'Заключенный, значит? Спорим, они знают толк в том, как принимать наказания.',
+		'Доломать того, кто уже сломлен тюрьмой... поэтично.',
+		'Похоже на того, кто уже умеет беспрекословно подчиняться.',
+		'Может стать отличной долгосрочной инвестицией.',
+		'Владеть кем-то с таким прошлым... это приносит особое удовлетворение.',
+		'Меня возбуждает даже сама эта мысль.',
 	])
 
 func getNegativeReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
-		'I don\'t need problems with AlphaCorp.',
-		'No thanks, that is too much.',
-		'I think this can quickly become a problem.',
-		'AlphaCorp slave? Ehh.',
-		'I\'d rather not.',
-		'That collar is permanent, isn\'t it? Huge red flag.',
+		'Мне не нужны проблемы с «АльфаКорп».',
+		'Нет, спасибо, это уже перебор.',
+		'Думаю, это может быстро обернуться проблемой.',
+		'Раб «АльфаКорп»? Ну, такое.',
+		'Пожалуй, не стоит.',
+		'Этот ошейник ведь не снимается? Жирнейший тревожный звоночек.',
 	])
 	

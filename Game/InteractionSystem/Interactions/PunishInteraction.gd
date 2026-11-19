@@ -251,9 +251,9 @@ func getActivityIconForRole(_role:String):
 
 func getPreviewLineForRole(_role:String) -> String:
 	if(_role == "target"):
-		return "{target.name} is being punished by {punisher.name}."
+		return "{punisher.name} наказывает {target.name}."
 	if(_role == "punisher"):
-		return "{punisher.name} is punishing {target.name}."
+		return "{punisher.name} наказывает {target.name}."
 	return .getPreviewLineForRole(_role)
 
 func isRoleOnALeash(_role:String) -> bool:

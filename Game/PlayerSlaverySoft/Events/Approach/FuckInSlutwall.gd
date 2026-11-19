@@ -41,7 +41,7 @@ func start_eventResult(_event, _id:String, _args:Array):
 		runParadeTo(LOC_SLUTWALL)
 	if(_id == "paradeTo"):
 		setState("inStocks")
-		checkSubEvent("FuckInSlutwall", "You were about to be locked into the slutwall by {npc.name}..", [])
+		checkSubEvent("FuckInSlutwall", "{npc.name} уже собиралась запереть тебя в шлюзовой стене...", [])
 	
 func inStocks():
 	playAnimation(StageScene.SlutwallSex, "tease", {npc=getRoleID(C_OWNER)})

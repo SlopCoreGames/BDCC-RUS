@@ -88,7 +88,7 @@ func connectToServer() -> bool:
 	lastErrors = []
 
 	if DEBUG_LOVENSE:
-		logDebug("Connecting to Lovense Connect app at "+getCommandUrl())
+		logDebug("Подключение к приложению Lovense Connect по адресу: "+getCommandUrl())
 
 	connectionStatus = STATUS_CONNECTING
 	return scanForDevices()
@@ -111,7 +111,7 @@ func vibrate(_toy, _strength:float):
 
 	var theToyId:String = str(toyData.get("toy", ""))
 	if(theToyId.empty()):
-		logError("Missing Lovense toy id in backendData")
+		logError("В backendData отсутствует ID игрушки Lovense")
 		return
 	
 	var theMaxValue:int = toyData.get("maxValue", 20)
@@ -186,7 +186,7 @@ func _send_local_command(payload:Dictionary) -> bool:
 	if err != OK:
 		req.queue_free()
 		connectionStatus = STATUS_DISCONNECTED
-		logError("HTTPRequest failed to request: "+str(err))
+		logError("Ошибка HTTPRequest при запросе: "+str(err))
 		return false
 
 	return true
@@ -197,7 +197,7 @@ func _on_local_request_completed(result:int, response_code:int, _headers:Array, 
 
 	if(result != HTTPRequest.RESULT_SUCCESS):
 		connectionStatus = STATUS_DISCONNECTED
-		logError("HTTP request failed: result="+str(result))
+		logError("Ошибка HTTP-запроса: результат="+str(result))
 		return
 
 	var text := body.get_string_from_utf8()
@@ -205,7 +205,7 @@ func _on_local_request_completed(result:int, response_code:int, _headers:Array, 
 	var parsed := JSON.parse(text)
 	if(parsed.error != OK):
 		connectionStatus = STATUS_DISCONNECTED
-		logError("Invalid JSON response: "+str(parsed.error_string))
+		logError("Некорректный JSON-ответ: "+str(parsed.error_string))
 		return
 
 	var response = parsed.result
@@ -214,17 +214,17 @@ func _on_local_request_completed(result:int, response_code:int, _headers:Array, 
 	
 	if(!(response is Dictionary)):
 		connectionStatus = STATUS_DISCONNECTED
-		logError("Unexpected response type: " + str(typeof(response)))
+		logError("Неожиданный тип ответа: " + str(typeof(response)))
 		return
 
 	if(response_code != 200):
 		connectionStatus = STATUS_DISCONNECTED
-		logError("Lovense HTTP response code "+str(response_code)+": "+str(response))
+		logError("Код HTTP-ответа Lovense "+str(response_code)+": "+str(response))
 		return
 
 	var api_code:int = int(response.get("code", 0))
 	if(api_code != 200):
-		logError("Lovense API error: " + str(response))
+		logError("Ошибка API Lovense: " + str(response))
 		return
 
 	connectionStatus = STATUS_CONNECTED
@@ -247,7 +247,7 @@ func _handle_get_toys_response(response:Dictionary):
 	else:
 		var parsed_toys := JSON.parse(str(toys_field))
 		if parsed_toys.error != OK or not (parsed_toys.result is Dictionary):
-			logError("Could not parse toys payload: " + str(toys_field))
+			logError("Не удалось разобрать данные об игрушках: " + str(toys_field))
 			setToys([])
 			return
 		toys_dict = parsed_toys.result
@@ -261,11 +261,11 @@ func _handle_get_toys_response(response:Dictionary):
 		if int(toy_info.get("status", 0)) != 1:
 			continue
 		
-		var theReportedName:String = toy_info.get("name", "Lovense Toy")
+		var theReportedName:String = toy_info.get("name", "Игрушка Lovense")
 		var theDBToyInfo:Dictionary = getToyInfo(theReportedName)
 		var theNickname:String = toy_info.get("nickName", "")
 		
-		var theFinalName:String = theNickname if !theNickname.empty() else theDBToyInfo.get("name", "Lovense Toy")
+		var theFinalName:String = theNickname if !theNickname.empty() else theDBToyInfo.get("name", "Игрушка Lovense")
 		var _group:int = 0
 		var _i:int = 0
 #		for theFeature in theDBToyInfo["features"]: # Didn't really work sadly
@@ -330,7 +330,7 @@ func _handle_get_toys_response(response:Dictionary):
 	setToys(theNewToys)
 
 	if DEBUG_LOVENSE:
-		logDebug("Loaded "+str(theNewToys.size())+" Lovense toys")
+		logDebug("Loaded "+str(theNewToys.size())+" Игрушки Lovense")
 
 
 func onError(msg):

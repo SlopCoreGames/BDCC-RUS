@@ -85,7 +85,7 @@ func interestVerbalReaction(interest):
 		return "Ого, а ты горячая"
 	
 func _getName():
-	return "Female guard"
+	return "Женщина-охранница"
 
 func getGender():
 	return Gender.Female

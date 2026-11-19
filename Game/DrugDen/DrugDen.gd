@@ -228,10 +228,10 @@ func getDifficultyFloat() -> float:
 func getRunInfo() -> Array:
 	var result:Array = []
 	
-	result.append("Drug den level: "+str(level))
+	result.append("Уровень притона: "+str(level))
 	result.append("Difficulty: "+str(round(getDifficultyFloat()*100.0))+"%")
 	if(flags.has("hasKidlatUniform") && flags["hasKidlatUniform"]):
-		result.append("You have Kidlat's uniform.")
+		result.append("У тебя есть форма Кидлата.")
 	
 	return result
 

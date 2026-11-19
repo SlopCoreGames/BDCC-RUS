@@ -67,20 +67,20 @@ func getMinLooseness() -> float:
  
 static func loosenessToString(value):
 	if(value <= 0.1):
-		return "very tight"
+		return "очень узкое"
 	if(value <= 0.5):
 		return "tight"
 	if(value <= 1.1):
-		return "nice and pretty"
+		return "милое и аккуратное"
 	if(value <= 2.2):
-		return "slightly loose"
+		return "слегка расслабленное"
 	if(value <= 4.5):
 		return "loose"
 	if(value <= 7.5):
-		return "very used"
+		return "сильно растянутое"
 	if(value <= 12.0):
-		return "stretched wide"
-	return "gaping wide"
+		return "широко растянутое"
+	return "зияющее"
 
 func getLoosenessString():
 	return loosenessToString(looseness)
@@ -233,9 +233,9 @@ func getContentsHumanReadableArray():
 func getAttributesText():
 	return [
 		["Capacity", str(round(getFluidAmount() * 10.0)/10.0)+"/"+ str(round(getCapacity() * 10.0)/10.0)+" ml"],		
-		["Looseness level", str(round(getLooseness() * 10.0)/10.0)+", "+getLoosenessString()],
-		["Looseness level minimum", str(round(getMinLooseness() * 10.0)/10.0)],
-		["Comfortable insertion", Util.cmToString(round(getComfortableInsertion() * 10.0)/10.0)],
+		["Уровень разболтанности", str(round(getLooseness() * 10.0)/10.0)+", "+getLoosenessString()],
+		["Минимальный уровень разболтанности", str(round(getMinLooseness() * 10.0)/10.0)],
+		["Комфортное вхождение", Util.cmToString(round(getComfortableInsertion() * 10.0)/10.0)],
 		["Elasticity", str(round(getElasticity() * 1000.0)/10.0)+"%"],
 		["Tightness", str(round(getResistance() * 1000.0)/10.0)+"%"],
 	]
@@ -244,8 +244,8 @@ func getTooltipInfo():
 	var result = []
 	
 	result.append("capacity: " + str(round(getFluidAmount() * 10.0)/10.0)+"/"+ str(round(getCapacity() * 10.0)/10.0)+" ml")
-	result.append("looseness level: " + str(round(getLooseness() * 10.0)/10.0)+", "+getLoosenessString())
-	result.append("comfortable insertion: " + Util.cmToString(round(getComfortableInsertion() * 10.0)/10.0))
+	result.append("уровень разболтанности: " + str(round(getLooseness() * 10.0)/10.0)+", "+getLoosenessString())
+	result.append("комфортное вхождение: " + Util.cmToString(round(getComfortableInsertion() * 10.0)/10.0))
 	if(!isEmpty()):
 		result.append("Contents:")
 		result.append_array(getContentsHumanReadableArray())

@@ -6,4 +6,4 @@ func _init():
 	id = "TempAmbushStash"
 	
 func _getName():
-	return "Ambush item stash"
+	return "Заначка с предметами из засады"

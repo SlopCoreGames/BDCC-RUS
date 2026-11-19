@@ -31,7 +31,7 @@ func getDebugStages() -> Array:
 		[STAGE_INTRO, "INTRO"],
 		[STAGE_EGG, "EGG"],
 		[STAGE_TINY, "TINY"],
-		[STAGE_TINY_AFTERTEST, "TINY (AFTER REST)"],
+		[STAGE_TINY_AFTERTEST, "Крошечный (после отдыха)"],
 		[STAGE_SMALL, "SMALL"],
 		[STAGE_SMALL_ENDDAY, "STAGE_SMALL_ENDDAY"],
 		[STAGE_NORMAL, "NORMAL"],
@@ -623,7 +623,7 @@ func shouldDisplayWarningAboveMonster() -> bool:
 
 func getAngryReason() -> String:
 	if(angryReason.empty()):
-		return "didn't spend time with it"
+		return "не уделяли ему времени"
 	return angryReason
 
 func hasEvent() -> bool:
@@ -657,15 +657,15 @@ func getPossibleEvents() -> Array:
 	if(!didFirstSexEvent && isNormal()):
 		lewdEventScene = "PSTentaclesFirstSex"
 	
-	possible.append([EVENT_WINDOW, LOC_WINDOW, "PSTentaclesWindowSmall", [], "didn't spend time with it"])
+	possible.append([EVENT_WINDOW, LOC_WINDOW, "PSTentaclesWindowSmall", [], "не уделяли ему времени"])
 	weights.append((1.0 if preferEvent != EVENT_WINDOW else 2.0) + getEventExtraWeight(EVENT_WINDOW))
-	possible.append([EVENT_HUNGRY, LOC_FRIDGE, "PSTentaclesFeedSmall", [], "didn't feed it"])
+	possible.append([EVENT_HUNGRY, LOC_FRIDGE, "PSTentaclesFeedSmall", [], "не кормили его"])
 	weights.append((1.0 if preferEvent != EVENT_HUNGRY else 2.0) + getEventExtraWeight(EVENT_HUNGRY))
-	possible.append([EVENT_LEWD, "pc", lewdEventScene, [], "didn't play with it"])
+	possible.append([EVENT_LEWD, "pc", lewdEventScene, [], "не играли с ним"])
 	weights.append((1.0 if preferEvent != EVENT_LEWD else 2.0) + getEventExtraWeight(EVENT_LEWD))
-	possible.append([EVENT_PLAY, LOC_IMPORTANT, "PSTentaclesPlaySmall", [], "didn't play with it"])
+	possible.append([EVENT_PLAY, LOC_IMPORTANT, "PSTentaclesPlaySmall", [], "не играли с ним"])
 	weights.append((1.0 if preferEvent != EVENT_PLAY else 2.0) + getEventExtraWeight(EVENT_PLAY))
-	possible.append([EVENT_BREAK, RNG.pick([LOC_FRIDGE, LOC_DOOR]), "PSTentaclesBreakStuff", [], "didn't approach it"])
+	possible.append([EVENT_BREAK, RNG.pick([LOC_FRIDGE, LOC_DOOR]), "PSTentaclesBreakStuff", [], "не приближались к нему"])
 	weights.append((1.0 if preferEvent != EVENT_BREAK else 2.0) + getEventExtraWeight(EVENT_PLAY))
 	
 	var thePS:int = possible.size()
@@ -777,7 +777,7 @@ func getStatName(_statID:int) -> String:
 		return "Mind" # Also Psychic bond
 	if(_statID == STAT_LUST):
 		return "Lust"
-	return "ERROR?"
+	return "ОШИБКА?"
 
 func incStat(_statID:int, showMessage:bool = true) -> bool:
 	if(_statID < 0):
@@ -968,15 +968,15 @@ func getStatDescriptions() -> Array:
 	
 	var preferText:String = ""
 	if(preferEvent == EVENT_LEWD):
-		preferText = "The tentacles prefer to be lusty"
+		preferText = "Щупальца предпочитают быть похотливыми"
 	if(preferEvent == EVENT_PLAY):
-		preferText = "The tentacles prefer to be active"
+		preferText = "Щупальца предпочитают быть активными"
 	if(preferEvent == EVENT_WINDOW):
-		preferText = "The tentacles prefer to be mindful"
+		preferText = "Щупальца предпочитают действовать осознанно"
 	if(preferEvent == EVENT_BREAK):
-		preferText = "The tentacles prefer to be destructive"
+		preferText = "Щупальца предпочитают действовать разрушительно"
 	if(preferEvent == -1):
-		preferText = "The tentacles don't have a preference towards anything"
+		preferText = "У щупалец нет никаких предпочтений"
 	
 	return [
 		"Anger: "+internal_processStatText(STAT_ANGER, theAngerIndex),

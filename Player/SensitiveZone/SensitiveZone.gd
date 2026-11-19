@@ -13,7 +13,7 @@ var lastStimulatedAgo:int = 0
 
 var bodypart: WeakRef = null
 
-var zoneName:String = "FILL ME"
+var zoneName:String = "ЗАПОЛНИ МЕНЯ"
 var zoneNameIs:String = "is"
 
 func getArousalGainModifier() -> float:

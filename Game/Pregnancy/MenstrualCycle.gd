@@ -887,6 +887,6 @@ func getDebugInfo() -> String:
 	var result:Array = []
 	
 	result.append("Cycle: "+str(Util.roundF(cycleProgress*100.0, 1))+"%")
-	result.append("Should ovulate: "+str(shouldOvulate()))
+	result.append("Должна ли произойти овуляция: "+str(shouldOvulate()))
 	
 	return Util.join(result, "\n")

@@ -39,10 +39,10 @@ func onSexEvent(_npc, _event:SexEvent):
 	return false
 
 func getTaskString():
-	return "Cum on body: "+getProgressStringFluids()
+	return "Кончить на тело: "+getProgressStringFluids()
 
 func getTaskHint(_isSlaveLevelup):
-	return "Cum or squirt on them"
+	return "Кончить или отлить на них"
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [

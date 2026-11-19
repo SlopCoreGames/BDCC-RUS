@@ -55,13 +55,13 @@ func onSexEvent(_npc, _event:SexEvent):
 	return false
 
 func getTaskString():
-	return "Penetrate every hole once: "+getProgressString("holes")
+	return "Трахнуть каждую дырку по разу: "+getProgressString("holes")
 
 func getTaskStringSlutLock():
-	return "Get every hole fucked: "+getProgressString("holes")
+	return "Заставить их оттрахать каждую дырку: "+getProgressString("holes")
 
 func getTaskHint(_isSlaveLevelup):
-	return "Fuck all their orifices at least once using your cock or with a strapon"
+	return "Трахнуть все их отверстия хотя бы раз своим членом или страпоном"
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [

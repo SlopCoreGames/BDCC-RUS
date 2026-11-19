@@ -5,7 +5,7 @@ func _init():
 	disableSerialization = true
 	
 func _getName():
-	return "Latex Parasite"
+	return "Латексный паразит"
 
 func getGender():
 	return Gender.Other

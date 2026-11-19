@@ -10,7 +10,7 @@ func getName() -> String:
 	return "Длина члена"
 
 func getButtonDesc() -> String:
-	return "Highlight the slave's penis.\n\n[b]Might[/b] reveal 1 mind preference of each bidder."
+	return "Подсветить пенис рабыни.\n\n[b]Возможно[/b] раскроет по одному предпочтению каждого участника торгов."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	if(_slaveTraits.has("PenisSmall") && _slaveTraits["PenisSmall"] > 0.0):
@@ -51,31 +51,31 @@ func getTraits() -> Dictionary:
 func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	if(_slaveTraits.has("PenisSmall") && _slaveTraits["PenisSmall"] > 0.0):
 		return RNG.pick([
-			'Perfect for humiliating.',
-			'That size means total submission.',
-			'I love a slave that’s embarrassed by their size. Makes them more obedient.',
-			'Tiny cocks are perfect for making a slave focus on other ways to please.',
-			'That’ll keep them humble. A small cock means easy control.',
-			'There’s a lot of potential with a tiny cock like that - perfect for some extra humiliation.',
+			'Идеально подходит для унижения.',
+			'Такой размер означает полное подчинение.',
+			'Обожаю рабов, которые стыдятся своего размера. Это делает их послушнее.',
+			'Крошечные члены идеальны для того, чтобы заставить раба искать другие способы доставить удовольствие.',
+			'Это будет держать их в узде. Маленький член — значит легкий контроль.',
+			'В таком крошечном члене заложен огромный потенциал — идеальный вариант для дополнительного унижения.',
 		])
 	if(_slaveTraits.has("PenisAverage") && _slaveTraits["PenisAverage"] > 0.0):
 		return RNG.pick([
-			'Now that’s what I like to see.',
+			'Вот это то, что доктор прописал.',
 			'Perfect!',
-			'That is a pretty good cock.',
-			'Just what I’ve been looking for.',
-			'Perfect cock.',
-			'Great cock, all around.',
+			'А вот это уже довольно неплохой член.',
+			'Как раз то, что я искал(а).',
+			'Идеальный член.',
+			'Отличный член, во всех смыслах.',
 			'Yes!',
 		])
 	if(_slaveTraits.has("PenisLong") && _slaveTraits["PenisLong"] > 0.0):
 		return RNG.pick([
-			'Impressive size.',
-			'Wow. Just wow.',
-			'Big cocks like that are hard to find!',
-			'I’ve been looking for a slave with a cock like that for a while.',
-			'A cock like that is worth the investment.',
-			'The bigger, the better.',
+			'Впечатляющий размер.',
+			'Ого. Просто охренеть.',
+			'Такие огромные хрены — большая редкость!',
+			'Я уже давно ищу раба с таким членом.',
+			'Такой член стоит любых вложений.',
+			'Чем больше, тем лучше.',
 		])
 	
 	return .getPositiveReaction(_char, _slaveTraits)
@@ -83,29 +83,29 @@ func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String
 func getNegativeReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	if(_slaveTraits.has("PenisSmall") && _slaveTraits["PenisSmall"] > 0.0):
 		return RNG.pick([
-			'A tiny cock? What am I supposed to do with that?',
-			'Too small for my tastes. I need something more impressive.',
-			'No thanks, I didn\'t come here for some pathetic little thing.',
-			'Useless to me.',
-			'Humiliating, sure, but that size is just disappointing.',
-			'I was hoping for more..',
+			'Крошечный член? И что мне с ним делать?',
+			'Слишком мелковат на мой вкус. Мне нужно что-то более внушительное.',
+			'Нет, спасибо. Я пришла сюда не за какой-то жалкой крошкой.',
+			'Для меня он бесполезен.',
+			'Унизительно, конечно, но такой размер — это просто разочарование.',
+			'Я надеялась на большее...',
 		])
 	if(_slaveTraits.has("PenisAverage") && _slaveTraits["PenisAverage"] > 0.0):
 		return RNG.pick([
-			'Nothing special here. If I wanted \'average\', I’d stay home.',
-			'I expected more.',
+			'Ничего особенного. Если бы мне хотелось чего-то «средненького», я бы осталась дома.',
+			'Я ожидала большего.',
 			'Boring.',
-			'I was hoping for something a little more... exciting.',
+			'Я надеялась на что-то чуть более... возбуждающее.',
 			'Forgettable.',
 		])
 	if(_slaveTraits.has("PenisLong") && _slaveTraits["PenisLong"] > 0.0):
 		return RNG.pick([
-			'Too big.',
-			'All that size is wasted if they can’t use it right.',
-			'I prefer something more modest. That’s just excessive.',
-			'Long? Yeah, but that doesn’t mean they know what to do with it.',
-			'Too much cock isn’t always a good thing.',
-			'Looks impressive, but that’s not what I need in a slave.',
+			'Слишком большой.',
+			'Весь этот размер бесполезен, если они не умеют им пользоваться.',
+			'Я предпочитаю что-то более скромное. Это уже чересчур.',
+			'Длинный? Ну да, но это не значит, что они знают, что с ним делать.',
+			'Слишком огромный член — это не всегда хорошо.',
+			'Выглядит впечатляюще, но это не то, что мне нужно от раба.',
 		])
 	
 	return .getNegativeReaction(_char, _slaveTraits)

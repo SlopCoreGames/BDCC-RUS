@@ -351,14 +351,14 @@ func _run():
 func doMeetNpc(ID, occupation):
 	var pcLoc:String = GM.pc.getLocation()
 	if(GM.main.IS.hasPawn(ID)):
-		GM.ui.getCustomControl("npclist").sendPopupMessage("This person is already somewhere in the prison\nYou can find them by exploring around")
+		GM.ui.getCustomControl("npclist").sendPopupMessage("Этот человек уже где-то в тюрьме\nИщите его, исследуя разные уголки")
 		return
 	
 	if(!GM.world.isLocSafe(pcLoc)):
-		GM.ui.getCustomControl("npclist").sendPopupMessage("This location isn't safe, you can't meet anyone here!")
+		GM.ui.getCustomControl("npclist").sendPopupMessage("Это место небезопасно, здесь никого не встретить!")
 		return
 	if(!GM.world.canMeetInLoc(pcLoc)):
-		GM.ui.getCustomControl("npclist").sendPopupMessage("You can't meet anyone on this floor!")
+		GM.ui.getCustomControl("npclist").sendPopupMessage("На этом этаже никого нет!")
 		return
 	
 	if(occupation in ["Inmates", "Guards", "Engineers", "Nurses"]):
@@ -367,7 +367,7 @@ func doMeetNpc(ID, occupation):
 			GM.main.runCurrentScene()
 			return
 		if(getCharacter(ID).shouldBeExcludedFromEncounters()):
-			GM.ui.getCustomControl("npclist").sendPopupMessage("It feels like you will never find them..")
+			GM.ui.getCustomControl("npclist").sendPopupMessage("Кажется, вы их никогда и не найдете...")
 			return
 		var pawn:CharacterPawn = GM.main.IS.spawnPawn(ID)
 		if(pawn == null):

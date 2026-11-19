@@ -26,9 +26,9 @@ func getProgress():
 	if(s1hap && !s2hap):
 		if(curPurAm < 3):
 			var diff:int = 3 - curPurAm
-			whatDoStr = "Buy "+str(diff)+" more item"+("s" if diff != 1 else "")+" from her to progress the story."
+			whatDoStr = "Buy "+str(diff)+" еще предметов"+("s" if diff != 1 else "")+" у нее, чтобы продвинуться по сюжету."
 		else:
-			whatDoStr = "Meet her during a [b]new[/b] drug den run to progress the story."
+			whatDoStr = "Встреться с ней во время [b]нового[/b] рейда в притон, чтобы продвинуться по сюжету."
 	
 	result.append("Вы нашли Кидлат — кошечку, которая держит свою лавочку в притоне. На данный момент вы купили у неё "+str(curPurAm)+" item"+("s" if curPurAm != 1 else "")+" товаров.")
 	
@@ -41,9 +41,9 @@ func getProgress():
 	
 		if(curPurAm < 6):
 			var diff:int = 6 - curPurAm
-			whatDoStr = "Buy "+str(diff)+" more item"+("s" if diff != 1 else "")+" from her to progress the story."
+			whatDoStr = "Buy "+str(diff)+" еще предметов"+("s" if diff != 1 else "")+" у нее, чтобы продвинуться по сюжету."
 		else:
-			whatDoStr = "Meet her during a [b]new[/b] drug den run to progress the story."
+			whatDoStr = "Встреться с ней во время [b]нового[/b] рейда в притон, чтобы продвинуться по сюжету."
 	
 	if(s4hap && !s5hap):
 		whatDoStr = ""
@@ -54,9 +54,9 @@ func getProgress():
 		
 		if(curPurAm < 9):
 			var diff:int = 9 - curPurAm
-			whatDoStr = "Buy "+str(diff)+" more item"+("s" if diff != 1 else "")+" from her to progress the story."
+			whatDoStr = "Buy "+str(diff)+" еще предметов"+("s" if diff != 1 else "")+" у нее, чтобы продвинуться по сюжету."
 		else:
-			whatDoStr = "Meet her during a [b]new[/b] drug den run to progress the story."
+			whatDoStr = "Встреться с ней во время [b]нового[/b] рейда в притон, чтобы продвинуться по сюжету."
 	
 	if(s6knows && !s6hap):
 		whatDoStr = ""
@@ -67,9 +67,9 @@ func getProgress():
 		
 		if(curPurAm < 12):
 			var diff:int = 12 - curPurAm
-			whatDoStr = "Buy "+str(diff)+" more item"+("s" if diff != 1 else "")+" from her to progress the story."
+			whatDoStr = "Buy "+str(diff)+" еще предметов"+("s" if diff != 1 else "")+" у нее, чтобы продвинуться по сюжету."
 		else:
-			whatDoStr = "Meet her during a drug den run to progress the story."
+			whatDoStr = "Встретьтесь с ней во время рейда в притоне, чтобы продвинуться по сюжету."
 	
 	if(s7knows && !s7hap):
 		whatDoStr = ""
@@ -80,7 +80,7 @@ func getProgress():
 		result.append("Вы защитили Кидлат от алкашей-наркоманов!")
 		
 		if(!s8hap):
-			whatDoStr = "Find Kidlat in the cellblock in order to progress the story!"
+			whatDoStr = "Найдите Кидлат в блоке камер, чтобы продвинуться по сюжету!"
 	
 	if(s8hap):
 		whatDoStr = ""

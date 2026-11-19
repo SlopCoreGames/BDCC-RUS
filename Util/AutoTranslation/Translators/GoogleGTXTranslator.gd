@@ -11,21 +11,21 @@ func translate(_targetLanguage, _inputText, _sourceLanguage = "en"):
 	var theResult = {
 		error = false,
 		success = false,
-		errorMessage = "No error message provided",
-		resultText = "No text provided",
+		errorMessage = "Сообщение об ошибке не указано",
+		resultText = "Текст не предоставлен",
 	}
 	
 	var raw_result = yield(requestTranslate(_inputText, _sourceLanguage, _targetLanguage), "completed")
 	
 	if typeof(raw_result) != TYPE_DICTIONARY and typeof(raw_result) != TYPE_ARRAY:
 		theResult["error"] = true
-		theResult["errorMessage"] = "Translation request failed"
+		theResult["errorMessage"] = "Ошибка запроса перевода"
 		return theResult
 	
 	var wrapped = wrapResponse(raw_result)
 	if wrapped == null:
 		theResult["error"] = true
-		theResult["errorMessage"] = "Could not parse translation response"
+		theResult["errorMessage"] = "Не удалось разобрать ответ перевода"
 		return theResult
 	
 	theResult["success"] = true

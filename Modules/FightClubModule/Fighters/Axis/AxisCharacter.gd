@@ -81,17 +81,17 @@ func _getAttacks():
 	return ["simplepunchattack", "simplekickattack", "biteattack", "AxisTaunt", "AxisGrab", "trygetupattack"]
 
 func getFightIntro(_battleName):
-	var mes = "The wolf waves to the crowd, he is tall and looks strong, the lilac uniform looks strange on him. He then bows to you before offering you a playful smirk."
+	var mes = "Волк машет толпе; он высокий и выглядит сильным, а лиловая униформа на нем смотрится как-то странно. Затем он кланяется тебе, одарив игривой ухмылкой."
 	mes += "\n\n"
-	mes += "[say=axis]Hey there~. I must admit, you are quite a courageous person to come here.[/say]"
+	mes += "[say=axis]Привет, красавица~. Должен признать, ты чертовски смелая, раз решилась прийти сюда.[/say]"
 	mes += "\n\n"
-	mes += "He then unbuttons his shirt, exposing his ripped torso and a six pack. He flexes his muscles."
+	mes += "Затем он расстегивает рубашку, обнажая рельефный торс и кубики пресса. Он напрягает мышцы."
 	mes += "\n\n"
-	mes += "[say=axis]I wouldn’t mind breeding such a strong-willed inmate like you. I’m the alpha of this prison after all, I possess the best genes.[/say]"
+	mes += "[say=axis]Я бы не прочь осеменить такую волевую заключенную, как ты. В конце концов, я альфа в этой тюрьме, и мои гены — лучшие.[/say]"
 	mes += "\n\n"
-	mes += "His hand rubs his crotch. Wow, his cock must be massive, the palm can’t even cover the bulge."
+	mes += "Его рука поглаживает пах. Ого, его член, должно быть, просто огромный — ладонь даже не может полностью закрыть этот бугор."
 	mes += "\n\n"
-	mes += "[say=axis]Sounds way more fun, doesn’t it~?[/say]"
+	mes += "[say=axis]Звучит куда веселее, не так ли~?[/say]"
 	return mes
 
 func getThickness() -> int:

@@ -126,7 +126,7 @@ func _react(_action: String, _args):
 		if(result.has("text")):
 			resultText = result["text"]
 		else:
-			resultText = "An action happened!"
+			resultText = "Произошло действие!"
 		#action.playAnimation(mainSlave, pickedSlaves)
 
 	if(_action == "do_extra_action"):

@@ -24,7 +24,7 @@ func setSaveFile(path):
 	var gameData = SAVE.loadGameInformationFromSave(path)
 	var extra = ""
 	if(gameData == null):
-		extra = "Couldn't load game info, bad save?"
+		extra = "Не удалось загрузить данные игры. Сохранение повреждено?"
 	else:
 		extra = "Name: "+str(gameData["gamename"])+" - Day: "+str(gameData["currentDay"])+" - Credits: "+str(gameData["credits"])
 		extra += " - Time: "+str(Util.getTimeStringHHMM(gameData["timeOfDay"]))

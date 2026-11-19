@@ -49,19 +49,19 @@ const MAP_STANCE_TO_INDEX:Dictionary = {
 }
 
 const STANCE_NAMES:Dictionary = {
-	STANCE_STANDING_NORMALLY: "Stand normally",
-	STANCE_COMBAT_DEFAULT: "Default fighting stance",
-	STANCE_COMBAT_RAISED: "Raised fists stance",
-	STANCE_COMBAT_KARATE: "Karate stance",
-	STANCE_COMBAT_RELAXED: "Relaxed fighting stance",
-	STANCE_LUST_PROUD: "Proud lust stance",
-	STANCE_LUST_SLY: "Shy lust stance",
-	STANCE_LUST_BRAVE: "Brave lust stance",
-	STANCE_UNIQUE_STUNBATON: "Stun baton stance (Unique)",
-	STANCE_UNIQUE_SHIV: "Shiv stance (Unique)",
-	STANCE_UNIQUE_PISTOL: "Energy gun stance (Unique)",
-	STANCE_UNIQUE_PISTOLRED: "Red energy gun stance (Unique)",
-	STANCE_UNIQUE_10MMGUN: "10mm gun stance (Unique)",
+	STANCE_STANDING_NORMALLY: "Обычная стойка",
+	STANCE_COMBAT_DEFAULT: "Стандартная боевая стойка",
+	STANCE_COMBAT_RAISED: "Стойка с поднятыми кулаками",
+	STANCE_COMBAT_KARATE: "Стойка карате",
+	STANCE_COMBAT_RELAXED: "Расслабленная боевая стойка",
+	STANCE_LUST_PROUD: "Горделивая похотливая стойка",
+	STANCE_LUST_SLY: "Застенчивая похотливая стойка",
+	STANCE_LUST_BRAVE: "Дерзкая похотливая стойка",
+	STANCE_UNIQUE_STUNBATON: "Стойка с электродубинкой (Уникальная)",
+	STANCE_UNIQUE_SHIV: "Стойка с заточкой (Уникальная)",
+	STANCE_UNIQUE_PISTOL: "Стойка с энергетической пушкой (Уникальная)",
+	STANCE_UNIQUE_PISTOLRED: "Стойка с красной энергетической пушкой (Уникальная)",
+	STANCE_UNIQUE_10MMGUN: "Стойка с пистолетом 10 мм (Уникальная)",
 	STANCE_UNIQUE_SYRINGE: "Syringe (Unique)",
 }
 const STANCE_TO_WEAPONS:Dictionary = { # [fists, left_hand_weapon, right_hand_weapon]

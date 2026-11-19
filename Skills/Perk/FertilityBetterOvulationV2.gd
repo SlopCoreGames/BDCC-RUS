@@ -9,7 +9,7 @@ func getVisibleName():
 
 func getVisibleDescription():
 	return "Ваши репродуктивные органы работают на пределе возможностей, чтобы вы могли зачать как можно больше детей. \n" \
-			+ "Maximum of the egg cells you release during each ovulation phase is increased even further and fertility is improved by 20%"
+			+ "Максимальное количество яйцеклеток, выбрасываемых за одну фазу овуляции, увеличивается еще больше, а фертильность повышается на 20%"
 	
 func getRequiredPerks():
 	return [Perk.FertilityBetterOvulation]

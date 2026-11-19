@@ -34,7 +34,7 @@ func _run():
 			else:
 				var impossibleReasonText:String = thePlayerSlaveryDef.getImpossibleReason()
 				if(impossibleReasonText == ""):
-					impossibleReasonText = "Impossible in current state"
+					impossibleReasonText = "В текущем состоянии невозможно"
 				
 				addDisabledButton(thePlayerSlaveryDef.getVisibleName(), "["+impossibleReasonText+"] "+thePlayerSlaveryDef.getVisibleDesc())
 

@@ -10,7 +10,7 @@ func alwaysSavedWhenStruggledOutOf():
 	return true
 
 func getVisibleLevel(_isBlind = false):
-	return "999, impossible to remove"
+	return "999, невозможно снять"
 
 func saveData():
 	var data = {}

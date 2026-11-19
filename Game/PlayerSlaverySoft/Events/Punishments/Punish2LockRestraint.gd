@@ -61,19 +61,19 @@ func getPossibleLocks() -> Array:
 
 func getLockNameDesc(_lock:String) -> Array:
 	if(_lock == "ringgag"):
-		return ["a Ring-gag", "Agree to be gagged"]
+		return ["a Ring-gag", "Согласиться на кляп"]
 	if(_lock == "mittens"):
-		return ["Mittens", "Agree to wear bondage mittens"]
+		return ["Mittens", "Согласиться надеть бондажные варежки"]
 	if(_lock == "arms"):
-		return ["Wrist cuffs", "Agree to have your arms cuffed"]
+		return ["Наручники на запястья", "Согласиться на наручники"]
 	if(_lock == "legs"):
-		return ["Ankle cuffs", "Agree to have your legs cuffed"]
+		return ["Кандалы на лодыжки", "Согласиться на кандалы"]
 	if(_lock == "cage"):
-		return ["a Chastity cage", "Agree to have your cock caged"]
+		return ["девственная клетка", "Согласиться на клетку для члена"]
 	if(_lock == "cageflat"):
-		return ["a Flat chastity cage", "Agree to have your cock caged with a flat cage"]
+		return ["плоская девственная клетка", "Согласиться на плоскую клетку целомудрия"]
 	
-	return ["ERROR?", "Something went wrong"]
+	return ["ОШИБКА?", "Что-то пошло не так"]
 
 func start():
 	if(pickedLock in ["cage", "cageflat"]):

@@ -17,11 +17,11 @@ func getPillName() -> String:
 	
 func getUnlockData() -> Dictionary:
 	return {
-		eliza = "Interesting. It appears to contain a blend of phytoestrogens and cold-activated enzymes that target adipose tissue in the breast area. When ingested, it should trigger a localized reduction in fat cells. This pill will probably make your breasts smaller. Huh.. I'm gonna call it.. "+getPillName()+". I think that name will fit it nicely.",
+		eliza = "Интересно. Похоже, в составе смесь фитоэстрогенов и ферментов, активируемых холодом, которые воздействуют на жировую ткань в области груди. При приеме они должны вызвать локальное уменьшение жировых клеток. Эта таблетка, скорее всего, уменьшит твою грудь. Хм... Назову-ка я её... "+getPillName()+"... Думаю, это название ему отлично подойдет.",
 	}
 
 func getPillDatabaseDesc() -> String:
-	return "This drug will decrease the size of breasts. It does so one size at a time until a flat chest has been achieved or until the last stage of the transformation has been reached. It will [b]not[/b] turn your breasts into pecs.\n\nThe first stage will happen after a few minutes. After that, the next ones will happen roughly every 30 hours. This could be accelerated by using the QuickShift drug or by stimulating the test subject’s breasts while their nipples are [b]sore[/b].\n\nThis drug will have from 3 to 5 stages. This could be increased using advanced equipment to up to 10 stages."
+	return "Этот препарат уменьшает размер груди. Он делает это по одному размеру за раз, пока грудь не станет плоской или пока не будет достигнута последняя стадия трансформации. Он [b]не[/b] превратит твою грудь в мужские грудные мышцы.\n\nПервая стадия наступит через несколько минут. После этого последующие будут происходить примерно каждые 30 часов. Процесс можно ускорить с помощью препарата QuickShift или путем стимуляции груди подопытной, когда её соски [b]чувствительны[/b].\n\nУ этого препарата будет от 3 до 5 стадий. С помощью продвинутого оборудования количество стадий можно увеличить до 10."
 
 func getTFCheckTags() -> Dictionary:
 	return {

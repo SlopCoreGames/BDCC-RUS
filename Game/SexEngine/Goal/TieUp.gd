@@ -61,16 +61,16 @@ func canBegFor() -> bool:
 	return true
 
 func getBegName() -> String:
-	return "Tie me up"
+	return "Свяжи меня"
 
 func getBegCategory() -> Array:
 	return BegCategoryExotic
 
 func getBegDesc() -> String:
-	return "Beg the dom to make you wear bondage gear!"
+	return "Умоляй доминанта надеть на тебя бондаж!"
 
 func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
-	return "{sub.You} {sub.youVerb('beg')} {dom.you} to make {sub.youHim} wear bondage gear."
+	return "{sub.You} {sub.youVerb('beg')} {dom.you}, чтобы заставить {sub.youHim} надеть бондаж."
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([

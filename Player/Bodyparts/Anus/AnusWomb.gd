@@ -11,10 +11,10 @@ func hasWomb():
 	return true
 
 func getCharacterCreatorName():
-	return "Anus (with womb)"
+	return "Анус (с маткой)"
 
 func getCharacterCreatorDesc():
-	return "Unique kind of anus that also has a connection to the womb. By picking this you will be able to get pregnant from having anal sex"
+	return "Уникальный вид ануса, имеющий связь с маткой. Выбрав этот вариант, вы сможете забеременеть при анальном сексе"
 
 func getTraits():
 	return {
@@ -22,7 +22,7 @@ func getTraits():
 	}
 
 func getTransformGrowMessage(_context:Dictionary) -> String:
-	return .getTransformGrowMessage(_context)+" This one is special too.. in some way.."
+	return .getTransformGrowMessage(_context)+" Этот тоже особенный... в каком-то смысле..."
 
 func getTransformMorphMessage(_context:Dictionary) -> String:
-	return .getTransformMorphMessage(_context)+" This one is special too.. in some way.."
+	return .getTransformMorphMessage(_context)+" Этот тоже особенный... в каком-то смысле..."

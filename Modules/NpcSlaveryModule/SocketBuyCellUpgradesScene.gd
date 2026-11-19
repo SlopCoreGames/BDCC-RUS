@@ -38,7 +38,7 @@ func _run():
 			sayn("Установить сибиан в камере.")
 		saynn("Цена: "+((str(sybianPrice)+" credits") if !hasSybian else "Куплено!")+"")
 		if(!hasSybian):
-			addButtonWithChecks("Сибиан", "Оплатить установку сибиана в вашей камере", "pay_upgrade", ["NpcSlaveryModule.hasSybian", sybianPrice, "Sybian machine has been installed in your cell"], [[ButtonChecks.HasCredits, sybianPrice]])
+			addButtonWithChecks("Сибиан", "Оплатить установку сибиана в вашей камере", "pay_upgrade", ["NpcSlaveryModule.hasSybian", sybianPrice, "В вашей камере установлена машина Сибиан"], [[ButtonChecks.HasCredits, sybianPrice]])
 	
 		var hasHorse = getFlag("NpcSlaveryModule.hasWoodenHorse", false)
 		var horsePrice = 30
@@ -49,7 +49,7 @@ func _run():
 			sayn("Установить «деревянную лошадку» в своей камере. Просто так, без особой причины.")
 		saynn("Цена: "+((str(horsePrice)+" credits") if !hasHorse else "Куплено!")+"")
 		if(!hasHorse):
-			addButtonWithChecks("Деревянная лошадь", "Оплатить установку «деревянной лошадки» в вашей камере", "pay_upgrade", ["NpcSlaveryModule.hasWoodenHorse", horsePrice, "Wooden horse has been installed in your cell"], [[ButtonChecks.HasCredits, horsePrice]])
+			addButtonWithChecks("Деревянная лошадь", "Оплатить установку «деревянной лошадки» в вашей камере", "pay_upgrade", ["NpcSlaveryModule.hasWoodenHorse", horsePrice, "В вашей камере установлен деревянный конь"], [[ButtonChecks.HasCredits, horsePrice]])
 	
 	
 	if(state == "do_cell_expansion"):

@@ -9,7 +9,7 @@ func getName():
 	return "Базовый замок"
 
 func getUnlockDescription():
-	return "You shouldn't see this"
+	return "Тебе не стоит этого видеть"
 
 func onLocked(_contex):
 	pass

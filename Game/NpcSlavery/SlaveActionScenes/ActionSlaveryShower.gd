@@ -58,7 +58,7 @@ func _run():
 		var npcSlavery:NpcSlave = npc.getNpcSlavery()
 		playAnimation(StageScene.ShoweringDuo, "shower", {pc="pc", npc=npcID, bodyState={naked=true}, npcBodyState={naked=true}})
 
-		var subReaction = "Okay."
+		var subReaction = "Хорошо."
 		
 		if(npcSlavery.isActivelyResisting()):
 			subReaction = RNG.pick([

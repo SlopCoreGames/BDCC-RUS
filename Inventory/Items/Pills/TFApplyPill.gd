@@ -15,7 +15,7 @@ func canUseInCombat():
 func useInCombat(_attacker, _receiver):
 	removeXOrDestroy(1)
 	_attacker.makeAllTransformationsPermanent()
-	return "You swallow the MorphIn pill!"
+	return "Вы проглатываете таблетку Морфина!"
 
 func getPossibleActions():
 	return [
@@ -69,7 +69,7 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	
 	return {
 		"name": "Морфинг",
-		"usedName": "a [b][color=#"+Color.cyan.to_html()+"]MorphIn[/color][/b] pill",
+		"usedName": "a [b][color=#"+Color.cyan.to_html()+"]Таблетка Морфина[/color][/b]",
 		"desc": getDescription(),
 		"scoreOnSub": 0.1*sqrt(float(sub.getTFTotalStagesSum())) if OPTIONS.isContentEnabled(ContentType.ForcedPermanentTFs) && sub.hasActiveTransformations() else 0.0,
 		"scoreOnSelf": 0.0,

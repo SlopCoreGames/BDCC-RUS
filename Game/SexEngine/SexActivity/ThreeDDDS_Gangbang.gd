@@ -144,7 +144,7 @@ func sex_processTurn():
 	stimulateSex(DOM_1, SUB_0, S_ANUS, I_NORMAL)
 	stimulateSex(DOM_2, SUB_0, S_MOUTH, I_NORMAL)
 	
-	doProcessFuck(DOM_0, SUB_0, S_VAGINA, " during a whole-blown gangbang")
+	doProcessFuck(DOM_0, SUB_0, S_VAGINA, " во время полноценного гангбэнга")
 	doProcessFuck(DOM_1, SUB_0, S_ANUS)
 	doProcessFuck(DOM_2, SUB_0, S_MOUTH)
 	

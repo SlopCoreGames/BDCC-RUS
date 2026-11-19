@@ -19,7 +19,7 @@ var requestTimer:float = 0.0
 
 func getInfo() -> Array:
 	return [
-		"This backend works by sending requests to the XToys.App webhook"
+		"Этот бэкенд работает путем отправки запросов на вебхук XToys.App"
 	] + lastErrors
 
 func _init():

@@ -35,7 +35,7 @@ func getTaskString():
 	return "Bodywritings: "+getProgressString()
 
 func getTaskHint(_isSlaveLevelup):
-	return "Draw dirty things on them!"
+	return "Рисуй на них всякую грязь!"
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [

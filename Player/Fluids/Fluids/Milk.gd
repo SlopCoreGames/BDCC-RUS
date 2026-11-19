@@ -8,7 +8,7 @@ func getVisibleName():
 
 func getMessyDescription(_pc, _amount):
 	if(_amount >= 500.0):
-		return "You're drenched in milk! Moo!"
+		return "Ты весь промок в молоке! Му-у!"
 	
 	return null
 
@@ -35,7 +35,7 @@ func onSwallow(_pc, _amount):
 	
 	if(toHeal > 0):
 		_pc.addPain(-toHeal)
-		return "Drinking milk relieved "+_pc.getName()+" of "+DamageType.getDamageColoredString(DamageType.Physical, toHeal)+"."
+		return "Питье молока принесло облегчение "+_pc.getName()+" of "+DamageType.getDamageColoredString(DamageType.Physical, toHeal)+"."
 	
 	return null
 

@@ -4,7 +4,7 @@ func _init():
 	id = "FetishSexTop"
 
 func getButtonDesc() -> String:
-	return "Tell the bidder's about the slave's topping skills.\n\n[b]Might[/b] reveal 1 personality preference of each bidder."
+	return "Расскажите участникам аукциона о навыках рабыни в роли «топа».\n\n[b]Возможно[/b] раскроет по одной черте характера каждого участника."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
@@ -23,9 +23,9 @@ func getTraits() -> Dictionary:
 
 func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
-		'They’ll be fun to work with.',
-		'Just what I need.',
-		'Strong and assertive.',
-		'A perfect top!',
-		'They’ll do just fine.',
+		'С ними будет весело поработать.',
+		'Как раз то, что мне нужно.',
+		'Сильные и напористые.',
+		'Идеальный топ!',
+		'С ними будет вполне сносно.',
 	])

@@ -33,9 +33,9 @@ func getRewardString() -> String:
 
 func getDeadlineString() -> String:
 	if(days <= 1):
-		return "Last day before task expires"
+		return "Последний день до истечения срока выполнения"
 	else:
-		return "Expires in "+str(days)+" days"
+		return "Истекает через "+str(days)+" days"
 
 func setTaskDataFinal(_data:Dictionary):
 	if(_data.has("credits")):
@@ -77,11 +77,11 @@ static func getFloorName(floorID:String) -> String:
 	if(floorID == "Cellblock"):
 		return "Cellblock"
 	if(floorID == "MainHall"):
-		return "Main prison floor"
+		return "Главный этаж тюрьмы"
 	if(floorID == "Medical"):
-		return "Medical wing"
+		return "Медблок"
 	if(floorID == "MiningFloor"):
-		return "Mining floor"
+		return "Шахтерский этаж"
 	
 	return "Unknown"
 
@@ -96,7 +96,7 @@ func getCharName(theCharID:String) -> String:
 static func getCharDescription(theCharID:String) -> String:
 	var character:BaseCharacter = GlobalRegistry.getCharacter(theCharID)
 	if(character == null):
-		return "ERROR, NO CHARACTER FOUND WITH ID "+str(theCharID)
+		return "ОШИБКА: ПЕРСОНАЖ С ТАКИМ ID НЕ НАЙДЕН "+str(theCharID)
 	
 	var desc:String = ""
 	desc = "Occupation: "+CharacterType.getName(character.getCharType())

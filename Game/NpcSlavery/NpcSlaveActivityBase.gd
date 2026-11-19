@@ -29,7 +29,7 @@ func shouldTriggerEventsOnTalk():
 	return !preventsNormalInteractions()
 
 func getActivityText():
-	return "{npc.name} is doing something!"
+	return "{npc.name} что-то делает!"
 
 func getInteractActions():
 	return [

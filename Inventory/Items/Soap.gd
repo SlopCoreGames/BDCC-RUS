@@ -19,7 +19,7 @@ func useInCombat(_attacker, _receiver):
 	_attacker.clearBodywritings(true, true)
 	_attacker.afterTakingAShower()
 	removeXOrDestroy(1)
-	return _attacker.getName() + " applied the bio-scrub soap!"
+	return _attacker.getName() + " использовал био-скраб мыло!"
 
 func getPossibleActions():
 	if(GM.pc.getLocation() in ["main_shower1", "main_shower2"]): #Tshhh

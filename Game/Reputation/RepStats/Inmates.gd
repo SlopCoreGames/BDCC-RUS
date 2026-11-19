@@ -18,7 +18,7 @@ func getTextForLevel(_level:int, _rep):
 	if(_level == 0):
 		return "Unknown"
 	if(_level == 1):
-		return "Fresh blood"
+		return "Свежая кровь"
 	if(_level == 2):
 		return "Known"
 	if(_level == 3):
@@ -40,8 +40,8 @@ func getEffectsInfoForLevel(_level:int, _rep) -> Array:
 		return []
 	if(_level <= 2):
 		return [
-			"Slightly easier to make friends with inmates.",
+			"С заключенными становится чуть проще заводить дружеские отношения.",
 		]
 	return [
-		"Easier to make friends with inmates.",
+		"С заключенными становится проще заводить дружеские отношения.",
 	]

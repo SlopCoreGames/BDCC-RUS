@@ -26,7 +26,7 @@ func useInCombat(_attacker, _receiver):
 	_attacker.addPain(-30)
 	_attacker.addStamina(30)
 	removeXOrDestroy(1)
-	return _attacker.getName() + " ate an apple"
+	return _attacker.getName() + " съел яблоко"
 
 func getPossibleActions():
 	return [

@@ -23,13 +23,13 @@ func canBegFor() -> bool:
 	return true
 
 func getBegName() -> String:
-	return "Milk me!"
+	return "Дои меня!"
 
 func getBegCategory() -> Array:
 	return BegCategoryExotic
 
 func getBegDesc() -> String:
-	return "Beg the dom to milk your breasts with a breast pump!"
+	return "Умоляй домина, чтобы он подоил твои груди с помощью молокоотсоса!"
 
 func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 	var _isBusy:bool = _sexEngine.hasTag(_subInfo.charID, SexActivityTag.HavingSex)
@@ -39,7 +39,7 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 	if(!_isBusy && !_hasBlockedArms):
 		return "{sub.You} {sub.youVerb('squeeze')} {sub.yourHis} {sub.breasts} for {dom.you}."
 	
-	return "{sub.You} {sub.youVerb('beg')} {dom.you} to milk {sub.yourHis} {sub.breasts}."
+	return "{sub.You} {sub.youVerb('beg')} {dom.you}, чтобы подоить {sub.yourHis} {sub.breasts}."
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([

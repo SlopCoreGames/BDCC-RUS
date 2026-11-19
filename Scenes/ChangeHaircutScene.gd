@@ -36,7 +36,7 @@ func _run():
 			var bodypart:Bodypart = GlobalRegistry.getBodypartRef(bodypartID)
 			var theHaircutIsActive:bool = (bodypart.id == activeHaircutBodypartId)
 			var theHaircutName:String = (("["+bodypart.getName()+"]") if theHaircutIsActive else bodypart.getName())
-			var theHaircutDesc:String = "This is your current haircut" if(theHaircutIsActive) else "Change your haircut to this one"
+			var theHaircutDesc:String = "Это твоя нынешняя стрижка" if(theHaircutIsActive) else "Сделать такую стрижку"
 			
 			addButton(theHaircutName, theHaircutDesc, "changehair", [bodypartID])
 

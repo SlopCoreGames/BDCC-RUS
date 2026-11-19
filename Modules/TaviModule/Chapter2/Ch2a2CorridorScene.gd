@@ -17,7 +17,7 @@ func _run():
 
 		saynn("Может, Тави что-нибудь придумает. Пора идти.")
 
-		addButton("Уйти?", "Смотреть, что будет дальше", "leave?")
+		addButton("Уйти?", "Смотреть, что будет дальше", "уйти?")
 
 	if(state == "leave?"):
 		addCharacter("alexrynard")
@@ -661,7 +661,7 @@ func _run():
 
 		saynn("Добро пожаловать в "+str(GM.main.getDays())+" твоего срока")
 
-		addButton("Время?", "Произойдет ли что-то дальше?", "time?")
+		addButton("Время?", "Произойдет ли что-то дальше?", "время?")
 
 	if(state == "time?"):
 		addCharacter("alexrynard")

@@ -15,7 +15,7 @@ func getPillName() -> String:
 
 func getUnlockData() -> Dictionary:
 	return {
-		eliza = "Interesting! This pill seems to be infused with a combination of androgenic compounds and tissue-stimulating agents that could promote the development of penile tissue. When taken, it will probably trigger the growth of a penis in individuals who don’t have one. I think I’ll call it.. 'DiRecto.' It’s quite fitting, don’t you think?",
+		eliza = "Интересно! Похоже, эта таблетка насыщена смесью андрогенных соединений и стимуляторов тканей, которые могут способствовать развитию пениса. При приеме она, вероятно, спровоцирует рост члена у тех, у кого его нет. Думаю, я назову её... «DiRecto». Весьма подходящее название, не находите?",
 		tryOptions = [
 			{
 				name = "Заставить Элизу сожрать это",
@@ -26,7 +26,7 @@ func getUnlockData() -> Dictionary:
 	}
 	
 func getPillDatabaseDesc() -> String:
-	return "This drug will grow you a penis of your species. It won’t do anything if you already have a penis. If you are a hybrid, it will choose a penis of either species. This drug will stop when the size of your new penis reaches at least 15cm.\n\nThe first stage will happen after a few minutes. After that, the next ones will happen roughly every 20 minutes. This could be accelerated only by using the QuickShift drug.\n\nThis drug doesn’t have a set amount of stages. It will reach its final stage when there is nothing left to transform."
+	return "Этот препарат вырастит вам пенис вашего вида. Если он у вас уже есть, ничего не изменится. Если вы гибрид, препарат выберет пенис одного из видов. Действие лекарства прекратится, когда размер вашего нового члена достигнет как минимум 15 см.\n\nПервая стадия наступит через несколько минут. После этого последующие будут происходить примерно каждые 20 минут. Ускорить процесс можно только с помощью препарата QuickShift.\n\nУ этого препарата нет фиксированного количества стадий. Он достигнет финальной стадии, когда трансформировать будет больше нечего."
 
 func getTFCheckTags() -> Dictionary:
 	return {

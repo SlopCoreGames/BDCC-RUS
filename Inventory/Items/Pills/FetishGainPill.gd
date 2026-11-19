@@ -14,7 +14,7 @@ func canUseInCombat():
 
 func useInCombat(_attacker, _receiver):
 	removeXOrDestroy(1)
-	return _attacker.getName() + " took the pill"
+	return _attacker.getName() + " принял таблетку"
 
 func getPossibleActions():
 	return [
@@ -69,7 +69,7 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	
 	return {
 		"name": "Таблетка фетиша",
-		"usedName": "a fetish pill",
+		"usedName": "таблетка фетиша",
 		"desc": "Ускоряет получение или потерю фетишей.",
 		"scoreOnSub": 0.0,
 		"scoreOnSelf": 0.0,

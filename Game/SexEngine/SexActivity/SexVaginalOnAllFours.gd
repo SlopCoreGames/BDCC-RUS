@@ -55,41 +55,41 @@ func isStocksSex() -> bool:
 
 func getPoseDescriptor() -> String:
 	if(getSexType() == SexType.StocksSex):
-		return " in stocks"
+		return " в наличии"
 	if(getSexType() == SexType.SlutwallSex):
-		return " in the slutwall"
+		return " у стенки для шлюх"
 	if(getSexType() == SexType.BitchsuitSex):
-		return " on all fours"
+		return " на четвереньках"
 	if(currentPose == POSE_ALLFOURS):
-		return " on all fours"
+		return " на четвереньках"
 	if(currentPose == POSE_FULLNELSON):
-		return " in a full nelson pose"
+		return " в позе «полный nelson»"
 	if(currentPose == POSE_MISSONARY):
-		return " in a missionary pose"
+		return " в миссионерской позе"
 	if(currentPose == POSE_STANDING):
 		return " standing"
 	if(currentPose == POSE_CHOKEFUCK):
-		return " while also choking"
+		return " одновременно удушая"
 	if(currentPose == POSE_CHOKESEX):
-		return " while also choking"
+		return " одновременно удушая"
 	if(currentPose == POSE_BEHIND):
-		return " in a behind pose"
+		return " сзади"
 	if(currentPose == POSE_MATINGPRESS):
-		return " in a mating press"
+		return " в позе спаривания"
 	if(currentPose == POSE_LOWDOGGY):
-		return " on all fours"
+		return " на четвереньках"
 	if(currentPose == POSE_LEGRAISED):
-		return " with one leg raised"
+		return " с одной поднятой ногой"
 	if(currentPose == POSE_AGAINSTWALL):
 		return " against a wall"
 	if(currentPose == POSE_PINNEDWALL):
-		return " pinned against a wall"
+		return " прижавшись к стене"
 	if(currentPose == POSE_WALLPRESS):
-		return " pinned against a wall"
+		return " прижавшись к стене"
 	if(currentPose == POSE_SEARCH):
-		return " pinned against a wall"
+		return " прижавшись к стене"
 	if(currentPose == POSE_SUSPENDED):
-		return " while suspended above the floor"
+		return " когда она висит над полом"
 	return " [color=red]FIX DESCRIPTOR[/color]"
 
 const POSE_DEFAULT = "POSE_DEFAULT"
@@ -113,20 +113,20 @@ const POSE_SEARCH = "POSE_SEARCH"
 
 const PoseToName = {
 	POSE_DEFAULT: "Default",
-	POSE_ALLFOURS: "All Fours",
+	POSE_ALLFOURS: "На четвереньках",
 	POSE_STANDING: "Standing",
 	POSE_MISSONARY: "Missonary",
-	POSE_FULLNELSON: "Full Nelson",
-	POSE_CHOKEFUCK: "Choke fuck",
-	POSE_CHOKESEX: "Choke missonary",
+	POSE_FULLNELSON: "Полный Нельсон",
+	POSE_CHOKEFUCK: "Фаллоимитация с удушением",
+	POSE_CHOKESEX: "Миссионерская с удушением",
 	POSE_BEHIND: "Behind",
-	POSE_MATINGPRESS: "Mating Press",
-	POSE_LOWDOGGY: "Low Doggy",
+	POSE_MATINGPRESS: "Прессинг при спаривании",
+	POSE_LOWDOGGY: "Низкий догги-стайл",
 	POSE_SUSPENDED: "Suspended",
-	POSE_LEGRAISED: "Raised leg",
+	POSE_LEGRAISED: "С поднятой ногой",
 	POSE_AGAINSTWALL: "Against a wall",
-	POSE_PINNEDWALL: "Pinned into wall",
-	POSE_WALLPRESS: "Wall Press",
+	POSE_PINNEDWALL: "Прижатая к стене",
+	POSE_WALLPRESS: "Прижатие к стене",
 	POSE_SEARCH: "Search",
 }
 const PoseToAnimName = {
@@ -262,7 +262,7 @@ func getUsedBodypartName() -> String:
 func getStartTextForPose(thePose) -> String:
 	var throughClothing = "."
 	if(!hasBodypartUncovered(SUB_0, usedBodypart)):
-		throughClothing = " through {sub.yourHis} clothing."
+		throughClothing = " сквозь {sub.yourHis} одежду."
 	
 	var text:String = ""
 	if(thePose == POSE_ALLFOURS):
@@ -497,7 +497,7 @@ func getActions(_indx:int):
 			var poseName = "error"
 			if(PoseToName.has(pose)):
 				poseName = PoseToName[pose]
-			addAction("switchpose", 0.0 if switchedPoseOnce else 0.01, poseName, "Сменить позу", {A_CATEGORY: ["Switch pose"], A_ARGS: [pose]})
+			addAction("switchpose", 0.0 if switchedPoseOnce else 0.01, poseName, "Сменить позу", {A_CATEGORY: ["Сменить позу"], A_ARGS: [pose]})
 		
 	if(_indx == SUB_0):
 		if(state == ""):
@@ -576,7 +576,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 			var strapon = getDom().getWornStrapon()
 			if(strapon.getFluids() != null && !strapon.getFluids().isEmpty()):
 				getSub().cummedInBodypartByAdvanced(usedBodypart, getDomID(), {}, FluidSource.Strapon)
-				straponText="{dom.Your} strapon gets squeezed by {sub.your} "+RNG.pick(usedBodypartNames)+" enough for it to suddenly [b]release its contents inside {sub.youHim}[/b]!"
+				straponText="{dom.Your} страпон сжимается {sub.your} "+RNG.pick(usedBodypartNames)+" достаточно, чтобы он внезапно [b]изверг всё содержимое внутрь {sub.youHim}[/b]!"
 			
 		getSub().cumOnFloor(getDomID())
 		getSubInfo().cum()

@@ -21,7 +21,7 @@ func preventsNormalInteractions():
 	return true
 
 func getActivityText():
-	return "{npc.name} is currently stuck in stocks so {npc.he} {npc.isAre} not here."
+	return "{npc.name} сейчас заперта в колодках, так что {npc.he} {npc.isAre} здесь нет."
 
 func onPawnDeleted(_pawn):
 	stopActivity()

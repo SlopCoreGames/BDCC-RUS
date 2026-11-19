@@ -19,25 +19,25 @@ const possibleEndLocations = [
 	]
 	
 const descriptionsPolite = {
-	"eng_workshop": "I've left my card in one of the workshop machines yesterday and if the cameras spot me the whole time will get counted against my allowance! Can you fetch it for me?",
-	"med_lobbymain": "I need to pick up some meds but Quinn creeps me out. Can you get them for me?", 
-	"mining_shafts_entering": "I've forgotten to pick up my credits from the latest shift in the mines. Can you pick them up for me?", 
-	"gym_weights": "I've left my towel in the gym. Fetch it for me, please?",
-	"yard_waterfall": "I've dropped a trinket of mine somewhere near the waterfall in the yard. Find it for me, please?",
-	"main_laundry": "Can you pick up my laundry? It should be done drying by now.",
-	"main_bench4": "I've lost a trinket of mine somewhere in the main hall. Could you find it for me, please?",
-	"hall_canteen": "Bring me my next lunch. I have a deal with the cafeteria staff, they'll bag it up for you."
+	"eng_workshop": "Вчера я оставила свою карту в одном из станков в мастерской, и если камеры меня заметят, мне вычтут всё из пайка! Можешь её достать для меня?",
+	"med_lobbymain": "Мне нужно забрать лекарства, но от Куинна мурашки по коже. Можешь сходить за ними вместо меня?", 
+	"mining_shafts_entering": "Я забыла забрать свои кредиты за последнюю смену в шахтах. Можешь забрать их для меня?", 
+	"gym_weights": "Я забыла полотенце в спортзале. Принесешь его мне, пожалуйста?",
+	"yard_waterfall": "Я обронила свою безделушку где-то возле водопада во дворе. Найди её для меня, пожалуйста?",
+	"main_laundry": "Можешь забрать моё бельё? Оно уже должно было высохнуть.",
+	"main_bench4": "Я потеряла свою безделушку где-то в главном холле. Можешь найти её для меня, пожалуйста?",
+	"hall_canteen": "Принеси мне мой следующий обед. У меня уговор с персоналом столовой, они тебе его упакуют."
 }
 
 const descriptionsDemanding = {
-	"eng_workshop": "I'm logged in one of the workshop machines. Go take care of it.",
-	"med_lobbymain": "I need some meds picked up.", 
-	"mining_shafts_entering": "Pick up my creds from the mines. Don't even think about nicking any.", 
-	"gym_weights": "Go get my towel from the gym.",
-	"yard_waterfall": "Left a thing of mine near that waterfall in the yard. Bring it to me.",
-	"main_laundry": "Pick up my laundry. I want it spotless.",
-	"main_bench4": "Some gear of mine went missing in the main hall. Find it.",
-	"hall_canteen": "Bring me my next lunch. The cafeteria staff will bag it up."
+	"eng_workshop": "Я залогинилась в одном из станков в мастерской. Сходи и разберись с этим.",
+	"med_lobbymain": "Мне нужно, чтобы кто-нибудь забрал мои лекарства.", 
+	"mining_shafts_entering": "Забери мои кредиты с шахт. И даже не вздумай стащить хоть одну монетку.", 
+	"gym_weights": "Сгоняй в спортзал, принеси моё полотенце.",
+	"yard_waterfall": "Я оставил одну вещь у водопада во дворе. Принеси её мне.",
+	"main_laundry": "Забери моё бельё. Хочу, чтобы всё было идеально чистым.",
+	"main_bench4": "В главном холле пропала моя шмотка. Найди её.",
+	"hall_canteen": "Принеси мне мой следующий обед. Персонал в столовой всё упакует."
 }
 	
 func _init():
@@ -126,7 +126,7 @@ func _run():
 				saynn("[say=npc]"+descriptionsDemanding[endLocation]+"[/say]")
 		
 		saynn("Поддавшись порыву повиноваться, ты...")
-		HypnokinkUtil.addUnresistableHypnoButtons(self, "moving_towards", ["Head out", "Get moving", "Fetch"])
+		HypnokinkUtil.addUnresistableHypnoButtons(self, "moving_towards", ["Выйти", "Погнали", "Fetch"])
 	
 	if(state == "moving_towards" || state == "moving_back"):
 		removeCharacter(npcID)

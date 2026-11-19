@@ -140,10 +140,10 @@ func getMirriGreeting() -> String:
 		return customGreet
 	
 	if(getMirriAffection() >= 1.0):
-		return "Hey love~."
+		return "Привет, любовь моя~."
 	if(getMirriAffection() >= 0.5):
-		return "What's up, softie?"
-	return "What's up, AlphaCorp slave?"
+		return "Как оно, милашка?"
+	return "Ну что, раб АльфаКорпа?"
 
 func getLuxeGreeting() -> String:
 	var customGreet:String = getFlag("SlaveAuctionModule.customLuxeGreeting", "")
@@ -151,17 +151,17 @@ func getLuxeGreeting() -> String:
 		setFlag("SlaveAuctionModule.customLuxeGreeting", "")
 		return customGreet
 	
-	return "Hm."
+	return "Хм."
 
 func getRepInfoString() -> String:
 	var theLines:Array = []
 	
-	theLines.append("Current reputation level: "+str(getRepLevel()))
+	theLines.append("Текущий уровень репутации: "+str(getRepLevel()))
 	if(getRepLevel() < 6):
-		theLines.append(" "+str(getRepCredits())+" / "+str(getCreditsForRepLevel(getRepLevel()+1))+" credits required for the next rank.")
-	theLines.append("Total amount of credits earned for Blacktail: "+str(getTotalRepCredits())+" credits.")
+		theLines.append(" "+str(getRepCredits())+" / "+str(getCreditsForRepLevel(getRepLevel()+1))+" кредитов до следующего ранга.")
+	theLines.append("Всего заработано кредитов для Блэктейл: "+str(getTotalRepCredits())+" credits.")
 	if(isReadyToAdvanceRepLevel()):
-		theLines.append("You are ready to advance the reputation level!")
+		theLines.append("Ты готов повысить уровень репутации!")
 	
 	return Util.join(theLines, "\n")
 

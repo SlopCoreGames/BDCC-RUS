@@ -75,19 +75,19 @@ func getVisibleName(_topicID):
 
 func getChatName(_topicID) -> String:
 	if(_topicID == InterestTopic.NoVagina):
-		return "no pussies"
+		return "без кисок"
 	if(_topicID == InterestTopic.HasVaginaAndCock):
 		return "herms"
 	if(_topicID == InterestTopic.BigCock):
-		return "huge cocks"
+		return "огромные члены"
 	if(_topicID == InterestTopic.AverageCock):
-		return "average cocks"
+		return "средние члены"
 	if(_topicID == InterestTopic.SmallCock):
-		return "small cocks"
+		return "маленькие члены"
 	if(_topicID == InterestTopic.NoCock):
-		return "no cocks"
+		return "без членов"
 	if(_topicID == InterestTopic.HasCockOnly):
-		return "just cocks"
+		return "одни члены"
 	
 	return .getChatName(_topicID)
 

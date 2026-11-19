@@ -1,10 +1,10 @@
 extends Character
 class_name DynamicCharacter
 
-var npcName = "BAD NAME"
+var npcName = "ПЛОХОЕ ИМЯ"
 var npcSpecies:Array = ["canine"]
 var npcGeneratedGender = NpcGender.Male
-var npcSmallDescription = "One of the generated characters"
+var npcSmallDescription = "Один из сгенерированных персонажей"
 var npcThickness = 50
 var npcFeminity = 0
 var npcDefaultEquipment = []

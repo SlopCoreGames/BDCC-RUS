@@ -10,7 +10,7 @@ func start(_pawns:Dictionary, _args:Dictionary):
 	setCurrentRole(role_main)
 
 func getOutputText() -> String:
-	return "{main.name} is recovering after a lost fight."
+	return "{main.name} восстанавливается после проигранного боя."
 
 func getActions() -> Array:
 	if(getCurrentPawn().getExhaustion() > 0.0):
@@ -46,7 +46,7 @@ func getAnimData() -> Array:
 
 func getPreviewLineForRole(_role:String) -> String:
 	if(_role == role_main):
-		return "{main.name} is recovering.."
+		return "{main.name} восстанавливается..."
 	return .getPreviewLineForRole(_role)
 
 func getActivityIconForRole(_role:String):

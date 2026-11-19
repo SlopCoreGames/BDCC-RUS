@@ -21,7 +21,7 @@ func run(_triggerID, _args):
 	if(!getFlag("SocketModule.socketIntroduced")):
 		return
 	
-	if(checkCharacterBusy("SocketBusy", "Seems like Socket is not here", "Socket")):
+	if(checkCharacterBusy("SocketBusy", "Похоже, Сокета здесь нет", "Socket")):
 		return
 	
 	addButtonUnlessLate("Гнездо", "Поболтать с феннеком", "talk")

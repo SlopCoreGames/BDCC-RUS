@@ -180,32 +180,32 @@ func loadData(_data:Dictionary):
 const UPGRADES = [
 	{
 		earned = 500,
-		message = "The owners bought some breast and penis pumps!",
+		message = "Владельцы купили несколько молокоотсосов для груди и пенисов!",
 		creditsMult = 5.0,
 	},
 	{
 		earned = 3000,
-		message = "The owners have replaced the grass in the garden with tastier one!",
+		message = "Владельцы заменили траву в саду на более вкусную!",
 		creditsMult = 10.0,
 	},
 	{
 		earned = 10000,
-		message = "The owners have installed a milking stall!",
+		message = "Владельцы установили стойло для дойки!",
 		creditsMult = 20.0,
 	},
 	{
 		earned = 25000,
-		message = "The owners have bought some fuck-machines!",
+		message = "Владельцы купили несколько секс-машин!",
 		creditsMult = 30.0,
 	},
 	{
 		earned = 50000,
-		message = "The owners have made the cafe prettier and also gave you better cells!",
+		message = "Владельцы сделали кафе красивее и выделили вам камеры получше!",
 		creditsMult = 100.0,
 	},
 	{
 		earned = 100000,
-		message = "The owners have installed an advanced milking table!",
+		message = "Владельцы установили продвинутый доильный стол!",
 		creditsMult = 200.0,
 	},
 ]
@@ -217,90 +217,90 @@ const UPGRADE_CELLS = 4
 const UPGRADE_MILKINGTABLE = 5
 
 const MILKA_LINES = [
-	"Oh, hai. There is more of us here now, neat. Name is Milka!",
-	"I'm a cow here. I like making new friends!",
-	"I also make a lot of milk.. Well, I'm trying to.",
-	"If you ever feel sad, talk with me! I like helping!",
-	"I like being milked. Feels good! Moo!",
+	"О, привет. Нас тут теперь побольше, круто. Меня зовут Милка!",
+	"Я здесь коровка. Обожаю заводить новых друзей!",
+	"А еще я даю много молока... Ну, я стараюсь.",
+	"Если станет грустно — поболтай со мной! Я люблю помогать!",
+	"Мне нравится, когда меня доят. Это так приятно! Му-у!",
 	"Moo-moo-moo~.",
-	"People say my milk tastes like strawberries~.",
-	"My breasts aren't that big. I'm sure they will grow!",
-	"The bull over there is a bit grumpy. I think I know why!",
-	"I have many nipples.. but most of them don't work. Aw.",
-	"I don't like overthinking.. Makes my head buzz-buzz.",
-	"Life is getting better actually! The funny marks don't hurt as much.",
-	"These owners gave me my name.. Milka. Fits me, doesn't it? I just need bigger titties!",
-	"Do you have dreams? Sometimes I dream of soft grass and sunshine. Moo~.",
-	"The cafe doesn't seem to be doing well.. reminds me of my home..",
-	"I can tell them to milk my breasts twice as much. Then they will go easier on you. Just let me know!",
-	"When I'm scared, I just count the lines. It helps!",
-	"I would love to help that bull.. Then he would breed me maybe! Breeding is in my DNA~.",
-	"What's my real name? Uh.. Um. Milka? I'm just a cow.. Silvery grass, fields, barns, that's where I grew up! I think.",
-	"Hm.. Thinking is hard. I will get back to you.",
-	"Oh. I remember a stage! Maybe I was a singer?",
-	"I like it when you scratch behind my ears. It reminds me of.. hm..",
-	"I like humming songs. Moo-moo-moo~. Man, I was totally a singer!",
-	"My memory is foggy.. froggy, haha. Get it?",
-	"I'm happiest I ever was!",
-	"My breasts feel funny. If you're sad, feel free to touch!",
-	"I don't know what tomorrow brings. But if you're here, it's okay!",
-	"I taste ash.. Did the grass always tasted like that?",
-	"I was a singer, I'm telling you. Ahhh-h-hh~.",
-	"A talent scout once told me I have a great voice!",
-	"More milking? Sign me up!",
-	"Oh yeah! I traveled a lot! I saw many places. Many stages. A singing cow, I was popular~.",
-	"I was trying to help my old farm. Earn credits with my voice!",
-	"That talent scout found me and gave me a chance!",
-	"Thank you for being here with me! Cows are social creatures.",
-	"Wanna talk about something else?",
-	"I think I'm out of things to talk about.. I might start repeating, I'm sorry!",
+	"Говорят, моё молоко на вкус как клубника~.",
+	"Мои сиськи не такие уж и большие. Уверена, они ещё вырастут!",
+	"Тот бычок вон там немного ворчливый. Кажется, я знаю почему!",
+	"У меня много сосков... но большинство из них не работают. Эх.",
+	"Не люблю слишком много думать... От этого в голове всё жужжит-жужжит.",
+	"Жизнь на самом деле налаживается! Эти странные метки уже не так сильно болят.",
+	"Хозяева дали мне имя... Милка. Подходит мне, правда? Мне просто нужно побольше сисек!",
+	"А у тебя есть сны? Иногда мне снится мягкая трава и солнечный свет. Му-у~.",
+	"Кажется, у кафе дела идут не очень... это напоминает мне о доме...",
+	"Я могу сказать им, чтобы они доили мои сиськи в два раза чаще. Тогда они будут к тебе добрее. Только дай знать!",
+	"Когда мне страшно, я просто считаю строчки. Это помогает!",
+	"Я бы с радостью помогла тому быку... Может, тогда он меня осеменит! Разведение у меня в ДНК~.",
+	"Как меня зовут на самом деле? Э-э... М-м... Милка? Я просто корова... Серебристая трава, поля, амбары — вот где я выросла! Кажется.",
+	"Хм... Думать тяжело. Я еще вернусь к тебе с ответом.",
+	"О! Я помню сцену! Может, я была певицей?",
+	"Мне нравится, когда ты чешешь меня за ушком. Это напоминает мне о... хм...",
+	"Люблю напевать песенки. Му-му-му~. Блин, я точно была певицей!",
+	"Память какая-то туманная... как в тумане, ха-ха. Понял шутку?",
+	"Я счастливее, чем когда-либо!",
+	"У меня в груди какое-то странное чувство. Если тебе грустно — не стесняйся, потрогай!",
+	"Не знаю, что принесет завтрашний день. Но пока ты здесь, всё будет хорошо!",
+	"На вкус как пепел... Неужели трава всегда была такой?",
+	"Я ведь певицей была, честное слово! А-а-а-ах~.",
+	"Один скаут как-то сказал, что у меня потрясающий голос!",
+	"Еще дойки? Я только за!",
+	"О да! Я много путешествовала! Видела столько мест. Столько сцен. Поющая корова — я была популярной~.",
+	"Пыталась помочь своей старой ферме! Зарабатывала кредиты своим голосом.",
+	"Тот скаут нашел меня и дал шанс!",
+	"Спасибо, что ты рядом! Коровы — существа социальные.",
+	"Хочешь поговорить о чем-нибудь другом?",
+	"Кажется, темы у меня заканчиваются... Скоро начну повторяться, прости!",
 ]
 
 const PIP_LINES = [
-	"They got you too, huh? Welcome, I guess. I'm Pip.",
-	"I was the cheapest bull they were able to buy. Can you see why?",
-	"The previous owner has melted the key when I tried to run. Yeah, that key.",
-	"They still milk me. They need their stupid cream.",
-	"The owner girl is a real fucking bitch. The guy is better but I don't trust him.",
-	"That cow over there? Milka or whatever her name is.. She is delusional. I'm sorry but she totally is.",
-	"The customers don't even know that the owners use our milk and cum in their food.",
-	"I'm so fucking horny..",
-	"They turned the freezer room into our cells. They don't have enough credits to pay for it anyway.",
-	"My tailhole has really puffed up lately. Fuck..",
-	"I was caged because the owner wanted to turn me into a femboy. I'm a stud, god dammit!",
-	"No point in yelling.. The walls are too thick.",
-	"I'm not into pegging! I'm not, I'm not, I'm not. I allow it because otherwise the pressure becomes too much.",
-	"That Milka cow is dumb.. But I would breed her anyway.. Hell, I'd breed you..",
-	"If you could help me.. Please. I will do anything.",
-	"It's boring here. Could have been worse I guess.",
-	"Milka is eating that grass.. like a fucking cow. I'd rather starve. Or eat ass even.",
-	"I'm glad you're here. Well.. Not in the bad way.",
-	"I lied a bit. No, I just didn't tell you everything. I was caged and enslaved because I banged some club owner's slutty wife. If you ask me, that was worth it.",
-	"Yeah.. That pussy was clenching around my long, thick horsecock.. Shit, I'm dripping.",
-	"I heard one of the customers compliment the cupcakes. I knew my seed was good!",
-	"My nipples are getting sensitive too. Don't tell the owners or they will start milking them as well.",
-	"I play with my nips, okay? I fucking do. I finger my ass sometimes. I'm a stud, I need a ball-draining amount of pleasure.",
-	"When I get out, I'm heading straight back to that club.",
-	"Breeding.. This place is messing with me. I have weird dreams. Wet dreams.",
-	"If you wanna help me cum, I'd appreciate it, okay? Doesn't mean I'm a bottom.",
-	"They were talking about starting a cheese shop too.. I will give them some cheese alright.",
-	"That club owner that I fucked over? I don't regret it.",
-	"Days are just flying by, aren't they?",
-	"If you wanna milk me, let me know. I can bend over.",
-	"I can probably fist myself by this point.. I have such a fucking donut of a hole. Shit.",
-	"You know what I regret? I should have protected Milka more from these fuckers. I don't know, she is not that bad.",
-	"I fucked many caged sluts. Didn't know I would become one.",
-	"I don't know what else to say. I will start repeating I guess.",
+	"Тебя тоже сюда загребли, да? Добро пожаловать, вроде как. Я Пип.",
+	"Я был самым дешевым быком, которого они смогли купить. Понимаешь почему?",
+	"Предыдущий владелец расплавил ключ, когда я попытался сбежать. Да-да, тот самый ключ.",
+	"Меня всё еще доят. Им позарез нужны эти их тупые сливки.",
+	"Девка-хозяйка — настоящая сука. Парень получше, но я ему не доверяю.",
+	"Вон та корова? Милка или как там её... Она совсем поехала кукухой. Извини, но она реально невменяемая.",
+	"Клиенты даже не догадываются, что хозяева подмешивают наше молоко и сперму в еду.",
+	"Как же меня, блядь, штырит...",
+	"Они превратили морозилку в наши камеры. У них всё равно не хватило кредитов на что-то получше.",
+	"У меня задница в последнее время прям раздулась. Блядь...",
+	"Меня заперли в клетке, потому что хозяин захотел превратить меня в фембоя. Да я же альфа-самец, черт возьми!",
+	"Орать бесполезно... Стены слишком толстые.",
+	"Я не фанат пеггинга! Вообще не фанат, не фанат, не фанат! Я позволяю это только потому, что иначе давление становится невыносимым.",
+	"Эта корова Милка тупая как пробка... Но я бы всё равно её оплодотворил... Черт, да я бы и тебя оплодотворил...",
+	"Если бы ты мог мне помочь... Пожалуйста. Я сделаю всё, что угодно.",
+	"Тут скучно. Хотя, наверное, могло быть и хуже.",
+	"Милка жрет эту траву... как гребаная корова. Я лучше с голоду сдохну. Или буду сосать анусы.",
+	"Я рад, что ты здесь. Ну... не в плохом смысле.",
+	"Я немного соврал. Нет, просто не всё тебе рассказал. Меня заперли в клетке и превратили в раба, потому что я трахнул шлюху — жену одного владельца клуба. Если спросишь меня, оно того стоило.",
+	"Да уж... Эта киска так сжималась вокруг моего длинного, толстого лошачьего члена... Бля, я весь теку.",
+	"Слышал, как один из клиентов хвалил капкейки. Я знал, что моё семя — пушка!",
+	"Соски тоже становятся чувствительными. Только не говори владельцам, а то они и их начнут доить.",
+	"Я играю со своими сосками, ясно? Да, блядь, играю. Иногда я даже пальцами в задницу лазаю. Я альфа, мне нужно столько удовольствия, чтобы яйца опустели.",
+	"Когда выберусь отсюда, сразу рвану в тот клуб.",
+	"Разведение... Это место сводит меня с ума. Мне снятся странные сны. Влажные сны.",
+	"Если хочешь помочь мне кончить — я буду только за, окей? Но это не значит, что я низом.",
+	"Они еще говорили о том, чтобы открыть сырную лавку... Ну, сыром я их точно обеспечу.",
+	"Тот владелец клуба, которого я поимел? Ни капли не жалею.",
+	"Дни просто летят незаметно, а?",
+	"Если хочешь подоить меня — только скажи. Я могу и нагнуться.",
+	"К этому моменту я, наверное, уже смогу сама себе вставить кулак... У меня там, блядь, дырка как пончик. Сука.",
+	"Знаешь, о чем я жалею? Что не защитил Милку получше от этих ублюдков. Не знаю, она ведь не такая уж плохая.",
+	"Я трахал кучу запертых в клетках шлюх. И кто же знал, что сам стану одной из них.",
+	"Даже не знаю, что еще сказать. Начну повторяться, наверное.",
 ]
 
 const LEO_LINES = [
-	"Sorry.. but it had to be like this. Good milk is hard to get.. Customers hate cheap milk..",
-	"We and Sofie, my love, we're in huge need of credits.. This cafe wasn't cheap to buy.",
-	"Sofie has a big, kind heart. It's just.. tough times for us.",
-	"We're both at fault, I think.. we made some mistakes..",
-	"You know.. this little space cafe was always our dream.. We're so close.. to being free.",
-	"I put everything on this dream.. Sofie put everything on red.. I don't blame her, it's my fault for not stopping her..",
-	"I love her.. maybe I'm dumb.. but it feels good to be near her, you know? No matter what happens..",
+	"Прости... но так должно было случиться. Хорошее молоко достается нелегко... А клиенты ненавидят дешевое молоко...",
+	"Нам с Софи, моей любовью, позарез нужны кредиты... Это кафе стоило немалых денег.",
+	"У Софи большое и доброе сердце. Просто... сейчас у нас тяжелые времена.",
+	"Думаю, мы оба виноваты... мы совершили ошибки...",
+	"Знаешь... это маленькое космическое кафе всегда было нашей мечтой... Мы уже так близки... к свободе.",
+	"Я поставил на эту мечту всё... Софи поставила всё на красное... И я не виню её, это моя вина, что я не остановил её...",
+	"Я люблю её... может, я и дурак... но рядом с ней так хорошо, понимаешь? Что бы ни случилось...",
 ]
 
 func _init():
@@ -657,71 +657,71 @@ func cowBull() -> String:
 func getObedienceText() -> String:
 	var theObedience:float = obedience if obedience < 0.0 else obedience*2.0
 	if(theObedience <= -0.9):
-		return "The owners despise you. You’re nothing but trouble in their eyes."
+		return "Владельцы презирают тебя. В их глазах ты — сплошная проблема."
 	if(theObedience <= -0.7):
-		return "The owners really hate you."
+		return "Владельцы тебя просто ненавидят."
 	if(theObedience <= -0.5):
-		return "The owners dislike your behaviour."
+		return "Владельцам не нравится твоё поведение."
 	if(theObedience <= -0.3):
-		return "The owners think you're very disobedient."
+		return "Владельцы считают тебя очень непослушной."
 	if(theObedience <= -0.1):
-		return "The owners think you're disobedient."
+		return "Владельцы считают тебя непослушной."
 	if(theObedience <= 0.1):
-		return "The owners keep a close eye on you."
+		return "Владельцы следят за тобой в оба глаза."
 	if(theObedience <= 0.3):
-		return "The owners see you as somewhat cooperative."
+		return "Владельцы считают тебя довольно покладистой."
 	if(theObedience <= 0.5):
-		return "The owners are pleased with your behaviour."
+		return "Владельцы довольны твоим поведением."
 	if(theObedience <= 0.7):
-		return "The owners think you're very obedient."
+		return "Владельцы считают, что ты очень послушная."
 	if(theObedience <= 0.9):
-		return "The owners think you're very loyal."
-	return "The owners think you're the perfect slave."
+		return "Владельцы считают, что ты очень верная."
+	return "Владельцы считают, что ты идеальная рабыня."
 
 func getCowTrustText() -> String:
 	var theTrust:float = cowTrust * 2.0
 	if(theTrust < 0.0):
-		return "The cow dislikes you."
+		return "Корова тебя недолюбливает."
 	if(theTrust <= 0.0):
-		return "The cow doesn't know you."
+		return "Корова тебя не знает."
 	if(theTrust <= 0.2):
-		return "The cow knows you a little bit."
+		return "Корова тебя немного знает."
 	if(theTrust <= 0.4):
-		return "The cow likes you."
+		return "Корова тебя любит."
 	if(theTrust <= 0.6):
-		return "The cow thinks you're very nice."
+		return "Корова считает тебя очень милой."
 	if(theTrust <= 0.8):
-		return "The cow adores you."
-	return "You are cow's best friend."
+		return "Корова тебя обожает."
+	return "Ты — лучшая подружка коровы."
 
 func getBullTrustText() -> String:
 	var theTrust:float = bullTrust * 2.0
 	if(theTrust < 0.0):
-		return "The bull dislikes you."
+		return "Бык тебя недолюбливает."
 	if(theTrust <= 0.0):
-		return "The bull doesn't know you."
+		return "Бык тебя не знает."
 	if(theTrust <= 0.2):
-		return "The bull knows you a little bit."
+		return "Бык тебя немного знает."
 	if(theTrust <= 0.4):
-		return "The bull thinks you're alright."
+		return "Бык считает, что ты в порядке."
 	if(theTrust <= 0.6):
-		return "The bull respects you."
+		return "Бык тебя уважает."
 	if(theTrust <= 0.8):
-		return "The bull admires you."
-	return "You and the bull are buddies."
+		return "Бык тобой восхищается."
+	return "Вы с быком — кореша."
 
 func getDoorDamageText() -> String:
 	if(padlockDamage <= 0.1):
-		return "The padlock is completely fine."
+		return "Навесной замок в полном порядке."
 	if(padlockDamage <= 0.3):
-		return "The padlock is slightly damaged."
+		return "Навесной замок слегка поврежден."
 	if(padlockDamage <= 0.5):
-		return "The padlock has some bents and scratches."
+		return "На навесном замке есть вмятины и царапины."
 	if(padlockDamage <= 0.7):
-		return "The padlock has a lot of damage."
+		return "На навесном замке много повреждений."
 	if(padlockDamage < 1.0):
-		return "The padlock is barely holding."
-	return "The padlock is broken."
+		return "Замок едва держится."
+	return "Замок сломан."
 
 func resetAllGear():
 	removeStrapon(C_PC)
@@ -762,25 +762,25 @@ func main_state():
 			sayn("Дверь: "+getDoorDamageText())
 		
 		addAction("Graze", "Провести время на поле, пожевать травку", "idleGraze")
-		addAction("Hide in cell", "Спрятаться в камере", "idleCell")
+		addAction("Спрятаться в камере", "Спрятаться в камере", "idleCell")
 		# If messy
 		addAction("Wash", "Попросить, чтобы тебя помыли", "idleWash")
 		if(GM.pc.getStamina() > 0):
 			if(GM.pc.isBlindfolded()):
 				addDisabledAction("Выглянуть наружу", "Ничего не видно...")
 			else:
-				addAction("Peek outside", "Заглянуть в дверной глазок", "idlePeek")
+				addAction("Выглянуть наружу", "Заглянуть в дверной глазок", "idlePeek")
 		else:
 			addDisabledAction("Выглянуть наружу", "Окно высоко, нужно немного выносливости, чтобы до него дотянуться")
 		if(peekState >= PEEK_NOTICED_PADLOCK):
 			if(padlockDamage >= 1.0):
 				if(cageRemoved && helpedMilka):
-					addAction("Freedom!", "Дверь практически открыта. Можно уходить!", "ENDING", ["end_breaklock"])
+					addAction("Свобода!", "Дверь практически открыта. Можно уходить!", "ENDING", ["end_breaklock"])
 				else:
-					addAction("Freedom!", "Дверь практически открыта. Можно выходить", "endingLockCheck")
+					addAction("Свобода!", "Дверь практически открыта. Можно выходить", "endingLockCheck")
 			elif(!GM.pc.hasBoundLegs()):
 				if(GM.pc.getStamina() > 0):
-					addAction("Kick door", "Разбить дверь, чтобы повредить навесной замок", "idleSmash")
+					addAction("Пнуть дверь", "Разбить дверь, чтобы повредить навесной замок", "idleSmash")
 				else:
 					addDisabledAction("Пнуть дверь", "У тебя закончилась выносливость")
 			else:
@@ -803,22 +803,22 @@ func main_state():
 		
 		addAction("Cow", "Провести время с коровой", "talkCow")
 		addAction("Bull", "Провести время с быком", "talkBull")
-		addAction("Annoy owners", "Заставить их пожалеть о покупке тебя!", "talkAnnoy")
+		addAction("Раздражать хозяев", "Заставить их пожалеть о покупке тебя!", "talkAnnoy")
 	if(idleState == IDLE_HUNGRY):
 		saynn("Вы чувствуете голод.")
 		
-		addAction("Eat grass", "Иди ешь траву, как послушный скот", "eatGrass")
+		addAction("Жрать траву", "Иди ешь траву, как послушный скот", "eatGrass")
 		addAction("Starve", "Ты отказываешься есть траву", "eatStarve")
 		addAction("Demand", "Требовать от хозяев нормальной еды", "eatDemand")
 		if(getTreatAmount() > 0):
-			addAction("Eat a treat!", "Съесть одно из своих лакомств", "eatTreat")
+			addAction("Съесть вкусняшку!", "Съесть одно из своих лакомств", "eatTreat")
 		#addAction("Suck bull", "Feed on the bull's seed", "eatSuckBull")
 	if(idleState == IDLE_NEEDY):
 		saynn("Вам хочется заняться чем-нибудь пошлым.")
 		
-		addAction("Just chill", "Восстановить немного выносливости", "needyRest")
+		addAction("Просто расслабиться", "Восстановить немного выносливости", "needyRest")
 		addAction("Complain", "Ныть о том, как сильно тебе хочется внимания!", "needyComplain")
-		addAction("Offer self", "Пусть хозяева делают с тобой всё, что им вздумается...", "needyOfferSelf")
+		addAction("Предложить себя", "Пусть хозяева делают с тобой всё, что им вздумается...", "needyOfferSelf")
 		# Obedience check
 		if(obedience < 0.4):
 			addDisabledAction("Дать подоить", "Ты недостаточно послушна, чтобы попросить о дополнительном доении")
@@ -826,7 +826,7 @@ func main_state():
 			if(GM.pc.getStamina() <= 0):
 				addDisabledAction("Дать подоить", "У тебя не хватает выносливости, чтобы тебя подоили!")
 			else:
-				addAction("Be milked", "Попросить хозяев подоить тебя еще разок", "needyMilk")
+				addAction("Дать подоить", "Попросить хозяев подоить тебя еще разок", "needyMilk")
 		if(canHelpMilka && (getMilkaBreastSize() < BreastsSize.O)):
 			if(GM.pc.hasBoundArms() || GM.pc.hasBlockedHands()):
 				addDisabledAction("Грудь Милки", "Ты не сможешь сделать это с зажатыми руками")
@@ -837,12 +837,12 @@ func main_state():
 					addAction("Milka's breasts", "Помочь Милке, нанеся на её грудь специальный крем", "idleCowBreasts")
 		if(helpedMilka || canMilkOthers):
 			if(GM.pc.getStamina() > 0):
-				addAction("Milk Cow", "Помочь с дойкой коровы", "talkCowMilk")
+				addAction("Подоить корову", "Помочь с дойкой коровы", "talkCowMilk")
 			else:
 				addDisabledAction("Подоить корову", "У тебя совсем не осталось выносливости")
 		if(bullTrust > 0.5 || cageRemoved || canMilkOthers):
 			if(GM.pc.getStamina() > 0):
-				addAction("Milk Bull", "Помочь с дойкой быка", "talkBullMilk")
+				addAction("Поить быка", "Помочь с дойкой быка", "talkBullMilk")
 			else:
 				addDisabledAction("Поить быка", "У тебя совсем не осталось выносливости")
 
@@ -1256,7 +1256,7 @@ func main_do(_id:String, _args:Array):
 			addCowTrust(5)
 			addAction("It's okay", "Ты счастлив, что помог Милке, и это всё, что тебе было нужно.", "setState", ["main"])
 			addAction("Breastfeed", "Покормиться из груди Милки!", "milkaRewardBreastfeed")
-			addAction("Breed her", "Трахнуть Милку членом или страпоном!", "milkaRewardBreed")
+			addAction("Оплодотворить её", "Трахнуть Милку членом или страпоном!", "milkaRewardBreed")
 		
 		elif(GM.pc.getBreastsSize() < BreastsSize.O):
 			talk(C_COW, RNG.pick([
@@ -1265,7 +1265,7 @@ func main_do(_id:String, _args:Array):
 			saynn("Ты читаешь мелкий шрифт на тюбике. Там сказано, что изменения происходят мгновенно и навсегда.")
 		
 			addContinueEventTrigger()
-			addAction("Your breasts", "Позволить Милке нанести крем на твою грудь, чтобы она стала больше!", "milkaUseCreamOnPC")
+			addAction("Твоя грудь", "Позволить Милке нанести крем на твою грудь, чтобы она стала больше!", "milkaUseCreamOnPC")
 		else:
 			talk(C_COW, RNG.pick([
 				"Ах.. теперь я лучшая коровка.",
@@ -1612,7 +1612,7 @@ func main_do(_id:String, _args:Array):
 		addCowTrust(3)
 		addContinueEventTrigger()
 		if(helpedMilka):
-			addAction("Breed her", "Трахнуть Милку членом или страпоном!", "milkaRewardBreed")
+			addAction("Оплодотворить её", "Трахнуть Милку членом или страпоном!", "milkaRewardBreed")
 		else:
 			addDisabledAction("Оплодотворить её", "Она тебе не особо доверяет...")
 	if(_id == "talkBullMilk"):
@@ -1800,11 +1800,11 @@ func sleep_state():
 	
 	if(gonnaHavePeekEvent):
 		if(peekState == PEEK_FIRST_EVENT_HAPPENED):
-			addAction("Sleep?", "Пора спать, но кажется, вот-вот что-то случится...", "setState", ["ePeekFirstEvent"])
+			addAction("Поспать?", "Пора спать, но кажется, вот-вот что-то случится...", "setState", ["ePeekFirstEvent"])
 		if(peekState == PEEK_SECOND_EVENT_HAPPENED):
-			addAction("Sleep?", "Пора спать, но кажется, вот-вот что-то случится...", "setState", ["ePeekSecondEvent"])
+			addAction("Поспать?", "Пора спать, но кажется, вот-вот что-то случится...", "setState", ["ePeekSecondEvent"])
 		if(peekState == PEEK_THIRD_EVENT_HAPPENED):
-			addAction("Sleep?", "Пора спать, но кажется, вот-вот что-то случится...", "setState", ["ePeekThirdEvent"])
+			addAction("Поспать?", "Пора спать, но кажется, вот-вот что-то случится...", "setState", ["ePeekThirdEvent"])
 		return
 	addAction("Sleep", "Пора спать", "SLEEP")
 
@@ -1832,7 +1832,7 @@ func sleepScene():
 			addContinue("setState", ["main"])
 		if(GM.pc.getCredits() >= 0):
 			saynn("[b]Владельцы выплатили долг! Тебя могут отпустить![/b]")
-			addAction("Freedom!", "Свою часть работы ты выполнила. Теперь очередь хозяев", "ENDING", ["end_credits"])
+			addAction("Свобода!", "Свою часть работы ты выполнила. Теперь очередь хозяев", "ENDING", ["end_credits"])
 
 #func sleep_do(_id:String, _args:Array):
 #	if(_id == "sleep"):
@@ -1880,9 +1880,9 @@ func about_to_be_milked_by_guy_do(_id:String, _args:Array):
 			]))
 			saynn("Похоже, она хочет с тобой подраться...")
 			
-			addAction("Fight!", "Начать бой", "startFight", [C_GIRL])
+			addAction("В бой!", "Начать бой", "startFight", [C_GIRL])
 			if(getShivAmount() > 0):
-				addAction("Shiv her!", "Используй заточку, чтобы она отъебалась", "useShiv")
+				addAction("Заткнуть её заточкой!", "Используй заточку, чтобы она отъебалась", "useShiv")
 		else:
 			if(obedience < -0.1):
 				talk(C_GUY, RNG.pick([
@@ -1931,7 +1931,7 @@ func about_to_be_milked_by_girl_state():
 	saynn("Похоже, она не собирается принимать ответ «нет»...")
 	
 	addAction("Allow", "Позволить ей подоить тебя", "agree")
-	addAction("Fight!", "Сопротивляться её попыткам", "decline")
+	addAction("В бой!", "Сопротивляться её попыткам", "decline")
 
 func about_to_be_milked_by_girl_do(_id:String, _args:Array):
 	if(_id == "agree"):
@@ -1956,9 +1956,9 @@ func about_to_be_milked_by_girl_do(_id:String, _args:Array):
 				"Ты всего лишь животное. Веди себя смирно, иначе я заставлю тебя.",
 			]))
 		saynn("Похоже, тебе придётся с ней сразиться.")
-		addAction("Fight!", "Начать бой", "startFight", [C_GIRL])
+		addAction("В бой!", "Начать бой", "startFight", [C_GIRL])
 		if(getShivAmount() > 0):
-			addAction("Shiv her!", "Используй заточку, чтобы она отъебалась", "useShiv")
+			addAction("Заткнуть её заточкой!", "Используй заточку, чтобы она отъебалась", "useShiv")
 	if(_id == "useShiv"):
 		playAnimation(StageScene.Duo, "shiv", {npc=C_GIRL, npcAction="defeat"})
 		saynn("Прежде чем Софи успевает среагировать, ты выхватываешь шило и наносишь ей удар!")
@@ -2640,7 +2640,7 @@ func morningpunish_state():
 	
 	addContinue("startSex", [C_GIRL, C_PC, SexType.DefaultSex, {SexMod.SubMustGoUnconscious:true, SexMod.DisableDynamicJoiners:true}])
 	if(getShivAmount() > 0):
-		addAction("Shiv her!", "Заставить её отъебаться, вонзив в неё заточку", "useshiv")
+		addAction("Заткнуть её заточкой!", "Заставить её отъебаться, вонзив в неё заточку", "useshiv")
 	else:
 		addDisabledAction("Заткнуть её заточкой!", "У тебя нет заточков")
 
@@ -2747,7 +2747,7 @@ func eOwnerMilkSlave_state():
 			if(GM.pc.hasBlockedHands() || GM.pc.hasBoundArms()):
 				addDisabledAction("Помочь хозяйке", "Твои руки связаны...")
 			else:
-				addAction("Help owner", "Попросить разрешения самой заниматься дойкой.", "doHelp", [theOwner, theSlave])
+				addAction("Помочь хозяйке", "Попросить разрешения самой заниматься дойкой.", "doHelp", [theOwner, theSlave])
 		else:
 			addDisabledAction("Помочь хозяйке", "Недостаточно выносливости")
 	else:
@@ -2810,9 +2810,9 @@ func eGirlBulliesSlave_state():
 	
 	sayParsed("{actor.You} явно {actor.youVerb('want')}, чтобы издеваться над {target.youHim}!")
 	
-	addAction("Let it happen", "Посмотреть, что будет", "doWatch", [theOwner, theSlave])
+	addAction("Пусть всё идет своим чередом", "Посмотреть, что будет", "doWatch", [theOwner, theSlave])
 	addAction("Protect", "Защитить рабыню!", "doProtect", [theOwner, theSlave])
-	addAction("Get bullied", "Сделать так, чтобы Софи издевалась над тобой", "takeBlame", [theOwner, theSlave])
+	addAction("Стать жертвой буллинга", "Сделать так, чтобы Софи издевалась над тобой", "takeBlame", [theOwner, theSlave])
 
 func eGirlBulliesSlave_do(_id:String, _args:Array):
 	var theOwner:String = _args[0]
@@ -2842,7 +2842,7 @@ func eGirlBulliesSlave_do(_id:String, _args:Array):
 		addObedience(-1)
 		addAction("Fight", "Начать бой", "startFight", [C_GIRL])
 		if(getShivAmount() > 0):
-			addAction("Shiv her!", "Используй заточку, чтобы она отъебалась", "useShiv")
+			addAction("Заткнуть её заточкой!", "Используй заточку, чтобы она отъебалась", "useShiv")
 	if(_id == "useShiv"):
 		playAnimation(StageScene.Duo, "shiv", {npc=C_GIRL, npcAction="defeat"})
 		saynn("Прежде чем Софи успевает среагировать, ты выхватываешь шило и наносишь ей удар!")
@@ -2927,7 +2927,7 @@ func eGirlCattleProdCow_state():
 		"Я думала, что даю достаточно...",
 	]))
 	
-	addAction("Let it happen", "Посмотреть, что будет", "doWatch", [theOwner, theSlave])
+	addAction("Пусть всё идет своим чередом", "Посмотреть, что будет", "doWatch", [theOwner, theSlave])
 	addAction("Protect", "Защитить рабыню!", "doProtect", [theOwner, theSlave])
 
 func eGirlCattleProdCow_do(_id:String, _args:Array):
@@ -3007,7 +3007,7 @@ func eGirlCattleProdBull_state():
 		"Я достану тебе сливок, тебе не обязательно это делать.",
 	]))
 	
-	addAction("Let it happen", "Посмотреть, что будет", "doWatch", [theOwner, theSlave])
+	addAction("Пусть всё идет своим чередом", "Посмотреть, что будет", "doWatch", [theOwner, theSlave])
 	addAction("Protect", "Защитить рабыню!", "doProtect", [theOwner, theSlave])
 
 func eGirlCattleProdBull_do(_id:String, _args:Array):
@@ -3083,7 +3083,7 @@ func eEatAss_state():
 		talk(C_GIRL, "Если сделаешь это, я даже позволю тебе размять лицо.")
 	
 	addAction("Deny", "Вкусняшка того не стоит.", "deny")
-	addAction("Eat ass", "О-о, вкусняшка!", "eatAss")
+	addAction("Отсосать", "О-о, вкусняшка!", "eatAss")
 
 func eEatAss_do(_id:String, _args:Array):
 	if(_id == "deny"):
@@ -3149,7 +3149,7 @@ func eCowSeesTreat_state():
 	]))
 	saynn("Она опускается перед тобой на колени... и смотрит на тебя взглядом преданного щенка.")
 	
-	addAction("Give treat", "Дать Милке вкусняшку", "give")
+	addAction("Дать лакомство", "Дать Милке вкусняшку", "give")
 	addAction("No", "Ты предпочитаешь приберечь её", "noGive")
 
 func eCowSeesTreat_do(_id:String, _args:Array):
@@ -3186,9 +3186,9 @@ func eBullSeesTreat_state():
 	]))
 	saynn("Он выглядит отчаявшимся.")
 	
-	addAction("Give treat", "Дать Пипу вкусняшку", "give")
+	addAction("Дать лакомство", "Дать Пипу вкусняшку", "give")
 	addAction("No", "Ты предпочитаешь приберечь её", "noGive")
-	addAction("Eat ass!", "Подразнить его. Твоя задница — отличное лакомство", "eatAss")
+	addAction("Отсосать!", "Подразнить его. Твоя задница — отличное лакомство", "eatAss")
 
 func eBullSeesTreat_do(_id:String, _args:Array):
 	if(_id == "noGive"):
@@ -3539,14 +3539,14 @@ func ePeekFirstEvent3_do(_id:String, _args:Array):
 			talk(C_OFFICER, "Мне кажется, сюда не помешало бы ещё немного молока. Свежего молока.")
 			saynn("Он ставит чашку почти у самого края стола... совсем рядом с вашей грудью.")
 			talk(C_GIRL, "Конечно, я сейчас же всё исправлю.")
-			addAction("Fresh milk..", "Посмотри, что Софи сделает с твоей грудью", "setState", ["ePeekFirstEventMilk"])
+			addAction("Свежее молочко...", "Посмотри, что Софи сделает с твоей грудью", "setState", ["ePeekFirstEventMilk"])
 		else:
 			saynn("Офицер берет капкейк... и подносит его ближе, внимательно разглядывая.")
 			talk(C_OFFICER, "Как по мне, выглядит суховато. Не помешало бы побольше сливок. Свежих сливок. Что думаешь?")
 			saynn("Он ставит капкейк на край стола... совсем рядом с тобой.")
 			talk(C_GIRL, "Конечно, я сейчас же всё исправлю.")
 			saynn("Софи убегает, чтобы схватить кое-что... стрэп-он.")
-			addAction("Fresh cream..", "Посмотри, что Софи сделает с тобой", "setState", ["ePeekFirstEventSeed"])
+			addAction("Свежие сливки...", "Посмотри, что Софи сделает с тобой", "setState", ["ePeekFirstEventSeed"])
 
 func ePeekFirstEventMilk_state():
 	addChar(C_OFFICER)
@@ -3569,7 +3569,7 @@ func ePeekFirstEventMilk_state():
 		saynn("Он кладет капкейк обратно.")
 		talk(C_GIRL, "Конечно, господин. Я сейчас же всё исправлю.")
 		saynn("Софи убегает, чтобы схватить кое-что... стрэп-он.")
-		addAction("Fresh cream..", "Посмотри, что Софи сделает с тобой", "setState", ["ePeekFirstEventSeed"])
+		addAction("Свежие сливки...", "Посмотри, что Софи сделает с тобой", "setState", ["ePeekFirstEventSeed"])
 	else:
 		addContinue("setState", ["ePeekFirstEvent4"])
 

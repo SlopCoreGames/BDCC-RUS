@@ -60,7 +60,7 @@ func getBegCategory() -> Array:
 	return BegCategoryDefault
 
 func getBegDesc() -> String:
-	return "Ask the dom to do this to you!"
+	return "Попроси домина к сделать это с тобой!"
 
 func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 	return "{sub.You} {sub.youVerb('beg')} {dom.you} to '"+getVisibleName()+"'."

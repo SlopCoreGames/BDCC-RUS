@@ -30,10 +30,10 @@ func onSexEvent(_npc, _event:SexEvent):
 	return false
 
 func getTaskString():
-	return "Receive choking: "+getProgressString("times")
+	return "Принимать удушение: "+getProgressString("times")
 
 func getTaskHint(_isSlaveLevelup):
-	return "Choke them during sex"
+	return "Душить их во время секса"
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [

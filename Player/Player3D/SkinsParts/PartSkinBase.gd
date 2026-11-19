@@ -17,9 +17,9 @@ func getAuthor():
 func getExtraDesc():
 	var result = []
 	if(has_method("saveData")):
-		result.append("[i]Datapack skin[/i] "+str(author))
+		result.append("[i]Скин из датапака[/i] "+str(author))
 	if(author != null && author != ""):
-		result.append("[i]Created by:[/i] "+str(author))
+		result.append("[i]Создатель:[/i] "+str(author))
 	if(result.empty()):
 		return ""
 	return "\n"+Util.join(result, "\n")

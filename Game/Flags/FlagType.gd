@@ -57,4 +57,4 @@ static func getVisibleName(flagType):
 	if(flagType == Anything):
 		return "Anything"
 	
-	return "Error?"
+	return "Ошибка?"

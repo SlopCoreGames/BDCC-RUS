@@ -19,7 +19,7 @@ func getCurrentDrugDenDifficulty() -> float:
 func pickName(character:DynamicCharacter, _args = {}):
 	character.npcName = "Junkie"
 	if(_args.has(NpcGen.IsBoss) && _args[NpcGen.IsBoss]):
-		character.npcName = "Junkie Boss"
+		character.npcName = "Босс-торчок"
 
 func pickSmallDescription(_character:DynamicCharacter, _args = {}):
 #	var thedesc = ""
@@ -27,7 +27,7 @@ func pickSmallDescription(_character:DynamicCharacter, _args = {}):
 #	thedesc += ". "
 #	thedesc += NpcGender.getVisibleName(character.npcGeneratedGender)+"."
 #
-	return "One of the junkies"
+	return "Один из торчков"
 
 func pickCharacterType(character:DynamicCharacter, _args = {}):
 	character.npcCharacterType = CharacterType.Generic

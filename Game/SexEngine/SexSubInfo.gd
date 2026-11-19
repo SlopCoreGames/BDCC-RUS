@@ -14,8 +14,8 @@ func getInfoString(_isSelected:bool = false) -> String:
 	
 	if(getConsciousness() <= 0.0):
 		if(_isSelected):
-			return "\\["+character.getName()+"\\]"+" is unconscious."
-		return character.getName()+" is unconscious."
+			return "\\["+character.getName()+"\\]"+" без сознания."
+		return character.getName()+" без сознания."
 	
 	var text:String = ""
 	if(character != null):
@@ -195,8 +195,8 @@ func getAverageFear():
 func getSexEndInfo():
 	var texts:Array = .getSexEndInfo()
 	
-	texts.append("Average resistance: "+str(Util.roundF(getAverageResistance()*100.0, 1))+"%")
-	texts.append("Average fear: "+str(Util.roundF(getAverageFear()*100.0, 1))+"%")
+	texts.append("Среднее сопротивление: "+str(Util.roundF(getAverageResistance()*100.0, 1))+"%")
+	texts.append("Средний страх: "+str(Util.roundF(getAverageFear()*100.0, 1))+"%")
 	
 	return texts
 
@@ -206,74 +206,74 @@ func affectPersonality(_personality:Personality, _fetishHolder:FetishHolder):
 	if(isUnconscious()):
 		if(RNG.chance(50)):
 			if(_personality.addStat(PersonalityStat.Subby, RNG.randf_range(0.05, 0.1))):
-				theChanges.append("{npc.name} became less dominant because {npc.he} finished unconscious.")
+				theChanges.append("{npc.name} стал(а) менее доминантным(ой), потому что {npc.he} вырубился(лась).")
 		if(RNG.chance(30)):
 			if(_personality.addStat(PersonalityStat.Coward, RNG.randf_range(0.05, 0.1))):
-				theChanges.append("{npc.name} became more cowardly because {npc.he} finished unconscious.")
+				theChanges.append("{npc.name} стал(а) более трусливым(ой), потому что {npc.he} вырубился(лась).")
 		if(RNG.chance(20)):
 			if(_personality.addStat(PersonalityStat.Naive, RNG.randf_range(-0.1, -0.05))):
-				theChanges.append("{npc.name} became less naive because {npc.he} finished unconscious.")
+				theChanges.append("{npc.name} стал(а) менее наивным(ой), потому что {npc.he} вырубился(лась).")
 		if(RNG.chance(20)):
 			if(_personality.addStat(PersonalityStat.Brat, RNG.randf_range(-0.05, -0.01))):
-				theChanges.append("{npc.name} became slightly less bratty because {npc.he} finished unconscious.")
+				theChanges.append("{npc.name} стал(а) чуть менее вредным(ой), потому что {npc.he} вырубился(лась).")
 	else:
 		if(getTimesCame() <= 0):
 			if(RNG.chance(50)):
 				if(_personality.addStat(PersonalityStat.Brat, RNG.randf_range(-0.1, -0.01))):
-					theChanges.append("{npc.name} became less bratty because of the frustration.")
+					theChanges.append("{npc.name} стал(а) менее вредным(ой) из-за разочарования.")
 			if(RNG.chance(50)):
 				if(_personality.addStat(PersonalityStat.Mean, RNG.randf_range(0.01, 0.05))):
-					theChanges.append("{npc.name} became slightly more mean because of the frustration.")
+					theChanges.append("{npc.name} стал(а) чуть более злым(ой) из-за разочарования.")
 			if(RNG.chance(50)):
 				if(_personality.addStat(PersonalityStat.Subby, RNG.randf_range(0.01, 0.05))):
-					theChanges.append("{npc.name} became slightly more subby because of the frustration.")
+					theChanges.append("Из-за разочарования {npc.name} стала чуть более покорной.")
 			if(RNG.chance(50)):
 				if(_personality.addStat(PersonalityStat.Impatient, RNG.randf_range(0.01, 0.05))):
-					theChanges.append("{npc.name} became more impatient because of the frustration.")
+					theChanges.append("Из-за разочарования {npc.name} стала более нетерпеливой.")
 		if(getTimesCame() >= 4):
 			if(RNG.chance(50)):
 				if(_personality.addStat(PersonalityStat.Subby, RNG.randf_range(0.05, 0.15))):
-					theChanges.append("{npc.name} became more subby after so many orgasms.")
+					theChanges.append("После стольких оргазмов {npc.name} стала более покорной.")
 			if(RNG.chance(50)):
 				if(_personality.addStat(PersonalityStat.Naive, RNG.randf_range(0.05, 0.1))):
-					theChanges.append("{npc.name} became more naive after so many orgasms.")
+					theChanges.append("После стольких оргазмов {npc.name} стала более наивной.")
 		if(getTimesCame() >= 2):
 			if(RNG.chance(30)):
 				if(_personality.addStat(PersonalityStat.Subby, RNG.randf_range(0.01, 0.1))):
-					theChanges.append("{npc.name} became less dominant after getting to cum.")
+					theChanges.append("Кончив, {npc.name} стала менее доминантной.")
 			if(RNG.chance(30)):
 				if(_personality.addStat(PersonalityStat.Impatient, RNG.randf_range(-0.05, -0.01))):
-					theChanges.append("{npc.name} became less impatient after getting to cum.")
+					theChanges.append("Кончив, {npc.name} стала менее нетерпеливой.")
 		
 		if(getAverageResistance() > 0.5):
 			if(RNG.chance(50)):
 				if(_personality.addStat(PersonalityStat.Subby, RNG.randf_range(-0.1, -0.01))):
-					theChanges.append("{npc.name} became slightly more dominant after resisting so much.")
+					theChanges.append("После стольких попыток сопротивления {npc.name} стала чуть более доминантной.")
 			if(RNG.chance(50)):
 				if(_personality.addStat(PersonalityStat.Coward, RNG.randf_range(-0.2, -0.05))):
-					theChanges.append("{npc.name} became less cowardly after resisting so much.")
+					theChanges.append("После стольких попыток сопротивления {npc.name} стала менее трусливой.")
 			if(RNG.chance(30)):
 				if(_personality.addStat(PersonalityStat.Brat, RNG.randf_range(0.02, 0.1))):
-					theChanges.append("{npc.name} became more bratty after resisting so much.")
+					theChanges.append("После стольких попыток сопротивления {npc.name} стала более капризной.")
 		
 		if(getTimesCame() >= 1 && getAverageLust() > 0.5 && getAverageResistance() < 0.3):
 			if(RNG.chance(50)):
 				if(_personality.addStat(PersonalityStat.Subby, RNG.randf_range(0.01, 0.1))):
-					theChanges.append("{npc.name} became more subby after a good sex.")
+					theChanges.append("После хорошего секса {npc.name} стала более покорной.")
 			if(RNG.chance(30)):
 				if(_personality.addStat(PersonalityStat.Brat, RNG.randf_range(0.01, 0.05))):
-					theChanges.append("{npc.name} became slightly more bratty after a good sex.")
+					theChanges.append("{npc.name} стал(а) чуть более капризным(ой) после хорошего секса.")
 			if(RNG.chance(30)):
 				if(_personality.addStat(PersonalityStat.Coward, RNG.randf_range(-0.05, -0.01))):
-					theChanges.append("{npc.name} became less cowardly after a good sex.")
+					theChanges.append("{npc.name} стал(а) менее трусливым(ой) после хорошего секса.")
 			
 		if(getAverageFear() > 0.6):
 			if(RNG.chance(70)):
 				if(_personality.addStat(PersonalityStat.Coward, RNG.randf_range(0.01, 0.1))):
-					theChanges.append("{npc.name} became more cowardly after so much intimidation.")
+					theChanges.append("{npc.name} стала трусливее после стольких запугиваний.")
 			if(RNG.chance(30)):
 				if(_personality.addStat(PersonalityStat.Brat, RNG.randf_range(-0.05, -0.01))):
-					theChanges.append("{npc.name} became less bratty after so much intimidation.")
+					theChanges.append("{npc.name} стала менее капризной после стольких запугиваний.")
 	
 	return GM.ui.processString(Util.join(theChanges, "\n"), {npc=charID})
 

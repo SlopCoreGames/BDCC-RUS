@@ -13,7 +13,7 @@ func run(_triggerID, _args):
 	if(GM.main.hasCommittedToMainRoute() && !GM.main.hasCommittedToTaviMainRoute()):
 		return
 	
-	if(checkCharacterBusy("TaviBusy", "Seems like Tavi is not here", "Tavi")):
+	if(checkCharacterBusy("TaviBusy", "Похоже, Тави здесь нет", "Tavi")):
 		return
 	
 	saynn("Вы видите Тави: она сидит на ящике, в стороне от всех остальных.")

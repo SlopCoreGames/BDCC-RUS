@@ -19,7 +19,7 @@ func useInCombat(_attacker, _receiver):
 	if(theCycle):
 		theCycle.turnImpregnatedEggsIntoBigEggs()
 	
-	return "You swallow the Ovicapsin pill!"
+	return "Вы проглатываете таблетку Овикапсин!"
 
 func getPossibleActions():
 	return [
@@ -76,7 +76,7 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	
 	return {
 		"name": "Овикапсин",
-		"usedName": "an Ovicapsin pill",
+		"usedName": "таблетка Овикапсин",
 		"desc": getDescription(),
 		"scoreOnSub": 0.0,
 		"scoreOnSelf": 0.0,

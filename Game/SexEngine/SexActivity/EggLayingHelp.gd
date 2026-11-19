@@ -196,7 +196,7 @@ func doAction(_indx:int, _actionID:String, _action:Dictionary):
 		
 		#satisfyGoals()
 		sendSexEvent(SexEvent.UniqueOrgasm, DOM_0, SUB_0, {orgasmType=UniqueOrgasm.EggLaying})
-		addGenericOrgasmText(SUB_0, " during egg-laying")
+		addGenericOrgasmText(SUB_0, " во время откладывания яиц")
 
 func getOrgasmHandlePriority(_indx:int) -> int:
 	if(_indx == SUB_0):

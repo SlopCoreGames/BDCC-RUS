@@ -261,16 +261,16 @@ func getTextsForLoc(_loc:String):
 
 func getToolName() -> String:
 	if(hasUpgrade("pick5")):
-		return "Super Mega drill"
+		return "Супер-мега-бур"
 	if(hasUpgrade("pick4")):
-		return "Mega drill"
+		return "Мега-дрель"
 	if(hasUpgrade("pick3")):
-		return "Basic drill"
+		return "Базовая дрель"
 	if(hasUpgrade("pick2")):
-		return "Notched pickaxe"
+		return "Зазубренная кирка"
 	if(hasUpgrade("pick1")):
-		return "New pickaxe"
-	return "Rusty pickaxe"
+		return "Новая кирка"
+	return "Ржавая кирка"
 
 class Dude:
 	var iconID:String = ""
@@ -742,10 +742,10 @@ func canMineSmart(theLoc:String) -> Array:
 		
 	var theOreLeft:int = oreLeft[theLoc] if oreLeft.has(theLoc) else 0
 	if(theOreLeft <= 0):
-		return [false, "There is no ore left here"]
+		return [false, "Здесь больше не осталось руды"]
 		
 	if(pushingMinecart):
-		return [false, "You can't mine if you are pushing a minecart"]
+		return [false, "Нельзя копать, когда толкаешь вагонетку"]
 	
 	return [true, ""]
 

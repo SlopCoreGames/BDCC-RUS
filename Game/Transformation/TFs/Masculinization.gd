@@ -18,11 +18,11 @@ func getPillName() -> String:
 
 func getUnlockData() -> Dictionary:
 	return {
-		eliza = "Interesting! This pill appears to contain a potent mix of testosterone boosters and androgenic compounds that could promote masculinization. When ingested, it will probably initiate the transformation of female characteristics into male ones.. all of the characteristics. I think I’ll call it.. 'TestosteGo.' Yes.. It will give you balls~.",
+		eliza = "Интересно! Похоже, эта таблетка содержит мощную смесь бустеров тестостерона и андрогенных соединений, которые могут стимулировать маскулинизацию. При приеме она, вероятно, запустит процесс превращения женских черт в мужские... абсолютно всех черт. Думаю, назову её... «ТестостеГо». Да... она даст тебе яйца~.",
 	}
 
 func getPillDatabaseDesc() -> String:
-	return "This drug will turn you into a guy. It will achieve that by doing the following:\n- Increasing your overall masculinity.\n- Changing the shape of your chest from round breasts to a more masculine set of pecs.\n- Gradually decrease your breast size until your chest is completely flat.\n- Morph away your vagina if you have one.\n- Grow a penis and gradually increase its length until it's at least 15cm.\n- Changing your haircut to a more masculine one.\n\nThe first stage will happen after a few minutes. After that, the next ones will happen roughly every 10 hours. This could be accelerated by using the QuickShift drug or by making the test subject [b]orgasm[/b].\n\nThis drug doesn’t have a set amount of stages. It will reach its final stage when there is nothing left to transform. It’s possible to disable some of the effects of this drug by using advanced lab equipment."
+	return "Этот препарат превратит тебя в парня. Это произойдет благодаря следующему:\n- Повышению общего уровня маскулинности.\n- Изменению формы груди: округлые женские молочные железы превратятся в более мужественные грудные мышцы.\n- Постепенному уменьшению размера груди, пока она не станет полностью плоской.\n- Трансформации и исчезновению вагины, если она у тебя есть.\n- Росту пениса, длина которого будет постепенно увеличиваться, пока не достигнет как минимум 15 см.\n- Изменению прически на более мужскую.\n\nПервая стадия наступит через несколько минут. После этого последующие будут происходить примерно каждые 10 часов. Процесс можно ускорить с помощью препарата QuickShift или если подопытный испытает [b]оргазм[/b].\n\nУ этого препарата нет фиксированного количества стадий. Он достигнет финальной стадии, когда трансформировать будет больше нечего. С помощью продвинутого лабораторного оборудования можно отключить некоторые эффекты этого препарата."
 
 func getTFCheckTags() -> Dictionary:
 	return {

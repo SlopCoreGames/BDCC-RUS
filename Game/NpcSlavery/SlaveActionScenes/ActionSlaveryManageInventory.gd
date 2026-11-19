@@ -186,22 +186,22 @@ func onInventoryItemSelected(item: ItemBase):
 
 func tryToggleWornItem(item:ItemBase):
 	if(item.getClothingSlotSafe().empty()):
-		return [false, "This is not a clothing item"]
+		return [false, "Это не предмет одежды"]
 	
 	if(item.isWornByWearer()):
 		if(!item.isRestraint()):
 			pass
 		else:
 			if(!item.canBeEasilyRemovedByDom()):
-				return [false, "This restraint is impossible for you to remove!"]
+				return [false, "Эту фиксацию тебе не снять!"]
 		
 		npc.getInventory().unequipItem(item)
 		return [true, "You "+item.getTakingOffStringLong(false)+" from {npc.name}."]
 	else:
 		if(!npc.getInventory().canEquipSlot(item.getClothingSlotSafe())):
-			return [false, "{npc.name} can't wear this item!"]
+			return [false, "{npc.name} не может надеть этот предмет!"]
 		if(item.getPutOnScene() != "PutOnAnyItemScene" && !item.canForceOntoNpc()):
-			return [false, "This item is too tricky for you to put onto {npc.name}."]
+			return [false, "Этот предмет слишком сложен, чтобы надеть его на {npc.name}."]
 		#if(!item.isRestraint()):
 		#	pass
 		#else:
@@ -209,7 +209,7 @@ func tryToggleWornItem(item:ItemBase):
 			#if(!restraintData.canBeEasilyRemovedByDom()):
 			#	return [false, "This is a restraint you can't add!"]
 		if(npc.getInventory().hasSlotEquipped(item.getClothingSlotSafe())):
-			return [false, "{npc.name} is already wearing something on the same slot!"]
+			return [false, "На {npc.name} уже надето что-то в этот слот!"]
 		npc.getInventory().forceEquipStoreOther(item)
 		return [true, "You "+item.getPuttingOnStringLong(false)+" onto {npc.name}."]
 

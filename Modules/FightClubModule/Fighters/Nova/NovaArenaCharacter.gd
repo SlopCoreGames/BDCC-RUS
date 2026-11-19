@@ -46,19 +46,19 @@ func _getAttacks():
 
 func getFightIntro(_battleName):
 	if(_battleName == "arenafight"):
-		var mes = "Seeing one of the staff members in the arena is quite strange, Nova pulls out her trusty stun baton and directs her attention to the crowd."
+		var mes = "Увидеть среди бойцов арены кого-то из персонала — довольно странно; Нова выхватывает свой верный электрошокер и переводит взгляд на толпу."
 		mes += "\n\n"
-		mes += "[say=nova]This is a bust, everyone please quietly lower yourself to your knees and await my justice.[/say]"
+		mes += "[say=nova]Всё кончено! А теперь все живо на колени и ждите моего правосудия![/say]"
 		mes += "\n\n"
-		mes += "She is met with mostly quietness from the crowd. Someone brave yells ‘Go fuck yourself, slut!’."
+		mes += "Толпа отвечает в основном тишиной. Но тут какой-то смельчак выкрикивает: «Да иди ты нахуй, сучка!»"
 		mes += "\n\n"
-		mes += "[say=nova]Should have seen your faces. Nah, the only one who should worry is you.[/say]"
+		mes += "[say=nova]Надо было смотреть на ваши рожи. Хех, на самом деле волноваться стоит только тебе.[/say]"
 		mes += "\n\n"
-		mes += "The husky points at you with her weapon before taking a fighting stance. She also flicks some kind of switch on her advanced power armor, causing it to light up like a christmas tree. Seems like she is way more protected than usual."
+		mes += "Сексуальная воительница наводит на тебя оружие, а затем принимает боевую стойку. Она также щелкает каким-то переключателем на своей продвинутой силовой броне, отчего та начинает светиться, как новогодняя ёлка. Похоже, сейчас она защищена куда лучше, чем обычно."
 		mes += "\n\n"
-		mes += "[say=nova]I’m awfully horny today, cutie. Gonna help a dog bury her bone?[/say]"
+		mes += "[say=nova]Что-то я сегодня чертовски возбуждена, милашка. Поможешь собачке зарыть косточку?[/say]"
 		return mes
-	var mes = "Nova’s power armor lights up as she grabs her trusty stun baton and directs her attention to you."
+	var mes = "Силовая броня Новы вспыхивает огнями, когда она сжимает верный электрошокер и устремляет свой взгляд на тебя."
 	mes += "\n\n"
 	return mes+formatSay("У тебя нет права молчать: всё, что я скажу, будет использовано против тебя. Иди сюда, сладенькая~")
 

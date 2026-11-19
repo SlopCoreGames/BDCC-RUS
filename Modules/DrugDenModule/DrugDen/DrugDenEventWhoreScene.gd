@@ -42,7 +42,7 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
 		
 		var itemRef:ItemBase = GlobalRegistry.getItemRef(offerItemID)
-		var itemName:String = "an unknown item"
+		var itemName:String = "какой-то неизвестный предмет"
 		if(itemRef != null):
 			itemName = itemRef.getAStackName()
 		
@@ -73,7 +73,7 @@ func _run():
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
 		
 		var itemRef:ItemBase = GlobalRegistry.getItemRef(offerItemID)
-		var itemName:String = "an unknown item"
+		var itemName:String = "какой-то неизвестный предмет"
 		if(itemRef != null):
 			itemName = itemRef.getAStackName()
 		

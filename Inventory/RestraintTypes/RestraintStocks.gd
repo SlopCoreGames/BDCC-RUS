@@ -6,27 +6,27 @@ func resetOnNewDay():
 
 func getVisibleTightness():
 	if(tightness > 0.9):
-		return "very sturdy"
+		return "очень прочные"
 	if(tightness > 0.8):
 		return "sturdy"
 	if(tightness > 0.7):
-		return "sturdy enough"
+		return "достаточно прочные"
 	if(tightness > 0.6):
-		return "gives in a little bit"
+		return "немного провисает"
 	if(tightness > 0.5):
-		return "gives some leeway"
+		return "есть небольшой люфт"
 	if(tightness > 0.4):
-		return "quite a bit of leeway"
+		return "довольно большой люфт"
 	if(tightness > 0.3):
-		return "kinda close to escaping"
+		return "почти удалось сбежать"
 	if(tightness > 0.2):
-		return "close to escaping"
+		return "близко к побегу"
 	if(tightness > 0.1):
-		return "very close to escaping"
-	return "you're almost free"
+		return "совсем близко к побегу"
+	return "ты почти на свободе"
 
 func getRemoveMessage():
-	return "Stocks miraculously give in and let you free your arms and head"
+	return "колодки чудесным образом поддаются, позволяя освободить руки и голову"
 
 func alwaysBreaksWhenStruggledOutOf():
 	return true

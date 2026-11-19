@@ -6,4 +6,4 @@ func _init():
 	id = "playerstash"
 	
 func _getName():
-	return "My stash"
+	return "Мой тайник"

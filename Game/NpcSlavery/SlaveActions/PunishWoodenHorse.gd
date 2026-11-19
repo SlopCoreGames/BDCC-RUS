@@ -20,7 +20,7 @@ func getVisibleDesc():
 
 func checkCanDo(_slaveID, _extraSlavesIDs = {}):
 	if(!getFlag("NpcSlaveryModule.hasWoodenHorse", false)):
-		return [false, "You need to install a wooden horse in your cell first"]
+		return [false, "Сначала тебе нужно установить деревянную лошадь в своей камере"]
 	
 	return [true]
 

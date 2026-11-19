@@ -12,9 +12,9 @@ func _init():
 			name = "Тон",
 			desc = "В каком тоне ты хочешь общаться с Элизой?",
 			options = [
-				["silent", "Silent", "Give Eliza a mostly silent treatment", RecruitChoiceResult.Red],
-				["mean", "Mean", "Say mean and dirty things to Eliza", RecruitChoiceResult.Yellow],
-				["degrade", "Degrading", "Use a degrading tone with Eliza", RecruitChoiceResult.Green],
+				["silent", "Молчание", "Устроить Элизе почти полное игнорирование", RecruitChoiceResult.Red],
+				["mean", "Злобность", "Говорить Элизе гадости и пошлости", RecruitChoiceResult.Yellow],
+				["degrade", "Унижение", "Разговаривать с Элизой уничижительным тоном", RecruitChoiceResult.Green],
 			],
 		},
 		{
@@ -22,9 +22,9 @@ func _init():
 			name = "Основное действие",
 			desc = "Каким должно быть основное действие?",
 			options = [
-				["bloodplay", "Bloodplay", "Use a sharp edge to make Eliza bleed", RecruitChoiceResult.Green],
-				["cuddling", "Cuddling", "Cuddle with Eliza", RecruitChoiceResult.Red],
-				["sex", "Sex", "Fuck Eliza's pussy raw", RecruitChoiceResult.Yellow],
+				["bloodplay", "Бладплей", "Использовать что-то острое, чтобы пустить Элизе кровь", RecruitChoiceResult.Green],
+				["cuddling", "Объятия", "Обниматься с Элизой", RecruitChoiceResult.Red],
+				["sex", "Секс", "Трахать Элизу всухую", RecruitChoiceResult.Yellow],
 			],
 		},
 		{
@@ -32,9 +32,9 @@ func _init():
 			name = "Особая фишка",
 			desc = "Какой особый кинк ты хочешь добавить?",
 			options = [
-				["druguse", "Drug-use", "Use Eliza's drugs against her", RecruitChoiceResult.Green],
-				["choke", "Choking", "Play with Eliza's ability to breathe", RecruitChoiceResult.Yellow],
-				["deny", "Orgasm denial", "Bring Eliza close but then deny her orgasm completely", RecruitChoiceResult.Red],
+				["druguse", "Употребление наркотиков", "Использовать наркотики Элизы против неё самой", RecruitChoiceResult.Green],
+				["choke", "Удушение", "Поиграть с её способностью дышать", RecruitChoiceResult.Yellow],
+				["deny", "Запрет на оргазм", "Довести Элизу до пика, а затем полностью лишить её оргазма", RecruitChoiceResult.Red],
 			],
 		},
 	]
@@ -66,7 +66,7 @@ func getExtraChoices(_choices:Array, _extras:Dictionary) -> Array:
 func isCombinationPossible(_choices:Array, _extras:Dictionary) -> Array:
 	if(_extras.get("condom", "") in ["worst", "best"]):
 		if(!GM.pc.hasCondoms()):
-			return [false, "You don't have any condoms to do this"]
+			return [false, "У тебя нет презервативов, чтобы это сделать"]
 	
 	return [true, ""]
 
@@ -98,4 +98,4 @@ func getPresenterCharID() -> String:
 	return "avy"
 
 func getPresenterDialogue() -> String:
-	return "Should I break this nerd bitch?"
+	return "Может, сломать эту задротку?"

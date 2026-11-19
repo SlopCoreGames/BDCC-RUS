@@ -8,7 +8,7 @@ func registerTriggers(es):
 
 func run(_triggerID, _args):
 	if(getFlag("ArticaModule.lastQuestStarted") && !getFlag("ArticaModule.LQArticaGotDreamCatcher") && !getFlag("ArticaModule.LQArticaGotBrainwashed")):
-		if(checkCharacterBusy("ArticaBusy", "Seems like the fluff is not here", "Artica")):
+		if(checkCharacterBusy("ArticaBusy", "Похоже, пушистика здесь нет", "Artica")):
 			return
 
 		addButtonUnlessLate("Артика", "Поболтать с пушистой гермой", "talk")

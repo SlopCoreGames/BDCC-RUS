@@ -76,8 +76,8 @@ func getMissionStats() -> Array: # Check for secret missions?
 				completedSideMissionAmount += 1
 		
 	var result:Array = [
-		"Completed missions: "+str(completedMissionAmount)+"/"+str(totalMissionAmount),
-		"Side missions: "+str(completedSideMissionAmount)+"/"+str(totalSideMissionAmount),
+		"Выполненные миссии: "+str(completedMissionAmount)+"/"+str(totalMissionAmount),
+		"Побочные миссии: "+str(completedSideMissionAmount)+"/"+str(totalSideMissionAmount),
 	]
 	
 	return result

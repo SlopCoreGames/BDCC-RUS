@@ -30,7 +30,7 @@ func start():
 
 func start_do(_id:String, _args:Array):
 	if(_id == "obey"):
-		if(checkSubEvent("fuck", "You were about to be fucked by {npc.name} and {npc.his} friend..", [])):
+		if(checkSubEvent("fuck", "Тебя уже почти трахали {npc.name} и подруга {npc.his}..", [])):
 			return
 		setState("obey")
 	if(_id == "resist"):

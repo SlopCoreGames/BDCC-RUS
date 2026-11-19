@@ -159,7 +159,7 @@ func _run():
 			])+"[/say]")
 			
 		saynn("Тщетно пытаясь оказать хоть какое-то сопротивление, ты...")
-		HypnokinkUtil.addHypnoButtons(self, "cuffs_"+limb+"_post", "resist", ["Hold still", "Wince", "Whine"])
+		HypnokinkUtil.addHypnoButtons(self, "cuffs_"+limb+"_post", "resist", ["Не двигайся", "Wince", "Whine"])
 		
 	if(state == "bodywriting"):
 		playAnimation(StageScene.ArmsRaisedDuo, "idle", {npc=npcID})
@@ -198,7 +198,7 @@ func _run():
 			])+"[/say]")
 		
 		saynn("Замирая изо всех сил, ты...")
-		HypnokinkUtil.addHypnoButtons(self, "bodywriting_2", "resist", ["Hold still", "Wince", "Whine"])
+		HypnokinkUtil.addHypnoButtons(self, "bodywriting_2", "resist", ["Замри", "Wince", "Whine"])
 		
 	if(state == "bodywriting_2"):
 		playAnimation(StageScene.ArmsRaisedDuo, "idle", {npc=npcID})
@@ -211,7 +211,7 @@ func _run():
 		])+"[/say]")
 		
 		saynn("Не в силах сопротивляться, ты...")
-		HypnokinkUtil.addHypnoButtons(self, "pick_subscene", "resist", ["Hold still", "Wait", "Whine"])
+		HypnokinkUtil.addHypnoButtons(self, "pick_subscene", "resist", ["Не шевелись", "Wait", "Whine"])
 		
 	if(state == "kneel"):
 		#only subby version
@@ -255,7 +255,7 @@ func _run():
 			])+"[/say]")
 		
 		saynn("Вздрагивая от боли, ты...")
-		HypnokinkUtil.addHypnoButtons(self, "punch_2", "resist", ["Hold still"])
+		HypnokinkUtil.addHypnoButtons(self, "punch_2", "resist", ["Стой смирно"])
 	
 	if(state == "punch_2"):
 		playAnimation(StageScene.ArmsRaisedDuo, "idle", {npc=npcID, npcAction="punch"})
@@ -423,7 +423,7 @@ func _run():
 			])+"[/say]")
 			saynn("Пока {npc.he} {npc.verb('continue')} выражать свои {npc.his} похотливые желания, ты не можешь удержаться от...")
 			
-		HypnokinkUtil.addHypnoButtons(self, "hands_free_orgasm_2", "resist", ["Tense up", "Squirm"])
+		HypnokinkUtil.addHypnoButtons(self, "hands_free_orgasm_2", "resist", ["Напрягись", "Squirm"])
 		
 	if(state == "hands_free_orgasm_2"):
 		playAnimation(StageScene.SexFreeStanding, "inside", {pc=npcID, npc="pc"})
@@ -474,7 +474,7 @@ func _run():
 	if(state == "hands_free_orgasm_3"):
 		playAnimation(StageScene.SexFreeStanding, "tease", {pc=npcID, npc="pc"})
 		#oh, boy!
-		var cumDesc = " orgasmic pleasure courses through you"
+		var cumDesc = " волны оргазмического наслаждения пронзают тебя"
 		var undiesDesc = null
 		if(GM.pc.getInventory().hasSlotEquipped(InventorySlot.UnderwearBottom)):
 			undiesDesc = (GM.pc.getInventory().getEquippedItem(InventorySlot.UnderwearBottom).getVisibleName().to_lower())
@@ -483,26 +483,26 @@ func _run():
 		if(GM.pc.hasPenis() and GM.pc.hasVagina()):
 			cumDesc = "your "+(RNG.pick(["caged", "locked"]) if GM.pc.isWearingChastityCage() else "")+RNG.pick(["dick", "cock", "member"])
 			if(not GM.pc.getInventory().hasSlotEquipped(InventorySlot.UnderwearBottom) and not GM.pc.getInventory().hasSlotEquipped(InventorySlot.Body)):
-				 cumDesc += " dribbles out its load onto the ground"
+				 cumDesc += " сплевывает свою порцию прямо на землю"
 			else:
 				cumDesc += ""
-			cumDesc += " and your spasming "+RNG.pick(["pussy", "pussy", "slit", "kitty"])
+			cumDesc += " и твои спазмы "+RNG.pick(["pussy", "pussy", "slit", "kitty"])
 			if(not GM.pc.getInventory().hasSlotEquipped(InventorySlot.UnderwearBottom) and not GM.pc.getInventory().hasSlotEquipped(InventorySlot.Body)):
-				 cumDesc += " drips your juices down your thighs"
+				 cumDesc += " твои соки стекают по бедрам"
 			else:
-				cumDesc += " make your "+undiesDesc+" all sticky and wet"
+				cumDesc += " заставляют тебя "+undiesDesc+" всё липкое и мокрое"
 		elif(GM.pc.hasPenis()):
-			cumDesc = "your "+(RNG.pick(["caged", "locked"]) if GM.pc.isWearingChastityCage() else "")+RNG.pick(["dick", "cock", "member"])+" dribbles out its load"
+			cumDesc = "your "+(RNG.pick(["caged", "locked"]) if GM.pc.isWearingChastityCage() else "")+RNG.pick(["dick", "cock", "member"])+" из него вытекает порция"
 			if(not GM.pc.getInventory().hasSlotEquipped(InventorySlot.UnderwearBottom) and not GM.pc.getInventory().hasSlotEquipped(InventorySlot.Body)):
-				 cumDesc += " onto the ground"
+				 cumDesc += " на землю"
 			else:
-				cumDesc += " into your "+undiesDesc
+				cumDesc += " в твои "+undiesDesc
 		elif(GM.pc.hasVagina()):
-			cumDesc = "your spasming "+RNG.pick(["pussy", "pussy", "slit", "kitty"])
+			cumDesc = "твои судорожно сжимающиеся "+RNG.pick(["pussy", "pussy", "slit", "kitty"])
 			if(not GM.pc.getInventory().hasSlotEquipped(InventorySlot.UnderwearBottom) and not GM.pc.getInventory().hasSlotEquipped(InventorySlot.Body)):
-				 cumDesc += " drips your juices down your thighs."
+				 cumDesc += " твои соки стекают по бедрам."
 			else:
-				cumDesc += " makes your "+undiesDesc+" all wet"
+				cumDesc += " заставляет твои "+undiesDesc+" совсем мокрые"
 		
 		saynn("Поскольку твои руки надежно зафиксированы вне досягаемости, тебе остается лишь отчаянно стонать и толчками двигаться навстречу пустоте, пока "+cumDesc+".")
 		saynn("[say=pc]А-а-ах... Хфф...[/say]")
@@ -538,7 +538,7 @@ func _run():
 			
 		saynn("{npc.Name} отпускает твои запястья. Твои руки дрожа поднимаются обратно над головой, и ты...")
 			
-		HypnokinkUtil.addHypnoButtons(self, "pick_subscene", "resist", ["Calm down", "Relax"])
+		HypnokinkUtil.addHypnoButtons(self, "pick_subscene", "resist", ["Успокойся", "Relax"])
 	if(state == "hands_free_orgasm_3_selfdeny"):
 		playAnimation(StageScene.SexFreeStanding, "tease", {pc=npcID, npc="pc"})
 		saynn("Даже когда вспышки удовольствия грозят сбросить тебя с края, тебе каким-то образом удается найти силу воли, чтобы отказать себе в сладком освобождении оргазма. Вместо этого, в отчаянии и от дикого возбуждения, ты замираешь на самом пределе, пока твое тело имитирует физические признаки, которые обычно сопровождают разрядку.")	
@@ -579,7 +579,7 @@ func _run():
 			
 		saynn("{npc.Name} отпускает твои запястья. Твои руки дрожа поднимаются обратно над головой, и ты...")
 			
-		HypnokinkUtil.addHypnoButtons(self, "pick_subscene", "resist", ["Calm down", "Relax"])
+		HypnokinkUtil.addHypnoButtons(self, "pick_subscene", "resist", ["Успокойся", "Relax"])
 		
 	if(state == "finale"):
 		playAnimation(StageScene.Duo, "stand", {npc=npcID})
@@ -663,7 +663,7 @@ func _run():
 				])+"[/say]")
 			
 		saynn("Ты прервал(а) текущий план действий {npc.nameS}. Раз уж ты это сделал(а), тебе стоит просто...")
-		HypnokinkUtil.addHypnoButtons(self, "pick_subscene", "resist_2", [], ["Escape", "Get away", "Resist", "Break away"])
+		HypnokinkUtil.addHypnoButtons(self, "pick_subscene", "resist_2", [], ["Escape", "Убирайся", "Resist", "Вырваться"])
 		
 	if(state == "resist_2"):
 		playAnimation(StageScene.Solo, "walk")

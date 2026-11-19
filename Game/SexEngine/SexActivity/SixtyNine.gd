@@ -94,7 +94,7 @@ func startActivity(_args):
 	
 	var domPartNameStr:String = "{dom.pussyStretch} pussy" if subFocus == BodypartSlot.Vagina else "{dom.penis}"
 	if(getDom().getFirstItemThatCoversBodypart(subFocus) != null):
-		domPartNameStr = "covered up "+domPartNameStr
+		domPartNameStr = "прикрыты "+domPartNameStr
 	
 	var subPartNameStr:String = "{sub.pussyStretch} pussy" if domFocus == BodypartSlot.Vagina else "{sub.penis}"
 	if(getSub().getFirstItemThatCoversBodypart(domFocus) != null):

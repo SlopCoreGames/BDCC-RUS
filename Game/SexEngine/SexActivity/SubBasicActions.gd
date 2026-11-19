@@ -108,16 +108,16 @@ func startActivity(_args):
 	if(actionID in ["tease"]):
 		endActivity()
 		var possible:Array = [
-			"{sub.You} {sub.youVerb('tease')} {dom.youHim} with {sub.yourHis} body.",
+			"{sub.You} {sub.youVerb('tease')} {dom.youHim} с {sub.yourHis} телом.",
 		]
 		if(isStocksSex()):
 			possible = [
-				"{sub.You} {sub.youVerb('tease')} {dom.youHim} with {sub.yourHis} body while still trapped in stocks.",
-				"{sub.You} {sub.youVerb('wiggle')} {sub.yourHis} lower part of the body seductively.",
+				"{sub.You} {sub.youVerb('tease')} {dom.youHim} с {sub.yourHis} телом, всё еще будучи зажатой в колодках.",
+				"{sub.You} {sub.youVerb('wiggle')} {sub.yourHis} нижней частью тела соблазнительно.",
 			]
 		if(getSub().isGagged()):
 			possible.append_array([
-				"{sub.You} {sub.youVerb('mumble')} something incoherent {dom.youHim}.",
+				"{sub.You} {sub.youVerb('mumble')} что-то бессвязное {dom.youHim}.",
 			])
 		else:
 			possible.append_array([
@@ -126,7 +126,7 @@ func startActivity(_args):
 			])
 		if(getSub().bodypartHasTrait(BodypartSlot.Tail, PartTrait.TailFlexible)):
 			possible.append_array([
-				"{sub.You} {sub.youVerb('sway')} {sub.yourHis} tail seductively at {dom.youHim}.",
+				"{sub.You} {sub.youVerb('sway')} {sub.yourHis} хвостом соблазнительно на {dom.youHim}.",
 			])
 		if(getSub().hasBigBreasts()):
 			possible.append_array([
@@ -134,12 +134,12 @@ func startActivity(_args):
 			])
 		if(getSexType() == SexType.SlutwallSex):
 			possible = [
-				"{sub.You} {sub.youVerb('tease')} {dom.youHim} with {sub.yourHis} body while still trapped in the slutwall.",
-				"{sub.You} {sub.youVerb('wiggle')} {sub.yourHis} lower part of the body seductively.",
+				"{sub.You} {sub.youVerb('tease')} {dom.youHim} с {sub.yourHis} телом, всё еще будучи зажатой в шлюзовой стене.",
+				"{sub.You} {sub.youVerb('wiggle')} {sub.yourHis} нижней частью тела соблазнительно.",
 			]
 			if(getSub().bodypartHasTrait(BodypartSlot.Tail, PartTrait.TailFlexible)):
 				possible.append_array([
-					"{sub.You} {sub.youVerb('sway')} {sub.yourHis} tail seductively at {dom.youHim}.",
+					"{sub.You} {sub.youVerb('sway')} {sub.yourHis} хвостом соблазнительно на {dom.youHim}.",
 				])
 			
 		var text:String = RNG.pick(possible)

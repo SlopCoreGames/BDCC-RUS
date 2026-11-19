@@ -25,11 +25,11 @@ func _run():
 		else:
 			saynn("[say=vion]Что ты задумала?[/say]")
 		
-		addSessionButton("Session zero", "An introductory session", HK_Sessions.BodySessionZero)
-		addSessionButton("Relaxation", "Drift in peace for a while", HK_Sessions.BodyStaminaRestore)
-		addSessionButton("Tension relief", "Relieve tension and become more flexible", HK_Sessions.BodyDodgeBuff)
-		addSessionButton("Pain tolerance", "Increase your pain tolerance", HK_Sessions.BodyMaxPainBuff)
-		addSessionButton("Bondage", "Experience a bondage scenario in the safety of your own mind", HK_Sessions.BodyBondage)
+		addSessionButton("Нулевая сессия", "Вводная сессия", HK_Sessions.BodySessionZero)
+		addSessionButton("Relaxation", "Спокойное погружение в транс", HK_Sessions.BodyStaminaRestore)
+		addSessionButton("Снятие напряжения", "Снятие напряжения и повышение гибкости", HK_Sessions.BodyDodgeBuff)
+		addSessionButton("Болевой порог", "Повышение болевого порога", HK_Sessions.BodyMaxPainBuff)
+		addSessionButton("Bondage", "Бондаж-сценарий в безопасности вашего собственного разума", HK_Sessions.BodyBondage)
 
 		addButton("Проехали", "Передумала насчет того, чтобы передумать", "endthescene")
 		# (scene ends)
@@ -72,12 +72,12 @@ func onCooldown() -> bool:
 
 func getCostString(bodyId: String) -> String:
 	if(getFlag("HypnokinkModule.FreebieSessionSample", true)):
-		return "First one is free"
+		return "Первая сессия — бесплатно"
 	elif(getFlag("HypnokinkModule.RushSubdued", false)):
-		return "Your sessions are on the house"
+		return "Сессии за счет заведения"
 	elif(getFlag("HypnokinkModule.OnTheHouseSessions", 0) > 0):
 		var freebies = getFlag("HypnokinkModule.OnTheHouseSessions")
-		return "You have "+str(freebies)+" free " + ("sessions" if freebies > 1 else "session") + " remaining"
+		return "У тебя есть "+str(freebies)+" free " + ("sessions" if freebies > 1 else "session") + " remaining"
 	else:
 		return str(SessionCostMap[bodyId]) + (" credits" if SessionCostMap[bodyId] != 1 else " credit")
 

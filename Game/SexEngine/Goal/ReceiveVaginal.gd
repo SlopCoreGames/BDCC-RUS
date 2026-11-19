@@ -43,13 +43,13 @@ func canBegFor() -> bool:
 	return true
 
 func getBegName() -> String:
-	return "Ride me (vag)"
+	return "Скачи на мне (ваг)"
 
 func getBegCategory() -> Array:
 	return BegCategorySex
 
 func getBegDesc() -> String:
-	return "Beg the dom to ride your cock with their pussy!"
+	return "Умоляй доминанта оседлать твой член своей киской!"
 
 func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 	var _isBusy:bool = _sexEngine.hasTag(_subInfo.charID, SexActivityTag.HavingSex)
@@ -57,9 +57,9 @@ func getBegMessage(_sexEngine, _domInfo, _subInfo) -> String:
 	var _isCockFree:bool = (_subInfo.getChar().getFirstItemThatCoversBodypart(BodypartSlot.Penis) == null)
 
 	if(!_isBusy && !_hasBlockedArms && _isCockFree):
-		return "{sub.You} {sub.youVerb('offer')} {dom.you} to ride {sub.yourHis} {sub.penis} with {dom.yourHis} pussy."
+		return "{sub.You} {sub.youVerb('offer')} {dom.you}, чтобы оседлать {sub.yourHis} {sub.penis} своей {dom.yourHis} киской."
 	
-	return "{sub.You} {sub.youVerb('offer')} {dom.you} to ride {sub.yourHis} {sub.penis} with {dom.yourHis} pussy."
+	return "{sub.You} {sub.youVerb('offer')} {dom.you}, чтобы оседлать {sub.yourHis} {sub.penis} своей {dom.yourHis} киской."
 
 func getBegDialogue(_sexEngine, _domInfo, _subInfo) -> String:
 	return RNG.pick([

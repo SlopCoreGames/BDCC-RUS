@@ -59,7 +59,7 @@ func onInteractionEvent(_eventID:String, _args:Dictionary):
 	pass
 
 func getTaskString():
-	return "Do a backflip!"
+	return "Сделай сальто назад!"
 
 func getTaskStringSlutLock():
 	return getTaskString()

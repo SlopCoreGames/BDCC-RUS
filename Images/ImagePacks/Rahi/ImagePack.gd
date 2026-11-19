@@ -76,7 +76,7 @@ func _init():
 	addCharacter("skar", [], "res://Images/ImagePacks/Rahi/Characters/skar/skar.png")
 	addCharacter("skar", ["naked"], "res://Images/ImagePacks/Rahi/Characters/skar/skar-naked.png")
 	
-	addSceneImageCustomArtist("SocketTalkScene", "look_poster", "res://Images/ImagePacks/Rahi/Scenes/socket.webp", 500, "Sompurr and Rahi")
+	addSceneImageCustomArtist("SocketTalkScene", "look_poster", "res://Images/ImagePacks/Rahi/Scenes/socket.webp", 500, "Сомпурр и Рахи")
 	#addSceneImageCustomArtist("SocketIntroScene", "naked_engineer", "res://Images/ImagePacks/Rahi/Scenes/socket_nobackground.webp", 500, "Sompurr and Rahi")
 	addSceneImageCustomArtist("SocketHelp2Scene", "socket_gets_stuck", "res://Images/ImagePacks/Rahi/Scenes/socket_stuck.webp", 400, "Sompurr")
 	addSceneImageCustomArtist("SocketHelp2Scene", "socket_rough_pussy_cuminside", "res://Images/ImagePacks/Rahi/Scenes/socket_stuck_cum.webp", 400, "Sompurr")

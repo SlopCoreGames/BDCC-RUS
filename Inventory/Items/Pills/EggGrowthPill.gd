@@ -25,7 +25,7 @@ func useInCombat(_attacker, _receiver):
 	if(theCycle):
 		theCycle.boostBigEggs()
 	
-	return "You swallow the EggBoost pill!"
+	return "Вы проглатываете таблетку EggBoost!"
 
 func getPossibleActions():
 	return [
@@ -79,7 +79,7 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	
 	return {
 		"name": "Ускоритель роста яиц",
-		"usedName": "an EggBoost pill",
+		"usedName": "таблетка EggBoost",
 		"desc": getDescription(),
 		"scoreOnSub": 0.0,
 		"scoreOnSelf": 0.0,

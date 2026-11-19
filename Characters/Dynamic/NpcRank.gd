@@ -16,12 +16,12 @@ const Executor = "Executor"
 
 static func getVisibleName(rankID):
 	if(rankID == SpaceCadet):
-		return "Space Cadet"
+		return "Космический кадет"
 	if(rankID == ChiefInspector):
-		return "Chief Inspector"
+		return "Главный инспектор"
 	if(rankID == PettyOfficer):
-		return "Petty Officer"
+		return "Младший офицер"
 	if(rankID == ChiefPettyOfficer):
-		return "Chief Petty Officer"
+		return "Старший главный старшина"
 
 	return str(rankID)

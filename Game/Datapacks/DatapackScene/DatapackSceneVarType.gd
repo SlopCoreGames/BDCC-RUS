@@ -19,7 +19,7 @@ static func getName(theType):
 	if(theType == ANY):
 		return "Any"
 	
-	return "ERROR?"
+	return "ОШИБКА?"
 
 static func getDefaultValue(theType):
 	if(theType == BOOL):

@@ -8,7 +8,7 @@ func _init():
 
 func _ready():
 	for fetishID in GlobalRegistry.getFetishes():
-		var fetishStr = "Fetish."+fetishID
+		var fetishStr = "Фетиш."+fetishID
 		$VBoxContainer/HBoxContainer/OptionButton.add_item(fetishStr)
 		fetishList.append(fetishStr)
 	if(fetishList.size() > 0):
@@ -18,7 +18,7 @@ func fillWithGoals():
 	fetishList.clear()
 	$VBoxContainer/HBoxContainer/OptionButton.clear()
 	for fetishID in GlobalRegistry.getSexGoals():
-		var fetishStr = "SexGoal."+fetishID
+		var fetishStr = "Секс-цель."+fetishID
 		$VBoxContainer/HBoxContainer/OptionButton.add_item(fetishStr)
 		fetishList.append(fetishStr)
 	if(fetishList.size() > 0):

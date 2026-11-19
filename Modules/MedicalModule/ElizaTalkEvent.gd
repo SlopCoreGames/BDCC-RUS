@@ -7,7 +7,7 @@ func registerTriggers(es):
 	es.addTrigger(self, Trigger.EnteringRoom, "med_lobbymain")
 
 func run(_triggerID, _args):
-	if(checkCharacterBusy("ElizaBusy", "Seems like Doctor Quinn is not here", "Dr. Quinn")):
+	if(checkCharacterBusy("ElizaBusy", "Похоже, доктора Куинн здесь нет", "Dr. Quinn")):
 		return
 	
 	if(getFlag("MedicalModule.Mental_PlayerEscaped") || getFlag("MedicalModule.Eliza_BusyDays", 0) > 0):

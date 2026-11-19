@@ -15,7 +15,7 @@ func getPillName() -> String:
 
 func getUnlockData() -> Dictionary:
 	return {
-		eliza = "Interesting. This pill contains a DNA of some species. But not enough to override everything.. I think this pill will create a.. hybrid of sorts. A blend of two species. Isn't that cool? I think I will call it.. 'Hybridizer'",
+		eliza = "Интересно. В этой таблетке содержится ДНК какого-то вида. Но недостаточно, чтобы полностью всё переписать... Думаю, эта таблетка создаст своего рода... гибрид. Смесь двух видов. Разве это не круто? Пожалуй, назову её... «Гибридизатор»",
 		tryOptions = [
 			{
 				name = "Заставить Элизу сожрать это",
@@ -26,7 +26,7 @@ func getUnlockData() -> Dictionary:
 	}
 
 func getPillDatabaseDesc() -> String:
-	return "This drug will make a hybrid out of you, morphing some of your body parts to ones of a different species. The drug will attempt to gradually morph these parts:\n- Ears\n- Horns\n- Tail\n- Penis\n- Legs\n\nThe first stage will happen after about 15 minutes. After that, the next ones will happen roughly every 10 hours. Each next stage will take longer than the last. This could be accelerated only by using the QuickShift drug.\n\nThis drug doesn’t have a set amount of stages. It will reach its final stage when there is nothing left to transform. It’s possible to modify the drug to pick the target species by using the advanced lab equipment."
+	return "Этот препарат превратит тебя в гибрида, трансформируя некоторые части твоего тела в части другого вида. Препарат попытается постепенно изменить следующие части:\n- Уши\n- Рога\n- Хвост\n- Пенис\n- Ноги\n\nПервая стадия наступит примерно через 15 минут. После этого последующие будут происходить примерно каждые 10 часов. Каждая следующая стадия будет длиться дольше предыдущей. Ускорить процесс можно только с помощью препарата «QuickShift».\n\nУ этого препарата нет фиксированного количества стадий. Он достигнет финальной стадии, когда трансформировать будет больше нечего. С помощью продвинутого лабораторного оборудования препарат можно модифицировать, чтобы выбрать целевой вид."
 
 func getTFCheckTags() -> Dictionary:
 	return {

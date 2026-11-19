@@ -10,7 +10,7 @@ func getName() -> String:
 	return "Сломленная психика"
 
 func getButtonDesc() -> String:
-	return "Point out the slave's broken mind.. Might cause a big reaction, positive or negative.\n\n[b]Might[/b] reveal 1 personality preference of each bidder."
+	return "Укажите на сломленный разум рабыни... Это может вызвать бурную реакцию, как положительную, так и отрицательную.\n\n[b]Может[/b] раскрыть по одной черте характера каждого участника аукциона."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([

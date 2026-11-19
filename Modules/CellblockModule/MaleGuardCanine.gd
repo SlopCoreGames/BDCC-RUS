@@ -69,7 +69,7 @@ func _init():
 	}
 	
 func _getName():
-	return "Male guard"
+	return "Мужчина-охранник"
 
 func getGender():
 	return Gender.Male

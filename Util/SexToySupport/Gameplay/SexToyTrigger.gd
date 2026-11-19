@@ -31,25 +31,25 @@ enum {
 }
 
 const NAMES:Array = [
-	["Lust (passive)", "The higher your character's lust is, the stronger the effects will be. Passive triggers repeat infinitely.", "The lower your character's lust is, the stronger the effects will be."],
-	["Pain (passive)", "The higher your character's pain is, the stronger the effects will be. Passive triggers repeat infinitely.", "The lower your character's pain is, the stronger the effects will be."],
-	["Exhaustion (passive)", "The lower your character's stamina is, the stronger the effects will be. Passive triggers repeat infinitely.", "The higher your character's stamina is, the stronger the effects will be."],
-	["Arousal (passive)", "The higher your character's arousal is, the stronger the effects will be. Passive triggers repeat infinitely.", "The lower your character's arousal is, the stronger the effects will be."],
+	["Lust (passive)", "Чем выше уровень похоти вашего персонажа, тем сильнее будут эффекты. Пассивные триггеры срабатывают бесконечно.", "Чем ниже уровень похоти вашего персонажа, тем сильнее будут эффекты."],
+	["Pain (passive)", "Чем выше уровень боли вашего персонажа, тем сильнее будут эффекты. Пассивные триггеры срабатывают бесконечно.", "Чем ниже уровень боли вашего персонажа, тем сильнее будут эффекты."],
+	["Exhaustion (passive)", "Чем ниже уровень выносливости вашего персонажа, тем сильнее будут эффекты. Пассивные триггеры срабатывают бесконечно.", "Чем выше уровень выносливости вашего персонажа, тем сильнее будут эффекты."],
+	["Arousal (passive)", "Чем выше уровень возбуждения вашего персонажа, тем сильнее будут эффекты. Пассивные триггеры срабатывают бесконечно.", "Чем ниже уровень возбуждения вашего персонажа, тем сильнее будут эффекты."],
 	
-	["Pain Gain", "Trigger effects when your character receives pain."],
-	["Lust Gain", "Trigger effects when your character receives lust."],
-	["Arousal Gain", "Trigger effects when your character receives arousal."],
-	["Orgasm", "Trigger effects when your character orgasms."],
-	["Throat penetrated", "Trigger effects when your character's throat get penetrated. Only happens in sex engine."],
-	["Hole penetrated", "Trigger effects when your character's vagina or anus (all but throat) get penetrated. Only happens in sex engine."],
-	["Penetrating hole", "Trigger effects when your character penetrates someone's holes with their penis or strapon. Only happens in sex engine."],
-	["Hole Stretched Painfully", "Trigger effects when one of your character's holes gets stretched painfully."],
-	["Wounded", "Trigger effects when you get the 'Wounded' status effect."],
-	["Lose Consciousness", "Trigger effects when you fully lose your consciousness during sex."],
-	["Fight Defeat", "Trigger effects when your character loses a fight."],
-	["Fight Win", "Trigger effects when your character wins a fight."],
-	["Giving birth/Egglaying", "Trigger effects when your character gives birth or lays an egg."],
-	["Bondage'd", "Trigger effects when your character wears a locked piece of bondage gear."],
+	["Прирост боли", "Активировать эффекты, когда ваш персонаж получает боль."],
+	["Прирост похоти", "Активирует эффекты, когда ваш персонаж испытывает похоть."],
+	["Прирост возбуждения", "Активирует эффекты, когда ваш персонаж испытывает возбуждение."],
+	["Orgasm", "Активирует эффекты при оргазме персонажа."],
+	["Проникновение в горло", "Активирует эффекты при проникновении в горло персонажа. Срабатывает только в секс-движке."],
+	["Проникновение в отверстие", "Активирует эффекты при проникновении во влагалище или анус (все, кроме горла). Срабатывает только в секс-движке."],
+	["Проникающее отверстие", "Активирует эффекты, когда ваш персонаж проникает в чьи-то отверстия своим членом или страпоном. Работает только в секс-движке."],
+	["Болезненное растяжение отверстия", "Активирует эффекты, когда одно из отверстий вашего персонажа болезненно растягивается."],
+	["Wounded", "Активирует эффекты при получении статуса «Ранен»."],
+	["Потеря сознания", "Активирует эффекты, когда вы полностью теряете сознание во время секса."],
+	["Поражение в бою", "Активирует эффекты, когда ваш персонаж проигрывает бой."],
+	["Победа в бою", "Активирует эффекты, когда ваш персонаж выигрывает бой."],
+	["Роды / Откладывание яиц", "Активирует эффекты, когда ваш персонаж рожает или откладывает яйцо."],
+	["Bondage'd", "Активирует эффекты, когда на персонаже надета заблокированная экипировка для бондажа."],
 ]
 
 static func getName(_trigger:int) -> String:
@@ -87,10 +87,10 @@ static func supportsScaleWithValue(_trigger:int) -> bool:
 
 static func supportsScaleWithValueTexts(_trigger:int) -> Array:
 	if(_trigger == OnPainGain):
-		return ["Scale with pain gain", "pain"]
+		return ["Масштабируется от получения боли", "pain"]
 	if(_trigger == OnLustGain):
-		return ["Scale with lust gain", "lust"]
+		return ["Масштабируется от получения похоти", "lust"]
 	if(_trigger == OnArousalGain):
-		return ["Scale with arousal gain", "arousal %"]
+		return ["Масштабируется от получения возбуждения", "arousal %"]
 	
 	return []

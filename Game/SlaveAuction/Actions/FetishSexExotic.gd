@@ -4,7 +4,7 @@ func _init():
 	id = "FetishSexExotic"
 
 func getButtonDesc() -> String:
-	return "Tell the bidder's about the slave's exotic fetishes like feetplay and rimming.\n\n[b]Might[/b] reveal 1 personality preference of each bidder."
+	return "Расскажите участникам аукциона об экзотических фетишах рабыни, таких как футплей и римминг.\n\n[b]Возможно[/b] раскроет по одной черте характера каждого участника."
 
 func getActionType():
 	return AuctionActionType.Fetish

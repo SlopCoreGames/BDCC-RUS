@@ -19,7 +19,7 @@ func canTeach(_npc):
 	return true
 
 func getEnslaveText(_npc):
-	return "[say=pc]MEOW MEOW.[/say]"
+	return "[say=pc]МЯУ-МЯУ![/say]"
 
 # F- F  F+ D- D  D+ C- C  B- B  A- A  S- S  S+ S++
 # 0  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15
@@ -30,19 +30,19 @@ func getTrainText(_npc, _skillLevel):
 	])
 
 func getFailedTrainTextGreatSuccess(_npc):
-	return "{npc.name} is making great progress!"
+	return "{npc.name} делает огромные успехи!"
 
 func getFailedTrainTextSomeSuccess(_npc):
-	return "{npc.name} is making some progress."
+	return "{npc.name} делает определенные успехи."
 
 func getFailedTrainTextResist(_npc):
-	return "{npc.name} actively resists any attempts to be trained. That deserves a punishment."
+	return "{npc.name} активно сопротивляется любым попыткам дрессировки. Это заслуживает наказания."
 
 func getFailedTrainTextWeak(_npc):
-	return "{npc.name} can barely follow your instructions, looking extremely weak and tired."
+	return "{npc.name} едва понимает твои инструкции, выглядя крайне слабой и изнуренной."
 
 func getFailedTrainTextBad(_npc):
-	return "{npc.name} is doing a poor job following your lesson."
+	return "{npc.name} из рук вон плохо справляется с твоим уроком."
 
 func getUnlockHints(_npc):
 	return [

@@ -11,24 +11,24 @@ static func getAll() -> Array:
 
 static func getButtonName(focus) -> String:
 	if(focus == Body):
-		return "Present body"
+		return "Представить тело"
 	if(focus == Breasts):
-		return "Present breasts"
+		return "Представить грудь"
 	if(focus == Butt):
-		return "Present butt"
+		return "Представить задницу"
 	if(focus == Crotch):
-		return "Present crotch"
+		return "Представить промежность"
 	
-	return "Error?"
+	return "Ошибка?"
 
 static func getButtonDesc(focus) -> String:
 	if(focus == Body):
-		return "Show off your body!"
+		return "Показать своё тело!"
 	if(focus == Breasts):
-		return "Flash your breasts!"
+		return "Показать грудь!"
 	if(focus == Butt):
-		return "Present your rear to them"
+		return "Подставить им свою задницу"
 	if(focus == Crotch):
-		return "Present crotch and everything that's between your legs"
+		return "Показать промежность и всё, что между ног"
 	
-	return "Error?"
+	return "Ошибка?"

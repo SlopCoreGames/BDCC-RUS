@@ -33,13 +33,13 @@ func onSexEvent(_npc, _event:SexEvent):
 	return false
 
 func getTaskString():
-	return "Force to lactate"
+	return "Принудительная лактация"
 
 func getTaskStringSlutLock():
-	return "Begin lactating"
+	return "Начать лактацию"
 
 func getTaskHint(_isSlaveLevelup):
-	return "Squeeze their breasts until the milk starts coming out"
+	return "Сжимать грудь, пока не потечет молоко"
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [

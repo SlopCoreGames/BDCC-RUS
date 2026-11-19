@@ -465,12 +465,12 @@ func decayValue(theValue:float, howMuch:float, statModifier:float = 0.0, statEff
 
 func getRewardBalanceString():
 	if(rewardBalance == 0):
-		return "doesn't deserve rewards or punishments"
+		return "не заслуживает ни наград, ни наказаний"
 	if(rewardBalance > 0):
-		var rewardTexts = ["deserves a [b]small[/b] reward", "deserves a [b]normal[/b] reward", "deserves a [b]big[/b] reward", "deserves the [b]best[/b] reward"]
+		var rewardTexts = ["заслуживает [b]маленькую[/b] награду", "заслуживает [b]обычную[/b] награду", "заслуживает [b]большую[/b] награду", "заслуживает [b]лучшую[/b] награду"]
 		return rewardTexts[Util.mini(rewardBalance-1, rewardTexts.size()-1)]
 	else:
-		var punishText = ["deserves a [b]small[/b] punishment", "deserves a [b]normal[/b] punishment", "deserves a [b]big[/b] punishment", "deserves the [b]biggest[/b] punishment"]
+		var punishText = ["заслуживает [b]маленькое[/b] наказание", "заслуживает [b]обычное[/b] наказание", "заслуживает [b]большое[/b] наказание", "заслуживает [b]самое суровое[/b] наказание"]
 		return punishText[Util.mini(-rewardBalance-1, punishText.size()-1)]
 		
 # 1 = small punishment
@@ -723,13 +723,13 @@ func doTrain():
 		
 		for unlockInfo in allUnlocks:
 			if(unlockInfo["unlocksAt"] == newSkillLevel):
-				extraTexts.append("[i]"+unlockInfo["name"]+" unlocked! "+unlockInfo["text"]+"[/i]")
+				extraTexts.append("[i]"+unlockInfo["name"]+" открыто! "+unlockInfo["text"]+"[/i]")
 				unlockedSomething = true
 				
 		if(unlockedSomething):
 			for unlockInfo in allUnlocks:
 				if(unlockInfo["unlocksAt"] > newSkillLevel):
-					extraTexts.append("[i]Next unlock is "+unlockInfo["name"]+" at rank "+rankToLetter(unlockInfo["unlocksAt"])+"[/i]")
+					extraTexts.append("[i]Следующая разблокировка: "+unlockInfo["name"]+" на ранге "+rankToLetter(unlockInfo["unlocksAt"])+"[/i]")
 					break
 	
 	texts.append_array(extraTexts)
@@ -1010,49 +1010,49 @@ func learnNewSkill(theSlaveType):
 		slaveSpecializations[theSlaveType] = 0
 
 const IDLE_DB = [
-	{stats={obedience=1.0,love=0.0,brokenspirit=1.0}, message="{npc.HeShe} stands still, eyes empty, waiting for your orders. There is nothing left inside {npc.himHer}, only blind obedience."},
-	{stats={obedience=0.0,love=0.0,brokenspirit=0.0}, message="{npc.HeShe} glares at you with hate. {npc.HisHer} body is tense, ready to fight if given a chance."},
-	{stats={obedience=0.2,love=0.0,brokenspirit=0.0}, message="{npc.HeShe} looks at you with anger but stays quiet. {npc.HeShe} is not ready to obey yet."},
-	{stats={obedience=0.5,love=0.0,brokenspirit=0.3}, message="{npc.HeShe} looks tired but still defiant. {npc.HisHer} spirit is cracking, but not gone."},
-	{stats={obedience=1.0,love=0.1,trust=0.0}, message="{npc.HeShe} stands with perfect obedience, but {npc.his} eyes show no trust or warmth."},
-	{stats={obedience=1.0,love=0.5,trust=0.3}, message="{npc.HeShe} obeys you without question. There is a little care in {npc.his} eyes, but not much."},
-	{stats={obedience=0.8,love=0.2,fear=0.8}, message="{npc.HeShe} stands stiff and nervous, afraid to do anything wrong."},
-	{stats={obedience=0.9,love=0.8,brokenspirit=1.0}, message="{npc.HeShe} stands close, loving and broken, ready to do anything for you."},
-	{stats={love=1.0,obedience=0.1,trust=0.0}, message="{npc.HeShe} smiles weakly at you. {npc.HeShe} cares for you, but does not obey easily."},
-	{stats={love=1.0,obedience=1.0,brokenspirit=1.0}, message="{npc.HeShe} looks at you with both love and complete obedience. Nothing else matters for {npc.him}."},
-	{stats={love=1.0,trust=0.5,fear=0.0}, message="{npc.HeShe} looks at you softly. You can see love and some trust in {npc.his} eyes."},
-	{stats={brokenspirit=1.0,fear=1.0,love=0.0}, message="{npc.HeShe} stands like an empty doll, too broken to fight, too afraid to move without you."},
-	{stats={brokenspirit=0.0,fear=0.0,awareness=1.0}, message="{npc.HeShe} watches you sharply, alert and proud. {npc.HeShe} will not break easily."},
-	{stats={brokenspirit=0.3,fear=0.5,awareness=0.8,trust=0.1}, message="{npc.HeShe} looks wary and tense. {npc.HeShe} knows what you can do and does not trust you."},
-	{stats={spoiling=1.0,love=1.0,fear=0.0,brokenspirit=0.2}, message="{npc.HeShe} smiles sweetly and leans toward you, expecting kindness and gifts."},
-	{stats={spoiling=0.8,love=0.4,obedience=0.3}, message="{npc.HeShe} looks at you with hope, like {npc.heShe} wants something in return for being good."},
-	{stats={tiredness=1.0,obedience=1.0}, message="{npc.HeShe} can hardly stand, barely awake, still trying to follow your orders."},
-	{stats={tiredness=0.9,fear=0.6,brokenspirit=0.1}, message="{npc.HeShe} looks exhausted and scared, but there is still some will left in {npc.himHer}."},
-	{stats={despair=1.0,love=0.0}, message="{npc.HeShe} stares at the ground with empty eyes. {npc.HeShe} has given up all hope."},
-	{stats={despair=0.6,love=0.7}, message="{npc.HeShe} clings to you in silence. There is love, but also deep sadness inside {npc.himHer}."},
-	{stats={obedience=0.6,love=0.6,trust=0.7}, message="{npc.HeShe} waits quietly for your word. {npc.HeShe} trusts you and wants to please you."},
-	{stats={obedience=0.4,love=0.3,fear=0.4}, message="{npc.HeShe} looks at you with mixed feelings, unsure if {npc.heShe} should obey or resist."},
-	{stats={fear=1.0,obedience=0.9,love=0.0}, message="{npc.HeShe} obeys with shaking hands. Fear controls every move {npc.heShe} makes."},
-	{stats={fear=0.2,trust=1.0,love=0.8}, message="{npc.HeShe} looks calm and soft, feeling safe with you."},
-	{stats={fear=0.7,brokenspirit=0.2,awareness=0.8}, message="{npc.HeShe} watches you nervously, alert and scared, but not broken yet."},
+	{stats={obedience=1.0,love=0.0,brokenspirit=1.0}, message="{npc.HeShe} стоит неподвижно, взгляд пустой, в ожидании твоих приказов. Внутри {npc.himHer} больше ничего не осталось, лишь слепое послушание."},
+	{stats={obedience=0.0,love=0.0,brokenspirit=0.0}, message="{npc.HeShe} свирепо смотрит на тебя, полная ненависти. {npc.HisHer} тело напряжено, готовое к схватке, если представится случай."},
+	{stats={obedience=0.2,love=0.0,brokenspirit=0.0}, message="{npc.HeShe} смотрит на тебя с гневом, но молчит. {npc.HeShe} еще не готова подчиняться."},
+	{stats={obedience=0.5,love=0.0,brokenspirit=0.3}, message="{npc.HeShe} выглядит уставшей, но всё ещё держится с вызовом. Дух {npc.HisHer} надломлен, но ещё не сломлен."},
+	{stats={obedience=1.0,love=0.1,trust=0.0}, message="{npc.HeShe} стоит с безупречным послушанием, но во взгляде {npc.his} нет ни доверия, ни тепла."},
+	{stats={obedience=1.0,love=0.5,trust=0.3}, message="{npc.HeShe} беспрекословно подчиняется тебе. В глазах {npc.his} читается легкая настороженность, но не более того."},
+	{stats={obedience=0.8,love=0.2,fear=0.8}, message="{npc.HeShe} стоит напряженно и нервно, боясь сделать хоть малейшую ошибку."},
+	{stats={obedience=0.9,love=0.8,brokenspirit=1.0}, message="{npc.HeShe} стоит рядом — любящая и сломленная, готовая на всё ради тебя."},
+	{stats={love=1.0,obedience=0.1,trust=0.0}, message="{npc.HeShe} слабо улыбается тебе. {npc.HeShe} привязана к тебе, но подчиняется не так уж легко."},
+	{stats={love=1.0,obedience=1.0,brokenspirit=1.0}, message="{npc.HeShe} смотрит на тебя с любовью и полным послушанием. Для {npc.him} больше ничего не имеет значения."},
+	{stats={love=1.0,trust=0.5,fear=0.0}, message="{npc.HeShe} смотрит на тебя нежно. В глазах {npc.his} читаются любовь и проблески доверия."},
+	{stats={brokenspirit=1.0,fear=1.0,love=0.0}, message="{npc.HeShe} стоит как пустая кукла — слишком сломленная, чтобы сопротивляться, и слишком напуганная, чтобы шелохнуться без тебя."},
+	{stats={brokenspirit=0.0,fear=0.0,awareness=1.0}, message="{npc.HeShe} пристально наблюдает за тобой, настороженная и гордая. {npc.HeShe} не так-то просто сломить."},
+	{stats={brokenspirit=0.3,fear=0.5,awareness=0.8,trust=0.1}, message="{npc.HeShe} выглядит настороженной и напряженной. {npc.HeShe} знает, на что ты способен, и не доверяет тебе."},
+	{stats={spoiling=1.0,love=1.0,fear=0.0,brokenspirit=0.2}, message="{npc.HeShe} сладко улыбается и тянется к тебе, ожидая доброты и подарков."},
+	{stats={spoiling=0.8,love=0.4,obedience=0.3}, message="{npc.HeShe} смотрит на тебя с надеждой, будто {npc.heShe} хочет получить что-то взамен за свое послушание."},
+	{stats={tiredness=1.0,obedience=1.0}, message="{npc.HeShe} едва держится на ногах, почти не проснувшись, но всё еще пытается выполнять твои приказы."},
+	{stats={tiredness=0.9,fear=0.6,brokenspirit=0.1}, message="{npc.HeShe} выглядит изможденной и напуганной, но в {npc.himHer} всё еще теплится остаток воли."},
+	{stats={despair=1.0,love=0.0}, message="{npc.HeShe} пусто смотрит в землю. {npc.HeShe} потерял(а) всякую надежду."},
+	{stats={despair=0.6,love=0.7}, message="{npc.HeShe} молча прижимается к тебе. Внутри у {npc.himHer} любовь, но и глубокая печаль."},
+	{stats={obedience=0.6,love=0.6,trust=0.7}, message="{npc.HeShe} тихо ждет твоего слова. {npc.HeShe} доверяет тебе и хочет угодить."},
+	{stats={obedience=0.4,love=0.3,fear=0.4}, message="{npc.HeShe} смотрит на тебя со смешанными чувствами, не зная, стоит ли {npc.heShe} подчиняться или сопротивляться."},
+	{stats={fear=1.0,obedience=0.9,love=0.0}, message="{npc.HeShe} повинуется дрожащими руками. Страх управляет каждым движением {npc.heShe}."},
+	{stats={fear=0.2,trust=1.0,love=0.8}, message="{npc.HeShe} выглядит спокойным(ой) и мягким(ой), чувствуя себя в безопасности рядом с тобой."},
+	{stats={fear=0.7,brokenspirit=0.2,awareness=0.8}, message="{npc.HeShe} нервно наблюдает за тобой, настороженно и испуганно, но еще не сломленный(ая)."},
 
-	{stats={obedience=0.95,love=0.6,trust=0.9,fear=0.1,despair=0.0,tiredness=0.2}, message="{npc.HeShe} stands close, calm and trusting. {npc.HisHer} eyes shine with love, and there is no fear. {npc.HeShe} looks ready to serve because {npc.heShe} wants to, not because {npc.heShe} has to."},
-	{stats={obedience=0.8,love=0.4,trust=0.2,fear=0.7,brokenspirit=0.6,tiredness=0.9}, message="{npc.HeShe} kneels low, trembling, sweat on {npc.his} skin. There is fear in {npc.his} eyes and signs of a broken spirit. {npc.HeShe} obeys, but the cost shows in {npc.his} tired body."},
-	{stats={obedience=0.1,love=1.0,trust=0.3,fear=0.8,spoiling=0.9,awareness=0.7}, message="{npc.HeShe} leans toward you with longing, eyes wet. {npc.HeShe} loves you, but fear keeps {npc.himHer} tense. There is a spoiled tilt to {npc.his} chin, like {npc.heShe} still expects kindness."},
-	{stats={obedience=0.4,love=0.3,trust=0.0,fear=0.9,despair=0.8,brokenspirit=0.5}, message="{npc.HeShe} does not look up. {npc.HeShe} shakes and breathes fast, full of fear and despair. Obedience is there, but only because hope is almost gone."},
-	{stats={obedience=1.0,love=1.0,trust=0.9,fear=0.0,spoiling=0.8,tiredness=0.1}, message="{npc.HeShe} stands proud and happy in front of you. {npc.HeShe} loves you deeply, trusts you fully, and seems to expect a gentle touch or reward at any moment."},
-	{stats={obedience=0.7,love=0.2,trust=0.1,fear=0.9,brokenspirit=0.9,despair=1.0}, message="{npc.HeShe} shivers, eyes empty and full of fear. {npc.HeShe} has nothing left but obedience, and even that feels like a reflex now."},
-	{stats={obedience=0.2,love=0.8,trust=0.0,fear=0.5,spoiling=1.0,awareness=1.0}, message="{npc.HeShe} stares at you with sharp eyes, lips curled in a fake smile. Love and spoiled pride mix together, hiding fear that {npc.heShe} does not want you to see."},
-	{stats={obedience=0.6,love=0.5,trust=0.8,fear=0.4,despair=0.2,tiredness=0.7}, message="{npc.HeShe} stands close, soft and tired. There is care in {npc.his} eyes, and some trust, but fear still lingers like a shadow."},
-	{stats={obedience=0.0,love=0.0,trust=0.0,fear=0.2,awareness=1.0,brokenspirit=0.0}, message="{npc.HeShe} meets your gaze without fear, sharp and awake. {npc.HeShe} is not broken, not obedient, and {npc.heShe} knows it."},
-	{stats={obedience=0.95,love=0.3,trust=0.0,fear=1.0,brokenspirit=0.9,tiredness=1.0,despair=0.7}, message="{npc.HeShe} stays still like a beaten dog, breathing slow, eyes wide with fear. {npc.HeShe} obeys perfectly now, because {npc.heShe} cannot do anything else."},
-	{stats={obedience=0.5,love=1.0,trust=0.6,fear=0.3,spoiling=0.5,despair=0.0}, message="{npc.HeShe} leans forward softly, eyes warm with love and a little trust. There is no despair, no fear.. just a quiet hope for your touch."},
-	{stats={obedience=0.9,love=0.9,trust=0.8,fear=0.0,spoiling=0.2,brokenspirit=0.4}, message="{npc.HeShe} stands ready, smiling gently. Obedience and love mix together, but some part of {npc.himHer} is still alive inside."},
+	{stats={obedience=0.95,love=0.6,trust=0.9,fear=0.1,despair=0.0,tiredness=0.2}, message="{npc.HeShe} стоит рядом, спокойный(ая) и доверчивый(ая). Глаза {npc.HisHer} сияют любовью, и в них нет страха. {npc.HeShe} выглядит готовым(ой) служить, потому что {npc.heShe} этого хочет, а не потому что {npc.heShe} обязан(а)."},
+	{stats={obedience=0.8,love=0.4,trust=0.2,fear=0.7,brokenspirit=0.6,tiredness=0.9}, message="{npc.HeShe} низко опускается на колени, дрожа, кожа {npc.his} покрыта потом. В глазах {npc.his} читается страх и признаки сломленного духа. {npc.HeShe} подчиняется, но цена этого видна в усталом теле {npc.his}."},
+	{stats={obedience=0.1,love=1.0,trust=0.3,fear=0.8,spoiling=0.9,awareness=0.7}, message="{npc.HeShe} с тоской тянется к тебе, глаза блестят от слез. {npc.HeShe} любит тебя, но страх заставляет {npc.himHer} быть в напряжении. Подбородок {npc.his} слегка задран — так ведет себя избалованный(ая) человек, который все еще ждет от {npc.heShe} доброты."},
+	{stats={obedience=0.4,love=0.3,trust=0.0,fear=0.9,despair=0.8,brokenspirit=0.5}, message="{npc.HeShe} не поднимает взгляда. {npc.HeShe} дрожит и часто дышит, охваченная страхом и отчаянием. Покорность на месте, но лишь потому, что надежда почти иссякла."},
+	{stats={obedience=1.0,love=1.0,trust=0.9,fear=0.0,spoiling=0.8,tiredness=0.1}, message="{npc.HeShe} стоит перед тобой, гордая и счастливая. {npc.HeShe} глубоко любит тебя, полностью доверяет и, кажется, ждет ласки или награды в любой момент."},
+	{stats={obedience=0.7,love=0.2,trust=0.1,fear=0.9,brokenspirit=0.9,despair=1.0}, message="{npc.HeShe} вздрагивает, глаза пустые и полные ужаса. У {npc.HeShe} не осталось ничего, кроме покорности, и даже она теперь кажется лишь рефлексом."},
+	{stats={obedience=0.2,love=0.8,trust=0.0,fear=0.5,spoiling=1.0,awareness=1.0}, message="{npc.HeShe} смотрит на тебя пронзительным взглядом, губы растянуты в фальшивой улыбке. Любовь и избалованная гордость смешались, скрывая страх, который {npc.heShe} не хочет тебе показывать."},
+	{stats={obedience=0.6,love=0.5,trust=0.8,fear=0.4,despair=0.2,tiredness=0.7}, message="{npc.HeShe} стоит рядом, мягкая и уставшая. В глазах {npc.his} читается забота и некое доверие, но страх всё еще таится где-то рядом, словно тень."},
+	{stats={obedience=0.0,love=0.0,trust=0.0,fear=0.2,awareness=1.0,brokenspirit=0.0}, message="{npc.HeShe} встречает твой взгляд без страха, резкая и бодрая. {npc.HeShe} не сломлена, не покорна, и {npc.heShe} это знает."},
+	{stats={obedience=0.95,love=0.3,trust=0.0,fear=1.0,brokenspirit=0.9,tiredness=1.0,despair=0.7}, message="{npc.HeShe} замерла, как побитая собака, медленно дыша широко раскрытыми от ужаса глазами. Теперь {npc.HeShe} подчиняется безупречно, потому что {npc.heShe} просто не может иначе."},
+	{stats={obedience=0.5,love=1.0,trust=0.6,fear=0.3,spoiling=0.5,despair=0.0}, message="{npc.HeShe} мягко подается вперед, глаза светятся любовью и каплей доверия. В них нет ни отчаяния, ни страха... лишь тихая надежда на твое прикосновение."},
+	{stats={obedience=0.9,love=0.9,trust=0.8,fear=0.0,spoiling=0.2,brokenspirit=0.4}, message="{npc.HeShe} стоит перед тобой с нежной улыбкой. Послушание и любовь смешались воедино, но какая-то часть {npc.himHer} всё ещё жива внутри."},
 ]
 
 func getPerfectIdleMessage():
 	if(isMindBroken()):
-		return "{npc.He} stands still, {npc.his} stare blank.."
+		return "{npc.He} замерла, взгляд {npc.his} пустой и отрешённый..."
 
 #	var _db = [
 #		{stats={obedience=1.0,love=0.0,brokenspirit=1.0}, notblind=true, message="{npc.HeShe} stands perfectly still, eyes locked onto you with unwavering obedience. There's an unsettling lack of emotion in {npc.hisHer} gaze, as if {npc.heShe} exists solely to fulfill your commands."},
@@ -1080,7 +1080,7 @@ func getPerfectIdleMessage():
 	}
 	
 	var lowestDistance:float = 9999.0
-	var bestMessage:String = "Your slave stands still."
+	var bestMessage:String = "Твоя рабыня стоит неподвижно."
 	
 	for dbEntry in IDLE_DB:
 		var mainDistance:float = 0.0

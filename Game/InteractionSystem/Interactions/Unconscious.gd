@@ -100,9 +100,9 @@ func getAnimData() -> Array:
 
 func getPreviewLineForRole(_role:String) -> String:
 	if(_role == "main"):
-		return "{main.name} is unconscious.."
+		return "{main.name} без сознания..."
 	if(_role == "user"):
-		return "{nurse.name} is doing something with {main.name}."
+		return "{nurse.name} что-то делает с {main.name}."
 	return .getPreviewLineForRole(_role)
 
 func getActivityIconForRole(_role:String):

@@ -11,7 +11,7 @@ var localCmds : Dictionary = {} # key is string for command, value is descriptio
 
 class NetworkedComputerServer:
 	var ip : String = "0.0.0.0" # empty string is always local computer
-	var enterText : String = "this is the message that shows on connect!"
+	var enterText : String = "это сообщение отображается при подключении!"
 	var supportedCmds : Array = [] # only these are enabled per server, includes defaultCmds by default
 	var adminCommands : Array = [] # cmds here are available only if logged in
 	
@@ -175,19 +175,19 @@ func getServer(ip:String="") -> NetworkedComputerServer:
 
 func login(_args):
 	if _args.size()!=1:
-		return "'login' command expects 1 argument"
+		return "команда 'login' ожидает 1 аргумент"
 	var currentServer = getServer(connectedTo)
 	if !currentServer:
-		return "no current server"
+		return "текущий сервер отсутствует"
 	if currentServer.loggedin:
-		return "Already logged in"
+		return "Вы уже вошли в систему"
 	if !currentServer.adminPassword:
-		return "This server doesn't support log-ins"
+		return "Этот сервер не поддерживает авторизацию"
 	if currentServer.adminPassword==_args[0]:
 		currentServer.loggedin=true
-		return "Logged in as admin successfully. Welcome, "+currentServer.username
+		return "Вы успешно вошли как admin. Добро пожаловать, "+currentServer.username
 	
-	return "Error, wrong password"
+	return "Ошибка, неверный пароль"
 
 func ls(_args:Array=[]):
 	var currentServer = getServer(connectedTo)
@@ -197,38 +197,38 @@ func ls(_args:Array=[]):
 		var fs = currentServer.files.duplicate()
 		if currentServer.loggedin:
 			fs.append_array(currentServer.privateFiles)
-		var txt = "Found files:" + ("\n(none)" if fs.size()==0 else "")
+		var txt = "Найденные файлы:" + ("\n(none)" if fs.size()==0 else "")
 		for file in fs:
 			txt += "\n"+str(file.id)+" - "+file.name
 		return txt
-	return "'ls' command expects 0 arguments"
+	return "Команда 'ls' ожидает 0 аргументов"
 
 func cat(_args:Array=[]):
 	if _args.size()!=1:
 		learnCommand("tunya")
-		return "'cat' command expects 1 argument"
+		return "Команда 'cat' ожидает 1 аргумент"
 	if _args[0] in ["tuna", "tunya"]:
-		return "cat program thanks you for tunya :3"
+		return "cat говорит тебе «туня» :3"
 	var currentServer : NetworkedComputerServer = getServer(connectedTo)
 	if !currentServer:
 		return "ERROR: no connected server"
 	if !str(_args[0]).is_valid_integer(): # invalid arg
-		return "Error. Invalid index"
+		return "Ошибка. Неверный индекс"
 	var file = currentServer.getFileFromId(int(_args[0]))
 	if !file:
-		return "Error. File with such index wasn't found"
+		return "Ошибка. Файл с таким индексом не найден"
 	
-	return file.name+"\n\n"+  ("[font={f}]".format([file.catFont],"{f}") if(file.catFont) else "")  +  (file.catData if file.catData else "no file data!")  +  ("[/font]" if(file.catFont) else "")
+	return file.name+"\n\n"+  ("[font={f}]".format([file.catFont],"{f}") if(file.catFont) else "")  +  (file.catData if file.catData else "данные файла отсутствуют!")  +  ("[/font]" if(file.catFont) else "")
 
 func help(_args:Array=[]):
 	var descs : Dictionary = {
-		"ls":"This command outputs the contents of your harddrive",
-		"help":"This command outputs all other commands and can also provide help for certain command by typing 'help <COMMAND>'",
-		"cat":"This command outputs file's contents into the console.\nSyntax 'cat <FILE INDEX>' where file index is a [b]number[/b] that can be obtained by using the ls command",
-		"connect":"This command lets you connect to the remote server by using its ip.\nSyntax 'connect <IP>'. An example of an ip is 127.0.1",
-		"tunya":"What are you doing? Give the tunya to the cat!",
-		"disconnect":"Closes the connection",
-		"login":"Allows you to login as an admin. Syntax: login <password>",
+		"ls":"Эта команда выводит содержимое вашего жёсткого диска",
+		"help":"Эта команда выводит список всех остальных команд, а также может помочь с определённой командой, если ввести 'help <КОМАНДА>'",
+		"cat":"Эта команда выводит содержимое файла в консоль.\nСинтаксис: 'cat <ИНДЕКС_ФАЙЛА>', где индекс файла — это [b]число[/b], которое можно получить с помощью команды ls",
+		"connect":"Эта команда позволяет подключиться к удаленному серверу по его IP-адресу.\nСинтаксис: 'connect <IP>'. Пример IP-адреса: 127.0.1",
+		"tunya":"Ты что творишь? Отдай туню коту!",
+		"disconnect":"Разрывает соединение",
+		"login":"Позволяет войти под учетной записью администратора. Синтаксис: login <пароль>",
 	} # descriptions for each cmd
 	
 	var currentServer = getServer(connectedTo)
@@ -237,7 +237,7 @@ func help(_args:Array=[]):
 	if _args.size()==1: # for one command
 		var result = "Команда '"+str(_args[0])+"' не найдена. Чтобы увидеть все доступные команды, введите 'help'"
 		if _args[0] in currentServer.adminCommands && !currentServer.loggedin: # admin cmd access attempt
-			return "Insufficient permissions to access command '"+str(_args[0])+"'"
+			return "Недостаточно прав для выполнения команды '"+str(_args[0])+"'"
 		if descs.has(_args[0]):
 			learnCommand(_args[0]) # in case user somehow guesses the command's existence
 			result = descs.get(_args[0])
@@ -254,10 +254,10 @@ func help(_args:Array=[]):
 			alcmds.append_array(currentServer.adminCommands)
 			for cmd in currentServer.adminCommands:
 				learnCommand(cmd)
-		return "Available commands are: "+", ".join(alcmds)+".\nTo learn more about a command type 'help <COMMAND>'"
+		return "Доступные команды: "+", ".join(alcmds)+".\nЧтобы узнать больше о команде, введите 'help <КОМАНДА>'"
 	
 	# too many args
-	return "'help' command expects at most 1 argument."
+	return "Команда 'help' принимает не более одного аргумента."
 
 func connectComputer(_args:Array=[]):
 	if _args.size()!=1:
@@ -273,9 +273,9 @@ func connectComputer(_args:Array=[]):
 
 func disconnectComputer(_args:Array=[]):
 	if _args.size()!=0:
-		return "'disconnect' command expects 0 arguments"
+		return "Команда 'disconnect' ожидает 0 аргументов"
 	if !connectedTo: # not connected anyway
-		return "Not connected to anything"
+		return "Соединение отсутствует"
 	
 	var currentServer : NetworkedComputerServer = getServer(connectedTo)
 	if currentServer:

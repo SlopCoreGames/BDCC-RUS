@@ -84,7 +84,7 @@ func shouldSurrender(_enemy):
 	if(character.getStamina() > 0):
 		return [false]
 	else:
-		return [true, "unable to resist the restraints"]
+		return [true, "не в силах сопротивляться путам"]
 
 func getNextAction(_enemy):
 	var character = getCharacter()

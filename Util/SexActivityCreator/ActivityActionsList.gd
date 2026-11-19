@@ -5,7 +5,7 @@ onready var optionList = $HBoxContainer/OptionButton
 onready var actionList = $ScrollContainer/ActionList
 
 signal onAddButton(what)
-export var labelText = "Some text"
+export var labelText = "Некоторый текст"
 export var smallContainer = false
 
 signal onEditPressed(id)

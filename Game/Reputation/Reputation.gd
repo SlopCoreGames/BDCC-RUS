@@ -184,9 +184,9 @@ func getInfoLines() -> Array:
 		
 		var extraText:String = ""
 		if(level >= repStat.getMaxLevel()):
-			extraText = " (Max level reached)"
+			extraText = " (Максимальный уровень достигнут)"
 		if(level <= repStat.getMinLevel()):
-			extraText = " (Min level reached)"
+			extraText = " (Минимальный уровень достигнут)"
 		
 		result.append(repName+": "+repTitle+extraText)
 		

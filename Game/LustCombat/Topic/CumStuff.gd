@@ -78,17 +78,17 @@ func getVisibleName(_topicID):
 
 func getChatName(_topicID) -> String:
 	if(_topicID == InterestTopic.StuffedPussy):
-		return "creamed pussies"
+		return "залитые спермой киски"
 	if(_topicID == InterestTopic.StuffedAss):
-		return "cream-stuffed butts"
+		return "набитые кончой жопы"
 	if(_topicID == InterestTopic.StuffedPussyOrAss):
 		return "creampies"
 	if(_topicID == InterestTopic.Pregnant):
 		return "breeding"
 	if(_topicID == InterestTopic.StuffedThroat):
-		return "cum eaters"
+		return "пожирательницы спермы"
 	if(_topicID == InterestTopic.CoveredInCum):
-		return "cum facials"
+		return "спермофейсы"
 	if(_topicID == InterestTopic.CoveredInLotsOfCum):
 		return "cumdumpsters"
 	

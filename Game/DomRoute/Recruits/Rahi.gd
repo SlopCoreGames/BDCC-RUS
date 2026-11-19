@@ -12,9 +12,9 @@ func _init():
 			name = "Тон",
 			desc = "В каком тоне ты хочешь общаться с Рахи?",
 			options = [
-				["gentle", "Gentle", "Use a very kind tone with Rahi", RecruitChoiceResult.Red],
-				["strict", "Strict", "Use a strict tone with Rahi", RecruitChoiceResult.Yellow],
-				["mean", "Mean", "Say mean and dirty things to Rahi", RecruitChoiceResult.Green],
+				["gentle", "Нежный", "Говорить с Рахи очень добрым тоном", RecruitChoiceResult.Red],
+				["strict", "Строго", "Говорить с Рахи строгим тоном", RecruitChoiceResult.Yellow],
+				["mean", "Злобность", "Говорить Рахи гадости и пошлости", RecruitChoiceResult.Green],
 			],
 		},
 		{
@@ -22,9 +22,9 @@ func _init():
 			name = "Основное действие",
 			desc = "Каким должно быть основное действие?",
 			options = [
-				["sex", "Sex", "Have sex with Rahi", RecruitChoiceResult.Yellow],
-				["petplay", "Petplay", "Do some petplay with Rahi", RecruitChoiceResult.Green],
-				["pain", "Painplay", "Make that can feel some pain", RecruitChoiceResult.Red],
+				["sex", "Секс", "Заняться сексом с Рахи", RecruitChoiceResult.Yellow],
+				["petplay", "Петплей", "Устроить небольшой петплей с Рахи", RecruitChoiceResult.Green],
+				["pain", "Плей с болью", "Сделать так, чтобы она почувствовала боль", RecruitChoiceResult.Red],
 			],
 		},
 		{
@@ -32,9 +32,9 @@ func _init():
 			name = "Особая фишка",
 			desc = "Какой особый кинк ты хочешь добавить?",
 			options = [
-				["public", "In public", "Do it in public", RecruitChoiceResult.Yellow],
-				["bondage", "Bondage", "Include a lot of bondage", RecruitChoiceResult.Green],
-				["anal", "Anal-focus", "Put a huge focus on anal", RecruitChoiceResult.Red],
+				["public", "На людях", "Сделать это на людях", RecruitChoiceResult.Yellow],
+				["bondage", "Бондаж", "Добавить много бондажа", RecruitChoiceResult.Green],
+				["anal", "Акцент на анал", "Сделать огромный упор на анал", RecruitChoiceResult.Red],
 			],
 		},
 	]
@@ -48,9 +48,9 @@ func getExtraChoices(_choices:Array, _extras:Dictionary) -> Array:
 					name = "Презерватив",
 					desc = "Выбери презерватив, если собираешься использовать",
 					options = [
-						["no", "No condom", "Don't use a condom"],
-						["worst", "Worst condom", "Use the worst condom you have"],
-						["best", "Best condom", "Use the best condom you have"],
+						["no", "Без презерватива", "Don't use a condom"],
+						["worst", "Худший презерватив", "Используй самый хреновый презерватив, какой есть"],
+						["best", "Лучший презерватив", "Используй самый лучший презерватив, какой есть"],
 					],
 				})
 		else:
@@ -65,7 +65,7 @@ func getExtraChoices(_choices:Array, _extras:Dictionary) -> Array:
 func isCombinationPossible(_choices:Array, _extras:Dictionary) -> Array:
 	if(_extras.get("condom", "") in ["worst", "best"]):
 		if(!GM.pc.hasCondoms()):
-			return [false, "You don't have any condoms to do this"]
+			return [false, "У тебя нет презервативов, чтобы это сделать"]
 	
 	return [true, ""]
 

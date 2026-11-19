@@ -54,7 +54,7 @@ func getExperience():
 	return [[Skill.Combat, 10]]
 
 func getAnticipationText(_attacker, _receiver):
-	return "{attacker.name} is about to punch {receiver.name}!"
+	return "{attacker.name} собирается ударить {receiver.name}!"
 
 func getAttackerDamageMultiplierEfficiency(_attacker, _receiver, _damageType) -> float:
 	return 2.0

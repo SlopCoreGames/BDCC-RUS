@@ -636,16 +636,16 @@ func getActivityIconForRole(_role:String):
 
 func getPreviewLineForRole(_role:String) -> String:
 	if(_role == "starter"):
-		return "{starter.name} is chatting with {reacter.name}."
+		return "{starter.name} болтает с {reacter.name}."
 	if(_role == "reacter"):
-		return "{reacter.name} is chatting with {starter.name}."
+		return "{reacter.name} болтает с {starter.name}."
 	return .getPreviewLineForRole(_role)
 
 func doHelpStruggleForStarter():
 	var theStarter = getRoleChar("starter")
 	var struggleData:Dictionary = theStarter.doStruggleOutOfRestraints(false, true, getRoleChar("reacter"), 2.0)
 	if(struggleData.empty()):
-		struggleText = "Something happened.."
+		struggleText = "Что-то произошло..."
 	else:
 		struggleText = struggleData["text"]
 

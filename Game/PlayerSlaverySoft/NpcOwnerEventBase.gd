@@ -307,9 +307,9 @@ func addInfluence(_am:float, _appendText:bool = true):
 	if(!npcOwner):
 		if(_appendText):
 			if(_am > 0.0):
-				sayAppend("[color=#00CC00](Influence increased)[/color]")
+				sayAppend("[color=#00CC00](Влияние выросло)[/color]")
 			if(_am < 0.0):
-				sayAppend("[color=red](Influence decreased)[/color]")
+				sayAppend("[color=red](Влияние упало)[/color]")
 		return
 	var oldValue:float = npcOwner.getInfluence()
 	var oldLevel:int = npcOwner.getLevel()
@@ -319,15 +319,15 @@ func addInfluence(_am:float, _appendText:bool = true):
 	if(_appendText):
 		if(oldLevel == newLevel):
 			if(newValue > oldValue):
-				sayAppend("[color=#00CC00](Influence increased to "+str(Util.roundF(newValue*100.0, 1))+"%)[/color]")
+				sayAppend("[color=#00CC00](Влияние выросло до "+str(Util.roundF(newValue*100.0, 1))+"%)[/color]")
 			if(newValue < oldValue):
 				if(newValue > 0.0):
-					sayAppend("[color=red](Influence decreased to "+str(Util.roundF(newValue*100.0, 1))+"%)[/color]")
+					sayAppend("[color=red](Влияние упало до "+str(Util.roundF(newValue*100.0, 1))+"%)[/color]")
 				else:
-					sayAppend("[color=red](Influence decreased to "+str(Util.roundF(newValue*100.0, 1))+"%. The owner will lose their influence over you if you sleep)[/color]")
+					sayAppend("[color=red](Влияние упало до "+str(Util.roundF(newValue*100.0, 1))+"%. Если ты будешь спать, хозяин потеряет над тобой влияние)[/color]")
 		elif(newLevel > oldLevel):
 			#sayAppend("[color=#00CC00](Influence level increased. Influence is now at "+str(Util.roundF(newValue*100.0, 1))+"%)[/color]")
-			sayAppend("[color=#00CC00](Influence level increased!)[/color]")
+			sayAppend("[color=#00CC00](Уровень влияния повышен!)[/color]")
 		
 func addInfluenceObey(_mult:float = 1.0):
 	addInfluence(0.33 * max(_mult, 0.0))

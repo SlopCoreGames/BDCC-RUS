@@ -43,7 +43,7 @@ func generateDataFor(_dynamicCharacter):
 	])
 
 func getVulgarName() -> String:
-	return "female breasts"
+	return "женская грудь"
 
 func getAVulgarName() -> String:
 	return getVulgarName()

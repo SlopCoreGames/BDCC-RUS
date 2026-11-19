@@ -10,7 +10,7 @@ func shouldShow(_lustState: LustCombatState, _args):
 func canDo(_lustState: LustCombatState, _args):
 	var pc: Player = _lustState.getCharacter()
 	if(pc.getStamina() <= 0):
-		return [false, "You don't have enough will to stop now.."]
+		return [false, "У тебя уже не хватит воли, чтобы остановиться сейчас..."]
 	return .canDo(_lustState, _args)
 
 func getVisibleName(_lustState: LustCombatState, _args):

@@ -66,19 +66,19 @@ static func getVisibleName(theValue:float) -> String:
 	if(theValue <= -0.875):
 		return "hates"
 	elif(theValue <= -0.625):
-		return "really dislikes"
+		return "терпеть не может"
 	elif(theValue <= -0.375):
 		return "dislikes"
 	elif(theValue <= -0.125):
-		return "slightly dislikes"
+		return "недолюбливает"
 	elif(theValue <= 0.125):
 		return "neutral"
 	elif(theValue <= 0.375):
-		return "kinda likes"
+		return "вполне симпатизирует"
 	elif(theValue <= 0.625):
 		return "likes"
 	elif(theValue <= 0.875):
-		return "really likes"
+		return "обожает"
 	return "loves"
 
 static func getEnumListValue(theValue:float) -> int:
@@ -105,17 +105,17 @@ static func getChangeDesc(theValue:float) -> String:
 	if(theValue <= -0.875):
 		return "now [color="+theColorStr+"]hates[/color]"
 	elif(theValue <= -0.625):
-		return "now [color="+theColorStr+"]really dislikes[/color]"
+		return "now [color="+theColorStr+"]терпеть не может[/color]"
 	elif(theValue <= -0.375):
 		return "now [color="+theColorStr+"]dislikes[/color]"
 	elif(theValue <= -0.125):
-		return "now [color="+theColorStr+"]slightly dislikes[/color]"
+		return "now [color="+theColorStr+"]не очень любит[/color]"
 	elif(theValue <= 0.125):
-		return "is now [color="+theColorStr+"]neutral[/color] towards"
+		return "теперь [color="+theColorStr+"]нейтрально[/color] относится к"
 	elif(theValue <= 0.375):
-		return "now [color="+theColorStr+"]kinda likes[/color]"
+		return "now [color="+theColorStr+"]вполне нравится[/color]"
 	elif(theValue <= 0.625):
 		return "now [color="+theColorStr+"]likes[/color]"
 	elif(theValue <= 0.875):
-		return "now [color="+theColorStr+"]really likes[/color]"
+		return "now [color="+theColorStr+"]обожает[/color]"
 	return "now [color="+theColorStr+"]loves[/color]"

@@ -45,10 +45,10 @@ func onSexEvent(_npc, _event:SexEvent):
 	return false
 
 func getTaskString():
-	return "Orgasm while chasted: "+getProgressString()
+	return "Оргазм в девственной девайсе: "+getProgressString()
 
 func getTaskHint(_isSlaveLevelup):
-	return "Force them to orgasm while they are wearing a chastity cage"
+	return "Заставить их испытать оргазм, пока на них надета клетка целомудрия"
 
 func getNpcOwnerDialogueLines() -> Array:
 	return [

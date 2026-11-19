@@ -206,7 +206,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 		])
 		var addSay:String = ""
 		if(!getDom().isPlayer()):
-			addSay = " I will stop at "+str(targetSpanks)+" spanks."
+			addSay = " Я остановлюсь на "+str(targetSpanks)+" spanks."
 		
 		addText(text)
 		talkText(DOM_0, "Считай, сколько раз я ударю тебя по заднице."+addSay)

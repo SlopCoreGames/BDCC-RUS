@@ -12,7 +12,7 @@ func getVisibleDescription():
 	
 func getMoreDescription():
 	return 	"Теперь вы можете попытаться снять гипнотический визор даже в "+HypnokinkUtil.tranceIcon()+"трансе."+"\n\n"+\
-			"When forcing an opponent to wear a hypnotic visor, their hypnosis level will immediately rise to 30% if it is lower."
+			"Принудительное надевание гипнотического визора заставляет уровень гипноза противника мгновенно подняться до 30%, если он был ниже этого значения."
 
 func getSkillTier():
 	return 1

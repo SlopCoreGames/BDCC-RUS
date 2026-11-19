@@ -41,7 +41,7 @@ func _canUse(_attacker, _receiver, _context = {}):
 	return true
 
 func getAnticipationText(_attacker, _receiver):
-	return "{attacker.name} bares {attacker.his} fangs and then suddenly lunges at you!"
+	return "{attacker.name} скалит {attacker.his} клыки и внезапно бросается на тебя!"
 
 func getAttackSoloAnimation():
 	return "bite"

@@ -181,7 +181,7 @@ func getUsedBodypartName() -> String:
 func getStartTextForPose(thePose:String) -> String:
 	var throughClothing = "."
 	if(!hasBodypartUncovered(DOM_0, usedBodypart)):
-		throughClothing = " through {dom.yourHis} clothing"
+		throughClothing = " сквозь одежду {dom.yourHis}"
 	
 	var text:String = ""
 	if(thePose == POSE_COWGIRL):
@@ -393,7 +393,7 @@ func getActions(_indx:int):
 			var poseName = "error"
 			if(PoseToName.has(pose)):
 				poseName = PoseToName[pose]
-			addAction("switchpose", 0.0, poseName, "Сменить позу", {A_CATEGORY: ["Switch pose"], A_ARGS: [pose]})
+			addAction("switchpose", 0.0, poseName, "Сменить позу", {A_CATEGORY: ["Сменить позу"], A_ARGS: [pose]})
 		
 		if(state == "inside"):
 			if(getDom().getFirstItemThatCoversBodypart(usedBodypart) == null && getSub().getFirstItemThatCoversBodypart(BodypartSlot.Penis) == null):
@@ -484,7 +484,7 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 			var strapon = getSub().getWornStrapon()
 			if(strapon.getFluids() != null && !strapon.getFluids().isEmpty()):
 				getDom().cummedInBodypartByAdvanced(usedBodypart, getSubID())
-				straponText = "{sub.Your} strapon gets squeezed by {dom.your} "+RNG.pick(usedBodypartNames)+" enough for it to suddenly [b]release its contents inside {dom.youHim}[/b]!"
+				straponText = "{dom.your} сжимает {sub.Your} страпон "+RNG.pick(usedBodypartNames)+" так, что он внезапно [b]извергает содержимое внутрь {dom.youHim}[/b]!"
 		getSubInfo().stimulateArousalZone(0.2, BodypartSlot.Penis, 1.0)
 		addGenericOrgasmText(DOM_0)
 		if(straponText != ""):

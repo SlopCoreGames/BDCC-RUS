@@ -20,13 +20,13 @@ const POSES = {
 		name = "Обнимашки-трах",
 		anim = StageScene.TentaclesCuddle,
 		anims = ["tease", "inside", "sex", "fast"],
-		startText = "{dom.You} {dom.youVerb('grab')} {sub.you} and {dom.youVerb('lift')} {sub.youHim} above the floor slightly. Most tentacles are forming a seat under {sub.youHim} while one of them slides towards {sub.yourHis} <HOLE>.",
+		startText = "{dom.You} {dom.youVerb('grab')} {sub.you} и {dom.youVerb('lift')} {sub.youHim} слегка приподняты над полом. Большинство щупалец образуют сиденье под {sub.youHim}, в то время как одно из них скользит к {sub.yourHis} <HOLE>.",
 	},
 	POSE_BONDAGEFUCK: {
 		name = "Трах в путах",
 		anim = StageScene.TentaclesBondage,
 		anims = ["tease", "inside", "sex", "fast"],
-		startText = "{dom.You} {dom.youVerb('grab')} {sub.you} and {dom.youVerb('bind')} {sub.yourHis} arms and legs, two tentacles are covering up {sub.yourHis} mouth and eyes while another one slides down to {sub.yourHis} <HOLE>.",
+		startText = "{dom.You} {dom.youVerb('grab')} {sub.you} и {dom.youVerb('bind')} {sub.yourHis} руки и ноги, два щупальца закрывают рот и глаза {sub.yourHis}, а еще одно скользит вниз к {sub.yourHis} <HOLE>.",
 	},
 	POSE_CHOKEFUCK: {
 		name = "Трах с удушением",
@@ -121,13 +121,13 @@ func sex_processTurn():
 	stimulateSex(DOM_0, SUB_0, fuckHole, I_NORMAL, SPEED_SLOW)
 	
 	var possible:Array = [
-		"Slick tentacles hold {sub.you} helpless and fuck {sub.yourHis} "+RNG.pick(fuckHoleNames)+".",
-		"Dripping tentacles pump into {sub.your} "+RNG.pick(fuckHoleNames)+" without pause.",
-		"While bound, {sub.you} {sub.youAre} being fucked by the same relentless, wet tendril.",
-		"A slick, wet tendril pumps into {sub.your} "+RNG.pick(fuckHoleNames)+", again and again.",
-		"A slick tendril fucks {sub.your} "+RNG.pick(fuckHoleNames)+", deep and steady.",
-		"A slick tendril slides in and out of {sub.your} "+RNG.pick(fuckHoleNames)+", fucking {sub.youHim}.",
-		"Bound tight, {sub.you} {sub.youAre} fucked deep by a wet, pulsing tentacle.",
+		"Скользкие щупальца удерживают {sub.you} в беспомощном состоянии и трахают {sub.yourHis} "+RNG.pick(fuckHoleNames)+".",
+		"Стекающие соком щупальца вбиваются в {sub.your} "+RNG.pick(fuckHoleNames)+" без остановки.",
+		"Будучи связанной, {sub.you} {sub.youAre} трахает всё то же неумолимое, влажное щупальце.",
+		"Скользкий, влажный отросток вбивается в {sub.your} "+RNG.pick(fuckHoleNames)+", снова и снова.",
+		"Скользкий щупалец трахает {sub.your} "+RNG.pick(fuckHoleNames)+", глубоко и размеренно.",
+		"Скользкий отросток входит и выходит из {sub.your} "+RNG.pick(fuckHoleNames)+", fucking {sub.youHim}.",
+		"Плотно связанная, {sub.you} {sub.youAre} глубоко трахает влажное, пульсирующее щупальце.",
 	]
 	
 	addTextPick(possible)
@@ -138,24 +138,24 @@ func sex_processTurn():
 	var possibleExtra:Array = []
 	if(getSubInfo().isCloseToCumming()):
 		possibleExtra.append_array([
-			"{sub.YourHis} wet inner walls squeeze hard around the relentless tentacles.",
-			"{sub.YourHis} body shudders as a wave of pleasure is building deep inside.",
-			"{sub.YourHis} "+RNG.pick(fuckHoleNames)+" clenches, involuntarily gripping the slick tendril pumping into it.",
-			"{sub.YourHis} eyes roll back as {sub.youHe} {sub.youHeVerb('feel')} {sub.yourself} getting dangerously close.",
+			"{sub.YourHis} влажные внутренние стенки сильно сжимаются вокруг неумолимых щупалец.",
+			"{sub.YourHis} тело содрогается от нарастающей глубоко внутри волны удовольствия.",
+			"{sub.YourHis} "+RNG.pick(fuckHoleNames)+" сжимается, непроизвольно обхватывая скользкий жгутик, в него ввинчивающийся.",
+			"{sub.YourHis} глаза закатываются, когда {sub.youHe} {sub.youHeVerb('feel')} {sub.yourself} подбирается опасно близко.",
 		])
 		if(fuckHole == S_VAGINA):
 			possibleExtra.append_array([
-				"A gush of {sub.yourHis} own wetness coats the tentacle pistoning in and out of {sub.yourHis} "+RNG.pick(fuckHoleNames)+".",
-				"Pre-orgasmic clenches squeeze {sub.yourHis} "+RNG.pick(fuckHoleNames)+" around the invading tendril.",
+				"Поток собственной смазки {sub.yourHis} покрывает щупальце, поршнем входящее и выходящее из {sub.yourHis} "+RNG.pick(fuckHoleNames)+".",
+				"Предоргазмические судороги сжимают {sub.yourHis} "+RNG.pick(fuckHoleNames)+" вокруг вторгающегося щупальца.",
 			])
 	else:
 		possibleExtra.append_array([
-			"{sub.YourHis} inner walls squeeze around the relentless tentacles.",
-			"A slimy tip prods the same entrance, teasing and wet.",
-			"More tendrils wrap tight around {sub.yourHis} thighs, spreading them wider.",
-			"Every deep penetration makes {sub.yourHis} body squirm and tremble.",
-			"Wet sounds fill the air with each swift withdrawal.",
-			"Gooey ropes of precum-like secret ooze from the tendril fucking {sub.your} "+RNG.pick(fuckHoleNames)+".",
+			"{sub.YourHis} внутренние стенки сжимаются вокруг неумолимых щупалец.",
+			"Слизистый кончик ковыряется в том же входе, дразня и увлажняя его.",
+			"Еще больше щупалец плотно обвивают бедра {sub.yourHis}, разводя их всё шире.",
+			"Каждое глубокое проникновение заставляет тело {sub.yourHis} извиваться и дрожать.",
+			"С каждым резким движением назад воздух наполняется влажными звуками.",
+			"Липкие жгуты предэякулятоподобной секреции сочатся из фаллоподобного щупальца {sub.your} "+RNG.pick(fuckHoleNames)+".",
 		])
 		
 	if(RNG.chance(possibleExtra.size()*10)):
@@ -197,7 +197,7 @@ func getActions(_indx:int):
 			if(!POSES.has(pose)):
 				continue
 			var poseName:String = POSES[pose]["name"]
-			addAction("switchpose", 0.0, poseName, "Сменить позу", {A_CATEGORY: ["Switch pose"], A_ARGS: [pose]})
+			addAction("switchpose", 0.0, poseName, "Сменить позу", {A_CATEGORY: ["Сменить позу"], A_ARGS: [pose]})
 		
 		
 	if(_indx == SUB_0):
@@ -243,9 +243,9 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 			getDom().fillBalls(RNG.randf_range(0.9, 1.0))
 			getSub().cummedOnBy(getDomID(), FluidSource.Penis)
 			possible.append_array([
-				"Slick tip of a tentacle swell inside {sub.your} "+RNG.pick(fuckHoleNames)+", then begin to pulse, pumping thick {dom.cum} deep into {sub.yourHis} fuckhole"+(", [b]fertilizing the eggs[/b]" if hasEggs else "")+"!",
-				"The slick tip lodged inside {sub.your} "+RNG.pick(fuckHoleNames)+" swells to a fat knot, then pulses hard. A thick, hot load of {dom.cum} begins to get pumped deep into {sub.youHim}"+(", [b]fertilizing the eggs inside[/b]" if hasEggs else "")+".",
-				"The tentacle rams in deep and swells. Thick, gooey {dom.cum} erupts from the tip in a hot wave. Another thick load follows fast, pumping deep into {sub.your} "+RNG.pick(fuckHoleNames)+". The tentacles keep stuffing {sub.youHim} until {sub.youHe} {sub.youAreHeIs} full"+(", [b]fertilizing the eggs inside[/b]" if hasEggs else "")+".",
+				"Скользкий кончик щупальца раздувается внутри {sub.your} "+RNG.pick(fuckHoleNames)+", затем начинают пульсировать, вкачивая густую {dom.cum} глубоко в дырочку {sub.yourHis}"+(", [b]оплодотворяя икринки[/b]" if hasEggs else "")+"!",
+				"Скользкий кончик вошел внутрь {sub.your} "+RNG.pick(fuckHoleNames)+" раздувается в жирный узел, а затем сильно пульсирует. Густая, горячая порция {dom.cum} начинает вкачиваться глубоко в {sub.youHim}"+(", [b]оплодотворяя яйца внутри[/b]" if hasEggs else "")+".",
+				"Щупальце с силой вонзается глубоко внутрь и раздувается. Густая, липкая {dom.cum} извергается из кончика горячей волной. Следом за ней быстро вылетает еще одна густая порция, вкачиваясь глубоко в {sub.your} "+RNG.pick(fuckHoleNames)+". Щупальца продолжают заталкивать {sub.youHim}, пока {sub.youHe} {sub.youAreHeIs} набивается до отказа"+(", [b]оплодотворяя яйца внутри[/b]" if hasEggs else "")+".",
 			])
 			
 			addTextPick(possible)
@@ -277,16 +277,16 @@ func doAction(_indx:int, _id:String, _action:Dictionary):
 			var possible:Array = [
 			]
 			possible.append_array([
-				"A thick tentacle rams deep into {sub.your} "+RNG.pick(fuckHoleNames)+" and then begins to move!",
-				"A slick tip presses at {sub.your} "+RNG.pick(fuckHoleNames)+". It slides in, stuffing {sub.youHim} full.",
+				"Толстое щупальце с силой врывается глубоко в {sub.your} "+RNG.pick(fuckHoleNames)+" а затем начинает двигаться!",
+				"Скользкий кончик прижимается к {sub.your} "+RNG.pick(fuckHoleNames)+". Он входит внутрь, набивая {sub.youHim} до отказа.",
 			])
 			addTextPick(possible)
 			state = "sex"
 		else:
 			var possible:Array = [
-				"The tentacles try to stretch {sub.yourHis} "+RNG.pick(fuckHoleNames)+" wider.",
-				"Slick tentacle tips prod {sub.yourHis} "+RNG.pick(fuckHoleNames)+", trying to slip inside slowly.",
-				"Tentacle tips circle {sub.your} "+RNG.pick(fuckHoleNames)+" before prodding it, trying to fit in.",
+				"Щупальца пытаются растянуть {sub.yourHis} "+RNG.pick(fuckHoleNames)+" wider.",
+				"Скользкие кончики щупалец ковыряют {sub.yourHis} "+RNG.pick(fuckHoleNames)+", пытаясь медленно проскользнуть внутрь.",
+				"Кончики щупалец обводят {sub.your}, "+RNG.pick(fuckHoleNames)+" прежде чем начать тыкаться, пытаясь втиснуться внутрь.",
 			]
 			addTextPick(possible)
 		return

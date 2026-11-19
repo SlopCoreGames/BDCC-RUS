@@ -8,7 +8,7 @@ func registerTriggers(es):
 	es.addEventCheck(self, "RahiBusy")
 
 func run(_triggerID, _args):
-	if(checkCharacterBusy("RahiSlaveryBusy", "Seems like the kitty is not here", "Rahi")):
+	if(checkCharacterBusy("RahiSlaveryBusy", "Похоже, кошечки здесь нет", "Rahi")):
 		return
 	
 	if(!getFlag("RahiModule.rahi4SceneHappened")):

@@ -10,16 +10,16 @@ const TaviKillEnding := 7
 
 static func getName(_ending:int) -> String:
 	if(_ending == NoEnding):
-		return "No Ending"
+		return "Нет концовки"
 	if(_ending == Generic):
-		return "Generic Ending"
+		return "Обычная концовка"
 
 	if(_ending == TaviNoEnding):
-		return "Tavi Route: 'No' Ending"
+		return "Рут Тави: концовка «Нет»"
 	if(_ending == TaviYesEnding):
-		return "Tavi Route: 'Yes' Ending"
+		return "Рут Тави: концовка «Да»"
 	if(_ending == TaviKillEnding):
-		return "Tavi Route: 'Kill' Ending"
+		return "Рут Тави: концовка «Убить»"
 	
 	return "Unknown:"+str(_ending)
 

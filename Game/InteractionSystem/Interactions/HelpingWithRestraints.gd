@@ -48,7 +48,7 @@ func init_eager_to_help_text():
 
 	var restraintData = getRoleChar("starter").getNextRestraintToStruggleOutOf(deterministicOrderHashInt)
 	var restraintIsPlural = getRestraintIsPlural(restraintData.item) if(restraintData != null) else false
-	var restraintVisibleName = restraintData.item.getVisibleName() if(restraintData != null) else "the restraint"
+	var restraintVisibleName = restraintData.item.getVisibleName() if(restraintData != null) else "стяжки"
 	saynn("{reacter.You} {reacter.youAre} собирается помочь {starter.you} снять "+ restraintVisibleName + ".")
 
 	if(struggleText == ""):
@@ -69,7 +69,7 @@ func init_eager_to_help_do(_id:String, _args:Dictionary, _context:Dictionary):
 func eager_help_refused_text():
 	var restraintData = getRoleChar("starter").getNextRestraintToStruggleOutOf(deterministicOrderHashInt)
 	var restraintIsPlural = getRestraintIsPlural(restraintData.item) if(restraintData != null) else false
-	var restraintVisibleName = restraintData.item.getVisibleName() if(restraintData != null) else "the restraint"
+	var restraintVisibleName = restraintData.item.getVisibleName() if(restraintData != null) else "ремни"
 
 	saynn("{starter.You} {starter.youVerb('refuse', 'refused')} {reacter.your} помогает снять "+restraintVisibleName+".")
 
@@ -224,9 +224,9 @@ func getAnimData() -> Array:
 	
 func getPreviewLineForRole(_role:String) -> String:
 	if(_role == "starter"):
-		return "{starter.name} is being helped by {reacter.name}."
+		return "{reacter.name} помогает {starter.name}."
 	if(_role == "reacter"):
-		return "{reacter.name} is helping {starter.name} with restraints."
+		return "{reacter.name} помогает {starter.name} со стяжками."
 	return .getPreviewLineForRole(_role)
 
 func doHelpStruggleForStarter():
@@ -236,7 +236,7 @@ func doHelpStruggleForStarter():
 	var theStarter = getRoleChar("starter")
 	var struggleData:Dictionary = theStarter.doStruggleOutOfRestraints(false, true, getRoleChar("reacter"), 1.0, deterministicOrderHashInt)
 	if(struggleData.empty()):
-		struggleText = "Something happened.."
+		struggleText = "Что-то произошло..."
 	else:
 		struggleText = struggleData["text"]
 		if(reacterStarted):

@@ -556,7 +556,7 @@ func getText(_id:String, _args:Dictionary):
 		var restraintIsPlural = getVar(_args, "restraintIsPlural", false)
 		# var restraint_itThem = "it" if(!restraintIsPlural) else "them"
 		var restraint_thatThose = "that" if(!restraintIsPlural) else "those"
-		var restraint_that_sThose_are = "that's" if(!restraintIsPlural) else "those are"
+		var restraint_that_sThose_are = "that's" if(!restraintIsPlural) else "те, что"
 		return [
 			"Мм, довольно полезная сучка. Но "+restraint_that_sThose_are+" носить это буду я.",
 			"Если пытаешься быть полезной, то лучше стань моей секс-игрушкой.",

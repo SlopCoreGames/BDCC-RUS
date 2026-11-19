@@ -7,13 +7,13 @@ func getVisibleName():
 	return "Руби"
 
 func getNameAndNickname():
-	return "Rubi, The Horny"
+	return "Руби, Похотливый"
 
 func getAvyIntroduction():
-	return "Alright, your first opponent is a cat named Rubi. Fresh fuck meat, just like you, here to prove everyone that he is the alpha male or whatever. I suggest you be gentle with him, he might break if you push on his buttons too hard."
+	return "Так, твой первый противник — кот по имени Руби. Свежее мясо, прямо как ты: приперся сюда, чтобы доказать всем, что он альфа-самец или типа того. Советую с ним поаккуратнее, а то он может сломаться, если начнешь слишком сильно нажимать на его кнопки."
 	
 func getAnnouncerIntroduction():
-	return "And in the right corner we have Rubi! A promising fighter that is yet to win a single fight!"
+	return "А в правом углу у нас Руби! Многообещающий боец, который пока не выиграл ни одного боя!"
 	
 func getRank():
 	return FightClubRank.FuckMeat

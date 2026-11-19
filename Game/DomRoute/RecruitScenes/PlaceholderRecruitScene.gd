@@ -16,7 +16,7 @@ func _run():
 		GM.ui.addCustomControl("textedit", textEdit)
 		
 		var outputText:Array = []
-		outputText.append("Chararacter id: "+str(RC.charID))
+		outputText.append("ID персонажа: "+str(RC.charID))
 		outputText.append("Choices: "+str(RC.choiceIDs))
 		outputText.append("Extras: "+str(RC.extras))
 		outputText.append("Success: "+str(RC.success))

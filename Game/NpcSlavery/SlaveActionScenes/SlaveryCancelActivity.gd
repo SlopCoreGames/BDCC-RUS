@@ -2,7 +2,7 @@ extends "res://Scenes/SceneBase.gd"
 
 var npcID = ""
 var npc:DynamicCharacter
-var theCancelMessage = "You stop your slave from doing whatever they were doing."
+var theCancelMessage = "Вы заставляете своего раба бросить то, чем он занимался."
 
 func _initScene(_args = []):
 	npcID = _args[0]

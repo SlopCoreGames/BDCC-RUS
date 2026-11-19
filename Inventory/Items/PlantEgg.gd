@@ -13,11 +13,11 @@ func getDescription():
 	if(whoGaveBirth != ""):
 		var theChar = GlobalRegistry.getCharacter(whoGaveBirth)
 		if(theChar == null):
-			byWho = "\n\nThis egg was laid by someone unknown.."
+			byWho = "\n\nЭто яйцо было отложено кем-то неизвестным..."
 		elif(whoGaveBirth == "pc"):
-			byWho = "\n\nThis egg was laid by you!"
+			byWho = "\n\nЭто яйцо отложили вы!"
 		else:
-			byWho = "\n\nThis egg was laid by "+str(theChar.getName())
+			byWho = "\n\nЭто яйцо было отложено "+str(theChar.getName())
 	
 	return "Очень питательное семя с невероятно сладким вкусом. Поедание убирает 50 единиц боли и добавляет 50 единиц выносливости... но также добавляет 20 единиц похоти."+byWho
 
@@ -29,7 +29,7 @@ func useInCombat(_attacker, _receiver):
 	_attacker.addStamina(50)
 	_attacker.addLust(20)
 	removeXOrDestroy(1)
-	return _attacker.getName() + " ate a plant egg! Very crunchy.."
+	return _attacker.getName() + " съел растительное яйцо! Очень хрустящее..."
 
 func getPossibleActions():
 	return [

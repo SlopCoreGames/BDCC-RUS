@@ -87,7 +87,7 @@ static func getAllWithNames():
 
 static func getName(thecheck:int):
 	if(thecheck < 0 || thecheck >= ChecksTexts.size()):
-		return "Error?"
+		return "Ошибка?"
 	return ChecksTexts[thecheck]
 
 static func getEditVars(thecheck:int):
@@ -175,31 +175,31 @@ static func getReasonText(reason):
 		reason = reason[0]
 	
 	if(reason == NotLate):
-		return "It's way too late to do this"
+		return "Уже слишком поздно это делать"
 	if(reason in [NotGagged, NotOralBlocked]):
-		return "You can't do this while gagged"
+		return "Так нельзя, когда рот забит кляпом"
 	if(reason == NotHandsBlocked):
-		return "You can't do this with your hands blocked"
+		return "Так нельзя, когда руки заблокированы"
 	if(reason == NotArmsRestrained):
-		return "You can't do this while your arms are restrained"
+		return "Так нельзя, когда руки связаны"
 	if(reason == NotLegsRestrained):
-		return "You can't do this while your legs are restrained"
+		return "Так нельзя, когда ноги связаны"
 	if(reason == NotBlindfolded):
-		return "You can't do this while blindfolded"
+		return "Так нельзя, когда на глазах повязка"
 	if(reason == HasCondoms):
-		return "You don't have any condoms"
+		return "У тебя нет презервативов"
 	if(reason == HasReachablePenis):
-		return "You need to have a reachable dick"
+		return "Нужно, чтобы до члена можно было дотянуться"
 	if(reason == HasReachableVagina):
-		return "You need to have a reachable pussy"
+		return "Нужно, чтобы до киски можно было дотянуться"
 	if(reason == HasReachableAnus):
-		return "You need to have a reachable anus"
+		return "Нужно, чтобы до ануса можно было дотянуться"
 	if(reason == HasReachableVaginaOrAnus):
-		return "You need to have a reachable pussy or anus"
+		return "Нужно, чтобы киска или анус были доступны"
 	if(reason == HasPenis):
-		return "You need to have a dick"
+		return "Тебе нужен член"
 	if(reason == HasVagina):
-		return "You need to have a pussy"
+		return "Тебе нужна киска"
 	if(reason == SkillCheck):
 		return ""
 	if(reason == StatCheck):
@@ -207,42 +207,42 @@ static func getReasonText(reason):
 	if(reason == PerkCheck):
 		return ""
 	if(reason == NotStunned):
-		return "You can't do this while stunned"
+		return "Нельзя делать это в состоянии оглушения"
 	if(reason == HasStamina):
-		return "You don't have any stamina to do this"
+		return "У тебя не хватает выносливости для этого"
 	if(reason == HasCredits):
-		return "You need more credits!"
+		return "Нужно больше кредитов!"
 	if(reason == ContentEnabled):
 		return ""
 	if(reason == CanWearStrapon):
-		return "You can't wear strapons"
+		return "Ты не можешь носить страпон"
 	if(reason == HasStraponAndCanWear):
-		return "You don't have any strapons or can't put on one"
+		return "У тебя нет страпонов или ты не можешь его надеть"
 	if(reason == HasStrapons):
-		return "You need a strapon in your inventory to do this"
+		return "Для этого в инвентаре должен быть страпон"
 	if(reason == IsWearingChastityCage):
-		return "You're not wearing a chastity cage"
+		return "На тебе нет клетки целомудрия"
 	if(reason == NotCollapsed):
-		return "You can't do this while collapsed"
+		return "Нельзя делать это в состоянии обморока"
 	if(reason == HasChastityCageInInventory):
-		return "You don't have any chastity cages in your inventory"
+		return "В вашем инвентаре нет девственных клеток"
 	if(reason == HasItemID):
-		return "You don't have the required item"
+		return "У вас нет необходимого предмета"
 	if(reason == HasReachablePenisOrVaginaOrHasStrapon):
-		return "Need a reachable penis, vagina or a strapon in inventory"
+		return "В инвентаре должен быть доступный пенис, вагина или страпон"
 	if(reason == HasBreastPump):
-		return "You don't have any breast pumps in your inventory"
+		return "В вашем инвентаре нет молокоотсосов"
 	if(reason == HasPenisPump):
-		return "You don't have any penis pumps in your inventory"
+		return "В вашем инвентаре нет пенисных помп"
 	if(reason == NotWearingItem):
-		return "You need to get rid of "+GlobalRegistry.getItemRef(args[1]).getVisibleName()
+		return "Нужно избавиться от "+GlobalRegistry.getItemRef(args[1]).getVisibleName()
 	if(reason == CanStartSex):
-		return "You can't start sex while you are wearing restraints"
+		return "Вы не можете начать секс, пока на вас надеты смирительные устройства"
 	if(reason == HasReachableOrCagedPenisOrReachableVagina):
-		return "You need to have a penis or a reachable vagina"
+		return "У вас должен быть пенис или доступная вагина"
 	if(reason == HasItemWithTag):
-		return "You don't have the required kind of item"
-	return "Error?"
+		return "У вас нет предмета нужного типа"
+	return "Ошибка?"
 
 static func check(checks: Array):
 	for reason in checks:

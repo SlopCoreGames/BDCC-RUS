@@ -145,7 +145,7 @@ func processTag(tag, arg, text, overrides: Dictionary = {}):
 			object = GlobalRegistry.getCharacter(arg)
 		
 		if(object == null):
-			return "!Error: "+arg+" character is not found to say text: "+text+"!"
+			return "!Error: "+arg+" персонаж не найден для произнесения текста: "+text+"!"
 		
 		var prefix = ""
 		if(OPTIONS.shouldShowSpeakerName() || tag == "sayShowName"):

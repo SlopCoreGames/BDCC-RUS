@@ -14,16 +14,16 @@ func _run():
 			if(GM.pc.getGender() == Gender.Female):
 				genderSTR = "a female"
 			if(GM.pc.getGender() == Gender.Androgynous):
-				genderSTR = "an androgynous"
+				genderSTR = "андрогинный"
 			if(GM.pc.getGender() == Gender.Other):
 				genderSTR = "a non-gender"
-			var badThingName = "was imprisoned for the crime of theft"
+			var badThingName = "был заключен под стражу за кражу"
 			if(GM.main.getFlag("Player_Crime_Type") == Flag.Crime_Type.Innocent):
-				badThingName = "was wrongly imprisoned"
+				badThingName = "был заключен под стражу по ошибке"
 			if(GM.main.getFlag("Player_Crime_Type") == Flag.Crime_Type.Murder):
-				badThingName = "was imprisoned for the crime of murder"
+				badThingName = "был заключен под стражу за убийство"
 			if(GM.main.getFlag("Player_Crime_Type") == Flag.Crime_Type.Prostitution):
-				badThingName = "was imprisoned for the crime of prostitution"
+				badThingName = "был заключен под стражу за проституцию"
 			saynn(GM.pc.getName() +" is "+genderSTR+" "+GM.pc.getSpeciesFullName() + " that "+badThingName+". Длина предложения неопределена")
 		
 		sayn("[b]Личная информация:[/b]")

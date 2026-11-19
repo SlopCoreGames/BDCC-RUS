@@ -10,7 +10,7 @@ func pickSmallDescription(_character:DynamicCharacter, _args = {}):
 #	thedesc += ". "
 #	thedesc += NpcGender.getVisibleName(character.npcGeneratedGender)+"."
 #
-	return "One of the slaves"
+	return "Одна из рабынь"
 
 func pickCharacterType(character:DynamicCharacter, _args = {}):
 	character.npcCharacterType = CharacterType.Generic

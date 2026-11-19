@@ -33,7 +33,7 @@ func getAnimData() -> Array:
 
 func getPreviewLineForRole(_role:String) -> String:
 	if(_role == "main"):
-		return "{main.name} is doing sex.."
+		return "{main.name} занимается сексом.."
 	return .getPreviewLineForRole(_role)
 
 func getActivityIconForRole(_role:String):

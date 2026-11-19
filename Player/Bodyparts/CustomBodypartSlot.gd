@@ -11,7 +11,7 @@ func getVisibleName() -> String:
 	return getVisibleNameNoCap().capitalize()
 
 func getVisibleNameNoCap() -> String:
-	return "bad slot"
+	return "некорректный слот"
 
 func isEssential() -> bool:
 	return true

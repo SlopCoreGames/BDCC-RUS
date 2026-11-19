@@ -10,7 +10,7 @@ func getName() -> String:
 	return "Уверенное представление"
 
 func getButtonDesc() -> String:
-	return "Focus on one of the bidders.\n\nThis action will reveal 75% of all preferences of a single random bidder."
+	return "Сосредоточьтесь на одном из участников торгов.\n\nЭто действие раскроет 75% o% всех предпочтений одного случайного участника."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	saynn("Занавес медленно расходится, открывая взору {presenter.name}, которая уверенно стоит на возвышении, а на {presenter.hisHer} губах играет многозначительная улыбка.")

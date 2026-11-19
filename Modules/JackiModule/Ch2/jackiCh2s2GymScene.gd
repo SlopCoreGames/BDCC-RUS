@@ -3889,7 +3889,7 @@ func addStraponButtons2():
 		addButton(strapon.getVisibleName(), strapon.getVisibleDescription(), "do_grab_strapon", [strapon])
 
 func addSlaveTattooNames():
-	var possible = ["Buttslut", str(GM.pc.getName())+"'s slut", str(GM.pc.getName())+"'s whore", str(GM.pc.getName())+"'s Slave", "Cum In My Ass", "Slave", str(GM.pc.getName())+"'s Bitch"]
+	var possible = ["Buttslut", str(GM.pc.getName())+"'s slut", str(GM.pc.getName())+"'s whore", str(GM.pc.getName())+"'s Slave", "Кончай мне в зад", "Slave", str(GM.pc.getName())+"'s Bitch"]
 
 	for t in possible:
 		addButton(t, "Набей это на заднице у Джеки", "do_enslave_brand_pick", [t])

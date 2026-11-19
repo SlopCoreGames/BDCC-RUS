@@ -37,6 +37,6 @@ func getAnimInfo(_npcSlavery:NpcSlave):
 func onEventSkipped(_npcSlavery:NpcSlave):
 	var slaveID:String = _npcSlavery.getChar().getID()
 	GlobalRegistry.getModule("NpcSlaveryModule").doFreeEnslavedCharacter(slaveID)
-	GM.main.addLogMessage("Oh no, anyway", "Looks like one of your slaves has managed to escape. Maybe you can try to track them down")
+	GM.main.addLogMessage("Ох, ну да ладно", "Похоже, одному из твоих рабов удалось сбежать. Может, попробуешь выследить его?")
 	GM.pc.getReputation().addRep(RepStat.Alpha, -3.0)
 	GM.main.RS.sendSocialEvent("pc", slaveID, SocialEventType.EscapedSlavery)

@@ -8,7 +8,7 @@ func registerTriggers(es):
 	
 func run(_triggerID, _args):
 	if(getFlag("PortalPantiesModule.Alex_FirstTimeTalked")):
-		if(checkCharacterBusy("AlexRynardBusy", "Seems like Alex is not here", "Alex")):
+		if(checkCharacterBusy("AlexRynardBusy", "Похоже, Алекса здесь нет", "Alex")):
 			return
 	
 		if(getFlag("PortalPantiesModule.Alex_BusyDays", 0) > 0):

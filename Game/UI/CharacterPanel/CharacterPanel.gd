@@ -45,7 +45,7 @@ func updateFromCharacterID(charID):
 
 func updateFromCharacter(character: BaseCharacter):
 	if(character == null):
-		setName("BAD CHARACTER")
+		setName("ПЛОХОЙ ХАРАКТЕР")
 		return
 	
 	setName(character.getName())

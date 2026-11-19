@@ -10,7 +10,7 @@ func getName() -> String:
 	return "Под навыком"
 
 func getButtonDesc() -> String:
-	return "Tell the bidders about the slave’s extensive training as a Submissive.\n\n[b]Might[/b] reveal 1 personality preference of each bidder."
+	return "Расскажите участникам аукциона о глубокой подготовке рабыни в роли покорной служанки.\n\n[b]Возможно[/b] раскроет одну особенность характера каждого участника."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	sayPresenter(RNG.pick([
@@ -31,21 +31,21 @@ func getTraits() -> Dictionary:
 
 func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
-		'I like a well-trained subby thing.',
-		'Already knows how to submit? Saves me a lot of time.',
-		'A well-trained submissive? Neat.',
-		'I like ones that are trained to obey without hesitation.',
-		'A trained submissive is always useful.',
-		'Sounds nice.',
+		'Люблю хорошо натренированных субиков.',
+		'Уже знает, как подчиняться? Это сэкономит мне кучу времени.',
+		'Хорошо натренированная подчиненная? Симпатично.',
+		'Мне нравятся те, кого научили повиноваться без малейших колебаний.',
+		'Натренированная субка — это всегда полезно.',
+		'Звучит неплохо.',
 	])
 
 func getNegativeReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	return RNG.pick([
 		'I don\'t need a sub.',
-		'I\'m not looking for submissives.',
-		'You\'re selling a sub? Ugh.',
-		'I don\'t like subs, zero spark in them usually.',
-		'I\'d rather not.',
-		'Any slave is a sub by default. Whatever.',
+		'Я не ищу подчиненных.',
+		'Продаешь субика? Фу.',
+		'Не люблю субок, в них обычно совсем нет искры.',
+		'Пожалуй, не стоит.',
+		'Любая рабыня по умолчанию — это субка. Пофиг.',
 	])
 	

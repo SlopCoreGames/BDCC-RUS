@@ -90,7 +90,7 @@ func notifyDevicesChanged():
 
 # Called every frame while the manager UI is visible
 func getInfo() -> Array:
-	return ["test test", "line 2"]
+	return ["тест тест", "line 2"]
 
 # Is this backend ready to do stuff
 func isReady() -> bool:

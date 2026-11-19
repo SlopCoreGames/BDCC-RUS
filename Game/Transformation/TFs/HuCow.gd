@@ -17,7 +17,7 @@ func getPillName() -> String:
 
 func getUnlockData() -> Dictionary:
 	return {
-		eliza = "Wow.. This pill packs a lot.. Very interesting.. I think it will affect your breasts in some way.. but it will also do something else. I think I’ll call it.. 'MegaMilkMAX.' For no reason in particular.",
+		eliza = "Ого... В этой таблетке замешано много всего... Очень интересно... Думаю, она как-то повлияет на твою грудь... но сделает ещё кое-что. Пожалуй, назову её... «МегаМолокоMAX». Просто так, без особой причины.",
 		tryOptions = [
 			{
 				name = "Заставить Элизу сожрать это",
@@ -28,7 +28,7 @@ func getUnlockData() -> Dictionary:
 	}
 
 func getPillDatabaseDesc() -> String:
-	return "This drug will turn you into a walking milky cow. It will achieve that by doing the following:\n- Increase the thickness of your body until it reaches 100%.\n- Morph your pecs into round breasts.\n- Gradually increase the size of your breasts until they become ‘M-cup’ or bigger. Moo.\n- Grow a set of horns if you don’t have any.\n- Increase the sensitivity of your nipples.\n- Cause you to lactate.\n\nThe first stage will happen after a few minutes. Stage 2 will happen after about 20 minutes. Stage 3 will happen after about 30 minutes. Next stages will happen roughly every 20 hours. This could be accelerated only by using the QuickShift drug or by stimulating the breasts.\n\nThis drug doesn’t have a set amount of stages. It will reach its final stage when there is nothing left to transform.\n\nBeing under the effects of this transformation will make others more likely to want to stimulate your breasts and have vaginal sex."
+	return "Этот препарат превратит тебя в ходячую молочную корову. Это произойдет благодаря следующему:\n- Увеличение плотности твоего тела до 100%.\n- Превращение твоих грудных мышц в округлые женские груди.\n- Постепенное увеличение размера груди, пока она не достигнет размера «M-чашки» или больше. Му-у.\n- Рост пары рогов, если их у тебя еще нет.\n- Повышение чувствительности сосков.\n- Запуск процесса лактации.\n\nПервая стадия наступит через несколько минут. Вторая стадия — примерно через 20 минут. Третья стадия — примерно через 30 минут. Последующие стадии будут происходить примерно каждые 20 часов. Процесс можно ускорить, используя препарат QuickShift или стимулируя грудь.\n\nУ этого препарата нет фиксированного количества стадий. Он достигнет финальной стадии, когда трансформировать будет уже нечего.\n\nПод действием этой трансформации окружающие будут всё сильнее желать ласкать твою грудь и заниматься с тобой вагинальным сексом."
 
 func getTFCheckTags() -> Dictionary:
 	return {

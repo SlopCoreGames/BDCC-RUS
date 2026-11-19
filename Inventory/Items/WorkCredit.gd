@@ -16,7 +16,7 @@ func useInCombat(_attacker, _receiver):
 	if(_attacker is Player):
 		_attacker.addCredits(getAmount())
 	removeXOrDestroy(getAmount())
-	return _attacker.getName() + " pushed the credits to their account"
+	return _attacker.getName() + " зачислили кредиты на их счет"
 
 func getPossibleActions():
 	return [

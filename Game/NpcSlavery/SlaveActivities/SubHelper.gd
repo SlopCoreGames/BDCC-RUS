@@ -16,16 +16,16 @@ func getActivityText():
 	if(currentHelpingTask != ""):
 		var otherSlave:BaseCharacter = GlobalRegistry.getCharacter(currentTargetID)
 		if(otherSlave == null):
-			return "{npc.name} is busy with a slave."
-		return "{npc.name} is busy with "+otherSlave.getName()+"."
+			return "{npc.name} занят(а) с рабом/рабой."
+		return "{npc.name} занят(а) с "+otherSlave.getName()+"."
 	
 	if(willWashSlaves && willHelpGiveBirth):
-		return "This sub will automatically wash other slaves and bring pregnant ones to the nursery"
+		return "Этот подпроцесс будет автоматически мыть других рабов и отводить беременных в детскую"
 	if(willHelpGiveBirth):
-		return "This sub will automatically bring pregnant slaves to the nursery"
+		return "Этот подпроцесс будет автоматически отводить беременных рабов в детскую"
 	if(willWashSlaves):
-		return "This sub will automatically wash other slaves"
-	return "{npc.name} is being a slave helper!"
+		return "Этот подпроцесс будет автоматически мыть других рабов"
+	return "{npc.name} помогает по хозяйству среди рабов!"
 
 
 func onStart(_args = []):
@@ -79,7 +79,7 @@ func hoursPassed(_howMuch):
 				var bornString = GM.CS.getChildBirthInfoString(bornChilds)
 				
 				if(bornChildAmount > 0):
-					GM.main.addLogMessage("News (Slave)", "You just received news that "+otherSlave.getName()+" was just brought into nursery by "+getChar().getName()+" where "+otherSlave.heShe()+" gave birth to "+str(bornChildAmount)+" kid"+("s" if bornChildAmount != 1 else "")+":\n\n"+bornString)
+					GM.main.addLogMessage("News (Slave)", "Ты только что получил известие, что "+otherSlave.getName()+" был(а) только что доставлен(а) в детскую, "+getChar().getName()+" where "+otherSlave.heShe()+" родил(а) "+str(bornChildAmount)+" kid"+("s" if bornChildAmount != 1 else "")+":\n\n"+bornString)
 				getSlave().addExperience(30)
 				otherSlave.getNpcSlavery().addExperience(50)
 				

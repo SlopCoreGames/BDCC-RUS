@@ -37,7 +37,7 @@ func getTaskString():
 	return "Orgasm (tribadism): "+getProgressString()
 
 func getTaskHint(_isSlaveLevelup):
-	return "Force them to orgasm from scissoring!"
+	return "Заставь их кончить от ножниц!"
 
 func getSexGoalWeightModifier(_sexGoalID:String) -> float:
 	if(_sexGoalID == SexGoal.Tribadism):

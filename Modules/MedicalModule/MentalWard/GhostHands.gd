@@ -5,7 +5,7 @@ func _init():
 	disableSerialization = true
 	
 func _getName():
-	return "Ghost hands"
+	return "Призрачные руки"
 
 func getGender():
 	return Gender.Other

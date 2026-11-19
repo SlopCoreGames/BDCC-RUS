@@ -10,7 +10,7 @@ func getName() -> String:
 	return "Тело"
 
 func getButtonDesc() -> String:
-	return "Emphasize the slave's curves and femininity/masculinity.\n\nDoesn't reveal any preferences, has a negative effects on bidders who don't strongly prefer any of the presented traits."
+	return "Подчеркнуть изгибы тела и женственность/мужественность рабыни.\n\nНе раскрывает конкретных предпочтений; оказывает негативный эффект на участников аукциона, у которых нет сильного влечения к представленным чертам."
 
 func onAct(_char:BaseCharacter, _auction, _slaveTraits:Dictionary):
 	var isMasc:bool = (_slaveTraits.has("Masculine") && _slaveTraits["Masculine"] > 0.0)
@@ -74,26 +74,26 @@ func getTraits() -> Dictionary:
 func getPositiveReaction(_char:BaseCharacter, _slaveTraits:Dictionary) -> String:
 	if(_slaveTraits.has("Masculine") && _slaveTraits["Masculine"] > 0.0):
 		return RNG.pick([
-			'Strong, I like that.',
-			'Very powerful.',
-			'Impressive physique.',
+			'Крепкая, мне такое нравится.',
+			'Очень мощная.',
+			'Впечатляющее телосложение.',
 			'Perfection.',
-			'Now we’re talking.',
-			'Now that’s a strong body.',
+			'Вот это другое дело.',
+			'Вот это да, тело что надо.',
 		])
 	if(_slaveTraits.has("Androgynous") && _slaveTraits["Androgynous"] > 0.0):
 		return RNG.pick([
 			'Perfection.',
 			'Captivating.',
-			'Interesting, for sure.',
+			'Определенно интересно.',
 		])
 	if(_slaveTraits.has("Feminine") && _slaveTraits["Feminine"] > 0.0):
 		return RNG.pick([
-			'Beautiful and graceful.',
-			'Just the right amount of girly!',
-			'Just the softness I like.',
+			'Красивая и грациозная.',
+			'В самый раз, такая девчачья!',
+			'Та самая мягкость, которую я люблю.',
 			'Gorgeous.',
-			'A true beauty.',
+			'Настоящая красавица.',
 		])
 	
 	return .getPositiveReaction(_char, _slaveTraits)
@@ -119,7 +119,7 @@ func getSlaveReaction(_char:BaseCharacter, _reactionType) -> String:
 			"{slave.name} бросает на {presenter.you} мягкий, растерянный взгляд, не понимая, что происходит, но не оказывая никакого сопротивления, пока {presenter.you} выставляет {slave.hisHer} тело напоказ перед толпой.",
 			"Глаза {slave.name} вспыхивают печалью, но {slave.heShe} замирает, позволяя {presenter.you} подчеркнуть {slave.hisHer} формы, несмотря на явное замешательство во {slave.hisHer} взгляде.",
 			"С губ {slave.name} срывается тихий вздох, когда {presenter.you} {presenter.youVerb('trace')} {slave.hisHer} принимают форму; в {slave.hisHer} читается замешательство, но {slave.heShe} не сопротивляется {presenter.your} прикосновениям.",
-			"{slave.name} bites {slave.hisHer} lip, eyes reflecting sadness as {presenter.you} {presenter.youVerb('show')} off {slave.hisHer} body. Confusion lingers, but {slave.heShe} remains passive under {presenter.your} control.",
+			"{slave.name} прикусывает {slave.hisHer} губу, в глазах отражается печаль, пока {presenter.you} {presenter.youVerb('show')} по {slave.hisHer} телу. В воздухе висит замешательство, но {slave.heShe} остается пассивной под контролем {presenter.your}.",
 			"{slave.name} стоит с печальным выражением лица, явно не понимая, что происходит, но покорно принимает позу, пока {presenter.you} {presenter.youVerb('emphasize')} {slave.hisHer} выставляется напоказ перед участниками аукциона.",
 			"{slave.name} уставилась в пол, и печать грусти легла на {slave.hisHer} лицо, но {slave.heShe} не сопротивляется, когда {presenter.you} {presenter.youVerb('run')} {presenter.your} отдает {slave.hisHer} свое тело.",
 		])

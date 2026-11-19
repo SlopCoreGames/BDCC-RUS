@@ -48,7 +48,7 @@ func _run():
 				if(canDoData[0]):
 					addButton(action.getButtonName(), action.getButtonDesc(), "doAction", [action])
 				else:
-					disabledActions.append([canDoData[1] if canDoData.size() > 1 else "Can't use this action", action])
+					disabledActions.append([canDoData[1] if canDoData.size() > 1 else "Это действие сейчас недоступно", action])
 		
 		for actionA in disabledActions:
 			var action:AuctionAction = actionA[1]

@@ -24,7 +24,7 @@ func getTextForLevel(_level:int, _rep):
 	if(_level == 3):
 		return "Respected"
 	if(_level == 4):
-		return "Prison Menace"
+		return "Угроза тюрьме"
 	return "ALPHA"
 
 #func getSpecialRequirementToReachLevel(_level:int, _rep):
@@ -40,8 +40,8 @@ func getEffectsInfoForLevel(_level:int, _rep) -> Array:
 		return []
 	if(_level <= 2):
 		return [
-			"Slightly easier to make friends with staff.",
+			"С персоналом чуть проще заводить дружбу.",
 		]
 	return [
-		"Easier to make friends with staff.",
+		"С персоналом проще заводить дружбу.",
 	]

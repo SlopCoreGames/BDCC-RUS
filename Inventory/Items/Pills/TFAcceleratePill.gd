@@ -15,7 +15,7 @@ func canUseInCombat():
 func useInCombat(_attacker, _receiver):
 	removeXOrDestroy(1)
 	#_attacker.undoAllTransformations()
-	return "You swallow the QuickShift pill!"
+	return "Вы проглатываете таблетку «Быстрой смены»!"
 
 func getPossibleActions():
 	return [
@@ -70,7 +70,7 @@ func getSexEngineInfo(_sexEngine, _domInfo, _subInfo):
 	
 	return {
 		"name": "Быстрая Смена",
-		"usedName": "a QuickShift pill",
+		"usedName": "таблетка «Быстрой смены»",
 		"desc": getDescription(),
 		"scoreOnSub": 0.5 if sub.hasActiveTransformations() else 0.0,#_domInfo.goalsScoreMax({SexGoal.FuckVaginal: 1.0, SexGoal.FuckAnal: 0.5}, _subInfo.charID)*_domInfo.fetishScore({Fetish.Breeding: 1.0}),
 		"scoreOnSelf": 0.0,

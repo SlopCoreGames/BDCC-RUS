@@ -625,7 +625,7 @@ func _run():
 
 		saynn("Понятно...")
 
-		setFlag("SlaveAuctionModule.customMirriGreeting", "How are the bruises~?")
+		setFlag("SlaveAuctionModule.customMirriGreeting", "Ну как твои синяки~?")
 		addButton("Продолжить", "Смотреть, что будет дальше", "endthescene")
 	if(state == "sub_pussy"):
 		saynn("[say=pc]Эм...[/say]")
@@ -3070,7 +3070,7 @@ func _react(_action: String, _args):
 		if(straponHasCum && !getCharacter("mirri").isVisiblyPregnant()):
 			setFlag("SlaveAuctionModule.customMirriGreeting", "If you knocked me up with someone's cum, I swear..")
 		else:
-			setFlag("SlaveAuctionModule.customMirriGreeting", "You're lucky that you won, okay?")
+			setFlag("SlaveAuctionModule.customMirriGreeting", "Тебе повезло, что ты победила, ясно?")
 		return
 
 	if(_action == "dom_straponfuck_fuck"):

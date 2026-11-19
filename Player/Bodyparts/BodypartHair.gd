@@ -41,7 +41,7 @@ func generateRandomColors(_dynamicCharacter):
 	pickedBColor = randomColors[2]
 	
 func getTransformAwayMessage(_context:Dictionary) -> String:
-	return "{npc.YouHe} {npc.youHeVerb('feel')} a tingling sensation on {npc.yourHis} scalp as {npc.yourHis} hair begins to shift and change. Suddenly, all the hairs start to retract into {npc.yourHis} scalp, leaving {npc.youHim} with a smooth, bald head."
+	return "{npc.YouHe} {npc.youHeVerb('feel')} ощущает покалывание в {npc.yourHis} коже головы, когда {npc.yourHis} волосы начинают двигаться и меняться. Внезапно все волоски начинают втягиваться в {npc.yourHis} кожу головы, оставляя {npc.youHim} с гладкой, лысой головой."
 
 func getTransformGrowMessage(_context:Dictionary) -> String:
 	var isPonytailHair:bool = hasTrait(PartTrait.HairPonytail)
@@ -50,14 +50,14 @@ func getTransformGrowMessage(_context:Dictionary) -> String:
 	var isOvereyeHair:bool = hasTrait(PartTrait.HairOvereye)
 	
 	if(isPonytailHair):
-		return "{npc.YouHe} {npc.youHeVerb('feel')} a tingling sensation at the crown of {npc.yourHis} head, and suddenly, hair begins to sprout rapidly. Strands of hair gather together, pulling back into a sleek ponytail that sways with every movement. The ponytail is thick and lustrous, radiating energy as it bounces playfully behind {npc.yourHis} head."
+		return "{npc.YouHe} {npc.youHeVerb('feel')} ощущает покалывание на макушке {npc.yourHis} головы, и вдруг волосы начинают стремительно расти. Пряди собираются вместе, стягиваясь в гладкий хвост, который покачивается при каждом движении. Хвост густой и блестящий, он словно излучает энергию, игриво подпрыгивая за {npc.yourHis} головой."
 	if(isShortHair):
-		return "{npc.YouHe} {npc.youHeVerb('feel')} a tingling sensation at the crown of {npc.yourHis} head, and suddenly, hair begins to sprout rapidly. The strands grow in a short, stylish cut, hugging {npc.yourHis} head closely. Each hair is thick and vibrant, playing in the light."
+		return "{npc.YouHe} {npc.youHeVerb('feel')} ощущает покалывание на макушке {npc.yourHis} головы, и вдруг волосы начинают стремительно расти. Они отрастают короткой стильной стрижкой, плотно облегая {npc.yourHis} голову. Каждый волосок густой и яркий, переливаясь на свету."
 	if(isLongHair):
-		return "{npc.YouHe} {npc.youHeVerb('feel')} a tingling sensation at the crown of {npc.yourHis} head, and suddenly, hair begins to sprout rapidly. Long, flowing strands cascade down from {npc.yourHis} head, thick and lustrous, as if each hair is alive with energy. The hair tumbles gracefully past {npc.yourHis} shoulders, creating an enchanting aura that draws attention with every movement."
+		return "{npc.YouHe} {npc.youHeVerb('feel')} ощущает покалывание в макушке {npc.yourHis} головы, и внезапно волосы начинают стремительно расти. Длинные, струящиеся пряди каскадом спадают с {npc.yourHis} головы, густые и блестящие, словно каждый волосок пропитан энергией. Волосы грациозно ниспадают на {npc.yourHis} плечи, создавая чарующую ауру, которая притягивает взгляды при каждом движении."
 	if(isOvereyeHair):
-		return "{npc.YouHe} {npc.youHeVerb('feel')} a tingling sensation at the crown of {npc.yourHis} head, and suddenly, hair begins to sprout rapidly. Strands of hair grow long and sweep down, falling dramatically over {npc.yourHis} eyes. The hair is thick and vibrant, creating a mysterious allure as it partially obscures {npc.yourHis} gaze, inviting curiosity and intrigue from those who look upon {npc.youHim}."
-	return "{npc.YouHe} {npc.youHeVerb('feel')} a tingling sensation at the crown of {npc.yourHis} head, and suddenly, hair begins to sprout rapidly. Fresh new hair strands cascade down from {npc.yourHis} head, thick and lustrous, as if each hair is alive with energy."
+		return "{npc.YouHe} {npc.youHeVerb('feel')} ощущает покалывание в макушке {npc.yourHis} головы, и внезапно волосы начинают стремительно расти. Пряди удлиняются и эффектно спадают, закрывая {npc.yourHis} глаза. Густые и яркие, они создают атмосферу таинственности, частично скрывая взгляд {npc.yourHis} и вызывая любопытство и интригу у тех, кто смотрит на {npc.youHim}."
+	return "{npc.YouHe} {npc.youHeVerb('feel')} ощущает покалывание в макушке {npc.yourHis} головы, и внезапно волосы начинают стремительно расти. Свежие новые пряди каскадом ниспадают с {npc.yourHis} головы, густые и блестящие, словно каждый волосок пропитан энергией."
 
 func getTransformMorphMessage(_context:Dictionary) -> String:
 	var oldTraits:Dictionary = _context["oldTraits"] if _context.has("oldTraits") else {}
@@ -80,8 +80,8 @@ func getTransformMorphMessage(_context:Dictionary) -> String:
 		gotShorter = true
 	
 	if(gotLonger):
-		return "{npc.YouHe} {npc.youHeVerb('feel')} a warm sensation at the roots of {npc.yourHis} hair, and suddenly, the strands begin to elongate. Each hair grows longer and more voluminous, cascading down in luxurious waves. The transformation is mesmerizing, as the hair flows gracefully while receiving a new, different appearance."
+		return "{npc.YouHe} {npc.youHeVerb('feel')} теплое ощущение у корней {npc.yourHis} волос, и внезапно пряди начинают удлиняться. Каждый волосок становится длиннее и объемнее, спадая роскошными волнами. Это преображение завораживает: волосы грациозно струятся, обретая совершенно новый облик."
 	if(gotShorter):
-		return "{npc.YouHe} {npc.youHeVerb('feel')} a tingling at the ends of {npc.yourHis} long hair, and in an instant, the strands begin to retract. The hair shortens dramatically, adopting a different, much shorter look. By the end, {npc.youHe} {npc.youAreHeIs} left with a different haircut."
+		return "{npc.YouHe} {npc.youHeVerb('feel')} покалывание на кончиках {npc.yourHis} длинных волос, и в мгновение ока пряди начинают сокращаться. Волосы резко укорачиваются, принимая совсем другой, гораздо более короткий вид. В итоге {npc.youHe} {npc.youAreHeIs} остается с новой стрижкой."
 	
-	return "{npc.YouHe} {npc.youHeVerb('feel')} a gentle shift in {npc.yourHis} hair, and suddenly, the strands begin to rearrange themselves. The length doesn't change too much, but the style transforms into something different. By the end, {npc.youHe} {npc.youAreHeIs} left with a different haircut."
+	return "{npc.YouHe} {npc.youHeVerb('feel')} легкое изменение в структуре {npc.yourHis} волос, и внезапно пряди начинают перестраиваться. Длина меняется не слишком сильно, но стиль трансформируется во что-то иное. В итоге {npc.youHe} {npc.youAreHeIs} остается с новой стрижкой."

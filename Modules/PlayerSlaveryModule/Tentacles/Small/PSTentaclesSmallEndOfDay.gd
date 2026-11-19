@@ -72,7 +72,7 @@ func _run():
 		elif (biggestStat == _tentacles.STAT_MIND):
 			saynn("Щупальца не проявляют видимых эмоций... но ты кожей чувствуешь, что им нравится это имя. Словно между вами возникла какая-то связь.")
 
-			_tentacles.talk("We approve that name.")
+			_tentacles.talk("Это имя нам подходит.")
 			saynn("Ну... должно быть, имя и впрямь хорошее.")
 
 		else:

@@ -105,7 +105,7 @@ func onExportButtonClickedActually():
 		d.make_dir_recursive(finalDir)
 		var finalPath = finalDir.plus_file(savePath.get_file())
 		d.copy(savePath, finalPath)
-		$SaveExportedAlert.dialog_text = "Your save was exported to:\n"+str(finalPath)
+		$SaveExportedAlert.dialog_text = "Ваше сохранение экспортировано в:\n"+str(finalPath)
 		$SaveExportedAlert.popup_centered()
 		return
 	

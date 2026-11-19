@@ -5,7 +5,7 @@ func _init():
 	disableSerialization = true
 	
 func _getName():
-	return "Many inmates"
+	return "Множество заключенных"
 
 func getGender():
 	return Gender.Other

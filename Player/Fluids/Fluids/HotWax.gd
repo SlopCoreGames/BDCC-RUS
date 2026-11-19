@@ -13,7 +13,7 @@ func getStatusEffectPicture():
 	return "res://Images/StatusEffects/leak.png"
 
 func getMessyDescription(_pc, _amount):
-	return "Melted hot wax is stinging your body."
+	return "Раскаленный воск обжигает твое тело."
 
 func getMessyBuffs(_pc, _amount):
 	if(_amount >= 500.0):
